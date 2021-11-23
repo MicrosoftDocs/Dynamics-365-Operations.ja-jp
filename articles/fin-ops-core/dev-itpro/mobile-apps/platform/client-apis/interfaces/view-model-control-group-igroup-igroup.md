@@ -1,18 +1,18 @@
 ---
 title: グループ タイプ
 description: グループ コンテナーのコントロール タイプ。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: fe45f6829bb827cf4f3a2099a06093e90885e7d7875cc69b67b58ac4aec6e61a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: ae5096fe5418c0df45945a2a07dbe2be2584eeca
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714563"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782707"
 ---
 # <a name="group-type"></a>グループ タイプ
 

@@ -14,18 +14,16 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2021-09-023
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 62d0cc8d9d29cd5a50a498bda616df3684eb7b7c
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: c759082a86f4bc04ecb1c1aa514ee6e15e7e3c4b
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473569"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675063"
 ---
 # <a name="preview-features-in-dynamics-365-finance-10022-november-2021"></a>Dynamics 365 Finance 10.0.22 (2021 年 11 月) の機能のプレビュー
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.22 の新機能または変更された機能について説明します。 このバージョンには 10.0.995 のビルド番号が含まれており、次のように使用できます。
 

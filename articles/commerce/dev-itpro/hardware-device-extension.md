@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 07/27/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
-ms.openlocfilehash: b9c6058b7042d5472e120d2e77604ca77575a867
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: a53219310a9ff3f2b99a6475861a6f01ff104014
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500139"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782645"
 ---
 # <a name="integrate-the-pos-with-a-new-hardware-device-and-generate-the-extension-installer"></a>POS を新しいハードウェア デバイスと統合し、拡張機能インストーラーを生成
 

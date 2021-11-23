@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: cf427880305055abf02a8634ea71cec6a02e57f3854f76925b81f528dd7bae1b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e7c4faad8ccd4a77ba8dce5ce102557c168319f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772895"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781299"
 ---
 # <a name="modify-the-properties-of-form-controls-through-extension"></a>拡張機能を使用して、フォーム コントロールのプロパティを変更する
 

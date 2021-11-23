@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25651
 ms.assetid: eea675a0-d9d8-453d-9f5a-70c833a7a0d6
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd228f5502b41c5578b2798c687e2cd4108aee3e0f3d8f0186848f72709f4a79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf2801d309c845e1a422632ca8fd51f8f23d92b7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747229"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783376"
 ---
 # <a name="migration-guidance-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールに関する移行ガイダンス
 

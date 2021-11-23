@@ -2,7 +2,7 @@
 title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: PeterRFriis
-ms.date: 09/27/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 7801a4833d0cad639a5919d86221f7b36bfa6d63
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.openlocfilehash: 574a5cbb88a79e20b0990e8fa3347e6f5ef3dba4
+ms.sourcegitcommit: 2a6c04448b6e9a073965e4778d0273af67748584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599393"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "7775819"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -697,7 +697,7 @@ Category does not exist.
 
 ## <a name="management-reporter"></a>Management Reporter
 
-追加のログは、プロバイダーを登録することで実行できます。 [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) を **プライマリ** オーケストレータ マシン にダウンロードし、次のコマンドを実行します。 プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorerで、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。
+追加のログは、プロバイダーを登録することで実行できます。 これを実行するには、LCS 共有 アセット ライブラリから **LBDMRDeployerTroubleshooter** アセットをダウンロードします。 資産はモデル資産タイプで検索できます。 **プライマリ** オーケストレータ マシンに ZIP ファイルをコピーし、抽出してから、次のコマンドを実行します。 プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorerで、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。
 
 > [!NOTE]
 > イベント ビューアーの結果が正しく表示されない場合 (たとえば、単語が切り詰められた場合など)、最新のマニフェストおよび .dll ファイルを取得してください。 最新のマニフェストと .dll ファイルを取得するには、エージェント ファイル共有の WP フォルダに移動します。 この共有は、適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックで作成されました。

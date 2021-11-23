@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 53972ebe59a81e65191bb443cf4bd5c506e139ec21c52469074495af1dbf7320
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9893a994dd86d8e70899f52758daec4c7ee7538
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774597"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782395"
 ---
 # <a name="update-code-and-environments-for-commerce-projects"></a>Commerce プロジェクトのコードと環境の更新
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 7977f3b1121daf90f5763dd52ea821166e2686be40386910eb482c29ffb93f9c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5d3aa2ab7f735ac2de6facfaf2c1c13d04e8a649
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734678"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783162"
 ---
 # <a name="best-practices-for-the-acceptance-test-library"></a>承認テスト ライブラリのベスト プラクティス
 

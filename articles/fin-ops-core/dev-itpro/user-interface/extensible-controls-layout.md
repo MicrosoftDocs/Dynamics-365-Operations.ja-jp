@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 11354
 ms.assetid: 53d1f66a-1e69-4548-9fd2-a87a3b370882
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b6e54c35553ed22e46652981369824803d453255bfb134ecfcfd83fd886cee2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2b5866546cfc170f8609bca10a42129caa5bf74c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713322"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782156"
 ---
 # <a name="extensible-control-layout-guidelines"></a>拡張可能なコントロール レイアウトのガイドライン
 

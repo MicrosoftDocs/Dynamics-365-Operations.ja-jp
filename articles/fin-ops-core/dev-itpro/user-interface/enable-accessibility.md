@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 104943
 ms.assetid: 5b97c471-212a-4487-baef-120d01063319
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 334bb7df38a77a268c39c620ccacd8248da39521a2aa24d8b568316a867ef995
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc2fc8617ff5de0b53f52c459779f7e295041840
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759960"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782158"
 ---
 # <a name="accessibility-in-forms-products-and-controls"></a>フォーム、製品、およびコントロールのユーザー補助機能
 

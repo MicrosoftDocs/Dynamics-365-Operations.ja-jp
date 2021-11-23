@@ -5,19 +5,19 @@ author: jorisdg
 ms.date: 05/15/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26731
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bccee18d2ea2c2050c98ee3d924c517fb56571b4851dc3c26a354cb23aeb5bb4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99d034369802ea64b30435ede4177d863e3f7267
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729740"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782942"
 ---
 # <a name="exclude-test-packages-from-build-output"></a>ビルド出力からテスト パッケージを除外
 

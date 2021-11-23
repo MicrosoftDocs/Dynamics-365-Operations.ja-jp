@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca59b6fd828e661c53b1d9487ed5f82df0db67cdcbc6fccb1129e2f392c464ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0669bdeda1a12227e341daa9554f273cc817dd46
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745084"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781138"
 ---
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 

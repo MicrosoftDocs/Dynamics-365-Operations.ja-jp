@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 257674
 ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
 ms.search.region: Global
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7cbe6ae450fa31d1e5b4ac5d609326f42bdbfb27de81bd641893da7fb892d7dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f9f3cc606c5ec08c44a3296ad2fc92ec7012bceb
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743446"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782823"
 ---
 # <a name="security-best-practices-for-cloud-pos-in-shared-environments"></a>共有環境におけるクラウド POS のセキュリティ ベスト プラクティス
 

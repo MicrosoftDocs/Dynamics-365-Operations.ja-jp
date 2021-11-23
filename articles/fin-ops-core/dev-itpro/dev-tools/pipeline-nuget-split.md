@@ -5,18 +5,18 @@ author: jorisdg
 ms.date: 03/04/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8591723fa4867409144a49bcd5d37a2909fc31daf2f4417d6013149ce8a88419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf1b47c56ce9b95e5731b6628627aee10e038a2e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737444"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782463"
 ---
 # <a name="update-the-hosted-azure-pipeline-for-new-nuget-packages"></a>新しい NuGet パッケージ用にホストされる Azure Pipeline の更新
 

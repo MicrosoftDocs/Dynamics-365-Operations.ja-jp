@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 219714
 ms.assetid: 773fb32d-14c1-4dc8-8330-0332c6a037a2
 ms.search.region: Global
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d9a6ddd0fbd7be108b58d0b0b4c168c972effe4520f60d2f491bff54f2984928
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c44a274b47d3f82188474bb65f8a9a1e8d65616
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731705"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782914"
 ---
 # <a name="commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト)
 

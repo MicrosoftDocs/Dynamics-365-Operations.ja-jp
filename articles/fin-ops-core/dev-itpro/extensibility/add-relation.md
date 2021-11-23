@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 0b86ed5506fa88b0ed689793ced6a11a22a93104ea78a5662f6a77b6dc554ee1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15ad36c9cb10aa70da00204379686afaae82b413
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765082"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782190"
 ---
 # <a name="add-relations-to-tables-through-extension"></a>拡張機能を使用してテーブルに関係を追加
 

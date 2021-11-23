@@ -1,18 +1,18 @@
 ---
 title: CacheService タイプ
 description: デバイス キャッシュからデータにアクセスし、デバイス キャッシュにデータを更新する機能を提供します。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: cb9c1566a1e7d784c7a5cd1574b39b19da6bb9945276922f35d17df52bc77904
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: e0543c76e94fbc3ac7122e540188e3e1765cf314
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769177"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782178"
 ---
 # <a name="cacheservice-type"></a>CacheService タイプ
 

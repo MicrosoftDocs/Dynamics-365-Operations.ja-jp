@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 17464
 ms.assetid: 1c71ebac-47c3-4c7e-bb48-a1c45619c95e
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f78a1fa69073510a1bff9989ffe1ac495fe202a0ca0adf1afc98bb2d7e1ecb40
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea12c4f82ab4fd774c6222df10bd047adfb8ab3c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745098"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781915"
 ---
 # <a name="lookup-controls"></a>ルックアップ コントロール
 

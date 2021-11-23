@@ -2,7 +2,7 @@
 title: Finance and Operations で最新の更新プログラムに移行するためのプロセス
 description: このトピックでは、Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
 author: laneswenka
-ms.date: 06/08/2021
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: bf24f67495d563ad70b4c56dcfc664e8ed3250b44b1d9511d0257724682abbe2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9aad95f3f4e54decff0a1fcf00ce9bdba888117
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751465"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778535"
 ---
 # <a name="process-for-moving-to-the-latest-update-of-finance-and-operations"></a>Finance and Operations で最新の更新プログラムに移行するためのプロセス
 
@@ -47,6 +47,9 @@ Finance and Operations の最新バージョンを導入するには 3 つの基
 *適用可能な開始バージョン: Microsoft Dynamics 365 for Finance and Operations 7.0 (RTW)、7.1 (1611)、7.2 (2017 年 7 月)、7.3。*<br/>
 *スコープ: 複雑*<br/>
 このパスには拡張機能へのコード リファクタリング、そして DevTest、サンドボックス、そして最終的には実稼働環境でのデータ アップグレードが含まれます。 
+
+> [!NOTE]
+> このプロセスは非推奨となりました。
 
 [最新バージョンへのセルフサービス アップグレード](../migration-upgrade/self-service-upgrade.md)
 

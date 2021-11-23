@@ -2,7 +2,7 @@
 title: 運用サポートと監視
 description: このトピックでは、プロジェクトのライフサイクルに関連するサポートのタイプと、環境を監視するためのベスト プラクティスについて説明します。
 author: PedroTubal
-ms.date: 04/12/2021
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: v-petbal
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b8caf569cb397525572b22d098e66d2a3abc863
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 2ee99afcca1f8cb437d30bbcfb7c498fe8bd9128
+ms.sourcegitcommit: 60ade60f72fd0fa0683f7a3eaf93439d10cf3373
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594727"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655373"
 ---
 # <a name="production-support-and-monitoring"></a>運用サポートと監視
 
@@ -150,11 +150,8 @@ Microsoft 365 サービスの問題が発生しているのに、**サービス�
 
 **正常性指標** ダッシュボードでは、インスタンス (AOS または バッチ AOS) および時間枠でフィルターされた一連のライン チャートが提供されます。 **AOS** タブでは、SQL の実行を監視できます。 **システム** タブでは、システム メモリと CPU 使用率を時間の経過とともに監視できます。 このツールを使用すると、動作の変更を簡単に識別できます。 したがって、時間の経過に伴う問題やソリューション内の変更の影響を追跡することができます。
 
-#### <a name="sql-insights"></a>SQL インサイト
 
-SQL インサイトは、パフォーマンス分析を有効にする高度な SQL トラブルシューティング ツールを提供します。 これらのツールの一部は、Microsoft Dynamics AX 2012 での SQL トラブルシューティングに使用されていた DynPerf ツールと類似しています。 詳細については、 [Lifecycle Services (LCS) 内のツールを使用したパフォーマンスのトラブルシューティング](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) および[パフォーマンスのトラブルシューティング ツール TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) を参照してください。
-
-SQL インサイトは、要求されるパフォーマンス測定方法を収集する信頼性の高い方法です。 これにより、顧客やパートナーは、サンドボックスまたは生産環境での問題を軽減するために使用できる事前定義された一連のアクションを実行できます。 これは直接 SQL Server をクエリするため、ほぼリアルタイムでクエリ ストア指標が取得されます。
+LCS 環境の監視に関連する追加コンテンツについては、[Lifecycle Services (LCS) のツールを使用したパフォーマンスのトラブルシューティング](../../dev-itpro/lifecycle-services/performancetroubleshooting.md)を参照してください。 
 
 環境を監視することは重要ですが、常に監視している必要はありません。 また Microsoft は、LCS 通知リストによって提供される電子メールを使用して、重要な問題や実行する必要のあるアクションについて警告し、実装自体に対する予防的ガイダンスを提供します。
 

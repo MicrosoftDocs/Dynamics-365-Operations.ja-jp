@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 06/03/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 46976aa62875a557b3793411cf8c999288e40e08
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: e884f0ac4b154a970852edfa270485ead9b2254b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413449"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783326"
 ---
 # <a name="headless-commerce-architecture"></a>ヘッドレス コマースのアーキテクチャ
 
@@ -23,7 +23,7 @@ ms.locfileid: "7413449"
 
 このトピックでは、ヘッドレス コマース (Commerce Scale Unit とも呼ばれる) のアーキテクチャについて説明します。 ヘッドレス コマースは、拡張可能で、カスタマイズされたフリクションフリーなコマース エクスペリエンス、および統合され最適化されたバック オフィス操作を可能にする API 駆動型のフレームワークです。
 
-![Commerce Scale Unit アーキテクチャ。](./media/CSU.PNG)
+![Commerce Scale Unit アーキテクチャ。](media/CSUExtensionArchitecture.PNG)
 
 ## <a name="omnichannel-solution-provided-by-the-headless-commerce"></a>ヘッドレス コマースが提供するオムニチャネル ソリューション
 

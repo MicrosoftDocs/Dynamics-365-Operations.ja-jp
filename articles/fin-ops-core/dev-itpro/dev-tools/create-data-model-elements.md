@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 07/23/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.assetid: 1b7789f4-12c1-480b-bb39-c354b5b03276
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5432625f5e00a249b0163b5dbd37a43f0bb6e40bed87d1ff6872980332aa241f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 733ecdc77cfb412310bb4c94ed574a412e013edb
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743227"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781092"
 ---
 # <a name="create-models-and-data-model-elements-overview"></a>モデルとデータ モデル要素の作成の概要
 

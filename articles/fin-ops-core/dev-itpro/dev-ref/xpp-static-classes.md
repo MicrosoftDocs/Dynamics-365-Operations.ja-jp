@@ -4,17 +4,17 @@ description: このトピックでは、 X++ の静的クラスについて説�
 author: RobinARH
 ms.date: 12/02/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf3fe5867dbf8f74adfa6706b066151ae259260eb3123887b16a3825c9e27dcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bb4d3539c09a5320a4c7fb06f35624d08bc2296
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736262"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781302"
 ---
 # <a name="x-static-classes"></a>X++ 静的クラス
 

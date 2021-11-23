@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-11-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62e36b42e5e0a5873d6cc4af7469881ccf614d58ad353fda8d923fee94e4bec7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6ba1e5b481efa869e461b9c828fd12403facc092
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742256"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781945"
 ---
 # <a name="systest-filtering-using-class-and-method-attributes"></a>クラスおよびメソッドの属性を使用した SysTest フィルター処理
 

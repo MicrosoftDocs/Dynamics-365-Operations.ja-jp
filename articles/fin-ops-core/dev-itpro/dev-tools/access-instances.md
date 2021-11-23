@@ -5,19 +5,19 @@ author: laneswenka
 ms.date: 09/08/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 363008909e59a0da39e02ce149d51181a5d15551
-ms.sourcegitcommit: 59d507c0dd6f0bec3ab72034e12d582133ab2a52
+ms.openlocfilehash: 2eb0e26cee0d8ce2c2d1acfd779788fca20897e6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "7496642"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781775"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -256,6 +256,9 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
+### <a name="environment-is-in-a-failed-state-and-the-error-message-is-updated-aad-tenant-is-missing-reply-url-configuration"></a>環境が失敗の状態で、「更新された AAD テナントには返信 URL コンフィギュレーションがありません」というエラー メッセージが表示される
+このメッセージは、レベル 1/顧客管理環境が、配置時に使用するテナントとは異なる Azure AD テナントを使用して構成されていることを示します。 (管理者ユーザーのプロビジョニング ツールを使用して更新が行われたとします)。現在使用されている更新されたテナントに、環境への正常なログインに必要な返信 URL コンフィギュレーションがありません。 コンフィギュレーションが欠落している場合、エラーが発生します。 環境が使用されるテナントからユーザーで環境を削除し、再配置する必要があります。
+
 ### <a name="as-a-partnerisv-how-can-i-facilitate-cloud-hosted-deployments-for-customers-that-i-work-with"></a>パートナーまたは ISV として、作業する顧客向けクラウド ホスト型の配置を円滑化するにはどのようにしますか?
 特定の環境に対して、すべてのコンフィギュレーションおよび統合が正しく準備されるように、レベル 1 または顧客管理環境を顧客の Azure AD テナントの下に配置する必要があります。 テナントと環境の関連付けは、環境を配置したユーザーに基づいて決定されます。
 
@@ -269,7 +272,8 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 ### <a name="i-have-run-the-admin-user-provisioning-tool-on-my-development-environment-and-now-i-receive-the-following-sign-in-error-error-aadsts50011-the-reply-url-specified-in-the-request-does-not-match-the-reply-urls-configured-for-the-application"></a>自分の開発環境で管理者ユーザー プロビジョニング ツールを実行したところ、次のサインイン エラーが発生しました: 「エラー: AADSTS50011: リクエストで指定された返信 URL がアプリケーションに対して構成されている返信 URL と一致しません」
 上記の説明のように、正しい Azure AD テナント下に Finance and Operations 環境を配置することが非常に重要です。 LCS を使用してレベル 1 または顧客管理環境において、Azure AD テナント設定の変更は配置後にはサポートされません。
 
-### <a name="how-can-i-fix-my-existing-environment-where-i-am-getting-sign-in-errors"></a>サインイン エラーが発生している既存の環境を修正するにはどのようにしますか?
+### <a name="how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors"></a>環境が失敗した状態の場合、またはサインイン エラーが発生している場合に、既存の環境をどのように修正しますか?
+
 以前に、管理者ユーザーのプロビジョニング ツールを使用してテナントの設定を更新した環境がある場合は、それらの環境を削除した後、正しい Azure AD テナント下に再配置することをお勧めします。
 
 既存の環境を削除して再配置できない場合は、URL を構成済 Azure AD テナントに追加する必要があります。 テナント管理者は、次のコマンドを実行できます。

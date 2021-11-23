@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: dcb99fdbebef4d6e98c0390f1b3e86f696dcebf9370c00a8d725ea002996c15c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a5f22d4e6a567b822d25765d4f59280bf31c44e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746557"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783154"
 ---
 # <a name="creators-in-the-acceptance-test-library"></a>承認テスト ライブラリの作成者
 

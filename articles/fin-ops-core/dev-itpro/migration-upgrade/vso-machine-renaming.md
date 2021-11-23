@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25911
 ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a8278ca75593b37d4be20b59f685f76d91e4a4c260061908a4f1098db2a0c80
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e4cad3fed1746845c79c29d37e198036f96d61d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716735"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782717"
 ---
 # <a name="rename-a-local-development-vhd-environment"></a>ローカル開発 (VHD) 環境の名前変更
 

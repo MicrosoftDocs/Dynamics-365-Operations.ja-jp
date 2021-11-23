@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: b3ff969839498a6a081c1a1ae554524ac59f2dbcb7fcd751141787a7a0bb32fd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f28ac9eafbebca1e92f8564ef14317783519e78e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746679"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783334"
 ---
 # <a name="use-pos-controls-in-extensions"></a>拡張機能での POS コントロールの使用
 

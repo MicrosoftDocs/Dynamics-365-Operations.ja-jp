@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 04/07/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8b9d72313a962725c429c2d234d94a3545ab4391
-ms.sourcegitcommit: 59d507c0dd6f0bec3ab72034e12d582133ab2a52
+ms.openlocfilehash: bc41877b956b9e527040ed3a47d4751932f9eef8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "7496644"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781566"
 ---
 # <a name="unlink-and-relink-dual-write-environments"></a>二重書き込み環境のリンク解除および再リンク
 
@@ -36,7 +36,7 @@ ms.locfileid: "7496644"
 3. キー テーブルからデータを削除します。
 
     - **DualWriteProjectConfiguration**
-    - **DualWriteFieldConfiguration**
+    - **DualWriteProjectFieldConfiguration**
     - **BusinessEventsDefinition**
 
 4. Dataverse UAT 環境に対して、Finance and Operations UAT 環境を再リンクすることが必要な場合があります。 
@@ -62,7 +62,7 @@ Dataverse でバックアップおよび復元のプロセスが実行されて�
 6. Finance and Operations アプリでキー テーブルからデータを削除します。
 
     - **DualWriteProjectConfiguration**
-    - **DualWriteFieldConfiguration**
+    - **DualWriteProjectFieldConfiguration**
     - **BusinessEventsDefinition**
 
 7. リセットする環境に二重書き込みを設定します。 詳細については、[システム要求と前提条件](requirements-and-prerequisites.md) を参照してください。

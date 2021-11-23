@@ -4,17 +4,17 @@ description: このトピックでは、X++ で SQL インジェクション攻�
 author: pvillads
 ms.date: 12/01/2020
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a45ed173cf2ae5fc19881ce44a71ba2708ce4acaff76dda1eed2eafafb8d168e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d9f5cad85c54f535ad6e4dc5c236d9a0dbbcbf8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763492"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783269"
 ---
 # <a name="mitigate-a-sql-injection-attack"></a>SQL インジェクション攻撃の緩和
 

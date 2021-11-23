@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: c87e2221f6f70a3d91324164a83a33d11bced8e20cc34dbca9a79dfe7667dafb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f9495f56cc0d289efd91d3d061d567e1090e486e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739485"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782757"
 ---
 # <a name="add-values-to-enums-through-extension"></a>拡張機能を使用して列挙体に値を追加
 

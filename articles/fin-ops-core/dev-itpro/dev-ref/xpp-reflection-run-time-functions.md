@@ -4,17 +4,17 @@ description: このトピックでは、リフレクション ランタイム関
 author: RobinARH
 ms.date: 06/20/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cff054661928442d3f68ae581a344304d1af016d4a69db0f80089bfdbb2ff5e9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 554eda70876dc20f7ba082b7896e8271f3658b49
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747231"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783188"
 ---
 # <a name="x-reflection-runtime-functions"></a>X++ リフレクション ランタイム関数
 

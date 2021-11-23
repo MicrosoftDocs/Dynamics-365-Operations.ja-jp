@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 21631
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eaacd9a791d7e88f8c4dd0f8d9cac0f617a9302e
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 576bae5aeaf6c2cdbdddbf287704bc2d81ed1ec7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595051"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781979"
 ---
 # <a name="use-the-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) の使用
 

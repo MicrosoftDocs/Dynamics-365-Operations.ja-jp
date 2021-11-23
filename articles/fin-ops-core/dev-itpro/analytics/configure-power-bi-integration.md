@@ -2,7 +2,7 @@
 title: PowerBI.com 統合の構成
 description: このトピックでは、PowerBI.com との統合をサポートする新しい Finance and Operations 環境を構成する方法を説明します。
 author: MilindaV2
-ms.date: 07/22/2021
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3b382066bf52808af2a77a2915598a6279b73778521427ec32a38b9b50911b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c3bf109f34e0b5932c3fdc464b9480e2856b9ea2
+ms.sourcegitcommit: 4946b7f250f8b5cd3d09098b08e74bc5763d1c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717660"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "7792623"
 ---
 # <a name="configure-powerbicom-integration"></a>PowerBI.com 統合のコンフィギュレーション
 
@@ -68,8 +68,12 @@ ms.locfileid: "6717660"
     > **アプリケーション (クライアント) ID** の値を必ずキャプチャしてください。
 
 6. **管理** \> **API のアクセス許可** \> **アクセス許可の追加** \> **Microsoft API** \> **Power BI サービス** を選択します。
-7. **委任されたアクセス許可の選択** を選択します。
-8. 次のアクセス許可を有効にします。
+
+    > [!NOTE] 
+    > Government Commmunity Cloud の場合は、**Power BI サービス** を選択するのではなく、**自分の組織が使用する API** タブで **Microsoft Power BI Government Community Cloud** を検索して選択します。
+
+8. **委任されたアクセス許可の選択** を選択します。
+9. 次のアクセス許可を有効にします。
 
     - **コンテンツ**
 

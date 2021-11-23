@@ -1,7 +1,7 @@
 ---
 title: コマースの周辺機器の互換性
 description: このトピックでは、Dynamics 365 Commerce との互換性のテストが完了している周辺機器を示します。
-author: rubencdelgado
+author: BrianShook
 ms.date: 10/08/2017
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-08
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4616a1ff5a7e090e0f48f7d4066cfc2518e4164bde2d6cba08e49e924b5e63da
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe735076e575dcc626e9d2042ad1f9679ff623c3
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714773"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779475"
 ---
 # <a name="peripheral-compatibility-for-commerce"></a>コマースの周辺機器の互換性
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 11184
 ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b283815884c6510eae3305869903fe330ac44ad
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 7b862fec779b8010bee28b64b606db8562453525
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463543"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782745"
 ---
 # <a name="customize-model-elements-through-extension"></a>拡張機能によってモデル要素をカスタマイズする
 

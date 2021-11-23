@@ -1,14 +1,14 @@
 ---
 title: 外部ギフト カードのサポート
 description: このトピックでは、Microsoft Dynamics 365 Commerce で現在利用できる外部ギフト カードのサポートについて説明します。
-author: rubencdelgado
+author: BrianShook
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.devlang: ''
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 0009b7910b70319d9ab2cb695b360ed88bcb42c6c22b015e6738258cc0b83a03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 232197ee248471bb561b13e68ac3d7ca0118e082
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762322"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781134"
 ---
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 

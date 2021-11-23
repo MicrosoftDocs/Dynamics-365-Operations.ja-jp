@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-5-31
 ms.dyn365.ops.version: Platform update 26
-ms.openlocfilehash: febdde53463d827eae6436954d27b27908dcc19232722fb9aa608134ab8eecb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d29cef6af04e8053f0841b0e0983438fc34f8ee2
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737819"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782154"
 ---
 # <a name="feature-callouts"></a>機能のコールアウト
 

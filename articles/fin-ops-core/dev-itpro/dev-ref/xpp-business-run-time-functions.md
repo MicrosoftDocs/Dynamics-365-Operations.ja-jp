@@ -4,17 +4,17 @@ description: このトピックでは、ビジネス ランタイム関数につ
 author: RobinARH
 ms.date: 06/20/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df607fbcbb5afc0d69c4d89d8e7df3b8d728f1a0a75135e0b06796d123052afa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f06816fb261ce2eeb25b344fd6367de1d480d299
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763482"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781308"
 ---
 # <a name="x-business-runtime-functions"></a>X++ ビジネス ランタイム関数
 

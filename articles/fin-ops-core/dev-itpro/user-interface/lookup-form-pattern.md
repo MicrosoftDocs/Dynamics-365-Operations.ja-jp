@@ -5,17 +5,17 @@ author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52ebf7b16f4de180f48ac78fe765c7c429f9601f
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 005d04bfa1062e1917f9ad33e8bda6962a656f5f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594847"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781262"
 ---
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 

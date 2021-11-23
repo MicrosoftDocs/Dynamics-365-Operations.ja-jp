@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 2ae1b3a417f45bd766583a8009ab73edaa1e9c6f
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 601ed2863ba07bafbbbcbee261810f414b7f6b1b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485895"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782399"
 ---
 # <a name="consume-external-or-third-party-libraries-like-knockoutjs-in-pos-extensions"></a>POS 拡張機能で Knockout.js のような外部またはサード パーティー ライブラリを使用する
 

@@ -5,18 +5,18 @@ author: pvillads
 ms.date: 02/07/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26821
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae785b794ea73c046c0f625845fcd8dd3d5477d1bfefde478761167f8fe3c00a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 29b8c58bbd65d048cca968b5cc631e343a0fc0ad
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713876"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781765"
 ---
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 

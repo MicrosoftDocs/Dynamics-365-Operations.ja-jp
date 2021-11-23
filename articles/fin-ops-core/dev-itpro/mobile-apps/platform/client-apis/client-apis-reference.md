@@ -1,20 +1,20 @@
 ---
 title: クライアント API のホームページ
 description: モバイル プラットフォーム クライアント API
-author: robinarh
+author: tonyafehr
 ms.date: 07/23/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 08/09/2017
-ms.openlocfilehash: ffbfe4e556b02b3bae92824d93fe994a8eefd81ae7eb81011db6a93b6156e623
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 87dd6bb2ea2b82627f05cb7900a7c811ccbd32b6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771970"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781156"
 ---
 # <a name="client-apis-home-page"></a>クライアント API のホームページ
 

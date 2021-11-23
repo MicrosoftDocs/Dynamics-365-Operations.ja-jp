@@ -1,18 +1,18 @@
 ---
 title: ページ モジュール
 description: IPage インターフェイスは、さまざまなプロパティ、ライフ サイクル、およびワークスペース内のページに関連付けられているイベント フックをカプセル化します。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 6b78f7fe7d34d82d62ad3ebb309e42399c6c2d75240d28a55a020fdf17f8f27d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: e6213924b1fc0d081c71a72c3467239fd4d45ad1
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763453"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781512"
 ---
 # <a name="page-module"></a>ページ モジュール
 

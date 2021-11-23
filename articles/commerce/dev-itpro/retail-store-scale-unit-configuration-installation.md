@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 219744
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
 ms.search.region: Global
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 738da4b5250880925996a88c76c5baa206564eeb1c554c39635713f6867619f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7eadcefdf3bc057c7a55a45d58f2f15f11b223e7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731707"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782106"
 ---
 # <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 

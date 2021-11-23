@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 30141
 ms.assetid: 9e67e62c-1ced-45bd-8591-941e9afb0ab1
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec26ad881be4f26e537520aae06a114fe5c85083ec28de00fdb688591c8fb9e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80e97da850dbd87a94421adce48dd53055410b1e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738496"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783134"
 ---
 # <a name="control-checklist"></a>コントロールのチェックリスト
 

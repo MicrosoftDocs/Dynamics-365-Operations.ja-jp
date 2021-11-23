@@ -1,8 +1,8 @@
 ---
 title: 翻訳メモリ ファイル
 description: このトピックでは、高品質の翻訳出力ファイルを提供するために、翻訳メモリ ファイルをいつ、どこで作成、編集、および使用できるかについて説明します。
-author: kfend
-ms.date: 03/29/2018
+author: abmotgi
+ms.date: 10/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 6154
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ejcho
+ms.author: abmotgi
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: bb8263f1a9cc9f55abe1f2aa0b21979b5da484dfd07c56db72372c93bb35c529
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9bf8e6f95bffac6c981608fdba0d5131a635fe2b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745848"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700027"
 ---
 # <a name="translation-memory-files"></a>翻訳メモリ ファイル
 
@@ -88,7 +88,7 @@ TM として使用する前に、整合された XLIFF ファイルを確認し�
 
 無料の多言語エディターまたは別の XLIFF エディターを使用して、DTS が提供する XLIFF ファイル内の翻訳をレビューおよび編集することをお勧めします。 少なくとも、翻訳出力が製品の品質基準を満たしていることを確認するために、翻訳をレビューする必要があります。
 
-多言語エディタで XLIFF ファイルを開くと、次の図のようになります。
+多言語エディタで XLIFF ファイルを開くと、次の図のようになります。 ファイルを開く際にエラーが表示される場合は、メッセージを無視して、ウィンドウの左下隅にある **文字列** タブを選択します。
 
 ![多言語エディターの XLIFF ファイル。](./media/dts-editor1.png "多言語エディターでのXLIFF翻訳単位")
 

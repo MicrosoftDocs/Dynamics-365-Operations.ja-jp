@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 07/24/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 23401
 ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd16546d46edd382dcaf83f4b279410a380d3985c3f38b1a8a32159a5fcece81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51e75682a7037713b1db0eba1ad7b4d82592a9bd
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730563"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782461"
 ---
 # <a name="version-control-metadata-search-and-navigation"></a>バージョン コントロール、メタデータ検索、およびナビゲーション
 

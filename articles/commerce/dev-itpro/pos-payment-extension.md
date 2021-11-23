@@ -2,23 +2,23 @@
 title: 販売時点管理 (POS) 支払拡張機能
 description: このトピックでは、ハードウェア ステーション API を使用して、支払デバイスまたは支払コネクタに主要な支払いロジックを実装する方法について説明します。
 author: mugunthanm
-ms.date: 09/01/2017
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24411
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ab81f8a900d40db3009aa60276636b03fb5d2cb6c980040b1795c7afde909197
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cf39bb7eb048e03b9c456f33a776fdb287a7409
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735618"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781713"
 ---
 # <a name="point-of-sale-pos-payment-extension"></a>販売時点管理 (POS) 支払拡張機能
 
@@ -37,6 +37,11 @@ POS 側から以下の要求ハンドラーをオーバーライドして、支�
 - PaymentTerminalExecuteTaskRequestHandler
 - PaymentTerminalRefundPaymentRequestHandler
 - PaymentTerminalVoidPaymentRequestHandler
+- PaymentTerminalCancelOperationRequest
+- PaymentTerminalEnquireGiftCardBalancePeripheralRequest
+- PaymentTerminalAddBalanceToGiftCardPeripheralRequest
+- PaymentTerminalActivateGiftCardPeripheralRequest
+- PaymentTerminalBeginTransactionRequest
 
 POS ランタイムは、これらの要求ハンドラーに拡張機能があるかどうかを確認するために拡張子マニフェストをチェックします。 拡張機能がある場合は、ランタイムは拡張要求をロードし、オーバーライドされた要求を実行します。 拡張プロジェクトでは、これらの要求をオーバーライドし、カスタム支払プロバイダーを呼び出す独自の実装を追加して、プロバイダーによって返されるステータスに基づいて応答を更新します。 要求を上書きするときは、コア ロジックのみを上書きします。 すべてのカスタム ロジックの実行後、ハードウェア ステーション (支払デバイス/コネクタ) から受信した更新済の応答を POS に送信します。 すべての標準ワークフローは POS によって処理されるため、支払ラインの追加、無効、拒否、および応答に基づいたトランザクションの完結の方法を心配する必要はありません。
 

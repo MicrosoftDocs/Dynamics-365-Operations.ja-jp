@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e2b3d8e5e9c7ba198979c223199fd939d1875fb5d41413098430ca2a57e517e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0de9856ccebc6cf6953dca2007c329917176e8ed
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712425"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781486"
 ---
 # <a name="enable-duplicate-payment-protection-for-payment-connector"></a>支払コネクタの重複支払保護の有効化
 

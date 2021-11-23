@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 0220a9319fdf89cbc6628cfdba4068291a0f095f779155fe223afbeb39206dc5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b41a1b0d7eb2f25eeec3fd8bee9793bb2492d52e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761648"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782918"
 ---
 # <a name="pos-triggers"></a>POS トリガー
 
@@ -441,7 +441,7 @@ ms.locfileid: "6761648"
 2. **ファイル** メニューで、**開く \> プロジェクト/ソリューション** を選択します。 テンプレート プロジェクト (**SampleCRTExtension.csproj**) を検索します。
 3. テンプレート プロジェクト **Runtime.Extensions.SuspendReceiptSample** を名前変更します。
 4. オプション: 既定の名前空間を変更します。
-5. 出力アセンブリ **Contoso.Commerce.Runtime.SuspendReceiptSample** の名前を変更します。
+5. 出力アセンブリ **Contoso.Commerce.Runtime.SuspendReceiptSample** を名前変更します。
 6. プロジェクト内で、新しい要求クラス ファイルを追加し、**GetCustomReceiptsRequestHandler.cs** いう名前をつけます。
 7. 次のコードをコピーして、クラスに貼り付けます。 コピーする前に、自動的に生成されたコードを削除します。
 

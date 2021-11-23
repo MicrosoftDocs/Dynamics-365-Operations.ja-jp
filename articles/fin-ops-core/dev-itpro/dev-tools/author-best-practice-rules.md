@@ -5,19 +5,19 @@ author: pvillads
 ms.date: 11/03/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 48071
 ms.assetid: 4fe671c4-c556-4942-8570-307cf68ae0a7
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3c2c652e93a9156f992963394a16a31d599a5248878f91f6d44abb40b2a33a0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83ed1b80e4d0903489c9c084675ddfd5c7efcebd
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767132"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781562"
 ---
 # <a name="write-best-practice-rules"></a>ベスト プラクティス ルールを記述する
 

@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 09/12/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 31781
 ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc4cc50f61b8ba730cec14bc1a6fd7bc94248ae48448d1131f5dd90c4e3bdf75
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b54855f70e431bae88c52be3a60940f5e69fe059
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721904"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782025"
 ---
 # <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations プロジェクト タイプ
 

@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 21631
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7385f2ac28e7df4ae317fe898a03bc1654b7b34a9b7d0138d5ae2fa3fb6fb039
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 86fc39387bb36803f85c1633d973ebd2231c6b4d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717516"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782447"
 ---
 # <a name="derived-test-cases"></a>派生テスト ケース
 

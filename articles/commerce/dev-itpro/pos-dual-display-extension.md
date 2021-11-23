@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 6acabcda2e64b780cc5b179977d8333d5c5efbd7760c6a1b0daf688cdc873ad5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 926fd0dbea5cfe5d17db7b96225be6473f6171e7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746683"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783338"
 ---
 # <a name="extend-the-point-of-sale-pos-dual-display-view"></a>販売時点管理 (POS) デュアル ディスプレイ ビューの拡張
 

@@ -1,8 +1,8 @@
 ---
-title: Finance and Operations および Dataverse 管理リファレンス
-description: このトピックでは、Finance and Operations の仮想エンティティの設定およびコンフィギュレーションについて説明します。
+title: Dataverse 仮想エンティティの構成
+description: このトピックでは、Microsoft Dataverse で Finance and Operations アプリの仮想エンティティを構成する方法について説明します。
 author: Sunil-Garg
-ms.date: 07/13/2020
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,26 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4427b41d91007536d1e1962193e102f34cfd4638fffed5bb84b20aeba1e0e493
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 58ebbabf2cd2ac8d5badda8f09e13ba8202100f0
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769836"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678727"
 ---
-# <a name="finance-and-operations-and-dataverse-admin-reference"></a>Finance and Operations および Dataverse 管理リファレンス
+# <a name="configure-dataverse-virtual-entities"></a>Dataverse 仮想エンティティの構成
 
 [!include[banner](../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+このトピックでは、Microsoft Dataverse で Finance and Operations アプリの仮想エンティティを構成する方法について説明します。
+
 > [!IMPORTANT]
-> この機能には、[Finance and Operations](../get-started/whats-new-platform-update-10-0-12.md) および Dataverse の更新プログラム 189 のサービスが必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> このトピックに含まれる構成手順が必要となるのは、 Microsoft Power Platform 統合が有効に **なっていない** Finance and Operations アプリ環境に対してのみです。 Microsoft Power Platform 統合が有効になっている Finance and Operations アプリ環境のために、統合を有効にするプロセスの一部としてこのトピックで説明した仮想エンティティ構成が行われます。 Finance and Operations アプリ環境の Microsoft Power Platform 統合を有効にする方法の詳細については、[Microsoft Power Platform 統合の有効化](enable-power-platform-integration.md) を参照してください。
 
-このトピックでは、Dataverse で Finance and Operations アプリの仮想エンティティを設定およびコンフィギュレーションする方法について手順を追って説明します。
+## <a name="getting-the-virtual-entity-solution"></a><a name="get-virtual-entity-solution"></a> 仮想エンティティ ソリューションの取得
 
-## <a name="getting-the-solution"></a>ソリューションの入手
 Finance and Operations 仮想エンティティの Dataverse ソリューションは、Microsoft AppSource 仮想エンティティ ソリューションからダウンロードする必要があります。 詳細については、[Finance and Operations 仮想エンティティ](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity) を参照してください。
 
 次のソリューションが Dataverse にインストールされていることを確認します。
@@ -43,12 +44,21 @@ Finance and Operations 仮想エンティティの Dataverse ソリューショ�
 
 - **MicrosoftOperationsERPVE**: これは、表示されるときに生成された仮想エンティティを含む、API マネージド ソリューションです。
 
+仮想エンティティ ソリューションで更新を使用できる場合は、Power Platform 管理センターで手動で適用できます。 仮想エンティティ ソリューションを手動でインストールおよび更新する方法の詳細については [Dynamics 365 アプリの管理](/power-platform/admin/manage-apps) を参照してください。 
+
+> [!NOTE]
+> Microsoft Power Platform 統合が有効になっている Finance and Operations アプリ環境では、仮想エンティティ ソリューションに対する更新可能な更新が自動的に適用されます。
+
 ## <a name="authentication-and-authorization"></a>認証と承認
 
-ソリューションを Dataverse 環境にインポートした後は、両方の環境を相互に接続するように設定する必要があります。 Dataverse は、Azure Active Directory (AAD) アプリケーションに基づいて、サービス ツー サービス (S2S) 認証を使用して Finance and Operations を呼び出します。 この新しい AAD アプリケーションは、Dataverse 環境の単一のインスタンスを表します。 Dataverse と Finance and Operations の環境の組み合わせが複数存在する場合は、ペアごとに独立した AAD アプリケーションを作成して、Finance and Operations 環境と Dataverse 環境の正しいペア間で確実に接続が確立されるようにする必要があります。 次の手順は、AAD アプリケーションの作成方法を示しています。
+ソリューションを Dataverse 環境にインポートした後は、両方の環境を相互に接続するように設定する必要があります。 Dataverse は、Azure Active Directory (Azure AD) アプリケーションに基づいて、サービス間 (S2S) 認証を使用して Finance and Operations アプリを呼び出します。 環境この新しい Azure AD アプリケーションは、Dataverse 環境の単一のインスタンスを表します。 Dataverse と Finance and Operations アプリ環境の組み合わせが複数存在する場合は、組み合わせごとに独立した Azure AD アプリケーションを作成して、 Finance and Operations アプリと Microsoft Power Platform 環境の正しい組み合わせの間で確実に接続が確立されるようにする必要があります。 
+
+### <a name="register-the-app-in-the-azure-portal"></a>Azure ポータルでアプリを登録する
+
+次の手順では、Azure AD アプリケーションの作成方法を説明します。
 
 > [!IMPORTANT]
-> AAD アプリケーションは、Finance and Operations と同じテナントに作成する必要があります。
+> Azure AD アプリケーションは、Finance and Operations アプリと同じテナントに作成する必要があります。
 
 1.  <https://portal.azure.com> **\> Azure Active Directory \> アプリの登録** に移動します。
 
@@ -62,7 +72,7 @@ Finance and Operations 仮想エンティティの Dataverse ソリューショ�
 
     - **登録** を選択します。
 
-    - **アプリケーション (クライアント) ID** の値をメモしておきます。後の手順で必要となります。
+    - 後の手順で必要となるため、**アプリケーション (クライアント) ID** の値をメモしておきます。
 
 3.  アプリケーションの対称キーを作成します。
 
@@ -74,9 +84,9 @@ Finance and Operations 仮想エンティティの Dataverse ソリューショ�
 
     - **保存** を選択します。 キーが作成され、表示されます。 この値を後で使用するためにコピーします。
 
-上で作成した AAD アプリケーションは、Dataverse によって Finance and Operations アプリを呼び出すために使用されます。 したがって、Finance and Operations によって信頼され、Finance and Operations で適切な権限を持つユーザー アカウントに関連付けられている必要があり ます。 Finance and Operations では、特殊サービス ユーザーは、仮想エンティティ機能に対する権限 *のみ* で作成することができます。その他の権限は必要ありません。 この手順を完了すると、上で作成した AAD アプリケーションのシークレットを使用するアプリケーションによって、この Finance and Operations 環境を呼び出して仮想エンティティの機能にアクセスできるようになります。
+### <a name="grant-app-permissions-in-finance-and-operations-apps"></a>Finance and Operations アプリのアクセス許可を付与する
 
-次の手順では、このプロセスを Finance and Operations アプリで実行していきます。
+作成した Azure AD アプリケーションは、Dataverse によって Finance and Operations アプリを呼び出すために使用されます。 したがって、Finance and Operations アプリによって信頼され、 適切な権限を持つユーザー アカウントに関連付けられている必要があり ます。 仮想エンティティ機能への権限 **のみ** を持つ特殊サービス ユーザーは、Finance and Operations アプリで作成される必要があります。 このサービス ユーザーには、その他の権限が設定されている必要はありません。 この手順を完了した後、作成した Azure AD アプリケーションのシークレットを持つアプリケーションによって、この Finance and Operations アプリ環境を呼び出して仮想エンティティの機能にアクセスできるようになります。
 
 1.  Finance and Operations で、**システム管理 \> ユーザー \> ユーザー** の順に移動します。
 
@@ -104,11 +114,13 @@ Finance and Operations 仮想エンティティの Dataverse ソリューショ�
 
     - **ユーザー ID**: 上記で作成されたユーザー ID。
 
+## <a name="configure-the-virtual-entity-data-source"></a>仮想エンティティ データ ソースの構成
+
 プロセスの次の手順では、接続先の Finance and Operations インスタンスに Dataverse を提供します。 以下の手順では、プロセスのこの部分について説明します。
 
 1.  Dataverse では、**詳細設定 \> 管理 \> 仮想エンティティ データ ソース** に移動します。
 
-2.  "Finance and Operations" というデータ ソースを選択します。
+2.  「Finance and Operations」というデータ ソースを選択します。
 
 3.  上記の手順に従って情報を入力します。
 
@@ -116,53 +128,17 @@ Finance and Operations 仮想エンティティの Dataverse ソリューショ�
 
     - **OAuth URL** - https://login.windows.net/
 
-    - **テナント ID**: "contoso.com" などのテナント。
+    - **テナント ID**- 「contoso.com」などのテナント。
 
     - **AAD アプリケーション ID**: 上で作成された **アプリケーション (クライアント) ID**。
 
     - **AAD アプリケーション シークレット**: 上で生成されたシークレット。
 
-    - **AAD リソース**: 00000015-0000-0000-c000-000000000000 と入力します (これは、Finance and Operations を表す AAD アプリケーションです。常に同じ値であることを表します)。
+    - **AAD リソース**- 00000015-0000-0000-c000-000000000000 と入力します (これは、Finance and Operations を表す Azure AD アプリケーションで、常に同じ値であることを表します)。
 
 4.  変更を保存します。
 
-## <a name="enabling-virtual-entities"></a>仮想エンティティの有効化
-
-Finance and Operations には多数の OData 対応エンティティが含まれているため、既定では、エンティティは Dataverse の仮想エンティティとしては使用できません。 次の手順では、必要に応じてエンティティを仮想にすることができます。
-
-1. Dataverse で、**高度な検索** に移動します (フィルター アイコン)。
-
-2. [利用可能な Finance and Operations エンティティ] を探して、**結果** を選択します。
-
-![カタログ。](../media/fovecatalog.png)
-
-3. 有効にするエンティティを検索して開きます。
-
-4. **表示** を **はい** に設定して保存します。 これにより、仮想エンティティが生成され、[高度な検索] ダイアログ ボックスなどの適切なすべてのメニューに表示されるようになります。
-
-![VE を有効にします。](../media/foveenable.png)
-
-## <a name="refreshing-virtual-entity-metadata"></a>仮想エンティティ メタデータの更新
-
-仮想エンティティ メタデータは、Finance and Operations のエンティティ メタデータが変更されたと想定される場合に、強制的に更新できます。 これを行うには、**更新** を **はい** に設定して保存します。 これにより、Finance and Operations の最新のエンティティ定義が Dataverse に同期され、仮想エンティティが更新されます。
-
-## <a name="referencing-virtual-entities"></a>仮想エンティティの参照
-
-仮想エンティティはすべて MicrosoftOperationsERPVE ソリューションで生成され、API によって管理されます。 つまり、エンティティの表示/非表示を変更してもソリューションの項目は変化しますが、それでも依存できるマネージド ソリューションになります。 標準 ALM フローでは、ISV ソリューションの **既存の追加** オプションを使用して、このソリューションから仮想エンティティに対する標準参照を取得するだけです。 これにより、ソリューションの依存関係が見つからないと表示され、ソリューション インポート時にチェックされます。 インポート中に、指定された仮想エンティティがまだ存在しない場合は、追加の作業を必要とすることなく、自動的に表示されます。
-
-仮想エンティティを使用するには
-
-1.  Dataverse で通常どおり別個のソリューションを作成します。これには、消費ロジックが含められます。
-
-2.  **エンティティ \> 既存の追加** を選択します。 一覧から参照する仮想エンティティを選択します。
-
-3.  追加する資産の選択を求めるメッセージが表示されたら、カスタマイズするフォーム、ビュー、またはその他の要素を選択し、**完了** を選択します。
-
-開発ツールから、フォームなどの既存の要素を仮想エンティティに対して変更することができます。 また、新しいフォーム、ビュー、およびその他の要素を追加することもできます。
-
-![ソリューション。](../media/fovesolution.png)
-
-ソリューションをエクスポートすると、MicrosoftOperationsERPVE ソリューションで生成された仮想エンティティへのハード依存関係が含められます。
+仮想エンティティ の構成が完了したら、Dataverse で仮想エンティティを有効にできます。 詳細については、[Microsoft Dataverse 仮想エンティティの有効化](enable-virtual-entities.md) を参照してください。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

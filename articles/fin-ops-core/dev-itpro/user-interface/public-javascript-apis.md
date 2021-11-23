@@ -5,17 +5,17 @@ author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 22e1817eedec84da26fba093f68939ca83ed91995af9b0af16d1a11b43a14eec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b004078a91434a05fab7a245d4320f28bb0e4890
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749626"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781496"
 ---
 # <a name="public-javascript-apis-for-extensible-controls"></a>拡張可能なコントロールのパブリック JavaScript API
 

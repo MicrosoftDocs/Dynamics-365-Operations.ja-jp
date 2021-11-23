@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 50211
 ms.assetid: 0a774c73-9e5d-4faa-8716-61476c1a9b6e
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 479205a6067642649f338a04b9ad7db202df554ab0ae1f59072c52c601d8171d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ec44fcd6a7002e588f93872e2861abc8d2db750
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737823"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783126"
 ---
 # <a name="extensible-control-programming-reference"></a>拡張可能なコントロールのプログラミング リファレンス
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 28721
 ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af71791bd474a13b1efa3ec75ed5ccbc3e18a430
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: 309f938666fe75539c6e683b384e14d1c65bfa67
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512601"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782932"
 ---
 # <a name="filtering-options"></a>フィルター処理のオプション
 

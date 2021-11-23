@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 54311
 ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0fbea9f91ca1c3674d4e4e87b4d34533ca5c524ab52d498581b6eb6d99475f32
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0044db89bc9f10a86b4b44c5c62b97b221237f0e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737815"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782150"
 ---
 # <a name="file-upload-control"></a>ファイルのアップロード コントロール
 

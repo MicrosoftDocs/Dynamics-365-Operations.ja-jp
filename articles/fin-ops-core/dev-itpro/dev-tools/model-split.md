@@ -5,19 +5,19 @@ author: maertenm
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26941
 ms.assetid: feaa09c5-efc7-4594-921e-b42536b18852
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5977cf7d649eeb3c220cc146b073a4ce99568be6ca71ddf8fc6dc7862e3e1e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2d58c00cea0853c47a00aa329041448f8d0e94c6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761378"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782465"
 ---
 # <a name="model-split"></a>分割されたモデル
 

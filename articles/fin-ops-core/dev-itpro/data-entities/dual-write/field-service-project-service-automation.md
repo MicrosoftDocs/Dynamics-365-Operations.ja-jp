@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 01/09/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74cb96f4a36f67bb680caa4c0d8babb36decb8c1
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: eece3063c00d09350a4ecd7c8d89903b47d5ed5b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416665"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781102"
 ---
 # <a name="support-for-field-service-and-project-service-automation-solutions"></a>Field Service と Project Service Automation ソリューションのサポート
 

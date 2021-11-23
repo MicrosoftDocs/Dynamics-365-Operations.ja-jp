@@ -1,20 +1,20 @@
 ---
 title: データの選択
 description: このトピックでは、X++ 言語での select ステートメントについて説明します。
-author: robinarh
+author: tonyafehr
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 97a3b9b7933fb4fa0e60afe09e0d284d1f5d7661
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 9354cd373d387eacb708d190cf22dcc6bedcb45b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463541"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783261"
 ---
 # <a name="select-data"></a>データの選択
 

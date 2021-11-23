@@ -5,18 +5,18 @@ author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c84b2d7f576032c28c68438b2dc879ccf53703a346546ca1ae03f9205eccdf0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0ceb099f6fcf0e7729b03c102414e4eec74f3301
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763452"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781500"
 ---
 # <a name="maintain-test-cases-in-regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT) でのテスト ケースの管理
 

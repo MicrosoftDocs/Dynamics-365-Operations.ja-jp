@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 10/16/2019
 ms.topic: index-page
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 678f9b819f61df2974bc9376d46a48421b6c5330
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: ee17265414741ad197b528995c1a13a9669ba8d5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500266"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782946"
 ---
 # <a name="continuous-delivery-home-page"></a>継続的な配信ホーム ページ
 

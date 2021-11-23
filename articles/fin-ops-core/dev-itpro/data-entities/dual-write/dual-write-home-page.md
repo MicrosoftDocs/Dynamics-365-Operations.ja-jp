@@ -1,22 +1,22 @@
 ---
 title: 二重書き込みホーム ページ
 description: このトピックでは、二重書き込みに関する情報へのリンクについて説明します。
-author: robinarh
+author: tonyafehr
 ms.date: 02/08/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad2844b17a8cc9914a6c7c17ecd8c9126e5bb1a4
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: bea300fc9159840b35a27fb5bdcd40c92936f177
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512597"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782397"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -58,6 +58,7 @@ ms.locfileid: "7512597"
 + [二重書き込みのカスタマイズに関するガイダンス](custom-best-practices.md)
 + [複数のテーブル マップの処理](multiple-entity-maps.md)
 + [二重書き込み設定後に法人を編集する](edit-legal-entity.md)
++ [メンテナンス時に二重書き込みを一時停止する](pause-for-maintenance.md)
 + [エラー管理と警告通知](errors-and-alerts.md)
 + [アプリケーション ライフサイクル管理](app-lifecycle-management.md)
 + [ユーザーが指定するチームの所有者](user-specified-team-owner.md)
@@ -118,5 +119,6 @@ ms.locfileid: "7512597"
 + [ソリューションの認識に関する問題のトラブルシューティング](dual-write-troubleshooting-solution-awareness.md)
 + [Finance and Operations アプリのアップグレードで生じる問題のトラブルシューティング](dual-write-troubleshooting-finops-upgrades.md)
 + [Finance and Operations アプリと Dataverse での二重書き込み構成の確認](dual-write-troubleshooting-verify-config.md)
++ [テーブル マップの正常性チェックのエラー コード](table-map-health-check.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

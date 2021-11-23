@@ -4,17 +4,17 @@ description: このトピックでは、システム テーブルについて説
 author: RobinARH
 ms.date: 11/06/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e630e68b66c1cd2c6e2f35835001537518ff3fac
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: a0920725f35adcca979c26402e33e3e094dac4e3
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431252"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782049"
 ---
 # <a name="system-tables"></a>システム テーブル
 

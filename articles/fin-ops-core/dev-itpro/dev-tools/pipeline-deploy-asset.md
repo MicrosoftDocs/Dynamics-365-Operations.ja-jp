@@ -5,18 +5,18 @@ author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e57e2f60886ddea6a6f4d88526965fc0d1bcfc7b96120637a0ab0eda2f48ef9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 174216a14d4a69a0dcef7c1bb8c61e23b919a691
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763470"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782763"
 ---
 # <a name="deploy-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のデプロイ
 

@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom:
 - "218654"
 - intro-internal
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c9c7e4a4c91a0b5a316373ede3cdf5589e88e68a2a1332424859c227152afc32
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8053d867956af0892750ba25a8b27a166270e80
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766473"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782833"
 ---
 # <a name="commerce-runtime-crt-architecture-and-configuration"></a>Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
 

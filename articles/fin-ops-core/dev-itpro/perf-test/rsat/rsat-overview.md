@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d905f72a0e82be0063a20051495b0e4be2141b920ac6dbb83be00f7fba5f1f41
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1e02606fcb7364e0005d2cd091b4d285a0ec73b8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721894"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781144"
 ---
 # <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 

@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (Platform update 41 以降)
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 10/13/2021
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 2d7fe698dbfba7a6d59f6752eaf021ca4c58f0fc
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 98259839b295d1a01f431ebd022fa21056b13371
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641175"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728773"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 
@@ -177,6 +177,8 @@ Finance + Operations のインフラストラクチャを設定するには、�
 1. [LCS からセットアップ スクリプトのダウンロード](#downloadscripts)
 1. [コンフィギュレーションの記述](#describeconfig)
 1. [証明書の構成](#configurecert)
+1. [SSIS を設定する](#setupssis)
+1. [SSRS を設定する](#setupssrs)
 1. [VMs を設定する](#setupvms)
 1. [スタンドアロン Service Fabric クラスターの設定](#setupsfcluster)
 1. [テナント用 LCS 接続の構成](#configurelcs)
@@ -184,8 +186,6 @@ Finance + Operations のインフラストラクチャを設定するには、�
 1. [SQL Server の設定](#setupsql)
 1. [データベースを構成する](#configuredb)
 1. [資格情報の暗号化](#encryptcred)
-1. [SSIS を設定する](#setupssis)
-1. [SSRS を設定する](#setupssrs)
 1. [AD FS のコンフィギュレーション](#configureadfs)
 1. [コネクタを構成し、オンプレミスのローカル エージェントをインストールする](#configureconnector)
 1. [リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)
@@ -966,6 +966,11 @@ Finance + Operations では、既定で標準のコンフィギュレーショ�
     $adfsProperties = Get-AdfsProperties
     Set-AdfsProperties -Identifier $adfsProperties.IdTokenIssuer
     ```
+
+    > [!WARNING]
+    > AD FS がシングル サインオン用 Microsoft 365 (旧 Office 365) と連携するように設定されている場合、この手順はシナリオを壊す可能性があります。
+    >
+    > シナリオが引き続き機能するには、展開オプションを指定して、Dynamics 365 for Finance + Operations インストールをその要件に合わせることができます。 詳細については、[AD FS Microsoft 365 の互換性](./onprem-adfscompatibility.md) を参照してください。
 
 2. 混在環境用に AD FS を構成していない限り、イントラネット認証接続用に Windows 統合認証 (WIA) を無効にする必要があります。 WIA を AD FS で使用できるように構成する方法の詳細については、[AD FS で Windows 統合認証 (WIA) を使用するようにブラウザを構成する](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia) を参照してください。
 

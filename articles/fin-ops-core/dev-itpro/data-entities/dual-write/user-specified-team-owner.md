@@ -5,17 +5,17 @@ author: nhelgren
 ms.date: 04/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-04-26
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea76efa34b5fd301be1a731e311dcc202238e353
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 2afc20167dc88e558141c19668ae58205a0612d8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416393"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781564"
 ---
 # <a name="user-specified-team-owner"></a>ユーザー指定のチームの所有者
 

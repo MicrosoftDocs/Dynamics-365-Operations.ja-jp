@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24191
 ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1edae7abd474b5a9f654bbd118328c277994f7daa929829ad5c2a7fbd7fe225f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7767c7f4f651ef7527885456d80d3ecbed6992f9
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741642"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782769"
 ---
 # <a name="install-deployable-packages-from-the-command-line"></a>コマンド ラインからの配置可能なパッケージのインストール
 

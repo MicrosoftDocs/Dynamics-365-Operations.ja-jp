@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 10.0.21 (2021 年 10 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.21 のプレビュー リリースの新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 09/23/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 00935dc74afc5904cf8eae91069d895600b31261
-ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
+ms.openlocfilehash: b282f78ffe7a6e5ed0633ba6199c300d654d0a0d
+ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "7551762"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "7749525"
 ---
-# <a name="preview-features-in-in-dynamics-365-commerce-10021-october-2021"></a>Dynamics 365 Commerce 10.0.21 の機能のプレビュー (2021 年 10 月)
+# <a name="whats-new-and-changed-in-dynamics-365-commerce-10021-october-2021"></a>Dynamics 365 Commerce 10.0.21 (2021 年 10 月) の新機能と変更された機能
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,16 +44,31 @@ ms.locfileid: "7551762"
 |  B2B           |   [B2B e コマース ビジネス パートナー ユーザー管理者権限の付与と取り消し](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/grant-revoke-b2b-e-commerce-business-partner-user-admin-privileges)    |   [B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理](../b2b/manage-b2b-users.md)   |
 |  B2B          |  [e コマースチャネルのカタログのサポート](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-catalogs-e-commerce-channel)   |  パートナーと交渉した製品および特別価格を反映する、パートナー固有のカタログを作成します。   |
 |  配置   |   Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用  |  [Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用](../../fin-ops-core/dev-itpro/deployment/Update-retail-channel.md)     |
+| E コマース   |   [e コマースの再注文に関する拡張エクスペリエンス](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enhanced-reordering-experience-e-commerce)  |   この機能により、e コマース サイトの既存の再注文 (「再購入」) の機能が拡張されます。   |
 |  拡張性  |  Cloud Scale Unit 拡張機能の削除   |  [Cloud Scale Unit 拡張機能の削除](../dev-itpro/retail-sdk/remove-csu-package.md)      |
+|  グローバリゼーション  |   [ロシア向け Commerce ローカライズ](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/commerce-localization-russia)       |   [ロシア向け Commerce ローカライズ](../localizations/rus-commerce-localization.md)には、ロシアにおける Dynamics 365 Commerce の実装に必要不可欠な機能が含まれます。  |
+|  グローバリゼーション  |   (ブラジル) 臨時に完了した売上のキャンセルと返品       |   これで、NFC-e 代替モードで完了した販売トランザクションに対して返品やキャンセルの作成ができるようになりました。 詳細については、[ブラジル向け Commerce POS の NFC-e ドキュメントのキャンセルと返品](../localizations/latam-bra-nfce-cancel-return.md)を参照してください。  |
+|   販売促進   |  見本の在庫認識  |  [製品分析コード値を見本として表示するように構成する](../dev-itpro/dimensions-swatch.md)    |
+|  パフォーマンス  | [パフォーマンスへの影響による、小売トランザクション テーブルに対するカスタム クエリ変更追跡コンフィギュレーションの適用](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enforce-custom-query-change-tracking-configurations-retail-transaction-tables-due-performance-impacts)   | この機能により、小売トランザクション テーブルで変更追跡機能とデータ管理エクスポート フレームワークを組み合わせて使用すると、Commerce のパフォーマンスが向上します。  |
 |  販売時点管理 (POS)  |  意図しない商取引注文の価格計算を禁止する     |  [販売時点管理 (POS) の顧客注文](../customer-orders-overview.md)           |
 |  販売時点管理 (POS)  |   [POS による店舗内の場所での在庫移動のサポート](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-inventory-movement-between-in-store-locations-pos)   |  POS から直接、店舗内の場所での在庫移動を有効にできます。   |
-|  グローバリゼーション        |   ロシア向け Dynamics 365 Commerce での前払            |  [ロシア向け Dynamics 365 Commerce での前払](../localizations/rus-commerce-prepayments.md)   |
-|  グローバリゼーション  |   ロシア向け Dynamics 365 Commerce ローカライズの設定       |   [ロシア向け Dynamics 365 Commerce ローカライズの設定](../localizations/rus-commerce-setup.md)  |
-|   販売促進   |  見本の在庫認識  |  [製品分析コード値を見本として表示するように構成する](../dev-itpro/dimensions-swatch.md)    |
-|   ターゲットを設定する   |  [顧客区分とターゲット接地](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/customer-segmentation-targeting)  |  [デバイス、市場、および位置情報のターゲット設定](../targeting-overview.md)    |
-|  業績  | [パフォーマンスへの影響による、小売トランザクション テーブルに対するカスタム クエリ変更追跡コンフィギュレーションの適用](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enforce-custom-query-change-tracking-configurations-retail-transaction-tables-due-performance-impacts)   | この機能により、小売トランザクション テーブルで変更追跡機能とデータ管理エクスポート フレームワークを組み合わせて使用すると、Commerce のパフォーマンスが向上します。  |
-| E コマース   |   [e コマースの再注文に関する拡張エクスペリエンス](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enhanced-reordering-experience-e-commerce)  |   この機能により、e コマース サイトの既存の再注文 (「再購入」) の機能が拡張されます。   |
-| 販売時点管理 (POS) オフライン   |   Modern POS オフライン監視ダッシュボード、シームレスなオフライン弾力性、および信頼性の向上   |   この機能セットは、10.0.20 リリースに追加でバックポートされています。  詳細については、[Commerce のオフライン データベース実装とトラブルシューティング](../dev-itpro/implementation-considerations-offline.md) ドキュメントを参照してください。   |
+| 販売時点管理 (POS) オフライン   |   Modern POS オフライン監視ダッシュボード、シームレスなオフライン弾力性、および信頼性の向上   |   この機能セットは、10.0.20 リリースに追加でバックポートされています。  [Commerce のオフライン データベースの実装とトラブルシューティング](../dev-itpro/implementation-considerations-offline.md)  |
+|   ターゲット設定   |  [顧客区分とターゲット接地](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/customer-segmentation-targeting)  |  [デバイス、市場、および位置情報のターゲット設定](../targeting-overview.md)    |
+
+## <a name="features-turned-on-by-default-in-this-release"></a>このリリースで、既定で有効になる機能
+
+次の表に、10.0.21 で既定で有効になる機能の一覧を示します。 有効にした機能のほとんどは [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) でオフにできます。
+
+| 機能名 | 日付を有効にする | 機能の追加日 | 機能状態 |
+| :--- | :--- | :--- | :--- |
+| (インド) 税務登録番号によって Retail POS で顧客を検索します | 2021/9/1 | 2019/8/31 | 既定で有効 |
+| (インドの商品及びサービス税) 元の請求書への参照を含む訂正票を更新します | 2021/9/1 | 2019/6/3 | 既定で有効 |
+| (イタリア) Retail POS での顧客情報管理 | 2021/9/1 | 2019/10/7 | 既定で有効 |
+| (ポーランド) Retail POS での顧客情報管理 | 2021/9/1 | 2019/12/19 | 既定で有効 |
+| 意図していないコマース注文の価格計算を防止します。 | 2021/9/1 | 2021/9/1 | 既定で有効 |
+| 受領書の電子メールの値が既定の顧客から新しい顧客にコピーされないようにします。 | 2021/9/1 | 2021/9/1 | 既定で有効 |
+| 小売店舗のユーザー定義の証明書プロファイル | 2021/9/1 | 2020/9/30 | 既定で有効 |
+| 会計統合フレームワークの内部および外部コネクタのサポート | 2021/9/1 | 2020/6/24 | 既定で有効 |
 
 
 ## <a name="additional-resources"></a>追加リソース

@@ -1,18 +1,18 @@
 ---
 title: PartDesign タイプ
 description: パーツ デザイン オブジェクトの種類。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: d8f5fb33f69bcaf1d4fcd95232945d4e3042a3eff58f45eb9715d2db205e2d8c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 6a9bca8f1c105e3e1f98c3e11f0b0cfd3c6fa782
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745136"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781528"
 ---
 # <a name="partdesign-type"></a>PartDesign タイプ
 

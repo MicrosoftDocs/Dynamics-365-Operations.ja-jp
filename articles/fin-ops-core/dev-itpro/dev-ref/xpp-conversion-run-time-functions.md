@@ -4,17 +4,17 @@ description: このトピックでは、変換ランタイム関数について�
 author: RobinARH
 ms.date: 06/26/2018
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85c8deb332dcd25b8e767aac4fa5d91e663c305f663734c551e63b0bd8927aef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 353bf3887a92446b01228ba4bb0e79f079357d76
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763474"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783050"
 ---
 # <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 

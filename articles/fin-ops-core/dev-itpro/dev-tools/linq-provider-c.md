@@ -5,19 +5,19 @@ author: pvillads
 ms.date: 11/03/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26751
 ms.assetid: 8bd10c93-9d5e-49d7-b20f-7f804e16e76c
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5a8ec1ef1221c9b1a45b873c4bb9bc8da79209d
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 4550ac04252272ce7f8268642a3454863818585c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463546"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783180"
 ---
 # <a name="language-integrated-query-linq-provider-for-c"></a>C\# の統合言語クエリ (LINQ) プロバイダー
 

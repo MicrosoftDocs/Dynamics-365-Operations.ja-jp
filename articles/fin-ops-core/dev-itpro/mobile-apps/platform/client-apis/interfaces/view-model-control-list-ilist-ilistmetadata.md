@@ -1,18 +1,18 @@
 ---
 title: ListMetadata タイプ
 description: リスト コントロールのメタデータ。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 8fa6df1194c0c83bb85ffcb9f81815085c8c9e85cf7cd02a2f4c9d8b1f51bbd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 93f0b08e086a0a2b7200b1d8826803899c3e0628
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765078"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781861"
 ---
 # <a name="listmetadata-type"></a>ListMetadata タイプ
 

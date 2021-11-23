@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 10/01/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 20451
 ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e61514e60a0ad01f2291c80802d3aa3edd65052e39d1be55d217e1c9d3309d48
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 26226056eba4cea3b792e30fa137aaa276c2324f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775964"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782765"
 ---
 # <a name="export-and-import-models"></a>モデルのエクスポートとインポート
 

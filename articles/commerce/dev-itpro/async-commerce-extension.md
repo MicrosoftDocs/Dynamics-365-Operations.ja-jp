@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 02/13/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 419c780bf93a6284ef65854d9001fe1af0fb01e2
-ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
+ms.openlocfilehash: 1914c1bee8fba1703fd25dc5dc4d6e5ce90a27eb
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "7551790"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782988"
 ---
 # <a name="create-asynchronous-commerce-crt-apis-in-your-business-logic"></a>ビジネス ロジックで非同期コマース (CRT) API を作成する
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
 ms.search.region: Global
 ms.author: rcarlson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9ce62794b30a0674bc44b022a07abe107e25cff66732c57576c6e85f8f7f6bae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 166b7482e0a967f9e338753ae2b7e9e4636eb43a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736252"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782721"
 ---
 # <a name="create-read-only-entities-that-expose-financial-dimensions"></a>財務分析コードを公開する読み取り専用エンティティの作成
 [!include [banner](../includes/banner.md)]

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 67ec2f0ff2ebaceb88c7762295c8d2af9c55b3d8e6db407001fa89607ec845d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 294240dac91cc4af6248da24a9b4c7117df0e866
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760002"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782192"
 ---
 # <a name="add-methods-to-tables-through-extension"></a>拡張機能を使用してテーブルにメソッドを追加
 

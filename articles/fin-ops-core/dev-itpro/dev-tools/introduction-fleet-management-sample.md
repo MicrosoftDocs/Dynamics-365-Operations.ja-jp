@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.assetid: 999b43b2-f149-4145-9d85-e2a62cd8da1e
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74356f68ae08b542e75ecd44d3206958ce86b90ba93eb790dbc479e5ee270afd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3742974e5dd2727fe05659318fdca07c2b31535e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745192"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781082"
 ---
 # <a name="fleet-management-sample-application"></a>フリート管理のサンプル アプリケーション
 

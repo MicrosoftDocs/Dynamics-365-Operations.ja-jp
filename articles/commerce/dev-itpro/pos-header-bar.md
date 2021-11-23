@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2020
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: c92ce443444c74b509813081793b7425748e3b3b033383cd15698765b1cc74b2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2562ecd76abe1a82818ee2fd7a15a976f06dc653
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741798"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781482"
 ---
 # <a name="add-custom-buttons-to-the-pos-header-bar"></a>カスタム ボタンを POS ヘッダー バーに追加
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 14241
 ms.assetid: c70933b1-3d6a-4e26-b9ef-d9fb1e1b29a3
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 874c600dea51c545d2ce6c97316444201d7074813a912d1a52383ee270b4e5a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7c298b5d3ef84225b52c1ab23bb08c07b77bd86
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745104"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782924"
 ---
 # <a name="list-page-form-pattern"></a>リスト ページのフォーム パターン
 

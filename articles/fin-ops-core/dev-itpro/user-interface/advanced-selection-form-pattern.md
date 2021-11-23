@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 29171
 ms.assetid: c3c5eea7-f771-41ea-9976-8d0e1f3d3f25
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5486be8a695536dc782194f106ba119922943d8c845823a3742f824e1e5c78fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb38a8891e77f8a4b5bcb9c18fdd69c184e559ff
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741628"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783002"
 ---
 # <a name="advanced-selection-form-pattern"></a>高度な選択のフォーム パターン
 

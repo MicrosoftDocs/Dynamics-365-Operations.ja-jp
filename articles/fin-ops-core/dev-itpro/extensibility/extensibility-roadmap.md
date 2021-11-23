@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-10
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 02fac413880ba8b583f93d3e302ce7bb19a8c96f998c227d0f60bfa6edf82fbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74bd8a3c40b2fd446869c7e867577a83a1b0c63
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729734"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782180"
 ---
 # <a name="application-extensibility-roadmap"></a>アプリケーション拡張機能ロードマップ
 

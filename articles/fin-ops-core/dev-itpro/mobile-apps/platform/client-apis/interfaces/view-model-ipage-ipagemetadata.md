@@ -1,18 +1,18 @@
 ---
 title: PageMetadata タイプ
 description: PageMetadata タイプ
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 26dfada563d3ad32738ca1dbad0622ce1b5625e951e730cc0bab1969a96904db
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 098aece41e87e277f9401101f4ffef15c3cf4f6d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740251"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782172"
 ---
 # <a name="pagemetadata-type"></a>PageMetadata タイプ
 

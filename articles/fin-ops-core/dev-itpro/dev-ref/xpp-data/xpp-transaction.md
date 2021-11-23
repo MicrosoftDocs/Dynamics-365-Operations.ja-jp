@@ -6,15 +6,15 @@ ms.date: 06/16/2020
 audience: Developer
 ms.reviewer: robinr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 617d985929778918a447009e52f9921ac5f86f5c0f0288371a89d034cc3e6673
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a61976cc747edadbdec0aeff29346f4174ef5be
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769846"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783230"
 ---
 # <a name="x-transactional-integrity"></a>X++ トランザクションの整合性
 

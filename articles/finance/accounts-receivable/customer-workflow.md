@@ -1,7 +1,7 @@
 ---
 title: 顧客ワークフロー
 description: このトピックでは、顧客ワークフローに関する情報を提供します。 顧客の特定のフィールドを変更したら、その変更内容を顧客に追加する前に、承認のためワークフローを使用して送信します。
-author: mikefalkner
+author: abruer
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 208c2a422d130e076b7b31721328e95e0c514b015d2fc047b9ea613d03b8ce12
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c74f18997b390d70b5012199fab1adc9734994f4
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728892"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753829"
 ---
 # <a name="customer-workflow"></a>顧客ワークフロー
 

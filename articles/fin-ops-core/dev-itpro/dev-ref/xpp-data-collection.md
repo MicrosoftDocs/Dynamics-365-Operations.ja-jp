@@ -4,17 +4,17 @@ description: このトピックでは、X++のコレクション クラスにつ
 author: RobinARH
 ms.date: 09/01/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b8a94cdc4e3dfc0198ea38f130a5d1d88a86008
-ms.sourcegitcommit: b4c78655f2ab4b0e7ead96dfb9cf087a18014253
+ms.openlocfilehash: 0fbba82005bfae41888b8b933b83f40271b3e184
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7468555"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783048"
 ---
 # <a name="x-collection-classes"></a>X++ コレクション クラス
 

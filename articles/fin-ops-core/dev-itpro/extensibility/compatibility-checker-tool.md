@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: a82dc8d8e604d030469a4bd82d62cd49b0f3f66ff10b4fe64210546bda9d1ecc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da95f351797ad04eb131c4fbfa149db15a6029fc
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769205"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781648"
 ---
 # <a name="compatibility-checker-tool"></a>互換性チェック ツール
 

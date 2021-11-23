@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: ee704e03c683537cfdc8a4b1939e51ff0c6a47af83d66bc4883f9a008578d39b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0bee6c226a87629462ff920a7231c41a1465f628
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729027"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782455"
 ---
 # <a name="extended-data-types"></a>拡張データ型
 [!include [banner](../includes/banner.md)]

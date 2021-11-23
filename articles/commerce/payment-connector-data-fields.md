@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 支払データの使用
 description: このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。
-author: rubendel
+author: BrianShook
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
-ms.openlocfilehash: e1cce4e00d57eeaf3605b660610c71a4e79c77ddd919b73a3acb8342b521074d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8d183196540a0a1c604ae0ef86d81a767066962
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764575"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779759"
 ---
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 

@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 255e5c09f38e5d7723030a6cdf3056eb3db482af4f6aeb8e957a6b9c42446c73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3cc67dff1ab6b43431ae6dd28c686fb57f69c9e2
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757386"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782831"
 ---
 # <a name="add-custom-fields-to-the-point-of-sale-pos-totals-panel"></a>販売時点管理 (POS) Totals パネルへカスタム フィールドを追加
 

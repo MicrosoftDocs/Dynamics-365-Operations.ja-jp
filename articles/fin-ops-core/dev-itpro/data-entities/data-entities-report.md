@@ -1,7 +1,7 @@
 ---
 title: 標準データ エンティティに関する情報を検索します。
 description: このトピックでは、使用可能な標準データ エンティティに関する情報を取得する方法、およびレポートを実行するスクリプトをダウンロードする方法について説明します。
-author: robinarh
+author: tonyafehr
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 202654
 ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7e5b4750cb2a0e12162a555a115b3b682e9cff58e1aa4d495d9eaf61c02ba438
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 478d847642b15f32e93f5315316e8617028b1961
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712297"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782403"
 ---
 # <a name="find-information-about-standard-data-entities"></a>標準データ エンティティに関する情報の検索
 

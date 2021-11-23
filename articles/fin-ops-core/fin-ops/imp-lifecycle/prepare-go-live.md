@@ -2,7 +2,7 @@
 title: Go-Live の準備
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトにおける Go-Live の準備方法を説明します。
 author: ClaudiaBetz-Haubold
-ms.date: 08/27/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7a09218a06ac00fe474b646c939651df1e0480c3
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: b20a3d18b51b017a92b028c84fc9e62c9fe35dfd
+ms.sourcegitcommit: ed43ceae9b2ef3f616b81127bcf4c4b0862e23f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441149"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "7714833"
 ---
 # <a name="prepare-for-go-live"></a>Go-Live の準備
 
@@ -45,7 +45,7 @@ ms.locfileid: "7441149"
 |  | サイズ変更 | 両方 | 自動サイズ変更が発生した場合に即時。 サブスクリプションの見積もりをさらに明確にする必要があります。 | Microsoft-Dynamic サービス エンジニアリング (DSE) | 規定ではサブスクリプション見積に基づく自動サイズ変更を行い、例外では手動サイズ変更を行います。 |
 |  | 配置 | Microsoft 管理 | 48 時間 | Microsoft-Dynamic サービス エンジニアリング (DSE) | LCS でのステータスは、展開の進捗状況を反映しています。 要求に関する質問がある場合、コメントとしてサービス要求に転記されます。 |
 |  |  | セルフ サービス | 平均 30 分 | Microsoft-FastTrack | Go-live レビューが完了し、運用環境が要求された後、配置には平均して 30 分かかる可能性があります。 詳細については、[新規環境のデプロイ](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md) を参照してください。 |
-| 6 | 配置可能なパッケージ インストール要求 | 両方 | セルフ サービス | 顧客/パートナー | [更新プログラムを適用する](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#apply-updates) の手順に従ってください。 このパッケージには、[オールインワン](../../dev-itpro/dev-tools/aio-deployable-packages.md) の配置可能なパッケージに統合されたすべてのモデルとバイナリを含める必要があります。 |
+| 6 | 配置可能なパッケージ インストール要求 | 両方 | セルフ サービス | 顧客/パートナー | [更新プログラムを適用する](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#applying-updates-to-self-service-environments) の手順に従ってください。 このパッケージには、[オールインワン](../../dev-itpro/dev-tools/aio-deployable-packages.md) の配置可能なパッケージに統合されたすべてのモデルとバイナリを含める必要があります。 |
 |  | パッケージのインストール | 両方 | 最低 5 時間 のリード タイムと 4 時間の ダウンタイム | Microsoft-Dynamic サービス エンジニアリング (DSE) | 一般に、更新の 95% が 1 時間未満で適用されますが、何らかの理由でロールバックが必要な場合、4 時間のダウンタイム ウィンドウを提供することをお勧めします。 パッケージの展開が正常に実行されると、パッケージの展開が完了するとすぐに環境が利用可能になります。つまり、ダウンタイムを長くしても、システムの可用性に悪影響は及びません。 |
 | 7 | サンドボックス要求からのデータベースのコピー (該当する場合) | 両方 | セルフ サービス | 顧客/パートナー | [セルフ サービス データベースを更新](../../dev-itpro/database/database-refresh.md#self-service-database-refresh) の指示に従います。 ゴールデン コンフィギュレーションがある場合は、[ゴールデンコンフィギュレーションのプロモーション](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md) を確認できます。 |
 |  | データベースをコピー | 両方 | 5 時間のリード タイムと 4 時間のダウンタイム | Microsoft-Dynamic サービス エンジニアリング (DSE) | 一般に、データベースのコピーは 1 時間未満で完了します。 何らかの理由でロールバックが必要な場合に備えて、引き続き 4 時間のダウンタイム ウィンドウを提供することをお勧めします。 |

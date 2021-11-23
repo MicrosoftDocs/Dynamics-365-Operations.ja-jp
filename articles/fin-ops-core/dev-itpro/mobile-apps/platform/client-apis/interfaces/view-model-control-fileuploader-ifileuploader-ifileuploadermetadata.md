@@ -1,18 +1,18 @@
 ---
 title: FileUploaderMetadata タイプ
 description: ファイル アップローダー メタデータ タイプ。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: a2f31db58cc3fbafdc9d553f2311c60c9c9468dbc62ca207d9f945070489324f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 7c0b67d86eabacf9ba9fdac7a043e82bace20f27
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714567"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782709"
 ---
 # <a name="fileuploadermetadata-type"></a>FileUploaderMetadata タイプ
 

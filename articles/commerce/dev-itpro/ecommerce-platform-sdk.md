@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 18101
 ms.assetid: c0b1740b-1cbb-47c4-94e8-779cde8411af
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 649128aeb6f80e9d02ffcafeb4c6f965af5e0808b305e5121cfe2600dec3b653
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4cddb6b4e5a4b9ac2083eb7f2e8fd0a3c489c5f3
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767304"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782413"
 ---
 #  <a name="e-commerce-platform-software-development-kit-sdk"></a>E コマース プラットフォーム ソフトウェア開発キット (SDK)
 

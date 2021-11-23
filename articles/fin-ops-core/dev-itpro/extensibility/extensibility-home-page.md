@@ -7,19 +7,19 @@ ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 433aa2d89e48450c7a3b80aa971d896fa58b6e6dd5cd33e5b68a9523efe50a5e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9477bab83456e27c5814fd14df4fb6b0f19eb4c5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747529"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782017"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 

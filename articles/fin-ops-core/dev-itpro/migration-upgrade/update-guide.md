@@ -2,20 +2,20 @@
 title: Finance and Operations の更新とカスタム コード ライフサイクルの管理
 description: このトピックでは、Finance and Operations の更新とカスタム コード ライフサイクルを管理する方法について説明します。
 author: rbadawy
-ms.date: 10/22/2020
+ms.date: 11/08/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: 0807b5c0a099a7e4b41b116fcbcb942b905096df5b8897c7343d13dfa846799e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8668ad51af4331d89bf9eb53f38d9237a6394f26
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716737"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781072"
 ---
 # <a name="manage-finance-and-operations-updates-and-your-custom-code-lifecycle"></a>Finance and Operations の更新とカスタム コード ライフサイクルの管理
 
@@ -164,6 +164,9 @@ Microsoft 更新プログラムを取得する場合、カスタム コードを
 すべての Microsoft 更新プログラムは、ランタイムの下位互換性を保つことを意図しています。 この互換性はバイナリ互換性と機能互換性の両方を対象にしています。 ランタイム互換性とは、実稼働環境およびサンドボックス環境に存在するカスタマイズが、それらの環境に Microsoft サービス更新プログラムが配置された後も引き続き機能することを意味します。 それらの更新プログラムは、サービス更新と品質更新を含みます。 ランタイムの互換性は、Microsoft 更新プログラムが以前のプラットフォームでコンパイルされたカスタマイズと下位互換性があることも意味します。
 
 バイナリ互換性は、後方向のみです。 古いアプリケーション バージョンとプラットフォーム バージョンでカスタマイズをコンパイルし、それを新しいバージョンを実行している環境に配置できます。 ただし、コードがコンパイルされたバージョンよりも前のバージョンを実行している環境にコードを配置することはできません。
+
+> [!IMPORTANT]
+> 個人用設定はランタイムの互換性によってカバーされ、これらの環境に Microsoft サービス更新プログラムが配置された後も機能します。 このため、サービス更新プログラム後 (または他の時点) に、すべての個人用設定を再インポートすることは不要であり、今後推奨されません。   
 
 #### <a name="design-time-compatibility"></a><a id="design-compatibility"></a>デザイン時の互換性
 

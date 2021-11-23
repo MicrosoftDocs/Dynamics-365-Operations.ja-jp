@@ -1,18 +1,18 @@
 ---
 title: PageLinkDesign タイプ
 description: Pagelink デザイン オブジェクトの種類。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: a5de06333483add19f75794843a477bc6740d1c19b1a3f5f4b3a5729604c116c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 7494faf0841109c38da2301dcc850249d28ea783
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717532"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782865"
 ---
 # <a name="pagelinkdesign-type"></a>PageLinkDesign タイプ
 

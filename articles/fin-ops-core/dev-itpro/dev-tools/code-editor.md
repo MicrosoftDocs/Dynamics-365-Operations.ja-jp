@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 23941
 ms.assetid: 87d75162-a9dd-43d2-a316-833e2c799f08
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83c6e948ca689779cc40665eb3f98fad252e4ecb743e25c20378b516cf1b042d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39df422be0941760e80da81adf6e6ceaddc4ad44
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752321"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781098"
 ---
 # <a name="code-editor-features"></a>コード エディター機能
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 13631
 ms.assetid: 5c41c565-5f83-47f9-a75e-ca5bb4b062e7
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8c88039714476b5c348eadf9aeb0b062f998752b990e1e6fc543e18dfd354b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7853e04af21dde1ad7d6b2595a64973252b0e65b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754975"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783136"
 ---
 # <a name="contextual-data-entry-for-lookups"></a>ルックアップのコンテキスト データ入力
 

@@ -1,25 +1,25 @@
 ---
 title: スライダーとメッセージ ボックス ダイアログ
 description: 既存のダイアログ ボックスである Slider と Dynamics AX 2012 の MessageBox の代わりに、2 つのダイアログがあります。
-author: robinarh
+author: tonyafehr
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 64253
 ms.assetid: ef0924d0-ee42-4b0d-8602-4dfe15454350
 ms.search.region: Global
 ms.author: aorth
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88b070a8c4f27c48ab7724c524047d84bc93ca0874991c84705dc0d94c4c779a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c2782a06bcf83fa6227daa4caa8b22463ed76a0c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759201"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781494"
 ---
 # <a name="slider-and-messagebox-dialogs"></a>スライダー ダイアログとメッセージ ボックス ダイアログ
 

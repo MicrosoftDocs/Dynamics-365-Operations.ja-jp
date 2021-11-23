@@ -1,18 +1,18 @@
 ---
 title: ファイル アップローダー モジュール
 description: イメージをアップロードするためのコントロールです。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 47a801e10add35c456b34925f03f0f0b22915f525d42cd61d18c1a4fca3d0d52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 3005bb1fa564880767e6ce55c81fd60949ff1f8d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752319"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781855"
 ---
 # <a name="file-uploader-module"></a>ファイル アップローダー モジュール
 

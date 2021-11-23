@@ -5,17 +5,17 @@ author: nhelgren
 ms.date: 07/21/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ad991ba994928085035c785db648176e68a3d3a
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 4bd1731ed9c3e0a3ac368889596b852b6b9df2aa
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416669"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782910"
 ---
 # <a name="edit-a-legal-entity-after-dual-write-setup"></a>二重書き込み設定後に法人を編集する 
 

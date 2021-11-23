@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 09/15/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0de187546b2f393f72d5dddeb4799fad5505f0db
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: e11d9bc43414613cb041814cdefa6a7711d9a49c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512903"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781214"
 ---
 # <a name="customization-guidance-for-dual-write"></a>二重書き込みのカスタマイズに関するガイダンス
 
@@ -124,15 +124,15 @@ ms.locfileid: "7512903"
 
     ![SalesOrderLineEntity のプロパティ](media/custom-data-entity-view.png)
 
-## <a name="filter-guidance-for-maps&quot;></a>マップのフィルター ガイダンス
+## <a name="filter-guidance-for-maps"></a>マップのフィルター ガイダンス
 
 フォルターは Finance and Operations エンティティと Dataverse テーブルの両方に適用できます。 フィルターは、二重書き込みマップ上にあるフィールドにのみ適用する必要があります。 二重書き込みマップに追加する前に、フィルターの結果を確認します。
 
 Finance and Operations エンティティの場合、実行可能な X++ クラスで次のコード例を使用してフィルター式を検証できます。 式とエンティティ名を置き換え、クラスを実行します。
 
 ```xpp
-var entityName = &quot;PROJECTENTITY&quot;;
-var filterExpression = '(ParentProject == &quot;")';
+var entityName = "PROJECTENTITY";
+var filterExpression = '(ParentProject == "")';
 Query query = new Query();
 query.literals(NoYes::Yes);
 QueryBuildDataSource qbd =

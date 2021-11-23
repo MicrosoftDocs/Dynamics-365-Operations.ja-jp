@@ -4,17 +4,17 @@ description: このトピックでは、文字列ランタイム関数につい�
 author: RobinARH
 ms.date: 08/15/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1486bebf733ec474c503d7ca98f8b2d49c52e896bf3ab880ec3b411401161d6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77caa4b4ac04c6cd65c8cf834ee7b520607df150
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736260"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783253"
 ---
 # <a name="x-string-runtime-functions"></a>X++ 文字列ランタイム関数
 
@@ -787,7 +787,7 @@ str subStr(str _text, int _position, int _number)
 ```xpp
 subStr("ABCDEFGHIJ",3,5); //Returns the string "CDEFG".
 subStr("ABCDEFGHIJ",7,-4); //Returns the string "DEFG".
-subStr("abcdef"),2,99) //Returns the string "cdef".
+subStr("abcdef",2,99) //Returns the string "bcdef".
 subStr("abcdef",2,3) //Returns the string "bcd".
 subStr("abcdef",2,-3); //Returns the string "ab".
 ```

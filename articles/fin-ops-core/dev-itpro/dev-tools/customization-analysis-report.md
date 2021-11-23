@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 49681
 ms.assetid: 540b08dd-9af7-42fc-aa0c-ba04af1f8002
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d6b8ab546e90479be9609f988e4a724460b83a8
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d28f4f0397c7cceb975a0ac60c4019430b9829cd
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344736"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781090"
 ---
 # <a name="customization-analysis-report-car"></a>カスタマイズ分析のレポート (CAR)
 

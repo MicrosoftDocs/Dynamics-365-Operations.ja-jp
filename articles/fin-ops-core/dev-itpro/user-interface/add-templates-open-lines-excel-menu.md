@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 77432
 ms.assetid: 9793bf54-cfb8-4ba1-bc8f-ba49ef37884a
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44e032f9a924f89a34d5a8b3e730d3fb6603a22f58292130deb13785754f4a26
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c45d848f70b07c8822b70ce55a577cf744a97c04
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717513"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783004"
 ---
 # <a name="add-templates-to-the-open-lines-in-excel-menu"></a>[Excel で明細行を開く] メニューへのテンプレートの追加
 

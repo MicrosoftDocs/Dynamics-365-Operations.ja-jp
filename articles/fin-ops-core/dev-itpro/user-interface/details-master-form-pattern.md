@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 12373
 ms.assetid: e4518f56-57b5-4cf1-b197-3fbaea7be861
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf5cf3489fe15da0ddff2ca81b94de76ca17aa21f4b518a55f3ffb5e8d407d73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2d03a785458bf29bf2b6197d48f806a922f2094e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765780"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782998"
 ---
 # <a name="details-master-form-pattern"></a>詳細マスター フォーム パターン
 

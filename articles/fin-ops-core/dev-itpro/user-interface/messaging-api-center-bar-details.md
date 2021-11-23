@@ -2,24 +2,24 @@
 title: メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 description: このトピックでは、メッセージング システムについて説明します。
 author: jasongre
-ms.date: 11/17/2020
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 64153
 ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4d0f9340fc463ce30f24749c84abee13bcdc2ff4facf51508003bc93e533294
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a7c4f1cac08a8728c0c68f739cae0b2dda5be25
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735480"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781498"
 ---
 # <a name="messaging-apis---action-center-message-bar-and-message-details"></a>メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 
@@ -95,14 +95,18 @@ int64 messageId = Message::AddAction(MessageSeverity::Informational, "The Test b
 以下のメッセージタイプがサポートされています: **MessageSeverity::Info**、**MessageSeverity::Warning**、および **MessageSeverity::Error**。 また、**Message()** API を使用するメッセージは確定的となります。 メッセージ バーまたはアクション センターにルーティングできます。
 
 ## <a name="systemnotificationsmanager"></a>SystemNotificationsManager() 
-**SystemNotificationsManager()** API は、アクション センターに送信されるように設計された通知を対象としています。 この API は、次の機能を提供します: 
+**SystemNotificationsManager()** クラスでは、アクション センターに通知を送信できます。 このクラスは、次の機能を提供します: 
 
-+ 1 つ以上のアクションの通知への関連付け 
-+ 通知を一連のユーザー、または 1 つ以上のセキュリティ ロールのすべてのユーザーにルーティングする
-+ 通知の有効期限の定義
-+ 通知の状態の追跡 (通知に "完了" としてマークできるなど)  
++ 1 つ以上のアクションの通知への関連付け。 
++ 通知を一連のユーザー、または 1 つ以上のセキュリティ ロールのすべてのユーザーにルーティングする。
++ 通知の有効期限の定義。
++ 通知の状態の追跡 (通知に「完了」としてマークできるなど)。  
++ RuleID によって通知に適用されるルールまたはプロセスを定義する。  
 
 この例では、ユーザーが Excel へのエクスポートを完了した後に通知が発生します。 このメッセージは、エクスポートされたファイルへのリンクが使用できなくなるまで、アクション センターで今後 48 時間使用できるようになります。   
+
+> [!NOTE]
+> **AddNotification()** API は、以前にこの例で使用されています。 バージョン 10.0.23 の場合、API は廃止され、**AddSystemNotification()** API に置き換えられる予定です。 新しい API は、RuleID と ExpirationDateTime の設定を要求します。 
 
 ![SystemNotificationsManager API を使用して送信されたメッセージの例。](./media/cli-systemNotification.png)
 
@@ -126,7 +130,7 @@ actionData.Data(fileName);
 action.Data(FormJsonSerializer::serializeClass(actionData));
 notification.Actions().value(1, action);
 
-SystemNotificationsManager::AddNotification(notification);
+SystemNotificationsManager::AddSystemNotification(notification);
 ```
 
 ## <a name="additional-resources"></a>追加リソース

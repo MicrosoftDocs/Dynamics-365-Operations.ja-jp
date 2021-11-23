@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25471
 ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bb851b21ea6eb83c95f3ca7dc62aba9aafda3d56696f1f5ece711ea003d6a81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72bbe52151cc4c1fa26d9fd8c6171d8e41f9fd5f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742246"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781935"
 ---
 # <a name="take-traces-by-using-trace-parser"></a>Trace Parser を使用してトレースを実行
 

@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 99df8f6ff903b0ba33dcd851080577f34acedb44b6002e7ceff0c3f7ed46a7fd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 42454ddf607dc1f365603ec2ce296d6dfdbb71e0
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746681"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783336"
 ---
 # <a name="consume-custom-headless-commerce-apis-and-entities-in-pos"></a>POS でのカスタム ヘッドレス Commerce API およびエンティティの使用
 

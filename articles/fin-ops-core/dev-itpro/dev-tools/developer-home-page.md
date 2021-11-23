@@ -2,21 +2,21 @@
 title: ホームページの開発とカスタマイズ
 description: このトピックでは、開発に関するトピックへのリンクを提供します。
 author: RobinARH
-ms.date: 08/27/2021
+ms.date: 10/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72d3f43d36e01650458108f8ba3070fdd7b0d6ad
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: ba0e0b27228f9433c58005955a72dea81ad00377
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463537"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781650"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -102,7 +102,7 @@ Finance and Operations アプリは、パブリック クラウドとプライ�
 ### <a name="overviews"></a>概要
 
 - [C\# と X++ ソース コードを使用してビジネス ロジックを記述する](write-business-logic.md)
-- [X++ の Visual Studio 2017 の要件](developer-tools-vs2017.md)
+- [X++ の Visual Studio の要件](developer-tools-vs2017.md)
 
 ### <a name="language-support"></a>言語サポート
 
@@ -110,6 +110,7 @@ Finance and Operations アプリは、パブリック クラウドとプライ�
 - [Visual Studioのデバッガーを使用して  X++ コードをデバッグする](debug-xpp.md)
 - [C\# の統合言語クエリ (LINQ) プロバイダー](linq-provider-c.md)
 - [ベスト プラクティス ルールの記述](author-best-practice-rules.md)
+- [SysSetupConfigAttribute 属性](syssetupconfigattribute.md)
 
 ## <a name="customize-with-extensions-and-overlayering"></a>拡張機能およびオーバーレイによってカスタマイズする
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 104593
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a9c2cc5bd058f9e635b91112a05ecbaff7faf95c
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: b90b3f4174c8aaf258f360456fe3888d76dcca56
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594819"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781847"
 ---
 # <a name="commerce-runtime-crt-extensibility"></a>Commerce runtime (CRT) の拡張機能
 

@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 74934
 ms.assetid: cf2154eb-56a9-4867-b1ef-85690440b177
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22bc2b5041f705142a9f064e0502358ae39253055f32100f43bd058441d78b20
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ce0bc90e5fc489c52b8bdbab76877c0d4eb7e063
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744348"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783249"
 ---
 # <a name="application-explorer"></a>アプリケーション エクスプローラー
 

@@ -1,18 +1,18 @@
 ---
 title: ページのタイプ
 description: ページ オブジェクト タイプ。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: d2db1685a3df7cdd0c79291ddf9de70f70e78ca22214a50742f3e5e07234650e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 81ff7206013733be42fa41d511454926cc7e182e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774391"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783208"
 ---
 # <a name="page-type"></a>ページのタイプ
 

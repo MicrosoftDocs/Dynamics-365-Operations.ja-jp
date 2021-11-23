@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24321
 ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 243729c880e4d232988b964bd07e4522555fccc79fbd06d196e5aac78b79c10c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80bca47df8e89e3e6d7080f196d2522553214f1a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741624"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783130"
 ---
 # <a name="create-shareable-secured-urls-deep-links"></a>共有可能かつセキュリティで保護された、URL (ディープ リンク ) を作成
 

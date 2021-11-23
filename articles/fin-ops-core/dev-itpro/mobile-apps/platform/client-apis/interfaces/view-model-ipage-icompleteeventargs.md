@@ -1,18 +1,18 @@
 ---
 title: CompleteEventArgs タイプ
 description: CompleteEventArgs タイプ
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 246bed6329684412a4b657aded745830bcbbb496eeaf45920117e0c9541719d2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 9c29896bcd1e202d9a302487deae8138d6d9b734
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766357"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782863"
 ---
 # <a name="completeeventargs-type"></a>CompleteEventArgs タイプ
 

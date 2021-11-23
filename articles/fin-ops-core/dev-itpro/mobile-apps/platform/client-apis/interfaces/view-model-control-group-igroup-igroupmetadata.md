@@ -1,18 +1,18 @@
 ---
 title: GroupMetadata タイプ
 description: グループ メタデータ タイプ。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 324afce178f145d3250f0dfe6dc013d5a7fa0faaf6778cc7cc26ba4d4911b697
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 03895d0c3ec38d088012d8c8ed37c44215a8387d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712538"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781542"
 ---
 # <a name="groupmetadata-type"></a>GroupMetadata タイプ
 

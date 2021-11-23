@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 16242
 ms.assetid: 4c5ae424-86fe-43f1-8f94-71dfe2edfaa7
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb5e71dcda496eb3bdd0363e976b2381481e47037093379859088b52102452d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f80cf640e0ffc0ad3797451dba2cfe16298a7a9f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769169"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781248"
 ---
 # <a name="simple-list-and-details-form-pattern"></a>簡易リストおよび簡易詳細のフォーム パターン
 

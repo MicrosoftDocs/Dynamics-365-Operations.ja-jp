@@ -1,21 +1,21 @@
 ---
 title: 二重書き込みの新機能および変更された機能
 description: このトピックでは、リリース計画、主要な発表、二重書き込みのドキュメントなどへのリンクを提供します。
-author: robinarh
+author: tonyafehr
 ms.date: 08/11/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 6c7191c4e16debc52c96dc1982f9ddb29ae9369e
-ms.sourcegitcommit: 65cf260f3e3e17c1a49accf399b0c6a6c74c03de
+ms.openlocfilehash: 35e78506d84b99137a8a21af5b12f620d422b89a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471586"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782198"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -30,6 +30,27 @@ ms.locfileid: "7471586"
 + [Dataverse のデータ - フェーズ 1](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
 + [Dataverse のデータ - フェーズ 1 と 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Dataverse の Finance and Operations データ – フェーズ 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
+
+## <a name="september-2021-release-of-party-and-global-address-book"></a>2021 年 9 月リリースの当事者およびグローバル アドレス帳 
+
+2021 年 9 月リリースされた修正プログラムの[二重書き込み当事者およびグローバル アドレス帳ソリューション 3.1.0.4](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) は、[二重書き込みコア ソリューション バージョン 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されているバグ修正が含まれています。
+
+| フィーチャー | Description |Status |
+|------|---------|-------|
+| バグ修正| 一部のクライアント API は非推奨になり、新しい API に置き換えられました。 JavaScript コードが、新しいクライアント API を使用するためにアップグレードされました。| 一般提供 |
+| バグ修正| 電子メール アドレスを使用したポータル登録は、姓が指定されていない場合には失敗します。 | 一般提供 |
+| バグ修正| 仕入先に対して新しい郵便番号を作成できません。| 一般提供 |
+
+### <a name="solution-details"></a>ソリューションの詳細
+
+|ソリューション名 | 新たな変更がありますか? | 以前のバージョン | 新しいバージョン |
+|--------------|--------------|--------------|--------------|
+|当事者|あり|3.1.0.2|3.2.0.4|
+|Dynamics365GABExtended|あり|3.1.0.2|3.2.0.4|
+|Dynamics365GABDualWriteEntityMaps|あり|3.1.0.2|3.1.0.2|
+|Dynamics365GABPartyAnchor|あり|3.1.0.2|3.2.0.4|
 
 ## <a name="august-2021-release"></a>2021 年 8 月リリース
 

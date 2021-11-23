@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 15951
 ms.assetid: 6baee22e-2a86-428c-b9e2-178581c57830
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d34335c2c0056ee5949d79a5b93b5eace5cbaaa536b89c64ace2f5096ed22ab7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d255c50e9249d80aa976debbdb79b2a652dad71
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715216"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782901"
 ---
 # <a name="dimension-entry-control-subpattern"></a>分析コード エントリ コントロールのサブパターン
 

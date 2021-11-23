@@ -4,17 +4,17 @@ description: このトピックでは、X++ での属性の使用について説
 author: pvillads
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8311a54973a23c5a032def3704e43e4a87b6ed7b
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 7cf2c4784545ef4502dddd01848e94e171aa232a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463534"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783386"
 ---
 # <a name="x-attribute-classes"></a>X++ 属性クラス
 

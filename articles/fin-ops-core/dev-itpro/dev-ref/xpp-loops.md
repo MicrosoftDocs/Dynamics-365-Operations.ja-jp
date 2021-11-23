@@ -5,17 +5,17 @@ author: RobinARH
 ms.date: 06/17/2019
 audience: Developer
 ms.devlang: xpp
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dc239265b83c813d2a7a17615f9f215e3dfae04
-ms.sourcegitcommit: 9c007b271ba5ad5b9938fdd05776b73f6b7c9802
+ms.openlocfilehash: 590821aeb05f725470a364621c20e744d351d0c9
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "7411636"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783257"
 ---
 # <a name="x-loop-statements"></a>X++ ループ ステートメント
 

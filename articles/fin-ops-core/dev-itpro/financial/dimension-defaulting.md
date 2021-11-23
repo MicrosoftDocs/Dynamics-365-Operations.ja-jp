@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d719f9638611f9e7da98fcbe32209a278cd4ed58ec6ea34e8616cff6f546ed34
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7291a4824e71c42ec7e67f0680891130a6d1949
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748354"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781298"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]

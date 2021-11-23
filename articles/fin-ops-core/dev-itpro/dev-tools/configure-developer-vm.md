@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 23361
 ms.assetid: 09dbb06c-dbc7-468d-a78e-e89a97a59fe6
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd39bb339a28b1ce4dea2147f273213c07c45c5516244b246b5304e82978565a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d2dd925854dcd8a35d5663003fc179bc73a39ccd
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718269"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782950"
 ---
 # <a name="configure-one-box-development-environments"></a>1 ボックス開発環境の構成
 

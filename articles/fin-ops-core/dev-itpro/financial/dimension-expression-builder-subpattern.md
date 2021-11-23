@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 29451
 ms.assetid: 6ab0f75d-3168-4dfe-b2ce-d17d3861216e
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68b875b486906c059127d44574a106a88bdeba82b3900e7717aa08be197856b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca9bef4fede4128a612202e3f265d8e8c50ea456
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729021"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782723"
 ---
 # <a name="dimension-expression-builder-subpattern"></a>分析コード式ビルダーのサブパターン
 

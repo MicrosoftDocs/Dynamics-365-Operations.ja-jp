@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 07/18/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 33571
 ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22b9f96d57a5332262fd0e68af4283114cd798c537dceff116e9799451f1c199
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16da1373437408ffe914eb35f05cf74cdd11f08f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754326"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781897"
 ---
 # <a name="update-the-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: App 8.0.1
-ms.openlocfilehash: 27a4dc1d2ccb2ea2b0693e0549a6eee5b23066d2eceaddc441d7786f0eac851e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1bad133b68f559559b01278684302050c15ebc4c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754324"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782737"
 ---
 # <a name="extensibility-changes-in-finance-and-operations-update-801"></a>Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更
 

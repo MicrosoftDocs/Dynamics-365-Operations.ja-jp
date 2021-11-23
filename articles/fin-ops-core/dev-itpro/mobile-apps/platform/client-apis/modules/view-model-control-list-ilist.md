@@ -1,18 +1,18 @@
 ---
 title: リスト モジュール
 description: リストは、任意の数の行を含むコントロールです。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: d1c002bd1704fdef6e84367b703846dad6fe7d51b7db158183e6696baeeea930
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: ce3b0cf2e27364fbfc091ab43f6be8948e9b22fa
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717520"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782164"
 ---
 # <a name="list-module"></a>リスト モジュール
 

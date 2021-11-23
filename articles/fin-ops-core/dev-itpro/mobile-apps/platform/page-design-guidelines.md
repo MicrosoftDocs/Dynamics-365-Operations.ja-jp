@@ -1,21 +1,21 @@
 ---
 title: ページ デザインのガイドライン
 description: このトピックでは、モバイル アプリのページ デザインのガイドラインを提供します。
-author: robinarh
+author: tonyafehr
 ms.date: 04/23/2018
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 47bbd3078ae4d40a795dbc3a5f392b118262c844
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 942d0f267ea9b72fc244cb93b0dde646bcb7b019
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595105"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781510"
 ---
 # <a name="page-design-guidelines"></a>ページ デザインのガイドライン
 

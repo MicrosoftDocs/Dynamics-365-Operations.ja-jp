@@ -4,17 +4,17 @@ description: このトピックでは、コンパイル時関数の一覧を示�
 author: RobinARH
 ms.date: 11/03/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a89fbeb3752f91704ba53b9d0b4a863e80bbe07983edb3f864936e46655d58e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 84f39de46370fbad6849e06dca257d89de74831f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763478"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782047"
 ---
 # <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 

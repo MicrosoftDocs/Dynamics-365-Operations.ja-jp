@@ -5,17 +5,17 @@ author: kennysaelen
 ms.date: 06/04/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: kesaelen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: de5e296692b50b1a4044d2f21b97b0c9302bd8e9a3d90c7021e730a41291fb93
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d68073a944fb5bca840d703b02e882fc87efb113
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736246"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781050"
 ---
 # <a name="run-multi-user-testing-by-using-the-performance-sdk"></a>パフォーマンス SDK によるマルチユーザー テストを実行する
 

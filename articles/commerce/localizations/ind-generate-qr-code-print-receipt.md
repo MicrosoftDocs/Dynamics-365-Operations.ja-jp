@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c0e924c28f35b14453a0926b3680a8a1b33804936711202b965895e63cff6dfe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 86db5ef67a0db69a611f536a9d6fcf4b5b911974
+ms.sourcegitcommit: ed43ceae9b2ef3f616b81127bcf4c4b0862e23f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725324"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "7714842"
 ---
 # <a name="generate-qr-codes-and-print-them-on-receipts"></a>QR コードの生成とレシートへの印刷
 
@@ -50,7 +50,7 @@ Commerce バージョン 10.0.17 以降では、Retail Hardware Station を使�
 
     1. **Retail と Commerce** > **Retail および Commerce IT** > **チャネル設定** > **POS プロファイル** > **カスタム フィールド** に移動します。
     2. アクション ウィンドウで **新規** を選択して、フィールドを追加します。
-    3. **名前** フィールドに、新しいフィールドの名前を入力します (たとえば、**TAXINVOICE\_QR**)。
+    3. **名前** フィールドに、新しいフィールドの名前を入力します (たとえば、**TAXINVOICE_QR**)。
     4. **タイプ** フィールドで、**レシート** を選択します。
     5. **キャプション テキスト ID** フィールドに、以前に作成した言語テキストの **テキスト ID** 値を入力します。
 
@@ -84,7 +84,6 @@ QR コードの新しいカスタム レシート フィールドをサポート
     - Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
     - Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine
     - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
-    - Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia
 
 4. 処理するクラスを作成します。 
 
@@ -112,7 +111,7 @@ QR コードの新しいカスタム レシート フィールドをサポート
       string receiptFieldValue = string.Empty;
       switch (receiptFieldName)
       {
-          case "TAXINVOICE\_QR":
+          case "TAXINVOICE_QR":
             receiptFieldValue = await GetQRCode(request).ConfigureAwait(false);
             break;
           default:
@@ -142,7 +141,7 @@ QR コードの新しいカスタム レシート フィールドをサポート
             return receiptFieldValue;
         ```  
 
-6. **CommerceRuntime.Ext.config** に必要な拡張機能を追加します。ここで **Contoso.Commerce.Runtime.ReceiptsIndia** は、QR コード アセンブリを印刷するための新しい拡張機能の名前です。
+6. **CommerceRuntime.Ext.config** に必要な拡張子を追加します。ここで、**Contoso.Commerce.Runtime.ReceiptsIndia** は QR コード アセンブリを印刷するための新しい拡張機能の名前です。
 
     ```xml 
     <commerceRuntimeExtensions>
@@ -159,8 +158,6 @@ QR コードの新しいカスタム レシート フィールドをサポート
        value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
            <add source="assembly" 
        value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
-           <add source="assembly"
-       value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia" />
           </composition>
        </commerceRuntimeExtensions>
     ```
@@ -227,7 +224,6 @@ namespace Contoso
         using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
-        using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia.Messages;
 
         /// <summary>
         /// The extended service to get custom sales receipt field.
@@ -241,7 +237,7 @@ namespace Contoso
             {
               get
                 {
-                    return new\[\]
+                    return new[]
                     {
                         typeof(GetSalesTransactionCustomReceiptFieldServiceRequest),
                    };
@@ -255,7 +251,7 @@ namespace Contoso
             {
                 get
                 {
-                    return new\[\]
+                    return new[]
                     {
                         nameof(CountryRegionISOCode.IN),
                     };
@@ -282,7 +278,7 @@ namespace Contoso
                 /// </summary>
                 /// <param name="request">The service request to get custom receipt field value.</param>
                 /// <returns>The value of custom receipt field.<returns>
-                private async Task<Response&>
+                private async Task<Response>
            GetCustomReceiptFieldForSalesTransactionReceiptsAsync(GetSalesTransactionCustomReceiptFieldServiceRequest request)
                 {
                     ThrowIf.Null(request.SalesOrder, 
@@ -291,7 +287,7 @@ namespace Contoso
                     string receiptFieldValue = string.Empty;
                     switch (receiptFieldName)
                     {
-                        case "TAXINVOICE\_QR":
+                        case "TAXINVOICE_QR":
                             receiptFieldValue = await 
            GetQRCode(request).ConfigureAwait(false);
                                    break;

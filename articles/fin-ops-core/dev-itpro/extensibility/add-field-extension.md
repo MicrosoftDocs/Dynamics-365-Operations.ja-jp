@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 21e65625dded333cd218cfcc74c2eff6d3e2ea5cb9f7af958add1c860b6b9196
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf5423c3dab0715325f257394c5997430685a3b6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739483"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782755"
 ---
 # <a name="add-fields-to-tables-through-extension"></a>拡張機能を使用してテーブルにフィールドを追加
 

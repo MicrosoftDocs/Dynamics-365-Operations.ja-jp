@@ -5,19 +5,19 @@ author: pvillads
 ms.date: 02/06/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26731
 ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 409591dbeca3b17ec7c60753d84a4cdd674e20eb68dd924176130fff55a7b597
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf541fc817edf6a5ba4bec2500ba4a350e3d0d42
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762412"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781094"
 ---
 # <a name="build-and-debug-projects"></a>プロジェクトのビルドおよびデバッグ
 

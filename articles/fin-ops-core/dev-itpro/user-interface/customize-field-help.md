@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 92013
 ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ed17affa65e3e45114b83ecaa5528b615cc9a06f707a21257658f20902f92f2e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 20116d3eb5c632bc2b35a7d64257442ed5e9fad9
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747503"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783128"
 ---
 # <a name="customize-field-descriptions"></a>フィールドの説明をカスタマイズする
 

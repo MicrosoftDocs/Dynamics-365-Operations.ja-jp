@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4223760cb5b3f7c7e2a7cecb99f55f19d35a367a
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: a89e37047f715dd506d9acb26e931ec01899d0d4
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612345"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783323"
 ---
 # <a name="considerations-for-initial-synchronization"></a>初期同期に関する考慮事項
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: be7937fb5cf07647cb3056f75711789049e4f407
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 1cf749128a056c0b0163d993d6991773fb771a5f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485868"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782108"
 ---
 # <a name="create-a-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 

@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 79871
 ms.assetid: 636a4e41-f772-477f-bde8-538a09a79f6e
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 040e3ff3d315df5732bedfd7b1a36326836c3fa3b5c911326edba85f902f141a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9dac34d159ade50fe28fa6e753e599dc0e3fada
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730569"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782031"
 ---
 # <a name="element-designers"></a>要素デザイナー
 

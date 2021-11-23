@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 16061
 ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-04-26
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f9fc81fe634b250ee990ddd43e844f45bd0389217cf75bd8d3c88e88e7f4462
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6c80a8ced070e8e785aefed7543cde356796e077
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749628"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781258"
 ---
 # <a name="power-apps-host-control"></a>Power Apps ホスト コントロール
 

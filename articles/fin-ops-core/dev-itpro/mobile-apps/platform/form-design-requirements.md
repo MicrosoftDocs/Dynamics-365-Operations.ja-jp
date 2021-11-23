@@ -1,21 +1,21 @@
 ---
 title: フォーム デザインの要件
 description: このトピックでは、モバイル アプリのフォーム デザインの要件を提供します。
-author: robinarh
+author: tonyafehr
 ms.date: 08/14/2017
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 095a77efd71cbd9756c642314f74244be055d01d
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: ce5dc388a0bac55baff4426fbbd8babb1d3976a6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595053"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783204"
 ---
 # <a name="form-design-requirements"></a>フォーム デザインの要件
 

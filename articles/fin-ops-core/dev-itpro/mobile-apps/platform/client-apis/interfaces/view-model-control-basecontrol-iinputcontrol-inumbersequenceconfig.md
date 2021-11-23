@@ -1,18 +1,18 @@
 ---
 title: NumberSequenceConfig タイプ
 description: 番号順序のコンフィギュレーションのタイプ。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 6df7e871276535cf1d86f9a3b558afbef2b74b25a4d593eaaeb29085f49c3335
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 5e3e039a9506b04a10dda9c6d068347a1f55907b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743909"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781877"
 ---
 # <a name="numbersequenceconfig-type"></a>NumberSequenceConfig タイプ
 

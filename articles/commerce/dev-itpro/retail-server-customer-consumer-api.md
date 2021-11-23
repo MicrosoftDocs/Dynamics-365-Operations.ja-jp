@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 06/02/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cf9b1c26f3408fb3f17006a809e0b48b6ae4e98
-ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
+ms.openlocfilehash: 13216ad85b3dbf0cabf8d7643e86477432d7cb24
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "7559401"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782103"
 ---
 # <a name="commerce-scale-unit-customer-and-consumer-apis"></a>Commerce Scale Unit の顧客およびコンシューマー API
 

@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: ''
-ms.openlocfilehash: 3510eb446cb9e6170605d51ff7df0db562fba7b8
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: e0ee14f4d80375c1af865dbcaa72b5b2bf7f1091
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472521"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675449"
 ---
 # <a name="set-up-geo-detection-and-redirection"></a>地域の検出とリダイレクトを設定する
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce での eコマース サイトの地域検出とリダイレクトの設定方法について説明します。
 

@@ -4,17 +4,17 @@ description: このトピックでは、Visual Studio および Microsoft のド
 author: RobinARH
 ms.date: 07/23/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d86e08abdf73ed2df897cded9e0db87d9d1527328fc7e3a0c2189c6c3a90366f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f59a6b66ab0b672bd6d5ef5949f7de31537efcea
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763496"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782952"
 ---
 # <a name="api-class-and-table-resources"></a>API、クラス、テーブルのリファレンス
 

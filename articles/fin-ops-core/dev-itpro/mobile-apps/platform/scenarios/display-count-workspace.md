@@ -1,25 +1,25 @@
 ---
 title: フィールドに数を表示
 description: このトピックでは、正確で、迅速に表示される数を計算する方法について説明します。
-author: robinarh
+author: tonyafehr
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 255544
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 3dc363a93dc3f74013c8184023c1dc32938866e6726a96f1cd2133bf24a3223e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 364b02be7bbb70a9813ea2949c8f37f72cd48862
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738528"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781508"
 ---
 # <a name="show-counts-in-fields"></a>フィールドに数を表示
 

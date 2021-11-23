@@ -2,7 +2,7 @@
 title: ビジネス イベントおよび Microsoft Power Automate
 description: このトピックでは、コネクタを使い Microsoft Power Automate で使用可能なビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
-ms.date: 11/18/2019
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,23 +12,25 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30
-ms.openlocfilehash: 65796980916380f13216e73c72e389cbb24f52ab
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: a672a2102fbf5f015683585498fd4e90b16b3b6e
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404193"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674940"
 ---
 # <a name="business-events-and-microsoft-power-automate"></a>ビジネス イベントおよび Microsoft Power Automate
 
 [!include[banner](../../includes/banner.md)]
 
-このトピックでは、Power Automate エンドポイントからビジネスイ ベントを設定および使用する手順を示します。
+このトピックでは、Finance and Operations コネクタの **ビジネス イベントが発生した場合** トリガーを使用して、Microsoft Power Automate エンドポイントからビジネス イベントを構成および消費する方法について説明します。 
 
 このトピックでは、以下のタスクを実行する方法について説明します:
 
--   Power Automate で、新しいフローを作成します。
--   ビジネス イベントのトリガー
+- Power Automate で、新しいフローを作成します。
+- ビジネス イベントのトリガー
+
+このトピックの手順では、Finance and Operations コネクタの使用方法を示します。 ただし、これらのデータは、Microsoft Dataverse コネクタ内にある Finance and Operations アプリケーションのビジネス イベントとデータ イベント用 Power Automate のフローを作成するプロセスにも適用できます。 Dataverse コネクタの **アクションが実行される場合** および **行が追加、変更または削除される場合** トリガーを持つ Finance and Operations アプリケーションのビジネス イベントとデータ イベントについては、[Microsoft Power Automate のビジネス イベント](../business-events-flow.md) を参照してください。
 
 ## <a name="create-a-new-flow-in-power-automate"></a>Power Automate で、新しいフローを作成する
 
@@ -46,7 +48,7 @@ ms.locfileid: "7404193"
     > [!TIP]
     > 環境インスタンス URL の一部またはイベント名の一部のみを入力することで Power Automate が提供するオート コンプリート機能を利用できます。
 
-    <img alt="Microsoft Power Automate buisness event trigger" src="../../media/BEF-Howto-Flow-04.png" width="50%">
+    <img alt="Microsoft Power Automate business event trigger" src="../../media/BEF-Howto-Flow-04.png" width="50%">
 
 7.  **新規ステップ** ボタンを選択して新しいアクションを追加します。
 
@@ -66,7 +68,7 @@ ms.locfileid: "7404193"
 
     <img alt="Parse JSON schema input " src="../../media/BEF-Howto-Flow-09.png" width="70%">
 
-12. サンプル ペイロードの品質により、ジェネレーターは整数と実数を区別できません。 これは、サンプル ペイロードに実数が整数として提供される場合に該当します。 生成されたスキーマを確認し、「整数」を「数値」に変更する必要があるかどうかを確認します。 (JSONでは、"数値" データ型は実数値を意味します)。
+12. サンプル ペイロードの品質により、ジェネレーターは整数と実数を区別できません。 これは、サンプル ペイロードに実数が整数として提供される場合に該当します。 生成されたスキーマを確認し、「整数」を「数値」に変更する必要があるかどうかを確認します。 (JSON では、「数値」データ型は実数値を意味します)。
 
     <img alt="JSON data types " src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
@@ -92,7 +94,7 @@ Power Automate では、アプリケーションを自動的にコンフィギ�
 
     <img alt="Microsoft Power Automate buiness event GUID" src="../../media/BEF-Howto-Flow-13.png" width="100%">
 
-5.  **有効なイベント** タブをオンにした場合は、法的エンティティGBSIに対し **支払転記済** が有効化されていることも確認することができます。
+5.  **有効なイベント** タブをオンにした場合、法的エンティティ GBSI に対し "**支払転記済**" が有効化されていることも確認することができます。
 
     <img alt="Active business events " src="../../media/BEF-Howto-Flow-14.png" width="100%">
 

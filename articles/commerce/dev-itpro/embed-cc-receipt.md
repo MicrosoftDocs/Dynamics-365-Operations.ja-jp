@@ -1,7 +1,7 @@
 ---
 title: 顧客のレシートにプロセッサのクレジット カードのレシートを埋め込む
 description: このトピックでは、決済処理業者からのクレジットカードの領収書を顧客の項目別取引レシートに埋め込む方法について説明します。
-author: rubendel
+author: BrianShook
 ms.date: 04/07/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 04-31-2020
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 611116a2826d8bbaf2cbe9a83c306ac01ebe37468d3c7f4788179fbae6019812
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6378e5e9ba46de6cbbe47e5151818ce4cc1acb70
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767891"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779886"
 ---
 # <a name="embed-processor-credit-card-receipts-in-customer-receipts"></a>顧客のレシートにプロセッサのクレジット カードのレシートを埋め込む
 

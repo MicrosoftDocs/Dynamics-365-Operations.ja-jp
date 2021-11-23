@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 09/16/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2021
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: 1e8d6d1777c692f513edfd71fe36e4dc94dab609
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: d14df0c98aa782d10a701f3c9fd90bd601563891
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7582279"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782101"
 ---
 # <a name="set-up-a-local-development-environment"></a>ローカル開発環境の設定
 

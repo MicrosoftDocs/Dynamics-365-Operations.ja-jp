@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 21631
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f79cf90a2f357e589ffff335c244bc6e4c6f9c28ea680d52ab913a62b1c3e251
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b535aa93b6e7bd59ae012d7a380c60438c61f5f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713868"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783358"
 ---
 # <a name="copy-variables-to-chain-test-cases"></a>テスト ケースのチェーンへの変数のコピー
 

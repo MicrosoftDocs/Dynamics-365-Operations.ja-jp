@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 7cd81cbbdf89aa8d5ac3dc77b9d8d026f6ca2e35af05e8931a34d64d4d4bab33
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d2d7063b2060852f4ebce75f8442827a09b20c03
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762410"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782753"
 ---
 # <a name="extensibility-faq"></a>拡張性 FAQ
 

@@ -1,18 +1,18 @@
 ---
 title: LookupDesign タイプ
 description: ルックアップ デザイン オブジェクトの種類。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 797d147e144c701aa9a1259501cf46e73eb8d86a2885432fec7c5241c97f0758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: b49b263ece7c2ea8be28c68503669e9d2c6ad3a2
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775954"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782703"
 ---
 # <a name="lookupdesign-type"></a>LookupDesign タイプ
 

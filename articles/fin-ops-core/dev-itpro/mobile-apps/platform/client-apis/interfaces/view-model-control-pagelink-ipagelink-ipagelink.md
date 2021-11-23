@@ -1,18 +1,18 @@
 ---
 title: PageLink タイプ
 description: Pagelink コントロール タイプ。 ページリンクは、別のページに移動するコントロールです。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 7f4f1e9783e21df6b6879e979a9f45c1894226ae84531820f50c679725205ebf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 2ec13f9778cee631d6fe5d2f678533688f8ab081
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753004"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781152"
 ---
 # <a name="pagelink-type"></a>PageLink タイプ
 

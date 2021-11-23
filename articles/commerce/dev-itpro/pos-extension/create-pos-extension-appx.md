@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: db1581df7ea0698d32872d372fd53a5bbbe09667e9eb1443a7123e1d02c4456f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd6b1b28fa590a95bf64df5b13c86f03222da616
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755071"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783332"
 ---
 # <a name="create-an-appx-file-for-a-modern-pos-extension-package"></a>Modern POS 拡張パッケージの .appx ファイルの作成
 

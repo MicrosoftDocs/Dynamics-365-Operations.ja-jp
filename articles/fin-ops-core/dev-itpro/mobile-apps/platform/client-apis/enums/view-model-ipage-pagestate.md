@@ -1,18 +1,18 @@
 ---
 title: PageState 列挙
 description: ページを配置できるさまざまな高レベルの状態を表します。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: f2fcc563bb58f13b2911aeabcd8312e133f643a4
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.author: tfehr
+ms.openlocfilehash: ccda7e1d5a2baf6ca47b97b7349d5cd83d87e51c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404072"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781731"
 ---
 # <a name="pagestate-enumeration"></a>PageState 列挙
 

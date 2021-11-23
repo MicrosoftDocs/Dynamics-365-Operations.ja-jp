@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 3fd59eab400af6e1c603c253f7274e3dac8e392cb8a5b9a1b2462db1d679c717
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ce8e8490eddce6f9b36083f92c548818338e9dc3
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746559"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782449"
 ---
 # <a name="acceptance-test-library-commands"></a>承認テスト ライブラリのコマンド
 

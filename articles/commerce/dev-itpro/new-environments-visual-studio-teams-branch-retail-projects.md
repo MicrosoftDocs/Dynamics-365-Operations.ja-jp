@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 10d5544719d86931ef82dc62554dda521cea2e5b065769e5f6e2ed5aa9f06492
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47dfe89d15e94ceca06b3693732c57743361c9e8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768484"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782643"
 ---
 # <a name="set-up-new-environments-azure-devops-and-branches-for-projects"></a>プロジェクトの新しい環境、Azure DevOps、およびブランチの設定
 
@@ -272,7 +272,7 @@ X++ および Retail SDK をマッピングするには、現在のワークス�
     3. **msbuild** と入力し、Enter キーを押します。 ビルドは成功するはずです。
 
 10. 開発/サンプル Retail Modern POS (MPOS) 証明書をローカル コンピューターの信頼されたルート証明書ストアに追加する: **...\\RetailSDK\\BuildTools\\ModernPOSAppxSigningCert-Contoso.pfx**。 パスワードを空の文字列に設定します。
-11. **...\\RetailSDK \\References\\YourCompany|Contoso.ModernPOSSetupOffline.exe** でインストーラーを実行して、MPO または MPOSOffline をインストールします。 ClientBroker ファイルを配置するのには、1 回でこの手順を完了する必要があります。
+11. **...\\RetailSDK \\References\\YourCompany|Contoso.ModernPOSSetupOffline.exe** でインストーラーを実行して、MPO または MPOSOffline をインストールする ClientBroker ファイルを配置するのには、1 回でこの手順を完了する必要があります。
 12. Visual Studio で、**ModernPOS.sln** (管理者として) を開き、完全なリビルドを実行します。
 13. F5 キーを押して、MPOS をデバッガーで起動します。
 14. コマースでは、**チャネル プロファイル** ページを開き、既定のチャネル プロファイルのために Commerce Scale Unit URL をコピーします。

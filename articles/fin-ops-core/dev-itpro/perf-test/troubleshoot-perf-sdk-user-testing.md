@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77e3812deca0a9bf9fdc3dba69e973333ab5d9f608a33969aa702bed47dcaa32
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4177a4988360a27f2fcee9670376c18d47ab1d7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753570"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783156"
 ---
 # <a name="troubleshooting-guide-for-testing-with-the-performance-sdk"></a>パフォーマンス SDK を使用したテストのトラブルシューティング ガイド
 

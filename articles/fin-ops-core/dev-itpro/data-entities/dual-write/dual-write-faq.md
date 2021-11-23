@@ -1,21 +1,21 @@
 ---
 title: 二重書き込み FAQ
 description: このトピックでは、二重書き込みについてよく寄せられる質問に回答します。
-author: robinarh
+author: tonyafehr
 ms.date: 07/21/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8e307f786def39a378d9c9d9727b203cd46e315
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 4ea116a4ebf944911bc7c472f058f0e406bf74a6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417045"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781212"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 
@@ -132,6 +132,10 @@ Finance and Operations アプリと Customer Engagement アプリの番号順序
 Dataverse の会社固有のカスタム テーブルを作成するには、カスタム テーブルと標準の会社テーブルとの間に多対一 (N:1) の関係を追加します。 また、テーブル キーの一部として会社の外部キーを含める必要があります。 詳細については、[Dataverse の企業概念](company-data.md) を参照してください。
 
 テーブル マップの二重書き込みを有効にするには、Dataverse で代替キーを定義する必要があります。 Dataverse の代替キーの値は、Finance and Operations アプリで定義されているキーと一致する必要があります。 詳細については、[テーブルをリンクするための基準](enable-entity-map.md#criteria-for-linking) を参照してください。
+
+### <a name="can-i-merge-records-in-customer-engagement-apps-while-using-dual-write"></a>二重書き込み使用中に Customer Engagement アプリのレコードをマージできますか?
+
+いいえ、Finance and Operations アプリではレコードのマージを許可しません。 このため、テーブルに二重書き込みマッピングが存在する場合、Customer Engagement アプリのマージ機能は実行されません。
 
 ### <a name="is-there-a-document-about-best-practices-for-table-usage-should-i-use-customers-v2-customers-v3-or-customer-details-what-is-the-difference-between-these-tables-and-what-is-the-use-case-for-each"></a>テーブルの使用方法に関するベスト プラクティスについてのドキュメントがありますか? 顧客 V2、顧客 V3、または顧客の詳細を使用する必要がありますか? これらのテーブルの違いは何ですか、またそれぞれのユース ケースはどのようなものですか?
 

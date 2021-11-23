@@ -5,17 +5,17 @@ author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d867f18d2829e07480a909db5e84cd95d4dbcc1
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 00d3c461a346c1d15c70f37c3f9353e16d18e9c5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595374"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781058"
 ---
 # <a name="table-of-contents-form-pattern"></a>目次のフォーム パターン
 

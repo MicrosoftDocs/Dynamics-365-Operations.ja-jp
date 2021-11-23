@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24161
 ms.assetid: d94f46f0-cde2-47c3-8994-c79e609eabce
 ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fece4302edd744ad1c1458552b9e01731dd7c5c7e9009b6fa282b329a8e96030
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 20cc753838c3037aea0f94f99e6533e0c5ebe5c3
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742252"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781941"
 ---
 # <a name="test-projects-in-visual-studio"></a>Visual Studio のプロジェクトのテスト
 

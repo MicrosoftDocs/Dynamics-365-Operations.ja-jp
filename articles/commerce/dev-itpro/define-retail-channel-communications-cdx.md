@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 27021
 ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
 ms.search.region: global
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d4b80b5e17949387a34aa5a2826be406eb61eca88c0a016c475ad6e1d18f7e1d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a99b25c80edcfcb472587849b1666b30f2173f74
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720947"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783084"
 ---
 # <a name="commerce-data-exchange-and-commerce-channel-communications"></a>Commerce Data Exchange とコマース チャネルのコミュニケーション
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 28231
 ms.assetid: 1838c10d-9172-4853-aa49-17710adf8bc1
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d29e5a0164e86cf6fc420f9bf0bc567d03daa0a2f04e96c5052eee9def05f0a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13187ecec2f96862243a5dab1c5be09ea3bdda72
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760726"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781290"
 ---
 # <a name="custom-filter-group-subpattern"></a>カスタム フィルター グループのサブパターン
 

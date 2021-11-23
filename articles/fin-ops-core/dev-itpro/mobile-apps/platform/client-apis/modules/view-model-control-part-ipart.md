@@ -1,18 +1,18 @@
 ---
 title: パート モジュール
 description: パーツは、ページのみを含むコンテナー コントロールで、ページがページ内に埋め込まれるのを許可します。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: af62aac7d2cb2d6935e28d70d9e0819b19c112cafad898f55a4613216a6e97b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 804d2bbbf43eac1a33ed631a45d2364cdbd380f3
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767697"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783206"
 ---
 # <a name="part-module"></a>パート モジュール
 

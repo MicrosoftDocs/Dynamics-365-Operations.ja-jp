@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 00e040cf64003269c8ed2c58ec41946d7c865dac6cc7fe94f86292d96153eb31
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2d6b8af821739939b683d54472b11dbc4719ae24
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775264"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782879"
 ---
 # <a name="deprecation-of-methods-and-metadata-elements"></a>方法とメタデータの要素の廃止
 

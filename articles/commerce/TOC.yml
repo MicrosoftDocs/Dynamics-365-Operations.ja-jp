@@ -1716,7 +1716,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
                         - name: Concatenate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/commerce/toc.json
-                        - name: Format
+                        - name: 形式
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/commerce/toc.json
                         - name: GetEnumValueByName
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/commerce/toc.json
@@ -2538,6 +2538,8 @@
                       href: e-commerce-extensibility/debugging-best-practices.md
             - name: Retail SDK
               items:
+                - name: Commerce SDK に移行する
+                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                 - name: Retail SDK のアーキテクチャ
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: 独立したパッケージ SDK のビルド パイプラインの設定
@@ -2672,7 +2674,7 @@
                   href: dev-itpro/commerce-runtime-overview.md
                 - name: CRT サービス
                   href: dev-itpro/crt-services.md
-                - name: CRT拡張機能のパターン
+                - name: CRT 拡張機能のパターン
                   href: dev-itpro/commerce-runtime-extensibility.md
                 - name: Retail チャネルのシークレットの管理
                   href: dev-itpro/manage-secrets.md

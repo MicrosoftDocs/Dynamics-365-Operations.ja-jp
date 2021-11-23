@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-02-25
 ms.dyn365.ops.version: AX 10.0.1
-ms.openlocfilehash: c2c1d7b07875e39aa50c2cb613219db7f8daf6f478bf7936cb3f44d5b4e2d1d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c8572b1a84f03b82862f74065c59f43f61974b1b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774571"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782912"
 ---
 # <a name="view-pos-extension-package-information"></a>POS 拡張パッケージ情報の表示
 

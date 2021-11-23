@@ -5,19 +5,19 @@ author: jorisdg
 ms.date: 03/08/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 2926460282030b42b5fb67771452c9178077b763f1f80c5d2360677bf0449797
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 340301efe74be90e6b9ca364801b793d52c023ff
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729738"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782940"
 ---
 # <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 

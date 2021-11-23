@@ -7,23 +7,23 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4069de74b1ff4b893f78d5b72bba74e47cdf2374430304d7b9e019cf8d8331b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 835f37a5a49fdbff8183d3ea63318c68abf03cf6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734929"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783346"
 ---
 # <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange の拡張 - リアルタイム サービス
 
-[!include [banner](../includes/banner.md)]
+[!Include [banner](../includes/banner.md)]
 
 このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange (CDX) - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、クライアントがリアルタイムでコマース機能を操作できるようします。 Retail サーバーから Finance and Operation データベースとクラスに直接アクセスすることはできません。 Finance and Operations および Commerce Runtime 拡張機能を使用する CDX クラスの拡張機能を介してアクセスする必要があります。
 

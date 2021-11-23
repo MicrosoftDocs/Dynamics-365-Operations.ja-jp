@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 257c5c2b60d0b512d2c8bdc8265d20c5a3ac0273
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 1a39ac3c1f4b747ad88be6e99ff2d28806506731
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402337"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781911"
 ---
 # <a name="consume-retail-server-apis-in-external-applications"></a>外部アプリケーションでの Retail Server API の使用
 

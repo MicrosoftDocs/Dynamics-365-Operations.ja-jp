@@ -5,18 +5,18 @@ author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69d0154d4f77e507fc20790e80d9abb29cc57e06b760b6c0f18bed5bc76e75d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c2e4873119be870d3c0793d73b94520498f50529
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715220"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781767"
 ---
 # <a name="download-assets-by-using-azure-pipelines"></a>Azure Pipelines を使用した資産のダウンロード
 

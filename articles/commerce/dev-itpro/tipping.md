@@ -1,7 +1,7 @@
 ---
 title: 支払 SDK でのチップのサポート
 description: このトピックでは、支払ソフトウェア開発キット (SDK) での支払ターミナルのチップのサポートについて説明します。
-author: rubendel
+author: BrianShook
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7758eb4ee499043478cddbbdc527c2852b8f455500b42b1b1973c5d5c4dd3062
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 219bef01b42df5b9dc577fdd45420f23b736a810
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714699"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779890"
 ---
 # <a name="support-for-tipping-in-the-payments-sdk"></a>支払 SDK でのチップのサポート
 

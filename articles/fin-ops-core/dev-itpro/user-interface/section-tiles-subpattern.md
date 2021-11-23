@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 29311
 ms.assetid: 196e714a-ecfc-42b3-a7f5-84e29fb271bb
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1e474a97e4dd9a46788ecec32ef99f58391219f35ba8974680e6554bcd51601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a658de08cbcb5cf7ce47e5caa0bfe9e51fef9c3
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774393"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781626"
 ---
 # <a name="section-tiles-subpattern"></a>セクション タイルのサブパターン
 

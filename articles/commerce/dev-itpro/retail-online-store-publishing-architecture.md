@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.10
-ms.openlocfilehash: 97ba38397c34add3a366b89477c9baa5736baceb
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 0121c58c80af70fc02f016be5b96a44df04adf9e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402411"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781805"
 ---
 # <a name="publish-an-online-store-catalog"></a>オンライン ストア カタログの公開
 

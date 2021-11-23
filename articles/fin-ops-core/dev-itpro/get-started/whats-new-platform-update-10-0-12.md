@@ -2,7 +2,7 @@
 title: Finance and Operations アプリ バージョン 10.0.12 のプラットフォーム更新プログラム（2020 年 8 月）
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.12 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 07/08/2020
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 831d226010fd1535dcda48a965f574ce1ae10ded0da7d209de59c542a78da25d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 66859b84674bc0cb24e45c06291ea2b7a6c59711
+ms.sourcegitcommit: 2949636d2fd6aea8507e102379cf9b1a188e4529
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774397"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7650988"
 ---
 # <a name="platform-updates-for-version-10012-of-finance-and-operations-apps-august-2020"></a>Finance and Operations アプリ バージョン 10.0.12 のプラットフォーム更新プログラム（2020 年 8 月）
 
@@ -38,7 +38,6 @@ ms.locfileid: "6774397"
 -  [パーソナル化ツールバーを使用してフィールドを必須として指定する](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) – 詳細については、[ユーザー エクスペリエンスのカスタマイズ](../../fin-ops/get-started/personalize-user-experience.md) を参照してください。 
 -  [タスク記録の基本制御値の編集](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) – 詳細については、[タスク レコーダー リソース](../user-interface/task-recorder.md)を参照してください。
 -  [ファイルと添付ファイルでの悪意のあるコードのスキャン](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/scanning-files-attachments-malicious-code) – 詳細については、[ファイル アップロード コントロール](../user-interface/file-upload-control.md)および[ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)を参照してください。
--  [関連するドキュメントの添付ファイルの表示](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/show-related-document-attachments) – 詳細については、[ドキュメント管理の構成](../../fin-ops/organization-administration/configure-document-management.md)を参照してください。
 - [仮想エンティティとしての Dataverse の Finance and Operations エンティティ](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-entities-common-data-service-as-virtual-entities) – 詳細については、[Finance and Operations との Microsoft Power Platform 統合](../power-platform/overview.md)を参照してください。
 - 顧客および仕入先のマスター データは、機能管理を使用して有効にすることができます。詳細については、[顧客および仕入先のマスター データ共有](../sysadmin/cross-company-data-sharing.md#customer-and-vendor-master-data-sharing)を参照してください。
 - [Finance and Operations のライセンス](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing) – Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce などの製品名がナビゲーション バーに表示され、現在のユーザーに関連付けられている基本ライセンスが反映されます。

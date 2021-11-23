@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 14671
 ms.assetid: 564b88d7-85f5-488a-bbbe-19eff7194321
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2266f81064aca54f369ab4add70168cb5077e9500692e385895c4186302bf966
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8905ea58a11ff2d10b263fb11f14c03f5bd4bfed
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745082"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781053"
 ---
 # <a name="wizard-form-pattern"></a>ウィザードのフォーム パターン
 

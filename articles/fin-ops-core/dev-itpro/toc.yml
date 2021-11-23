@@ -1172,6 +1172,8 @@
               items:
                 - name: ビジネス イベントの概要
                   href: business-events/home-page.md
+                - name: ビジネス イベント エンドポイントの管理
+                  href: business-events/managing-business-event-endpoints.md
                 - name: アプリケーション ビジネス イベント
                   href: business-events/app-business-events.md
                 - name: ワークフロー ビジネス イベント
@@ -1198,12 +1200,16 @@
                       href: business-events/how-to/how-to-eventgrid.md
                     - name: ビジネス イベントおよび Azure Service Bus
                       href: business-events/how-to/how-to-servicebus.md
+                    - name: ビジネス イベントおよび Azure Service Bus キュー
+                      href: business-events/how-to/how-to-servicebus-queue.md
                     - name: ビジネス イベントおよびワークフローの承認
                       href: business-events/how-to/how-to-workflow.md
                     - name: ビジネス イベントおよび Microsoft Forms Pro
                       href: business-events/how-to/FormsPro.md
                     - name: ビジネス イベントおよび Azure Event Hubs
                       href: business-events/how-to/event-hub.md
+                    - name: Dataverse のイベントをサブスクライブする
+                      href: business-events/how-to/how-to-dataverse-events.md
                     - name: 財務期間終了時のビジネス イベント
                       href: business-events/how-to/period-close.md
             - name: アドイン
@@ -1654,8 +1660,6 @@
                   items:
                     - name: 勘定科目表の区切り記号を一意にする
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
-                    - name: 単一伝票仕訳帳と通貨再評価のアップグレード
-                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
                     - name: プロジェクト リソースのスケジューリング データ モデル
                       href: migration-upgrade/data-model-changes-resource-management.md
                     - name: ワークフロー サブシステムの変更

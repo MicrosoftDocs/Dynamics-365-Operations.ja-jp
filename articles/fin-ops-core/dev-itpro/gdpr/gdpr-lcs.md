@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 10031
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aaa7fbbc95f0ffc9dfc246bb328f160b11ee2e0f1fee712513f402ca29a522d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0dc36587dbe4724ad5b3cd774aac508ebd647198
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743915"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783212"
 ---
 # <a name="gdpr-data-requests-for-lifecycle-services-lcs"></a>Lifecycle Services (LCS) に対する GDPR データ要求
 

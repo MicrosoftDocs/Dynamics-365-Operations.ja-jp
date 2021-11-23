@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24231
 ms.assetid: 41dcbbda-e377-45a8-b180-5daa0e63c4a9
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1eaa1d608fa368771a518124e399cbe35ecf9ee9c1882299d6113e7e0e56e3ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2a67b19cfb9e742a167433a2a32db49bdcdbcac9
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742250"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781939"
 ---
 # <a name="testing-and-validations"></a>テストと検証
 

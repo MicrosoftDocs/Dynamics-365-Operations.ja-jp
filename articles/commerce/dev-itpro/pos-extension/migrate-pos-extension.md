@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 89ac3bce7b1a6fd45b7c6708869f67746a83be834cd5d28faa25dcf3a94e7e07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 03ff45352652518c92f1014e6a50bd87b9dd8d80
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762314"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781905"
 ---
 # <a name="migrate-a-pos-extension-to-the-independent-packaging-model"></a>独立したパッケージ モデルへの POS 拡張機能の移行
 

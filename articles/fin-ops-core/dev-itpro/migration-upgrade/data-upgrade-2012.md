@@ -2,7 +2,7 @@
 title: AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 description: このトピックでは、開発環境で Microsoft Dynamics AX 2012 から最新の Finance and Operations にアップグレードする詳細なプロセスを説明します。
 author: laneswenka
-ms.date: 06/08/2021
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 398ee296927d4b98404980bf737fe353f0c4d16ab3559075af61c01217ca4087
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28a48db7f1ccfeed092d5033fd35e34297b8ed06
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712291"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777652"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
@@ -35,9 +35,6 @@ ms.locfileid: "6712291"
 - これは、データ アップグレード プロセスの繰り返しに費やされる全体的な時間を短縮できます。 開発環境では、問題を即座にデバッグし、コードを調整し、アップグレードを数分以内に再実行することができます。 ただし、より規模の大きいサンドボックス環境ではこの機敏性のレベルが許可されていません。 それらの環境では、問題の修正やデバッグ、コードの更新、更新済コードの配置、およびアップグレードの再実行に少なくとも数時間を要します。
 
 データのアップグレードを実行する前に、[アップグレード アナライザー](upgrade-analyzer-tool.md)を実行して、特定した問題に対応することを強くお勧めします。これは、データのアップグレードが迅速かつ容易になることを保証する手助けになります。
-
-> [!NOTE]
-> このプロセスを開始する前に、SQL Server Management Studio の最新バージョンをインストールすることが非常に重要です。[SQL Server Management Studio のダウンロード](/sql/ssms/download-sql-server-management-studio-ssms). 
 
 ## <a name="end-to-end-data-upgrade-process"></a>エンド ツー エンド データのアップグレード プロセス
 
@@ -99,7 +96,7 @@ GO
 
 ### <a name="recommendation-for-the-first-data-upgrade-run"></a>最初のデータ アップグレードを実行するための推奨事項
 
-初めてデータセットのデータのアップグレードを実行するとき、特に多くのカスタマイズまたは多くのカスタム データのアップグレード スクリプトが存在するとき、[失敗したスクリプトをスキップする機能](upgrade-data-to-latest-update.md) が役に立つ場合があります。 この機能を使用すると、1 回の実行で可能な限り多くのエラーを可視化できます。 それ以外の場合、実行あたり 1 つだけの重要な問題が検出されます。 スクリプト間には依存関係が存在するため、親スクリプトをスキップすると関連する子スクリプトにエラーが発生することがあります。 これらのエラーは、親が正しく実行されなかったためにのみ発生します。 親スクリプト内の問題が解決されると、解決されます。
+初めてデータセットのデータのアップグレードを実行するとき、特に多くのカスタマイズまたは多くのカスタム データのアップグレード スクリプトが存在するとき、[失敗したスクリプトをスキップする機能](upgrade-data-to-latest-update.md) が役に立つ場合があります。 この機能を使用すると、1 回の実行で可能な限り多くのエラーを可視化できます。 それ以外の場合、実行あたり 1 つだけの重要な問題が検出されます。 スクリプト間には依存関係が存在するため、親スクリプトをスキップすると関連する子スクリプトにエラーが発生することがあります。 これらのエラーは、親が正しく実行されなかった場合にのみ発生します。 親スクリプト内の問題が解決されると、解決されます。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

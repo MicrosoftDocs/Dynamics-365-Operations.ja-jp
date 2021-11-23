@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: c222d1494857b96b0b54154866aae4a18e4404d7f6218e19a54f5930ccf2268a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1db920bddd29bd109055ee2b0d9ee068eaea216
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719948"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782984"
 ---
 # <a name="log-extension-events-to-application-insights"></a>拡張イベントを Application Insights に記録する
 
@@ -43,7 +43,7 @@ CRT で使用するインストルメンテーション キーをコピーしま
 
 ## <a name="extend-the-crt-extension-project-to-log-events-to-application-insights"></a>CRT 拡張プロジェクトを拡張して、イベントを Application Insights に記録します。
 
-1. 新しい C\# クラス ライブラリ プロジェクトを作成し、**Contoso.Diagnostic** という名前を付けます。
+1. 新しい C\# クラス ライブラリ プロジェクトを作成し、 **Contoso.Diagnostic** という名前を付けます。
 
     > [!div class="mx-imgBorder"]
     > ![新規 Contoso.Diagnostic プロジェクト。](media/VSProject.png)
@@ -137,7 +137,7 @@ CRT で使用するインストルメンテーション キーをコピーしま
 
 配置可能パッケージの作成方法の詳細については、 [配置可能なパッケージを作成する](retail-sdk/retail-sdk-packaging.md) を参照してください。
 
-1. **Contoso.Diagnostic** と **Microsoft.ApplicationInsights** のアセンブリを **\\RetailSDK\\ 参照** フォルダーにコピーします。
+1. **Contoso.Diagnostic** と **Microsoft.ApplicationInsights** のアセンブリを **\\RetailSDK\\参照** フォルダーにコピーします。
 2. **BuildTools\\Customization.settings** ファイルを更新し、**\<ItemGroup\>** セクションに次のエントリを追加します。
 
     ```xml

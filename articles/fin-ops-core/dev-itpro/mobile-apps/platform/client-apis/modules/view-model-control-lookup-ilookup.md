@@ -1,18 +1,18 @@
 ---
 title: 参照モジュール
 description: ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 2bb8b67865657219db14431eeef4de0ff499d4d6127175ac83e10fb0dabadd5d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: eed552d5d8227d3bf12a879955e77e73640bc75b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768393"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781066"
 ---
 # <a name="lookup-module"></a>参照モジュール
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 7aa463ead3cefa297791b4d05e859d01f66d1300d83dcd649d38b98d243fa23e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52a90628d6a72d769a69a6969633997cf6c48e94
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742258"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781947"
 ---
 # <a name="single-user-testing-using-performance-sdk-and-task-recorder"></a>パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
 

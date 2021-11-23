@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: 3beba3ca0f6918d6c14a3ed3277580b077bee92b1147c8aacc971bd589876f66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d95994f7fbc5855a2f49fcc40f52026609202c79
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762685"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782120"
 ---
 # <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>Retail チャネル拡張機能を最新の Retail SDK にアップグレード
 

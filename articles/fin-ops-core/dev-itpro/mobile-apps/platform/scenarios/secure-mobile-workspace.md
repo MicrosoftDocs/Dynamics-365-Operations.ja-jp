@@ -1,25 +1,25 @@
 ---
 title: モバイル ワークスペースのセキュリティを強化する
 description: このトピックでは、ワークスペースへのユーザー アクセスを制限する方法について説明します。
-author: robinarh
+author: tonyafehr
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 255544
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 318fa1d1f5ba744723aedf926699c3d8f88920561890c136b139016061c44536
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 627494055dda16f703fd25c83a0ca58a2aa118f8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773770"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782005"
 ---
 # <a name="help-secure-mobile-workspaces"></a>モバイル ワークスペースのセキュリティを強化する
 

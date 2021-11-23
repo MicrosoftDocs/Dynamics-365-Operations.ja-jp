@@ -5,19 +5,19 @@ author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26731
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1648686104c56fe34ce4f0719c068029d9b5ca1cca097bd4be5050705459080c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d8c513df549e7140df334b0cceb7934b8feff244
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733737"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781076"
 ---
 # <a name="x-model-versioning-in-azure-pipelines"></a>Azure Pipelines で、X++ モデルのバージョン管理
 

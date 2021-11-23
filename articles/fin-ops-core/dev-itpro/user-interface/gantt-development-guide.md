@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 17311
 ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 651ad808e1f6734f87501df1fd70a89d2c9e8760dd595b4a7b9ec8ec2310ca86
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 95e6f30ea0db9631f189cf60080fbb9e8704ec2f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761340"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781927"
 ---
 # <a name="gantt-control-development-guide"></a>ガント管理作成ガイド
 

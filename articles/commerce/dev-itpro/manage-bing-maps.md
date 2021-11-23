@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: RetailSharedParameters
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: d8132c745bebd8f9626bea137e3e5ad48a28294a9d3b528b4a9476df817f57ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aaac3229aa64f446b64bc01c5f3d31a5d51c1251
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771047"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781817"
 ---
 # <a name="manage-bing-maps-for-your-organization"></a>組織の Bing 地図の管理
 

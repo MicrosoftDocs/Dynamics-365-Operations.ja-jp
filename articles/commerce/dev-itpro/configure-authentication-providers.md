@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 31241
 ms.assetid: fef883f3-981a-4bba-9a41-d9dde63b0cd0
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8fc999b3c7e3d1732e50d7db1f3a1caec264604254ab2141033397e2f493f39a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dac04c36b0c4db21adf41b52a40fde6705948bb0
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750700"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781843"
 ---
 # <a name="configure-authentication-providers"></a>認証プロバイダーのコンフィギュレーション
 

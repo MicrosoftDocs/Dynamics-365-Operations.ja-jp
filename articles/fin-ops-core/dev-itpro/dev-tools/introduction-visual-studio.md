@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.assetid: ba523585-bab1-49c9-b6c9-6db1403494d9
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c58fce2487e23e8649084e1db09f05823586b43c42ee579c5569ae19916fd6ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a0c10db74c4577a93dc461692399b27279911f8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754330"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781080"
 ---
 # <a name="development-tools-tutorial"></a>開発ツールのチュートリアル
 

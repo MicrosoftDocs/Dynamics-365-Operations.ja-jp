@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f0863112f6a34b838e9256f77d43dd990444492837d96b1152f9bb237cf980b4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9cc3d4e92d36b7c6989224f5bd48e1bd2c8e773e
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749864"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675141"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-commerce-10020-august-2021"></a>Dynamics 365 Commerce 10.0.20 (2021 年 8 月) の新機能と変更された機能
 
@@ -49,7 +49,7 @@ ms.locfileid: "6749864"
 | 支払利息  | [ウォレット スタイルの支払方法の初期設定サポート](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/out-of-box-support-wallet-style-payment-methods)  | [Wallet 支払サポート](../wallets.md) |
 |  支払利息 |  [店頭チェックアウトでのリファクターされた支払処理](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/refactored-payment-processing-storefront-checkout)  | この機能により、支払プロセッサへの認証要求数が減少し、欧州連合の強力な顧客認証 (SCA) へのより良いサポートが追加されます。 |
 | E コマース  |  [ゲスト顧客の注文の検索を有効にする](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enable-order-lookup-guest-customers)   | この機能は、ゲスト チェックアウトの注文の検索を有効にします。 |
-|   E コマース|  [在庫を認識するように強化された e コマース製品の検出](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhanced-e-commerce-product-discovery-be-inventory-aware)  | 製品の在庫確認を有効にして、使用可能な在庫がある場合にのみ製品の購入を許可します。 | 
+|   E コマース|  [在庫を認識するように強化された e コマース製品の検出](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhanced-e-commerce-product-discovery-be-inventory-aware)  | [在庫設定の適用](../inventory-settings.md)<br>[検索結果モジュール](../search-result-module.md) | 
 | E コマース  |  [E コマースの在庫状態検索の API に対する拡張機能](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhancements-e-commerce-inventory-availability-lookup-apis)  |  この機能によって、GetEstimatedAvailability API および GetEstimatedProductAvahouseAvailability API に拡張機能が提供されます。  |
 |  E コマース   |   [最新の e コマース サイトを表示するための没入型テーマ](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/immersive-theme-showcase-modern-e-commerce-site)   | この新しいテーマを使用して、e コマース サイトで最新かつ没入型のエクスペリエンスを構築します。 |
 | グローバリゼーション |  [ブラジル向け Adyen 支払コネクタ](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/adyen-payment-connector-brazil)    |  ブラジルにある店舗での支払操作をサポートするには、Adyen 向け Dynamics 365 支払コネクタを使用します。 | 

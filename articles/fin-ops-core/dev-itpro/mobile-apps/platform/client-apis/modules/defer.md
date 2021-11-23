@@ -1,18 +1,18 @@
 ---
 title: 延期モジュール
 description: 延期タイプ
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 2b65687facf80367fcd010b494a2646d784b696b0ff7ac5ba15edb61c45a7806
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 1e3f2a8316bfe618fbc7ff9581928556b928b2f7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759962"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783366"
 ---
 # <a name="defer-module"></a>延期モジュール
 

@@ -1,18 +1,18 @@
 ---
 title: DataService タイプ
 description: アプリケーション ワークスペースの下でデータ アクセス機能を提供します。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 4254ed9fa59d7f07e191b880226caf64d2f6a2847c2e14c3e5bb12c292e3e3a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 497236314136cdd842917869250e76fc8ba525a7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714571"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781068"
 ---
 # <a name="dataservice-type"></a>DataService タイプ
 

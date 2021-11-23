@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 65801
 ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
 ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e2b41402288b0c9e1d032354dbff126805d16a8a
-ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
+ms.openlocfilehash: b24c7e3aba75f928df35bcb7c5effa51fe5a83b6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7644541"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783342"
 ---
 # <a name="payments-faq"></a>支払に関してよく寄せられる質問
 

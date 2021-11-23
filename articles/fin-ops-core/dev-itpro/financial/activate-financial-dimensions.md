@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 191363
 ms.assetid: dd1dd40e-6bff-47b5-bf2e-55b9a4dcde1d
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b49ed7580bc17a78fed98da427a2c4e986b4edd381c3cc063176bd126c281af0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e479e4578c63b03f7ce51c81031540e150938138
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749640"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782725"
 ---
 # <a name="financial-dimension-activation"></a>財務分析コードの有効化
 

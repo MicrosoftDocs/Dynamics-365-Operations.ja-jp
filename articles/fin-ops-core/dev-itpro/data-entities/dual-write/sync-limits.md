@@ -5,17 +5,17 @@ author: nhelgren
 ms.date: 08/31/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09e754cc6473b8d1feee27f44476317c2b090783
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 89c4942c4f7ef232348ba7bd9281ed4cef183a34
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581799"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782225"
 ---
 # <a name="dual-write-limits-for-live-synchronization"></a>ライブ同期に関する二重書き込みの制限
 

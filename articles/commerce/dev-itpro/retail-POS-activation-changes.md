@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
-ms.openlocfilehash: 45ce20f09e6a116c6df5284a6dcc927292360051382c49e23b7b6364aa415d69
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bab94a1ebd1b715a8918574e5b3a7df9845c3e07
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750694"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781130"
 ---
 # <a name="device-activation-of-a-customized-modern-pos"></a>カスタマイズされた Modern POS のデバイスの有効化
 

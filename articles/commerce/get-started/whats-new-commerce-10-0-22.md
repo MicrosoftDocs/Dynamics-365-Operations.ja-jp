@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Commerce 10.0.22 (2021 年 11 月) の機能のプレビュー
+title: Dynamics 365 Commerce 10.0.22 (2021 年 11 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.22 のプレビュー リリースの新機能または変更された機能について説明します。
 author: josaw1
 ms.date: 09/20/2021
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-09-31
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 29f67e588937660fed0e73f3b76a0412e649c35f
-ms.sourcegitcommit: 99bde425ade701ef244c6bca6d411aef94a59b3c
+ms.openlocfilehash: 9bec57e88c82965a1ad38bb6c29501dd51fcf333
+ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "7505515"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "7749523"
 ---
-# <a name="preview-features-in-in-dynamics-365-commerce-10022-november-2021"></a>Dynamics 365 Commerce 10.0.22 (2021 年 11 月) の機能のプレビュー
+# <a name="whats-new-and-changed-in-dynamics-365-commerce-10022-november-2021"></a>Dynamics 365 Commerce 10.0.22 (2021 年 11 月) の新機能と変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.22 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.995 で、次のスケジュールで使用できます。
 
@@ -39,11 +39,12 @@ ms.locfileid: "7505515"
 
 | 機能領域   | フィーチャー                                                  | 詳細                                          |   に  によって有効化             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-|  顧客管理 | 顧客住所の非同期作成の有効化 | [店舗内の顧客管理](../customer-mgmt-stores.md) | 機能管理 |
-|  顧客注文  |  ゲスト清算の注文検索    |  [ゲスト清算の注文検索を有効にする](../order-lookup-guest.md)<p>[注文検索モジュール](../order-lookup-module.md)</p> |  機能管理   |
+|  顧客管理 | 在庫を意識した製品検索用のサイト ビルダー コンフィギュレーション | [店舗内の顧客管理](../customer-mgmt-stores.md) | 機能管理 |
+|  顧客注文  |  [ゲスト清算の注文検索を有効にする](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enable-order-lookup-guest-checkouts)    |  [ゲスト清算の注文検索を有効にする](../order-lookup-guest.md)<p>[注文検索モジュール](../order-lookup-module.md)</p> |  機能管理   |
 |  E コマース      |   [eコマース サイト用の地域検出およびリダイレクト](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/geo-detection-redirection-e-commerce-sites) | [地域の検出とリダイレクトを設定する](../geo-detection-redirection.md)<p>[国/地域の選択モジュール](../country-region-picker-module.md)</p>   |                    サイト ビルダーの設定    |
 | 拡張性 | Lifecycle Service なしで Dynamics 365 Commerce の独自のローカル開発環境を設定する | [独自のローカル開発環境を設定する](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.32/src/ScaleUnitSample/.vscode) | |
 | 拡張性 | Visual Studio Code を使用して Commerce Cloud Scale Unit (CRT および API) 拡張機能を開発する | [VS Code を使用して CSU 拡張機能を開発する](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.32/src/ScaleUnitSample/.vscode) | |
+| グローバリゼーション | (イタリア) 抽選コードの検証 | 顧客マスター レコードまたは販売トランザクションに対して指定された抽選コードの検証は、対応する登録タイプに対して定義されている形式に基づいて行われます。 詳細については、[抽選コードの登録タイプの設定](../localizations/emea-ita-customer-information.md#set-up-a-registration-type-for-the-lottery-code)を参照してください。 | 既定で有効 |
 | 販売促進 | 最適化された製品可用性の計算 | [小売チャンネルの引当可能在庫数量の計算](../calculated-inventory-retail-channels.md) | 機能管理 |
 | 販売促進 | [評価とレビューに対してモデレーターを必須にする](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/require-moderator-ratings-reviews) | [モデレーターによる評価とレビューの手動公開を有効化する](../manual-publish-rating-reviews.md) | サイト ビルダーの設定  |
 

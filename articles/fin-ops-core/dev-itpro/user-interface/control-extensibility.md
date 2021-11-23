@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 27461
 ms.assetid: f03f1fc6-4f8f-4f42-8e38-5ecba8eac413
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c1bd7f325da4a45993df680d1fbfd9e0c0a21af93579bb6bf972f55d0e60a40
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c933f5a03b20a81c5ea642967911f729bf15508d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777352"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783132"
 ---
 # <a name="control-extensibility"></a>コントロールの拡張機能
 

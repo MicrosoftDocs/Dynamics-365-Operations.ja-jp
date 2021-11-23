@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 18531
 ms.assetid: 73615d1b-9088-496e-989e-d8996f30e76b
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77a7ba9765d01bf841b8021e4f94bdaaad5b814d84094c007c06ce736a3dbcf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca6439be1421d30f33e4111493ef486e75a64ba6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737825"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782699"
 ---
 # <a name="create-localizable-labels"></a>ローカライズ可能なラベルの作成
 

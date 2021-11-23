@@ -1,7 +1,7 @@
 ---
 title: ハードウェア ステーションを使用しないクレジットカードの処理
 description: このトピックでは、ハードウェア ステーションを含まない POS クライアントで "カードが存在しない" トランザクションの処理をする販売時点管理 (POS) を設定する方法について説明します。
-author: rubendel
+author: BrianShook
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: d6add6debd95994a6d72041023246479a2012da67f7e96d130809f5180ab186a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73ba5ea8a005918c3b6c293d7a60c8f5cc427c36
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726425"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779584"
 ---
 # <a name="process-credit-cards-without-a-hardware-station"></a>ハードウェア ステーションを使用しないクレジットカードの処理
 

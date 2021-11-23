@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 202694
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 1c0fcb7d9b0727fb54c71a5e12590ade08a49fb3eb3c996d8f56d9de63ad9e38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbac496d66feb6ef11f74567d9840b05384f47c0
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749314"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782695"
 ---
 # <a name="create-a-workflow-document-class"></a>ワークフロー ドキュメント クラスの作成
 

@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83892
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 57443bdf9b969be5f09e0c6b51dabc502b08fd26df6d500f398d80259cd1e45f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ddc85dad78c86cef0a22067953084afda2cb7ed2
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716238"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783392"
 ---
 # <a name="manage-secrets-for-retail-channels"></a>小売チャンネルのシークレットを管理
 

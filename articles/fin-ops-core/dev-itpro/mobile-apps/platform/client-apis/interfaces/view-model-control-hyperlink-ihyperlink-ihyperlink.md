@@ -1,18 +1,18 @@
 ---
 title: HyperLink タイプ
 description: Hyperlink コントロール タイプ。 ハイパーリンク コントロールは、ハイパーリンクを示すコントロールです。 ほとんどの場合、Pagelinks も使用できます。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 2722c66a7b60c982830bfd96ef9e82bec63a01b05dbc1d3d19d704cd5d4975ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 1c45412bae51a95448f6fbd52763c142c8b332cf
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725114"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781869"
 ---
 # <a name="hyperlink-type"></a>HyperLink タイプ
 

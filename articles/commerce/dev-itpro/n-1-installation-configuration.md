@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: d2809677f4503ec713f52d9042f45b0ad7b1156dcd999bec5e1312ba273effbf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 846bd7067568154ddaf570d2e27fd52be5b5beeb
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771045"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782982"
 ---
 # <a name="phased-rollout-n-1-installation-configuration-and-cutover-guide"></a>段階的なロールアウト (N-1) インストール、コンフィギュレーション、および切替ガイド
 

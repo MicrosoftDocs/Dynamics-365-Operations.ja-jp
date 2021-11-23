@@ -1,18 +1,18 @@
 ---
 title: GroupDesign タイプ
 description: グループ デザインのオブジェクト タイプ。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 0c74431243a160b8f3c3cf97c2e3cb5dfce73a6651b040f1391495eacd70b6e7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 81e9b6b8f97c9d8b2c0beecf71dac9287559d564
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719804"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782174"
 ---
 # <a name="groupdesign-type"></a>GroupDesign タイプ
 

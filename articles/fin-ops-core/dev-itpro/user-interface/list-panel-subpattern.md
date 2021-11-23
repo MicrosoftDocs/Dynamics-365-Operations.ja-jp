@@ -5,17 +5,17 @@ author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 001676defe3f77749c124f6cc5402a3b4868eeb1
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 4ea4001b22d8ba3c1ea15f6d184284310737d5b0
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594677"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782994"
 ---
 # <a name="list-panel-subpattern"></a>リスト パネルのサブパターン
 

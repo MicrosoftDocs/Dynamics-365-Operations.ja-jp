@@ -1,8 +1,8 @@
 ---
-title: Microsoft Dynamics AX 2009、Dynamics AX 2012、および Dynamics AX 2012 R2 のメインストリーム サポートの終了
-description: このトピックでは、Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートの終了に関する詳細情報を提供します。
+title: Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了
+description: このトピックでは、Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了に関する詳細情報を提供します。
 author: ShellyBakke
-ms.date: 06/21/2021
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,33 +12,37 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8ceb1680e7804ffabe39b23f0bef301a8aaed298d172d0c52e26ac5c8b64aadc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 035bb1545a331414193ea628094e001121a8f036
+ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744344"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7725063"
 ---
-# <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、および Dynamics AX 2012 R2 のメインストリーム サポートの終了
+# <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-dynamics-ax-2012-r2-and-dynamics-ax-2012-r3"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了
 
 [!include[banner](../includes/banner.md)]
 
 Dynamics AX 2009 Service Pack 1 (SP1)、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートは、2018 年 10 月 9 日に終了します。 その日より後は、2022 年 4 月 12 日まで続く延長サポート期間の終わりまで、これら 3 つのバージョンのセキュリティ修正プログラムのみ提供され続けます。 詳細については、[support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX) を参照してください。
 
-Dynamics AX 2012 R3 のメインストリーム サポートは、2021 年 10 月 12 日まで続行されます。 Microsoft は、メインストリーム サポート期間全体を通じて、Dynamics AX 2012 R3 のセキュリティ修正プログラム、セキュリティ以外の修正プログラム、および規制に関する更新を作成し続けます。 これらの非バイナリ、セキュリティ以外の修正プログラム、規制更新プログラムのソース コードは、拡張プランまたはソフトウェア保証がアクティブな顧客、およびそのパートナーが引き続き利用できます。 顧客やパートナーは、Lifecycle Services (LCS) で公開されている、および問題検索を通じて検索可能な関連する Dynamics AX 2012 R3 KB 記事に付属するパッケージからソース コードを取得できます。
+Dynamics AX 2012 R3 のメインストリーム サポートは、2021 年 10 月 12 日で終了します。  その日より後は、2023 年 1 月 10 日まで続く延長サポート期間の終わりまで、セキュリティ修正プログラムのみ提供され続けます。  詳細については、[support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX) を参照してください。
 
-Dynamics 365 Finance、Supply Chain Management、Retail、および人事管理などの Finance and Operations アプリを最新バージョンにアップグレードすることを推奨します。
+Dynamics 365 Finance、Supply Chain Management、Commerce および Project Operations などの Finance and Operations アプリを最新バージョンにアップグレードすることを推奨します。
 
 - Dynamics AX 2009 Service Pack 1 ユーザーは、入手可能な「[移行ツール](../../dev-itpro/migration-upgrade/upgrade-home-page.md)」を使用してください。
-- Dynamics AX 2012 および Dynamics AX 2012 R2 ユーザーは、入手可能なアップグレード ツールを使って Dynamics AX 2012 R3 を通じて Finance and Operations アプリにアップグレードする必要があります。 アップグレードに関する追加情報は、[AX 2012 から Finance and Operations アプリへのアップグレード](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md) トピックにあります。
+- Dynamics AX 2012 および Dynamics AX 2012 R2 ユーザーは、入手可能なアップグレード ツールを使って Dynamics AX 2012 R3 を通じて Finance and Operations アプリにアップグレードする必要があります。 アップグレードに関する追加情報は、[AX 2012 から Finance and Operations アプリへのアップグレード](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md) を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="when-does-the-mainstream-support-for-dynamics-ax-2009-service-pack-1-dynamics-ax-2012-and-dynamics-ax-2012-r2-end"></a>Dynamics AX 2009 Service Pack 1、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートは、いつ終了しますか?
 
-メインストリーム サポートは、2018 年 10 月 9 日に終了します。
+メインストリーム サポートは、2018 年 10 月 9 日に終了しました。
 
-### <a name="was-the-information-of-the-end-date-of-the-mainstream-support-for-dynamics-ax-2009-service-pack-1-dynamics-ax-2012-and-dynamics-ax-2012-r2-available-before"></a>Dynamics AX 2009 Service Pack 1、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートの終了日の情報は、以前から入手可能でしたか?
+### <a name="when-does-the-mainstream-support-for-dynamics-ax-2012-r3-end"></a>Dynamics AX 2012 R3 のサポートはいつ終了しますか ?
+
+メインストリーム サポートは、2021 年 10 月 12 日に終了しました。
+
+### <a name="was-the-information-of-the-end-date-of-the-mainstream-support-for-dynamics-ax-2009-service-pack-1-dynamics-ax-2012-dynamics-ax-2012-r2-and-dynamics-ax-2012-r3-available-before"></a>Dynamics AX 2009 Service Pack 1、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了日の情報は、以前から入手可能でしたか ?
 
 はい、[support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX) にある Microsoft Support Lifecycle サイトで常に公開されています。
 
@@ -46,7 +50,7 @@ Dynamics 365 Finance、Supply Chain Management、Retail、および人事管理�
 
 一連番号 セキュリティ以外の修正プログラムも規制更新プログラムも、製品ライフサイクルの延長サポート フェーズでは、Dynamics AX 製品に対しては入手できなくなります (Dynamics AX 2009 SP1, Dynamics AX 2012, Dynamics AX 2012 R2, or Dynamics AX 2012 R3)。
 
-特定の製品のセキュリティ以外の修正プログラムをリクエストする機能は Unified Support Advanced and Performance Levels に含まれていますが、Microsoft は *ビジネス上合理的な* 努力ではこれらの製品に対してセキュリティ以外の修正プログラムを提供できないと判断しました。 このため、セキュリティ以外の修正プログラムや規制更新プログラムに対する要求は受け付けられません。 ただし、Microsoft は、メインストリーム サポート期間全体を通じて、Dynamics AX 2012 R3 のセキュリティ修正プログラム、セキュリティ以外の修正プログラム、および規制に関する更新を作成し続けます。 これらの非バイナリ、セキュリティ以外の修正プログラム、規制更新プログラムのソース コードは、拡張プランまたはソフトウェア保証がアクティブな顧客、およびそのパートナーが引き続き利用できます。 Dynamics AX 2009 SP1、Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客は、それらの変更を必要に応じて選択的に統合できます。 顧客やパートナーは、LCS で公開されている、および LCS 問題検索を通じて検索可能な関連する Dynamics AX 2012 R3 KB 記事に付属するパッケージからソース コードを取得できます。
+特定の製品のセキュリティ以外の修正プログラムをリクエストする機能は Unified Support Advanced and Performance Levels に含まれていますが、Microsoft は *ビジネス上合理的な* 努力ではこれらの製品に対してセキュリティ以外の修正プログラムを提供できないと判断しました。 このため、セキュリティ以外の修正プログラムや規制更新プログラムに対する要求は受け付けられません。 
 
 ### <a name="i-knew-about-the-regulatory-change-before-october-9-2018-but-it-has-the-law-enforcement-date-after-october-9-2018-will-i-still-get-a-regulatory-update-for-dynamics-ax-2009-service-pack-1-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>2018 年 10 月 9 日より前に規制の変更について知っていましたが、法律実施日は 2018 年 10 月 9 日より後です。 それでも Dynamics AX 2009 Service Pack 1、Dynamics AX 2012、Dynamics AX 2012 R2 の規制更新プログラムを入手できますか?
 
@@ -56,13 +60,33 @@ Dynamics 365 Finance、Supply Chain Management、Retail、および人事管理�
 
 いいえ、違いはありません。
 
-### <a name="what-happens-if-a-new-bug-is-found-by-a-customer-in-dynamics-ax-2009-service-pack-1-dynamics-ax-2012-or-dynamics-ax-2012-r2"></a>Dynamics AX 2009 Service Pack 1、Dynamics AX 2012、または Dynamics AX 2012 R2 で顧客によって新しい不具合が見つかった場合はどうなりますか?
-
-不具合は、Dynamics AX 2012 R3 で再現可能である必要があります。 再現可能で受け入れられた場合、Dynamics AX 2012 R3 の修正プログラムが提供され、顧客は自分でそのバージョンにこの修正プログラムを統合するか、パートナーと連携して変更を統合するかを選択できます。
-
-### <a name="how-are-binary-hotfixes-handled-for-dynamics-ax-2009-service-pack-1-dynamics-ax-2012-and-dynamics-ax-2012-r2"></a>Dynamics AX 2009 Service Pack 1、Dynamics AX 2012、および Dynamics AX 2012 R2 のバイナリ修正プログラムはどのように処理されますか?
+### <a name="how-are-binary-hotfixes-handled-for-dynamics-ax-2009-service-pack-1-dynamics-ax-2012-dynamics-ax-2012-r2-and-dynamics-ax-2012-r3"></a>Dynamics AX 2009 Service Pack 1、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のバイナリ修正プログラムはどのように処理されますか ?
 
 Microsoft がソース コードを提供しないシステムの一部に修正プログラムが必要であり、セキュリティ不具合ではない場合、修正プログラムは提供されません。
 
+### <a name="can-i-access-information-about-upcoming-legislation-changes-in-supported-countries"></a>サポートされている国の今後の法律変更に関する情報にアクセスできますか ?
+
+はい、ソース (仕入先、Microsoft リサーチ、コミュニティなど) に関係なく、すべての法令の変更は Lifecycle Service (LCS) 警告プロジェクトに格納されます。 LCS アラート プロジェクトにアクセスするには、以下の手順に従ってください:
+1. **登録**: DynRegW@microsoft.com にてローカライズ コミュニティに参加を依頼する電子メールを送信します (NDA にて)。
+2. **アクセス**: LCS プロジェクト **規制アラート - 全世界** にログインします (インサイダー プログラムにログインした NDA または個人がアクセス可能)。
+3. **警告ガイド**: 国/地域の規制警告の Microsoft への通知および規制機能のステータスの追跡。 詳細については、[国または地域固有の規制機能に関わる通知を送信](../../dev-itpro/lcs-solutions/submit-localization-alerts.md) を参照してください。
+
+LCS 警告プロジェクトには、識別または報告された法律上の変更 (警告) はすべて含まれますが、実際の Microsoft 計画は含まれません。
+
+### <a name="can-i-get-visibility-into-microsoft-plans-for-releases-of-new-regulatory-features"></a>Microsoft の新しい規制機能のリリースに関する計画について可視性を利用できますか ?
+
+はい、LCS 発行検索では、Dynamics 365 Finance Supply Chain Management、Commerce、および Project Operationsに関する最新の規制更新に関する情報が公開されます。  
+
+#### <a name="are-details-about-released-regulatory-features-available"></a>リリースされた規制に関する機能の詳細を利用できますか ?
+
+はい、より大きな機能については、[グローバリゼーション リソース](../../dev-itpro/lcs-solutions/country-region.md) にて公開しています。
+
+### <a name="can-i-view-and-try-actual-regulatory-features-in-dynamics-365-prior-to-a-release"></a>リリースの前に Dynamics 365 で実際の規制に関する機能を確認および試すことはできますか ?
+はい、Dynamics 365 用のクラウド ライセンスを購入している場合、およびプレビュー早期アクセス プログラム (PEAP) にアクセスできる場合は、この操作を実行できます。 当局によって早期に指定された規制上の変更の場合は、この機能を法適用日前日 (または最初の提出日の最新の日付) に PEAP で利用可能になります。
+
+### <a name="can-i-access-the-code-and-configurations-for-regulatory-features-prior-to-a-release"></a>リリース前に、規制の機能のコードとコンフィギュレーションにアクセスできますか ?
+はい、コードは **ソフトウェア配置可能パッケージ** にある共有資産ライブラリの LCS プロジェクト **PEAP 資産** で利用可能です。  PEAP プログラムにログインするには、[Finance and Operations アプリケーションの早期アクセスプログラムのプレビュー](https://aka.ms/peap) を完了します。 
+
+構成はグローバル リポジトリで利用可能です。 詳細については、[ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする](../../dev-itpro/analytics/er-download-configurations-global-repo.md)を参照してください。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

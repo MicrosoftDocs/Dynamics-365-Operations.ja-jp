@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 141573
 ms.assetid: 045bb979-989f-4f72-9eb1-6b963680b65e
 ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d28136c9baa882c9503c2643d6d64c508f20ce2a3d59ab6863b2a41d20943a30
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4d24f73e2f2745d5f66f2df7be1a2664c66f4236
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749893"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781574"
 ---
 # <a name="create-windows-installers-for-payment-connectors"></a>支払コネクタ用の Windows インストーラーの作成
 

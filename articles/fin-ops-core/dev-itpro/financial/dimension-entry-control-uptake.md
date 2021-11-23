@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25551
 ms.assetid: dbc5c0af-ae97-463e-b5ff-9bfd242529ff
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6ee8a22c126ec672de9d6d82799a606f935882aa956122566c44ef4cdf0597c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5f41baed40d694ca448de5d27b94a018ca386b7e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729023"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782899"
 ---
 # <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 

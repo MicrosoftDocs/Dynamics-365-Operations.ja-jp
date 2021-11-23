@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7a57903e983fb6ee8742c604b9eaf42ec1b05e56a8e3c711d21da743236347bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e0ea58d1cc41667e4a1d227d19b45f64f71d3114
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712754"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783082"
 ---
 # <a name="deploy-payment-connectors"></a>支払コネクタの配置
 

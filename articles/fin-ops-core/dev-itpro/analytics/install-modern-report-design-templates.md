@@ -2,7 +2,7 @@
 title: 現代レポートのデザイン テンプレートのインストール
 description: このトピックでは、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。
 author: RichdiMSFT
-ms.date: 01/12/2018
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56834ad6b40fbb683b33a317e9eaaeaf5b3d8271b9a256d6f8f78d8dcae42da5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 970d1a56749ac573b0da0095738cd11b0996cd25
+ms.sourcegitcommit: 2949636d2fd6aea8507e102379cf9b1a188e4529
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767743"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7650937"
 ---
 # <a name="install-modern-report-design-templates"></a>現代レポートのデザイン テンプレートのインストール
 
@@ -63,7 +63,7 @@ ms.locfileid: "6767743"
     ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
     ```
 
-3. **J:\\AOSService\\PackagesLocalDirectory\\bin** フォルダーに移動します。
+3. **<AOSservicedrive>:\\AOSService\\PackagesLocalDirectory\\bin** フォルダーに移動します。
 4. 次のコマンドを実行します。
 
     ```Console

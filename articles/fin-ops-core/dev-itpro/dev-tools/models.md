@@ -5,19 +5,19 @@ author: jorisdg
 ms.date: 02/07/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83351
 ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33ff3c7f44d61a2e642afcf72783bf04d5b8535165359a7416f1f7a64e0aa29e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15aa348ec669ac4b6837bcd3974b7ef9360d2958
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727447"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783176"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 

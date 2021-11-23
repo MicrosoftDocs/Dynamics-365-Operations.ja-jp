@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 5d16c77b037a1496665db7ac067254c713f3c24ec81af63353cb5819221398f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5dfdf092b1dc0c859f10f69258422bd77d26423
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758356"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781132"
 ---
 # <a name="run-the-point-of-sale-pos-samples"></a>販売時点管理 (POS) サンプルを実行
 

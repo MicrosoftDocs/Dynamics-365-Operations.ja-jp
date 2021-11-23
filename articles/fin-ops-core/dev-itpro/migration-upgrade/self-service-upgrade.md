@@ -2,7 +2,7 @@
 title: 最新バージョンへのセルフサービス アップグレード
 description: このトピックでは、Finance and Operations の最新の更新プログラムに移行するためのプロセスについて説明します。
 author: laneswenka
-ms.date: 02/20/2020
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,20 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 5d17e34190b5d88681adf6901ed022e943cda394edb04fe5f5a37ccdd2ba49b2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13d5358aba9e2196ffe948a0beb8cc07a8a7df01
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777356"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777853"
 ---
 # <a name="self-service-upgrade-to-the-latest-version"></a>最新バージョンへのセルフサービス アップグレード
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
+> ここで説明されているプロセスは、Finance and Operations アプリの古いバージョンと最新バージョン間のデータ更新では非推奨となりました。 Dynamic AX 2012 アップグレードの詳細については、[AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md)を参照してください。
+>
 > このトピックは、次の開始バージョンに適用されます:
 >
 > - Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) (バージョン 7.1 とも呼ばれます)

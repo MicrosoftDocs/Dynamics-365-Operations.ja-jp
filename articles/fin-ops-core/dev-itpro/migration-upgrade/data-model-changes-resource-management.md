@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 202281
 ms.assetid: 46d23d3e-b5ef-43a7-ae9d-a1e202cc8abc
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 41472e4d846ee9ae37207650ffaeef1d48dfd7f1866f0d4f49c7a43ce67c6763
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 918666b480d212e6a36da1199161ae2efad9f493
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729724"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781158"
 ---
 # <a name="project-resource-scheduling-data-model"></a>プロジェクト リソースのスケジューリング データ モデル
 

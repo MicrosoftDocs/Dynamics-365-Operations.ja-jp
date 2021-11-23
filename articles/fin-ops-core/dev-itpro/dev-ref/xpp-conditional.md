@@ -4,17 +4,17 @@ description: このトピックでは、X++の条件付きステートメント�
 author: RobinARH
 ms.date: 06/17/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc284d3acb32206b0b869bfcdf04542cd6b83f4d4086da23ab37d7ed4cd4a693
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7fc9e8d32edd348e92f23c873b2baf7f42eb909e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763476"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781306"
 ---
 # <a name="x-conditional-statements"></a>X++ 条件付きステートメント
 

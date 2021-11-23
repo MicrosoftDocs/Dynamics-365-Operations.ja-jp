@@ -1,24 +1,24 @@
 ---
 title: サーバー側の開発 (ワークスペース X++ API)
 description: このトピックでは、携帯電話アプリをサポートするプラットフォームについて説明します。このプラットフォームは、充実したオフラインおよびモバイルの相互関係、および使いやすいデザイナー エクスペリエンスを提供します。
-author: robinarh
+author: tonyafehr
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 255544
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: aaf2715729a67b15be7e591364bece366dfd02cfc505160db8f6309a53e44da8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4305eaa8d1b5a0587f8a9b3ab5935e42550932a5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754983"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782166"
 ---
 # <a name="server-side-development-workspace-x-apis"></a>サーバー側の開発 (ワークスペース X++ API)
 

@@ -2,7 +2,7 @@
 title: Finance ホーム ページ
 description: このトピックでは、Microsoft Dynamics 365 Finance の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。
 author: roschlom
-ms.date: 08/18/2021
+ms.date: 11/04/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad6c671dd48ff482caf1b24a3842d8db0064dc18
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 13a5e12c7ea45ff343a5c7ae14b8ed5a030aabf5
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394566"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753724"
 ---
 # <a name="finance-home-page"></a>Finance ホーム ページ
 
@@ -41,12 +41,10 @@ ms.locfileid: "7394566"
         - [原価会計](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [経費管理](/dynamics365/project-operations/prod-exp/expense-management)
         - [財務諸表](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [固定資産](fixed-assets/fixed-assets.md)
         - [Finance Insights](finance-insights/finance-insights-home-page.md)
         - [一般会計と財務諸表](general-ledger/general-ledger.md) 
-        - [プロジェクト管理と会計](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [公的機関](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -66,13 +64,21 @@ ms.locfileid: "7394566"
 
 ### <a name="countryregion-functionality"></a>国/地域の機能
 
-それぞれの国や地域における法規は、税金の設定や財務管理のその他の領域に影響があります。 特定の国や地域に固有の機能については、ヘルプ コンテンツにある [ローカライズと規制の機能](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) のセクションを参照してください。
+それぞれの国や地域における法規は、税金の設定や財務管理のその他の領域に影響があります。 特定の国や地域に固有の機能については、[ローカライズと規制の機能](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) を参照してください。
 
 ### <a name="additional-content"></a>追加のコンテンツ
 
-Supply Chain Management 機能は、企業が購買する商品やサービスの要求、注文、入荷、請求、支払を含む、仕入から支払プロセスの一部をカバーします。 購買、在庫、製造の管理機能に関する情報は、[Supply Chain Management のホームぺージ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md)を参照してください。
+Supply Chain Management 機能は調達から支払いまでのプロセスの部分に対応し、以下を含みます。
 
-## <a name="elearning-courses"></a>eLearning コース
+   - 要求
+   - 注文 
+   - 入荷
+   - 請求
+   - 組織が購入した商品やサービスに対する支払い 
+    
+購買、在庫、製造の管理機能に関する情報は、[Supply Chain Management のホーム ページ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) を参照してください。
+
+## <a name="elearning-courses"></a>eラーニング コース
 
 オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Finance](/learn/browse/?products=dynamics-finance&resource_type=learning+path) をご確認ください。
 

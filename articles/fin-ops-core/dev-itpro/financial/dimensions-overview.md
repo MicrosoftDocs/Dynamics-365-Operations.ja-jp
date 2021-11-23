@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom:
 - "11314"
 - intro-internal
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ddbae9769579087f3ce473f0902285b1b19a83b8226004576eb1e12cac78f22
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd5cc57fe15f1e4a0bc528bc7317c176023fd5c6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729017"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782895"
 ---
 # <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 

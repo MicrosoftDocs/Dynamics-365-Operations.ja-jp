@@ -16,17 +16,16 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4cea0aa61ba8f0b19b6bbb1dffd53cb3556ccaa4
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 45640244dc72d00e21cf08205f325f0fbae0504a
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472135"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675065"
 ---
 # <a name="configure-install-and-activate-modern-pos-mpos"></a>Modern POS (MPOS) のインストール、構成、有効化
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、さまざまなプラットフォームで Modern POS を構成、ダウンロード、インストールする方法について説明します。 このトピックは、レガシ セルフサービス インストーラーに基づいています。 シールされたセルフサービス インストーラーの詳細については、[シールされた Commerce セルフサービス コンポーネントの一括配置](dev-itpro/Enhanced-Mass-Deployment.md) を参照してください。 デバイスの有効化を通じて Modern POS を有効化する方法について説明します。
 

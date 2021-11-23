@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 97ff29e6a9ad7c7073016de6bf5dc874931aac6318120bbdf560485ec2a28825
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db20ddfb01278d83f77649411e894d2039e0b6a0
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760004"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782459"
 ---
 # <a name="add-indexes-to-tables-through-extension"></a>拡張機能を使用してテーブルにインデックスを追加
 

@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 03c5b79c3c707cb99b686c543da3a1200428f685e3ae7ad9ba690a991ebadb14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db0f780d32215e04e80ae634b1cc3a451088b8c1
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765894"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783086"
 ---
 # <a name="development-in-cloud-hosted-environments-without-admin-access"></a>管理者のアクセス権を使用しないクラウド ホスト環境での開発
 

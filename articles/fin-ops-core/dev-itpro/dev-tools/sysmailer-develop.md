@@ -5,18 +5,18 @@ author: ChrisGarty
 ms.date: 05/23/2018
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 270774
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 2be67d0136935513ecf24d7bb9df585eee3cabffc487d9cc04ac2491a011f7d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c82c919769c83d3aef793f1d1bc93e385cb130eb
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718265"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781899"
 ---
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 

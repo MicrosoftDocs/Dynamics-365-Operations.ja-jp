@@ -2,24 +2,24 @@
 title: コード署名証明書を使用して MPOS に署名する
 description: このトピックでは、コード署名証明書を使用して MPOS に署名する方法について説明します。
 author: mugunthanm
-ms.date: 12/03/2020
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0816bd0f5bac9f358931c259b81ef5a0ffbedc06126a61e179ff4030d58ff29e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0bf4454029029438bf51d76e0edc6d64399083ae
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719515"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782980"
 ---
 # <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>コード署名証明書を使用した MPOS appx の署名
 
@@ -37,6 +37,9 @@ Modern POS (MPOS) をインストールするには、信頼されたプロバ�
 - 拇印を使用してストア内の証明書を検索し、その証明書でサインインします。
 
 ## <a name="use-a-secure-file-task-for-universal-windows-platform-app-signing"></a>Universal Windows Platform アプリの署名にセキュリティで保護されたファイル タスクを使用する
+
+> [!NOTE]
+> Azure Key Vault を使用して証明書を格納し、Azure 署名ツールを使用して Modern POS .appx ファイルおよびセルフサービス インストーラーに署名することもできます。 サンプルのパイプライン スクリプトと追加情報については、[Azure DevOps でビルド パイプラインを設定して Retail セルフサービス パッケージを生成する](build-pipeline.md#set-up-a-build-pipeline-in-azure-devops-to-generate-retail-self-service-packages)を参照してください。
 
 セキュリティで保護されたファイル タスクの使用は、Universal Windows Platform (UWP) アプリの署名に推奨される方法です。 パッケージ署名の詳細については、[パッケージ署名の構成](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing)を参照してください。 このプロセスを次の図に示します。
 
@@ -80,6 +83,9 @@ Modern POS (MPOS) をインストールするには、信頼されたプロバ�
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
     ```
+ 
+証明書の拇印を取得する方法の詳細については、[証明書の印刷を取得する](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint)を参照してください。 
+
  
 ## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app-manually-using-msbuild-in-sdk"></a>SDK の msbuild を使用して手動で MPOS アプリに署名する証明書をダウンロードまたは生成する
 
@@ -137,7 +143,7 @@ Modern POS (MPOS) をインストールするには、信頼されたプロバ�
  
 - 新しい信頼される証明書 (または新しい自己署名の証明書) を使用する場合、すべてのデバイスに新しい証明書をインストールする必要があります。 その後、新しく作成された Modern POS のパッケージ (インストーラー) を使用して、既存のアプリケーションをアンインストールし、新しい Modern POS パッケージを再インストールする必要があります。 すべてのデバイスで Modern POS のデバイスの有効化を実行する必要があります。
 
-- 更新された Contoso 証明書を使用している場合、すべてのデバイスに新しい証明書をインストールして、Modern POS パッケージ (インストーラー) をインストールする必要があります。 アンインストールする必要はありませんが、デバイスに再インストールする必要があります。 Modern POS のデバイスの有効化は必須ではないことに注意してください。 このオプションは一時的なソリューションです。 新しい信頼される証明書を取得する前にこのオプションを使用するだけで最有効化を回避し、問題を解決することができます。
+- 更新された Contoso 証明書を使用する場合、すべてのデバイスに新しい証明書をインストールして、Modern POS パッケージ (インストーラー) をインストールする必要があります。 アンインストールする必要はありませんが、デバイスに再インストールする必要があります。 Modern POS のデバイスの有効化は必須ではないことに注意してください。 このオプションは一時的なソリューションです。 新しい信頼される証明書を取得する前にこのオプションを使用するだけで最有効化を回避し、問題を解決することができます。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

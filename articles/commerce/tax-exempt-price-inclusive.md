@@ -1,7 +1,7 @@
 ---
 title: 非課税の計算
 description: このトピックでは、販売時点管理 (POS) およびコール センターでの非課税計算の機能について説明します。
-author: rubendel
+author: BrianShook
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: d52411557164f39b7f96568ef03067075e5ecafa7ed70f2f19c9bfcf5453bee5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 691ad18e908a37819ce8c4aaefa25ec7ac1628a3
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718661"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779441"
 ---
 # <a name="calculation-of-tax-exemption"></a>非課税の計算
 

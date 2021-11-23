@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ddf7283bf4fd1f8ced5e2cac11f1c20f734bc91548910d7fe9d29f8d6a1be776
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2cb5d1c34d37899254811f22e77571fbb330fb7c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767100"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781933"
 ---
 # <a name="process-automation-framework-development"></a>プロセスの自動化のフレームワークの開発
 

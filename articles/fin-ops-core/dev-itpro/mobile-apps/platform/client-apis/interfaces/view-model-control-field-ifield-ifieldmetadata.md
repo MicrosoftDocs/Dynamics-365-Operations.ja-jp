@@ -1,18 +1,18 @@
 ---
 title: FieldMetadata タイプ
 description: フィールド メタデータのインターフェイス。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 46e7354b20912639984b810e1406c39021f54e6ea5f4c2c63b28ce1c96421e75
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: dd5af9ac7fc2b0bb4bf03f0a689174aa75bb379e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750530"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781871"
 ---
 # <a name="fieldmetadata-type"></a>FieldMetadata タイプ
 

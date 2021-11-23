@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52f7343882224a7379cf4657f839641d6710a5597104d06d0cbc97cd5d0f2166
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b3c8be8640bcddbed4780ce34f2c3bdadcf4fdb5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729013"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782719"
 ---
 # <a name="extend-the-person-search-report"></a>個人検索レポートの拡張
 

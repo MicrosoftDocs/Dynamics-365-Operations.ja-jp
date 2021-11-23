@@ -5,17 +5,17 @@ author: RobinARH
 ms.date: 12/01/2019
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e55070660c76c1bdc6e6a063a1ff210d6669dbde
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 288789d63b5582073ec636bdb796987cded214a9
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595133"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781490"
 ---
 # <a name="task-recorder-quick-reference"></a>タスク レコーダーのクイック リファレンス
 

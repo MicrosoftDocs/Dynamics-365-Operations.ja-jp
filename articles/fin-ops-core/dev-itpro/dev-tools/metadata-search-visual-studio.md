@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83303
 ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19a3b65b5b0c6a8632454159783eabb1d0b5a6ab68e88900306258a0755bc788
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9dca75c96b74cc73c770f6a0653ec06796193591
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770787"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783036"
 ---
 # <a name="metadata-search-in-visual-studio"></a>Visual Studio でのメタデータの検索
 

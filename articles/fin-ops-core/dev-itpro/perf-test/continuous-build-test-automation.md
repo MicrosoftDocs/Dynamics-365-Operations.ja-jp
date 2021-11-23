@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 13171
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47b5fcdf7bf31c3867a8420590d433dbf3d90260d994d95e0423ab0bb5b894cf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d4c3355dc23c628292e6c369b08040d3c7894f64
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768389"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781148"
 ---
 # <a name="deploy-and-use-a-continuous-build-and-test-automation-environment"></a>継続的なビルドおよびテストの自動化環境の配置と使用
 

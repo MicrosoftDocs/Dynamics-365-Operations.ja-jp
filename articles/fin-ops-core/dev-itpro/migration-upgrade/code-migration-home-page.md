@@ -10,15 +10,15 @@ audience: Developer
 ms.reviewer: sericks
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1501fe19adf60acf66f86e7ee8c67587fbbcc962ee30b98084cd27e1a0f16b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d73c7b8995ba3f60e740c05c6f181dd5979449a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759207"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782934"
 ---
 # <a name="code-migration-and-upgrade-home-page"></a>コードの移行とホーム ページのアップグレード
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 91363
 ms.assetid: 6be04fc8-5e2b-4ea6-b9bc-940fb5b811e5
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a01b2af61267bde2a83a05c6434253fb976459916604258b26e13c6a29c55f74
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b271dd2b52ce1f490cdc6f92d9d98c06eb3c08e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758178"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782891"
 ---
 # <a name="financial-dimension-configuration"></a>財務分析コードのコンフィギュレーション
 

@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c71719da6d316b55893ad99458c59ab946fcdb522c76aa58222332a25e178e42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5ea0577a745512dbe6a53e397ef45765df47c642
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763450"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783008"
 ---
 # <a name="customize-the-user-interface"></a>ユーザー インターフェイスのカスタマイズ
 

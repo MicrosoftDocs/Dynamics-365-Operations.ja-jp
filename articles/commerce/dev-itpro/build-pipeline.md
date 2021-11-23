@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 05/17/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 05-17-2020
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 33efabaa86e0a7a4a80ef32bb5de9a04459a8cabc800738fab3a18a2aa46fc89
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1e51109d1e8ca8901e4aa50aac8fb5ff0bc4b54f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730967"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782922"
 ---
 # <a name="set-up-a-build-pipeline-for-the-independent-packaging-sdk"></a>独立したパッケージ SDK のビルド パイプラインの設定
 
@@ -44,7 +44,7 @@ ms.locfileid: "6730967"
     > YAML ファイルはリポジトリのソリューション ファイルを検索し、ソリューションを構築して、CloudScaleUnitExtensionPackage.zip パッケージを検索します。 したがって、拡張機能プロジェクトと梱包プロジェクトがソリューションにリンクされている必要があります。 拡張プロジェクトをモデル化する方法については、[Dynamics365Commerce.ScaleUnit GitHub リポジトリ](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.29) のサンプルを参照します。
 
 7. 変更を保存し、キューにビルドを追加します。
-8. ビルドが完了すると、**公開済みアーティファクト** から **CloudScaleUnitExtensionPackage.zip** パッケージをダウンロードできます。
+8. ビルドが完了すると、**公開済みアーティファクト** から **ScaleUnitPackage_(Build.BuildNumber).zip** パッケージをダウンロードできます。
 
 ## <a name="set-up-a-release-pipeline-for-the-cloud-scale-unit-extension-package"></a>Cloud Scale Unit 拡張パッケージのリリース パイプラインを設定
 

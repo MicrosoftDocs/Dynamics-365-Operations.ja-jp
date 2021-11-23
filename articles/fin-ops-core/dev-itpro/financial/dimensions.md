@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 13461
 ms.assetid: c2431895-0751-4a2a-96cb-f7df76c88f66
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a78e9214f1123af436a98908d37d4579cc5ca1a1fbeb4284b9d32626fa9319c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88994dc2ccc4828c5f6df6643f4216e2e0ebbe7d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729015"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783014"
 ---
 # <a name="support-for-different-dimension-patterns"></a>異なるディメンション パターンをサポート
 

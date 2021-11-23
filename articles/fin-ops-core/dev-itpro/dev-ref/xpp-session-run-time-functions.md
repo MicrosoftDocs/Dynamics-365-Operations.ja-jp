@@ -4,17 +4,17 @@ description: このトピックでは、セッション ランタイム関数に
 author: RobinARH
 ms.date: 06/20/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6362b9217d7223e15adee6832e0b5988b0b02b75e5e4b5f27de9b2370ae80086
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2eb96254b0812578ff418b5c501c3b01bde503d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736264"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783226"
 ---
 # <a name="x-session-runtime-functions"></a>X++ セッション ランタイム関数
 

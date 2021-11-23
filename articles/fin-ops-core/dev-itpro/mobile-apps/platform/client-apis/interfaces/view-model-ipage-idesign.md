@@ -1,18 +1,18 @@
 ---
 title: Design タイプ
 description: デザイン オブジェクトの種類。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: b7b4f8e9515833e3d41e226ba9bac1c77bc228bda90898d7978df5ab7511938b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 4e1caec97c7895a4c8953d04f233dfc2312957ad
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765076"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782861"
 ---
 # <a name="design-type"></a>Design タイプ
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26961
 ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c22b8ede9d3b06e53ba86866acccc2adab08f0c351e0dc66bb76ee336c90a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 762a0cc41099d1ea572c9252c51cadffd9d1edde
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713874"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783030"
 ---
 # <a name="customize-through-extension-and-overlayering"></a>拡張機能およびオーバーレイによるカスタマイズ
 

@@ -1,18 +1,18 @@
 ---
 title: ハイパーリンク モジュール
 description: ハイパーリンク コントロールは、ハイパーリンクを示すコントロールです。 ほとんどの場合、Pagelinks も使用できます。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 443fa9057609f98f77a95a42d0bed5b6bd8fab7a565fe332628294f526f8e576
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 8a5a89f062d1fae5b28bdcebe8e4a8d5f1bf3909
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747221"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783360"
 ---
 # <a name="hyperlink-module"></a>ハイパーリンク モジュール
 

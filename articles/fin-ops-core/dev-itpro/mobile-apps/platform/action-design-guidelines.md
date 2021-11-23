@@ -1,21 +1,21 @@
 ---
 title: アクション デザインのガイドライン
 description: このトピックでは、モバイル アプリのアクション デザインのガイドラインを提供します。
-author: robinarh
+author: tonyafehr
 ms.date: 09/17/2019
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: ec5eb468381d84ec3f32720dc85770f6fface2cf
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 7635f33761293977dbde3ce741b325ed93075122
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594672"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781885"
 ---
 # <a name="action-design-guidelines"></a>アクション デザインのガイドライン
 

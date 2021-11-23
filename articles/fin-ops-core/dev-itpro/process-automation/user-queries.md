@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a247ce22fbaed2657d52923fa8982b82755b1e033cbba14b7993237afb7ffbfd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 212a0f78b4d3f5988e7a3ef96286894ae007fe9d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738498"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781634"
 ---
 # <a name="user-configurable-queries"></a>構成可能なユーザーのクエリ
 

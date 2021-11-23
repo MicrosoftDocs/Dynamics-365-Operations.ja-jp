@@ -1,18 +1,18 @@
 ---
 title: マルチ参照モジュール
 description: 複数ルックアップ コントロールは、一度に複数選択できる点を除いて通常のルックアップに似ています。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 03c4b8c77d51213953eb1937030c7597be18dd286bafe647f50f64306b502511
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: d3ddd15691794ffd56db35d418edca1ca5708718
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730551"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783168"
 ---
 # <a name="multi-lookup-module"></a>マルチ参照モジュール
 

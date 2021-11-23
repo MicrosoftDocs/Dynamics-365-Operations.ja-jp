@@ -5,19 +5,19 @@ author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26421
 ms.assetid: b41f6fc4-7883-4987-8160-374576b11d16
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3235aaca0852a02067de964b32afd4a1cc926b4b
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: f3f425f5a183ff87a46872d698f5d8d455368eef
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404185"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781084"
 ---
 # <a name="design-principles-and-best-practices-for-data-entities"></a>データ エンティティに関する設計原則とベスト プラクティス
 

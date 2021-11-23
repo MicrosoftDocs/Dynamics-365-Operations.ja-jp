@@ -5,18 +5,18 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 1915417ec8b827644c3bf8b174c0702bdf281f5b2c307f2a4481614b3b4139a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 818c1d4c0879bdb7f1fc75bb62d31658a05d6763
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760862"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781484"
 ---
 # <a name="getting-started-with-pos-extensions"></a>POS 拡張機能の使用を開始する
 

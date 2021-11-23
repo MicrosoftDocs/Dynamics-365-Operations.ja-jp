@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 33221
 ms.assetid: f39dbe39-7dc3-463c-923e-f22af231b979
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76f10d6e1441557514e1769ab8eb47108023a13b3c1153e0347b2b881be471b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 07765c3f17163398f8ffcef8e1fc76e235273174
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740247"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782033"
 ---
 # <a name="development-system-requirements"></a>開発システム要件
 

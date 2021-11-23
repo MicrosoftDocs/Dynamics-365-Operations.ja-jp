@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 27191
 ms.assetid: 64b8f266-a9e1-48ee-93c7-e082f21ddfa7
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52aae4f2f6a4cc27b662a16ed6710c74417372232bd7df88708e6772decdf2e9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5842214614ec1c78cf31a7d27174d11fb8781d1d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733105"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782701"
 ---
 # <a name="performance-timer"></a>パフォーマンス タイマー
 

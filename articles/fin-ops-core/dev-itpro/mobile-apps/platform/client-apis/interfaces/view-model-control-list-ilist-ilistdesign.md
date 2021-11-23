@@ -1,18 +1,18 @@
 ---
 title: ListDesign タイプ
 description: リスト デザイン オブジェクトの種類。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: ed96668acedb659b64cb8478008ae6b206dbec456291eb37871d1567ff658851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 610bfb7662813a8c645240f7f0c1e369bc67ac23
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759966"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781867"
 ---
 # <a name="listdesign-type"></a>ListDesign タイプ
 

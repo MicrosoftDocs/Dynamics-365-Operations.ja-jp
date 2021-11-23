@@ -5,19 +5,19 @@ author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26731
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f49a8a8569b857a5163cb1365d2a574104faa18c4af24a3d7497bd70f3aa4645
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bdd14d2d805d1f718a60bf87627c81637a62b933
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712295"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783182"
 ---
 # <a name="build-automation-that-uses-microsoft-hosted-agents-and-azure-pipelines"></a>Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25631
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 ms.search.region: Global
 ms.author: markskun
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: AX 10.0.4
-ms.openlocfilehash: 85e29a71c28b89df98b412f02eb3a964b3e39bd9
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 1866ea3f54c6f7caef555824326f2fefdb9560ed
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404018"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782885"
 ---
 # <a name="settle-transactions-by-using-custtranssettletransaction"></a>CustTrans::settleTransaction を使用したトランザクションの決済
 

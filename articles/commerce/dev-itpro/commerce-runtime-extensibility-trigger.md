@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 17731
 ms.assetid: 2d6ec331-b266-4dbc-97c5-db2919b662dc
 ms.search.region: Global
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b8925f802b54bdb62448ec220558d3418d00c2bf
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: f267fbf5527af2da0adda56adc5e467bf1476cd1
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595167"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781576"
 ---
 # <a name="commerce-runtime-crt-extensibility-and-triggers"></a>Commerce Rumtime (CRT) の拡張機能とトリガー
 

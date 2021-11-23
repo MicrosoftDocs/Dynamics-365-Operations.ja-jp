@@ -1,18 +1,18 @@
 ---
 title: MultiLookupMetadata タイプ
 description: 複数ルックアップ メタデータの種類。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 11de2162e0b08df01895c4ec87a3888e1448f113a24fc51b28eb44c43cb4d891
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: f08eabd63b13a167b55e6ac9d7bd7d892dfc2845
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721898"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782869"
 ---
 # <a name="multilookupmetadata-type"></a>MultiLookupMetadata タイプ
 

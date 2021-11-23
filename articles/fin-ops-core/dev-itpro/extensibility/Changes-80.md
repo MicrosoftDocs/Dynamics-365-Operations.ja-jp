@@ -7,19 +7,19 @@ ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-04-04
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 2a2b5bbeeac6506d4d080f8fbd8d046d7c3c12ac229a90573cba3fb0b1e90746
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6bb44a0d37952d745196401472cdbe93e8176a6a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739513"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782759"
 ---
 # <a name="extensibility-changes-in-the-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 の拡張機能の変更
 

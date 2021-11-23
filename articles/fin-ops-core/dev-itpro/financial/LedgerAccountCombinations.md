@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 11314
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51f659df7e4494205de2dd0805680e34cba87ecb4c2d8981a1255661d5f173dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cada442d3039b6165aed125b00b7395cbf43974b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738532"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783016"
 ---
 # <a name="ledger-account-combinations"></a>勘定科目の組み合せ
 

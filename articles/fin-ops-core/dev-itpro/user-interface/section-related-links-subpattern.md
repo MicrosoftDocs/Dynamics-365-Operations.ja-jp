@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 29331
 ms.assetid: 984d7c6b-cf0a-4056-88f3-c32c92ca3401
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b5760f9d891ef7c4835563d00f9f6d95684c1935da5c35cafab8da1c0d87c33
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0f7a1297f63d7bbc9a9f558d785b30b17cbebe2
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745096"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781252"
 ---
 # <a name="section-related-links-subpattern"></a>セクション関連リンクのサブパターン
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26031
 ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 640968da9fead7df2f5b91353d5bf92d5e950a28b8814a75f05c31533e00555f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cafcae613e2cfe477fee080a6528f7057abf938c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716010"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783148"
 ---
 # <a name="build-navigation"></a>ナビゲーションの構築
 

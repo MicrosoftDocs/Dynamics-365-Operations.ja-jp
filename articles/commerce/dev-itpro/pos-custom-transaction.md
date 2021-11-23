@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24411
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f055bdc4b997600d97c5860d30b157793920dfb1833f9a3918bd8be1be586501
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5568638d60aefb4bdcb86e51c45484ece00f4299
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746685"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781809"
 ---
 # <a name="add-custom-controls-to-modern-pos-mpos-transaction-pages"></a>Modern POS (MPOS) トランザクション ページへのカスタム コントロールの追加
 

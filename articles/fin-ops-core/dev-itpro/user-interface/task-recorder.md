@@ -6,17 +6,17 @@ ms.date: 09/11/2020
 ms.topic: article
 ms.search.form: SysTaskRecorderPane
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d178f525f0a8f1bf25f69352dacd7192e2c384e
-ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
+ms.openlocfilehash: 60b556c06b91e13554452da44cbea457a0b2f191
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2021
-ms.locfileid: "7556779"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781220"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 

@@ -2,7 +2,7 @@
 title: Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 8 月)
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 07/16/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4b30be719f15dc906ad4d8128e8a441b5afdb93e9e4dbddce2d93676a5035219
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa06e9f25865824707cf8d5a49ba61d92965d55f
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720664"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713787"
 ---
 # <a name="platform-updates-for-version-10020-of-finance-and-operations-apps-august-2021"></a>Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 8 月)
 
@@ -41,6 +41,7 @@ ms.locfileid: "6720664"
 | 機能領域   | 機能                                                  | 詳細                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
 | システム管理 | [Internet Explorer サポート終了通知](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/internet-explorer-end-of-support-notifications)| [クラウド配置のシステム要件](../../fin-ops/get-started/system-requirements.md)</br></br>[オンプレミス配置のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md) |
+| 組織管理 | [ドキュメントの添付ファイルの履歴](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/document-attachment-history) | [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md#document-attachment-history) |
 
 ## <a name="new-and-updated-documentation-resources"></a>新しいドキュメント リソースおよび更新されたドキュメント リソース
 次のヘルプ トピックが最近追加されたか大幅に更新されました。 前のセクションに示したように、このリリースで追加された新しい機能に関連するとは限りませんが、既存の機能をさらに活用するために役立つ場合があります。

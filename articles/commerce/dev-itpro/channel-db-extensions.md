@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 61c27e4458ccab22d236f9bd3d9406d6b26568ec3d9975323b64f0e0f96579a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3ccd6edd3a7af2e2a3e204b66b52537b22e2892
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764628"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781845"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 

@@ -4,17 +4,17 @@ description: このトピックでは、X++の変数について説明します�
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce54c7f72bcc15a40450c6fa145b9761fe4e6ed1
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: e7ad26f6a440adcc0ab5ba57388722b566c05c30
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463540"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783184"
 ---
 # <a name="x-variables"></a>X++ 変数
 

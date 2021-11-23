@@ -2,7 +2,7 @@
 title: 開発環境またはデモ環境でデータをアップグレードする
 description: このトピックでは、Finance and Operations アプリケーション リリースのアップグレードについて説明します。
 author: laneswenka
-ms.date: 09/09/2021
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,16 +12,19 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 12959f1561b04cc80bc7294cad15701fae3538fe
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: bce9bec9c7b33f19896c4e63fb8625f61e2cd0c9
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7487034"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778145"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 
 [!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> ここで説明されているプロセスは、Finance and Operations アプリの古いバージョンと最新バージョン間のデータ更新では非推奨となりました。 Dynamic AX 2012 アップグレードの詳細については、[AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md)を参照してください。
 
 このトピックでは、古いデータベースを最新の Finance and Operations のアプリケーション リリースにアップグレードする方法について説明します。
 

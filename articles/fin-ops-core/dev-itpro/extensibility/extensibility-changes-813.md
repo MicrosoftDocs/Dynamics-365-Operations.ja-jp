@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-12-07
 ms.dyn365.ops.version: App 8.1.3
-ms.openlocfilehash: 44e152e8b1992b548e6325f529d1c5844c916ea31fa90bb877330944dd37ae0f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3230e867314e989128837f996374021b6bc01ea7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776593"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783024"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-813"></a>Dynamics 365 for Finance and Operations バージョン 8.1.3 の拡張機能の変更
 

@@ -1,18 +1,18 @@
 ---
 title: 画像モジュール
 description: モバイル アプリ内のイメージを表すためのイメージ コントロール。 イメージは、次のいずれかの種類が使用できます&amp;58 DataUri、Base64、URL、AOTResource、または Symbol。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: f4488586e160239b8357f6a45d587f24510e7e5cd3325c5bbe85ea30b5aae40d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 861c64ec9979a52ee1e18901002c317add0b10b2
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750528"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783362"
 ---
 # <a name="image-module"></a>画像モジュール
 

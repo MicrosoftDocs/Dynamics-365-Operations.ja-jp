@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 76764
 ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aef40e0a12af9a9fd77277c490838488dfc54a12ece124825a34fc28296615ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ebb7afacde52addb57a9d154a04385a957492245
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735510"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783220"
 ---
 # <a name="build-operations"></a>ビルド操作
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83892
 ms.assetid: 210953fb-4d5a-49e6-b4db-6f31b3472789
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c73dab1769770431c6767ea3a6409b27a99c252d4aa8fbe00980c0b7ae1336fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2fd0068543eaf5e0f256b4810a4367af5fbc56af
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739549"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781478"
 ---
 # <a name="modern-pos-mpos-architecture"></a>Modern POS (MPOS) アーキテクチャ
 

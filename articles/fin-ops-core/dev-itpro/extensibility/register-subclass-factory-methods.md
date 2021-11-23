@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 8a7691659dbb58dbb899df37b76128c0d3a22b8f0735cf13639c5d777b9d722a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6799ccb51d131f4c77f34d651f39b207f150b4df
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729726"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782731"
 ---
 # <a name="register-subclasses-for-factory-methods"></a>ファクトリ メソッドのサブクラスを登録
 

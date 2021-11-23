@@ -7,19 +7,19 @@ ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 9750d4a9597ee29396a8a5c0810fb0dbe1097c551ae87b04b5f7dddfa9a78ece
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 335c33b54fd540e47bf46384081ed58eed6aa39b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754320"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783022"
 ---
 # <a name="whats-new-or-changed-for-extensibility"></a>拡張性の新機能および変更された機能
 

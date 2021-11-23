@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 943e7bc0aff10c172da7fc7b030201f8b9fcf546a3a66c6d5a9a67ac3e7a7f14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d8a4df4ad4fcbf65e59b599cb1c8dbaec0c7c0e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750524"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781216"
 ---
 # <a name="build-forms-that-fully-utilize-saved-views"></a>保存されたビューを十分に活用するフォームの作成
 

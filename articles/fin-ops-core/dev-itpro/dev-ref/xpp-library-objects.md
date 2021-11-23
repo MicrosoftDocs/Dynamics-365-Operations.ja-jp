@@ -4,17 +4,17 @@ description: このトピックでは、X++ でのクラス ライブラリに�
 author: RobinARH
 ms.date: 06/18/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b657ca5dd7d77f1a3cce59ae45237ab1e3151db38f97c5c32635a37b8cf648a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 05fed5a7b2cb87d8876654aa0c5cd4c9bedd9d39
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734680"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783190"
 ---
 # <a name="x-class-library"></a>X++ クラス ライブラリ
 

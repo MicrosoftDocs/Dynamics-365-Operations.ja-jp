@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-03-28
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 789269b1b74b564eceb58abb87948d782197a11c09ca3c05ae034b16a5681f7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8341e2c0dc36b329ad02deb6d3d228011f4a9eaf
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745394"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781719"
 ---
 # <a name="linked-refunds-of-previously-approved-and-confirmed-transactions"></a>以前に承認および確認済みのトランザクションのリンクされた払戻
 

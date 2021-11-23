@@ -5,18 +5,18 @@ author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51a4772ef23f91e8b6b1f62b8f873e961887a72c9f7837a2f895f6501819d156
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a26c1eed4b6840d650061f31e79abe729efaa69
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746569"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782938"
 ---
 # <a name="create-an-lcs-connection-in-azure-pipelines"></a>Azure Pipelines で LCS 接続を作成する
 
@@ -43,6 +43,9 @@ Azure DevOps から対話する 1 つ以上の LCS プロジェクトへのア�
 
 2. LCS web Api にアクセスするためのアクセス許可をアプリケーション登録に追加します。 [Web API にアクセスするためのアクセス許可の追加](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) の手順に従ってください。 API のアクセス許可を要求する場合は、**自分の組織で使用する API** を選択し、**Dynamics Lifecycle Services** を検索します。
 3. 使用するアカウントに、Azure AD でのアプリケーション登録に対して同意が付与されていることを確認します。 [Azure Active Directory でエンドユーザーがアプリケーションに対して同意する方法を構成する](/azure/active-directory/manage-apps/configure-user-consent) の指示に従います。 特定のユーザーを有効にするか、テナント全体に対して管理者の同意を付与する ことができます。
+4. パブリック クライアント アプリケーションとして登録を構成します。
+    1. Azure ポータルで、**アプリの登録** でアプリを選択してから、**認証** を選択します。
+    2. **詳細設定** > **パブリック クライアント フローを許可する** > **次のモバイル およびデスクトップ フローを有効にする:** で、**はい** を選択します。
 
 ## <a name="create-the-dynamics-lifecycle-services-service-connection"></a>Dynamics Lifecycle Services (LCS) へのサービス接続を作成する
 

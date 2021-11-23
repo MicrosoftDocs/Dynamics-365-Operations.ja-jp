@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 55871
 ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03f74d86f714f014151bac8ee2ad4d1db031ae24a042c2bf132d5a199d810117
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 650ff4152496cde5d61baf535fea33c62449ce7a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759958"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781630"
 ---
 # <a name="images-on-a-page-or-in-a-grid"></a>ページまたはグリッドの画像
 

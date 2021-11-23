@@ -1,7 +1,7 @@
 ---
 title: PayPal 向け Dynamics 365 Payment Connector
 description: このトピックでは、PayPal 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
-author: rubendel
+author: BrianShook
 ms.date: 05/18/2021
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3ccdfd24d09aa7fea9f52ef40904beb9b5c968b81880d60859a4b107d262d576
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e5cbe6f5c8a314ca3e0ddc3f0545cbd1b32a68ca
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737592"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779339"
 ---
 # <a name="dynamics-365-payment-connector-for-paypal"></a>PayPal 向け Dynamics 365 Payment Connector
 

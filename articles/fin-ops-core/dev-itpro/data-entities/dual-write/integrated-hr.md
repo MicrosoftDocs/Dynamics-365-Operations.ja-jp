@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 01/08/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45434a9a4c9184b2c85692df321fcc2b1335cc9d5b6ee646e0c03ce28cd2a8e7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e303734fbe6479a0b7ca1fd39a944140e76ff960
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762440"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783321"
 ---
 # <a name="integrated-worker-job-and-position"></a>作業者、職務、および職位の統合
 

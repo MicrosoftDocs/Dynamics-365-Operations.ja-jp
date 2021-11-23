@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 14721
 ms.assetid: b3d527bf-6b56-42fb-a135-493a62eb1435
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bb69ea86f376ee290a0acde8d47d3bab0ee33f58a81cd9dabcfb8fb50ba8fae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b07e690dbb8f8d07e7306dcf902a6d88cdb9f3a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737821"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781925"
 ---
 # <a name="factbox-form-patterns"></a>情報ボックスのフォーム パターン
 

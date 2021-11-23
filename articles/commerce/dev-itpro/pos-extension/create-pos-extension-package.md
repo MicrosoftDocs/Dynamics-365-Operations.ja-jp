@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 52bade7b98fe152792a637fdefb9fb69b08a49563abb5880447720133a948bc0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cbac5a0f5e54a9d64acf9784142ec9493ca9a15c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754380"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783388"
 ---
 # <a name="create-a-pos-extension-package-project"></a>POS 拡張機能パッケージ プロジェクトの作成
 

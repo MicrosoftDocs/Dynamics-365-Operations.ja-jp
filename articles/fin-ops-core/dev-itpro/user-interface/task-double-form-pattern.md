@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 14651
 ms.assetid: 9f28e5f9-efec-48c5-aaa6-b68a505c4df3
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 693f7b3bb1e7bbb6103c567a6964de571544a3c8c3d2bfa68fc36babf57a3949
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b761c4aea2ab329865171be2c9752d1de2c7b48
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740233"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782990"
 ---
 # <a name="task-double-form-pattern"></a>タスク ダブルのフォーム パターン
 

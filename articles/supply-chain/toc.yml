@@ -713,8 +713,10 @@
                   href: cost-management/inventory-close.md
                 - name: 手持在庫原価価値の調整
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: 在庫金額ストレージ レポート
+                - name: 在庫金額レポート
                   href: cost-management/inventory-value-report-storage.md
+                - name: 在庫金額レポートの例とロジック
+                  href: cost-management/inventory-value-report-examples.md
                 - name: 在庫エイジング レポート ストレージ
                   href: cost-management/inventory-aging-report-storage.md
                 - name: 在庫エイジング レポートの例とロジック
@@ -1673,6 +1675,8 @@
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: 能力に基づいたリソース選択でスケジュールする
                   href: master-planning/planning-optimization/capability-based-scheduling.md
+                - name: 優先順位に基づいた計画
+                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: 計画最適化を使用した在庫マーキング
                   href: master-planning/planning-optimization/marking.md
                 - name: 会社間計画
@@ -1719,6 +1723,8 @@
                   href: master-planning/maintain-planned-orders.md
                 - name: 品目に対する安全在庫フルフィルメント
                   href: master-planning/safety-stock-replenishment.md
+                - name: 安全在庫仕訳帳を使用して品目の最小補充を更新する
+                  href: master-planning/safety-stock-journal.md
                 - name: 遅延
                   href: master-planning/delays.md
                 - name: マスター プラン ジョブのキャンセル
@@ -2351,6 +2357,8 @@
               href: production-control/unified-job-ids.md
             - name: プロセス自動化フローを呼び出して品質指示を作成する
               href: production-control/process-automation-quality-orders.md
+            - name: サード パーティの製造実行システムと統合する
+              href: production-control/mes-integration.md
             - name: 個別製造
               items:
                 - name: 生産マスター データの管理
@@ -2649,6 +2657,8 @@
                   href: production-control/production-floor-execution-use.md
                 - name: 生産現場の実行インターフェースのスタイルを作成する
                   href: production-control/production-floor-execution-styles.md
+                - name: 生産現場の実行インターフェースをカスタマイズする
+                  href: production-control/production-floor-execution-customize.md
         - name: リベート管理
           items:
             - name: リベート管理モジュールの概要

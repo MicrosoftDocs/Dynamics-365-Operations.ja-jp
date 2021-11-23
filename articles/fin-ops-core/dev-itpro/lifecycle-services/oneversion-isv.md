@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2019-4-12
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 5680baec144c8f8ba449449d52e8e28ceb16775948916ba2e55ae645ef591526
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 164f71d9bda743685ff832acc98ed3c02bf0d0f5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759205"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782936"
 ---
 # <a name="delivering-isv-solutions-using-one-version"></a>1 つのバージョンを使用した ISV ソリューションの提供
 

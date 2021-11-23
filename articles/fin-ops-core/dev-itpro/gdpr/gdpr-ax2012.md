@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 10031
 ms.search.region: Global
 ms.author: ryanc
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6ed3f223be6d7fdc34d5e005cfbdf681cb00af33b588244a38284517d41d2f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36230d6a7344879154d8797cad6390aa70e9e496
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751471"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781074"
 ---
 # <a name="respond-to-requests-for-personal-data-in-ax-2012"></a>AX 2012 の個人データ要求への対応
 

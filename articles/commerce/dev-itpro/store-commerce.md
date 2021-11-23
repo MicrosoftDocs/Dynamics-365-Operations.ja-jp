@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 08/23/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-20-2020
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: a73e0528904e03e5c8473680ee215abe07c862ea
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: 6d2fb41c2059a949f94e6e659a3d41df19d4c45c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414598"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781901"
 ---
 # <a name="store-commerce-app-in-microsoft-dynamics-365-commerce-preview"></a>Microsoft Dynamics 365 Commerce での Store Commerce アプリ (プレビュー)
 

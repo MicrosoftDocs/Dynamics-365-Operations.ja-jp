@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 04/30/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 31751
 ms.assetid: 6a5811cc-a551-4e4d-824c-d760460b3223
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83309ad86f899ecea9680bbc26238133eee293e51cdbf69751e705ab094fc4c4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4961853eb9daad52168c143166451f0542fca3b9
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775300"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781652"
 ---
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 

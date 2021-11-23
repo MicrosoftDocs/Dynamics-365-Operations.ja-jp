@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24291
 ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee8474444a1f5fb04b7c2aeb66049718d085fde4ba2d02c9acd4c275559249fb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 677ee25c7e08a8750a81d8283239bfbb1b294efa
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730547"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783150"
 ---
 # <a name="build-extensible-controls"></a>拡張可能なコントロールの構築
 

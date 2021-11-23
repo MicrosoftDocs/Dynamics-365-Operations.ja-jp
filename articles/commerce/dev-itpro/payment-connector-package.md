@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 6f6e5aa51e0de2c85f16c2b6cff4cfb9c7471f9a894e0817268baaaee5e48ea9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74f8599b1ec1133ceac4b866fa92b76c7d1e06b5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729878"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781815"
 ---
 # <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations のデプロイのための Commerce 支払パッケージの作成
 

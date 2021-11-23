@@ -1,18 +1,18 @@
 ---
 title: 値モジュール
 description: これは、単一の値のコントロールの基本クラスです。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 8c59a87a2a3447cb7fa82dd63000c5318d35c2bf7684e620b94fcb2ad6311a21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 76429a3df169d30ef907083b17dc8c1dbf46e576
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743187"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782930"
 ---
 # <a name="value-module"></a>値モジュール
 

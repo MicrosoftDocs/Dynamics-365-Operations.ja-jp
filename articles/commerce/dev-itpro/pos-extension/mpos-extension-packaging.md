@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: f93b17a530dae3ea8a9f2feb2ea1c4ce9ad76ef2a31d0830c798c68a9cbfd17a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8aa1774c02ae8e3f824dc0acb2222fec5911ed0
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741800"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781903"
 ---
 # <a name="create-a-modern-pos-extension-package"></a>Modern POS 拡張機能パッケージの作成
 

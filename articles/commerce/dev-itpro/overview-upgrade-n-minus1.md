@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom:
 - "44351"
 - intro-internal
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: d925f67f227c4a1827e26e9bbb8c0b45af90c3f4e298db97b592b639830dbc87
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b2f8d8dcd876b57573a53f980a37ef8d4d34acc
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741127"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782641"
 ---
 # <a name="upgrade-and-n-1-support-for-commerce"></a>Commerce のアップグレードおよび N-1 のサポート
 

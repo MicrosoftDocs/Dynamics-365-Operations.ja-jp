@@ -5,19 +5,19 @@ author: peakerbl
 ms.date: 12/04/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24861
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7eee858f761bf07901183a54d23c83789a60ce85
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 9621337206ad7e52e2bb86ad00bbc5d1c844db6c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404133"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781088"
 ---
 # <a name="date-effectivity"></a>日付の有効期間
 

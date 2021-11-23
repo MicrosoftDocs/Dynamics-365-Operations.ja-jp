@@ -1,18 +1,18 @@
 ---
 title: HyperLinkDesign タイプ
 description: Hyperlink デザイン オブジェクトの種類。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 24da610348c4a0837f3ffac97e912e71b134d983d094bbc0ff9ba5aebe51e0a1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: c4cf2f66d1afd521fb4fa5e0429a857ee8a0cc49
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738530"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782705"
 ---
 # <a name="hyperlinkdesign-type"></a>HyperLinkDesign タイプ
 

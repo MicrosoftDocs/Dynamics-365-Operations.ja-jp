@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 27001
 ms.assetid: 6640ae38-58f0-4a29-abca-5acd9489d45d
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed762f4ee866771c03b43ad738d42372e4b63bb2b8c3ce2f656e78dda6f2428e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76548ef506b197e1d36cb385652fbd7ca62c4d67
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746565"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781554"
 ---
 # <a name="solve-dependencies-among-models-by-using-delegates-during-code-migration"></a>コードの移行中にデリゲートを使用してモデル間の依存関係の解決
 

@@ -5,19 +5,19 @@ author: jorisdg
 ms.date: 05/25/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26731
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41aa9c88411a6a37f0f13866fb0e83aa1603922fb9fb754e2ec89d7494f3993c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e2b22f1548a7e746e5f65b55d7207c9d9b9ca267
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763468"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782194"
 ---
 # <a name="update-model-versions-in-the-automated-build"></a>自動ビルドのモデル バージョンの更新
 

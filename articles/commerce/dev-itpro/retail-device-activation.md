@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: RetailSharedParameters, RetailDevice
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 18341
 ms.assetid: 3dc4c413-e341-4d01-bc49-dc24e35dd8a7
 ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 253690ce9bcc358f94e23133c7ab3f182c59306d3b26c0e67276f072ed14e05f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 33a515620860f6a307e197c1b9c68d14b68016be
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758352"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781128"
 ---
 # <a name="point-of-sale-pos-device-activation"></a>販売時点管理 (POS) デバイスのライセンス認証
 

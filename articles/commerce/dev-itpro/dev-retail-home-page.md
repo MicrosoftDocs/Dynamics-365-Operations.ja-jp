@@ -5,18 +5,18 @@ author: RobinARH
 ms.date: 08/26/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e5df18154a447a9a7dc40b51fe458d3e179c0c34
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: d5d68a4723472d34f0056703ae43d734efe4f660
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581805"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783245"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -128,6 +128,7 @@ ms.locfileid: "7581805"
 
 ## <a name="retail-sdk"></a>Retail SDK
 
+- [Commerce SDK への移行](retail-sdk/migrate-commerce-sdk.md)
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md)
 - [独立したパッケージ SDK のビルド パイプラインの設定](build-pipeline.md)
 - [配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)
@@ -166,6 +167,5 @@ ms.locfileid: "7581805"
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 - [支払コネクタの配置](deploy-payment-connector.md)
 - [Finance and Operations 配置用コマース支払パッケージの作成](payment-connector-package.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

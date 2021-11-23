@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 28891
 ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c56b6a627429509ad0923b04d4fb7341ec727a48e4e54b88f8d92af81877b05d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b17ce4bfc3f6fe1032820dd3f8eb66db21e6404
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765068"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782996"
 ---
 # <a name="form-styles-and-patterns"></a>フォームのスタイルとパターン
 

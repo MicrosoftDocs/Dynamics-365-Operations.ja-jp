@@ -5,17 +5,17 @@ author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b183cae97363e740850bc665bdc4cdbc145b104
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 06faab4ca06d63ba9f7bff455b7468702d2738ef
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595419"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782992"
 ---
 # <a name="tabular-fields-subpattern"></a>表形式フィールドのサブパターン
 

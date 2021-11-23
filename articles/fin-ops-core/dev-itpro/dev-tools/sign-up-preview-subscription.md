@@ -5,19 +5,19 @@ author: RobinARH
 ms.date: 12/16/2020
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adbd9a0413e093f48b7048decb16c237298f09a882035d5d1947434bdf6d2904
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13fdc61a1409100df855815e09dc90972c877e0e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754328"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782196"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 

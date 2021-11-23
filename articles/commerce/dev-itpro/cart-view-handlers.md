@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: a95605f6069549eae7789250b3e18aca525b5217b75e895fa21f0afe73ab840b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d118605d8a841bfc8a01e622c84c230bbf505f9e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765358"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782441"
 ---
 # <a name="pos-cart-view-events-and-handlers"></a>POS カートのビュー イベントとハンドラー
 

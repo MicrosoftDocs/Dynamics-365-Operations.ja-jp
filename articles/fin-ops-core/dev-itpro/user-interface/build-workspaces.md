@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 27111
 ms.assetid: b8ddf156-eb7c-4010-95bd-16754cb1e122
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b243cfdca378b11bb4ac416d7de8a31834d2af8a9591cdbbe43251a9533ae2ee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ce08b4fe9a43687ce716c3b66cd013ef56854c2c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721892"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783144"
 ---
 # <a name="build-operational-workspaces"></a>運用ワークスペースの構築
 

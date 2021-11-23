@@ -1,18 +1,18 @@
 ---
 title: コンテナー モジュール
 description: コンテナー コントロールは、コントロールの任意の数を含めることができます。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: bf320b0110a6270d5cec1580e52a0f8a59cbd694614e554339ccfb8b9e7f720d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 44734b20f3e465967d36f6293e37dc835bb7a77c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735482"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783364"
 ---
 # <a name="container-module-client-apis"></a>コンテナー モジュール (クライアント API)
 

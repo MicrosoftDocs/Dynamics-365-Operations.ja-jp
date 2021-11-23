@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 592164eab666faa2b1d2696dd949da57745099a058bafba644d9fd29cf602d84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c0c2c61c27c3704dc200cd0701f951fa53eb800
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715470"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782826"
 ---
 # <a name="localize-commerce-extension-resources-and-label-files"></a>コマース拡張リソースおよびラベル ファイルのローカライズ
 

@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25591
 ms.assetid: b8c5d7a4-ee2b-4ab1-b042-88472b97f035
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 61e084aa0eac6facfac12393c24be713bf9d66cf1f3b0ed8d814e4da8bb946e3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4543ee7e4ddfe9b7b9104afb06addc597316e04c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759211"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782889"
 ---
 # <a name="design-time-metadata-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールのためのデザイン時メタデータ
 
