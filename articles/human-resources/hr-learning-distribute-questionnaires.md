@@ -1,8 +1,8 @@
 ---
-title: アンケートの配布とスケジューリング
-description: この記事は、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。
-author: andreabichsel
-ms.date: 04/04/2017
+title: アンケートの配布およびスケジューリング
+description: このトピックは、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.scope: Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60354a3e7fed5403321d5ec4440cece84b13233bef80fcd5c5f61d72e5e3aa85
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a13f699c8c0951b32f7826e8cfe8d7dcf02a7f55
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755518"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729006"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>アンケートの配布とスケジューリング
+# <a name="distribute-and-schedule-questionnaires"></a>アンケートの配布およびスケジューリング
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-この記事は、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。 
+このトピックは、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。 
 
 アンケートを配布する複数の方法があります。
 
--   アンケートを有効としてマークします。 アクセスを制限するようにアンケート グループが設定されていない限り、すべての従業員がアンケートを使用できます。
+-   アンケートを **有効** としてマークします。 アクセスを制限するようにアンケート グループが設定されていない限り、すべての従業員がアンケートを使用できます。
 -   アンケート グループへ権限を割り当てます。 その後、アンケートは選択したグループのすべてのメンバーが使用できます。
 -   計画済回答セッションを作成します。 その後、特定の人だけがアンケートを使用できます。
 -   スケジュールを作成する。 その後、アンケートは複数のユーザーが使用できます。

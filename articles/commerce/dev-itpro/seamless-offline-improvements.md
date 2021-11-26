@@ -1,7 +1,7 @@
 ---
 title: ギフト カードとクレジット メモ操作のシームレスなオフライン切り替え
 description: このトピックでは、特定の支払タイプに対してシームレスなオフライン切り替えを提供する改善の概要について説明します。
-author: rubendel
+author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 515b8f6574f912440a99c55f70b0e66651c6ccf2ffaedd2456d87f4e799f8aac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731694"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779495"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>ギフト カードとクレジット メモ操作のシームレスなオフライン切り替え
 

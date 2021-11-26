@@ -1,8 +1,8 @@
 ---
 title: 支払方法
 description: 小売業者が受け入れる各支払タイプは、システムの設定時にコンフィギュレーションする必要があります。 この記事では、設定可能な支払タイプおよびその設定方法について説明します。
-author: rubencdelgado
-ms.date: 06/17/2020
+author: BrianShook
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c174dd136cecedc9b23bdaa778885f75e51c9aa556a9e2709bc7da171faa8617
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713969"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779573"
 ---
 # <a name="payment-methods"></a>支払方法
 
@@ -47,5 +47,10 @@ ms.locfileid: "6713969"
 3. 店舗の支払方法を設定。 支払方法を各店舗に関連付けて、各支払方法の店舗固有の設定を入力します。
 4. 店舗のカード支払方法の設定。 店舗で受け入れるカード支払方法について、カードの設定を行います。
 
+## <a name="handle-change-tendering-for-payment-methods"></a>支払方法に対する釣銭支払/入金の処理
+
+一部の支払方法では、販売時点管理トランザクションで顧客へ釣りを払う必要がある場合に、釣銭支払/入金をサポートできない場合があります。 支払/入金変更には、**現金** および **通貨** の支払方法のみを使用できます。 
+
+トランザクション中に釣銭支払/入金が必要なのにその支払方法がサポートされていない場合、**釣銭支払/入金** 方法を定義できます。 店舗の支払方法を設定する際に、使用する支払方法を選択します。 次に、**釣銭** セクションの **釣銭支払/入金** フィールド に、釣銭支払/入金オプションを入力します。 たとえば、現金を釣銭支払/入金オプションとして使用できるよう指定するために **1** と入力できます。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678838"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778160"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Dynamics 365 Supply Chain Management 10.0.22 (2021 年 11 月) の新機能および変更された機能
 
@@ -41,7 +41,6 @@ ms.locfileid: "7678838"
 
 | モジュール | 機能管理の機能名 | 詳細 |
 |---|---|---|
-| 原価管理 | 標準原価丸め再評価の関連伝票の作成 | <p>在庫財務転記 (販売注文請求書や在庫トランザクションなど) を作成すると、この機能によって、関連する標準原価の丸め再評価用の別の伝票が作成され、それを関連する伝票として財務転記伝票に関連付けられます。</p><p>この機能がない場合は、同じ伝票転記の標準原価丸め再評価が記録されます。 再評価ではセッションまたはシステムの日付が使用されるのに対し、財務転記では転記日付が使用されるため、その動作により日付情報が競合する場合があります。</p> |
 | 配分済みハイブリッド トポロジ | *(機能管理は必要ありません。)* | <p>このリリースでは、クラウドおよびエッジのスケール ユニットの倉庫管理ワークロードに対する出庫積荷計画機能が展開されます。</p><p>詳細については、[クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード](../cloud-edge/cloud-edge-workload-warehousing.md) を参照してください。</p> |
 | エンジニアリング変更管理 | エンジニアリング製品のバリアントの生成 | <p>この機能により、エンジニアリング製品に対して、その色、サイズ、スタイル、またはコンフィギュレーションの分析コードに基づいて複数のバリアントを生成できます。</p><p>詳細については、[エンジニアリング製品のバリアントの生成](../engineering-change-management/engineering-variants.md) を参照してください。</p> |
 | 在庫および倉庫管理 | 引当相殺との在庫品目一覧の統合 | <p>この機能を有効にできるのは、*在庫の視覚化統合* 機能を有効にした後のみです。 在庫の視覚化で作成された引当を相殺する機能を提供します。</p><p>詳細については、[在庫の視覚化引当](../inventory/inventory-visibility-reservations.md) を参照してください。</p> |

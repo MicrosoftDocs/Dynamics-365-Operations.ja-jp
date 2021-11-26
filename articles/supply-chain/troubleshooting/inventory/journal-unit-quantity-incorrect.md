@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 39f462ae325aa1104a25a8290daed70388e624ec
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 074be71d7b6ec1acab6307a79e397c2a2a045c39
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7476857"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778428"
 ---
 # <a name="the-unit-and-unit-quantity-arent-working-correctly-in-the-inventory-journal"></a>在庫仕訳帳で単位と単位数量が正しく機能しない
 
@@ -31,7 +31,7 @@ ms.locfileid: "7476857"
 
 この問題を解決するには、次の手順に従います。
 
-1. **機能管理** ワークスペースで、*在庫仕訳帳の測定単位と単位数量の使用* 機能が有効になっていることを確認します。 この機能により、**単位** と **単位数量** フィールドが仕訳帳に追加されます。
+1. **機能管理** ワークスペースで、*在庫仕訳帳の測定単位と単位数量の使用* 機能が有効になっていることを確認します。 この機能により、**単位** と **単位数量** フィールドが仕訳帳に追加されます。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
 1. 機能が有効になった後は、次の方法で **数量**、**単位数量**、**単位** フィールドを使用します。
 
     - **数量** - リリースされた製品に対して定義されている既定の単位を使用して数量を指定します。 ただし、既定の単位自体は、ここには表示されません。 既定の単位と **単位** フィールドで選択した単位の間に換算が設定されている場合、**数量** フィールドは、**単位数量** フィールドと **単位** フィールドでの選択内容に基づいて自動的に更新されます。

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 259ed49b9bdfb70ea357a7d20ea7ae8b141978cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576955"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777743"
 ---
 # <a name="configure-job-card-for-devices"></a>デバイスのジョブ カードのコンフィギュレーション
 
@@ -34,19 +34,19 @@ ms.locfileid: "7576955"
 
 この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を順に有効化します :
 
-1. 完了報告用ライセンス プレートをジョブ カード デバイスに追加
+1. ジョブ カード デバイスに追加され、完了報告用にライセンスを作成しました (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は既定で有効になっています)。
 1. ジョブ カード デバイスでの完了報告時に、ライセンス プレート番号の自動生成を有効にする
 
 ### <a name="print-label"></a>ラベルの印刷
 
 この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を順に有効化します :
 
-1. 完了報告用ライセンス プレートをジョブ カード デバイスに追加
+1. ジョブ カード デバイスに追加され、完了報告用にライセンスを作成しました (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は既定で有効になっています)。
 1. ジョブ カード デバイスからラベルを印刷
 
 ### <a name="allow-locking-of-touch-screen"></a>タッチ スクリーンのロックを許可する
 
-この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を有効化します :
+Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能が有効になっていることを確認します。
 
 - 画面ジョブカード デバイスとジョブ カード端末を除菌できるようにロックする機能
 

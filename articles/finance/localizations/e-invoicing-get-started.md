@@ -2,7 +2,7 @@
 title: 電子請求を開始する
 description: このトピックでは、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management で電子請求を使い始めるための情報を提供します。
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700382"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779697"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>電子請求を開始する
 
@@ -57,7 +57,12 @@ ms.locfileid: "7700382"
 
 国またはリージョンによって、電子請求機能には特定の設定が必要となります。 
 
-具体的な手順については、国または地域向け 「使い方」 ドキュメントを参照してください。
+> [!NOTE]
+> フィンランドの電子請求機能を有効にした場合、ルックアップでアプリケーション固有のパラメーターはサポートされません。 この問題を回避するには、**電子申告** モジュールで、売上請求書およびプロジェクト請求書の形式のコンフィギュレーションを確認します。 **$PaymentMethodSubstitution** マッピングの計算済フィールドを手動で設定し、そのフィールドを売上請求書およびプロジェクト請求書の形式から **EpiPaymentMeansCode** フィールドにバインドします。
+>
+> イタリアの電子請求機能を有効にした場合、ルックアップでアプリケーション固有のパラメーターはサポートされません。 この問題を回避するには、**電子申告** モジュールで、**$NaturaReverseCharge** マッピングの計算済フィールドを手動で設定します。
+>
+> 他の地域に関連する具体的な手順については、国または地域向け「使い方」ドキュメントを参照してください。
 
 ## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>電子申告からモデル マッピング コンフィギュレーションをインポートする
 
@@ -241,6 +246,14 @@ ms.locfileid: "7700382"
 
 3. グリッドで請求書を選択し、**照会** \> **詳細の送信** を選択します。
 
+## <a name="download-an-electronic-document-file"></a>電子ドキュメント ファイルのダウンロード
+
+1. **組織管理** \> **定期的** \> **電子ドキュメント** \> **電子ドキュメントの提出ログ** に移動します。
+2. **ドキュメントのタイプ** フィールドで、請求書を含むテーブルを選択します。
+3. グリッドでドキュメントを選択し、**電子ドキュメント** \> **ファイルのダウンロード** を選択します。 電子ドキュメント ファイルを含むアーカイブは、ダウンロードが推奨されます。
+
+> [!NOTE]
+> ファイルをダウンロードするには、RCS の電子請求機能の設定で関連するアクションで **結果のエクスポート** オプションを有効にする必要があります。
 
 ## <a name="related-topics"></a>関連トピック
 

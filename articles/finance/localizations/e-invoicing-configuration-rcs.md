@@ -2,7 +2,7 @@
 title: Regulatory Configuration Services (RCS) から電子請求書を設定する
 description: このトピックでは、Dynamics 365 Regulatory Configuration Services (RCS) で電子請求書を設定する方法について説明します。
 author: gionoder
-ms.date: 07/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757977"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779673"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Regulatory Configuration Services (RCS) から電子請求書を設定する
 
@@ -73,6 +73,7 @@ ms.locfileid: "6757977"
 | スペイン          | スペイン 電子請求書 (ES)      | 売上請求書とプロジェクト請求書 |
 | ヨーロッパ         | PEPPOL 電子請求書            | PEPPOL 営業の請求書とプロジェクトの請求書 |
 | ヨーロッパ         | PEPPOL 仕入先請求書                | PEPPOL インポート仕入先請求書 |
+| サウジアラビア   | サウジアラビアの電子請求書 (SA)| 売上請求書とプロジェクト請求書 |
 
 ### <a name="preview-features"></a>プレビュー機能
 
@@ -197,6 +198,11 @@ ms.locfileid: "6757977"
 - 売上請求書 (ES)
 - プロジェクト請求書 (ES)
 
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>サウジアラビア (SA) 電子請求書: サウジアラビア向け、売上請求書とプロジェクト請求書
+
+- 売上電子請求書 (SA)
+- プロジェクト電子請求書 (SA)
+
 電子請求サービスで利用可能な ER フォーマットの構成に加えて、独自の ER フォーマットを構成することも可能です。 ただし、電子請求機能で使用するために作成されたフォーマットの構成では、財務または Supply Chain Management のテーブルや対応するメタデータへの直接的な参照はサポートされません。 ER モデル マッピングへの参照のみサポートされます。
 
 ### <a name="actions"></a>アクション
@@ -274,7 +280,7 @@ Finance または Supply Chain Management からのビジネス ドキュメン�
 - かつ
 - 又は
 
-演算子のタイプ:
+演算子の種類:
 - Equal
 - Not equal
 - Greater than

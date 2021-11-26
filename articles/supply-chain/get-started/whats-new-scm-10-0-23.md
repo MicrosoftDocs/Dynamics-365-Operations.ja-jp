@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 3cf30c203d936f171796d9dd8d766cbbb8c997e0
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 7950d225bd528c05c14df108f4d44cef3e348ebb
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647833"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777794"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10023"></a>Dynamics 365 Supply Chain Management 10.0.23 のプレビュー
 
@@ -36,7 +36,9 @@ ms.locfileid: "7647833"
 | グローバル アドレス帳 | 住所の設定で国/地域ごとに既定の都道府県を定義する | グローバル アドレス帳の住所設定で国/地域ごとに既定の都道府県を定義できるようになりました。 既定の都道府県が設定されている場合は、その国/地域に新しい郡または市のレコードが作成される際、それが都道府県フィールドに入力された規定値になります。 また、[アドレス設定](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json) も参照してください。 | 既定で有効になっています。 |
 | 在庫&nbsp;および&nbsp;物流 | [Warehouse Management モバイル アプリのタスクの一時停止](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/park-tasks-warehouse-management-mobile-app) | [モバイル デバイス メニュー項目のステップの迂回を構成する](../warehousing/warehouse-app-detours.md) | 機能管理 (*Warehouse Management アプリの迂回*) |
 | 在庫&nbsp;および&nbsp;物流 | [倉庫アプリのプロモーション フィールド](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [モバイル デバイスの手順に昇格したフィールドを構成する](../warehousing/warehouse-app-promoted-fields.md)| 機能管理 (*Warehouse Management アプリの昇格したフィールド*) |
-| 生産管理 | [生産現場の実行インターフェースの連産品と副産物に関するレポート](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-process-manufacturing) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理 (*生産フロア実行インターフェイスからの連産品と副産物を報告する*) |
+| 製造 | [製造実行システム統合](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-systems-integration) | [サード パーティ製造システムとの統合](../production-control/mes-integration.md) | 機能管理 (*製造実行システム統合*) |
+| 製造 | [生産現場の実行インターフェースの連産品と副産物に関するレポート](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-process-manufacturing) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理 (*生産フロア実行インターフェイスからの連産品と副産物を報告する*) |
+| 計画 | [優先順位に基づく計画の計画最適化サポート](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-priority-based-planning) | [優先順位に基づく計画](../master-planning/planning-optimization/priority-based-planning.md) | 機能管理 (*計画最適化に対して優先順位によって推進される MRP のサポート*) |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
 
@@ -47,13 +49,14 @@ ms.locfileid: "7647833"
 | モジュール | 機能管理の機能名 | 詳細 |
 |---|---|---|
 | 資産管理 | 作業指示書仕訳の経費の相手勘定 | この機能は、作業指示書の仕訳帳に一覧表示されている各経費に対して相手勘定を指定することができます。 通常は、仕入勘定を各経費に関連付けしますが、他の勘定タイプもサポートされています。 これは、**作業指示書の仕訳帳** ページの **経費** クイック タブに新しい 2 列 (**相手勘定のタイプ** と **相手勘定**) を追加します。|
+| 原価管理 | 標準原価丸め再評価に関連する伝票を作成する | <p>在庫財務転記 (販売注文請求書や在庫トランザクションなど) を作成すると、この機能によって、関連する標準原価の丸め再評価用の別の伝票が作成され、それを関連する伝票として財務転記伝票に関連付けられます。</p><p>この機能がない場合は、同じ伝票転記の標準原価丸め再評価が記録されます。 再評価ではセッションまたはシステムの日付が使用されるのに対し、財務転記では転記日付が使用されるため、その動作により日付情報が競合する場合があります。</p> |
 | 在庫および倉庫管理 | \[ロシア\] 受注の会計伝票の訂正フラグに従って、Storno 資産在庫トランザクションを転記する | この機能は、ロシアの貸方票定性機能に影響します。 これはロシア 受注の会計伝票の訂正フラグに応じて、逆資産在庫取引を計上します。 この機能を有効にした場合、在庫トランザクションの財務伝票の **訂正** フラグと在庫トランザクションで **Storno** フラグの間の不一致はこれ以上ありません。 |
 | 在庫および倉庫管理 | (ロシア) 在庫残高回転率レポートの計算をバッチで実行する | Supply Chain Management の ロシアのローカライズの場合、*在庫残高回転率* レポートをバッチで実行して保存したり、以前生成したレポートを表示できます。 |
 | 在庫および倉庫管理 | (ロシア) 在庫管理で国または地域固有のプライマリ フォームでローカル言語への翻訳を使用する | Supply Chain Management のロシア語ローカライズでは、この機能を使用して、次のロシア固有の在庫のプリントアウトで、製品/品目名および測定単位にロシア語の翻訳を使用できます:棚卸リスト (INV-3)、棚卸リスト (INV-5)、棚卸リスト (INV-6)。 |
 | 調達 | 販売注文更新履歴のクリーンアップ | この機能を使用すると、発注書の更新に関連する一時的な履歴レコードをクリーンアップできます。 **すべての発注書** ページのアクション ウィンドウに、**購買更新履歴のクリーンアップ** と呼ばれる 新しいボタンが追加されます。 この機能は、既定で有効になっています。 |
 | 生産管理 | (プレビュー) 自動転記されたピッキング リストの倉庫対応材料の自動ピッキング | この機能を使用して、自動転記、派生/一括引き落とし済みピッキング リスト仕訳帳の、在庫分析コードの自動ピッキングと解決ができます |
 | 生産管理 | 予定消費日と対する原材料の有効期限の検証 | この機能により、生産中に使用される原材料のバッチを引当する際に、バッチの有効期限が検証される方法が変更されます。 この機能を有効にすると、バッチ有効期限は、生産 BOM 明細行またはバッチ オーダーのフォーミュラ明細行で設定された予定消費日 (原材料の日付) に対して検証されます。 この機能を無効にすると、バッチ有効期限が、製造オーダーまたはバッチ オーダーの予定出荷日と対して検証されます (以前の日付)。 |
-| 販売とマーケティング | 販売注文更新履歴のクリーンアップ | この機能を使用すると、販売注文の更新に関連する一時的な履歴レコードをクリーンアップできます。 販売注文の詳細ページおよびリスト ページのアクション ウィンドウに、**販売更新履歴のクリーンアップ** と呼ばれる新しいボタンが追加されます。 |
+| 販売とマーケティング | 経過日数に基づいて販売更新履歴をクリーンアップする | この機能を使用すると、**販売更新履歴クリーンアップ** 定期処理タスクの実行時に保持するレコードの最大期間を設定できます。 古いレコードは削除されます。 これは、タスクが実行される日付を基準として常に年数が計算されるので、タスクを定期的に実行するために設定する場合に役立ちます。 この機能を使用しない場合、保持できる最も古いレコードに対する特定の日付だけを設定できます。 |
 | 販売とマーケティング | "上位 100" の顧客レポートのパフォーマンスを向上する | この機能により、カスタム クエリを許可するのではなく、常にすべての顧客 (その用途) にわたってレポートを実行することで、**上位 100 人** の顧客レポートのパフォーマンスが向上します。 この機能を有効にすると、すべての **含めるレコード** 設定が **上位 100** レポート ダイアログで無効になります。 |
 | 倉庫管理 | 出荷注文の倉庫へのリリースのスケール ユニットのサポート | この機能が有効な場合、出荷注文は、注文を履行するスケール ユニットにハブから直接リリースできます。 |
 

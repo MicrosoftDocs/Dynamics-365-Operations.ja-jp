@@ -2,7 +2,7 @@
 title: Finance Insights ホーム ページ
 description: Finance insights には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを正確かつ的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,24 +17,22 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4b77b7872ed163a94ab57e4efea8fe0fbca22156
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386389"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752859"
 ---
 # <a name="finance-insights-home-page"></a>Finance Insights ホーム ページ
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Finance insights には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを正確かつ的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。 これらの新しい機能を、仕入先の支払および回収の自動化と組み合わせると、意思決定を推進し、現在および将来のビジネス課題に効果的に対応するための行動を取ることのできる、高度でインテリジェントな財務システムが提供されます。
-
-> [!NOTE]
-> 財務分析情報のプレビューは、米国、カナダ、英国、ヨーロッパ、アジア太平洋、オーストラリア、ニュージーランドで配置することができます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。 運用環境で財務分析情報を有効にするには、まず運用環境で [Data Lake へのエクスポート](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) 機能を有効にする必要があります。
+Finance Insights には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。 これらの新しい機能を、仕入先の支払および回収の自動化と組み合わせると、意思決定を推進し、現在および将来のビジネス課題に効果的に対応するための行動を取ることのできる、高度でインテリジェントな財務システムが提供されます。
 
 > [!NOTE]
-> この機能は、一連のプレビュー機能として提供されています。 プレビュー機能として、機械学習モデルの結果を使用してビジネス上の意思決定や予算案を促進したり、それらに影響を与えるようなことはしないでください。 この機能の使用は、[追加使用条件](https://go.microsoft.com/fwlink/?linkid=2105274)に基づきます。
+> Finance Insights のプレビューは、米国、カナダ、英国、ヨーロッパ、アジア太平洋、日本、オーストラリア、ニュージーランドで配置することができます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -50,28 +48,15 @@ Finance insights には構成可能かつ拡張可能なモデルが用意され
 
 ### <a name="version-requirements"></a>バージョン要件
 
-このドキュメントは、Finance and Operations アプリのバージョン 10.0.11 (プラットフォームの更新プログラム 35) およびそれ以降のバージョンに適用されます。
+このトピックは、Microsoft Dynamics 365 Finance バージョン 10.0.21 およびそれ以降に適用されます。
 
 ### <a name="historical-data-requirements"></a>履歴データ要件
 
-顧客支払予測機能に使用される機械学習モデルを正しくトレーニングするには、少なくとも 1 年分の顧客請求書が必要です。
-
-### <a name="role-and-permission-requirements"></a>ロールとアクセス許可の要件
-
-Microsoft Dynamics 365 Finance、Microsoft Dynamics Lifecycle Services (LCS)、Power Apps、Azureに変更が加えられます。 これらの環境に対して適切なアクセス許可を設定する必要があります。 対象となる変更の一部の例を次に示します。
-
-- 新しい環境は、Microsoft Power Platform に作成されます。
-- ストレージ アカウント、Key Vault、アプリケーションが Azure に作成されます。
-- Active Directory テナント管理者は、Data Lake にアクセスするには、AI Builder アプリケーションを承認する必要があります。
-- この機能は Dynamics 365 で有効になります。
-
-Azure、Microsoft Dataverse、LCS のリソースを作成および管理するプロセスに関する知識は、このプロセスを完了するために役立ちます。
+顧客支払予測機能に使用される機械学習モデルを正しくトレーニングするには、少なくとも 1 年分の顧客請求書が必要です。 キャッシュ フロー予測では、3 年間の履歴データが推奨されます。 インテリジェントな予算案では、3 年間の予算履歴や実績が推奨されます。
 
 ## <a name="configure-finance-insights"></a>Finance insights のコンフィギュレーション
 
-Finance insights を使用する前に、いくつかのコンフィギュレーション ステップを完了する必要があります。 Finance Insights をコンフィギュレーションする方法の詳細については、次を参照してください。
-  - 10.0.19 までのバージョン : [財務分析情報のコンフィギュレーション (プレビュー) - 10.0.19 までのバージョン](configure-for-fin-insites.md)。
-  - バージョン 10.0.20 以降: [Finance Insights のコンフィギュレーション (プレビュー) - バージョン10.0.20 以降](configure-for-fin-insites-PubPrvw.md)。
+Finance Insights を使用する前に、コンフィギュレーション ステップを完了する必要があります。 Finance 分析情報のコンフィギュレーション方法の詳細については、[Finance 分析情報のコンフィギュレーション](configure-for-fin-insites.md) を参照してください。
 
 ## <a name="create-a-data-integrator-project"></a>データ インテグレーター プロジェクトの作成
 
@@ -97,17 +82,14 @@ Finance insights を使用する前に、いくつかのコンフィギュレー
 
 ### <a name="using-customer-payment-predictions"></a>顧客支払予測の使用
 
-インテリジェント キャッシュフロー予測は、Dynamics 365 Finance の既存のキャッシュフロー予測機能の上位に構築されます。 既存の機能を確認する方法については、[キャッシュフロー予測](../cash-bank-management/cash-flow-forecasting.md) を参照してください。
-
-- 顧客支払予測によって事前に回収活動を行うために必要な情報をどのように提供するかについては、[顧客支払予測の使用](use-customer-payment-predictions.md) を参照してください。
+- 顧客支払予測によって事前に回収活動を開始するために必要な情報をどのように提供するかについては、[顧客支払予測の使用](use-customer-payment-predictions.md) を参照してください。
 - この機能の使用を開始した後に予測モデルの有効性を評価するのに役立つ情報については、[最初の顧客支払予測モデルを評価する](evaluate-payment-prediction.md) を参照してください。
 - 予測を構築し、その結果を改善するために使用されるデータの調整に役立つ情報については、[予測モデルの改善](improve-model.md) を参照してください。
-
-AI 予測モデルの結果についての詳細は、[機械学習モデルの結果](confusion-matrix.md) を参照してください。
+- AI 予測モデルの結果についての詳細は、[機械学習モデルの結果](confusion-matrix.md) を参照してください。
 
 ### <a name="using-cash-flow-forecasts"></a>キャッシュ フロー予測の使用
 
-キャッシュフロー予測機能は、現金の位置をより正確に見積もるために役立ちます。 
+キャッシュフロー予測機能は、現金の位置をより正確に見積もるために役立ちます。 インテリジェント キャッシュフロー予測は、Dynamics 365 Finance の既存のキャッシュフロー予測機能の上位に構築されます。 既存の機能を確認する方法については、[キャッシュフロー予測](../cash-bank-management/cash-flow-forecasting.md) を参照してください。
 
 - キャッシュフロー予測の新機能については、[キャッシュフロー予測](cash-flow-forecast-intro.md) を参照してください。
 - ここでキャッシュフロー予測に含める外部データのインポートについては、[外部データをキャッシュフロー予測に使用する](external-data-in-cash-flow.md) を参照してください。 
@@ -120,6 +102,6 @@ AI 予測モデルの結果についての詳細は、[機械学習モデルの�
 
 ## <a name="feedback-and-support"></a>フィードバックとサポート
 
-フィードバックの提供またはサポートが必要な場合は、[顧客支払い分析情報 (プレビュー)](mailto:fiap@microsoft.com) に電子メールを送信してください。
+フィードバックに興味のある方、サポートが必要な方は、[Finance Insights](mailto:fiap@microsoft.com) にメールでお問い合わせください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 19c4e3c6ad682f3814d334f88c0653c4e7a51d23
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fa82c721316fb21442e1cfc00ba00ff8cb2b750
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569290"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778234"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>ジョブ カード デバイスから完了として報告する
 
@@ -218,7 +218,7 @@ ms.locfileid: "7569290"
 
 このセクションで説明されている機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して、次の機能を (この順序で) 有効にする必要があります。
 
-1. 完了報告用ライセンス プレートをジョブ カード デバイスに追加
+1. ジョブ カード デバイスに追加され、完了報告用にライセンスを作成しました (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は既定で有効になっています)。
 1. ジョブ カード デバイスでの完了報告時に、ライセンス プレート番号の自動生成を有効にする
 1. ジョブ カード デバイスからラベルを印刷
 

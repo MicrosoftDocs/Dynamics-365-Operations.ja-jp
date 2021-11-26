@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ce31755e326ca598ad83c59c7025e3802d15a8b471d62f63e3150f61300777ff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715201"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752811"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) の新機能および変更された機能
 
@@ -496,7 +496,7 @@ ms.locfileid: "6715201"
 <li>イタリアの ISO20022 口座引落支払形式</li>
 <li>イタリアの RIBA 取立依頼形式</li>
 <li>イタリア国内の税トランザクション レポート</li>
-<li>イタリアのブラックリスト レポート</li>
+<li>イタリアのブロックリスト レポート</li>
 <li>イタリアの Modello770 レポート</li>
 <li>イタリアの年次税通信報告</li>
 </ul>

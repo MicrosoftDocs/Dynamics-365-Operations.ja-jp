@@ -1,8 +1,8 @@
 ---
 title: 雇用されていない作業者
-description: 将来雇用、現職、または過去の職歴が存在しない作業者は、雇用されていない作業者フォームに表示されます。
-author: andreabichsel
-ms.date: 04/06/2021
+description: 将来雇用、現職、または過去の職歴が存在しない作業者は、雇用されていない作業者ページに表示されます。
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: ''
 ms.prod: ''
 ms.technology: ''
@@ -10,23 +10,23 @@ ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelMa
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 45841c35780960f524cc232dad16f94dbc8ec1c2df75fa2a5c2520e5522d4e3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d282c0fac00d6bc410717dd156aef9ffce352c6d
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724967"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771293"
 ---
 # <a name="workers-without-employment"></a>雇用されていない作業者
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-将来雇用、現職、または過去の職歴が存在しない作業者は、**雇用されていない作業者** フォームに表示されます。 この状態を持つ作業者は、雇用レコードのない作業者をインポートする場合や、**作業者 > 雇用履歴** を使用して作業者の雇用を削除する場合に表示されます。
+将来雇用、現職、または過去の職歴が存在しない作業者は、**雇用されていない作業者** ページに表示されます。 このタイプ作業者は、雇用レコードのない作業者をインポートする場合や、**作業者 \> 雇用履歴** を使用して作業者の雇用を削除する場合に表示されます。
 
-既定では、**雇用されていない作業者** フォームは次のロールに使用できます。
+既定では、**雇用されていない作業者** ページは次のロールに使用できます。
 
 - 人事管理アシスタント
 - 人事管理マネージャー

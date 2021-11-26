@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e3b4a9dc25dc8130df7fa4799430c8358edcfe8e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a2740f6b1ccb52073b013e613d8ab779cc088180
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567130"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777641"
 ---
 # <a name="country-of-origin"></a>原産国
 
@@ -28,7 +28,7 @@ ms.locfileid: "7567130"
 
 ## <a name="turn-on-the-country-of-origin-feature"></a>原産国機能を有効にする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化または無効化することができます。 この機能は次のように一覧表示されます。
 
 - **モジュール :** *製品情報管理*
 - **機能名 :** *原産国管理機能*

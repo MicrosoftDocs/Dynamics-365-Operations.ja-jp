@@ -2,7 +2,7 @@
 title: ユーザー エクスペリエンスのパーソナライズ
 description: このトピックでは、アプリを個人用設定する方法について説明します。
 author: jasongre
-ms.date: 09/27/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581068"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777988"
 ---
 # <a name="personalize-the-user-experience"></a>ユーザー エクスペリエンスのパーソナライズ
 
@@ -219,6 +219,9 @@ ms.locfileid: "7581068"
 ### <a name="export-and-import-views-or-personalizations"></a>ビューまたは個人用設定をエクスポートおよびインポートする
 
 個人用設定を共有する別の方法は、エクスポートとインポートによるものです。 個々のユーザー、またはユーザーの代わりを務める管理者は、この方法を使用して個人用設定またはビューをエクスポートし、エクスポートしたファイルを他のユーザーに渡してインポートできます。 または、ユーザーはエクスポートした個人用設定を管理者権限を持つユーザーに渡し、そのユーザーは **個人用設定** 管理ページを使用して、個人用設定ファイルを複数のユーザーに同時に適用できます。
+
+> [!IMPORTANT]
+> パーソナル化はアップデート全体で行われるため、サービス更新プログラム後 (または他の時点) に、すべての個人用設定を再インポートすることは不要であり、今後推奨されていません。   
 
 #### <a name="export"></a>輸出
 

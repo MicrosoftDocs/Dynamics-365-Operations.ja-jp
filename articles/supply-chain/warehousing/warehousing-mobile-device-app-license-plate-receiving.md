@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0df6aee6a5ec1ecc751713c19c659c5471cc4146
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576043"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777605"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリで受信するライセンス プレート
 
@@ -77,7 +77,7 @@ ASN データは、*梱包構造* を使用して、積荷と出荷にリンク�
 - **詳細な概要の表示** – ライセンス プレートの受け取り中に、作業者は、完全な ASN 情報を示す追加のページが表示されます。
 - **概要のスキップ** – 作業者は完全な ASN 情報を参照することはできません。 倉庫作業者は、入庫プロセス中に廃棄コードを設定したり、例外を追加したりすることもできなくなります。
 
-この機能をシステムで使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *モバイル デバイス上で入荷概要ページを表示するかどうかを制御する* をオンにする必要があります。
+この機能をシステムで使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *モバイル デバイス上で入荷概要ページを表示するかどうかを制御する* をオンにする必要があります。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>移動オーダー出荷済ライセンス プレートを出荷先倉庫以外の倉庫で使用されないようにする
 

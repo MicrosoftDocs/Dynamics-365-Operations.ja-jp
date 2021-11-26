@@ -1,7 +1,7 @@
 ---
 title: POS 周辺機器およびサービスの正常性チェック
 description: このトピックは、販売時点管理 (POS) での正常性チェックの操作概要を提供します。
-author: rubendel
+author: BrianShook
 ms.date: 03/06/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 89f926af540ff7c7a57824419edb295ab3b78ee8b22684cb14a0ab6f3436bb01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd4e97b8dbfc4faf336d4ea927342fd4fa3cc7cd
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715385"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779875"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>POS 周辺機器およびサービスの正常性チェック
 

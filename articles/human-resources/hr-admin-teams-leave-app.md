@@ -1,8 +1,8 @@
 ---
 title: Teams における人事管理アプリ
 description: このトピックでは、Microsoft Teams における Microsoft Dynamics 365 Human Resources について説明します。
-author: andreabichsel
-ms.date: 02/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f3b717cf2fb8663ed8e4981981d563672c9e645c4f9b592ee1896cfef4236396
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772720"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771510"
 ---
 # <a name="human-resources-app-in-teams"></a>Teams における人事管理アプリ
 
@@ -106,7 +106,7 @@ Teams の Dynamics 365 Human Resources アプリでは、次の言語がサポ�
 | --- | --- |
 | 未来日付の休暇を送信する場合に、残日数に誤りがあることを示します。 | 予測機能は未実装です。 現在日付の残日数が表示されます。 |
 | **レビュー中** の申請をキャンセルできない 。 | この機能には現在対応していないため、今後のリリースで対応予定です。 |
-| 残日数情報が、現日付の時点に基づいて算出される。 | 現在のシステムでは、休暇と欠勤のパラメータで構成されている場合であっても、見越計上期間の残日数は表示されません。 |
+| 残日数情報が、現日付の時点に基づいて算出される。 | システムでは現在、**休暇と欠勤のパラメータ** ページで構成されている場合であっても、見越計上期間の残日数は表示されません。 |
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -130,15 +130,15 @@ Teams アプリで休暇申請を承認しようとしたときにユーザー�
 
 2. ユーザーが休暇申請を承認するために使用するのと同じ資格情報で **チャット** タブにログインしていることを確認します。 "サインアウト" というメッセージを使用してから "サインイン" を使用して正しい資格情報でサインインします。
 
-3. それでも問題が解消しない場合は、システム管理者としてビジネス イベント システム バッチ ジョブのステータスを確認します。 待機中または実行中のステージにある場合は、数分後にもう一度戻って確認します。 ステータスが変わらない場合は、弊社のチームで問題を解決することができるように、サポート チケットを記録します。
+3. それでも問題が解消しない場合は、システム管理者として **ビジネス イベント システム** バッチ ジョブのステータスを確認します。 **待機中** または **実行中** のステージにある場合は、数分後にもう一度戻って確認します。 ステータスが変わらない場合は、弊社のチームで問題を解決することができるように、サポート チケットを記録します。
 
 ## <a name="privacy-notice"></a>プライバシー通知
 
 ### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding インテリジェント サービス (LUIS)
 
-Microsoft Teams で Dynamics 365 Human Resources Botを使用している場合、ユーザーが入力するテキスト情報は、その基となる問い合わせや意図を理解する目的で分析されます。 ユーザーが入力した 「顧客 Contoso を検索」は、Language Understanding インテリジェント サービス (LUIS) と呼ばれる、Microsoft の認識サービスの一つにルーティングされます。 LUIS の詳細については、  [こちら](https://www.luis.ai/)を参照してください。 LUIS サービスは、ユーザーによる入力内容の意図 (この場合の意図は情報を見つけること) と対象エンティティ (この場合、意図されたエンティティは Contoso という名前の顧客) の曖昧性を解消した、理解しします。 この情報は、Microsoft の  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/) に渡され、 Dynamics 365 Human Resources からのデータと対話し、ユーザー クエリに目的の情報を取得します。
+Microsoft Teams で Dynamics 365 Human Resources Bot を使用している場合、ユーザーが入力するテキスト情報は、その基となる問い合わせや意図を理解する目的で分析されます。 ユーザーが入力した「顧客 Contoso を検索」は、言語理解インテリジェント サービス (LUIS) と呼ばれる、Microsoft の認識サービスの一つにルーティングされます。 LUIS の詳細については、  [こちら](https://www.luis.ai/)を参照してください。 LUIS サービスは、ユーザーによる入力内容の意図 (この場合の意図は情報を見つけること) と対象エンティティ (この場合、意図されたエンティティは Contoso という名前の顧客) の曖昧性を解消した、理解しします。 この情報は、Microsoft の [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/) に渡され、 Dynamics 365 Human Resources からのデータと対話し、ユーザー クエリに目的の情報を取得します。
 
-ボットをインストールして使用を許可することで、LUIS サービスと Azure ボット フレームワークが入力された内容の意図を処理することに同意したことになります。これによって会話型のユーザーエクスペリエンスが強化されます。 LUIS サービスと Azure ボット フレームワークには、Dynamics 365 Human Resources と比較するとコンプライアンスのレベルが異なる場合があります。 LUIS サービスはユーザーのクエリにしかアクセスできず、ユーザーの Dynamics 365 Human Resources データやアカウントには接続できないように設計されていますが、Dynamics 365 Human Resources ボットのユーザーが自発的に顧客データや個人データなどのデータを含むクエリを入力し、そのクエリの内容が LUIS サービスや Azure ボット フレームワークに送信される可能性があります。 
+ボットをインストールして使用を許可することで、LUIS サービスと Azure ボット フレームワークが入力された内容の意図を処理することに同意したことになります。これによって会話型のユーザーエクスペリエンスが強化されます。 LUIS サービスと Azure ボット フレームワークには、Dynamics 365 Human Resources と比較するとコンプライアンスのレベルが異なる場合があります。 LUIS サービスはユーザーのクエリにしかアクセスできず、ユーザーの Dynamics 365 Human Resources データやアカウントには接続できないように設計されていますが、Dynamics 365 Human Resources ボットのユーザーが自発的に顧客データや個人データなどのデータを含むクエリを入力し、そのクエリの内容が LUIS サービスや Azure Bot Framework に送信される可能性があります。 
 
 ユーザーのクエリおよびメッセージの内容は、最大30日間 LUIS システムで保持され、静止時に暗号化されます。トレーニングやサービスの改善に使用されることもありません。 認知サービスの詳細については、 [こちら](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/)を参照してください。 
 

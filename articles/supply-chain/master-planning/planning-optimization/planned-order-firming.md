@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 966a878a7e5b0a92d6d53e67bea19c50274087a4416980859175b12c6fdfbcdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764839"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778524"
 ---
 # <a name="firm-planned-orders"></a>計画オーダーの確定
 
@@ -39,7 +39,7 @@ ms.locfileid: "6764839"
 
 確定並列化により、複数のスレッド間で並列処理することで、確定プロセスの時間を高速化できます。 この方法は、多くの計画オーダーを確定する場合に便利です。
 
-この機能をシステムで使用するには、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)に移動して、*計画オーダーの確定並列化* 機能を有効にします。
+この機能をシステムで使用するには、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)に移動して、*計画オーダーの確定並列化* 機能を有効にします。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>フィルター処理を使用した計画オーダーの確定を有効にする
 
@@ -51,7 +51,7 @@ ms.locfileid: "6764839"
 
 自動確定により、計画オーダーを確定のタイム フェンス内でマスター プラン プロセスの一部として確定できます。 Supply Chain Management に組み込まれている計画エンジンでは、常に自動確定がサポートされています。 ただし、計画の最適化でも使用するには、この機能を有効にする必要があります。
 
-この機能をシステムで使用するには、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)に移動して、*計画最適化の自動確定* 機能を有効にします。
+この機能をシステムで使用するには、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)に移動して、*計画最適化の自動確定* 機能を有効にします。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
 
 ## <a name="manually-firm-planned-orders"></a>計画オーダーを手動で確定する
 

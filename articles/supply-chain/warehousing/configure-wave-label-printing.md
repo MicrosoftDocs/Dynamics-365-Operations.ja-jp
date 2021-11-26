@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6b75dcb7d56648f3be291cb1c09ec57a53477ec0
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344177"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778086"
 ---
 # <a name="wave-label-printing"></a>サイクル ラベル印刷
 
@@ -53,7 +53,7 @@ ms.locfileid: "7344177"
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>ウェーブ ラベルの印刷機能をオンにする
 
-*ウェーブ ラベルの印刷* 機能を使用するには、システム上で有効になっている必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
+Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です。 ただし、この機能は引き続き次のように[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)にリストされています。
 
 - **モジュール:** *倉庫管理*
 - **機能名 :** *ウェーブ ラベルの印刷*

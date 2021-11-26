@@ -1,8 +1,8 @@
 ---
-title: マスター データ検索用の環境の設定
-description: このトピックでは、税計算マスター データ検索機能を使用するための環境の設定方法について説明します。
+title: 税計算コンフィギュレーションのマスタ データルックアップの有効化
+description: このトピックでは、税計算マスター データ検索機能を有効にするための設定方法について説明します。
 author: kai-cloud
-ms.date: 10/26/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 901f8bcb0220355866952b68e92bc2dd906bb430
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
+ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700407"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "7749513"
 ---
-# <a name="set-up-an-environment-for-master-data-lookup"></a>マスター データ検索用の環境の設定
+# <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>税計算コンフィギュレーションのマスタ データルックアップの有効化 
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、税計算マスター データ検索機能を使用するための環境の設定方法について説明します。
+このトピックでは、税計算マスター データ検索機能を有効にするための設定方法について説明します。 **仕入先アカウント**、**品目コード**、**配送条件** などのフィールドに対する税計算コンフィギュレーションで値を選択できます 。 これらの値は、Microsoft Dataverse データ ソースを使用して接続されている Microsoft Dynamics 365 Finance 環境から取得されます。
 
 1. Microsoft Dynamics Lifecycle Services (LCS) の Microsoft Power Platform 統合を設定します。 詳細については、[Microsoft Power Platform 統合 - アドインの概要](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md)を参照してください。 この手順を完了すると、Microsoft Power Platform 環境の名前が **Power Platform 統合** セクションに表示されます。
 2. [Microsoft Power Platform 管理センター](https://admin.powerplatform.microsoft.com/environments) に移動し、環境名を選択します。 環境 URL が提供されていません。

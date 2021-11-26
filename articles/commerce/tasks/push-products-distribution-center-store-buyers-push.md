@@ -1,7 +1,7 @@
 ---
 title: 集中的購買を使用した物流センターから店舗への製品の配送
 description: この手順は、一つの場所から、一つまたは複数の店舗に製品を配分する集中的購買を作成および処理する手順を説明します。
-author: rubencdelgado
+author: BrianShook
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 04b557c71859d598d502d16c9755cae4b38b91304bb4ddd03034b1c5b67c9b19
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30d82e4b282bac2ea888971ad5c6298adfa8332b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763647"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779623"
 ---
 # <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a>集中的購買を使用した物流センターから店舗への製品の配送
 

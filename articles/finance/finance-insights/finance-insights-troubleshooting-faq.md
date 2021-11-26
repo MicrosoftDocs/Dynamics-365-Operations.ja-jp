@@ -2,7 +2,7 @@
 title: Finance Insights の設定に関する問題のトラブルシューティング
 description: このトピックでは、Finance insights の機能の使用時に発生する問題を一覧表示します。 また、これらの問題の修正方法についても説明します。
 author: panolte
-ms.date: 08/20/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7ff42ffc334147c1a4c6b6349c86580df7f1955b
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512893"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752620"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insights の設定に関する問題のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance insights の機能の使用時に発生する問題を一覧表示します。 また、これらの問題の修正方法についても説明します。
 
@@ -53,6 +54,12 @@ ms.locfileid: "7512893"
 
 1. Finance insights のプレビュー版を使用している場合は、**顧客支払情報の結果 (CDS to Fin and Ops)** テンプレートに関連付けられている DI プロジェクトを削除します。
 2. [データ インテグレータ プロジェクトの作成](create-data-integrate-project.md)の手順に従います。 **顧客支払情報の結果  (CDS to Fin and Ops 10.0.17 以降)** テンプレートを使用します。
+
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>現象: 顧客支払予測設定ページのリンクを使用して AI Builder を開こうとすると、"申し訳ありません。切断されました" というエラー メッセージが表示されるのはなぜですか。
+
+### <a name="resolution"></a>解決策
+
+Dynamics 365 Finance ユーザーには、環境の Microsoft Power Apps ユーザー アカウントが必要であり、そのユーザー アカウントにはシステム カスタマイザー ロールが必要です。 Microsoft Power Apps システム管理者は、ユーザー アカウントを作成してロールを割り当てることができます。 その後、<https://make.preview.powerapps.com/> に移動し、そのユーザー アカウントを使用してログインした後、リンクを再度試してください。
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>現象: キャッシュ フロー予測ワークスペースの「キャッシュの予測」タブにデータが表示されないのはなぜですか？
 

@@ -2,7 +2,7 @@
 title: キャッシュ フロー予測の有効化
 description: このトピックでは、財務インサイトでキャッシュ フロー予測機能を有効にする方法について説明します。
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,45 +15,37 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b5e54772b132b4098df8259e954a484a0838ee38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: d968f28126cf205a487d84301aa28f1251713386
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386714"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752691"
 ---
 # <a name="enable-cash-flow-forecasting"></a>キャッシュ フロー予測の有効化
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、財務インサイトでキャッシュ フロー予測機能を有効にする方法について説明します。
+このトピックでは、Finance Insights でキャッシュ フロー予測機能を有効にする方法について説明します。
 
 > [!NOTE]
 > キャッシュ フローで支払予測を使用するには、[顧客支払予測の有効化](enable-cust-paymnt-prediction.md) で説明されているように、顧客支払予測機能を設定する必要があります。
-
-1. Microsoft Dynamics Lifecycle Services (LCS) で環境ページの情報を使用して、その環境に対する Azure SQL のプライマリ インスタンスに接続します。 次の Transact-SQL (T-SQL) コマンドを実行して、サンドボックス環境のフライトを有効にします。 (Application Object Server \[AOS\] にリモートで接続する前に、LCS で IP アドレスに対してアクセスを有効にする必要がある場合があります。)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
-
-    > [!NOTE]
-    > バージョン 10.0.20 以降を使用している場合や、Service Fabric のデプロイを使用している場合は、この手順をスキップします。 財務インサイト チームは既にフライトを有効にしている必要があります。 **機能管理** ワークスペースに機能が表示されない場合や、有効にしようとしたときに問題が発生した場合は、<fiap@microsoft.com> までご連絡ください。
   
-2. **機能管理** ワークスペースを開き、次の手順に従います:
+1. **機能管理** ワークスペースを開き、次の手順に従います:
 
     1. **更新プログラムの確認** を選択します。
-    2. 以下の機能を有効にします:
+    2. **すべて** タブで、**キャッシュ フロー予測** を検索します。 その機能が見つらない場合は、**(プレビュー) キャッシュ フロー予測** を検索します。 
+    3. 機能をオンにします。
 
-        - 新しいグリッド コントロール
-        - グリッド内でのグループ化 (プレビュー) 
-        - 顧客支払予測 (プレビュー)
-        - キャッシュ フロー予測 (プレビュー)
-
-3. **現金および銀行管理 \> キャッシュ フロー予測の設定** に移動し、予測に含める流動資産勘定を追加します。
+2. **現金および銀行管理 \> キャッシュ フロー予測の設定** に移動し、予測に含める流動資産勘定を追加します。 また、**売掛金勘定** タブと **買掛金勘定** タブの支払の流動資産勘定も設定します。 キャッシュ フロー予測は、必ず再計算してください。
 
     > [!NOTE]
     > 流動資産勘定が設定されていない場合は、キャッシュ フローを生成できません。
+    >
+    > キャッシュ フロー予測の設定方法の詳細については、[キャッシュ フロー予測](../cash-bank-management/cash-flow-forecasting.md)を参照してください。
 
-4. **現金および銀行管理 \> 設定 \> 財務インサイト (プレビュー) \> キャッシュ フロー予測** に移動し、次の手順を実行します:
+3. **現金および銀行管理 \> 設定 \> 財務インサイト (プレビュー) \> キャッシュ フロー予測** に移動し、次の手順を実行します:
 
     1. **キャッシュ フロー予測** タブで、**機能の有効化** を選択します。
     2. **予測モデルの作成** を選択します。

@@ -1,5 +1,5 @@
 ---
-title: LBD を使用してカスタム ハードウェアにエッジのスケール ユニットを配置する (プレビュー)
+title: LBD を使用したカスタム ハードウェアへのエッジのスケール ユニットの展開
 description: このトピックでは、カスタム ハードウェアとローカル ビジネス データ (LBD) に基づく配置を使用して、オンプレミスのエッジ スケール ユニットをプロビジョニングする方法について説明します。
 author: cabeln
 ms.date: 04/22/2021
@@ -9,24 +9,21 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ebbdaab9d6f040497d3158db2712e102b6e9aa8
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: f1ab0a2c289f48dd8bfb7529f0dcc694a97f18ea
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678984"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729078"
 ---
-# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd-preview"></a>LBD を使用してカスタム ハードウェアにエッジのスケール ユニットを配置する (プレビュー)
+# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>LBD を使用したカスタム ハードウェアへのエッジのスケール ユニットの展開
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)] <!--KFM: Until 11/1/2021 -->
 
 エッジ スケール ユニットは、Supply Chain Management の分散ハイブリッド トポロジで重要な役割を果たします。 ハイブリッド トポロジでは、Supply Chain Management のクラウド ハブとクラウド内またはエッジ上の追加のスケール ユニットとの間でワークロードを配布できます。
 
 エッジ スケール ユニットは、ローカル ビジネス データ (LBD) [オンプレミス環境](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) を作成することで配置できます。 その後、Supply Chain Management の分散ハイブリッド トポロジで スケール ユニットとして機能するように構成します。 これは、オンプレミスの LBD 環境を、ハブとして機能するように構成されたクラウド内の Supply Chain Management 環境に関連付けることで実現されます。  
-
-エッジ スケール ユニットは、現在プレビュー中です。 したがって、このタイプの環境は、[プレビュー条件](https://aka.ms/scmcnepreviewterms) に従ってのみ使用できます。
 
 このトピックでは、オンプレミスの LBD 環境をエッジ スケール ユニットとして設定し、それをハブに関連付ける方法について説明します。
 
@@ -36,11 +33,9 @@ ms.locfileid: "7678984"
 
 1. **Microsoft Dynamics Lifecycle Services (LCS) で LBD プロジェクトの LBD スロットを有効にします。**
 
-    プレビュー時に、LBD エッジ スケール ユニットは既存の LBD 顧客をターゲットとしています。 追加の 60 日間限定 LBD サンドボックス スロットは、特定の顧客の状況でにのみ提供されます。
-
 1. ***空* のデータベースを使用して LBD 環境を設定および配置します。**
 
-    LCS を使用して、最新のトポロジと空のデータベースで LBD 環境を配置します。 詳細については、このトピックの後半にある[空のデータベースを使用して LBD 環境の設定および配置](#set-up-deploy) セクションを参照してください。 ハブおよびスケール ユニット環境間で、プラットフォーム更新プログラム 43 以上を備えた Supply Chain Management バージョン 10.0.19 を使用する必要があります。
+    LCS を使用して、最新のトポロジと空のデータベースで LBD 環境を配置します。 詳細については、このトピックの後半にある[空のデータベースを使用して LBD 環境の設定および配置](#set-up-deploy) セクションを参照してください。 ハブおよびスケール ユニット環境間で、Supply Chain Management バージョン 10.0.21 以降を使用する必要があります。
 
 1. **LCS でターゲット パッケージを LBD プロジェクト資産にアップロードします。**
 
@@ -60,7 +55,7 @@ ms.locfileid: "7678984"
 
 この手順により、機能的な LBD 環境が作成されます。 ただし、環境はアプリケーションとプラットフォーム バージョンがハブ環境と同じである必要はありません。 また、カスタマイズされていないので、スケール ユニットとして機能することはまだ有効ではありません。
 
-1. [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) の指示に従います。 ハブおよびスケール ユニット環境間で、プラットフォーム更新プログラム 43 以上を備えた Supply Chain Management バージョン 10.0.19 を使用する必要がある
+1. [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) の指示に従います。 ハブおよびスケール ユニット環境間で、Supply Chain Management バージョン 10.0.21 以降を使用する必要があります。 さらに、バージョン 2.12.0 以降のインフラストラクチャ スクリプトを使用する必要があります。 
 
     > [!IMPORTANT]
     > このトピックの手順を完了する **前** に、このセクションの残りの部分を読みます。
@@ -75,9 +70,50 @@ ms.locfileid: "7678984"
     > このスクリプトは、エッジ スケール ユニットの配置に必要ない構成を削除します。
 
 1. [データベースの構成](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) で説明されているように、空のデータを含むデータベースを設定します。 この手順では空の data.bak ファイルを使用します。
-1. 配置前スクリプトを設定します。 詳細については、[ローカル エージェントの配置前スクリプトと配置後スクリプト](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md) を参照してください。
+1. [データベースの構成](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb)手順が完了したら、次のスクリプトを実行して、スケール ユニット ALM オーケストレーター データベースを構成します。
 
-    1. **インフラストラクチャ スクリプト** の **ScaleUnit** フォルダーから、環境で設定されたエージェント ファイル ファイル ストレージ共有の **スクリプト** フォルダーに内容をコピーします。 通常、パスは  \\\\lbdiscsi01\\agent\\Scripts です。
+    > [!NOTE]
+    > [データベースの構成](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb)手順では、Financial Reporting データベースを構成しないでください。
+
+    ```powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EdgeScaleUnit
+    ```
+
+    Initialize-Database.ps1 スクリプトは、以下の処理を行います:
+
+    1. **ScaleUnitAlmDb** という名前の空のデータベースを作成します。
+    2. 次の表に基づいて、データベース ロールにユーザーをマップします。
+
+        | ユーザー            | 種類 | データベース ロール |
+        |-----------------|------|---------------|
+        | svc-LocalAgent$ | gMSA | db\_owner     |
+
+1. 引き続き、[オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) の指示に従います。
+1. [AD FS の構成](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb)手順が完了したら、次の手順に従います。
+
+    1. ALM オーケストレーション サービスと Application Object Server (AOS) との通信を可能にする、新しい Active Directory フェデレーション サービス (AD FS) アプリケーションを作成します。
+
+        ```powershell
+        # Host URL is your DNS record\host name for accessing the AOS
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        ```
+
+    1. ALM オーケストレーション サービスとスケール ユニット管理サービスとの通信を可能にする新しい Azure Active Directory(Azure AD) アプリケーションを作成します。
+
+        ```powershell
+        # Example .\Create-SumAADApplication.ps1 -ConfigurationFilePath ..\ConfigTemplate.xml -TenantId '6240a19e-86f1-41af-91ab-dbe29dbcfb95' -ApplicationDisplayName 'EdgeAgent-SUMCommunication-EN01'
+        .\Create-SumAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                       -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                       -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+        ```
+
+1. 引き続き、[オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) の指示に従います。 ローカル エージェントのコンフィギュレーションを入力する必要がある場合、必ずエッジ スケール ユニット機能を有効にし、必要なすべてのパラメーターを指定します。
+
+    ![エッジ スケール ユニットの機能を有効化する。](media/EnableEdgeScaleUnitFeatures.png "エッジ スケール ユニットの機能を有効化する")
+
+1. LCS から環境を展開する前に、展開前のスクリプトを設定します。 詳細については、[ローカル エージェントの配置前スクリプトと配置後スクリプト](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md) を参照してください。
+
+    1. **インフラストラクチャ スクリプト** の **ScaleUnit** フォルダーから、環境で設定されたエージェント ファイル ファイル ストレージ共有の **スクリプト** フォルダーに Configure-CloudAndEdge.ps1 スクリプトをコピーします。 通常、パスは  \\\\lbdiscsi01\\agent\\Scripts です。
     2. 必要なパラメータを使用してスクリプトを呼び出す **PreDeployment.ps1** スクリプトを作成します。 配置前スクリプトは、エージェント ファイルストレージ共有の **スクリプト** フォルダーに配置する必要があります。 そうしない場合は実行されません。 通常、パスは \\\\lbdiscsi01\\agent\\Scripts\\PreDeployment.ps1 です。
 
         PreDeployment.ps1 スクリプトの内容は、次の例のようになります。
@@ -86,7 +122,7 @@ ms.locfileid: "7678984"
         $agentShare = '\\lbdiscsi01\agent'
         
         Write-Output "AgentShare is set to $agentShare" 
-        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
+        . $PSScriptRoot\Configure-CloudAndEdge.ps1 -AgentShare $agentShare -InstanceId '@A'
         ```
 
         > [!NOTE]
@@ -101,6 +137,75 @@ ms.locfileid: "7678984"
         >   - @#
 
 1. 使用可能な最新の基準トポロジを使用して環境を配置します。
+1. 環境を配置したら、次の手順に従います。
+
+    1. ビジネス データ データベース (AXDB) で次の SQL コマンドを実行します。
+
+        ```sql
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        delete from NumberSequenceTable
+        delete from NumberSequenceReference
+        delete from NumberSequenceScope
+        delete from FeatureManagementMetadata
+        delete from FeatureManagementState
+        delete from SysFeatureStateV0
+        ```
+
+    1. 同時最大バッチ セッションの値を 4 よりも大きい値に増やします。
+
+        ```sql
+        Update batchserverconfig set maxbatchsessions = '<Replace with number of concurrent batch tasks you want>'
+        ```
+
+    1. ビジネス データベース (AXDB) で変更追跡が有効になっていることを確認します。
+
+        1. SQL Server Management Studio (SSMS) を起動します。
+        1. ビジネス データベース (AXDB) を選択したまま (または右クリック) にしてから、**プロパティ** を選択します。
+        1. 表示されたウィンドウで **変更追跡** を選択し、次の値を設定します。
+
+            - **変更追跡:** *True*
+            - **留保期間:** *7*
+            - **留保単位:** *Days*
+            - **自動クリーンアップ:** *True*
+
+    1. スケール ユニットで Azure AD アプリケーション テーブルに、(Create-ADFSServerApplicationForEdgeScaleUnits.ps1 スクリプトを使用して) 前の手順で作成した AD FS アプリケーション ID を追加します。 この手順は、ユーザー インターフェイス (UI) を通じて手動で実行できます。 次のスクリプトを使用してデータベースを介して実行することもできます。
+
+        ```sql
+        DECLARE @ALMOrchestratorId NVARCHAR(76) = '<Replace with the ADFS Application ID created in a previous step>';
+
+        IF NOT EXISTS (SELECT TOP 1 1 FROM SysAADClientTable WHERE AADClientId = @ALMOrchestratorId)
+        BEGIN
+            INSERT INTO SysAADClientTable (AADClientId, UserId, Name, ModifiedBy, CreatedBy)
+            VALUES (@ALMOrchestratorId, 'ScaleUnitManagement', 'Scale Unit Management', 'Admin', 'Admin');
+        END
+        ```
+
+## <a name="set-up-an-azure-key-vault-and-an-azure-ad-application-to-enable-communication-between-scale-units"></a><a name="set-up-keyvault"></a>Azure Key Vault と Azure AD アプリケーションを設定してスケール ユニット間の通信を有効にする
+
+1. 環境を配置した後、追加の Azure AD アプリケーションを作成し、ハブとスケール ユニットの間の信頼済の通信を有効にしてください。
+
+    ```powershell
+    .\Create-SpokeToHubAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                          -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                          -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+    ```
+
+1. アプリケーションを作成した後、クライアント シークレットを作成し、その情報を Azure Key Vault に保存する必要があります。 さらに、作成した Azure AD アプリケーションにアクセス権を付与して、キー コンテナーに保管されたシークレットを取得できるようにする必要があります。 便宜上、次のスクリプトによって、必要なすべてのアクションが自動的に実行されます。
+
+    ```powershell
+    .\Create-SpokeToHubAADAppSecrets.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                         -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                         -SubscriptionName '<Any subscription within your tenant>' `
+                                         -ResourceGroupName '<Any resource group within your subscription>' `
+                                         -KeyVaultName '<Any key vault within your resource group>' `
+                                         -Location '<Any Azure location where Azure Key Vault is available>' `
+                                         -LCSEnvironmentId '<The LCS environment ID of your deployed scale unit>' `
+    ```
+
+    > [!NOTE]
+    > 指定された **KeyVaultName** 値を持つキー コンテナーが存在しない場合、スクリプトによって自動的にキー コンテナーが作成されます。
+
+1. 前の手順で作成した (Create-SpokeToHubAADApplication.ps1 スクリプトを使用して) Azure AD アプリケーション ID を、ハブ内の Azure AD アプリケーション テーブルに追加します。 この手順は、UI を通じて手動で実行できます。
 
 ## <a name="upload-target-packages-into-lbd-project-assets-in-lcs"></a><a name="upload-packages"></a> LCS でターゲット パッケージを LBD プロジェクト資産にアップロード
 
@@ -116,122 +221,13 @@ ms.locfileid: "7678984"
 1. 前の手順でアップロードした結合されたアプリケーション/プラットフォーム パッケージを使用して、LBD 環境にサービスを提供します。
 1. 前の手順でアップロードしたカスタム配置可能パッケージを使用して、LBD 環境にサービスを提供します。
 
-    ![管理を選択 > LCS で更新プログラムを適用。](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "管理を選択 > LCS で更新プログラムを適用")
+    ![LCS で更新を適用する。](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "LCS で更新を適用する")
 
     ![カスタマイズ パッケージの選択。](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "カスタマイズ パッケージの選択")
 
 ## <a name="assign-your-lbd-edge-scale-unit-to-a-hub"></a><a name="assign-edge-to-hub"></a> LBD エッジ スケール ユニットをハブに割り当てる
 
-エッジ スケール ユニットがまだプレビューされている間に、GitHub で利用可能な [スケール ユニット配置および構成ツール](https://github.com/microsoft/SCMScaleUnitDevTools) を使用して、LBD エッジ スケール ユニットをハブに割り当てる必要があります。 このプロセスにより、LBD 構成をエッジ スケール ユニットとして機能させ、ハブに関連付けることができます。 このプロセスは、1 ボックス開発環境の構成に似ています。
-
-1. [SCMScaleUnitDevTools](https://github.com/microsoft/SCMScaleUnitDevTools/releases) の最新のリリースをダウンロードし、ファイルの内容を解凍します。
-1. `UserConfig.sample.xml` ファイルのコピーを作成し、`UserConfig.xml` と名前を付けます。
-1. [スケール ユニットとワークロードの配置ガイド](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#aad-application-registrations) で説明したように、Azure AD テナントに Microsoft Azure Active Directory (Azure AD) アプリケーションを作成します。
-    1. 作成されると、ハブの Azure AD アプリケーション フォーム (SysAADClientTable) に移動します。
-    1. 新しいエントリを作成し、作成したアプリケーションの ID に **クライアント ID** を設定します。 **名前** を *ScaleUnits*、**ユーザー ID** を *管理者* に設定します。
-
-1. [スケール ユニットとワークロードの配置ガイド](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#adfs-application-registrations) で説明したように、Active Directory フェデレーション サービス (AD FS) アプリケーションを作成します。
-    1. 作成されると、エッジ スケール ユニットの Azure AD アプリケーション フォーム (SysAADClientTable) に移動します。
-    1. 新しいエントリを作成し、作成したアプリケーションの ID に **クライアント ID** を設定します。 **ユーザー ID** を *管理者* に設定します。
-
-1. `UserConfig.xml` ファイルを変更します。
-    1. `InterAOSAADConfiguration` セクションで、以前作成した Azure AD アプリケーションからの情報を入力します。
-        - `AppId` 要素に、Azure アプリケーションのアプリケーション ID を入力します。
-        - `AppSecret` 要素に、Azure アプリケーションのアプリケーション シークレットを入力します。
-        - `Authority` 要素には、テナントのセキュリティ オーソリティを指定する URL が含まれている必要があります。
-
-        ```xml
-        <InterAOSAADConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopty56TGUedDTVhtER-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </InterAOSAADConfiguration>
-        ```
-
-    1. `ScaleUnitConfiguration` セクションの最初の `ScaleUnitInstance` セクションで、`AuthConfiguration` セクションを変更します。
-        - `AppId` 要素に、Azure アプリケーションのアプリケーション ID を入力します。
-        - `AppSecret` 要素に、Azure アプリケーションのアプリケーション シークレットを入力します。
-        - `Authority` 要素には、テナントのセキュリティ オーソリティを指定する URL が含まれている必要があります。
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopdz.6d3DTVOtf9Lo-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. また、これと同じ `ScaleUnitInstance` に、次の値を設定します:
-        - `Domain` 要素で、ハブの URL を指定します。 例: `https://cloudhub.sandbox.operations.dynamics.com/`
-        - `EnvironmentType` 要素で、値が `LCSHosted` に設定されている必要があります。
-
-    1. `ScaleUnitConfiguration` セクションの 2 つ目の `ScaleUnitInstance` セクションで、`AuthConfiguration` セクションを変更します。
-        - `AppId` 要素に、AD FS アプリケーションのアプリケーション ID を入力します。
-        - `AppSecret` 要素に、ADFS アプリケーションのアプリケーション シークレットを入力します。
-        - `Authority` 要素には、AD FS インスタンスの URL が含まれている必要があります。
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>26b16f25-21d8-4d36-987b-62df292895aa</AppId>
-            <AppSecret>iZFfObgI6lLtY9kEbBjEFV98NqI5_YZ0e5SBcWER</AppSecret>
-            <Authority>https://adfs.contoso.com/adfs</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. また、これと同じ `ScaleUnitInstance` に、次の値を設定します:
-        - `Domain` 要素で、エッジ スケール ユニットの URL を指定します。 例: https://ax.contoso.com/
-        - `EnvironmentType` 要素で、値が LBD に設定されている必要があります。
-        - `ScaleUnitId` 要素には、`Configure-CloudandEdge.ps1`  配置前スクリプトの構成時に `InstanceId` に指定した値と同じ値を入力します。
-
-        > [!NOTE]
-        > 既定の ID (@A) を使用しない場合、ワークロード セクションの各 ConfiguredWorkload に対して ScaleUnitId を更新してください。
-
-1. PowerShell を開き、`UserConfig.xml` ファイルを含むフォルダーに移動します。
-
-1. このコマンドを使用してツールを実行します。
-
-    ```powershell
-    .\CLI.exe
-    ```
-
-    > [!NOTE]
-    > すべてのアクションの後、ツールを再起動する必要があります。
-
-1. このツールで **2. ワークロードのインストールのための環境を準備** を選択します。 次の手順を実行します:
-    1. **1. ハブを準備** を選択します。
-    1. **2. スケール ユニットを準備** を選択します。
-
-    > [!NOTE]
-    > このコマンドをクリーン インストールから実行していない場合にエラーが発生した場合は、次の操作を行います:
-    >
-    > - `aos-storage` フォルダーからすべてのフォルダーを削除します (`GACAssemblies` を除く)。
-    > - ビジネス データ データベース (AXDB) で次の SQL コマンドを実行します。
-    >
-    > ```sql 
-    > delete from storagefoler
-    > ```
-
-1. ビジネス データ データベース (AXDB) で次の SQL コマンドを実行します。
-
-    ```sql
-    delete from FEATUREMANAGEMENTMETADATA
-    delete from FEATUREMANAGEMENTSTATE
-    delete from NUMBERSEQUENCESCOPE
-    ```
-
-1. ビジネス データベース (AXDB) で変更追跡が有効になっていることを確認
-    1. SQL Server Management Studio (SSMS) を開始します。
-    1. ビジネス データベース (AXDB) を右クリックし、プロパティ を選択します。
-    1. 開くウィンドウで **変更追跡** を選択し、次の設定を行います。
-
-        - **変更追跡:** *True*
-        - **留保期間:** *7*
-        - **留保単位:** *Days*
-        - **自動クリーンアップ:** *True*
-
-1. ツールで **3. ワークロードをインストール** を選択します。 次の手順を実行します:
-    1. **1. ハブでインストール** を選択します。
-    1. **2. スケール ユニットでインストール** を選択します。
+エッジ スケール ユニットの構成および管理は、スケール ユニット管理ポータルを介して行います。 詳細については、[スケール ユニット マネージャー ポータルを使用したスケール ユニットとワークロードの管理](./cloud-edge-landing-page.md#scale-unit-manager-portal)を参照してください。
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

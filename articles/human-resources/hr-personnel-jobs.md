@@ -1,26 +1,26 @@
 ---
 title: 職務のコンポーネントの設定
-description: この記事では、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。
-author: andreabichsel
-ms.date: 06/24/2021
+description: このトピックでは、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 55f3edb53236734045e94ddd71461c739d3b5a8e0a2ac07a804dc2dfafabda57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754779"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731543"
 ---
 # <a name="set-up-the-components-of-a-job"></a>職務のコンポーネントの設定
 
@@ -60,7 +60,7 @@ ms.locfileid: "6754779"
 **職務権限** ページを使用して職務権限を管理します。 **職務権限** ページで、職務権限の ID コードと簡単な説明を入力します。
 
 ## <a name="compensation"></a>報酬
-ジョブの職位にある従業員に固定報酬プランを割り当てるには、ジョブの報酬レベルを設定する必要があります。 報酬レベルは、最小金額、平均金額、および最大金額が報酬構造 (報酬グリッド) で設定されている場合に使用されます。 固定報酬プランを作成すると、報酬構造が選択されます。 報酬構造には報酬レベルも含まれます。 従業員の固定報酬プランを選択する場合、選択できる報酬レベルは、従業員の職位が関連付けられているジョブによって異なります。 報酬の設定方法については、[報酬プラン](hr-compensation-overview.md) を参照してください。
+ジョブの職位にある従業員に固定報酬プランを割り当てるには、ジョブの報酬レベルを設定する必要があります。 **報酬レベル** は、最小金額、平均金額、および最大金額が報酬構造 (報酬グリッド) で設定されている場合に使用されます。 固定報酬プランを作成すると、報酬構造が選択されます。 報酬構造には報酬レベルも含まれます。 従業員の固定報酬プランを選択する場合、選択できる報酬レベルは、従業員の職位が関連付けられているジョブによって異なります。 報酬の設定方法については、[報酬プラン](hr-compensation-overview.md) を参照してください。
 
 ## <a name="job-skills"></a>職務スキル
 職務スキルは、ジョブの実行に必要なスキルを表します。 スキル レベルは、すべての職務スキルに関連付けられている必要があります。 スキル レベルはユーザー定義です。 スキルに必要な知識レベルまたは実力レベルを表します。 たとえば、会社が数値レベル (1 ～ 5 など) を設定し、**1** は初心者を示し、**5** は専門家を示すようにできます。 また、会社は **初心者**、**中級**、**専門家** というラベルの付いたレベルを設定することもできます。 スキル レベルを設定した後に、スキルの重要性も設定できます。 たとえば、経理担当に Microsoft Excel の豊富な知識が求められている場合は、**Excel の知識** という名前のスキルを作成できます。 その後、スキル レベルを **中級** に設定し、重要度を **最も重要** に設定できます。

@@ -2,7 +2,7 @@
 title: 顧客支払予測
 description: このトピックでは、顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、コレクション プロセスを開始したとしても、それ以外の状況を把握することができます。
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 21a773b37020aeff969469e29be68e7f7ef44d93
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386664"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752740"
 ---
 # <a name="customer-payment-predictions"></a>顧客支払予測
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、コレクション プロセスを開始したとしても、それ以外の状況を把握することができます。
 
@@ -67,11 +68,5 @@ ms.locfileid: "7386664"
 ## <a name="methodology"></a>方法
 
 従来は、人工知能 (AI) ソリューションを開発および配置することは困難でした。 データ科学者、領域の専門家 (SME)、およびエンジニアのチームが、使用可能な AI ソリューションの作成、開発、展開、および管理を行うために長期間働く必要があります。 顧客支払予測を使用すると、Microsoft Dynamics 365 Finance で AI ソリューションを簡単に導入および使用できるようになります。 Microsoft は、Microsoft AI Builder の上に構築された AI ソリューションをパッケージ化しています。 したがって、ユーザーは、AI ソリューションを 1 回のマウスクリックで配置することにより、インテリジェント予測のメリットを活用することができます。 予測の正確性に満足しない場合は、パワー ユーザーは (ここでも 1 回のクリックで)、AI Builder の拡張機能のエクスペリエンスへと入り、予測生成に使用するフィールドを選択または選択解除できます。 準備が整ったら、モデルを "トレーニング" して変更を公開することができます。 新しくトレーニングしたモデルは、Dynamics 365 Finance で予測を生成するために自動的に選択されます。
-
-## <a name="release-details"></a>リリースの詳細
-
-財務インサイトのパブリック プレビューは、米国、ヨーロッパ、および英国でのデプロイの試行ができます。 Microsoft は、その他の地域へのサポートも段階的に追加しています。
-
-パブリック プレビュー機能は、Tier-2 のサンドボックス環境でのみ有効にすることができます。 サンドボックス環境で作成された設定および AI モデルは、運用環境に移行できない可能性があります。 詳細については、[Microsoft Dynamics 365 プレビューの補足の使用条件](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

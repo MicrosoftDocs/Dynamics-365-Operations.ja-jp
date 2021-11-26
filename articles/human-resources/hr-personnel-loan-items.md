@@ -1,8 +1,8 @@
 ---
 title: 作業者へ貸与された品目の管理
 description: 貸与品目は、会社から作業者に貸与される現物品目を管理者が追跡するのに役立つレコードです。
-author: andreabichsel
-ms.date: 06/20/2017
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2399cd1c00f2c1f301b2d514c20cca00017465c90436cd01d44eb584f1b66ce6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff9f9404ebbcbc7359ee9927d7a92e31808a478a
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760589"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728762"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>作業者へ貸与された品目の管理
 
@@ -28,7 +28,8 @@ ms.locfileid: "6760589"
 
 貸与品目は、会社から作業者に貸与される現物品目を管理者が追跡するのに役立つレコードです。 
 
-次の項目は、会社が作業者に割り当てられる貸与品目の例です。
+会社が作業者に割り当てられる貸与品目の例を次に示します。
+
 -   携帯電話
 -   自動車
 -   コンピュータ機器
@@ -37,7 +38,7 @@ ms.locfileid: "6760589"
 
 品目を貸与する際には、貸与日と予定返却日を入力します。 品目が返却されたら、実際の返却日を入力します。
 
-従業員は、従業員セルフ サービス ワークスペースを使用して、貸与品目レコードを表示できます。 また、追加の現物品目を受け取った場合は既存のレコードを編集、または新しい貸与品目を入力することもできます。  ワークフローを設定して、承認プロセスを通じた新規または既存の貸与品目に対する変更を転送することができます。 
+従業員は、**従業員セルフ サービス** ワークスペースを使用して、貸与品目レコードを表示できます。 また、追加の現物品目を受け取った場合は既存のレコードを編集、または新しい貸与品目を入力することもできます。 ワークフローを設定して、承認プロセスを通じた新規または既存の貸与品目に対する変更を転送することができます。 
 
 管理者は、直属の部下への貸与品目を表示できます。 また、従業員に代わって新しい貸与品目を追加するアクセス許可を得ることができます。
 

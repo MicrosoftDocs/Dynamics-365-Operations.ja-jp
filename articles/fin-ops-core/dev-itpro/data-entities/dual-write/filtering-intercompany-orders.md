@@ -5,16 +5,16 @@ author: negudava
 ms.date: 11/09/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: negudava
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e09f2037645609d5b5b5d05f27bc5f094287ef03
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 8575f38ca23ef245947a41c35846983604662ef2
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416956"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782556"
 ---
 # <a name="filter-intercompany-orders-to-avoid-syncing-orders-and-orderlines"></a>会社間注文をフィルター処理して Orders および OrderLines の同期を回避する
 

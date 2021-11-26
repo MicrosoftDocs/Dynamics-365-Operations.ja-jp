@@ -1,8 +1,8 @@
 ---
 title: 求人の作成と実施
 description: 採用プロジェクトにより、採用プロセスの管理が容易になります。
-author: andreabichsel
-ms.date: 02/03/2021
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruiting
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df60f6461c52e45849d3de89fde4ae53f915dbc3cce417a30790acf443c5fecc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d59ccb88b8a76de6e2f00453f185fec2f149873
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778775"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731564"
 ---
 # <a name="create-and-open-job-requisition"></a>求人の作成と実施
 
@@ -39,7 +39,7 @@ ms.locfileid: "6778775"
 6. 一覧で、対象のレコードを見つけ、選択します。
 7. 一覧で、選択した行のリンクを選択します。
 8. **選択** を選択します。
-9. [部門] フィールドで、ドロップ ダウン ボタンを選択し、ルックアップを開きます。
+9. **部門** フィールドで、ドロップ ダウン ボタンを選択し、ルックアップを開きます。
 10. 一覧で、選択した行のリンクを選択します。
 11. **職務** フィールドで、ドロップ ダウン ボタンを選択し、ルックアップを開きます。
 12. 一覧で、対象のレコードを見つけ、選択します。
@@ -58,10 +58,10 @@ ms.locfileid: "6778775"
 25. **終了日** フィールドに日付を入力します。
 26. **保存** を選択します。
 27. ページを閉じます。
-28. ジョブの広告を選択します。
+28. **ジョブの広告** を選択します。
 29. **保存** を選択します。
 30. ページを閉じます。
-31. **従業員セルフ サービスに表示** のチェック ボックスをオンまたはオフにします。 **従業員セルフ サービスに表示** のチェック ボックスを選択します。 このオプションを選択すると、従業員セルフサービス ページで採用プロジェクトが従業員に表示されます。
+31. **従業員セルフ サービスに表示** のチェック ボックスをオンまたはオフにします。 **従業員セルフ サービスに表示** のチェック ボックスを選択します。 このオプションを選択すると、**従業員セルフサービス** ページで採用プロジェクトが従業員に表示されます。
 32. **採用プロジェクトの状態** を選択します。
 33. **スタート** を選択します。 **開始済** ステータスは、プロジェクトが応募を受け付ける準備が整っていることを示します。  
 34. **OK** を選択します。

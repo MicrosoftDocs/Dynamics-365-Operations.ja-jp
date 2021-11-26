@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 024bbaad45f320b8c82b20a52ced05322371e337
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575390"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777624"
 ---
 # <a name="vendor-collaboration-with-customers"></a>顧客との仕入先コラボレーション
 
@@ -102,7 +102,7 @@ ms.locfileid: "7575390"
 
     入札するよう招待された場合、**新しい入札の招待** ページで同じ RFQ を見つけることができます。 場合によっては、未処理の RFQ に入札したいかもしれませんが、入札するよう招待されていません。 この場合、顧客が RFQ ケースの自己招待を有効にして、自分で自身を招待することができます。
 
-    **見積の公開済依頼を開くリンクをタイルとして表示する** 機能をオンにすることで、**見積の公開済依頼を開く** リンクのアクセシビリティを強化します。 この機能は、リンクをタイルに変換して目立つ場所に移動し、見つけやすいようにします。
+    **見積の公開済依頼を開くリンクをタイルとして表示する** 機能をオンにすることで、**見積の公開済依頼を開く** リンクのアクセシビリティを強化します。 この機能は、リンクをタイルに変換して目立つ場所に移動し、見つけやすいようにします。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
 
 - **終了した公開済見積依頼** リンクを選択して、公開されている終了した RFQ の一覧を確認します。 終了した RFQ は、期限切れの RFQ です。 RFQ のヘッダーで、有効期限の日付および時刻が表示されます。
 

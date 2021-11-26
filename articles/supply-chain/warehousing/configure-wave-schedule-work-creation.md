@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 358f5a87cdb42f0ff646948da8d38475cf49e3f2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577915"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778380"
 ---
 # <a name="schedule-work-creation-during-wave"></a>ウェーブ中の作業作成のスケジュール
 
@@ -33,7 +33,7 @@ ms.locfileid: "7577915"
 
 このトピックで説明する機能を使用するには、システムでこれら機能を有効にする必要があります。 [機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースを使用して、次の機能を次に示す順番で有効にします :
 
-1. **組織全体の作業のブロック** - スケジュールされた作業作成の手動/自動の両方の構成に必要です。
+1. **組織全体の作業のブロック** - スケジュールされた作業作成の手動/自動の両方の構成に必要です。 (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です)。
 1. **作業作成のスケジュール** - スケジュールされた作業作成の手動/自動の両方の構成に必要です。
 1. **組織全体の 「作業作成のスケジュール」 ウェーブメソッド** - スケジュールされた作業作成の自動設定に必要です。 手動での構成のみを使用する場合は、この機能は不要です。
 

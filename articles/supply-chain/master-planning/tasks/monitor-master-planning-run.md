@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfd1906200038c27e63f9434bba27e7146f4c80c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f1438ed6bcec485ff9665ffd9659c938f5cac478
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575611"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778134"
 ---
 # <a name="monitor-a-master-planning-run"></a>マスター プランの実行の監視
 
@@ -33,7 +33,7 @@ ms.locfileid: "7575611"
 この機能を使用するには、次の手順を実行します。
 
 1. **機能管理** ワークスペースの **新規** タブで、一覧から **マスター プランの進行状況の視覚化** を選択します。 この機能が **新しい** タブに表示されない場合は、**無効** タブおよび **すべての** タブを確認します。
-1. **直ちに有効化** を選択します。 または、**スケジュール** を選択し、機能を有効にする時間を選択します。
+1. **直ちに有効化** を選択します。 または、**スケジュール** を選択し、機能を有効にする時間を選択します。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
 
 **マスター プランの進行状況の表示** ページには、計画ジョブの履歴と有効な計画ジョブの両方を表示できます。 
 

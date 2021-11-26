@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e3f14dd25a60f8d185f0e58a0612a322c5175ab2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579883"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778260"
 ---
 # <a name="work-split"></a>作業の分割
 
@@ -33,7 +33,7 @@ ms.locfileid: "7579883"
 
 作業分割機能を使用するには、システムで機能および前提となる機能を有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。
 
-最初に、前提条件となる *組織全体の作業ブロック* 機能が有効になっていない場合は、オンにします。 **機能管理** ワークスペースで、この機能は次のようにリストされています:
+最初に、前提条件となる *組織全体の作業ブロック* 機能が有効になっていない場合は、オンにします。 Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です。 ただし、この機能は引き続き次のように[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)にリストされています。
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *組織全体の作業のブロック*

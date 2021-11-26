@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f4a7ee091d73e2104571ac9134a9de9bab0a7074
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575467"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777770"
 ---
 # <a name="purchasing-cxml-enhancements"></a>cXML 拡張機能の購入
 
@@ -28,7 +28,7 @@ _購買 cXML 拡張機能_ 機能は、購買要求に対して使用される [
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>cXML 拡張機能の購入機能を有効にする
 
-この機能を有効にするには、**[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** ページを開いて、*cXML 拡張機能の購入* と名前の付いた機能を検索します。 機能を選択し、**直ちに有効化** を選択してオンにします。
+この機能を有効にするには、**[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** ページを開いて、*cXML 拡張機能の購入* と名前の付いた機能を検索します。 機能を選択し、**直ちに有効化** を選択してオンにします。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
 
 この機能を有効にした後、次の 3 つの領域の設定をコンフィギュレーションする必要があります。
 

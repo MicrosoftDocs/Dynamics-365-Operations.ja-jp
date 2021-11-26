@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 3a932e4443521d67edb5c08c2d8eb563c6feb555
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f37d161bf3d27e15eaaf1230c05270f3769f9901
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568282"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778284"
 ---
 # <a name="work-line-details"></a>作業ラインの詳細
 
@@ -28,7 +28,7 @@ ms.locfileid: "7568282"
 
 ## <a name="turn-on-the-work-line-details-feature"></a>作業ラインの詳細機能をオンにする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化または無効化することができます。 この機能は次のように一覧表示されます。
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *作業ラインの詳細*

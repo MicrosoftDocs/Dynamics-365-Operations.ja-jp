@@ -2,7 +2,7 @@
 title: キーボード ショートカット
 description: このトピックでは、Finance and Operations アプリを操作するときに使用できるショートカットキーの概要を示し ます。
 author: jasongre
-ms.date: 10/12/2021
+ms.date: 11/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
+ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647539"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7800196"
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
@@ -128,8 +128,10 @@ ms.locfileid: "7647539"
 
 ## <a name="grid-shortcuts"></a>グリッドのショートカット
 
-| 目的                                                                                                             | キー                           |
+| 目的                                                                                                             |  を押します                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| 垂直スクロール                                                                                                     | マウス ホイール                     |
+| 水平スクロール                                                                                                   | Shift + マウス ホイール             |
 | 前後の列に移動                                                                                       | Tab または Shift+Tab                 |
 | 前後の行に移動                                                                                          | 下方向キーまたは上方向キー           |
 | 選択せずに次または前の行に移動する<blockquote>[!NOTE] このショートカットは、複数選択のシナリオにのみ適用されます。</blockquote> | Ctrl+ 上方向キーまたは Ctrl+ 下方向キー |
@@ -141,15 +143,15 @@ ms.locfileid: "7647539"
 | 最初のレコードに移動                                                                                               | Ctrl + Home                       |
 | 最後のレコードに移動                                                                                                | Ctrl + End                        |
 | すべての行を選択またはクリア                                                                                               | Ctrl + Shift + M                    |
-| 最初にマークした行に移動                                                                                           | Alt + シフト + M、F                    |
-| 次のマークした行に移動                                                                                            | Alt + シフト + M、L                    |
-| 前のマークした行に移動                                                                                        | Alt + シフト + M、P                    |
-| 最後のマークした行に移動                                                                                           | Alt + シフト + M、N                    |
+| 最初にマークした行に移動                                                                                           | Alt + シフト + M、F                  |
+| 次のマークした行に移動                                                                                            | Alt + シフト + M、L                  |
+| 前のマークした行に移動                                                                                        | Alt + シフト + M、P                  |
+| 最後のマークした行に移動                                                                                           | Alt + シフト + M、N                  |
 | グリッドで既定のアクションを実行する<blockquote>[!NOTE] フォーカスがハイパーリンクを含んでいるセル上にあり、すべてのセルがそのハイパーリンクを持つ列にある時、このショートカットが有効になります。</blockquote> | 入力                           |
 | 選択した行およびヘッダー行間でフォーカスを切り替え                                                               | Alt + Shift + H                     |
 | (ヘッダー行のフォーカスで) 現在の列を大きくする/小さくする                                                  | 右方向キー / 左方向キー        |
 | (ヘッダー行のフォーカスで) 現在の列のグリッド フィルターを開く                                              | 入力                           |
-| 内容に合わせて現在の列のサイズを変更する (ヘッダー行のフォーカス付き)                                           | A                               |
+| 内容に合わせて現在の列のサイズを変更する (ヘッダー行のフォーカス付き)                                           | A (または列のサイズ変更ハンドルをダブルクリック) |
 
 ## <a name="input-control-shortcuts"></a>入力コントロールのショートカット
 

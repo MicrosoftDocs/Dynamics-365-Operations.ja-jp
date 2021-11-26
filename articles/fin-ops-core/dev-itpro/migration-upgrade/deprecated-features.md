@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76ac50ba2606ffff5a5a90d29ca99c8d67e5f14cce2127f5de6225d1cd8224ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745179"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753029"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
@@ -84,7 +84,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **配置オプション**              | すべて |
 | **ステータス**                         | 非推奨: 2020 年 10 月 1 日までに、**setUtcString()** メソッドをサポートしなくなる予定です。 開発者は、代わりに **setUtcDateTime()** メソッドを使用する必要があります。 |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>ブラックリスト レポート (IT) – 機能リファレンス IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>ブロックリスト レポート (IT) – 機能リファレンス IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

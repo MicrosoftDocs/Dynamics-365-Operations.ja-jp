@@ -1,7 +1,7 @@
 ---
 title: オムニ チャネル支払の概要
 description: このトピックでは、Dynamics 365 Commerce でのオムニ チャネルの支払概要を示します。
-author: rubendel
+author: BrianShook
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 11198795ebc09acd740546e0b18260e8ea2ddfc1dcc2ff38feafecc220655f1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b01a5b08304b04b924da20310b6eee0c50e9d0e
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743410"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779721"
 ---
 # <a name="omni-channel-payments-overview"></a>オムニ チャネル支払の概要
 

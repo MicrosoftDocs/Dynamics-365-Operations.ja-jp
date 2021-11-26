@@ -1,8 +1,8 @@
 ---
-title: データ インテグレーター プロジェクトの作成
-description: このトピックでは、データインテ グレータープロジェクトの作成方法について説明します。
+title: データ統合プロジェクトの作成
+description: このトピックでは、データ統合プロジェクトの作成方法について説明します。
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,25 +15,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b08af906c18f6c0790ca56c69a833733f48cd88c
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 7841f8b31e0ac1a40dce9acaac747f5f378236e0
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386365"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752667"
 ---
-# <a name="create-a-data-integrator-project"></a>データ インテグレーター プロジェクトの作成
+# <a name="create-a-data-integration-project"></a>データ統合プロジェクトの作成
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、データインテ グレータープロジェクトの作成方法について説明します。
+このトピックでは、データ統合プロジェクトの作成方法について説明します。
 
 1. Microsoft Dynamics 365 Finance にサインインします。
 2. **ワークスペース \> データ管理** に移動し、**データ エンティティ** を選択します。 すべてのデータ エンティティが更新されるまで待機し、次のステップに進みます。
 3. [Power Appsポータル](https://make.powerapps.com/)を開き、次 の手順を実行します。
 
     1. 適切な環境を選択します。
-    2. 左側のナビゲーション ペインで、**データ \> 接続** を選択します。
+    2. 左側のナビゲーション ペインで、**Dataverse \>接続** を選択します。
     3. 次の項目の適切なインスタンスに接続します :
 
         - Dynamics 365
@@ -41,7 +42,7 @@ ms.locfileid: "7386365"
 
 4. [Power Apps 環境](https://admin.powerapps.com/environments)を開き、次の手順を実行します。
 
-    1. **データ インテグレーター** を選択します。
+    1. **データ統合** を選択します。
     2. **接続設定** タブを選択します。
     3. **新規接続設定** を選択します。
     4. 接続の名前を入力します。
@@ -57,8 +58,7 @@ ms.locfileid: "7386365"
 
     1. 作成した接続セットを使用して、次のテンプレートのデータ統合プロジェクトを作成します。
 
-        - 顧客支払分析情報の結果 (CD から Fin と Ops)
-            - バージョン 10.0.17 以降を使用している場合、顧客支払分析情報の結果 (CDS から Finance and Operations 10.0.17+) という名前のテンプレートを使用する必要があります。
+        - 顧客支払分析情報の結果 (CDS から Finance and Operations 10.0.17 以上)
         - キャッシュ フロー時系列の結果 (CD から Fin と Ops)
         - 予算時系列の結果 (CD から Fin と Ops)
 

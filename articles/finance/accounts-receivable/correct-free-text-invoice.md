@@ -1,7 +1,7 @@
 ---
 title: 自由書式の請求書を訂正
 description: この記事では、自由書式の請求書を転記後に修正し、修正済請求書として再発行する方法を説明します。
-author: ShivamPandey-msft
+author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0d4e40e46e23766983351871634280b2d951aa9551db97092a8872a25833721
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf4503e3d4b200219d6b444b69c866871d21787d
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763313"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753805"
 ---
 # <a name="correct-a-free-text-invoice"></a>自由書式の請求書を訂正
 

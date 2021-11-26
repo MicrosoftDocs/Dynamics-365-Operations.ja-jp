@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-obaranov
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 652e6fb3f586fc873ffabf2c741e5c99216931461f159a42f08f9922e756280f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735899"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777868"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>ウェーブ中にウェーブ ラベルの印刷をスケジュールする
 
@@ -33,7 +33,7 @@ ms.locfileid: "6735899"
 このトピックで説明する機能を使用するには、システムで機能を有効にする必要があります。 [機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースを使用して、機能を次に示す順番で有効にします。
 
 1. *ウェーブ ラベルの印刷* – この機能では、ウェーブ ラベルの印刷に対して、ラベルの印刷を簡単に行う方法を有効にする場合に必要です。
-1. *組織全体の作業のブロック* - この機能ではスケジュールされた作業作成の手動と自動の両方の構成に必要です。
+1. *組織全体の作業のブロック* - この機能ではスケジュールされた作業作成の手動と自動の両方の構成に必要です。 (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です)。
 1. *ウェーブ ラベル印刷に基づくタスク* – この機能は、ウェーブ ラベルの印刷を別のトランザクション スコープに分割する必要があります。
 
 ## <a name="manually-enable-the-new-wave-step-method"></a>新しいウェーブ ステップの方法を手動で有効にする

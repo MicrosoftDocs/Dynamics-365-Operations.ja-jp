@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37d78e97a6c7f9152ab0b893a35a3ae70d5adabc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579643"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778036"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>ベースライン予測に対して手動調整を行う
 
@@ -67,7 +67,7 @@ ms.locfileid: "7579643"
 
 **メモ :**
 
--   機能管理から **需要予測詳細における予測モデルの選択** を有効にすると、**需要予測の詳細** ページで、過去の予測に含める予測モデルを選択できるようになります。
+-   機能管理から **需要予測詳細における予測モデルの選択** を有効にすると、**需要予測の詳細** ページで、過去の予測に含める予測モデルを選択できるようになります。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
 -   このページの **予測** セクションに表示される信頼区間は、信頼区間の上限と信頼区間の下限の差を表します。 上限と下限の値を確認するには、**履歴需要と予測のグラフィック表示** セクションでグラフをポイントします。
 -   需要予測 Microsoft Azure Machine Learning を使用する際は、生成される予測に必要な信頼レベルの割合を指定できます。 信頼区間は、需要予測の商品見積として機能する値の範囲で構成されます。 95% の信頼レベルは、需要予測が信頼区間の範囲外になるリスクが 5% あることを示します。
 

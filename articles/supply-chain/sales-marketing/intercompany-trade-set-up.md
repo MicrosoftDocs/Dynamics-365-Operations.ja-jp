@@ -4,19 +4,19 @@ description: このトピックでは、会社間取引を設定する方法に�
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
-ms.search.form: CustTable, VendTable, EcoResProductListPage
+ms.search.form: CustTable, VendTable, EcoResProductListPage, InterCompanyTradingRelationSetupCustomer
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 75d6679152a056f6883658911f93464252e5fe87
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 7288cc8f336b6b1f5174fe2bef38017e0c96e560
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548367"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777719"
 ---
 # <a name="set-up-intercompany-trade"></a>会社間取引の設定
 

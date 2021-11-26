@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 78bea4ee2429323a6e087c6433a8e496b08f4cea
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6ff9f133010ec4370a99c585259aece4e279f801
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576115"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778210"
 ---
 # <a name="replenishment-over-location-capacity"></a>場所の能力を超える補充
 
@@ -32,8 +32,8 @@ ms.locfileid: "7576115"
 
 この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を順にオンにします。
 
-1. 組織全体の作業のブロック
-1. 場所の能力を超える補充
+1. 組織全体の作業ブロック (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です)。
+1. 保存先の容量を超える補充
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>シナリオ例の機能の設定
 

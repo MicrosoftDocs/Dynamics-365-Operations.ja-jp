@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c2fbaa6945cf46b7ef09232e6004f09b487ea7c822e72225dc00d3d28ecb008e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780201"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729030"
 ---
 # <a name="apply-filters-to-a-plan"></a>プランへのフィルターの適用
 
@@ -43,7 +43,7 @@ ms.locfileid: "6780201"
 - **すべての品目を含むランタイム フィルター (空白フィルター):** プランの実行には項目 A、B、および C が含まれており、品目 A および B の計画出力は上書きされます。
 
 > [!NOTE]
-> **マスター プラン パラメーター** ページで **現在の動的マスター プラン** として選択される計画には、計画フィルターを設定しないでください。 そうしないと、動的マスター プラン機能は、フィルター処理された品目に制限されます。 たとえば、計画フィルターの一部でない品目に対して正味必要量が更新されると、結果は生成されません。
+> **マスター プラン パラメーター** ページで **現在の動的マスター プラン** として選択した計画に計画フィルターを設定した場合、動的マスター プランの機能はフィルター処理された品目に限定されます。 たとえば、計画フィルターの一部でない品目に対して正味必要量が更新されると、結果は生成されません。
 
 ## <a name="related-resources"></a>関連するリソース
 

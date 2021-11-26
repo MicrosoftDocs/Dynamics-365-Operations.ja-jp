@@ -1,8 +1,8 @@
 ---
 title: 休暇パラメーターのコンフィギュレーション
-description: Dynamics 365 Human Resources で休暇のための人事管理パラメーターを定義します。
-author: andreabichsel
-ms.date: 11/02/2020
+description: このトピックでは、Dynamics 365 Human Resources で休暇および欠勤の人事管理パラメーターを定義する方法について説明します。
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab4b2b3adefa388acfadc77c7b25a6b47d01571f0e58f6ab81101e25d1b548e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d89c4b22d71057fd3b398c91e1fbf04112e4a9
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777962"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728860"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>休暇パラメーターのコンフィギュレーション
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dynamics 365 Human Resources で休暇計画を設定する前に、下記を含むすべての関連する人事管理パラメーターの設定を確認することをお勧めします。
+Dynamics 365 Human Resources で休暇計画を設定する前に、下記を含むすべての関連する **人事管理パラメーター** の設定を確認することをお勧めします。
 
 - 休暇申請の番号順序
 - 育児介護休業法 (FMLA) 設定
@@ -74,7 +74,7 @@ Dynamics 365 Human Resources で休暇計画を設定する前に、下記を含
 
     - **残日数の計算** を選択して、今日の残日数、または見越計上期間の残日数を表示します。 **今日現在の残日数** を選択すると、残日数には今日時点のすべての見越、調整、および申請の合計が表示されます。 **見越計上期間の時点での残日数** を選択した場合、残日数には、休暇計画の頻度で定義された見越計上期間の時点でのすべての見越、調整、申請の合計が表示されます。 
 
-    - 繰り越し有効期限バッチジョブの開始時刻を設定します。  
+    - **繰り越し有効期限** バッチ ジョブの **開始時刻** を設定します。  
     
     - **はい** を選択すると、**従業員に休暇の購入を許可する** と **従業員の休暇の売却を許可する** ことができます。 これらのオプションに対して **はい** を選択すると、休暇の購入と売却ポリシーの作成と、従業員が休暇の購入と売却の申請を送信できるようになります。
 

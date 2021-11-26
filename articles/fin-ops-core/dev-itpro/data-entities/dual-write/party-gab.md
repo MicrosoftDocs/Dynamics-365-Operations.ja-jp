@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386688"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781347"
 ---
 # <a name="party-and-global-address-book"></a>当事者およびグローバル アドレス帳
 
@@ -30,13 +30,13 @@ ms.locfileid: "7386688"
 
 + **作業者** – 従業員。 例は Contoso の従業員です。
 + **仕入先** – 仕入先組織、または会社に商品やサービスを提供している唯一の個人事業主。 たとえば、Fabrikam が Contoso に供給品を販売している場合、Fabrikam は Contoso の仕入先の役割を果たしています。
-+ **連絡先** – 連絡する対象の担当者。 たとえば、Contoso が Fabrikam から供給品を購入している場合、Contoso の従業員が Fabrikam の連絡先に連絡します。
-+ **顧客** – 会社から物品を購入する個人または会社です。 たとえば、Contoso が Fabrikam から供給品を購入する場合、Contoso は Fabrikam の顧客となります。
++ **連絡先** – 連絡する対象の担当者。 たとえば、Contoso が Fabrikam から供給品を購入した場合、Contoso の従業員が Fabrikam の連絡先に連絡します。
++ **顧客** – 会社から物品を購入する個人または会社です。 たとえば、Contoso が Fabrikam から供給品を購入した場合、Contoso は Fabrikam の顧客となります。
 
 当事者モデルは、多くの場合、特に当事者が複数の役割を持つ場合など、組織と個人間で中規模なリレーションシップから複雑なリレーションシップを表するために使用されます。 次にいくつか一般的な例を挙げます。
 
-+ 当事者は、顧客と仕入先両方の可能性があります。 たとえば、北アメリカで、Fabrikam が Contoso に対して電線を販売し、Contoso から組み立て式スピーカーを購入しました。 ヨーロッパで、Fabrikam は Contoso に部品を販売しますが、Contoso からの製品は何も購入しません。
-+ 当事者は、従業員と顧客両方の可能性があります。 たとえば、Contoso の従業員が Contoso から電子製品を個人的に購入します。
++ 当事者は、顧客と仕入先両方の可能性があります。 たとえば、北アメリカでは、Fabrikam が Contoso に対して電線を販売し、Contoso の組み立て式スピーカーを買います。 ヨーロッパでは、Fabrikam は Contoso に部品を販売しますが、Contoso の製品は買いません。
++ 当事者は、従業員と顧客両方の可能性があります。 たとえば、Contoso の従業員が Contoso から電子製品を個人的に購入したとします。
 + 個人と組織の間には多対多 (N:N) のリレーションシップである可能性があります。 たとえば、Fabrikam はサービスのスペシャリストを提供し、配置コーディネーターを採用します。 配置コーディネーターは、Fabrikam の複数の顧客からの作業依頼にサービスのスペシャリストを対応させます。 Contoso は Fabrikam の顧客の 1 人です。 Contoso がスペシャリストを必要とする場合、配置コーディネーターに連絡してその要求に対応してもらいます。 すべての顧客の要求は配置コーディネーターによって処理されるため、N:N リレーションシップが関係してきます。
 
 次の図は、当事者のデータ モデルを示しています。

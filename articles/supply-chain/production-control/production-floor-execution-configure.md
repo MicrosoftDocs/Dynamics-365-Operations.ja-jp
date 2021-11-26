@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647192"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777964"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを構成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "7647192"
 
 ### <a name="the-production-floor-execution-interface"></a>生産現場の実行インターフェース
 
-これは、このトピックで説明されている主要な機能です。 生産現場の実行インターフェイスをシステムに追加します。 有効にするには、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。
+これは、このトピックで説明されている主要な機能です。 Supply Chain Management のバージョン10.0.21では、既定で有効になっています。 生産現場の実行インターフェイスをシステムに追加します。 有効にするには、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。
 
 - 生産現場の実行
 
@@ -47,19 +47,19 @@ ms.locfileid: "7647192"
 
 これらの機能により、生産現場の実行インターフェイスでライセンス プレート機能を使用できるようになります。 この機能を使用する場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を順にオンにします。
 
-1. 完了報告用ライセンス プレートをジョブ カード デバイスに追加
+1. ジョブ カード デバイスに追加され、完了報告用にライセンスを作成しました (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は既定で有効になっています)。
 1. ジョブ カード デバイスでの完了報告時に、ライセンス プレート番号の自動生成を有効にする
 
 ### <a name="print-labels"></a>ラベルの印刷
 
 これらの機能により、生産現場の実行インターフェイスでラベル印刷機能を使用できるようになります。 この機能を使用する場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を順にオンにします。
 
-1. 完了報告用ライセンス プレートをジョブ カード デバイスに追加
+1. ジョブ カード デバイスに追加され、完了報告用にライセンスを作成しました (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は既定で有効になっています)。
 1. ジョブ カード デバイスからラベルを印刷
 
 ### <a name="allow-locking-the-touch-screen"></a>タッチ スクリーンのロックを許可する
 
-この機能により、作業者がタッチスクリーンを校正できるようにするボタンが生産現場の実行インターフェイスに追加されます。 使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。
+Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 これにより、作業者がタッチスクリーンを校正できるようにするボタンが生産現場の実行インターフェイスに追加されます。 使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能が有効になっていることを確認します。
 
 - 画面ジョブカード デバイスとジョブ カード端末を除菌できるようにロックする機能
 

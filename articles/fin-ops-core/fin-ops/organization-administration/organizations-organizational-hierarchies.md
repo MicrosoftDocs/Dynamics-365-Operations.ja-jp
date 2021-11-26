@@ -2,7 +2,7 @@
 title: 組織と組織階層の概要
 description: 組織階層とは、業務を構成する組織の関係を表すものです。
 author: sericks007
-ms.date: 07/25/2019
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74aa2736b4cfb11039ea1cee3f62e74cf4928a1b27cea16e7e0e86f66bdddd59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
+ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715992"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "7798349"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>組織と組織階層の概要
 
@@ -64,9 +64,19 @@ ms.locfileid: "6715992"
 
 業務について、さまざまな観点から表示と報告を行う組織階層を設定します。 たとえば、税金、法律、または法令についての報告に使用するの法人の階層を設定できます。 法的に必須でなくても内部統制に使用する財務情報を報告する階層を、作業単位に基づいて設定します。 たとえば、購買ポリシー、ルール、および業務プロセスを管理する購買階層を作成できます。
 
+> [!NOTE]
+> 階層に作業単位を追加した後は、その作業単位を削除できません。 
+
 各階層は目的で割り当てられます。 階層の目的により、階層に含めることができる組織のタイプが決まります。 この目的により、どのアプリケーションのシナリオで階層を使用できるかが決まります。
 
 各階層の組織では、パラメータ、ポリシー、およびトランザクションを共有できます。 親組織のパラメータは、各組織で継承または上書きできます。 ただし、製品やアドレス帳などの共有マスタ データは組織全体に適用され、個々の組織では上書きすることはできません。 組織と階層の作成は慎重に計画する必要があります。 詳細については、[組織階層の計画](plan-organizational-hierarchy.md) を参照してください。
+
+## <a name="additional-resources"></a>追加リソース
+- [組織階層の計画](plan-organizational-hierarchy.md)
+- [組織階層の作成](tasks/create-organization-hierarchy.md)
+- [法人の作成](tasks/create-legal-entity.md)
+- [作業単位の作成](tasks/create-operating-unit.md)
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

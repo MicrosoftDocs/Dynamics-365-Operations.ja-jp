@@ -1,8 +1,8 @@
 ---
 title: Human Resources パラメーターのコンフィギュレーション
 description: このトピックでは、Dynamics 365 Human Resources で会社固有のパラメーターを設定する方法を説明します。
-author: andreabichsel
-ms.date: 06/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 476f44c665adb2918e7cd882d4ea873b4b4f94fa33a74dc96d3eccc74b676ce5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739254"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771438"
 ---
 # <a name="configure-human-resources-parameters"></a>Human Resources パラメーターのコンフィギュレーション
 
@@ -65,7 +65,7 @@ ms.locfileid: "6739254"
 
 **採用** タブの設定では、申請者に自動的に送信される通信文書に使用するドキュメント タイプを定義します。 未承諾の申請に使用される採用プロジェクトを示すこともできます。
 
-採用プロジェクトのエイジングとして定義されている期間によって、**採用管理** ワークスペースの、**エイジング プロジェクト** タイルに含まれている採用プロジェクトが決まります。 **採用** ワークスペースの、**申請の期限が近づいています** タイルで申込期限が近づいている採用プロジェクトを表示するために、申請の期限の警告に定義されている期間が使用されます。
+**採用プロジェクトのエイジング** として定義されている期間によって、**採用管理** ワークスペースの、**エイジング プロジェクト** タイルに含まれている採用プロジェクトが決まります。 **採用** ワークスペースの、**申請の期限が近づいています** タイルで申込期限が近づいている採用プロジェクトを表示するために、申請の期限の警告に定義されている期間が使用されます。
 
 採用の詳細については、[職務候補者の採用](hr-personnel-recruit.md)を参照してください。
 
@@ -107,20 +107,20 @@ FMLA タブでは、FMLA 資格条件と、FMLA 資格付与時間を設定し�
 
 ## <a name="employee-self-service"></a>従業員セルフ サービス
 
-**従業員セルフ サービス** タブの設定は、従業員セルフ サービスが従業員にどのように表示されるかに影響します。 このタブで次の操作を実行できます。
+**従業員セルフ サービス** タブの設定は、**従業員セルフ サービス** が従業員にどのように表示されるかに影響します。 このタブでは、次のタスクを完了することができます。
 
-- 従業員セルフサービス ワークスペースの名前を入力します
+- **従業員セルフサービス** ワークスペースの名前を入力します
 - 従業員に対してマネージャが入力できる情報を選択します
 - 従業員向けに役立つリンクを追加します
 - 従業員がビジネスの連絡先情報を追加または編集するのを制限します。 詳細については、[個人情報の編集の制限](hr-employee-self-service-restrict-editing.md)を参照してください。
 
-従業員セルフ サービスの設定の詳細については、[従業員およびマネージャー セルフ サービスの概要](hr-employee-manager-self-service-overview.md)を参照してください。
+**従業員セルフ サービス** の設定方法の詳細については、[従業員およびマネージャー セルフ サービスの概要](hr-employee-manager-self-service-overview.md)を参照してください。
 
 ![従業員セルフ サービス タブ。](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>マネージャー セルフ サービス
 
-**マネージャー セルフ サービス** の設定は、マネージャーがマネージャー セルフ サービスに表示する内容に影響します。 このタブでは、次のオプションを構成できます。
+**マネージャー セルフ サービス** の設定は、マネージャーが **マネージャー セルフ サービス** に表示する内容に影響します。 このタブでは、次のオプションを構成できます。
 
 - 期限が切れるレコードの範囲
 - マネージャーが期限が切れるレコードで表示できる情報
@@ -128,13 +128,13 @@ FMLA タブでは、FMLA 資格条件と、FMLA 資格付与時間を設定し�
 - 既存の作業者の表示
 - マネージャー向けに役立つリンク
 
-マネージャー セルフ サービスの設定の詳細については、[従業員およびマネージャー セルフ サービスの概要](hr-employee-manager-self-service-overview.md)を参照してください。
+**マネージャー セルフ サービス** の設定方法の詳細については、[従業員およびマネージャー セルフ サービス](hr-employee-manager-self-service-overview.md)の概要を参照してください。
 
 ![マネージャー セルフ サービス タブ。](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>給付金管理
 
-給付金管理タブで、給付金管理の電子メール オプションを構成できます。 給付金管理の設定および使用の詳細については、[給付金管理の概要](hr-benefits-management-overview.md)を参照してください。
+**給付金管理** タブで、給付金管理の電子メール オプションを構成できます。 給付金管理の設定および使用方法の詳細については、[給付金管理の概要](hr-benefits-management-overview.md)を参照してください。
 
 ![給付金管理タブ。](./media/hr-setup-parameters-benefits-management.png)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c2d7f140c0199b4b81a7b42220d5800d427be680
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577843"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778062"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>発注書に対する入庫積荷の倉庫処理
 
@@ -267,7 +267,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 
 1. **機能管理** ワークスペースを開きます。 (このワークスペースを検索して使用する方法の詳細については、[機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。)
 
-1. 次のように表示される _発注書の在庫トランザクションを積荷と関連付ける_ 機能をオンにします:
+1. _発注書の在庫トランザクションと負荷を関連付ける_ 機能がオンになっていることを確認します。 Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です。 ただし、この機能は引き続き次のように[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)にリストされています。
 
     - **モジュール:** _倉庫管理_
     - **機能名:** _発注書の在庫トランザクションと負荷を関連付ける_

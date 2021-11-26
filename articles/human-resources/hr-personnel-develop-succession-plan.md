@@ -1,8 +1,8 @@
 ---
 title: 後任育成計画
 description: 組織が成長するにつれて、後任育成計画を開始する必要があります。
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca1d9dda75038d937e2a3dad4582feefa617aac9f7f3f1a75ffd274c69c68ae9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed10813c30b9a49b84a7e8e333fbac3d1e26720a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768218"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731519"
 ---
 # <a name="develop-a-succession-plan"></a>後任育成計画
 
@@ -34,7 +34,7 @@ ms.locfileid: "6768218"
 6. **プロファイル** の取得を選択します。
 7. **人物** を選択します。
 8. **個人** フィールドに名前を入力するか、またはドロップ ダウンから選択します。
-9. **OK** を選択します。
+9.  **OK** を選択します。
 10. **証明書** のクイック タブを展開して、スキル マッピングに含まれる証明書を表示または編集します。
 11. **スキル** クイック タブを展開し、含めるスキルを表示または編集します。
 12. 一覧で、最初の行をマークします。 例: 会計。
@@ -48,7 +48,7 @@ ms.locfileid: "6768218"
 20. **重要性** フィールドで、オプションを選択します。
 21. 一覧で行 4 を選択します。
 22. **オプション** チェック ボックスをオンにします。
-23. [重要性] フィールドで、オプションを選択します。
+23. **重要性** フィールドで、オプションを選択します。
 24. **教育** のクイック タブを展開し、スキル マッピングに含める教育のコンピテンシーを表示または編集します。
 25. **実行** を選択します。
 26. **OK** を選択します。

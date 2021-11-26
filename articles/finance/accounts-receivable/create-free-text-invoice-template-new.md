@@ -1,7 +1,7 @@
 ---
 title: 自由書式の請求書テンプレートの作成
 description: この手順は、自由書式の請求書テンプレートを作成する方法を示します。
-author: ShivamPandey-msft
+author: abruer
 ms.date: 05/29/2018
 ms.topic: article
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f84345aa8b157c5ca2a3025d4817af1fb1b1b2d009b3213d15a5b3daca8d763
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1477227228ae9f79314d1e3b6da73446d660d108
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763265"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753696"
 ---
 # <a name="create-a-free-text-invoice-template"></a>自由書式の請求書テンプレートの作成
 

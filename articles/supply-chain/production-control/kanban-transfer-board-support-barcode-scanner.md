@@ -90,7 +90,7 @@ ms.locfileid: "7566814"
 <td>有</td>
 <td>有</td>
 <td>有</td>
-<td>第        条</td>
+<td>無</td>
 <td>有</td>
 </tr>
 <tr class="even">
@@ -100,61 +100,61 @@ ms.locfileid: "7566814"
 <li>ペギングにされたジョブが [完了] ではない</li>
 </ul></td>
 <td>有</td>
-<td>第        条</td>
+<td>無</td>
 <td>有</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="odd">
 <td>移動</td>
 <td>処理中</td>
 <td>有</td>
-<td>第        条</td>
+<td>無</td>
 <td>有</td>
 <td>有</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="even">
 <td>移動</td>
 <td>完了</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 <td>有</td>
-<td>第        条</td>
+<td>無</td>
 </tr>
 <tr class="odd">
 <td>転送または処理中</td>
 <td>空</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="even">
 <td>転送または処理中</td>
 <td>かんばんカードがない</td>
-<td>いいえ</td>
-<td>いいえ</td>
-<td>いいえ</td>
-<td>いいえ</td>
-<td>いいえ</td>
-<td>いいえ</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="odd">
 <td>転送または処理中</td>
 <td>かんばんカードはあるが、かんばんに割り当てられていない</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="even">
 <td>処理</td>
@@ -163,22 +163,22 @@ ms.locfileid: "7566814"
 <li>準備済</li>
 <li>処理中</li>
 </ul></td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="odd">
 <td>処理</td>
 <td>完了</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 </tbody>
 </table>

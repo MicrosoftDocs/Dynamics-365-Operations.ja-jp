@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-oldolg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 28f902c589cd80f1c34dc2758232548309db9aca
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 937341e17688959e5721153c61af904a88608b17
+ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474631"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7790941"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>品目に対する安全在庫フルフィルメント
 
@@ -189,5 +189,9 @@ ms.locfileid: "7474631"
 マスター プランの補充フェーズでは、安全在庫補充の優先度が下がることはもうありません。 手持在庫は、他の任意の需要タイプの前に使用できます。 延滞計算の時に、遅れた販売明細行、BOM 明細行の要件、および他のすべての需要タイプを調べ、それらが安全在庫が使用できるように指定されている時間に期限遵守で配送されるかどうかを見極めるため、新しいロジックが追加されます。 安全在庫の使用により遅延が最小限にできることをシステムが示す場合、販売明細行またはBOM 明細行は、最初の補充を安全在庫に置き換え、代わりにシステムが安全在庫の補充をトリガーします。
 
 計画または品目が延滞計算に対して設定されていない場合、安全在庫制約には他の任意の需要タイプと同じ優先順位があります。 つまり、他の需要タイプの前に、手持在庫およびその他の利用可能な在庫の引当があります。
+
+## <a name="additional-resources"></a>追加リソース
+
+- [安全在庫仕訳帳を使用して品目の最小補充を更新します](safety-stock-journal.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

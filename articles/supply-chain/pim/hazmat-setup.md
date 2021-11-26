@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ac6a9b4316fa260a86c124f86d04645625e9b808
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577435"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778012"
 ---
 # <a name="set-up-hazardous-materials"></a>危険物の設定
 
@@ -27,7 +27,7 @@ ms.locfileid: "7577435"
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>ご利用のシステムで危険物機能を有効にする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化または無効化することができます。 この機能は次のように一覧表示されます。
 
 - **モジュール :** *製品情報管理*
 - **機能名 :** *危険物の製品情報および出荷ドキュメント*

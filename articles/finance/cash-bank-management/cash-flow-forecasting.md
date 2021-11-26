@@ -2,7 +2,7 @@
 title: キャッシュ フロー予測
 description: このトピックでは、キャッシュ フロー予測プロセスの概要を示します。 また、キャッシュ フロー予測がシステムの他のモジュールと統合されている方法についても説明します。
 author: panolte
-ms.date: 09/23/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7547958"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752907"
 ---
 # <a name="cash-flow-forecasting"></a>キャッシュ フロー予測
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 キャッシュ フロー予測ツールで将来のキャッシュ フローと必要通貨の分析を行い、会社が将来必要とする現金を見積もることができます。 キャッシュ フロー予測を入手するには、次の作業を完了する必要があります。
 
@@ -93,9 +94,12 @@ ms.locfileid: "7547958"
 在庫供給と需要予測は、キャッシュ フロー予測に含めることができます。 **キャッシュ フロー予測の設定** ページの **在庫管理** タブで、キャッシュ フロー予測に含める予測モデルを選択します。 キャッシュ フロー予測に含めるかどうかは、個々の供給予測および需要予測の行で上書きできます。
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>キャッシュフロー予測の分析コードを設定する
-**キャッシュフロー予測の設定** ページの新しいタブでは、**キャッシュ フローの予測** ワークスペースでフィルター処理に使用する財務分析コードをコントロールできます。 このタブは、キャッシュ フロー予測機能が有効になっている場合にのみ表示されます。 
+**キャッシュフロー予測の設定** ページの新しいタブでは、**キャッシュ フローの予測** ワークスペースでフィルター処理に使用する財務分析コードをコントロールできます。 このタブは、Finance Insights でキャッシュ フロー予測機能が有効になっている場合にのみ表示されます。 
 
 **分析コード** タブで、フィルター処理に使用する分析コードを一覧から選択し、方向キーを使用して右側の列に移動します。 キャッシュ フロー予測データのフィルター処理には、2 つの分析コードのみを選択できます。 
+
+### <a name="setting-up-external-source"></a>外部ソースの設定
+外部データを入力したり、キャッシュフロー予測にインポートしたりできます。 外部データの入力またはインポートを行う前に、外部ソースを設定する必要があります。 **外部ソース** タブで、外部キャッシュ フロー カテゴリを設定します。 カテゴリは、**発信** または **着信** のいずれかです。 転記タイプとして **流動性** を選択する必要があります。 **法人設定** グリッドで、外部キャッシュ フロー カテゴリが適用される法人および対応する主勘定を選択します。
 
 ### <a name="project-management-and-accounting"></a>プロジェクト管理および会計
 

@@ -1,7 +1,7 @@
 ---
 title: 残余決済
 description: その金額を勘定科目に適用することで、決済活動から残りの金額を決済することができます。
-author: mikefalkner
+author: roschlom
 ms.date: 10/16/2018
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 1eb82c1f5982b30052acb2cb7659f6c07f2a4da54b68f602a2afb4e499fbcc73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 216c5c1d7db72e5f5071f2cd03656df538a64e72
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719791"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754099"
 ---
 # <a name="settle-remainder"></a>残余決済
 
@@ -33,7 +33,7 @@ ms.locfileid: "6719791"
 2)  **決済** タブを選択し、**残余決済の有効化** をクリックします。
 3)  **既定の理由コード** で、既定の理由コードを選択します。 **売掛金 > 設定 > 顧客損金処理理由コード** または **買掛金 > 設定 > 顧客損金処理理由コード** で、理由コードは既に設定されている必要があります。 **既定の残余決済勘定** は、で損金処理理由コードに割り当てられる既定勘定になります。
 3)  **既定の残余決済勘定** を必要に応じて更新します。
-4)  **既定の仕訳帳名** で、未処理トランザクションのみを決済する際に支払仕訳帳を作成する場合、使用する支払仕訳帳を選択します。 残余決済機能を有効にした場合は、既定の仕訳帳名を追加する必要があります。
+4)  **既定の仕訳帳名** で、オープンなトランザクションのみを決済する際に支払仕訳帳を作成する場合、使用する支払仕訳帳を選択します。 残余決済機能を有効にした場合は、既定の仕訳帳名を追加する必要があります。
 
 ## <a name="settle-remainder-from-a-journal"></a>仕訳帳の残余を決済します。
 **残余決済** 機能を有効にしない場合でも、引き続き仕訳帳にトランザクションを入力し、過去に行われたようにそれに対してトランザクションを決済することができます。 **OK** ボタンをクリックすると、請求書の未処理残高が現金金額から差し引かれます。 現金で請求書が完全に決済されない場合、請求書は後で決済される残高で未処理のままになります。

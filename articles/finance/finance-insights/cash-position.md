@@ -2,7 +2,7 @@
 title: 現金持高
 description: このトピックでは、キャッシュフロー予測機能が特定の時間における組織のキャッシュ ポジションの予測を行う方法について説明します。 また、異なる期間の予測の表示に使用できるオプションについても説明します。
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: e54caee1e7d703bb134593412bdad77b3af5ab38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386317"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752883"
 ---
 # <a name="cash-position"></a>現金持高
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 キャッシュ ポジションとは、キャッシュフローのプロジェクションであり、近い将来の予測を意味します。 これは、未払いの請求書や注文を支払う顧客からの現金収入の予測に基づくものであり、また購入の請求書や注文のために仕入先に支払われる現金支出の予測に基づくものです。
 
@@ -44,8 +45,5 @@ ms.locfileid: "7386317"
 - **銀行口座** のグリッドには、銀行残高に対する予想される現金流入と流出の影響が表示されます。
 
 キャッシュ ポジションを保存、編集するには、スナップショットを作成します。 スナップショットの操作方法の詳細については、[スナップショットの概要](payment-snapshots.md)を参照してください。
-
-#### <a name="privacy-notice"></a>プライバシー通知
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

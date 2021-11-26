@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e850b44479d36c16db3c993e196cd6bfdbc52ee7
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: d52ff69cfd7a81eb9f19a0ef498c6ceeea77b360
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416604"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782359"
 ---
 # <a name="note-integration"></a>メモ統合
 
@@ -26,9 +26,9 @@ ms.locfileid: "7416604"
 
 顧客情報は、次のように分類できます。
 
-+ **顧客の代わりに Dynamics 365 ユーザーが処理する実用的な情報** – 例えば Contoso (Dynamics 365 ユーザー) が Game Show を実行している場合など。 Contoso の顧客の 1 人 (顧客) が、Game Show に参加したいと思っています。 顧客は、Contoso の従業員に対し、Game Show でのスロットの予約を求める場合があります。 予約は Contoso のイベント出席者のカレンダーで行われます。
-+ **Dynamics 365 ユーザーの実用的な情報** - たとえば、Surface ユニットを購入する顧客は、出荷前にデバイスを贈り物用に包装する必要があるという特別な指示を入力します。 これらの指示は、Contoso の梱包担当者が処理すべき実用的な情報です。
-+ **非実用的な情報** – 例えば、顧客は Contoso ストアにアクセスし、店舗スタッフとの会話の中で、*Halo* のゲームとゲーム用アクセサリに関心を示します。 店舗スタッフはこの情報をメモします。 その後、製品の推奨エンジンを使用して、顧客に対して推奨事項を作成します。
++ **顧客の代わりに Dynamics 365 ユーザーが処理する実用的な情報** - 例えば Contoso (Dynamics 365ユーザー) が Game Show を実行している場合など。 Contoso の顧客の 1 人 (顧客) が、Game Show に参加したいと思っています。 顧客は、Contoso の従業員に対し、Game Show でのスロットの予約を求める場合があります。 予約は Contoso のイベント出席者のカレンダーで発生します。
++ **Dynamics 365 ユーザーの実用的な情報** - たとえば、Surface ユニットを購入する顧客は、出荷前にデバイスを贈り物用に包装する必要があるという特別な指示を入力します。 これらの指示は、梱包を担当する Contoso の従業員が処理する必要がある、実用的な情報です。
++ **非実用的な情報** - 例えば、顧客は Contoso ストアにアクセスし、店舗スタッフとの会話の中で、*Halo* のゲームとゲーム用アクセサリに関心を示します。 店舗スタッフはこの情報をメモします。 その後、製品の推奨エンジンを使用して、顧客に対して推奨事項を作成します。
 
 一般に、実用的な情報は、Finance and Operations アプリと Customer Engagement アプリに *活動* として記録されます。 非実用的な情報は、Finance and Operations アプリに *メモ*、Customer Engagement アプリに *注釈* として記録されます。
 
