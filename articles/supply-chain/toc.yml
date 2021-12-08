@@ -44,7 +44,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
             - name: デモ環境の配置
               href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 配置に関する考慮事項
+            - name: 展開に関する考慮事項
               items:
                 - name: 配置オプション
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
@@ -60,12 +60,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance + Operations (on-premises) の購入
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: オンプレミス配置の倉庫管理のコンフィギュレーション
+                - name: オンプレミス展開の倉庫管理を構成する
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 中国で 21Vianet が運用する Finance and Operations アプリ
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-                - name: フランスの Finance and Operations アプリ
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: 新機能および変更された機能
               items:
                 - name: Finance and Operations アプリの新機能または変更された機能
@@ -2147,9 +2143,9 @@
               items:
                 - name: プロジェクト リソース情報の設定
                   href: procurement/tasks/set-up-project-resource-information.md
-                - name: プロジェクト予算の申請および承認
+                - name: プロジェクト予算ワークフローの作成と送信
                   href: procurement/tasks/submit-approve-project-budget.md
-                - name: プロジェクト予算の修正の申請および承認
+                - name: プロジェクト予算修正の送信と承認
                   href: procurement/tasks/submit-approve-project-budget-revision.md
             - name: 調達に関してよくあるご質問
               href: procurement/procurement-faq.md

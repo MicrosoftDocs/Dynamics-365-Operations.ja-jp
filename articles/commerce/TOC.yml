@@ -54,7 +54,7 @@
                   href: cpe-optional-features.md
                 - name: Dynamics 365 Commerce 評価環境に関してよく寄せられる質問
                   href: cpe-faq.md
-            - name: 配置に関する考慮事項
+            - name: 展開に関する考慮事項
               items:
                 - name: 配置オプション
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/commerce/toc.json
@@ -74,10 +74,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce Data Exchange 実装ガイダンス
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: 中国で 21Vianet が運用する Finance and Operations アプリ
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: フランスの Finance and Operations アプリ
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: サポートの利用
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: アップグレードおよび N-1 のサポート
@@ -1274,6 +1270,8 @@
               href: set-up-rfm-analysis.md
             - name: Dynamics 365 Commerce での Microsoft Clarity の設定
               href: set-up-clarity.md
+            - name: Commerce 分析 (プレビュー)
+              href: commerce-analytics.md
         - name: グローバリゼーション
           items:
             - name: Commerce チャネルの会計統合の概要
@@ -1412,6 +1410,10 @@
                   href: localizations/rus-fpi-sample.md
                 - name: ロシアの顧客情報管理
                   href: localizations/rus-customer-information.md
+            - name: サウジアラビア
+              items:
+                - name: サウジアラビア向け QR コードの生成とレシートへの印刷
+                  href: localizations/emea-sau-qr-code.md
             - name: スウェーデン
               items:
                 - name: キャッシュ レジスター機能
@@ -2536,6 +2538,8 @@
                       href: e-commerce-extensibility/sdk-faq.md
                     - name: Dynamics 365 Commerce 開発に関するデバッグのベスト プラクティス
                       href: e-commerce-extensibility/debugging-best-practices.md
+                    - name: メモリ リークについて e コマース サイトのページをテストする
+                      href: e-commerce-extensibility/memory-leak-detection.md
             - name: Retail SDK
               items:
                 - name: Commerce SDK に移行する
