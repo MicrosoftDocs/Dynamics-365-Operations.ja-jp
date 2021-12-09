@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15b0ad9faf2bcac25dec01a7ab44f804ad2345cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c3947c8a51facfb02012cc8e9a3ffd5887073bd9
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567226"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860616"
 ---
 # <a name="define-coverage-rules-for-items"></a>品目の補充ルールの定義
 
@@ -113,6 +113,7 @@ ms.locfileid: "7567226"
 1. **購買時間** フィールドに '5' を入力します。
 1. **保存** を選択します。
 
-
+> [!NOTE]
+> 製造品目の場合、品目のルートがない場合は **生産リード タイム** が使用されます。 有効なルートが品目に関連付けられている場合、マスター プランでは、リソースのルート時間とキャパシティ (該当する場合) に従って、注文をスケジュールし、日付を計算します。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

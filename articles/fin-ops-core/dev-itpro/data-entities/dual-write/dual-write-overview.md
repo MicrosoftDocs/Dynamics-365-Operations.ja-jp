@@ -10,12 +10,12 @@ ms.custom: intro-internal
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 69abd2b6d4026ef1b5b85d52c561bb060cf82123
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 131c002000ee6ebed81a23f45ce17b7a7fff0b95
+ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781467"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "7817364"
 ---
 # <a name="dual-write-overview"></a>二重書き込みの概要
 
@@ -68,11 +68,7 @@ ms.locfileid: "7781467"
 + 手持在庫状態および詳細を検索する機能
 + プロジェクトの現金化エクスペリエンス
 + 関係者の概念を使用して複数の住所と役割を処理する機能
-+ ユーザーに対する単一のソース管理
-+ 小売業とマーケティング向けの統合チャネル
-+ プロモーションと割引の可視性
-+ サービス要求機能
-+ 合理化されたサービス工程
+
 
 ## <a name="top-reasons-to-use-dual-write"></a>二重書き込みを使用する主な理由
 

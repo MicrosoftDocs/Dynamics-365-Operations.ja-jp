@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641163"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813726"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
 
@@ -290,7 +290,8 @@ ms.locfileid: "7641163"
 |---------|-----|------------------------------|
 | 完成品と完成品のプットアウェイ レポート | あり | あり |
 | 連産物と副産物のプット アウェイ | あり | あり |
-| <p>その他、生産に関連するすべての倉庫管理プロセスを含みます。</p><li>倉庫にリリース</li><li>生産ウェーブプロセス</li><li>原材料のピッキング</li><li>かんばんのプット アウェイ</li><li>かんばんのピッキング</li><li>製造オーダーの開始</li><li>生産仕損</li><li>最後の生産パレット</li><li>材料消費の登録</li><li>空のかんばん</li></ul> | あり | なし |
+| 製造オーダーの開始 | あり | あり |
+| <p>その他、生産に関連するすべての倉庫管理プロセスを含みます。</p><li>倉庫にリリース</li><li>生産ウェーブプロセス</li><li>原材料のピッキング</li><li>かんばんのプット アウェイ</li><li>かんばんのピッキング</li><li>生産仕損</li><li>最後の生産パレット</li><li>材料消費の登録</li><li>空のかんばん</li></ul> | あり | なし |
 | 原材料の補充 | なし | なし |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>倉庫実行のスケール ユニットの管理

@@ -2,7 +2,7 @@
 title: Finance Insights の構成
 description: このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。
 author: ShivamPandey-msft
-ms.date: 1/03/2021
+ms.date: 11/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 5668d3ddff777645b4f1c6608f025d0c5a63208a
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752981"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827031"
 ---
 # <a name="configuration-for-finance-insights"></a>Finance Insights の構成
 
@@ -43,14 +43,34 @@ Finance insights では、Dataverse を使用した Microsoft Dynamics 365 Finan
 
 2. サンドボックス環境で Finance insights を構成している場合は、予測を機能させる前に、本番データをその環境にコピーする必要がある場合があります。 予測モデルでは、複数年分のデータを用いて予測値を構築します。 Contoso のデモ データには、予測モデルを適切にトレーニングさせるだけの十分な過去のデータが含まれていません。 
 
+## <a name="configure-your-azure-ad-tenant"></a>Azure AD テナントの構成
+
+Azure Active Directory (Azure AD) は、Dataverse および Microsoft Power Platform のアプリケーションで使用できるように構成する必要があります。 この構成では、LCSの **プロジェクト セキュリティ ロール** フィールドで **プロジェクト所有者** ロールまたは **環境マネージャ** ロールがユーザーに割り当てられている必要があります。
+
+次の設定が完了していることを確認します:
+
+- **システム管理者** および **システム カスタマイザー** のアクセスが Power Portal 管理センターにある。
+- Dynamics 365 Finance または同等のライセンスが、Finance Insights アドインをインストールするユーザーに適用されている。
+
+以下の Azure AD アプリが Azure AD に登録されています。
+
+|  申請書                             | アプリ ID                               |
+|------------------------------------------|--------------------------------------|
+| Microsoft Dynamics ERP マイクロサービス CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
+    
 ## <a name="configure-dataverse"></a>Dataverse のコンフィギュレーション
 
 以下の手順で、Finance insights に Dataverse を構成します。
 
 - LCS で、環境のページを開き、**Power Platform 統合** のセクションがすでに設定されていることを確認します。
 
-    - 既に設定されている場合、 Finance 環境にリンクされている Dataverse の環境名が表示されます。
-    - まだ設定されていない場合は、**設定** を選択します。 Dataverse 環境の設定には最大で 1 時間ほどかかる場合があります。 設定が正常に完了している場合、Finance 環境にリンクされている Dataverse の環境名が表示されます。
+    - Dataverse が既に設定されている場合、Finance 環境にリンクされている Dataverse の環境名が表示されます。
+    - Dataverse がまだ設定されていない場合は、**設定** を選択します。 Dataverse 環境の設定には 1 時間ほどかかる場合があります。 設定が正常に完了すると、Finance 環境にリンクされている Dataverse の環境名が表示されます。
+    - この統合が既存の Microsoft Power Platform 環境で設定されている場合は、リンクされた環境が無効な状態でないことを管理者に確認してください。
+
+        詳細については、[Power Platform 統合の有効化](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) を参照してください。 
+
+        Microsoft Power Platform 管理者サイトを開くには、<https://admin.powerplatform.microsoft.com/environments> へ移動します。
 
 ## <a name="configure-the-finance-insights-add-in"></a>Finance Insights アドインの構成
 

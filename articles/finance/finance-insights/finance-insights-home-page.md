@@ -2,7 +2,7 @@
 title: Finance Insights ホーム ページ
 description: Finance insights には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを正確かつ的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752859"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813750"
 ---
 # <a name="finance-insights-home-page"></a>Finance Insights ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。 これらの新しい機能を、仕入先の支払および回収の自動化と組み合わせると、意思決定を推進し、現在および将来のビジネス課題に効果的に対応するための行動を取ることのできる、高度でインテリジェントな財務システムが提供されます。
+Finance Insights には構成可能かつ拡張可能なソリューションが用意されており、会社のキャッシュ フローを的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能では、インテリジェントな機械学習テンプレートを使用して、提供されたデータ (ビューローからの消費者レポート情報など、サード パーティからのデータを含む) を使用してモデルを構築します。 これらのインテリジェントな機能は、意思決定に役立ち、現在および予想されるビジネス上の課題に効果的に対応するための行動を支援します。 ユーザーは、Finance Insights で使用または出力されるデータについて責任を負います。
 
 > [!NOTE]
 > Finance Insights のプレビューは、米国、カナダ、英国、ヨーロッパ、アジア太平洋、日本、オーストラリア、ニュージーランドで配置することができます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。

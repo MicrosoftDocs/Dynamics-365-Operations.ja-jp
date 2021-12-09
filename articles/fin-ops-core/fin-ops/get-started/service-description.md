@@ -2,19 +2,19 @@
 title: Finance and Operations アプリのサービス説明
 description: このトピックでは、Finance and Operations アプリのサービス説明を示します。
 author: tomhig
-ms.date: 09/29/2021
+ms.date: 11/17/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581819"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825403"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations アプリのサービス説明
 
@@ -50,7 +50,7 @@ Finance and Operations アプリの運用モデルでは、サービスの有効
 
 ### <a name="customer-activities"></a>顧客活動
 
-顧客は、[Success by Design](/dynamics365/fasttrack/success-by-design-overview) のフレームワークに従い、パートナーや [Microsoft FastTrack](/dynamics365/fasttrack/) と協力し、[Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) で提供されるツールとベスト プラクティス テンプレートを使用して、ソリューションを実装します。 一般的な活動は次のとおりです。
+顧客は、[Dynamics 365 実装ガイド](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide)、[Success by Design](/dynamics365/fasttrack/success-by-design-overview) のフレームワーク、[Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) で提供されるツールとベスト プラクティスのテンプレートに従って、パートナーや [Microsoft FastTrack](/dynamics365/fasttrack/) と協力し、ソリューションを実装します。 一般的な活動は次のとおりです。
 
 - ユーザー ID とセキュリティ管理
 - 業務プロセスの定義、開発、および操作

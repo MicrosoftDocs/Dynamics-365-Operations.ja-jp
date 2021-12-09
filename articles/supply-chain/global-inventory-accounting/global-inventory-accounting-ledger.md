@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: b29bb1aea9e96b5ef39303025cb286f0d1fde12c
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: 0130aef7212256a11ca9d27ffdd4af7a0aa6d98c
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678886"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860428"
 ---
 # <a name="global-inventory-accounting-ledger"></a>グローバル在庫会計元帳
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 グローバル在庫会計には、独自の一連の元帳があります。 必要に応じて、関連する法人に対して在庫関連のトランザクションが処理されるたびに、システムは任意の数のグローバル在庫会計元帳で、そのトランザクションを計上することができます。
 

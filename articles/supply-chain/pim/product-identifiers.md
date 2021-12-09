@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 792245e7821fe2ecb147e2b4756f3178fcdb17d1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1a311b4a304984044a1c3bd3924c129821afbbb9
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569676"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825378"
 ---
 # <a name="product-identifiers"></a>製品 ID
 
@@ -39,7 +39,7 @@ Dynamics 365 Supply Chain Management では、製品の主要な識別子は製�
 
 多くの場合、製品番号は元々 Dynamics 365 Supply Chain Management で作成されません。 代わりに、製品ライフ サイクル管理 (PLM) システムまたは製品データ管理 (PDM) システムで、製品に関連付けられます。 この場合は、製品および製品バリアントをインポートするデータ エンティティを使用します。 Supply Chain Management では、すべての工程で番号が使用されます。
 
-Supply Chain Management を実装するときは、製品番号の戦略を特に考慮する必要があります。 適正な番号付けシステムは、物流フローが改善され、エラーを防ぐのに役立ちます。 適正な商品 ID は、最大 15 の文字です。 原則的には、10 文字未満で、5 つ以上の分類文字が含まれています。 高速検索を有効にするため、検索名を使用することもできます。 検索名は、製品の分類を表す追加の名前です。
+Supply Chain Management を実装するときは、製品番号の戦略を特に考慮する必要があります。 適正な番号付けシステムは、物流フローが改善され、エラーを防ぐのに役立ちます。 適正な商品 ID は、通常 20 文字以下ですが、一般的には 10 文字未満で 5 つ以下の分類文字を使用することをお勧めします。 高速検索を有効にするため、検索名を使用することもできます。 検索名は、製品の分類を表す追加の名前です。
 
 Microsoft Dataverse を使用すると、Supply Chain Management の製品番号も、Microsoft Dataverse の製品番号になります。 製品バリアントは、特徴的製品として Dataverse に同期されます。
 

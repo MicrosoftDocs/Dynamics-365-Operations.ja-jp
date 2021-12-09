@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3e0840944b7619f870194f6c16e15672bb888546
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: ae0aebc73fc9b5d31409131d78ad1bff7f3771cd
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678546"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860641"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>プロセス自動化フローを呼び出して品質指示を作成する
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 12/1/2021 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 12/1/2021 -->
 
 組織では、標準的な業務プロセスを自動化し、より便利な対話機能をスタッフに提供し、さまざまなデータ信号やシステムを利用して業務プロセスを自動的に進めるという要求が高まっています。 ロボティック プロセス オートメーション (RPA) と Microsoft Power Automate により、企業はコードなしのエクスペリエンスを使用して反復プロセスを自動化できるため、効率と精度が向上します。
 

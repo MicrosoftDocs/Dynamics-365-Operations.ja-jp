@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752620"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827056"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insights の設定に関する問題のトラブルシューティング
 
@@ -70,3 +70,26 @@ Dynamics 365 Finance ユーザーには、環境の Microsoft Power Apps ユー�
 最初に、キャッシュ フロー予測口座と流動性口座を設定し、有効にします。 詳細については、「[キャッシュ フロー予測](../cash-bank-management/cash-flow-forecasting.md)」を参照してください。 この設定が完了したにもかかわらず、期待通りの結果が得られない場合は、[キャッシュ フロー予測の設定のトラブルシューティング](../cash-bank-management/cash-flow-forecasting-tsg.md)を参照してください。
 
 次に、Finance insights のキャッシュ フロー予測機能 (**現金と銀行管理 \> 設定 \> Finance Insights \> キャッシュ フロー予測**) が有効になっていること、AI モデルの学習が完了していることを確認します。 トレーニングが完了しない場合は、**今すぐ予測** を選択してモデルのトレーニング プロセスを開始します。
+
+## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>現象: Microsoft Dynamics Lifecycle Services に新しいアドインのインストール ボタンが表示されないのはなぜですか?
+
+### <a name="resolution"></a>解決策
+
+最初に、**環境マネージャー** または **プロジェクト所有者** ロールが、Microsoft Dynamics Lifecycle Services (LCS) の **プロジェクト セキュリティ ロール** フィールドでサインインしたユーザーに割り当てられていることを確認します。 新しいアドインをインストールするには、これらのプロジェクト セキュリティ ロールの 1 つが必要です。
+
+適切なプロジェクト セキュリティ ロールが割り当てられている場合は、ブラウザー ウィンドウを更新して、**新しいアドインのインストール** ボタンを表示する必要があります。
+
+## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>現象: Finance Insights アドインがインストールされていないようです。 なぜですか?
+
+### <a name="resolution"></a>解決策
+
+次の手順を完了する必要があります。
+
+- **システム管理者** および **システム カスタマイザー** のアクセスが Power Portal 管理センターにあることを確認します。
+- Dynamics 365 Finance または同等のライセンスが、アドインをインストールするユーザーに適用されていることを確認します。
+- 次の Azure AD アプリが Azure AD に登録されていることを確認します: 
+
+  | 申請書                  | アプリ ID           |
+  | ---------------------------- | ---------------- |
+  | Microsoft Dynamics ERP マイクロサービス CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  
