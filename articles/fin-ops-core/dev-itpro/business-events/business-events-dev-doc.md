@@ -1,23 +1,23 @@
 ---
 title: ビジネス イベント開発者ドキュメント
 description: このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
-author: Sunil-Garg
-ms.date: 09/19/2019
+author: jaredha
+ms.date: 11/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 96cb77155aa8f25ab85b80dbcb333ba5fc7d966a1c2e5abbd1a0491ced98035e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f32a68a870e03286a704fdbd32ee88228c75281a
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713882"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867234"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -605,9 +605,9 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContext
 {
     private utcdatetime eventTime;
-    public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
+    public utcdatetime parmEventTime(utcdatetime _eventTime = eventTime)
     {
-        eventTime = \_eventTime;
+        eventTime = _eventTime;
         return eventTime;
     }
 }
@@ -622,7 +622,7 @@ class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContex
 public final class CustomPayloadContextBusinessEventsSender_Extension
 {
     protected BusinessEventsCommitLogPayloadContext
-    buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
+    buildPayloadContext(BusinessEventsCommitLogEntry _commitLogEntry)
     {
         BusinessEventsCommitLogPayloadContext payloadContext = next
         buildPayloadContext(_commitLogEntry);
@@ -642,17 +642,18 @@ public final class CustomPayloadContextBusinessEventsSender_Extension
 **BusinessEventsServiceBusAdapter** クラスには、**addProperties** という名前の CoC メソッドがあります。
 
 ```xpp
+using Microsoft.ServiceBus.Messaging;
+
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
 public final class CustomBusinessEventsServiceBusAdapter_Extension
 {
-    protected void addProperties(BrokeredMessage \_message,
-    BusinessEventsEndpointPayloadContext \_context)
+    protected void addProperties(BrokeredMessage _message, BusinessEventsEndpointPayloadContext _context)
     {
+        next addProperties(_message, _context);
         if (_context is CustomCommitLogPayloadContext)
         {
-            CustomCommitLogPayloadContext customPayloadContext = \_context as
-            CustomCommitLogPayloadContext;
-            var propertyBag = \_message.Properties;
+            CustomCommitLogPayloadContext customPayloadContext = _context as CustomCommitLogPayloadContext;
+            var propertyBag = _message.Properties;
             propertyBag.Add('EventId', customPayloadContext.parmEventId());
             propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
             // Convert the enum to string to be able to serialize the property.
@@ -660,6 +661,28 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
             customPayloadContext.parmBusinessEventCategory()));
             propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
             propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
+        }
+    }
+}
+```
+
+
+**BusinessEventsEventGridAdapter** クラスには、**setContextProperties** という名前の CoC メソッドがあります。 次の例は、イベント グリッド アダプターに対するこのステップの概要を示しています。 eventGridMessage には、フィルター処理できる件名があります。
+
+```xpp
+using Microsoft.Azure.EventGrid.Models;
+
+[ExtensionOf(classStr(BusinessEventsEventGridAdapter))]
+public final class CustomBusinessEventsEventGridAdapter_Extension
+{
+    protected void setContextProperties(EventGridEvent _eventGridEvent, BusinessEventsEndpointPayloadContext _context)
+    {
+        next setContextProperties(_eventGridEvent, _context);
+        if (_context is CustomCommitLogPayloadContext)
+        {
+            CustomCommitLogPayloadContext customPayloadContext = _context as CustomCommitLogPayloadContext;
+
+            _eventGridEvent.Subject = _eventGridEvent.Subject + customPayloadContext.parmLegalEntity();
         }
     }
 }
@@ -701,10 +724,9 @@ public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 if (!(_endpoint is CustomBusinessEventsEndpoint))
 {
     BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
-    \_endpoint.RecId);
+    _endpoint.RecId);
 }
-CustomBusinessEventsEndpoint customBusinessEventsEndpoint = \_endpoint as
-CustomBusinessEventsEndpoint;
+CustomBusinessEventsEndpoint customBusinessEventsEndpoint = _endpoint as CustomBusinessEventsEndpoint;
 customField = customBusinessEventsEndpoint.CustomField;
 if (!customField)
 {

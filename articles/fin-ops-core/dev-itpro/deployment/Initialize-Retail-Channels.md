@@ -2,7 +2,7 @@
 title: Commerce Scale Unit (クラウド) の初期化
 description: このトピックでは、Commerce Scale Unit (クラウド) を初期化する方法について説明します。
 author: AamirAllaq
-ms.date: 10/12/2021
+ms.date: 11/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 1e25a0d3290aabbf789a8e1b5f9d8989c5009970
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 116c90a0228ff0c41976c8f9273e1c97f3b27889
+ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641101"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "7817275"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
@@ -34,16 +34,17 @@ ms.locfileid: "7641101"
 
 1. バージョン 8.1.2.x またはそれ以降を持つレベル 2 サンドボックスまたは運用環境を配置します。
 2. 環境ごとに最大 2 つの Commerce Scale Unit をセルフ配置できます。 Microsoft Dynamics Lifecycle Services (LCS) 内の環境ごとに複数の Commerce Scale Unit を必要とする場合は、サポート要求を作成し、**追加 Commerce Scale Unit の要求** を入力し、環境 ID、Commerce Scale Unit の数、および目的のデータセンター リージョンを指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の Commerce Scale Unit を必要としない場合は、サポート要求を作成する必要はありません。 
-3. 環境で Retail ライセンス コンフィギュレーション キーが有効になっていることを確認します。 詳細については、[ライセンス コードとコンフィギュレーション キーのレポート](../sysadmin/license-codes-configuration-keys-report.md) を参照してください。 Commerce Scale Unit を使用するには、次のキーを有効にする必要があります。
+3. Commerce Scale Unit を初期化するには、Lifecycle Services でプロジェクト所有者のアクセス許可を持っている必要があります。
+4. 環境で Retail ライセンス コンフィギュレーション キーが有効になっていることを確認します。 詳細については、[ライセンス コードとコンフィギュレーション キーのレポート](../sysadmin/license-codes-configuration-keys-report.md) を参照してください。 Commerce Scale Unit を使用するには、次のキーを有効にする必要があります。
 
-- RetailBasic
-- RetaileCommerce - Dynamics 365 Commerce にeコマースを使用する予定の場合。
-- RetailGiftCard - ギフト カードを使用する予定の場合。
-- RetailInvent - 在庫を使用する予定の場合。
-- RetailModemodePos - 販売時点管理 (POS) を使用する予定の場合。
-- RetailReplenishment - 補充を使用する予定の場合。
-- RetailScheduler
-- RetailStores - POS を使用する予定の場合。
+  - RetailBasic
+  - RetaileCommerce - Dynamics 365 Commerce にeコマースを使用する予定の場合。
+  - RetailGiftCard - ギフト カードを使用する予定の場合。
+  - RetailInvent - 在庫を使用する予定の場合。
+  - RetailModemodePos - 販売時点管理 (POS) を使用する予定の場合。
+  - RetailReplenishment - 補充を使用する予定の場合。
+  - RetailScheduler
+  - RetailStores - POS を使用する予定の場合。
 
 
 ## <a name="region-availability"></a>地域の可用性

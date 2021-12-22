@@ -2,7 +2,7 @@
 title: ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 description: このトピックでは、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
 author: akviklis
-ms.date: 10/05/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: akviklis
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 55414479a61273ac63283aef276d1ceb286a7ca3
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: d86d7549b8aae3dd1565e90a4c3e69fbc6e09e28
+ms.sourcegitcommit: 013196e9737acfc9a3d1f842f351e95f79f64d36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605345"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "7878881"
 ---
 # <a name="set-up-and-deploy-the-dynamics-365-commerce-localization-for-brazil"></a>ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 
@@ -60,14 +60,14 @@ Commerce 本社で電子申告を設定するには、次の手順を実行し�
 1. **Regulatory Configuration Service に接続する** ダイアログ ボックスで、**Regulatory Configuration Service に接続するには、ここをクリックしてください** を選択し、ダイアログ ボックスに戻って **OK** を選択します。
 1. 次のデータ モデル、データ モデル マッピング、および形式コンフィギュレーションの最新の共有バージョンをインポートします。
 
-    - (プレビュー) 会計ドキュメントのマッピング
-    - (プレビュー) NF-e キャンセル エクスポートの形式 (BR)
-    - (プレビュー) NF-e 状態要求エクスポートの形式 (BR)
-    - (プレビュー) NF-e 送信エクスポートの形式 (BR)
-    - (プレビュー) NFC-e 送信エクスポートの形式 (BR)
-    - (プレビュー) NFC-e コンティンジェンシー エクスポートの形式 (BR)
-    - (プレビュー) NFC-e 会計ドキュメントのマッピング
-    - (プレビュー) NFC-e 会計ドキュメントの検証形式 (BR)
+    - 会計ドキュメントのマッピング
+    - NF-e キャンセル エクスポートの形式 (BR)
+    - NF-e 状態要求エクスポートの形式 (BR)
+    - NF-e 送信エクスポートの形式 (BR)
+    - NFC-e 送信エクスポートの形式 (BR)
+    - NFC-e コンティンジェンシー エクスポートの形式 (BR)
+    - NFC-e 会計ドキュメントのマッピング
+    - NFC-e 会計ドキュメントの検証形式 (BR)
 
 1. **組織管理 \> ワークスペース \> 電子申告** の順に移動し、**コンフィギュレーションをレポートする** を選択します。
 1. **会計ドキュメントのマッピング** を選択し、**既定のモデル マッピング** オプションを **いいえ** に設定します。
@@ -80,7 +80,7 @@ Commerce 本社で電子申告を設定するには、次の手順を実行し�
 Commerce 本社に会計施設および NF-e (Nota Fiscal Eletrônica) の連邦パラメータを設定するには、次の手順に従います。
 
 1. **組織管理 \> 組織 \> 会計機関 \> 会計機関** の順に移動します。
-1. **税務登録番号 - CNPJ, IE & CCM** フィールドで、税登録番号を入力します。
+1. **税務登録番号 - CNPJ, IE & CCM** フィールドで、税登録番号を入力します。 (CNPJ は *Cadastro Nacional da Pessoa Jurídica*、IE は *Inscrição Estadual*、CCM は *Cadastro de Contribuinte Mobiliário* を意味します。)
 1. **施設の住所フィールド** で、住所を入力します。
 1. CSC トークンと CS C英数字のコードを入力して、CSC (Código de Segurança do Contribuinte) 暗号化を設定します。
 1. 税務当局サービスによる認証と会計ドキュメントのデジタル署名に適切なデジタル証明書を選択します。
@@ -225,7 +225,7 @@ Commerce 本社で会計登録プロセスを設定するには、次の手順�
 
 ## <a name="customer-information-management"></a>顧客情報管理
 
-**顧客情報の追加** 操作を使用して、CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas) 番号などのブラジル固有の顧客税登録番号、および住所を販売トランザクションに追加できます。 顧客情報は、トランザクションに対して指定された顧客レコードから引き出す場合も、手動で入力することもできます。 顧客情報を DANFE の会計レシートに印刷して、請求に使用できます。
+**顧客情報の追加** 操作を使用して、CNPJ または CPF (Cadastro de Pessoas Físicas) などのブラジル固有の顧客税登録番号、および住所を販売トランザクションに追加できます。 顧客情報は、トランザクションに対して指定された顧客レコードから引き出す場合も、手動で入力することもできます。 顧客情報を DANFE の会計レシートに印刷して、請求に使用できます。
 
 Commerce 本社で **顧客住所の追加** を構成するには、次の手順を実行します。
 
@@ -234,6 +234,15 @@ Commerce 本社で **顧客住所の追加** を構成するには、次の手�
 1. ボタンを追加し、**アクション** フィールドで **顧客情報の追加** を選択します。
 
 画面のレイアウトとボタン グリッドの操作方法の詳細については、[販売時点管理 (POS) の画面レイアウト](../pos-screen-layouts.md) を参照してください。
+
+## <a name="enable-customer-searches-based-on-tax-registration-numbers-in-pos"></a>POS での税務登録番号による顧客検索を有効にする
+
+POS で CNPJ/CPF および CCM の税登録番号で顧客を検索できるようにするには、次の手順に従います。
+
+1. Commerce 本部の **コマース パラメーター** ページ、**POS 検索基準** タブ、**顧客検索基準** クイック タブで、レコードを追加します。 
+1. 新しいレコードの **顧客検索基準** フィールドで、**税登録番号** を選択します。
+1. **絞り込み可能** チェック ボックスはオフにし、**ショートカットとして表示** チェック ボックスを選択します。
+1. **配送スケジュール** ページで、1110 のジョブを実行します。
 
 ## <a name="set-up-parameters-for-statements"></a>ステートメントのパラメーターを設定します
 

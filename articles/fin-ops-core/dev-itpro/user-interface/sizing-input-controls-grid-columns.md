@@ -1,8 +1,8 @@
 ---
 title: 入力コントロールとグリッド列のサイズ
 description: このトピックでは、コントロールとグリッドのサイズを制御することによってフォームの一貫した概観を作成する方法について説明します。
-author: RobinARH
-ms.date: 06/20/2017
+author: jasongre
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.reviewer: tfehr
 ms.custom: 31181
 ms.assetid: 6a7bb5b0-7350-46f1-a641-3f7a3187b687
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9971f31c96226736a037ecd397f81e8504d6485
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1faede1ba530eb3c2c3ab6d48063e17edc0a815e
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781246"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890764"
 ---
 # <a name="input-controls-and-grid-column-sizes"></a>入力コントロールとグリッド列のサイズ
 
@@ -38,12 +38,13 @@ ms.locfileid: "7781246"
 
 | サイズ | 文字の範囲 | ピクセル (px) 単位のサイズ |
 |------|-----------------|---------------------|
-| XS   | 0-5             | 60                  |
-| S    | 6-15            | 120                 |
-| M    | 16-30           | 180                 |
-| L    | [&gt;] 30          | 240                 |
+| XS   | 0-5             | 60 (大の 25%)  |
+| S    | 6-15            | 120 (大の 50%)  |
+| 月    | 16 ～ 20           | 180 (大の 75%)  |
+| L    | >=30            | 240                 |
 
-**注記:** 明示的なピクセル数は、ユーザー インターフェイスの発展に伴って、時間の経過と共に変化する可能性があります。 開発者は明示的なピクセル サイズに頼るべきではありません。
+> [!NOTE]
+> 明示的なピクセル数は、ユーザー インターフェイスが展開するにつれて時間の経過と共に変化します。ただし、フィールドの相対サイズは一定である必要があります。 開発者は明示的なピクセル サイズに頼るべきではありません。
 
 ## <a name="forcing-a-desired-discrete-size"></a>必要な個別のサイズの強制
 前の表で示すように、グリッド ホスト コントロールの幅を 6 文字から 15 文字に変更すると、列の幅には影響しません。 レイアウト エンジンは、6〜15 文字の範囲内のすべてのコントロール幅に同じ幅を与えます。これは、この範囲のコントロールが小さい (S) とみなされるためです。 中規模な (M) サイズにコントロールを拡張する場合は、幅の値は 16 文字以上 31 文字未満の値に設定する必要があります。 入力コントロールの区分する方法の指針については、次の表を参照してください。 場合によっては、フォーム パターンの使用は開発者によって定義されたサイズ変更をオーバーライドまたは非表示にします。

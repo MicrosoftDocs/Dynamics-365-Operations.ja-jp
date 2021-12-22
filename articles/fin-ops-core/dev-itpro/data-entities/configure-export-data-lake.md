@@ -1,8 +1,8 @@
 ---
-title: Azure Data Lake へのエクスポートの構成
+title: Azure Data Lake アドインにエクスポート機能をインストールする
 description: このトピックでは、Azure Data Lake へのエクスポートの構成に関する情報を説明します。
 author: MilindaV2
-ms.date: 09/02/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,29 +14,27 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform Update 33
-ms.openlocfilehash: 4a084049c77e56acc9b6e3536da672ae6b39be7d
-ms.sourcegitcommit: 4fbf031319109660c0462a800f85848571eb040d
+ms.openlocfilehash: 0cd1f6daeba02e272723cdec766df2d649c791ae
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7471349"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867366"
 ---
-# <a name="configure-export-to-azure-data-lake"></a>Azure Data Lake へのエクスポートのコンフィギュレーション
+# <a name="install-export-to-azure-data-lake-add-in"></a>Azure Data Lake アドインにエクスポート機能をインストールする
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> **Data Lake へのエクスポート** 機能は、米国、カナダ、英国、ヨーロッパ、南アジア、東アジア、オーストラリア、および日本の地域でパブリック プレビューで表示されます。 Finance and Operations 環境がそれらの地域にある場合は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境でこの機能を有効にできます。
+> **Data Lake へのエクスポート** アドインは通常、以下の地域で使用できます: 米国、カナダ、英国、ヨーロッパ、東南アジア、東アジア、オーストラリア、インド、および日本。 使用している Finance and Operations 環境がそれらの地域にある場合は、その環境に **Data Lake へのエクスポート** アドインをインストールできます。 将来的に Microsoft はその他の地域へもこの機能を追加していきます。 [Yammer グループのプレビュー](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all)に参加すると、連絡を取り合ったり、機能や今後の改善点を理解するのに役立つ質問をすることができます。
 >
-> **環境のプレビュー期間中に機能が一時的に利用できない場合や、お客様の地域で利用できない場合があります。**
-> 
-> 数ヶ月後に、Microsoft は追加の地域および環境でこの機能を有効にします。 環境が以前にリストされた地域のひとつにない場合は、[アンケートを完了し、お知らせください](https://aka.ms/FnODataLakePreviewSurvey)。 [プレビュー Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all)に参加することもできます。 Yammer グループを使用して、機能を理解するのに役立つ質問をお伝えすることができます。 
->
-> **Data Lake へのエクスポート** 機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効化するには、クラウド ベースの Tier 2 またはそれ以上の環境が必要です。 
-> 
-> Tier 1 (開発者) 環境では、[GitHub ツール](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md) を使用して機能の実装のプロトタイプを作成または計画できます。 このツールを使用すると、機能によってエクスポートされたのと同じ形式で、階層 1 またはサンドボックス環境のデータをストレージ アカウントにエクスポートすることができます。 
-> 
-> **プレビュー中は、運用環境ではこの機能がサポートされていません。** 運用環境では、この機能を有効にすることはできません。 サンドボックス (階層 2 以降) 環境でのみプレビューできます。
+> **Data Lake へのエクスポート** 機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効化するには、クラウド ベースの Tier 2 またはそれ以上の環境が必要です。 ただし、レベル 1 (開発者) 環境では、[GitHub ツール](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md)を使用して機能のプロトタイプを作成できます。 これらのツールを使用すると、機能によってエクスポートされたのと同じ形式で、レベル 1 またはサンドボックス環境のデータを Data Lake にエクスポートすることができます。 
+
+Finance and Operations 環境で **Data Lake へのエクスポート** 機能を使用する前に、管理者は **Data Lake へのエクスポート** アドインをインストールし、環境を Data Lake に接続する必要があります。 **Data Lake へのエクスポート** アドインを、LCS を介して環境にインストールする必要があります。 この操作を実行するには、LCS 管理者に連絡する必要があります。
+
+**Data Lake へのエクスポート** アドインには、Data Lake の接続情報が必要です。 したがって、まだストレージ アカウントを作成していない場合は、インストールする前にそれを (Azure Data Lake) 作成する必要があります。 必要な Azure リソースを作成するには、自分に代わって Azure リソースを作成できる管理者に連絡する必要があるかもしれません。 
+
+次のステップ バイ ステップの説明は、プロセスの手順を示します。 
 
 ## <a name="create-service-principal-for-microsoft-dynamics-erp-microservices"></a><a name="createServicePrincipal"></a> Microsoft Dynamics ERP Microservices のサービス プリンシパルの作成
 
@@ -125,7 +123,7 @@ Data Lake ストレージ アカウントは、Finance and Operations アプリ�
     - **パフォーマンス**: **標準** を選択することを推奨します。
     - **アカウントの種類**: 必ず **Storage V2** を選択してください。 **詳細オプション** ダイアログ ボックスに、**Data Lake ストレージ Gen2** オプションが表示されます。
 
-3. **詳細タブ** で、 **Data Lake storage Gen2** \> **階層の名前空間** を選択し、**有効化** を選択し ます。 このオプションを無効にすると、Power BI データフローや AI Builder などのサービスを使用して Finance and Operations アプリが書き込んだデータを使用できなくなる場合があります。
+3. **詳細タブ** で、 **Data Lake storage Gen2** \> **階層の名前空間** を選択し、**有効化** を選択し ます。 このオプションを無効にすると、**Data Lake へのエクスポート** 機能がエラーで失敗する場合があります。
 4. **確認して作成** を選択します。 デプロイの完了後は、新たなリソースが Azure ポータルに表示されます。
 5. Azure portal で、作成したストレージ アカウントを選択します。 ストレージ<a name="storageaccount"></a>アカウント名をコピーして保存し ます。
 
@@ -154,7 +152,7 @@ Data Lake ストレージ アカウントは、Finance and Operations アプリ�
 
 ## <a name="create-a-key-vault"></a><a name="createkeyvault"></a> キー コンテナーの作成
 
-キーボルトは、ストレージ アカウント名などの詳細情報を Finance and Operations アプリに共有する安全な手段です 。 キー コンテナーとシークレットを作成するには、次の手順を完了してください。
+キーボルトは、ストレージ アカウント名などの詳細情報を Finance and Operations アプリに共有する安全な手段です 。 キー コンテナーとシークレットを作成するには、次の手順を完了してください。 Data Lake へのエクスポート機能を使用するために、キー コンテナーを作成することをお勧めします。 複数のサービスへのアクセスを提供するために、同一のキー コンテナーを使用することはお勧めしません。
 
 1. Azure portalで、**新しいリソースの作成** を選択し、**キー コンテナー** を検索して選択し ます。
 2. **キー コンテナーの作成** ダイアログ ボックスの **場所** フィールドで、環境があるデータ センターを選択します。

@@ -2,7 +2,7 @@
 title: Finance and Operations 仮想エンティティに関するよく寄せられる質問
 description: このトピックでは、Finance and Operations 仮想エンティティに関してよく寄せられる質問の一覧を示します。
 author: Sunil-Garg
-ms.date: 03/31/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8c29f325ddb60abdef09a5cfb16cc85a537bf5e789639d9994186e5d43b054fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dce2ffd79c6c2abb9bc77d647a80c43499cbc40
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747217"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913564"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよく寄せられる質問
 
@@ -121,5 +121,13 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 仮想エンティティに他のエンティティとのリレーションシップがある場合は、フィールドの選択リストに関連エンティティの外部キー値が含まれる場合、仮想エンティティ フレームワークは、関連するエンティティをクエリする必要があります。 既定では、エンティティに対するクエリは、呼び出し元が特定のフィールド セットを要求しない限り、すべてのフィールドを返します。 ベスト プラクティスは、絞り込み選択リストを指定します。 これは、パフォーマンスの低下を防ぐのに役立ちます。
 
 この問題の例については、[仮想テーブル クエリの Dataverse 最適化](../../../human-resources/hr-developer-optimize-virtual-table-queries.md) で説明します。
+
+### <a name="can-i-configure-virtual-entities-to-connect-other-power-platform-environments-to-the-finance-and-operations-environment-even-if-the-power-platform-integration-is-enabled"></a>Power Platform 統合が有効になっている場合でも、他の Power Platform 環境を Finance and Operations 環境に接続するように仮想エンティティを構成できますか?
+
+[ビジネス イベントとデータ イベントを Dataverse と同期する](../business-events/business-events-flow.md)など、Microsoft Power Platform 統合の一部の機能は、Microsoft Power Platform 統合を介してリンクされた Finance and Operations アプリおよび Power Platform 環境の間でのみ機能します。一方、複数の Power Platform 環境および Finance and Operations 環境の間で仮想エンティティを手動で構成することは引き続き可能です。 
+
+Microsoft Power Platform 統合が有効な場合、Finance and Operations 環境は、単一の Power Platform 環境にリンクされます。 これは、統合の 1 対 1 の環境関係になります。 これを有効にすると、2 つの環境間で仮想エンティティが自動的に構成されます。 つまり、[Dataverse 仮想エンティティの構成](admin-reference.md)ドキュメントで定義されている手動の仮想エンティティ構成は必要ないことを意味します。 2 つの環境間で Microsoft Power Platform 統合を有効にする前に手動の仮想エンティティ構成が行われた場合、統合を有効にすると手動構成は無視され、自動構成を使用して 2 つの環境が接続されます。
+
+自動仮想エンティティ構成は、Microsoft Power Platform 統合を通じて Finance and Operations 環境にリンクされた Power Platform 環境に使用されますが、追加の Power Platform 環境で仮想エンティティを手動で構成して、複数の Power Platform 環境で Finance and Operations 環境の仮想エンティティを有効にすることができます。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

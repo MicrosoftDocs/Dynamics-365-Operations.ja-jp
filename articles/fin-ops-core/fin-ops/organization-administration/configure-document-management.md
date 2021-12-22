@@ -2,7 +2,7 @@
 title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: jasongre
-ms.date: 10/15/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 86f11f6882c042976a50633a38f2c02b3cf538a7
-ms.sourcegitcommit: 2949636d2fd6aea8507e102379cf9b1a188e4529
+ms.openlocfilehash: 824a32fc562c588179bf12fb0db8b7d3b903c385
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7650994"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913534"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。 これには、この機能に関連する概念および機能に関する情報が含まれています。
 
@@ -235,7 +234,7 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 このファイル コンテンツ タイプが正しく指定されていない場合、関連付けられているドキュメントが予期した動作をしない可能性があります。 このため、これらの API を使用する場合は、次のいずれかのアクション コースを考慮する必要があります。  
 
--  先行する API のいづれかで、`_fileContentType` パラメーターの **null** を渡します。 これにより、ファイル名から正しいコンテンツ タイプを推定できます。 
+-  先行する API のいずれかで、`_fileContentType` パラメーターの **null** を渡します。 これにより、ファイル名から正しいコンテンツ タイプを推定できます。 
 -  `_fileContentType` パラメータを含めない次のいずれかの方法で切り替えます。 これにより、誤ったファイル コンテンツ タイプを受け渡す可能性が回避されます。
     -  attachFileToCommon() を置き換える **attachFileForRecord()**
     -  attachFile() を置き換える **attachFileForReference()**

@@ -2,7 +2,7 @@
 title: 売上認識の設定
 description: このトピックでは、売上認識の設定オプションとその意味について説明します。
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 11/24/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675181"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867223"
 ---
 # <a name="revenue-recognition-setup"></a>売上認識の設定
 [!include [banner](../includes/banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "7675181"
 
 2 番目のシナリオは、再配賦が発生した後に仕訳帳が作成された場合に発生します。 再配賦は、以前に請求された販売注文に販売注文ラインが追加されるか、元の契約の一部である明細行を含む新しい販売注文が作成されるときに発生します。 新しい販売注文明細行が追加される前に請求書が転記された場合は、転記済の顧客請求書に対して修正勘定品目を作成する必要があります。
 
-仕訳帳は、**仕訳帳名** ページ (**売上認識 \> 設定 \> 仕訳帳名**) で設定されます。 仕訳帳タイプは **売上認識** に設定する必要があります。 売上認識仕訳帳を使用すると、転記先の転記階層を選択できます。
+仕訳帳は、**仕訳帳名** ページ (**売上認識 \> 設定 \> 仕訳帳名**) で設定されます。 仕訳帳タイプは **売上認識** に設定する必要があります。 
 
 ## <a name="parameters-for-revenue-recognition"></a>売上認識のパラメーター
 

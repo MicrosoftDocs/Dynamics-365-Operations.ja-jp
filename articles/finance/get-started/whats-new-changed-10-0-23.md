@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: dbe4b303182bd9016fce9b6772a4c50122925b18
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 0338d7481f4a9de452739f2290bad75765c12d67
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647773"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890657"
 ---
-# <a name="preview-features-in-dynamics-365-finance-10023"></a>Dynamics 365 Finance 10.0.23 の機能のプレビュー
+# <a name="preview-features-in-dynamics-365-finance-10023-january-2022"></a>Dynamics 365 Finance 10.0.23 (2022 年 1 月) のプレビュー機能
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,6 +31,7 @@ ms.locfileid: "7647773"
 
 - **リリースのプレビュー**: 2021 年 10 月
 - **リリースの一般提供 (セルフ更新)**: 2021 年 12 月
+- **リリースの一般提供 (自動更新)**: 2022 年 1 月
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
@@ -38,11 +39,11 @@ ms.locfileid: "7647773"
 
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化  |
 |----|----|----|----|
-| グローバル アドレス帳 | 住所の設定で国/地域ごとに既定の都道府県を定義する | グローバル アドレス帳の住所設定で国/地域ごとに既定の都道府県を定義できるようになりました。 既定の都道府県が設定されている場合は、その国/地域に新しい郡または市のレコードが作成される際、それが都道府県フィールドに入力された規定値になります。 詳細については、[住所の設定](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md)を参照してください | 既定で有効になっています。 |
-|税の計算    | [自由形式の請求書との統合](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [税計算 Finance and Operations との統合](/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | 自動的に管理者、作成者、マーケティング担当者、またはアナリスト   |
-|電子請求    | [イタリア SDI システムへのコンフィギュレーション可能な電子請求書の送信](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/electronic-invoicing-service-configurable-e-invoice-submission-italian-sdi-sistema-di-interscambio-system-preview)   | [電子請求の概要](/dynamics365/finance/localizations/e-invoicing-service-overview)   | 管理者、作成者、またはアナリスト   |
+| グローバル アドレス帳 | 住所の設定で国/地域ごとに既定の都道府県を定義する | グローバル アドレス帳の住所設定で国/地域ごとに既定の都道府県を定義できるようになりました。 既定の都道府県が設定されている場合は、その国/地域に新しい郡または市のレコードが作成される際、それが都道府県フィールドに入力された規定値になります。 詳細については、[住所の設定](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md)を参照してください | 既定で有効 |
+|税の計算    | [自由形式の請求書との統合](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [税計算 Finance and Operations との統合](/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | 機能管理   |
+|電子請求    | [イタリア SDI システムへのコンフィギュレーション可能な電子請求書の送信](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/electronic-invoicing-service-configurable-e-invoice-submission-italian-sdi-sistema-di-interscambio-system-preview)   | [電子請求の概要](/dynamics365/finance/localizations/e-invoicing-service-overview)   | 機能管理   |
 |   買掛金  | [仕入先未処理トランザクション レポート](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/open-vendor-transaction-report)  |  [仕入先請求書の概要](../accounts-payable/vendor-invoices-overview.md) |  機能管理   |
-|  買掛金  | [買掛金勘定で数量オプション パラメーターに基づいて請求明細行を作成](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/create-invoice-lines-based-quantity-option-parameter-accounts-payable)  | [仕入先請求書をインポートする際に請求明細行を生成する](../accounts-payable/auto-create-invc-lines-at-import.md) | 自動的 |
+|  買掛金  | [買掛金勘定で数量オプション パラメーターに基づいて請求明細行を作成](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/create-invoice-lines-based-quantity-option-parameter-accounts-payable)  | [仕入先請求書をインポートする際に請求明細行を生成する](../accounts-payable/auto-create-invc-lines-at-import.md) | 既定で有効 |
 
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
@@ -64,7 +65,7 @@ ms.locfileid: "7647773"
 Dynamics 365 Finance 10.0.23 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.23 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md) を参照してください。 
 
 ### <a name="bug-fixes"></a>バグ修正 
-この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXX) を参照してください。 このリリースでは次の問題が修正されています。
+この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=627874) を参照してください。 このリリースでは次の問題が修正されています。
 
 | 問題| Description |  
 |---|---|

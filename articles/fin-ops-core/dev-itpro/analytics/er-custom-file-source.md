@@ -13,21 +13,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 537633473a21af04c55f566f17b316317d02fd7b
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: ef4702749c333e8258ee17bfff534c67570de04d
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647776"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913532"
 ---
 # <a name="implement-a-custom-er-source-of-inbound-documents"></a>受信したドキュメントのカスタム ER ソースを実装する
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 [電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用して受信ドキュメントからデータをインポートするには、インポートをサポートする ER [形式](general-electronic-reporting.md#FormatComponentInbound) を構成し、その形式をデータ ソースとして使用する **宛先** タイプのモデル マッピングを実行します。 データをインポートするには、インポートするドキュメントに移動し、SharePoint フォルダーを、無人モードでインポート可能な受信ドキュメントの標準 ER ソースとして使用します。 このプロセスの詳細については、[SharePoint からのデータ インポートを構成する](er-configure-data-import-sharepoint.md) を参照してください。
 
-ER フレームワークのアプリケーション・プログラミング・インターフェース (API) では、ER フォーマットでデータ インポート用に [解析](/er-parse-incoming-documents.md) される受信ドキュメントにアクセスするための ER ソースのリストを [拡張](er-apis-app10-0-23.md#er-api-extend-file-source) できるようになりました。 したがって、ER の構成を使用して、カスタム ソースに保存されているドキュメントからデータのインポートを実行できます。
+ER フレームワークのアプリケーション・プログラミング・インターフェース (API) では、ER フォーマットでデータ インポート用に [解析](er-parse-incoming-documents.md) される受信ドキュメントにアクセスするための ER ソースのリストを [拡張](er-apis-app10-0-23.md#er-api-extend-file-source) できるようになりました。 したがって、ER の構成を使用して、カスタム ソースに保存されているドキュメントからデータのインポートを実行できます。
 
 このトピックには、受信ドキュメントのカスタム ER ソースを実装して、使用を開始するために完了する必要のある主要なタスクの概要が含まれています。 これらのタスクを完了するには、[SharePoint からのデータ インポートの構成](er-configure-data-import-sharepoint.md)で説明されている仕入先トランザクションのインポートと同じ例を使用します。 これらのタスクのステップは、Microsoft Dynamics 365 Finance の **USMF** 会社で完了することができます。
 

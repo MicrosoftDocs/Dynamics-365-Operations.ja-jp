@@ -1,6 +1,6 @@
 ---
-title: Azure Data Lake の Finance and Operations アプリ データ
-description: このトピックでは、Data Lakeを実装した Finance and Operations アプリ環境の設定方法を説明します。
+title: Finance and Operations アプリでの Data Lake へのエクスポート
+description: このトピックでは、Finance and Operations アプリ環境でデータを選択して、Data Lake でデータを使用できるようにする方法について説明します。
 author: MilindaV2
 ms.date: 10/25/2021
 ms.topic: article
@@ -14,28 +14,24 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Platform Update 34
-ms.openlocfilehash: 9e966aedf365c50b660cb0948c998a94947443d0
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: b5528e632f8035194da9bc5c3edb1aaac02a7a8d
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713710"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867261"
 ---
-# <a name="finance-and-operations-apps-data-in-azure-data-lake"></a>Azure Data Lake の Finance and Operations アプリ データ
+# <a name="export-to-data-lake-in-finance-and-operations-apps"></a>Finance and Operations アプリでの Data Lake へのエクスポート 
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> **Data Lake へのエクスポート** 機能は、米国、カナダ、英国、ヨーロッパ、南アジア、東アジア、オーストラリア、および日本の地域でパブリック プレビューで表示されます。 Finance and Operations 環境がそれらの地域にある場合は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境でこの機能を有効にできます。
-> 
-> **環境のプレビュー期間中に機能が一時的に利用できない場合や、お客様の地域で利用できない場合があります。**
-> 
-> 数か月後に、Microsoft は追加の地域および環境でこの機能を有効にします。 環境がプレビューが有効になっている地域にない場合は、[アンケートを完了し、お知らせください](https://aka.ms/FnODataLakePreviewSurvey)。 [プレビュー Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all)に参加することもできます。 Yammer グループを使用して、機能を理解するのに役立つ質問をお伝えすることができます。 
+> **Data Lake へのエクスポート** 機能は通常、以下の地域で使用できます: 米国、カナダ、英国、ヨーロッパ、東南アジア、東アジア、オーストラリア、インド、および日本。 使用している Finance and Operations 環境がそれらの地域にある場合は、その環境に **Data Lake へのエクスポート** アドインをインストールできます。 将来的に Microsoft はその他の地域へもこの機能を追加していきます。 [Yammer グループのプレビュー](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all)に参加すると、連絡を取り合ったり、機能や今後の改善点を理解するのに役立つ質問をすることができます。
 
 **Data Lake へのエクスポート** 機能を使用すると、Finance and Operations アプリから自分の Data Lake にデータをコピーできます (Azure Data Lake Storage Gen2)。 このシステムでは、含めるテーブルやエンティティを選択できます。 必要なデータを選択した後、システムが初期コピーを行います。 システムは、変更、削除、追加を適用することで、選択したデータを最新の状態に保ちます。 Finance and Operations アプリのインスタンスのデータを変更後、Data Lake でデータが使用可能になるまでには数分を要する場合があります。
 
-## <a name="turn-on-the-export-to-data-lake-feature"></a>Data Lake へのエクスポート 機能を有効にする
-この機能を使用するには、[Azure Data Lake へのエクスポートを構成](configure-export-data-lake.md) を参照してください。
+## <a name="enable-the-export-to-data-lake-feature"></a>Data Lake へのエクスポート機能を有効にする
+この機能を使用する前に、[Azure Data Lake アドインへのエクスポートをインストールする](configure-export-data-lake.md)を参照してください。
 
 ## <a name="select-data"></a>データの選択
 
@@ -72,7 +68,15 @@ Data Lake にステージングする必要のあるテーブルとエンティ�
 
 ## <a name="monitor-the-tables-in-data-lake"></a>Data Lake のテーブルを監視する
 
-システムが Data Lake でデータの更新を維持しているため、データのエクスポートの監視や、スケジュールを設定する必要はありません。 **Data Lake へのエクスポート** ページの **状態** 列で、進行中のデータ エクスポートの状態を確認することができます。
+システムが Data Lake でデータの更新を維持しているため、データのエクスポートの監視や、スケジュールを設定する必要はありません。 **Data Lake へのエクスポート** ページの **状態** 列で、進行中のデータ エクスポートの状態を確認することができます。 
+
+データを選択すると、Azure Data Lake へのエクスポート サービスは、Data Lake 内のデータの初期コピーを作成します。 複数のテーブルを選択する場合、システムは一度に 10 個のテーブルを取得して初期コピーを作成します。 データのサイズやテーブル内のレコード数によっては、このプロセスに数分または数時間かかる場合があります。 エクスポートの進行状況が画面に表示されます。
+
+初期コピーが作成された後、Finance and Operations アプリで変更が行われると、システムによってデータが継続的に更新されます。 レコードの挿入、更新、または削除を行う場合、Data Lake 内のデータ レコードは、それに応じて挿入、更新、または削除されます。
+
+オプションのほぼリアルタイムの変更機能 (現在プレビュー中) を使用すると、Finance and Operations 環境の変更から数分以内に Data Lake 内のデータは更新されます。 それ以外の場合は、Finance and Operations 環境内の変更から数時間以内に Data Lake 内のデータは更新されます。
+
+Finance and Operations 環境にある Data Lake へのエクスポートのページは、Data Lake 内のデータが最後に更新された時のタイプ スタンプを表示します。 システムは、Data Lake 内のデータが更新された時刻を識別するのに役立つデータ フィールドも追加します。 ダウンストリーム プロセスでは、タイム スタンプを使用して、Data Lake 内で変化するデータを検出して処理できます。
 
 ## <a name="troubleshooting-common-issues-and-errors"></a>一般的な問題とエラーに対するトラブルシューティング
 

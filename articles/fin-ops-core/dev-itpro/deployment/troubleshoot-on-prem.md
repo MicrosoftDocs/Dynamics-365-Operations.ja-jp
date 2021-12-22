@@ -2,7 +2,7 @@
 title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: PeterRFriis
-ms.date: 11/08/2021
+ms.date: 11/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 574a5cbb88a79e20b0990e8fa3347e6f5ef3dba4
-ms.sourcegitcommit: 2a6c04448b6e9a073965e4778d0273af67748584
+ms.openlocfilehash: 830a4a84f4dc2df10c426a4700bda92ca81cd8c4
+ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "7775819"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7894734"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -579,22 +579,24 @@ Windows PowerShell で Service Fabric をアップグレードするにはこれ
 
 AOS アカウント パスワードを暗号化するために使用されたデータ暗号化証明書がマシンにインストールされていない場合、これらのエラーのいずれかが発生することがあります。 この証明書が証明書 (ローカル コンピューター) に含まれているか、プロバイダーの種類が正しくない可能性があります。
 
-エラーを解決するには、credentials.json ファイルを検証します。 次のコマンドを (AOS1 上で) 入力することにより、テキストが正しく復号化されていることを確認します。
+エラーを解決するには、credentials.json ファイルを検証します。 インフラストラクチャ フォルダーを AOS ノードにコピーします。またはインフラストラクチャ フォルダーがファイル共有に存在する場合は、AOS ノードからスクリプトを実行します。
 
-```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
-```
+1. 次のコマンドを (AOS1 上で) 実行することにより、テキストが正しく復号化されていることを確認します。
 
-このエラーも、**''** パラメーターが ApplicationManifest ファイルで定義されていない場合にも発生させることができます。 イベント ビューアーで、このパラメータが定義されているどうかを確認するには、**カスタム ビュー** \> **管理イベント** の順に移動し、次の情報を確認します。
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
+    ```
 
-- Credentials.json ファイルの資格情報の暗号化には、正しいレイアウト/構造があります。 詳細については、ご使用の環境に適した設定および配置のトピックの「資格情報の暗号化」のセクションを参照してください。
+2. **Credentials.json** ファイルを開き、資格情報が正しいか確認します。
+3. **Credentials.json** ファイルを再暗号化します。
 
-    - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#encryptcred)
-    - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#encryptcred)
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
+    ```
 
-- 決算引用符が線の終わりまたは次の線に表示されます。
+4. いずれかの資格情報の更新が必要な場合は、サービス操作をトリガーする必要があります。 進行中のサービス操作が失敗した場合、[LCS](https://lcs.dynamics.com) から操作を再試行することで資格情報が更新されたことを確認できます。 環境が既に配置済みの状態である場合は、[LCS](https://lcs.dynamics.com) で、SQL Server を更新する環境の **完全な詳細** リンクを選択し、**管理** を選択してから、**更新の設定** を選択します。 設定は変更しないでください。 **準備** を選択し、準備が完了するまで待機してから、**環境の更新** を選択して環境の更新を開始します。
 
-イベント ビューアーの **カスタム ビュー** \> **管理イベント** で、**Microsoft-Service Fabric** ソース カテゴリのエラーに注意します。
+このエラーも、**''** パラメーターが ApplicationManifest ファイルで定義されていない場合にも発生させることができます。 このパラメータが定義されているどうかを確認するには、イベント ビューアーで、**カスタム ビュー** \> **管理イベント** に移動し、**Microsoft-Service Fabric** ソース カテゴリのエラーに注意します。
 
 ## <a name="properties-to-create-a-dataencryption-certificate"></a>DataEncryption 証明書を作成するためのプロパティ
 
@@ -618,21 +620,10 @@ DataEncryption 証明書を作成するのにには、次のプロパティを�
 次のコマンドを使用して暗号化されたテキストを検証することもできます。
 
 ```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
+.\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
 ```
 
 「暗号の解読に使用する証明書と秘密キーを見つけることができません」というメッセージを受信した場合は、axdataenciphermentcert と svc-AXSF$ AXServiceUser ACLs を確認してください。
-
-credentials.json ファイルが変更された場合、実行する必要のあるアクションは、LCS の環境ステータスによって異なります。
-
-- 環境が LCS に配置されている場合は、次の操作を行います。
-    1. 環境ページに移動して、**管理** を選択します。
-    1. **更新プログラムの設定** を選択します。
-    1. 設定は変更しないでください。 **準備** を選択します。
-    1. 数分後に環境が準備されたら、**配置** を選択します。
-
-- LCS で環境が失敗状態の場合は、次の操作を行います。
-    1. **再試行** を選択します。 新しい Credentials.json ファイルは、再試行操作中に使用されます。
 
 上記のソリューションのいずれも機能しない場合は、次の手順を実行します。
 
@@ -650,7 +641,7 @@ credentials.json ファイルが変更された場合、実行する必要のあ
     AOS マシンのいずれかで、データの暗号化証明書が正しいことを確認する次のコマンドを実行します。
 
     ```powershell
-    Invoke-ServiceFabricDecryptText '<encrypted string>' -StoreLocation LocalMachine
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
     ```
 
 7. いずれかの証明書を変更する必要がある場合、もしくは構成が正しくない場合は、次の手順を実行してください:
@@ -658,7 +649,16 @@ credentials.json ファイルが変更された場合、実行する必要のあ
     1. **ConfigTemplate.xml** ファイルを編集して、正しい値が出るようにします。
     2. すべてのセットアップ スクリプトと **Test-D365FOConfiguration** スクリプトを実行します。
 
-8. LCS で環境を再構成します。
+8. credentials.json ファイルが変更された場合、実行する必要のあるアクションは、LCS の環境ステータスによって異なります:
+
+    - 環境が LCS に配置されている場合は、次の手順に従います:
+
+        1. 環境ページに移動して、**管理** を選択します。
+        1. **更新プログラムの設定** を選択します。
+        1. 設定は変更しないでください。 **準備** を選択します。
+        1. 数分後に、環境が準備され、**配置** を選択できます。
+
+    - LCS で環境が失敗状態の場合は、**再試行** を選択します。 新しい Credentials.json ファイルは、再試行操作中に使用されます。
 
 ## <a name="gateway-fails-to-deploy"></a>ゲートウェイで配置に失敗する
 
@@ -697,7 +697,7 @@ Category does not exist.
 
 ## <a name="management-reporter"></a>Management Reporter
 
-追加のログは、プロバイダーを登録することで実行できます。 これを実行するには、LCS 共有 アセット ライブラリから **LBDMRDeployerTroubleshooter** アセットをダウンロードします。 資産はモデル資産タイプで検索できます。 **プライマリ** オーケストレータ マシンに ZIP ファイルをコピーし、抽出してから、次のコマンドを実行します。 プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorerで、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。
+プロバイダーを登録することで、追加のログを実行できます。 プロバイダーを登録するには、LCS 共有アセット ライブラリで、資産タイプとして **モデル** を選択してから、**Microsoft Dynamics 365 Finance + Operations (オンプレミス), LBDMRDeployerTroubleshooter** アセットをダウンロードします。 **プライマリ** オーケストレータ マシンにダウンロードされた ZIP ファイルをコピーし、解凍してから、次のコマンドを実行します。 (プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorer で、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。)
 
 > [!NOTE]
 > イベント ビューアーの結果が正しく表示されない場合 (たとえば、単語が切り詰められた場合など)、最新のマニフェストおよび .dll ファイルを取得してください。 最新のマニフェストと .dll ファイルを取得するには、エージェント ファイル共有の WP フォルダに移動します。 この共有は、適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックで作成されました。
@@ -819,7 +819,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 **ステップ:**
 
 1. 既に存在する場合は、データベースから axdbadmin ユーザーを削除します。
-2. **ConfigTemplate.xml** ファイルで、AXDB データベースに追加する必要があるユーザー名を指定してください。
+2. **ConfigTemplate.xml** ファイルで、**userName** 属性を更新することで、AXDB データベースに追加する必要があるユーザー名を指定します。
 
     ```xml
     <Security>
@@ -827,7 +827,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
     </Security>
     ```
 
-3. axdbadmin ユーザーを追加するには、もう一度初期化データベース スクリプトを実行します。
+3. [データベースの構成](./setup-deploy-on-premises-pu41.md#configuredb)の説明に従って、初期化データベース スクリプトを再実行して axdbadmin ユーザーを追加します。
 
 ## <a name="unable-to-resolve-the-xpath-value"></a>xPath 値を解決することができません。
 

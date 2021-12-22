@@ -2,7 +2,7 @@
 title: 二重書き込みの新機能および変更された機能
 description: このトピックでは、リリース計画、主要な発表、二重書き込みのドキュメントなどへのリンクを提供します。
 author: tonyafehr
-ms.date: 08/11/2021
+ms.date: 11/22/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 35e78506d84b99137a8a21af5b12f620d422b89a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c3486e9a871b849e08f16893273c749a6f95e03a
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782198"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860573"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -25,15 +25,21 @@ ms.locfileid: "7782198"
 
 二重書き込みは、Microsoft Dynamics 365 アプリと Finance and Operations アプリの Customer Engagement アプリ間の、ほぼリアルタイムの対話を提供する標準のインフラストラクチャです。 デュアル書き込みを開始する方法については、[デュアル書き込みホームページ](dual-write-home-page.md) を参照してください。
 
-[リリース計画](/dynamics365/release-plans/) におけるデュアル書き込み機能および変更点に関する最新情報を確認してください。
+## <a name="november-2021-release-of-party-and-global-address-book"></a>2021 年 11 月リリースの関係者およびグローバル アドレス帳 
 
-+ [Dataverse のデータ - フェーズ 1](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
-+ [Dataverse のデータ - フェーズ 1 と 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
-+ [Dataverse の Finance and Operations データ – フェーズ 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
+2021 年 11 月リリースの[二重書き込み関係者およびグローバル アドレス帳ソリューション 3.3.0.5](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) には、次の機能とバグ修正が含まれています。 
+
+| フィーチャー | Description |Status |
+|------|---------|-------|
+| [関係者用の単一ビュー](view-party.md)| 関係者データにアクセスするための新しいフォームが提供されています。 **関係者** フォームでは、関連付けられているすべての顧客、連絡先、仕入先、および住所と電子住所と共に、関係者レコードを単一フォームから表示および管理する機能が提供されます。| 一般提供 |
+| バグ修正| **アカウント** フォームでは、**集計** タブからの住所の更新は同期されないので、Microsoft Dataverse および Finance and Operations アプリ間のデータ不一致が引き起こされます。 | 一般提供 |
+| バグ修正| 電子住所が非プライマリからプライマリに変更されると、内線電話番号/説明フィールドへの更新は msdyn_partyelectronicaddress から **連絡先** テーブルには同期されません。  | 一般提供 |
+| バグ修正| Finance and Operations アプリで、連絡先レコードの **性別** フィールドを "不特定" に更新中にエラーが発生しました。 | 一般提供 |
+| バグ修正| Finance and Operations アプリでは、住所の作成中に 2 番目の住所をプライマリとしてマークして保存すると、IsPrimary 値の変更は Dataverse に反映されません。 | 一般提供 |
 
 ## <a name="september-2021-release-of-party-and-global-address-book"></a>2021 年 9 月リリースの当事者およびグローバル アドレス帳 
 
-2021 年 9 月リリースされた修正プログラムの[二重書き込み当事者およびグローバル アドレス帳ソリューション 3.1.0.4](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) は、[二重書き込みコア ソリューション バージョン 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+2021 年 9 月リリースされた修正プログラムの[二重書き込み当事者およびグローバル アドレス帳ソリューション 3.1.0.4](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) は、[二重書き込みコア ソリューション バージョン 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。 
 
 このリリースには、次の表に記載されているバグ修正が含まれています。
 

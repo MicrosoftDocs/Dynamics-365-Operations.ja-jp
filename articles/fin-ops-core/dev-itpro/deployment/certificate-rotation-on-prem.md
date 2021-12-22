@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 4ae6ed7eb4370666db37c82e3e0de9ea6c121fb5
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 4e7603b86e35dc4dbe63a98acc324dce2d0b8e3c
+ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594781"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7894742"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -310,10 +310,37 @@ ms.locfileid: "7594781"
 
 3. ファイルを保存して閉じます。 このネットワークの場所にアクセスするすべてのプログラムを閉じてください。 そうしないと、クリーンアップ プロセスが失敗する可能性があります。
 
+## <a name="rotate-credentialsjson"></a>Credentials.json をローテーションする
+
+新しい **axdataencipherment** 証明書を生成した場合は、**Credentials.json** ファイルを再暗号化する必要があります。
+
+```powershell
+.\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Rotate
+```
+
+または、既存の資格情報をローテーションする場合は、次の手順に従います。
+
+1. **Credentials.json** ファイルを複合化します。
+
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
+    ```
+
+1. **Credentials.json** ファイルを開き、更新する資格情報を更新します。
+
+1. **Credentials.json** ファイルを再暗号化します。
+
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
+    ```
+
+> [!NOTE]
+> インフラストラクチャ フォルダーを Application Object Server (AOS) ノードにコピーするか、AOS ノードからスクリプトを実行してください。
+
 ## <a name="update-deployment-settings-in-lcs"></a>LCS の展開設定の更新
 
 > [!NOTE]
->  ただし、クライアント、データ署名、および暗号化証明書は置換のみ行われます。 また、「[資格情報の暗号化](setup-deploy-on-premises-pu12.md#encryptcred)」で説明されているように、資格情報の Credentials.json ファイルを再作成する必要があります。
+> クライアント、データ署名、および暗号化証明書は置換のみ行われます。
 >
 > 続行する前に、ロケール Dynamics データベースのバックアップを作成する必要があります。
 

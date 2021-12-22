@@ -2,7 +2,7 @@
 title: 地域の検出とリダイレクトを設定する
 description: このトピックでは、Microsoft Dynamics 365 Commerce での eコマース サイトの地域検出とリダイレクトの設定方法について説明します。
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: ''
-ms.openlocfilehash: e0ee14f4d80375c1af865dbcaa72b5b2bf7f1091
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 89337aa1305716b126955db7b119696e4359cb92
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675449"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891483"
 ---
 # <a name="set-up-geo-detection-and-redirection"></a>地域の検出とリダイレクトを設定する
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce での eコマース サイトの地域検出とリダイレクトの設定方法について説明します。
 
@@ -46,6 +47,13 @@ Commerce サイト ビルダーのサイトで地域リダイレクトを有効�
 
 > [!IMPORTANT]
 > **地域リダイレクト機能の有効化** 設定をオンにする前に、**場所に基づく店舗検出の有効化** 設定をオンにします。 詳細については、[場所に基づく店舗検出の有効化](enable-store-detection.md)を参照してください。
+
+## <a name="initialize-the-commerce-scheduler"></a>Commerce スケジューラの初期化
+
+Commerce 本部に入力する国/地域データの同期を有効にするには、**Retail と Commerce \> バックオフィス設定 \> Commerce スケジューラ \> Commerce スケジューラの初期化** で、Commerce スケジューラを初期化する必要があります。 Commerce スケジューラの詳細については、[コンフィギュレーションの更新](dev-itpro/cdx-best-practices.md#update-configurations)を参照してください。 
+
+> [!NOTE]
+> Commerce バージョン 10.0.24 リリース以降、Commerce スケジューラは Commerce 本部の更新後に自動的に実行するように設定できます。 Commerce 本部でこの機能を有効にするには、**ワークスペース \> 機能管理** に移動し、**本部の機能が更新された後に "Commerce スケジューラの初期化" を実行** する機能を有効にしてください。 
 
 ## <a name="associate-countries-and-regions-with-online-stores-in-commerce-headquarters"></a>Commerce 本社でのオンライン ストアへの国と地域の関連付け
 

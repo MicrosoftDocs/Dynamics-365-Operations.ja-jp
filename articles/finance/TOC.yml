@@ -70,15 +70,15 @@
                   items:
                     - name: Finance の新機能や変更された機能に関するホーム ページ
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.23
+                    - name: Finance 10.0.24 (2 月)
+                      href: get-started/whats-new-changed-10-0-24.md
+                    - name: Finance 10.0.23 (1 月)
                       href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (2021 年 11 月)
                       href: get-started/whats-new-changed-10-0-22.md
-                    - name: Finance 10.0.21 (2021 年 10 月)
-                      href: get-started/whats-new-changed-10-0-21.md
             - name: 削除済みまたは非推奨の機能
               items:
-                - name: 削除済みまたは非推奨の機能のホーム ページ
+                - name: 削除済みまたは非推奨の機能に関するホーム ページ
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Dynamics 365 Finance の削除済みまたは非推奨の機能
                   href: get-started/removed-deprecated-features-finance.md
@@ -518,6 +518,8 @@
               href: budgeting/budget-control-overview-configuration.md
             - name: 予算作成の概要
               href: budgeting/basic-budgeting-overview-configuration.md
+            - name: 利用可能な予算財源
+              href: budgeting/budget-funds-available.md
             - name: 職位予測
               href: budgeting/position-forecasting.md
             - name: 予算計画妥当性ドキュメント
@@ -1434,16 +1436,26 @@
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: 電子請求の設定
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: Power Platform プラグイン管理リファレンス
+                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: 電子請求に関するよく寄せられる質問
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
-                - name: 税の計算
+                - name: 税計算
                   items:
-                    - name: 税の計算の概要
+                    - name: 税計算の概要
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: 設定
                       items:
-                        - name: 税の計算の使用を開始する
+                        - name: 税計算の使用を開始する
                           href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: 税コードの設定
+                          href: localizations/set-up-tax-codes.md
+                        - name: 税グループの設定
+                          href: localizations/set-up-tax-groups.md
+                        - name: 品目税グループの設定
+                          href: localizations/set-up-item-tax-groups.md
+                        - name: 税計算のインポートとエクスポート
+                          href: localizations/tax-calculation-import-export-feature.md
                         - name: マスター データ検索用の環境の設定
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: 決定
@@ -2594,6 +2606,8 @@
               items:
                 - name: インドネシアの概要
                   href: localizations/indonesia.md
+                - name: 税金請求書の番号付けと請求
+                  href: localizations/apac-idn-invoicing.md
                 - name: インドネシアの VAT 申告
                   href: localizations/apac-idn-ppn-declaration.md
             - name: イタリア
@@ -2662,6 +2676,8 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: 顧客電子請求書
                   href: localizations/emea-ita-e-invoices.md
+                - name: 仕入先電子請求書
+                  href: localizations/emea-ita-vend-e-invoices.md
                 - name: 年次税通信
                   href: localizations/emea-ita-yearly-tax-communication.md
                 - name: 支払のトレーサビリティ
@@ -2964,6 +2980,20 @@
                   href: localizations/emea-nor-nets-import-format.md
                 - name: VAT 明細書
                   href: localizations/emea-nor-sales-tax-payment-report.md
+                - name: Altinn に直接送信される VAT 還付
+                  items:
+                    - name: Altinn に直接送信される VAT 還付の概要
+                      href: localizations/emea-nor-vat-return.md
+                    - name: ID-porten Web ポータルでの統合ポイントの登録
+                      href: localizations/emea-nor-vat-return-integration-point.md
+                    - name: ID-porten および Altinn Web サービスと相互運用を行う環境の準備
+                      href: localizations/emea-nor-vat-return-setup.md
+                    - name: VAT 還付用の電子メッセージの設定のチェックリスト
+                      href: localizations/emea-nor-vat-return-checklist.md
+                    - name: ID-porten および Altinn Web サービスと相互運用を行う Finance 環境の承認
+                      href: localizations/emea-nor-vat-return-authorization.md
+                    - name: Altinn Web サービスへの VAT 還付の送信
+                      href: localizations/emea-nor-vat-return-submission.md
                 - name: ノルウェーの税の標準監査ファイル (SAF-T)
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: ノルウェーの顧客電子請求書
@@ -3402,9 +3432,9 @@
                       href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
                     - name: HMRC の MTD Web サービスと相互運用を行うための Finance 環境の承認
                       href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                    - name: HMRC の MTD Web サービスに VAT 還付を申請する
+                    - name: HMRC の MTD Web サービスへの VAT 還付の送信
                       href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                    - name: VAT の支払および負債に関する情報を HMRC から取得する
+                    - name: HMRC からの VAT の支払および負債に関する情報の取得
                       href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
                     - name: 英国での VAT 申告に関する VAT 設定の詳細
                       href: localizations/emea-gbr-mtd-vat-integration-declaration.md
@@ -3520,7 +3550,7 @@
                   href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
             - name: 福利厚生の管理
               items:
-                - name: 福利厚生プログラムの定義および管理
+                - name: 給付金プログラムの定義および管理
                   href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
                 - name: 給付金適格性ポリシー
                   href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
@@ -3831,7 +3861,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
-                    - name: リスト
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
+                    - name: List
                       items:
                         - name: リスト関数
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json

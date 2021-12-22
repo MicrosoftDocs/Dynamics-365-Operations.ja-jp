@@ -2,7 +2,7 @@
 title: 実装プロジェクトの研修
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトをオンボードする方法を説明します。
 author: ClaudiaBetz-Haubold
-ms.date: 05/21/2020
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4d7e8a24f361145e5efa8610552e1b4383927f435cf72df8aa52b6c6495ed994
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d66e036af8dcb24d38c287f3304adc0b1aec7fd4
+ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754970"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "7817249"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 
@@ -29,6 +29,7 @@ ms.locfileid: "6754970"
 
 組織が Finance and Operations のサブスクリプションを購入したら、テナント管理者は、組織の Azure Active Directory (Azure AD) テナントを有効にし、次の手順を完了する必要があります。
 
+
 1. InPrivate/Incognito ブラウズ セッションを開いて、[Microsoft 365 管理センター](https://admin.microsoft.com/) に移動します。
 2. テナント管理者の資格情報を使用してログインします。
 3. **請求 > 製品 & サービス** に移動して、配置するアプリケーションに対して有効なサブスクリプションがあることを確認します。 
@@ -36,8 +37,10 @@ ms.locfileid: "6754970"
    > 有効なサブスクリプションが表示されない場合は、ライセンス パートナーに問い合わせて、サブスクリプション トランザクションの状態と、サブスクリプションのテナントを確認してください。 既定では、すべてのMicrosoftオンラインサービスが同じAzure ADテナント上で実行されている必要があります。
 4. 問題のサブスクリプションが有効と表示されている場合は、LCS にサインインして実装のプロジェクト作成フローをトリガーすることにより、次のステップに進むことができます。
 5. 別のプライベートブラウザータブを開き、[Lifecycle Services](https://lcs.dynamics.com)に移動します。 現在のテナント管理者の資格情報を使用してアクセスするには、**ログイン** を選択します。
-6. 実装プロジェクトのプロビジョニングを完了するために、他の表示されたメッセージを承認して確認します。
-7. テナント管理者には、プロビジョニングされた実装プロジェクトのプロジェクト所有者セキュリティ ロールが割り当てられます。  
+   > [!NOTE]
+   > 政府のコミュニティ クラウド (GCC) と他のローカル クラウド配置オプションでは、接続エンドポイントが異なる場合があります。 詳細については、 [Dynamics 365 Finance と Dynamics 365 Supply Chain Management の主権クラウドとローカル クラウド展開オプション](../../dev-itpro//deployment/deployment-options-geo.md) を参照してください。
+7. 実装プロジェクトのプロビジョニングを完了するために、他の表示されたメッセージを承認して確認します。
+8. テナント管理者には、プロビジョニングされた実装プロジェクトのプロジェクト所有者セキュリティ ロールが割り当てられます。  
    > [!NOTE]
    > テナント管理者が実装に参加していない場合は、少なくとも 1 人の追加のプロジェクト所有者を実装プロジェクトに割り当てる必要があります。
 

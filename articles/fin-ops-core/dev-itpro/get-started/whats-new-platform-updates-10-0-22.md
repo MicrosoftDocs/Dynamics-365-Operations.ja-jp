@@ -2,19 +2,19 @@
 title: Finance and Operations アプリ (2021 年 11 月) のバージョン 10.0.22 のプラットフォーム更新プログラム
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.22 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 11/08/2021
+ms.date: 12/01/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-08-31
-ms.openlocfilehash: f0918000bb29cfa9412f05e4a2925d93694f0b7c
-ms.sourcegitcommit: 2a6c04448b6e9a073965e4778d0273af67748584
+ms.openlocfilehash: fc5bb858a952cace54c9753448e5a9725c7a9b55
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "7775817"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883834"
 ---
 # <a name="platform-updates-for-version-10022-of-finance-and-operations-apps-november-2021"></a>Finance and Operations アプリ (2021 年 11 月) のバージョン 10.0.22 のプラットフォーム更新プログラム
 
@@ -37,6 +37,8 @@ ms.locfileid: "7775817"
 | クライアント機能 | <p>**階層ビューアー コントロールへの視覚的な更新**</p><p>特に 400% ズーム シナリオでは、アクセシビリティを向上させるために HierarchyViewer コントロールに変更が加えられました。 これらの変更には、すべてのズーム レベルでのコントロールの可読性を高めるために、コントロールを再スタイルして Fluent デザイン言語で合わせることが含まれます。 | [HierarchyViewer コントロール](../user-interface/hierarchy-viewer-control.md) | 既定 |
 | バッチ処理 | <p>**バッチ OData API**</p><p>バッチ機能により、バッチ ジョブを再キューするために使用できる Open Data Protocol (OData) アプリケーション プログラミング インターフェイス (API) が公開されるようになりました。 顧客は、OData エンドポイントを使用して、ターミナル状態にあるバッチ ジョブを再キューできます。 この機能は、Microsoft Power Automate、カスタム API その他を使用することで任意の自動化と統合できます。 | [バッチ OData API](../sysadmin/batch-odata-api.md) | 既定 |
 | Microsoft Power Platform 統合 | <p>Microsoft Power Platform 統合で新しいシナリオが有効になります。 次にいくつか例を挙げます。</p><ul><li>統合の設定</li><li>二重書き込みおよび仮想エンティティの自動設定</li><li>合理化されたユーザー設定</li><li>Finance and Operations アプリ ビジネス イベントおよび Microsoft Dataverse のデータ イベント</li><li>改善された開発ツール</li><li>強化されたアドイン エクスペリエンス</li></ul> | [Power Platform 収束性により有効化された新しいシナリオ](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence) | 既定 |
+| Power BI |  Power BI embedded および Power BI.com 統合は、10.0.22 リリースの一部としてアップグレードされ、最新の Power BI Desktop リリースと互換性があります。 この変更により、ユーザーはワークスペース レポートの編集時に Power BI Desktop の最新バージョンを使用できるようになりました。 これはインフラストラクチャの変更であり、環境がリリース 10.0.22 にアップグレードされると自動的に行われます。    | [PowerBI.com 統合の構成](../analytics/configure-power-bi-integration.md)<br><br>[Power BI Desktop を使用した分析レポートの作成](../analytics/author-distribute-power-bi-reports.md) | 既定 |
+
 
 ## <a name="additional-resources"></a>追加リソース
 

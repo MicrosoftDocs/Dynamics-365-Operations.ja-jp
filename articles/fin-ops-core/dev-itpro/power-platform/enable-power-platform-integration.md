@@ -2,7 +2,7 @@
 title: Microsoft Power Platform 統合を有効にする
 description: このトピックでは Finance and Operations アプリと Dataverse をMicrosoft Dynamics Lifecycle Services (LCS) に使用して Microsoft Power Platform 統合を有効にする方法について説明します。
 author: jaredha
-ms.date: 10/27/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-13
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: aa538ab30196459c24b58542aa4b9bf44bbfe285
-ms.sourcegitcommit: ed43ceae9b2ef3f616b81127bcf4c4b0862e23f5
+ms.openlocfilehash: d47d2b5c9390553234ff84b9e83dc29786d77aa9
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "7714835"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891940"
 ---
 # <a name="enable-the-microsoft-power-platform-integration"></a>Microsoft Power Platform 統合を有効にする
 
@@ -147,6 +147,16 @@ Finance and Operations アプリ環境が複数の Microsoft Power Platform 環�
 
 二重書き込み構成オプションの詳細については、[リンクの不一致](../data-entities/dual-write/lcs-setup.md#linking-mismatch)を参照してください。
 
+## <a name="troubleshooting-the-setup"></a>設定のトラブルシューティング
+
+設定は、Dataverse ベースの環境を配置するさまざまなステージで失敗する可能性があります。
+
+設定が失敗するたびに、エラー メッセージが表示されます。 次の図は、二重書き込み設定に失敗した場合のエラー メッセージの例を示しています。
+
+![二重書き込み設定に失敗した場合のエラー メッセージ。](media/Error.png)
+
+エラー メッセージに基づいて、ライセンスや容量の問題への対処が必要となる場合があります。 これらの問題が修正されたら、LCS の **環境の詳細** ページの **Power Platform 統合** セクションにある **再開** を選択して設定を完了することができます。
+
 ## <a name="enable-the-integration-for-cloud-hosted-development-environments"></a>クラウド ホスト開発環境の統合を有効にする
 
 このセクションの手順を完了することで、クラウド ホスト開発環境の Microsoft Power Platform 統合を手動で有効にできます。 クラウド開発環境の配置方法の詳細については、[開発環境の配置とアクセス](../dev-tools/access-instances.md)を参照してください。
@@ -234,6 +244,25 @@ Dataverseは、作成した Azure AD アプリケーションを使用して Fin
         return $webSitePhysicalPath
     }
 
+    function Get-WebConfigValue($Key)
+    {
+        $webroot = Get-AosWebSitePhysicalPath
+        $webConfigPath = Join-Path $webroot "web.config"
+        if (-not (Test-Path $webConfigPath))
+        {
+            Throw "Unable to find web.config file at '$($webConfigPath)'..."
+        }
+
+        [xml]$webConfigDocument = Get-Content $webConfigPath -ErrorAction stop
+        $appSettingNode = $webConfigDocument.SelectSingleNode("/configuration/appSettings/add[@key='$($Key)']")
+        if ($appSettingNode)
+        {
+            return $appSettingNode.Value
+        }
+
+        return $null
+    }
+
     function Set-WebConfigValue($Key, [string]$Value)
     {
         $webroot = Get-AosWebSitePhysicalPath
@@ -301,9 +330,59 @@ Dataverseは、作成した Azure AD アプリケーションを使用して Fin
 
     function Update-WebConfigValueFromHost($Key, $Prompt, $Type)
     {
-        $value = Read-Host -Prompt $Prompt
-        Confirm-ValueOfType -Value $value -Type $Type
-        Set-WebConfigValue -Key $Key -Value $value
+        $shouldUpdate = $true
+        $currentValue = Get-WebConfigValue -Key $Key
+        if ($currentValue)
+        {
+            if ($Type -eq "Secret")
+            {
+                $currentValue = "<redacted>"
+            }
+
+            while ($true)
+            {
+                $yesNoResponse = Read-Host -Prompt "Value for '$($Prompt)' is already set to '$($currentValue)'. Do you want to overwrite it? (y/n)"
+                if ($yesNoResponse -eq "y" -or $yesNoResponse -eq "yes")
+                {
+                    $shouldUpdate = $true
+                    break
+                }
+                elseif ($yesNoResponse -eq "n" -or $yesNoResponse -eq "no")
+                {
+                    $shouldUpdate = $false
+                    break
+                }
+                else
+                {
+                    Write-Host "Did not recognize input value '$($yesNoResponse)' - please try again."
+                }
+            }
+        }
+
+        if ($shouldUpdate)
+        {
+            $value = Read-Host -Prompt "Enter $($Prompt)"
+            Confirm-ValueOfType -Value $value -Type $Type
+            if ($Type -eq "Secret")
+            {
+                # If value is blank, assume we are trying to clear it
+                $secretValue = ""
+                if (-not [string]::IsNullOrEmpty($value))
+                {
+                    $webroot = Get-AosWebSitePhysicalPath -ErrorAction stop
+                    $webrootBinPath = Join-Path $webroot "bin"
+                    $b2bInvitationHelperDllPath = Join-Path $webrootBinPath "Microsoft.Dynamics.AX.Security.B2BInvitationHelper.dll"
+                    Add-Type -Path $b2bInvitationHelperDllPath
+
+                    $encryptionEngine = [Microsoft.Dynamics.AX.Security.B2BInvitationHelper.Cryptor]::GetEncryptionEngine()
+                    $secretValue = [System.Convert]::ToBase64String($encryptionEngine.Encrypt($value))
+                }
+
+                $value = $secretValue
+            }
+
+            Set-WebConfigValue -Key $Key -Value $value
+        }
     }
 
     function Enable-Flight($FlightName)
@@ -367,11 +446,11 @@ Dataverseは、作成した Azure AD アプリケーションを使用して Fin
 
     try
     {
-        Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationUrl" -Prompt "Enter Dataverse Organization URL" -Type "Uri"
-        Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationId" -Prompt "Enter Dataverse Organization id" -Type "Guid"
-        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAadTenantId" -Prompt "Enter Dataverse AAD Tenant id (e.g. Contoso.OnMicrosoft.com)" -Type "String"
-        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppId" -Prompt "Enter Dataverse AAD App id" -Type "Guid"
-        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppSecret" -Prompt "Enter Dataverse AAD App secret" -Type "String"
+        Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationUrl" -Prompt "Dataverse Organization URL" -Type "Uri"
+        Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationId" -Prompt "Dataverse Organization id" -Type "Guid"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAadTenantId" -Prompt "Dataverse AAD Tenant domain (e.g. Contoso.OnMicrosoft.com)" -Type "String"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppId" -Prompt "Dataverse AAD App id" -Type "Guid"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppSecretEncrypted" -Prompt "Dataverse AAD App secret" -Type "Secret"
 
         Enable-Flight -FlightName "BusinessEventsCDSIntegration"
 
@@ -392,6 +471,7 @@ Dataverseは、作成した Azure AD アプリケーションを使用して Fin
         Write-Host "Press any key to continue..."
         [System.Console]::ReadKey() | Out-Null
     }
+
     ```
 
 3. 指示に従って Windows PowerShell スクリプトを実行します。 次の情報を入力します。
@@ -402,14 +482,5 @@ Dataverseは、作成した Azure AD アプリケーションを使用して Fin
     - **Dataverse AAD アプリ ID** – 既に作成した Azure AD アプリケーションの **アプリケーション (クライアント) ID** の値を入力します。
     - **Dataverse AAD アプリ シークレット** – Azure AD アプリのために既に作成したシークレット キーの値を入力します。
 
-## <a name="troubleshooting-the-setup"></a>設定のトラブルシューティング
-
-設定は、Dataverse ベースの環境を配置するさまざまなステージで失敗する可能性があります。
-
-設定が失敗するたびに、エラー メッセージが表示されます。 次の図は、二重書き込み設定に失敗した場合のエラー メッセージの例を示しています。
-
-![二重書き込み設定に失敗した場合のエラー メッセージ。](media/Error.png)
-
-エラー メッセージに基づいて、ライセンスや容量の問題への対処が必要となる場合があります。 これらの問題が修正されたら、LCS の **環境の詳細** ページの **Power Platform 統合** セクションにある **再開** を選択して設定を完了することができます。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

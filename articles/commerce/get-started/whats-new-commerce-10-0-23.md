@@ -1,8 +1,8 @@
 ---
-title: Dynamics 365 Commerce 10.0.23 の機能のプレビュー
+title: Dynamics 365 Commerce 10.0.23 (2022 年 1 月) のプレビュー機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.23 のプレビュー リリースの新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 10/15/2021
+ms.date: 12/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 49c5945c47008321b0b67cd86b85daa33bd06036
-ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
+ms.openlocfilehash: 69dc0f46ae70cf6d1997596662486dcc5c505e1f
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "7749498"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898375"
 ---
-# <a name="preview-features-in-dynamics-365-commerce-10023"></a>Dynamics 365 Commerce 10.0.23 の機能のプレビュー
+# <a name="preview-features-in-dynamics-365-commerce-10023-january-2022"></a>Dynamics 365 Commerce 10.0.23 (2022 年 1 月) のプレビュー機能
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -39,8 +39,8 @@ ms.locfileid: "7749498"
 | 機能領域   | フィーチャー                                                  | 詳細                                          |   に  によって有効化             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
 |  グローバル アドレス帳| 住所の設定で国/地域ごとに既定の都道府県を定義する | グローバル アドレス帳の住所設定で国/地域ごとに既定の都道府県を定義できるようになりました。 既定の都道府県が設定されている場合は、その国/地域に新しい郡または市のレコードが作成される際、それが都道府県フィールドに入力された規定値になります。 詳細については、[住所の設定](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md)を参照してください。 | 既定で有効 |
-|   グローバリゼーション |  [(インド) e コマースの GST](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/gst-e-commerce-india)    |  この機能により、インドの Dynamics 365 Commerce 顧客は、顧客は、e コマース注文で商品及びサービス税 (GST) を計算することにより、e コマース機能を実装できます。   |  機能管理  |
-|   グローバリゼーション |   (東ヨーロッパ) 小売明細書に対する売上請求書および支払の決済の改善   |  この機能により、小売明細書から生成された売上請求書および支払の自動決済を正常に行います。 この機能は、チェコ共和国、エストニア、ハンガリー、ラトビア、リトアニア、ポーランド、ロシアに適用されます。   |  機能管理  |
+|   グローバリゼーション |  [(インド) e コマースの GST](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/gst-e-commerce-india)    |  この機能により、インドの Dynamics 365 Commerce 顧客は、商品及びサービス税 (GST) が e コマース注文で計算されるよう確認することで、e コマース機能を実装できます。 詳細については、[インド向け e コマース サイトの商品及びサービス税 (GST) 統合](../localizations/apac-ind-e-commerce.md)を参照してください。  |  機能管理  |
+|   グローバリゼーション |   (東ヨーロッパ) 小売明細書に対する売上請求書および支払の決済の改善   |  この機能により、小売明細書から生成された売上請求書および支払の自動決済を正常に行います。 この機能は、チェコ共和国、エストニア、ハンガリー、ラトビア、リトアニア、ポーランド、ロシアに適用されます。   |  既定で有効  |
 |   販売促進 |   [フラット化された割引テーブルを使用して改善された価格決定の計算パフォーマンス](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-pricing-computation-performance-using-flattened-discount-tables)   |   [小売割引](../retail-discounts-overview.md)  |  機能管理 (*フラット化された割引テーブル機能を使用して割引の計算パフォーマンスを向上させます。*)  |
 |   Office 統合  |   トランザクション イベント用の電子メール テンプレートの作成  |  [トランザクション イベント用の電子メール テンプレートの作成](../email-templates-transactions.md)   | 既定で有効  |
 

@@ -2,7 +2,7 @@
 title: オンプレミス配置の計画および準備
 description: このトピックは、オンプレミス展開の計画と準備に役立ちます。
 author: PeterRFriis
-ms.date: 03/18/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: aeb38fa4ddee4df548cafa6776caba42538eac9d6d9925b54f8d2c158d58ee13
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1e69d89ce42abc421d2c7fb4b267a99fdab1a0b2
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734684"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874569"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -30,7 +30,7 @@ Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ セ
 このトピックは、オンプレミス展開の計画と準備に役立ちます。
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
+> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ## <a name="differences-between-cloud-deployments-and-on-premises-deployments"></a>クラウド展開とオンプレミス展開の違い
 クラウド展開とオンプレミス展開の機能は異なります。 これらの違いは、計画に影響します。 違いについては、次のトピックで説明します。

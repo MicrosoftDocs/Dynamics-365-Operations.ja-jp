@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: cbac5a0f5e54a9d64acf9784142ec9493ca9a15c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d5daf52835602602245a07d6624da5f7e251b48e
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783388"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913551"
 ---
 # <a name="create-a-pos-extension-package-project"></a>POS 拡張機能パッケージ プロジェクトの作成
 
@@ -106,6 +106,10 @@ ms.locfileid: "7783388"
         ```
 
 10. プロジェクトを構築し、POS の依存関係をプロジェクト ディレクトリにコピーします。
+
+    > [!NOTE]
+    > 空の POS 拡張機能プロジェクトを作成すると、"Payload ファイルは存在しません" というエラーが表示される場合があります。 POS 拡張機能を持つ .ts ファイルをプロジェクトに必ず 1 つ以上含めてください。
+
 11. 拡張機能パッケージのマニフェスト ファイルを作成します。
 
     1. ソリューション エクスプローラーで、プロジェクトを保留 (または右クリック)し、**追加** から **新しい項目** を選択します。

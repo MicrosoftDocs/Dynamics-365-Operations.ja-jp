@@ -90,9 +90,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce の新機能および変更された機能
                   items:
-                    - name: Commerce の新機能や変更された機能に関するホーム ページ
+                    - name: Commerce の新機能および変更された機能に関するホーム ページ
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.23
+                    - name: Commerce 10.0.24 (2022 年 2 月)
+                      href: get-started/whats-new-commerce-10-0-24.md
+                    - name: Commerce 10.0.23 (2022 年 1 月)
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (2021 年 11 月)
                       href: get-started/whats-new-commerce-10-0-22.md
@@ -100,7 +102,7 @@
                       href: get-started/whats-new-commerce-10-0-21.md
                 - name: 削除済みまたは非推奨の機能
                   items:
-                    - name: 削除済みまたは非推奨の機能のホーム ページ
+                    - name: 削除済みまたは非推奨の機能に関するホーム ページ
                       href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
                     - name: Finance and Operations の削除済みまたは非推奨の機能
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
@@ -544,6 +546,8 @@
                       href: duplicate-payment-protection.md
                     - name: オムニチャネル支払の概要
                       href: omni-channel-payments.md
+                    - name: 店舗での受け取りに使用できる複数の支払方法
+                      href: dev-itpro/multiple-payments-pickup.md
                     - name: オムニチャネル Commerce 注文支払
                       href: dev-itpro/commerce-payments.md
                     - name: クレジット カード トランザクション データのアーカイブ
@@ -814,6 +818,10 @@
           items:
             - name: 店舗内の顧客管理
               href: customer-mgmt-stores.md
+            - name: 非同期顧客作成モード
+              href: async-customer-mode.md
+            - name: 非同期顧客の同期顧客への変換
+              href: convert-async-to-sync.md
             - name: クライアンテリング
               items:
                 - name: クライアンテリングの概要
@@ -1330,6 +1338,8 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: Commerce 本社の小売明細書によるブラジルの会計ドキュメントの転記
                   href: localizations/latam-bra-retail-statements.md
+                - name: ブラジル向け Commerce POS の CF-e 会計ドキュメントおよび SAT との統合機能
+                  href: localizations/latam-bra-cf-e-sat.md
                 - name: ブラジル向け Commerce POS が搭載する Adyen に対応した Dynamics 365 Payment Connector
                   href: localizations/latam-bra-adyen.md
             - name: 東ヨーロッパ
@@ -1378,8 +1388,10 @@
                   href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: インド向けアップグレードと N-1 のサポート
                   href: localizations/apac-ind-n-1-for-india.md
-                - name: QR コードの生成とレシートへの印刷
+                - name: インド向け QR コードの生成とレシートへの印刷
                   href: localizations/ind-generate-qr-code-print-receipt.md
+                - name: eコマース サイト用のキャッシュ レジスターの商品及びサービス税 (販売税) 統合
+                  href: localizations/apac-ind-e-commerce.md
             - name: イタリア
               items:
                 - name: イタリア向け会計プリンター統合サンプル
@@ -1616,7 +1628,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
-                    - name: リスト
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
+                    - name: List
                       items:
                         - name: リスト関数
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/commerce/toc.json

@@ -4,6 +4,8 @@
     - name: 新機能
       items:
         - name: Human Resources の新機能および変更された機能
+          href: hr-whats-new-2021-11-29.md
+        - name: 2021 年 11 月 29 日
           href: hr-admin-whats-new.md
         - name: 2021 年 10 月 5 日
           href: hr-whats-new-2021-10-04.md
@@ -793,11 +795,13 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: レート変更の処理
                       href: hr-benefits-process-rate-changes.md
+                - name: 従業員の給付金の選択
+                  href: employee-select-benefits-ess.md
                 - name: ACA 報告書
                   href: hr-benefits-management-aca-reports.md
-                - name: 福利厚生の明細書
+                - name: 給付金明細書
                   href: hr-benefits-statement.md
-            - name: 福利厚生プログラムの定義および管理
+            - name: 給付金プログラムの定義および管理
               href: hr-benefits-manage-program.md
             - name: 給付金適格性ポリシー
               href: hr-benefits-eligibility-policies.md

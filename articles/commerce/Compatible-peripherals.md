@@ -2,7 +2,7 @@
 title: コマースの周辺機器の互換性
 description: このトピックでは、Dynamics 365 Commerce との互換性のテストが完了している周辺機器を示します。
 author: BrianShook
-ms.date: 10/08/2017
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-10-08
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fe735076e575dcc626e9d2042ad1f9679ff623c3
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 02a380623bbcd96ae6dfb4739007f2466435c3db
+ms.sourcegitcommit: 971456c197820421f108ad7345001cc1b6c99949
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779475"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "7875434"
 ---
 # <a name="peripheral-compatibility-for-commerce"></a>コマースの周辺機器の互換性
 
@@ -56,11 +56,7 @@ ms.locfileid: "7779475"
 
 ## <a name="device-compatibility-testing"></a>デバイス互換性テスト
 
-デバイスの互換性は、周辺機器シミュレーターを使用してテストできます。 デバイスのテストおよび Microsoft に送信するためのテスト ログを生成する方法に関する詳細については、[コマースの周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md) を参照してください。
-
-デバイスが正常にテストされたら、互換性を確認するため、テスト結果を <drpc@microsoft.com> に送信する必要があります。 このシミュレーターは、Dynamics 365 内のハードウェア プロファイルのダウンロード リンク経由で取得することができます。 デバイス メーカーは、Dynamics 365 にアクセスできない可能性があります。 周辺機器シミュレーターのコピーを入手するには、<drpc@microsoft.com> にお問い合わせください。
-
-実稼働環境に送られるすべての周辺機器設定に対してテストを実行する必要があります。 互換性リストが、過去にまったく同じデバイス/POS 設定がテストされていることを示している場合でも、UAT テストの一環としてテストを行う必要があります。 その場合は、テスト結果は Microsoft に送信する必要はありません。 他の成功したテスト結果についてはすべて、互換性のあるデバイスの一覧を作成できるように <drpc@microsoft.com> に送信することをお勧めします。
+デバイスの互換性は、周辺機器シミュレーターを使用してテストできます。 周辺機器シミュレーターの入手、デバイスのテスト、および Microsoft に送信するためのテスト ログを生成する方法に関する詳細については、[コマースの周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md)を参照してください。 実稼働環境に送られるすべての周辺機器設定に対してテストを実行する必要があります。 互換性リストが、過去にまったく同じデバイス/POS 設定でテストされていることを示している場合でも、ユーザー受け入れテスト (UAT) の一環としてテストを行う必要があります。
 
 ## <a name="supported-devices"></a>サポート対象デバイス
 

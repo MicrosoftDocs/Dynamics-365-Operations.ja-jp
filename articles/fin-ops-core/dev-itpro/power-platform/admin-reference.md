@@ -2,7 +2,7 @@
 title: Dataverse 仮想エンティティの構成
 description: このトピックでは、Microsoft Dataverse で Finance and Operations アプリの仮想エンティティを構成する方法について説明します。
 author: Sunil-Garg
-ms.date: 10/25/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 58ebbabf2cd2ac8d5badda8f09e13ba8202100f0
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: 2d727395db8f7c2cb8c12b2ece80be0ef1d8bfd0
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678727"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913766"
 ---
 # <a name="configure-dataverse-virtual-entities"></a>Dataverse 仮想エンティティの構成
 
@@ -28,7 +28,11 @@ ms.locfileid: "7678727"
 このトピックでは、Microsoft Dataverse で Finance and Operations アプリの仮想エンティティを構成する方法について説明します。
 
 > [!IMPORTANT]
-> このトピックに含まれる構成手順が必要となるのは、 Microsoft Power Platform 統合が有効に **なっていない** Finance and Operations アプリ環境に対してのみです。 Microsoft Power Platform 統合が有効になっている Finance and Operations アプリ環境のために、統合を有効にするプロセスの一部としてこのトピックで説明した仮想エンティティ構成が行われます。 Finance and Operations アプリ環境の Microsoft Power Platform 統合を有効にする方法の詳細については、[Microsoft Power Platform 統合の有効化](enable-power-platform-integration.md) を参照してください。
+> このトピックに含まれる構成手順が必要となるのは、 Microsoft Power Platform 統合が有効に **なっていない** Finance and Operations アプリ環境に対してのみです。 Microsoft Power Platform 統合が有効になっている Finance and Operations アプリ環境のために、統合を有効にするプロセスの一部としてこのトピックで説明した仮想エンティティ構成が実行されます。 
+> 
+> Dataverse 仮想エンティティがを手動で構成された場合、Microsoft Power Platform 統合を有効にする前にこのトピックのガイダンスに従うと、Microsoft Power Platform 統合が有効にされた後、手動構成はリンクされた Power Platform 環境を使用しません。 仮想エンティティは、Microsoft Power Platform 統合によって提供される自動構成を使用して Dataverse 環境に接続します。 ただし、Finance and Operations アプリ環境を Microsoft Power Platform 統合が有効になっていない追加の Power Platform 環境に接続するには、仮想エンティティの手動構成が使用されます。
+> 
+> Finance and Operations アプリ環境の Microsoft Power Platform 統合を有効にする方法の詳細については、[Microsoft Power Platform 統合の有効化](enable-power-platform-integration.md) を参照してください。
 
 ## <a name="getting-the-virtual-entity-solution"></a><a name="get-virtual-entity-solution"></a> 仮想エンティティ ソリューションの取得
 

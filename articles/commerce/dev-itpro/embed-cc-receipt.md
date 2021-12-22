@@ -1,8 +1,8 @@
 ---
 title: 顧客のレシートにプロセッサのクレジット カードのレシートを埋め込む
-description: このトピックでは、決済処理業者からのクレジットカードの領収書を顧客の項目別取引レシートに埋め込む方法について説明します。
-author: BrianShook
-ms.date: 04/07/2020
+description: このトピックでは、決済処理業者からのクレジット カードのレシートを Microsoft Dynamics 365 Commerce の顧客の項目別取引レシートに埋め込む方法について説明します。
+author: rubendel
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,32 +12,31 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: stuharg
 ms.search.validFrom: 04-31-2020
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6378e5e9ba46de6cbbe47e5151818ce4cc1acb70
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: c372b3a8172a925dce2a2e9aad720a42087dfff4
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779886"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891457"
 ---
 # <a name="embed-processor-credit-card-receipts-in-customer-receipts"></a>顧客のレシートにプロセッサのクレジット カードのレシートを埋め込む
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-このトピックでは、決済処理業者からのクレジットカードの領収書を顧客の項目別取引レシートに埋め込む方法について説明します。 この機能は、Microsoft Dynamics 365 Commerce バージョン 10.0.8 以降で使用できます。
+このトピックでは、決済処理業者からのクレジット カードのレシートを Microsoft Dynamics 365 Commerce の顧客の項目別取引レシートに埋め込む方法について説明します。 この機能は、Commerce バージョン 10.0.8 リリース以降で使用できます。
+
+Dynamics 365 Retail バージョン 10.0.7 およびそれ以前のバージョンでは、顧客のクレジット カードのレシートからいくつかの要素を顧客の項目別の取引レシートに埋め込むことができます。 ただし、決済処理業者から取得した実際のレシートを含めることはできません。 このソリューションは、すべての小売業者が受け入れられるものではありませんでした。なぜなら、顧客のクレジット カードのレシートに設定可能なレシート フィールドには、現地の法定要件で規定されているすべての詳細が含まれているとは限らなかったからです。
 
 ## <a name="key-terms"></a>重要な用語
 
-| 相談 | 説明 |
+| 相談 | Description |
 |---|---|
 | 顧客のレシート | 販売時点管理 (Point of Sale) でのキャッシュ アンド キャリー取引の際に発生するレシート。 |
 | 顧客のクレジット カード レシート | クレジットカードの支払またはトランザクションで使用されるその他の電子支払のレコードとして印刷されるクレジットカード レシート。 |
-
-## <a name="overview"></a>概要
-
-このトピックでは、決済処理業者からのクレジットカードのレシートを顧客のレシートに直接埋め込むにあたって必要となる手順について説明します。 Dynamics 365 Retail バージョン 10.0.7 およびそれ以前のバージョンでは、顧客のクレジットカードのレシートからいくつかの要素を顧客の項目別の取引レシートに埋め込むことができます。 ただし、決済処理業者から取得した実際のレシートを含めることはできません。 このソリューションは、すべての小売業者にとって受け入れられるものではありませんでした。なぜなら、顧客のクレジットカードのレシートに設定可能なレシートフィールドには、現地の法定要件で規定されているすべての詳細が含まれているとは限らなかったからです。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -63,6 +62,9 @@ ms.locfileid: "7779886"
 7. レシート デザイナーがまだ開いている場合は、左上隅にある **形式の選択** を選択してレシート セレクターを開きます。
 8. レシート セレクターで、 POS で使用する **レシート** の形式を選択します。 デモ データを使用している場合は、レシート形式に **1\_p**  を選択します。
 9. レシート デザイナーで、左ウィンドウの **下部** にあるフッター セクションを選択し、**カード支払/入金明細** のレシート変数をフッターにドラッグします。
+
+    > [!NOTE]
+    > クレジット カードのレシートが正しく印刷されない場合は、**カードの支払/入金詳細** フィールドを左側まで移動し、フィールドの長さを 55 文字以上に増やします。
 
     ![顧客のレシートのフッターにおけるカードの支払/入金詳細の変数。](media/customersreceipt.png)
 

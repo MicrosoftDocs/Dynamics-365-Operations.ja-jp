@@ -1,30 +1,30 @@
 ---
-title: Finance and Operations アプリのバージョン 10.0.23 に対する Platform update
+title: Finance and Operations アプリのバージョン 10.0.23 (2022 年 1 月) のプラットフォーム更新プログラム
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.23 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 10/15/2021
+ms.date: 12/10/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-10-31
-ms.openlocfilehash: fcfd6acadb593d2c38e9380e4f816b9411e583c3
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 35b763dfbca7044aaba9c63b389f1240224b6f1d
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647774"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913504"
 ---
-# <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.23 に対する Platform update
+# <a name="platform-updates-for-version-10023-of-finance-and-operations-apps-january-2022"></a>Finance and Operations アプリのバージョン 10.0.23 (2022 年 1 月) のプラットフォーム更新プログラム
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations アプリ バージョン 10.0.23 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6206 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2021 年 10 月
 - **リリースの一般提供 (セルフ更新)**: 2021 年 12 月
+- **リリースの一般提供 (自動更新):** 2022 年 1 月
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 

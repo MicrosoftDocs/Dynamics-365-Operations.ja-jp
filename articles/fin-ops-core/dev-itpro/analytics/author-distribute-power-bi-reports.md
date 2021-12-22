@@ -1,26 +1,26 @@
 ---
 title: Power BI Desktop を使用した分析レポートの作成
 description: このトピックでは、ローカルの Entity Store データベースを使用して Power BI レポートを作成するプロセスについて説明します。
-author: MilindaV2
-ms.date: 01/29/2021
+author: RichdiMSFT
+ms.date: 12/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.custom: 265864
 ms.assetid: e253a57a-979b-4ca5-8e09-2bfce97395a5
 ms.search.region: Global
-ms.author: milindav
+ms.author: RICHDI
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: b13d4cfd0603625ee1ada7917eb1daf61edc0811
-ms.sourcegitcommit: 9c007b271ba5ad5b9938fdd05776b73f6b7c9802
+ms.openlocfilehash: f219650d38e3c639db7cadb82cb97867d72e6720
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "7411641"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883480"
 ---
 # <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用した分析レポートの作成
 
@@ -36,7 +36,9 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 > [!NOTE]
 > 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が独自の定期売買またはローカル コンピューターで実行している開発環境を使用する必要があります。 Microsoft が提供するレベル 1 環境では、埋め込まれた分析レポートを開発または拡張することはできません。 Power BI Desktop をインストールするには管理者権限が必要です。
 
-> レベル 1環境には、Power BI Desktop のサービス互換性があるバージョンが含まれます。 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が開発環境にプレインストールした Power BI Desktop を使用することができます。 または、Power BI Desktop の最新の互換性があるリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary) > **モデル** から、Power BI Desktop 2020 年 8 月リリース版をダウンロードできます。
+> Power BI Embedded 統合は、10.0.22 リリースの一部としてインフラストラクチャをアップグレードしました。 これはインフラストラクチャの変更であり、環境がリリース 10.0.22 にアップグレードされると自動的に行われます。 この変更により、ユーザーはワークスペース レポートの編集時に Power BI Desktop の *最新バージョン* を使用できるようになりました。
+
+> バージョン 10.0.21 またはそれ以前を実行している環境では、開発環境にプレインストールされた Power BI Desktop の前回のビルドを使用する必要があります。 または、*互換性がある* Power BI Desktop の Power BI Desktop  2020 年 8 月のリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary)から、Power BI Desktop 2020 年 8 月リリース版をダウンロードできます。
 
 ### <a name="step-1-populate-the-local-entity-store-database"></a>手順 1: ローカル エンティティ格納データベースに入力する
 この例では、ローカルのエンティティ ストアでコマース 分析ソリューションが消費する集計モデルをステージングします。 アプリケーションが使用するモデルは、RetailCube 集計測定で定義されています。 

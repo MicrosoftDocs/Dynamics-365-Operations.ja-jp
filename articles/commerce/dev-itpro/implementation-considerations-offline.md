@@ -2,7 +2,7 @@
 title: Commerce のオフライン実装とトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Commerce オフライン実装に関する考慮事項とトラブルシューティングの概要を説明します。
 author: jashanno
-ms.date: 10/01/2021
+ms.date: 11/22/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2021-08-31
-ms.openlocfilehash: 5e3cae2b623074d5383789331851765523aec8a1
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 1247a24c336b61ee65134db67a6eada1573e394e
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595415"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860600"
 ---
 # <a name="commerce-offline-implementation-and-troubleshooting"></a>Commerce のオフライン実装とトラブルシューティング
 
@@ -37,7 +37,7 @@ ms.locfileid: "7595415"
 | 機能名 | 説明 |
 |--------------|-------------|
 | オフラインの詳細 | この機能は、オフライン プロファイルの一連の設定で構成されます。 これらの設定により、追加のオフライン切り替えシナリオを使用できるようになり、ユーザーが POS にサインインする前にオフライン モードに切り替える機能を提供し、強化された Commerce Headquarters の可用性テストが可能になるため、簡単にオフライン モードに切り替え、オンライン状態に戻すことができます。 |
-| オフライン状態ダッシュボード | リリース 10.0.20 以降に用意された新しいダッシュボードには、各デバイスの最新のオフライン状態、エラー、およびデータベースの詳細が表示されます。  このダッシュボードは、**Retail と Commerce > チャネル設定 > POS の設定 > レジスターのオフライン状態** で確認できます。 |
+| オフライン状態ダッシュボード | Commerce バージョン 10.0.20 リリース以降に用意された新しいダッシュボードには、各デバイスの最新のオフライン状態、エラー、およびデータベースの詳細が表示されます。  このダッシュボードは、**Retail と Commerce \> チャネル設定 \> POS 設定 \> レジスターのオフライン状態** で確認できます。 このダッシュボードが正しく機能するには、**機能管理** ワークスペースで **Modern POS オフライン監視** 機能をオンにしてから、1110 配送スケジュール ジョブを実行する必要があります。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。 |
 | パフォーマンス ベースのオフライン切り替え (パフォーマンスを低下させる POS シームレスなオフライン) | この機能はリリース 10.0.20 以降で提供されており、アウトバウンド Web 要求のパフォーマンスが低下した場合に、最新の POS デバイスをシームレスにオフラインモードに切り替えることができます。  この機能を使用するには、本社の **オフライン プロファイル** ページから **詳細なオフライン切り替えの有効化** 機能を有効にする必要があります。 **パフォーマンスを低下させる POS シームレスなオフライン** 機能は、機能管理ワークスペースでオンにする必要があります。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。 |
 
 ### <a name="advanced-offline-feature"></a>オフラインの詳細機能

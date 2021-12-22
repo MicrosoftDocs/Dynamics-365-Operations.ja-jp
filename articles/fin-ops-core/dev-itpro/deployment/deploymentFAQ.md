@@ -2,7 +2,7 @@
 title: セルフサービス配置の FAQ
 description: このトピックでは、セルフサービス配置に関してよくある質問に対する回答を示します。
 author: rashmansur
-ms.date: 09/24/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 198bbdf21447e83a71941391c738285cc7419d59
-ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
+ms.openlocfilehash: 248436c970452b0dad5bff3e16fc28d80d4170b7
+ms.sourcegitcommit: 971456c197820421f108ad7345001cc1b6c99949
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2021
-ms.locfileid: "7556829"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "7875436"
 ---
 # <a name="self-service-deployment-faq"></a>セルフサービス配置の FAQ
 
@@ -139,6 +139,8 @@ AOS への受信 IP アドレスが動的になります。 これにより、�
 | アジア太平洋 | 東南アジア | 20.44.247.0/26 |
 | オーストラリア | オーストラリア東部 | 20.40.190.0/26 |
 | オーストラリア | オーストラリア南東部 | 20.40.165.192/26 |
+| Azure Government | US Gov テキサス <sup>2</sup> | 52.243.163.224/28 |
+| Azure Government | US Gov バージニア | 52.227.253.160/28 |
 | ブラジル | ブラジル南部 | 191.234.130.0/26 |
 | カナダ | カナダ中部 | 20.151.60.0/26 |
 | カナダ | カナダ東部 | 52.155.27.128/26 |

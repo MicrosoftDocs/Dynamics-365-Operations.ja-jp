@@ -2,7 +2,7 @@
 title: 独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 description: このトピックでは、オンプレミス環境における独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
 author: jorisdg
-ms.date: 03/08/2018
+ms.date: 11/29/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 340301efe74be90e6b9ca364801b793d52c023ff
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2c218395e764e6c55fac10cd51960991908813d6
+ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782940"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7894732"
 ---
 # <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 
@@ -70,7 +70,7 @@ ISV ライセンスの福利厚生についての一般情報、ソリューシ�
     ```
 
 3. 生成されたライセンスを fabric:/AXSF を実行しているマシンの 1 つのフォルダーにコピーし、fabric:/AXSF が正常であることを確認します。
-4. AOS コンピューターのいずれかから **Import-LicensePackage.ps1** スクリプトを実行します。 このスクリプトは、LCS 内の共有アセット ライブラリにある  **モデル** タブの最新の **配置スクリプト** フォルダーで見つけることができます。 スクリプトに渡す必要があるパラメータの一覧を次に示します。
+4. AOS コンピューターのいずれかから **Import-LicensePackage.ps1** スクリプトを実行します。 このスクリプトは、LCS 共有アセット ライブラリの **モデル** タブにある最新の **Microsoft Dynamics 365 Finance + Operations (オンプレミス)、配置スクリプト** フォルダーにあります。 スクリプトに渡す必要があるパラメータの一覧を次に示します。
 
    - **LicenseFilesPath** – インポートする必要があるライセンス ファイルを含むフォルダーのパス。 
    - **SqlUser** – AOS を実行する credentials.json ファイルに指定されている同じユーザー。

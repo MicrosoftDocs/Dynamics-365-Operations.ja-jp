@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf541fc817edf6a5ba4bec2500ba4a350e3d0d42
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9e964e3fe92d24d37befb69381439fd52abf2bfe
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781094"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867339"
 ---
 # <a name="build-and-debug-projects"></a>プロジェクトのビルドおよびデバッグ
 
@@ -49,7 +49,7 @@ ms.locfileid: "7781094"
 5.  **開く** をクリックします。 ソリューションの読み込みには時間がかかる場合があります。
 6.  **FleetManagement** プロジェクトをスタートアップ プロジェクトにします。 **ソリューション エクスプローラー** で、**フリート管理** プロジェクトを右クリックして、コンテキスト メニューで **スタートアップ プロジェクトとして設定** を選択します。
 7.  **ソリューション エクスプローラー** で、**フリート管理** プロジェクトをダブルクリックして内容を表示します。
-8.  **Code** フォルダーをダブルクリックしてから、フリート管理プロジェクトの **Classes** フォルダーをダブルクリックします。 **FMRentailCheckoutProcessor** クラスを検索します。 このクラスを右クリックしてから、**開く** をクリックします。 または、ソリューション エクスプローラー ウィンドウの上部にあるソリューション エクスプローラーの検索バーを使用できます。 検索バーに名前を入力すると、ソリューション エクスプローラーで選択された対応するコンポーネントが表示されます。 クラスで X++ コードを表示できるようになりました。 このクラスには **FinalizeRentalCheckout** という名前のメソッドがあります。
+8.  フリート管理プロジェクトの **クラス** フォルダーをダブルクリックします。 **FMRentalCheckoutProcessor** クラスを検索します。 このクラスを右クリックしてから、**開く** をクリックします。 または、ソリューション エクスプローラー ウィンドウの上部にあるソリューション エクスプローラーの検索バーを使用できます。 検索バーに名前を入力すると、ソリューション エクスプローラーで選択された対応するコンポーネントが表示されます。 クラスで X++ コードを表示できるようになりました。 このクラスには **FinalizeRentalCheckout** という名前のメソッドがあります。
 9.  最初のコメントの次の行にあるこのメソッドにブレークポイントを配置します。 これを行うには、デバッガで実行を一時停止するコード行の左側の余白をクリックします。 また、コード行の任意の場所をクリックして、F9 を押すことができます。 次の図はブレークポイントを示しています。ブレークポイントは余白に赤で塗りつぶされた円として表示されます。 
 
     [![FMRentalCheckoutProcessor のブレークポイント。](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png) 

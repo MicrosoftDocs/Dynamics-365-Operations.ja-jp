@@ -1,37 +1,49 @@
 ---
-title: バッチ ジョブで自動再試行を有効にする
+title: バッチ再試行の有効化
 description: このトピックでは、障害が発生した場合にバッチ ジョブで自動再試行を有効にする方法について説明します。
 author: matapg007
-ms.date: 09/09/2021
+ms.date: 11/24/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2021-05-31
-ms.openlocfilehash: 4bf537579fc6bcb2dbc6906f3a885f89fc7a14b9
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 2bd7f2e6071b6084e6b0117701055278720c953f
+ms.sourcegitcommit: d7d997ad84623ad952672411c0eb6740972ae0b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486883"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "7864160"
 ---
-# <a name="enable-automatic-retries-on-batch-jobs"></a>バッチ ジョブで自動再試行を有効にする
+# <a name="enable-batch-retries"></a>バッチ再試行の有効化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリのバッチ ジョブで再試行を実装する方法、および障害が発生した場合に自動再試行を有効にする方法について説明します。 現在、Finance and Operations アプリの Microsoft SQL Server への接続が簡単に失われると、すべてのバッチ ジョブが失敗します。 この動作により業務プロセスが中断します。 クラウド サービスでは接続が失われることは避けられないので、Microsoft はこのタイプのエラーが発生した場合の自動再試行を有効にしています。
+このトピックでは、Finance and Operations アプリのバッチ ジョブで再試行を実装する方法、および障害が発生した場合に自動再試行を有効にする方法について説明します。 現在、バッチ プラットフォームでは、バッチの弾力性を有効にして障害を回避するための 3 つの方法が提供されています。
 
-> [!IMPORTANT]
-> この機能は、バージョン 10.0.18 以降で利用できます。
+## <a name="retry-the-batch-job-task-regardless-of-the-error-type"></a>エラー タイプにかかわらず、バッチ ジョブ タスクを再試行する
 
-## <a name="metadata"></a>メタデータ
+エラー タイプにかかわらず、バッチ ジョブ タスクを常に再試行する場合は、このオプションを使用をお勧めします。 **最大再試行回数** の値は、発生する例外のタイプにかかわらず、タスクに適用される再試行回数を指定します。 タスクが失敗した場合、バッチ プラットフォームは再試行された回数を評価します。 数字が **最大再試行回数** の値より小さい場合、タスクは準備完了状態に戻り、再び取得することができます。 
+
+1. **バッチ ジョブ** ページで **バッチ タスクの表示** を選択します。
+2. **一般** タブで **最大再試行回数** フィールドを設定します。
+
+## <a name="retry-the-batch-job-task-when-transient-sql-server-errors-occur"></a>SQL Server の一時的なエラーが発生した場合にバッチ ジョブ タスクを再試行する
+
+現在、Finance and Operations アプリの Microsoft SQL Server への接続が簡単に失われると、すべてのバッチ ジョブが失敗します。 この動作により業務プロセスが中断します。 クラウド サービスでは接続が失われることは避けられないので、Microsoft はこのタイプのエラーが発生した場合の自動再試行を有効にします。
 
 すべてのバッチ ジョブがべき等でない可能性もある (バッチでクレジット カード トランザクションを実行する場合など) ため、すべてのバッチ ジョブで再試行を等しく有効にすることはできません。 再試行を安全に有効にできるよう、Microsoft はバッチ ジョブにメタデータを追加して、自動的に再試行できるかどうか表示するようにしました。 バージョン 10.0.18 と 10.0.19 の間では、Microsoft バッチ ジョブの 90% 以上が明示的に **BatchRetryable** インターフェイスを実装し、**isretryable** 値は適切に設定されました。 **BatchRetryable** インターフェイスを実装していないすべてのジョブで、**isRetryable** の既定値は **false** です。
 
-## <a name="retries"></a>再試行
+**BatchRetryable** インターフェイスが実装され、**isRetryable** が **True** に設定されているジョブに対してのみ再試行は有効になります。 この機能では、SQL Server 接続が中断した後に再試行が発生します。 Microsoft は引き続き、他の例外での再試行を追加します。
 
-**BatchRetryable** インターフェイスが実装され、**isRetryable** が **true** に設定されているジョブに対してのみ再試行は有効になります。 この新しい機能では、SQL Server 接続が中断する場合に再試行が発生します。 Microsoft は引き続き、他の例外での再試行を追加します。
+再試行の最大数と再試行間隔は、バッチ プラットフォームによって制御されます。 **BatchRetryable** インターフェイスは 5 秒後に開始し、間隔の時間が 5 分に達した後、再試行を停止します。 (間隔の時間は次のように増加します: 5、8、16、32 など。)
+
+## <a name="batch-odata-action-capability"></a>バッチ OData アクション機能
+
+前の 2 つのオプションのように、このオプションは再試行を直接実行しません。 これにより、顧客はジョブを再トリガーする前にカスタム ロジックを追加できます。 ジョブの実行が失敗した場合は、対応するビジネス イベントをリッスンし、失敗を再試行できるかどうかを決定できます。 バッチ プラットフォームによって、バージョン 10.0.22 (プラットフォーム update 46 を含む) から新しい Open Data Protocol (OData) アクションが公開されました。 エンドポイントへの呼び出しでジョブ ID が指定された場合、ジョブは実行に対して再キューされます。
+
+詳細については、[バッチ OData API](batch-odata-api.md) を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -92,12 +104,6 @@ class TestBatchJob extends SysOperationServiceController implements BatchRetryab
 ### <a name="what-does-idempotent-mean-for-a-batch-job"></a>バッチ ジョブのべき等とは何ですか?
 
 このコンテキストでは、*べき等* とはつまり再試行によって結果全体が変更されたり、影響を受けないことです。 たとえば、あるものは 1 回だけ操作を実行する必要があり、1 回以上は実行しません。 そのため、元の実行で実行されたあるものは再試行の際に再度実行されません。
-
-### <a name="what-is-the-maximum-number-of-retries-that-batchretryable-supports-and-what-is-the-retry-interval"></a>BatchRetryable がサポートする再試行の最大回数と、再試行の間隔はどれくらいか?
-
-**MaxRetryCount** は、発生する例外のタイプにかかわらず、タスクに適用される再試行回数を指定します。 タスクが失敗した場合、バッチ プラットフォームは再試行された回数を評価します。 数字が **MaxRetryCount** の値より小さい場合、タスクは準備完了状態に戻り、再び取得することができます。
-
-**BatchRetryable** インターフェイスは 5 秒後に開始し、間隔の時間が 5 分に達した後、再試行を停止します。 (間隔の時間は次のように増加します: 5、8、16、32 など。)
 
 ### <a name="can-i-change-the-maximum-number-of-retries-and-the-retry-interval"></a>再試行の最大回数と再試行間隔は変更できますか?
 

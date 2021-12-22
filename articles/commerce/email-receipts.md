@@ -2,7 +2,7 @@
 title: Modern POS (MPOS) からの電子メール レシートの送信
 description: Modern 販売時点管理 (MPOS) では、販売時点管理 (POS) でトランザクションが支払/入金されたときにレシートの電子メールを送信できます。
 author: jashanno
-ms.date: 03/01/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 79acd49175e6f58de71b9e3956a4cda137a799a704d677b92e830b183a7feb7d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 120c274a616ed548e7b5d438f13fa4ae5ed45504
+ms.sourcegitcommit: 971456c197820421f108ad7345001cc1b6c99949
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729870"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "7875435"
 ---
 # <a name="send-email-receipts-from-modern-pos-mpos"></a>Modern POS (MPOS) からの電子メール レシートの送信
 
@@ -90,7 +90,7 @@ Modern 販売時点管理 (MPOS) では、販売時点管理 (POS) でトラン�
     - **件名** フィールドに、電子メール レシートのタイトルを入力します。
     - **本文** チェック ボックスをオンにします。
     - テンプレート HTML をアップロードするには、**編集** を選択します。 テンプレート インスタンスには、少なくとも次のコードが含まれている必要があります。 
- 
+
     ``` xml
     <pre>
     %message%
@@ -105,6 +105,10 @@ Modern 販売時点管理 (MPOS) では、販売時点管理 (POS) でトラン�
     - **1070** - チャンネル コンフィギュレーション
     - **1090** - レジスター
     - **1110** - グローバル コンフィギュレーション
+
+## <a name="insert-bar-codes-or-qr-codes-in-emailed-receipts"></a>メールで送信される領収書にバーコードまたは QR コードを挿入する
+
+注文 ID を示す QR コードまたはバーコードを、トランザクションおよび領収書メールに挿入できます。 詳細については、[領収書メールに QR コードまたはバーコードを追加](add-qr-code-barcode-email.md#add-a-qr-code-or-bar-code-to-a-receipt-email)を参照してください。 
 
 ## <a name="mpos-transactions"></a>MPOS トランザクション
 

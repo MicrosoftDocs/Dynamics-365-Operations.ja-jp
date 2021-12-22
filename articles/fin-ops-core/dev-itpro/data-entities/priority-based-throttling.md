@@ -2,7 +2,7 @@
 title: 優先順位に基づく調整
 description: このトピックでは、OData およびカスタム サービス ベース統合の優先順位に基づく調整に関する情報を提供します。
 author: hasaid
-ms.date: 05/14/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Platform update 37
-ms.openlocfilehash: 591fb23af3c2a26978b91fcaec5c293b6eb14badf068b1f3caac7a54857f50c2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec64a37c701f87090899ee245d839b8ce115529b
+ms.sourcegitcommit: 777cf334c1e3b2a867c6224aa5b43c834e8d6c27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772899"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "7826549"
 ---
 # <a name="priority-based-throttling"></a>優先順位に基づく調整
 
@@ -109,8 +109,9 @@ Microsoft Azure Active Directory (Azure AD) では、次の 2 種類のアプリ
 2. **環境** セクションで、表示する環境を選択してから **完全な詳細** を選択します。
 3. **環境の詳細** ページで、**環境の監視** を選択して、監視および診断ポータルを開きます。 
 4. **環境の監視** ページで、**活動** タブを選択して、**未加工ログ** ページを表示します。 
-5. **クエリ名** を選択し、すべての OData およびカスタム サービス活動の **すべての調整イベント** を選択します。
-6. **クエリ名** を選択し、調整されたすべての Odata およびカスタム サービス要求の **調整済みの要求** を選択します。
+5. **クエリ名** を選択し、調整されたすべての Odata およびカスタム サービス要求の **調整済みの要求** を選択します。
 
+> [!NOTE]
+> LCS で、**すべての調整イベント** レポートは削除されました。 このレポートは、調整の対象となるサンプル要求を強調する方法として、優先順位に基づく調整が一般に利用可能になる前に導入されました。 **調整済みの要求** レポートは、調整の対象となる要求のより一貫性のあるビューを提供し、環境に関する情報を得るために使用する必要があります。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

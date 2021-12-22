@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c3b6cbb0b6241f3fc8f1213daec294c172570d7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2d0309ab6a37965f65330dc87eaacb705e52fa90
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783240"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898427"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 
@@ -49,7 +49,7 @@ ms.locfileid: "7783240"
 | char `type` | X++ には `char` または文字タイプがありません。 長さ 1 の `str` を宣言することができますが、文字列のままです。<br> `str 1 myString = "a";` | C# には `char` があります。 最初に `char` を `string` に明示的に変換できますが、パラメーターとして `char` を `string` パラメーターを入力するメソッドに渡すことはできません。| X++ データ型の詳細については、プリミティブ データ型を参照してください。|
 | メッセージの出力| X++ は情報ログ ウィンドウ内でユーザーにメッセージを提供します。 一般的なメソッドは次のとおりです。<ul><li><strong>print</strong> ステートメント:</li><li>`Global` クラスの静的メソッド:<ul><li>Global::info</li><li>Global::warning</li><li>Global::error</li></ul></li></ul>| コマンド ライン プログラムで、コンソールにメッセージを配信することができます。 一般的なメソッドは次のとおりです。<ul><li>`Console.Out.WriteLine`</li><li>`Console.Error.WriteLine`</li></ul>|  |
 
-### <a name="x-and-c-samples"></a>X++ および C++ のサンプル
+### <a name="x-and-c-samples"></a>X++ および C# のサンプル
 
 このセクションには、2 つの簡単なコード サンプルが含まれています。 1 つの例は X++、もう一方は C\# で記述されています。 両方のサンプルで同じ結果が得られます。 次の X++ 機能が示されています。
 -   `//` 単一行のコメント

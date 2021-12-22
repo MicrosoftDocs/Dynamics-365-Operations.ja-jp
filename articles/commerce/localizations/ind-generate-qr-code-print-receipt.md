@@ -1,8 +1,8 @@
 ---
-title: QR コードの生成とレシートへの印刷
-description: このトピックでは、統一支払インターフェイス (UPI) クイック応答 (QR) コードを生成してレシートに印刷する方法について説明します。
+title: インド向け QR コードの生成とレシートへの印刷
+description: このトピックでは、インド向けに、統一支払インターフェイス (UPI) クイック応答 (QR) コードを生成してレシートに印刷する方法について説明します。
 author: prabhatb2011
-ms.date: 07/30/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,18 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 86db5ef67a0db69a611f536a9d6fcf4b5b911974
-ms.sourcegitcommit: ed43ceae9b2ef3f616b81127bcf4c4b0862e23f5
+ms.openlocfilehash: e526d8e48d649bbf3c5bcc5308d49758e24851f5
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "7714842"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874598"
 ---
-# <a name="generate-qr-codes-and-print-them-on-receipts"></a>QR コードの生成とレシートへの印刷
+# <a name="generate-qr-codes-and-print-them-on-receipts-for-india"></a>インド向け QR コードの生成とレシートへの印刷
 
 [!include [banner](../includes/banner.md)]
+
+このトピックでは、カスタマイズのガイドラインを示し、インド向けに、統一支払インターフェイス (UPI) クイック応答 (QR) コードを生成してレシートに印刷する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 

@@ -2,7 +2,7 @@
 title: 二重書き込みホーム ページ
 description: このトピックでは、二重書き込みに関する情報へのリンクについて説明します。
 author: tonyafehr
-ms.date: 02/08/2020
+ms.date: 11/24/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bea300fc9159840b35a27fb5bdcd40c92936f177
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 51b88d03510d32dac8ee4cc9bf262a58470e8553
+ms.sourcegitcommit: 61c77ddda4c9f79789d4f4fb138a466d309fb220
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782397"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "7863358"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
@@ -32,14 +32,12 @@ ms.locfileid: "7782397"
     - [二重書き込みは、Customer Engagement アプリの開発者と設計者に取って何を意味しますか?](dual-write-overview.md#developer-architect)
 
 + [二重書き込みの新機能および変更された機能](whats-new-dual-write.md)
-+ [よく寄せられる質問](dual-write-faq.md)
+
 
 ## <a name="dual-write-setup"></a>二重書き込みの設定
 
 + [二重書き込みのシステム要件](dual-write-system-req.md)
 + [二重書き込みの設定方法に関するガイダンス](connection-setup.md)
-+ [初期同期に関する考慮事項](initial-sync-guidance.md)
-+ [ライブ同期に関する二重書き込みの制限](sync-limits.md)
 + [Lifecycle Services からの二重書き込みの設定](lcs-setup.md)
 + 既存の Finance and Operations アプリの二重書き込みの有効化
 
@@ -48,14 +46,10 @@ ms.locfileid: "7782397"
     + [二重書き込みウィザードを使用して環境をリンクする方法](link-your-environment.md)
     + [テーブル マップの二重書き込みの有効化](enable-entity-map.md)
 
-+ [二重書き込みの通貨データ型の移行](currrency-decimal-places.md)
-+ [販売注文の状態列のマッピングを設定](sales-status-map.md)
-+ [会社間注文をフィルター処理して注文および注文明細行の同期を回避する](filtering-intercompany-orders.md)
-
 ## <a name="managing-dual-write-after-setup"></a>設定後の二重書き込みを管理
 
 + [テーブル マッピングと列マッピングのカスタマイズ](customizing-mappings.md)
-+ [二重書き込みのカスタマイズに関するガイダンス](custom-best-practices.md)
++ [追加のフィールド、マップ、または変換に関するテーブルのカスタマイズ](custom-best-practices.md)
 + [複数のテーブル マップの処理](multiple-entity-maps.md)
 + [二重書き込み設定後に法人を編集する](edit-legal-entity.md)
 + [メンテナンス時に二重書き込みを一時停止する](pause-for-maintenance.md)
@@ -91,6 +85,10 @@ ms.locfileid: "7782397"
 + [Supply Chain Management の価格エンジンとのオンデマンド同期](pricing-engine.md)
 + [コマース価格エンジンとのオンデマンド同期](commerce-pricing.md)
 + [二重書き込みでの見込顧客の現金化](dual-write-prospect-to-cash.md)
+
+    + [販売注文の状態列のマッピングを設定](sales-status-map.md)
+    + [会社間注文をフィルター処理して注文および注文明細行の同期を回避する](filtering-intercompany-orders.md)
+    
 + [Field Service および Supply Chain Management の調達の統合](scm-field-service-procurement.md)
 + [サービスのための社内資産](in-house-assets.md)
 + [手持在庫の可用性](inventory-availability.md)
@@ -99,14 +97,19 @@ ms.locfileid: "7782397"
 
     + [関係者データ モデルで Microsoft Power Apps ポータルを使用](party-gab-portal.md)
     + [当事者およびグローバル アドレス帳モデルへのアップグレード](upgrade-party-gab.md)
+    + [関係者データを表示する](view-party.md)
 
 + [注記の統合](notes-integration.md)
 + [マッピング参照](mapping-reference.md)
 
 ## <a name="support"></a>サポート
 
++ [初期同期に関する考慮事項](initial-sync-guidance.md)
++ [ライブ同期に関する二重書き込みの制限](sync-limits.md)
 + [Field Service ソリューションと Project Service Automation ソリューションのサポート](field-service-project-service-automation.md)
 + [見込顧客の現金化のデータをデータ インテグレーターから二重書き込みに移行](migrate-prospect-to-cash.md)
++ [二重書き込みの通貨データ型の移行](currrency-decimal-places.md)
++ [よく寄せられる質問](dual-write-faq.md)
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

@@ -2,7 +2,7 @@
 title: Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 description: このトピックでは、セルフサービスを使用して、従来型の店舗にあるコンピューターに Commerce Scale Unit (自己ホスト) を構成し、インストールする方法について説明します。
 author: jashanno
-ms.date: 05/11/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,23 +16,23 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7eadcefdf3bc057c7a55a45d58f2f15f11b223e7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6e6b89ee433554eb7da410450e5c3a5e0ec2fd41
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782106"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860862"
 ---
 # <a name="configure-and-install-commerce-scale-unit-self-hosted"></a>Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、セルフ サービスを使用して、Microsoft Dynamics 365 Commerce バックオフィスで Commerce Scale Unit (自己ホスト。以前は Retail Store Scale Unit と呼ばれていました) を構成し、ダウンロードして、従来型の店舗にある 1 台以上のコンピューターにインストールする方法について説明します。 Commerce Scale Unit は、コマース チャネル データベース、Commerce Async Client、Retail Server、およびクラウド販売時点管理 (POS) コンポーネントを組み合わせたものです。 コマース環境では、クラウドでこれらのコンポーネントが既に提供されています。 ただし、単一コンピューターのセットアップ (既定のオプション) または複数コンピューターのセットアップのいずれかで、ストアまたはデータ センター内でローカルに動作するように構成できるようになりました。 このトピックは、Commerce Scale Unit のアンインストールとトラブルシューティングの方法についても説明します。
+このトピックでは、セルフ サービスを使用して、Microsoft Dynamics 365 Commerce バックオフィスで Commerce Scale Unit (自己ホスト。以前は Retail Store Scale Unit と呼ばれていました) を構成し、ダウンロードして、従来型の店舗にある 1 台以上のコンピューターにインストールする方法について説明します。 Commerce Scale Unit (CSU) は、Commerce チャネル データベース、Commerce Async Client、Retail Server、およびクラウド販売時点管理 (POS) コンポーネントを組み合わせたものです。 コマース環境では、クラウドでこれらのコンポーネントが既に提供されています。 ただし、単一コンピューターのセットアップ (既定のオプション) または複数コンピューターのセットアップのいずれかで、ストアまたはデータ センター内でローカルに動作するように構成できるようになりました。 このトピックは、Commerce Scale Unit のアンインストールとトラブルシューティングの方法についても説明します。
 
 > [!IMPORTANT]
-> 基本的な設計原則は、Commerce Scale Unit (クラウド) 上で要求された方法でカスタマイズできない場合は、CSU (自己ホスト) を使用してこの方法をカスタマイズしないことです。  直接データベース アクセスはサポートされていないため、この概念を使用するカスタマイズが容易に中断される可能性があることを理解しておくことが重要です。  CSU (自己ホスト) は、主にクロス ターミナル シナリオの有効化、WAN 接続の不良に備えた待機時間またはバックアップの短縮、および複数の CSU コンポーネント間での POS 端末の負荷を分散するためのスケールアウトの提供を行います。
->
-> このコンポーネントは、Azure サービス間の認証に加えてサーバー証明書を利用することに注意してください。  生成された Azure Web アプリケーション キー (旧 *シークレット*) とサーバー証明書の両方が、有効期限に対して管理されている必要があります。  既定では、証明書と生成された Azure web アプリケーション キーは 1 つの暦年 (365日) で期限切れになります。
+> - 基本的な設計原則は、Commerce Scale Unit (クラウド) 上で要求された方法でカスタマイズできない場合は、CSU (自己ホスト) を使用してこの方法をカスタマイズしないことです。  直接データベース アクセスはサポートされていないため、この概念を使用するカスタマイズが容易に中断される可能性があることを理解しておくことが重要です。  CSU (自己ホスト) は、主にクロス ターミナル シナリオの有効化、WAN 接続の不良に備えた待機時間またはバックアップの短縮、および複数の CSU コンポーネント間での POS 端末の負荷を分散するためのスケールアウトの提供を行います。
+> - 通常、Retail Server とチャネル データベースがすでに構成されている開発者環境に CSU をインストールしないでください。
+> - このコンポーネントは、Azure サービス間の認証に加えてサーバー証明書を利用することに注意してください。  生成された Azure Web アプリケーション キー (旧 *シークレット*) とサーバー証明書の両方が、有効期限に対して管理されている必要があります。  既定では、証明書と生成された Azure web アプリケーション キーは 1 つの暦年 (365日) で期限切れになります。
 
 ## <a name="before-you-begin"></a>準備
 
@@ -153,8 +153,9 @@ ms.locfileid: "7782106"
 ### <a name="run-the-commerce-scale-unit-installer"></a>Commerce Scale Unit インストーラーの実行
 
 > [!NOTE]
-> Commerce Scale Unit (自己ホスト) インストーラーを実行する前に、インストーラーの実行可能ファイルと同じ名前の構成ファイルがあることを確認してください。 これは、**ExecutableInstallerName.xml** のように表示され、両方のファイルを同じフォルダに配置します。 別の方法として、構成ファイルを手動で指定するためのコマンド ライン区切り記号があります。
-> Retail Cloud POS をインストールして使用する場合は、次の手順に従って、インストーラーを初めて実行するときに構成を初期化する必要があります。
+> - 通常、Retail Server とチャネル データベースがすでに構成されている開発者環境に CSU をインストールしないでください。
+> - Commerce Scale Unit (自己ホスト) インストーラーを実行する前に、インストーラーの実行可能ファイルと同じ名前の構成ファイルがあることを確認してください。 これは、**ExecutableInstallerName.xml** のように表示され、両方のファイルを同じフォルダに配置します。 別の方法として、構成ファイルを手動で指定するためのコマンド ライン区切り記号があります。
+> - Retail Cloud POS をインストールして使用する場合は、次の手順に従って、インストーラーを初めて実行するときに構成を初期化する必要があります。
 
 Commerce Scale Unit インストーラーを実行する前に、すべての[システム要件](../../fin-ops-core/fin-ops/get-started/system-requirements.md) が満たされていることを確認してください。
 

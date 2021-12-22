@@ -2,7 +2,7 @@
 title: オンプレミス配置の概要
 description: Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ センターでビジネス プロセスを実行することをサポートします。
 author: cabeln
-ms.date: 03/18/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 689c92b71895b4bfda261af9ade4d3d31008f5ea87cfd242f5ada9cd3a5b7fed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01fedd205c5c02d134bffed54e695857074a6fb2
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737446"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874567"
 ---
 # <a name="on-premises-deployment-overview"></a>オンプレミス配置の概要
 
@@ -30,7 +30,7 @@ ms.locfileid: "6737446"
 Microsoft Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ センターでビジネス プロセスを実行することをサポートします。 この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。 顧客およびパートナーは、Microsoft Dynamics Lifecycle Services (LCS) を利用して、社内展開を管理します。 LCS は、クラウドおよびオンプレミスでの実装のアプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。 業務プロセス モデリング、ソフトウェアの展開および修正、監視および診断などの LCS の機能は、オンプレミス配置をサポートするために使用されます。
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
+> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ## <a name="architecture"></a>アーキテクチャ
 

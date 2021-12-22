@@ -1,7 +1,7 @@
 ---
 title: 現金および銀行管理ホーム ページ
 description: 現金および銀行管理を使用して、法人の銀行口座と、その銀行口座に関連付けられている財務証書を管理できます。
-author: panolte
+author: roschlom
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: panolte
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5576b879942f4efaf35618d54f349155981cb9053c2d3fdb66b6cd31374e790
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de37cc3df673a672a091ffe90ca543fae77bc9d5
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770620"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883697"
 ---
 # <a name="cash-and-bank-management-home-page"></a>現金および銀行管理ホーム ページ
 

@@ -2,7 +2,7 @@
 title: 配置オプション
 description: Finance and Operations アプリは、クラウドまたはオンプレミスで実行することができます。 このトピックでは、各種の展開オプションについて説明します。
 author: kfend
-ms.date: 11/23/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: bcd040597c99e561894aadee26ef139469ff314849cbccb524d6359c8b23087d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e151e38be302d3e5ce29309d9f452248aae2e11
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721908"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874536"
 ---
 # <a name="deployment-options"></a>配置オプション
 
@@ -27,7 +27,7 @@ ms.locfileid: "6721908"
 
 クラウドまたはオンプレミスの Finance and Operations アプリをデプロイすることができます。 クラウド配置では、顧客のデータ センター内にオンプレミス配置がローカルに配置されたときに、Microsoft で完全に管理されている ERP サービスが提供されます。 
 > [!IMPORTANT]
-> オンプレミス配置は、Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。 
+> オンプレミス配置は、Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 次のテーブルは、2 つの配置オプションによって提供される機能の比較を示しています。
 

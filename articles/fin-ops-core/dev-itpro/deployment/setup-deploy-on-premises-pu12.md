@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 12 から 40 を計画、設定、展開する方法について説明します。
 author: PeterRFriis
-ms.date: 06/21/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: ac33ec5ae68a035e376a4b57f6421ef81258dc88
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 290741e1f6c462992c1d99690c44cee2d842dbc2
+ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595001"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7894738"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-updates-12-through-40"></a>オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 から 40)
 
@@ -91,7 +91,7 @@ VMWare を使用している場合は、次の Web ページに記載されて�
 - [vmxnet3 仮想アダプターのいくつかの問題](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
+> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ハードウェア構成には、次のコンポーネントが含まれます。
 
@@ -329,7 +329,7 @@ Add-Computer -DomainName $domainName -Credential (Get-Credential -Message 'Enter
 
 1. [LCS](https://lcs.dynamics.com/v2) にサインインします。
 2. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
-3. **モデル** タブの、グリッドで、**Dynamics 365 for Operations オンプレミス - 配置スクリプト** 行を選択します。
+3. **モデル** タブのグリッドで、**Microsoft Dynamics 365 Finance + Operations (オンプレミス)、配置スクリプト** を選択します。
 4. **バージョン** を選択し、スクリプトの zip ファイルの最新版をダウンロードします。
    >[!Note] 
    > プラットフォーム更新プログラム 8 またはプラットフォーム更新プログラム 11 の以前のバージョンが必要な場合は、バージョン 1 をダウンロードします。

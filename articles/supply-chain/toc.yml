@@ -68,9 +68,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Supply Chain Management の新機能または変更された機能
                   items:
-                    - name: Supply Chain Management の新機能や変更された機能に関するホーム ページ
+                    - name: Supply Chain Management の新機能または変更された機能に関するホーム ページ
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.23
+                    - name: Supply Chain Management 10.0.24 (2022 年 2 月)
+                      href: get-started/whats-new-scm-10-0-24.md
+                    - name: Supply Chain Management 10.0.23 (2022 年 1 月)
                       href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (2021 年 11 月)
                       href: get-started/whats-new-scm-10-0-22.md
@@ -78,7 +80,7 @@
                       href: get-started/whats-new-scm-10-0-21.md
                 - name: 削除済みまたは非推奨の機能
                   items:
-                    - name: 削除済みまたは非推奨の機能のホーム ページ
+                    - name: 削除済みまたは非推奨の機能に関するホーム ページ
                       href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能
                       href: get-started/removed-deprecated-features-scm-updates.md
@@ -270,11 +272,11 @@
                           href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 電子請求に関するよく寄せられる質問
                       href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 税の計算
+                - name: 税計算
                   items:
-                    - name: 税の計算の概要
+                    - name: 税計算の概要
                       href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 税の計算の使用を開始する
+                    - name: 税計算の使用を開始する
                       href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 移動オーダーに対する税金機能のサポート
                       href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
@@ -947,7 +949,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: リスト
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: List
                       items:
                         - name: リスト関数
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
@@ -3753,7 +3757,7 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: 倉庫管理
               items:
-                - name: Warehouse Mobile App
+                - name: Warehouse mobile app
                   items:
                     - name: アプリの接続設定時に、証明書パスのトラスト アンカーが見つからない
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md

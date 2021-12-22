@@ -10,19 +10,19 @@
           items:
             - name: Finance and Operations アプリの新機能または変更された機能
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Platform update における新機能および変更された機能
+            - name: プラットフォーム更新プログラムの新機能および変更された機能
               items:
-                - name: プラットフォーム更新プログラムの最新情報や変更事項に関するホームページ
+                - name: プラットフォーム更新プログラムの新機能および変更された機能に関するホームページ
                   href: get-started/whats-new-home-page.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.23
+                - name: プラットフォーム更新プログラム バージョン 10.0.24 (2022 年 2 月)
+                  href: get-started/whats-new-platform-updates-10-0-24.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.23 (2022 年 1 月)
                   href: get-started/whats-new-platform-updates-10-0-23.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.22 (2021 年 11 月)
                   href: get-started/whats-new-platform-updates-10-0-22.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.21 (2021 年 10 月)
-                  href: get-started/whats-new-platform-updates-10-0-21.md
             - name: 削除済みまたは非推奨の機能
               items:
-                - name: 削除済みまたは非推奨の機能のホーム ページ
+                - name: 削除済みまたは非推奨の機能に関するホーム ページ
                   href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: 削除済みまたは非推奨のプラットフォームの機能
                   href: get-started/removed-deprecated-features-platform-updates.md
@@ -232,9 +232,9 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Azure Data Lake の概要
-              href: data-entities/azure-data-lake-overview.md
-            - name: Azure Data Lake へのエクスポートのコンフィギュレーション
+            - name: Azure Data Lake へのエクスポートの概要
+              href: data-entities/Azure-Data-Lake-GA-version-overview.md
+            - name: Azure Data Lake へのエクスポート アドインのインストール
               href: data-entities/configure-export-data-lake.md
             - name: Azure Data Lake の Finance and Operations アプリ
               href: data-entities/finance-data-azure-data-lake.md
@@ -406,6 +406,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: 複数の環境への同じ AD FS インスタンスの再利用
                       href: deployment/onprem-reuseadfs.md
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の SQL Server インスタンスのアップグレード
+                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: ローカル エージェント
                   items:
                     - name: AD FS Microsoft 365 の互換性
@@ -1012,7 +1014,7 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform 統合
           items:
-            - name: Finance and Operations と Microsoft Power Platform の統合
+            - name: 概要
               href: power-platform/overview.md
             - name: Power Platform 統合の有効化
               href: power-platform/enable-power-platform-integration.md

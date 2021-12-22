@@ -2,7 +2,7 @@
 title: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 description: このトピックでは、複数の LCS プロジェクトと実稼動環境を同じ Azure Active Directory テナント上に実装する方法について説明します。
 author: ClaudiaBetz-Haubold
-ms.date: 04/15/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: fad9a17e603571cadfa1be3d816fe97b5d892fdaa062df66b95c089c870332c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a650665bd10106c5fd06c1b144f751cd0183815
+ms.sourcegitcommit: 013196e9737acfc9a3d1f842f351e95f79f64d36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728141"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "7878885"
 ---
 # <a name="multiple-lcs-projects-and-environments-on-one-azure-ad-tenant"></a>1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 
@@ -56,6 +56,7 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
 - 待機時間低減のため、LCS プロジェクトごとにデータ センターを選択することができます。
 - データ所在地の法的要件を満たすため、LCS プロジェクトごとにデータ センターを選択することができます。
 - コードの導入やアップグレードなど、サービス運用のスケジュールを立てることがより柔軟になります。
+- さまざまな LCS 実装プロジェクトに対して、さまざまな利害関係者が含まれる可能性があります。
 
 ## <a name="requesting-multiple-lcs-projects-on-the-same-azure-ad-tenant"></a>同じ Azure AD テナントで複数の LCS プロジェクトを要求します。
 
