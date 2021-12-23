@@ -2,19 +2,19 @@
 title: Finance and Operations アプリのサービス説明
 description: このトピックでは、Finance and Operations アプリのサービス説明を示します。
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825403"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898392"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations アプリのサービス説明
 
@@ -314,9 +314,9 @@ Microsoft の障害復旧の計画と手順は、System and Organization Control
 | Microsoft は、プライマリ実稼働インスタンスが配置されると、Azure ペア データセンターにセカンダリ環境をプロビジョニングします。 詳細については、[事業の継続性と障害復旧 (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions) を参照してください。 | None |
 | Microsoft は、プライマリ実稼働インスタンスを配置すると、Azure SQL と Azure Blob Storage のジオ重複が有効します。 | None |
 | Microsoft は、Azure SQL データベースの自動バックアップを有効にします。 | None |
-| <p>障害が発生した場合、Microsoft は、顧客に対してフェールオーバーを実行する必要があるかどうか、およびデータが失われるかどうかを判断します。 データ損失は最大 5 秒です。 詳細については、[Azure SQL データベース ジオ リストア](https://azure.microsoft.com/blog/azure-sql-database-geo-restore) を参照してください。</p><p>データが失われた場合、Microsoft は、フェールオーバーのために顧客のサインオフを要求します。</p> | データが失われた場合、フェールオーバーをトリガーするために、顧客は書面によるサインオフの提供が必要となる場合があります。 |
+| <p>障害が発生した場合、Microsoft は、顧客に対してフェールオーバーを実行する必要があるかどうか、およびデータが失われるかどうかを判断します。 稼働停止の性質とタイミングによっては、最大 15 分間、顧客データの損失が発生する場合があります。 | データが失われた場合、フェールオーバーをトリガーするために、顧客は書面によるサインオフの提供が必要となる場合があります。 |
 | フェールオーバーが発生した場合、該当するサービスは限定モードで機能します。 フェールオーバー モードでは、更新のメンテナンスは、トリガーできません。 | 顧客は、フェールオーバー モードでパッケージの配置、またはその他の定期的なメンテナンス要求を要求できません。 |
-| データセンターが運用可能になると、Microsoft はプライマリの Azure 地域の実稼働インスタンスにフェール バックします。 通常の運用を再開します。 | 顧客は、プライマリの Azure 地域の実稼働インスタンスに対するフェールバックでサインオフが必要となる場合があります。 |
+| データセンターが運用可能になると、Microsoft はプライマリの Azure 地域の実稼働インスタンスにフェール バックします。 通常の運用を再開します。 | 顧客は、プライマリの Azure 地域の運用インスタンスに対するフェールバックでサインオフが必要となる場合があります。 |
 
 ## <a name="finance-and-operations-support-offerings"></a>Finance and Operations サポートの提供
 

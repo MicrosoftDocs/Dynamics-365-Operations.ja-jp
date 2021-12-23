@@ -2,7 +2,7 @@
 title: キーボード ショートカット
 description: このトピックでは、Finance and Operations アプリを操作するときに使用できるショートカットキーの概要を示し ます。
 author: jasongre
-ms.date: 11/12/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
-ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
+ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7800196"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913521"
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 次のキーボード ショートカットは、Finance and Operations アプリでデータを短時間および効率的にに入力するのに役立ちます。
 
@@ -150,6 +149,7 @@ ms.locfileid: "7800196"
 | グリッドで既定のアクションを実行する<blockquote>[!NOTE] フォーカスがハイパーリンクを含んでいるセル上にあり、すべてのセルがそのハイパーリンクを持つ列にある時、このショートカットが有効になります。</blockquote> | 入力                           |
 | 選択した行およびヘッダー行間でフォーカスを切り替え                                                               | Alt + Shift + H                     |
 | (ヘッダー行のフォーカスで) 現在の列を大きくする/小さくする                                                  | 右方向キー / 左方向キー        |
+| (ヘッダー行のフォーカスで) 現在の列を次または前の位置に移動する                                   | Ctrl+Shift+右矢印キーまたは Ctrl+Shift+左矢印キー |
 | (ヘッダー行のフォーカスで) 現在の列のグリッド フィルターを開く                                              | 入力                           |
 | 内容に合わせて現在の列のサイズを変更する (ヘッダー行のフォーカス付き)                                           | A (または列のサイズ変更ハンドルをダブルクリック) |
 

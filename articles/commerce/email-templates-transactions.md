@@ -2,7 +2,7 @@
 title: トランザクション イベント用の電子メール テンプレートの作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベント用の電子メール テンプレートの作成、アップロード、および構成する方法について説明します。
 author: bicyclingfool
-ms.date: 10/26/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 69ba8821cde6788d6e0accb37288f92acdfc776c
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 25d7fcb803645f50ee4f5c608f5b6e789dfe3c31
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713800"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913755"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>トランザクション イベント用の電子メール テンプレートの作成
 
@@ -136,7 +136,7 @@ Dynamics 365 Commerce は、次の通知タイプをサポートしています�
 | `storename`        | 見込顧客が作成されたチャネルの名前です。 |
 | `storeurl`         | 既定では空白です。 このプレースホルダーを使用するには、カスタム拡張機能を作成する必要があります。 |
 
-### <a name="b2b-prospect-approved"></a>企業間見込顧客が承認されました
+### <a name="b2b-prospect-rejected"></a>企業間見込顧客が拒否されました
 
 *否認された B2B 見込顧客* の通知タイプは、見込顧客のオンボーディング リクエストが Commerce 本部で否認されるとトリガーされます。 B2B 見込顧客を承認、または否認する方法の詳細については、[新規ビジネス パートナーの管理者ユーザーを設定する](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner)を参照してください。 
 

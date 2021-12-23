@@ -1,7 +1,7 @@
 ---
 title: 循環棚卸の定義
 description: 循環棚卸は、手持在庫品目を監査するために使用できる倉庫プロセスです。
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPl
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1deba0eb03567a453466ebc477ddb099058d73906d96062de02de0a7e7b1218
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45107dca67ac13669c468c4c32fb4adfdab2195b
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726492"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902149"
 ---
 # <a name="define-cycle-counting"></a>循環棚卸の定義 
 

@@ -2,7 +2,7 @@
 title: 画像のアップロード
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像アップロードの方法について説明します。
 author: psimolin
-ms.date: 08/25/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423258"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891525"
 ---
 # <a name="upload-images"></a>画像のアップロード
 
@@ -41,7 +41,8 @@ ms.locfileid: "7423258"
 - **アップロード後にアセットを公開**: このチェック ボックスがオンになっている場合は、アップロード後すぐにイメージまたは画像が公開されます。
 
 > [!NOTE]
-> カテゴリが割り当てられた画像の資産には、特定のカテゴリの資産の検索を支援するキーワードとして自動的にカテゴリにタグが付けられます。
+> - カテゴリが割り当てられた画像の資産には、特定のカテゴリの資産の検索を支援するキーワードとして自動的にカテゴリにタグが付けられます。
+> - 製品の詳細ページでは、製品名を使用して **Alt テキスト** が動的に生成されます。したがって、製品画像の **Alt テキスト** を変更すると、表示される画像には影響はありません。
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>オムニ チャネル画像の命名規則 
 

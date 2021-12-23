@@ -1,7 +1,7 @@
 ---
 title: 循環棚卸
 description: この記事は、倉庫管理で使用できる倉庫ソリューションで、循環棚卸を使用する方法について説明します。 この記事は、在庫管理で使用できる倉庫ソリューションには適用されません。
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 972753212fc8ab358dddec65582d3782fb3a730873a6d7493493bd1469f2b03f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746774"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902224"
 ---
 # <a name="cycle-counting"></a>循環棚卸
 

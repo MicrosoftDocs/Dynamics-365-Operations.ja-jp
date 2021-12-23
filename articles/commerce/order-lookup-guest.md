@@ -2,7 +2,7 @@
 title: ゲスト チェックアウトの注文の検索を有効にする
 description: このトピックでは、Microsoft Dynamics 365 Commerce でゲスト チェックアウトの注文の検索を有効にする方法について説明します。
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 639ee670b83198423425d03dad308306c9eed25c
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674979"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891503"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>ゲスト チェックアウトの注文の検索を有効にする
 
@@ -58,11 +58,21 @@ Commerce 本社の **顧客注文** ページにある **注文検索** クイ�
 > [!NOTE]
 > これらのオプションにより、顧客の住所や顧客のクレジット カード番号の末尾 4 桁などの個人データをいつ匿名ゲスト ユーザーに表示するかが決定されます。 登録顧客のプライバシーを保護するために、**ゲスト注文のみ** オプションを選択することをお勧めします。 ただし、最も安全なオプションは **表示しない** です。
 
-**ゲスト注文の検索に個人データを含める** フィールドの値を変更した後、**Retail と Commerce \> Retail および Commerce IT \> 配送スケジュール** にアクセスして、Commerce 本社でジョブ 1070 (**チャネル コンフィギュレーション**) を実行する必要があります。
+**ゲスト注文の検索に個人データを含める** フィールドの値を変更した後、**Retail と Commerce \> Retail および Commerce IT \> 配送スケジュール** にアクセスして、Commerce 本部でジョブ 1070 (**チャネル 構成**) を実行する必要があります。
 
 ## <a name="configure-the-order-lookup-module"></a>注文検索モジュールを構成する
 
 Commerce モジュール ライブラリの注文検索モジュールは、ゲスト ユーザーが注文の検索に使用するフォームの表示に使用されます。 注文検索モジュールは、顧客のサインインが必要ないページの本文スロットに含めることができます。 モジュールの構成方法については、[注文検索モジュール](order-lookup-module.md)を参照してください。
+
+## <a name="configure-the-order-details-page"></a>注文の詳細ページの構成
+
+ゲストユーザーが注文詳細を閲覧するには、e コマースサイトの注文詳細ページが、サインインを必要としないように構成されている必要があります。 注文詳細ページのサインイン要件をオフにするには、Commerce サイトビルダーでページを開き、ツリービューで **既定のページ (必須)** スロットを選択し、右側のプロパティペインの下部にある **サインインを要求する** チェックボックスをクリアします。
+
+## <a name="add-a-link-to-order-details-in-transactional-emails"></a>トランザクション電子メールに注文詳細へのリンクを追加する
+
+注文関連のメールでは、顧客が注文した商品の注文詳細ページへのリンクやボタンを提供できます。 このリンク、またはボタンを追加するには、次の例のように、e コマース サイトの注文詳細ページを指す HTML ハイパーリンクを作成し、URL パラメーターとして注文確認 ID と顧客の電子メールアドレスを渡します。
+
+`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
 
 ## <a name="additional-resources"></a>追加リソース
 

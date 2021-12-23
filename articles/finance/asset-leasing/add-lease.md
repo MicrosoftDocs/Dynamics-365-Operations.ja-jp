@@ -2,7 +2,7 @@
 title: リースの追加またはコピー (プレビュー版)
 description: このトピックでは、新しいリースを作成する方法について説明します。これにより、資産リースの情報の入力や、既存のリースから情報をコピーすることができます。
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2f2e6837819158688f3fd6bc28909a106a05a098ca917cab9032a2d0044042fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee4803c4653b8c2df2cb731652456b1ce2796cd0
+ms.sourcegitcommit: e77d72fde17a43bd1780c265702254011af7407c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761329"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7893648"
 ---
 # <a name="add-or-copy-leases-preview"></a>リースの追加またはコピー (プレビュー版)
 
@@ -35,6 +35,8 @@ ms.locfileid: "6761329"
 1. **リースの概要** ページの、アクション ウィンドウで、**新規** を選択します。
 2. リースの情報を入力します。 必須フィールドには赤い境界線が表示されます。
 
+> リース支払の開始日をリースの開始日より前の日付には設定できません。 リースの支払開始日をリース開始日よりも早く入力すると、エラーメッセージが表示されます。
+  
 ## <a name="create-a-lease-schedule"></a>リース スケジュールの作成
 
 リースの情報を入力後、次の手順に従ってリース スケジュールを作成します。

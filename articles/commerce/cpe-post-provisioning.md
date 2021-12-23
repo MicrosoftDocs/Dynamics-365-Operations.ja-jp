@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 評価環境のコンフィギュレーション
 description: このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニング後に構成する方法について説明します。
 author: psimolin
-ms.date: 08/24/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416482"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913730"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境のコンフィギュレーション
 
@@ -39,6 +39,7 @@ ms.locfileid: "7416482"
 1. リストで環境を選択します。
 1. 右側の環境情報で、**環境にログインする** を選択します。 コマースの本部に送信されます。
 1. 右上隅にある **USRT** 法人が選択されていることを確認します。
+2. **Commerce パラメーター > 構成パラメーター** に移動、**ProductSearch.UseAzureSearch** の入力が **true** に設定されていることを確認します。 この入力がない場合は、この入力を追加して、eCommerce サイトに関連する Commerce Scale Unit で **チャネル データベース > 完全同期** を実行します。
 
 コマース本部でのプロビジョニング後の活動では、法人として **USRT** が常に選択されていることを確認してください。
 
@@ -105,6 +106,12 @@ LCS のクラウド POS を有効にするには、LCS で次の手順を実行�
     1. レコードを選択します。
     1. アクション ウィンドウの、**バッチ ジョブ** タブで、**状態の変更** を選択します。
     1. **キャンセル** を選択し、**OK** を選択します。
+
+1. ジョブの状態が **源泉徴収** の場合、次の手順を実行します。
+
+    1. レコードを選択します。
+    1. アクション ウィンドウの、**バッチ ジョブ** タブで、**状態の変更** を選択します。
+    1. **待機中** を選択し、**OK** を選択します。
 
 必要に応じて、以下のジョブの繰り返し間隔を1分に設定することも可能です。
 

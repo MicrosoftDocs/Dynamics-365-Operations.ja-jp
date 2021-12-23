@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474847"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867250"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>需要予測を伴うマスター プラン
 
@@ -86,9 +86,9 @@ ms.locfileid: "7474847"
 
 マスター プランに予測を含め、予測要求を減らすために使用される方法を選択するには、**マスター プラン \> 設定 \> プラン \> マスター プラン** の順に移動します。 **予測モデル** フィールドで、予測モデルを選択します。 **予測要求の削減に使用する方法** フィールドで、方法を選択します。 次のオプションを使用できます。
 
-- None
+- なし
 - 率 – 下方修正キー
-- トランザクション - 下方修正キー (計画の最適化ではまだサポートされていません)
+- トランザクション – 下方修正キー
 - トランザクション – 動的期間
 
 次のセクションでは、各オプションの詳細について説明します。

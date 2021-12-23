@@ -2,7 +2,7 @@
 title: 税計算コンフィギュレーションのマスタ データルックアップの有効化
 description: このトピックでは、税計算マスター データ検索機能を有効にするための設定方法について説明します。
 author: kai-cloud
-ms.date: 11/03/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
-ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
+ms.openlocfilehash: 455e8becfdfa910a3733719653e1a91557b2f59a
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "7749513"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867355"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>税計算コンフィギュレーションのマスタ データルックアップの有効化 
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、税計算マスター データ検索機能を有効にするための設定方法について説明します。 **仕入先アカウント**、**品目コード**、**配送条件** などのフィールドに対する税計算コンフィギュレーションで値を選択できます 。 これらの値は、Microsoft Dataverse データ ソースを使用して接続されている Microsoft Dynamics 365 Finance 環境から取得されます。
+このトピックでは、税計算マスター データ検索機能を有効にするための設定方法について説明します。 ドロップダウン リストで、**法人**、**仕入先アカウント**、**品目コード**、**配送条件** などのフィールドに対する税計算コンフィギュレーションの値を選択できます。 これらの値は、Microsoft Dataverse データ ソースを使用して接続されている Microsoft Dynamics 365 Finance 環境から取得されます。
+
+> [!NOTE] 
+> 税計算マスター データ検索機能はオプションの機能です。 Regulatory Configuration Service (RCS) の **税サービス Dataverse のデータソース サポート** 機能を無効にする場合は、次の手順を省略できます。 ただし、この場合、ドロップダウン リストは税計算コンフィギュレーションでは使用できません。
 
 1. Microsoft Dynamics Lifecycle Services (LCS) の Microsoft Power Platform 統合を設定します。 詳細については、[Microsoft Power Platform 統合 - アドインの概要](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md)を参照してください。 この手順を完了すると、Microsoft Power Platform 環境の名前が **Power Platform 統合** セクションに表示されます。
 2. [Microsoft Power Platform 管理センター](https://admin.powerplatform.microsoft.com/environments) に移動し、環境名を選択します。 環境 URL が提供されていません。

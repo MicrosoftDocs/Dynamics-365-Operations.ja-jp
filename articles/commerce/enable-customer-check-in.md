@@ -2,7 +2,7 @@
 title: 販売時点管理 (POS) での顧客チェックイン通知を有効にする
 description: このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) で顧客チェックイン通知を有効にする方法について説明します。
 author: bicyclingfool
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: cf9331e1da54520787686a3f190e2ef6d150c0c10bd521919407f5e6c74551d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 320e9d73ca98bf4ed22ac9bdff2fc34ae83223ec
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774586"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891415"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>販売時点管理 (POS) での顧客チェックイン通知を有効にする
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) で顧客チェックイン通知を有効にする方法について説明します。
 
@@ -50,17 +51,48 @@ eコマース サイトで、チェックイン確認エクスペリエンスと
 
 注文した商品がピックアップ可能になったときに顧客が受け取るトランザクション メールのテンプレートに、**I am here** のリンクまたはボタンを追加する必要があります。 顧客はこのリンクまたはボタンを使用して、注文をピックアップするために到着したことを店舗に通知します。 
 
-通知タイプの **梱包完了済** と、カーブサイド注文のフルフィルメントに使用している配送モードにマッピングされたテンプレートに、リンクまたはボタンを追加します。 テンプレートで、作成したチェックイン確認ページの URL を指す HTML リンクまたはボタンを作成します。 次に例を示します。
+通知タイプの **梱包完了済** と、カーブサイド注文のフルフィルメントに使用している配送モードにマッピングされたテンプレートに、リンクまたはボタンを追加します。 テンプレートには、以下の例のように、作成したチェックイン確認ページの URL を指し、パラメータ名と値を含んだ HTML リンクまたはボタンを作成してください。
 
-```
-<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%channelreferenceid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>
-```
+`<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%confirmationid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>`
+
 メール テンプレートの構成方法の詳細については、「[配送モードによるトランザクション メールのカスタマイズ](customize-email-delivery-mode.md)」を参照してください 。 
 
 ## <a name="a-check-in-confirmation-task-is-created-in-pos"></a>POS でチェックイン確認タスクが作成される
 
-顧客が店舗にピックアップのために到着したことを通知すると、チェックイン確認通知が表示され、顧客が注文をピックアップする店舗の POS のタスク リストにタスクが作成されます。 このタスクには、注文のフルフィルメントを行うために必要なすべての顧客および注文情報が含まれています。 このタスクでは、指示フィールドには、追加の情報フォームを使用して顧客から収集された情報が表示されます。 
+顧客が受け取りに来たことを店舗に通知すると、チェックインページには確認メッセージと、顧客の注文確認 ID を含むオプションの QR コードが表示されます。 同時に、POS のタスクリストに、顧客が注文を受け取る店舗のタスクが作成されます。 このタスクには、注文を満たすために必要なすべての顧客情報と注文情報が含まれています。 タスクの指示フィールドには、追加情報フォームで顧客から収集した情報が表示されます。
+
+## <a name="end-to-end-testing"></a>エンドツーエンドのテスト
+
+顧客のチェックインでは、特定のパラメータや値をチェックイン ページに渡し、さらに顧客チェックイン API に渡す必要があります。 したがって、最も簡単な方法は、テスト注文を作成して梱包できる環境で機能をテストする方法です。 この方法で、必要なパラメータ名と値を含む URL を持つ 「集荷用の注文」 メールを生成することができます。
+
+顧客チェックイン機能をテストするには、以下の手順に従ってください。
+
+1. 顧客チェックイン ページを作成し、顧客チェックイン モジュールを追加、構成します。 詳細については、[集荷モジュールのチェックイン](check-in-pickup-module.md) を参照してください。 
+1. ページをチェックインしますが、公開はしません。
+1. 配送の集荷モードの梱包完了通知タイプで呼び出されるメールテンプレートに、以下のリンクを追加します。 詳細については、[トランザクション イベント用の電子メール テンプレートの作成](email-templates-transactions.md)を参照してください。
+
+    - **生産前 (UAT) 環境の場合:** このトピックの前の方にある[取引のメールテンプレートを構成する](#configure-the-transactional-email-template)セクションにあるコード スニペットを追加します。
+    - **運用環境の場合:** 既存の顧客に影響が出ないように、以下のコメント付きコードを追加します。
+
+        `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`
+
+1. 配送の集荷モードが指定されている注文を作成します。
+1. 梱包完了通知タイプをトリガーとしたメールを受信したら、先に追加した URL を持つチェックインページを開いて、チェックインのフローをテストします。 URL に `&preview=inprogress` フラグが含まれるため、ページを表示する前に認証を求めるメッセージが表示されます。
+1. モジュールの設定に必要な追加情報を入力してください。
+1. チェックインの確認画面が正しく表示されていることを確認します。
+1. 注文を受け取る店舗の POS 端末を開きます。
+1. **集荷する注文** のタイルを選択し、注文が表示されることを確認します。
+1. チェックイン モジュールで構成された追加情報が詳細ウィンドウに表示されていることを確認します。
+
+顧客のチェックイン機能が最初から最後まで動作することを確認した後、以下の手順に従います。
+
+1. チェックイン ページを公開します。
+1. 運用環境でテストしている場合は、「集荷用注文」のメール テンプレートの URL のコメントを外し、**到着しました** のリンク、またはボタンが表示されるようにしてください。 その後、テンプレートを再アップロードします。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [ピックアップのチェックイン モジュール](check-in-pickup-module.md)
+
+[配送モードによるトランザクション メールのカスタマイズ](customize-email-delivery-mode.md)
+
+[トランザクション イベント用の電子メール テンプレートの作成](email-templates-transactions.md)

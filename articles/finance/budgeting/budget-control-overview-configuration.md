@@ -2,7 +2,7 @@
 title: 予算管理の概要
 description: このトピックでは、予算管理機能について紹介し、組織の財源管理を最適化するための予算管理の構成に役立つ情報を提供します。
 author: panolte
-ms.date: 06/25/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c8e7a08796a7f1c537978e406f53531e0f0682e6b5a769ced9d771063c30d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21277361a3d05c57be7aeaa05348723e23873ef6
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772882"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890728"
 ---
 # <a name="budget-control-overview"></a>予算管理の概要
 
@@ -78,9 +78,7 @@ ms.locfileid: "6772882"
 次に、**利用可能な予算財源** タブで、利用可能な予算財源を計算するのに使用される式を定義できます。 組織が財務資源をどれほど保守的に管理するか、また規制または業界の要件に応じて、その計算にはドラフトまたは未転記の伝票を含めることができます。 
 
 > [!NOTE]
-> この計算が予算サイクルの間に修正された場合、以前に予算管理検査を承認され、転記または完了された伝票は、変更はどの伝票にも影響しません。 10.0.17 アプリケーション リリースでは、**使用可能な予算財源での金額のみの追跡** 機能が限定された顧客に対して使用可能になりました。 この機能により、BudgetSourceTracking テーブルで追跡されるデータを変更できます。 この機能を有効にすると、金額は使用可能な予算財源の計算で使用するために選択されている場合にのみ格納されます。 **使用可能な予算財源の計算での金額のみの追跡** 機能を要求するためには、サポートに連絡してください。 
-
-### <a name="documents-and-journals"></a>ドキュメントと仕訳帳
+> 予算サイクルの過程で計算が変更された場合でも、以前に予算管理のチェックを通過し、計上または完了した文書には変更が影響しません。 **予算資金の計算で利用可能な金額のみを追跡する** という名前の機能を使用すると、BudgetSourceTracking テーブルで追跡されるデータを変更できます。 この機能を有効にすると、金額は使用可能な予算財源の計算で使用するために選択されている場合にのみ格納されます。 詳細については、 [使用可能な予算資金](budget-funds-available.md)を参照してください。
 
 次に、**伝票と仕訳帳** ページで、どの元伝票と仕訳帳が予算管理検査の対象か、また明細行の入力時に検査が発生するのか、または伝票全体を検査するのかを選択できます。 
 

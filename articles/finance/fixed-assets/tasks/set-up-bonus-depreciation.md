@@ -1,7 +1,7 @@
 ---
 title: 特別償却の設定
 description: この手順では、特別減価償却費を作成する方法およびそれを固定資産帳簿に関連付ける方法を説明します。
-author: saraschi2
+author: moaamer
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonu
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 417c820faec79067227eedc964e02b049218e87b1c11dbd62dc25cf52b2c03d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6bfa433c07a2acb37c8e73dfa5db7d1e1715cd1d
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721782"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883673"
 ---
 # <a name="set-up-bonus-depreciation"></a>特別償却の設定
 

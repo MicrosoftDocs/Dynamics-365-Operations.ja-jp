@@ -2,7 +2,7 @@
 title: 購入する前に
 description: Dynamics 365 Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce の購買を検討しているときに使用するステップ バイ ステップのガイドです。
 author: ShellyBakke
-ms.date: 11/23/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 0218dd93440c3cd76f16ac954dd7956998873931444fa1334e7382a177ff3fc9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757198"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874587"
 ---
 # <a name="before-you-buy"></a>購入する前に
 
@@ -42,7 +42,7 @@ Finance and Operations アプリケーションをクラウドにまたはオン
 - [オンプレミス配置のシステム要件](system-requirements-on-prem.md)。
 
 > [!IMPORTANT]
-> オンプレミス配置は、Microsoft Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。
+> オンプレミス配置は、Microsoft Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 詳細については、[配置オプション](../../dev-itpro/deployment/choose-deployment-type.md)を参照してください。
 

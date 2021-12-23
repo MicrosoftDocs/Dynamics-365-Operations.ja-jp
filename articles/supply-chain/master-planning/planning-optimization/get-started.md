@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 8681ef80166f7d5f108c9424b53fa5c6f5324467
-ms.sourcegitcommit: fcb1aa39e933216dea9e586b552bce6057f416a6
+ms.openlocfilehash: 8e6328902cec840b98b401fe8dd46c2a6f18cb54
+ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645785"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902562"
 ---
 # <a name="get-started-with-planning-optimization"></a>計画最適化の開始
 
@@ -40,7 +40,7 @@ ms.locfileid: "7645785"
 
 ## <a name="availability"></a>使用可能性
 
-計画の最適化は現在、次の Azure の地域で利用可能です: 米国、カナダ、ヨーロッパ、英国、オーストラリア、アジア太平洋、日本。 他の地域からのアドインをインストールしようとすると、LCS ではこの地理的領域には対応していない旨のメッセージを表示します。 Azure の地域および関連地域の詳細については、[Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies) の地域 を参照してください。
+計画の最適化は現在、次の Azure の地域で利用可能です: 米国、カナダ、ヨーロッパ、英国、オーストラリア、アジア太平洋、日本、インド。 他の地域からのアドインをインストールしようとすると、LCS ではこの地理的領域には対応していない旨のメッセージを表示します。 Azure の地域および関連地域の詳細については、[Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies) の地域 を参照してください。
 
 計画の最適化では、 Dynamics 365 Supply Chain Management の社内設置型の配置に対応していないことに注意してください。
 

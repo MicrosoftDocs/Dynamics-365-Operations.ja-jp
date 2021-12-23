@@ -1,7 +1,7 @@
 ---
 title: 175% 逓減残高による減価償却
-description: このトピックは、減価償却の 175% 逓減残高法の概要を示します。
-author: saraschi2
+description: このトピックでは、減価償却の 175% 逓減残高法の概要を説明します。
+author: moaamer
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ae334d05db69b205e1574623afb0bbc59394cbe4091315d1cc2a76cfdcd7cb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99bd47192d389c373b29a98f5344e1e0c1ab04e6
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747134"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883266"
 ---
 # <a name="175-percent-reducing-balance-depreciation"></a>175% 逓減残高による減価償却
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、減価償却の 175% 逓減残高法の概要を示します。
+このトピックでは、減価償却の 175% 逓減残高法の概要を説明します。
 
 固定資産減価償却プロファイルを設定し、**減価償却プロファイル** ページの **方法** フィールドで、**175% 逓減残高** を選択すると、減価償却プロファイルが割り当てられる固定資産は各減価償却期間で適用される比率と同じ比率で減価償却されます。 
 

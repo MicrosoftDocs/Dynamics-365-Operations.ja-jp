@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 14e86a49777eefefae711bfe0d756361b09d69c2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 43814023474d44b8c95bae087c7b6a4d52d21471
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778452"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891929"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>サード パーティ製造システムとの統合
 
@@ -191,7 +191,7 @@ MES 統合 API を呼び出す場合は、次のエンドポイント URL に `P
 
 | フィールド名 | Status | 種類 |
 |---|---|---|
-| `OperationNumber` | 必須 | 必須、整数 |
+| `OperationNumber` | 必須 | 整数 |
 | `OperationPriority` | オプション | 列挙 (Primary \| Secondary1 \| Secondary2 \| ... \| Secondary20) |
 | `OperationId` | オプション | 文字列 |
 | `OperationsResourceId` | オプション | 文字列 |

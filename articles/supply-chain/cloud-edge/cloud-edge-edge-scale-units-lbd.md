@@ -2,7 +2,7 @@
 title: LBD を使用したカスタム ハードウェアへのエッジのスケール ユニットの展開
 description: このトピックでは、カスタム ハードウェアとローカル ビジネス データ (LBD) に基づく配置を使用して、オンプレミスのエッジ スケール ユニットをプロビジョニングする方法について説明します。
 author: cabeln
-ms.date: 04/22/2021
+ms.date: 11/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: f1ab0a2c289f48dd8bfb7529f0dcc694a97f18ea
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 8913debd614827ef66ded88e0da61663ca9c6b3d
+ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7729078"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7894721"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>LBD を使用したカスタム ハードウェアへのエッジのスケール ユニットの展開
 
@@ -95,7 +95,7 @@ ms.locfileid: "7729078"
 
         ```powershell
         # Host URL is your DNS record\host name for accessing the AOS
-        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
         ```
 
     1. ALM オーケストレーション サービスとスケール ユニット管理サービスとの通信を可能にする新しい Azure Active Directory(Azure AD) アプリケーションを作成します。

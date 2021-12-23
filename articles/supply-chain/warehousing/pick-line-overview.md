@@ -1,7 +1,7 @@
 ---
 title: モバイル デバイスのメニュー項目を設定して、ピッキング行の概要を提供する
 description: このトピックでは、モバイル デバイス上で倉庫作業を処理する倉庫作業者に、いつすべての作業明細行リストを表示するかを定義する方法について説明します。 この機能は、作業指示書でピッキング行の概要を必要とすることが多い倉庫作業者が、ピッキング順序を最適化できるので役立ちます。
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8bb5a7851987b71d5a1df1d37054547f28ecf9a4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7d3a8972c5d2f4c52dddef458ebd6079118cadfe
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580051"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7901925"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>モバイル デバイスのメニュー項目を設定して、ピッキング行の概要を提供する
 

@@ -2,7 +2,7 @@
 title: B2B eコマース サイトの設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce の企業間 (B2B) eコマース サイトを設定する方法について説明します。
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 171e518258e9600bd7526cf52e3e456d272e6bce
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713751"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891388"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>B2B eコマース サイトの設定
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 企業間 (B2B) eコマース サイトは、B2B ユーザーのワークフローを最適化するいくつかの重要な機能を提供します。 このトピックでは、Microsoft Dynamics 365 Commerce の B2B の eコマース サイトを設定する方法について説明します。 B2B に特化したシナリオを有効にするにあたり、構成する必要があるモジュールとサイト設定が示されています。
 
@@ -306,6 +307,30 @@ Commerce サイト ビルダーの買い物カゴ ページにクイック追加
 
 > [!NOTE] 
 > クイック追加モジュールは、Commerce バージョン 10.0.17 リリース時点で使用できます。 古いバージョンの Commerce を更新する場合は、appsettings.json ファイルを手動で更新する必要があります。 手順については、[SDK およびモジュール ライブラリの更新](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file) を参照してください。
+
+## <a name="add-a-bulk-purchase-module-to-a-product-details-page"></a>製品詳細ページに一括購入モジュールを追加する
+
+商品詳細ページ (PDP) の一括購入モジュールは、購入者が複数のバリエーションの商品を素早くカートに入れることができるマトリック スベースのエクスペリエンスを提供します。 サイト ユーザーが同じ製品の複数のバリアントを注文する必要がある場合、これにより、商品の寸法の組み合わせを選択し、数量を定義し、そのバリアントをカートに入れ、さらに他の寸法の組み合わせでも同じ作業を繰り返す必要がなくなります。
+
+Commerce サイト ビルダーの PDP に一括購入モジュールを追加するには、以下の手順で行います。
+
+1. **テンプレート** に移動し、サイトの PDP テンプレートを選択します。
+1. **編集** を選択します。
+1. **既定のページ** モジュールの **メイン** スロットで、省略記号ボタン (**...**) を選択し、**モジュールの追加** を選択します。
+1. **モジュールの追加** ダイアログ ボックスで、**コンテナー** モジュールを選択して、**OK** を選択します。
+1. **コンテナー** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。
+1. **モジュールの追加** ダイアログ ボックスで、**一括購入** モジュールを選択し、続いて **OK** を選択します。
+1. **保存** を選択し、 **編集の完了** を選択してテンプレートをチェックインし、**発行** を選択して公開します。
+1. **ページ** に移動し、サイトの PDP を選択します。
+1. **既定のページ** モジュールの **メイン** スロットで、省略記号ボタン (**...**) を選択し、**モジュールの追加** を選択します。
+1. **モジュールの追加** ダイアログ ボックスで、**コンテナー** モジュールを選択して、**OK** を選択します。
+1. **コンテナー** モジュールのプロパティ ウィンドウの **幅** で、**すべてのコンテナー** を選択します。
+1. **コンテナー** スロットの省略ボタン (**...**) を選択し、**モジュールの追加** を選択します。
+1. **モジュールの追加** ダイアログ ボックスで、**一括購入** モジュールを選択し、続いて **OK** を選択します。
+1. **保存** を選択し、 **編集の完了** を選択してページにチェックインし、**発行** を選択して公開します。
+
+> [!NOTE] 
+> 一括購入モジュールは、Commerce バージョン 10.0.24 リリース時点で使用できます。 古いバージョンの Commerce を更新する場合は、appsettings.json ファイルを手動で更新する必要があります。 手順については、[SDK およびモジュール ライブラリの更新](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

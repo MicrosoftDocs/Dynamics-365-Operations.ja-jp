@@ -2,7 +2,7 @@
 title: グリッド機能
 description: このトピックでは、グリッド コントロールのいくつかの強力な機能について説明します。 これらの機能にアクセスするには、新しいグリッド機能を有効にする必要があります。
 author: jasongre
-ms.date: 10/25/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700140"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890872"
 ---
 # <a name="grid-capabilities"></a>グリッド機能
 
@@ -119,6 +119,9 @@ Finance and Operations アプリでは、すべての表形式のグリッドの
 
 ### <a name="hiding-column-names"></a>列名の非表示
 データをグループ化する場合、既定の動作では、グループ ヘッダー行に列名が表示されます。 **グリッド オプション** > **グループ列名の非表示** を選択して、グループ ヘッダー行の列名を非表示にすることができます。
+
+### <a name="grouping-on-date-and-time-columns"></a>日付と時刻の列のグループ化
+バージョン 10.0.24 以降、Date または DateTime フィールドでは、年、月、日でグループ化できるオプションが追加されました。 対応するヘッダー行のグループ「value」は、そのフィールドの形式と一致します。 また、DateTime フィールドと Time フィールドでは、時間、分、秒でグループ化できます。    
 
 ## <a name="freezing-columns"></a>凍結列
 グリッド内の一部の列は、表示からスクロールできないコンテキストにとって十分な重要な場合があります。 代わりに、これら列の値が常に表示されます。 **グリッドの列を凍結する** 機能による柔軟性をユーザーに提供します。 

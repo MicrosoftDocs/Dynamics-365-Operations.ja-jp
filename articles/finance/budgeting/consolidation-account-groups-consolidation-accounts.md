@@ -1,7 +1,7 @@
 ---
 title: 連結勘定グループおよび追加連結勘定
-description: このトピックでは、連結勘定グループと追加連結勘定について、および Microsoft Dynamics 365 Finance での使用方法についての情報を提供します。
-author: aprilolson
+description: このトピックでは、連結勘定グループと追加連結勘定について、およびそれら使用方法について説明します。
+author: panolte
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
@@ -12,25 +12,25 @@ ms.reviewer: roschlom
 ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
-ms.author: aolson
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3e6671e5f3ceff671210011913a3a91194613c7c0e4e1d8e8063e4e27e5f3cf5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 489f5417b6044e02d4711a03a17d6c19031cc2ee
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727423"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883390"
 ---
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>連結勘定グループおよび追加連結勘定
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>連結勘定グループおよび追加の連結勘定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、連結勘定グループと追加連結勘定について、および Microsoft Dynamics 365 Finance での使用方法についての情報を提供します。
+このトピックでは、連結勘定グループと追加連結勘定について、およびそれら使用方法について説明します。
 
 ## <a name="consolidation-account-groups"></a>連結勘定グループ
 
-連結勘定グループで、データを連結するのに使用する勘定のグループを作成することができます。 連結勘定グループは通常、政府指定の勘定科目表を表すか、会社の本社によって定義されるグループにアカウントをマップします。 **連結** モジュールの **設定** 領域で連結勘定グループを検索できます。 新しいグループを追加するときに、勘定グループと名前の固有 ID を入力します。
+連結勘定グループで、データを連結するのに使用する勘定のグループを作成することができます。 通常、連結勘定グループは政府が定めた勘定科目を表します。 連結勘定グループは、本社が定義したグループに勘定をマッピングすることも可能です。 **連結** モジュールの **設定** 領域で連結勘定グループを検索できます。 新しいグループを追加するときに、勘定グループと名称の固有 ID を入力します。
 
 ## <a name="additional-consolidation-accounts"></a>追加連結勘定
 連結統合で、既存の勘定科目表から連結勘定グループに勘定を割り当てることができます。 その後、連結勘定の値と名前を指定できます。 

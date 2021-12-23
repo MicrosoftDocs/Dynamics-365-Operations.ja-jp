@@ -2,7 +2,7 @@
 title: Dynamics 365 Finance の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
 author: roschlom
-ms.date: 04/14/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7ce7353de5795fd82e53bb1b7919c95dae4fe0ab6b8f536361613a7bcae19101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781204"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890956"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは推奨されない機能
 
@@ -32,6 +32,58 @@ ms.locfileid: "6781204"
 
 > [!NOTE]
 > Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Finance 10.0.24 リリースの削除済みまたは非推奨の機能
+
+### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>スウェーデンの消費税レポート (レポート コードに基づくデザイン)
+
+[スウェーデンの消費税支払レポート](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[スウェーデンの VAT 申告書](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **別の機能で置き換えられているか?**   | あり |
+| **影響を受ける製品領域**         | 申請書 |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨: 2022年12月1日までに、スウェーデンの消費税レポート (スウェーデンのレポート レイアウト) がサポートされなくなります。 新しい **VAT申告 XML (SE**)、**VAT 申告 Excel (SE)** 電子報告書 (ER) 形式は **税申告** モデル配下に導入されています。 |
+
+### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>オーストリアの VAT 明細書 (レポート コードに基づくデザイン)
+
+[オーストリア向け VAT 明細の内訳](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[オーストラリアの VAT 申告書](../localizations/emea-aut-vat-declaration-austria.md) |
+| **別の機能で置き換えられているか?**   | あり |
+| **影響を受ける製品領域**         | 申請書 |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨: 2022年12月1日までに、**VAT 申告モデル** では **VAT申告 (AT)** 電子申告  (ER) 形式はサポートされなくなります。 新しい **VAT申告 XML (AT**)、**VAT 申告 Excel (AT)** 形式は **税申告** モデル配下に導入されています。 |
+
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ドイツ向け ELSTER 申告 (レポート コードに基づくデザイン)
+
+[VAT 明細書](../localizations/emea-de-vat-declaration.md)</br>
+[ドイツ向けの電子税申告の設定](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[VAT 申告電子送信 (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[ドイツの VAT 申告書](../localizations/emea-deu-vat-declaration-germany.md) |
+| **別の機能で置き換えられているか?**   | あり |
+| **影響を受ける製品領域**         | 申請書 |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨: 2022年12月1日までに、**Elster (DE)** と **Elster モデル** 電子申告 (ER) 形式はサポートされなくなります。 新しい **VAT申告 XML (DE**)、**VAT 申告 Excel (DE)** 形式は **税申告** モデル配下に導入されています。 |
+
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>オランダ向け OB 申告 (レポート コードに基づくデザイン)
+
+[OB 申告](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[オランダの VAT 申告書](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **別の機能で置き換えられているか?**   | あり |
+| **影響を受ける製品領域**         | 申請書 |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨: 2022年12月1日までに、**OB 申告 (NL)** と **OB 申告モデル** の電子申告 (ER) 形式はサポートされなくなります。 新しい **VAT申告 XML (NL**)、**VAT 申告 Excel (NL)** 形式は **税申告** モデル配下に導入されています。 |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Finance 10.0.20 リリースの削除済みまたは非推奨の機能
 

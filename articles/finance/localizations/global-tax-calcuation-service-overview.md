@@ -2,7 +2,7 @@
 title: 税の計算の概要
 description: このトピックでは、税計算機能の全体的な範囲と機能について説明します。
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 11/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 28b14eba7dd870e80a83f8d31671525b593a09c9
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647060"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892427"
 ---
 # <a name="tax-calculation-overview"></a>税の計算の概要
 
@@ -65,9 +65,23 @@ ms.locfileid: "7647060"
 > [!NOTE]
 > 税計算は、Dynamics AX 2012 などの以前のバージョンの Dynamics 365、または Dynamics 365 のオンプレミス配置をサポートしていません。
 
+## <a name="versions"></a>バージョン
+税額計算の構成は、Finance または Supply Chain Management のバージョンに合ったバージョンでインポートして設定することをお勧めします。
+
+| Finance または Supply Chain Management バージョン | 税の構成バージョン               |
+| --------------- | --------------------------------------- |
+| 10.0.18         | 税コンフィギュレーション- ヨーロッパ 30.12.82     |
+| 10.0.19         | 税計算コンフィギュレーション 36.38.193 |
+| 10.0.20         | 税計算コンフィギュレーション 40.43.208 |
+| 10.0.21         | 税計算コンフィギュレーション 40.48.215 |
+| 10.0.22         | 税計算コンフィギュレーション 40.48.215 |
+| 10.0.23         | 税計算コンフィギュレーション 40.50.221 |
+| 10.0.24         | 税計算コンフィギュレーション 40.50.225 |
+
+
 ## <a name="data-flow"></a>データ フロー
 
-次に、税計算のデータ フロー プロセスの概要を示します。 
+ここでは、税計算のデータ フロー プロセスの概要を示します。 
 
 1. RCS では、課税対象ドキュメント モデル コンフィギュレーションとモデル マッピング コンフィギュレーションを表示およびインポートします。 より高度なシナリオに対してコンフィギュレーションを拡張する必要がある場合は、[税コンフィギュレーションのデータ フィールドの追加](tax-service-add-data-fields-tax-configurations.md) を参照してください。
 2. RCS で、税機能を作成または管理します。 税機能を使用して、税率および税の適用性ルールを管理できます。
@@ -169,6 +183,10 @@ ms.locfileid: "7647060"
 - 日本
 - マレーシア
 - シンガポール
+
+法人の基本住所に対する次の国/地域は、バージョン 10.0.24 でサポートされています:
+
+- メキシコ
 
 ## <a name="related-resources"></a>関連するリソース
 

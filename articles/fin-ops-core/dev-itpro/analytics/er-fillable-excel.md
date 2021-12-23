@@ -2,7 +2,7 @@
 title: ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
 description: このトピックでは、Excel テンプレートに入力する電子レポート (ER) のフォーマットを設計し、Excel 形式の出力ドキュメントを生成する方法について説明します。
 author: NickSelin
-ms.date: 10/29/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731641"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890876"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel 形式でドキュメントを生成する構成を設計する
 
 [!include[banner](../includes/banner.md)]
 
-ER [フォーマットのコンポーネント](general-electronic-reporting.md#FormatComponentOutbound) を持つ[電子レポート (ER) ](general-electronic-reporting.md) フォーマットの構成を設計して、 Microsoft Excel ワークブック形式の出力ドキュメントを生成するように構成することができます。 これには、特定の ERフォーマットのコンポーネントを使用する必要があります。
+ER フォーマットのコンポーネント を持つ[電子レポート (ER)](general-electronic-reporting.md) フォーマットの構成を設計して、Microsoft Excel ワークブック形式の出力ドキュメントを生成するように構成することができます。 これには、特定の ERフォーマットのコンポーネントを使用する必要があります。
 
 この機能の詳細については、[OPENXML 形式でレポートを生成する構成を設計する](tasks/er-design-reports-openxml-2016-11.md)に記載の手順に従ってください。
 
@@ -330,6 +330,40 @@ Microsoft Excel ブック形式の送信ドキュメントが生成された場�
 6. 印刷可能な FTI ドキュメントを生成し、生成されたドキュメントのフッターを確認します。
 
     ![生成されたドキュメントのフッターを Excel 形式で確認する。](./media/er-fillable-excel-footer-4.gif)
+
+## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>例 2: EPPlus のマージされたセルの問題を修正する
+
+ER 形式を実行して、Excel ワークブック形式の送信ドキュメントを生成することができます。 **機能管理** ワークスペースで、**電子レポート フレームワークで EPPlus ライブラリを使用する** 機能を有効にすると、[EPPlus ライブラリ](https://www.nuget.org/packages/epplus/4.5.2.1)を使用して Excel 出力が行われます。 しかし、[Excel の既知の動作](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9)と EPPlus ライブラリの制限により、次の例外が発生する場合があります: 「マージされたセルを削除/上書きできません。 この範囲は、部分的に他のマージされた範囲とマージされます。」 どのような Excel テンプレートがこの例外を引き起こすか、またどのようにして問題を解決するかについては、次の例を参考にしてください。
+
+1. Excel デスクトップ アプリケーションで、新しい Excel ブックを作成します。
+2. ワークシート **Sheet1** で、セル **A2** の **ReportTitle** を追加します。
+3. セル **A1** と **A2** をマージします。
+
+    ![設計された Excel ワークブックのセル A1 と A2 を統合した結果を、Excel のデスクトップ アプリケーションで確認します。](./media/er-fillable-excel-example2-1.png)
+
+3. **構成** ページで、Excel ワークブック形式の送信ドキュメントを生成するための新しい[ER 形式](er-fillable-excel.md#add-a-new-er-format)を追加します。
+4. **フォーマット デザイナー** ページで、送信ドキュメントの新しいテンプレートとして、デザインした Excel ブックを追加の ER 形式に[インポート](er-fillable-excel.md#template-import)します。
+5. **マッピング** タブで、[セル](er-fillable-excel.md#cell-component) タイプの **ReportTitle** コンポーネントのバインドを構成します。
+6. 構成された ER 形式を実行します。 次の例外が発生していることに注意してください: 「マージされたセルを削除/上書きできません。 この範囲は、部分的に他のマージされた範囲とマージされます。」
+
+    ![形式デザイナー ページで、構成した ER 形式を実行した結果を確認します。](./media/er-fillable-excel-example2-2.png)
+
+以下のいずれかの方法で問題を解決することができます:
+
+- **簡単ですが、推奨しません:** **機能管理** ワークスペースで、**電子レポート フレームワークで EPPlus ライブラリの使用を有効化する** 機能をオフにします。 この方法は簡単ですが、一部の ER 機能は **電子レポート フレームワークで EPPlus ライブラリの使用を有効化する** 機能が有効な場合にのみサポートされるため、この方法を使用すると別の問題が発生する可能性があります。
+- **推奨:** 以下の手順に従います:
+
+    1. Excel デスクトップ アプリケーションで、次のいずれかの方法で Excel ブックを変更します:
+
+        - ワークシート **Sheet1**、**A1** と **A2** セルのを解除します。
+        - **ReportTitle** の名前の参照を **=Sheet1!$A$2** から **=Sheet1!$A$1**.に変更します。
+
+        ![設計した Excel ワークブックの参照先を変更した結果を、Excel デスクトップアプリケーションで確認します。](./media/er-fillable-excel-example2-3.png)
+
+    2. **形式デザイナr** ページで、変更した Excel ブックを編集可能な ER 形式に[インポート](er-fillable-excel.md#template-import)して、既存のテンプレートを更新します。
+    3. 変更された ER 形式を実行します。
+
+        ![生成されたドキュメントをデスクトップ アプリケーションの Excel で確認します。](./media/er-fillable-excel-example2-4.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
