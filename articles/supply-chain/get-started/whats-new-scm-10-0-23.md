@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.23 (2022 年 1 月) のプレビュー
+title: Dynamics 365 Supply Chain Management 10.0.23 (2022 年 1 月) の新機能と変更された機能
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.23 の新機能または変更された機能について説明します。
 author: kamaybac
 ms.date: 10/15/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: fd6483c86b34d355e3727a95794b7876dc54ec32
-ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
+ms.openlocfilehash: 83d19f92984c9f67242946aa8faf445d9d2bd881
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "7891796"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920203"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10023-january-2022"></a>Dynamics 365 Supply Chain Management 10.0.23 (2022 年 1 月) のプレビュー
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Dynamics 365 Supply Chain Management 10.0.23 (2022 年 1 月) の新機能と変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、バージョン 10.0.23 の Microsoft Dynamics 365 Supply Chain Management プレビューの新機能または変更された機能について一覧表示します。 このバージョンには 10.0.1037 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.23 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.1037 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2021 年 10 月
 - **リリースの一般提供 (セルフ更新)**: 2021 年 12 月

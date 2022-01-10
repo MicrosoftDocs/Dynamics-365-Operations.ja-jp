@@ -1,8 +1,8 @@
 ---
 title: データベース ログの構成と管理
 description: データベース ログを使用すると、Dynamics 365 Human Resources のテーブルとフィールドに対する変更を追跡できます。
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0f69df4a141e509c8c250f767cbbc3a20ef4ab7ac3dcec2bc6faa15eababb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10591abee7890d54d721c9324101a4b4bd0a74d2
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781660"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924823"
 ---
 # <a name="configure-and-manage-database-logging"></a>データベース ログの構成と管理
 
@@ -93,14 +93,14 @@ ms.locfileid: "6781660"
 データベース ログのクリーンアップを設定するには、次の手順を実行します: 
 
 1. **システム管理 > リンク > データベース > データベース ログ** に移動します。 **ログのクリーンアップ** を選択します。
-
-2. 次のいずれかのオプションを入力して、削除するログを選択する方法を選択します:
+2. **対象に含めるレコード** ヘッダーで、**フィルター** を選択します。
+3. 削除するログを選択する方法を選択します。 以下のいずれかのオプションを入力します:
 
    - テーブル ID
    - ログのタイプ
    - 作成日時
 
-3. **データベース ログのクリーンアップ** タブを使用して、ログのクリーンアップ タスクをいつ実行するかを決定します。 既定では、データベース ログは 30 日間使用できます。
+4. **データベース ログのクリーンアップ** タブを使用して、ログのクリーンアップ タスクをいつ実行するかを決定します。 既定では、データベース ログは 30 日間使用できます。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

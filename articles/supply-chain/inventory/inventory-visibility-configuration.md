@@ -2,7 +2,7 @@
 title: 在庫の視覚化のコンフィギュレーション
 description: このトピックでは、在庫の視覚化を構成する方法について説明します。
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678474"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920301"
 ---
 # <a name="configure-inventory-visibility"></a>在庫の視覚化のコンフィギュレーション
 
@@ -61,7 +61,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 各データ ソースは、データの取得元のシステムを表しています。 データソース名の例としては、`fno` ("Dynamics 365 Finance and Operations アプリ" の略) および `pos` ("販売時点管理" の略) が含まれます。 既定では、Supply Chain Management が在庫視覚化の既定のデータ ソース (`fno`) として設定されます。
 
 > [!NOTE]
-> `fno` データ ソースは Dynamics 365 Supply Chain Management に対して引当されています。
+> `fno` データ ソースは Supply Chain Management 用に予約されています。 在庫の可視性アドインが Supply Chain Management 環境と統合されている場合は、データソースの `fno` に関連する設定を削除しないことをお勧めします。
 
 データ ソースを追加するには、次の手順に従います。
 
@@ -273,17 +273,17 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>パーティションの構成
 
-パーティションの構成は、ベース分析コードの組み合わせで構成されます。 データ配分パターンを定義します。 同じパーティション内のデータ操作は高パフォーマンスをサポートし、あまりコストもかかりません。 したがって、適切なパーティションのパターンは大きな利益をもたらします。
-
-在庫の視覚化は、次の既定のパーティションの構成を提供します。
+現在、パーティション構成は、データの分散方法を示す 2 つの基本分析コード (`SiteId` と `LocationId`) で構成されています。 同じパーティションで運用することで、より高いパフォーマンスを低コストで実現できます。 次の表は、在庫の視覚化アドインが提供する規定のパーティション構成です。
 
 | ベース分析コード | 階層 |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-> [!NOTE]
-> 既定のパーティションの構成は参照専用です。 在庫の視覚化で定義する必要はありません。 現在、パーティションの構成のアップグレードはサポートされていません。
+ソリューションには、このパーティション構成が規定で含まれています。 したがって、 *自分で定義する必要はありません*。
+
+> [!IMPORTANT]
+> 既定のパーティション構成をカスタマイズしないでください。 それを削除したり変更したりすると、予期せぬエラーが発生する可能性があります。
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>製品インデックス階層の構成
 

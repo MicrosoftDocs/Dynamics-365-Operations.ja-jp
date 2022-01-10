@@ -1,6 +1,6 @@
 ---
-title: 収益認識の概要
-description: このトピックでは、収益認識機能に関する情報を提供します。 この機能により、複数要素注文の収益価格と収益スケジュールの両方を認識するための会社固有のルールを定義できる、柔軟なフレームワークが提供されます。
+title: 売上認識の概要 (ビデオを含む)
+description: このトピックでは、売上認識機能に関する情報を提供します。 この機能により、複数要素注文の収益価格と収益スケジュールの両方を認識するための会社固有のルールを定義できる、柔軟なフレームワークが提供されます。
 author: kweekley
 ms.date: 11/11/2019
 ms.topic: index-page
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ef59e6a3a0c553ad43db2ed35cb68b57c505f2ac7414592880e361fa3f5c4a12
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c027b3edb12c34c2373c58a5aa7e39cfbff39045
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756276"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937585"
 ---
 # <a name="revenue-recognition-overview"></a>収益認識の概要
 

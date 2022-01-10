@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 93adc5b91667fdcd5969439994170fe7d28258fc9f5762d1262d8e72862c4f5f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d860c2b9fe01231e8e47b085f93c79c5a7dc449e
+ms.sourcegitcommit: d13ea8b6baf73601a8b57548232aac84ffaba717
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762251"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7941247"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>アクション依存の ER 送信先を構成する
 
@@ -115,7 +115,6 @@ ER 形式を実行するときに、構成済の送信先設定を実行時に�
 - 発注書の購買照会
 - 販売注文確認
 - 督促状
-- 顧客勘定明細書
 - 利子計算書
 - 仕入先支払通知
 - 見積依頼

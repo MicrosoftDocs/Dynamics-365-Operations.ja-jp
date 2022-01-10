@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7271436bd155918dfdac792486c89966e7adb18c
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a028de4bd37b965d55783dad4b39378d6400bf4b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402645"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920751"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Dynamics 365 Supply Chain Management 機能コンサルタント向けラーニング カタログ
 
@@ -113,7 +113,7 @@ ms.locfileid: "7402645"
 | [Dynamics 365 Supply Chain Management の資産管理を構成する](/learn/paths/configure-asset-management-dyn365-supply-chain-mgmt/) | 資産管理は、会社の日常業務で使用する資産を管理に使用する Dynamics 365 Supply Chain Management のアドインです。 このタイプの資産の例としては、機械、生産設備、フォーク リフトなどがあります。 | 無料の自習型オンライン学習パス | 7 時間 |
 | [Dynamics 365 Supply Chain Management の資産管理で作業する](/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | 資産管理は、会社の日常業務で使用する資産を管理に使用する Dynamics 365 Supply Chain Management のアドインです。 このタイプの資産の例としては、機械、生産設備、フォーク リフトなどがあります。 | 無料の自習型オンライン学習パス | 12.5 時間 |
 | [Dynamics 365 Supply Chain Management の製品バージョン情報の管理](/learn/paths/manage-product-version-engineering-change-management/) | Dynamics 365 Supply Chain Management のエンジニアリング変更管理アドインは、エンジニアリング製品のライフ サイクルにおいて、製品のバージョン情報を管理するための構造化されたプロセスを提供するものです。 | 無料の自習型オンライン学習パス | 4 時間 |
-| [Dynamics 365 Supply Chain Management のエンジニアリング変更管理の設定](/learn/paths/set-up-engineering-change-management/) | 今日のメーカーは、短縮し続ける製品のライフサイクル、品質と信頼性の要求への高まり、および製品の安全性への高まりといった世界で成功するために強力な製品データ管理、バージョン管理、およびエンジニアリング変更管理を必要としています。 このラーニング パスでエンジニアリング変更管理を設定する方法を学びます。 | 無料の自習型オンライン学習パス | 4 時間 |
+| [Dynamics 365 Supply Chain Management のエンジニアリング変更管理の設定](/learn/paths/set-up-engineering-change-management/) | 今日の製造元は、短縮し続ける製品のライフサイクル、品質と信頼性の要求への高まり、および製品の安全性への高まりといった世界で成功するために強力な製品データ管理、バージョン管理、およびエンジニアリング変更管理を必要としています。 このラーニング パスでエンジニアリング変更管理を設定する方法を学びます。 | 無料の自習型オンライン学習パス | 4 時間 |
 | [Microsoft 認定: Dynamics 365 for Finance and Operations、Supply Chain Management 機能コンサルタント アソシエート](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Microsoft認定: Dynamics 365 for Finance and Operations、Supply Chain Management 機能コンサルタントは、顧客の原価会計、在庫管理、マスター プラン、倉庫管理を合理化します。 | 証明書、費用は地域によって異なる | |
 
 ## <a name="exams"></a>試験<a name="exams"></a>

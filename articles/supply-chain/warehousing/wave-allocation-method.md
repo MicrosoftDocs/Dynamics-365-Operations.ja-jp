@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fd874f3c6c1f4d25b3257d6465686dcb8e95b933
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 541e6c42ae1fa7d803b5becc1b52e34860777594
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576019"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920601"
 ---
 # <a name="wave-allocation"></a>サイクル配賦
 
@@ -77,7 +77,7 @@ ms.locfileid: "7576019"
 
 必要に応じて、*サイクルの配賦メソッドのサイクル並行処理* 機能が自動的に有効になっている場合は、既定で行われた各設定を元に戻すことができます。 これを行うには、次の手順を実行します。
 
-- **倉庫管理\>設定\> 倉庫管理パラメーター** の順に移動します。 **制御処理** タブで、**バッチの処理** と **ロックを待機 (ミリ秒)** の値 を適用します 。
+- **倉庫管理 \> 設定 \> 倉庫管理パラメーター** の順に移動します。 **制御処理** タブで、**バッチの処理** と **ロックを待機 (ミリ秒)** の値 を適用します 。
 - **倉庫管理 \> 設定 \> ウェーブ \> ウェーブのプロセス メソッド** に移動します。 `allocateWave` メソッドを選択します。 アクション ペインで、**タスク構成** を選択して、メソッドが並列して実行するために設定されている各倉庫を一覧表示するページを開きます。 必要に応じて、バッチ タスクの数と、リストされている各倉庫に割り当てられている複数のグループを変更または削除します。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
