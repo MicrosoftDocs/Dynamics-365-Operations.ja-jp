@@ -2,7 +2,7 @@
 title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
-ms.date: 10/28/2021
+ms.date: 12/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0065f5c101237de49ae362ecd3378ec5046dbf4b
-ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
+ms.openlocfilehash: 4ac68cfdd8f8b2c65993fbd91587e52cce56a437
+ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7725052"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927482"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
 
@@ -74,7 +74,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | このイベントを実行するコントロールはありません。 |
-| **別の機能で置き換えられているか?**   | はい、**OnDBSynchronzie** イベントによってサブスクライブされた既存のメソッドを SysSetup 拡張クラスに移動します。 |
+| **別の機能で置き換えられているか?**   | はい、**OnDBSynchronize** イベントによってサブスクライブされた既存のメソッドを SysSetup 拡張クラスに移動します。 |
 | **影響を受ける製品領域**         | データベース同期 |
 | **配置オプション**              | すべて |
 | **状態**                         | 非推奨。 削除予定日は 2022 年 10 月です。 |

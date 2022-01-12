@@ -1,22 +1,22 @@
 ---
 title: ウェーブ中にウェーブ ラベルの印刷をスケジュールする
 description: このトピックでは、タスク ベースのウェーブ ラベル印刷用の機能を設定および使用する方法について説明します。
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777868"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920152"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>ウェーブ中にウェーブ ラベルの印刷をスケジュールする
 
@@ -40,7 +40,7 @@ ms.locfileid: "7777868"
 
 最初に、新しいウェーブ ステップ メソッドを作成し、並列、非同期タスク処理を有効にする必要があります。
 
-1.  **倉庫管理 \> 設定 \> ウェーブ \> ウェーブのプロセス メソッド** に移動します。
+1. **倉庫管理 \> 設定 \> ウェーブ \> ウェーブのプロセス メソッド** に移動します。
 1. アクション ウィンドウで、**再生成の方法** を選択します。 *waveLabelPrinting* は、出荷ウェーブ テンプレートで使用できるウェーブ プロセス方法の一覧に追加されることに注意してください。
 1. **メソッド名** フィールドが *waveLabelPrinting* に設定されているレコードを選び、アクション ウィンドウで **タスク コンフィグレーション** を選択します。
 1. アクション ウィンドウで **新規** を選択して、行をグリッドに追加します。 続いて、新しい行に次のフィールドを設定します:
@@ -51,7 +51,7 @@ ms.locfileid: "7777868"
 
 *ウェーブ ラベル印刷* ウェーブ処理方法を使用するように、既存のウェーブ テンプレートを更新します。 または、それを使用する新しいウェーブ テンプレートを作成できます。
 
-1.  **倉庫管理 \> 設定 \> ウェーブ \> ウェーブ テンプレート** の順に移動します。
+1. **倉庫管理 \> 設定 \> ウェーブ \> ウェーブ テンプレート** の順に移動します。
 1. アクション ウィンドウで、**編集** を選択します。
 1. リスト ウィンドウで、ウェーブ テンプレートを選択して更新します。 (デモ データをテスト目的で使用している場合は、*24 出荷の既定* を選択できます。)
 1. **メソッド** クイックタブの **残りのメソッド** 列で、**名前** フィールドが *waveLabelPrinting* に設定されている行を選択します。

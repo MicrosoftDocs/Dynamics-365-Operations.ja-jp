@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e84df8aa4f3e4079cf97d35b0d67a75d68dbb4b2
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: e872600222ad23bf3de62c0f2d6cda74942d5b55
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860536"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920651"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>作業者が生産現場の実行インターフェイスを使用する方法
 
@@ -110,9 +110,6 @@ ms.locfileid: "7860536"
 ![進捗状況のレポート ダイアログ ボックス。](media/pfei-report-progress-dialog.png "進捗状況のレポートのダイアログ ボックス")
 
 ## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>連産品と副産物を含むバッチ オーダーに関する適正数量の報告
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] 
-<!--KFM: Preview until GA with 10.0.23 -->
 
 作業者は生産現場の実行インターフェースを使用して、バッチ オーダーの進捗状況を報告できます。 このレポートには、連産物および副産物に関するレポートが含まれます。
 

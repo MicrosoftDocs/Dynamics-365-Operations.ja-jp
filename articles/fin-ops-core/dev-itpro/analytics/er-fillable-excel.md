@@ -2,7 +2,7 @@
 title: ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
 description: このトピックでは、Excel テンプレートに入力する電子レポート (ER) のフォーマットを設計し、Excel 形式の出力ドキュメントを生成する方法について説明します。
 author: NickSelin
-ms.date: 12/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
+ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890876"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7943615"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel 形式でドキュメントを生成する構成を設計する
 
@@ -364,6 +364,22 @@ ER 形式を実行して、Excel ワークブック形式の送信ドキュメ�
     3. 変更された ER 形式を実行します。
 
         ![生成されたドキュメントをデスクトップ アプリケーションの Excel で確認します。](./media/er-fillable-excel-example2-4.png)
+
+## <a name="limitations"></a>制限
+
+### <a name="known-epplus-library-limitations"></a>EPPlus ライブラリに関する既知の制限
+
+#### <a name="external-data-sources"></a>外部データ ソース
+
+テンプレートの 1 つに [外部データ ソース](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b)を参照する PowerPivot モデルに基づいた PivotTable が含まれており、**電子報告書フレームワークで EPPlus ライブラリの使用を有効にする** 機能が有効になっている場合、そのテンプレートを使用して Excel 形式の送信ドキュメントを生成する ER 形式を実行すると、次のエラーメッセージが表示されます: 「キャッシュ ソースはワークシートではありません。」 この問題を解決するには、以下の方法があります:
+
+- **推奨:** 使用している Excel ソリューションを再設計する:
+
+    1. ピボットを含む部分を別の Excel ワークブック (ワークブック A) に分離します。 
+    2. ER を使用して、Finance から必要な詳細情報を持つ 2 つ目の Excel ワークブック (ワークブック B) を生成します。 
+    3. ワークブック B が生成されたら、すぐにワークブック A のワークブック B を参照します。
+
+- EPPlus 以外のオプションを使用して機能をオフにします。 
 
 ## <a name="additional-resources"></a>追加リソース
 

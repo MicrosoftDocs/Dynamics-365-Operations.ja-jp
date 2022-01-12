@@ -1006,12 +1006,14 @@
               items:
                 - name: Dynamics 365 Translation Service の概要
                   href: lifecycle-services/translation-service-overview.md
-                - name: ユーザー インタ フェース ファイルの翻訳
+                - name: ユーザー インターフェイス ファイルの翻訳
                   href: lifecycle-services/use-translation-service.md
                 - name: ドキュメント ファイルの翻訳
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: 翻訳メモリ ファイル
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Azure DevOps 拡張機能 (パブリック プレビュー)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform 統合
           items:
             - name: 概要
@@ -1602,9 +1604,11 @@
                   href: sysadmin/retryable-batch.md
                 - name: バッチ ジョブのコピー
                   href: sysadmin/copy-batch-job.md
-                - name: アクティブなバッチ期間
+                - name: 優先順位に基づくバッチスケジューリング
+                  href: sysadmin/priority-based-batch-scheduling.md
+                - name: 有効なバッチ期間
                   href: sysadmin/activeperiod.md
-                - name: アクティブなバッチ期間に対応した夏時間のサポート
+                - name: 有効なバッチ期間における夏時間のサポート
                   href: sysadmin/batch-active-period-dst.md
                 - name: バッチ マネージャーのセキュリティ ロール
                   href: sysadmin/runby.md

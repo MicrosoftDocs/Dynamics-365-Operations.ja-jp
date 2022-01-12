@@ -2,7 +2,7 @@
 title: Teams における人事管理アプリ
 description: このトピックでは、Microsoft Teams における Microsoft Dynamics 365 Human Resources について説明します。
 author: twheeloc
-ms.date: 12/09/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 9274ab345616561deddd322ebad0d6e0b834d1d4
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913492"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924725"
 ---
 # <a name="human-resources-app-in-teams"></a>Teams における人事管理アプリ
 
@@ -41,6 +41,21 @@ Dynamics 365 Human Resources アプリは、Teams ストアにあります。 Te
 Teams におけるアプリのアクセス許可の管理については、[Microsoft Teams におけるアプリのアクセス許可ポリシーを管理する](/MicrosoftTeams/teams-app-permission-policies)を参照してください。
 
 ユーザーがアプリで休暇および欠勤カレンダーを表示するには、機能管理で **Teams の休暇および欠勤カレンダー** を有効にする必要があります。 機能を有効にする方法については、[機能の管理](hr-admin-manage-features.md)を参照してください。
+
+## <a name="update-app"></a>アプリの更新
+>[!NOTE]
+> 2021 年 12 月 20 日以降、Microsoft テナントにホストされている人事管理アプリのボット サービスは廃止されます。 最新の拡張機能 (バージョン1.1.5) がインストール可能なため、影響はありません。 主な影響は、古いの拡張機能 (バージョン1.1.4) で発生します。 当該バージョンのチャット ボットは動作しなくなります。 **休暇** タブは引き続き両方の拡張機能で使用できます。
+
+バージョン 1.1.4 では、チャットボットがメッセージに一切応答しなくなります。 たとえば、**サインイン**、**残高を表示する**、**休暇を表示する** などです。 アプリを手動で最新版に更新する必要があります。 詳細については、[Microsoft Teams のアプリを更新する](/MicrosoftTeams/apps-update-experience) を参照してください。
+
+バージョン 1.1.5 に更新するには、次の手順を実行します:
+1. Microsoft Teams で、**アプリ** に移動します。
+2. **人事管理** アプリを探します。
+3. **アップグレード** を選択します。
+
+人事管理アプリのバージョンは、**バージョン情報** タブまたは **個人用アプリ** セクションで確認できます。 
+
+![人事管理の **バージョン情報** タブ。](./media/HR-teams-about.png)
 
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリの通知を有効にする
 

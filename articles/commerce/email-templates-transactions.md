@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 25d7fcb803645f50ee4f5c608f5b6e789dfe3c31
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 4fd46ea161fb4441d94a9e7c7f7ffbfb245eb873
+ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913755"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7919504"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>トランザクション イベント用の電子メール テンプレートの作成
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベント用の電子メール テンプレートの作成、アップロード、および構成する方法について説明します。
 
@@ -41,7 +41,7 @@ Dynamics 365 Commerce は、次の通知タイプをサポートしています�
 *作成された注文* の通知タイプは、Commerce 本部で新しい販売注文が作成されるとトリガーされます。
 
 > [!NOTE]
-> 注文作成の通知タイプは、販売時点管理 (POS) 端末で発生するキャッシュ アンド キャリー取引には適用されません。 この場合、電子メールまたは印刷されたレシートが代わりに生成されます。 詳細については、 [Modern POS (MPOS) から電子メールのレシートを送信する](email-receipts.md)を参照してください。
+> 注文作成の通知タイプは、販売時点管理 (POS) 端末で発生するキャッシュ アンド キャリー取引には適用されません。 この場合、電子メールまたは印刷された領収書が代わりに生成されます。 詳細については、 [Modern POS (MPOS) から電子メールの領収書を送信する](email-receipts.md)を参照してください。
 
 ### <a name="order-confirmed"></a>注文確認済
 
@@ -324,7 +324,7 @@ Dynamics 365 Commerce で電子メールを構成する方法の詳細につい�
 
 [電子メールのコンフィギュレーションと送信](../fin-ops-core/fin-ops/organization-administration/configure-email.md)
 
-[電子メールのレシートを設定](/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
+[電子メールの領収書を設定](/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Modern POS (MPOS) からの領収書メールを送信する](email-receipts.md)
 

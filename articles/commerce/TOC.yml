@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (2021 年 11 月)
                       href: get-started/whats-new-commerce-10-0-22.md
-                    - name: Commerce 10.0.21 (2021 年 10 月)
-                      href: get-started/whats-new-commerce-10-0-21.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -836,13 +834,13 @@
                   href: tasks/define-loyalty-reward-points.md
                 - name: ロイヤルティ スキーマの定義
                   href: tasks/define-loyalty-schemes.md
-                - name: ロイヤルティ報酬ポイントの処理の調整
+                - name: ロイヤルティ報酬ポイントのプロセスの調整
                   href: tasks/process-loyalty-reward-point-adjustments.md
         - name: 財務の管理
           items:
             - name: 明細書の概要
               href: retail-statements.md
-            - name: トランザクションの整合性チェック
+            - name: 明細書の算定のための店舗トランザクションの検証
               href: valid-checker.md
             - name: 小売トランザクションの整合性チェックのルールを無効にする
               href: disable-consistency-check-rule.md
@@ -1286,6 +1284,8 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Commerce チャネルの会計統合の設定
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: 会計統合サンプル用のビルド パイプラインの設定
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: 小売店舗のユーザー定義の証明書プロファイル
               href: localizations/certificate-profiles-for-retail-stores.md
             - name: Regulatory Configuration Service (RCS)
@@ -1320,8 +1320,10 @@
                           href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: オーストリア
               items:
-                - name: オーストリア向け会計登録サービス統合のサンプル
+                - name: オーストリア向け会計登録サービス統合サンプル
                   href: localizations/emea-aut-fi-sample.md
+                - name: オーストリア向け会計統合サンプルの配置ガイドライン (レガシ)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: ブラジル
               items:
                 - name: ブラジル向け Commerce ローカライズ
@@ -1358,12 +1360,16 @@
                   items:
                     - name: チェコ共和国向け会計登録サービス統合サンプル
                       href: localizations/emea-cze-fi-sample.md
+                    - name: チェコ共和国向け会計統合サンプルの配置ガイドライン (レガシ)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: ポーランド
                   items:
                     - name: ポーランド向け会計プリンター統合サンプル
                       href: localizations/emea-pol-fpi-sample.md
                     - name: ポーランドの顧客情報管理
                       href: localizations/emea-pol-customer-information.md
+                    - name: ポーランド向け会計統合サンプルの配置ガイドライン (レガシ)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: フランス
               items:
                 - name: キャッシュ レジスター機能
@@ -1380,6 +1386,8 @@
               items:
                 - name: ドイツ向け会計登録サービス統合サンプル
                   href: localizations/emea-deu-fi-sample.md
+                - name: ドイツ向け会計統合サンプルの配置ガイドライン (レガシ)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: インド
               items:
                 - name: キャッシュ レジスターの商品及びサービス税 (GST) 統合
@@ -1390,7 +1398,7 @@
                   href: localizations/apac-ind-n-1-for-india.md
                 - name: インド向け QR コードの生成とレシートへの印刷
                   href: localizations/ind-generate-qr-code-print-receipt.md
-                - name: eコマース サイト用のキャッシュ レジスターの商品及びサービス税 (販売税) 統合
+                - name: eコマース サイト用のキャッシュ レジスターの商品及びサービス税 (GST) 統合
                   href: localizations/apac-ind-e-commerce.md
             - name: イタリア
               items:
@@ -1398,6 +1406,8 @@
                   href: localizations/emea-ita-fpi-sample.md
                 - name: イタリアの顧客情報管理
                   href: localizations/emea-ita-customer-information.md
+                - name: イタリア向け会計統合サンプルの配置ガイドライン (レガシ)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: メキシコ
               items:
                 - name: メキシコ向けグローバル CFDI 電子請求書
@@ -1407,6 +1417,8 @@
                 - name: キャッシュ レジスター機能
                   href: localizations/emea-nor-cash-registers.md
                 - name: キャッシュ レジスターの配置ガイドライン
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: キャッシュ レジスターの配置ガイドライン (レガシ)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: ロシア
               items:
@@ -1432,7 +1444,9 @@
                   href: localizations/emea-swe-cash-registers.md
                 - name: スウェーデン向け制御ユニットの統合サンプル
                   href: localizations/emea-swe-fi-sample.md
-                - name: 制御ユニット (レガシ) との Retail POS の統合サンプル
+                - name: スウェーデン向け制御ユニット統合サンプルの配置ガイドライン (レガシ)
+                  href: localizations/emea-swe-fi-sample-sdk.md
+                - name: 制御ユニットとの Retail POS の統合サンプル (レガシ)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: レポートと Power BI の統合
           items:
@@ -2466,6 +2480,8 @@
                       href: e-commerce-extensibility/set-up-key-vault.md
                     - name: 要求パイプライン プラグイン フックを作成する
                       href: e-commerce-extensibility/request-pipeline-hook.md
+                    - name: 画像のコンポーネント
+                      href: e-commerce-extensibility/image-component.md
                 - name: データ アクションの開発
                   items:
                     - name: データ アクションの概要
@@ -2574,6 +2590,8 @@
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
                 - name: GitHub と NuGet からサンプルとパッケージをダウンロードする
                   href: dev-itpro/retail-sdk/sdk-github.md
+                - name: Modern POSを構築するための Visual Studio 2017 ビルド エージェントの設定
+                  href: dev-itpro/retail-sdk/mpos-build-agent.md
                 - name: Retail SDK に関する FAQ
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: 販売時点管理 (POS) の拡張機能

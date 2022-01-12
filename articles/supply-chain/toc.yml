@@ -2,9 +2,37 @@
   items:
     - name: Dynamics 365 Supply Chain Management
       items:
-        - name: Dynamics 365 Supply Chain Management のホーム ページ
+        - name: Dynamics 365 Supply Chain Management ホーム ページ
           href: index.md
-        - name: はじめに
+        - name: 新機能および変更された機能
+          items:
+            - name: Finance and Operations アプリの新機能または変更された機能
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Supply Chain Management の新機能または変更された機能
+              items:
+                - name: Supply Chain Management の新機能または変更された機能に関するホーム ページ
+                  href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.24 (2022 年 2 月)
+                  href: get-started/whats-new-scm-10-0-24.md
+                - name: Supply Chain Management 10.0.23 (2022 年 1 月)
+                  href: get-started/whats-new-scm-10-0-23.md
+                - name: Supply Chain Management 10.0.22 (2021 年 11 月)
+                  href: get-started/whats-new-scm-10-0-22.md
+                - name: Supply Chain Management 10.0.21 (2021 年 10 月)
+                  href: get-started/whats-new-scm-10-0-21.md
+            - name: 削除済みまたは非推奨の機能
+              items:
+                - name: 削除済みまたは非推奨の機能に関するホーム ページ
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能
+                  href: get-started/removed-deprecated-features-scm-updates.md
+                - name: 以前のリリースの削除済みまたは非推奨の機能
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 延期された AX 2012 の機能
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
+        - name: 使用開始
           items:
             - name: サービスの説明
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/supply-chain/toc.json
@@ -62,34 +90,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: オンプレミス展開の倉庫管理を構成する
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 新機能および変更された機能
-              items:
-                - name: Finance and Operations アプリの新機能または変更された機能
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Supply Chain Management の新機能または変更された機能
-                  items:
-                    - name: Supply Chain Management の新機能または変更された機能に関するホーム ページ
-                      href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.24 (2022 年 2 月)
-                      href: get-started/whats-new-scm-10-0-24.md
-                    - name: Supply Chain Management 10.0.23 (2022 年 1 月)
-                      href: get-started/whats-new-scm-10-0-23.md
-                    - name: Supply Chain Management 10.0.22 (2021 年 11 月)
-                      href: get-started/whats-new-scm-10-0-22.md
-                    - name: Supply Chain Management 10.0.21 (2021 年 10 月)
-                      href: get-started/whats-new-scm-10-0-21.md
-                - name: 削除済みまたは非推奨の機能
-                  items:
-                    - name: 削除済みまたは非推奨の機能に関するホーム ページ
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能
-                      href: get-started/removed-deprecated-features-scm-updates.md
-                    - name: 以前のリリースの削除済みまたは非推奨の機能
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 延期された AX 2012 の機能
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: ドキュメント リソース
               items:
                 - name: ヘルプ システム
@@ -1617,6 +1617,8 @@
                   href: inventory/inventory-visibility-reservations.md
                 - name: 在庫可視化のパブリック API
                   href: inventory/inventory-visibility-api.md
+                - name: 在庫可視化のヒント
+                  href: inventory/inventory-visibility-tips.md
         - name: IoT インテリジェンス
           items:
             - name: IoT インテリジェンスのホーム ページ
@@ -2827,7 +2829,7 @@
               href: sales-marketing/trade-allowance.md
             - name: 新しい売買契約の作成
               href: sales-marketing/tasks/create-new-trade-agreement.md
-            - name: 販売履歴クリーンアップのパフォーマンス向上
+            - name: 販売履歴クリーンアップ パフォーマンスの向上
               href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: サービス管理
           items:
@@ -3573,6 +3575,8 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: マスター プラン
               items:
+                - name: 複数の注文を処理する場合に計画オーダーが見つからない
+                  href: troubleshooting/planning/planned-order-not-exist.md
                 - name: 確定した製造オーダーと見積もられた製造オーダーで、BOM 展開の動作が異なる
                   href: troubleshooting/planning/bom-explosion-works-differently.md
                 - name: 計画オーダーを再スケジューリングしたときに、遅延値が更新されない

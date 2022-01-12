@@ -2,7 +2,7 @@
 title: 現金持高
 description: このトピックでは、キャッシュフロー予測機能が特定の時間における組織のキャッシュ ポジションの予測を行う方法について説明します。 また、異なる期間の予測の表示に使用できるオプションについても説明します。
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752883"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945804"
 ---
 # <a name="cash-position"></a>現金持高
 
@@ -45,5 +45,17 @@ ms.locfileid: "7752883"
 - **銀行口座** のグリッドには、銀行残高に対する予想される現金流入と流出の影響が表示されます。
 
 キャッシュ ポジションを保存、編集するには、スナップショットを作成します。 スナップショットの操作方法の詳細については、[スナップショットの概要](payment-snapshots.md)を参照してください。
+
+## <a name="details-of-the-cash-position-capability"></a>現金持高機能の詳細 
+
+現金持高機能には以下の機能があります。 
+
+- 現金持高機能は、システムが含む既存のドキュメントに基づいたキャッシュ フローと、外部システムからインポートした現金のインフローとアウトフローの明細行を示します。
+- 外部システムのキャッシュ フローデータをに簡単に  Dynamics 365 Finance に統合できます。 また、現金持高はデータのインポート/エクスポート フレームワークを使用できます。 このフレームワークを使うと、Excel OData との統合が簡単にできます。 さらに、複数のソースからのデータを組み合わせて、包括的な現金持高ソリューションを作成できます。
+- インテリジェントなキャッシュ ポジションを導入します。 現金持高は、顧客の支払い行動に基づいて作成され、企業の口座に現金がいつ入金されるかを予測できます。
+- 顧客の注文と請求書について、顧客支払予測 AI 機能は、注文や請求が支払われる時に、顧客の支払行動履歴を決定するために使用します。
+- ベンダーの注文と請求書について、出荷から請求までの平均時間を使用して、ベンダーごとに請求書を支払うことで、ベンダーの注文や請求を行うタイミングを決定し、現金のインフローをより正確にします。
+
+これにより、会計担当者の支払行動履歴に基づいて、キャッシュ フローのより正確なビューを作成します。 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

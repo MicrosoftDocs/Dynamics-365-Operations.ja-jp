@@ -1,30 +1,26 @@
 ---
-title: ノルウェーのキャッシュ レジスタの配置ガイドライン
-description: このトピックは、ノルウェーのローカライズ用配置ガイドです。
-author: AlexChern0v
-ms.date: 10/06/2020
+title: ノルウェーのキャッシュ レジスタの展開ガイドライン (レガシ)
+description: このトピックは、Microsoft Dynamics 365 Commerce のノルウェーでのローカライズを有効にする方法を示す配置ガイドです。
+author: EvgenyPopovMBS
+ms.date: 12/20/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Norway
-ms.search.industry: Retail
-ms.author: josaw
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: epopov
 ms.search.validFrom: 2018-2-28
-ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 865ea7588bc518898bdf9ab0eff4e588e49b05a2
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 019bac01abdc0b2e16718c08953b44fbccef83a3
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594706"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944791"
 ---
-# <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
+# <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>ノルウェーのキャッシュ レジスタの展開ガイドライン (レガシ)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Dynamics 365 Commerce のノルウェーでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。
+このトピックは、Microsoft Dynamics 365 Commerce のノルウェーでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。
 
 このサンプルは、小売ソフトウェア開発キット (SDK) の一部です。 SDK に関する詳細については、[Retail ソフトウエア開発キット (SDK) アーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
@@ -32,8 +28,7 @@ ms.locfileid: "7594706"
 
 > [!NOTE]
 > Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 このトピックは、アプリの以前の複数のバージョンに適用されるため、このトピック全体で *Retail サーバー* を使用します。
-
-> [!NOTE]
+>
 > 使用しているコマースのバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
 
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Commerce チャネルでの証明書プロファイルの使用

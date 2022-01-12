@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 680d5ed929a396bfb2d3c7f05351ab6c93d29256c825c618cb166aac444aa5d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726900"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920526"
 ---
 # <a name="product-dimensions"></a>製品分析コード
 
@@ -78,7 +78,7 @@ ms.locfileid: "6726900"
 
 ## <a name="the-version-product-dimension"></a>バージョン製品分析コード
 
-バージョンは、サプライチェーン全体にわたって複数のバージョンの製品を管理および追跡するのに役立つ、製品分析コードです。 バージョン追跡は、製品のライフサイクルを絶えず縮小し、品質と信頼性の要件を高め、製品の安全に重点を置いているメーカーが成功するために不可欠です。
+バージョンは、サプライチェーン全体にわたって複数のバージョンの製品を管理および追跡するのに役立つ、製品分析コードです。 バージョン追跡は、製品のライフサイクルを絶えず縮小し、品質と信頼性の要件を高め、製品の安全に重点を置いている製造元が成功するためには不可欠です。
 
 標準製品分析コードと同様に、バージョンは既存の製品分析コード (サイズ、スタイル、色、構成) と同じように動作します。 したがって、製品バージョンを追跡する以外の目的に使用することができます。
 
