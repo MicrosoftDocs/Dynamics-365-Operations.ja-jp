@@ -13,17 +13,16 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2021-12-10
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8f050476a790c418447d48d2cf2934b02b32986f
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: 7289b9a48ec3c4716d380e556a2e8786f8688695
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898478"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922378"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-e-commerce-sites-for-india"></a>インド向け e コマース サイト用の商品及びサービス税 (GST) 統合
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、インドで使用可能な Microsoft Dynamics 365 Commerce e コマース 機能の概要を示します。 また、機能を設定するためのガイドラインを示します。 
 

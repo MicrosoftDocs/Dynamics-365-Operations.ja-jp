@@ -2478,8 +2478,6 @@
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Azure Key Vault を設定してキーをセキュアに管理する
                       href: e-commerce-extensibility/set-up-key-vault.md
-                    - name: 要求パイプライン プラグイン フックを作成する
-                      href: e-commerce-extensibility/request-pipeline-hook.md
                     - name: 画像のコンポーネント
                       href: e-commerce-extensibility/image-component.md
                 - name: データ アクションの開発

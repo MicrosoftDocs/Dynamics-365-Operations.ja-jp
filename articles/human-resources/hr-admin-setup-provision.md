@@ -2,7 +2,7 @@
 title: Human Resources のプロビジョニング
 description: このトピックでは、Microsoft Dynamics 365 Human Resources の新しい運用環境のプロビジョニングについて説明します。
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
-ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
+ms.openlocfilehash: b5ea27c6650df0b94284902eb37e2169ea36261a
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7644530"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952705"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -44,7 +44,7 @@ ms.locfileid: "7644530"
 
 試用版環境では、人事管理環境へのアクセス権がまだないユーザーの人事管理機能を評価できます。 試用環境をプロビジョニングする際に、認証されたユーザーが既に 1 つ以上の既存の人事管理環境へのアクセス権がある場合、ユーザーは既存の環境または環境のリストにリダイレクトされます。
 
-試用環境は実稼動環境として使用するものではありません。 60 日間のトライアル期間に限定されています。 試用期限が切れると、環境とその中にあるすべてのデータが削除されて、復元できないことに注意してください。 環境をサンドボックスや運用環境に変換することはできません。 既存の環境の期限が切れた後、新しい試用環境に登録することができます。
+試用環境は実稼動環境として使用するものではありません。 30 日間のトライアル期間に限定されています。 試用期限が切れると、環境とその中にあるすべてのデータが削除されて、復元できないことに注意してください。 環境をサンドボックスや運用環境に変換することはできません。 既存の環境の期限が切れた後、新しい試用環境に登録することができます。
 
 Human Resources 試用環境を作成すると、テナントに Power Apps 試用環境も作成され、Human Resources 環境にリンクされます。 「TestDrive」という名前の Power Apps 環境には、Human Resources 環境と同じ試用期間があります。
 

@@ -15,18 +15,18 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: a4aa7369c84836154b8217a5b70267021f4028b1
+ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731543"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "7948478"
 ---
 # <a name="set-up-the-components-of-a-job"></a>職務のコンポーネントの設定
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-この記事では、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。 
+このトピックでは、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。 
 
 ジョブを作成できるようになる前に、いくつか参照情報を設定する必要があります。 名前だけあるジョブを作成できます。 ただし、職位などの追加の情報を含めることで、ジョブに割り当てられた職位の既定値を提供します。 また、入力する情報には、特定のジョブに対する報酬プランのフィルター処理に使用できるものもあります。 特定のジョブに対する報酬プランをフィルター処理で使用できる資格を設定する場合、ジョブを設定する前に、職務権限とジョブ タイプを設定する必要があります。 使用できるこれらの既定値があることによって、ジョブに職位を追加する際に時間を節約できます。 
 

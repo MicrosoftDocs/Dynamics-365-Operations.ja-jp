@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e9dc692061cec830f487e01a79075eda835bac23
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937663"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952601"
 ---
 # <a name="engineering-change-management-overview"></a>エンジニアリング変更管理の概要
 
@@ -71,6 +71,7 @@ ms.locfileid: "7937663"
 
 1. バージョン分析コードも使用する場合は、**製品分析コード - バージョン** チェック ボックスを選択します。 (このチェック ボックスは一覧の下の方にあり、**エンジニアリング変更管理** ノードの下に入れ子になっていません。)
 1. [メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、メンテナンス モードをオフにします。
+1. データベース同期を実行して、コンフィギュレーション キーが正しく有効化されていることを確認します。
 
 > [!IMPORTANT]
 > 2022 年 4 月から、**エンジニアリング変更管理** および **製品分析コード - バージョン** の両方のライセンス キーがすべての新規インストールで既定で有効になりますが、必要に応じて無効にすることもできます。

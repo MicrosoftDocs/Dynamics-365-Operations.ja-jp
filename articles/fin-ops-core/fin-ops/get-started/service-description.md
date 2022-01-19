@@ -2,19 +2,19 @@
 title: Finance and Operations アプリのサービス説明
 description: このトピックでは、Finance and Operations アプリのサービス説明を示します。
 author: tomhig
-ms.date: 12/07/2021
+ms.date: 01/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898392"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952369"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations アプリのサービス説明
 
@@ -117,7 +117,7 @@ Finance and Operations アプリは、世界中の複数の Azure リージョ�
 ### <a name="countryregion-specific-considerations"></a>国/地域固有の考慮事項
 
 - 現地のデータ所在地を必要とするフランスの法人とビジネスを行う規制対象の業界または商業組織の顧客は、[フランスの Finance and Operations](../../dev-itpro/deployment/france-local-deployment.md) を確認する必要があります。
-- 中国で事業を行っている顧客は、[中国の 21Vianet で運用されている Finance and Operations](../../dev-itpro/deployment/china-local-deployment.md) を確認する必要があります。
+- 中国で事業を行っている顧客は、[Azure China プレイブック](/azure/china/) と [中国の 21Vianet で運用されている Finance and Operations](../../dev-itpro/deployment/china-local-deployment.md) を確認する必要があります。
 - ロシアで事業を行っている顧客は、[ロシアの個人データローカリゼーション法](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia) を確認する必要があります。
 
 ### <a name="general-data-protection-regulation-gdpr"></a>一般データ保護規則 (GDPR)
@@ -356,6 +356,7 @@ Microsoft は、サービスの月あたり 99.9% の可用性レートを約束
 - **[ライセンス ガイド](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Dynamics 365 のライセンスを取得する方法の詳細については、このガイドを参照してください。
 - **[カスタマー サポート](https://dynamics.microsoft.com/support/)** – Dynamics 365 アプリの業界をリードするサポートを利用できます。
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – アプリケーションのライフサイクルを管理し、予測可能で反復可能な高品質の実装を行います。
+- **[Dynamics 365 実装ガイド](https://aka.ms/D365ImplementationGuideFlip)** - Dynamics 365 実装ガイドは、時間テスト済 Success by Design の原則をドキュメントにし、Dynamics 365 ソリューションの開発、構築、テスト、および配置に関する事前のガイダンスを提供します。
 
 ## <a name="definitions"></a>定義
 
@@ -428,6 +429,10 @@ SLA は Microsoft オンライン サービスに適用されます。 詳細に
 ### <a name="service-update"></a>サービスの更新
 
 Microsoft は、サービスの更新を通じて、一貫した基準で Finance and Operations 環境を提供しています。 顧客は、業務ニーズに基づいて、独自のサービス更新カレンダーを設定します。 詳細については、[1 つのバージョンのサービス更新](../../dev-itpro/lifecycle-services/oneversion-overview.md) を参照してください。
+
+### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+
+Dynamics 365 ソリューションのアーキテクチャ、セキュリティ、パフォーマンス、ユーザー体験を最適化するために、重要なステージにある一連の評価を通じて実装を体系的にガイドするフレームワーク。
 
 ### <a name="user"></a>ユーザー
 

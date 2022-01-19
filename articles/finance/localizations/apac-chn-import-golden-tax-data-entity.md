@@ -1,8 +1,8 @@
 ---
-title: 中国金税データ エンティティのインポート
-description: このトピックでは、中国金税データ エンティティを Microsoft Dynamics 365 Finance にインポートする方法について説明します。
-author: ShylaThompson
-ms.date: 10/30/2017
+title: 中国金税ファイルのインポート
+description: このトピックでは、中国金税ファイルを Microsoft Dynamics 365 Finance にインポートする方法について説明します。
+author: ilkond
+ms.date: 12/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,45 +11,34 @@ audience: IT Pro
 ms.reviewer: kfend
 ms.custom: 261394
 ms.search.region: China (PRC)
-ms.author: roschlom
+ms.author: ilyako
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a2f408305fb07c025c37d7fdd8c023b8438fe43cffd6915c0e70457bf29a8ec5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76c6c9612b2150d0aca05b66e2085f3b33b3300e
+ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730492"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "7948489"
 ---
-# <a name="import-the-chinese-golden-tax-data-entity"></a>中国金税データ エンティティのインポート
+# <a name="import-the-chinese-golden-tax-files"></a>中国金税ファイルのインポート
 
 [!include [banner](../includes/banner.md)]
   
-このトピックでは、中国金税データ エンティティを Dynamics 365 Finance にインポートする方法について説明します。
+このトピックでは、外部請求書番号を持つファイルをプロバイダ (Aisino または BaiWang) から Dynamics 365 Finance にインポートする方法について説明します。 txt と xml ファイルを BaiWang プロバイダから、txt と txt ファイルを Aisino プロバイダからインポートできます。
 
-> [!NOTE] 
-> Dynamics 365 Finance の10.0 以降のバージョンでは、中国金税データ エンティティをインポートする必要はありません。 
+外部請求書番号を含むプロバイダからファイルをインポートするには、次の手順を実行します。
 
-中国金税データ エンティティをインポートするには、以下の手順を実行します。
-
-1.  **システム管理** &gt; **データ管理** の順に移動します。
-2.  **インポート** タイルをクリックして新しいインポート プロジェクトを作成します。
-3.  プロジェクトの名前を入力します。
-4.  ソース データ形式 **XML-Element** を選択します。
-5.  **エンティティ名** フィールドで、**税の統合されたインポート** エンティティを選択します。
-6.  アップロードをクリックしてから、金税データ ファイルの場所を参照します。
-7.  **マップの表示** を **税の統合されたインポート** タイルでクリックします。
-8.  **変換** タブで、**新規** をクリックします。
-9.  **ファイルのアップロード** をクリックして .xlst ファイルの場所を参照します。
-
-データ エンティティのインポート方法を示す特定の手順については、[エンティティを使用したデータのインポート](../../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md)を参照してください。 デモ データ会社 CNMF を使用して中国金税データ エンティティのインポートを実行するには、以下のファイルを [CustomerSource](/dynamics/s-e/) からダウンロードします。
-
--   **ImportSampleFile.xml** - このファイルは中国金税データ エンティティ複合です。
--   **Tax-Import-to-XML.xslt** - このファイルは変換ファイル マッピングとして使用されます。
-
-次のスクリーン ショットは、中国金税データ エンティティのマッピングのビジュアル化例を示します。 [![この画像は中国金税データ エンティティのマッチングのビジュアル化例を示します。](./media/goldentaximportmappingvisualization.png)](./media/goldentaximportmappingvisualization.png)      
-
-詳細については、[金税統合エクスポートの設定](./tasks/golden-tax-integration-export-setup.md)を参照してください。
+1. **売掛金勘定** > **定期処理タスク** > **VAT 請求書統合** の順で移動します。
+2. アクション ウィンドウで、**インポート** を選択します。 
+3. エクスポートされた請求書を統合するプロバイダのソフトウェアに応じて、Aisino または BaiWang のどちらかのプロバイダのから 1 つインポート ファイルのモデル マッピングを選択します。 
+   - BaiWang プロバイダからテキスト ファイル (<file name>_invoicing result.TXT) をインポートするには、**インポート BaiWang TXT ファイル** オプションを **はい** に設定します。 次に、**モデル マッピング** フィールドで、**BaiWang – txt ファイル** を選択します。
+   - テキスト ファイルを BaiWang の Aisino または XML ファイルからインポートするには、**BaiWang txt ファイルをインポート** オプションを **いいえ** に設定します。 **モデル マッピング** フィールドで、**Asimo - txt** または **BaiWang-xml ファイル** を選択します。
+6. アップロードのファイルを選び、**アップロード** を選択します。
+7.  **OK** を選択します。
+  
+ > [!NOTE] 
+ > ファイルをインポートするには、インポート形式をアップロードします。 詳細については、[コンフィギュレーションをインポートする](apac-chn-tax-integration.md) を参照してください。
 
 
 

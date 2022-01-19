@@ -1,5 +1,5 @@
 ---
-title: 分析ワークスペースでの埋め込みレポートのカスタマイズ
+title: 分析ワークスペース (ビデオを含む) での埋め込みレポートのカスタマイズ
 description: このトピックでは、分析ワークスペースに埋め込まれているアプリケーション レポートをパワー ユーザーがカスタマイズできるようにする方法について説明します。
 author: RichdiMSFT
 ms.date: 09/11/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5320e8fdffbd231ef63fc8a8bd05d18e2f09a3f6215fa70f40c76c02a387a6f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 14a330b0fe314aa839cbcaa43324f036fdd8a9c4
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724431"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937533"
 ---
 # <a name="customize-embedded-reports-in-analytical-workspaces"></a>分析ワークスペースでの埋め込みレポートのカスタマイズ
 

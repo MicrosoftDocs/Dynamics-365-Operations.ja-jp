@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 92c427d3063c34f263d5bc449be6fac695b5912d
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920121"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952630"
 ---
 # <a name="inventory-visibility-public-apis"></a>在庫の可視化パブリック API
 
@@ -48,6 +48,8 @@ Microsoft では、すぐに利用できる *Postman* 要求コレクション�
 
 > [!NOTE]
 > パスの {environmentId} 部分は Microsoft Dynamics Lifecycle Services (LCS) の環境 ID です。
+> 
+> バルク API では、要求ごとに最大 512 件のレコードを返します。
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Lifecycle Services 環境に従ってエンドポイントを検索する
 
@@ -249,7 +251,7 @@ Body:
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a> 複数の変更イベントの作成
 
-この API で、同時に複数の記録を作成できます。 この API と [1 つのイベント API](#create-one-onhand-change-event) の違いは、`Path` 値と `Body` 値のみです。 この API では、`Body` は記録の配列を提供します。
+この API で、同時に複数の記録を作成できます。 この API と [1 つのイベント API](#create-one-onhand-change-event) の違いは、`Path` 値と `Body` 値のみです。 この API では、`Body` は記録の配列を提供します。 最大レコード数は 512 です。つまり、リアルタイム変更バルク API では、一度に最大 512 の変更イベントをサポートできます。
 
 ```txt
 Path:

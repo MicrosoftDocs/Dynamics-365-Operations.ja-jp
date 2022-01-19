@@ -1,24 +1,24 @@
 ---
-title: Microsoft Dynamics 365 Finance + Operations (オンプレミス) 環境の SQL Server インスタンスをアップグレードする
+title: Microsoft Dynamics 365 Finance + Operations (オンプレミス) 環境の SQL Server インスタンスのアップグレードまたは置換
 description: このトピックでは、環境で使用している Microsoft SQL Server インスタンスまたはクラスターをアップグレードする方法について説明します。
 author: faix
-ms.date: 12/10/2021
+ms.date: 12/14/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: b97c5ff4cb7666caff5de3c53f6a5cbb65e09173
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: bb444783b23ddd0797d61f284bd11ded8ee63858
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913503"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922410"
 ---
-# <a name="upgrade-the-sql-server-instance-of-microsoft-dynamics-365-finance--operations-on-premises-environments"></a>Microsoft Dynamics 365 Finance + Operations (オンプレミス) 環境の SQL Server インスタンスをアップグレードする
+# <a name="upgrade-or-replace-the-sql-server-instance-of-microsoft-dynamics-365-finance--operations-on-premises-environments"></a>Microsoft Dynamics 365 Finance + Operations (オンプレミス) 環境の SQL Server インスタンスのアップグレードまたは置換
 
-このトピックでは、環境で使用している Microsoft SQL Server インスタンスまたはクラスターをアップグレードする方法について説明します。 SQL Server メジャー バージョンから別のバージョンにアップグレードしますが、[インプレース アップグレード](/sql/database-engine/install-windows/choose-a-database-engine-upgrade-method.md) をしない場合は、このプロセスを完了する必要があります。
+このトピックでは、環境で使用している Microsoft SQL Server インスタンスまたはクラスターをアップグレードする方法について説明します。 SQL Server メジャー バージョンから別のバージョンにアップグレードしますが、[インプレース アップグレード](/sql/database-engine/install-windows/choose-a-database-engine-upgrade-method.md) をしない場合は、このプロセスを完了する必要があります。 インプレース アップグレードを実行する場合でも、手順の一部は適用されませんが、このトピックのガイダンスに従ってください。
 
 ## <a name="prerequisites-for-upgrading-the-sql-server-version"></a>SQL Server バージョンをアップグレードするための前提条件
 
@@ -78,9 +78,9 @@ ms.locfileid: "7913503"
     LocalAgentCLI.exe Install <path of the new localagent-config.json>
     ```
 
-## <a name="force-reading-assemblies-to-the-global-assembly-cache"></a>アセンブリの読み取りをグローバル アセンブリ キャッシュに強制する
+## <a name="force-the-re-adding-of-the-assemblies-to-the-global-assembly-cache"></a>アセンブリの再追加をグローバル アセンブリ キャッシュに強制する
 
-通常、パッケージ配置で環境をサービスする場合、AXSFType の Service Fabric パッケージ バージョンが変更します。 これにより、環境に対して、追加の配置やサービス操作が実行されます。 **更新設定** アクションを使用しても、バージョンは変更されません。 その結果、適切なアセンブリがグローバル アセンブリ キャッシュにありません。 アセンブリの読み取りをグローバル アセンブリ キャッシュに強制するには、次の手順を実行します。
+通常、パッケージ配置で環境をサービスする場合、AXSFType の Service Fabric パッケージ バージョンが変更します。 これにより、環境に対して、追加の配置やサービス操作が実行されます。 **更新設定** アクションを使用しても、バージョンは変更されません。 その結果、適切なアセンブリがグローバル アセンブリ キャッシュにありません。 アセンブリの再追加をグローバル アセンブリ キャッシュに強制するには、次の手順を実行します。
 
 1. aos-storage ファイル共有に移動します。
 2. **GacAssemblies** フォルダーを開きます。

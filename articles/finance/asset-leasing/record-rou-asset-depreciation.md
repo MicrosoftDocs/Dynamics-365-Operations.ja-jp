@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a766247e5482677429706a324c09cc9be4386c0b
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345373"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947318"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>使用権資産減価償却の記録 (プレビュー)
 
@@ -35,7 +35,7 @@ ms.locfileid: "7345373"
 1. **リースの概要** ページで、[リース] を選択します。 次に、**帳簿 \> 資産減価償却スケジュール** の順に選択し、**資産減価償却スケジュール** ページを開きます。
 
     使用件資産減価償却の経費仕訳帳のエントリは、**減価償却経費** 列の金額に基づいています。 会計の基準コンプライアンスに関するガイダンスの例については、このトピックの後半で説明する [ファイナンス リースに対する使用権資産償却経費を計算](#calculation-of-rou-asset-amortization-expense-for-finance-leases) セクションを参照してください。
-
+    
 2. 減価償却期間を選択し、**仕訳帳の作成** を選択します。 減価償却の作成を記録するために使用する仕訳帳が作成されたことを示すメッセージが表示されます。
 3. **仕訳帳 \> 資産リース仕訳帳** の順に選択し、**資産リース仕訳帳** ページを開きます。このページでは、作成した減価償却経費仕訳帳エントリが表示されます。
 
@@ -70,6 +70,8 @@ ms.locfileid: "7345373"
 
 > [!NOTE]
 > ASC 842 によると、オペレーティング リースに対する使用権資産の減価償却は、損益計算書にリース経費として分類します。 可視性を実現するため、資産リースでは、エントリが使用権資産の減価償却として記述されます。 ただし、借方エントリはオペレーティング リースの経費勘定に割り当てる必要があり、貸方エントリは、オペレーティング リースに対する使用権資産に直接割り当てる必要があります。 それでも、リース パラメータでは、オペレーティング使用権資産の減価償却累計額勘定に対してクレジット エントリを作成するように指定できます。
+
+リースが営業リースとして分類される場合、減損後の月間の減価償却は、一定の減価償却を使用して計算されます。
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-finance-leases"></a>ファイナンス リースにおける使用権資産の償却経費の計算
 

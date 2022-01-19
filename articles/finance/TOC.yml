@@ -1212,6 +1212,8 @@
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: キャッシュ フロー予測の有効化
                   href: finance-insights/enable-cash-flow-forecasting.md
+                - name: キャッシュ フロー予測の外部データ
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: 予算案の有効化
                   href: finance-insights/enable-budget-proposal.md
                 - name: データ インテグレーター プロジェクトの作成
@@ -1232,10 +1234,8 @@
                   href: finance-insights/budget-proposals.md
                 - name: 現金持高
                   href: finance-insights/cash-position.md
-                - name: キャッシュ フロー予測
+                - name: 現金予測
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: キャッシュ フロー予測に外部データを使用する
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: 顧客支払予測
                   href: finance-insights/payment-insights-overview.md
                 - name: 顧客支払予測の使用
@@ -1432,6 +1432,8 @@
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: サウジアラビア用電子請求の使用を開始する
                           href: localizations/e-invoicing-sa-get-started.md
+                        - name: イタリアの FatturaPA と SDI の直接統合の設定
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: 電子請求サービスを使用して仕入先請求書をインポートする
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: 電子請求の設定
@@ -1508,10 +1510,14 @@
                           items:
                             - name: VAT 申告
                               href: localizations/emea-che-vat-declaration-switzerland.md
-                        - name: イギリスの申告
+                        - name: イギリスのレポート
                           items:
                             - name: VAT 申告
                               href: localizations/emea-gbr-vat-declaration.md
+                        - name: ノルウェーのレポート
+                          items:
+                            - name: VAT 申告
+                              href: localizations/emea-nor-vat-declaration.md
                     - name: 移動オーダーに対する税計算の有効化
                       items:
                         - name: 移動オーダーに対する税金機能のサポート
@@ -1557,7 +1563,7 @@
                 - name: VAT 明細書
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: 国境を越えたサービスのレポート
-                  href: localizations/emea-aut-vat-statement-details.md
+                  href: localizations/emea-aut-cross-border-services-report.md
                 - name: オーストリアのイントラスタット
                   href: localizations/emea-aut-intrastat.md
                 - name: 仕入関税
@@ -1824,7 +1830,7 @@
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: 固定資産の減価償却方法
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: 中国金税データ エンティティのインポート
+                - name: 中国金税ファイルのインポート
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: 月次平均原価モデル
                   href: localizations/apac-chn-monthly-average-cost-model.md
@@ -2088,6 +2094,8 @@
                   href: localizations/finland.md
                 - name: フィンランドの消費税支払レポート
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
+                - name: フィンランドのイントラスタット
+                  href: localizations/emea-fin-intrastat.md
             - name: フランス
               items:
                 - name: フランスの概要
@@ -2428,7 +2436,7 @@
                                   href: localizations/apac-ind-GST-customer-payment-refund.md
                             - name: プロジェクト管理トランザクション
                               items:
-                                - name: 物品サービス税 (GST) プロジェクト トランザクション
+                                - name: 商品及びサービス税 (GST) プロジェクト トランザクション
                                   href: localizations/apac-ind-gst-project-transactions.md
                             - name: 税調整
                               items:
@@ -2610,6 +2618,8 @@
                   href: localizations/apac-idn-invoicing.md
                 - name: インドネシアの VAT 申告
                   href: localizations/apac-idn-ppn-declaration.md
+                - name: インドネシアの源泉徴収税レポート
+                  href: localizations/apac-idn-wht-declaration.md
             - name: イタリア
               items:
                 - name: イタリアの概要

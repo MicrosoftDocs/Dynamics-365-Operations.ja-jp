@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581868"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952499"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>在庫視覚化のインストールと設定
 
@@ -71,6 +71,9 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化ア
 1. **使用条件** チェック ボックスを選択して、使用条件に同意します。
 1. **インストール** を選択します。 アドインの状態は、**インストール中** として表示されます。 インストールが完了したら、ページを更新します。 状態は **インストール済** に変更されます。
 1. Dataverse で、左ナビゲーションの **アプリ** セクションを選択し、**在庫可視化** Power Apps が正常にインストールされていることを確認します。 **アプリ** セクションが存在しない場合は、在庫可視化製品チーム ([inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com)) にお問い合わせください。
+
+> [!TIP]
+> 在庫の可視性アドイン ユーザー グループに参加することをお勧めします。このグループでは、役立つガイドを見つけて最新の更新プログラムを取得し、在庫の可視性の使用に関するご質問を投稿することができます。 参加するには、[inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) の在庫品目一覧製品チームに電子メールを送信して、それに Supply Chain Management 環境 ID を記載してください。
 
 > [!IMPORTANT]
 > 複数の LCS 環境を使用する場合は、環境ごとに異なる Azure AD アプリケーションを作成します。 同じアプリケーション ID とテナント ID を使用して異なる環境の在庫視覚化アドインをインストールした場合、古い環境ではトークンの問題が発生します。 最後にインストールされたものだけが有効になります。

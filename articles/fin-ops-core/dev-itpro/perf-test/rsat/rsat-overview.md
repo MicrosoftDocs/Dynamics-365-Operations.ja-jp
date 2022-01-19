@@ -1,8 +1,8 @@
 ---
-title: Regression Suite Automation Tool
-description: Regression Suite Automation Tool により、タスク レコーダーを使用して業務タスクを記録し、コードを記述することなく自動テストに変換することができます。
+title: Regression suite automation tool (RSAT)
+description: Regression Suite Automation Tool (RSAT) により、タスク レコーダーを使用してビジネス タスクを記録し、コードを記述することなく自動テストに変換することができます。
 author: FrankDahl
-ms.date: 01/15/2021
+ms.date: 12/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e02606fcb7364e0005d2cd091b4d285a0ec73b8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: faba858d61672fa9f8e24f8dd4b4c3d84056a890
+ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781144"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "7948491"
 ---
-# <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
+# <a name="regression-suite-automation-tool-rsat"></a>Regression suite automation tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,19 +28,19 @@ Regression Suite Automation Tool (RSAT) を使用すると、Finance and Operati
 
 RSATは、テストの実行、報告、および調査のために Microsoft Azure DevOps と完全に統合されています。 テスト パラメーターは、テスト ステップから切り離され、Microsoft Excel ファイルに保存されます。
 
-RSAT の使用についての定義。
+このトピックに加えて、以下のトピックで RSAT の使用について説明します。
 
-+ [Regression Suite Automation Tool (このトピック)](rsat-overview.md)
-+ [Regression Suite Automation Tool インストールおよび構成](rsat-install-configure.md)
-+ [Regression Suite Automation Tool テスト ケースの実行](rsat-run.md)
-+ [Regression Suite Automation Tool でのテスト ケースの管理](rsat-maintain-test-cases.md)
++ [Regression Suite Automation Tool (RSAT) のインストールと構成](rsat-install-configure.md)
++ [Regression Suite Automation Tool (RSAT) テスト ケースの実行](rsat-run.md)
++ [Regression Suite Automation Tool (RSAT) の並列実行の実行](rsat-parallel-execution.md)
++ [Regression Suite Automation Tool (RSAT) でのテスト ケースの管理](rsat-maintain-test-cases.md)
 + [予測値の検証](rsat-validate-expected.md)
 + [チェーン テスト ケース](rsat-chain-test-cases.md)
 + [派生テスト ケース](rsat-derived-test-cases.md)
 + [管理者以外のユーザーが RSAT を使用するように構成する](rsat-configure-nonadmin.md)
 + [パラメーター ファイルのアップグレード](rsat-upgrade-parameter-files.md)
-+ [Regression Suite Automation Tool ベスト プラクティス](rsat-best-practices.md)
-+ [Regression Suite Automation Tool のトラブルシューティング](rsat-troubleshooting.md)
++ [Regression Suite Automation Tool (RSAT) のベスト プラクティス](rsat-best-practices.md)
++ [Regression Suite Automation Tool (RSAT) のトラブルシューティング](rsat-troubleshooting.md)
 
 ## <a name="getting-started-videos"></a>使用開始のビデオ
 
@@ -94,7 +94,7 @@ BPM を使用していない場合は、Azure DevOps で手動でテスト ケ�
 
 ### <a name="business-cycle-business-process-testing"></a>ビジネス サイクル (ビジネス プロセス) のテスト
 
-Regression Suite Automation Tool は、ビジネス サイクル テストおよびシナリオ テスト (複数のコンポーネントのテスト) を使用目的としており、通常は開発ライフ サイクルの終了時に発生します。 これは、*ユーザー受け入れテスト* とも呼ばれます。 ビジネス サイクルのテストは、コンポーネントまたは単体テストよりも少ない数のテスト ケースで構成されます。 これを下の図に示します。
+RSAT は、開発ライフサイクルの最後に通常行われるビジネス サイクル テストおよびシナリオ テスト (複数のコンポーネント テスト) で使用するためのものです。 このテストは、*ユーザー受け入れテスト* とも呼ばれます。 次の図に示すように、ビジネス サイクル テストは、コンポーネント テストまたは単体テストよりも少ないテスト ケースで構成されています。
 
 ![単体テスト、コンポーネント テスト、複数のコンポーネントテスト、ビジネス サイクル テスト。](media/business-cycle.png)
 
@@ -102,7 +102,7 @@ Regression Suite Automation Tool は、ビジネス サイクル テストおよ
 
 Finance and Operations タスク レコーダーを使用して記録されたプロセスのテストに加えて、RSAT は Dynamics 365 Commerce の Cloud POS プロセスのテストもサポートしています。 RSAT と Cloud POS の詳細については、[Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](../../../../commerce/dev-itpro/pos-rsat.md) を参照してください。
 
-### <a name="warehouse-mobile-app"></a>Warehouse Mobile App
+### <a name="warehouse-mobile-app"></a>Warehouse mobile app
 
 RSAT をウェアハウス アプリ タスク検証フレームワークと組み合わせて使用することにより、ウェアハウス プロセスのテストを自動化することができます。 この[技術解説](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-warehouse-app-task-validation-framework-october-23-2019)は、開始するための優れた参考資料です。
 
@@ -136,13 +136,13 @@ RSAT 2.1 により、**クイック リンク** タブおよび DevOps のテス
 
 ### <a name="settings"></a>設定
 
-**設定** タブを選択して、RSAT の設定を構成します。 トップ バーを使用して、一般、オプション、およびプロセス設定の間を移動します。 設定を保存する必要はなく、設定ページから移動するとすぐに、自動的に保存されます。 設定を RSAT 設定ファイルに保存したり、既存の設定ファイルを開いたりすることもできます。
+**設定** タブを選択して、RSAT の設定を構成します。 トップ バーを使用して、一般、オプション、およびプロセス設定の間を移動します。 設定を保存する必要はありません。 設定は、設定ページから移動するとすぐに自動的に保存されます。 設定を RSAT 設定ファイルに保存したり、既存の設定ファイルを開いたりすることもできます。
 
 ![UI 設定タブ。](media/UI-settings-tab.png)
 
 ### <a name="cloud-pos-settings"></a>Cloud POS の設定
 
-**Cloud POS 設定** タブを選択し、Cloud POS のテスト ケースを実行する RSAT を構成します。 設定を保存する必要はなく、設定ページから移動するとすぐに、自動的に保存されます。
+**Cloud POS 設定** タブを選択し、Cloud POS のテスト ケースを実行する RSAT を構成します。 設定を保存する必要はありません。 設定は、設定ページから移動するとすぐに自動的に保存されます。
 
 ![UI Cloud POS タブ。](media/UI-cloud-POS-tab.png)
 

@@ -2,7 +2,7 @@
 title: Finance and Operations 仮想エンティティに関するよく寄せられる質問
 description: このトピックでは、Finance and Operations 仮想エンティティに関してよく寄せられる質問の一覧を示します。
 author: Sunil-Garg
-ms.date: 12/10/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4dce2ffd79c6c2abb9bc77d647a80c43499cbc40
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: e7a3011563b7cd3e4a038f966bebe234c74c8311
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913564"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952483"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよく寄せられる質問
 
@@ -129,5 +129,16 @@ No. すべての Finance and Operations 仮想エンティティは、MicrosoftO
 Microsoft Power Platform 統合が有効な場合、Finance and Operations 環境は、単一の Power Platform 環境にリンクされます。 これは、統合の 1 対 1 の環境関係になります。 これを有効にすると、2 つの環境間で仮想エンティティが自動的に構成されます。 つまり、[Dataverse 仮想エンティティの構成](admin-reference.md)ドキュメントで定義されている手動の仮想エンティティ構成は必要ないことを意味します。 2 つの環境間で Microsoft Power Platform 統合を有効にする前に手動の仮想エンティティ構成が行われた場合、統合を有効にすると手動構成は無視され、自動構成を使用して 2 つの環境が接続されます。
 
 自動仮想エンティティ構成は、Microsoft Power Platform 統合を通じて Finance and Operations 環境にリンクされた Power Platform 環境に使用されますが、追加の Power Platform 環境で仮想エンティティを手動で構成して、複数の Power Platform 環境で Finance and Operations 環境の仮想エンティティを有効にすることができます。
+
+### <a name="can-i-use-dataverse-virtual-entities-as-a-data-source-with-the-data-integrator"></a>Dataverse 仮想エンティティを、データ統合のデータ ソースとして使用できますか?
+
+いいえ。 仮想エンティティは、[データ統合](/power-platform/admin/data-integrator.md)とのデータ統合のソースとしてはサポートされていません。 技術的な制限により、データ インテグレーターはソース データのデルタを取得して、データを移行先環境にプッシュすることができません。
+
+### <a name="im-getting-an-error-that-paging-is-not-supported-how-do-i-work-around-this"></a>ページングがサポートされていないというエラーが表示されます。 回避するにはどうすればよいですか。
+
+仮想エンティティに対してクエリを実行すると、「一時テーブルを使用するクエリではページングはサポートされていません」というメッセージが表示される場合があります。 これは仕様です。 クエリに一時テーブルが含まれる場合、エラーが返されます。 このエラーが返された場合は、クエリに含まれる一時テーブルを特定し、それを除外するようにクエリを変更する必要があります。
+無効になっているコンフィギュレーション キーによって、このエラーが発生する場合があります。 Dynamics 365 ERP 仮想エンティティ ソリューションで提供される既定の仮想エンティティには、すべての構成が有効になっている場合、一時テーブルは含まれません。 ただし、エンティティのバッキング テーブルに対してコンフィギュレーション キーが有効になっていない場合は、物理テーブルが一時テーブルに置き換えられるので、スキーマ変更に対してシステムを再コンパイルする必要はありません。 これにより、仮想エンティティ クエリに一時テーブルが含まれます。 これらのシナリオでは、関連付けられているコンフィギュレーション キーを有効にしてエラーを解決します。
+
+コンフィギュレーション キーがデータ エンティティに与える影響の詳細については、[コンフィギュレーション キーおよびデータ エンティティ](../data-entities/config-key-entities.md)を参照してください。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

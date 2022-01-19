@@ -1,5 +1,5 @@
 ---
-title: ヘルプの拡張、カスタマイズ、および共同作業
+title: ヘルプ (ビデオを含む) の拡張、カスタマイズ、および共同作業
 description: このトピックでは、Finance and Operations アプリの GitHub リポジトリ とマークダウン ファイルを使用するためのヒントと秘訣を示します。
 author: edupont04
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ms.date: 05/11/2020
 ms.author: edupont
-ms.openlocfilehash: df263aedb4a23869e6a4ec040bb1f9cc971ed813cbbd4a4e1eff5429055327cc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d9aa7e4824c0629b36bb3c270c3a38f8aad5cae
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758176"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937570"
 ---
 # <a name="extend-customize-and-collaborate-on-the-help"></a>ヘルプの拡張、カスタマイズ、および共同作業
 

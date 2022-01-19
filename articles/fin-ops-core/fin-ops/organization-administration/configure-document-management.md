@@ -2,7 +2,7 @@
 title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
 author: jasongre
-ms.date: 12/10/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 824a32fc562c588179bf12fb0db8b7d3b903c385
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 3db8da57651f9ee55c39048f4c555441a4679243
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913534"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952612"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
@@ -50,10 +50,11 @@ ms.locfileid: "7913534"
 
 ## <a name="configure-sharepoint-storage"></a>SharePoint 記憶域のコンフィギュレーション
 
-Microsoft SharePoint Online は、ネイティブでサポートされる保存場所の 1 つです。 現在、SharePoint Online だけがサポートされています。 オンプレミス SharePoint (ローカル SharePoint サーバー) のサポートは将来追加される可能性があります。 
+Microsoft SharePoint Online は、ネイティブでサポートされる保存場所の 1 つです。 オンプレミス SharePoint (ローカル SharePoint サーバー) は、現在サポートされていません。 
 
 > [!IMPORTANT]
-> SharePoint ストレージは、Microsoft が管理する環境でのみ使用可能です。
+> -  SharePoint ストレージは、Microsoft が管理する環境でのみ使用可能です。
+> -  SharePoint マネージド デバイス ポリシーは、Finance and Operations アプリとの統合と互換性がありません
 
 SharePoint ストレージを使用するには、ドキュメント タイプの **場所** フィールドを **SharePoint** に設定します。 その後、**SharePoint アドレス** フィールドに、有効な SharePoint アドレスを入力します。
 
@@ -76,6 +77,8 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 - ユーザーは、外部ユーザーではなくテナントの一般的なユーザーです (別のテナントのユーザーなど)。
 - テナント用の SharePoint サイト (たとえば、Contoso.SharePoint.com など) が存在します。
 - SharePoint サイトでは、**このサイトが検索結果として表示されるのを許可** するように構成されています。
+- SharePoint サイトでは、マネージド デバイス ポリシーは使用しません。 
+    -  マネージド デバイス ポリシーが SharePoint インスタンスで有効になっていると、Finance and Operations SharePoint 統合が機能しなくなる、つまりユーザーはダウンロードできなくなるか、または Finance and Operations から SharePoint に格納されているドキュメントを作成できなくなります。 
 - ユーザーは、ドキュメントが格納されているフォルダにアクセスできます。
 
 SharePoint に保存されているドキュメントが開かず、プレビューに表示されない場合は、次の手順に従って問題をトラブルシューティングします: 

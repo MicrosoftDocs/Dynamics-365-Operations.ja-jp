@@ -1,5 +1,5 @@
 ---
-title: 分析ワークスペース (Power BI Embedded を使用)
+title: 分析ワークスペース (Power BI Embedded を使用) (ビデオを含む)
 description: このトピックでは、Power BI を使用して、アプリケーション ワークスペースにシームレスに統合される強力な対話型レポートを備える方法について説明します。
 author: RichdiMSFT
 ms.date: 07/23/2019
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 1b5ad514918576884bf8c30b146799028d4fdcd71016e81d8f938ccf907e1c33
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3792a9d19decbc97afcdb8f6dc0040b3045edc70
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742376"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937493"
 ---
 # <a name="analytical-workspaces-using-power-bi-embedded"></a>分析ワークスペース (Power BI Embedded を使用)
 

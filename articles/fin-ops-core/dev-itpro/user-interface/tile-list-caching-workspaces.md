@@ -2,7 +2,7 @@
 title: ワークスペースのタイルおよびリストのキャッシュ
 description: このトピックでは、タイルとリストに使用されるデータをキャッシュするためのフレームワーク サポートについて説明します。これにより、ワークスペースが正常に動作し、応答可能になります。
 author: jasongre
-ms.date: 06/20/2017
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86b274738a9a6461959731cf7f41c40bd9d366e5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 408f1cf3adeb170668681ecb70dee423b484903c
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783348"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952431"
 ---
 # <a name="tile-and-list-caching-for-workspaces"></a>ワークスペースのタイルおよびリストのキャッシュ
 
@@ -85,7 +85,7 @@ TileDataService::forceRefresh(tilestr(<tileName>), formRun)
 
 ```xpp
 [SysDataSetExtension(classStr(FMPickupAndReturn)), // The name of this class
-SysDataSetCacheTableExtension(tableStr(FMPickupAndReturnCache))] // The name of the cache table
+SysDataSetCacheTableExtension(tableStr(FMPickupAndReturnTable))] // The name of the cache table
 class FMPickupAndReturn extends SysDataSetQuery implements SysIDataSet
 {
     public SysDataCacheRefreshFrequency parmRefreshFrequency()
@@ -98,7 +98,7 @@ class FMPickupAndReturn extends SysDataSetQuery implements SysIDataSet
     }
     public SysDataCacheTypeId parmCacheTypeId()
     {
-        return tableNum(FMPickupAndReturnCache); // The name of the table.
+        return tableNum(FMPickupAndReturnTable); // The name of the table.
     }
     public static FMPickupAndReturn construct()
     {
@@ -133,12 +133,12 @@ implements SysIFilterConsumerForm, SysIDataSetConsumerForm, SysIFilterEventHandl
 {
     public void registerDatasourceOnQueryingEvent()
     {    
-        FMPickupAndReturnCache_DS.OnQueryExecuting += eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);    
-        FMPickupAndReturnCache_DS.OnQueryExecuting +=eventhandler(this.parmFilterFormQueryEventHandler().applyFilter);    
+        FMPickupAndReturnTable_DS.OnQueryExecuting += eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);    
+        FMPickupAndReturnTable_DS.OnQueryExecuting +=eventhandler(this.parmFilterFormQueryEventHandler().applyFilter);    
     }
     public void onFilterChanged()
     {    
-        FMPickupAndReturnCache_DS.executeQuery();    
+        FMPickupAndReturnTable_DS.executeQuery();    
     }    
 }
 ```

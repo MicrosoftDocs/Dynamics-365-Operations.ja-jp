@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dea2724f574383298c5deac9b76b4cd1d802b5427c8ec2a59a9d1ab0de4e0c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ab125f963b8f2e00c8d937c6eea091970feaef65
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741587"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952549"
 ---
 # <a name="cost-accounting-home-page"></a>原価会計ホーム ページ
 
@@ -38,7 +38,7 @@ ms.locfileid: "6741587"
 
 | &nbsp; | &nbsp;  |
 |------|---|
-|  [基本エンティティ (e ラーニング) のコンフィギュレーション](https://mbspartner.microsoft.com/Home) (CustomerSource アカウントが必要です)  |[原価要素分析コード](cost-elements.md)  |
+|  [原価会計の使用を開始する (Learn)](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)  |[原価要素分析コード](cost-elements.md)  |
 |  [分析コード階層](dimension-hierarchy.md)  |[原価管理単位の定義](./tasks/define-cost-control-units.md)| 
 | [配賦基準](allocation-bases.md)|[原価配賦ポリシーの作成と原価管理単位への割り当て](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
 | [原価会計元帳のデータ ソースの管理](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [ソース データの処理および追跡](./tasks/process-trace-source-data.md)     | 

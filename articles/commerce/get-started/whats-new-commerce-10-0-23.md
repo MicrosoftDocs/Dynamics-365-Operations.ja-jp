@@ -1,8 +1,8 @@
 ---
-title: Dynamics 365 Commerce 10.0.23 (2022 年 1 月) のプレビュー機能
+title: Dynamics 365 Commerce 10.0.23 (2022 年 1 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.23 のプレビュー リリースの新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 12/07/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 69dc0f46ae70cf6d1997596662486dcc5c505e1f
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: 3abd689c0057b22ac3c0aa9ab40dd314ce811593
+ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898375"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7919488"
 ---
-# <a name="preview-features-in-dynamics-365-commerce-10023-january-2022"></a>Dynamics 365 Commerce 10.0.23 (2022 年 1 月) のプレビュー機能
+# <a name="whats-new-or-changed-in-dynamics-365-commerce-10023-january-2022"></a>Dynamics 365 Commerce 10.0.23 (2022 年 1 月) の新機能と変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.23 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.1037 で、次のスケジュールで使用できます。
 
