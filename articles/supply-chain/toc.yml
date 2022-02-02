@@ -16,10 +16,6 @@
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management 10.0.23 (2022 年 1 月)
                   href: get-started/whats-new-scm-10-0-23.md
-                - name: Supply Chain Management 10.0.22 (2021 年 11 月)
-                  href: get-started/whats-new-scm-10-0-22.md
-                - name: Supply Chain Management 10.0.21 (2021 年 10 月)
-                  href: get-started/whats-new-scm-10-0-21.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -3513,7 +3509,7 @@
                       href: warehousing/transfer-orders-warehouse.md
                 - name: アップグレードおよび移行
                   items:
-                    - name: 倉庫管理プロセスを Microsoft Dynamics AX 2012 から Finance and Operations にアップグレードする
+                    - name: Microsoft Dynamics AX 2012 から Finance and Operations への倉庫管理プロセスのアップグレード
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
         - name: Supply Chain Management の開発
           items:

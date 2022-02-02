@@ -3,19 +3,18 @@ title: 二重書き込みの概要
 description: このトピックでは、Customer Engagement アプリと Finance and Operations アプリ間のほぼリアルタイムの対話を提供する二重書き込みの概要について説明します。
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
-ms.topic: article
+ms.topic: overview
 audience: Application User, IT Pro
 ms.reviewer: tfehr
-ms.custom: intro-internal
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 131c002000ee6ebed81a23f45ce17b7a7fff0b95
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: e71d1496da24b21949259e8f43a32cd4ff60249c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817364"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984144"
 ---
 # <a name="dual-write-overview"></a>二重書き込みの概要
 
@@ -27,9 +26,9 @@ ms.locfileid: "7817364"
 
 ## <a name="what-is-dual-write"></a>二重書き込みとは何ですか?
 
-二重書き込みは、Customer Engagement アプリと Finance and Operations アプリの間の、ほぼリアルタイムの対話を提供する標準のインフラストラクチャです。 顧客、製品、人材、および業務に関するデータがアプリケーション境界を超えてフローする場合、組織のすべての部門が権利を持つことになります。
+二重書き込み は、Customer Engagement アプリと Finance and Operations アプリの間の、ほぼリアルタイムの対話を提供する既成のインフラストラクチャです。 顧客、製品、人材、および業務に関するデータがアプリケーション境界を超えてフローする場合、組織のすべての部門が権利を持つことになります。
 
-二重書き込みは、Finance and Operations アプリと Dataverse の間で密に結合された双方向の統合を提供します。 Finance and Operations アプリでのデータの変更によって Dataverse 書き込みが行われ、Dataverse のデータの変更によって Finance and Operations アプリケーションへの書き込みが行われます。 この自動化されたデータ フローによって、アプリ間で統合されたユーザー エクスペリエンスが提供されます。
+二重書き込みは、Finance and Operations アプリと Dataverse を緊密に結びつけた双方向統合を提供します。 Finance and Operations アプリでのデータの変更によって Dataverse 書き込みが行われ、Dataverse のデータの変更によって Finance and Operations アプリケーションへの書き込みが行われます。 この自動化されたデータ フローによって、アプリ間で統合されたユーザー エクスペリエンスが提供されます。
 
 ![アプリ間のデータの関係。](media/dual-write-overview.jpg)
 
@@ -50,9 +49,9 @@ ms.locfileid: "7817364"
 + 信頼できるアプリケーション ライフサイクル管理
 + 新しい顧客に対する標準の設定エクスペリエンス
 
-### <a name="application"></a>申請
+### <a name="application"></a>申請書
 
-二重書き込みでは、Finance and Operations アプリと Customer Engagement アプリにおける概念の間にマッピングが作成されます。 この統合により、次のシナリオがサポートされます。
+二重書き込みは、Finance and Operations アプリと Customer Engagement アプリにおける概念の間にマッピングを作成します。 この統合により、次のシナリオがサポートされます。
 
 + 統合された顧客マスター
 + 顧客ロイヤルティ カードおよび報酬ポイントへのアクセス

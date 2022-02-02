@@ -13,18 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 37484ce022085dfac66edba31b7adf9af4095df8
+ms.sourcegitcommit: bbe8ab054ad7cc00a63c63e02dc90bfa8ede15bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890872"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7974384"
 ---
 # <a name="grid-capabilities"></a>グリッド機能
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 新しいグリッド コントロールは、ユーザーの生産性を高め、データのより興味深いビューを構築し、データの有意義な洞察を得るために使用できるいくつかの便利で強力な機能を提供します。 この記事では、次の機能について説明します。 
 
@@ -85,7 +83,7 @@ Finance and Operations アプリでは、すべての表形式のグリッドの
 サーバーが処理している場所より先にユーザーがデータを入力すると、検索の欠如、制御レベルの検証、既定値の入力など、データ入力の操作性が多少低下することが予想されます。 値の検索にドロップダウン リストが必要なユーザーは、サーバーの処理が現在の行まで追いつくまで待機することを推奨します。 コントロール レベルの検証と既定値の入力は、サーバーが当該行の処理をする際にも行われます。   
 
 ### <a name="pasting-from-excel"></a>Excel からの貼り付け
-これまでも、**Excel へのエクスポート** の仕組みを使って、Finance and Operations アプリのグリッドから Microsoft Excel アプリにデータをエクスポートすることができました。 しかし、システムよりも前にデータを入力する機能により、新しいグリッドはExcelからテーブルをコピーして Finance and Operations アプリのグリッドに直接貼り付けることができるようになりました。 貼り付け操作を開始するグリッド セルによって、コピーした表の貼り付けを開始する位置が決まります。 グリッドの内容は、次の 2 つの場合を除き、コピーされたテーブルの内容で上書きされます。
+ユーザーはこれまでも、 **Excel へとエクスポートする** 機能を利用して、Finance and Operations アプリ内のグリッドから Microsoft Excel にデータをエクスポートすることができました。 しかし、システムよりも前にデータを入力する機能により、新しいグリッドは Excel からテーブルをコピーして Finance and Operations アプリのグリッドに直接貼り付けることができるようになりました。 貼り付け操作を開始するグリッド セルによって、コピーした表の貼り付けを開始する位置が決まります。 グリッドの内容は、次の 2 つの場合を除き、コピーされたテーブルの内容で上書きされます。
 
 - コピーしたテーブルの列数が、貼り付け位置を起点としたグリッド内の列数を超えた場合、ユーザーに余分な列が無視されたことが通知されます。 
 - コピーされたテーブルの行数が、貼り付け位置を起点としたグリッドの行数を超える場合、既存のセルは貼り付けられた内容で上書きされ、コピーされたテーブルの余分な行はグリッドの下部に新たな行として挿入されます。 

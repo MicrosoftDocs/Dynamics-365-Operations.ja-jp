@@ -82,7 +82,7 @@
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: Phased Rollout (N-1) のインストール、構成、切替
                   href: dev-itpro/n-1-installation-configuration.md
-                - name: 小売チャネル拡張機能を最新の Retail SDK にアップグレード
+                - name: Retail チャネル拡張機能を最新の Retail SDK にアップグレード
                   href: dev-itpro/RetailSDK-update.md
             - name: 新機能および変更された機能
               items:
@@ -96,8 +96,6 @@
                       href: get-started/whats-new-commerce-10-0-24.md
                     - name: Commerce 10.0.23 (2022 年 1 月)
                       href: get-started/whats-new-commerce-10-0-23.md
-                    - name: Commerce 10.0.22 (2021 年 11 月)
-                      href: get-started/whats-new-commerce-10-0-22.md
                 - name: 削除済みまたは非推奨の機能
                   items:
                     - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -712,13 +710,17 @@
                   href: sync-product-ratings.md
                 - name: モデレーターによる評価とレビューの手動公開を有効化する
                   href: manual-publish-rating-reviews.md
-                - name: 評価とレビューに関してよくあるご質問
+                - name: 評価とレビューのインポートとエクスポート
+                  href: import-export-reviews.md
+                - name: サービス間認証の構成
+                  href: service-to-service-auth.md
+                - name: 評価とレビューに関するよくあるご質問
                   href: ratings-reviews-faq.md
             - name: 在庫の管理
               items:
                 - name: 在庫
                   items:
-                    - name: 店舗在庫の管理
+                    - name: 店舗在庫管理
                       href: work-with-store-inventory.md
                     - name: 在庫バッファーと在庫レベルのコンフィギュレーション
                       href: inventory-buffers-levels.md
@@ -998,8 +1000,6 @@
                       href: style-presets.md
                     - name: ファビコンの追加
                       href: add-favicon.md
-                    - name: ようこそメッセージの追加
-                      href: add-welcome-message.md
                     - name: 著作権に関する注意事項の追加
                       href: add-copyright-notice.md
                     - name: 言語の追加
@@ -2760,7 +2760,7 @@
                   href: dev-itpro/duplicate-payments-protection.md
                 - name: Finance and Operations のデプロイのための Commerce 支払パッケージの作成
                   href: dev-itpro/payment-connector-package.md
-            - name: サード パーティ E コマースの拡張機能
+            - name: サード パーティ eコマースの拡張機能
               items:
                 - name: オンライン ストアのコンフィギュレーション
                   href: dev-itpro/configure-online-store.md
@@ -2818,7 +2818,7 @@
                   href: troubleshoot/hide-ratings-refiner.md
             - name: SDK のトラブルシューティング
               items:
-                - name: e コマース開発環境をセットアップしてレベル 1 Retail Server 仮想マシンにデバッグを実行する
+                - name: eコマース開発環境をセットアップしてレベル 1 Retail Server 仮想マシンにデバッグを実行する
                   href: troubleshoot/set-up-dev-environment-debugging.md
     - name: Finance and Operations アプリの開発と管理
       href: ../fin-ops-core/dev-itpro/index.md

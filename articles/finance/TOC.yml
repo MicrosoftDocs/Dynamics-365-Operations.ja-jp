@@ -4,7 +4,31 @@
       items:
         - name: Dynamics 365 Finance ホーム ページ
           href: index.md
-        - name: はじめに
+        - name: 新機能および変更された機能
+          items:
+            - name: Finance and Operations アプリの新機能または変更された機能
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+            - name: Finance の新機能および変更された機能
+              items:
+                - name: Finance の新機能や変更された機能に関するホーム ページ
+                  href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.24 (2 月)
+                  href: get-started/whats-new-changed-10-0-24.md
+                - name: Finance 10.0.23 (1 月)
+                  href: get-started/whats-new-changed-10-0-23.md
+            - name: 削除済みまたは非推奨の機能
+              items:
+                - name: 削除済みまたは非推奨の機能に関するホーム ページ
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+                - name: Dynamics 365 Finance の削除済みまたは非推奨の機能
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: 以前のリリースの削除済みまたは非推奨の機能
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+            - name: 延期された AX 2012 の機能
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
+        - name: 使用開始
           items:
             - name: サービスの説明
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
@@ -62,32 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: オンプレミス展開の倉庫管理を構成する
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-            - name: 新機能および変更された機能
-              items:
-                - name: Finance and Operations アプリの新機能または変更された機能
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                - name: Finance の新機能および変更された機能
-                  items:
-                    - name: Finance の新機能や変更された機能に関するホーム ページ
-                      href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.24 (2 月)
-                      href: get-started/whats-new-changed-10-0-24.md
-                    - name: Finance 10.0.23 (1 月)
-                      href: get-started/whats-new-changed-10-0-23.md
-                    - name: Finance 10.0.22 (2021 年 11 月)
-                      href: get-started/whats-new-changed-10-0-22.md
-            - name: 削除済みまたは非推奨の機能
-              items:
-                - name: 削除済みまたは非推奨の機能に関するホーム ページ
-                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
-                - name: Dynamics 365 Finance の削除済みまたは非推奨の機能
-                  href: get-started/removed-deprecated-features-finance.md
-                - name: 以前のリリースの削除済みまたは非推奨の機能
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-            - name: 延期された AX 2012 の機能
-              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-            - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
-              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: ドキュメント リソース
               items:
                 - name: ヘルプ システム
@@ -836,6 +834,8 @@
                   href: asset-leasing/set-up-lease-books.md
                 - name: リース グループの作成
                   href: asset-leasing/create-lease-group.md
+                - name: 支払額タイプ
+                  href: asset-leasing/Payment-amount-type.md
                 - name: 指標金利の設定
                   href: asset-leasing/set-up-index-rate-types.md
                 - name: 経費タイプの設定
@@ -1460,6 +1460,8 @@
                           href: localizations/tax-calculation-import-export-feature.md
                         - name: マスター データ検索用の環境の設定
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                        - name: 税務計算サービスから Finance への、税金の設定の同期
+                          href: localizations/global-master-data-sync-tax-calculation-service-finance.md
                     - name: 決定
                       items:
                         - name: 税額計算のデータ モデル
@@ -1491,7 +1493,7 @@
                         - name: ドイツの報告
                           items:
                             - name: VAT 申告
-                              href: /localizations/emea-deu-vat-declaration-germany.md
+                              href: localizations/emea-deu-vat-declaration-germany.md
                         - name: オランダの申告
                           items:
                             - name: VAT 申告
@@ -1500,8 +1502,10 @@
                               href: localizations/emea-nl-eu-sales-list.md
                         - name: スペインの申告
                           items:
-                            - name: 'VAT に関する情報の即時提供 (Suministro Inmediato de Información del IVA, SII)'
+                            - name: VAT に関する情報の即時提供 (Suministro Inmediato de Información del IVA、SII)
                               href: localizations/emea-esp-sii-spain.md
+                            - name: VAT 申告
+                              href: localizations/emea-esp-vat-declaration-spain.md
                         - name: スウェーデンの申告
                           items:
                             - name: VAT 申告
@@ -1510,11 +1514,11 @@
                           items:
                             - name: VAT 申告
                               href: localizations/emea-che-vat-declaration-switzerland.md
-                        - name: イギリスのレポート
+                        - name: イギリスの申告
                           items:
                             - name: VAT 申告
                               href: localizations/emea-gbr-vat-declaration.md
-                        - name: ノルウェーのレポート
+                        - name: ノルウェーの申告
                           items:
                             - name: VAT 申告
                               href: localizations/emea-nor-vat-declaration.md
@@ -1532,10 +1536,12 @@
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
                         - name: マスター データ検索に使用する税構成のカスタマイズ
                           href: localizations/customize-tax-configurations-master-data-lookup.md
-                    - name: 税計算に関するよく寄せられる質問
+                    - name: 税計算に関するよくあるご質問
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: 規制の更新
               href: localizations/regulatory-updates.md
+            - name: 規制に関する更新の検索
+              href: localizations/search-for-regulatory-updates.md
             - name: オーストラリア
               items:
                 - name: オーストラリアの概要
@@ -1754,11 +1760,13 @@
                   href: localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
                 - name: 顧客支払の利息および罰金の計算
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+                - name: ブラジルの銀行口座番号の設定
+                  href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
                 - name: 税金
                   items:
                     - name: ブラジルの税金の概要
                       href: localizations/latam-bra-calculate-taxes.md
-                    - name: 購買見積の税額計算
+                    - name: 購買見積書での税額計算
                       href: localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
                     - name: 課税評価の作成 - ICMS
                       href: localizations/tasks/br-10001-4-create-tax-assessment-icms.md
@@ -1782,6 +1790,8 @@
                       href: localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
                     - name: RS、SC、および SP 状態の ICMS-ST 補足および復元プロセスと宣言
                       href: localizations/latam-bra-complement-restitution.md
+                    - name: 他の州の仕入先からの製品に対する ICMS-DIF 税計算の基準の変更
+                      href: localizations/latam-brazil-basis-change-ICMS-DIF-tax-calculation-products-suppliers-other-states.md
                     - name: IPI 税の調整コードの設定
                       href: localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
                     - name: PIS および COFINS 固定資産
@@ -1812,7 +1822,7 @@
               items:
                 - name: 中国の概要
                   href: localizations/china.md
-                - name: 中国で 21Vianet が運用する Finance and Operations
+                - name: 中国の 21Vianet で運用されている Finance and Operations
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: 中国の伝票タイプに対する勘定グループの選択
                   href: localizations/apac-chn-account-groups-selection.md
@@ -1884,6 +1894,8 @@
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: VAT 申告 (チェコ共和国)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: チェコのイントラスタット
+                  href: localizations/emea-cze-intrastat.md
                 - name: 銀行口座の銀行記号
                   href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
                 - name: EU 内 VAT
@@ -1916,6 +1928,8 @@
                   href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
                 - name: 支払伝票形式の設定
                   href: localizations/tasks/set-up-payment-slip-format.md
+                - name: デンマークのイントラスタット
+                  href: localizations/emea-dnk-intrastat.md
             - name: エジプト
               items:
                 - name: エジプトの概要
@@ -1938,6 +1952,8 @@
                   href: localizations/emea-est-personal-info.md
                 - name: VAT 明細書
                   href: localizations/emea-est-vat-statement-details.md
+                - name: エストニアのイントラスタット
+                  href: localizations/emea-est-intrastat.md
             - name: ヨーロッパ
               items:
                 - name: 欧州の概要
@@ -2078,12 +2094,14 @@
                       href: localizations/tasks/eur-00018-vat-reconciliation-report.md
                     - name: 東ヨーロッパの VAT 登録トランザクション
                       href: localizations/emea-vat-register-transactions.md
-                    - name: 税ポイントの日付 (VAT レジスターの日付)
+                    - name: 税ポイントの日付 (VAT 登録日)
                       href: localizations/emea-tax-point-date.md
                     - name: VAT 報告書
                       href: localizations/emea-vat-reporting.md
                     - name: VAT 報告書の作成と送信
                       href: localizations/tasks/create-submit-vat-report.md
+                    - name: 仕入先 VAT 登録日
+                      href: localizations/emea-date-vendor-vat-register.md
                 - name: 決済のトランザクションの表示
                   href: localizations/emea-transactions-settlement-form.md
                 - name: 財務理由
@@ -2872,6 +2890,8 @@
                   href: localizations/emea-lva-tax-natural-resources.md
                 - name: VAT 明細書の詳細
                   href: localizations/emea-lva-vat-statement-details.md
+                - name: ラトビアのイントラスタット
+                  href: localizations/emea-lva-intrastat.md
             - name: リトアニア
               items:
                 - name: リトアニアの概要
@@ -3060,6 +3080,8 @@
                       href: localizations/emea-pol-vdek-reporting.md
                     - name: JPK-V7M レポートの特定のビジネス シナリオの詳細
                       href: localizations/emea-pol-vdek-scenarios.md
+                - name: 商業トランザクション レポートの支払条件
+                  href: localizations/emea-pol-payment-terms-report.md
             - name: カタール
               items:
                 - name: カタールの概要
@@ -3356,6 +3378,8 @@
                   href: localizations/emea-esp-report-340.md
                 - name: 申告 347 レポート
                   href: localizations/emea-esp-declaration-347-report.md
+                - name: VAT 申告 303
+                  href: localizations/emea-esp-vat-declaration-spain.md
                 - name: 販売および購買サイクル
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: 特殊エントリと期首表
@@ -3466,6 +3490,8 @@
           items:
             - name: Human Resources の概要
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
+            - name: インフラストラクチャ リリース10.0.25
+              href: ../human-resources/hr-infrastructure.md?toc=/dynamics365/finance/toc.json
             - name: Human Resources の設定
               items:
                 - name: Human Resources パラメーターのコンフィギュレーション
@@ -3473,7 +3499,7 @@
                 - name: Human Resources 共有パラメーターのコンフィギュレーション
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Human Resources ワークフローの設定
-                  href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
                 - name: 日付と時刻のフィールドの理解
                   href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
             - name: 個人の管理
@@ -4723,7 +4749,7 @@
               items:
                 - name: 為替レート プロバイダーの作成
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-providers.md
-                - name: Finance and Operations バージョン 8.0 での為替レート プロバイダーの作成
+                - name: Finance and Operations バージョン 8.0 を使用した為替レート プロバイダーの作成
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'CustTrans::settleTransaction を使用したトランザクションの決済'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md

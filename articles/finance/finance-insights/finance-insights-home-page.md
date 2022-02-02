@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: 8cc7b2d733cdcf1adef2885b7900ea312a10d98c
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813750"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968813"
 ---
 # <a name="finance-insights-home-page"></a>Finance Insights ホーム ページ
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Finance Insights には構成可能かつ拡張可能なソリューションが用意されており、会社のキャッシュ フローを的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能では、インテリジェントな機械学習テンプレートを使用して、提供されたデータ (ビューローからの消費者レポート情報など、サード パーティからのデータを含む) を使用してモデルを構築します。 これらのインテリジェントな機能は、意思決定に役立ち、現在および予想されるビジネス上の課題に効果的に対応するための行動を支援します。 ユーザーは、Finance Insights で使用または出力されるデータについて責任を負います。
 
 > [!NOTE]
-> Finance Insights のプレビューは、米国、カナダ、英国、ヨーロッパ、アジア太平洋、日本、オーストラリア、ニュージーランドで配置することができます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。
+> Finance Insights は、アメリカ合衆国、カナダ、イギリス、ヨーロッパ、アジア太平洋、日本、オーストラリア、ニュージーランドで配置することができます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -91,7 +90,7 @@ Finance Insights を使用する前に、コンフィギュレーション ス�
 
 キャッシュフロー予測機能は、現金の位置をより正確に見積もるために役立ちます。 インテリジェント キャッシュフロー予測は、Dynamics 365 Finance の既存のキャッシュフロー予測機能の上位に構築されます。 既存の機能を確認する方法については、[キャッシュフロー予測](../cash-bank-management/cash-flow-forecasting.md) を参照してください。
 
-- キャッシュフロー予測の新機能については、[キャッシュフロー予測](cash-flow-forecast-intro.md) を参照してください。
+- キャッシュ フロー予測の新機能については、[キャッシュ フロー予測](cash-flow-forecast-intro.md) を参照してください。
 - ここでキャッシュフロー予測に含める外部データのインポートについては、[外部データをキャッシュフロー予測に使用する](external-data-in-cash-flow.md) を参照してください。 
 - AI モデルを使用して短期的なキャッシュフローを予測する方法の詳細については、[キャッシュ ポジション](cash-position.md) を参照してください。
 - キャッシュフローの位置およびキャッシュフロー予測をスナップショットとして保存する方法、およびスナップショットを実績と比較する方法については、[スナップショットの概要](payment-snapshots.md) を参照してください。

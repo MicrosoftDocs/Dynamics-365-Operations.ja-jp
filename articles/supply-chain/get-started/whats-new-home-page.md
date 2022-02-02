@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b21fba6fbfd4fe2a645efd56fb3592252c2a3fe0
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: e4a120dd4199b143c3103392515c85e7b887194b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920626"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982723"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の新機能および変更された機能
 
@@ -31,7 +31,7 @@ Dynamics 365 Supply Chain Management の各リリースでの新機能や変更�
 
 | バージョン | ビルド番号 | 自動更新の可用性 | 詳細情報 |
 |---|---|---|---|
-| 10.0.24 | 10.0.1084 | 2022 年 2 月 | [Dynamics 365 Supply Chain Management 10.0.24 のプレビュー](whats-new-scm-10-0-24.md) |
+| 10.0.24 | 10.0.1084 | 2022 年 2 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.24 の新機能と変更点](whats-new-scm-10-0-24.md) |
 | 10.0.23 | 10.0.1037 | 2022 年 1 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.23 の新機能と変更点](whats-new-scm-10-0-23.md) |
 | 10.0.22 | 10.0.995 | 2021 年 11 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.22 の新機能と変更点](whats-new-scm-10-0-22.md) |
 | 10.0.21 | 10.0.960 | 2021 年 10 月 | [Dynamics 365 Supply Chain Management バージョン 10.0.21 の新機能と変更点](whats-new-scm-10-0-21.md) |

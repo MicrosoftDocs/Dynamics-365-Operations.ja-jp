@@ -3,7 +3,7 @@ title: ワークフロー システムの概要
 description: このトピックでは、ワークフロー システムについて説明します。
 author: ChrisGarty
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9fbb47f2ba4601a275423db3c072d61d460ece3204e2f8ee995e1c2febe230
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb88da9f2de76c25a355594a9beba3d29ea2daac
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715942"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985111"
 ---
 # <a name="workflow-system-overview"></a>ワークフロー システムの概要
 

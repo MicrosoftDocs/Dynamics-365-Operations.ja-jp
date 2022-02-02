@@ -1,27 +1,26 @@
 ---
 title: 機能管理の概要
-description: このトピックでは、機能管理の機能および使用方法について説明します。
+description: このトピックでは、機能管理とその使用方法について説明します。
 author: Peakerbl
-ms.date: 09/13/2021
-ms.topic: article
+ms.date: 01/10/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1318093d66cfc30a04815311cce332df010d4b69
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 6605fe68576ce80726438b60c1f1fbf3782d0934
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488181"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984462"
 ---
 # <a name="feature-management-overview"></a>機能管理の概要
 
@@ -75,9 +74,9 @@ ms.locfileid: "7488181"
 > [!NOTE]
 > これらの機能は自動的に有効になるため、組織でこれらの機能を取得する準備ができているか、あるいはもう少し時間が必要なのかを判断することが重要です。 さらに時間が必要な場合は、これらの機能を一時的に無効にする必要があります。 なお、**既定で有効** 機能の移行は、通常、その機能が **必須** になることを目標とする前のメジャー リリースで行われます。 その時点では、機能を無効にするオプションはありません。 
 
-### <a name="released-features-mandatory"></a>リリース済機能 (必須)
+### <a name="mandatory"></a>必須
 
-**リリース済** は機能の最終状態です。 これは、機能が有効であり、Microsoft に連絡しない限り、無効にできないことを示します。 オプション機能は、2 つのメジャー リリース後に必須になる予定です。 重要な機能は、例外的に必須として導入することができます。
+**必須** は、機能の最終的な状態として求められるものです。 これは、機能が有効であり、Microsoft に連絡しない限り、無効にできないことを示します。 オプション機能は、2 つのメジャー リリース後に必須になる予定です。 重要な機能は、例外的に必須として導入することができます。
 
 ## <a name="example-of-expected-feature-lifecycles"></a>予想される機能のライフサイクルの例
 

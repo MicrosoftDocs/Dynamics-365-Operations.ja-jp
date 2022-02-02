@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
-ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "7827056"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968839"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insights の設定に関する問題のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance insights の機能の使用時に発生する問題を一覧表示します。 また、これらの問題の修正方法についても説明します。
 
@@ -55,7 +54,7 @@ ms.locfileid: "7827056"
 1. Finance insights のプレビュー版を使用している場合は、**顧客支払情報の結果 (CDS to Fin and Ops)** テンプレートに関連付けられている DI プロジェクトを削除します。
 2. [データ インテグレータ プロジェクトの作成](create-data-integrate-project.md)の手順に従います。 **顧客支払情報の結果  (CDS to Fin and Ops 10.0.17 以降)** テンプレートを使用します。
 
-## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>現象: 顧客支払予測設定ページのリンクを使用して AI Builder を開こうとすると、"申し訳ありません。切断されました" というエラー メッセージが表示されるのはなぜですか。
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>現象: 顧客支払予測設定ページのリンクを使用して AI Builder を開こうとすると、「申し訳ありません。通信が切断されました」 というエラー メッセージが表示されるのはなぜですか？
 
 ### <a name="resolution"></a>解決策
 

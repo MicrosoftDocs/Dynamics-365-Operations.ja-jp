@@ -1,6 +1,6 @@
 ---
-title: パブリック プレビュー (プレビュー) で使用する Finance insights の構成 - バージョン 10.0.20 以降
-description: このトピックでは、バージョン 10.0.20 以降のパブリック プレビュー版 Finance Insights で利用可能な機能を使用するために、システムを設定する方法について説明します。
+title: Finance Insights の構成 - バージョン 10.0.20 以降
+description: このトピックでは、バージョン 10.0.20 以降の Finance Insights で利用可能な機能を使用するために、システムを設定する方法について説明します。
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7e5752b8deffbd2694193494652a0ff808ecbfb0
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 8ff20334445fba1db435d7005c4ca9ba18f97f72
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927407"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968965"
 ---
-# <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>パブリック プレビュー (プレビュー) で使用する Finance insights の構成 - バージョン 10.0.20 以降
+# <a name="configuration-for-finance-insights---version-10020-and-later"></a>Finance Insights の構成 - バージョン 10.0.20 以降
 
 [!include [banner](../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Finance insights では、Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、強力な予測ツールを提供します。 このトピックでは、Dynamics 365 Finance のバージョン 10.0.20 を設定して、Finance Insights のパブリックプレビューで利用可能な機能をシステムで使用する方法について説明します。
+Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、組織に強力な予測ツールを提供します。 このトピックでは、Dynamics 365 Finance バージョン 10.0.20 を構成して、Finance Insights で利用可能な機能をシステムで使用する方法について説明します。
 
 > [!NOTE]
 > このトピックで説明する構成手順は、Finance のバージョン 10.0.20 以降にのみ適用されます。 バージョン 10.0.19 およびそれ以前で Finance Insights を設定するには、[Finance Insights の構成 - バージョン 10.0.19 まで](configure-for-fin-insites.md)を参照してください。
@@ -38,7 +38,7 @@ Finance insights では、Dataverse を使用した Microsoft Dynamics 365 Finan
 
 環境をデプロイするには、これらの手順に従います。
 
-1. Microsoft Dynamics Lifecycle Services (LCS) で、 Finance 環境を作成、または更新します。 この環境では、Finance and Operations のアプリのバージョン 10.0.20 以降が必要です。
+1. Microsoft Dynamics Lifecycle Services (LCS) で、 Finance 環境を作成、または更新します。 この環境では、Finance and Operations アプリのバージョン 10.0.20 以降が必要です。
 2. この環境は、サンドボックスの高可用性 (HA) 環境である必要があります。 (このタイプの環境は、Tier 2 環境とも呼ばれます)。詳細については、[環境の計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。
 3. サンドボックス環境で Finance insights を構成している場合は、予測を機能させるには、本番データをその環境にコピーする必要がある場合があります。 予測モデルでは、複数年分のデータを用いて予測値を構築します。 Contoso のデモ データには、予測モデルを適切にトレーニングさせるだけの過去のデータが十分に含まれていません。 
 
@@ -126,7 +126,7 @@ Windows PowerShell スクリプトが用意されているので、[Azure Data L
         - **パフォーマンス** - **標準** を選択することをお勧めします。
         - **アカウントの種類** - 必ず **Storage V2** を選択してください。
 
-    3. **詳細オプション** ダイアログボックスの **Data Lake storage Gen2** オプションで、**階層型名前空間** 機能配下の **有効** を選択します。 この機能を有効にしないと、Finance and Operations アプリが書いたデータを Power BI データ フローなどのサービスを使って使用することができません。
+    3. **詳細オプション** ダイアログボックスの **Data Lake storage Gen2** オプションで、**階層型名前空間** 機能配下の **有効** を選択します。 この機能を有効にしない場合は、Finance and Operations アプリで書き込んだデータを Power BI データ フローなどのサービスから使用できません。
     4. **確認して作成** を選択します。 デプロイが完了したら、新しいリソースが Azure ポータルに表示されます。
     5. 作成したストレージ アカウントに移動します。
     6. 左側のメニューで、**アクセス キー** を選択します。
@@ -752,6 +752,6 @@ LCS を使用して Data Lake アドインを環境へのエクスポートを�
 
 ## <a name="feedback-and-support"></a>フィードバックとサポート
 
-フィードバックに興味のある方、サポートが必要な方は、[Finance insights (プレビュー)](mailto:fiap@microsoft.com) にメールでお問い合わせください。
+フィードバックをお寄せくださるか、サポートが必要な場合は、[Finance Insights](mailto:fiap@microsoft.com) にメールでお問い合わせください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

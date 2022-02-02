@@ -3,22 +3,21 @@ title: Dynamics 365 Supply Chain Management 向け顧客ポータルの概要 (�
 description: このトピックでは、顧客ポータルの概要とその使用方法および機能について説明します。
 author: Henrikan
 ms.date: 06/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c1383ee3c8e72f630d29a557de4150cdd3aa905f
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 04a1a06dce79259e35ce66dda469e9b157d7ed1c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937507"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983241"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Dynamics 365 Supply Chain Management の顧客ポータルの概要
 
@@ -43,7 +42,7 @@ ms.locfileid: "7937507"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-[Dynamics 365 Supply Chain Management の顧客ポータル テンプレート](https://youtu.be/nPrqoLuHfV8) ビデオ (上記参照) は、YouTube で利用可能な [Finance and Operations 再生リスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
+[Dynamics 365 Supply Chain Management の顧客ポータル テンプレートの概要](https://youtu.be/nPrqoLuHfV8) ビデオ (上記参照) は、YouTube で利用可能な [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
 ## <a name="who-should-use-it"></a>対象となるユーザー
 
@@ -57,13 +56,13 @@ ms.locfileid: "7937507"
 - エンタープライズ以外の顧客に向けて Web サイトを構築する企業。 こうした企業は、[Dynamics 365 Commerce e-コマースの Web サイト](../../commerce/create-ecommerce-site.md) 作成を検討する必要があります。
 - 既存の Power Apps Web サイトを同様の目的で使用している企業。 このような企業には、顧客ポータルをしようしてもさらなる恩恵を得ることはないでしょう。 顧客ポータルは、デュアル書き込み、Supply Chain Management、Power Apps ポータル間の「点と点をつなげる」ことを希望する顧客に向けたガイドとなるテンプレートとして提供されます。 この目的を果たす Web サイトを既に設定している場合は、顧客ポータル テンプレートを使用して Web サイトの再プロビジョニングを行っても多くの恩恵を得られない場合があります。
 
-## <a name="how-does-it-work"></a> どのような仕組みですか?
+## <a name="how-does-it-work"></a>どのような仕組みですか?
 
 顧客 ポータルは、Power Apps ポータルのテンプレートとして提供されます。 これは、Power Apps ポータルとデュアル書き込みに対して依存関係があります。
 
 [Power Appsポータル](/powerapps/maker/portals/overview)を使用することで、組織の外部のユーザーがログインできる外部向けの Web サイトをユーザーが作成できるようになります。 ポータルの作成には、コードの記述がほとんど必要ありません。 顧客ポータルは、Microsoft から入手可能な、多くの [Dynamics 365 ポータルテンプレート](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) の1つです。
 
-[デュアル書き込み](/powerapps/maker/portals/overview) は、Customer Engagement アプリと Finance and Operations アプリの間の、ほぼリアルタイムの対話を提供する既成のインフラストラクチャ製品です。 デュアル書き込みは、Finance and Operations アプリと Microsoft Dataverse の間で密に結合された双方向の統合を可能とします。 そのため、アプリを横断して統合されたユーザー エクスペリエンスを実現します。 顧客ポータルは、デュアル書き込みと同期されているテーブルに依存関係があります。 Supply Chain Management からのデータを顧客ポータルで表示する前に、デュアル書き込みをすべての適切なテーブルに対して有効にする必要があります。
+[二重書き込み](/powerapps/maker/portals/overview) は、Customer Engagement アプリと Finance and Operations アプリの間の、ほぼリアルタイムの対話を提供する既成のインフラストラクチャ製品です。 二重書き込みは、Finance and Operations アプリと Microsoft Dataverse の双方向統合を提供します。 そのため、アプリを横断して統合されたユーザー エクスペリエンスを実現します。 顧客ポータルは、デュアル書き込みと同期されているテーブルに依存関係があります。 Supply Chain Management からのデータを顧客ポータルで表示する前に、デュアル書き込みをすべての適切なテーブルに対して有効にする必要があります。
 
 ![顧客ポータルの依存関係。](media/customer-portal-elements.png "顧客ポータルの依存関係")
 

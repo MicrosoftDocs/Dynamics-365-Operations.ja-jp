@@ -3,7 +3,7 @@ title: 従業員およびマネージャー セルフ サービスの概要
 description: この記事では、従業員およびマネージャ セルフ サービス ワークスペースの概要を説明します。
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cea92092701f960f12aa74efe4c82c379a2b2c6d
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 2a356aae6590c2bce289c8d180324027efc76983
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431214"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992046"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>従業員およびマネージャー セルフ サービスの概要
 
@@ -93,7 +93,7 @@ ms.locfileid: "7431214"
 
 このセクションでは、**自分のキャリア情報** セクションのような、その他の **従業員セルフ サービス** 領域へのリンクを提供します。
 
-**福利厚生** リンクを使用して、福利厚生を登録します。 福利厚生の管理についての詳細は、[福利厚生の概要](hr-benefits-management-overview.md) を参照してください
+**福利厚生** リンクを使用して、福利厚生を登録します。 福利厚生の管理についての詳細は、[福利厚生の概要](hr-benefits-management-overview.md) を参照してください。
 
 **業績** では、**業績仕訳** を選択して業績目標とレビューの両方に使用する業績仕訳エントリを作成できます。 **フィードバックの送信** を選択して、組織内の他の従業員に対するフィードバックを提供できます。 組織の設定に応じて、メールが受信者、送信者、および管理者に送信される場合があります。 組織内のすべての従業員にフィードバックを送信できます。 フィードバックの送信は会社によって制限されません。
 
