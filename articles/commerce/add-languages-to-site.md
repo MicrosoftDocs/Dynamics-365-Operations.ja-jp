@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 06c28e078a09cfadda6cbb0565bcaf8564681efaae8f57817922afb07ff4e6b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d118c90dc16be964bb22aa6f170fe2d2f009b3e9
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725437"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964557"
 ---
 # <a name="add-languages-to-your-site"></a>サイトに言語を追加する
 
@@ -164,8 +164,6 @@ Web サイトは、Commerce がサポートする任意の言語にローカラ�
 [CSS 上書きファイルの作業](css-override-files.md)
 
 [ファビコンの追加](add-favicon.md)
-
-[ようこそメッセージの追加](add-welcome-message.md)
 
 [著作権に関する注意事項の追加](add-copyright-notice.md)
 

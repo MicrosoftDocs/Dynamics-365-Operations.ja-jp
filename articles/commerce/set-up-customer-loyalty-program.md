@@ -3,7 +3,7 @@ title: ロイヤルティの概要
 description: このトピックでは、Dynamics 365 Commerce 内でのロイヤルティ機能、および小売業者がロイヤルティ プログラムを容易に始めるのに役立つ、対応する設定手順について説明します。
 author: scott-tucker
 ms.date: 07/21/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: be8090ee8fc3b58d37e221a6e1a5b8caf9704cf242a9ae22f860499c5b5bafcf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 57512bbd735e26ba31e00518ca8179f2d9b14bc4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755060"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985165"
 ---
 # <a name="loyalty-overview"></a>ロイヤルティの概要
 

@@ -3,22 +3,21 @@ title: 日本の概要
 description: このトピックでは、日本固有の機能の概要を示します。
 author: ShylaThompson
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b2a34c788e5547c8a5fecc2f31d3c3180076121cf2b43ce802a6914f1723c880
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 92e9dedff1e94596c011b8b17ebb210f9521a982
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727235"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983113"
 ---
 # <a name="japan-overview"></a>日本の概要
 

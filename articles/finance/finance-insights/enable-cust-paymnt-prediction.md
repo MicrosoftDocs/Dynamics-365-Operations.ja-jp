@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 16ccd7f2e11f0b46aaa646de272e668d29ccc0c0
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 5002fc79842bef150892347a7ff4702b07cfe5be
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752931"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968880"
 ---
 # <a name="enable-customer-payment-predictions"></a>顧客支払予測の有効化
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、財務インサイトで顧客支払予測機能をオンにし構成する方法について説明します。 **機能管理** ワークスペースで機能を有効にし、**Finance Insights パラメーター** ページで構成設定を入力します。 このトピックには、機能を効果的に使用するために役立つ情報も含まれています。
 

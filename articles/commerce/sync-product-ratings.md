@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a50c09dc9fd8a4c18bbd01c70338279ac0ad9ae6
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473528"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967953"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の製品評価の同期
 
@@ -129,7 +129,17 @@ POS で製品の評価を有効にするには、次の手順に従います。
 
 [評価とレビューの管理](manage-reviews.md)
 
-[評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
+[評価とレビューの構成](configure-ratings-reviews.md)
+
+[製品評価の同期](sync-product-ratings.md)
+
+[モデレーターによる評価とレビューの手動公開を有効にする](manual-publish-rating-reviews.md)
+
+[評価とレビューのインポートとエクスポート](import-export-reviews.md)
+
+[サービス間認証の構成](service-to-service-auth.md)
+
+[評価とレビューに関するよく寄せられる質問](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

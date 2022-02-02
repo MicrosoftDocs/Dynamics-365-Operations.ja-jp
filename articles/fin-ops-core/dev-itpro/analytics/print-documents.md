@@ -3,7 +3,7 @@ title: ドキュメントの印刷の概要
 description: ローカル プリンターまたはネットワークに接続されたデバイスのいずれかを使用してドキュメントを印刷できます。 この記事では、ドキュメントの印刷方法の概要を提供します。
 author: RichdiMSFT
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Application User
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5a0d26836043ea225b9a6d3e62980ada2dc49b0a01a6dacec739b50f28e17bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728241"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984911"
 ---
 # <a name="document-printing-overview"></a>ドキュメントの印刷の概要
 
@@ -51,10 +51,10 @@ ms.locfileid: "6728241"
 シナリオによってソリューションが異なるため、アプリケーションは組み込みサービスおよびユーザーがその目標を達成するのためのツールを提供します。
 
 - **シナリオ 1** は HTML5 クライアントのブラウザーの表示によってサポートされています。
-- **シナリオ 2** は、クライアント アプリケーションおよび Microsoft 365 サービスを使用します。
+- **シナリオ 2** はクライアント アプリケーションおよび Microsoft 365 サービスを使用します。
 - **シナリオ 3** には、クライアント アプリケーションからおよび Microsoft Azure でホストされているサービスからのサポートが必要です。
 
-Azure サブスクリプションに配置されているプラットフォームに加えて、Finance and Operations アプリケーションは顧客に、統合された、ドキュメントを印刷するためドメインでホストされるデバイスをより使いやすくするファースト パーティ Azure アプリケーションを提供します。
+Azure サブスクリプションに配置されているプラットフォームに加えて、Finance and Operations アプリケーションは顧客に、統合された、ドキュメントを印刷するためドメインでホストされるデバイスをより使いやすくする当事者 Azure アプリケーションを提供します。
 
 ## <a name="service-overview"></a>サービスの概要
 ホストされるアプリケーションによって生成されるドキュメントが、ネットワークに接続されたデバイスで印刷されるのを待機している間に、Azure BLOB ストレージに保存されます。 [ネットワーク印刷を有効にするため、ドキュメント回覧エージェントをインストールする](install-document-routing-agent.md) は Azure 認証を使用して、Azure サービスへのセキュリティで保護されたチャネルを確立します。

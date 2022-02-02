@@ -13,21 +13,20 @@ ms.search.industry: retail
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e7e88511ac3d0044c7e590f43f4486929f691ce9
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 9a5a7d6394a87eccde8e1c364caaaabdb0297fd2
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891446"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982206"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>明細書転記機能の改良
 
 [!include [banner](includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、明細書転記の機能に加えられた最初の一連の機能強化事項について説明します。 これらの機能強化事項は、Microsoft Dynamics 365 for Finance and Operations 7.3.2 で利用可能です。
 
-## <a name="activation"></a>アクティブ化
+## <a name="activation"></a>有効化
 
 既定では、Finance and Operations 7.3.2 の展開中に、プログラムは明細書転記のレガシ機能を使用するために設定されます。 改良された明細書転記機能を有効にするには、そのためのコンフィギュレーション キーをオンにする必要があります。
 

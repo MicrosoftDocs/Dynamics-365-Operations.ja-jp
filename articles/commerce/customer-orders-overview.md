@@ -3,7 +3,7 @@ title: 販売時点管理 (POS) の顧客注文
 description: このトピックでは、販売時点管理 (POS) の顧客注文に関する情報を提供します。 顧客注文は、特別注文としても知られています。 このトピックには、関連パラメーターおよびトランザクション フローのディスカッションが含まれています。
 author: josaw1
 ms.date: 08/02/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 44beb4515bf0d2f8fc7ad75feb3164bf1c7c2d5737552b1a06ce59c2edcaf8fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755086"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982821"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>販売時点管理 (POS) の顧客注文
 

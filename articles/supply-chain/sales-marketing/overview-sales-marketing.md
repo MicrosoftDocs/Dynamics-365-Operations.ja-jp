@@ -3,7 +3,7 @@ title: 販売とマーケティングの概要
 description: 販売およびマーケティングを使用して、販売フローのさまざまなタイプのデータを取得、保存、および使用できます。 このデータには、元の販売戦略、将来のフォローアップ アクション、および追加販売が含まれます。
 author: kfend
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f6c926b93af1ab36fa45bd642e5cdd7c821ae2bfd318625fc734a1fbd4f9c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 021ff1ff24e20516b7a8ac1ce206b76aa8e91a2a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721250"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982537"
 ---
 # <a name="sales-and-marketing-overview"></a>販売とマーケティングの概要
 

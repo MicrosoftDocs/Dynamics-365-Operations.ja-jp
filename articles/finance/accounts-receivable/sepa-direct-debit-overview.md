@@ -3,7 +3,7 @@ title: SEPA の口座引落の概要
 description: 単一ユーロ支払地域 (SEPA) は欧州委員会によって設定され、個人、事業または組織および銀行がどの国または地域にあるかに関係なく、すべての電子支払は国内と見なされます。 国内支払と国境を越えた支払の間に違いはありません。 SEPA には、28 の欧州連合 (EU) の加盟国とアイスランド、リヒテンシュタイン、ノルウェー、スイス、およびモナコとサンマリノが含まれます。 SEPA により、欧州経済領域 (EEA) 内の支払トランザクションの単一市場が形成されます。 最終的に、SEPA により、銀行、事業、および個人が扱う支払形式の数を減らすと予想されます。
 author: ShivamPandey-msft
 ms.date: 08/22/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 888c65cde11ed144ddeee68d6476a3acad0cb592768c470356ebc2098b596838
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5f71eca0ca9ee07d43bdf737874f442f0029e87e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763241"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984381"
 ---
 # <a name="sepa-direct-debit-overview"></a>SEPA の口座引落の概要
 

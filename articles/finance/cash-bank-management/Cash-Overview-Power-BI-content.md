@@ -3,23 +3,22 @@ title: 現金の概要 Power BI コンテンツ
 description: このトピックでは、現金の概要 Power BI コンテンツについて説明します。 コンテンツに含まれているレポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 author: saraschi2
 ms.date: 07/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 59ef57d3684cfa3b7063af76cc7ee7b7f0eaceb5e1f1cceb0845ebd9057ded07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f7e0c792df8519f3bcb2ade2e29cc4c5c8e4730
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728082"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986411"
 ---
 # <a name="cash-overview-power-bi-content"></a>現金の概要 Power BI コンテンツ
 
@@ -54,7 +53,7 @@ ms.locfileid: "6728082"
 
 次の表は、**現金の概要** Power BI コンテンツコンテンツの各レポート ページに表示されるメトリックスの詳細について説明しています。
 
-| レポート                                 | コンテンツ |
+| レポート                                | コンテンツ |
 |---------------------------------------|----------|
 | 現金の概要 – すべての会社         | <ul><li>システム通貨の現金収支</li><li>予測される通貨残高</li><li>システム通貨での銀行預金残高の合計</li><li>法人ごとの残高</li><li>銀行口座通貨での、現在の実績対予測残高</li></ul> |
 | 現金の概要 – 現在の会社       | <ul><li>会計通貨の現金収支</li><li>予測される通貨残高</li><li>会計通貨での銀行預金残高の合計</li><li>銀行口座通貨での、現在の実績対予測残高</li></ul> |

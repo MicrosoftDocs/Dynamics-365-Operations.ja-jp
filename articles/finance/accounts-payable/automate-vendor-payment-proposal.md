@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 483621a5de2980212926ac1011c16f1b82e4a3d075bbe9bcbbe6a0e35f06e5bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1c5012fdc4f3bfab3f91adfee1eab758dd9c1a0f
+ms.sourcegitcommit: 5aecb04178e45e1fdea032b3ef3ce338332005dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749105"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7966718"
 ---
 # <a name="automate-vendor-payment-proposals"></a>仕入先の支払提案を自動化する
 
@@ -32,6 +32,9 @@ ms.locfileid: "6749105"
 - 支払結果が保存された仕入先支払仕訳帳の内容
 
 支払い提案の自動化によって支払が自動的に転記されることはありません。 したがって、作成された支払の承認に現在使用している検証とワークフロー プロセスは、そのまま使用することができます。
+
+> [!NOTE]
+> この機能を利用する場合は、機能管理で **仕入先支払提案の自動化** 機能を有効化する必要があります。 
 
 ## <a name="define-the-occurrence-of-vendor-payment-proposals"></a>仕入先の支払提案の生成定義
 

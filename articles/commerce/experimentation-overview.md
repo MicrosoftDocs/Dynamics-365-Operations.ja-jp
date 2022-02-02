@@ -3,24 +3,23 @@ title: Dynamics 365 Commerce での実験
 description: 実験により、サイト ビルダーでのページ レイアウトの作成、編集、管理、およびコンテンツの処理が可能になります。 エンド ツー エンドの実験サポートは、E コマース ページおよびページ内のエンティティに対して有効になります。
 author: sushma-rao
 ms.date: 10/21/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7641267321e1c97b3f0fa30a97c0519c76fe1b0c0223bdd196b6791d5de7cd8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 292a8934e735c76389e36603a708fd2a1bbf7691
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747444"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986544"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Dynamics 365 Commerce での実験
 Dynamics 365 Commerce での実験を使用して、E コマース ページの有効性についての仮想を検証し、データ駆動型信頼とともに決定を行います。 Commerce では、ページ、モジュール、およびフラグメントの A/B テストをサポートしており、Web サイトに提案された変更の影響を測定できます。

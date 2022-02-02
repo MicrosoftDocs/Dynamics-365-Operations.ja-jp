@@ -3,7 +3,7 @@ title: 税計算データ モデル
 description: このトピックでは、税データ モデル、および各データ モデルのフィールド値が税計算トランザクションのコンテキストによってどのように決定されるのかについて説明します。
 author: kailiang
 ms.date: 10/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4b9b3e28b9435e9614b06d4fa2855b31d0e38b41
-ms.sourcegitcommit: 93cc9823016c9f2fd568ada0b670a52c8c3bfa33
+ms.openlocfilehash: 2773efaed9ee30ccb27b35f5aa00515ebba1c84a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "7864263"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985969"
 ---
 # <a name="tax-calculation-data-model"></a>税計算データ モデル
 
 このトピックでは、税計算トランザクションで税データ モデルのフィールド値がどのように決定されるかについて説明します。
 
-*税データ モデル* は、税計算に必要なフィールドで構成されています。 Microsoftは、Finance and Operations アプリのトランザクション ドキュメントのヘッダー フィールドと明細行フィールドを含む *税計算データ モデル* を提供します。 税計算データ モデルに定義されているフィールドは、税計算機能コンフィギュレーションの構成で適用ルール テーブルの使用可能な列です。
+*税データ モデル* は、税計算に必要なフィールドで構成されています。 Microsoft は、Finance and Operations アプリのトランザクション ドキュメントのヘッダー フィールドと明細行フィールドを含む *税計算データ モデル* を提供します。 税計算データ モデルに定義されているフィールドは、税計算機能コンフィギュレーションの構成で適用ルール テーブルの使用可能な列です。
 
 > [!NOTE] 
 > データ モデルに定義されている一部のノード、**レコード ID** や **テーブル ID** などは技術的な目的で使用されます。 税金計算機能構成では使用できない列です。

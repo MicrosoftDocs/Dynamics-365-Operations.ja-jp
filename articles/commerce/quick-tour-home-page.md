@@ -3,24 +3,23 @@ title: ホーム ページの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce のホーム ページの概要を示します。
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 49cf6dcbeff00d3918d2ab953da9d44957804ccaf95f0fdb3405c4e89934c365
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738026"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984497"
 ---
 # <a name="home-page-overview"></a>ホーム ページの概要
 

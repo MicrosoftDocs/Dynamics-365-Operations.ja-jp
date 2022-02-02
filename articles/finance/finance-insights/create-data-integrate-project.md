@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7841f8b31e0ac1a40dce9acaac747f5f378236e0
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 956524e3778eed9898374952466f70c37c99163f
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752667"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968940"
 ---
 # <a name="create-a-data-integration-project"></a>データ統合プロジェクトの作成
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、データ統合プロジェクトの作成方法について説明します。
 

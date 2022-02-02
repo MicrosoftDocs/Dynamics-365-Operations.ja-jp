@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25ae7074fcf39bf4408ea1fa0acfc334281bb254
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 443ebaa13d7ac29df66ffe77a2ed938e44a0c488
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675052"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968206"
 ---
 # <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>モデレーターによる評価とレビューの手動公開を有効にする
 
@@ -68,3 +68,17 @@ Commerce サイト ビルダーで評価とレビューを確認および公開�
 ## <a name="additional-resources"></a>追加リソース
 
 [評価とレビューの概要](ratings-reviews-overview.md)
+
+[評価とレビューを使用するためのオプト イン](opt-in-ratings-reviews.md)
+
+[評価とレビューの管理](manage-reviews.md)
+
+[評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
+
+[製品評価の同期](sync-product-ratings.md)
+
+[評価とレビューのインポートとエクスポート](import-export-reviews.md)
+
+[サービス間認証の構成](service-to-service-auth.md)
+
+[評価とレビューに関するよく寄せられる質問](ratings-reviews-faq.md)

@@ -3,7 +3,7 @@ title: 出荷プロセスの概要
 description: このトピックでは、在庫管理の出荷プロセスの概要を示します。
 author: yufeihuang
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
@@ -18,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 27043828b44cf532d0d8d5091324ba30f3f90cf8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 85012ada693a98652325a142ba4649a9a826b22b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578515"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982382"
 ---
 # <a name="outbound-process-overview"></a>出荷プロセスの概要
 

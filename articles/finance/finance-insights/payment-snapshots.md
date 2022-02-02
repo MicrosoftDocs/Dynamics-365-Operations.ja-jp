@@ -3,7 +3,7 @@ title: スナップショットの概要
 description: このトピックでは、スナップショット機能を使用して、分析のためのキャッシュフロー予測を保存したり、後で実績と比較したりできます。 キャッシュフロー予測を生成する場合は、その予測を "スナップショット" として保存できます。 その後、そのスナップショットを使用して、予測に含まれていた勘定を編集したり、スナップショットの予測を実績と比較することができます。
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a91300ac17b36d890840e6c0c3104fad5fce68f0
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: f9b6d44b7381817a40b86c17ee4eaf3dbfc46b67
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752760"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983520"
 ---
 # <a name="snapshots-overview"></a>スナップショットの概要
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 スナップショットを使用すると、組織は、その時点でのキャッシュ ポジションと現金予測に関する情報を編集および保存できます。 財務実績とスナップショットを比較し、差異をチェックして、その情報を使用して、キャッシュフロー予測を時間の経過とともに向上させることができます。 具体的には、スナップショットは次の方法で使用できます。
 

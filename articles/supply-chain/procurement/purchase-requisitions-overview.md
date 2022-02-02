@@ -3,7 +3,7 @@ title: 購買要求の概要
 description: このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。
 author: Henrikan
 ms.date: 11/02/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ef018319a2d6992c270aa7f898fd1c6d649ea43
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: acd0deebe79e29bd1beb32ea21cd179f5bf12c43
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569508"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982905"
 ---
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 

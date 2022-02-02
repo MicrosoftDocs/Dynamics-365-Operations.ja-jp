@@ -3,23 +3,22 @@ title: 製品収集モジュール
 description: このトピックでは、Microsoft Dynamics 365 Commerce の製品収集モジュールの概要を示します。
 author: v-chgri
 ms.date: 01/28/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2ea2cd8c168cef40099f611a25367b13247a331b95deea12ff63ca5dd15bc4df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763815"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984547"
 ---
 # <a name="product-collection-modules"></a>製品収集モジュール
 

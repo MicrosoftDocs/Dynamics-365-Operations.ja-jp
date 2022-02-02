@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d3642392ed2cf231f261b24428756c6e32a79f98
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c6356f7c085b93e3e3f292e72f813f823e924487
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674577"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968180"
 ---
 # <a name="ratings-and-reviews-faq"></a>評価とレビューに関するよく寄せられる質問
 
@@ -41,5 +41,17 @@ ms.locfileid: "7674577"
 [評価とレビューを使用するためのオプト イン](opt-in-ratings-reviews.md)
 
 [モデレーターによる評価とレビューの手動公開を有効にする](manual-publish-rating-reviews.md)
+
+[評価とレビューの管理](manage-reviews.md)
+
+[評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
+
+[製品評価の同期](sync-product-ratings.md)
+
+[モデレーターによる評価とレビューの手動公開を有効にする](manual-publish-rating-reviews.md)
+
+[評価とレビューのインポートとエクスポート](import-export-reviews.md)
+
+[サービス間認証の構成](service-to-service-auth.md)
 
 [評価とレビュー ソリューションが無効な場合に、評価絞り込み機能が検索結果やカテゴリ ページに表示される](troubleshoot/hide-ratings-refiner.md)

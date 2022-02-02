@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9fe8e9403ccbdc1e26620ae33c6a3866af06b23c
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: fd6715539693389f25800a40c0beffcdc1b0de72
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473432"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968006"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>評価とレビューを使用するためのオプト イン
 
@@ -58,7 +58,13 @@ Commerce Web サイトで評価とレビューのソリューションを使用�
 
 [Dynamics 365 Commerce の商品評価の同期](sync-product-ratings.md)
 
+[モデレーターによる評価とレビューの手動公開を有効にする](manual-publish-rating-reviews.md)
 
+[評価とレビューのインポートとエクスポート](import-export-reviews.md)
+
+[サービス間認証の構成](service-to-service-auth.md)
+
+[評価とレビューに関するよく寄せられる質問](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

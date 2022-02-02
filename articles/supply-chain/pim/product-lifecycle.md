@@ -3,25 +3,24 @@ title: 製品ライフサイクル状態の概要
 description: 製品ライフサイクルの状態は、リリースされた製品または製品バリアントのライフサイクルの状態を付記します。
 author: t-benebo
 ms.date: 01/06/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: ae9e8201caac259e9e8ddd618fe0220933e31658
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f71ce701adbe60b69b25e41810dda7adeec1d390
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578251"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983797"
 ---
 # <a name="product-lifecycle-state-overview"></a>製品ライフサイクル状態の概要
 

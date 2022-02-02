@@ -3,7 +3,7 @@ title: 倉庫のコンフィギュレーションの概要
 description: この記事は、倉庫をコンフィギュレーションする方法について説明します。 これには、倉庫レイアウトおよび倉庫プロセスを有効にする方法に関する情報が含まれます。
 author: perlynne
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 091eb23397ed8f8efb50db6acba956fc49ef5a044a7d5fcc9d1e3201a68d54fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755909"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983007"
 ---
 # <a name="warehouse-configuration-overview"></a>倉庫のコンフィギュレーションの概要
 

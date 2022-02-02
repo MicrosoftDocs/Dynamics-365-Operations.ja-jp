@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3ad610feccf88ac88475a463fd1f10f4336b9407
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 11882f641830f04acb4eb58fa631b5372c25e65b
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752715"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969051"
 ---
 # <a name="enable-budget-proposal"></a>予算案の有効化
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、財務インサイトの予算案機能を有効にする方法について説明します。
 

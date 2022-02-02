@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f460ab6ae90b5daa9bee3c2954727a7bcf79321d661f8ce88f5108fd019fbb3e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724583"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964607"
 ---
 # <a name="work-with-css-override-files"></a>CSS 上書きファイルの作業
 
@@ -100,8 +100,6 @@ CSS 上書きファイルを有効化するには、次の手順に従います�
 [スタイル プリセットを使用して作業する](style-presets.md)
 
 [ファビコンの追加](add-favicon.md)
-
-[ようこそメッセージの追加](add-welcome-message.md)
 
 [著作権に関する注意事項の追加](add-copyright-notice.md)
 

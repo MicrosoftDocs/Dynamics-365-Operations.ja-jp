@@ -3,23 +3,22 @@ title: クラウドを利用した検索の概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce でのクラウドを利用した検索の概要を示します。
 author: ashishmsft
 ms.date: 06/29/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c78af42313d83ebec5a56f83682f394c5e9d21f08851aaa0493563163d76046b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722033"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983672"
 ---
 # <a name="cloud-powered-search-overview"></a>クラウドを利用した検索の概要
 

@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0a2bd50ef11e92fb427a61a1e8624fcd7d15e163
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 6ea27f4e38697d517b1520176eb5dfeee651a598
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920177"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982153"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>無限能力を使用したスケジューリング
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: Preview until 1/14/2022 -->
 
 *計画最適化の無限能力のスケジューリング* 機能では、ルート情報に基づいたスケジューリングが導入されます。 この機能を使用すると、さまざまなルート設定に基づいてジョブをスケジュールできます。 計画最適化のスケジューリングは、頻繁に使用されるルート設定 (ルートの工程順序や、ルート運営リソースの要件など) を対象とします。
 
@@ -51,7 +49,9 @@ ms.locfileid: "7920177"
 - この機能の詳細については、[能力に基づくリソース選択とスケジュール設定](capability-based-scheduling.md)参照してください。
 
 > [!NOTE]
-> スキルや証明書の要件などの人事管理に関連する要件は、まだサポートされていません。
+>
+> - リソースやリソース グループが無限能力に設定されている場合、マスター プランではそれらを無限能力として考慮します。
+> - スキルや証明書の要件などの人事管理に関連する要件は、まだサポートされていません。
 
 また、この機能は、**段取り時間** および **実行時間** 運営プロパティもサポートします。 工順工程でこれらのプロパティを設定すると、スケジューリング プロセスによって適切な設定ジョブとプロセス ジョブが作成されます。
 

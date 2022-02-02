@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b0ccbd1781ccb5aa7f5f62ea86888e1673cb77653af57f6c49319a2b5089ebf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bfde8b40927ceaa216878d58ef72c5d91e9ebe01
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782446"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968799"
 ---
 # <a name="production-setup-requirements"></a>生産の設定の要件
 
@@ -39,7 +39,7 @@ ms.locfileid: "6782446"
 -   品目グループを定義します。
 -   品目グループの勘定科目を設定します。
 -   在庫管理で在庫品目テーブルを設定します。
--   部品表 (BOM) および BOM バージョンを在庫管理で作成します。
+-   Product 情報管理で部品表 (BOM) および BOM のバージョンを作成します。
 
 ## <a name="required-calendar-and-resource-setup"></a>必須のカレンダーおよびリソース設定
 生産コントロールを使用する前に、組織管理を開き、カレンダーと運営リソースの作成と定義を次の順序で行います。

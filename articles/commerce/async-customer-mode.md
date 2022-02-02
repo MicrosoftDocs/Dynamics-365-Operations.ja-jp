@@ -10,17 +10,16 @@ ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 22bb4eaf3d4897904412120fa5580c42637b56e0
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 43418b61778d187364d4d52a05178078a37623eb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913803"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984273"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>顧客作成モードを非同期化する
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の非同期顧客作成モードについて説明します。
 
@@ -29,7 +28,7 @@ Commerce には、同期と非同期の 2 つの顧客作成モードがあり�
 店舗の機能プロファイルで **顧客を非同期モードで作成** オプションが **はい** に設定されている場合 (**Retail と Commerce \> チャネル設定 \> オンライン ストアの設定 \> 機能プロファイル**)、チャネル データベースに顧客レコードを作成するためにリアルタイム サービス コールは使用されません。 非同期の顧客作成モードは、Commerce 本部のパフォーマンスには影響しません。 一時的なグローバル固有識別子 (GUID) は、すべての新しい同期顧客レコードに割り当てられ、顧客 ID として使用されます。 この GUID は、販売時点管理 (POS) ユーザーには示されません。 代わりに、これらのユーザーには、顧客 ID として **同期を保留中** と表示されます。
 
 > [!IMPORTANT]
-> POS がオフラインになると、非同期顧客作成モードが無効になっている場合でも、システムは自動的に顧客を非同期で作成します。 したがって、同期顧客または非同期顧客の作成の選択にかかわらず、Commerce 本社の管理者は、**P ジョブ**、**非同期モードから顧客とビジネス パートナーを同期する** ジョブ  (旧 **非同期モードから顧客とビジネス パートナーを同期する** ジョブ)、および **1010** ジョブに対して定期的なバッチ ジョブを作成しスケジュールする必要があります。これにより、非同期顧客は Commerce 本部で同期顧客に変換されます。
+> POS がオフラインになると、非同期顧客作成モードが無効になっている場合でも、システムは自動的に顧客を非同期で作成します。 したがって、同期顧客または非同期顧客の作成の選択にかかわらず、Commerce 本社の管理者は、**P ジョブ**、**非同期モードから顧客とビジネス パートナーを同期する** ジョブ (旧 **非同期モードから顧客とビジネス パートナーを同期する** ジョブ)、および **1010** ジョブに対して定期的なバッチ ジョブを作成しスケジュールする必要があります。これにより、非同期顧客は Commerce 本部で同期顧客に変換されます。
 
 ## <a name="async-customer-limitations"></a>非同期顧客の制限
 

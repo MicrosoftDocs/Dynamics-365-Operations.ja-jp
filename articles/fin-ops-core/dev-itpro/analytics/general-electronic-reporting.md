@@ -3,7 +3,7 @@ title: 電子申告 (ER) の概要
 description: このトピックでは、電子申告 (ER) ツールの概要について説明します。 重要な概念、サポートされているシナリオ、ソリューションの一部である形式について説明します。
 author: NickSelin
 ms.date: 11/02/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERWorkspace
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b772acd4a8d0849803cefa8fc14ae3dd6e18831
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 976a02f51e22c513b988e1ecfcb792d5f93a4b54
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867283"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986150"
 ---
 # <a name="electronic-reporting-er-overview"></a>電子申告 (ER) の概要
 
@@ -66,7 +66,7 @@ ER では、TEXT、XML、JSON、PDF、Microsoft Word、Microsoft Excel、OPENXML
 
 ER エンジンには次の機能があります :
 
-- 異なるドメインでの電子申告に使用する 1 つの共通ツールを表し、何らかの Finance and Operations の電子申告を行う、20 以上の異なるエンジンを置き換えます。
+- 異なるドメインでの電子申告のために使用する 1 つの共通ツールを表し、何らかの Finance and Operations の電子申告を行う、20 以上の異なるエンジンを置き換えます。
 - 現在の実装から隔離されたレポートの形式を作成します。 つまり、この形式はさまざまなバージョンに適用できます。
 - 元の形式に基づいたカスタム書式の作成をサポートします。 ローカリゼーション/カスタマイズの要件により元の形式が変更したときに、自動的にカスタマイズされた形式をアップグレードするための機能も含まれています。
 - Microsoft ならびに Microsoft パートナーの両方の電子申告におけるローカライズ要件をサポートするための主要標準ツールとなります。
@@ -143,7 +143,7 @@ ER レポジトリは ER コンフィギュレーションを格納します。 
 
 **LCS 共有ライブラリ** リポジトリは、Lifecycle Services (LCS) の共有資産ライブラリ内のコンフィギュレーションの一覧へのアクセスを提供します。 この ERリポジトリのタイプは、Microsoft プロバイダーに対してのみ登録できます。 LCS 共有アセット ライブラリから、ER コンフィギュレーションの最新バージョンを現在のインスタンスにインポートできます。
 
-**LCS プロジェクト** リポジトリでは、リポジトリの登録時に選択された特定の LCS プロジェクト (LCS プロジェクトのアセット ライブラリ) のコンフィギュレーションの一覧へのアクセス許可が提供されます。 ER で、現在のインスタンスから特定の **LCS プロジェクト** リポジトリへ共有コンフィギュレーションのアップロードが可能になります。 また、**LCS プロジェクト** リポジトリから Finance and Operations アプリの現在のインスタンスにコンフィギュレーションをインポートすることもできます。
+**LCS プロジェクト** リポジトリでは、リポジトリの登録時に選択された特定の LCS プロジェクト (LCS プロジェクトのアセット ライブラリ) のコンフィギュレーションの一覧へのアクセス許可が提供されます。 ER で、現在のインスタンスから特定の **LCS プロジェクト** リポジトリへ共有コンフィギュレーションのアップロードが可能になります。 また、設定を **LCS プロジェクト** リポジトリから Finance and Operations アプリの現在のインスタンスにインポートすることもできます。
 
 **ファイル システム** リポジトリは、AOS サービスをホストしているコンピュータのローカル ファイル システムの特定のフォルダーの xml ファイルとして配置されているコンフィギュレーションの一覧へのアクセスを提供します。 必要なフォルダがリポジトリ登録ステージで選択されます。 **ファイル システム** リポジトリから現在のインスタンスに構成をインポートすることもできます。 
 

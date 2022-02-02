@@ -3,23 +3,22 @@ title: 警告の概要 (ビデオを含む)
 description: このトピックでは、警告に関する一般情報を提供します。 警告を使用することで、作業日に追跡したいイベントに関する情報を常に受け取ることができます。
 author: RichdiMSFT
 ms.date: 09/04/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 857a837872abff44c8c7af5e938f7610fa61d94e
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: c3332bdf7f2edb693c95a4d5a6f95906e14c0a42
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937474"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984971"
 ---
 # <a name="alerts-overview"></a>警告の概要
 
@@ -78,13 +77,13 @@ ms.locfileid: "7937474"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-[警告を使用してフィルター処理されたデータを監視する方法](https://youtu.be/ZYKMcv6kl9s) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は YouTube でご覧いただけます。
+[警告を使用してフィルタ処理されたデータを監視する方法](https://youtu.be/ZYKMcv6kl9s) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は YouTube でご覧いただけます。
 
 ### <a name="alert-rule-options"></a>警告ルールオプション
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-[警告ルールオプション](https://youtu.be/cpzimwOjicM) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は YouTube でご覧いただけます。
+[警告ルールオプション](https://youtu.be/cpzimwOjicM) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は、YouTube でご覧いただけます。
 
 
 

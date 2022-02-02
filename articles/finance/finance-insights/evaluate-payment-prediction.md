@@ -1,5 +1,5 @@
 ---
-title: 初期の顧客支払予測モデルを評価する (プレビュー)
+title: 初期顧客支払予測モデルの評価
 description: このトピックでは、顧客支払予測モデルを理解し、その有効性を評価するために実行できる手順について説明します。
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f45392d540b6696d23261a6b2197c3185f5ede2b7c646f6b751480145dcacfdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768870"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969115"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>初期の顧客支払予測モデルを評価する (プレビュー)
+# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>初期顧客支払予測モデルの評価
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,13 +34,13 @@ Microsoft Dynamics 365 Finance の **財務インサイト パラメーター** 
 
 [![モデル精度の改善リンク。](./media/prediction-model.png)](./media/prediction-model.png)
 
-このリンクは、AI Builder へのリンクであり、現在のモデルについての詳細を確認したり、改善するための手順を実行することもできます。 次の図は、開いたページを示しています。
+このリンクは AI Builder へのリンクであり、現在のモデルについての詳細を確認したり、改善するための手順を実行することもできます。 次の図は、開いたページを示しています。
 
 [![AI Builder。](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 開いたページには、次の情報が表示されます:
 
-- **パフォーマンス** セクションでは、モデル パフォーマンスの等級は、モデルの品質に関する分析視点を提供します。 この等級の詳細については、AI Builder ドキュメントの [予測モデルのパフォーマンス](/ai-builder/prediction-performance) を参照してください。
+- **パフォーマンス** セクションでは、モデル パフォーマンスの等級は、モデルの品質に関する分析視点を提供します。 この等級の詳細については、 AI Builder ドキュメントの [予測モデルのパフォーマンス](/ai-builder/prediction-performance) を参照してください。
 - **最も影響力のあるデータ** セクションでは、モデルに対して異なる入力タイプのデータの重要性を示します。 このリストと対応する割合を評価して、情報がビジネスと市場に関する知識と一致しているかどうかを判断できます。
 
     [![予測モデルのパフォーマンスと最も影響力のあるデータ セクション。](./media/models.png)](./media/models.png)
@@ -51,7 +51,7 @@ Microsoft Dynamics 365 Finance の **財務インサイト パラメーター** 
 
 ## <a name="digging-deeper"></a>専門的な情報
 
-精度はモデルを評価するための良い出発点であり、パフォーマンスの等級は分析視点を提供しますが、AI Builder は評価に使用できるより詳細なメトリックを提供します。 詳細をダウンロードするには、**パフォーマンス** セクションで **モデルの使用** ボタンの横にある省略記号ボタン (**...**) ボタンを選択し、**詳細なメトリックをダウンロード** を選択します。
+正確性はモデルを評価するための良い出発点であり、パフォーマンス等級は分析視点を提供するものですが、AI Builder は評価に使用できるさらに詳細な指標を提供します。 詳細をダウンロードするには、**パフォーマンス** セクションで **モデルの使用** ボタンの横にある省略記号ボタン (**...**) ボタンを選択し、**詳細なメトリックをダウンロード** を選択します。
 
 [![詳細なメトリックスのダウンロード コマンド。](./media/performance.png)](./media/performance.png)
 
@@ -89,7 +89,7 @@ Microsoft Dynamics 365 Finance の **財務インサイト パラメーター** 
 
 ## <a name="improving-the-model"></a>モデルの改善
 
-最初のモデルの結果をよく理解した後、機能列を追加または削除したり、正確な予測をサポートしていないデータセットの一部をフィルタリングしたりすることにより、モデルを改善することができます。 AI Builder を閉じ、Dynamics 365 Finance での **モデルの改善** リンクを使用して、AI Builder プロセスを再起動します。 公開されたモデルに影響を与えずに、さまざまな特性を試すことができます。 公開されたモデルは、**公開** を選択した場合にのみ影響を受けます。 Dynamics 365 Finance のインスタンスには、1 つのモデルが使用されることに注意してください。 そのため、新しいモデルを公開する前に、そのモデルを慎重に確認する必要があります。
+最初のモデルの結果をよく理解した後、機能列を追加または削除したり、正確な予測をサポートしていないデータセットの一部をフィルタリングしたりすることにより、モデルを改善することができます。 AI Builder を閉じ、続いて Dynamics 365 Finance の **モデルの改善** のリンクを使って AI Builder のプロセスを再開します。 公開されたモデルに影響を与えずに、さまざまな特性を試すことができます。 公開されたモデルは、**公開** を選択した場合にのみ影響を受けます。 Dynamics 365 Finance のインスタンスには、1 つのモデルが使用されることに注意してください。 そのため、新しいモデルを公開する前に、そのモデルを慎重に確認する必要があります。
 
 ## <a name="for-more-information"></a>詳細情報
 

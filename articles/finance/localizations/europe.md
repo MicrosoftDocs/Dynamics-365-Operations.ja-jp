@@ -1,24 +1,23 @@
 ---
 title: 欧州の概要
 description: このトピックは、ヨーロッパの Microsoft Dynamics 365 Finance のドキュメント リソースへのリンクを提供します。
-author: ShylaThompson
-ms.date: 02/24/2021
-ms.topic: article
+author: kfend
+ms.date: 01/15/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.search.region: global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3c5e57bb115e27880c2fee888be4ab02c51462a
-ms.sourcegitcommit: 4946b7f250f8b5cd3d09098b08e74bc5763d1c86
+ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7792612"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982097"
 ---
 # <a name="europe-overview"></a>欧州の概要
 
@@ -94,6 +93,7 @@ ms.locfileid: "7792612"
   - [VAT 報告書の作成と送信](tasks/create-submit-vat-report.md)
   - [東ヨーロッパの決済のトランザクションの表示](emea-transactions-settlement-form.md)
   - [税ポイントの日付 (VAT レジスターの日付)](emea-tax-point-date.md)
+  - [仕入先 VAT 登録日](emea-date-vendor-VAT-register.md)
 - [財務理由機能の拡張機能](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>追加リソース

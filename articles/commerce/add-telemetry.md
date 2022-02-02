@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3916b18c797222c300957fb25cabad78c4fcb9744a29d611a81b0bda3e9834d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f796a3e10345da41ff461b656d88affb3adbdf9e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724607"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964532"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>サイト ページにスクリプト コードを追加してテレメトリをサポートする
 
@@ -61,7 +61,7 @@ Web Analytics は、顧客がサイトとどのように対話するかを理解
 1. **公開** を選択します。
 
 > [!NOTE]
-> サイトのコンテンツ セキュリティ ポリシー (CSP) が有効になっている場合は、すべての外部 URL が Commerce サイト ビルダーの **script-src** CSP ディレクティブに追加されていることを確認してください。 詳細については、[コンテンツ セキュリティ  ポリシー (CSP) の管理](manage-csp.md)を参照してください。
+> サイトのコンテンツ セキュリティ ポリシー (CSP) が有効になっている場合は、すべての外部 URL が Commerce サイト ビルダーの **script-src** CSP ディレクティブに追加されていることを確認してください。 詳細については、[コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md) を参照してください。
 
 ## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a>スクリプト コードを含むフラグメントをテンプレートに追加する
 
@@ -111,8 +111,6 @@ Web Analytics は、顧客がサイトとどのように対話するかを理解
 [CSS 上書きファイルの作業](css-override-files.md)
 
 [ファビコンの追加](add-favicon.md)
-
-[ようこそメッセージの追加](add-welcome-message.md)
 
 [著作権に関する注意事項の追加](add-copyright-notice.md)
 

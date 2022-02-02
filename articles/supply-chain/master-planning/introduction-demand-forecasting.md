@@ -3,7 +3,7 @@ title: 需要予測の概要
 description: 需要予測は、販売注文からの独立要求および顧客注文のすべての減結合ポイントで依存要求を予測する場合に使用されます。 拡張された需要予測の削減ルールは、大量のカスタマイズに理想的なソリューションを提供します。
 author: ChristianRytt
 ms.date: 07/07/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 980001dda67e96ab3f428ad60cb7951dd5de4d0c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 34a8cd4b17a5a75a5e817e6a1f982d75eefbb717
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571020"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983073"
 ---
 # <a name="demand-forecasting-overview"></a>需要予測の概要
 
@@ -56,7 +56,7 @@ ms.locfileid: "7571020"
 - **モジュール性** – 需要予測はモジュールおよびコンフィギュレーションが簡単にできます。 **販売** &gt; **在庫予測** &gt; **需要予測** で構成キーの機能をオン/オフに変更できます。
 - **Microsoft Stack の再利用** – Microsoft Cortana Analytics Suite の一部である Machine Learning を使用すると、アルゴリズム R または Python プログラミング言語、およびシンプルなドラッグ アンド ドロップ インターフェースを使用して、需要見積もりの試算などの予測分析実験をすばやく簡単に作成できます。
   - 需要予測実験をダウンロードし、業務要件に合わせて変更し、Azure の Web サービスとして公開し、需要予測の生成にそれらを使用することができます。 エンタープライズ レベルのユーザーとして、生産計画担当者向けに Supply Chain Management サブスクリプションを購入した場合は、この実験をダウンロードできます。
-  - [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) から現在有効な需要予測実験をダウンロードできます。 需要予測実験は Supply Chain Management と自動的に統合されるので、顧客およびパートナーは [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) からダウンロードした実験の統合を処理する必要があります。 したがって、[Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) の実験が Finance and Operations の需要予測実験として使用できるわけではありません。 Finance and Operations アプリケーション プログラミング インターフェイス (API) を使用するための実験コードを変更する必要があります。
+  - [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) から現在有効な需要予測実験をダウンロードできます。 需要予測実験は Supply Chain Management と自動的に統合されるので、顧客およびパートナーは [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) からダウンロードした実験の統合を処理する必要があります。 したがって、[Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) の実験は Finance and Operations の需要予測実験として使用できるほど単純ではありません。 Finance and Operations アプリケーション プログラム インターフェイス (API) を使用するように experiments のコードを修正する必要があります。
   - Microsoft Azure Machine Learning Studio (クラシック) で独自の実験を作成し、Azure のサービスとして発行、そして需要予測の生成に使用することができます。
   - 高パフォーマンスが必要でない場合、または大量のデータの処理が要求されていない場合に、Machine Learning 無料レベルを使用できます。 特に実装およびテスト フェーズの際には、このレベルから常に開始することをお勧めします。 高パフォーマンスと追加のストレージが必要な場合、Machine Learning 標準レベルを使用できます。 この層には、Azure のサブスクリプションが要求され、追加費用が含まれます。 Machine Learning 価格設定の詳細については、[Machine Learning Studio の価格](https://aka.ms/machine-learning-price-info)を参照ください。
 - **減結合ポイントの予測下方修正** - すべての減結合ポイントで依存要求と独立要求の両方を予測するこの機能で、ビルドでの需要予測を作成します。

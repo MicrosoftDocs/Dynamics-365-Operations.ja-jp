@@ -2,7 +2,7 @@
 title: 小売店舗トランザクション用トリクル フィードベースの注文作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce の店舗トランザクションに対するトリクル フィードベースの注文作成について説明します。
 author: analpert
-ms.date: 12/14/2021
+ms.date: 01/11/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a7fd8698d7123403cf9092a4a4bf810595d795b
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: 67b66cd4bf2a77f3ab7f33f691156e38cc13770a
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921248"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964632"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>小売店舗トランザクション用トリクル フィードベースの注文作成
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 Commerce バージョン 10.0.5 以降では、すべての明細書転記プロセスを、トリクル フィードベースの明細書転記プロセスに移行することをお勧めします。 パフォーマンスとビジネス上の大きな利点は、トリクル フィード機能の使用と関連します。 販売トランザクションは、1 日を通して処理されます。 支払/入金および現金管理トランザクションは、その日の終わりに財務諸表で処理されます。 トリクル フィード機能により、販売注文、請求書、および支払を継続的に処理できます。 そのため、在庫、売上、および支払をリアルタイムに更新して認識できます。
+Microsoft Dynamics 365 Commerce バージョン 10.0.5 以降では、すべての明細書転記プロセスを、トリクル フィードベースの明細書転記プロセスに移行することをお勧めします。 パフォーマンスとビジネス上の大きな利点は、トリクル フィード機能の使用と関連します。 販売トランザクションは、1 日を通して処理されます。 支払/入金および現金管理トランザクションは、その日の終わりに財務諸表で処理されます。 トリクル フィード機能により、販売注文、請求書、および支払を継続的に処理できます。 そのため、在庫、収益、および支払はリアルタイムに更新および認識されます。
 
 ## <a name="use-trickle-feed-based-posting"></a>トリクル フィードベースの転記を使用する
 
@@ -47,6 +47,10 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.5 以降では、すべて�
 ### <a name="financial-statements"></a>財務諸表
 
 財務諸表の処理は、営業終了プロセスを目的とします。 このタイプの明細書処理は、**シフト** の決算算出方法のみをサポートし、決算済シフトのみを取得します。 明細書は財務調整に限定されます。 支払/入金の算定金額とトランザクション金額の差額が記載された仕訳帳と、他の現金管理トランザクションの仕訳帳のみが作成されます。
+
+財務諸表では、次のトランザクションのレビューも有効にできます: 支払/入金申告トランザクション、支払トランザクション、銀行支払/入金トランザクション、および金庫保管支払/入金トランザクション。 支払/入金の詳細ページは、財務諸表が選択されている場合にのみ表示されます。
+
+![財務諸表が選択されている場合にのみ表示される、転記済明細書フォームの支払/入金詳細セクションを示す画像。](./media/Trickle-feed-posted-statements-transaction-view.png)
 
 想定されるその日の終わりに基づいて、次の財務諸表ジョブの開始時刻と終了時刻をスケジュールします。
 

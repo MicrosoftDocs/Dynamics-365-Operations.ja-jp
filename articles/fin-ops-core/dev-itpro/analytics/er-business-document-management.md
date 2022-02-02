@@ -3,24 +3,23 @@ title: ビジネス ドキュメント管理の概要
 description: このトピックでは、ER フレームワークのビジネス ドキュメント管理機能を使用する方法について説明します。
 author: NickSelin
 ms.date: 04/23/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b59f535e01de2ae30e6bbeb6d5ab97a415df6043233694d4feb1c48140a110f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753079"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986254"
 ---
 # <a name="business-document-management-overview"></a>ビジネス ドキュメント管理の概要
 
@@ -159,7 +158,7 @@ ER コンフィギュレーションのインポートの詳細については�
 選択したドキュメント タイプは会社固有であり、選択したドキュメント タイプがコンフィギュレーションされている会社のビジネス ドキュメント管理をユーザーが使用する場合に使用されます。 ユーザーがもう一つの会社のビジネス ドキュメント管理を使用している際、この会社にコンフィギュレーションされていない場合は、選択された同じドキュメント タイプが使われます。 ドキュメント タイプが構成されている際、**SharePoint ドキュメント** タイプ フィールドで選択されたものの代わりに使用されます。
 
 > [!NOTE]
-> **SharePoint ドキュメント タイプ** のパラメーターにより、SharePoint フォルダーを、Microsoft Excel または Word を使用して編集可能なテンプレートの一時的な保管場所として定義します。 テンプレートを編集するためにこれらの Office デスクトップ アプリケーションを使用する計画の場合、このパラメーターを設定する必要があります。 詳細については、[Office デスクトップ アプリケーションのテンプレートの編集](#EditInOfficeDesktopApp) を参照してください。 Microsoft 365 の機能のみを使用してテンプレートを変更する予定の場合、このパラメーターを空白のままにしておくことができます。 詳細については、[Microsoft 365 でテンプレートを編集](#EditInOffice365) を参照してください。
+> **SharePoint ドキュメント タイプ** のパラメーターにより、SharePoint フォルダーを、Microsoft Excel または Word を使用して編集可能なテンプレートの一時的な保管場所として定義します。 テンプレートを編集するためにこれらの Office デスクトップ アプリケーションを使用する計画の場合、このパラメーターを設定する必要があります。 詳細については、[Office デスクトップ アプリケーションのテンプレートの編集](#EditInOfficeDesktopApp) を参照してください。 Microsoft 365 の機能のみを使用してテンプレートを変更する予定の場合、このパラメーターを空白のままにしておくことができます。 詳細については、[Microsoft 365 のテンプレートの作成](#EditInOffice365) を参照してください。
 
 ## <a name="configure-access-permissions"></a>アクセス許可のコンフィギュレーション
 
@@ -404,11 +403,11 @@ Microsoft 365 を使用してテンプレートを変更できます。 たと�
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="i-selected-edit-document-but-instead-of-going-to-the-bdm-template-editor-page-in-finance-i-was-sent-to-the-microsoft-365-webpage"></a>ドキュメントの編集を選択しましたが、Finance の BDM テンプレート エディター ページに移動する代わりに、Microsoft 365 の Web ページに移動しました。
+### <a name="i-selected-edit-document-but-instead-of-going-to-the-bdm-template-editor-page-in-finance-i-was-sent-to-the-microsoft-365-webpage"></a>ドキュメントの編集を選択しましたが、Finance の BDM テンプレート編集ページではなく、Microsoft 365 の Web ページに移動しました。
 
-この問題は、Microsoft 365 リダイレクトに関する既知の問題です。 初めて Microsoft 365 にサインインしたときに発生します。 この問題を回避するには、ブラウザーで **戻る** を選択して前のページに戻ります。
+この問題は、Microsoft 365 リダイレクトを伴う既知の問題です。 これは、初めて Microsoft 365 にサインインしたときに発生します。 この問題を回避するには、ブラウザーで **戻る** を選択して前のページに戻ります。
 
-### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>最初のアプリケーション セッションで Microsoft 365 を使用してテンプレートを編集する方法と、2 番目のアプリケーション セッションでテンプレートを使用してテンプレートを調整し、変更が生成されたビジネス ドキュメントに与える影響を確認する方法について理解しています。 Office デスクトップ アプリケーションを同じ方法で使用できますか?
+### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>最初の申請セッションで Microsoft 365 を使用してテンプレートを編集する方法と、2 番目の申請セッションでテンプレートを使用し、自分の変更が生成されたビジネス文書にどのような影響を与えるかを確認するためにテンプレートを調整する方法を確認します。 Office デスクトップ アプリケーションを同じ方法で使用できますか?
 
 はい、できます。 最初のアプリケーション セッションで、**デスクトップ アプリケーションを開く** を選択します。 テンプレートは一時ファイル保管場所に保存され、Office デスクトップ アプリケーションで開かれます。 次に、生成されたビジネス ドキュメントのテンプレートの変更をプレビューするために、次の手順を実行します。
 

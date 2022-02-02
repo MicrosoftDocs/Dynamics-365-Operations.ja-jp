@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7857920a04faaebaee44d5485f7b2ffc2e675f59e7c9dc15b2b86376207e3a2d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772133"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964856"
 ---
 # <a name="work-with-style-presets"></a>スタイル プリセットの作業
 
@@ -115,8 +115,6 @@ ms.locfileid: "6772133"
 [CSS 上書きファイルの作業](css-override-files.md)
 
 [ファビコンの追加](add-favicon.md)
-
-[ようこそメッセージの追加](add-welcome-message.md)
 
 [著作権に関する注意事項の追加](add-copyright-notice.md)
 

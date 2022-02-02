@@ -3,7 +3,7 @@ title: 見積依頼 (RFQ) の概要
 description: このトピックでは、見積依頼 (RFQs) の概要を説明します。 組織は、購入する必要がある品目やサービスに対して、いくつかの仕入先を競合させてより良い条件を得ようとする場合に RFQs を発行します。
 author: Henrikan
 ms.date: 10/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9965e906bdbbf93cdced66b8b39b85a47c62b080
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7338897feb2c3a28350d366f26eecc56f8eeb3fb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569484"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983395"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>見積依頼 (RFQ) の概要
 

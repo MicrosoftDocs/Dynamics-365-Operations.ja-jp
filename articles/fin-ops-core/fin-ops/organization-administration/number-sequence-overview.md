@@ -3,7 +3,7 @@ title: 番号順序の概要
 description: 番号順序は、ID が必要なマスター データ レコードおよびトランザクション レコードに対して読みやすい固有の ID を生成するために使用されます。
 author: SunilGarg
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d65eb3824cfa158e6b382ee7bae2c86aab9396b
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 48e395cc3e3ccd0f93ab9523add455ef16f612ba
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778332"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985684"
 ---
 # <a name="number-sequences-overview"></a>番号順序の概要
 

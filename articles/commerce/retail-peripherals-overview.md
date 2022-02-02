@@ -3,7 +3,7 @@ title: 周辺機器
 description: このトピックでは、コマース周辺機器に関連する概念を説明します。
 author: BrianShook
 ms.date: 02/06/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dbf78eec6c1b25056342f9709f3b047a8bb822ff
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: ec991f34fcaa1a71a7e7aa3d1eaac4c6988acfa7
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779849"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986229"
 ---
 # <a name="peripherals"></a>周辺機器
 
@@ -519,7 +519,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 5.  店舗に新しいハードウェア プロファイルを同期させるため、**1090** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 6.  店舗に新しいハードウェア ステーションを同期させるため、**1040** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 7.  ハードウェア ステーションをインストールします。 ハードウェア ステーションをインストールする方法の詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
-8.  Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、[Retail Modern POS (MPOS) のコンフィギュレーション、インストールおよび有効化](retail-modern-pos-device-activation.md)を参照してください。
+8.  Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、[Modern POS (MPOS) のコンフィギュレーション、インストールおよび有効化](retail-modern-pos-device-activation.md)を参照してください。
 9.  Modern POS にサイン インするには、**非ドロワー操作の実行** を選択します。
 10. **ハードウェア ステーションの管理** 操作を開始します。
 11. **管理** をクリックします。
@@ -547,7 +547,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 6.  店舗に新しいハードウェア プロファイルを同期させるため、**1090** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 7.  店舗に新しいハードウェア ステーションを同期させるため、**1040** 配分スケジュールを選択します。 POS に変更を同期させるため、**今すぐ実行** をクリックします。
 8.  手順 2 と 3 で設定したハードウェア ステーションを、各ホスト コンピューターにインストールします。 ハードウェア ステーションをインストールする方法の詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
-9.  Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、[Retail Modern POS (MPOS) のコンフィギュレーション、インストールおよび有効化](retail-modern-pos-device-activation.md)を参照してください。
+9.  Modern POS をインストールして有効化します。 Modern POS をインストールする方法の詳細については、[Modern POS (MPOS) のコンフィギュレーション、インストールおよび有効化](retail-modern-pos-device-activation.md)を参照してください。
 10. Modern POS にサイン インするには、**非ドロワー操作の実行** を選択します。
 11. **ハードウェア ステーションの管理** 操作を開始します。
 

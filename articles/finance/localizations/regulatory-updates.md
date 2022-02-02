@@ -2,22 +2,22 @@
 title: 規制の更新
 description: このトピックでは、Microsoft Dynamics 365 Finance の計画されたおよびリリース済みの規制の更新の一覧を提供します。
 author: VStamberg
-ms.date: 07/15/2021
+ms.date: 01/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 16d4b9b31f213218fa5eb79c9808e5139db2dbd2239e7bb29c62af15aa372a9f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f4c9d82d882771c2b7131169615504613836def9
+ms.sourcegitcommit: 68655c5673aef9892063e5913ffee6bfc3817387
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772748"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "8016103"
 ---
 # <a name="regulatory-updates"></a>規制の更新
 
@@ -25,7 +25,7 @@ ms.locfileid: "6772748"
 
 このトピックでは、Dynamics 365 Finance でサポートされるローカライズで計画およびリリースされている規制の更新を一覧表示します。 配送の時間帯は変更される可能性があり、プロジェクト機能も異なるものになるか、またはリリースされない可能性があります。 詳細については、[マイクロソフト ポリシー](https://go.microsoft.com/fwlink/p/?linkid=2007332) をご覧ください。 
 
-規制の更新は、新規または変更された国固有の法律をサポートするために実装されている機能です。 計画およびリリースされている国固有の機能に関する追加情報ついては、[Dynamics 365 および Power Platform リリース計画](/business-applications-release-notes/index) を参照してください。
+規制の更新は、新規または変更された国固有の法律をサポートするために実装されている機能です。 計画およびリリースされている国固有の機能に関する詳細ついては、[Dynamics 365 および Power Platform リリース計画](/business-applications-release-notes/index) を参照してください。
 
 Microsoft は、新しい規制要件をできるだけ早く実装するよう努めています。 実際の納期日は、法律の発表日、地方自治体からの要件詳細の使用可能性、検証ツールの使用可能性、および変更の規模と複雑度によって異なります。
 
@@ -71,7 +71,7 @@ Microsoft は、新しい規制要件をできるだけ早く実装するよう�
 
 
 ## <a name="additional-resources"></a>追加リソース
-- [Lifecycle Service - 問題検索](https://lcs.dynamics.com/Logon/Index) (サイン イン必須) ですべての計画されたおよびリリース済みの規制の更新を検索します。
+- 計画済およびリリース済の国固有の規制に関する更新の詳細については、[国固有の規制に関する更新の検索](search-for-regulatory-updates.md) を参照してください。 (サインインが必要です。)
 - サポートされているローカライズの一覧は、[国際可用性ガイド](https://aka.ms/dynamics_365_international_availability_deck) を参照してください。
 
 

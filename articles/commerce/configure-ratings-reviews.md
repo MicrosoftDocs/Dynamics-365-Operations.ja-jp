@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7ac91dd1d3dfffbf98733bbd8fe8beda538250da
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473552"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968105"
 ---
 # <a name="configure-ratings-and-reviews"></a>評価とレビューのコンフィギュレーション
 
@@ -87,9 +87,17 @@ E コマース ウェブ サイトの評価およびレビューでは、それ�
 
 [評価とレビューの管理](manage-reviews.md)
 
-[製品詳細ページに評価とレビュー モジュールをコンフィギュレーション](ratings-reviews-modules.md)
-
 [Dynamics 365 Retail の商品評価の同期](sync-product-ratings.md)
+
+[モデレーターによる評価とレビューの手動公開を有効にする](manual-publish-rating-reviews.md)
+
+[評価とレビューのインポートとエクスポート](import-export-reviews.md)
+
+[サービス間認証の構成](service-to-service-auth.md)
+
+[評価とレビューに関するよく寄せられる質問](ratings-reviews-faq.md)
+
+[評価およびレビュー モジュール](ratings-reviews-modules.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

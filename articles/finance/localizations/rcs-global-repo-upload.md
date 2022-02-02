@@ -2,7 +2,7 @@
 title: RCS で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
 description: このトピックでは、Microsoft Regulatory Configuration Service (RCS) の電子レポート (ER) の構成を作成する方法と、グローバル レポジトリにアップロードする方法ついて説明します。
 author: JaneA07
-ms.date: 09/21/2020
+ms.date: 01/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b8be53c415d3b0c0fd057bb0d9c51b391d1c0c7471610c861909344059803441
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb04362d6d7261af56d2940b085fbc8d43c9d662
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727224"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965092"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Regulatory Configuration Services (RCS) で ER の構成を作成し、グローバル リポジトリにアップロードする
 
@@ -32,24 +32,29 @@ Microsoft Regulatory Configuration Service (RCS) を使用して電子レポー�
 
 この手順を完了する前に、まず以下の手順を完了する必要があります:
 
-- RCS インスタンスへのアクセス権。
-- 有効な構成プロバイダーを作成する。 詳細については、[構成プロバイダーを作成して、有効としてマークする](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) を参照してください。
+- 組織の RCS環境 にアクセスできます。
+- 有効な構成プロバイダーを作成し、アクティブにします。 詳細については、[構成プロバイダーを作成して、有効としてマークする](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) を参照してください。
 
-また、RCS 環境がプロビジョニングされていることを確認しておく必要があります。
+また、組織用に RCS 環境がプロビジョニングされていることを確認する必要があります。 組織用に RCS インスタンスがプロビジョニングされていない場合は、次の手順で行うことができます:
 
-1. Finance and Operations アプリで、**組織管理** \> **ワークスペース** \> **電子レポート** に移動します。
-2. RCS 環境がご利用の会社にプロビジョニングされていない場合は、**Regulatory services – 外部の構成** を選択し、続いてプロビジョニングの指示に従います。
+1. Finance and Operations アプリで、**組織管理** \> **ワークスペース** \> **電子レポート** の順に移動します。
+2. **関連リンク / 外部リンク** で、**Regulatory services - 構成** を選択し、指示に従って **サインアップ** してプロビジョニングします。
 
-RCS 環境が既にプロビジョニングされている場合は、[サインイン] オプションを選択して、ページの URL を使用してこの機能にアクセスします。
+RCS 環境が既に組織用にプロビジョニングされている場合は、ページの URL を使用してアクセスし、**サインイン** オプションを選択します。
 
 ## <a name="create-a-derived-version-of-a-configuration-in-rcs"></a>RCS で構成の派生バージョンを作成する
 
-1. **電子レポート** ワークスペースで、ご利用の組織に対して有効な構成プロバイダーがあることを確認します。 
-2. **コンフィギュレーションをレポートする** を選択します。
-3. 新しいバージョンを派生させる構成を選択します。 ツリーの上にあるフィルターフィールドを使用して検索を絞り込むことができます。
-4. **構成の作成** \> **名前から派生する** を選択します。
-5. 名前と説明を入力し、**構成の作成** を選択して、新たな派生バージョンを作成します。
-6. 新たに派生した構成を選択し、バージョンの説明を追加して、**OK** を選択します。 構成先のステータスが **完了** に変更されます。
+> [!NOTE]
+> RCS を初めて使用する場合は、派生させるために使用できる構成はありません。 グローバル リポジトリから構成をインポートする必要があります。 詳細については、[ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md)を参照してください。
+
+1. RCS に **サインイン** し、**電子レポート** ワークスペースを選択します。
+2. 組織用の有効な構成プロバイダーがアクティブに設定されていることを確認します (前提条件を参照)。 
+3. **コンフィギュレーションをレポートする** を選択します。
+4. 新しいバージョンを派生させる構成を選択します。 ツリーの上にあるフィルターフィールドを使用して検索を絞り込むことができます。
+5. **構成の作成** \> **名前から派生する** を選択します。
+6. 名前と説明を入力し、**構成の作成** を選択して、'ドラフト' ステータスの新たな派生バージョンを作成します。
+7. 新しく派生した構成を選択し、必要に応じて構成形式をさらに変更します。 
+8. 変更が完了したら、構成の **ステータスの変更** を **完了** に設定して、リポジトリに公開できるようにする必要があります。  **OK** を選択します。
 
 ![RCS における新たな構成のバージョン。](media/RCS_CompleteConfig.JPG)
 
@@ -58,7 +63,7 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 
 ## <a name="upload-a-configuration-to-the-global-repository"></a>グローバル リポジトリに構成をアップロードする
 
-新たな構成や派生した構成を組織と共有するには、グローバル リポジトリにアップロードします。
+新規または派生した構成を組織と共有するには、次の手順に従ってグローバル リポジトリにアップロードします:
 
 1. 構成の完成バージョンを選択し、**リポジトリにアップロード** を選択します。
 2. **グローバル (Microsoft)** オプションを選択し、**アップロード** を選択します。
@@ -66,14 +71,16 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
     ![リポジトリ オプションへのアップロード。](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. 確認のメッセージ ボックスで、**はい** を選択します。 
-4. 必要に応じてバージョンの説明を更新し、**OK** を選択します。 
+4. 必要に応じてバージョンの説明を更新し、**OK** を選択します。 必要に応じて、接続されているアプリケーションまたは GIT リポジトリにバージョンをアップロードすることもできます。  
 
-構成のステータスが **共有** に更新され、構成がグローバル リポジトリにアップロードされます。 そこからは、次の方法で作業することができます:
+構成のステータスが **共有** に更新され、構成がグローバル リポジトリにアップロードされます。 アップロードした構成のドラフト バージョンも作成され、後続の変更が必要な場合に使用できます。
+
+グローバル リポジトリに構成をアップロードした後、次の方法でその構成を使用できます:
 
 - Dynamics 365 のインスタンスにインポートします。 詳細については、[(ER) RCS から構成をインポートする](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) を参照してください。
 - サード パーティや外部の組織と共有する場合は、[RCS 電子レポート (ER) の構成を外部組織と共有する](rcs-global-repo-share-configuration.md)を参照してください
 
-    ![グローバル リポジトリのイントラスタット Contoso の構成バージョンが派生されました。](media/RCS_Config_upload_GlobalRepo.JPG)
+    ![グローバル リポジトリの イントラスタット Contoso の構成バージョンが派生されました。](media/RCS_Config_upload_GlobalRepo.JPG)
 
 ## <a name="delete-a-configuration-from-the-global-repository"></a>グローバル リポジトリから構成を削除する
 組織で作成した構成を削除するには、次の手順を実行します。

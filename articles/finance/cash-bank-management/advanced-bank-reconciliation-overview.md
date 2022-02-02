@@ -3,7 +3,7 @@ title: 詳細な口座調整の概要
 description: この記事は、高度な口座調整プロセスのフローについて説明します。 高度な口座調整機能では、銀行トランザクション内で自動的に調整できる口座取引明細書をインポートできます。
 author: panolte
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankReconciliationMatchRule
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 233e6b793df690297658e00dc3d821a196f75638962979205c7491a8df371ba4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5ebddf6c77df227f896e6f275f741ea69fb68474
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751353"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983595"
 ---
 # <a name="advanced-bank-reconciliation-overview"></a>詳細な口座調整の概要
 

@@ -2,25 +2,25 @@
 title: 指標金利にリンクされたリース支払の再評価
 description: このトピックでは、指標金利の変更によって変動リース支払が変更された場合に、使用権 (ROU) 資産に対するリース負債の調整について説明します。
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b3eed28ba6fc5af02c1bbf430cc9779426084f0eaf4e027141bbdd18a70dde4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734589"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968059"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>指標金利にリンクされたリース支払の再評価
 
@@ -43,7 +43,7 @@ ms.locfileid: "6734589"
 4. バックグラウンド処理に含めるリースを選択するフィルターを選択してから **OK** を選択します。
 
     **指標金利の再評価プレビュー** ダイアログ ボックスが表示され、再評価されるリースが表示されます。 また、資産および負債の調整、または変動支払の調整も表示されます。
-    
+
 5. リースが再評価されないようにするには、再評価の **必要がある** リースを選択します。 リースを選択しない場合は、すべてのリースが再評価されます。 完了後は、**OK** を選択して、リース支払を再評価します。
 6. 特定の指標の再評価プロセスに対して作成されたトランザクションを表示するには、プロセス ID を選択してから **トランザクション** を選択します。
 
@@ -66,5 +66,7 @@ IFRS 16 リースに対するリース再評価プロセスの影響を表示す
 
 この仕訳入力は、調整済みの仕訳入力を、指標の再評価に関連するリース支払変更勘定に自動転記しています。
 
+> [!NOTE]
+> **リースの詳細** ページの **全般** クイックタブで **支払金額の内訳** オプションが有効で、関連する帳簿が IFRS 16 である場合、指標再評価プロセスによって、**支払金額の内訳** ダイアログ ボックスにレコードが自動的に追加されます。 この金額には、指数の再評価による支払に対して行われた変更を反映します。 レコードは、**IRFS 16 指標再評価で使用済** としてマークされます。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 0606118007c01fc21c2c61d2128a7ec014617fcc
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752787"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968915"
 ---
 # <a name="use-customer-payment-predictions"></a>顧客支払予測の使用
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、顧客支払予測の使用方法について説明します。 この機能を使用する前に、そのためのセットアップ手順が完了していることを確認してください。 詳細については、[顧客支払予測の有効化](enable-cust-paymnt-prediction.md)を参照してください。
 
@@ -89,7 +88,7 @@ ms.locfileid: "7752787"
 
 [![支払予測の正確性。](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
-精度に満足していない場合は、**モデル精度の改善** リンクを選択して、AI Builder の拡張エクスペリエンスを開きます。 AI Builder の拡張エクスペリエンスでは、支払確度を正確に予測するために最も重要と思われるフィールドを選択するまで、選択したフィールドを選択またはキャンセルすることができます。 完了したら、予測モデルを簡単に再トレーニングして、変更を公開できます。 新しくトレーニングした予測モデルは、Dynamics 365 Finance で予測のために自動的に選択されます。
+精度に満足していない場合は、**モデル精度の改善** リンクを選択して、AI Builder 拡張エクスペリエンスを開きます。 AI Builder 拡張エクスペリエンスでは、支払確度を正確に予測するために最も重要と思われるフィールドを選択するまで、選択したフィールドを選択またはキャンセルすることができます。 完了したら、予測モデルを簡単に再トレーニングして、変更を公開できます。 新しくトレーニングした予測モデルは、Dynamics 365 Finance で予測のために自動的に選択されます。
 
 [![AI Builder 拡張エクスペリエンス。](./media/ai-builder.png)](./media/ai-builder.png)
 

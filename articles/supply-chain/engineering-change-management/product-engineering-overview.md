@@ -2,23 +2,22 @@
 title: エンジニアリング変更管理の概要 (動画を含む)
 description: このトピックでは、製品のバージョン管理の計画と管理を支援し、製品のライフサイクルとエンジニアリング変更を管理するエンジニアリング変更管理の概要を説明します。
 author: t-benebo
-ms.date: 08/26/2021
-ms.topic: article
+ms.date: 01/11/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 8c200796d587d77c0f4d2344524a890ba964ab39
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952601"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985215"
 ---
 # <a name="engineering-change-management-overview"></a>エンジニアリング変更管理の概要
 
@@ -39,9 +38,9 @@ ms.locfileid: "7952601"
 - ワークフローでサポートされているエンジニアリング変更要求
 - ワークフローでサポートされているエンジニアリング変更指示
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-前のビデオ ([Dynamics 365 Supply Chain Management の変更管理機能](https://youtu.be/N313FqvRuBc)) は、YouTube で利用可能な [Finance and Operations 再生リスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)に含まれています。
+前のビデオ ([Dynamics 365 Supply Chain Management の管理機能の変更](https://youtu.be/N313FqvRuBc)) は、YouTube で利用可能な  [Finance and Operations のプレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>システムのエンジニアリング変更管理機能を有効にする
 
@@ -71,7 +70,9 @@ ms.locfileid: "7952601"
 
 1. バージョン分析コードも使用する場合は、**製品分析コード - バージョン** チェック ボックスを選択します。 (このチェック ボックスは一覧の下の方にあり、**エンジニアリング変更管理** ノードの下に入れ子になっていません。)
 1. [メンテナンス モード](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、メンテナンス モードをオフにします。
-1. データベース同期を実行して、コンフィギュレーション キーが正しく有効化されていることを確認します。
+1. データベースは、同期され、構成キーが正しく有効化されている必要があります。 作業する環境のタイプに応じて、次のいずれかの手順を実行します。
+    - **レベル 1 (開発) 環境の場合**: Microsoft Visual Studio でプロジェクトを開き、その後 **Dynamics 365 \> データベースの同期 \> 同期** を選択します。
+    - **レベル 2 (およびそれ以上) 環境の場合**: 環境をメンテナンス モードに入れた後、データベースは自動的に同期し、この手順を省略できます。
 
 > [!IMPORTANT]
 > 2022 年 4 月から、**エンジニアリング変更管理** および **製品分析コード - バージョン** の両方のライセンス キーがすべての新規インストールで既定で有効になりますが、必要に応じて無効にすることもできます。

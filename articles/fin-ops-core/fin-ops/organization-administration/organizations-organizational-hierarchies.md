@@ -2,8 +2,8 @@
 title: 組織と組織階層の概要
 description: 組織階層とは、業務を構成する組織の関係を表すものです。
 author: sericks007
-ms.date: 11/10/2021
-ms.topic: article
+ms.date: 01/03/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798349"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992082"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>組織と組織階層の概要
 
@@ -54,7 +54,7 @@ ms.locfileid: "7798349"
 | 事業単位       | 戦略的なビジネス目標達成のために作成された半自治の事業単位。 | 法人とは別に、組織が係わる業界または製品ラインに基づいた財務報告に使用します。 |
 | バリュー ストリーム        | 一つ以上の生産フローを制御する作業単位。 | 消費者に製品やサービスを提供するために必要な活動およびフローを管理するリーン生産に一般的に使用します。 |
 | 部門          | 販売や会計など、特定のタスクを実行する組織のカテゴリまたは機能パーツを表す作業単位。 | 機能分野の報告に使用します。 部門は損益の職責を担っており、複数のコスト センターで構成される場合があります。 |
-| Commerce チャネル      | 従来型の店舗、オンライン ストア、またはオンライン マーケットプレースを表す作業単位。 | 法人内または法人全体の 1 つ以上の店舗の管理と運用管理に使用されます。 |
+| 小売チャンネル      | 従来型の店舗、オンライン ストア、またはコール センターを表す作業単位。 | 法人内または法人全体の 1 つ以上の店舗の管理と運用管理に使用されます。 |
 
 ### <a name="teams"></a>チーム
 

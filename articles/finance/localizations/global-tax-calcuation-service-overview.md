@@ -3,24 +3,23 @@ title: 税の計算の概要
 description: このトピックでは、税計算機能の全体的な範囲と機能について説明します。
 author: wangchen
 ms.date: 11/17/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 28b14eba7dd870e80a83f8d31671525b593a09c9
-ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
+ms.openlocfilehash: b5f9f41bdadc76064aa9aee92e27e6b504baf461
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892427"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986019"
 ---
 # <a name="tax-calculation-overview"></a>税の計算の概要
 
