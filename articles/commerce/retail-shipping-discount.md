@@ -3,25 +3,24 @@ title: 出荷割引の概要
 description: このトピックでは、Dynamics 365 Commerce 内の出荷割引機能、およびこれらの割引の使用を開始するために必要な対応する設定手順について説明します。
 author: ShalabhjainMSFT
 ms.date: 01/22/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: RetailShippingThresholdDiscounts, RetailPriceDiscGroup
 audience: IT Pro
 ms.reviewer: josaw
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 47b4870275eea99b8455a77ca0bcfc8c4a63514f7c725c00eb8cf0344f4987cb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8b08c19fbf3c325e60602253f082fc6f03e303f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715322"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982038"
 ---
 # <a name="shipping-discount-overview"></a>出荷割引の概要
 

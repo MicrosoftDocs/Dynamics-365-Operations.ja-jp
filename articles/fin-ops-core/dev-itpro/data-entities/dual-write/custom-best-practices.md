@@ -10,24 +10,24 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e11d9bc43414613cb041814cdefa6a7711d9a49c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 72b09b8cd89298bee689100baa3b4535db7255ad
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781214"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060607"
 ---
 # <a name="customization-guidance-for-dual-write"></a>二重書き込みのカスタマイズに関するガイダンス
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-二重書き込みでは、一部の業務プロセスに対する標準のマップが提供されます。 ただし、フィールド、マップ、または変換を追加する必要がある場合があります。 二重書き込みプラットフォームは拡張可能です。 カスタム マップを作成し、カスタム フィールドを使用して既存のマップを拡張して、Finance and Operations アプリと Microsoft Dataverse の間のデータを同期します。 このトピックでは、これらのカスタマイズのガイダンスとベスト プラクティスについて説明します。
+
+二重書き込みでは、一部の業務プロセスに対する標準のマップが提供されます。 ただし、フィールド、マップ、または変換を追加する必要がある場合があります。 二重書き込みプラットフォームは拡張可能です。 カスタム マップを作成し、カスタム フィールドを使用して既存のマップを拡張して、財務と運用アプリと Microsoft Dataverse の間のデータを同期します。 このトピックでは、これらのカスタマイズのガイダンスとベスト プラクティスについて説明します。
 
 マップをカスタマイズする前に、[テーブル マッピングと列マッピングのカスタマイズ](customizing-mappings.md) でタスクをよく理解する必要があります。
 
-## <a name="guidance-when-the-entity-is-in-both-the-finance-and-operations-app-and-dataverse"></a>エンティティが Finance and Operations アプリおよび Dataverse の両方である場合のガイダンス
+## <a name="guidance-when-the-entity-is-in-both-the-finance-and-operations-app-and-dataverse"></a>エンティティが財務と運用アプリおよび Dataverse の両方である場合のガイダンス
 
 エンティティが両方の環境にある場合は、二重書き込みマップを作成します。
 
@@ -35,20 +35,20 @@ ms.locfileid: "7781214"
 + **会社フィールド** はすでにキーの一部なので、エンティティが法人固有の場合、マッピングで **会社フィールド** を表示することはできません。 例については、**顧客グループ (msddn\_customergroups)** エンティティ マッピングを確認します。
 + Finance and Operations 環境または Dataverse 環境のいずれかにフィルターを追加し、特定の条件でのみ二重書き込みマップをトリガーします。 **顧客 V3 - アカウントまたは CDS 連絡先 V2 (連絡先)** マップには例として使用できる複数のフィルターがあります。
 
-## <a name="guidance-when-the-entity-is-in-the-finance-and-operations-app-only"></a>エンティティが Finance and Operations アプリのみである場合のガイダンス
+## <a name="guidance-when-the-entity-is-in-the-finance-and-operations-app-only"></a>エンティティが財務と運用アプリのみである場合のガイダンス
 
-エンティティが Finance and Operations アプリのみである場合、新しいエンティティを Dataverse で作成し、マップを追加します。
+エンティティが財務と運用アプリのみである場合、新しいエンティティを Dataverse で作成し、マップを追加します。
 
 + Finance and Operations エンティティに法人固有のデータが含まれている場合は、新しい Dataverse エンティティの **cdm\_companies** にルックアップ フィールドを必ず追加してください。 Finance and Operations エンティティがグローバルの場合、会社のフィールドは Dataverse エンティティには必須ではありません。
-+ Dataverse エンティティにキーを追加して Finance and Operations エンティティ キーを反映します。 二重書き込みには、Finance and Operations 環境と Dataverse 環境の両方で同じエンティティ キーが必要です。 Finance and Operations アプリと Dataverse のキー フィールドは互いにマップされる必要があります。 マッピングに **会社** フィールドを追加しないでください。 例については、**仕入先 V2 - msdyn\_venders mapping** を確認します。
++ Dataverse エンティティにキーを追加して Finance and Operations エンティティ キーを反映します。 二重書き込みには、Finance and Operations 環境と Dataverse 環境の両方で同じエンティティ キーが必要です。 財務と運用アプリと Dataverse のキー フィールドは互いにマップされる必要があります。 マッピングに **会社** フィールドを追加しないでください。 例については、**仕入先 V2 - msdyn\_venders mapping** を確認します。
 
 ## <a name="guidance-when-the-entity-is-in-dataverse-only"></a>エンティティが Dataverse のみである場合のガイダンス
 
 エンティティが Dataverse のみである場合、新しいエンティティを Finance and Operations 環境で作成し、マップを追加します。
 
 + 新しいエンティティを作成し、必要なすべてのフィールドを含めます。 エンティティがデータ管理に対して有効であり、OData (データ プロトコルを開く) によって使用できることを確認します。 新しいエンティティの作成方法の詳細については、[データ エンティティの構築と使用](../build-consuming-data-entities.md) を参照してください。
-+ Finance and Operations アプリのデータが法人固有の場合は、Dataverse エンティティの **cdm\_companies** にルックアップ フィールドを必ず追加してください。 Finance and Operations エンティティがグローバルの場合、会社のフィールドは Dataverse エンティティには必須ではありません。
-+ 両方のエンティティがエンティティ キー フィールドを持っていることを確認します。 二重書き込みには、Finance and Operations 環境と Dataverse 環境の両方で同じエンティティ キーが必要です。 Finance and Operations アプリと Dataverse のキー フィールドは互いにマップされる必要があります。 マッピングに **会社** フィールドを追加しないでください。 例については、**仕入先 V2 - msdyn\_venders mapping** を確認します。
++ 財務と運用アプリのデータが法人固有の場合は、Dataverse エンティティの **cdm\_companies** にルックアップ フィールドを必ず追加してください。 Finance and Operations エンティティがグローバルの場合、会社のフィールドは Dataverse エンティティには必須ではありません。
++ 両方のエンティティがエンティティ キー フィールドを持っていることを確認します。 二重書き込みには、Finance and Operations 環境と Dataverse 環境の両方で同じエンティティ キーが必要です。 財務と運用アプリと Dataverse のキー フィールドは互いにマップされる必要があります。 マッピングに **会社** フィールドを追加しないでください。 例については、**仕入先 V2 - msdyn\_venders mapping** を確認します。
 
 ## <a name="add-attributes-to-a-mapping"></a>マッピングへの属性の追加
 
@@ -60,13 +60,13 @@ ms.locfileid: "7781214"
 
 ![BusinessEventsDefinition テーブル ブラウザー](media/custom-business-event.png)
 
-## <a name="guidance-when-entities-arent-available-in-either-the-finance-and-operations-app-or-dataverse"></a>エンティティが Finance and Operations アプリまたは Dataverse のいずれかで使用できない場合のガイダンス
+## <a name="guidance-when-entities-arent-available-in-either-the-finance-and-operations-app-or-dataverse"></a>エンティティが財務と運用アプリまたは Dataverse のいずれかで使用できない場合のガイダンス
 
 エンティティがどちらの環境にも存在しない場合は、両方の環境でテーブルを作成し、次の手順に従ってアプリを作成できます。
 
 1. Dataverse で、必要なすべてのフィールドを含む新しいテーブルを作成します。 [カスタム テーブルの作成](/modules/create-manage-entities/2-custom-entity) の手順に従います。 テーブルに法人固有のデータを格納する場合、 Dataverse テーブルの **cdm \_companies** にルックアップ フィールドを必ず追加してください。 テーブルがグローバル データを格納する場合、会社のフィールドは Dataverse テーブルには必須ではありません。
-2. Finance and Operations アプリで、必要なすべてのフィールドを含む新しいエンティティを作成します。 エンティティがデータ管理に対して有効であり、OData によって使用できることを確認します。 新しいエンティティの作成方法の詳細については、[データ エンティティの構築と使用](../build-consuming-data-entities.md) を参照してください。
-3. テーブル マップの二重書き込みを有効にするには、Dataverse デーブルで代替キーを定義する必要があります。 Dataverse の代替キーの値は、Finance and Operations アプリで定義されているキーと一致する必要があります。 たとえば、Finance and Operations アプリでは、次の図で示すように **CustomerAccount** が **アカウント** テーブルのキーになります。
+2. 財務と運用アプリで、必要なすべてのフィールドを含む新しいエンティティを作成します。 エンティティがデータ管理に対して有効であり、OData によって使用できることを確認します。 新しいエンティティの作成方法の詳細については、[データ エンティティの構築と使用](../build-consuming-data-entities.md) を参照してください。
+3. テーブル マップの二重書き込みを有効にするには、Dataverse デーブルで代替キーを定義する必要があります。 Dataverse の代替キーの値は、財務と運用アプリで定義されているキーと一致する必要があります。 たとえば、財務と運用アプリでは、次の図で示すように **CustomerAccount** が **アカウント** テーブルのキーになります。
 
     ![CustCustomerV3Entity のプロパティ](media/custom-customer-account.png)
 
@@ -111,16 +111,16 @@ ms.locfileid: "7781214"
     + セット ベースの操作 (**挿入** および **更新**)
     + **skipBusinessEvents(true)** がマークされているレコード
 
-+ ビジネス イベントは、マップされているデータ ソースに登録する必要があります。 外部結合を使用し、Finance and Operations アプリで読み取り専用としてマークされているデータ ソースは追跡されません。
-+ 変更は、Finance and Operations アプリでマップされたフィールドに変更がある場合にのみトリガーされます。 Costomer Engagement アプリでは、フィールドの変更はすべて二重書き込み同期をトリガーします。
++ ビジネス イベントは、マップされているデータ ソースに登録する必要があります。 外部結合を使用し、財務と運用アプリで読み取り専用としてマークされているデータ ソースは追跡されません。
++ 変更は、財務と運用アプリでマップされたフィールドに変更がある場合にのみトリガーされます。 Costomer Engagement アプリでは、フィールドの変更はすべて二重書き込み同期をトリガーします。
 + すべてのフィルター評価は、有効な結果を提供する必要があります。
 + データ ソースは、マップされたフィールドが 1 つも指定されていない場合は追跡されません。
-+ Finance and Operations アプリのエンティティ リレーションシップでは、2 つのエンティティがリンクされ、同じトランザクション内の 2 つのレコードの間にリレーションシップが存在していることを二重書き込みで指定する必要があります。 両方の親レコードと子レコードが関連するエンティティで同じトランザクションの一部である場合、二重書き込みバッチ処理はレコード挿入の順番付けが明示的に定義され、考慮されるエンティティ リレーションシップに依存しています。 Finance and Operations アプリのビジネス プロセスに複数のエンティティが含まれ、Costomer Engagement アプリでバッジ モードとして有効にされている場合、二重書き込みにはエンティティ上で識別され、定義されるためのリレーションシップが必要です。 次の図は、**販売注文ヘッダー V2** と **販売注文行 V2** とのリレーションシップを示しています。
++ 財務と運用アプリのエンティティ リレーションシップでは、2 つのエンティティがリンクされ、同じトランザクション内の 2 つのレコードの間にリレーションシップが存在していることを二重書き込みで指定する必要があります。 両方の親レコードと子レコードが関連するエンティティで同じトランザクションの一部である場合、二重書き込みバッチ処理はレコード挿入の順番付けが明示的に定義され、考慮されるエンティティ リレーションシップに依存しています。 財務と運用アプリのビジネス プロセスに複数のエンティティが含まれ、Costomer Engagement アプリでバッジ モードとして有効にされている場合、二重書き込みにはエンティティ上で識別され、定義されるためのリレーションシップが必要です。 次の図は、**販売注文ヘッダー V2** と **販売注文行 V2** とのリレーションシップを示しています。
 
-    ![Finance and Operations アプリでのリレーションシップ](media/custom-sales-order.png)
+    ![財務と運用アプリでのリレーションシップ](media/custom-sales-order.png)
 
 + パフォーマンスの問題を防ぐには、レコード変更のために複数のイベントを発生させる二重書き込みデータ テーブルで多数のデータ ソースを使用しないでください。 二重書き込みで不要なフィールドをマップしないようにし、テーブルおよびエンティティでの過剰なビジネス ロジックを回避します。
-+ Finance and Operations アプリのカスタム エンティティが会社固有の場合 (つまり、エンティティの主な会社コンテキスト プロパティが **DataAreaId** になっている場合)、関連する Dataverse テーブルはキー列の 1 つとして会社ルックアップを持つ必要があります。 共有エンティティと会社固有のエンティティとのマッピングは許可されません。 Finance and Operations アプリ エンティティが共有か、または会社固有かを決定するには、Visual Studio アプリケーション エクスプローラーで **エンティティ** プロパティを確認します。 詳細については、[会社間のデータ エンティティの動作](../cross-company-behavior.md) を参照してください。
++ 財務と運用アプリのカスタム エンティティが会社固有の場合 (つまり、エンティティの主な会社コンテキスト プロパティが **DataAreaId** になっている場合)、関連する Dataverse テーブルはキー列の 1 つとして会社ルックアップを持つ必要があります。 共有エンティティと会社固有のエンティティとのマッピングは許可されません。 財務と運用アプリ エンティティが共有か、または会社固有かを決定するには、Visual Studio アプリケーション エクスプローラーで **エンティティ** プロパティを確認します。 詳細については、[会社間のデータ エンティティの動作](../cross-company-behavior.md) を参照してください。
 
     ![SalesOrderLineEntity のプロパティ](media/custom-data-entity-view.png)
 

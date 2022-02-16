@@ -10,20 +10,20 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-04-26
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2afc20167dc88e558141c19668ae58205a0612d8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 35f3e5eba600c1a17846c0109456cdfe4de859d4
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781564"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063632"
 ---
 # <a name="user-specified-team-owner"></a>ユーザー指定のチームの所有者
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Finance and Operations アプリでは、グローバル テーブルは会社または法人に関連付けられません。 これらのテーブルでは、二重書き込みを使用して Microsoft Dataverse に書き込む場合、チームを指定することができますが、所有者として既定のチームを使用できません。 
+
+財務と運用アプリでは、グローバル テーブルは会社または法人に関連付けられません。 これらのテーブルでは、二重書き込みを使用して Microsoft Dataverse に書き込む場合、チームを指定することができますが、所有者として既定のチームを使用できません。 
 
 既定では、二重書き込みを有効にする場合、ルートの事業単位の既定チームは二重書き込みを通して統合されたすべての行の既定の所有者になります。 これらのレコードへのアクセスをユーザーのサブセットに限定する場合は、これは必要ではないかもしれません。 組織が対応するチームを持つ事業単位で複数の部門を定義し、その下に対応するチームを持つのは珍しいことではありません。 既定のチームのすべてのユーザーによって、二重書き込みを介して統合されたすべてのレコードにアクセスされることを望まないとします。 このような場合は、それらのレコードの所有者として、グローバル テーブルごとに異なるチームを指定できます。 
 

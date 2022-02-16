@@ -3,7 +3,7 @@ title: 小売割引
 description: このトピックでは、Dynamics 365 Commerce でのコール センターの割引機能の概要を示します。 さまざまな割引フォームにあるプロパティとおよび割引管理のベスト プラクティスについて説明します。
 author: shajain
 ms.date: 10/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 81b66e6986e20ed67762bf6f9b91e68bcad4594c
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 21568f81a015c4e83e531beabfe17008e111f6cd
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919388"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984992"
 ---
 # <a name="retail-discounts"></a>小売割引
 

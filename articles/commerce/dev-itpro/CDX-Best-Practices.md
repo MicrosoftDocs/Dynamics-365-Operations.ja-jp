@@ -16,17 +16,16 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 645ea89980749faef4e02478c3d5186428c7e61c
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: b145657f007be1f953bd5025d64e2962ad62e56f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891586"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985798"
 ---
 # <a name="commerce-data-exchange-best-practices"></a>Commerce Data Exchange のベスト プラクティス
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックは、Microsoft Dynamics 365 Commerce 環境に、データ同期、Commerce Data Exchange (CDX) に関連する機能を実装するユーザーを対象としています。 実装にあたってのベスト プラクティスのアドバイスを提供します。
 

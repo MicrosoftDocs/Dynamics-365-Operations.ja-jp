@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: ebb2ac8e38abd5a5f97d7b3ced21f29f214528f5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3b59686a84a15a1c131ee790e53970b69f8eb418
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783116"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065567"
 ---
 # <a name="create-a-workflow-category"></a>ワークフロー カテゴリの作成
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ワークフロー タイプを作成する際には、ワークフロー タイプをその質問に割り当てる必要があります。 ワークフロー カテゴリによって、特定のモジュールでワークフロー タイプを使用できるかどうかが決まります。 適切なワークフロー カテゴリがまだ存在していない場合は、作成する必要があります。
 

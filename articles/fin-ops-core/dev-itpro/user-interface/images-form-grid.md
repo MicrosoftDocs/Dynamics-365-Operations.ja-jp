@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 650ff4152496cde5d61baf535fea33c62449ce7a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 17b993459093e781ae5e4188d2587d014e67483a
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781630"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092419"
 ---
 # <a name="images-on-a-page-or-in-a-grid"></a>ページまたはグリッドの画像
 
@@ -80,17 +80,17 @@ AOS リソースとして保存されるイメージは、ユーザー データ
 
 ```xpp
 public display container customerImage()
-{     
-    ImageReference imgRef;
-    container imgContainer = this.Image;
-    if(imgContainer == connull())
+{
+    container imageContainer = this.Image;
+    if (imageContainer == connull())
     {
         // there is no image… the container is null
         // show a generic person outline image
-        imgRef = ImageReference::constructForSymbol("Person");
-        imgContainer = imgRef.pack();
+        ImageReference imageReference = 
+            ImageReference::constructForSymbol(ImageReferenceSymbol::Person);
+        imageContainer = imageReference.pack();
     }
-    return imgContainer;
+    return imageContainer;
 }
 ```
 
@@ -108,10 +108,10 @@ public display container customerImage()
 ```xpp
 public display container imageDataMethod()
 {
-    ImageReference imgClass =  
-            ImageReference::constructForAotResource(
-              "ResourceMicrosoft Dynamics AX");
-    return imgClass.pack();
+    ImageReference imageReference =
+        ImageReference::constructForAotResource(
+            'ResourceMicrosoft Dynamics AX');
+    return imageReference.pack();
 }
 ```
 
@@ -128,21 +128,22 @@ public display container imageDataMethod()
 ```xpp
 public display container imageDataMethod()
 {
-ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);
-return imgClass.pack();
+    ImageReference imageReference = 
+        ImageReference::constructForUrl(this.ImageURL);
+    return imageReference.pack();
 }
 ```
 
 このコードは、小さな JavaScript Object Notation (JSON) メッセージをクライアントのコントロールに送信します。 このメッセージは、コントロールに画像を URL として扱い、ブラウザーに画像のダウンロード作業をさせるように指示します。 サーバーで発生しているダウンロードはありません。 <strong>データベース テーブルに画像 URL を格納する</strong>テーブル上にイメージ列のためのコンテナ フィールドを持つこともできます。 以下の例を表すコードを使用して、<strong>ImageReference</strong> パックを保存することができます。
 
 ```xpp
-ImageReference imgClass;
-CLIControls_ImageTable imgTable;
+CLIControls_ImageTable imageTable;
 ttsbegin;
-imgClass = ImageReference::constructForUrl(
-    "http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg");    
-imgTable.ImageField = imgClass.pack();
-imgTable.insert();
+ImageReference imageReference = 
+    ImageReference::constructForUrl(
+        'http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg');
+imageTable.ImageField = imageReference.pack();
+imageTable.insert();
 ttscommit;
 ```
 
@@ -181,7 +182,9 @@ public void init()
     int imgCnt;
         
     // create an imagelist instance
-    Imagelist imageList = new ImageList(ImageList::smallIconWidth(), Imagelist::smallIconHeight());
+    Imagelist imageList = new ImageList(
+        ImageList::smallIconWidth(), 
+        Imagelist::smallIconHeight());
         
     super();
         
@@ -430,8 +433,9 @@ public void clicked()
 ```xpp
 public display container imageDataMethod()
 {
-    ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);
-    return imgClass.pack();
+    ImageReference imageReference = 
+        ImageReference::constructForUrl(this.ImageURL);
+    return imageReference.pack();
 }
 ```
 
@@ -443,41 +447,44 @@ public display container imageDataMethod()
 ```xpp
 public display container customerImage()
 {
-    ImageReference imgRef;
-    container imgContainer = this.Image;
-    if(imgContainer == connull())  // there is no image… the container is null
+    container imageContainer = this.Image;
+    if (imageContainer == connull())  // there is no image… the container is null
     {
-        imgRef = ImageReference::constructForSymbol("Person");  // show a generic person outline image
-        imgContainer = imgRef.pack();
+        ImageReference imageReference =
+            ImageReference::constructForSymbol(ImageReferenceSymbol::Person);  // show a generic person outline image
+        imageContainer = imageReference.pack();
     }
-    return imgContainer;
+    return imageContainer;
 }
+
 public display container statusImageDataMethod()
 {
     ImageReference statusImage;
     if (this.Status == NoYes::Yes)
     {
-        statusImage = ImageReference::constructForSymbol("Accept");
+        statusImage = 
+            ImageReference::constructForSymbol(ImageReferenceSymbol::Accept);
     }
     else
     {
-        statusImage = ImageReference::constructForSymbol("Cancel");
+        statusImage = 
+            ImageReference::constructForSymbol(ImageReferenceSymbol::Cancel);
     }
     return statusImage.pack();
 }
 ```
 
 ## <a name="taking-an-image-url-and-storing-the-image-in-table"></a>画像の URL を取得し、テーブルに画像を格納
-テーブル上にはイメージ列のためのコンテナ フィールドがある場合があります。 以下の例を表すコードを使用して、**ImageReference** パックを保存することができます。
+テーブル上にはイメージ列のためのコンテナ フィールドがある場合があります。 以下の例を表すコードを使用して、<strong>ImageReference</strong> パックを保存することができます。
 
 ```xpp
-ImageReference imgClass;
-CLIControls_ImageTable imgTable;
+CLIControls_ImageTable imageTable;
 ttsbegin;
-imgClass = ImageReference::constructForUrl(
-    "http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg");
-imgTable.ImageField = imgClass.pack();
-imgTable.insert();
+ImageReference imageReference = 
+    ImageReference::constructForUrl(
+        'http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg');
+imageTable.ImageField = imageReference.pack();
+imageTable.insert();
 ttscommit;
 ```
 

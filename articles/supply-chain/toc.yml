@@ -12,6 +12,8 @@
               items:
                 - name: Supply Chain Management の新機能または変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.25 (2022 年 4 月)
+                  href: get-started/whats-new-scm-10-0-25.md
                 - name: Supply Chain Management 10.0.24 (2022 年 2 月)
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management 10.0.23 (2022 年 1 月)
@@ -28,7 +30,7 @@
               href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
-        - name: 使用開始
+        - name: 概要
           items:
             - name: サービスの説明
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/supply-chain/toc.json
@@ -102,8 +104,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ビデオ
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 用語集
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: ラーニング カタログ
               items:
                 - name: ラーニング カタログのホームページ
@@ -182,9 +182,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 環境計画
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Go Live の準備
+                - name: Go-Live の準備
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Go Live に関するよく寄せられる質問
+                - name: Go-Live に関するよく寄せられる質問
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: サービス要求の送信
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
@@ -252,7 +252,7 @@
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 使用状況管理ダッシュボード
                       href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 使用開始
+                    - name: 概要
                       items:
                         - name: 電子請求サービス管理の使用を開始する
                           href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
@@ -308,6 +308,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: クラウドとエッジのスケール ユニット用に Warehouse Management モバイル アプリを設定する
+              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
             - name: クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
               href: cloud-edge/cloud-edge-warehouse-order.md
             - name: 倉庫在庫調整
@@ -771,7 +773,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 原価管理
                   href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 学習
+                - name: ラーニング
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 組織トレーニング
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
@@ -1047,7 +1049,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Concatenate
+                        - name: 連結
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 形式
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/supply-chain/toc.json
@@ -1233,7 +1235,9 @@
                   items:
                     - name: 外部 XML ファイルからデータをインポートするためのコンフィギュレーションを作成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
-                - name: SharePoint にあるファイルからのバッチ モードのデータのインポートを構成する
+                    - name: 手動で選択したファイルからバッチ モードでデータをインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
+                - name: SharePoint にあるファイルからバッチ モードのデータ インポートを構成する
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
                 - name: XML 形式のファイルをインポートする
                   items:
@@ -1461,6 +1465,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                     - name: アプリケーション更新プログラム 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: アプリケーション更新プログラム 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: アプリケーション更新プログラム 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 生成したドキュメントに対してカスタム保存場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
@@ -1691,12 +1699,16 @@
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: 計画オーダーの確定
                   href: master-planning/planning-optimization/planned-order-firming.md
+                - name: 簡易計画オーダー
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: マイナスの手持在庫数量を使用した計画
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: 計画履歴と計画ログの表示
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: 計画ジョブのキャンセル
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: アクション メッセージ
+                  href: master-planning/action-messages.md
                 - name: 計画最適化のトラブルシューティング
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: 計画最適化の拡張機能
@@ -1729,8 +1741,6 @@
                   href: master-planning/cancel-master-planning-job.md
                 - name: 展開のトレースを使用する
                   href: master-planning/trace-explosion.md
-                - name: アクション メッセージ
-                  href: master-planning/action-messages.md
                 - name: マスター プランの実行の監視
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: サイトのスケジュールの作成
@@ -1851,7 +1861,7 @@
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
             - name: '[Microsoft Office で開く] メニューのカスタマイズ'
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 電子メールのコンフィギュレーションと送信
+            - name: メールの構成と送信
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
             - name: 電子メール体験を向上させる
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/supply-chain/toc.json
@@ -1993,9 +2003,9 @@
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/supply-chain/toc.json
                 - name: レコード テンプレートを使用した新しいレコードの作成
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/supply-chain/toc.json
-            - name: ドキュメント管理のコンフィギュレーション
+            - name: ドキュメント管理の構成
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 電子メールのコンフィギュレーションと送信
+            - name: メールの構成と送信
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
             - name: 日時データとタイム ゾーン
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
@@ -2887,15 +2897,15 @@
                       href: service-management/set-up-service-order-stages.md
                     - name: 理由コードの作成
                       href: service-management/create-reason-codes.md
-                - name: サービス契約およびサービス定期売買の設定
+                - name: サービス契約およびサービス サブスクリプションの設定
                   items:
                     - name: サービス レベル契約の概要
                       href: service-management/service-level-agreements.md
-                    - name: 定期売買販売価格
+                    - name: サブスクリプション販売価格
                       href: service-management/subscription-sales-prices.md
-                    - name: 定期売買グループ
+                    - name: サブスクリプション グループ
                       href: service-management/subscription-groups.md
-                    - name: 定期売買グループの設定
+                    - name: サブスクリプション グループの設定
                       href: service-management/set-up-subscription-groups.md
                     - name: ステージ理由コードの使用
                       href: service-management/use-stage-reason-codes.md
@@ -2927,7 +2937,7 @@
                           href: service-management/service-agreements.md
                         - name: サービス契約の作成
                           href: service-management/create-service-agreements.md
-                        - name: サービスの定期売買
+                        - name: サービス サブスクリプション
                           href: service-management/service-subscriptions.md
                         - name: サービス テンプレート
                           href: service-management/service-template.md
@@ -2943,11 +2953,11 @@
                           href: service-management/delete-service-bom.md
                         - name: 指標化された販売価格
                           href: service-management/indexed-sales-prices.md
-                        - name: 定期売買手数料の日数の引き下げ
+                        - name: サブスクリプション手数料の日数の引き下げ
                           href: service-management/reduce-the-days-on-subscription-fees.md
                         - name: 下方修正日数の例
                           href: service-management/reduction-days-example.md
-                        - name: 定期売買販売価格の更新および指数化
+                        - name: サブスクリプション販売価格の更新および指数化
                           href: service-management/update-and-index-subscription-sales-prices.md
                 - name: 顧客の照会の処理
                   items:
@@ -3005,15 +3015,15 @@
                           href: service-management/create-item-requirements-service-orders.md
                         - name: サービス注文の在庫品目要求
                           href: service-management/service-order-item-requirements.md
-                        - name: 定期売買ワークフローの概要
+                        - name: サブスクリプション ワークフローの概要
                           href: service-management/subscription-workflow-overview.md
                         - name: サービス注文の組み合わせ
                           href: service-management/combine-service-orders.md
-                        - name: 定期売買グループからのサービスの定期売買の作成
+                        - name: サブスクリプション グループからのサービス サブスクリプションの作成
                           href: service-management/create-service-subscriptions-from-subscription-group.md
                         - name: サービス合意に関連付けられたプロジェクト
                           href: service-management/project-attached-to-service-agreement.md
-                        - name: プロジェクトからサービスの定期売買を作成する方法
+                        - name: プロジェクトからサービス サブスクリプションを作成する方法
                           href: service-management/create-service-subscriptions-from-project.md
                     - name: サービス注文の活動の出荷
                       items:
@@ -3043,11 +3053,11 @@
                           href: service-management/modify-service-bom.md
                     - name: サービスの提供
                       items:
-                        - name: 定期売買トランザクションの貸方記入
+                        - name: サブスクリプション トランザクションの貸方記入
                           href: service-management/credit-subscription-transactions.md
-                        - name: 定期売買手数料トランザクションの作成
+                        - name: サブスクリプション手数料トランザクションの作成
                           href: service-management/create-subscription-fee-transactions.md
-                        - name: 定期売買の発生
+                        - name: サブスクリプションの発生
                           href: service-management/accruing-subscriptions.md
                         - name: サービス注文明細行の移動
                           href: service-management/move-service-order-lines.md
@@ -3055,11 +3065,11 @@
                           href: service-management/cancel-service-orders.md
                         - name: サービス注文の手動作成
                           href: service-management/create-service-orders-manually.md
-                        - name: 未収の定期売買売上
+                        - name: 未収のサブスクリプション売上
                           href: service-management/accrue-subscription-revenue.md
                         - name: サービス注文の削除
                           href: service-management/delete-service-orders.md
-                        - name: 定期売買トランザクションの請求
+                        - name: サブスクリプション トランザクションの請求
                           href: service-management/invoice-subscription-transactions.md
         - name: 輸送管理
           items:
@@ -3763,6 +3773,8 @@
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: WMS の更新や WMS への移行時に、証明書パスのトラスト アンカーが見つからない
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+                - name: スケール ユニットの倉庫ワークロードをインストールした後で処理エラーが発生する
+                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
                 - name: 利用可能な在庫がある場合でも、バッチ番号の自動予約のプロンプトが表示される
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: 補充作業が完了していないため、ピッキング作業のブロック解除ができない
@@ -3901,9 +3913,11 @@
                   href: troubleshooting/warehousing/work-remains-blocked.md
                 - name: ユーザーの作業はキャンセルできない
                   href: troubleshooting/warehousing/you-cannot-cancel-wo.md
-    - name: Finance and Operations アプリの開発と管理
+    - name: 財務と運用アプリの開発と管理
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md

@@ -4,7 +4,7 @@
       items:
         - name: Dynamics 365 Commerce ホーム ページ
           href: index.md
-        - name: はじめに
+        - name: 概要
           items:
             - name: サービスの説明
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
@@ -92,6 +92,8 @@
                   items:
                     - name: Commerce の新機能および変更された機能に関するホーム ページ
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.25 (2022 年 4 月)
+                      href: get-started/whats-new-commerce-10-0-25.md
                     - name: Commerce 10.0.24 (2022 年 2 月)
                       href: get-started/whats-new-commerce-10-0-24.md
                     - name: Commerce 10.0.23 (2022 年 1 月)
@@ -124,8 +126,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
                 - name: ビデオ
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-                - name: 用語集
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
             - name: ラーニング カタログ
               items:
                 - name: ラーニング カタログのホームページ
@@ -202,9 +202,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
                 - name: 環境計画
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Go Live の準備
+                - name: Go-Live の準備
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Go Live に関するよく寄せられる質問
+                - name: Go-Live に関するよく寄せられる質問
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: サービス要求の送信
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
@@ -1466,7 +1466,7 @@
               items:
                 - name: Power BI コンテンツのホーム ページ
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
-                - name: 学習
+                - name: ラーニング
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: 組織トレーニング
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
@@ -1744,7 +1744,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/commerce/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
-                        - name: Concatenate
+                        - name: 連結
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/commerce/toc.json
                         - name: 形式
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/commerce/toc.json
@@ -1936,7 +1936,9 @@
                   items:
                     - name: 外部 XML ファイルからデータをインポートするためのコンフィギュレーションを作成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
-                - name: SharePoint にあるファイルからのバッチ モードのデータのインポートを構成する
+                    - name: 手動で選択したファイルからバッチ モードでデータをインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
+                - name: SharePoint にあるファイルからバッチ モードのデータ インポートを構成する
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
                 - name: XML 形式のファイルをインポートする
                   items:
@@ -2166,6 +2168,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
                     - name: アプリケーション更新プログラム 10.0.23
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+                    - name: アプリケーション更新プログラム 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
                 - name: 生成したドキュメントに対してカスタム保存場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
@@ -2230,7 +2234,7 @@
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
             - name: '[Microsoft Office で開く] メニューのカスタマイズ'
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
-            - name: 電子メールのコンフィギュレーションと送信
+            - name: メールの構成と送信
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: トランザクション イベント用の電子メール テンプレートの作成
               href: email-templates-transactions.md
@@ -2372,9 +2376,9 @@
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/commerce/toc.json
                 - name: レコード テンプレートを使用した新しいレコードの作成
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/commerce/toc.json
-            - name: ドキュメント管理のコンフィギュレーション
+            - name: ドキュメント管理の構成
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/commerce/toc.json
-            - name: 電子メールのコンフィギュレーションと送信
+            - name: メールの構成と送信
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: 日時データとタイム ゾーン
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
@@ -2384,13 +2388,15 @@
               items:
                 - name: IT プロおよび開発者向け Commerce
                   href: dev-itpro/dev-retail-home-page.md
+                - name: Commerce の店舗テクノロジ スタックを最新化する (ホワイト ペーパー)
+                  href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: ローカル開発環境の設定
                   href: dev-itpro/setup-local-dev-env.md
             - name: オンライン チャネルの拡張性
               items:
                 - name: オンライン チャネルの拡張性の概要
                   href: e-commerce-extensibility/overview.md
-                - name: 使用開始
+                - name: 概要
                   items:
                     - name: eコマース オンライン拡張機能の開発を開始する
                       href: e-commerce-extensibility/sdk-getting-started.md
@@ -2820,7 +2826,7 @@
               items:
                 - name: eコマース開発環境をセットアップしてレベル 1 Retail Server 仮想マシンにデバッグを実行する
                   href: troubleshoot/set-up-dev-environment-debugging.md
-    - name: Finance and Operations アプリの開発と管理
+    - name: 財務と運用アプリの開発と管理
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

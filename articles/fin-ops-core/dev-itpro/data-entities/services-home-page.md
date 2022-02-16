@@ -3,7 +3,7 @@ title: サービス エンドポイント 概要
 description: このトピックでは、使用できるサービス エンドポイントについて説明します。
 author: peakerbl
 ms.date: 06/22/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 926c76a829fc638f8c56b41d76e7d5f70c3ff5c8
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: fa4ab63934190e544e65bae30a7b2958a8047810
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404127"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986081"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
@@ -31,7 +31,7 @@ ms.locfileid: "7404127"
 
 | サービス エンドポイント            | AX 2012 | Finance and Operations         |
 |-----------------------------|---------|--------------------------------|
-| ドキュメント サービス (AXDs)    | はい     | いいえ – データ エンティティに置き換えられます |
+| ドキュメント サービス (AXDs)    | 有     | いいえ – データ エンティティに置き換えられます |
 | SOAP ベースのメタデータ サービス | 有     | いいえ – REST メタデータに置き換えられます |
 | SOAP ベースのクエリ サービス    | 有     | いいえ – OData に置き換えられます         |
 | OData クエリ サービス         | 有     | いいえ – OData に置き換えられます         |
@@ -89,7 +89,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 ### <a name="register-your-external-application"></a>外部アプリケーションの登録 
 
-1. Finance and Operations アプリで、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション** の順に移動します。
+1. 財務と運用アプリで、**システム管理** \> **セットアップ** \> **Azure Active Directory アプリケーション** に移動します。
 2. **新規** を選択します。
 3. 新しいレコード用のフィールドに入力します。
 

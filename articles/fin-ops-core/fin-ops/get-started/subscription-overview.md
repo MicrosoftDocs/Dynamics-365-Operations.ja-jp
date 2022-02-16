@@ -1,32 +1,31 @@
 ---
 title: サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
-description: このトピックでは、定期売買およびライセンス、Azure AD テナントおよび LCS 実装プロジェクトに関するよく寄せられる質問に対する回答を提供します。
+description: このトピックでは、サブスクリプションおよびライセンス、Azure AD テナントおよび LCS 実装プロジェクトに関するよく寄せられる質問に対する回答を提供します。
 author: ClaudiaBetz-Haubold
 ms.date: 08/11/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 89eac6ce951635a53c5a816f8431d2e3a1ee07bf7fb71eb67bfe51300b76d64a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa1051acec3b5847c2233d8b184a009b2904987b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752288"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984421"
 ---
 # <a name="subscriptions-lcs-projects-and-azure-active-directory-tenants-faq"></a>サブスクリプション、LCS プロジェクト、Azure Active Directory テナントに関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-顧客が Microsoft ボリューム ライセンス契約または Microsoft クラウド ソリューション プロバイダー (CSP) 契約を通じて加入すると、通常、Microsoft Azure Active Directory (Azure AD) テナント、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクト、および任意の数のサンドボックス環境とがあります。それらは顧客が選択した 1 つのデータ センターおよび 1 つの実稼働環境に展開されています。 これらのコア概念の詳細については、[Finance and Operations アプリケーション アーキテクチャ](../imp-lifecycle/architecture-overview.md) を参照してください。 この設定は、ほとんどのプロジェクトで適切に動作しますが、さらに高度なシナリオが必要な場合もあります。または、導入ライフサイクル中の変更に対応する必要もあります。
+顧客が Microsoft ボリューム ライセンス契約または Microsoft クラウド ソリューション プロバイダー (CSP) 契約を通じて加入すると、通常、Microsoft Azure Active Directory (Azure AD) テナント、Microsoft Dynamics Lifecycle Services (LCS) 実装プロジェクト、および任意の数のサンドボックス環境とがあります。それらは顧客が選択した 1 つのデータ センターおよび 1 つの実稼働環境に展開されています。 これらのコア概念の詳細については、[財務と運用アプリケーション アーキテクチャ](../imp-lifecycle/architecture-overview.md)を参照してください。 この設定は、ほとんどのプロジェクトで適切に動作しますが、さらに高度なシナリオが必要な場合もあります。または、導入ライフサイクル中の変更に対応する必要もあります。
 
-このトピックでは、定期売買およびライセンス、Azure AD テナントおよび LCS 実装プロジェクトに関するよく寄せられる質問に対する回答を提供します。
+このトピックでは、サブスクリプションおよびライセンス、Azure AD テナントおよび LCS 実装プロジェクトに関するよく寄せられる質問に対する回答を提供します。
 
 詳細については、次のトピックを参照してください。
 
@@ -49,7 +48,7 @@ ms.locfileid: "6752288"
 
 ## <a name="how-long-does-it-take-to-move-from-a-csp-agreement-to-a-volume-licensing-agreement"></a>CSP 契約からボリューム ライセンス契約に移行するには、どのくらいの時間がかかりますか？
 
-ボリューム ライセンスの購入では、注文の処理と定期売買の有効化に数日かかることがあります。 アドオン環境の再配置には、2 営業日のサービス レベル契約 (SLA) があります。 古いアドオン環境を割り当て解除し削除するには数時間かかります。
+ボリューム ライセンスの購入では、注文の処理とサブスクリプションの有効化に数日かかることがあります。 アドオン環境の再配置には、2 営業日のサービス レベル契約 (SLA) があります。 古いアドオン環境を割り当て解除し削除するには数時間かかります。
 
 ## <a name="what-if-i-forget-to-delete-the-existing-environments-before-i-suspend-the-existing-subscription"></a>既存のサブスクリプションを一時停止する前に既存の環境を削除するのを忘れた場合はどうすればよいですか。
 

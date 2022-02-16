@@ -2,7 +2,7 @@
 title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
-ms.date: 07/28/2021
+ms.date: 02/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 4e7603b86e35dc4dbe63a98acc324dce2d0b8e3c
-ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
+ms.openlocfilehash: 9929e83dfd7f229063f6910c1f4d219369706cbe
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7894742"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087647"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
 [!include[banner](../includes/banner.md)]
 
-有効期限が近づくにつれて、Dynamics 365 Finance + Operations (オンプレミス) 環境で使用する証明書を回転することが必要となる場合があります。 このトピックでは、既存の証明書を置換する方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
+Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明書は、有効期限が近づくにつれて、ローテーションする必要がある場合があります。 このトピックでは、既存の証明書を置換する方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 
 > [!WARNING]
 > 証明書の有効期限が切れる前に、証明書ローテーションのプロセスを正しく開始する必要があります。 これはデータ暗号化の証明書にとって非常に重要です。暗号化されたフィールドのデータが失われる可能性があるためです。 詳細については、[証明書ローテーション後](#aftercertrotation)を参照してください。 
@@ -81,13 +81,22 @@ ms.locfileid: "7894742"
     
         ```powershell
         # If remoting, only execute
-        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
+        # .\Configure-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
+
+        .\Configure-PreReqs.ps1
+        ```
+    
+     3. 次のスクリプトが存在する場合は、実行します。 これらの手順を管理者として実行します。
+    
+        ```powershell
+        # If remoting, only execute
+        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml 
 
         .\Import-PfxFiles.ps1
         .\Set-CertificateAcls.ps1
-        ```
-        
-    3. 次のスクリプトを実行して VM のセットアップを検証します。
+        ```       
+    
+    4. 次のスクリプトを実行して VM のセットアップを検証します。
     
         ```powershell
         # If remoting, only execute
@@ -216,9 +225,13 @@ ms.locfileid: "7894742"
     # When UpgradeState shows RollingForwardCompleted, the upgrade is finished
     ```
 
+    > [!NOTE] 
+    > 「2 つの異なる証明書から 2 つの異なる証明書へのアップグレードは許可されていません」というエラーが表示された場合は、以前の証明書ローテーション プロセスで古い Service Fabric 証明書をクリーンアップしなかったことを意味します。 このドキュメントの最後にある[古い Service Fabric 証明書のクリーンアップ](certificate-rotation-on-prem.md#cleanupoldsfcerts) セクションを参照し、このセクションの手順を繰り返します。  
+
+
 ### <a name="service-fabric-with-or-without-expired-certificates-cluster-not-accessible"></a>期限が切れた証明書 (クラスターにアクセスできない)を含むまたは含まないサービスファブリック
 
-このプロセスを続行するには、 [オンプレミスの展開のトラブルシューティング](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy) を行ってください。
+[オンプレミスの展開のトラブルシューティング](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy)の手順に従って、このプロセスを続行します。
 
 ## <a name="update-the-localagent-certificate"></a>LocalAgent 証明書を更新する
 
@@ -269,16 +282,16 @@ ms.locfileid: "7894742"
 
 ## <a name="update-your-current-deployment-configuration"></a>現在の配置コンフィギュレーションを更新する
 
-証明書を更新すると、環境に存在するコンフィギュレーション ファイルが古くなり、手動で更新する必要があります。 そうしないと、クリーンアップ ジョブが失敗する可能性があります。 (この手動更新は、今回だけ行う必要があります。)
+証明書を更新すると、環境に存在するコンフィギュレーション ファイルが古くなり、手動で更新する必要があります。 そうしないと、クリーンアップ ジョブが失敗することがあります。 この手動更新は、1 回だけ行う必要があります。
 
-1. コンフィギュレーション ファイルを開きます。 次のコマンドを実行して、このファイルの場所を検索できます。
+1. エージェント ファイル共有にある構成ファイル 'config.config' を開きます。 これは、次のような共有になります: \\\\fileserver\agent\wp\environmentID\StandaloneSetup-123456. このファイルの場所は、オーケストレーター データベースで次の SQL ステートメントを実行することで検索することができます。
 
     ```sql
     select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
     ```
 
     > [!NOTE]
-    > **LCSENVIRONMENTID** を環境の ID で置き換えます。 このIDは、LCS の環境のページから取得できます。 
+    > **LCSENVIRONMENTID** を環境の ID で置き換えます。 この ID は、LCS の環境のページから取得できます (これは、環境に関連付けられている GUID 値です)。
 
     ファイルの先頭は、次の例のようになります。
 
@@ -376,7 +389,7 @@ ms.locfileid: "7894742"
 
 ## <a name="update-other-certificates-as-needed"></a>必要に応じて他の証明書を更新する
 
-1. SQL server 証明書の有効期限が切れていないかどうかを常に確認してください。 詳細については、「[SQL Server の設定](setup-deploy-on-premises-pu12.md#setupsql)」を参照してください。
+1. SQL server 証明書の有効期限が切れていないかどうかを常に確認してください。 詳細については、「[SQL Server の設定](setup-deploy-on-premises-pu41.md#setupsql)」を参照してください。
 
 2. Active Directory フェデレーション サービス (ADFS) 証明書の有効期限が切れていないことを確認します。
 

@@ -10,24 +10,24 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bd1731ed9c3e0a3ac368889596b852b6b9df2aa
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 25ec96bc887e911987442d935c6873366d664d85
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782910"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061812"
 ---
 # <a name="edit-a-legal-entity-after-dual-write-setup"></a>二重書き込み設定後に法人を編集する 
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 
 二重書き込みウィザードにより、二重書き込みの設定後に会社または法人を追加または削除することが可能になります。 これは、二重書き込み環境のリンクを解除して再リンクすることなく実行できます。 
 
-このウィザードを使用すると、Finance and Operations アプリを Dataverse 環境にリンクすることができます。 このウィザードの一部として、1 つ以上の会社または法人を選択することもできます。 企業または法人の一覧は静的なままではなく、常に変化しています。 これは、特に段階的なロールアウトまたは買収の一部として、新しい会社を追加する必要があるためです。 これまでは、システムのダウンタイムがないと企業や法人を追加できませんでした。そのため、環境のリンクを解除して再リンクする必要がありました。 これらはすべて、特に既存のデータのために、費用が高くなる場合があります。 この機能を使用すると、既存の二重書き込み環境とのリンクを解除することなく、実稼働環境に会社を追加することができます。
+このウィザードを使用すると、財務と運用アプリを Dataverse を環境にリンクすることができます。 このウィザードの一部として、1 つ以上の会社または法人を選択することもできます。 企業または法人の一覧は静的なままではなく、常に変化しています。 これは、特に段階的なロールアウトまたは買収の一部として、新しい会社を追加する必要があるためです。 これまでは、システムのダウンタイムがないと企業や法人を追加できませんでした。そのため、環境のリンクを解除して再リンクする必要がありました。 これらはすべて、特に既存のデータのために、費用が高くなる場合があります。 この機能を使用すると、既存の二重書き込み環境とのリンクを解除することなく、実稼働環境に会社を追加することができます。
 
 ## <a name="add-a-company-or-legal-entity-after-dual-write-has-been-set-up"></a>二重書き込みが設定された後の会社または法人の追加 
 

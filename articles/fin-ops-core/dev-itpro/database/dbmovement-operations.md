@@ -3,22 +3,21 @@ title: データベース移動操作ホーム ページ
 description: このトピックでは、Lifecycle Services のデータベースの移動機能の使用可能なクイック スタート ガイドおよびチュートリアルへのリンクを示します。
 author: laneswenka
 ms.date: 06/04/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d43685877ee4cd5155dc8076d476d2d483d70ee45b65a5ddd33de7ac24e7cf3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 35045a07447694c6907a25fbbd83bfe13ecd2548
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721910"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984126"
 ---
 # <a name="database-movement-operations-home-page"></a>データベース移動操作ホーム ページ
 

@@ -1,8 +1,8 @@
 ---
 title: コード移行中の Azure DevOps マッピングのコンフィギュレーション
 description: このチュートリアルでは、LCS コードのアップグレード サービスが完了した後、開発ボックスを Azure DevOps プロジェクトにマップする方法を示します。
-author: RobinARH
-ms.date: 08/26/2021
+author: jorisdg
+ms.date: 01/10/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e83df93d803073d190b16f3263d2e15e840460a
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 9fc37513d31da4a0b9a2a427cb39763fb664e7a1
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474603"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964669"
 ---
 # <a name="configure-the-azure-devops-mapping-during-code-migration"></a>コード移行中の Azure DevOps マッピングのコンフィギュレーション
 
@@ -35,16 +35,14 @@ LCS コードのアップグレード サービスでは、Azure DevOps にア�
 - **プロジェクト** は、アップグレード中に使用できるソリューションです。 1 つのソリューションである CodeMergeSolution は、競合し、また解決する必要がある要素を伴うプロジェクトを含むソリューションです。 もう 1 つのソリューション、UpgradedSolution には、アップグレードされたモデルごとに 1 つのプロジェクトのコレクションが含まれています。
 
 ## <a name="map-azure-devops-to-your-development-box"></a>Azure DevOps の開発ボックスへのマップ
-1.  Visual Studio で、**チーム エクスプローラー &gt; チーム プロジェクトの選択 &gt; サーバー &gt; 追加。** と進んでアカウントに接続
-2.  チーム プロジェクトに URL を入力します。 **閉じる** を選択します。
-3.  Azure DevOps アカウントが表示されることを確認します。 右側で、作業するプロジェクトを選択します。 **接続** を選択します。
+1.  Visual Studio でトップメニューから **表示 &gt; チーム エクスプローラー** を選択して **チーム エクスプローラー** ウィンドウを開きます。
+2.  **チーム エクスプローラー** ウィンドウで **接続** を選択し、**接続の管理 > プロジェクトに接続** を選択します。
+3.  プロンプトに従って接続します。 アカウントで使用できるプロジェクトの一覧から、作業するプロジェクトを選択します。 **接続** を選択します。
 4.  ここで、ワークスペースを Azure DevOps フォルダーにマップする必要があります。 **ソース コード エクスプ ローラ** に移動し、このマッピングを行います。
     1.  &gt; プロジェクト
-        - **Visual Studio 2015** : C:\\ユーザー\\ &lt;ユーザー名&gt;\\ドキュメント\\Visual Studio 2015\\プロジェクト
-        - **Visual Studio 2017** またはそれ以降 : C:\\ユーザー\\&lt;ユーザー名&gt;\\ソース\\リポジトリ
+        - プロジェクトを保存するフォルダーを選択するか、既定の **Visual Studio** フォルダーを使用します: C:\\Users\\&lt;username&gt;\\source\\repos
     2.  メタデータ &gt; C:\\AOSService\\PackagesLocalDirectory
         -   クラウド VMs で、このフォルダーは I:\\、J:\\または K:\\ ドライブにあります
-        -   以前のバージョンで、このフォルダーは C:\\パッケージ
         -   **重要**:
             -   Dynamics AX 2012 R3 またはそれ以前のバージョンから移行する場合は、**メイン** 分岐の下のメタデータ フォルダにマッピングします。
             -   2 つの製品バージョン間で移行する場合は、**リリース** の分岐の下のメタデータ フォルダーにマッピングします。

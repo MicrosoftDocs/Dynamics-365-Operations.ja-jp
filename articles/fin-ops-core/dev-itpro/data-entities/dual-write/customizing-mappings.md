@@ -10,29 +10,29 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 519c5aa4ee85082fcb6d9f9901a9715d9810c1c2
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: dab482cf9dc1c3d4b1905209215aa196a5a59563
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782795"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063276"
 ---
 # <a name="customize-table-and-column-mappings"></a>テーブル マッピングと列マッピングのカスタマイズ
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 標準のテーブル マップには、2 つのアプリ間のデータ フローを可能にする事前定義されたテーブル マッピングおよび列マッピングがあります。 このように、それらは "青写真" として機能します。 ただし、ビジネスごとに異なるため、既定のテーブル マップでは不十分な場合があります。 したがって、二重書き込みはテーブル マップおよび列マッピングを変更する方法を提供することにより、カスタマイズを完全にサポートします。
 
 ## <a name="customize-column-mappings-add-transforms-and-enable-filtering"></a>列マッピングのカスタマイズ、変換の追加、およびフィルタ処理の有効化
 
-1. Finance and Operations アプリの **二重書き込み** ページの **テーブル マッピング** タブで、カスタマイズするテーブル マップを選択します。
+1. 財務と運用アプリの **二重書き込み** ページの **テーブル マッピング** タブで、カスタマイズするテーブル マップを選択します。
 
     > [!NOTE]
     > テーブル マッピングを変更する前に、停止する (実行しない) 必要があります。 そうしないと、変更は保存されません。
 
-2. **テーブル マッピング** タブで、Finance and Operations アプリまたは Dataverse から新しい列またはカスタム列を選択して、フィールドをカスタマイズできます。
+2. **テーブル マッピング** タブで、財務と運用アプリまたは Dataverse から新しい列またはカスタム列を選択して、フィールドをカスタマイズできます。
 
     ![列のカスタマイズ。](media/customize-a-field.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "7782795"
 
 ### <a name="filter-your-data"></a>データのフィルタ処理
 
-二重書き込みでは、Dataverse の [データ プロトコル (OData) を開く] フィルター式を使用してデータをフィルターできます。 Finance and Operations アプリの場合、フィルター処理は、クエリ範囲で使用される範囲式に似ています。
+二重書き込みでは、Dataverse の [データ プロトコル (OData) を開く] フィルター式を使用してデータをフィルターできます。 財務と運用アプリの場合、フィルター処理は、クエリ範囲で使用される範囲式に似ています。
 
 1. テーブル マッピング ページで、フィルター ボタン (じょうごのアイコン) を選択します。
 
@@ -82,7 +82,7 @@ ms.locfileid: "7782795"
 
     次の表に、フィルター式の例を示します。
 
-    | フィルター | Dataverse | Finance and Operations アプリ |
+    | フィルター | Dataverse | 財務と運用アプリ |
     |---|---|---|
     |文字列フィールド (次を含む)| startswith(name, 'A')|(name like "A*")|
     |文字列フィールド (次を含まない)|not contains(name, 'A')|(!(name like "*A*"))|
@@ -100,7 +100,7 @@ Microsoft は引き続き新しいテーブルを追加していますが、標�
 
 次の例は、**アドレス帳** という名前の新しいテーブル マップを追加する方法を示しています。
 
-1. Finance and Operations アプリの **二重書き込み** ページで、**テーブル マップの追加** を選択します。
+1. 財務と運用アプリの **二重書き込み** ページで、**テーブル マップの追加** を選択します。
 
     ![新しいテーブル マップを追加します。](media/add-new-entity-map.png)
 

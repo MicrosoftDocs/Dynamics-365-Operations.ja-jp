@@ -1,8 +1,8 @@
 ---
 title: オンプレミス配置のトラブルシューティング
-description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
+description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) の展開のトラブルシューティング情報を提供します。
 author: PeterRFriis
-ms.date: 11/29/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 830a4a84f4dc2df10c426a4700bda92ca81cd8c4
-ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
+ms.openlocfilehash: edb05914acab140905ce52b2f63d390e439f913a
+ms.sourcegitcommit: eb236eec9eacb507433206fccce585b25980bedd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7894734"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8045791"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
+このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) の展開のトラブルシューティング情報を提供します。
 
 ## <a name="access-service-fabric-explorer"></a>Service Fabric Explorer へのアクセス
 
@@ -697,7 +697,7 @@ Category does not exist.
 
 ## <a name="management-reporter"></a>Management Reporter
 
-プロバイダーを登録することで、追加のログを実行できます。 プロバイダーを登録するには、LCS 共有アセット ライブラリで、資産タイプとして **モデル** を選択してから、**Microsoft Dynamics 365 Finance + Operations (オンプレミス), LBDMRDeployerTroubleshooter** アセットをダウンロードします。 **プライマリ** オーケストレータ マシンにダウンロードされた ZIP ファイルをコピーし、解凍してから、次のコマンドを実行します。 (プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorer で、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。)
+プロバイダーを登録することで、追加のログを実行できます。 プロバイダーを登録するには、LCS 共有資産ライブラリで、資産タイプとして **モデル** を選択してから、**Microsoft Dynamics 365 Finance + Operations (on-premises)、LBDMRDeployerTroubleshooter** 資産をダウンロードします。 **プライマリ** オーケストレータ マシンにダウンロードされた ZIP ファイルをコピーし、解凍してから、次のコマンドを実行します。 (プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorer で、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。)
 
 > [!NOTE]
 > イベント ビューアーの結果が正しく表示されない場合 (たとえば、単語が切り詰められた場合など)、最新のマニフェストおよび .dll ファイルを取得してください。 最新のマニフェストと .dll ファイルを取得するには、エージェント ファイル共有の WP フォルダに移動します。 この共有は、適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックで作成されました。
@@ -1344,17 +1344,6 @@ Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-0000
         > 
         > **DB の同期に失敗しました。**
 
-## <a name="a-no-subscription-found-in-the-context-error-occurs-when-you-run-add-certtoserviceprincipal"></a>Add-CertToServicePrincipal を実行すると、"コンテキストにサブスクリプションが見つかりません" エラーが発生します
-
-最新バージョンの Windows PowerShell が原因で "コンテキストにサブスクリプションが見つかりません" エラーが発生することがあります。 この問題を解決するには、Windows PowerShellのバージョン5.7.0などの古いバージョンをインストールし、上書きしてください。
-
-```powershell
-# Install version 5.7.0 of Azure PowerShell
-Install-Module -Name AzureRM -RequiredVersion 5.7.0
-
-# Load version 5.7.0 of Azure PowerShell
-Import-Module -Name AzureRM -RequiredVersion 5.7.0
-```
 ## <a name="service-fabric-explorer-warnings-occur-after-you-restart-a-machine"></a>コンピューターの再起動後に Service Fabric Explorer の警告メッセージが表示される
 
 **エラー:**
@@ -1647,5 +1636,36 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     ```powershell
     .\Set-ServiceControlManagerPermissions.ps1 -Test
     ```
+
+## <a name="deployment-fails-on-version-10021-and-later"></a>配置はバージョン 10.0.21 以降で失敗
+
+**問題 :** 配置は失敗し、次のエラーが発生します。
+
+```stacktrace
+System.AggregateException: One or more errors occurred. ---> 
+LocalAgentCommon.LocalAgentInvalidOperationException: Unable to convert the topology file [\\DC1\D365FFOAgent\assets\topology.xml\088f79e2-3a60-4c2a-9911-c3aadb15959f\7819ab4b-31a1-4738-8ca2-02231239ddbb\Topology.xml] to a valid [config.json]. --->
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: F. Path
+```
+
+**理由 :** コンフィギュレーションの生成方法はバージョン 10.0.21 で変更されました。
+
+**解決策 :** 新しいコンフィギュレーションを生成するには、ローカル エージェント 2.7.0 以降にアップグレードする必要があります。 使用可能な最新バージョンにアップグレードをお勧めします。
+
+## <a name="add-certtoserviceprincipal-fails"></a>Add-CertToServicePrincipal 失敗
+
+**問題 :** 次のエラーが発生し、予期せず実行が終了します。
+
+```stacktrace
+Where-Object : Cannot convert null to type "System.DateTime".
+At C:\InfrastructureScripts\Scripts\Add-CertToServicePrincipal.ps1:93 char:44
++ ... edentials | Where-Object {[datetime]$_.EndDate -eq $localAgentCertEnd ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   + CategoryInfo          : InvalidArgument: (:) [Where-Object], RuntimeException
+   + FullyQualifiedErrorId : nullToObjectInvalidCast,Microsoft.PowerShell.Commands.WhereObjectCommand
+```
+
+**理由 :** Azure PowerShell モジュールのバージョン 7.0 には、スクリプトと互換性がない新しい変更が導入されています。
+
+**解決策 :** Azure PowerShell モジュールのバージョンを、バージョン 6.6.0 にダウングレードします。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

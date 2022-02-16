@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) ユーザー ガイド
 description: このトピックでは、Lifecycle Services で使用できるツールと、作業段階を進めていく際に使用するツールについて説明します。
 author: angelmarshall
 ms.date: 07/02/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6896af16c7305e817fdbc744b62b7cdaf763f839935794b408fcfbfdef7bc54
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71ff1c62dcd341beba42834fd01148bb8782a312
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733731"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985122"
 ---
 # <a name="lifecycle-services-lcs-user-guide"></a>Lifecycle Services (LCS) ユーザー ガイド
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサービスを提供します。 LCS の目標は、適切な情報を適切なタイミングで適切な相手に伝えることであり、実装、更新、アップグレードを毎回問題なく実行する反復性と予測可能性を実現することです。 LCS は顧客やパートナーがサポート計画の一部として使用できます。 Dynamics 365 Finance and Operations アプリの最新バージョンの顧客である場合は、Microsoft Azure Active Directory (Azure AD) の資格情報を使用してログインできます。 [LCS に移動](https://lcs.dynamics.com/Logon/Index).
+Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサービスを提供します。 LCS の目標は、適切な情報を適切なタイミングで適切な相手に伝えることであり、実装、更新、アップグレードを毎回問題なく実行する反復性と予測可能性を実現することです。 LCS は顧客やパートナーがサポート計画の一部として使用できます。 Dynamics 365 財務と運用アプリの最新バージョンの顧客である場合は、Microsoft Azure Active Directory (Azure AD) 資格情報を使用してサインインできます。 [LCS に移動](https://lcs.dynamics.com/Logon/Index).
 
 ## <a name="tools-that-are-provided-in-lcs"></a>LCS で提供されるツール
 次のテーブルでは、LCS で提供されるツールのリストと各ツールが適用されるフェーズについて説明しています。

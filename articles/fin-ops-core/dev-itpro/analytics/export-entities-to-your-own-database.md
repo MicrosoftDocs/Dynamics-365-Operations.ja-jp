@@ -12,16 +12,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: f01eb97e3d21f3f12e3567c21501343fac55207a
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: f8e3928aec8819287d960db792819bf698584391
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728943"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068806"
 ---
 # <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、管理者がアプリケーションからのデータ エンティティを自分の Microsoft Azure SQL データベースにエクスポートする方法について説明します。 この機能は、*自分のデータベースの持ち込み* (BYOD) とも呼ばれます。 
 
@@ -58,7 +61,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 分析目的で統合の BYOD 機能を使用している場合、[縦棒ストア インデックス: 概要](/sql/relational-databases/indexes/columnstore-indexes-overview?view=sql-server-ver15)の説明に従って、クラスター化された縦棒ストア インデックスの使用を考慮する必要があります。
 
 > [!NOTE]
-> BYOD データベースは、Finance and Operations アプリからアクセスできる必要があります。 BYOD にアクセスできない問題が発生した場合は、BYOD のファイアウォール規則が適切に構成されていることを確認する必要があります。 セルフ サービスの配置の詳細については、[セルフ サービスの配置に関するよく寄せられる質問](../deployment/deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment)を参照してください。
+> ご利用の BYOD データベースは、財務と運用アプリからアクセスできる必要があります。 BYOD にアクセスできない問題が発生した場合は、BYOD のファイアウォール規則が適切に構成されていることを確認する必要があります。 セルフ サービスの配置の詳細については、[セルフ サービスの配置に関するよく寄せられる質問](../deployment/deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment)を参照してください。
 > > 
 > 想定されるパフォーマンスを保護するには、正しいサービス層と計算サイズを選択する必要があります。 実行している間、Finance and Operations エクスポートに基づく負荷だけではなく、対象となるワークロードの合計を考慮することが重要です。 実稼働環境の場合、最低でも Premium サービス層の計算サイズ P2、または標準サービス層の計算サイズ S4 の使用をお勧めします。 特定の BYOD を使用する場合、サービス層が上記の最小値を超えている必要がある場合があります。 層と計算サイズの詳細については、[SQL Azure サービス層](/azure/azure-sql/database/service-tiers-dtu)および[リソースの制限の詳細](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes)を参照してください。 DTU の必要または使用率を決定するには、[ワークロードに必要な DTU を決定する](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)を参照してください
 

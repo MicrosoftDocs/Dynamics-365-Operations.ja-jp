@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1d358832814c2e707bbace3c3b588740d95a3b8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 17b6a1493c5931d3d78f34863baf3bb5bacf99d4
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781096"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063043"
 ---
 # <a name="dual-write-mapping-reference"></a>二重書き込みマッピングのリファレンス
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [!include [banner](includes/dual-write-symbols.md)]
 

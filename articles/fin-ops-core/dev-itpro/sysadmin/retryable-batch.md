@@ -2,25 +2,25 @@
 title: バッチ再試行の有効化
 description: このトピックでは、障害が発生した場合にバッチ ジョブで自動再試行を有効にする方法について説明します。
 author: matapg007
-ms.date: 11/24/2021
+ms.date: 01/10/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2021-05-31
-ms.openlocfilehash: 2bd7f2e6071b6084e6b0117701055278720c953f
-ms.sourcegitcommit: d7d997ad84623ad952672411c0eb6740972ae0b1
+ms.openlocfilehash: 45ec95a70e9dc5bbde07d05f4601d7327a811276
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "7864160"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964842"
 ---
 # <a name="enable-batch-retries"></a>バッチ再試行の有効化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリのバッチ ジョブで再試行を実装する方法、および障害が発生した場合に自動再試行を有効にする方法について説明します。 現在、バッチ プラットフォームでは、バッチの弾力性を有効にして障害を回避するための 3 つの方法が提供されています。
+このトピックでは、財務と運用アプリのバッチ ジョブで再試行を実装する方法、および障害が発生した場合に自動再試行を有効にする方法について説明します。 現在、バッチ プラットフォームでは、バッチの弾力性を有効にして障害を回避するための 3 つの方法が提供されています。
 
 ## <a name="retry-the-batch-job-task-regardless-of-the-error-type"></a>エラー タイプにかかわらず、バッチ ジョブ タスクを再試行する
 
@@ -31,11 +31,19 @@ ms.locfileid: "7864160"
 
 ## <a name="retry-the-batch-job-task-when-transient-sql-server-errors-occur"></a>SQL Server の一時的なエラーが発生した場合にバッチ ジョブ タスクを再試行する
 
-現在、Finance and Operations アプリの Microsoft SQL Server への接続が簡単に失われると、すべてのバッチ ジョブが失敗します。 この動作により業務プロセスが中断します。 クラウド サービスでは接続が失われることは避けられないので、Microsoft はこのタイプのエラーが発生した場合の自動再試行を有効にします。
+現在、財務と運用アプリにおける Microsoft SQL Server への接続が簡単に失われると、すべてのバッチ ジョブが失敗します。 この動作により業務プロセスが中断します。 クラウド サービスでは接続が失われることは避けられないので、Microsoft はこのタイプのエラーが発生した場合の自動再試行を有効にします。
 
-すべてのバッチ ジョブがべき等でない可能性もある (バッチでクレジット カード トランザクションを実行する場合など) ため、すべてのバッチ ジョブで再試行を等しく有効にすることはできません。 再試行を安全に有効にできるよう、Microsoft はバッチ ジョブにメタデータを追加して、自動的に再試行できるかどうか表示するようにしました。 バージョン 10.0.18 と 10.0.19 の間では、Microsoft バッチ ジョブの 90% 以上が明示的に **BatchRetryable** インターフェイスを実装し、**isretryable** 値は適切に設定されました。 **BatchRetryable** インターフェイスを実装していないすべてのジョブで、**isRetryable** の既定値は **false** です。
+既定では複数の実行の後でも、べき等であり同じ結果を生成する全てのバッチ クラスは再試行されます。 バッチ クラス インスタンスのべき等フラグを設定するには、**classinstance.BatchInfo().parmIdempotent(boolean)** を使用します。 
+
+すべてのバッチ ジョブがべき等でない可能性もある (バッチでクレジット カード トランザクションを実行する場合など) ため、すべてのバッチ ジョブで再試行を等しく有効にすることはできません。 再試行を安全に有効にできるよう、Microsoft はバッチ ジョブにメタデータを追加して、自動的に再試行できるかどうか表示するようにしました。 バージョン 10.0.18 と 10.0.19 の間では、Microsoft バッチ ジョブの 90% 以上が明示的に **BatchRetryable** インターフェイスを実装し、**isretryable** 値は適切に設定されました。 **BatchRetryable** インターフェイスを実装していないすべてのジョブで、**isRetryable** の既定値は **False** です。
 
 **BatchRetryable** インターフェイスが実装され、**isRetryable** が **True** に設定されているジョブに対してのみ再試行は有効になります。 この機能では、SQL Server 接続が中断した後に再試行が発生します。 Microsoft は引き続き、他の例外での再試行を追加します。
+
+クラス評価の再試行可能フラグの優先順位は、**isIdempotent** フラグ、フラグ、バッチ クラス上書きコンフィギュレーション、および **isRetryable** フラグの順序です。 
+
+1. もし **isIdempotent** フラグが **True** の場合は、他の 2 つのフラグに関係なくタスクが再試行されます。 
+2. もし **isIdempotent** が **False** で、バッチ クラスの上書きコンフィギュレーションが **True** の場合、タスクは再試行されます。 もしバッチ クラスの上書きコンフィギュレーションが **False** の場合は、上書き値なのでタスクが再試行されません。
+3. もし **isIdempotent** フラグが **False** でバッチ クラスの上書きコンフィギュレーションが実装されていない場合、**isRetryable** フラグが評価されます。 値が **True** の場合、タスクは再試行されます。 **False** の場合、タスクは再試行されません。
 
 再試行の最大数と再試行間隔は、バッチ プラットフォームによって制御されます。 **BatchRetryable** インターフェイスは 5 秒後に開始し、間隔の時間が 5 分に達した後、再試行を停止します。 (間隔の時間は次のように増加します: 5、8、16、32 など。)
 
@@ -96,7 +104,7 @@ class TestBatchJob extends SysOperationServiceController implements BatchRetryab
 ### <a name="what-is-the-best-practice-for-the-execution-time-for-a-batch-job"></a>バッチ ジョブの実行時間のベスト プラクティスは何ですか?
 
 実行時間が短いバッチ ジョブの方が正常に完了する可能性が高くなります。 そのため、再試行の必要が回避されます。
- 
+
 ### <a name="what-is-the-best-practice-for-the-transaction-size-for-a-batch-job"></a>バッチ ジョブのトランザクション サイズのベスト プラクティスは何ですか?
 
 トランザクション サイズが小さいバッチ ジョブは、障害によって失われる可能性がある作業の量を減らします。 したがって、再試行の必要性によって、合計実行時間は大幅に長くなりません。

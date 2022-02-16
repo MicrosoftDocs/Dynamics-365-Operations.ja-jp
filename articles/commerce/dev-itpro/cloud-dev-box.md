@@ -26,7 +26,7 @@ ms.locfileid: "7783086"
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition、プラットフォーム更新プログラム 12 では、Microsoft 定期購読を実行している開発または構築環境で仮想マシン (VM) 管理者アカウントにアクセスできなくなり、Microsoft 定期購読を使用して層 1 環境を配置することはできません。
+Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition、プラットフォーム更新プログラム 12 では、Microsoft 定期購読を実行している開発または構築環境で仮想マシン (VM) 管理者アカウントにアクセスできなくなり、Microsoft サブスクリプションを使用して層 1 環境を配置することはできません。
 
 リモート デスクトップ (RDP) を使用して、Lifecycle Services (LCS) 環境ページに用意されている非管理ユーザーを使用するこれらの制限された環境にアクセスすることができます。 管理者アクセスを許可しない環境の詳細については、[管理者アクセスを許可しない開発用 およびビルド用 VM に関するよく寄せられる質問](../../fin-ops-core/dev-itpro/sysadmin/vms-no-admin-access.md)を参照してください。
 

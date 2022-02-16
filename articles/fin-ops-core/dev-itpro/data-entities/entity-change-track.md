@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da200460c66cb4d69f119c69bf9c1f786b7542098c23d4567538186790b3e10e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc5533dd3e9d8f35dc71d68aee108399b6b81eb1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766371"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071226"
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 
 [!include [banner](../includes/banner.md)]
 
-変更追跡は、データ管理を使用して Finance and Operations アプリからのデータの増分エクスポートを有効化します。 増分エクスポートでは、変更されたレコードのみがエクスポートされます。 差分エクスポートを有効にするには、エンティティの変更追跡を有効にする必要があります。 エンティティで追跡を有効にしない場合は、毎回完全なエクスポートしか有効にできません。 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+変更追跡は、データ管理を使用して財務と運用アプリからのデータの差分エクスポートを有効化します。 増分エクスポートでは、変更されたレコードのみがエクスポートされます。 差分エクスポートを有効にするには、エンティティの変更追跡を有効にする必要があります。 エンティティで追跡を有効にしない場合は、毎回完全なエクスポートしか有効にできません。 
 
 変更追跡は、自分のデータベース (BYOD) シナリオと非 BYOD シナリオの両方に対して有効にできます。 これには、Dataverse 仮想エンティティを介したレコードの変更の取得が含まれます。
 
@@ -55,7 +58,7 @@ ms.locfileid: "6766371"
     > 変更がトリガーされた場合、変更はフィールド レベルではなくレコード全体で追跡されます。 エンティティ レコード全体がエクスポート先にエクスポートされます。 選択したオプションに関係なく、エンティティのフィールドの数はターゲットにエクスポートされた数になります。
 
 ## <a name="enable-change-tracking-for-non-byod-scenarios"></a>非 BYOD シナリオでの変更追跡の有効化
-変更追跡は、非 BYOD シナリオに対して有効にできます。 これには、Finance and Operations アプリの Dataverse 仮想エンティティを介したレコードの変更の取得が含まれます。 エンティティで変更追跡が有効になっている場合、優先設定ヘッダーとして `odata.track-changes` を追加することで、エンティティの OData エンドポイントから変更点を取得することができます。
+変更追跡は、非 BYOD シナリオに対して有効にできます。 これには、財務と運用アプリの Dataverse 仮想エンティティを介したレコードの変更の取得が含まれます。 エンティティで変更追跡が有効になっている場合、優先設定ヘッダーとして `odata.track-changes` を追加することで、エンティティの OData エンドポイントから変更点を取得することができます。
 
 エンティティに対する変更追跡の使用の詳細については、「[変更追跡を使用したデータと外部システムとの同期](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)」を参照してください。
 

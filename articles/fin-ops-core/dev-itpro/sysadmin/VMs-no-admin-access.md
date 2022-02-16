@@ -100,7 +100,7 @@ LCS を使用して、クラウド開発環境にライセンス配置可能パ�
 LCS では、AOT またはライセンス配置可能パッケージをビルド環境にインストールできません。 これを回避するには、VM にリモート接続し、「[配置可能なパッケージのコマンドラインからのインストール](../deployment/install-deployable-package.md)」で説明されているようにコマンド ラインから **-devinstall** オプションを使用してライセンス配置可能パッケージをインストールします。 このコマンド ライン インストールは、プラットフォーム更新 17 で機能します。 プラットフォーム更新プログラム 17 より古いプラットフォーム バージョンを実行しており、ビルド環境への管理者アクセス権を持っていない場合、サポート リクエストを作成し、ライセンス配置可能パッケージのインストールを Microsoft に依頼します。
 
 ## <a name="is-licensing-visual-studio-by-entering-a-product-key-supported"></a>プロダクト キーを入力することによってライセンス Visual Studio はサポートされますか。
-Visual Studio に直接プロダクト キーを入力することはサポートされていません。 代わりに、Visual Studio 定期売買ライセンスを使用し、ライセンスに関連付けられている電子メール アドレス (ユーザー アカウント) で Visual Studio にサインインします。 Visual Studio ライセンスをユーザー アカウントにリンクするには、MSDN ライセンスをユーザー アカウントに割り当てるか、または https://www.visualstudio.com/subscriptions-administration を使用してユーザー アカウントにライセンスを割り当てます。
+Visual Studio に直接プロダクト キーを入力することはサポートされていません。 代わりに、Visual Studio サブスクリプション ライセンスを使用し、ライセンスに関連付けられている電子メール アドレス (ユーザー アカウント) で Visual Studio にサインインします。 Visual Studio ライセンスをユーザー アカウントにリンクするには、MSDN ライセンスをユーザー アカウントに割り当てるか、または https://www.visualstudio.com/subscriptions-administration を使用してユーザー アカウントにライセンスを割り当てます。
 
 ## <a name="can-i-upgrade-my-database-to-a-new-application-release"></a>新しいアプリケーションのリリースに、データベースをアップグレードすることはできますか？
 Lifecyle Services (LCS) の 2018 年 2 月リリースと同じく、開発環境の LCS 環境ページからデータ アップグレード パッケージを実行できます。 LCS からのデータ アップグレード パッケージの実行では、VM の管理者である必要はありません。

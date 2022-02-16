@@ -3,21 +3,20 @@ title: モデルの作成、およびデータモデル要素の作成につい�
 description: このチュートリアルでは、Visual Studio の Dynamics 365 メニューを使用して、フリート管理チュートリアルという名前の新しいモデルを作成します。
 author: RobinARH
 ms.date: 07/23/2019
-ms.topic: article
+ms.topic: overview
 audience: Developer
 ms.reviewer: tfehr
-ms.custom: intro-internal
 ms.assetid: 1b7789f4-12c1-480b-bb39-c354b5b03276
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 733ecdc77cfb412310bb4c94ed574a412e013edb
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e516e8ac28ce01a81d360c99383a6fb75c449ee8
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781092"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984477"
 ---
 # <a name="create-models-and-data-model-elements-overview"></a>モデルとデータ モデル要素の作成の概要
 

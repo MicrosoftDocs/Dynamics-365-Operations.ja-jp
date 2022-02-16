@@ -2,19 +2,19 @@
 title: ZIP ファイルで RSAT 証明書をフェッチする
 description: このトピックでは、LCS 環境 API 経由で Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境の Regression Suite Automation Tool (RSAT) 証明書バンドルをフェッチする方法について説明します。
 author: jorichar
-ms.date: 08/24/2021
+ms.date: 01/14/2022
 ms.topic: reference
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jorichar
 ms.search.validFrom: 2021-08-12
-ms.openlocfilehash: 49c7f5884e2e977628b75f5deeee51b71a2bfe80
-ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
+ms.openlocfilehash: ffacc8b3fabf4839a9cfa307d4566a90989fc8f3
+ms.sourcegitcommit: bbe8ab054ad7cc00a63c63e02dc90bfa8ede15bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7415309"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7974366"
 ---
 # <a name="fetch-an-environments-rsat-certificate-in-a-zip-file"></a>ZIP ファイルで RSAT 証明書をフェッチする
 
@@ -75,7 +75,9 @@ HTTP 要求のヘッダーで次のヘッダー値を使用します。
 |----------|-------------|
 | CertificateZipEncoded | Base 64 エンコードされたバイト配列の .PFX ファイルと .CER ファイルを含む zip。 |
 | CertificateSecretEncoded | Base 64 エンコードされた文字列としての、プライベート証明書のプライベート シークレット。 これにより、すべての要求が変更されます。 |
-| ExpirationDateTimeUTC | 以降に証明書が無効になる日付と時刻 (UTC)。 |
+| CertificateThumbprint | 非公開証明書の拇印。 |
+| ExpirationDateTimeUTC | その後、証明書が無効になる UTC (完全なメッセージ形式で表示される) の日付と時刻。 |
+| ExpirationISODateTimeUTC | その後、証明書が無効になる UTC (ISO 8606 形式で表示される) の日付と時刻。 |
 | ファイル名 | 返される zip のファイル名。 |
 
 ### <a name="example-response"></a>応答の例
@@ -87,7 +89,9 @@ HTTP 要求のヘッダーで次のヘッダー値を使用します。
     "Data": {
         "CertificateZipEncoded": "<base 64-encoded zip>",
         "CertificateSecretEncoded": "<base 64-encoded password>",
-        "ExpirationDateTimeUTC": "Thursday, June 30, 2022 8:52:13 PM",
+        "CertificateThumbprint": "5D23AAF6672FD4B957ED3CF91BB8D717A9A2499A",
+        "ExpirationDateTimeUTC": "Sunday, September 4, 2022 4:00:00 AM",
+        "ExpirationISODateTimeUTC": "2022-09-04T04:00:00Z",
         "Filename": "RSATCertificate_TestEnv1_20210805-100102.zip"
     },
     "IsSuccess": true,

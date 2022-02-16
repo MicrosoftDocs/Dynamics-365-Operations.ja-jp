@@ -3,7 +3,7 @@ title: オフィス統合の概要
 description: このトピックでは、Microsoft Office の統合の概念と機能について説明します。
 author: jasongre
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37cbe6e107d0184eb16b37e81229cb00c2e0f05540c563218ec5321a3c5ec6c0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6005841c78d0a56be7cea5e1fb07bc6c8ac1dc6e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761368"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983145"
 ---
 # <a name="office-integration-overview"></a>オフィス統合の概要
 
@@ -42,7 +42,7 @@ Microsoft Excel は、データを変更してすばやく分析することが�
 
 [![Excel データ コネクタ アプリのスクリーンショット。](./media/1_office.png)](./media/1_office.png)
 
-### <a name="dynamics-ax-2012-architecture-vs-finance-and-operations-architecture"></a>Dynamics AX 2012 アーキテクチャと Finance and Operations のアーキテクチャ
+### <a name="dynamics-ax-2012-architecture-vs-finance-and-operations-architecture"></a>Dynamics AX 2012 アーキテクチャ 対 Finance and Operations アーキテクチャ
 
 バージョン間にはいくつかの違いがあります。 両方で、Excel で実行する軽量のアドインを構築し、アプリケーションに接続するサービスを使用します。
 
@@ -113,9 +113,9 @@ OData は、サーバーと同じ認証スタック上に配置されます。 �
 
 ### <a name="office-licensing"></a>Office ライセンス
 
-#### <a name="what-microsoft-365-licenses-are-available"></a>どのような Microsoft 365 ライセンスが使用可能ですか?
+#### <a name="what-microsoft-365-licenses-are-available"></a>どのような Microsoft 365 ライセンスがありますか ?
 
-[Microsoft 365 ライセンス オプション](https://products.office.com/business/compare-office-365-for-business-plans) が多数あります。 所属されている組織にとって、意味のあるライセンスを選択する必要があります。
+「[Microsoft 365 ライセンス オプション](https://products.office.com/business/compare-office-365-for-business-plans)」が多数あります。 所属されている組織にとって、意味のあるライセンスを選択する必要があります。
 
 #### <a name="after-purchasing-a-microsoft-365-license-what-needs-to-be-done-to-set-up-sharepoint-storage-for-attachments"></a>Microsoft 365 ライセンスを購入した後、添付ファイル用に SharePoint ストレージを設定するために何を行う必要がありますか?
 

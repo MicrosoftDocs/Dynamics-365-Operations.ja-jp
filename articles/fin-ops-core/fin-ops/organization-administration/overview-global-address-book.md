@@ -3,7 +3,7 @@ title: グローバル アドレス帳の概要
 description: グローバル アドレス帳は、組織に関連付けられている人と組織の関係を理解するのに役立ちます。
 author: msftbrking
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: DirPartyTable, DirPartyTableRoles
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5cd0fd2ee09fade395f1304c91b1507e47b1a21af14e706673e98d1b5cfb65b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c8f2552e3523899105d724b537d8b9ab891789a7
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715977"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983116"
 ---
 # <a name="global-address-book-overview"></a>グローバル アドレス帳の概要
 

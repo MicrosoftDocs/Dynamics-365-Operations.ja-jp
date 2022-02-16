@@ -194,7 +194,7 @@ Azure Machine Learning Service を設定し、この設定を使用して接続�
 
 ## <a name="set-up-the-azure-machine-learning-service"></a><a name="setup-amls"></a>Azure Machine Learning Service の設定
 
-Supply Chain Management では、独自の Azure 定期購読を設定して実行する必要がある Azure Machine Learning Service を使用して、需要予測を計算します。 このセクションでは、AzureのAzure Machine Learningサービスを設定し、それを Supply Chain Management 環境に接続する方法について説明します。
+Supply Chain Management では、独自の Azure サブスクリプションを設定して実行する必要がある Azure Machine Learning Service を使用して、需要予測を計算します。 このセクションでは、AzureのAzure Machine Learningサービスを設定し、それを Supply Chain Management 環境に接続する方法について説明します。
 
 ### <a name="enable-the-azure-machine-learning-service-in-feature-management"></a>機能管理における Azure Machine Learning Service の有効化
 

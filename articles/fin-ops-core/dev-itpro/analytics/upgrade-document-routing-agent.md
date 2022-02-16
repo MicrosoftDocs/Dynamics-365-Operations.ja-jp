@@ -51,7 +51,7 @@ DRA を Microsoft Windows サービスとして引き続き実行するには、
 ![アプリケーションの終了を促すダイアログ ボックス。](media/Uninstall_DRA_services.png)
 
 ## <a name="install-the-latest-document-routing-agent"></a>最新のドキュメント回覧エージェントのインストール
-定期売買で使用可能な最新の DRA をインストールする方法の詳細については、[ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md) を参照してください。
+サブスクリプションで使用可能な最新の DRA をインストールする方法の詳細については、[ネットワーク プリンター デバイスを有効にするためにドキュメント回覧エージェントをインストールする](install-document-routing-agent.md) を参照してください。
 
 > [!NOTE]
 > アップグレード後に DRA クライアントを開いて、ネットワーク ユーザーの資格情報を更新してください。

@@ -3,7 +3,7 @@ title: Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 description: この記事では、Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー ツールについて説明します。
 author: AngelMarshall
 ms.date: 06/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: cb11af2d302b045134ff1bb7abaa8509564bf54067941d67c4caf0a3854389c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e73ce8d6b66252cad127a48c75c63a1fb1a4d0b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775266"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985380"
 ---
 # <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) は、業務プロセス ライブラリに基づいて反復可能な実装を作成、表示、および変更するために使用することができるツールです。 BPM は、[アメリカ生産性 &amp; 品質センター (APQC)](https://www.apqc.org/) によって説明された業界標準プロセスを使用して、業務プロセスを配置するのに役立ちます。 Finance and Operations アプリで、業務上の要件と既定のプロセスの間でフィット アンド ギャップ分析を行うことができます。 また、まだ定義されていない新たなビジネス プロセスを追加することができます。
+Microsoft Dynamics Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM) は、業務プロセス ライブラリに基づいて反復可能な実装を作成、表示、および変更するために使用することができるツールです。 BPM は、[アメリカ生産性 &amp; 品質センター (APQC)](https://www.apqc.org/) によって説明された業界標準プロセスを使用して、業務プロセスを配置するのに役立ちます。 財務と運用アプリで、業務上の要件と既定のプロセスの間でフィットギャップ分析を実行することができます。 また、まだ定義されていない新たなビジネス プロセスを追加することができます。
 
 BPM は次の製品と互換性があります。
 
@@ -35,7 +35,7 @@ BPM は次の製品と互換性があります。
 - **Microsoft Visio** – 業務プロセスのマップを Visio ファイルにエクスポートできます。
 
 > [!NOTE]
-> このトピックに記載の情報は Finance and Operations アプリのみに特化しています。 ビジネス プロセス モデラーおよび Microsoft Dynamics AX 2012 の詳細については、 [Lifecycle Services (LCS) における ビジネス プロセス モデラー (BPM)](ax-2012/business-process-modeler-lcs.md)を参照してください。 
+> このトピックに記載されている情報は、財務と運用アプリにのみ適用されます。 ビジネス プロセス モデラーおよび Microsoft Dynamics AX 2012 の詳細については、 [Lifecycle Services (LCS) における ビジネス プロセス モデラー (BPM)](ax-2012/business-process-modeler-lcs.md)を参照してください。 
 
 ## <a name="prerequisites"></a>必要条件
 

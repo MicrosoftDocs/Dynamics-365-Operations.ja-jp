@@ -4,22 +4,17 @@ description: このトピックでは、トレース パーサーを使用して
 author: tfehr
 ms.date: 10/19/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 13441
-ms.assetid: eb0fbbaf-07d4-4a02-85e8-0d4f7920a0b9
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9a2d380d3e8d6f9419f4e5a52943a521aa236572
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 5e8d8da328bd3ff1829932e4188ceeef8ebf2f10
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867330"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087384"
 ---
 # <a name="diagnose-issues-and-analyze-performance-by-using-trace-parser"></a>Trace Parser を使用した問題点の診断およびパフォーマンスの分析
 

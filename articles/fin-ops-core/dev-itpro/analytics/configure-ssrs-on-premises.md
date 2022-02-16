@@ -76,9 +76,9 @@ ms.locfileid: "6726360"
 
     [![暗号化キー タブ。](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
 
-12. **定期売買の設定** タブをクリックし、設定が次の図と一致しているかを確認します。
+12. **サブスクリプションの設定** タブをクリックし、設定が次の図と一致しているかを確認します。
 
-    [![定期売買の設定タブ。](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
+    [![サブスクリプションの設定タブ。](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
 
     **スケール アウト配置** タブでは既定の設定を変更しません。
 

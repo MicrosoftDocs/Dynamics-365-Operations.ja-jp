@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ac1e03d589bd0e3e1b7010b17045bac5ff86547
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: c6f6fbf3cc17df5ff35757d36a80647d3984b18e
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952614"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061587"
 ---
 # <a name="error-management-and-alert-notifications"></a>エラー管理と警告通知
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Microsoft は、エラーに強い二重書き込みを実現するために、多くの時間と労力を費やしてきました。 ただし、二重書き込み用のテーブル マップを有効にしている間または後に、問題が発生した場合は、特定のテーブル マップを選択して、それらのすべてのアクティビティとエラーの統合ビューを取得できます。 この統合ビューには、エラー ログが含まれています。 目標は、テーブル マップのアクティビティの単一ビューを提供することにより、トラブルシューティングを支援することです。
 
@@ -33,11 +33,11 @@ Microsoft は、エラーに強い二重書き込みを実現するために、�
 
 ## <a name="re-running-execution-for-initial-sync"></a>初期同期の実行の再実行
 
-Finance and Operations アプリ と Dataverse の間で既存のデータをコピーしているときに問題が発生した場合、**初回同期の詳細** タブにエラー数が表示されます。 
+財務と運用アプリと Dataverse の間で既存のデータをコピーしているときに問題が発生した場合は、**初期同期の詳細** タブにエラーの数が表示されます。 
 
 ![初期同期エラー。](media/Initial-sync-rerun-1.png)
 
-個々のプロジェクトをクリックすると、同期が失敗した方向 (Finance and Operations アプリから Dataverse またはその逆) と、失敗した理由の詳細が表示されます。 基になる問題を修正することを選択してから、最後の同期で失敗またはエラーが発生したレコードとともに、に実行全体を再試行する **実行の再実行** を選択できます。これが完了すると、初期同期が完了し、テーブルは **実行中** の状態に戻ります。 エラーを無視して新しい増分データを追加する場合があります。 この場合は、**エラーなしで再実行** を選択できます。これにより、新しいデータを追加し、エラーが発生したレコードを再試行する必要がなくなります。 
+個々のプロジェクトをクリックすると、同期が失敗した方向 (財務と運用アプリから Dataverse またはその逆) と、失敗した理由の詳細が表示されます。 基になる問題を修正することを選択してから、最後の同期で失敗またはエラーが発生したレコードとともに、に実行全体を再試行する **実行の再実行** を選択できます。これが完了すると、初期同期が完了し、テーブルは **実行中** の状態に戻ります。 エラーを無視して新しい増分データを追加する場合があります。 この場合は、**エラーなしで再実行** を選択できます。これにより、新しいデータを追加し、エラーが発生したレコードを再試行する必要がなくなります。 
 
 ![エラーのある初期同期再試行。](media/Initial-sync-rerun-3.png)
 

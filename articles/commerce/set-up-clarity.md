@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce での Microsoft Clarity の設定
 description: このトピックでは、Dynamics 365 Commerce 環境内で Microsoft Clarity を設定する方法について説明します。
 author: BrianShook
-ms.date: 04/23/2021
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-01-25
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ecc843bb5812280efb6a1c7014aa542966dbc61f6b7b5fa66eb07da7327771a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a35c7cc064154ecd3ef62f17ae3592b4473f5e35
+ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725322"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8051384"
 ---
 # <a name="set-up-microsoft-clarity-in-dynamics-365-commerce"></a>Dynamics 365 Commerce での Microsoft Clarity の設定
 
@@ -52,19 +52,6 @@ Commerce サイト ビルダーで Clarity を構成するには、次の手順�
 1. **child-src** ディレクティブ セクションで、**追加** を選択します。
 1. **``https://www.clarity.ms``** を入力します。
 1. **connect-src** および **script-src** ディレクティブについて、手順 4 と 5 を繰り返します。
-1. **保存と公開** を選択します。
-
-### <a name="add-clarity-to-the-correlation-header-excluded-domains-allow-list"></a>除外ドメイン許可リストの相関ヘッダーに Clarity を追加
-
-Clarity をサイトで機能させるには、Clarity ドメインを **相関ヘッダー除外ドメイン** 許可リストに追加する必要があります。 
-
-Commerce サイト ビルダーの相関ヘッダー除外ドメインリストに Clarity を追加するには、次の手順に従います。
-
-1. Commerce サイトに移動します。
-1. **サイト 設定 > 拡張機能** を選択します。
-1. **構成** タブを選択します。
-1. **相関ヘッダー除外ドメイン** セクションで **追加** を選択します。
-1. **\*.clarity.ms** を入力します。
 1. **保存と公開** を選択します。
 
 ### <a name="embed-clarity-tracking-script-code-into-site-pages"></a>Clarity トラッキング スクリプト コードをサイト ページに埋め込む

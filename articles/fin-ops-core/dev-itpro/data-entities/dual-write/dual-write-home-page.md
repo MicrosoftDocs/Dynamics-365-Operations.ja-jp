@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cbd5666c94909d107d1653a12f0efa4eb931253
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 126b0b4d354be14f14dce9788b084d0422d03228
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927391"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060499"
 ---
 # <a name="dual-write-home-page"></a>二重書き込みホーム ページ
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 次のトピックでは、二重書き込み統合について説明します。
 
@@ -39,9 +39,9 @@ ms.locfileid: "7927391"
 + [二重書き込みのシステム要件](dual-write-system-req.md)
 + [二重書き込みの設定方法に関するガイダンス](connection-setup.md)
 + [Lifecycle Services からの二重書き込みの設定](lcs-setup.md)
-+ 既存の Finance and Operations アプリの二重書き込みの有効化
++ 既存の財務と運用アプリの二重書き込みを有効にする
 
-    + [既存 Finance and Operations アプリの二重書き込みを有効化](enable-dual-write.md)
+    + [既存の財務と運用アプリの二重書き込みを有効にする](enable-dual-write.md)
     + [システム要件と前提条件](requirements-and-prerequisites.md)
     + [二重書き込みウィザードを使用して環境をリンクする方法](link-your-environment.md)
     + [テーブル マップの二重書き込みの有効化](enable-entity-map.md)
@@ -61,7 +61,7 @@ ms.locfileid: "7927391"
 
 ## <a name="mapping-concepts-between-apps"></a>アプリ間の概念のマッピング
 
-このトピックでは、Finance and Operations アプリケーションの概念と顧客エンゲージメント アプリケーションの概念の間のマッピングについて説明します。
+このトピックでは、財務と運用アプリケーションの概念と顧客エンゲージメント アプリケーションの概念の間のマッピングについて説明します。
 
 + [統合された顧客マスター](customer-mapping.md)
 + [統合された仕入先マスター](vendor-mapping.md)
@@ -118,11 +118,11 @@ ms.locfileid: "7927391"
 + [初期セットアップ中の問題のトラブルシューティング](dual-write-troubleshooting-initial-setup.md)
 + [初期同期中の問題のトラブルシューティング](dual-write-troubleshooting-initial-sync.md)
 + [ライブ同期の問題のトラブルシューティング](dual-write-troubleshooting-live-sync.md)
-+ [Finance and Operations アプリでの二重書き込み問題のトラブルシューティング](dual-write-troubleshooting-dual-write-module.md)
++ [財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング](dual-write-troubleshooting-dual-write-module.md)
 + [当事者およびグローバル アドレス帳の問題に関するトラブルシューティング](dual-write-troubleshooting-party-gab.md)
 + [ソリューションの認識に関する問題のトラブルシューティング](dual-write-troubleshooting-solution-awareness.md)
-+ [Finance and Operations アプリのアップグレードで生じる問題のトラブルシューティング](dual-write-troubleshooting-finops-upgrades.md)
-+ [Finance and Operations アプリと Dataverse での二重書き込み構成の確認](dual-write-troubleshooting-verify-config.md)
++ [財務と運用アプリのアップグレードに関する問題のトラブルシューティング](dual-write-troubleshooting-finops-upgrades.md)
++ [財務と運用アプリおよび Dataverse で二重書き込みの構成を確認する](dual-write-troubleshooting-verify-config.md)
 + [テーブル マップの正常性チェックのエラー コード](table-map-health-check.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

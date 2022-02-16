@@ -2,7 +2,7 @@
 title: オンプレミス配置で使用できるコマースの機能
 description: このトピックでは、オンプレミス配置で使用できるコマースの機能を一覧表示します。
 author: aamirallaqaband
-ms.date: 11/01/2018
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,29 +12,30 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30
-ms.openlocfilehash: 943a25995ccf814712df35a5aafd8e5f4b93bad6fac42ddf26627873d78c97e7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d373639db359b7dca5b18393151a93846c90a660
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753090"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077179"
 ---
 # <a name="commerce-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できるコマースの機能
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、オンプレミス配置で使用できるコマースの機能を一覧表示します。
 
 オンプレミス配置の詳細については、[オンプレミス配置のホーム ページ](../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) を参照してください。
 
 | コンポーネント            | On-premises ステータス |
-|----------------------|--------------------|
+| -------------------- | ------------------ |
 | クラウド販売時点管理  | 取得可能          |
 | Retail 販売時点管理 | 使用可能          |
 | Modern 販売時点管理 | 使用可能          |
-| コマース スケール ユニット  | 使用可能          |
-| チャネル データベース     | 使用可能          |
-| Hardware Station     | 使用不可      |
+| Commerce Scale Unit  | 取得可能          |
+| チャネル データベース     | 取得可能          |
+| ハードウェア ステーション     | 取得可能          |
 | AX 2012 N-1 のサポート  | 使用不可      |
 
 ## <a name="head-office-capability"></a>本社の機能
@@ -108,9 +109,9 @@ ms.locfileid: "6753090"
 
 | コンポーネント                      | On-premises ステータス |
 |--------------------------------|--------------------|
-| 梱包明細                   | 利用可          |
-| フルフィルメント グループ              | 利用可          |
-| クロス ドッキングと集中的購買 | 利用可          |
+| 梱包明細                   | 取得可能          |
+| フルフィルメント グループ              | 取得可能          |
+| クロス ドッキングと集中的購買 | 取得可能          |
 | 手持在庫数量                    | 利用可          |
 | 在庫数                   | 利用可          |
 | 在庫調整           | 取得可能          |

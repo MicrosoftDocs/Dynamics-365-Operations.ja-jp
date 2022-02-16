@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c53089a21ec3089be66d7f0051bc5ad6cd377b9
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 9f3acada586e5985a17bbccb5583d2799757122a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404051"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070081"
 ---
 # <a name="behavioral-properties-on-data-entities"></a>データ エンティティの動作プロパティ
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 すべてのデータ エンティティには、そのエンティティのデータソースであるテーブルまたはビューの同じプロパティ値をオーバーライドできるようにするプロパティがあります。 選択内容は、エンティティの動作に影響します。 次の表では、最初の列に、このトピックで説明したプロパティが一覧表示されています。 一番上の行には、エンティティ デザイナーでプロパティが見つかったレベルが表示されます。 レベルは、精度の細かい順に一覧表示されます。データ ソース レベルはエンティティ レベルよりも細かく、フィールド レベルほどは細かくはありません。
 

@@ -1,6 +1,6 @@
 ---
 title: システム要件と前提条件
-description: このトピックでは、Finance and Operations アプリで二重書き込みを有効にする前に設定する必要があるシステム要件と前提条件について説明します。
+description: このトピックでは、財務と運用アプリで二重書き込みを有効にする前に設定する必要があるシステム要件と前提条件について説明します。
 author: NHelgren
 ms.date: 10/28/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ac2ffed2355de7b691b27d4d1bae86db8b6f701
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a9909e79b8f70e8e709325b2c05b585e546650b3
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782491"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061292"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## <a name="what-regions-are-available"></a>どの地域で使用できますか?
 
@@ -40,7 +40,7 @@ ms.locfileid: "7782491"
 
 ## <a name="verify-requirements-and-grant-access"></a>要件を確認し、アクセスを許可する
 
-二重書き込みを有効にする前に、次の手順に従って、最小システム要件を満たしていることを確認し、相互に接続する必要があるアプリへのアクセスを許可します。 二重書き込み正常性チェックは、Finance and Operations アプリ環境と Dataverse 環境をリンクする二重書き込みウィザードを完了すると、前提条件を検証します。
+二重書き込みを有効にする前に、次の手順に従って、最小システム要件を満たしていることを確認し、相互に接続する必要があるアプリへのアクセスを許可します。 二重書き込み正常性チェックは、財務と運用アプリ環境と Dataverse 環境をリンクする二重書き込みウィザードを完了すると、前提条件を検証します。
 
 次の図に示すように、環境の設定時に **Dynamics 365 アプリ** を **はい** に設定する必要があります。 または、Dataverse に付属し、**Dynamics 365 アプリを有効化する** が **はい** に設定されている Customer Engagement アプリを選択することもできます。
 
@@ -48,13 +48,13 @@ ms.locfileid: "7782491"
 
 1. プラットフォーム更新プログラムとアプリのバージョンを検証します。
 
-    Finance and Operations アプリ環境で、Platform update 33 (アプリ バージョン 10.0.9) 以降が実行されていることを確認します。
+    財務と運用アプリ環境で、プラットフォーム アップデート 33 (アプリ バージョン 10.0.9) 以降が実行されていることを確認します。
 
     **関連する正常性チェックの結果:**
 
     *アプリのバージョンが最新です*
 
-    *二重書き込みは、Platform Update PU 33 (アプリ バージョン 10.0.9) 以上の Finance and Operations アプリ環境でサポートされています*
+    *二重書き込みは、Platform Update PU 33 (アプリ バージョン 10.0.9) 以上の財務と運用アプリ環境でサポートされています*
 
 2. 二重書き込みコア ソリューションをインストールします。
 
@@ -73,11 +73,11 @@ ms.locfileid: "7782491"
 
     *二重書き込みコア ソリューションには、テーブル マップのメタデータが含まれており、環境にインストールする必要があります*
 
-3. Finance and Operations アプリに接続できるように Dataverse アクセスを許可します。
+3. 財務と運用アプリに接続できるように Dataverse アクセスを許可します。
 
-    1. Finance and Operations アプリのインスタンスを開き 、Azure Active Directory アプリケーションを検索して移動します。
+    1. 財務と運用アプリのインスタンスを開き、Azure Active Directory アプリケーションを検索して移動します。
 
-    2. 新しいクライアント ID 行 **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452** を追加するには、**新規** を選択します。 この行は、Dataverse から Finance and Operations アプリへの接続に使用されるアプリのアプリケーション ID です。
+    2. 新しいクライアント ID 行 **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452** を追加するには、**新規** を選択します。 この行は、Dataverse から財務と運用アプリへの接続に使用されるアプリのアプリケーション ID です。
     3. 前の2つの手順を繰り返して、別のクライアント ID 行 **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b** を追加します。
 
     完了したら、次の手順に従ってテーブルの一覧を更新します:
@@ -86,10 +86,10 @@ ms.locfileid: "7782491"
     2. **ワークスペース \> データ管理** に移動して、**フレームワーク パラメーター** タイルを選択します。 次に、**エンティティ設定** タブ (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`) で、**エンティティ リストの更新** を選択します。
 
     **関連する正常性チェックの結果:**<br>
-    *Dataverse は Finance and Operations アプリに接続できます*<br>
+    *Dataverse は財務と運用アプリに接続可能*<br>
     *二重書き込みを有効にする前に、相互に接続するアプリへのアクセスを許可する必要があります<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 のアプリ ユーザーが存在します<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b のアプリ ユーザーが存在します*
 
-4. Dataverse に接続できるように Finance and Operations アプリへのアクセスを許可します。 アプリケーション ID およびセキュリティ ロールに関する次の情報を使用して、[アプリケーション ユーザーの作成](/power-platform/admin/manage-application-users#create-an-application-user)の手順に従います。
+4. Dataverse に接続できるように、財務と運用アプリのアクセスを許可します。 アプリケーション ID およびセキュリティ ロールに関する次の情報を使用して、[アプリケーション ユーザーの作成](/power-platform/admin/manage-application-users#create-an-application-user)の手順に従います。
 
     + **アプリケーション**: これらのアプリケーションにユーザーを追加します:
 
@@ -111,7 +111,7 @@ ms.locfileid: "7782491"
         > 少なくとも、**事業単位のユーザーは、そのチームが所有しているすべての行に対する読み取りアクセスを持つ** ことになります。 これが必要な動作でない場合、ユーザーがルートの事業単位のメンバーでないことを確認します。
 
     **関連する正常性チェックの結果:**<br>
-    *Finance and Operations アプリは Dataverse に接続できます*<br>
+    *財務と運用アプリは Dataverse に接続可能*<br>
     *二重書き込みを有効にする前に、相互に接続するアプリへのアクセスを許可する必要があります<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 00000015-0000-0000-c000-000000000000 のアプリ ユーザーが存在します<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b のアプリ ユーザーが存在します*
 
 5. テナントでアプリへの同意をします。
@@ -162,7 +162,7 @@ ms.locfileid: "7782491"
 
 9. サポートされているテナント コンフィギュレーションを指定します。
 
-    Finance and Operations アプリと Dataverse が同じテナントにインストールされていることを確認します。 テナント間シナリオは現在サポートされていません。
+    財務と運用アプリと Dataverse が同じテナントにインストールされていることを確認します。 テナント間シナリオは現在サポートされていません。
 
     > [!NOTE]
     > バージョン 1.0.16.0 より前の二重書き込みコア ソリューションについては、変更および追加の手順の次のセクションを参照してください。 
@@ -178,7 +178,7 @@ ms.locfileid: "7782491"
 
     2. **受け入れる** を選択します。
 
-        **承認** を選択することで、テナントにアプリケーション ID **33976c19-1db5-4c02-810e-c243db79efde** を持つアプリのインストールに同意したことになります。 Dataverse は、Finance and Operations アプリと通信するためにこのアプリが必要です。
+        **承認** を選択することで、テナントにアプリケーション ID **33976c19-1db5-4c02-810e-c243db79efde** を持つアプリのインストールに同意したことになります。 Dataverse は、財務と運用アプリと通信するためにこのアプリが必用です。
 
     
     **関連する正常性チェックの結果:**<br>

@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19d6c9b59f61c7cf84e09763872843e0fdf3b265
-ms.sourcegitcommit: b4d9f42c26f6dabdffee687671b254c901c54f1f
+ms.openlocfilehash: 3a8b7fd1136a8b9168fbcd9b9e6b50da6d8ef6e1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7646758"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069364"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
 
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
 このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
@@ -51,11 +54,11 @@ Microsoft Excel アドインと Microsoft Word アドインは、Office Web/Java
 
 ### <a name="how-can-i-force-an-update-of-office"></a>どのように Office の更新を強制できますか。
 
-Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](/deployoffice/overview-update-channels))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 最も簡単な方法は、Office 配置ツールを使用して現在のチャネルに切り替えることです。 この場合、最新の更新プログラムはすぐにインストールされます。
+Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](/deployoffice/overview-update-channels)). この場合、[Office 配置ツールを使用して現在のチャネルに移動する](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 最も簡単な方法は、Office 配置ツールを使用して現在のチャネルに切り替えることです。 この場合、最新の更新プログラムはすぐにインストールされます。
 
 ### <a name="why-cant-you-tell-me-what-version-of-office-or-excel-a-particular-issue-is-fixed-in"></a>どのバージョンの Office または Excel で特定の問題が修正されたか知ることができないのはなぜですか。
 
-Office には、多くのリリースがあります。 これらのリリースは、さまざまな時刻にアップデートを受け取り、対応しないさまざまなバージョン番号を持ちます。 頻繁に使用されるいくつかのバージョンの Office および更新メソッドは、Click to Run (C2R) Current channel、C2R Deferred、C2R First Update Deferred、Office Insider Fast、Office Insider Slow、MSI/MSO (DVD からインストール) です。 Office のバージョンの詳細については、[Microsoft 365 アプリの更新に関するリリース情報](/officeupdates/release-notes-microsoft365-apps?f=255&MSPPError=-2147217396) を参照してください。
+Office には、多くのリリースがあります。 これらのリリースは、さまざまな時刻にアップデートを受け取り、対応しないさまざまなバージョン番号を持ちます。 頻繁に使用されるいくつかのバージョンの Office および更新メソッドは、Click to Run (C2R) Current channel、C2R Deferred、C2R First Update Deferred、Office Insider Fast、Office Insider Slow、MSI/MSO (DVD からインストール) です。 Office バージョンの詳細については、[Microsoft 365 アプリの更新に関するリリース情報 ](/officeupdates/release-notes-microsoft365-apps?f=255&MSPPError=-2147217396) を参照してください。
 
 ### <a name="why-am-i-having-trouble-signing-into-the-excel-add-in"></a>Excel アドインへのサインインに問題が生じるのはなぜですか。
 
@@ -158,7 +161,7 @@ Skype 統合は、パブリック クラウドの環境で利用できます。 
 -  「AADSTS50020: ID プロバイダー https://sts.windows.net/XXX のユーザー アカウント 'XXX' はテナント 'XXX' に存在しないため、テナントのアプリケーション 2bc50526-cdc3-4e36-a970-c284c34cbd6e (Microsoft Business Office のアドイン) にアクセスできません。」
 -  「選択したユーザー アカウントはテナント 'XXX' に存在しないため、テナントのアプリケーション 2bc50526-cdc3-4e36-a970-c284c34cbd6e にアクセスできません。」
 
-**説明:** この問題は、外部ユーザーに関して 2021 年 4 月に Azure Active Directory (Azure AD) に行われた変更により発生します。 この変更は Finance and Operations アプリに対して行われたものではないので、すべてのバージョンのプラットフォームまたはアプリケーションの顧客に影響を与える可能性があります。  
+**説明:** この問題は、外部ユーザーに関して 2021 年 4 月に Azure Active Directory (Azure AD) に行われた変更により発生します。 この変更は財務と運用アプリに対して行われたものではないので、すべてのバージョンのプラットフォームまたはアプリケーションの顧客に影響を与える可能性があります。  
 
 **修正:** すべての外部ユーザーは、 Azure AD を通してテナントに招待される必要があります。 詳細については、[Azure Active Directory B2B コラボレーションを使用してユーザーを招待する](/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration) を参照してください。
 

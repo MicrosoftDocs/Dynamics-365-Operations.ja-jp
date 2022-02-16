@@ -1,30 +1,29 @@
 ---
 title: ビジネス イベントの概要
-description: このトピックは、外部システムが Finance and Operations アプリから通知を受信できるようにする、ビジネス イベントに関する情報を提供します。
+description: このトピックは、外部システムが財務と運用アプリから通知を受信できるようにする、ビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
 ms.date: 11/09/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 581d6a9ff6302cf6928265969f73285488c785e5
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: be8eb729284e35d237224ac7799d7a7c2465ad08
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779556"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985124"
 ---
 # <a name="business-events-overview"></a>ビジネス イベントの概要
 
 [!include[banner](../includes/banner.md)]
 
-ビジネス イベントは外部システムが Finance and Operations アプリケーションから通知を受信するメカニズムを提供します。 これにより、システムは、ビジネス イベントに対してビジネス アクションを実行できます。
+ビジネス イベントは外部システムが財務と運用アプリケーションから通知を受信するメカニズムを提供します。 これにより、システムは、ビジネス イベントに対してビジネス アクションを実行できます。
 
 ビジネス プロセスの実行時に、ビジネス イベントが発生します。 ビジネス プロセス中には、それに参加するユーザーは、ビジネス プロセスを構成するタスクを完了するビジネス アクションを実行します。 
 
@@ -118,7 +117,7 @@ ms.locfileid: "7779556"
 実装の統合の要件と統合ソリューションの設計はさまざまです。 統合の要件は、ビジネス イベントの消費モデルの識別に影響します。 簡単に言うと、ビジネス イベントを使用した統合を設計する際に、次の点を考慮する必要があります。
 
 - ビジネス イベントは Power Automate、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用して消費できます。
-- Power Automate、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用するには、顧客は独自の購読を提供する必要があります。
+- Power Automate、Service Bus、イベント グリッド、その他のエンドポイント タイプを使用するには、顧客は独自のサブスクリプションを提供する必要があります。
 - ビジネス イベントは、すべての法人または特定の法人で有効化できます。
 - ビジネス イベントは、一意のエンドポイントまたは複数のエンドポイントに送信できます。
 - Power Automate はビジネス イベントを直接購読できます。
@@ -127,7 +126,7 @@ ms.locfileid: "7779556"
 ビジネス イベントはペイロードに管理番号を含めることで消費側でべき等の動作を有効にします。 制御番号は増加する番号であり、重複や故障出荷を検出するために消費アプリケーションによって追跡できます。 制御番号は連番にできないため、順序番号と読み間違えられることはありません。 番号付けスペースに間隔がある可能性があります。
 
 ## <a name="filtering-in-azure-event-grid-and-azure-service-bus"></a>Azure Event Grid と Azure Service Bus でのフィルター処理
-Azure Service Bus と Azure Event Grid は受信メッセージの条件を指定してトピックの購読をサポートします。 詳細については [トピック フィルターとアクション](/azure/service-bus-messaging/topic-filters) および [イベント グリッド購読のイベント フィルターを理解する](/azure/event-grid/event-filtering) を参照してください。
+Azure Service Bus と Azure Event Grid は受信メッセージの条件を指定してトピックの購読をサポートします。 詳細については [トピック フィルターとアクション](/azure/service-bus-messaging/topic-filters) および [イベント グリッド サブスクリプションのイベント フィルターを理解する](/azure/event-grid/event-filtering) を参照してください。
 
 Azure Service Bus や Azure Event Grid に送信されるビジネス イベントは、この目的で使用できる次のフィールドを持ちます。 購読者はこの情報を使用して、必要に応じてさらに特定のトピックを購読できます。
 

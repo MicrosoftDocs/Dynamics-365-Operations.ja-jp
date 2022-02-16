@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Commerce 10.0.24 (2022 年 2 月) のプレビュー機能
-description: このトピックでは、Dynamics 365 Commerce 10.0.24 のプレビュー リリースの新機能または変更された機能について説明します。
+title: Dynamics 365 Commerce 10.0.24 の新機能および変更された機能 (2022 年 2 月)
+description: このトピックでは、Dynamics 365 Commerce 10.0.24 の新機能または変更された機能について説明します。
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-12-31
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ce3a227cf0f181b539f79bf78d8e943152bb54fb
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 61997ba4688addd6d9e71a496287bee8c0ecedf0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891588"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982133"
 ---
-# <a name="preview-features-in-dynamics-365-commerce-10024-february-2022"></a>Dynamics 365 Commerce 10.0.24 (2022 年 2 月) のプレビュー機能
+# <a name="whats-new-or-changed-in-dynamics-365-commerce-10024-february-2022"></a>Dynamics 365 Commerce 10.0.24 の新機能および変更された機能 (2022 年 2 月)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.24 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.1084 で、次のスケジュールで使用できます。
 
@@ -57,9 +56,9 @@ ms.locfileid: "7891588"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Dynamics 365 Commerce 10.0.24 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.24 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md) を参照してください。
+Dynamics 365 Commerce 10.0.24 には、プラットフォーム更新プログラムが含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.24 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、 <!-- Add correct link --> [サポート技術情報 (KB) の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f)を確認してください。

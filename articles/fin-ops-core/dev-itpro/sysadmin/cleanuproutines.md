@@ -2,7 +2,7 @@
 title: Dynamics 365 Finance と Dynamics 365 Supply Chain Management のクリーンアップ ルーチン
 description: このトピックでは、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management のクリーンアップ ルーチンの概要を提供します。
 author: dvliegen
-ms.date: 10/21/2021
+ms.date: 02/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dvliegen
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 91012849c454d431a7b935013d7f7e33047e900a
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: f9507ed57cf91578986f9d5336558d802c5c0108
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675257"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087437"
 ---
 # <a name="cleanup-routines-in-dynamics-365-finance-and-dynamics-365-supply-chain-management"></a>Dynamics 365 Finance と Dynamics 365 Supply Chain Management のクリーンアップ ルーチン
 
@@ -104,10 +104,17 @@ Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management �
 | 生産管理 \> 定期的なタスク \> クリーンアップ \> 登録データのクリーンアップ | <p>登録データを定期的にクリーンアップすることをお勧めします。 このクリーンアップ ルーチンは、処理されたデータのみを削除します。</p><p>**注:** 後に文書作成のために必要になる可能性がある登録データは削除しないように注意してください。</p> |
 | 生産管理 \> 定期的なタスク \> クリーンアップ \> 計画登録をアーカイブに保存 | このクリーンアップ ルーチンは、作業登録テーブルから計画登録を削除します。 |
 
+## <a name="cost-management"></a>原価管理 
+
+| パス | Description |
+|------|-------------|
+| 原価管理 \> 製造会計 \> クリーンアップ \> 製造オーダーのクリーンアップ | <p>**生産管理 \> 定期的なタスク \> クリーンアップ \> 製造オーダーのクリーンアップ** と同じです。<br><br>このクリーンアップ ルーチンは、終了した製造オーダーを削除します。</p> |
+| 原価管理 \> 製造会計 \> クリーンアップ \> 製造再計算 | 材料の見積原価および時間消費を再計算する必要がある製造オーダーをバンドルし、再計算タスクをスケジュールします。 |
+| 原価管理 \>製造会計 \> クリーンアップ \> 原価計算シート キャッシュのクリーンアップ | CostSheetCache テーブルは、価格生成に役立つ原価シートの一時的な場所として使用されます。 このジョブは、原価シート キャッシュをクリーンアップします。 指定された日数以上が経過したキャッシュ内のレコードは、削除されます。 |
 
 ## <a name="master-planning"></a>マスター プラン
 
-| パス | 説明 |
+| パス | Description |
 |------|-------------|
 | マスター プラン \> マスター プラン \> プランの管理 \> プラン バージョンのクリーンアップ | 通常、このクリーンアップは自動的に実行されます。 ただし、自動クリーンアップは誤動作することがあり、孤立したデータがシステムに残ることがあります。 この孤立したデータによってクエリが低速になり、データベース サイズが増大します。 マスター リソース プラン (MRP) が実行されていない場合は、予防的に毎月 1 回、実行することをお勧めします。 |
 

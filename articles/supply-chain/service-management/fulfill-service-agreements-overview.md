@@ -58,8 +58,8 @@ ms.locfileid: "7985889"
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><strong>定期売買</strong></p></td>
-<td><p>サービス定期売買を作成し、管理します。</p></td>
+<td><p><strong>サブスクリプション</strong></p></td>
+<td><p>サービス サブスクリプションを作成し、管理します。</p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -93,8 +93,8 @@ ms.locfileid: "7985889"
 </tr>
 <tr class="odd">
 <td><p></p></td>
-<td><p><strong>定期売買の指数化 </strong></p></td>
-<td><p>定期売買の基準価格およびインデックスを更新します。</p></td>
+<td><p><strong>サブスクリプションの指数化 </strong></p></td>
+<td><p>サブスクリプションの基準価格およびインデックスを更新します。</p></td>
 </tr>
 </tbody>
 </table>

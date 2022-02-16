@@ -15,17 +15,16 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 04-31-2020
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c372b3a8172a925dce2a2e9aad720a42087dfff4
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 6895fc76b498c6068356b13f26e78cb4c3ea0091
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891457"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983143"
 ---
 # <a name="embed-processor-credit-card-receipts-in-customer-receipts"></a>顧客のレシートにプロセッサのクレジット カードのレシートを埋め込む
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、決済処理業者からのクレジット カードのレシートを Microsoft Dynamics 365 Commerce の顧客の項目別取引レシートに埋め込む方法について説明します。 この機能は、Commerce バージョン 10.0.8 リリース以降で使用できます。
 

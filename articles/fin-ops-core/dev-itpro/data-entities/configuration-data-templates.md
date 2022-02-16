@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 9021b42f66d0b8dd3cd97e28e1e3c81828122563
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 8fd0df46317942c94b1ee6ff92591050661e4df1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754034"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068780"
 ---
 # <a name="configuration-data-templates"></a>コンフィギュレーション データ テンプレート
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 コンフィグレーション データ テンプレートは、データ プロジェクトで使用できる各モジュール領域のエンティティの事前定義リストです。 **データ管理** ワークスペース内の **テンプレート** ページを使用することにより、これらのテンプレートを作成、表示、および修正することができます。
 
@@ -116,7 +119,7 @@ ms.locfileid: "7754034"
 | プロジェクト会計        | 1    | 650   |
 
 > [!NOTE]
-> Retail テンプレートは、Finance and Operations アプリ更新プログラム 3 でリリースされる予定です。
+> Retail テンプレートは、財務と運用アプリ更新プログラム 3 でリリースされる予定です。
 
 共有システム エンティティが最初に処理されるように、共有システム エンティティのレベル 10 から 22 までが予約されました。 ほとんどすべてのシステムは会社固有の総勘定元帳のエンティティが使用できます。 したがって、私たちはそれらのエンティティに対してレベル 25 を予約しました。 これらのレベルは、構成内のほとんどの共有データに必要な最小基本セットアップを表します。
 

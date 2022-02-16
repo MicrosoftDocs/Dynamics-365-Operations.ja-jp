@@ -3,7 +3,7 @@ title: Commerce のアップグレードおよび N-1 のサポート
 description: Dynamics 365 Commerce のリリースで、アップグレードと N-1 サポートが有効になりました。
 author: athinesh99
 ms.date: 11/14/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 8b2f8d8dcd876b57573a53f980a37ef8d4d34acc
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3e82ec2a49ccff2b128bbead81fa762b53302560
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782641"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984583"
 ---
 # <a name="upgrade-and-n-1-support-for-commerce"></a>Commerce のアップグレードおよび N-1 のサポート
 

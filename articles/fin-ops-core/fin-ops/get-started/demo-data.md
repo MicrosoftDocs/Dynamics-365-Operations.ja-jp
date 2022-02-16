@@ -3,7 +3,7 @@ title: デモ データの概要
 description: このトピックでは、デモ データの概要を示します。
 author: sericks007
 ms.date: 09/20/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d49263acba48c3347cf5a330d135221b60480e6a48259152d9c8ea65c327e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5f74af401a1da79f5bdb218108e1fa0d23bacd85
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736186"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984955"
 ---
 # <a name="demo-data-overview"></a>デモ データの概要
 
@@ -45,12 +45,12 @@ ms.locfileid: "6736186"
 | CNMF         | Contoso エンターテインメント中国          |
 | DAT          | 既定の会社                      |
 | DEMF         | Contoso エンターテインメント システム ドイツ |
-| FRRT         | Contoso Retail FR                    |
+| FRRT         | Contoso 小売 FR                    |
 | FRSI         | Contoso コンサルティング FR                |
 | GBSI         | Contoso コンサルティング GB                |
 | GLCO         | Contoso グループ                        |
 | GLMF         | Contoso エンターテインメント システム         |
-| GLRT         | Contoso Retail                       |
+| GLRT         | Contoso 小売                       |
 | GLSI         | Contoso コンサルティング                   |
 | INMF         | Contoso インド                        |
 | ITCO         | Contoso イタリア                        |
@@ -58,12 +58,12 @@ ms.locfileid: "6736186"
 | MXMF         | Contoso エンターテインメント システム メキシコ  |
 | MYMF         | Contoso エンターテインメント システム MYMF    |
 | RUMF         | Contoso エンターテインメント システム ロシア  |
-| RURT         | ContosoRetail RUS                   |
+| RURT         | Contoso 小売 RUS                   |
 | US01         | Contoso US01                         |
 | USMF         | Contoso エンターテインメント システム USA     |
 | USP2         | Contoso オレンジ ジュース                 |
 | USPI         | Contoso プロセス産業             |
-| USRT         | ContosoRetail USA                   |
+| USRT         | Contoso 小売 USA                   |
 | USSI         | Contoso コンサルティング USA               |
 
 ## <a name="embedded-analytics"></a>埋め込み分析
@@ -75,7 +75,7 @@ ms.locfileid: "6736186"
 | DEMF         | Contoso エンターテインメント システム ドイツ |
 | GLMF         | Contoso エンターテインメント                |
 | USMF         | Contoso エンターテインメント システム USA     |
-| USRT         | ContosoRetail USA                   |
+| USRT         | Contoso 小売 USA                   |
 | USSI         | Contoso コンサルティング USA               |
 
 現金の概要 Power BI コンテンツからのレポートが、**現金の概要** および **銀行管理** ワークスペースで表示されます。

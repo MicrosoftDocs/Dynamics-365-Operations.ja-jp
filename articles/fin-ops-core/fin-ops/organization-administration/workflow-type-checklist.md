@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 62d749faa807a996ad94003ac3b6b296c19b8bf0
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 389f80e432605db3a67977bb5f3e11ccf01998ce
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783114"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065565"
 ---
 # <a name="workflow-type-checklist"></a>ワークフロー タイプ チェックリスト
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、新しいワークフロー タイプを作成するために必要な手順について説明します。 ワークフロー タイプは、 ワークフローの構成を作成するために使用されます。
 

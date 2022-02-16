@@ -14,6 +14,8 @@
               items:
                 - name: プラットフォーム更新プログラムの新機能および変更された機能に関するホームページ
                   href: get-started/whats-new-home-page.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.25 (2022 年 4 月)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.24 (2022 年 2 月)
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.23 (2022 年 1 月)
@@ -426,13 +428,15 @@
               items:
                 - name: 配置可能なモデル パッケージの作成
                   href: deployment/create-apply-deployable-package.md
-                - name: 配置可能なパッケージのコマンドラインからのインストール
+                - name: コマンド ラインから展開可能パッケージをインストールする
                   href: deployment/install-deployable-package.md
                 - name: パッケージのアンインストール
                   href: deployment/uninstall-deployable-package.md
+                - name: ゼロ ダウンタイムで X++ カスタム スクリプトを実行する
+                  href: deployment/run-custom-scripts.md
                 - name: パッケージ アプリケーションに関する問題のトラブルシューティング
                   href: deployment/deployable-package-troubleshooting.md
-            - name: カスタム ヘルプの配置
+            - name: カスタム配置のヘルプ
               items:
                 - name: カスタム ヘルプの概要
                   href: help/custom-help-overview.md
@@ -854,7 +858,9 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: クラスおよびメソッドの属性を使用した SysTest フィルター処理
                   href: perf-test/systest-filtering.md
-                - name: 承認テストのライブラリ
+                - name: 複数の値をテストする SysTestRow 属性
+                  href: perf-test/systest-row.md
+                - name: 承認テスト ライブラリ
                   items:
                     - name: 承認テスト ライブラリのリソース
                       href: perf-test/acceptance-test-library.md
@@ -1240,7 +1246,7 @@
           items:
             - name: モバイル プラットフォームのリソース
               href: mobile-apps/platform/mobile-platform-home-page.md
-            - name: 使用開始
+            - name: 概要
               items:
                 - name: モバイル プラットフォームの使用を開始する
                   href: mobile-apps/platform/mobile-platform-getting-started.md

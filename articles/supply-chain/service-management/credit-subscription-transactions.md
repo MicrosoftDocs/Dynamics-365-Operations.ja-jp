@@ -1,6 +1,6 @@
 ---
-title: 定期売買トランザクションの貸方記入
-description: このトピックでは、定期売買手数料トランザクションの貸方への記入方法について説明します。
+title: サブスクリプション トランザクションの貸方記入
+description: このトピックでは、サブスクリプション手数料トランザクションの貸方への記入方法について説明します。
 author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
@@ -22,16 +22,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 09/29/2021
 ms.locfileid: "7571452"
 ---
-# <a name="credit-subscription-transactions"></a>定期売買トランザクションの貸方記入 
+# <a name="credit-subscription-transactions"></a>サブスクリプション トランザクションの貸方記入 
 
 [!include [banner](../includes/banner.md)]
 
 
-## <a name="credit-subscription-transactions"></a>定期売買トランザクションの貸方記入
+## <a name="credit-subscription-transactions"></a>サブスクリプション トランザクションの貸方記入
 
-1.  **サービス管理** \> **共通** \> **サービスの定期売買** \> **すべてのサービス定期売買** の順にクリックします。
+1.  **サービス管理** \> **共通** \> **サービス サブスクリプション** \> **すべてのサービス サブスクリプション** の順にクリックします。
 
-2.  貸方票を作成する定期売買トランザクションに関連付けられている定期売買を選択します。
+2.  貸方票を作成するサブスクリプション トランザクションに関連付けられているサブスクリプションを選択します。
 
 3.  **分析** タブを選択し、アクション ウィンドウで **手数料トランザクション** ボタンをクリックします。
 
@@ -49,7 +49,7 @@ ms.locfileid: "7571452"
 
 ## <a name="see-also"></a>参照
 
-[定期売買トランザクションの請求](invoice-subscription-transactions.md)
+[サブスクリプション トランザクションの請求](invoice-subscription-transactions.md)
 
 
  

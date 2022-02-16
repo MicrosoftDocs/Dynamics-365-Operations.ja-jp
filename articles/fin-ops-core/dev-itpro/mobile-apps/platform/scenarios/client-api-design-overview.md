@@ -3,23 +3,22 @@ title: クライアント側の設計 API
 description: このトピックでは、クライアント側での設計のための API の概要と、それらの使用に関する推奨事項について説明します。
 author: tonyafehr
 ms.date: 07/01/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 13427cafc56230a6d7131136d3906863ab78054a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2edaec2a8f3bd53d4b335fc7ef71e0fb5d8b1c07
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781292"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986071"
 ---
 # <a name="client-side-design-apis"></a>クライアント側の設計 API
 

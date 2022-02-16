@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc3f4ee7e0e4de2a4ae98a283253323233a3e58a
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: b3eeab83eaaa487cf036bb7d2f7d67ef388e63b9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404131"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071072"
 ---
 # <a name="security-and-data-entities"></a>セキュリティとデータ エンティティ
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 > [!NOTE]
 > データ エンティティは拡張可能なデータ セキュリティ (XDS) の概念をサポートしません。

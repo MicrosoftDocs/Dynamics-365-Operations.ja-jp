@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ea7a69a62f231f08837d4717d8e8af98e6078a1061ac6f6d3845899066998fc2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c4e9ffaeb0dc205c9c4370994e29168e0662141e
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712283"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063149"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise edition (2017 年 7 月) の新機能と変更点
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition (2017 年 7 月) の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされ、ビルド番号は 7.2.11792.56024 です。
 
@@ -236,7 +236,7 @@ SharePoint にレポートを送信するための標準機能は、財務報告
 
 買掛金勘定プロセスの合理化に目を向ける組織において、請求処理は多くの場合効率を必要とするプロセス領域の最上位にあると言えます。 多くの場合、組織は紙の請求書の処理からサード パーティ光学式文字認識 (OCR) サービス プロバイダにオフロードし、請求書のスキャンしたイメージと共に機械可読請求書メタデータを取得します。 自動化を支援するため、これらのアーティファクトを使用するための請求システムにソリューションが組み込まれています。 Dynamics 365 for Finance and Operations では、この自動化がそのまま有効です。 
 
-請求書自動化の大前提は、請求書ヘッダーと請求明細行の請求書メタデータ、および請求書に適用される添付ファイルを受け取ることができる標準インターフェイスを実現することです。 このインターフェイスに準拠しているコンポーネントを生成する外部のシステムは、請求書および添付ファイルの自動処理のためのフィードを Finance and Operations に送信することができるようになります。 
+請求書自動化の大前提は、請求書ヘッダーと請求明細行の請求書メタデータ、および請求書に適用される添付ファイルを受け取ることができる標準インターフェイスを実現することです。 コンポーネントを生成し、インターフェイスに準拠している外部システムは、請求書および添付ファイルの自動処理のためのフィードを Finance and Operations に送信することができます。 
 
 以下のコンポーネントは、仕入先請求書自動化のソリューション フットプリントを構成します。 
 
@@ -444,7 +444,7 @@ ESS 内では、ユーザーは自分の口座振込情報を設定すること�
 
 ### <a name="analytics-and-insights-through-power-bi"></a>Power BI による分析と洞察
 
-Finance and Operations により提供される柔軟性の高い総括的な分析を使用して、最も貴重なリソースである、社内の人員に関するより深い洞察を取得します。 Power BI を活用することにより、Finance and Operations は組織内の人材をより深く理解することができるデータの視覚エフェクトを含む組み込み分析を提供します。
+Finance and Operations により提供される柔軟性の高い総合的な分析を使用して、最も貴重なリソースである、社内の人員に関するより深い洞察を取得します。 Power BI を活用することにより、Finance and Operations では組織内の人材をより深く理解することができるデータの視覚エフェクトを含む埋め込み分析が提供されます。
 
 分析と洞察は、次のデータと視覚エフェクトを提供します。
 
@@ -501,7 +501,7 @@ Dynamics 365 for Operations (Dynamics AX 7.0 と呼ばれる) の 2016 年 8 月
 
 すべてのユーザーは Dynamics 365 for Finance and Operations、Enterprise Edition に含まれている運用データ ウェアハウスであるエンティティ格納に基づく Power BI レポートにアクセスできます。
 
-Finance and Operations アプリケーションに組み込まれたこれらのレポートにアクセスするために、Power BI ライセンスは必要ありません。 ユーザーは、このエンベデッド エクスペリエンス以外の Power BI レポートおよび機能にアクセスするには、Power BI ライセンスを別途取得する必要があります。 PowerBI.com からピン タイルおよびレポートに導入された機能は、引き続きサポートされます。
+財務と運用アプリケーションに埋め込まれたこれらのレポートにアクセスするために必要な Power BI ライセンスはありません。 ユーザーは、このエンベデッド エクスペリエンス以外の Power BI レポートおよび機能にアクセスするには、Power BI ライセンスを別途取得する必要があります。 PowerBI.com からピン タイルおよびレポートに導入された機能は、引き続きサポートされます。
 
 ### <a name="embedded-practice-manager-power-bi-content"></a>埋め込みプラクティス マネージャー Power BI コンテンツ
 
@@ -685,15 +685,15 @@ Power BI に組み込まれた包括的なレポート作成およびダッシ�
 
 ### <a name="upgrade"></a>アップグレード
 
-Dynamics  AX 2012 から Dynamics 365 for Finance and Operations へ更新できます。 完全な Dynamics AX 2012 データベースを継承し、AX 2012 コードベース を Finance and Operations にアップグレードすることができます。 移行ツールセットを介して Dynamics AX 2009 から Finance and Operations に移行し、マスター データおよび開始残高を引き継ぐことができます。
+Dynamics  AX 2012 から Dynamics 365 for Finance and Operations へ更新できます。 完全な Dynamics AX 2012 データベースを継承し、AX 2012 コードベース を Finance and Operations に更新することができます。 移行ツールセットを介して Dynamics AX 2009 から Finance and Operations に移行し、マスター データおよび開始残高を持ち出すことができます。
 
-アップグレードがより予測可能になり、アップグレード プロセスの全体的なコストが削減されます。 アップグレードは、自動分析フェーズで開始されます。このフェーズでは、アップグレードにかかる時間とコスト、それに Finance and Operations の継続的な将来のコストを削減するために必要な準備作業を定義します。 アップグレード後、自動検証フェーズでは、アップグレード プロセスの成功時に統計および測定値が表示されます。 検証の詳細を使用してアップグレードの状態を迅速に評価できるため、機能テストを続行してサインオフできます。
+アップグレードがより予測可能になり、アップグレード プロセスの全体的なコストが削減されます。 アップグレードは、自動分析フェーズで開始されます。このフェーズでは、アップグレードにかかる時間とコストを削減するために必要な準備作業と、Finance and Operations の継続的な将来のコストを定義します。 アップグレード後、自動検証フェーズでは、アップグレード プロセスの成功時に統計および測定値が表示されます。 検証の詳細を使用してアップグレードの状態を迅速に評価できるため、機能テストを続行してサインオフできます。
 
-Finance and Operations では、最新の状態にして継続的なイノベーションを利用するために高価なアップグレードを必要としません。 ボタンのクリックを使用して、製品の最新バージョンに更新することができます。 この製品は豊富なカスタマイズをサポートしており、コストのかかるコードのアップグレードを行う必要がなくなりました。 拡張子ベース カスタマイズは、すべてアップグレードを容易に移行します。 製品に導入された新機能はオプトインであり、アップグレード プロセスによって業務プロセスは影響を受けません。 管理者は、必要に応じて、製品のポスト アップグレードを使用して新機能を有効にできます。 リスクを最小限に抑えるために、アップグレードではアップグレード サンドボックスのワークフローを実行し、検証してから実稼働環境にリリースします。
+Finance and Operations では、最新の状態にして継続的なイノベーションを利用するために必要になる高価なアップグレードはありません。 ボタンのクリックを使用して、製品の最新バージョンに更新することができます。 この製品は豊富なカスタマイズをサポートしており、コストのかかるコードのアップグレードを行う必要がなくなりました。 拡張子ベース カスタマイズは、すべてアップグレードを容易に移行します。 製品に導入された新機能はオプトインであり、アップグレード プロセスによって業務プロセスは影響を受けません。 管理者は、必要に応じて、製品のポスト アップグレードを使用して新機能を有効にできます。 リスクを最小限に抑えるために、アップグレードではアップグレード サンドボックスのワークフローを実行し、検証してから実稼働環境にリリースします。
 
 詳細については、次のトピックを参照してください。
 
-- [AX 2012 から Finance and Operations へ更新](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)
+- [AX 2012 から Finance and Operations へのアップグレード](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)
 - [AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画](../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md)
 - [AX 2012 からのアップグレード - コードのアップグレード サービスを使用した工数見積](../../dev-itpro/migration-upgrade/analyze-code-upgrade.md)
 - [AX 2012 からのアップグレード: 分析のためのデモ環境の展開](../../dev-itpro/migration-upgrade/analysis-sandbox.md)
@@ -721,11 +721,11 @@ Finance and Operations では、最新の状態にして継続的なイノベー
 
 ### <a name="manage-or-view-a-project-work-breakdown-structure-using-microsoft-project-client"></a>Microsoft Project クライアントを使用してプロジェクトの作業分解構造を管理または表示します。
 
-プロジェクト スケジュールの計画や管理は複雑な題目になるため、プロジェクト マネージャーは、これの管理に役立つツールを使用する必要があります。 この機能は、Microsoft Project Client Application を使用してプロジェクトの作業分解構造を開いて管理するためのサポートを提供します。 プロジェクト マネージャーは、変更を Finance and Operations のプロジェクト作業分解構造に公開できるようになります。
+プロジェクト スケジュールの計画や管理は複雑な題目になるため、プロジェクト マネージャーは、これの管理に役立つツールを使用する必要があります。 この機能は、Microsoft Project Client Application を使用してプロジェクトの作業分解構造を開いて管理するためのサポートを提供します。 プロジェクト マネージャーは、変更を Finance and Operations のプロジェクト作業分解構造に公開できます。
 
 統合を有効にするには、Dynamics 365 アドインがユーザーのクライアント Microsoft Project アプリケーションにインストールされている必要があります。 これは **プロジェクト管理ワークスペース** を使用して行われます。 **リンク** 下の **設定** セクションにある **クライアント アドインの構成** リンクをクリックします。
 
-ドラフト ステータスの作業分解構造は、プロジェクト フォーム (**プロジェクト管理と会計\>プロジェクト\>すべてのプロジェクト**) から **Microsoft Project を開く** をクリックして Microsoft Project Client Application で開くことができます。または、**Dynamics 365 for Operations** タブで **開く** をクリックして Microsoft Project Clientin 内から開くこともできます。ユーザーは、リソースの割り当てを含む、ドラフトの作業分解構造に必要な変更を加えることができます。 プロジェクト チームがすでに Finance and Operations のプロジェクトに追加されている場合、リソース リストにはチームメンバーが設定されます。 プロジェクト チームがまだプロジェクトに追加されていない場合は、**Dynamics 365 for Operations** タブの **リソース** ボタンを選択してリソースを選択し、Microsoft Project Client 内のチームを作成することができます。作業分解構造の編集は、Finance and Operations に公開されています。
+ドラフト ステータスの作業分解構造は、プロジェクト フォーム (**プロジェクト管理と会計\>プロジェクト\>すべてのプロジェクト**) から **Microsoft Project を開く** をクリックして Microsoft Project Client Application で開くことができます。または、**Dynamics 365 for Operations** タブで **開く** をクリックして Microsoft Project Clientin 内から開くこともできます。ユーザーは、リソースの割り当てを含む、ドラフトの作業分解構造に必要な変更を加えることができます。 プロジェクト チームがすでに Finance and Operations のプロジェクトに追加されている場合、リソース リストにはチームメンバーが配置されます。 プロジェクト チームがまだプロジェクトに追加されていない場合は、**Dynamics 365 for Operations** タブの **リソース** ボタンを選択して Microsoft Project Client 内のチームを作成することができます。作業内訳構造の編集は、Finance and Operations に公開されています。
 
 ### <a name="project-time-entry-mobile-workspace"></a>プロジェクト時間入力モバイル ワークスペース
 
@@ -799,7 +799,7 @@ POS 機能拡張フレームワークが再設計され、開発者エクスペ�
 
 **きめ細かい CRT ハンドラー** - カスタマイズの操作を簡略化するため、コード ベースを継続的に改善しています。 CRT ハンドラーの多くを粒度のより細かいメッセージ ハンドラーで強化しました。これにより、サービスまたはオペレーション全体を所有する代わりに、特定の拡張ポイントでトリガーをオーバーライドまたは追加できます。 たとえば、ロイヤルティ サービスがより粒度の細かいハンドラーにより拡張され、取得 (販売および還元)、引換、計算、または検証などのカスタマイズをサポートします。 以前は、標準チェックをスキップするには、計算サービス全体をオーバーライドする必要がありましたが、検証チェック要求ハンドラーのプレ/ポスト トリガーをオーバーライドするか追加するだけで行うことができるようになりました。 カスタマイズに使用可能なリクエストおよび応答については、Retail SDK フォルダーには、commerce runtime messages.chm ファイルを参照してください。
 
-**拡張可能列挙**: 拡張可能列挙をサポートするために CRT を拡張しました。 拡張可能な列挙では、直ちに CRT で公開されている新しい API を使用してアクセスできます。 この新しい API を使用して、列挙タイプに基づいて、簡単に値を設定/取得または検証できます。 以前のバージョンでは、CRT レイヤーおよび型で、列挙を手動で定義して、Finance and Operations 列挙と CRT 列挙の間で直接マッピングせずに型を一致させる必要がありました。 CRT に公開された新しい拡張可能 API を使用すると、CRT 内で列挙を手動で作成せずに、Finance and Operations 列挙と CRT 列挙間で直接マッピングすることができます。 複数のパートナーおよび ISV が拡張可能な列挙を作成して、コード マージせずに個別にコード内でそれらを使用できます。 たとえば、新しい割引タイプの拡張可能な列挙を作成する場合、同じ列挙が CRT で利用可能になります。 コードでは、いくつかのハードコードされた値を手動で検証するのではなく、割引タイプが自分の割引列挙型に等しいかどうかを確認することができます。
+**拡張可能列挙**: 拡張可能列挙をサポートするために CRT を拡張しました。 拡張可能な列挙では、直ちに CRT で公開されている新しい API を使用してアクセスできます。 この新しい API を使用して、列挙タイプに基づいて、簡単に値を設定/取得または検証できます。 以前のバージョンでは、CRT レイヤーおよび型で列挙を手動で定義して、Finance and Operations 列挙と CRT 列挙の間で直接マッピングせずに型を一致させる必要がありました。 CRT に公開された新しい拡張可能 API を使用すると、CRT 内で列挙を手動で作成せずに、Finance and Operations 列挙と CRT 列挙間で直接マッピングすることができます。 複数のパートナーおよび ISV が拡張可能な列挙を作成して、コード マージせずに個別にコード内でそれらを使用できます。 たとえば、新しい割引タイプの拡張可能な列挙を作成する場合、同じ列挙が CRT で利用可能になります。 コードでは、いくつかのハードコードされた値を手動で検証するのではなく、割引タイプが自分の割引列挙型に等しいかどうかを確認することができます。
 
 ### <a name="support-for-multiple-retail-server-extensions"></a>複数の Retail Sever 拡張機能のサポート
 
@@ -940,14 +940,14 @@ Dynamics 365 for Finance and Operations では、クラスター ピッキング
 
 キャッシュ統合機能の見込顧客は、Dynamics 365 for Sales と Dynamics 365 for Finance and Operations、Enterprise Edition 間で最初の関係者の統合を配送します。
 
-このソリューションは、個々の Dynamics 365 コンポーネントの強みを活用し、Dataverse を介してそれらを接続します。 データは Finance and Operationsと Dynamics 365 for Sales との間をシームレスに流れていますが、ユーザーは Dynamics 365 for Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理で注文処理を扱うことができます。 このソリューションは、サードパーティのソリューションに依存することなく、柔軟なソリューションとの強力な統合と統合プロセスの簡素化を実現します。 これらの進歩は、企業と労働者がより多くを達成するのに役立つ大幅な生産性の向上をもたらした、両世界のベストを提供します。
+このソリューションは、個々の Dynamics 365 コンポーネントの強みを活用し、Dataverse を介してそれらを接続します。 データは Finance and Operations と Dynamics 365 for Sales との間をシームレスに流れていますが、顧客は Dynamics 365 for Sales のセールスおよびマーケティング活動を行い、Finance and Operations の在庫管理で注文の履行を処理することができます。 このソリューションは、サードパーティのソリューションに依存することなく、柔軟なソリューションとの強力な統合と統合プロセスの簡素化を実現します。 これらの進歩は、企業と労働者がより多くを達成するのに役立つ大幅な生産性の向上をもたらした、両世界のベストを提供します。
 
-- Dynamics 365 for Sales でアカウントを管理し、ユーザーとして Finance and Operations に同期させます。
-- Dynamics 365 for Sales の連絡先を管理し、Finance and Operations と同期します。
-- Finance and Operations の製品を管理し、Dynamics 365 for Sales と同期します。
-- Dynamics 365 for Sales の見積を作成し、Finance and Operations と同期します。
-- Finance and Operations で販売注文を作成し、Dynamics 365 for Sales と同期します。
-- Finance and Operations で請求書を作成し、Dynamics 365 for Sales と同期します。
+- Dynamics 365 for Sales でアカウントを管理し、顧客として Finance and Operations に同期させます。
+- Dynamics 365 for Sales で連絡先を管理、および Finance and Operations へ同期します。
+- Finance and Operations で製品を管理し、Dynamics 365 for Sales へ同期します。
+- Dynamics 365 for Sales で見積を作成し、Finance and Operations へ同期します。
+- Finance and Operations で販売注文を作成し、Dynamics 365 for Sales へ同期します。
+- Finance and Operations で請求書を作成し、Dynamics 365 for Sales へ同期します。
 
 **Dataverse の機能を使用してデータへ簡単にアクセス**
 

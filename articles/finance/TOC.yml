@@ -12,6 +12,8 @@
               items:
                 - name: Finance の新機能や変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.25 (4 月)
+                  href: get-started/whats-new-changed-10-0-25.md
                 - name: Finance 10.0.24 (2 月)
                   href: get-started/whats-new-changed-10-0-24.md
                 - name: Finance 10.0.23 (1 月)
@@ -28,7 +30,7 @@
               href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
-        - name: 使用開始
+        - name: 概要
           items:
             - name: サービスの説明
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
@@ -102,8 +104,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/finance/toc.json
                 - name: ビデオ
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/finance/toc.json
-                - name: 用語集
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/finance/toc.json
             - name: ラーニング カタログ
               items:
                 - name: ラーニング カタログのホームページ
@@ -180,9 +180,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
                 - name: 環境計画
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
-                - name: Go Live の準備
+                - name: Go-Live の準備
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
-                - name: Go Live に関するよく寄せられる質問
+                - name: Go-Live に関するよく寄せられる質問
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
                 - name: サービス要求の送信
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
@@ -218,6 +218,8 @@
                   href: accounts-payable/vendor-copy.md
                 - name: 請求仕訳帳の仕入先請求書の記録
                   href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
+                - name: 請求仕訳帳に支払を適用する
+                  href: accounts-payable/payment-invoice-journal.md
             - name: 請求書および買掛金勘定の重要データの監査
               href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
             - name: スリーウェイ マッチング ポリシー
@@ -1036,6 +1038,8 @@
                   href: general-ledger/one-voucher-faq.md
                 - name: 元帳決済
                   href: general-ledger/ledger-settlements.md
+                - name: 元帳決済から年度末決算までの認識
+                  href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
             - name: 期末決算
               items:
                 - name: 期末に一般会計を決算
@@ -1046,84 +1050,10 @@
                   href: general-ledger/year-end-close.md
                 - name: 会計年度の決算
                   href: general-ledger/tasks/close-fiscal-year.md
-                - name: 財務期間一括終了
+                - name: 財務期間一括決算
                   href: general-ledger/tasks/mass-financial-period-close.md
                 - name: 年度末の活動に関するよく寄せられる質問
                   href: general-ledger/faq-year-end-activities.md
-            - name: 消費税
-              items:
-                - name: 消費税の概要
-                  href: general-ledger/indirect-taxes-overview.md
-                - name: 基準金額に基づく消費税率と計算方法
-                  href: general-ledger/marginal-base-field.md
-                - name: 消費税支払と丸めルール
-                  href: general-ledger/round-sales-tax-payments.md
-                - name: '[発生元] フィールドでの消費税計算方法'
-                  href: general-ledger/sales-tax-calculation-methods-origin-field.md
-                - name: 消費税コードの合計額と間隔計算オプション
-                  href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
-                - name: 一般仕訳帳明細行での消費税計算
-                  href: general-ledger/sales-tax-calculation-on-general-journal.md
-                - name: 仕入先請求書の消費税の計算と調整
-                  href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-                - name: 仕訳帳の遅延税計算の有効化
-                  href: general-ledger/enable-delayed-tax-calculation.md
-                - name: 消費税支払の作成
-                  href: general-ledger/tasks/create-sales-tax-payment.md
-                - name: カスタマイズした通貨の小数点以下の桁数に基づく税決済の丸め
-                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
-                - name: ドキュメントの消費税トランザクションの作成
-                  href: general-ledger/tasks/create-sales-tax-transactions-documents.md
-                - name: 消費税の元帳転記グループの設定
-                  href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-                - name: 消費税所轄官庁の設定
-                  href: general-ledger/tasks/set-up-sales-tax-authorities.md
-                - name: 消費税コードを設定します
-                  href: general-ledger/tasks/set-up-sales-tax-codes.md
-                - name: 消費税グループと品目消費税グループの設定
-                  href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-                - name: 消費税レポート コードの設定
-                  href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-                - name: 消費税の二重通貨のサポート
-                  href: general-ledger/dual-currency-for-tax.md
-                - name: 元帳トランザクション別消費税詳細 (レポート)
-                  href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
-                - name: 消費税精算期間の設定
-                  href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                - name: 転記された消費税トランザクションの表示
-                  href: general-ledger/tasks/view-posted-sales-tax-transactions.md
-                - name: コード別消費税支払レポートの印刷
-                  href: general-ledger/print-sales-tax-payment-by-code-report.md
-                - name: 消費税に関するトラブルシューティング
-                  items:
-                    - name: 税が計算されていないか、税額がゼロである
-                      href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
-                    - name: 税計算のパフォーマンスがトランザクションに影響する
-                      href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
-                    - name: TaxTrans のフィールド値が誤っている
-                      href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
-                    - name: TaxTrans レコードが生成されない
-                      href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
-                    - name: 税が伝票の誤った勘定科目に転記される
-                      href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
-                    - name: 伝票が生成されない
-                      href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
-            - name: 源泉徴収税
-              items:
-                - name: 源泉徴収税の設定
-                  href: general-ledger/tasks/set-up-withholding-tax.md
-                - name: グローバル源泉徴収税
-                  items:
-                    - name: グローバル源泉徴収税の概要
-                      href: general-ledger/global-withholding-tax-overview.md
-                    - name: グローバル源泉徴収税の設定
-                      href: general-ledger/set-up-global-withholding-tax.md
-                    - name: 購買トランザクションの源泉徴収税
-                      href: general-ledger/withholding-tax-in-purchase-transactions.md
-                    - name: 販売トランザクションの源泉徴収税
-                      href: general-ledger/withholding-tax-in-sales-transactions.md
-                    - name: 源泉徴収税支払の作成
-                      href: general-ledger/create-a-withholding-tax-payment.md
             - name: 監査ワークベンチ
               items:
                 - name: 監査ポリシー ルール
@@ -1180,7 +1110,7 @@
               href: general-ledger/financial-reporting-keyboard-shortcuts.md
             - name: 財務諸表デザイナーでのユーザーの基本設定
               href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
-            - name: 書式設定の詳細オプション
+            - name: 形式の詳細オプション
               href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: レポート デザイナーのレポートのコンポーネントを整理
               href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
@@ -1416,7 +1346,7 @@
                       href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
                     - name: 使用状況管理ダッシュボード
                       href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
-                    - name: 使用開始
+                    - name: 概要
                       items:
                         - name: 電子請求サービス管理の使用を開始する
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
@@ -1538,6 +1468,82 @@
                           href: localizations/customize-tax-configurations-master-data-lookup.md
                     - name: 税計算に関するよくあるご質問
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
+            - name: 税
+              items:
+                - name: 消費税
+                  items:
+                    - name: 消費税の概要
+                      href: general-ledger/indirect-taxes-overview.md
+                    - name: 基準金額に基づく消費税率と計算方法
+                      href: general-ledger/marginal-base-field.md
+                    - name: 消費税支払と丸めルール
+                      href: general-ledger/round-sales-tax-payments.md
+                    - name: '[発生元] フィールドでの消費税計算方法'
+                      href: general-ledger/sales-tax-calculation-methods-origin-field.md
+                    - name: 消費税コードの合計額と間隔計算オプション
+                      href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: 一般仕訳帳明細行での消費税計算
+                      href: general-ledger/sales-tax-calculation-on-general-journal.md
+                    - name: 仕入先請求書の消費税の計算と調整
+                      href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: 仕訳帳の遅延税計算の有効化
+                      href: general-ledger/enable-delayed-tax-calculation.md
+                    - name: 消費税支払の作成
+                      href: general-ledger/tasks/create-sales-tax-payment.md
+                    - name: カスタマイズした通貨の小数点以下の桁数に基づく税決済の丸め
+                      href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
+                    - name: ドキュメントの消費税トランザクションの作成
+                      href: general-ledger/tasks/create-sales-tax-transactions-documents.md
+                    - name: 消費税の元帳転記グループの設定
+                      href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                    - name: 消費税所轄官庁の設定
+                      href: general-ledger/tasks/set-up-sales-tax-authorities.md
+                    - name: 消費税コードを設定します
+                      href: general-ledger/tasks/set-up-sales-tax-codes.md
+                    - name: 消費税グループと品目消費税グループの設定
+                      href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                    - name: 消費税レポート コードの設定
+                      href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                    - name: 消費税の二重通貨のサポート
+                      href: general-ledger/dual-currency-for-tax.md
+                    - name: 元帳トランザクション別消費税詳細 (レポート)
+                      href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+                    - name: 消費税精算期間の設定
+                      href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                    - name: 転記された消費税トランザクションの表示
+                      href: general-ledger/tasks/view-posted-sales-tax-transactions.md
+                    - name: コード別消費税支払レポートの印刷
+                      href: general-ledger/print-sales-tax-payment-by-code-report.md
+                    - name: 消費税に関するトラブルシューティング
+                      items:
+                        - name: 税が計算されていないか、税額がゼロである
+                          href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+                        - name: 税計算のパフォーマンスがトランザクションに影響する
+                          href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+                        - name: TaxTrans のフィールド値が誤っている
+                          href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+                        - name: TaxTrans レコードが生成されない
+                          href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+                        - name: 税が伝票の誤った勘定科目に転記される
+                          href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+                        - name: 伝票が生成されない
+                          href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
+                - name: 源泉徴収税
+                  items:
+                    - name: 源泉徴収税の設定
+                      href: general-ledger/tasks/set-up-withholding-tax.md
+                    - name: グローバル源泉徴収税
+                      items:
+                        - name: グローバル源泉徴収税の概要
+                          href: general-ledger/global-withholding-tax-overview.md
+                        - name: グローバル源泉徴収税の設定
+                          href: general-ledger/set-up-global-withholding-tax.md
+                        - name: 購買トランザクションの源泉徴収税
+                          href: general-ledger/withholding-tax-in-purchase-transactions.md
+                        - name: 販売トランザクションの源泉徴収税
+                          href: general-ledger/withholding-tax-in-sales-transactions.md
+                        - name: 源泉徴収税支払の作成
+                          href: general-ledger/create-a-withholding-tax-payment.md
             - name: 規制の更新
               href: localizations/regulatory-updates.md
             - name: 規制に関する更新の検索
@@ -3106,6 +3112,10 @@
                       href: localizations/rus-turnover-balance-statement-reports.md
                     - name: 取引活動の報告書
                       href: localizations/rus-account-activity-reports.md
+                    - name: 連邦会計標準 27-2021
+                      href: localizations/emea-rus-federal-accounting-standard-27-2021.md
+                    - name: ロシアの会計文書を格納する電子報告の宛先を有効化する
+                      href: localizations/rus-enable-er-destinations-ru-accounting-documents.md
                 - name: 前貸し保有者
                   items:
                     - name: ロシアの前貸し保有者の概要
@@ -3208,6 +3218,8 @@
                           href: localizations/rus-not-valuable-assets.md
                         - name: 作業着/特殊衣類の会計 (ロシア)
                           href: localizations/rus-working-clothes-instruments-accounting.md
+                    - name: 固定資産と資産管理モジュールを統合する
+                      href: localizations/rus-integration-eam-with-fixed-asset.md
                 - name: 買掛金勘定と売掛金勘定
                   items:
                     - name: 訂正票の修正 (ロシア)
@@ -3242,6 +3254,8 @@
                           href: localizations/rus-purchases-on-commission.md
                         - name: 手数料販売
                           href: localizations/rus-sales-on-commission.md
+                    - name: 売掛金勘定と買掛金勘定のローカル レポートと基本フォーム
+                      href: localizations/rus-local-reports-primary-forms-ar-ap.md
                 - name: 在庫
                   items:
                     - name: 仕入先からの輸送中の商品
@@ -3486,170 +3500,6 @@
                   href: localizations/noam-usa-form-1099-public-sector.md
                 - name: 1099 レポートの仕入先の設定
                   href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
-        - name: Human Resources
-          items:
-            - name: Human Resources の概要
-              href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: インフラストラクチャ リリース10.0.25
-              href: ../human-resources/hr-infrastructure.md?toc=/dynamics365/finance/toc.json
-            - name: Human Resources の設定
-              items:
-                - name: Human Resources パラメーターのコンフィギュレーション
-                  href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Human Resources 共有パラメーターのコンフィギュレーション
-                  href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Human Resources ワークフローの設定
-                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-                - name: 日付と時刻のフィールドの理解
-                  href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
-            - name: 個人の管理
-              items:
-                - name: 従業員の編成
-                  href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
-                - name: 職務のコンポーネントの設定
-                  href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
-                - name: 部門の定義
-                  href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
-                - name: 階層への部門の追加
-                  href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
-                - name: 職務の定義
-                  href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
-                - name: 作業時間カレンダーの作成
-                  href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
-                - name: 個人のアクションに関するよく寄せられる質問
-                  href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
-                - name: ワークフローを使用した従業員情報の管理
-                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-                - name: 職位の報告関係の変更
-                  href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
-                - name: 作業者情報の入力
-                  href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
-                - name: 作業者への貸与品目
-                  href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
-                - name: 貸与品目の作成
-                  href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
-                - name: 貸与品目の管理
-                  href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
-                - name: 継続的計画の作成
-                  href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
-                - name: プロジェクト タイムシートの入力
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
-                - name: 大量雇用プロジェクト
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
-                - name: 大量雇用プロジェクトの作成
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md?toc=/dynamics365/finance/toc.json
-                - name: 職位の設定
-                  href: ../human-resources/hr-personnel-set-up-positions.md?toc=/dynamics365/finance/toc.json
-                - name: けが/病気の情報の設定
-                  href: ../human-resources/hr-personnel-set-up-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-                - name: 従業員のけが/病気の情報の管理
-                  href: ../human-resources/hr-personnel-maintain-employee-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-            - name: 候補者の採用
-              items:
-                - name: 採用プロセスの管理
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: 大量雇用プロジェクト
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: 大量雇用プロジェクトの作成
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: 申請者およびアプリケーション データの手動入力
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: 求人の作成と実施
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: 職位の設定
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: 採用による候補者の雇用
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: 採用による既存の従業員の雇用
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: 候補者採用手段の確認と配置
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: 報酬プランの設定
-              items:
-                - name: 報酬プランの概要
-                  href: ../human-resources/hr-compensation-overview.md?toc=/dynamics365/finance/toc.json
-                - name: 報酬グリッドの設定
-                  href: ../human-resources/hr-compensation-grids.md?toc=/dynamics365/finance/toc.json
-                - name: 報酬の構造と計画の作成
-                  href: ../human-resources/hr-compensation-structure.md?toc=/dynamics365/finance/toc.json
-                - name: 固定報酬プランの作成
-                  href: ../human-resources/hr-compensation-fixed-plans.md?toc=/dynamics365/finance/toc.json
-                - name: 変動報酬プランの作成
-                  href: ../human-resources/hr-compensation-variable-plans.md?toc=/dynamics365/finance/toc.json
-                - name: 固定報酬プランへの従業員の登録
-                  href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
-                - name: 変動報酬プランへの従業員の登録
-                  href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
-                - name: 報酬プロセスの定義と結果の計算
-                  href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
-                - name: 報酬プランの処理
-                  href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
-            - name: 福利厚生の管理
-              items:
-                - name: 給付金プログラムの定義および管理
-                  href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
-                - name: 給付金適格性ポリシー
-                  href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
-                - name: 給付金適格性処理
-                  href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
-                - name: 給付金の適格性ルールおよびポリシーの定義
-                  href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
-                - name: 従業員手当プログラムの提供
-                  href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
-                - name: 新しい給付金の作成
-                  href: ../human-resources/hr-benefits-create.md?toc=/dynamics365/finance/toc.json
-                - name: 福利厚生に作業者を登録する
-                  href: ../human-resources/hr-benefits-enroll-workers.md?toc=/dynamics365/finance/toc.json
-                - name: 給付金の有効期限の管理
-                  href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
-                - name: ACA レポートの生成
-                  href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
-            - name: 従業員の育成
-              items:
-                - name: 業績管理の概要
-                  href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
-                - name: 要員のスキルの調整
-                  href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
-                - name: 業績仕訳への追加
-                  href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
-                - name: 目標の作成
-                  href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
-                - name: 業績の確認の作成
-                  href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
-            - name: コースの作成
-              items:
-                - name: トレーニング コースの設定
-                  href: ../human-resources/hr-learning-courses.md?toc=/dynamics365/finance/toc.json
-                - name: アンケートの概要
-                  href: ../human-resources/hr-learning-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: アンケートのデザイン
-                  href: ../human-resources/hr-learning-design-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: アンケートの配布とスケジューリング
-                  href: ../human-resources/hr-learning-distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: スケジューリングを使用したアンケートの配布
-                  href: ../human-resources/hr-learning-distribute-questionnaires-scheduling.md?toc=/dynamics365/finance/toc.json
-                - name: アンケート結果の表示
-                  href: ../human-resources/hr-learning-evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-                - name: アンケート結果の分析
-                  href: ../human-resources/hr-learning-analyze-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-                - name: 自由回答式の質問の作成
-                  href: ../human-resources/hr-learning-create-open-ended-question.md?toc=/dynamics365/finance/toc.json
-                - name: 選択式の質問の作成
-                  href: ../human-resources/hr-learning-create-closed-ended-question.md?toc=/dynamics365/finance/toc.json
-                - name: 依存質問の作成
-                  href: ../human-resources/hr-learning-depending-question.md?toc=/dynamics365/finance/toc.json
-            - name: 職場の安全性とコンプライアンス (米国)
-              items:
-                - name: フォーム I-9 の検証
-                  href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
-                - name: フォーム I-9 を使用した雇用適格性の検証
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
-                - name: フォーム I-9 ドキュメント タイプの設定
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-                - name: 米国障碍者法 (Americans with Disabilities Act) への準拠
-                  href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
-                - name: 作業者の特別設備の管理
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
         - name: レポートと Power BI の統合
           items:
             - name: Power BI でのレポートと分析
@@ -3697,7 +3547,7 @@
                   href: accounts-receivable/credit-collections-power-bi.md
                 - name: 従業員のコンピテンシーと開発
                   href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: 従業員の育成
+                - name: 従業員の能力開発
                   href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/finance/toc.json
                 - name: 経費管理 Power BI コンテンツ
                   href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
@@ -3707,7 +3557,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
                 - name: 固定資産管理
                   href: fixed-assets/Fixed-asset-management-workspace.md
-                - name: 学習
+                - name: ラーニング
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: 組織トレーニング
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
@@ -3999,12 +3849,14 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/finance/toc.json
                         - name: Char
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
-                        - name: Concatenate
+                        - name: 連結
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/finance/toc.json
                         - name: 形式
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/finance/toc.json
                         - name: GetEnumValueByName
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/finance/toc.json
+                        - name: GetLabelText
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getlabeltext.md?toc=/dynamics365/finance/toc.json
                         - name: GuidValue
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
                         - name: JsonValue
@@ -4191,7 +4043,9 @@
                   items:
                     - name: 外部 XML ファイルからデータをインポートするためのコンフィギュレーションを作成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/finance/toc.json
-                - name: SharePoint にあるファイルからのバッチ モードのデータのインポートを構成する
+                    - name: 手動で選択したファイルからバッチ モードでデータをインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/finance/toc.json
+                - name: SharePoint にあるファイルからバッチ モードのデータ インポートを構成する
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/finance/toc.json
                 - name: XML 形式のファイルをインポートする
                   items:
@@ -4271,6 +4125,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
                         - name: レポートを実行する
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+                    - name: GROUPBY データソースを使用してレコードをグループ化し、棚卸と集計を実行する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-groupby-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: 生成された出力をデータ ソースとして使用して、棚卸および集計を実行する
                       items:
                         - name: 形式の作成
@@ -4423,6 +4279,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
                     - name: アプリケーション更新プログラム 10.0.23
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
+                    - name: アプリケーション更新プログラム 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/finance/toc.json
                 - name: 生成したドキュメントに対してカスタム保存場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
@@ -4487,7 +4345,7 @@
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
             - name: '[Microsoft Office で開く] メニューのカスタマイズ'
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/finance/toc.json
-            - name: 電子メールのコンフィギュレーションと送信
+            - name: メールの構成と送信
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json
             - name: 電子メール体験を向上させる
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/finance/toc.json
@@ -4627,9 +4485,9 @@
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/finance/toc.json
                 - name: レコード テンプレートを使用した新しいレコードの作成
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/finance/toc.json
-            - name: ドキュメント管理のコンフィギュレーション
+            - name: ドキュメント管理の構成
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/finance/toc.json
-            - name: 電子メールのコンフィギュレーションと送信
+            - name: メールの構成と送信
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json
             - name: 日時データとタイム ゾーン
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/finance/toc.json
@@ -4645,7 +4503,7 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-work-cycle-work-period-tasks.md
                 - name: 給付金の見越計上計画の設定
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
-                - name: 福利厚生の設定
+                - name: 給付金の設定
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-benefit-set-up-tasks.md
             - name: 支払サイクルと支払期間の設定
               href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
@@ -4753,9 +4611,11 @@
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'CustTrans::settleTransaction を使用したトランザクションの決済'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
-    - name: Finance and Operations アプリの開発と管理
+    - name: 財務と運用アプリの開発と管理
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md

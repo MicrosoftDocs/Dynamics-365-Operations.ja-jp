@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Talent へようこそ
+title: Dynamics 365 Talent のホーム ページ
 description: Talent は、多くの日常的な記録タスクを合理化し、組織の多数のスタッフ配置に関連するプロセスを自動化します。 これらのプロセスには、従業員の雇用維持、給付金管理、トレーニング、勤務評価、変更管理が含まれます。
 author: andreabichsel
 ms.date: 10/03/2019
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 414d31dd951e25b38fd504a3cbe5389c62c9ba37b622aa8cff622f2fa91ff290
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ebfec7a723e5f6cf2e4ad7f74a9531be7dfd89
+ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738104"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8051398"
 ---
-# <a name="welcome-to-dynamics-365-talent"></a>Dynamics 365 Talent へようこそ
+# <a name="dynamics-365-talent-home-page"></a>Dynamics 365 Talent のホーム ページ
 
 [!include [banner](includes/banner.md)]
 

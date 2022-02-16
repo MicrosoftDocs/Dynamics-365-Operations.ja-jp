@@ -267,7 +267,7 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 - 環境が使用されるテナントからユーザーを通じて環境を配置します。 管理者ユーザーのプロビジョニング ツールを使用して、レベル 1 または顧客管理またはクラウド ホスト環境のテナントを変更する必要があります。
 
 > [!NOTE]
-> Azure 定期購読に関連付けられている Azure AD テナントは、環境コンフィギュレーションでは一切の役割を果たします。 Azure 定期購読および対応するコネクタ コンフィギュレーションは、Azure リソースの配置にのみ使用されます。
+> Azure サブスクリプションに関連付けられている Azure AD テナントは、環境コンフィギュレーションでは一切の役割を果たします。 Azure サブスクリプションおよび対応するコネクタ コンフィギュレーションは、Azure リソースの配置にのみ使用されます。
 
 ### <a name="i-have-run-the-admin-user-provisioning-tool-on-my-development-environment-and-now-i-receive-the-following-sign-in-error-error-aadsts50011-the-reply-url-specified-in-the-request-does-not-match-the-reply-urls-configured-for-the-application"></a>自分の開発環境で管理者ユーザー プロビジョニング ツールを実行したところ、次のサインイン エラーが発生しました: 「エラー: AADSTS50011: リクエストで指定された返信 URL がアプリケーションに対して構成されている返信 URL と一致しません」
 上記の説明のように、正しい Azure AD テナント下に Finance and Operations 環境を配置することが非常に重要です。 LCS を使用してレベル 1 または顧客管理環境において、Azure AD テナント設定の変更は配置後にはサポートされません。

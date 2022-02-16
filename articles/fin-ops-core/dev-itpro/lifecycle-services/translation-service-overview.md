@@ -3,7 +3,7 @@ title: Dynamics 365 Translation Service 概要
 description: このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) について説明します。
 author: abmotgi
 ms.date: 10/25/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abmotgi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a253970cada943730bed64effcdbde9ded43777
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 9ead6d1098206b71120783db7de89a941a70404b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700021"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983147"
 ---
 # <a name="dynamics-365-translation-service-overview"></a>Dynamics 365 Translation Service の概要
 
@@ -50,7 +50,7 @@ DTS では、現在次の製品バージョンがサポートされています�
 | 製品名 | バージョン | ユーザー インターフェイス ファイルのサポートされている形式 | ドキュメント ファイルのサポートされている形式 | 摘要 |
 |--------------|----------|-------------------------------------------|------------------------------------------|-------|
 | Microsoft Dynamics AX 2012 | すべてのバージョン | .ktd、.ald | .docx | |
-| Dynamics 365 Finance and Operations アプリ | すべてのバージョン | .label.txt | .docx、.html | .txt は固有のラベル形式で、.html はカスタム ヘルプ ソリューションの形式です。 |
+| Dynamics 365 財務と運用アプリ | すべてのバージョン | .label.txt | .docx、.html | .txt は固有のラベル形式で、.html はカスタム ヘルプ ソリューションの形式です。 |
 | Microsoft Dynamics 365 Commerce | すべてのバージョン | .label.txt | .docx | |
 | Microsoft Dynamics CRM | すべてのバージョン | .resx | .docx | |
 | Microsoft Dynamics NAV | すべてのバージョン | .etx、.stx、.resx、.txt、.xml、.xlf | .docx | .txt と .xml は NAV 固有の形式で、.xlf は Business Central の拡張リソース形式です。 |

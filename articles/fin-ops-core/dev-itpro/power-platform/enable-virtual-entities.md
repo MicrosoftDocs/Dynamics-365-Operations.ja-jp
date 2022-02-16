@@ -1,6 +1,6 @@
 ---
 title: Microsoft Dataverse 仮想エンティティを有効化する
-description: このトピックでは、Microsoft Dataverse で Finance and Operations アプリの仮想エンティティを有効にする方法について説明します。
+description: このトピックでは、Microsoft Dataverse で財務と運用アプリの仮想エンティティを有効にする方法について説明します。
 author: jaredha
 ms.date: 10/18/2021
 ms.topic: article
@@ -12,23 +12,23 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-14
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 1dc01322f8ed7bf75f83c8d0cb53b54fc550ac19
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: ffa193fa56b52c66cc892f9893d5a25be2afed71
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7676083"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061768"
 ---
 # <a name="enable-microsoft-dataverse-virtual-entities"></a>Microsoft Dataverse 仮想エンティティを有効化する
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Finance and Operations アプリで利用可能な多くのエンティティは、Open Data Protocol (OData) が有効になっているため、デフォルトではエンティティを Microsoft Dataverse の仮想エンティティとして利用できません。 Dataverse の Finance and Operations アプリ仮想エンティティの構成が完了すると、Dataverse 環境で仮想エンティティを有効にできます。 管理者は、どのエンティティを仮想エンティティとして公開し、Dataverse で使用できるようにするかを決定できます。
+
+財務と運用アプリで利用可能な多くのエンティティは、Open Data Protocol (OData) が有効になっているため、既定ではエンティティを Microsoft Dataverse の仮想エンティティとして利用することはできません。 Dataverse の財務と運用アプリ仮想エンティティの構成が完了すると、Dataverse 環境で仮想エンティティを有効にできます。 管理者は、どのエンティティを仮想エンティティとして公開し、Dataverse で使用できるようにするかを決定できます。
 
 > [!NOTE]
-> Dataverseでの Finance and Operations アプリの仮想エンティティの構成は、仮想エンティティを有効にするための前提条件です。 この構成は、Microsoft Power Platform 環境にリンクされている Finance and Operations アプリ環境に対して自動的に行われます。 リンクされていない環境の場合、仮想エンティティを有効にする前に手動で構成を完了する必要があります。 Dataverse でFinance and Operations アプリの仮想エンティティを構成するためのステップ バイ ステップの手順については、[構成 Dataverse 仮想エンティティ](admin-reference.md)を参照して下さい。
+> Dataverse での財務と運用アプリの仮想エンティティの構成は、仮想エンティティを有効にするための前提条件です。 この構成は、Microsoft Power Platform 環境にリンクされている財務と運用アプリ環境に対して自動的に行われます。 リンクされていない環境の場合、仮想エンティティを有効にする前に手動で構成を完了する必要があります。 Dataverse で財務と運用アプリの仮想エンティティを構成するためのステップ バイ ステップの手順については、[Dataverse 仮想エンティティを構成する](admin-reference.md)を参照して下さい。
 
 ## <a name="generate-virtual-entities"></a>仮想エンティティの生成
 
@@ -46,7 +46,7 @@ Finance and Operations アプリで利用可能な多くのエンティティは
 
 ## <a name="refresh-virtual-entity-metadata"></a>仮想エンティティ メタデータの更新
 
-Finance and Operations アプリのエンティティ メタデータが変更されたと予想される場合、仮想エンティティ メタデータを強制的に更新できます。 強制的に更新するには、**更新** チェックボックスを選択し、変更を保存します。 Finance and Operations アプリの最新のエンティティ定義が Dataverse に同期され、仮想エンティティが更新されます。
+財務と運用アプリのエンティティ メタデータが変更されたと予想される場合、仮想エンティティ メタデータを強制的に更新できます。 強制的に更新するには、**更新** チェックボックスを選択し、変更を保存します。 財務と運用アプリの最新のエンティティ定義が Dataverse に同期され、仮想エンティティが更新されます。
 
 ## <a name="reference-virtual-entities"></a>仮想エンティティの参照
 

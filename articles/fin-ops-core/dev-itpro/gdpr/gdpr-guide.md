@@ -3,7 +3,7 @@ title: 一般データ保護規則の概要
 description: このトピックでは、Finance and Operations でのユーザー ログの機能に関する情報を提供します。
 author: ToddLefor
 ms.date: 07/23/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a76b925f9d1f828970994267a21bc4a3a0ed332
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d488a482913f17c1418b2aeb021c8ac27a978b33
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783372"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982419"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 
@@ -55,7 +55,7 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 + **C1** - C1 は Microsoft の直接顧客 (エンタープライズ クラウドの IT 管理者) です。
 + **C2** - C2 は C1 の顧客です。
 
-Finance and Operations アプリでは、Microsoft はプロセッサとして動作します。 データ プロセッサとして、Finance and Operations はデータ コントローラーとしての GDPR 責務に適応するのに役立つプロセスと機能を提供します。
+財務と運用アプリでは、Microsoft はプロセッサとして機能します。 データ プロセッサとして、 Finance and Operations はデータ コントローラとして GDPR 責務に適応するのに役立つプロセスと機能を提供します。
 
 次の図は、顧客からアプリケーション データベースへのデータの流れ、およびお客様と Microsoft がそのプロセスで果たすロールを示しています。 それぞれのアプリケーションで、コントローラーはテナント管理者、Microsoft はプロセッサです。 このシナリオでは、データを保管、取得、並べ替えなどを行うことでデータを処理するプロセッサ (Microsoft) にデータが送信されます。
 
@@ -137,7 +137,7 @@ Finance and Operations アプリでは、Microsoft はプロセッサとして�
 </td>
 <td>
 <ul>
-<li>Finance and Operations を使用してデータを検索し、要求を処理します。 </li>
+<li>Finance and Operations を使用して、データを特定し、要求を満たします。 </li>
 <li>カスタマイズを記述します。</li>
 <li>サード パーティに共有コントローラー DSR を求めます。</li>
 <li>Microsoft にアクティビティ データを求めます。</li> 
@@ -210,7 +210,7 @@ Finance and Operations アプリでは、Microsoft はプロセッサとして�
 + 製品が直接アクションを有効にする場合、個人データを匿名にします。
 + 個人データを消去または変更するカスタマイズを作成します。
 
-\* GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、Finance and Operations は特定のビジネスまたはトランザクション データの削除を許可していません。他の法律や認証のコンプライアンスに必要なビジネス データの削除のための機能を提供しておらず一切保証もしません。 Finance and Operations は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
+\* GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、Finance and Operations は特定のビジネスまたはトランザクション データの削除を許可していません。他の法律や認証のコンプライアンスのために必要なビジネス データの削除機能を提供しておらず一切保証もしません。 Finance and Operations は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
 
 ### <a name="right-to-port"></a>移植するには右
 
@@ -327,7 +327,7 @@ Finance and Operations には共通の [グローバル アドレス帳](../../f
 
 ## <a name="detailed-inventory"></a>詳細な在庫
 
-Finance and Operations アプリを使用する場合は、複数のデータ ストアに存在する大量のデータを生成または収集する必要があるかもしれません。 データの格納場所を理解するのに役立つように、データ ストア内のデータごとにデータ マーカーを導入しました。 このマーカーは「資産分類」と呼ばれ、個人データの識別や追跡に使用できます。 収集するデータは「顧客コンテンツ」として説明されています。 一部の顧客コンテンツには個人データが含まれていることがあり、一部の顧客コンテンツはビジネス データを含む場合があります。 顧客のすべてのコンテンツを個人データとして処理することを選択、または「個人データ」であるとみなす任意のデータを識別して追跡できるように分類を自分で変更することができます。 Microsoft は既定の分類のセットで指定されてはいますが、選択した分類や識別子を自由に使用できます。
+財務と運用アプリを使用する場合は、複数のデータ ストアに存在する大量のデータを生成または収集する必要があるかもしれません。 データの格納場所を理解するのに役立つように、データ ストア内のデータごとにデータ マーカーを導入しました。 このマーカーは「資産分類」と呼ばれ、個人データの識別や追跡に使用できます。 収集するデータは「顧客コンテンツ」として説明されています。 一部の顧客コンテンツには個人データが含まれていることがあり、一部の顧客コンテンツはビジネス データを含む場合があります。 顧客のすべてのコンテンツを個人データとして処理することを選択、または「個人データ」であるとみなす任意のデータを識別して追跡できるように分類を自分で変更することができます。 Microsoft は既定の分類のセットで指定されてはいますが、選択した分類や識別子を自由に使用できます。
 
 <!--
 <Link to documentation on how to modify asset classifications>

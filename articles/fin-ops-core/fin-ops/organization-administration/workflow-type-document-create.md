@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: fbac496d66feb6ef11f74567d9840b05384f47c0
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 33c1f931f964e6fcba58a543fdcca1e9d99ee4c7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782695"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070083"
 ---
 # <a name="create-a-workflow-document-class"></a>ワークフロー ドキュメント クラスの作成
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 クエリでテーブルフィールドを定義して、ワークフロー条件を作成します。 一般的なシナリオでは、計算済フィールドはワークフローの動作を決定するために使用されます。 たとえば、テーブル内のすべてのレコードの動的な販売合計をワークフロー条件として使用し、ステップを使用するかどうかを決定できます。 ただし、クエリの制限としては、クエリ自体に計算済フィールドを定義できないことが挙げられます。 このクエリ制限を克服するには、ワークフロー ドキュメント クラスを使用する必要があります。 このトピックでは、ワークフロー ドキュメント クラスを作成する方法について説明します。
 

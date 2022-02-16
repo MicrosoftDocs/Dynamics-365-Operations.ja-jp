@@ -12,14 +12,17 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: dc2f76390690951116c74139daa43722d6bebf33
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 5709c6a0cfbce21db191ac3d4fe133bd6c5e550a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416797"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069694"
 ---
 # <a name="human-resources-virtual-tables-faq"></a>Human Resources 仮想テーブルに関するよく寄せられる質問
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -116,7 +119,7 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR Virtual
 
 7. **インストール** を選択します。
 
-インストールには数分かかります。 完了すると **Finance and Operations 仮想データ ソースの構成** エンティティをこの環境で生成されます。
+インストールには数分かかります。 完了すると **Finance and Operations 仮想データ ソースの構成** エンティティがこの環境で生成されます。
 
 ![Power Platform 管理センターから Dynamics 365 HR 仮想テーブル アプリをインストールします。](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 

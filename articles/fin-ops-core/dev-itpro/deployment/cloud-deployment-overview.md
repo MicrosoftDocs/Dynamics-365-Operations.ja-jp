@@ -3,7 +3,7 @@ title: クラウド展開の概要
 description: このトピックでは、クラウド環境とサブスクリプション、誰がどのタスクを実行できるか、および管理する必要があるデータとカスタマイズについて説明します。
 author: LaneSwenka
 ms.date: 09/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: c553624210bb7e38ed4ed029c4b0d498658ba250
-ms.sourcegitcommit: 59d507c0dd6f0bec3ab72034e12d582133ab2a52
+ms.openlocfilehash: 51873b476b7498a64b3998ab2ae560eb21201997
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "7496581"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982421"
 ---
 # <a name="cloud-deployment-overview"></a>クラウド配置の概要
 
 [!include [banner](../includes/banner.md)]
  
-Finance and Operations アプリをクラウドに展開するにあたって、Microsoft と作業をするには、展開先の環境とサブスクリプションについての理解と、タスクの可能が実行な担当者と、管理の必要があるデータとカスタマイズについて理解している必要があります。 配置と実装の高速化に役立つ Full Microsoft FastTrack for Dynamics 365 に登録することをお勧めします。このプログラムは、より迅速なビジネス価値の実現を支援するトレーニングとコンサルティングを提供します。 詳細については、 [Microsoft FastTrack](/dynamics365/fasttrack/) を参照してください。 代わりに Essentials FastTrack プログラムの使用を選択すると、実装プロジェクトの管理に役立つ Lifecycle Services (LCS) の実装プロジェクト方法を使用します。 
+財務と運用アプリをクラウドに展開するために Microsoft と共に作業するには、展開先の環境およびサブスクリプションについて、だれがどのタスクを実行することができるのか、また管理する必要があるデータおよびカスタマイズについて理解している必要があります。 配置と実装の高速化に役立つ Full Microsoft FastTrack for Dynamics 365 に登録することをお勧めします。このプログラムは、より迅速なビジネス価値の実現を支援するトレーニングとコンサルティングを提供します。 詳細については、 [Microsoft FastTrack](/dynamics365/fasttrack/) を参照してください。 代わりに Essentials FastTrack プログラムの使用を選択すると、実装プロジェクトの管理に役立つ Lifecycle Services (LCS) の実装プロジェクト方法を使用します。 
 
 ## <a name="customer-lifecycle-subscriptions-and-environment-types"></a>顧客のライフ サイクル、サブスクリプション、デプロイのトポロジ
 Microsoft は、すべての顧客がすべてのクラウド配置に対して次と類似するライフサイクルに従うため、各フェーズで別の環境トポロジが必要になると想定しています。 
@@ -41,7 +41,7 @@ Microsoft は、すべての顧客がすべてのクラウド配置に対して�
 
 プロジェクトのいくつかのフェーズでは、すべての環境を一度に実行することができます。 既定のライセンスおよび使用可能な層の詳細については、[Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。
 
-クラウドがホストする用語、または Microsoft サブスクリプションがあることがわかります。 *クラウドでホストされるサブスクリプション* とは、顧客やパートナーが各自の Azure サブスクリプションを使用して、評価や開発の目的のためだけに Finance and Operations アプリをデプロイすることを意味します。 顧客やパートナーは、Azure 価格リストに基づいて Azure サブスクリプションに展開されるリソースに対して支払います。 *Microsoft サブスクリプション* とは、顧客が Finance and Operations ライセンスを購入し、Microsoft が管理する Azure サブスクリプションに環境をデプロイできることを意味します。そのため、顧客への Azure からの別個の請求は発生しません。 
+クラウドがホストする用語、または Microsoft サブスクリプションがあることがわかります。 *クラウドでホストされているサブスクリプション* では、評価および開発目的でのみ、顧客またはパートナーが独自の Azure サブスクリプションを持ち込み、財務と運用アプリを配置します。 顧客やパートナーは、Azure 価格リストに基づいて Azure サブスクリプションに展開されるリソースに対して支払います。 *Microsoft サブスクリプション* とは、顧客が Finance and Operations ライセンスを購入し、Microsoft が管理する Azure サブスクリプションに環境を配置できることを意味します。これにより、顧客には Azure からの別個の請求はありません。 
 
 各 エンタープライズには、既定で 2 つの環境が含まれています。
 - ユーザー受け入れテスト (UAT) に使用する、階層 2 サンド ボックス (マルチ ボックス環境)。
@@ -78,7 +78,7 @@ Lifecycle Services における環境管理者またはプロジェクト所有�
 | アップグレード | 7. x から最新バージョンへのアップグレード コードとデータ | [最新の更新プログラムに移行するためのプロセス](../migration-upgrade/upgrade-latest-update.md)
 | 割り当て解除 | 使用されていない環境をオフにしたり、失敗したアクションのトラブルシューティングを行ったりする機能 | 適用できません
 | 開始 | 環境の使用を有効にする機能 | 適用できません
-| 消去 | 既に割り当てを解除された環境を削除する機能 | 適用できません
+| 消去 | 既に割り当てを解除された環境を削除する機能 | 該当なし
 
 
 ## <a name="security-and-compliance"></a>セキュリティとコンプライアンス
@@ -92,7 +92,7 @@ Microsoft Azure のすべての Finance and Operations フロント エンド仮
 > - これらの環境の管理者パスワードは、変更しないでください。 変更済管理者パスワードをもつ環境では、Microsoft がフラグを設定します。 Microsoft は、管理者パスワードをリセットする権利を保有し、実際にリセットします。  
 > - Microsoft 管理対象 VM に新しいユーザー アカウントを追加することは、許可されていません。 Microsoft は、通知することなく新しく追加されたユーザー アカウントを削除する権利を保有し、実際に削除します。
 >
-> Finance and Operations は、現時点では FedRAMP ATO の対象外です。 Finance and Operations を米国でプロビジョニングする場合、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations) で説明されているように、顧客の保存データは米国のデータ センターで保管されます。 Finance and Operations では、その他の Dynamics 365 US Government や Microsoft 365 GCC コンプライアンス属性 (米国の検査担当者によるアクセス、および CJIS と IRS 1075 のサポートなど) には対応していません。 
+> 現時点で、Finance and Operations は、FedRAMP ATO の対象外です。 Finance and Operations を米国でプロビジョニングする場合、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations)で説明されているように、顧客の保存データは米国のデータ センターで保管されます。 Finance and Operations では、他の Dynamics 365 US Government または Microsoft 365 GCC コンプライアンス属性 (たとえば、米国の検査担当者によるアクセス、および CJIS と IRS 1075 のサポートなど) はサポートされません。 
 
 ## <a name="remote-desktop"></a>リモート デスクトップ
 
@@ -125,8 +125,8 @@ Windows Remoting (WinRM) はすべての環境で無効です。 Azure ポータ
 > [!WARNING]
 > WinRM を有効にするための例外は、Microsoft が管理する環境では許可されません。 
 
-## <a name="availability"></a>使用可能性
-Finance and Operations アプリの保証稼働時間は 99.9% です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 詳細については、[Finance and Operations アプまたは Lifecycle Services (LCS) のサポートを得る](../lifecycle-services/lcs-support.md) を参照してください。
+## <a name="availability"></a>在庫状態
+財務と運用アプリの保証稼働時間は 99.9％ です。 計画的なダウンタイムは月 1 回発生し、8 時間以内に終了します。 ダウンタイム中に完了した作業は必ずしも 8 時間かかるとは限らないため、お客様の環境がダウンすると予想される時間を常にお知らせします。 詳細については、 [財務と運用アプリまたは Lifecycle Services (LCS) のサポート情報ー](../lifecycle-services/lcs-support.md) を参照してください。
 
 ### <a name="high-availability-features"></a>高可用性機能
 サービスの可用性を確保するため、すべての運用環境はデフォルトの Azure 高可用性 (HA) 機能を使用して保護されています。 HA 機能はデータ センター内の単一のノードの失敗により引き起こされるダウンタイムを回避する方法を提供し、DR 機能はデータ センター全体に広く影響を及ぼす機能停止を防止します。 単一障害点イベントを防止するために、Azure 使用可能性セットが使用されます。 Azure の可用性セットの詳細については、[可用性ゾーンを使用してデータセンター レベルの障害から保護する](/azure/virtual-machines/windows/manage-availability#use-availability-zones-to-protect-from-datacenter-level-failures)を参照してください。
@@ -144,7 +144,7 @@ Microsoft 管理対象環境またはセルフサービスの階層 2 ~ 5 環境
 プライマリのデータ格納場所のみレプリケーションがサポートされます。 Financial Reporting サービスおよびエンティティ格納データベースは、プライマリ データベースから変換されたデータを使用し、リカバリ サイトの設定および Finance and Operations サービスの開始後に生成する必要があります。 
 
 ## <a name="service-availability-in-azure-regions"></a>Azure リージョンにおけるサービスの可用性
-Dynamics Lifecycle Services (LCS) を使用して、Microsoft Azure データ センターのサブセットに Finance and Operations アプリを展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 Finance and Operations アプリでは、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[Finance and Operations アプリ用サービスの説明](../../fin-ops/get-started/service-description.md) を参照してください。
+Dynamics Lifecycle Services (LCS) を使用して、Microsoft Azure データ センターのサブセットに財務と運用アプリを展開できます。 Azure は一般に世界中のデータセンターや地理的な場所で利用可能です。 財務と運用アプリでは、顧客は自分の顧客データが格納される地域またはデータセンターを指定することができます。 Microsoft は、データの持続性のためにデータを他の領域に複製する場合がありますが、地理的な場所の外部に顧客データを複製または移動しません。 詳細については、[財務と運用アプリのサービスの説明](../../fin-ops/get-started/service-description.md)を参照してください。
 
 > [!IMPORTANT]
 > 顧客データがどこに格納されているかに関係なく、マイクロソフトは顧客またはエンドユーザーがアクセスできる場所を管理したり制限したりしません。
@@ -153,7 +153,7 @@ Dynamics Lifecycle Services (LCS) を使用して、Microsoft Azure データ �
 ### <a name="upcoming-changes-to-region-availability"></a>利用可能なリージョンに関する将来の変更
 Dynamics 365 ソリューションは、複数のサービスで構成されています。 Dynamics 365 アプリケーション、Power Platform および Azure サービスがそれぞれ依存している状況からしても、サービスに関して必要となるマトリックスは非常に大きくなり、拡大しています。 当社は必要なサービスのポートフォリオ全体を確実に利用していただけるようにするため、世界中のデータセンター リージョンのサブセットを選択する戦略を固めてきました。 当社の計画は、ソリューションにおけるコンポーネント サービス間の遅延を最小限に抑えることを目的としており、このため、指定された各データセンターにおいて、利用可能なサービスのポートフォリオ全体を用意することに重点をおいています。
 
-加えて、Finance and Operations アーキテクチャでは、柔軟性と信頼性を高め、よりシームレスな保守が行えるように、セルフサービスで構築するための機能拡張が行われています。 より少数のデータセンターで、セルフサービスでの展開をより十分に活用していただくことにより、お客様は材料効率を高めることができます。 この移行には、Azure リージョンのサブセットを選択することによる利点もあります。 その趣旨で、Finance and Operations アプリの利用可能な地域は、すべての新しいプロジェクトに対して、<strong>北米の米国東部、米国西部、および米国中部に制限されることになります</strong>。 サポートされている国と地域についての最新の一覧は、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location)を参照してください。
+加えて、Finance and Operations アーキテクチャでは、柔軟性と信頼性を高め、よりシームレスな保守が行えるように、セルフサービスで構築するための機能拡張が行われています。 より少数のデータセンターで、セルフサービスでの展開をより十分に活用していただくことにより、お客様は材料効率を高めることができます。 この移行には、Azure リージョンのサブセットを選択することによる利点もあります。 その趣旨で、財務と運用アプリの利用可能な地域は、すべての新しいプロジェクトに対して、<strong>北米の米国東部、米国西部、および米国中部に制限される</strong>ことになります。 サポートされている国と地域についての最新の一覧は、[Dynamics 365 の国際的な可用性](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location)を参照してください。
 
 米国東部 2、米国西部 2、米国中西部、米国中北部、米国中南部へのサポートは、現在これらの地域で Microsoft マネージド環境のデータを保存しているプロジェクトと環境で引き続き利用できます。 
 
@@ -171,7 +171,7 @@ Dynamics 365 または Power Platform ファミリーの一部ではないが、
 - メンテナンスの準備完了
 - メンテナンス中
 
-環境がこの状態になり、状態が [配置済] に戻るまでは、パッケージ アプリケーションなどのライフサイクル操作を実行することができません。 Finance and Operations アプリに対する影響はありません。 ユーザーはサービスが中断されることなく、通常の操作を続行できます。 管理操作により環境がこの状態になる前に電子メール通知が送信されます。
+環境がこの状態になり、状態が [配置済] に戻るまでは、パッケージ アプリケーションなどのライフサイクル操作を実行することができません。 財務と運用アプリには影響はありません。 ユーザーはサービスが中断されることなく、通常の操作を続行できます。 管理操作により環境がこの状態になる前に電子メール通知が送信されます。
 
 ### <a name="how-do-i-connect-to-the-sql-database-on-my-sandbox-environment"></a>サンドボックス環境で SQL データベースに接続するにはどうすればよいですか?
 サンドボックス環境で SQL データベースに接続するには、[ジャストインタイムのアクセスを有効にする](../database/database-just-in-time-JIT-access.md) の手順に従ってください。
@@ -186,10 +186,10 @@ Dynamics 365 または Power Platform ファミリーの一部ではないが、
 カスタマイズを開発からサンドボックスまたは実稼動環境に移行する方法については、 [配置可能なモデルのパッケージの作成](../deployment/create-apply-deployable-package.md) を参照してください。
 
 ### <a name="can-i-bring-my-own-domain-name"></a>所有のドメイン名を使用することができますか。
-Azure Active Directory (Azure AD) が実行中で、Azure AD インスタンスの管理者が Azure AD 内で Finance and Operations アプリ有効にした場合、自分のドメイン名を使用することができます。 これは通常、ライセンスを購入した後、オフィスの電子メールで行われます。 オファーを承諾するリンクをクリックすると、Azure AD がユーザーに対して設定されます。
+Azure Active Directory (Azure AD) が実行中で、Azure AD インスタンスの管理者が財務と運用アプリを Azure AD で有効にした場合、自分のドメイン名を使用することができます。 これは通常、ライセンスを購入した後、オフィスの電子メールで行われます。 オファーを承諾するリンクをクリックすると、Azure AD がユーザーに対して設定されます。
 
 ### <a name="can-i-add-guest-azure-ad-accounts-as-users"></a>ゲスト Azure AD アカウントをユーザーとして追加できますか?
-Azure AD 内で適切に ゲスト Azure AD アカウントを構成し、Azure AD 内で Finance and Operations アプリを有効にした場合は、ゲスト アカウントを追加することができます。 
+Azure AD 内で適切に AAD アカウントを構成して、Azure AD 内で財務と運用アプリを有効にした場合、ゲスト Azure AD アカウントを追加することができます。 
 
 ### <a name="why-am-i-no-longer-able-to-see-the-private-aos-machines-in-one-or-more-of-my-tier-2-through-tier-5-sandbox-environments"></a>プライベート AOS マシンを 階層 2 から階層 5 のサンドボックス環境の 1 つ以上で表示できなくなったのはなぜですか?
 Private AOS VM は、かつて AOS と BI コンピューター間の通信を保護する必要があったため、環境構成の一部でした。 最新の更新プログラムでは、AOS と BI マシン間のすべての通信は直接セキュリティで保護され、中間プライベート AOS 機械は不要になりました。 したがって、プライベート AOS マシンを削除する段階にあります。 バッチでマシンを削除しているので、環境の一部だけがプライベート AOS 機械を削除したことが判明することがあります。 この変更は、機能性やセキュリティにいかなる影響も及ぼさず、お客様には透明になります。

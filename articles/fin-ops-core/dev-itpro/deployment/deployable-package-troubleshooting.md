@@ -2,7 +2,7 @@
 title: パッケージ アプリケーションの問題のトラブルシューティング
 description: トピックでは、1 層または 2 層〜 5 層の環境でパッケージを適用する際に発生する可能性がある問題のトラブルシューティングに役立つ情報を提供します。
 author: laneswenka
-ms.date: 07/16/2020
+ms.date: 01/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 9b7daf84fa8cc0c784b6829af5724e99a1b6b39dd5b666d351f712275d038b87
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f932c192aac3ecf76e0b9ddb249ea28a6ad5a98
+ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754995"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8018362"
 ---
 # <a name="troubleshoot-package-application-issues"></a>パッケージ アプリケーションの問題のトラブルシューティング
 
@@ -129,7 +129,7 @@ ms.locfileid: "6754995"
 - カスタマイズに問題があること場合は、このパッケージを中止し、新しいパッケージを使用して再試行します。
 - 問題の修正プログラムが問題検索にあるかどうかを参照してください。
 - 次の手順の失敗が表示された場合は、データベース同期の問題が発生している可能性、またはレポート展開に失敗した可能性のいずれかです "サービス モデルの GlobalUpdate スクリプト: AOSService"
-- DBSync.err ファイルを検索し、エラー内容を確認します。 DBSync.log ファイルを検査します。 DB 同期ステップ中の特定の失敗については、**一般的な DB 同期の失敗** セクションを検索します。
+- DBSync.err ファイルを検索し、エラー内容を確認します。 DBSync.log ファイルを検査します。 DB 同期ステップ中の特定の失敗については、[一般的なデータベース同期の問題](deployable-package-troubleshooting.md#typical-database-synchronization-issues)セクションを検索します。
 
 ### <a name="issue-the-deployment-status-is-servicing-but-the-servicing-status-is-failed"></a>問題: 配置ステータスがサービスとなっていますが、サービス ステータスが失敗しました
 

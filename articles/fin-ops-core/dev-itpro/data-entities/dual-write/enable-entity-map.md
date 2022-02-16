@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2df6942ab6e78a82a2d8aa760de349898dd66333
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e3c69c40decba74973ffeaf7a3da659a9b22aa40
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781160"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061452"
 ---
 # <a name="enable-table-maps-for-dual-write"></a>テーブル マップの二重書き込みの有効化
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 テーブル マップの二重書き込みを有効にすると、**実行していません** 状態で開始されます。 次に、テーブル マップは初期化フェーズを実行し、両側のテーブルに既存のデータをコピーすることにより初期書き込みを行います。 最後に、テーブルが完全に有効化されると、テーブル マップは状態を **実行中** に設定します。
 
@@ -68,11 +68,11 @@ ms.locfileid: "7781160"
 
 ## <a name="criteria-for-linking-tables"></a><a id="criteria-for-linking"></a> テーブルをリンクするための基準
 
-テーブル マップの二重書き込みを有効にするには、Dataverse で代替キーを定義する必要があります。 Dataverse の代替キーの値は、Finance and Operations アプリで定義されているキーと一致する必要があります。
+テーブル マップの二重書き込みを有効にするには、Dataverse で代替キーを定義する必要があります。 Dataverse の代替キーの値は、財務と運用アプリで定義されているキーと一致する必要があります。
 
-たとえば、Finance and Operations アプリでは、**CustomerAccount** がアカウント テーブルのキーです。
+たとえば、財務と運用アプリでは、**CustomerAccount** がアカウント テーブルのキーです。
 
-![Finance and Operations アプリでのアカウント テーブルのキー。](media/define-alternative-key.png)
+![財務と運用アプリのアカウント テーブルのキー。](media/define-alternative-key.png)
 
 Dataverse では、**accountnumber** はアカウント テーブルのキーとして定義されます。
 

@@ -7,15 +7,16 @@ ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
+ms.custom: intro-internal
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 7635f33761293977dbde3ce741b325ed93075122
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f86792e16c0c6b7943078f4ba4b8f77f8f0b82e9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781885"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984118"
 ---
 # <a name="action-design-guidelines"></a>アクション デザインのガイドライン
 

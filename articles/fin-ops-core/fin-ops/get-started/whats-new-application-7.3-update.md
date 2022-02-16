@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9c06f3aaa2cd5f74aa474f8bb384710fb8ec2034fdfd910ae027fbc74c5a8310
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 19bdbaf6d8dd7cbbde3f166d09e2021807d6fe45
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716731"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061533"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-73"></a>Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 の新機能または変更された機能について説明します。 このバージョンは 2017 年 12 月にリリースされ、ビルド番号は 7.3.11971.56116 です。
 
@@ -47,7 +47,7 @@ ms.locfileid: "6716731"
 
 Dynamics 365 for Project Service Automation から Dynamics 365 for Finance and Operations への統合の最初のフェーズは、プライベート プレビューで利用できるようになりました。
 
-Project Service Automation から Finance and Operations の統合ソリューションは、データの統合を使用して、Dataverse 経由で Microsoft Dynamics 365 for Finance and Operations および Dynamics 365 for Project Service Automation インスタンス間でデータを同期します。 データ統合機能で利用できる統合テンプレートは、Project Service Automation から Finance and Operations へのプロジェクト、プロジェクト契約、プロジェクト契約明細行の流れを有効にします。 Dataverse データ統合の詳細については、Power Apps ドキュメントの [アプリ用 Dataverse へのデータ統合](/powerapps/administrator/data-integrator) を参照してください。
+Project Service Automation から Finance and Operations の統合ソリューションは、データの統合を使用して、Dataverse 経由で Microsoft Dynamics 365 for Finance and Operations および Dynamics 365 for Project Service Automation インスタンス間でデータを同期します。 データ統合 機能で利用できる統合テンプレートは、Project Service Automation から Finance and Operations へのプロジェクト、プロジェクト契約、プロジェクト契約ラインの流れを有効にします。 Dataverse データ統合の詳細については、Power Apps ドキュメントの [アプリ用 Dataverse へのデータ統合](/powerapps/administrator/data-integrator) を参照してください。
 
 このソリューションは、次の領域で直接同期を提供します。
 
@@ -64,11 +64,11 @@ Dynamics 365 for Sales と Dynamics 365 for Finance and Operations、Enterprise 
 
 - Sales でアカウントを管理し、顧客として Finance and Operations に同期させます。
 - Sales の連絡先を管理し、顧客または顧客向けの連絡先として Finance and Operations に同期させます。
-- Finance and Operations の製品を管理し、Sales と同期します。
-- Sales の見積を作成し、Finance and Operations と同期します。
+- Finance and Operations での製品を管理し、Sales に同期させます。
+- Sales で見積を作成し、Finance and Operations に同期させます。
 - 既存の製品に対して Sales で販売注文を生成し、Finance and Operations に同期させます。
-- Finance and Operations で販売注文を生成、変更、および履行し、変更を Sales に同期させます。
-- Finance and Operations で請求書を生成し、Sales と同期します。
+- Finance and Operations で販売注文を生成、変更、および履行し、Sales に同期させます。
+- Finance and Operations で請求書を生成し、Sales に同期させます。
 
 これらの統合機能拡張のハイライトは次のとおりです。
 

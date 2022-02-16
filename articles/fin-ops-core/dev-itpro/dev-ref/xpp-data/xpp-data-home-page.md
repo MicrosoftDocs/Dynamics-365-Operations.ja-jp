@@ -5,17 +5,17 @@ author: tonyafehr
 ms.date: 06/16/2020
 audience: Developer
 ms.reviewer: tfehr
-ms.custom: intro-internal
 ms.search.region: Global
+ms.topic: overview
 ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 7408a2daa7d3f16b3dba76c0affaccbf68e61a93
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9e90139d344c3466f8fb4655be5851257e5cceaa
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783263"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983279"
 ---
 # <a name="x-data-selection-and-manipulation-overview"></a>X++ データの選択と操作の概要
 

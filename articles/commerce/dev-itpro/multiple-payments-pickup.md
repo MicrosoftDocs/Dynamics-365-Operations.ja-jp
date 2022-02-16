@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e0999797c3c8fbdb705e0c8683bde17504d10563
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 5bd63cec642393eed05ed97be05d0de134235f24
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891589"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986422"
 ---
 # <a name="multiple-available-payment-methods-for-in-store-pickup"></a>店舗内での受取に使用できる複数の支払方法
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、トランザクションに対して 1 つ以上の既存の支払方法を使用できる場合の Microsoft Dynamics 365 Commerce 販売時点管理 (POS) の機能について説明します。
 

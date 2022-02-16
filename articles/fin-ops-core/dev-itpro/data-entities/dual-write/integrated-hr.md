@@ -10,30 +10,30 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e303734fbe6479a0b7ca1fd39a944140e76ff960
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1774fd837a3b86f21813dd4c444db855d8edb97d
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783321"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061296"
 ---
 # <a name="integrated-worker-job-and-position"></a>作業者、職務、および職位の統合
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 1 つのアプリでのみマスターされている間は、作業者データは複数の Dynamics 365 アプリ間で同期できます。 たとえば、人事管理 (HR) データは Dynamics 365 Human Resources でマスターし、Dynamics 365 Commerce、Dynamics 365 Finance、および Dynamics 365 Supply Chain Management と同期することができます。 データは、バックグラウンドでシームレスに統合されます。 作業者に関するデータを統合する機能により、すべての Dynamics 365 アプリで同じデータを操作して、情報を包括的に把握することができます。
 
 ## <a name="human-resources"></a>Human Resources
 
-HR データの統合には、Finance and Operations アプリと Customer Engagement アプリ間での HR データのマッピングが含まれます。
+HR データの統合には、財務と運用アプリと Customer Engagement アプリ間での HR データのマッピングが含まれます。
 
 ## <a name="templates"></a>テンプレート
 
 HR データには、従業員と契約社員、職位、職務に関する情報が含まれます。 次の表に示すように、テーブル マップのコレクションは、データ操作中に連携して動作します。
 
-Finance and Operations アプリ | Customer Engagement アプリ     | 説明
+財務と運用アプリ | Customer Engagement アプリ     | 説明
 |-----------------------------|----------------------------------|-------------|
 [報酬ジョブ機能](mapping-reference.md#105) | cdm_jobfunctions | |
 [報酬ジョブ タイプ](mapping-reference.md#108) | cdm_jobtypes | |

@@ -12,16 +12,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
-ms.openlocfilehash: 1fee40163c5f2fc8a8bcef70f532d1d570767730
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: d58130667b23fd57f5557a8e5e6dbac6df94c16f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403908"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066560"
 ---
 # <a name="data-task-automation"></a>データ タスクの自動化
 
 [!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 データ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証することができます。 データ タスクの自動化は、実装フェーズにあるプロジェクトで非常に便利です。 たとえば、データ プロジェクトの作成およびコンフィギュレーションを自動化することができます。 また、デモ データおよび高品質の構成データ、およびデータ移行に関連する他のタスクなどの、インポート/エクスポート オペレーションの実行を構成およびトリガーすることができます。 また、タスクの結果の検証を使用して、データ エンティティの自動テストを作成することもできます。
 

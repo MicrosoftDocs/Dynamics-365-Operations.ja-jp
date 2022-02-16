@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3e925db47c299e66d17dd696e570bff50fcc4bfcf7385af0905a43dee2db7837
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67b356f2488a220090992d578ed7045d5a8fa1a0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737839"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065087"
 ---
 # <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 > [!IMPORTANT]
 > このトピックは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースにのみ適用されます。 それ以降にリリースされたバージョンを実行している場合は、 [会社間または法人間での構成データのコピー](copy-configuration.md) のトピックを参照してください。 

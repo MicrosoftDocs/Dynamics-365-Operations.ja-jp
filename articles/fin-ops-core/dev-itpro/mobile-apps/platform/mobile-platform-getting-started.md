@@ -8,20 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom:
-- "255544"
-- intro-internal
+ms.custom: intro-internal
 ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 202ed2b7ef86b59aeace84ef72657f8ac966c901
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 58d754c234a642cb39e91e751ba06164f7fdde6a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783166"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985378"
 ---
 # <a name="get-started-with-the-mobile-platform"></a>モバイル プラットフォームを使い始める
 
@@ -35,7 +33,7 @@ ms.locfileid: "7783166"
 
 1.  [フリート管理プロジェクトを含むファイルをダウンロードする](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp ファイル)。
 2.  ZIP ファイルの内容を開発用コンピュータの一時的な場所に抽出します。
-3.  Microsoft Visual Studio を使用して、プロジェクト (.axpp) ファイルをインポート (**Finance and Operations** &gt; **プロジェクトのインポート** をクリック) します。
+3.  Visual Studio を使用して、プロジェクト (.axpp) ファイルをインポートします (**Finance and Operations** &gt; **プロジェクトのインポート** をクリックします)。
 4.  プロジェクト ファイルをインポートした後は、プロジェクトまたはモジュールをビルドします。
 
 ### <a name="get-the-sample-workspace"></a>サンプル ワークスペースを取得します

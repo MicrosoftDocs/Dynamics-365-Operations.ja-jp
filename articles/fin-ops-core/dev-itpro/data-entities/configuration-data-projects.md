@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 31dc0a0dbabd4fae099948335e6cde93d4fc96ee
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: f864a9c63a2dcdf3b59ce0412552a7fd0aca167c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754060"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068748"
 ---
 # <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 コンフィギュレーション データ プロジェクトは、アプリケーションのインスタンス間における会社のコンフィギュレーション データの移動を管理するために使用します。 これらは、次のシナリオをサポートすることを目的としています。
 

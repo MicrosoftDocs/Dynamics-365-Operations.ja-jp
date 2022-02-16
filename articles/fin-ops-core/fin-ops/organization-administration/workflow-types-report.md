@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7a1dbea14e22cdffab4f998044788ae0f9a05932966fe03e62c098da4504973d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfd519bdcc73205415baf811e9f7fc0e1922d6a9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749284"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070918"
 ---
 # <a name="workflow-types-report"></a>ワークフロー タイプのレポート
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、使用可能なワークフロー タイプを一覧表示するレポートを示します。
 

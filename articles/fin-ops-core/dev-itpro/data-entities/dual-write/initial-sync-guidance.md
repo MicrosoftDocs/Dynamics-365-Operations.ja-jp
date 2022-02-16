@@ -10,27 +10,27 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a89e37047f715dd506d9acb26e931ec01899d0d4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3377514fe9e5b67dbec191bd404fb479f0a7759d
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783323"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062300"
 ---
 # <a name="considerations-for-initial-synchronization"></a>初期同期に関する考慮事項
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-テーブルで二重書き込みを開始する前に、最初の同期を実行して、Finance and Operations アプリと Customer Engagement アプリの両面で既存のデータを処理することができます。 2 つの環境間でデータを同期する必要がない場合は、初期同期を省略できます。
+
+テーブルで二重書き込みを開始する前に、最初の同期を実行して、財務と運用アプリと Customer Engagement アプリの両面で既存のデータを処理することができます。 2 つの環境間でデータを同期する必要がない場合は、初期同期を省略できます。
 
 初期同期では、既存のデータを 1 つのアプリから別のアプリに双方向でコピーできます。また、実行する際には、いくつかの考慮事項があります。 たとえば、Go-Live 前にデータ移行が必要な場合があります。 この場合、データはデータ移行によって一方の側に読み込まれ、初期同期によってもう一方の側に同期されます。
 
 初期同期には、次の方法を使用することをお勧めします。
 
-+ **[単一スレッド テーブル](#single-threaded-entities):** まずデータを Finance and Operations アプリに移行し、次に初期同期をトリガーしてデータを Dataverse に移動します。 Microsoft が実行したラボ テストによると、このシーケンスは、Dataverse から Finance and Operations アプリへの同期よりもパフォーマンスが高いです。
-+ **マルチスレッド テーブル:** 最初にデータを Dataverse に移行し、次に初期同期をトリガーしてデータを Finance and Operations アプリに移動します。
++ **[単一スレッド テーブル](#single-threaded-entities):** まずデータを財務と運用アプリに移行し、次に初期同期をトリガーしてデータを Dataverse に移動します。 Microsoft が実行したラボ テストによると、このシーケンスは、Dataverse から財務と運用アプリへの同期よりもパフォーマンスが高いです。
++ **複数スレッド テーブル**: まずデータを Dataverse に移行し、次に初期同期をトリガーしてデータを財務と運用アプリに移動します。
 
 ## <a name="constraints"></a>制約
 
@@ -42,13 +42,13 @@ ms.locfileid: "7783323"
 
 初期同期によって許可される行の最大数は、1 回の実行ごとに 500,000 です。 各リーガル テーブルが個別に実行するため、各リーガル テーブルに 500,000 の行制限が適用されます。 詳細については、[Dataverse へデータを統合](/power-platform/admin/data-integrator) を参照してください。 特に、「パフォーマンスを最適化し、アプリケーションに過負荷をかけないために、現在プロジェクトの実行数を 500K 行に制限しています」という通知に注意してください。
 
-初期同期時に、1 回の実行に 500,000 行以上の行が存在する場合は、データを Finance and Operations アプリと Dataverse に個別に移行し、初期同期をスキップすることをお勧めします。
+初期同期時に、1 回の実行に 500,000 行以上の行が存在する場合は、データを財務と運用アプリと Dataverse に個別に移行し、初期同期をスキップすることをお勧めします。
 
 ### <a name="twenty-four-hour-limit"></a>24 時間制限
 
-Dataverse から Finance and Operations アプリへの初期同期を実行している場合、24 時間以内にインポートの結果を Finance and Operations アプリから受け取る必要があります。 そうしない場合、タイムアウトが発生します。 したがって、大量のデータを同期していて、1 回の実行に 24 時間以上かかる場合、タイムアウトが原因で初期同期が失敗する可能性があります。たとえば、**顧客/アカウント** テーブルの Dataverse から Finance and Operations アプリへの初期同期には、70,000 行が含まれます。 したがって、実行には 24 時間以上の時間がかかる場合があります。
+Dataverse から財務と運用アプリへの初期同期を実行している場合、24 時間以内にインポートの結果を財務と運用アプリから受け取る必要があります。 そうしない場合、タイムアウトが発生します。 したがって、大量のデータを同期していて、1 回の実行に 24 時間以上かかる場合、タイムアウトが原因で初期同期が失敗する可能性があります。たとえば、**顧客/アカウント** テーブルの Dataverse から財務と運用アプリへの初期同期には、70,000 行が含まれます。 したがって、実行には 24 時間以上の時間がかかる場合があります。
 
-データ量が 70,000 行を超える場合は、[単一スレッド テーブル](#single-threaded-entities) に対して Dataverse から Finance and Operations アプリへの初期同期を実行しないでください。 これらのテーブルは、インポート時にマルチスレッドをサポートしていないので、ボリュームが 70,000 行を超えると、タイムアウトが発生する可能性があります。 この場合、データを Finance and Operations アプリと Dataverse に別々に移行し、初期同期をスキップする必要があります。
+データ量が 70,000 行を超える場合は、[単一スレッド テーブル](#single-threaded-entities)に対して Dataverse から財務と運用アプリへの初期同期を実行しないでください。 これらのテーブルは、インポート時にマルチスレッドをサポートしていないので、ボリュームが 70,000 行を超えると、タイムアウトが発生する可能性があります。 この場合、データを財務と運用アプリと Dataverse に別々に移行し、初期同期をスキップする必要があります。
 
 ### <a name="limit-of-40-legal-entities-while-the-environments-are-being-linked"></a>環境がリンクされている場合の 40 の法人制限
 
@@ -73,11 +73,11 @@ Dual-write failure - Plugin registration failed: [(Unable to get partition map f
 3. 最初の手順の初期同期が正常に完了したら、残りのルックアップ列を追加し、最初の手順で同期されたルックアップ列を削除します。 ルックアップ列の数が 10 であることを再度確認します。 マップを保存し、初期同期を実行します。これらの手順を繰り返して、すべてのルックアップ列が同期されていることを確認します。 
 4. すべてのルックアップ列をマップに戻し、マップを保存して、初期同期をスキップしてマップを実行します。これにより、マップでライブ同期モードが有効になります。
 
-### <a name="five-minute-limit-for-finance-and-operations-data-export"></a>Finance and Operations データ エクスポートの 5 分間の制限
+### <a name="five-minute-limit-for-finance-and-operations-data-export"></a>Finance and Operations のデータ エクスポートに対する 5 分の制限
 
-Finance and Operations アプリから Dataverse への初期同期を実行し、Finance and Operations のデータのエクスポートに 5 分以上かかる場合、初期同期がタイムアウトすることがあります。タイムアウトは、データ テーブルに `postLoad` メソッドの仮想列がある場合、またはエクスポート クエリが最適化されていない (たとえば、インデックスが存在しない) 場合に発生する可能性があります。
+財務と運用アプリから Dataverse への初期同期を実行し、Finance and Operations のデータのエクスポートに 5 分以上かかる場合、初期同期がタイムアウトすることがあります。タイムアウトは、データ テーブルに `postLoad` メソッドの仮想列がある場合、またはエクスポート クエリが最適化されていない (たとえば、インデックスが存在しない) 場合に発生する可能性があります。
 
-このタイプの同期は、Platform update 37 (PU37) 以降でサポートされます。 したがって、Finance and Operations アプリを PU37 またはそれ以降のバージョンに更新する必要があります。
+このタイプの同期は、Platform update 37 (PU37) 以降でサポートされます。 したがって、財務と運用アプリを PU37 またはそれ以降のバージョンに更新する必要があります。
 
 ### <a name="security-role-for-write-access"></a>書き込みアクセス用のセキュリティ ロール
 
@@ -106,7 +106,7 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 <table>
 <thead>
 <tr>
-<th>Finance and Operations アプリ インスタンス</th>
+<th>財務と運用アプリ インスタンス</th>
 <th>Dataverse インスタンス</th>
 <th>初期同期を実行するデータの有無</th>
 <th>説明</th>
@@ -119,8 +119,8 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 <tr>
 <td>新規</td>
 <td>新規</td>
-<td>なし</td>
-<td>Finance and Operations アプリ インスタンスと新しい Customer Engagement アプリ インスタンス。どちらのアプリにも初期データがない場合</td>
+<td>番号</td>
+<td>財務と運用アプリ インスタンスと新しい Customer Engagement アプリ インスタンス。どちらのアプリにも初期データがない場合</td>
 <td>適用できません</td>
 <td>任意</td>
 <td>
@@ -133,12 +133,12 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 <td rowspan='3'>新規</td>
 <td rowspan='3'>新規</td>
 <td rowspan='3'>あり</td>
-<td rowspan='3'>Finance and Operations アプリ インスタンスと新しい Customer Engagement アプリ インスタンス。どちらかのアプリに移行されたデータがある場合</td>
+<td rowspan='3'>財務と運用アプリ インスタンスと新しい Customer Engagement アプリ インスタンス。どちらかのアプリに移行されたデータがある場合</td>
 <td>&lt;500,000</td>
 <td><a href='#single-threaded-entities'>単一スレッド</a></td>
 <td>
 <ol>
-<li>Finance and Operations アプリにデータを移行します。</li>
+<li>財務と運用アプリへのデータ移行</li>
 <li>初期同期を実行します。</li>
 </ol>
 </td>
@@ -167,12 +167,12 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 <td rowspan='4'>新規</td>
 <td rowspan='4'>既存</td>
 <td rowspan='4'>あり</td>
-<td rowspan='4'>新しい Finance and Operations アプリ インスタンスと既存の Customer Engagement アプリ インスタンス</td>
+<td rowspan='4'>新しい財務と運用アプリ インスタンスと既存の Customer Engagement アプリ インスタンス</td>
 <td>&lt;70,000</td>
 <td><a href='#single-threaded-entities'>単一スレッド</a></td>
 <td>
 <ol>
-<li>Finance and Operations アプリに新しい会社を作成します。</li>
+<li>財務と運用アプリで新しい会社を作成します。</li>
 <li>会社コードのブートストラップ Dataverse。</li
 ><li>初期同期を実行します。</li>
 </ol>
@@ -183,7 +183,7 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 <td><a href='#single-threaded-entities'>単一スレッド</a></td>
 <td>
 <ol>
-<li>Finance and Operations アプリに新しい会社を作成します。</li>
+<li>財務と運用アプリで新しい会社を作成します。</li>
 <li>会社コードのブートストラップ Dataverse。</li>
 <li>初期同期の範囲外で、各アプリにデータを移行します。</li>
 <li>二重書き込みを有効にし、初期同期をスキップします。</li>
@@ -195,7 +195,7 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 <td>マルチスレッド</td>
 <td>
 <ol>
-<li>Finance and Operations アプリに新しい会社を作成します。</li>
+<li>財務と運用アプリで新しい会社を作成します。</li>
 <li>会社コードのブートストラップ Dataverse。</li>
 <li>初期同期を実行します。</li>
 </ol>
@@ -206,7 +206,7 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 <td>任意</td>
 <td>
 <ol>
-<li>Finance and Operations アプリに新しい会社を作成します。</li>
+<li>財務と運用アプリで新しい会社を作成します。</li>
 <li>会社コードのブートストラップ Dataverse。</li>
 <li>初期同期の範囲外で、各アプリにデータを移行します。</li>
 <li>二重書き込みを有効にし、初期同期をスキップします。</li>
@@ -217,7 +217,7 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 <td rowspan='2'>既存</td>
 <td rowspan='2'>新規</td>
 <td rowspan='2'>あり</td>
-<td rowspan='2'>既存の Finance and Operations アプリ インスタンスと新しい Customer Engagement アプリ インスタンス</td>
+<td rowspan='2'>既存の財務と運用アプリ インスタンスと新しい Customer Engagement アプリ インスタンス</td>
 <td>&lt;500,000</td>
 <td>任意</td>
 <td>
@@ -240,7 +240,7 @@ Finance and Operations アプリから Dataverse への初期同期を実行し�
 <td rowspan='4'>既存</td>
 <td rowspan='4'>既存</td>
 <td rowspan='4'>あり</td>
-<td rowspan='4'>既存の Finance and Operations アプリ インスタンスと既存の Customer Engagement アプリ インスタンス</td>
+<td rowspan='4'>既存の財務と運用アプリ インスタンスと既存の Customer Engagement アプリ インスタンス</td>
 <td>&lt;70,000</td>
 <td><a href='#single-threaded-entities'>単一スレッド</a></td>
 <td>

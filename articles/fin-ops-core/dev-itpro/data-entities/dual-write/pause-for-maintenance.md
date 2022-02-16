@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 38e1be6d773e42d0c1efa2abc5c6269b18395a9f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: dcdb5b5f95660c4788824fb709a37053e1bb214c
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782493"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060325"
 ---
 # <a name="pause-dual-write-for-maintenance"></a>メンテナンス時に二重書き込みを一時停止する
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 テーブル マップは、手動で一時停止またはルール経由で自動的に一時停止が可能です。 テーブル マップを一時停止することで、特に計画的または計画外のメンテナンス中にビジネスの継続性を確保するのに役立ちます。 アプリが維持されている間、ユーザーは引き続き作業を行いレコードを作成できます。
 

@@ -1,30 +1,29 @@
 ---
-title: Finance and Operations アプリとサード パーティ サービス間の統合
+title: 財務と運用アプリとサード パーティ サービス間の統合
 description: このトピックは、設計者と開発者が統合シナリオを実装する際に意思決定を適切に行えるようにすることを目的としています。
 author: peakerbl
 ms.date: 11/23/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80e76f698d12f960d6776bc9629c7670ecf2b728
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: e2e38ec6cebf317f2649e11490cc80b2b4d7510c
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403964"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060907"
 ---
-# <a name="integration-between-finance-and-operations-apps-and-third-party-services"></a>Finance and Operations アプリとサード パーティ サービス間の統合
+# <a name="integration-between-finance-and-operations-apps-and-third-party-services"></a>財務と運用アプリとサード パーティ サービス間の統合
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックは、設計者と開発者が統合シナリオを実装する際に意思決定を適切に行えるようにすることを目的としています。
 
@@ -37,7 +36,7 @@ ms.locfileid: "7403964"
 
 | パターン                       | ドキュメント |
 |-------------------------------|---------------|
-| Power Platform 統合    | [Finance and Operations アプリと Microsoft Power Platform の統合](../power-platform/overview.md) |
+| Power Platform 統合    | [Microsoft Power Platform と財務と運用アプリの統合](../power-platform/overview.md) |
 | OData                         | [データ プロトコル (OData) を開く](odata.md) |
 | バッチ データ API                | [定期統合](recurring-integrations.md)<br>[データ管理パッケージ REST API](data-management-api.md) |
 | カスタム サービス                | [カスタム サービスの開発](custom-services.md) |
@@ -102,7 +101,7 @@ OData 統合を使用する典型的なシナリオを次に示します。
 
 ### <a name="create-and-update-product-information"></a>製品情報の作成および更新
 
-あるメーカーでは、その製品をオンプレミスでホストされているサード パーティ製アプリケーションを使用して、定義および構成します。 このメーカーは、生産情報をオンプレミス アプリケーションから Finance and Operations に移行する必要があります。 製品が定義されるとき、またはオンプレミス アプリケーションで変更されるとき、ユーザーは、同じ変更をリアルタイムに確認できます。
+あるメーカーでは、その製品をオンプレミスでホストされているサード パーティ製アプリケーションを使用して、定義および構成します。 この製造元は、生産情報をオンプレミス アプリケーションから Finance and Operations に移行する必要があります。 製品が定義されるとき、またはオンプレミス アプリケーションで変更されるとき、ユーザーは、同じ変更をリアルタイムに確認できます。
 
 | 意思決定                    | 情報              |
 |-----------------------------|--------------------------|
@@ -116,14 +115,14 @@ OData 統合を使用する典型的なシナリオを次に示します。
 
 このシナリオは、OData サービス エンドポイントを使用して、Finance and Operations で製品情報を作成および更新することによって最適に実装されます。
 
-Finance and Operations の場合:
+Finance and Operations:
 
 - 統合に必要なすべてのエンティティを決定します。
 - OData サービス エンドポイントが同じエンティティのセットに対して使用可能であることを確認します。
 
 サード パーティ製アプリケーション:
 
-- 製品情報がサード パーティ製アプリケーションで作成または変更されるときは、同じ変更を加えるために Finance and Operations に対して OData 呼び出しが行われます。
+- 製品情報がサード パーティ製アプリケーションで作成または変更されるときは、同じ変更を加えるために Finance and Operations への OData 呼び出しが行われます。
 
 ### <a name="read-the-status-of-customer-orders"></a>客注文のステータスを読み取る
 
@@ -139,7 +138,7 @@ Finance and Operations の場合:
 
 このシナリオは、OData サービス エンドポイントを使用して、注文ステータス情報を読み取ることによって最適に実装されます。
 
-Finance and Operations の場合:
+Finance and Operations:
 
 - 注文のステータス情報を読むために必要なエンティティを決定します。
 - OData サービス エンドポイントがエンティティに対して使用可能であることを確認します。
@@ -162,7 +161,7 @@ Finance and Operations の場合:
 
 このシナリオは、OData アクションを使用して実装できます。
 
-Finance and Operations の場合:
+Finance and Operations:
 
 - 統合に必要なエンティティを決定する
 - OData サービス エンドポイントがエンティティに対して使用可能であることを確認します。
@@ -193,7 +192,7 @@ PLM ソリューション:
 
 このシナリオは、カスタム サービスを使用して実装できます。
 
-Finance and Operations の場合:
+Finance and Operations:
 
 - 特定のアイテムの現物手持在庫を計算するカスタム サービスを作成します。
 
@@ -224,7 +223,7 @@ Finance and Operations の場合:
 
 このシナリオは、バッチ データ API を使用すると最もよく実装されます。
 
-Finance and Operations の場合:
+Finance and Operations:
 
 - 統合に必要なすべてのエンティティを決定します。
 - エンティティに対してデータ管理が有効であることを確認します。
@@ -247,7 +246,7 @@ Finance and Operations の場合:
 
 このシナリオは、バッチ データ API を使用すると最もよく実装されます。
 
-Finance and Operations の場合:
+Finance and Operations:
 
 - 統合に必要なすべてのエンティティを決定します。
 - エンティティに対してデータ管理が有効であることを確認します。

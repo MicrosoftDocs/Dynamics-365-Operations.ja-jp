@@ -2,7 +2,7 @@
 title: 明細書の算定のための店舗トランザクションの検証
 description: このトピックでは、Microsoft Dynamics 365 Commerce で店舗トランザクションを検証するための機能について説明します。
 author: analpert
-ms.date: 12/15/2021
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 008368ae32aa92682d578b75b148e0587fcc94e0
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924774"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087452"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>明細書の算定のための店舗トランザクションの検証
 
@@ -51,9 +51,9 @@ ms.locfileid: "7924774"
 
 次の表に、小売トランザクションが明細書転記に渡される前に小売トランザクションのヘッダーをチェックするトランザクション ヘッダー検証ルールの一覧を示します。
 
-| タイトル | 説明 |
+| ルール | 説明 |
 |-------|-------------|
-| 営業日付 | このルールでは、トランザクションの営業日が元帳のオープン会計期間に関連付けられているか検証します。 |
+| 営業日 | このルールでは、トランザクションの営業日が元帳のオープン会計期間に関連付けられているか検証します。 |
 | 通貨の丸め | このルールでは、トランザクション金額が通貨の丸めルールに従って丸められているか検証します。 |
 | 顧客 ID | このルールでは、トランザクションで使用される顧客がデータベースに存在するかを検証します。 |
 | 割引金額 | このルールでは、ヘッダーの割引金額が明細行の割引金額の合計と等しいかを検証します。 |
@@ -72,7 +72,7 @@ ms.locfileid: "7924774"
 
 次の表に、小売トランザクションが明細書転記に渡される前に小売トランザクションの明細行の詳細をチェックするトランザクション明細行検証ルールの一覧を示します。
 
-| タイトル | 説明 |
+| ルール | 説明 |
 |-------|-------------|
 | バーコード | このルールでは、トランザクション明細行で使用されるすべての品目バーコードがデータベースに存在するかを検証します。 |
 | 請求金額明細行 | このルールでは、算定された金額と請求金額明細行の課税控除額の合計が元の算定金額と等しいかを検証します。 |

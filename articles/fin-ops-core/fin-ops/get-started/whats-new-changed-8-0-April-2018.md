@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1282abffcb407f2a31fa75f5f511dc8bce00f813e06487b7fa2c26930bea3279
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a89b63c30519fcce25a0a0f0875da8183028d7dc
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712524"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061450"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
 
@@ -73,7 +73,7 @@ Finance and Operations 内で担当者および個人データを検索するこ
 - **18 年春リリース** – 機能は、一般会計パラメーターによって既定で、オフになります。 ただし、組織が単一伝票文書に記載されているビジネス シナリオ ギャップの範囲内にシナリオがある場合、機能をオンにできます。
 
     - 顧客が 1 つの伝票を必要としないビジネス シナリオがある場合、機能をオンにしないでください。 この機能が使用される場合、単一伝票文書に記載されている領域の「不具合」は修正されません。
-    - 機能的なギャップのいずれかに必要な機能でない限り、 Microsoft Dynamics 365 Finance and Operations への統合に 1 つの伝票を使用しないでください。
+    - 機能のギャップのいずれかに機能が必要でない限り、Microsoft Dynamics 365 Finance and Operations への統合に 1 つの伝票を使用しないでください。
 
 - **18 年秋およびそれ以降のリリース** – 機能的なギャップが埋まります。 機能的なギャップが埋められた後、1 つの伝票の機能が完全にオフになります。
 
@@ -105,7 +105,7 @@ Dynamics 365 for Finance and Operations では、Finance and Operations と Dyna
 
 ### <a name="integration-with-dynamics-365-for-field-service"></a>Dynamics 365 for Field Service との統合
 
-データ インテグレーターを活用して、Field Service アクティビティが Finance and Operations の外で行われるシナリオをサポートするためのデータ統合を提供します。
+データ統合を活用して、Field Service アクティビティが Finance and Operations の外で行われるシナリオをサポートするためのデータ統合を提供します。
 
 ### <a name="integration-with-dynamics-365-for-project-service-automation"></a>Dynamics 365 for Project Service Automation との統合
 

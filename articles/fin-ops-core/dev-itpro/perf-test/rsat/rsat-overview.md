@@ -3,28 +3,27 @@ title: Regression suite automation tool (RSAT)
 description: Regression Suite Automation Tool (RSAT) により、タスク レコーダーを使用してビジネス タスクを記録し、コードを記述することなく自動テストに変換することができます。
 author: FrankDahl
 ms.date: 12/07/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: tfehr
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: faba858d61672fa9f8e24f8dd4b4c3d84056a890
-ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
+ms.openlocfilehash: e4d4ed110821f4f5631625b592f41a1b4e79044c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "7948491"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985376"
 ---
 # <a name="regression-suite-automation-tool-rsat"></a>Regression suite automation tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
 
-Regression Suite Automation Tool (RSAT) を使用すると、Finance and Operations アプリのユーザー受け入れテスト (UAT) の時間と費用を大幅に縮小できます。 通常、UAT は Microsoft アプリケーションの更新プログラムを取得するか、カスタム コードおよび構成を実稼働環境に適用する前に必要です。 RSAT により、機能パワー ユーザーはタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくてもタスク記録を一連の自動テストに変換できます。 タスク レコーダーの詳細については、 [タスク レコーダー のリソース](../../user-interface/task-recorder.md) を参照してください。
+Regression Suite Automation Tool (RSAT) を使用すると、財務と運用アプリのユーザー受け入れテスト (UAT) の時間と費用を大幅に縮小できます。 通常、UAT は Microsoft アプリケーションの更新プログラムを取得するか、カスタム コードおよび構成を実稼働環境に適用する前に必要です。 RSAT により、機能パワー ユーザーはタスク レコーダーを使用してビジネス タスクを記録し、ソース コードを作成しなくてもタスク記録を一連の自動テストに変換できます。 タスク レコーダーの詳細については、 [タスク レコーダー のリソース](../../user-interface/task-recorder.md) を参照してください。
 
 RSATは、テストの実行、報告、および調査のために Microsoft Azure DevOps と完全に統合されています。 テスト パラメーターは、テスト ステップから切り離され、Microsoft Excel ファイルに保存されます。
 
@@ -68,7 +67,7 @@ RSATは、テストの実行、報告、および調査のために Microsoft Az
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Gi0V]
 
-上記の [RSAT 2.0 での Excel エクスペリエンスの向上](https://youtu.be/fcEkSIVQ1Bg)ビデオは、YouTube で視聴できる [Finance and Operations のプレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)に含まれています。
+[RSAT 2.0 での Excel エクスペリエンスの向上](https://youtu.be/fcEkSIVQ1Bg) ビデオ (上記参照) は、YouTube で試聴できる [Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) に含まれています。
 
 ## <a name="end-to-end-flow"></a>エンド ツー エンド フロー
 

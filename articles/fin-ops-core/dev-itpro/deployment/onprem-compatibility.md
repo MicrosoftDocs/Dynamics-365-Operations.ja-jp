@@ -1,8 +1,8 @@
 ---
-title: Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされるソフトウェア
+title: Microsoft Dynamics 365 Finance + Operations (on-premises) でサポートされるソフトウェア
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) と互換性のあるソフトウェア コンポーネントのバージョンについて説明します。
 author: faix
-ms.date: 10/05/2021
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Platform update 44
-ms.openlocfilehash: 9450f48125d1e3954e17bf5e1887d19a9a6bdb4d
-ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
+ms.openlocfilehash: e5aa19953d07cd7132346079c18cd5d640365160
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7603112"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024527"
 ---
-# <a name="microsoft-dynamics-365-finance--operations-on-premises-supported-software"></a>Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされるソフトウェア
+# <a name="microsoft-dynamics-365-finance--operations-on-premises-supported-software"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) でサポートされるソフトウェア
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、依存ソフトウェアのどのバージョンが、Microsoft Dynamics 365 Finance + Operations (on-premises) と互換性があるかについて説明します。
+このトピックでは、依存ソフトウェアのどのバージョンが、さまざまなバージョンの Microsoft Dynamics 365 Finance + Operations (on-premises) と互換性があるかについて説明します。
 
 ## <a name="microsoft-windows-server"></a>Microsoft Windows Server
 
@@ -68,6 +68,7 @@ Active Directory フェデレーション サービス (AD FS) は、Windows Ser
 > [!IMPORTANT]
 > - Windows Server 2016 の AD FS は、Azure Active Directory 認証ライブラリ (ADAL) を介した認証のみをサポートします。
 > - 今後の Microsoft 認証ライブラリへの移行を受け入れるには、AD FS を Windows Server 2019 (MSAL) に展開する必要があります。 詳細については、[アプリケーションを Microsoft 認証ライブラリ (MSAL) に移行する](/azure/active-directory/develop/msal-migration) を参照してください。
+> - 2022 年 7 月 1 日以降、まだ  Windows Server 2016 の AD FS を使用している顧客は Office アドインを使用できなくなります。これは、実行中の Microsoft Dynamics 365 Finance + Operations (on-premises) のバージョンとは関係ありません。
 
 ## <a name="minimum-azure-service-fabric-runtime"></a>最小 Azure Service Fabric 実行時間
 
@@ -75,6 +76,7 @@ Service Fabric Cluster は、公式ドキュメント [Service Fabric のサポ�
 
 | 最小バージョン            | 以降で必要 |
 |----------------------------|----------------|
+| Service Fabric ランタイム 8.0 | 10.0.26        |
 | Service Fabric ランタイム 7.2 | 10.0.17        |
 | Service Fabric ランタイム 7.1 | 10.0.14        |
 

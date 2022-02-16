@@ -1,9 +1,9 @@
 ---
 title: データ管理の概要
-description: このトピックでは、Finance and Operations のデータ管理について説明します。
+description: このトピックでは、Finance and Operations のデータの管理に関する情報を提供します。
 author: peakerbl
 ms.date: 04/22/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
@@ -16,16 +16,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b83637ab5edcfacbdfc6f7d3c754e50099dd32f
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 316ae9974517f78b85bfe2e2d2ca69fa2c0f7ddf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403829"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065726"
 ---
 # <a name="data-management-overview"></a>データ管理の概要
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、データ管理フレームワークを使用して、Finance and Operations のデータ エンティティおよびデータ エンティティ パッケージを管理する方法について説明します。
 

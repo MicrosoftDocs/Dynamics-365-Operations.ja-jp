@@ -1,8 +1,8 @@
 ---
 title: オンプレミス環境の設定と配置 (Platform update 41 以降)
-description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 11/30/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 162376dd2b6bd0a7439e729dd0514de889248144
-ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
+ms.openlocfilehash: 78fe0ca4b1697a36519259061f9ec70402708893
+ms.sourcegitcommit: eb236eec9eacb507433206fccce585b25980bedd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7894740"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8045511"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。 プラットフォーム更新プログラム 41 はバージョン 10.0.17 で利用可能です。
+このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。 プラットフォーム更新プログラム 41 はバージョン 10.0.17 で利用可能です。
 
 [ローカル ビジネス データ Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) が利用可能です。 そこでは、オンプレミス展開に関する質問またはフィードバックをすべて投稿できます。
 
@@ -69,7 +69,7 @@ Finance + Operations アプリケーションは、次の 3 つの主要なコ�
 - 次はオプションですが、**強く** お勧めします: Windows Server の Active Directory Certificate Services (AD CS)
 
 > [!IMPORTANT]
-> サポートされているバージョンについては、[Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされているソフトウェア](./onprem-compatibility.md)を参照してください。
+> サポートされているバージョンについては、[サポートされているソフトウェア Microsoft Dynamics 365 Finance + Operations (on-premises)](./onprem-compatibility.md) を参照してください。
 
 ## <a name="lcs"></a>LCS
 
@@ -100,7 +100,7 @@ VMware を使用している場合は、次の Web ページに記載されて�
 - [vmxnet3 仮想アダプターのいくつかの問題](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
 > [!WARNING]
-> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
+> Dynamics 365 Finance + Operations (on-premises) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ハードウェア構成には、次のコンポーネントが含まれます。
 
@@ -113,7 +113,7 @@ VMware を使用している場合は、次の Web ページに記載されて�
 詳細については、[オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md) を参照してください。
 
 > [!IMPORTANT]
-> サポートされているバージョンについては、[Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされているソフトウェア](./onprem-compatibility.md)を参照してください。
+> サポートされているバージョンについては、[サポートされているソフトウェア Microsoft Dynamics 365 Finance + Operations (on-premises)](./onprem-compatibility.md) を参照してください。
 
 ### <a name="hardware-layout"></a>ハードウェア レイアウト
 
@@ -369,7 +369,7 @@ Microsoft ではセットアップ エクスペリエンスを向上させるた
 
 1. [LCS](https://lcs.dynamics.com/v2) にサインインします。
 2. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
-3. **モデル** を資産タイプとして選択してから、グリッドで、**Microsoft Dynamics 365 Finance + Operations (オンプレミス)、展開スクリプト** の行を選択します。
+3. **モデル** を資産タイプとして選択してから、グリッドで、**Microsoft Dynamics 365 Finance + Operations (on-premises) 展開スクリプト** の行を選択します。
 4. **バージョン** を選択し、スクリプトの zip ファイルの最新版をダウンロードします。
 5. zip ファイルをダウンロードした後、ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
 6. zip ファイルをスクリプトの実行に使用するコンピューターにコピーします。
@@ -684,7 +684,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 CA から取得したオンプレミス エージェントの証明書またはスクリプトを使用して生成した自己署名証明書を使用します。 オンプレミス エージェント証明書は、テナントごとに複数のサンドボックス環境および実稼動環境で再利用できます。
 
-グローバル管理者ディレクトリの役割を持つユーザー アカウントだけが、LCS を承認するための証明書を追加できます。 既定では、組織の Microsoft 365 にサインアップする担当者がディレクトリのグローバル管理者です。
+グローバル管理者ディレクトリの役割を持つユーザー アカウントだけが、LCS を承認するための証明書を追加できます。 既定では、組織の Microsoft 365 にサインアップする担当者が、ディレクトリのグローバル管理者です。
 
 > [!IMPORTANT]
 > - テナントごとに証明書を正確に **1** 回構成する必要があります。 同じ環境のすべてのオンプレミス環境では、同じ証明書を使用して LCS に接続できます。
@@ -697,7 +697,7 @@ CA から取得したオンプレミス エージェントの証明書または�
     # If you have issues downloading the Azure PowerShell Az module, run the following:
     # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-    Install-Module Az
+    Install-Module Az -RequiredVersion 6.6.0
     Import-Module Az
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
@@ -796,12 +796,12 @@ CA から取得したオンプレミス エージェントの証明書または�
 
     | リリース | データベース |
     |---------|----------|
-    | バージョン 10.0.21 (プラットフォーム更新プログラム 45 を含む) | Microsoft Dynamics 365 Finance + Operations (オンプレミス)、バージョン 10.0.21 デモ データ |
-    | バージョン 10.0.21 (プラットフォーム更新プログラム 45 を含む) | Microsoft Dynamics 365 Finance + Operations (オンプレミス)、バージョン 10.0.21 空のデータ |
-    | バージョン 10.0.20 (プラットフォーム更新プログラム 44 を含む) | Microsoft Dynamics 365 Finance + Operations (オンプレミス)、バージョン 10.0.20 デモ データ |
-    | バージョン 10.0.20 (プラットフォーム更新プログラム 44 を含む) | Microsoft Dynamics 365 Finance + Operations (オンプレミス)、バージョン 10.0.20 空のデータ |
-    | バージョン 10.0.17 (プラットフォーム更新プログラム 41 を含む) | Microsoft Dynamics 365 Finance + Operations (オンプレミス)、バージョン 10.0.17 デモ データ |
-    | バージョン 10.0.17 (プラットフォーム更新プログラム 41 を含む) | Microsoft Dynamics 365 Finance + Operations (オンプレミス)、バージョン 10.0.17 空のデータ |
+    | バージョン 10.0.21 (プラットフォーム更新プログラム 45 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.21 デモ データ |
+    | バージョン 10.0.21 (プラットフォーム更新プログラム 45 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.21 空データ |
+    | バージョン 10.0.20 (プラットフォーム更新プログラム 44 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.20 デモ データ |
+    | バージョン 10.0.20 (プラットフォーム更新プログラム 44 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.20 空データ |
+    | バージョン 10.0.17 (プラットフォーム更新プログラム 41 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.17 デモ データ |
+    | バージョン 10.0.17 (プラットフォーム更新プログラム 41 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.17 空データ |
 
 1. zip ファイルには、単一のバックアップ (.bak) ファイルが含まれます。 必要に応じて、ダウンロードするファイルを選択します。
 1. zip ファイルのダウンロード後、そのファイルがブロックされていないことを確認します。 ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
@@ -933,7 +933,7 @@ Finance + Operations では、既定で標準のコンフィギュレーショ�
     > [!WARNING]
     > AD FS がシングル サインオン用 Microsoft 365 (旧 Office 365) と連携するように設定されている場合、この手順はシナリオを壊す可能性があります。
     >
-    > シナリオが引き続き機能するには、展開オプションを指定して、Dynamics 365 for Finance + Operations インストールをその要件に合わせることができます。 詳細については、[AD FS Microsoft 365 の互換性](./onprem-adfscompatibility.md) を参照してください。
+    > シナリオが引き続き機能するには、展開オプションを指定して、Dynamics 365 for Finance + Operations インストールをその要件に合わせることができます。 詳細については、[AD FS Microsoft 365 互換性](./onprem-adfscompatibility.md) を参照してください。
 
 2. 混在環境用に AD FS を構成していない限り、イントラネット認証接続用に Windows 統合認証 (WIA) を無効にする必要があります。 WIA を AD FS で使用できるように構成する方法の詳細については、[AD FS で Windows 統合認証 (WIA) を使用するようにブラウザを構成する](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia) を参照してください。
 
@@ -997,7 +997,8 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
 
 10. コンフィギュレーションを保存してから、**コンフィギュレーションのダウンロード** を選択して **localagent-config.json** コンフィギュレーション ファイルをダウンロードします。
 11. **localagent-config.json** ファイルを、エージェント インストーラー パッケージが展開されているコンピューターにコピーします。
-12. **コマンド プロンプト** ウィンドウで、エージェント インストーラーを含むフォルダーに移動して、次のコマンドを実行します。
+12. ローカル エージェントには、環境固有の設定/要件を指定するために設定可能な追加のオプション コンフィギュレーションがあります。 追加のオプションについては、[ローカル エージェントの配置コンフィギュレーション](./onprem-localagent-options.md) を参照してください。 
+13. **コマンド プロンプト** ウィンドウで、エージェント インストーラーを含むフォルダーに移動して、次のコマンドを実行します。
 
     ```powershell
     LocalAgentCLI.exe Install <path of config.json>
@@ -1006,8 +1007,8 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
     > [!NOTE]
     > このコマンドを実行するユーザーは、OrchestratorData データベースに対して **db\_owner** のアクセス許可を持っている必要があります。
 
-13. ローカル エージェントが正常にインストールされてから、LCS のオンプレミス コネクタに戻るようにします。
-14. **3: 設定の検証** タブで、**メッセージ エージェント** を選択して、ローカル エージェントへの LCS 接続をテストします。 接続が正常に確立されると、下のメッセージが表示されます: 「検証が完了しました。 エージェントへの接続が確立されました。」
+14. ローカル エージェントが正常にインストールされてから、LCS のオンプレミス コネクタに戻るようにします。
+15. **3: 設定の検証** タブで、**メッセージ エージェント** を選択して、ローカル エージェントへの LCS 接続をテストします。 接続が正常に確立されると、下のメッセージが表示されます: 「検証が完了しました。 エージェントへの接続が確立されました。」
 
 ### <a name="step-20-tear-down-credssp-if-remoting-was-used"></a><a name="teardowncredssp"></a>手順 20、 リモート処理が使用されたら、CredSSP を終了処理する
 
@@ -1093,6 +1094,6 @@ Service Fabric Cluster のすべてのコンピューターで **新しい資格
 - [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)
 - [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、印刷](../analytics/printing-capabilities-on-premises.md)
-- [オンプレミス環境用プロキシの構成](onprem-reverseproxy.md)
-- [Finance and Operations アプリのテクニカル サポートの設定](../lifecycle-services/support-experience.md)
-- [クライアント インターネット接続](../user-interface/client-disconnected.md)
+- [オンプレミス環境でのプロキシのコンフィギュレーション](onprem-reverseproxy.md)
+- [財務と運用アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
+- [クライアントのインターネット接続](../user-interface/client-disconnected.md)

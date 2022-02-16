@@ -2,7 +2,7 @@
 title: ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 description: このトピックでは、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
 author: akviklis
-ms.date: 12/01/2021
+ms.date: 01/12/2022
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: akviklis
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d86d7549b8aae3dd1565e90a4c3e69fbc6e09e28
-ms.sourcegitcommit: 013196e9737acfc9a3d1f842f351e95f79f64d36
+ms.openlocfilehash: 1fc75b22a40be3f66b08c772fb45e322b60d2f7e
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "7878881"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968241"
 ---
 # <a name="set-up-and-deploy-the-dynamics-365-commerce-localization-for-brazil"></a>ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 
@@ -27,7 +27,7 @@ ms.locfileid: "7878881"
 
 このトピックでは、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
 
-ブラジル向け Dynamics 365 Commerce ローカライズには、次の Commerce コンポーネントが含まれます: Commerce Runtime (CRT)、Retail Server、および販売時点管理 (POS)。 これらの拡張機能を使用すると、電子会計書類の登録が延期される場合、ブラジル固有の税金の計算、小売販売用の電子会計ドキュメントの生成、カスタムフィールドを持つ DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) の会計レシートの印刷、ブラジル固有の顧客情報の管理、オフライン代替モードでの販売の発行が可能になります。 ブラジル向け Commerce ローカライズの詳細については、[ブラジルのローカライズ スコープ](../../finance/localizations/latam-bra-scope.md) および[ブラジル向け Commerce ローカライズ](latam-bra-commerce-localization.md) を参照してください。
+ブラジル向け Dynamics 365 Commerce ローカライズには、次の Commerce コンポーネントが含まれます: Commerce Runtime (CRT)、Retail Server、および販売時点管理 (POS)。 これらの拡張機能を使用すると、電子会計書類の登録が延期される場合、ブラジル固有の税金の計算、小売販売用の電子会計ドキュメントの生成、カスタムフィールドを持つ DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) および CF-e-SAT (Cupom Fiscal Eletrônico - Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) の会計レシートの印刷、ブラジル固有の顧客情報の管理、オフライン代替モードでの販売の発行が可能になります。 ブラジル向け Commerce ローカライズの詳細については、[ブラジルのローカライズ スコープ](../../finance/localizations/latam-bra-scope.md) および[ブラジル向け Commerce ローカライズ](latam-bra-commerce-localization.md) を参照してください。
 
 このトピックで説明する拡張機能は、会計統合のフレームワークに基づいて開発されました。 会計統合機能の詳細については、[Commerce チャネルの会計統合の概要](fiscal-integration-for-retail-channel.md) を参照してください。 [電子申告 (ER) は ](../../dev-itpro/analytics/general-electronic-reporting.md)、電子会計ドキュメントの電子化の形式を実装するために使用されます。
 
@@ -42,10 +42,8 @@ ms.locfileid: "7878881"
 1. **システム管理 \> ワークスペースs \> 機能の管理** に移動し、**すべて** タブで、次の機能キーを有効にします。
 
     - (ブラジル) ブラジルに固有の Commerce 機能
-    - 小売明細書 - トリクル フィード
-    - 会計統合フレームワークの内部および外部コネクタのサポート
+    - (ブラジル) NFC-e 同期処理
     - ドキュメントの登録の延期
-    - 小売店舗のユーザー定義の証明書プロファイル
 
 ## <a name="set-up-electronic-reporting"></a>電子申告の設定
 
@@ -61,13 +59,15 @@ Commerce 本社で電子申告を設定するには、次の手順を実行し�
 1. 次のデータ モデル、データ モデル マッピング、および形式コンフィギュレーションの最新の共有バージョンをインポートします。
 
     - 会計ドキュメントのマッピング
-    - NF-e キャンセル エクスポートの形式 (BR)
-    - NF-e 状態要求エクスポートの形式 (BR)
     - NF-e 送信エクスポートの形式 (BR)
+    - NF-e 状態要求エクスポートの形式 (BR)
+    - NF-e キャンセル エクスポートの形式 (BR)
     - NFC-e 送信エクスポートの形式 (BR)
     - NFC-e コンティンジェンシー エクスポートの形式 (BR)
     - NFC-e 会計ドキュメントのマッピング
     - NFC-e 会計ドキュメントの検証形式 (BR)
+    - CF-e 送信エクスポートの形式 (BR)
+    - CF-e キャンセル エクスポートの形式 (BR)
 
 1. **組織管理 \> ワークスペース \> 電子申告** の順に移動し、**コンフィギュレーションをレポートする** を選択します。
 1. **会計ドキュメントのマッピング** を選択し、**既定のモデル マッピング** オプションを **いいえ** に設定します。
@@ -95,6 +95,7 @@ Commerce 本社に会計施設および NF-e (Nota Fiscal Eletrônica) の連邦
 1. **NFC-E WEB SERVICE** の、**所轄官庁** フィールドで、**NF-e 連邦パラメーター \> Web サービス \> 所轄官庁** で使用される値を入力します。
 1. **組織の管理 \> 組織 \> 会計施設 \> 電子会計ドキュメント \> NF-e 連邦パラメーター** の順に移動します。
 1. 必要な状態に対して新しい所轄官庁を作成するか、既存の所轄官庁を使用します。
+1. 各状態について、**NFC-e 同期処理** フラグをオンにします。
 1. 各状態について、**NFC-e の照会のインターネット アドレス** フィールドに、QR コード URL を入力します。
 1. 各状態について、適切な環境のすべての Web サービスのエンドポイントを指定します。
 
@@ -165,11 +166,13 @@ Commerce 本社で小売店舗を設定するには、次の手順を実行し�
 1. **Retail と Commerce \> 本社の設定 \> コマース スケジューラ** の順にクリックします。
 1. 使用するチャネル データベースに、既に作成した店舗を追加します。
 1. **小売りとコマース\> チャンネル設定 \> POS 設定 \> レジスター の順に移動します**。
-1. POS レジスターを選択し、ブラジル固有の次のフィールドを設定します。
+1. POS レジスターを作成し、会計運用コードに応じて次のブラジル固有のフィールドを設定します。
 
-    - NFC-e シリーズ
-    - NFC-e 代替シリーズ
-    - NF-e シリーズ
+    - **会計運用モード** – **NFC-e** または **CF-e** を選択します。
+    - **NFC-e シリーズ** – **会計運用モード** フィールドで **NFC-e** を選択した場合、NFC-e シリーズを入力します。 
+    - **NFC-e 代替シリーズ** – **会計運用モード** フィールドで **NFC-e** を選択した場合、オフライン代替モード用の NFC-e シリーズを入力します。
+    - **NF-e シリーズ** – NF-e ドキュメントが返品のために発行された場合に使用する NF-e シリーズを入力します。 
+    - **CF-e のレジスター番号** – SAT に接続されている POS レジスターの番号を入力します。 このレジスター番号は、CF-e XML の **numeroCaixa** タグに準拠するために存在します。 2 つ以上の POS レジスターでは、CF-e に対して同じレジスター番号を使用することはできません。
 
 1. **小売りとコマース\> チャンネル設定 \> POS 設定 \> デバイス の順に移動します**。
 1. 作成した POS レジスター用のデバイスを作成および構成します。
@@ -180,9 +183,10 @@ Commerce 本社で小売店舗を設定するには、次の手順を実行し�
 1. チャネル更新を公開します。
 1. **Retail と Commerce \> チャネル設定 \> POS プロファイル \> レシート プロファイル** の順に移動します。
 1. DANFEの レシート レイアウトを作成し、そのレイアウトをレシート プロファイルに追加します。
+1. CF-e-SAT および CF-e-SAT キャンセルの レシート レイアウトを作成し、そのレイアウトをレシート プロファイルに追加します。
 
 > [!NOTE]
-> レシート設定を作成するユーザーの既定の会社は、言語テキスト設定が作成された法人と同じである必要があります。 または、ユーザーの既定の会社、およびレシート設定の作成対象の店舗の法人の両方で、同じ言語テキスト設定を作成する必要があります。
+> 領収書設定を作成するユーザーの既定の会社は、言語テキスト設定が作成された法人と同じである必要があります。 または、ユーザーの既定の会社、およびレシート設定の作成対象の店舗の法人の両方で、同じ言語テキスト設定を作成する必要があります。
 
 レシート形式デザイナーで、必要なレシート形式ごとに、適切なレシート セクションにブラジルのカスタム フィールドを追加します。 レシート形式の使用方法の詳細については、[レシート テンプレートと印刷](../receipt-templates-printing.md) を参照してください。
 
@@ -191,41 +195,49 @@ Commerce 本社で小売店舗を設定するには、次の手順を実行し�
 Commerce 本社で会計登録プロセスを設定するには、次の手順を実行します。 詳細情報については、[コマース チャネルの会計統合の設定](./setting-up-fiscal-integration-for-retail-channel.md) を参照してください。
 
 1. Commerce SDK から会計ドキュメント プロバイダーと会計コネクタのコンフィギュレーション ファイルをダウンロードします。
+
     1. [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) レポジトリ を開きます。
     1. 使用可能な最後のリリース ブランチ (例えば、[リリース/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31) を開きます)。
     1. **src \> FiscalIntegration \> ElectronicFiscalDocumentsBrazil** を開きます。
     1. **構成 \> コネクタ** (例えば、[リリース/9.31 のファイル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/Connectors)): で会計コネクタ コンフィギュレーション ファイルをダウンロードします。
+
         - SubmitConnector.xml
         - SatConnector.xml
         - ContingencyConnector.xml
+
     1. **構成 \> DocumentProviders** (例えば、[リリース/9.31 のファイル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/DocumentProviders)): で会計ドキュメント プロバイダー コンフィギュレーション ファイルをダウンロードします。
+
         - SubmitProvider.xml
         - SatProvider.xml
         - ContingencyProvider.xml
+
 1. **Retail とコマース \> 本社の設定 \> パラメーター \> コマース共有パラメーター** の順に移動します。
 1. **一般** タブで、**会計統合の有効化** オプションを **はい** に設定します。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計コネクタ** に移動し、先ほどダウンロードした会計コネクタ コンフィギュレーション ファイルを読み込みます。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 会計ドキュメント プロバイダー** に移動し、先ほどダウンロードした会計ドキュメント プロバイダー コンフィギュレーション ファイルを読み込みます。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> コネクタ機能プロファイル** の順に移動します。
-1. コンフィギュレーションを読み込んだばかりのドキュメント プロバイダーごとに、コネクタ機能プロファイルを作成し、既にコンフィギュレーションを読み込んだ会計コネクタを選択します。 必要に応じて、データ マッピング設定を更新します。
+1. コンフィギュレーションを読み込んだばかりのドキュメント プロバイダーごとに、コネクタ機能プロファイルを作成し、既にコンフィギュレーションを読み込んだ会計コネクタを選択します。 必要に応じて、データ マッピング設定を更新します。 SAT の設定が必要な場合、**KEY Vault アクティベーション コードのシークレット名** および **SAT の POS 署名** フィールドを設定します。
 1. **Retail とコマース \> チャネル設定 \> 会計統合 \> コネクタ技術プロファイル** の順に移動します。
-1. コネクタ技術プロファイルを作成し、既にコンフィギュレーションを読み込んだ会計コネクタを選択します。 必要に応じて、接続設定を更新します。
+1. コネクタ技術プロファイルを作成し、既にコンフィギュレーションを読み込んだ会計コネクタを選択します。 必要に応じて接続設定を更新します (NFC-e の場合は、**コネクタ タイプ** フィールドを **内部** に設定します)。 SAT の設定が必要な場合、SAT デバイスの **コネクタ名** フィールド (**Connector type** = **ローカル**) を設定し、**SAT ライブラリ パス** 文字列を指定します。 動的リンク ライブラリ (DLL) ファイルの名前を含める。
 1. **Retail と Commerc \> チャネル設定 \> 会計統合 \> 会計コネクタ グループ** の順に移動します。
-1. 既に作成した各コネクタ機能プロファイル用に、会計コネクタ グループを作成します。
+1. 既に作成した各コネクタ機能プロファイル用に会計コネクタ グループを作成します (SAT を含む)。
 1. **Retail と Commerce \> チャネル設定 \> 会計統合 \> 登録プロセス** の順に移動します。
 1. 登録プロセスを作成します。 登録手順として、作成した会計コネクタ グループを選択します。
+1. SAT デバイス用に別の登録プロセスを作成します。
 1. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> 機能プロファイル** の順に移動します。
 1. 登録プロセスを有効化する店舗にリンクされている機能プロファイルを選択し、**会計登録プロセス** のクイック タブで、作成した登録プロセス番号を選択します。
+1. SAT デバイス用に別の機能プロファイルを作成します。
 1. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル** の順に移動します。
 1. 会計プリンターの接続先のハードウェア ステーションにリンクされているハードウェア プロファイルを選択します。
-1. **会計周辺機器** クイック タブで、コネクタの技術的なプロファイルを選択します。
+1. SAT デバイス用に別のハードウェア プロファイルを作成します。
+1. **会計周辺機器** クイックタブで、各ハードウェア プロファイルに対してコネクタ テクニカル プロファイルを選択します。
 1. **Retail とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> ハードウェア プロファイル** の順に移動します。
 1. プリンターのハードウェア プロファイルを設定します。
 1. **店舗** ページの **ハードウェア ステーション** クイック タブで、ハードウェア ステーションの設定を追加します。 必要に応じて、既に構成したネットワーク プリンターの IP アドレスを構成します。
 
 ## <a name="customer-information-management"></a>顧客情報管理
 
-**顧客情報の追加** 操作を使用して、CNPJ または CPF (Cadastro de Pessoas Físicas) などのブラジル固有の顧客税登録番号、および住所を販売トランザクションに追加できます。 顧客情報は、トランザクションに対して指定された顧客レコードから引き出す場合も、手動で入力することもできます。 顧客情報を DANFE の会計レシートに印刷して、請求に使用できます。
+**顧客情報の追加** 操作を使用して、CNPJ または CPF (Cadastro de Pessoas Físicas) などのブラジル固有の顧客税登録番号、および住所を販売トランザクションに追加できます。 顧客情報は、トランザクションに対して指定された顧客レコードから引き出す場合も、手動で入力することもできます。 顧客情報を DANFE および CF-e-SAT の会計レシートに印刷して、請求に使用できます。
 
 Commerce 本社で **顧客住所の追加** を構成するには、次の手順を実行します。
 
@@ -307,7 +319,22 @@ AOS で証明書を構成するには、次の手順に従います。
 > [!NOTE]
 > 設定が完了したら、Commerce 本社で適切な配送ジョブを実行する必要があります。
 
+### <a name="set-up-the-sat-activation-code"></a>SAT アクティベーション コードの設定
+
+SAT アクティベーション コードにより、POS レジスターと SAT デバイス間の通信が有効になります。 SAT ハードウェア属性には、SAT デバイスの有効化中に入力された SAT シリアル番号のアクティベーション コードが含されます。 その SAT ハードウェア属性は、POS レジスターに関連付けられている必要があります。 
+
+SAT ハードウェア属性を作成するには、次の手順に従います。
+
+1. **システム管理 \> 設定 \> Key Vault パラメーター** の順に移動します。
+1. SAT アクティベーション コードのレコードを作成します。
+1. **ActivationCode** という名前のシークレットを追加します。
+1. **シークレット** フィールドに値を入力します。
+1. **シークレット タイプ** フィールドで、**手動** を選択します。
+
 ### <a name="configure-crt-extension-components"></a>CRT 拡張コンポーネントを構成
+
+> [!WARNING]
+> [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、このローカライズ機能は使用できません。 LCS の開発者仮想マシン (VM) で、Retailソフトウェア開発キット (SDK) の以前のバージョンを使用する必要があります。 (Microsoft は今後のバージョンの新しい独立した梱包および拡張機能モデルに、ローカライズ機能のサポートを追加する予定です。)
 
 CRT 拡張コンポーネントを構成するには、次の手順に従います。
 
@@ -317,13 +344,13 @@ CRT 拡張コンポーネントを構成するには、次の手順に従いま�
 
 2. 拡張コンフィギュレーション ファイルで CRT の変更を登録します。
 
-```xml
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalServiceBrazil" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
- ```
+    ```xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalServiceBrazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
+    ```
  
 3. CRT の Web.config ファイルを検索します。
 
@@ -331,11 +358,11 @@ CRT 拡張コンポーネントを構成するには、次の手順に従いま�
 
 4. extensionComposition セクションに新しい拡張ライブラリ名を追加して、この Web.config ファイルを更新します。
  
-```xml
-<extensionComposition>
- <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.ElectronicFiscalDocumentBrazil" />
-</extensionComposition>
-```
+    ```xml
+    <extensionComposition>
+        <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.ElectronicFiscalDocumentBrazil" />
+    </extensionComposition>
+    ```
 
 5. Local CRT on Modern POS の拡張コンフィギュレーション ファイルを検索します。
 
@@ -343,16 +370,16 @@ CRT 拡張コンポーネントを構成するには、次の手順に従いま�
 
 6. 拡張コンフィギュレーション ファイルで Local CRT on Modern POS の変更を登録します。
 
- ```xml
- <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
- <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil.Offline" />
- <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
- <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
- <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
- ```
+    ```xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil.Offline" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
+    ```
 
-> [!WARNING]
-> **Commerceruntime.config** および **CommerceRuntime.MPOSOffline.config** ファイルを編集してはいけません。 これらのファイルはカスタマイズのためのものではありません。
+    > [!WARNING]
+    > **Commerceruntime.config** および **CommerceRuntime.MPOSOffline.config** ファイルを編集してはいけません。 これらのファイルはカスタマイズのためのものではありません。
 
 7. Modern POS の Retail プロキシの拡張コンフィギュレーション ファイルを検索します。
 
@@ -360,14 +387,31 @@ CRT 拡張コンポーネントを構成するには、次の手順に従いま�
 
 8. 拡張コンフィギュレーション ファイルで Modern POS の Retail プロキシの変更を登録します。
 
- ```xml
-        <retailProxyExtensions>
-          <composition>
+    ```xml
+    <retailProxyExtensions>
+        <composition>
             <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.ElectronicFiscalDocumentBrazil" />
-          </composition>
-        </retailProxyExtensions>
- ```
- 
+        </composition>
+    </retailProxyExtensions>
+    ```
+
+### <a name="enable-hardware-station-extension-components"></a>ハードウェア ステーション拡張コンポーネントを有効にする
+
+> [!NOTE]
+> 詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](../retail-hardware-station-configuration-installation.md)を参照してください。
+
+#### <a name="satbrazil-component"></a>SatBrazil コンポーネント
+
+ハードウェア ステーションが SAT 拡張コンポーネントを読み込むようにするために、対応するアセンブリ参照を **HardwareStation.Extension.config** ファイルに設定する必要があります。このファイルは Retail SDK の **Assets** フォルダーにあります。
+
+```xml
+<hardwareStationExtension>
+    <composition>
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.SatBrazil" />
+    </composition>
+</hardwareStationExtension>
+```
+
 ### <a name="enable-modern-pos-extension-components"></a>Modern POS 拡張コンポーネントの有効化
 
 Modern POS 拡張コンポーネントを有効にするには、次の手順に従います。
@@ -428,3 +472,8 @@ Cloud POS の拡張機能コンポーネントを **extensions.json** ファイ�
 [オフライン代替モードで発行された NFC-e ドキュメントの登録延期](latam-bra-nfce-contingency-mode.md)
 
 [Commerce 本社の小売明細書を介してブラジルの会計ドキュメントを投稿](latam-bra-retail-statements.md)
+
+[ブラジル向け Commerce POS の CF-e 会計ドキュメントおよび SAT との統合機能](latam-bra-cf-e-sat.md)
+
+[Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md)
+

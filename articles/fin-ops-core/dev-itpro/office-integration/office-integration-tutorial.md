@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 184d79042516a4da13008993dd55cb8c4a2e7f8f
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 9047857d51489339eee5d7d0cd8c758ff6966af3
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441151"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069362"
 ---
 # <a name="office-integration-tutorial"></a>Office 統合のチュートリアル
 
@@ -27,15 +27,18 @@ ms.locfileid: "7441151"
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 このチュートリアルでは、Excel、Word、ドキュメント管理および電子メールが関係する Office 統合エクスペリエンスを使用して構築します。 
 
 ## <a name="overview"></a>概要
 
-このチュートリアルでは、Microsoft Excel、Microsoft Word、Finance and Operations アプリのドキュメント管理機能、および電子メールが関係する Microsoft Office 統合エクスペリエンスを使用して構築します。 Excel と Word がデータ エンティティをシステムへのエントリ ポイントとして使用する方法、Excel がユーザー エクスペリエンスの中核になれる方法、Excel と Word を一時的な簡易レポートとして使用できる方法を確認します。 ドキュメント管理機能と電子メール機能を使用してファイルを格納および共有する方法も表示されます。
+このチュートリアルでは、Microsoft Excel、Microsoft Word、財務と運用アプリのドキュメント管理機能、および電子メールを含む Microsoft Office 統合エクスペリエンスを使用および構築します。 Excel と Word がデータ エンティティをシステムへのエントリ ポイントとして使用する方法、Excel がユーザー エクスペリエンスの中核になれる方法、Excel と Word を一時的な簡易レポートとして使用できる方法を確認します。 ドキュメント管理機能と電子メール機能を使用してファイルを格納および共有する方法も表示されます。
 
 ## <a name="key-concepts"></a>重要な概念
 -   **エンティティと OData** - Microsoft Dynamics Excel データ コネクタ アプリ (Excel App) を使用して、作成、読み取り、更新、および削除を行います。 コネクタは、デフォルト状態の「public」(**DataEntity.Public**=**Yes**) のまま残されているエンティティに対して作成された OData サービスを使用します。
--   **Office 用アプリ** - Excel アプリケーションは、Office 用アプリ フレームワーク (Office Web API とも呼ばれます) を使用して作成されます。 Excel アプリは Web ベースのため、クライアントと技術を共有し、オンプレミス Excel インスタンスおよび Microsoft Excel Online (Microsoft 365) の両方の中で実行されます。 アプリは、作業ウィンドウの Excel の内部で実行されます。
+-   **Office 用アプリ** - Excel アプリケーションは、Office 用アプリ フレームワーク (Office Web API とも呼ばれます) を使用して作成されます。 Excel アプリケーションは Web ベースのため、クライアントと技術を共有し、オンプレミス Excel インスタンスおよび Microsoft Excel Online (Microsoft 365) の両方の中で実行されます。 アプリは、作業ウィンドウの Excel の内部で実行されます。
 -   **Microsoft Office 2016** – Excel アプリと Word アプリは、Office 2016 で導入された Apps for Office フレームワークの進歩を利用します。 したがって、Excel および Word の各アプリケーションを実行するには Office 2016 が必要です。
 -   **認証** - Excel と Word アプリは、Excel と Word 内のブラウザー ウィンドウで実行されます。 コンフィギュレーションに使用されるブラウザーに関する詳細については、[Office アドインで使用されるブラウザー](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)を参照してください。ユーザーが Microsoft Edge の InPrivate 閲覧セッションや Google Chrome などの異なるブラウザーでクライアントを実行している場合でも指定されたブラウザーが使用されます。 認証は OAuth によって促進され、ユーザーはアプリ内でアカウントを選択してサインインすることができます。 ブラウザーは最初にユーザーを自動的にサインインさせようとするため、正しいユーザーとしてサインインしていない場合や、サインインに問題がある場合は、サインアウト リンクを使用して、強制的にアプリからログアウトする必要がある場合があります。 サインアウト後、再度アプリにサインインしてください。
 -   **Excel アプリ** - Excel アプリは、更新を促進し、データ操作を公開することに加えて、ソースとフィールド情報、ルックアップ、フィルタリング、エラーメッセージ、エンティティデータソースからフィールド、テーブル列、またはラベルを追加または削除するためのデザイン エクスペリエンスも提供します。
@@ -136,7 +139,7 @@ Excel アプリケーションには、ユーザーがエンティティ デー�
 
 ### <a name="open-in-excel-online"></a>Excel Online で開く
 
-Excel アプリケーションは、Office フレームワークの新しいアプリケーションを使用して構築されます。 このフレームワークは、アプリケーションが Office アプリケーションと通信できる JavaScript ベースの Web アプリケーション プログラミング インターフェイス (API) を提供します。 この新しいフレームワークの最大の利点は、アプリがオンプレミスの Excel インスタンス (Win32)、Excel Online (Microsoft 365)、および Apple iPad 上の Excel で実行できることです。 将来的に他の Excel アプリでも実行できるようになります。
+Excel アプリケーションは、Office フレームワークの新しいアプリケーションを使用して構築されます。 このフレームワークは、アプリケーションが Office アプリケーションと通信できる JavaScript ベースの Web アプリケーション プログラミング インターフェイス (API) を提供します。 この新しいフレームワークの最大の利点は、アプリケーションが社内の Excel インスタンス (Win32)、Excel Online (Microsoft 365)、および Excel の Apple iPad で実行できることです。 将来的に他の Excel アプリでも実行できるようになります。
 
 1.  **フリート管理** &gt; **顧客** &gt; **顧客** に移動します。
 2.  **Microsoft Office** で **開く** &gt; **Excel で開く** &gt; **フリート管理の顧客** の順に選択します。
@@ -423,7 +426,7 @@ SysEmail フレームワークを介して有効になっている電子メー�
 1.  **システム管理** &gt; **設定** &gt; **電子メール** &gt; **電子メール パラメータ** の順に移動します。
 2.  **SMTP** を選択します。
 3.  **送信メール サーバー** を要求された SMTP サーバーに設定します。
-    -   [Microsoft 365 製品](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c) (\*.onmicrosoft.com アカウントを含む) 用: smtp.office365.com (**設定** &gt; **メール** &gt; **POP および IMAP** で outlook.office.com を通してこの設定を検索します。)
+    -   「[Microsoft 365 製品](https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c)」 (\*.onmicrosoft.com アカウントを含む) の場合: smtp.office365.com (**設定** &gt; **メール** &gt; **POP および IMAP** で outlook.office.com を通してこの設定を検索します。)
     -   Outlook/Hotmail 用: smtp-mail.outlook.com
 
 4.  ユーザー名とパスワードを適切な電子メール アカウントとパスワードに設定します。
@@ -438,8 +441,8 @@ SysEmail フレームワークを介して有効になっている電子メー�
 13. テスト メッセージを受信するには、宛先アドレスをメール アドレスに変更します。
 14. メッセージの件名および本文を入力します。
 15. **送信** を選択します。 メッセージは 1 〜 5 分で配信する必要があります。 メッセージが **電子メール パラメーター** ページに設定されている電子メール アカウントから送信されることに注意してください。 そのメール アカウントに **メールの送信** ダイアログ ボックスで使用されている送信元アドレスの「送信者」(または「このメールボックスからメールを送信」) のアクセス許可が与えられている場合、そのアドレスからのメッセージが表示されます。
-    -   [送信者] 権限は、Microsoft 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メールボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する** で構成することができます。 詳細については、[Microsoft 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。
-    -   ユーザーが電子メール メッセージを送信する前に、**電子メール パラメーター** ページで設定されている電子メール アカウントにクライアントの各ユーザー電子メール アカウントの 「送信者」権限を与える必要があります。 詳細については、[Microsoft 365 を使用して電子メールを送信するためのマルチ機能デバイスまたはアプリケーションの設定方法](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) を参照してください。
+    -   Send As 権限は、Microsoft 365 管理センター (portal.office.com/Admin) にて、**ユーザー** &gt; **有効なユーザー** &gt; **ユーザー** &gt; **メールボックスのアクセス許可を編集** &gt; **このメールボックスから電子メールを送信する** で構成することができます。 詳細については、「[Microsoft 365 で別のユーザーのメールボックスからの電子メールの送信を有効にする](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E)」を参照してください。
+    -   ユーザーが電子メール メッセージを送信する前に、**電子メール パラメーター** ページで設定されている電子メール アカウントにクライアントの各ユーザー電子メール アカウントの 「送信者」権限を与える必要があります。 詳細については、「[Microsoft 365 を使用して電子メールを送信するためのマルチ機能デバイスまたはアプリケーションの設定方法](/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365)」を参照してください。
 
 16. ユーザーの介入なしにサーバーから直接送信される電子メールは、バッチ処理を介して送信され、**電子メール ディストリビューター バッチ** プロセスを開始する必要があります。 プロセスを開始するには、これらの手順に従います。
     1.  **システム管理** &gt; **定期処理のタスク** &gt; **電子メールの処理** &gt; **バッチ** の順に移動します。

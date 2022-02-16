@@ -2,7 +2,7 @@
 title: 外部アプリケーションでの Retail Server API の使用
 description: このトピックでは、外部アプリケーションで Retail Server API を使用する方法について説明します。
 author: mugunthanm
-ms.date: 03/02/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 1a39ac3c1f4b747ad88be6e99ff2d28806506731
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 83eda2b61cb6e91ffc3d7274ab2aa29dc8ff2632
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781911"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968116"
 ---
 # <a name="consume-retail-server-apis-in-external-applications"></a>外部アプリケーションでの Retail Server API の使用
 
@@ -67,7 +67,7 @@ https://RS-URL/Commerce/$metadata
 アプリケーションの登録は、アプリと Microsoft ID プラットフォームとの間に信頼関係を確立します。 信頼は単一方向で、アプリケーションは Microsoft ID プラットフォームを信頼しますが、逆向きでは信頼されません。 アプリの登録を作成するには、次の手順に従います。
 
 1. [Azure ポータル](https://portal.azure.com/)にサインインします。
-2. 複数のテナントへのアクセス許可がある場合は、トップメニューの **ディレクトリ + 購読** フィルターを使用して、アプリケーションを登録するテナントを選択します。
+2. 複数のテナントへのアクセス許可がある場合は、トップメニューの **ディレクトリ + サブスクリプション** フィルターを使用して、アプリケーションを登録するテナントを選択します。
 3. **Azure Active Directory** を検索して選択します。
 4. **管理** で、**アプリの登録** を選択し、**新規登録** を選択します。
 5. アプリケーションの名前を入力します。 アプリのユーザーにはこの名前が表示されます。後で変更することもできます。
@@ -100,7 +100,7 @@ https://RS-URL/Commerce/$metadata
 5. **追加** を選択します。
 6. シークレットの値は、クライアント アプリケーション コードで使用できるように必ず書き留めてください。 
 
-## <a name="register-the-app-in-the-finance-and-operations-app-so-that-retail-server-trusts-it"></a>Retail Server から信頼されるようにするため、Finance and Operations アプリで、対象アプリを登録する
+## <a name="register-the-app-in-the-finance-and-operations-app-so-that-retail-server-trusts-it"></a>Retail Server から信頼されるようにするため、財務と運用アプリで、対象アプリを登録する
 
 1. Commerce Headquarters で、**Retail と Commerce** &gt; **本社の設定** &gt; **パラメーター** &gt; **Commerce 共有パラメーター** の順に移動します。
 2. **ID プロバイダー** クイック タブで、`Azure Active Directory` タイプのプロバイダーを選択します。 選択に基づいて、**依存する関係者** クイック タブの値が設定されます。
@@ -196,7 +196,7 @@ API にアクセスするには、最初に認証トークンを生成します�
 
 1. プロジェクトの NuGet パッケージ マネージャを使用して、以下の NuGet パッケージを追加します。
 
-    + Microsoft.IdentityModel.Clients.ActiveDirectory
+    + Microsoft.Identity.Client
     + Microsoft.Dynamics.Commerce.RetailProxy
 
     **Microsoft.Dynamics.Commerce.RetailProxy** NuGet パッケージは、**RetailSDK\\Pkgs** フォルダから追加することができます。 NuGet マネージャで、**RetailSDK\\pkgs** フォルダのローカル リポジトリを追加します。
@@ -231,7 +231,7 @@ API にアクセスするには、最初に認証トークンを生成します�
     ```C#
     private static async Task<ManagerFactory> CreateManagerFactory()
     {
-        Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authenticationContext = new   Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext(authority.ToString(), false);
+        Microsoft.Identity.Client.AuthenticationContext authenticationContext = new   Microsoft.Identity.Client.AuthenticationContext(authority.ToString(), false);
         AuthenticationResult authResult = null;
         authResult = await authenticationContext.AcquireTokenAsync(resource, new ClientCredential(clientId, clientSecret));
 

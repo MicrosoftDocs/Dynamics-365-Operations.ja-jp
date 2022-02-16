@@ -1,7 +1,9 @@
-- name: Dynamics 365 for Talent
-  href: ./index.md
+- name: Dynamics 365 Talent の廃止
+  href: ../human-resources/hr-talent-retire.md?toc=/dynamics365/talent/toc.json
   items:
-    - name: 使用開始
+    - name: Dynamics 365 Talent のホーム ページ
+      href: ./index.md
+    - name: 概要
       items:
         - name: Talent の使用を開始する
           href: talent-get-started.md

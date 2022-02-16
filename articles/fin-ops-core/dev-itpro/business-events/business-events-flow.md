@@ -35,7 +35,7 @@ Dataverse コネクタによって、Finance and Operations アプリ内のデ�
 
 ### <a name="using-the-finance-and-operations-connector"></a>Finance and Operations コネクタの使用
 
-Finance and Operations コネクタは、購読を確立するために Finance and Operations アプリと直接通信しますが、実行時に Dataverse によってトリガーされます。 コネクタは、Azure Active Directory (Azure AD) テナント上の任意の Finance and Operations アプリのインスタンスに接続できます。 
+Finance and Operations コネクタは、サブスクリプションを確立するために Finance and Operations アプリと直接通信しますが、実行時に Dataverse によってトリガーされます。 コネクタは、Azure Active Directory (Azure AD) テナント上の任意の Finance and Operations アプリのインスタンスに接続できます。 
 
 **ビジネス イベントの発生時** というトリガーをフローに追加した後、以下の情報を提供する必要があります。
 

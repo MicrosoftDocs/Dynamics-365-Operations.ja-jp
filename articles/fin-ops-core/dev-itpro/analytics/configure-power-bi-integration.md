@@ -2,7 +2,7 @@
 title: PowerBI.com 統合の構成
 description: このトピックでは、PowerBI.com との統合をサポートする新しい Finance and Operations 環境を構成する方法を説明します。
 author: RichdiMSFT
-ms.date: 12/01/2021
+ms.date: 01/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: RICHDI
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85cdf7f598b6b94de92a12aeed485f9893ddde7c
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: ec3e1f02585b6c2a0c8e16c9a66561fb79768f01
+ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883426"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8018364"
 ---
-# <a name="configure-powerbicom-integration"></a>PowerBI.com 統合のコンフィギュレーション
+# <a name="configure-powerbicom-integration"></a>PowerBI.com 統合の構成
 
 [!include [banner](../includes/banner.md)]
 
@@ -58,8 +58,7 @@ ms.locfileid: "7883426"
     - **名前** – アプリの名前を入力します。
     - **サポートされるアカウントの種類** – この組織 (単一のテナント) に直接所属しているアカウントのみを入力します。
     - **アプリケーション タイプ** – **Web** を入力します。
-    - **リダイレクト URI** – `https://contosoax7.cloud.dynamics.com` など、クライアントのベース URL を入力します。
-
+    - **リダイレクト URI** – クライアントのベース URL を入力し、最後に **oauth** を追加します (`https://contosoax7.cloud.dynamics.com/oauth` など)。
     
 4. **登録** を選択します。
 5. **アプリケーション (クライアント) ID** の値をコピーします。 この値を使用して、PowerBI.com サービスに接続します。
@@ -105,9 +104,9 @@ ms.locfileid: "7883426"
     > [!IMPORTANT]
     > 続行する前に、必ず **アプリケーション (クライアント) ID** と **シークレットの値** の値をキャプチャしてください。
 
-## <a name="specify-power-bi-settings-in-finance-and-operations"></a>Finance and Operations における Power BI の設定を指定する
+## <a name="specify-power-bi-settings-in-finance-and-operations"></a>Finance and Operations での Power BI の設定の指定
 
-1. Finance and Operations クライアントで、**PowerBI.com コンフィギュレーション** ページを開きます。
+1. Finance and Operations クライアントで、**PowerBI.com 設定** ページを開きます。
 
     ![PowerBI.com コンフィギュレーション ページ](./media/D365-PBI-Configuration.png)
 

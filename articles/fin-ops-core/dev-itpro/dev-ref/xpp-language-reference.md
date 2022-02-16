@@ -10,12 +10,12 @@ ms.author: tfehr
 ms.custom: intro-internal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4e354f7bebe6797772e206f8c960578b0d54cfd
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 034b1383f49293bd41c9b57f110b472b45d5e2f8
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783228"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968825"
 ---
 # <a name="x-language-reference"></a>X++ 言語リファレンス
 
@@ -47,7 +47,7 @@ X++ ソース コードは Microsoft .NET CIL (共通中間言語) にコンパ�
 
 以前のバージョン (AX2012 以前) からコードをアップグレードする場合は、不要になったために `Global::runClassMethodIL` などの CIL ヘルパーのメソッドが削除されていることに注意してください。
 
-詳細については、[「マネージド コード」とは何ですか?](/dotnet/standard/managed-code.md) を参照してください。
+詳細については、[「マネージド コード」とは何ですか?](/dotnet/standard/managed-code) を参照してください。
 
 ### <a name="the-ignore-list"></a>Ignore リスト
 

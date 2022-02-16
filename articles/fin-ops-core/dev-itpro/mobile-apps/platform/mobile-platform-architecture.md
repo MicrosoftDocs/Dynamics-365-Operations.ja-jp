@@ -3,19 +3,19 @@ title: モバイル プラットフォームのアーキテクチャと設計の
 description: このトピックでは、モバイル プラットフォームのアーキテクチャと設計の考慮事項を提供します。
 author: tonyafehr
 ms.date: 09/17/2019
-ms.topic: article
+ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 62f8f8808d0584a075c82e960a84f3d48d910f00
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ae854e156d6e0f386ac357b46ecc7dc25f734519
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782160"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986073"
 ---
 # <a name="architecture-and-design-considerations-for-the-mobile-platform"></a>モバイル プラットフォームのアーキテクチャと設計の考慮事項
 
@@ -25,7 +25,7 @@ ms.locfileid: "7782160"
 
 ![モバイル アーキテクチャ。](media/mobilearchitecture.png)
 
-モバイル アプリ プラットフォームは、Finance and Operations アプリへの接続を想定していません。 ナビゲーション、データの表示、データ入力などの活動は、データがキャッシュされた後にサーバー接続の必要はありません。
+モバイル アプリ プラットフォームは、財務と運用アプリへの接続を想定していません。 ナビゲーション、データの表示、データ入力などの活動は、データがキャッシュされた後にサーバー接続の必要はありません。
 
 ## <a name="understanding-navigation-in-the-mobile-app"></a>モバイル アプリでのナビゲーションを理解する
 モバイル アプリのナビゲーションは、ダッシュボード、ワークスペース、ページ、およびアクションという 4 つの簡単な概念で構成されています。 

@@ -46,11 +46,11 @@ Finance and Operations アプリケーションをクラウドにまたはオン
 
 詳細については、[配置オプション](../../dev-itpro/deployment/choose-deployment-type.md)を参照してください。
 
-## <a name="step-three-buy-and-manage-a-subscription"></a>ステップ 3: 定期売買の購入と管理
+## <a name="step-three-buy-and-manage-a-subscription"></a>ステップ 3: サブスクリプションの購入と管理
 
-定期売買のオプションを表示するには、[Dynamics 365 の価格設定](https://www.microsoft.com/dynamics365/pricing) ページに移動します。 このページには、組織のニーズに合わせて複数の異なる計画が含まれています。
+サブスクリプション オプションを表示するには、[Dynamics 365 の価格設定](https://www.microsoft.com/dynamics365/pricing) ページに移動します。 このページには、組織のニーズに合わせて複数の異なる計画が含まれています。
 
-定期売買には多くのオプションがあります。
+サブスクリプションには多くのオプションがあります。
 
 - クラウド ソリューション プロバイダー (クラウドのみ) を使用して購入。
 - パートナーを通じて購入し、ボリューム ライセンス (クラウドまたはオンプレミス) を使用。
@@ -71,7 +71,7 @@ Finance and Operations オンプレミスを購入するにはパートナーと
 ボリューム ライセンスでは、Finance and Operations アプリケーションは以下を通じて使用可能です。
 
 - エンタープライズ契約
-- エンタープライズ契約の定期売買
+- エンタープライズ契約のサブスクリプション
 - (キャンパスおよび学校契約に基づく) 教育ソリューションの登録
 - Microsoft の製品およびサービス契約 (MPSA)
 

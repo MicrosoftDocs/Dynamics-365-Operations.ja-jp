@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b32a7edf0610c7a2cd988423dd9fa407f8354834
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 11847571395403790b779a968797e139239d79fe
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595165"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982789"
 ---
 # <a name="open-data-protocol-odata"></a>データ プロトコル (OData) を開く
 
@@ -108,7 +108,7 @@ $filter には組み込みの演算子があります。
 - 剰余 (mod)
 - 優先順位のグループ化 ({ })
 
-また、**Contains** オプションを $filter 要求とともに使用することができます。 これは、ワイルドカード文字として実装されています。 例: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
+また、**Contains** オプションを $filter 要求とともに使用することができます。 これは、ワイルドカード文字として実装されています。 例: `http://host/service/EntitySet?$filter=StringField eq '*retail*'`
 
 「持つ」 と 「含む」 の演算子には対応していません。
 
