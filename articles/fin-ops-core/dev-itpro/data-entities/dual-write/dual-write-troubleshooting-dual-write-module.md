@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリでのデュアル書き込み問題のトラブルシューティング
-description: このトピックでは、アプリの Finance and Operations デュアル書き込みモジュールの問題修正に役立つトラブルシューティング情報を提供します。
+title: 財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング
+description: このトピックでは、財務と運用アプリのデュアル書き込みモジュールの問題修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 3caf3f18718fd6bee20232a0200d421b9c9ef22c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781201"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061811"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Finance and Operations アプリでのデュアル書き込み問題のトラブルシューティング
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-このトピックでは、Finance and Operations アプリと Dataverse 間のデュアル書き込み統合に関するトラブルシューティングの情報を提供します。 このトピックでは、Finance and Operations アプリの **デュアル書き込み** モジュールの問題修正に特化したトラブルシューティング情報を提供します。
+
+このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、財務と運用アプリの **デュアル書き込み** モジュールの問題修正に特化したトラブルシューティング情報を提供します。
 
 > [!IMPORTANT]
 > このトピックで説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Finance and Operations アプリでデュアル書き込みのモジュールを読み込むことができない
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>財務と運用アプリでデュアル書き込みモジュールを読み込めない
 
 **データ管理** ワークスペースで **デュアル書き込み** タイルを選択しても **デュアル書き込み** のページを開くことができない場合は、データ統合サービスがダウンしている可能性があります。 サポートチケットを作成して、データ統合サービスの再起動を要求してください。
 
@@ -49,7 +49,7 @@ ms.locfileid: "7781201"
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>環境をデュアル書き込みにリンクする際、または新しいテーブルのマッピングを追加する際にエラーが発生する
 
-**問題の修正に必要なロール:** Finance and Operations アプリと Dataverse 両方のシステム管理者権限。
+**問題の解決に必要なロール:** 財務と運用アプリと Dataverse の両方のシステム管理者。
 
 マッピングをリンクまたは作成する際に、次のエラーが表示される場合があります。
 
@@ -59,13 +59,13 @@ Session ID: \<your session id\>
 Root activity ID: \<your root activity\> id
 ```
 
-このエラーは、デュアル書き込みへのリンクと、マッピングを作成する十分なアクセス権限がない場合に発生する可能性があります。 このエラーは、リンク解除によるデュアル書き込みを行わずに Dataverse 環境をリセットした場合にも発生する可能性があります。 Finance and Operations アプリと Dataverse の両方でシステム管理者ロールを持つすべてのユーザーが、環境をリンクできます。 デュアル書き込み接続を設定したユーザーだけが、新しいテーブル マップを追加できます。 設定後、システム管理者のロールを持つユーザーはステータスを監視し、マッピングを編集できます。
+このエラーは、デュアル書き込みへのリンクと、マッピングを作成する十分なアクセス権限がない場合に発生する可能性があります。 このエラーは、リンク解除によるデュアル書き込みを行わずに Dataverse 環境をリセットした場合にも発生する可能性があります。 財務と運用アプリと Dataverse の両方でシステム管理者ロールを持つすべてのユーザーが、環境をリンクできます。 デュアル書き込み接続を設定したユーザーだけが、新しいテーブル マップを追加できます。 設定後、システム管理者のロールを持つユーザーはステータスを監視し、マッピングを編集できます。
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>テーブル マッピングを停止した際のエラー
 
 テーブルのマッピングを停止した際に、次のエラー メッセージが表示される場合があります:
 
-*\[禁止されています\]、\[{状態: 403、"ソース": ""、"メッセージ": "トークン変換エラー: ユーザーに dynamicscrmonline/xxxxxx-xxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx への接続許可がありません"}\]、リモート サーバーがエラーを返しました：(403) 許可されていません。*
+*\[禁止されています\]、\[{状態: 403、"ソース": ""、"メッセージ": "トークン変換エラー: ユーザーに dynamicscrmonline/xxxxxx-xxxx-xxxx-xxxxxxxx"}\] への接続許可がありません"、リモート サーバーがエラーを返しました：(403) 許可されていません。*
 
 このエラーは、リンクされた Dataverse 環境が使用できない場合に発生します。
 
@@ -82,7 +82,7 @@ Root activity ID: \<your root activity\> id
 マッピングの状態を **実行中** に設定しようとすると、次のエラーが表示される場合があります。 エラーの原因によって修正方法は異なります。
 
 + マッピングに依存マッピングが含まれている場合は、このテーブル マッピングの依存マッピングを有効にする必要があります。
-+ マッピングにソース列、または出力先の列がない可能性があります。 Finance and Operations アプリの列が存在しない場合は、[マップに存在しないテーブル列の問題](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps) のセクションに記載されている手順を実行します。 Dataverse で列が表示されていない場合は、マッピングの **テーブルの更新** ボタンをクリックして、列が自動的にマッピングに反映されるようにします。
++ マッピングにソース列、または出力先の列がない可能性があります。 財務と運用アプリの列が存在しない場合は、[マップに存在しないテーブル列の問題](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps) のセクションに記載されている手順を実行します。 Dataverse で列が表示されていない場合は、マッピングの **テーブルの更新** ボタンをクリックして、列が自動的にマッピングに反映されるようにします。
 
 ### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>バージョンの不一致エラーとデュアル書き込みソリューションのアップグレード
 

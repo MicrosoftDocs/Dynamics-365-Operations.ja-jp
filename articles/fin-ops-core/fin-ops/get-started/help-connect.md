@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations アプリのヘルプ エクスペリエンスを構成する
+title: 財務と運用アプリのヘルプ エクスペリエンスの構成
 description: このトピックでは、一部の Microsoft Dynamics 365 アプリのヘルプシステムのコンポーネントに関する情報を提供します。
 author: margoc
 ms.date: 08/11/2021
@@ -15,22 +15,25 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594860"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071011"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations アプリのヘルプ エクスペリエンスを構成する
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>財務と運用アプリのヘルプ エクスペリエンスの構成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、Dynamics 365 Human Resources などの Finance and Operations アプリに関するヘルプシステムのコンポーネントの概要を説明します。 また、これらのコンポーネントの接続方法と、ユーザー定義のヘルプを作成するプロセスの概要についても説明します。
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+このトピックでは、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、Dynamics 365 Human Resources などの財務と運用アプリに関するヘルプ システムのコンポーネントの概要を説明します。 また、これらのコンポーネントの接続方法と、ユーザー定義のヘルプを作成するプロセスの概要についても説明します。
 
 ## <a name="help-architecture"></a>ヘルプ アーキテクチャ
 
-Finance and Operations アプリには、[Microsoft Dynamics 365 ドキュメント](/dynamics365/) サイトにて公開されている概要やその他のトピックが含まれています。 このコンテンツには、製品内の **ヘルプ** ウィンドウからアクセスできます。 次の図は、ヘルプ システムの一部を示します。
+財務と運用アプリには、[Microsoft Dynamics 365 ドキュメント](/dynamics365/) サイトにて公開されている概要やその他のトピックが含まれています。 このコンテンツには、製品内の **ヘルプ** ウィンドウからアクセスできます。 次の図は、ヘルプ システムの一部を示します。
 
 [![ヘルプ アーキテクチャ。](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -60,7 +63,7 @@ Finance and Operations アプリには、[Microsoft Dynamics 365 ドキュメン
 2. タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
 3. BPM ライブラリの表示順序を選択します。 表示順序では、ライブラリからのタスク録画が **ヘルプ** ウィンドウに表示される順序を定義します。
 
-これらのステップを完了すると、**ヘルプ** ウィンドウを開いて **タスク ガイド** タブを選択すすることができます。Finance and Operations アプリの現在のページに対応するタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。
+これらのステップを完了したのちに、**ヘルプ** ウィンドウを開いて **タスク ガイド** タブを選択できます。財務と運用アプリケーションの現在のページに対応するタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。
 
 ### <a name="showing-translated-task-guides"></a>翻訳されたタスク ガイドの表示
 
@@ -84,7 +87,7 @@ Finance and Operations アプリには、[Microsoft Dynamics 365 ドキュメン
 
 ### <a name="connect-a-custom-help-site"></a>ユーザー定義のヘルプ サイトに接続する
 
-Finance and Operations アプリが既成のフォームで使用されることはほとんどありません。 その代わりに、ソリューションは組織のニーズに合わせてカスタマイズされ、拡張されます。 また、ヘルプ エクスペリエンスをカスタマイズ、拡張することが可能です。 たとえば、製品内の **ヘルプ** ウィンドウにユーザー定義のヘルプを追加できます。
+財務と運用アプリが既成のフォームで使用されることはほとんどありません。 その代わりに、ソリューションは組織のニーズに合わせてカスタマイズされ、拡張されます。 また、ヘルプ エクスペリエンスをカスタマイズ、拡張することが可能です。 たとえば、製品内の **ヘルプ** ウィンドウにユーザー定義のヘルプを追加できます。
 
 Microsoft では、ユーザー定義のヘルプを展開して **ヘルプ** ウィンドウに接続するツールキットを提供しています。 **ヘルプ** ウィンドウに接続されているユーザー定義のヘルプ ソリューションを設定する方法の詳細については 、[カスタムヘルプの概要](../../dev-itpro/help/custom-help-overview.md)を参照してください。
 

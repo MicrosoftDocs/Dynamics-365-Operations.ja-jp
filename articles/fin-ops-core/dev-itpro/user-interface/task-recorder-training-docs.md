@@ -15,16 +15,19 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d137b5dbde52423d0e040c3012fb4f1eee2368d4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781235"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070529"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>タスク レコーダーによるドキュメントやトレーニングの作成
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、タスク レコーダーとタスク ガイド、タスク記録の作成方法、また Microsoft タスク ガイドのカスタマイズ方法とそれをヘルプに含める方法について説明します。
 

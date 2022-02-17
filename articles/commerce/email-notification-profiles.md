@@ -2,7 +2,7 @@
 title: 電子メール通知プロファイルの設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce で電子メール通知プロファイルを作成する方法について説明します。
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 02/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a92c21a93766e6583882f50222837366ed4c9a24c2bbfd93933763bd4ffa46bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a7d796a173a6f9dfcd62e1f73e078cac614145e
+ms.sourcegitcommit: 2aca3a95d42403c7f5d80dcd5e3ee958dca5c894
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771034"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8087870"
 ---
 # <a name="set-up-an-email-notification-profile"></a>電子メール通知プロファイルの設定
 
@@ -27,7 +27,7 @@ ms.locfileid: "6771034"
 
 このトピックでは、Microsoft Dynamics 365 Commerce で電子メール通知プロファイルを作成する方法について説明します。
 
-チャンネルを作成する場合は、電子メール通知プロファイルを設定できます。 このようにして、発注書の作成、注文出荷の状態、支払不履行など、さまざまなトランザクション イベントについて顧客に電子メールを送信できます。
+チャンネルを作成する場合は、電子メール通知プロファイルを設定できます。 メール通知プロファイルでは、顧客に通知を送る販売取引のイベント (注文作成、注文確定、注文請求などのイベント) を定義します。 
 
 追加の電子メールのコンフィギュレーションに関する詳細については、[電子メールのコンフィギュレーションおよび送信](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json) を参照してください。
 
@@ -43,7 +43,7 @@ ms.locfileid: "6771034"
 
 ### <a name="create-an-email-template"></a>電子メール テンプレートを作成する
 
-電子メール通知タイプを有効にする前に、Commerce 本社で組織の電子メール テンプレートを作成する必要があります。 このテンプレートでは、サポートする各言語の電子メールの件名、送信者、既定の言語、および電子メールの本文を定義します。
+メール通知タイプを有効にする前に、サポートする通知タイプごとに Commerce 本部で組織メール テンプレートを作成する必要があります。 このテンプレートは、サポートされている各言語のメールの件名、送信者、既定の言語、メール本文を定義します。
 
 電子メール テンプレートを作成するには、次の手順に従います。
 
@@ -61,6 +61,8 @@ ms.locfileid: "6771034"
 
 ![電子メール テンプレート設定。](media/email-template.png)
 
+メールテンプレートの作成についての詳細について、[トランザクション イベントのメールテンプレートの作成](email-templates-transactions.md) を参照してください。 
+
 ### <a name="create-an-email-event"></a>電子メール イベントの作成
 
 電子メール イベントを作成するには、次の手順に従います。
@@ -76,10 +78,12 @@ ms.locfileid: "6771034"
 
 ![イベント通知設定。](media/email-notification-profile.png)
 
+> [!NOTE]
+> 顧客が作成した通知タイプでは、メール通知を送信する前に、カスタマイズを実施する必要があります。
+
 ### <a name="next-steps"></a>次のステップ
 
 メールを送信する前に、送信メール サービスをコンフィギュレーションし、バッチ ジョブを設定する必要があります。 詳細については、[電子メールのコンフィギュレーションと送信](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json) を参照してください。
-
 
 ## <a name="additional-resources"></a>追加リソース
 

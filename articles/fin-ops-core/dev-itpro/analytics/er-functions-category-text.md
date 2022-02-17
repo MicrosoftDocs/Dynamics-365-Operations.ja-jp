@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647563"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075503"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>テキスト カテゴリ内の ER 関数のリスト
 
@@ -35,6 +35,7 @@ ms.locfileid: "7647563"
 | [連結](er-functions-text-concatenate.md) | この関数は、1 つの文字列に結合された後、*文字列* 値として指定されたすべてのテキスト文字列を返します。 |
 | [形式](er-functions-text-format.md) | この関数は、*N* 番目の引数で **%N** の出現を置き換えることで書式設定した後に、*文字列* 値として指定された文字列を返します。 |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | この関数は、*文字列* 値として指定された列挙名を使用して、指定された列挙データソースの特定の *列挙* 値を検索します。 *列挙* 値が見つかった場合、関数によって返されます。 |
+| [GetLabelText](er-functions-text-getlabeltext.md) | この関数は、特定のラベルを検索して、指定したラベルの翻訳を表す *[文字列](er-formula-supported-data-types-primitive.md#string)* 値を指定した言語で返します。 |
 | [GuidValue](er-functions-text-guidvalue.md) | この関数は、指定された *文字列* 型の入力を *GUID* 型のデータ品目に変換します。 |
 | [JsonValue](er-functions-text-jsonvalue.md) | この関数は指定した ID に基づくスカラー値を抽出し、指定したパスでアクセスする JavaScript Object Notation (JSON) 形式で、データを解析します。 次に、抽出したスカラー値を *文字列* 値として返します。 |
 | [左](er-functions-text-left.md) | この関数は、指定された文字列の冒頭から指定された数の文字を表す *文字列* 値を返します。 |

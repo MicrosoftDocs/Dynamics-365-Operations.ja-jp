@@ -2,7 +2,7 @@
 title: 電子申告における多言語レポートの設計
 description: このトピックでは、電子申告 (ER) ラベルを使用して多言語レポートをデザインおよび生成する方法について説明します。
 author: NickSelin
-ms.date: 09/03/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf02e8f90fb83acd8448339f411489851742af18
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e5c6b28dc115719922e418cb7a6156032d994d39
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674432"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074945"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>電子申告における多言語レポートの設計
 
@@ -28,9 +28,9 @@ ms.locfileid: "7674432"
 
 ## <a name="overview"></a>概要
 
-ビジネス ユーザーとして、[電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用し、さまざまな国や地域の法的要件に従って生成されなければならない送信ドキュメントの形式を構成できます。 これらの要件により、送信ドキュメントを国や地域ごとに異なる言語で生成する必要がある場合は、言語依存のリソースを含む 1 つの ER [形式](general-electronic-reporting.md#FormatComponentOutbound) を構成できます。 このようにすると、この形式を再利用してさまざまな国や地域の送信ドキュメントを生成できます。 また、1 つの ER 形式を使用して、対応する顧客、仕入先、関連会社、またはその他の関係者向けに、送信ドキュメントを異なる言語で生成することもできます。
+ビジネス ユーザーとして、[電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用し、さまざまな国や地域の法的要件に従って生成されなければならない送信ドキュメントの形式を構成できます。 これらの要件により、送信ドキュメントを国や地域ごとに異なる言語で生成する必要がある場合は、言語依存のリソースを含む 1 つの ER 形式 を構成できます。 このようにすると、この形式を再利用してさまざまな国や地域の送信ドキュメントを生成できます。 また、1 つの ER 形式を使用して、対応する顧客、仕入先、関連会社、またはその他の関係者向けに、送信ドキュメントを異なる言語で生成することもできます。
 
-ER データ モデルとモデル マッピングを構成済み ER 形式のデータソースとして構成し、生成されたドキュメントに挿入するアプリケーション データを指定するデータ フローを定義できます。 ER コンフィギュレーション [プロバイダー](general-electronic-reporting.md#Provider)として 、構成済みの [データ モデル](general-electronic-reporting.md#data-model-and-model-mapping-components)、[モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)、および [形式](general-electronic-reporting.md#FormatComponentOutbound) を ER ソリューションのコンポーネントとして [公開](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) し、特定の送信ドキュメントを生成できます。 公開された ER ソリューションを顧客が [アップロード](general-electronic-reporting-manage-configuration-lifecycle.md) して、使用およびカスタマイズできるようにすることもできます。 顧客が他の言語を話す可能性がある場合は、言語依存のリソースを含むように ER コンポーネントを構成できます。 このようにして、設計時に、編集可能な ER コンポーネントのコンテンツを顧客のユーザー優先言語で表示できます。
+ER データ モデルとモデル マッピングを構成済み ER 形式のデータソースとして構成し、生成されたドキュメントに挿入するアプリケーション データを指定するデータ フローを定義できます。 ER コンフィギュレーション [プロバイダー](general-electronic-reporting.md#Provider) として 、構成済みの [データ モデル](general-electronic-reporting.md#data-model-and-model-mapping-components)、[モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)、および形式を ER ソリューションのコンポーネントとして [公開](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) し、特定の送信ドキュメントを生成できます。 公開された ER ソリューションを顧客が [アップロード](general-electronic-reporting-manage-configuration-lifecycle.md) して、使用およびカスタマイズできるようにすることもできます。 顧客が他の言語を話す可能性がある場合は、言語依存のリソースを含むように ER コンポーネントを構成できます。 このようにして、設計時に、編集可能な ER コンポーネントのコンテンツを顧客のユーザー優先言語で表示できます。
 
 言語依存のリソースを ER ラベルとして構成できます。 これらのラベルを使用して、ER コンポーネントを次の目的で構成できます:
 
@@ -232,6 +232,19 @@ ER バージョン管理では、ER コンポーネント内の任意の属性�
 ## <a name="performance"></a><a name=performance></a>業績
 
 ER 形式のコンポーネンを構成してユーザーの優先 [言語](#language)でレポートを生成する場合、またはコンテンツが優先言語で解析される受信ドキュメントをインポートする場合、[機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースで **ER を実行している現在のユーザーの優先言語をキャッシュする** の機能を有効にすることをお勧めします。 特に ER フォーミュラとバインディングのラベルおよび多くの[検証](general-electronic-reporting-formula-designer.md#TestFormula)ルールへの複数の参照を含む ER 形式のコンポーネントがユーザーの優先言語でユーザー メッセージを生成する場合、この機能によりパフォーマンスが向上します。
+
+ERコンフィギュレーション バージョンのステータスを **ドラフト** から **完了** に変更すると、コンフィギュレーション バージョンに ER ラベルが含まれている場合、これらのラベルはアプリケーション データベースに格納されます。 記憶域スキーマは、**ER ラベル記憶域の高速化** 機能の状態に依存します:
+
+- 機能が有効になっていない場合、すべてのラベルは、**ERSOLUTIONVERSIONTABLE** テーブルの **LABELXML** フィールドに 1 つの XML スニペットとして格納されます。
+- 機能が有効になっている場合、**ERSOLUTIONVERSIONLABELSTABLE** テーブルの言語ごとに個別のレコードが作成されます。 このテーブルの **CONTENTS** フィールドには、圧縮された XML スニペットとして言語別のラベルが格納されます。
+
+**機能管理** ワークスペースの **ER ラベル記憶域の高速化** 機能を有効にすることをお勧めします。 この機能により、ほとんどの場合、1 つの ER コンフィギュレーションで作業するときに 1 つの言語の ER ラベルが使用されるため、ネットワーク帯域幅の稼働状況とシステム全体のパフォーマンスが向上します。
+
+選択した記憶域スキーマを適用して、すべての ER コンフィギュレーションのラベルを現在の Finance インスタンスで保持するには、次の手順を実行します。
+
+1. **組織管理** > **定期処理** > **選択したラベルの保存スキーマをすべての ER コンフィギュレーションに適用** の順に移動します。
+2.  **OK** を選択します。
+
 
 ## <a name="additional-resources"></a>追加リソース
 

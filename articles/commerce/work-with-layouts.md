@@ -2,7 +2,7 @@
 title: プリセット レイアウトの使用
 description: このトピックでは、Microsoft Dynamics 365 Commerce でのプリセット レイアウトの使用方法について説明します。
 author: phinneyridge
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0f6effd4dda669041a269d568bd39beda607a2bcc05c65e40bb76c6f1d02cd5e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775315"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090848"
 ---
 # <a name="work-with-preset-layouts"></a>プリセット レイアウトの使用
 
@@ -91,12 +91,24 @@ ms.locfileid: "6775315"
 
 プリセット レイアウトの変更をプレビューしたら、次のいずれかの手順に従って、実際のサイトにレイアウトを発行します。
 
-* **レイアウト** に移動し、レイアウトを選択して、**公開** をクリックします。
-* レイアウト名を選択してレイアウト エディターを開き、**発行** を選択します。
-* 未公開のレイアウトを参照するページを公開します。 レイアウトは自動的に公開されます。
+1. **レイアウト** に移動し、レイアウトを選択して、**公開** をクリックします。
+1. レイアウト名を選択してレイアウト エディターを開き、**発行** を選択します。
+1. 未公開のレイアウトを参照するページを公開します。 レイアウトは自動的に公開されます。
 
 > [!WARNING]
 > 複数のページから、プリセット レイアウトを参照することができます。 プリセット レイアウトを発行する場合は、複数のページのレイアウトに影響を与える可能性があることに注意してください。
+
+## <a name="rename-a-preset-layout"></a>プリセット レイアウトの名前を変更する
+
+サイト ビルダーでプリセット レイアウトの名前を変更するには、次の手順に従います。
+
+1. 左側のナビゲーション ウィンドウで、**レイアウト** を選択します。
+1. 名前を変更するレイアウトのレイアウト名を選択します。
+1. レイアウトの編集を開始するには、**編集** 選択します。
+1. レイアウト プロパティ ウィンドウで、レイアウト名の横のペン記号を選択します。
+1. 必要に応じてレイアウト名を編集します。
+1. 名前の変更を確認する場合は、チェック マークを選択します。
+1. **編集完了** を選択します。
 
 ## <a name="additional-resources"></a>追加リソース
 

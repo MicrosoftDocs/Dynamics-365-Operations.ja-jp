@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 190cfc8f4509ad3c61057c66ec0b920408c3c421e19c5147987892a918311537
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6277c37ac43b8cc05c8b53da5ca0a1909f58c4f9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734643"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070037"
 ---
 # <a name="action-search"></a>アクション検索
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 この記事では、アクション検索機能について説明します。 アクション検索でページのアクションを検索して実行できます。
 

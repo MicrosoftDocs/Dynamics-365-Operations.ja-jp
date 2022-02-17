@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bd9c39bb3b5e221694fe20a8085c9099040cb422
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: b7c2423faa4a0c50d9d319a9e6f489e2946c36a7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431096"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071601"
 ---
 # <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a>固定報酬プランへの従業員の登録
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -31,8 +34,8 @@ ms.locfileid: "7431096"
 3. 一覧で、選択された行のリンクをクリックします。
 4. **職位** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 5. 一覧で、選択された行のリンクをクリックします。
-    * 表示されているレベルは、職位におけるジョブの報酬レベルです。 報酬は、従業員に割り当てる前に、ジョブに設定する必要があります。  
-6. **プラン** フィールドで、従業員の固定報酬プランを選択します。 [計画] ルックアップでは、従業員は適格性ルールに基づいて適格となるプランのみが表示されるようにフィルタ処理されます。
+    * 表示されているレベルは、**職位** に割り当てられている **ジョブ** の **報酬** FastTab > **レベル** フィールドを参照しています。 報酬は、従業員に割り当てる前に、ジョブに設定する必要があります。  
+6. **プラン** フィールドで、従業員の固定報酬プランを選択します。 **計画** 検索では、**適格性ルール** に基づいて適格となるプランのみが表示されるようにフィルター処理されます。
 7. 一覧で、目的のレコードを見つけ、選択します。
     * 報酬の **発効日** と **有効期限** の既定値は、作業者の職位の割り当て開始日および終了日から取得されます。 必要に応じて、これらの日付を調整できます。  
     * 固定報酬プランがステップ計画である場合、従業員に対する正しい支払いレートを含む手順を選択します。 固定報酬プランが段階的またはバンド プランである場合、従業員に対する正しい支払いレートを入力します。 支払レートは、計画の許容設定およびジョブの報酬レベルの最小または最大基準点に対して検証されます。  

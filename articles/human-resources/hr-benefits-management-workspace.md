@@ -2,7 +2,7 @@
 title: 給付金管理ワークスペース
 description: このトピックでは、Dynamics 365 Human Resources の給付金管理ワークスペースについて説明します。
 author: twheeloc
-ms.date: 09/21/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6cc1432e108c74706dea124a62024272e65b6c1
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: 424f4a2098e05b4f7dc6fa84df133dda81cc59f0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512477"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071536"
 ---
 # <a name="benefits-management-workspace"></a>給付金管理ワークスペース
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [applies to](../includes/applies-to-hr.md)]
 
@@ -94,7 +97,7 @@ ms.locfileid: "7512477"
 タイルまたはタブを選択して、アクション項目を表示できます。タブを選択すると、ワークスペース ページ上で作業者を表示および選択できます。
 **オープンな加入契約** タブは、加入契約を開くプロセスの主要なメトリックを提供します。 
 
-オープンな加入契約に関する情報は、**加入契約開始日** の 30 日前 に表示されます。 この日付は、**加入契約開始日** フィールドの、**福利厚生管理** > **リンク** > **期間** の **期間** 設定で定義されています。  この設定を変更するには、**人事管理共有パラメータ** > **福利厚生** > **オープンな加入契約のオプション** にアクセスし、**フィールドの数** を更新します。  
+オープンな加入契約に関する情報は、**加入契約開始日** の 30 日前 に表示されます。 この日付は、**加入契約開始日** フィールドの、**福利厚生管理** > **リンク** > **期間** の **期間** 設定で定義されています。  この設定を変更するには、**Human Resource 共有パラメーター** > **福利厚生** > **オープンな加入契約のオプション** にアクセスし、**フィールドの数** を更新します。  
 
 **オープンな加入契約** タブでは、次の情報を利用できます。
  - オープンな加入契約プロセスを開始していない従業員

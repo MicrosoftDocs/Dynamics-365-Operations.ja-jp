@@ -2,7 +2,7 @@
 title: Finance Insights の設定に関する問題のトラブルシューティング
 description: このトピックでは、Finance insights の機能の使用時に発生する問題を一覧表示します。 また、これらの問題の修正方法についても説明します。
 author: panolte
-ms.date: 11/03/2021
+ms.date: 01/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968839"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8064869"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insights の設定に関する問題のトラブルシューティング
 
@@ -92,3 +92,25 @@ Dynamics 365 Finance ユーザーには、環境の Microsoft Power Apps ユー�
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP マイクロサービス CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>現象: エラー "選択したフィルター範囲のデータが見つかりません。 別のフィルター範囲を選択して、再度お試しください。" 
+
+### <a name="resolution"></a>解決策
+
+データ統合の設定を確認し、予想どおりに機能していること、AI Builder から Finance にデータを戻してアップサートしていることを確認します。  
+詳細については、[データ統合プロジェクトの作成](../finance-insights/create-data-integrate-project.md) を参照してください。
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>現象: 顧客支払予測のトレーニングに失敗し、AI Builder エラーに「予測には、モデルをトレーニングするための 2 つの区別できる結果値のみが含まれている必要があります。 2 つの結果にマップし、再トレーニングしてください」、「トレーニング レポートの問題:　IsNotMinRequiredDistinctNonNullValues」と表示されます。
+
+### <a name="resolution"></a>解決策
+
+このエラーは、**期限内**、**遅延**、**かなり遅延** のカテゴリで説明された各カテゴリに該当する過去 1 年間の履歴トランザクションが十分でないことを示します。 このエラーを解決するには、**かなり遅延** トランザクション期間を調整します。 **かなり遅延** トランザクション期間を調整してもエラーが修正されない場合は、トレーニング目的で各カテゴリのデータが必要になるため、**顧客支払予測** は最適なソリューションではありません。
+
+**期限内**、**遅延**、**かなり遅延** の各カテゴリを調整する方法の詳細については、[顧客支払予測の有効化](../finance-insights/enable-cust-paymnt-prediction.md) を参照してください。
+
+## <a name="symptom-model-training-failed"></a>現象: モデルのトレーニングに失敗しました
+
+### <a name="resolution"></a>解決策
+
+**キャッシュ フロー予測** のモデル トレーニングには、1 年を超え、100 件を上回るトランザクションを含むデータが必要です。 これらのトランザクションは、キャッシュ フロー予測設定に含まれる流動資産勘定に影響を与える必要があります。
+
+**顧客支払予測** では、予測を作成するために、過去 6 - 9 か月の間に少なくとも 100 件の顧客請求書と支払トランザクションが必要です。  

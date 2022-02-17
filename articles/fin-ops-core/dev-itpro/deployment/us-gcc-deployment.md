@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 17702ada5bf75a44652e194c2555a83e76e7a36b
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: 0c8b88e5d190f6dc9beb9342909d1e489d4af10b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817445"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062289"
 ---
 # <a name="dynamics-365-finance-and-dynamics-365-supply-chain-management-in-us-government-community-cloud-gcc"></a>US Government Community Cloud (GCC) における Dynamics 365 Finance と Dynamics 365 Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Microsoft Dynamics 365 米国 (US) 政府機関製品は、資格のある政府機関や民間企業が利用できます。 それらのエンティティは、以下の種類に限られます:
 
@@ -38,9 +38,9 @@ Microsoft Dynamics Lifecycle Services (LCS) の実装プロジェクトの初期
 
 ## <a name="environment-deployment"></a>環境配置
 
-プロジェクトのオンボーディングの完了後は、[Finance and Operations アプリの顧客向け Lifecycle Services (LCS)](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md) に記載されている LCS の追加機能を確認することができます。 続いて環境の展開に移ります。
+プロジェクトのオンボーディングの完了後は、[財務と運用アプリの顧客向け Lifecycle Services (LCS)](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md) に記載されている LCS の追加機能を確認することができます。 続いて環境の展開に移ります。
 
-- LCS を使用してマイクロソフトが管理する環境を展開するには、[Finance and Operations アプリの顧客用 Lifecycle Services (LCS)](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience) に記載の手順に従ってください。
+- LCS を使用してマイクロソフトが管理する環境を展開するには、[財務と運用アプリの顧客用 Lifecycle Services (LCS)](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience) に記載の手順に従ってください。
 - クラウド ホスト環境については、[開発環境の導入とアクセス](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) を参照してください。 また、[米国政府の Lifecycle Services プロジェクトに対する Azure Resource Manager のオンボーディングプロセスの完了](arm-onbarding-us-goverment.md)に記載されているように、ご利用コネクタに対する Resource Manager のオンボーディングプロセスを完了する必要があります。
 
 > [!NOTE]

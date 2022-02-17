@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 06c783c1e4a2961f1445909ea03d557c0985064e
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 7c81155f0c5150af44982f224c8eca2026a78ee7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728592"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060892"
 ---
 # <a name="understand-date-and-time-fields"></a>日付と時刻のフィールドの理解
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 **日付と時刻** フィールドは、Microsoft Dynamics 365 Human Resources の基本的な概念です。 ページ、Dataverse、外部ソースにおいて **日付と時刻** データを操作する方法を理解しておくことが重要です。
 

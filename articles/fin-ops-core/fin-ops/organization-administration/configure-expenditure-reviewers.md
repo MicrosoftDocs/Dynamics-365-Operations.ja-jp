@@ -9,15 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ceb0a60ccf3d1c989d8663e933faaa5e430d314695e20990c9086cd1b8325ff1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773730"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070149"
 ---
 # <a name="configure-expenditure-reviewers"></a>支出確認者のコンフィギュレーション
 [!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 プロジェクトのロールに割り当てられたユーザーまたは支出が請求されている財務分析コードのいずれかに基づいて、確認を受ける支出をルーティングするための動的支出確認者のコンフィギュレーションを設定できます。 ワークフロー プロセスは、指定されたプロジェクト ロールまたは財務分析コードの所有者に基づいて、支出をルーティングする先の担当者を決定します。
 
@@ -49,7 +52,7 @@ ms.locfileid: "6773730"
 
 ## <a name="example-1-expenditure-reviewers-based-on-organization-distributions"></a>例 1: 組織配分に基づく支出確認者
 
-Contoso アプライアンスに勤務し、組織に 6 つの部署と 10 のコスト センターがあります。 新しい購買要求を送信したら、最初に部門マネージャから承認を受け、次にコスト センター マネージャから承認を取得する必要があります。
+Contoso アプライアンスに勤務しており、この組織には 6 つの部署と 10 のコスト センターがあります。 新しい購買要求を送信したら、最初に部門マネージャから承認を受け、次にコスト センター マネージャから承認を取得する必要があります。
 
 この例では、2 人の *購買要求支出確認者* を構成します。
 

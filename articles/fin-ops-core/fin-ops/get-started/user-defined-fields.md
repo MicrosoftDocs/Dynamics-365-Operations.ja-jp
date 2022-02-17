@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: c941fa30662ed54159e303bf2a944026900d8c04107bc800d109a80d9ef456a4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2ab1c402d99c1d9b7d7dc06e64c93fe43c5a1e9f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760713"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071188"
 ---
 # <a name="create-and-work-with-custom-fields"></a>カスタム フィールドの作成と操作
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 広範囲なビジネス プロセスを管理しすぐに使えるフィールドの広範なセットがありますが、場合によっては会社がシステムで追加情報を追跡する必要があります。 プログラマーは、開発者ツールでこれらのフィールドを拡張機能として追加することができますが、カスタム フィールド機能を使用すると、ユーザー インターフェイスから直接フィールドを追加できるので、Web ブラウザーを使用してビジネスに合わせてアプリケーションをカスタマイズできます。
 

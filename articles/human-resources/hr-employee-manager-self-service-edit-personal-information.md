@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: e798646263b9939445f49a3866532cd229c668cd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431465"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071504"
 ---
 # <a name="edit-personal-information"></a>個人情報の編集
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -69,7 +72,7 @@ ms.locfileid: "7431465"
     - ID 番号を追加するには、**新規** を選択します。 必要に応じてフィールドに情報を入力し、**保存** を選択します。
     - 番号を編集するには、**編集** を選択します。 必要に応じてフィールドに情報を入力し、**保存** を選択します。
 
-7. 支払われた方法を変更するには、**自分の支払情報** タブを選択します。このタブは、**"人事管理パラメータ** フォームで支払方法が有効になっている場合にのみ使用できます。 HR は、**銀行ドラフト**、**現金**、**小切手**、**電子支払**、または **その他** を有効にできます。 HR は、電子支払の検証 (米国の給与支払に使用)、および銀行口座とルート指定番号の検証を無効にすることもできます。
+7. 支払われた方法を変更するには、**自分の支払情報** タブを選択します。このタブは、**Human Resources パラメーター** ページで支払方法が有効になっている場合にのみ使用できます。 HR は、**銀行ドラフト**、**現金**、**小切手**、**電子支払**、または **その他** を有効にできます。 HR は、電子支払の検証 (米国の給与支払に使用)、および銀行口座とルート指定番号の検証を無効にすることもできます。
 
 8. プロファイルの人事管理に表示するイメージを変更するには、**イメージ** タブを選択します。組織の設定によっては、承認のためにイメージがルーティングされる場合があります。
 

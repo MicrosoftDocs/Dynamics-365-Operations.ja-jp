@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d1e74bbbeba019ca48dd823b58251643e96edd0c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 532e6603b74ad0293d65684d2d6858ef31fbc496
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782213"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063190"
 ---
 # <a name="integrated-tax"></a>統合された税
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 税設定データでは、間接税 (VAT、GST、売上税) および源泉徴収税の両方の設定が定義されます。 税金計算ルール、税率、税務会計、決済、およびその他の概念について説明します。
 
@@ -28,7 +28,7 @@ ms.locfileid: "7782213"
 
 次の表に示すように、税データには、データ操作中に連携して動作するテーブル マップのコレクションが含まれています。
 
-| Finance and Operations アプリ | Customer Engagement アプリ | 説明 |
+| 財務と運用アプリ | Customer Engagement アプリ | Description |
 |-----------------------------|-----------------------------------|-------------|
 [品目消費税グループ](mapping-reference.md#196) | msdyn_taxitemgroups | |
 [消費税所轄官庁](mapping-reference.md#193) | msdyn_taxauthorities | |

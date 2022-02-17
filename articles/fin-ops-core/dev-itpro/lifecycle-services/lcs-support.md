@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations アプリまたは Lifecycle Services (LCS) に関するサポートを受ける
-description: このトピックでは、Finance and Operations アプリまたは Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。
+title: 財務と運用アプリまたは Lifecycle Services (LCS) のサポートの入手
+description: このトピックでは、財務と運用アプリまたは Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4314545941cd4c401325aad7651c8882db322f58aae54e85dbad2548733cc95e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e697c574efb0b04db6cb04d01c41066a0ac3974
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713337"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068037"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations アプリまたは Lifecycle Services (LCS) に関するサポートを受ける
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>財務と運用アプリまたは Lifecycle Services (LCS) のサポートの入手
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリまたは Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。 
+
+[!INCLUDE [PEAP](../../../includes/peap-2.md)]
+
+このトピックでは、財務と運用アプリまたは Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。 
 
 <table>
 <thead>
@@ -48,7 +51,7 @@ ms.locfileid: "6713337"
 <td><a href="https://lcs.dynamics.com/">LCS</a> で <strong>問題検索</strong> ツールを使用して、Microsoft サポート技術情報 (KB) の記事、修正プログラム、および 報告された問題の回避策をすぐに検索します。 特定の機能領域でどの報告された問題が修正処理中か、どの問題がすでに修正済みかを確認できます。 詳細については、<a href="issue-search-lcs.md">問題検索 (Lifecycle Services, LCS)</a> を参照してください。</td>
 </tr>
 <tr>
-<td>Finance and Operations アプリ内のサポートを利用します。</td>
+<td>財務と運用アプリでサポートを利用する。</td>
 <td>アプリの右上隅にある <strong>ヘルプ</strong> ボタン (<strong>?</strong>) を選択し、<strong>サポート</strong> を選択します。 問題は LCS の <strong>アクティブな問題</strong> タブで報告されます。 そこで、管理者は社内サポートを提供するか、Microsoft に問題を送信するかを決定できます。</td>
 </tr>
 <tr>

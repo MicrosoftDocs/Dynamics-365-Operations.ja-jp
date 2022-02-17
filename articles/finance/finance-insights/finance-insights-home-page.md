@@ -2,7 +2,7 @@
 title: Finance Insights ホーム ページ
 description: Finance insights には構成可能かつ拡張可能なモデルが用意されており、会社のキャッシュフローを正確かつ的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能はすべて、インテリジェントな機械学習モデルに基づいています。
 author: ShivamPandey-msft
-ms.date: 11/15/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8cc7b2d733cdcf1adef2885b7900ea312a10d98c
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: 05b0de8b0104238a33f006234d4a0e8ba9fcdb2a
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968813"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087296"
 ---
 # <a name="finance-insights-home-page"></a>Finance Insights ホーム ページ
 
@@ -37,10 +37,6 @@ Finance Insights には構成可能かつ拡張可能なソリューションが
 
 このセクションでは、Finance insights を使用するための要件を示します。 可能な限り、追加情報のソースへのリンクが提供されます。
 
-### <a name="legal-requirements"></a>法的要件
-
-プレビュー プログラムを申請するには、[Dynamics 365 Finance 契約の Finance insights プレビュー](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u) を記入してください。
-
 ### <a name="system-requirements"></a>システム要件
 
 財務分析情報をプレビューするには、Tier 2 環境 (複数のボックス) が必要です。 環境に関するバックグラウンド情報については、[環境計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md) を参照してください。
@@ -48,6 +44,10 @@ Finance Insights には構成可能かつ拡張可能なソリューションが
 ### <a name="version-requirements"></a>バージョン要件
 
 このトピックは、Microsoft Dynamics 365 Finance バージョン 10.0.21 およびそれ以降に適用されます。
+
+### <a name="license-requirements"></a>ライセンス要件
+
+Finance Insights では、AI Builder のクレジットを使用して財務予測を作成します。 これに必要なすべてのライセンスが、テナント ライセンスに含まれています。 各 Dynamics 365 Finance テナントには毎月 20,000 AI Builder クレジットが提供されます。 ビジネス ニーズに追加のクレジットが必要な場合は、AI Builder から直接購入できます。
 
 ### <a name="historical-data-requirements"></a>履歴データ要件
 

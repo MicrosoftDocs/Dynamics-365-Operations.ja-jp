@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 23ac3067c03bf2cf336848301e8c27b60da8dc8c
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2a9753e220e62794b157340c9f8e6f8a053e9ba7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964834"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067986"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>候補者採用手段の確認と配置
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 空席を充填する見込みのある候補者のプールを探すことは難しい場合があり、特に複数の固有のスキルが職位に求められる場合に困難です。 しかし、必要なスキルを持つ候補者が、その組織にすでに雇用されている場合があります。 既存の従業員または新しい応募者の中から、特定のスキル セットを検索することができます。 これにより、リクルーターは、募集中の職位への最近または過去の応募者を素早く一覧し、絞り込むことができます。また、既存の従業員の中から潜在的な候補を探すことができます。 この手順では、スキル マッピング機能を使って、募集中の職位に適した人材を見つける方法を説明します。 この手順の作成に使用するデモ データの会社は **USMF** です。
 

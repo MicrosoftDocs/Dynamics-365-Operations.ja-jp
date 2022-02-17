@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: a49f35211f30cdb76104cc5be78f5b114320a228
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952499"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062653"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>在庫視覚化のインストールと設定
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management の在庫視覚化アドインのインストールの方法を説明します。
 
@@ -43,7 +43,7 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化ア
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Inventory Visibility Add-in をインストールする
 
-アドインをインストールする前に、アプリケーションを登録し、Azure 定期購読の下の Azure Active Directory (Azure AD) にクライアント シークレットを追加します。 手順については、[アプリケーションの登録](/azure/active-directory/develop/quickstart-register-app)および[クライアント シークレットの追加](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)を参照してください。 **アプリケーション (クライアント) ID**、**クライアント シークレット**、および **テナント ID** の値は後で必要になるので、必ずメモしておいてください。
+アドインをインストールする前に、アプリケーションを登録し、Azure サブスクリプションの下の Azure Active Directory (Azure AD) にクライアント シークレットを追加します。 手順については、[アプリケーションの登録](/azure/active-directory/develop/quickstart-register-app)および[クライアント シークレットの追加](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)を参照してください。 **アプリケーション (クライアント) ID**、**クライアント シークレット**、および **テナント ID** の値は後で必要になるので、必ずメモしておいてください。
 
 アプリケーションを登録し、クライアント シークレットを Azure AD に追加した後、次の手順に従って在庫視覚化アドインをインストールします。
 
@@ -80,9 +80,9 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化ア
 
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>在庫可視化アドインをアンインストールする
 
-在庫可視化アドインをアンインストールするには、LCS ページで **アンインストール** を選択します。 アンインストール プロセスは、在庫可視化アドインを終了させ、LCS からアドインの登録を解除し、在庫可視化アドイン データ キャッシュに保存されている一時的なデータが削除されます。 ただし、Dataverse 定期購読に保存されている基本在庫データは削除されません。
+在庫可視化アドインをアンインストールするには、LCS ページで **アンインストール** を選択します。 アンインストール プロセスは、在庫可視化アドインを終了させ、LCS からアドインの登録を解除し、在庫可視化アドイン データ キャッシュに保存されている一時的なデータが削除されます。 ただし、Dataverse サブスクリプションに保存されている基本在庫データは削除されません。
 
-Dataverse 定期購読に保存されている在庫データをアンインストールするには、[Power Apps](https://make.powerapps.com) を開き、ナビゲーション バーの **環境** を選択し、LCS 環境と連携している Dataverse 環境を選択します。 次に、**ソリューション** に移動し、次の 5 つのソリューションをこの順序で削除します:
+Dataverse サブスクリプションに保存されている在庫データをアンインストールするには、[Power Apps](https://make.powerapps.com) を開き、ナビゲーション バーの **環境** を選択し、LCS 環境と連携している Dataverse 環境を選択します。 次に、**ソリューション** に移動し、次の 5 つのソリューションをこの順序で削除します:
 
 1. Dynamics 365 ソリューションが含む在庫品目一覧アプリケーションのアンカー ソリューション。
 1. Dynamics 365 FNO SCM Inventory Visibility アプリケーション ソリューション

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources (2021 年 11 月 19 日) の新機能および変更された機能
-description: このトピックでは、2021 年 11 月 19 日の Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: このトピックでは、2021 年 11 月 19 日のスタンドアロン Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
 author: marcelbf
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3a86c1c24fbc758f4e3d0fd8b052e02078bee41e
-ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
+ms.openlocfilehash: 618d90f95637002f444b334e16d3fef466dda65e
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902604"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087477"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-november-19-2021"></a>Dynamics 365 Human Resources (2021 年 11 月 19 日) の新機能および変更された機能
 

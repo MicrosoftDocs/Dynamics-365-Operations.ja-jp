@@ -2,7 +2,7 @@
 title: Finance Insights の構成
 description: このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。
 author: ShivamPandey-msft
-ms.date: 11/19/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
-ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
+ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "7827031"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8051373"
 ---
 # <a name="configuration-for-finance-insights"></a>Finance Insights の構成
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance insights では、Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、強力な予測ツールを提供します。 このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。 このトピックの手順を正しく実行するには、[Power Portal 管理センター](https://admin.powerplatform.microsoft.com/)のシステム管理者とシステム カスタマイザー、Dynamics 365 Finance におけるシステム管理者アクセス権、および Microsoft Dynamics Lifecycle Services (LCS) の環境作成アクセス権が必要です。
+Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、組織に強力な予測ツールを提供します。 このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。 このトピックの手順を正しく実行するには、[Power Portal 管理センター](https://admin.powerplatform.microsoft.com/)のシステム管理者とシステム カスタマイザー、Dynamics 365 Finance におけるシステム管理者アクセス権、および Microsoft Dynamics Lifecycle Services (LCS) の環境作成アクセス権が必要です。
 
 > [!NOTE]
 > 次の Finance Insights の設定方法は、Dynamics 365 Finance バージョン 10.0.21 以降で有効です。
@@ -100,6 +100,9 @@ Azure Active Directory (Azure AD) は、Dataverse および Microsoft Power Plat
 
    **Insights のプロビジョニング状態の確認** プロセスが正常に実行された後、**機能管理** ワークスペースで Finance Insights 機能を有効にできます。
 
+> [!NOTE]
+> **Insights のプロビジョニング状態の確認** プロセスが実行しない場合は、**システム管理** > **問い合わせ** > **バッチ ジョブ** にアクセスします。 **プロセス 自動化ポーリング システム** フィールドで、プロセスを開始するために値を **待機中** に変更します。 
+> 
 ## <a name="feedback-and-support"></a>フィードバックとサポート
 
 フィードバックに興味のある方、サポートが必要な方は、[Finance insights (プレビュー)](mailto:fiap@microsoft.com) にメールでお問い合わせください。

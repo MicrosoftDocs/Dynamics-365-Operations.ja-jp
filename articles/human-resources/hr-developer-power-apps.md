@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a466ef2d2002ebc9d35b33571009727626cd5c678e995d42a00dbe64a2806729
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fedf9b35e5dc8372fd82c6308ec5b1452eab7e8f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778058"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070303"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Power Apps および Power Automate を使用した拡張
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 この記事では、Microsoft Power Apps および Microsoft Power Automate を使用する Microsoft Dynamics 365 Human Resources の拡張性シナリオのいくつかの例を説明します。 各例に関連付けられているソリューション パッケージを Power Apps 環境にインポートすることができます。 次に、そのパッケージをガイダンスもしくは組織に適用できるシナリオを実装するための開始点として使用できます。
 
@@ -38,13 +41,13 @@ ms.locfileid: "6778058"
 - パッケージをインポートするには、ユーザーは **環境メーカー** のアクセス許可が必要です。
 - アプリをエクスポートまたはインポートするには、Power Apps プラン 2 ライセンスもしくは Power Apps プラン 2 試用版ライセンスが必要です。
 
-## <a name="integration-with-microsoft-365-power-automate"></a>Microsoft 365, Power Automate との統合
+## <a name="integration-with-microsoft-365-power-automate"></a>Microsoft 365 および Power Automate との統合
 
-**Microsoft 365 との統合** アプリを使用すると、Microsoft 365 からサインイン ユーザーのチーム情報を抽出できます。 従業員 ID タイプを抽出するために、人事管理の従業員が照会されます。 マネージャーは従業員 ID タイプの有効期限を確認することができます。 またマネージャーは、従業員 ID タイプが期限切れになる場合に電子メールの通知を送信することもできます。 Power Automate と Power Apps 統合し、このアラームを送信します。 アラームが送信されると、Power Automate から Power Apps に確認が送り返されます。 ID タイプには、運転免許証、パスポート、およびその他受け入れ可能な ID の形式が含まれます。
+**Microsoft 365 との統合** アプリケーションを使用して、Microsoft 365 からサインイン ユーザーのチーム情報を抽出することができます。 従業員 ID タイプを抽出するために、人事管理の従業員が照会されます。 マネージャーは従業員 ID タイプの有効期限を確認することができます。 またマネージャーは、従業員 ID タイプが期限切れになる場合に電子メールの通知を送信することもできます。 Power Automate と Power Apps 統合し、このアラームを送信します。 アラームが送信されると、Power Automate から Power Apps に確認が送り返されます。 ID タイプには、運転免許証、パスポート、およびその他受け入れ可能な ID の形式が含まれます。
 
 このアプリは他のシナリオのために拡張することができます。 たとえば、チームの休暇情報、カレンダーのイベント、およびそのチーム固有のイベントを表示するために使用することができます。
 
-**Microsoft 365, Power Automate との統合** アプリをダウンロードするには、Microsoft ダウンロード センターの [Microsoft 365 との統合](https://go.microsoft.com/fwlink/?linkid=2081787) に移動します。
+**Microsoft 365, Power Automate との統合** アプリケーションをダウンロードするには、Microsoft ダウンロード センターの [Microsoft 365 との統合](https://go.microsoft.com/fwlink/?linkid=2081787) に移動します。
 
 ## <a name="power-automate--sql-connect-and-execute"></a>Power Automate – SQL 接続と実行
 

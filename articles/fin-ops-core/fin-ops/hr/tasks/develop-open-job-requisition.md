@@ -13,16 +13,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a97c2a8bb6c334a5a060fcbfc9527a41ba592750
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 4e3287fc824f2f7eb725b11c990a1c457d45439f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964658"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075152"
 ---
 # <a name="develop-and-open-job-requisition"></a>求人の作成と実施
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> このトピックで説明した機能は、現在 Finance インフラストラクチャの Human Resources の顧客が利用できます。  
+
 
 採用プロジェクトにより、採用プロセスの管理が容易になります。 各採用プロジェクトについて、採用が完了したジョブ、リクルーター名、プロジェクトの状態、ジョブが存在する部門などの情報を設定できます。 採用プロジェクトを作成すると、それに対する求人広告の書き込み、**従業員セルフサービス** ページでの求人広告の発行、雇用申請とプロジェクトの関連付け、そのプロジェクトの活動の追跡を行うことができます。 この手順の作成に使用するデモ データの会社は **USMF** です。
 

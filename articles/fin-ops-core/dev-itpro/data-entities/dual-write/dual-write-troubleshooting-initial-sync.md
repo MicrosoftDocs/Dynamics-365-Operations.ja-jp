@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 241277ada768cc6497035cc377d0e158646a42d6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 030e565ffff561f6c1efbdd0de9928f70c7c46c0
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781117"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063061"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>初めて同期をする際に発生する問題のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-このトピックでは、Finance and Operations アプリと Dataverse 間のデュアル書き込み統合に関するトラブルシューティングの情報を提供します。 このトピックでは、 初めて同期をする際に発生する可能性のある問題の修正に役立つトラブルシューティングに特化した情報を提供します。
+
+このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、 初めて同期をする際に発生する可能性のある問題の修正に役立つトラブルシューティングに特化した情報を提供します。
 
 > [!IMPORTANT]
 > このトピックで説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
 
-## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Finance and Operations アプリの初回の同期エラーを確認します
+## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>財務と運用アプリでの初期同期エラーの確認
 
 マッピングのテンプレートを有効にすると、マッピングの状態が **実行中** になります。 状態が **非実行中** のとなっている場合、初回の同期中にエラーが発生しています。 エラーを表示するには、**デュアル書き込み** ページの **初回同期の詳細** タブを選択し ます。
 
@@ -63,7 +63,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 このエラーが継続して発生し、初回同期を完了できない場合は、次の手順に従って問題を修正してください。
 
-1. Finance and Operations アプリの仮想マシン（VM）にサイン インします。
+1. 仮想マシン (VM) にサインインし、財務と運用アプリにアクセスします。
 2. Microsoft 管理コンソールを起動します。
 3. **サービス** ウィンドウで、Microsoft Dynamics 365 データインポート エクスポート フレームワーク サービスが実行されていることを確認します。 初回同期が必要となるため、停止している場合は再起動してください。
 
@@ -75,7 +75,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 問題を解決するには、次の手順に従います。
 
-1. Finance and Operations アプリにサインインします。
+1. 財務と運用アプリにログインします。
 2. **Azure Active Directory アプリケーション** のページで、**DtAppID** クライアントを削除し、再度追加します。
 
 ![Azure AD アプリケーションの一覧の DtAppID クライアント。](media/aad_applications.png)
@@ -102,9 +102,9 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 仕入先テーブルの任意の行に **PrimaryContactPersonId** 列と **InvoiceVendorAccountNumber** 列がある場合、以下のステップの手順に従って、初期同期を正常に完了してください。
 
-1. Finance and Operations アプリで、マッピングから **PrimaryContactPersonId** 列と **InvoiceVendorAccountNumber** 列を削除し、マッピングを保存します。
+1. 財務と運用アプリで、マッピングから **PrimaryContactPersonId** 列と **InvoiceVendorAccountNumber** 列を削除し、マッピングを保存します。
 
-    1. **仕入先 V2 (msdyn\_vendors)** の二重書き込みマッピング ページで、左のフィールドにある **テーブル マッピング** タブで、**Finance and Operations apps.Vendors V2** を選択します。 右側のフィルターで、**Sales.Vendor** を選択します。
+    1. **仕入先 V2 (msdyn\_vendors)** のデュアル書き込みマッピング ページで、左のフィールドにある **テーブル マッピング** タブで、**Finance and Operations apps.Vendors V2** を選択します。 右側のフィルターで、**Sales.Vendor** を選択します。
     2. **primarycontactperson** を検索して、**PrimaryContactPersonId** ソース列を見つけます。
     3. **アクション** を選択し、**削除** を選択します。
 
@@ -149,9 +149,9 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 顧客テーブルの任意の行に **ContactPersonID** 列と **InvoiceAccount** 列がある場合、以下のステップの手順に従って、初期同期を正常に完了してください。 この方法は、**アカウント** と **連絡先** などの既成のテーブルに使用できます。
 
-1. Finance and Operations アプリで、**顧客 V3 (アカウント)** マッピングから **ContactPersonID** 列と **InvoiceAccount** 列を削除し、マッピングを保存します。
+1. 財務と運用アプリで、**顧客 V3 (アカウント)** マッピングから **ContactPersonID** 列と **InvoiceAccount** 列を削除し、マッピングを保存します。
 
-    1. **顧客 V3 (アカウント)** の二重書き込みマッピング ページにある **テーブル マッピング** タブの左のフィルタで、**Finance and Operations apps.Customers V3** を選択します。 右側のフィルターで、**Dataverse.Account** を選択します。
+    1. **顧客 V3 (アカウント)** のデュアル書き込みマッピング ページにある **テーブル マッピング** タブの左のフィルタで、**Finance and Operations app.Customers V3** を選択します。 右側のフィルターで、**Dataverse.Account** を選択します。
     2. **contactperson** を検索して、**ContactPersonID** ソース列を見つけます。
     3. **アクション** を選択し、**削除** を選択します。
 
@@ -182,16 +182,16 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     > 同じ名前のマップが 2 つあります。 **詳細** タブで次の説明を持つマップを必ず選択してください: **FO.CDS 仕入先の連絡先 V2 から CDS.Contacts との間の同期のための二重書き込みテンプレート。新しいパッケージ \[Dynamics365SupplyChainExtended\] が必要です。**
 
 5. **顧客 V3 (アカウント)** マッピングに **InvoiceAccount** 列と **ContactPersonId** 列を追加し直し、マッピングを保存します。 **InvoiceAccount** 列と **ContactPersonId** 列の両方が再度ライブ同期モードの一部になりました。 次の手順では、これらの列の初期同期をおこないます。
-6. **顧客 V3 (アカウント)** マッピングの初期同期を再度実行します。 Change Tracking が無効になっているため、**InvoiceAccount** と **ContactPersonId** のデータが Finance and Operations アプリから Dataverse に同期されます。
-7. **InvoiceAccount** と **ContactPersonId** のデータを Dataverse から Finance and Operations アプリに同期するには 、データ統合プロジェクトを使用します。
+6. **顧客 V3 (アカウント)** マッピングの初期同期を再度実行します。 Change Tracking が無効になっているため、**InvoiceAccount** と **ContactPersonId** のデータが財務と運用アプリから Dataverse に同期されます。
+7. **InvoiceAccount** と **ContactPersonId** のデータを Dataverse から財務と運用アプリに同期するには 、データ統合プロジェクトを使用します。
 
-    1. Power Apps で、**Sales.Account** と **Finance and Operations apps.Customers V3** テーブルの間にデータ統合プロジェクトを作成します。 データの方向は、Dataverse から Finance and Operations アプリである必要があります。 **InvoiceAccount** は二重書き込みの新しい属性なので、この属性の初期同期をスキップすることができます。 詳細については、[Dataverse へデータを統合](/power-platform/admin/data-integrator) を参照してください。
+    1. Power Apps で、 **Sales.Account** と **Finance and Operations apps.Customers V3** テーブルの間にデータ統合プロジェクトを作成します。 データの方向は、Dataverse から財務と運用アプリである必要があります。 **InvoiceAccount** は二重書き込みの新しい属性なので、この属性の初期同期をスキップすることができます。 詳細については、[Dataverse へデータを統合](/power-platform/admin/data-integrator) を参照してください。
 
         次の図は、**CustomerAccount** と **ContactPersonId** を更新するプロジェクトを示しています。
 
         ![CustomerAccount と ContactPersonId を更新するためのデータ統合プロジェクト。](media/cust_selfref6.png)
 
-    2. Finance and Operations アプリではフィルター基準と一致する行のみが更新されるため、Dataverse 側のフィルターに会社の基準を追加します。 フィルタを追加するには、[フィルタ] ボタンを選択します。 その後、**クエリの編集** ダイアログ ボックスで、**\_msdyn\_company\_value eq '\<guid\>'** のようなフィルター クエリを追加できます。
+    2. 財務と運用アプリではフィルター基準と一致する行のみが更新されるため、Dataverse 側のフィルターに会社の基準を追加します。 フィルタを追加するには、[フィルタ] ボタンを選択します。 その後、**クエリの編集** ダイアログ ボックスで、**\_msdyn\_company\_value eq '\<guid\>'** のようなフィルター クエリを追加できます。
 
         > [注記] フィルタ― ボタンが表示されない場合は、サポート チケットを作成して、データ統合チームにテナントのフィルター機能を有効にするよう依頼します。
 
@@ -201,7 +201,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
     行の初期同期が完了しました。
 
-8. Finance and Operations アプリで、**顧客 V3** テーブルの Change Tracking をオンにし直します。
+8. 財務と運用アプリで、**顧客 V3** テーブルの Change Tracking をオンにし直します。
 
 ## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>10 以上のルックアップ フィールドを持つマップでの初期同期に失敗した場合
 
@@ -227,7 +227,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 *当事者番号が Dataverse で見つかりませんでした。*
 
-**個人** と **組織** タイプの当事者をフィルタ処理するため、Finance and Operations アプリで **DirPartyCDSEntity** に範囲が指定されています。 その結果、**CDS 当事者 - msdyn_parties** マッピングの初期同期は、**法人** や **作業単位** など、他のタイプの当事者とは同期しません。 **CDS 関係者の郵便番号 (msdyn_partypostaladdresses)** または **関係者の連絡先V3 (msdyn_partyelectronicaddresses)** で初期同期を実行するとき、エラーを受け取る可能性があります。
+**個人** と **組織** タイプの当事者をフィルタ処理するため、財務と運用アプリで **DirPartyCDSEntity** に範囲が指定されています。 その結果、**CDS 当事者 - msdyn_parties** マッピングの初期同期は、**法人** や **作業単位** など、他のタイプの当事者とは同期しません。 **CDS 関係者の郵便番号 (msdyn_partypostaladdresses)** または **関係者の連絡先V3 (msdyn_partyelectronicaddresses)** で初期同期を実行するとき、エラーを受け取る可能性があります。
 
 すべてのタイプの関係者が Dataverse に正常に同期するために、Finance and Operations エンティティで当事者タイプの範囲を削除するよう修正中です。
 

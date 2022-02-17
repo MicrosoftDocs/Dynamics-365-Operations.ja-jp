@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c9cd01f5d96794cf3ed7f29a9fae21b67cd298acda36401b7f0f65d073cbbfbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dbcf854330b7c5ba6ca812a5aed384584c05ce8d
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761881"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062189"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 8 月 6 日)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3444 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
 
 ## <a name="platform-update-1001236-is-now-available"></a>プラットフォーム更新プログラム 10.0.12(36) が使用できるようになりました。
 
-詳細については、[Finance and Operations アプリのバージョン 10.0.12 のプラットフォーム更新プログラム (2020 年 8 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md) を参照してください。
+詳細については、[財務と運用アプリのバージョン 10.0.12 のプラットフォーム更新プログラム (2020 年 8 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md) を参照してください。
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>福利厚生管理のためのデータ管理フレームワーク (DMF) エンティティ
  

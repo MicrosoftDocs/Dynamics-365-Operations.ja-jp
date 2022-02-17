@@ -2,7 +2,7 @@
 title: フラグメントで動作
 description: このトピックでは、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。
 author: phinneyridge
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35a19f064b63ce476252064253032d35697bd69c84c4c93db1d0349a57527c2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776197"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090747"
 ---
 # <a name="work-with-fragments"></a>フラグメントで動作 
 
@@ -121,6 +121,20 @@ Commerce サイト ビルダーでフラグメントを編集するには、次�
 1. 必要に応じて、フラグメントのモジュール プロパティと構造を編集します。 このプロセスは、ページ エディター ビューで編集するモジュールの編集プロセスに似ています。
 
 ページ、テンプレート、または親フラグメントでフラグメントを選択し、右側のプロパティ ウィンドウで **フラグメントの編集** を選択することによって、フラグメントを編集することもできます。
+
+### <a name="rename-a-fragment"></a>フラグメントの名前を変更する
+
+サイト ビルダーで既存のフラグメントの名前を変更するには、次の手順に従います。
+
+1. 左側のナビゲーション ウィンドウで、**フラグメント** を選択します。
+1. 名前を変更したいフラグメントのフラグメント名を選択します。
+1. フラグメントの編集を開始するには、**編集** を選択します。 他のユーザーが既にそのフラグメントを編集している場合は、フラグメントは編集できません。
+1. フラグメント プロパティ ウィンドウで、フラグメント名の横のペン記号を選択します。
+1. 必要に応じてフラグメント名を編集します。
+1. 名前の変更を確認する場合は、チェック マークを選択します。
+1. **編集完了** を選択します。
+
+フラグメント作成後に、フラグメント名を編集して、その後プロパティ ペインでフラグメント名の横にあるペン記号を選択することで名前を変更することができます。
 
 ## <a name="additional-resources"></a>追加リソース
 

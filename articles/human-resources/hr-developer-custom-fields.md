@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bab34efb36ba72141095ebd81cfea56dd2d718e9b22b3a5fc08138e674e1c5fb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 91e905f530b88bb568290550be4cc677633189b1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732084"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069557"
 ---
 # <a name="custom-fields"></a>カスタム フィールド
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ユーザー設定フィールドを Dynamics 365 Human Resources 内のページに追加することが可能です。 カスタム フィールドの作成の詳細については、[カスタム フィールドの作成と操作](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields) を参照してください。
 

@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 614f37236bbd0239925e37ebf29f59ac006d09cd
-ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
+ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "7948795"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087220"
 ---
 # <a name="task-management"></a>タスク管理
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 タスク管理を使用すると、従業員の雇用 (変更)、終了 (オフボード)、および移動 (移行) 従業員に対して実行する必要があるタスクを作成できます。 タスク管理ではチェックリストの概念を使用します。 チェックリストは、オンボードとオフボード、または移行に関連するタスクの一覧です。 タスク管理では、チェックリストを使用してタスクをグループ化し、それらを個人またはグループに割り当てる必要があります。 オンボードとオフボード、および移行の変更を行う際のチェックリスト機能が似ています。
 

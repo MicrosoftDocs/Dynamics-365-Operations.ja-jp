@@ -9,33 +9,33 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c9bf5d9017579b4207e09769cff38361442e3938
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9a70de253eff2a3273be4a31ab32757bb014328f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781443"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061470"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>初期セットアップ中の問題のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-このトピックでは、Finance and Operations アプリと Dataverse 間のデュアル書き込み統合に関するトラブルシューティングの情報を提供します。 このトピックでは、 デュアル書き込み統合の初期設定を行う際に、発生する可能性がある問題を修正するトラブルシューティングに特化した情報を提供します。
+
+このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、 デュアル書き込み統合の初期設定を行う際に、発生する可能性がある問題を修正するトラブルシューティングに特化した情報を提供します。
 
 > [!IMPORTANT]
 > このトピックで説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Finance and Operations アプリを Dataverse にリンクさせることはできません。
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>財務と運用アプリは、Dataverse にリンクできません
 
-**デュアル書き込みの設定に必要なロール:** Finance and Operations アプリと Dataverse 両方のシステム管理者権限。
+**デュアル書き込みの設定に必要なロール:** 財務と運用アプリと Dataverse 両方のシステム管理者権限。
 
-一般的には、 **Dataverseへのリンク設定** ページで発生するエラーは、設定が不完全な場合やアクセス権限の問題が原因で発生するします。 次の図に示すように、**Dataverseへのリンク設定** ページで正常性チェック全体が合格になっていることを確認してください。 正常性チェック全体で合格しない限りは、デュアル書き込みをリンクすることはできません。
+一般的には、 **Dataverse へのリンク設定** ページで発生するエラーは、設定が不完全な場合やアクセス権限の問題が原因で発生するします。 次の図に示すように、**Dataverse へのリンク設定** ページで正常性チェック全体が合格になっていることを確認してください。 正常性チェック全体で合格しない限りは、デュアル書き込みをリンクすることはできません。
 
 ![正常性チェックの成功。](media/health_check.png)
 
-Azure AD 環境と Finance and Operations 環境えおリンクするには、Dataverse テナント管理者の資格情報が必要です。 環境をリンクした後、ユーザーはアカウントの資格情報を使用してログインし、既存のテーブル マップを更新できます。
+Finance and Operations 環境と Dataverse 環境をリンクするには、Azure AD テナント管理者の資格情報が必要です。 環境をリンクした後、ユーザーはアカウントの資格情報を使用してログインし、既存のテーブル マップを更新できます。
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>デュアル書き込み対してにリンク可能な、リーガル テーブルまたは会社数の制限を確認する
 
@@ -55,7 +55,7 @@ Azure AD 環境と Finance and Operations 環境えおリンクするには、Da
 
 顧客のブロックを解除するには、Dataverse の **cdm_company** テーブルから重複レコード テーブルを削除します。 また、**cdm_company** テーブルに空白の名前のレコードがある場合は、それらのレコードを削除または修正します。
 
-## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Finance and Operations アプリでデュアル書き込みページを開く際のエラー
+## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>財務と運用アプリでデュアル 書き込みページを開く際にエラーが発生する
 
 Dataverse の環境をデュアル書き込みにリンクしようとすると、以下のエラーメッセージが表示されることがあります。
 
@@ -70,22 +70,22 @@ Dataverse の環境をデュアル書き込みにリンクしようとすると�
     `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
 
 + 同意するには、**同意** を選択します。 テナントにアプリ (`id=33976c19-1db5-4c02-810e-c243db79efde`) をインストールすることについて同意されたものとします。
-+ このアプリは、Dataverse が Finance and Operations アプリに通信するために必要です。
++ このアプリは、Dataverse が財務と運用アプリに通信するために必要です。
 
     ![初期同期設定のトラブルシューティング。](media/Initial-sync-setup-troubleshooting-1.png)
 
 > [!NOTE]
 > これが動作しない場合は、Microsoft Edge のプライベート モードまたは Chrome の匿名モードで URL を起動します。
 
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>Finance and Operations 環境は検出できません
+## <a name="finance-and-operations-environment-is-not-discoverable"></a>Finance and Operations 環境が見つからない
 
 次のエラー メッセージが表示される場合があります。
 
-*Finance and Operations アプリ環境 \*\*\* .cloudax.dynamics.com は検出できません。*
+*財務と運用アプリ環境 \*\*\*.cloudax.dynamics.comは検出できません。*
 
 環境が検出されないという問題を引き起こす可能性のあるものが 2 つあります。
 
 + ログインに使用するユーザーが、Finance and Operations インスタンスと同じテナントではない。
-+ Microsoft がホストしている従来の Finance and Operations インスタンスの中に、検出に問題があった。 これを修正するには、Finance and Operations インスタンスを更新します。 どのようなアップデートでも、この環境は検出可能になります。
++ Microsoft がホストしていた従来の Finance and Operations インスタンスには、ディスカバリーに関する問題がありました。 この問題を解決するには、Finance and Operations インスタンスを更新します。 どのようなアップデートでも、この環境は検出可能になります。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

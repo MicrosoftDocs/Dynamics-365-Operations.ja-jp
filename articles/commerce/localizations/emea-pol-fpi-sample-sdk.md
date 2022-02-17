@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: bff3a6ad74d50e7b706d4df92b17a4a3af36521b
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 45cae498df8157b9561c54e9859daadcaedd7823
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944818"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076991"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>ポーランド向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)
 
@@ -116,7 +116,7 @@ Retail SDK はハードウェア ステーション拡張機能コンポーネ�
 
 ## <a name="design-of-extensions"></a>拡張機能の設計
 
-ポーランド向け会計プリンター統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md) に基づいています。 会計統合ソリューションの設計に関する詳細は、[会計統合サンプル設計の概要](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) を参照してください。
+ポーランド向け会計プリンター統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md) に基づいています。 会計統合ソリューションの設計に関する詳細は、[会計統合サンプル設計の概要](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) を参照してください。
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime 拡張機能の設計
 
@@ -124,7 +124,7 @@ Retail SDK はハードウェア ステーション拡張機能コンポーネ�
 
 CRT 拡張子は **Runtime.Extensions.DocumentProvider.PosnetSample** です。 この拡張機能は、POSNET 仕様 19-3678 で定義されている JavaScript Object Notation (JSON) 形式のプリンタ固有のコマンドセットを生成します。
 
-会計統合ソリューションの設計については、[会計デバイスの会計登録プロセスおよび会計統合サンプル](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) を参照してください。
+会計統合ソリューションの設計については、[会計デバイスとサービスの会計登録プロセスおよび会計統合サンプル](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) を参照してください。
 
 #### <a name="request-handler"></a>要求ハンドラー
 

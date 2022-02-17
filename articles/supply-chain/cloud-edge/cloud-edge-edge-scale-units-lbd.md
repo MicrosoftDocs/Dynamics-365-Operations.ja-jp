@@ -2,7 +2,7 @@
 title: LBD を使用したカスタム ハードウェアへのエッジのスケール ユニットの展開
 description: このトピックでは、カスタム ハードウェアとローカル ビジネス データ (LBD) に基づく配置を使用して、オンプレミスのエッジ スケール ユニットをプロビジョニングする方法について説明します。
 author: cabeln
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2407d4e3c6adaf5df2e8f5440ee8336f86012caf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 1204b65e76c107c29a94a61c321064a87c7571fb
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920676"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024545"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>LBD を使用したカスタム ハードウェアへのエッジのスケール ユニットの展開
 
@@ -26,6 +26,13 @@ ms.locfileid: "7920676"
 エッジ スケール ユニットは、ローカル ビジネス データ (LBD) [オンプレミス環境](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) を作成することで配置できます。 その後、Supply Chain Management の分散ハイブリッド トポロジで スケール ユニットとして機能するように構成します。 これは、オンプレミスの LBD 環境を、ハブとして機能するように構成されたクラウド内の Supply Chain Management 環境に関連付けることで実現されます。  
 
 このトピックでは、オンプレミスの LBD 環境をエッジ スケール ユニットとして設定し、それをハブに関連付ける方法について説明します。
+
+## <a name="infrastructure-considerations"></a>インフラストラクチャに関する考慮事項
+
+Edge スケール ユニットはオンプレミス環境で動作するため、インフラストラクチャの要件は類似しています。 ただし、注意すべき違いは次のとおりです:
+
+- Edge スケール ユニットは Financial Reporting を使用しないため、Financial Reporting ノードを必要とします。
+- 製造業や倉庫業のワークロードは計算集中型ではないため、AOS ノードの計算能力もそれに合わせて検討する必要があります。
 
 ## <a name="deployment-overview"></a>配置の概要
 

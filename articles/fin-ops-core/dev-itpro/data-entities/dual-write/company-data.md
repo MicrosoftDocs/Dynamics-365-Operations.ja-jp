@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 25bd2cc0df4940f02313b3a61f69b2273e835639
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782088"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061029"
 ---
 # <a name="company-concept-in-dataverse"></a>Dataverse の企業概念
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 Finance and Operations では、*企業* の概念は、法的コンストラクトとビジネス コンストラクトの両方です。 また、データのセキュリティと可視性の境界でもあります。 ユーザーは常に単一の会社のコンテキストで作業し、データのほとんどは会社によってストライプされます。
@@ -29,7 +29,7 @@ Dataverse は、同等の概念を持っていません。 最も近い概念は
 
 事業単位と企業は同等の概念ではないため、Dataverse 統合を目的として 1 対 1 (1:1) のマッピングを強制することはできません。 ただし、ユーザーは既定でアプリケーションと Dataverse で同じ行を表示する必要があるため、Microsoft では cdm\_Company という Dataverse に新たなテーブルを導入しています。 このテーブルは、アプリケーションの企業テーブルと同等です。 行の可視性はアプリケーションと Dataverse 間で同等に、すぐに使用できることを保証するために、Dataverse のデータで次の設定をお勧めします。
 
-+ デュアル書き込みが有効になっている Finance and Operations の企業の行ごとに、関連付けられた cdm\_Company の行が作成されます。
++ デュアル書き込みが有効になっている Finance and Operations の企業の行ごとに、関連付けられた cdm\_ 企業の行が作成されます。
 + cdm\_Company の行が作成され、デュアル書き込みが有効になると、同じ名前の既定の事業単位が作成されます。 既定のチームは、その事業単位に対して自動的に作成されますが、事業単位は使用されません。
 + 同じ名前を持つ別の所有者チームが、作成されます。 また、事業単位にも関連付けられています。
 + 既定では、作成されて、Dataverse にデュアル書き込みされた行の所有者は、関連付けられた事業部にリンクされている 「DW 所有者」 チームに設定されます。
@@ -43,7 +43,7 @@ Dataverse は、同等の概念を持っていません。 最も近い概念は
 + 「営業マネージャー」のロールは、「USMF セールス」チームのメンバーに割り当てられます。
 + 「営業マネージャー」のロールを持つユーザーは、自分が所属する同じ事業単位のメンバーである任意の取引先企業の行にアクセスできます。
 + 「USMF セールス」チームは、前述の USMF 事業単位にリンクされています。
-+ したがって、「USMF セールス」チームのメンバーは、Finance and Operations の USMF 会社テーブルから来た「USMF DW」ユーザーが所有するアカウントを確認できます。
++ したがって、「USMF セールス」チームのメンバーは、Finance and Operations の USMF 会社テーブルに由来する「USMF DW」ユーザーが所有するアカウントを確認できます。
 
 ![チームの使用方法。](media/dual-write-company-2.png)
 

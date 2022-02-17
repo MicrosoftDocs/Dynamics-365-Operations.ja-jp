@@ -9,22 +9,22 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: eaafe8d98049cb8838317396f28e9d6ca720a677
-ms.sourcegitcommit: 08dcbc85e372d4e4fb3ba64389f6d5051212c212
+ms.openlocfilehash: 579a7d19ee7196d3242c78bd9915df24ec479c31
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "8015718"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060488"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>当事者およびグローバル アドレス帳モデルへのアップグレード
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [Microsoft Azure Data Factory のテンプレート](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema)を使用すると、デュアルライトの既存データをパーティとグローバル アドレス帳モデル (**取引先企業**、**取引先担当者**、**ベンダー** テーブルのデータ、郵便、電子アドレス) にアップグレードすることができます。
 
-データファクトリーのテンプレートには以下の 3 種類が用意されています。 Finance and Operations アプリおよび Customer Engagement アプリの両方からのデータを照合するのに役立ちます。
+データファクトリーのテンプレートには以下の 3 種類が用意されています。 財務と運用アプリおよび Customer Engagement アプリの両方からのデータを照合するのに役立ちます。
 
 - **[パーティ テンプレート](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) (データをデュアルライト パーティ GAB schema/arm_template.json にアップグレードします)** – このテンプレートは、**取引先企業**、**取引先担当者**、**ベンダー** データに関連付けられている **パーティ** および **取引先担当者** データのアップグレードに役立ちます。
 - **[パーティの送付先住所](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Postal%20Address%20-%20GAB/arm_template.json) (データをデュアルライト パーティ schema/Upgrade to Party Postal Address - GAB/arm_template.json にアップグレードします)** – このテンプレートは、**取引先企業**、**取引先担当者t**、**ベンダー** データに関連付けられている送付先住所のアップグレードに役立ちます。
@@ -34,11 +34,11 @@ ms.locfileid: "8015718"
 
 | ファイル名 | 使用方法 |
 |---|---|
-| FONewParty.csv | このファイルは、Finance and Operations アプリ内で新しい **関係者** レコードの作成に使用します。 |
-| ImportFONewPostalAddressLocation.csv | このファイルは、Finance and Operations アプリ内で新しい **配送先住所のロケーション** レコードの作成に使用します。 |
-| ImportFONewPartyPostalAddress.csv | このファイルは、Finance and Operations アプリ内で新しい **関係者の住所** レコードの作成に使用します。 |
-| ImportFONewPostalAddress.csv | このファイルは、Finance and Operations アプリ内で新しい **住所** レコードの作成に使用します。 |
-| ImportFONewElectronicAddress.csv | このファイルは、Finance and Operations アプリ内で新しい **電子アドレス** レコードの作成に使用します。 |
+| FONewParty.csv | このファイルは、財務と運用アプリ内で新しい **関係者** レコードの作成に使用します。 |
+| ImportFONewPostalAddressLocation.csv | このファイルは、財務と運用アプリ内で新しい **配送先住所のロケーション** レコードの作成に使用します。 |
+| ImportFONewPartyPostalAddress.csv | このファイルは、財務と運用アプリ内で新しい **関係者の住所** レコードの作成に使用します。 |
+| ImportFONewPostalAddress.csv | このファイルは、財務と運用アプリ内で新しい **住所** レコードの作成に使用します。 |
+| ImportFONewElectronicAddress.csv | このファイルは、財務と運用アプリ内で新しい **電子アドレス** レコードの作成に使用します。 |
 
 このトピックでは、Data Factory のテンプレートを使用し、データをアップグレードする方法について説明します。 カスタマイズを実行しない場合は、このテンプレートをそのまま使用できます。 ただし、**取引先企業**、**連絡先**、**ベンダー** データをカスタマイズする場合は、このトピックで説明するようにテンプレートを変更する必要があります。
 
@@ -61,7 +61,7 @@ ms.locfileid: "8015718"
 + **統合キー**: Customer Engagement アプリの **取引先企業 (顧客)**、**連絡先**、および **仕入先** テーブルは、既成の統合キーを使用しています。 統合キーをカスタマイズした場合は、テンプレートをカスタマイズする必要があります。
 + **パーティ番号:** すべてのアップグレードされる **取引先企業 (顧客)**、**取引先担当者**、**ベンダー** レコードにはパーティ番号があります。 パーティ番号がないレコードは無視されます。 これらのレコードをアップグレードする場合は、アップグレード処理を開始する前に、それらのレコードにパーティ番号を追加します。
 + **システム停止:** アップグレードの際には、Finance and Operations 環境と Customer Engagement 環境の両方をオフラインにする必要があります。
-+ **スナップショット**: Finance and Operations アプリと Customer Engagement アプリ両方のスナップショットを作成します。 その後、必要に応じてスナップショットを使って以前の状態を復元することができます。
++ **スナップショット**: 財務と運用アプリと Customer Engagement アプリ両方のスナップショットを作成します。 その後、必要に応じてスナップショットを使って以前の状態を復元することができます。
 
 ## <a name="deployment"></a>展開
 
@@ -120,7 +120,7 @@ ms.locfileid: "8015718"
 
 ### <a name="setup-to-run-the-party-postal-address-template"></a>パーティの配送先住所テンプレートを実行する設定
 
-1. Customer Engagement アプリにサインインして、**設定** \> **パーソナライズ設定** にアクセスします。 **全般** タブで、 システム管理者アカウントのタイムゾーン構成を行います。 Finance and Operations アプリから住所の有効期限を更新するには、タイムゾーンが協定世界時 (UTC) である必要があります。
+1. Customer Engagement アプリにサインインして、**設定** \> **パーソナライズ設定** にアクセスします。 **全般** タブで、 システム管理者アカウントのタイムゾーン構成を行います。 財務と運用アプリから住所の有効期限を更新するには、タイムゾーンが協定世界時 (UTC) である必要があります。
 
     ![システム管理者アカウントのタイムゾーン設定。](media/ADF-1.png)
 
@@ -128,7 +128,7 @@ ms.locfileid: "8015718"
 
     | 番号 | Name | 種類 | 値 |
     |---|---|---|---|
-    | 1 | PostalAddressIdPrefix | 文字列 | このパラメーターは、新規に作成された配送先住所の宛先に、接頭辞としてシリアル番号を付加します。 Finance and Operations アプリや Customer Engagement アプリの住所と競合しない文字列を入力してください。 たとえば、**ADF-PAD-** を使用します。 |
+    | 1 | PostalAddressIdPrefix | 文字列 | このパラメーターは、新規に作成された配送先住所の宛先に、接頭辞としてシリアル番号を付加します。 財務と運用アプリや Customer Engagement アプリの住所と競合しない文字列を入力してください。 たとえば、**ADF-PAD-** を使用します。 |
 
     ![管理タブで作成した PostalAddressIdPrefix グローバル パラメータです。](media/ADF-2.png)
 
@@ -142,8 +142,8 @@ ms.locfileid: "8015718"
 
     | 番号 | Name | 種類 | 値 |
     |---|---|---|---|
-    | 1 | IsFOSource | ブール | このパラメーターは、競合が発生した場合に、どのプライマリ システムのアドレスを置き換えるかを決定します。 この値が **true** の場合、Finance and Operations アプリのプライマリ アドレスは、Customer Engagement アプリのプライマリ アドレスに置き換えられます。 この値が **false** の場合、Customer Engagement アプリのプライマリ アドレスは、Finance and Operations アプリのプライマリ アドレスに置き換えられます。 |
-    | 2 | ElectronicAddressIdPrefix | 文字列 | このパラメーターは、新規に作成された電子住所の宛先に、接頭辞としてシリアル番号を付加します。 Finance and Operations アプリや Customer Engagement アプリの電子アドレスと競合しない文字列を入力してください。 たとえば、**ADF-EAD-** を使用します。 |
+    | 1 | IsFOSource | ブール | このパラメーターは、競合が発生した場合に、どのプライマリ システムのアドレスを置き換えるかを決定します。 この値が **true** の場合、財務と運用アプリのプライマリ アドレスは、Customer Engagement アプリのプライマリ アドレスに置き換えられます。 この値が **false** の場合、Customer Engagement アプリのプライマリ アドレスは、財務と運用アプリのプライマリ アドレスに置き換えられます。 |
+    | 2 | ElectronicAddressIdPrefix | 文字列 | このパラメーターは、新規に作成された電子住所の宛先に、接頭辞としてシリアル番号を付加します。 財務と運用アプリや Customer Engagement アプリの電子アドレスと競合しない文字列を入力してください。 たとえば、**ADF-EAD-** を使用します。 |
 
     ![管理タブで作成したグローバル パラメーター IsFOSource と ElectronicAddressIdPrefix です。](media/ADF-4.png)
 
@@ -151,7 +151,7 @@ ms.locfileid: "8015718"
 
 ## <a name="run-the-templates"></a>テンプレートの実行
 
-1. Finance and Operations アプリを使用する、次の **取引先企業**、**取引先担当者**、および **仕入先** の二重書き込みマップを停止します。
+1. 財務と運用アプリを使用する、次の **取引先企業**、**取引先担当者**、および **仕入先** の二重書き込みマップを停止します。
 
     + 顧客 V3 (アカウント)
     + 顧客 V3 (連絡先)
@@ -161,7 +161,7 @@ ms.locfileid: "8015718"
 
 2. Dataverse の **msdy_dualwriteruntimeconfig** テーブルからマッピングが削除されていることを確認してください。
 3. AppSource から [二重書き込み当事者およびグローバル アドレス帳ソリューション](https://aka.ms/dual-write-gab)をインストールします 。
-4. 次のテーブルにデータが含まれている場合は、Finance and Operations アプリで **初期同期** を実行します:
+4. 次のテーブルにデータが含まれている場合は、財務と運用アプリで **初期同期** を実行します:
 
     + あいさつ文
     + 個人の特徴タイプ
@@ -261,10 +261,10 @@ ms.locfileid: "8015718"
     > [!NOTE]
     > **取引先企業**、**連絡先**、**ベンダー** をカスタマイズする場合は、テンプレートを変更する必要があります。
 
-8. 新しい **関係者** レコードを Finance and Operations アプリにインポートします。
+8. 新しい **関係者** レコードを財務と運用アプリにインポートします。
 
     1. Azure Blob Storage から **FONewParty.csv** ファイルをダウンロードします。 このパスは、 **partybootstrapping/output/FONewParty.csv** です。
-    2. **FONewParty.csv** ファイルを Excel ファイルに変換し、Excel ファイルを Finance and Operations アプリにインポートします。 または、CSV のインポートが機能する場合は、.csv ファイルを直接インポートできます。 この手順は、データ量にもよりますが、完了までに数時間かかる場合があります。 詳細については、[データのインポート ジョブとエクスポート ジョブの概要](../data-import-export-job.md)を参照してください。
+    2. **FONewParty.csv** ファイルを Excel ファイルに変換し、Excel ファイルを財務と運用アプリにインポートします。 または、CSV のインポートが機能する場合は、.csv ファイルを直接インポートできます。 この手順は、データ量にもよりますが、完了までに数時間かかる場合があります。 詳細については、[データのインポート ジョブとエクスポート ジョブの概要](../data-import-export-job.md)を参照してください。
 
     ![新しい Dataverse レコードをインポートします。](media/data-factory-import-party.png)
 
@@ -275,7 +275,7 @@ ms.locfileid: "8015718"
 
     ![パーティの配送先住所とパーティの電子先住所のテンプレートを実行します。](media/ADF-7.png)
 
-10. このデータを使用して Finance and Operations アプリを更新するには、.csv ファイルを Excel ブックに変換し、[Finance and Operations アプリにインポート](/data-entities/data-import-export-job) します。 または、CSV のインポートが機能する場合は、.csv ファイルを直接インポートできます。 この手順は、データ量にもよりますが、完了までに数時間かかる場合があります。
+10. このデータを使用して財務と運用アプリを更新するには、.csv ファイルを Excel ブックに変換し、[財務と運用アプリにインポート](/data-entities/data-import-export-job) します。 または、CSV のインポートが機能する場合は、.csv ファイルを直接インポートできます。 この手順は、データ量にもよりますが、完了までに数時間かかる場合があります。
 
     ![正常にインポートされました。](media/ADF-8.png)
 
@@ -358,9 +358,9 @@ ms.locfileid: "8015718"
 ### <a name="steps-in-the-party-template"></a>パーティ テンプレートの手順
 
 1. 手順 1～6 では、デュアルライトが可能な企業を特定し、その企業のためのフィルター句を構築します。
-2. 手順 7-1 から 7-9 では、Finance and Operations アプリと Customer Engagement アプリの両方からデータを取得し、そのデータをアップグレード用にステージングします。
-3. 手順 8 から 9 では、Finance and Operations アプリと Customer Engagement アプリの間で、**取引先企業**、**取引先担当者**、**仕入先** レコードの関係者番号を比較します。 パーティ番号がないレコードはスキップされます。
-4. 手順 10 では、Customer Engagement アプリと Finance and Operations アプリで作成する必要がある関係者レコード用の 2 つの .csv ファイルを生成します。
+2. 手順 7-1 から 7-9 では、財務と運用アプリと Customer Engagement アプリの両方からデータを取得し、そのデータをアップグレード用にステージングします。
+3. 手順 8 から 9 では、財務と運用アプリと Customer Engagement アプリの間で、**取引先企業**、**取引先担当者**、**仕入先** レコードの関係者番号を比較します。 パーティ番号がないレコードはスキップされます。
+4. 手順 10 では、Customer Engagement アプリと財務と運用アプリで作成する必要がある関係者レコード用の 2 つの .csv ファイルを生成します。
 
     - **FOCDSParty.csv** – このファイルには、企業がデュアルライトを有効にしているかどうかにかかわらず、両システムのすべてのパーティ レコードが含まれています。
     - **FONewParty.csv** – このファイルには、Dataverse が認識しているパーティ レコードのサブセット (例えば、**見込顧客** タイプのアカウント) が含まれています。
@@ -376,11 +376,11 @@ ms.locfileid: "8015718"
 
 ### <a name="steps-in-the-party-postal-address-template"></a>パーティの配送先住所テンプレートの手順
 
-1. 手順 1-1 から 1-10 では、Finance and Operations アプリと Customer Engagement アプリの両方からデータを取得し、そのデータをアップグレード用にステージングします。
-2. 手順 2 では、Finance and Operations アプリの住所データを、住所と関係者住所を結合して非正規化します。
+1. 手順 1-1 から 1-10 では、財務と運用アプリと Customer Engagement アプリの両方からデータを取得し、そのデータをアップグレード用にステージングします。
+2. 手順 2 では、財務と運用アプリの住所データを、住所と関係者住所を結合して非正規化します。
 3. 手順 3 では、Customer Engagement アプリから取引先企業、取引先担当者、ベンダーのアドレスデータを重複排除してマージします。
-4. 手順 4 では、Finance and Operations アプリで使用する .csv ファイルを作成し、取引先企業、取引先担当者、仕入先の住所に基づいた新しい住所データを作成します。
-5. 手順 5-1 では、Finance and Operations アプリと Customer Engagement アプリの両方に基づいて、Customer Engagement アプリで使用する .csv ファイルを作成し、すべての住所データを作成します。
+4. 手順 4 では、財務と運用アプリで使用する .csv ファイルを作成し、取引先企業、取引先担当者、仕入先の住所に基づいた新しい住所データを作成します。
+5. 手順 5-1 では、財務と運用アプリと Customer Engagement アプリの両方に基づいて、Customer Engagement アプリで使用する .csv ファイルを作成し、すべての住所データを作成します。
 6. 手順 5-2では、.csvファイルを手動インポートで使用する Finance and Operations インポートのフォーマットに変換します。
 
     - ImportFONewPostalAddressLocation.csv
@@ -395,13 +395,13 @@ ms.locfileid: "8015718"
 
 ### <a name="steps-in-the-party-electronic-address-template"></a>パーティの電子住所テンプレートの手順
 
-1. 手順 1-1 から 1-5 では、Finance and Operations アプリと Customer Engagement アプリの両方からデータを取得し、そのデータをアップグレード用にステージングします。
+1. 手順 1-1 から 1-5 では、財務と運用アプリと Customer Engagement アプリの両方からデータを取得し、そのデータをアップグレード用にステージングします。
 2. 手順 2 では、Customer Engagement アプリ内の電子住所を、取引先企業、取引先担当者、ベンダーの各エンティティから統合します。
-3. 手順 3 では、Customer Engagement アプリと Finance and Operations アプリのプライマリ電子アドレス データをマージします。
+3. 手順 3 では、Customer Engagement アプリと財務と運用アプリのプライマリ電子アドレス データをマージします。
 4. 手順 4 では .csv ファイルを作成します。
 
-    - 取引先企業、取引先担当者、仕入先の住所を基に、Finance and Operations アプリで使用する電子アドレス データを新規作成します。
-    - Finance and Operations アプリの電子アドレス、取引先企業、取引先担当者、仕入先の住所をもとに、Customer Engagement アプリの電子アドレス データを新規作成します。
+    - 取引先企業、取引先担当者、仕入先の住所を基に、財務と運用アプリで使用する電子アドレス データを新規作成します。
+    - 財務と運用アプリの電子アドレス、取引先企業、取引先担当者、仕入先の住所をもとに、Customer Engagement アプリの電子アドレス データを新規作成します。
 
 5. 手順 5-1 では、電子住所を Customer Engagement アプリにインポートします。
 6. 手順 5-2 では、Customer Engagement アプリの取引先企業、取引先担当者のプライマリ住所の更新に使用する .csv ファイルを作成します。

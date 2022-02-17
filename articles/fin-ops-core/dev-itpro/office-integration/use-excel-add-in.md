@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592668"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068795"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Excel でのエンティティ データの表示および更新 
 
@@ -28,7 +28,10 @@ ms.locfileid: "7592668"
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Excel アドインを使用してそのデータを表示、更新、また編集する方法を説明します。 エンティティ データを開くには、Excel か Finance and Operations アプリのいずれからでも開始できます。
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+
+このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Excel アドインを使用してそのデータを表示、更新、また編集する方法を説明します。 エンティティ データを開くには、Excel または財務と運用アプリのいずれからでも開始できます。
 
 Excel でエンティティ データを開くことにより、Excel アドインを使用して迅速かつ簡単にデータを表示し編集することができます。 このアドインには Microsoft Excel 2016 以降が必要です。
 
@@ -37,15 +40,15 @@ Excel でエンティティ データを開くことにより、Excel アドイ�
 
 Excel アドインを使用する方法に関する詳細は、[ヘッダーと明細行のパターンの Excel テンプレートを作成する](https://youtu.be/RTicLb-6dbI) のショート ビデオをご覧ください。
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Finance and Operations アプリから開始して Excel でエンティティ データを開く
-1. Finance and Operations アプリのページで、**Microsoft Office で開く** を選択します。
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>財務と運用アプリから開始して Excel でエンティティ データを開く
+1. 財務と運用アプリのページで、**Microsoft Office で開く** を選択します。
 
     そのページのルート データ ソース (テーブル) がエンティティのルート データ ソースと同じである場合は、既定の **Excel で開く** オプションがそのページに生成されます。 **Excel で開く** オプションは **すべての仕入先** や **すべての顧客** などの頻繁に使用するページに表示されます。
  
 2. **Excel で開く** オプションを選択し、生成されるブックを開きます。 このブックには、エンティティのバインディング情報、環境へのポインター、また Excel アドインへのポインターがあります。
 3. Excel で **編集機能を有効にする** を選択し、Excel アドインが実行されるようにします。 Excel のウィンドウ右側のウィンドウで Excel アドインが実行されます。
 4. 初めて Excel アドインを実行する場合は、**このアドインを信頼します** を選択します。
-5. サインインするようにとのメッセージが表示されたら、**サインイン** を選択し、Finance and Operations アプリへのサインインに使用するのと同じ資格情報を用いてサインインします。 可能な場合、Excel アドインはブラウザーからのサインイン コンテキストを使用し、自動的にサインインします。 (オペレーティング システムに基づいて使用されるブラウザの詳細については、[Office アドインで使用されるブラウザー](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) を参照してください。サインインが正常に行われるか確認するには、Excel アドインの右上隅にあるユーザー名を確認します。 
+5. サインインするようにとのメッセージが表示されたら、**サインイン** を選択し、財務と運用アプリへのサインインに使用するのと同じ資格情報を用いてサインインします。 可能な場合、Excel アドインはブラウザーからのサインイン コンテキストを使用し、自動的にサインインします。 (オペレーティング システムに基づいて使用されるブラウザの詳細については、[Office アドインで使用されるブラウザー](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) を参照してください。サインインが正常に行われるか確認するには、Excel アドインの右上隅にあるユーザー名を確認します。 
 
 Excel アドインが、選択したエンティティのデータを自動的に読み取ります。 Excel アドインが読み込むまでブックにデータはないことに注意してください。
 
@@ -54,7 +57,7 @@ Excel アドインが、選択したエンティティのデータを自動的�
 2. Office ストアで、**Dynamics** で検索し、**Microsoft Dynamics Office アドイン** (Excel アドイン) の隣の **追加** を選択します。
 3. 初めて Excel アドインを実行する場合は、**このアドインを信頼します** を選択して Excel アドインの実行を有効化します。 Excel のウィンドウ右側のウィンドウで Excel アドインが実行されます。
 4. **サーバー情報の追加** を選択して **オプション** ウィンドウを開きます。
-5. お使いのブラウザーで、ターゲットの Finance and Operations アプリ インスタンスから URL をコピーし、それを **サーバー URL** フィールドに貼り付けてから、ホスト名以降をすべて消去します。 結果の URL はホスト名のみである必要があります。
+5. お使いのブラウザで、ターゲットの財務と運用アプリインスタンスから URL をコピーし、それを **サーバー URL** フィールドに貼り付けてから、ホスト名以降をすべて消去します。 結果の URL はホスト名のみである必要があります。
 
     たとえば、URLが `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage` の場合、`https://xxx.dynamics.com` を除くすべてを削除します。
 
@@ -73,7 +76,7 @@ Excel アドインが、選択したエンティティのデータを自動的�
 Excel アドインがエンティティ データをブックに読み込んだら、Excel アドインで **更新** を選択することでいつでもデータを更新できます。
 
 ## <a name="edit-entity-data-in-excel"></a>Excel でのエンティティ データの編集
-Excel アドインで **公開** を選択することにより、必要に応じてエンティティ データを変更してから Finance and Operations に再公開することができます。 レコードを編集するには、ワークシートのセルを選択し、セルの値を変更します。 新しいレコードを追加するには、次のいずれかの手順を実行します。
+Excel アドインで **公開** を選択することにより、必要に応じてエンティティ データを変更してから財務と運用アプリに再公開することができます。 レコードを編集するには、ワークシートのセルを選択し、セルの値を変更します。 新しいレコードを追加するには、次のいずれかの手順を実行します。
 
 - データ ソース テーブルの任意の場所をクリックし、Excel アドインで **新規** を選択します。
 - データ ソース テーブルの最終行の任意の場所をクリックし、カーソルがその行の最終列から出て新しい行が作成されるまで Tab キーを押します。

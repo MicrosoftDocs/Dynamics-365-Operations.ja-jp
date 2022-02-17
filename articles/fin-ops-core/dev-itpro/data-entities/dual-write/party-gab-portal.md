@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 872b477ae73a374cd62b9e86048bfc27c84064c1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781371"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060923"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Microsoft Power Apps ポータルを当事者のデータ モデルで使用する
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-[!INCLUDE[rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 二重書き込みアプリケーション オーケストレーション ソリューションのバージョン 2.0.999.0 以降には、アカウントと連絡先のテーブルの当事者およびグローバル アドレス帳に対するデータ モデルの変更が含まれています。 この変更により、高度な業務シナリオをサポートする多対多のリレーションが可能になります。 これらの変更は、顧客ポータルを含め、実際には使用していたか、二重書き込みをインストールする前に環境に存在していた顧客ポータルを含め、ポータル Web ロールではサポートされません。 Web ロールを予定通り動作させるには、新しいデータ モデルを使用して新しい Web ロールを作成する必要があります。 
 

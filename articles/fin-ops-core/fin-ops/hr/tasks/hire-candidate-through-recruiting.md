@@ -10,19 +10,23 @@ ms.search.form: HRMApplication, HcmWorkerNewWorker, HcmPositionLookup, HcmWorker
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07f89a41cca7b3ff66404305d31cf1b8a67bfe47
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2a6ecee078b18b12769a14cadc7e0182bf03d704
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964964"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075376"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>採用による候補者の雇用
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> このトピックで説明した機能は、現在 Finance インフラストラクチャの Human Resources の顧客が利用できます。  
+
 
 この手順によって、リクルーターは、特定の採用プロジェクトで雇用申請を提出した申請者を雇用できます。 採用プロジェクトを使用して申請者を雇用すると、新しい作業者レコードが作成され、申請者レコードのステータスは **雇用済** となります。 この手順の作成に使用するデモ データの会社は **USMF** です。
 

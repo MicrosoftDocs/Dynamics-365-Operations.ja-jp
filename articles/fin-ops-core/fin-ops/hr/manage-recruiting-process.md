@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9a5e89e700858ed9e625fbdee630fa14ebea26e
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 7fa1d5201fcc52d49b9d954356f1ca39b7619cd2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7965067"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075478"
 ---
 # <a name="manage-recruiting-processes"></a>採用プロセスの管理
 
-[!include [banner](../includes/banner.md)]
+> [!IMPORTANT]
+> このトピックで説明した機能は、現在 Finance インフラストラクチャの Human Resources の顧客が利用できます。  
+
 
 このトピックでは、空いている職位の宣伝や申請者の採用、申請者および申請情報の追跡、申請者の面接、および 1 人以上の候補者を選択して組織内の空いている職位を埋めるといった活動を含む採用プロセスで、採用担当者が求人プロセスのステップを追跡するために使用できるコンセプトについて説明します。
 

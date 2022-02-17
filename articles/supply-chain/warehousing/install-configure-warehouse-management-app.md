@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1687b24f499f4d226406a0035f8ea70b6046167
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901992"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069382"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリケーションのインストールと接続
 
@@ -143,6 +143,10 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 証明書は、トークンを要求された際に、アプリケーションの ID を証明する秘密として使用することができます。 証明書の公開部分は Azure portal のアプリ登録にアップロードされますが、完全な証明書は倉庫管理モバイル アプリがインストールされている各デバイスに配置する必要があります。 組織では、ローテーションなどの観点から証明書を管理する責任があります。 自己署名付き証明書を使用することはできますが、常にエクスポートされていない証明書を使用する必要があります。
 
 倉庫管理モバイル アプリを実行する各デバイスで、証明書をローカルで使用できるようにする必要があります。 Intune を使用している場合に、Intune 管理デバイスの証明書を管理する方法については、[Microsoft intune での認証に証明書を使用する](/mem/intune/protect/certificates-configure)を参照してください。
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジ スケール ユニット用 Warehouse Management モバイル アプリの構成
+
+クラウドまたはエッジ スケール ユニットに対して Warehouse Management モバイル アプリを実行する場合は、他の手順が必要です。 詳細については、[クラウドおよびエッジ スケール ユニット用 Warehouse Management モバイル アプリの構成](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md) を参照してください。
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>接続設定をインポートしてアプリケーションを構成する
 
@@ -306,5 +310,6 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 
 - [モバイル デバイスのユーザー設定](mobile-device-user-settings.md)
 - [Warehouse Management モバイル アプリのステップ アイコンとタイトルの割り当て](step-icons-titles.md)
+- [クラウドおよびエッジ スケール ユニット用 Warehouse Management モバイル アプリの構成](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

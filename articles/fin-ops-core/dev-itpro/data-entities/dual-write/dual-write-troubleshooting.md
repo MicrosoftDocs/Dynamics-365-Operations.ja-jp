@@ -1,6 +1,6 @@
 ---
 title: 一般的なトラブルシューティング
-description: このトピックでは、Finance and Operations アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブルシューティングの情報を提供します。
+description: このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: bcedb9f6e8fb15210512ed6a376d4329759593e4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781177"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062341"
 ---
 # <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-このトピックでは、Finance and Operations アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブルシューティングの情報を提供します。
+
+このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
 
 > [!IMPORTANT]
 > このトピックで説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
@@ -44,37 +44,37 @@ ms.locfileid: "7781177"
 2. **タイプ名** 列が **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin** に設定されているトレース ログを検索します。
 3. 完全なログを表示するには、項目をダブルクリックし、**実行** ファストタブで **メッセージ ブロック** のテキストを確認します。
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>デバッグ モードを有効にして、アプリ Finance and Operations でのライブ同期に関する問題のトラブルシューティングを行います。
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>デバッグ モードを有効にして、財務と運用アプリでのライブ同期に関する問題のトラブルシューティングを行います
 
 **エラーを表示するために必要な役割：** システム管理者
 
-Dataverseで発生するデュアル書き込みエラーは、Finance and Operationsアプリでも発生する場合があります。 エラーの詳細ログを有効にするには、次の手順を実行します。
+Dataverse で発生するデュアル書き込みエラーは、財務と運用アプリでも発生する場合があります。 エラーの詳細ログを有効にするには、次の手順を実行します。
 
-1. Finance and Operations アプリのすべてのプロジェクトの構成には、**DualWriteProjectConfiguration** テーブル内に **IsDebugMode** フラグがあります。
-2. Excel アドインを使用して **DualWriteProjectConfiguration** を開きます。 アドインを使用するには、Finance and Operations のExcel アドインでデザイン モードを有効にし、シートに **DualWriteProjectConfiguration** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
+1. 財務と運用アプリのすべてのプロジェクトの構成には、**DualWriteProjectConfiguration** テーブル内に **IsDebugMode** フラグがあります。
+2. Excel アドインを使用して **DualWriteProjectConfiguration** を開きます。 アドインを使用するには、Finance and Operations の Excel アドインでデザイン モードを有効にし、シートに **DualWriteProjectConfiguration** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
 3. プロジェクトで、**IsDebugMode** を **はい** に設定します。
 4. エラーが発生するシナリオを実行します。
 5. 詳細なログは、**DualWriteErrorLog** テーブルに保存されます。
 6. テーブル ブラウザでデータをルックアップするには、次のリンクを使用します。`https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`、必要に応じて `999` と置き換えます。
 7. プラットフォーム 更新プログラム 37 およびそれ以降のバージョンで使用可能な [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe) の後に再度更新します。 この修正プログラムがインストールされている場合、デバッグ モードでさらに多くのログをキャプチャします。  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Finance and Operations アプリの仮想マシンの同期エラーを確認する
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>財務と運用アプリの仮想マシンの同期エラーを確認する
 
 **エラーを表示するために必要な役割：** システム管理者
 
 1. Microsoft Dynamics Lifecycle Services (LCS) にログインします。
 2. デュアル書き込みテストを実行する、LCS プロジェクトを開きます。
 3. **クラウド ホスト環境** のタイトルを選択します。
-4. リモート デスクトップを使用して、Finance and Operations アプリの仮想マシン (VM) にログインします。 LCS に表示されるローカル アカウントを使用します。
+4. リモート デスクトップを使用して、財務と運用アプリの仮想マシン (VM) にログインします。 LCS に表示されるローカル アカウントを使用します。
 5. イベント ビューアーを開きます。
 6. **アプリケーションとサービス ログ \> Microsoft \> Dynamics \> AX-DualWriteSync \> オペレーション** を選択します。
 7. 最近発生したエラーの一覧を確認します。
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Finance and Operations アプリの Dataverse 環境のリンクを解除し、他の環境をリンクする
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>財務と運用アプリから、別の Dataverse 環境をリンク/リンク解除する方法
 
-**環境のリンクの解除に必要な役割：** Finance and Operations アプリ、または Dataverse のいずれかのシステム管理者。
+**環境のリンクの解除に必要な役割:** 財務と運用アプリ、または Dataverse のいずれかのシステム管理者。
 
-1. Finance and Operations アプリにサインインします。
+1. 財務と運用アプリにログインします。
 2. **ワークスペース \> データ管理** に移動して、**デュアル書き込み** のタイルを選択します。
 3. 実行中のすべてのマッピングを選択し、**停止** を選択します。
 4. **リンク解除の環境** を選択します。

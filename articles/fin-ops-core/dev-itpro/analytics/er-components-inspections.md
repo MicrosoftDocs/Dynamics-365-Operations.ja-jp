@@ -2,7 +2,7 @@
 title: 構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 description: このトピックでは、構成済み電子レポート (ER) コンポーネントを検査して、発生する可能性のあるランタイムの問題を回避する方法について説明します。
 author: NickSelin
-ms.date: 08/26/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488117"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074794"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 
 [!include[banner](../includes/banner.md)]
 
-すべての構成済み [電子レポート (ER)](general-electronic-reporting.md) [形式](general-electronic-reporting.md#FormatComponentOutbound) と [モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components) コンポーネントは、設計時に [検証](er-fillable-excel.md#validate-an-er-format) できます。 この検証では、実行エラーやパフォーマンスの低下など、発生する可能性のあるランタイムの問題を防ぐために、整合性チェックが実行されます。 このチェックでは、検出された問題ごとに、問題のある要素のパスを提供します。 一部の問題については、自動修正が利用できます。
+すべての構成済み [電子レポート (ER)](general-electronic-reporting.md) [形式](er-overview-components.md#format-components-for-outgoing-electronic-documents) と [モデル マッピング](er-overview-components.md#model-mapping-component) コンポーネントは、設計時に [検証](er-fillable-excel.md#validate-an-er-format) できます。 この検証では、実行エラーやパフォーマンスの低下など、発生する可能性のあるランタイムの問題を防ぐために、整合性チェックが実行されます。 このチェックでは、検出された問題ごとに、問題のある要素のパスを提供します。 一部の問題については、自動修正が利用できます。
 
 既定では、前述の ER コンポーネントを含む ER 構成について、次の場合に検証が自動的に適用されます:
 
@@ -236,6 +236,15 @@ ER では、次のカテゴリを使用して、整合性チェック検査を�
 <td>エラー</td>
 <td>レプリケーションのない範囲のコンポーネントが複数あります。 不必要なコンポーネントを削除してください。</td>
 </tr>
+<tr>
+<td><a href='#i18'>ORDERBY 関数による式の実行可能性</a></td>
+<td>実行可能性</td>
+<td>エラー</td>
+<td>
+<p>ORDERBY 関数のリスト式がクエリ可能ではありません。</p>
+<p><b>ランタイム エラー:</b> 並べ替えはサポートされていません。 構成を検証して、詳細を取得します。</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -365,7 +374,7 @@ ER は、編集可能な ER コンポーネントで構成されているデー�
 8. 新しい入れ子になったフィールドに **$AccNumber** と名前を付けて、式 `TRIM(Vendor.AccountNum)` を含むように構成します。
 9. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査し、**Vendor** データ ソースの `FILTER(Vendor, Vendor.AccountNum="US-101")` 式を照会できることを確認します。
 
-    ![モデル マッピング デザイナー ページで式を照会できることを確認します。](./media/er-components-inspections-04.gif)
+    ![FILTER 関数を持つ式が、モデル マッピング デザイナー ページで照会できることを確認します。](./media/er-components-inspections-04.gif)
 
 10. **Vendor** データ ソースには、**FilteredVendor** データソースの式を直接 SQL ステートメントに変換できない **計算済フィールド** タイプの入れ子になったフィールドが含まれているため、検証エラーが発生することに注意してください。
 
@@ -671,19 +680,19 @@ ER 形式またはモデル マッピング コンポーネントを構成して
 
 ![形式デザイナー ページで形式マッピングの実行中に発生するランタイム エラーです。](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution&quot;></a>自動解決
+### <a name="automatic-resolution"></a>自動解決
 
 この問題を自動的に修正するオプションはありません。
 
-### <a name=&quot;manual-resolution&quot;></a>手動解決
+### <a name="manual-resolution"></a>手動解決
 
-#### <a name=&quot;option-1&quot;></a>オプション 1
+#### <a name="option-1"></a>オプション 1
 
 **Vendor** データ ソースから **キャッシュ** フラグを削除します。 その後、**FilteredVendor** データ ソースは実行可能になりますが、VendTable テーブルで参照される **Vendor** データ ソースは、**FilteredVendor** データ ソースが呼び出されるたびにアクセスされます。
 
-#### <a name=&quot;option-2&quot;></a>オプション 2
+#### <a name="option-2"></a>オプション 2
 
-**FilteredVendor** データ ソースの式を `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` から `WHERE(Vendor, Vendor.AccountNum="US-101")` に変更します。 この場合、VendTable テーブルで参照される **Vendor** データ ソースは、**Vendor** データ ソースの最初の呼び出し中にのみアクセスされます。 ただし、レコードの選択はメモリ内で行われます。 したがって、この方法ではパフォーマンスが低下する可能性があります。
+**FilteredVendor** データ ソースの式を `FILTER(Vendor, Vendor.AccountNum="US-101")` から `WHERE(Vendor, Vendor.AccountNum="US-101")` に変更します。 この場合、VendTable テーブルで参照される **Vendor** データ ソースは、**Vendor** データ ソースの最初の呼び出し中にのみアクセスされます。 ただし、レコードの選択はメモリ内で行われます。 したがって、この方法ではパフォーマンスが低下する可能性があります。
 
 ## <a name="missing-binding"></a><a id="i11"></a>バインドの欠落
 
@@ -892,6 +901,47 @@ Excel テンプレートを使用して送信ドキュメントを生成する�
 #### <a name="option-1"></a>オプション 1
 
 一貫性のない **Excel\\範囲** コンポーネントの **レプリケーション方向** プロパティを変更して、設定されたフォーマットを変更します。
+
+## <a name="executability-of-an-expression-with-orderby-function"></a><a id="i18"></a>ORDERBY 関数による式の実行可能性
+
+組み込み [ORDERBY](er-functions-list-orderby.md) ER関数は、関数の引数として指定された **[レコード リスト](er-formula-supported-data-types-composite.md#record-list)** タイプのER データ ソースのレコードを並べ替える場合に使用します。
+
+`ORDERBY` 関数の引数を [指定](er-functions-list-orderby.md#syntax-2) して、1 回のデータベース呼び出しを行うことでアプリケーション テーブル、ビュー、またはデータ エンティティのレコードを並べ替え、並べ替えられたデータをレコードの一覧として取得できます。 **レコード リスト** タイプのデータソース は、関数の引数として使用され、呼び出しのアプリケーション ソースを指定します。
+
+ER は、`ORDERBY` 関数で参照されるデータ ソースに対して直接データベース クエリを確立できるかどうかを確認します。 直接クエリを確立できない場合、ER モデル マッピング デザイナーで検証エラーが発生します。 受信するメッセージは、`ORDERBY` 関数を含む ER 式を実行時に実行できないことを示しています。
+
+次の手順は、この問題がどのように発生するかを示しています。
+
+1. ER モデル マッピング コンポーネントの構成を開始します。
+2. **Dynamics 365 for Operations \\ テーブル レコード** タイプのデータ ソースを追加します。
+3. 新しいデータ ソースに **Vendor** と名前を付けます。 **テーブル** フィールドで、**VendTable** を選択して、このデータ ソースが **VendTable** テーブルを要求するように指定します。
+4. **計算済フィールド** タイプのデータ ソースを追加します。
+5. 新しいデータ ソースに **OrderedVendors** と名前を付けて、式 `ORDERBY("Query", Vendor, Vendor.AccountNum)` を含むように構成します。
+ 
+    ![モデル マッピング デザイナー ページでデータ ソースを構成します。](./media/er-components-inspections-18-1.png)
+
+6. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査し、**OrderedVendors** データ ソースの式を照会できることを確認します。
+7. **計算済フィールド** タイプの入れ子になったフィールドを追加して、**Vendor** データ ソースを変更し、トリムされた仕入先番号を取得します。
+8. 新しい入れ子になったフィールドに **$AccNumber** と名前を付けて、式 `TRIM(Vendor.AccountNum)` を含むように構成します。
+9. **検証** を選択して、**モデル マッピング デザイナー** ページで編集可能なモデル マッピング コンポーネントを検査し、**Vendor** データ ソースの式を照会できることを確認します。
+
+    ![モデル マッピング デザイナー ページで Vendor データ ソースの式を照会できることを確認します。](./media/er-components-inspections-18-2.png)
+
+10. **Vendor** データ ソースには、**OrderedVendors** データソースの式を直接データベース ステートメントに変換できない **計算フィールド** タイプの入れ子になったフィールドが含まれているため、検証エラーが発生することに注意してください。 検証エラーを無視し、 **実行** を選択してこのモデル マッピングを実行した場合も、実行時に同じエラーが発生します。
+
+### <a name="automatic-resolution"></a>自動解決
+
+この問題を自動的に修正するオプションはありません。
+
+### <a name="manual-resolution"></a>手動解決
+
+#### <a name="option-1"></a>オプション 1
+
+**計算フィールド** タイプの入れ子になったフィールドを **Vendor** データ ソースに追加する代わりに、**$AccNumber** の入れ子になったフィールドを **FilteredVendors** データ ソースに追加し、式 `TRIM(FilteredVendor.AccountNum)` を含むようにフィールドを構成します。 このようにして、`ORDERBY("Query", Vendor, Vendor.AccountNum)` 式をデータベース レベルで実行し、**$AccNumber** の入れ子になったフィールドの計算を後で行うことができます。
+
+#### <a name="option-2"></a>オプション 2
+
+**FilteredVendors** データ ソースの式を `ORDERBY("Query", Vendor, Vendor.AccountNum)` から `ORDERBY("InMemory", Vendor, Vendor.AccountNum)` に変更します。 すべてのレコードがフェッチされ、必要なレコードの順序付けがメモリ内で行われるため、大量のデータがあるテーブル (トランザクション テーブル) の式を変更することはお勧めしません。 したがって、この方法ではパフォーマンスが低下する可能性があります。
 
 ## <a name="additional-resources"></a>追加リソース
 

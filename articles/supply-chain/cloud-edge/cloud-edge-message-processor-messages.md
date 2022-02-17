@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471647"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069432"
 ---
 # <a name="message-processor-messages"></a>メッセージ プロセッサのメッセージ
 
@@ -29,7 +29,7 @@ ms.locfileid: "7471647"
 
 ッセージ プロセッサ メッセージは、[製造ワークロード](cloud-edge-workload-manufacturing.md)および[倉庫管理ワークロード](cloud-edge-workload-warehousing.md)に対してクラウドおよびエッジのスケール ユニットを実行している場合に使用します。
 
-ハブとスケール ユニットの展開環境間での同期を維持するために大量のデータが交換されますが、*メッセージ プロセッサ* によって処理されるデータ交換はその一部分だけです。 **システム管理 > メッセージ プロセッサ > メッセージ プロセッサ メッセージ** から、メッセージ プロセッサによって処理されたメッセージを表示することができます。
+ハブとスケールユニットの展開環境では、同期を保つために大量のデータを交換します。交換されたデータの中には、*メッセージプロセッサ* の追加ロジックを起動するものもあります。 **システム管理 > メッセージ プロセッサ > メッセージ プロセッサ メッセージ** から、メッセージ プロセッサが処理したメッセージを表示することができます。
 
 ## <a name="message-grid-columns-and-filters"></a>メッセージ グリッドの列およびフィルター
 
@@ -86,7 +86,7 @@ ms.locfileid: "7471647"
 
 この例では、*Microsoft Power Automate* で **ビジネス イベントの発生時** を使用して、InfoLog メッセージとハブの展開で失敗した特定のメッセージの **メッセージ プロセッサ メッセージ** を開くハイパーリンクを含む電子メールを送信します。 異なるチャネルを使用して並列で通知を送信し、イベント データに基づく受信者を制御する追加ロジックを追加することができます。
 
-1. [Power Automate](https://preview.flow.microsoft.com) では、次の図に示されているように、**JSON 解析** および **電子メール送信** のステップに続くフロー トリガー **ビジネス イベントの発生時 - Finance and Operations アプリ (Dynamics 365)** に対する新しい自動化クラウド フローを作成します。
+1. [Power Automate](https://preview.flow.microsoft.com) では、次の図に示されているように、**JSON 解析** および **電子メール送信** のステップに続くフロー トリガー **ビジネス イベントの発生時 - 財務と運用アプリ (Dynamics 365)** に対する新しい自動化クラウド フローを作成します。
 
     :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate 自動化クラウド フロー。":::
 

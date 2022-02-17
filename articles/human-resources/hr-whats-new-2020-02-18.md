@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f74692ffe8afbdeea7519ac8bdfbbe54105b9ccee83031a9b1c223be78fc12e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9cce93aab902a8ca269cf22e1999716fe49f3ed8
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770411"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063007"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 18 日)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 この記事では、Dynamics 365 Human Resources の新機能および変更された機能について説明します。 変更は、ビルド番号 8.1.2903 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
 
 ## <a name="platform-update-32"></a>プラットフォーム update 32 
 
-プラットフォーム更新プログラム 32 が使用できるようになりました。 詳細については、[Finance and Operations アプリのプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md) を参照してください。
+プラットフォーム更新プログラム 32 が使用できるようになりました。 詳細については、[Finance and Operations のプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md) を参照してください。
 
 ## <a name="search-values-are-remembered-when-changing-view-options-in-streamlined-employee-form-383833"></a>合理化された従業員フォームで表示オプションを変更すると、検索値が記憶される (383833)
 

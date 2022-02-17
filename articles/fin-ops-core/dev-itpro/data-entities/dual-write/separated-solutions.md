@@ -10,30 +10,30 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 3fe1b7707df72927fba78ee9659502cc62471799
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924871"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063265"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>分離型二重書き込みアプリケーション オーケストレーション ソリューションの適用
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 以前は、二重書き込みアプリケーション オーケストレーション パッケージは、次のソリューションを含む 1 つのパッケージでした:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations Common Anchor
-- Dynamics 365 Finance and Operations 二重書き込みエンティティ マップ
+- Dynamics 365 Finance および Operations 共通アンカー
+- Dynamics 365 Finance および Operations デュアル書き込みエンティティ マップ
 - Dynamics 365 アセット マネジメント アプリ
 - Dynamics 365 アセット マネジメント
 - HCM 共通
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations Common
+- Dynamics 365 Finance および Operations 共通アンカー
 - Dynamics 365 Company
 - Currency Exchange Rates
 - Field Service Common
@@ -51,14 +51,14 @@ ms.locfileid: "7924871"
 | 固有の名前                           | 表示名                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance および Operations 共通アンカー |
 | CurrencyExchangeRates                 | Currency Exchange Rates                    |
 | msdyn_DualWriteAppCoreMaps            | 二重書き込みアプリケーション コア エンティティのマップ   |
 | msdyn_DualWriteAppCoreAnchor          | 二重書き込みアプリケーション コア アンカー        |
 
 このパッケージでは、以下のマップが利用可能です。
 
-| Finance and Operations アプリ     | Customer Engagement アプリ                    |
+| 財務と運用アプリ     | Customer Engagement アプリ                    |
 |---------------------------------|---------------------------------------------|
 | 作業単位                  | msdyn_internalorganizations                 |
 | 組織階層          | msdyn_internalorganizationhierarchies       |
@@ -89,7 +89,7 @@ Dual-write Human Resources パッケージには、人事データの同期に�
 
 このパッケージでは、以下のマップが利用可能です。
 
-| Finance and Operations アプリ | Customer Engagement アプリ         |
+| 財務と運用アプリ | Customer Engagement アプリ         |
 |-----------------------------|----------------------------------|
 | 出身民族              | cdm_ethnicorigins                |
 | 報酬ジョブ機能   | cdm_jobfunctions                 |
@@ -119,7 +119,7 @@ Dual-write Supply Chainパッケージには、Supply Chain Management データ
 
 このパッケージでは、以下のマップが利用可能です。
 
-| Finance and Operations アプリ                 | Customer Engagement アプリ                      |
+| 財務と運用アプリ                 | Customer Engagement アプリ                      |
 |---------------------------------------------|-----------------------------------------------|
 | 単位                                       | uoms                                          |
 | CDS 販売注文ヘッダー                     | 販売注文                                   |
@@ -197,7 +197,7 @@ Dual-write Finance パッケージには、Dynamics 365 Finance の同期に必�
 
 このパッケージでは、以下のマップが利用可能です。
 
-| Finance and Operations アプリ             | Customer Engagement アプリ        |
+| 財務と運用アプリ             | Customer Engagement アプリ        |
 |-----------------------------------------|---------------------------------|
 | 源泉徴収税グループ                  | msdyn_withholdingtaxgroups      |
 | CDS Contacts V2 (顧客)              | 連絡先                        |
@@ -274,7 +274,7 @@ Dual-write アセット マネジメントパッケージには、Supply Chain M
 
 このパッケージでは、以下のマップが利用可能です。
 
-| Finance and Operations アプリ                           | Customer Engagement アプリ                |
+| 財務と運用アプリ                           | Customer Engagement アプリ                |
 |-------------------------------------------------------|-----------------------------------------|
 | 資産管理の保証                             | msdyn_warranties                        |
 | 資産管理モデル                               | msdyn_models                            |

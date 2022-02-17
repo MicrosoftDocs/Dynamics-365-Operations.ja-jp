@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7fba7cc060dbfaecc25c41a8cbda5bc8f169acf4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9428308211d51e7de8c61fb9aadef6ce1fd9886f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985473"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062678"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Microsoft Dynamics 365 Field Service との統合の概要
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Supply Chain Management により、Dynamics 365 Supply Chain Management および Dynamics 365 Field Service 間の業務プロセスの同期を有効にします。 統合シナリオは、業務プロセスの同期を有効にするため、拡張データ インテグレーター テンプレートおよび Microsoft Dataverse を使用して構成します。
 標準テンプレートを使用してカスタム統合プロジェクトを作成し、追加の標準フィールドとカスタム列、およびテーブルをマップして統合を調整して、特定のビジネス ニーズを満たすことができます。 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777940"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075302"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Management 10.0.21 (2021 年 10 月) の新機能または変更された機能
 
@@ -39,7 +39,6 @@ ms.locfileid: "7777940"
 | 在庫&nbsp;および&nbsp;物流 | [相手勘定に接続されたコードを使用した手当調整の転記](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [在庫棚卸の理由コード](../warehousing/reason-codes-for-counting-journals.md) |
 | 在庫&nbsp;および&nbsp;物流 | [販売見積参照データ エクスポート ポリシー](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | 見積書で参照されているデータを変更すると、それらの見積書 (または明細行) が次の増分エクスポートに含まれるかどうかを選択します。 そのような見積書または明細行を含めない場合は、増分エクスポートがより迅速に実行します。<br><br>この機能は、**変更追跡中に販売見積参照データをスキップ** という設定を **売掛金勘定パラメーター** ページに追加します。 |
 | 在庫&nbsp;および&nbsp;物流 | [シールド入札](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [RFQ の封緘入札](../procurement/sealed-bidding.md) |
-| 在庫&nbsp;および&nbsp;物流 | [GS1 形式標準を使用した倉庫内のバーコードのスキャン](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 バーコードと QR コード](../warehousing/gs1-barcodes.md) |
 | 在庫&nbsp;および&nbsp;物流 | [在庫の可視化アドインの仮引当](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [在庫の視覚化引当](../inventory/inventory-visibility-reservations.md) |
 | 在庫&nbsp;および&nbsp;物流 | [リベート管理の控除および Catch Weight の強化](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [控除ワークベンチを使用した控除の管理](../rebate-management/deduction-workbench.md )<br><br>[リベートの処理、確認、および転記](../rebate-management/process-review-post.md)<br><br>[リベート管理取引](../rebate-management/rebate-management-deals.md) |
 | 在庫&nbsp;および&nbsp;物流 | [倉庫アプリのステップ指示](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Warehouse Management モバイル アプリのステップ タイトルと手順のカスタマイズ](../warehousing/mobile-app-titles-instructions.md) |
@@ -138,9 +137,9 @@ ms.locfileid: "7777940"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.21 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.21 (2021 年 10 月) のプラットフォーム アップデート](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.21 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.21 のプラットフォーム更新プログラム (2021 年 10 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

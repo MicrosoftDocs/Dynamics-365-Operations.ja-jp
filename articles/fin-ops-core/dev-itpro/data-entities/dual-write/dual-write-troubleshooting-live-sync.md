@@ -9,27 +9,27 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 69667f8b64c048f5957168d1af21a6c858bc0bad
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782582"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062366"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>ライブ同期に関する問題のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-このトピックでは、Finance and Operations アプリと Microsoft Dataverse 間のデュアル書き込み統合に関するトラブルシューティングの情報を提供します。 このトピックでは、ライブ同期の問題修正に役立つトラブルシューティングに特化した情報を提供します。
+
+このトピックでは、財務と運用アプリと Microsoft Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、ライブ同期の問題修正に役立つトラブルシューティングに特化した情報を提供します。
 
 > [!IMPORTANT]
 > このトピックで説明されている問題の中には、システム管理者ロールまたは Azure Active Directory (Azure AD) テナント管理者の資格情報のいずれかが必要な場合があります。 各セクションでは、特定のロールまたは特定の資格情報が必要な場合について説明しています。
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>行の作成時にライブ同期でエラーが表示される
 
-Finance and Operations アプリで行を作成した際に、次のエラー メッセージが表示される場合があります:
+財務と運用アプリで行を作成した際に、次のエラー メッセージが表示される場合があります:
 
 *\[{\\"エラー\\"：{\\"コード\\"：\\"0x 80072560\\"、\\"メッセージ\\"：\\"ユーザーは組織のメンバではありません。\\}}\]、リモートサーバーからエラーが返されました：（403）権限がありません。"}}"*
 
@@ -39,11 +39,11 @@ Finance and Operations アプリで行を作成した際に、次のエラー �
 
 **問題の修正に必要な役割：** システム管理者
 
-Finance and Operations アプリでテーブル データを保存しようとする際に、次のエラー メッセージが表示される場合があります。
+財務と運用アプリでテーブル データを保存しようとする際に、次のエラー メッセージが表示される場合があります:
 
 *データベースへの変更を保存できません。作業単位で取引をコミットすることはできません。エンティティ uoms にデータを書き込むことができません。UnitOfMeasureEntity への書き込みが失敗し、次のエラーメッセージが表示されました。エンティティ uoms と同期することはできません。*
 
-問題を修正するには、前提条件となる参照データが Finance and Operations アプリと Dataverse の両方に存在していることを確認します。 たとえば、顧客レコードが特定の顧客グループに属している場合は、その顧客グループ レコードが Dataverse に存在することを確認します。
+問題を修正するには、前提条件となる参照データが財務と運用アプリと Dataverse の両方に存在していることを確認する必要があります。 たとえば、顧客レコードが特定の顧客グループに属している場合は、その顧客グループ レコードが Dataverse に存在することを確認します。
 
 データが両方の場所に存在し、問題がデータに起因するものではないことが分かった場合は、次の手順を実行してください。
 
@@ -51,15 +51,15 @@ Finance and Operations アプリでテーブル データを保存しようと�
 2. 二重書き込みマップおよびプロジェクトで問題があるレコードを選択および削除します。 二重書き込みマッピングごとに 2 つのレコードがあります。
 3. Excel アドインを使用して変更を公開します。 エンティティおよび基になるテーブルからレコードが削除されるので、この手順は重要です。
 
-## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Finance and Operations アプリにデータを作成する際の、読み取り、書き込み権限に関するエラーを処理する
+## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>財務と運用アプリにデータを作成する際の、読み取り、書き込み権限に関するエラーを処理する
 
-Finance and Operations アプリでデータを作成した際に、「不正な要求」というエラー メッセージが表示される場合があります。
+財務と運用アプリでデータを作成した際に、「不正な要求」というエラー メッセージが表示される場合があります。
 
 ![不正な要求のエラー メッセージの例。](media/error_record_id_source.png)
 
 この問題を修正するには、マッピングされた Dynamics 365 Sales または Dynamics 365 Customer Service 事業単位のチームに適切なセキュリティロールを割り当てて、不足している権限を有効にする必要があります。
 
-1. Finance and Operations アプリで、データ統合の接続セットにマッピングされている事業単位を検索します。
+1. 財務と運用アプリで、データ統合の接続セットにマッピングされている事業単位を検索します。
 
     ![組織のマッピング。](media/mapped_business_unit.png)
 
@@ -77,7 +77,7 @@ Finance and Operations アプリでデータを作成した際に、「不正な
 
 **問題の修正に必要な役割：** システム管理者
 
-Finance and Operations アプリでデータを作成した際に、次のエラー メッセージが表示される場合があります。
+財務と運用アプリでデータを作成した際に、次のエラー メッセージが表示される場合があります:
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**エンティティ CustCustomerV3Entity のペイロードを生成できません。**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":" ペイロードの作成に失敗しました。エラー 無効な URI です：URI が入力されていません。}\],"isErrorCountUpdated":true}*
 
@@ -85,19 +85,19 @@ Finance and Operations アプリでデータを作成した際に、次のエラ
 
 > ISV コードから予期しないエラーが発生しました。 (ErrorType = ClientError) プラグインから予期しない例外が発生しました (実行): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: エンティティ アカウントの処理に失敗しました - (接続先が一定期間応答しなかったために接続に失敗したか、接続ホストが応答しなかったために確立された接続が失敗しました。
 
-このエラーは、Finance and Operations アプリでのデータ作成時に、Dataverse 環境が正しくリセットされていない場合に発生します。
+このエラーは、財務と運用アプリでのデータ作成時に、Dataverse 環境が正しくリセットされていない場合に発生します。
 
 > [!IMPORTANT]
 > 環境を再リンクした場合は、軽減策手順を続行する前に、すべてのエンティティ マップを停止する必要があります。
 
-問題を修正するには、Dataverse および Finance and Operations アプリの両方で手順を完了する必要があります。
+問題を修正するには、Dataverse および財務と運用アプリの両方で手順を完了する必要があります。
 
-1. Finance and Operations アプリで、次の手順に従います。
+1. 財務と運用アプリで、次の手順に従います:
 
     1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、Finance and Operations の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
     2. 二重書き込みマップおよびプロジェクトで問題があるレコードを選択および削除します。 二重書き込みマッピングごとに 2 つのレコードがあります。
     3. Excel アドインを使用して変更を公開します。 エンティティおよび基になるテーブルからレコードが削除されるので、この手順は重要です。
-    4. Finance and Operations または Dataverse 環境を再リンクする際にエラーを防ぐには、二重書き込みの構成が残っていないことを確認してください。
+    4. Finance and Operations または Dataverse 環境を再リンクする際にエラーを防ぐには、デュアル書き込みの構成が残っていないことを確認してください。
 
 2. Dataverse で、以下の手順を実行します。
 
@@ -108,12 +108,12 @@ Finance and Operations アプリでデータを作成した際に、次のエラ
     5. **結果** を表示して、コンフィギュレーションを表示します。
     6. すべてのインスタンスを削除します。
 
-3. Finance and Operations アプリで、次の手順に従います。
+3. 財務と運用アプリで、次の手順に従います:
 
     1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、Finance and Operations の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
     2. 二重書き込みマップおよびプロジェクトで問題があるレコードを選択および削除します。 二重書き込みマッピングごとに 2 つのレコードがあります。
     3. Excel アドインを使用して変更を公開します。 エンティティおよび基になるテーブルからレコードが削除されるので、この手順は重要です。
-    4. Finance and Operations または Dataverse 環境を再リンクする際にエラーを防ぐには、二重書き込みの構成が残っていないことを確認してください。
+    4. Finance and Operations または Dataverse 環境を再リンクする際にエラーを防ぐには、デュアル書き込みの構成が残っていないことを確認してください。
 
 ## <a name="live-synchronization-error-after-you-do-a-full-database-copy"></a>データベース全体のコピーを実行した後のライブ同期エラー
 
@@ -189,9 +189,9 @@ while(qRun.next())
 }
 ```
 
-## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>Finance and Operations アプリからのデータが Dataverse に同期しない
+## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>財務と運用アプリのデータが Dataverse に同期されません
 
-ライブ同期中に、データの一部のみが Finance and Operations アプリから Dataverse に同期されるか、データがまったく同期されないという問題が発生する可能性があります。
+ライブ同期中に、データの一部のみが財務と運用アプリから Dataverse に同期されるか、データがまったく同期されないという問題が発生する可能性があります。
 
 > [!NOTE]
 > 開発時に、この問題を修正する必要があります。
@@ -200,13 +200,13 @@ while(qRun.next())
 
 + カスタム変更が単一のトランザクション スコープで記述されていることを確認してください。
 + ビジネス イベントおよび二重書き込みフレームワークは、`doinsert()`、`doUpdate()`、および `recordset()` 操作、または `skipBusinessEvents(true)` がマークされているレコードを処理しません。 コードがこれらの機能内にある場合、二重書き込みはトリガーされません。
-+ ビジネス イベントは、マップされているデータ ソースに登録する必要があります。 一部のデータ ソースは、プログラム外部結合を使用し、Finance and Operations アプリでは読み取り専用としてマーク されている可能性があります。 これらのデータ ソースは追跡されません。
++ ビジネス イベントは、マップされているデータ ソースに登録する必要があります。 一部のデータ ソースは、プログラム外部結合を使用し、財務と運用アプリでは読み取り専用としてマーク されている可能性があります。 これらのデータ ソースは追跡されません。
 + 変更は、マップされたフィールドに変更がある場合にのみトリガーされます。 マップされていないフィールド変更では、二重書き込みをトリガーできません。
 + フィルター評価が有効な結果を提供することを確認してください。
 
 ### <a name="troubleshooting-steps"></a>トラブルシューティングの手順
 
-1. 二重書き込み管理者ページ上のフィールド マッピングを確認します。 フィールドが Finance and Operations アプリから Dataverse にマップされていない場合、フィールド は追跡されません。 たとえば、次の図では、**説明** フィールドは Dataverse から 追跡されていますが、Finance and Operations アプリからは追跡 されていません。 Finance and Operations アプリ内のそのフィールドへの変更は追跡されません。
+1. 二重書き込み管理者ページ上のフィールド マッピングを確認します。 フィールドが財務と運用アプリから Dataverse にマップされていない場合、フィールド は追跡されません。 たとえば、次の図では、**説明** フィールドは Dataverse から追跡されていますが、財務と運用アプリからは追跡 されていません。 財務と運用アプリ内のそのフィールドへの変更は追跡されません。
 
     ![追跡されるフィールド。](media/live-sync-troubleshooting-1.png)
 
@@ -220,9 +220,9 @@ while(qRun.next())
 
 ### <a name="sample-scenario"></a>サンプル シナリオ
 
-Finance and Operations アプリでは、連絡先レコードの住所が更新されますが、住所の変更は Dataverse に同期されません。 このシナリオは、**BusinessEventsDefinition** テーブルのレコードに、影響を受けるテーブルとエンティティの組み合わせがないために発生します。 具体的には、**LogisticsPostalAddress** テーブルは **smmContactpersonCDSV2Entity** エンティティの直接データ ソースではありません。 **smmContactpersonCDSV2Entity** エンティティには **smmContactPersonV2Entity** がデータ ソースとしてあり、**smmContactPersonV2Entity** には **LogisticsPostalAddressBaseEntity** がデータ ソースとしてあります。 **LogisticsPostalAddress** テーブルは、**LogisticsPostalAddressBaseEntity** のデータ ソースです。
+財務と運用アプリでは、連絡先レコードの住所が更新されますが、住所の変更は Dataverse に同期されません。 このシナリオは、**BusinessEventsDefinition** テーブルのレコードに、影響を受けるテーブルとエンティティの組み合わせがないために発生します。 具体的には、**LogisticsPostalAddress** テーブルは **smmContactpersonCDSV2Entity** エンティティの直接データ ソースではありません。 **smmContactpersonCDSV2Entity** エンティティには **smmContactPersonV2Entity** がデータ ソースとしてあり、**smmContactPersonV2Entity** には **LogisticsPostalAddressBaseEntity** がデータ ソースとしてあります。 **LogisticsPostalAddress** テーブルは、**LogisticsPostalAddressBaseEntity** のデータ ソースです。
 
-同様の状況は、Finance and Operations アプリで変更されているテーブルが、それを含むエンティティに明らかにリンクされていない場合など、一部の非標準パターンで発生する可能性があります。 たとえば、基本住所データは **smmContactPersonCDSV2Entity** エンティティで計算されます。 二重書き込みフレームワークは、基になるテーブルに対する変更がエンティティにマップされる方法を決定しようとします。 通常、この方法で十分です。 ただし、場合によっては、リンクが非常に複雑であるため、具体的にする必要があります。 関連するテーブルの **RecId** がエンティティで直接利用可能であることを確認する必要があります。 次に、静的メソッドを追加して、テーブルの変更を監視します。
+同様の状況は、財務と運用アプリで変更されているテーブルが、それを含むエンティティに明らかにリンクされていない場合など、一部の非標準パターンで発生する可能性があります。 たとえば、基本住所データは **smmContactPersonCDSV2Entity** エンティティで計算されます。 二重書き込みフレームワークは、基になるテーブルに対する変更がエンティティにマップされる方法を決定しようとします。 通常、この方法で十分です。 ただし、場合によっては、リンクが非常に複雑であるため、具体的にする必要があります。 関連するテーブルの **RecId** がエンティティで直接利用可能であることを確認する必要があります。 次に、静的メソッドを追加して、テーブルの変更を監視します。
 
 例については、**smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping()** 方法を確認します。 **CustCustomerV3entity** および **VendVendorV2Entity** は、この状況を処理するために変更されました。
 
@@ -250,17 +250,17 @@ Finance and Operations アプリでは、連絡先レコードの住所が更新
 5. **smmContactPersonCDSV2Entity** エンティティで作成されたすべての二重書き込みマップを停止します。
 6. マップを開始します。 **refentityname** の値が **BusinessEventsDefinition** テーブルの **smmContactPersonCDSV2Entity** に等しい行の **RefTableName** 列を使用して追跡を開始した新しいテーブル (この例では **LogisticsPostalAddress**) が表示されます。
 
-## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>複数のレコードが Finance and Operations アプリから Dataverse に同じバッチで送信されるレコードを作成する場合のエラー
+## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>複数のレコードが財務と運用アプリから Dataverse に同じバッチで送信されるレコードを作成する場合のエラー
 
-どのトランザクションでも、Finance and Operations アプリはデータをバッチで作成し、それをバッチとして Dataverse に送信します。 2 つのレコードが同じトランザクションの一部として作成され、それらが相互に参照している場合、Finance and Operations アプリの次の例のようなエラーメッセージが表示される場合があります。
+どのトランザクションでも、財務と運用アプリはデータをバッチで作成し、それをバッチとして Dataverse に送信します。 2 つのレコードが同じトランザクションの一部として作成され、それらが相互に参照している場合、財務と運用アプリの次の例のようなエラーメッセージが表示される場合があります:
 
 *エンティティ aaa_fundingsources にデータを書き込めません。値 {PC00...} で ebecsfs_contracts を検索できません。値が {PC00...} の aaa_fundingsources を検索できません。aaa_fundingsources への書き込みがエラー メッセージの例外メッセージで失敗しました: リモート サーバーがエラーを返しました: (400) 不正な要求。*
 
-この問題を修正するには、Finance and Operations アプリでエンティティの関係を作成して、2 つのエンティティが相互に関連していること、および関連するレコードが同じトランザクションで処理されることを示します。
+この問題を修正するには、財務と運用アプリでエンティティの関係を作成して、2 つのエンティティが相互に関連していること、および関連するレコードが同じトランザクションで処理されることを示します。
 
 ## <a name="enable-verbose-logging-of-error-messages"></a>エラー メッセージの詳細ログの有効化
 
-Finance and Operations アプリでは、Dataverse 環境に関連するエラーが発生する場合があります。 エラー メッセージには、メッセージの全文またはその他の関連データが含まれていない場合があります。 詳細情報を取得するには、Finance and Operations アプリのすべてのプロジェクト構成の **DualWriteProjectConfigurationEntity** エンティティに存在する **IsDebugMode** フラグを設定することにより、詳細ログを有効にできます。
+財務と運用アプリでは、Dataverse 環境に関連するエラーが発生する場合があります。 エラー メッセージには、メッセージの全文またはその他の関連データが含まれていない場合があります。 詳細情報を取得するには、財務と運用アプリのすべてのプロジェクト構成の **DualWriteProjectConfigurationEntity** エンティティに存在する **IsDebugMode** フラグを設定することにより、詳細ログを有効にできます。
 
 1. Excel アドインを使用して **DualWriteProjectConfigurationEntity** エンティティを開きます。 アドインを使用するには、Finance and Operations の Excel アドインでデザイン モードを有効にし、ワークシートに **DualWriteProjectConfigurationEntity** を追加します。 詳細については、[Excel でのエンティティ データの表示と更新](../../office-integration/use-excel-add-in.md) を参照してください。
 2. プロジェクトの **IsDebugMode** フラグを **はい** に設定します。
@@ -270,7 +270,7 @@ Finance and Operations アプリでは、Dataverse 環境に関連するエラ�
 
 ## <a name="error-when-you-add-an-address-for-a-customer-or-contact"></a>顧客または連絡先の住所を追加する際のエラー
 
-Finance and Operations アプリや Dataverse の顧客または連絡先に住所を追加しようとする場合、次のようなエラー メッセージが表示される場合があります。
+財務と運用アプリや Dataverse の顧客または連絡先に住所を追加しようとする場合、次のようなエラー メッセージが表示される場合があります。
 
 *エンティティ msdyn_partypostaladdresses へのデータの書き込みに失敗しました。DirPartyPostalAdlocationCDSEntity への書き込みに失敗し、次のエラー メッセージが表示されました。要求に失敗しました。ステータス コード BadRequest、CDS エラー コード: 0x80040265、応答メッセージ: プラグインでエラーが発生しました。場所 ID の属性値を持つレコードが既に存在します。エンティティ キーの場所 ID キーは固有の値がこの属性のセットに含まれている必要があります。一意の値を選択してやり直してください。*
 
@@ -290,7 +290,7 @@ Dataverse で顧客を追加しようとする際に、次のエラー メッセ
 
 *"RecordError0": "書き込みに失敗したエンティティ顧客 V3 に対して不明な例外 - 当事者タイプ '組織' の当事者レコードが見つかりませんでした"}。*
 
-Dataverse で顧客を作成すると、新しい当事者番号が生成されます。 エラー メッセージは、顧客レコードが当事者とともに Finance and Operations アプリに同期されたときに表示されますが、別の当事者番号を持つ顧客レコードがすでに存在します。
+Dataverse で顧客を作成すると、新しい当事者番号が生成されます。 エラー メッセージは、顧客レコードが当事者とともに財務と運用アプリに同期されたときに表示されますが、別の当事者番号を持つ顧客レコードがすでに存在します。
 
 問題を修正するには、当事者ルックアップで顧客を検索します。 顧客が存在しない場合、新しい顧客レコードを作成します。 顧客が存在する場合は、既存の当事者を使用して新しい顧客レコードを作成します。
 
@@ -300,7 +300,7 @@ Dataverse で顧客を作成すると、新しい当事者番号が生成され�
 
 *当事者のタイプを「DirOrdirization」から「DirPerson」に更新することはできません。代わりに、既存の当事者を削除し、その後、新しいタイプの挿入を実行する必要があります。*
 
-Dataverse では、**msdyn_party** テーブルに番号順序があります。 Dataverse でアカウントが作成されると、新しい当事者が作成されます (例えば、**組織** タイプの **Party-001**)。 このデータは Finance and Operations アプリに送信されます。 Dataverse 環境がリセットされるか、Finance and Operations 環境が別の Dataverse 環境にリンクされ、Dataverse に新しい連絡先レコードが作成されると、**Party-001** で始まる新しい当事者値が作成されます。 この時、作成される当事者レコードは、**個人** タイプの **Party-001** です。 このデータが同期されると、**組織** タイプの当事者レコード **Party-001** がすでに存在するため、Finance and Operations アプリは上記のエラー メッセージを表示します。
+Dataverse では、**msdyn_party** テーブルに番号順序があります。 Dataverse でアカウントが作成されると、新しい当事者が作成されます (例えば、**組織** タイプの **Party-001**)。 このデータは財務と運用アプリに送信されます。 Dataverse 環境がリセットされるか、Finance and Operations 環境が別の Dataverse 環境にリンクされ、Dataverse に新しい連絡先レコードが作成されると、**Party-001** で始まる新しい当事者値が作成されます。 この時、作成される当事者レコードは、**個人** タイプの **Party-001** です。 このデータが同期されると、**組織** タイプの当事者レコード **Party-001** がすでに存在するため、財務と運用アプリは上記のエラー メッセージを表示します。
 
 この問題を修正するには、Dataverse の **msdyn_party** テーブルの **msdyn_partynumber** フィールドの自動番号順序を別の自動番号順序に変更します。
 

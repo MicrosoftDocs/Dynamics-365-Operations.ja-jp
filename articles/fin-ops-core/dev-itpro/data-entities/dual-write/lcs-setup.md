@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 1fd15b5d664fead10949750678a2d3eab967af22
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781395"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063675"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Lifecycle Services からの二重書き込みの設定
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、 Microsoft Dynamics Lifecycle Services (LCS)から二重書き込みを有効にする方法について説明します。
 
@@ -59,7 +59,7 @@ Power Platform の統合を完了する必要があります。次のトピッ�
 
 既存の Dataverse 環境に対して二重書き込みを設定するには、Microsoft の [サポート チケット](../../lifecycle-services/lcs-support.md) を作成する必要があります。 このチケットには次の情報が必要となります:
 
-+ ご利用の Finance and Operations 環境の ID。
++ Finance and Operations 環境 ID。
 + Lifecycle Services から環境名を入力します。
 + Dataverse 管理センターの組織 ID、または Power Platform 管理センターの Power Platform環境 ID。 チケットの中で、ID が Power Platform 統合で使用するインスタンスであることを要求してください。
 
