@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec6d47c44136f7a105a702358370dd676d9339c1
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018351"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024570"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Dynamics 365 Human Resources インフラストラクチャ マージ - リリース 10.0.25 更新
 
@@ -28,7 +28,7 @@ ms.locfileid: "8018351"
 
 この統合により、次の方法で Human Resources ユーザーに整合性が確保されます。
 
-- [環境の管理と統合は、Human Resources と Finance and Operations アプリの間で一貫しています。](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/consistent-environment-management-integrations-between-human-resources-finance-operations-apps)
+- [環境の管理と統合は、人事および財務と運用アプリの間で一貫しています。](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/consistent-environment-management-integrations-between-human-resources-finance-operations-apps)
 
     - Lifecycle Services の Microsoft Dynamics 環境管理、問題検索、および Regression Suite Automation Tool。
     - 1 つのコード ベースがあり、定期的な One Version アップデート プロセスの一環として、Human Resources の新機能がリリースされます。
@@ -44,7 +44,7 @@ ms.locfileid: "8018351"
 
 - [Dynamics 365 で 1 セットの人事管理機能を作成します。](/dynamics365-release-plan/2021wave2/human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
 
-    10.0.25 のリリースでは、Human Resources のみに存在していた機能が Finance and Operations のインフラストラクチャで利用できるようになりました。 顧客が Finance and Operations 環境でこれらの機能を利用するには、機能管理で次の Human Resources 機能を有効にする必要があります。
+    10.0.25 のリリースでは、Human Resources のみに存在していた機能が Finance and Operations のインフラストラクチャで利用できるようになりました。 顧客が Finance and Operations の環境でこれらの機能を利用するには、機能管理で次の Human Resources 機能を有効にする必要があります。
 
     | 機能名 | 概要 | リリース状態 | 
     |--------------|----------|----------------| 
@@ -53,7 +53,7 @@ ms.locfileid: "8018351"
     | 業務評価を印刷する | パフォーマンス レビューは PDF 形式で印刷できます。 | 一般に入手可能 | 
     | **マネージャー セルフサービス** のカスタム リンク | **マネージャ セルフサービス** の **関連リンク** セクションに表示されるカスタム リンクを作成できます。 | 一般に入手可能 | 
     | 会社間報酬ビュー | ユーザーは、会社を切り替えることなく、すべての法人を対象に **マネージャ セルフサービス** で報酬プランを閲覧することができます。 | 一般に入手可能 | 
-    | 職務 \*&dagger; ごとに複数の報酬レベルを構成する | ジョブが複数の報酬レベルに対応しました。 | 一般に入手可能 | 
+    | 職務 \*&dagger; ごとに複数の報酬レベルを構成する | ジョブが複数の報酬レベルに対応しました。 | プレビュー | 
     | タスク管理\* | オンボード、オフボード、切り替えプロセスのチェック リストやタスクを作成することができます。 | プレビュー | 
     | 合理化された従業員の入力 | この機能により、既存の **作業者r** ページに表示される最新のユーザー エクスペリエンスが提供されます。 | プレビュー | 
     | 人事管理のユーザー エクスペリエンスの改善 | 次のセクションの表を参照してください。  | プレビュー | 

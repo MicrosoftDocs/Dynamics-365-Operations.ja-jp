@@ -2,7 +2,7 @@
 title: コール センター チャネルの設定
 description: このトピックでは、Dynamics 365 Commerce を使用してコール センターの注文処理方法について説明します。
 author: josaw1
-ms.date: 01/06/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5f9afd1b67d6b164facc4dd15a8680866fe8c5b4e4b491d969cda6554eebb1de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750651"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092435"
 ---
 # <a name="set-up-call-center-channels"></a>コール センター チャネルの設定
 
@@ -56,6 +56,9 @@ ms.locfileid: "6750651"
 さらに **注文完了を有効化** 設定を有効にする場合、ユーザーが販売注文を作成し、明細行品目のエントリのモードにいる際は、**ソース** フィールドは主要な販売注文ヘッダーで利用できます。 **ソース** フィールドは、直接マーケティング販売シナリオで [カタログのソース コード](/dynamics365/unified-operations/retail/call-center-catalogs) をキャプチャするために使用されます。 このコードは、特別価格とプロモーションを促進します。
 
 **注文完了を有効化** 設定が無効でも、ユーザーはまだ販売注文にソース コードを適用できます。 ただし、最初に販売注文ヘッダーの詳細を開き、**ソース** フィールドにアクセスする必要があります。 つまり、いくつか追加クリックが必要です。 出荷完了や急送の注文などの機能にも同じ動作が適用されます。 これらの機能は、コール センターで作成されたすべての注文で利用可能です。 ただし、**注文完了を有効化** 設定が有効な際は、ユーザーが明細行エントリの表示にいる間に販売ヘッダーのこれらの機能のコンフィギュレーションを表示できます。 適切な設定およびフィールドを見つけるために、販売注文ヘッダーの詳細にドリル ダウンする必要はありません。
+
+> [!NOTE]
+> **オムニチャネル Commerce 注文支払** 機能が有効になっていると、コール センター **注文完了を有効化する** ボタンは、**Retail と Commerce \> チャネル \> コール センター** にあるチャネルの **一般** クイック タブの本社で非表示になります。
 
 ### <a name="enable-direct-selling"></a>直接販売の有効化
 

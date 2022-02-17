@@ -4,18 +4,19 @@ description: このトピックでは、製造および倉庫管理のワーク�
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
-ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
+ms.openlocfilehash: 593331a3f1073edb6a50c9bfc66e0723d222832a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7733442"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065767"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>分散ハイブリッド トポロジのスケール ユニット
 
@@ -51,8 +52,7 @@ ms.locfileid: "7733442"
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>スケール ユニットの専用の倉庫管理ワークロード機能
 
-倉庫管理ワークロードを使用すると、独立した配置で倉庫管理プロセスを実行できます。
-詳細については、[クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード](cloud-edge-workload-warehousing.md) を参照してください。
+倉庫管理ワークロードは、一般提供のためにリリースされたスケール ユニットの最初の分散ワークロードです。 独立した保守ウィンドウを使用することで、倉庫業務を拡張し、弾力性のある環境で稼働させることができます。 Warehouse Management ワークロードは、ほとんどの企業の倉庫管理プロセスをサポートします。 詳細については、[クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード](cloud-edge-workload-warehousing.md) を参照してください。
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>スケール ユニットの専用の製造実行ワークロード機能
 

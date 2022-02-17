@@ -1,6 +1,6 @@
 ---
-title: 統合された仕入先マスター
-description: このトピックでは、Finance and Operations アプリと Dataverse 間の仕入先データの統合について説明します。
+title: 統合済み仕入先マスター
+description: このトピックでは、財務と運用アプリと Dataverse 間の仕入先データの統合について説明します。
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fce5e072d39533fa5d54fe34e90c7aca9d01d67e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7794f33aed7364b76a7d5ffd08a068342887e468
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782480"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063165"
 ---
 # <a name="integrated-vendor-master"></a>統合された仕入先マスター
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 *仕入先* という用語は、サプライヤー組織、または会社に商品やサービスを提供している唯一の個人事業主を指します。 *仕入先* は、Microsoft Dynamics 365 Supply Chain Management で確立されていますが、Customer Engagement アプリには仕入先の概念は存在しません。 ただし、**取引先企業/連絡先** テーブルをオーバーロードして、仕入先情報を格納することができます。 この統合型仕入先マスターは、Customer Engagement アプリで明示的なベンダー概念を導入します。 新しい仕入先設計を使用するか、仕入先データを **取引先企業/連絡先** テーブルに格納することができます。 デュアル書き込みでは、両方の手法がサポートされます。
 
@@ -37,13 +37,13 @@ ms.locfileid: "7782480"
 ![拡張された仕入先データ フロー。](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
-> セルフサービス仕入先の Power Apps ポータルを使用している場合は、その仕入先情報は Finance and Operations アプリに直接フローできます。
+> セルフサービス仕入先の Power Apps ポータルを使用している場合は、その仕入先情報は財務と運用アプリに直接フローできます。
 
 ## <a name="templates"></a>テンプレート
 
 仕入先データには、仕入先グループ、住所、連絡先情報、支払プロファイル、請求書プロファイル、およびロイヤルティ ステータスなど、仕入先に関するすべての情報が含まれます。 次の表に示すように、テーブル マップのコレクションは、仕入先データの操作中に連携して動作します。
 
-Finance and Operations アプリ | Customer Engagement アプリ     | 説明
+財務と運用アプリ | Customer Engagement アプリ     | 説明
 ----------------------------|-----------------------------|------------
 [CDS 連絡先 V2](mapping-reference.md#115) | 連絡先 | このテンプレートでは、顧客と仕入先の両方について、基本、二次、三次の連絡先情報がすべて同期されます。
 [名前の接辞](mapping-reference.md#155) | msdyn_nameaffixes | このテンプレートは、顧客および仕入先の名前の接辞に関する参照データを同期します。
@@ -52,7 +52,7 @@ Finance and Operations アプリ | Customer Engagement アプリ     | 説明
 [支払スケジュール行](mapping-reference.md#159) | msdyn_paymentschedulelines | 顧客および仕入先の支払スケジュール明細行に関する参照データを同期します。
 [支払スケジュール](mapping-reference.md#160) | msdyn_paymentschedules | このテンプレートは、顧客および仕入先の支払スケジュールに関する参照データを同期します。
 [支払条件](mapping-reference.md#161) | msdyn_paymentterms | このテンプレートは、顧客および仕入先の支払条件 (支払に関する条件) に関する参照データを同期します。
-[仕入先 V2](mapping-reference.md#202) | msdyn_vendors | 仕入先向けのカスタム ソリューションを使用する企業は、Finance and Operations アプリ統合による Dataverse で導入されている直定の仕入先概念を利用できます。
+[仕入先 V2](mapping-reference.md#202) | msdyn_vendors | 仕入先向けのカスタム ソリューションを使用する企業は、財務と運用アプリ統合の Dataverse により導入されている直定の仕入先概念を利用できます。
 [仕入先グループ](mapping-reference.md#200) | msdyn_vendorgroups | このテンプレートは、仕入先グループ情報を同期します。
 [仕入先支払方法](mapping-reference.md#201) | msdyn_vendorpaymentmethods | このテンプレートは、仕入先支払方法に関する情報を同期します。
 

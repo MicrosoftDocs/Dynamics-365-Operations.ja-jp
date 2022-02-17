@@ -2,7 +2,7 @@
 title: SharePoint からのデータ インポートをコンフィギュレーションする
 description: このトピックでは、Microsoft SharePoint からデータをインポートする方法について説明します。
 author: NickSelin
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6cd717c0c599d68574a5a064761c8d6777418515
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675348"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074769"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>SharePoint からのデータ インポートをコンフィギュレーションする
 
@@ -192,11 +192,11 @@ ms.locfileid: "7675348"
 
 ## <a name=""></a><a name="limitations">制限</a>
 
-ER フレームワークには、データ インポート用に無人モードでモデル マッピングを実行する、新しいバッチ ジョブを開始する機能を用意していません。 これを行うには、構成された ER モデル マッピングをアプリケーション ユーザー インターフェイス (UI) から呼び出して、受信ファイルからデータをインポートできるように、新しいロジックを開発する必要があります。 そのため、多少の技術的な作業が必要となります。 
+Dynamics 365 Finance のバージョン 10.0.25 より前のバージョンでは、ER フレームワークのユーザー インターフェイス (UI) に、データ インポート用に無人モードでモデル マッピングを実行する、新しいバッチ ジョブを開始する機能を用意していません。 代わりに、構成された ER モデル マッピングをアプリケーション UI から呼び出して、受信ファイルからデータをインポートできるように、新しいロジックを開発する必要があります。 このロジックを開発するには、多少の技術的な作業が必要です。 
 
-関連する ER API の詳細については、[Application update 7.3 での ER フレームワーク API の変更](er-apis-app73.md) トピックの [データ インポート用の形式マッピングを実行するためのコード](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) セクションを参照してください。
+関連する ER API の詳細については、[Application update 7.3 での ER フレームワーク API の変更](er-apis-app73.md) の [データ インポート用の形式マッピングを実行するためのコード](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) セクションを参照してください。 `Application Suite` モデルの `BankImport_RU` クラスでコードを確認して、カスタム ロジックを実装する方法を確認します。 `BankImport_RU` クラスは、`RunBaseBatch` クラスを拡張します。 特に、`ERIModelMappingDestinationRun` オブジェクトが ER モデル マッピングのランナーとして作成される `runER()` メソッドを確認します。
 
-`Application Suite` モデルの `BankImport_RU` クラスでコードを確認して、カスタム ロジックを実装する方法を確認します。 このクラスは、`RunBaseBatch` クラスを拡張します。 特に、`ERIModelMappingDestinationRun` オブジェクトが ER モデル マッピングのランナーとして作成される `runER()` メソッドを確認します。
+Finance バージョン 10.0.25 以降では、ER フレームワーク UI に、無人モードでデータ インポート用にモデル マッピングを実行する、新しいバッチ ジョブを開始する機能があります。 このプロセスの詳細については、[手動で選択したファイルからバッチ モードでデータをインポートする](er-configure-data-import-batch.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -205,6 +205,8 @@ ER フレームワークには、データ インポート用に無人モード�
 [Application update 7.3 での ER フレームワーク API の変更](er-apis-app73.md)
 
 [Application update 10.0.23 での ER フレームワーク API の変更](er-apis-app10-0-23.md)
+
+[Application update 10.0.25 での ER フレームワーク API の変更](er-apis-app10-0-25.md)
 
 
 

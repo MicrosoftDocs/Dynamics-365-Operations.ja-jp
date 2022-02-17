@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a01e172f5c62b746f4733e03d25ea43f0247790003ea1a1470bc28e98db12deb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b0260c4d1bafe271a08336ceed7dc3742f1d590
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741408"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061387"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 2020 年 9 月 26 日
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -39,7 +39,7 @@ ms.locfileid: "6741408"
 
 このリリースでは、次の機能が一般に使用可能です:
 
-- **プラットフォーム更新プログラム 10.0.13 が使用できるようになりました**: 更新プログラムの詳細については、[Finance and Operations アプリ バージョン 10.0.13 に対するプラットフォーム更新プログラム (2020 年 10 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md) を参照してください。
+- **プラットフォーム更新プログラム 10.0.13 が使用できるようになりました**: 更新プログラムの詳細については、[財務と運用アプリ バージョン 10.0.13 に対するプラットフォーム更新プログラム (2020 年 10 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

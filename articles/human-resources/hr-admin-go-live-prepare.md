@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 196d843ce3ccacc203896439b8c66f168c75bdc945c9b2cd5f9bdd46a2cc3ddd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff7d689129a4015b6085685f4b19ae61bdd549d2
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744897"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066396"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Human Resources - Go Live の準備
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Dynamics 365 Human Resources プロジェクトにおける go live の準備方法を説明します。 
 

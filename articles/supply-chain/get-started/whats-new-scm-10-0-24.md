@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: d7dd3bbb0d1aa701757ad7fa525aba04fe9419c9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a254e20dd7fcc29ca520282b4bf9fcd903e4de58
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986306"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087553"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Dynamics 365 Supply Chain Management 10.0.24 の新機能および変更された機能 (2022 年 2 月)
 
@@ -34,6 +34,7 @@ ms.locfileid: "7986306"
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |---|---|---|---|
 | 配分済みハイブリッド トポロジ | [スケール ユニットでの倉庫実行ワークロードの拡張](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード](../cloud-edge/cloud-edge-workload-warehousing.md) | 既定で有効になっています。 |
+| 配分済みハイブリッド トポロジ | [クラウドおよびエッジ スケール ユニットに対する倉庫管理ワークロードでの製造オーダーの開始](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-manufacturing-execution-workloads-scale-units) | [クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード](../cloud-edge/cloud-edge-workload-manufacturing.md) | 機能管理 (*クラウドおよびエッジ スケール ユニットに対する倉庫管理ワークロードでの製造オーダーの開始*)  |
 | 計画 | [再発注マージンと発行マージンに対する計画最適化サポート](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [安全マージン](../master-planning/planning-optimization/safety-margins.md) | 既定で有効になっています。 |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
@@ -47,7 +48,6 @@ ms.locfileid: "7986306"
 | 生産管理 | 製造オーダーの材料の在庫状態のオンデマンド チェック | この機能を使用すると、**生産フロアの管理** ワークスペースから使用できる **リリースする製造オーダー** ページをすばやく開くことができます。 この機能がない場合は、ページを開くとすぐに、リストされている製造オーダーすべてに対して資材が使用可能かどうかをシステムが自動的に確認するため、大量の注文がある場合はかなりの時間がかかる場合があります。 この機能を有効にすると、システムはツール バー ボタンを代わりに提供し、選択した注文に対してのみ必要な場合に資材の確認を開始できます。 |
 | 生産管理 | (プレビュー) 生産現場の実行インターフェースで材料消費を登録する (WMS 非対応) | この機能により、作業員は生産フロア実行インターフェイスを使用して材料消費、バッチ番号、およびシリアル番号を登録できます。 この機能では、高度な倉庫プロセス (WMS) を使用できない品目のみをサポートします。 WMS 対応の品目のサポートは、今後のリリースで予定されています。<p>一部のメーカー、特にプロセス業界のメーカーでは、各バッチまたは製造オーダーで消費される材料の量を明示的に登録する必要があります。 たとえば、作業者はスケールを使用して、作業時に消費される材料の量を計量できます。 完全な材料トレーサビリティを確保するために、組織では各製品の生産時に消費されたバッチ番号も登録する必要があります。 |
 | 生産管理 | クラウドおよびエッジ スケール ユニットに対する倉庫管理ワークロードの完了レポート | この機能を使用すると、作業者は、Warehouse Management モバイル アプリを使用して、クラウドまたはエッジ スケール ユニットの倉庫管理ワークロードに対してアプリが実行されている場合に、製造オーダーまたはバッチ オーダーを完了として報告できます。 詳細については、[スケール ユニットでの完了レポートとプットアウェイ レポート](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF) を参照してください。 |
-| 生産管理 | クラウドおよびエッジ スケール ユニットに対する倉庫管理ワークロードでの製造オーダーの開始 | この機能を使用すると、作業者は、Warehouse Management モバイル アプリを使用して、クラウドまたはエッジ スケール ユニットの倉庫管理ワークロードに対してアプリが実行されている場合に、製造オーダーまたはバッチ オーダーを開始できます。 |
 | 倉庫管理 | 新しい積荷計画ワークベンチ ページ | 2 つの新しい積荷計画ワークベンチ ページを有効にします: **入庫積荷計画ワークベンチ** と **出庫積荷計画ワークベンチ**。 |
 
 ## <a name="new-and-updated-documentation-resources"></a>新しいドキュメント リソースおよび更新されたドキュメント リソース
@@ -68,9 +68,9 @@ ms.locfileid: "7986306"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.24 のプラットフォーム更新プログラム (2021 年 11 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.24 のプラットフォーム更新プログラム (2022 年 2 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

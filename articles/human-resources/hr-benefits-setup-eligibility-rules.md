@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 034957628580c468ed00b14afeb7e49af15c45cc
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: e87bef8994fe1eac0089764c8d4f9b18289c13ea
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423474"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069633"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>適格性のルールとオプションのコンフィギュレーション 
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -73,8 +76,8 @@ ms.locfileid: "7423474"
    | **適格なジョブ** | 適格性ルールを満たす職務を指定します。 職務は職位に関連付けられ、職位は従業員に関連付けられます。 |
    | **適格な職務権限** | 適格性ルールを満たす職務権限を指定します。 たとえば、販売員や技術者などです。 |
    | **適格なジョブ タイプ** | 適格性ルールを満たすジョブ タイプ、またはタイプを指定します。 たとえば、事務職または役員などがあります。 |
-   | **適格な法人** | 適格性ルールに有効な法人または法人を指定します。 例: Contoso エンターテインメント システム アメリカなど。 |
-   | **適格な報酬地域** | 適格性ルールを満たす従業員の場所を指定します。 たとえば、中央アメリカなどです。 |
+   | **適格な法人** | 適格性ルールに有効な法人または法人を指定します。 たとえば、Contoso エンターテインメント システム アメリカなどです。 |
+   | **適格報酬地域** | 適格性ルールを満たす従業員の場所を指定します。 たとえば、中央アメリカなどです。 |
    | **適格な職位** | 適格性ルールを満たす職位、または職位を指定します。 たとえば、HR アシスタントや人事管理者などです。 |
    | **適格な職位タイプ** | 適格性ルールを満たす職位タイプ、またはタイプを指定します。 たとえば、フルタイムなどです。 |
    | **適格な状態** | 適格性ルールを満たす国または地域を指定します。 たとえば、米国ノースダコタ州またはカナダのブリティッシュ コロンビア州などです。 |
@@ -229,7 +232,7 @@ ms.locfileid: "7423474"
 
 ## <a name="configure-programs"></a>プログラムを構成する
 
-プログラムは、一連の共通の適格性ルールを共有する給付金プランです。 個々の計画ごとではなく、プログラム全体の適格性ルールを定義できます。 たとえば、Contoso Canada FTE プログラム、または Contoso Europe エグゼクティブ レベルのプログラムなどです。 
+プログラムは、一連の共通の適格性ルールを共有する給付金プランです。 個々の計画ごとではなく、プログラム全体の適格性ルールを定義できます。 たとえば、Contoso Canada FTE プログラムまたは Contoso Europe エグゼクティブ レベルのプログラムなどです。 
 
 1. **給付金管理** ワーク スペースの **設定** で、**適格性ルールおよびオプション** を選択します。
 

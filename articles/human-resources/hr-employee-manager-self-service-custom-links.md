@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1aac3c50cbe40d65abc9bedcdd2a64a6e5a1c1ad
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 1cf4ed8d2373a71594b9b03306c582ed998b6e39
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431187"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071520"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>マネージャー セルフ サービスでカスタム リンクを作成する
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -36,11 +39,11 @@ ms.locfileid: "7431187"
 
 1. **Human Resources パラメーター** で、**マネージャー セルフ サービス** を選択します。
 
-2. **マネージャーのリンクの設定** で、リンクを追加、編集、または削除できます。 また、リンクをグループ化して、マネージャー セルフ サービスのグループに表示することもできます。
+2. **マネージャーのリンクの設定** で、リンクを追加、編集、または削除できます。 また、リンクをグループ化して、**マネージャー セルフ サービス** のグループに表示することもできます。
 
    ![マネージャー セルフサービスでのカスタム リンクの設定。](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. リンクを表示するには、従業員セルフ サービスの **自分のチーム** タブに移動します。
+3. リンクを表示するには、**従業員セルフ サービス** の **自分のチーム** タブに移動します。
 
    ![マネージャー セルフサービスでのカスタム リンクの表示。](./media/hr-employee-manager-self-service-custom-links-view.png)
 

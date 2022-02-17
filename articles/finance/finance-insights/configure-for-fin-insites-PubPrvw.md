@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 8ff20334445fba1db435d7005c4ca9ba18f97f72
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: cea6258d3a99ba33e73acd2508ec7b6c11d15859
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968965"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061757"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Finance Insights の構成 - バージョン 10.0.20 以降
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、組織に強力な予測ツールを提供します。 このトピックでは、Dynamics 365 Finance バージョン 10.0.20 を構成して、Finance Insights で利用可能な機能をシステムで使用する方法について説明します。
 
@@ -38,7 +38,7 @@ Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finan
 
 環境をデプロイするには、これらの手順に従います。
 
-1. Microsoft Dynamics Lifecycle Services (LCS) で、 Finance 環境を作成、または更新します。 この環境では、Finance and Operations アプリのバージョン 10.0.20 以降が必要です。
+1. Microsoft Dynamics Lifecycle Services (LCS) で、 Finance 環境を作成、または更新します。 この環境では、財務と運用アプリのバージョン 10.0.20 以降が必要です。
 2. この環境は、サンドボックスの高可用性 (HA) 環境である必要があります。 (このタイプの環境は、Tier 2 環境とも呼ばれます)。詳細については、[環境の計画](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)を参照してください。
 3. サンドボックス環境で Finance insights を構成している場合は、予測を機能させるには、本番データをその環境にコピーする必要がある場合があります。 予測モデルでは、複数年分のデータを用いて予測値を構築します。 Contoso のデモ データには、予測モデルを適切にトレーニングさせるだけの過去のデータが十分に含まれていません。 
 
@@ -126,7 +126,7 @@ Windows PowerShell スクリプトが用意されているので、[Azure Data L
         - **パフォーマンス** - **標準** を選択することをお勧めします。
         - **アカウントの種類** - 必ず **Storage V2** を選択してください。
 
-    3. **詳細オプション** ダイアログボックスの **Data Lake storage Gen2** オプションで、**階層型名前空間** 機能配下の **有効** を選択します。 この機能を有効にしない場合は、Finance and Operations アプリで書き込んだデータを Power BI データ フローなどのサービスから使用できません。
+    3. **詳細オプション** ダイアログボックスの **Data Lake storage Gen2** オプションで、**階層型名前空間** 機能配下の **有効** を選択します。 この機能を有効にしない場合は、財務と運用アプリで書き込んだデータを Power BI データ フローなどのサービスから使用できません。
     4. **確認して作成** を選択します。 デプロイが完了したら、新しいリソースが Azure ポータルに表示されます。
     5. 作成したストレージ アカウントに移動します。
     6. 左側のメニューで、**アクセス キー** を選択します。

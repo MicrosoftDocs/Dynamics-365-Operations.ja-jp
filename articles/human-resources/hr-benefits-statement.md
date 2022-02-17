@@ -14,14 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 46f7358684502a4bf05854fbcb5cca9a1eb2c87c
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 65bf91faba049b3fed4d80e020d77b82e48cceb6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548058"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068998"
 ---
 # <a name="benefit-statement"></a>給付金明細書
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 **給付金明細書** レポートには、従業員が現在加入している福利厚生の明細を提供します。 このレポートには、従業員が直接、または福利厚生の管理者がアクセスできます。 **給付金明細書** には、従業員に登録されている福利厚生、補充オプション、原価、および登録されている依存依存または受取人の一覧が表示されます。 明細書は、1 人の作業者または複数の作業者に対して印刷できます。
 

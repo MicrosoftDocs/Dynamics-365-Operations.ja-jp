@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 84bcf2ce850de95186c1ffee3bdd152255fc0d5c2832e47ea61918d240bcb1c6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b36354b14faf59aacb4a619dfb6f243335e6a297
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772643"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063521"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 2020 年 10 月 22 日
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -41,7 +41,7 @@ ms.locfileid: "6772643"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| プラットフォーム更新プログラム 10.0.14(38) | -- | [Finance and Operations アプリ のバージョン 10.0.14 のプラットフォーム更新プログラム (2020 年 11 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md) |
+| プラットフォーム更新プログラム 10.0.14(38) | -- | [財務と運用アプリのバージョン 10.0.14 のプラットフォーム更新プログラム (2020 年 11 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md) |
 | 組織および人事管理ワークフロー エクスペリエンスの強化 | [組織および人事管理ワークフロー エクスペリエンスの強化](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [自分のリストに割り当てられた作業項目を配置するコンフィギュレーション オプション](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 
 

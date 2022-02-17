@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413379"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071113"
 ---
 # <a name="integration-with-finance-faq"></a>Finance FAQ との統合
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Dynamics 365 Human Resources が Dynamics 365 Finance に統合される際にどのデータが同期されるかに関連した一般的な質問に回答します。
 
@@ -55,7 +58,7 @@ No. Human Resources アプリケーションのユーザーを編集すると、
 
 財務分析コードは、現在 Dataverse にはなく、結果として既定のテンプレートの一部ではありません。 このエンティティは計画されていますが、現在利用可能なリリース タイムラインはありません。
 
-Finance and Operations で存在しますが、人事管理では存在しないデータに関しては、人事管理 **リンクの構成** を使用して 2 つのシステムを相互にリンクします。
+財務で存在しますが、人事管理では存在しないデータに関しては、人事管理 **リンクの構成** を使用して 2 つのシステムを相互にリンクします。
 
 ![財務分析コードのマップ。](media/MapFinancialDimensions.png)
 
@@ -86,7 +89,7 @@ Finance and Operations で存在しますが、人事管理では存在しない
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>双方向の統合を設定できますか。
 
-いいえ、統合は現在一方向 (Finance and Operations への人事管理) です。 ただし、人事管理から Finance にデータを送信可能な既定のテンプレートがあります。
+いいえ、統合は現在一方向です (Human Resources から Finance and Operations)。 ただし、人事管理から Finance にデータを送信可能な既定のテンプレートがあります。
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>自分の統合の一部として、レコードの削除を許可できますか。
 
@@ -116,7 +119,7 @@ Finance and Operations で存在しますが、人事管理では存在しない
 
 - データ転送がなかったため、転送ソース (Dataverse) で重複レコードの抽出となりました。
 
-- データ転送には、Finance and Operations で必要とされるフィールドの Null 値があります。 Dataverse にあり、Finance and Operations の要件を満たすデータを確認します。
+- データ転送には、Finance and Operations で必要とされるフィールドの null 値があります。 Dataverse にあり、Finance and Operations の要件を満たすデータを確認します。
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>実行エラーがあり従業員 ID が同期しなかった場合、失敗した従業員レコードがある履歴ジョブをどのように見つけますか。
 

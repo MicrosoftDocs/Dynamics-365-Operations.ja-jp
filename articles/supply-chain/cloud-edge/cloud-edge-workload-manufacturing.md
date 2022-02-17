@@ -16,20 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345302"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068847"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード
 
 [!include [banner](../includes/banner.md)]
 
-> [!WARNING]
+> [!IMPORTANT]
 > 製造実行ワークロードは、現時点ではプレビューで使用できます。
+>
 > ワークロード スケール ユニットで使用されている場合は、すべてのビジネス機能がパブリック プレビューで完全にサポートされているわけではありません。
+>
+> 倉庫実行ワークロードがインストールされているスケール ユニットでは、プレビューの製造実行ワークロードを実行できません。
 
 製造実行では、スケール ユニットは以下の機能を提供します。
 
@@ -128,6 +131,22 @@ This section describes how to enable the abilities to report as finished and the
 ### Customize report as finished and putaway functionality
 
  -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>スケール単位での開始操作の有効化と使用
+
+現在のリリースでは、生産オーダーやバッチ オーダーの開始操作は、 [倉庫の実行ワークロード](cloud-edge-workload-warehousing.md) (製造の実行ワークロードではありません) でサポートされています。 したがって、スケールユニットに接続してこの機能を使用するには、次の操作を行う必要があります:
+
+- 倉庫実行ワークロードと製造実行ワークロードの両方をスケール ユニットにインストールします。
+- [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、*クラウドとエッジのスケールユニット機能の倉庫管理ワークロードでの生産注文開始* を有効にします。
+- Warehouse Management モバイル アプリを使用して、製造オーダーまたはバッチ オーダーを開始します。
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>スケール ユニットでの材料消費の有効化と使用
+
+現在のリリースでは、素材の消費量を登録するための Warehouse Management モバイルアプリのフローは、[倉庫の実行ワークロード](cloud-edge-workload-warehousing.md) (製造の実行ワークロードではありません) でサポートされています。 したがって、スケールユニットに接続してこの機能を使用するには、次の操作を行う必要があります:
+
+- 倉庫実行ワークロードと製造実行ワークロードの両方をスケール ユニットにインストールします。
+- [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) の *スケール 単位機能で、モバイル アプリケーションで材料消費の登録する* を有効にします。
+- Warehouse Management のモバイルアプリを使用して、素材の消費量を登録します。
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

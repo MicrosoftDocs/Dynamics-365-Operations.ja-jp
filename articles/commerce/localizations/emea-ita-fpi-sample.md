@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
-ms.openlocfilehash: 592cecff5b6179e7afd1bacb25beda277dfb8fa3
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 02226fd9f2c92db2518ca48baefb680a3d2f0ac1
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944637"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076906"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>イタリア向け会計プリンター統合サンプル
 
@@ -49,7 +49,7 @@ ms.locfileid: "7944637"
     - 明細の割引を印刷します。
     - ギフト カード:
 
-        - 販売の会計レシートから、発行/際チャージされたギフトカードの明細行を除外します。
+        - 販売の会計レシートから、発行/再チャージされたギフトカードの明細行を除外します。
         - ギフト カードを通常の支払い方法として使用する支払いを印刷します。
 
     - 顧客の注文操作に伴う会計の領収書の印刷:
@@ -76,7 +76,7 @@ ms.locfileid: "7944637"
 
 - *ギフトカードの発行* と *ギフトカード* への追加の操作に関連する販売明細行を会計の領収書から除外します。
 - ギフト カードの明細行だけで構成される場合、会計領収書を印刷しません。
-- ギフトカードを発行したり、チャージしたりした場合、その合計金額を会計上の領収書の支払い明細行から差し引きます。
+- ギフトカードを発行したり、再チャージしたりした場合、その合計金額を会計上の領収書の支払い明細行から差し引きます。
 - 対応する会計トランザクションを参照して、支払明細行の計算した調整をチャネル データベースに保存します。
 - ギフト カードによる支払を通常の支払と見なします。
 
@@ -99,7 +99,7 @@ ms.locfileid: "7944637"
 
 ## <a name="set-up-fiscal-integration-for-italy"></a>イタリア向け会計統合を設定する
 
-イタリア向けの会計プリンター統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\EpsonFP90IIISample** フォルダーにあります (例: [リリース/9.33 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)) サンプルは、Commerce Runtime (CRT) の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタで [構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
+イタリア向けの会計プリンター統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\EpsonFP90IIISample** フォルダーにあります (例: [リリース/9.33 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)) サンプルは、Commerce Runtime (CRT) の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタで [構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
 
 > [!WARNING]
 > [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で、Retail SDK の以前のバージョンを使用する必要があります。 詳細については、[イタリア向け会計年度プリンター統合サンプルの展開ガイドライン (レガシ)](emea-ita-fpi-sample-sdk.md)を参照してください。
@@ -303,7 +303,7 @@ ms.locfileid: "7944637"
 
 ## <a name="design-of-extensions"></a>拡張機能の設計
 
-イタリア向けの会計プリンター統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\EpsonFP90IIISample** フォルダーにあります (例: [リリース/9.33 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)) サンプルは、CRT の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタで [構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
+イタリア向けの会計プリンター統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\EpsonFP90IIISample** フォルダーにあります (例: [リリース/9.33 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)) サンプルは、CRT の拡張である会計ドキュメント プロバイダーと、Commerce ハードウェア ステーションの拡張である会計コネクタで [構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
 
 > [!WARNING]
 > [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 LCS の開発者 VM では以前のバージョンの Retail SDK を使用する必要があります。 詳細については、[イタリア向け会計年度プリンター統合サンプルの展開ガイドライン (レガシ)](emea-ita-fpi-sample-sdk.md)を参照してください。 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。

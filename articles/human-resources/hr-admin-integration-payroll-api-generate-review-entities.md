@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a90daf02862b9c6e5415999a491d54d841d8f5f9a236b9cc472112145c50e6d2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1249b29031c3c7b7eb8bcbeee91895d1085b9bd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739277"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066121"
 ---
 # <a name="generate-payroll-entities"></a>給与エンティティの生成
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 この OData 機能を使用して、給与統合に必要なエンティティを生成します。 カスタム フィールドの追加など、Human Resources でこれらのエンティティに変更が加えられた場合は、この関数を再度呼び出して、各エンティティのメタデータを更新できます。 応答には、生成プロセスがいつ完了したかを知るために監視できる操作 ID が含まれています。
 

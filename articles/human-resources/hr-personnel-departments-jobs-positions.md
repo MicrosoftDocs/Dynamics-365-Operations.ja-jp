@@ -2,7 +2,7 @@
 title: 部門、職務、職位を使用した従業員の編成
 description: このトピックでは、人事管理で管理される組織の要素である部門、職務、および職位に関する概念を説明します。
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: 2b4c1efac249b315de25348a104f00a613c32df9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731811"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071551"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>部門、職務、職位を使用した従業員の編成
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -48,34 +51,20 @@ ms.locfileid: "7731811"
 
 ## <a name="jobs-and-positions"></a>職務と職位
 職務とは、職務を遂行する担当者に必要なタスクと職責をまとめたものです。 職位は、職務の個々のインスタンスです。 責任、職務タスク、職務権限、スキル、教育情報、および職務に必要な証明書などの領域は、職務に関連付けられている職位に必要です。
+
 ### <a name="job-tasks"></a>職務
+
 その職務の職位に就く作業者が実行しなければならない基本タスクを表す職務タスクを作成できます。 同じ職務タスクは複数の職務に追加でき、それらの職務を実行する職位はそれらの職務タスクを継承します。 職務タスクの例を次の表に示します。
 
-<table>
-<thead>
-<tr class="header">
-<th>ジョブ</th>
-<th>職務</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>販売マネージャー</td>
-<td><ul>
-<li><span class="input">実績の確認</span> – 各販売担当者の業績を確認します。</li>
-<li><span class="input">ABS 確認</span> – 各販売担当者の登録または休暇要求を承認または否認します。</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>経理担当</td>
-<td><span class="input">FIN レポート</span> - 最高財務責任者に提出する現在の週財務レポート。</td>
-</tr>
-</tbody>
-</table>
+| ジョブ           | 職務                                                |
+|---------------|-------------------------------------------------------------|
+| 販売マネージャー | 実績の確認 – 各販売担当者の業績を確認します。    |
+| 経理担当    | ABS 確認 – 各販売担当者の登録または休暇要求を承認または否認します。 |
 
-### <a name="job-functions"></a>ジョブ機能
 
-職務権限とは、職務タスクなどのことです。 職務権限は、職務に割り当てられた一つ以上のタスク、義務、または職責を表します。 職務権限は職務に割り当てられ、補償プランの適正なルールを策定および導入するのに使用されます。 職務権限の例を次の表に示します。
+### <a name="job-functions"></a>職務機能
+
+職務権限とは、職務タスクなどのことです。 職務権限は、職務に割り当てられた 1 つ以上のタスク、義務、または職責を表します。 職務権限は職務に割り当てられ、補償プランの適正なルールを策定および導入するのに使用されます。 職務権限の例を次の表に示します。
 
 | ジョブ           | 職務権限                                                |
 |---------------|-------------------------------------------------------------|

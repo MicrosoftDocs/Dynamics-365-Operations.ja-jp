@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8e56688aac445b84d5a9c0df289d48ffefd5767f673f2329f69582e820c27820
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738152"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087373"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>倉庫管理による CW 製品の処理
 
@@ -138,7 +138,6 @@ CW 品目の処理ポリシーでは、複数の重量キャプチャ メソッ�
 - バリアントが有効な CW 製品は、バリアント数量単位を変換するための機能と組み合わせて使用することはできません。
 - CW 製品は、商取引の「製品キット」としてマークすることはできません。
 - CW 製品は、CW の材料取り扱い単位を所有し、最下位のシーケンスとして CW 単位を所有する順序グループとのみ使用できます。
-- CW 製品では、変換が 1 以上の名目数量を生成する場合にのみ、在庫単位を CW 単位に変換できます。
 - CW 製品のバーコード設定には、変動重量の設定をサポートしていません。
 
 ### <a name="order-processing"></a>注文処理

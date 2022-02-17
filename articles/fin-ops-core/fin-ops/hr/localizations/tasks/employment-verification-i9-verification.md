@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea77f112413a5b7d5c96768ad46fdb361023bd84
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: b76102111a8506882f2301d76856ae1a34a7c704
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964886"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065684"
 ---
 # <a name="employment-verification-i9-verification"></a>雇用検証 i9 検証
 
 [!include [banner](../../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../../includes/peap-1.md)]
 
 連邦移民改革管理法 (IRCA) により、米国の雇用主は、新しく雇用した従業員の雇用適格性の状態を確認する必要があります。 この手順では、I-9 の検証に必要なドキュメントを記録する手順を説明します。 この手順では、USMF というデモ会社を使用します。
 

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48fef68dc3e5935f0032ca006840202b53d577e06e5376ead0b66eca2a9c36bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 22aa33135535d543eb8fe437821cab7a4865d6df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740842"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060834"
 ---
 # <a name="copy-an-instance"></a>インスタンスのコピー
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 Human Resources データベース をサンドボックス環境にコピーすることができます。 別のサンドボックス環境を使用する場合は、その環境から対象のサンドボックス環境にデータベースをコピーすることもできます。
 
@@ -75,7 +75,7 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 5. **Power Platform** を選択し、 Microsoft Power Platform 管理センターにサインインします。
 
-   ![[Power Platform を選択。](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Power Platform を選択する。](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. コピーをするPower Apps 環境 を選択して、 **コピー** を選択します。
 

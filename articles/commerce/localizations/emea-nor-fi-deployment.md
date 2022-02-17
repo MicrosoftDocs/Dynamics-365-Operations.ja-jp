@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: c7e64dbfe6a300c097b5b3711ac4310f3386df11
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: f0744b18ed59c692ae336c92e488d339ae158368
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944743"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077143"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
@@ -29,7 +29,7 @@ ms.locfileid: "7944743"
 
 ## <a name="set-up-fiscal-registration-for-norway"></a>ノルウェー向け会計登録の設定
 
-ノルウェーの会計登録サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\SequentialSignatureNorway** フォルダにあります (例: [release/9.34 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway)) このサンプルは、Commerce Runtime (CRT) の拡張機能である 会計ドキュメント プロバイダーと会計コネクタで[構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
+ノルウェーの会計登録サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)に基づいており、Retail SDK に含まれています。 サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\SequentialSignatureNorway** フォルダにあります (例: [release/9.34 のサンプル](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway)) このサンプルは、Commerce Runtime (CRT) の拡張機能である 会計ドキュメント プロバイダーと会計コネクタで[構成されています](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services)。 Retail SDK の使用方法の詳細については [Retail SDK のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) と [独立したパッケージ SDK のビルド パイプラインを設定する](../dev-itpro/build-pipeline.md) を参照してください。
 
 [Commerce チャンネルの会計統合を設定する](./setting-up-fiscal-integration-for-retail-channel.md)で説明されている会計登録の設定手順を実行します:
 

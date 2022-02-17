@@ -8,21 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5305ded440dce0cf057e5fbe4df72635ce0e7b6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 68f236ad000adea91e746309564baf84a270a0e5
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964709"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075453"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>申請者およびアプリケーション データの手動入力
 
-[!include [banner](../../includes/banner.md)]
+> [!IMPORTANT]
+> このトピックで説明した機能は、現在 Finance インフラストラクチャの Human Resources の顧客が利用できます。  
+
 
 この手順では、手動で申請者とその申請に関する情報を管理する方法について説明します。 申請者についての個人情報、面接の日時、能力、宿舎施設のリクエストを入力および管理できます。 また、雇用申請者の申請状態を更新し、申請者とやり取りを行う書状や電子メールを作成できます。 申請者レコードを作成すると、その申請者の人物のレコードはグローバル アドレス帳で作成されます。 この手順の作成に使用するデモ データの会社は **USMF** です。
 
