@@ -2,13 +2,16 @@
 title: 製品分析コード
 description: 5 つの製品ディメンション (色、構成、サイズ、スタイル、バージョン) があります。 分析コード グループで製品分析コードを組み合わせて、製品マスターに分析コード グループを割り当てます。 製品分析コードの組み合わせは、製品バリアントの定義方法を決定します。
 author: t-benebo
+manager: tfehr
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920526"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431736"
 ---
 # <a name="product-dimensions"></a>製品分析コード
 
@@ -78,7 +81,7 @@ ms.locfileid: "7920526"
 
 ## <a name="the-version-product-dimension"></a>バージョン製品分析コード
 
-バージョンは、サプライチェーン全体にわたって複数のバージョンの製品を管理および追跡するのに役立つ、製品分析コードです。 バージョン追跡は、製品のライフサイクルを絶えず縮小し、品質と信頼性の要件を高め、製品の安全に重点を置いている製造元が成功するためには不可欠です。
+バージョンは、サプライチェーン全体にわたって複数のバージョンの製品を管理および追跡するのに役立つ、製品分析コードです。 バージョン追跡は、製品のライフサイクルを絶えず縮小し、品質と信頼性の要件を高め、製品の安全に重点を置いているメーカーが成功するために不可欠です。
 
 標準製品分析コードと同様に、バージョンは既存の製品分析コード (サイズ、スタイル、色、構成) と同じように動作します。 したがって、製品バージョンを追跡する以外の目的に使用することができます。
 
@@ -104,7 +107,7 @@ ms.locfileid: "7920526"
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **マップ:** マップが在庫分析コードを使用する場合は、対応するマップへの対応するリレーション マッピングを更新してバージョン分析コードを含める必要があります。 拡張モデルかテーブルの拡張機能で、フィールドに在庫分析コードが含まれているテーブルを参照します。
-1. **Microsoft Dynamics 365 Commerce 機能:** これを有効にすると、Dynamics 365 Supply Chain Management の Commerce 固有のコード全体にバージョン分析コードが表示されます。 ただし、バージョン分析コードはまだ Commerce チャネル データベースや販売時点管理 (POS) や E コマース アプリケーションではサポートされていません。 これらの Commerce 専用アプリケーションは、ユーザーがバージョン分析コードごとに在庫の販売/出荷、または返品/入荷することをサポートしていません。 在庫状況のルックアップ関数では、Commerce アプリのバージョン分析コードで在庫を識別しません。 この動作は、Commerce 全体のコンフィギュレーション分析コードの現在の動作に似ています。
+1. **Microsoft Dynamics 365 Commerce機能:** これを有効にすると、Dynamics 365 Supply Chain Management の Commerce 固有のコード全体にバージョン分析コードが表示されます。 ただし、バージョン分析コードはまだ Commerce チャネル データベースや販売時点管理 (POS) や E コマース アプリケーションではサポートされていません。 これらの Commerce 専用アプリケーションは、ユーザーがバージョン分析コードごとに在庫の販売/出荷、または返品/入荷することをサポートしていません。 在庫状況のルックアップ関数では、Commerce アプリのバージョン分析コードで在庫を識別しません。 この動作は、Commerce 全体のコンフィギュレーション分析コードの現在の動作に似ています。
 
 #### <a name="turn-on-the-version-dimension"></a>バージョン分析コードをオンにする
 
@@ -119,7 +122,7 @@ ms.locfileid: "7920526"
 
 ### <a name="areas-where-the-version-dimension-isnt-supported"></a>バージョン分析コードがサポートされていない領域
 
-次の領域では、バージョン分析コードはサポートされません (これらの領域は引き続き使用できますが、バージョン分析コードが使用されている製品) のバージョンを追加することはできません。 たとえば、仕入先カタログにバージョンが設定された品目を追加できない場合があります。 これは、これらの領域にバージョン分析コードを持つ製品を追加すると、破壊的変更の原因となる可能性があるからです。
+次の領域では、この分析コードの導入によって互換性に影響する変更が行われるため、このバージョン分析コードはサポートされていません。
 
 - 月次原価計算明細書
 - 原価オブジェクト明細書キャッシュ
@@ -143,6 +146,3 @@ ms.locfileid: "7920526"
 
 > [!IMPORTANT]
 > バージョン分析コードを有効にして使用すると、在庫分析コードを参照する一部のソリューションが正常に機能しなくなる可能性があります。 これらの問題を確認して修正するには、影響を受けるソリューションについて独立系ソフトウェアベンダー (ISV) に問い合わせてください。 詳細については、[バージョン分析コードを有効にする](#enable-version-dim) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

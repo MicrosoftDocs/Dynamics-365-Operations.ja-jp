@@ -2,23 +2,26 @@
 title: 壁にプット - 店舗にプット
 description: このトピックでは、壁にプット - 店舗にプット機能について説明します。 この機能を使用すると、コンフィギュレーション可能な基準に基づいて、製品をパッケージ品目のステージング エリアに統合する必要があるシナリオを処理できます。 これにより、単一のターゲット ライセンス プレートへのピッキングが可能となり、クラスター ピッキングよりも多くのプット位置を使用できるようになるので、ピッキング時間を減らすことができます。
 author: Mirzaab
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 372bb556ec1207096a8ff3c7df8bac9b7011b5c4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574140"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432298"
 ---
 # <a name="put-to-wall---put-to-store"></a>壁にプット - 店舗にプット
 
@@ -522,7 +525,7 @@ ms.locfileid: "7574140"
 
 ソート位置を手動で終了する必要がある場合は、アウトバウンド ソーティング テンプレートの **ソート位置の自動終了** オプションを *いいえ* に設定し、ベイのドア エリアに移動する前に決算を実行する必要があります。 位置はさまざまな方法で終了できます。
 
-- 倉庫管理モバイル アプリケーションを介する :
+- 倉庫アプリを介して:
 
     - ユーザーは、その位置に既に存在する品目の 1 つをスキャンして、**閉じる** を選択してその位置を閉じます。
     - ユーザーが既にソートされたコンテナーを含むコンテナーをスキャンすると、エラーメッセージが表示されます。 ただし、この時点では、ユーザーはその位置を引き続き終了できます。
@@ -538,6 +541,3 @@ ms.locfileid: "7574140"
 
 > [!IMPORTANT]
 > ソーティング位置から移動作業が作成された後、その作業をキャンセルしないでください。 それ以外の場合は、その中の位置とコンテナーがシステムから削除され、それ以上の処理に使用できなくなります。 在庫も削除されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

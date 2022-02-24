@@ -1,25 +1,28 @@
 ---
 title: IoT インテリジェンスの監視と管理
 description: このトピックでは、IoT インテリジェンスを監視・管理する方法について説明します。
-author: tonyafehr
+author: robinarh
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8fbd750aa4a316f5e04f3c8622d0847ad9318360
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 15021281b9ec33cd0552bca16e3054d0d3cdd589
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782660"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432214"
 ---
 # <a name="monitor-and-manage-iot-intelligence"></a>IoT インテリジェンスの監視と管理
 
@@ -56,9 +59,6 @@ IoT インテリジェンスが行う処理は、複数の場所から監視で�
 
 工場のマシンの信号をシミュレートすることができます。 詳細については、以下のトピックを参照してください:
 
-+ [IoT DevKit AZ3166 を Azure IoT ハブに接続する](/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
-+ [Raspberry Pi online シミュレーターを Azure IoT ハブ (node.js) に接続する](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
-+ [デバイス シミュレーション ソリューション アクセラレータの概要](/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
++ [IoT DevKit AZ3166 を Azure IoT ハブに接続する](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
++ [Raspberry Pi online シミュレーターを Azure IoT ハブ (node.js) に接続する](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
++ [デバイス シミュレーション ソリューション アクセラレータの概要](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)

@@ -1,32 +1,31 @@
 ---
 title: データ エンティティの列と仮想フィールドを計算する
 description: この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。
-author: jaredha
-ms.date: 10/12/2021
+author: Sunil-Garg
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.custom: 17891
 ms.assetid: 88d230af-7d3d-49b3-bf19-69ecf81ed751
 ms.search.region: Global
-ms.author: jaredha
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a74a4e9c0b93f56d3a4d480e3da6ef23ccf4b374
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 43eb7b809a13e26ed74ee14ebfe7067e754c50c7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065724"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684074"
 ---
 # <a name="computed-columns-and-virtual-fields-in-data-entities"></a>データ エンティティの列と仮想フィールドを計算する
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 この記事では、計算されたフィールドと仮想フィールドに関する情報を提供します。これは、データ エンティティが持つことができる 2 つのタイプのマッピングされていないフィールドです。 この記事には、マップされていないフィールドのプロパティに関する情報と、それらの作成、使用、テストの方法を示す例が含まれています。
 
@@ -55,7 +54,6 @@ ms.locfileid: "8065724"
 - カスタム X++ コードによって制御されます。
 - 読み取り/書き込みは、カスタム X++ コードを通じて発生します。
 - 仮想フィールドは 通常X++ コードを使用して計算される入力値に使用され、計算された列に置き換わることはできません。
-- 仮想フィールドでの検索およびフィルター処理はサポートされていません。
 
 ### <a name="properties-of-unmapped-fields"></a>マップされていないフィールドのプロパティ
 
@@ -104,12 +102,12 @@ ms.locfileid: "8065724"
 2. ソリューション エクスプローラーで、**FMCustomerEntity** ノードを右クリックしてから **開く** をクリックします。
 3. **FMCustomerEntity** のデザイナービューで、 **Fields** ノードを右クリックし、 **New** &gt; **String Unmapped Field** とクリックします。
 
-    [![新しくマップされていない文字列フィールドを作成。](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
+    [![新しくマップされていない文字列フィールドを作成](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
 
 4. 新しいフィールドの名前を **NameAndAddress** に変更します。
 5. 次のスクリーンショットに示すように、マッピングされていない **NameAndAddress** フィールドのプロパティを更新します。
 
-    [![NameAndAddress のマップされていないフィールドのプロパティの更新。](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
+    [![NameAndAddress のマップされていないフィールドのプロパティの更新](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
 
 6. **FMCustomerEntity** &gt; **メソッド** に移動します。 **メソッド** ノードを右クリックし、**新規** をクリックします。 メソッド名が、マップされていない計算されたフィールドの **DataEntityView方法** のプロパティ値と一致していることを、確認します。
 7. 次の X++ コードをメソッドに貼り付けます。 このメソッドは、結合されて書式設定された **NameAndAddress** 値を返します。
@@ -165,7 +163,7 @@ ms.locfileid: "8065724"
 2. マップされていないフィールドのプロパティ ウィンドウで、**名前** プロパティを **FullName** に設定します。
 3. **計算フィールドかどうか** プロパティ **いいえ** に設定します。 **DataEntityView メソッド** が空のままであることを確認します。
 
-    [![マップされていないフィールドのプロパティの設定。](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
+    [![マップされていないフィールドのプロパティの設定](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
 
 4. **FMCustomerEntity** デザイナーで、**メソッド** ノードを右クリックしてから、**オーバーライド &gt; postLoad** とクリックします。 このメソッドの X++ コードは、仮想フィールドの値を生成します。
 5. 次の X++ コードを **postLoad** オーバーライドに貼り付けます。 **postLoad** メソッドが **void** を返すことに注意します。
@@ -240,6 +238,3 @@ ms.locfileid: "8065724"
 計算列の SQL を生成する X++ メソッドが例外をスローした場合、DbSync は例外をキャッチし、**その列の値を `NULL` に設定** して、*警告* を記録します。
 
 開発者は、計算列のメソッドでコンフィギュレーション キーを手動でチェックして、生成に失敗した場合に `NULL` 値がヒットされないようにすることをお勧めします。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

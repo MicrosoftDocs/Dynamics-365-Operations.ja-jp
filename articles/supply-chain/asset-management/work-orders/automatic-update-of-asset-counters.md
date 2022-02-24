@@ -1,10 +1,12 @@
 ---
 title: 資産カウンターの自動更新
 description: このトピックでは、資産管理での資産カウンターの自動更新について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a3814a575fbe4379b59723f269d83379a253ede71962c0c82b5f4cc55d36e6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3e8619439545cf3ea42f84a6dd7ee6ffdf1026e
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738298"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021933"
 ---
 # <a name="automatic-update-of-asset-counters"></a>資産カウンターの自動更新
 
@@ -49,7 +51,7 @@ ms.locfileid: "6738298"
 
     次の図は、**資産カウンターの更新** ダイアログの例を示しています。
 
-    ![図 1。](media/12-work-orders.png)
+    ![図 1](media/12-work-orders.png)
 
 5. **OK** を選択します。 
 
@@ -59,7 +61,7 @@ ms.locfileid: "6738298"
 
 次の図は、**資産の集計値** ページの例を示しています。
 
-![図 2。](media/13-work-orders.png)
+![図 2](media/13-work-orders.png)
 
 次のポイントに注意します。
 
@@ -67,6 +69,3 @@ ms.locfileid: "6738298"
 
 - 別のカウンターに関連するカウンターを設定できます。 この場合、カウンターが更新されると、関連するカウンターが同時に自動的に更新されます。 関連するカウンターの設定方法の詳細については、[カウンター](../setup-for-objects/counters.md) を参照してください。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

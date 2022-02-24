@@ -2,23 +2,26 @@
 title: 取引割引管理
 description: このトピックでは、Dynamics 365 Supply Chain Management の取引割引管理について説明します。
 author: t-benebo
+manager: tfehr
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 15c003109814d9b4dc2857910e69754e5927ec11138d215056be64424998bf00
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771278"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431919"
 ---
 # <a name="trade-allowance-management"></a>取引割引管理
 
@@ -59,7 +62,7 @@ ms.locfileid: "6771278"
 
 取引割引契約に割り当てられる資金は、**資金** ページに記録されます。 **資金** ページを開くには、**販売およびマーケティング** \> **取引割引** \> **資金** \> **資金** の順に選択します。
 
-![資金ページ。](./media/trade-allowance-management-funds-page.png "資金ページ")
+![資金ページ](./media/trade-allowance-management-funds-page.png "資金ページ")
 
 **資金** ページで、プロモーション資金の詳細を表示できます。
 
@@ -75,7 +78,7 @@ ms.locfileid: "6771278"
 
 取引割引契約は **取引割引契約** ページに記録されます。 **取引割引契約** ページを開き、**販売およびマーケティング** \> **取引割引** \> **取引割引契約** の順に選択します。
 
-![取引割引契約のページ。](./media/trade-allowance-management-agreements-page.png "取引割引契約のページ")
+![取引割引契約のページ](./media/trade-allowance-management-agreements-page.png "取引割引契約のページ")
 
 #### <a name="header"></a>表題
 
@@ -103,7 +106,7 @@ ms.locfileid: "6771278"
 
 販売促進イベントを選択し **金額** タブを選択すると、イベントの詳細が検出されます。
 
-![取引割引契約明細行。](./media/trade-allowance-management-agreements-lines.png "取引割引契約明細行")
+![取引割引契約明細行](./media/trade-allowance-management-agreements-lines.png "取引割引契約明細行")
 
 **取引割引明細行** セクションで、報奨を取得するための定義に対して顧客が達成する必要がある数量または金額の範囲を指定します。
 
@@ -171,7 +174,7 @@ ms.locfileid: "6771278"
 
 ## <a name="settle-the-deduction-that-is-due-and-the-customer-short-pay-by-using-the-deduction-workbench"></a>期日控除の決済および控除ワークベンチを使用する顧客の短期支払
 
-多くの場合、払戻計算を見越して、顧客は選択した請求書の短期支払を選択します。 将来の支払調整の問題を防ぐために、A/R 係は実際の顧客支払を記録する際に控除としてそれらの短期支払を登録します。 次に、控除ワークベンチで、それらの顧客控除は会社から支払われる請求金額に対して簡単に決済できます。
+多くの場合、払戻計算を見越して、顧客は選択した請求書の短期支払を選択します。 将来の支払調整の問題を防ぐために、 A/R 係は実際の顧客支払を記録する際に控除としてそれらの短期支払を登録します。 次に、控除ワークベンチで、それらの顧客控除は会社から支払われる請求金額に対して簡単に決済できます。
 
 支払仕訳帳で顧客の短期支払を登録するには、**売掛金勘定** \> **支払** \> **支払仕訳帳** の順に選択し、新しい支払仕訳帳を作成します。 アクション ウィンドウで、**控除** を選択します。 **控除** ページで、短期で支払われた金額を作成および追跡できます。
 
@@ -197,6 +200,3 @@ ms.locfileid: "6771278"
 
 プロモーションに対するさまざまなパフォーマンス測定の分析概要をさらに取得するには、分析ビューを使用できます。 分析ビューに移動するには、**販売およびマーケティング** \> **取引割引** \> **取引割引契約** の順にクリックします。 アクション ウィンドウで、**分析** をクリックします。 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

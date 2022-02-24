@@ -1,27 +1,30 @@
 ---
 title: システム定義およびユーザー定義のテーブル制約
 description: この記事では、製品コンフィギュレーション モデルのコンポーネントの 2 つのタイプのテーブル制約について説明します。ユーザー定義とシステム定義です。 テーブルの制約は、テーブルの各行が設定可能な各属性値の定義を表す許可された属性の組み合わせのマトリックスを表します。
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSystem, PCTableConstraintContentUserDef, PCTableConstraintDefinition, PCTableConstraintWizard
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19781
 ms.assetid: 0a4ea930-b344-43a8-871e-d5cd077892c4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4b484c99bc8f1cc830d4177460ec15a26714a56
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3fb1395859b5abd06539e07ada3d968b2e9c9147
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577387"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431979"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>システム定義およびユーザー定義のテーブル制約
 
@@ -57,12 +60,10 @@ ms.locfileid: "7577387"
 
 テーブルの制約を製品コンフィギュレーション モデルで有効にするには、モデルのコンポーネントの 1 つの制約にテーブルの制約を含める必要があります。 手順としては、新しい制約を作成し、テーブルの制約タイプを選択し、それから使用するテーブルの制約定義を選択します。 最後に、テーブルの制約のすべてのフィールドを、製品コンフィギュレーション モデルの属性にマップする必要があります。
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 [製品コンフィギュレーション モデルの概要](product-configuration-models.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

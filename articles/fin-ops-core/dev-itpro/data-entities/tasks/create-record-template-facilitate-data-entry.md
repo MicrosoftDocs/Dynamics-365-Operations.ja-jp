@@ -2,9 +2,11 @@
 title: データ入力を容易にするレコード テンプレートの作成
 description: このトピックでは、レコード テンプレートの作成して、よく使用されるフィールド値を新しいレコードごとに明示的に入力する必要がないようにする方法を示します。
 author: margoc
+manager: AnnBe
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, SysRecordInfo, SysRecordTemplatePromptOnCreate
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72ffb6458ca3b10415d75fc835677ed2fa03e4197978ab648f2b244248f45058
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68d3c7dd2f042617a7e2fcc8bee05fae6a82bde9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767728"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685220"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>データ入力を容易にするレコード テンプレートの作成
 
@@ -41,6 +43,3 @@ ms.locfileid: "6767728"
 13. **OK** を選択します。
 14. **閉じる** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

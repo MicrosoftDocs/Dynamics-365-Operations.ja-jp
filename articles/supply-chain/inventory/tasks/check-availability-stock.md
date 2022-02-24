@@ -1,24 +1,27 @@
 ---
 title: 有効在庫数の確認
 description: この手順では、特定の品目番号において現物手持在庫を確認する方法を示します。
-author: yufeihuang
+author: ShylaThompson
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand, InventOnhandItem
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c1533dc677c53e90d73077e06a67c71cebc1b7e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 28446e32c8f126e76b13f41f379ecf994a7b7a0d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574620"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432232"
 ---
 # <a name="check-the-availability-of-stock"></a>有効在庫数の確認
 
@@ -57,6 +60,3 @@ ms.locfileid: "7574620"
 5. **OK** をクリックします。
 6. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

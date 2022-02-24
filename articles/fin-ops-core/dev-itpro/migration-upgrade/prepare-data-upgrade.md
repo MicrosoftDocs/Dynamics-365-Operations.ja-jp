@@ -2,9 +2,11 @@
 title: AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
 description: このトピックでは、Finance and Operations へのデータ アップグレードに関連付けられている、Microsoft Dynamics AX 2012 チェックリストの各タスクについて説明します。
 author: jorisdg
+manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 097ba5879d7210702332f0d56dea22782ce534ab70d11ad23314ad6297587759
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 456e574bf5d19d356057b40316b8b7b5b2e7ad41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736248"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683967"
 ---
 # <a name="upgrade-from-ax-2012---pre-upgrade-checklist-for-data-upgrade"></a>AX 2012 からのアップグレード - データ アップグレードのためのアップグレード前のチェックリスト
 
@@ -67,7 +69,7 @@ AX 2012 では、ユーザーはオンプレミスの Active Directory サーバ
        1. **AX からインポート** をクリックします。 グリッドには既存のユーザーが入力されます
        1. 各ユーザーについては、次の図に示すように、対応する Azure AD 電子メール アドレスを入力します。
 
-           ![AX 2012 ユーザーの Azure AD 電子メール アドレス。](media/userInfoEmailMapping.png)
+           ![AX 2012 ユーザーの Azure AD 電子メール アドレス](media/userInfoEmailMapping.png)
 
    - ファイルからユーザーをインポートします。 このオプションは高速です。 多くのユーザーを更新する必要があるときは、このオプションを使用することをお勧めします。
 
@@ -98,6 +100,3 @@ AX 2012 では、ユーザーはオンプレミスの Active Directory サーバ
 - Finance and Operations のデータ アップグレード チェックリストで、**小売 salt データのアーカイブ** をクリックします。
 
 プロセスが正常に行われた場合は、タスクは完了としてマークされています。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

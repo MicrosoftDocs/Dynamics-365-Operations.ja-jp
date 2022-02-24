@@ -1,35 +1,39 @@
 ---
-title: バーコード スキャナーのかんばん転送ボードのサポート
+title: バーコード スキャナー用かんばん転送ボードのサポート
 description: かんばん転送ボードは、かんばん作業を選択、開始、完了、および空にするためのウィジェット バーコード スキャナーのスキャナー入力をサポートします。
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19391
 ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b18aad4dcdbf8c2d18960ae306556c3ea679d622
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1bd6f1bdd847f74cee7d3594d19b72454063c0cb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566814"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432190"
 ---
-# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>バーコード スキャナーのかんばん転送ボードのサポート
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>バーコード スキャナー用かんばん転送ボードのサポート
 
 [!include [banner](../includes/banner.md)]
 
 かんばん転送ボードは、かんばん作業を選択、開始、完了、および空にするためのウィジェット バーコード スキャナーのスキャナー入力をサポートします。
 
-## <a name="registration-modes"></a>登録モード
+<a name="registration-modes"></a>登録モード
+------------------
 
 **スキャナーの登録** クイック タブで登録モードを選択すると、登録モードを選択できます。これは、[かんばんカード番号] フィールドでかんばんカード番号をスキャンまたは手動入力するときのアクションを制御します。
 
@@ -40,10 +44,11 @@ ms.locfileid: "7566814"
 | 空                 | かんばんカードで参照される材料取り扱い単位を空として登録します。              |
 | 選択                | かんばんカード番号を登録すると、自動的にかんばんリストに参照されるジョブが選択されます。 |
 
- 
-## <a name="registration-mode-select"></a>[選択] の登録モード
+ 
+[選択] の登録モード
+------------------------
 
-ジョブを選択するのにバーコードを使用する場合、かんばんボードの表示モードを変更します。 このモードでは、次の要件が適用されます。
+ジョブを選択するのにバーコードを使用する場合、かんばんボードの表示モードを変更します。このモードでは、次の要件が適用されます:
 
 -   スキャンしたかんばん作業のみを表示します。
 -   選択したジョブの詳細は、**詳細** クイック タブに表示されます。
@@ -90,7 +95,7 @@ ms.locfileid: "7566814"
 <td>有</td>
 <td>有</td>
 <td>有</td>
-<td>無</td>
+<td>第        条</td>
 <td>有</td>
 </tr>
 <tr class="even">
@@ -100,61 +105,61 @@ ms.locfileid: "7566814"
 <li>ペギングにされたジョブが [完了] ではない</li>
 </ul></td>
 <td>有</td>
-<td>無</td>
+<td>第        条</td>
 <td>有</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
 </tr>
 <tr class="odd">
 <td>移動</td>
 <td>処理中</td>
 <td>有</td>
-<td>無</td>
+<td>第        条</td>
 <td>有</td>
 <td>有</td>
-<td>無</td>
-<td>無</td>
+<td>第        条</td>
+<td>第        条</td>
 </tr>
 <tr class="even">
 <td>移動</td>
 <td>完了</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
 <td>有</td>
-<td>無</td>
+<td>第        条</td>
 </tr>
 <tr class="odd">
 <td>転送または処理中</td>
 <td>空</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
 </tr>
 <tr class="even">
 <td>転送または処理中</td>
 <td>かんばんカードがない</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
+<td>いいえ</td>
+<td>いいえ</td>
+<td>いいえ</td>
+<td>いいえ</td>
+<td>いいえ</td>
+<td>いいえ</td>
 </tr>
 <tr class="odd">
 <td>転送または処理中</td>
 <td>かんばんカードはあるが、かんばんに割り当てられていない</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
 </tr>
 <tr class="even">
 <td>処理</td>
@@ -163,22 +168,22 @@ ms.locfileid: "7566814"
 <li>準備済</li>
 <li>処理中</li>
 </ul></td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
 </tr>
 <tr class="odd">
 <td>処理</td>
 <td>完了</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
-<td>無</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
+<td>第        条</td>
 </tr>
 </tbody>
 </table>
@@ -187,6 +192,3 @@ ms.locfileid: "7566814"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

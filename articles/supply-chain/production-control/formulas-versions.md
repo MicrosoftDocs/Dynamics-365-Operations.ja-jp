@@ -1,27 +1,30 @@
 ---
 title: フォーミュラとフォーミュラ バージョン
 description: このトピックでは、フォーミュラおよびフォーミュラ バージョンに関する情報を提供します。 フォーミュラは材料、成分、およびプロセス製造での特定プロセスの結果を定義します。 フォーミュラは、プロセス製造で製品を計画および生産するのに使用されます。
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7111811d14aaf0f6c8b814877897884e4cd76f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570276"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431897"
 ---
 # <a name="formulas-and-formula-versions"></a>フォーミュラとフォーミュラ バージョン
 
@@ -68,6 +71,3 @@ BOM とは異なり、1 つの BOM は多くの場合複数の BOM バージョ�
 
 ## <a name="use-step-consumption"></a>ステップ消費の使用
 ステップ消費では、構成材料の **フォーミュラ明細行** タブに数量を入力する必要がありません。 その代わり、ステップ消費は **シリーズの開始** 値と **数量** 値を持つように構成されます。 バッチ オーダーで選択された数量を満たす一連のレコードごとのステップ消費からの情報。 ステップ消費は、消費係数がバッチ オーダーのサイズに関して直線的でない場合、および特定の数量の閾値が満たされない時に条件のみを高める場合に便利です。 新しい式のこの機能を有効にするには、**消費計算** グループの下で、利用できる構成材料の式設定を **標準** から **ステップ** に変更します。 **式明細行** ページの **設定** タブでこの消費方法を指定します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

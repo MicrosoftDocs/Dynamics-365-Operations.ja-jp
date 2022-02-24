@@ -1,29 +1,30 @@
 ---
 title: 在庫管理の概要
 description: このトピックでは、在庫管理の概要を示します。
-author: yufeihuang
+author: ShylaThompson
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "2094"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8dee04677858228b66d64bb0a217206b5557cc30
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ce9d22fa9a3a08b08f65943ba027ace8204d4443
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982667"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431723"
 ---
 # <a name="inventory-management-overview"></a>在庫管理の概要
 
@@ -42,7 +43,7 @@ ms.locfileid: "7982667"
 次の学習マップは、在庫管理モジュールのフレームワークを構成する主要な概念とタスクについて説明します。 次の学習マップをクリックして展開します。 この学習マップは開始に役立ちます。
 
 
-[![在庫学習マップ。](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
+[![在庫学習マップ](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -53,10 +54,7 @@ ms.locfileid: "7982667"
 詳細については、[在庫決算](../cost-management/inventory-close.md) を参照してください。
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>製造および Supply Chain Management のブログ
-[Dynamics AX Manufacturing R&D Team Blog (Dynamics AX 製造研究開発チーム ブログ)](/archive/blogs/axmfg/) および [Supply Chain Management in Dynamics AX R&D Team Blog (Dynamics AX のサプライ チェーン マネジメント研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、在庫管理やその他のソリューションに関する意見、ニュース、その他の情報を見つけることができます。
+[Dynamics AX Manufacturing R&D Team Blog (Dynamics AX 製造研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/axmfg) および [Supply Chain Management in Dynamics AX R&D Team Blog (Dynamics AX のサプライ チェーン マネジメント研究開発チーム ブログ)](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、在庫管理やその他のソリューションに関する意見、ニュース、その他の情報を見つけることができます。
 
 ### <a name="task-guides"></a>タスク ガイド
 追加のヘルプは、タスク ガイドとして使用できます。 タスク ガイドにアクセスするには、ページの **ヘルプ** ボタンをクリックします
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

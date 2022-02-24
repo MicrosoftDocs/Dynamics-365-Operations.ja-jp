@@ -1,25 +1,28 @@
 ---
 title: 運賃の手動調整
 description: この手順では、運賃を手動で調整する方法を示します。
-author: Henrikan
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1342f8b26d3f629c9fe4439761ffc26372dce061
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: fc4fc51955544df4d0156a4c83bcc5b5a0e13df3
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573108"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432337"
 ---
 # <a name="reconcile-freight-manually"></a>運賃の手動調整
 
@@ -58,6 +61,3 @@ ms.locfileid: "7573108"
 5. クリックして [参照仕訳帳番号] フィールドのリンクに従います。
 6. [明細行] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

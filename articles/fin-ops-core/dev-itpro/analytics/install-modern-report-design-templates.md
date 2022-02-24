@@ -1,10 +1,12 @@
 ---
 title: 現代レポートのデザイン テンプレートのインストール
-description: このトピックでは、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。
-author: RichdiMSFT
-ms.date: 10/18/2021
+description: このトピックでは、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。 これらのサンプルを使用すると、ヘッダーとフッターに柔軟なブランドのあるグラフィックの豊富なビジネス ドキュメントを作成することができます。
+author: tjvass
+manager: AnnBe
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PrintMgmtSetupUIMain
 audience: Developer, IT Pro
@@ -12,15 +14,15 @@ ms.reviewer: kfend
 ms.custom: 82783
 ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 970d1a56749ac573b0da0095738cd11b0996cd25
-ms.sourcegitcommit: 2949636d2fd6aea8507e102379cf9b1a188e4529
+ms.openlocfilehash: b74bd55388c7dc9fa05ab28c552ae12493a636ba
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7650937"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685287"
 ---
 # <a name="install-modern-report-design-templates"></a>現代レポートのデザイン テンプレートのインストール
 
@@ -32,7 +34,7 @@ ms.locfileid: "7650937"
 
 アプリケーション スイートの複数の主要なビジネス ドキュメント用のレポート デザインの形式を取る、新しい一連の開発者ツールを利用できます。 これらのレポート デザインは、アプリケーションで取引が生成されたときに、一般向けのドキュメントのヘッダーとフッターに柔軟なブランディングが表示されるように再設計されました。 次の図は、売上請求書の初期設計が最新の売上請求書の設計とどのように異なるかを示しています。
 
-[![初期の売上請求書デザインおよび最新の売上請求書のデザインの例。](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
+[![初期の売上請求書デザインおよび最新の売上請求書のデザインの例](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
 
 インストールの完了後に、組み込みのブランド管理ツールを使用してアプリケーション ビジネス ドキュメントの最新のデザインに適用するブランド設定を定義できます。 ブランド管理ツールは、**組織管理** &gt; **設定** &gt; **ドキュメント ブランド** &gt; **ブランドの詳細** で利用可能です。
 
@@ -63,7 +65,7 @@ ms.locfileid: "7650937"
     ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
     ```
 
-3. **<AOSservicedrive>:\\AOSService\\PackagesLocalDirectory\\bin** フォルダーに移動します。
+3. **J:\\AOSService\\PackagesLocalDirectory\\bin** フォルダーに移動します。
 4. 次のコマンドを実行します。
 
     ```Console
@@ -82,7 +84,7 @@ Application Suite Modern Designs モデルは、Application Suite モデルの�
 2. **Dynamics 365** メニューで、**モデルのビルド** を選択します。
 3. 一覧で、**ApplicationSuite** パッケージのチェック ボックスをオンにします。
 
-    [![Visual Studio の中の完全なビルド ダイアログ ボックス。](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
+    [![Visual Studio の中の完全なビルド ダイアログ ボックス](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
 
     > [!NOTE]
     > アプリケーション スイート最新デザイン モデルがパッケージ定義に含まれていることを確認します。
@@ -115,10 +117,7 @@ Application Suite Modern Designs モデルは、Application Suite モデルの�
 4. **元 &lt; 既定 &gt;** を選択し、既定のドキュメントの工順の変更を開始します。
 5. **レポート形式** リストで、**SalesConfirmModern.Report** を選択して現代レポートのデザイン ソリューションを有効にします。
 
-    [![最新のデザインを選択するために使用される印刷管理の設定ページ。](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
+    [![最新のデザインを選択するために使用される印刷管理の設定ページ](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
 
 6. 別のページを開きます。 このステップでは、保存操作が強制的に実行されます。
 7. アプリケーションで最新のデザインを表示するために販売注文を転記します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,26 +2,29 @@
 title: 品目価格の保管レポートの比較
 description: 比較商品価格の保存レポートを生成し、結果を参照および/またはエクスポートする方法について説明します。
 author: AndersGirke
+manager: tfehr
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, InventItemPriceCompareStorage, InventItemPriceCompareStorageDetailsChart, InventItemPriceCompareStorageDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2020-03-01
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 76a4ba07d191f79b4033fc78acff62d4909c7d32
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 73e43a685f390fd718028de6add0370dfcd6cf3b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566002"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432163"
 ---
 # <a name="compare-item-prices-storage-report"></a>品目価格の保管レポートの比較
 
@@ -118,6 +121,3 @@ ms.locfileid: "7566002"
 1. **実行の概要** ページが開き、エクスポート ジョブの状態とエクスポートされたエンティティの一覧が表示されます。 **エンティティ処理の状態** エリアで一覧表示されている **品目価格の比較** エンティティを選択し、**ファイルのダウンロード** を選び、エンティティからエクスポートされたデータをダウンロードします。
 
 データをエクスポートするためのデータ管理の使用方法については、[データ インポートとエクスポートのジョブ概要](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

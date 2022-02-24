@@ -2,20 +2,26 @@
 title: 二重書き込みのシステム要件
 description: このトピックでは、デュアル書き込みの接続設定についてのシステム要件について説明します。
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 01/14/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 21311
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bb55af679ba90b5bde82f6f524eb235c5373ada
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 34472c31d54cd14639bfc80ecbb0dce8ca3ecd86
+ms.sourcegitcommit: 5264aaec3723c40a219e4d2867afe1ba9cc5f2a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781779"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5153627"
 ---
 # <a name="system-requirements-for-dual-write"></a>二重書き込みのシステム要件
 
@@ -28,11 +34,10 @@ ms.locfileid: "7781779"
 
 二重書き込みには、次の制限があります:
 
-+ データ インテグレータに対して、二重書き込みと [見込み顧客の収益化ソリューション](../../../../supply-chain/sales-marketing/accounts-template-mapping-direct.md) を並行して実行することはできません。 データ インテグレータで見込み顧客の収益化ソリューションを実行している場合は、アンインストールする必要があります。
++ データ インテグレータに対して、二重書き込みと [見込み顧客の収益化ソリューション](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) を並行して実行することはできません。 データ インテグレータで見込み顧客の収益化ソリューションを実行している場合は、アンインストールする必要があります。
 + 二重書き込み設定は、Finance and Operations アプリの試用版インスタンスではサポートされていません。
 + 単一の Finance and Operations アプリ インスタンスおよび単一の Customer Engagement アプリ インスタンスを統合するには、二重書き込みを使用する必要があります。
-+ 二重書き込みには現在、40 の法人を限度とする初期同期があります。
-+ 二重書き込みのライブ同期は現在、250 の法人に制限されています。
++ 二重書き込みでは現在、40 の法人に制限されています。
 + 二重書き込みは、[会社間のデータ共有](../../sysadmin/cross-company-data-sharing.md) をサポートしていません。
 + 二重書き込みでは、Finance and Operations アプリおよび Customer Engagement アプリを、同じ Microsoft Azure Active Directory (Azure AD) テナントに含める必要があります。
 + 二重書き込みでは、Finance and Operations アプリおよび Customer Engagement アプリを、同じ Microsoft Azure データセンター テナントに配置する必要があります。
@@ -44,6 +49,3 @@ ms.locfileid: "7781779"
 ## <a name="one-version"></a>1 つのバージョン
 
 将来的には、二重書き込みソリューションの更新は 1 つのバージョンから利用できるようになります。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

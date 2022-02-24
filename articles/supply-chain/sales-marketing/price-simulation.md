@@ -1,26 +1,29 @@
 ---
 title: 価格のシミュレーション
 description: この記事では、見積の価格シミュレーションについて説明します。 価格シミュレーションを使用すると、見積プロセス中に将来の販売価格に対する控除の影響を評価してから、特定の価格を確約することができます。
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation, SalesQuotationsTableLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14e485d1e02247159e1d9eb1c5d81be37626216
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580507"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4432265"
 ---
 # <a name="price-simulation"></a>価格のシミュレーション
 
@@ -142,6 +145,3 @@ Supply Chain Management の売買契約では、4 タイプの価格割引が扱
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

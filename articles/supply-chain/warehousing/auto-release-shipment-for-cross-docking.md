@@ -1,24 +1,27 @@
 ---
 title: クロスドッキングの自動リリース出荷
 description: このトピックでは、数量が生産出荷の場所から出庫場所に直接移動されるようにするために、需要数量を供給する製造オーダーが完了済として報告されたときに、需要オーダーを倉庫に自動的にリリースできるクロスドッキング戦略について説明します。
-author: Mirzaab
+author: omulvad
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577939"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431762"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>クロスドッキングの自動リリース出荷
 
@@ -161,7 +164,7 @@ ms.locfileid: "7577939"
 8. **製造オーダー** ページのアクション ウィンドウの **製造オーダー** タブの、**プロセス** グループで **見積** を選択してから、**OK** を選択します。 オーダーが見積され、原材料の数量が生産に対して引当されます。
 9. アクション ウィンドウの **製造オーダー** タブの **プロセス** グループで、**リリース** を選択してから、**OK** を選択します。 原材料に対して倉庫ピッキング作業が作成されます。
 10. 作業を開いて確認します。 アクション ウィンドウの **倉庫** タブの、**一般** グループで、**作業詳細** を選択します。 作業 ID をメモします。
-11. 倉庫 51 で作業を実行するには、倉庫管理モバイル アプリを開いてサインインします。
+11. 倉庫 51 で作業を実行するには、倉庫アプリを開いてサインインします。
 12. **生産** \> **生産ピッキング** の順に移動します。
 13. 作業 ID を入力して、原材料ピッキングを開始および完了します。 
 
@@ -176,6 +179,3 @@ ms.locfileid: "7577939"
 - リンクされた販売注文に対して、倉庫にリリースが発生します。
 - リリースに基づいて、出荷とクロスドッキングの作業が作成されます。 この作業では、倉庫オペレーターに対して、販売注文明細行をフルフィルメントするために必要な数量をピッキングし、クロスドッキング場所ディレクティブで指定された出庫場所にプットするように指示します。
 - 製造オーダーの数量が販売注文で要求される数量を超える場合は、通常のプット アウェイ作業が作成されます。 この作業では、場所ディレクティブに従って、クロスドッキング後に残っている完成品の数量をピッキングし、通常の保管場所に移動するよう倉庫オペレーターに指示します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

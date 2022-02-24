@@ -1,14 +1,17 @@
 ---
-title: マスター プランの設定ウィザード (動画を含む)
-description: このトピックでは、マスタ プラン設定ウィザードを実行してマスタ プランを設定する方法について説明します。
-author: ChristianRytt
+title: マスター プランのセットアップ ウィザード
+description: このトピックでは、マスター プランの設定に使用される各種重要な戦略およびパラメーターについて説明します。
+author: t-benebo
+manager: tfehr
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 453184a3fed567b3a09e5e45e7f904bcf855dd6d
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: b38009cbfdd5444c6643c5c0159a1aa475aaa3ac
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937636"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432093"
 ---
-# <a name="master-planning-setup-wizard"></a>マスター プランの設定ウィザード
+# <a name="master-planning-setup-wizard"></a>マスター プランのセットアップ ウィザード
 
 [!include [banner](../includes/banner.md)]
 
@@ -45,13 +48,13 @@ ms.locfileid: "7937636"
 
 計算されるスレッド数が使用可能なスレッド数の 75% を超える場合、各顧客が使用可能なスレッド数の 75% に制限されます。 (使用可能なスレッド数は、各顧客ごとに決定されます。)
 
-詳細については、[スレッド数](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads) を参照してください。
+詳細については、[スレッド数](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads) を参照してください。
 
 ### <a name="bundle-size"></a>バンドル サイズ
 
 バンドル サイズは **1** に設定されます。 この値は、マスター プランのパフォーマンスを改善するのに役立つため、多くの場合、最適な値です。
 
-詳細については、[ヘルパー タスク バンドル内のタスク数](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle) を参照してください。
+詳細については、[ヘルパー タスク バンドル内のタスク数](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle) を参照してください。
 
 ### <a name="firming-bundle-size"></a>バンドル サイズを確定する
 
@@ -64,7 +67,7 @@ ms.locfileid: "7937636"
 
 キャッシュ サイズは、**最大** に設定されます。 この値は、マスター プランのパフォーマンスを改善するのに役立つため、多くの場合、最適な値です。
 
-詳細については、[ジョブ バンドル内のジョブへの時間割り当て](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle) を参照してください。
+詳細については、[ジョブ バンドル内のジョブへの時間割り当て](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle) を参照してください。
 
 ### <a name="manufacturing-setup"></a>製造の設定
 
@@ -88,7 +91,7 @@ ms.locfileid: "7937636"
 - **はい、このマスター プランで定義されています** – **予測計画 (タイム フェンス)** オプションは **はい** に設定されます。 入力した日数が使用され、補充グループで設定された値は上書きされます。
 - **はい、補充グループで定義されています** – **予測計画 (タイム フェンス)** オプションは **いいえ** に設定されます。
 
-詳細については、[ジョブのスケジューリング](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) を参照してください。
+詳細については、[ジョブのスケジューリング](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) を参照してください。
 
 ## <a name="scheduling-options"></a>スケジューリング オプション
 
@@ -99,7 +102,7 @@ ms.locfileid: "7937636"
 - **はい** – ジョブのスケジューリングが使用されます。
 - **いいえ** – 工程のスケジューリングが使用されます。
 
-詳細については、[工程のスケジューリング](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) および [ジョブのスケジューリング](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) を参照してください。
+詳細については、[工程のスケジューリング](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) および [ジョブのスケジューリング](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) を参照してください。
 
 ## <a name="updates-of-demand-and-supply"></a>需要と供給の更新
 
@@ -206,6 +209,3 @@ ms.locfileid: "7937636"
     - **回答:** 「はい、このマスター プランで定義されています。」 **1 日** が入力されます。
 
     Contoso は、店舗からの承認された要求を使用して、それらの店舗を補充するための計画発注書を作成します。 マスター プランは毎日実行されるため、最終日からの要求が計画に含められます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

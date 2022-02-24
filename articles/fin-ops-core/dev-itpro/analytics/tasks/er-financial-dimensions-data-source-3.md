@@ -1,10 +1,12 @@
 ---
 title: ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)
-description: このトピックでは、財務分析コードを ER レポートのデータ ソースとして使用するために、電子申告 (ER) モデルを構成する方法について説明します。 (第 3 部)
+description: 次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c854e9d30006dfa2deed63983a3a6b67f6ae9717
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: a12f88f1e8b5e451bc8a5c5486d820da61bf3ad0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605188"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684790"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)
 
@@ -92,7 +94,7 @@ ms.locfileid: "7605188"
 59. [属性を加える] をクリックします。
 60. [名称] フィールドに説明を入力します。
 61. [OK] をクリックします。
-![形式デザイナー ページ ツリー。](../media/er-financial-dimensions-guides-format1.png)
+![ER Operations デザイナーのページ](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>レポートエレメントをデータソースにマッピングする
 1. [マッピング] タブをクリックします。
@@ -139,10 +141,7 @@ ms.locfileid: "7605188"
 42. ツリーで、「Root: XML Element\Company: XML Attribute」を選択します。
 43. ツリーで、「model: Data model Financial dimensions sample model\Company: String」を選択します。
 44. [バインド] をクリックします。
-45. 保存 をクリックします。
+45. [保存] をクリックします。
 46. ページを閉じます。
-![形式デザイナー ページ (データソースにマッピングされたレポート要素)。](../media/er-financial-dimensions-guides-format2.png)
+![ER Operations デザイナーのページ](../media/er-financial-dimensions-guides-format2.png)
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

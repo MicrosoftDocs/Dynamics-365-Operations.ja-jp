@@ -1,25 +1,27 @@
 ---
 title: タスク シングルのフォーム パターン
-description: この記事では、タスク シングル フォームのパターンに関する情報を提供します。
+description: この記事では、タスク シングル フォームのパターンに関する情報を提供します。 このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 14634
 ms.assetid: 38cb1058-ed69-4ffa-9bfd-4b65cc8d2a49
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d4c8fb4e855ad5b96d18d64bedbde94ae347736
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d0d6be915848d955ce1c7d03f67ef562fed00608
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781140"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685001"
 ---
 # <a name="task-single-form-pattern"></a>タスク シングルのフォーム パターン
 
@@ -27,12 +29,13 @@ ms.locfileid: "7781140"
 
 この記事では、タスク シングル フォームのパターンに関する情報を提供します。 このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。
 
-## <a name="usage"></a>用途
+<a name="usage"></a>用途
+-----
 
 このタイプのフォームは、データが複数のレコードを持つ単一のデータ ソースから発生したとユーザーが認識することを表す場合に使用されました。 新しいフォームの推奨パターンではありません。 このパターンを使用する新しいフォームを作成する必要はありません。 このパターンは、レガシー フォームの構造と安定性を提供し、より現代的なフォーム パターンへの移行パスも提供します。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![タスク シングルのフォームのワイヤーフレーム。](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)
+[![タスク シングルのフォームのワイヤーフレーム](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -96,9 +99,9 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **LedgerJournalTable** 
 
-[![タスク シングルの例 1。](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png) 
+[![タスク シングルの例 1](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png) 
 
-[![タスク シングルの例 2。](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)
+[![タスク シングルの例 2](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -107,11 +110,8 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="open-issues"></a>未処理の問題
 
--   None
+-   なし
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![前のバージョンのビジュアルの例。](./media/tasksingle4.png)](./media/tasksingle4.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[![前のバージョンのビジュアルの例](./media/tasksingle4.png)](./media/tasksingle4.png)

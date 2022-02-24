@@ -2,11 +2,13 @@
 title: 転記されたリース トランザクションの取消
 description: このトピックでは、転記されたリース トランザクションを取り消す方法について説明します。 資産リースで作成されたすべてのトランザクションを取り消すことができます。
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseLeaseTransactions
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f76b75a968e9ee9a3c545f646077c16282b5b185aa88025653f7443fbcfd9581
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e4908ddab2650e5ff7e4a28bf916604d165d08c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770668"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969531"
 ---
 # <a name="reverse-posted-lease-transactions"></a>転記されたリース トランザクションの取消
 
@@ -53,6 +55,3 @@ ms.locfileid: "6770668"
 **追跡の取消** を選択すると、リンクされた追跡番号と一緒に、ダイアログ ボックスに元のトランザクションと取り消されたトランザクションの両方が表示されます。
 
 適切な **スケジュール** ページを使用すると、破棄を追跡することもできます。 **取消** フィールドはクリアですが、**仕訳転記済** フィールドが選択されます。 さらに、**最新の仕訳帳番号** フィールドが破棄トランザクションの仕訳帳番号で更新され、**仕訳帳番号** フィールドが取消仕訳帳番号で更新されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

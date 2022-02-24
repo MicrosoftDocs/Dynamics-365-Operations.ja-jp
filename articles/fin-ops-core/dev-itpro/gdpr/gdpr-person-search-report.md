@@ -2,22 +2,24 @@
 title: 個人検索レポート
 description: このトピックでは、Finance and Operations アプリの個人データ レポートに関する情報を提供します。
 author: rschloma
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 500722839c28855475685243b03e57264cee7575
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3fa93a0927f64717fb2271b13b935c937db0f9a7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781638"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685149"
 ---
 # <a name="person-search-report"></a>個人検索レポート
 
@@ -32,7 +34,7 @@ ms.locfileid: "7781638"
 
 Finance and Operations データに、連絡先、顧客、ユーザー、作業者、またはその他の担当者を追加するとき、通常、その担当者のアドレス帳エントリの作成から開始します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID、および場合によりその他の ロール ID を持ちます。
 
-![アドレス帳の構造。](../../fin-ops/organization-administration/media/address-book-structure.png)
+![アドレス帳の構成](../../fin-ops/organization-administration/media/address-book-structure.png)
 
 時には、入力して説明するのに使用されている情報を確認したり、またはユーザーが正しいことを識別する場合があります。 データを要求したデータ件名と情報を共有すると便利な状況が生じることもあります。 個人検索レポートは、これらの両方のタスクに役立ちます。
 
@@ -75,21 +77,21 @@ LCS からテンプレートをダウンロードすることも、7.1 以降の
 
 1.  システム管理メニューから個人検索リスト ページを開き、新しい検索を作成します。
 
-    ![個人検索リスト ページ。](../media/gdpr-person-search-list-page.png)
+    ![個人の検索リスト ページ](../media/gdpr-person-search-list-page.png)
 
 2.  検索には、ID、名前、アドレスの 3 つのオプションがあります。 必要な検索のタイプを追加します。
 
-    ![検索の定義。](../media/gdpr-define-search.png)
+    ![検索の定義](../media/gdpr-define-search.png)
 
 3.  結果を表示するために検索を実行します。
 
 4.  結果が有効であることを確認します。 レポートに含めたくない情報を返してくる選択を解除します。
 
-    ![検索結果の確認。](../media/gdpr-review-search-results.png)
+    ![検索結果の確認](../media/gdpr-review-search-results.png)
 
 5.  **プロセス レポート** を選択し、担当者検索テンプレートを選択します。
 
-    ![レポートの処理。](../media/gdpr-process-report.png)
+    ![レポートを処理する](../media/gdpr-process-report.png)
 
 6.  **OK** を選択します。 データ パッケージが生成されます。
 
@@ -106,6 +108,3 @@ GDPR の詳細については、[欧州連合の Web サイト](https://europa.e
 
 ### <a name="disclaimer"></a>免責事項
 (c)2019 Microsoft Corporation. All rights reserved. このドキュメントは、"現状のまま" 提供されます。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。 このドキュメントの使用上のリスクは、すべてユーザーが負うものとします。 このドキュメントは、Microsoft の製品に含まれる知的財産に対する法律上の権利をお客様に付与するものではありません。 内部での参照を目的とする場合、このドキュメントをコピーして使用できます。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,27 +1,30 @@
 ---
 title: Supply Chain Management から Field Service へのプロジェクト リストの同期
 description: このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service にプロジェクトを同期させるために使用されるテンプレートと基本的なタスクについて説明します。
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b825e2fce61e96b963ba0d41f8db49ca9ba646f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d80fce409ee92973a6134d96ce839b9722980918
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571596"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431631"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service へのプロジェクト リストの同期
 
@@ -29,7 +32,7 @@ ms.locfileid: "7571596"
 
 このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service にプロジェクトを同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-[![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 次のテンプレートと基本的なタスクは、Supply Chain Management から Field Service にプロジェクトの同期を実行するために使用されます。
@@ -63,7 +66,4 @@ ms.locfileid: "7571596"
 
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>プロジェクト (Supply Chain Management から Field Service): プロジェクト
 
-[![データ統合のテンプレートのマッピング。](./media/FSProject1.png)](./media/FSProject1.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![データ統合のテンプレートのマッピング](./media/FSProject1.png)](./media/FSProject1.png)

@@ -2,24 +2,27 @@
 title: モバイル デバイスで倉庫内の古いバッチの表示をコンフィギュレーション
 description: このトピックでは、作業明細行の現在のロケーションより古いバッチのロケーションのリストを表示するようにモバイル デバイスを設定する方法について説明します
 author: Mirzaab
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d23a259f4c16026ee36f73b427f7d2e610a4b8d938c2e21ec9715d8d2b8137b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b1c9452a811d662976a25993264be0617ac67fe
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727777"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431946"
 ---
 # <a name="configure-display-older-batches-within-warehouse-on-a-mobile-device"></a>モバイル デバイスで倉庫内の古いバッチの表示をコンフィギュレーション
 
@@ -37,6 +40,3 @@ ms.locfileid: "6727777"
 
 - **倉庫管理** > **設定** > **モバイル デバイス** > **モバイル デバイスのメニュー項目** の順に、メニュー項目で **既存の作業の使用** を **はい** に設定し、**最も古いバッチのピッキング** フィールドで **警告** を選択します。 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

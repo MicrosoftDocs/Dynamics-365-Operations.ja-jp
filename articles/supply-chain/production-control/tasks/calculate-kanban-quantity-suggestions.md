@@ -1,24 +1,27 @@
 ---
 title: かんばん数量修正候補の計算
 description: この手順では、かんばん数量計算を使用して、特定のかんばんルールに対してかんばんのサイズおよび数量を最適化することに焦点をあてます。
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18d2a8dd2a8c132873744ba890ca6b1eb1fd34b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: aa6a01d8f918c45aaa454e5234f80c312d7a5061
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570133"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431692"
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a>かんばん数量修正候補の計算
 
@@ -82,6 +85,3 @@ ms.locfileid: "7570133"
     * これは、かんばん数量計算から算出した固定かんばん数量 4 です。  
 5. ListPanel タブをクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

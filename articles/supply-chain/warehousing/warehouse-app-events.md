@@ -2,29 +2,32 @@
 title: 倉庫アプリ イベント
 description: このトピックでは、倉庫アプリ イベントのメッセージをバッチ ジョブの一部として処理するために使用される、倉庫アプリのイベント処理について説明します。
 author: perlynne
+manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1e648b5db9405e749fbd24502f65f344d0549b0f13b48e98c38d1476866db01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 210008c4a1366773f465c59b38eca30f11f0b38c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729989"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431824"
 ---
 # <a name="warehouse-app-event-processing"></a>倉庫アプリのイベント処理
 
 [!include [banner](../includes/banner.md)]
 
-Supply Chain Management で実行されるバッチ ジョブでは、キューのデータを使用して、倉庫管理モバイル アプリによって発行されたイベントを処理し、必要に応じて通知されたイベントに対応することができます。 この機能は、アプリを使用しているユーザーが実行する特定のタイプのアクションに応じて、関連するイベントをキューに追加します。 たとえば、*倉庫アプリから作成および処理される移動オーダー* 機能を使用する場合は、システムで **倉庫アプリのイベント処理** バッチ ジョブを実行しているときに、移動オーダー ヘッダーと明細行がバック エンドで作成および更新されます。
+Supply Chain Management で実行されるバッチ ジョブでは、キューのデータを使用して、倉庫アプリによって発行されたイベントを処理し、必要に応じて通知されたイベントに対応することができます。 この機能は、アプリを使用しているユーザーが実行する特定のタイプのアクションに応じて、関連するイベントをキューに追加します。 たとえば、**倉庫アプリから作成および処理される移動オーダー** 機能を使用する場合は、システムで **倉庫アプリのイベント処理** バッチ ジョブを実行しているときに、移動オーダー ヘッダーと明細行がバック エンドで作成および更新されます。
 
 ## <a name="enable-the-process-warehouse-app-events-feature"></a>倉庫アプリのイベント処理機能を有効にする
 
@@ -48,7 +51,7 @@ Supply Chain Management で実行されるバッチ ジョブでは、キュー�
 
 ## <a name="query-warehouse-app-events"></a>倉庫アプリ イベントのクエリ
 
-倉庫管理アプリによって生成されたイベント キューとイベント メッセージを表示するには、**倉庫管理 \> 照会およびレポート \> モバイル デバイスのログ \> 倉庫アプリのイベント** の順に移動します。
+倉庫アプリによって生成されたイベント キューとイベント メッセージを表示するには、**倉庫管理 \> 照会およびレポート \> モバイル デバイスのログ \> 倉庫アプリのイベント** の順に移動します。
 
 ## <a name="the-standard-event-queue-process"></a>標準のイベント キュー プロセス
 
@@ -75,6 +78,3 @@ Supply Chain Management で実行されるバッチ ジョブでは、キュー�
 1. 該当するすべてのメッセージがリセットされるまで作業を続行します。
 
 また、**倉庫アプリ イベントのメッセージ** ツールバーの **削除** オプションを使用して、**失敗** したイベント メッセージを削除することもできます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

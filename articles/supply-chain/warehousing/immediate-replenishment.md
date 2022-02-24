@@ -2,25 +2,28 @@
 title: 即時補充
 description: このトピックでは、場所のディレクティブが在庫の配賦に失敗したときに、在庫を補充するため、即時補充を使用する方法について説明します。
 author: Mirzaab
+manager: tfehr
 ms.date: 03/15/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 15a3cc4c50e49a50c354834761425cd107c23a9d79677e022cb1d339bb48c918
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741935"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432355"
 ---
 # <a name="immediate-replenishment"></a>即時補充
 
@@ -54,6 +57,3 @@ ms.locfileid: "6741935"
 
 - 適用される要求補充テンプレートが、正しい場所テンプレートを使用し、**補充** タイプの作業テンプレートに設定されているかどうかを確認します。
 - 要求補充テンプレートが補充の手持在庫を検索する場所で、十分な手持在庫があることを確認します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

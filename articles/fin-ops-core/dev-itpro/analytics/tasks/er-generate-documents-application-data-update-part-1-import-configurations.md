@@ -2,9 +2,11 @@
 title: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのインポート
 description: この手順に記載のステップを完了するには、まず 「ER 構成プロバイダを作成し、アクティブとしてマークする」 に記載の手順を完了する必要があります。
 author: NickSelin
+manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f919d953c3aa0c8d16366167a12e52d35f32cdf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727488"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684622"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのインポート
 
@@ -73,6 +75,3 @@ ms.locfileid: "6727488"
     * イントラスタット レポートを生成するために使用されている形式の構造を確認します。 ルート項目「送信ドキュメント用」に基づいたデータ モデルからデータを入力して XMLフ ァイルを生成するように設計されています。 生成されたファイルの名前が、ユーザー ダイアログ フォームで定義されていることを確認します（そのために「fn」データソースが使用されます）。   
 30. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

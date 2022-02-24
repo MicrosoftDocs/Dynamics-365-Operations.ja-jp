@@ -1,25 +1,27 @@
 ---
 title: 国または地域固有の規制機能に関わる通知を送信
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Localization および Translation service を通じて警告を送信する方法について説明します。
-author: JaneA07
-ms.date: 12/14/2021
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Localization および Translation service を通じて警告を送信する方法について説明します。 このトピックは、計画およびリリースされた規制機能を、LCS 問題検索を使用して追跡する方法についても説明します。
+author: ShylaThompson
+manager: AnnBe
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.custom: 27791
 ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
 ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76eaacb6ad0658bf20e6e90443e7443133f6bc15
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: f0604f4b6edd5fbe111b9254abcbeea8b0e80d33
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922322"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685027"
 ---
 # <a name="submit-alerts-about-countryregion-specific-regulatory-features"></a>国または地域固有の規制機能に関わる通知を送信
 
@@ -27,11 +29,10 @@ ms.locfileid: "7922322"
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics 規制警告送信サービスを通じて警告を送信する方法について説明します。 このトピックは、計画およびリリースされた規制機能を、LCS 問題検索を使用して追跡する方法についても説明します。 
 
-## <a name="accessing-the-regulatory-alert-submission-service"></a>規制の警告の送信サービスへのアクセス
+<a name="accessing-the-regulatory-alert-submission-service"></a>規制の警告の送信サービスへのアクセス
+-------------------------------------------------
 
-Dynamics Lifecycle Services (LCS) において自身のまたは招待されたプロジェクトで規制警告送信サービスにアクセスするには、次のいずれかの操作を実行します。
-- メニュー項目から **警告サービス** を選択します。
-- ページの右側にスクロールし、**その他のツール** で **警告サービス** を選択します。 
+Dynamics Lifecycle Services (LCS) のプロジェクトで、ページの右側までスクロールしてから、**追加ツール** の **警告サービス** タイルをクリックします。 
 
 **Dynamics 規制の警告の送信** ページが表示されます。 このページを使用すると、個人または組織が以前に提出したすべての警告を表示できます。
 
@@ -39,6 +40,7 @@ Dynamics Lifecycle Services (LCS) において自身のまたは招待された�
 新しい規制アラートを入力するには、**Dynamics 規制アラートの送信** ページの上部にあるプラス記号 (**+**) をクリックします。 **送信を警告** ウィザードが起動します。 このウィザードでは次のタスクを完了することができます。
 
 - 既存の規制項目を検索します。
+- 業務プロセスを関連付けます。
 - 警告の説明をします。
 - 送信を確認します。
 
@@ -48,6 +50,13 @@ Dynamics Lifecycle Services (LCS) において自身のまたは招待された�
 
 1.  キーワード、国/地域、 Microsoft Knowledge Base (KB) 番号または Application Object Tree (AOT) オブジェクトなどの検索用語を入力します。 検索ボタンをクリックします。 製品問題または規制機能のいずれかに、検索用語を含むすべての項目が検索結果に表示されます。 使用可能なフィルターを使用して、検索を絞ることができます。
 2.  ユーザーが探している規制における機能がない場合は、ブラウザー ウィンドウの下部にある **規制に関する警告を送信** をクリックし、規制に関する警告を送信します。 
+
+### <a name="attach-business-processes"></a>業務プロセスの関連付け
+
+1.  **グローバル業務プロセス ライブラリ** リストで、業務プロセス ライブラリを選択できます。
+2.  検索語句に関連する業務プロセスを見つける検索基準を入力します。 これらのビジネス プロセスは黄色で強調表示されます。
+3.  ページの右側にある一覧で、1 つまたは複数の関連する業務プロセスを選択し、左側のフィールドまでドラッグします。 完了後、選択した業務プロセスをクリアすることでさらに編集することができます。
+4.  警告に選択した業務プロセスを追加します。 
 
 ### <a name="describe-the-alert"></a>警告の説明
 
@@ -98,7 +107,7 @@ Dynamics Lifecycle Services (LCS) において自身のまたは招待された�
                 <p>機能リファレンス</p>
                 </td>
                 <td>
-                <p>分かっている場合は、機能リファレンスを入力します。</p>
+                <p>分かっている場合は、機能リファレンスを入力します。 特定の国の機能一覧は、ローカライズ ポータルで確認できます: <a href="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC" data-raw-source="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC">https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC</a>。 </p>
                 </td>
             </tr>
             <tr>
@@ -199,6 +208,3 @@ LCS で問題検索を使用して計画済みおよびリリース済みの規�
 -   **製品** - 興味のある製品と製品のバージョンを選択します。
 -   **ステータス** - 特定のステータスを選択してください。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

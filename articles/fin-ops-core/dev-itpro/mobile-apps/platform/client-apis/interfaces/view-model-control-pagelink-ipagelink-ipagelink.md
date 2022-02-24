@@ -1,18 +1,25 @@
 ---
 title: PageLink タイプ
 description: Pagelink コントロール タイプ。 ページリンクは、別のページに移動するコントロールです。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 2ec13f9778cee631d6fe5d2f678533688f8ab081
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: b750ac72a13682f51a4696737c6ce3d55c963398
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781152"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685421"
 ---
 # <a name="pagelink-type"></a>PageLink タイプ
 
@@ -222,6 +229,3 @@ showCount(): boolean
 
 #### <a name="returns-boolean"></a>ブール値を返します
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

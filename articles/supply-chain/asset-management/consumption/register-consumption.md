@@ -1,10 +1,12 @@
 ---
 title: 消費の登録
 description: このトピックでは、資産管理で消費を登録する方法について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 619da584ea37e80b1803ae5983e52e8ee4053f3751a8df75a8f5bc1ddf7e65d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea1522f8a8e4867d8d70fea59b493d139a1b01ef
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765588"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020784"
 ---
 # <a name="register-consumption"></a>消費の登録
 
@@ -54,7 +56,7 @@ ms.locfileid: "6765588"
 
 次のスクリーンショットは、**ワーク オーダー仕訳帳** のワーク オーダーにおける時間と品目の登録の例を示しています。
 
-![図 1。](media/01-consumption.png)
+![図 1](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>複数のワーク オーダー ジョブを含むワーク オーダーの時間分割
@@ -73,13 +75,13 @@ ms.locfileid: "6765588"
 
 6. **時間** フィールドに、分割する作業時間を挿入します。
 
-    ![図 2。](media/02-consumption.png)
+    ![図 2](media/02-consumption.png)
 
 7. **OK** をクリックします。
 
 *例 :* 下のスクリーンショットには、3 つのワーク オーダー ジョブを含むワーク オーダーの仕訳帳明細行が表示されます。 3 つの作業時間を含む最初の明細行が分割され、各ワーク オーダー ジョブに 1 つの作業時間が登録されます。 3 つの時間登録明細行を作成した後で、元の時間登録明細行 (例の最初の明細行) をどうするか決定します。 そのままにすることも、削除することもできます。 
 
-![図 3。](media/03-consumption.png)
+![図 3](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>消費登録の財務分析コード
 
@@ -92,6 +94,3 @@ ms.locfileid: "6765588"
 >[!NOTE]
 >3 つの登録タイプすべてについて、財務分析コードの組み合わせが検証され、無効な組み合わせは空白になります。 これは、他の Finance and Operations アプリの標準的な設定です。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

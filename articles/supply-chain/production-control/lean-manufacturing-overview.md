@@ -1,29 +1,30 @@
 ---
 title: リーン生産の概要
 description: この記事では、Dynamics 365 Supply Chain Management のリーン生産の機能の概要と説明を提供します。
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "19371"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c8b5ec4d4a391773e32a61a321c28868678baa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 63a9856035088642254fd43d14cb324a89bc19d6
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985939"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432309"
 ---
 # <a name="lean-manufacturing-overview"></a>リーン生産の概要
 
@@ -50,7 +51,7 @@ lean manufacturing の土台を作成するには、生産および物流プロ�
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a>かんばんを使用した要望要求のシグナル
 プル システムでは商品が必要な場合にのみ商品が作成されます。 このプラクティスにより、出荷のリード タイムと過剰な在庫が減少します。 かんばんを使用して、生産フローに基づいく条件を計画、追跡およびプロセス処理できます。 かんばんフレームワークを作成するには、かんばんを作成する時間、および要求が満たされる方法を定義するかんばんルールを作成します。 かんばんルールは 2 種類作成できます。 製造ルールはプロセスかんばん作業を作成し、および撤回かんばんルールは転送かんばん作業を作成します。 次の補充戦略を設定できます。
--   **固定数量** かんばんルールは材料取り扱い単位の固定数に関連付けられるため、有効なかんばん数に比例することを意味します。 かんばんのすべての製品が消費され、材料取り扱い単位を手動で空白にする場合は、同じタイプの新しいかんばんが作成されます。 固定数量かんばんルールを作成する際に、最適なかんばん数量および使用された製品の量を計算できます。 計算は、予測、オープン注文の実需、品目を補充するリード タイム、および履歴需要を考慮します。
+-   **固定数量** かんばんルールは材料取り扱い単位の固定数に関連付けられるため、有効なかんばん数に比例することを意味します。 かんばんのすべての製品が消費され、材料取り扱い単位を手動で空白にする場合は、同じタイプの新しいかんばんが作成されます。固定数量かんばんルールを作成する際に、最適なかんばん数量および使用された製品の量を計算できます。 計算は、予測、オープン注文の実需、品目を補充するリード タイム、および履歴需要を考慮します。
 -   **スケジュール済** かんばんルールは、マスター プランによって計算される要求を補充します。 マスター プランによって、かんばんに確定する計画かんばんが生成されます。
 -   **イベント** かんばんルールにより、販売注文明細行、生産の BOM 明細行、かんばん明細行または最小在庫設定により生じる必要量を補充します。 イベントかんばんが生成されると、それらはソース要件に固定されます。
 
@@ -66,7 +67,7 @@ Lean manufacturing は、かんばんルールで管理される製造および�
 次の一覧は、特殊化したかんばんボードを示しています。
 -   かんばん作業のスケジューリング – かんばん作業の概要を提供します。 ボードにはかんばん作業と 1 つまたは複数の作業セルのステータスが表示されます。 ジョブは生産フロー モデルで定義された計画期間 (日または週) に基づいて一覧表示されます。 ボードには、スケジュールされた負荷を監視できるように、各計画期間の能力消費も表示されます。 かんばん作業の状態を変更したり、異なる計画期間にかんばん作業を再スケジューリングしたり、他のタスクを実行できます。
 -   配送ジョブのかんばんボード – このボードでは、現在の配送ジョブの概要を提供します。 ピッキング リストの更新および登録、配送ジョブの開始および完了、および他のタスクを実行できます。
--   プロセス ジョブのかんばんボード – このボードは通常生産フローをサポートし、1 つまたは複数の作業セルに現在のステータスの概要を示すように設計されています。 このボードからかんばんは優先順位付け、ピッキング、または製造ができます。 ボードは、かんばんのレポートのためのバーコード スキャンをサポートするように設計されています。
+-   プロセス ジョブのかんばんボード – このボードは通常生産フローをサポートし、1 つまたは複数の作業セルに現在のステータスの概要を示すように設計されています。 このボードからかんばんは優先順位付け、ピッキング、または製造ができます。 かんばんボードには、かんばんをレポートするためのバーコードのスキャンをサポートするように設計されています。
 
 ## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>かんばん作業および Supply Chain Management プロセスとの統合
 かんばん作業は Supply Chain Management の在庫トランザクションのための現在のプロセスと完全に統合されます。
@@ -82,6 +83,3 @@ Lean manufacturing は、かんばんルールで管理される製造および�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

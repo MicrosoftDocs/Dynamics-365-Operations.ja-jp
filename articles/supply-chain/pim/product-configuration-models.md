@@ -1,28 +1,29 @@
 ---
 title: 製品コンフィギュレーション モデルの概要
 description: この記事では、製品コンフィギュレーション モデルに関連する用語と概念を定義します。 製品コンフィギュレーション モデルを使用すると、単一の製品に多数の製品バリアントをコンフィギュレーションするのに使用できるノーブランド商品の構造を構築することができます。
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "4031"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 4031
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fddad1fffd61ef0cf78977721bdf2da51aa4c682
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 87d61203d36722194b98a247609fa126b71b846c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984649"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431735"
 ---
 # <a name="product-configuration-models-overview"></a>製品コンフィギュレーション モデルの概要
 
@@ -152,6 +153,3 @@ ms.locfileid: "7984649"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

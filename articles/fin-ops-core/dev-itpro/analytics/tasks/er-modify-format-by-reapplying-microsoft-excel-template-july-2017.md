@@ -2,9 +2,11 @@
 title: Excel テンプレートの再適用による形式の変更
 description: この手順にあるステップを完了するには、まず「ER - OPENXML 形式でレポートを生成するコンフィギュレーションの設計」の手順を完了する必要があります。
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e66a2e24d3b1e77d5c790d2f3b7cfdce98fc4cca6e3734ad8b87ac7714192853
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c5b1bc5f227a0944c513dee2c12a5042decde872
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749659"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684238"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Excel テンプレートの再適用による形式の変更
 
@@ -81,6 +83,3 @@ ms.locfileid: "6749659"
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>支払仕訳処理に ER 形式の変更されたドラフト バージョンを使用する
 
 支払日という支払い明細行の新しい詳細を含む、作成したワークシートを確認します。  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,32 +1,34 @@
 ---
 title: グローバリゼーション リソース
 description: このトピックでは、国/地域固有の機能および提供内容について詳しく説明しているリソースの一覧を示します。
-author: kfend
-ms.date: 02/19/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747518"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685056"
 ---
 # <a name="globalization-resources"></a>グローバリゼーション リソース
 
 ## <a name="local-and-regional-deployments"></a>ローカルおよび地域での展開
 政府規制によって、他の国/地域とは異なる方法で、データを保管またはサービスを提供することが要求される場合は、展開する際に考慮する必要がある国/地域固有の要件が存在する可能性があります。 関連する可能性のある次のリソースを検討してください。
 
-[中国で 21Vianet が運用する Finance and Operations アプリ](../deployment/china-local-deployment.md)
+[中国で 21Vianet が運用している Finance and Operations アプリ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>ローカライズと規制の機能
 
@@ -53,6 +55,7 @@ Finance and Operations アプリには、[製品のローカライズおよび�
 
 #### <a name="regulatory-updates"></a>規制の更新
 -   [規制の更新](../../../finance/localizations/regulatory-updates.md)
+-   [ローカライズ ポータル](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (毎週更新)
 -   [Lifecycle Services (LCS) の問題検索](../lifecycle-services/issue-search-lcs.md) (毎日更新)
 
 #### <a name="communication-and-alerts"></a>コミュニケーションと警告
@@ -60,7 +63,7 @@ Finance and Operations アプリには、[製品のローカライズおよび�
 -   [国または地域固有の規制機能に関わる通知を送信](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365 リリース計画
-[Dynamics 365 リリース計画](/business-applications-release-notes/) では、Dynamics 365 のビジネス アプリケーションとアプリケーション プラットフォームに対して予定されている新機能と拡張機能について説明します。 
+[Dynamics 365 リリース計画](https://docs.microsoft.com/business-applications-release-notes/) では、Dynamics 365 のビジネス アプリケーションとアプリケーション プラットフォームに対して予定されている新機能と拡張機能について説明します。 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations アプリの新機能
 [Finance and Operations ホームページの新機能と更新](../../fin-ops/get-started/whats-new-changed.md) は Finance and Operations アプリの特定のリリースが含む機能を一覧で示します。
@@ -130,6 +133,3 @@ Finance and Operations アプリには、[製品のローカライズおよび�
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

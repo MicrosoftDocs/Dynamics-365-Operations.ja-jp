@@ -1,30 +1,33 @@
 ---
-title: 倉庫管理モバイル アプリで受信するライセンス プレート
-description: このトピックでは、現物在庫を受け取るためにライセンス プレート入庫プロセスの使用をサポートするように倉庫管理モバイル アプリを設定する方法について説明します。
+title: 倉庫アプリを介したライセンス プレート受取
+description: このトピックでは、ライセンス プレート受取プロセスを使用して現物在庫の受け取りのサポートをするように倉庫アプリを設定する方法について説明します。
 author: perlynne
+manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777605"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432346"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリで受信するライセンス プレート
+# <a name="license-plate-receiving-via-the-warehouse-app"></a>倉庫アプリを介したライセンス プレート受取
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、現物在庫の受け取りにライセンス プレート入庫プロセスを使用できるように倉庫管理モバイル アプリを設定する方法について説明します。
+このトピックでは、ライセンス プレート受取プロセスを使用して、現物在庫の受け取ることができるように倉庫アプリを設定する方法について説明します。
 
 この機能を使用すると、事前出荷明細通知 (ASN) に関連する入庫在庫の受け取りを簡単に記録できます。 倉庫管理プロセスを使用して移動オーダーを出荷すると、システムは ASN を自動的に作成します。 発注書プロセスでは、ASN は手動で記録することも、入荷 ASN データ エンティティ プロセスを使用して自動的にインポートすることもできます。
 
@@ -77,7 +80,7 @@ ASN データは、*梱包構造* を使用して、積荷と出荷にリンク�
 - **詳細な概要の表示** – ライセンス プレートの受け取り中に、作業者は、完全な ASN 情報を示す追加のページが表示されます。
 - **概要のスキップ** – 作業者は完全な ASN 情報を参照することはできません。 倉庫作業者は、入庫プロセス中に廃棄コードを設定したり、例外を追加したりすることもできなくなります。
 
-この機能をシステムで使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *モバイル デバイス上で入荷概要ページを表示するかどうかを制御する* をオンにする必要があります。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
+この機能をシステムで使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *モバイル デバイス上で入荷概要ページを表示するかどうかを制御する* をオンにする必要があります。
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>移動オーダー出荷済ライセンス プレートを出荷先倉庫以外の倉庫で使用されないようにする
 
@@ -102,6 +105,3 @@ ASN データは、*梱包構造* を使用して、積荷と出荷にリンク�
 *完了レポート* の製造シナリオに関する詳細情報は、[倉庫作業ポリシーの概要](warehouse-work-policies.md) を参照してください。
 
 入庫積荷管理に関する詳細情報については、[発注書に対する入庫積荷の倉庫処理](inbound-load-handling.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

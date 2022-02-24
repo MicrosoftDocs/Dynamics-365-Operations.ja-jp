@@ -1,24 +1,27 @@
 ---
 title: サービス エンドポイント 概要
 description: このトピックでは、使用できるサービス エンドポイントについて説明します。
-author: peakerbl
+author: Sunil-Garg
+manager: AnnBe
 ms.date: 06/22/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
+ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa4ab63934190e544e65bae30a7b2958a8047810
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5f76298d621e3d74dfbf1ad85b43b4e2b97fe27e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986081"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685235"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
@@ -31,7 +34,7 @@ ms.locfileid: "7986081"
 
 | サービス エンドポイント            | AX 2012 | Finance and Operations         |
 |-----------------------------|---------|--------------------------------|
-| ドキュメント サービス (AXDs)    | 有     | いいえ – データ エンティティに置き換えられます |
+| ドキュメント サービス (AXDs)    | はい     | いいえ – データ エンティティに置き換えられます |
 | SOAP ベースのメタデータ サービス | 有     | いいえ – REST メタデータに置き換えられます |
 | SOAP ベースのクエリ サービス    | 有     | いいえ – OData に置き換えられます         |
 | OData クエリ サービス         | 有     | いいえ – OData に置き換えられます         |
@@ -48,7 +51,7 @@ ms.locfileid: "7986081"
 ## <a name="authentication"></a>認証
 OData サービス、JSON ベース カスタム サービス、および REST メタデータ サービスは、標準の OAuth 2.0 認証をサポートします。
 
-現在のところ、[承認コード付与フロー](/previous-versions/azure/dn645542(v=azure.100))と[クライアントの資格情報 (共有シークレットまたは証明書) を使用したサービス間の呼び出し](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)の両方をサポートしています。
+現在のところ、[承認コード付与フロー](https://msdn.microsoft.com/library/azure/dn645542.aspx)と[クライアントの資格情報 (共有シークレットまたは証明書) を使用したサービス間の呼び出し](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)の両方をサポートしています。
 
 Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケーションがサポートされています。
 
@@ -57,16 +60,16 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 詳細については、以下を参照してください。
 
-- [OAuth 2.0 および Azure Active Directory を使用して web アプリケーションへのアクセスを許可する](/previous-versions/azure/dn645545(v=azure.100))
+- [OAuth 2.0 および Azure Active Directory を使用して web アプリケーションへのアクセスを許可する](https://msdn.microsoft.com/library/azure/dn645545.aspx)
 - [サービス認証問題のトラブルシューティング](troubleshoot-service-authentication.md)
 
 次の図は、認証コードの付与フローに対して認証を設定する方法について説明します。
 
-![認証コードの付与フロー。](./media/services-authentication.png)
+![認証コードの付与フロー](./media/services-authentication.png)
 
 以下の図では、クライアントの資格情報 (共有秘密または証明書) を使用したサービス間の呼び出し承認の仕組みを説明します。
 
-![クライアントの資格情報を使用したサービス間呼び出し。](./media/S2SAuth.jpg)
+![クライアントの資格情報を使用したサービス間呼び出し](./media/S2SAuth.jpg)
 
 ### <a name="register-a-web-application-with-aad"></a>AAD に Web アプリケーションを登録する
 
@@ -75,7 +78,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 **前提条件:** Azure サブスクリプションと Azure Active Directory (Azure AD) への管理者権限が必要です。
 
-クライアントがサービスと通信する前に、(Azure AD) に登録する必要があります。 これらの手順を使用すると、(Azure AD) でアプリケーションに登録できます。 この手順については、[Azure アプリ登録のトレーニングガイド](/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users)を参照してください。 このプロセスでの固有の構成には、コンテキストで次の追加情報を使用する必要があります。
+クライアントがサービスと通信する前に、(Azure AD) に登録する必要があります。 これらの手順を使用すると、(Azure AD) でアプリケーションに登録できます。 この手順については、[Azure アプリ登録のトレーニングガイド](https://docs.microsoft.com/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users)を参照してください。 このプロセスでの固有の構成には、コンテキストで次の追加情報を使用する必要があります。
 
 **Microsoft DynamicsERP (Microsoft.ERP)** を選択します。 **API を選択** 内の検索フィールドで **Microsoft Dynamics ERP** を検索する場合、使用できないように見えることがあります。 その場合は、上に示したようにフルネームを検索してください。
 **委任アクセス権** で、少なくとも次のオプションを選択する必要があります。
@@ -89,7 +92,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 ### <a name="register-your-external-application"></a>外部アプリケーションの登録 
 
-1. 財務と運用アプリで、**システム管理** \> **セットアップ** \> **Azure Active Directory アプリケーション** に移動します。
+1. Finance and Operations アプリで、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション** の順に移動します。
 2. **新規** を選択します。
 3. 新しいレコード用のフィールドに入力します。
 
@@ -138,6 +141,3 @@ REST メタデータ サービスは、読み取り専用サービスです。 �
 - **データ エンティティ** - システム内のすべてのデータ エンティティの JSON 形式の一覧を返します。
 
     **例:** `https://[baseURI\]/Metadata/DataEntities`
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

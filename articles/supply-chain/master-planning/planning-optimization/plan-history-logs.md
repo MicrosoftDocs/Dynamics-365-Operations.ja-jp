@@ -2,13 +2,16 @@
 title: 計画の履歴と計画ログの表示
 description: このトピックでは、計画の最適化機能によってトリガーされる計画ジョブの履歴を表示する方法について説明します。
 author: ChristianRytt
+manager: tfehr
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MPSPlanRegenerationJobList, MPSPlanRegenerationJobLogs
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 757d2103bd629c0107a3f29599196a56ea56d431a66cf1e69c7b3cf3d817c087
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a4f701a85979cce3fa4840b48279c45ec565612b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724823"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432195"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>計画の履歴と計画ログの表示
 
@@ -31,30 +34,16 @@ ms.locfileid: "6724823"
 
 計画の履歴を表示するには、**マスター プラン** \> **設定** \> **計画** \> **マスター プラン** の順に移動して **履歴** を選択することにより、計画を開きます。 履歴には、選択された計画のすべてのジョブが一覧表示されます。 一覧には、完了ジョブおよび有効なジョブが含まれます。
 
-計画の最適化マスター プラン実行のジョブ履歴は、マスター プランごとに最大 60 件のレコードまで保持されます。 新しいマスター プラン計算を実行するたびに、その計画の最も早い履歴レコードが削除されます。
-
-ジョブの開始時刻とステータスが表示されるのに加えて、特定のジョブのログも表示できます。 ログには、追加の情報および警告が含まれます。 すべてのジョブにログがあるわけではありません。 ジョブのログを表示するには、**ログ** を選択します。 ログ エントリは、ジョブが完了した日から 30 日間のみ、自動的に削除された後に保存されます。
-
-マスター プランの処理の設定時に、**バックグラウンドで実行** クイック タブの **バッチ処理** オプションが有効にされた場合、マスター プランの実行時に生成された任意の警告およびエラーに関する詳細な情報がバッチ ジョブ ログに表示されます。 たとえば、自動確定エラーは、バッチ ジョブ ログ内にのみキャプチャされます。 **履歴** ページのログには表示されません。
-
-マスター プランの実行時に発生した自動確定エラーおよび他の警告やエラーを表示するには、次の手順に従います。
-
-1. **システム管理 \> 照会 \> バッチ ジョブ** の順に移動します。
-1. 目的のマスター プランの実行を表すレコードを検索して選択します。 (たとえば、**職務明細書** フィールドの値は、*マスター プラン* から開始する場合があります。)
-1. **バッチ ジョブ** ページで *拡張フォーム* または *レガシー (通常の) フォーム* のどちらを使用しているかに応じて、次のいずれかの手順に従います。
-
-    - 拡張フォームを使用している場合: アクション ウィンドウで、**バッチ ジョブ履歴** を選択します。 次に、**バッチ ジョブ履歴** ページの、アクション ウィンドウで、**ログ** を選択します。
-    - レガシー フォームを使用している場合: アクション ウィンドウの、**バッチ ジョブ** タブで、**ログ** を選択します。
-
-1. **メッセージの詳細** を選択して **メッセージの詳細** ウィンドウを開くと、処理中にキャプチャされたすべての警告とエラーを表示できます。
+ジョブの開始時刻とステータスが表示されるのに加えて、特定のジョブのログも表示できます。 ログには、追加の情報および警告が含まれます。 すべてのジョブにログがあるわけではありません。 ジョブのログを表示するには、**ログ** を選択します。
 
 ## <a name="related-resources"></a>関連するリソース
 
-- [計画最適化の概要](planning-optimization-overview.md)
-- [計画最適化の開始](get-started.md)
-- [計画の最適化フィット分析](planning-optimization-fit-analysis.md)
-- [プランへのフィルターの適用](plan-filters.md)
-- [計画ジョブのキャンセル](cancel-planning-job.md)
+[計画の最適化の概要](planning-optimization-overview.md)
 
+[計画の最適化を開始する](get-started.md)
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[計画の最適化フィット分析](planning-optimization-fit-analysis.md)
+
+[プランへのフィルターの適用](plan-filters.md)
+
+[計画ジョブのキャンセル](cancel-planning-job.md)

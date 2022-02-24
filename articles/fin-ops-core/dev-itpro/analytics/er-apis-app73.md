@@ -1,10 +1,12 @@
 ---
 title: Application update 7.3 での ER フレームワーク API の変更
-description: このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告フレームワークの API における変更について説明します。
+description: このトピックでは、Dynamics 365 for Finance and Operations、Enterprise Edition のアプリケーション更新プログラム 7.3 での電子申告 (ER) フレームワークの API における変更について説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b6177e3bae2f88fce8391319f3759b0fb59948236f22c0eca2c5c97f577f8a90
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65b25388029187971050dd6e3185dc19723ae38a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730621"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685365"
 ---
 # <a name="er-framework-api-changes-for-application-update-73"></a>Application update 7.3 での ER フレームワーク API の変更
 
@@ -155,6 +157,3 @@ ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(<record>);
 // sample code
 ERObjectsFactory::createFileDestinationAttachmentWithOtherDocuType(_cashRegisterFiscalTrans_W);
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

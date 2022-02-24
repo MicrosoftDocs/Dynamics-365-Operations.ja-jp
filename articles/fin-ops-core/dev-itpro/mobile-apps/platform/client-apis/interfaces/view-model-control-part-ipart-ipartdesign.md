@@ -1,18 +1,25 @@
 ---
 title: PartDesign タイプ
 description: パーツ デザイン オブジェクトの種類。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 6a9bca8f1c105e3e1f98c3e11f0b0cfd3c6fa782
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 419e940903f5aa8307589a88f02cb5588fd54eb6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781528"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685417"
 ---
 # <a name="partdesign-type"></a>PartDesign タイプ
 
@@ -89,7 +96,7 @@ background: string (optional)
 背景色をオーバーレイするフォントが適切に表示されるように、同じコンテナ内の色属性を変更することを検討してください。
 注記: 背景が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。
 使用可能な色は次のとおりです。 <br>
-![使用可能な色の画像。](../../../media/colors.PNG)
+![使用可能な色の画像](../../../media/colors.PNG)
 
 > [ContainerControlDesign](view-model-control-container-icontainercontrol-icontainercontroldesign.md).[background](view-model-control-container-icontainercontrol-icontainercontroldesign.md#background) から継承
 
@@ -121,7 +128,7 @@ color: string (optional)
 この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。<br>
 注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。<br>
 使用可能な色は次のとおりです。 <br>
-![使用可能な色の画像。](../../../media/colors.PNG)
+![使用可能な色の画像](../../../media/colors.PNG)
 
 > [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color) から継承
 
@@ -148,7 +155,7 @@ flexFlow: string (省略可)
 
 flexSize: string (省略可) 
 
-1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズを拡大) [(サイズを縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。
+1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。
 このプロパティは、CSS プロパティ「flex」のエイリアスです。 "flex" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。
 
 > [Design](view-model-ipage-idesign.md).[flexSize](view-model-ipage-idesign.md#flexsize) から継承
@@ -254,6 +261,3 @@ type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 > [Design](view-model-ipage-idesign.md).[type](view-model-ipage-idesign.md#type) から継承
 
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -1,27 +1,30 @@
 ---
 title: リーン組織のモデリング
 description: この記事は、リーン組織のモデリングにおける重要な概念に関する情報を提供します。
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, KanbanFlowSelection, KanbanFlow
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 53141
 ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3958d21188163fe95e36ba4b8117ae8314b0fd1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 960ba8851810ff528581144ad863772f18f9fa79
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570204"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432188"
 ---
 # <a name="modeling-a-lean-organization"></a>リーン組織のモデリング
 
@@ -51,7 +54,7 @@ ms.locfileid: "7570204"
 
 バリュー ストリーム自体は、作業単位としてモデル化されます。 したがって、バリュー ストリームは財務分析コードとして使用できます。
 
-作業単位の詳細については、[作業単位を作成する](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md) を参照してください。
+作業単位の詳細については、[作業単位を作成する](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md) を参照してください。
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>生産フローに基づいたリーン生産の原価計算
 生産フローの原価の定期的な連結により、関連する仕掛品勘定を修正し、生産フローによって供給される製品 の差異を決定できます。
@@ -64,6 +67,3 @@ ms.locfileid: "7570204"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Finance and Operations アプリ (2020 年 11 月) のバージョン 10.0.14 のプラットフォーム更新プログラム
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.14 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
+manager: AnnBe
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0ffd75bd7fcbf0e4e2c06b8db29e263f04c736c69fbfc0b7bbb679d889bba653
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 63547b519b1851c292193df5c50fc491f35b5e93
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739457"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685105"
 ---
 # <a name="platform-updates-for-version-10014-of-finance-and-operations-apps-november-2020"></a>Finance and Operations アプリ (2020 年 11 月) のバージョン 10.0.14 のプラットフォーム更新プログラム
 
@@ -33,9 +35,9 @@ ms.locfileid: "6739457"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
--  [**複数行コントロールのドロップダウン リストを有効にする**](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/enable-dropdown-list-multi-line-controls)<br>- この機能は、複数行文字列のコントロールのドロップダウンリスト/ルックアップ機能を追加します。 以前は、1 行入力の入力コントロールは、ドロップダウン リストに許可されています。<br>- コントロールでのルックアップ動作の有効化の詳細については、[ルックアップ コントロール](../user-interface/lookups-controls.md) を参照してください。
+-  [**複数行コントロールのドロップダウン リストを有効にする**](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/enable-dropdown-list-multi-line-controls)<br>- この機能は、複数行文字列のコントロールのドロップダウンリスト/ルックアップ機能を追加します。 以前は、1 行入力の入力コントロールは、ドロップダウン リストに許可されています。<br>- コントロールでのルックアップ動作の有効化の詳細については、[ルックアップ コントロール](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/lookups-controls) を参照してください。
 
--  [**グリッド機能での (プレビュー) グループ化の更新**](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- この更新プログラムを使用すると、グループの展開/折りたたみを行ったり、グループ内のすべての行を選択または選択解除したりすることができるようになります。<br>- 詳細については、[グリッド機能](../../fin-ops/get-started/grid-capabilities.md) を参照してください。
+-  [**グリッド機能での (プレビュー) グループ化の更新**](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/grouping-subtotals-grids-general-availability)<br>- この更新プログラムを使用すると、グループの展開/折りたたみを行ったり、グループ内のすべての行を選択または選択解除したりすることができるようになります。<br>- 詳細については、[グリッド機能](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -47,7 +49,7 @@ ms.locfileid: "6739457"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
@@ -59,6 +61,3 @@ ms.locfileid: "6739457"
 製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

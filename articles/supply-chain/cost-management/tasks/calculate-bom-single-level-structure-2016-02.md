@@ -1,25 +1,28 @@
 ---
 title: 単一レベル構造を使用した BOM の計算 (2016 年 2 月)
 description: この手順は、原価表に基づく単一レベル展開を使用して、完成品のコストを計算する方法を示します。
-author: AndersGirke
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5968631f5fed8a43cd63165a4ddff86e8cb4b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 83a62966e343a9b1c073c2d6ec1c1b69b1daddbb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572100"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432041"
 ---
 # <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a>単一レベル構造を使用した BOM の計算 (2016 年 2 月)
 
@@ -41,6 +44,3 @@ ms.locfileid: "7572100"
     * 省略記号 (...) をクリックして、トップ メニューにこのオプションを表示する必要があります。    コストの構成は次のとおりです:  *    10 は ITEM_A から、 10 は ITEM_B から、 10 は BOM_2 から派生します。 この場合、BOM_2 は計算によってではなく、標準原価 10 として入力されたので、その詳細はありません。  *    7 は一定のコストである段取り時間から派生し、追加の 7 は実行時操作 (プロセス) から派生します。  *    間接原価に対応する他の金額もあります。  
 9. @SysTaskRecorder:_RequestClose
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

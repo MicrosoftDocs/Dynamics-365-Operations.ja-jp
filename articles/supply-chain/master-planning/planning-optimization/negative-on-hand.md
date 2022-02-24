@@ -2,13 +2,16 @@
 title: マイナスの手持在庫数量を使用した計画
 description: このトピックでは、計画の最適化を使用する場合のマイナスの手持在庫の処理方法について説明します。
 author: ChristianRytt
-ms.date: 07/22/2021
+manager: tfehr
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 97688e09aae9706dd85e7965aa08c7ea873a44d81391c39406e2e6367660e0d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72367927a11879adffe68d7242d88f5cfab73e22
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758547"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431934"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>マイナスの手持在庫数量を使用した計画
 
@@ -73,29 +76,14 @@ ms.locfileid: "6758547"
 
 結果は 25 個の計画オーダーです。 (= 25 個。 &minus; 0 個) 0 個から倉庫 13 に補充する場合に行います。 25 個へ。
 
-## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>マイナスの手持在庫に対する引当がある場合の計画
-
-現物引当が存在するときに在庫を調整すると、マイナス在庫に対して注文が現物引当済となる状況が発生する可能性があります。 この場合、現物引当が存在するため、計画の最適化は、手持在庫の受取がまだシステムに登録されていない場合でも、手持在庫でサポートされていると想定します。 そのため、補充は必須ではないと見なされ、注文の数量を補充する計画オーダーは作成されません。
-
-次の例はこのようなシナリオを示しています。
-
-### <a name="example"></a>例
-
-システムは次のように構成されています。
-
-- 製品 *FG* が存在し、*10* 個あります。 手持在庫の。
-- 製品コンフィギュレーションにより、現物マイナス在庫が可能になります。
-- 数量 *10* 個の販売注文が存在します。 製品 *FG* の。
-- 販売注文の数量は、既存の手持在庫に対して物理的に引当されます。
-
-次に、製品 *FG* の数量を調整すると、手持在庫が 0 (ゼロ) になります。 手持製品の在庫が 0 なので、販売注文の数量はマイナス在庫に対して引当されます。 ただし、マスター プランを今実行した場合は、計画最適化では現物引当を供給するために必要な手持在庫が存在すると想定されるため、販売注文に供給するための計画オーダーは作成されません。
-
 ## <a name="related-resources"></a>関連するリソース
 
-- [計画最適化の概要](planning-optimization-overview.md)
-- [計画最適化の開始](get-started.md)
-- [計画の最適化フィット分析](planning-optimization-fit-analysis.md)
-- [計画の履歴と計画ログの表示](plan-history-logs.md)
-- [計画ジョブのキャンセル](cancel-planning-job.md)
+[計画最適化の概要](planning-optimization-overview.md)
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[計画最適化の開始](get-started.md)
+
+[計画の最適化フィット分析](planning-optimization-fit-analysis.md)
+
+[計画の履歴と計画ログの表示](plan-history-logs.md)
+
+[計画ジョブのキャンセル](cancel-planning-job.md)

@@ -2,26 +2,29 @@
 title: 在庫原価計算
 description: 受入トランザクションと払出トランザクションを決済するプロセスの一環で、行った調整を総勘定元帳に反映して更新するように選択することもできます。
 author: AndersGirke
+manager: tfehr
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 61973
 ms.assetid: c210c882-6849-4704-b78c-a777dd6cfdb6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 078969e12275c3abd2e4ea2f8c6c9579dce73e5f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4cad461c6ff4ef6badeeba868eef45165cf5d33
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574020"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431939"
 ---
 # <a name="inventory-close"></a>在庫原価計算
 
@@ -57,7 +60,7 @@ ms.locfileid: "7574020"
 このような作業によって更新される勘定科目は、元の在庫トランザクションにリンクされている科目です。 たとえば、販売注文が発注書に対して決算されると、元の販売注文に対して使用されている一般会計勘定が調整されます。 この動作は、販売注文の転記後に、この品目に割り当てられた品目グループの勘定科目が変更された場合も同様に発生します。 在庫決済によって決済金額が作成された後でも、決済金額は、品目に割り当てられた新しい勘定科目ではなく、元の勘定科目に転記されます。 在庫決算を取り消すと、総勘定元帳も更新される場合があります。 
 
 > [!NOTE] 
-> - 在庫決算は、移動平均を除くすべての在庫モデルについて、月末決算手続きにおける必須ステップです。  期間の終了日の現在にまず在庫決算を実行せずに財務期間を決算しようとする場合は、警告が表示されます。
+> - 在庫決算は、すべての在庫モデルについて、月末決算手続きにおける必須ステップです。 これには、標準原価と移動平均原価が含まれます。 期末日時点で在庫決算が行われていないと、決算期間を閉じることができません。
 > - 決算手続きを実行する前に、更新中に決済できない品目のリストを表示できます。
 > - コンピューター リソースの配分を均等にするために、在庫決算はピーク時以外に実行することをお勧めします。
 
@@ -84,6 +87,3 @@ ms.locfileid: "7574020"
 > [!NOTE] 
 > 終了済みの最終の在庫期間のみを再オープンすることができます。 初期の在庫決算を取り消すには、最新の決算から在庫原価計算プロシージャを個別に取り消す必要があります。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: 製造オーダーの見積
 description: USMF デモ データ会社または用意したデータ セットを使用して、この手順を実行できます。
 author: johanhoffmann
+manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0450186382b6c306910fc6653f67ce313b7cfc2c69a134a9a806d1a232dc0fd2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bbb541a09809c1f1bfada42094d840a2f6e7764
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765421"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431661"
 ---
 # <a name="estimate-a-production-order"></a>製造オーダーの見積
 
@@ -39,6 +42,3 @@ USMF デモ データ会社または用意したデータ セットを使用し�
 1. [アクション] ペインで [原価の管理] をクリックします。
 2. [計算の詳細の表示] をクリックします。
     * このページは、原価内訳を表示します。 たとえば、先頭行の完成品の単位あたりの原価価格合計を表示できます。 後続の行には、部品表、生産工順、および間接原価などの原価が含まれます。  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

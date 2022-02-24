@@ -2,20 +2,22 @@
 title: カスタム ヘルプ ツールキット - ConvertHtmlToJson ツール
 description: このトピックでは、Finance and Operations アプリ用のカスタム ヘルプ ツールキットに含まれている ConvertHtmlToJson ツールについて説明し ます。
 author: edupont04
+manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
+ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: fa95857fdbacf02e0042f9b88239d2f7e0948403a15c9e4b5ab6868e95b852e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f65545c6650ba7cc4e5e4676836bb48ece5a05e0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758174"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685088"
 ---
 # <a name="custom-help-toolkit-the-converthtmltojson-tool"></a>カスタム ヘルプ ツールキット: ConvertHtmlToJson ツール
 
@@ -57,6 +59,3 @@ ConvertHtmlToJson.exe --h D:\D365-Operations\d365F-O\supply-chain\de -j D:\D365-
 [Azure にカスタム ヘルプを展開](walkthrough-help-azure.md)  
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
 [Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換](migrate-dynamicsax2012.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,25 +1,28 @@
 ---
 title: 廃棄コードの設定
 description: この手順では、返品注文の受信プロセスでモバイル デバイスで使用できる廃棄コードの設定を中心に説明します。
-author: Mirzaab
+author: ShylaThompson
+manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSDispositionTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb83108c934e864da0df39ec4ee36a0bc7ba7588
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6d84699e8e4323792ac67b69236d264e33eeaf28
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574068"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432350"
 ---
 # <a name="set-up-dispositions-codes"></a>廃棄コードの設定
 
@@ -38,6 +41,3 @@ ms.locfileid: "7574068"
 6. [返品廃棄コード] フィールドに値を入力します。
     * 返品廃棄コードにより、登録された品目の返品注文プロセスの残りが決まります。 この例では、顧客は貸方票を受け取る必要があります。 アクションの貸方を含む返品廃棄コードを追加します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

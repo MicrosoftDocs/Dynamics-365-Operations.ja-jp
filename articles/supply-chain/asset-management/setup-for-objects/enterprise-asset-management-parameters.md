@@ -1,10 +1,12 @@
 ---
 title: 資産管理パラメーター
 description: 資産管理では、資産、ワーク オーダー、およびワーク オーダーのスケジューリングに関連する一般的なパラメーターを設定する必要があります。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1deef00f01d83bc809a004265c386ba9d300df5fa4a1be245812ed5632059f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751964"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020657"
 ---
 # <a name="asset-management-parameters"></a>資産管理パラメーター
 
@@ -99,11 +101,8 @@ ms.locfileid: "6751964"
 
 ## <a name="the-document-types-tab"></a>ドキュメント タイプ タブ
 
-ワーク オーダー レポートに関連する添付ファイルの印刷に使用できるドキュメントのタイプを選択します。 これは、**使用可能** なセクションのドキュメント タイプを選択し ![前方矢印。](media/15-setup-for-objects.png) を選択することにより実行されます。 選択したドキュメント タイプを削除する場合、**選択済** のセクションでドキュメント タイプを選択し ![戻る矢印](media/16-setup-for-objects.png) ボタンを選択します。
+ワーク オーダー レポートに関連する添付ファイルの印刷に使用できるドキュメントのタイプを選択します。 これは、**使用可能** なセクションのドキュメント タイプを選択し ![前方矢印](media/15-setup-for-objects.png) を選択することにより実行されます。 選択したドキュメント タイプを削除する場合、**選択済** のセクションでドキュメント タイプを選択し ![戻る矢印](media/16-setup-for-objects.png) ボタンを選択します。
 
 ## <a name="the-number-sequences-tab"></a>番号順序 タブ
 
 このセクションで必要な番号順序を選択します。 資産には、2 つの番号順序があります。1 つは手動で作成された資産用で、もう 1 つは保留中の資産を通して作成された資産用です。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

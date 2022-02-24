@@ -1,27 +1,30 @@
 ---
 title: 統計ベースライン予測の生成
 description: このトピックは、需要予測の計算に使用されるパラメーターおよびフィルターについて説明しています。
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f34f1721b6215ac09173a346c1f3f1e6b262247
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: db0ac2d56db46f283716df6615e404a5354f8d3e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577531"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432206"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>統計ベースライン予測の生成
 
@@ -67,13 +70,11 @@ ms.locfileid: "7577531"
 > [!NOTE]
 > フラットである可能性のある予測は、履歴時間枠 (毎月の予測で 3 年間などのパターンを選択するために最低 3 つの期間) でなければならない履歴データが原因である可能性があります。 より良い結果を得るには、時間の範囲の粒度を変更するか、時間の範囲を増やします。
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 - [需要予測の設定](demand-forecasting-setup.md)
 
 - [ベースライン予測に対して手動調整を行う](manual-adjustments-baseline-forecast.md)
 
 - [調整された需要予測の承認](authorize-adjusted-forecast.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

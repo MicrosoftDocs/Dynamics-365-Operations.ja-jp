@@ -1,27 +1,30 @@
 ---
 title: 遅延
 description: このトピックは、マスタ プランの遅延日に関する情報を提供します。 遅延日は、マスター プランで計算される最も早い履行日が、要求日より後になる場合にトランザクションに設定される現実的な期日です。
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e89830feea12b4f5703e0eda622729887dd9bf46
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: da09d670fd952d885f013693b6362cf9002343ff
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573756"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432208"
 ---
 # <a name="delays"></a>遅延
 
@@ -52,9 +55,7 @@ ms.locfileid: "7573756"
 
 **遅延** タブの下の **計画済オーダー** ページは、計画済オーダーの **希望日** です。 計画済オーダーの希望日は遅延の基本日となり、**正味必要量** から計算された **希望日** に等しい計算日です。 計画済オーダーが BOM 明細行、生産明細行またはかんばん明細行の場合、目的の日付は **要求日** に基づいて要求され、**計画済オーダー** ページには表示されません。
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 [補充設定](coverage-settings.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

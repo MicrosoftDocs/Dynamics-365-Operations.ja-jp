@@ -1,26 +1,29 @@
 ---
 title: 廃棄コードを設定します
 description: 顧客が返品した品目のプロセス方法を指定する廃棄コードを設定できます。
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnDispositionCode
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 973d270d186244904a8390b700aa2ee1fc84cbbc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 16f0ddb9ad956367adc66a952bd8d12551da56a5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576283"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431642"
 ---
 # <a name="set-up-disposition-codes"></a>廃棄コードを設定します 
 
@@ -31,15 +34,15 @@ ms.locfileid: "7576283"
 
 品目が返品された理由を説明するのに役立つ理由コードも設定できます。 理由コードの詳細については、[返品理由コードの設定](set-up-return-reason-code.md)を参照してください。
 
-1.  **販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **廃棄コード** に移動します。
+1.  **販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **廃棄コード** の順にクリックします。
 
-2.  **新規作成** を選択して、新しい廃棄コードを作成します。
+2.  **新規** をクリックするか、CTRL+N キーを押して、新しい廃棄コードを作成します。
 
 3.  廃棄コードの内容を示す一意の名前を入力し、アクションを選択して、説明を入力します。
 
-4.  この廃棄コードに顧客請求金額を関連付ける場合は、**雑費** ボタンを選択して **雑費の設定** フォームを開きます。
+4.  この廃棄コードに顧客請求金額を関連付ける場合は、**雑費** ボタンをクリックして **雑費の設定** フォームを開きます。
 
-5.  会社独自の廃棄コードに対応する外部コードを定義する場合は、**外部コード** ボタンを選択して **外部コード** フォームを開きます。
+5.  会社独自の廃棄コードに対応する外部コードを定義する場合は、**外部コード** ボタンをクリックして **外部コード** フォームを開きます。
 
 ## <a name="see-also"></a>参照
 
@@ -54,6 +57,3 @@ ms.locfileid: "7576283"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

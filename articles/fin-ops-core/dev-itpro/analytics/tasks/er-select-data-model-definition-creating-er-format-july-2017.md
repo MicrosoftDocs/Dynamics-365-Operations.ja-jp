@@ -2,9 +2,11 @@
 title: 形式作成時のデータ モデル定義の選択
 description: この手順にあるステップを完了するには、まず「ER コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け」にある手順を完了する必要があります。
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e6c8df735976ca0f7805fe3e06f141d38abf12faf02ff66195339147aa5405
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44288cc3979a0ac2ed6b4a8478aac21a85aca24e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720835"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684214"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>形式作成時のデータ モデル定義の選択
 
@@ -96,6 +98,3 @@ ms.locfileid: "6720835"
     * アプリケーション データ ソースにマップするのに、現在 1 つのみのルート項目が使用可能であることに注意してください。 少なくとも 1 つのモデル マッピングが導入された場合、ER 形式が追加されている間は、アプリケーションのデータソースにマッピングされているモデルのルート項目のみをモデル定義として選択することができます。   
 5. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

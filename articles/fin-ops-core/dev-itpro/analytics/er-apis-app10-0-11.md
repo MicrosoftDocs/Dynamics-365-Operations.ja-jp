@@ -1,10 +1,12 @@
 ---
-title: Application update 10.0.11 での電子申告フレームワーク API の変更
-description: このトピックでは、Microsoft Dynamics 365 Finance バージョン10.0.11 で電子申告フレームワーク の API がどのように変更されたのかについて説明します。
+title: 電子申告のフレームワーク API の変更点
+description: このトピックでは、電子申告（ER）フレームワークのアプリケーション プログラミング インターフェース（API）が、Microsoft Dynamics 365 Finance  バージョン10.0.11でどのように変更されたかについて説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -12,14 +14,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: d5029272003f4143c3190b6c8172e0aeed64ca49930bfcc041d4bc96478d5c21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f3da1ac6da742b1a4dd8b423c5be5ab37b746876
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751507"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685367"
 ---
-# <a name="electronic-reporting-framework-api-changes-for-application-update-10011"></a>Application update 10.0.11 での電子申告フレームワーク API の変更
+# <a name="electronic-reporting-framework-api-changes"></a>電子申告のフレームワーク API の変更点
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +41,7 @@ ER フレームワークの [初期](er-apis-app73.md#code-to-run-a-format-mappi
 
 **データソースのプロパティ** ダイアログ ボックスで、**統合ポイント** オプションを **はい** に設定すると、データソースを統合ポイントのコンポーネントとしてマークできます。
 
-![統合ポイント オプションの設定。](./media/er-api-ds-integration-point2.png)
+![統合ポイント オプションの設定](./media/er-api-ds-integration-point2.png)
 
 ER フレームワークの新しい API を使用して ER 形式のマッピングを呼び出し、特定の統合ポイントを含むように設定されたモデル マッピングを強制的に使用することができます。 次の例では、この新しい API の使用方法を解説します。
 
@@ -99,6 +101,3 @@ class ERIntegrationPointCodeSamples extends RunBaseBatch
     }
 }
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

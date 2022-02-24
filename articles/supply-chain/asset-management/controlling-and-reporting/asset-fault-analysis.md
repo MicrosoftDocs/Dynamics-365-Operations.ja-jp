@@ -1,10 +1,12 @@
 ---
 title: 資産エラー分析
 description: このトピックでは、資産管理の資産エラー分析について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectFaultCalculate
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 880ed35a9780185836218a5c2a7addb2a47eabd737d6bec99794ecb7a0959791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 674e10b94711b00e526af4af0e0c0afddd05e62c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779281"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022384"
 ---
 # <a name="asset-fault-analysis"></a>資産エラー分析
 
@@ -60,7 +62,7 @@ ms.locfileid: "6779281"
 - エラー登録は、"空気漏れ"、"ヒューズが飛んだ"、および "機器が詰まった" という 3 つのエラー現象に関して行われました。  
 - **確度 %** 列では、すべての割合が 100% に設定されています。 確度は、このエラー分析内のすべての **現象** 登録に基づきます。
 
-![図 1。](media/06-controlling-and-reporting.png)
+![図 1](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>現象および期間別にグループ化
 
@@ -69,7 +71,7 @@ ms.locfileid: "6779281"
 - エラー現象が、年/月単位の登録として表示されます。  
 - **確度 %** 列では、各月のすべての割合を加算すると、合計 100% になります。 確度は、このエラー分析内の **現象** 登録に基づきます。 資産に多数の明細行があっても、1 つの明細行で大きな割合が目立っている場合、それはエラー現象の兆候であり、そのエラー現象に対する登録数を制限する方法を探すためのより詳細な調査が必要になります。
 
-![図 2。](media/07-controlling-and-reporting.png)
+![図 2](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>複数の現象および資産別にグループ化
 
@@ -84,7 +86,7 @@ ms.locfileid: "6779281"
 - エラー現象が **資産** / **資産タイプ** / **現象** の組み合わせで分割されるようになります。  
 - **確度 %** 列では、**資産** / **資産タイプ** / **現象** の組み合わせのすべての割合をそれぞれ加算すると、各々が 100% になります。 確度は、このエラー分析内の **現象** 登録に基づきます。 資産に多数の明細行があっても、1 つの明細行で大きな割合が目立っている場合、それはエラー現象の兆候であり、そのエラー現象に対する登録数を制限する方法を探すためのより詳細な調査が必要になります。
 
-![図 3。](media/08-controlling-and-reporting.png)
+![図 3](media/08-controlling-and-reporting.png)
 
 **2 つの現象、資産、および資産タイプ別にグループ化**
 
@@ -92,7 +94,7 @@ ms.locfileid: "6779281"
 
 - **確度 %** 列では、資産で **資産** / **資産タイプ** / **現象** の組み合わせのすべての割合を加算すると、それぞれが 100% になります。 確度は、このエラー分析内の **現象** および **領域** の組み合わせに基づきます。 資産に多数の明細行があっても、1 つの明細行で大きな割合が目立っている場合、それはエラー領域の兆候であり、そのエラー領域に対する登録数を制限する方法を探すためのより詳細な調査が必要になります。  
 
-![図 4。](media/09-controlling-and-reporting.png)
+![図 4](media/09-controlling-and-reporting.png)
 
 **3 つの現象、資産、および資産タイプ別にグループ化**
 
@@ -100,12 +102,9 @@ ms.locfileid: "6779281"
  
 - **確度 %** 列では、資産で **資産** / **資産タイプ** / **現象** の組み合わせのすべての割合を加算すると、それぞれが 100% になります。 確度は、このエラー分析内の **現象**、**領域**、および **タイプ** の組み合わせに基づきます。 資産に多数の明細行があっても、1 つの明細行で大きな割合が目立っている場合、それはエラー タイプの兆候であり、そのエラー タイプに対する登録数を制限する方法を探すためのより詳細な調査が必要になります。
 
-![図 5。](media/10-controlling-and-reporting.png)
+![図 5](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]
 >作業指示書およびメンテナンス要求で作成されたすべてのエラー登録の概要については、**資産管理** > **照会** > **資産エラー** > **資産エラー** の順にクリックします。 **資産エラー** ページで、資産エラー登録を選択し、**関連する情報** ウィンドウを展開して、関連する作業指示書またはメンテナンス要求に関する情報を参照します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

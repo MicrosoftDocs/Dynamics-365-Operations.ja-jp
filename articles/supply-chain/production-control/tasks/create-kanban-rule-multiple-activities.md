@@ -1,25 +1,28 @@
 ---
 title: 複数の活動のかんばんルールの作成
 description: この手順では、生産フローの複数の活動を含むかんばんルールを作成する方法を示します。
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, KanbanFlowSelection, InventItemIdLookupSimple, KanbanCreateScheduled, Kanban
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f55034f4f0557023ce0c659c1e8258214cf8bfa3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 68cac0f581e786cdb3801e03fb60db7bc05ffb2f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569242"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431682"
 ---
 # <a name="create-a-kanban-rule-for-multiple-activities"></a>複数の活動のかんばんルールの作成
 
@@ -56,6 +59,3 @@ ms.locfileid: "7569242"
     * かんばんには生産フローの 2 つのプロセス ジョブが含まれています。 1 番目は SpeakerAssemblyAndPolish で、2 番目は SpeakerTestAndPackaging です。  
     * これは最後のステップです!  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

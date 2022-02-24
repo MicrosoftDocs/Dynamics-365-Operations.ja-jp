@@ -1,26 +1,29 @@
 ---
 title: 在庫バッチのマージ
 description: この記事は、2 つ以上の棚卸資産バッチをマージされたバッチに連結する方法に関する情報を提供します。
-author: yufeihuang
+author: pjacobse
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83c7fa6bf596510c3b902c12433cc55842ebe0b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fa571fb7392f6f7154f7f1bfd908e11e1bebd3a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571908"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432133"
 ---
 # <a name="merge-inventory-batches"></a>在庫バッチのマージ
 
@@ -130,13 +133,10 @@ ms.locfileid: "7571908"
 ## <a name="how-does-posting-work"></a>転記はどのように機能しますか
 転記は、仕訳帳に承認プロセスを使用するかどうかに基づいて、次の 2 つの方法で機能します。 **仕訳帳への転送** および **バッチ マージの転記** アクションを使用してバッチ マージを確認して転記することができる仕訳帳へバッチ マージを移動するか、またはバッチ マージを直接転記できます。 2 つのアクションとの大きな違いは、仕訳帳への移動でバッチ マージを転記しないことです。 どちらのアクションでも、既存のバッチが選択されない場合は新しいバッチが作成され、すべてのバッチの詳細と属性値が更新され、在庫仕訳帳が作成されます。
 
--   **仕訳帳への転送** – バッチ マージの詳細を新しい在庫仕訳帳に転送します。 自動引当を設定していた場合は、ソース バッチの数量が引き当てられます。 バッチ マージの詳細は変更できません。 バッチ マージを変更するには、仕訳帳を削除する必要があります。 仕訳帳は、別の従業員が後で実行するタスクとして使用できます。 仕訳帳明細行に対するバッチ数量の引当は保護されています。 この割り当てにより、品質プランナーまたは倉庫マネージャーは従業員のタスクを作成することができます。
+-   **仕訳帳への転送** – バッチ マージの詳細を新しい在庫仕訳帳に転送します。 自動引当を設定していた場合は、ソース バッチの数量が引き当てられます。 バッチ マージの詳細は変更できません。 バッチ マージを変更するには、仕訳帳を削除する必要があります。 仕訳帳は、別の従業員が後で実行するタスクとして使用できます。 仕訳帳明細行に対するバッチ数量の引当は保護されています。 この割り当てにより、品質プランナーまたは倉庫マネージャが自分の従業員のタスクを作成することができます。
 -   **バッチ マージの転記** – バッチ マージを直接転記します。 このアクションは現物マージの発生後に実行できます。
 
 バッチ マージの在庫仕訳帳を **すべてのバッチ マージ** リスト ページから承認できます。 **仕訳帳** &gt; **転記** をクリックします。 仕訳帳の転記後、結合されたバッチの詳細を変更できません。 バッチ マージを在庫仕訳帳へ転送した後は、その仕訳帳が削除された場合にのみ詳細を変更できます。
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>CW 品目の結合後に在庫仕訳帳上でその CW 情報を確認できないのはどうしてですか。
 他のすべての品目と同様に、CW 品目のバッチを結合できます。 ただし、CW 情報は在庫仕訳帳に表示されません。 バッチ マージを在庫仕訳帳に転送する前に、CW 情報を確認することをお勧めします。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

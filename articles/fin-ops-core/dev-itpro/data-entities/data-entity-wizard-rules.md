@@ -1,32 +1,31 @@
 ---
 title: データ エンティティ ウィザード ルール
 description: このトピックでは、代理外部キー フィールドのナチュラル キー拡張と子/親関係の拡張について説明します。
-author: peakerbl
+author: Sunil-Garg
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.custom: 6234
 ms.assetid: 551ac5d6-980c-487f-a15c-66d7ab80924a
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8110df13caed0184a9ab4ada04565a8e7b5b93ac
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 27624df21585cdfc6c8b8743ddbfb1d7cb45caf8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065722"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684050"
 ---
 # <a name="data-entity-wizard-rules"></a>データ エンティティ ウィザード ルール
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、代理外部キー フィールドのナチュラル キー拡張と子/親関係の拡張について説明します。
 
@@ -68,6 +67,3 @@ ms.locfileid: "8065722"
 - フィールドの **必須** プロパティと関連するフィールドの **必須** プロパティが両方とも **false** である場合は、両方のフィールドが **false** に明示的に設定されます。
 
 フィールドの **必須** プロパティと関連するフィールドの **必須** プロパティの値が異なる場合は、両方のフィールドは変わりません。 この場合、**自動** の既定値が使用されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

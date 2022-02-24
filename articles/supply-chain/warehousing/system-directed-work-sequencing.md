@@ -2,9 +2,11 @@
 title: システム主導の作業優先順位
 description: このトピックでは、システム主導の作業優先順位について説明します。 この機能により、システムが実行のためにユーザーに提示する作業指示書の並べ替えとフィルター処理を行うことができます。 これは、倉庫ピッキング プロセスを促進するための追加の基準が必要なシナリオで役立ちます。
 author: Mirzaab
+manager: tfehr
 ms.date: 07/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 3811486a31d079cac7f7c27ea6323f16de4478d5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577819"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970209"
 ---
 # <a name="system-directed-work-sequencing"></a>システム主導の作業優先順位
 
@@ -302,6 +304,3 @@ ms.locfileid: "7577819"
 したがって、このシナリオの例では、作業ID *4* もクエリでキャプチャされていました。 作成されたときに 2 つの明細行が追加されました。1 つは 25 個、もう 1 つは 10 個です。 少なくとも 1 つの作業ラインには、20 個未満の数量があるため、作業は引き続きユーザーに表示されました。
 
 シナリオによっては、作業の分割を使用して、この動作を回避することができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

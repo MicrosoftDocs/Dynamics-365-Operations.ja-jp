@@ -1,10 +1,12 @@
 ---
 title: 規制の監視と規制の更新の通知
-description: ローカライズ ISV ソリューション プロバイダーは、Microsoft Dynamics Lifecycle Services (LCS) のローカライズ ツールを活用して規制の監視を実施する必要があります。
+description: ローカライズおよび翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは、Microsoft Dynamics Dynamics Lifecycle Services (LCS) のローカライズ ツールを活用して規制の監視を実施する必要があります。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d47a7e59438f77161ddaab34eee1679e1b0440808a9ed8aa45f221c303d53d8c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: be556b15812355018337e513fad388d94966a7d4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775272"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685029"
 ---
 # <a name="regulatory-watch-and-communication-of-regulatory-updates"></a>規制の監視と規制の更新の通知
 
@@ -31,7 +33,7 @@ ms.locfileid: "6775272"
 
 ローカライズの独立系ソフトウェア ベンダー (ISV) ソリューション プロバイダーは、Microsoft Dynamics Lifecycle Services (LCS) に新しいプロジェクトを作成して、規制に関する警告を記録する必要があります。
 
-[![LCS がプロジェクトを作成。](./media/lcs-create-project-300x138.png)](./media/lcs-create-project.png)
+[![LCS がプロジェクトを作成](./media/lcs-create-project-300x138.png)](./media/lcs-create-project.png)
 
 オブジェクトを設定するには、これらの手順に従います。
 
@@ -54,11 +56,11 @@ ms.locfileid: "6775272"
 1.  LCS プロジェクトで、ページの右側までスクロールしてから、**追加ツール** で **ローカライズおよび翻訳** をクリックします。
 
 
-    [![Loc & 翻訳タイル。](./media/loc-translation-tile-300x185.jpg)](./media/loc-translation-tile.jpg)
+    [![Loc & 翻訳タイル](./media/loc-translation-tile-300x185.jpg)](./media/loc-translation-tile.jpg)
 
 2.  **Dynamics 規制の警告の送信** を選択し、**Enter** をクリックします。 **Dynamics 規制の警告の送信** ページが開きます。 個人または組織が以前に提出したすべての警告を表示するには、このページを使用します。
 
-    [![登録警告サービス。](./media/reg-alert-service-300x170.jpg)](./media/reg-alert-service.jpg)
+    [![登録警告サービス](./media/reg-alert-service-300x170.jpg)](./media/reg-alert-service.jpg)
 
 ## <a name="submit-a-regulatory-alert"></a>規制の警告の送信
 新しい規制アラートを入力するには、フォーム上部のフィルターの上にあるプラス記号 (**+**) をクリックします。 **規制に関する警告を送信** ウィザードが起動します。 このウィザードを完了するには、次の手順に従います。
@@ -69,7 +71,7 @@ ms.locfileid: "6775272"
     3.  使用可能なフィルター/基準を使用して、検索結果を絞ることができます。
     4.  ユーザーが探している規制における機能がない場合は、**規制に関する警告を送信** をクリックし、下のリボンにある規制に関する警告を送信します。
 
-    [![警告送信。](./media/submit-alert1-300x174.jpg)](./media/submit-alert1.jpg)
+    [![警告送信](./media/submit-alert1-300x174.jpg)](./media/submit-alert1.jpg)
     
 2.  **業務プロセスを関連付ける** ページで、次の手順に従います。
     1.  **グローバル業務プロセス ライブラリ** フィールドで、業務プロセス ライブラリを選択できます。
@@ -78,7 +80,7 @@ ms.locfileid: "6775272"
     4.  完了したら、**続行** をクリックしてウィザードの次のページに移動します。 確認メッセージが表示されたら、**はい** をクリックします。 関連するビジネス プロセスが見つからない場合は、ウィザードでは、このページを省略できます。
     5.  警告に選択した業務プロセスを追加するかどうかをたずねるメッセージが表示されます。 **はい** または **キャンセル** のいずれかをクリックすることができます。
 
-    [![BP キャプチャ。](./media/bp-capture-300x156.jpg)](./media/bp-capture.jpg)
+    [![BP キャプチャ](./media/bp-capture-300x156.jpg)](./media/bp-capture.jpg)
     
 3.  **警告の説明** ページで、次の手順に従います。
     1.  適切なフィールドに警告に関する情報を入力します。 必須フィールドは赤いアスタリスクで示されます (\*)。
@@ -106,25 +108,25 @@ ms.locfileid: "6775272"
     2.  すべての必須フィールドの追加が終了したら、同意チェック ボックスをオンにして適切な同意を指定する必要があります: **この警告の作成によって、この警告に関連する詳細情報に関して、今後、Microsoft が私に連絡を取ることを許可します。詳細については、Microsoft Dynamics Lifecycle Services のプライバシーに関する声明をお読みください。**
     3.  チェック ボックスを選択した後、**送信** ボタンが使用できるようになります。 警告を送信するには、**送信** をクリックします。 部分的に警告を完了した場合、以降の完了またはレビューに対して既に入力した情報を保存することができます。 警告を送信する前に **保存** をクリックします。
     
-        [![警告の詳細。](./media/alert-details-300x152.jpg)](./media/alert-details.jpg)
+        [![警告の詳細](./media/alert-details-300x152.jpg)](./media/alert-details.jpg)
 
     4.  警告が正常に送信されたことを示す確認メッセージが表示されたら、**実行** をクリックしてウィザードを終了します。 送信する前に警告を保存すると、警告 ID が生成され、警告が保存されたことが通知されます。
     
-        [![送信の確認。](./media/submission-confirmation-300x166.png)](./media/submission-confirmation.png)
+        [![送信の確認](./media/submission-confirmation-300x166.png)](./media/submission-confirmation.png)
 
 ## <a name="review-regulatory-alerts-that-have-been-entered-into-the-project"></a>プロジェクトに入力された規制に関する警告を確認
 警告プロジェクトに入力された規制に関する警告を表示するには、警告のグリッドを使用します。 このグリッドには、提出されたアラートのハイレベルなリスト ビューが提供され、警告タイトル、国/地域、法執行日などを表示されます。
 
-[![警告グリッド。](./media/alert-grid-300x117.png)](./media/alert-grid.png) 
+[![警告グリッド](./media/alert-grid-300x117.png)](./media/alert-grid.png) 
 
 フィルター/検索フィールドを使用して既定の検索オプションから選択することで、グリッドの内容を検索することができます。 ハイパーリンクである警告 ID をクリックすることにより、警告の詳細を表示することができます。 完了した警告送信ページが開き、警告の詳細、およびコメントと添付ファイルを確認できます。
 
-[![警告の確認。](./media/review-alert-300x195.png)](./media/review-alert.png)
+[![警告の確認](./media/review-alert-300x195.png)](./media/review-alert.png)
 
 ## <a name="process-submitted-alerts-options"></a>送信された警告オプションを処理
 警告が LCS 警告プロジェクトに送信された後、警告 ID ハイパーリンクをクリックして、グリッド ビューから処理することができます。 プロジェクト所有者は、アクションを警告の理由として設定し続けるかどうかをプロジェクトのメンバーに通知するために、警告のステータスを変更できます。 オプションは、警告の詳細にドリルダウンするときに表示されます。
 
-[![警告処理。](./media/alert-processing-300x172.png)](./media/alert-processing.png)
+[![警告処理](./media/alert-processing-300x172.png)](./media/alert-processing.png)
 
 次のテーブルに、警告で使用可能な処理オプションを示します。
 
@@ -149,6 +151,3 @@ ms.locfileid: "6775272"
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

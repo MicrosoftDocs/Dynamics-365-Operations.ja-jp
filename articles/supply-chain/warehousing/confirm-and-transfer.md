@@ -2,23 +2,26 @@
 title: 確認および転送
 description: このトピックでは、確認および転送機能の使用方法について説明します。これにより、ユーザーは、これらの積荷に関連するすべての作業を完了する前に、倉庫から積荷を出荷することができます。
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592631"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431730"
 ---
 # <a name="confirm-and-transfer"></a>確認および転送
 
@@ -45,8 +48,8 @@ ms.locfileid: "7592631"
 
 - ピッキング済の数量が 1 つ以上、積荷明細行に含まれています。
 - 積荷状態は積載済よりも小さくなっています。
-- 積荷明細行データがありません。 (このデータは、ステージング場所でのライセンス プレートの結合を通して作成され、確認および転送機能は、ライセンス プレートの結合をサポートしていません。)
-- 現在、梱包場所に梱包待ちの在庫はありません。 *確認および転送* 機能は、パックステーションにピッキングされたものの、まだパックされていない在庫には対応していません。ただし、パック済みコンテナがステージング ロケーションに置かれ、出荷作業が作成されている場合はこの限りではありません。
+- 積荷明細行データがありません。 (このデータは、ステージング場所でのライセンス プレートの結合を通して作成され、*確認および転送* 機能は、ライセンス プレートの結合をサポートしていません。)
+- 現在、梱包場所に梱包待ちの在庫はありません。 (*確認および転送* 機能は、梱包ステーションにピッキングされているが、まだ梱包されていない在庫はサポートしていません。)
 
 > [!NOTE]
 > この機能は、ピッキング前に積荷を計画および作成することはできず、ピッキング完了後に使用可能な輸送スペースを積載する倉庫で使用する必要がある輸送積載機能とは異なります。
@@ -227,6 +230,3 @@ ms.locfileid: "7592631"
 - **数量を新しい積荷に分割** するオプションは、残りの作業ヘッダーのステータスが *処理中* になっている場合にも機能します。 したがって、オーダーのピッキングが既に実行されている場合でも、その機能を使用できます。
 - ステータスが *オープン* または *処理中* の作業が残っているときに、**未履行の数量をキャンセル** を選択すると、次のエラー メッセージが表示されます。「積荷の残りの数量をキャンセルできません。 積荷に対して未処理の作業があります。」
 - 未処理の作業はないが、積荷に未リリースの積荷明細行がある際に、**未履行の数量をキャンセル** を選択すると、次のエラー メッセージが表示されます。「品目の数量が過少配送に定義された割合を超えているため、積荷の出荷を確認できませんでした。」 エラーを回避するには、未リリースの積荷明細行の **過少配送** 率を 100 % に設定します。 未リリースの明細行は新しい積荷に移動されませんが、現在の積荷は過少配送として確認されます。 この場合、元の注文を再度リリースすることはできません。 したがって、これを別の方法で処理する必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

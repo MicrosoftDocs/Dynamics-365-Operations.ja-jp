@@ -2,9 +2,11 @@
 title: セルフサービス配置で配置された環境のトラブルシューティング
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の問題をトラブルシューティングおよび診断する方法について説明します。
 author: laneswenka
+manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: f4aca8e202911897f1272d409ff1da0a54ba18a4a4f95337df87c9ee8af3e772
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e122487fd7bedcbd3f5de16b7435d20532d1b650
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765084"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685157"
 ---
 # <a name="troubleshoot-environments-deployed-through-self-service-deployment"></a>セルフサービス配置で配置された環境のトラブルシューティング
 
@@ -35,7 +37,7 @@ ms.locfileid: "6765084"
 
 環境監視ダッシュボードに、**概要** および **活動** の 2 つのタブが表示されます。
 
-[![問題を解決します。](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
+[![問題を解決する](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
 
 ## <a name="overview-tab"></a>[概要] タブ
 
@@ -69,6 +71,3 @@ ms.locfileid: "6765084"
 > 環境監視には、パフォーマンスの問題を診断および軽減するための高度な SQL トラブルシューティングのツールも含まれます。 この機能は、現在は使用できませんが、すぐに追加されます。 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

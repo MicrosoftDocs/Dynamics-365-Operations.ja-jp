@@ -1,24 +1,27 @@
 ---
 title: 新しい売買契約の作成
 description: この手順は、特定の顧客と合意した新しい製品販売価格を登録する売買契約の作成方法を示します。
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a16a39d95605900be0fa1e339b8cd0755ba85189
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 43426e77c30e46f4dd1cc117c38cf6ba5437655b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573420"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431768"
 ---
 # <a name="create-a-new-trade-agreement"></a>新しい売買契約の作成
 
@@ -26,8 +29,8 @@ ms.locfileid: "7573420"
 
 この手順は、特定の顧客と合意した新しい製品販売価格を登録する売買契約の作成方法を示します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 独自のデータを使用する場合は、このガイドの開始する前に、"価格 (販売)" に既定の取引関係が設定されている売買契約仕訳帳名が存在することを確認する必要があります。
 
-## <a name="create-and-post-a-new-trade-agreement-journal"></a>新しい売買契約仕訳帳の作成と転記
 
+## <a name="create-and-post-a-new-trade-agreement-journal"></a>新しい売買契約仕訳帳の作成と転記
 1. **ナビゲーション ウィンドウ > モジュール > 販売とマーケティング > 価格と割引 > 売買契約仕訳帳** の順に移動します。
 2. **新規** をクリックします。
 3. **名前** フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
@@ -58,27 +61,15 @@ ms.locfileid: "7573420"
 20. **OK** をクリックします。
 
 ## <a name="view-trade-agreements-for-a-product"></a>製品に関連する売買契約の表示
-
 1. **ナビゲーション ウィンドウ > モジュール > 製品情報管理 > 製品 > リリース済製品** の順に移動します。
 2. リストで、更新した価格の製品を見つけ、選択します。
 3. **アクション ウィンドウ** で、**販売** をクリックします。
 4. **売買契約の表示** をクリックします。
     
-    作成した価格の売買契約の詳細を確認します。
+    作成した価格の売買契約の詳細を確認します。    
 
 5. ページを閉じます。
 
 ## <a name="additional-resources"></a>追加リソース
-
-### <a name="whitepaper"></a>ホワイト ペーパー
-
-詳細については、次のホワイト ペーパー (AX2012 をサポートするように記述されているが、Dynamics 365 Supply Chain Management にも適用される) をダウンロードしてください
-
-- [売買契約](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
-
 ### <a name="community-blogs"></a>コミュニティのブログ
-
 - [Dynamics 365 for Finance and Operations での販売価格](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Finance and Operations アプリ バージョン 10.0.11 のプラットフォーム更新プログラム（2020 年 7 月）
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.11 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 35
-ms.openlocfilehash: 5e0e51b30575e30397e815bce313feb6c508faf4f183d6d4bdc3d0f212ed47de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b8c8542b829f083d6d7c1198169d011195a3e05
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756339"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685109"
 ---
 # <a name="platform-updates-for-version-10011-of-finance-and-operations-apps-july-2020"></a>Finance and Operations アプリ バージョン 10.0.11 のプラットフォーム更新プログラム（2020 年 7 月）
 
@@ -33,8 +35,8 @@ ms.locfileid: "6756339"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-- [パーソナル化を使用してフィールドを必須として指定する](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) – 詳細については、[ユーザー エクスペリエンスのカスタマイズ](../../fin-ops/get-started/personalize-user-experience.md) を参照してください。
-- [新たなグリッドのスタイルを更新しました](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2)
+- [パーソナル化を使用してフィールドを必須として指定する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) – 詳細については、[ユーザー エクスペリエンスのカスタマイズ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/personalize-user-experience) を参照してください。
+- [新たなグリッドのスタイルを更新しました](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2)
 - [コンパイラの警告のエラー：無効なフィールド参照を含むフィールド グループ](removed-deprecated-features-platform-updates.md#field-groups-containing-invalid-field-references) – 詳細については、[すでに発表されている当コンパイラの警告の非推奨化](removed-deprecated-features-platform-updates.md#field-groups-containing-invalid-field-references) を参照してください。
 - Visual Studio の代わりに Microsoft Windows PowerShell を使用して、テスト用の自己署名証明書を作成する – 詳細については、[独立系ソフトウェア ベンダー (ISV) ライセンス](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes) を参照してください。
 
@@ -48,7 +50,7 @@ ms.locfileid: "6756339"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
@@ -60,6 +62,3 @@ ms.locfileid: "6756339"
 製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

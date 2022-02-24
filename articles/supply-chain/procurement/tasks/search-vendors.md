@@ -1,24 +1,26 @@
 ---
 title: 仕入先の検索
 description: 特定の基準に基づく仕入先の検索方法を習得します。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendSearchCriterion, VendSearchAddCategory, VendSearchAddReviewCriterionGroup, VendSearchResults, VendSearchAddReviewCriterion
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9fd2b300586e5a4880a21fa2251342f37726ad0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 7caa146532d2bce06b009c45da635327766a88d1
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577147"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020707"
 ---
 # <a name="search-for-vendors"></a>仕入先の検索
 
@@ -36,6 +38,3 @@ ms.locfileid: "7577147"
 6. [国/地域] フィールドに値を入力します。
 7. [OK] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

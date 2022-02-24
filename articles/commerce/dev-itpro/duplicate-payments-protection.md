@@ -2,24 +2,26 @@
 title: 支払コネクタの重複支払保護の有効化
 description: このトピックでは、指定された支払コネクタで重複支払保護を有効にする方法について説明します。
 author: Reza-Assadi
+manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0de9856ccebc6cf6953dca2007c329917176e8ed
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c6e47a6ef0d1c8af20df3f3715ae668f3a399d8b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781486"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684973"
 ---
 # <a name="enable-duplicate-payment-protection-for-payment-connector"></a>支払コネクタの重複支払保護の有効化
 
@@ -48,7 +50,7 @@ ms.locfileid: "7781486"
 ## <a name="understanding-duplicate-payment-protection-flows"></a>重複支払保護フローを理解します。
 Retail POS が拡張され、支払コネクタに **承認** 要求を出す直前など、POS 全体の様々なシナリオで新しい要求である `GetTransactionReferencePaymentTerminalDeviceRequest` および `GetTransactionByTransactionReferencePaymentTerminalDeviceRequest` を呼び出すようになりました。 これらの新しい要求の目的は、新しい支払要求を実行する前に、支払コネクタを通して正常に処理された支払を検出し、復元するものです。 次の図は、支払要求は支払コネクタを通して正常に処理されたものの、応答を受信する前にPOS がクラッシュしたというシンプルなシナリオを示しています。 その後、POS は重複支払保護機能により、前の処理済の支払を復元することができます。 
 
-![重複支払保護フロー。](media/PAYMENTS/DUPLICATE-PAYMENT-PROTECTION/DuplicatePaymentProtectionFlow.jpg)
+![重複支払保護フロー](media/PAYMENTS/DUPLICATE-PAYMENT-PROTECTION/DuplicatePaymentProtectionFlow.jpg)
 
 
 ### <a name="supported-pos-flows"></a>サポートされている POS フロー
@@ -189,6 +191,3 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceResponse(Payment
 |---|---|
 | paymentInfo | 復元された支払取引。 これは、**承認** または **返金** のような、ほかの支払要求などで返される支払応答と同じです。 |
                                                                                                                                                                                                                                                                                                             
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

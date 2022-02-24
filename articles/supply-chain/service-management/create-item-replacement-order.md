@@ -2,25 +2,28 @@
 title: 品目の交換注文の作成
 description: 品目交換注文は通常、製品が返品され、検査された後で作成されます。
 author: josaw1
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnReplaceItem
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57bbb8eb638b990914dc00f9700ff0c1925c48852862b02e09f3f26415d3e347
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e63c175d12cac91648cb57a3f41d1769e81d57af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745505"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432155"
 ---
 # <a name="create-an-item-replacement-order"></a>品目の交換注文の作成 
 
@@ -65,6 +68,3 @@ ms.locfileid: "6745505"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,32 +2,35 @@
 title: 計画の最適化の使用を開始する
 description: このトピックでは、計画の最適化機能の使用を開始する方法について説明します。
 author: ChristianRytt
-ms.date: 05/20/2021
+manager: tfehr
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 8e6328902cec840b98b401fe8dd46c2a6f18cb54
-ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
+ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902562"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4432409"
 ---
 # <a name="get-started-with-planning-optimization"></a>計画最適化の開始
 
 [!include [banner](../../includes/banner.md)]
 
-[すでに発表した](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) ように、計画の最適化は、既存の組み込みマスター プラン エンジンと置き換えるようにスケジュールされています。
+[すでに発表した](https://docs.microsoft.com/dynamics365/supply-chain/get-started/removed-deprecated-features-scm-updates#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) ように、計画の最適化は、既存の組み込みマスター プラン エンジンと置き換えるようにスケジュールされています。
 
 現在、組み込みのマスター プラン エンジンを使用している場合は、すぐに計画の最適化への移行の計画を開始する必要があります。 廃止が適用されると操作が影響を受ける可能性があるため、移行プロセスをすぐに開始することが重要です。 廃止が実施された場合に、最新の問題を回避するために、2020 年 12 月 1 日までに移行を完了することを強くお勧めします。 
 
@@ -38,42 +41,21 @@ ms.locfileid: "7902562"
 
 計画の最適化を有効にする前に、計画の最適化フィット分析の結果を評価することを強くお勧めします。 詳細については、[計画の最適化フィット分析](planning-optimization-fit-analysis.md) を参照してください。
 
-## <a name="availability"></a>使用可能性
-
-計画の最適化は現在、次の Azure の地域で利用可能です: 米国、カナダ、ヨーロッパ、英国、オーストラリア、アジア太平洋、日本、インド。 他の地域からのアドインをインストールしようとすると、LCS ではこの地理的領域には対応していない旨のメッセージを表示します。 Azure の地域および関連地域の詳細については、[Azure](https://azure.microsoft.com/global-infrastructure/geographies/#geographies) の地域 を参照してください。
+### <a name="availability"></a>使用可能性
+計画の最適化はは現在、次の Azure の地域で利用可能です：米国、カナダ、ヨーロッパ、英国、オーストラリア。 他の地域からのアドインをインストールしようとすると、LCS ではこの地理的領域には対応していない旨のメッセージを表示します。
 
 計画の最適化では、 Dynamics 365 Supply Chain Management の社内設置型の配置に対応していないことに注意してください。
 
-## <a name="licensing"></a>ライセンス
+### <a name="licensing"></a>ライセンス
 
 現在のライセンスを使用してマスター プランを実行できる場合は、計画の最適化の使用を開始するために追加のライセンスを購入する必要はありません。
 
-## <a name="install-and-enable-planning-optimization"></a>計画最適化をインストールまたは有効化できない
+### <a name="install-the-add-in"></a>アドインのインストール
 
-計画最適化を使用するには、すべての前提条件をシステムに設定し、ライセンス キーを有効にして、計画の最適化アドインをインストールする必要があります Dynamics 365 Supply Chain Management。
+計画の最適化を使用するには、Dynamics 365 Supply Chain Management 用の計画の最適化アドインをインストールします。 LCS プロジェクトからアドインにアクセスし、Supply Chain Management ユーザーインターフェイス (UI) から計画の最適化機能を有効にすることができます。
 
-### <a name="prerequisites"></a>必要条件
-
-計画最適化アドインをインストールする前に、次の前提条件を満たす必要があります。
-
-- LCS が有効になっている高可用性環境の tier 2 またはそれ以降 (OneBox 環境ではなく)、Dynamics 365 Supply Chain Management バージョン 10.0.7 またはそれ以降で Supply Chain Management を実行する必要があります。 このアドインを OneBox 環境にインストールはできません。インストール処理をキャンセルする必要があります。
-
-- システムは Power Platform 統合用に設定されている必要があります。 詳細については、[Finance and Operations アプリと Microsoft Power Platform の統合](../../../fin-ops-core/dev-itpro/power-platform/overview.md)を参照してください。
-
-### <a name="enable-the-planning-optimization-license"></a>計画最適化ライセンスを有効化する
-
-計画最適化を使用するには、構成キーを有効にする必要があります。 そのためには次の作業を行います。
-
-1. [メンテナンス モード](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、システムをメンテナンス モードにします。
-1. **システム管理 \> 設定 \> ライセンス コンフィギュレーション** の順にクリックします。
-1. **構成 キー** タブで、**計画最適化** のチェック ボックス をオンにします。
-1. [メンテナンス モード](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)の説明に従って、メンテナンス モードをオフにします。
-
-### <a name="install-the-planning-optimization-add-in"></a>計画最適化アドインをインストールする
-
-LCS プロジェクトからアドインをインストールし、Supply Chain Management ユーザー インターフェイスから計画最適化の機能を有効にすることができます。
-
-計画最適化アドインをインストールするには:
+> [!NOTE]
+> 計画最適化の要件は、LCS が有効になっている高可用性環境の tier 2 またはそれ以降で、(OneBox 環境ではなく) Dynamics 365 Supply Chain Management バージョン 10.0.7 、またはそれ以降です。 このアドインを OneBox 環境にインストールはできません。インストール処理をキャンセルする必要があります。
 
 1. LCS にサインインし、目的の環境を開きます。
 1. **完全な詳細** に移動します。
@@ -85,13 +67,13 @@ LCS プロジェクトからアドインをインストールし、Supply Chain 
 1. **環境アドイン** クイック タブに、計画最適化がインストールされていることを確認する必要があります。
 1. 数分後、**インストールしています** が **インストール済み** に変わります (ページを更新する必要があります)。 インストールすると、Dynamics 365 Supply Chain Management で計画最適化を有効にする準備が整います。
 
-計画最適化アドインをインストールする主な目的は、サービスと環境をつなげることです。 したがって、環境間で移動したコードに関係なく、計画の最適化を使用する環境ごとにアドインを個別にインストールする必要があります。
+計画の最適化アドインをインストールする主な目的は、サービスと環境をつなげることです。 したがって、環境間で移動したコードに関係なく、計画の最適化を使用する環境ごとにアドインを個別にインストールする必要があります。
 
-## <a name="integrate-planning-optimization-with-your-system"></a>システムとの計画最適化を統合する
+### <a name="planning-optimization-integration"></a>計画の最適化の統合
 
 計画の最適化アドインをマスター プランに使用するかどうかを構成するには、**マスター プラン** \> **セットアップ** \> **計画最適化パラメーター** の順に進みます。
 
-### <a name="connection-status"></a>接続状態
+#### <a name="connection-status"></a>接続状態
 
 接続ステータスは、Supply Chain Management と計画の最適化サービスとの間の接続の現在のステータスを示します。 次の表は、使用可能な値を示しています。
 
@@ -103,14 +85,12 @@ LCS プロジェクトからアドインをインストールし、Supply Chain 
 | 接続を無効にしています | 計画の最適化サービスへの接続をオフにする要求が現在進行中です。 | いいえ |
 | 状態を取得しています | システムは、計画の最適化サービスからのステータス情報を待機しています。 | いいえ |
 
-### <a name="the-use-planning-optimization-option"></a>計画の最適化の使用オプション
+#### <a name="the-use-planning-optimization-option"></a>計画の最適化の使用オプション
 
 **計画の最適化の使用** オプションの設定では、マスター プランに使用する計画エンジンを決定します。
 
 - **はい** – 計画の最適化がマスター プランに使用されます。
 - **いいえ** – 組み込み Supply Chain Management 計画エンジンがマスター プランに使用されます。
-
-この設定は、すべての法人 (会社) に適用されます。 一部の法人およびその他の法人の組み込みマスター プランで、計画の最適化を使用することはできません。
 
 > [!NOTE]
 > **計画の最適化の使用** オプションが **はい** に設定されているときに、組み込みの Supply Chain Management 計画エンジンに対して作成された既存の計画バッチ ジョブがトリガーされた場合、これらのジョブは失敗します。
@@ -132,6 +112,3 @@ LCS プロジェクトからアドインをインストールし、Supply Chain 
 [プランへのフィルターの適用](plan-filters.md)
 
 [計画ジョブのキャンセル](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

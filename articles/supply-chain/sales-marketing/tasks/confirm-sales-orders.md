@@ -1,24 +1,27 @@
 ---
 title: 販売注文の確認
 description: この手順は、販売注文を確認する方法を示します。
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, CustConfirmJournal, SysQueryForm, SysQueryFieldLookUp, SysLookup, SalesParmIdLookup, SalesUnconfirmedOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30396c121b67d1b7095a175d85399ed664f68557
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d6476271689feaaa00e44f98f17ac34976c46644
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572508"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431771"
 ---
 # <a name="confirm-sales-orders"></a>販売注文の確認
 
@@ -61,6 +64,3 @@ ms.locfileid: "7572508"
 11. **OK** をクリックします。
 12. **OK** をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

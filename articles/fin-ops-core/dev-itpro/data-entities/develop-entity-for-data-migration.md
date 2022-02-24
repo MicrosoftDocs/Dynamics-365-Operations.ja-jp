@@ -1,25 +1,27 @@
 ---
 title: データ移行のエンティティの開発
 description: このチュートリアルでは、Microsoft Visual Studio でデータ エンティティを開発し、データ移行に使用する方法を示します。
-author: peakerbl
+author: Sunil-Garg
+manager: AnnBe
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.custom: 83692
 ms.assetid: ebe9c79a-029d-4f03-9bd8-d17e805baa89
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 911ead0ee78d4d1cdbe079f9106462da97a9383d
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: ebf7c5b3352f8edb5a6d692a0af9366179fdbf7c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404014"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685681"
 ---
 # <a name="develop-entities-for-data-migration"></a>データ移行のエンティティの開発
 
@@ -91,7 +93,7 @@ ms.locfileid: "7404014"
 6. 名前を入力し、次に **追加** をクリックすると **データ** **エンティティ** ウィザードが開始されます。
 7. ウィザードの最初のページで、この練習の前の表を使用して、エンティティのプロパティのセットを指定します。 **次へ** をクリックします。
 
-    [![プロパティ ページの指定。](./media/specifyproperties_devoentity.png)](./media/specifyproperties_devoentity.png)
+    [![プロパティ ページの指定](./media/specifyproperties_devoentity.png)](./media/specifyproperties_devoentity.png)
 
 8. 次のページで、プライマリ データ ソースからフィールドを追加します。 フィールド名ごとに、パブリック契約が反映されていることを確認します (この練習では前の表を参照してください)。 フィールドのラベルをフィールド名として使用するには、**ラベルをフィールド名に変換** オプションを選択します。 エンティティに必須ではないフィールドのオプションをクリアします。
 9. ウィザードを完了し、エンティティとそのコンポーネントをプロジェクトに追加するには、**完了** をクリックします。
@@ -101,7 +103,7 @@ ms.locfileid: "7404014"
 
 - Visual Studio で、**データ エンティティ** ウィザードを完了すると、次のコンポーネントがプロジェクトに表示されます。
 
-    [![新規プロジェクト コンポーネント。](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
+    [![新規プロジェクト コンポーネント](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
 
 - データ エンティティを右クリックし、**テーブル ブラウザーを開く** を選択します。
 
@@ -119,7 +121,7 @@ ms.locfileid: "7404014"
 3. **データ管理** ワークスペースで、**エクスポート** をクリックしてデータの抽出を開始します。
 4. エンティティ名およびターゲット データ形式などのエクスポートの詳細を入力します。
 
-    [![エクスポートの詳細の入力。](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png)
+    [![エクスポートの詳細の入力](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png)
 
     XML のサンプル ファイル形式として、[ProjectCategoryExport\_Sample](https://go.microsoft.com/fwlink/?linkid=845209) ファイルを使用します。
 
@@ -127,7 +129,7 @@ ms.locfileid: "7404014"
 
 5. **フィルター** をクリックし、フィルター条件として **プロジェクト** を指定すると、限定されたデータのみがエクスポートされます。
 
-    [![プロジェクトによるフィルター処理。](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)
+    [![プロジェクトによるフィルター処理](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)
 
 6. **エクスポート** ダイアログ ボックスで、**OK** をクリックします。
 
@@ -189,7 +191,7 @@ ms.locfileid: "7404014"
 8. **データをターゲットにコピー** をクリックします。
 9. **実行するジョブ ID の選択** ダイアログ ボックスの **実行** フィールドで **基準** を選択して、**ユーザーによって選択された行** を **はい** に設定します。 **OK** をクリックします。
 
-    [![実行するジョブの選択。](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)
+    [![実行するジョブの選択](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)
 
 10. **ターゲット データ実行** ページで、**実行** をクリックします。
 11. 実行が完了したら、ページを更新して、最新のステージングの状態を確認します。
@@ -200,6 +202,3 @@ ms.locfileid: "7404014"
 - **実行の概要** ページには、5 つのレコードが作成され、3 つのレコードが更新され、2 つのレコードにエラーがあることが表示されます。
 - ステージング ビューでは、2 つのレコードにエラーがあります。
 - レコードを修正し再度インポートを実行すると、ステージング ビューにすべてのレコードが完了したことが表示されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

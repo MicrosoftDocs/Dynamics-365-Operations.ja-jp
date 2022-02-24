@@ -1,25 +1,28 @@
 ---
 title: 品目再配賦の未処理ピッキングの設定
 description: このトピックでは、指定された場所に在庫が不十分な場合に、倉庫作業者が他の倉庫を素早く見つけることができるようにする方法について説明します。
-author: Mirzaab
+author: ShylaThompson
+manager: tfehr
 ms.date: 06/29/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fe17246037a35e44d12476f184af3bd4c806022
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4e8f5c23f82e96145f411ec993f766a90137b5b8
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565235"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432318"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>品目再配賦の未処理ピッキングの設定
 
@@ -61,6 +64,3 @@ ms.locfileid: "7565235"
 6. 一覧から **ユーザー ID** を選択します。 例えば 24 です。
 7. **作業** クイック タブを展開します。
 8. **手動による再配賦を許可** フィールドで **はい** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,6 +3,7 @@ title: 製品およびヘルプの言語およびロケール記述子
 description: このトピックでは、Finance and Operations クライアントと、翻訳された Microsoft Help コンテンツを含む GitHub リポジトリの間の言語名をマップします。
 author: edupont04
 ms.topic: article
+ms.service: dynamics-ax-platform
 ms.date: 05/11/2020
 audience: IT Pro
 ms.reviewer: tfehr
@@ -10,12 +11,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 0bf34a68912b7f3f2a1b9bc46f12c04372170a4443c050846dab481f2e06f211
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f25014194bdb37b60e961b7419aa3ee21d5ff8e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741638"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685085"
 ---
 # <a name="language-and-locale-descriptors-in-the-product-and-in-help"></a>製品およびヘルプの言語およびロケール記述子
 
@@ -92,6 +93,3 @@ Microsoft teams は、英語 (米国) でコンテンツを作成します。 �
 
 [カスタム ヘルプの概要](custom-help-overview.md)  
 [カスタム ヘルプ ツールキット](custom-help-toolkit.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

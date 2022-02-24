@@ -1,25 +1,27 @@
 ---
 title: ツールバーおよびリストのサブパターン
-description: この記事では、ツールバーとリストのフォームのサブパターンについて説明します。
+description: この記事では、ツールバーとリストのフォームのサブパターンについて説明します。 このサブパターンは、親エンティティの子コレクションを表形式グリッドまたはツリーのいずれかとして表示するために使用されます。
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 15931
 ms.assetid: a60f829b-e496-453b-9e58-f7cb4d67114f
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50efbde7b2009448ff541eb8338f5dcd408bda21
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 805a60ec6d861dbce13370efee7991fd33620393
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781488"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684995"
 ---
 # <a name="toolbar-and-list-subpattern"></a>ツールバーおよびリストのサブパターン
 
@@ -27,7 +29,8 @@ ms.locfileid: "7781488"
 
 この記事では、ツールバーとリストのフォームのサブパターンについて説明します。 このサブパターンは、親エンティティの子コレクションを表形式グリッドまたはツリーのいずれかとして表示するために使用されます。 
 
-## <a name="usage"></a>用途
+<a name="usage"></a>用途
+-----
 
 このサブパターンは、親エンティティの子コレクションを表形式グリッドまたはツリーのいずれかとして表示するために使用されます。 ツールバーに含まれるアクションは 10 個未満です。 グリッドを使用している場合は、10 未満のフィールドが含まれます。 この記事では、2 つのパターンについて説明します。
 
@@ -37,11 +40,11 @@ ms.locfileid: "7781488"
 ## <a name="wireframes"></a>ワイヤーフレーム
 ### <a name="toolbar-and-list"></a>ツールバーおよびリスト
 
-[![ツールバーとリストのフォームのワイヤーフレーム。](./media/toolbarlist1.png)](./media/toolbarlist1.png)
+[![ツールバーとリストのフォームのワイヤーフレーム](./media/toolbarlist1.png)](./media/toolbarlist1.png)
 
 ### <a name="toolbar-and-list-double"></a>ツールバーおよびリスト (ダブル)
 
-[![ツールバーとリスト (ダブル) のフォームのワイヤーフレーム。](./media/toolbarlist2.png)](./media/toolbarlist2.png)
+[![ツールバーとリスト (ダブル) のフォームのワイヤーフレーム](./media/toolbarlist2.png)](./media/toolbarlist2.png)
 
 ## <a name="model"></a>モデル
 ### <a name="toolbar-and-list--high-level-structure"></a>ツールバーおよびリスト - 高度なレベル構造
@@ -92,13 +95,13 @@ ms.locfileid: "7781488"
 
 フォーム: **VendTable (TabCommunication)** 
 
-[![ツールバーおよびリストの例。](./media/toolbarlist3.png)](./media/toolbarlist3.png)
+[![ツールバーおよびリストの例](./media/toolbarlist3.png)](./media/toolbarlist3.png)
 
 ### <a name="toolbar-and-list-double"></a>ツールバーおよびリスト (ダブル)
 
 フォーム: **SalesQuickQuote (TabPageExistingItems)** 
 
-[![ツールバーおよびリスト (ダブル) の例。](./media/toolbarlist4.png)](./media/toolbarlist4.png)
+[![ツールバーおよびリスト (ダブル) の例](./media/toolbarlist4.png)](./media/toolbarlist4.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -124,7 +127,4 @@ ms.locfileid: "7781488"
 
 **VendTable** 
 
-[![以前のバージョンの例。](./media/toolbarlist5.png)](./media/toolbarlist5.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[![以前のバージョンの例](./media/toolbarlist5.png)](./media/toolbarlist5.png)

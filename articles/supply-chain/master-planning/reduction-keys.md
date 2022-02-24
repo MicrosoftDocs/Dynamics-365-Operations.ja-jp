@@ -1,27 +1,30 @@
 ---
 title: 予測下方修正キー
 description: このトピックでは、下方修正キーを設定する方法を示す例を提供します。 これには、さまざまな下方修正キーの設定とそれぞれの結果に関する情報が含まれます。 予測要求を減らす方法を定義するには下方修正キーを使用できます。
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbed77fd1abc0e4ae26e2b9ddcc01d3f4a84889f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570828"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431835"
 ---
 # <a name="forecast-reduction-keys"></a>予測下方修正キー
 
@@ -86,18 +89,7 @@ ms.locfileid: "7570828"
 
 ### <a name="transactions--reduction-key"></a>トランザクション – 下方修正キー
 
-**予測要求の削減に使用する方法** フィールドを *トランザクション – 下方修正キー* に設定した場合、予測要件は、下方修正キーによって定義された期間に発生する、特定の需要トランザクションから削減されます。
-
-特定の需要は、**補充グループ** ページの **予測の削減方法** フィールドで定義されます。 **予測の削減方法** フィールドを *注文* に設定した場合、販売注文トランザクションのみが特定の需要と見なされます。 *すべてのトランザクション* に設定した場合、会社間以外の発行在庫トランザクションは、特定の需要と見なされます。 会社間販売注文も特定の需要と見なされる場合は、**会社間注文を含める** オプションを *はい* に設定します。
-
-予測の下方修正は、下方修正キー期間の最初 (最も早い) 需要予測レコードから開始されます。 特定の在庫トランザクションの数量が同じ下方修正キー期間の需要予測明細行の数量を超える場合、在庫トランザクションの数量の残高を使用して、前の期間の需要予測数量が削減されます (未調整予測がある場合)。
-
-前の下方修正キー期間に未調整予測が残っている場合は、在庫トランザクションの数量の残高を使用して、翌月の予測数量が削減されます (未調整予測がある場合)。
-
-**予測要求の削減に使用する方法** が *トランザクション – 下方修正キー* に設定されている場合、下方修正キー行の **割合** フィールドの値は使用されません。 日付のみを使用して、下方修正キー期間を定義します。
-
-> [!NOTE]
-> 今日の日付以前に転記された予測は無視され、計画オーダーの作成に使用されません。 たとえば、1 月 1 日に需要予測が生成され、1 月 2 日に需要予測を含むマスター プランを実行した場合、計算では 1 月 1 日の需要予測行が無視されます。
+**トランザクション - 下方修正キー** を選択すると、予測要求は下方修正キーで定義された期間に発生するトランザクションによって削減されます。
 
 #### <a name="example-transactions--reduction-key"></a>例: トランザクション – 下方修正キー
 
@@ -207,7 +199,7 @@ ms.locfileid: "7570828"
 予測下方修正キーは、予測要求を削減するため **トランザクション - 下方修正キー** および **率 - 下方修正キー** の方法で使用されます。 下方修正キーを作成および設定するには、次の手順に従います。
 
 1. **マスター プラン \> 設定 \> 補充 \> 下方修正キー** の順に移動します。
-2. **新規** を選択して、下方修正キーを作成します。
+2. **新規** を選択または **Ctrl+N** を押して下方修正キーを作成します。
 3. **下方修正キー** フィールドで、予測下方修正キーの固有識別子を入力します。 その後、**名前** フィールドで、名前を入力します。 
 4. 各期間の期間および下方修正キーの割合を定義します。
 
@@ -235,6 +227,3 @@ ms.locfileid: "7570828"
 ## <a name="additional-resources"></a>追加リソース
 
 [マスター プランの概要](master-plans.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

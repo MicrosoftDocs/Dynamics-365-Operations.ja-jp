@@ -1,35 +1,38 @@
 ---
 title: サービス注文ステージを設定します
 description: サービス注文ステージを設定します。
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf05b86fe0fd08c72351ea753a97d36604a55ac9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 86d60a67b60b1bd3a13666b35f729f88ecfee3d3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580291"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431637"
 ---
 # <a name="set-up-service-order-stages"></a>サービス注文ステージを設定します 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  **サービス管理** \> **設定** \> **サービス注文** \> **サービス ステージ** に移動します。
+1.  **サービス管理** \> **設定** \> **サービス注文** \> **サービス ステージ** の順にクリックします。
 
-2.  **新規作成** を選択して、新しいレコードを作成します。
+2.  Ctrl + N キーを押して、新しいレコードを作成します。
 
 3.  **サービス ステージ** および **説明** フィールドで、サービス ステージ ID と説明を指定します。
 
@@ -46,6 +49,3 @@ ms.locfileid: "7580291"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

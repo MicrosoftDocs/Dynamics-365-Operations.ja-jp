@@ -1,28 +1,28 @@
 ---
 title: 購入ポリシーの概要
 description: この記事は、購入ポリシーに関する情報を提供します。 購入ポリシーは、要求プロセスを制御するルールのコレクションです。 購入ポリシーは調達管理者が組織の戦略購買の要求に対応するポリシー構造を作成することによって自分の調達戦略を実行できるように助けます。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "11614"
-- intro-internal
+ms.custom: 11614
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cc150ae1a912fbfb4daf505e4240786c2f380a3
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: def842116e0c6c57d407cb4fb30a26a9e17d9a2c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982280"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022209"
 ---
 # <a name="purchasing-policies-overview"></a>購入ポリシーの概要
 
@@ -134,7 +134,7 @@ Samは、Sales UK つまり Contoso 社の英国オフィスの販売部門で�
 -   **価格許容範囲** タブで、調達カタログの品目の価格が増加する際に、確認プロセスで承認済購買要求の処理に使用する価格許容範囲ルールを定義します。 購買要求上の行品目の正味金額が、購買要求が承認される時間と発注書が作成される時間の間に増加できる最大量を設定します。 正味金額は次の式を使用して計算されます。(\[数量 x (単価 – 割引) ÷ 価格単位\] + 購買雑費) × (100 – 割引率) ÷ 100 設定した価格許容範囲を超える購買要求明細行は、手動で処理されます。 **エラー処理** タブで構成したルールにより、購買要求明細行の処理方法が決まります。
 -   **エラー処理** タブで、仕入先エラーまたは価格許容範囲エラーのために発注書の作成時に検証が失敗する場合に、購買要求に適用される処理ルールをコンフィギュレーションできます。 次のいずれかのオプションを選択します。
     -   **アクションなし** – **承認済購買要求のリリース** ページに購買要求明細行が残ります。 購買要求明細行の状態は **承認済** に残ります。 ただし、発注書が購買要求明細行に対して生成する前に、エラーを解決する必要があります。
-    -   **購買要求明細行のキャンセル** – 購買要求明細行が取り消されます。 依頼者がまだ明細行品目を要求する場合は、依頼者はキャンセルされた明細行に新しい購買要求を作成できます。
+    -   **購買要求明細行のキャンセル** – 購買要求明細行が取り消されます。 依頼者がまだその明細行品目を要求する場合は、依頼者はそのキャンセルされた明細行に新しい購買要求を作成できます。
     -   **新しい購買要求明細行の作成** – 購買要求明細行が取り消されます。 検証に失敗した購買要求明細行のみを含む、新しい購買要求が生成されます。 新しく生成された購買要求は、**ドラフト** 状態になります。 検証エラーが解決されると、これらの購買要求はレビューのために再送信できます。 明細行がキャンセルされ、失敗した購買要求明細行のために新しい購買要求が生成されると、購買要求明細行の作成者は通知を受けます。
 -   **発注書の手動作成** タブで、購買要求を手動で処理する必要があるか、または自動的に発注書に変換されるかどうかを決定するパラメーターを定義できます。 パラメータは、内部カタログの品目、外部カタログの品目、またはカタログ以外の品目に適用できます。 次のいずれかのオプションを選択します。
     -   **手入力の発注書** – すべての購買要求の発注書を手動で作成します。
@@ -150,6 +150,3 @@ Samは、Sales UK つまり Contoso 社の英国オフィスの販売部門で�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

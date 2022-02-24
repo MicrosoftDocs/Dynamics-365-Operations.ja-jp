@@ -2,9 +2,11 @@
 title: カスタム ヘルプ Web サイトを [ヘルプ] ウィンドウに接続する
 description: このトピックでは、製品内の [ヘルプ] ウィンドウをカスタム ヘルプ コンテンツで拡張する方法について説明します。
 author: edupont04
+manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 4da02d9629333d9f51833e1a52ef05e2c7fdafda62664bf59df0428233e47be7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4a950e20c4c333acf58d8a16a817eb611177b791
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737835"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685099"
 ---
 # <a name="connect-a-custom-help-website-to-the-help-pane"></a>カスタム ヘルプ Web サイトを [ヘルプ] ウィンドウに接続する
 
@@ -151,6 +153,3 @@ Finance and Operations ソリューションのカスタム ヘルプ コンテ�
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
 [Finance and Operations アプリのヘルプ エクスペリエンスのコンフィギュレーション](../../fin-ops/get-started/help-connect.md)  
 [ヘルプ システム](../../fin-ops/get-started/help-overview.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

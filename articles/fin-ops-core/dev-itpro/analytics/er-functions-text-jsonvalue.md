@@ -2,8 +2,11 @@
 title: JSONVALUE ER 関数
 description: このトピックでは、JSONVALUE 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-ms.date: 10/25/2021
+manager: kfend
+ms.date: 12/11/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff33098e5be4dd9748d01d45b596360617305724
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 11f9ac680ea00622367ea56106fd22508628d85d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700066"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685910"
 ---
 # <a name="jsonvalue-er-function"></a>JSONVALUE ER 関数
 
@@ -41,7 +44,7 @@ JSON データを含む *文字列* 型のデータ ソースの有効なパス�
 
 `path`: *文字列*
 
-JSON データのスカラー値の識別子。 フォワード スラッシュ (/) を使用して、関連する JSON ノードの名前を切り離します。 角カッコ (\[\]) の表記を使用して、JSON 配列内の特定の値のインデックスを指定します。 このインデックスにはゼロ ベースの番号付けが使用されます。
+JSON データのスカラー値の識別子。
 
 ## <a name="return-values"></a>戻り値
 
@@ -49,37 +52,10 @@ JSON データのスカラー値の識別子。 フォワード スラッシュ 
 
 結果テキスト値。
 
-## <a name="example-1"></a>例 1
+## <a name="example"></a>例
 
 **JsonField** データ ソースは、JSON 形式の次のデータを含みます: **{"BuildNumber":"7.3.1234.1", "KeyThumbprint":"7366E"}**。 この場合、`JSONVALUE (JsonField, "BuildNumber")` 式は *文字列* データ型の次の値を返します: **"7.3.1234.1"**。
-
-## <a name="example-2"></a>例 2
-
-*計算済フィールド* タイプの **JsonField** データソースには、次の式が含まれています: `"{""workers"": [ {""name"": ""Adam"", ""age"": 30, ""emails"": [""AdamS@Contoso.com"", ""AdamS@Hotmail.com"" ]}, { ""name"": ""John"", ""age"": 21, ""emails"": [""JohnS@Contoso.com"", ""JohnS@Aol.com""]}]}"`
-
-以下のデータを JSON 形式で表現した [*文字列*](er-formula-supported-data-types-primitive.md#string) の値を返すように構成した式です。
-
-```json
-{
-    "workers": [
-        {
-            "name": "Adam",
-            "age": 30,
-            "emails": [ "AdamS@Contoso.com", "AdamS@Hotmail.com" ]
-        },
-        {
-            "name": "John",
-            "age": 21,
-            "emails": [ "JohnS@Contoso.com", "JohnS@Aol.com" ]
-        }
-    ]
-}
-```
-
-この場合、式 `JSONVALUE(json, "workers/[1]/emails/[0]")` は次の *文字列* データ型の値を返します: `JohnS@Contoso.com`。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [テキスト関数](er-functions-category-text.md)
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

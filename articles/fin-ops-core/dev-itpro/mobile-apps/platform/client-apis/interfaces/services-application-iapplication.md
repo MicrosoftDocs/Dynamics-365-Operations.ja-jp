@@ -1,18 +1,25 @@
 ---
 title: アプリケーション タイプ
 description: アプリケーションの実行時のインスタンスを表します。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 114969807d94f5447180348cb6cdf5ddd0993b83
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 1066ae3b0689169cfb2836cecfb145e99f83174a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782715"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685427"
 ---
 # <a name="application-type"></a>アプリケーション タイプ
 
@@ -62,6 +69,3 @@ appInit(metadata: [ApplicationMetadata](services-application-iapplicationmetadat
 
 #### <a name="returns-any"></a>any を返します
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

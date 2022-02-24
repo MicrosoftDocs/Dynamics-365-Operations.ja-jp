@@ -2,9 +2,11 @@
 title: アクション依存の ER 送信先を構成する
 description: このトピックでは、送信ドキュメントを生成するように構成された電子申告 (ER) 形式に対して、アクション依存の送信先を構成する方法について説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d860c2b9fe01231e8e47b085f93c79c5a7dc449e
-ms.sourcegitcommit: d13ea8b6baf73601a8b57548232aac84ffaba717
+ms.openlocfilehash: ea7543fddef085cfd1e92edf0b1dabf6d0aac38a
+ms.sourcegitcommit: 5264aaec3723c40a219e4d2867afe1ba9cc5f2a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7941247"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5153642"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>アクション依存の ER 送信先を構成する
 
@@ -60,7 +62,7 @@ Microsoft Dynamics 365 Finance **バージョン 10.0.17以降** では、その
     - **送信** アクションを実行時に指定すると、**メール** ER 送信先が適用されます。
     - **印刷** アクションを実行時に指定すると、**プリンター** ER 送信先が適用されます。
 
-たとえば、**自由書式の請求書 (Excel)** ER 形式を使用して、転記時に [自由書式の請求書](../../../finance/accounts-receivable/create-free-text-invoice-new.md) を印刷できます。 生成されたドキュメントを転送するには、この ER 形式用に ER 送信先を構成する必要があります。 たとえば、生成されたドキュメントで次の処理を実行するには、これらの ER 送信先を構成する必要があります:
+たとえば、**自由書式の請求書 (Excel)** ER 形式を使用して、転記時に [自由書式の請求書](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) を印刷できます。 生成されたドキュメントを転送するには、この ER 形式用に ER 送信先を構成する必要があります。 たとえば、生成されたドキュメントで次の処理を実行するには、これらの ER 送信先を構成する必要があります:
 
 - ER 形式が実行されているが、アクション コードが指定されていない場合 (例えば、ドキュメントが電子的に送信される場合など) は、ドキュメントをアーカイブします。
 - ユーザーが **表示** アクションを実行すると、Web ブラウザーでドキュメントをプレビューします。
@@ -69,11 +71,11 @@ Microsoft Dynamics 365 Finance **バージョン 10.0.17以降** では、その
 
 次の図は、各レコードが個別のユーザー アクションに構成されている場合に、この ER 送信先を個別の送信先レコードのセットとして構成を行う方法を示しています:
 
-![1 つのユーザー アクションに対してすべての送信先レコードが構成されている場合に、ER 形式のアクション依存の送信先設定を持つ電子申告の送信先ページ。](./media/er-destination-action-dependent-01.png)
+![1 つのユーザー アクションに対してすべての送信先レコードが構成されている場合に、ER 形式のアクション依存の送信先設定を持つ電子申告の送信先ページ](./media/er-destination-action-dependent-01.png)
 
 次の図は、各レコードが個別の送信先に構成されている場合に、ER 送信先を個別の送信先レコードのセットとして代わりに同じ構成を行う方法を示しています:
 
-![1 つの送信先に対してすべての送信先レコードが構成されている場合に、ER 形式のアクション依存の送信先設定を持つ電子申告の送信先ページ。](./media/er-destination-action-dependent-01a.png)
+![1 つの送信先に対してすべての送信先レコードが構成されている場合に、ER 形式のアクション依存の送信先設定を持つ電子申告の送信先ページ](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > 実行している ER 形式のアクション コードが指定されている一方で、そのアクション コードに送信先が構成されていない場合は、[既定](electronic-reporting-destinations.md#default-behavior) の送信先の動作が適用されます。
@@ -82,9 +84,9 @@ Microsoft Dynamics 365 Finance **バージョン 10.0.17以降** では、その
 
 ER 形式を実行するときに、構成済の送信先設定を実行時に変更するための適切な [アクセス許可](electronic-reporting-destinations.md#security-considerations) を持つユーザが、ユーザー アクションをプロビジョニングした場合は、構成した送信先設定を変更するためのオプションを示すダイアログ ボックスが表示されます。 このダイアログ ボックスはオプションであり、その外観は、ER フレームワークが ER 形式を実行するために呼び出しがどのように実装されたかによって異なります。 このダイアログ ボックスが表示される場合、指定したユーザー アクションに従って、ボックス内の ER 送信先が有効になります。
 
-次の図では、このトピックで前述したように、**プリンター** アクションがプロビジョニングされ、ER 送信先がこの形式に対して構成されている場合に、自由書式の請求書が [転記](../../../finance/accounts-receivable/create-free-text-invoice-new.md) され、**自由書式の請求書 (Excel)** ER 形式が実行されて、このドキュメントが生成されるときに表示される **電子申告形式の送信先** ダイアログ ボックスの例を示しています。
+次の図では、このトピックで前述したように、**プリンター** アクションがプロビジョニングされ、ER 送信先がこの形式に対して構成されている場合に、自由書式の請求書が [転記](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) され、**自由書式の請求書 (Excel)** ER 形式が実行されて、このドキュメントが生成されるときに表示される **電子申告形式の送信先** ダイアログ ボックスの例を示しています。
 
-![実行中の ER 形式に対して初期構成された ER 送信先を変更するオプションを表示するダイアログ ボックス。](./media/er-destination-action-dependent-02.gif)
+![実行中の ER 形式に対して初期構成された ER 送信先を変更するオプションを表示するダイアログ ボックス](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > 実行中の ER 形式の複数のコンポーネントに ER 送信先を構成した場合、ER 形式の構成済コンポーネントごとにオプションが個別に提供されます。
@@ -103,7 +105,7 @@ ER 形式を実行するときに、構成済の送信先設定を実行時に�
 6. **構成デバッグ ログ** ページで、ER の実行ログをフィルター処理して、ER 形式の実行のログを検索します。
 7. ER 形式の実行にアクションが指定されている場合は、指定されたユーザー アクション コードを示すレコードを含む必要があるログのエントリを確認します。
 
-    ![ER 形式のフィルター処理された実行に対して指定されたユーザー アクション コードに関する情報を含む電子申告実行ログ ページ。](./media/er-destination-action-dependent-03.png)
+    ![ER 形式のフィルター処理された実行に対して指定されたユーザー アクション コードに関する情報を含む電子申告実行ログ ページ](./media/er-destination-action-dependent-03.png)
 
 ## <a name=""></a><a name="reports-list-wave1">ビジネス ドキュメントの一覧 (ウェーブ 1)</a>
 
@@ -115,6 +117,7 @@ ER 形式を実行するときに、構成済の送信先設定を実行時に�
 - 発注書の購買照会
 - 販売注文確認
 - 督促状
+- 顧客勘定明細書
 - 利子計算書
 - 仕入先支払通知
 - 見積依頼
@@ -126,6 +129,3 @@ ER 形式を実行するときに、構成済の送信先設定を実行時に�
 [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 
 [Application update 10.0.17 での電子申告フレームワーク API の変更](er-apis-app10-0-17.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

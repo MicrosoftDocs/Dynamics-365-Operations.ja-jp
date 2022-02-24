@@ -2,9 +2,11 @@
 title: ビジネス プロセス モデラー ライブラリの設定
 description: このトピックでは、ビジネス プロセス モデラー (BPM) ライブラリを作成して使用する方法について説明します。
 author: kfend
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.custom: 196953
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 8463bd9e60d685f9a5da5881b6e1908b46e1789b28e23fbbca92d8334325a3f9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99e64da9a043f4ddce0307db7f822633093e5adb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754987"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685067"
 ---
 # <a name="set-up-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの設定
 
@@ -35,15 +37,15 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
     -   **コーポレート ライブラリ** - 組織内のユーザーがアップロードした独自の業務プロセス。
     -   **グローバル ライブラリ** – 産業間の標準の業務プロセス。
 
-    [![業務プロセス ライブラリページの 3 種類のライブラリ。](./media/bpm_02.png)](./media/bpm_02.png)
+    [![業務プロセス ライブラリページの 3 種類のライブラリ](./media/bpm_02.png)](./media/bpm_02.png)
 
 2.  新しいライブラリを作成するには、任意のライブラリを右クリックし、ウィンドウの左下隅にある **作成** を選択します。 既存のライブラリをコピーするには、そのライブラリを右クリックし、ウィンドウの左下隅にある **コピー** を選択します。
 
-    [![コピー ボタンの場所。](./media/bpm_03.png)](./media/bpm_03.png)
+    [![コピー ボタンの場所](./media/bpm_03.png)](./media/bpm_03.png)
 
     -   **グローバル ライブラリ** – 産業間の標準の業務プロセス。 
     
-    [![業務プロセス ライブラリページの 3 種類のライブラリ。](./media/bpm_02.png)](./media/bpm_02.png)
+    [![業務プロセス ライブラリページの 3 種類のライブラリ](./media/bpm_02.png)](./media/bpm_02.png)
 
 3.  ライブラリ名を入力します。
 
@@ -69,7 +71,7 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
     -   ノードを削除するには、中央ウィンドウでビジネス プロセスを選択し、右ウィンドウで **削除** を選択します。
     -   新しいノードを作成するには、中央ウィンドウの上部にある **新規ビジネス プロセス** フラグを、新しいノードが表示される階層内の場所にドラッグします。
 
-        [![新しい業務プロセス フラグ。](./media/bpm_06.png)](./media/bpm_06.png)
+        [![新しい業務プロセス フラグ](./media/bpm_06.png)](./media/bpm_06.png)
 
     -   既存の業務プロセス ライブラリから業務プロセスをインポートするには、次の手順を実行します。
 
@@ -82,7 +84,7 @@ BPM ライブラリを作成する 2 つの方法があります。 明細行記
 2.  関連付けられたタスク記録がある業務プロセスの明細行に移動し、リンクを選択します。
 3.  手動でフロー チャートを変更するには、**Activities** の下にタイルをドラッグします。
 
-    [![フロー チャートを手動で変更。](./media/bpm_09.png)](./media/bpm_09.png)
+    [![フロー チャートを手動で変更](./media/bpm_09.png)](./media/bpm_09.png)
 
 4.  変更されたフローチャートの Microsoft Visio 図をアップロードするには、**Visio** タブを選択します。
 
@@ -133,6 +135,3 @@ LCS の業務プロセス ライブラリで記録するタスクを表示でき
 ## <a name="additional-resources"></a>追加リソース
 
 AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

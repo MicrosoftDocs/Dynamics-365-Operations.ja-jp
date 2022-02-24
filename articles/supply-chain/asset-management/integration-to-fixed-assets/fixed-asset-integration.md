@@ -1,23 +1,26 @@
 ---
 title: 資産管理と固定資産の統合
 description: このトピックでは、資産管理と固定資産のモジュールを統合して、固定資産を保守資産にリンクできるようにする方法について説明します。
-author: johanhoffmann
+author: kamaybac
+manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: johanho
+ms.author: dabourq
 ms.search.validFrom: 2020-04-17
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: cdda44d361011706fe0ba170309908533aa0c2f7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567586"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431854"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>資産管理と固定資産の統合
 
@@ -112,6 +115,3 @@ ms.locfileid: "7567586"
 1. 固定資産を検索して開きます。
 1. **固定資産** クイックタブで、**機能の場所** フィールドの値を削除します。
 1. アクション ウィンドウで、**保存** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

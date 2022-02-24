@@ -2,23 +2,25 @@
 title: 小売チャンネルのシークレットを管理
 description: このトピックでは、シークレットへのアクセスを必要とするチャンネルで拡張機能を使用している際のシークレット管理方法について説明します。
 author: AamirAllaq
+manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 83892
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: ddc85dad78c86cef0a22067953084afda2cb7ed2
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: dc1bcf2290d20c1126ef6ea7b6a8fbeb50720057
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783392"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685369"
 ---
 # <a name="manage-secrets-for-retail-channels"></a>小売チャンネルのシークレットを管理
 
@@ -38,8 +40,8 @@ ms.locfileid: "7783392"
 
 2. IT プロフェッショナルまたは実装パートナーは、これらの配置およびコンフィギュレーションの手順に従います。
 
-    1. 拡張機能を顧客環境に適用します。 詳細については、[クラウド環境への更新プログラムの適用](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
-    2. 目的のシークレットを Key Vault にアップロードします (または入力します)。 詳細については、[Azure Key Vault とは何ですか](/azure/key-vault/key-vault-overview) を参照してください。
+    1. 拡張機能を顧客環境に適用します。 詳細については、[クラウド環境への更新プログラムの適用](../../dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
+    2. 目的のシークレットを Key Vault にアップロードします (または入力します)。 詳細については、[Azure Key Vault とは何ですか](https://docs.microsoft.com/azure/key-vault/key-vault-overview) を参照してください。
     3. **Key Vault パラメーター** ページで (**本社 \> Key Vault パラメーター**)、本社クライアントを Key Vault に接続するようコンフィギュレーションします。
     4. **Key Vault パラメーター** ページで、本社クライアントの Key Vault シークレットの拡張機能シークレット名を指定します。
 
@@ -125,6 +127,3 @@ CRT 拡張機能のシークレットを読み取るには、次の手順を実�
 ## <a name="offline-support"></a>オフライン サポート
 
 資格情報をオフラインでサポートするには、Key Vault の資格情報が使用できないまたはアクセスできない場合に、拡張機能コードでオフラインへのフェールオーバーが必要です。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

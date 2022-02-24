@@ -1,32 +1,31 @@
 ---
 title: 標準データ エンティティに関する情報を検索します。
 description: このトピックでは、使用可能な標準データ エンティティに関する情報を取得する方法、およびレポートを実行するスクリプトをダウンロードする方法について説明します。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 202654
 ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 244c8c8f98997a81487402191f1de7cfec59c60e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8e4fd62da1ef6b585d5553238669f19f6de7abed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071252"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685693"
 ---
 # <a name="find-information-about-standard-data-entities"></a>標準データ エンティティに関する情報の検索
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 アプリケーションには、既定のデータ エンティティが数多く含まれています。 データ エンティティは頻繁に更新されるため、ドキュメント化のために、データ エンティティ テンプレートを使用して、どのオーダーデータエンティティをインポートする必要があるかを示します。また、各リリースで出荷されるデータ エンティティのリストも使用します。
 
@@ -36,7 +35,7 @@ Microsoft Dynamics Lifecycle Services (LCS) のコンフィギュレーション
 
 ## <a name="reports"></a>レポート
 
-Microsoft は、データ エンティティの次のレポートを提供しており、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61)からダウンロードできます。
+Microsoft は、データ エンティティの次のレポートを提供しており、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)からダウンロードできます。
 
 - データ エンティティの集計: 集計するデータ エンティティと、それぞれに含まれるフィールドを一覧表示します。
 - メジャーの集計: 集計するメジャーを一覧表示します。
@@ -58,6 +57,3 @@ Microsoft は、データ エンティティの次のレポートを提供して
 ## <a name="additional-resources"></a>追加リソース
 
 [データ エンティティの概要](data-entities.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

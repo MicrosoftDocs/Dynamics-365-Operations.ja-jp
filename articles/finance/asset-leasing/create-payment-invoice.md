@@ -2,11 +2,13 @@
 title: 支払請求書の作成
 description: このトピックでは、月次リースの請求書を作成する方法を説明します。 個々のリースに対する請求書の作成や、バッチ プロセスを使用して複数のリースに対して請求書を作成することもできます。
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeasePaymentSchedule
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +17,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bc87c329f6f5dd9532b1319f8d88fbc41dcd4d14
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 303fb0e70530fdc29cb129736b01c0e0e8d02075
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344323"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969581"
 ---
 # <a name="create-payment-invoices"></a>支払請求書の作成
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 月次のリースに対する請求書の作成や、バッチ プロセスを使用して複数のリースに対して請求書を作成することもできます。 以下の手順では、**リース帳簿の設定** ページで **仕入先への支払い** パラメーターをオンにした場合に、個々のリース支払項目を作成する方法を説明します。
 
@@ -41,8 +41,6 @@ ms.locfileid: "7344323"
 5. 適切な仕訳 を選択し、支払を行う必要がある請求書を選択します。
 
     この例では、リース帳簿の **仕入先への支払** パラメーターがオンになっています。 したがって、請求書は請求書の仕訳に含まれます。 **概要** セクションには仕訳入力の概要が表示され、**明細行** セクションには実際の仕訳帳明細行の詳細が表示されます。
-    
-   このシステムには、トランザクションとスケジュールの間に差異が生じないように、特定の財務フィールドが編集できないようロックされています。 ロックされている一部のフィールドは次のとおりです。**勘定**、**金額**、**財務分析コード**、**通貨**、**トランザクション タイプ**。 また、スケジュールとトランザクションの間に差異が発生することがあるため、資産リース仕訳入力に仕訳明細行を追加または削除することはできません。
 
     > [!NOTE]
     > **仕入先への支払** パラメーターがオフになっている場合は、支払仕訳入力がリース帳簿の **資産リース** ページに一覧表示され、請求書の代わりにシステムによって資産リースの入力が作成されます。 **月々のリース仕訳** フィールドに指定されている仕訳帳名に、リース支払の入力が転記され ます。
@@ -50,6 +48,3 @@ ms.locfileid: "7344323"
 6. トランザクションが転記された後は、 リース帳簿の **負債トランザクション** を選択すると、取引情報やリース負債の帳簿価額を確認することができます。
 
     支払スケジュールで、**転記済仕訳帳** チェック ボックスがオンになり、明細行に請求仕訳帳番号が表示されます。 支払仕訳とその仕訳の入力が作成された後は、再作成する前に入力を取り消す必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,30 @@
 ---
 title: Field Service から Supply Chain Management へのプロジェクトの作業指示書の同期
 description: このトピックでは、Dynamics 365 Field Service から Dynamics 365 Supply Chain Management にワーク オーダーとプロジェクト番号を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f0b3214aba5882a585664030d6c1aebe34de455c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5ebf23c5c831e9dad5d13c72f82eb3eeb30da853
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572532"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431772"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Field Service から Supply Chain Management へのプロジェクトの作業指示書の同期
 
@@ -29,9 +32,9 @@ ms.locfileid: "7572532"
 
 このトピックでは、Dynamics 365 Field Service から Dynamics 365 Supply Chain Management にワーク オーダーとプロジェクト番号を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-[![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
+[![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-使用されている **ワーク オーダーとプロジェクト (Field Service から Supply Chain Management)** テンプレートは、**ワーク オーダー (Field Service から Supply Chain Management)** テンプレートに基づきます。 詳細については、[Field Service のワーク オーダーと Supply Chain Management の販売注文との同期](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
+使用されている **ワーク オーダーとプロジェクト (Field Service から Supply Chain Management)** テンプレートは、**ワーク オーダー (Field Service から Supply Chain Management)** テンプレートに基づきます。 詳細については、[Field Service のワーク オーダーと Supply Chain Management の販売注文との同期](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
 
 このトピックでは、2 つのテンプレートの相違のみについて説明します:
 - **ワーク オーダーとプロジェクト (Field Service から Supply Chain Management)**
@@ -61,19 +64,16 @@ ms.locfileid: "7572532"
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheader"></a>ワーク オーダーとプロジェクト (Field Service から Supply Chain Management): WorkOrderHeader
 
-[![データ統合のテンプレート マッピング、作業指示書とプロジェクト (Field Service から Supply Chain Management): WorkOrderHeader。](./media/FSWOP1.png)](./media/FSWOP1.png)
+[![データ統合のテンプレートのマッピング](./media/FSWOP1.png)](./media/FSWOP1.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheaderproject"></a>ワーク オーダーとプロジェクト (Field Service から Supply Chain Management): WorkOrderHeaderProject
 
-[![データ統合のテンプレート マッピング、作業指示書とプロジェクト (Field Service から Supply Chain Management): WorkOrderHeaderProject。](./media/FSWOP2.png)](./media/FSWOP2.png)
+[![データ統合のテンプレートのマッピング](./media/FSWOP2.png)](./media/FSWOP2.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderproduct"></a>ワーク オーダーとプロジェクト (Field Service から Supply Chain Management): WorkOrderProduct
 
-[![データ統合のテンプレート マッピング、作業指示書とプロジェクト (Field Service から Supply Chain Management): WorkOrderProduct。](./media/FSWOP3.png)](./media/FSWOP3.png)
+[![データ統合のテンプレートのマッピング](./media/FSWOP3.png)](./media/FSWOP3.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>ワーク オーダーとプロジェクト (Field Service から Supply Chain Management): WorkOrderService
 
-[![データ統合のテンプレート マッピング、作業指示書とプロジェクト (Field Service から Supply Chain Management): WorkOrderService。](./media/FSWOP4.png)](./media/FSWOP4.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![データ統合のテンプレートのマッピング](./media/FSWOP4.png)](./media/FSWOP4.png)

@@ -2,23 +2,25 @@
 title: 人事管理の個人データ要求への対応
 description: このトピックでは、データ コントローラとして Dynamics 365 Human Resources for Talent をデータ プロセッサとして使用して、欧州連合のGDPR (General Data Protection Regulation) に基づくデータ要求に対応する方法について説明します。
 author: shielasogge
+manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 10031
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cd9f9a576704c9423376f2ff0e8ab3600745eba
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e7aebffed7552ac74d698853e60419ca1ebdaebb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782881"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685147"
 ---
 # <a name="respond-to-requests-for-personal-data-in-human-resources"></a>人事管理の個人データ要求への対応
 
@@ -110,6 +112,3 @@ GDPR の詳細については、[欧州連合の Web サイト](https://europa.e
 
 ### <a name="disclaimer"></a>免責事項
 (c)2019 Microsoft Corporation. All rights reserved. このドキュメントは、"現状のまま" 提供されます。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。 このドキュメントの使用上のリスクは、すべてユーザーが負うものとします。 このドキュメントは、Microsoft の製品に含まれる知的財産に対する法律上の権利をお客様に付与するものではありません。 内部での参照を目的とする場合、このドキュメントをコピーして使用できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

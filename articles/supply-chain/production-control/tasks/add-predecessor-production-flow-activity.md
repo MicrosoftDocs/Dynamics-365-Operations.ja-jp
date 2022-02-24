@@ -1,25 +1,28 @@
 ---
 title: 生産フロー活動への先行処理の追加
 description: 生産フロー バージョンでは、すべての活動は順番に配列する必要があります。
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanActivityLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc1aa742013faeeb545d746f9715c639a5b66b9b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c39cef1174439b42a072bd7fc1ac29ef31ecf864
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575078"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431695"
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a>生産フロー活動への先行処理の追加
 
@@ -49,6 +52,3 @@ ms.locfileid: "7575078"
     * 活動関係の既定のサイクル時間率は 1 です。 これは、活動またはタクト タイムの両方が同じペースで実行されると仮定します。 先行処理がより速いペース (下部タクト タイム) で実行中の場合、比率は1以下にします。先行がそれよりも遅いペース (より大きい)で実行中の場合、サイクル時間率は1以上になります。  
 5. [OK] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

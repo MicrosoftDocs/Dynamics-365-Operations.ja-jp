@@ -1,25 +1,27 @@
 ---
 title: ウィザードのフォーム パターン
-description: この記事では、ウィザードのフォーム パターンに関する情報を提供します。 ウィザードは、ユーザーがタスクを実行するためのユーザー アシスタンス フォームです。
+description: この記事では、ウィザードのフォーム パターンに関する情報を提供します。 ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 14671
 ms.assetid: 564b88d7-85f5-488a-bbbe-19eff7194321
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8905ea58a11ff2d10b263fb11f14c03f5bd4bfed
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6bed7bad0033906bdd455ed0990cb4adb0e07637
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781053"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684991"
 ---
 # <a name="wizard-form-pattern"></a>ウィザードのフォーム パターン
 
@@ -27,13 +29,14 @@ ms.locfileid: "7781053"
 
 この記事では、ウィザードのフォーム パターンに関する情報を提供します。 ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。
 
-## <a name="usage"></a>用途
+<a name="usage"></a>用途
+-----
 
 ウィザードは、順序付けられた一連のタブ ページを使用して、ユーザーがタスクを実行するユーザー アシスタントの特別なフォームです。 ウィザードは、学習または実行が難しい複雑または頻度の低いタスクで、または頻繁に実行する面倒なタスクで特に便利です。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![ウィザード フォームのワイヤーフレーム。](./media/wizard1-1024x574.png)](./media/wizard1.png)
+[![ウィザード フォームのワイヤーフレーム](./media/wizard1-1024x574.png)](./media/wizard1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -91,7 +94,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **WrkCtrBulkResReqEditWizard** 
 
-![ウィザードの例。](./media/wizard2.png)
+![ウィザードの例](./media/wizard2.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -106,12 +109,9 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="ax-2012-links"></a>AX 2012 リンク
 
--   [Microsoft DynamicsAX\[AX 2012\] の MSDN ウィザード](/dynamicsax-2012/developer/wizards-in-microsoft-dynamics-ax)
--   [ウィザード開発のための MSDN ガイドライン \[AX 2012\]](/dynamicsax-2012/developer/guidelines-for-wizard-development)
+-   [Microsoft DynamicsAX\[AX 2012\] の MSDN ウィザード](https://msdn.microsoft.com/library/aa622644.aspx)
+-   [ウィザード開発のための MSDN ガイドライン \[AX 2012\]](https://msdn.microsoft.com/library/aa853845.aspx)
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
-[![以前のバージョンの例。](./media/wizard3.png)](./media/wizard3.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[![以前のバージョンの例](./media/wizard3.png)](./media/wizard3.png)

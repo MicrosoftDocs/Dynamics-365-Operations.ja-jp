@@ -1,10 +1,12 @@
 ---
 title: メンテナンス予算の作成
 description: このトピックでは、資産管理でメンテナンス予算を作成する方法について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetBudgetLineAdjust, EntAssetBudget, EntAssetBudgetRecalc, EntAssetBudgetCopy, EntAssetBudgetLine, EntAssetBudgetCreate, EntAssetBudgetApprove, EntAssetBudgetCalculateActualCost
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a375eb7c208479615b2d5e7cf78168ffd7ac8b16c52c85a7ef5a41aa69c947d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 602a00060c1e56285d9954981d019bececaf90fd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776947"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020992"
 ---
 # <a name="create-maintenance-budgets"></a>メンテナンス予算の作成
 
@@ -50,12 +52,9 @@ ms.locfileid: "6776947"
     > [!NOTE]
     > メンテナンス予算を承認した後、最初に承認を削除しない限り、**メンテナンス予算行** ページの関連する明細行を再計算または調整することはできません。 メンテナンス予算の承認を削除するには、**メンテナンス予算** ページで予算を選択し、**承認** を選択します。 次に、**予算の承認** ダイアログ ボックスで、**OK** を選択します。
 
-![メンテナンス予算。](media/01-maintenance-budgets.png)
+![メンテナンス予算](media/01-maintenance-budgets.png)
 
 既存の予算をコピーして新しいメンテナンス予算を作成することもできます。 **メンテナンス予算** ページで、コピーする予算を選択をし、次に **コピー** を選択します。 この方法は、たとえば、1 か月分の予算を作成していて、それを他の月にコピーする場合などに役立ちます。
 
 > [!NOTE]
 > メンテナンス予算で計算されるのは、メンテナン ススケジュール行に基づく予算原価のみです。 同じ期間の実際原価を計算するには、**資産原価管理** ページで計算を実行します。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

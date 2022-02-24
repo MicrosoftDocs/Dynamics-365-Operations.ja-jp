@@ -1,26 +1,29 @@
 ---
 title: 循環棚卸
 description: この記事は、倉庫管理で使用できる倉庫ソリューションで、循環棚卸を使用する方法について説明します。 この記事は、在庫管理で使用できる倉庫ソリューションには適用されません。
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902224"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432302"
 ---
 # <a name="cycle-counting"></a>循環棚卸
 
@@ -34,7 +37,7 @@ ms.locfileid: "7902224"
 2.  **プロセス循環棚卸** – 循環棚卸作業の作成後、倉庫の場所の品目の棚卸をし、Dynamics 365 Supply Chain Management への結果の入力にモバイル デバイスを使用して、循環棚卸作業を実行します。 または、循環棚卸作業を作成せずに、倉庫の場所の品目を棚卸できます。 このプロセスは *スポット循環棚卸* と呼ばれます。
 3.  **循環棚卸値の差異の解決** – 循環棚卸後、棚卸値の差異がある品目は、**すべての作業** ページの作業状態が **検討保留** です。 これらの差異は **循環棚卸作業が検討保留** ページで解決できます。
 
-次の図は、循環棚卸プロセスを示します。 ![循環棚卸のプロセス フロー。](./media/performcyclecountinginawarehouselocation.jpg)
+次の図は、循環棚卸プロセスを示します。 ![循環棚卸のプロセス フロー](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>循環棚卸計画の前提条件
 次の表に、循環棚卸を使用する前に準備が整っている必要のある前提条件を示します。
@@ -137,6 +140,3 @@ ms.locfileid: "7902224"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

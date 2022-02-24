@@ -1,30 +1,33 @@
 ---
 title: サイトの計画の作成
 description: 生産計画担当者は、特定品目を生産するための材料と能力要件を計算します。
-author: ChristianRytt
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqTransPOUrgentFormPart, SysQueryForm
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f7da319d4c28af311d79dc01bb93a9fe2f76480
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 52721d948554d4853f9e1d4dec45e45e619a4829
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568594"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431981"
 ---
 # <a name="create-a-plan-for-a-site"></a>サイトの計画の作成
 
 [!include [banner](../../includes/banner.md)]
 
-生産計画担当者は、特定品目を生産するための材料と能力要件を計算します。 調達提案が作成された後、計画している注文を検索し、緊急を要する注文から注文を確定していきます。 最も緊急な注文とは、現在の日付で確定される必要があるものです。 デモ データの会社 USMF を使用して、これらのタスクを実行します。
+生産計画担当者は、特定品目を生産するための材料と能力要件を計算します。 調達提案が作成された後、計画している注文を検索し、注文を確定し、緊急を要する注文から始めます。 最も緊急な注文とは、現在の日付で確定される必要があるものです。 デモ データの会社 USMF を使用して、これらのタスクを実行します。
 
 
 ## <a name="create-a-materials-and-capacity-plan-for-an-item"></a>品目の材料および能力計画を作成します
@@ -52,6 +55,3 @@ ms.locfileid: "7568594"
 2. [確定] をクリックします。
 3. [OK] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

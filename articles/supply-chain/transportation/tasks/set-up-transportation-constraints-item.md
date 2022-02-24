@@ -1,25 +1,28 @@
 ---
 title: 品目の配送制約の設定
 description: この手順では、選択した品目が選択したハブを通じて配送されないよう配送制約を設定します。
-author: Henrikan
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4fab138e1509b1a1266f683d070eab5a967fb9ef
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f351da832f8fa62935d09c6ce6ede277971dbbbc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580171"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431747"
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>品目の配送制約の設定
 
@@ -41,6 +44,3 @@ ms.locfileid: "7580171"
 10. [保存] をクリックします。
 11. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

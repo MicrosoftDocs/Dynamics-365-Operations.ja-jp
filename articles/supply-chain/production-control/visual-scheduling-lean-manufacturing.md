@@ -2,13 +2,16 @@
 title: リーン生産の視覚的スケジューリング
 description: このトピックでは、生産計画担当者がかんばん作業の生産計画を制御し最適化するために使用できる、かんばんスケジュール ボードに関する情報を提供します。
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5803793a4874ee73f943d0f059047458c37dc48b7d3276dadc8d8803599fb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764815"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431718"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>リーン生産の視覚的スケジューリング
 
@@ -47,8 +50,8 @@ ms.locfileid: "6764815"
 ## <a name="kanban-schedule-board"></a>かんばんスケジュール ボード
 **かんばんスケジュール ボード** ページには、次の図に示すように、7 つの主要な要素が含まれています。 
 
-![かんばんスケジュール ボード。](./media/kanban-schedule-board-1024x554.png)
-1.  アクション ウィンドウ
+![かんばんスケジュール ボード](./media/kanban-schedule-board-1024x554.png)
+1.  アクション ペイン
 2.  フィルター フィールド
 3.  予定外のジョブ用ボタン
 4.  期間ノード
@@ -71,7 +74,7 @@ ms.locfileid: "6764815"
 ## <a name="plan-unplanned-jobs"></a>予定外のジョブの計画
 **予定外のジョブの計画** ダイアログ ボックスから、予定外のかんばん作業をスケジュールすることができます。 このダイアログ ボックスを開くには、**予定外のジョブ** ボタンをクリックして、予定外のジョブの現在の番号を表示します。 または、アクション ペインの **ボード** タブで **予定外のジョブの計画** をクリックします。 ダイアログ ボックスは、作業セルに対し予定外のかんばん作業の一覧を表示します。 **フィルター** フィールドを使用して、グリッド内のすべてのフィールドをフィルター処理することができます。 たとえば、特定の製品のためにかんばん作業をフィルター処理することができます。 スケジュールしたいジョブのフィルタ処理されたリストができたら、それらのジョブをリストから選択し、**OK** をクリックします。 自動計画を使用してジョブをスケジュールするには、**自動計画** オプションを **はい** に設定します。 この場合、ジョブは期日に従って期間にスケジュールされます。 期間別にジョブをスケジュールすることもできます。 **期間** フィールドで期間を選択します。 次の図は、**予定外のジョブの計画** ダイアログ ボックスの例を示します。 
 
-![予定外のジョブの計画ダイアログ ボックス。](./media/plan-unplanned-jobs-1024x564.png)
+![予定外のジョブの計画ダイアログ ボックス](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>同じ期間内でのかんばん作業の順序付け
 期間内の 1 つまたは複数の選択したジョブの順序を変更することができます。 この機能は、期間内で一部のジョブに優先順位を設定したい場合に役立ちます。 または、ジョブの実行を最適化するために、同じ製品属性を持つジョブを順序付けしたいことがあります。 ドラッグ アンド ドロップ操作で、またはアクション ペインの **ボード** タブの **前** および **次** メニュー項目を使用して、順序を変更することができます。
@@ -87,10 +90,8 @@ ms.locfileid: "6764815"
 -   **生産フローの視覚化** ページ
 
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 [リーン生産のかんばん作業のスケジューリング](lean-manufacturing-kanban-job-scheduling.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

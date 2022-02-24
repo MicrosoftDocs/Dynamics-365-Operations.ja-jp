@@ -1,27 +1,30 @@
 ---
 title: 分析コードおよび製品バリアントの既定の注文設定
 description: 既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。
-author: johanhoffmann
+author: t-benebo
+manager: tfehr
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778110"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432256"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>分析コードおよび製品バリアントの既定の注文設定
 
@@ -115,7 +118,7 @@ Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供�
 
 以下の製品例について考えます。
 
-| 項目                                                | 先頭値                                   |
+|                                                     |                                         |
 |-----------------------------------------------------|-----------------------------------------|
 | **製品名**                                    | 光電センサー                    |
 | **品目番号**                                     | XW56                                    |
@@ -188,7 +191,7 @@ Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供�
 
 ### <a name="enable-the-strict-validation-option"></a>厳密な検証オプションの有効化
 
-Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化または無効化することができます。 この機能は次のように一覧表示されます。
+この厳密な検証オプションを使用するには、システム上で有効化する必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化することができます。 この機能は次のように一覧表示されます。
 
 - **モジュール** - *製品情報管理*
 - **機能名** - *既定の注文数量に対する厳密な検証*
@@ -201,6 +204,3 @@ Supply Chain Management のバージョン 10.0.21 では、この機能は既�
 1. **一般** タブで、**既定の注文数量に対する検証** を次のいずれかの値に設定します :
     - **厳密** : すべての **標準注文数量** の値が、各クイックタブ (**発注書**、**在庫**、**販売注文**) に対して **複数** の値の倍数になるようにするには、このオプションを選択します。
     - **標準** : 標準の検証を使用するには、このオプションを選択します (この機能が有効化されていない場合も同様に機能します)。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

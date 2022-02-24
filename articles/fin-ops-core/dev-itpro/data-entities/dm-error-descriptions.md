@@ -1,32 +1,31 @@
 ---
 title: データ管理エラーの説明
 description: このトピックでは、データ管理で発生する可能性があるエラー メッセージについて説明します。
-author: peakerbl
+author: Sunil-Garg
+manager: AnnBe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.custom: 25341
 ms.assetid: ''
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2018-09-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 13a8f6fc85f9e65f6fd0956f8c258e6f50231a57
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: de55489d0bc5be9f57b6882211607c1fbf5eb4ba
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070075"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685679"
 ---
 # <a name="data-management-error-descriptions"></a>データ管理エラーの説明
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、特定のエラーが表示されるときのシナリオを示します。 これらのシナリオは、エラーとシナリオの完全な一覧ではありませんが、このリストは継続的に更新されるため、最新情報をチェックしてください。 特定のエラーが扱われるべきかどうかに関するこのページのフィードバックをお送りください。
 
@@ -50,8 +49,5 @@ ms.locfileid: "8070075"
 
 ## <a name="error-while-uploading-a-file-during-export"></a>エクスポート時のファイルのアップロード中にエラーが発生する
 
-開発環境でエクスポート処理をした際に、エクスポートファイルのアップロードができない旨のエラーが発生する。 これは、Azure Storage エミュレーターが使用できないか、旧バージョンの エミュレーター が インストール されている場合に発生する可能性があります。 この問題を解決するには、最新のエミュレータをインストールし、仮想マシン (VM) を再起動の上、エクスポート ジョブを再実行してください。 ストレージのエミュレーターは [Azure Storage エミュレーター](/azure/storage/common/storage-use-emulator) からインストールすることができます。
+開発環境でエクスポート処理をした際に、エクスポートファイルのアップロードができない旨のエラーが発生する。 これは、Azure Storage エミュレーターが使用できないか、旧バージョンの エミュレーター が インストール されている場合に発生する可能性があります。 この問題を解決するには、最新のエミュレータをインストールし、仮想マシン (VM) を再起動の上、エクスポート ジョブを再実行してください。 ストレージのエミュレーターは [Azure Storage エミュレーター](https://docs.microsoft.com/azure/storage/common/storage-use-emulator) からインストールすることができます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

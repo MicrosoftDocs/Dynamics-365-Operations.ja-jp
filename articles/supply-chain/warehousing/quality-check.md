@@ -2,23 +2,26 @@
 title: 品質チェック
 description: このトピックでは、品質確認機能に関して説明します。 この機能により、倉庫の作業者は入庫ドック エリアに品目を受領する間に、品質を確認することができます。
 author: mirzaab
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a3a565ea566dd2bf4d8c793b3340c78c9f4ed0a2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565306"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432361"
 ---
 # <a name="quality-check"></a>品質チェック
 
@@ -299,7 +302,7 @@ ms.locfileid: "7565306"
 
 #### <a name="receive-pallet-1"></a>受領パレット 1
 
-1. 倉庫 *51* のユーザーとして、倉庫管理モバイル アプリにログインします。 (ユーザー ID として *51* を、パスワードとして *1* を入力します。)
+1. 倉庫 *51* のユーザーとして倉庫アプリにサインインします。 (ユーザー ID として *51* を、パスワードとして *1* を入力します。)
 1. **入庫 \> 発注書明細行の入荷** に移動します。
 1. **PONUM** フィールドに発注書番号を入力します。
 1. 発注書番号を確認します。
@@ -310,7 +313,7 @@ ms.locfileid: "7565306"
 
     表示される **品質チェック** ページには入力フィールドがありません。 一番下にある確認 (チェック マーク) ボタンと、上部にあるメニューボタン (**≡**) のみが含まれます。 (メニュー ボタンは、ハンバーガーまたはハンバーガー ボタンと呼ばれることがあります。) 品質チェック プロセスを早めるために、パレットが品質チェックに合格した場合、ユーザーは **品質チェック** ページを確認するだけです。
 
-    ![品質チェック ページ。](media/quality-check.png "品質チェック ページ")
+    ![品質チェック ページ](media/quality-check.png "品質チェック ページ")
 
 1. [確認] ボタンをクリックして、1 行目からパレット 1 の品質チェックを渡します。
 
@@ -394,6 +397,3 @@ ms.locfileid: "7565306"
 1. ページの上部にあるメニューボタン (**≡**) を選択し、メニューで **キャンセル** を選択してメニューに戻ります。
 
 これでモバイル アプリを閉じることができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

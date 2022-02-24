@@ -1,25 +1,29 @@
 ---
 title: サービス作業の概要
 description: サービス作業は、サービス注文で実行される作業を記述するために使用されます。 この情報は、技術者と顧客の両方が参照できます。
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceTask
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a789c435bfba6948895f6d00c6a350c03b2e9d63
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b433632523bfd64119fda62f8e4b108ff9b5dccd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982487"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431645"
 ---
 # <a name="service-tasks-overview"></a>サービス作業の概要
 
@@ -86,6 +90,3 @@ ms.locfileid: "7982487"
 2. **設定** タブの、**サービス注文の組み合わせ** フィールドで **サービス作業別** を選択します。
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

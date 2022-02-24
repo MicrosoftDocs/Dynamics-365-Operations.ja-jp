@@ -2,23 +2,26 @@
 title: 作業ラインの詳細
 description: このトピックでは、システムの個々の作業ラインの包括的、並べ替え可能、フィルター処理可能な一覧を表示する作業ラインの詳細ページに関する情報を提供します。
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f37d161bf3d27e15eaaf1230c05270f3769f9901
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778284"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432341"
 ---
 # <a name="work-line-details"></a>作業ラインの詳細
 
@@ -28,7 +31,7 @@ ms.locfileid: "7778284"
 
 ## <a name="turn-on-the-work-line-details-feature"></a>作業ラインの詳細機能をオンにする
 
-Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化または無効化することができます。 この機能は次のように一覧表示されます。
+この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *作業ラインの詳細*
@@ -125,6 +128,3 @@ Supply Chain Management のバージョン 10.0.21 では、この機能は既�
 
 > [!IMPORTANT]
 > 作業ラインの数量の一部のみをキャンセルする場合は、積荷明細行から古い数量を削除する必要もあります。 それ以外の場合は、過少配送が正しく設定されていないと、積荷明細行は出荷確認できません。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,29 @@
 title: スケジューリング エンジンのパフォーマンスの改善
 description: このトピックでは、スケジューリング エンジンに関する情報とパフォーマンスを向上させる方法について説明します。
 author: ChristianRytt
+manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2495339f25469af705cff841f090c5df95b4d996
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578443"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432276"
 ---
 # <a name="improve-scheduling-engine-performance"></a>スケジューリング エンジンのパフォーマンスの改善
 
@@ -66,11 +69,11 @@ ms.locfileid: "7578443"
 | 10 | 二次&nbsp;1 | | | | 1 | 20 |
 | 20 | 基本 | | 3.00 | 1.00 | 3 | 0 |
 
-![工順ダイアグラムの例。](media/scheduling-engine-route.png "工順ダイアグラムの例")
+![工順ダイアグラムの例](media/scheduling-engine-route.png "工順ダイアグラムの例")
 
 これをエンジンに送信すると、次の図に示すように 8 つのジョブに分割されます (画像を選択して拡大します)。
 
-[![エンジン ジョブのスケジューリング](media/scheduling-engine-jobs.png "エンジン ジョブのスケジューリング。")](media/scheduling-engine-jobs-large.png)
+[![エンジン ジョブのスケジューリング](media/scheduling-engine-jobs.png "エンジン ジョブのスケジューリング")](media/scheduling-engine-jobs-large.png)
 
 2 つのジョブ間の標準リンクは、`FinishStart` です。1 つのジョブの終了時刻を別のジョブの開始時刻よりも前にする必要があることを意味します。 この設定は、後でプロセスを実行する同じリソースによって実行される必要があるため、これらには `OnSameResource` 制約があります。 10 の基本工程と二次工程のジョブには、ジョブが両方同時に開始および終了する必要があることを意味する `StartStart` および `FinishFinish` リンクがあり、基本と二次で同じリソースを使用できないようにする `NotOnSameResource` 制約があります。
 
@@ -326,6 +329,3 @@ MRP では、特定の部品表 (BOM) レベルのすべての製造オーダー
 
 > [!NOTE]
 > タイムアウトに設定された値は、リリースされた製造オーダーと MRP の一部としての計画オーダーのスケジューリングの両方に適用されます。 その結果、非常に高い値を設定すると、計画製造オーダーが多数ある計画を実行するときに、MRP の実行時間が大幅に増加する可能性があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: クラスター位置フル
 description: このトピックでは、クラスター位置フル機能について説明します。 この機能により、クラスター ピッキングが使用されているときに、コンテナやトートの容量制限においてより大きな誤差を許容できるため、作業の中断に関するルールをより厳格に適用することができます。
 author: Mirzaab
+manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a23168b550bfa2bb6a51c8df5d0a558431c23ebb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574260"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432323"
 ---
 # <a name="cluster-position-full"></a>クラスター位置フル
 
@@ -211,7 +214,7 @@ ms.locfileid: "7574260"
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>モバイル デバイスフローの実行 – 製品に使用する作業確認の設定
 
-1. 倉庫 *61* のユーザーとして、Warehouse Management モバイル アプリにログインします。
+1. 倉庫 *61* でユーザーとして倉庫アプリにサインインします。
 1. **アウトバウンド \> クラスター ピッキングの作成** に移動します。
 
     **タスク : 作業をクラスターに割り当てる** ページが表示されます。
@@ -273,6 +276,3 @@ ms.locfileid: "7574260"
     「クラスターが完了」しましたというメッセージが表示されます。
 
 以上で、**売上のピッキング** メニューの品目を使用して残余数量を選択できるようになります。 その後、**売上の荷積** メニュー品目を使用して、ステージング場所から荷積ドックに品目を移動することができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: 移動オーダー用の倉庫の設定
 description: このトピックでは、移動オーダーの倉庫を設定する方法について説明します。
 author: Mirzaab
+manager: tfehr
 ms.date: 01/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6de9df2749836c68bc4e9f92a6934516ff9c1d469374f0d63173a209c841ba38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756730"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432345"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>移動オーダー用の倉庫の設定 
 
@@ -50,6 +53,3 @@ ms.locfileid: "6756730"
 2. **入荷場所** フィールドで、**倉庫** を選択します。
 3. **出荷倉庫**、**入荷倉庫**、および **配送日数** を選択します。 
 4. (オプション) 荷渡方法によっては、**荷渡方法ごとの配送日数** タブで配送時間を設定することもできます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

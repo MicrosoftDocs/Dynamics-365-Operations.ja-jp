@@ -1,30 +1,29 @@
 ---
 title: データ タスクの自動化
-description: このトピックでは、データ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法について説明します。
-author: peakerbl
-ms.date: 05/06/2021
+description: このトピックでは、Finance and Operations でのデータ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証する方法を説明します。
+author: Sunil-Garg
+manager: AnnBe
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
-ms.openlocfilehash: d58130667b23fd57f5557a8e5e6dbac6df94c16f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e58e9834663077fba7fcc015baa6a9fd46d13561
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066560"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685685"
 ---
 # <a name="data-task-automation"></a>データ タスクの自動化
 
 [!include[banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 データ タスクの自動化により、さまざまな種類のデータ タスクを簡単に繰り返し、各タスクの結果を検証することができます。 データ タスクの自動化は、実装フェーズにあるプロジェクトで非常に便利です。 たとえば、データ プロジェクトの作成およびコンフィギュレーションを自動化することができます。 また、デモ データおよび高品質の構成データ、およびデータ移行に関連する他のタスクなどの、インポート/エクスポート オペレーションの実行を構成およびトリガーすることができます。 また、タスクの結果の検証を使用して、データ エンティティの自動テストを作成することもできます。
 
@@ -57,7 +56,7 @@ ms.locfileid: "8066560"
     > [!IMPORTANT]
     > データ タスクの自動化はクラウドのすべての環境で実行できますが、実稼動環境の統合 API を使用してすべてのインポート/エクスポート タスクを実行しないことを強くお勧めいたします。 統合 API を含むデータ タスクの自動化は、自動テストにのみ使用する必要があります。
 
-次のビデオは、[タスク自動化フレームワーク](https://community.dynamics.com/365/b/techtalks/posts/task-automation-framework-for-data-management-march-3-2018)の初期リリースを紹介する 55 分の TechTalk です。
+次のビデオは、Data Task Automation Manager の初期リリースを紹介する TechTalk の 55 分です。[タスク自動化フレームワーク](https://academylive.blob.core.windows.net/media/PAL/TechTalks-EnterpriseEdition/TaskAutomationFrameworkForDataManagement-DYN447PAL2.mp4)。
 
 ## <a name="task-manifest"></a>タスク マニフェスト
 タスクは、XML マニフェストで定義する必要があります。 このセクションでは、マニフェストについて説明します。 マニフェストを名前付けしデザインする方法の指針については、このトピックの後半の、「マニフェストのデザインに対するベスト プラクティス」セクションを参照してください。
@@ -449,6 +448,3 @@ ms.locfileid: "8066560"
     </TestGroup>
 </TestManifest>
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

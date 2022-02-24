@@ -2,24 +2,27 @@
 title: 材料の例外の把握
 description: このトピックでは、製造オーダーおよびバッチ オーダーの原材料の例外をより詳細に把握する方法について説明します。
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d3ea260535e76d7ac3d73d4bca930b7b4b2d22b2b2c076d4d1346785eaed85b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c17997d9dd04559fb7022fe39bb2b961c1cfc4a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726804"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432310"
 ---
 # <a name="visibility-into-material-exceptions"></a>材料の例外の把握
 
@@ -37,7 +40,7 @@ ms.locfileid: "6726804"
 
 次の図の青色のバーは、リソース上でスケジュールされた生産ジョブを表しています。 ジョブは、2017 年 5 月 1 日 (2017/05/01) に開始する予定です。 この日付は原材料の日付です。 つまり、BOM およびフォーミュラ明細行でのジョブに割り当てられた材料は、この日付に準備を完了する必要があります。 図のもう一方の日付、2017 年 5 月 6 日 (2017/05/06) は、ワークスペースの日付を表します。 この例では、原材料の日付はワークスペースの日付よりも前です。 したがって、原材料の消費が開始予定日を過ぎ、BOM およびフォーミュラ明細行が注意を要する基準を満たしています。
 
-![原材料日付がワークスペース日付より前の生産ジョブの例。](./media/improved-visibility.png)
+![原材料日付がワークスペース日付より前の生産ジョブの例](./media/improved-visibility.png)
 
 ## <a name="unreleased-material-lines-needing-attention"></a>注意が必要な未リリースの材料明細行
 
@@ -57,17 +60,10 @@ BOM またはフォーミュラ明細行がリリースされていないか、�
 
 BOM またはフォーミュラ明細行がリリースされると、生産ウェーブ テンプレートの構成に応じて、新しい生産ウェーブまたは既存のオープン ウェーブのいずれかに追加されます。 ウェーブ テンプレートの構成により、BOM またはフォーミュラ明細行が解放されたときに自動的に処理されるよう、ウェーブを設定することもできます。 ウェーブが処理されるときは、原材料ピッキング用の倉庫作業が生成されます。 ウェーブ テンプレートがリリース時に処理されないように設定されている場合、ウェーブは未処理の状態のままです。 **注意が必要な未処理のウェーブ** タイルは、未処理のウェーブの倉庫にリリースされ、ワークスペース日付より早い、または同じ原材料日付を持つ BOM およびフォーミュラ明細行の数を表示します。 明細行は、ワークスぺースのフィルターに適用される運営リソースによっても消費されなければなりません。
 
-タイルが選択されている場合、**すべての本番環境ウェーブ** ページが開きます。 このページは、リリースされた BOM からのウェーブ明細行およびタイルの条件を満たすフォーミュラ明細行を含むオープンウェーブの数によってフィルター処理されます。
-
-### <a name="manually-maintain-production-waves"></a>本番環境のウェーブを手動で管理する
-
-**すべての本番環境ウェーブ** ページで、アクションペインの **ウェーブ** タブにあるボタンを使って、手動でウェーブの **処理** と **リリース** を行うことができます。 **本番環境の管理** オプションを使用して、 ウェーブ プロセスの処理に使用される **本稼働 BOM プール** データの表示と管理ができます。
+タイルが選択されている場合、**すべての生産ウェーブ** ページが開かれます。 このページは、リリースされた BOM からのウェーブ明細行およびタイルの条件を満たすフォーミュラ明細行を含むオープンウェーブの数によってフィルター処理されます。 **すべての生産ウェーブ** ページから、手動でウェーブを処理できます。
 
 ## <a name="open-warehouse-work-needing-attention"></a>注意が必要な未処理の倉庫作業
 
 **注意が必要な未処理の倉庫作業** タイルは、未処理の作業がある倉庫にリリースされ、ワークスペース日付より早い、または同じ原材料日付を持つ BOM およびフォーミュラ明細行の数を表示します。 明細行は、ワークスぺースのフィルターに適用される運営リソースによっても消費されなければなりません。
 
 タイルが選択されている場合、**すべての作業** ページが開かれます。 このページは、リリースされた BOM からの作業明細行およびタイルの条件を満たすフォーミュラ明細行を含むオープン作業ヘッダーの数によってフィルター処理されます。 **すべての作業** ページから、手動で作業を処理できます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

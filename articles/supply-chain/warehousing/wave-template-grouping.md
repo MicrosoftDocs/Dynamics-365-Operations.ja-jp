@@ -2,23 +2,26 @@
 title: ウェーブ テンプレートのグループ化
 description: ウェーブ テンプレートのグループ化を使用すると、システムはウェーブ テンプレートの設定を使用して、定義した基準に基づいて、リリース済み明細行を分割して新規または既存のウェーブに割り当てる方法を決定することができます。 この機能は、特定の基準に基づいてウェーブが作成される倉庫で役立ちますが、マネージャーは手動ではなく自動的にウェーブを作成するすることもできます。
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 9cbc0b6655de740628bcf3709d250ac02238038b
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579907"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432373"
 ---
 # <a name="wave-template-grouping"></a>ウェーブ テンプレートのグループ化
 
@@ -198,6 +201,3 @@ ms.locfileid: "7579907"
 1. 3 番目の販売注文から作成されたウェーブ ID を選択します。
 1. ウェーブ ID のリンクを選択して、ウェーブ詳細ページを開きます。
 1. 最初の販売注文の出荷と共に、**ウェーブ明細行** クイック タブに出荷が追加されていることを確認します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

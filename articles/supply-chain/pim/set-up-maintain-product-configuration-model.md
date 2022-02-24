@@ -1,27 +1,30 @@
 ---
 title: 製品コンフィギュレーション モデルを設定します。
 description: この記事は、製品コンフィギュレーション モデルを設定および作成するステップについて説明します。
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 4051
 ms.assetid: 00df5537-b148-4e32-a248-3e35876ad4e1
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dc9f46d91dc298a5c8babee2b370fea09f61741
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7af9aaa01d89da909f2b30089c17d67d377d9e78
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578227"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432065"
 ---
 # <a name="set-up-a-product-configuration-model"></a>製品コンフィギュレーション モデルを設定します。
 
@@ -50,6 +53,3 @@ ms.locfileid: "7578227"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

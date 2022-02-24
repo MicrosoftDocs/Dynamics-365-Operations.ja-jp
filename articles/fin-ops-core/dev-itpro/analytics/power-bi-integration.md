@@ -1,10 +1,12 @@
 ---
 title: Power BI の統合によって使用できる機能
-description: このトピックでは、Microsoft Power BI に含まれる機能およびサービスを使用して、データからのインサイトにアクセス、参照、取得する方法について説明します。
-author: RichdiMSFT
+description: このトピックでは、Microsoft Power BI に含まれる機能およびサービスを使用して、データからのインサイトにアクセス、参照、取得する方法を説明します。
+author: TJVass
+manager: AnnBe
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: PowerBIConfiguration
 audience: IT Pro
@@ -12,15 +14,15 @@ ms.reviewer: kfend
 ms.custom: 31001
 ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c32a67cf6cbaf9ad4e3dd8804ab65fa30d0e97f2ecf0afda0ade92381941c3e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb2671c9d8b3d69cd6c39396bf9b2582bf183bad
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768429"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685721"
 ---
 # <a name="features-available-through-the-power-bi-integration"></a>Power BI の統合によって使用できる機能
 
@@ -31,7 +33,7 @@ Microsoft Power BI は、データを分析して情報を共有できる一連�
 ## <a name="data-exploration-through-power-bi"></a>Power BI を使用しデータを検索
 レポートにはさまざまなタイプがあります。
 
-![データ検索。](./media/data-exploration.png)
+![データ検索](./media/data-exploration.png)
 
 Chart コントロールは、ビジュアルを必要とする埋め込みエクスペリエンスをビルドするために使用されます。
 
@@ -112,6 +114,3 @@ Dynamics 365 クライアントに固定されている Power BI タイルは、
 パワー ユーザー、ビジネス アナリスト、または開発者は、Power BI デスクトップを使用してエンティティ格納を使用するレポートを作成できます。 これらのレポートは豊富で対話型であるだけではなく、ユーザーは他のユーザーに依存することがなく変更することができます。
 
 PowerBI.com 内のレポートは強力かつ独自での対話型ではありますが、ワークスペースに固定することもできます。 ユーザーは自身で、レポートをワークスペースにピン留めできます。 ワークスペースにレポートをピン留めする方法の詳細については、「[Power BI レポートをワークスペースにピン留めする](pin-power-bi-reports.md)」を参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

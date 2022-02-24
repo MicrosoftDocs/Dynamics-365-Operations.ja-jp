@@ -1,25 +1,28 @@
 ---
 title: 販売注文のリーン ペギング
 description: この手順で、品目がかんばんで生産される販売明細行からペギング ツリーを検証することに集中します。
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8eca21f8bd988ca352c07e839295b3edd9669929
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e429fef6101f611d7a2c1b5323d6fe1e39d1cdd3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580627"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431930"
 ---
 # <a name="lean-pegging-from-sales-orders"></a>販売注文のリーン ペギング
 
@@ -54,6 +57,3 @@ ms.locfileid: "7580627"
 5. ツリーで、「Sales line 000832\Kanban 000558\Issue for L0001\Kanban 000559」を選択します。
     * すべてのペギング ツリーが [計画済] であるため、2 番目のかんばんジョブも計画済になります。 かんばん作業の状態が [未計画] から [計画済] に変更されていることを確認します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

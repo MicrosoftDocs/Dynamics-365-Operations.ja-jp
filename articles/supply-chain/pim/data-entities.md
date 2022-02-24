@@ -1,27 +1,30 @@
 ---
 title: 製品データ エンティティ
 description: このトピックでは、製品データをインポートおよびエクスポートするのに使用できる異なるエンティティに関する情報を提供します。
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: benebotg
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2019-12-1
-ms.openlocfilehash: 2784e552d7984bbea9c74ad800c6305ab2a216e9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 20d067effc6139084c5d89b5d4698e1adf2bbf9f
+ms.sourcegitcommit: e9776095b92d19f214cd6765bbe9bf111432a699
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567154"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "4432434"
 ---
 # <a name="product-data-entities"></a>製品データ エンティティ
 
@@ -42,11 +45,8 @@ ms.locfileid: "7567154"
 | リリース済特徴的製品 V2 | `EcoResDistinctProductV2Entity` | このエンティティは、特徴的製品をエクスポートするのに使用されます。 これらの特徴的製品は、製品、サブタイプ製品、および製品バリアントである場合があります。 |
 | リリース済製品マスター V2 | `EcoResProductMasterV2Entity` | このエンティティは、製品マスターをインポートおよびエクスポートするのに使用されます。 データ管理には有効ではありません。 |
 | 品目 - バーコード | `EcoResProductBarcodeEntityV3` | このエンティティは、製品およびバーコードをエクスポートするのに使用されます。 このエンティティでは、変更追跡、更新、または削除は許可されません。 バーコードで変更追跡、更新、または削除を使用するには、**品目 - バーコード関連付け** エンティティを使用します。 |
-| 品目 - バーコード アソシエーション | `EcoResProductBarcodeAssociationEntity` | このエンティティは、製品およびバーコードをエクスポートするのに使用されます。 変更追跡、更新、および削除を行うことができます。 このエンティティを使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *品目 - バーコードの改良機能* を有効にする必要があります。 このエンティティ キーは `AssociationID` で、バーコードと製品の間に関連付けを作成します。 このキーのサポートを追加するには、機能を有効にする時に、テーブル `InventitemBarcodeAssociation` が既存の品目バーコード データに設定されます。 このテーブルはバッチ ジョブを使用して入力されますが、バーコード テーブルに多数のレコードがある場合は、バッチ ジョブの実行にかなりの時間がかかることがあります。 したがって、この機能を有効にすることをお勧めします (したがってバッチ ジョブを実行する) ことも、業務スケジュールに適した時間帯に行うことをお勧めします。 |
+| 品目 - バーコード アソシエーション | `EcoResProductBarcodeAssociationEntity` | このエンティティは、製品およびバーコードをエクスポートするのに使用されます。 変更追跡、更新、および削除を行うことができます。 このエンティティを使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *品目 - バーコードの改良機能* を有効にする必要があります。 このエンティティキーは `AssociationID` です。これはバーコードと製品の間に関連付けを作成します。 このキーのサポートを追加するには、機能を有効にする時に、テーブル `InventitemBarcodeAssociation` が既存の品目バーコードデータに設定されます。 バッチ ジョブを使用してテーブルが設定されます。バーコード テーブルに多数のレコードがある場合は、バッチ ジョブの実行にかなりの時間がかかることがあります。 したがって、この機能を有効にすることをお勧めします (したがってバッチ ジョブを実行する) ことも、業務スケジュールに適した時間帯に行うことをお勧めします。 |
 | 製品ライフサイクル状態 | `EcoResProductLifecycleSateEntity` | このエンティティは、製品に割り当てることができるさまざまな製品ライフサイクルの状態をインポートおよびエクスポートするのに使用されます。 |
 
 > [!NOTE]
 > **リリース済製品 V2** データ エンティティを使用して製品をシステムにインポートできるのは、共有製品が既に作成されている場合のみです。 それ以外の場合は、システムに製品をインポートするために、**製品の作成** データ エンティティを使用する必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

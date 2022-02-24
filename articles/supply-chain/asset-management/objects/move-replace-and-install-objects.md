@@ -1,10 +1,12 @@
 ---
 title: 資産の移動、置換、およびインストール
 description: このトピックでは、資産管理で資産を移動、置換、およびインストールする方法について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectReplace, EntAssetObjectInstallLookup, EntAssetObjectMove, EntAssetObjectTableEditSubObjects
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aad94f17d6efadf7c520c021354963e7135d6d4da1426774925ce877f705e01a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 022ffc59b1b64913fedaf550f3fdb32141a94031
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769638"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020282"
 ---
 # <a name="move-replace-and-install-assets"></a>資産の移動、置換、およびインストール
 
@@ -88,6 +90,3 @@ ms.locfileid: "6769638"
 4. **機能場所** フィールドで、新しい場所を選択してください。
 5. 既定では、**有効** フィールドは現在の日時に設定されています。 ただし、資産構造のインストールが有効になる異なる日時を選択できます。
 6. **OK** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

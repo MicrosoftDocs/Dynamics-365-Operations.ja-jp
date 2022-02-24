@@ -1,23 +1,26 @@
 ---
 title: 適用できる価格および割引の検索
 description: この手順は、特定の顧客に対して現在有効な製品の価格や割引を、販売注文を作成せずに検索する方法を示します。
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c80ae00e1bcbc4498ec4705195c3208170cee1b1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2cfdbda55c2f83ee2b470cab8a5e4f9ce728b852
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578923"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431764"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>適用できる価格および割引の検索
 
@@ -57,6 +60,3 @@ ms.locfileid: "7578923"
     * 製品 T0012 には、2 つの行割引契約があります。つまり、1 から 10 の注文明細行数量で 5% の割引が指定され、10 以上では注文数量が 7％ 割引されています。 割引は、製品グループ、この例では、製品 T0012 が所属するグループ コード 01 に適用されることに注意してください。  
 4. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

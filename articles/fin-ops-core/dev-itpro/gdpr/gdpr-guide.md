@@ -2,25 +2,25 @@
 title: 一般データ保護規則の概要
 description: このトピックでは、Finance and Operations でのユーザー ログの機能に関する情報を提供します。
 author: ToddLefor
+manager: AnnBe
 ms.date: 07/23/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom:
-- "10031"
-- intro-internal
+ms.reviewer: rhaertle
+ms.custom: 10031
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d488a482913f17c1418b2aeb021c8ac27a978b33
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4852686f4e8d743938822725db7851b7471acbc0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982419"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685155"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 
@@ -55,11 +55,11 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 + **C1** - C1 は Microsoft の直接顧客 (エンタープライズ クラウドの IT 管理者) です。
 + **C2** - C2 は C1 の顧客です。
 
-財務と運用アプリでは、Microsoft はプロセッサとして機能します。 データ プロセッサとして、 Finance and Operations はデータ コントローラとして GDPR 責務に適応するのに役立つプロセスと機能を提供します。
+Finance and Operations アプリでは、Microsoft はプロセッサとして動作します。 データ プロセッサとして、Finance and Operations はデータ コントローラーとしての GDPR 責務に適応するのに役立つプロセスと機能を提供します。
 
 次の図は、顧客からアプリケーション データベースへのデータの流れ、およびお客様と Microsoft がそのプロセスで果たすロールを示しています。 それぞれのアプリケーションで、コントローラーはテナント管理者、Microsoft はプロセッサです。 このシナリオでは、データを保管、取得、並べ替えなどを行うことでデータを処理するプロセッサ (Microsoft) にデータが送信されます。
 
-![顧客からのデータ フロー。](../media/gdpr-customers-controller-processor.jpg)
+![顧客からのデータ フロー](../media/gdpr-customers-controller-processor.jpg)
 
 データ主体が DSR の送信を選択すると、そのデータ主体はコントローラーに要求を出します。 データ主体は、ビジネスで収集したデータに対する Microsoft の権限を行使することはありません。 プロセッサとして、Microsoft は機能を提供することによって、またはアクションが可能であることを確認することによってコントローラを支援します。 つまり、コントローラーは DSR 要求の受け入れて応答し、プロセッサはコンプライアンス要求を扱ったり有効化したりします。 以下のテーブルは、関連するいくつかのロールと職責の概要を示しています。
 
@@ -137,7 +137,7 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 </td>
 <td>
 <ul>
-<li>Finance and Operations を使用して、データを特定し、要求を満たします。 </li>
+<li>Finance and Operations を使用してデータを検索し、要求を処理します。 </li>
 <li>カスタマイズを記述します。</li>
 <li>サード パーティに共有コントローラー DSR を求めます。</li>
 <li>Microsoft にアクティビティ データを求めます。</li> 
@@ -210,7 +210,7 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 + 製品が直接アクションを有効にする場合、個人データを匿名にします。
 + 個人データを消去または変更するカスタマイズを作成します。
 
-\* GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、Finance and Operations は特定のビジネスまたはトランザクション データの削除を許可していません。他の法律や認証のコンプライアンスのために必要なビジネス データの削除機能を提供しておらず一切保証もしません。 Finance and Operations は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
+\* GDPR は他のすべての法律を排除する法律ではありません。 エンタープライズ リソース プラン システムとして、Finance and Operations は特定のビジネスまたはトランザクション データの削除を許可していません。他の法律や認証のコンプライアンスに必要なビジネス データの削除のための機能を提供しておらず一切保証もしません。 Finance and Operations は、参照の破損またはビジネス データの整合性が生じる変更/カスタマイズまたはその他のアクションに対して、サポートを提供しません。
 
 ### <a name="right-to-port"></a>移植するには右
 
@@ -252,9 +252,9 @@ GDPR は、[規制](https://data.consilium.europa.eu/doc/document/ST-5419-2016-I
 
 ## <a name="representation-of-a-person-in-finance-and-operations"></a>Finance and Operations のユーザーの表示
 
-Finance and Operations には共通の [グローバル アドレス帳](../../fin-ops/organization-administration/overview-global-address-book.md) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
+Finance and Operations には共通の [グローバル アドレス帳](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
 
-![グローバル アドレス帳のデータ モデル。](../media/gdpr-address-data-model.jpg)
+![グローバル アドレス帳のデータ モデル](../media/gdpr-address-data-model.jpg)
 
 ### <a name="each-person-is-a-type-of-party"></a>各担当者は、関係者のタイプです。
 
@@ -273,7 +273,7 @@ Finance and Operations には共通の [グローバル アドレス帳](../../f
 
 データ主体がコントローラーに申し入れてユーザーの個人データのコピーを要求するとき、そのコントローラーは、個人を説明するデータを特定するためにグローバル アドレス帳情報を使用する選択をすることがあります。 このトピックの前の図で説明したように、**人物** は **ロール** を担う **関係者** のタイプです。
 
-組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](..//office-integration/office-integration-edit-excel.md)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
+組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
 
 ## <a name="the-person-search-report"></a>個人検索レポート
 
@@ -288,7 +288,7 @@ Finance and Operations には共通の [グローバル アドレス帳](../../f
 
 データ主体がコントローラーに申し入れてユーザーの個人データのコピーを要求するとき、そのコントローラーは、個人を説明するデータを特定するためにグローバル アドレス帳情報を使用する選択をすることがあります。 このトピックの前の図で説明したように、**人物** は **ロール** を担う **関係者** のタイプです。
 
-組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](../office-integration/office-integration-edit-excel.md#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
+組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
 
 ## <a name="additional-notes-that-apply-to-requests-for-data"></a>データの要求に適用される追加のメモ
 
@@ -323,19 +323,19 @@ Finance and Operations には共通の [グローバル アドレス帳](../../f
 + 応募者
 + 競合他社
 
-個人データは、ここにリストされていない他のロールにも含まれている可能性があります。 個人データの入力、表示、編集するために使用されるページは、上記の一覧のほとんどのロールのワークシートで提供されてきました。 CustomerSource の[個人データの検索および管理の参照ドキュメント](/dynamics/s-e/)ページからスプレッドシートを表示したりダウンロードしたりできます。 
+個人データは、ここにリストされていない他のロールにも含まれている可能性があります。 個人データの入力、表示、編集するために使用されるページは、上記の一覧のほとんどのロールのワークシートで提供されてきました。 CustomerSource の[個人データの検索および管理の参照ドキュメント](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/referencedocumentspersonaldata)ページからスプレッドシートを表示したりダウンロードしたりできます。 
 
 ## <a name="detailed-inventory"></a>詳細な在庫
 
-財務と運用アプリを使用する場合は、複数のデータ ストアに存在する大量のデータを生成または収集する必要があるかもしれません。 データの格納場所を理解するのに役立つように、データ ストア内のデータごとにデータ マーカーを導入しました。 このマーカーは「資産分類」と呼ばれ、個人データの識別や追跡に使用できます。 収集するデータは「顧客コンテンツ」として説明されています。 一部の顧客コンテンツには個人データが含まれていることがあり、一部の顧客コンテンツはビジネス データを含む場合があります。 顧客のすべてのコンテンツを個人データとして処理することを選択、または「個人データ」であるとみなす任意のデータを識別して追跡できるように分類を自分で変更することができます。 Microsoft は既定の分類のセットで指定されてはいますが、選択した分類や識別子を自由に使用できます。
+Finance and Operations アプリを使用する場合は、複数のデータ ストアに存在する大量のデータを生成または収集する必要があるかもしれません。 データの格納場所を理解するのに役立つように、データ ストア内のデータごとにデータ マーカーを導入しました。 このマーカーは「資産分類」と呼ばれ、個人データの識別や追跡に使用できます。 収集するデータは「顧客コンテンツ」として説明されています。 一部の顧客コンテンツには個人データが含まれていることがあり、一部の顧客コンテンツはビジネス データを含む場合があります。 顧客のすべてのコンテンツを個人データとして処理することを選択、または「個人データ」であるとみなす任意のデータを識別して追跡できるように分類を自分で変更することができます。 Microsoft は既定の分類のセットで指定されてはいますが、選択した分類や識別子を自由に使用できます。
 
-<!--
 <Link to documentation on how to modify asset classifications>
-<Asset Classification table>
-<Link to form that prints the full inventory>
--->
 
-![プロパティの AssetClassification フィールドを示すソリューション エクスプローラー。](../media/gdpr-asset-classification-detail-invent-section.jpg)
+<Asset Classification table>
+
+<Link to form that prints the full inventory>
+
+![プロパティに AssetClassification フィールドを示しているソリューション エクスプローラー](../media/gdpr-asset-classification-detail-invent-section.jpg)
 
 ## <a name="age-gating-preventing-minors-from-using-the-service"></a>年齢ゲーティング: 未成年がサービスを利用できないようにします。
 
@@ -345,7 +345,7 @@ Microsoft は、個人データが収集される Microsoft ソフトウェア�
 
 ### <a name="what-is-this-feature"></a>これはどういう機能ですか ?
 
-サービスのテナント管理者としては、Azure AD 年齢ゲーティングまたは MSA 年齢ゲーティングを設定する必要があります。
+サービスのテナント管理者としては、Azure AD 年齢ゲーティングまたは MSA 年齢ゲーティングを設定する必要があります。 <link to azure doc>
 
 Azure 年齢ゲーティングを使用して設定されていないユーザーは、ユーザーがマイナーでない場合でも、サービスの使用を制限されます。 年齢ゲーティングをコンフィギュレーションする必要があります。
 
@@ -361,15 +361,15 @@ GDPR は、未成年者に保護者の同意がない場合、システムがそ
 
 **情報** ボックスに、Microsoft のユーザー権利のドキュメントおよび Microsoft のプライバシーと Cookie のドキュメントへのリンクが表示されます。 また、組織のプライバシーに関する声明にリンクを追加することができます。
 
-![資産を示すソリューション エクスプローラー。](../media/gdpr-privacy-01-w-note.jpg)
+![資産を示すソリューション エクスプローラー](../media/gdpr-privacy-01-w-note.jpg)
 
 **システム パラメーター** ページで、システム管理者は、組織のユーザー権限およびプライバシーに関する通知へのリンクを追加できます。 通知タイプのいずれかまたは両方に、有効な URL を追加することができます。
 
-![組織のプライバシーに関する声明にリンクを追加するシステム パラメーター。](../media/gdpr-privacy-02.jpg)
+![組織のプライバシーに関する声明にリンクを追加するシステム パラメーター](../media/gdpr-privacy-02.jpg)
 
 システム パラメーターへの入力が完了したら、次の図に示されているように、組織のプライバシー通知へのリンクが **情報** ボックスに表示されます。
 
-![組織のプライバシーに関する通知へのリンクがある変更詳細ボックス。](../media/gdpr-privacy-03-w-note.jpg)
+![組織のプライバシーに関する通知へのリンクがある変更詳細ボックス](../media/gdpr-privacy-03-w-note.jpg)
 
 ## <a name="clarification-of-the-scope-of-this-content"></a>このコンテンツのスコープの明確化
 
@@ -377,6 +377,3 @@ GDPR は、未成年者に保護者の同意がない場合、システムがそ
 + このドキュメントは、情報提供のみを目的としたものであり、法的なアドバイスとして、または GDPR がユーザーおよび組織にどのように適用されるかを判断するためには使用できません。 法的に資格のある専門家と連携して、GDPR、組織への GDPR の具体的な適用方法、およびコンプライアンスをもっとも確実にする方法について検討されることをお勧めします。
 + Microsoft はこのプレゼンテーションに記載されている情報に関して一切保証せず、明示的、暗示的、または法的に保証することもありません。 このドキュメントは、「現状のまま」で提供されています。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。
 + このドキュメントは、Microsoft 製品の知的財産に対する法的権利をお客様に提供するものではありません。 内部での参照目的のみの場合、このプレゼンテーションをコピーして使用できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,23 +2,25 @@
 title: プロセス パラメーター
 description: このトピックでは、プロセス自動化フレームワークでカスタム パラメーターを実装する方法について説明します。
 author: RyanCCarlson2
+manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 167b42c07be3c09b4d7c8dbd8df06f38a6eb05af
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2a7ea87c9a44acacc5bed4ec097d62a5d225f749
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781931"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683963"
 ---
 # <a name="process-parameters"></a>プロセス パラメーター
 
@@ -291,6 +293,3 @@ implements ProcessScheduleIExplodeOccurrences
     }
 }
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

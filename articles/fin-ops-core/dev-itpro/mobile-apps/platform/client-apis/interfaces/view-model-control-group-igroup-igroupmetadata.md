@@ -1,18 +1,25 @@
 ---
 title: GroupMetadata タイプ
 description: グループ メタデータ タイプ。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 03895d0c3ec38d088012d8c8ed37c44215a8387d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 1e2ecbfb0961c11a3f9df73722e245dd49e1d276
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781542"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685011"
 ---
 # <a name="groupmetadata-type"></a>GroupMetadata タイプ
 
@@ -40,7 +47,7 @@ ms.locfileid: "7781542"
 * [ラベル](view-model-control-group-igroup-igroupmetadata.md#label)
 * [名前](view-model-control-group-igroup-igroupmetadata.md#name)
 * [注文](view-model-control-group-igroup-igroupmetadata.md#order)
-* [タイプ](view-model-control-group-igroup-igroupmetadata.md#type)
+* [[タイプ](view-model-control-group-igroup-igroupmetadata.md#type)]
 
 ## <a name="properties"></a>プロパティ
 
@@ -163,6 +170,3 @@ Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承
 
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

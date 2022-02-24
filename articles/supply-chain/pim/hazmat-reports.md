@@ -1,27 +1,31 @@
 ---
 title: 危険物の照会とレポート
 description: このトピックでは、危険物に関連する各種レポートの使用方法について説明します。 これらのレポートの多くは、出荷中および保管中にさまざまな危険物に関する規制事項に準拠するために必要です。
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ca8c973d3322bd51bf519e83fb5a5c19d35c0bed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 188c339ddf5f5c2488133924e9a0288f218f495c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568546"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431999"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>危険物の照会とレポート
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management では、危険物に関連するさまざまなレポートを提供しています。 これらのレポートの多くは、出荷中および保管中にさまざまな危険物に関する規制事項に準拠するために必要です。
 
@@ -29,7 +33,7 @@ Microsoft Dynamics 365 Supply Chain Management では、危険物に関連する
 
 次の図は、システムが危険物レポートを生成するときに発生する一連の活動を示しています。
 
-![危険物レポートの一連の活動。](media/hazmat-report-sequence.png "危険物レポートの一連の活動")
+![危険物レポートの一連の活動](media/hazmat-report-sequence.png "危険物レポートの一連の活動")
 
 ## <a name="set-up-hazardous-materials-reporting"></a><a name="set-up"></a>危険物レポートの設定
 
@@ -106,6 +110,3 @@ Microsoft Dynamics 365 Supply Chain Management では、危険物に関連する
 ## <a name="packing-list-report"></a>梱包リスト レポート
 
 危険物機能がシステムで有効になっている場合、梱包リストには、品目の出荷印刷テキストに関連する追加情報が含まれます。 このレポートは、通常どおり **すべての積荷** ページから使用できます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

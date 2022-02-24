@@ -1,34 +1,38 @@
 ---
 title: 原産国
 description: 多くの組織では、仕入先に証明書を発行して、製品が特定の認証基準を満たしていることを確認しています。 多くの場合、これら証明書は原産国によって異なります。 このトピックでは、原産国機能に関する情報を提供します。これにより、製品を原産国にリンクさせ、製品の認証を追跡することができます。
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: COOVendorCerts
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a2740f6b1ccb52073b013e613d8ab779cc088180
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 0471785991a307de11147e9773d9abe1e02941d6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777641"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431627"
 ---
 # <a name="country-of-origin"></a>原産国
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 多くの組織では、仕入先に証明書を発行して、製品が特定の認証基準を満たしていることを確認しています。 多くの場合、これら証明書は原産国によって異なります。 原産国機能を使用すると、製品を原産国にリンクさせ、製品の認証を追跡することができます。
 
 ## <a name="turn-on-the-country-of-origin-feature"></a>原産国機能を有効にする
 
-Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化または無効化することができます。 この機能は次のように一覧表示されます。
+この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
 - **モジュール :** *製品情報管理*
 - **機能名 :** *原産国管理機能*
@@ -86,7 +90,4 @@ BOM レポートを生成する場合は、**原産国ルール** のページ�
 
 各パートの原産国に関する情報を表示するレポートが生成、表示されます。 レポートの例を次に示します。
 
-![原産国のレポート。](media/country-of-origin-report.png "原産国のレポート")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+![原産国のレポート](media/country-of-origin-report.png "原産国のレポート")

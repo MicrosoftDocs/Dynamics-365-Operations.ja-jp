@@ -2,13 +2,15 @@
 title: 小売顧客のギフト カードの残高を清算します。
 description: このトピックでは、Microsoft Dynamics 365 Commerce で現在利用できる外部ギフト カード清算機能について説明します。
 author: rapraj
+manager: josaw1
 ms.date: 02/08/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.devlang: ''
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +18,12 @@ ms.search.industry: retail
 ms.author: rapraj
 ms.search.validFrom: 2019-10-02
 ms.dyn365.ops.version: Dynamics 365 10.0
-ms.openlocfilehash: 3689dc1188ec9997cfe281c70ef96040bb6bc1c3
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 93ec6ee77fd076727dfae90b56ade3ed95d615e7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782409"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685411"
 ---
 # <a name="cash-out-gift-card-balance-for-a-retail-customer"></a>小売顧客のギフト カードの残高を清算します。
 
@@ -50,14 +52,14 @@ ms.locfileid: "7782409"
     2. **ギフト カードを清算** フィールドに、**ギフト カード清算しきい値** の額を入力します。
     3. **保存** を選択します。
 
-    ![ギフト カードのしきい値の設定。](./media/GiftCardCashout01.png)
+    ![ギフト カードのしきい値を設定](./media/GiftCardCashout01.png)
 
 6. **ボタン グリッド** ページを開きます。
 7. ページの左側にあるナビゲーション バーで、**F2S1M** を検索してフィルター処理オプションを選択します。
 8. **アクション ウィンドウ** で、**デザイナー** を選択し、ボタン デザイナー アプリケーションをダウンロードします。
 9. グリッド デザイナーが表示されたら、空の (灰色) 領域を右クリックして、**新規作成ボタン** を選択します。
 
-    ![新しいボタン。](./media/07.png)
+    ![新しいボタン](./media/07.png)
 
 10. 新しいボタンを右クリックし、**ボタン プロパティ** を選択します。
 11. 次のマトリックスに従って **アクション**、**支払タイプ**、および **ボタンのテキスト** プロパティを設定します。
@@ -102,6 +104,3 @@ ms.locfileid: "7782409"
 すべての一般的な問題については、Modern POS または IIS ハードウェア ステーション イベント ログを常に参照してください。 ログは、Windows イベント ログの以下のノードにあります。
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

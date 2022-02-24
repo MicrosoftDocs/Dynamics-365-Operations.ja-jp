@@ -1,29 +1,34 @@
 ---
 title: 履行サービス契約の概要
 description: このトピックでは、サービス契約を履行するタスクについて説明します。
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/03/2018
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39fe65638c413f5fbc1ea6ad4922e97f6e8fb35e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 65c26c5bcea386e7cdb3a2be95da26dcb53ce44c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985889"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432185"
 ---
-# <a name="fulfill-service-agreements-overview"></a>履行サービス契約の概要
+# <a name="fulfill-service-agreements-overview"></a>履行サービス契約の概要 
 
 [!include [banner](../includes/banner.md)]
+
 
 このトピックでは、サービス契約を履行するタスクについて説明します。 また、各業務プロセス コンポーネントに関連するフォームを一覧表示し、各業務プロセス コンポーネントに関連するタスクについても説明します。
 
@@ -39,9 +44,9 @@ ms.locfileid: "7985889"
 
 <table>
 <colgroup>
-<col />
-<col />
-<col />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -58,13 +63,13 @@ ms.locfileid: "7985889"
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><strong>サブスクリプション</strong></p></td>
-<td><p>サービス サブスクリプションを作成し、管理します。</p></td>
+<td><p><strong>定期売買</strong></p></td>
+<td><p>サービス定期売買を作成し、管理します。</p></td>
 </tr>
 <tr class="odd">
-<td><p> </p></td>
-<td><p> </p></td>
-<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 </tr>
 <tr class="even">
 <td><p>契約の監視と実装</p></td>
@@ -77,9 +82,9 @@ ms.locfileid: "7985889"
 <td><p>サービス注文を作成し、管理します。</p></td>
 </tr>
 <tr class="even">
-<td><p> </p></td>
-<td><p> </p></td>
-<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 </tr>
 <tr class="odd">
 <td><p>契約の更新および評価</p></td>
@@ -93,8 +98,8 @@ ms.locfileid: "7985889"
 </tr>
 <tr class="odd">
 <td><p></p></td>
-<td><p><strong>サブスクリプションの指数化 </strong></p></td>
-<td><p>サブスクリプションの基準価格およびインデックスを更新します。</p></td>
+<td><p><strong>定期売買の指数化 </strong></p></td>
+<td><p>定期売買の基準価格およびインデックスを更新します。</p></td>
 </tr>
 </tbody>
 </table>
@@ -102,6 +107,3 @@ ms.locfileid: "7985889"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

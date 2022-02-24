@@ -1,29 +1,31 @@
 ---
 title: データ管理パッケージ REST API
 description: このトピックでは、データ管理フレームワークのパッケージ REST API について説明します。
-author: peakerbl
-ms.date: 08/16/2021
+author: Sunil-Garg
+ms.date: 06/18/2020
+manager: AnnBe
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
-ms.openlocfilehash: bef43036ac539ee78b25d50e3eb85016d81ce99c
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 1a9da9e2af9bc71ddf16066ad6dadf2f2214a755
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404057"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685689"
 ---
 # <a name="data-management-package-rest-api"></a>データ管理パッケージ REST API
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、データ管理フレームワークのパッケージの Representational State Transfer (REST) のアプリケーション プログラミング インターフェイス (API) について説明します。 パッケージ API により、データ パッケージを使用して統合できます。 REST API はクラウド展開とオンプレミスの展開で使用できます。 
+このトピックでは、データ管理フレームワークのパッケージの Representational State Transfer (REST) のアプリケーション プログラミング インターフェイス (API) について説明します。 パッケージ API により、データ パッケージを使用して統合できます。 REST API はクラウド展開とオンプレミスの展開で使用できます。 オンプレミス配置では、現在この機能は、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) (バージョン 7.2)、ビルド 7.0.4709.41184 以降で利用可能です。
 
 オンプレミス サポートが追加されましたが、API 名は変更されていません。 したがって、Microsoft は、クラウド配置とオンプレミス配置の両方に対して単一の API セットを維持することができます。
 
@@ -38,6 +40,7 @@ ms.locfileid: "7404057"
 | 変換      | データ ファイルが XML 形式の場合の Extensible Stylesheet Language Transformations (XSLT) のサポート | システム外部での変換 |
 | サポートされているプロトコル | SOAP および REST | REST |
 | サービス タイプ        | カスタム サービス | データ プロトコル (OData) アクションを開きます |
+| 在庫状態        | Microsoft Dynamics Finance and Operations (2016 年 2 月) およびそれ以降。 注意: この機能は、オンプレミス バージョンの Dynamics 365 Finance and Operations には対応していません。 | Microsoft Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 5 (2017 年 3 月) およびそれ以降 |
 
 定期的な統合 API がデータ管理フレームワークのパッケージ API よりも要件を満たしていることを決定した場合、[定期統合](recurring-integrations.md) を参照します。 このトピックの残りの部分では、データ管理フレームワークのパッケージ API について説明します。
 
@@ -238,7 +241,7 @@ HTTP/1.1 200 OK
 **ImportFromPackage** API は、実装に関連付けられている Blob ストレージにアップロードされるデータ パッケージからインポートを開始するために使用します。 オンプレミス配置の場合、ファイルが以前アップロードされたローカル ストレージから、インポートが開始されます。
 
 > [!NOTE]
-> **ImportFromPackage** API は、複合エンティティをサポートします。 ただし、1 つのパッケージで 1 つの複合エンティティのみという制限があります。
+> プラットフォーム更新プログラム 12 を起動すると、**ImportFromPackage** API は複合エンティティをサポートします。 ただし、1 つのパッケージで 1 つの複合エンティティのみという制限があります。
 
 ```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
@@ -374,10 +377,7 @@ HTTP/1.1 200 OK
 
 ### <a name="getexecutionsummarystatus"></a>GetExecutionSummaryStatus
 
-**GetExecutionSummaryStatus** API は、インポート ジョブとエクスポート ジョブの両方に使用されます。 これは、データ プロジェクト実行ジョブのステータスの確認に使用されます。 この API は、クラウド配置とオンプレミス配置の両方に適用されます。 
-
-> [!NOTE]
-> API が、*成功* など、最終実行ステータスを返すよう、パッケージを作成する必要があります。
+**GetExecutionSummaryStatus** API は、インポート ジョブとエクスポート ジョブの両方に使用されます。 これは、データ プロジェクト実行ジョブのステータスの確認に使用されます。 この API は、クラウド配置とオンプレミス配置の両方に適用されます。
 
 ```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -444,13 +444,10 @@ BODY
 
 次の図は、データ管理パッケージ メソッドを使用してデータ パッケージをインポートする方法を示しています。
 
-![データ管理パッケージ メソッドを使用するデータ パッケージ ファイルをインポートします。](./media/data-package-import.png)
+![データ管理パッケージ メソッドを使用するデータ パッケージ ファイルのインポート](./media/data-package-import.png)
 
 次の図は、データ管理パッケージ メソッドを使用してデータ パッケージをエクスポートする方法を示しています。
 
-![データ管理パッケージ メソッドを使用するデータ パッケージ ファイルをエクスポートします。](./media/data-package-export.png)
+![データ管理パッケージ メソッドを使用するデータ パッケージ ファイルのエクスポート](./media/data-package-export.png)
 
 データのインポートとデータのエクスポートのメソッドを紹介するサンプルのコンソール アプリケーションは、 GitHub から入手できます。 詳細については、「<https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/FileBasedIntegrationSamples/ConsoleAppSamples>」に移動してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

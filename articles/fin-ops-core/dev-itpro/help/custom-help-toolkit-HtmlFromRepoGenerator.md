@@ -2,20 +2,22 @@
 title: カスタム ヘルプ ツールキット - HtmlFromRepoGenerator ツール
 description: このトピックでは、Finance and Operations アプリ用のカスタム ヘルプ ツールキットに含まれている HtmlFromRepoGenerator ツールについて説明し ます。
 author: edupont04
+manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
+ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 84c37d86e42fcc324544a8f0739a82f5b3b996fd
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 30f7703e2f7c46ae49daf3bc0f8a7e7079624686
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595411"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685091"
 ---
 # <a name="custom-help-toolkit-the-htmlfromrepogenerator-tool"></a>カスタム ヘルプ ツールキット: HtmlFromRepoGenerator ツール
 
@@ -40,8 +42,7 @@ ms.locfileid: "7595411"
 
 - ローカライズされた Microsoft リポジトリと en-US リポジトリを比較して、相違点を特定し、それに応じてリンクを更新します。
 
-> [!NOTE]
-> カスタム ヘルプ ツールキットの最初のバージョンでは、このツールの名前は ConsoleApp でした。 このツールの名前が変更され、2020 年に更新されました。
+カスタム ヘルプ ツールキットの最初のバージョンでは、このツールの名前は ConsoleApp でした。
 
 ### <a name="syntax"></a>構文
 
@@ -80,25 +81,25 @@ HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> 
 
 次の例では、en-US リポジトリを複製し、en-US の HTML ファイルを生成します。
 
-```dos
+```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
 次の例では、以前に複製された en-US リポジトリを使用し、en-US の HTML ファイルを生成します。
 
-```dos
+```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
 次の例では、de-DE と en-US リポジトリを複製し、de の HTML ファイルを生成します。
 
-```dos
+```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
 次の例では、既存の de-DE と en-US リポジトリを使用し、de の HTML ファイルを生成します。 既存の de-DE リポジトリを使用する場合、そのリポジトリが最新であることを確認してください。
 
-```dos
+```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNotClone --externalText "(This is an external link)" --enOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
@@ -123,6 +124,3 @@ HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNot
 [Azure にカスタム ヘルプを展開](walkthrough-help-azure.md)  
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
 [Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換](migrate-dynamicsax2012.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,24 +1,27 @@
 ---
 title: 顧客リベートの生成および処理
 description: この手順は、要求の生成から売掛金勘定への見越計上として顧客リベートを渡すまでの、顧客リベートの処理方法を示します。
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a8ebc281036842bdc8965e062990438e1fb466ff
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969090"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432090"
 ---
 # <a name="generate-and-process-customer-rebates"></a>顧客リベートの生成および処理
 
@@ -62,14 +65,14 @@ ms.locfileid: "7969090"
 
 ## <a name="process-rebate-claims"></a>リベート要求の処理
 1. **ナビゲーション ウィンドウ > モジュール > 販売とマーケティング > 顧客リベート > リベート** の順に移動します。
-    - リベート ページは、リベート要求の確認、承認、処理を行うワークベンチとして機能します。 リベート契約 USMF-000001 の対象となる顧客 US-009 の販売注文が請求された結果として、作成された請求を処理します。   
+    - [リベート] ページは、リベート要求の確認、承認、処理を行うワークベンチとして機能します。 リベート契約 USMF-000001 の対象となる顧客 US-009 の販売注文が請求された結果として、作成された請求を処理します。   
     - 最初の行は、製品 T0020 の 40 単位の販売に基づいて、単位ごとに 20 USD として計算された 800 USD のリベート要求を表します。 これは、リベート契約の最初の数量区分の条件と一致します。  
     - 2 番目の要求は、2,400 USD です。これは、製品 T0020 の 60 単位の販売に基づいています。また、契約の 2 番目の数量区分により、1 単位 40 USD として計算されました。  
     - 両方の請求は、"計算対象" 状態にあります。 これは、定期的に顧客の販売実績を追跡する契約に関連付けられ、対応する期間内の合計売上高の勘定を再計算する必要があることを意味します。   
 2. **累計** をクリックします。
 3. **顧客** フィールドで値を入力または選択します。
 4. **開始日** フィールドで、今日の日付を選択します。
-5. **OK** をクリックします。 **累計** 機能を実行した結果、見積要求の金額は、関連する期間の顧客の合計売上高が最初のリベートが生成されたときより高いため、勘定が調整されています。 つまり、購買合計数量が 100 単位に達したため、顧客は、単位ごとに 40 USD (契約の2 番目の数量区分により)、または合計リベート金額の 4,000 USD を利用できます。 差額は、800 USD 追加という新しい要求「調整」として記録されます。 累積的な更新プログラムに含まれているリベート要求の状態は、計算済に設定されます。 
+5. **OK** をクリックします。 **累計** 機能を実行した結果、見積要求の金額は、関連する期間の顧客の合計売上高が最初のリベートが生成されたときより高いため、勘定が調整されています。 つまり、購買合計数量が 100 単位に達したため、顧客は、単位ごとに 40 USD (契約の2 番目の数量区分により)、または合計リベート金額の 400 USD を利用できます。 差額は、800 USD 追加という新しい要求「調整」として記録されます。 累積的な更新プログラムに含まれているリベート要求の状態は、計算済に設定されます。 
 6. リストで、すべての行をマークします。
 7. **承認** をクリックします。
 8. **プロセス** をクリックします。
@@ -79,6 +82,3 @@ ms.locfileid: "7969090"
     - リベート見越勘定は、顧客の将来の負債を表すよう貸方に転記されました。
     - リベート経費勘定が販売に関連して発生した原価を認識するよう借方に転記されました。   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

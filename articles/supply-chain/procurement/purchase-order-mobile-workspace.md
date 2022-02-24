@@ -1,25 +1,27 @@
 ---
 title: 発注書の承認モバイル ワークスペース
 description: このトピックでは、発注書を表示したり、アクションを通じて対応したりできる発注書の承認モバイル ワークスペースに関する情報を提供します。 たとえば、発注書を承認または拒否できます。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 30211
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fc88f20b50e034f2f27b7e2576fe6a4bb3486e23
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7f952f3af36620a20a5c991fd9e1ccfd56119f47
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570564"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022309"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>発注書の承認モバイル ワークスペース
 
@@ -36,7 +38,7 @@ ms.locfileid: "7570564"
 組織に配置されている Supply Chain Management のバージョンによって、前提条件は異なります。
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Management を使用する場合の前提条件 
-Supply Chain Management を組織に配置している場合、システム管理者は **発注書承認** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+Supply Chain Management を組織に配置している場合、システム管理者は **発注書承認** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を使用する場合の前提条件
 Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
@@ -55,16 +57,16 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 <td>システム管理者</td>
 <td>KB 4017918 は、<strong>発注書の承認</strong> モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4017918 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Microsoft Dynamics Lifecycle Services (LCS)</a> からメタデータ修正プログラムをダウンロードします。</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li>
-<li><strong>SCMMobile</strong> モデルを含む<a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用します</a>。</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Microsoft Dynamics Lifecycle Services (LCS)</a> からメタデータ修正プログラムをダウンロードします。</li>
+<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">メタデータ修正プログラムをインストールします。</a></li>
+<li><strong>SCMMobile</strong> モデルを含む<a href="../../dev-itpro/deployment/create-apply-deployable-package.md">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
+<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">配置可能パッケージを適用します</a>。</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td><strong>発注書の承認</strong>モバイル ワークスペースを公開します。</td>
 <td>システム管理者</td>
-<td>「<a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">モバイル ワークスペースの公開</a>」を参照してください。</td>
+<td>「<a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">モバイル ワークスペースの公開</a>」を参照してください。</td>
 </tr>
 </tbody>
 </table>
@@ -83,7 +85,7 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 3. 初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
 4. サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
-![使用可能なワークスペースの一覧の発注書の承認ワークスペース。](./media/po-workspaces.png)
+![使用可能なワークスペースの一覧の発注書の承認ワークスペース](./media/po-workspaces.png)
 
 ## <a name="view-orders-that-are-assigned-to-you"></a>自分に割り当てられている注文の表示
 1. モバイル デバイスで、**発注書の承認** ワークスペースを選択します。
@@ -110,6 +112,3 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 5. 該当するアクションを選択します。
 6. **タスクの完了** ページで、コメントを入力します。 **委任** アクションを選択した場合、タスクを委任するユーザーを選択する必要があります。
 7. **完了** を選択します。 ワークスペースを更新すると、発注書がリストに表示されなくなります。 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

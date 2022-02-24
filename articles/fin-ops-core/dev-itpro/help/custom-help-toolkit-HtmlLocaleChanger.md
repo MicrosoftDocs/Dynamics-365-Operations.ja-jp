@@ -2,20 +2,22 @@
 title: カスタム ヘルプ ツールキット - HtmlLocaleChanger ツール
 description: このトピックでは、Finance and Operations アプリ用のカスタム ヘルプ ツールキットに含まれている HtmlLocaleChanger ツールについて説明します。
 author: edupont04
+manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
+ms.service: dynamics-ax-platform
 audience: IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 95920f72839bc77778644170dfc2e5270c9993fdacade45630755fd41aea8b8e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b3b69553d2ea4432e78426211a2f1d8d1b40d993
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754989"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685087"
 ---
 # <a name="custom-help-toolkit-the-htmllocalechanger-tool"></a>カスタム ヘルプ ツールキット: HtmlLocaleChanger ツール
 
@@ -55,6 +57,3 @@ HtmlLocaleChanger.exe --h D:\D365-Operations\d365F-O\supply-chain\de --l de-at -
 [Azure にカスタム ヘルプを展開](walkthrough-help-azure.md)  
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
 [Dynamics AX カスタム ヘルプを Dynamics 365 で使用するために変換](migrate-dynamicsax2012.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

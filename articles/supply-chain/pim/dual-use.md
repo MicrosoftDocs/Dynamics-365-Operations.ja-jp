@@ -1,24 +1,27 @@
 ---
 title: デュアルユース商品
 description: このトピックでは、デュアルユース商品として識別された製品を追跡し、関連する製品と仕向国ごとに証明書番号を保存し、関連する請求書、梱包伝票、および/または販売注文書に有効な証明書番号を印刷する方法について説明します。
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 8f2b738fd87219be383b103eaf5fafeb971fc702
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570756"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432162"
 ---
 # <a name="dual-use-goods"></a>デュアルユース商品
 
@@ -105,6 +108,3 @@ ms.locfileid: "7570756"
     | 請求書に印刷する | このチェック ボックスをオンにすると、指定された日付の範囲で、指定された国に対応する証明書番号が請求書に印刷されます。 |
     | 梱包明細に印刷する | このチェック ボックスをオンにすると、指定された日付の範囲で、指定された国に対応する証明書番号が梱包明細に印刷されます。 |
     | 販売注文書に印刷する | このチェック ボックスをオンにすると、指定された日付の範囲で、指定された国に対応する証明書番号が販売注文書に印刷されます。 |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

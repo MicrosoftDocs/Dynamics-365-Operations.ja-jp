@@ -2,25 +2,28 @@
 title: 輸送管理ゾーン マスター
 description: このトピックでは、輸送管理を使用して地理的な場所をゾーンに分割する方法について説明します。
 author: Henrikan
+manager: ''
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSZoneMaster
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-01-09
-ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2f3e50a61f7fc842a2656a443805ef5c9538fef4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.14
+ms.openlocfilehash: 2112e7131281cd485b580fd71536981c1ba4aefd
+ms.sourcegitcommit: fe7ac653efcb1ac6318083f482394b96ed82b4c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567634"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4432430"
 ---
 # <a name="transportation-management-zone-master"></a>輸送管理ゾーン マスター
 
@@ -33,6 +36,3 @@ ms.locfileid: "7567634"
 - **工順計画を最適化する**: 特定の工順計画を特定のゾーンに割り当てます。
 
 ゾーンは、各ゾーンを修飾するメタデータ フィールドの値 (国、郵便番号の範囲、または配送業者のサービス) に基づいて定義します。 輸送価格設定でゾーンの概念を採用していない場合は、ゾーン定義は必要ありません。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

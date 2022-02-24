@@ -1,10 +1,12 @@
 ---
 title: 資産の重要度タイプ
 description: このトピックでは、資産管理の資産の重要度タイプについて説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetCriticality, EntAssetObjectCriticality
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9d2c5e8b6676abf03fe0d3de8b23f125713d6f2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776923"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021707"
 ---
 # <a name="asset-criticality-types"></a>資産の重要度タイプ
 
@@ -40,7 +42,7 @@ ms.locfileid: "6776923"
 4. **名前** フィールドに、重要度タイプの名前を入力します。
 5. **係数** フィールドに係数を入力します。 この係数は、ワーク オーダー スケジューリングの計算中に使用され、重要度レコードが使用されるべきかを決定します。 (最も高い係数を持つレコードは常に使用されます。) この設定は、次の図に示すように、同じ重要度値を持つ重要度明細行が作成されている場合に関係します。
 
-    ![重大度タイプ ページ。](media/23-setup-for-objects.png)
+    ![重大度タイプ ページ](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>資産の重要度の設定
 
@@ -59,6 +61,3 @@ ms.locfileid: "6776923"
 - ワーク オーダーにある重要度は、ワーク オーダーにワーク オーダー明細行が追加または削除されるたびに再計算されます。
 - ワーク オーダーに複数のワーク オーダー ジョブが含まれている場合、**重要度タイプ** ページの **係数** フィールドに従って、ワーク オーダーでは常に最高の重要度が使用されます。
 - 一般に、資産の重要度は一定期間で変化する可能性があります。 重要度は、新しい機器の購入、改修などによって影響を受ける可能性があります。 資産の重要度を定期的に再評価し (たとえば、1 年または 1 年おきに 1 回)、重要度の定義が現在の生産の設定と一致していることを確認してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

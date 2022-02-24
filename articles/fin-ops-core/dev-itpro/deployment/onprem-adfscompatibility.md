@@ -2,9 +2,11 @@
 title: AD FS Microsoft 365 の互換性
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) 環境と Microsoft 365 で Active Directory フェデレーション サービス (AD FS) の同じインスタンスを使用する方法について説明します。
 author: faix
+manager: AnnBe
 ms.date: 01/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 5544b373ee2bc51903757ba451a40d3955d3f08bfa5b8061d7e351378cee13c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0659b0be8799ac5f78d41440324a856e75d07e49
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765790"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685459"
 ---
 # <a name="ad-fs-microsoft-365-compatibility"></a>AD FS Microsoft 365 の互換性
 
@@ -76,6 +78,3 @@ ms.locfileid: "6765790"
 部分的サポートとして、ローカル エージェント 2.2.0 またはそれ以降がインストールされていて、プラットフォーム更新プログラム 28 またはそれ以降でサービスを更新する必要があります。
 
 部分的サポートでは、Financial Reporting サービスに対する認証はサポートされていません。  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

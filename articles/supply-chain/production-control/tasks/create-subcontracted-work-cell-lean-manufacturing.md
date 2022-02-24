@@ -1,23 +1,26 @@
 ---
 title: リーン生産の外注作業セルの作成
 description: リーン生産の外注作業をモデル化するには、作業を提供する仕入先に関連付けられている作業セルを作成する必要があります。
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 06/23/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f37a38227ef57e6e66a77e90883bf157792e7f81
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2bc1e8551bbebd11cad18d47f9e74a2dedcb908d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576835"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431675"
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>リーン生産の外注作業セルの作成
 
@@ -68,6 +71,3 @@ ms.locfileid: "7576835"
 24. [単位] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
 25. [単位の変更] を解決します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

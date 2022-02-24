@@ -1,25 +1,27 @@
 ---
 title: ツールバーおよびフィールドのサブパターン
-description: この記事では、ツールバーおよびフィールドのサブパターンについて説明します。 このコンテナー パターンは、データ フィールドのサブパターンの上にアクションを表示するために使用されます。
+description: この記事では、ツールバーおよびフィールドのサブパターンについて説明します。 このコンテナー パターンは、データ フィールドのサブパターンの上にアクションを表示するために使用されます。 ツールバーに含まれるアクションは 10 個未満にしてください。
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 15911
 ms.assetid: c5d6aa38-1f5f-41e5-9d90-11766d34a947
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4cf436dabde206bf5440d203df92c3edaf1c10b9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ac358099f2f502c646dea8d6884788184e6eaa5d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781218"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684999"
 ---
 # <a name="toolbar-and-fields-subpattern"></a>ツールバーおよびフィールドのサブパターン
 
@@ -27,13 +29,14 @@ ms.locfileid: "7781218"
 
 この記事では、ツールバーおよびフィールドのサブパターンについて説明します。 このコンテナー パターンは、データ フィールドのサブパターンの上にアクションを表示するために使用されます。 ツールバーに含まれるアクションは 10 個未満にしてください。
 
-## <a name="usage"></a>用途
+<a name="usage"></a>用途
+-----
 
 このコンテナー パターンは、データ フィールドのサブパターンの上にアクションを表示するために使用されます。 ツールバーに含まれるアクションは 10 個未満にしてください。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![ツール バーおよびフィールドのサブパターンのワイヤーフレーム。](./media/toolbarfields1.png)](./media/toolbarfields1.png)
+[![ツール バーおよびフィールドのサブパターンのワイヤーフレーム](./media/toolbarfields1.png)](./media/toolbarfields1.png)
 
 ## <a name="model"></a>モデル
 ### <a name="high-level-structure"></a>高レベル構造体
@@ -75,7 +78,7 @@ ms.locfileid: "7781218"
 
 フォーム: **HcmPosition** **(WorkerAssignmentTabPage)** 
 
-[![ツール バーおよびフィールドのサブパターンの例。](./media/toolbarfields2-1024x131.png)](./media/toolbarfields2.png)
+[![ツール バーおよびフィールドのサブパターンの例](./media/toolbarfields2-1024x131.png)](./media/toolbarfields2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -99,7 +102,4 @@ ms.locfileid: "7781218"
 
 **HcmPosition** 
 
-![以前のバージョンのツール バーおよびフィールド。](./media/toolbarfields3.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![以前のバージョンのツール バーおよびフィールド](./media/toolbarfields3.png)

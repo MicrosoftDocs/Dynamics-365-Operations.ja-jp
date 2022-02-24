@@ -2,28 +2,29 @@
 title: 原価計算バージョンの概要
 description: この記事は、原価バージョン、その管理方法、そこに含めることができるデータのタイプについての情報を提供します。 原価バージョンの主な目的は、品目、原価カテゴリ、間接原価の計算式に関する原価レコードを保持することです。
 author: AndersGirke
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "54532"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 54532
 ms.assetid: cd239da5-f434-4d1b-8196-5414c888d76d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27ad1f1d8ae60eef5607bafb9aaf9604784099e4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: cefee7d678789f462eedbf9f9a3fbc9b591e25a2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983100"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432252"
 ---
 # <a name="costing-versions-overview"></a>原価計算バージョンの概要
 
@@ -67,6 +68,3 @@ ms.locfileid: "7983100"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

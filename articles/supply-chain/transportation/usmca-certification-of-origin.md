@@ -2,22 +2,25 @@
 title: 原産国の USMCA 証明書
 description: この機能を使用すると、米国 - メキシコ - カナダ協定 (USMCA) によって要求される原産国ドキュメントを印刷できます。
 author: Henrikan
+manager: tfehr
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-23
-ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4d34c1778802baaa0de0506d3dd4bc7efeb13f27
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.16
+ms.openlocfilehash: 2263b3643becedd68911e2325c60ed4d97d6e823
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573060"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4432435"
 ---
 # <a name="usmca-certification-of-origin"></a>原産国の USMCA 証明書
 
@@ -137,6 +140,3 @@ USMCA 機能を使用するには、システム上で有効化する必要が�
 ### <a name="page-numbers"></a>ページ番号
 
 ドキュメントの下部に印刷される現在のページとページ数です。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

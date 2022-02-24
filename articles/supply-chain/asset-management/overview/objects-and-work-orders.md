@@ -1,10 +1,12 @@
 ---
 title: 資産と作業指示書
 description: このトピックでは、資産管理の資産と作業指示書について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2872dc84ec11ae7fad9fd5b225b9207f13280db334cc0d010a3d6749a591ee2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cddb0a25286c8ce9d72aef0b835809705ad577a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718110"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020942"
 ---
 # <a name="assets-and-work-orders"></a>資産と作業指示書
 
@@ -32,26 +34,23 @@ ms.locfileid: "6718110"
 
 製品情報や資産仕様、必要なメンテナンス計画など、さまざまなデータが資産ごとに設定されます。 次の図は、資産データの概要と、資産のジョブ タイプへの関連付けを示しています。 赤色のテキストは、継承と依存関係を示す場合などに使用されます。
 
-![ジョブ タイプに関連する資産データを示す図。](media/05-overview-image.png)
+![ジョブ タイプに関連する資産データを示す図](media/05-overview-image.png)
 
 すべての作業指示書には、予防的メンテナンス、修繕メンテナンス、検査などの作業指示書タイプがあります。 作業指示書には、1 つ以上のワーク オーダー ジョブが含まれています。 すべての作業指示書ジョブは、資産および関連するジョブ タイプに対して実行する必要があるジョブを定義します。 関連するジョブ タイプの例には、10,000 km、50,000 km、1 年間のオーバーホール、および安全検査が含まれます。 1 つの作業指示書を複数の資産に関連付けることができます。
 
 次の図は、作業指示書のキー データの概要を示します。
 
-![作業指示書のキー データを示す図。](media/06-overview-image.png)
+![作業指示書のキー データを示す図](media/06-overview-image.png)
 
 作業指示書は別の作業指示書に関連付けることができ、ジョブ タイプには作業指示書を作成する後続のジョブを含めることができます。 一般に、作業指示書間に依存関係はありません。 したがって、作業指示書のライフサイクル状態を変更でき、各々無関係にスケジューリングできます。
 
 作業指示書は、修繕メンテナンス、予防的メンテナンス、または再有効化メンテナンスに関連するさまざまな方法で作成できます。 また、作業指示書を手動で作成することもできます。 次の図は、作業指示書の自動または手動で作成するプロセスの概要を示します。
 
-![作業指示書の自動または手動作成を示す図。](media/07-overview-image.png)
+![作業指示書の自動または手動作成を示す図](media/07-overview-image.png)
 
 作業指示書でメンテナンス ジョブをスケジュールして実行する場合、複数のステップを完了しておく必要があります。 次の図は、作業指示書処理の概要を示します。
 
-![作業指示書の処理の概要を示す図。](media/08-overview-image.png)
+![作業指示書の処理の概要を示す図](media/08-overview-image.png)
 
 > [!NOTE]
 > 一般に、Dynamics 365 Supply Chain Management および **アセット管理** モジュールで作業する場合は、**新規** を選択して新しいレコードを作成するか、**編集** を選択して既存のレコードを更新してから、**保存** を選択して新規または編集したデータを保存します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

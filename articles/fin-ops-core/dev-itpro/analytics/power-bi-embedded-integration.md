@@ -1,25 +1,27 @@
 ---
 title: Power BI Embedded 統合
-description: このトピックでは、Power BI Embedded 統合を使用するための方法について説明します。
-author: RichdiMSFT
+description: パートナーと ISV が開発する Power BI コンテンツは、アプリケーションに直接埋め込むことができます。 このトピックでは、Power BI Embedded 統合を使用するための方法について説明します。
+author: TJVass
+manager: AnnBe
 ms.date: 02/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.custom: 270754
 ms.assetid: ca4b2ccf-d68d-4344-833e-1c45d966246c
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: cda29201061eababbc4070f444d1f6aa2e5ec9d80150ab316e9157bcb47708df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ff676f90e26942f7c0483f9d72029cdb46eea06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745928"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685748"
 ---
 # <a name="power-bi-embedded-integration"></a>Power BI Embedded 統合
 
@@ -73,6 +75,3 @@ Power BI Embedded サービスの詳細については、「[Power BI FAQ](https
  
 ### <a name="can-i-access-analytical-workspaces-and-reports-in-the-on-premises-version-of-finance-and-operations"></a>Finance and Operations のオンプレミス バージョンで分析ワークスペースおよびレポートにアクセスすることはできますか?
 いいえ、現在 Dynamics 365 Finance + Operations (オンプレミス) の分析ワークスペースおよびレポートにアクセスできません。 インテリジェンス機能のシステムは、クラウドにホストされているソリューションに依存します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

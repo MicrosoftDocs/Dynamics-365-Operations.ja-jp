@@ -1,10 +1,12 @@
 ---
 title: スケジュール済み作業指示書の最大能力負荷の計算
 description: このトピックでは、資産管理でスケジュール済み作業指示書の最大能力負荷を計算する方法について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ff244e51151a1cc0485cae25873566fa97253171516d48449fed75f070146431
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b7e4a20ed56b1eac29d16d527693d6e455cdc37
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766221"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021657"
 ---
 # <a name="calculate-capacity-load-on-scheduled-work-orders"></a>スケジュール済み作業指示書の最大能力負荷の計算
 
@@ -48,13 +50,10 @@ ms.locfileid: "6766221"
 
 次の図は、負荷タイプ **引当済** に対する 3 週間の計算の結果を示します。
 
-![図 1。](media/08-work-order-scheduling.png)
+![図 1](media/08-work-order-scheduling.png)
 
 [!NOTE]
 負荷タイプ **能力** または **剰余** を選択した計算では、選択した期間のリソースに対して引当が行われていない場合、同じ結果が表示されます。
 
 スケジュール済み作業指示書でなく、メンテナンス スケジュール明細行で最大能力負荷を計算する方法についての詳細は、[最大能力負荷の計算](../capacity-planning/calculate-capacity-load.md) を参照してください。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

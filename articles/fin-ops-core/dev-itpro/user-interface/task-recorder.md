@@ -2,28 +2,31 @@
 title: タスク レコーダー リソース
 description: このトピックでは、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
 author: jasongre
+manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 ms.search.form: SysTaskRecorderPane
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 24271
+ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71a3e6ad8d45b6ed550a023cca5001af0195d7cb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 1b901bdc8b2385ef982bf7e0e30298d6caa6bac9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065086"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685005"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
 
@@ -31,13 +34,13 @@ ms.locfileid: "8065086"
 
 ### <a name="task-recorder"></a>タスク レコーダー
 
-財務と運用アプリのタスク レコーダーは、ユーザーが複数の異なるユース ケースの業務プロセスを記録できるユーティリティです。 次にいくつか例を挙げます。 
+Finance and Operations アプリのタスク レコーダーは、ユーザーが複数の異なるユース ケースの業務プロセスを記録できるユーティリティです。 次にいくつか例を挙げます。 
 - アプリケーション自体に含まれる特定の業務プロセスのステップ バイ ステップ ガイド付きツアー 
 - オプションでスクリーンショットを含めることができる Microsoft Word ドキュメントとしての業務プロセスのドキュメント
 - 業務プロセスの回帰テスト
 - アプリケーションでの業務プロセスの自動再生
 
-財務と運用アプリのタスク レコーダーは、高い応答性、フレキシブルなアプリケーション プログラミング インターフェイス (API)、および業務プロセス記録の消費者とのシームレスな統合を備えています。 また、タスク レコーダーは、Microsoft Dynamics Lifecycle Services (LCS) の [ビジネス プロセス モデラー (BPM)](https://bpm.lcs.dynamics.com) ツールとも統合されているため、ユーザーは引き続き記録を整理ができます。 ただし、ユーザーは、記録から業務プロセス ダイアグラムを生成できなくなりました。
+Finance and Operations アプリのタスク レコーダーは、高い応答性、フレキシブルなアプリケーション プログラミング インターフェイス (API)、および業務プロセス記録の消費者とのシームレスな統合を備えています。 また、タスク レコーダーは、Microsoft Dynamics Lifecycle Services (LCS) の [ビジネス プロセス モデラー (BPM)](https://bpm.lcs.dynamics.com) ツールとも統合されているため、ユーザーは引き続き記録を整理ができます。 ただし、ユーザーは、記録から業務プロセス ダイアグラムを生成できなくなりました。
 
 タスク レコーダーでは、業務プロセスの記録からアプリケーションの回帰テストを自動的に生成し、既に記録されたプロセスを再生することができます。 これらの新機能には、ユーザーがタスク レコーダーを最大限に活用できるテスト固有のジェスチャも含まれます。
 
@@ -47,10 +50,10 @@ ms.locfileid: "8065086"
 
 ### <a name="basic-configuration"></a>基本コンフィギュレーション
 
-タスク レコーダーはすべての財務と運用アプリに含まれており、ユーザーが初めてクライアントを開いた直後に業務プロセスの記録を開始できます。
+タスク レコーダーはすべての Finance and Operations アプリに含まれており、ユーザーが初めてクライアントを開いた直後に業務プロセスの記録を開始できます。
 
 > [!IMPORTANT]
-> **タスク ガイド** タブは、現在のところ、コマースおよび人事管理では使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 人事管理でのはじめにの経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 Commerce および Human Resources の両方に関する [財務と運用アプリ ドキュメント](../../fin-ops/index.md) で手順を追ったヘルプも利用できます。
+> **タスク ガイド** タブは、現在のところ、コマースおよび人事管理では使用できません。 将来のリリースではこの機能を有効にするよう、作業が進行中です。 人事管理でのはじめにの経験タスク ガイドは、基本的機能をカバーするために引き続き使用可能です。 コマースおよび人事管理の両方に関する docs.microsoft.com サイト ([https://docs.microsoft.com/dynamics365/](../../fin-ops/index.md)) 上で手順を追ったヘルプを利用できます。
 
 ## <a name="start-a-new-recording"></a>新しい記録を開始する
 次のステップでは、タスク レコーダーを使用して新しい記録を開始する方法を示します。
@@ -108,7 +111,7 @@ ms.locfileid: "8065086"
 
 **停止** は記録セッションを終了するのに使用します。 この操作は元に戻せないため、**停止** をクリックする前に、記録が完了していることを確認します。 **停止** をクリックすると、ダウンロード オプション画面に移動します。
 
-[![コントロールの停止。](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
+[![コントロールの停止](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
 
 ### <a name="startend-sub-task"></a>サブ タスクの開始/終了
 
@@ -209,7 +212,7 @@ ms.locfileid: "8065086"
 ## <a name="options-after-a-recording-is-completed"></a>記録完了後のオプション
 **停止** をクリックして記録セッションを終了すると、いくつかのオプションが、完了した記録に関連するファイルを保存するために表示されます。 **この PC に保存** をクリックし、タスク記録パッケージをデスクトップに保存します。 このファイルは後で使用します。
 
-[![記録が終了した後に、記録をダウンロードまたは保存するためのオプション。](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
+[![記録が終了した後に、記録をダウンロードまたは保存するためのオプション](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
 
 ### <a name="save-to-this-pc"></a>この PC に保存
 
@@ -272,11 +275,11 @@ LCS ライブラリに記録を保存すると、BPM ライブラリの指定さ
  
     タスク レコーダーがステップを挿入するには、正しいページを開いておく必要があります。 新しいステップが発生するページが正しいページです。 タスク レコーダーには、アクティブなページが何であるかを判断するメカニズムがあり、正しいページが開かれていない場合は、機能が無効になります。 
 
-    [![ステップ機能を挿入。](./media/taskguide1.png)](./media/taskguide1.png)
+    [![ステップ機能の挿入](./media/taskguide1.png)](./media/taskguide1.png)
 
     正しいページを開いている場合は、**ステップの挿入** が利用可能になります。
 
-    [![適切なページに使用可能なステップを挿入する。](./media/taskguide2-231x300.png)](./media/taskguide2.png)
+    [![適切なページで使用可能なステップの挿入](./media/taskguide2-231x300.png)](./media/taskguide2.png)
 
 2.  **ステップの挿入** をクリックします。
 
@@ -296,7 +299,7 @@ LCS ライブラリに記録を保存すると、BPM ライブラリの指定さ
 
 2.  **ステップを後に移動** をクリックします。 このコマンドにアクセスするには、省略符号 (**...**) ボタンを選択する必要がある場合があります。
 
-    [![ステップを後に移動の例。](./media/taskguide3.png)](./media/taskguide3.png)
+    [![ステップを後に移動の例](./media/taskguide3.png)](./media/taskguide3.png)
 
 3.  ステップまたはサブタスク ステップを移動した後に移動するステップまたはサブタスク ステップを選択します。 タスク レコーダーはステップを移動します。
 
@@ -310,7 +313,7 @@ LCS ライブラリに記録を保存すると、BPM ライブラリの指定さ
 
 **記録の名前** と **記録の説明** フィールドの値を調整できます。 さらにステップをタスク レコーダー編集ウィンドウに表示する場合は、記録の名前と説明を表示するセクションを折りたたむこともできます。
 
-[![記録の名前と説明の展開と折りたたみ。](./media/taskguide4-300x252.png)](./media/taskguide4.png)
+[![記録の名前と説明の展開と折りたたみ](./media/taskguide4-300x252.png)](./media/taskguide4.png)
 
 ## <a name="playing-a-task-guide"></a>タスク ガイドの再生
 
@@ -381,7 +384,7 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 新しい (Chromium ベースの) Microsoft Edge ブラウザーと Google Chrome の両方で機能する **プレリリース** の Chromium ブラウザー拡張機能を使用することにより、タスク レコーダーは、ユーザーが業務プロセスを記録するときにブラウザーのスクリーンショットを撮影することができます。 ユーザーが記録を完了すると、タスク レコーダーはこれらのスクリーンショットを使用して Microsoft Word ドキュメントを生成できます。 この機能を有効にするには、次の手順に従って、プレリリースの Chromium 拡張機能をインストールして、記録中にタスク レコーダーがスクリーンショットを撮影できるようにします。
 
 1.  <https://github.com/Microsoft/FMLab> で、GitHub から拡張機能を含む **FMLabTaskRecorderScreenshot** フォルダをダウンロードします。
-2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。 \<hostname\> を環境のベース URL に置き換えます。
+2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。  \<hostname\> を環境のベース URL に置き換えます。
 
     ```xpp
     ...
@@ -405,6 +408,9 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
     ```
 4.  最新の Microsoft Edge ブラウザーまたは Google Chrome を開きます。
 5.  Microsoft Edge で **設定とその他 &gt; 拡張機能** (または Google Chrome で **Google Chrome のカスタマイズと制御 &gt; その他のツール &gt; 拡張機能**) を選択します。
+
+    ![このイメージは、Google Chrome の拡張機能メニューの場所を示しています。](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
+
 6.  **開発者モード** を選択します。
 7.  **展開された拡張子の読み込み** をクリックします。
 8.  パス **FMLab-master \> FMLab \> TaskRecorderScreenshot** を使用してタスク レコーダー拡張子を含むフォルダーを参照してから、**フォルダーの選択** を選択します。
@@ -421,14 +427,14 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 
 ### <a name="import-a-recorded-test"></a>記録されたテストのインポート
 
-1.  Finance and Operations 開発ツールを使い、Visual Studio を開きます。
+1.  Finance and Operations 開発ツールを使用して Visual Studio を開きます。
 2.  **Dynamics 365 &gt; アドイン &gt; タスク記録のインポート** に移動します。
 3.  **タスクの記録をインポート** メニューで、**参照** ボタンを使用して以前にダウンロードした記録ファイルを検索します。
 4.  必要に応じて、生成されたテスト コードをスタートアップ プロジェクトに追加することを選択します。 これには、プロジェクトを含むソリューションがスタートアップ プロジェクトとして設定されている必要があります。 これにより、生成された X++ テストがプロジェクトと同じモデルになります。
 5.  新しいプロジェクトの作成時に、プロジェクトのモデルを選択します。 生成された X++ テストがこのモデルに配置されます。 モデルは、生成されたテストを正常にビルトするには、モデルには **TestEssentials** モデルへの参照が必要です。
 6.  **インポート** をクリックします。
 
-    [![インポート タスク記録ダイアログ ボックス。](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
+    [![インポート タスク記録 ダイアログ ボックス](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
 
 7.  **新しいプロジェクト** ダイアログ ボックスで、プロジェクトの名前を指定します。
 8.  プロジェクトが作成されると、ユーザーは生成されたコードを開き検査することができます。
@@ -464,6 +470,3 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
   -   タスク ガイド中の「一般的な値」の表示をサポートしないでください。 現在、録音中に使用された値が表示されます。
 - フィルター ウィンドウは、左側から表示されるフィルターです
   -   タスク ガイドは、クリックする必要があるフィルタ ウィンドウ内の各要素を指定しません。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

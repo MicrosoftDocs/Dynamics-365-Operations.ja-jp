@@ -1,37 +1,37 @@
 ---
 title: 倉庫アプリのインストールと接続
 description: このトピックでは、各モバイル デバイスに倉庫アプリをインストールして、Microsoft Dynamics 365 Supply Chain Management 環境に接続するように構成する方法について説明します。 各デバイスの設定は手動で行うことも可能ですが、接続設定をファイルで取り込む、またはQRコードをスキャンして取り込むことができます。
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 05/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f123f217aabcc7500832fafb15199043048b5e5
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 88bce09a6d3bf154592955a6fb2dada6247f1993
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902274"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432179"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>倉庫アプリのインストールと接続
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> このトピックでは、古い倉庫アプリ (現在は非推奨) を構成する方法について説明します。 新しい倉庫管理モバイル アプリを構成する方法の詳細については、[倉庫管理モバイル アプリをインストールして接続する](install-configure-warehouse-management-app.md)を参照してください。
-
-> [!NOTE]
-> このトピックでは、クラウド配置の倉庫管理アプリの構成方法について説明します。 オンプレミス配置の倉庫管理アプリの構成方法については、[オンプレミス配置の倉庫管理](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md) を参照してください。
+> このトピックでは、クラウド配置の倉庫管理の構成方法について説明します。 オンプレミス配置の倉庫管理の構成方法をについては、[オンプレミス配置の倉庫管理](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md) を参照してください。
 
 倉庫アプリは Google Play ストアおよび Microsoft Store で利用可能です。 アプリはスタンドアロンのコンポーネントとして提供されています。 したがって、各デバイスでダウンロードしてから、Microsoft Dynamics 365 Supply Chain Management 環境に接続を構成する必要があります。
 
@@ -54,7 +54,7 @@ ms.locfileid: "7902274"
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations - Microsoft Store の倉庫管理アプリ](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing - Dynamics 365 Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-小規模な配置の場合は、該当のストアから各デバイスにアプリをインストールし、使用している環境への接続を手動で構成することができます。 ただし、バージョン 1.7.0.0 以降の倉庫アプリでは、アプリの配置や構成を自動化することもできます。 この方法は、多数のデバイスを管理し、モバイル デバイス管理およびモバイル アプリケーションの管理ソリューション ([Microsoft Intune](/mem/intune/fundamentals/what-is-intune) など) を使用している場合などに有用です。 Intune を使用してアプリを追加する方法については、[Microsoft Intune にアプリを追加する](/mem/intune/apps/apps-add) を参照してください。
+小規模な配置の場合は、該当のストアから各デバイスにアプリをインストールし、使用している環境への接続を手動で構成することができます。 ただし、バージョン 1.7.0.0 以降の倉庫アプリでは、アプリの配置や構成を自動化することもできます。 この方法は、多数のデバイスを管理し、モバイル デバイス管理およびモバイル アプリケーションの管理ソリューション ([Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) など) を使用している場合などに有用です。 Intune を使用してアプリを追加する方法については、[Microsoft Intune にアプリを追加する](https://docs.microsoft.com/mem/intune/apps/apps-add) を参照してください。
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Azure Active Directoryで Web サービス アプリケーションを作成する
 
@@ -64,36 +64,36 @@ ms.locfileid: "7902274"
 1. Azure のサブスクリプションにアクセス可能なユーザー名とパスワードを入力します。
 1. Azure ポータル左側のナビゲーション ウィンドウで、**Azure Active Directory** を選択します。
 
-    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Azure AD Supply Chain Management が使用するインスタンスで作業をしていることを確認してください。
 1. **管理** の一覧で、**アプリの登録** を選択します。
 
-    ![アプリの登録。](media/app-connect-azure-register.png "アプリの登録")
+    ![アプリの登録](media/app-connect-azure-register.png "アプリの登録")
 
 1. ツールバーの **新規登録** を選択して、**アプリケーションの登録** ウィザードを開きます。
 1. アプリケーションの名前を入力し、**この組織ディレクトリ内のアカウントのみ** オプションを選択し、続いて **登録** を選択します。
 
-    ![アプリケーション ウィザードを登録する。](media/app-connect-azure-register-wizard.png "アプリケーション ウィザードを登録する")
+    ![アプリケーション ウィザードを登録する](media/app-connect-azure-register-wizard.png "アプリケーション ウィザードを登録する")
 
 1. 新しいアプリの登録が開きます。 後の手順で必要となるため、**アプリケーション (クライアント) ID** の値をメモしておきます。 この ID は後の手順で、*クライアント ID* として参照されます。
 
-    ![アプリケーション (クライアント) ID。](media/app-connect-azure-app-id.png "アプリケーション (クライアント) ID")
+    ![アプリケーション (クライアント) ID](media/app-connect-azure-app-id.png "アプリケーション (クライアント) ID")
 
 1. **管理** リストにて、**証明書 & シークレット** を選択します。 続いて、アプリの認証の構成方法に応じて、次のいずれかのボタンを選択します。 (詳細については、本トピックの後半に記載の[証明書またはクライアントシークレットのセクションを使用して認証をする](#authenticate)を参照してください。)
 
     - **証明書のアップロード** – 秘密に使用する証明書をアップロードします。 この方法は安全性が高い上に、より完全な自動化もできるため、この方法を推奨します。 Windows デバイスで倉庫アプリを実行している場合は、証明書をアップロードした後に表示される **サムプリント** 値を書き留めておきます。 この値は、Windows デバイスで証明書を構成する際に必要になります。
     - **新しいクライアント シークレット** – **パスワード** セクションにキーの説明と期間を入力してキーを作成し 、**追加** を選択します。 キーのコピーを作成し、安全に保管します。
 
-    ![証明書 & シークレット。](media/app-connect-azure-authentication.png "証明書 & シークレット")
+    ![証明書 & シークレット](media/app-connect-azure-authentication.png "証明書 & シークレット")
 
 Azure ADでの web サービス アプリケーションの設定方法の詳細については、次のリソースを参照してください:
 
-- Azure AD で、Windows PowerShell を使用した web サービス アプリケーションの設定方法については、[Azure PowerShell を使用して、証明書でサービス プリンシパルを作成する方法](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)を参照してください。
+- Azure AD で、Windows PowerShell を使用した web サービス アプリケーションの設定方法については、[Azure PowerShell を使用して、証明書でサービス プリンシパルを作成する方法](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell)を参照してください。
 - Azure AD にて web サービス アプリケーションを手動で作成する方法の詳細については 、次のトピックを参照してください:
 
-    - [クイックスタート: Microsoft ID プラットフォームにアプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app)
-    - [ポータルを使用して、リソースにアクセスできる Azure AD アプリケーションとサービス プリンシパルを作成する](/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [クイックスタート: Microsoft ID プラットフォームにアプリケーションを登録する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+    - [ポータルを使用して、リソースにアクセスできる Azure AD アプリケーションとサービス プリンシパルを作成する](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Supply Chain Management でユーザー アカウントを作成および設定する
 
@@ -105,7 +105,7 @@ Supply Chain Management を有効にして Azure AD アプリケーションを�
     1. ユーザーを作成します。
     1. 倉庫のモバイル デバイス ユーザーを割り当てます。
 
-    ![倉庫のモバイル デバイス ユーザーを割り当てます。](media/app-connect-app-users.png "倉庫モバイル デバイスのユーザーを割り当てる")
+    ![倉庫モバイル デバイスのユーザーを割り当てます。](media/app-connect-app-users.png "倉庫モバイル デバイスのユーザーを割り当てる")
 
 1. Azure AD アプリケーションと倉庫アプリのユーザーを関連付けます:
 
@@ -113,7 +113,7 @@ Supply Chain Management を有効にして Azure AD アプリケーションを�
     1. 行の作成を行います。
     1. 前述のセクションでメモしたクライアント ID を入力し、名前を付けて、作成したユーザーを選択します。 すべてのデバイスにタグ付けすることをお勧めします。 破棄された場合は、このページから Supply Chain Management へのアクセス権を簡単に削除できます。
 
-    ![Azure Active Directory アプリケーション。](media/app-connect-aad-apps.png "Azure Active Directory アプリケーション")
+    ![Azure Active Directory アプリケーション](media/app-connect-aad-apps.png "Azure Active Directory アプリケーション")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>証明書またはクライアント シークレットを使用した認証
 
@@ -121,7 +121,7 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 
 証明書は、トークンを要求された際に、アプリケーションの ID を証明する秘密として使用することができます。 証明書の公開部分は Azure portal のアプリ登録にアップロードされますが、完全な証明書は倉庫アプリがインストールされている各デバイスに配置する必要があります。 組織では、ローテーションなどの観点から証明書を管理する責任があります。 自己署名付き証明書を使用することはできますが、常にエクスポートされていない証明書を使用する必要があります。
 
-倉庫アプリを実行する各デバイスで、証明書をローカルで使用できるようにする必要があります。 Intune を使用している場合に、Intune 管理デバイスの証明書を管理する方法については、[Microsoft intune での認証に証明書を使用する](/mem/intune/protect/certificates-configure)を参照してください。
+倉庫アプリを実行する各デバイスで、証明書をローカルで使用できるようにする必要があります。 Intune を使用している場合に、Intune 管理デバイスの証明書を管理する方法については、[Microsoft intune での認証に証明書を使用する](https://docs.microsoft.com/mem/intune/protect/certificates-configure)を参照してください。
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>接続設定をインポートしてアプリケーションを構成する
 
@@ -136,7 +136,7 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 | ConnectionName | 接続設定の名前を入力します。 最大 20 文字まで指定できます。 この値は、接続設定の固有の ID てあるため、リスト内で一意となっていることを確認してください。 デバイスに同じ名前の接続が既に存在する場合、インポートされたファイル設定によって上書きされます。 |
 | ActiveDirectoryClientAppId | [Azure Active Directory で Web サービス アプリケーションを作成する](#create-service) セクションの Azure AD の設定でメモしたクライアント ID を入力します。 |
 | ActiveDirectoryResource | Supply Chain Management のルート URL を入力します。 |
-| ActiveDirectoryTenant | Supply Chain Management サーバーで使用する Azure AD ドメイン名を入力します。 この値は次のような形式です: `https://login.windows.net/<your-Azure-AD-domain-name>` 次に例を示します: `https://login.windows.net/contosooperations.onmicrosoft.com`。 Azure AD ドメイン名を確認する方法の詳細については、[ユーザーの重要な ID を検索する](/partner-center/find-ids-and-domain-names) を参照してください。 |
+| ActiveDirectoryTenant | Supply Chain Management サーバーで使用する Azure AD テナントを入力します。 この値は次のような形式です: `https://login.windows.net/<your-Azure-AD-tenant-ID>` 次に例を示します: `https://login.windows.net/contosooperations.onmicrosoft.com`。 |
 | 法人 | アプリケーションが接続する Supply Chain Management の法人を入力します。 |
 | ConnectionType | (オプション) 接続設定で、環境に接続する際に証明書を使用するか、クライアント シークレットを使用するかを指定します。 有効な値は、*certificate* および *clientsecret* です。 既定値は *certificate* です。<p>**注意 :** クライアント シークレットはインポートできません。</p> |
 | IsEditable | (オプション) アプリのユーザーが接続設定を編集できるようにするかどうかを指定します。 有効な値は、*true* および *false* です。 既定値は *true* です。 |
@@ -201,26 +201,26 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 1. **接続設定** に移動します。
 1. **デモ モードを使用する** オプションを _いいえ_ に設定します。
 
-    ![デモ モードのオプションを使用する。](media/app-connect-app-demo-mode.png "デモ モードのオプションを使用する")
+    ![デモ モードのオプションを使用する](media/app-connect-app-demo-mode.png "デモ モードのオプションを使用する")
 
 1. **ファイルの選択** または c **QR コードのスキャン** を選択します (これは設定のインポート方法によって異なります)。
 
     - ファイルから接続設定をインポートしている場合で、保存時に既定の名前と既定の場所が使われていた場合、アプリがすでにファイルを検出している可能性があります。 それ以外の場合は、**ファイルの選択** を選択し、ローカルデバイスのファイルを参照して選択します。 ユーザー定義の場所を選択した場合は、その場所が保管され、次回自動的に使用されます。
     - QR コードをスキャンして接続の設定をインポートする場合は、**QR コードをスキャンする** を選択します。 アプリ上に、デバイスのカメラを使用するかどうかを確認するメッセージが表示されます。 アクセス許可を付与すると、カメラが起動し、スキャンに使用できるようになります。 デバイスのカメラの品質および QR コードの複雑さによっては、正しいスキャンの取得が困難な場合があります。 その場合は、1 つの QR コードにつき 1 つだけの接続を生成することで、QR コードの複雑性を軽減することを試してください。 (現時点では、QR コードのスキャンにはデバイスのカメラのみを使用できます)
 
-    ![接続設定のインポート。](media/app-connect-app-select-file.png "接続設定のインポート")
+    ![接続設定のインポート](media/app-connect-app-select-file.png "接続設定のインポート")
 
 1. 接続設定が正常に読み込まれたら、ページの左上隅にある **戻る** (左矢印) ボタンを選択します。
 
-    ![読み込まれた接続設定。](media/app-connect-app-settings-loaded.png "読み込まれた接続設定")
+    ![読み込まれた接続設定](media/app-connect-app-settings-loaded.png "読み込まれた接続設定")
 
 1. Android デバイスを使用していて、かつ認証に証明書を使用している場合は、デバイスにで証明書の選択を促す画面が表示されます。
 
-    ![Android デバイス上の証明書プロンプトを選択する。](media/app-connect-app-choose-cert.png "Android デバイス上の証明書プロンプトを選択する")
+    ![Android デバイス上の証明書プロンプトを選択する](media/app-connect-app-choose-cert.png "Android デバイス上の証明書プロンプトを選択する")
 
 1. アプリケーションが Supply Chain Management サーバーに接続し、サイン インページが表示されます。
 
-    ![サインイン ページ。](media/app-connect-sign-in.png "サインイン ページ")
+    ![サインイン ページ](media/app-connect-sign-in.png "サインイン ページ")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>アプリケーションを手動で構成する
 
@@ -230,11 +230,11 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 1. **接続設定** に移動します。
 1. **デモ モードを使用する** オプションを _いいえ_ に設定します。
 
-    ![デモ モードがオフになっています。](media/app-connect-app-select-file.png "デモ モードがオフになっています")
+    ![デモ モードがオフになっています](media/app-connect-app-select-file.png "デモ モードがオフになっています")
 
 1. **接続の選択** フィールドをタップして、接続の詳細を手動で入力するために必要な設定を展開します。
 
-    ![手動接続フィールド。](media/app-connect-manual-connect.png "手動接続フィールド")
+    ![手動接続フィールド](media/app-connect-manual-connect.png "手動接続フィールド")
 
 1. 次の情報を入力します。
 
@@ -248,7 +248,7 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
         > [!NOTE]
         > この値の末尾には、スラッシュ (/) を入力しないでください。
 
-    - **Active Directory テナント** - Supply Chain Management サーバーで使用している Azure AD のドメイン名を入力します。 この値は次のような形式です: `https://login.windows.net/<your-Azure-AD-domain-name>` 次に例を示します: `https://login.windows.net/contosooperations.onmicrosoft.com`。 Azure AD ドメイン名を確認する方法の詳細については、[ユーザーの重要な ID を検索する](/partner-center/find-ids-and-domain-names) を参照してください。
+    - **アクティブ ディレクトリ テナント** - Supply Chain Management サーバーで使用している Azure AD のテナントを入力してください 。 この値は次のような形式です: `https://login.windows.net/<your-Azure-AD-tenant-ID>` 次に例を示します: `https://login.windows.net/contosooperations.onmicrosoft.com`。
 
         > [!NOTE]
         > この値の末尾には、スラッシュ (/) を入力しないでください。
@@ -274,6 +274,3 @@ Azure AD の認証をすることで、モバイル デバイスを Supply Chain
 1. アプリケーションのクライアント ID が手順 2 でメモしたクライアント ID と一致していることを確認してください。
 1. ツール バーで、**削除** を選択します。
 1. 確認メッセージが表示されたら、**はい** を選択します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

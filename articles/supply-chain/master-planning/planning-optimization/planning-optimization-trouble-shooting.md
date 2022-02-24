@@ -2,13 +2,16 @@
 title: 計画最適化のトラブルシューティング
 description: このトピックでは、計画の最適化を実行する際に発生する可能性がある問題の修正方法について説明します。
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: bbf21abae60d4adee5a23a8405d14907b91724fa2cbf31c901bb46c589b2ea49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c3dd0bf262f65aac2359c05ff954bdfbd294353f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768098"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431743"
 ---
 # <a name="troubleshoot-planning-optimization"></a>計画最適化のトラブルシューティング 
 
@@ -47,6 +50,12 @@ ms.locfileid: "6768098"
 
 **修正** : [分析計画の最適化] を実行して結果を分析し、関連ドキュメントを参照して影響を理解してください。 詳細については、[計画の最適化フィット分析](planning-optimization-fit-analysis.md) を参照してください。
 
+## <a name="master-planning-doesnt-respect-the-coverage-time-fence"></a>マスター計画では、補充タイム フェンスを考慮しません
+
+これは、最適化の計画の保留中の機能が原因で発生します。
+
+**修正**: 保留機能が利用できるようになるまで、計画された注文をフィルター処理または削除して、補充タイムフェンス以外からの提案を削除します。
+
 ## <a name="cant-enable-planning-optimization"></a>計画の最適化を有効化できない
 
 **計画の最適化** を使用する設定を **はい** にする前に、**接続ステータス** を **接続済** とする必要があります。 詳細については、[計画の最適化を開始する](get-started.md) を参照してください。
@@ -66,6 +75,3 @@ ms.locfileid: "6768098"
 [計画最適化の開始](get-started.md)
 
 [計画最適化適合分析](planning-optimization-fit-analysis.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: 場所ライセンス プレートの配置
 description: ライセンス プレートの場所の配置を使用すると、ライセンス プレートが複数パレットの場所 (たとえば、2つの深いパレットのラック配置を使用する場所など) を表示できます。
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c19f8dcdb7d84b752e0eec56afdb1a1865cfe00b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567610"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432285"
 ---
 # <a name="location-license-plate-positioning"></a>場所ライセンス プレートの配置
 
@@ -88,7 +91,7 @@ ms.locfileid: "7567610"
 1. **ライセンス プレート** を選択したままで、**テーブル結合の追加** を選択します。
 1. 表示されるテーブルの一覧で、**関係** 列の **場所ライセンス プレートの配置 (ライセンス プレート)** を選択します。 次に、**選択** を選択して、**場所ライセンス プレートの配置** を **在庫分析コード** テーブル結合に追加します。
 
-    ![テーブル結合。](media/LpTableJoin.png "テーブル結合")
+    ![テーブル結合](media/LpTableJoin.png "テーブル結合")
 
 1. **OK** を選択して 、更新された結合テーブルを確認し、クエリ エディターを閉じます。
 1. **場所ディレクティブ アクション** クイック タブで、**クエリの編集** を再度選択してクエリ エディターを開きます。
@@ -100,7 +103,7 @@ ms.locfileid: "7567610"
     - **フィールド :** *LP の位置*
     - **基準 :** *1*
 
-    ![新しい範囲。](media/LpPositionCriteria.png "新しい範囲")
+    ![新しい範囲](media/LpPositionCriteria.png "新しい範囲")
 
 1. **OK** を選択して変更を確認し、クエリ エディターを閉じます。
 
@@ -275,9 +278,6 @@ ms.locfileid: "7567610"
 1. **作業 ID のスキャン / ライセンス プレート ID** ページで、**ID** フィールドを選択して、販売明細行から作業 ID を入力します。
 1. このピッキング作業では、品目 *A0002* を場所 *01A01R1S2B* からピッキングするように指示されます。 この指示は、品目 *A0002* が その場所の位置 *1* のライセンス プレート上にあるために表示されます。
 
-    ![位置 1 の場所。](media/LocationLicensePlatePositioning.png "位置 1 の場所")
+    ![位置 1 の場所](media/LocationLicensePlatePositioning.png "位置 1 の場所")
 
 1. 場所に対して作成したライセンス プレートの ID を入力し、プロンプトに従って販売注文を選択します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

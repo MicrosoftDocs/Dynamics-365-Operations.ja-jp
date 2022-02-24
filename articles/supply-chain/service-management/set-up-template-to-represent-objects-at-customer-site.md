@@ -1,26 +1,29 @@
 ---
 title: 顧客のサイトのオブジェクトを表すためのテンプレートの設定
 description: 顧客のサイトのオブジェクトを表すためのテンプレートを設定します。
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 304fd46e7559791bb14fcf7bca2773f2e30a255d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 823ef5cddbba8a72bd67ba87edd1aa497022a81e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570012"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431635"
 ---
 # <a name="set-up-template-to-represent-objects-at-customer-site"></a>顧客のサイトのオブジェクトを表すためのテンプレートの設定 
 
@@ -52,6 +55,3 @@ ms.locfileid: "7570012"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

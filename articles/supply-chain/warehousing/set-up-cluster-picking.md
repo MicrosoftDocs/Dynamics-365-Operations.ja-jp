@@ -2,24 +2,27 @@
 title: クラスター ピッキングの設定
 description: このトピックでは、クラスター ピッキングを設定する方法およびクラスター ピッキングに品目の確認を適用する方法について説明します。
 author: Mirzaab
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile, WHSRFAutoConfirm, WHSWorkCluster
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 859dc7e98a3236d2220ac43f9de426bd73679f0756da0aaa14669e563d5bf609
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 009345e608c26887fedbe4a9c268367080593da2
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744585"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432381"
 ---
 # <a name="set-up-cluster-picking"></a>クラスター ピッキングの設定
 
@@ -77,6 +80,3 @@ ms.locfileid: "6744585"
 1. モバイル デバイスのメニュー項目で、作業確認の設定フォームを開きます、**倉庫管理** \> **倉庫管理** \> **設定** \>  **モバイル デバイス** \> **モバイル デバイスのメニュー項目** に移動します。
 
 1. モバイル デバイス メニュー品目から、**作業確認の設定** を開きます。 **製品確認** オプションでは、スャンしたときにモバイル デバイスから各在庫を確認できます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

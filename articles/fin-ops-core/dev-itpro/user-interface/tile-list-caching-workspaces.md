@@ -1,25 +1,27 @@
 ---
 title: ワークスペースのタイルおよびリストのキャッシュ
-description: このトピックでは、タイルとリストに使用されるデータをキャッシュするためのフレームワーク サポートについて説明します。これにより、ワークスペースが正常に動作し、応答可能になります。
+description: ワークスペースが正常に機能し、応答可能である (つまり、ワークスペースに表示されるデータが期待どおりに更新され、最新の状態である) ことが重要です。 このトピックでは、タイルとリストに使用されるデータをキャッシュするためのフレームワークのサポートについて説明します。
 author: jasongre
-ms.date: 01/05/2022
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 16341
 ms.assetid: c84d7929-4662-4abb-b345-ccc539d809d0
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 408f1cf3adeb170668681ecb70dee423b484903c
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 1a61605f4144817a45bce28d855a967bd22632ac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952431"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684997"
 ---
 # <a name="tile-and-list-caching-for-workspaces"></a>ワークスペースのタイルおよびリストのキャッシュ
 
@@ -27,7 +29,8 @@ ms.locfileid: "7952431"
 
 ワークスペースが正常に機能し、応答可能である (つまり、ワークスペースに表示されるデータが期待どおりに更新され、最新の状態である) ことが重要です。 このトピックでは、タイルとリストに使用されるデータをキャッシュするためのフレームワークのサポートについて説明します。
 
-## <a name="introduction"></a>はじめに
+<a name="introduction"></a>はじめに
+------------
 
 ワークスペースは大半のユーザーにとって活動のハブとなるように意図されています。 さまざまな情報源から収集された豊富な情報を表示します。 したがって、ワークスペースが正常に動作し、応答性があることを確認する必要があります (つまり、ワークスペースに表示されたデータが予想どおりに更新され、最新の状態に維持される)。 キャッシュは、パフォーマンスの低いクエリからのデータが得られた場合にワークスペースの優れたパフォーマンスを保証できるようにします。また、複数のユーザーが同じデータ セットに同時にアクセスする必要がある場合に特に便利です。 たとえば、フォーム上のグリッドが複合 (つまり、低いパフォーマンス) クエリを使用する場合、フォームの以後の積荷に使用できるように結果をキャッシュすることができます。 この記事では、タイルとリストに使用されるデータをキャッシュするためのフレームワークのサポートについて説明します。 応答しやすいワークスペースの観点から、ユーザーがワークスペースに移動した (またはそこに戻った) ときに、ワークスペース内のデータが比較的に最新の状態であることを期待します。 たとえば、ユーザーがワークスペースでリストまたはタイルのデータを変更するアクションを実行する場合、ワークスペースはアクションが実行された直後 (アクションがワークスペースから直接実行された場合)、またはユーザーがワークスペース フォームに返す際に (アクションが異なるフォームで実行された場合)、その変更を反映する必要があります。 この記事では、タイルとリストの両方について、このタイプのデータ更新が (メタデータとコードの両方で) 行われるようにするための手法について説明します。
 
@@ -85,7 +88,7 @@ TileDataService::forceRefresh(tilestr(<tileName>), formRun)
 
 ```xpp
 [SysDataSetExtension(classStr(FMPickupAndReturn)), // The name of this class
-SysDataSetCacheTableExtension(tableStr(FMPickupAndReturnTable))] // The name of the cache table
+SysDataSetCacheTableExtension(tableStr(FMPickupAndReturnCache))] // The name of the cache table
 class FMPickupAndReturn extends SysDataSetQuery implements SysIDataSet
 {
     public SysDataCacheRefreshFrequency parmRefreshFrequency()
@@ -98,7 +101,7 @@ class FMPickupAndReturn extends SysDataSetQuery implements SysIDataSet
     }
     public SysDataCacheTypeId parmCacheTypeId()
     {
-        return tableNum(FMPickupAndReturnTable); // The name of the table.
+        return tableNum(FMPickupAndReturnCache); // The name of the table.
     }
     public static FMPickupAndReturn construct()
     {
@@ -133,12 +136,12 @@ implements SysIFilterConsumerForm, SysIDataSetConsumerForm, SysIFilterEventHandl
 {
     public void registerDatasourceOnQueryingEvent()
     {    
-        FMPickupAndReturnTable_DS.OnQueryExecuting += eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);    
-        FMPickupAndReturnTable_DS.OnQueryExecuting +=eventhandler(this.parmFilterFormQueryEventHandler().applyFilter);    
+        FMPickupAndReturnCache_DS.OnQueryExecuting += eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);    
+        FMPickupAndReturnCache_DS.OnQueryExecuting +=eventhandler(this.parmFilterFormQueryEventHandler().applyFilter);    
     }
     public void onFilterChanged()
     {    
-        FMPickupAndReturnTable_DS.executeQuery();    
+        FMPickupAndReturnCache_DS.executeQuery();    
     }    
 }
 ```
@@ -176,6 +179,3 @@ implements SysIFilterConsumerForm, SysIDataSetConsumerForm, SysIFilterEventHandl
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

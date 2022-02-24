@@ -2,23 +2,26 @@
 title: デバイスのジョブ カードのコンフィギュレーション
 description: このトピックでは、ジョブ カード デバイスの構成に使用するさまざまなオプションについて説明します。
 author: johanhoffmann
+manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch, JmgRegistrationTouchUserConfiguration
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: e072f99b0b0df75f1b9706362b429bbc4568473a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777743"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432032"
 ---
 # <a name="configure-job-card-for-devices"></a>デバイスのジョブ カードのコンフィギュレーション
 
@@ -34,21 +37,21 @@ ms.locfileid: "7777743"
 
 この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を順に有効化します :
 
-1. ジョブ カード デバイスに追加され、完了報告用にライセンスを作成しました (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は既定で有効になっています)。
+1. 完了報告用ライセンス プレートをジョブ カード デバイスに追加
 1. ジョブ カード デバイスでの完了報告時に、ライセンス プレート番号の自動生成を有効にする
 
 ### <a name="print-label"></a>ラベルの印刷
 
 この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を順に有効化します :
 
-1. ジョブ カード デバイスに追加され、完了報告用にライセンスを作成しました (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は既定で有効になっています)。
+1. 完了報告用ライセンス プレートをジョブ カード デバイスに追加
 1. ジョブ カード デバイスからラベルを印刷
 
 ### <a name="allow-locking-of-touch-screen"></a>タッチ スクリーンのロックを許可する
 
-Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能が有効になっていることを確認します。
+この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を有効化します :
 
-- 画面ジョブカード デバイスとジョブ カード端末を除菌できるようにロックする機能
+- (プレビュー) 画面ジョブカード デバイスとジョブ カード 端末を除菌できるようにロックする機能です
 
 ## <a name="manage-your-device-configurations"></a>デバイスの構成を管理する
 
@@ -65,7 +68,7 @@ Supply Chain Management のバージョン 10.0.21 では、この機能は既�
 
 - **退勤時のレポート数量** - この設定を **はい** に設定すると、作業者は退勤時に進行中のジョブに関するフィードバックを報告するように指示されます。これを **いいえ** を設定すると 、作業者にはこのメッセージが表示されません。
 - **従業員のロック** - このオプションが **いいえ** に設定されている場合 、各作業者は登録を作成 (新しいジョブなど) した直後にログアウトされ、デバイスはログインページへと戻ります。 このオプションが  **はい** に設定されている場合、各作業者はジョブ カードのデバイスにログインしたままとなります。 ただし、ジョブ カードのデバイスが同じシステム ユーザー アカウントの下で実行されている間、別の作業者がログインできるように手動でログアウトすることができます。 これらタイプのアカウントの詳細については、[割り当てられたユーザー](#assigned-users)を参照してください。
-- **バーコード スキャナー** - ジョブ カード デバイスでこのオプションを **はい** に設定すると、作業者がバーコードをスキャンして新しいジョブの開始を登録できるようになります。
+- **バーコードスキャナー** - ジョブ カードのデバイスでこのオプションを **はい** に設定すると、バーコードをスキャンして新たなジョブの開始を登録できるようになります。
 - **登録の実際時間を使用する** - この値を **はい** に設定すると、各新規登録の時間が、作業者が登録した正確な時間と等しくなるように設定されます。 ログイン時刻を代わりに使用するには、**いいえ** に設定 します。 **従業員のロック** および/または **単一の作業者** のオプションを有効にしている場合は、これを **はい** に設定します。
 - **単一の作業者** - この構成がアクティブな各ジョブ カードのデバイスを使用する作業者が 1 人だけの場合、このオプションを **はい** に設定します。 このオプションを選択すると、**従業員のロック** オプションが自動的に **はい** に設定され ます。 さらに、このオプションは、作業者がバッジ ID (または類似するもの) を使用してログインする際の要件 (および機能) を削除します。 その代わりに、*時間登録された作業者* (*作業者* テーブルに由来) にリンクされたシステム ユーザー アカウントを使用して Supply Chain Management にサインインし、同時にその作業者としてジョブ カードのデバイスにログインします。  これらタイプのアカウントの詳細については、[割り当てられたユーザー](#assigned-users)を参照してください。
 - **個人用フィルターの設定を作業者に許可する** - このオプションを **はい** に設定すると、ユーザーはデバイスで表示されるジョブをフィルター処理できるようになります。 作業者は、**生産単位**、**リソース グループ**、 **リソース** の 3 つのフィルタ条件のいずれかの値を変更できます。 選択したフィルター基準に一致するリソースでスケジュールされているジョブのみがデバイスに表示されます。 また、これらの基準のいずれか、またはすべてに対して既定値を割り当てることもでき、このオプションが選択されていない場合でも、既定値が適用されます。
@@ -92,6 +95,3 @@ Supply Chain Management のバージョン 10.0.21 では、この機能は既�
 ## <a name="additional-resources"></a>追加リソース
 
 [ジョブ カード デバイスから完了報告をする](report-finished-job-device.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

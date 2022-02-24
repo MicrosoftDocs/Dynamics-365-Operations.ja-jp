@@ -2,24 +2,27 @@
 title: 生産出荷場所
 description: このトピックでは、生産出荷場所を識別するために使用される階層について説明します。
 author: johanhoffmann
+manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f4c8086e9179ff51f62ce77620af96360c6123060372dfd1c0e06dad79998b75
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4002bf7dddb196edf306268ecc16e1bfa5d6d1e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720279"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432144"
 ---
 # <a name="production-output-location"></a>生産出荷場所
 
@@ -37,6 +40,3 @@ ms.locfileid: "6720279"
 4. そこに場所が見つからない場合は、製造オーダーに定義されている倉庫で定義されている出荷場所を使用します。
 
 既定の生産出荷場所は、高度な倉庫プロセスを使用して設定されている製品にのみ設定されます。 このタイプの品目が完了報告されると、**商品の保存を完了** または **連産品および副産物の保存** タイプの倉庫作業が作成されます。 このタイプの作業は、ピッキング場所として生産出荷場所を使用します。 プット アウェイの場所は、場所ディレクティブによって決定されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

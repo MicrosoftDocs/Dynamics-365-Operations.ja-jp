@@ -2,23 +2,26 @@
 title: 作業での作業プールの変更
 description: このトピックでは、作業項目の [作業プールの変更] ボタンを使用して、既存の作業の作業プールを変更する方法について説明します。
 author: mirzaab
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 066655b58d4676bafb6e8ed8d80a95636c047444
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 344918b77334f9aca11f799f8c031047ad229ee0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566026"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432001"
 ---
 # <a name="change-work-pool-on-work"></a>作業での作業プールの変更
 
@@ -146,6 +149,3 @@ ms.locfileid: "7566026"
 > **作業プールの変更** ダイアログ ボックスが表示された際に、既定で **作業プール ID** フィールドが空白になる場合があります。 このフィールドが空白になっている場合に **OK** を選択して変更を適用すると、作業プールが作業から完全に削除されます。
 >
 > 作業プールを切り替えるだけでなく、この手順を使用して、作業プールがない作業項目に作業プールを追加したり、作業プールがある作業項目から作業プールを削除したりすることもできます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

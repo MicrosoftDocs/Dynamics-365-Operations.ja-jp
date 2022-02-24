@@ -1,18 +1,25 @@
 ---
 title: MultiLookupMetadata タイプ
 description: 複数ルックアップ メタデータの種類。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: f08eabd63b13a167b55e6ac9d7bd7d892dfc2845
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 003a023bb17338389535028219c2fbfe2352600e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782869"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685423"
 ---
 # <a name="multilookupmetadata-type"></a>MultiLookupMetadata タイプ
 
@@ -48,7 +55,7 @@ ms.locfileid: "7782869"
 * [ReferenceAppId](view-model-control-lookup-imultilookup-imultilookupmetadata.md#referenceappid)
 * [ReverseLookupRelation](view-model-control-lookup-imultilookup-imultilookupmetadata.md#reverselookuprelation)
 * [ShowPending](view-model-control-lookup-imultilookup-imultilookupmetadata.md#showpending)
-* [タイプ](view-model-control-lookup-imultilookup-imultilookupmetadata.md#type)
+* [[タイプ](view-model-control-lookup-imultilookup-imultilookupmetadata.md#type)]
 
 ### <a name="events"></a>イベント
 
@@ -267,6 +274,3 @@ OnLookupPageCreate: 機能 (args: すべて、multiLookup: すべて): 無効 (�
 
 
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

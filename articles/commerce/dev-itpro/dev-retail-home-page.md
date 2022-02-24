@@ -2,21 +2,26 @@
 title: IT プロおよび開発者向けコマース
 description: このページには、IT プロとコマースをサポートする開発者が利用できるリソースが一覧表示されています。
 author: RobinARH
-ms.date: 08/26/2021
+manager: AnnBe
+ms.date: 06/02/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.reviewer: rhaertle
+ms.custom: 24411
+ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d5d68a4723472d34f0056703ae43d734efe4f660
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8874217778315bf0d935f868d2e029535b45c8df
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783245"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684975"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -30,15 +35,11 @@ ms.locfileid: "7783245"
 
 ## <a name="components-and-architecture"></a>コンポーネントとアーキテクチャ
 
-- [Commerce コンポーネント](/dynamics365/commerce/dev-itpro/commerce-architecture)
+- [Commerce コンポーネント](../retail-components.md)
 - [Modern POS (MPOS) アーキテクチャ](retail-modern-pos-architecture.md)
-- [ヘッドレス コマース エンジンのアーキテクチャ](retail-server-architecture.md)
-- [オンライン ストア チャネルの公開](retail-online-store-publishing-architecture.md)
-- [小売チャネルの実績 PowerBI.com ソリューション](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
-
-## <a name="development"></a>開発
-
-- [ローカル開発環境の設定](setup-local-dev-env.md)
+- [コマース スケール ユニット アーキテクチャ](retail-server-architecture.md)
+- [オンライン ストア発行アーキテクチャ](retail-online-store-publishing-architecture.md)
+- [小売チャネルの実績 PowerBI.com ソリューション](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## <a name="deployment"></a>配置
 
@@ -49,7 +50,7 @@ ms.locfileid: "7783245"
 - [Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md)
 - [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)
 - [診断とトラブルシューティングの Retail コンポーネント イベント](retail-component-events-diagnostics-troubleshooting.md)
-- [アクセス インスタンス](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md)
+- [アクセス インスタンス](../../dev-itpro/dev-tools/access-instances.md)
 
 ## <a name="point-of-sale-pos"></a>販売時点管理 (POS)
 
@@ -58,13 +59,12 @@ ms.locfileid: "7783245"
 - [販売時点管理 (POS) デバイスのライセンス認証](retail-device-activation.md)
 - [共有環境におけるクラウド POS のセキュリティ ベスト プラクティス](secure-retail-cloud-pos.md)
 - [外部ギフト カードのサポート](gift-card.md)
-- [Microsoft Dynamics 365 Commerce の Store Commerce アプリ](store-commerce.md)
 
 ## <a name="customize-pos"></a>カスタマイズ POS
 
 - [販売時点管理 (POS) の画面レイアウト](../pos-screen-layouts.md)
 - [POS のレイアウト デザイナーのインストール](../install-pos-layout-designer.md)
-- [Modern POS (MPOS) のトリガーと印刷](./pos-trigger-printing.md)
+- [Modern POS (MPOS) のトリガーと印刷](modern-pos-trigger-extensibility.md)
 - [トリガーを使用してトランザクションをブロックする](trigger-example-blocking-transaction.md)
 - [POS ビューへのカスタム コントロールの追加](pos-custom-control.md)
 - [販売時点管理 (POS) 支払拡張機能](pos-payment-extension.md)
@@ -75,31 +75,11 @@ ms.locfileid: "7783245"
 - [販売時点管理 (POS) トランザクション グリッドへのカスタム列の追加](pos-custom-transaction-column.md)
 - [販売時点管理 (POS) API または POS 拡張からの工程を呼び出す](pos-api-extension.md)
 - [POS (MPOS) のトリガーと印刷](pos-trigger-printing.md)
-- [非画面デザイナー ベース POS ビューへのカスタム コントロールの追加](pos-control-non-screen.md)
-- [管理者のアクセス権を使用しないクラウド ホスト環境での開発](cloud-dev-box.md)
+- [デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します](pos-control-non-screen.md)
+- [管理者アクセスのないクラウド ホスト開発環境での開発](cloud-dev-box.md)
 - [Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](pos-rsat.md)
 - [POS カート ビューのイベントおよびハンドラー](cart-view-handlers.md)
 - [カスタム ボタンを POS ヘッダー バーに追加](pos-header-bar.md)
-
-## <a name="pos-independent-packaging-sdk"></a>POS の独立したパッケージ SDK
-
-- [POS 拡張機能の概要](pos-extension/pos-extension-overview.md)
-- [POS 拡張機能の使用を開始する](pos-extension/pos-extension-getting-started.md)
-- [POS 拡張機能パッケージ プロジェクトの作成](pos-extension/create-pos-extension-package.md)
-- [Modern POS 拡張パッケージの .appx ファイルの作成](pos-extension/create-pos-extension-appx.md)
-- [POS 拡張機能のデバッグ](pos-extension/debug-pos-extension.md)
-- 拡張機能パッケージと展開
-    - [Modern POS 拡張機能パッケージの作成](pos-extension/mpos-extension-packaging.md)
-    - [Modern POS (MSIX) 拡張機能パッケージへのコード署名](pos-extension/mpos-extension-signing.md)
-    - [Cloud POS 拡張機能パッケージの作成](pos-extension/cpos-extension-package.md)
-- [独立したパッケージ モデルへの POS 拡張機能の移行](pos-extension/migrate-pos-extension.md)
-- POS 拡張機能開発ガイド
-    - [POS 拡張機能の基本](pos-extension/pos-extension-basics.md)
-    - [POS でのカスタム ビューの作成](pos-extension/custom-pos-view.md)
-    - [拡張機能での POS コントロールの使用](pos-extension/controls-pos-extension.md)
-    - タスク
-        - [POS 拡張機能での Knockout.js の使用](pos-extension/knockout-pos-extension.md)
-        - [POS でのカスタム ヘッドレス コマース エンジン API の使用](pos-extension/consume-apis-pos.md)
 
 ## <a name="integrating-commerce"></a>コマースの統合
 
@@ -114,6 +94,7 @@ ms.locfileid: "7783245"
 ## <a name="hardware-station"></a>Hardware station
 
 - [Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md)
+- [Hardware Station の拡張機能](hardware-station-extensibility.md)
 - [POS と新しいハードウェア デバイスの統合](hardware-device-extension.md)
 
 ## <a name="commerce-runtime"></a>Commerce Runtime
@@ -128,15 +109,15 @@ ms.locfileid: "7783245"
 
 ## <a name="retail-sdk"></a>Retail SDK
 
-- [Commerce SDK への移行](retail-sdk/migrate-commerce-sdk.md)
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md)
-- [独立したパッケージ SDK のビルド パイプラインの設定](build-pipeline.md)
+- [Retail SDK の今後の変更](UpcomingSDKChanges.md)
+- [バージョン 10.0.10 から 10.0.13 への重要な開発上および ALM の変更](dev-changes-10-13.md)
 - [配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)
+- [コマースおよび Finance のビルド システムのマージ](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行](retail-sdk/migrate-sdk.md)
 - [Retail ソフトウェア開発キット (SDK) のサンプル](retail-sdk/retail-sdk-samples.md)
 - [GitHub および NuGet からサンプルとパッケージのダウンロード](retail-sdk/sdk-github.md)
 - [チャネル データベース拡張機能](channel-db-extensions.md)
-- [Cloud Scale Unit 拡張機能の削除](retail-sdk/remove-csu-package.md)
 - [拡張機能を介したカスタム Commerce Data Exchange 同期の有効化](cdx-extensibility.md)
 - [注文属性の定義および設定](order-attributes.md)
 - [顧客属性](customer-attributes.md)
@@ -152,7 +133,8 @@ ms.locfileid: "7783245"
 - [POS でカスタム通知を表示する](extend-pos-notification.md)
 - [Commerce SDK ビルド パイプラインの設定](retail-sdk/SDK-build-pipeline.md)
 - [Retail SDK FAQ](retail-sdk/sdk-faq.md)
-- [Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)](retail-server-icontroller-extension.md)
+- [新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)](retail-server-icontroller-extension.md)
+- [新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以前)](retail-server-extension.md)
 - [外部アプリケーションでの Retail Server API の使用](consume-retail-server-api.md)
 
 ## <a name="ecommerce"></a>eCommerce
@@ -166,6 +148,4 @@ ms.locfileid: "7783245"
 - [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 - [支払コネクタの配置](deploy-payment-connector.md)
-- [Finance and Operations 配置用コマース支払パッケージの作成](payment-connector-package.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Service Fabric 配置でアプリケーション エクスプローラーの支払パッケージの作成](payment-connector-package.md)

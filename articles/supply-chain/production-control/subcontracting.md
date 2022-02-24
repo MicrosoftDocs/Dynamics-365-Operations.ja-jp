@@ -1,23 +1,26 @@
 ---
 title: 外注
 description: このトピックは、Dynamics 365 Supply Chain Management で製造での外注のチュートリアルの構築に役立ちます。
-author: johanhoffmann
+author: christophernread
+manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579355"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431699"
 ---
 # <a name="subcontracting"></a>外注
 
@@ -39,7 +42,7 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 
 次の図は、3 つの工程および消費する材料を示します。
 
-![事前アセンブリ、コーティング、仕上げの工程、および消費する材料です。](./media/subcontract01_operations-materials.png)
+![事前アセンブリ、コーティング、仕上げの工程、および消費する材料](./media/subcontract01_operations-materials.png)
 
 ## <a name="setup"></a>段取り
 
@@ -52,41 +55,41 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 1. **製品情報管理 \> 製品 \> リリース済製品** の順に選択し、**リリース済製品の詳細** ページを開きます。
 2. クイック フィルター フィールドで、**D8100** を入力して既存のリリース済製品を検索します。
 
-    ![リリース済製品の詳細ページでリリース済製品 D8100 をフィルター処理します。](./media/subcontract02_filtering-released-products.png)
+    ![リリース済製品の詳細ページでリリース済製品 D8100 のフィルタ処理](./media/subcontract02_filtering-released-products.png)
 
 3. アクション ウィンドウの、**エンジニア** タブで、**工順** を選択し、**工順** ページを開きます。
 
     **工順** ページにリリース済製品 D8100 の 8 つの工順バージョンが表示されます。 8 つの工順バージョンは、サイト 1 とサイト 5 で 4 つの工順に分割されます。 工順 000400 は原価計算に使用され、工順 00041 はコーティング工程が内部の工程である場合に使用され、および工順 00042 はコーティング工程が外部の工程である場合に使用されます。
 
-    ![工順ページでの 8 つの工順バージョンです。](./media/subcontract03_route-page.png)
+    ![工順ページでの 8 つの工順バージョン](./media/subcontract03_route-page.png)
 
 4. 上部ウィンドウの、**バージョン** グリッドで、サイト **5** の工順バージョン **00042**  を選択します。
 5. 下部ウィンドウの、**概要** タブで、グリッドの工順 **20** (**Cbnt CtSc**) を選択します。
 
-    ![選択されたサイト 5 の工順バージョン 00042 の工程 20 です。](./media/subcontract04_route-version-operation.png)
+    ![選択されたサイト 5 の工順バージョン 00042 の工程 20](./media/subcontract04_route-version-operation.png)
 
 6. **一般** タブを選択します。
 
     フィールドの **工順タイプ** フィールドが **仕入先** に設定されていることに注意してください。 この値は、工程 20 (Cbnt CtSc) が外注作業であることを示します。
 
-    ![一般タブで、工順タイプ フィールドを仕入先に設定します。](./media/subcontract05_general-tab.png)
+    ![一般タブで、工順タイプ フィールドを仕入先に設定](./media/subcontract05_general-tab.png)
 
 7. **リソース要件** タブを選択します。
 
     生産計画立案時に適用可能なリソースを検索する機能が使用されます。 工程 20 (Cbnt CtSc) では、リソースに 2 つの機能、**コーティング** および **コーティングされたキャビネット** が必要であることに注意してください。
 
-    ![リソース要件タブのコーティング機能およびコーティングされたキャビネット機能です。](./media/subcontract06_resource-requirements-tab.png)
+    ![リソース要件タブのコーティング機能およびコーティングされたキャビネット機能](./media/subcontract06_resource-requirements-tab.png)
 
 8. **適用可能なリソース** を選択して、**適用可能なリソース** ダイアログ ボックスを開きます。
 
     工程のリソース要件に一致する 3 つのリソースが検索されます。 **仕入先** タイプがリソース 8851 および 8852 であることに注意してください。
 
-    ![適用可能なリソース ダイアログ ボックスの 3 つの適用可能なリソースです。](./media/subcontract07_applicable-resources-dialog.png)
+    ![適用可能なリソースダイアログ ボックスの 3 つの適用可能なリソース](./media/subcontract07_applicable-resources-dialog.png)
 
 9. **OK** を選択して、**適用可能なリソース** ダイアログ ボックスを閉じ、**工順** ページに戻ります。
 10. **工順** ページを閉じ、**リリース済製品の詳細** ページに戻ります。
 
-    ![リリース済製品の詳細ページです。](./media/subcontract08_released-product-details-page.png)
+    ![リリース済製品の詳細ページ](./media/subcontract08_released-product-details-page.png)
 
 11. アクション ウィンドウの、**エンジニア** タブで、**BOM バージョン** を選択し、**BOM バージョン** ページを開きます。
 
@@ -94,7 +97,7 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 
     その品目 S8050 は、**サービス** 品目タイプの製品であることに注意してください。 この品目は、外注業務を表します。
 
-    ![BOM バージョン ページの 4 つの BOM バージョンです。](./media/subcontract09_bom-versions-page.png)
+    ![BOM バージョン ページの 4 つの BOM バージョン](./media/subcontract09_bom-versions-page.png)
 
 12. **部品表明細行** クイック タブで、**編集** を選択して **BOM 明細行の編集** ダイアログ ボックスを開きます。
 
@@ -102,7 +105,7 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 
     BOM 明細行が、工程番号 (この場合、20) を通じてコーティング工程に関連付けられていることに注意してください。
 
-    ![BOM 明細行のダイアログ ボックスを編集します。](./media/subcontract10_edit-bom-line-dialog.png)
+    ![BOM 明細行のダイアログ ボックスの編集](./media/subcontract10_edit-bom-line-dialog.png)
 
 ### <a name="create-a-password-for-warehouse-workers"></a>倉庫作業者のパスワードの作成
 
@@ -111,7 +114,7 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 1. **倉庫管理 \> 設定 \> 作業者** の順に選択して、**作業ユーザー** ページを開きます。
 2. **ユーザー** クイック タブで、ユーザー **51** の行を選択します。
 
-    ![作業ユーザー ページです。](./media/subcontract11_work-users-page.png)
+    ![作業ユーザー ページ](./media/subcontract11_work-users-page.png)
 
 3. **パスワードのリセット** を選択します。
 4. **パスワード** および **パスワードの確認** フィールドに、**1** を入力します。
@@ -126,14 +129,14 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 1. **生産管理 \> 製造オーダー \> すべての製造オーダー** の順に選択し、**すべての製造オーダー** ページを開きます。
 2. アクション ウィンドウで、**新しい製造オーダー** を選択して **製造オーダーの作成** ダイアログ ボックスを開きます。
 
-    ![製造オーダー ダイアログ ボックスを作成します。](./media/subcontract12_create-production-order-dialog.png)
+    ![製造オーダー ダイアログ ボックスの作成](./media/subcontract12_create-production-order-dialog.png)
 
 3. **品目番号** フィールドで、**D8100** を選択します。
 4. 品目番号を選択した後に、在庫分析コードのフィールドが表示されます。 **色** フィールドで、**クロム** を選択します。
 
     BOM および工順の有効なバージョンを挿入するかどうかを尋ねるメッセージ ボックスが表示されます。
 
-    ![メッセージ ボックスです。](./media/subcontract13_message-box.png)
+    ![メッセージ ボックス](./media/subcontract13_message-box.png)
 
 5. **はい** を選択します。 
 
@@ -149,15 +152,15 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
     > [!NOTE]
     > BOM および工順の両方については、バージョン 000042 を使用してキャビネットのコーティングを仕入先 US-801 に外注します。
 
-    ![製造オーダーの作成ダイアログ ボックスで設定された値です。](./media/subcontract14_create-production-order-dialog-set.png)
+    ![製造オーダーの作成ダイアログ ボックスで設定された値](./media/subcontract14_create-production-order-dialog-set.png)
 
 9. **作成** を選択して製造オーダーを作成し、**すべての製造オーダー** ページに戻ります。
 
-    ![すべての製造オーダー ページの新規製造オーダーです。](./media/subcontract15_new-production-order.png)
+    ![すべての製造オーダー ページの新規製造オーダー](./media/subcontract15_new-production-order.png)
 
 10. アクション ウィンドウの、**新しい製造オーダー** タブで、**見積** を選択して **見積** ダイアログ ボックスを開きます。
 
-    ![見積ダイアログ ボックスです。](./media/subcontract16_estimate-dialog.png)
+    ![見積ダイアログ ボックス](./media/subcontract16_estimate-dialog.png)
 
 11. **OK** を選択して見積を確認し、**すべての製造オーダー** ページに戻ります。
 
@@ -168,7 +171,7 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 
     サービス品目 S8050 については、製造オーダーの見積が行われたときに生成された発注書への参照があることに注意してください。
 
-    ![BOM ページの製造オーダー BOM 明細行です。](./media/subcontract17_production-order-bom-lines.png)
+    ![BOM ページの製造オーダー BOM 明細行](./media/subcontract17_production-order-bom-lines.png)
 
 13. **BOM** ページを閉じて、**すべての製造オーダー** ページに戻ります。
 14. アクション ウィンドウの、**スケジュール** タブで、**ジョブのスケジュール** を選択して **ジョブのスケジューリング** ダイアログ ボックスを開きます。
@@ -177,24 +180,24 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
     - **スケジューリング指示** フィールドで、**今日からフォワード** を選択します。
     - **有限能力** オプションを **はい** に設定します。
 
-    ![ジョブのスケジューリング ダイアログ ボックスです。](./media/subcontract18_job-scheduling-dialog.png)
+    ![ジョブのスケジューリング ダイアログ ボックス](./media/subcontract18_job-scheduling-dialog.png)
 
 16. **OK** を選択して、**ジョブのスケジューリング** ダイアログ ボックスを閉じ、**すべての製造オーダー** ページに戻ります。
 17. アクション ウィンドウの、**スケジュール** タブで、**ガント** を選択して **ガント チャート - リソース ビュー** ページを開きます。
 
     ガント チャートでは、リソースで生産ジョブをスケジュールする方法の視覚概要を提供します。 外部のコーティング工程が 3 つのジョブから成ることに注意してください: プロセス ジョブ、配送ジョブ、および待ち時間ジョブ。
 
-    ![ガント チャートのガント チャート - リソース ビュー ページです。](./media/subcontract19_gantt-chart.png)
+    ![ガント チャートのガント チャート - リソース ビュー ページ](./media/subcontract19_gantt-chart.png)
 
 18. **ガント チャート - リソース ビュー** ページを閉じて、**すべての製造オーダー** ページに戻ります。
 19. アクション ウィンドウの、**新しい製造オーダー** タブで、**リリース** を選択して **リリース** ダイアログ ボックスを開きます。
 
-    ![リリース ダイアログ ボックスです。](./media/subcontract20_release-dialog.png)
+    ![ダイアログ ボックスをリリース](./media/subcontract20_release-dialog.png)
 
 20. **OK** を選択して **リリース** ダイアログ ボックスを閉じます。
 21. **生産管理 \> 定期処理のタスク \> 倉庫にリリース \> BOM およびフォーミュラ明細行の自動リリース** の順に選択して、**BOM およびフォーミュラ明細行の自動リリース** ダイアログ ボックスを開きます。
 
-    ![BOM およびフォーミュラ明細行ダイアログ ボックスを自動的にリリースします。](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
+    ![BOM およびフォーミュラ明細行ダイアログ ボックスの自動リリース](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
 
 22. **OK** を選択して BOM およびフォーミュラ明細行の自動リリース ジョブを実行します。
 
@@ -206,9 +209,9 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 
     ページに原材料ピッキングに対する 2 つの作業セットが表示されることに注意してください。 最初の作業は材料 M8100 および M8101 対象です。 これらの材料は工程 10 で消費されます。 2 つ目の作業は材料 M8202 および M8250 対象です。 これらの材料は、外注作業である工程 20 で消費されます。
 
-    ![作業ページの原材料ピッキングに対する 2 つの作業セットです。](./media/subcontract22_work-page.png)
+    ![作業ページの原材料ピッキングに対する 2 つの作業セット](./media/subcontract22_work-page.png)
 
-26. 工程 10 の倉庫作業を処理する Warehouse Management モバイル アプリを開始します。
+26. 工程 10 の倉庫作業を処理する倉庫アプリを開始します。
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -220,13 +223,13 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
     - **開始工程番号** フィールドで、**10** を選択します。
     - **終了工程番号** フィールドで、**10** を選択します。
 
-    ![一般タブ 1 で設定されている値です。](./media/subcontract23_start-dialog.png)
+    ![一般タブで設定されている値](./media/subcontract23_start-dialog.png)
 
 31. **OK** を選択して、**開始** ダイアログ ボックスを閉じ、**すべての製造オーダー** ページに戻ります。
 
     製造オーダーのステータスが **開始済** であることに注意してください。 工程 10 の材料は、ピッキング リスト仕訳帳の自動転記で消費されます。 工程 10 の時間消費量は、工順カード仕訳帳の自動転記で扱われます。
 
-32. 工程 20 の倉庫作業を処理する Warehouse Management モバイル アプリを開始します。
+32. 工程 20 の倉庫作業を処理する倉庫アプリを開始します。
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -238,7 +241,7 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
     - **数量** フィールドに **10** と入力します。
     - **ピッキング リスト転記** オプションを **いいえ** に設定します。
 
-    ![一般タブ 2 で設定されている値です。](./media/subcontract24_general-tab.png)
+    ![一般タブで設定されている値](./media/subcontract24_general-tab.png)
 
 35. **OK** を選択して、**開始** ダイアログ ボックスを閉じ、**すべての製造オーダー** ページに戻ります。
 
@@ -247,59 +250,56 @@ HQUS 法人では、ハイエンド スピーカーが製造されています�
 36. アクション ウィンドウの、**表示** タブで、**ピッキング リスト** を選択して **ピッキング リスト** ページを開きます。
 37. 転記されていないピッキング リストを選択し、仕訳帳明細行を表示する仕訳帳番号を選択します。
 
-    ![ピッキング リスト ページの仕訳帳明細行です。](./media/subcontract25_picking-list.png)
+    ![ピッキング リスト ページの仕訳帳明細行](./media/subcontract25_picking-list.png)
 
 38. アクション ウィンドウで、**印刷** \> **ピッキング リスト レポート** を選択し、**ピッキング リスト レポート** ダイアログ ボックスを開きます。
 39. **納品書レイアウトの使用** オプションを **はい** に設定します。
 
-    ![ピッキング リスト レポート ダイアログ ボックスです。](./media/subcontract26_picking-list-report-dialog.png)
+    ![ピッキング リスト レポート ダイアログ ボックス](./media/subcontract26_picking-list-report-dialog.png)
 
 40. **OK** を選択して **ピッキング リスト** レポートを生成します。
 
     この場合、仕入先納品書は生産ピッキング リスト仕訳帳から印刷されます。 納品書では、コーティング工程を行う仕入先に出荷される材料を指定します。
 
-    ![ピッキング リスト レポートです。](./media/subcontract27_picking-list-report.png)
+    ![ピッキング リスト レポート](./media/subcontract27_picking-list-report.png)
 
 41. **ピッキング リスト** レポートを閉じ、**ピッキング リスト** ページに戻ります。
 42. アクション ウィンドウで、**転記** を選択して **仕訳帳の転記** ダイアログ ボックスを開きます。
 
-    ![転記仕訳帳ダイアログ ボックスです。](./media/subcontract28_post-journal-dialog.png)
+    ![転記仕訳帳ダイアログ ボックス](./media/subcontract28_post-journal-dialog.png)
 
 43. **OK** を選択して **転記仕訳帳** ダイアログ ボックスを閉じます。
 44. 発注書を開きます。
 
-    ![発注書ページです。](./media/subcontract29_purchase-order-page.png)
+    ![発注書ページ](./media/subcontract29_purchase-order-page.png)
 
 45. アクション ウィンドウの、**購買** タブで **確認** をクリックします。
 46. **転記** を選択して **転記仕訳帳** ダイアログ ボックスを開きます。
 47. **OK** を選択して、**転記仕訳帳** ダイアログ ボックスを閉じ、**発注書** ページに戻ります。
 48. 単価を **33** から **40** に変更します。
 
-    ![発注書ページで変更された単価です。](./media/subcontract30_unit-price.png)
+    ![発注書ページで変更された単価](./media/subcontract30_unit-price.png)
 
 49. 発注書を再度確認します。
 50. 製品受領書。
 
-    ![製品受領書ダイアログ ボックスを転記します。](./media/subcontract31_posting-product-receipt-dialog.png)
+    ![製品受領書ダイアログ ボックスの転記](./media/subcontract31_posting-product-receipt-dialog.png)
 
 51. 仕入請求書。
 52. 照合状態を更新します。
 
-    ![仕入先請求書ページです。](./media/subcontract32_vendor-invoice-page.png)
+    ![仕入先請求ページ](./media/subcontract32_vendor-invoice-page.png)
 
 53. 完了レポート。
 
-    ![完了レポート ダイアログ ボックスです。](./media/subcontract33_report-as-finished-dialog.png)
+    ![完了レポート ダイアログ ボックス](./media/subcontract33_report-as-finished-dialog.png)
 
 54. 終了。
 
-    ![終了ダイアログ ボックスです。](./media/subcontract34_end-dialog.png)
+    ![終了ダイアログ ボックス](./media/subcontract34_end-dialog.png)
 
 55. 原価の比較。
 
-    ![原価の比較チャートです。](./media/subcontract35_cost-comparison-charts.png)
+    ![原価の比較チャート](./media/subcontract35_cost-comparison-charts.png)
 
 データの設定がありません。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,24 +1,27 @@
 ---
 title: 販売見積の一括作成
 description: この手順は、複数の顧客に送付する、一連の製品またはサービスの提供の見積書を効率的に作成する方法を示します。
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesQuotationTemplateGroup, SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SysQueryForm, SalesQuickQuote
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acb2b49c7cb2024aec1140d04150bd1ab9d75c14
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 227ff0dd03f8917f4551ce08067ef26c6204b059
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573372"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431763"
 ---
 # <a name="mass-create-sales-quotations"></a>販売見積の一括作成
 
@@ -98,6 +101,3 @@ ms.locfileid: "7573372"
 11. [販売とマーケティング] > [販売見積] > [すべての見積] に移動する。
     * 選択したテンプレートに基づいて一括定期更新で指定されたすべての顧客に対して見積書が作成されたことを確認します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

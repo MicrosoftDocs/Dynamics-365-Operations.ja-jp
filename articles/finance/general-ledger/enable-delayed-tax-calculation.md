@@ -2,9 +2,11 @@
 title: 仕訳帳の税金計算遅延の有効化
 description: このトピックでは、仕訳帳明細行の数が非常に大きい場合に、税金計算遅延の機能をオンにして、税額計算のパフォーマンスを向上させる方法について説明します。
 author: ericwang
+manager: Ann Beebe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8394c83245865fd7fa02ddf80ada0532d1d4368e10e0a3248d0f8163f8e2224d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ea79747e8e7c078baa6e270ecebf88c4832e079
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742908"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968807"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>仕訳帳の税金計算遅延の有効化
 [!include [banner](../includes/banner.md)]
@@ -45,14 +47,14 @@ ms.locfileid: "6742908"
 1. **一般会計 \> 元帳の設定 \> 一般会計パラメーター** の順に移動します。
 2. **消費税** タブの **全般** クイック タブで、**税金計算遅延** オプションを **はい** に設定します。
 
-![一般会計パラメーターの画像。](media/delayed-tax-calculation-gl.png)
+![一般会計パラメーターの画像](media/delayed-tax-calculation-gl.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>仕訳帳名レベルでの税金計算遅延の有効化
 
 1. **一般会計 \> 仕訳帳の設定 \> 仕訳帳名** の順に移動します。
 2. **消費税** セクションの **全般** クイック タブで、**税金計算遅延** オプションを **はい** に設定します。
 
-![仕訳帳名の画像。](media/delayed-tax-calculation-journal-name.png)
+![仕訳帳名の画像](media/delayed-tax-calculation-journal-name.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>仕訳帳ヘッダー レベルでの税金計算遅延の有効化
 
@@ -61,7 +63,4 @@ ms.locfileid: "6742908"
 3. 仕訳帳名を選択します。
 4. **設定** タブで、**税金計算遅延** オプションを **はい** に設定します。
 
-![一般仕訳帳ページの画像。](media/delayed-tax-calculation-journal-header.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+![一般仕訳帳ページの画像](media/delayed-tax-calculation-journal-header.png)

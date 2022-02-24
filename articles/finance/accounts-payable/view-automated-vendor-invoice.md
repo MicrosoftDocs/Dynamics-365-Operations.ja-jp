@@ -2,9 +2,11 @@
 title: 仕入先請求書の自動化の結果を表示する (プレビュー)
 description: このトピックでは、自動化されたワークフローへの送信プロセスにある仕入先請求書の状態を表示する方法について説明します。
 author: abruer
+manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e7ec69177cdb4f6304b75016963f4111bbfde6ed975d66ffa702426a68dce640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: baa2f1f55dfb9bb93b4f27c45db563e39850dd37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728964"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969729"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>仕入先請求書の自動化の結果を表示
 
@@ -35,6 +37,3 @@ ms.locfileid: "6728964"
 - **一時停止** – **買掛金勘定パラメーター** ページで定義されている自動化されたプロセスが実行されましたが、プロセスの少なくとも 1 つの手順が失敗しました。 **一時停止** 状態は、**自動化された処理に含める** フィールドが **いいえ** に設定されている場合にも適用されます。 **最新の結果の表示** を選択すると、失敗を表示できます。
 - **ワークフロー内** – インポートした請求書は、自動化されたワークフローへの送信プロセスまたは手動でワークフロー システムに送信されました。
 - **ワークフローの完了** – インポートされた請求書に対してのワークフロー プロセスが完了しました。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

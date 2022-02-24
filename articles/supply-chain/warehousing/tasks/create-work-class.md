@@ -1,25 +1,28 @@
 ---
 title: 作業クラスの作成
 description: この手順では、作業クラスを設定する方法を示します。
-author: Mirzaab
+author: ShylaThompson
+manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkClass
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c2a99771bc10f12f20fca1689b8786f3de8b316
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ed9b72d891df4d40213d4854da6b09bd9876effa
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572316"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432321"
 ---
 # <a name="create-a-work-class"></a>作業クラスの作成
 
@@ -37,6 +40,3 @@ ms.locfileid: "7572316"
     * 場所のタイプを選択すると、ピッキング後に品目を配置できる場所の制限を設定します。 この設定は、場所のディレクティブが場所を解決しようとする場合、または倉庫作業者がモバイル デバイスのメニュー項目に手動で場所を提供する場合に使用されます。  
 8. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

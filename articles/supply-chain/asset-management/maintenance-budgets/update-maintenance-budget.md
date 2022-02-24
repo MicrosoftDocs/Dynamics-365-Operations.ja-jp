@@ -1,10 +1,12 @@
 ---
 title: メンテナンス予算の更新
 description: このトピックでは、資産管理でメンテナンス予算を更新する方法について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 87c054cb96d56e40e35ee44142396f59d61395263ff41232423f6c7911478b0d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b04549700b51f73a3629fe9cd67a3e1f6c1bafbb
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724943"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021031"
 ---
 # <a name="update-maintenance-budgets"></a>メンテナンス予算の更新
 
@@ -72,6 +74,3 @@ ms.locfileid: "6724943"
 
 - 一部の資産の改修は現在計画段階にありますが、関連するジョブはまだ資産管理に作成されていないことがわかっています。 ただし、これらのジョブの予算原価をメンテナンス予算に含める必要があります。
 - メンテナンス予算を作成してから新しい資産または資産タイプが作成されましたが、メンテナンス計画はそれらの資産または資産タイプに対してまだ設定されていません。 ただし、これらの資産タイプの予算原価をメンテナンス予算に含める必要があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

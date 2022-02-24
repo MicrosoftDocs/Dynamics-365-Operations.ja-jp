@@ -1,32 +1,31 @@
 ---
 title: セキュリティとデータ エンティティ
-description: このトピックでは、データ エンティティのセキュリティについて説明します。
-author: peakerbl
+description: このトピックでは、データ エンティティのセキュリティについて説明します。 データ エンティティはエントリ ポイント セキュリティをサポートするため、ロール ベースのセキュリティ フレームワークによって制御されます。 データ エンティティのエントリ ポイントを権限および職務にマッピングするモデルは、ターゲット シナリオによって異なります。 したがって、データ エンティティでは、統合モードごとに個別のセキュリティ構成が可能です。
+author: Sunil-Garg
+manager: AnnBe
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 17852
 ms.assetid: a9ede141-56fa-4310-997d-aeef184f7a52
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3eeab83eaaa487cf036bb7d2f7d67ef388e63b9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b2d4a4d29de61dc9df1c303866abb11fa522d0e0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071072"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685237"
 ---
 # <a name="security-and-data-entities"></a>セキュリティとデータ エンティティ
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 > [!NOTE]
 > データ エンティティは拡張可能なデータ セキュリティ (XDS) の概念をサポートしません。
@@ -234,7 +233,7 @@ ms.locfileid: "8071072"
     - **データ管理** - データのインポート/エクスポートおよびコネクタの統合のみに適用されます。
     - **データ サービス** - OData サービスにのみ適用されます。
 
-[![RolebasedSecurity.](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
+[![RolebasedSecurity](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
 
 ## <a name="sensitive-data"></a>機密データ
 テーブル保護フレームワーク (TPF) は、Finance and Operations に格納されているデータへの厳密なアクセス制御を使用できます。 この機能は、テーブルおよびテーブルのフィールドの AOSAuthorization プロパティを介して公開されます。 AOSAuthorization を使用してテーブルまたはフィールドにマークを付ける場合、セキュリティ フレームワークでは、そのリソースへの明示的なアクセス権がユーザーに付与されている必要があります。 この要件は、テーブルまたはフィールドにデータエンティティでアクセスする場合にも適用されます。 この項では、データ エンティティの TPF アクセス許可を付与するためのガイドラインについて説明します。
@@ -252,6 +251,3 @@ ms.locfileid: "8071072"
 
 - だれが機密データへのアクセス権を持つかをより簡単に検出することができます。
 - ロールに職務権限と特権の両方を割り当てる場合にのみにロールがアクセス権を取得するので、だれかが誤って機密データへのアクセスできるリスクを軽減できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

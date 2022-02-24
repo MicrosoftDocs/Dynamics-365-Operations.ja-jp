@@ -1,10 +1,12 @@
 ---
 title: 国/地域コンテキストの適用
-description: このトピックでは、ローカライズおよび翻訳要件を満たすために国/地域コンテキストを適用する方法に関する情報を提供します。
+description: このトピックでは、ローカライズおよび翻訳要件を満たすために国/地域コンテキストを適用する方法に関する情報を提供します。 このトピックで、国コンテキスト プロパティを使用する方法と、どのようなアプリケーション オブジェクトがユーザー インターフェイス要素を制御するかに関する情報を確認できます。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 168c2e576fd09695857126f9b2c5f32158a023edcb088a8e5668620973c2f3b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1dbeb11e639f1b4c496d90498d6e24bc5a43b47d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718263"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685071"
 ---
 # <a name="apply-countryregion-context"></a>国/地域コンテキストの適用
 
@@ -72,20 +74,18 @@ ms.locfileid: "6718263"
 > **CountryRegionCodes** プロパティに複数の ISO 国および地域コードを追加するには、コンマ区切りのリストを使用します。
 
 ## <a name="using-the-legal-entity-as-the-controlling-party"></a>法人を管理関係者として使用
-法人のプライマリ住所の **国/地域** 値により、制御側関係者の国/地域コンテキストが決定されます。 **国/地域** フィールドの既定値は、システムのロケールです。 次の図は、法人の基本住所を設定する方法を示しています。 [![LE\_Edit\_address。](./media/le_edit_address-1024x570.jpg)](./media/le_edit_address.jpg)
+法人のプライマリ住所の **国/地域** 値により、制御側関係者の国/地域コンテキストが決定されます。 **国/地域** フィールドの既定値は、システムのロケールです。 次の図は、法人の基本住所を設定する方法を示しています。 [![LE\_Edit\_address](./media/le_edit_address-1024x570.jpg)](./media/le_edit_address.jpg)
 
 ## <a name="setting-another-party-as-the-controlling-party"></a>別の当事者を管理側の関係者として設定
 顧客、銀行、または仕入先などの、別の関係者を制御関係者として使用することができます。 たとえば、特定の国/地域の顧客に対して対象となる機能を有効化する、または特定の国/地域から仕入先の固有の検証を必要とすることができます。 管理者を設定するには、フォーム、コントロール、またはその他の要素の **CountryRegionContextField** プロパティを使用します。 このプロパティを使用すると、管理関係者であるエンティティを選択できます。 既定値は法人です。 次の図は、フィールドに **CountryRegionContextField** プロパティを設定する方法を示しています。 
-[![DE\_CountryRegionContextField。](./media/de_countryregioncontextfield.jpg)](./media/de_countryregioncontextfield.jpg) 
+[![DE\_CountryRegionContextField](./media/de_countryregioncontextfield.jpg)](./media/de_countryregioncontextfield.jpg) 
 
 この例では、顧客が制御エンティティになります。 顧客の住所が **CountryRegionCodes** フィールドの値と比較され、**GermanSpecifcSetting** フィールドが表示されているかどうかが判別されます。
 
-## <a name="additional-resources"></a>その他のリソース
+<a name="additional-resources"></a>その他のリソース
+--------
 
 [ISO コード](https://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

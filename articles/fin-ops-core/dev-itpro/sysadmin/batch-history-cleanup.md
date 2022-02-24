@@ -2,9 +2,11 @@
 title: バッチジョブ履歴のクリーンアップ
 description: このトピックでは、バッチ ジョブ履歴をクリーンアップする方法について情報を提供します。
 author: Peakerbl
+manager: AnnBe
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 6324dd6adde5a65a10c61a1eb6beb7f6961ffa108ee63484e269457282fb8df3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7f18dec09b8d57dc1057def437069b1d1c83412d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730549"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683957"
 ---
 # <a name="clean-up-the-batch-job-history"></a>バッチジョブ履歴のクリーンアップ
 
@@ -32,7 +34,7 @@ ms.locfileid: "6730549"
 - バッチ ジョブ履歴のクリーンアップ
 - バッチ ジョブ履歴クリーンアップをカスタマイズする
 
-![システム管理の定期処理タスク。](./media/Menu-Cleanup.png)
+![システム管理の定期処理タスク](./media/Menu-Cleanup.png)
 
 > [!NOTE]
 > 定期的にバッチ ジョブ履歴をクリーンアップすることと、この作業を業務時間外に行うことを推奨します。
@@ -45,7 +47,7 @@ ms.locfileid: "6730549"
 2. **履歴の範囲 (日数)** フィールドで、バッチ ジョブの履歴を保存する日数を指定します。
 3. **OK** を選択します。
 
-![定期的なジョブ。](./media/batch-cleanup-regular.png)
+![定期的なジョブ](./media/batch-cleanup-regular.png)
 
 ## <a name="batch-job-history-clean-up-custom"></a>バッチ ジョブ履歴のクリーンアップ (カスタマイズ)。
 
@@ -56,7 +58,4 @@ ms.locfileid: "6730549"
 3. **レポートに含めるレコード** クイック タブで、必要なフィルタ条件を指定し **OK** を選択します。
 4. **OK** を選択します。
 
-![カスタマイズ ジョブ。](./media/batch-cleanup-custom.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![カスタマイズ ジョブ](./media/batch-cleanup-custom.png)

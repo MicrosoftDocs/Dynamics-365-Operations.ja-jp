@@ -1,10 +1,12 @@
 ---
 title: 資産ローン
 description: このトピックでは、資産管理でローン資産を登録する方法について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65809d9be39372412d5d6b419f7356fe2c9668a1a01ede32ef52cbd66753e6d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 355e3d3e0e952db14a03810145528f9701804ca2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752853"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022335"
 ---
 # <a name="asset-loans"></a>資産ローン
 
@@ -44,7 +46,7 @@ ms.locfileid: "6752853"
 
 他の場所または顧客に貸与したすべての資産の一覧を表示するには、**資産管理** \> **共通** \> **資産ローン** \> **すべての資産ローン** を選択します。 資産に対して **終了** チェック ボックスがオンの場合、資産は会社に返却済として登録されています。
 
-![メンテナンス要求を管理します。](media/06-manage-maintenance-requests.png)
+![メンテナンス要求の管理](media/06-manage-maintenance-requests.png)
 
 **有効な資産ローン** ページで、会社に返却されていないすべてのローン資産の一覧を表示できます。
 
@@ -55,6 +57,3 @@ ms.locfileid: "6752853"
 3. **返却済** フィールドで、日時を入力します。
 4. **OK** を選択します。
 5. **有効な資産ローン** リスト ページを更新し、資産ローンが一覧に表示されなくなったことを確認してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,26 +1,29 @@
 ---
 title: 品目予測の計算
 description: このトピックでは、資産管理で品目予測を計算する方法について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetItemForecast
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5773149760ecb2a26f4916036fe36c9cc04f654039dee4eab9bfac86eb02e1fd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8f38ac7bfb270f648cd561da50ee5477721ab47
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713033"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432080"
 ---
 # <a name="calculate-item-forecast"></a>品目予測の計算
 
@@ -56,7 +59,4 @@ ms.locfileid: "6713033"
 
 8. 品目に製品、保管、または追跡用分析コードを表示する場合は、**分析コードの表示** ボタンをクリックします。 該当するチェック ボックスを選択して、**OK** をクリックします。
 
-![図 1。](media/02-capacity-planning.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![図 1](media/02-capacity-planning.png)

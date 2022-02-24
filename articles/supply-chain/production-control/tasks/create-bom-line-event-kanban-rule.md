@@ -1,25 +1,28 @@
 ---
 title: BOM 明細行イベントかんばんルールの作成
 description: このタスクは、古典的な実稼働環境と混合リーン内の生産 BOM 明細行の供給を確認するイベントかんばんルールを作成するのに必要な設定を対象としています。
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdTable, ProdBOM, ProdParmCostEstimation
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14cef6279b756ff71872747dfb1ca9e5c8cd8fcc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 698b7af3bc8e2146aaf86fb5e04dd123ea6d5153
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575054"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431687"
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>BOM 明細行イベントかんばんルールの作成
 
@@ -80,6 +83,3 @@ ms.locfileid: "7575054"
     * 見積もりを行った製造オーダーの M0001 を供給するために作成されたかんばんを確認します。  
     * これは最後のステップです!  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

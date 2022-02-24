@@ -2,9 +2,11 @@
 title: 財務報告のデータ マートのリセット
 description: このトピックでは、Microsoft Dynamics 365 Finance の財務報告データ マートをリセットする方法について説明します。
 author: aprilolson
-ms.date: 04/01/2021
+manager: AnnBe
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: IT Pro, Developer
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 28824306934e88498b758250992e6110063515c6b4170a1aa023c5deef48cbdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d410dac11848dc741686da97dc63b906ef7e86f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777368"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797532"
 ---
 # <a name="reset-the-financial-reporting-data-mart"></a>財務報告のデータ マートのリセット
 
@@ -40,7 +42,7 @@ ms.locfileid: "6777368"
 
 レポート デザイナーでデータマートをリセットするには、 以下の図に示されているように、 **ツール** メニューで **データマートのリセット** を選択します。 表示されるダイアログ ボックスには2つのセクションがあります: **統計** および **リセット**。
 
-[![データ マートのダイアログ ボックスをリセットします。](./media/Reset-72.jpg)](./media/Reset-72.jpg)
+[![データ マートのダイアログ ボックスをリセットします](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>統合試行回数
 
@@ -62,7 +64,7 @@ ms.locfileid: "6777368"
 - **データベースの復元** – データベースが復元されましたが、財務報告のデータ マートのデータベースは復元されませんでした。
 - **その他** – 別の理由によりデータ マートをリセットしています。 問題があることを懸念する場合は、識別のためにサポートに問い合わせてください。
 
-[![データ マートをリセットします。](./media/Integration.png)](./media/Integration.png)
+[![データ マートのリセット](./media/Integration.png)](./media/Integration.png)
 
 > [!NOTE]
 > リセットを開始する前に、すべてのデータ マート リセット タスクが初回の読み込みを完了したことを確認します。 **ツール** &gt; **統合の状態** を選択して、前回のランタイム列で値を探すことにより、これを確定できます。
@@ -75,7 +77,7 @@ ms.locfileid: "6777368"
 
 統合の状態を確認する場合は、**ツール** &gt; **統合の状態** を選択し、統合が最後に実行された時刻と状態を表示します。
 
-[![統合のステータスを表示します。](./media/New-integration.PNG)](./media/New-integration.PNG)
+[![統合のステータスを表示](./media/New-integration.PNG)](./media/New-integration.PNG)
 
 > [!NOTE]
 > すべてのマッピングの状態が **RanToCompletion** と表示され、 **統合の状態** ダイアログボックスの左下隅に「統合が完了しました」というメッセージが表示されたら、リセットは完了です。
@@ -105,7 +107,7 @@ MinorVersionDataUpgrade.zip パッケージをダウンロードするために�
 財務報告データベースに対してではなく、データベースに対して、次のスクリプトを実行します:
 
 - DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
-- DataUpgrade.zip\\AosService\\Scripts\\GrantAxViewChangeTracking.sql
+- DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql
 
 これらのスクリプトは、ユーザー、ロール、変更の追跡の設定が正しいことを保証する助けになります。
 
@@ -554,7 +556,7 @@ services.msc を使用して、以前に停止したサービスを再起動し�
 -- Attempt to delete integrated users
     DECLARE @userId nvarchar(max)
     DECLARE removeUserCursor CURSOR LOCAL FAST_FORWARD FOR
-    select UserID from Reporting.SecurityUser where UserID <> '00000000-0000-0000-0000-000000000002'
+    select UserID from Reporting.SecurityUser su join Reporting.SecurityUserIntegration sui on su.UserID = sui.ID
     OPEN removeUserCursor
     FETCH NEXT FROM removeUserCursor INTO @userId
     WHILE @@FETCH_STATUS = 0
@@ -688,7 +690,7 @@ END
 ファイルを安全な場所にコピーまたはアップロードできます。
 
 > [!WARNING]
-> Microsoft Azure Virtual Machines (VMs) の Dドライブ の挙動には気をつけてください。 Dドライブに、エクスポートしたレポート パーツ グループを完全には保存しません。一時的なドライブの詳細については、次を参照してください。[Windows Azure 仮想マシン上のテンポラリー ドライブを理解する](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines).
+> Microsoft Azure Virtual Machines (VMs) の Dドライブ の挙動には気をつけてください。 Dドライブに、エクスポートしたレポート パーツ グループを完全には保存しません。一時的なドライブの詳細については、次を参照してください。[Windows Azure 仮想マシン上のテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ### <a name="import-report-definitions"></a>レポート定義のインポート
 
@@ -703,6 +705,3 @@ END
     - 特定のレポートをインポートするには、行、列、ツリー、あるいは必要な要素を選択してください。
 
 5. **インポート** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

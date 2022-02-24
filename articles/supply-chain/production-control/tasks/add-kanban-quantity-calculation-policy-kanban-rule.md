@@ -1,24 +1,27 @@
 ---
 title: かんばん数量計算ポリシーのかんばんルールへの追加
 description: この手順では、かんばん数量の計算ポリシーを作成し、それをかんばんルールへ追加し、かんばんのサイズおよび数量を最適化することに焦点をあてます。
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanQuantityPolicy, KanbanRules, KanbanQuantityCalculation
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a844d455b1e583f234ddc47280f5cac8ee0ab852
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 039c4aaa355cf2b850ded06913e8e39ee8cac543
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579283"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431696"
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>かんばん数量計算ポリシーのかんばんルールへの追加
 
@@ -60,6 +63,3 @@ ms.locfileid: "7579283"
 8. 一覧で、選択された行のリンクをクリックします。
     * 以前のサブタスクで作成した ポリシー Speaker2016 を追加します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

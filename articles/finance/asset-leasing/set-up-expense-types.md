@@ -2,11 +2,13 @@
 title: 経費タイプの設定
 description: このトピックでは、資産リースで資産タイプを設定する方法について説明します。
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseExpenseTypeTable
+ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1e5af18921314061ba3256559d7fc7ceacef606a9b3d5cc3a8047c83494074fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ab31b16c6ae07466d7655832701e71092064fe1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715145"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969506"
 ---
 # <a name="set-up-expense-types"></a>経費タイプの設定
 
@@ -56,6 +58,3 @@ ms.locfileid: "6715145"
 7. 該当するフィールドで、ファイナンス リースの主勘定と、オペレーティング リースの主勘定を選択します。
 
 これらの手順を完了したら、選択したリースの **リース詳細** ページに **履行費用支払スケジュール** 明細行を使用して経費を追加できます。 別の方法として、新しいリースを作成するときに経費を追加することもできます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

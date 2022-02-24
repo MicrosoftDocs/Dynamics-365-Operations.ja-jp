@@ -1,24 +1,27 @@
 ---
 title: 倉庫なしの販売注文の出荷
 description: このトピックでは、製品が顧客に出荷されたときに販売注文を更新する方法を示します。
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, SalesTableLineQuantity, CustPackingSlipJournal
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10e21bcdef22caf4f4d97ba7dd36ebf1a6e6e055
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b6b1dbb4d53785c226f7c9d40339d9dd19f47152
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578875"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432240"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>倉庫なしの販売注文の出荷
 
@@ -53,6 +56,3 @@ ms.locfileid: "7578875"
 19. アクション ウィンドウで、**ピッキングと梱包** を選択します。
 20. **梱包明細** を選択します。 **梱包明細仕訳帳** ページには、注文に対して生成されたすべての梱包明細ドキュメントが含まれます。 各ドキュメントの詳細を確認および印刷することもできます。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

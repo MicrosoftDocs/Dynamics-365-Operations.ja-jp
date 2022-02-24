@@ -1,27 +1,30 @@
 ---
 title: 製品コンフィギュレーションのソルバー戦略
 description: このトピックでは、製品のコンフィギュレーションのパフォーマンスを向上させるためにソルバー戦略を使用する方法について説明します。
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37e8f2c9557ee6fc827d60ca6dc83cd638b6378a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: cb0fc054e0feec4c54c0bd916e01ce3a2a4cd903
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565705"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432194"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>製品コンフィギュレーションのソルバー戦略
 
@@ -50,7 +53,7 @@ ms.locfileid: "7565705"
 
 ソルバー戦略を変更するには、アクション ペイン上の **製品コンフィギュレーション モデル** ページで、**モデルのプロパティ** を選びます。 そして、**モデルの詳細の編集** ダイアログ ボックスで、ソルバー戦略を選択します。
 
-[![ソルバー戦略を変更。](./media/solver-strategy.png)](./media/solver-strategy.png)
+[![ソルバー戦略を変更](./media/solver-strategy.png)](./media/solver-strategy.png)
 
 現時点では、どのソルバー戦略が制約ベースの製品コンフィギュレーションの最も効率的な戦略になるかを自動的に検出するロジックはありません。 そのため、1 つずつソルバー戦略を試みる必要があります。
 
@@ -70,6 +73,3 @@ ms.locfileid: "7565705"
 [ヒューリスティック](https://techterms.com/definition/heuristic)
 
 [制約充足問題](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

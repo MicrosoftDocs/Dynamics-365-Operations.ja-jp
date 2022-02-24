@@ -1,26 +1,29 @@
 ---
 title: 修復管理
 description: 過去に役立った解決策の提案により、問題を体系的にまとめます。
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAConditionTable, SMASymptomArea, SMADiagnosisArea, SMAResolutionTable, SMARepairStage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1456c65f28d2a1d06497ddde81c9e68cc078c061
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4d45732ff35069a64b37b6c53d9e22adf9a9a46d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567922"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431705"
 ---
 # <a name="repair-management"></a>修復管理       
 
@@ -35,11 +38,15 @@ ms.locfileid: "7567922"
 
 修復の現象、診断、および解決策を指定するために使用される情報を入力するには、次の設定フォームを使用します。
 
-- **サービス管理** \> **設定** \> **修復** \> **条件**。
-- **サービス管理** \> **設定** \> **修復** \> **現象の範囲**。
--  **サービス管理** \> **設定** \> **修復** \> **診断の範囲**。
-- **サービス管理** \> **設定** \> **修復** \> **解決策**。
-- **サービス管理** \> **設定** \> **修復** \> **修復ステージ**。
+1.  **サービス管理** \> **設定** \> **修復** \> **条件** の順にクリックします。
+
+2.  **サービス管理** \> **設定** \> **修復** \> **現象の範囲** の順にクリックします。
+
+3.  **サービス管理** \> **設定** \> **修復** \> **診断の範囲** の順にクリックします。
+
+4.  **サービス管理** \> **設定** \> **修復** \> **解決策** の順にクリックします。
+
+5.  **サービス管理** \> **設定** \> **修復** \> **修復ステージ** の順にクリックします。
 
 ## <a name="symptoms-and-conditions"></a>現象と状態
 
@@ -75,19 +82,19 @@ ms.locfileid: "7567922"
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>サービス注文の修復行の作成
 
-1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** に移動します。
+1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** の順にクリックします。
 
 2.  修復が必要なサービス対象を含むサービス注文を選択します。
 
-3.  **修復** \> **修復行** をクリックして、**修復行** フォームを選択します。
+3.  **修復** \>**修復行** をクリックして、**修復行** フォームを開きます。
 
-4.  **新規作成** を選択して、新しい行を作成します。
+4.  Ctrl + N キーを押すと新しい行が作成されます。
 
 5.  サービス対象を選択します。 そのサービス注文に対するサービス対象の関係で設定されている任意のサービス対象を選択できます。
 
-6.  現象、診断、および実行の設定値から現在の修復行に関連する値を選択し、必要に応じて、**注記** タブを選択して修復行に関するメモを作成します。
+6.  現象、診断、および実行の設定値から現在の修復行に関連する値を選択し、必要に応じて、**注記** タブをクリックして修復行に関するメモを作成します。
 
-7.  **保存** を選択して修復行を保存します。 **修復行** フォームの **一般** タブで、**作成日時** フィールドが、保存の時刻で更新されます。
+7.  Ctrl + S キーを押して新しい修復行を保存します。 **修復行** フォームの **一般** タブで、**作成日時** フィールドが、保存の時刻で更新されます。
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>進捗の追跡と修復問題の解決
 
@@ -106,6 +113,3 @@ ms.locfileid: "7567922"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

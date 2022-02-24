@@ -1,24 +1,26 @@
 ---
 title: 売上税の割り当ておよび上書き
 description: この手順では、コマース チャネルに売上税グループを割り当てる方法を示します。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTaxOverrideCode, RetailTaxOverrideGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f72c9ffde760c1bc151ee15fe050f3704e43d83e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1c6e1de5046a3ce5d896ba3686a28d6d474d4268
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577219"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020731"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>消費税の割り当ておよび上書き
 
@@ -54,6 +56,3 @@ ms.locfileid: "7577219"
 21. 一覧で、選択された行のリンクをクリックします。
 22. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,26 +1,29 @@
 ---
-title: サイクル ラベル印刷
+title: ウェーブ ラベル印刷の設定と使用
 description: このトピックでは、ウェーブ ラベル印刷についての説明と、設定方法について解説します。
-author: perlynne
+author: GarmMSFT
+manager: PJacobse
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
-ms.reviewer: kamaybac
+ms.reviewer: PJacobse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: perlynne
+ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778086"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4432404"
 ---
-# <a name="wave-label-printing"></a>サイクル ラベル印刷
+# <a name="set-up-and-use-wave-label-printing"></a>ウェーブ ラベル印刷の設定と使用
 
 [!include [banner](../includes/banner.md)]
 
@@ -53,7 +56,7 @@ ms.locfileid: "7778086"
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>ウェーブ ラベルの印刷機能をオンにする
 
-Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です。 ただし、この機能は引き続き次のように[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)にリストされています。
+*ウェーブ ラベルの印刷* 機能を使用するには、システム上で有効になっている必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
 
 - **モジュール:** *倉庫管理*
 - **機能名 :** *ウェーブ ラベルの印刷*
@@ -506,7 +509,7 @@ Supply Chain Management のバージョン 10.0.21 の時点では、この機�
 
 ## <a name="scenario-3-wave-label-printing-for-multi-tiered-labels"></a>シナリオ 3 : 複数層のラベルのウェーブ ラベル印刷
 
-このシナリオでは、倉庫管理プロセスで複数の階層階層の出荷ラベルが必要な場合の、ウェーブ ラベル印刷機能の使用方法を解説します。 たとえば、カートンとパレットに対して別々のラベルの印刷を行い、改ラベルを出荷全体で印刷する必要がある場合があります。 改ラベルとは、出荷 ID のラベルやバーコードなどの、ロールとコンテナーの間の仕切りとして使用できるセパレート タイプのラベルを意味し、印刷後のラベルの仕分けが簡単になります。
+このシナリオでは、倉庫管理プロセスで複数の階層階層の出荷ラベルが必要な場合の、ウェーブ ラベル印刷機能の使用方法を解説します。 たとえば、カートンとパレットに対して別々のラベルの印刷を行い、改ラベルを出荷全体で印刷する必要がある場合があります。 改ラベルとは、出荷 ID のラベルやバーコードなど、ロールとコンテナーの間の仕切りとして使用できるセパレート タイプのラベルを意味し、印刷後のラベルの仕分けが簡単になります。
 
 このシナリオとシナリオ１における構成の主な相違点は、改ラベルが有効になっていることを除いて、複数のウェーブ ラベル タイプをウェーブ ラベル テンプレートと出荷単位シーケンス グループ ラインに関連付ける必要があるという点です。 この構成を実行するには、このシナリオで次の要素を設定します :
 
@@ -929,10 +932,3 @@ Supply Chain Management のバージョン 10.0.21 の時点では、この機�
 - ウェーブ ラベル履歴
 
 これらのほとんどのページでは、アクションウィンドウの **出荷** タブにある **関連情報** グループの **ウェーブラベル** を選択することにより、関連する機能を見つけることができます。
-
-## <a name="additional-resources"></a>追加リソース
-
-- [ウェーブ ラベルの再印刷と無効化](reprint-and-void-wave-labels.md)
-- [サイクル中にサイクル ラベルの印刷をスケジュールする](configure-task-based-wave-label-printing.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

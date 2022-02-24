@@ -1,23 +1,26 @@
 ---
 title: 請求金額の自動配賦
 description: Microsoft Dynamics 365 Supply Chain Management の請求機能を使用すると、発注書または販売注文に請求金額を自動的に割り当てることができます。
-author: Henrikan
-ms.date: 09/30/2021
+author: dasani-madipalli
+manager: tfehr
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: damadipa
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
+ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592543"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432263"
 ---
 # <a name="automatic-allocation-of-charges"></a>請求金額の自動配賦
 
@@ -26,16 +29,6 @@ ms.locfileid: "7592543"
 担当している顧客または販売している品目に基づいて、特定の追加請求金額を適用することができます。 Microsoft Dynamics 365 Supply Chain Management の *請求* 機能を使用すると、発注書または販売注文に請求金額を自動的に割り当てることができます。
 
 自動請求と呼ばれる自動請求は、販売注文または発注書の作成時に自動的に適用されます。 特定の仕入先、顧客、仕入先のグループ、または品目に自動請求を定義できます。 また、すべての仕入先、顧客、または品目に適用する自動請求を定義することもできます。
-
-## <a name="set-up-parameters"></a>パラメーターの設定
-
-**調達パラメーターとソーシング パラメーター** ページには、特に料金の自動割り当てに関連したいくつかの設定があります。 この設定を完了するには、次の手順に従います。
-
-1. **調達 \> セットアップ \> 調達パラメーター** の順に移動します。
-1. **価格** タブを開きます。
-1. **価格** クイック タブで、次の設定を行います。
-    - **ヘッダーの自動請求を検索** - 発注書ヘッダーに対して費用を自動的 に割り当てるかどうかを指定します。 費用の自動配 賦を使用するには、これを *はい* に設定します。
-    - **明細行の自動請求を検索** - 発注書明細に対して費用を自動的 に割り当てるかどうかを指定します。 費用の自動配 賦を使用するには、これを *はい* に設定します。
 
 ## <a name="set-up-charges-codes"></a>諸費用コードの設定
 
@@ -154,7 +147,7 @@ ms.locfileid: "7592543"
     - **サイト** と **倉庫** – 特定のサイトと倉庫に対してのみに請求金額を適用する場合は、サイトと倉庫を指定します。
     - **保存** – チェック ボックスをオンにして請求完了後に請求トランザクションを保存すると、選択した顧客 ID に対して新しい請求書を作成するたびに請求が適用されるようになります。
 
-1. **販売注文の場合のみ:** 階層化された請求金額を計算する場合は、[販売注文の階層化された請求金額](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) を参照してください。
+1. **販売注文の場合のみ:** 階層化された請求金額を計算する場合は、[販売注文の階層化された請求金額](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) を参照してください。
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>ヘッダーから明細行に諸費用を配賦
 
@@ -184,6 +177,3 @@ ms.locfileid: "7592543"
         > **配賦から除外する明細行の選択** グリッドを使用する場合は、**配賦** を選択するまで、グリッドを開いたままにしておいてください。 **配賦** を選択する前にグリッドを閉じると、グリッドの設定が失われます。 したがって、諸費用は以前に定義した基準に基づいて配賦されます。
 
 1. **配賦** を選択して設定を適用し、ダイアログ ボックスを閉じます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

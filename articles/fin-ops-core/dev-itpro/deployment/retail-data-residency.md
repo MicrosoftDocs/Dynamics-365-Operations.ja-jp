@@ -2,9 +2,11 @@
 title: Commerce データ所在地
 description: このトピックでは Commerce Scale Unit (クラウド) を配置するときのデータ所在地に関する考慮事項を説明します。
 author: AamirAllaq
+manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 3835d980cd4c2eaadcb1c7f4fb9dfc9c6aac118727ce0ef2fc04a7fda42b7fb4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f54caeec9c71c4a1d1c7fa28f88da73c4bbc924
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752325"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683969"
 ---
 # <a name="commerce-data-residency"></a>Commerce データ所在地
 
@@ -59,6 +61,3 @@ Commerce Data Exchange (CDX) を構成して、レコードの特定の区分の
 品揃えを使用して、商品および価格設定に関連するデータを特定のチャネルでセグメント化できます。 たとえば、北米の店舗が婦人靴のみを販売し、西ヨーロッパの店舗がスポーツ用品のみを販売する場合は、品揃えを使用してこのデータをセグメント化できます。 データが RCSU に同期されている場合、婦人靴のデータは北米の RCSU にのみ同期され、スポーツ用品のデータは西ヨーロッパの RCSU にのみ同期されます。
 
 顧客レコードと従業員レコードはグローバル アドレス帳を使用して構成し、それは特定のチャネルに対して構成できます。 たとえば、西ヨーロッパの RCSU と北米の RCSU で提供されるチャネル用に、顧客と従業員用に別々のアドレス帳を構成できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

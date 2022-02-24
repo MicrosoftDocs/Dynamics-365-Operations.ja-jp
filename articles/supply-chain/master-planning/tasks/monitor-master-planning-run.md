@@ -1,24 +1,27 @@
 ---
 title: マスター プランの実行の監視
 description: このトピックでは、生産計画担当が、マスター プランの実行が進行中かどうかを確認する方法について説明します。
-author: ChristianRytt
+author: josaw1
+manager: tfehr
 ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1438ed6bcec485ff9665ffd9659c938f5cac478
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778134"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431739"
 ---
 # <a name="monitor-a-master-planning-run"></a>マスター プランの実行の監視
 
@@ -33,7 +36,7 @@ ms.locfileid: "7778134"
 この機能を使用するには、次の手順を実行します。
 
 1. **機能管理** ワークスペースの **新規** タブで、一覧から **マスター プランの進行状況の視覚化** を選択します。 この機能が **新しい** タブに表示されない場合は、**無効** タブおよび **すべての** タブを確認します。
-1. **直ちに有効化** を選択します。 または、**スケジュール** を選択し、機能を有効にする時間を選択します。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
+1. **直ちに有効化** を選択します。 または、**スケジュール** を選択し、機能を有効にする時間を選択します。
 
 **マスター プランの進行状況の表示** ページには、計画ジョブの履歴と有効な計画ジョブの両方を表示できます。 
 
@@ -124,6 +127,3 @@ ms.locfileid: "7778134"
 1. グリッドで、**フィールド** フィールドが **品目番号** に設定されている行を選択します。
 1. **基準** フィールドに値を入力します。
 1. **OK** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

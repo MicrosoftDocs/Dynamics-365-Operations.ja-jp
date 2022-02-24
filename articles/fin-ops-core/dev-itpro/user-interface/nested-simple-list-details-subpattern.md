@@ -1,25 +1,27 @@
 ---
 title: 入れ子になった簡易リストおよび簡易詳細のサブパターン
-description: このトピックでは、子エンティティまたは子エンティティに関する情報を表示するために使用される入れ子になった簡易リストおよび詳細 (NSL+D) サブパターンに関する情報を提供します。
+description: このトピックでは、ネストされた簡易リストと詳細 (NSL+D) サブパターンについての情報を提供します。 このサブパターンは、子エンティティが別のフォーム タイプ内に存在するとき、セカンダリ エンティティ、すなわち、その子エンティティに関する情報を表示するために使用されます。
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 14741
 ms.assetid: f71aa535-8480-4ed8-b0c9-404f3e6285dd
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dff8d34e89dc291b88d0c386b62a12b3ab4d9ab
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c07e7cb16da762cb84fc01c5c7ebf32d109db768
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781628"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683945"
 ---
 # <a name="nested-simple-list-and-details-subpattern"></a>入れ子になった簡易リストおよび簡易詳細のサブパターン
 
@@ -27,7 +29,8 @@ ms.locfileid: "7781628"
 
 このトピックでは、ネストされた簡易リストと詳細 (NSL+D) サブパターンについての情報を提供します。 このサブパターンは、子エンティティが別のフォーム タイプ内に存在するとき、セカンダリ エンティティ、すなわち、その子エンティティに関する情報を表示するために使用されます。
 
-## <a name="usage"></a>用途
+<a name="usage"></a>用途
+-----
 
 この記事では、ネストされた簡易リストと詳細 (NSL + D) サブパターンという名前の簡易リストと詳細 (SL + D) パターンの変形について説明します。 SL&D フォーム パターンは、フォーム上の主エンティティに関する情報の表示に使用されます。一方、NSL + D サブパターンは、別のフォーム タイプ内にその子エンティティが表示される場合、セカンダリ エンティティまたは子エンティティに関する情報の表示に使用されます。 子エンティティに関連する情報は、グリッド (10 以上のフィールド) には多すぎるが、子エンティティ自体のフォームには足りない量である必要があります。 NSL+D サブパターンは、SL+D フォーム パターンを少し異なります。
 
@@ -37,7 +40,7 @@ ms.locfileid: "7781628"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-![簡易リストと詳細パターンのワイヤーフレーム。](./media/nestedsimplelistanddetails1.png)
+![簡易リストと詳細パターンのワイヤーフレーム](./media/nestedsimplelistanddetails1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -91,7 +94,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
     -   レコードが追加されるとき、フォーカスは詳細セクションの最初のフィールドに移動するはずです。
 
 ## <a name="examples"></a>例
-フォーム: **HcmJob** (**TaskTabPage**) [![入れ子になった簡易リストおよび詳細サブパターンの例。](./media/nestedsimplelistanddetails2.png)](./media/nestedsimplelistanddetails2.png)
+フォーム: **HcmJob** (**TaskTabPage**) [![入れ子になった簡易リストおよび詳細サブパターンの例](./media/nestedsimplelistanddetails2.png)](./media/nestedsimplelistanddetails2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される
@@ -113,7 +116,4 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![例。](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[![例](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)

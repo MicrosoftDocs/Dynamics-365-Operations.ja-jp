@@ -1,25 +1,27 @@
 ---
 title: オンプレミス環境の再配置
 description: このトピックでは、オンプレミス環境の再展開について説明します。
-author: PeterRFriis
+author: sarvanisathish
+manager: AnnBe
 ms.date: 10/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: peterfriis
+ms.author: sarvanis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 046ec612c8ae75dab6f753a247f08ff6fbf7dccb
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 86ba6fd8497217a2649afe45c40da9898b721828
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595402"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683977"
 ---
 # <a name="redeploy-on-premises-environments"></a>オンプレミス環境の再配置
 
@@ -33,7 +35,7 @@ ms.locfileid: "7595402"
 2. 環境へのコネクタを選択し、**編集** をクリックします。
 3. **コネクタの編集** タブで、**エージェントの構成** > **コンフィギュレーションの入力** の順に移動します。
 4. **コンフィギュレーション設定** セクションのダウンロード Fileshare 場所の値をコピーします。 これは後で必要になります。
-5. オンプレミス環境ファイル共有マシンにログインして、`\agent\wp<environment name>\StandaloneSetup\config.json` をコピーします。 この json ファイルで構成設定を使用すると、環境を再配置することができます。
+5. オンプレミス環境ファイル共有マシンにログインして、**\agent\wp<environment name>\StandaloneSetup\config.json** をコピーします。 この json ファイルで構成設定を使用すると、環境を再配置することができます。
 
 ### <a name="configuration-settings"></a>コンフィギュレーション設定
 次のテーブルに、コンフィギュレーション設定に関する情報を示します。 前の手順で保存した .json ファイルの **構成設定** 値を使用します。
@@ -127,6 +129,3 @@ ms.locfileid: "7595402"
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
