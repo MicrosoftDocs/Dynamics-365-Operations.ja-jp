@@ -2,27 +2,34 @@
 title: X++ 例外処理
 description: このトピックでは、X++の例外処理について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 11/01/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 150213
+ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 368e0223e8ff5621af57fc1b6302c19d644176ee
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: fdea8c4c88489296f6e48e8802ad44bfa47baead
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783378"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409237"
 ---
 # <a name="x-exception-handling"></a>X++ 例外処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++の例外処理について説明します。 使用してエラーを処理するには、**throw**、**try**...**catch**、**finally**、および **retry** ステートメントを使用して例外を生成して処理します。
+このトピックでは、X++の例外処理について説明します。 使用してエラーを処理するには、**throw**、**try**...**catch**、**finally**、および **retry** ステートメントを使用して例外を生成して処理します。 
 
-*例外* はプログラム実行の順序から離れて規制ジャンプします。 プログラムの実行が再開する指示は、`try...catch` ブロックとスローされる例外のタイプによって決まります。 例外は、**Exception** 列挙の値、または .NET の `System.Exception` クラスまたは派生クラスのインスタンスによって表されます。 多くの場合スローされる 1 つの例外は、**例外::エラー** 列挙値です。 一般的には、例外がスローされる前に infolog に診断情報を書き込みます。
+*例外* はプログラム実行の順序から離れて規制ジャンプします。 プログラムの実行が再開する指示は、**try**...**catch** ブロックとスローされる例外のタイプによって決まります。 例外は、**Exception** 列挙の値、または .NET の System.Exception クラスまたは派生クラスのインスタンスによって表されます。 多くの場合スローされる 1 つの例外は、**例外::エラー** 列挙値です。 一般的には、例外がスローされる前に infolog に診断情報を書き込みます。 
 
 **Global::error** メソッドは多くの場合、情報ログに診断情報を書き込む最善の方法です。 たとえば、メソッドは無効な入力パラメーター値を受け取る場合があります。 この場合、メソッドは例外をスローして、このエラー状況を処理するためのロジックを含む **catch** コード ブロックにすぐにコントロールを転送します。 例外がスローされる場合、コントロールを受け取る **Catch** ブロックの場所を必ずしも知る必要はありません。
 
@@ -75,29 +82,29 @@ catch
 
 ## <a name="try-catch-finally-and-retry-statements"></a>try ステートメント、catch ステートメント、最後に retry ステートメント
 
-例外がスローされると、その例外は、もっとも内側の **try** ブロックの **キャッチ** リストによって最初に処理されます。 スローされている例外の種類を処理する **catch** ブロックが見つかった場合、プログラム コントロールはその **キャッチ** ブロックにジャンプします。 **catch** リストに例外を指定するブロックがない場合は、システムは、次の一番内側の **try** ブロックの **catch** リストに例外を渡します。 **catch** ステートメントは、コードに表示されているのと同じ順序で処理されます。
+例外がスローされると、その例外は、もっとも内側の <strong>try</strong> ブロックの <strong>キャッチ</strong> リストによって最初に処理されます。 スローされている例外の種類を処理する <strong>catch</strong> ブロックが見つかった場合、プログラム コントロールはその <strong>キャッチ</strong> ブロックにジャンプします。 <strong>catch</strong> リストに例外を指定するブロックがない場合は、システムは、次の一番内側の <strong>try</strong> ブロックの<strong>catch</strong> リストに例外を渡します。 <strong>catch</strong> ステートメントは、コードに表示されているのと同じ順序で処理されます。 
 
-最初の **catch** ステートメントで **Exception::Error** 列挙値を処理することが一般的です。 1 つの方法は、最後の **catch** ステートメントの例外タイプを未指定のままにすることです。 この場合、前回の **catch** ステートメントは、前のいずれかの **catch** ステートメントで処理されていないすべての例外を処理します。 この戦略は、最も外側の **try** ... **catch** ブロックに適しています。
+最初の <strong>catch</strong> ステートメントで <strong>Exception::Error</strong> 列挙値を処理することが一般的です。 1 つの方法は、最後の <strong>catch</strong> ステートメントの例外タイプを未指定のままにすることです。 この場合、前回の <strong>catch</strong> ステートメントは、前のいずれかの <strong>catch</strong> ステートメントで処理されていないすべての例外を処理します。 この戦略は、最も外側の <strong>try</strong> ... <strong>catch</strong>ブロックに適しています。 
 
-**try**...**catch** ステートメントにオプションの *finally* 句を含めることができます。 **finally** 節のセマンティクスは、C\# と同じです。 **finally** 句のステートメントは、通常または例外を介してコントロールが **try** ブロックを離れるときに実行されます。
+<strong>try</strong>...<strong>catch</strong> ステートメントにオプションの *<strong><em>finally</em></strong>* 句を含めることができます。 <strong>finally</strong> 節のセマンティクスは、C\# と同じです。 <strong>finally</strong> 句のステートメントは、通常または例外を介してコントロールが <strong>try</strong> ブロックを離れるときに実行されます。 
 
-**retry** ステートメントは、**catch** ブロックでのみ書き込むことができます。 **retry** ステートメントは、関連付けられている **try** ブロックの最初のコード行までコントロールをジャンプさせます。 **retry** ステートメントは、例外の原因を **catch** ブロック内のコードにより修正できる場合に使用されます。 **retry** ステートメントは、**try** ブロック内のコードに成功するための別の機会を与えます。 **retry** ステートメントは、プログラム コントロールが **try** ブロックに入ってから情報ログに書き込まれたすべてのメッセージを消去します。
+<strong>retry</strong> ステートメントは、<strong>catch</strong> ブロックでのみ書き込むことができます。 <strong>retry</strong> ステートメントは、関連付けられている <strong>try</strong> ブロックの最初のコード行までコントロールをジャンプさせます。 <strong>retry</strong> ステートメントは、例外の原因を <strong>catch</strong> ブロック内のコードにより修正できる場合に使用されます。 <strong>retry</strong> ステートメントは、<strong>try</strong> ブロック内のコードに成功するための別の機会を与えます。 <strong>retry</strong> ステートメントは、プログラム コントロールが <strong>try</strong> ブロックに入ってから情報ログに書き込まれたすべてのメッセージを消去します。 
 
-> [!NOTE]
+> [!NOTE] 
 > **再試行** ステートメントにより、無限ループが発生しないことを確認する必要があります。 ベスト プラクティスとして、**試行** ブロックは、ループ中であるかを確認するテストができる変数を含める必要があります。
 
 ```xpp
-try
-{
+try 
+{ 
     // Code here.
 }
-catch (Exception::Numeric)
-{
-    info("Caught a Numeric exception.");
+catch (Exception::Numeric) 
+{ 
+    info("Caught a Numeric exception."); 
 }
-catch
-{
-    info("Caught an exception.");
+catch 
+{ 
+    info("Caught an exception."); 
 }
 finally
 {
@@ -109,11 +116,11 @@ finally
 
 **catch** ステートメントが例外を処理しない場合、システムの例外ハンドラーによって処理されます。 システム例外ハンドラーは、情報ログを作成できません。 したがって、ハンドルされない例外を診断することは難しい可能性があります。 効率的な例外処理を提供するために、これらすべてのガイドラインに従うことをお勧めします。
 
-+ 呼び出しスタックの最も外側のフレームで、すべての明細書を含む **try** ブロックがあります。
-+ 最も外側の **catch** リストの最後に非修飾の **catch** ブロックがあります。
-+ **例外** 列挙値を直接スローするのは避けてください。
-+ **Global** クラスの **Global::error**、**Global::warning**、または **Global::info** のいずれかのメソッドから返された列挙値をスローします。 (暗黙的 **Global::** 接頭語を省略することができます)。
-+ 情報ログに表示されていない例外をキャッチするとき、**Global::info** 関数を呼び出してそれを表示します。
+-   呼び出しスタックの最も外側のフレームで、すべての明細書を含む **try** ブロックがあります。
+-   最も外側の **catch** リストの最後に非修飾の **catch** ブロックがあります。
+-   **例外** 列挙値を直接スローするのは避けてください。
+-   **Global** クラスの **Global::error**、**Global::warning**、または **Global::info** のいずれかのメソッドから返された列挙値をスローします。 (暗黙的 **Global::** 接頭語を省略することができます)。
+-   情報ログに表示されていない例外をキャッチするとき、**Global::info** 関数を呼び出してそれを表示します。
 
 **Exception::CLRError**、**Exception::UpdateConflictNotRecovered**、およびシステム カーネルの例外は、情報ログに自動的に表示されていない例外の例です。
 
@@ -168,7 +175,7 @@ static Exception error
 
 戻り値の型は、**Exception::Error** 列挙値です。 **error** メソッドは例外をスローしません。 **throw** ステートメントで使用できる列挙値を提供するだけです。 **throw** ステートメントは例外をスローします。 **エラー** メソッドのパラメーターの説明を次に示します。 最初のパラメーターのみ必要です。
 
-- **SysInfoLogStr** txt は、メッセージ テキストの **str** です。 また、**strFmt("@SYS12345", strThingName)** などのラベルの参照にもなります。
+- <strong>SysInfoLogStr</strong> txt は、メッセージ テキストの <strong>str</strong> です。 また、<strong>strFmt("@SYS12345", strThingName)</strong> などのラベルの参照にもなります。
 - **URL** helpUrl は、アプリケーション エクスプローラーのヘルプ トピックの場所への参照です (**"KernDoc:\\\\\\\\Functions\\\\substr"**)。 \_sysInfoAction が提供された場合、このパラメータは無視されます。
 - **SysInfoAction** は、**SysInfoAction** クラスを拡張するクラスのインスタンスです。 **description** メソッド、**run** メソッド、**pack** メソッド、および **unpack** メソッドは、子クラスに対して推奨されるメソッドのオーバーライドです。
 
@@ -184,34 +191,6 @@ static Exception error
 
 例外がトランザクションの内部でスローされる場合は、トランザクションが自動的にキャンセル (つまり、**ttsAbort** 操作が発生) されます。 この動作は、手動でスローされる例外とシステムがスローする例外の両方に適用されます。 **ttsBegin**-**ttsCommit** トランザクション ブロック内で例外がスローされるとき、そのトランザクション ブロック内の **catch** ステートメントは例外を処理できます。(ただし、**UpdateConflict** または **DuplicateKeyException** 以外の場合に限ります)。 代わりに、トランザクション ブロックの外部にある最も内側の **catch** ステートメントが、最初にテストされる **catch** ステートメントです。
 
-finally 句は、トランザクション スコープ内でも実行されます。
-
-## <a name="exceptions-and-using-statements"></a>例外および `using` ステートメント
-
-`using` ステートメントのセマンティクスは、例外スコープの影響を受けません。
-
-```xpp
-using (var athing = new SomethingDisposable())
-{
-    // Do work.
-}
-```
-
-次と全く同じになります:
-
-```xpp
-var athing = new SomethingDisposable();
-try
-{
-    // Do work.
-}
-finally
-{
-    if (athing != null)
-        athing.Dispose();
-}
-```
-
 ## <a name="examples-of-exception-handling"></a>例外処理の例
 
 ### <a name="showing-exceptions-in-the-infolog"></a>情報ログに例外を表示
@@ -220,14 +199,14 @@ finally
 
 ```xpp
 // This example shows that a direct throw of Exception::Error does not
-// display a message in the Infolog. This is why we recommend the
-// Global::error method.
+// display a message in the Infolog. This is why we recommend the 
+// Global::error method. 
 static void TryCatchThrowError1Job(Args _args)
 {
 /***
     The 'throw' does not directly add a message to the Infolog.
     The exception is caught.
-***/
+***/    
     try
     {
         info("In the 'try' block. (j1)");
@@ -251,8 +230,8 @@ Caught 'Exception::Error'.
 次のコード例では、**error** メソッドを使用して例外情報を Infolog に書き出します。
 
 ```xpp
-// This example shows that the use of the Global::error method
-// is a reliable way to display exceptions in the Infolog.
+// This example shows that the use of the Global::error method 
+// is a reliable way to display exceptions in the Infolog. 
 static void TryCatchGlobalError2Job(Args _args)
 {
     /***
@@ -283,10 +262,10 @@ Caught 'Exception::Error'.
 次のコード例は、**CLRError** 例外を処理します。
 
 ```xpp
-// This example shows that a CLRError exception is not displayed
+// This example shows that a CLRError exception is not displayed 
 // in the Infolog unless you catch the exception and manually
 // call the info method. The use of the CLRInterop::getLastException
-// method is also demonstrated.
+// method is also demonstrated. 
 static void TryCatchCauseCLRError3Job(Args _args)
 {
     /***
@@ -316,12 +295,12 @@ static void TryCatchCauseCLRError3Job(Args _args)
 Message (03:55:10 pm)
 In the 'try' block. (j3)
 Caught 'Exception::CLRError'.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. --->
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> 
     System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
 Parameter name: startIndex
     at System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
     at System.String.Substring(Int32 startIndex)
-    at ClrBridgeImpl.InvokeClrInstanceMethod(ClrBridgeImpl* , ObjectWrapper* objectWrapper, Char* pszMethodName,
+    at ClrBridgeImpl.InvokeClrInstanceMethod(ClrBridgeImpl* , ObjectWrapper* objectWrapper, Char* pszMethodName, 
     Int32 argsLength, ObjectWrapper** arguments, Boolean* argsAreByRef, Boolean* isException)
 **********/
 }
@@ -333,8 +312,8 @@ Parameter name: startIndex
 
 ```xpp
 // This example shows how to use the retry statement. The print
-// statements are included because retry causes earlier Infolog
-// messages to be erased.
+// statements are included because retry causes earlier Infolog 
+// messages to be erased. 
 static void TryCatchRetry4Job(Args _args)
 {
     /***
@@ -390,7 +369,7 @@ This warning will not be caught. [3]
 ```xpp
 // This examples uses three levels of try nesting to illustrate
 // where an exception is caught when the exception is thrown inside
-// a ttsBegin-ttsCommit transaction block.
+// a ttsBegin-ttsCommit transaction block. 
 static void TryCatchTransaction5Job(Args _args)
 {
     /***
@@ -434,15 +413,15 @@ End of job.
 
 ### <a name="using-globalerror-with-a-sysinfoaction-parameter"></a>SysInfoAction パラメーターでの Global::error の使用
 
-コードが例外をスローすると、情報ログにメッセージを書き込むことができます。 **SysInfoAction** クラスを使用すると、これらの情報ログ メッセージをさらに便利にすることができます。
+コードが例外をスローすると、情報ログにメッセージを書き込むことができます。 **SysInfoAction** クラスを使用すると、これらの情報ログ メッセージをさらに便利にすることができます。 
 
-次の例では、**SysInfoAction** パラメーターは **Global::error** メソッドに渡されます。 **error** メソッドは、情報ログにメッセージを書き込みます。 ユーザーが情報ログ メッセージをダブルクリックすると、**SysInfoAction.run** メソッドが実行されます。
+次の例では、**SysInfoAction** パラメーターは **Global::error** メソッドに渡されます。 **error** メソッドは、情報ログにメッセージを書き込みます。 ユーザーが情報ログ メッセージをダブルクリックすると、**SysInfoAction.run** メソッドが実行されます。 
 
-**run** メソッドでは、診断を支援したり、例外が発生した問題を解決したりするコードを書き込めます。 **Global::error** メソッドに渡されるオブジェクトは、**SysInfoAction** を拡張して記述するクラスから構築されます。
+**run** メソッドでは、診断を支援したり、例外が発生した問題を解決したりするコードを書き込めます。 **Global::error** メソッドに渡されるオブジェクトは、**SysInfoAction** を拡張して記述するクラスから構築されます。 
 
-次のコード例は 2 つの部分で示されています。
+次のコード例は 2 つの部分で示されています。 
 
-- 最初の部分は、**Global::error** メソッドを呼び出して、返された値をスローするジョブを示しています。 **SysInfoAction\_PrintWindow\_Demo** クラスのインスタンスが **エラー** メソッドに渡されます。
+- 最初の部分は、**Global::error** メソッドを呼び出して、返された値をスローするジョブを示しています。 **SysInfoAction\_PrintWindow\_Demo** クラスのインスタンスが **エラー** メソッドに渡されます。 
 - 2 番目の部分は、**SysInfoAction\_PrintWindow\_Demo** クラスを示します。
 
 #### <a name="part-1-calling-globalerror"></a>パート 1: Global::error を呼び出す
@@ -502,23 +481,21 @@ public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
 
 次のテーブルは、**例外** 列挙型の値である例外リテラルを示しています。
 
-| リテラルの例外                 | 説明    |
-|-----------------------------------|---------------------------------------------------|
-| 分割                             | ユーザーは Break または Ctrl+C を押しました。 |
-| CLRError                          | CLR 機能の使用中にエラーが発生しました。 |
-| CodeAccessSecurity                | **CodeAccessPermission.demand** メソッドを使用中にエラーが発生しました。 |
-| DDEerror                          | **DDE** システム クラスを使用中にエラーが発生しました。 |
-| デッドロック                          | 複数のトランザクションが相互に待機しているため、データベースのデッドロックが発生しました。 |
+| リテラルの例外                 | 説明                                                                                                                                                         |
+|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 分割                             | ユーザーは Break または Ctrl+C を押しました。                                                                                                                                   |
+| CLRError                          | CLR 機能の使用中にエラーが発生しました。                                                                                                       |
+| CodeAccessSecurity                | **CodeAccessPermission.demand** メソッドを使用中にエラーが発生しました。                                                                                  |
+| DDEerror                          | **DDE** システム クラスを使用中にエラーが発生しました。                                                                                                    |
+| デッドロック                          | 複数のトランザクションが相互に待機しているため、データベースのデッドロックが発生しました。                                                                              |
 | DuplicateKeyException             | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 トランザクションは再試行できます (**catch** ブロックで **retry** ステートメントを使用します)。 |
 | DuplicateKeyExceptionNotRecovered | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
-| エラー                             | 致命的なエラーが発生しました。 トランザクションは停止されました。 |
-| 情報                              | この例外リテラルは、ユーザーのメッセージを保持します。 **情報** 例外をスローしないでください。 |
-| 内部                          | 開発システムで内部エラーが発生しました。 |
-| 数値                           | **str2int**、**str2int64**、または **str2num** 機能を使用中にエラーが発生しました。 |
-| 順番                          | |
+| エラー                             | 致命的なエラーが発生しました。 トランザクションは停止されました。                                                                                                           |
+| 情報                              | この例外リテラルは、ユーザーのメッセージを保持します。 **情報** 例外をスローしないでください。                                                                             |
+| 内部                          | 開発システムで内部エラーが発生しました。                                                                                                               |
+| 数値                           | **str2int**、**str2int64**、または **str2num** 機能を使用中にエラーが発生しました。                                                                     |
+| 順番                          |                                                                                                                                                                     |
 | UpdateConflict                    | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 トランザクションは再試行できます (**catch** ブロックで **retry** ステートメントを使用します)。 |
 | UpdateConflictNotRecovered        | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
-| 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告** 例外をスローしないでください。 |
+| 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告** 例外をスローしないでください。                         |
 | [X++ の SQL 接続エラー例外](sql-connection-error.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

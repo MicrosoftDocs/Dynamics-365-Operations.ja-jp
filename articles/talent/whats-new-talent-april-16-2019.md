@@ -94,6 +94,3 @@ ms.locfileid: "4527184"
 Finance and Operations の Platform update 25 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

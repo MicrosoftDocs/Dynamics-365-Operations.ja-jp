@@ -2,36 +2,42 @@
 title: カテゴリ ランディング ページの拡充
 description: このトピックでは、Dynamics 365 Commerce のカテゴリ ページの拡充について説明します。
 author: v-chgri
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5bb28c3b5fbb1133d32219b9c47dd1477ae2ac982ee035321dafd77c53dc910b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771010"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413753"
 ---
 # <a name="enrich-a-category-landing-page"></a>カテゴリ ランディング ページの拡充
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Dynamics 365 Commerce のカテゴリ ページの拡充について説明します。
 
+## <a name="overview"></a>概要
+
 コマースは、カテゴリ データを表示するときに使用される既定のカテゴリのランディング ページを提供します。 既定のカテゴリ ページには、絞り込み条件、分類された製品の配置、並べ替えオプション、選択の概要、ページネーション コントロールなどの必須要素が含まれています。 
 
 ただし、既定のカテゴリ ページを使用する代わりに、コンテンツがより多く、より具体的な要素を持つ「拡充された」カテゴリのランディング ページを使用することもできます。 一般的な拡充には、カテゴリ固有のマーケティング コンテンツをカテゴリ ページに追加することが含まれます。 このコンテンツには、クロスセルを目的としたカテゴリ間の製品配置、編集リスト、画像、ビデオ、およびその他のテキストが含まれる場合があります。 既定のカテゴリ ページを変更するか、特定のカテゴリに対して別のカテゴリ ページを定義することができます。
 
-![拡充されたカテゴリ ランディング ページ。](./media/CategoryLandingPages.png)
+![拡充されたカテゴリ ランディング ページ](./media/CategoryLandingPages.png)
 
 Commerce のサイト ビルダーの **製品** ページには、サイトに割り当てられているチャネルのカテゴリの一覧が含まれています。 **拡充** ステータスがカテゴリ ページに選択されている場合は、そのカテゴリ ページは拡充されています。 それ以外の場合、カテゴリには既定のカテゴリ ページとコンテンツが使用されます。 カテゴリ名を選択して、カテゴリの拡充カテゴリ ページと非拡充カテゴリ ページの両方をプレビューできます。
 
@@ -58,9 +64,4 @@ Commerce のサイト ビルダーの **製品** ページには、サイトに�
 
 [製品ページの拡充](enrich-product-page.md)
 
-[ページ コンテンツのアクセシビリティの検証](verify-accessibility.md)
-
-[URL のパラメーターに基いて動的な電子商取引ページを作成する](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)

@@ -2,9 +2,11 @@
 title: Dynamics 365 for Operations プラットフォーム更新プログラム 5 (2017 年 3 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 5 の新機能または変更された機能について説明します。 このバージョンは 2017 年 3 月にリリースされ、ビルド番号は 7.0.4475.16165 です。
 author: tonyafehr
+manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.dyn365.ops.version: Platform update 5
 ms.search.validFrom: 2017-03-31
-ms.openlocfilehash: 1019ecf9fb37e00b803466c37514a097e8337b81b98e87ff1211c4d1aa3e5840
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 85603efadc49c870141d627155c73ad5625cc3e6
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739445"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797835"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-5-march-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 5 (2017 年 3 月) の新機能および変更された機能
 
@@ -42,6 +44,3 @@ ms.locfileid: "6739445"
 | 機能 | これが重要である理由 |
 |---------|-----------------------|
 | パーソナル化の拡張された管理機能 | パーソナル化管理者は、現在、ユーザー グループのフォームのパーソナル化を適用または削除できます。 以前は、個人用設定の管理は一度に 1 人のユーザーのみ可能でした。 詳細については、[ユーザー エクスペリエンスのパーソナライズ](personalize-user-experience.md) を参照してください。 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

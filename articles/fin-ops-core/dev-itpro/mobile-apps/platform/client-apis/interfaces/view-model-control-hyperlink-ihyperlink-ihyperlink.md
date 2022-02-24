@@ -1,18 +1,25 @@
 ---
 title: HyperLink タイプ
 description: Hyperlink コントロール タイプ。 ハイパーリンク コントロールは、ハイパーリンクを示すコントロールです。 ほとんどの場合、Pagelinks も使用できます。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 1c45412bae51a95448f6fbd52763c142c8b332cf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: cbf7739f1ad1509fa5deaf441b18c2687ba8b0fd
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781869"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683188"
 ---
 # <a name="hyperlink-type"></a>HyperLink タイプ
 
@@ -267,6 +274,3 @@ onDataChanged: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 > [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged) から継承
 
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

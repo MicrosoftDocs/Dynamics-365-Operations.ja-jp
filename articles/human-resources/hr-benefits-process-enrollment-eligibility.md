@@ -1,35 +1,33 @@
 ---
-title: 登録適格性の処理
-description: このトピックでは、登録適格性のプロセスを実行する方法について説明します。
-author: twheeloc
-ms.date: 08/23/2021
+title: 登録の適格性を処理
+description: この記事では、登録資格のプロセスを実行する方法について説明します。
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8997cf24bf24097e46a05acffef8b3839056c57
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: dfb7f13dce48f33c111af491918702763f7e3b8a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067632"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419325"
 ---
-# <a name="process-enrollment-eligibility"></a>登録適格性の処理
+# <a name="process-enrollment-eligibility"></a>登録の適格性を処理
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-このトピックでは、登録適格性のプロセスを実行する方法について説明します。
+この記事では、登録資格のプロセスを実行する方法について説明します。
 
 1. **給付金管理** ワークスペースにて、**処理** の下の **登録適格性の処理** を選択します。
 
@@ -56,11 +54,11 @@ ms.locfileid: "8067632"
 
 ## <a name="view-process-results"></a>プロセス結果の表示
 
-このトピックでは、適格性のプロセス結果を表示する方法について説明します。
+この記事では、適格性処理の結果を表示する方法について説明します。
 
 1.  **福利厚生の管理** ワークスペースの **処理中** で **プロセス結果** を選択します。
 
-2.  **プロセス結果** ページで、次のフィールドが指定されています:
+2.  **プロセス結果** フォームで、次のフィールドが指定されています:
 
    | フィールド | 説明 |
    | --- | --- |
@@ -74,6 +72,3 @@ ms.locfileid: "8067632"
    | **結果状態** | これは、適格または不適格です。 従業員が適格性ルールの基準を満たしていない場合、従業員が支払頻度や固定報酬などの必要な情報を欠落している場合、または、従業員の登録をさまたげる福利厚生計画の情報が欠落している場合、結果の状態は不適格になります。 |
    | **結果メッセージ** | 従業員が福利厚生計画に不適格である理由、または適格性ルールに合格したかどうかを示します。 |
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

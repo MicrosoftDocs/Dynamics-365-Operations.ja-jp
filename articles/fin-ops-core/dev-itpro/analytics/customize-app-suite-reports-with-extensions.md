@@ -1,25 +1,27 @@
 ---
 title: 拡張機能を使用してアプリ スイート レポートをカスタマイズする
 description: このトピックでは、App スイート レポートをカスタマイズするための一連のシナリオについて説明します。
-author: RichdiMSFT
+author: TJVass
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.custom: 266614
 ms.assetid: acf73781-08bb-4f59-9956-8f9f295ddd02
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: aeda39787a019c18335b79f298afce009f75f9687720c91de0a89b71ba26b825
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aadba4f401c8af8878c241a42b2f10e3d9ffbea
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747655"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679740"
 ---
 # <a name="customize-app-suite-reports-by-using-extensions"></a>拡張機能を使用してアプリ スイート レポートをカスタマイズする
 
@@ -45,6 +47,3 @@ Finance and Operations は、カスタム ソリューションをサポート�
 
 - [レポート メニュー項目を拡張してユーザー ナビゲーション に リダイレクトする](extend-report-menu-items.md)– アプリケーションのメニュー項目をカスタマイズして、カスタム レポート デザインへの参照をリダイレクトします。
 - [ビジネス ドキュメントのユーザー定義のデザインを作成する](custom-designs-business-docs.md) – 委任ハンドラーを使用すると、既存の印刷の管理ドキュメント インスタンスに ユーザー定義 レポート デザインを追加できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

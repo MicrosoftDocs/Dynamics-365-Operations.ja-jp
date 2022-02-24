@@ -1,31 +1,37 @@
 ---
-title: 作成ページの概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce の作成ページの概要を示します。
+title: ページ作成の概要
+description: このトピックでは、Microsoft Dynamics 365 Commerce でのページ作成の概要を提供します。
 author: brendans
+manager: annbe
 ms.date: 10/31/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 95908c3a8b6c5231f2f5b283fa05f07c4e91b5d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984624"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413732"
 ---
-# <a name="authoring-page-overview"></a>作成ページの概要
+# <a name="authoring-page-overview"></a>ページ作成の概要
 
   
  [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の作成ページの概要を示します。
+このトピックでは、Microsoft Dynamics 365 Commerce でのページ作成の概要を提供します。
+
+## <a name="overview"></a>概要
 
 さまざまなビジネスのニーズをサポートする Web サイトを作成することができます。 これらは、業務全体を代表して、ビジネスの単一チャネルを提供したり、特定の対象者または対象者のセグメントをターゲットにすることができます。 たとえば、衣料品メーカーは、所有するすべてのブランドを紹介する Web サイトを持っている場合があります。 同じ衣料品メーカーは、これらのブランドごとに個別の Web サイトを持ち、高級ファッション、アウトドアファッション、子供用ファッションを特徴とする一連の Web サイトを持っている場合があります。
 
@@ -39,7 +45,7 @@ Dynamics 365 Commerce は、複数の Web サイトの作成と管理をサポ�
 
 次の図は、作成ページを示しています。
 
-![Dynamics 365 Commerce 作成ページ。](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commerce 作成ページ](../commerce/media/authoring_tools_01.png)
 
 ## <a name="use-the-home-button-to-select-a-tool"></a>ホーム ボタンを使用してツールを選択する
 
@@ -116,6 +122,3 @@ Dynamics 365 Commerce は、複数の Web サイトの作成と管理をサポ�
 [サイトにおける検索エンジン最適化 (SEO) の考慮事項](search-engine-optimization-considerations.md)
 
 [コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

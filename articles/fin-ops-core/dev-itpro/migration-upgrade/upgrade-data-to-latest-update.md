@@ -2,9 +2,11 @@
 title: 開発環境またはデモ環境でデータをアップグレードする
 description: このトピックでは、Finance and Operations アプリケーション リリースのアップグレードについて説明します。
 author: laneswenka
-ms.date: 11/01/2021
+manager: AnnBe
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -12,19 +14,16 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: bce9bec9c7b33f19896c4e63fb8625f61e2cd0c9
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: c2212bd6bc78e44fa44f7eaf947525309c58e8e7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778145"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681622"
 ---
 # <a name="upgrade-data-in-development-or-demo-environments"></a>開発環境またはデモ環境でデータをアップグレードする
 
 [!include [banner](../includes/banner.md)]
-
-> [!IMPORTANT]
-> ここで説明されているプロセスは、Finance and Operations アプリの古いバージョンと最新バージョン間のデータ更新では非推奨となりました。 Dynamic AX 2012 アップグレードの詳細については、[AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md)を参照してください。
 
 このトピックでは、古いデータベースを最新の Finance and Operations のアプリケーション リリースにアップグレードする方法について説明します。
 
@@ -53,6 +52,12 @@ ms.locfileid: "7778145"
 
      Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
      ```
+
+1. Microsoft Dynamics AX 2012 からアップグレードする場合は、データ アップグレードを実行する前に、移行先の環境に次のアプリケーション X++ 修正プログラムをインストールします:
+
+    - KB 4033183 - Dynamics AX 2012 R2 または Dynamics AX 2012 R3 Pre-CU8 non-retail アップグレードは、dbo.RETAILTILLLAYOUTZONE のオブジェクトが存在しないため失敗しました。
+    - KB 4040692 - Microsoft Dynamics 365 for Operations 7.2 への Dynamics AX 2012 R3 のアップグレードは、SalesLineIdx に RetailSalesLine の重複インデックスが存在するため失敗しました。
+    - KB 4035490 - GeneralJournalAccountEntry MainAccount フィールドのアップグレード スクリプトに関するパフォーマンスの問題。
 
 1. Dynamics 365 Finance バージョン 10.0.9 または 10.0.10 にアップグレードする場合、データのアップグレードを実行する前に、品質更新プログラムを移行先の環境にインストールします。
 1. 標準デモ データのデータベースとして開始されるデータベースをアップグレードする場合も、次のスクリプトも実行する必要があります。 このステップは、デモ データにカーネル X++ クラスの不適切なレコードが含まれているため必要です。
@@ -87,7 +92,7 @@ ms.locfileid: "7778145"
     > [!NOTE]
     > 以前のリリースで実行されている実稼働データベースのデータのアップグレードを検査する場合: 実稼働環境からデモまたは開発環境にデータベースをコピーするには [標準ユーザー受け入れテスト (UAT) データベースのコピーのエクスポート](../database/dbmovement-scenario-exportuat.md) の手順に従ってください。   
     > 
-    > Azure 仮想マシン (VM) 間でアップロード/ダウンロードの速度を向上するには、AzCopy を使用することをお勧めします。 AzCopy をダウンロードする方法、およびそれを使用して Azure blob ストアにコピーまたは Azure blob ストアからコピーする方法については、[AzCopy Command-Line Utility でデータを転送する](/azure/storage/common/storage-use-azcopy-v10) を参照してください。
+    > Azure 仮想マシン (VM) 間でアップロード/ダウンロードの速度を向上するには、AzCopy を使用することをお勧めします。 AzCopy をダウンロードする方法、およびそれを使用して Azure blob ストアにコピーまたは Azure blob ストアからコピーする方法については、[AzCopy Command-Line Utility でデータを転送する](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/) を参照してください。
 
 3. 接尾語 **\_orig** を追加することによって、元のデータベースの名前を変更します。 元のデータベースと同じ名前になるように、新しく復元したデータベースの名前を変更します。 この方法で、2 つのデータベースが場所を切り替えます。
 
@@ -399,7 +404,4 @@ KB 番号 3170386 がインストールされていない場合、次のエラ�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Finance and Operationsで最新の更新プログラムに移行するためのプロセス](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Finance and Operationsで最新の更新プログラムに移行するためのプロセス](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)

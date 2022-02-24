@@ -2,24 +2,26 @@
 title: テスト データ メソッド
 description: このトピックでは、最も一般的な種類のテスト データ メソッドについて説明します。
 author: MichaelFruergaardPontoppidan
+manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 5c133c1538424bb9d89d089f2c5060157a8ae916
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 03044116687d1d5146d49a5cb2197850e272a5cc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781943"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680434"
 ---
 # <a name="test-data-methods"></a>テスト データ メソッド
 
@@ -253,6 +255,3 @@ salesOrder = data.sales().salesOrders().find(salesOrderId);
 ### <a name="automatic-prerequisite-setup"></a>自動前提条件設定
 
 エンティティがクエリ サポートを持っている場合、実装は既に前提条件サポートを設定しているクエリを使う必要があります。 それ以外の場合は、レコード バッファを検索してエンティティの新しいインスタンスを初期化した後で、エンティティの事業運営イベントに `ensure` メソッドを購読する必要があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

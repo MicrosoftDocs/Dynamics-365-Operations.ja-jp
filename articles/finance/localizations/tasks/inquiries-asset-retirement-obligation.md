@@ -2,23 +2,26 @@
 title: 資産除去責務に関連するトランザクションの照会
 description: 日本では、資産除去責務 (ARO) のトランザクションと金額は、基になる固定資産とは別にレポートする必要があります。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTrans, AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationExplorer_JP
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c085e55328a8ad5fc8657fb3e2643dea63442bf50ce6dd00fad94caf46ec6a49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68e54c69b0411ba88e808a08dcd2e2e1a194ada8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754865"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408175"
 ---
 # <a name="inquiries-of-the-asset-retirement-obligation-related-transactions"></a>資産除去責務に関連するトランザクションの照会
 
@@ -53,6 +56,3 @@ ms.locfileid: "6754865"
 5. [転記金額] セクションを展開または折りたたみます。
 6. [差異] セクションを展開または折りたたみます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

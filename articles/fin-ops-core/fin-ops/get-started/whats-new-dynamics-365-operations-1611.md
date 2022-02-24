@@ -2,9 +2,11 @@
 title: Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Operations バージョン 1611 の新機能または変更された機能について説明します。
 author: sericks007
+manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 0b5856ef83ff1e101896eefbbe022e70ad954219
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752811"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797198"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) の新機能および変更された機能
 
@@ -496,7 +498,7 @@ ms.locfileid: "7752811"
 <li>イタリアの ISO20022 口座引落支払形式</li>
 <li>イタリアの RIBA 取立依頼形式</li>
 <li>イタリア国内の税トランザクション レポート</li>
-<li>イタリアのブロックリスト レポート</li>
+<li>イタリアのブラックリスト レポート</li>
 <li>イタリアの Modello770 レポート</li>
 <li>イタリアの年次税通信報告</li>
 </ul>
@@ -943,6 +945,3 @@ ms.locfileid: "7752811"
 ## <a name="additional-resources"></a>追加リソース
 
 [Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

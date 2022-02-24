@@ -2,24 +2,26 @@
 title: コード署名証明書を使用して MPOS に署名する
 description: このトピックでは、コード署名証明書を使用して MPOS に署名する方法について説明します。
 author: mugunthanm
-ms.date: 10/21/2021
+manager: AnnBe
+ms.date: 12/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0bf4454029029438bf51d76e0edc6d64399083ae
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e406b0a096181c313a1f0670d29f409c2c3e67c9
+ms.sourcegitcommit: 0653a89b9f675df52882103934a6dd6b0557cc5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782980"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "4842902"
 ---
 # <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>コード署名証明書を使用した MPOS appx の署名
 
@@ -38,56 +40,33 @@ Modern POS (MPOS) をインストールするには、信頼されたプロバ�
 
 ## <a name="use-a-secure-file-task-for-universal-windows-platform-app-signing"></a>Universal Windows Platform アプリの署名にセキュリティで保護されたファイル タスクを使用する
 
-> [!NOTE]
-> Azure Key Vault を使用して証明書を格納し、Azure 署名ツールを使用して Modern POS .appx ファイルおよびセルフサービス インストーラーに署名することもできます。 サンプルのパイプライン スクリプトと追加情報については、[Azure DevOps でビルド パイプラインを設定して Retail セルフサービス パッケージを生成する](build-pipeline.md#set-up-a-build-pipeline-in-azure-devops-to-generate-retail-self-service-packages)を参照してください。
+セキュリティで保護されたファイル タスクの使用は、Universal Windows Platform (UWP) アプリの署名に推奨される方法です。 パッケージ署名の詳細については、[パッケージ署名の構成](https://docs.microsoft.com/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing)を参照してください。 このプロセスを次の図に示します。
 
-セキュリティで保護されたファイル タスクの使用は、Universal Windows Platform (UWP) アプリの署名に推奨される方法です。 パッケージ署名の詳細については、[パッケージ署名の構成](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing)を参照してください。 このプロセスを次の図に示します。
-
-![MPOS アプリ署名フロー。](media/POSSigningFlow.png)
+![MPOS アプリ署名フロー](media/POSSigningFlow.png)
 
 > [!NOTE]
 > 現在 OOB パッケージでは、appx ファイルの署名のみがサポートされており、MPOIS、RSSU、HWSなどのセルフ サービスの他のインストーラーは、このプロセスによって署名されません。 SignTool またはその他の署名ツールを使用して、手動で署名する必要があります。 appx ファイルの署名に使用する証明書は、Modern POS がインストールされているマシンにインストールする必要があります。
 
-## <a name="steps-to-configure-the-certificate-for-signing-in-azure-pipelines"></a>Azure Pipelines にサインインするための証明書を構成する手順
+## <a name="steps-to-configure-the-certificate-for-signing"></a>署名のために証明書を構成する手順
 
 ### <a name="certificate-in-the-file-systemsecure-location"></a>ファイル システム / 安全な場所の証明書
 
-[ダウンロードファイル タスク](/visualstudio/msbuild/downloadfile-task)をダウンロードして、ビルド プロセスの最初の手順として追加します。 セキュリティで保護されたファイルのタスクを使用する利点は、ビルド パイプラインが成功したか、失敗したか、またはキャンセルされたかに関係なく、ビルド時にファイルが暗号化されてディスクに格納されることです。 このファイルは、ビルド プロセスの完了後にダウンロード場所から削除されます。
+[ダウンロードファイル タスク](https://docs.microsoft.com/visualstudio/msbuild/downloadfile-task)をダウンロードして、ビルド プロセスの最初の手順として追加します。 セキュリティで保護されたファイルのタスクを使用する利点は、ビルド パイプラインが成功したか、失敗したか、またはキャンセルされたかに関係なく、ビルド時にファイルが暗号化されてディスクに格納されることです。 このファイルは、ビルド プロセスの完了後にダウンロード場所から削除されます。
 
-1. 最初のステップとして、Azure ビルド パイプラインでセキュア ファイル タスクをダウンロードして追加します。 セキュア ファイル タスクは、[DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile) からダウンロードできます。
+1. Azure DevOps ビルド パイプラインの最初のステップとして、セキュア ファイル タスクをダウンロードして追加します。 セキュア ファイル タスクは、[DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile) からダウンロードできます。
 2. 次の図に示すように、証明書をセキュア ファイル タスクにアップロードし、出力変数で参照名を設定します。
     > [!div class="mx-imgBorder"]
-    > ![セキュア ファイル タスク。](media/SecureFile.png)
-3. **変数** タブの下の **新しい変数** を選択して、Azure Pipelines に新しい変数を作成します。
-4. 値フィールドに変数の名前を入力します (例: **MySigningCert**)。
+    > ![セキュア ファイル タスク](media/SecureFile.png)
+3. **変数** タブの下の **新しい変数** をクリックして、Azure DevOps パイプラインに新しい変数を作成します。
+4. 値フィールド **$(MySigningCert.secureFilePath)** に、**CertFile** などの変数の名前を指定します。
 5. 変数を保存します。
-6. **RetailSDK\\BuildTools** から **Customization.settings** ファイルを開き、パイプラインで作成された変数名で **ModernPOSPackageCertificateKeyFile** を更新します (手順 3)。 例:
+6. **RetailSDK\\BuildTools** から **Customization.settings** ファイルを開き、**ModernPOSPackageCertificateKeyFile** を Azure DevOps パイプラインで作成された変数で更新します (手順 3)。 例:
 
     ```Xml
-    <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
-    ```
-    証明書がパスワードで保護されていない場合は、この手順を実行する必要があります。 証明書がパスワードで保護されている場合は、次の手順に進みます。
- 
-7. パイプラインの **変数** タブで、セキュリティで保護された新しいテキスト変数を追加します。 名前を **MySigningCert.secret** に設定し、証明書のパスワードの値を設定します。 変数を保護するには、ロック アイコンを選択します。
-8. **Powershell スクリプト** タスクをパイプラインに追加します (セキュリティで保護されたファイルのダウンロード後、およびビルド ステップの前)。 **表示** 名を指定し、タイプを **インライン** として設定します。 以下をコピーしてスクリプト セクションに貼り付けます。
-
-    ```powershell
-    Write-Host "Start adding the PFX file to the certificate store."
-    $pfxpath = '$(MySigningCert.secureFilePath)'
-    $secureString = ConvertTo-SecureString "$(MySigningCert.secret)" -AsPlainText -Force
-    Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
+    <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(CertFile)</ModernPOSPackageCertificateKeyFile>
     ```
 
-9. **RetailSDK\\BuildTools** から **Customization.settings** ファイルを開き、**ModernPOSPackageCertificateThumbprint** を証明書の拇印の値で更新します。
-
-    ```Xml
-       <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
-    ```
- 
-証明書の拇印を取得する方法の詳細については、[証明書の印刷を取得する](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint)を参照してください。 
-
- 
-## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app-manually-using-msbuild-in-sdk"></a>SDK の msbuild を使用して手動で MPOS アプリに署名する証明書をダウンロードまたは生成する
+## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app"></a>MPOS アプリに署名するために証明書をダウンロードまたは生成する
 
 ダウンロードまたは生成された証明書を使用して MPOS アプリに署名する場合、**BuildTools\\Customization.settings** ファイルの **ModernPOSPackageCertificateKeyFile** ノードを更新して、pfx ファイルの場所 (**$(SdkReferencesPath)\\appxsignkey.pfx**) を指すようにします。 例:
 
@@ -144,6 +123,3 @@ Modern POS (MPOS) をインストールするには、信頼されたプロバ�
 - 新しい信頼される証明書 (または新しい自己署名の証明書) を使用する場合、すべてのデバイスに新しい証明書をインストールする必要があります。 その後、新しく作成された Modern POS のパッケージ (インストーラー) を使用して、既存のアプリケーションをアンインストールし、新しい Modern POS パッケージを再インストールする必要があります。 すべてのデバイスで Modern POS のデバイスの有効化を実行する必要があります。
 
 - 更新された Contoso 証明書を使用する場合、すべてのデバイスに新しい証明書をインストールして、Modern POS パッケージ (インストーラー) をインストールする必要があります。 アンインストールする必要はありませんが、デバイスに再インストールする必要があります。 Modern POS のデバイスの有効化は必須ではないことに注意してください。 このオプションは一時的なソリューションです。 新しい信頼される証明書を取得する前にこのオプションを使用するだけで最有効化を回避し、問題を解決することができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

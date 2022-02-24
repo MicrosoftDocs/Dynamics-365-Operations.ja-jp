@@ -2,24 +2,26 @@
 title: Dynamics 365 for Finance and Operations バージョン 8.1 の拡張機能の変更
 description: このトピックは、Dynamics 365 for Finance and Operations バージョン 8.1 に実装された拡張機能を一覧表示します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: App 8.1
-ms.openlocfilehash: 263d8cdbd9ef06428f75ec5e0d60ebd9c5660356
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2cf21a7cca2cf1436391a1b508099421942f5b9d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781893"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409338"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-81"></a>Dynamics 365 for Finance and Operations バージョン 8.1 の拡張機能の変更
 
@@ -595,6 +597,3 @@ ms.locfileid: "7781893"
 - whsWorkExecuteDisplayReprintLabel を ProcessGuide フレームワークにリファクター
 - 小売チャネル: サポート BankDropOperationRequest
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

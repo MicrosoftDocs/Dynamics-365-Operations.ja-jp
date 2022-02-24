@@ -2,23 +2,25 @@
 title: 結果とメッセージを記録する
 description: このトピックでは、プロセスの自動化から結果およびメッセージを記録する方法について説明します。
 author: RyanCCarlson2
+manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 75bd876e8025bdda19d334c56d458c0564a9e6f1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: cc5aae5a4724380928def8bdc11460db06521a02
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781142"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680410"
 ---
 # <a name="log-results-and-messages"></a>結果とメッセージを記録する
 
@@ -35,11 +37,11 @@ ms.locfileid: "7781142"
 
 次の図は、結果ビューを示しています。
 
-![結果の状態、時間、およびメッセージ。](media/execution-results.png)
+![結果の状態、時間、およびメッセージ](media/execution-results.png)
 
 次の図は、メッセージ ビューを示しています。 このビューを開くには、結果ビューで **ログ** 列の **ログの表示** を選択します。
 
-![個々のメッセージの例外タイプとメッセージ。](media/execution-message-log.png)
+![個々のメッセージの例外タイプとメッセージ](media/execution-message-log.png)
 
 ## <a name="processexecutionsourcelink-table"></a>ProcessExecutionSourceLink テーブル
 
@@ -89,6 +91,3 @@ ms.locfileid: "7781142"
 |---|---|
 | `public static ProcessExecutionMessageLogItem newFromProcessExecutionSourceLinkAndMessage(RefRecId _processExecutionSourceLinkRecId, Exception _exception, ProcessExecutionMessage _message)` | |
 | `public static ProcessExecutionMessageLogItem newFromProcessExecutionSourceLinkAndLabel(RefRecId _processExecutionSourceLinkRecId, Exception _exception, LabelId _labelId, container _labelParameters)` | |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

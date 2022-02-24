@@ -1,23 +1,26 @@
 ---
 title: 欧州の概要
 description: このトピックは、ヨーロッパの Microsoft Dynamics 365 Finance のドキュメント リソースへのリンクを提供します。
-author: kfend
-ms.date: 01/15/2022
-ms.topic: overview
+author: ShylaThompson
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations
 ms.search.region: global
-ms.author: kfend
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982097"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512214"
 ---
 # <a name="europe-overview"></a>欧州の概要
 
@@ -38,7 +41,6 @@ ms.locfileid: "7982097"
 - [EU 販売リストのレポート](emea-eu-sales-list.md)
 - [為替レート調整](emea-exchange-rate-adjustments.md)
 - [支払方法のファイル形式](emea-select-file-formats-for-the-method-of-payments.md)
-- [Brexit が与える影響に関する財務 (グローバリゼーション) ガイダンス](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [会計サービス (ESR) の統合](emea-fiscal-service-integration.md)
 - [エストニアおよびリトアニアの固定資産の処分](emea-credit-note-reverse-fixed-asset-sale.md)
 - [内部在庫移動の移動文書の生成](tasks/transfer-document-internal-inventory-transfer.md)
@@ -63,7 +65,6 @@ ms.locfileid: "7982097"
 - [請求処理](emea-invoice-processing.md)
 - [EU 登録証明書の発行](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [サポートされる電子請求用の標準](emea-oioubl-standards-electronic-invoicing.md)
-- [電子請求書の強制生成](emea-eur-forced-einvoices.md)
 - [請求書原本照会 (東ヨーロッパ)](tasks/ee-00004-original-invoice-reference.md)
 - [VAT ID を使用する関係者の検索](tasks/eur-00015-party-search-vat-id.md)
 - [支払参照生成ツール](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -93,13 +94,8 @@ ms.locfileid: "7982097"
   - [VAT 報告書の作成と送信](tasks/create-submit-vat-report.md)
   - [東ヨーロッパの決済のトランザクションの表示](emea-transactions-settlement-form.md)
   - [税ポイントの日付 (VAT レジスターの日付)](emea-tax-point-date.md)
-  - [仕入先 VAT 登録日](emea-date-vendor-VAT-register.md)
-- [財務理由機能の拡張機能](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [電子申告の概要](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
-- [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [電子申告の概要](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)

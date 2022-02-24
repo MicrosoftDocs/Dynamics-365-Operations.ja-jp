@@ -2,23 +2,25 @@
 title: ストア内トポロジを選択します。
 description: このトピックでは、様々な Dynamics 365 Commerce の実店舗構成図を提供します。
 author: rassadi
+manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: Dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 44351
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 310396e1054b60df389ed84eda294a13c1083367
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8493b400b411e2365b757f3faad13086278bd3a2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782112"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681494"
 ---
 # <a name="select-an-in-store-topology"></a>ストア内トポロジを選択します。
 
@@ -26,7 +28,7 @@ ms.locfileid: "7782112"
 
 このトピックでは、様々な Dynamics 365 Commerce の実店舗構成図の概要を提供します。 
 
-<a href="/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![適切な店舗トポロジを選択します。](media/CHANNEL/INSTORE/Topology.jpg)</a>
+<a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![右側の店舗の構成図を選択する](media/CHANNEL/INSTORE/Topology.jpg)</a>
 
 ## <a name="supported-capabilities-when-connectivity-is-lost"></a>接続が失われたときにサポートしている機能
 | 操作 | Commerce Scale Unit への接続がされていないとき<br>MPOS オフライン モード | 本部への接続がされていないとき<br>(Commerce Scale Unit (自己ホスト)) |
@@ -35,10 +37,10 @@ ms.locfileid: "7782112"
 | クロス ターミナル トランザクション (ビュー、中断、再開など)  | | ✔ |
 
 ## <a name="supported-operations-when-connectivity-is-lost"></a>接続が失われたときにサポートしている操作
-POSが本部との接続を失った場合にサポートしている宗さんの一覧については、 [オンラインおよびオフラインでの店頭(POS)操作](/dynamics365/unified-operations/retail/pos-operations) 参照してください。。
+POSが本部との接続を失った場合にサポートしている宗さんの一覧については、 [オンラインおよびオフラインでの店頭(POS)操作](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations) 参照してください。。
 
 ## <a name="supported-deployment-and-maintenance-capabilities"></a>サポートされている導入及びメンテナンスの機能
-一括配置は Modern POS ではサポートされますが、Commerce Scale Unit ではサポートされません。 詳細については、 [セルフサービス コンポーネントの一括配置](/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment) を参照してください。
+一括配置は Modern POS ではサポートされますが、Commerce Scale Unit ではサポートされません。 詳細については、 [セルフサービス コンポーネントの一括配置](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment) を参照してください。
 
 ## <a name="deployed-components"></a>配置可能なコンポーネント
 次に示すコンポーネントは、すべて1つのインストーラーを使って配置されます。 これらをそれぞれ個別でインストールする必要はありません。
@@ -61,16 +63,13 @@ POSが本部との接続を失った場合にサポートしている宗さん�
 ## <a name="additional-resources"></a>追加リソース
 ### <a name="mpos-offline-mode"></a>MPOS オフライン モード
 MPOS オフラインモードの詳細については、以下を参照してください。
-- [オフライン販売時点管理 (POS) の機能](/dynamics365/unified-operations/retail/pos-offline-functionality)
-- [オンラインおよびオフラインでの販売時点管理 (POS) の操作](/dynamics365/unified-operations/retail/pos-operations)
-- [セルフサービス コンポーネントの一括配置](/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)
+- [オフライン販売時点管理 (POS) の機能](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality)
+- [オンラインおよびオフラインでの販売時点管理 (POS) の操作](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations)
+- [セルフサービス コンポーネントの一括配置](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)
 
 ### <a name="commerce-scale-unit-self-hosted"></a>Commerce Scale Unit (自己ホスト)
 Commerce Scale Unit (自己ホスト) は、実店舗などお客様の環境に配置することが可能な、バックオフィスや本部 (HQ) への通信が切断された場合でも継続して業務を行うことをサポートするコンポーネントです。 
 
 詳細については、以下を参照してください。
-- [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
-- [Commerce Scale Unit (自己ホスト)](/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
+- [Commerce Scale Unit (自己ホスト)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)

@@ -2,24 +2,27 @@
 title: チェックアウト モジュール
 description: このトピックでは、ページにチェックアウト モジュールを追加し、必要なプロパティを設定する方法について説明します。
 author: anupamar-ms
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715509"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4413911"
 ---
 # <a name="checkout-module"></a>チェックアウト モジュール
 
@@ -27,13 +30,15 @@ ms.locfileid: "6715509"
 
 このトピックでは、ページにチェックアウト モジュールを追加し、必要なプロパティを設定する方法について説明します。
 
+## <a name="overview"></a>概要
+
 チェックアウト モジュールは、注文を作成するために必要なすべてのモジュールをホストする特別なコンテナーです。 これは、顧客が購買を行うのに必要なすべての情報を入力するために使用する、ステップバイステップのフローを示します。 これは、出荷先住所、配送方法、および請求書情報を示します。 また、注文集計や、顧客注文に関連するその他の情報も表示されます。
 
 チェックアウト モジュールは、カート ID に基づくデータを表示します。 このカート ID は、ブラウザー Cookie として保存されます。 カート ID は、注文の品目、合計金額、割引などの情報をチェックアウト モジュールで表示するために必要です。 
 
 以下の図は、Fabrikam の精算ページにおける精算モジュールの例を示しています。
 
-![精算モジュールの例。](./media/Checkout.PNG)
+![精算モジュールの例](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>チェックアウト モジュール プロパティ
 
@@ -52,13 +57,13 @@ ms.locfileid: "6715509"
 
     以下の図は、Fabrikam の精算ページにおける配送先住所モジュールの例を示しています。
 
-    ![配送先住所モジュールの例。](./media/ecommerce-shippingaddress.PNG)
+    ![配送先住所モジュールの例](./media/ecommerce-shippingaddress.PNG)
 
 - **配送オプション** – このモジュールにより、顧客は注文の配送モードを選択できます。 このモジュールの詳細については、[配送オプション モジュール](delivery-options-module.md) を参照してください。
 
     以下の図は、Fabrikam の精算ページにおける配送オプション モジュールの例を示しています。
  
-    ![配送オプション モジュールの例。](./media/ecommerce-deliveryoptions.PNG)
+    ![配送オプション モジュールの例](./media/ecommerce-deliveryoptions.PNG)
 
 - **チェックアウト セクション コンテナー** – このモジュールは、複数のモジュールを内側に配置して、チェックアウト フロー内にセクションを作成できるコンテナーです。 たとえば、すべての支払関連モジュールをこのコンテナー内に配置し、1 つのセクションとして表示することができます。 このモジュールは、フローのレイアウトにのみ影響します。
 
@@ -70,7 +75,7 @@ ms.locfileid: "6715509"
 
     次の図は、チェックアウト ページのギフト カード、ロイヤルティ ポイント、支払モジュールの例を示しています。
 
-    ![チェックアウト ページのギフト カード、ロイヤルティ ポイント、支払モジュールの例。](./media/ecommerce-payments.PNG)
+    ![チェックアウト ページのギフト カード、ロイヤルティ ポイント、支払モジュールの例](./media/ecommerce-payments.PNG)
 
 - **連絡先情報** – このモジュールにより、顧客は注文に対する連絡先情報 (電子メール アドレス) を追加または変更できます。
 
@@ -80,7 +85,7 @@ ms.locfileid: "6715509"
 
     次の図は、チェックアウト ページの使用条件の例を示しています。
 
-    ![チェックアウト ページの使用条件の例。](./media/ecommerce-checkout-terms.PNG)
+    ![チェックアウト ページの使用条件の例](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit インタラクション
 
@@ -122,6 +127,3 @@ ms.locfileid: "6715509"
 [注文詳細のモジュール](order-confirmation-module.md)
 
 [ギフト カード モジュール](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

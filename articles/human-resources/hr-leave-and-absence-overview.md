@@ -1,34 +1,33 @@
 ---
 title: 休暇の概要
-description: Dynamics 365 Human Resources では、休暇および欠勤ワークスペースは、新しい休暇計画を作成するための柔軟なフレームワークを提供します。
-author: twheeloc
-ms.date: 10/28/2021
-ms.topic: overview
+description: Dynamics 365 Human Resources では、休暇および欠勤ワークスペースは、新しい休暇計画を作成するための柔軟なフレームワークを提供します。 また、申請の管理に使用するワークフロー、および従業員が休暇の申請に使用する直観的なセルフサービス ページも用意されています。
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/01/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
+ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 344b4bba144a311530ce7be3b4bc230ce9cf8d1a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ea58c3a08e74eea1ab51aa19a5a28445a9bcbb04
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069024"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419428"
 ---
 # <a name="leave-and-absence-overview"></a>休暇の概要
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dynamics 365 Human Resources は、従業員に休暇による大きな益を与える助けになります。 **休暇および欠勤** ワークスペースは、新しい休暇計画の作成に使用できる柔軟なフレームワークを提供します。 また、申請の管理に使用するワークフロー、および従業員が休暇の申請に使用する直観的なセルフサービス ページも用意されています。 分析では、組織が休暇残日数および休暇計画の用途を測定および監視するのに役立ちます。
+Dynamics 365 Human Resources は、従業員に休暇による大きな益を与える助けになります。 **休暇および欠勤** ワークスペースは、新しい休暇計画の作成に使用できる柔軟なフレームワークを提供します。 また、申請の管理に使用するワークフローと従業員が休暇の申請に使用する直観的なセルフサービス ページも用意されています。 分析では、組織が休暇残日数および休暇計画の用途を測定および監視するのに役立ちます。
 
 ## <a name="set-up-leave-and-absence"></a>休暇の設定
 
@@ -37,7 +36,6 @@ Dynamics 365 Human Resources は、従業員に休暇による大きな益を与
 - [休暇パラメーターのコンフィギュレーション](hr-leave-and-absence-parameters.md)
 - [作業時間カレンダーの作成](hr-leave-and-absence-working-time-calendar.md)
 - [休暇申請ワークフローの作成](hr-leave-and-absence-workflow.md)
-- [休暇マネージャー ロールの構成](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>休暇計画を作成および管理する
 
@@ -53,10 +51,6 @@ Dynamics 365 Human Resources は、従業員に休暇による大きな益を与
 
 **従業員セルフ サービス** ワークスペースで、従業員が休暇申請を送信したり、組織がその申請を管理することができます。
 
-- [休暇申請](hr-employee-self-service-request-time-off.md)
-- [休暇および欠勤要求の管理](hr-employee-self-service-manage-requests.md)
-- [休暇マネージャー ロールの構成](hr-configure-absence-manager.md)
+[休暇の申請](hr-employee-self-service-request-time-off.md)
+[休暇と欠勤申請の管理](hr-employee-self-service-manage-requests.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

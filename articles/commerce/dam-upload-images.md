@@ -1,10 +1,12 @@
 ---
 title: 画像のアップロード
-description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像アップロードの方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像のアップロード方法について説明します。
 author: psimolin
-ms.date: 12/03/2021
+manager: annbe
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,18 +17,20 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 69b812c58739357dfdb3f9e65e34e5d54d890284
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891525"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963013"
 ---
 # <a name="upload-images"></a>画像のアップロード
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像アップロードの方法について説明します。
+このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像のアップロード方法について説明します。
+
+## <a name="overview"></a>概要
 
 コマース サイト ビルダーのメディア ライブラリーを使用すると、フォルダーを使用してイメージを単独または一括でアップロードできます。 イメージの変更コンポーネントを使用すると、さまざまなビューポートとそのブレークポイントに対する画像が自動的に最適化されるので、最大解像度と品質で画像のバージョンをアップロードする必要があります。
 
@@ -41,8 +45,7 @@ ms.locfileid: "7891525"
 - **アップロード後にアセットを公開**: このチェック ボックスがオンになっている場合は、アップロード後すぐにイメージまたは画像が公開されます。
 
 > [!NOTE]
-> - カテゴリが割り当てられた画像の資産には、特定のカテゴリの資産の検索を支援するキーワードとして自動的にカテゴリにタグが付けられます。
-> - 製品の詳細ページでは、製品名を使用して **Alt テキスト** が動的に生成されます。したがって、製品画像の **Alt テキスト** を変更すると、表示される画像には影響はありません。
+> カテゴリが割り当てられた画像の資産には、特定のカテゴリの資産の検索を支援するキーワードとして自動的にカテゴリにタグが付けられます。
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>オムニ チャネル画像の命名規則 
 
@@ -53,17 +56,9 @@ ms.locfileid: "7891525"
 - カテゴリ画像は、"**/カテゴリ/\{CategoryName\}.png**" という名前にする必要があります
 - 顧客の画像は、"**/顧客/\{CustomerNumber\}.jpg**" という名前にする必要があります
 - 従業員の画像は、"**/作業者/\{WorkerNumber\}.jpg**" という名前にする必要があります
-- 製品画像は、"**/製品/\{ProductNumber\}\_000_001.png**" という名前にする必要があります
+- 製品画像は、"**/製品/\{ProductNumber\}_000_001.png**" という名前にする必要があります
     - 001 は画像の順序で、001、002、003、004、または 005 とすることができます
-- 製品バリアントの画像は、"**/製品/\{ProductNumber\} \^ \{スタイル\} \^ \{サイズ\} \^ \{色\} \^\_000_001.png**" という名前にする必要があります
-    - 例: 93039 \^ &nbsp;\^ 2 \^ 黒 \^\_000_001.png
-- コンフィギュレーション分析コードの製品バリアント画像は、"**/製品/\{ProductNumber\} \^ \{コンフィギュレーション\}\_000_001.png**" という名前にする必要があります
-    - 例: 93039\^ LB8017_000_001.png
-
-> [!NOTE]
-> 製品バリアントの画像では、分析コード値が空の場合は、ファイル名のキャレットの間に空白が 2 つ必要です。
-
-上の例では、既定のコンフィギュレーションを使用します。 区切り文字と分析コードはコンフィギュレーション可能で、必要な正確な名前付けは展開によって異なる場合があります。 必要な厳密な名前付け規則を識別する方法の 1 つは、ブラウザーの開発者コンソールを使用して、ストアフロントの製品詳細ページ (PDP) で製品分析コードを変更中に製品バリアントの画像要求を検査することです。
+- 製品バリアントの画像は、"**/製品/\{ProductNumber\}\_\{サイズ\}\_\{色\}\_\{スタイル\}\_000_001.png**" という名前にする必要があります
 
 ## <a name="upload-an-image"></a>画像のアップロード
 
@@ -101,6 +96,3 @@ ms.locfileid: "7891525"
 [画像の中心のカスタマイズ](dam-custom-focal-point.md)
 
 [静的ファイルのアップロードと提供](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

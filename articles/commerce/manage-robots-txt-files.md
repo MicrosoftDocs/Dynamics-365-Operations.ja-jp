@@ -2,30 +2,36 @@
 title: robots.txt ファイルの管理
 description: このトピックでは、Microsoft Dynamics 365 Commerce の robots.txt ファイルを管理する方法について説明します。
 author: BrianShook
+manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e1078de354a96cc50b7c1b79a864db5041ea5069df650670e65531faaeb32e0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754395"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517455"
 ---
 # <a name="manage-robotstxt-files"></a>robots.txt ファイルの管理
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の robots.txt ファイルを管理する方法について説明します。
+
+## <a name="overview"></a>概要
 
 ロボット除外標準または robots.txt は、Web サイトが Web ロボットと通信するために使用する標準です。 参照すべきではない Web サイトのすべての領域について、Web ロボットに指示します。 多くの場合、検索エンジンはロボットを使用して Web サイトをインデックス化します。
 
@@ -101,6 +107,3 @@ robots.txt ファイルの詳細については、[Web ロボット ページ](h
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

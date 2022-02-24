@@ -1,27 +1,29 @@
 ---
-title: パフォーマンス SDK を使用したテストのトラブルシューティング ガイド
-description: このトピックでは、パフォーマンス SDK を使用したシングル ユーザーまたはマルチ ユーザーのテスト中に発生する一般的な問題のトラブルシューティングについて説明します。
+title: パフォーマンスSDKを使用した、シングルユーザーまたはマルチユーザーテストのためのトラブルシューティングガイド
+description: このトピックでは、パフォーマンスSDKを使用したシングルユーザーまたはマルチユーザーのテスト中に発生する可能性のある一般的な問題のトラブルシューティングについて説明します。
 author: hasaid
+manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4177a4988360a27f2fcee9670376c18d47ab1d7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: dd335bb255cfdab7060d90b0df17a1a2d22955bf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783156"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680424"
 ---
-# <a name="troubleshooting-guide-for-testing-with-the-performance-sdk"></a>パフォーマンス SDK を使用したテストのトラブルシューティング ガイド
+# <a name="troubleshooting-guide-for-single-user-or-multi-user-testing-with-the-performance-sdk"></a>パフォーマンスSDKを使用した、シングルユーザーまたはマルチユーザーテストのためのトラブルシューティングガイド
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +37,7 @@ ms.locfileid: "7783156"
 
 ### <a name="solution"></a>ソリューション
 
-[パフォーマンス SDK を使用したマルチユーザー テスト](perfsdk-multi-user-testing.md) を参照してください。 リンク先セクションでは、このタイプのテストにおいて正しい証明書を作成する方法について説明しています。 証明書のサムプリントを wif.config ファイルに追加する方法についても説明します。
+[パフォーマンス SDK とローカル テスト コントローラーを使用したマルチユーザー テスト](multi-user-testing-local-test-controller.md) を参照してください。 リンク先セクションでは、このタイプのテストにおいて正しい証明書を作成する方法について説明しています。 証明書のサムプリントを wif.config ファイルに追加する方法についても説明します。
 
 ## <a name="zoom-factor"></a>拡大率
 
@@ -69,7 +71,7 @@ Internet Explorer で、次のレジストリ キーを変更することによ�
 
 - CloudEnvironment.Config および wif.config ファイルにコピーした証明書の拇印には、非表示の Unicode 文字が含まれています。 拇印に非表示の Unicode 文字が含まれているかどうかを確認するには、Unicode コード コンバータに貼り付けて、**HTML/XML** フィールドに余分な文字が表示されているかどうかを確認します。 たとえば、 <https://r12a.github.io/apps/conversion/>にて提供されている Unicode コンバーターを使用できます。
 
-    [![ユニコード変換。](./media/troubleshoot-perf-sdk-01.jpg)](./media/troubleshoot-perf-sdk-01.jpg)
+    [![ユニコード変換](./media/troubleshoot-perf-sdk-01.jpg)](./media/troubleshoot-perf-sdk-01.jpg)
 
 - アプリケーション オブジェクト サーバー マシン (AOS) に証明書が 正しくインストールされていません。 以下の Microsoft Windows PowerShell スクリプトを実行し、認証が必要となる証明書をAOSマシン内で検索します。
 
@@ -82,7 +84,7 @@ Internet Explorer で、次のレジストリ キーを変更することによ�
 
 - 負荷テストを実行するときにこの問題が発生した場合、セットアップ スクリプトが .pfx ファイルを正しくインストールしていない可能性があります。 CloudCtuFakeACSInstall.cmd ファイルに指定されているパスワードが証明書が作成されたときに設定されたパスワードと一致していることを確認します。
 
-    [![.cmd ファイルのパスワード。](./media/troubleshoot-perf-sdk-02.jpg)](./media/troubleshoot-perf-sdk-02.jpg)
+    [![.cmd file のパスワード](./media/troubleshoot-perf-sdk-02.jpg)](./media/troubleshoot-perf-sdk-02.jpg)
 
 ## <a name="no-endpoint-is-listening"></a>リッスンしているエンドポイントはありません
 
@@ -121,7 +123,7 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 - CloudEnvironment.config ファイルにて **SelfMintingAdminUser** として指定されているユーザーに、システム管理者ロールが割り当てられていません。 適切なユーザーが指定されていることを検証するには、エンドポイントにサインインし、ユーザーのロールを確認します。
 
-    [![ユーザーページ。](./media/troubleshoot-perf-sdk-03.jpg)](./media/troubleshoot-perf-sdk-03.jpg)
+    [![ユーザーページ](./media/troubleshoot-perf-sdk-03.jpg)](./media/troubleshoot-perf-sdk-03.jpg)
 
 - CloudEnvironment.config ファイルにて **SelfMintingAdminUser** として指定されているユーザーは、 `https://sts.windows-ppe.net/` または `https://sts.windows.net/` 以外のプロバイダーを持っています。 場合によっては、管理者ユーザーの **プロバイダ** フィールドに会社固有のドメインを含めます。
 
@@ -141,13 +143,13 @@ CloudEnvironment.Config ファイルで、次のキーによって指定され�
 
 - テスト ユーザーは、引数なしで MS.Dynamics.Performance.CreateUsers.exe を実行して作成されます。 例えば、CreateUsers スクリプトを引数なしで実行すると、作成されたテスト ユーザーの電子メール アドレスが正しくフォーマットされません。 これらのユーザーを使用してテストを実行すると、テストは禁止された要求のエラーを生成します。 このシナリオでユーザーを表示することによってエラーが発生することを確認できます。 テスト ユーザーの正しくない電子メール アドレスは、次の図の電子メール アドレスに類似します。
 
-    [![誤りのあるユーザーの電子メールアドレスの一覧。](./media/troubleshoot-perf-sdk-04.jpg)](./media/troubleshoot-perf-sdk-04.jpg)
+    [![誤りのあるユーザーの電子メールアドレスの一覧](./media/troubleshoot-perf-sdk-04.jpg)](./media/troubleshoot-perf-sdk-04.jpg)
 
     問題を解決するには、電子メール アドレスの書式設定が誤っているテスト ユーザーを削除します。 CreateUsers スクリプトを再実行し、次のようにしてユーザー数および会社を特定します。
 
 - CloudEnvironment.Config ファイルの **UserCount** フィールドで指定しているユーザー数が、MS.Dynamics.Performance.CreateUsers.exe を実行して作成したテスト ユーザーの数を超えています。 少なくとも CloudEnvironment.Config ファイルで要求するテスト ユーザーをできる限り多く作成したことを確認します。
 
-    [![CloudEnvironment.Config ファイル。](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
+    [![CloudEnvironment.config ファイル](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
 
 - Finance and Operations アプリが 21Vianet に展開されている場合は、開発環境とパフォーマンス テスト環境が 10.0.11 以上のプラットフォーム更新にあることを確認してください。
 
@@ -201,7 +203,7 @@ System.TypeInitializationException: System.TypeInitializationException: 'MS.Dyna
 
 ファイルが欠落している場合は、テストの設定で配置項目に追加します。
 
-[![テスト設定ダイアログ ボックスの配置項目。](./media/troubleshoot-perf-sdk-06.jpg)](./media/troubleshoot-perf-sdk-06.jpg)
+[![テスト設定 ダイアログ ボックスの 配置 タブ](./media/troubleshoot-perf-sdk-06.jpg)](./media/troubleshoot-perf-sdk-06.jpg)
 
 ## <a name="interactiveclientid-was-not-specified-in-the-settings"></a>InteractiveClientId が設定で指定されていませんでした
 
@@ -263,7 +265,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 ### <a name="error-example---failed-finding-the-certificate-for-minting-tokens-by-thumbprint"></a>エラーの例 - 拇印によるトークン作成用の証明書の検索に失敗しました
 
-[![エラー メッセージとエラー スタックの追跡。](./media/troubleshoot-perf-sdk-07.jpg)](./media/troubleshoot-perf-sdk-07.jpg)
+[![エラーメッセージとエラースタックの追跡](./media/troubleshoot-perf-sdk-07.jpg)](./media/troubleshoot-perf-sdk-07.jpg)
 
 ### <a name="solution---failed-finding-the-certificate-for-minting-tokens-by-thumbprint"></a>ソリューション - 拇印によるトークン作成用の証明書の検索に失敗しました
 
@@ -275,7 +277,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 ### <a name="error-example---the-action-you-are-trying-to-perform-requires-a-connection-to-visual-studio-team-services"></a>エラーの例 - 実行しようとしているアクションには、Visual Studio チームサービスへの接続が必要です
 
-[![エラー メッセージの詳細。](./media/troubleshoot-perf-sdk-08.jpg)](./media/troubleshoot-perf-sdk-08.jpg)
+[![エラーメッセージの詳細](./media/troubleshoot-perf-sdk-08.jpg)](./media/troubleshoot-perf-sdk-08.jpg)
 
 ### <a name="solution---the-action-you-are-trying-to-perform-requires-a-connection-to-visual-studio-team-services"></a>ソリューション - 実行しようとしているアクションには、Visual Studio チームサービスへの接続が必要です
 
@@ -287,7 +289,7 @@ Azure DevOps に接続するときは、**dev.azure.com/\<Azure\_DevOps\_Account
 
 ### <a name="error-example---could-not-load-file-or-assembly-aoskerneldll"></a>エラーの例 - ファイルまたはアセンブリ 'aoskernel.dll' を読み込むことができませんでした
 
-[![エラーメッセージとエラースタックの追跡およびデバッグ トレース。](./media/troubleshoot-perf-sdk-09.jpg)](./media/troubleshoot-perf-sdk-09.jpg)
+[![エラーメッセージとエラースタックの追跡,デバッグの追跡](./media/troubleshoot-perf-sdk-09.jpg)](./media/troubleshoot-perf-sdk-09.jpg)
 
 ### <a name="solution---could-not-load-file-or-assembly-aoskerneldll"></a>ソリューション - ファイルまたはアセンブリ 'aoskernel.dll' を読み込むことができませんでした
 
@@ -307,9 +309,9 @@ Azure DevOps に接続するときは、**dev.azure.com/\<Azure\_DevOps\_Account
 
 ### <a name="error-example---multiple-warning-messages-before-and-after-multi-user-testing"></a>エラーの例 - マルチユーザー テストの開始前と後に複数の警告メッセージが表示される
 
-![負荷テスト ステータスの例。](./media/troubleshoot-perf-sdk-10.jpg)
+![負荷テストステータスの例](./media/troubleshoot-perf-sdk-10.jpg)
 
-![負荷テスト出力の例。](./media/troubleshoot-perf-sdk-11.jpg)]
+![負荷テスト結果の例](./media/troubleshoot-perf-sdk-11.jpg)]
 
 ### <a name="solution---multiple-warning-messages-before-and-after-multi-user-testing"></a>ソリューション - マルチユーザー テストの開始前と後に複数の警告メッセージが表示される
 
@@ -334,6 +336,3 @@ perfSDK を使用して出荷されたサンプル ソリューションは既�
 ### <a name="solution--assembly-was-built-against-the-netframeworkversionv46-framework"></a>ソリューション - アセンブリは、".NETFramework,Version=v4.6" フレームワークに対してビルドされました
 
 プロパティ ウィンドウの **ターゲット フレームワーク** プロパティを .Net Framework 4.6 に変更します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: 原価会計分析の Power BI コンテンツのセキュリティ設定
-description: このトピックでは、Microsoft Power BI で行レベルのセキュリティに原価会計のアクセス レベルのセキュリティを反映する方法を説明します。
+description: このトピックでは、Microsoft Power BI で行レベルのセキュリティに原価会計のアクセス レベルのセキュリティを反映する方法を説明します。 この機能により、ユーザーがアクセス権を持つ Power BI データのみが表示されるようになります。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f519a38b381da0efc1e91ba0f2015780d086550c3e38810e6845a0fc07976767
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04ff1523f7b05fe8398513e913702b0f3c7c354c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751494"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682192"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>原価会計分析の Power BI コンテンツのセキュリティ設定
 
@@ -42,11 +44,11 @@ Power BI にアクセス レベルのセキュリティを反映するには、P
 3. **原価会計分析** Power BI コンテンツのデータセットを検索します。
 4. セキュリティ ページを開きます。
 
-    ![セキュリティ ページを開く。](./media/CA-picture-1.png)
+    ![セキュリティ ページを開く](./media/CA-picture-1.png)
 
 5. **原価オブジェクト コントローラー** ロールが既に作成されています。 原価会計のアクセス レベル組織階層の一部であるほかのメンバを追加します。
 
-    ![メンバーの追加。](./media/CA-picture-2.png)
+    ![メンバーの追加](./media/CA-picture-2.png)
 
 **原価オブジェクト コントローラー** ロールに追加されているユーザーには、原価会計のアクセス レベル組織階層の定義に従って、許可されたデータのみが表示されます。
 
@@ -61,6 +63,3 @@ Power BI にアクセス レベルのセキュリティを反映するには、P
 
 ## <a name="additional-resources"></a>追加リソース
 Power BI の行レベルのセキュリティの詳細については、「[Power BI のモデルでのセキュリティ管理](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model)」を参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

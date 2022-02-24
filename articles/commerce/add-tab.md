@@ -1,13 +1,16 @@
 ---
 title: タブ モジュール
-description: このトピックでは、タブ モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: このトピックでは、タブ モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにタブ モジュールを追加する方法について説明します。
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9062e584d159e0f1986c46140d535f06f5d2817af048f30e812f9049bd52d4f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9d897113442f14b95539efb9fec9482be96447a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723290"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413697"
 ---
 # <a name="tab-module"></a>タブ モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、タブ モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+このトピックでは、タブ モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにタブ モジュールを追加する方法について説明します。
+
+## <a name="overview"></a>概要
 
 タブ モジュールは、サイト ページの情報をタブに編成する目的で使用するコンテナーと類似するモジュールです。 これらは、タブで情報を提示する必要のあるページで使用することができます。
 
@@ -34,7 +39,7 @@ ms.locfileid: "6723290"
 
 以下の図は、サイトのページにおけるタブ モジュールの例を示しています。 この例では、選択された **配送** タブを使用します。
 
-![タブ モジュールの例。](./media/ecommerce-tab.PNG)
+![タブ モジュールの例](./media/ecommerce-tab.PNG)
 
 ## <a name="tab-module-properties"></a>タブ モジュール プロパティ
 
@@ -79,6 +84,3 @@ ms.locfileid: "6723290"
 [アコーディオン モジュール](add-accordion.md)
 
 [テキスト ブロック モジュール](add-content-rich-block.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

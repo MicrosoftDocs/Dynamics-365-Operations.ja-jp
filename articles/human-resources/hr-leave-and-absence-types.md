@@ -1,33 +1,31 @@
 ---
 title: 休暇タイプのコンフィギュレーション
 description: Dynamics 365 Human Resources で、従業員が使用できる休暇のタイプを設定します。
-author: twheeloc
-ms.date: 09/09/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 76b8661c4c6d8fe6cf0568be966f1652b95b5442
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6e6ca7d04b86232ba48474fcbe288a18995661ae
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067330"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419345"
 ---
 # <a name="configure-leave-and-absence-types"></a>休暇タイプのコンフィギュレーション
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources で休暇タイプは、従業員がレポートできる休暇のタイプを定義します。 休暇タイプは、組織のニーズに応じてカスタマイズできます。 たとえば次のような休暇タイプを入力します。
 
@@ -68,53 +66,19 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
 
 1. 休暇タイプの丸めオプションを設定します。 オプションには、**なし**、**上**、**下**、**四捨五入** があります。 休暇タイプの丸めの精度を設定することもできます。
 
-2. 休暇タイプに **休日の修正** を設定します。 このオプションを選択すると、業務の日に当たる休日の数を使って、その休暇タイプの休暇の取得方法を決定します。 たとえば、クリスマスの日が月曜に当たる場合、Human Resources は、見越計上を処理するときに休暇タイプから 1 日を減算します。
+2. 休暇タイプに **休日の修正** を設定します。 このオプションを選択すると、Human Resources は作業日に含まれる休日の数を使用して、休暇タイプに対する休暇の見越計上の方法を決定します。 たとえば、クリスマスの日が月曜に当たる場合、Human Resources は、見越計上を処理するときに休暇タイプから 1 日を減算します。
 
-   休日は作業時間カレンダーで設定します。 詳細については、[作業時間カレンダーの作成](hr-leave-and-absence-working-time-calendar.md)を参照してください。
+   休日は作業時間カレンダーで設定します。 詳細については、[作業時間カレンダーを作成する](hr-leave-and-absence-working-time-calendar.md)を参照してください
    
  3. 休暇タイプに **繰越休暇タイプ** を設定します。 このオプションを選択すると、繰越残日数は指定された休暇タイプに転送されます。 繰越休暇タイプも、休暇および不就業プランに含める必要があります。 
  
-4. 休暇タイプの **有効期限ルール** を定義します。 このオプションを設定すると、日数または月数の単位を選択して、有効期限の期間を設定できます。 有効期限ルールの有効日は、休暇の有効期限を処理するバッチ ジョブの実行を開始する時期、またはルールが有効になる日付を決定するために使用されます。 有効期間自体は、常に見越計上期間の開始日に発生します。 たとえば、見越計上期間の開始日が 2021 年 8 月 3 日で、有効期限ルールが 6 か月に設定されている場合、ルールは見越計上期間の開始日からの有効期限のオフセットに基づいて処理され、2022 年 2 月 3 日に実行されることになります。 有効期限の時点で存在する休暇残高は、休暇タイプから差し引かれ、休暇残高に反映されます。
+ 4. 休暇タイプの **有効期限ルール** を定義します。 このオプションを設定すると、日数または月数の単位を選択して、有効期限の期間を設定できます。 有効期限ルールの有効日を設定することもできます。 有効期限の時点で存在する休暇残高は、休暇タイプから差し引かれ、休暇残高に反映されます。 
  
-## <a name="configure-the-required-attachment-per-leave-type"></a>休暇タイプごとに必要な添付ファイルを構成する
-
-> [!NOTE]
-> **添付ファイルの必須化** フィールドを使用するには、機能管理の **休暇申請に必要な添付ファイルの構成** 機能をオンにしておく必要があります。 プレビュー機能をオンにする方法の詳細については、[機能の管理](hr-admin-manage-features.md)を参照してください。
-
-1. **休暇および欠勤** ページの、**リンク** タブの **設定** で、**休暇と欠勤の種類** を選択します。
-
-2. リストから休暇および欠勤の種類を選択します。 次に **一般** セクションで、**添付ファイルの必須** フィールドを使用して、従業員が選択した休暇タイプの新しい休暇申請を送信するときに添付ファイルをアップロードする必要があるかどうかを指定します。 
-
-従業員は、**添付ファイルが必要** フィールドが有効になっている休暇タイプの新しい休暇申請を送信するときに、添付ファイルをアップロードする必要があります。 休暇申請の一部としてアップロードされた添付ファイルを表示するには、休暇申請の承認者は、割り当てられている作業項目の **添付ファイル** オプションを使用できます。 Microsoft Teams の Human Resources アプリを使用して休暇申請にアクセスする場合、休暇申請の **詳細の表示** オプションを使用して、その詳細と添付ファイルを表示できます。
-
-## <a name="configure-leave-units-hoursdays-per-leave-type"></a>休暇タイプごとに休暇単位 (時間 / 日) を構成する
-
-> [!NOTE]
-> 休暇タイプ機能ごとに休暇単位を使用するには、機能管理で **休暇タイプ機能ごとに休暇単位を構成する** をオンにしておく必要があります。 プレビュー機能をオンにする方法の詳細については、[機能の管理](hr-admin-manage-features.md)を参照してください。
-
-> [!IMPORTANT]
-> 既定では、法人の休暇タイプでは、法人レベルの休暇パラメータの構成の休暇単位が使用されます。
-> 
-> 休暇および欠勤タイプの休暇単位は、その休暇タイプの休暇トランザクションがない場合にのみ変更できます。
-> 
-> オンにした後は、この機能をオフにすることはできません。
-
-1. **休暇および欠勤** ページの、**リンク** タブの **設定** で、**休暇と欠勤の種類** を選択します。
-
-2. リストから休暇および欠勤の種類を選択します。 次に、**一般** セクションの **ユニット** フィールドで、休暇の単位を選択します。 **時間** または **日数** を選択できます。
-
-3. オプション : **ユニット** フィールドで **時間** を選択した場合、**半日の定義を有効にする** フィールドを使用して、従業員が半日の休暇を申請する際に、最初の半日と後半の半日のどちらを選択するかを指定できます。
-
-新しい休暇申請を提出する従業員は、さまざまな休暇タイプを選択して休暇要求を作成できます。 ただし、単一の休暇申請の一部として選択される休暇タイプはすべて同じ休暇単位である必要があります。 従業員は、休暇タイプごとの休暇単位を **休暇申請** フォームで確認できます。
-
+ 
 ## <a name="see-also"></a>参照
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
 - [休暇および欠勤計画の作成](hr-leave-and-absence-plans.md)
 - [作業時間カレンダーの作成](hr-leave-and-absence-working-time-calendar.md)
 - [休暇の中断](hr-leave-and-absence-suspend-leave.md)
-- [休暇の売買申請ワークフローの作成](hr-leave-and-absence-buy-sell-workflow.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

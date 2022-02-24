@@ -2,19 +2,26 @@
 title: X++ コンパイル時関数
 description: このトピックでは、コンパイル時関数の一覧を示し、その構文、パラメーター、および戻り値について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 11/03/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 29581
+ms.assetid: fa6613a4-7d0b-40d3-be29-9d14c22c7d5b
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84f39de46370fbad6849e06dca257d89de74831f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d10ee2709f9bb94e63b4b4f3ff95804327d2af60
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782047"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408749"
 ---
 # <a name="x-compile-time-functions"></a>X++ コンパイル時関数
 
@@ -2722,6 +2729,3 @@ static void workFlowTypeStrExample(Args _args)
 ```
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

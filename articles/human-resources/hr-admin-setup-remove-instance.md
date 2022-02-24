@@ -1,32 +1,33 @@
 ---
 title: インスタンスの削除
-description: このトピックでは、Microsoft Dynamics 365 Human Resources のテスト ドライブ環境または実稼動環境の削除について説明します。
-author: twheeloc
-ms.date: 08/11/2021
+description: この記事では、Microsoft Dynamics 365 Human Resources のテスト ドライブ環境または実稼動環境の削除について説明します。
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e32058280d0cb1eab436bc25bd29bc3e39fabc92
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393500"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419407"
 ---
 # <a name="remove-an-instance"></a>インスタンスの削除
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-このトピックでは、Microsoft Dynamics 365 Human Resources の体験版環境または運用環境の削除について説明します。
+この記事では、Microsoft Dynamics 365 Human Resources のテスト ドライブ環境または実稼動環境の削除について説明します。
 
 ## <a name="remove-a-test-drive-environment"></a>テスト ドライブ環境の削除
 
@@ -41,7 +42,7 @@ ms.locfileid: "7393500"
 
 ## <a name="remove-a-production-environment"></a>実稼動環境の削除
 
-このトピックでは、Human Resources をクラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 
+この記事では、人事管理をクラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して購入したことを前提にしています。 
 
 ひとつの人事管理環境がひとつの Power Apps 環境内に含まれているため、2 つのオプションを考慮できます。 最初のオプションは、Power Apps 環境全体を削除することです。2 番目のオプションは、人事管理のみを削除することです。 最初のオプションは、人事管理をプロビジョニングする目的で特別に Power Apps 環境を作成し、実装を開始したばかりの場合、または既存の統合がない場合に優先されます。 2 つめのオプションは、Power Apps および Power Automate で活用されている豊富なデータが格納された Power Apps 環境が確立されている場合に適しています。
 
@@ -80,10 +81,7 @@ ms.locfileid: "7393500"
 
 1. [Power Apps 環境の復旧](/power-platform/admin/recover-environment.md)の指示に従います。
 
-2. 管理者に連絡して、人事環境を復元してください。 詳細については、[サポート](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照してください。
+2. 管理者に連絡して、人事環境を復元してください。 詳細については、[サポート](hr-admin-troubleshooting-support.md) を参照してください。
 
 > [!Warning]
 > Power Apps 環境は、削除後の 7 日間のみ保存されています。 この 7 日の期間内に環境を復旧する必要があります。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

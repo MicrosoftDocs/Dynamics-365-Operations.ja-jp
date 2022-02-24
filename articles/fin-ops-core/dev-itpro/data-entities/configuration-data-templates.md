@@ -1,10 +1,12 @@
 ---
 title: コンフィギュレーション データ テンプレート
 description: このトピックは、コンフィギュレーション データ テンプレートについて説明し、それらを作成する方法について説明します。
-author: rcarlson
+author: mikefalkner
+manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -13,19 +15,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 8fd0df46317942c94b1ee6ff92591050661e4df1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ba4a9eba01755b57f3cccf7a6334736e0f5847c8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068780"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679396"
 ---
 # <a name="configuration-data-templates"></a>コンフィギュレーション データ テンプレート
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 コンフィグレーション データ テンプレートは、データ プロジェクトで使用できる各モジュール領域のエンティティの事前定義リストです。 **データ管理** ワークスペース内の **テンプレート** ページを使用することにより、これらのテンプレートを作成、表示、および修正することができます。
 
@@ -119,7 +118,7 @@ ms.locfileid: "8068780"
 | プロジェクト会計        | 1    | 650   |
 
 > [!NOTE]
-> Retail テンプレートは、財務と運用アプリ更新プログラム 3 でリリースされる予定です。
+> Retail テンプレートは、Finance and Operations アプリ更新プログラム 3 でリリースされる予定です。
 
 共有システム エンティティが最初に処理されるように、共有システム エンティティのレベル 10 から 22 までが予約されました。 ほとんどすべてのシステムは会社固有の総勘定元帳のエンティティが使用できます。 したがって、私たちはそれらのエンティティに対してレベル 25 を予約しました。 これらのレベルは、構成内のほとんどの共有データに必要な最小基本セットアップを表します。
 
@@ -151,6 +150,3 @@ ms.locfileid: "8068780"
 多くの既定のテンプレートには、顧客、仕入先、およびリリースされた製品などのマスター データのエンティティが含まれます。 これらのエンティティは、パラメーターと参照データをロードした後に必要となるエンティティの正しい順序を示すために含まれています。 マスター エンティティは、よく 100 以上の番号が付けられたモジュール バンド内で順序付けされます。 グリッドで、これらのエンティティのエンティティ カテゴリは **マスター** になります。
 
 マスター データを構成に含めない場合は、プロジェクトからこれらのエンティティを削除します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

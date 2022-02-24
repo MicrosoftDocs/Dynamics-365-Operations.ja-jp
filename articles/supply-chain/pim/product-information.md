@@ -2,31 +2,35 @@
 title: 製品情報の概要
 description: このトピックでは、製品情報の管理に関する情報を提供します。 製品情報の管理では、すべての法人の製品定義、カテゴリ、識別子、および製品の特定のコンフィギュレーションを業務プロセスに合わせて共有します。
 author: t-benebo
+manager: tfehr
 ms.date: 06/01/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace, EcoResProductVariantPerCompanyImagePart, EcoResProductRelationType,EcoResProductAvailabilityPart,  EcoResProductReleasedSelect, EcoResProductLookup, EcoResProductVariantsPendingReleaseFormPart, EcoResProductSearchLookup, EcoResProductNumberRename, EcoResDimensionBasedConfigWorkspace, EcoResProductVariantImagePart, EcoResProductImagePart, EcoResProductVariantsPerCompanyPart, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleaseSessions, EcoResProductVariantMaintainWorkspaceConfiguration, EcoResProductProcessManufacturingWorkspaceConfiguration, EcoResProductMasterVariantsPart, EcoResProductDiscreteManufacturingWorkspaceConfiguration, EcoResProductVariantAvailabilityPart, EcoResProductInformationFactBox, EcoResProductLookupTest, EcoResProductImageTest, EcoResProductReleasedRecentlyCreatedFormPart, EcoResPhysicalProductDimensions, PdsMRCRegulatedListItem, EcoResProductAvailabilityPart, PdsMRCRestrictionList, InventItemIdLookupAllocationId, EcoResProductAvailability, EcoResProductEntityAttributeTableFieldAssociation, EcoResProductImagePart, EcoResProductRelation, EcoResProductReleaseAddProduct, EcoResProductPerCompanyListPage, EcoResProductParameters, PdsMRCRestrictedItemByCountryState, EngChgCasePreview, InventTablePreview, PdsMRCItemDetails, EngChgCaseAssociate, PdsMRCCustomerHistory, PdsMRCVendorHistory, PdsMRCRestrictedCountryStateByItem, InventItemIdGroupLookup, InventLocationLookup, PdsMRCValidityIntervalbyCountry, PdsMRCValidityIntervalbyCountry, PdsMRCEventTracker, PdsMRCReportingCountry, PdsMRCDocument, PdsMRCReportingList, PdsMRCItemCAS, GraphicsTestForm, EngChgPicklist
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c8aabeed66f864d1d1060a6452a3b554611c295
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063319"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527389"
 ---
 # <a name="product-information-overview"></a>製品情報の概要
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、製品情報の管理に関する情報を提供します。 製品情報の管理では、すべての法人の製品定義、カテゴリ、識別子、および製品の特定のコンフィギュレーションを業務プロセスに合わせて共有します。 
 
@@ -55,7 +59,7 @@ ms.locfileid: "8063319"
 
 Supply Chain Management で製品定義を作成することができます。 製品ライフサイクル管理 (PLM)、製品データ管理 (PDM)、製品情報管理 (PIM) システムからインポートすることもできます。 複数の Supply Chain Management インスタンスが使用されている場合、1 つのインスタンスは通常、他のすべてのインスタンスの製品データのマスターとして使用されます。 この方法は、1 つのインスタンスから別のインスタンスへの製品定義データのエクスポートおよびインポートを可能にする大量のデータ エンティティによってサポートされています。
 
-多くのインスタンスへの製品データの配分をサポートするために、Supply Chain Management では Microsoft Dataverse を使用できます。 製品定義は、Supply Chain Management のインスタンスから Microsoft Dataverse にエクスポートできます。 製品定義を使用して、Dynamics 365 Sales などの他のビジネス アプリケーションに製品データをプロビジョニングすることができます。
+多くのインスタンスへの製品データの配分をサポートするために、Supply Chain Management では Common Data Service を使用できます。 製品定義は、Supply Chain Management のインスタンスから Common Data Service にエクスポートできます。 製品定義を使用して、Dynamics 365 Sales などの他のビジネス アプリケーションに製品データをプロビジョニングすることができます。
 
 動的および迅速な組織では、製品情報のデータが毎日変わることに注意してください。 したがって、正確および実際の製品データの管理は、それ自体が重要な業務プロセスです。
 
@@ -92,6 +96,3 @@ Supply Chain Management の実装を計画する場合は、業務プロセス�
 ### <a name="manually-creating-a-new-released-product"></a>新たにリリースされた製品を手動で作成する
 
 組織の業務プロセスおよびこの機能を使用するかどうかに関するルールに応じて、リリース済み製品を手動で一度に作成することができます。 この機能は、新しい製品を作成し、それを現在の法人に自動的にリリースします。 新しい製品を作成するには、**リリース済製品の保守** ワークスペース、または **リリースされた製品** リスト ページ内の **リリース済製品** をクリックします。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

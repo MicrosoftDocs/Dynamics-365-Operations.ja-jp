@@ -1,25 +1,27 @@
 ---
 title: レポート ソリューションの作成
-description: このチュートリアルでは、レポートを作成する方法、定義済みのビューを展開する方法、グラフにナビゲーションを追加する方法、自由形式のレポート デザイナーを使用する方法、およびパラメーターをカスタマイズする方法について説明します。
-author: RichdiMSFT
+description: このチュートリアルでは、データをエクスポートしてレポートを作成する方法、定義済みのビューを展開してチャートにナビゲーションを追加する方法、フリーフォームのレポート デザイナーを使用する方法、およびパラメータの操作方法をカスタマイズする方法について説明します。
+author: TJVass
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.custom: 21551
 ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0fafdab1612eee6081915844f39b8e68dae156d287ac8710f87b22c3ffac0254
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd6c2d1012012d9b0bd1a2132b7f4f702af9faa8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772144"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683859"
 ---
 # <a name="create-reporting-solutions"></a>レポート ソリューションの作成
 
@@ -93,11 +95,11 @@ ms.locfileid: "6772144"
 6. 状態フィルター フィールドの **完了** を入力し、**適用** をクリックします。
 7. ページの操作バーを展開し、**Office で開く** をクリックして、次に **レンタル** を選択します。
 
-    [![FMRentals エクスポート。](./media/fmrentals-export.png)](./media/fmrentals-export.png) 
+    [![FMRentals エクスポート](./media/fmrentals-export.png)](./media/fmrentals-export.png) 
 
     データをエクスポートした後、Excel ツールのパワーと柔軟性を使用して、プレゼンテーション、または追加の分析のレポートを作成できます。 Excel で作成したセルフサービス レポートの例を次に示します。
 
-    [![FMRentals 分析。](./media/fmrentals-analysis-1024x775.png)](./media/fmrentals-analysis.png)
+    [![FMRentals 分析](./media/fmrentals-analysis-1024x775.png)](./media/fmrentals-analysis.png)
 
 8. ブラウザー セッションおよびエクスポートされた Excel ファイルを閉じます。
 
@@ -121,7 +123,7 @@ ms.locfileid: "6772144"
 7. Ctrl+Shift+B キーを押して、プロジェクトを保存およびビルドします。
 8. Ctrl + F5 キーを押して、レポートを含むフォームを読み込みます。
 
-    [![FMCustomer アクティビティ。](./media/fmcustomer-activity-300x224.png)](./media/fmcustomer-activity.png) 
+    [![FMCustomer アクティビティ](./media/fmcustomer-activity-300x224.png)](./media/fmcustomer-activity.png) 
 
 この時点で、集計データの事前に定義されたグラフのビジュアル化のコレクションがあります。 コントロールは、ホバー テキスト、シリーズ フィルタリング、タッチ拡張などの基本的な対話型機能を提供します。 ただし、より良いユーザー対話が要求されるのは、多くの場合適切なことです。
 
@@ -139,7 +141,7 @@ ms.locfileid: "6772144"
 
 **顧客別引当** ビューは、顧客間のレンタル活動を比較するタスクを簡略化するため、円グラフを使用して集計データ セットを視覚化するようになりました。 
 
-[![FMCustomer アクティビティ 2。](./media/fmcustomer-activity-2-1024x733.png)](./media/fmcustomer-activity-2.png) 
+[![FMCustomer アクティビティ 2](./media/fmcustomer-activity-2-1024x733.png)](./media/fmcustomer-activity-2.png) 
 
 追加の機能を以下に示します。
 
@@ -167,9 +169,9 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 8. デザイナー定義のリストを表示するには、デザイナーの **デザイナー** コレクションを展開します。
 9. 精密なデザイナーを使いレポート定義を表示するには、**Report** デザインをダブルクリックします。
 
-[![レポート デザイナー。](./media/report-designer-1024x665.png)](./media/report-designer.png) 
+[![レポート デザイナー](./media/report-designer-1024x665.png)](./media/report-designer.png) 
 
-上図は、Visual Studio Precision Designer を使用して表示される FMRentalsByCustomer レポート デザイン定義のスクリーン ショットです。 Precision Designer には、レポートのコンテンツおよびレイアウトをカスタマイズできる組み込みツールが備わった、自由書式デザイン サーフェイスが用意されています。 また、埋め込み VB コードを活用して、実行時デザイン操作を作成し、ユーザーとの対話をサポートすることができます。 統合されたツールとして、開発者は、AX EDT に基づいてレポート本文のデータをフォーマットするために、AX ラベルとパブリック API を参照することができます。 MSDN には、SSRS 書式設定機能に関連する豊富な開発者ドキュメントが用意されています。 有効 SSRS レポートを設計する基本的な方法については、[Reporting Services レポート (SSRS)](/sql/reporting-services/reports/reporting-services-reports-ssrs) を参照してください。
+上図は、Visual Studio Precision Designer を使用して表示される FMRentalsByCustomer レポート デザイン定義のスクリーン ショットです。 Precision Designer には、レポートのコンテンツおよびレイアウトをカスタマイズできる組み込みツールが備わった、自由書式デザイン サーフェイスが用意されています。 また、埋め込み VB コードを活用して、実行時デザイン操作を作成し、ユーザーとの対話をサポートすることができます。 統合されたツールとして、開発者は、AX EDT に基づいてレポート本文のデータをフォーマットするために、AX ラベルとパブリック API を参照することができます。 MSDN には、SSRS 書式設定機能に関連する豊富な開発者ドキュメントが用意されています。 有効 SSRS レポートを設計する基本的な方法については、[Reporting Services レポート (SSRS)](https://msdn.microsoft.com/library/bb522712.aspx) を参照してください。
 
 ## <a name="customizing-the-parameter-experience"></a>パラメータ経験のカスタマイズ
 レポート フレームワークは、モデル化されたソリューションを使用して対処できない要件を持つ先進的なソリューションを促進するため、サービスの拡張機能を通じて柔軟性を提供します。 VS デザイナーを使用して、基本的なパラメーターの書式設定、グループ化、入力の検証を追加します。 X++ ベースのデータ コントラクト検証はより高度なシナリオで使用可能です。 ユーザー インターフェイス (UI) ビルダ クラスを追加して、レポートを実行する前にセッション入力を促すパラメータ ウィンドウをカスタマイズすることを検討してください。 これらのカスタム拡張機能は、次の機能に有効です。
@@ -201,7 +203,7 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 3. Ctrl+Shift+B キーを押して、プロジェクトを保存およびリビルドします。
 4. Ctrl + F5 キーを押してレポートを実行します。
 
-[![FMRentalsByCust コントロール。](./media/fmrentalsbycust-controls-1024x691.png)](./media/fmrentalsbycust-controls.png) 
+[![FMRentalsByCust コントロール](./media/fmrentalsbycust-controls-1024x691.png)](./media/fmrentalsbycust-controls.png) 
 
 上記のパラメーター初期化コードは、今日の日付に関連したレポート実行の既定値を設定します。 フレームワークのレポート パラメーターの既定処理をオーバーライドするには UIBuilder クラスを使用します。 追加の拡張機能のシナリオがサポートされています。
 
@@ -234,7 +236,7 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 9. ソリューション エクスプローラーでプロジェクトを選択し、右クリックしてから **レポートの展開** を選択します。
 10. Ctrl + F5 キーを押してレポートを表示します。
 
-[![FMRentalDetails レポート。](./media/fmrentaldetails-report.png)](./media/fmrentaldetails-report.png) 
+[![FMRentalDetails レポート](./media/fmrentaldetails-report.png)](./media/fmrentaldetails-report.png) 
 
 このレポートでは、埋め込み VB スクリプトを使用して、実行中の合計を追跡し、前のページの残高を有効なページで参照できるようにします。 レポートの VB コードを検査するには、Precision Designer でレポート デザインを読み込み、**レポート プロパティ** にアクセスし、**コード** セクションを選択します。 ここで、レポートのヘッダーおよびフッター内で実行されているバランスを表すレポート デザインによって参照されるいくつかの機能が表示されます。
 
@@ -243,6 +245,3 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 - 電子メール サポート、バッチによるスケジュール実行、および印刷アーカイブを含む組み込みのバック オフィス ドキュメント管理機能
 - フォームおよびその他のレポートへドリル スルー ナビゲーションが可能な、パラメーター化されたビュー。
 - 地方自治体が規制するビジネス慣行に準拠した正確なドキュメントの作成に使用
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

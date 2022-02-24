@@ -2,9 +2,11 @@
 title: 勤務時間外の登録
 description: このトピックでは、勤務時間外登録を処理する方法について説明します。
 author: johanhoffmann
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06adca12c172dffa241fe44a6b64bb30863bcb4a8f3867429ad10bc852efd7c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 12a61f23ac5a16000275e53d3901c8aea202bab0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730229"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966633"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>勤務時間外の登録
 
@@ -31,7 +33,7 @@ ms.locfileid: "6730229"
 
 作業者は、通常の勤務時間中に働かない時間は、不在と見なされます。 通常の勤務時間は、作業者の標準勤務時間プロファイルで定義されます。
 
-たとえば、作業者は午前7時00分に出勤し、午後3時00分に退勤したという一日のプロファイルだったとします。 作業者が9:00に出勤した場合、その日の午前7:00から午前9時までは不在とみなされます。
+たとえば、作業者は午前7時00分に出勤し、午後3時00分に退勤したという一日のプロファイルだったとします。 9:00に出勤した場合、作業者は、その日の午前7:00から午前9時までは休暇と見做されます。
 
 この場合、作業者は休暇の理由を入力するように求められます。 作業者達は、休暇コードを選び理由を指定できます。
 
@@ -101,11 +103,8 @@ ms.locfileid: "6730229"
 
 承認者は、作業者の時刻登録を変更することができます。 承認者は、作業者が登録した全ての休暇を変更することさえできます。 承認者が休暇コードを持つ期間を手動で入力すると、その期間の休暇コードは、時間と欠勤パラメータのデフォルト休暇コードによって上書きされません。
 
-たとえば、作業者が午前10時に出勤し、遅刻したことを示す休暇コードを選択したとします。 後で、作業者が上司に、午前8:00から午前10:00の間に病院の診察を受けていたことを知らせたとします。 診察の場合は、作業者の給料から差し引かないようにする必要があります。 したがって、この場合、上司は、2時間の病気を示す休暇コードを手動で入力し、午前8:00から午前10:00までの2時間の休暇を調整することができます。
+たとえば、作業者が午前10時に出勤し、その女性が遅刻したことを示す休暇コードを選択したとします。 後で、作業者は、上司に対し、午前8:00から午前10:00の間に病院の診察を受けていたことを知らせたとします。 診察の場合は、作業者の給料から差し引かないようにする必要があります。 したがって、この場合、上司は、2時間の病気を示す休暇コードを手動で入力し、午前8:00から午前10:00までの2時間の休暇を調整することができます。
 
 ### <a name="calculate-and-approve-absence"></a>休暇の計算と承認
 
 - **休暇時間** &gt; **確認および承認** &gt; **承認または計算** を選択します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

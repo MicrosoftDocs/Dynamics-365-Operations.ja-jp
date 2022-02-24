@@ -2,8 +2,11 @@
 title: FILTER ER 関数
 description: このトピックでは、FILTER 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-ms.date: 12/14/2021
+manager: kfend
+ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e857306574dda7bad5dd25fc7708514997d8e86f
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: 55fa3d4ad4427e2a45f7c5fce679c50a91c40b6d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922426"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679441"
 ---
 # <a name="filter-er-function"></a>FILTER ER 関数
 
@@ -49,17 +52,11 @@ FILTER (list, condition)
 
 レコードの結果リスト。
 
-## <a name="usage-notes"></a><a name="usage-notes"></a>使用上の注意
+## <a name="usage-notes"></a>使用上の注意
 
 この関数は [WHERE](er-functions-list-where.md) 関数とは異なります。指定された条件がデータベース レベルで *テーブル レコード* タイプの任意の電子申告 (ER) データ ソースに適用されるためです。 テーブルおよび関係を使用して、リストと条件を定義することができます。
 
 この関数に対して構成されている引数 (`list` および `condition`) のいずれかまたは両方がこの要求を SQL の直接呼び出しに変換できない場合、デザイン時に例外がスローされます。 この例外は、`list` または `condition` のいずれもデータベースのクエリに使用できないことをユーザーに通知します。
-
-> [!NOTE]
-> `FILTER` 関数は、[`VALUEIN`](er-functions-logical-valuein.md)  関数で選択条件を指定した場合、`WHERE` 関数とは異なる動作をします。
-> 
-> - `VALUEIN` 関数が `WHERE` 関数のスコープ内で使用されており、`VALUEIN` の 2 番目の引数がレコードを返さないデータソースを参照している場合、`VALUEIN` が返すブール値の *[False](er-formula-supported-data-types-primitive.md#boolean)* 値が考慮されます。 そのため、**VendGroups** データソースがベンダーグループのレコードを返さない場合、式 `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` は仕入先のレコードを返しません。
-> - `VALUEIN` 関数が `FILTER` 関数のスコープ内で使用されており、`VALUEIN` の 2 番目の引数がレコードを返さないデータソースを参照している場合、`VALUEIN` が返すブール値の *[False](er-formula-supported-data-types-primitive.md#boolean)* 値が無視されます。 したがって、**VendGroups** データソースが仕入先グループのレコードを返さない場合でも、式 `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` は **Vendors** データソースのすべての仕入先レコードを返します。
 
 ## <a name="example-1"></a>例 1
 
@@ -76,6 +73,3 @@ FILTER (list, condition)
 ## <a name="additional-resources"></a>追加リソース
 
 [リスト機能](er-functions-category-list.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

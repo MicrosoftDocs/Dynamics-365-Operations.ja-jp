@@ -1,29 +1,30 @@
 ---
 title: 公的機関ホーム ページ
-description: Dynamics 365 Finance は、一般的な公的機関の業務プロセスをサポートしています。 これらのプロセスには、予算編成、購買、買掛金勘定、売掛金勘定のタスクなどがあります。
-author: v-kiarnd
+description: Microsoft Dynamics 365 Finance は、予算編成、購買、買掛金勘定や売掛金勘定のタスクなど、公的部門と民間部門の両方に共通する業務プロセスを有効化します。
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "20691"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 20691
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f59522ab857445d69012f4cfdfade47c40189266
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: f4a3722cf286909c83b5154137c86508929a2691
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817744"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459377"
 ---
 # <a name="public-sector-home-page"></a>公的機関ホーム ページ
 
@@ -59,18 +60,17 @@ ms.locfileid: "7817744"
 ## <a name="how-does-the-public-sector-configuration-key-relate-to-other-configuration-keys"></a>公的機関のコンフィギュレーション キーは、他のコンフィギュレーション キーとどのように関連付けられていますか。
 次の表では、このコンフィギュレーション キーが他のコンフィギュレーション キーにどのように関連しているかを説明しています。
 
-|   **詳細**         |              **説明**                                                                                                                                                                                        |
+|            |                                                                                                                                                                                                                     |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **詳細** | **説明**                                                                                                                                                                                                     |
 | 親キー | なし                                                                                                                                                                                                                |
 | 子キー | **詳細な元帳エントリ** コンフィギュレーション キー (AdvancedLedgerEntry) **公的機関 1099G** コンフィギュレーション キー (Tax1099G) **公的機関 1099S** コンフィギュレーション キー (Tax1099S) **フランスの規制** コンフィギュレーション キー |
 
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 [公的機関の機能の計画](plan-public-sector-functionality.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

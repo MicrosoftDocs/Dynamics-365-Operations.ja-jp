@@ -1,37 +1,40 @@
 ---
 title: Field Service のワーク オーダーと Supply Chain Management の販売注文との同期
 description: このトピックでは、Field Service の作業オーダーを Supply Chain Management の販売注文に同期するために使用されるテンプレートと基本的なタスクについて説明します。
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061312"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528926"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Field Service のワーク オーダーと Supply Chain Management の販売注文との同期
 
 [!include[banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Field Service のワーク オーダーを Dynamics 365 Supply Chain Management の販売注文に同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
-[![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
@@ -59,13 +62,13 @@ ms.locfileid: "8061312"
 
 | **Field Service** | **サプライ チェーン マネジメント** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | Dataverse 販売注文ヘッダー |
-| msdyn_workorderservices | Dataverse 販売注文明細行   |
-| msdyn_workorderproducts | Dataverse 販売注文明細行   |
+| msdyn_workorders        | CDS 販売注文ヘッダー |
+| msdyn_workorderservices | CDS 販売注文明細行   |
+| msdyn_workorderproducts | CDS 販売注文明細行   |
 
 ## <a name="entity-flow"></a>エンティティのフロー
 
-Field Service で作業オーダーが作成されます。 作業オーダーが外部で管理された製品のみを含んでおり、**ワーク オーダー ステータス** の値が **未終了－未スケジューリング** および **終了－キャンセル済** と異なる場合、作業オーダーは Microsoft Dataverse データ統合プロジェクトを通して Supply Chain Management に同期させることができます。 作業オーダーの更新は、Supply Chain Management での販売注文として同期されます。 これらの更新には、発生元のタイプやステータスに関する情報が含まれます。
+Field Service で作業オーダーが作成されます。 作業オーダーが外部で管理された製品のみを含んでおり、**ワーク オーダー ステータス** の値が **未終了－未スケジューリング** および **終了－キャンセル済** と異なる場合、作業オーダーは Common Data Service データ統合プロジェクトを通して Supply Chain Management に同期させることができます。 作業オーダーの更新は、Supply Chain Management での販売注文として同期されます。 これらの更新には、発生元のタイプやステータスに関する情報が含まれます。
 
 ## <a name="estimated-versus-used"></a>見積済と使用済
 
@@ -245,31 +248,28 @@ Field Service および Supply Chain Management の統合をサポートする�
 
 フィルター: (msdyn_systemstatus ne 690970005) および (msdyn_systemstatus ne 690970000) および (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![作業指示書から販売注文へのデータ統合におけるテンプレートのマッピング (Field Service から Supply Chain Management): WorkOrderHeader。](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![データ統合のテンプレートのマッピング](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderServiceLineEstimate
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および (msdyn_linestatus eq 690970000) および (msdynce_headersystemstatus ne 690970004)
 
-[![作業指示書から販売注文へのデータ統合におけるテンプレートのマッピング (Field Service から Supply Chain Management): WorkOrderServiceLineEstimate。](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![データ統合のテンプレートのマッピング](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderServiceLineUsed
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および ((msdyn_linestatus eq 690970001) または(msdynce_headersystemstatus eq 690970004))
 
-[![作業指示書から販売注文へのデータ統合におけるテンプレートのマッピング (Field Service から Supply Chain Management): WorkOrderServiceLineUsed。](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![データ統合のテンプレートのマッピング](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderProductLineEstimate
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および (msdyn_linestatus eq 690970000) および (msdynce_headersystemstatus ne 690970004) および (msdyn_allocated eq true)
 
-[![作業指示書から販売注文へのデータ統合におけるテンプレートのマッピング (Field Service から Supply Chain Management): WorkOrderProductLineEstimate。](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![データ統合のテンプレートのマッピング](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>ワーク オーダーから販売注文 (Field Service から Supply Chain Management) : WorkOrderProductLineUsed
 
 フィルター: (msdynce_headersystemstatus ne 690970005) および (msdynce_headersystemstatus ne 690970000) および (msdynce_orderhasexternalmaintainedproductsonly eq true) および ((msdyn_linestatus eq 690970001) または (msdynce_headersystemstatus eq 690970004) または (msdyn_allocated ne true))
 
-[![作業指示書から販売注文へのデータ統合におけるテンプレートのマッピング (Field Service から Supply Chain Management): WorkOrderProductLineUsed。](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![データ統合のテンプレートのマッピング](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)

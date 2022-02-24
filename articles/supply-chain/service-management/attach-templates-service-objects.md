@@ -1,10 +1,12 @@
 ---
 title: サービス対象にテンプレートを関連付ける方法
 description: テンプレート部品表 (BOM) をサービス対象関係に関連付けることができます。
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77f03a4f74ae4f0ebec67c2a86e369d7e7280b01
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d4f9329b124337e0c31ceabe0d40af097237ef49
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566266"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966008"
 ---
 # <a name="attach-templates-to-service-objects"></a>サービス対象にテンプレートを関連付ける方法    
 
@@ -52,6 +54,3 @@ ms.locfileid: "7566266"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

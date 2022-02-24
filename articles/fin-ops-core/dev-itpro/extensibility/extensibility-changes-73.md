@@ -2,24 +2,26 @@
 title: Finance and Operations、Enterprise edition 7.3 の拡張機能の変更
 description: このトピックは、Dynamics 365 for Finance and Operations、Enterprise edition 7.3 でリリースされた拡張機能を一覧表示します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: ed156ae3bcb160be08b5d0a5b032d9732da965aa
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d03680de9dd5dba614f29a542694fa1b116b8fd5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783028"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409347"
 ---
 # <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-73"></a>Finance and Operations、Enterprise edition 7.3 の拡張機能の変更
 
@@ -1566,6 +1568,3 @@ ms.locfileid: "7783028"
 |            その他: CompanyHelper.testCreateParameter のバグ修正             |
 | テーブル CustCollectionLetterJour - クラス cancelCollectionLetterCodeCustTrans |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

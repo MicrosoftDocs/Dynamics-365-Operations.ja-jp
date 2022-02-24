@@ -2,24 +2,26 @@
 title: Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更
 description: このトピックは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.1 でリリースされた拡張機能を一覧表示します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: App 8.0.1
-ms.openlocfilehash: 1bad133b68f559559b01278684302050c15ebc4c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6c06e76c1a20547219ecc0106f340e154e5d611b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782737"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409342"
 ---
 # <a name="extensibility-changes-in-finance-and-operations-update-801"></a>Finance and Operations 更新プログラム 8.0.1 の拡張機能の変更
 
@@ -89,6 +91,3 @@ ms.locfileid: "7782737"
 - 小数点以下の変数番号のサポート - InventTestUpperTolerance
 - トランザクションの取消でスキップ確認をサポートします。
 - PSAProjQuotationApproval ワークフローの拡張機能の有効化
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,25 +1,27 @@
 ---
 title: インターフェイスとして使用されるテーブル マップの拡張
 description: このトピックでは、インターフェイスとして使用されるテーブル マップを拡張する方法について説明します。
-author: MichaelFruergaardPontoppidan
+author: LarsBlaaberg
+manager: AnnBe
 ms.date: 12/10/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mfp
+ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 69c1f0bd4969c6a28a89917c3c0a25add0ba1152
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 21917212400b2d4184d389bf965ccc33daf4b202
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782013"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408841"
 ---
 # <a name="extend-table-maps-that-are-used-as-interfaces"></a>インターフェイスとして使用されるテーブル マップの拡張
 
@@ -35,7 +37,7 @@ ms.locfileid: "7782013"
 
 新しい **SalesPurchTableInterface** クラスは、**SalesPurchTable** テーブル マップのリファクタリングによって導入された ApplicationSuite 機能の抽象基本クラスです。 このクラスにはフィールドとメソッドの抽象メソッドが含まれています。これらはインターフェイスを実装する各テーブルに存在している必要があります。 これにより、メソッドに既定のロジックを含めることができ、すべての実装においてよく用いられます。 **SalesPurchTable** テーブル マップを実装する各テーブルは、**SalesPurchTableInterface** クラスの階層の派生クラスとして表す必要があります。 各派生クラスは、**SalesPurchTableInterfaceFactory** 属性クラスで修飾される必要があります。 属性を使用して派生クラスをテーブルに関連付けます。これで、**SalesPurchTable** レコードに応じて、適切なタイプのクラスのインスタンスを作成できるようになります。
 
-![MapsAsInterfaces.](media/MapsAsInterfaces1.png)
+![MapsAsInterfaces](media/MapsAsInterfaces1.png)
 
 テーブル マップ メソッドが廃止されたにもかかわらず、対応するメソッドはまだ実装テーブルに存在します。 これらのメソッドのロジックは、テーブル マップのメソッドへの呼び出しを階層の基本クラスの対応するメソッドにデリゲートすることからリファクタリングされています。
 
@@ -51,7 +53,7 @@ ms.locfileid: "7782013"
     
 上記のクラスと拡張機能は、次の図に示されています。
 
-![MapsAsInterfacesWalkThrough.](media/MapsAsInterfaces2.png)
+![MapsAsInterfacesWalkThrough](media/MapsAsInterfaces2.png)
 
 この図には、**SalesPurchTable** を実装する **ISV1Header** テーブルを含み、独自の **SalesPurchTableInterface** 派生クラスを含む ISVModule1 モデルが含まれています。 このモデルは ISVModule2 から独立しているため、ISVModule2 のロジックが、**ISV2SalesPurchTableInterface** クラス階層からインスタンスを作成すると、**SalesPurchTable** レコードが **ISV1Header** タイプの場合に基本クラスのインスタンスが返されます。 基本クラスのメソッドが、未知のテーブルに対して適切な結果を返す場合、同じインストール内で 2 つの ISV モデルが共存します。
 
@@ -149,6 +151,3 @@ public class ISV2PurchTableSalesPurchTable extends ISV2SalesPurchTableInterface
 }
 ```
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

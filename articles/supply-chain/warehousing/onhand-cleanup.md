@@ -2,9 +2,11 @@
 title: 倉庫管理の手持在庫エントリ クリーンアップ ジョブ
 description: このトピックでは、関連する不要なレコードを識別および削除することによってシステムのパフォーマンスを向上させる、手持在庫エントリのクリーンアップ  ジョブについて説明します。
 author: perlynne
+manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -12,17 +14,15 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d839ed861a24f6ef7267c85e942c275586b4a8c4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565099"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014486"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>倉庫管理の手持在庫エントリ クリーンアップ ジョブ
-
-[!include [banner](../includes/banner.md)]
 
 手持在庫の計算に使用されるクエリのパフォーマンスは、関連するテーブルのレコード数によって影響されます。 パフォーマンスを向上させる方法の 1 つとして、データベースで考慮する必要があるレコードの数を減らすことがあります。
 
@@ -62,6 +62,3 @@ ms.locfileid: "7565099"
 
 - **モジュール:** *倉庫管理*
 - **機能名:** *倉庫管理の手持在庫エントリ クリーンアップ ジョブの最大実行時間*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

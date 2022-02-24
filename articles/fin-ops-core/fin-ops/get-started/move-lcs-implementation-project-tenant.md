@@ -2,9 +2,11 @@
 title: LCS 実装プロジェクトを別の Azure AD テナントに移動する
 description: このトピックでは、サブスクリプションと LCS 実装プロジェクトを異なる Azure AD テナントに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
+manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: b3a8da64206caa9f2625c883d52e8528a91e758e3cd8b5f42f889a175ca11fa9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6bc18388671be84f34d98374a66276a16e435bc0
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768381"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797506"
 ---
 # <a name="move-lcs-implementation-projects-to-different-azure-ad-tenants"></a>LCS 実装プロジェクトを別の Azure AD テナントに移動する
 
@@ -32,9 +34,9 @@ ms.locfileid: "6768381"
 
 - サブスクリプションが購入された後、顧客は Azure AD テナントの構造を変更します。
 
-サブスクリプションおよび関連するすべてのコンポーネントの移動のプロセスには、次の図に示すように、次の 4 つの主要なステップがあります。
+定期購読および関連するすべてのコンポーネントの移動のプロセスには、次の図に示すように、次の 4 つの主要なステップがあります。
 
-![サブスクリプション契約を移動するためのプロセス。](./media/move-subscription-process.png)
+![定期売買を移動するためのプロセス](./media/move-subscription-process.png)
 
 ## <a name="activate-subscriptions-on-the-new-tenant"></a>新しいテナントのサブスクリプションを有効化
 
@@ -48,17 +50,17 @@ Microsoft クラウド ソリューション プロバイダー (CSP) 契約を�
 
 ### <a name="volume-licensing"></a>ボリューム ライセンス
 
-Microsoft ボリューム ライセンス契約を通じてライセンスを取得している場合は、[ボリューム ライセンス サポート センター](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx)に連絡し、サブスクリプションを古いテナントから新しいテナントに再マップするように依頼する必要があります。 Microsoft 365 管理センターからボリューム ライセンスのサポートに連絡することができます。 サブスクリプションが両方のテナントで有効になると、支払猶予期間を要求します。 顧客プライバシーの問題が原因で、顧客がこの要求を実行する必要があります。 次の情報が必要です。
+Microsoft ボリューム ライセンス契約を通じてライセンスを取得している場合は、[ボリューム ライセンス サポート センター](https://www.microsoft.com/Licensing/servicecenter/Help/Contact.aspx)に連絡し、サブスクリプションを古いテナントから新しいテナントに再マップするように依頼する必要があります。 Microsoft 365 管理センターからボリューム ライセンスのサポートに連絡することができます。 定期売買が両方のテナントで有効になると、支払猶予期間を要求します。 顧客プライバシーの問題が原因で、顧客がこの要求を実行する必要があります。 次の情報が必要です。
 
 - 公的顧客番号。
 - 登録番号。
-- 現在プロビジョニングされているサブスクリプションの現在のテナント ドメイン。
+- 現在プロビジョニングされている定期売買の現在のテナント ドメイン。
 - 顧客がサブスクリプションのプロビジョニングを希望する宛先テナント ドメイン。
 - 顧客が違うテナントに移行したボリューム ライセンス サブスクリプションを必要とする理由の詳細説明。
 - 新しいテナントに移動しなければならない有料サブスクリプションの総数、サブスクリプション タイプおよび定員数。
 
 > [!IMPORTANT]
-> 古いテナントで LCS の廃棄が完了するまでの数週間、サブスクリプションが両方のテナントで並行して有効であることが非常に重要です。
+> 古いテナントで LCS の廃棄が完了するまでの数週間、定期売買が両方のテナントで並行して有効であることが非常に重要です。
 
 ## <a name="configure-lcs-on-the-new-tenant"></a>新しいテナントに LCS をコンフィギュレーションします。
 
@@ -169,12 +171,9 @@ Web サービスへの呼び出しが、環境の **ホーム** テナントか�
 すべての環境を削除してすべてのアーティファクトを保存した後は、古いテナントの組織の管理者が LCS プロジェクトを削除する必要があります。
 Microsoft は、顧客のアカウントを無効にし、サービスが長期間にわたって中断された後に顧客データを削除する権限を保有します。
 
-## <a name="suspend-subscriptions-on-the-old-tenant"></a>古いテナントでサブスクリプションを中断します。
+## <a name="suspend-subscriptions-on-the-old-tenant"></a>古いテナントで定期売買を中断します。
 
 すべての環境が削除されると、必要な LCS コンポーネントを保存し、クラウド サービス プロバイダまたは Volume Licensing Support と協力して、以前の Azure AD テナントのすべてのライセンスを中断します。
 
 - **クラウド サービス プロバイダー** - 古いテナントに対して既存のサブスクリプションを中断します。
 - **ボリューム ライセンス サポート** - 作業が完了したこと、およびサブスクリプションが古いテナントに対してすぐ中断することを確認するボリューム ライセンス サポートを呼び出します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,37 +1,36 @@
 ---
 title: トレーニング コースの設定
 description: 人事管理の管理者とマネージャーは、作業者に提供されるトレーニングに関する情報を管理するためにコース機能を使用できます。
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c66459a044419535d66875cddac7eb73af744ca7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 253f0d07679b6327a0ed1e3cc20ede66249750b8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066753"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419438"
 ---
 # <a name="set-up-training-courses"></a>トレーニング コースの設定
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 人事管理の管理者とマネージャーは、作業者に提供されるトレーニングに関する情報を管理するためにコース機能を使用できます。
 
-##  <a name="set-up-prerequisites"></a> 前提条件の設定
+ <a name="set-up-prerequisites"></a> 前提条件の設定
+---------------------
 
 次の情報は、必須でコースを作成する前に設定する必要があります。
 -   **コースのタイプ**
@@ -83,7 +82,7 @@ ms.locfileid: "8066753"
 - 参加者の最小数と最大数の定義
 - コースの開催場所と教室の割り当て
 - コース参加者へのホテルの推奨
-- コースの説明の作成 (作成後は **従業員セルフ サービス** で通知することが可能)
+- コースの説明の作成 (作成後は従業員セルフ サービスで通知することが可能)
 
   >**注記** 登録者がいない場合のみコースを削除できます。 
 
@@ -129,7 +128,8 @@ ms.locfileid: "8066753"
 ## <a name="course-participants"></a>コース参加者
 コース参加者は、トレーニング コースまたはイベントに参加する作業者です。 オープン コースの参加者のみを登録できます。 コースに登録できる参加者の最小数と最大数は、**コース** ページの **全般** クイック タブで定義されます。
 
-## <a name="workflow"></a>ワークフロー
+<a name="workflow"></a>ワークフロー
+--------
 
 **従業員セルフ サービス** ページからコースに登録する従業員は、承認のワークフローを経て登録することができます。 **コース** ページの **一般** クイック タブで、コースにワークフローを割り当てることができます。
 
@@ -137,6 +137,3 @@ ms.locfileid: "8066753"
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

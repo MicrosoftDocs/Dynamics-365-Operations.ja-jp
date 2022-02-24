@@ -1,25 +1,27 @@
 ---
 title: Finance and Operations バージョン 8.0 での為替レート プロバイダーの作成
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) で為替レート プロバイダーを設定する方法について説明します。
-author: RyanCCarlson2
+author: aolson
+manager: AnnBe
 ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global
-ms.author: rcarlson
+ms.author: jbye
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 4b31130e05bff3111096587802a480b4efa16b11
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b24fae0d1c88f299b3406cd4e9c38ff33b60d64b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781558"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680520"
 ---
 # <a name="create-exchange-rate-providers-in-finance-and-operations-version-80"></a>Finance and Operations バージョン 8.0 での為替レート プロバイダーの作成
 
@@ -36,13 +38,13 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 - **為替レート プロバイダー** - 外部ソースから為替レートを取得する担当の X++ または C# クラス。
 - **為替レート プロバイダー登録** - 使用できるように、為替レート プロバイダーを有効にするプロセス。 既定では、為替レート プロバイダーは配置されると登録されません。
 - **為替レート プロバイダーのコンフィギュレーション**: 使用方法を決定する為替レート プロバイダーのコンフィギュレーション設定。
-- **為替レート サービス** - 発行された為替レートの一覧を提供する無料または有料のサブスクリプション サービス。 OANDA による外貨為替レートは、為替レートを提供するサービスの例です。
+- **為替レート サービス** - 発行された為替レートの一覧を提供する無料または有料の定期売買サービス。 OANDA による外貨為替レートは、為替レートを提供するサービスの例です。
 - **フレームワーク** – プロバイダーからの為替レートの取得および、それら為替レートの適切なストレージを調整するインポート通貨の為替レートのフレームワーク。
 
 ## <a name="conceptualclass-model"></a>概念/クラス モデル
 次の図は、為替レート プロバイダーのフレームワークを構成する主なインターフェイスとクラス、およびそれらの関係を示しています。 新しい為替レート プロバイダーは、**IExchangeRateProvider** インターフェイスから実装されている必要があります。 為替レート プロバイダーは、X++ または C# で記述されます。 X++ は .NET 言語なので、 Microsoft .NET Framework を簡単に使用できます。 C# で記述されているすべてのプロバイダーは C# プロバイダーとして認識された X++ クラスでラップする必要があります。 たとえば、ヨーロッパ為替レート プロバイダーの中央銀行は Microsoft が C# で書き出したプロバイダーです。 **ExchangeRateProviderCBOE** X++ クラスによってラップされます。
 
-[![為替レート プロバイダー フレームワークの概念/クラス モデル。](./media/exchangerates.png)](./media/exchangerates.png)
+[![為替レート プロバイダー フレームワークの概念/クラス モデル](./media/exchangerates.png)](./media/exchangerates.png)
 
 図で表示されるインターフェイスおよびクラスを次に示します。
 
@@ -474,6 +476,3 @@ OANDA テスト アカウントを要求し、OANDA 為替レートに関する�
 - **他の為替レート タイプからの為替レートを取得するプロバイダー** – このシナリオを実装すると、さまざまな為替レート タイプ間の為替レートの同期が可能になります。 この機能は、さまざまな元帳間の分離を維持するために、多くの為替レート タイプが存在する状況で役立ちます。
 - **為替レート サービスの任意の形式を ExchangeRateResponse クラスのインスタンスに変換するために Extensible Stylesheet Language Transformations (XSLT) を使用するプロバイダー** – このシナリオを実装すると、ユーザーは為替レート サービスに必要な XSLT 変換を追加することができ、アプリケーションはそのサービスをサポートします。 プロバイダー固有のコードは必要ありません。
 - **一部の為替レート プロバイダー サービスは、消費されるすべてのレートに対して料金を請求します** – このリストの最初のアイデアと、サービスから取得するレートの数の制限を組み合わせることを検討してください。 この機能は、サービスから消費される料金ごとに課金されるシナリオに役立ちます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

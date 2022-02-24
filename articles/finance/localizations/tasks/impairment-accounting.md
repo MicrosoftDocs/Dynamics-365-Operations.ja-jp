@@ -2,23 +2,26 @@
 title: 減損会計の共通パラメーターおよび転記プロファイルの設定
 description: このタスクでは、減損会計の共通パラメーターと転記プロファイルの定義方法が確認できます。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 25368e679cf12aa3eceffde0f97d8bea8672f8f9a50c413b2bbadc795fc7c34f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4232f4ce055904e11239535facfed07dab6f1785
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782796"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408177"
 ---
 # <a name="setup-impairment-accounting-common-parameters-and-posting-profile"></a>減損会計の共通パラメーターおよび転記プロファイルの設定
 
@@ -57,6 +60,3 @@ ms.locfileid: "6782796"
 9. [相殺勘定] フィールドで、任意の値を指定します。
 10. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

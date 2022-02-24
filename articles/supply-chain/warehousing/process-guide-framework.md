@@ -1,24 +1,27 @@
 ---
 title: プロセス ガイド フレームワーク
 description: このトピックでは、X++ で倉庫モバイル プロセスを拡張する開発者のプロセス ガイド フレームワークに関する情報を提供します。
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-audience: Application User, Developer, IT Pro
+audience: Developer
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6882c979ad9b37eb4f95a04259b6ac0f0a0edcdc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 86a974f949627c69f86f3f76281bb0fb90e893ce
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902049"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408684"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 
@@ -46,7 +49,7 @@ ms.locfileid: "7902049"
 
 次の順序図では、実行フローの概要を示します。 図は概要図以上のものでり、実際のコードを 1:1 で表したものではないことに注意してください。
 
-![プロセスの概要図。](media/schematic-overview.png) 
+![プロセスの概要図](media/schematic-overview.png)  
 
 ### <a name="reason-for-the-redesign"></a>再設計の理由
 
@@ -68,7 +71,7 @@ ms.locfileid: "7902049"
 
 コンポーネントを識別するために、まず、プロセスの生産の開始を調べます (**WhsWorkExecuteDisplayProdStart** クラス)。 次にプロセスの概要図を示します。
 
-![プロセスの概要図の画像。](media/production-start-process-schematic.png)
+![プロセスの概要図の画像](media/production-start-process-schematic.png)
 
 制御フローを見ると、次のコンポーネントが必要です。
 
@@ -81,7 +84,7 @@ ms.locfileid: "7902049"
 
 上のプロセス フロー図では、手順 1 から開始し、前の手順からのデータの処理を開始した後、最後に UI を構築した場合、データは次の手順で処理され続けます。 これにより、連続したステップ間に厳密な結合が生まれ、その結果、高レベルの新しい概略図は次のようになります。
 
-![高レベルのプロセス概略図の画像。](media/high-level-schematic.png)
+![高レベルのプロセス概略図の画像](media/high-level-schematic.png)
 
 以下は、再設計されたプロセスの重要なコンポーネントです。
 
@@ -117,7 +120,7 @@ ms.locfileid: "7902049"
 
 次のシーケンス図では、この制御フローについて説明します。 これは、設計を説明するために簡略化された、最も一般的な制御フローである点に注意してください。
 
-![簡略化された制御フロー。](media/control-flow.png)
+![簡略化された制御フロー](media/control-flow.png)
 
 ユーザーがボタンをクリックして (または、通常は既定のアクションをトリガーする値をスキャンして) モバイル デバイスでアクションを実行すると、要求は同じルートを経由して **ProcessGuideController** クラス内の **createResponse()** メソッドに到着します。 ただし、このとき、コントローラーはセッション状態情報から、ユーザーがいるステップを知ります。 したがって、適切な **ProcessGuideStep** クラスのインスタンスを作成し、実行メソッドを呼び出します。 同様に、**ProcessGuideStep** はユーザーによって呼び出されるアクション名を読み取り、適切な **ProcessGuideAction** クラスをインスタンス化して **execute()** を呼び出します。
 
@@ -129,7 +132,7 @@ ms.locfileid: "7902049"
 
 ステップが完了した後、ステップのステータスが **完了** に設定されている場合、コントローラーは **ProcessGuideNavigationAgent** のインスタンスを作成し、次のステップの名前が返されます。 その後、コントローラーはこのステップをインスタンス化し、**execute()** メソッドを呼び出します。サイクルが続行します。 ほとんどの場合、新しい手順は、対応する **ProcessGuidePageBuilder** を呼び出し、ユーザーに表示した後に戻される次の画面のユーザー インターフェイスを作成します。 このフローは、次のシーケンス図の下半分に反映されています。
 
-![シーケンス図。](media/sequence-diagram.png)
+![シーケンス図](media/sequence-diagram.png)
 
 ## <a name="building-a-new-process-using-the-processguide-framework"></a>ProcessGuide フレームワークを使用した新しいプロセスの構築
 
@@ -139,7 +142,7 @@ ms.locfileid: "7902049"
 
 まず、プロセス フローを理解しましょう。 最初の手順で、ユーザーは製造オーダー ID の入力を求められます。
 
-![生産 ID の確認。](media/production-id-prompt.png)
+![生産 ID の確認](media/production-id-prompt.png)
 
 製造オーダー ID をユーザーが入力すると、注文番号が検証されます。 実行される検証の一部は、ユーザーがログインしているのと同じ倉庫に注文があるかどうかと、注文のステータスに基づいています。 検証が失敗すると、ユーザーにはエラー メッセージが表示されます。 検証が正常に実行された場合、ユーザーには、製造オーダーと品目の詳細が表示されます。
 
@@ -662,6 +665,3 @@ _page.addButton(step.createAction(#ActionOK), true);
 拡張方法:
 
 -   **isComplete()** メソッドを拡張し、追加ロジックを構築します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

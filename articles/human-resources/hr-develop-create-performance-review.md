@@ -1,31 +1,29 @@
 ---
 title: 業績の確認の作成
 description: このトピックでは、パフォーマンス レビューの作成方法を説明し、レビューの各セクションの目的について説明します。
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c3ab4e769008bd8b401967e454aa6402f013773
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 99825dd580d617bb47b4f0ece784afbf6573ae8a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066953"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419365"
 ---
 # <a name="create-performance-reviews"></a>業績の確認の作成
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 このトピックでは、パフォーマンス レビューの作成方法を説明し、レビューの各セクションの目的について説明します。 この手順は、デモ データ会社 USMF を使用して作成されました。
@@ -68,18 +66,15 @@ ms.locfileid: "8066953"
 30. **評価** タブを選択します。  
 
     - **評価の詳細** クイック タブを使用すると、従業員は自分自身と管理者を評価して従業員を評価することができます。 重量を使用する場合は、スコアの重量の値が自動的に計算されます。  
-    - このセクションを表示するには、**人事管理共有パラメーター** ページで従業員の評価を表示するパラメーター設定を有効にします。  
+    - このセクションを表示するには、従業員の評価を表示するパラメータ設定を有効にします。  
 
-31. **サインオフ** タブを選択します。確認でワークフローが使用されている場合は、ワークフローが完了した後にのみサインオフが表示されます。 ワークフローを使用しない場合は、作業者およびマネージャーの両方がここに表示されます。 **サインオフ** で **必須** のチェック ボックスは、確認タイプの設定に基づいて選択されます。  
+31. **サインオフ** タブを選択します。確認でワークフローが使用されている場合は、ワークフローが完了した後にのみサインオフが表示されます。 ワークフローを使用しない場合は、作業者およびマネージャーの両方がここに表示されます。 必要なチェックボックスは、確認タイプの設定に基づいて選択されます。  
 32. **一般** タブを選択します。
 
     - 業績期間が既定の開始日と終了日を作成します。 これらの日付は編集できます。  
-    - ステータスがレビューへのアクセスを制御します。 **開始されていません** のステータスの場合、全員がレビューを編集できます。 **進行中** のステータスの場合、従業員のみがレビューの表示および編集をすることができます。 **確認準備完了** の場合、マネージャーのみがレビューの表示および編集ができます。 **最終レビュー** ステータスでは、レビュー タイプで **最終レビューで編集を許可** オプションが選択されている場合、従業員とマネージャーの両方がレビューの表示および編集を行えます。 **完了** および **キャンセル** ステータスの場合は、レビューは読み取り専用になります。 レビューが **却下** されて従業員に返送された場合は、従業員とマネージャーの両方が必要な編集を行って、従業員が再送信できるようにすることができます。
+    - ステータスがレビューへのアクセスを制御します。 **開始されていません** のステータスの場合、全員がレビューを編集できます。 **進行中** のステータスの場合、従業員のみがレビューの表示および編集をすることができます。 **確認準備完了** の場合、マネージャーのみがレビューの表示および編集ができます。 **最終確認**  ステータスの場合、従業員と管理者がレビューの表示と編集が可能です。編集するにはレビュー タイプで設定されている必要があります。 **完了** および **キャンセル** ステータスの場合は、レビューは読み取り専用になります。 レビューが **却下** されて従業員に返送された場合は、従業員とマネージャの両方が必要な編集を行って、従業員が再送信できるようにすることができます。
 
 33. **概要** フィールドに値を入力します。
 34. **レビュー** タブを選択します。レビューは実行ステータスに応じて、従業員およびマネージャーは、各目標またはコンピテンシーのコメントを追加できます。  
 35. **サインオフ** タブを選択します。作業者およびマネージャーはレビューでサインオフできます。 すべての必要なサインオフが完了すると、ステータスは **完了** に変更され、それ以降は内容を変更することはできません。  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

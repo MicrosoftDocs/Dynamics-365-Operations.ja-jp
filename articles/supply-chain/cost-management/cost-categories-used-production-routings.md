@@ -2,9 +2,11 @@
 title: 生産工順で使用される原価カテゴリ
 description: この記事は、工順を使用する製造環境に適用される原価カテゴリについて説明します。
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjCategory, RouteCostCategoryPrice
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca4c0c9cecb79366cdd41069cb6c96f01b44a2094f4caf57077c391beb6ac106
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f6204cfbdb56978f0b7611a38db8c23953ed83a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779689"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967714"
 ---
 # <a name="cost-categories-used-in-production-routing"></a>生産工順で使用される原価カテゴリ
 
@@ -53,6 +55,3 @@ ms.locfileid: "6779689"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

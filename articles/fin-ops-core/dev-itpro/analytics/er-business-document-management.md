@@ -2,24 +2,27 @@
 title: ビジネス ドキュメント管理の概要
 description: このトピックでは、ER フレームワークのビジネス ドキュメント管理機能を使用する方法について説明します。
 author: NickSelin
-ms.date: 04/23/2021
-ms.topic: overview
+manager: AnnBe
+ms.date: 12/15/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1e657ffbad88aeb9fd238112954f5555496ac329
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986254"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740959"
 ---
 # <a name="business-document-management-overview"></a>ビジネス ドキュメント管理の概要
 
@@ -44,9 +47,9 @@ Microsoft 365 アプリケーションを使用して、Excel または Word 形
 
 ## <a name="business-document-availability"></a>ビジネス ドキュメントの使用可能性
 
-2019 年 10 月のリリースで予定されているすべてのレポートの全一覧については、[Word および Excel のコンフィギュレーション可能なビジネス ドキュメント レポート](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) を参照してください。
+2019 年 10 月のリリースで予定されているすべてのレポートの全一覧については、[Word および Excel のコンフィギュレーション可能なビジネス ドキュメント レポート](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details) を参照してください。
 
-2020 年 10 月のリリースで予定されているすべてのレポートの全一覧については、[コンフィギュレーション可能なビジネス ドキュメント – Word テンプレート](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates) を参照してください。
+2020 年 10 月のリリースで予定されているすべてのレポートの全一覧については、[コンフィギュレーション可能なビジネス ドキュメント – Word テンプレート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates) を参照してください。
 
 さらに多くのレポートが、今後のリリースで使用可能になる予定です。 追加のレポートに関する特別な通知は、個別に送信されます。 現在使用可能なレポートの一覧を確認する方法については、以下の [コンフィギュレーション可能なビジネス ドキュメントをサポートする Finance でリリースされた ER コンフィギュレーションの一覧](#list-of-configurations-cbd) セクションを参照してください。
 
@@ -56,7 +59,7 @@ Microsoft 365 アプリケーションを使用して、Excel または Word 形
 
 ビジネス ドキュメント管理は ER フレームワーク上に構築されているので、ER パラメータをコンフィギュレーションして、ビジネス ドキュメント管理の操作を開始する必要があります。 これを行うには、[電子申告 (ER) フレームワークのコンフィギュレーション](electronic-reporting-er-configure-parameters.md) で説明されているように、ER パラメーターを設定する必要があります。 [コンフィギュレーション プロバイダーの作成および有効としてマーク](tasks/er-configuration-provider-mark-it-active-2016-11.md) で説明されているように、新しいコンフィギュレーション プロバイダーを追加する必要もあります。
 
-![ER ワークスペースです。](./media/BDM-Overview-ERSetting.png)
+![ER ワークスペース](./media/BDM-Overview-ERSetting.png)
 
 ## <a name="import-er-solutions"></a>ER ソリューションのインポート
 
@@ -66,22 +69,22 @@ Microsoft 365 アプリケーションを使用して、Excel または Word 形
 
 | ファイル                                      | コンテンツ |
 |-------------------------------------------|---------|
-| Customer invoicing model.version.2.xml    | [ER データ モデル構成](https://download.microsoft.com/download/b/f/a/bfa5cb52-e6e2-42bc-a4c0-77014a4c54e6/Customerinvoicingmodel.version.2.xml) |
-| Customer FTI report (GER).version.2.3.xml | [自由書式の請求書 ER 形式コンフィギュレーション](https://download.microsoft.com/download/3/c/2/3c2e58f2-6e56-43d9-85ea-4c97252a108d/CustomerFTIreportGER.version.2.3.xml) |
+| Customer invoicing model.version.2.xml    | [ER データ モデル構成](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Customer FTI report (GER).version.2.3.xml | [自由書式の請求書 ER 形式コンフィギュレーション](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **サンプル ER 支払 チェック ソリューション**
 
 | ファイル                                     | コンテンツ |
 |------------------------------------------|---------|
-| Model for cheques.version.10.xml         | [ER データ モデル構成](https://download.microsoft.com/download/3/7/6/376cb0f6-181a-4895-a432-390ffca64162/Modelforcheques.version.10.xml) |
-| Cheques printing format.version.10.9.xml | [支払小切手 ER 形式コンフィギュレーション](https://download.microsoft.com/download/6/d/6/6d61bfff-3d89-4377-9e34-2e3ee6d6df91/Chequesprintingformat.version.10.9.xml) |
+| Model for cheques.version.10.xml         | [ER データ モデル構成](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Cheques printing format.version.10.9.xml | [支払小切手 ER 形式コンフィギュレーション](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **サンプル ER 対外取引ソリューション**
 
 | ファイル                             | コンテンツ |
 |----------------------------------|---------|
-| Intrastat model.version.1.xml    | [ER データ モデル構成](https://download.microsoft.com/download/2/0/0/200d6ed1-eff8-48ec-ab75-175a4acf9714/Intrastatmodel.version.1.xml) |
-| Intrastat report.version.1.9.xml | [イントラスタット管理レポート ER 形式コンフィギュレーション](https://download.microsoft.com/download/7/a/2/7a2a27c3-a8a5-42a1-9d04-f0a8e1ec1707/Intrastatreport.version.1.9.xml) |
+| Intrastat model.version.1.xml    | [ER データ モデル構成](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Intrastat report.version.1.9.xml | [イントラスタット管理レポート ER 形式コンフィギュレーション](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 各ファイルをインポートするには、次の手順を使用します。 対応する ER *形式* コンフィギュレーションをインポートする前に、上のテーブルにある各 ER ソリューションの ER *データ モデル* コンフィギュレーションをインポートします。
 
@@ -91,11 +94,11 @@ Microsoft 365 アプリケーションを使用して、Excel または Word 形
 4. **参照** を選択して、必要な XML ファイルを読み込みます。
 5. **OK** を選択して、コンフィギュレーションのインポートを確認します。
 
-![コンフィギュレーションのインポートを確認する ER コンフィギュレーション ページです。](./media/BDM-Overview-ERSolutions.png)
+![コンフィギュレーションのインポートを確認する ER コンフィギュレーション ページ](./media/BDM-Overview-ERSolutions.png)
 
 また、正式に公開された ER 形式コンフィギュレーションを Microsoft Dynamics Lifecycle サービス (LCS) からインポートすることもできます。 たとえば、この手順を実行するには、最新バージョンの **自由書式の請求書 (Excel)** ER 形式コンフィギュレーションをインポートします。 対応する ER データ モデルと ER モデル マッピングのコンフィギュレーションが自動的にインポートされます。
 
-![LCS 共有資産ライブラリのコンテンツ ページです。](./media/BDM-Overview-SharedAssetLibrary.png)
+![LCS 共有資産ライブラリのコンテンツ ページ](./media/BDM-Overview-SharedAssetLibrary.png)
 
 ER コンフィギュレーションのインポートの詳細については、[ER コンフィギュレーション ライフサイクルの管理](general-electronic-reporting-manage-configuration-lifecycle.md) を参照してください。
 
@@ -113,7 +116,7 @@ ER コンフィギュレーションのインポートの詳細については�
 > [!NOTE]
 > ビジネス ドキュメント管理で新しいドキュメント ユーザー インターフェイスを使用する方法の詳細については、[ビジネス ドキュメント管理の新しいドキュメント ユーザー インターフェイス](er-business-document-management-new-template-ui.md) を参照してください。
 
-![機能管理ワークスペースです。](./media/BDM-Overview-FMEnabling.png)
+![機能管理ワークスペース](./media/BDM-Overview-FMEnabling.png)
 
 新規機能の有効化についての詳細は、[機能管理の概要](../../fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 
@@ -135,7 +138,7 @@ ER コンフィギュレーションのインポートの詳細については�
 
 必要なドキュメント管理パラメータおよびドキュメント タイプの設定方法については、[ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md) を参照してください。
 
-![ドキュメント管理のドキュメント タイプを設定します。](./media/BDM-Overview-DMSetting.png)
+![ドキュメント管理のドキュメント タイプを設定](./media/BDM-Overview-DMSetting.png)
 
 ### <a name="set-up-parameters"></a><a name="SetupBdmParameters"></a>パラメータの設定
 
@@ -153,18 +156,18 @@ ER コンフィギュレーションのインポートの詳細については�
 > [!NOTE]
 > このパラメーターでは、SharePoint 場所を使用してコンフィギュレーションされているタイプのドキュメントのみを使用できます。
 
-![ビジネス ドキュメント管理パラメーターを設定します。](./media/BDM-Overview-BDMSetting.png)
+![ビジネス ドキュメント管理パラメーターの設定](./media/BDM-Overview-BDMSetting.png)
 
 選択したドキュメント タイプは会社固有であり、選択したドキュメント タイプがコンフィギュレーションされている会社のビジネス ドキュメント管理をユーザーが使用する場合に使用されます。 ユーザーがもう一つの会社のビジネス ドキュメント管理を使用している際、この会社にコンフィギュレーションされていない場合は、選択された同じドキュメント タイプが使われます。 ドキュメント タイプが構成されている際、**SharePoint ドキュメント** タイプ フィールドで選択されたものの代わりに使用されます。
 
 > [!NOTE]
-> **SharePoint ドキュメント タイプ** のパラメーターにより、SharePoint フォルダーを、Microsoft Excel または Word を使用して編集可能なテンプレートの一時的な保管場所として定義します。 テンプレートを編集するためにこれらの Office デスクトップ アプリケーションを使用する計画の場合、このパラメーターを設定する必要があります。 詳細については、[Office デスクトップ アプリケーションのテンプレートの編集](#EditInOfficeDesktopApp) を参照してください。 Microsoft 365 の機能のみを使用してテンプレートを変更する予定の場合、このパラメーターを空白のままにしておくことができます。 詳細については、[Microsoft 365 のテンプレートの作成](#EditInOffice365) を参照してください。
+> **SharePoint ドキュメント タイプ** のパラメーターにより、SharePoint フォルダーを、Microsoft Excel または Word を使用して編集可能なテンプレートの一時的な保管場所として定義します。 テンプレートを編集するためにこれらの Office デスクトップ アプリケーションを使用する計画の場合、このパラメーターを設定する必要があります。 詳細については、[Office デスクトップ アプリケーションのテンプレートの編集](#EditInOfficeDesktopApp) を参照してください。 Microsoft 365 の機能のみを使用してテンプレートを変更する予定の場合、このパラメーターを空白のままにしておくことができます。 詳細については、[Microsoft 365 でテンプレートを編集](#EditInOffice365) を参照してください。
 
 ## <a name="configure-access-permissions"></a>アクセス許可のコンフィギュレーション
 
 既定では、ビジネス ドキュメント管理のアクセス許可が有効になっていない場合、ビジネス ドキュメント管理のワークスペースへのアクセス権を持つすべてのユーザーには、使用可能な ER ソリューション テンプレートがすべて表示されます。 ビジネス ドキュメント管理のワークスペースには、**ビジネス ドキュメント タイプ** タグによってマークされた ER 形式コンフィギュレーションに存在するテンプレートのみが表示されます。
 
-![ビジネス ドキュメント タイプ タグ付き ER コンフィギュレーション ページです。](./media/BDM-Overview-ERFormatTags.png)
+![ビジネス ドキュメント タイプ タグ付き ER コンフィギュレーション ページ](./media/BDM-Overview-ERFormatTags.png)
 
 ビジネス ドキュメント管理のワークスペースで使用できるテンプレートの一覧は、アクセス許可をコンフィギュレーションすることによって制限できます。 異なるテンプレートがさまざまなビジネス ドメイン (機能領域) のビジネス ドキュメントを作成するため使用されることは重要で、特定のユーザーがビジネス ドキュメント管理のワークスペースで編集するために別のテンプレートにアクセスできるように許可します。
 
@@ -180,19 +183,19 @@ ER コンフィギュレーションのインポートの詳細については�
 
     ビジネス ドキュメント管理のアクセス許可の使用が現在有効になっていないことを知らせる通知に、注意してください。
 
-    ![ビジネス ドキュメント管理のアクセス許可ページのコンフィギュレーターです。](./media/BDM-Overview-TemplatesAccess1.png)
+    ![ビジネス ドキュメント管理のアクセス許可ページのコンフィギュレーター](./media/BDM-Overview-TemplatesAccess1.png)
 
     この設定では、**ビジネス ドキュメント テンプレートの管理** (AOT 名 **ERBDManageTemplates**) の職務権限を実行するようにコンフィギュレーションされているセキュリティ ロールに割り当てられているすべてのユーザーが、ビジネス ドキュメント管理のワークスペースを開くことができます。そして、使用できるすべてのテンプレートを編集できます。
 
     次の図は、**売掛金管理係** ロールに割り当てられたユーザーのビジネス ドキュメント管理のワークスペースで使用できるものを示しています。 現在のアクセス許可の設定を使用すると、ユーザーは、請求、規制上のレポート、および支払など、さまざまな機能領域からビジネス ドキュメント テンプレートを編集できます。
 
-    ![売掛金勘定係のビジネス ドキュメント管理ワークスペース ページです。](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![売掛金勘定係のビジネス ドキュメント管理ワークスペース ページ](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. **アクセス許可のコンフィギュレーター** ページで、**アクセス許可の設定** を選択します。
 4. **テンプレートを編集するためのアクセス許可を設定** ダイアログ ボックスで、**コンフィギュレーションされたアクセス許可の適用** オプションを有効にします。
 5. **OK** を選択して、ビジネス ドキュメント管理のアクセス権が有効になっていることを確認します。
 
-    ![ビジネス ドキュメント管理のアクセス許可を確認します。](./media/BDM-Overview-TemplatesAccess2.png)
+    ![ビジネス ドキュメント管理のアクセス許可の確認](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. **追加** を選択して、ビジネス ドキュメント管理のテンプレートにアクセスするための許可をコンフィギュレーションする必要がある新しいビジネス ロールを入力します。
 7. **セキュリティ ロール** ダイアログ ボックスで、**売掛金管理係** ロールを選択し、**OK** を選択してロールの選択を確認します。
@@ -204,7 +207,7 @@ ER コンフィギュレーションのインポートの詳細については�
 
 11. **関連情報** ウィンドウを現在のページの右側から切り替えます。 **関連情報** ウィンドウには、コンフィギュレーション済のアクセス許可がどのように適用されるか示されます。これには、**売掛金管理係** ロールに割り当てられているユーザーが使用できる ER コンフィギュレーション テンプレートが含まれます。
 
-    ![アクセス許可のコンフィギュレーター ページの関連情報ペインです。](./media/BDM-Overview-TemplatesAccess3.png)
+    ![アクセス許可のコンフィギュレーター ページの関連情報ペイン](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. **コンフィギュレーションごとのアクセス許可** タブで、**追加** オプションを選択します。
 13. **コンフィギュレーションの選択** ダイアログボックスで、**イントラスタット レポート** の ER 形式コンフィギュレーションをマークします。
@@ -215,11 +218,11 @@ ER コンフィギュレーションのインポートの詳細については�
 - **機能領域** タグの値 **請求** をもつテンプレート。
 - **コンフィギュレーションごとのアクセス許可** タブで表示される ER 形式コンフィギュレーションからテンプレートを行います (この例の **法令報告** ドメインの **イントラスタット レポート** 形式コンフィギュレーションからテンプレート)。
 
-![アクセス許可のコンフィギュレーター ページのアクセス許可クイック タブです。](./media/BDM-Overview-TemplatesAccess4.png)
+![アクセス許可のコンフィギュレーター ページのアクセス許可クイック タブ](./media/BDM-Overview-TemplatesAccess4.png)
 
 次の図では、ビジネス ドキュメント管理のワークスペースが **売掛金管理係** ロールに割り当てられたユーザーに提供するものを示します。 現在のビジネス ドキュメントの管理アクセス許可の設定では、ユーザーは **請求** ドメインおよび **イントラスタット レポート** の ER形式コンフィギュレーションからビジネス ドキュメント テンプレートを編集できます。 **支払** ドメインからのテンプレートでは、**売掛金勘定係** ロールにアクセスできません。
 
-![ビジネス ドキュメント管理ワークスペース ページでのビジネス ドキュメント テンプレートを編集します。](./media/BDM-Overview-TemplatesForAlice2.png)
+![ビジネス ドキュメント管理ワークスペース ページでのビジネス ドキュメント テンプレートの編集](./media/BDM-Overview-TemplatesForAlice2.png)
 
 > [!NOTE]
 > **コンフィギュレーションごとのアクセス許可** ルールでは、ER 形式コンフィギュレーションの固有の特定 ID を使用して保存されます。 つまり、これらのルールは、それらを参照する ER コンフィギュレーションが削除されると、削除されません。 削除したコンフィギュレーションをこのインスタンスに戻すと、これらのルールによって再度参照されます。 削除したコンフィギュレーションを再度インポートした後で、再度ルールを設定する必要はありません。
@@ -241,7 +244,7 @@ ER コンフィギュレーションのインポートの詳細については�
 - ER コンフィギュレーション プロバイダー (つまり、**電子申告** ワークスペースで現在アクティブとしてマークされているプロバイダー) が所有するテンプレート。 これらのテンプレートの 1 つを選択後、**テンプレートの編集** を選択して、編集を開始または続行できます。
 - 他のER コンフィギュレーション プロバイダーが所有するテンプレート。 これらのテンプレートのいずれかを選択後、**新規ドキュメント** を選択して、ER コンフィギュレーション プロバイダーが所有するテンプレートのコピーを作成し、コピーの編集を開始できます。
 
-![ビジネス ドキュメント管理ワークスペース ページのテンプレート一覧です。](./media/BDM-Overview-EditingTemplate1.png)
+![ビジネス ドキュメント管理ワークスペース ページのテンプレート一覧](./media/BDM-Overview-EditingTemplate1.png)
 
 **テンプレート** タブには、選択したテンプレートの内容が表示されます。 **詳細** タブを選択して、選択したテンプレートとこのテンプレートが格納されている ER 形式コンフィギュレーションの詳細をレビューします。 すべてのテンプレートが **発行済** の状態になっており、**リビジョン** 列に詳細が含まれていないことを確認します。 これは、テンプレートが現在編集されていないことを意味します。
 
@@ -254,7 +257,7 @@ ER コンフィギュレーションのインポートの詳細については�
 1. ビジネス ドキュメント管理のワークスペースで、一覧の **小切手の印刷形式** テンプレートを選択します。
 2. **詳細** タブを選択します。
 
-![ビジネス ドキュメント管理のワークスペース ページ、詳細タブです。](./media/BDM-Overview-EditingTemplate2.png)
+![ビジネス ドキュメント管理のワークスペース ページ、詳細タブ](./media/BDM-Overview-EditingTemplate2.png)
 
 **編集テンプレート** オプションでは、選択したテンプレートを使用できます。 このオプションは、有効な ER コンフィギュレーション プロバイダー (この例では **Litware, inc.**) によって所有されている ER フォーマット コンフィギュレーションのテンプレートに対して、常に使用できます。 **テンプレートの編集** を選択すると、基になる ER 形式コンフィギュレーションの下書きバージョンの既存のテンプレートが編集できるようになります。
 
@@ -262,32 +265,16 @@ ER コンフィギュレーションのインポートの詳細については�
 
 1. ビジネス ドキュメント管理ワークスペースで、テンプレートとして使用するドキュメントを選択します。
 
-    ![ビジネス ドキュメント管理ワークスペース ページでドキュメントを選択します。](./media/BDM-Overview-EditingTemplate3.png)
+    ![ビジネス ドキュメント管理ワークスペース ページでのドキュメントの選択](./media/BDM-Overview-EditingTemplate3.png)
 
 2. **新しいドキュメント** を選択し、**タイトル** フィールドで、必要に応じて編集可能なテンプレートのタイトルを変更します。 このテキストは、自動的に作成される ER 形式コンフィギュレーションに名前を付けるために使用されます。 編集したテンプレートを含む、このコンフィギュレーション (**顧客 FTI レポート (GER) コピー**) のドラフト バージョンは、現在のユーザーに対して ER 形式を実行するよう自動的に設定されます。 同時に、基本 ER 形式コンフィギュレーションからの変更されていない元のテンプレートを使用して、他のユーザーがこの ER 形式を実行します。
 3. **名前** フィールドで、自動的に作成される編集可能なテンプレートの最初のリビジョンの名前を変更します。
 4. **コメント** フィールドで、自動的に作成された編集可能なテンプレートのリビジョンのコメントを変更します。
 5. **OK** を選択して、編集プロセスの開始を確認します。
 
-![新規テンプレートを作成するための編集プロセスの開始を確認します。](./media/BDM-Overview-EditingTemplate4.png)
-
-プロバイダーがない場合は、作成することができます。 有効なプロバイダーがない場合は、有効化を選択することができます。
-
-プロバイダーを作成するには、**名前** フィールドでプロバイダーの名前を変更し、**インターネット アドレス** フィールドで新しいプロバイダーのインターネット アドレスを更新した後、**OK** を選択して確認します。
-
-   ![BDM で新しいプロバイダーを作成します。](./media/bdm_create_provider.png)
-
-既存のプロバイダーを有効にするには、**構成プロバイダー** フィールドでプロバイダーの名前を選択して **OK** を選択し、プロバイダーを有効に設定します。
-
-   ![BDM でプロバイダーを有効化します。](./media/bdm_choose_provider.png)
-
-> [!NOTE]
-> 各 BDM テンプレートは、コンフィギュレーションの作成者としてプロバイダーを参照します。 そのため、テンプレートには有効なプロバイダーが必要です。
-
+![新規テンプレートを作成するための編集プロセスの開始を確認する](./media/BDM-Overview-EditingTemplate4.png)
 
 **新規ドキュメント** オプションは、リビジョンのない現在の、および別のプロバイダー (この例では Microsoft) によって提供されている ER フォーマット コンフィギュレーションのテンプレートに対して、常に使用できます。 編集したテンプレートは、自動的に生成される新規 ER 形式コンフィギュレーションで保存されます。
-
-
 
 ### <a name="start-editing-a-template"></a>テンプレートの編集開始
 
@@ -295,19 +282,19 @@ ER コンフィギュレーションのインポートの詳細については�
 2. **名前** フィールドで、自動的に作成される編集可能なテンプレートの最初のリビジョンの名前を変更します。
 3. **コメント** フィールドで、自動的に作成された編集可能なテンプレートのリビジョンの注釈を変更します。
 
-    ![ビジネス ドキュメント管理のワークスペース ページでテンプレートを編集します。](./media/BDM-Overview-EditingTemplate5.png)
+    ![ビジネス ドキュメント管理のワークスペース ページでのテンプレートび編集](./media/BDM-Overview-EditingTemplate5.png)
 
 4. **OK** を選択して、編集プロセスの開始を確認します。
 
 **BDM テンプレート エディター** ページが開きます。 選択したテンプレートは、Microsoft 365 を使用してオンライン編集できるようになります。
 
-![ビジネス ドキュメント管理のテンプレートのエディター ページです。](./media/BDM-Overview-EditingLayout1.png)
+![ビジネス ドキュメント管理のテンプレートのエディター ページ](./media/BDM-Overview-EditingLayout1.png)
 
 ### <a name="edit-a-template-in-microsoft-365"></a><a name="EditInOffice365"></a>Microsoft 365 でテンプレートを編集
 
 Microsoft 365 を使用してテンプレートを変更できます。 たとえば、Office online で、テンプレート ヘッダーの **レギュラー** から **太字** にフィールド プロンプトのフォントを変更します。 これらの変更は、プライマリ テンプレートのストレージ (既定では、Azure Blob Storage) に保存されている編集可能なテンプレートに自動的に保存されます。 これは ER フレームワーク用にコンフィギュレーションされています。
 
-![ビジネス ドキュメント管理テンプレートのエディター ページのテンプレート ヘッダー内でフォントを太字に変更します。](./media/BDM-Overview-EditingLayout2.png)
+![ビジネス ドキュメント管理のテンプレートのエディター ページのテンプレート ヘッダー内でフォントを太字に変更](./media/BDM-Overview-EditingLayout2.png)
 
 ### <a name="edit-a-template-in-the-office-desktop-application"></a><a name="EditInOfficeDesktopApp"></a>Office のデスクトップ アプリケーションでのテンプレートの編集
 
@@ -317,15 +304,15 @@ Microsoft 365 を使用してテンプレートを変更できます。 たと�
 1. **デスクトップ アプリケーションで開く** オプションを選択して、Office のデスクトップ アプリケーション (この例では Excel) の機能を使用し、テンプレートを変更します。 編集可能なテンプレートは、固定保管場所から、SharePoint フォルダーとしてビジネス ドキュメント管理パラメータでコンフィギュレーションされている一時的な保管場所にコピーされます。
 2. Office のデスクトップ Excel アプリケーションにて、一時的なファイルの保管場所からテンプレートを開くことを確認します。
 
-    ![デスクトップ Excel アプリケーションで開いたテンプレートです。](./media/BDM-Overview-EditingLayout3.png)
+    ![デスクトップ Excel アプリケーションで開いたテンプレート](./media/BDM-Overview-EditingLayout3.png)
 
 3. テンプレートを変更します。 たとえば、**黒** から **青** に色を更新してテンプレート ヘッダーのフィールド プロンプトのフォントを変更します。
 
-    ![デスクトップ Excel アプリケーションを使用したテンプレート ヘッダーのフォント色を変更します。](./media/BDM-Overview-EditingLayout4.png)
+    ![デスクトップ Excel アプリケーションを使用したテンプレート ヘッダーのフォント色の変更](./media/BDM-Overview-EditingLayout4.png)
 
 4. Excel デスクトップ アプリケーションで **保存** を選択して、一時的な保管場所にテンプレートの変更を保存します。
 
-    ![デスクトップ Excel アプリケーションを使用したビジネス ドキュメント管理テンプレートのエディター ページに変更を保存します。](./media/BDM-Overview-EditingLayout5.png)
+    ![デスクトップ Excel アプリケーションを使用したビジネス ドキュメント管理テンプレートのエディター ページへの変更の保存](./media/BDM-Overview-EditingLayout5.png)
 
 5. Excel デスクトップ アプリケーションを閉じます。
 6. **保存されたコピーを同期** を選択して、一時的テンプレート保管を固定テンプレート保管に同期します。
@@ -339,13 +326,13 @@ Microsoft 365 を使用してテンプレートを変更できます。 たと�
 2. **形式の表示** を選択すると、編集可能なテンプレートに配置する必要がある基本の ER 形式コンフィギュレーションからの形式の現構造が表示されます。 
 3. **フォーマットの非表示** を選択して、ウィンドウを閉じます。
 
-    ![BDM テンプレートのエディター ページです。](./media/BDM-Overview-EditingTemplate6.png)
+    ![BDM テンプレートのエディター ページ](./media/BDM-Overview-EditingTemplate6.png)
 
 4. **BDM テンプレートのエディター** ページを閉じます。
 
 更新されたテンプレートが **テンプレート** タブに表示されます。編集したテンプレートの状態が **ドラフト** になり、現在のリビジョンが空ではなくなったことを確認します。 これは、このテンプレートの編集のプロセスが開始されたことを意味します。
 
-![ビジネス ドキュメント管理ワークスペース ページに更新されたテンプレートを表示します。](./media/BDM-Overview-EditingTemplate5.png)
+![ビジネス ドキュメント管理ワークスペース ページに更新されたテンプレートを表示](./media/BDM-Overview-EditingTemplate5.png)
 
 ### <a name="test-the-modified-template"></a>変更したテンプレートのテスト 
 
@@ -355,13 +342,13 @@ Microsoft 365 を使用してテンプレートを変更できます。 たと�
 4. **モジュール - 売掛金** \> **ドキュメント** \> **自由書式の請求** \> **元のドキュメント** レベルを選択して、処理する請求書の範囲を指定します。
 5. **レポート形式** フィールドで、指定したドキュメント レベルの **顧客 FTI レポート (GER) コピー** の ER 形式を選択します。
 
-    ![管理設定ページを印刷します。](./media/BDM-Overview-TestRun1.png)
+    ![管理設定ページを印刷](./media/BDM-Overview-TestRun1.png)
 
 6. **エスケープ** を押して、現在のページを閉じます。
 7. **印刷** を選択し、**選択済** を選択します。
 8. ドキュメントをダウンロードし、Excel デスクトップ アプリケーションを使用して開きます。
 
-![自由書式の請求書のページです。](./media/BDM-Overview-TestRun2.png)
+![自由書式の請求書のページ](./media/BDM-Overview-TestRun2.png)
 
 変更したテンプレートは、選択した品目に対して自由書式の請求書レポートを生成するために使用されます。 テンプレートに加えた変更によってこのレポートがどのように影響を受けるかを分析するには、別のアプリケーション セッションでテンプレートを変更した直後に、1 つのアプリケーション セッションでこのレポートを実行します。
 
@@ -372,7 +359,7 @@ Microsoft 365 を使用してテンプレートを変更できます。 たと�
 3. 必要に応じて、**名前** フィールドで 2 番目のリビジョンの名前を変更し、現在有効な最初のリビジョンの基準とします。
 4. 必要であれば、**コメント** フィールドで、自動的に作成された編集可能なテンプレートのリビジョンの注釈を変更します。
 
-    ![ビジネス ドキュメント管理ワークスペース ページでテンプレートのリビジョンを作成します。](./media/BDM-Overview-AddRevision.png)
+    ![ビジネス ドキュメント管理ワークスペース ページでテンプレートのリビジョンを作成](./media/BDM-Overview-AddRevision.png)
 
     固定テンプレートの保管場所に保存されているテンプレートの新しいリビジョンを作成しました。 現在アクティブとして選択されている 2 番目のリビジョンのテンプレートの編集を続けることができます。
 
@@ -390,7 +377,7 @@ Microsoft 365 を使用してテンプレートを変更できます。 たと�
 
 現在アクティブなプロバイダーによって所有されている ER 形式からテンプレートを編集する場合は、テンプレートに導入された変更を取り消すためのオプションが提供されます。
 
-![ビジネス ドキュメント管理ワークスペース ページでテンプレートの変更を元に戻します。](./media/BDM-Overview-RevokeChanges.png)
+![ビジネス ドキュメント管理ワークスペース ページでテンプレートの変更を元に戻す](./media/BDM-Overview-RevokeChanges.png)
 
 1. **BDM テンプレート エディター** ページで、**テンプレート** タブを選択します。
 2. **取り消し** を選択します。
@@ -403,11 +390,11 @@ Microsoft 365 を使用してテンプレートを変更できます。 たと�
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="i-selected-edit-document-but-instead-of-going-to-the-bdm-template-editor-page-in-finance-i-was-sent-to-the-microsoft-365-webpage"></a>ドキュメントの編集を選択しましたが、Finance の BDM テンプレート編集ページではなく、Microsoft 365 の Web ページに移動しました。
+### <a name="i-selected-edit-document-but-instead-of-going-to-the-bdm-template-editor-page-in-finance-i-was-sent-to-the-microsoft-365-webpage"></a>ドキュメントの編集を選択しましたが、Finance の BDM テンプレート エディター ページに移動する代わりに、Microsoft 365 の Web ページに移動しました。
 
-この問題は、Microsoft 365 リダイレクトを伴う既知の問題です。 これは、初めて Microsoft 365 にサインインしたときに発生します。 この問題を回避するには、ブラウザーで **戻る** を選択して前のページに戻ります。
+この問題は、Microsoft 365 リダイレクトに関する既知の問題です。 初めて Microsoft 365 にサインインしたときに発生します。 この問題を回避するには、ブラウザーで **戻る** を選択して前のページに戻ります。
 
-### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>最初の申請セッションで Microsoft 365 を使用してテンプレートを編集する方法と、2 番目の申請セッションでテンプレートを使用し、自分の変更が生成されたビジネス文書にどのような影響を与えるかを確認するためにテンプレートを調整する方法を確認します。 Office デスクトップ アプリケーションを同じ方法で使用できますか?
+### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>最初のアプリケーション セッションで Microsoft 365 を使用してテンプレートを編集する方法と、2 番目のアプリケーション セッションでテンプレートを使用してテンプレートを調整し、変更が生成されたビジネス ドキュメントに与える影響を確認する方法について理解しています。 Office デスクトップ アプリケーションを同じ方法で使用できますか?
 
 はい、できます。 最初のアプリケーション セッションで、**デスクトップ アプリケーションを開く** を選択します。 テンプレートは一時ファイル保管場所に保存され、Office デスクトップ アプリケーションで開かれます。 次に、生成されたビジネス ドキュメントのテンプレートの変更をプレビューするために、次の手順を実行します。
 
@@ -434,9 +421,9 @@ Microsoft 365 を使用してテンプレートを変更できます。 たと�
 
 ## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>コンフィギュレーション可能なビジネス ドキュメントをサポートするために Finance でリリースされた ER コンフィギュレーションの一覧
 
-Finance の ERコンフィギュレーションの [一覧](general-electronic-reporting.md#list-of-configurations) は常に更新されます。 [グローバル リポジトリ](er-download-configurations-global-repo.md) を開き、現在サポートされている ER コンフィギュレーションの一覧を確認します。 グローバル リポジトリを [フィルター処理](../../../finance/localizations/enhanced-filtering-global-repo.md) して、コンフィギュレーション可能なビジネス ドキュメントをサポートするために使用される ER コンフィギュレーションの一覧を確認できます。
+Finance の ERコンフィギュレーションの [一覧](general-electronic-reporting.md#list-of-configurations) は常に更新されます。 [グローバル リポジトリ](er-download-configurations-global-repo.md) を開き、現在サポートされている ER コンフィギュレーションの一覧を確認します。 グローバル リポジトリを [フィルター処理](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) して、コンフィギュレーション可能なビジネス ドキュメントをサポートするために使用される ER コンフィギュレーションの一覧を確認できます。
 
-![コンフィギュレーション リポジトリ ページでグローバル リポジトリのコンテンツをフィルター処理します。](./media/bdm-overview-filterglobalrepo.gif)
+![コンフィギュレーション リポジトリ ページでグローバル リポジトリのコンテンツをフィルター処理](./media/bdm-overview-filterglobalrepo.gif)
 
 次の表に、コンフィギュレーション可能なビジネス ドキュメントをサポートし、2020 年 12 月まで Finance でリリースされていた ER コンフィギュレーションの一覧を示します。
 
@@ -592,6 +579,3 @@ Finance の ERコンフィギュレーションの [一覧](general-electronic-r
 |                             | 販売注文梱包明細 (LT) (Excel)           |
 |                             | 販売注文梱包明細 (PL) (Excel)           |
 |                             | 販売注文梱包明細 (Word)                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

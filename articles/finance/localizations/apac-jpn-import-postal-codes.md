@@ -1,24 +1,27 @@
 ---
 title: 日本の郵便番号のインポート
 description: このトピックでは、日本の郵便番号をインポートする方法について説明します。
-author: EricWangChen
+author: yijialuan
+manager: AnnBe
 ms.date: 11/22/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyTable
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
-ms.author: wangchen
+ms.author: riluan
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8855582950e63bce17b6fcdb16224ce1f5273861
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: ed798e1b7848bdb647f3ef0ca6a61b073b89e646
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592508"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408133"
 ---
 # <a name="import-postal-codes-for-japan"></a>日本の郵便番号のインポート
 
@@ -48,6 +51,3 @@ ms.locfileid: "7592508"
 5. インポート プロジェクトのソース ファイル形式を「CSV (Unicode)」に設定します。
 6. **インポート** をクリックします。
 7. 結果を検証します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

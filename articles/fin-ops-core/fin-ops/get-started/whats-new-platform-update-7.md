@@ -2,9 +2,11 @@
 title: Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 7 の新機能または変更された機能について説明します。 このバージョンは 2017 年 5 月にリリースされ、ビルド番号は 7.0.4542.16189 です。
 author: tonyafehr
+manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 625c7fe381b277ab214938a7a920dd337d0d98801f2030a9304b7ebc6111b07a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f46f1c02b34fc19c66efccfd80decf9270205ab
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748248"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797831"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-7-may-2017"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 7 (2017 年 5 月) の新機能および変更された機能
 
@@ -111,6 +113,3 @@ public class abFormEvent
         }
     }
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

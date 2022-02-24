@@ -1,26 +1,28 @@
 ---
-title: 出荷連結ポリシーが上書きされた際に出荷を連結する
+title: 出荷連結ポリシーが [倉庫へのリリース] ページで無効になっている場合の出荷の連結
 description: このトピックでは、1 つ以上の販売明細を、[倉庫へのリリース] ページから手動でリリースする必要がある場合で、かつリリース前にシステム定義の連結ポリシーを上書きする必要があるシナリオを示します。
 author: GarmMSFT
+manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipConsolidationSetShipment, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSReleaseToWarehouse
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 606f370277b67a65612d81916f4fcc93ca47224e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4aaaa7949d988607b38dd6e38a3c3497f227b8af
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574188"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963339"
 ---
-# <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>出荷連結ポリシーが上書きされた際に出荷を連結する
+# <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>出荷連結ポリシーが [倉庫へのリリース] ページで無効になっている場合の出荷の連結
 
 [!include [banner](../includes/banner.md)]
 
@@ -81,6 +83,3 @@ ms.locfileid: "7574188"
 
 - [出荷連結ポリシー](about-shipment-consolidation-policies.md)
 - [出荷連結ポリシーを構成する](configure-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

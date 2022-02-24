@@ -2,23 +2,25 @@
 title: 拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 description: このトピックでは、コマース 初期化クラスを拡張して、カスタムの Commerce Data Exchange (CDX) 同期をサポートする方法について説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: b9a13d936de6cf867821d849abf18f5090abf625
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 504058bb1aba63195a72f464a781bff33fca8236
+ms.sourcegitcommit: 93884aacaed7ac2b599d5c5ed87fdd119db43edd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781849"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4712682"
 ---
 # <a name="enable-custom-commerce-data-exchange-synchronization-via-extension"></a>拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
 
@@ -101,7 +103,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 4. プロジェクトを右クリックし、**追加** &gt; **新しい項目** を選択します。
 5. **新しい項目の追加** ダイアログ ボックスで、**リソース** を選択し、リソース ファイルに **RetailCDXSeedDataAX7_Custom** と名前を付けてから、**追加** を選択します。
 
-    ![新しい品目を追加します。](media/cdx-ext-1.png)
+    ![新しい品目の追加](media/cdx-ext-1.png)
 
 6. **リソース ファイルの選択** ダイアログ ボックスで、手順 2 で作成したリソース ファイルを検索し、**開く** を選択します。
 7. **registerCDXSeedDataExtension** イベントを処理するために使用する新しいクラスを追加します。 **RetailCDXSeedDataBase** クラスを検索し、デザイナーで開きます。 **registerCDXSeedDataExtension** デリゲートを右クリックし、**イベント ハンドラーをコピー** を選択します。
@@ -231,7 +233,7 @@ HQ とチャネル データベース間のデータ転送には、さまざま�
 
 ## <a name="cdx-sample---pull-new-columns-to-an-existing-table"></a>CDX サンプル - 新しい列を既存のテーブルにプルする
 
-Microsoft Dynamics 365 Retail アプリケーション更新プログラム 5 では、**RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables** に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
+Microsoft Dynamics 365 Retail アプリ更新プログラム 5 では、**RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables** に新しいサンプルが追加され、そこにすべてのサンプル SQL スクリプト、さまざまな CDX 拡張機能シナリオの ax プロジェクト ファイルがありますが、さまざまな CDX 拡張機能シナリオの参照として使用してください。
 
 次のセクションでは、拡張テーブルを使用してトランザクション テーブルをカスタマイズする手順とベスト プラクティスについて説明します。 他のセクションでは、CDX をカスタマイズしてチャネル側のカスタマイズされた (拡張子) テーブルをコマースにアップロードする方法を示します。 また、カスタマイズのテスト方法を説明するセクションも含めました。
 
@@ -321,7 +323,7 @@ Retail SDK のサンプル CDX リソース ファイルには、追加のカス
 
 OverrideTarget が "true" に設定されている場合、TargetTableName で定義されたテーブルはサブジョブのプライマリ テーブルをオーバーライドします (プル ジョブでは既定値フィールドが省略され、拡張フィールドのみが考慮されます)。 たとえば、このサンプルでは、この値を true に設定する場合は、これは ax.RetailTransactionTable からデータをアップロードするのではなく、CDX は ext.CONTOSORETAILTRANSACTIONTABLE からのデータのみをアップロードすることを意味します。
 
-指定されたサブジョブがシンクとして使用する **AxTableName** 値をフレームワークが既に判断できるので、**AxTableName** 属性は指定されません。 RetailCDXSeedDataAX7 リソースをカスタマイズする場合は、相違点を指定するだけで済みます。 フレームワークが推定できるすべてのデータは、拡張機能により追加する必要はありません。 同様に、`<AXFields></AXFields?` セクションでは、カスタム フィールドまたは新しいフィールドのみ指定されているのがわかります。拡張フレームワークにより、指定されたサブジョブ ID から残りのフィールドのリストが決まるためです。
+指定されたサブジョブがシンクとして使用する **AxTableName** 値をフレームワークが既に判断できるので、**AxTableName** 属性は指定されません。 RetailCDXSeedDataAX7 リソースをカスタマイズする場合は、相違点を指定するだけで済みます。 フレームワークが推定できるすべてのデータは、拡張機能により追加する必要はありません。 同様に、<AXFields></AXFields? セクションでは、カスタム フィールドまたは新しいフィールドのみ指定されているのがわかります。拡張フレームワークにより、指定されたサブジョブ ID からの残りのフィールドのリストが決まるためです。
 
 + CDX カスタマイズ リソースを持つ CDX モジュールが更新されます。 RetailCDXSeedDataAX7_ContosoRetailExtensionで指定されているカスタマイズを適用するには、registerCDXSeedDataExtension デリゲートを購読する必要があります。 このイベントをサブスクライブすることで、CDX シード データの初期化が実行されるときにカスタマイズが適用されることを保証できます。
 
@@ -416,6 +418,3 @@ OverrideTarget が "true" に設定されている場合、TargetTableName で�
 #### <a name="mpos-offline-transaction-sync"></a>MPOS オフライン トランザクションの同期
 
  MPOS をオフライン モードに切り替えて、トランザクションを実行します。 オンラインに切り替えて、データがオフライン データベースからチャネル データベースに、次いでバックオフィスに正しく同期されていることを確認します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

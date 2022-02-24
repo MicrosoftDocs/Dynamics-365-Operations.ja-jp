@@ -2,9 +2,11 @@
 title: AX 2009 の移行 － データ移行ツールのインストール
 description: このトピックでは、Microsoft Dynamics AX 2009 からデータを移行できるように、データ移行ツール (DMT) を設定する方法について説明します。
 author: kfend
+manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 2de55922a17058aae8f2bcc9e4774affc45a66d2eb22dca8b01e979b99aca476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de3268cd32cf2a3b7539c7862e83f41dc2c6791f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775256"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679934"
 ---
 # <a name="ax-2009-migration--install-the-data-migration-tool"></a>AX 2009 の移行 – データ移行ツールのインストール
 
@@ -37,7 +39,7 @@ ms.locfileid: "6775256"
 - SQL Server 認証は、SQL 認証と Microsoft Windows 認証の両方をサポートする必要があります。
 - 次の表のバージョン ガイダンスに従っている Microsoft Access データベース エンジン。
 
-    | Office バージョン                    | SQL Server 2008                 | SQL Server 2012 以降 |
+    |                                   | SQL Server 2008                 | SQL Server 2012 以降 |
     |-----------------------------------|---------------------------------|---------------------------|
     | **VM に Microsoft Office がない** | Access エンジン 32 ビット            | Access エンジン 64 ビット      |
     | **Microsoft Office 32 ビット**       | Access エンジン 32 ビット            | Access エンジン 64 ビット      |
@@ -96,7 +98,7 @@ ZIP ファイルを展開した場所に移動し、**defaultvalue.xlsx** を検
     - **DIXF サービス ホスト**: DIXF サービスのインストールのホスト名を入力します。
     - **テナント URL** – アプリケーション テナントの URL を入力します。 テナントが不明な場合は、Finance and Operations アプリケーションの web.config ファイルを参照してください。
 
-    > [!注意} Azure ポータルでは、Azure Active Directory (AAD) で新しいアプリケーションを作成するときは、2 つのオプションから選択できます。 **Web API** と **ネイティブ**。 このインスタンスでは、**ネイティブ** を選択し、ネイティブ AAD アプリケーションへのアクセス許可を付与します。
+    > [!注意} Azure ポータルでは、Azure Active Directory (AAD) で新しいアプリケーションを作成する際に、2 つのオプションから選択できます。 **Web API** と **ネイティブ**。 このインスタンスでは、**ネイティブ** を選択し、ネイティブ AAD アプリケーションへのアクセス許可を付与します。
 
 ## <a name="multi-box-setup"></a>マルチボックスの設定
 マルチボックスの設定の場合、次のコンピューターが必要です。
@@ -150,6 +152,3 @@ ZIP ファイルを展開した場所に移動し、**defaultvalue.xlsx** を検
 5. 3 つのチェック ボックスをすべてオンにしてすべてのルールを適用し、**次へ** を選択します。
 6. ルールの名前を入力し、**完了** を選択します。
 7. 送信ルールでこれらの手順を繰り返します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

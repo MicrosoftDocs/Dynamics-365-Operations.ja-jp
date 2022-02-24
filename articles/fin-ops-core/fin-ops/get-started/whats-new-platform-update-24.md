@@ -2,9 +2,11 @@
 title: Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 description: このトピックでは Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 24 (2019 年 3 月) でプレビューできる機能について説明します。
 author: tonyafehr
+manager: AnnBe
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 20189-XX-XX
 ms.dyn365.ops.version: Platform 24
-ms.openlocfilehash: 961d9218f16f01c4484234f52c34c2f9d9d542708d243a9153c7d66b3237a04c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d50c3b8f3652f7adabf796c2a8c9b9663c7265ca
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736184"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797851"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-platform-update-24-march-2019"></a>Finance and Operations プラットフォーム更新プログラム 24 (2019 年 3 月) の新機能および変更された機能
 
@@ -44,11 +46,11 @@ ms.locfileid: "6736184"
 
 - ナビゲーション バーには製品名の接尾語として「プレビュー」という単語が表示されます。  
 
-    ![ナビゲーション バーのプレビュー インジケーター。](media/previewCallout.png  "ナビゲーション バーのプレビュー インジケーター")  
+    ![ナビゲーション バーのプレビュー インジケーター](media/previewCallout.png  "ナビゲーション バーのプレビュー インジケーター")  
 
 - **情報** ボックスのタイトルには、「プレビュー」という単語が含まれます。 
 
-    ![プレビューは情報ボックスにも表示されます。](media/previewAboutBox.png  "プレビューは情報ボックスにも表示されます")
+    ![プレビューは情報ボックスにも表示されます](media/previewAboutBox.png  "プレビューは情報ボックスにも表示されます")
     
 
 ## <a name="updated-navigation-bar-that-aligns-with-the-office-header"></a>Office のヘッダーに対応した更新済みのナビゲーション バー
@@ -58,15 +60,15 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 
 次の図は、プラットフォーム更新プログラム 24 の更新済のナビゲーション バーを表示します。
 
-![プラットフォーム更新プログラム 24 の更新済のナビゲーション バー。](media/updatedNavBar.png  "プラットフォーム更新プログラム 24 の更新済のナビゲーション バー")
+![プラットフォーム更新プログラム 24 の更新済のナビゲーション バー](media/updatedNavBar.png  "プラットフォーム更新プログラム 24 の更新済のナビゲーション バー")
 
 次の図は、プラットフォーム更新プログラム 23 でナビゲーション バーがどのように表示されるかを示します。
 
-![プラットフォーム更新プログラム 23 のナビゲーション バー。](media/existingNavBar.png  "プラットフォーム更新プログラム 23 のナビゲーション バー")
+![プラットフォーム更新プログラム 23 のナビゲーション バー](media/existingNavBar.png  "プラットフォーム更新プログラム 23 のナビゲーション バー")
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
-プラットフォーム更新プログラム 24 に含まれる[プラットフォーム拡張機能の 1 番目の波](/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility)は、2019 年 4 月リリース ノートにドキュメントされています。 9 つの拡張機能が詳細に説明されています。ハイライトの 1 つは、フォーム ボタン コントロールの新しい onClicking イベントです。
+プラットフォーム更新プログラム 24 に含まれる[プラットフォーム拡張機能の 1 番目の波](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility)は、2019 年 4 月リリース ノートにドキュメントされています。 9 つの拡張機能が詳細に説明されています。ハイライトの 1 つは、フォーム ボタン コントロールの新しい onClicking イベントです。
 
 ## <a name="client-alert-support-for-email-notifications"></a>電子メール通知のクライアント警告サポート
 統合された変更追跡ツールで業務データを常に把握します。  プラットフォーム更新プログラム 24 を使用すると、あるイベントによってトリガーされたときに、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。  この機能は、Dynamic Ideas カスタマー フォーラムで最も求められている機能であると区別されています。  Dynamics 365 for Finance and Operations で、ユーザーはデータのフィルター処理されたビューを監視するためのカスタム警告ルールを定義できます。  電子メール通知を受信するオプションは、サポートされているすべての警告タイプで使用可能であり、既存の警告ルールでも有効にできます。  
@@ -77,7 +79,7 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 この新しい機能により、Finance and Operations の業務プロセスが実行されるときにビジネス イベントをキャプチャし、そのイベントを外部システムまたはアプリケーションに送信できるフレームワークが提供されます。
 
 > [!Note]
-> この機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については[リリース計画](/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features)を参照してください。 
+> この機能はプライベート プレビューとして使用できます。 その機能が一般に利用可能になる時期については[リリース計画](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features)を参照してください。 
 
 これにより、たとえば、発注書の承認によって、仕入先組織でのフルフィルメントがすぐにトリガーされるようになります。また破損部品の受領書 1 枚で、仕入先クレーム処理をリアルタイムでトリガーすることもできます。 これらのイベントは業務プロセスのコンテキストで発生するため、*ビジネス イベント* と呼ばれ、*業務プロセスの統合* が可能になります。
 
@@ -95,7 +97,7 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 
 -   高度な統合シナリオのための Azure イベント グリッドおよび Azure Service Bus ですぐに使える統合。
 
--   Microsoft Power Automate でビジネス イベントを「トリガー」として公開する。
+-   Microsoft Power Automateでビジネス イベントを「トリガー」として公開する。
 
 詳細については、[ビジネス イベントの概要](../../dev-itpro/business-events/home-page.md)を参照してください。
 
@@ -108,7 +110,7 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
@@ -121,6 +123,3 @@ Dynamics 365 Office 製品は、各ヘッダーを Office ヘッダーと対応�
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

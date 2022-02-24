@@ -61,6 +61,3 @@ OData コネクタを使用して、Power BI で追跡データを表示でき�
 |職務申請履歴 | ジョブアプリケーション (msdyn_JobapplicatonId)<br></br>ステータス (msdyn_status) <br></br>ステータスの理由 (msdyn_statusreason) <br></br>却下の理由 (msdyn_rejectionreason) |
 | ジョブ開始履歴 | 求人 (msdyn_JobopeningId) <br></br>ステータス (msdyn_jobopeningstatus) <br></br>ステータスの理由 (msdyn_jobopeningstatusreason) |
 | 候補者履歴 | 候補者 (msdyn_CandidateId) |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

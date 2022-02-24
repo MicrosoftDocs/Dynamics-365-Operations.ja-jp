@@ -1,36 +1,43 @@
 ---
-title: パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
-description: このトピックでは、Microsoft Visual Studio、パフォーマンス SDK、およびタスク レコーダー パフォーマンス テスト スクリプトを使用してシングルユーザー テストを行う方法について説明します。
+title: タスクレコーダーおよびパフォーマンスSDKを使用したシングルユーザーテスト
+description: このトピックでは、タスク レコーダーにて生成されたパフォーマンス テスト スクリプトと共に Microsoft Visual Studio とパフォーマンス SDK を使用してシングルユーザー テストを行う方法を説明します。
 author: hasaid
+manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 9954
 ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 52a90628d6a72d769a69a6969633997cf6c48e94
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 204d964c78c2913a08c555ff9a1e27f7de6d885e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781947"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680438"
 ---
-# <a name="single-user-testing-using-performance-sdk-and-task-recorder"></a>パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
+# <a name="single-user-testing-with-task-recorder-and-the-performance-sdk"></a>タスクレコーダーおよびパフォーマンスSDKを使用したシングルユーザーテスト
 
 [!include [banner](../includes/banner.md)]
 
 Visual Studio および パフォーマンス ソフトウェア デベロップメント キット (SDK) を使用し、タスク レコーダーにて生成されたパフォーマンス テスト スクリプトとともシングルユーザーテストを行うには、このトピックに記載の内容を参考にしてください。
 
+ > [!IMPORTANT]
+  > Visual Studio 2019は Visual Studio の最新バージョンです。webパフォーマンスと負荷機能テストを実装しています。 将来的に、代替ソリューションの推奨を公開します。  
+  > - Visual Studio および、オンプレミスでの負荷テストに向けたテストコント ローラー/テストエージェントをご利用の場合、 Visual Studio 2019が最新のバージョンになります。 そのサポート サイクルが終了するまで継続して使用することができます。 
+  > - クラウド ベースの負荷テストサービスをご利用の場合、同サービスは 2020 年 3 月 31 日まで継続してご利用いただけます。 それまでの間は、同サービスの全機能を継続してご利用いただけます。 また、オンプレミス負荷テストに切り替えることがも可能です。 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
+## <a name="prerequisites"></a>必要条件
+
+このトピックで扱う手順を完了するには、プラットフォーム更新プログラム 21、またはそれ以降が設定された開発環境を用意する必要があります。
 > [!IMPORTANT]
-> Visual Studio 2019は Visual Studio の最新バージョンです。webパフォーマンスと負荷機能テストを実装しています。
-> + Visual Studio および、オンプレミスでの負荷テストに向けたテストコント ローラー/テストエージェントをご利用の場合、 Visual Studio 2019が最新のバージョンになります。 そのサポート サイクルが終了するまで継続して使用することができます。 
-> + 詳細については、 [クラウド ベース 負荷テストサービスの終了について](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) をご参照ください。
+> Finance and Operations アプリが 21Vianet に配置されている場合は、10.0.11 またはそれ以降のプラットフォーム更新で開発する必要があります。
 
 ## <a name="use-task-recorder-to-define-and-record-an-end-to-end-business-scenario"></a>タスクレコーダーを使用してエンドツーエンドの業務シナリオを定義し、記録します。
 
@@ -61,7 +68,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 
 4. **PerfSDK** フォルダ配下に、 **Common\\External\\Selenium** というフォルダを作成します。
 
-    [![新しい PerfSDK フォルダー。](./media/single-user-test-03.png)](./media/single-user-test-03.png)
+    [![新規PerfSDKフォルダ](./media/single-user-test-03.png)](./media/single-user-test-03.png)
 
 5. 次のファイルをコピーして、上記の手順で作成したフォルダー **Common\\External\\Selenium** に保存します。
 
@@ -76,11 +83,11 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 1. 開発環境では、Microsoft Visual Studio を管理者権限で開きます。
 2. **PerfSDK** フォルダから、 **PerfSDKSample** ソリューションを開きます。 Tier1 サンドボックス、またはクラウドホスト環境では、PerfSDKフォルダは一般的に \<Service volumne\>:\\PerfSDK\\PerfSDKLocalDirectory にあります。
 
-    [![PerfSDK ディレクトリ。](./media/single-user-test-05.png)](./media/single-user-test-05.png)
+    [![PerfSDKディレクトリ](./media/single-user-test-05.png)](./media/single-user-test-05.png)
 
 3. Common\\External\\Selenium フォルダー内の WebDriver.dll への参照を追加します。
 
-    [![PerfSDKSample 参照。](./media/single-user-test-06.png)](./media/single-user-test-06.png)
+    [![PerfSDKSample 参照](./media/single-user-test-06.png)](./media/single-user-test-06.png)
 
 4. **Dynamics 365** メニューにて **アドイン** を指定し、 **記録から C\# パフォーマンステストを作成** を選択します。
 5. **タスクの記録をインポートする** ダイアログ ボックスで、以下の必要な詳細を入力します:
@@ -91,7 +98,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
     
 6. 完了後、 **インポート** を選択します。 PerfSDKSample プロジェクトの **生成された** フォルダ配下に新しいC\# クラスが作成されます。
 
-    [![生成されたフォルダ内の新しい C# クラス。](./media/single-user-test-09.png)](./media/single-user-test-09.png)
+    [![生成されたフォルダ内の新しいC#クラス](./media/single-user-test-09.png)](./media/single-user-test-09.png)
 
 7. ソリューションをビルドします。
 
@@ -104,7 +111,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
     - **AuthenticatorConfigurationCollection** 要素の配下にある **AuthenticatorConfiguration** の各要素を **AadAuthenticator** を **selfmintedtokenauthenticator** に置き換えます。
     - **AzureActiveDirectoryConfiguration** 要素と **KeyVaultConfigurations** 要素をコメント行にします。
 
-    [![更新およびコメントされたコードのサンプル。](./media/single-user-test-10.png)](./media/single-user-test-10.png)
+    [![更新およびコメント化されたコードのサンプル](./media/single-user-test-10.png)](./media/single-user-test-10.png)
 
 2. Visual Studioの **テスト** メニューにて、 **Windows** を指定し、 **テストエクスプローラー** を選択します。
 3. 実施したテストケースを右クリックし、 **選択したテストの実行** を選択します。
@@ -113,7 +120,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 
 タスクレコーダーとパフォーマンスSDKを使用したシングルユーザーテストには、以下のヒントと秘訣を参照してください。
 
-- タスク レコーダーを使用して業務を取り込む前に、エンドツーエンドの業務シナリオを最初に実行します。
+- タスクレコーダーを使用して業務を取り込む前に、エンドツーエンドの業務シナリオを最初に実行します。
 - タスクレコーダーを使用してシナリオを記録する場合は、ドロップダウンリストから値を選択するのではなく、手動で値を入力します。
 - 記録したタスクを再生し、すべてが期待どおりに動作することを確認してください。
 - ソリューションをビルド後にテストケースが表示されない場合は、 Visual Studio を再起動します。
@@ -121,6 +128,3 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 パフォーマンス SDK を使用するシングル ユーザーまたはマルチ ユーザーのテストの詳細については、[パフォーマンス SDK によるシングルユーザーまたはマルチユーザーのテストに関するトラブルシューティングガイド](troubleshoot-perf-sdk-user-testing.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

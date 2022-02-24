@@ -1,41 +1,45 @@
 ---
 title: Microsoft Dynamics 365 Field Service との統合の概要
 description: このトピックでは、Microsoft Dynamics 365 Field Service との統合の概要を提供します。
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 9428308211d51e7de8c61fb9aadef6ce1fd9886f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 18eef310470cafd9d59bb1c848bbaeb8bf5b9fa1
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062678"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528902"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Microsoft Dynamics 365 Field Service との統合の概要
 
 [!include[banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-Supply Chain Management により、Dynamics 365 Supply Chain Management および Dynamics 365 Field Service 間の業務プロセスの同期を有効にします。 統合シナリオは、業務プロセスの同期を有効にするため、拡張データ インテグレーター テンプレートおよび Microsoft Dataverse を使用して構成します。
-標準テンプレートを使用してカスタム統合プロジェクトを作成し、追加の標準フィールドとカスタム列、およびテーブルをマップして統合を調整して、特定のビジネス ニーズを満たすことができます。 
+Supply Chain Management により、Dynamics 365 Supply Chain Management および Dynamics 365 Field Service 間の業務プロセスの同期を有効にします。 統合シナリオは、業務プロセスの同期を有効にするため、拡張データ インテグレーター テンプレートおよび Common Data Service を使用して構成します。
+標準テンプレートを使用してカスタム統合プロジェクトを作成し、追加の標準フィールドとカスタム フィールド、およびエンティティをマップして統合を調整して、特定のビジネス ニーズを満たすことができます。 
 
 Field Service 統合は、既存の見込顧客の現金化機能の上に構築します。
 
-![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/field-service-integration.png)
+![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/field-service-integration.png)
 
-Field Service および Supply Chain Management の統合の第 1 のフェーズは、Field Service のワーク オーダーおよび契約を Supply Chain Management で請求できるようにすることに重点を置いています。 Field Service でサポートされているフローが開始され、ワーク オーダーの情報が Supply Chain Management に販売注文として同期されます。 Supply Chain Management では、販売注文は請求書請求書ドキュメントを生成するために請求されます。 さらに、Field Service 契約請求書からの情報は Supply Chain Management に同期されます。 Microsoft Dynamics 365 データ インテグレーターは、カスタマイズ可能なプロジェクトを使用してデータを同期します。 標準テンプレートを使用してカスタム統合プロジェクトを作成し、追加の標準フィールドとカスタム列、およびテーブルをマップして統合を調整し、特定の要件を満たすことができます。
+Field Service および Supply Chain Management の統合の第 1 のフェーズは、Field Service のワーク オーダーおよび契約を Supply Chain Management で請求できるようにすることに重点を置いています。 Field Service でサポートされているフローが開始され、ワーク オーダーの情報が Supply Chain Management に販売注文として同期されます。 Supply Chain Management では、販売注文は請求書請求書ドキュメントを生成するために請求されます。 さらに、Field Service 契約請求書からの情報は Supply Chain Management に同期されます。 Microsoft Dynamics 365 データ インテグレーターは、カスタマイズ可能なプロジェクトを使用してデータを同期します。 標準テンプレートを使用してカスタム統合プロジェクトを作成し、追加の標準フィールドとカスタム フィールド、およびエンティティをマップして統合を調整し、特定の要件を満たすことができます。
 
 Field Service および Supply Chain Management 統合の第 1 のフェーズは、次の項目の同期を有効にします。
 
@@ -57,7 +61,7 @@ Field Service および Supply Chain Management 間のワーク オーダーを�
 - Dynamics 365 Field Service ワーク オーダーに関連付けられた Supply Chain Management のプロジェクト
 - Supply Chain Management プロジェクトへのリンクを含む Dynamics 365 Field Service ワーク オーダーは、このプロジェクト番号を販売注文に適用して、プロジェクトからの請求を可能にします。 
 
-![在庫やプロジェクト情報など、Supply Chain Management と Field Service 間のビジネス プロセスを同期します。](./media/FSv2overview.png)
+![Supply Chain Management および Field Service 間の業務プロセスの同期](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Field Service および Supply Chain Management 統合の第 2 のフェーズは、次のテンプレートとの同期を有効にします:
 - 倉庫 (Supply Chain Management から Field Service) - Supply Chain Management の倉庫から Field Service [高度なクエリ] 
@@ -81,6 +85,3 @@ Field Service 統合ソリューションを使用するには、以下のコン
 - Field Service (バージョン 8.2.0.286) または、Dynamics 365 9.1.x のそれ以降のバージョン - 2018 年 11 月リリース
 - Dynamics 365 バージョン 1.15.0.1 またはそれ以降のバージョンの見込顧客を現金化 (P2C) するソリューション。 このソリューションは、[AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3) からダウンロードできます。
 - Dynamics 365 の「Field Service 統合、プロジェクトと在庫」ソリューション、バージョン 2.0.0.0 またはそれ以降のバージョン。 このソリューションは、[AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2) からダウンロードできます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,23 +2,27 @@
 title: 既定のカテゴリ ランディング ページと検索結果ページの概要
 description: このトピックでは、Dynamics 365 Commerce での既定のカテゴリ ランディング ページと検索結果ページの概要を提供します。
 author: ashishmsft
+manager: annbe
 ms.date: 06/30/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982437"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413719"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>既定のカテゴリ ランディング ページと検索結果ページの概要
 
@@ -30,7 +34,7 @@ ms.locfileid: "7982437"
 
 既定のカテゴリ ランディング ページは、Web サイトのユーザーがナビゲーション階層でカテゴリを選択したときに、通常表示されるページです。 カテゴリ ページを使用すると、参照したり、分類された製品を並べ替えたり、絞り込んだりすることができます。
 
-![既定のカテゴリ ランディング ページ。](./media/SimpleCategoryLandingDressCategory.png)
+![既定のカテゴリ ランディング ページ](./media/SimpleCategoryLandingDressCategory.png)
 
 ページの上部には、販売促進マネージャーがカテゴリ化したすべての製品カテゴリおよび他のページを表示するヘッダーがあります。 コンフィギュレーションはチャネル ナビゲーション階層のコンフィギュレーションの一部として実行されます。 ページの下部には、買い物客が興味を持つ可能性のあるさまざまなトピックへのクイック リンクを含むフッターがあります。
 
@@ -54,7 +58,7 @@ ms.locfileid: "7982437"
 
 カテゴリ ランディング ページに、特定のカテゴリに合わせたよりカスタマイズされた経験が必要な場合は、そのカテゴリのカテゴリ ランディング ページを「拡充」できます。 たとえば、マーケティング ビデオおよびいくつかのカテゴリのストーリーテリングを追加して、買い物客の注意を引くことができます。 詳細については、[カテゴリ ランディング ページの拡充](enrich-category-page.md) を参照してください。
 
-![拡充されたカテゴリ ランディング ページ。](./media/CategoryLandingPages.png)
+![拡充されたカテゴリ ランディング ページ](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>自動提案および検索結果ページ
 
@@ -68,11 +72,11 @@ Web サイトのユーザーは、ナビゲーション階層からカテゴリ�
 - **製品** は、製品の詳細ページへの直接リンクを提供します。
 - **スコープ カテゴリ検索候補** は、さまざまなカテゴリを一覧表示し、ユーザーが特定のカテゴリのキーワードを検索できるようにします。
 
-![没入型の自動提案。](./media/ImmersiveAutoSuggestUX.png)
+![没入型の自動提案](./media/ImmersiveAutoSuggestUX.png)
 
 ユーザーがキーワードまたはスコープ カテゴリ検索候補のいずれかを選択した場合、または、入力した検索語句に対する提案がない場合は、検索結果ページにリダイレクトされます。 ユーザーは、検索結果の一覧を参照、並べ替え、および絞り込んで、目的の品目を見つけることができます。
 
-![ランディングを検索します。](./media/SearchLanding.png)
+![検索のランディング](./media/SearchLanding.png)
 
 検索結果ページには、次のコンポーネントが不可欠です。
 
@@ -93,7 +97,7 @@ Web サイトのユーザーは、ナビゲーション階層からカテゴリ�
 
 >[!NOTE]
 >これらのクラウドを利用した検索機能は、バージョン 10.0.8 以降で使用できます。 **コマース パラメーター > コンフィギュレーション パラメーター** で、「ProductSearch.UseAzureSearch が "true" に設定」されたエントリがあることを確認します。 
-![クラウドを利用した検索のためのコンフィギュレーション パラメーター。](./media/CloudPoweredSearchConfigurationParameters.png)
+![クラウドを利用した検索のためのコンフィギュレーション パラメーター](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -107,6 +111,3 @@ Web サイトのユーザーは、ナビゲーション階層からカテゴリ�
 
 [アカウント管理ページの概要](quick-tour-account-management.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

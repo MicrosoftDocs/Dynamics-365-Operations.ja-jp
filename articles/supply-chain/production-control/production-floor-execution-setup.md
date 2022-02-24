@@ -2,35 +2,37 @@
 title: 生産現場の実行インターフェースを実行するデバイスを設定する
 description: 生産現場の実行インターフェイスは、生産現場のすべてのデバイスに対して設定されます。 通常、会社では、デバイスのサービスの目的に応じて、各デバイスの設定を変えることができます。 たとえば、ある会社では、作業者が出勤時間および退勤時間を記録する受付エリアに 1 台のデバイスがあり、作業者が作業を管理する作業現場に別のデバイスがあるとします。
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752835"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966282"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを実行するデバイスを設定する
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 生産現場の実行インターフェイスは、生産現場のすべてのデバイスに対して設定されます。 通常、会社では、デバイスのサービスの目的に応じて、各デバイスの設定を変えることができます。 たとえば、ある会社では、作業者が出勤時間および退勤時間を記録する受付エリアに 1 台のデバイスがあり、作業者が作業を管理する作業現場に別のデバイスがあるとします。
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>特定のデバイスの構成とフィルタの設定
 
-デバイスの構成とジョブ フィルターを設定するには、*時間監視の管理* 職務権限を含むセキュリティ ロールを持つアカウントを使用して、**生産現場の実行** ページにサインインします。 (最初から用意されているセキュリティ ロールの中で、*作業現場の監督* だけがこの権限を持ちます。) 次に、以下の手順を実行します。
+デバイスの構成とジョブ フィルターを設定するには、*時間スーパーバイザーの管理* 権限を含むセキュリティ ロールを持つアカウントを使用して、**生産現場の実行** ページにサインインします。 (最初から用意されているセキュリティ ロールの中で、*作業現場の監督* だけがこの権限を持ちます。) 次に、以下の手順を実行します。
 
-1. 設定するデバイスに移動して、作業現場監督として Microsoft Dynamics 365 Supply Chain Management にサインインします。 (*時間監視の管理* 職務権限を含むアカウントを使用します。)
+1. 設定するデバイスに移動して、作業現場監督として Microsoft Dynamics 365 Supply Chain Management にサインインします。 (*時間スーパーバイザーの管理* 権限を含むアカウントを使用します。)
 1. 設定するデバイスの構成が使用可能であることを確認します。 構成がまだ存在しない場合は、既定の構成が提供されます。 構成の設定方法については、[生産現場の実行インターフェースを構成する](production-floor-execution-configure.md) を参照してください。
 1. **生産管理 \> 製造実行 \> 生産現場の実行** に移動します。
 
@@ -70,13 +72,10 @@ ms.locfileid: "7752835"
 
 次の図の上部には、インターフェイスが既定でどのように表示されるかを示しています。 下の部分は、ナビゲーション ウィンドウが非表示の場合、全画面モードでどのように表示されるかを示しています。
 
-![標準対全画面表示インターフェイス。](media/pfei-full-screen.png "標準対全画面表示インターフェイス")
+![標準対全画面表示インターフェイス](media/pfei-full-screen.png "標準対全画面表示インターフェイス")
 
 ## <a name="extend-the-session-past-12-hours"></a>12 時間経過したセッションを延長する
 
 既定では、生産現場の実行インターフェースは、12 時間誰も使用しない場合、自動的にサインアウトします。 Supply Chain Management ユーザーは、再度サインインする必要があります。 ただし、タイムアウト制限を最大 90 日まで延長できます。
 
 タイムアウト制限を延長するには、Supply Chain Management にサインインし、**システム管理 \> ユーザー \> セッション拡張機能** に移動します。 デバイスへのサインインに使用する Supply Chain Management のユーザー アカウントと、セッションをアクティブにしておく時間数を指定します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

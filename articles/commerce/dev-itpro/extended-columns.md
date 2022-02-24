@@ -2,35 +2,37 @@
 title: チャネル データベースの事前拡張された列
 description: このトピックでは、チャネル データベース内の事前拡張された列がどのように拡張に使用されるかについて説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 4654363ee987438ce3917880dc01a424e135740a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b5af2ec35e8f359169e100547556f74454fe73ac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782829"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681572"
 ---
 # <a name="pre-extended-columns-in-the-channel-database"></a>チャネル データベースの事前拡張された列
 
 [!include [banner](../../includes/banner.md)]
 
-チャネル データベース内の一部の列は、*事前拡張* されています。 つまり、チャネル データベースの列の長さが Microsoft Dynamics 365 Commerce 本体が規定する列の長さを超えています。 たとえば、**INVENTSERIALID** フィールドの長さは、Commerce 本体のデータベースでは 20 文字、チャネル データベースでは 50 文字です。
+チャネル データベース内の一部の列は、*事前拡張* されています。 つまり、チャンネルデータベースの列の長さが Microsoft Dynamics 365 Commerce 本体が規定する列の長さを超えています。 たとえば、**INVENTSERIALID** フィールドの長さは、Commerce 本体のデータベースでは 20 文字、チャネル データベースでは 50 文字です。
 
 チャネル データベースのフィールドは拡張されることは多いですが、フィールドの列の長さは拡張に対応していません。 したがって、拡張が必要となった場合にも対応できるよう、標準で列の長さが増設されています。
 
 > [!NOTE]
-> 事前拡張されていないフィールドを拡張する必要がある場合は、Lifecycle Services (LCS) で拡張リクエストを提出する必要があります。 詳細については、[拡張性要求](../../fin-ops-core/dev-itpro/extensibility/extensibility-requests.md) を参照してください。
+> 事前拡張されていないフィールドを拡張する必要がある場合は、Lifecycle Services (LCS) で拡張リクエストを提出する必要があります。 詳細については、[拡張性要求](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-requests) を参照してください。
 
 このフィールドは、チャネル データベースで拡張されますが、拡張データ型 (EDT) の拡張モデルを使用して、Commerce 本体のデータベースのフィールドも拡張する必要があります。 さらに、これに対応する販売時点管理 (POS) 、または Commerce Runtime (CRT) ユーザー インターフェイス (UI) を拡張する必要があります。
 
@@ -153,23 +155,14 @@ namespace Contoso
 | LOGISTICSPOSTALADDRESS        | STREET                                                                        | Nvarchar (400) | ValidateAddressLength |                                     |
 | LOGISTICSPOSTALADDRESS        | COUNTY                                                                        | Nvarchar (60)  | ValidateAddressLength |                                     |
 | LOGISTICSADDRESSCITY          | COUNTYID                                                                      | Nvarchar (60)  |                       |                                     |
-| LOGISTICSADDRESSCITY          | STATEID                                                                      | Nvarchar (60)  |                       |                                     |
 | LOGISTICSADDRESSCOUNTY        | COUNTYID                                                                      | Nvarchar (60)  |                       |                                     |
 | LOGISTICSADDRESSDISTRICT      | COUNTYID\_RU                                                                  | Nvarchar (60)  |                       |                                     |
-| LOGISTICSADDRESSDISTRICT      | STATEID\_RU                                                                  | Nvarchar (60)  |                       |                                     |
 | LOGISTICSADDRESSZIPCODE       | STREETNAME                                                                    | Nvarchar (400) |                       |                                     |
 | LOGISTICSADDRESSZIPCODE       | COUNTY                                                                        | Nvarchar (60)  |                       |                                     |
-| LOGISTICSADDRESSZIPCODE       | STATE                                                                        | Nvarchar (60)  |                       |                                     |
-| LOGISTICSADDRESSZIPCODE       | ZIPCODE                                                                        | Nvarchar (60)  |                       |                                     |
-| LOGISTICSADDRESSSTATE        | STATEID                                                                        | Nvarchar (60)  |                       |                                     |
-| LOGISTICSELECTRONICADDRESS   | COUNTRYREGIONCODE                                                              | Nvarchar (10)  |   ValidateElectronicAdtronicServiceRequest                    |                                     |
 | RETAILASYNCADDRESS            | STREET                                                                        | Nvarchar (400) |                       |                                     |
 | RETAILASYNCADDRESS            | COUNTY                                                                        | Nvarchar (60)  |                       |                                     |
 | RETAILASYNCCUSTOMER           | STREET                                                                        | Nvarchar (400) |                       |                                     |
 | RETAILASYNCCUSTOMER           | COUNTY                                                                        | Nvarchar (60)  |                       |                                     |
-| CUSTOMERTABLETYPE_V2           | FIRSTNAME                                                                        | Nvarchar (100)  | ValidateCustomerNameLengthServiceRequest                     |                                     |
-| CUSTOMERTABLETYPE_V2          | MIDDLENAME                                                                        | Nvarchar (100)  | ValidateCustomerNameLengthServiceRequest                       |                                     |
-| CUSTOMERTABLETYPE_V2           | LASTNAME                                                                        | Nvarchar (100)  |  ValidateCustomerNameLengthServiceRequest                      |                                     |
 | RETAILFISCALDOCUMENT\_BR      | FEADDRESSSTREET                                                               | Nvarchar (400) |                       |                                     |
 | RETAILFISCALDOCUMENT\_BR      | THIRDPARTYADDRESSSTREET                                                       | Nvarchar (400) |                       |                                     |
 | RETAILTAXFILTERS              | COUNTYID                                                                      | Nvarchar (60)  |                       |                                     |
@@ -178,7 +171,6 @@ namespace Contoso
 | RETAILTRANSACTIONSALESTRANS   | INVENTBATCHID                                                                 | Nvarchar (50)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | INVENTSERIALID                                                                | Nvarchar (50)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | WAREHOUSELOCATION                                                             | Nvarchar (60)  |                       |                                     |
-| RETAILDLVMODEADDRESSEXPLODED   | STATE                                                                        | Nvarchar (60)  |                       |                                     |
 | INVENTDIM                     | INVENTBATCHID                                                                 | Nvarchar (50)  |                       |                                     |
 | INVENTDIM                     | INVENTSERIALID                                                                | Nvarchar (50)  |                       |                                     |
 | INVENTDIM                     | CONFIGID                                                                      | Nvarchar (60)  |                       |                                     |
@@ -205,6 +197,3 @@ namespace Contoso
 |                               | GIFTCARDINQUIRYPRINTHISTORY INT NULL DEFAULT(0)                               |               |                       |                                     |
 | RETAILINFOCODETABLE           | PRINTINPUTONFISCALRECEIPT \[int\] NULL DEFAULT (0) PRINTTEXTONFISCALRECEIPT \[nvarchar\] (50) NULL DEFAULT('') |               |                       |                                     |
 | RETAILINFORMATIONSUBCODETABLE | PRINTTEXTONFISCALRECEIPT \[nvarchar\](50) NULL DEFAULT('')                    |               |                       |                                     |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

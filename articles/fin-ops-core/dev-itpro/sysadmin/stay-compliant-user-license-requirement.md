@@ -2,9 +2,11 @@
 title: ユーザー ライセンス要件への準拠の維持
 description: このトピックでは、Finance and Operations アプリのユーザー ライセンス要件を遵守する方法に関する情報を提供します。
 author: peakerbl
+manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: 62ed2e0c187ee18ed2ac3506cee0ca63d5c4b663
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 5b4e0994bdd6ad6ea09fa0662593554939c3dd96
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594895"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679904"
 ---
 # <a name="stay-compliant-with-user-licensing-requirements"></a>ユーザー ライセンス要件への準拠の維持
 
@@ -32,7 +34,7 @@ ms.locfileid: "7594895"
 - 権限
 - 直接参照された、セキュリティ保護可能なオブジェクト 
 
-詳細については、[ロールベース セキュリティ](./role-based-security.md)を参照してください。
+詳細については、[ロールベース セキュリティ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security)を参照してください。
 
 ユーザーのライセンス要件は、組織またはテナント レベルで決定されます。 このトピックでは、単一の環境の要件に重点を置いて説明します。 複数の環境がある場合は、すべての要件に対して要件を分析する必要があります。
 
@@ -44,7 +46,7 @@ ms.locfileid: "7594895"
 
 **ユーザー** ページ (**システム管理者 \>ユーザー**) で、ユーザーに役割を割り当てます。 **選択したユーザーのロール** 情報ボックスで各ロールのライセンス要件を表示できます。
 
-![ユーザー ページで選択したユーザー情報ボックスのロール。](media/UsersRoles.png)
+![ユーザー ページで選択したユーザー情報ボックスのロール](media/UsersRoles.png)
 
 ライセンスの最大要件によって、ユーザーの実際のライセンス要件が決まります。 ライセンス要件が **操作** として識別された場合は、[ユーザー ライセンスの見積もり](#user-license-estimator-report) レポートを使用して、ユーザーのフル ライセンス要件を決定する必要があります。
 
@@ -55,7 +57,7 @@ ms.locfileid: "7594895"
 
 **セキュリティの構成** ページ (**システム管理者 \>セキュリティ \> セキュリティの構成**) でのセキュリティ構成中に、セキュリティ オブジェクト、役割、職務、またはアクセス許可を選択し、**アクセス許可の表示** を選択することにより、現在含まれているすべてのアクセス許可、およびライセンス要件を表示できます。 **アクセス許可の表示** ページのヘッダーに、必要なライセンス レベルが表示されます。
 
-![アクセス許可の表示ページ。](media/ViewPermissons.png)
+![アクセス許可の表示ページ](media/ViewPermissons.png)
 
 > [!NOTE]
 > バージョン 10.0.15 のプラットフォーム更新を開始して、必要なライセン スタイプが、Commerce、Finance、および Supply Chain Management などのアプリケーション固有のライセンス タイプが含まれるように拡張されています。 この拡張機能を使用すると、実際のライセンス要件を決定する特定のセキュリティ オブジェクトを識別しながら、セキュリティを構成することもできます。 必要なライセン スタイプに対して複数の値を表示できます。 
@@ -64,7 +66,7 @@ ms.locfileid: "7594895"
 
 **ユーザー ライセンス カウント** レポート (**システム管理 \> 照会 \> ライセンス**) を使用して、ライセンス タイプごとに必要なライセンスの数 (**チームメンバ**、**アクティビティ**、**操作** など) を取得します。
 
-![ユーザー ライセンス数レポート。](media/UserLicenseCountsReport.png)
+![ユーザー ライセンス数レポート](media/UserLicenseCountsReport.png)
 
 また、各ユーザーの詳細と、割り当てられた役割ごとのライセンス要件についても説明します。 ユーザーは最も高いライセンスの種類の元一覧表示されます。 ライセンス要件が **操作** として識別された場合は、[ユーザー ライセンスの見積もり](#user-license-estimator-report) レポートを使用して、特定のユーザーのフル ライセンス要件を決定する必要があります。
 
@@ -79,7 +81,7 @@ ms.locfileid: "7594895"
 
 特定のユーザーのフル ライセンスを必要とする特権がユーザーに割り当てられていない場合は、そのユーザーが表示されますが、特定の完全なユーザー ライセンスはマークされません。 このユーザーは、割り当てられているすべてのユーザー ライセンスに準拠します。 次の図の例では、**データベース管理管理者** ロールがユーザーに割り当てられており、その **操作** タイプのライセンスを必要とする他のロールが割り当てられていません 。
 
-![ユーザー ライセンス見積もりレポート。](media/LicenseGuide.png)
+![ユーザー ライセンス見積もりレポート](media/LicenseGuide.png)
 
 このユーザーは、ライセンス ガイドに基づいて、すべてのユーザー ライセンスに準拠しています。
 
@@ -87,15 +89,15 @@ ms.locfileid: "7594895"
 
 この原則は、含まれる特権に基づいて、Microsoft やカスタマイズによって提供されるいくつかのロールに適用される場合があります。 これらのユーザーに対して特定のライセンスが示されていない場合、**ユーザー ライセンスの見積もり** レポート上で示されます。
 
-![ユーザーのフル ライセンスが必要なユーザー。](media/UserLicenseEstimatorClaire.png)
+![ユーザーのフル ライセンスが必要なユーザー](media/UserLicenseEstimatorClaire.png)
 
 または、特定のユーザーのフル ライセンスが必要な特権がユーザーに割り当てられている場合は、そのユーザーに割り当てられているライセンスを参照するときに、そのライセンスが示されます。 次の図の例では、ユーザーがSupply Chain Management の *ベース* ライセンスを持っている必要があります。
 
-![特定のユーザー フル ライセンスが必要なユーザー。](media/UserLicenseEstimatorAlica.png)
+![特定のユーザー フル ライセンスが必要なユーザー](media/UserLicenseEstimatorAlica.png)
 
 ユーザーに 1 つ以上のユーザー フル ライセンスを要する特権が割り当てられている場合、そのユーザーに割り当てられているライセンスを参照するときに、それらのライセンスが示されます。 この場合、ユーザーは、そのライセンスの 1 つの *ベース* ライセンスと、その他のユーザーのフル ライセンスに必要な *Attach* ライセンスを持っている必要があります。 次の図の例では、ユーザーは、Finance の *ベース* ライセンスと Supply Chain Management の *Attach* ライセンス、または Supply Chain Management の *ベース* ライセンスと Finance の *Attach* ライセンスのいずれかを所有している必要があります。
 
-![1 つ以上の特定のユーザー フル ライセンスが必要なユーザー。](media/UserLicenseEstimatorCassie.png)
+![1 つ以上の特定のユーザー フル ライセンスが必要なユーザー](media/UserLicenseEstimatorCassie.png)
 
 特定のユーザー フル ライセンス数あたりの合計は、*ベース* ライセンスと *Attach* のライセンスに分割されていません。
 
@@ -106,9 +108,6 @@ ms.locfileid: "7594895"
 
 Finance and Operations アプリの購入方法とライセンスの詳細については、[Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409) を参照してください。
 
-Microsoft 365 管理センターでユーザーにライセンスを割り当てる方法については、[ユーザーへのライセンスの割り当て](/microsoft-365/admin/manage/assign-licenses-to-users) を参照してください。
+Microsoft 365 管理センターでユーザーにライセンスを割り当てる方法については、[ユーザーへのライセンスの割り当て](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) を参照してください。
 
-同じテナントに複数の実装プロジェクトが存在する場合は、追加のユーザー ライセンスが必要です。 詳細については、[1 つの Azure AD テナントでの複数の LCS プロジェクトと運用環境](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#licensing-requirements) を参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+同じテナントに複数の実装プロジェクトが存在する場合は、追加のユーザー ライセンスが必要です。 詳細については、[1 つの Azure AD テナントでの複数の LCS プロジェクトと運用環境](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#licensing-requirements) を参照してください。

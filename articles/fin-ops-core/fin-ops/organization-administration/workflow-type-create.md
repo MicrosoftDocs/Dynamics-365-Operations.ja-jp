@@ -2,31 +2,30 @@
 title: ワークフロー タイプの作成
 description: このトピックでは、ワークフロー タイプを作成する方法について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: baf8aa2034c2ff9d70e2a05ef9216ed7ba32041d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 835524881569175362df47974334cd61a2313e36
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067918"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798763"
 ---
 # <a name="create-a-workflow-type"></a>ワークフロー タイプの作成
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ドキュメント のワークフロー サポートを追加するには、ワークフロー タイプを作成する必要があります。 ワークフロー タイプを作成すると、ドキュメントのワークフロー コンフィギュレーションを作成するために使用できます。 このトピックでは、ワークフロー タイプを作成する手順へのリンクを提供します。
 
@@ -47,6 +46,3 @@ ms.locfileid: "8067918"
 - [ワークフロー ドキュメント クラスの作成](workflow-type-document-create.md)
 - [SubmitToWorkflow クラスの作成](workflow-type-submit-to-workflow.md)
 - [ワークフロー ドキュメント クラスとワークフロー タイプの関連付け](workflow-type-associate-document.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

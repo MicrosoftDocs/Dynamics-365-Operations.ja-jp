@@ -1,26 +1,29 @@
 ---
 title: 日本の均等償却方法
 description: 日本では、一括比例配分資産、低価額資産、および繰延資産は耐用年数期間中、毎年均等額で減価償却されます。 この記事は、均等減価償却についてよく寄せられる質問に回答します。
-author: EricWangChen
+author: yijialuan
+manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 10154
 ms.assetid: da3d689f-3625-4896-a74a-7890e4fa26eb
 ms.search.region: Japan
-ms.author: wangchen
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 195e5c04a0a0d318a76716b251330c664186d113
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: c74075e730f986b633ecc81ea39c8f3e0839ae61
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592597"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408137"
 ---
 # <a name="equally-divided-depreciation-method-for-japan"></a>日本の均等償却方法
 
@@ -103,6 +106,3 @@ Finance が均等減価償却法を使用して減価償却を計算する場合
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

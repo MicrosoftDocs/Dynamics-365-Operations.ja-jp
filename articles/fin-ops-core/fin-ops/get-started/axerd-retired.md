@@ -2,9 +2,11 @@
 title: AxErd ページは破棄されました
 description: AxErd ページを破棄する必要がありました。 プロジェクトのソース コード、および GitHub リポジトリの Web ページに対する HTML ファイルの両方を転記することができました。
 author: margoc
+manager: AnnBe
 ms.date: 03/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 15bcbc223d0164b5ed53ad9dc2a1138dc02dd6a406db7417ad4abeb1eaf47b9c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b7aec4cd8d655f9d1a99c859d84c9ffe3333f26
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771964"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798529"
 ---
 # <a name="axerd-page-has-been-retired"></a>AxErd ページは破棄されました
 
@@ -44,6 +46,3 @@ HTML ページはリポジトリの [https://github.com/Microsoft/ax-2012-doc-to
 2018 年 3 月に、サードパーティが GitHub から AxErd のソースをコピーし、次のサイトに再配置しました。 このサイトは、2020 年 3 月時点で稼働中です。
 
 - [https://AlexDMeyer.com/ax2012erd/](https://AlexDMeyer.com/ax2012erd/)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

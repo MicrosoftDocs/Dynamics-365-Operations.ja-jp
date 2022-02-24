@@ -2,24 +2,26 @@
 title: 拡張可能フォームの書き込み
 description: このトピックでは、拡張可能フォームを書き込む方法について説明します。
 author: smithanataraj
+manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 11669845f7a6bb4c59663e41a21c34518fbad418
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6f754e3cc005765127e6355bcf694f50dff76be9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781759"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409193"
 ---
 # <a name="write-extensible-forms"></a>拡張可能フォームの書き込み
 
@@ -38,6 +40,3 @@ ms.locfileid: "7781759"
 
 ## <a name="form-controls"></a>フォーム コントロール
 コントロールが移動により拡張不可になった場合、フォーム コントロールでの移動により中断が発生する可能性があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

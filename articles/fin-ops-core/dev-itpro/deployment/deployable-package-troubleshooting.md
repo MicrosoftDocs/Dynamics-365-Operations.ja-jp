@@ -2,9 +2,11 @@
 title: パッケージ アプリケーションの問題のトラブルシューティング
 description: トピックでは、1 層または 2 層〜 5 層の環境でパッケージを適用する際に発生する可能性がある問題のトラブルシューティングに役立つ情報を提供します。
 author: laneswenka
-ms.date: 01/21/2022
+manager: AnnBe
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 0f932c192aac3ecf76e0b9ddb249ea28a6ad5a98
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: 11027b82b14df1b81d1ca50f57a49493c93b95c6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018362"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680538"
 ---
 # <a name="troubleshoot-package-application-issues"></a>パッケージ アプリケーションの問題のトラブルシューティング
 
@@ -100,7 +102,7 @@ ms.locfileid: "8018362"
 - **HKLM:\\ソフトウェア\\Microsoft\\Dynamics\\展開** レジストリ キーで、以下のキーを作成して、クリーンアップを実行するときにカスタマイズできます。 自動クリーンアップ タスクでは、これらの値が考慮されます。
 
     - **CutoffDaysForCleanup** - 古いパッケージとログが保持される日数。 既定値は **30** です。
-    - **CutoffDiskSpaceLimitForPackages** - パッケージ フォルダーがあるサービス ボリューム ドライブ上 (ギガバイト単位 [GB]) の最小空きディスク容量。 たとえば、ディスク領域が 200 GB の場合、クリーンアップ タスクは日数に基づいてパッケージを削除します。
+    - **CutoffDiskSpaceLimitForPackages** - パッケージ フォルダーがあるサービス ボリューム ドライブ上の最小空きディスク容量 (ギガバイト単位 [GB])。 たとえば、ディスク領域が 200 GB の場合、クリーンアップ タスクは日数に基づいてパッケージを削除します。
     - **CutoffDiskSpaceLimitForLogs** - ログのフォルダーがあるシステム ドライブの最小空きディスク容量 (GB 単位)。 たとえば、ディスク領域が 100 GB の場合、クリーンアップ タスクは日数に基づいてサービス関連のログを削除します。
 
 ### <a name="issue-a-step-failed-with-errors"></a>問題: ステップがエラーで失敗しました
@@ -129,7 +131,7 @@ ms.locfileid: "8018362"
 - カスタマイズに問題があること場合は、このパッケージを中止し、新しいパッケージを使用して再試行します。
 - 問題の修正プログラムが問題検索にあるかどうかを参照してください。
 - 次の手順の失敗が表示された場合は、データベース同期の問題が発生している可能性、またはレポート展開に失敗した可能性のいずれかです "サービス モデルの GlobalUpdate スクリプト: AOSService"
-- DBSync.err ファイルを検索し、エラー内容を確認します。 DBSync.log ファイルを検査します。 DB 同期ステップ中の特定の失敗については、[一般的なデータベース同期の問題](deployable-package-troubleshooting.md#typical-database-synchronization-issues)セクションを検索します。
+- DBSync.err ファイルを検索し、エラー内容を確認します。 DBSync.log ファイルを検査します。 DB 同期ステップ中の特定の失敗については、**一般的な DB 同期の失敗** セクションを検索します。
 
 ### <a name="issue-the-deployment-status-is-servicing-but-the-servicing-status-is-failed"></a>問題: 配置ステータスがサービスとなっていますが、サービス ステータスが失敗しました
 
@@ -199,6 +201,3 @@ DBSync.err ファイルを検索し、エラーを検出し、および DBSync.l
     | データベースの実行に失敗しました: 無効な列名「DEFAULTDIMENSION」。 VIEW の作成 | この問題は、SyncEngine の問題のようです。 Microsoft サポートにチケットを作成します。 |
     | データベースの実行に失敗しました: 無効なオブジェクトの名前「PMBI\_DEPROJECTTIMESHEET」。 VIEW の作成 | この問題は、SyncEngine の問題のようです。 Microsoft サポートにチケットを作成します。 |
     | % プロバイダー: 名前付きパイプ プロバイダー、エラー: 40: - SQL Server への接続を開けませんでした %  | Platform Update 3 でこの問題を修正されている必要があります。 ステップを再試行します。 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: ワークフロー システムのアーキテクチャ
 description: この記事では、ワークフロー システムのアーキテクチャについて説明します。
 author: ChrisGarty
+manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,23 +16,20 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04bb87db231c6d4205b73451fd62e6e5bd8578f7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ee2eeedd1e48aa30ea95462a21da3b833b3e078b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069946"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797564"
 ---
 # <a name="workflow-system-architecture"></a>ワークフロー システムのアーキテクチャ
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
 この記事では、ワークフロー システムのアーキテクチャについて説明します。
 
-ワークフロー インフラストラクチャは、Application Object Server (AOS) でホストされる 2 つのコンポーネント (X++ ワークフロー ランタイムおよび管理ワークフロー ランタイム) で構成されます。
+ワークフロー インフラストラクチャは、Application Object Server (AOS) でホストされる 2 つのコンポーネント (X++ ワークフロー ランタイムおよび管理ワークフロー ランタイム) から構成されます。
 
 X++ ワークフロー ランタイムは、次のコンポーネントで構成されます。
 
@@ -40,7 +39,7 @@ X++ ワークフロー ランタイムは、次のコンポーネントで構成
 
 必要に応じて、メッセージング バッチ ジョブまたはワークフロー ランタイム API のいずれかがアプリケーション コードを呼び出すことができます。 X++ ワークフロー ランタイムは、Microsoft .NET フレームワークの CIL (共通中間言語) にコンパイルされます。
 
-管理ワークフロー ランタイムは、Windows Workflow Foundation および財務と運用アプリの拡張機能で構成されます。
+管理型ワークフロー ランタイムは、Windows Workflow Foundation と Finance and Operations アプリの機能拡張で構成されます。
 
 論理的には、ワークフロー インフラストラクチャは拡張であり、ユーザーにとって透過的です。 物理的には、X++ ワークフローおよび管理ワークフローのランタイムは両方とも AOS でホストされます。 ワークフロー インフラストラクチャは AOS と .NET Interop でバッチ処理を使用して、その 2 つのサブシステムを統合し、片方のサブシステムからもう一方のサブシステムにメッセージを渡します。 バッチ プロセッサで実行される X++ コードは、.NET CIL にコンパイルされます。 バッチ処理は、.NET 共通言語ランタイム (CLR) で実行されます。
 
@@ -60,6 +59,3 @@ X++ ワークフロー ランタイムは、次のコンポーネントで構成
 | 4    | 両方                     | この同じメッセージング パターンが、ワークフロー インスタンスのライフサイクル全体で必要に応じて繰り返されます。 |
 
 このワークフロー アーキテクチャは、信頼できる堅牢なメッセージ システムを提供し、また、ワークフローの状態とアプリケーションの状態を常に同期させるために役立ちます。 ハードウェアやソフトウェアに予期しない障害が発生すると、ワークフロー インスタンスの状態は最後に保存された既知の点まで戻され、メッセージはキュー内に保持されます。 したがって、アーキテクチャから見ると、復旧モデルは、問題の解決とワークフローの再開です。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

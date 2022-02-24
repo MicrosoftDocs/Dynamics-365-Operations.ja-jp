@@ -2,30 +2,36 @@
 title: 製品ページの拡充
 description: このトピックでは、Microsoft Dynamics 365 Commerce で製品ページを拡充する方法について説明します。
 author: psimolin
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0c663498a65832c68b80ea7166da34914ceefb8c70d6a598f3fa648b199ef156
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777599"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413677"
 ---
 # <a name="enrich-a-product-page"></a>製品ページの拡充
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce で製品ページを拡充する方法について説明します。
+
+## <a name="overview"></a>概要
 
 既定では、サイトは汎用ページを使用して製品データを表示します。 このページには、製品とその販売に必要なコントロールに関する基本的な情報が含まれています。 ただし、特定の製品の追加画像またはテキストを使用して、Commerce Scale Unit から取得した情報を補足することができます。 このプロセスは、製品ページの拡充と呼ばれます。
 
@@ -66,9 +72,4 @@ ms.locfileid: "6777599"
 
 [カテゴリ ランディング ページの拡充](enrich-category-page.md)
 
-[ページ コンテンツのアクセシビリティの検証](verify-accessibility.md)
-
-[URL のパラメーターに基いて動的な電子商取引ページを作成する](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)

@@ -2,23 +2,26 @@
 title: 増加償却ドキュメントの作成および使用状況データの入力
 description: 日本では、加速償却は、原則ドキュメントごとに申告されます。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, AssetAcceleratedDepDocument_JP, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a8b82ab042e03c3631e8a5652fbe115c1279cd2696ecc3347e1e5b0a3de2c2d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b9f97edaf001d1c4bec6ff4c168fdec09ba01b63
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727205"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408202"
 ---
 # <a name="create-an-accelerated-depreciation-document-and-enter-usage-data"></a>増加償却ドキュメントの作成および使用状況データの入力
 
@@ -91,6 +94,3 @@ ms.locfileid: "6727205"
 14. [確認] をクリックします。
     * 確認済 [加速償却ドキュメント] のみ提案として使用できます。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

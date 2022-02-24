@@ -115,6 +115,3 @@ Common Data Service のカスタムフィールドに対して、次のエンテ
 - **休暇タイプ**
 - **作業者の銀行口座**
 - **作業カレンダー**
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

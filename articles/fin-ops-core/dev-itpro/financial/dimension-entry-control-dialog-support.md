@@ -1,25 +1,27 @@
 ---
 title: ダイアログ上の分析コード エントリ コントロールをサポート
 description: 分析コード エントリ コントロールをダイアログに配置するためのコード パターンについて説明します。
-author: RyanCCarlson2
+author: robinarh
+manager: AnnBe
 ms.date: 02/06/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 26321
 ms.assetid: ec5f2f8c-eb9b-4fbe-a388-be145b2bf98b
 ms.search.region: Global
-ms.author: rcarlson
+ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d42604bb847a8e6abe88163bb7deb2b0b9ff2b0c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a9408c6d834ac1c56eac5d5e073def6516263454
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782905"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680514"
 ---
 # <a name="support-for-dimension-entry-controls-on-dialogs"></a>ダイアログ上の分析コード エントリ コントロールをサポート
 
@@ -63,6 +65,3 @@ dimensionEntryValues.loadAttributeValueSet(dimensionAttributeValueSetId);
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

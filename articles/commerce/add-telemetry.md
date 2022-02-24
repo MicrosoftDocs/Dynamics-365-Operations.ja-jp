@@ -2,30 +2,35 @@
 title: サイト ページにスクリプト コードを追加してテレメトリをサポートする
 description: このトピックでは、クライアント側のテレメトリの収集をサポートするクライアント側のスクリプト コードをサイト ページに追加する方法について説明します。
 author: bicyclingfool
+manager: annbe
 ms.date: 09/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f796a3e10345da41ff461b656d88affb3adbdf9e
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: e15ba6a0d624bd97c25936aa6d3bfafb844b66c0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964532"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413696"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>サイト ページにスクリプト コードを追加してテレメトリをサポートする
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、クライアント側のテレメトリの収集をサポートするクライアント側のスクリプト コードをサイト ページに追加する方法について説明します。
+
+## <a name="overview"></a>概要
 
 Web Analytics は、顧客がサイトとどのように対話するかを理解し、最大のコンバージョンのためにエクスペリエンスを最適化するのに役立つ決定を下したい場合に、重要なツールとなります。 Google Analytics、Clicky、Moz Analytics、KISSMetrics など、これらの目標を達成するために、多くの Web Analytics パッケージが用意されています。 ほとんどの Web Analytics パッケージでは、サイトのすべてのページの HTML の **\<head\>** 要素にクライアント側のスクリプト コードを追加する必要があります。
 
@@ -61,7 +66,7 @@ Web Analytics は、顧客がサイトとどのように対話するかを理解
 1. **公開** を選択します。
 
 > [!NOTE]
-> サイトのコンテンツ セキュリティ ポリシー (CSP) が有効になっている場合は、すべての外部 URL が Commerce サイト ビルダーの **script-src** CSP ディレクティブに追加されていることを確認してください。 詳細については、[コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md) を参照してください。
+> サイトのコンテンツ セキュリティ ポリシー (CSP) が有効になっている場合は、すべての外部 URL が Commerce サイト ビルダーの **script-src** CSP ディレクティブに追加されていることを確認してください。 詳細については、[コンテンツ セキュリティ  ポリシー (CSP) の管理](manage-csp.md)を参照してください。
 
 ## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a>スクリプト コードを含むフラグメントをテンプレートに追加する
 
@@ -112,9 +117,8 @@ Web Analytics は、顧客がサイトとどのように対話するかを理解
 
 [ファビコンの追加](add-favicon.md)
 
+[ようこそメッセージの追加](add-welcome-message.md)
+
 [著作権に関する注意事項の追加](add-copyright-notice.md)
 
 [サイトに言語を追加する](add-languages-to-site.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

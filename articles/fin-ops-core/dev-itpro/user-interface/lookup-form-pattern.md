@@ -2,20 +2,26 @@
 title: ルックアップのフォーム パターン
 description: このトピックでは、ルックアップ フォームのパターンについて説明します。
 author: jasongre
+manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 12911
+ms.assetid: 0bc7bde2-6150-4a80-8738-9a5201b51df2
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 005d04bfa1062e1917f9ad33e8bda6962a656f5f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c617643a4219da7d8c57725d975e94a2abb6f86d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781262"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681580"
 ---
 # <a name="lookup-form-pattern"></a>ルックアップのフォーム パターン
 
@@ -23,7 +29,8 @@ ms.locfileid: "7781262"
 
 このトピックでは、ルックアップ フォームのパターンについて説明します。 標準フレームワークによって指定されたルックアップで正しいデータが提供されない場合や、データの高度な視覚化が必要な場合は、カスタム ルックアップ フォームを使用する必要があります。
 
-## <a name="usage"></a>用途
+<a name="usage"></a>用途
+-----
 
 カスタム ルックアップ フォームは、標準フレームワークによって指定されたルックアップ (通常はテーブル定義で定義された AutoLookup フィールド グループを使用して生成される)、が正しいデータを提供しない場合、またはデータの高度な視覚化が必要な場合に使用する必要があります。 このドキュメントでは、3 つのパターンについて説明します。
 
@@ -34,15 +41,15 @@ ms.locfileid: "7781262"
 ## <a name="wireframe"></a>ワイヤーフレーム
 ### <a name="lookup-basic"></a>基本のルックアップ
 
-[![基本ルックアップ フォームのワイヤーフレーム。](./media/lookupform1.png)](./media/lookupform1.png)
+[![基本ルックアップ フォームのワイヤーフレーム](./media/lookupform1.png)](./media/lookupform1.png)
 
 ### <a name="lookup-with-tabs"></a>タブ付きルックアップ
 
-[![タブ付きルックアップ フォームのワイヤーフレーム。](./media/lookupform2.png)](./media/lookupform2.png)
+[![タブ付きルックアップ フォームのワイヤーフレーム](./media/lookupform2.png)](./media/lookupform2.png)
 
 ### <a name="lookup-with-preview"></a>プレビューによるルックアップ
 
-[![プレビューによるルックアップ フォームのワイヤーフレーム。](./media/lookupform3.png)](./media/lookupform3.png)
+[![プレビューによるルックアップ フォームのワイヤーフレーム](./media/lookupform3.png)](./media/lookupform3.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変更を次に示します。
@@ -118,19 +125,19 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変�
 
 フォーム: **SysLanguageLookup** (ナビゲーション バーで **設定** &gt; **ユーザー設定** をクリックします。) 
 
-[![基本ルックアップの例。](./media/lookupform4.png)](./media/lookupform4.png)
+[![基本ルックアップの例](./media/lookupform4.png)](./media/lookupform4.png)
 
 ### <a name="lookup-with-tabs"></a>タブ付きルックアップ
 
 フォーム: **CaseCategoryLookup** (**共通** &gt; **共通** &gt; **ケース** &gt; **すべてのケース** の順にクリックして、詳細に移動するケースを選択します。) 
 
-![CaseCategoryLookup のタブ付きルックアップ フォームの例。](./media/lookupform5.png)
+![タブ付きルックアップ フォームの例](./media/lookupform5.png)
 
 ### <a name="lookup-with-preview"></a>プレビューによるルックアップ
 
 フォーム: **HcmWorkerLookup** (**人事管理** &gt; **共通** &gt; **組織** &gt; **職位** &gt; **職位** の順にクリックし、詳細に移動するレコードをクリックします。 **作業者の割り当て** FastTab を展開し、**新規** をクリックして、次に **ワーカー** フィールドにドロップダウンの矢印をクリックします。 
 
-[![HcmWorkerLookup のプレビューによるルックアップ フォームの例。](./media/lookupform6.png)](./media/lookupform6.png)
+[![プレビューによるルックアップ フォームの例](./media/lookupform6.png)](./media/lookupform6.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -162,15 +169,12 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの変�
 
 **SysLanguageLookup (基本のルックアップ)** 
 
-![基本ルックアップ フォームの例。](./media/lookupform7.png) 
+![基本ルックアップ フォームの例](./media/lookupform7.png) 
 
 **CaseCategoryLookup (タブ付きルックアップ)** 
 
-[![タブ付きルックアップ フォームの例。](./media/lookupform8.png)](./media/lookupform8.png) 
+[![タブ付きルックアップ フォームの例](./media/lookupform8.png)](./media/lookupform8.png) 
 
 **HcmWorkerLookup (プレビューによるルックアップ)** 
 
-![プレビューによるルックアップ フォームの例。](./media/lookupform9.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![プレビューによるルックアップ フォームの例](./media/lookupform9.png)

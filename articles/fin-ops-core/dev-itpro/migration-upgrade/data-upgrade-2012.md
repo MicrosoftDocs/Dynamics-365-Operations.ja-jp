@@ -2,9 +2,11 @@
 title: AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 description: このトピックでは、開発環境で Microsoft Dynamics AX 2012 から最新の Finance and Operations にアップグレードする詳細なプロセスを説明します。
 author: laneswenka
-ms.date: 11/01/2021
+manager: AnnBe
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 28a48db7f1ccfeed092d5033fd35e34297b8ed06
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: fa10db62c10287ea6467489ae366ef1f357ffb61
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777652"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679972"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-development-environments"></a>AX 2012 からのアップグレード - 開発環境でのデータ アップグレード
 
@@ -36,9 +38,12 @@ ms.locfileid: "7777652"
 
 データのアップグレードを実行する前に、[アップグレード アナライザー](upgrade-analyzer-tool.md)を実行して、特定した問題に対応することを強くお勧めします。これは、データのアップグレードが迅速かつ容易になることを保証する手助けになります。
 
+> [!NOTE]
+> このプロセスを開始する前に、SQL Server Management Studio の最新バージョンをインストールすることが非常に重要です。[SQL Server Management Studio のダウンロード](/sql/ssms/download-sql-server-management-studio-ssms). 
+
 ## <a name="end-to-end-data-upgrade-process"></a>エンド ツー エンド データのアップグレード プロセス
 
-![データ アップグレード プロセス。](media/endToEndDataUpgradeProcess.png)
+![データ アップグレード プロセス](media/endToEndDataUpgradeProcess.png)
 
 ### <a name="back-up-your-ax-2012-database"></a>AX 2012 データベースをバックアップします
 
@@ -48,12 +53,12 @@ AX 2012 データベースをバックアップするには、標準の Microsof
 
 開発環境がローカルまたは Azure で VM としてホストされている場合、2012 データベースのバックアップをそれに転送する必要があります。 ローカル VM では、ネットワーク全体でファイルを直接転送することができますが (それを許可するように仮想ネットワークを構成済みの場合)、Azure でホストされた VM の場合バックアップを Azure Storage にアップロードすることをお勧めします (自分のセキュアな転送サービスまたは SFTP の使用も有効なオプションです)。 これに対して、独自の Azure ストレージ アカウントを指定する必要があります。 Azure ストレージ間でファイルを移動するのに役立つ無料のツールがあります。コマンド ラインからは [Azcopy](/azure/storage/storage-use-azcopy) を、GUI 操作からは [Microsoft Azure Storage Explorer](https://storageexplorer.com/) を使用できます。 これらのツールのいずれかを使用して、オンプレミス環境から Azure ストレージにバックアップをアップロードしてから、開発環境にダウンロードしてください。
 
-### <a name="download-and-restore-the-backup-to-the-customer-managed-development-environment"></a>顧客管理の開発環境へのバックアップのダウンロードと復元
+### <a name="download-and-restore-the-backup-to-the-development-environment"></a>開発環境へのバックアップのダウンロードと復元
 
 > [!NOTE]
-> 開発環境は、顧客管理の[クラウド ホスト環境](../dev-tools/access-instances.md)としてのみサポートされます。 クラウドホスト環境を使用することで、独自の仕様に合うようにドライブの容量を増やすことができます。  
+> マイクロソフトがホストする開発環境環境では、ドライブの領域が制限されます。 多くの AX 2012 のユーザーが、 [クラウド ホスト環境](../dev-tools/access-instances.md)を使用して、独自の開発環境をホストすることを推奨します。 クラウドホスト環境を使用することで、独自の仕様に合うようにドライブの容量を増やすことができます。  
 
-新しい開発環境にバックアップを復元する場合、既存の AXDB データベースを上書きしないでください。 代わりに、元のデータベースの横にある AX 2012 データベースを復元します。 パフォーマンスを向上させるために、データおよびログ ファイルの D ドライブの使用も考慮する場合があります。 ただし、D ドライブを使用することには潜在的な問題点があります。基になる仮想マシン (VM) が Azure で割り当て解除され、次に再割り当てされると、D ドライブが消去されます。 実際、このシナリオが発生ことはほとんどありません。 したがって、そのリスクは容認できる可能性があります。 ドライブ D の使用方法の詳細については、[[Windows Azure 仮想マシンでのテンポラリー ドライブを理解する](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines)] を参照してください。
+新しい開発環境にバックアップを復元する場合、既存の AXDB データベースを上書きしないでください。 代わりに、元のデータベースの横にある AX 2012 データベースを復元します。 パフォーマンスを向上させるために、データおよびログ ファイルの D ドライブの使用も考慮する場合があります。 ただし、D ドライブを使用することには潜在的な問題点があります。基になる仮想マシン (VM) が Azure で割り当て解除され、次に再割り当てされると、D ドライブが消去されます。 実際、このシナリオが発生ことはほとんどありません。 したがって、そのリスクは容認できる可能性があります。 ドライブ D の使用方法の詳細については、[[Windows Azure 仮想マシンでのテンポラリー ドライブを理解する](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/)] を参照してください。
 
 データベースの復元プロセスをスピードアップするには、SQL Server サービスアカウントを **axlocaladmin** に変更します。 復元プロセスでは、インスタント ファイルの初期化を使用できます。 詳細については、[データベース インスタント ファイルの初期化](/sql/relational-databases/databases/database-instant-file-initialization) を参照してください。
 
@@ -96,7 +101,4 @@ GO
 
 ### <a name="recommendation-for-the-first-data-upgrade-run"></a>最初のデータ アップグレードを実行するための推奨事項
 
-初めてデータセットのデータのアップグレードを実行するとき、特に多くのカスタマイズまたは多くのカスタム データのアップグレード スクリプトが存在するとき、[失敗したスクリプトをスキップする機能](upgrade-data-to-latest-update.md) が役に立つ場合があります。 この機能を使用すると、1 回の実行で可能な限り多くのエラーを可視化できます。 それ以外の場合、実行あたり 1 つだけの重要な問題が検出されます。 スクリプト間には依存関係が存在するため、親スクリプトをスキップすると関連する子スクリプトにエラーが発生することがあります。 これらのエラーは、親が正しく実行されなかった場合にのみ発生します。 親スクリプト内の問題が解決されると、解決されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+初めてデータセットのデータのアップグレードを実行するとき、特に多くのカスタマイズまたは多くのカスタム データのアップグレード スクリプトが存在するとき、[失敗したスクリプトをスキップする機能](upgrade-data-to-latest-update.md) が役に立つ場合があります。 この機能を使用すると、1 回の実行で可能な限り多くのエラーを可視化できます。 それ以外の場合、実行あたり 1 つだけの重要な問題が検出されます。 スクリプト間には依存関係が存在するため、親スクリプトをスキップすると関連する子スクリプトにエラーが発生することがあります。 これらのエラーは、親が正しく実行されなかったためにのみ発生します。 親スクリプト内の問題が解決されると、解決されます。

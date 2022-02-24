@@ -2,24 +2,26 @@
 title: 拡張可能なテーブルの書き込み
 description: このトピックでは、拡張可能テーブルを書き込む方法について説明します。
 author: MichaelFruergaardPontoppidan
+manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 1f076b94a229b39ad170753a0c52a4cacd0ad345
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d0bcce9ada0da548df3f43f2a26c825d8d4574d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782015"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408845"
 ---
 # <a name="write-extensible-tables"></a>拡張可能なテーブルの書き込み
 [!include [banner](../includes/banner.md)]
@@ -40,6 +42,3 @@ ms.locfileid: "7782015"
 
 ## <a name="field-groups"></a>フィールド グループ
 必ず、関連するフィールドをグループ化するため、フォームおよびレポートを構築するために、フィールド グループを使用します。 一貫してこの方法を使用することで、フィールド グループを拡張することによって、追加フィールドをフォームやレポートに表示する拡張を有効にします。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

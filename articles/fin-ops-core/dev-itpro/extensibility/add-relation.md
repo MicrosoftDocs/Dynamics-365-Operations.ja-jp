@@ -2,12 +2,14 @@
 title: 拡張機能を使用してテーブルに関係を追加
 description: このトピックでは、テーブルにリレーションを追加する方法について説明します。
 author: ivanv-microsoft
+manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
@@ -15,12 +17,12 @@ ms.search.industry: ''
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 15ad36c9cb10aa70da00204379686afaae82b413
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3a5e3bb1b8af306b1aa852c07873d1675dcc3a8c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782190"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409270"
 ---
 # <a name="add-relations-to-tables-through-extension"></a>拡張機能を使用してテーブルに関係を追加
 
@@ -39,7 +41,7 @@ ms.locfileid: "7782190"
 
 次の図は、新しいリレーションを示しています。
 
-![新しい関係。](media/AddRelationToExistingTable.jpg)
+![新しい関係](media/AddRelationToExistingTable.jpg)
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -48,6 +50,3 @@ ms.locfileid: "7782190"
 
 **解決策** - ナビゲーション メソッドは現時点でサポートされていません。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

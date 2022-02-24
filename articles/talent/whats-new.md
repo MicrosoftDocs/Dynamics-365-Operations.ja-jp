@@ -33,6 +33,3 @@ ms.locfileid: "4461781"
 
 目次は継続して更新されるので、Talent の最新リリースの新しい機能と変更をすべて確認してください。
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

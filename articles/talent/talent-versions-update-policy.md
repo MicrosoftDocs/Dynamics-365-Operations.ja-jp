@@ -66,6 +66,3 @@ Talent がサポートする国、地域、および言語に関する PDF フ�
 
 国や地域固有のカスタマイズの作成、または現在 Microsoft にサポートされていない国や地域用のソリューションの作成に関心のある開発者は、[グローバリゼーション](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region) を参照してください。
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

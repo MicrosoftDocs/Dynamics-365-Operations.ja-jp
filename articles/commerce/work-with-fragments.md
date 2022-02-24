@@ -2,30 +2,35 @@
 title: フラグメントで動作
 description: このトピックでは、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。
 author: phinneyridge
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090747"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4413881"
 ---
 # <a name="work-with-fragments"></a>フラグメントで動作 
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。
+
+## <a name="overview"></a>概要
 
 フラグメントを使用すると、サイト全体で再利用する必要があるモジュール コンフィギュレーションに対して、一元的な作成エクスペリエンスを実行できます。 たとえば、ヘッダー、フッター、およびバナーは多くのページに渡って共有されるため、フラグメントとしてコンフィギュレーションされることがよくあります。 サイトの別のページに挿入することができる小さな Web ページとして、フラグメントを考えることができます。 フラグメントには独自のライフサイクルがあります。 つまり、作成ツールでは、独立したエンティティとして作成、参照、更新、削除されるということです。
 
@@ -45,7 +50,7 @@ ms.locfileid: "8090747"
 
 次の図は、フラグメントを使用して、E コマース サイト全体で共有しているモジュールのコンフィギュレーションを一元的に作成する方法を示しています。
 
-![フラグメントを使用して、E コマース サイト全体で共有しているモジュールのコンフィギュレーションを一元的に作成する方法を示した図。](./media/fragment-figure1.png)
+![フラグメントを使用して、E コマース サイト全体で共有しているモジュールのコンフィギュレーションを一元的に作成する方法を示した図](./media/fragment-figure1.png)
 
 ## <a name="create-a-fragment"></a>フラグメントの作成
 
@@ -62,7 +67,7 @@ ms.locfileid: "8090747"
 1. **フラグメントとして保存** ダイアログ ボックスで、フラグメントの名前を入力します。
 1. **OK** を選択すると、他のページに追加できるフラグメントとしてモジュール コンフィギュレーションが保存されます。
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>新しいフラグメントの作成
 
@@ -73,7 +78,7 @@ Commerce サイト ビルダーで新規フラグメントを作成するには�
 1. フラグメントのモジュール タイプを選択します。
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > 汎用コンテナー モジュール タイプを選択することで、後でフラグメントを更新およびコンフィギュレーションする必要がある場合に、最大の柔軟性を得ることができます。
 
@@ -88,14 +93,14 @@ Commerce サイト ビルダーでフラグメントをページに追加する�
 1. 左側のアウトライン ウィンドウで、またはビジュアル ページ ビルダーで直接、子モジュールを追加できるコンテナーまたはスロットを選択します。
 1. コンテナまたはスロットの名前の横にある省略符号 (**...**) を選択します。  または、ビジュアル ページ ビルダーを使用している場合は、プラス記号 (**+**) を選択します。  
 1. **フラグメントの追加** を選択します。
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
     > コンテナーまたはスロットが新しい子モジュールをサポートしていない場合、**フラグメントの追加** オプションは使用できません。
     
 1. **フラグメントの選択** ダイアログ ボックスで、追加するフラグメントを検索して選択します。 利用可能なフラグメントが一覧にない場合は、まず最初に、選択したコンテナーまたはスロットがサポートするモジュール タイプからフラグメントを作成する必要があります。
 1. 目的のフラグメントを選択して、ページのコンテナーまたはスロットに追加します。
-<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > コンテナーまたはスロットで許可されるモジュールは、ページのテンプレートまたはモジュール自体の定義によって定義されます。
@@ -122,20 +127,6 @@ Commerce サイト ビルダーでフラグメントを編集するには、次�
 
 ページ、テンプレート、または親フラグメントでフラグメントを選択し、右側のプロパティ ウィンドウで **フラグメントの編集** を選択することによって、フラグメントを編集することもできます。
 
-### <a name="rename-a-fragment"></a>フラグメントの名前を変更する
-
-サイト ビルダーで既存のフラグメントの名前を変更するには、次の手順に従います。
-
-1. 左側のナビゲーション ウィンドウで、**フラグメント** を選択します。
-1. 名前を変更したいフラグメントのフラグメント名を選択します。
-1. フラグメントの編集を開始するには、**編集** を選択します。 他のユーザーが既にそのフラグメントを編集している場合は、フラグメントは編集できません。
-1. フラグメント プロパティ ウィンドウで、フラグメント名の横のペン記号を選択します。
-1. 必要に応じてフラグメント名を編集します。
-1. 名前の変更を確認する場合は、チェック マークを選択します。
-1. **編集完了** を選択します。
-
-フラグメント作成後に、フラグメント名を編集して、その後プロパティ ペインでフラグメント名の横にあるペン記号を選択することで名前を変更することができます。
-
 ## <a name="additional-resources"></a>追加リソース
 
 [テンプレートとレイアウトの概要](templates-layouts-overview.md)
@@ -145,6 +136,3 @@ Commerce サイト ビルダーでフラグメントを編集するには、次�
 [プリセット レイアウトの使用](work-with-layouts.md)
 
 [公開グループで動作](publish-groups.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

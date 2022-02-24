@@ -1,33 +1,31 @@
 ---
 title: 従業員手当プログラムの提供
-description: このトピックでは、新しい給付金の作成時に使用する給付金の要素の作成方法について説明します。
-author: twheeloc
-ms.date: 08/23/2021
+description: この記事では、新しい福利厚生の作成時に使用する福利厚生の要素の作成方法を示します。
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 868ddb9b372b90ec75a5f35ebf3c987f2d39bd74
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: cc02346ebccd04f2b4f6fc7029717a8793d75e0d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066071"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419398"
 ---
 # <a name="deliver-employee-benefits-program"></a>従業員手当プログラムの提供
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-このトピックでは、新しい給付金の作成時に使用する給付金の要素の作成方法について説明します。 このタスクの作成に使用するデモ データの会社は USMF です。 このタスクは、報酬と給付金マネージャーのために用意されています。
+この記事では、新しい福利厚生の作成時に使用する福利厚生の要素の作成方法を示します。 このタスクの作成に使用するデモ データの会社は USMF です。 このタスクは、報酬と給付金マネージャーのために用意されています。
 
 
 ## <a name="create-benefit-elements"></a>給付金の要素の作成
@@ -70,6 +68,3 @@ ms.locfileid: "8066071"
 16. [基準] フィールドで、オプションを選択します。
 17. [金額またはレート] フィールドに数値を入力します。
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

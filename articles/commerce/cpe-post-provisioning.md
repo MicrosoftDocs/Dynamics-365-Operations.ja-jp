@@ -1,31 +1,36 @@
 ---
-title: Dynamics 365 Commerce 評価環境のコンフィギュレーション
+title: Dynamics 365 Commerce の評価環境を構成する
 description: このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニング後に構成する方法について説明します。
 author: psimolin
-ms.date: 12/10/2021
+manager: annbe
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913730"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413646"
 ---
-# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境のコンフィギュレーション
+# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce の評価環境を構成する
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニング後に構成する方法について説明します。
+
+## <a name="overview"></a>概要
 
 このトピックに記載の手順は、コマースの評価環境がプロビジョニングされた後でのみ着手してください。 コマースの評価環境をプロビジョニングする方法については、[コマースの評価環境のプロビジョニング](provisioning-guide.md) を参照してください。
 
@@ -39,7 +44,6 @@ ms.locfileid: "7913730"
 1. リストで環境を選択します。
 1. 右側の環境情報で、**環境にログインする** を選択します。 コマースの本部に送信されます。
 1. 右上隅にある **USRT** 法人が選択されていることを確認します。
-2. **Commerce パラメーター > 構成パラメーター** に移動、**ProductSearch.UseAzureSearch** の入力が **true** に設定されていることを確認します。 この入力がない場合は、この入力を追加して、eCommerce サイトに関連する Commerce Scale Unit で **チャネル データベース > 完全同期** を実行します。
 
 コマース本部でのプロビジョニング後の活動では、法人として **USRT** が常に選択されていることを確認してください。
 
@@ -107,12 +111,6 @@ LCS のクラウド POS を有効にするには、LCS で次の手順を実行�
     1. アクション ウィンドウの、**バッチ ジョブ** タブで、**状態の変更** を選択します。
     1. **キャンセル** を選択し、**OK** を選択します。
 
-1. ジョブの状態が **源泉徴収** の場合、次の手順を実行します。
-
-    1. レコードを選択します。
-    1. アクション ウィンドウの、**バッチ ジョブ** タブで、**状態の変更** を選択します。
-    1. **待機中** を選択し、**OK** を選択します。
-
 必要に応じて、以下のジョブの繰り返し間隔を1分に設定することも可能です。
 
 * 小売用の注文電子メール通知ジョブの処理
@@ -135,7 +133,7 @@ LCS のクラウド POS を有効にするには、LCS で次の手順を実行�
 サイトでテスト トランザクションを実行するには、次のテスト クレジット カード情報を使用できます。
 
 - **カード番号:** 4111-1111-1111-1111
-- **有効期限:** 10/30
+- **有効期限:** 10/20
 - **カード検証値 (CVV) コード:** 737
 
 > [!IMPORTANT]
@@ -146,9 +144,6 @@ LCS のクラウド POS を有効にするには、LCS で次の手順を実行�
 プロビジョニングと構成の手順が完了したら、評価環境を使用することができます。 コマース サイト ビルダーの URL を使用して、作成エクスペリエンスに移動します。 コマース サイトの URL を使用して、小売顧客サイト エクスペリエンスに移動します。
 
 コマースの評価環境のオプション機能を構成するには、[コマース評価環境のオプション機能を構成する](cpe-optional-features.md) を参照してください。
-
-> [!NOTE]
-> コマースの評価環境には、デモ用に Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントがプリロードされています。 評価環境では、独自の Azure AD B2C テナントを構成する必要はありません。 ただし、評価環境で独自の Azure AD B2C テナントを使用するように構成している場合は、Azure ポータルを介して Azure AD B2C アプリケーションに返信用 URL である ``https://login.commerce.dynamics.com/_msdyn365/authresp`` を追加したことを確認してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -162,15 +157,10 @@ LCS のクラウド POS を有効にするには、LCS で次の手順を実行�
 
 [Dynamics 365 Commerce 評価環境に関するよく寄せられる質問](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure ポータル](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce Web サイト](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Commerce での B2C テナントの設定](set-up-B2C-tenant.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Commerce Data Exchange のベスト プラクティス
-description: このトピックでは、Microsoft Dynamics 365 Commerce 環境の Commerce Data Exchange (CDX) によるデータ同期について説明します。
+description: このトピックは、Microsoft Dynamics 365 Commerce 環境に、データ同期、Commerce Data Exchange (CDX) に関連する機能を実装するユーザーを対象としています。
 author: jashanno
-ms.date: 12/03/2021
+manager: AnnBe
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
@@ -16,54 +18,25 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: b145657f007be1f953bd5025d64e2962ad62e56f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: aa5c3bbd6d6ba0a4b310f57e122ad14c211fed0c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985798"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680408"
 ---
 # <a name="commerce-data-exchange-best-practices"></a>Commerce Data Exchange のベスト プラクティス
-
 [!include[banner](../includes/banner.md)]
 
 このトピックは、Microsoft Dynamics 365 Commerce 環境に、データ同期、Commerce Data Exchange (CDX) に関連する機能を実装するユーザーを対象としています。 実装にあたってのベスト プラクティスのアドバイスを提供します。
+
+## <a name="overview"></a>概要
 
 データの構成と同期を適切に行うことは、実装が正しく機能するために非常に重要となります。 ビジネス要件、IT インフラストラクチャ、および全体的な準備にかかわらず、データが正しく同期されていないと、環境全体が実質的に役に立たなくなります。 したがって、コマース本部から Commerce Scale Unit を経由してオフライン データベースを持つ最新の POS を使用する実店舗に至るまで、完全な実装の全体にわたってデータの設定、生成、同期、検証に必要なものを把握することが最優先事項となります。
 
 このトピックに進む前に、チャネル (店舗)、レジスターとデバイス、および Modern POS オフライン データベースの概念を理解することが重要です。 したがって、このトピックの最後にある 「デバイス管理実装ガイダンス」や「Commerce アーキテクチャの概要」などのリソースを確認することをお勧めします。
 
 このトピックの主な内容は以下の表にまとめました。最初の列にはタグの似た「関連する領域」のリストが含まれており、関心のある分野に関するベストプラクティスをすばやく見つけることができます。 新しい実装については、これらのテーブルをコピーし、さまざまなベスト プラクティスが完成したときにチェックできる場所にコピーしておくと役立つ場合があります。 このようにして、本番に移る前に可実装が準備されているかどうかを能な限り確認することができます。
-
-## <a name="recommended-configurations-with-up-to-date-maturity-information-to-denote-confidence-of-functionality"></a>推奨されるコンフィギュレーション (機能の信頼性を示す最新の満期情報を含む)
-
-次のコンフィギュレーションがリリースされましたが、一部の使用シナリオでは役に立たない可能性のあるロジックが変更されます。 これらの機能はテスト済ですが、完全に検証されていないシナリオもあります。 次の表では、機能の信頼性に関する情報を提供するために満期がリスト化されています。
-
-機能は月によって変化しますので、特定の機能の満期や新しい機能が追加されたかどうかに関して、もう一度確認する価値があります。 次の機能のいずれかを適用するには、**Retail と Commerce > 本社の設定 > パラメーター > コマース共有パラメーター** の順に移動します。  左端のメニューで、**コンフィギュレーション パラメーター** を選択します。  表示されるページで、**名前** フィールドにキー (下の表に示す) を入力し、既定値を (下の表の **説明** 列に示す) を **値** フィールドに入力します。
-
-| 機能 | キー | 説明 |  満期 |
-|------------------|---------------------|------------------------------|-----------------------------------|
-| 遅延ダウンロード セッションを作成 | CDX_ENABLE_DELAYED_OFFLINE_DOWNLOAD_SESSION_CREATION | このパラメータによって、ダウンロード セッションが作成されるのを、Modern POS デバイスが有効になるまで遅らせます。  この遅延により、長い期間使用されない可能性がある不必要なダウンロード セッションは作成されません。 既定値は、**0** で無効です。 機能を有効にするには、値を **1** に設定します。| 高<br><br>(機能はバージョン 10.0.15 にリリースされました) |
-| パッケージ注文の実施 | CDX_ENABLE_DOWNLOAD_SESSION_DEPENDENCY_ENFORCEMENT | このパラメータによって、ダウンロード セッション アプリケーションが順番に適用されます。 ダウンロード セッション アプリケーションが失敗した場合 (既定の値は 3 に定義された **試行回数** 値で定義された試行回数の後に発生する場合)、そのセッションは **一時中断** としてマークされ、中断したセッションが再試行またはキャンセルされるまでセッション アプリケーションは続行されません。 このキーを使用して、以前に適用されたセッション (**利用可** または **一時中断** ではないセッション) を再実行することはできません。<br><br>この機能により、順不同でダウンロード セッションを適用した後に発生する固有のキー例外が原因で、ダウンロード セッションの失敗を防ぐことができます。 既定値は、**0** で無効です。 | 中程度<br><br>(機能はバージョン 10.0.18 にリリースされました) |
-| 失敗時のロール バック | CDX_ENABLE_ROLLBACK_ON_FAILURE | **このキーは既知問題のため、使用をお勧めしません。**  オフライン データベースからチャンネル データベースに (P ジョブ配送スケジュールに基づいて) トランザクションを同期する場合、通常、レコードがマージされます。 つまり、トランザクション ID が重複するレコードが上書きされます。 この機能を使用すると、オフライン同期によってレコードが挿入されます。 この挿入により、上書きとエラー修正が防止され、問題を調査できます。 この時点で、オフライン トランザクションの投稿同期の消去が失敗し、挿入エラーが発生してオフライン同期が停止する可能性があります。このため、現在は機能設定を無効にすることをお勧めします。 既定値は **1** で、既定により有効です。  この値を **0** に変更することを強くお勧めします。 | 既知の問題が原因で、低いです。<br><br>(機能はバージョン 10.0.13 にリリースされました) |
-
-## <a name="update-configurations"></a>コンフィギュレーションの更新
-
-Commerce スケジューラの基本コンフィギュレーション データを初期化する前に、次の手順を実施する必要があります。
-
-- サービス更新を適用します。
-- コンフィギュレーション キーに影響を与える Commerce の機能を有効にします。
-
-基本コンフィギュレーション データを初期化するには、次の操作を行います。
-
-1. **Retail とコマース \> バックオフィスの設定 \> コマース スケジューラ \> コマース スケジューラの初期化** の順に移動します。 
-
-   コマース スケジューラの基本構成データの初期化を続行するかどうかの確認を求められます。 更新のたびにこのアクションを実行することは、新しいテーブルまたは列の構成データを正しく設定する機能を管理するのに重要です。 
-  
-2. **既存のコンフィギュレーションの削除** を行うパラメーターもあります。  有効に設定するよう明示的に指示されているか、またはコンフィギュレーションが失われても影響が生じない非実稼働環境で作業しているのでない限り、この設定は **いいえ** のままにします。
-
-> [!NOTE]
-> Commerce バージョン 10.0.24 リリース以降、Commerce スケジューラは Commerce 本部の更新後に自動的に実行するように設定できます。 Commerce 本部でこの機能を有効にするには、**ワークスペース \> 機能管理** に移動し、**本部の機能が更新された後に "Commerce スケジューラの初期化" を実行** する機能を有効にしてください。 
 
 ## <a name="valuable-configurations"></a>便利な構成
 
@@ -73,55 +46,19 @@ Commerce スケジューラの基本コンフィギュレーション データ�
 | <ul><li>機能プロファイル</li><li>データのリテンション期間</li><li>返品ポリシー</li> | **小売とコマース \> チャネル設定 \> POS 設定 \> POS プロファイル \> 機能プロファイル** に移動し、続いて **機能** セクションで、**トランザクションの存在日数** を返品ポリシーに対して定義されている値と同じか、またはそれに近い値に設定します。 たとえば、返品ポリシーに 30 日以内の返品可能と記載されている場合は、このフィールドを **30**、**31** に設定したり、または、通常のポリシーを超える特別な例外が可能な場合は **60** に設定します (この場合は通常の返品ポリシー期間の倍になるため、通常のポリシーの制限を超えてもより迅速な返品が可能となります)。 |
 | <ul><li>チャネル データベース グループ</li><li>配送スケジュール</li><li>オフライン プロファイル</li><li>一時停止</li><li>データ</li><li>ダウンロード</li></ul> | 新たに生成された端末に割り当てる "ダミー" のデータベース グループ (どの配布スケジュール ジョブにも関連付けられていないグループ)、または **オフライン同期の一時停止** オプションが **はい** に設定されている特別なオフライン プロファイルのいずれかを持つことを強くお勧めします。 このようにして、データ生成は、必要なときにシステムが最も可用性が高い時に行うことができます。 (ただし、システムによっては必要に応じて何度か一時停止する場合があります。) |
 
-### <a name="enable-table-and-index-compression"></a>テーブルとインデックスの圧縮の有効化
-   
-このトピックを読む前に、[Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md#implementation-considerations) のオンプレミス データベース コンポーネント (CSU の一部としてオフライン データベースおよびチャンネル データベース) で使用される SQL Server の各種の推奨バージョンについて読み取る方をお勧めします。 Modern POS のオフライン データベースおよび CSU のチャンネル データベース (セルフホスト型) など、テーブル/インデックスの圧縮を、その上の施設のデータベースで有効にすることが重要です。 この機能は、SQL Server 2016 SP1 Express、SQL Server 2017 Express、SQL Server 2019 Express および以降でのみサポートされます。 まだ SQL Server Express 2014 を実行している場合は、新しいバージョンにアップグレードする必要があります。 ディスク領域を使用して、トップ テーブルのレポートを作成します (**SQL Server Management Studio > レポート > スタンダード レポート > トップ テーブルによるディスク用途**)。 その後、レポートの上部にある各テーブルおよびインデックスの圧縮を有効にできます。 基本コマンドを次に示します。
-
-```Console
-ALTER TABLE [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX <index1_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX <index2_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-```
-
-圧縮からメリットを頻繁に受けるテーブルの例として、この例では ax.INVENTDIM を使用します。
-
-```Console
-sp_helpindex 'ax.INVENTDIM'
-```
-
-上記のクエリには、選択したテーブルのすべてのインデックスが表示されます (そのリストはコマンドの次のセットで以下に示します)。 そのクエリに基づいて、最初にこのトピックで示した基本的なコマンドを使用して、テーブルと関連のすべてのコマンドを圧縮できます。
-
-```Console
-ALTER TABLE [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [I_-65082180_-588450352] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [I_-65082180_-997209838] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [IX_INVENTDIM_DATAAREAID_CONFIGID_INVENTSIZEID_INVENTCOLORID_INVENTSTYLEID_INVENTLOCATIONID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [IX_INVENTDIM_DATAAREAID_INVENTLOCATIONID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [IX_INVENTDIM_DATAAREAID_INVENTLOCATIONID_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [IX_INVENTDIM_INVENTLOCATIONID_INVENTSITEID_LICENSEPLATEID_WMSLOCATIONID_WMSPALLETID_CONFIGID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [IX_INVENTDIM_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-```
-
-適切なデータベース サイズに到達するまで、レポートのトップ テーブルに対して、このセクションを繰り返すことをお勧めします。
-
-
 ## <a name="practices-that-affect-performance"></a>パフォーマンスに影響を与えるプラクティス
 
 | 関連する領域 | ベスト プラクティス |
 |------------------|---------------|
 | <ul><li>チャネル データベース グループ</li><li>オフライン プロファイル</li><li>一時停止</li><li>データ</li><li>ダウンロード</li></ul> | <p>オフライン データベースが使用できるように、データが必要になるまではオフライン データベース用のデータを生成しないでください。 次のシナリオでは、なぜこのベスト プラクティスが重要なのかを示しています。</p><p>関連するチャネル データベースのグループに追加された最新の POS オフライン データベースは、データベースの完全な同期が行われた後の既存のダウンロードセッションをすべて継承します。 オフライン端末を持つ最新の POS インスタンスが新たに 100 個作成され、2 ヶ月間完全な同期が発生していない。 20 分ごとに実際に変更があるのは、5 つのスケジューラ ジョブだけです。 (たとえば、これらの変更には価格と割引、または頻繁に更新される顧客が含まれる場合があります)。このシナリオでは、新たに作成された端末が有効化されているか、このデータを適用できるかどうかに関わらず、最大で 200 万のダウンロード セッションがただちに生成され、適用する必要があります。</p><p>多くの場合、このタイプの例外的なデータ生成は大規模であり、パフォーマンスに影響します。 稼働率の高い (最も忙しい時間) 時間帯の場合、環境のパフォーマンスが著しく損なわれることになります。 そのため、新たに生成された端末に割り当てる "ダミー" のデータベース グループ (どの配布スケジュール ジョブにも関連付けられていないグループ) を持つか、またはオフライン プロファイルで使用する **オフライン同期の一時停止** オプションを **はい** に設定することを強くお勧めします。 **オフライン同期の一時停止** オプションを **はい** に設定することで、オフライン プロファイルを使用したすべてのデータ生成を停止できます。 そのため、データの生成は必要となったタイミングでのみ行われ、システムの可用性が高い状態でのみ行われます。 (ただし、システムによっては必要に応じて何度か一時停止する場合があります。) |
 | <ul><li>配送スケジュール</li><li>スケジューラ ジョブ</li><li>アップロード</li></ul> | P-ジョブ (アップロード バッチ ジョブ) は複数実行できません。 並行して発生する可能性のある P- ジョブ アップロードの一括ジョブが複数作成された場合、アップロードされたトランザクションのデータを適用している間にテーブル ロックや遅延 (パフォーマンスの低下) が発生する可能性があります。 同時に複数のジョブを実行する必要はありません。 頻繁に発生する可能性が考えられます。 |
-| <ul><li>パラメーター</li><li>コマース スケジューラ</li><li>データベースの事後同期</li></ul> | **Retail と Commerce\> 本社の設定\> パラメーター\> コマース スケジューラー パラメーター** の順にクリックします。 **データベース同期の転記** 下位ヘッダーの下に、さまざまな理由でパフォーマンスに影響を与える可能性がある 2 つのフィールドがあります。<br><br>**同期完了後不要なマスター データをクリーン アップする** によって、CDX のダウンロード セッションが実行されるたびに店舗の業務手順の **マスター データのストライピング** を実行します。  この手順により、パッケージの生成に含まれるものの、特定の店舗 (チャネル) のメンバーとして特定のデバイスのオフライン機能には必要ない不要なレコードは削除されます。 この機能は、オフライン データベースに格納されているデータを最小限に抑えるのに役立ちます。  Express バージョンの SQL を使用する場合、データベースが小さいほうがパフォーマンスを向上させ、サイズの問題を最小限にすることができます。 一部のカスタム SQL ビューで、この機能を認識していないテーブル間の依存関係が発生し、機能にエラーが生じる可能性がある場合は、最初にサンドボックス内のこの機能をテストすることをお勧めします。<br><br> **データベース統計の自動最適化** によって、チャネル データベースに適用される CDX ダウンロード セッション内の各テーブルのテーブル統計で更新が実行されます。 古いテーブル統計において、断片化されたインデックスよりも大きいパフォーマンスの問題が発生します。 有効になっている場合、コンフィギュレーション パラメーターに特定のフラグを追加することもお勧めします。  これを使用する場合は、**Retail と Commerce \> 本社の設定 \> パラメーター \> コマース共有パラメーター** の順にクリックし、**コンフィギュレーション パラメーター** 一覧に移動して、新しいフラグ **CDX_ENABLE_UPDATE_STATISTICS_FOR_REQUIRED_TABLE** に **1** を入力します。  将来のリリースでこのコンフィギュレーション パラメーターがすべての環境に自動的に追加されますが、その存在を確認するのが重要であることに注意してください。 |
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [Commerce Data Exchange のトラブルシューティング](CDX-Troubleshooting.md)
-- [Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md)
-- [Commerce のオフライン実装とトラブルシューティング](implementation-considerations-offline.md)
-- [Dynamics 365 Commerce アーキテクチャの概要](../commerce-architecture.md)
-- [店舗内トポロジの選択](retail-in-store-topology.md)
-- [デバイス管理実装ガイダンス](../implementation-considerations-devices.md)
-- [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md)
-- [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Commerce Data Exchange のトラブルシューティング](CDX-Troubleshooting.md) 
+- [Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md) 
+- [Dynamics 365 Commerce アーキテクチャの概要](../commerce-architecture.md) 
+- [ストア内トポロジの選択](retail-in-store-topology.md) 
+- [デバイス管理実装ガイダンス](../implementation-considerations-devices.md) 
+- [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md) 
+- [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md) 

@@ -2,28 +2,32 @@
 title: 静的ファイルのアップロードと提供
 description: このトピックでは、静的ファイルを Microsoft Dynamics 365 Commerce サイト ビルダーにアップロードする方法と、そのファイルを要求するために使用できるカスタム URL およびファイル名の作成方法について説明します。
 author: StuHarg
+manager: annbe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 389d33189644241dcf98da0c7f3b841e82a4430ac459dc8027284cecc299b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 981bbf03480abfd812b4020173b7acfdad0fef14
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714686"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594979"
 ---
 # <a name="upload-and-serve-static-files"></a>静的ファイルのアップロードと提供
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、静的ファイルを Microsoft Dynamics 365 Commerce サイト ビルダーにアップロードする方法と、そのファイルを要求するために使用できるカスタム URL およびファイル名の作成方法について説明します。
 
@@ -103,6 +107,3 @@ URL パスを変更するには、次の手順に従います。
 [画像のトリミング](dam-crop-images.md)
 
 [画像の中心のカスタマイズ](dam-custom-focal-point.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

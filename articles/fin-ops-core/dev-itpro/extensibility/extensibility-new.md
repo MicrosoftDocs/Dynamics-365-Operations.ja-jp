@@ -2,24 +2,26 @@
 title: 拡張性の新機能および変更された機能
 description: このトピックでは、拡張性の更新に関するトピックへのリンクを提供します。
 author: RobinARH
+manager: AnnBe
 ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 335c33b54fd540e47bf46384081ed58eed6aa39b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 29e39728c431a957e7a64166e00d7d191564a8a2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783022"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409333"
 ---
 # <a name="whats-new-or-changed-for-extensibility"></a>拡張性の新機能および変更された機能
 
@@ -43,6 +45,3 @@ ms.locfileid: "7783022"
 + [バージョン 7.3 の拡張機能の変更](extensibility-changes-73.md)
 + [拡張機能の変更 (2017 年 7 月)](changes-july-2017.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

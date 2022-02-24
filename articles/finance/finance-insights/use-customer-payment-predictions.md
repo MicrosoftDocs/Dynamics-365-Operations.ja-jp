@@ -1,10 +1,12 @@
 ---
-title: 顧客支払予測の使用
+title: 顧客支払予測の使用 (プレビュー)
 description: このトピックでは、Finance 分析情報の試用版を使用するために必要な前提条件と手順について説明します。
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+manager: AnnBe
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,30 +17,36 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: e0445046d8016dfa2c02c1ff1a05bdd148f9409a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968915"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969256"
 ---
-# <a name="use-customer-payment-predictions"></a>顧客支払予測の使用
+# <a name="use-customer-payment-predictions-preview"></a>顧客支払予測の使用 (プレビュー)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、顧客支払予測の使用方法について説明します。 この機能を使用する前に、そのためのセットアップ手順が完了していることを確認してください。 詳細については、[顧客支払予測の有効化](enable-cust-paymnt-prediction.md)を参照してください。
 
-**顧客の与信および回収の管理** ワークスペース、および 2 つの新しいリスト ページ **トランザクション支払予測** と **顧客支払予測** で、顧客支払予測を表示できます。
+**顧客の与信および回収の管理** ワークスペース、および 2 つの新しいリスト ページ **トランザクションごとの支払予測** と **顧客ごとの支払予測** で、顧客支払予測を表示できます。
 
 ### <a name="manage-customer-credit-and-collections-workspace"></a>[顧客の与信および回収の管理] ワークスペース
 
-**顧客の与信および回収の管理** ワークスペースには、2 つの新しいタイル **トランザクション支払予測** と **顧客支払予測** が含まれます。
+**顧客の与信および回収の管理** ワークスペースには、2 つの新しいタイル **トランザクションごとの支払予測** および **高い遅延残高が予測される顧客** が含まれます。
 
-### <a name="transaction-payment-predictions-list-page"></a>トランザクション支払予測リスト ページ
+- **トランザクションごとの支払予測** タイルには、**期限内** バケットで支払の確度が 50% 未満の未処理の顧客トランザクションの発生数が時系列で表示されます。 このタイルを選択して、**トランザクションリストごとの支払予測** リスト ページを開くことができます。
+- **高い遅延残高が予測される顧客** タイルには、合計残高の半分 (50%) 超の支払いが遅れるか非常に遅くなると予測されている顧客の数が表示されます。 このタイルを選択して、**顧客ごとの支払予測** リスト ページを開くことができます。
 
-**トランザクション支払予測** リスト ページでは、オープンなトランザクションの支払の確率を、**期限内**、**遅延**、**かなりの遅延** の各バケットで表示できます。 グリッド内のトランザクションごとに、**期限内の確度** 列には、請求書が期日までに支払われる可能性が示されます。 期限内の支払の確率が 50% 未満の場合、**期限内の確率** 列のパーセンテージの横に赤い円が表示されて、遅延支払のリスクを示します。
+[![顧客の与信および回収の管理ワークスペース](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
-[![トランザクションごとの支払予測リスト ページ。](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+### <a name="payment-predictions-per-transaction-list-page"></a>[トランザクションごとの支払予測] リスト ページ
+
+**トランザクションごとの支払予測** リスト ページでは、未処理トランザクションの支払の確率を、**期限内**、**遅延**、および **かなりの遅延** の各バケットに表示できます。 グリッド内のトランザクションごとに、**期限内の確度** 列には、請求書が期日までに支払われる可能性が示されます。 期限内の支払の確率が 50% 未満の場合、**期限内の確率** 列のパーセンテージの横に赤い円が表示されて、遅延支払のリスクを示します。
+
+[![トランザクションごとの支払予測リスト ページ](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 ページの右側にある **関連情報** ウィンドウには、予測に関する詳細が表示されます。
 
@@ -48,13 +56,13 @@ ms.locfileid: "7968915"
 
 **トップ要素** セクションのデータ、および **顧客インサイト** と **顧客履歴** クイックタブには、支払予測を説明するのに役立つデータが含まれています。 これにより、予測の有効性に対する信頼度を高めることができます。
 
-[![関連情報ウィンドウの支払予測のグラフィカル インジケーター。](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![関連情報ウィンドウの支払予測のグラフィカル インジケーター](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
-### <a name="customer-payment-predictions-list-page"></a>顧客支払予測リスト ページ
+### <a name="payment-prediction-per-customer-list-page"></a>[顧客ごとの支払予測] リスト ページ
 
-**顧客支払予測** リスト ページでは、オープンな残高の合計と、支払われると予測される額が **期限内**、**遅延**、**かなり遅延** に表示され ます。
+**顧客ごとの支払予測** リスト ページでは、未処理残高の合計と、**期限内**、**遅延**、および **かなり遅延** バケットに支払額が表示され ます。
 
-[![顧客ごとの支払予測ページ。](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![顧客ごとの支払予測ページ](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 各バケットの支払金額は、トランザクション残高の加重平均の合計として計算されます。 この金額は、各バケットの支払確度に基づいて計算されます。
 
@@ -76,20 +84,28 @@ ms.locfileid: "7968915"
 
 ページの右側にある **関連情報** セクションには、予測に関する詳細が表示されます。
 
-- グリッドで選択されたトランザクションについて、**支払予測** クイックタブに支払予測の詳細が、**期限内**、**遅延**、**かなり遅延** のバケットとして表示されます。
+- グリッドで選択されたトランザクションについて、**支払予測** クイックタブに支払予測の詳細が、**期限内**、**遅延**、**かなり遅延** のバケットとして表示されます。 **トップ要素** セクションには、支払に影響を与えるトップ要素が表示されます。 トップ要素は、選択されたトランザクションやそのトランザクションの顧客に対する属性です。
 - **顧客インサイト** クイックタブには、選択したトランザクションについて、顧客の現在の請求書、支払、および回収統計が表示されます。
 - **顧客履歴** クイックタブでは、**期限内**、**遅延**、**かなり遅延** バケットに顧客の支払履歴が表示されます。
 
-**顧客インサイト** と **顧客履歴** クイックタブのデータは、支払予測を説明するのに役立ちます。 これにより、予測の有効性に対する信頼度を高めることができます。
+**トップ要素** セクションのデータ、および **顧客インサイト** と **顧客履歴** クイックタブには、支払予測を説明するのに役立つデータが含まれています。 これにより、予測の有効性に対する信頼度を高めることができます。
 
 ## <a name="improving-the-accuracy-of-payment-predictions"></a>支払予測の正確性の向上
 
 支払予測の精度を表示するには、**与信および回収 \> 設定 \> Finance 分析情報 \> Finance 分析情報パラメーター** を使用します。 **顧客支払に関するインサイト** タブの **予測モデル** セクションに、予測モデルの精度が割合として表示されます。
 
-[![支払予測の正確性。](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![支払予測の正確性](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
-精度に満足していない場合は、**モデル精度の改善** リンクを選択して、AI Builder 拡張エクスペリエンスを開きます。 AI Builder 拡張エクスペリエンスでは、支払確度を正確に予測するために最も重要と思われるフィールドを選択するまで、選択したフィールドを選択またはキャンセルすることができます。 完了したら、予測モデルを簡単に再トレーニングして、変更を公開できます。 新しくトレーニングした予測モデルは、Dynamics 365 Finance で予測のために自動的に選択されます。
+精度に満足していない場合は、**モデル精度の改善** リンクを選択して、AI Builder の拡張エクスペリエンスを開きます。 AI Builder の拡張エクスペリエンスでは、支払確度を正確に予測するために最も重要と思われるフィールドを選択するまで、選択したフィールドを選択またはキャンセルすることができます。 完了したら、予測モデルを簡単に再トレーニングして、変更を公開できます。 新しくトレーニングした予測モデルは、Dynamics 365 Finance で予測のために自動的に選択されます。
 
-[![AI Builder 拡張エクスペリエンス。](./media/ai-builder.png)](./media/ai-builder.png)
+[![AI Builder 拡張エクスペリエンス](./media/ai-builder.png)](./media/ai-builder.png)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+## <a name="release-details"></a>リリースの詳細
+
+Finance 分析情報のパブリック プレビューは、米国、ヨーロッパ、および英国でのデプロイの試行ができます。 Microsoft は、より多くの地域に対するサポートを段階的に追加しています。
+
+パブリック プレビュー機能は、Tier-2 のサンドボックス環境でのみ有効にすることができます。 サンドボックス環境で作成された設定および AI モデルは、運用環境に移行できません。 詳細については、[Microsoft Dynamics 365 プレビューの補足の使用条件](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms) を参照してください。
+
+## <a name="privacy-notice"></a>プライバシー通知
+
+プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。

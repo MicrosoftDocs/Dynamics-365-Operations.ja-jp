@@ -1,27 +1,27 @@
 ---
 title: Excel テンプレートへの分析コードの追加
 description: このトピックでは、分析コード、エンティティを持つ分析コード、および使用できる分析コード コントロールについて説明します。
-author: RyanCCarlson2
+author: robinarh
+manager: AnnBe
 ms.date: 11/10/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom:
-- "11314"
-- intro-internal
+ms.reviewer: rhaertle
+ms.custom: 11314
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
-ms.author: rcarlson
+ms.author: rbrow
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 154dc13eda45b0dbc731da34cdec407a5e481dd8
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 86420da59a8c5e2270a85129012ab7a00fc4f765
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986079"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680502"
 ---
 # <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 
@@ -48,14 +48,11 @@ ms.locfileid: "7986079"
 1. Microsoft Visual Studio で、**Dynamics 365 > アドイン > Odata の財務分析コードの追加** をクリックします。
 2. **分析コード名** の列に財務分析コードの名前を入力します。 これは、財務分析コードの正確な名前でなければなりません。 拡張機能を持つ **モデル** を選択します。 これは AppSuite レイヤーの上にする必要があります。 **適用** をクリックします。 
 
-    ![Odata の財務分析コード。](media/financial-dimensions-odata.png).
+    ![Odata の財務分析コード](media/financial-dimensions-odata.png).
 
-3. プロジェクトをコンパイルし、データベースと同期します。 
+3. プロジェクトをコンパイルし、データベースと同期します。
 
-    > [!NOTE] 
-    > プロジェクトが適切に機能するには、拡張機能名 "DimensionIntegration" を保持する必要があります。
-
-    ![構築および同期するメニュー オプション。](media/8-300x260.png)
+    ![8](media/8-300x260.png)
 
 4. これで、カスタマイズは完了です。 次のステートメントを使用して、SQL でテストすることができます。
 
@@ -70,7 +67,7 @@ ms.locfileid: "7986079"
 2. DimensionCombinationEntity **(AOT** &gt; **データ モデル** &gt; **データ エンティティ**) に移動します。 
 3. エンティティを右クリックし、**カスタマイズ** を選択します。 
 
-    [![5.](./media/5-300x187.png)](./media/5.png)
+    [![5](./media/5-300x187.png)](./media/5.png)
 
 4. 変更するエンティティのデザイナー、この例では **DimensionCombinationEntity** を開きます。 
 5. **departmentValue** という名前の str を返す新しいプライベート静的メソッドを作成します。 
@@ -107,12 +104,12 @@ ms.locfileid: "7986079"
    - **DataEntityView メソッド** プロパティを、前の手順で作成したメソッドに設定します (たとえば、**departmentValue**)。
    - **ラベル** プロパティを分析コード名 **部門** に設定します。
 
-     [![6.](./media/6-300x64.png)](./media/6.png)
+     [![6](./media/6-300x64.png)](./media/6.png)
 
 8. 分析コードの名前を適切な分析コードに変更することで、追加する分析コードごとに手順 5 ～ 7 を繰り返します。 
 9. プロジェクトをコンパイルし、データベースと同期します。 
 
-    [![8.](./media/8-300x260.png)](./media/8.png)
+    [![8](./media/8-300x260.png)](./media/8.png)
 
 10. これで、カスタマイズは完了です。 次のステートメントを使用して、SQL でテストすることができます。
 
@@ -132,6 +129,3 @@ ms.locfileid: "7986079"
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

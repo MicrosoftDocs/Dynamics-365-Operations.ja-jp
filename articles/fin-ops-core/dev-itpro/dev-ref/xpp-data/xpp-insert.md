@@ -1,20 +1,26 @@
 ---
 title: データの挿入
 description: このトピックでは、X++ を使用してテーブルにデータを挿入する方法について説明します。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 06/16/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 150273
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: a073e31b086acfa3837f221304206147b136465b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5310f978a7f625e6a5bfdafc0aa5d09f7e5b9ba9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783046"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408738"
 ---
 # <a name="insert-data"></a>データの挿入
 
@@ -25,8 +31,8 @@ ms.locfileid: "7783046"
 + **[insert メソッド](#insert-method)** – 一度に 1 行を挿入します。
 + **[doInsert メソッド](#do-insert-method)** – 一度に 1 行を挿入します。
 + **[insert\_recordset ステートメント](#insert-recordset-statement)** – 複数のレコードを 1 つまたは複数のテーブルから別のテーブルに 1 回のデータベース トリップで直接コピーします。
-+ **[RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – 1 回のデータベース トリップで複数の行を同時に挿入します。 データをソートする必要がない場合は、この構文を使用します。
-+ **[RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – 1 回のデータベース トリップで複数の行を同時に挿入します。 特定のテーブルのデータのサブセットを必要とし、現在インデックスとして存在しない順序でソートする場合は、このコンストラクトを使用します
++ **[RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)** – 1 回のデータベース トリップで複数の行を同時に挿入します。 データをソートする必要がない場合は、この構文を使用します。
++ **[RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)** – 1 回のデータベース トリップで複数の行を同時に挿入します。 特定のテーブルのデータのサブセットを必要とし、現在インデックスとして存在しない順序でソートする場合は、このコンストラクトを使用します
 
 **RecordSortedList**、**RecordInsertList**、および **insert\_recordset** を使用すると、複数のレコードを挿入できます。 これらのメソッドを使用することにより、アプリケーションとデータベース間の通信が減少します。 したがって、パフォーマンスの向上に役立ちます。 場合によっては、レコードのセットに基づく操作をレコードごとの操作に戻すことができます。 詳細については、[セット ベースからレコード単位への操作の変換](xpp-data-perf.md)を参照してください。
 
@@ -48,8 +54,8 @@ ms.locfileid: "7783046"
 ```xpp
 CustGroup custGroup;
 ttsBegin;
-custGroup.CustGroup = '41';
-custGroup.insert();
+    custGroup.CustGroup = '41';
+    custGroup.insert();
 ttsCommit;
 ```
 
@@ -101,7 +107,7 @@ insert_recordset valueSumName (Name, ValueSum)
 
 この例では、NameValuePair テーブルに 1 つの新しいレコードが挿入されます。 このレコードの **ID** 値は **1**、**名前** の値は **Name1**、**値** の値は **1** です。
 
-```xpp
+```X++
 NameValuePair nameValuePair;
 CustTable custTable;
 
@@ -119,7 +125,7 @@ select firstonly id_var, name_var, value_var from custTable;
 
 この例では、tabEmplProj5 テーブルに対する **insert\_recordset** ステートメントがあります。 ターゲット フィールドの 1 つに **説明** という名前が付けられ、そのデータはローカル **sDescriptionVariable** 変数から取得されます。 **説明** フィールドの構成キーは無効の場合でも **insert\_recordset** ステートメントは成功します。 システムでは、**Description** フィールドと **sDescriptionVariable** 変数の両方を無視します。 したがって、このコードは *コンフィギュレーション キーの自動化* の例を提供します。 コンフィギュレーション キーの自動化は、コンフィギュレーション キーがオフになっているフィールドにデータを挿入する **insert\_ recordset** ステートメントの動作を、システムが自動的に調整できるときに発生します。
 
-```xpp
+```X++
 static void InsertJoin42Job(Args _args)
 {
     GmTabDepartment tabDept2;
@@ -127,25 +133,33 @@ static void InsertJoin42Job(Args _args)
     GmTabProject tabProj4;
     GmTabEmployeeProject tabEmplProj5;
     str 64 sDescriptionVariable = "From variable.";
-    delete_from tabEmplProj5;
-    insert_recordset tabEmplProj5
-        (  Description
+    DELETE_FROM tabEmplProj5;
+    INSERT_RECORDSET tabEmplProj5
+        (
+        Description
         , EmployeeRecId
         , ProjectRecId
         )
-    select sDescriptionVariable, RecId
-    from tabEmpl3
-        join tabDept2
+    Select
+        sDescriptionVariable
+        , RecId
+    from
+        tabEmpl3
+        join
+            tabDept2
             where tabEmpl3 .DepartmentGuid == tabDept2 .DepartmentGuid
-        join RecId from tabProj4
-            where tabDept2 .DepartmentGuid == tabProj4 .DepartmentGuid;
-    info(strFmt("%1 == Number of rows inserted.", tabEmplProj5.rowCount()));        
-    
-    while select tabEmplProj5
-        join tabEmpl3
-            where tabEmplProj5.EmployeeRecId == tabEmpl3.RecId
-        join tabProj4
-            where tabEmplProj5.ProjectRecId == tabProj4.RecId
+        join RecId
+            from tabProj4
+            where tabDept2 .DepartmentGuid == tabProj4 .DepartmentGuid
+    info(int642str(tabEmplProj5 .rowCount())
+        + " ==Number of rows inserted.");
+    WHILE SELECT *
+        from
+            tabEmplProj5
+            join tabEmpl3
+                where tabEmplProj5 .EmployeeRecId == tabEmpl3 .RecId
+            join tabProj4
+                where tabEmplProj5 .ProjectRecId == tabProj4 .RecId
     {
         info(
             tabEmpl3 .EmployeeName
@@ -175,7 +189,7 @@ Beth  --works on--  Project YY (From variable.).
 ```xpp
 static void JobDuplicKeyException44Job(Args _args)
 {
-    SourceTable      sourceTable; // Must have at least one record.
+    SourceTable sourceTable; // Must have at least one record.
     DestinationTable destinationTable;
     int countTries = 0;
     int numberAdjust = 0;
@@ -197,8 +211,7 @@ static void JobDuplicKeyException44Job(Args _args)
     {
         countTries++;
         notes += strFmt("Inside the try block, try count is %1.", countTries);
-        while select sourceTable 
-            order by SourceKeyField asc
+        while select * from sourceTable order by SourceKeyField asc
         {
             destinationTable.clear();
             newKey = sourceTable.SourceKeyField + numberAdjust;
@@ -244,6 +257,3 @@ static void JobDuplicKeyException44Job(Args _args)
     ---- .insert() successful.
 */
 ```
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

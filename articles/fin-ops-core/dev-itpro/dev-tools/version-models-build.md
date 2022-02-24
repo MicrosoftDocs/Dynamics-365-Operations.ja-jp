@@ -2,22 +2,26 @@
 title: 自動ビルドのモデル バージョンの更新
 description: このトピックでは、ビルド出力のソース パッケージと配置可能なパッケージのモデルを、それらを生成したビルドのバージョンで更新する方法について説明します。
 author: jorisdg
+manager: AnnBe
 ms.date: 05/25/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 26731
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2b22f1548a7e746e5f65b55d7207c9d9b9ca267
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f20549821dde3986b96cbed2a426057c6c4048dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782194"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409280"
 ---
 # <a name="update-model-versions-in-the-automated-build"></a>自動ビルドのモデル バージョンの更新
 
@@ -70,25 +74,22 @@ ISV または ISP レイヤーでソリューションを開発するサード �
 1. Azure DevOps で、**ビルドおよびリリース** ページの **ビルド** にある **すべての定義** タブでビルド定義を検索します。 
 1. 省略記号 (...)、**編集** の順にクリックします。
 
-    ![ビルド定義を編集します。](media/builddef_edit.png)
+    ![ビルド定義を編集](media/builddef_edit.png)
 
 1. **タスク** タブで、ページの下部にある **+ タスクの追加** をクリックします。
 1. ページの右側にある **タスクの追加** ウィンドウの **ユーティリティ** タブで、下にスクロールして **PowerShell** タスクを表示します。 
 1. マウス ポインタをタスク上にポイントして、表示する **追加** ボタンをクリックします。
 
-    ![PowerShell タスクを追加します。](media/builddef_addpowershelltask.png)
+    ![PowerShell タスクの追加](media/builddef_addpowershelltask.png)
 
 1. ページの左側にあるタスクの一覧で、追加される **PowerShell スクリプト** タスクをクリックして選択します。
 1. ページの右側で、**表示名**、**スクリプト パス**、および **引数** プロパティを変更して必要な設定を反映します。
 
-    ![モデル バージョンの設定タスクのプロパティを設定します。](media/builddef_setmodelversions_settings.png)
+    ![モデル バージョンの設定作業のプロパティを設定](media/builddef_setmodelversions_settings.png)
 
 1. ページの左側にあるタスクの一覧で、**モデル バージョンの設定** タスクを、**ビルドの準備** と **ソリューションのビルド** タスクの間にドラッグします。
 
-    ![モデル バージョン設定タスクの順序を設定します。](media/builddef_setmodelversions_order.png)
+    ![モデル バージョンの設定作業の順序を設定](media/builddef_setmodelversions_order.png)
 
 1. **変数** タブで、変数のリストの下部にある **+ 追加** をクリックします。 最初の列で、**名前** の変数に **ModelVersionExclusions** と入力します。
 1. 新しいタスクを保存するには、**保存** をクリックします。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

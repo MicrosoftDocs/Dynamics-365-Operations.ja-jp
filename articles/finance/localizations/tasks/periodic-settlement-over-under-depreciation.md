@@ -2,9 +2,11 @@
 title: 償却超過額/償却不足額の定期決済
 description: このタスクでは、損金の減価償却費を計算および記録する方法を説明します。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm, AssetDepPreTaxDedProcess_JP, AssetDepPreTaxDedProcessDetail_JP
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f56e6118a769a9e1ef1ed529a8253bb7d4dcdfbec0edfba70db16fb1138b9718
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c7007b824c1d58cbe99f122feb0cf1f194f8dd04
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761202"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968295"
 ---
 # <a name="periodic-settlement-of-over-and-under-depreciation"></a>償却超過額/償却不足額の定期決済
 
@@ -72,6 +74,3 @@ ms.locfileid: "6761202"
     * 正しい結果が作成されていることを確認します。  
 13. [転記] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

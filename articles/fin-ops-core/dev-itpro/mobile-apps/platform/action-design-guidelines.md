@@ -1,22 +1,27 @@
 ---
 title: アクション デザインのガイドライン
-description: このトピックでは、モバイル アプリのアクション デザインのガイドラインを提供します。
-author: tonyafehr
+description: このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。
+author: robinarh
+manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 255544
+ms.assetid: ''
 ms.search.region: Global
-ms.custom: intro-internal
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: f86792e16c0c6b7943078f4ba4b8f77f8f0b82e9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d1c9c313dd8c6b7a60d8cadd46c456c53ef61038
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984118"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680454"
 ---
 # <a name="action-design-guidelines"></a>アクション デザインのガイドライン
 
@@ -59,7 +64,7 @@ ms.locfileid: "7984118"
 2.  アクションのデザインが終了した後、フィールドを選択して豊富なルックアップ機能を追加し、**プロパティ** をクリックします。
 3.  **コントロールのプロパティ** ダイアログ ボックスで、手順 1 で指定または作成したリスト ビュー ページを選択し、その他の関連するプロパティを設定します。 
 
-![コントロール プロパティの設定。](media/lookupdesigner.png)
+![コントロール プロパティの設定](media/lookupdesigner.png)
 
 4.  アクションに変更内容を保存して公開します。
 
@@ -105,5 +110,3 @@ function main(metadataService, dataService, cacheService, $q) {
     }; 
 }
 ```
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

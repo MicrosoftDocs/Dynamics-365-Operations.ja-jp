@@ -1,25 +1,27 @@
 ---
 title: 日本の固定資産の減損会計
 description: このトピックでは、日本の固定資産の減損会計に関する情報について説明します。
-author: EricWangChen
+author: yijialuan
+manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP, AssetImpairmentManageTestResult_JP
 audience: Application User
 ms.reviewer: kfend
 ms.custom: 28811
 ms.search.region: Japan
-ms.author: wangchen
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cfb2591997187fe16399f2acd70070f097b5f30b
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: e1844bd2bc956c4b7ba8c59a8a6c29f2c551a3b1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592476"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968355"
 ---
 # <a name="impairment-accounting-for-fixed-assets-for-japan"></a>日本の固定資産の減損会計
 
@@ -69,6 +71,3 @@ ms.locfileid: "7592476"
 - [減損会計の共通パラメーターおよび転記プロファイルの設定](./tasks/impairment-accounting.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

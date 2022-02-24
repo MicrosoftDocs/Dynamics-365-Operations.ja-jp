@@ -2,24 +2,26 @@
 title: 変更の分割
 description: このトピックでは、分割変更について説明します。
 author: smithanataraj
+manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 4ab73456989b2ab55e64ae4c7b2bc9014fbd4295
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 34c5f8aa913596e0bbc797deefde46e7fa1359b6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782751"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409272"
 ---
 # <a name="breaking-changes"></a>変更の分割
 
@@ -99,6 +101,3 @@ ms.locfileid: "7782751"
      
 ## <a name="metadata-extensions"></a>メタデータの拡張
 + **メタデータまたは拡張クラスの名前付けガイドラインに従わない**: ユーザーは、同じ名前を持つ要素を持っている可能性があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

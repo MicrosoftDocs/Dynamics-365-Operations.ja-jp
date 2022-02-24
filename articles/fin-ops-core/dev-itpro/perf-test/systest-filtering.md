@@ -2,22 +2,24 @@
 title: クラスとメソッドの属性を使用した SysTest フィルタリング
 description: このトピックでは、テストのフィルター処理の目的で SysTest クラスおよびメソッドで使用できる属性について説明します。
 author: jorisdg
+manager: AnnBe
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-11-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ba1e5b481efa869e461b9c828fd12403facc092
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 02a8802c2c4b7944ddc2ba62879b89f4f959b016
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781945"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680436"
 ---
 # <a name="systest-filtering-using-class-and-method-attributes"></a>クラスおよびメソッドの属性を使用した SysTest フィルター処理
 
@@ -41,10 +43,7 @@ ms.locfileid: "7781945"
 
 **テスト プロパティ** 属性の **SysTestProperty** は、プラットフォームの以前のリリースに存在していましたが、完全には機能しませんでした。 ただし、**SysTestProperty** 属性は **Test Essentials** パッケージに存在する他の属性とは対照的に、**アプリケーション基準** パッケージに存在します。 プラットフォームの下位互換性への確約のため、現在この属性を予定の場所に移動することはできません。そのため、使用するには **アプリケーション基準** パッケージへの参照が必要になります。 **SysTestProperty** はプロパティと値 (2 つの文字列) を指定し、Visual Studio の **Test Toolbox** ウィンドウで使用できるようになりました。 **テスト プロパティ** は複数回指定でき、クラスとメソッドの両方のレベルで存在できます。 **テスト プロパティ** は、MSTest アダプタに従って、Visual Studio テスト コンソールのフィルター処理のテストには使用できません。
 
-Visual Studio テスト コンソールで使用できる高度なフィルター処理構文および MSTest フレームワークのフィルター処理例の確認については、[選択可能な単位テストの実行](/dotnet/core/testing/selective-unit-tests) を参照してください。 
+Visual Studio テスト コンソールで使用できる高度なフィルター処理構文および MSTest フレームワークのフィルター処理例の確認については、[選択可能な単位テストの実行](https://docs.microsoft.com/dotnet/core/testing/selective-unit-tests) を参照してください。 
 
 > [!NOTE]
 > フィルター処理のテストの目的で、SysTest フレームワークを使用して **FullyQualifiedName** と **名前** でフィルター処理することができます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

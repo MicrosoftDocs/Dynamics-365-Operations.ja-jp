@@ -2,24 +2,27 @@
 title: 連続スケジュールの定義
 description: このトピックでは、連続プログラム (それ以外の場合は、繰り返し注文とも呼ばれます) の設定について説明します。
 author: josaw1
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MCRContinuitySchedule, EcoResProductDetailsExtended
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c7b05bc82acfad89c9b50777bd0c5fd85f7bda90efd73f278f122c9aa0d073df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 06fd1e23ad84fdc5e94e309717d5a96fbff45035
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724494"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413798"
 ---
 # <a name="define-continuity-schedules"></a>連続スケジュールの定義
 
@@ -61,6 +64,3 @@ ms.locfileid: "6724494"
     * この品目がコールセンターで販売される場合、追加のビジネス ロジックは、選択した連続プログラムから適用されます。  
 7. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

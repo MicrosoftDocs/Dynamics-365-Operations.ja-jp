@@ -2,28 +2,29 @@
 title: 積荷テンプレート
 description: このトピックでは、積荷テンプレートの設定方法と、新しい積荷に積荷テンプレートを関連付ける方法について説明します。
 author: Henrikan
+manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 694860d1ade74f9fd51a8ac579aa69fe7fb673a8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1ea7f5244b483a1b9d6c55227c676a3878a71d83
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569916"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646408"
 ---
 # <a name="load-templates"></a>積荷テンプレート
-
-[!include [banner](../../includes/banner.md)]
 
 新しい積荷を作成する場合は、積荷テンプレートを割り当てることができます。 積荷テンプレートには、機器に関する情報、および積荷の高さ、幅、深さ、容積などの測定値に関する情報が含まれています。
 
@@ -53,6 +54,3 @@ ms.locfileid: "7569916"
 1. アクション ウィンドウの、**供給と需要** タブの **追加** グループで、**新しい積荷へ** を選択します。
 1. **積荷テンプレートの割り当て** ダイアログ ボックスの、**積荷テンプレート ID** フィールドで、適用するテンプレートを選択します。
 1. テンプレートを適用するには、**OK** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

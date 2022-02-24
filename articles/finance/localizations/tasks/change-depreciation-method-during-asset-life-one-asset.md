@@ -2,9 +2,11 @@
 title: 単一資産の資産耐用年数期間中の減価償却方法の変更
 description: 日本では、固定資産の耐用年数期間中、減価償却方法を変更することが許可されています。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetDepProfileChange_JP,  AssetUndepreciatedBalancedSchedule_JP
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c374befd22c7cf18b38afdc9c7c6dc1c023d44c8cdcc2d8a53e8530dea28e06d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 12f4bc8b5e1b7c27990eff077ba49ea1c450400c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723733"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962507"
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-one-asset"></a>単一資産の資産耐用年数期間中の減価償却方法の変更
 
@@ -58,6 +60,3 @@ ms.locfileid: "6723733"
     * 減価償却プロファイルの更新には対応するデータが必要です。  
     * [変更元の方法]、[変更後の方法]、[耐用年数] および [経過年数] によって資産の変更に適用されるレコードが決定されます。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

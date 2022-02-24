@@ -2,24 +2,26 @@
 title: X++ の拡張モデルのクラス
 description: この記事では、X++ で新しいクラス拡張モデルについて説明します。
 author: pvillads
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 89563
 ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 3bd70781acc3a6000b9db1d3ad5fb0ffe20ffb89
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7f17f975381e661c24c6f20a071ec19a6d530207
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783032"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409268"
 ---
 # <a name="class-extension-model-in-x"></a>X++ の拡張モデルのクラス
 
@@ -32,11 +34,11 @@ ms.locfileid: "7783032"
 ## <a name="the-effective-class-concept"></a>有効なクラスの概念
 強化されたコンポーネントのパブリック メンバー、およびそのコンポーネントを強化するすべてのクラスの拡張機能のすべてのパブリック メンバーで構成されるクラスに条件を設けるために役立ちます。 このクラスは、指定されたモデルの有効なクラスと呼ばれます。 次の図は、基本モデルで定義された、**MyArtifact** および **MyArtifact** の拡張クラスを持つ 2 つの依存モデルで定義されたコンポーネント **MyModel** を示しています。
 
-[![ベースモデル MyModel で定義されているコンポーネント MyArtifact、および MyArtifact の拡張クラスを持つ 2 つの依存モデル。](./media/extensions-11.png)](./media/extensions-11.png)
+[![ベースモデル MyModel で定義されているコンポーネント MyArtifact、および MyArtifact の拡張クラスを持つ 2 つの依存モデル](./media/extensions-11.png)](./media/extensions-11.png)
 
 この例では、有効なクラスはすべてのオリジナルのメソッドおよび拡張クラスからのすべてのパブリック コンポーネントを含む拡張モデルのクラスです。 有効なクラスは、特定のモデルで定義されたクラスの拡張のみを含むため、すべてのモデルで同じではありません。 次の図は、**MyExtensionModel** モデルの **MyArtifact** の有効クラスを示しています。
 
-[![MyExtensionModel の MyArtifact の有効クラス。](./media/extensions-21.png)](./media/extensions-21.png)
+[![MyExtensionModel の MyArtifact の有効クラス](./media/extensions-21.png)](./media/extensions-21.png)
 
 **MyModel** という名前のモデル内の **MyClass** という名前のクラスを使用して、クラス拡張について説明します。
 
@@ -188,6 +190,3 @@ final class MyClass_Extension
 ```
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

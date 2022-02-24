@@ -2,9 +2,11 @@
 title: 国コンテキスト依存の ER モデル マッピングのコンフィギュレーション
 description: このトピックでは、使用を制御する法人の国/地域コンテキストによって異なる、ER モデル マッピングを設定する方法について説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605374"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680880"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>国コンテキスト依存の ER モデル マッピングのコンフィギュレーション
 
@@ -48,7 +50,7 @@ ms.locfileid: "7605374"
 
 このトピックの[付録 1](#appendix1) の手順に従って、必要な ER コンポーネントを設計します。 これで、**エントリ ポイント 1** 定義のモデル マッピングを含む **マッピング (一般)** モデル マッピング コンフィギュレーションが完成しました。
 
-![ER 構成ページ (マッピングの構成を説明する形式)。](./media/RCS-Context-specific-mapping-Tree.PNG)
+![ER コンフィギュレーション ページ](./media/RCS-Context-specific-mapping-Tree.PNG)
 
 ### <a name="run-the-configured-format"></a>構成された形式の実行
 
@@ -61,7 +63,7 @@ Web ブラウザーで、実行した ER 形式によって生成されたテキ
 
 このトピックの[付録 2](#appendix2) の手順に従って、必要な ER コンポーネントを設計します。 これで、それぞれに **エントリ ポイント 1** 定義を含む、**マッピング (一般)** および **マッピング (一般) カスタム** モデル マッピング コンフィギュレーションが完成しました。
 
-![ER 構成ページ (一般的なカスタム構成のマッピング)。](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
+![ER コンフィギュレーション ページ](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
 ### <a name="run-the-configured-format"></a>構成された形式の実行
 
@@ -71,7 +73,7 @@ Web ブラウザーで、実行した ER 形式によって生成されたテキ
 
 選択した ER 形式の実行が失敗することを確認します。 **マッピング (一般)** および **マッピング (一般) カスタム** モデル マッピング コンフィギュレーションの、**マッピングを知るためのモデル** モデルおよび **エントリ ポイント 1** 定義に、複数のモデル マッピングが存在することを通知するエラー メッセージが表示されます。 また、そのメッセージは、これらのコンフィギュレーションのいずれかを既定のコンフィギュレーションとして選択することをお勧めします。
 
-![ER の構成画面にエラーメッセージが表示されている状態。](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
+![ER コンフィギュレーション ページ](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
 
 ### <a name="define-a-default-mapping-configuration"></a>既定のマッピング コンフィギュレーションの定義
 
@@ -82,7 +84,7 @@ Web ブラウザーで、実行した ER 形式によって生成されたテキ
 3.  **モデル マッピングの既定値** オプションを **はい** に設定します。
 4.  **保存** を選択します。
 
-![ER 構成ページ (モデル マッピング スライダーの既定値が [はい] に設定されている状態)。](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
+![ER コンフィギュレーション ページ](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>構成された形式の実行
 
@@ -101,7 +103,7 @@ Web ブラウザーで、実行した ER 形式によって生成されたテキ
 
 **マッピング (FR)** モデル マッピング コンフィギュレーションのバージョン 1 が、フランスの国/地域のコンテキストがある Finance の会社で実行される、**マッピングを知るためのモデル** モデルの ER 形式にのみ適用されるようにコンフィギュレーションされていることに注意してください。
 
-![ER 構成ページ (モデル マッピング (FR) の構成)。](./media/RCS-Context-specific-mapping-TreeFR.PNG)
+![ER コンフィギュレーション ページ](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
 ### <a name="run-the-configured-format"></a>構成された形式の実行
 
@@ -121,7 +123,7 @@ Web ブラウザーで、実行した ER 形式によって生成されたテキ
 3.  **モデル マッピングの既定値** オプションを **はい** に設定します。
 4.  **保存** を選択します。
 
-![ER 構成ページ (マッピング (FR) 構成、モデル マッピング スライダーの既定値が [はい] に設定されている状態)。](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
+![ER コンフィギュレーション ページ](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>構成された形式の実行
 
@@ -195,7 +197,7 @@ Web ブラウザーで、実行した ER 形式によって生成されたテキ
 1.  ナビゲーション ウィンドウで、**モジュール \> 組織の管理 \> 電子申告 \> 構成デバッグ ログ** へ移動します。
 2.  **このページを再読み込みする** ボタンを選択します。
 
-![ER 実行ログ ページ。](./media/RCS-Context-specific-mapping-DebugLog.PNG)
+![ER 実行ログ ページ](./media/RCS-Context-specific-mapping-DebugLog.PNG)
 
 実行される ER 形式の ER デバッグ ログに新しいレコードが追加されていることを確認します。 このレコードの **レベル** フィールドは **情報** に設定されているので、レコードは情報になります。 形式コンポーネント フィールドは、**マッピング コンフィギュレーション** に設定されているので、(**コンフィギュレーション名** フィールドで選択された) **マッピングを知るための形式** ER 形式 の実行中に使用されたモデル マッピングについての通知が表示されます。 **生成されたテキスト** フィールドの内容は、**マッピング (FR)** コンフィグレーションの **マッピング (FR)** が、このレポートの実行に使用されたことを通知します。
 
@@ -236,7 +238,7 @@ RCS インスタンスにサインインする。
 14. **名前** フィールドのドロップダウン ダイアログ ボックスに、**機能説明** を入力します。
 15. **追加** を選択します。
 
-    ![ER データ モデル デザイナーのページ。](./media/RCS-Context-specific-mapping-Model.PNG)
+    ![ER データ モデル デザイナーのページ](./media/RCS-Context-specific-mapping-Model.PNG)
 
 16. **保存** を選択します。
 17. ページを閉じます。
@@ -276,7 +278,7 @@ RCS インスタンスにサインインする。
 5.  **保存** を選択します。
 6.  **フォーミュラ デザイナー** ページを閉じます。
 
-    ![ER モデル マッピング デザイナー ページ (エントリ ポイント 1 定義)。](./media/RCS-Context-specific-mapping-Mapping1.PNG)
+    ![ER モデル マッピング デザイナーのページ](./media/RCS-Context-specific-mapping-Mapping1.PNG)
 
 7.  **保存** を選択します。
 8.  **モデル マッピング デザイナー** ページを閉じます。
@@ -289,12 +291,12 @@ RCS インスタンスにサインインする。
 15. **保存** を選択します。
 16. **フォーミュラ デザイナー** ページを閉じます。
 
-    ![ER モデル マッピング デザイナー ページ (エントリ ポイント 2 定義)。](./media/RCS-Context-specific-mapping-Mapping2.PNG)
+    ![ER モデル マッピング デザイナーのページ](./media/RCS-Context-specific-mapping-Mapping2.PNG)
 
 17. **保存** を選択します。
 18. **モデル マッピング デザイナー** ページを閉じます。
 
-    ![ER モデルのマッピング ページとエントリー ポイントの定義。](./media/RCS-Context-specific-mapping-Mappings.PNG)
+    ![ER モデル マッピング ページ](./media/RCS-Context-specific-mapping-Mappings.PNG)
 
 19. **モデル マッピング** ページを閉じます。
 
@@ -335,7 +337,7 @@ RCS インスタンスにサインインする。
 2.  **機能説明** フィールドを選択します。
 3.  **バインド** を選択します。
 
-    ![ER 形式デザイナーのページ。](./media/RCS-Context-specific-mapping-Format.PNG)
+    ![ER 形式デザイナーのページ](./media/RCS-Context-specific-mapping-Format.PNG)
 
 4.  **保存** を選択します。
 5.  ページを閉じます。
@@ -369,7 +371,7 @@ RCS インスタンスにサインインする。
 6.  **保存** を選択します。
 7.  ページを閉じます。
 
-    ![ER モデル マッピング デザイナー ページ (一般的な機能 1 のカスタム式)。](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
+    ![ER モデル マッピング デザイナーのページ](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
 
 8.  **保存** を選択します。
 9.  ページを閉じます。
@@ -380,12 +382,12 @@ RCS インスタンスにサインインする。
 14. **保存** を選択します。
 15. ページを閉じます。
 
-    ![ER モデル マッピング デザイナー ページ (一般的な機能 2 のカスタム式)。](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
+    ![ER モデル マッピング デザイナーのページ](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
 
 16. **保存** を選択します。
 17. ページを閉じます。
 
-    ![マッピング (一般) コピー マッピング用のデータ ソース マッピング ページに対する ER モデル。](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
+    ![ER モデル マッピング ページ](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
 
 18. ページを閉じます。
 
@@ -432,7 +434,7 @@ RCS インスタンスにサインインする。
 7.  **保存** を選択します。
 8.  ページを閉じます。
 
-    ![ER モデル マッピング デザイナー ページ (FR 機能 1 の式)。](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
+    ![ER モデル マッピング デザイナーのページ](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
 
 9.  **保存** を選択します。
 10. ページを閉じます。
@@ -444,12 +446,12 @@ RCS インスタンスにサインインする。
 16. **保存** を選択します。
 17. ページを閉じます。
 
-    ![ER モデル マッピング デザイナー ページ (FR 機能 2 の式)。](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
+    ![ER モデル マッピング デザイナーのページ](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
 
 18. **保存** を選択します。
 19. ページを閉じます。
 
-    ![ER モデルからデータソースへのマッピングページ。](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
+    ![ER モデル マッピング ページ](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
 
 20. ページを閉じます。
 
@@ -494,6 +496,3 @@ ER モデル マッピング コンフィギュレーションの 1 つのバー
 - ER モデル マッピング コンフィギュレーションの少なくとも 1 つのバージョンが **完了** しているか、**共有** ステータスになっています。 この場合は、バージョン番号が最も大きいバージョンが ER 形式の実行に使用されます。
 - ER モデル マッピング コンフィギュレーションの **ドラフトの実行** オプションがオンになっています。 この場合は、**ドラフト** 状態のバージョンが ER 形式の実行に使用されます。
 > **ドラフトの実行** オプションは、**実行設定** のユーザーパラメータがオンになっている場合に、各 ER モデル マッピング コンフィギュレーションの **コンフィギュレーション** ページで使用できるようになります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

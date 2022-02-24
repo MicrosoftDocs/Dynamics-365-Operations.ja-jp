@@ -1,23 +1,25 @@
 ---
 title: PDF ビューアを使用して PDF ドキュメントをプレビューする
 description: このトピックでは、ビジネスドキュメントを表示するにあたり、埋め込みPDFプレビューオプションを使用する方法について説明します。
-author: RichdiMSFT
+author: tjvass
+manager: AnnBe
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 3ae38daaf5fb01f6c600b548edc7797e60e7f4a4a0bbadaa87306e9df5244ac5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fff8347a235fc9a863fad51967f4ab55e381d682
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741694"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680578"
 ---
 # <a name="preview-pdf-documents-using-a-pdf-viewer"></a>PDF ビューアを使用した PDF ドキュメントのプレビュー
 
@@ -28,7 +30,7 @@ ms.locfileid: "6741694"
 埋め込みのビューアーを使うと、画面条の表示内容と印刷された内容に整合性を持たせることができます。 加えて、従来の操作と比較してレポートの表示時間が大幅に短縮されます。 Preview オプションは対応するすべての機器での使用が可能であり、サードパーティ製のソフトウェアを追加する必要はありません。 組み込みのビューア ツールバー オプションを使用すると、ドキュメントのダウンロードおよび閲覧が簡単になります。
 
 次の図は、最新のビジネスドキュメントをプレビューした例です。
-![PDF プレビュー フォーム。](./media/pdf-document-preview.png)
+![PDFプレビュー フォーム](./media/pdf-document-preview.png)
 
 従来のHTMLベースのプレビューは、実物のドキュメントに即したプレビューへと取って代わります。 最新のPDFプレビュー機能には、いくつかの重要な特徴があります。 以下のような特徴を持っています:
 
@@ -38,7 +40,7 @@ ms.locfileid: "6741694"
 - 組み込みツールによって、ビジネスドキュメントの内容をすばやく閲覧することができます。
 
 ## <a name="accessing-the-pdf-preview-experience-platform-update-36-or-later"></a>PDF プレビュー機能へのアクセス (プラットフォーム更新プログラム 36 以降)
-PDF プレビュー エクスペリエンスは、既定では [セルフサービス配置](../deployment/infrastructure-stack.md) およびプラットフォーム更新プログラム 39 またはそれ以降でホストされている環境で有効化されます。 プラットフォーム更新プログラム 36 から 38 を実行していて、クラウドでホストされている環境および Microsoft が管理する環境で PDF プレビュー エクスペリエンスを使用するには、機能管理を使用して **レポート PDF ビューアー** 機能を有効にします。
+PDF プレビュー エクスペリエンスは、既定では [セルフサービス配置](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack) およびプラットフォーム更新プログラム 39 またはそれ以降でホストされている環境で有効化されます。 プラットフォーム更新プログラム 36 から 38 を実行していて、クラウドでホストされている環境および Microsoft が管理する環境で PDF プレビュー エクスペリエンスを使用するには、機能管理を使用して **レポート PDF ビューアー** 機能を有効にします。
 
 ## <a name="additional-feature-information"></a>追加の機能
 - 既定では、展開/折りたたみが可能なセクションが用意されています。 これらのインタラクティブな操作は、PDFドキュメントが作成された後には機能しなくなります。
@@ -51,6 +53,3 @@ PDF プレビュー エクスペリエンスは、既定では [セルフサー�
 
 - 既定では、埋め込みドリルスルー ナビゲーションは、PDF ドキュメントのプレビュー時のみ使用可能です。
 - PDF ドキュメントでは、展開および折りたたみ可能なセクションはサポートされません。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

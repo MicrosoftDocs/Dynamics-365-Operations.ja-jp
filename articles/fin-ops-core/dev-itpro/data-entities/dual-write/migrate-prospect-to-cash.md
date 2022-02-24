@@ -2,37 +2,36 @@
 title: データ統合からデュアル書き込みへの見込顧客の現金データへの移行
 description: このトピックでは、データ統合からデュアル書き込みへの見込顧客の現金データへの移行方法について説明します。
 author: RamaKrishnamoorthy
-ms.date: 02/01/2022
+manager: AnnBe
+ms.date: 01/04/2021
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
-ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 82bfb768b0ecac04184f4b806527346d39584d64
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2021-01-04
+ms.openlocfilehash: f1478f0246e7f1ff8bd72232cbaf4c2034cf4edb
+ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087271"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959849"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>データ統合からデュアル書き込みへの見込顧客の現金データへの移行
 
 [!include [banner](../../includes/banner.md)]
 
-データ インテグレータで使用できる見込顧客を現金化するソリューションは、二重書き込みと互換性がありません。 その理由は、見込顧客を現金化するソリューションの一部として利用されている、勘定テーブルの msdynce_AccountNumber 指数にあります。 この指数が存在する場合、2 つの異なる法人に同じ顧客勘定番号を作成することはできません。 現金化する見込顧客をデータ インテグレータから二重書き込みに移行して二重書き込みを始めるか、見込顧客を現金化するソリューションの最新の "dorman" バージョンをインストールすることができます。 このトピックでは、この両方のアプローチについて説明します。
-
-## <a name="install-the-last-dorman-version-of-the-data-integrator-prospect-to-cash-solution"></a>データ インテグレータ見込顧客の現金化ソリューションの最新 "dorman" バージョンをインストールする
-
-**P2C バージョン 15.0.0.2** は、データ インテグレータ見込顧客の現金化ソリューションの最新 "dorman" バージョンと見なされます。 [FastTrack for Dynamics 365](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/P2C) からダウンロードできます。
-
-手動でインストールする必要があります。 インストール後も、msdynce_AccountNumber 指数が削除される以外は、すべてがまったく同じまま残ります。
-
-## <a name="steps-to-migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>データ統合から二重書き込みへの見込顧客の現金データへの移行に関する手順
-
 データ統合からデュアル書き込みへの見込顧客の現金データへ移行するには、次の手順に従ってください。
 
-1. 見込顧客から現金データの統合ジョブを実行して、最終的な完全同期を 1 つ実行します。 これにより、両方のシステム (財務と運用アプリと Customer Engagement アプリ) がすべてのデータが確実に設定されます。
+1. 見込顧客から現金データの統合ジョブを実行して、最終的な完全同期を 1 つ実行します。 これにより、両方のシステム (Finance and Operations アプリと Customer Engagement アプリ) がすべてのデータが確実に設定されます。
 2. データが失われる可能性を防ぐには、Microsoft Dynamics 365 Sales から Excel ファイルまたはコンマ区切り値 (CSV) ファイルに、見込顧客を現金データにエクスポートします。 次のエンティティからデータをエクスポートします。
 
     - [口座](#account-table)
@@ -47,25 +46,25 @@ ms.locfileid: "8087271"
 
 3. 販売環境から見込顧客から入金ソリューションをアンインストールします。 この手順により、見込顧客からの入金ソリューションの列と対応するデータが削除されます。
 4. 二重書き込みソリューションをインストールします。
-5. 1 つ以上の法人に対して、財務と運用アプリと Customer Engagement アプリの間に二重書き込み接続を作成します。
+5. 1 つ以上の法人に対して、Finance and Operations アプリと Customer Engagement アプリの間に二重書き込み接続を作成します。
 6. デュアル書き込みテーブル マップを有効にし、必要な参照データに対して初期同期を実行します。 (詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) をご覧ください。) 必須データの例として、顧客グループ、支払条件、支払スケジュールがあります。 初期化が必要なテーブル (勘定、見積、見積行、注文、注文など) に対して二重書き込みマップを有効にすることはできません。
 7. Customer Engagement アプリで、**詳細設定 \> システム設定 \> データ管理 \> 複製検出ルール** に移動し、すべてのルールを無効にします。
 8. 手順 2 に示したテーブルを初期化します。 手順については、このトピックの残りのセクションを参照してください。
-9. 財務と運用アプリを開き、テーブル マップ (勘定、見積、見積依頼行、注文、注文の行テーブル マップなど) を有効にします。 その後初期同期を実行します。 (詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。) このプロセスでは、処理ステータス、出荷先住所と請求先住所、サイト、倉庫などの追加情報を財務と運用アプリから同期します。
+9. Finance and Operations アプリを開き、テーブル マップ (勘定、見積、見積依頼行、注文、注文の行テーブル マップなど) を有効にします。 その後初期同期を実行します。 (詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。) このプロセスでは、Finance and Operations 処理ステータス、出荷先住所と請求先住所、サイト、倉庫などの追加情報をアプリケーションから同期します。
 
 ## <a name="account-table"></a>アカウント テーブル
 
 1. **会社** 列に、**USIM** などの会社名を入力します。
 2. **関係タイプ** 列に、**顧客** を静的値として入力します。 すべての勘定レコードをビジネス ロジックで顧客として分類する場合はそうではありません。
-3. **顧客グループ ID** 列に、財務と運用アプリの顧客グループ番号を入力します。 見込顧客からの入金ソリューションの既定値は **10** です。
-4. **勘定番号** をカスタマイズせずに見込顧客から入金ソリューションを使用している場合は、**当事者番号** 列に **勘定番号** の値を入力します。 カスタマイズが存在し、当事者番号が分からない場合は、この情報を財務と運用アプリから取り込む必要があります。
+3. **顧客グループ ID** 列に、Finance and Operations アプリの顧客グループ番号を入力します。 見込顧客からの入金ソリューションの既定値は **10** です。
+4. **勘定番号** をカスタマイズせずに見込顧客から入金ソリューションを使用している場合は、**当事者番号** 列に **勘定番号** の値を入力します。 カスタマイズが存在し、当事者番号が分からない場合は、この情報を Finance and Operations アプリから取り込む必要があります。
 
 ## <a name="contact-table"></a>連絡先テーブル
 
 1. **会社** 列に、**USIM** などの会社名を入力します。
 2. CSV ファイルの **IsActiveCustomer** 値に基づいて、次の列を設定します。
 
-    - CSV ファイルで **IsActiveCustomer** が **はい** に設定されている場合は、**販売可能** 列を **はい** に設定します。 **顧客グループ ID** 列に、財務と運用アプリの顧客グループ番号を入力します。 見込顧客からの入金ソリューションの既定値は **10** です。
+    - CSV ファイルで **IsActiveCustomer** が **はい** に設定されている場合は、**販売可能** 列を **はい** に設定します。 **顧客グループ ID** 列に、Finance and Operations アプリの顧客グループ番号を入力します。 見込顧客からの入金ソリューションの既定値は **10** です。
     - **ISActiveCustomer** が CSV ファイルで **"いいえ**" に設定されている場合は、**販売可能** 列を **"いいえ"** に設定し、**連絡先対象** を **顧客** に設定します 。
 
 3. **連絡先番号** をカスタマイズせずに見込顧客を現金化ソリューションを使用している場合は、次の列を設定します。
@@ -76,7 +75,7 @@ ms.locfileid: "8087271"
 
 ## <a name="invoice-table"></a>請求テーブル
 
-**請求書** テーブルのデータは、財務と運用アプリから Customer Engagement アプリに対して一方向に流れる設計なので、初期化の後で初期化を行う必要はありません。 初期同期を実行して、必要なすべてのデータを財務と運用アプリから Customer Engagement アプリに移行します。 詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。
+**請求書** テーブルのデータは、Finance and Operations アプリから Customer Engagement アプリに対して一方向に流れる設計なので、初期化の後で初期化を行う必要はありません。 初期同期を実行して、必要なすべてのデータを Finance and Operations アプリから Customer Engagement アプリに移行します。 詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。
 
 ## <a name="order-table"></a>オーダー テーブル
 
@@ -94,11 +93,8 @@ ms.locfileid: "8087271"
 
 ## <a name="products-table"></a>製品テーブル
 
-**製品** テーブルのデータは、財務と運用アプリから Customer Engagement アプリに対して一方向に流れる設計なので、初期化の後で初期化を行う必要はありません。 初期同期を実行して、必要なすべてのデータを財務と運用アプリから Customer Engagement アプリに移行します。 詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。
+**製品** テーブルのデータは、Finance and Operations アプリから Customer Engagement アプリに対して一方向に流れる設計なので、初期化の後で初期化を行う必要はありません。 初期同期を実行して、必要なすべてのデータを Finance and Operations アプリから Customer Engagement アプリに移行します。 詳細については、[初期同期に関する考慮事項](initial-sync-guidance.md) を参照してください。
 
 ## <a name="quote-and-quote-product-tables"></a>見積および見積製品テーブル
 
 **見積** テーブルについては、このトピックの前にある [オーダー テーブル](#order-table) セクションの指示に従ってください。 **見積製品** テーブルについては、[オーダー製品テーブル](#order-products-table) セクションの指示に従ってください。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,18 +1,25 @@
 ---
 title: ContainerControlMetadata タイプ
 description: コンテナー コントロール メタデータ タイプ。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: a210a32a69664d8a9812a46bff2454dabc908d84
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 60c129e807c132e923d4ba5a1817cf305ec7e360
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782873"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682573"
 ---
 # <a name="containercontrolmetadata-type"></a>ContainerControlMetadata タイプ
 
@@ -39,7 +46,7 @@ ms.locfileid: "7782873"
 * [ラベル](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#label)
 * [名前](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#name)
 * [注文](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#order)
-* [タイプ](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#type)
+* [[タイプ](view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#type)]
 
 ## <a name="properties"></a>プロパティ
 
@@ -155,6 +162,3 @@ Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承
 
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

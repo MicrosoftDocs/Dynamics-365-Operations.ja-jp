@@ -2,23 +2,26 @@
 title: クレジット カード処理のコンフィギュレーション
 description: この手順は、支払プロバイダの一覧を表示し、売掛金勘定の支払口座を構成する方法を説明しています。
 author: jashanno
+manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d49dee72d2dc00f762159b849049c61955acf5295fe431a3cd93e30408dca9fb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2cfec44bc1c767dff1109c4ecd4e2862443fb1d0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730686"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413810"
 ---
 # <a name="configure-credit-card-processing"></a>クレジット カード処理のコンフィギュレーション
 
@@ -59,6 +62,3 @@ ms.locfileid: "6730686"
 24. [新しいクレジット カードの既定のプロセッサ] チェックボックスをオンにします。
 25. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

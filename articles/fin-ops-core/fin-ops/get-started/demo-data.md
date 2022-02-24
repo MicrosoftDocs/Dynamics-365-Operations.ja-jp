@@ -2,26 +2,26 @@
 title: デモ データの概要
 description: このトピックでは、デモ データの概要を示します。
 author: sericks007
+manager: AnnBe
 ms.date: 09/20/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom:
-- "56551"
-- intro-internal
+ms.custom: 56551
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
 ms.author: pmantha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f74af401a1da79f5bdb218108e1fa0d23bacd85
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2873dddd16557bba26252c787db9a2d455228c25
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984955"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798391"
 ---
 # <a name="demo-data-overview"></a>デモ データの概要
 
@@ -114,17 +114,14 @@ USMF というデモ会社には、承認すべき INGA についての 2 つの
 
 補助元帳仕訳帳勘定項目のバッチ転送ルールが **スケジュール済バッチ** に変更され、ベスト プラクティスが反映されます。 バッチは、10 分ごとに実行されるように構成されています。 バッチ処理が実行されるまで、すべてのソース ドキュメントの勘定項目が反映されないことを理解することが重要です。 総勘定元帳の即時効果を確認する必要がある場合は、**総勘定元帳** パラメータの **バッチ転送ルール** ページで **転送モード** を **同期** に設定します。 製品デモおよびトランザクション量が低い環境では同期が動作しても、大容量トランザクション環境ではパフォーマンスの問題が生じる可能性があります。
 
-[![一般会計パラメータ。](./media/GL-parameters.PNG)](./media/GL-parameters.PNG)
+[![一般会計パラメータ](./media/GL-parameters.PNG)](./media/GL-parameters.PNG)
 
-## <a name="cost-accounting"></a>原価会計
+## <a name="cost-accounting"></a>原価計算
 
 3 つの原価計算元帳がデモ データで作成されます。 原価計算元帳 USP2 は、法人 USP2 からのデータに基づく E2E デモ経験を提供します。 原価管理単位は、2 つの原価オブジェクト分析コード (原価部門と製品グループ) で構成されています。 実際原価、予算原価、統計測定は、2017 年の 12 会計年度期間すべてに転送されます。 2017 年のすべての会計年度期間に間接費計算も実行されました。
 
 アクセス レベルのセキュリティは、コンフィギュレーションされていますが、有効になっていません。 これは、**原価会計パラメーター** ページで有効になります。
 
-[![原価会計パラメーター。](./media/Cost-accounting-parameters.PNG)](./media/Cost-accounting-parameters.PNG)
+[![原価会計パラメーター](./media/Cost-accounting-parameters.PNG)](./media/Cost-accounting-parameters.PNG)
 
 アクセス レベルのセキュリティを有効にした後、従業員を原価オブジェクト コントローラーのロールに割り当てることができます。 従業員としてログインして **原価管理** ワークスペースにアクセスできます。 従業員はコスト センターのパフォーマンスを参照し、これらの計算がどのようにされたのか細部まで掘り下げて調べることができます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,24 +1,27 @@
 ---
 title: クライアント側の設計 API
 description: このトピックでは、クライアント側での設計のための API の概要と、それらの使用に関する推奨事項について説明します。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 07/01/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 255544
 ms.assetid: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 2edaec2a8f3bd53d4b335fc7ef71e0fb5d8b1c07
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 105d9cf1c61bc348a7cfe063200123a63cf20d1e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986071"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682553"
 ---
 # <a name="client-side-design-apis"></a>クライアント側の設計 API
 
@@ -113,7 +116,4 @@ ms.locfileid: "7986071"
 
 次の図は、前のコードで生成された顧客画像、顧客名、フォント、背景色などを示しています。
 
-![前のコードにより生成された情報を示す画像。](media/detail-page.png)
-
-
-[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]
+![前のコードにより生成された情報を示す画像](media/detail-page.png)

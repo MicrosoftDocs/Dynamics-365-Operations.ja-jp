@@ -1,62 +1,89 @@
 ---
-title: ヘッドレス コマースのアーキテクチャ
-description: このトピックでは、ヘッドレス コマースのアーキテクチャについて説明します。
-author: mugunthanm
-ms.date: 06/03/2021
+title: Commerce Scale Unit アーキテクチャ
+description: この記事では、Commerce Scale Unit のアーキテクチャについて説明します。 Commerce Scale Unit は、Modern 販売時点管理 (POS) および E コマース クライアントのステートレス サービスとビジネス ロジックを提供します。
+author: RobinARH
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 31521
+ms.assetid: 3a169648-592b-4616-9834-598c0244a852
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 2021-02-28
-ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: e884f0ac4b154a970852edfa270485ead9b2254b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: meeram
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 0a32c63a3db17f3b780aff49c73b01f9fb440f48
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783326"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683179"
 ---
-# <a name="headless-commerce-architecture"></a>ヘッドレス コマースのアーキテクチャ
+# <a name="commerce-scale-unit-architecture"></a>Commerce Scale Unit アーキテクチャ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ヘッドレス コマース (Commerce Scale Unit とも呼ばれる) のアーキテクチャについて説明します。 ヘッドレス コマースは、拡張可能で、カスタマイズされたフリクションフリーなコマース エクスペリエンス、および統合され最適化されたバック オフィス操作を可能にする API 駆動型のフレームワークです。
+この記事では、Commerce Scale Unit のアーキテクチャについて説明します。 Commerce Scale Unit は、Modern 販売時点管理 (MPOS) および E コマース クライアントのステートレス サービスとビジネス ロジックを提供します。
 
-![Commerce Scale Unit アーキテクチャ。](media/CSUExtensionArchitecture.PNG)
+<a name="commerce-scale-unit-architecture"></a>Commerce Scale Unit アーキテクチャ
+--------------------------
 
-## <a name="omnichannel-solution-provided-by-the-headless-commerce"></a>ヘッドレス コマースが提供するオムニチャネル ソリューション
+Commerce Runtime は Commerce Scale Unit レイヤーにラップされます。 Commerce Scale Unit は、タブレットや電話で店舗とオンラインの両方のシン クライアントをサポートするために、Web API および OData を使用します。 Commerce Runtime は、Commerce Data Exchange サービスを通じて Headquarters と通信します。 次の図は、Commerce Scale Unit のアーキテクチャを示しています。 
 
-ヘッドレス コマースのコマース API は Microsoft Dynamics 365 Commerce によって使用され (バックオフィス、ストア内、コール センター、および e コマース)、完全なオムニチャネル ソリューションを提供します。 API は、サード パーティのアプリケーションおよび Microsoft Power Platform コネクタで使用できます。
+[![Commerce Scale Unit アーキテクチャ ダイアグラム](./media/retailserver.png)](./media/retailserver.png) 
 
-![Commerce Scale Unit のプラットフォームの統合。](./media/CSUConsumer.PNG)
+Commerce Scale Unit は次の概念を使用します。
 
-## <a name="components"></a>コンポーネント
+<table>
+<thead>
+<tr class="header">
+<th>概念</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>エンティティ タイプ</td>
+<td>エンティティ タイプは監視するライフ サイクルを持つエンティティです。 各エンティティ タイプには、キーがあります。 エンティティ タイプの例は<strong>顧客</strong>です。</td>
+</tr>
+<tr class="even">
+<td>複合型</td>
+<td>複合型は、特定の関連プロパティをグループ化して重複を防止するよう設計された OData 概念です。 これらの関連するプロパティは、複数のエンティティで再利用できます。 たとえば、<strong>顧客</strong>は顧客のアドレスを持つエンティティ タイプです。 この顧客アドレスは、アドレス行、市町村、都道府県、および郵便番号を含むラッパーです。 したがって、<strong>顧客の住所</strong>は、他のエンティティ タイプにより再利用できる複合型です。 たとえば、<strong>注文</strong>エンティティ タイプは、<strong>顧客</strong>エンティティ タイプに関連付けられている同じ住所情報を必要とし、したがって<strong>顧客住所</strong>複合型を再利用します。</td>
+</tr>
+<tr class="odd">
+<td>コントローラー</td>
+<td>コントローラーは、エンティティ タイプの作成、読み取り、更新、および削除 (CRUD) の動作とアクションをコントロールするエンティティ タイプのマッピングです。 各 commerce エンティティに、コントローラーが用意されています。 以下のコントローラーをカスタマイズすることができます。
+<ul>
+<li>カート</li>
+<li>カタログ</li>
+<li>カテゴリ</li>
+<li>コマース</li>
+<li>コマース リスト</li>
+<li>複合キー エンティティ</li>
+<li>コントローラ アセンブリ リゾルバー</li>
+<li>顧客</li>
+<li>従業員</li>
+<li>バインドできないアクション</li>
+<li>組織単位</li>
+<li>ピッキング リスト</li>
+<li>製品</li>
+<li>発注書</li>
+<li>販売注文</li>
+<li>シフト</li>
+<li>在庫棚卸仕訳帳</li>
+<li>移動オーダー</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>メタデータ</td>
+<td>メタデータは、クライアントとサーバーの間の契約を定義します。</td>
+</tr>
+</tbody>
+</table>
 
-ヘッドレス コマースには、次のコンポーネントが含まれます。
-
-+ コンシューマー API
-+ Commerce Runtime (CRT)
-+ チャネル データベース
-
-### <a name="consumer-apis"></a>コンシューマー API
-
-ヘッドレス コマースでは、Dynamics 365 Commerce 用の Open Data Protocol (OData) API と使用できるサード パーティ アプリが公開されます。 API レイヤーは、ASP.NET コアを使用して作成されます。 クライアントが API を使用できるように異なった認証オプションが提供されます。 API は、ビジネス ロジックを公開するラッパーです。 詳細については、次のトピックを参照してください。
-
-+ [Commerce Scale Unit の顧客およびコンシューマー API](retail-server-customer-consumer-api.md)
-+ [API の使用](consume-retail-server-api.md)
-+ [カスタム API](retail-server-icontroller-extension.md)
-
-### <a name="commerce-runtime"></a>Commerce Runtime
-
-CRT は、コア コマース ビジネス ロジックを含むポータブル .NET ライブラリの集合です。 コンシューマー API はクライアントに使用するビジネス ロジックを公開します。 ビジネス ロジックを追加または変更するには、CRT をカスタマイズします。 詳細については、次のトピックを参照してください。
-
-+ [Commerce Runtime (CRT) のサービス](crt-services.md)
-+ [CRT 拡張機能](commerce-runtime-extensibility.md)
-
-### <a name="channel-database"></a>チャネル データベース
-
-チャネル データベースは、オンライン ストアまたは従来型の店舗などの 1 つ以上のコマース チャネルからのトランザクション データおよびマスター データを保持します。 マスター データは Commerce Data Exchange (CDX) を使用して、Commerce 本社からチャネル データベースにプッシュ ダウンされます。 チャネル データベースに格納されたトランザクション データは、CDX を使用して Commerce 本社に引き戻されます。 詳細については、[チャネル データベース拡張機能](channel-db-extensions.md)を参照してください。
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+自分自身のエンティティ タイプまたは複合タイプを作成して、既存のコントローラーを拡張し、新しいコントローラーを追加し、メタデータをカスタマイズすることができます。 Commerce Runtime をカスタマイズする場合は、Commerce Scale Unit のさまざまなコンポーネントもカスタマイズし、これらの変更を Retail Modern POS クライアントに公開する必要があります。
 

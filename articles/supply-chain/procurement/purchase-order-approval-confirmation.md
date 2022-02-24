@@ -1,10 +1,12 @@
 ---
 title: 発注書の承認と確認
 description: このトピックでは、発注書が作成された後の一連の状態と、PO で変更管理を有効にした場合の影響について説明します。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ae625950e62b2bf5ec092ccda414ee306c62d79
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eafce0be07ae21e5bc2db2cf5bb694a9d71a6269
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570540"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018448"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>発注書の承認と確認
 
@@ -41,8 +43,8 @@ ms.locfileid: "7570540"
 | 承認状態 | 説明                                                                      | 変更要求の有効化 |
 |-----------------|----------------------------------------------------------------------------------|---------------------------|
 | ドラフト           | 発注書はドラフトで、発注書ワークフローの承認用に送信されていません。     | いいえ                        |
-| 確認中       | 発注書は、発注書ワークフローの承認のため送信されました。 承認は保留中です。       | いいえ                        |
-| 拒否済        | 発注書は、承認プロセス中に却下されました。                                 | いいえ                        |
+| 確認中       | 発注書は、発注書ワークフローの承認のため送信されました。 承認は保留中です。       | 第        条                        |
+| 拒否済        | 発注書は、承認プロセス中に却下されました。                                 | 第        条                        |
 | 承認済        | 発注書が承認されました。                                                             | はい                       |
 | 確認済       | 発注書が確認されました。 発注書は承認されるまで確認できません。        | はい                       |
 | 完了       | 発注書は作成完了です。 これは財務上、決済されており変更できません。 | いいえ                        |
@@ -83,7 +85,8 @@ ms.locfileid: "7570540"
 
 発注書に変更管理が行われている場合、注文または出荷残量のキャンセルなどの変更がワークフローシステムに送信され、プロセスが完了および在庫トランザクションがキャンセルされる前に、承認する必要があります。
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 [発注書の概要](purchase-order-overview.md)
 
@@ -95,6 +98,3 @@ ms.locfileid: "7570540"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

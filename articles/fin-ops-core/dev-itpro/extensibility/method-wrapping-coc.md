@@ -2,22 +2,24 @@
 title: クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
 description: このトピックでは、メソッド ラッピングを使用してパブリック メソッドと保護メソッドのビジネス ロジックを拡張する方法について説明します。
 author: jorisdg
+manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9433e1c5cb51f2016a4ac38c86164ae1083c6190
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e03c25eb4381e1b24030e34c145b18ff5ef0527e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781891"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409494"
 ---
 # <a name="class-extension---method-wrapping-and-chain-of-command"></a>クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
 
@@ -212,7 +214,7 @@ class ProgramTest
 プラットフォーム更新プログラム 9 では、拡張クラスから保護されたメンバーにアクセスできます。 これらの保護されたメンバーには、フィールドとメソッドが含まれます。 このサポートは、メソッドのラップに固有ではありませんが、クラス拡張内のすべてのメソッドを適用することに注意してください。 したがって、クラス拡張は以前よりも強力です。
 
 ### <a name="the-hookable-attribute"></a>Hookable 属性
-メソッドが **[Hookable(false)]** として明示的にマークされている場合、メソッドを拡張子クラスで囲むことはできません。 次の例では、**anyMethod** は **AnyClass1** を補強するクラスでラップできません。
+メソッドが **[Hookable(false)]** として明示的にマークされている場合、メソッドを拡張機能クラスで囲むことはできません。 次の例では、**anyMethod** は **AnyClass1** を補強するクラスでラップできません。
 
 ```xpp
 class AnyClass1 
@@ -226,7 +228,7 @@ class AnyClass1
 > 互換性の理由から、**[Hookable(false)]** は、前後のハンドラーに加えて、コマンド チェーンの動作を上書きします。 ただし、**[Hookable(true)]** は前後のハンドラーにのみ適用され、コマンド ラッピングのチェーンには影響しません。
 
 ### <a name="final-methods-and-the-wrappable-attribute"></a>最終的な方法および Wrappable 属性
-**final** とマークされているパブリック メソッドと保護されたメソッドは、拡張クラスでラップできません。 **Wrappable** 属性を使用して属性パラメーターを **true** (**[Wrappable(true)]**) に設定することにより、この制限をオーバーライドすることができます。 同様に、(最終ではない) パブリックまたは保護されたメソッドの既定の機能を無効にするには、折り返し不可としてこれらのメソッドをマークすることができます (**[Wrappable(false)]**)。
+**final** とマークされているパブリック メソッドと保護されたメソッドは、拡張クラスでラップできません。 **Wrappable** 属性を使用して属性パラメーターを **true** (**[Wrappable(true)]**) に設定することにより、この制限を上書きすることができます。 同様に、(最終ではない) パブリックまたは保護されたメソッドの既定の機能を無効にするには、折り返し不可としてこれらのメソッドをマークすることができます (**[Wrappable(false)]**)。
 
 次の例では、**doSomething** メソッドは、パブリック メソッドである場合でもラップできないものとして明示的にマークされます。 **doSomethingElse** メソッドは、最後のメソッドであっても、折り返し可能と明示的にマークされます。
 
@@ -435,6 +437,3 @@ CoC 拡張メソッドでは、次の呼び出しを条件付きで呼び出し�
 
 ### <a name="tooling"></a>ツール
 このトピックに記載されている機能については、Microsoft Visual Studio X++ エディターは、相互参照および Microsoft IntelliSense の完全なサポートまだ提供していません。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,26 +1,28 @@
 ---
 title: Power BI Desktop を使用した分析レポートの作成
 description: このトピックでは、ローカルの Entity Store データベースを使用して Power BI レポートを作成するプロセスについて説明します。
-author: RichdiMSFT
-ms.date: 12/02/2021
+author: MilindaV2
+manager: AnnBe
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.custom: 265864
 ms.assetid: e253a57a-979b-4ca5-8e09-2bfce97395a5
 ms.search.region: Global
-ms.author: RICHDI
+ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: f219650d38e3c639db7cadb82cb97867d72e6720
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: adc49c684624ab7e0266da2d85eff0ec1eea4da6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883480"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683125"
 ---
 # <a name="create-analytical-reports-by-using-power-bi-desktop"></a>Power BI Desktop を使用した分析レポートの作成
 
@@ -34,11 +36,9 @@ ms.locfileid: "7883480"
 Power BI Desktop を使用すると、ローカルのエンティティ格納データベースに直接接続することによって、開発またはテスト環境でレポートを作成することができます。 レポートに問題がなければ、管理者は、ユーザーがそれを実稼働環境に移行する支援をすることができます。 このセクションの残りの部分では、このプロセスについて説明します。
 
 > [!NOTE]
-> 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が独自のサブスクリプションまたはローカル コンピューターで実行している開発環境を使用する必要があります。 Microsoft が提供するレベル 1 環境では、埋め込まれた分析レポートを開発または拡張することはできません。 Power BI Desktop をインストールするには管理者権限が必要です。
+> 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が独自の定期売買またはローカル コンピューターで実行している開発環境を使用する必要があります。 Microsoft が提供するレベル 1 環境では、埋め込まれた分析レポートを開発または拡張することはできません。 Power BI Desktop をインストールするには管理者権限が必要です。
 
-> Power BI Embedded 統合は、10.0.22 リリースの一部としてインフラストラクチャをアップグレードしました。 これはインフラストラクチャの変更であり、環境がリリース 10.0.22 にアップグレードされると自動的に行われます。 この変更により、ユーザーはワークスペース レポートの編集時に Power BI Desktop の *最新バージョン* を使用できるようになりました。
-
-> バージョン 10.0.21 またはそれ以前を実行している環境では、開発環境にプレインストールされた Power BI Desktop の前回のビルドを使用する必要があります。 または、*互換性がある* Power BI Desktop の Power BI Desktop  2020 年 8 月のリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary)から、Power BI Desktop 2020 年 8 月リリース版をダウンロードできます。
+> レベル 1環境には、Power BI Desktop のサービス互換性があるバージョンが含まれます。 分析ワークスペースとレポートをアプリケーション スイートで開発または拡張するには、顧客が開発環境にプレインストールした Power BI Desktop を使用することができます。 または、Power BI Desktop の最新の互換性があるリリースを使用し、プレビュー機能をオフにして、Finance and Operations アプリの分析レポートを作成できます。 [Power BI Desktop の前の月次更新](https://docs.microsoft.com/power-bi/fundamentals/desktop-latest-update-archive) で Power BI Desktop の2020 年 9 月の更新プログラムをダウンロードします。
 
 ### <a name="step-1-populate-the-local-entity-store-database"></a>手順 1: ローカル エンティティ格納データベースに入力する
 この例では、ローカルのエンティティ ストアでコマース 分析ソリューションが消費する集計モデルをステージングします。 アプリケーションが使用するモデルは、RetailCube 集計測定で定義されています。 
@@ -49,7 +49,7 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 
 次の図は、集計モデルの更新頻度を設定するために使用する管理者ダイアログ ボックスを示しています。
 
-![更新ダイアログ ボックスを構成します。](media/Configure-refresh.png)
+![更新ダイアログ ボックスのコンフィギュレーション](media/Configure-refresh.png)
 
 データをステージングするジョブの進行状況を監視するには、バッチ ジョブ監視ページを使用します。 (**システム管理** \> **データベース** \> **バッチ ジョブ** の順に選択します。) デモ データを使用している場合、ジョブは 1 分ほどかかります。 データがエンティティ格納に格納された後、レポートを作成できます。 
 
@@ -59,13 +59,13 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 
     または、Power BI Desktop が開始するとき、**データの取得** \> **SQL Server** を選択することができます。 
 
-    ![Power BI Desktop でデータ メニューを取得する。](media/Power-BI-Desktop-Get-Data.png)
+    ![Power BI Desktop でデータ メニューを取得する](media/Power-BI-Desktop-Get-Data.png)
 
 3. **SQL Server データベース** ダイアログ ボックスに **.** と入力します。 サーバー名として、および **AxDW** をデータベースとして。 その後、**DirectQuery** オプションを選択します。 
 
     次の図は、Power BI Desktop がローカルのエンティティ格納データベースにアクセスするための設定を示しています。
 
-    ![ローカル エンティティ格納データベースにアクセスするための設定。](media/Connect-to-SQL-Database.png)
+    ![ローカル エンティティ格納データベースにアクセスするための設定](media/Connect-to-SQL-Database.png)
 
     > [!NOTE]
     > **インポート** オプションは現在サポートされていません。
@@ -81,13 +81,10 @@ Power BI Desktop を使用すると、ローカルのエンティティ格納デ
 
 次の図は、ローカルの Entity Store データベースをソースとして使用する基本レポートを示しています。
 
-![Power BI Desktop レポート。](media/Power-BI-Desktop-Report.png)
+![Power BI Desktop レポート](media/Power-BI-Desktop-Report.png)
 
 Power BI Desktop でも計算の作成がサポートされ、複数の集計測定のデータを組み合わせることができます。 数分で、ローカルの開発環境でデータを使用することにより分析レポートを作成することができます。 レポートに問題がなければ、それを実稼働環境に移行できます。これにより、ユーザーは、そのレポートを使用して、実稼働データにかかわることができます。
 
 ## <a name="validating-reports-in-a-demo-environment"></a>デモ環境でのレポートの検証
 
 レポートにはデベロッパー環境のデモまたはテスト データが表示されます。 デモ環境にレポートを統合する場合は、引き続きこのレポートを PowerBI.com アカウントに公開し、クライアントに固定することができます。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

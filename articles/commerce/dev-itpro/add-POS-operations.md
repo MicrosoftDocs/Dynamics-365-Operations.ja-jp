@@ -2,22 +2,24 @@
 title: ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
 description: このトピックでは、新しい POS 工程を作成し、ボタン グリッド デザイナーを使用して POS レイアウトに追加する方法について説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 1d160a9ec1847444ac0a8094e1e2558b3aac66b8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 11db58f94d0d0f4bb5276155565712d1e3ff31fc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782835"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680394"
 ---
 # <a name="add-pos-operations-to-pos-layouts-by-using-button-grid-designer"></a>ボタン グリッドのデザイナーを使用して、POS 操作を POS レイアウトに追加
 
@@ -441,6 +443,3 @@ ms.locfileid: "7782835"
 
 1. F5 キーを押し、POS を展開してカスタマイズをテストします。
 2. トランザクション画面で、新しい **EOD** 操作ボタンを選択し、手順を実行します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

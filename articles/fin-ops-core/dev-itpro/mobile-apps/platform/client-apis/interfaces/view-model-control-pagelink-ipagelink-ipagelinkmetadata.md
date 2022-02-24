@@ -1,18 +1,25 @@
 ---
 title: PageLinkMetadata タイプ
 description: ページ リンク メタデータ タイプ。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 1c8b01c191447300453278927f2cccabd4cee93e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 4a4ba1b67cec1062cad4f9dcb8de3c24f15e0023
+ms.sourcegitcommit: 0297fd1f594c59a39014a592231ce5999b173848
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781859"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4659519"
 ---
 # <a name="pagelinkmetadata-type"></a>PageLinkMetadata タイプ
 
@@ -46,7 +53,7 @@ Pagelink メタデータ タイプ。
 * [ShowCount](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#showcount)
 * [スタイル](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#style)
 * [ターゲット](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#target)
-* [タイプ](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#type)
+* [[タイプ](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#type)]
 * [UseDataContext](view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#usedatacontext)
 
 ### <a name="events"></a>イベント
@@ -122,7 +129,7 @@ HelpText: 文字列 (オプション)
 アイコン: string (オプション)
 
 ページ リンク コントロールに表示されるアイコンの名前。
-次に [利用可能なアイコンの一覧](/dynamics/s-e/) を示します。
+次に [利用可能なアイコンの一覧](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/AXSymbolFont) を示します。
 
 ### <a name="iconsize"></a>IconSize
 
@@ -210,6 +217,3 @@ OnNavigate: function(navigation: [NavigationArgs](view-model-ipage-inavigationar
 
 ナビゲーションがトリガーされたときに発生するイベントです。
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: メンテナンス計画のスケジュール
 description: このトピックでは、資産管理におけるメンテナンス計画のスケジュールについて説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bd5192f727c83c017148405fb1b3ee587c118542450d46b5822d86cd1676d8fd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9c215417eacb8a0e1ec0a8324fe35fc053089afb
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731322"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016909"
 ---
 # <a name="schedule-maintenance-plans"></a>メンテナンス計画のスケジュール
 
@@ -52,14 +54,14 @@ ms.locfileid: "6731322"
 
 5. **OK** をクリックして、資産のメンテナンス スケジュール エントリの生成を開始します。 生成されたエントリは、**すべてのメンテナンス スケジュール** リストのページに表示されます。 次の図は、**メンテナンス計画のスケジュール** ダイアログの例を示します。
 
-![図 1。](media/09-preventive-maintenance.png)
+![図 1](media/09-preventive-maintenance.png)
 
 - **メンテナンス計画のスケジュール** ダイアログでは、**バックグラウンドで実行** クイック タブでバッチ ジョブを設定して、定期的にカレンダー エントリを自動的に生成することができます。  
 - 予防的メンテナンスをスケジュールすると、開始日がシステム日付と時刻よりも前のメンテナンス スケジュール行は作成されません。  
 
 次の図は、時間ベースのメンテナンス計画の計算を図解したものです。  
 
-![図 2。](media/10-preventive-maintenance.jpg)
+![図 2](media/10-preventive-maintenance.jpg)
 
 カウンターベースのメンテナンス計画について : 次の図では、2 つの異なるカウンター登録サイクルが示されています。 これらは、資産 V0001 に対して設定されたメンテナンス計画に基づいており、毎月約 2,000 km を走る資産 (自動車) を想定しています。
 
@@ -69,10 +71,7 @@ ms.locfileid: "6731322"
 
 これらの例は、資産に対してなされたすべてのカウンター登録が、資産の消耗を示す傾向を示していることを説明しています。 その傾向は、メンテナンス計画のスケジューリング時に計算基準として使用されます。
 
-![図 3。](media/11-preventive-maintenance.png)
+![図 3](media/11-preventive-maintenance.png)
 
-![図 4。](media/12-preventive-maintenance.png)
+![図 4](media/12-preventive-maintenance.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

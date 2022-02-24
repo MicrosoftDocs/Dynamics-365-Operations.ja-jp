@@ -1,33 +1,31 @@
 ---
 title: 休暇および欠勤計画の作成
-description: このトピックでは、さまざまな休暇タイプの休暇プランを Dynamics 365 Human Resources で作成する方法について説明します。
-author: twheeloc
-ms.date: 10/28/2021
+description: Dynamics 365 Human Resources で、さまざまなタイプの休暇に対して休暇計画を作成します。
+author: andreabichsel
+manager: AnnBe
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9267b4d4025ef0e5cec2d3e995785a6291c850e5
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070253"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419423"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>休暇および欠勤計画の作成
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources で、提供する休暇のタイプごとに休暇および欠勤計画を定義します。 休暇および欠勤計画は、年次、月次、または半月次など、さまざまな頻度で見越計上できます。 特定の日付で 1 つの累積が発生する交付として計画を定義することもできます。 たとえば、流動的な休暇を年次で交付する計画を作成できます。
 
@@ -385,6 +383,3 @@ Human Resources では、次の式を使用します。
 - [休暇の概要](hr-leave-and-absence-overview.md)
 - [休暇および欠勤タイプのコンフィギュレーション](hr-leave-and-absence-types.md)
 - [休暇計画の累計](hr-leave-and-absence-accrue.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

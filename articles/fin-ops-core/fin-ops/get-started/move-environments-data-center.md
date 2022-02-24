@@ -2,9 +2,11 @@
 title: データ センター間で環境を移動する
 description: このトピックでは、Microsoft によって管理されている環境を別の Microsoft Azure データ センターに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
+manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: efd10b0435158bfd906009235e83dd0c96400fe1572438f7fe61a942bb4c8500
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 824ece56f3794afc61edfdcf98948d382d32cb28
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754973"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798244"
 ---
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 
@@ -74,6 +76,3 @@ Microsoft により同じデータ センターですべての環境を維持す
 ## <a name="move-production-environments"></a>実稼働環境の移動
 
 実稼働環境を既に配置している場合は、すべてのサンドボックス環境の移動が完了した後に、実稼働環境を別のデータセンターに移動するためのサポート要求を開く必要があります。 このシナリオはまれであり、移動を完了するための自動/セルフサービス アクションはありません。 このシナリオでは、Azure BLOB ストレージに格納されているファイルも移動されます。 実稼働環境を別のデータ センターに移動するために必要な保守ウィンドウとダウンタイムの詳細については、次を参照してください。[サービスの説明](https://go.microsoft.com/fwlink/?LinkId=867755&clcid=0x409)と関連するサービス レベル契約 (SLA) のドキュメント。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

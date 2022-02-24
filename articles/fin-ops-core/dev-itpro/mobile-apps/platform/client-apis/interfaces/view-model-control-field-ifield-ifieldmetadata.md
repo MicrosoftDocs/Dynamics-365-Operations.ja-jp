@@ -1,18 +1,25 @@
 ---
 title: FieldMetadata タイプ
 description: フィールド メタデータのインターフェイス。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: dd5af9ac7fc2b0bb4bf03f0a689174aa75bb379e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 2f5f18b9da77f42a1da60440c04e82f3267aa724
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781871"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679238"
 ---
 # <a name="fieldmetadata-type"></a>FieldMetadata タイプ
 
@@ -47,7 +54,7 @@ ms.locfileid: "7781871"
 * [ReferenceAppId](view-model-control-field-ifield-ifieldmetadata.md#referenceappid)
 * [ReferencePageId](view-model-control-field-ifield-ifieldmetadata.md#referencepageid)
 * [スタイル](view-model-control-field-ifield-ifieldmetadata.md#style)
-* [タイプ](view-model-control-field-ifield-ifieldmetadata.md#type)
+* [[タイプ](view-model-control-field-ifield-ifieldmetadata.md#type)]
 * [UnWrapText](view-model-control-field-ifield-ifieldmetadata.md#unwraptext)
 * [WrapText](view-model-control-field-ifield-ifieldmetadata.md#wraptext)
 
@@ -262,6 +269,3 @@ WrapText: ブール値 (オプション)
 True の場合、フィールド コントロールのテキストは、次の行に折り返されます。
 
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

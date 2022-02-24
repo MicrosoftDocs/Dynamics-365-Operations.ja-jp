@@ -2,9 +2,11 @@
 title: プラットフォーム更新プログラム 12 による Dynamics 365 for Finance and Operations, Enterprise Edition 7.2 のオンプレミス配置 (2018 年 3 月)
 description: このトピックでは、プラットフォーム更新プログラム 12 による Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.2 の新機能または変更された機能について説明します。 この展開オプションは、2018 年 3 月に使用できるようになりました。
 author: sericks007
+manager: AnnBe
 ms.date: 03/14/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: c143ca906a7442751a95c79d7669bae93e15a175ff96a01b82252a0a134b7d42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a3e5bac46163749a8fe9841fe1ecd11f87a93de
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768377"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797863"
 ---
 # <a name="whats-new-or-changed-in-on-premises-deployments-of-dynamics-365-for-finance-and-operations-enterprise-edition-72-with-platform-update-12-march-2018"></a>プラットフォーム更新プログラム 12 による Dynamics 365 for Finance and Operations, Enterprise Edition 7.2 のオンプレミス配置 (2018 年 3 月)
 
@@ -46,6 +48,3 @@ LCS からダウンロードできる修正プログラムは、プラットフ�
 
 - **[KB 4091763 - 管理者がクライアントの接続と Skype プレゼンスを切り替える](https://fix.lcs.dynamics.com/Issue/Details?kb=4091763&bugId=3934773&qc=fd949f8a204ceeedaa0a586ca8a1bfdbd6535b35225da98506d688e093d086f6):** この修正プログラムにより、管理者はクライアント マシンのインターネット接続に依存するエクスペリエンスを無効にできます。 詳細については、[クライアント インターネット接続](../../dev-itpro/user-interface/client-disconnected.md)を参照してください。
 - **[KB 4093454 - オンプレミスの ISV ライセンス サポート](https://fix.lcs.dynamics.com/Issue/Details?kb=4093454&bugId=3936799&qc=766427475435463a174e287b531401ab8cc8f1aeedf12bf2c2d4f8d1a1774592):** プラットフォーム更新プログラム 12 から開始するオンプレミス環境を配置する場合、テナント GUID は LCS からオンプレミス環境に自動的に入力されます。 ライセンス供与の検証では次の値を読み取り、正常にライセンスを検証できます。 詳細については、[独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)](../../dev-itpro/dev-tools/isv-licensing-on-prem.md)を参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

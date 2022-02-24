@@ -1,33 +1,31 @@
 ---
 title: 待機期間のコンフィギュレーション
 description: Microsoft Dynamics 365 Human Resources では、待機日は、給付金プランに使用するマイルストーンを確立します。
-author: twheeloc
-ms.date: 08/25/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3df65a89ca4b18de2c823ca02fd8daa3da1e9ea6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e1937ab54eb7898afe0fed6659c3ae676626e8ad
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066878"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419384"
 ---
 # <a name="configure-waiting-periods"></a>待機期間のコンフィギュレーション
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources では、待機日は、給付金プランに使用するマイルストーンを確立します。 たとえば、雇用日から 3 か月、各月の最初、または 6 か月です。   
 
@@ -41,12 +39,9 @@ Microsoft Dynamics 365 Human Resources では、待機日は、給付金プラ�
    | --- | --- |
    | **待機コード** | 待機期間の一意の識別子。 |
    | **説明** | 待機期間の説明。 |
-   | **待機方法** | 値のドロップダウン リストから適切な待機メソッドを選択します。 オプションには、**作成日**、**今月**、**現在の四半期**、**今年**、および **現在の週** があります。 |
+   | **待機方法** | 値のドロップダウン リストから適切な待機メソッドを選択します。 オプションには、正味、当月、現在の四半期、今年度、および現在の週があります。 |
    | **月数** | 待機日を計算するために待機メソッドに追加する月数を入力します。 |
    | **日** | 待機日を計算するために待機メソッドに追加する日数を入力します。 |
    | **待機日数** | 待機日の計算に使用する待機日を選択します。 |
 
 4. **保存** を選択します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,19 +2,26 @@
 title: X++ 拡張データ型
 description: このトピックでは、X++の拡張データ型について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/17/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 150183
+ms.assetid: 0ff4e759-851d-4b53-aa67-6f03eee53f02
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44dd0aa4247f194f75930af9b6fb3fc84e5d814d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 883e258343bf9aca8e2df1e29a6f9cb599e3b87a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783382"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408742"
 ---
 # <a name="x-extended-data-types"></a>X++ 拡張データ型
 
@@ -52,6 +59,3 @@ public void EdtMethod()
     Amount currency;
 }
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

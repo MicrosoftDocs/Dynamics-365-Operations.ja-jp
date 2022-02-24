@@ -2,21 +2,25 @@
 title: Azure Pipelines でのレガシ パイプラインの更新
 description: このトピックでは、Azure Pipelines でのレガシ パイプラインを更新して、新しいバージョンの Visual Studio を使用する方法について説明します。
 author: jorisdg
+manager: AnnBe
 ms.date: 09/23/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17dab44ceefbaaec41bb078c54cdb6e94b57e44c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5db85106bda14a0d77f647ef424813ccb7312e77
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783174"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680528"
 ---
 # <a name="update-a-legacy-pipeline-in-azure-pipelines"></a>Azure Pipelines でのレガシ パイプラインの更新
 
@@ -56,6 +60,3 @@ ms.locfileid: "7783174"
 | テストの実行 | プラットフォーム バージョンのテスト | Visual Studio2015 | Visual Studio2017 |
 | テストの実行 | その他のコンソール オプション | `/Platform:X64 /InIsolation /UseVsixExtensions:true` | `/Platform:X64 /InIsolation /TestAdapterPath:"$(VsixExtensionFolder)"` |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

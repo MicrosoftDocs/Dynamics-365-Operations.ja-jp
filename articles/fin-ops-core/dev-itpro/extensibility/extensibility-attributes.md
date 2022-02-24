@@ -2,24 +2,26 @@
 title: メソッドを拡張可能にする属性
 description: このトピックでは、メソッドを拡張可能にする属性について説明します。
 author: MichaelFruergaardPontoppidan
+manager: AnnBe
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: dff03369b25c0853fdb38ffad39726f15427b97e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 4517b07828b5b58b5ea69656ca53e396802b4acb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782741"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409348"
 ---
 # <a name="attributes-that-make-methods-extensible"></a>メソッドを拡張可能にする属性
 
@@ -29,7 +31,7 @@ ms.locfileid: "7782741"
 
 次の表は、メソッドの拡張性およびアクセシビリティの既定のサポートの概要を提供します。 さらに、メソッド シグネチャの変更に関するガイダンスも提供します。
 
-| 属性  | フック可能 | 折り返し可能 | 置き換え可能 | アクセシビリティ | 署名 | 
+|   | フック可能 | 折り返し可能 | 置き換え可能 | ユーザー補助 | 署名 | 
 |---|----------|-----------|-------------|---------------|-----------|
 | **プライベート** | 無 | 該当なし | 該当なし | 定義されているクラス内からアクセスできます。 | シグネチャは変更可能 |
 | **保護された内部** | いいえ | はい。プラットフォーム更新 25 以降から | いいえ | 定義されているクラスから、および同じモデル内の派生クラスからアクセス可能です。 | シグネチャでは互換性が維持されている必要があります |
@@ -84,6 +86,3 @@ CoC は、さまざまな点で継承に似ています。 通常、他のユー
 + 置き換えるロジックとは異なる責任を持つロジックを記述し **ません**。
 + 置き換えロジックが適用されない場合、基本機能を呼び出し **ます** (次を呼び出し)。
 + 基本機能 (次を呼び出し) を呼び出さずにロジックを完全に置き換えることを **回避します**。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

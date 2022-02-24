@@ -2,24 +2,26 @@
 title: Dynamics 365 for Finance and Operations バージョン 10.0.3 の拡張機能の変更
 description: これのトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 に実装された拡張機能を一覧します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-10
 ms.dyn365.ops.version: App 10.0
-ms.openlocfilehash: a576289c2dc190b82c2b5a7545b57d42d25d067f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8520b31123425afde0876d2de2b06852c377e6be
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782739"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409346"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-1003"></a>Dynamics 365 for Finance and Operations バージョン 10.0.3 の拡張機能の変更
 
@@ -131,6 +133,3 @@ ms.locfileid: "7782739"
 - **小売チャンネル:** Shipped、PackingSlip、MarkAsPacked に対してプレトリガーが追加されました。
 - **小売チャンネル:** キャンセル費用のダイアログボックスを無効化することができます。
 - **小売チャンネル:** オーダー検索のダイアログボックスに、オーダー取消のデフォルト パラメータ値が拡張されました。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

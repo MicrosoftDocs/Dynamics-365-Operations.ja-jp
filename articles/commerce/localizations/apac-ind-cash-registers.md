@@ -2,23 +2,26 @@
 title: インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 description: このトピックでは、インドで使用可能なキャッシュ レジスター機能の概要を示します。 また、機能を設定するためのガイドラインを示します。
 author: EvgenyPopovMBS
-ms.date: 09/07/2021
+manager: annbe
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
+ms.search.scope: Retail, Operations
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: a5c856e5e6971df3cba1b616577872f48e4d66e7
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: 91696b4ad4a5f99363cb9eb6ff622914d777646a
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478711"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4409539"
 ---
 # <a name="goods-and-services-tax-gst-integration-for-cash-registers-for-india"></a>インド向けキャッシュ レジスターの商品及びサービス税 (GST) 統合
 
@@ -30,7 +33,7 @@ ms.locfileid: "7478711"
 
 ## <a name="prerequisites"></a>必要条件
 
-- インドの GST を設定します。 詳細については、[インドの商品及びサービス税 (GST)](../../finance/localizations/apac-ind-gst.md) を参照してください。
+- インドの GST を設定します。 詳細については、[インドの商品及びサービス税 (GST)](../../financials/localizations/apac-ind-gst.md) を参照してください。
 - コマース チャネル コンポーネントを構成します。 インド固有の機能を有効にするには、チャネル コンポーネントの拡張機能を構成する必要があります。 詳細については、[配置ガイドライン](./apac-ind-loc-deployment-guidelines.md)を参照してください。
 
 ## <a name="india-tax-entities-for-commerce"></a>コマース向けインドの税エンティティ
@@ -49,7 +52,7 @@ ms.locfileid: "7478711"
 | 税設定                           | 小売とコマース \> チャネル設定 \> 売上税 \> 税コンフィギュレーション \> 税設定      |
 
 > [!NOTE]
-> コマースでのインドの税エンティティ用ナビゲーション パスは、Finance でのナビゲーション パスと異なります。 Finance のナビゲーション パスの詳細については、[インドの商品及びサービス税 (GST)](../../finance/localizations/apac-ind-gst.md) を参照してください。
+> コマースでのインドの税エンティティ用ナビゲーション パスは、Finance でのナビゲーション パスと異なります。 Finance のナビゲーション パスの詳細については、[インドの商品及びサービス税 (GST)](../../financials/localizations/apac-ind-gst.md) を参照してください。
 
 ## <a name="validate-tax-information-for-the-store"></a>店舗の税情報の検証
 
@@ -72,7 +75,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 3. **テキスト ID** フィールドに、**900001** 異常の一意の ID を入力します。
 4. **テキスト** フィールドで、言語テキストを入力します。
 
-![言語テキスト。](media/apac-ind-gst-language-text.png)
+![言語テキスト](media/apac-ind-gst-language-text.png)
 
 ### <a name="create-custom-fields"></a>カスタム フィールドの作成
 
@@ -83,7 +86,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 3. フィールド タイプを選択します。
 4. **キャプション テキスト ID** フィールドで、**言語テキスト** ページの言語テキストのいずれかに **テキスト ID** 値を入力します。
 
-![カスタム フィールド。](media/apac-ind-gst-custom-fields.png)
+![カスタム フィールド](media/apac-ind-gst-custom-fields.png)
 
 ## <a name="create-the-receipt-format"></a>受領書フォーマットの作成
 
@@ -92,7 +95,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 1. **小売とコマース** \> **チャネル設定** \> **POS 設定** \> **POS プロファイル** \> **受領書フォーマット** の順に移動します。
 2. **レシート** 領収書タイプのために領収書書式を選択して、必要な変更を加えます。
 
-![受領書フォーマットのデザイン。](media/apac-ind-gst-receipt-format.png)
+![受領書フォーマットのデザイン](media/apac-ind-gst-receipt-format.png)
 
 ## <a name="update-receipt-profiles"></a>領収書プロファイルの更新
 
@@ -111,7 +114,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 
 既存の領収書番号書式に店舗番号と端末番号の両方が含まれる場合にのみ、**POS 請求書番号を更新** オプションに **はい** をセットすることができます。  次の図は、レシート番号付けに店舗番号と端末番号が含まれる、POS 機能プロファイルを示します。
 
-![POS 機能プロファイル。](media/apac-ind-gst-pos-functionality-profile.png)
+![POS 機能プロファイル](media/apac-ind-gst-pos-functionality-profile.png)
 
 ## <a name="run-a-distribution-schedule"></a>配送スケジュールの実行
 
@@ -173,7 +176,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     2. 取引を選択します。
     3. **レシート** を選択します。
 
-    ![シナリオ 1 一番目の検証レシートの例。](media/apac-ind-gst-s1-receipt1.png)
+    ![シナリオ 1 一番目の検証レシートの例](media/apac-ind-gst-s1-receipt1.png)
 
 11. バックオフィスで販売注文および税ドキュメントを検証します:
 
@@ -181,7 +184,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     2. 販売注文を選択します。
     3. アクション ペインの、**販売** タブの、**税** グループで、**税務書類** を選択します。
 
-    ![税務書類ページ。](media/apac-ind-gst-tax-document.png)
+    ![税務書類ページ](media/apac-ind-gst-tax-document.png)
 
 12. 顧客の注文を取り消して処理します:
 
@@ -191,12 +194,12 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     4. **ピッキングと梱包** \> **集荷** の順に選択します。
     5. **すべて選択** および **集荷** を選択します。
 
-    ![顧客注文の処理。](media/apac-ind-gst-process-customer-order.png)
+    ![顧客注文の処理](media/apac-ind-gst-process-customer-order.png)
 
 13. **正確** を選択して支払を処理します。
 14. 領収書を検証します。
 
-    ![シナリオ 1 二番目の検証レシートの例。](media/apac-ind-gst-s1-receipt2.png)
+    ![シナリオ 1 二番目の検証レシートの例](media/apac-ind-gst-s1-receipt2.png)
 
 15. 伝票取引を検証します:
 
@@ -225,7 +228,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 2. 品目を入力してから、**入力** を選択します。
 3. **顧客の追加** を選択して、顧客アカウントを選択します。
 
-    ![取引の例。](media/apac-ind-gst-example-trx.png)
+    ![取引の例](media/apac-ind-gst-example-trx.png)
 
     > [!NOTE]
     > この例では、店舗場所の州は Delhi ですが、顧客住所の州は Bengaluru (Bangalore) です。 州が異なるため、州間 GST が計算されます。
@@ -237,7 +240,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     2. 取引を選択します。
     3. **レシート** を選択します。
 
-    ![領収書の検証。](media/apac-ind-gst-receipt-validation.png)
+    ![領収書の検証](media/apac-ind-gst-receipt-validation.png)
 
 6. バックオフィスでの小売販売請求書を確認します:
 
@@ -258,7 +261,7 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     3. **販売注文行** \> **税金情報** の順に選択します。
     4. 該当するタブで、場所 (店舗アドレス) および顧客の住所を確認します。
 
-        ![税金情報。](media/apac-ind-gst-tax-info.png)
+        ![税金情報](media/apac-ind-gst-tax-info.png)
 
     5. **OK** を選択します。
     6. アクション ウィンドウの、**請求書** タブで、**請求仕訳帳** を選択します。
@@ -296,12 +299,12 @@ POS レシート形式で使用される言語テキストおよびカスタム 
         - **CGST:** 12 %
         - **SGST:** 11 %
 
-    ![取引の例。](media/apac-ind-gst-trx-example.png)
+    ![取引の例](media/apac-ind-gst-trx-example.png)
 
 4. **正確** を選択して支払を処理します。
 5. 領収書を検証します。
 
-    ![シナリオ 3 領収書の例。](media/apac-ind-gst-s3-receipt4.png)
+    ![シナリオ 3 領収書の例](media/apac-ind-gst-s3-receipt4.png)
 
 6. バックオフィスでの小売販売請求書を確認します:
 
@@ -332,19 +335,19 @@ POS レシート形式で使用される言語テキストおよびカスタム 
     5. **税務書類** を選択します。
     6. GST 参照番号順序グループで定義されている GST 番号順序に従って取引 ID が更新されることを確認します。
 
-        ![税務書類のトランザクション ID。](media/apac-ind-gst-tax-doc-trx-id.png)
+        ![税務書類のトランザクション ID](media/apac-ind-gst-tax-doc-trx-id.png)
 
 ### <a name="scenario-4-sell-an-exempted-good"></a>シナリオ 4: 免税品の販売
 
 1. POS へのサインイン
 2. 免税品目を入力します。
 
-    ![免税品目トランザクション。](media/apac-ind-gst-exempted-item-trx.png)
+    ![免税品目トランザクション](media/apac-ind-gst-exempted-item-trx.png)
 
 3. **正確** を選択して支払を処理します。
 4. 領収書を検証します。
 
-    ![レシート example.png。](media/apac-ind-gst-receipt-4.png)
+    ![レシート example.png](media/apac-ind-gst-receipt-4.png)
 
 5. バックオフィスでの小売販売請求書を確認します:
 
@@ -381,12 +384,12 @@ POS レシート形式で使用される言語テキストおよびカスタム 
 4. **すべて選択** および **返品** を選択します。
 5. 返品する必要がある選択されたオリジナルの取引に基づき、GST 計算が正常に実行されたことを確認します。
 
-    ![POS 返品取引。](media/apac-ind-gst-return-trx.png)
+    ![POS 返品取引](media/apac-ind-gst-return-trx.png)
 
 6. **正確** を選択します。
 7. 領収書を検証します。
 
-    ![シナリオ 4 領収書の例。](media/apac-ind-gst-receipt-5.png)
+    ![シナリオ 4 領収書の例](media/apac-ind-gst-receipt-5.png)
 
 8. バックオフィスでの小売販売請求書を確認します:
 
@@ -427,10 +430,10 @@ GSTR レポートに正しく反映されるためには、売上訂正票に元
 
 ## <a name="manage-customer-registration-numbers-from-pos"></a>POS からの顧客登録番号の管理
 
-顧客マスター レコードおよび顧客住所レコードを POS で作成または編集する場合、GSTIN、VAT 番号 (TIN)、および PAN 番号などの顧客登録番号を指定することができます。 顧客登録番号は領収書に印刷されるか、POS で顧客を検索するために使用されます。
-
 > [!NOTE]
-> **非同期モードの顧客を作成** が POS 機能プロファイルで有効になっている時は、POS の顧客登録番号を指定できません。 今後の更新に追加される可能性がある非同期顧客作成モードをサポートします。
+> この機能は、アプリケーション更新プログラム 10.0.6 以降で使用可能です。
+
+顧客マスター レコードおよび顧客住所レコードを POS で作成または編集する場合、GSTIN、VAT 番号 (TIN)、および PAN 番号などの顧客登録番号を指定することができます。 顧客登録番号は領収書に印刷されるか、POS で顧客を検索するために使用されます。
 
 ### <a name="configure-printing-customer-registration-numbers-in-receipts"></a>領収書の顧客登録番号印刷のコンフィギュレーション
 
@@ -445,6 +448,3 @@ GSTR レポートに正しく反映されるためには、売上訂正票に元
 ### <a name="enable-searching-customers-by-tax-registration-numbers-in-pos"></a>POS での税務登録番号による顧客検索を有効にする
 
 POS での税務登録番号による顧客検索を有効にするには、**コマース パラメーター** ページの **POS 検索基準** タブにおいて、**顧客検索基準** クイック タブにレコードを追加し、**顧客検索基準** ドロップダウン リスト内の **税務登録番号** を選択します。 **絞り込み可能** チェック ボックスはオフにし、**ショートカットとして表示** チェック ボックスを選択します。 **配送スケジュール** ページで、1110 のジョブを実行します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

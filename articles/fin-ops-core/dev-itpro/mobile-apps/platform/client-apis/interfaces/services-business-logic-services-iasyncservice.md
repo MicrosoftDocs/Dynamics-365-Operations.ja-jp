@@ -1,18 +1,25 @@
 ---
 title: AsyncService タイプ
 description: ビジネス ロジック コードから非同期操作を実行する機能を提供します。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 6ee86278c3827e5f3a06e7f6b1a36bddec206858
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 77dfc1ed0144907f1f2b8b8f0baa9a4aaff1bf13
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781552"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679241"
 ---
 # <a name="asyncservice-type"></a>AsyncService タイプ
 
@@ -52,6 +59,3 @@ AsyncService
 イベント ハンドラー (該当する場合) から回答を返し、非同期でそれらを拒否または解決するために使用できる遅延オブジェクトを作成します。
 
 #### <a name="returns-deferred-lttgt"></a>[Deferred](defer-ideferred.md) &lt;T&gt; を返します
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

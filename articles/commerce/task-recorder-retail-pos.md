@@ -2,13 +2,16 @@
 title: Retail Modern POS (MPOS) および Cloud POS のタスク レコーダーとヘルプ
 description: このトピックでは、Retail Modern POS および Cloud POS のタスク レコーダーを使用する方法を説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aedf18ef8b3d7266f3e5c7acd676241f9ec8b900f061f5363cd8d581062e83ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730758"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413814"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS (MPOS) および Cloud POS のタスク レコーダーとヘルプ
 
@@ -31,7 +34,7 @@ ms.locfileid: "6730758"
 
 ## <a name="overview"></a>概要
 
-Retail Modern POS またはクラウド POS のタスク レコーダーは、高い応答性に焦点を合わせて構築された新しいソリューションです。 業務プロセスを記録する消費者向けに、拡張性とシームレスな統合のための柔軟なアプリケーション プログラミング インターフェイス (API) を提供します。 さらに、Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) で業務プロセス モデル (BPM) ツールと統合されたタスク レコーダーが公開されました。 そのため、ユーザーは、引き続き記録からリッチな業務プロセス ダイアグラムを作成してアプリケーションを分析、設計できます。
+Retail Modern POS またはクラウド POS のタスク レコーダーは、高い応答性に焦点を合わせて構築された新しいソリューションです。 業務プロセスを記録する消費者向けに、拡張性とシームレスな統合のための柔軟なアプリケーション プログラミング インターフェイス (API) を提供します。 さらに、Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) で業務プロセス モデル (BPM) ツールと統合されたタスク レコーダーが公開されました。 そのため、ユーザーは、引き続き記録からリッチな業務プロセス ダイアグラムを作成してアプリケーションを分析、設計できます。
 
 ## <a name="architecture"></a>アーキテクチャ
 
@@ -53,16 +56,16 @@ POS でタスク記録を有効化するには、次の手順に従います。
 次の手順に従い、タスク レコーダーを使用して新しい記録を作成します。
 
 1. Retail Modern POS または Cloud POS を起動し、サインインします。
-2. **設定** ページの **タスク レコーダー** セクションで、**タスク レコーダーを開く** をクリックします。 **タスク レコーダー** ウィンドウが表示されます。 右上隅の **閉じる** ボタン (**X**) をクリックして **タスク レコーダー** ウィンドウを閉じてから、新しい記録を開始します。 ペインをもう一度開くには、手順 2 を繰り返します。
+2. **設定** ページの **タスク レコーダー** セクションで、**タスク レコーダーを開く** をクリックします。 **タスク レコーダー** ウィンドウが表示されます。 右上隅の **閉じる** ボタン (**X**) をクリックして **タスク レコーダー** ウィンドウを閉じてから、新しい記録を開始します。 ウィンドウをもう一度開くには、手順 2 を繰り返します。
 
-    [![タスク レコーダー ウィンドウ。](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![[タスク レコーダー] ウィンドウ](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. 記録の名前と説明を入力し、**開始** をクリックします。 **開始** をクリックするとすぐに記録セッションが開始されます。
 
     > [!NOTE]
     > 記録中に右上隅の **閉じる** ボタン (**X**) をクリックすると、**タスク レコーダー** ウィンドウが閉じられますが、記録セッションは終了されません。 [タスク レコーダー] ウィンドウを再度開くには、画面の上部にある **ヘルプ** ボタン (疑問符) をクリックします。
     >
-    > [![疑問符。](./media/help.jpg)](./media/help.jpg)
+    > [![疑問符](./media/help.jpg)](./media/help.jpg)
 
 4. **開始** をクリックすると、タスク レコーダーは記録モードになります。 **タスク レコーダー** ウィンドウには、記録プロセスに関連付けられている情報とコントロールが表示されます。
 5. Retail Modern POS または Cloud POS ユーザー インターフェイス (UI) で、目的のアクションを実行します。
@@ -72,7 +75,7 @@ POS でタスク記録を有効化するには、次の手順に従います。
 
 記録セッションを終了すると、いくつかのオプションが表示され、記録をダウンロードできます。
 
-[![ダウンロード オプション。](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![ダウンロード オプション](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### <a name="save-to-this-pc"></a>この PC に保存
 
@@ -88,7 +91,7 @@ POS でタスク記録を有効化するには、次の手順に従います。
 
 ## <a name="recording-controls"></a>記録コントロール
 
-[![記録コントロール。](./media/controls.jpg)](./media/controls.jpg)
+[![記録コントロール](./media/controls.jpg)](./media/controls.jpg)
 
 ### <a name="stop"></a>停止
 
@@ -117,17 +120,17 @@ You can specify the beginning and end of a set of grouped steps by using the **�
 
 注釈は、記録でステップに追加するテキストです。 たとえば、注釈を使用して、詳細なコンテキストや指示をユーザーに与えることができます。 注釈はステップの前後に追加できます。 ステップの右側にある **編集** ボタン (鉛筆のアイコン) をクリックして、任意のステップに注釈を追加できます。
 
-[![ステップの編集ボタン。](./media/annotate.jpg)](./media/annotate.jpg)
+[![ステップの [編集] ボタン](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### <a name="texts-and-notes"></a>テキストとメモ
 
 **テキスト** および **メモ** フィールドを使用して、タスク ガイドのステップに関連付けるテキストを追加できます。
 
-[![テキストおよびメモ フィールド。](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![[テキスト] および [メモ] フィールド](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### <a name="text"></a>テキスト
 
-**テキスト** フィールドに入力するテキストは、タスク ガイドのステップのテキストの *上* に表示されます。 この場所は、ユーザーがステップを完了する前にユーザーに読んでもらいたいテキストに適しています。
+**テキスト** フィールドに入力するテキストは、タスク ガイドのステップのテキストの *上* に表示されます。 この場所は、ステップを完了する前にユーザーに読んでもらいたいテキストに適しています。
 
 #### <a name="notes"></a>摘要
 
@@ -135,14 +138,11 @@ You can specify the beginning and end of a set of grouped steps by using the **�
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Retail Modern POS および Cloud POS のヘルプ
 
-独自のタスク記録をテキストとして表示するために、Retail Modern POS および Cloud POS のヘルプ ウィンドウに表示するには、タスク記録を BPM ライブラリに保存して、ヘルプ システム パラメーターを BPM ライブラリにポイントするように更新します。 詳細については、「[ヘルプ システムの接続](../fin-ops-core/fin-ops/get-started/help-connect.md)」を参照してください。 Retail Modern POS および Cloud POS のヘルプでは、リアルタイムで LCS を検索します。 コマースのヘルプ システムのパラメーターで選択されているすべての BPM ライブラリを検索し、関連する結果を示します。 **ヘルプ** メニューにアクセスするには、画面の上部にある **ヘルプ** ボタン (疑問符) をクリックし、検索ボックスにプロセス名を入力して、検索ボタンをクリックします。
+独自のタスク記録をテキストとして表示するために、Retail Modern POS および Cloud POS のヘルプ ウィンドウに表示するには、タスク記録を BPM ライブラリに保存して、ヘルプ システム パラメーターを BPM ライブラリにポイントするように更新します。 詳細については、「[ヘルプ システムの接続](../fin-and-ops/get-started/help-connect.md)」を参照してください。 Retail Modern POS および Cloud POS のヘルプでは、リアルタイムで LCS を検索します。 コマースのヘルプ システムのパラメーターで選択されているすべての BPM ライブラリを検索し、関連する結果を示します。 **ヘルプ** メニューにアクセスするには、画面の上部にある **ヘルプ** ボタン (疑問符) をクリックし、検索ボックスにプロセス名を入力して、検索ボタンをクリックします。
 
-[![ヘルプ ボタン。](./media/help.jpg)](./media/help.jpg)
+[![ヘルプ ボタン](./media/help.jpg)](./media/help.jpg)
 
 検索結果でタスク ガイドをクリックするときは、ヘルプ トピックとしてステップを表示するか、Word 文書にステップをエクスポートできます。
 
 > [!NOTE]
 > Retail Modern POS および Cloud POS のヘルプ システムでは、使用しているフォームまたは行っている操作によるタスク ガイドは表示されません。 検索ボックスにプロセス名を入力して **検索** ボタンをクリックする必要があります。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

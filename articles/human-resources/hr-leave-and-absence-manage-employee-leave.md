@@ -2,12 +2,15 @@
 title: 従業員の休暇の管理
 description: Dynamics 365 Human Resources で従業員の休暇を管理する。
 author: andreabichsel
-ms.date: 07/16/2021
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ccdf2346e3fdecf4f27fc9f34f0641d3b1fb5b55
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067380"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4419460"
 ---
 # <a name="manage-employee-leave"></a>従業員の休暇の管理
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 従業員の休暇は、休暇タイプで管理できます。 ここには、期限切れの休暇登録と休暇タイプの残高調整が含まれています。 
 
@@ -47,16 +45,14 @@ ms.locfileid: "8067380"
 
 従業員の休暇残高を調整する際には、理由コードとコメントを含めることができます。 
 
-これで、休暇残数にカーソルを合わせると、次の情報が表示されます。
-
-- **利用可** – **今年度の合計** 値から、**今年度の取得** 金額を差し引いた値。
-- **今年度の合計** – 年度のすべての見越計上、調整、および繰り越し。
-- **今年取得した休暇** – すべての承認済休暇。
+>[!IMPORTANT]
+>休暇残高に関する他の情報は、プレビューで表示します。 **サンドボックス** 環境で有効にする必要があります。 プレビュー機能を有効にする方法については、[機能の管理](hr-admin-manage-features.md) を参照してください。<br>
+>休暇残高の上にポインターを移動すると、次が表示されます。<br>
+>- **可能な休暇残高**: 今年度の合計 - 今年取得した休暇
+>- **今年度の合計**: 年度のすべての見越計上、調整、および繰り越し
+>- **今年取得した休暇**: すべての承認済休暇
 
 ## <a name="see-also"></a>参照
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
 - [休暇および欠勤要求の管理](hr-employee-self-service-manage-requests.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

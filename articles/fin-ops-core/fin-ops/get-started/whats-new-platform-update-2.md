@@ -2,9 +2,11 @@
 title: Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月) の新機能および変更された機能
 description: このトピックでは、Microsoft Dynamics AX プラットフォーム更新プログラム 2 の新機能または変更された機能について説明します。 このバージョンは 2016 年 8 月にリリースされ、ビルド番号は 7.0.4230.16130 です。
 author: sericks007
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: b5b97e3495449ce013fd6025cc42c52ad5561aafde0cdf8bd9edb38b017c116c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f6bf2ac8979696f4ea05e6961f1f1691688ed11
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715182"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797115"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-platform-update-2-august-2016"></a>Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月) の新機能および変更された機能
 
@@ -134,6 +136,3 @@ ms.locfileid: "6715182"
 ## <a name="additional-resources"></a>追加リソース
 
 [Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

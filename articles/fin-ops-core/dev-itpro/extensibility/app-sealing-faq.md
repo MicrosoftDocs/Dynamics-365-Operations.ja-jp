@@ -2,24 +2,26 @@
 title: 拡張性 FAQ
 description: このトピックでは、拡張機能に関してよくある質問に対する回答を示します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 02/25/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: d2d7063b2060852f4ebce75f8442827a09b20c03
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c6c3b5b3e032a7121316dc83b9a03d65bd7062b7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782753"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409271"
 ---
 # <a name="extensibility-faq"></a>拡張性 FAQ
 
@@ -73,7 +75,7 @@ Microsoft Dynamics 365 for Finance and Operations リリース 8.0 の後、プ�
 
 ## <a name="why-wasnt-my-extensibility-request-accepted"></a>拡張性要求が承認されなかった理由を教えてください。
 
-一部の拡張性は、重大な変更を要求します。 重大な可能性のあるよくある要求の一部を、その考えられる回避策と共に以下に掲載します。 さらに、[拡張の作成](add-enum-value.md)を読んで既存のプラットフォーム拡張機能については理解し、[拡張性要求を記録するためのヒント](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/tips-for-logging-extensibility-requests)を読んで、機能が最新リリースに存在しない場合に適切な要求を作成する方法を確認してください。
+一部の拡張性は、重大な変更を要求します。 重大な可能性のあるよくある要求の一部を、その考えられる回避策と共に以下に掲載します。 さらに、[拡張の作成](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value)を読んで既存のプラットフォーム拡張機能については理解し、[拡張性要求を記録するためのヒント](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/tips-for-logging-extensibility-requests)を読んで、機能が最新リリースに存在しない場合に適切な要求を作成する方法を確認してください。
 
 ### <a name="why-cant-edtstringsize-be-made-extensible"></a>EDT.StringSize を拡張可能にできないのはなぜですか?
 
@@ -106,6 +108,3 @@ Microsoft Dynamics 365 for Finance and Operations リリース 8.0 の後、プ�
 アプリケーション全体で、顧客、パートナー、または ISV によって行われた API への変更を破損しないようにする努力がはらわれています。 クラスまたはメソッドに **InternalUseOnlyAttribute** が適用されている場合、API は内部使用専用であり、警告なしで変更される可能性があることを意味します。 顧客、パートナー、または ISV が **InternalUseOnlyAttribute** のある API を使用または拡張した場合、問題が発生する可能性があります。API はいつでも変更される可能性があり、これによって更新を適用する前に拡張機能の変更が必要になるためです。 この結果、緊急の変更が必要になり、再コンパイルが必要になる場合があります。 開発者は、変更されないままのこれらのクラスおよびメソッドに依存しないでください。
 
 **InternalUseOnlyAttribute** のあるクラスおよびメソッドを呼び出すと、コンパイラの警告が発生します。 プラットフォーム 20 からプラットフォーム更新 24 までは、コマンド チェーンを使用する **InternalUseOnlyAttribute** のある対象のクラスおよびメソッドによりコンパイル エラーが発生します。 プラットフォーム更新 25 以降では、コンパイラ警告が発行され続ける予定です。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

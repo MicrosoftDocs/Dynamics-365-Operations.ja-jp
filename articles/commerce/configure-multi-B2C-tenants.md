@@ -2,30 +2,35 @@
 title: Commerce 環境での複数の B2C テナントのコンフィギュレーション
 description: このトピックでは、専用の Dynamics 365 Commerce 環境で、複数のチャネルごとの Microsoft Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントの設定時期と方法について説明します。
 author: BrianShook
-ms.date: 03/17/2021
+manager: annbe
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a372561b8a6cdca8e1a3dc362009379884f1a3414330f3f056d4c3af7703a132
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da27e3ed0a0e50126590609d09575befe17a7aa2
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736407"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517129"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Commerce 環境での複数の B2C テナントのコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、専用の Dynamics 365 Commerce 環境で、複数の Microsoft Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントをチャネルごとに設定する時期と方法について説明します。
+
+## <a name="overview"></a>概要
 
 Dynamics 365 Commerce では Azure AD B2C クラウド ID サービスを使用して、ユーザーの資格情報と認証フローをサポートします。 ユーザーは認証フローを使用して、パスワードの登録、ログイン、およびリセットを行うことができます。 Azure AD B2C では、ユーザー名やパスワードなどの機密性の高い認証情報を保存します。 ユーザー レコードは、各 B2C テナントに固有であり、ユーザー名 (電子メールアドレス) またはソーシャル ID プロバイダーの資格情報を使用します。
 
@@ -49,9 +54,13 @@ Dynamics 365 Commerce では Azure AD B2C クラウド ID サービスを使用�
 
 次の図は、Commerce 環境における複数の B2C テナントを示しています。
 
-![Commerce 環境での B2C テナントを複数化。](media/MultiB2C_In_Environment.png)
+![Commerce 環境での B2C テナントを複数化](media/MultiB2C_In_Environment.png)
 
 同じ Commerce 環境にあるチャネルごとに個別の B2C テナントが必要であると判断した場合は、次のセクションの手順を実行し、この機能を要求します。
+
+## <a name="request-that-b2c-per-channel-be-enabled-in-your-environment"></a>お客様の環境でチャネルごとの B2C を有効にすることを要求
+
+現在、チャネルごとに個別の B2C テナントを同じ Commerce 環境で使用できるようにするには、Dynamics 365 Commerce に要求を提出する必要があります。 詳細については、[Lifecycle Services (LCS) のサポートを受ける](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照するか、または Commerce ソリューションへ連絡し相談してください。
 
 ## <a name="configure-b2c-tenants-in-your-environment"></a>お客様の環境での B2C テナントのコンフィギュレーション
 
@@ -73,11 +82,11 @@ Azure AD B2C テナントをお客様の環境に追加するには、次の手�
     - **クライアント GUID**: Azure ポータルに表示されるとおりに Azure AD B2C テナント ID (B2C テナントのアプリケーション ID ではない) を入力します。
     - **Profile Policy ID を編集**: ポリシー ID (Azure ポータルのポリシーの名前) を入力します。
 
-1. 情報の入力が完了したら、**承認** を選択して変更を保存します。 新しい Azure AD B2C テナントが、**B2C Applications の管理** 下の一覧に表示されるようになります。
+1. 情報の入力が完了したら、**承認** を選択して変更を保存します。
 
 > [!NOTE]
 > Dynamics 365 Commerce チームがそれらを設定するよう指示しない限り、**スコープ**、**Non Interactive Policy ID**、**Non Interactive Client ID**、**Custom Domain をログイン** および **Policy ID をサインアップ** ブランクなどのフィールドを残す必要があります。
-
+新しい Azure AD B2C テナントが、**B2C Applications の管理** 下の一覧に表示されるようになります。
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Azure AD B2C テナントの管理または削除
 
@@ -91,7 +100,6 @@ Azure AD B2C テナントをお客様の環境に追加するには、次の手�
 > ライブまたは公開サイトに対して B2C テナントをコンフィギュレーションすると、ユーザーはテナントに存在するアカウントを使用してサインアップした可能性があります。 **テナントの設定 \> B2C テナント** メニュー上でコンフィギュレーションされたテナントを削除する場合、テナントのチャネルに関連付けられているサイトから B2C テナントのアソシエーションを削除することになります。 この場合、ユーザーは自分のアカウントにログインできなくなる場合があります。 したがって、コンフィギュレーション済のテナントを削除する場合は細心の注意を払ってください。
 >
 > コンフィギュレーションされたテナントを削除すると、B2C テナントとレコードが引き続き維持されますが、そのテナントの Commerce システム コンフィギュレーションは変更または削除されます。 サイトへサイン アップまたはサイト インを試みるユーザーは、サイトのチャネルに対してコンフィギュレーションされた既定または新しく関連付けられた B2C テナントに新しいアカウント レコードが作成されます。
-
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>B2C テナントでのチャネルのコンフィギュレーション
 
 1. システム管理者として使用環境の Commerce サイト ビルダーにログインします。Azure AD B2C テナントをコンフィギュレーションするには、Commerce 環境のシステム管理者である必要があります。
@@ -108,7 +116,7 @@ Azure AD B2C テナントをお客様の環境に追加するには、次の手�
 
 [新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
 
-[E コマース サイトの作成](create-ecommerce-site.md)
+[eコマース サイトの作成](create-ecommerce-site.md)
 
 [オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
 
@@ -123,6 +131,3 @@ Azure AD B2C テナントをお客様の環境に追加するには、次の手�
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

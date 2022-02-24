@@ -1,32 +1,33 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 7 月 8 日)
 description: このトピックでは、2020 年 7 月 8 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a574436bc7762fbee722af8be2f923d18d01e5b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: ba0bb54b44f66aa73056667a93a3f8e6f7f618ee
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060792"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528476"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 7 月 8 日)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3382 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
 
@@ -70,9 +71,9 @@ ms.locfileid: "8060792"
 
 このリリースでは、**採用および詳細の追加** オプションを使用して従業員を採用すると、合理化された従業員エントリのエラー (null 参照) が修正されます。
 
-## <a name="changes-made-in-the-dataverse-worker-entity-dont-reflect-in-human-resources-455652"></a>Dataverse 作業者エンティティに加えられた変更が、Human Resources に反映されない (455652)
+## <a name="changes-made-in-the-common-data-service-worker-entity-dont-reflect-in-human-resources-455652"></a>Common Data Service 作業者エンティティに加えられた変更が、Human Resources に反映されない (455652)
 
-Dataverse の **作業者** エンティティの次のフィールドに加えられた変更は、Human Resources に表示されます:
+Common Data Service の **作業者** エンティティの次のフィールドに加えられた変更は、Human Resources に表示されます:
 
 - **自宅での作業**
 - **勤続日数**
@@ -91,7 +92,7 @@ Dataverse の **作業者** エンティティの次のフィールドに加え�
 
 ## <a name="human-resources-application-in-teams"></a>Teams の Human Resources アプリケーション
 
-従業員は、Microsoft Teams 内で休暇の表示および申請ができます。 ボットと対話して、休暇申請を作成できます。 詳細については、[Teams の Human Resources アプリ](./hr-admin-teams-leave-app.md) を参照してください。 
+従業員は、Microsoft Teams 内で休暇の表示および申請ができます。 ボットと対話して、休暇申請を作成できます。 詳細については、[Teams の Human Resources アプリ](https://go.microsoft.com/fwlink/?linkid=2127841) を参照してください。 
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>福利厚生管理のためのデータ管理フレームワーク (DMF) エンティティ
  
@@ -130,16 +131,13 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 
 ## <a name="coming-soon"></a>間もなく公開
 
-## <a name="checklist-entities-included-in-dataverse"></a>Dataverse に含まれるチェックリスト エンティティ
+## <a name="checklist-entities-included-in-common-data-service"></a>Common Data Service に含まれるチェックリスト エンティティ
 
-オンボード、オフボード、転送、および業務プロセスのチェックリスト エンティティは、Dataverse ですぐに使用可能になります。
+オンボード、オフボード、転送、および業務プロセスのチェックリスト エンティティは、Common Data Service ですぐに使用可能になります。
 
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

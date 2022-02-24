@@ -1,18 +1,25 @@
 ---
 title: リスト モジュール
 description: リストは、任意の数の行を含むコントロールです。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: ce3b0cf2e27364fbfc091ab43f6be8948e9b22fa
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: da425422dbc60b4dbc614cb5e417736148a5104e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782164"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679924"
 ---
 # <a name="list-module"></a>リスト モジュール
 
@@ -121,7 +128,7 @@ ms.locfileid: "7782164"
 | [色](../interfaces/view-model-control-list-ilist-ilistdesign.md#color) |color: string (optional)  <br>|コンテナーの前景色。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) から継承 <br> |
 | [デザイン](../interfaces/view-model-control-list-ilist-ilistdesign.md#design) |design: [GroupDesign](../interfaces/view-model-control-group-igroup-igroupdesign.md) (optional)  <br>|各行に適用されるデザイン オブジェクト。<br>  |
 | [flexFlow](../interfaces/view-model-control-list-ilist-ilistdesign.md#flexflow) |flexFlow: string (省略可)  <br>|このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) から継承 <br> |
-| [flexSize](../interfaces/view-model-control-list-ilist-ilistdesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズを拡大) [(サイズを縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) から継承 <br> |
+| [flexSize](../interfaces/view-model-control-list-ilist-ilistdesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) から継承 <br> |
 | [fontSize](../interfaces/view-model-control-list-ilist-ilistdesign.md#fontsize) |fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (省略可)  <br>|比例テキスト サイズ<br>  [Design](../interfaces/view-model-ipage-idesign.md).[fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) から継承 <br> |
 | [fontWeight](../interfaces/view-model-control-list-ilist-ilistdesign.md#fontweight) |fontWeight: "normal" &#124; "bold" (省略可)  <br>|標準または太字のテキスト。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight) から継承 <br> |
 | [hideArrow](../interfaces/view-model-control-list-ilist-ilistdesign.md#hidearrow) |hideArrow: boolean (省略可)  <br>|既定のスタイル ナビゲーション コントロールの矢印 ( > ) を非表示にするように許可します。<br>  |
@@ -168,7 +175,7 @@ ms.locfileid: "7782164"
 | [名前](../interfaces/view-model-control-list-ilist-ilistmetadata.md#name) |Name: 文字列 (省略可)  <br>|コントロールの名前です。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Name](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name) から継承 <br> |
 | [NonEntityProjection](../interfaces/view-model-control-list-ilist-ilistmetadata.md#nonentityprojection) |NonEntityProjection: ブール値 (省略可)  <br>|  |
 | [注文](../interfaces/view-model-control-list-ilist-ilistmetadata.md#order) |注文: 番号 (オプション)  <br>|コントロールがページに表示される順序を示す番号。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) から継承 <br> |
-| [タイプ](../interfaces/view-model-control-list-ilist-ilistmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
+| [[タイプ](../interfaces/view-model-control-list-ilist-ilistmetadata.md#type)] |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
 
 #### <a name="methods"></a>メソッド
 
@@ -218,6 +225,3 @@ ms.locfileid: "7782164"
 | [isEntitySyncPending](../interfaces/view-model-control-list-ilist-irow.md#isentitysyncpending) |isEntitySyncPending(): boolean|  |
 | [選択](../interfaces/view-model-control-list-ilist-irow.md#select) |select(): any|  |
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

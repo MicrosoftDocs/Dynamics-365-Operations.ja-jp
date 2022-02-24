@@ -2,9 +2,11 @@
 title: Azure Active Directory からユーザーをインポートする
 description: システム管理者はこの手順を使用して、選択したユーザーを手動でインポートするか、Azure Active Directory から多数のユーザーをインポートすることができます。
 author: peakerbl
+manager: AnnBe
 ms.date: 07/07/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce8c98add0c6d5fb07b3ba5338037d9a12b1d8e50a2d2039b0231d3d305c9ebe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56b6666310309817ff30ccb3902721880b829ee0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748291"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679817"
 ---
 # <a name="import-users-from-azure-active-directory"></a>Azure Active Directory からユーザーをインポートする
 
@@ -44,7 +46,7 @@ ms.locfileid: "6748291"
 2. **システム管理 > ユーザー > ユーザー** の順に移動します。
 3. **バッチ インポート** をクリックします。
 4. **バックグラウンドで実行** セクションを展開します。
-4. **バッチ処理** フィールドで **はい** を選択します。
+4. **バッチ処理** フィールドで **はい を選択します。
 6. **バッチ グループ** フィールドで、値を入力または選択します。 これは、オプションのステップです。  
 7. **個人** フィールドでは、**はい** を選択します。 これは、オプションのステップです。  
 8. **重要なジョブ** フィールドでは、**はい** を選択します。 これは、オプションのステップです。  
@@ -56,6 +58,3 @@ ms.locfileid: "6748291"
 ## <a name="run-in-a-sandbox-environment"></a>サンドボックス環境で実行
 1. **バッチインポート** を選択します。
 2. **OK** を選択します。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,22 +2,25 @@
 title: プットアウェイ クラスター
 description: プットアウェイ クラスターには、複数のライセンス プレートを同時に選択し、異なる場所にある複数のライセンス プレートを使用する方法が用意されています。 プットアウェイ クラスターは、ライセンス プレートが在庫のパレット数が少ない小売業の場合に非常に役立ちます。
 author: Mirzaab
+manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c3496d43fa3791f765abfb1eb25c45f1f21b972f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573012"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512333"
 ---
 # <a name="putaway-clusters"></a>プットアウェイ クラスター
 
@@ -228,7 +231,7 @@ ms.locfileid: "7573012"
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>クラスターへの在庫の入庫と並べ替え
 
-1. 倉庫 *61* が設定されたユーザーとして、倉庫管理モバイル アプリにログインします。
+1. 倉庫 *61* を設定したユーザーとして、倉庫アプリにログインします。
 1. メイン メニューで、**入庫** を選択します。
 1. **入庫** メニューで、**クラスターの入庫と並べ替え** を選択します。
 1. **Ponum** フィールドに発注書番号を入力します。
@@ -270,7 +273,7 @@ ms.locfileid: "7573012"
 
 #### <a name="put-the-cluster-away"></a>クラスター プットアウェイ
 
-1. 倉庫 *61* が設定されたユーザーとして、倉庫管理モバイル アプリにログインします。
+1. 倉庫 *61* を設定したユーザーとして、倉庫アプリにログインします。
 1. メイン メニューで、**入庫** を選択します。
 1. **入庫** メニューで、**クラスター プットアウェイ** を選択します。
 1. **クラスター ID** を選択し、以前にクローズしたクラスターに対して入力したクラスター ID を入力します。
@@ -284,7 +287,7 @@ ms.locfileid: "7573012"
 
     この手順を上書きまたは実行するための標準のオプションがあります。
 
-    ![クラスター プットアウェイ: プット ページ。](media/Cluster_putaway-Put.png "クラスター プットアウェイ: プット ページ")
+    ![クラスター プットアウェイ: プット ページ](media/Cluster_putaway-Put.png "クラスター プットアウェイ: プット ページ")
 
 1. **OK** を選択して、クラスター プットアウェイを確認します。
 
@@ -293,6 +296,3 @@ ms.locfileid: "7573012"
 ## <a name="notes-and-tips"></a>メモとヒント
 
 クラスター ID がネストされたパレットの親ライセンス プレートとなる場合は、そのクラスター ID がスキャンされるときにプット場所が自動的に指定されます。 ライセンス プレートの生成が手動に設定されている場合でも、それ以上のライセンス プレートをスキャンする必要はありません。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

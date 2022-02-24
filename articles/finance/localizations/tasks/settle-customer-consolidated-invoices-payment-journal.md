@@ -1,24 +1,27 @@
 ---
 title: 支払仕訳帳を使用した顧客月次締め請求書の決済
-description: 日本では、支払いは顧客の月次締め請求書に対して作成され決済されます。
+description: 日本では、支払は月次締め請求書に対して行われ決済されます。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustConsInvoice_JP, LedgerJournalTable, LedgerJournalTransCustPaym, CustPaymProposalEdit
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 111cb5d3b3144638b1c2c9e024cf49dcb7b51370
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: b694efb2fe088765b3004791b266bf42e53fec2c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601440"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408166"
 ---
 # <a name="settle-customer-consolidated-invoices-by-using-a-payment-journal"></a>支払仕訳帳を使用した顧客月次締め請求書の決済
 
@@ -58,6 +61,3 @@ ms.locfileid: "7601440"
 14. [売掛金勘定] > [定期処理タスク] > [月次締め請求書] の順に移動します。
     * 月次締め請求書のステータスが [決済済] に更新されていることを確認します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

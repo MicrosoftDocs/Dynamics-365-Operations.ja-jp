@@ -209,6 +209,3 @@ Attract 管理者によって設定可能なオファー作成プロセスの部
 
 
 オファー作成プロセスの詳細については、[オファーの作成、承認、および署名](./creating-offers.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

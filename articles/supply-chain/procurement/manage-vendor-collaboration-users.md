@@ -1,10 +1,12 @@
 ---
 title: 仕入先コラボレーション ユーザーの管理
 description: このトピックでは、新しい仕入先コラボレーション ユーザーのプロビジョニングの要求方法、および新しい仕入先コラボレーションの連絡先を追加する方法について説明します。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ff0d11bf2c42f7ae63e3db5f31f3ffea2c28f693
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6356c1d11ba507c0eaa42087bdebe982ef091dbd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578131"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019936"
 ---
 # <a name="manage-vendor-collaboration-users"></a>仕入先コラボレーション ユーザーの管理
 
@@ -62,7 +64,7 @@ Dynamics 365 Supply Chain Management の仕入先コラボレーション イン
 4. **ユーザー ロールの割り当て** セクションで、新しいユーザーが持つ必要のあるセキュリティ ロールの **割り当て** チェック ボックスを選択します。
 5. **送信** をクリックします。
 
-仕入先ユーザーが送信を要求する場合、**仕入先コラボレーションへのアクセスの許可** フィールドは、選択された仕入先アカウントのために **はい** に設定され、ユーザー要求のワークフローは開始されます。 ワークフローの一部として、新しいユーザーは作成され、セキュリティ ロールが割り当てられます。 また、Azure B2B サービスは、Azure ポータルでインタラクションを開始することを有効化し、Supply Chain Management ユーザー アカウントで関連する新しいもしくは既存の AAD アカウントを関連付けます。 詳細については、[Azure AD B2B コラボレーションとは何ですか。](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) を参照してください。
+仕入先ユーザーが送信を要求する場合、**仕入先コラボレーションへのアクセスの許可** フィールドは、選択された仕入先アカウントのために **はい** に設定され、ユーザー要求のワークフローは開始されます。 ワークフローの一部として、新しいユーザーは作成され、セキュリティ ロールが割り当てられます。 また、Azure B2B サービスは、Azure ポータルでインタラクションを開始することを有効化し、Supply Chain Management ユーザー アカウントで関連する新しいもしくは既存の AAD アカウントを関連付けます。 詳細については、[Azure AD B2B コラボレーションとは何ですか。](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) を参照してください。
 
 ### <a name="inactivate-a-user"></a>ユーザーの無効化
 
@@ -91,6 +93,3 @@ Dynamics 365 Supply Chain Management の仕入先コラボレーション イン
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

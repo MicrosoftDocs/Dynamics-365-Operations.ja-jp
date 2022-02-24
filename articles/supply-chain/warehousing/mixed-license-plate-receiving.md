@@ -2,9 +2,11 @@
 title: 混合ライセンス プレートの受取
 description: このトピックでは、混合ライセンス プレート受取の登録方法とモバイル デバイスの複数品目の作業方法について説明します。
 author: Mirzaab
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSLicensePlate
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84b01e9c6ad041fe95b46c97d89b90e85422d170399754062a6422319fc23a63
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6c4dcafa5d997bce21d37d02f87fbf604568c24e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769470"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965644"
 ---
 # <a name="mixed-license-plate-receiving"></a>混合ライセンス プレートの受取
 
@@ -46,6 +48,3 @@ ms.locfileid: "6769470"
 - 混合ライセンス プレートの受取とプット アウェイ
 
 元伝票の明細行を識別するためのオプションとして、発注書の品目、発注書の明細行、返品注文、移動オーダーの品目、および在庫移動指示明細行があります。 これらのオプションは、1 つのライセンス プレートの入荷注文に変更できます。 最後のオプションは、負荷品目によるものです。 複数の品目をライセンス プレートに追加することはできますが、複数の負荷を切り替えることはできません。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

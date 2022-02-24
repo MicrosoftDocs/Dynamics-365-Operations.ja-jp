@@ -2,9 +2,11 @@
 title: Modern POS (MPOS) か Cloud POS かの選択
 description: このトピックでは、Modern POS および Cloud POS の主な違いについて説明します。 Dynamics 365 Commerce を実装する小売業者が、要件に対して最適な選択ができるよう考慮すべきさまざまな要因についても説明します。
 author: jblucher
+manager: AnnBe
 ms.date: 10/13/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -15,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e2987351e327b5cca27a6ea992a0550cc21d028cecf4330d374768f13711829
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 330646da075e3fc8c0c3f7fe54b790ed42615395
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714762"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970106"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Modern POS (MPOS) か Cloud POS かの選択
 
@@ -57,7 +59,7 @@ MPOS および CPOS は大部分は同じですが、理解しておくべき重
 Windows、iOS、または Android デバイスの MPOS は、デバイスでパッケージ化され、インストールされ、およびサービス対象となるアプリケーションです。
 
 - **Windows** – Windows アプリケーションの MPOS には、すべてのアプリケーション コードおよび埋め込み型 Commerce Runtime (CRT) が含まれています。 
-- **iOS/Android** – これらのプラットフォームでは、アプリケーションが CPOS アプリケーション コードのホストとして機能します。 つまり、アプリケーション コードは Microsoft Azure または Commerce Scale Unit の CPOS サーバーから取得されます。 詳細については、[Commerce Scale Unit の概要](dev-itpro/retail-store-system-begin.md) を参照してください。
+- **iOS/Android** – これらのプラットフォームでは、アプリケーションが CPOS アプリケーション コードのホストとして機能します。 つまり、アプリケーション コードは Microsoft Azure または Commerce Scale Unit の CPOS サーバーから取得されます。 詳細については、[Commerce Scale Unit の概要](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin) を参照してください。
 
 #### <a name="cpos"></a>CPOS
 
@@ -79,11 +81,11 @@ Commerce Scale Unit は、CRT をホストするコンポーネントです。 C
 
 #### <a name="offline-mode"></a>オフライン モード
 
-Windows 用 MPOS は、オフライン モードをサポートします。 オフライン モードでは、Commerce Scale Unit から非接続の状態でも、POS は処理中の販売を続行できます。 接続が復旧すると、チャネル データベースで同期できます。 MPOS は、独自の CRT の埋め込み型インスタンスを使用し、一時的に独自のローカル データ ソース (オフライン SQL Server データベース) を使用します。 オフライン機能の詳細については、「[POS オフライン機能](pos-offline-functionality.md)」を参照してください。
+Windows 用 MPOS は、オフライン モードをサポートします。 オフライン モードでは、Commerce Scale Unit から非接続の状態でも、POS は処理中の販売を続行できます。 接続が復旧すると、チャネル データベースで同期できます。 MPOS は、独自の CRT の埋め込み型インスタンスを使用し、一時的に独自のローカル データ ソース (オフライン SQL Server データベース) を使用します。 オフライン機能の詳細については、「[POS オフライン機能](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality)」を参照してください。
 
 ### <a name="pos-peripheralhardware-considerations"></a>POS 周辺機器/ハードウェアの考慮事項
 
-小売業者は、POS がプリンター、キャッシュ ドロワー、および支払ターミナルなどのデバイスや周辺機器にどのようにアクセスするかを検討する必要もあります。 Windows 用 MPOS のみ、これらのデバイスでの直接通信をサポートしています。 Windows Phone、iOS、または Android 用の MPOS、およびクラウド POS は、これらのデバイスにアクセスするためハードウェア ステーションを必要とします。 ハードウェア ステーションは POS レジスター専用で、または店舗のレジスター間で共有できます。 ハードウェア ステーションの詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
+小売業者は、POS がプリンター、キャッシュ ドロワー、および支払ターミナルなどのデバイスや周辺機器にどのようにアクセスするかを検討する必要もあります。 Windows 用 MPOS のみ、これらのデバイスでの直接通信をサポートしています。 Windows Phone、iOS、または Android 用の MPOS、およびクラウド POS は、これらのデバイスにアクセスするためハードウェア ステーションを必要とします。 ハードウェア ステーションは POS レジスター専用で、または店舗のレジスター間で共有できます。 ハードウェア ステーションの詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation) を参照してください。
 
 ## <a name="implementation-considerations"></a>実装の考慮事項
 
@@ -100,8 +102,5 @@ Windows 用 MPOS は、オフライン モードをサポートします。 オ�
     これら 2 つのオプションは、相互に排他的ではありません。 最も信頼できるトポロジでは、小売業者はインターネット接続または Azure の可用性での依存関係を減らすためにローカル RSSU を配置でき、ローカル サーバーまたはネットワークに問題がある場合、オフライン モードが有効になっている POS レジスターを展開することもできます。
 
 - **ハードウェア デバイス/周辺機器** – Retail POS システムの 1 つの重要な側面は、プリンター、キャッシュ ドロワー、および支払ターミナルなどの POS 周辺機器を使用する能力です。 使用可能なすべての POS オプションは周辺機器を使用できますが、Windows 用 MPOS のみそれらを直接サポートします。 その他のすべてのアプリケーションには、1 つまたは複数のハードウェア ステーションが必要です。 この方法により柔軟性が増しますが、追加コンポーネントは配置、コンフィギュレーション、およびサービスの対象となる必要があります。
-- **システム要件** – POS アプリケーションのシステム要件が異なります。 選択を行う前に、最新の情報を確認してください。 たとえば、ブラウザーで CPOS が実行されるため、より広範囲のオペレーティング システムをサポートします。 システム要件に関する詳細については、「[クラウド配置のシステム要件](../fin-ops-core/fin-ops/get-started/system-requirements.md)」を参照してください。
+- **システム要件** – POS アプリケーションのシステム要件が異なります。 選択を行う前に、最新の情報を確認してください。 たとえば、ブラウザーで CPOS が実行されるため、より広範囲のオペレーティング システムをサポートします。 システム要件に関する詳細については、「[クラウド配置のシステム要件](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements)」を参照してください。
 - **配置およびサービス** – アプリケーションおよび配置の選択に応じて、配置とサービス要件の複雑度が異なります。 たとえば、クラウド ホスト環境の CPOS 展開では、すべてのデバイスにインストールおよび更新は必要ありません。 したがって、この方法は、複雑度および原価を大幅に減少します。 ただし、オフライン モードを有効にしてすべてのレジスターに MPOS を配置する場合、共有ハードウェア ステーションも配置し、管理する必要があるエンドポイントの数が大幅に増加します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

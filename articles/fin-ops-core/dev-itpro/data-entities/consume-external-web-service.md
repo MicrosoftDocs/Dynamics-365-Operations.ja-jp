@@ -1,25 +1,27 @@
 ---
 title: 外部 Web サービスの消費
-description: このトピックでは、Finance and Operations アプリで外部 Web サービスを使用する方法について説明します。
-author: peakerbl
+description: このトピックでは、Microsoft Dynamics 365 Finance and Operations アプリで外部 Web サービスを使用する方法について説明します。
+author: Sunil-Garg
+manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfcfed1df62309d357303634f22744e5fffd4443
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: e07fde7d72922b91a83ac78ee0906a073f0e56db
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404055"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679366"
 ---
 # <a name="consume-external-web-services"></a>外部 Web サービスの消費
 
@@ -58,6 +60,3 @@ ms.locfileid: "7404055"
         info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
     }
     ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

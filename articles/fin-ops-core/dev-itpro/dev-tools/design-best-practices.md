@@ -1,34 +1,36 @@
 ---
 title: データ エンティティに関する設計原則とベスト プラクティス
-description: この記事では、データ エンティティの設計原則について説明します。
-author: peakerbl
+description: この記事では、データ エンティティの設計原則について説明します。 また、データ エンティティ、フィールド、関係のロール、ロールの名前、OData EntityType および EntitySet のガイドラインも含まれています。
+author: Sunil-Garg
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 26421
 ms.assetid: b41f6fc4-7883-4987-8160-374576b11d16
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35fea0dff41d4019d85d6a9f0bc728eb34494cc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 52897a8f121529b8ae7a94a659158e9038b7759e
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070841"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4409721"
 ---
 # <a name="design-principles-and-best-practices-for-data-entities"></a>データ エンティティに関する設計原則とベスト プラクティス
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
 この記事では、データ エンティティの設計原則について説明します。 また、データ エンティティ、フィールド、関係のロール、ロールの名前、OData EntityType および EntitySet のガイドラインも含まれています。
 
-## <a name="entity-design-principles"></a>エンティティ デザインの原則
+<a name="entity-design-principles"></a>エンティティ デザインの原則
+------------------------
 
 データ エンティティは、1 つの消耗契約に関連するビジネス ロジックをカプセル化する総合的なオブジェクトを提供する必要があります。 契約は、OData、インポートとエクスポート、統合、プログラミング モデルなどのアプリケーション インターフェイス (API) を通じて公開されます。 各データ エンティティでは、以下の目標を達成するように設計する必要があります。
 
@@ -98,6 +100,3 @@ ms.locfileid: "8070841"
 ### <a name="number-of-columns-in-a-data-entity"></a>データ エンティティ内の列の数
 Microsoft Excel ベースのインポート/エクスポートでは、最大 255 列までサポートされることに注意してください。 エンティティが 255 列以上をエクスポート/インポートできる場合、非 Excel 形式を計画するか、エンティティの列数が 255 列以下である必要があります。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

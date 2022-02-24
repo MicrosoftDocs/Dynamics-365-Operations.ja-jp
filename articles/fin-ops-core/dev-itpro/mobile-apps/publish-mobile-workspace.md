@@ -1,10 +1,12 @@
 ---
 title: モバイル ワークスペースの公開
-description: このトピックでは、システム管理者がモバイル ワークスペースを公開するために従わなければならない手順について説明します。
+description: このトピックでは、システム管理者がモバイル ワークスペースを公開するために従わなければならない手順について説明します。 モバイル ワークスペースを公開して、ユーザーがモバイル アプリでアクセスできるようにする必要があります。
 author: sericks007
+manager: AnnBe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysAppDesignerPane
 audience: IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: ae82991bb40ddb3b71ffe0e0a6295a58f704103eadeee919600e24c53dbadea7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc8ef25d70450522668063f79acae31af0702838
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725116"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679916"
 ---
 # <a name="publish-mobile-workspaces"></a>モバイル ワークスペースの公開
 
@@ -37,8 +39,5 @@ ms.locfileid: "6725116"
 
 新しいワークスペースが発行された後、ユーザーはプルしてモバイル ワークスペースの一覧を更新する必要があります。 
 
-[![プルして更新。](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

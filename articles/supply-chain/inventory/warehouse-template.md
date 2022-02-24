@@ -1,10 +1,12 @@
 ---
 title: 倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 description: このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
@@ -13,21 +15,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d533eed984c188c5b6520232f2b875bddd1f57bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571092"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967133"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。 使用できる事前定義されたコンフィギュレーション テンプレートが複数あります。 これらのテンプレートを使用する方法の詳細については、[コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md) を参照してください。
+このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。 使用できる事前定義されたコンフィギュレーション テンプレートが複数あります。 これらのテンプレートを使用する方法の詳細については、[コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md) を参照してください。
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>コンフィギュレーション テンプレートが役に立つ際のシナリオ
 
@@ -88,13 +90,10 @@ ms.locfileid: "7571092"
 4. **+ ファイルの追加** を選択し、データ パッケージの zip ファイルをアップロードします。
 5. **インポート** を選択します。 **拡張** 表示で、**フィルター** オプションを使用して、インポート中に発生する可能性のある問題の概要をすばやく取得します。
 
-**実行表示** ログは、インポートされる各データ エンティティに関する詳細情報を提供します。 ステージング データの表示を使用して、対象データにすばやくアクセスできます。 この方法で、アプリケーションの関連するページで、インポートされたデータがどのようなものかを表示できます。 既定のデータ テンプレートを使用する場合、各データ エンティティのインポート順序が事前定義された方法で動作し、すべての依存データが最初にインポートされることを保証する助けになります。 カスタム データ エンティティがプロジェクトの一部である場合、正しい順序が定義されているのを確認する必要があります。 詳細については、「[コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)」を参照してください。
+**実行表示** ログは、インポートされる各データ エンティティに関する詳細情報を提供します。 ステージング データの表示を使用して、対象データにすばやくアクセスできます。 この方法で、アプリケーションの関連するページで、インポートされたデータがどのようなものかを表示できます。 既定のデータ テンプレートを使用する場合、各データ エンティティのインポート順序が事前定義された方法で動作し、すべての依存データが最初にインポートされることを保証する助けになります。 カスタム データ エンティティがプロジェクトの一部である場合、正しい順序が定義されているのを確認する必要があります。 詳細については、「[コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md)」を参照してください。
 
 同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、[Finance and Operations で倉庫テンプレートを使用してコンフィギュレーションをコピーする方法](https://www.youtube.com/watch?v=K2WIfFlqJYs) について YouTube でこの 3 分間のビデオを参照してください。
 
 ## <a name="related-topic"></a>関連するトピック
 
-[コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[コンフィギュレーション データ テンプレート](../../dev-itpro/data-entities/configuration-data-templates.md)

@@ -2,24 +2,26 @@
 title: Retail チャネル拡張機能を最新の Retail SDK にアップグレード
 description: このトピックでは、コマース チャネル拡張機能を以前のリリースから Retail SDK の最新の更新プログラムにアップグレードする方法について説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 11/21/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.openlocfilehash: d95994f7fbc5855a2f49fcc40f52026609202c79
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: fc45c204e05ac7a22491c4a03cb9f5aae163466d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782120"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680396"
 ---
 # <a name="upgrade-the-retail-channel-extension-to-the-latest-retail-sdk"></a>Retail チャネル拡張機能を最新の Retail SDK にアップグレード
 
@@ -159,6 +161,3 @@ SDK アップグレード プロセスは、バージョンによって異なり
 
 ## <a name="generate-a-deployable-package-for-validation"></a>検証用の配置可能パッケージを生成する
 トピック [配置可能なパッケージの作成](retail-sdk/retail-sdk-packaging.md) の手順を完了し、検証用の配置可能パッケージを生成します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

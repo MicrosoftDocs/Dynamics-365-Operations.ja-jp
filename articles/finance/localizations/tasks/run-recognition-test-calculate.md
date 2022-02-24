@@ -2,23 +2,26 @@
 title: 認識テストの実行と個別資産の減損損失の計算
 description: このタスクは、認識テストの実行方法および個々の資産の減損金額の計算方法について説明します。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetImpairmentRecognitionTest_JP, SysQueryForm, AssetImpairmentCreateTest_JP, AssetImpairmentRecognitionTestResult_JP
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8b5fb158d8e56f7263be9892c079d025fe763a7c707f285762286d66ed8f6f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3906ab52ba68ed59ae14050e1847adc76401bd29
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742842"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408152"
 ---
 # <a name="run-the-recognition-test-and-calculate-the-impairment-amount-on-individual-assets"></a>認識テストの実行と個別資産の減損損失の計算
 
@@ -52,6 +55,3 @@ ms.locfileid: "6742842"
     * 減損固定資産の確認フォームが表示されます。  
     * [減損テスト ID] は有効です。     後に [提案と転記] で使用するため、[減損テスト ID] を忘れないでください。   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

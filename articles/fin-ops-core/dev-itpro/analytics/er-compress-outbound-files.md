@@ -2,9 +2,11 @@
 title: 電子申告で生成される大きなドキュメントを圧縮する
 description: このトピックでは、電子申告 (ER) 形式で生成される大きなドキュメントを圧縮する方法について説明します。
 author: NickSelin
+manager: kfend
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERFormatDestinationTable
 audience: Application User, IT Pro
@@ -15,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30de55f9e55911290750c148621fd3d4531686c2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718602"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680857"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>電子申告で生成される大きなドキュメントを圧縮する 
 
 [!include [banner](../includes/banner.md)]
 
-[電子報告 (ER) フレームワーク](general-electronic-reporting.md) を使用すると、トランザクション データをフェッチして、送信ドキュメントを生成するソリューションを構成できます。 この生成されたドキュメントは非常に大きい場合があります。 このタイプのドキュメントが生成されると、[Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) メモリを使用して保持されます。 ある時点で、ドキュメントを Microsoft Dynamics 365 Finance アプリケーションからダウンロードする必要があります。 現在、ER で生成される 1 つのドキュメントの最大サイズは 2 ギガバイト (GB) に制限されています。 また、Finance では現在、ダウンロード ファイルのサイズを 1 GB に [制限](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) しています。 したがって、これらの制限を超えて、**ストリームが長すぎる** または **算術演算におけるオーバーフローまたはアンダーフロー** 例外を受け取る可能性を低くする、ER ソリューションを構成する必要があります。
+[電子報告 (ER) フレームワーク](general-electronic-reporting.md) を使用すると、トランザクション データをフェッチして、送信ドキュメントを生成するソリューションを構成できます。 この生成されたドキュメントは非常に大きい場合があります。 このタイプのドキュメントが生成されると、[Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) メモリを使用して保持されます。 ある時点で、ドキュメントを Microsoft Dynamics 365 Finance アプリケーションからダウンロードする必要があります。 現在、ER で生成される 1 つのドキュメントの最大サイズは 2 ギガバイト (GB) に制限されています。 また、Finance では現在、ダウンロード ファイルのサイズを 1 GB に [制限](https://fix.lcs.dynamics.com/Issue/Details?bugId=489291) しています。 したがって、これらの制限を超えて、**ストリームが長すぎる** または **算術演算におけるオーバーフローまたはアンダーフロー** 例外を受け取る可能性を低くする、ER ソリューションを構成する必要があります。
 
 ソリューションを構成するときに、**フォルダー** タイプのルート要素を追加して、入れ子になった要素によって生成されるコンテンツを圧縮することによって、オペレーション デザイナーで ER 形式を調整できます。 圧縮は、"ジャスト イン タイム" で機能するため、ピーク時のメモリ使用量とダウンロードされるファイルのサイズを減らすことができます。
 
@@ -55,7 +57,7 @@ ms.locfileid: "6718602"
 1. [インポートされた形式の実行](er-defer-xml-element.md#run-the-imported-format)。
 2. XML 形式で生成されたドキュメントのサイズが 3 キロバイト (KB) であることに注意してください。
 
-    ![非圧縮送信ドキュメントのプレビュー。](./media/er-compress-outbound-files1.png)
+    ![非圧縮送信ドキュメントのプレビュー](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>生成された出力を圧縮するように形式を変更する
 
@@ -80,7 +82,7 @@ ms.locfileid: "6718602"
     > [!NOTE] 
     > この ZIP ファイルが保持する XML ファイルの圧縮率は 87% です。 圧縮率は、圧縮するデータによって異なります。
 
-    ![圧縮送信ドキュメントのプレビュー。](./media/er-compress-outbound-files2.png)
+    ![圧縮送信ドキュメントのプレビュー](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > 出力を生成する形式要素 (この例では **レポート** 要素) に ER [出力先](electronic-reporting-destinations.md) が構成されている場合、出力の圧縮がバイパスされます。
@@ -92,6 +94,3 @@ ms.locfileid: "6718602"
 [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 
 [電子申告形式における XML 要素の実行の延期](er-defer-xml-element.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,24 +2,26 @@
 title: オーバーレイから拡張機能への移行
 description: このトピックでは、拡張機能の基準となるカスタマイズoverlayeredコードに基づいていますカスタマイズからの移行について説明します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 4aa70f3c0aa5ed831061ca491cc9ab93fcd7ce8f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: cec2405121772b5698b13b54a1fdbbb1e8f0aa32
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781889"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409493"
 ---
 # <a name="migrate-from-overlayering-to-extensions"></a>オーバーレイから拡張機能への移行
 
@@ -115,6 +117,3 @@ ms.locfileid: "7781889"
 ソリューションに、拡張機能を通じて簡単に対応できない侵入的なカスタマイズが含まれていることがあります。 このようなカスタマイズの業務の値が拡張機能を通じて構築する手間を上回るかどうかを検討してください。 場合によっては、パートナーが拡張機能を通じてパーツを再構築することが困難で、それらのパーツはソリューションにとって重要ではないため、ソリューションのパーツを中止することを決定しました。
 
 アプリケーション全体でカスタマイズする小規模な修正プログラムの一部は、ソリューションのコアでない場合がありますが、関係するユーザーにとって重要です。 そのような場合、標準アプリケーションに類似の機能を実装するよう Microsoft に依頼するほうがよいかどうかを決定する必要があります。 この目的のために拡張性要求を入力することができます。 たとえば、顧客がシステムでの標準の業務プロセスを簡略化する場合、標準のアプリケーションでプロセスの手順を無効にするためのオプションを追加するよう、提案する可能性があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

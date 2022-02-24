@@ -2,9 +2,11 @@
 title: AX 2012 からのアップグレード - 切替テスト (切替モック)
 description: このトピックでは、Microsoft Dynamics AX 2012 環境をオフにしてから Finance and Operations をオンにするまでの切替えプロセスをテストする方法について説明します。
 author: jorisdg
-ms.date: 08/27/2021
+manager: AnnBe
+ms.date: 06/06/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b0e54e1a14b0ca102592bc02ff1aa8d7b9252aec
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 2cfef34da1e595a51a3aadb1ea54c8add7e95511
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441518"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680984"
 ---
 # <a name="upgrade-from-ax-2012---cutover-testing-mock-cutover"></a>AX 2012 からのアップグレード - 切替テスト (切替モック)
 
@@ -35,11 +37,12 @@ ms.locfileid: "7441518"
 
 次の図は、実稼動環境で発生するような、切替中の全体的なプロセスを示しています。
 
-![切替プロセス](./media/cutover-selfservice_01.png)
+![切替プロセス](./media/cutover_1.png)
 
-モック カットオーバー プロセスは、サンドボックス環境でのデータ アップグレードの検証と非常によく似ています。 そのプロセスを熟知していて、そのプロセスを既に実行済みであると仮定します。 切替モックは、次の点で異なります。
+モック カットオーバー プロセスは、サンドボックス環境での基本的なデータ アップグレードの検証と非常によく似ています。 そのプロセスを熟知していて、そのプロセスを既に実行済みであると仮定します。 切替モックは、次の点で異なります。
 
-- サンドボックス環境でデータ更新を実行した後、[セルフサービス データベースを更新](../database/database-refresh.md#self-service-database-refresh) の手順を参照し、アップグレードされたデータベースをデータ アップグレード サンドボックス環境から実稼働環境にコピーします。 
+- サンドボックス環境でデータ更新を実行した後、アップグレードされたデータベースをデータ アップグレード サンドボックス環境から実稼働環境にコピーするには、他のタイプの LCS サービス リクエストが必要です。 以下の電子メール テンプレートは、ユーザーの使用のため提供されています。
+>[!コピー] これは、サンドボックス環境 <source sandbox environment name> から本番環境への 2012 データ アップグレード データベース コピーの要求です。 現在稼働中のデータベースを上書きすることに同意します。
 
 - 次のタスクを追加しました。
     - スモーク テストを実行します。
@@ -47,7 +50,7 @@ ms.locfileid: "7441518"
     - ユーザーがシステムに戻れるようにします。 アップグレードが完了して、システムを再度使用できることをユーザーに通知します。
 
 > [!NOTE]
-> このトピックでは、*サンドボックス* という用語は、SQL Azure データベースに接続されている標準またはプレミア承認テスト (レベル 2 または 3)、またはより高度な環境を示します。
+> この記事では、*サンドボックス* という用語を使用して SQL Azure データベースに接続されている標準またはプレミア承認テスト (レベル 2 または 3)、またはより高度な環境を示します。
 
 ## <a name="technical-workstream"></a>技術的なワーク ストリーム
 
@@ -60,7 +63,7 @@ ms.locfileid: "7441518"
 > [!NOTE]
 > 技術的なワークストリームについては、切替テストのプロセスは、実際/稼働の切替プロセスの高レベルの手順と同じです。
 
-技術的なワークストリームについては、切替テストのプロセスは [AX 2012 からのアップグレード - セルフサービス環境でのデータ アップグレード](data-upgrade-self-service.md) で説明したものと同じです。
+技術的なワークストリームについては、切替テストのプロセスは [AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード](upgrade-data-sandbox.md) で説明したものと同じです。
 
 ## <a name="functional-workstream"></a>機能的なワーク ストリーム
 
@@ -78,11 +81,9 @@ ms.locfileid: "7441518"
 -   そのタスクを実行するのは誰か。
 -   時間はどのくらいかかるか。
 
-### <a name="add-users-and-perform-functional-tests"></a>ユーザーの追加、および機能テストの実行
+### <a name="add-users-and-perform-functionl-tests"></a>ユーザーの追加、および機能テストの実行
 環境を完全に構成したときは、ユーザーを追加し、適切なテストを実行します。 
 
 ## <a name="roll-back-to-ax-2012"></a>AX 2012 にロールバックする
 
 このタスクの目的は、AX 2012 をオフにしたときのバックアップを使用してデータベースを復元し、AX 2012 を再度オンにすることです。 統合システムの状態も復元する必要があります。 ただし、統合システムは企業間で異なるため、特定の状況に応じてこのシナリオを個別に計画する必要があります。 ロールバックする必要はありませんが、必要な場合に備えてテスト済みのプロセスがあることが非常に重要です。
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

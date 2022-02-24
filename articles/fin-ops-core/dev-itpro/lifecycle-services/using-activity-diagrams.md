@@ -2,9 +2,11 @@
 title: ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 description: このトピックでは、BPM ライブラリでアクティビティ図を使用する方法について説明します。
 author: AngelMarshall
+manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: de2cff62d1e098337ef0e041e438bfaebcd70182beb2d2138b9b00b617d53ea6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 776ad8a4505d888286f1f9fbca6700d69b33df81
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766361"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681042"
 ---
 # <a name="work-with-activity-diagrams-in-business-process-modeler-libraries"></a>ビジネス プロセス モデラー ライブラリの活動ダイアグラムを使用する
 
@@ -36,7 +38,7 @@ ms.locfileid: "6766361"
 ## <a name="browse-activity-diagrams"></a>活動ダイアグラムの参照
 BPM ライブラリ内の **図** 列は、特定の業務プロセスがアクティビティ図に関連付けられているかどうかを示します。 列の番号は、ダイアグラムを含む子プロセスの数を示します。 番号の横にあるシンボルは、現在のノードまたはプロセスがダイアグラムに関連付けられているかどうかを示します。 これらのインジケーターは、Visio ダイアグラムには適用されません。
 
-[![monitoringanddiagnostics01.](./media/browse_activity_diagrams.JPG)](./media/browse_activity_diagrams.JPG)
+[![monitoringanddiagnostics01](./media/browse_activity_diagrams.JPG)](./media/browse_activity_diagrams.JPG)
 
 アクティビティ図を表示するには、業務プロセスを選択し、右ウィンドウの **概要** タブで **図** を選択します。 **フローチャート** ページが表示されます。 
 
@@ -44,12 +46,12 @@ BPM ライブラリ内の **図** 列は、特定の業務プロセスがアク�
 ## <a name="upload-task-recording"></a>作業記録のアップロード
 タスク記録をアップロードするには、アップロードする業務プロセス ライブラリを開きます。 タスクの記録をアップロードするプロセス手順を選択し、**アップロード** をクリックします。
 
-[![activitydiagrams01.](./media/activity_diagrams_01.jpg)](./media/activity_diagrams_01.jpg)
+[![activitydiagrams01](./media/activity_diagrams_01.jpg)](./media/activity_diagrams_01.jpg)
 
 
 右ウィンドウで、**参照** をクリックしてファイルを選択してから **アップロード** をクリックします。
 
-[![activitydiagrams02.](./media/activity_diagrams_02.jpg)](./media/activity_diagrams_02.jpg)
+[![activitydiagrams02](./media/activity_diagrams_02.jpg)](./media/activity_diagrams_02.jpg)
 
 
 ## <a name="activity-diagrams-that-are-created-from-task-recordings"></a>タスク記録から作成された活動ダイアグラム
@@ -64,7 +66,7 @@ BPM ライブラリ内の **図** 列は、特定の業務プロセスがアク�
 
 BPM は作成されたすべてのタスク記録の活動ダイアグラムと詳細なプロセスの手順を自動的に生成します。 次の図は、例を示します。
 
-![活動ダイアグラムおよびタスク記録プロセスの手順の例。](./media/NEWBPM_BlogPost17-1024x483.png "活動ダイアグラムおよびタスク記録プロセスの手順の例")
+![活動ダイアグラムおよびタスク記録プロセスの手順の例](./media/NEWBPM_BlogPost17-1024x483.png "活動ダイアグラムおよびタスク記録プロセスの手順の例")
 
 
 ## <a name="visio-files"></a>Visio ファイル
@@ -78,6 +80,3 @@ Visio ファイルを表示またはアップロードするには、次の手�
 1. 業務プロセスを選択し、右ウィンドウの **概要** タブで **図** を選択します。
 2. **フローチャート** ページで、**Visio** タブを選択します。詳細については、[ビジネス プロセス モデラーのフローチャート (BPM)](flowcharts-business-process-modeler.md) の未接続のフローチャート セクションを参照してください。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

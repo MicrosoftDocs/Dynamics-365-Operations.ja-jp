@@ -153,6 +153,3 @@ DocuSign が電子署名の優先メソッドとして選択されている場�
 ## <a name="closing-an-offer"></a>オファーの終了 
 
 オファーが承諾され、辞退され、またはさらなるアクションの必要もなく取り消された場合、オファーを終了してこのオファー パッケージがそれ以上変更されないようにできます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

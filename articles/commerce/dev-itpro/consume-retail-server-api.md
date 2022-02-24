@@ -2,24 +2,26 @@
 title: 外部アプリケーションでの Retail Server API の使用
 description: このトピックでは、外部アプリケーションで Retail Server API を使用する方法について説明します。
 author: mugunthanm
-ms.date: 01/11/2022
+manager: AnnBe
+ms.date: 09/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 83eda2b61cb6e91ffc3d7274ab2aa29dc8ff2632
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 762776d518c0f6f1936ccde165fc63a037e643ee
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968116"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683356"
 ---
 # <a name="consume-retail-server-apis-in-external-applications"></a>外部アプリケーションでの Retail Server API の使用
 
@@ -62,30 +64,16 @@ https://RS-URL/Commerce/$metadata
 
 ## <a name="register-the-application-in-azure-app-registration"></a>Azure アプリ登録で、アプリケーションを登録する
 
-### <a name="app-registration-for-the-retail-server"></a>Retail Server のアプリ登録
-
 アプリケーションの登録は、アプリと Microsoft ID プラットフォームとの間に信頼関係を確立します。 信頼は単一方向で、アプリケーションは Microsoft ID プラットフォームを信頼しますが、逆向きでは信頼されません。 アプリの登録を作成するには、次の手順に従います。
 
 1. [Azure ポータル](https://portal.azure.com/)にサインインします。
-2. 複数のテナントへのアクセス許可がある場合は、トップメニューの **ディレクトリ + サブスクリプション** フィルターを使用して、アプリケーションを登録するテナントを選択します。
+2. 複数のテナントへのアクセス許可がある場合は、トップメニューの **ディレクトリ + 購読** フィルターを使用して、アプリケーションを登録するテナントを選択します。
 3. **Azure Active Directory** を検索して選択します。
 4. **管理** で、**アプリの登録** を選択し、**新規登録** を選択します。
 5. アプリケーションの名前を入力します。 アプリのユーザーにはこの名前が表示されます。後で変更することもできます。
 6. **この組織ディレクトリのアカウントのみ (Microsoft のみ、単一テナント)** としてこのアプリケーションを使用できるユーザーを指定します。
 7. **URI のリダイレクト** フィールドは既定値のままにします。 何も変更しないでください。
 8. **登録** を選択して、最初のアプリ登録を行います。
-9. **API の公開** を選択し、**スコープの追加** を選択します。 **スコープ** 名を作成し、**同意** で、**管理者とユーザー** を選び **管理者の同意表示** 名と説明を入力します。
-10. **状態** を **有効にする** に設定します。
-11. **スコープの追加** を選択し、スコープ登録を完了します。 
-12. スコープが作成された後、"api://.." で始まる Application ID URI を クリップボードにコピーします。 これは、後で使用される Server Resource ID です。
-
-### <a name="create-the-app-registration-for-the-client"></a>クライアント用アプリケーション登録の作成
-
-13. 上記の手順 2-8 に従い、アプリケーション登録に必ず別の名前を指定してください。
-14. **API 許可** を選択します。
-15. **API アクセス許可の要求** ページで、**組織で使用する API** を選択し、手順 2-8 で作成したアプリを検索します。
-16. API を選択し、アクセス許可を確認します。 新しいウィンドウで開き、**アクセス許可の追加** を選択
-
 
 登録が完了すると、Azure ポータルに、アプリ登録の **概要** ウィンドウが表示されます。 このウィンドウには、**アプリケーション (クライアント) ID** フィールドが表示されます。 このフィールドの値は、*アプリケーション ID* または *クライアント ID* と呼ばれます。 Microsoft ID プラットフォームでアプリケーションを一意に識別します。
 
@@ -93,20 +81,20 @@ https://RS-URL/Commerce/$metadata
 
 クライアント シークレットは、*アプリケーション パスワード* と呼ばれることもあります。 これは、アプリが、自身の ID に対する証明書の代わりとして使用できる文字列値です。
 
-1. Azure ポータルの **アプリ登録** で、使用しているアプリケーションを選択します (小売サーバー に登録されたアプリ)。
+1. Azure ポータルの **アプリの登録** で、アプリケーションを選択します。
 2. **証明書とシークレット** &gt; **新しいクライアント シークレット** を選択します。
 3. クライアント シークレットの説明を入力します。
 4. 期間を選択します。
 5. **追加** を選択します。
-6. シークレットの値は、クライアント アプリケーション コードで使用できるように必ず書き留めてください。 
+6. シークレットの値は、クライアント アプリケーション コードで使用できるように必ず書き留めてください。 **このページから移動すると、シークレットの値が再度表示されることはありません。**
 
-## <a name="register-the-app-in-the-finance-and-operations-app-so-that-retail-server-trusts-it"></a>Retail Server から信頼されるようにするため、財務と運用アプリで、対象アプリを登録する
+## <a name="register-the-app-in-the-finance-and-operations-app-so-that-retail-server-trusts-it"></a>Retail Server から信頼されるようにするため、Finance and Operations アプリで、対象アプリを登録する
 
 1. Commerce Headquarters で、**Retail と Commerce** &gt; **本社の設定** &gt; **パラメーター** &gt; **Commerce 共有パラメーター** の順に移動します。
-2. **ID プロバイダー** クイック タブで、`Azure Active Directory` タイプのプロバイダーを選択します。 選択に基づいて、**依存する関係者** クイック タブの値が設定されます。
-3. **依存する関係者** クイック タブで、**追加** を選択します。 クライアント アプリ (ヘッドレス Commerce アプリではない) の登録時に生成されたクライアント ID を入力します。 **Type** フィールドを **機密情報** に、**UserType** フィールドを **アプリケーション** に設定します。
+2. **ID プロバイダー** クイック タブで、`HTTPS://sts.windows.net/` で始まるプロバイダーを選択します。 選択に基づいて、**依存する関係者** クイック タブの値が設定されます。
+3. **依存する関係者** クイック タブで、**追加** を選択します。 Azure でアプリの登録時に生成されたクライアント ID を入力します。 **Type** フィールドを **機密情報** に、**UserType** フィールドを **アプリケーション** に設定します。
 4. アクション ウィンドウで、**保存** を選択します。
-5. 新しい依存する関係者を選択し、**サーバー リソース ID** クイック タブで **追加** を選択します。 **サーバー リソース ID** 列にアプリケーション ID URI を入力します (これは、Retail Server アプリ登録時に生成される API URI です)。
+5. 新しい依存する関係者を選択し、**サーバー リソース ID** クイック タブで **追加** を選択します。 **サーバー リソース ID** 列に、Retail Server の URL を入力します。
 6. アクション ウィンドウで、**保存** を選択します。
 7. **Retail と Commerce** &gt; **Retail および Commerce IT** &gt; **配送スケジュール** の順に移動し、Commerce Data Exchange (CDX) ジョブ **1110** を実行します。
 
@@ -138,9 +126,9 @@ API にアクセスするには、最初に認証トークンを生成します�
     | キー            | 先頭値                                                              |
     |----------------|--------------------------------------------------------------------|
     | grant\_type    | **client\_credentials**                                            |
-    | client\_id     | クライアント アプリの登録時に生成されたクライアント ID。     |
-    | client\_secret | クライアント アプリの登録時に生成されたクライアント シークレット (シークレット ID ではなくシークレットの値)。 |
-    | リソース       | アプリケーション ID URI を入力します (ヘッドレス Commerce アプリの登録時に生成された API URI です)。       |
+    | client\_id     | Azure アプリの登録時に生成されたクライアント ID     |
+    | client\_secret | Azure アプリの登録時に生成されたクライアント シークレット |
+    | リソース       | Retail Server の URL                                              |
 
 2. 要求が実行を完了すると、応答本文に **access\_token** の値が生成されます。 このトークンの値をコピーします。 Retail Server に接続するためにこれを使用します。
 
@@ -183,11 +171,11 @@ API にアクセスするには、最初に認証トークンを生成します�
 
     ```xml
     <appSettings>
-        <add key="aadClientId" value="client id generated during the client app registration in Azure" />
-        <add key="aadClientSecret" value="client secret generated during the client app registration in Azure" />
+        <add key="aadClientId" value="client id generated during app registration in Azure" />
+        <add key="aadClientSecret" value="client secret generated during app registration in Azure" />
         <add key="aadAuthority" value="https://sts.windows.net/tenant id/" />
-        <add key="retailServerUrl" value="https://RetailserverURL/Commerce" /> 
-        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI generated during the Retail Server app registration -->
+        <add key="retailServerUrl" value="https://RetailserverURL/Commerce" />
+        <add key="resource" value="https://REtailServerURL" />
         <add key="operatingUnitNumber" value="OUN value" />
     </appSettings>
     ```
@@ -196,7 +184,7 @@ API にアクセスするには、最初に認証トークンを生成します�
 
 1. プロジェクトの NuGet パッケージ マネージャを使用して、以下の NuGet パッケージを追加します。
 
-    + Microsoft.Identity.Client
+    + Microsoft.IdentityModel.Clients.ActiveDirectory
     + Microsoft.Dynamics.Commerce.RetailProxy
 
     **Microsoft.Dynamics.Commerce.RetailProxy** NuGet パッケージは、**RetailSDK\\Pkgs** フォルダから追加することができます。 NuGet マネージャで、**RetailSDK\\pkgs** フォルダのローカル リポジトリを追加します。
@@ -231,14 +219,14 @@ API にアクセスするには、最初に認証トークンを生成します�
     ```C#
     private static async Task<ManagerFactory> CreateManagerFactory()
     {
-        Microsoft.Identity.Client.AuthenticationContext authenticationContext = new   Microsoft.Identity.Client.AuthenticationContext(authority.ToString(), false);
+        Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext authenticationContext = new   Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext(authority.ToString(), false);
         AuthenticationResult authResult = null;
         authResult = await authenticationContext.AcquireTokenAsync(resource, new ClientCredential(clientId, clientSecret));
 
         ClientCredentialsToken clientCredentialsToken = new ClientCredentialsToken(authResult.AccessToken);
         RetailServerContext retailServerContext = RetailServerContext.Create(retailServerUrl, operatingUnitNumber, clientCredentialsToken);
         ManagerFactory factory = ManagerFactory.Create(retailServerContext);
-        return  factory;
+        return factory;
     }
     ```
 
@@ -265,9 +253,6 @@ API にアクセスするには、最初に認証トークンを生成します�
     {
         GetConfiguration();
         Microsoft.Dynamics.Commerce.RetailProxy.PagedResult<SalesOrder> orderHistory = Task.Run(async () => await GetOrderHistory("2001")).Result;
-        Console.WriteLine(orderHistory.Results.GetEnumerator().Current.Id);
+        Console.WriteLine(orderHistory.FirstOrDefault<SalesOrder>().Id);
     }
     ```
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

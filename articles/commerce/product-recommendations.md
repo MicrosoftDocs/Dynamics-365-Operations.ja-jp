@@ -2,25 +2,29 @@
 title: 製品推奨事項の概要
 description: このトピックは、製品推奨事項に関する一般情報を提供します。 製品推奨事項により、顧客は必要な製品や元々購入する予定ではなかった製品も簡単かつ迅速に見つけることができます。
 author: Moonma
+manager: AnnBe
 ms.date: 05/26/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7824de50a65370ef4f2f23b9c8e926f9bec2fcc3
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5aa7db8e53906f9e1416b912fe2c3b70d5430258
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982122"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413626"
 ---
 # <a name="product-recommendations-overview"></a>製品推奨事項の概要
 
@@ -31,9 +35,6 @@ Microsoft Dynamics 365 Commerce を使用して、E コマース Web サイト�
 製品の推奨事項により、顧客は自分に役立つ製品を簡単かつ迅速に見つけることができます。 クロスセルおよびアップセルは、顧客が元々購入する予定ではなかった製品を見つけるためにも使用されます。 製品の検出を強化するために推奨事項を使用した場合、より多くの変換の機会を作り出して販売収益を増やし、また顧客満足度と定着を増幅させることもできます。
 
 E コマースにおいて、製品推奨事項は、Microsoft の推奨機械学習マシンの学習技術により大規模に強化されています。
-
-このサービスは、Dynamics 365 Commerce のアドオンです。 詳細については、最新の [Microsoft Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544) をダウンロードしてください。
-
 
 ## <a name="recommendation-service"></a>推奨サービス
 
@@ -49,7 +50,7 @@ E コマースにおいて、製品推奨事項は、Microsoft の推奨機械�
 - **E コマースの参照またはランディング ページの店舗ページにおいて:** 顧客または店舗スタッフが店舗ページにアクセスする場合、推奨エンジンは、**新規**、**ベストセラー**、および **トレンド** リストの製品を提案することができます。
 - **製品の詳細ページにおいて:** 顧客または店舗スタッフが **製品の詳細** ページにアクセスした場合、推奨エンジンは購入される可能性がある追加の品目を提案します。 これらの品目は、**人気製品** リストに表示されます。
 - **トランザクション ページまたはチェックアウト ページにおいて:** 推奨エンジンは、買い物カゴ内の品目のリスト全体に基づいて提案します。 これらの項目は、**よく一緒に購入される製品** リストに表示されます。
-- **パーソナライズされた推奨事項:** 販売促進担当者は、既存のリスト シナリオをその顧客に基づいてパーソナライズできる新しい機能に加えて、サインインしたユーザーにパーソナライズされた **おすすめ** リストを提供できます。 詳細については、[カスタマイズされた推奨事項を有効にする。](personalized-recommendations.md) を参照してください。
+- **パーソナライズされた推奨事項:** マーチャンダイザーは、既存のリストシナリオをその顧客に基づいてパーソナライズできる新しい機能に加えて、サインインしたユーザーにパーソナライズされた **おすすめ** リストを提供できます。 詳細については、[カスタマイズされた推奨事項を有効にする。](personalized-recommendations.md) を参照してください。
 
 ### <a name="types-of-product-recommendations"></a>製品推奨事項のタイプ
 
@@ -87,6 +88,3 @@ E コマースにおいて、製品推奨事項は、Microsoft の推奨機械�
 [推奨事項とデモ データの作成](product-recommendations-demo-data.md)
 
 [製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

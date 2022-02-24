@@ -2,23 +2,26 @@
 title: 場所別在庫限度
 description: このトピックでは、場所別在庫限度機能について説明します。
 author: perlynne
+manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 239b9fa8d8e34a92d453d3387881cff7b0a11f28a3c3b1e19891ea3bd78c3d7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 208662f38b06b1f230bdde5247946a9fefd57cea
+ms.sourcegitcommit: d2dea9ce480f35d0c0b10615c18862695e107d55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714165"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "4607282"
 ---
 # <a name="location-stocking-limits"></a>場所別在庫限度
 
@@ -81,7 +84,7 @@ ms.locfileid: "6714165"
 
 最初に、サイズ *S* のユニット *PL* の数量 *4* を受け取り、作成された作業のプット明細行の場所を確認します。 次にに、サイズ *L* のユニット *PL* の数量 *4* を受け取り、作成された作業のプット明細行の場所を確認します。
 
-1. 倉庫管理モバイル アプリでは、ユーザー IDとして *24*、パスワードとして *1* を使用してサインインします。
+1. 倉庫アプリでは、ユーザー IDとして *24*、パスワードとして *1* を使用してサインインします。
 1. **入庫** \> **購買の入庫** に移動します。
 1. サイズ *S* の品目番号 *D0013* の *4* *PL* を入庫します。
 1. プットアウェイ作業が作成された日付を確認します。 次の結果が表示されます。
@@ -101,6 +104,3 @@ ms.locfileid: "6714165"
 
 > [!NOTE]
 > たとえば、同じ場所に異なる数量を持つ品目の補充などを制御するために、場所別在庫限度を使用することはできません。 この場合は、*補充テンプレート* を使用します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

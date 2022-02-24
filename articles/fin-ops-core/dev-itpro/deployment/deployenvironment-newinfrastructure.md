@@ -2,9 +2,11 @@
 title: 新しい環境の配置
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して新しい環境を配置する方法について説明します。
 author: rashmansur
-ms.date: 06/23/2021
+manager: AnnBe
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 1de1a25f691b9269c32c309af5a7eece43c2d80d0023cc28f33ae7b0a765fadd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 70f57dac9ca13486fc307c8ded3ac001f6dc31f1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754991"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680541"
 ---
 # <a name="deploy-a-new-environment"></a>新しい環境の配置
 
@@ -39,7 +41,7 @@ ms.locfileid: "6754991"
 10. 構成を検証した後、**送信** をクリックして配置をトリガーします。
 11. チャネルの使用を計画する場合は、[Retail Cloud Scale Unit の初期化](initialize-retail-channels.md) も必要です。
 
-環境の展開はすぐに開始され、サンドボックス環境の場合は **30 分から 1 時間**、実稼働環境の場合は **1-2 時間** かかる可能性があります。 
+環境配置はすぐに開始され、完了までに **1 ～ 2 時間** かかることがあります。 
 
 配置の進行状況を常時監視するには、**環境の詳細** ページを表示できます。 環境の状態は、**配置中** または **配置済み/失敗** のいずれかに変更されます。
 
@@ -56,6 +58,3 @@ ms.locfileid: "6754991"
 
 > [!IMPORTANT]
 > クラウドでチャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、2020 年 1 月 31 日までに [Retail Cloud Scale Unit の初期化](initialize-retail-channels.md) を行う必要があります。 Store Scale Unit を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack Solution Architect までご連絡ください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

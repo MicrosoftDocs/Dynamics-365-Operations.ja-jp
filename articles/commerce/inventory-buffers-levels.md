@@ -2,28 +2,33 @@
 title: 在庫バッファーと在庫レベルのコンフィギュレーション
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイトで在庫状況のメッセージングを決定する在庫バッファーと在庫レベルをコンフィギュレーションする方法について説明します。
 author: boycezhu
+manager: annbe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 842389811169f785235de7ac7d9a49ab903f99ddf7d43f139aba0873a2577d72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef58dbb756c7bed3924010cb33eff27af66cd0bd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727536"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413781"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>在庫バッファーと在庫レベルのコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイトで在庫状況に関するメッセージングを決定する在庫バッファーと在庫レベルをコンフィギュレーションする方法について説明します。
+
+## <a name="overview"></a>概要
 
 Dynamics 365 Commerce Headquarters には、在庫データと、販売時点管理 (POS) アプリケーション、電子商取引店舗、非同期で在庫をプルおよびプッシュするその他のカスタム統合アプリケーションなど、さまざまなチャネルが含まれています。 したがって、Commerce Headquarters の手持在庫ページ、POS ユーザー インターフェイス (UI)、E コマースの在庫状況 API から取得される使用可能な在庫値は、常にリアルタイムで 100% 正確であるとは限りません。
 
@@ -144,6 +149,3 @@ Commerce サイト ビルダーでは、Commerce Headquarters の在庫バッフ
 [在庫設定を適用する](inventory-settings.md)
 
 [小売チャンネルの引当可能在庫数量の計算](calculated-inventory-retail-channels.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

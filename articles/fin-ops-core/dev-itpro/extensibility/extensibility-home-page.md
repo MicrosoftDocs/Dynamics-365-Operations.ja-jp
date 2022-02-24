@@ -2,24 +2,26 @@
 title: 拡張機能のホーム ページ
 description: このトピックでは、拡張性に関するトピックへのリンクを提供します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.reviewer: rhaertle
+ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 9477bab83456e27c5814fd14df4fb6b0f19eb4c5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8bb5345e20a51cb947d565640d61a5bfad305512
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782017"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409334"
 ---
 # <a name="extensibility-home-page"></a>拡張機能のホーム ページ
 
@@ -127,6 +129,3 @@ Dynamics 365 Finance、Supply Chain、およびコマースは、パートナー
 
 + 消費者に重大な影響が及ぶのを防ぐ指針に関しては、[重大な変更](breaking-changes.md) をご覧ください。
 + [互換性チェック ツール](compatibility-checker-tool.md) を使用すると、指定されたベースライ ンリリースまたは更新に対して、メタデータの互換性に影響する変更を検出できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

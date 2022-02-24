@@ -1,10 +1,12 @@
 ---
 title: バーコード マスクの設定
 description: このトピックでは、バーコード マスク文字、バーコード マスクの設定方法、バーコードにバーコード マスクを割り当てる方法について説明します。
-author: BrianShook
+author: rubencdelgado
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
@@ -13,15 +15,15 @@ ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ddba3ef6c6a1fb1f71198291d5eccd44be737336
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 5432741e7cdc21054d02bd24591deb307d096229
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779825"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969804"
 ---
 # <a name="set-up-bar-code-masks"></a>バーコード マスクの設定
 
@@ -80,6 +82,3 @@ ms.locfileid: "7779825"
 5. **保存** をクリックします。
 
 これで、バーコード マスクを使用して製品のバーコードを作成できるようになります。 上記の手順は製品のバーコード マスクを作成する方法の例ですが、サポートされている他のバーコード タイプのバーコード マスクを作成する方法も示しています。 バーコード マスク、タイプ、また長さは、特定の環境における使用に合わせて調整する必要があります。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

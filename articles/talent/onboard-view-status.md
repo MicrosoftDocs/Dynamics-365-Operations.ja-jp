@@ -57,6 +57,3 @@ Microsoft Dynamics 365 Talent: Onboard により、新規採用者の研修活�
 - [Dynamics 365 Talent の新機能および変更された機能](./whats-new.md)
 - [リリース計画](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Microsoft Dynamics 365 Talent に関するサポートの利用](./talent-support.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

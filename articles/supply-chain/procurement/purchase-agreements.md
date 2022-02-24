@@ -1,10 +1,12 @@
 ---
 title: 購買契約
 description: この記事は、購買契約書に関する情報を提供します。 購買契約とは、長期にわたって複数の発注書を使用して指定された数量または金額を購入することを組織に確約する契約です。 この確約と引き換えに、購買担当者は特別価格と割引を受けます。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4911bd891c081892e52bda4bcc87984b3fb189b2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570495"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017190"
 ---
 # <a name="purchase-agreements"></a>購買契約
 
@@ -102,13 +104,12 @@ ms.locfileid: "7570495"
 ## <a name="financial-dimensions-on-purchase-agreements"></a>購買契約書の財務分析コード
 購買契約書のドキュメント ヘッダーまたは個々の明細行に財務分析コードをコピーできます。 契約ヘッダーまたは契約明細行にある分析コードを変更する場合、変更はリリースされた注文に影響はしませんが、すべての新しい注文に反映されます。
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
-- [購買契約書の作成](tasks/create-purchase-agreement.md)
-- [発注書の作成時に購買契約書を適用する](tasks/create-purchase-release-order-purchase-agreement.md)
+[購買契約書の作成](tasks/create-purchase-agreement.md)
+
+[購買契約書からの購買リリース注文の作成](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,19 +2,25 @@
 title: X++ と C# の比較
 description: このトピックでは、X++ と C# の構文とプログラミングを比較します。
 author: RobinARH
+manager: AnnBe
 ms.date: 04/10/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 72424
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d0309ab6a37965f65330dc87eaacb705e52fa90
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: 249a7f8696149a3e995ed210d16b67c01f686cc5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898427"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408746"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 
@@ -49,7 +55,7 @@ ms.locfileid: "7898427"
 | char `type` | X++ には `char` または文字タイプがありません。 長さ 1 の `str` を宣言することができますが、文字列のままです。<br> `str 1 myString = "a";` | C# には `char` があります。 最初に `char` を `string` に明示的に変換できますが、パラメーターとして `char` を `string` パラメーターを入力するメソッドに渡すことはできません。| X++ データ型の詳細については、プリミティブ データ型を参照してください。|
 | メッセージの出力| X++ は情報ログ ウィンドウ内でユーザーにメッセージを提供します。 一般的なメソッドは次のとおりです。<ul><li><strong>print</strong> ステートメント:</li><li>`Global` クラスの静的メソッド:<ul><li>Global::info</li><li>Global::warning</li><li>Global::error</li></ul></li></ul>| コマンド ライン プログラムで、コンソールにメッセージを配信することができます。 一般的なメソッドは次のとおりです。<ul><li>`Console.Out.WriteLine`</li><li>`Console.Error.WriteLine`</li></ul>|  |
 
-### <a name="x-and-c-samples"></a>X++ および C# のサンプル
+### <a name="x-and-c-samples"></a>X++ および C++ のサンプル
 
 このセクションには、2 つの簡単なコード サンプルが含まれています。 1 つの例は X++、もう一方は C\# で記述されています。 両方のサンプルで同じ結果が得られます。 次の X++ 機能が示されています。
 -   `//` 単一行のコメント
@@ -1630,6 +1636,3 @@ End.
 |戻された行を移動するためのカーソル。|while select 文は、カーソル機能を提供します。 代わりに、**next** キーワードを使用することもできます。|**select** ステートメントから戻される行間ループのために、**cursor** を宣言することができます。||
 |**From** 句。|列がリストされず、1 つのテーブルだけが参照される場合、**from** キーワードはオプションです。 次の 2 つの構文オプションは同等です。 <br>`select \* from tCustTable;` <br>`select tCustTable;`|**選択** ステートメントは、**from** 句が使用されていない限り、テーブルから読み取ることはできません。|X++ SQL では、シンプルな **選択** ステートメントが返された最初の行でテーブル バッファ変数を入力します。 これは、次のコード フラグメントによって示されています。 <br>`select \* from tCustTable;` <br>`info(tCustTable.Name);`|
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

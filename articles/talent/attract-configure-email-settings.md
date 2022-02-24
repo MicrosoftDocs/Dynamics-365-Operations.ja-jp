@@ -89,6 +89,3 @@ Attract を使用した電子メール通信で会社のドメインの使用を
     ![会社のプライバシー ポリシーおよび電子メール フッターの使用条件へのリンクを追加する](./media/attract-admin-email-footer.png)
 
 4. **保存** を選択して、電子メール テンプレート設定を保存します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

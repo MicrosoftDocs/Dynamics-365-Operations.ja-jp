@@ -2,22 +2,26 @@
 title: Visual Studio の Finance and Operations プロジェクト タイプ
 description: Finance and Operations プロジェクト タイプは開発ツールの一部です。
 author: RobinARH
+manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 31781
 ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b54855f70e431bae88c52be3a60940f5e69fe059
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 26c04db77e9ed358837294243a53b3d837cefb16
+ms.sourcegitcommit: 2186155e4662ae5010a190c0ede458ef6cf91f24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782025"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4409512"
 ---
 # <a name="finance-and-operations-project-type-in-visual-studio"></a>Visual Studio の Finance and Operations プロジェクト タイプ
 
@@ -86,15 +90,12 @@ Finance and Operations プロジェクト タイプは開発ツールの一部�
 
 プロジェクト パッケージ ファイルの内容を使用するには、.axpp ファイルをインストールにインポートする必要があります。 プロジェクト パッケージ ファイルの要素は、エクスポートされたものと同じモデルにインポートされます。 インストールにそのモデルが存在しない場合は、インポート処理中に作成されます。 プロジェクト パッケージ ファイルをインポートするには、次の手順を実行します。
 
-1. **Dynamics 365** メニューで、**プロジェクトのインポート** をクリックします。
+1. **Dynamics 365**  メニューで、**プロジェクトのインポート** をクリックします。
 2. **プロジェクトのインポート** ダイアログ ボックスで、インポートするプロジェクト パッケージ (.axpp) ファイルの場所を指定します。
 3. プロジェクト パッケージ ファイルの要素により、既存の要素が上書きされる場合は、**要素の上書き** を選択します。
 4. プロジェクトを現在の選択で開くのか、新しいソリューションで開くのか、まったく開かないのかを指定します。
 5. **詳細** フィールドで、インポートされる要素を確認します。 インポートしない任意の要素の横にあるチェック ボックスをクリアすることができます。
 
-    [![プロジェクト ダイアログをインポートします。](./media/17_devotoolsconcept.png)](./media/17_devotoolsconcept.png)
+    [![プロジェクトのインポート ダイアログ](./media/17_devotoolsconcept.png)](./media/17_devotoolsconcept.png)
 
 6. **OK** をクリックしてインポート プロセスを完了します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

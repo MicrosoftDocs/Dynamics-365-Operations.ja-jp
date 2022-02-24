@@ -2,24 +2,26 @@
 title: アプリケーション拡張機能ロードマップ
 description: このトピックでは、コードをオーバーレイ ベースから拡張ベースに変換するための要件とスケジュールについて説明します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-07-10
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: d74bd8a3c40b2fd446869c7e867577a83a1b0c63
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0a37e44c3d55a742c64efc36969214ffeb93f6fe
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782180"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409331"
 ---
 # <a name="application-extensibility-roadmap"></a>アプリケーション拡張機能ロードマップ
 
@@ -38,7 +40,7 @@ Microsoft Dynamics 365 for Finance and Operations リリース 8.0 では、す�
 
 次の図は、オーバーレイから、拡張機能に移動したときに従ったロードマップを示しています。
 
-![拡張性ロードマップ。](media/extensibility-roadmap.jpg)
+![拡張性ロードマップ](media/extensibility-roadmap.jpg)
 
 > [!NOTE]
 > ソフト シールは、オーバーレイ時にコンパイラの警告を表示します。 ハード シールは、オーバーレイ時にコンパイラのエラーを表示します。 
@@ -48,6 +50,3 @@ Microsoft Dynamics 365 for Finance and Operations リリース 8.0 では、す�
 この目標を達成するために、Microsoft、パートナー、顧客には相当量の作業があります。 ワークショップ、営業時間、ヘルプ トピック、および他のリソースは、このエコシステムのトレーニングおよび共同作業で使用可能です。 内部的には、コア プラットフォームとアプリケーションの両方でより多くの拡張性を構築する準備が整いました。 パートナーが拡張機能に移行しているときにパターンを定義するために、AppSource でのアプリケーションに関して、パートナーと密接に連携して作業しています。
 
 アップグレード時の摩擦が緩和されるというメリットが得られ、イノベーションが実現されるため、オーバーレイを削除する作業を行う価値があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

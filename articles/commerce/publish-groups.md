@@ -2,9 +2,11 @@
 title: 公開グループの作業
 description: このトピックでは、Microsoft Dynamics 365 Commerce の公開グループ機能について説明します。
 author: phinneyridge
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,18 +16,21 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d757f34d3e16850e4f5de122f63b2b3342f612e49f07c7cf6585362999f03c02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a4f19af0cdf9c72add0ec18be84e36c807af9ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717675"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969879"
 ---
 # <a name="work-with-publish-groups"></a>公開グループの作業
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の公開グループ機能について説明します。
+
+## <a name="overview"></a>概要
 
 E コマース Web サイトは年間を通して常に新しいコンテンツで更新されています。 更新は多くの場合、休日、季節的なマーケティング キャンペーン、またはプロモーション開始などの、忙しい E コマース イベントに関連するバッチで公開されます。 これらの更新は多くの場合、Web サイト コンテンツ (例えばページ、画像、フラグメント、テンプレート) のグループを単一のアクションで同時にステージング、検証、および発行する必要があります。
 
@@ -149,6 +154,3 @@ E コマース Web サイトは年間を通して常に新しいコンテンツ�
 [テンプレートとレイアウトの概要](templates-layouts-overview.md)
 
 [サイト ナビゲーションのカスタマイズ](customize-site-navigation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

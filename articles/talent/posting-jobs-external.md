@@ -102,6 +102,3 @@ Broadbean にジョブを転記できない場合は、これらの手順を実�
 [Attract でジョブ求人の作成、承認、および投稿](./creating-jobs-attract.md)
 
 [Microsoft Dynamics 365 Talent - Attract における Broadbean 統合の有効化](./attract-admin-job-board-settings.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

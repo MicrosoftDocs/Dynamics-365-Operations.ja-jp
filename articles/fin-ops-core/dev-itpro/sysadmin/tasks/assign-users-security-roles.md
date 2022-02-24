@@ -2,9 +2,11 @@
 title: ユーザーのセキュリティ ロールへの割り当て
 description: Finance and Operations アプリにアクセスするには、ユーザーをセキュリティ ロールに割り当てる必要があります。
 author: Peakerbl
+manager: AnnBe
 ms.date: 05/06/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d65c4dafda63b7a54dd343652b0f4b498e064f4aee0fba43c34d40d73ac5062
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748339"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679867"
 ---
 # <a name="assign-users-to-security-roles"></a>ユーザーのセキュリティ ロールへの割り当て
 
@@ -55,6 +57,3 @@ Finance and Operations アプリで一般的な機能以外のものを使用す
 2. **ロールに割り当てられたユーザー** メニューで、**手動でユーザーを割り当てる/除外する** を選択します。
 4. **手動でユーザーを割り当てる/除外する** では、ロールが割り当てられていないユーザーが、**割り当てモード** が **なし** に設定された状態で表示され ます。 ロールを割り当てる 1 人または複数のユーザーを選択します。
 5. **アクション ウィンドウ** で、**ロールに割り当てる** を選択します。 **割り当てモード** は **手動** に更新され、ユーザーは新しいロールが割り当てられるようになります。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

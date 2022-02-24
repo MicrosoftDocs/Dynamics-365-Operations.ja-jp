@@ -2,24 +2,26 @@
 title: 拡張機能を通じた新しい在庫分析コードの追加
 description: このトピックでは、拡張機能を通じて新しい在庫分析コードを追加する方法について説明します。
 author: MichaelFruergaardPontoppidan
+manager: AnnBe
 ms.date: 02/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: fdfeec9dfbb3f25801dedda376fe6abdec6f29c7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: cced9a6ab6eb6db0c16a523ca31164c31d664155
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783020"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408843"
 ---
 # <a name="add-new-inventory-dimensions-through-extension"></a>拡張機能を通じた新しい在庫分析コードの追加
 
@@ -61,7 +63,7 @@ VAR により、物理的データ モデルと論理的実装が結合されま
 ## <a name="details"></a>細目
 ソリューションの前半はシンプルです。 新しいクラス階層が導入されています。 それぞれの新しい分析コードは、InventProductDimension または InventTrackingDimension のいずれかから派生する新しいクラスに実装する必要があります。 現在、保管分析コードのサポートがされていません。 これを使用すると、ISV は InventDim テーブルのロジックを変更せずに新しい分析コードを導入することができます。 
 
-![InventDimensionClassHierarchy.](media/InventDimensions1.png)
+![InventDimensionClassHierarchy](media/InventDimensions1.png)
 
 厳密に型指定された新しい分析コードを参照するために、ISV では InventDim テーブルにテーブル拡張クラスが導入されました。 スタイル、色、サイズの拡張クラスをテンプレートとして使用できます。
  
@@ -123,7 +125,7 @@ VAR の職務は、特定の顧客の InventDim の分析コード フィール�
 - InventDim の ProductDimensions または TrackingDimensions フィールド グループおよび分析コードのタイプに応じていくつかの他のテーブルを拡張します。
 - 関係およびインデックスを必要に応じて、InventDim で拡張します。
 
-![InventDimensionISVVARExtensions.](media/InventDimensions4.png)
+![InventDimensionISVVARExtensions](media/InventDimensions4.png)
 
 ## <a name="known-issues"></a>既知の問題
 
@@ -146,7 +148,4 @@ VAR の職務は、特定の顧客の InventDim の分析コード フィール�
 
 必要な場合は、問題を GitHub に直接記録し、追加の補充を提供するサンプル アプリケーションへ自由に投稿してください。
  
-![InventDimensionFlavorScreenshot.](media/InventDimensions5.jpg)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)

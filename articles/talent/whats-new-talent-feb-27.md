@@ -141,6 +141,3 @@ Core HR のテンプレートは、「高度なクエリ テンプレート」�
     9. **マッピング タスク** ページで、HIERARCHYTYPENAME の別のマッピングを作成するソースとして新しい列を選択します。
 
         [![マッピング](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

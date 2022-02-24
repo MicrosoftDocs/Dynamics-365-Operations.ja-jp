@@ -2,23 +2,26 @@
 title: 日本の消費税レポートの設定
 description: このタスクでは、日本の消費税申告をサポートするシステムの設定について説明します。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters, LedgerBadDebtAccounts_JP, OMLegalEntity, TaxTable
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ca11ac64fcb83ec6f5659fd43f37505298ea3af10243b5c4c7ec071387854e7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64cf58da5307c4e4e8d340518ac59bef9bf63f5f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782182"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408139"
 ---
 # <a name="setup-japan-consumption-tax-report"></a>日本の消費税レポートの設定
 
@@ -95,6 +98,3 @@ ms.locfileid: "6782182"
 | 9214               | 非課税売上に関連する課税対象購買 - 訂正票                           | 項目 8                                                        | 項目 4                     | 品目 22- 品目 23 (税率)         |
 | 9215               | 共通の一般課税購入 - 訂正票                                       | 品目 8、品目 15 (比率 \<0.95 & 個別対応メソッド)         | 項目 4                     | 品目 22- 品目 23 (税率)         |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

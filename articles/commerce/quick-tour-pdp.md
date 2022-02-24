@@ -2,24 +2,27 @@
 title: 製品詳細ページの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce の製品詳細ページ (PDP) の概要を示します。
 author: anupamar-ms
+manager: annbe
 ms.date: 01/23/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c53e74204fad2960dfba972a38c511df7d6672d8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986204"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413858"
 ---
 # <a name="product-details-pages-overview"></a>製品詳細ページの概要
 
@@ -27,13 +30,15 @@ ms.locfileid: "7986204"
 
 このトピックでは、Microsoft Dynamics 365 Commerce の製品詳細ページ (PDP) の概要を示します。
 
+## <a name="overview"></a>概要
+
 PDP は、製品に関する詳細情報を提供し、顧客がサイズ、スタイル、および色などの製品オプションを選択できるようにします。 PDP は顧客が購入決定をするために必要なすべての製品情報を表示する必要があります。
 
 次の図は、PDP の例を示します。
 
-![製品の詳細ページの例。](./media/pdp.PNG)
+![製品の詳細ページの例](./media/pdp.PNG)
 
-## <a name="header-and-footer-modules"></a>ヘッダー モジュールとフッター モジュール
+## <a name="header-and-footer-modules"></a>ヘッダーとフッター モジュール
 
 PDP の上部には、小売業者が顧客に参照させたいすべての製品カテゴリおよび他のページを表示するヘッダーがあります。 ページの下部には、顧客が興味を持つさまざまなトピックへのクイック リンクを含むフッターがあります。
 
@@ -83,6 +88,3 @@ PDP の最も重要なモジュールは購入ボックス モジュールで、
 [アカウント管理ページの概要](quick-tour-account-management.md)
 
 [製品の詳細ページの拡充](enrich-product-page.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

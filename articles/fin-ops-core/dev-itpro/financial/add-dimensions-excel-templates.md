@@ -1,25 +1,27 @@
 ---
 title: Excel テンプレートに財務分析コードの値の検索を追加
 description: このトピックでは、Microsoft Excel テンプレートで分析コード値を検索する機能を追加する方法について説明します。
-author: RyanCCarlson2
+author: aprilolson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 261064
 ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
 ms.search.region: Global
-ms.author: rcarlson
+ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dfc58e97c29f0992b83d93b2aeb43b6b8851974f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 24a85dc4bbef2fef36e32d1cb95e10aeac8a6fc7
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781556"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4820605"
 ---
 # <a name="add-lookup-values-for-financial-dimensions-to-excel-templates"></a>Excel テンプレートに財務分析コードの値の検索を追加
 
@@ -93,7 +95,7 @@ ms.locfileid: "7781556"
     DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
     ```
 
-    ![Visual Studio の関係プロパティ。](./media/lookupwiki.png)
+    ![Visual Studio の関係プロパティ](./media/lookupwiki.png)
 
 9.  プロジェクトを構築してデータベースと同期します。
 
@@ -105,6 +107,3 @@ ms.locfileid: "7781556"
 [拡張機能のホーム ページ](../extensibility/extensibility-home-page.md)
 
 [[Excel で開く] エクスペリエンスの作成](../office-integration/office-integration-edit-excel.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

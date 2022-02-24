@@ -2,30 +2,36 @@
 title: 既定の顧客の作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce でチャネルを作成する時に使用する既定の顧客を作成する方法について説明します。
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ff9e5665ffd82982e09f63e34b30ae6937666231855587ad2f27c5231ead8419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720962"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413667"
 ---
 # <a name="create-a-default-customer"></a>既定の顧客の作成
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でチャネルを作成する時に使用する既定の顧客を作成する方法について説明します。
+
+## <a name="overview"></a>概要
 
 チャネルを作成する場合、既定の顧客を指定する必要があります。 顧客グループおよび顧客のアドレス帳を最初に作成した後に、簡単に既定の顧客を作成できます。
 
@@ -47,7 +53,7 @@ ms.locfileid: "6720962"
 
 次の図は、コンフィギュレーションされた複数の顧客グループを示しています。
 
-![顧客グループ。](media/customer-groups.png)
+![顧客グループ](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>顧客のアドレス帳の作成
 
@@ -63,7 +69,7 @@ ms.locfileid: "6720962"
 
 次の図は、アドレス帳の例を示しています。
 
-![アドレス帳。](media/address-book.png)
+![アドレス帳](media/address-book.png)
 
 ## <a name="create-a-default-customer"></a>既定の顧客の作成
 
@@ -86,11 +92,11 @@ ms.locfileid: "6720962"
 
 次の図は、顧客作成の例を示しています。
 
-![既定の顧客の作成。](media/default-customer-creation.png)
+![既定の顧客の作成](media/default-customer-creation.png)
 
 次の図は、既定の顧客のコンフィギュレーションを示しています。
 
-![顧客コンフィギュレーションのサンプル。](media/default-customer-configuration1.png)
+![顧客コンフィギュレーションのサンプル](media/default-customer-configuration1.png)
 
 顧客詳細画面の既定値のほとんどはそのままにすることができますが、2 つの値は変更する必要があります。
 
@@ -100,13 +106,10 @@ ms.locfileid: "6720962"
 
 次の図は、顧客のコンフィギュレーションの例を示しています。
 
-![顧客コンフィギュレーションの例。](media/default-customer-configuration2.png)
+![顧客コンフィギュレーションの例](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [チャネルの概要](channels-overview.md)
 
-[チャネルの設定の前提条件](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[チャネル設定の前提条件](channels-prerequisites.md)

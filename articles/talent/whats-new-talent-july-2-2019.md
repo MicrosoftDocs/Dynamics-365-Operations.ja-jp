@@ -55,6 +55,3 @@ ms.locfileid: "4461813"
 ## <a name="changes-in-core-hr"></a>Core HR の変更
 
 今回のリリースには、Dynamics 365 Talent: Core HR のマイナーなバグ修正が含まれています。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

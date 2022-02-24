@@ -2,9 +2,11 @@
 title: 小売店舗での財務調整
 description: このトピックでは、Microsoft Dynamics 365 Commerce の POS 用小売店舗での財務調整について説明します。
 author: anpurush
+manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -15,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2afe967248136e9b658e1ee18053a54ab3f0d325c088a5eb2e522fac335c01f0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ddefcdc2b2bbb5fe25e9a87396802cbbbfef72c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752462"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965080"
 ---
 # <a name="financial-reconciliation-in-retail-stores"></a>小売店舗での財務調整
 
@@ -59,6 +61,3 @@ Commerce バージョン 10.0.11 以降において、店舗管理者は POS ク
 シフトの財務調整の詳細は、P- ジョブを使用して Commerce 本社に同期されます。
 
 Commerce 本社の財務小売明細書では、合計を計算して明細行の詳細を表示することはできません。 代わりに、POS クライアントの確定額を使用して、財務小売明細書を作成および転記します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

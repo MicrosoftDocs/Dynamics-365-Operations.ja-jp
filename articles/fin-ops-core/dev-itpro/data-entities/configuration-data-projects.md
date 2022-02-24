@@ -1,10 +1,12 @@
 ---
 title: コンフィギュレーション データ プロジェクト
-description: このトピックでは、コンフィギュレーション データ プロジェクトとコンフィギュレーション データ テンプレートについて説明します。
-author: rcarlson
+description: このトピックでは、構成データ プロジェクトと構成データ テンプレートの概要、およびそれらを使用してアプリケーションのインスタンス間で会社の構成データを移動するプロセスの概要を示します。
+author: mikefalkner
+manager: AnnBe
 ms.date: 09/29/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -13,19 +15,16 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: f864a9c63a2dcdf3b59ce0412552a7fd0aca167c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a2fc5d5254fb5899f768339a4b205368093751ac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068748"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679368"
 ---
 # <a name="configuration-data-projects"></a>コンフィギュレーション データ プロジェクト
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 コンフィギュレーション データ プロジェクトは、アプリケーションのインスタンス間における会社のコンフィギュレーション データの移動を管理するために使用します。 これらは、次のシナリオをサポートすることを目的としています。
 
@@ -88,6 +87,3 @@ ms.locfileid: "8068748"
 
 1. **データ管理** ワークスペースで、**データ ソースの構成** タイルを選択してから **データ ソース** を選択します。
 2. 適切なデータ ソースに既定のファイル名拡張子を追加します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

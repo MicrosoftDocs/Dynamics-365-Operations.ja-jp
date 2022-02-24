@@ -1,10 +1,12 @@
 ---
 title: 新しいタスク ガイド (2016 年 2 月)
-description: このトピックには、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。
+description: このトピックには、2016 年 2 月現在に Microsoft BPM ライブラリにリリースされたタスク ガイドが掲載されています。  発行されたライブラリには、Microsoft Dynamics 365 for Operations 用の APQC 統合ライブラリ (2016 年 2 月)、および作業の開始 (2016 年 2 月) が含まれます。
 author: josaw1
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1947ec2ef0ef061323f904c739d49a5a2594b9d0e730f19e4d4da322148e473
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39e6d6bf4161641ae22de56dac69bc6217649878
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725103"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799098"
 ---
 # <a name="new-task-guides-february-2016"></a>新しいタスク ガイド (2016 年 2 月)
 
@@ -643,6 +645,3 @@ APQC 統合ライブラリ (2016 年 2 月) には、Dynamics AX 7.0.0 リリー
 [新規または更新されたタスク ガイド (2016 年 8 月)](new-updated-task-guides-available-august-2016.md)
 
 [新規または更新されたタスク ガイド (2016 年 11 月)](new-task-guides-november-2016.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

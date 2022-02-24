@@ -2,9 +2,11 @@
 title: 経費管理 Power BI コンテンツ
 description: このトピックでは、経費管理 Power BI コンテンツ パックの内容について説明します。
 author: panolte
+manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: TrvExpenseWorkspace, ExpenseWorkspace
 audience: Application User, IT Pro
@@ -14,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 178a65c44abd0c9c068d4da1f2684a60062da595247560de4cb81d97ab7b6521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d580502a08c2c176a000616abc3513cc45bd58a6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769901"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016455"
 ---
 # <a name="expense-management-power-bi-content"></a>経費管理 Power BI コンテンツ
 
@@ -41,7 +43,7 @@ ms.locfileid: "6769901"
 金額はすべて会社通貨で表示されます。 すべての会社のデータが表示されますが、必要に応じて会社のフィルターを追加できます。 
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-Expense Admin Dashboard.pbix および Expense Personal Dashboard.pbix Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners) を参照してください。
+Expense Admin Dashboard.pbix および Expense Personal Dashboard.pbix Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/) を参照してください。
 コンテンツは、経費管理ワークスペースから埋め込み Power Bi コンテンツとして入手できます。 経費の所有者は、誰でも自分の経費にアクセスすることができますが、すべてのユーザーの経費データに関しては、買掛金担当者と管理者のみが管理者コンテンツにアクセスすることができます。
 
 ## <a name="refreshing-the-power-bi-content"></a>Power BI コンテンツの更新
@@ -91,6 +93,3 @@ Expense Admin Dashboard.pbix および Expense Personal Dashboard.pbix Power BI 
 | 従業員統計 | 原価タイプ別経費清算書            |
 |                     | 個人経費                       |
 |                     | 統計グループ別経費精算書     |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

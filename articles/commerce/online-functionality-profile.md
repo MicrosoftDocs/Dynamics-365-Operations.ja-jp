@@ -2,9 +2,11 @@
 title: オンライン機能プロファイルの作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce でオンライン機能プロファイルを作成する方法について説明します。
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,18 +16,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d6dcbb5b9ea01035396e90a6809cb1568c3a4fc86def41cf36732588b5046da7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b0afeabfecb60672156692f3cd809445624020c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716197"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969979"
 ---
 # <a name="create-an-online-functionality-profile"></a>オンライン機能プロファイルの作成
 
+
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のオンライン機能プロファイルの設定の概要を示します。
+このトピックでは、Microsoft Dynamics 365 Commerce オンライン機能プロファイルの設定の概要を示します。
+
+## <a name="overview"></a>概要
 
 オンライン機能プロファイルは、オンライン チャネルに使用されるさまざまな設定を提供します。 各オンライン チャネルでは、オンライン機能プロファイルを指定する必要があります。
 
@@ -42,7 +47,7 @@ ms.locfileid: "6716197"
 
 次の図は、オンライン機能プロファイルの例を示しています。
   
-![オンライン機能プロファイルの例。](media/online-functionality-profile.png)
+![オンライン機能プロファイルの例](media/online-functionality-profile.png)
 
 ## <a name="functions"></a>関数
 
@@ -61,6 +66,3 @@ ms.locfileid: "6716197"
 [小売チャネルの設定](channel-setup-retail.md)
 
 [コール センターのチャネルの設定](channel-setup-callcenter.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

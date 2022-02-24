@@ -2,31 +2,30 @@
 title: ワークフロー ドキュメント クラスをワークフロー タイプと関連付ける
 description: このトピックでは、ワークフロー タイプにワークフロー ドキュメント クラスを関連付ける方法について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 5603ae09116aba7bd35cf872ddc4b851817c7c71
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 47135b74e602dd20906953957dcc25d4de1d7a96
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065057"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798793"
 ---
 # <a name="associate-a-workflow-document-class-with-a-workflow-type"></a>ワークフロー ドキュメント クラスとワークフロー タイプの関連付け 
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ワークフローを作成するには、ワークフロー ドキュメント クラスをワークフロー タイプにバインドする必要があります。 ワークフロー ドキュメント クラスには、ワークフローが使用するテーブル データ フィールドへの参照が含まれています。 このトピックでは、ワークフロー タイプにワークフロー ドキュメント クラスをバインドする方法について説明します。
 
@@ -46,6 +45,3 @@ ms.locfileid: "8065057"
 [新しいワークフロー タイプの作成](workflow-type-create-new.md)
 
 [ワークフロー ドキュメント クラスの作成](workflow-type-document-create.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

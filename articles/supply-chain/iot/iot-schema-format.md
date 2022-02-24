@@ -1,24 +1,27 @@
 ---
 title: IoT ハブ メッセージのスキーマ形式
 description: このトピックでは、IoT インテリジェンスで使用できるメッセージ スキーマをデザインする方法について説明します。
-author: tonyafehr
+author: robinarh
+manager: tfehr
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
-audience: Application User, Developer, IT Pro
-ms.reviewer: tfehr
+audience: Developer
+ms.reviewer: rhaertle
+ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b24a6e14182baa91299abad0da2987b2dca92601
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 720ffe718fd95d6f7f9ba046ecb3b15ed739ac02
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781615"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409460"
 ---
 # <a name="schema-formats-for-iot-hub-messages"></a>IoT ハブ メッセージのスキーマ形式
 
@@ -101,7 +104,4 @@ ID と値のペアは、IoT インテリジェンス メッセージ スキー�
 
 上記の 2 つのメッセージには **ID** と **値** プロパティが含まれます。 **id** 値は、シナリオ設定時に **シグナル データ値** テーブルにマップできます。 **装置のダウンタイム** シナリオでは、**IoTInt.Machine1225.PartOut** 値をマップします。 **製品品質** シナリオでは、**IoTInt.Machine1225.Temperature** 値をマップします。
 
-詳細については、[Azure IoT Hub ドキュメント](/azure/iot-hub/) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+詳細については、[Azure IoT Hub ドキュメント](https://docs.microsoft.com/azure/iot-hub/) を参照してください。

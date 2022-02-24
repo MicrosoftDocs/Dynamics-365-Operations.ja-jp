@@ -58,6 +58,3 @@ Attract から LinkedIn に転記されたジョブ求人が間違った会社�
 
 ### <a name="performance-improvements-when-rendering-workspaces"></a>ワークスペースをレンダリングするときのパフォーマンスの向上
 ワークスペースの分析タブはそれらのページにアクセスしたときにのみ読み込まれるようになりました。 ページの最初のレンダリングの際に、ページの左上隅にインジケーターが表示されます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

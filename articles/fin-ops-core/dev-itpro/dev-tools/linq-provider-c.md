@@ -2,22 +2,26 @@
 title: C# の統合言語クエリ (LINQ) プロバイダー
 description: このトピックでは、LINQ プロバイダーについて説明します。
 author: pvillads
+manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 26751
 ms.assetid: 8bd10c93-9d5e-49d7-b20f-7f804e16e76c
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4550ac04252272ce7f8268642a3454863818585c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6d1278ee607dda2b7af32eee6489cd11e8fb6f98
+ms.sourcegitcommit: 2186155e4662ae5010a190c0ede458ef6cf91f24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783180"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4409523"
 ---
 # <a name="language-integrated-query-linq-provider-for-c"></a>C\# の統合言語クエリ (LINQ) プロバイダー
 
@@ -177,4 +181,8 @@ private IEnumerable RichCustomers(bool orderByName)
 
 LINQ クエリは、CRUD 操作に対して適用できます。 ただし、レコードの更新、削除、挿入のモデルはセット ベース操作の式には役に立ちません。 現在、セットベース操作に変換される LINQ モデルに追加する拡張機能に取り組んできます。
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+## <a name="additional-resources"></a>追加リソース
+
+[X++ と X++ コンパイラの変更](programming-language-support.md)
+
+[開発およびカスタマイズのホーム ページ](developer-home-page.md)

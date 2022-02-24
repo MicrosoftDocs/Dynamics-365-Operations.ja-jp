@@ -2,12 +2,15 @@
 title: プロモーション バナー モジュール
 description: このトピックでは、プロモーション バナー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f781ed22852cb2108850e7dc6762aa6a9ba0db97574cb0dcc7959f8926e47a08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718783"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413668"
 ---
 # <a name="promo-banner-module"></a>プロモーション バナー モジュール
 
@@ -28,13 +31,15 @@ ms.locfileid: "6718783"
 
 このトピックでは、プロモーション バナー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
+## <a name="overview"></a>概要
+
 プロモーション バナー モジュールは、ページにインライン情報メッセージを表示するために使用されます。 電子商取引サイトのすべてのページに表示される、サイト全体のプロモーションを表示するために使用できます。 
 
 プロモーション バナー モジュールは、テキストメッセージおよびリンクをサポートします。 プロモーション バナー モジュールに複数のメッセージが追加された場合、すべてのメッセージを循環して表示する、入れ替えカルーセル バナーになります。 
 
 プロモーション バナー モジュールは、コンテンツ管理システム (CMS) からのデータによって駆動し、任意のページに配置できます。
 
-## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>eコマースのプロモーション バナーの使用例
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>E コマースのプロモーション バナーの使用例
 
 次の例に示すように、プロモーション バナーをサイト ヘッダーに使用して、サイト全体のプロモーションまたはメッセージを表示することができます。
 
@@ -46,7 +51,7 @@ ms.locfileid: "6718783"
 
 次の図は、プロモーション バナーの例を示しています。
 
-![プロモーション バナー モジュールの例。](./media/ecommerce-Promobanner.PNG)
+![プロモーション バナー モジュールの例](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>プロモーション バナー モジュール プロパティ
 
@@ -59,10 +64,6 @@ ms.locfileid: "6718783"
 | カルーセル フリッパーを表示する     | **True** または **False**              | カルーセル フリッパーを表示するかどうかを示す値なので、顧客は複数のバナー項目を手動で切り替えて、循環させることができます。 |
 | テキスト配置            | **右**、**左**、または **中央** | プロモーション バナー モジュールのテキスト配置。 |
 | リンク                      | URL                              | オプション リンクの URL |
-|テキスト配置             | **右**、**左**、または **中央** | このプロパティは、Adventure Works テーマのテーマ拡張として使用できます。 これにより、ユーザーがプロモーション バナーのテキスト配置を設定できます。 |
-
-> [!IMPORTANT]
-> Adventure Works テーマは、Dynamics 365 Commerce バージョン 10.0.20 リリース時点で使用できます。
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>プロモーション バナー モジュールをページに追加する 
 
@@ -83,6 +84,7 @@ ms.locfileid: "6718783"
 > [!NOTE]
 > プロモーション バナーは、通常、ページ ヘッダー スロットまたはサブヘッダー スロットで使用されます。
 
+
 ## <a name="additional-resources"></a>追加リソース
 
 [モジュール ライブラリの概要](starter-kit-overview.md)
@@ -94,6 +96,3 @@ ms.locfileid: "6718783"
 [コンテンツ ブロック モジュール](add-hero-module.md)
 
 [ビデオ プレーヤー モジュール](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

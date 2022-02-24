@@ -1,25 +1,27 @@
 ---
 title: レンタル料金のタイプ フォームの構築
-description: このラボでは、簡易リストのフォームを作成します。 シンプル リスト フォームでは、参照データまたは 6 つ以下のフィールドが含まれるセカンダリ データを表示できます。
+description: このラボでは、簡易リストのフォームを作成します。 シンプル リスト フォームでは、参照データまたは 6 つ以下のフィールドが含まれるセカンダリ データを表示できます。 たとえば、作成するフォームは、レンタル料金のタイプについて一覧表示して説明します。
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 13671
 ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e87489dbee48246149940063143854443472e37e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 469cf5b8aa8cbc61071d635e52e018524bcd5e98
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783146"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679776"
 ---
 # <a name="build-the-rental-charge-type-form"></a>レンタル料金のタイプ フォームの構築
 
@@ -27,14 +29,15 @@ ms.locfileid: "7783146"
 
 このラボでは、簡易リストのフォームを作成します。 シンプル リスト フォームでは、参照データまたは 6 つ以下のフィールドが含まれるセカンダリ データを表示できます。 たとえば、作成するフォームは、レンタル料金のタイプについて一覧表示して説明します。 
 
-## <a name="prerequisites"></a>前提条件
+<a name="prerequisites"></a>前提条件
+-------------
 
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、「[アクセス インスタンス](../dev-tools/access-instances.md)」を参照してください。
 
 ## <a name="overview"></a>概要
 フォームを作成するには、既存のフォーム **FmtChargeType** から開始します。 このフォームは、簡易リストのパターンを使用します。 次の図は、**FmtChargeType** フォームと簡易リスト パターンからの必要なコントロールを示しています。 
 
-[![FmtChargeType フォームのスクリーン ショット。](./media/rentalcharge1.png)](./media/rentalcharge1.png) 
+[![FmtChargeType フォームのスクリーン ショット](./media/rentalcharge1.png)](./media/rentalcharge1.png) 
 
 フォーム パターンに従うことによって、この簡易リストのフォームは、他の簡易リストのフォームと同じ構造とレイアウトを持つようになります。
 
@@ -57,7 +60,7 @@ Visual Studio を使用してチュートリアル プロジェクトをイン�
 6.  **プロジェクト ファイルの場所** テキスト ボックスに、C:\FMLab と入力します。
 7.  **要素の上書き** オプションをオンにし、**現在のソリューション** ラジオ オプションをオンにします。 次の図は、完了した **インポート プロジェクト** ダイアログ ボックスを示しています。 
 
-    [![完了したプロジェクトのインポート ダイアログ ボックスのスクリーン ショット。](./media/rentalcharge2.png)](./media/rentalcharge2.png)
+    [![完了したプロジェクトのインポート ダイアログ ボックスのスクリーン ショット](./media/rentalcharge2.png)](./media/rentalcharge2.png)
 
 8.  **OK** をクリックします。
 9.  デザイナー **ソリューション エクスプローラー** で、**クラス** を展開して、**FMTutorial** プロジェクトで **FMTDataHelper** を右クリックしてから、**スタートアップ オブジェクトとして設定** をクリックします。
@@ -88,7 +91,7 @@ Visual Studio を使用して **FmtChargeType** フォームを作成します�
 
     次の図は、**FMTChargeType** テーブルを追加した後の **データソース** を示しています。 
 
-    [![FMTChargeType テーブルを追加した後のデータ ソースのスクリーン ショット。](./media/rentalcharge3.png)](./media/rentalcharge3.png)
+    [![FMTChargeType テーブルを追加した後のデータ ソースのスクリーン ショット](./media/rentalcharge3.png)](./media/rentalcharge3.png)
 
 6.  フォーム デザイナーで、**デザイン** をクリックします。 **プロパティ** ウィンドウで、次のプロパティに指定された値を設定します。
 
@@ -105,7 +108,7 @@ Visual Studio を使用して **FmtChargeType** フォームを作成します�
 
 10. 選択したフィールドを右ウィンドウの **デザイン** &gt; **グリッド** にドラッグします。 次の図は、グリッド ノードが展開され、2 つのフィールドが追加された後のグリッドを示しています。 
 
-    [![グリッド ノードが展開された後のグリッドを示すスクリーン ショット。](./media/rentalcharge4.png)](./media/rentalcharge4.png)
+    [![グリッド ノードが展開された後のグリッドを示すスクリーン ショット](./media/rentalcharge4.png)](./media/rentalcharge4.png)
 
 11. フォーム デザイナーで、**デザイン &gt; CustomFilterGroup &gt; QuickFilter** をクリックします。
 12. **プロパティ** ウィンドウで、**TargetControl** をクリックしてから **グリッド** を選択して **QuickFilter** コントロールをフォームのグリッドにバインドします。
@@ -126,13 +129,10 @@ Visual Studio を使用して、**FmtChargeType** フォームをビルドして
 5.  アクション ウィンドウで、**保存** をクリックします。
 6.  ブラウザーを更新して、一覧に新しいレコードを表示します。 次の図は、フォームの外観を示しています。
 
-    [![フォームの外観のスクリーン ショット。](./media/rentalcharge5.png)](./media/rentalcharge5.png)
+    [![フォームの外観のスクリーン ショット](./media/rentalcharge5.png)](./media/rentalcharge5.png)
 
 7.  表示モードでフォームを開きます。 アクション ウィンドウの **編集** をクリックして、フォームを編集モードに切り替えます。 表示モードに戻るには、**オプション** をクリックしてから **読み取りモード** をクリックします。
 
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

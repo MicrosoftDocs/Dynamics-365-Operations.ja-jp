@@ -2,30 +2,34 @@
 title: スウェーデンの制御ユニットとの POS の統合サンプル (レガシ)
 description: このトピックは、スウェーデンの管理単位統合サンプルのビルドとインストールのガイドです。
 author: EvgenyPopovMBS
-ms.date: 12/20/2019
+manager: Annbe
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail
 ms.search.region: Sweden
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: fdf4a2d0b316ca3a10d60a9738afaa4ae11f7ef6
-ms.sourcegitcommit: d13ea8b6baf73601a8b57548232aac84ffaba717
+ms.openlocfilehash: 0eec983c8e0c96bc40270548cc4e148bc3ce7b47
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7941258"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409372"
 ---
 # <a name="sample-for-pos-integration-with-control-units-for-sweden-legacy"></a>スウェーデンの制御ユニットとの POS の統合サンプル (レガシ)
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> このサンプル会計統合機能は、[会計統合フレームワーク](fiscal-integration-for-retail-channel.md)を利用しておらず、今後の更新で非推奨になります。 代わりに、[スウェーデン向け制御ユニット統合サンプル](emea-swe-fi-sample.md) を使用する必要があります。
+> このサンプル会計統合機能は、[会計統合フレームワーク](./fiscal-integration-for-retail-channel.md)を利用しておらず、今後の更新で非推奨になります。 代わりに、[スウェーデンのコントロール ユニット統合サンプル](./emea-swe-fi-sample.md#migrating-from-the-earlier-integration-sample)を使用してください。
+
 
 このサンプルでは、Retail Modern POS または クラウド POS を会計登録と統合する Dynamics 365 Commerce 拡張機能を作成する方法を示します。 特に、このサンプルには Retail POS をスウェーデンの管理単位と統合するコードが含まれています。 コントロール ユニットは、POS がペアリングされているハードウェア ステーションに物理的に接続されていることを前提としています。 たとえば、このサンプルでは Retail Innovation HTT AB の CleanCash® Type A 管理単位のアプリケーション プログラミング インターフェイス (API) を使用します。 CleanCash® API のバージョン1.1.4 が使用されます。 API およびドキュメントを含む統合パッケージについては、デバイスの製造元に問い合わせてください。
 
@@ -35,7 +39,8 @@ ms.locfileid: "7941258"
 
 > [!NOTE]
 > 使用しているコマースのバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
->
+
+> [!NOTE]
 > Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 このトピックは、アプリの以前の複数のバージョンに適用されるため、このトピック全体で *Retail サーバー* を使用します。
 
 
@@ -315,6 +320,3 @@ Retail POS がスウェーデンのコントロール ユニットと統合さ�
 4. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
 5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[Retail SDK パッケージ](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

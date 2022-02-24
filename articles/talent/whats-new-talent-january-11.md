@@ -67,6 +67,3 @@ ms.locfileid: "4461776"
 
 ### <a name="termination-reason-code-updates-position-assignment-record"></a>退職理由コードが職位の割り当てレコードを更新
 退職の理由コードは、従業員の退職および職位の終了に際して職位の割り当てを更新するようになりました。 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

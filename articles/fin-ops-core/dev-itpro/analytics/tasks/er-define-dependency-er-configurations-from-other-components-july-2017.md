@@ -1,10 +1,12 @@
 ---
-title: 他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
-description: このトピックでは、電子レポート (ER) コンフィギュレーションを設計し、他のソフトウェア コンポーネントからその依存関係を指定する方法について説明します。
+title: 他のコンポーネントの ER コンフィギュレーションの依存関係の定義
+description: これらの手順を完了するには、最初にタスク ガイドでの手順を実行し、ER モデル マッピング コンフィギュレーションを管理し、および Microsoft Dynamics Lifecycle Services (LCS) にアクセスする必要があります。
 author: NickSelin
-ms.date: 07/23/2021
+manager: AnnBe
+ms.date: 06/23/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,14 +14,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717597"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681976"
 ---
-# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
+# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>他のコンポーネントの ER コンフィギュレーションの依存関係の定義
 
 [!include [banner](../../includes/banner.md)]
 
@@ -137,9 +139,3 @@ ms.locfileid: "6717597"
 26. ツリーで、「サンプル データ モデル」を展開します。
     * モデル 「サンプル マッピング」 マッピングの構成が、選択されたデータ モデルの構成と共にダウンロードされたことに留意してください。 「サンプル マッピング」 は、は選択したデータモデルを実装するものとして定義されており、アプリケーションに適用できるため、これらのファイルは同時にダウンロードされます。 「サンプル マッピング (代替)」の構成は、必要なアプリケーション バージョンの条件が満たされていないためダウンロードされません。   
     * Finance and Operations にサインインし、同じプロバイダを登録し、同じ LCS プロジェクトにアクセスし、同じデータモデル設定をダウンロードした場合、「サンプル マッピング（代替）」設定はダウンロードされますが、「サンプル マッピング」設定はスキップされます。  
-
-## <a name="additional-resources"></a>追加リソース
-
-[電子申告 (ER) コンフィギュレーション ライフサイクルの管理](../general-electronic-reporting-manage-configuration-lifecycle.md)
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

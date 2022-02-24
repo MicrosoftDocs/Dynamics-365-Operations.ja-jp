@@ -2,9 +2,11 @@
 title: Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 (2017 年 10 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 の新機能または変更された機能について説明します。 このバージョンは 2017 年 10 月にリリースされました。
 author: tonyafehr
+manager: AnnBe
 ms.date: 10/09/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: e99621ddb0e35d755de928f1a566130d85e85b52540e87772a47f15f388c0bd4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fda13c91c5c27ffa12d61cf428ea0674de80896d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763372"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797119"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-11-october-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 11 (2017 年 10 月) の新機能および変更された機能
 
@@ -114,6 +116,3 @@ EDTReal 型の拡張データ型の拡張機能を使用するとき、小数点
 リソース ガバナーは、システム管理者の管理オーバーヘッドを削減するコンポーネントです。 Finance and Operations にはバッチおよび処理タスクが含まれ、高速計算処理能力があります。 複数の転記ジョブがある月末のワークロードなど、業務の必要性に応じて多くのジョブをスケジュールできます。 これらの計算処理はサーバーを占有しますが、フロント オフィス プロセスなどの対話型オペレーションは、パフォーマンスの低下なしに実行することができます。
 
 リソース ガバナーは、SQL Azure データベースから提供される組み込みのリソース ガバナンス サービスを使用します。 Dynamics 365 for Finance and Operations ランタイム サービスでは、突然の計算スパイクがある場合、SQL Azure データベースは低下しないように対話型プロセスとバッチ プロセス (ほとんどの計算が実行される場所) の両方にクォータを割り当てます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

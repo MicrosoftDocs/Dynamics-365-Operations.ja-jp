@@ -1,10 +1,12 @@
 ---
 title: 調整された予測の承認
 description: すべての予測データがすぐに承認される必要はありません。 この記事では、予測が承認される期間を指定する方法を説明します。 また、特定の会社と予測モデルの予測を承認する方法も説明します。
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanImportForecastDialog
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 72734
 ms.assetid: cb8fd809-605a-4a8b-a390-636edfec21f9
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f9ceeb01675a44388862e1dede11551d3a60bdc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8ab8558f25f5ffd3b7eb3e1bc5680b1a1f8d5139
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568715"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961454"
 ---
 # <a name="authorize-an-adjusted-forecast"></a>調整された予測の承認
 
@@ -39,7 +41,8 @@ ms.locfileid: "7568715"
 
 **ベースライン需要予測に対して行われた手動調整の保存** チェック ボックスの機能を理解することは非常に重要です。 統計ベースラインの予測に手動調整がある場合、調整された値はこのチェック ボックスがオフの場合でも使用のために承認されます。 ただし、変更は承認後に破棄されます。 したがって、次に予測が生成される時、**手動調整を需要予測に転送** が選択されている場合でも、その予測は統計予測のみで手動上書きはありません。 したがって、**ベースライン需要予測に対して行われた手動調整の保存** チェック ボックスを、すべて手動による変更で維持または破棄するメカニズムと仮定できます。
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 [ベースライン予測に対して手動調整を行う](manual-adjustments-baseline-forecast.md)
 
@@ -47,6 +50,3 @@ ms.locfileid: "7568715"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

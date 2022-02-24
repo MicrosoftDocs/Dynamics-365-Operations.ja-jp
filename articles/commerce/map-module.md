@@ -1,13 +1,16 @@
 ---
 title: マップ モジュール
-description: このトピックでは、マップ モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+description: このトピックでは、マップ モジュールを取り上げ、 Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,21 +18,23 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747396"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665423"
 ---
-# <a name="map-module"></a>地図モジュール
+# <a name="map-module"></a>マップ モジュール
 
 [!include [banner](includes/banner.md)]
 
 
-このトピックでは、マップ モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+このトピックでは、マップ モジュールを取り上げ、 Microsoft Dynamics 365 Commerce での構成方法について説明します。
 
-マップ モジュールは、[Bing Maps V8 Web コントロール](/bingmaps/v8-web-control/) を使用してレンダリングされるインタラクティブなマップ上の店舗の場所を示します。 Bing Maps API キーは必須で、Commerce 本社の共有パラメータ ページに追加する必要があります。 マップ モジュールには、マップの場所を表示するためにユーザーが選択できる、道路、航空写真、路上などのさまざまなビューが用意されています。 また、ズームやユーザーの位置の使用などの操作も可能になります。
+## <a name="overview"></a>概要
+
+マップ モジュールは、[Bing Maps V8 Web コントロール](https://docs.microsoft.com/bingmaps/v8-web-control/) を使用してレンダリングされるインタラクティブなマップ上の店舗の場所を示します。 Bing Maps API キーは必須で、Commerce 本社の共有パラメータ ページに追加する必要があります。 マップ モジュールには、マップの場所を表示するためにユーザーが選択できる、道路、航空写真、路上などのさまざまなビューが用意されています。 また、ズームやユーザーの位置の使用などの操作も可能になります。
 
 マップ モジュールは、マップにレンダリングする必要がある店舗の地理的な場所を決定するために、店舗セレクター モジュールと連携して機能します。 店舗セレクターとマップ モジュールは、ユーザーがサイト ページのいずれかのモジュールで店舗を選択したときに相互作用します。 マップ モジュールは、店舗セレクター モジュールとの相互作用を超えて、他のシナリオにも拡張できます。 ただし、モジュールのカスタマイズは必須です。
 
@@ -38,7 +43,7 @@ ms.locfileid: "6747396"
 
 以下の図は、店舗ロケーション ページで使用されるマップ モジュールの例を示しています。
 
-![店舗セレクター モジュールの例。](./media/ecommerce-Storelocator.PNG)
+![店舗セレクター モジュールの例](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="module-properties"></a>モジュール プロパティ
 
@@ -76,7 +81,4 @@ ms.locfileid: "6747396"
 
 [組織の Bing 地図の管理](./dev-itpro/manage-bing-maps.md)
 
-[Bing Maps V8 Web コントロール](/bingmaps/v8-web-control/)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Bing Maps V8 Web コントロール](https://docs.microsoft.com/bingmaps/v8-web-control/)

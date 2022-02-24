@@ -1,10 +1,12 @@
 ---
 title: 調達ワークフロー
 description: 組織によっては、取引を入力した個人以外のユーザーが購買要求と発注書を承認することを要求している場合があります。 承認プロセスを設定するには、ワークフローを作成できます。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowTableListPageRnr
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2074
 ms.assetid: e54a1d59-b9fb-421b-821d-01f32878aa9b
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a819093d9ee6f999e637281e54905968fe361566
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: af614b7f29144d02a853ef15b008f2a21d3d3aa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575539"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019757"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>調達ワークフロー
 
@@ -47,7 +49,7 @@ ms.locfileid: "7575539"
 | 仕入先追加申請ワークフロー | 仕入先要求経由で新しい仕入先を追加するための確認と承認ワークフローを作成します。 |
 
 > [!IMPORTANT]
-> 新しいワークフローを追加している場合は、**ワークフローの作成** ダイアログ ボックスに非推奨ワークフローが一覧表示されている場合もあります。 これらは、[Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows) で使用できる *入庫の確認* 機能に関連していますが、現在は推奨されていません。 これらのワークフローは現在サポートされていません。
+> 新しいワークフローを追加している場合は、**ワークフローの作成** ダイアログ ボックスに非推奨ワークフローが一覧表示されている場合もあります。 これらは、[Dynamics AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows) で使用できる *入庫の確認* 機能に関連していますが、現在は推奨されていません。 これらのワークフローは現在サポートされていません。
 > 
 > - 出荷期日通知ワークフロー
 > - 請求書受信済通知ワークフロー
@@ -77,6 +79,3 @@ ms.locfileid: "7575539"
 - [購買要求のビジネス プロセスのワークフローの定義](https://www.microsoft.com/download/details.aspx?id=101821)
 - [購買要求ワークフロー](purchase-requisitions-workflow.md)
 - [Onboard 仕入先](vendor-onboarding.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

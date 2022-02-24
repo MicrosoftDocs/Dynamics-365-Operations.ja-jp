@@ -2,23 +2,25 @@
 title: Modern POS (MPOS) のトリガーと印刷
 description: トリガーを使用すると、任意の Modern POS の操作前後に発生するイベントを取得できます。
 author: mugunthanm
+manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-01-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: b41a1b0d7eb2f25eeec3fd8bee9793bb2492d52e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 4fdbe10ca39f0ff5eab45d0734959f76acac2ea9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782918"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681506"
 ---
 # <a name="pos-triggers"></a>POS トリガー
 
@@ -45,7 +47,7 @@ ms.locfileid: "7782918"
 | PostLockTerminalTrigger   | キャンセル不可 | POS レジスターのロック後に実行されます。   | 
 | PreUnlockTerminalTrigger         | 解約可能     | POS レジスターのロック解除前に実行されます。  |
 | PostDeviceActivationTrigger      | キャンセル不可 | POS のアクティブ化後に実行されます。   | 
-| PreElevateUserTrigger      | 解約可能 | マネージャーのオーバーライド前に実行されるこのトリガーは、Microsoft Azure Active Directory (Azure AD) 以外のユーザー認証に対してのみ機能します。Azure AD が有効になっている場合、このトリガーは機能しません。   | 
+| PreElevateUserTrigger      | 解約可能 | マネージャー オーバーライドの前に実行されます。   | 
 | PreRegisterAuditEventTrigger      | 解約可能 | 監査イベントの前に実行されます。   | 
 | PostRegisterAuditEventTrigger      | キャンセル不可 | 監査イベントの後に実行されます。   | 
 | PreOpenUrlTrigger      | 解約可能 | URLを開く操作の前に実行されます。   | 
@@ -63,29 +65,28 @@ ms.locfileid: "7782918"
 
 ## <a name="customer-triggers"></a>顧客トリガー
 
-| トリガー                   | 種類                    | 説明                                                        |リリース    |
-|---------------------------|-------------------------|--------------------------------------------------------------------|-----------|
-| PreCustomerAddTrigger     | 解約可能              | トランザクションに顧客を追加する前に実行されます。             |  |
-| PostCustomerAddTrigger    | キャンセル不可          | トランザクションに顧客を追加した後に実行されます。              |  |
-| PreCustomerClearTrigger   | 解約可能              | 顧客がカートから削除する前に実行されます。 |    |
-| PostCustomerClearTrigger  | キャンセル不可          | 顧客がカートから削除した後に実行されます。 |     |
-| PreCustomerSetTrigger     | 解約可能              | 顧客がカートに追加される前に実行されます。            |  |
-| PreCustomerSearchTrigger  | 解約可能              | 顧客検索が行われる前に実行されます。      |     |
-| PostCustomerSearchTrigger | キャンセル不可          | 顧客検索が行われた後に実行されます。       |     |
-| PostIssueLoyaltyCardTrigger  | キャンセル不可          | ロイヤルティ カードが発行された後に実行されます。       |    |
-| PreCustomerSaveTrigger  | 解約可能          | 顧客を作成する前に実行されます。       |   |
-| PostCustomerSaveTrigger  | キャンセル不可          | 顧客を作成した後に実行されます。       |   |
-| PreSaveCustomerAddressTrigger      | 解約可能              | 顧客の住所が保存される前に実行されます。            |     |
-| PreGetLoyaltyCardBalanceTrigger  | 解約可能          | ロイヤルティ カード残高を取得する前に実行されます。       |     |
-| PostGetLoyaltyCardBalanceTrigger  | キャンセル不可          | ロイヤルティ カード残高を取得した後に実行されます。       |     |
-| PreDisplayLoyaltyCardBalanceTrigger  | 解約可能          | ロイヤルティ カード残高を表示する前に実行されます。       |  |
-| PreCustomerEditTrigger  | 解約可能          | 顧客を編集する前に実行されます。       | 10.0.19 |
+| トリガー                   | 種類                    | 説明                                                        |
+|---------------------------|-------------------------|--------------------------------------------------------------------|
+| PreCustomerAddTrigger     | 解約可能              | トランザクションに顧客を追加する前に実行されます。             |
+| PostCustomerAddTrigger    | キャンセル不可          | トランザクションに顧客を追加した後に実行されます。              |
+| PreCustomerClearTrigger   | 解約可能              | 顧客がカートから削除する前に実行されます。 |
+| PostCustomerClearTrigger  | キャンセル不可          | 顧客がカートから削除した後に実行されます。 |
+| PreCustomerSetTrigger     | 解約可能              | 顧客がカートに追加される前に実行されます。            |
+| PreCustomerSearchTrigger  | 解約可能              | 顧客検索が行われる前に実行されます。      |
+| PostCustomerSearchTrigger | キャンセル不可          | 顧客検索が行われた後に実行されます。       |
+| PostIssueLoyaltyCardTrigger  | キャンセル不可          | ロイヤルティ カードが発行された後に実行されます。       |
+| PreCustomerSaveTrigger  | 解約可能          | 顧客を作成する前に実行されます。       |
+| PostCustomerSaveTrigger  | キャンセル不可          | 顧客を作成した後に実行されます。       |
+| PreSaveCustomerAddressTrigger      | 解約可能              | 顧客の住所が保存される前に実行されます。            |
+| PreGetLoyaltyCardBalanceTrigger  | 解約可能          | ロイヤルティ カード残高を取得する前に実行されます。       |
+| PostGetLoyaltyCardBalanceTrigger  | キャンセル不可          | ロイヤルティ カード残高を取得した後に実行されます。       |
+| PreDisplayLoyaltyCardBalanceTrigger  | 解約可能          | ロイヤルティ カード残高を表示する前に実行されます。       |
 
 
 
 ## <a name="discount-triggers"></a>割引のトリガー
 
-| トリガー                         | 種類           | 説明                                                                     |
+| トリガー                         | 型           | 説明                                                                     |
 |---------------------------------|----------------|---------------------------------------------------------------------------------|
 | PreLineDiscountAmountTrigger    | 解約可能     | 行割引金額がカート行に追加される前に実行されます。 |
 | PostLineDiscountAmountTrigger   | キャンセル不可 | 行割引金額がカート行に追加した後に実行されます。     |
@@ -116,7 +117,6 @@ ms.locfileid: "7782918"
 | PostPaymentTrigger      | キャンセル不可 | すべての支払い処理が完了した後に実行されます。  |
 | PreVoidPaymentTrigger   | 解約可能     | POS で支払行が無効になる前に実行されます。  |
 | PostVoidPaymentTrigger  | キャンセル不可 | POS で支払行が無効になった後に実行されます。   |
-| PreTenderPaymentTrigger (10.0.21)  | 解約可能 | 支払ビューで支払/入金金額が選択された後に実行されます。   |
 
 ## <a name="printing-triggers"></a>印刷トリガー
 
@@ -161,8 +161,6 @@ ms.locfileid: "7782918"
 | PostCreatePackingSlipTrigger  | キャンセル不可     | **梱包** ボタンを選択することで、注文フルフィルメント ビューから梱包明細オプションがトリガーされた後に実行されます。|
 | PostReturnInvoicedSalesLinesTrigger   | キャンセル不可     | 返品対象として 1 つ以上の請求書が選択された後に実行されます。|
 | PreResendEmailReceiptTrigger (10.0.13)    | 解約可能     | 仕訳帳ビューを表示から電子メールを送信する前に実行されます。|
-| PreRecallCustomerQuoteTrigger (10.0.18)   | 解約可能     | 顧客見積がリコール注文ビューからリコールされる前に実行されます。|
-| PostRecallCustomerQuoteTrigger (10.0.18)  | キャンセル不可     | 顧客見積がリコール注文ビューからリコールされた後に実行されます。|
 
 
 
@@ -717,6 +715,3 @@ ms.locfileid: "7782918"
 2. POS が開始されると、POS にサインインし、トランザクションへ品目を追加します。
 3. トランザクションを中断します。
 4. カスタム レシートが印刷されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

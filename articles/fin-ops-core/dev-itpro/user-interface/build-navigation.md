@@ -2,24 +2,26 @@
 title: ナビゲーションの構築
 description: このチュートリアルでは、ワークスペースとナビゲーション ウィンドウにナビゲーション要素を追加します。
 author: aneesmsft
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 26031
 ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cafcae613e2cfe477fee080a6528f7057abf938c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5445691c828a2084363c35d856a2f792db80bbaa
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783148"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679778"
 ---
 # <a name="build-navigation"></a>ナビゲーションの構築
 
@@ -27,7 +29,8 @@ ms.locfileid: "7783148"
 
 このチュートリアルでは、ワークスペースとナビゲーション ウィンドウにナビゲーション要素を追加します。
 
-## <a name="prerequisites"></a>前提条件
+<a name="prerequisites"></a>前提条件
+-------------
 
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、「[アクセス インスタンス](../dev-tools/access-instances.md)」を参照してください。
 
@@ -78,7 +81,7 @@ ms.locfileid: "7783148"
 
 プロジェクトをビルドして実行すると、フリート管理係ワークスペースが起動します。 作成した **テスト タイル** という名前の新しいタイルは、タイルのセットの最後にある、ワークスペースの最初のセクションに含まれます。 
 
-[![タイル セットのスクリーン ショット。](./media/nav1.png)](./media/nav1.png) 
+[![タイル セットのスクリーン ショット](./media/nav1.png)](./media/nav1.png) 
 
 > [!NOTE]
 > タイルがクリックされたとき、どこにも移動しません。 これを有効にするには、**ソリューション エクスプローラー** の **タイル** の下にあるメニュー項目名を FMTAllCustomersTile に定義します。
@@ -122,11 +125,11 @@ ms.locfileid: "7783148"
 6.  **FMTutorial** を右クリックし、**再ビルド** をクリックします。
 7.  **Ctrl+F5** キーを押してプロジェクトを実行します。 プロジェクトをビルドして実行すると、ナビゲーション ウィンドウに新しいワークスペースへのリンクが含まれます。 アプリケーション ウィンドウの右上にある、ナビゲーション ウィンドウのボタン (3 つの明細行) をクリックして、ナビゲーション ウィンドウを開きます。 
 
-    [![ナビゲーション ウィンドウ ボタンのスクリーン ショット。](./media/nav2.png)](./media/nav2.png)
+    [![ナビゲーション ウィンドウ ボタンのスクリーン ショット](./media/nav2.png)](./media/nav2.png)
 
 8.  ナビゲーション ウィンドウを開いたら、**すべてのワークスペース** を選択し、それを開いた後、一覧を下方向にスクロールします。 以下の新しい予約管理チュートリアル ワークスペースが一覧に表示されます。 
 
-    [![リストの予約管理チュートリアルを示すスクリーン ショット。](./media/nav3.png)](./media/nav3.png)
+    [![リストで予約管理チュートリアルを示すスクリーン ショット](./media/nav3.png)](./media/nav3.png)
 
 ### <a name="add-the-form-to-the-main-menu-structure"></a>メイン メニュー構造へのフォームの追加
 
@@ -170,17 +173,14 @@ ms.locfileid: "7783148"
 18. **Ctrl+F5** キーを押してプロジェクトを実行します。
 19. 変更したメイン メニューのセクションに移動します。 ナビゲーション ウィンドウを開いて、新しいトップレベルの **フリート管理のチュートリアル** メニューが表示されるまでスクロールします。 **Ctrl+F5** を押して、ブラウザー キャッシュをクリアすることが必要な場合があります。 
 
-    [![ナビゲーション ウィンドウでのフリート管理のチュートリアル メニューのスクリーン ショット。](./media/nav4.png)](./media/nav4.png)
+    [![ナビゲーション ウィンドウでのフリート管理のチュートリアル メニューのスクリーン ショット](./media/nav4.png)](./media/nav4.png)
 
 20. そのサブメニューを展開するには、**フリート管理のチュートリアル** &gt; **ワークスペース** とクリックします。 ナビゲーション ウィンドウは、次のようになります。 
 
-    [![ナビゲーション ウィンドウのスクリーン ショット。](./media/nav5.png)](./media/nav5.png) 
+    [![ナビゲーション ウィンドウのスクリーン ショット](./media/nav5.png)](./media/nav5.png) 
 
     **一般的な** サブメニューをクリックすると、モデル化されているメニュー項目が表示されます。 これらのリンクのいずれかをクリックして、参照を正しく設定したか確認することができます。 参照を正しく設定した場合は、作成中のチュートリアル ワークスペースをクリックすると、開きます。
 
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

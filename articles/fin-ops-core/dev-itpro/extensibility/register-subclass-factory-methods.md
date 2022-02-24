@@ -2,24 +2,26 @@
 title: ファクトリ メソッドのサブクラスを登録
 description: このトピックでは、独自のバリエーションを工場に登録する方法について説明します。
 author: MichaelFruergaardPontoppidan
+manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 6799ccb51d131f4c77f34d651f39b207f150b4df
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f25580fd762ee9d939804735b7b5c125d905dacb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782731"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409487"
 ---
 # <a name="register-subclasses-for-factory-methods"></a>ファクトリ メソッドのサブクラスを登録
 
@@ -36,7 +38,7 @@ X++ では、ファクトリはリフレクションを使用して、次のタ�
 
 次の図は、一般的な装飾階層を示しています。
 
-![各サブクラスが属性で装飾されている、3 つのサブクラスを持つクラス階層。](media/hierarchy.png)
+![各サブクラスが属性で装飾されている、3 つのサブクラスを持つクラス階層](media/hierarchy.png)
 
 X++ では、2 つの拡張フレームワークは同じ目的で機能します。 ファクトリ メソッドの実装担当者は、使用する拡張フレームワークを決定します。
 
@@ -83,6 +85,3 @@ class smmLeadCaseAssociationProvider implements CaseIAssociation
     // Your code here.
 }
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

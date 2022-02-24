@@ -2,23 +2,26 @@
 title: インドのキャッシュ レジスターの配置ガイドライン
 description: このトピックは、インドのローカライズ用配置ガイドです。
 author: AlexChern0v
+manager: annbe
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: jiaqia
+ms.search.scope: Retail
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: 5611043573aaf6f3deede451c3503a99b752c5b5ad8c1c6e0671c0799d154473
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe9a676bd15d16cd0391fcc1a4f3ea33edc28dd5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730961"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408767"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 
@@ -679,6 +682,3 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 7. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
 8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

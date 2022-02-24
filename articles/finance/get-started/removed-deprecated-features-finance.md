@@ -2,22 +2,25 @@
 title: Dynamics 365 Finance の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
 author: roschlom
-ms.date: 12/03/2021
+manager: AnnBe
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: roschlom
+ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890956"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689497"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは推奨されない機能
 
@@ -31,109 +34,13 @@ ms.locfileid: "7890956"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 > [!NOTE]
-> Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
-
-## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Finance 10.0.24 リリースの削除済みまたは非推奨の機能
-
-### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>スウェーデンの消費税レポート (レポート コードに基づくデザイン)
-
-[スウェーデンの消費税支払レポート](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
-
-| &nbsp; | &nbsp; |
-|------------|--------------------|
-| **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[スウェーデンの VAT 申告書](../localizations/emea-swe-vat-declaration-sweden.md) |
-| **別の機能で置き換えられているか?**   | あり |
-| **影響を受ける製品領域**         | 申請書 |
-| **配置オプション**              | すべて |
-| **状態**                         | 非推奨: 2022年12月1日までに、スウェーデンの消費税レポート (スウェーデンのレポート レイアウト) がサポートされなくなります。 新しい **VAT申告 XML (SE**)、**VAT 申告 Excel (SE)** 電子報告書 (ER) 形式は **税申告** モデル配下に導入されています。 |
-
-### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>オーストリアの VAT 明細書 (レポート コードに基づくデザイン)
-
-[オーストリア向け VAT 明細の内訳](../localizations/emea-aut-vat-statement-details.md)
-
-| &nbsp; | &nbsp; |
-|------------|--------------------|
-| **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[オーストラリアの VAT 申告書](../localizations/emea-aut-vat-declaration-austria.md) |
-| **別の機能で置き換えられているか?**   | あり |
-| **影響を受ける製品領域**         | 申請書 |
-| **配置オプション**              | すべて |
-| **状態**                         | 非推奨: 2022年12月1日までに、**VAT 申告モデル** では **VAT申告 (AT)** 電子申告  (ER) 形式はサポートされなくなります。 新しい **VAT申告 XML (AT**)、**VAT 申告 Excel (AT)** 形式は **税申告** モデル配下に導入されています。 |
-
-### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ドイツ向け ELSTER 申告 (レポート コードに基づくデザイン)
-
-[VAT 明細書](../localizations/emea-de-vat-declaration.md)</br>
-[ドイツ向けの電子税申告の設定](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
-[VAT 申告電子送信 (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
-
-| &nbsp; | &nbsp; |
-|------------|--------------------|
-| **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[ドイツの VAT 申告書](../localizations/emea-deu-vat-declaration-germany.md) |
-| **別の機能で置き換えられているか?**   | あり |
-| **影響を受ける製品領域**         | 申請書 |
-| **配置オプション**              | すべて |
-| **状態**                         | 非推奨: 2022年12月1日までに、**Elster (DE)** と **Elster モデル** 電子申告 (ER) 形式はサポートされなくなります。 新しい **VAT申告 XML (DE**)、**VAT 申告 Excel (DE)** 形式は **税申告** モデル配下に導入されています。 |
-
-### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>オランダ向け OB 申告 (レポート コードに基づくデザイン)
-
-[OB 申告](../localizations/emea-nl-vat-declaration.md)
-
-| &nbsp; | &nbsp; |
-|------------|--------------------|
-| **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[オランダの VAT 申告書](../localizations/emea-nl-vat-declaration-netherlands.md) |
-| **別の機能で置き換えられているか?**   | あり |
-| **影響を受ける製品領域**         | 申請書 |
-| **配置オプション**              | すべて |
-| **状態**                         | 非推奨: 2022年12月1日までに、**OB 申告 (NL)** と **OB 申告モデル** の電子申告 (ER) 形式はサポートされなくなります。 新しい **VAT申告 XML (NL**)、**VAT 申告 Excel (NL)** 形式は **税申告** モデル配下に導入されています。 |
-
-## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Finance 10.0.20 リリースの削除済みまたは非推奨の機能
-
-### <a name="rtir-query-invoice-data-request-hu-electronic-reporting-er-format-configuration"></a>"RTIR クエリ請求書データ要求 (HU)" 電子レポート (ER) 形式のコンフィギュレーション
-
-| &nbsp; | &nbsp; |
-|------------|--------------------|
-| **廃止 / 削除の理由** | ハンガリーのオンライン請求システムとの相互運用の電子メッセージング処理から除外 |
-| **別の機能で置き換えられているか?**   | なし |
-| **影響を受ける製品領域**         | 申請書 |
-| **配置オプション**              | All |
-| **状態**                         | 非推奨: 2022 年 4 月 15 日までに、「RTIR クエリ請求書データ要求 (HU)」形式の構成をサポートしなくなります。 |
-
-### <a name="french-fec-audit-file-electronic-reporting-er-format-for-france-under-german-audit-file-output-format"></a>"ドイツ監査ファイル出力" 形式によるフランスの "フランス監査ファイル" 電子レポート (ER) 形式
-
-| &nbsp; | &nbsp; |
-|------------|--------------------|
-| **廃止 / 削除の理由** | 新しい "FEC 監査ファイル (FR)" 形式に置き換えられた |
-| **別の機能で置き換えられているか?**   | あり |
-| **影響を受ける製品領域**         | 申請書 |
-| **配置オプション**              | All |
-| **状態**                         | 非推奨: 2022年5月1日より、"ドイツ監査ファイル出力" 形式による、フランスの "フランス監査ファイル" 電子レポート (ER) 形式はサポートされなくなりました。 新しい FEC 監査ファイル (FR) 形式が "データ エクスポート モデル" の下に導入されます。 |
-
-## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Finance 10.0.17 リリースの削除済みまたは非推奨の機能
-
-### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>電子申告コンフィギュレーションのストレージ オプションとしての LCS リポジトリ
-
-| &nbsp; | &nbsp; |
-|------------|--------------------|
-| **廃止 / 削除の理由** | 新しい Regulatory Configuration Service (RCS) のグローバル リポジトリに置き換えられます |
-| **別の機能で置き換えられているか?**   | あり |
-| **影響を受ける製品領域**         | Dynamics 365 Finance、Supply Chain Management、Project Operations 製品|
-| **配置オプション**              | All |
-| **状態**                         | 非推奨: 2022 年 4 月 1 日より、電子申告 (ER) コンフィギュレーションのストレージ オプションとして Microsoft Dynamics Lifecycle Services (LCS) リポジトリのサポートを終了する予定です。 新しい Microsoft ER コンフィギュレーションは、グローバル リポジトリからのみダウンロードできるように公開されます。 グローバル リポジトリは、Dynamics 365 製品と RCS からアクセスできます。 詳細については、[RCS から ER コンフィグレーションをインポートする](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md)および [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止](../localizations/rcs-lcs-repo-dep-faq.md)を参照してください。 |
+> Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Finance 10.0.16 リリースの削除済みまたは非推奨の機能
 
-### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>チェコ共和国向け「VAT申告 (CZ)」、および 「管理ステートメントのエクスポート ( CZ)」 電子レポート形式
-
-| &nbsp; | &nbsp; |
-|------------|--------------------|
-| **廃止 / 削除の理由** | 新しい形式に置き換えられます |
-| **別の機能で置き換えられているか?**   | あり |
-| **影響を受ける製品領域**         | 申請書 |
-| **配置オプション**              | All |
-| **状態**                         | 非推奨 : 2022年1月22日より、「VAT申告 (CZ)」、「管理ステートメントのエクスポート (CZ)」の電子申告の形式はサポートされなくなります。 代わりに、新しい VAT申告 XML (CZ)、VAT申告 Excel (CZ)、VAT 管理ステートメント XML (CZ) 形式が「税申告」モデル配下で導入されます。 |
-
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>"元帳トランザクションのエクスポート形式 (BE)" 電子レポート形式と、個別の "元帳トランザクション エクスポート (BE)" モデル (ベルギー)
 
-| &nbsp; | &nbsp; |
+|   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | "標準監査ファイル (SAF)" モデルの下にある新しい ER 形式で置き換えました。  |
 | **別の機能で置き換えられているか?**   | あり |
@@ -143,7 +50,7 @@ ms.locfileid: "7890956"
 
 ### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>SSRS 形式の英国用 "VAT 100" レポート
 
-| &nbsp; | &nbsp; |
+|   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | "税申告モデル" で、新しい ER 形式である "VAT 申告 Excel (UK)" 形式と置き換えました。  |
 | **別の機能で置き換えられているか?**   | あり |
@@ -155,7 +62,7 @@ ms.locfileid: "7890956"
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Dynamics 365 における Internet Explorer 11 のサポートの非推奨
 
-| &nbsp; | &nbsp; |
+|   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
 | **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
@@ -165,21 +72,21 @@ ms.locfileid: "7890956"
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Finance 10.0.12 リリースの削除済みまたは非推奨の機能
 
-### <a name="not-deprecated-polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>廃止されていない: ポーランド SSRS レポート: 仮受 VAT 登録、購買 VAT 登録、EU 集計 VAT 登録 – 機能参照 PL-00014
+### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>ポーランド SSRS レポート: 仮受 VAT 登録、購買 VAT 登録、EU 集計 VAT 登録 – 機能参照 PL-00014
 
-| &nbsp; | &nbsp; |
+|   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 法的に必須ではありません。  |
 | **別の機能で置き換えられているか?**   | はい (VAT 申告を含む標準監査ファイル用の Excel 形式 - JPK_VDEK) |
-| **影響を受ける製品領域**         | 申請書 |
-| **配置オプション**              | All |
-| **状態**                         | 非推奨ではない: 2021 年 4 月 27 日現在、SSRS レポートのサポートを継続する予定です: **仮受 VAT 登録、購買 VAT 登録、EU 集計 VAT 登録 – 機能参照 PL-00014**。 VAT 申告を含む標準監査ファイルの Excel 形式 (JPK_VDEK) の例も導入されました。 |
+| **影響を受ける製品領域**         | 応募 |
+| **配置オプション**              | すべて |
+| **ステータス**                         | 非推奨: 2021 年 7 月 1 日には、SSRS レポートのサポートはなくなります: **仮受 VAT 登録、購買 VAT 登録、EU 集計 VAT 登録 – 機能参照 PL-00014**。 代わりに、VAT 申告を含む標準監査ファイルの Excel 形式 (JPK_VDEK) の例が導入されます。 |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Finance 10.0.11 リリースの削除済みまたは非推奨の機能
 
 ### <a name="norwegian-standard-main-accounts"></a>ノルウェー標準主勘定
 
-| &nbsp; | &nbsp; |
+|   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 再設計  |
 | **別の機能で置き換えられているか?**   | はい (ER 形式のアプリケーション固有パラメータに置き換えられます) |
@@ -190,8 +97,7 @@ ms.locfileid: "7890956"
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Finance 10.0.7 リリースの削除済みまたは非推奨の機能
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>ワークフロー要求の変更ダイアログ ボックスにユーザー選択ドロップダウン リストは表示されなくなります
-
-| &nbsp; | &nbsp; |
+|   |  |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 勘定グループを選択する機能に変更されました。  |
 | **別の機能で置き換えられているか?**   | 有 |
@@ -201,6 +107,3 @@ ms.locfileid: "7890956"
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>削除済みまたは非推奨の機能に関する以前の発表
 以前のリリースで削除または非推奨になった機能の詳細については、[以前のリリースで削除または非推奨になった機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md)を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

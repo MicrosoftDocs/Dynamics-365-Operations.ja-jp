@@ -2,23 +2,25 @@
 title: 注文属性の定義と設定をする
 description: このトピックでは、コマース バックオフィス、POS、および CRT でオーダーの属性値を直接編集および設定する方法について説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 09/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a780f105eea8514a0ac316aab156b0a46f5f05c9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 76dcc4f2ddc6a14187838c8c367abea43fc1d9cd
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783390"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681564"
 ---
 # <a name="define-and-set-order-attributes"></a>注文属性の定義および設定
 
@@ -236,48 +238,6 @@ Retail SDK に追加された新しいサンプルでは、CRT の注文属性�
         }
 ```
 
-## <a name="extend-a-dynamics-365-commerce-e-commerce-site-to-set-values-for-order-attributes-in-the-cart"></a>Dynamics 365 Commerce eコマースサイトを拡張して、カート内の注文属性の値を設定し
-
-このコードを使用して、カートの注文属性の値を設定します。
-
-```javascript
-public _addOrUpdateSalesOrderAttributes = (cart: Cart): void => {
-    // Create the array of attribute and add attributes
-    const attributeArr: AttributeValueBase[] = [];
-    let attributeObj = {
-        // @ts-ignore
-        '@odata.type': '#Microsoft.Dynamics.Commerce.Runtime.DataModel.AttributeTextValue',
-        Name: 'Brand',
-        ExtensionProperties: [],
-        TextValue: 'OscarBrand-2',
-        TextValueTranslations: []
-    };
-    attributeObj.Name = 'Brand';
-    attributeArr.push(attributeObj);
-
-    attributeObj = {
-        // @ts-ignore
-        '@odata.type': '#Microsoft.Dynamics.Commerce.Runtime.DataModel.AttributeTextValue',
-        Name: 'Connector',
-        ExtensionProperties: [],
-        TextValue: 'OscarConnector-2',
-        TextValueTranslations: []
-    };
-    attributeObj.Name = 'Connector';
-    attributeArr.push(attributeObj);
-
-    cart.AttributeValues = attributeArr;
-    updateAsync({ callerContext: this.props.context.actionContext}, cart)
-                .then(newCart => {
-                    console.log('Success');
-                    this.props.context.actionContext.update(new GetCheckoutCartInput(this.props.context.request.apiSettings), newCart);
-                })
-                .catch(error => {
-                    console.log(error);
-                });
-};
-```
-
 ## <a name="extend-attributes-to-do-some-business-logic-in-the-pos"></a>POS でビジネス ロジックを行うには、属性を拡張します。
 
 > [!NOTE]
@@ -421,6 +381,3 @@ Retail SDK に追加された新しいサンプルでは、POS の注文属性�
         return isB2B;
     } } } }
     ```
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

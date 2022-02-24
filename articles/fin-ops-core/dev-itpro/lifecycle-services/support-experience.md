@@ -1,10 +1,12 @@
 ---
 title: Finance and Operations アプリのテクニカル サポートを設定する
-description: このトピックでは、クラウドおよびオンプレミスの展開のサポートについて説明します。
+description: このトピックでは、クラウドおよびオンプレミスの展開のサポートについて説明します。 必要な設定およびサポートの問題を作成して対応する方法について説明します。
 author: kfend
+manager: AnnBe
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,20 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e5470d0c0399793a0ac46e6159cae53b524838998591de2ac464de8fd28d88d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45fce57f7324ec0be652e63822657c113eae30d9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741632"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681054"
 ---
 # <a name="set-up-technical-support-for-finance-and-operations-apps"></a>Finance and Operations アプリのテクニカル サポートを設定する 
 [!include [banner](../includes/banner.md)]
 
-## <a name="prerequisites"></a>必要条件
+<a name="prerequisites"></a>必要条件
+--------------
 
-テクニカル サポートの設定をする前に、Microsoft Azure Active Directory (Azure AD) アカウントを取得する必要があります。 このアカウントは、Microsoft Dynamics 365 Finance and Operations アプリのいずれかのサブスクリプションを設定すると作成されます。
+テクニカル サポートの設定をする前に、Microsoft Azure Active Directory (Azure AD) アカウントを取得する必要があります。 このアカウントは、Microsoft Dynamics 365 Finance and Operations アプリのいずれかの定期売買を設定すると作成されます。
 
 ## <a name="create-an-azure-devops-project"></a>Azure DevOps プロジェクトの作成
 Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、Azure DevOps を使用し、クライアントを通して送信された問題と、LCS の **サポート** タイルから手動で作成された問題を格納します。 この機能を使用するには、サポートに使用する LCS プロジェクトで Azure DevOps プロジェクトを設定する必要があります。 **サポート** タイルを使用して問題を提出する必要があるすべてのユーザーは、Azure DevOps プロジェクトにアクセスできる必要があり、LCS が Azure DevOps に自身が代わってアクセスを承認する必要があります。 ほとんどのユーザーは、LCS または Azure DevOps へのアクセス権がありません。 したがって、Azure DevOps プロジェクトでは、問題を提出するために使用できる特別なシステム アカウントを作成する必要があります。
@@ -74,9 +77,9 @@ Lifecycle Services (LCS) プロジェクトの **サポート** タイルは、A
 2.  LCS でプロジェクトを開きます。
 3.  **プロジェクト設定** をクリックし、**Azure DevOps** リンクをクリックします。
 
-    [![LCS-Project-Tiles.](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
+    [![LCS-プロジェクト-タイル](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
     
-    [![LCS-Project-Settings-VSO.](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
+    [![LCS-プロジェクト-設定-VSO](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
 
 4.  **Azure DevOps の設定** をクリックします。
 5.  **Azure DevOps サイトの URL** フィールドに、前のセクションで作成した Azure DevOps プロジェクトの URL を入力します。
@@ -98,7 +101,7 @@ Microsoft によって公開されている更新プログラムを表示する�
 > [!WARNING]
 > オンプレミスで配置している場合、既存の問題を検索してオンプレミス クライアントから Azure DevOps プロジェクトにサポート インシデントを送信することはできません。
 
-[![wiki1.](./media/wiki1-1024x518.png)](./media/wiki1.png) 
+[![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
 > [!NOTE]
 > Lifecycle Services (LCS) にまだ接続していない場合は、ダイアログ ボックスに接続できる場所が表示されます。 続行する前に、接続するリンクをクリックしてください。 
@@ -125,11 +128,11 @@ LCS に接続した後は、既存の Microsoft 更新プログラムおよび�
 
 Azure DevOps 管理者は、**#SearchableInFinanceAndOperations** を作業項目にタグ付けすることによって、プロジェクトの作業項目を組織のユーザーに発行することができます。 タグ付けされた作業項目は、クライアント サポート検索ボックスからユーザーに対して検索可能になります。 検索結果には、Microsoft が公開した更新プログラムや修正プログラムに加えて、タグ付きの Azure DevOps 作業項目が含まれます。 次のグラフィックは、公開用のタグ付きの Azure DevOps 作業項目を示しています。
 
-[![vstsTag.](./media/VSTS-Tagging.png)](./media/VSTS-Tagging.png)
+[![vstsTag](./media/VSTS-Tagging.png)](./media/VSTS-Tagging.png)
 
 サポート検索ボックスを使用して公開済みの Azure DevOps 作業項目を検索するとき、検索結果は、新しいブラウザー タブに **表示** モードで、作業項目のタイプ、タイトル、状態、および説明が表示されます。  適切なアクセス許可を持つユーザーが、Azure DevOps の作業項目を編集できます。 次のグラフィックは、公開された Azure DevOps 作業項目の検索結果を示しています。
 
-[![ViewVSTS.](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
+[![ViewVSTS](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
 
 > [!NOTE]
 > 発行済みの Azure DevOps 作業項目は、組織のユーザーにのみ表示されます。  
@@ -146,7 +149,7 @@ LCS **サポート** タイルでは、問題が LCS プロジェクトに関連
 2.  払出を表示する環境に関連付けられている LCS プロジェクトを開きます。
 3.  **サポート** タイルをクリックします。 作成された問題の一覧を表示します。
 
-    [![LCS-CPS-list.](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
+    [![LCS-CPS-list](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
 
 ### <a name="edit-issues"></a>項目を編集
 1.  **問題** グリッドで、問題のタイトルをクリックします。
@@ -180,6 +183,3 @@ Microsoft に問題を送信するためには、LCS ユーザーに有効な Mi
 
 ## <a name="prevent-users-from-creating-issues-from-the-client"></a>ユーザーが、クライアントからの問題を作成できなようにする
 既定では、システム ユーザー ロールに *SysLCSCPSIssueEntry* という権限が割り当てられています。 この権限は、[ヘルプ] メニューの **サポート チームに連絡** メニュー項目へのアクセスを制御します。 ユーザーがクライアントからの問題を作成して送信できないようにするには、システム ユーザー ロールからこの権限を削除します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

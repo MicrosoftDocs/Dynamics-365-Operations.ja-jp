@@ -2,19 +2,26 @@
 title: X++ 条件付きステートメント
 description: このトピックでは、X++の条件付きステートメントについて説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/17/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 150213
+ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fc9e8d32edd348e92f23c873b2baf7f42eb909e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0ab74d2c838243b897fc80bbd8646aa682e5b509
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781306"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408748"
 ---
 # <a name="x-conditional-statements"></a>X++ 条件付きステートメント
 
@@ -148,6 +155,3 @@ str level = x <= 1000 ? "A" : (x <= 2000 ? "B" : "C");
 info(level);
 // Output is "B".
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: デモ環境の配置
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Microsoft Azure にデモ環境を配置する方法について説明します。 これは Dynamics 365 Finance、Supply Chain Management、およびコマースに適用されます。
 author: sarvanisathish
+manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: fefde384290d28dddadece9f1a7555ca25337e8eea3b44a76ad2885cd7d90603
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3015dc5a904774a4d19c46fd72f32b00280e477b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746571"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680544"
 ---
 # <a name="deploy-a-demo-environment"></a>デモ環境の配置
 
@@ -47,7 +49,7 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
     - Finance and Operations では、Finance and Operations の最新の Azure Resource Manager (ARM) トポロジを選択します。
     - コマースで、**Dynamics 365 for Commerce - デモ** を選択します。
 4. **環境の配置** ダイアログ ボックスに、環境の名前を入力します。 この名前は Azure サブスクリプションで一意である必要があります。 環境を簡単に識別できるようにするには、ユーザー名とトポロジを使用して略語を作成することを検討してください。
-5. 仮想マシン (VM) のサイズを選択します。 Finance and Operations ワークロードには、**Ev3 シリーズ サイズ** を使用する必要があります。 **Ev3** をお勧めします。 配賦に失敗した場合は、[Azure のトラブルシューティング ガイド](/azure/virtual-machines/troubleshooting/allocation-failure)を参照してください。
+5. 仮想マシン (VM) のサイズを選択します。 ARM 用に有効になっている VM のすべてのサイズは、v2 で終わります。 Finance and Operations のワークロードには、D* v2 サイズを使用する必要があります。 D12v2 をお勧めします。
 6. **インスタンス** フィールドを 1 に設定します。
 
     > [!NOTE] 
@@ -68,6 +70,3 @@ LCS を使用して Azure でデモ環境を配置するには、この手順を
 
       - **Finance and Operations にログオン**
       - **コマースにログオン**
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: ER 財務分析コードをデータ ソースとして使用する (第 2 部 - モデル マッピング)
-description: このトピックでは、財務分析コードを ER レポートのデータ ソースとして使用するために、電子申告 (ER) モデルを構成する方法について説明します。 (第 2 部)
+description: 次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605408"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681688"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER 財務分析コードをデータ ソースとして使用する (第 2 部 - モデル マッピング)
 
@@ -56,14 +58,14 @@ ms.locfileid: "7605408"
 21. 「主勘定のフィールドを要求する」で、[はい] を選択します。
     * 「主勘定を要求する」 を 「はい」 に設定することで、分析コードリストの一部として主勘定を選択できるようになります。   「いいえ」 に設定すると、主勘定は分析コードのリストに含まれなくなり、 「主勘定を必須にする」 オプションが有効になります。 「主勘定を必須にする」 オプションが 「はい」 に設定されると、ユーザーの選択にかかわらず主勘定が分析コードのリストに含まれます。  
 22. [OK] をクリックします。
-![財務分析コードの詳細データ ソース プロパティのスライド。](../media/er-financial-dimensions-guides-model-mapping1.png)
+![ER モデル マッピング デザイナーのページ](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. ツリーで、'Dynamics 365 for Operations\Table records'を選択します。
 24. [ルートの追加] をクリックします。
 25. [名称] フィールドで、「LedgerJournal」と入力します。
 26. [クエリの要求] フィールドで、[はい] を選択します。
 27. [表] フィールドで、「LedgerJournalTable」と入力します。
 28. [OK] をクリックします。
-![モデル マッピング デザイナー ページ (テーブル レコードのデータ ソース タイプ)。](../media/er-financial-dimensions-guides-model-mapping2.png)
+![ER モデル マッピング デザイナーのページ](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>データ モデル・エレメントを追加したデータソースにマッピングする
 1. ツリーで、「Journal」を展開します。
@@ -94,7 +96,7 @@ ms.locfileid: "7605408"
 25. ツリーで、「LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions」を選択します。
 26. ツリーで、「Journal\Transaction\Dimensions data」を選択します。
 27. [バインド] をクリックします。
-!モデル マッピング デザイナー ページ、マッピング タブ、データ ソース ツリー](../media/er-financial-dimensions-guides-model-mapping3.png)
+![ER モデル マッピング デザイナーのページ](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. ツリーで、「LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)」を選択します。
 29. ツリーで、「Journal\Transaction\Debit」を選択します。
 30. [バインド] をクリックします。
@@ -132,10 +134,10 @@ ms.locfileid: "7605408"
 62. [編集] をクリックします。
 63. expressionAsStringTextのフィールドで、Company.'find()'.'name()を入力します。
     * 会社.'検索()'.'名称()'  
-64. 保存 をクリックします。
-![ER モデル マッピング デザイナーのページ。](../media/er-financial-dimensions-guides-model-mapping4.png)
+64. [保存] をクリックします。
+![ER モデル マッピング デザイナーのページ](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. ページを閉じます。
-66. 保存 をクリックします。
+66. [保存] をクリックします。
 67. ページを閉じます。
 
 ## <a name="complete-this-draft-models-version"></a>このドラフト モデルのバージョンを実行します。
@@ -144,7 +146,4 @@ ms.locfileid: "7605408"
 3. [状態の変更] をクリックします。
 4. [完了] をクリックします。
 5. [OK] をクリックします。
-![ER 構成ページ。](../media/er-financial-dimensions-guides-model-mapping5.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+![ER モデル マッピング デザイナーのページ](../media/er-financial-dimensions-guides-model-mapping5.png)

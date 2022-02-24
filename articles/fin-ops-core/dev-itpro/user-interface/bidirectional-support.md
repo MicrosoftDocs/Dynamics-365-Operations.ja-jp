@@ -1,25 +1,27 @@
 ---
 title: 右から左へ読み書きする言語のサポートと双方向のテキスト
-description: このトピックでは、双方向テキストの問題とその処理方法について説明します。
+description: 右から左 (RTL) の言語サポートの領域では、同じ文字列での RTL テキストと左から右 (LTR) のテキストの組み合わせを考慮します。 このトピックでは、双方向テキストの問題とその処理方法について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 104543
 ms.assetid: f0d7680c-bf07-44e7-83d8-381e4471f45e
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5512285b97d0c2cc7d49454c4ecada74e0b186f6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 998e2f5b77d2ba4bfb8184f326c99492df807bd1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783000"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682463"
 ---
 # <a name="right-to-left-language-support-and-bidirectional-text"></a>右から左へ読み書きする言語のサポートと双方向のテキスト
 
@@ -202,6 +204,3 @@ WPF RichTxt コントロールには、文字列の最初の文字に従って�
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

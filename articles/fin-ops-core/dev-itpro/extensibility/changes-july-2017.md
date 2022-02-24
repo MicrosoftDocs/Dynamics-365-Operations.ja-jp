@@ -2,24 +2,26 @@
 title: Finance and Operations、Enterprise edition (2017 年 7 月) の拡張機能の変更
 description: これは、(2017 年 7 月) に実装された拡張機能の一覧です。
 author: FrankDahl
+manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 9a2332d06173ef7c5c238cb9f6808ca2d5c49c56
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f44ee8f345b5d0a494799bbf7b04ffda9f2c8a02
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782749"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409269"
 ---
 # <a name="extensibility-changes-in-finance-and-operations-enterprise-edition-july-2017"></a>Finance and Operations、Enterprise edition (2017 年 7 月) の拡張機能の変更
 
@@ -902,6 +904,3 @@ ms.locfileid: "7782749"
 |         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() は製品分析コードについて十分な汎用性がありません          |
 |            WhsRFControlData.processControl は switch ブロック内の _data ではなく WhsControl.data を参照する必要があります             |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

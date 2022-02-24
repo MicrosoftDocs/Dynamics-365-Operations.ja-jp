@@ -2,24 +2,27 @@
 title: Dynamics 365 Commerce 10.0.11 (2020 年 7 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.11 の新機能または変更された機能について説明します。
 author: josaw1
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
+ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 70e68f74ea9e9a1a0407a0699a43c34c15cb60f30f80eee302ed59b151805e2e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 029a5b52924b997c47d46f72cc05c22db1a1bc9e
+ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764601"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4409526"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10011-july-2020"></a>Dynamics 365 Commerce 10.0.11 (2020 年 7 月) の新機能または変更された機能
 
@@ -33,14 +36,14 @@ ms.locfileid: "6764601"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365-release-plan/2020wave1/)のサイトに関する追加情報にリンクします。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/)のサイトに関する追加情報にリンクします。
 
-- [POS サインイン ページの改善](/dynamics365-release-plan/2020wave1/dynamics365-commerce/pos-sign-in-page-improvements)
+- [POS サインイン ページの改善](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/pos-sign-in-page-improvements)
 - [チャネルごとの自動請求 ](../auto-charges-by-channel.md)
-- [店舗在庫プロセスにおけるシリアル番号追跡用分析コードの改善されたサポート](/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-support-serial-number-tracking-dimension-store-inventory-processes)
-- [通知とミニカート](/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
-- [テーマ拡張](/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
-- [トランザクション電子メールの新しいイベントとプレースホルダー](/dynamics365-release-plan/2020wave1/dynamics365-commerce/new-events-placeholders-transactional-emails)
+- [店舗在庫プロセスにおけるシリアル番号追跡用分析コードの改善されたサポート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-support-serial-number-tracking-dimension-store-inventory-processes)
+- [通知とミニカート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
+- [テーマ拡張](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
+- [トランザクション電子メールの新しいイベントとプレースホルダー](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/new-events-placeholders-transactional-emails)
 - [Commerce SDK が Visual Studio  2017 に更新](../dev-itpro/retail-sdk/migrate-sdk.md)
 
 ## <a name="additional-resources"></a>追加リソース
@@ -56,7 +59,7 @@ Dynamics 365 Commerce 10.0.11 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
@@ -68,6 +71,3 @@ Dynamics 365 Commerce 10.0.11 には、プラットフォーム更新プログ�
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: AX 2009 の移行 － パッケージのエクスポート
 description: このトピックは、Microsoft Dynamics AX 2009 から Finance and Operations に移行するためにデータ パッケージをエクスポートする方法について説明します。
 author: kfend
+manager: AnnBe
 ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 583e8ea27dfa32840e3aa066fb85995dff389771c436b05ff8ce0e5556a7ec63
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a98dd79aa69a64b628ab127eacd78de0b1b7b65c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763462"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682571"
 ---
 # <a name="ax-2009-migration--export-packages"></a>AX 2009 の移行 - パッケージのエクスポート
 
@@ -34,6 +36,3 @@ ms.locfileid: "6763462"
 1. AX 2009 の、ナビゲーション ウィンドウで、**データ移行** \> **共通** \> **移行グループの作成** の順にクリックします。
 2. **移行グループ** フォームで、エクスポートする移行グループを選択し、**今すぐエクスポート** をクリックします。
 3. **データのエクスポート** フォームで、必要に応じてエクスポート ファイル パスを更新し、**OK** をクリックします。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

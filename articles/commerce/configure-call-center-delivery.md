@@ -2,9 +2,11 @@
 title: コール センターの配送モードと費用の構成
 description: このトピックでは、デリバリー モードの設定方法および Dynamics 365 Commerce のコール センターの注文料金を定義します。
 author: josaw1
+manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748574"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963113"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>コール センターの配送モードと費用の構成
 
@@ -65,11 +67,11 @@ Dynamics 365 Commerce で販売注文が発注される時、販売注文を入�
 
 通常、企業は階層化された費用をコンフィギュレーションします。 この場合、顧客が配送のために支払う金額は発注金額に基づきます。 階層化された費用をコンフィギュレーションするには、**請求金額** フィールドの費用を定義することに加え、**開始金額** および **終了金額** に値を入力します。 たとえば、50 ドルより小さい値の注文について、小売業者は陸上出荷のために 5.95 ドルを請求します。 50 ドル以上、100 ドル未満の注文については、小売業者は 7.95 ドルを請求します。 最後に、100 ドル以上の注文については、小売業者は無料配送を提供します。 次の図は、これらの費用のコンフィギュレーションを示します。
 
-![固定階層型の費用の例。](media/fixedtieredcharges.png)
+![固定階層型の費用の例](media/fixedtieredcharges.png)
 
 業務の要件に応じて、費用のカテゴリを混在させることができます。 たとえば、100 ドルより小さい値の注文について、出荷のために 9.95 ドルの固定費用がかかります。 次に、100 ドル以上の値の注文については、発注金額の 5 パーセントの割合で配送費用が計算されます。 次の図は、これらの費用のコンフィギュレーションを示します。
 
-![混合階層型の費用の例。](media/mixedtieredcharges.png)
+![混合階層型の費用の例](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>コール センターの注文入力時の配送モードの適用
 
@@ -92,6 +94,3 @@ Dynamics 365 Commerce で販売注文が発注される時、販売注文を入�
 たとえば、翌日航空便によって出荷される注文については、毎日午後 1 時までに倉庫でピッキングが行われる必要があります。 この場合、急送コードを作成し、そのコードをシステムで構成されている任意の翌日配送モードにリンクできます。 倉庫がピッキング ウェーブを作成する時、**急送** フィールドの適切な急送コードがフィルターとして使用され、そのコードにリンクされている配送モードを持つ注文に対してのみピッキングが行われます。
 
 また、コール センター注文が入力されると、販売注文ヘッダーまたは個々の販売注文明細行に急送コードが手動で適用されます。 並べ替えまたはレポート作成の目的のためにコードが再度使用されます。 場合によっては、顧客サービスの問題のために注意深く注文が処理される必要があります。 この場合、特定の急送コードは、フルフィルメント プロセス中の注文と優先順位の識別をするために注文ヘッダーまたは明細行に適用されます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

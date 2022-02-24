@@ -2,30 +2,36 @@
 title: 組織階層の設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce での組織階層の設定方法について説明します。
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 29d4b686cbb66715196fca06e4642fbb8a337ace
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746019"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413714"
 ---
 # <a name="set-up-organization-hierarchies"></a>組織階層の設定
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce での組織階層の設定方法について説明します。
+
+## <a name="overview"></a>概要
 
 チャネルを作成する前に、組織階層が設定されていることを確認する必要があります。
 
@@ -54,7 +60,7 @@ ms.locfileid: "6746019"
 
 次の図は、架空の「Adventure Works」店舗のセットのために作成された組織階層の例を示しています。
 
-![組織階層の例。](media/organizational-hierarchies.png)
+![組織階層の例](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>階層への組織の追加
 
@@ -67,7 +73,7 @@ ms.locfileid: "6746019"
 
 次の図は、「モール」、「アウトレット」、「オンライン」、および「コール センター」チャネルの 4 つの原価部門が追加された階層ルートに追加された法人を示しています。 その後、さまざまな小売、コール センター、およびオンライン チャネルをそれぞれに追加できます。
 
-![階層デザイナーの例。](media/hierarchy-designer.png)
+![階層デザイナーの例](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -82,6 +88,3 @@ ms.locfileid: "6746019"
 [チャネルの概要](channels-overview.md)
 
 [チャネル設定の前提条件](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

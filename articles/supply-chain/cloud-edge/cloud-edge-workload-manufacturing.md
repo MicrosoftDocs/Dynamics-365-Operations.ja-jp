@@ -2,9 +2,11 @@
 title: クラウドおよびエッジのスケール ユニットの製造実行ワークロード
 description: このトピックでは、製造実行ワークロードが クラウドおよびエッジのスケール ユニットと機能する方法について説明します。
 author: cabeln
+manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,25 +18,22 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068847"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967770"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットの製造実行ワークロード
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-> [!IMPORTANT]
-> 製造実行ワークロードは、現時点ではプレビューで使用できます。
->
+> [!WARNING]
 > ワークロード スケール ユニットで使用されている場合は、すべてのビジネス機能がパブリック プレビューで完全にサポートされているわけではありません。
->
-> 倉庫実行ワークロードがインストールされているスケール ユニットでは、プレビューの製造実行ワークロードを実行できません。
 
-製造実行では、スケール ユニットは以下の機能を提供します。
+エッジ ユニットがハブに接続されていない場合でも、製造実行において、クラウドおよびエッジのスケール ユニットは次の機能を提供します。
 
 - 機械オペレーターと作業現場監督は、運用生産計画にアクセスできます。
 - 機械オペレーターは、個々の製造ジョブを実行することによって、計画を最新の状態に保つことができます。
@@ -47,7 +46,7 @@ ms.locfileid: "8068847"
 
 次の図に示すように、製造ライフサイクルは、*計画*、*実行*、*確定* の 3 つのフェーズに分かれています。
 
-[![単一の環境を使用する場合の製造実行フェーズ](media/mes-phases.png "単一の環境を使用する場合の製造実行フェーズ。")](media/mes-phases-large.png)
+[![単一の環境を使用する場合の製造実行フェーズ](media/mes-phases.png "単一の環境を使用する場合の製造実行フェーズ")](media/mes-phases-large.png)
 
 _計画_ フェーズには、製品定義、計画、注文の作成、スケジューリング、リリースが含まれます。 このリリース手順は、_計画_ フェーズから _実行_ フェーズへの移行を示します。 製造オーダーをリリースすると、製造オーダー ジョブが生産現場に表示され、実行できるようになります。
 
@@ -57,7 +56,7 @@ _計画_ フェーズには、製品定義、計画、注文の作成、スケ�
 
 次の図に示すように、スケール ユニットを使用すると、_実行_ フェーズが別のワークロードとして分割されます。
 
-[![スケール ユニットが使用されている場合の製造実行フェーズ](media/mes-phases-workloads.png "スケール ユニットが使用されている場合の製造実行フェーズ。")](media/mes-phases-workloads-large.png)
+[![スケール ユニットが使用されている場合の製造実行フェーズ](media/mes-phases-workloads.png "スケール ユニットが使用されている場合の製造実行フェーズ")](media/mes-phases-workloads-large.png)
 
 このモデルでは、シングル インスタンス インストールから、ハブとスケール ユニットに基づくモデルに移動します。 _計画_ フェーズと _確定_ フェーズは、ハブ上のバックオフィス動作として実行し、製造実行ワークロードはスケール ユニット上で実行します。 データは、ハブとスケール ユニットの間で非同期に転送されます。
 
@@ -74,7 +73,6 @@ _計画_ フェーズには、製品定義、計画、注文の作成、スケ�
 - 仕損のレポート
 - 間接活動
 - 分割
-- 完成とプットアウェイのレポート (スケール ユニットで倉庫の実行ワークロードも実行する必要があります [スケール ユニットでの完了とプットアウェイのレポート](#RAF)も参照ください)
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>ハブでの製造実行ワークロードで作業します
 
@@ -90,7 +88,7 @@ Supply Chain Management のバッチ ジョブは、ワークロードから受�
 
 登録処理のログを確認するには、ハブにログインし、**生産管理 \> 定期タスク \> バックオフィス ワークロード管理 \> 作業登録処理ログ** に移動します。 **作業登録処理ログ** ページには、処理済の作業登録の一覧と各登録のステータスが表示されます。
 
-![作業登録処理のログ ページ。](media/mes-processing-log.png "作業登録処理のログ ページ")
+![作業登録処理のログ ページ](media/mes-processing-log.png "作業登録処理のログ ページ")
 
 一覧で登録を選択し、アクション ペインで次のいずれかのボタンを選択することによって、登録を行うことができます。
 
@@ -111,43 +109,3 @@ Supply Chain Management のバッチ ジョブは、ワークロードから受�
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>製造ハブからスケール ユニットへのメッセージ プロセッサ ジョブ
 
 _製造ハブからスケール ユニットへのメッセージ プロセッサ_ ジョブは、ハブのデータをスケール ユニットに処理します。 このジョブは、製造実行ワークロードがデプロイされると自動的に開始されます。 ただし、これは、**生産管理 \> 定期タスク \> バックオフィス ワークロード管理 \> 製造ハブからスケール ユニットへのメッセージ プロセッサ** に移動することで、いつでも手動で実行できます。
-
-<a name="RAF"></a>
-
-## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>スケール ユニットでの完了レポートとプットアウェイ レポート
-
-<!-- KFM: 
-This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
-
-### Enable and use report as finished and putaway on a scale unit -->
-
-現在のリリースでは、(完成品、共製品、新製品の) 完了レポートとプットアウェイ操作は、[倉庫の実行ワークロード](cloud-edge-workload-warehousing.md) (製造の実行ワークロードではなく) でサポートされています。 したがって、スケールユニットに接続してこの機能を使用するには、次の操作を行う必要があります。
-
-- 倉庫実行ワークロードと製造実行ワークロードの両方をスケール ユニットにインストールします。
-- Warehouse Management モバイル アプリケーションを使用して、完了を報告し、プットアウェイ操作を処理します。 生産現場の実行インターフェースは、現在これらのプロセスをサポートしていません。
-
-<!-- KFM: API details needed
-
-### Customize report as finished and putaway functionality
-
- -->
-
-## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>スケール単位での開始操作の有効化と使用
-
-現在のリリースでは、生産オーダーやバッチ オーダーの開始操作は、 [倉庫の実行ワークロード](cloud-edge-workload-warehousing.md) (製造の実行ワークロードではありません) でサポートされています。 したがって、スケールユニットに接続してこの機能を使用するには、次の操作を行う必要があります:
-
-- 倉庫実行ワークロードと製造実行ワークロードの両方をスケール ユニットにインストールします。
-- [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、*クラウドとエッジのスケールユニット機能の倉庫管理ワークロードでの生産注文開始* を有効にします。
-- Warehouse Management モバイル アプリを使用して、製造オーダーまたはバッチ オーダーを開始します。
-
-## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>スケール ユニットでの材料消費の有効化と使用
-
-現在のリリースでは、素材の消費量を登録するための Warehouse Management モバイルアプリのフローは、[倉庫の実行ワークロード](cloud-edge-workload-warehousing.md) (製造の実行ワークロードではありません) でサポートされています。 したがって、スケールユニットに接続してこの機能を使用するには、次の操作を行う必要があります:
-
-- 倉庫実行ワークロードと製造実行ワークロードの両方をスケール ユニットにインストールします。
-- [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) の *スケール 単位機能で、モバイル アプリケーションで材料消費の登録する* を有効にします。
-- Warehouse Management のモバイルアプリを使用して、素材の消費量を登録します。
-
-[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

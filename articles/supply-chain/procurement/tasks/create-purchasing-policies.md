@@ -1,24 +1,26 @@
 ---
 title: 購入ポリシーの作成
 description: このトピックでは、購買の業務プロセスに対応する購入ポリシーを作成する方法を説明します。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPurposeRule
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dde2df0f04ea8ed1b200ae731df7143cc8de3aae
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 86ffdff4cdb256fdae39de6228555da5fb88c707
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579499"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017037"
 ---
 # <a name="create-purchasing-policies"></a>購入ポリシーの作成
 
@@ -54,6 +56,3 @@ ms.locfileid: "7579499"
 4. **閉じる** を選択します。
 - 次に、購入ポリシーの他のポリシー ルールを設定できます。 ポリシー ルール タイプでは、1 つの調達ポリシー内で同時に有効なルールを重複させることはできないことに注意してください。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

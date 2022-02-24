@@ -71,6 +71,3 @@ ms.locfileid: "4461800"
     - 活動を削除するには、活動を展開し、活動ヘッダーのごみ箱ボタンを選択します。
 
 8. **保存** を選択します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

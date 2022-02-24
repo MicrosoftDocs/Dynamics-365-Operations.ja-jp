@@ -1,24 +1,26 @@
 ---
 title: RFQ 入札価格の入力と比較および契約の授与
 description: このトピックは、見積依頼 (RFQ) への返信を入力したり、入札の記録や比較をしたり、また仕入先の 1 つに契約を授与する方法を説明します。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8378a491e528c1e1166f0688e29f923a25f23eed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3f14b95a71397bf5879c97654620e1d4c22a1149
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579475"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016681"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>RFQ 入札価格の入力と比較および契約の授与
 
@@ -32,7 +34,7 @@ ms.locfileid: "7579475"
 
 ## <a name="enter-a-reply-as-a-vendor"></a>仕入先として返信を入力する
 
-1. **仕入先コラボレーション \> ワークスペース \> 仕入先の入札** の順に移動します。
+1. ダッシュボードで、**仕入先の入札** を選択します。
 2. **新しい入札の招待** の一覧で、送信したばかりの RFQ を見つけます。 RFQ を選択して、要求された内容を確認します。
 3. 追加された添付ファイルを確認するには、**RQF 添付ファイル** を選択します。
 4. フィールドを編集できるようにするには、**入札** を選択します。 **入札進捗状況** フィールドが **仕入先が更新中** に設定されていることを確認します。
@@ -104,6 +106,3 @@ ms.locfileid: "7579475"
 ## <a name="view-the-purchase-order-that-is-generated"></a>生成された発注書を表示する
 
 アクション ペインの **一般** タブで、**発注書** を選択します。 表示されるページに、入札を承認したときに生成された発注書が表示されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

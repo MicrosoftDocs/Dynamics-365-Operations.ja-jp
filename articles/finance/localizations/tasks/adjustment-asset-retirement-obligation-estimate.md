@@ -2,23 +2,26 @@
 title: 資産除去債務見積の調整
 description: 日本では、資産除去責務 (ARO) の最初の見積を調整できます。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationLine_JP, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 863aee008b17745a3c25a7f93040384e105ddc789362fd0e5dd3e5734ec35456
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d2799435590fdf8b12130df9785183444e4f79fb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748121"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408154"
 ---
 # <a name="adjustment-of-the-asset-retirement-obligation-estimate"></a>資産除去債務見積の調整
 
@@ -66,6 +69,3 @@ ms.locfileid: "6748121"
     * 調整が提案されていることを確認します。 提案された金額は現在の値に割引されます。  
 13. [転記] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

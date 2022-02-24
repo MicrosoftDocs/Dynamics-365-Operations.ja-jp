@@ -2,24 +2,26 @@
 title: コントロールの拡張機能
 description: この記事では、開発者がユーザー インターフェイスを拡張し、新しいユーザー インターフェイス パターンを定義できるようにするアーキテクチャについて説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 27461
 ms.assetid: f03f1fc6-4f8f-4f42-8e38-5ecba8eac413
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c933f5a03b20a81c5ea642967911f729bf15508d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f0f6ef364f49fc06f9825f8c2794bc0771cc4837
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783132"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682461"
 ---
 # <a name="control-extensibility"></a>コントロールの拡張機能
 
@@ -42,7 +44,4 @@ ms.locfileid: "7783132"
 
 ## <a name="control-extensibility-architecture-overview"></a>コントロールの拡張機能アーキテクチャの概要
 
-次の図は、関係するコンポーネントとそれらの相互関係を示しています。 [![拡張性アーキテクチャのコントロール。](./media/extensibilitycontrolarchitecture.png)](./media/extensibilitycontrolarchitecture.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+次の図は、関係するコンポーネントとそれらの相互関係を示しています。 [![拡張性アーキテクチャのコントロール](./media/extensibilitycontrolarchitecture.png)](./media/extensibilitycontrolarchitecture.png)

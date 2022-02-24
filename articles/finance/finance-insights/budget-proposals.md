@@ -1,10 +1,12 @@
 ---
-title: 予算案
+title: 予算案 (プレビュー)
 description: このトピックでは、組織の履歴データで機械学習モデルを使用して予算案を生成するプロセスについて説明します。
 author: panolte
-ms.date: 07/16/2021
+manager: AnnBe
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: roschlom
@@ -13,16 +15,17 @@ ms.search.region:
 ms.author: panolte
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: 572372e654d64998667a0c4b46ae728bf4c9c74a
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 3fc551496a060f83541af75dea5a79a05cb7ee8b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386725"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020925"
 ---
-# <a name="budget-proposals"></a>予算案
+# <a name="budget-proposals-preview"></a>予算案 (プレビュー)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 組織では、予算の準備にかなりの時間とリソースを費やします。 この作業の多くは、予算作成プロセスで使用されるデータの収集など、反復的な付加価値の低い作業です。 部署ごとの明細行ごとの予算を準備するには、追加の作業が必要です。 
 
@@ -96,4 +99,5 @@ ms.locfileid: "7386725"
 
 12 か月の財務諸表を Excel にエクスポートすると、折れ線グラフまたはスパーク線を簡単に挿入して、データのトレンドを表示するのに役立つ入力データまたは出力データのグラフィカル表示を提供できます。
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+#### <a name="privacy-notice"></a>プライバシー通知
+プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。

@@ -1,13 +1,16 @@
 ---
 title: IFRAME​​ モジュール
-description: このトピックでは、iframe モジュールについて取り上げ、Microsoft Dynamics 365 Commerce でサイトのページに追加する方法を説明します。
+description: このトピックでは、iframeモジュールを使用して、Microsoft Dynamics 365 Commerceでサイトのページに追加する方法を説明します。
 author: anupamar-ms
-ms.date: 11/04/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754017"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665399"
 ---
-# <a name="iframe-module"></a>iframe モジュール
+# <a name="iframe-module"></a>IFRAME​​ モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、iframe モジュールについて取り上げ、Microsoft Dynamics 365 Commerce でサイトのページに追加する方法を説明します。
+このトピックでは、iframeモジュールを使用して、Microsoft Dynamics 365 Commerceでサイトのページに追加する方法を説明します。
+
+## <a name="overview"></a>概要
 
 iframe モジュールは、サイトの外部コンテンツをホストする iframe (インライン フレーム) を提供します。 たとえば、どのサイトのページでも YouTube の動画や PDF ファイル ビューアをホストすることができます。 
 
@@ -37,7 +42,7 @@ iframe モジュールにはターゲットの URL が必要となります。 �
 
 以下の画像は、サイトページに外部動画を表示する iframe モジュールの例です。
 
-![外部動画を表示する iframe モジュールの例。](./media/ecommerce-iframe.PNG)
+![外部動画を表示する iframe モジュールの例](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>iframe モジュールのプロパティ
 
@@ -66,15 +71,9 @@ iframe モジュールをページに追加して外部動画を表示するに�
 1. 必要に応じて、 **ヘッダー** や **高さ** などのプロパティを設定します。
 1. **保存** を選択し、 **編集の完了** を選択してページにチェックインし、**発行** を選択して公開します。
 1. ご利用のサイトのマーケティング ページに移動します。 動画が iframe モジュールでレンダリングされていることが確認できます。
-
-> [!NOTE]
-> iFrame モジュールには外部コンテンツがホストされているため、サイトの作成者は、iFrame モジュール内でホストされているコンテンツが、それぞれの市場のコンテンツ制限ポリシーに違反していないように確認する必要があります。 iFrame モジュールを使用するページにコンテンツ違反がある場合、サイト作成者は、サイト ビルダーでページを開き、iFrame モジュール スロットで **モジュールの削除** を選択した後、ページを保存および再公開することで、iFrame モジュールを削除できます。
-
+ 
 ## <a name="additional-resources"></a>追加リソース
 
 [モジュール ライブラリの概要](starter-kit-overview.md)
 
 [コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

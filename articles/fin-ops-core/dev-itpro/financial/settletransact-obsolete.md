@@ -1,25 +1,27 @@
 ---
 title: CustTrans::settleTransaction を使用したトランザクションの決済
-description: このトピックでは、新しい CustTrans::settleTransaction メソッドについて説明を行い、CustTrans::settleTransact には実装されていない新機能について説明します。
+description: このトピックでは、新しいCustTrans::settleTransactionメソッドについて説明を行い、CustTrans::settleTransact には実装されていない新機能について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 25631
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 ms.search.region: Global
 ms.author: markskun
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: AX 10.0.4
-ms.openlocfilehash: 1866ea3f54c6f7caef555824326f2fefdb9560ed
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e1ee718abb6b16a483c15d8d665f84bfd4e9546c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782885"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679280"
 ---
 # <a name="settle-transactions-by-using-custtranssettletransaction"></a>CustTrans::settleTransaction を使用したトランザクションの決済
 
@@ -41,12 +43,6 @@ CustTable _custTable,
     ,DimSettlementType_RU _dimSettlementType = DimSettlementType_RU::None
     ,CustTrans _parentCustTrans = null)
 ```
-
-### <a name="what-does-obsolete-mean"></a>廃止とはなにか?
-
-メソッドが廃止としてマークされている場合、コードが不要になり、最終的に製品から削除される予定ということです。 多くの場合、廃止メソッドは使用できる代替メソッドを推奨します。 参照コードは、引き続き廃止メソッドと共に正常に動作します。 直接的なアクションは必要ありません。 ただし、置換メソッドを使用するには、参照コードをリファクタリングする必要があります。
-
-廃止プロセスの詳細については、[メソッドおよびメタデータ要素の廃止](../migration-upgrade/deprecation-deletion-apis.md) を参照してください。
 
 ### <a name="why-is-it-marked-as-obsolete"></a>なぜ刷新される必要があるのか。
 
@@ -140,5 +136,3 @@ CustTrans::settleTransaction(
 この機能はフライトを使用します。 このテストを行うには、非稼働環境にてフライトを有効にする必要があります。 非稼動環境でフライトをオンにする方法については、[データ管理の概要](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).を参照してください。
 
 フライトの名称は **EnableCustTransSettleTransaction** です。
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

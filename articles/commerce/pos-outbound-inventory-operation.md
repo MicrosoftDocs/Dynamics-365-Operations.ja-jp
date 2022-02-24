@@ -2,13 +2,16 @@
 title: POS の出庫在庫操作
 description: このトピックでは、販売時点管理 (POS) の出庫在庫操作の機能について説明します。
 author: hhaines
+manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,14 +19,14 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581140"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413639"
 ---
-# <a name="outbound-inventory-operation-in-pos"></a>POS でのアウトバウンド在庫操作
+# <a name="outbound-inventory-operation-in-pos"></a>POS の出庫在庫操作
 
 [!include [banner](includes/banner.md)]
 
@@ -71,7 +74,7 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.10 またはそれ以降で
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>前提条件: 入庫操作を POS 画面レイアウトに追加する
 
-組織で出庫操作機能を使用する前に、1 つ以上の [POS 画面レイアウト](/dynamics365/unified-operations/retail/pos-screen-layouts)に対して **出庫操作** の POS 操作を構成する必要があります。 新しい操作を実稼働環境に配置する前に、それを完全にテストして、使用できるようにユーザーをトレーニングしておく必要があります。
+組織で出庫操作機能を使用する前に、1 つ以上の [POS 画面レイアウト](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts)に対して **出庫操作** の POS 操作を構成する必要があります。 新しい操作を実稼働環境に配置する前に、それを完全にテストして、使用できるようにユーザーをトレーニングしておく必要があります。
 
 ## <a name="overview"></a>概要
 
@@ -116,7 +119,7 @@ POS アプリケーションから出庫操作を開始すると、リスト ペ
 
 ### <a name="over-delivery-shipping-validations"></a>超過配送の検証
 
-検証は、ドキュメント明細行のフルフィルメント プロセス中に行われます。 これには、超過配送の検証が含まれます。 ユーザーが移動オーダーで注文したよりも多くの在庫を出荷しようとしても、超過配送が設定されていないか、出荷された数量が移動オーダー明細行に設定された超過配送許容値を超えている場合、ユーザーにはエラーが表示され、超過した数量を出荷することはできません。
+検証は、ドキュメント明細行の入荷プロセス中に行われます。 これには、超過配送の検証が含まれます。 ユーザーが発注書で注文されたよりも多くの在庫を受け取ろうとしても、超過配送が設定されていないか、受け取った数量が発注書明細行に設定された超過配送許容値を超えている場合、ユーザーにはエラーが表示されます。超過した数量を受け取ることはできません。
 
 ### <a name="underdelivery-close-lines"></a>過少配送のクローズ ライン
 
@@ -190,6 +193,3 @@ POS から、新しい移動オーダー ドキュメントを作成できます
 ## <a name="related-topics"></a>関連トピック
 
 [POS の入庫在庫操作](pos-inbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

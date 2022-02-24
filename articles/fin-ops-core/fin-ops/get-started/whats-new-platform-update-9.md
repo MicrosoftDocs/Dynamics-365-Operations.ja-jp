@@ -2,9 +2,11 @@
 title: Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 (2017 年 7 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 の新機能または変更された機能について説明します。 このバージョンは 2017 年 7 月にリリースされました。
 author: tonyafehr
+manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: f4d35a9d2e9537b0db12d6ec4fb99ea65c8eeefb6b388a9dfd6f76e2e5c97a16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2b57475670eed8db99c87a9f5bfb923273f9596
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715180"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797803"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-9-july-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 9 (2017 年 7 月) の新機能および変更された機能
 
@@ -104,6 +106,3 @@ Print c.method1(33);
 
 > [!NOTE]
 > この問題は、ビルド コンピューター (参加リストがあり、コードをコンパイルする VM) として使用される仮想マシンで発生することがあります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

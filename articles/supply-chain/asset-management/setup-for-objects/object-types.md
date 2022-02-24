@@ -1,10 +1,12 @@
 ---
 title: 資産タイプ
 description: このトピックでは、資産管理で資産タイプを作成する方法について説明します。 また、資産タイプに関連する要素についても説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 295840c12f89bc6c6a4d53023985259ac761d6b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730374"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017420"
 ---
 # <a name="asset-types"></a>資産タイプ
 
@@ -45,9 +47,9 @@ ms.locfileid: "6730374"
 7. **保存** を選択します。
 8. **メンテナンス ジョブ タイプ** クイック タブで、メンテナンス タイプに関連するメンテナンス ジョブ タイプを選択します。
 
-    - メンテナンス ジョブ タイプを選択するには、**残りのメンテナンス ジョブ タイプ** フィールドでそれを選択し、右矢印ボタン ![右矢印ボタン。](media/29-setup-for-objects.png) を選択して、 **選択されたメンテナンス ジョブ タイプ** セクションに移行します。
-    - 使用可能なすべてのメンテナンス ジョブ タイプを選択するには、![すべての矢印を転送する。](media/30-setup-for-objects.png) ボタンを 選択します。 すべてのメンテナンス ジョブ タイプは、**残りのメンテナンス ジョブ タイプ** フィールドから、**選択されたメンテナンス ジョブ タイプ** フィールドに転送されます。
-    - メンテナンス ジョブ タイプの選択をキャンセルするには、**選択されたメンテナンス ジョブ タイプ** フィールドでそれを選択し、左矢印ボタン ![右矢印ボタン。](media/31-setup-for-objects.png) を選択して、 **残りのメンテナンス ジョブ タイプ** フィールドに移行します。
+    - メンテナンス ジョブ タイプを選択するには、**残りのメンテナンス ジョブ タイプ** フィールドでそれを選択し、右矢印ボタン![右矢印ボタン](media/29-setup-for-objects.png)を選択して、**選択されたメンテナンス ジョブ タイプ** セクションに移動します。
+    - 使用可能なすべてのメンテナンス ジョブ タイプを選択するには、![すべての矢印を転送](media/30-setup-for-objects.png) ボタンを選択します。 すべてのメンテナンス ジョブ タイプは、**残りのメンテナンス ジョブ タイプ** フィールドから、**選択されたメンテナンス ジョブ タイプ** フィールドに転送されます。
+    - メンテナンス ジョブタイプの選択をキャンセルするには、**選択されたメンテナンス ジョブ タイプ** フィールドでそれを選択し、左矢印ボタン![左矢印ボタン](media/31-setup-for-objects.png)を選択して、**残りのメンテナンス ジョブ タイプ** フィールドに移動します。
 
 9. 資産タイプに関連するカウンターを選択することもできます。 **カウンター** クイック タブで、ステップ 8 のメンテナンス ジョブ タイプについて説明されている方法を使用して選択を行います。 カウンターの設定の詳細については、[カウンター](counters.md) を参照してください。
 10. 資産タイプに関連する属性タイプを選択することもできます。 **属性タイプ** クイック タブで、ステップ 8 のメンテナンス ジョブ タイプについて説明されている方法を使用して選択を行います。 次に、属性タイプの優先順序を作成するには、**選択された属性タイプ** フィールドの属性タイプを選択し、上矢印と下矢印ボタンを使用して移動します。 属性タイプの順序は、この資産タイプを使用する資産に表示されます。 資産属性の詳細については、[メンテナンス属性タイプ](../setup-for-functional-locations/specification-types.md)を参照してください。
@@ -94,6 +96,3 @@ ms.locfileid: "6730374"
 
 選択した明細行の予備部品が資産管理の他の場所 (たとえば、資産やワーク オーダーに関連して) で使用されているかどうかを確認するには、**使用したアイテム** を選択して **使用したアイテム** ページを開きます。 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

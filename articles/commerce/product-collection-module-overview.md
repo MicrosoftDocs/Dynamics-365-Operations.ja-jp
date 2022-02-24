@@ -2,29 +2,36 @@
 title: 製品収集モジュール
 description: このトピックでは、Microsoft Dynamics 365 Commerce の製品収集モジュールの概要を示します。
 author: v-chgri
-ms.date: 01/28/2021
-ms.topic: overview
+manager: annbe
+ms.date: 09/15/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984547"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413624"
 ---
 # <a name="product-collection-modules"></a>製品収集モジュール
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の製品収集モジュールの概要を示します。
+
+## <a name="overview"></a>概要
 
 製品の検出は、小売業者が E コマース Web サイト上で顧客を確保するために使用する主要なツールです。 製品収集モジュールは、すばやく製品収集を作成するのに使用できる直感的なビジュアル インターフェースを提供することにより、小売業者が魅力的なショッピング体験を構築するのに役立ちます。
 
@@ -39,7 +46,7 @@ ms.locfileid: "7984547"
 
 次の図は、E コマース サイトで使用されている異なるタイプの製品収集を示しています。
 
-![E コマース サイトの異なるタイプの製品収集の例。](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![E コマース サイトの異なるタイプの製品収集の例](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > 常に製品収集モジュールを使用して、類似のタイプの製品グループを表示します。
@@ -60,10 +67,6 @@ ms.locfileid: "7984547"
 | よく一緒に購入される品目 | 人為的知能/機械学習 | このモジュールは、消費者の購買パターンを分析し、指定された製品と共によく購入される関連品目を勧めるために、機械学習を使用します。 このリストは、サイトの作成者がこのオプションを選択した場合に、サインインしたユーザーのパーソナライズされた結果を表示できます。 |
 | その他のお勧め           | 人為的知能/機械学習 | このモジュールは、消費者の購買パターンを分析し、指定された製品に関連する品目を勧めるために、機械学習を使用します。 このリストは、サイトの作成者がこのオプションを選択した場合に、サインインしたユーザーのパーソナライズされた結果を表示できます。 |
 | おすすめ              | 人為的知能/機械学習 | このモジュールは、機械学習を使用してサインインしたユーザーの購買パターンを分析し、それらの購買パターンに基づいてパーソナライズされた推奨事項を提供します。 ゲスト ユーザーの場合、このリストは折りたたまれています。 |
-
-## <a name="supported-modules"></a>サポートされているモジュール 
-
-製品収集モジュールは、ユーザーが製品収集ページから商品情報を表示し、カートに商品を追加することができる[クイックビューモジュール](quick-view-module.md)をサポートしています。
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>カテゴリ ページへの製品収集モジュールの追加
 
@@ -106,8 +109,3 @@ ms.locfileid: "7984547"
 [購入ボックス モジュール](add-buy-box.md)
 
 [製品推奨事項の概要](product-recommendations.md)
-
-[クイック ビュー モジュール](quick-view-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

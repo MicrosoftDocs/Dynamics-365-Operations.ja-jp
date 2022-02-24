@@ -2,23 +2,26 @@
 title: 個別資産の減損インジケーターの管理
 description: このタスクを使用して、個別資産の減損インジケーターの管理方法を把握します。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetImpairmentIndicator_JP, AssetImpairmentReview_JP, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4906f5b608cff2485bd4285d5f45e1e8b65711132ed7a1ced18101d7404b42c4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9065ac7bcc0e96e2f93df7cfc90d63a0bb201313
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775864"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408168"
 ---
 # <a name="maintain-impairment-indicators-on-individual-assets"></a>個別資産の減損インジケーターの管理
 
@@ -81,6 +84,3 @@ ms.locfileid: "6775864"
     * 1500000.00 を入力します。  
 18. [インジケーターの更新] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,25 +2,28 @@
 title: 標準原価の前提条件概要
 description: このトピックでは、標準原価を使用するための基本的な手順について説明します。
 author: AndersGirke
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventStdCostConv, CostingVersion
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c25f2109522c7ba549ef7c3ea429873d0e1f06e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9333bda96ceae378ab74892534db13761038a06c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986331"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967361"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>標準原価の前提条件概要
 
@@ -65,7 +68,8 @@ ms.locfileid: "7986331"
 既存の品目を標準原価在庫モデルに変更する顧客は、**標準原価換算** ページを使用する必要があります。
 
 
-## <a name="related-topics"></a>関連トピック
+<a name="related-topics"></a>関連トピック
+--------
 
 [標準原価換算の概要](standard-cost-conversion-overview.md)
 
@@ -75,6 +79,3 @@ ms.locfileid: "7986331"
 
 - [Dynamics 365 for Finance and Operations で直接材料の標準原価を設定する方法](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Dynamics 365 for Finance and Operations での標準直接人件費](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

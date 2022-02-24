@@ -2,9 +2,11 @@
 title: 実装プロジェクトの研修
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトをオンボードする方法を説明します。
 author: ClaudiaBetz-Haubold
-ms.date: 01/26/2022
+manager: AnnBe
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 230a5bcf373ae08ad1659df0695170a00b9ff67b
-ms.sourcegitcommit: 378c9340176956862687ae8d55c636486e3105d3
+ms.openlocfilehash: 457f4147f16a1a33409d826fcc66373965c6a37a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "8044475"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797694"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 
@@ -25,22 +27,19 @@ ms.locfileid: "8044475"
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して Finance and Operations プロジェクトをオンボードする方法を説明します。
 
-## <a name="microsoft-365-admin-center"></a>Microsoft 365 管理センター
+## <a name="microsoft-365-admin-center"></a>Microsoft 365 管理ビュー
 
-あなたの組織がFinance and Operationsのサブスクリプションを購入したら、次の手順を実行するテナントテナント管理者によって、あなたの組織のAzure Active Directory (Azure AD) テナントを有効にする必要があります。
+組織が Finance and Operations のサブスクリプションを購入したら、テナント管理者は、組織の Azure Active Directory (Azure AD) テナントを有効にし、次の手順を完了する必要があります。
 
-
-1. InPrivate/Incognito ブラウザー セッションを開き、[Microsoft 365 管理センター](https://admin.microsoft.com/) に移動します。
+1. InPrivate/Incognito ブラウズ セッションを開いて、[Microsoft 365 管理センター](https://admin.microsoft.com/) に移動します。
 2. テナント管理者の資格情報を使用してログインします。
 3. **請求 > 製品 & サービス** に移動して、配置するアプリケーションに対して有効なサブスクリプションがあることを確認します。 
    > [!NOTE]
-   > 有効なサブスクリプションが表示されない場合は、ライセンス パートナーに問い合わせて、サブスクリプション トランザクションの状態を確認してください。 適切な Azure AD テナントのためにサブスクリプションが購入されたことを確認することは重要です。  既定では、すべての Microsoft オンライン サービスが同じ Azure AD テナント上で実行されている必要があります。 ライセンスの遅延の最も頻繁な原因は、サブスクリプションが誤った Azure AD テナントに配置されることです。 
+   > 有効なサブスクリプションが表示されない場合は、ライセンス パートナーに問い合わせて、サブスクリプション トランザクションの状態と、サブスクリプションのテナントを確認してください。 既定では、すべてのMicrosoftオンラインサービスが同じAzure ADテナント上で実行されている必要があります。
 4. 問題のサブスクリプションが有効と表示されている場合は、LCS にサインインして実装のプロジェクト作成フローをトリガーすることにより、次のステップに進むことができます。
 5. 別のプライベートブラウザータブを開き、[Lifecycle Services](https://lcs.dynamics.com)に移動します。 現在のテナント管理者の資格情報を使用してアクセスするには、**ログイン** を選択します。
-   > [!NOTE]
-   > 政府のコミュニティ クラウド (GCC) と他のローカル クラウド配置オプションでは、接続エンドポイントが異なる場合があります。 詳細については、 [Dynamics 365 Finance と Dynamics 365 Supply Chain Management の主権クラウドとローカル クラウド展開オプション](../../dev-itpro//deployment/deployment-options-geo.md) を参照してください。
-7. 実装プロジェクトのプロビジョニングを完了するために、他の表示されたメッセージを承認して確認します。
-8. テナント管理者には、プロビジョニングされた実装プロジェクトのプロジェクト所有者セキュリティ ロールが割り当てられます。  
+6. 実装プロジェクトのプロビジョニングを完了するために、他の表示されたメッセージを承認して確認します。
+7. テナント管理者には、プロビジョニングされた実装プロジェクトのプロジェクト所有者セキュリティ ロールが割り当てられます。  
    > [!NOTE]
    > テナント管理者が実装に参加していない場合は、少なくとも 1 人の追加のプロジェクト所有者を実装プロジェクトに割り当てる必要があります。
 
@@ -48,17 +47,17 @@ ms.locfileid: "8044475"
 
 ## <a name="lcs-implementation-project-workspace"></a>LCS 実装プロジェクト ワークスペース
 
-テナント管理者が Finance and Operations サブスクリプションの有効化を完了し、必要に応じてプロジェクト所有者を追加した後、チーム メンバーは **実装プロジェクト** ワークスペースにアクセスできます。
+テナント管理者が Finance and Operations サブスクリプションの有効化を完了し、適切なプロジェクト所有者を追加した後、チーム メンバーは **実装プロジェクト** ワークスペースにアクセスできます。
 
 LCS で完了する最初の手順は、**プロジェクトのオンボード** です。 この手順は、Microsoft が管理するすべての環境を展開する前に、**2019 年 8 月 22 日 (PST) またはそれ以降** に作成されたすべての LCS 実装プロジェクトに必要です。 **プロジェクトのオンボード** 機能には、アクション センターの通知または LCS 実装プロジェクト メニューを使用してアクセスできます。 LCS の **プロジェクト オンボード** にアクセスするには、プロジェクト所有者セキュリティ ロールに割り当てられている必要があります。
 
-LCS を開始するには、 [財務と運用アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。 
+LCS を開始するには、[Finance and Operations アプリ顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。 
 
 ## <a name="fasttrack-onboarding-services"></a>FastTrack オンボード サービス
 
 LCS **実装プロジェクト** ワークスペースがプロビジョニングされたら、Microsoft FastTrack チームはオンボードの進捗状況を監視します。 LCS **実装プロジェクト** を作成してから数週間以内にプロジェクトのオンボードを完了しなかった場合、プロジェクト チームにアラームが送信されます。 
 
-FastTrack プログラムおよび提供されるサービスの詳細については、 [Microsoft FastTrack](/dynamics365/fasttrack/) を参照してください。
+FastTrack プログラムおよび提供されるサービスの詳細については、 [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md) を参照してください。
 
 LCS プロジェクト オンボードの詳細については、[LCS プロジェクト オンボードの](../../dev-itpro/lifecycle-services/project-onboarding.md)を参照してください。
 
@@ -74,6 +73,3 @@ LCS 実装プロジェクトに顧客やパートナー チームから主要な
 LCSプロジェクトのマイルストーン日付は、必ず最新の状態に保つようにしてください。 このように、さまざまなプロジェクトステージでお客様と連絡をとれます。 お客様が Go-live 日 により近づいたとき、マイクロソフトは、実稼働環境を配置する前に、プロジェクトの Go-live 評価のためにお客様と連絡を取ります。
 
 マイルストーンの日付は、LCS 実装方法に格納されます。 詳細については、「顧客向け LCS」トピックの [方法](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) セクションを参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

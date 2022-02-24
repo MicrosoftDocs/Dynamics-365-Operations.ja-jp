@@ -2,24 +2,26 @@
 title: 拡張可能なメソッドの書き込み
 description: このトピックでは、拡張可能メソッドを書き込む方法について説明します。
 author: smithanataraj
+manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 4920733d601200cdc916e78716e97a0e257c0381
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 462bbce4b7db57230e39d4e443fd76ec6a6f6250
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782451"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408846"
 ---
 # <a name="write-extensible-methods"></a>拡張可能なメソッドの書き込み
 
@@ -72,11 +74,11 @@ ms.locfileid: "7782451"
 
     **while ループ内でのリファクタリング ロジック**
 
-    ![while ブロックのリファクタリング (リファクタリング前)。](media/ExtensibleMethods1.png)
+    ![while ブロックのリファクタリング (以前)](media/ExtensibleMethods1.png)
 
     **リファクタリング後の拡張可能メソッド**
 
-    ![while ブロックのリファクタリング (リファクタリング後)。](media/ExtensibleMethods2.png)
+    ![while ブロックのリファクタリング (以後)](media/ExtensibleMethods2.png)
 
 + **If..else ステートメント**
 
@@ -98,11 +100,11 @@ ms.locfileid: "7782451"
 
     **条件が保護されているメソッドにリファクタリングされる場合**
 
-    ![スロー (スロー前)。](media/ExtensibleMethods3.png)
+    ![スロー (前)](media/ExtensibleMethods3.png)
 
     **リファクタリング後の拡張可能メソッド**
 
-    ![スロー (スロー後)。](media/ExtensibleMethods4.png)
+    ![スロー (後)](media/ExtensibleMethods4.png)
 
 + **作成、読み取り、更新、および削除 (CRUD) ステートメント**
 
@@ -110,6 +112,3 @@ ms.locfileid: "7782451"
     - **SysQueryInsertRecordSet** を使用して、insert_recordset をクエリに変換します。
     - select ステートメントではフィールド リストは避けてください。 この方法では、拡張することがなく、拡張担当者が追加のフィールドを取得できるようにすることができます。
     - クエリ範囲で **in** キーワードを使用し、拡張担当者が値をさらにクエリ範囲に追加できるようにします。 この方法は特に、列挙値を持つクエリ範囲にお勧めします。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

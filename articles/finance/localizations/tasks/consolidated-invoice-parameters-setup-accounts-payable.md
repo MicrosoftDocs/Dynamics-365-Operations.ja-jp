@@ -1,24 +1,27 @@
 ---
 title: 月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定
-description: このトピックでは、月次締め請求書の設定と構成について説明します。
+description: 日本では、日本の商習慣に合わせて月次締め請求書を有効にできます。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters, PaymDay, PaymTerm
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3f2dfe2e571772f0418cd4a84fd1114fd6c54920
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 59900cbbd2912daa0f6f31c8ebe83736be87b2d8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601468"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408162"
 ---
 # <a name="configure-consolidated-invoice-parameters-and-setup-for-accounts-payable"></a>月次締め請求書のパラメーターのコンフィギュレーションと買掛金勘定の設定
 
@@ -54,6 +57,3 @@ ms.locfileid: "7601468"
     * [締日] は R1 リリースでは表示されません。 代わりに [当月] を選択できます。 この結果、手動での調整を必要とするわずかな差が生じる場合があります。   
 4. [支払期日] フィールドに値を入力します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Dynamics 365 Commerce 認証フロー
 description: このトピックでは、Microsoft Dynamics 365 Commerce のさまざまな認証フローの概要を示します。
 author: samjarawan
+manager: AnnBe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 2e7f4d2c06e60cc14b32d5aa9b8c4167d8304b52c67d6ff1a39cdea462682460
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d4f94fe234f80e5f0fe0a85151d017a72987c4f2
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735692"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584303"
 ---
 # <a name="dynamics-365-commerce-authentication-flows"></a>Dynamics 365 Commerce 認証フロー
 
@@ -67,25 +70,25 @@ Commerce Scale Unit API とそのアクセス制限の完全な一覧につい�
 
 次の図は、Commerce の POS 従業員認証フローを示しています。
 
-<a href="/dynamics365/commerce/media/arch-auth-flow-1.jpg" target="_blank">![Dynamics 365 POS 従業員認証フロー。](./media/arch-auth-flow-1.jpg)</a>
+<a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-1.jpg" target="_blank">![Dynamics 365 POS 従業員認証フロー](./media/arch-auth-flow-1.jpg)</a>
 
 ## <a name="dynamics-365-e-commerce-customer-authentication-flows"></a>Dynamics 365 E コマース顧客認証フロー
 
 次の図は、Commerce の E コマース フローを示しています。
 
-<a href="/dynamics365/commerce/media/arch-auth-flow-2.jpg" target="_blank">![Dynamics 365 E コマース顧客認証フロー。](./media/arch-auth-flow-2.jpg)</a>
+<a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-2.jpg" target="_blank">![Dynamics 365 E コマース顧客認証フロー](./media/arch-auth-flow-2.jpg)</a>
 
 ## <a name="third-party-e-commerce-customer-authentication-flows"></a>サード パーティ E コマースの顧客認証フロー
 
 次の図は、Commerce のサード パーティ E コマースの顧客認証フローを示しています。
 
-<a href="/dynamics365/commerce/media/arch-auth-flow-3.jpg" target="_blank">![サード パーティ E コマースの顧客認証フロー。](./media/arch-auth-flow-3.jpg)</a>
+<a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-3.jpg" target="_blank">![サード パーティ E コマースの顧客認証フロー](./media/arch-auth-flow-3.jpg)</a>
 
 ## <a name="third-party-application-authentication-flows"></a>サード パーティ製アプリケーションの認証フロー
 
 次の図は、Commerce のサード パーティ製アプリケーションの認証フローを示しています。
 
-<a href="/dynamics365/commerce/media/arch-auth-flow-4.jpg" target="_blank">![サード パーティ製アプリケーションの認証フロー。](./media/arch-auth-flow-4.jpg)</a>
+<a href="https://docs.microsoft.com/dynamics365/commerce/media/arch-auth-flow-4.jpg" target="_blank">![サード パーティ製アプリケーションの認証フロー](./media/arch-auth-flow-4.jpg)</a>
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -106,6 +109,3 @@ Commerce Scale Unit API とそのアクセス制限の完全な一覧につい�
 [認証プロバイダーのコンフィギュレーション](/dev-itpro/configure-authentication-providers.md)
 
 [販売時点管理 (POS) デバイスのライセンス認証](/dev-itpro/retail-device-activation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

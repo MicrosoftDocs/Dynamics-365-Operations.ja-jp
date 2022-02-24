@@ -2,9 +2,11 @@
 title: 稼働停止のレポート
 description: このトピックでは、Lifecycle Services (LCS) を通じて生産停止を報告する方法について説明します。
 author: angelmarshall
+manager: AnnBe
 ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 332d52757e82abb4c7499f48081aab762eb2ebb33432d29a79d425b3f86cc501
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd33aabc91ffb73636f098035840a0d105ec114e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777358"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681066"
 ---
 # <a name="report-a-production-outage"></a>稼働停止のレポート
 
@@ -52,11 +54,11 @@ Lifecycle Services (LCS) には、**レポート生産停止** と呼ばれる�
 1. LCS プロジェクトにログインします。  
 2. ハンバーガー メニューから **サポート** をクリックします。 
 
-  ![サポートをクリックします。](media/click-support.png)
+  ![サポートをクリック](media/click-support.png)
   
 3. **Microsoft に送信** タブで、**稼働停止のレポート** をクリックします。
 
-  ![サポートをクリックします。](media/report-production-outage.png)
+  ![サポートをクリック](media/report-production-outage.png)
   
 4. プロダクションの停止を確認し、ドロップダウン リストから停止シナリオを選択してから、**続行** をクリックします。
 5. 停止に関するタイトルと詳細を追加して、**次** をクリックします。
@@ -67,6 +69,3 @@ LCS で稼働停止をレポートできない場合は [電話サポート](clo
 
 > [!Note]
 > 停止シナリオに状況が一覧表示されていない場合は、LCS を通じてサポート インシデントを入力します。 Microsoft のサポート エンジニアによる最初の調査中に、状況が現在の稼働停止シナリオのリストに合っていないことがわかった場合、サポート インシデントが現在のサポート計画に基づいて正しいサポート チームおよびサービス レベル契約 (SLA)  に転送されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

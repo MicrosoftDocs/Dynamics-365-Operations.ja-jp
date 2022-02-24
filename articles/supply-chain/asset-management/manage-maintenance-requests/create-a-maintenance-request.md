@@ -1,10 +1,12 @@
 ---
 title: メンテナンス要求の作成
 description: このトピックでは、資産管理でメンテナンス要求を作成する方法について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTableCreate
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b48a0504b79d2edf7815296312c7839052092e7d6773b7ebd5d38cbb59c9428
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714983"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019181"
 ---
 # <a name="create-maintenance-requests"></a>メンテナンス要求の作成
 
@@ -30,7 +32,7 @@ ms.locfileid: "6714983"
 
 メンテナンス要求は、メンテナンス作業者または生産作業者が機器の修理が必要であることを発見したが、修理作業をすぐに実行できない場合に使用できます。
 
-**例:** メンテナンス作業者が修理をしているときに、同じ場所にある別の資産の修理が必要であることがわかります。 しかし、メンテナンス作業者には、修理作業を行う時間や必要な予備部品がありません。 そこで、その資産にメンテナンス要求を作成し、問題についての簡単な説明を入力します。
+**例:** メンテナンス作業員が修理を行っている間に、同じ場所にある別の資産にも修理が必要であることがわかります。 しかし、メンテナンス作業者には、修理作業を行う時間や必要な予備部品がありません。 それで、資産に対してメンテナンス要求を作成し、問題についての簡単な説明を入力します。
 
 **全資産** または **有効な資産** ページ (**資産管理** \> **共通** \> **資産** \> **全資産** または **有効な資産**) の右側にある **関連情報** ウィンドウの **有効なメンテナンス要求** セクションは、選択した資産に添付された有効なメンテナンス要求を示します。
 
@@ -52,7 +54,7 @@ ms.locfileid: "6714983"
 11. **メモ** フィールドに、必要な追加のメモを入力します。
 12. **OK** を選択します。
 
-![メンテナンス要求を作成します。](media/03-manage-maintenance-requests.png)
+![メンテナンス要求の作成](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>メンテナンス要求の後続プロセス
 
@@ -67,10 +69,7 @@ ms.locfileid: "6714983"
 - メンテナンス作業タイプを選択し、この情報が関連する場合は、関連するメンテナンス作業バリアントおよび作業トレードを選択します。
 - **緯度** フィールドと **経度** フィールドに地理座標を入力します。 メンテナンス要求に追加された座標は、関連する作業指示書に自動的に転送されます。 
 
-![メンテナンス要求を更新します。](media/04-manage-maintenance-requests.png)
+![メンテナンス要求の更新](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > メンテナンス要求の作成時に資産を選択した場合は、資産に 1 つのエラーを追加できます。 メンテナンス要求を作成したら、必要に応じてさらにエラーを追加できます。 エラーを追加するには、**すべてのメンテナンス要求** ページの **資産エラー** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

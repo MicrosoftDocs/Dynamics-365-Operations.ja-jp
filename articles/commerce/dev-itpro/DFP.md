@@ -1,10 +1,12 @@
 ---
 title: Dynamics 365 Fraud Protection の Dynamics 365 Commerce との統合
 description: このトピックでは、Microsoft Dynamics 365 Fraud Protection と Dynamics 365 Commerce との間で使用可能な標準統合について説明します。
-author: BrianShook
+author: rubendel
+manager: AnnBe
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -12,15 +14,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b8c16465a6bc3e09f2f353d56c53f0a3ff81bfec
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: e18c6e83efa122daef0e9281ef1c81b0ead15262
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779634"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680402"
 ---
 # <a name="dynamics-365-fraud-protection-integration-with-dynamics-365-commerce"></a>Dynamics 365 Fraud Protection の Dynamics 365 Commerce との統合
 
@@ -76,7 +78,7 @@ Fraud Protection から最初に使用可能な一般的なオファリングは
 
 Fraud Protection 購入保護が注文の中止をおこなった場合は、ユーザーは次のメッセージを受信します : 「このオーダーは現時点では処理できません 後でもう一度お試しください。」
 
-![参照となる店舗から拒否された注文の例。](../media/Payments/SampleDFPReject.png)
+![参照となる店舗から拒否された注文の例](../media/Payments/SampleDFPReject.png)
 
 あるいは、マーチャント ルールがこの注文は承認されるべきと判断した場合は、不正スコアと Fraud Protection で判定された理由コードを含む回答が店舗へ送信されます。 初期統合では、Fraud Protection 評価はどちらにしても使われておらず、承認と拒否の両セクションの回答は保存されません。
 
@@ -107,19 +109,19 @@ Key Vault に保管されている Fraud Protection 証明書は、Commerce の�
 #### <a name="commerce-parameters-setup"></a>コマース パラメーターの設定
 
 1. **Retail とコマース** \> **バックオフィスの設定** \> **パラメーター** \> **コマース パラメーター** の順に移動します。
-2. **Dynamics Fraud Protection** タブで、**Dynamics Fraud Protection 統合を有効化** オプションを **はい** に設定します。
+2. **Dynamics Fraud Protection** タブで、**Dynamics Fraud Protection 統合を有効にする** オプションを **はい** に設定します。
 3. **構成** ファストタブで、Azure Active Directory (Azure AD) クライアント ID を追加し、その後、前に構成した Key Vault シークレットの名前を選択します。
 
     規定では、**評価の種類** フィールドは **評価** に設定します。 この場合は、Fraud Protection は不正の注文を従順にチェックしますが、積極的に注文の拒否はしません。 従って、マーチャントは Fraud Protection のリスク評価を自分たちの不正ツールと比較をし、承諾レートで Fraud Protection の影響を理解することができます。
 
     または、**評価の種類** フィールドは **保護** に設定できます。 この場合、Fraud Protection は「拒否」評価を返答し、承認に送信またはバック オフィスで作成される前に、不正な注文は中止されます。
 
-4. **Dynamics Fraud Protection エンドポイント URL** フィールドを設定する必要があります。 この URL は Fraud Protection から提供され、ユーザー受け入れテスト (UAT) と運用環境に渡り異なります。
+4. **Dynamics Fraud Protection エンドポイント URL** フィールドは設定する必要があります。 この URL は Fraud Protection から提供され、ユーザー受け入れテスト (UAT) と運用環境に渡り異なります。
 
-![Retail パラメーターでの Fraud Protection 設定。](../media/Payments/DFPSetupParams1.png)
+![Retail パラメーターでの Fraud Protection 設定](../media/Payments/DFPSetupParams1.png)
 
 > [!NOTE]
-> Key Vault 設定と Fraud Protection 設定は会社固有です。 Fraud Protection を運用環境に対して有効にするには、ユーザーインターフェイス (UI) を通して Azure AD クライアント ID は入力しません。 その代わり、[サービス要求](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) を作成および提出する必要があります。 要求のタイトルには、この要求が運用版 Commerce または Retail のための Fraud Protection 購入保護を構成するためであることを明確に示します。
+> Key Vault 設定と Fraud Protection 設定は会社固有です。 Fraud Protection を運用環境に対して有効にするには、ユーザーインターフェイス (UI) を通して Azure AD クライアント ID は入力しません。 その代わり、[サービス要求](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team) を作成および提出する必要があります。 要求のタイトルには、この要求が運用版 Commerce または Retail のための Fraud Protection 購入保護を構成するためであることを明確に示します。
 
 ## <a name="loss-prevention-in-commerce"></a>Commerce における損失防止
 
@@ -143,7 +145,7 @@ Fraud Protection を設定するには、 Dynamics 365 の営業担当者から�
 
 #### <a name="turn-on-data-lake-storage-gen2-for-your-commerce-environment"></a>Commerce 環境の Data Lake Storage Gen2 を有効にする
 
-データを Data Lake Storage Gen2 で使用できるようにするには、Commerce 環境でサービスを有効にしておく必要があります。 Commerce 環境の Data Lake Storage Gen2 を有効にする方法については、[Dynamics 365 Commerce 環境での Azure Data Lake Storage の有効化](../enable-adls-environment.md)を参照してください。
+データを Data Lake Storage Gen2 で使用できるようにするには、Commerce 環境でサービスを有効にしておく必要があります。 Commerce 環境の Data Lake Storage Gen2 を有効にする方法については、[Dynamics 365 Commerce 環境での Azure Data Lake Storage の有効化](https://docs.microsoft.com/dynamics365/commerce/enable-adls-environment)を参照してください。
 
 #### <a name="turn-on-loss-prevention"></a>損失防止の有効化
 
@@ -161,8 +163,5 @@ Microsoft にとってお客様のプライバシーは重要です。 詳細に
 
 ## <a name="related-articles"></a>関連記事
 
-- [支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Dynamics 365 支払データの使用](../payment-connector-data-fields.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Dynamics 365 支払データの使用](https://docs.microsoft.com/dynamics365/retail/payment-connector-data-fields)

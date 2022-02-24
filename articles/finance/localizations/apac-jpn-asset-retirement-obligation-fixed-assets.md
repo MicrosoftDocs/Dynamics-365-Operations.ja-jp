@@ -1,25 +1,28 @@
 ---
 title: 日本の固定資産の資産償却責務を設定します。
 description: この記事は、ARO の負債がどのように認識、償却、および未払となるか、および固定資産と ARO の負債が日本で除去される方法について説明します。
-author: EricWangChen
+author: yijialuan
+manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetRetirementObligation_JP, AssetRetirementObligationDocument_JP, AssetRetirementObligationExplorer_JP, AssetRetirementObligationLine_JP, AssetTable
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 10174
 ms.search.region: Japan
-ms.author: wangchen
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70040008361fe829c9dd31da4ecbf7f943f5a417
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: e4d3179ad299db60e0f1a0ed920012bbafc9e8b9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592649"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408183"
 ---
 # <a name="set-up-asset-retirement-obligation-for-fixed-assets-for-japan"></a>日本の固定資産の資産償却責務を設定します。
 
@@ -40,7 +43,7 @@ ms.locfileid: "7592649"
 > [!NOTE]
 >\* 手順 2 と 3 が、固定資産の耐用年数全体に複数回繰り返されます。
 
-![ARO トランザクションの T 字勘定での表示。](./media/aro-t-account.png) 
+![ARO トランザクションの T 字勘定での表示](./media/aro-t-account.png) 
 
 ## <a name="setup-information"></a>設定情報
 ARO を使用するには、次の設定手順を完了する必要があります。
@@ -48,7 +51,7 @@ ARO を使用するには、次の設定手順を完了する必要がありま�
 -   既定の帳簿、理由コード、および番号順序などの、基本的な固定資産パラメーターを **固定資産パラメーター** ページで設定します
 -   固定資産グループを **固定資産グループ** ページで定義します
 -   減価償却の会計カレンダーを設定します
--   現在の市場の割引率を使用する割引率スケジュール (キャッシュ フロー割引率) を設定して、ARO 金額を計算します
+-   現在の市場の割引率を使用する割引率スケジュールを設定して、ARO 金額を計算します
 -   資産に使用する ARO タイプと、ARO 金額の変更を転記する頻度を指定します
 -   ARO の見積償却原価計画を設定し、資産の耐用年数の会計期間ごとに ARO 金額をシミュレーションします
 -   **資本化資産償却責務** と **資産償却債務 - 増加** **経費** のドキュメント タイプで使用する転記プロファイルを設定します。
@@ -66,6 +69,3 @@ ARO を使用するには、次の設定手順を完了する必要がありま�
 |    コンフィギュレーション キー     | アプリケーション オブジェクト ツリー (AOT) の<strong>データ ディクショナリ</strong> &gt; <strong>コンフィギュレーション キー</strong> ノードで、固定<strong>資産</strong>のコンフィギュレーション キーが使用できることを確認します。 |
 | セキュリティ ロールおよび職務 |                                                  このタスクを実行するには、<strong>固定資産の管理</strong>のセキュリティ ロールのメンバーである必要があります。                                                  |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

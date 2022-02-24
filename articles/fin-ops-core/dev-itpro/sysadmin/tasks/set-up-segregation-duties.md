@@ -2,9 +2,11 @@
 title: 職務分掌の設定
 description: 異なるユーザーが実行する必要があるタスクを分割するルールを設定できます。
 author: peakerbl
+manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesRule
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c06ce9325d7b0894ba53d6b9782f495a48280d45e538b048d883ab86f05dabf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bcbd32131f9980a4f55e91b9d7ad48171069f72e
+ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755751"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "4826397"
 ---
 # <a name="set-up-segregation-of-duties"></a>職務分掌の設定
 
@@ -40,6 +42,3 @@ ms.locfileid: "6755751"
 
 > [!IMPORTANT] 
 > 職務の分離に関するルールへの準拠は、ルールを作成する際には検証されません。 既存のロールの競合を作成するルールを作成できます。 既存のユーザー ロールの割り当てが、新しいルールと競合している可能性があります。 ルールを作成または変更した後で、コンプライアンスを検証する必要があります。 詳細については、[職務分掌の競合の識別と解決](identify-resolve-conflicts-segregation-duties.md) を参照してください
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

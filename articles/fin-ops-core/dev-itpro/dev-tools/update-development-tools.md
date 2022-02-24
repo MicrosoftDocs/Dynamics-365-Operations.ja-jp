@@ -2,22 +2,26 @@
 title: Visual Studio 開発ツールの更新
 description: このトピックでは、開発ツールを更新する方法について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 07/18/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 33571
 ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16da1373437408ffe914eb35f05cf74cdd11f08f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 419a67b0755fa010e2824014069142cf90327e30
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781897"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408672"
 ---
 # <a name="update-the-visual-studio-development-tools"></a>Visual Studio 開発ツールの更新
 
@@ -53,6 +57,3 @@ ms.locfileid: "7781897"
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

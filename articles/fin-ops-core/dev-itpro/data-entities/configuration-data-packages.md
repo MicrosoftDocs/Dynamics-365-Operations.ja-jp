@@ -2,9 +2,11 @@
 title: コンフィギュレーション データ パッケージ
 description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースのコンフィギュレーション データ パッケージの概要を説明します。
 author: saraschi2
+manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -13,19 +15,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 67b356f2488a220090992d578ed7045d5a8fa1a0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3c8566bc8b77fc69590aa6563c76ac98dfd65f90
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065087"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679397"
 ---
 # <a name="configuration-data-packages"></a>コンフィギュレーション データ パッケージ
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 > [!IMPORTANT]
 > このトピックは、Microsoft Dynamics 365 for Finance and Operations の 2017 年 7 月リリースにのみ適用されます。 それ以降にリリースされたバージョンを実行している場合は、 [会社間または法人間での構成データのコピー](copy-configuration.md) のトピックを参照してください。 
@@ -323,6 +322,3 @@ LCS から構成データ パッケージにアクセスすることができま
 | 配送条件                                       |                     |                 | x           |
 | 支払条件                                        |                     |                 | x           |
 | 割引合計顧客グループ                          |                     |                 | x           |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

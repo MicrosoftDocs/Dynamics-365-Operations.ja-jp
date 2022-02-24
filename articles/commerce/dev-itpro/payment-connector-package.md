@@ -2,26 +2,28 @@
 title: Finance and Operations 配置用コマース支払パッケージの作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce の Finance and Operations 配置用に支払コネクタをパッケージ化する方法について説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 74f8599b1ec1133ceac4b866fa92b76c7d1e06b5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: efad7d429f8bd63751a21a2d9c95180b8cd7dd36
+ms.sourcegitcommit: cd0860e47dcc6666911ce8ca084dd717eca65979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781815"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "4858156"
 ---
-# <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations のデプロイのための Commerce 支払パッケージの作成
+# <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations 配置用コマース支払パッケージの作成
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +46,7 @@ ms.locfileid: "7781815"
 
     モデル名には、**RetailPaymentConnectors** の接頭語を付ける必要があります。 この接頭語の後に、カスタム モデル名に関する情報を追加します。 たとえば、作成するモデルには **RetailPaymentConnectorsCustomConnector** という名前が付けられます。 **RetailPaymentConnectors** の接頭語で始まるモデル名のみが、コマース支払コネクタ オプションに読み込まれます。
 
-    ![モデルの作成ウィザードにパラメーター ページを追加します。](./media/CreateModel.png)
+    ![モデルの作成ウィザードでのパラメーター ページの追加](./media/CreateModel.png)
 
 3. **新しいパッケージの作成** オプションを選択し、**次へ** を選択します。
 4. 必要な参照パッケージを選択し、**次へ** を選択します。
@@ -52,14 +54,9 @@ ms.locfileid: "7781815"
 6. ソリューション エクスプローラーで、プロジェクトを選択し、**参照** を右クリックしてから、**参照の追加** を選択します。
 7. すべての支払コネクタ アセンブリとその依存関係を、プロジェクトに参照として追加します。
 
-    ![参照ダイアログ ボックスを追加します。](./media/Reference.png)
-    
-[!NOTE]
-> すべての支払いコネクタ dll は移動可能である必要があります。移動可能および移動不可の支払いコネクタ dll があると、コネクタの読み取り時に問題が発生します。
+    ![参照ダイアログ ボックスの追加](./media/Reference.png)
 
 8. 拡張機能を実装するのに HTML と CSS ファイルが必要な場合 、それらをリソース ファイルとしてプロジェクトに追加します。 配置中は、HTML ファイルが AosService\WebRoot\Resources\Html フォルダーにコピーされます。 CSS ファイルは AosService\WebRoot\Resources\Styles フォルダーにコピーされ、次の URL 形式を使用してアクセスすることができます。
-
-例: GetPaymentAcceptPoint の実装は、必要に応じてこの URL を返す更新する必要があります。
 
 ```
 https://AOSUrl/resources/html/Myhtml.html
@@ -71,13 +68,13 @@ https://AOSUrl/resources/styles/Mycss.css
 9. 支払コネクタに関連付けられているその他の支払 X++ 拡張機能がない場合、ソリューションをビルドします。
 
 > [!NOTE]
-> 他の拡張機能パッケージが存在しない場合は、次の手順に進みます。 追加の拡張機能パッケージがある場合は、すべてを 1 つの配置可能なパッケージに結合させます。 これを行わないと、このパッケージは他のパッケージを上書きします。 詳細については、「[オールインワン配置可能パッケージ](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md)」を参照してください。
+> 他の拡張機能パッケージが存在しない場合は、次の手順に進みます。 追加の拡張機能パッケージがある場合は、すべてを 1 つの配置可能なパッケージに結合させます。 これを行わないと、このパッケージは他のパッケージを上書きします。 詳細については、「[オールインワン配置可能パッケージ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages)」を参照してください。
 
 10. 配備可能なパッケージを作成するには、**Dynamics 365** メニューで、**配置 \> 配置パッケージの作成** を選択します。
 11. 以前に作成したモデルを選択し、パッケージ ファイルの場所を指定してから、**作成** を選択します。
 
 
-    ![配置パッケージ ダイアログ ボックスを作成します。](./media/Create.png)
+    ![配置パッケージ ダイアログ ボックスの作成](./media/Create.png)
 
     Visual Studio はモデルをビルドし、配置可能なパッケージを作成します。
 
@@ -91,6 +88,3 @@ https://AOSUrl/resources/styles/Mycss.css
 ## <a name="remove-a-deployable-package"></a>配置可能パッケージの削除
 
 環境から配置可能パッケージをアンインストールまたは削除する方法についての詳細は、[パッケージのアンインストール](../../fin-ops-core/dev-itpro/deployment/uninstall-deployable-package.md) を参照してください。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

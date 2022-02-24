@@ -2,9 +2,11 @@
 title: 生成されたレポート結果を追跡し、ベースライン値と比較する
 description: このトピックでは、ベースライン レポート値で生成された電子申告 (ER) レポートの結果を比較する方法について説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9fabdef96b02747c84a76bf42997633842f185e9
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: d89922bd10b6db17d3fee22409137d6ec966858b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605208"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682826"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>生成されたレポート結果を追跡し、ベースライン値と比較する
 
@@ -52,7 +54,7 @@ ms.locfileid: "7605208"
 2. **クラス** フィールドに、**ファイルの添付** と入力します。
 3. **グループ** フィールドには、**ファイル** と入力します。
 
-![ドキュメント タイプ ページ。](media/GER-BaselineSample-SetupDocumentType.PNG "ドキュメント タイプ ページのスクリーンショット")
+![ドキュメント タイプ ページ](media/GER-BaselineSample-SetupDocumentType.PNG "ドキュメント タイプ ページのスクリーンショット")
 
 > [!NOTE]
 > ER ベースライン機能を使用する予定のデータ セットごとに、同じ名前を持つ新しいドキュメント タイプを構成する必要があります。
@@ -61,11 +63,11 @@ ms.locfileid: "7605208"
 
 1. **関連リンク** セクションの **電子申告** ワークスペースで、**電子申告パラメーター** を選択します。
 
-    ![電子申告ワークスペース。](media/GER-BaselineSample-ERWorkspace.PNG "電子申告ワークスペースのスクリーンショット")
+    ![電子申告ワークスペース](media/GER-BaselineSample-ERWorkspace.PNG "電子申告ワークスペースのスクリーンショット")
 
 2. **ベースライン** フィールドの **添付ファイル** タブで、作成したドキュメント タイプを入力または選択します。
 
-    ![電子申告パラメーター ページの添付ファイル タブ。](media/GER-BaselineSample-ERParameters.PNG "電子申告パラメーターのスクリーンショット")
+    ![電子申告パラメーター ページの添付ファイルタブ](media/GER-BaselineSample-ERParameters.PNG "電子申告パラメーターのスクリーンショット")
 
 3. **保存** を選択して、**電子申告パラメーター** ページを閉じます。
 
@@ -76,7 +78,7 @@ ms.locfileid: "7605208"
 3. **名前** フィールドのドロップダウン ダイアログ ボックスに、**ER ベースラインを学習するためのモデル** と入力します。
 4. **構成の作成** を選択して、新しい ER データ モデル エントリの作成を確認します。
 
-![構成ダイアログ ボックスの作成 (新しい ER モデル構成の追加)。](media/GER-BaselineSample-ModelAdd.PNG "構成の作成ドロップダウン ダイアログボックスのスクリーンショット")
+![構成の作成ドロップダウン ダイアログボックス](media/GER-BaselineSample-ModelAdd.PNG "構成の作成ドロップダウン ダイアログボックスのスクリーンショット")
 
 ### <a name="design-a-data-model"></a>データ モデルのデザイン
 
@@ -90,7 +92,7 @@ ms.locfileid: "7605208"
 8. **ステータスの変更** を選択します。
 9. **完了** を選択し、**OK** を選択します。
 
-![構成ページ。](media/GER-BaselineSample-ModelComplete.PNG "構成ページのスクリーンショット")
+![構成ページ](media/GER-BaselineSample-ModelComplete.PNG "構成ページのスクリーンショット")
 
 ### <a name="add-a-new-er-format-configuration"></a>新しい ER 形式コンフィギュレーションを追加する
 
@@ -99,7 +101,7 @@ ms.locfileid: "7605208"
 3. **名前** フィールドに、**ER ベースラインを学習するための形式** を入力します。
 4. **構成の作成** を選択して、新しい ER 形式エントリの作成を確認します。
 
-![構成ダイアログ ボックスの作成 (新しい ER 形式構成の追加)。](media/GER-BaselineSample-FormatAdd.PNG "構成の作成ドロップダウン ダイアログボックスのスクリーンショット")
+![構成の作成ドロップダウン ダイアログボックス](media/GER-BaselineSample-FormatAdd.PNG "構成の作成ドロップダウン ダイアログボックスのスクリーンショット")
 
 ### <a name="design-a-format"></a>形式のデザイン
 
@@ -107,41 +109,41 @@ ms.locfileid: "7605208"
 
 1. アクション ウィンドウの **構成** ページで、**デザイナー** を選択します。
 2. **ルートの追加** を選択します。
-3. ドロップダウン ダイアログ ボックスで、次の手順に従います。
+2. ドロップダウン ダイアログ ボックスで、次の手順に従います。
 
     1. ツリーで、**Common\\File** を選択します。
     2. **名前** フィールドに、**アウトプット** と入力します。
     3. **OK** を選択します。
 
-4. **追加** を選択します。
-5. ドロップダウン ダイアログ ボックスで、次の手順に従います。
+3. **追加** を選択します。
+4. ドロップダウン ダイアログ ボックスで、次の手順に従います。
 
     1. ツリーで、**XML\\Element** を選択します。
     2. **名前** フィールドに、**ドキュメント** と入力します。
     3. **OK** を選択します。
 
-6. ツリーで、**出力\\ドキュメント** を選択します。
-7. **追加** を選択します。
-8. ドロップダウン ダイアログ ボックスで、次の手順に従います。
+5. ツリーで、**出力\\ドキュメント** を選択します。
+6. **追加** を選択します。
+7. ドロップダウン ダイアログ ボックスで、次の手順に従います。
 
     1. ツリーで、**XML\\Attribute** を選択します。
     2. **名前** フィールドに、**ID** と入力します。
     3. **OK** を選択します。
 
-    ![形式デザイナーのページ (ツリーで XML 属性が選択した状態)。](media/GER-BaselineSample-FormatLayoutDesign.PNG "形式デザイナー ページのスクリーンショット")
+    ![形式デザイナーのページ](media/GER-BaselineSample-FormatLayoutDesign.PNG "形式デザイナー ページのスクリーンショット")
 
-9. **マッピング** タブで、**削除** を選択します。
-10. **ルートの追加** を選択します。
-11. ドロップダウン ダイアログボックスのツリーで、**一般\\ユーザー入力パラメーター** を選択し、次の手順を実行します。
+8. **マッピング** タブで、**削除** を選択します。
+9. **ルートの追加** を選択します。
+10. ドロップダウン ダイアログボックスのツリーで、**一般\\ユーザー入力パラメーター** を選択し、次の手順を実行します。
 
     1. **名前** フィールドに、**ID** と入力します。
     2. **ラベル** フィールドで、**ID の入力** と入力します。
     3. **OK** を選択します。
 
-12. ツリーで、**出力\\ドキュメント\\ID** を選択します。
-13. **バインド** を選択してから、**保存** を選択します。
+11. ツリーで、**出力\\ドキュメント\\ID** を選択します。
+12. **バインド** を選択してから、**保存** を選択します。
 
-![ER 形式 デザイナー ページ (マッピング タブ)。](media/GER-BaselineSample-FormatMappingDesign.PNG "形式デザイナー ページのスクリーンショット")
+![形式デザイナーのページ](media/GER-BaselineSample-FormatMappingDesign.PNG "形式デザイナー ページのスクリーンショット")
 
 デザインされた構造に基づいて、構成された形式が XML ファイルを生成します。 この XML には、ユーザーが ER ランタイム ダイアログ ボックスに入力した値に設定された **ID** 属性を持つ **ルート** 要素が含まれています。
 
@@ -151,11 +153,11 @@ ms.locfileid: "7605208"
 2. **ID を入力** フィールドで、**1** と入力します。
 3. **OK** を選択します。
 
-    ![電子申告パラメーター ダイアログ ボックス。](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "電子レポート パラメーター ダイアログ ボックスのスクリーンショット")
+    ![電子申告パラメーター ダイアログ ボックス](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "電子レポート パラメーター ダイアログ ボックスのスクリーンショット")
 
 4. 生成された **out.Admin.xml** ファイルのローカル コピーを保存して、後でこの ER 形式のベースラインとして使用できるようにします。
 
-    ![構成ページの生成されたファイルに関する通知。](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "構成ページの生成されたファイルに関する通知のスクリーンショット")
+    ![構成ページの生成されたファイルに関する通知](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "構成ページの生成されたファイルに関する通知のスクリーンショット")
 
 ### <a name="configure-er-parameters-to-use-the-baseline-feature"></a>ER パラメーターを構成して、ベースライン機能を使用する
 
@@ -163,20 +165,20 @@ ms.locfileid: "7605208"
 2. **デバッグモードで実行する** オプションを **はい** に設定します。
 3. **OK** を選択します。
 
-![ユーザー パラメーター ダイアログ ボックス。](media/GER-BaselineSample-ERUserParameters.PNG "ユーザー パラメーター ダイアログ ボックスのスクリーンショット")
+![ユーザー パラメーター ダイアログ ボックス](media/GER-BaselineSample-ERUserParameters.PNG "ユーザー パラメーター ダイアログ ボックスのスクリーンショット")
 
 ### <a name="add-a-new-baseline-for-designed-er-format"></a>デザインされた ER 形式の新しいベースライン ファイルの追加
 
 1. **組織管理** \> **電子申告** \> **構成** の順に移動します。
 2. アクション ウィンドウで、**ベースライン** を選択します。
 
-    ![構成ページのベースライン ボタン。](media/GER-BaselineSample-OpenBaselinePage.PNG "構成ページのベースライン ボタンのスクリーンショット")
+    ![構成ページのベースライン ボタン](media/GER-BaselineSample-OpenBaselinePage.PNG "構成ページのベースライン ボタンのスクリーンショット")
 
 3. アクション ウィンドウで、**新規** を選択します。
 4. 以前に設計した **ER ベースライン形式を学ぶための形式** ER 形式を選択します。
 5. **保存** を選択します。
 
-![電子申告形式のベースライン ページ。](media/GER-BaselineSample-AddBaseline.PNG "電子申告形式のベースライン ページのスクリーンショット")
+![電子申告形式のベースライン ページ](media/GER-BaselineSample-AddBaseline.PNG "電子申告形式のベースライン ページのスクリーンショット")
 
 ベースラインは **ER ベースラインを学習するための形式** 形式に追加されます。
 
@@ -186,7 +188,7 @@ ms.locfileid: "7605208"
 2. アクション ウィンドウで、**新規** \> **ファイル** を選択します。 ER パラメーターでは、**ファイル** ドキュメント タイプは、ベースライン ファイルの保存に使用されるドキュメント タイプとしてあらかじめ選択されている必要があります。
 3. **参照** を選択し、構成された ER 形式を先ほど実行したときに生成された、**out.Admin.xml** ファイルを選択します。
 
-    ![添付ファイル ページ。](media/GER-BaselineSample-UploadBaselineFile.PNG "添付ファイル ページのスクリーンショット")
+    ![添付ファイル ページ](media/GER-BaselineSample-UploadBaselineFile.PNG "添付ファイル ページのスクリーンショット")
 
 4. **添付ファイル** ページを閉じます。
 5. **ベースライン** クイックタブで **新規** を選択します。
@@ -201,7 +203,7 @@ ms.locfileid: "7605208"
 10. **ベースライン** フィールドで、**out.Admin** 添付ファイルを入力または選択します。
 11. **保存** を選択します。
 
-![電子申告形式のベースライン ページ、ベースラインを選択した状態の Baselines FastTab。](media/GER-BaselineSample-SetupBaselineLine.PNG "電子申告形式のベースライン ページのスクリーンショット")
+![電子申告形式のベースライン ページ](media/GER-BaselineSample-SetupBaselineLine.PNG "電子申告形式のベースライン ページのスクリーンショット")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>デザインされた ER 形式を実行し、ログを確認して結果を分析する
 
@@ -212,7 +214,7 @@ ms.locfileid: "7605208"
 5. **OK** を選択します。
 6. **組織管理** \> **電子申告** \> **構成デバッグ ログ** の順に移動します。
 
-    ![電子レポートの実行ログ ページ (等しいベースラインを表示した状態)。](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "電子申告実行ログ ページのスクリーンショット")
+    ![電子申告実行ログ ページ](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "電子申告実行ログ ページのスクリーンショット")
 
     > [!NOTE]
     > 実行ログには、生成されたファイルと構成されたベースラインとの比較の結果に関する情報が含まれます。 この例では、ログは、生成されたファイルとベースラインが同じであることを示しています。
@@ -228,7 +230,7 @@ ms.locfileid: "7605208"
 5. **OK** を選択します。
 6. **組織管理** \> **電子申告** \> **構成デバッグ ログ** の順に移動します。
 
-    ![電子レポートの実行ログ ページ (等しいベースラインを表示した状態)。](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "電子申告実行ログ ページのスクリーンショット")
+    ![電子申告実行ログ ページ](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "電子申告実行ログ ページのスクリーンショット")
 
     > [!NOTE]
     > 実行ログには、生成されたファイルと構成されたベースラインとの比較の結果に関する情報が含まれます。 この例では、ログは、生成されたファイルとベースラインが異なることを示しています。
@@ -241,6 +243,3 @@ ms.locfileid: "7605208"
 ## <a name="additional-resources"></a>追加リソース
 
 - [電子申告 (ER) フレームワークの構成](electronic-reporting-er-configure-parameters.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

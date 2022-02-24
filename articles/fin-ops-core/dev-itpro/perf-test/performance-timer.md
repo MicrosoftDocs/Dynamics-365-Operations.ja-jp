@@ -2,24 +2,26 @@
 title: パフォーマンス タイマー
 description: このトピックでは、パフォーマンス タイマーの概要を示します。このタイマーは、システムのパフォーマンスが低下する原因を特定するのに役立つツールです。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 27191
 ms.assetid: 64b8f266-a9e1-48ee-93c7-e082f21ddfa7
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5842214614ec1c78cf31a7d27174d11fb8781d1d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7c45a6f7b862062e603e5a9c1299af3f2e918205
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782701"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680448"
 ---
 # <a name="performance-timer"></a>パフォーマンス タイマー
 
@@ -29,11 +31,11 @@ ms.locfileid: "7782701"
 
 パフォーマンス タイマーを開くには、追加パラメーター debug=develop: https://<em>yoursite</em>.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop を使用して Web ページを開きます。注: デバッグ モードで実行すると、パフォーマンスが低下することがわかります。 F12 キーを押して、ブラウザーで使用可能なデバッグ ツールを使用し、パフォーマンスの大半の問題の概要を素早く取得することができます。 タイマーはここで表示されます。 
 
-[![画面上部に配置されたタイマーの例。](./media/timer.png)](./media/timer.png) 
+[![画面上部に配置されたタイマーの例](./media/timer.png)](./media/timer.png) 
 
 発注書一覧ページなどの一覧ページを開くには、[パフォーマンス タイマー] をクリックします。 次のスクリーン ショットは、クライアント時間とサーバー時間の区切り、および合計時間を示しています。 また、一連のパフォーマンス カウンターと高価なサーバー呼び出しを確認できます。 
 
-[![サーバー パフォーマンス カウンターを示すスクリーン ショット。](./media/2_timer.png)](./media/2_timer.png) 
+[![サーバー パフォーマンス カウンターを示すスクリーン ショット](./media/2_timer.png)](./media/2_timer.png) 
 
 サーバー パフォーマンス カウンターの詳細については、リンクのいずれかをクリックします。
 
@@ -44,9 +46,6 @@ ms.locfileid: "7782701"
 
 詳細については、リンクをクリックしてください。 次の画面で、個別の呼び出しによってトリガーされた SQL クエリの数、および価値が高い SQL クエリを表示できます。 
 
-[![呼び出しによってトリガーされた SQL クエリのリストの例。](./media/3_timer.png)](./media/3_timer.png) 
+[![呼び出しによってトリガーされた SQL クエリのリストの例](./media/3_timer.png)](./media/3_timer.png) 
 
 この情報は、トレースする内容とトラブルシューティングの開始場所の理解に役立ちます。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

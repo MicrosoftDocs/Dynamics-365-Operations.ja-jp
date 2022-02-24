@@ -74,6 +74,3 @@ Microsoft では、[Core HR ドライブのオペレーショナル エクセレ
 機能は、すべてのリリースで追加および更新されます 機能管理エクスペリエンスは、各リリースで提供されている機能のリストを表示できるワークスペースを提供します。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。
 
 機能管理に伴う変更の詳細については、[機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)を参照してください。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

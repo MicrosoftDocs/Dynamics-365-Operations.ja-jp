@@ -1,25 +1,27 @@
 ---
-title: 右から左へ読み書きする言語の財務分析コードと主勘定
-description: このトピックでは、右から左へ読み書きする言語を使用する際に考慮する必要がある決定について説明し、財務分析コードと主勘定を設定する必要があります。
-author: RyanCCarlson2
+title: 右から左へ読み書きする言語での財務分析コードと主勘定
+description: このトピックでは、右から左へ読み書きする言語を使用する際に考慮する必要がある実装の決定について説明し、財務分析コードと主勘定を設定する必要があります。
+author: aprilolson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 222564
 ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
 ms.search.region: global
-ms.author: rcarlson
+ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0c88b95ba7c596f4e8c1677c475ca92deba1cb71
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 192ed371eec24ed4e0532aaca341bb249a4933c7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781748"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680485"
 ---
 # <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>右から左へ読み書きする言語での財務分析コードと主勘定
 
@@ -36,6 +38,3 @@ ms.locfileid: "7781748"
 - 財務分析コードと主勘定の値で選択した勘定科目表の区切り記号を使用することは避けてください。
 
 これらのベスト プラクティスに従うことにより、システム全体のユーザー定義順序の一貫した表示を保証します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

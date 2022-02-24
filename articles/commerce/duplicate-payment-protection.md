@@ -1,26 +1,29 @@
 ---
 title: 重複支払の防止
 description: このトピックでは、Modern POS で Dynamics 365 Commerce が支払いの重複を防ぐ方法について説明します。
-author: BrianShook
+author: rubendel
+manager: AnnBe
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 67a09011d4ec824c1f1305341d7287aa9d7e1825
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 161d24480f4d970153e82b4e07f324669c216f65
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779888"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4409584"
 ---
 # <a name="duplicate-payments-prevention"></a>重複支払の防止
 
@@ -39,7 +42,7 @@ ms.locfileid: "7779888"
 
 このトピックでは、重複支払保護機能の次の側面について説明します。
 
-- [前提条件](#prerequisites) – Modern POS でこの機能を使用するため、一連の前提条件を設定します。
+- [前提条件](#prerequisites) – Modern POS でこの機能を活用するため、一連の前提条件を設定します。
 - [シナリオの詳細](#scenario-details) – 重複支払保護機能の対象となるシナリオの詳細な説明。
 - [トラブルシューティング](#troubleshooting) – 重複支払保護機能で問題が発生したときに実行する手順です。
 - [追加リソース](#additional-resources) – 重複支払保護機能を使用する場合に役に立つ関連記事の一覧。
@@ -93,7 +96,7 @@ POS またはネットワーク通信が回復した後は、レジ担当者が�
 - 取引を無効化しようとします。
 - 取引を停止しますか?
 
-![支払を回復します。](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
+![支払の回復](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
 
 レジ担当者が **OK** をクリックすると、支払が復旧し、支払明細行として買い物カゴに追加されます。
 
@@ -115,7 +118,7 @@ POS またはネットワーク通信が回復した後は、レジ担当者が�
 
     回復した支払が使用可能であることを示す新しいダイアログ ボックスが表示されます。 **無視** をクリックして復元した支払をスキップします。
 
-![支払の回復をスキップします。](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
+![支払の回復をスキップします](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
 
 ### <a name="what-to-do-if-the-customer-leaves-the-store"></a>顧客が店舗を出てしまった場合にすること
 
@@ -136,11 +139,8 @@ POS またはネットワーク通信が回復した後は、レジ担当者が�
 
 ### <a name="payment-recovery-fails"></a>支払の回復が失敗する時
 
-Modern POS で、前の支払の復元中にエラーが発生する可能性があります。 このエラーは、支払コネクタまたは支払ゲートウェイ/プロセッサが前の支払の復元を許可しないという問題がある時に発生します。 この問題を解決するには、前の支払を復元できないために起きているので、レジ担当者は [支払の回復をスキップする方法](#how-to-skip-payment-recovery) セクションで説明されているように、回復をスキップしなければなりません。
+Modern POS で、前の支払の復元中にエラーが発生する可能性があります。 これは、支払コネクタまたは支払ゲートウェイ/プロセッサが前の支払の復元を許可しないという問題がある時に発生します。 この問題を解決するには、前の支払を復元できないために起きているので、レジ担当者は [支払の回復をスキップする方法](#how-to-skip-payment-recovery) セクションで説明されているように、回復をスキップしなければなりません。
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)

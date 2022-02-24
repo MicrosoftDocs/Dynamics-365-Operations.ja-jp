@@ -1,40 +1,39 @@
 ---
-title: 管理の概要
-description: このトピックでは、Dynamics 365 Human Resources を設定、管理、およびトラブルシューティングするためのヘルプ トピックとその他のリソースの一覧を示します。
-author: twheeloc
-ms.date: 08/11/2021
-ms.topic: overview
+title: 概要
+description: この管理者ガイドは、Dynamics 365 Human Resources の設定、管理、およびトラブルシューティングに役立ちます。
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
+ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a403390132443f29f12e11914b7a0f08faffa973
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068412"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527864"
 ---
-# <a name="administration-overview"></a>管理の概要
+# <a name="overview"></a>概要
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-このトピックでは、Dynamics 365 Human Resources を設定、管理、およびトラブルシューティングするためのヘルプ トピックとその他のリソースの一覧を示します。
+この管理者ガイドは、Dynamics 365 Human Resources の設定、管理、およびトラブルシューティングに役立ちます。
 
 - [システム要件](hr-admin-system-requirements.md)
 
-- インスタンスの設定と管理
+- インスタンスの設定および管理
   - [Human Resources のプロビジョニング](hr-admin-setup-provision.md)
   - [インスタンスのコピー](hr-admin-setup-copy-instance.md)
   - [インスタンスの削除](hr-admin-setup-remove-instance.md)
@@ -42,15 +41,15 @@ ms.locfileid: "8068412"
 
 - データ統合の設定
   - [データ統合テクノロジの選択](hr-admin-integration-choose-technology.md)
-  - [Dataverse 統合のコンフィギュレーション](hr-admin-integration-common-data-service.md)
+  - [Common Data Service 統合のコンフィギュレーション](hr-admin-integration-common-data-service.md)
   - [Finance との統合のコンフィギュレーション](hr-admin-integration-finance.md)
   - [Dayforce との統合のコンフィギュレーション](hr-admin-integration-dayforce.md)
   - [定期的なデータ エクスポート アプリの作成](hr-admin-integration-recurring-data-export.md)
   - Office との統合
-    - [Office 統合のチュートリアル](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Excel でのエンティティ データの更新](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [[Excel で開く] エクスペリエンスの作成](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Office 統合のトラブルシューティング](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Office 統合のチュートリアル](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Excel でのエンティティ データの更新](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [[Excel で開く] エクスペリエンスの作成](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office 統合のトラブルシューティング](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [機能の管理](hr-admin-manage-features.md)
 
@@ -85,7 +84,7 @@ ms.locfileid: "8068412"
   - [タスク レコーダーを使用したドキュメントやトレーニングの作成](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Human Resources のトラブルシューティング
-  - [サポートの利用](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+  - [サポートの利用](hr-admin-troubleshooting-support.md)
   - [自動クリーンアップ タスクを使用したパフォーマンスの最適化](hr-admin-troubleshooting-batch-history.md)
   - [分析レポートが更新されない](hr-admin-troubleshooting-analytic-reports.md)
   - [Power Apps 管理センターで環境を作成できない](hr-admin-troubleshooting-power-apps.md)
@@ -94,23 +93,12 @@ ms.locfileid: "8068412"
   - [報酬プロセスを実行する](hr-admin-troubleshooting-compensation.md)
   - [LCS へのタスク ガイドの保存](hr-admin-troubleshooting-task-guide.md)
   - [セキュリティ ロールで個人住所にアクセスする](hr-admin-troubleshooting-private-addresses.md)
-  - [Human Resources が Dynamics 365アプリに表示されない](hr-admin-troubleshooting-not-in-apps.md)
+  - [Dynamics 365 アプリで Human Resources が表示されない](hr-admin-troubleshooting-not-in-apps.md)
   - [レポート オプション](hr-admin-troubleshooting-reporting.md)
   - [統合に関してよく寄せられる質問](hr-admin-troubleshooting-integration.md)
-
-## <a name="additional-resources"></a>追加リソース
-
-### <a name="elearning-courses"></a>eLearning コース
-オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Human Resources](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path) をご確認ください。
-
-### <a name="videos"></a>ビデオ
-
-[Microsoft Dynamics 365 YouTube チャンネル](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) のハウツー ビデオをご覧ください。
 
 ## <a name="see-also"></a>参照
 
 - [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)
 - [開発者ガイド](hr-developer-overview.md)
 - [ユーザー ガイド](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

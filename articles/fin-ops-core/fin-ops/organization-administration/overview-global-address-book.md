@@ -1,28 +1,28 @@
 ---
 title: グローバル アドレス帳の概要
-description: グローバル アドレス帳は、組織に関連付けられている人と組織の関係を理解するのに役立ちます。
+description: グローバル アドレス帳は、組織に関連付けられている人と組織の関係を理解するのに役立ちます。 たとえば、顧客がマーケティング キャンペーンの仕入先である場合や、組織の作業者が仕入先である場合があります。
 author: msftbrking
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyTable, DirPartyTableRoles
 audience: IT Pro
 ms.reviewer: sericks
-ms.custom:
-- "23521"
-- intro-internal
+ms.custom: 23521
 ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074
 ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8f2552e3523899105d724b537d8b9ab891789a7
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5f72d27ef188cf4f08690882d013486b1e254a5a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983116"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797010"
 ---
 # <a name="global-address-book-overview"></a>グローバル アドレス帳の概要
 
@@ -37,7 +37,7 @@ ms.locfileid: "7983116"
 
 次の図は、関係者レコード、関係者ロール、場所、およびトランザクションがアドレス帳とどのようにやり取りし、関連するかを示しています。 図が示すように、関係者レコードは 1 つ以上のアドレス帳に含めることができます。 各関係者レコードは、1 つ以上の場所や住所に格納でき、関係者ロールが割り当てられます。 パーティ レコードに割り当てられているロールには、それに関連付けられた特定のトランザクション タイプを割り当てることができます。 次のセクションでは、関係者ロール、場所、およびトランザクション タイプについて詳しく説明します。 次の図は、グローバル アドレス帳に関連して関係者、関係者の役割、場所、およびトランザクションが対話する方法をグラフで表したものです。
 
-[![AX エンティティおよびトランザクションのグローバル アドレス帳の相互作用。](./media/address-book-structure-300x157.png)](./media/address-book-structure.png)
+[![AX エンティティおよびトランザクションのグローバル アドレス帳の相互作用](./media/address-book-structure-300x157.png)](./media/address-book-structure.png)
 
 ### <a name="party-roles"></a>関係者ロール
 
@@ -70,6 +70,3 @@ ms.locfileid: "7983116"
 ### <a name="locations-and-transactions"></a>場所とトランザクション
 
 関係者が担うロールがトランザクションに含まれているとき、トランザクションの詳細が入力されると、その関係者の場所、住所、または連絡先情報にアクセスできます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

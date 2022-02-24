@@ -91,6 +91,3 @@ Microsoft Forms では、組織外のユーザーがアンケートやクイズ�
 > 統合オファー管理アプリは、包括採用アドオンでのみ使用できます。 詳細については、[Microsoft Dynamics 365 Talent - Attract のバージョンは何ですか](./attract-comprehensive-hiring.md) を参照してください。
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

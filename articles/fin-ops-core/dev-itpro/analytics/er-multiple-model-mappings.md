@@ -2,9 +2,11 @@
 title: 1 つのモデル ルートに対する複数の派生マッピングの管理
 description: このトピックでは、1 つのモデル ルートに対して構成された複数の派生マッピングを管理する方法について説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10363371713bd5a882b41900249e7061afc577ba6473fdb3356a822c8e48f8f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3116fe98f499637b3bc7f243ed1b5094853caa7e
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743290"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4826112"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>1 つのモデル ルートに対する複数の派生マッピングの管理
 
@@ -55,7 +57,7 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
 2. **ローカライズ構成** ページの、**構成** セクションで、**レポート構成** タイルを選択します。
 3. **構成** ページにある左ペインの構成ツリーで、**請求書モデル** を展開します。
 
-    ![構成ページでインポートされた構成を確認する。](./media/er-multiple-model-mappings-image1.png)
+    ![構成ページでインポートされた構成を確認する](./media/er-multiple-model-mappings-image1.png)
 
 4. **自由書式の請求書 (Excel)** 形式を確認する:
 
@@ -66,7 +68,7 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
     
        現在の ER 形式は、**請求書モデル** の **InvoiceCustomer** ルート定義を使用するように構成されます。 この形式を実行して **モデル** データ ソースが呼び出される場合、**InvoiceCustomer** ルート定義に対して構成されたモデル マッピングを使用して、アプリケーション データにアクセスし、データ モデルに入力します。
 
-        ![形式デザイナー ページでモデル データ ソースを確認する。](./media/er-multiple-model-mappings-image2.png)
+        ![形式デザイナー ページでモデル データ ソースを確認する](./media/er-multiple-model-mappings-image2.png)
 
     6. **形式デザイナー** ページを閉じます。
 
@@ -79,7 +81,7 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
         + **顧客請求書** モデル マッピングは、**請求書モデル** の **InvoiceCustomer** ルート定義に対して構成されます。 したがって、**自由書式の請求書 (Excel)** ER 形式を実行するときに、この ER 構成の **顧客請求書** モデル マッピングを選択して、アプリケーション データにアクセスし、データ モデルに入力することができます。
         + **プロジェクト請求書** モデル マッピングは、**請求書モデル** の **InvoiceProject** ルート定義に対して構成されます。 したがって、**プロジェクト請求書 (Excel)** ER 形式を実行するときに、この ER 構成の **プロジェクト請求書** モデル マッピングを選択して、アプリケーション データにアクセスし、データ モデルに入力することができます。
 
-        ![モデルからデータ ソースへのマッピング ページでの請求書モデル マッピング。](./media/er-multiple-model-mappings-image3.png)
+        ![モデルからデータ ソースへのマッピング ページでの請求書 モデル マッピング](./media/er-multiple-model-mappings-image3.png)
 
     4. **モデルからデータ ソースへのマッピング** ページを閉じます。
     5. **バージョン** クイックタブで、**削除** を選択して、この ER 構成のバージョン 240.175 より後のバージョンをすべて削除します。
@@ -90,7 +92,7 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
     2. アクション ウィンドウで、**デザイナー** を選択します。
     3. **モデルからデータ ソースへのマッピング** ページで、現在の ER モデル マッピング構成に **InvoiceProject** モデル マッピングが含まれており、このモデル マッピングが **請求書モデル** の **InvoiceProject** ルート定義に対して構成されていることを確認します。 **プロジェクト請求書 (Excel)** ER 形式を実行するときに、この ER 構成の **InvoiceProject** モデル マッピングを選択して、アプリケーション データにアクセスし、データ モデルに入力します。
 
-        ![モデルからデータ ソースへのマッピング ページでのプロジェクト請求書モデル マッピング。](./media/er-multiple-model-mappings-image4.png)
+        ![モデルからデータ ソースへのマッピング ページでのプロジェクト請求書モデル マッピング](./media/er-multiple-model-mappings-image4.png)
 
     4. **モデルからデータ ソースへのマッピング** ページを閉じます。
     5. **バージョン** クイックタブで、**削除** を選択して、この ER 構成のバージョン 226.35 より後のバージョンをすべて削除します。
@@ -115,7 +117,7 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
 
 7. アクション ペインで、**デザイナー** を選択して、この構成のモデル マッピングを確認します。
 
-    ![モデルからデータ ソースへのマッピング ページで請求書モデル マッピングを確認する。](./media/er-multiple-model-mappings-image5.png)
+    ![モデルからデータ ソースへのマッピング ページで請求書モデル マッピングを確認する](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > これで、デザイナー内でこの ER 構成の ER モデル マッピング コンポーネントを開き、カスタム ロジックを構成できます。 詳細については、[モデル マッピングの構成をカスタマイズする](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration) を参照してください。
@@ -126,7 +128,7 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
  
 > 構成 \<configuration names separated by commas\> 内の '\<model name\> (\<root descriptor\>)' データ モデルに複数のモデル マッピングが存在します。 構成の 1 つを既定として設定します。
 
-![構成ページで編集用の形式を開く。](./media/er-multiple-model-mappings-image6.gif)
+![構成ページで編集用の形式を開く](./media/er-multiple-model-mappings-image6.gif)
 
 ### <a name="customize-the-project-invoice-model-mapping-rdp-configuration"></a>プロジェクト請求書モデル マッピング (RDP) 構成のカスタマイズ
 
@@ -138,7 +140,7 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
 6. 構成ツリーで現在選択されている **プロジェクト請求書モデル マッピング Litware** 構成について、**ドラフトの実行** オプションを **はい** に設定します。
 7. アクション ペインで、**デザイナー** を選択して、この構成のモデル マッピングを確認します。
 
-    ![モデルからデータ ソースへのマッピング ページでカスタマイズされたプロジェクト請求書モデル マッピングを確認する。](./media/er-multiple-model-mappings-image7.png)
+    ![モデルからデータ ソースへのマッピング ページでカスタマイズされたプロジェクト請求書モデル マッピングを確認する](./media/er-multiple-model-mappings-image7.png)
 
 8. **モデルからデータ ソースへのマッピング** ページを閉じます。
 
@@ -149,7 +151,7 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
 1. **構成** ページにある左ペインの構成ツリーで、**請求書モデル マッピング Litware** を選択します。
 2. **モデル マッピングの既定値** オプションを **はい** に設定します。
 
-    ![構成ページでモデル マッピングを既定のモデル マッピングとして設定する。](./media/er-multiple-model-mappings-image8.png)
+    ![構成ページでモデル マッピングを既定のモデル マッピングとして設定する](./media/er-multiple-model-mappings-image8.png)
 
     この設定により、**顧客請求書コピー** モデル マッピングが、**自由書式の請求書 (Excel)** を実行するとき、または編集あるいは検証するときに使用されます。 **請求書モデル マッピング** 構成からの **顧客請求書** モデル マッピングは無視されます。
 
@@ -167,7 +169,7 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
 5. **モデルからデータ ソースへのマッピング** ページで、**編集** を選択して、必要に応じてページを編集可能にします。
 6. **プロジェクト請求書コピー** モデル マッピングを選択し、その **削除済** チェック ボックスを選択します。
 
-    ![モデルからデータ ソースへのマッピング ページでモデル マッピングを仮想的に削除するように設定する。](./media/er-multiple-model-mappings-image9.png)
+    ![モデルからデータ ソースへのマッピング ページでモデル マッピングを仮想的に削除するように設定する](./media/er-multiple-model-mappings-image9.png)
 
     この設定により、**請求書モデル マッピング Litware** 構成は、**InvoiceProject** ルート定義にモデル マッピングを持たないものとして処理されます。 **InvoiceProject コピー** モデル マッピングは既定で発行されます。 このモデル マッピングを含む構成 **プロジェクト請求書モデル マッピング Litware** は、既定の構成としてマークされます。 既定としてマークされているため、**プロジェクト請求書モデル マッピング (RDP)** 構成からの **InvoiceProject** モデル マッピングよりも優先順位が高くなります。
 
@@ -180,6 +182,3 @@ Finance の現在のインスタンスに標準的な ER 構成を追加する�
 - [個別の電子申告コンフィギュレーションで電子申告モデル マッピングを管理する](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [国のコンテキスト依存電子申告モデル マッピングを構成する](er-country-dependent-model-mapping.md)
 - [電子申告のフレームワーク API の変更点](er-apis-app10-0-11.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

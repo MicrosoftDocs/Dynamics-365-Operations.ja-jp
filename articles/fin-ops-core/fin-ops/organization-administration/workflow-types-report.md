@@ -2,9 +2,11 @@
 title: ワークフロー タイプのレポート
 description: このトピックでは、使用可能なワークフロー タイプを一覧表示するレポートを示します。
 author: ChrisGarty
-ms.date: 02/16/2021
+manager: AnnBe
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: cfd519bdcc73205415baf811e9f7fc0e1922d6a9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a948580c217579a930e605e02289b560e2c2a13f
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070918"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693884"
 ---
 # <a name="workflow-types-report"></a>ワークフロー タイプのレポート
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、使用可能なワークフロー タイプを一覧表示するレポートを示します。
 
@@ -34,7 +33,4 @@ ms.locfileid: "8070918"
 
 ## <a name="view-the-report"></a>レポートの表示
 
-[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) に含まれる **ワークフロー タイプ レポート** は、用意されているワークフローの各タイプが一覧表示されています。 レポートでは、ワークフローの各タイプの使用目的を説明し、各タイプのワークフローが組織内の特定の法人または組織全体に関連付けられているかどうかも示されます。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[ワークフロー タイプ レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)には、用意されているワークフローの各タイプが一覧表示されています。 レポートでは、ワークフローの各タイプの使用目的を説明し、各タイプのワークフローが組織内の特定の法人または組織全体に関連付けられているかどうかも示されます。 詳細については、[標準データ エンティティに関する情報の検索](../../dev-itpro/data-entities/data-entities-report.md) を参照してください。

@@ -1,26 +1,29 @@
 ---
 title: 支払 SDK でのチップのサポート
 description: このトピックでは、支払ソフトウェア開発キット (SDK) での支払ターミナルのチップのサポートについて説明します。
-author: BrianShook
+author: rubendel
+manager: annbe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 219bef01b42df5b9dc577fdd45420f23b736a810
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: b2d1f88407d4fe0e44f880cf06a1811868869ecc
+ms.sourcegitcommit: 0297fd1f594c59a39014a592231ce5999b173848
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779890"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4655717"
 ---
 # <a name="support-for-tipping-in-the-payments-sdk"></a>支払 SDK でのチップのサポート
 
@@ -74,6 +77,3 @@ Adyen コネクタにはチップ サポートが含まれています。 承認
 
 - [Adyen コネクタの概要](adyen-connector.md?tabs=10-0-14.md)
 - [支払端末のエンド・ツー・エンド支払統合を作成する](end-to-end-payment-extension.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

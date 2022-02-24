@@ -2,22 +2,26 @@
 title: ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
 description: このトピックでは、サードパーティ ソリューションを管理、配布、展開するうえで推奨される戦略について説明します。
 author: jorisdg
+manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 26731
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 487a326733f8e60b5cd355800da91ee48692e987
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 68a783f89c7e0e12c5b8525021b030da00afdd54
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783178"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408847"
 ---
 # <a name="manage-third-party-models-and-runtime-packages-by-using-source-control"></a>ソース コントロールを使用してサード パーティ モデルとランタイム パッケージを管理
 
@@ -39,7 +43,7 @@ ms.locfileid: "7783178"
 3. **AOT** ルート ノードを右クリックし、、**モデル ビュー** をクリックします。
 4. モデルの一覧で、インストールした新しいモデルを検索します。 モデルを含むパッケージの名前をメモしておきます。 パッケージ名はモデル名の後にかっこ付きで表示されます。 たとえば、次の図では、**税帳簿**、**税エンジン コンフィギュレーション**、および **税エンジン インターフェイス** モデルはすべて **TaxEngine** という名前のパッケージに属します。
 
-    ![各モデルのパッケージ名。](media/appexplorer_modelpackagename.png)
+    ![各モデルのパッケージ名](media/appexplorer_modelpackagename.png)
 
 5. **表示** > **その他の Windows** > **ソース管理エクスプローラー** をクリックして、ソース管理エクスプローラーを開きます
 6. **MyProject/Trunk/Main/Metadata** など、この開発 VM にマップされているメタデータ フォルダーに移動します。
@@ -68,19 +72,9 @@ ms.locfileid: "7783178"
 7. **保留中の変更** ウィンドウを、**チーム エクスプローラー** ウィンドウから、または **表示** > **その他の Windows** > **保留中の変更** をクリックして開きます。
 8. 変更を確認してチェックイン コメントを入力し、**チェック イン** をクリックします。
 
-## <a name="including-source-controlled-third-party-packages"></a>ソース管理サード パーティ パッケージを含む
-
-前のセクションで説明したように、パッケージ バイナリをソース管理にチェックインした後、ビルドの自動化中に生成されたデプロイ可能なパッケージにバイナリを含めます。 次の 2 つのオプションがあります。
-
-+ ビルド仮想マシンでは、標準のレガシー パイプラインがバイナリを自動的に検出し、生成するデプロイ可能なパッケージに含めます。
-+ [新しいパイプライン](hosted-build-automation.md) を使用するか、レガシー パイプラインで新しいパッケージングタスクを使用して、[配置可能なパッケージを作成](pipeline-create-deployable-package.md) ドキュメントを確認してください。 このドキュメントには、配置可能なパッケージにソース管理されたオブジェクトを含む例があります。
-
 ## <a name="deploying-third-party-code"></a>サード パーティのコードを展開する
 モデルとランタイム パッケージはソース管理のため、他の開発環境を使用する他の開発者はソース管理の **最新を取得** 機能を使用してモデルとパッケージをワークスペースに同期させることができます。
 
 現在のプラットフォーム更新プログラム 4 では、自動ビルド プロセスはランタイム パッケージも取得します。 したがって、ビルドされたパッケージの依存関係は正しく解決されます。 この機能は、修正プログラムを介してプラットフォーム更新プログラム 3 およびプラットフォーム更新プログラム 2 でも使用できます。
 
 プラットフォーム更新プログラム 6 では、ビルド プロセスで最終的な配置可能パッケージにこのランタイム パッケージが含まれます。 これにより、お客様は、展開可能なパッケージをビルドから取り出し、1 つのパッケージを環境に展開できます。 1 つのパッケージにはカスタム ソリューションとすべてのサード パーティ ソリューションが含まれています。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

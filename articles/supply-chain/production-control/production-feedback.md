@@ -2,9 +2,11 @@
 title: 生産フィードバック
 description: この記事は、作業者に生産ジョブに関するフィードバックを与える生産フィードバックに関する情報を提供します。 この記事には、生産フィードバックを更新するさまざまな方法に関する情報が含まれます。
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, ProdParmReportFinished
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d3a44d3b2f26dd8a27e081d6a5f89a197907cd5cd2ca947ff4e72aabcf8d90f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2c8f979fcb9446a0caeddaa37ea3ee1bbc3e849f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744705"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966358"
 ---
 # <a name="production-feedback"></a>生産フィードバック
 
@@ -33,6 +35,3 @@ ms.locfileid: "6744705"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

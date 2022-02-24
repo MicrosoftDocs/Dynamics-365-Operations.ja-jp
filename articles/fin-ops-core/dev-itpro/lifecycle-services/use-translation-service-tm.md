@@ -1,25 +1,27 @@
 ---
 title: 翻訳メモリ ファイル
-description: このトピックでは、高品質の翻訳出力ファイルを提供するために、翻訳メモリ ファイルをいつ、どこで作成、編集、および使用できるかについて説明します。
-author: abmotgi
-ms.date: 10/24/2021
+description: このトピックでは、Microsoft Dynamics 365 Translation Service (DTS) が高品質の翻訳出力ファイルを提供するために、翻訳メモリ ファイルをいつ、どこで作成、編集、および使用できるかについて説明します。
+author: kfend
+manager: AnnBe
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 6154
 ms.assetid: ''
 ms.search.region: Global
-ms.author: abmotgi
+ms.author: ejcho
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 9bf8e6f95bffac6c981608fdba0d5131a635fe2b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 30bead590f7ae899a51af59a97ccb76fb97ba6bf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700027"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680464"
 ---
 # <a name="translation-memory-files"></a>翻訳メモリ ファイル
 
@@ -34,11 +36,11 @@ DTS では、2 つの方法で XLIFF 翻訳メモリ (TM) を入手できます�
 
 XLIFF ファイルにはソース ファイルから抽出された一連の翻訳単位 (TU) が含まれます。 次の図は、TU の例を示します。
 
-![XLIFF 翻訳単位。](./media/dts-xlf.png "XLIFF 翻訳単位")
+![XLIFF 翻訳単位](./media/dts-xlf.png "XLIFF 翻訳単位")
 
 次の図は、多言語エディターで同じTU (青色で強調表示) を示しています。
 
-![多言語エディターでの XLIFF 翻訳単位。](./media/dts-editor3.png "多言語エディターでのXLIFF翻訳単位")
+![多言語エディターでのXLIFF翻訳単位](./media/dts-editor3.png "多言語エディターでのXLIFF翻訳単位")
 
 ## <a name="state"></a>行政単位 (区画)
 XLIFF ファイルの各移動は、状態値に関連付けられます。 DTS が各翻訳に割り当てる状態値は、文字列の変換方法によって異なります。 アライン ツールを使用して XLIFF TM が作成されると、アラインされた TU は以前の製品バージョンなどの既知の適正な翻訳から生成されるので、すべての翻訳に **変換済み** のマークが付きます。
@@ -57,7 +59,7 @@ XLIFF ファイルの各移動は、状態値に関連付けられます。 DTS 
 
 1. DTS ダッシュ ボードで、**整列** ボタンを選択し整列ツールを開始します。
 
-    ![配置ボタン。](./media/dts-align-icon.png "配置ボタン")
+    ![配置ボタン](./media/dts-align-icon.png "配置ボタン")
 
     > [!NOTE]
     > - アライン ツールは現在、ユーザー インターフェイス (UI) ファイルのみをサポートしています。
@@ -66,7 +68,7 @@ XLIFF ファイルの各移動は、状態値に関連付けられます。 DTS 
 2. **配置** ページで、ソース言語、ターゲット言語、および調整するファイルを選択します。
 3. **配置** を選択し、配置を完了します。 配置が完了すると、メッセージに結果が集計されます。
 
-![配置の完了。](./media/dts-align1.png "配置の完了")
+![配置の完了](./media/dts-align1.png "配置の完了")
 
 最良の XLIFF TM を作成するには、次の条件が満たされていることを確認します。
 
@@ -74,11 +76,11 @@ XLIFF ファイルの各移動は、状態値に関連付けられます。 DTS 
 - リソースはソース ファイルとターゲット ファイルの両方で同じ順序です。
 - 空の文字列はありません。 次の図は、ソースとターゲットの空の文字列の例を示しています。
 
-    ![空の文字列。](./media/dts-align3.png "空の文字列")
+    ![空の文字列](./media/dts-align3.png "空の文字列")
 
     空の文字列は、XLIFF TM によって継承されます。 ソース内の **リベート** 文字列がターゲット内に空の文字列を持つ場合、この XLIFF TM が使用されていると、空の文字列として変換される可能性があります。
 
-    ![文字列の欠落。](./media/dts-align4.png "文字列の欠落")
+    ![文字列の欠落](./media/dts-align4.png "文字列の欠落")
 
 アライン ツールはこれらの問題のいくつかを解決できますが、出力に予期しない結果が表示される前に防ぐ方が簡単です。
 
@@ -88,9 +90,9 @@ TM として使用する前に、整合された XLIFF ファイルを確認し�
 
 無料の多言語エディターまたは別の XLIFF エディターを使用して、DTS が提供する XLIFF ファイル内の翻訳をレビューおよび編集することをお勧めします。 少なくとも、翻訳出力が製品の品質基準を満たしていることを確認するために、翻訳をレビューする必要があります。
 
-多言語エディタで XLIFF ファイルを開くと、次の図のようになります。 ファイルを開く際にエラーが表示される場合は、メッセージを無視して、ウィンドウの左下隅にある **文字列** タブを選択します。
+多言語エディタで XLIFF ファイルを開くと、次の図のようになります。
 
-![多言語エディターの XLIFF ファイル。](./media/dts-editor1.png "多言語エディターでのXLIFF翻訳単位")
+![多言語エディターでのXLIFF翻訳単位](./media/dts-editor1.png "多言語エディターでのXLIFF翻訳単位")
 
 各行の冒頭に円があることに確認します。 円の色は翻訳の状態を示します。 DTS は、文字列の出所に応じて、これらの状態を自動的に割り当てます。
 
@@ -103,11 +105,8 @@ TM として使用する前に、整合された XLIFF ファイルを確認し�
 
 翻訳を確認するには、**要確認** 状態にある文字列のみを表示するフィルターを適用します。
 
-![要レビュー状態での文字列。](./media/dts-editor2.png "要レビュー状態での文字列")
+![要レビュー状態での文字列](./media/dts-editor2.png "要レビュー状態での文字列")
 
 確認された文字列は **翻訳済み**、**最終**、または **サインオフ** とマークされ、再利用することができます。 **要レビュー** としてマークされている翻訳はリサイクルには含まれません。
 
 XLIFF TM を編集した後、DTS はリフレッシュされた出力ファイルをソース形式で再生成します。 ファイルを再生成する方法の詳細については、[ユーザー インターフェイス ファイルの翻訳](./use-translation-service.md#regenerate-output-files) を参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

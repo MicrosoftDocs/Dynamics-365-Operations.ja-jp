@@ -1,34 +1,33 @@
 ---
 title: 報酬プラン
-description: このトピックでは、報酬管理を使用した報酬プランの管理と処理方法について説明します。
-author: twheeloc
-ms.date: 08/25/2021
-ms.topic: overview
+description: 報酬と給付金マネージャーは、報酬管理を使用して、組織の従業員の固定報酬プランおよび変動報酬プランを管理し、処理できます。
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
+ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066903"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419330"
 ---
 # <a name="compensation-plans"></a>報酬プラン
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-報酬・福利厚生マネージャーは、**報酬管理** を使用して、組織の従業員に対する固定報酬プランと変動報酬プランの管理と処理をすることができます。
+報酬と給付金マネージャーは、報酬管理を使用して、組織の従業員の固定報酬プランおよび変動報酬プランを管理し、処理できます。
 
 ### <a name="introduction"></a>はじめに
 
@@ -54,7 +53,7 @@ ms.locfileid: "8066903"
 <td>固定報酬アクションには 2 つの目的があります。
 <ul>
 <li>アクションで、従業員の報酬が変更されたときに記録する必要のある情報の種類を指定できます。 たとえば、昇給や降給などの変更と理由を記録するよう要求できます。</li>
-<li>アクションによって、固定報酬プランが処理されるときの計算を適用することを確認できます。  たとえば、株主資本タイプのアクションでは、従業員&#39;のレベルの最小基準点と従業員への支払を比較し、従業員が最低限以上の給料を受け取っていることを確認します。</li>
+<li>アクションによって、固定報酬プランが処理されるときの計算を適用することを確認できます。  たとえば、株主資本タイプのアクションでは、従業員のレベルの最小基準点と従業員への支払を比較し、従業員が最低限以上の給料を受け取っていることを確認します。</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -63,7 +62,7 @@ ms.locfileid: "8066903"
 </tr>
 <tr class="odd">
 <td>給与レンジ到達割合マトリックス</td>
-<td>給与レンジ到達割合マトリックスでは、従業員を標準職務給に移行させることができます。 給与レンジ到達割合を使用して、各従業員&#39;の業績や会社全体の業績に関係のない、社内の支払レートの株式資本を管理することもできます。 たとえば、給与レンジの低い従業員は、給与レンジの高い従業員よりも高い昇給率が割り当てられます。 これにより、体系的に資本の差額を相殺できます。 給与レンジ到達割合は、"固定支払レート - 範囲の最低額 / 範囲の最高額 - 範囲の最低額" として計算されます。</td>
+<td>給与レンジ到達割合マトリックスでは、従業員を標準職務給に移行させることができます。 給与レンジ到達割合を使用して、各従業員の業績や会社全体の業績に関係のない、社内の支払レートの株式資本を管理することもできます。 たとえば、給与レンジの低い従業員は、給与レンジの高い従業員よりも高い昇給率が割り当てられます。 これにより、体系的に資本の差額を相殺できます。 給与レンジ到達割合は、"固定支払レート - 範囲の最低額 / 範囲の最高額 - 範囲の最低額" として計算されます。</td>
 </tr>
 <tr class="even">
 <td>基準点設定</td>
@@ -91,10 +90,10 @@ ms.locfileid: "8066903"
 </tr>
 <tr class="even">
 <td>標準職務給</td>
-<td>標準職務給は、ある報酬レベルにおける、すべての従業員に対して最適だと考える支払レートを定義します。 通常、段階的なプラン構造の場合、範囲の中間点が標準職務給になります。 バンド構造では、標準職務給はほとんど使用されません。 **固定報酬プラン** ページで、固定報酬プランの標準職務給を指定できます。</td>
+<td>標準職務給は、ある報酬レベルにおける、すべての従業員に対して最適だと考える支払レートを定義します。 通常、段階的なプラン構造の場合、範囲の中間点が標準職務給になります。 バンド構造では、標準職務給はほとんど使用されません。 [固定報酬プラン] フォームで、固定報酬プランの標準職務給を指定できます。</td>
 </tr>
 <tr class="odd">
-<td>職務機能</td>
+<td>ジョブ機能</td>
 <td>職務権限は、特定の職務に対する報酬プランの分類やフィルタ処理に使用されます。</td>
 </tr>
 <tr class="even">
@@ -123,7 +122,8 @@ ms.locfileid: "8066903"
 ## <a name="process-events"></a>プロセス イベント
 プロセス イベントでは、1 つ以上の固定報酬プランまたは変動報酬プランに登録されるすべての従業員の、特定の期間の報酬情報を計算します。 計算した報酬結果をテストしたり更新したり場合に、プロセス イベントを繰り返し実行できます。
 
-## <a name="compensation-events"></a>報酬イベント
+<a name="compensation-events"></a>報酬イベント
+-------------------
 
 プロセス イベントを実行するたびに、報酬イベントが作成されます。  報酬イベントには、そのプロセス イベントに含まれる各従業員の報酬プロセスの結果が含まれます。  計算が正しい場合、プロセス イベントによって影響を受ける従業員の報酬レコードを更新するために、報酬イベントを読み込むことができます。
 
@@ -132,6 +132,3 @@ ms.locfileid: "8066903"
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

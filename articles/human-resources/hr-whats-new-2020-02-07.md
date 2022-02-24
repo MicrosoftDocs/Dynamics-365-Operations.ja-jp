@@ -1,32 +1,33 @@
 ---
 title: Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 7 日)
 description: この記事では、2020 年 2 月 7 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70acaaf2218c8b5c0239b968a29a927ac23080f0
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 42fac6e34db10efb047b4cb0fc3c7752330e5bcf
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060821"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526950"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 7 日)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この記事では、Dynamics 365 Human Resources の新機能および変更された機能について説明します。 変更は、ビルド番号 8.1.2835 に適用されます。 ヘッダーにあるかっこ内の数字は、Microsoft Dynamics Lifecycle Services (LCS) のサポート番号を参照していることがあります。
 
@@ -54,11 +55,11 @@ ms.locfileid: "8060821"
 
 ### <a name="platform-update-32"></a>プラットフォーム update 32 
 
-プラットフォームの更新 32 はまもなく使用可能になります。 [プラットフォームの更新 32 に関する詳細情報はこちらを参照してください](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md)。
+プラットフォームの更新 32 はまもなく使用可能になります。 [プラットフォームの更新 32 に関する詳細情報はこちらを参照してください](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32)。
 
-### <a name="updated-dataverse-solution"></a>更新された Dataverse ソリューション
+### <a name="updated-common-data-service-solution"></a>更新された Common Data Service ソリューション
 
-次の変更により、新しい Dataverse ソリューションがまもなく利用可能になります。
+次の変更により、新しい Common Data Service ソリューションがまもなく利用可能になります。
 
 | 説明 | 計上額 |
 | ----------------------------------------- | --- |
@@ -69,13 +70,11 @@ ms.locfileid: "8060821"
 | 新しい変動報酬の設定エンティティ | **変動報酬プラン タイプ**</br>**変動報酬プラン**</br>**給付ルール**</br>**変動報酬プラン レベル** |
 | 新しい **作業者カレンダー雇用** エンティティ | 追加された **作業カレンダー エンティティ** |
 | 新しい **給与職位詳細** エンティティ | 追加された **給与職位詳細** |
-| 新しい **肩書** エンティティ | 追加済み **タイトル**。 新しい **タイトル** エンティティが、Human Resources と Dataverse の間の同期プロセスに含まれます。 **職位** または **ジョブ** エンティティから最初に参照されることはありません。 |
+| 新しい **肩書** エンティティ | 追加済み **タイトル**。 新しい **タイトル** エンティティが、Human Resources と Common Data Service の間の同期プロセスに含まれます。 **職位** または **ジョブ** エンティティから最初に参照されることはありません。 |
 
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

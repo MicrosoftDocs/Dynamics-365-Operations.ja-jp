@@ -2,9 +2,11 @@
 title: AX 2009 の移行 － マップの生成
 description: このトピックは、データ マップを生成し、Microsoft Dynamics AX 2009 から Finance and Operations へデータを移行する方法を説明します。
 author: kfend
+manager: AnnBe
 ms.date: 06/30/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 47d613382726548e2bb6f3d051b79d16ce335a07f7c5002f7f307b95e1d79c2f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 63a299be670fa31d6a40d5b1ed990e429d991eda
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775260"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679938"
 ---
 # <a name="ax-2009-migration--generate-maps"></a>AX 2009 の移行 － マップの生成
 
@@ -42,6 +44,3 @@ Microsoft Dynamics AX 2009 から Finance and Operations へデータを移行�
 4. **設定** で、**マップを構成および生成** をクリックします。
 5. フォームの情報が正しいことを確認してから、**パスの検証** をクリックします。
 6. 検証が完了したら、**マップを生成** をクリックします。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

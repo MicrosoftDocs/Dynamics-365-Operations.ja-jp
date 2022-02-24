@@ -2,13 +2,16 @@
 title: パーソナライズされた製品推奨事項の有効化
 description: このトピックでは、パーソナライズされた製品推奨事項を Microsoft Dynamics 365 Commerce の顧客に対して使用可能にする方法について説明します。
 author: bebeale
+manager: AnnBe
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 74bf2c96d744b8101151be9288a956d46ce3b6885f0cb593dc1b78728b018fb4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770960"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413724"
 ---
 # <a name="enable-personalized-recommendations"></a>パーソナライズされた推奨事項の有効化
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、パーソナライズされた製品推奨事項を Microsoft Dynamics 365 Commerce の顧客に対して使用可能にする方法について説明します。
+
+## <a name="overview"></a>概要
 
 Dynamics 365 Commerce では、小売業者がパーソナライズされた製品推奨事項 (個人用設定とも呼ばれます) を使用可能にすることができます。 この方法で、パーソナライズされた推奨事項が顧客エクスペリエンス オンラインおよび販売時点管理 (POS) に組み込まれます。 個人用設定機能をオンにすると、システムはユーザーの購入情報と製品情報を関連付けて、個別の製品推奨事項を生成できます。
 
@@ -50,7 +55,7 @@ Dynamics 365 Commerce では、小売業者がパーソナライズされた製�
 1. **個人用設定がされた製品の推奨** 機能を選択します。
 1. **個人用設定がされた製品の推奨** プロパティ ペインで、**すぐに有効化する** を選択します。
 
-![個人用設定を有効にする。](./media/FeatureManagement_Personalized.PNG)
+![個人用設定を有効にする](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > 個人用設定を有効にすると、パーソナライズされた製品推奨事項リストを生成するプロセスが開始します。 これらのリストを利用可能にし、オンラインおよび POS で表示するまでに、少なくとも 1 日必要な場合があります。
@@ -73,7 +78,7 @@ E コマース ページに "おすすめ" リストが表示される前に、�
 
 次の図は、オンライン ストア ページの "おすすめ" リストの例を示します。
 
-![オンラインのおすすめリスト。](./media/picksforyou.png)
+![オンラインのおすすめリスト](./media/picksforyou.png)
 
 ### <a name="recommended-for-customer-lists-at-the-pos"></a>POS の "顧客への推奨" リスト
 
@@ -81,7 +86,7 @@ E コマース ページに "おすすめ" リストが表示される前に、�
 
 次の図は、POS 端末の "顧客への推奨" リストの例を示します。
 
-![POS の顧客への推奨リスト。](./media/picksonpos.png)
+![POS の顧客への推奨リスト](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>既存の推奨リストへの個人用設定の適用
 
@@ -89,7 +94,7 @@ E コマース ページに "おすすめ" リストが表示される前に、�
 
 たとえば、サインインしたユーザーが、次の図にある "トレンド - 既定" のリストに表示されている黒色のウォッチと茶色の作業ブーツを既に購入しました。 したがって、"トレンド - 個人用設定" リストに示すように、ユーザーにはそれらの製品の代わりに新しい製品が表示されます。
 
-![個人用設定の適用。](./media/applypersonalization.png)
+![個人用設定の適用](./media/applypersonalization.png)
 
 コマース サイト ビルダーの既存の推奨リストに個人用設定を適用するには、次の手順を実行します。
 
@@ -99,7 +104,7 @@ E コマース ページに "おすすめ" リストが表示される前に、�
 1. **製品リストのコンフィギュレーションの選** ダイアログ ボックスの、**タイプ** で、リスト タイプを選択します。
 1. **個人用設定を適用** チェック ボックスを選択し、**OK** を選択します。
 
-    ![トレンド リストへの個人用設定の適用。](./media/ApplyPersonalizationToTrending.PNG)
+    ![トレンド リストへの個人用設定の適用](./media/ApplyPersonalizationToTrending.PNG)
 
 1. ページを保存し、編集を終了してから、公開します。 ページを公開した後、サインインしているユーザーにはパーソナライズされたトレンド リストが表示されます。
 
@@ -126,6 +131,3 @@ E コマース ページに "おすすめ" リストが表示される前に、�
 [推奨事項とデモ データの作成](product-recommendations-demo-data.md)
 
 [製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

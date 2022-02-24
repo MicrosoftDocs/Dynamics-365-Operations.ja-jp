@@ -2,19 +2,26 @@
 title: X++ コンテナー ランタイム関数
 description: このトピックでは、コンテナー ランタイム関数について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 31301
+ms.assetid: 5b4741a5-dec1-4a3b-b739-6c12142ac668
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b331a96abfd7143c51a50d13db0770a57b23923a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f0cd819ec87e989b6c1827c48956fd7728e4db69
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783242"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408745"
 ---
 # <a name="x-container-runtime-functions"></a>X++ コンテナー ランタイム関数
 
@@ -317,6 +324,3 @@ static void conPokeExample(Args _arg)
 ```
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

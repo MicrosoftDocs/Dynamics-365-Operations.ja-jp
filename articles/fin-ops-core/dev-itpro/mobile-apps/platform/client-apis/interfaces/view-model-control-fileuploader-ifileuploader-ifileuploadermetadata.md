@@ -1,18 +1,25 @@
 ---
 title: FileUploaderMetadata タイプ
 description: ファイル アップローダー メタデータ タイプ。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 7c0b67d86eabacf9ba9fdac7a043e82bace20f27
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: f0b8b70980b38f00064026156d3a7e3c967cd69d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782709"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679232"
 ---
 # <a name="fileuploadermetadata-type"></a>FileUploaderMetadata タイプ
 
@@ -41,7 +48,7 @@ ms.locfileid: "7782709"
 * [名前](view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md#name)
 * [NumSequence](view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md#numsequence)
 * [注文](view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md#order)
-* [タイプ](view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md#type)
+* [[タイプ](view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md#type)]
 
 ## <a name="properties"></a>プロパティ
 
@@ -190,6 +197,3 @@ Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承
 
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

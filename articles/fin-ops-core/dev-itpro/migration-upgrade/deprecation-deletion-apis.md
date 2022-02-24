@@ -2,22 +2,24 @@
 title: 方法とメタデータの要素の廃止
 description: このトピックでは、コード ベースの拡大に伴って古くなるメソッドよびメタデータ要素の廃止に関する情報が提供されます。
 author: jorisdg
-ms.date: 02/19/2021
+manager: AnnBe
+ms.date: 03/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 2d6b8af821739939b683d54472b11dbc4719ae24
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3592799bb604a919ab696e75006d5589b4df996f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782879"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679942"
 ---
 # <a name="deprecation-of-methods-and-metadata-elements"></a>方法とメタデータの要素の廃止
 
@@ -45,7 +47,4 @@ Microsoft コード ベースが進歩すると共に、いくつかのメソッ
 
 ## <a name="list-of-deprecated-methods-and-metadata-elements"></a>非推奨のメソッドとメタデータの要素のリスト
 
-参考のため、各メジャー リリースで非推奨としてマークされているアーティファクトを示した Microsoft Excel ファイル [ObsoleteElementsPerVersion.xlsx](https://mbs2.microsoft.com/fileexchange/?fileID=d6b5589b-c2c7-4cdd-a6b9-87e080cb2f05) をダウンロードします。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+参考のため、CustomerSource の[方法とメタデータの要素の廃止](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/DeprecationMME)ページにある Microsoft Excel ファイルをダウンロードしてください。各メジャー リリースで非推奨とマークされた成果物が示されています。

@@ -1,32 +1,33 @@
 ---
 title: Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 12 日)
 description: この記事では、2020 年 2 月 12 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ac274cc18ddb3392fb118dcc1df7813cbc5b8293
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: b89e022441f69825d9c9c56ecdbca2e09e461b9e
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063032"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526892"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-12-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 2 月 12 日)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この記事では、Dynamics 365 Human Resources の新機能および変更された機能について説明します。 変更は、ビルド番号 8.1.2867 に適用されます。 ヘッダーにあるかっこ内の数字は、Microsoft Dynamics Lifecycle Services (LCS) のサポート番号を参照していることがあります。
 
@@ -34,9 +35,9 @@ ms.locfileid: "8063032"
 
 今週のリリースにより、**CompFixedEmpls** と **HcmPersonImage** エンティティはパブリックになり、ODAta を介して使用できるようになりました。
 
-## <a name="delete-employment-from-dataverse-doesnt-work-when-employment-details-arent-active-403193"></a>雇用の詳細が有効でない場合、Dataverse からの雇用の削除は機能しない (403193)
+## <a name="delete-employment-from-common-data-service-doesnt-work-when-employment-details-arent-active-403193"></a>雇用の詳細が有効でない場合、Common Data Service からの雇用の削除は機能しない (403193)
 
-この変更により、有効な雇用の詳細が存在しない場合でも、Dataverse 経由で雇用を削除できるようになります。
+この変更により、有効な雇用の詳細が存在しない場合でも、Common Data Service 経由で雇用を削除できるようになります。
 
 ## <a name="course-registration-workflow-changes-status-to-complete-and-errors-after-second-approval-409749"></a>コース登録ワークフローは、2 回目の承認後に完了およびエラーにステータスを変更する (409749)
 
@@ -54,11 +55,11 @@ ms.locfileid: "8063032"
 
 ### <a name="platform-update-32"></a>プラットフォーム update 32 
 
-プラットフォームの更新 32 はまもなく使用可能になります。 [プラットフォームの更新 32 に関する詳細情報はこちらを参照してください](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md)。
+プラットフォームの更新 32 はまもなく使用可能になります。 [プラットフォームの更新 32 に関する詳細情報はこちらを参照してください](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32)。
 
-### <a name="updated-dataverse-solution"></a>更新された Dataverse ソリューション
+### <a name="updated-common-data-service-solution"></a>更新された Common Data Service ソリューション
 
-次の変更により、新しい Dataverse ソリューションがまもなく利用可能になります。
+次の変更により、新しい Common Data Service ソリューションがまもなく利用可能になります。
 
 | 説明 | 計上額 |
 | ----------------------------------------- | --- |
@@ -69,13 +70,11 @@ ms.locfileid: "8063032"
 | 新しい変動報酬の設定エンティティ | **変動報酬プラン タイプ**</br>**変動報酬プラン**</br>**給付ルール**</br>**変動報酬プラン レベル** |
 | 新しい **作業者カレンダー雇用** エンティティ | 追加された **作業カレンダー エンティティ** |
 | 新しい **給与職位詳細** エンティティ | 追加された **給与職位詳細** |
-| 新しい **肩書** エンティティ | 追加済み **タイトル**。 新しい **タイトル** エンティティが、Human Resources と Dataverse の間の同期プロセスに含まれます。 **職位** または **ジョブ** エンティティから最初に参照されることはありません。 |
+| 新しい **肩書** エンティティ | 追加済み **タイトル**。 新しい **タイトル** エンティティが、Human Resources と Common Data Service の間の同期プロセスに含まれます。 **職位** または **ジョブ** エンティティから最初に参照されることはありません。 |
 
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

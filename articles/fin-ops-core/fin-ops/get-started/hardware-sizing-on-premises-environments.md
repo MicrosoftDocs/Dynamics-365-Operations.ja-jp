@@ -2,9 +2,11 @@
 title: オンプレミス環境のハードウェアのサイズ設定要件
 description: このトピックでは、オンプレミス環境のハードウェアのサイズ設定要件を一覧表示します。
 author: sericks007
-ms.date: 06/02/2021
+manager: AnnBe
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 443b80e44a90a68610fbb2bb5a5f4b6b7d545fa7ad772edb3672972fa82f8cbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9d4f2e59d4dd78d15d561ff0da47e4b9b1a2fce3
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763437"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798307"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>オンプレミス環境のハードウェアのサイズ設定要件
 
@@ -36,7 +38,7 @@ ms.locfileid: "6763437"
 
 次の図に示すようにすべての要素は、サイズ設定に寄与します。 より詳細な情報が収集されるほど、より正確にサイジングを決定することができます。 ハードウェアのサイジングは、データをサポートしていないため、不正確になる可能性があります。 必要なデータの絶対最小要件は、1 時間あたりの見積ピーク トランザクション明細行数です。
 
-[![オンプレミス環境のハードウェアのサイズ設定。](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![オンプレミス環境のハードウェアのサイズ設定](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 左から右に見ると、サイジングを正確に推定するために必要な最初の最も重要な要素は、トランザクション プロファイルまたはトランザクション特性です。 1 時間あたりのピーク トランザクション量を常に検索することは重要です。 複数のピーク期間がある場合は、これらの期間を正確に定義する必要があります。
 
@@ -132,15 +134,10 @@ A[サイズ変更スプレッドシート](https://adfsdocs.blob.core.windows.ne
 
 一般的な使用可能なリリースは、1 つの SSRS ノードしか展開できません。 テスト中に SSRS ノードを監視し、SSRS で使用可能なコアの数を必要に応じて増やします。 SSRS VM とは異なる仮想ホストで事前構成されたセカンダリ ノードを使用できることを確認してください。 これは、SSRS または仮想ホストをホストする仮想マシンに問題がある場合に重要です。 この場合、交換する必要があります。
 
-バージョン 10.0.17 以降では、高可用性を実現するために追加の SSRS ノードを構成することが可能です。 詳細情報については、[SQL Server Reporting Services (SSRS) ノードの高可用性の構成](../../dev-itpro/deployment/onprem-ssrsha.md) を参照してください。
-
 ## <a name="environment-orchestrator"></a>環境オーケストレーター
 
-オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これはクラスタのピーク負荷に合わせて調整する必要があります。 詳細については、[Service Fabric のスタンドアロン クラスター展開の計画および準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation)を参照してください。
+オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これはクラスタのピーク負荷に合わせて調整する必要があります。 詳細については、[Service Fabric のスタンドアロン クラスター展開の計画および準備](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation)を参照してください。
 
 ## <a name="virtualization-and-oversubscription"></a>仮想化と過剰加入
 
 AOS のようなミッション クリティカルなサービスは、コア、メモリ、ディスクなどの専用リソースを持つ仮想ホストでホストする必要があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

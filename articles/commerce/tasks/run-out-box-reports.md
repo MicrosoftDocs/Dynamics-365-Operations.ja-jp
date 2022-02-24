@@ -2,24 +2,27 @@
 title: 最初から用意されているレポートを生成および実行
 description: このタスク ガイドを使用して、異なるワークスペースからバックオフィスの最初から用意されているレポート、およびコマースの照会 & 販売レポートを実行します。
 author: ashishmsft
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup, SrsReportViewerForm
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 27dc29109693c06913c8107e27e79a48cf2c9db7146ff3a5919305366641af3d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d148fa36a116860af8c44043d90759b8a2d76fb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774464"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413784"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>最初から用意されているレポートを生成および実行
 
@@ -36,7 +39,7 @@ ms.locfileid: "6774464"
 4. [開始日] フィールドに日付を入力します。
 5. [終了日] フィールドで、日付を入力します。
 6. [チャンネル] フィールドで、ドロップ ダウン ボタンをクリックし、ルックアップを開きます。
-7. ツリーで、「Contoso  Retail\Contoso Retail USA\Central\Houston」を選択します。
+7. ツリーで、「Contoso Retail\Contoso Retail USA\Central\Houston」を選択します。
     * これは、コマース レポート用の既定の組織階層を示します。   組織管理 > 組織 > 組織階層の目的に移動し、コマース レポートを選択し、割り当て済の階層で既定の列が選択されている階層名を確認します。 デモ データの一部として (このタスクの記録に使用)、地域ごとの店舗がレポート用の既定の組織階層となっています。     
 8. [OK] をクリックします。
 9. [ビュー] フィールドで、オプションを選択します。
@@ -61,6 +64,3 @@ ms.locfileid: "6774464"
 5. [エクスポート] をクリックします。
 6. PDF をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

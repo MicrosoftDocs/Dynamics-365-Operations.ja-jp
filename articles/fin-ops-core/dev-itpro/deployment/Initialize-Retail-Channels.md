@@ -1,49 +1,51 @@
 ---
 title: Commerce Scale Unit (クラウド) の初期化
-description: このトピックでは、Microsoft Dynamics 365 Commerce で Commerce Scale Unit (クラウド) を初期化する方法について説明します。
+description: このトピックでは、Commerce Scale Unit (クラウド) を初期化する方法について説明します。
 author: AamirAllaq
-ms.date: 02/04/2022
+manager: AnnBe
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 84e70515accde161e7efa36755edec68d26be952
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.dyn365.ops.version: 8
+ms.openlocfilehash: 6dd3dd23016ec871470e108b4ea32396cf39650a
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092126"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152211"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で Commerce Scale Unit (クラウド) を初期化する方法について説明します。
-
 アプリケーション バージョン 8.1.2.x 以降を持つレベル 2 サンドボックスまたは運用環境を使用している場合、販売時点管理 (POS) 操作またはクラウド内の Retail サーバーを使用する電子商取引操作に Retail チャネル機能を使用する前に、Commerce Scale Unit (クラウド) を初期化する必要があります。 初期化では、Commerce Scale Unit (クラウド) が配置されます。
 
+このトピックでは、Commerce Scale Unit (クラウド) を初期化する手順について説明します。
+
 > [!IMPORTANT]
-> クラウドで小売チャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、Commerce Scale Unit を使用する小売チャネルの更新を行う必要があります。 Commerce Scale Unit を使用せずに配置された新しい環境は、クラウド ホストの小売チャンネル コンポーネントの品質とサービスの更新を受けられなくなります。 Commerce Scale Unit (自己ホスト) を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack ソリューション アーキテクトまでご連絡ください。
+> クラウドで小売チャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、Commerce Scale Unit を使用する小売チャネルの更新を行う必要があります。 Commerce Scale Unit を使用せずに配置された新しい環境は、クラウド ホストの小売チャンネル コンポーネントの品質とサービスの更新を受けられなくなります。 Commerce Scale Unit (自己ホスト) を独占して使用している顧客に対しては、アクションは必要ありません。  延長が必要な場合は、Microsoft FastTrack ソリューション アーキテクトまでご連絡ください。
 
 ## <a name="prerequisites"></a>必要条件
 
-1. バージョン 8.1.2.x またはそれ以降を持つレベル 2 サンドボックスまたは運用環境を配置します。
-2. 環境ごとに最大 2 つの Commerce Scale Unit をセルフ配置できます。 Microsoft Dynamics Lifecycle Services (LCS) 内の環境ごとに複数の Commerce Scale Unit を必要とする場合は、サポート要求を作成し、**追加 Commerce Scale Unit の要求** を入力し、環境 ID、Commerce Scale Unit の数、および目的のデータセンター リージョンを指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の Commerce Scale Unit を必要としない場合は、サポート要求を作成する必要はありません。 
-3. Commerce Scale Unit を初期化するには、Lifecycle Services でプロジェクト所有者のアクセス許可を持っている必要があります。
-4. 環境で Retail ライセンス コンフィギュレーション キーが有効になっていることを確認します。 詳細については、[ライセンス コードとコンフィギュレーション キーのレポート](../sysadmin/license-codes-configuration-keys-report.md) を参照してください。 Commerce Scale Unit を使用するには、次のキーを有効にする必要があります。
+1. アプリケーション バージョン 8.1.2.x またはそれ以降を持つレベル 2 サンドボックスまたは運協環境を配置します。
+2. Microsoft Dynamics Lifecycle Services (LCS) 内の環境ごとに複数の RCSU を必要とする場合は、サポート要求を作成し、**複数の Commerce Cloud Scale Unit に対するアクセス要求** を入力し、環境 ID、CSU の数、および対応するデータセンター リージョンを指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の CSU を必要としない場合は、サポート要求を作成する必要はありません。 
+3. 環境で Retail ライセンス コンフィギュレーション キーが有効になっていることを確認します。 詳細については、[ライセンス コードとコンフィギュレーション キーのレポート](../sysadmin/license-codes-configuration-keys-report.md) を参照してください。 Commerce Scale Unit を使用するには、次のキーを有効にする必要があります。
 
-    - RetailBasic
-    - RetaileCommerce - Dynamics 365 Commerce にeコマースを使用する予定の場合。
-    - RetailGiftCard - ギフト カードを使用する予定の場合。
-    - RetailInvent - 在庫を使用する予定の場合。
-    - RetailModemodePos - 販売時点管理 (POS) を使用する予定の場合。
-    - RetailReplenishment - 補充を使用する予定の場合。
-    - RetailScheduler
-    - RetailStores - POS を使用する予定の場合。
+- RetailBasic
+- RetaileCommerce - Dynamics 365 Commerce にeコマースを使用する予定の場合。
+- RetailGiftCard - ギフト カードを使用する予定の場合。
+- RetailInvent - 在庫を使用する予定の場合。
+- RetailModemodePos - 販売時点管理 (POS) を使用する予定の場合。
+- RetailReplenishment - 補充を使用する予定の場合。
+- RetailScheduler
+- RetailStores - POS を使用する予定の場合。
 
 
 ## <a name="region-availability"></a>地域の可用性
@@ -76,33 +78,22 @@ Commerce Scale Unit は、次の地域に配置することができます。
 
 制限能力地域での配置の許容範囲にはかなり制約があります。 配置要求は、状況に応じて評価されます。 制限されたキャパシティ地域での配置に関して説得力のあるビジネス ニーズがある場合は、待機リストに追加するサポート要求を提出することができます。
 
-![地域の可用性を示すマップ。](media/Commerce-Scale-Unit-Region-Availability.png "地域の利用可能性を示すマップ")
+![地域の利用可能性を示すマップ](media/Commerce-Scale-Unit-Region-Availability.png "地域の利用可能性を示すマップ")
 
 ## <a name="initialize-commerce-scale-unit-as-part-of-a-new-environment-deployment"></a>Commerce Scale Unit を新しい環境の展開の一部として初期化します
 
 本社が使用可能か確認してください。 これは、初期化プロセス中にスケール ユニットを本社に登録するために必要です。 サービス プロセスで利用できなくなる可能性があるため、本社がサービス中の場合はスケール ユニットの初期化をお勧めしません。
 
 1. 本社環境が使用可能で [メンテナンス モード](../sysadmin/maintenance-mode.md) でないことを確認してください。
-2. LCS の環境の詳細 ページで、**環境機能 \> Commerce** を選択します。
-3. Commerce 設定配置ページで、**初期化** を選択します。
+2. LCS の環境の詳細 ページで、**環境機能 \> Retail** を選択します。
+3. Retail 設定配置ページで、**初期化** を選択します。
 4. 初期化する Commerce Scale Unit のバージョンを選択します。
 5. 地域を選択して Commerce Scale Unit を初期化します。
 
-## <a name="configure-channels-to-use-commerce-scale-unit"></a>Commerce Scale Unit を使用するためのチャンネルのコンフィギュレーション
+## <a name="configure-retail-channels-to-use-commerce-scale-unit"></a>Commerce Scale Unit を使用するための小売チャンネルのコンフィギュレーション
 
-Commerce Scale Unit の展開後、データベースを使用するようにチャンネルが構成されていることを確認する必要があります。 
-
-Commerce Scale Unit データベースを使用するためにチャンネルを構成するには、次の手順に従います。
-
-1. Commerce Headquarters で、**Retail と Commerce \> Headquarters の設定 \> Commerce Scheduler \> チャネル データベース** の順に移動します。
-1. 左ウィンドウでチャネル データベースを選択します。
-1. **Retail チャネル** FastTab で、**追加** を選択し、ドロップダウン リストで、自分の小売チャネルを選択します。
-1. **追加** を選択し、ドロップダウン リストでオンライン チャネルを選択します。 
-
-終わったら、**Retail と Commerce \> Retail とコマース IT \> 配送スケジュール** の順に移動し、ジョブ 9999 を実行します。
-
-> [!NOTE] 
-> ジョブ 9999 は、すべての新しい製品および顧客を Commerce Scale Unit に同期します。 このプロセスには時間がかかる場合があります。 eコマース サイト ビルダー構成にのみチャネルを使用可能にする必要がある場合は、ジョブ 9999 の代わりにジョブ 1070 を実行します。
+1. Commerce Scale Unit が展開された後で、本社のクライアントで **Retail とコマース > Retail Headquarters > Retail スケジューラの設定 > チャンネル データベース** の順に移動して、この Commerce Scale Unit のためにデータベースを使用するように小売りチャンネルが構成されていることを確認します。
+2. 各小売りチャンネルに移動して、対応する Commerce Scale Unit のチャンネル プロファイルを選択します。
 
 ### <a name="database-refresh-and-commerce-scale-units"></a>データベースの更新と Commerce Scale Unit
 
@@ -127,13 +118,13 @@ Commerce Scale Unit データベースを使用するためにチャンネルを
 
 ## <a name="deploy-additional-commerce-scale-units-optional"></a>追加の Commerce Scale Unit の配置 (オプション)
 
-Commerce Scale Unit を初期化した後、ライセンスが許可する場合は、2 番目の Scale Unit を自己展開できます。 3 つ以上の Scale Units を展開するには、サポート要求を作成する必要があります。 サポート要求で、必要な Commerce Scale Unit の数、環境名、および目的の地域を指定します。 ライセンスの詳細については、[Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) を参照してください。 
+最初の Commerce Scale Unit (CSU) を初期化した後、追加のクラウド スケール ユニットが必要な場合はサポート要求を入力します。 サポート要求で、必要な RCSU の数、環境名、希望するリージョンを明記します。
 
-展開する他の Commerce Scale Unit ごとに、次の手順に従って別のチャネル データベース グループを作成することをお勧めします。
+展開する追加の RCSU ごとに、チャネル データ ベースグループを 個別に作成することもお勧めします。 これを行うには、次の手順に従います。
 
 1. コマース バックオフィスで、**Retail とコマース > Retail Headquarters > Retail スケジューラの設定 > チャネル データベース グループ** の順に移動します。
 2. 新しいチャネル データベース グループを作成します。
-3. **Retail とコマース> Retail Headquarters > Retail スケジューラの設定 > チャネル データベース** の順に移動し、新しく作成された Commerce Scale Unit に対応するチャネル データベースを選択します。
+3. **Retail とコマース> Retail Headquarters > Retail スケジューラの設定 > チャネル データベース** フォームの順に移動し、新しく作成された RCSU に対応するチャネル データベースを選択します。
 4. **編集** を選択して、新しいチャンネル データベース グループを選択します。
 5. **保存** を選択します。
 6. 選択したチャンネル データベースに対して **完全データ同期の実行** を選択します。
@@ -181,6 +172,3 @@ Commerce Scale Unit を初期化する前に、次の追加手順を実行する
 - スタンドアロン ハードウェア ステーション インスタンスは引き続き機能します。
 - POS チャンネル側のレポートはリセットされ、データを初期化する前に表示されません。
 - 仕訳帳の処理の表示もリセットされるため、初期化前のデータは表示されません。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

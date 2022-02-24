@@ -1,25 +1,27 @@
 ---
 title: カスタム サービスの開発
 description: このトピックでは、カスタム サービスの作成方法を説明します。
-author: peakerbl
+author: Sunil-Garg
+manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42965ab7bda7d7853d04960fa3d8bc063c2fbb12
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 6a7405ccca0f728f7290d8a3a6590df574de3297
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404187"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679358"
 ---
 # <a name="custom-service-development"></a>カスタム サービスの開発
 
@@ -51,8 +53,8 @@ SOAP を使用したカスタム サービスを使用するためのコード�
 
 カスタム サービスの詳細については、次を参照してください。
 
-- [カスタム サービスを使用する \[AX 2012\] (TechNet)](/dynamicsax-2012/appuser-itpro/using-custom-services)
-- [チュートリアル: X++ クラスをデータ契約として公開する (TechNet)](/dynamicsax-2012/appuser-itpro/walkthrough-exposing-an-x-class-as-a-data-contract)
+- [カスタム サービスを使用する \[AX 2012\] (TechNet)](https://technet.microsoft.com/library/hh509052.aspx)
+- [チュートリアル: X++ クラスをデータ契約として公開する (TechNet)](https://technet.microsoft.com/library/gg844225.aspx)
 
 ### <a name="json-based-custom-service"></a>JSON ベース カスタム サービス
 
@@ -65,6 +67,3 @@ JSON エンドポイントが `https://host_uri/api/services/service_group_name/
 `https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
 
 JSON サービスを使用するためのコード例は、[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication) で利用できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

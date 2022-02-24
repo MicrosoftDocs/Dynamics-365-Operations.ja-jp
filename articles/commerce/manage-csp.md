@@ -1,31 +1,36 @@
 ---
 title: Content Security Policy (CSP) の管理
-description: このトピックでは、Microsoft Dynamics 365 Commerceの コンテンツ セキュリティ ポリシー (CSP) を管理する方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerceの Content Security Policy (CSP) を管理する方法について説明します。
 author: samjarawan
+manager: annbe
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 03f03b60f89f7ca994d3bddc2a7b6c65a7e1228f24f514589ceea46178827d00
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2950e62e6bbdea614e1141738513bf983b224a5e
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770995"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645936"
 ---
-# <a name="manage-content-security-policy-csp"></a>コンテンツ セキュリティ ポリシー (CSP) の管理
+# <a name="manage-content-security-policy-csp"></a>Content Security Policy (CSP) の管理
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerceの コンテンツ セキュリティ ポリシー (CSP) を管理する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 Commerceの Content Security Policy (CSP) を管理する方法について説明します。
+
+## <a name="overview"></a>概要
 
 CSP は、特定タイプの Web 攻撃の検出と軽減に役立つ追加のセキュリティ レベルです。 これらの攻撃の目的は、データの盗用からサイトの変造やマルウェアの配布まで多岐に指定できます。 CSP は、サイトページに読み込むことができるリソースを制御するのに役立つ、広範なポリシー ディレクティブのセットを提供します。 各ディレクティブは、特定のタイプのリソースに対する制限を定義します。
 
@@ -45,7 +50,7 @@ CSP がサイトにポリシーが適用しないようにするには、サイ�
 1. **サイト設定** を選択し、**拡張** タブを選択します。
 1. **コンテンツ セキュリティ ポリシー** タブで、**コンテンツ セキュリティ ポリシーを無効にする** チェック ボックスを選択します。
 
-    ![Content Security Policy タブで、コンテンツ セキュリティ ポリシーを無効にします。](media/content-security-policy-disable.png)
+    ![Content Security Policy タブで、コンテンツ セキュリティ ポリシーを無効にする](media/content-security-policy-disable.png)
 
 1. **保存と公開** を選択します。
 
@@ -95,7 +100,7 @@ Nonce を有効にするには、次の手順に従います。
 1. **サイト設定** を選択し、**拡張** タブを選択します。
 1. **コンテンツ セキュリティ ポリシー** タブの、**script-src** で **追加** を選択し、呼び出す外部スクリプトの完全な URL を入力します。
 
-    ![Content Security Policy タブの外部スクリプト用 URL。](media/content-security-policy.png)
+    ![Content Security Policy タブの外部スクリプト用 URL](media/content-security-policy.png)
 
 1. **保存と公開** を選択します。
 
@@ -105,7 +110,7 @@ Nonce を有効にするには、次の手順に従います。
 
 次の図では、Web ブラウザーの開発ツールにおける CSP エラーの例を示しています。
 
-![Web ブラウザーの開発者ツールにおける CSP エラー。](media/content-security-policy-errors.png)
+![Web ブラウザーの開発者ツールにおける CSP エラー](media/content-security-policy-errors.png)
 
 この例では、次の 2 つの CSP エラーがあります。
 
@@ -114,7 +119,7 @@ Nonce を有効にするには、次の手順に従います。
 
 次のスクリーンショットでは、コマースにて **Content Security Policy** タブの固定設定がどのように表示されるか示します。
 
-![Content Security Policy タブの固定設定。](media/content-security-policy-fixed.png)
+![Content Security Policy タブの固定設定](media/content-security-policy-fixed.png)
 
 ## <a name="update-page-mocks-that-use-csp"></a>CSP を使用するページ モックの更新
 
@@ -149,6 +154,3 @@ Nonce を有効にするには、次の手順に従います。
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
 
 [サイトにおける検索エンジン最適化 (SEO) の考慮事項](search-engine-optimization-considerations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

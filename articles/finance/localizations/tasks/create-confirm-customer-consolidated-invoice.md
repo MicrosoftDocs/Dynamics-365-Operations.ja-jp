@@ -1,10 +1,12 @@
 ---
 title: 顧客月次締め請求書の作成および確認
-description: このトピックでは、毎月の顧客の請求書を集約して支払額を算出する方法を説明しています。
+description: 日本では、その月の販売請求書および仕入請求書は、未払金額を計算するため月末に連結されます。
 author: ShylaThompson
-ms.date: 10/04/2021
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustConsInvoice_JP
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: be71de40b21f6c170694ba2212793232a1102396
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 1ad904c8b89810cca1021cfc6e3adca9cc9c0f9c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601522"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961359"
 ---
 # <a name="create-and-confirm-a-customer-consolidated-invoice"></a>顧客月次締め請求書の作成および確認
 
@@ -26,9 +28,15 @@ ms.locfileid: "7601522"
 
 日本では、その月の販売請求書および仕入請求書は、未払金額を計算するため月末に連結されます。 
 
+
+
 このタスクでは、月締め請求書の作成と確定方法について説明します。 
 
+
+
 このタスクを完了するためには、販売請求書または仕入請求書が事前に転記されている必要があります。
+
+
 
 この手順では、JPMF デモ会社のデータを使用します。
 
@@ -46,6 +54,3 @@ ms.locfileid: "7601522"
 5. [確認] をクリックします。
     * [確定] をクリックすると、[月次締め請求書のステータス] は「確定済」に変わります。 確定後、月次締め請求書はロックされ編集できません。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

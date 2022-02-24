@@ -1,25 +1,27 @@
 ---
 title: セグメント化されたエントリ コントロールの移行
-description: このトピックでは、セグメント化されたエントリ コントロールの移行シナリオについて説明します。
-author: RyanCCarlson2
+description: このチュートリアルでは、簡単なシナリオ (SMAServiceOrderTable フォームの場合) と複雑なシナリオ (LedgerJournalTransDaily フォームの場合) の 2 つのセグメント化エントリ管理の移行シナリオについて説明します。
+author: robinarh
+manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 25611
 ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810
 ms.search.region: Global
-ms.author: rcarlson
+ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad3e84a0ccfbd3a2facbe78c0f7807da6e1c9b98
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 777fcfcec6f43642e7b1f625ca85688c5b5c18dc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781733"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680470"
 ---
 # <a name="migrate-segmented-entry-controls"></a>セグメント化されたエントリ コントロールの移行
 
@@ -27,7 +29,8 @@ ms.locfileid: "7781733"
 
 このチュートリアルでは、簡単なシナリオ (SMAServiceOrderTable フォームの場合) と複雑なシナリオ (LedgerJournalTransDaily フォームの場合) の 2 つのセグメント化エントリ管理の移行シナリオについて説明します。
 
-## <a name="simple-migration-scenario--smaserviceordertable-form"></a>簡易移行シナリオ - SMAServiceOrderTable フォーム
+<a name="simple-migration-scenario--smaserviceordertable-form"></a>簡易移行シナリオ - SMAServiceOrderTable フォーム
+-----------------------------------------------------
 
 1.  アプリケーション エクスプローラーで **SMAServiceOrderTable** フォームを検索します。
 2.  現在のプロジェクトにフォームを追加します。
@@ -1722,7 +1725,8 @@ public boolean validate()
 
 このメソッドはコントロールの **validate()** メソッドのみを呼び出し追加の処理は実行しないため、削除できます。
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 [ダイアログのセグメント化されたエントリ コントロールのサポート](segmented-entry-control-dialog-support.md)
 
@@ -1734,6 +1738,3 @@ public boolean validate()
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

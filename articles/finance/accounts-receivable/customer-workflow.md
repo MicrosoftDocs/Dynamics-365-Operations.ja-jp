@@ -1,24 +1,27 @@
 ---
 title: 顧客ワークフロー
 description: このトピックでは、顧客ワークフローに関する情報を提供します。 顧客の特定のフィールドを変更したら、その変更内容を顧客に追加する前に、承認のためワークフローを使用して送信します。
-author: abruer
+author: mikefalkner
+manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c74f18997b390d70b5012199fab1adc9734994f4
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753829"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4459432"
 ---
 # <a name="customer-workflow"></a>顧客ワークフロー
 
@@ -58,6 +61,3 @@ ms.locfileid: "7753829"
     ページの状態が **変更の承認待ち** に変わります。
 
 ワークフローは、アプリケーションの標準的なワークフロー プロセスに従います。 承認者は **顧客** ページに転送され、そこで **提案済みの変更** ページの変更内容を確認してから **ワークフロー \> 承認** を選択してワークフローを承認します。 すべての承認が完了すると、フィールドは提示した値に更新されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

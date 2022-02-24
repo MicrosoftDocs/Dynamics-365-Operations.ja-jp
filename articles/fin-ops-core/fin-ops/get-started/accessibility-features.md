@@ -2,9 +2,11 @@
 title: ユーザー補助機能
 description: このトピックでは、さまざまな障がいを持つユーザーを支援するようにデザインされた機能について説明します。
 author: TLeforMicrosoft
+manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,19 +14,16 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2d0dd3ebf4b50f43f9fb1893081ede2a93428c72
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071061"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798698"
 ---
 # <a name="accessibility-features"></a>ユーザー補助機能
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、さまざまな障がいを持つユーザーが、このアプリケーションを使用することを支援するようにデザインされた機能について説明します。 たとえば、Microsoft Windows ナレーターなどの資格支援テクノロジーを使用しているユーザーに対する機能があります。
 
@@ -55,13 +54,13 @@ ms.locfileid: "8071061"
 
 アクション ウィンドウの **販売注文** タブの **電子メール通知** グループで表示される **電子メール通知ログ** アクションを実行します。
 
-![アクション ウィンドウでの電子メール通知ログ アクション。](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "アクション ウィンドウでの '電子メール通知ログ' アクション")
+![アクション ウィンドウでの電子メール通知ログ アクション](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "アクション ウィンドウでの '電子メール通知ログ' アクション")
 
 1 つのオプションは、キーボードを使用することです。 Ctrl + F6 キーを押してアクション ウィンドウにフォーカスを移動し、タブ キーを繰り返し押してすべてのタブおよびアクションを移動して、**電子メール通知ログ** アクションがフォーカスされるようにします。
 
 ただし、アクションをさらに直接的に実行することもできます。 ページの任意の場所から、Ctrl + アポストロフィ (') キーを押してアクションの検索ボックスを表示します。
 
-![アクションの検索ボックス。](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "アクションの検索ボックス")
+![アクションの検索ボックス](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "アクションの検索ボックス")
 
 検索ボックスで、アクションを説明する記述を入力します。 アクションが利用可能になると、直接実行できます。 たとえば、**電子メール**、**notific** (単語の一部)、または **ログ** を入力して、電子メール通知ログ機能に "ジャンプ" できます。
 
@@ -98,6 +97,3 @@ ms.locfileid: "8071061"
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>ガイダンスは、開発者および顧客がカスタマイズでアクセス可能な考えを反映できるようにします。
 
 有効なユーザー補助機能の Microsoft ベスト プラクティスについての詳細は、[フォーム、製品、およびコントロールのユーザー補助機能](../../dev-itpro/user-interface/enable-accessibility.md)を参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

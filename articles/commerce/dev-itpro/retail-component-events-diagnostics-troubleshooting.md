@@ -2,12 +2,14 @@
 title: 診断とトラブルシューティングの Commerce コンポーネント イベント
 description: このトピックでは、Commerce 固有のコンポーネントからイベントを検索する場所について説明します。
 author: aamirallaqaband
+manager: AnnBe
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 85493
 ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
 ms.search.region: Global
@@ -15,12 +17,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1bd23f2cbdeec2ae4f06c9a0fa85d2b382f645b8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8b0fa7ecdac10f54dc04020e421e73947d903d03
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781707"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681502"
 ---
 # <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 
@@ -30,7 +32,7 @@ ms.locfileid: "7781707"
 
 ## <a name="viewing-events-in-event-viewer"></a>イベント ビューアーでのイベントの表示
 
-イベントがログされるコンピューターに対して物理的にアクセスできる場合、イベント ビューアーを使用して、Microsoft Windows を実行するコンピューター上にインストールされたコンポーネント用イベントを表示することができます。 イベント ビューアーの詳細については、TechNet の [イベント ビューアー](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)) を参照してください。 また、イベント ビューアーを使用して、ユーザーがアクセス権を持つコンピューターからリモートでイベントを表示することができます。 イベント ビューアーを使用して、リモートでイベントを表示する方法の詳細については、TechNet の [リモート コンピューターでイベント ログを使用](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766438(v=ws.11)) を参照してください。 イベント ビューアは通常、次の使用例でのトラブルシューティングに使用されます。
+イベントがログされるコンピューターに対して物理的にアクセスできる場合、イベント ビューアーを使用して、Microsoft Windows を実行するコンピューター上にインストールされたコンポーネント用イベントを表示することができます。 イベント ビューアーの詳細については、TechNet の [イベント ビューアー](https://technet.microsoft.com/library/4229f239-16a6-4ecd-b3cf-aec03dc08cd5) を参照してください。 また、イベント ビューアーを使用して、ユーザーがアクセス権を持つコンピューターからリモートでイベントを表示することができます。 イベント ビューアーを使用して、リモートでイベントを表示する方法の詳細については、TechNet の [リモート コンピューターでイベント ログを使用](https://technet.microsoft.com/library/cc766438.aspx) を参照してください。 イベント ビューアは通常、次の使用例でのトラブルシューティングに使用されます。
 
 - 開発者トポロジまたはイベント ビューアーへのアクセスを提供するダウンロード可能な仮想ハードディスク (VHD) での開発。
 - 会議室パイロットを実行していて、そのコンピューターのイベント ビューアにアクセスできるときのクライアント コンポーネント。
@@ -45,7 +47,7 @@ ms.locfileid: "7781707"
 
 コンピューターでイベント ビューアを起動するには、**開始** ボタンをクリックし、**イベント ビューア** をクリックします。
 
-[![スタート ボタンのショートカット メニューのイベント ビューアー コマンド。](./media/launch-event-viewer.png)](./media/launch-event-viewer.png)
+[![スタート ボタンのショートカット メニューのイベント ビューアー コマンド](./media/launch-event-viewer.png)](./media/launch-event-viewer.png)
 
 すべてのコマース固有イベント ログにはイベント ビューアーで次のパスを確認できます。アプリケーションおよびサービス ログ \\Microsoft\\Dynamics 以下のコマース固有のイベント ログを提供します。
 
@@ -59,11 +61,11 @@ ms.locfileid: "7781707"
 
 - デバッグ ログを右クリックし、**ログの有効化** をクリックします。
 
-![デバッグ ログのショートカット メニューでログ コマンドを有効にします。](./media/enable-debugging-log.png)
+![デバッグ ログのショートカット メニューでログ コマンドを有効にする](./media/enable-debugging-log.png)
 
 ## <a name="viewing-events-by-using-the-f12-browser-developer-tools-console"></a>(F12) ブラウザー開発者ツール コンソールを使用してイベントを表示
 
-Retail Cloud POS と e コマース モジュールはブラウザー ベースのコンポーネントなので、ブラウザー開発者ツール コンソールを使用してそのイベントを表示できます。 Microsoft ブラウザ開発者ツール コンソールの詳細については、[コンソールを使用してエラーとデバッグを表示する](/microsoft-edge/devtools-guide/console) を参照してください。 Retail Cloud POS または e コマース モジュールのブラウザー開発者ツールを使用するには、サポートされているバージョンのブラウザを使用する必要があります。
+Retail Cloud POS と e コマース モジュールはブラウザー ベースのコンポーネントなので、ブラウザー開発者ツール コンソールを使用してそのイベントを表示できます。 Microsoft ブラウザ開発者ツール コンソールの詳細については、[コンソールを使用してエラーとデバッグを表示する](https://docs.microsoft.com/microsoft-edge/devtools-guide/console) を参照してください。 Retail Cloud POS または e コマース モジュールのブラウザー開発者ツールを使用するには、サポートされているバージョンのブラウザを使用する必要があります。
 
 ### <a name="view-events-in-the-browser-developer-tools-console"></a>ブラウザー開発者ツール コンソールでのイベントの表示
 
@@ -71,7 +73,7 @@ Retail Cloud POS と e コマース モジュールはブラウザー ベース�
 2. F12 キーを押し、**コンソール** タブをクリックします。
 3. Retail Cloud POS または e コマース Web サイトの操作を実行する際に、イベントはコンソールに記録されます。 イベント重要度でフィルター処理して、異なる重要度レベルのイベントを表示することができます。
 
-[![ブラウザー開発者ツールのコンソール タブ。](./media/browser-console-1024x522.png)](./media/browser-console.png)
+[![ブラウザー開発者ツールのコンソール タブ](./media/browser-console-1024x522.png)](./media/browser-console.png)
 
 ## <a name="correlating-events"></a>関連のイベント
 
@@ -97,7 +99,7 @@ POS クライアントが Commerce Scale Unit を呼び出すときはいつで�
 
 Commerce Scale Unit 要求の一部として記録されるすべてのイベントは、最初の受信要求イベント用に記録された初期イベントと同じ ActivityID を持ちます (イベント ID 5000)。 これらのイベントは、イベント ビューアーと LCS ログ検索の両方で利用できます。
 
-[![POS クライアントと Commerce Scale Unit 間のデータ フロー。](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
+[![POS クライアントと Commerce Scale Unit 間のデータ フロー](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
 
 ### <a name="finding-retail-modern-pos-events-in-event-viewer"></a>イベント ビューアーでの Retail Modern POS イベントの検索
 
@@ -108,7 +110,7 @@ Retail Modern POS によってが記録されたすべてのイベントには�
 
 AppSessionID 値および UserSessionID 値は、Retail Modern POS がインストールされているマシン上のイベント ビューアーの **詳細** タブで見つけることができます。
 
-[![イベント ビューアーの詳細タブ。](./media/correlation-1024x672.png)](./media/correlation.png)
+[![イベント ビューアーの詳細タブ](./media/correlation-1024x672.png)](./media/correlation.png)
 
 ### <a name="finding-incoming-commerce-scale-unit-request-events-in-event-viewer"></a>イベント ビューアーで、受信する Commerce Scale Unit 要求のイベントを検索
 
@@ -163,7 +165,7 @@ LCS ログ検索にアクセスするには、次の手順を実行します。
 - POS ユーザー セッション ID
 - 重大度
 
-![環境監視ページの検索結果。](./media/log-search-results.png)
+![環境監視ページの検索結果](./media/log-search-results.png)
 
 ### <a name="e-commerce-events"></a>E コマース イベント
 
@@ -231,8 +233,8 @@ IPageViewInfo = {
 **カート** イベントのスキーマは次のとおりです。
 
 ```json
-/***
- * Defines the telemetry properties to track for a Cart object
+/**_
+ _ Defines the telemetry properties to track for a Cart object
  * @property products       {IProductInfo[]}    - Array of product information
  * @property orderId        {string}            - ID for the order
  * @property cartId         {string}            - ID for the current cart object
@@ -251,8 +253,8 @@ export interface ICartInfo {
 注文が送信されると、購入イベントがログに記録されます。 **購買** イベントのスキーマは次のとおりです。
 
 ```json
-/***
- * Defines the telemetry properties to track for a Purchase event
+/**_
+ _ Defines the telemetry properties to track for a Purchase event
  * @property id            {string}         - Transaction ID
  * @property affiliation   {string}         - Origin of this transaction (e.g. Online Store)
  * @property revenue       {number}         - Revenue from this transaction
@@ -275,8 +277,8 @@ export interface IProductTransaction {
 製品の詳細は、**カート** および **購買** 操作に記録されます。 **製品** の詳細に関するスキーマは次のとおりです。
 
 ```json
-/***
- * Defines the telemetry properties to track for a Product object
+/**_
+ _ Defines the telemetry properties to track for a Product object
  * @property productChannelId       {string}   - Product channel ID
  * @property productChannelName     {string}   - Product channel name
  * @property productCategoryId      {string}   - Product category ID
@@ -301,6 +303,3 @@ export interface IProductInfo {
     productCurrency: string;
 }
 ```
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

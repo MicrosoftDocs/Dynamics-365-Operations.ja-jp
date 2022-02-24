@@ -2,13 +2,16 @@
 title: コールセンターの注文保留のコンフィギュレーションと作業
 description: このトピックでは、Dynamics 365 Commerce を使用して注文を保留する方法について説明します。
 author: josaw1
+manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 79132
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b11dd48ac629910a82b4d5bfdf9889809b0d829d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762599"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413769"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>コール センターの注文保留のコンフィギュレーションおよび作業
 
@@ -53,7 +56,7 @@ ms.locfileid: "6762599"
 
 コール センター チャンネルで **オーダー完了の有効化** フラグが有効な場合、支払を保留中の注文に適用する必要はありません。 対照的に、保留中と設定されていない販売注文に対して、ユーザーは支払が適用されるまで販売注文入力ページから移動できません。 もちろん、注文保留がリリースされる前に、支払われる必要があります。
 
-また、コール センターのユーザーは、何らかの理由で疑わしい注文を手動の不正保留とすることができます。 また、不正の基準や規則に合っている場合、注文を自動的に保留にすることもできます。 この注文保留のタイプに関する詳細情報については、次を参照してください [詐欺警告の設定](/dynamics365/unified-operations/retail/set-up-fraud-alerts)。
+また、コール センターのユーザーは、何らかの理由で疑わしい注文を手動の不正保留とすることができます。 また、不正の基準や規則に合っている場合、注文を自動的に保留にすることもできます。 この注文保留のタイプに関する詳細情報については、次を参照してください [詐欺警告の設定](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts)。
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>保留中の注文を、表示および管理します。
 
@@ -100,6 +103,3 @@ ms.locfileid: "6762599"
 ## <a name="reporting-options"></a>レポート オプション
 
 日付範囲、保留コード、またはその他の関連の基準による注文保留に関するレポートを実行するため、**Retail とコマース** \> **照会およびレポート** \> **コール センター レポート** \> **注文保留レポート** の順に移動します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

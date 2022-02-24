@@ -2,9 +2,11 @@
 title: 拡張バッチ フォーム
 description: このトピックでは、拡張バッチ フォームに関する情報を提供します。
 author: hasaid
+manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 990cb5d5d05ec98748c793328d92fd06c138706d06bbf58e12ccb15401084724
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 12a527a370021fe7ad35b06244feaf7c14ac1569
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733101"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679906"
 ---
 # <a name="enhanced-batch-forms"></a>拡張バッチ フォーム
 
@@ -36,13 +38,10 @@ ms.locfileid: "6733101"
 
     拡張フォームに関する通知を受信します。 通知には、[アクション] ウィンドウの **拡張フォームに切り替える** ボタンの位置が示されています。
 
-    ![拡張フォームに切り替えるボタン。](./media/batch-popup.png)
+    ![[拡張フォームに切り替える] ボタン](./media/batch-popup.png)
 
 2. **拡張フォームに切り替える** を選択します。
 
 通常のフォームに戻るには、拡張フォームのアクション ペインで **レガシー フォームに切り替える** を選択します。
 
-![レガシー フォームに切り替えるボタン。](./media/enhanced-form.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![[レガシー フォームに切り替える] ボタン](./media/enhanced-form.png)

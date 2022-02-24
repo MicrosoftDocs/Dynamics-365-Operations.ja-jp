@@ -1,26 +1,33 @@
 ---
-title: ノルウェーのキャッシュ レジスタの展開ガイドライン (レガシ)
-description: このトピックは、Microsoft Dynamics 365 Commerce のノルウェーでのローカライズを有効にする方法を示す配置ガイドです。
-author: EvgenyPopovMBS
-ms.date: 12/20/2021
+title: ノルウェーのキャッシュ レジスタの配置ガイドライン
+description: このトピックは、ノルウェーのローカライズ用配置ガイドです。
+author: AlexChern0v
+manager: olegkl
+ms.date: 10/06/2020
 ms.topic: article
-audience: Application User, Developer, IT Pro
-ms.reviewer: v-chgriffin
-ms.search.region: Global
-ms.author: epopov
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Developer
+ms.reviewer: josaw
+ms.search.region: Norway
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-2-28
-ms.openlocfilehash: 019bac01abdc0b2e16718c08953b44fbccef83a3
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.dyn365.ops.version: 7.3.2
+ms.openlocfilehash: 34bd4c3626e6d1b6f5c52889256bf12e44cd4760
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944791"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409357"
 ---
-# <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>ノルウェーのキャッシュ レジスタの展開ガイドライン (レガシ)
+# <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 Commerce のノルウェーでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。
+このトピックは、Dynamics 365 Commerce のノルウェーでのローカライズを有効にする方法を示す配置ガイドです。 ローカライズは、コマース コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引を登録、デジタル署名販売取引、およびローカルの形式で X および Z レポートを印刷できます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。
 
 このサンプルは、小売ソフトウェア開発キット (SDK) の一部です。 SDK に関する詳細については、[Retail ソフトウエア開発キット (SDK) アーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
@@ -28,7 +35,8 @@ ms.locfileid: "7944791"
 
 > [!NOTE]
 > Commerce 10.0.8 およびそれ以降では、Retail Server は Commerce Scale Unit と呼ばれます。 このトピックは、アプリの以前の複数のバージョンに適用されるため、このトピック全体で *Retail サーバー* を使用します。
->
+
+> [!NOTE]
 > 使用しているコマースのバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
 
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Commerce チャネルでの証明書プロファイルの使用
@@ -41,15 +49,12 @@ CRT でこの機能を適用するには、次の手順を実行します。
 
 2. CertificateSignatureServiceRequest のカスタム ハンドラーを SequentialSignatureRegister プロジェクトに追加します。
 
-3. シークレット呼び出しを読み取るには、profileId パラメーターのあるコンストラクターを使用し、`GetUserDefinedSecretCertificateServiceRequest` を実行します。 これにより、証明書プロファイルの設定で機能が開始されます。 この設定に基づいて、証明書は Azure Key Vault またはローカルマシン ストレージから取得されます。
-
-    ```csharp
-    GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
-    GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
-
-    X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
-    ```
-
+3. シークレット呼び出しを読み取るには、プロファイスされたパラメータのあるコンストラクターを使用し、GetUserDefinedSecretCertificateServiceRequest を実行します。 これにより、証明書プロファイルの設定で機能が開始されます。 この設定に基づいて、証明書は Azure Key Vault またはローカルマシン ストレージから取得されます。
+    
+    GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);  GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+    
+    X509Certificate2 証明書 = getUserDefinedSecretCertificateServiceResponse.Certificate;
+    
 4. 証明書が取得されたら、データ署名に進みます。
 
 5. CRT 拡張機能プロジェクトを作成します。
@@ -1633,6 +1638,3 @@ Modern POSでオフライン モードでのデジタル署名を有効にする
 5. POS にサインインします。
 6. **データベースの接続の状態** ページで、オフライン データベースが完全に同期化されているかどうかを確認します。 **オフライン データベースで取引を保留中** フィールドの値が **0** (ゼロ) の時、データベースは完全に同期しています。
 7. Modern POS を再起動します。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

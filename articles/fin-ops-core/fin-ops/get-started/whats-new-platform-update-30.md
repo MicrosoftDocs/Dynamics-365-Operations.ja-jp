@@ -2,9 +2,11 @@
 title: Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 30 の新機能または変更された機能について説明します。
 author: tonyafehr
+manager: AnnBe
 ms.date: 11/08/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 3414e0cf5cbf9a8764402f96ddf4cc0aed56ba64f713063cb7d85491ac885a67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d7ef9bf5f6c7f5846b2b982f6001dbea61a7c62a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734600"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797839"
 ---
 # <a name="whats-new-or-changed-in-platform-update-30-for-finance-and-operations-apps-november-2019"></a>Finance and Operations アプリのプラットフォーム更新プログラム 30 (2019 年 11 月) の新機能および変更された機能
 
@@ -28,7 +30,7 @@ ms.locfileid: "6734600"
 このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 30 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 7.0.5407 です。 一般提供開始日は 11 月ですが、新機能は 9 月の初期リリースで使用できます。 プラットフォーム更新プログラム 30 の詳細については [追加リソース](whats-new-platform-update-30.md#additional-resources) を参照してください。
 
 ## <a name="readable-date-time-format-for-datetime-fields-in-business-event-payload"></a>ビジネス イベント ペイロードの dateTime フィールドに対する読み取り可能な日時形式
-新しいビジネス イベントがコード化されると、dateTime フィールドを有効にして、ビジネス イベント ペイロード人が判読可能な形式で値を出力することができます。 また、既存のビジネス イベントを変更して、ペイロードに読み取り可能な dateTime フィールドを含めることにより、互換性を維持することもできます。 開発者ドキュメントについては、[ビジネス イベント開発者ドキュメント](../../dev-itpro/business-events/business-events-dev-doc.md) で説明されています。
+新しいビジネス イベントがコード化されると、dateTime フィールドを有効にして、ビジネス イベント ペイロード人が判読可能な形式で値を出力することができます。 また、既存のビジネス イベントを変更して、ペイロードに読み取り可能な dateTime フィールドを含めることにより、互換性を維持することもできます。 開発者ドキュメントについては、[ビジネス イベント開発者ドキュメント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc) で説明されています。
 
 ## <a name="hide-fields-much-faster-in-personalization-mode"></a>個人用設定モードでのより高速なフィールドの非表示
 個人用設定モードでのフィールドの非表示が **大幅に** 速くなりました。 選択したコントロールを非表示にするシステムからの確認を待つ代わりに、このチェックが非同期に行われ、ユーザーがコントロールをクリックするのと同じ速さで非表示にできるようになりました。 この同じ最適化は、コントロールのスキップ、フィールドのロック、およびクイック タブ要約フィールドとしてのフィールドの追加にも適用されました。   
@@ -59,7 +61,7 @@ ms.locfileid: "6734600"
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md)トピックでは、削除または廃止された機能について説明します。
@@ -70,6 +72,3 @@ ms.locfileid: "6734600"
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

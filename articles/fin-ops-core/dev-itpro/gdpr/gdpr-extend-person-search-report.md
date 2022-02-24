@@ -2,22 +2,24 @@
 title: 個人検索レポートを拡張
 description: このトピックでは、Finance and Operations の担当者検索レポートを拡張するためのプロセスを説明します。
 author: rschloma
+manager: AnnBe
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3c8be8640bcddbed4780ce34f2c3bdadcf4fdb5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1b8157608d28fb74063f4243232ed54fdf7c231f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782719"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683216"
 ---
 # <a name="extend-the-person-search-report"></a>個人検索レポートの拡張
 
@@ -123,6 +125,3 @@ GDPR の詳細については、[欧州連合の Web サイト](https://europa.e
 
 ### <a name="disclaimer"></a>免責事項
 (c)2018 Microsoft Corporation. All rights reserved. このドキュメントは、"現状のまま" 提供されます。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。 このドキュメントの使用上のリスクは、すべてユーザーが負うものとします。 このドキュメントは、Microsoft の製品に含まれる知的財産に対する法律上の権利をお客様に付与するものではありません。 内部での参照を目的とする場合、このドキュメントをコピーして使用できます。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

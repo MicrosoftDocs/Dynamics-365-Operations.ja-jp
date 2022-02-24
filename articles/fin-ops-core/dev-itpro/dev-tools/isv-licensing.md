@@ -1,23 +1,27 @@
 ---
 title: 独立系ソフトウェア ベンダー (ISV) ライセンス
 description: このトピックでは、独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
-author: peakerbl
+author: jorisdg
+manager: AnnBe
 ms.date: 05/08/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5e6142a41c5a351ff958595fbad9c93b95cd919
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7ad0724fdf6009b95daaac60483e464a42e44b9b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782028"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408849"
 ---
 # <a name="independent-software-vendor-isv-licensing"></a>独立系ソフトウェア ベンダー (ISV) ライセンス
 
@@ -46,17 +50,17 @@ ISV は独自のライセンスを個別に生成し、ソリューションに�
 
 ### <a name="there-are-two-types-of-license-boolean-and-number"></a>ライセンスには、ブール値と数値の 2 種類があります
 
-ISV は **ブール値** および **番号** の 2 つのタイプを作成できます。 ISV は、いずれかの種類のライセンスと有効期限を関連付けることができます。 この有効期限は ISV ライセンスにのみ適用され、システムの有効期限とは無関係です。 ブール値ライセンスは、単純な有効化ライセンスです。 ライセンスのタイプ (**ブール値** または **数字**) は、ライセンス コード ノードのプロパティによって設定されます。 ISV は、独自のカスタム ロジックを記述し、ISV ライセンスで提供されている数を確認し、そのソリューションがライセンス条件内で使用されていることを確認できます。 詳細については、[ISV のライセンス フレームワーク](/dynamicsax-2012/developer/licensing-framework-for-isvs-of-microsoft-dynamics-ax)を参照してください。
+ISV は **ブール値** および **番号** の 2 つのタイプを作成できます。 ISV は、いずれかの種類のライセンスと有効期限を関連付けることができます。 この有効期限は ISV ライセンスにのみ適用され、システムの有効期限とは無関係です。 ブール値ライセンスは、単純な有効化ライセンスです。 ライセンスのタイプ (**ブール値** または **数字**) は、ライセンス コード ノードのプロパティによって設定されます。 ISV は、独自のカスタム ロジックを記述し、ISV ライセンスで提供されている数を確認し、そのソリューションがライセンス条件内で使用されていることを確認できます。 詳細については、[ISV のライセンス フレームワーク](https://msdn.microsoft.com/library/jj677284.aspx)を参照してください。
 
 ### <a name="license-validation-errors"></a>ライセンス検証エラー
 
 ISV ライセンスがインポート後に無効になったとき、ISV ソリューションはサーバーが再起動されるまで実行を継続します。 (サーバーの再起動後、ソリューションは無効になっています。) Application Object Server (AOS) のインスタンスの起動時にエラーがスローされます。 エラーはイベント ログに書き込まれます。
 
 ## <a name="implementing-isv-licensing-in-a-solution"></a>ソリューションへの ISV ライセンスの実装
-ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が必要です。 Microsoft が、特定の CA をお勧めすることはありません。 ただし、多くの企業がこれらの証明書を提供します。 Authenticode 証明書は、さまざまなキー サイズに役立ちます。 ISV ライセンス機能は、キー サイズが 1024 ビットと 2048 ビットの両方の証明書をサポートします。 バージョン 10.0.20 のプラットフォーム更新プログラム以降では、3072 ビットおよび4096 ビット コード署名証明書がサポートされています。 より強力な暗号化を行うため、ISV がより大きなビット キー サイズを使用することをお勧めします。 ただし、ISV に既に有効な 1024 ビットまたは 2048 ビット キー サイズがある場合、そのキー サイズは ISV ライセンス機能で動作します。 
+ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が必要です。 Microsoft が、特定の CA をお勧めすることはありません。 ただし、多くの企業がこれらの証明書を提供します。 Authenticode 証明書は、さまざまなキー サイズに役立ちます。 ISV ライセンス機能は、キー サイズが 1024 ビットと 2048 ビットの両方の証明書をサポートします。 既定では、多くのプロバイダーが 2048 ビット キー サイズを使用しており、より強固な暗号化を提供するために ISV はこのビット キー サイズを使用することをお勧めします。 ただし、ISV に既に既存の 1024 ビット キー サイズがある場合、そのキー サイズは ISV ライセンス機能で動作します。 
 
 > [!NOTE]
-> Authenticode 証明書はさまざまな暗号サービス プロバイダーを持つことができます。 ISV ライセンス機能は、Enhanced Cryptographic Provider を使います (Base Cryptographic Provider もカバーします)。 Authenticode 証明書を購入できる多くの独立したプロバイダーがあります。 Microsoft が、特定のプロバイダーをお勧めすることはありません。 頻繁に使用されるプロバイダーは、Symantec VeriSign および Thawte です。
+> ISV ライセンス機能は、4096 ビット キー サイズをサポートしていません。 Authenticode 証明書はさまざまな暗号サービス プロバイダーを持つことができます。 ISV ライセンス機能は、Enhanced Cryptographic Provider を使います (Base Cryptographic Provider もカバーします)。 Authenticode 証明書を購入できる多くの独立したプロバイダーがあります。 Microsoft が、特定のプロバイダーをお勧めすることはありません。 頻繁に使用されるプロバイダーには、Symantec VeriSign、Thawte、Go Daddy があります。
 
 ## <a name="certificate-import-and-export"></a>証明書のインポートおよびエクスポート
 証明書は、お客様のライセンス ファイルに署名し、インポート時にライセンス ファイルを検証するために使用されます。 Authenticode 証明書は、4 つのファイル形式をサポートします。 ISV ライセンス機能については、2 つの形式で証明書ファイルが必要です。
@@ -71,64 +75,64 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
 1. ISV ソリューションを作成します。 Visual Studio で、**ファイル \> 新しいプロジェクト** の順番にクリックします。 **新しいプロジェクト** ダイアログ ボックスで、**インストール済 > テンプレート > Dynamics 365** をクリックします。  **財務業務** プロジェクトを作成します。 この例では、プロジェクトに **NewISVSolution** という名前を付けました。
 
-    ![ISV ソリューションを作成しています。](media/isv_new_isv_project.png)
+    ![ISV ソリューションを作成しています](media/isv_new_isv_project.png)
 
 2. リソースとしてプロジェクトに証明書の公開キー (.cer ファイル) を追加します。 テスト用の証明書を作成するには、[付録: テスト目的での自己署名証明書の作成](#appendix-create-self-signed-certificates-for-test-purposes) を参照してください。
 
     1. ソリューション エクスプローラーで、プロジェクトを右クリックし、**追加 \> 新しい項目** をクリックします。 
     2. **インストール済み \> Dynamics 365 項目** で、**ラベルとリソース** をクリックし、**リソース** を選択し ます。 リソースに名前を付けます。 この例では、リソースに **ISVCert** という名前を付けました。
 
-        ![リソースをクリックします。](media/isv_new_resource.png)
+        ![リソースをクリックする](media/isv_new_resource.png)
 
     3. **追加** をクリックし、証明書の公開キー ファイル (.cer ファイル) を選択します。
 
-        ![リソースとして証明書の公開キーを選択します。](media/isv_select_cer.png)
+        ![リソースとして証明書の公開キーを選択](media/isv_select_cer.png)
 
     4. **開く** をクリックして証明書を追加します。
 
-        ![リソースとして証明書を追加します。](media/isv_resource_cer.png)
+        ![リソースとして証明書を追加](media/isv_resource_cer.png)
 
 3. ライセンス コードを作成します。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**追加 \> 新しい項目** をクリックします。 **インストール済み \> Dynamics 365の項目** で、**構成** を選択します。 一覧で、**ライセンス コード** を選択し、ライセンス コードに名前を付けます。 この例では、ライセンス コードに **ISVLicenseCode** という名前を付けました。 **追加** をクリックします。
 
-    ![ライセンス コードを作成しています。](media/isv_new_license_code.png)
+    ![ライセンス コードを作成しています](media/isv_new_license_code.png)
 
 4. ライセンス コードに証明書をマップします。 ライセンス コードの [プロパティ] ウィンドウで、**証明書** プロパティを証明書リソースに設定します。 この例では、**証明書** を **ISVCert** に設定します。
 
-    ![ライセンス コードに証明書をマッピングします。](media/isv_map_license_cert.png)
+    ![ライセンス コードへの証明書のマッピング](media/isv_map_license_cert.png)
 
 5. 1 つまたは複数のコンフィギュレーション キーを作成します。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**追加 \> 新しい項目** をクリックします。 **インストール済み \> Dynamics 365の項目** で、**構成** を選択します。 一覧で、**コンフィギュレーション キー** を選択します。 キーに名前を付けて、**追加** をクリックします。 この例では、コンフィギュレーション キーに **ISVConfigurationKey1** という名前を付けました。
 
-    ![コンフィギュレーション キーを作成しています。](media/isv_new_configuration_key.png)
+    ![コンフィギュレーション キーを作成しています](media/isv_new_configuration_key.png)
 
 6. ライセンス コードをコンフィギュレーション キーに関連付けます。 ソリューション エクスプローラーで、コンフィギュレーション キーをダブルクリックして、[プロパティ] ウィンドウを開きます。 [プロパティ] ウィンドウで、**LicenseCode** プロパティをライセンス コードに設定します。 この例では、**LicenseCode** を **ISVLicenseCode** に設定します。
 
-    [![ライセンス コードとコンフィギュレーション キーを関連付けます。](media/isv_select_license_code.png)
+    [![ライセンス コードとコンフィギュレーション キーの関連付け](media/isv_select_license_code.png)
 
 7. コンフィギュレーション キーをソリューションの要素に関連付けます。 たとえば、新しいフォームを作成します。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**追加 \> 新しい項目** をクリックします。 **インストール済み \> Dynamics 365の項目** で、**ユーザー インターフェイス** を選択します。 一覧で、**フォーム** を選択し、名前を付けます。 この例では、フォームに **ISVForm** という名前を付けました。
 
-    ![新しいフォームを作成しています。](media/isv_new_form.png)
+    ![新しいフォームを作成しています](media/isv_new_form.png)
 
 8. フォームにボタンを追加します。 ソリューション エクスプローラーで、フォームをダブルクリックします。 [デザイン] ウィンドウで右クリックし、**新規作成**、**ボタン** の順に選択します。 **テキスト** プロパティを **ISVButton** に設定します。
 
-    ![新しいフォームにボタンを追加しています。](media/isv_button_designtime.png)
+    ![新しいフォームへのボタンの追加](media/isv_button_designtime.png)
 
     実行時に、ボタンは最初はコンフィギュレーション キーで制御されていないため、表示されます。 
 
-    ![最初に追加されるときに、新しいボタンが表示されます。](media/isv_button_visible_runtime.png)
+    ![最初に追加されるときに、新しいボタンが表示されます](media/isv_button_visible_runtime.png)
 
 9.  コンフィギュレーション キーをボタンに関連付けます。 ボタンの [プロパティ] ウィンドウで、**コンフィギュレーション キー** プロパティを コンフィギュレーションに設定します。 この例では、**コンフィギュレーション キー** を **ISVConfigurationKey1** に設定します。
 
-    ![コンフィギュレーション キーとボタンを関連付けています。](media/isv_select_key_for_button.png) 
+    ![コンフィギュレーション キーとボタンの関連付け](media/isv_select_key_for_button.png) 
 
     実行時に、コンフィギュレーション キーが使用可能で有効になっている必要があるため、ボタンは表示されません。 
 
-    ![ボタンが表示されていません。](media/isv_button_invisible_runtime.png)
+    ![ボタンが表示されていません](media/isv_button_invisible_runtime.png)
 
 
 ## <a name="create-a-package-and-generate-a-customer-specific-license"></a>パッケージを作成し、顧客固有のライセンスを生成する
 1.  ライセンスを発行する顧客のテナント名と ID を収集します。 この情報については **ライセンス** タブの **設定 \> ヘルプ \& サポート \> バージョン情報** で確認できます。 
 
-    ![顧客のテナント名および ID。](./media/isv_tenant_id.png)
+    ![顧客のテナント名および ID](./media/isv_tenant_id.png)
 
 2.  顧客のライセンス (テナント ID と名前) を生成し、証明書のプライベート キーを使用してライセンスを登録します。 ライセンス ファイルを作成するには、**axutil genlicense** コマンドに、以下のパラメーターを渡す必要があります。
 
@@ -161,26 +165,25 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
     | --metadatadir                 | メタデータ ディレクトリ を指定するには、このパラメーターを使用します。 既定のパッケージ ディレクトリを使用する必要があります。   |
     | --bindir                      | バイナリ ディレクトリ を指定するには、このパラメーターを使用します。 既定のパッケージ ディレクトリを使用する必要があります。   |
     | --sqlserver                   | このパラメーターを使用して Microsoft SQL Server を指定します。 1 ボックス環境では、ピリオド (**.**) を使用します。 |
-    | --sqldatabase                 | SQL Server データベースを指定するには、このパラメーターを使用します。 1 ボックス環境では、**AXDB** を使用します。     |
-    | --sqluser                     | SQL Server のユーザーを指定するには、このパラメーターを使用します。 **axdbadminr** を使用する必要があります。                  |
+    | --sqluser                     | SQL Server のユーザーを指定するには、このパラメーターを使用します。 **AOSUser** に渡す必要があります。                     |
     | --sqlpwd                      | SQL Server のパスワードを指定するには、このパラメーターを使用します。                                                 |
     | --licensefilename             | 読み込むライセンス ファイルを指定するには、このパラメーターを使用します。                                    |
 
     次に例を示します。
 
     ```Console
-    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ******** --licensefilename c:\templicense.txt
+    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
     ```
 
 4.  対応するコンフィギュレーション キーは、**ライセンス コンフィギュレーション** ページで使用可能になり、有効になります。 既定では、コンフィギュレーションが有効です。 たとえば、次のスクリーンショットで **ISVConfigurationKey1** コンフィギュレーション キーを参照してください。 
 
-    ![ライセンス設定ページで ISVConfigurationKey1 コンフィギュレーション キーを有効にします。](media/isv_license_configuration_page.png)
+    ![ライセンス設定ページで ISVConfigurationKey1 コンフィギュレーション キーを有効にする](media/isv_license_configuration_page.png)
 
 5.  非実稼働インストールでは、Visual Studio からデータベースの同期プロセスを開始する必要があります。
 
 コンフィギュレーション キーを有効にした後、次のスクリーンショットに示すように、ボタンは表示されるようになります。 
 
-![コンフィギュレーション キーを有効にするとボタンが表示されます。](media/isv_button_visible_runtime.png)
+![コンフィギュレーション キーを有効にするとボタンが表示されます](media/isv_button_visible_runtime.png)
 
 ## <a name="protection-best-practices"></a>保護のベスト プラクティス
 ソリューションは、2つの形式で配布することができます。
@@ -190,13 +193,13 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
 
 構成キーとライセンス コードを保護するには、展開可能なパッケージを使用してバイナリ形式でリリースすることをお勧めします。 顧客は Visual Studio のこれらの要素をインストールして対話することができます。 顧客が配置可能パッケージ内の項目を参照することはできますが、ソース コードにアクセスしたり項目を変更することはできません。 (ただし、拡張機能を作成できます。) バイナリ形式でソリューションをリリースする機能の詳細は、すぐに利用可能になります。 配置可能パッケージ (バイナリ) には、顧客がアクセスを必要とせず、カスタマイズできないようなクラスやその他のロジックも含めることができます。 
 
-![保護されている ISV ソリューションと保護されていない ISV ソリューション。](./media/isv_protected_solution.png)
+![保護されている ISV ソリューションと保護されていない ISV ソリューション](./media/isv_protected_solution.png)
 
 ## <a name="production-environments"></a>実稼働環境
 実稼働システムに ISV ライセンスをインストールするには、LCS によって展開可能なパッケージを使用する必要があります。 コンフィギュレーション モード用テンプレート パッケージは、すべてのインストールに関して次の場所にあります: \<PackagesFolder\>\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (パッケージ フォルダーは通常次の下にあります j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
 
 > [!div class="mx-imgBorder"]
-> ![コンフィギュレーション モードのテンプレート パッケージの場所。](media/isv_template_location.png)
+> ![コンフィギュレーション モードのテンプレート パッケージの場所](media/isv_template_location.png)
 
 1.  パッケージ テンプレートのコピーを作成します。
 2.  パッケージ テンプレート内の次のフォルダーにライセンス ファイルを配置: ImportISVLicense.zip\\AosService\\Scripts\\License
@@ -216,7 +219,7 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
     makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
     ```
 
-    詳細については、[MakeCert](/windows/win32/seccrypto/makecert) のドキュメントを参照してください。
+    詳細については、[MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx) のドキュメントを参照してください。
 
 2. CA を使用して証明書を作成します。
 
@@ -280,6 +283,3 @@ ISV には証明機関 (CA) から有効な Authenticode 証明書 (X.509) が�
     ```PowerShell
     certutil -addstore root C:\Temp\IsvCert.cer
     ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

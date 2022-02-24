@@ -1,10 +1,12 @@
 ---
 title: ER コンフィギュレーションを使用したアプリケーション メタデータへのアクセス
-description: このトピックでは、Regulatory Configuration Service のユーザーが、メタデータを使用して、新しい電子申告モデル マッピングをデザインする方法について説明します。
+description: このトピックの手順では、Regulatory configuration service (RCS) のユーザーが Finance and Operations のメタデータを使用して、新しい電子申告 (ER) モデルのマッピングをデザインする方法について説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ad175f81edcf6b21927d85927c42a3398a0286b4a766e06c88a61952384f75e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fa8e9ac4940bbc1252819ebcc3de2e21c9e0933f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754345"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682168"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>ER コンフィギュレーションを使用したアプリケーション メタデータへのアクセス
 
@@ -123,6 +125,3 @@ ms.locfileid: "6754345"
 > [!NOTE]
 > アプリケーション メタデータに関する情報を取得するこの方法は、ローカルに展開されたアプリケーションで利用できる唯一の方法です (ローカル ビジネス データ (LBD)、またはオンプレミスの場合、配置モデルが使用されます)。
         
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

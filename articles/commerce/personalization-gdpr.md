@@ -1,14 +1,17 @@
 ---
 title: パーソナライズされた推奨事項のオプト アウト
-description: このトピックでは、顧客が Microsoft Dynamics 365 Commerce でパーソナライズされた推奨事項を受け取ることができるようにする方法について説明します。
+description: このトピックでは、顧客がMicrosoft Dynamics 365 Commerceでパーソナライズされた推奨事項を受け取ることができるようにする方法について説明します。
 author: bebeale
+manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772940"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413725"
 ---
-# <a name="opt-out-of-personalized-recommendations"></a>パーソナライズされた推奨事項のオプトアウト
+# <a name="opt-out-of-personalized-recommendations"></a>パーソナライズされた推奨事項のオプト アウト
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、顧客が Microsoft Dynamics 365 Commerce でパーソナライズされた推奨事項を受け取ることができるようにする方法について説明します。
+このトピックでは、顧客がMicrosoft Dynamics 365 Commerceでパーソナライズされた推奨事項を受け取ることができるようにする方法について説明します。
+
+## <a name="overview"></a>概要
 
 アカウントの作成時、新規顧客はパーソナライズされた推奨事項を受け取るように自動的に設定されます。 ただし、Dynamics 365 Commerce は、ユーザーがこれらの推奨事項のオプト アウトを選択したり、個人データの処理を制限したりできるようにするさまざまな方法を、小売業者に提供しています。 パーソナライズされた推奨事項の受信をオプト アウトした認証済ユーザーは、ただちにパーソナライズされたリストを見ることができなくなります。 また、パーソナライズのために収集された個人データは、パーソナライズされた推奨モデルから削除されます。
 
@@ -44,11 +49,11 @@ Commerce バック オフィスのアカウント管理では、小売業者は�
 1. バックオフィスのホームページから、**すべての顧客** を検索します。
 1. 顧客を検索して選択し、**小売** クイックタブを選択します。
 
-    ![小売クイックタブ。](./media/Disablepersonalizationpart1.png)
+    ![小売クイックタブ](./media/Disablepersonalizationpart1.png)
 
 1. **プライバシー** で、**個人用設定を無効にする** オプションを **はい** に設定します。
 
-    ![プライバシー設定。](./media/Disablepersonalizationpart2.png)
+    ![プライバシー設定](./media/Disablepersonalizationpart2.png)
 
 1. **保存** を選択して、ページを閉じます。
 
@@ -99,6 +104,3 @@ Commerce バック オフィスのアカウント管理では、小売業者は�
 [推奨事項とデモ データの作成](product-recommendations-demo-data.md)
 
 [製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

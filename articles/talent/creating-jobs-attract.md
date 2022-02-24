@@ -157,6 +157,3 @@ Attract のジョブ求人は、承認用に申請できます。 すべての�
 
 13. ジョブ求人を有効にするには、**有効化** を選択します。
 14. ジョブ求人を転記するには、**転記** に移動し、Talent Careers サイトまたは LinkedIn で **今すぐ転記** を選択します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

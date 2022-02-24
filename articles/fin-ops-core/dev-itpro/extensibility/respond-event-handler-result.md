@@ -1,25 +1,27 @@
 ---
 title: EventHandlerResult を使用して応答
 description: このトピックでは、IEventHandlerResult インターフェイスを実装する任意の型パラメーターを持つイベントをサブスクライブする方法について説明します。
-author: MichaelFruergaardPontoppidan
+author: LarsBlaaberg
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mfp
+ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: dc02b00555465b34f22faf1fa693b5a0f5fb7360
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 16020cfa345101d8cebf4a99aa31db13d6017d7d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782729"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409485"
 ---
 # <a name="respond-by-using-eventhandlerresult"></a>EventHandlerResult を使用して応答
 
@@ -143,6 +145,3 @@ public static void validateWriteProdTableInventRefTypeDelegateHandler(ProdTable 
         }
     }
     ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: 資産グループへの共有資産とのれんの帳簿価額の配賦
 description: この手順では、各資産グループへの共有資産と営業権の帳簿価額の配賦について説明します。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetImpairmentSharedAssetAlloc_JP, AssetImpairmentPopulateAllocation_JP
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d9294829afd2f7be429448aa5a20f085f3a7678ad9e6a53912cc0cd6ec36f07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8362858018cd823224126b43c8fdced9fdf4b63a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743769"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408153"
 ---
 # <a name="allocate-carrying-amount-of-shared-asset-and-goodwill-to-cash-generating-units"></a>資産グループへの共有資産とのれんの帳簿価額の配賦
 
@@ -56,6 +59,3 @@ ms.locfileid: "6743769"
 6. 一覧で、すべての行のマークを設定または解除します。
 7. [OK] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

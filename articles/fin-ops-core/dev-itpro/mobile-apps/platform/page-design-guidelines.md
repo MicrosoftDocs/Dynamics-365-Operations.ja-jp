@@ -1,22 +1,27 @@
 ---
 title: ページ デザインのガイドライン
-description: このトピックでは、モバイル アプリのページ デザインのガイドラインを提供します。
-author: tonyafehr
+description: このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。
+author: robinarh
+manager: AnnBe
 ms.date: 04/23/2018
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 255544
+ms.assetid: ''
 ms.search.region: Global
-ms.custom: intro-internal
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: da2ab897efb1d80263d569409b29805c8a7ab89b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 73633fd74c1d0149ad6b521e11093c51487e15b0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982955"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682555"
 ---
 # <a name="page-design-guidelines"></a>ページ デザインのガイドライン
 
@@ -55,7 +60,7 @@ ms.locfileid: "7982955"
 3.  詳細ビューで使用されるフォームが、フィルター ウィンドウを使用して固有のキー フィールドでフィルターできることを確認します。
 4.  デザイナーで、リスト ビュー ページが詳細表示ページにリンクされていることを確認します。 リストをクリックしてプロパティを開き、ルックアップを使用して詳細表示ページを設定します。 
 
-    ![リスト ビュー ページを詳細ビュー ページにリンクします。](media/listtodetailsdesigner.png)
+    ![詳細ビュー ページへのリスト ビュー ページのリンク](media/listtodetailsdesigner.png)
 
 ### <a name="how-do-i-add-a-reference-field-that-enables-navigation-to-a-related-entity"></a>ナビゲーションを有効にする参照フィールドを関連するエンティティに追加する方法はありますか。
 
@@ -63,13 +68,13 @@ ms.locfileid: "7982955"
 2.  ページに参照されているエンティティから参照フィールドが含まれていることを確認します。
 3.  参照先のフィールドが参照先のエンティティのデータ ソースにバインドされており、参照先のエンティティが参照を含むエンティティのデータ ソースに *外部結合*(1-0..1) または *内部結合*(1-1) されていることを確認します。 たとえば、次の図では、FMRental は参照を含むエンティティで、FMVehicle は参照されたエンティティです。
 
-    ![参照フィールドを参照されるエンティティのデータ ソースにバインドします。](media/relatedentityform.png)
+    ![参照フィールドを参照されるエンティティのデータ ソースにバインドする](media/relatedentityform.png)
 
 4.  参照されているエンティティに対して個別の詳細ビュー ページを作成したことを確認します。
 5.  参照フィールドがページに追加されたことを確認します。
 6.  デザイナーで、参照フィールドが参照されているエンティティの詳細表示にリンクされていることを確認します。 たとえば、次の図では、車両詳細は参照されたエンティティの詳細ビュー ページです。
 
-     ![参照フィールドを、参照先エンティティの詳細ビューにリンクします。](media/referencepagedesigner.png)
+     ![参照フィールドの参照先のエンティティの詳細ビューへのリンク](media/referencepagedesigner.png)
 
 ### <a name="how-do-i-add-a-list-that-contains-items-from-a-related-entity-to-a-details-view-page"></a>関連するエンティティからの品目を含む一覧を、詳細ビュー ページに追加する方法はありますか。
 
@@ -135,6 +140,3 @@ ms.locfileid: "7982955"
 2. **グリッド** ノードをクリックし、**プロパティ** をクリックします。
 3. **コントロールのプロパティ** ダイアログ ボックスには 50 件のレコードの既定のフェッチ サイズが表示されます。
 4. 必要に応じて、フェッチ サイズを調整します。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

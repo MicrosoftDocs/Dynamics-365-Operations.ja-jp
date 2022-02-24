@@ -1,25 +1,27 @@
 ---
 title: ユーザー サインインの追跡
-description: このトピックでは、Finance and Operations アプリにサインインして使用するユーザーの監査ログを作成する方法について説明します。
-author: angelmarshall
+description: このトピックでは、Microsoft Dynamics 365 Finance and Operations アプリにサインインして使用するユーザーの監査ログを作成する方法について説明します。
+author: manalidongre
+manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: tsmarsha
+ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 14be9297515c8ced2ed188fffe75050948e82d28
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 24818a505772fd4c79f3cd338866cee3252f9ac8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500491"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681044"
 ---
 # <a name="track-user-sign-ins"></a>ユーザー サインインの追跡 
  
@@ -41,6 +43,3 @@ Microsoft Dynamics AX 2012 では、**監査ログ** フォームが Microsoft D
 8. レコードをエクスポートして長期間保存するには、**エクスポート グリッド** を選択します。
 
 完全な監査証跡を保証するために、IT 管理者は 7 日ごとにこの手順を完了する必要があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: 小売価格レポート
 description: このトピックでは、さまざまな製品の今後の価格変更を表示するために使用できる価格レポート機能の概要を提供します。
 author: shajain
+manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 7fa2710d64d632c6e4ef376528aff8316b02a380ce7e2a976d53a3dd39375fa7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 91c0a96abdd7df9e85e63ca6b1b47a57f3f401eb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767269"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413628"
 ---
 # <a name="retail-price-reports"></a>小売価格レポート
 
@@ -41,6 +44,3 @@ ms.locfileid: "6767269"
 | 価格変更のある製品の表示 | これを **はい** 設定すると、価格が変更された日付のみの価格が表示されます。 選択した **開始日** から *1 日前* の価格が常に表示され、それにより店舗マネージャーは選択した期間に価格変更がない製品を簡単に識別でき、また現在の価格も確認できます。 |
 
 レポートが生成された後、追加のフィルタリング ニーズに合わせて Excel ファイルをダウンロードできます。 価格レポートを使用して、過去の日付の製品の価格履歴を確認することもできます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

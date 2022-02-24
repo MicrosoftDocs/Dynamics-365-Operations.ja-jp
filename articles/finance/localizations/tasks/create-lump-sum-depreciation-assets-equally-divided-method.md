@@ -2,23 +2,26 @@
 title: 均等償却を使用した一括比例配分減価償却資産の作成
 description: 日本では、耐用年数期間中、毎年均等額で減価償却処理される固定資産のタイプが 3 つあります。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetDepreciationProfile
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9ad39e4f96eb57f9e5ca404aae34b3a5d18856ff84277719b7bad3aa03a5b010
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 95a7a491ad01a2cea6d4964b4ce19ed663d5bc67
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717431"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408193"
 ---
 # <a name="create-lump-sum-depreciation-assets-using-equally-divided-method"></a>均等償却を使用した一括比例配分減価償却資産の作成
 
@@ -60,6 +63,3 @@ ms.locfileid: "6717431"
     * [均等償却年数] が 3 年であることを確認します。  
     * この値は、固定資産のタイプが一括比例配分か、繰延資産か、または低価額資産かによって異なります。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: 実装プロジェクト FAQ の Go-live
 description: このトピックでは、実装プロジェクトの運用についてよく寄せられる質問を一覧表示します。
 author: sshashi7
+manager: AnnBe
 ms.date: 07/12/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5dd6f4309fbbfdca628b02c79caa6336c96eb7dd5a0d4635826f5e7cd74bcdf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73fa4623eb0b3e31e8cf57518dd38c6faee56c53
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735476"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799046"
 ---
 # <a name="go-live-for-implementation-projects-faq"></a>実装プロジェクト FAQ の Go-live
 
@@ -37,7 +39,7 @@ ms.locfileid: "6735476"
 
 ## <a name="what-is-a-go-live-assessmentreview-and-why-is-it-required"></a>起動の評価/レビューとは何ですか、またそれがなぜ必要ですか ?
 
-Go-live 評価/レビューは、[Microsoft FastTrack プログラム](/dynamics365/fasttrack/)の一部です。 レビュー中に、ソリューション アーキテクトは、実装プロジェクトが成功した切替および Go-live の準備が整っているかどうかを評価します。 このレビューは、実稼働環境で準備を開始する前に、すべての実装プロジェクトで必須です。
+Go-live 評価/レビューは、[Microsoft FastTrack プログラム](../get-started/fasttrack-dynamics-365-overview.md)の一部です。 レビュー中に、ソリューション アーキテクトは、実装プロジェクトが成功した切替および Go-live の準備が整っているかどうかを評価します。 このレビューは、実稼働環境で準備を開始する前に、すべての実装プロジェクトで必須です。
 
 ## <a name="i-want-to-request-my-production-environment-who-do-i-contact-for-a-go-live-assessmentreview"></a>実稼働環境を要求します。 Go-live アセスメント/レビューのために誰に連絡しますか。
 FastTrack ソリューション アーキテクトがプロジェクトに割り当てられている場合は、担当者に直接問い合わせます。 それ以外の場合、Microsoft Dynamics Lifecycle Services (LCS) に指定されている運用日付に基づいて、運用前チェックリストに記入し、運用日の数週間前に <d365fogl@microsoft.com> に送信するように指示する電子メールを受信します。 電子メールを受信しておらず Go-Live の準備ができている場合は、[Go-live 計画 TechTalk](https://aka.ms/FastTrackPreGoLiveChecklist) ページの **Dynamics 365 コミュニティ** からチェックリストをダウンロードし、記入して d365fogl@microsoft.com に送信できます。
@@ -105,6 +107,3 @@ Microsoft FastTrack チームによる Go-live アセスメントが完了し、
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>実稼働環境がダウンした場合はどうすればよいでしょうか ?
 
 稼働停止をレポートするには、トピック [稼働停止のレポート](../../dev-itpro/lifecycle-services/report-production-outage.md) で説明されているプロセスに従います。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

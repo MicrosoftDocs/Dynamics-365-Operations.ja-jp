@@ -1,10 +1,12 @@
 ---
 title: Lifecycle Services (LCS) ユーザー ガイド
-description: このトピックでは、Lifecycle Services で使用できるツールと、作業段階を進めていく際に使用するツールについて説明します。
+description: このトピックでは、Lifecycle Services (LCS) で使用できるツールと、LCS で作業段階を進めていく際に使用するツールについて説明します。
 author: angelmarshall
+manager: AnnBe
 ms.date: 07/02/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,18 +16,18 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71ff1c62dcd341beba42834fd01148bb8782a312
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 75fb0345ca56ffaa7e6a7c9fba6e2571e5ba6dad
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985122"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679978"
 ---
 # <a name="lifecycle-services-lcs-user-guide"></a>Lifecycle Services (LCS) ユーザー ガイド
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサービスを提供します。 LCS の目標は、適切な情報を適切なタイミングで適切な相手に伝えることであり、実装、更新、アップグレードを毎回問題なく実行する反復性と予測可能性を実現することです。 LCS は顧客やパートナーがサポート計画の一部として使用できます。 Dynamics 365 財務と運用アプリの最新バージョンの顧客である場合は、Microsoft Azure Active Directory (Azure AD) 資格情報を使用してサインインできます。 [LCS に移動](https://lcs.dynamics.com/Logon/Index).
+Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサービスを提供します。 LCS の目標は、適切な情報を適切なタイミングで適切な相手に伝えることであり、実装、更新、アップグレードを毎回問題なく実行する反復性と予測可能性を実現することです。 LCS は顧客やパートナーがサポート計画の一部として使用できます。 Microsoft Dynamics AX 2012 ユーザーである場合、CustomerSource または PartnerSource の資格情報を使用してログインすることができます。 Dynamics 365 Finance and Operations アプリの最新バージョンの顧客である場合は、Microsoft Azure Active Directory (Azure AD) の資格情報を使用してログインできます。 [LCS に移動](https://lcs.dynamics.com/Logon/Index).
 
 ## <a name="tools-that-are-provided-in-lcs"></a>LCS で提供されるツール
 次のテーブルでは、LCS で提供されるツールのリストと各ツールが適用されるフェーズについて説明しています。
@@ -50,13 +52,11 @@ Microsoft DynamicsLifecycle Services (LCS) は、定期的に更新されるサ�
 | [アップグレード分析](ax-2012/upgrade-analysis-lcs.md)                         | アップグレード分析は、Microsoft Dynamics AX 4.0、Microsoft Dynamics AX 2009、または AX 2012 からコード アーティファクトを分析して、最新バージョンに更新する計画に役立ちます。                                                                                                                                                                                                                                                                                                    |
 | [使用状況プロファイラー](ax-2012/usage-profiler-lcs.md)                           | 使用状況プロファイラーは、予想される使用状況、または現在の使用状況を説明するのに役立つデータ収集ツールです。 生成された使用プロファイルは、ハードウェアのサイズ変更やサポートなど、さまざまな目的で使用できます。                                                                                                                                                                                                                                                                                                 |
 | [ダウンロード可能なツール](ax-2012/lcs-downloadable-tools-formerly-informationsource.md)                       | **ダウンロード可能なツール** ページは、 Microsoft Dynamics InformationSource にホストされていたツールを提供します。                                      |
-| [ライセンス数見積もりツール](/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs)                 | ライセンス数見積もりツールは、必要なライセンスの数を予測するのに役立ちます。 これは、既定またはカスタマイズされたロールをモデル化して、必要なクライアント アクセス ライセンス (CAL) を自動的に計算できる共有ワークスペースを提供します。
+| [ライセンス数見積もりツール](ax-2012/license-sizing-estimator-lcs.md)                 | ライセンス数見積もりツールは、必要なライセンスの数を予測するのに役立ちます。 これは、既定またはカスタマイズされたロールをモデル化して、必要なクライアント アクセス ライセンス (CAL) を自動的に計算できる共有ワークスペースを提供します。
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 LCS チームは、 [Lifecycle Services エンジニアリング ブログ](https://cloudblogs.microsoft.com/dynamics365/?s=lcs) にも記事を執筆しています。 投稿やお知らせの最新情報を入手するため、RSS フィードを購読します。
 
 [Lifecycle Servicesにアクセスする](https://lcs.dynamics.com/)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

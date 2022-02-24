@@ -2,24 +2,26 @@
 title: オンプレミス配置への更新プログラムの適用
 description: このトピックは、Dynamics 365 Finance + Operations (オンプレミス) 用にサポートされる更新を適用する方法を説明します。
 author: PeterRFriis
+manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: peterfriis
+ms.author: perahlff
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 43912155ee45d36df7378708a5643e8e74088aab234db7088bc4f9884b100b88
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b419fbcea47a68a2e71c00939f883a083d573273
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750536"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680549"
 ---
 # <a name="apply-updates-to-on-premises-deployments"></a>オンプレミス配置への更新プログラムの適用
 
@@ -124,6 +126,3 @@ ms.locfileid: "6750536"
     > このオプションは実稼働環境では使用 **しない** でください。 ただし、環境を正常な状態に復元するサンドボックス環境で使用できます。 
     
     > このオプションは環境を新規に配置することを必要とするため、以前に適用された更新は失われます。 カスタマイズおよびバイナリ更新プログラムは、環境に再適用される必要があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

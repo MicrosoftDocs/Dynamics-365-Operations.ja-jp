@@ -2,23 +2,26 @@
 title: 日本の支払手数料の設定
 description: このタスクでは、日本の支払手数料の設定について説明します。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankGroup,  VendPaymFeeGroup_JP, VendTable, PaymFeeBankRule_JP, SysFieldLookUp, VendPaymFee, VendPaymModeFee, TaxGroupLookup
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e783ebe52fa80ca670854b5a08aa8289316e48546b2fe7177bef746c7ee905f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 62bcaff3f118f59c74bc1b1236c3fc9e5420eb04
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719157"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408185"
 ---
 # <a name="setup-payment-fee-for-japan"></a>日本の支払手数料の設定
 
@@ -124,6 +127,3 @@ ms.locfileid: "6719157"
     * 例: 「課税対象」 を選択します。  
 30. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

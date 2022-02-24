@@ -1,24 +1,27 @@
 ---
 title: 支払仕訳帳を使用した仕入先月次締め請求書の決済
-description: 日本では、支払は仕入先の月次締め請求書に対して作成され決済されます。
+description: 日本では、支払は月次締め請求書に対して行われ決済されます。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendConsInvoice_JP, LedgerJournalTable, LedgerJournalTransVendPaym, VendPaymProposalEdit
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d3468d3ad42b7bf93255378bde139d63d46a5278
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 43c7ba8ffc6a0fa71eb5f36aab8c208d26bcf982
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601436"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408130"
 ---
 # <a name="settle-vendor-consolidated-invoices-by-using-a-payment-journal"></a>支払仕訳帳を使用した仕入先月次締め請求書の決済
 
@@ -59,6 +62,3 @@ ms.locfileid: "7601436"
 15. [買掛金勘定] > [定期処理タスク] > [月次締め請求書] の順に移動します。
     * 月次締め請求書のステータスが [決済済] に更新されていることを確認します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

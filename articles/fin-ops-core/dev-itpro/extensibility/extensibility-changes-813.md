@@ -2,24 +2,26 @@
 title: Dynamics 365 for Finance and Operations バージョン 8.1.3 の拡張機能の変更
 description: これは、Dynamics 365 for Finance and Operations バージョン 8.1.3 に実装された拡張機能の一覧です。
 author: FrankDahl
+manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-12-07
 ms.dyn365.ops.version: App 8.1.3
-ms.openlocfilehash: 3230e867314e989128837f996374021b6bc01ea7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8fbb458be59a5f546a6660299919f5c4deec9903
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783024"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409336"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-813"></a>Dynamics 365 for Finance and Operations バージョン 8.1.3 の拡張機能の変更
 
@@ -425,6 +427,3 @@ ms.locfileid: "7783024"
 次の追加の変更が、拡張機能に対して行われました。
 
 - 計算済のエイジング バケットの数を増やすためにカスタマイズ機能をサポートする、更新されたエイジングおよび残高リスト クラスおよびフォーム。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

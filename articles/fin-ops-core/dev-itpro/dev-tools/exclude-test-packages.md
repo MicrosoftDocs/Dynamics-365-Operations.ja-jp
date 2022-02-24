@@ -1,23 +1,27 @@
 ---
-title: ビルド出力からのテスト パッケージの除外
-description: このトピックでは、自動ビルド プロセスが生成するビルド出力で、特定のパッケージがパッケージに含まれないようにする方法について説明します。
+title: ビルド出力からテスト パッケージを除外
+description: このトピックでは、自動ビルドプロセスが生成するビルド出力で、特定のパッケージが展開可能パッケージに含まれないようにする方法について説明します。
 author: jorisdg
+manager: AnnBe
 ms.date: 05/15/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 26731
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99d034369802ea64b30435ede4177d863e3f7267
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a752212daa9bfc70e93571e36cb311d433437c68
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782942"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408967"
 ---
 # <a name="exclude-test-packages-from-build-output"></a>ビルド出力からテスト パッケージを除外
 
@@ -31,11 +35,11 @@ ms.locfileid: "7782942"
 
 1. Microsoft Azure DevOps で、**ビルドおよびリリース** ページの **ビルド** にある **すべての定義タブ** でビルド定義を検索します。 省略記号 (...)、**編集** の順にクリックします。
 
-    ![ビルド定義を編集します。](media/builddef_edit.png)
+    ![ビルド定義を編集](media/builddef_edit.png)
 
 1. **変数** タブで、新しいビルド定義が **PackagingExclusions** という名前の変数を持つこと通知します。
 
-    ![PackagingExclusions 変数。](media/builddef_packexclvariable.png)
+    ![PackagingExclusions 変数](media/builddef_packexclvariable.png)
 
 1. **PackagingExclusions** 変数で、配置可能パッケージにパッケージする必要がないパッケージの名前をコンマで区切ったリストで指定します。
 
@@ -44,7 +48,7 @@ ms.locfileid: "7782942"
 
     たとえば、MyCompanysAwesomeTests という名前の 1 つのパッケージおよび ContosoTaskRecordingTests という名前の別のパッケージがあり、配置可能なパッケージからこれら両方のパッケージを除外します。 この場合、**PackagingExclusions** 変数の値はこのようになります。
 
-    ![PackagingExclusions の例。](media/builddef_packexclexample.png)
+    ![PackagingExclusions の例](media/builddef_packexclexample.png)
 
     この設定を完了すると、ビルド プロセスはコードをビルドしながらパッケージに含まれているすべてのテストを実行します。 ただし、ビルドが作成する配置可能なパッケージには、それらのパッケージは含まれません。
 
@@ -62,11 +66,8 @@ ms.locfileid: "7782942"
 
     **引数** テキスト ボックスは次のようになります。
 
-    ![パッケージ タスクの生成。](media/builddef_generatepack.png)
+    ![パッケージ タスクを生成します](media/builddef_generatepack.png)
 
 1. **保存** をクリックします。
 
 説明の通りに、新しいフィーチャーを使用することができるようになりました。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

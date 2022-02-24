@@ -1,18 +1,25 @@
 ---
 title: フィールド タイプ
 description: フィールド コントロール タイプ。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 01ab6697b7efc97f51095847b88a942b50716050
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: c26d1a79e1219cf57aa27e65cc2f7249c8553cd6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782176"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682574"
 ---
 # <a name="field-type"></a>フィールド タイプ
 
@@ -310,6 +317,3 @@ onDataChanged: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 > [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged) から継承
 
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

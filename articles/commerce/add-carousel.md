@@ -2,12 +2,15 @@
 title: カルーセル モジュール
 description: このトピックでは、カルーセル モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cfbe254d225366f89779ffeef410bb0b1a29056e51a4719106e9bc495b898161
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f09f3f98d174f965a75e27ee6a5c2ed8599042fc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721058"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413680"
 ---
 # <a name="carousel-module"></a>カルーセル モジュール
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、カルーセル モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+
+## <a name="overview"></a>概要
 
 カルーセル モジュールは、顧客が閲覧できる複数のプロモーション品目 (豊富な画像を含む) を入れ替わるカルーセル バナーに配置するために使用されます。 たとえば、小売業者はホーム ページ上のカルーセル モジュールを使用して、複数の新製品またはプロモーションを紹介できます。
 
@@ -40,7 +45,7 @@ ms.locfileid: "6721058"
 
 以下の図は、ホームページ上のカルーセル モジュールの例を示しています。 このカルーセル モジュールには、複数のコンテンツ ブロック品目が含まれています。
 
-![カルーセル モジュールの例。](./media/Hero.PNG)
+![カルーセル モジュールの例](./media/Hero.PNG)
 
 ## <a name="carousel-module-properties"></a>カルーセル モジュール プロパティ
 
@@ -81,6 +86,3 @@ ms.locfileid: "6721058"
 [コンテンツ ブロック モジュール](add-hero-module.md)
 
 [ビデオ プレーヤー モジュール](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

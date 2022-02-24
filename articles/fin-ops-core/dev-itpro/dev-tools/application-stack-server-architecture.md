@@ -2,22 +2,26 @@
 title: アプリケーション スタックおよびサーバーのアーキテクチャ
 description: アプリケーション スタックはいくつかのモデルに分けられます - アプリケーション プラットフォーム、アプリケーション基準、Test Essentials、そしてアプリケーション スイート。
 author: RobinARH
+manager: AnnBe
 ms.date: 04/30/2019
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 31751
 ms.assetid: 6a5811cc-a551-4e4d-824c-d760460b3223
 ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4961853eb9daad52168c143166451f0542fca3b9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bce5669a923833d28282684e49707969338f1941
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781652"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644853"
 ---
 # <a name="application-stack-and-server-architecture"></a>アプリケーション スタックおよびサーバーのアーキテクチャ
 
@@ -25,7 +29,8 @@ ms.locfileid: "7781652"
 
 アプリケーション スタックは、プラットフォーム モデルとアプリケーション固有のモデルに分割されます。 プラットフォーム モデルは、アプリケーション プラットフォーム、アプリケーション基準、そして Test Essentials です。 アプリケーション固有のモデルは多数存在します。 いくつかの例として、アプリケーション スイート、元帳、小売、そしてケース管理があります。
 
-## <a name="overview"></a>概要
+<a name="overview"></a>概要
+--------
 
 アプリケーション スタックとサーバー アーキテクチャは、次の 3 本の主要な柱に対応します。
 
@@ -47,7 +52,7 @@ ms.locfileid: "7781652"
 
 次の図の左側に、アプリケーション スタックが個別のモデルに分割されている様子が示されています。 右側には、主要なコンポーネントがサーバーにどのように積み重ねられているかが示されています。 
 
-[![アーキテクチャ図面。](./media/ArchitectureDrawing1.png)](./media/ArchitectureDrawing1.png)   
+[![アーキテクチャ図面](./media/ArchitectureDrawing1.png)](./media/ArchitectureDrawing1.png)   
 
 Finance and Operations アプリケーションは、エントリ ポイントのセキュリティ モデルを使用します。 メニュー項目が読み取りアクセス許可のみのフォームへの移動に使用される場合、フォームは読み取り専用アクセスを許可します。 ただし、アクセス許可の作成、アクセス許可の削除、アクセス許可の更新を提供する別のメニュー項目から同じフォームに移動すると、フォームへの書き込み操作が可能になります。 開発者は、特定のエントリ ポイントからフォームの動作を指定できるため、この動作は開発の経験を簡素化します。
 
@@ -63,7 +68,4 @@ Microsoft Azure ストレージ、ネットワーク、監視、SQL Azure など
 ## <a name="development-environment"></a>開発環境
 開発環境のアーキテクチャは、クラウド インスタンスのアーキテクチャに似ています。 また、Visual Studio 開発ツールとその他のコンポーネントで構成されるソフトウェア開発キット (SDK) も含まれます。 Team Foundation Server または Visual Studio Online を介したソース管理により、複数開発者のシナリオが可能になります。このシナリオでは、各開発者が別個の開発環境を使用できます。 配置パッケージは、開発環境でコンパイルおよび生成し、LCS を使用してクラウド インスタンスに展開できます。 次の図は、主要なコンポーネントが開発環境でどのようにやり取りするかを示しています。
 
-![開発アーキテクチャ、Visual Studio、ローカル ランタイム、およびクラウド配置。](./media/dev-environ.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![開発アーキテクチャ、Visual Studio、ローカル ランタイム、およびクラウド配置](./media/dev-environ.png)

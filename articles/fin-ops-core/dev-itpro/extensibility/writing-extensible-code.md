@@ -2,24 +2,26 @@
 title: 拡張可能なコードの書き込み
 description: このトピックでは、拡張可能コードを書き込む方法について説明します。
 author: MichaelFruergaardPontoppidan
+manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: ebdf6dd9e31a1a5781d20f891de18e1b37e44f2a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e5c11ff5b0501d0f3f48b99eae2ccb0f73237a66
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781560"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409482"
 ---
 # <a name="write-extensible-code"></a>拡張可能なコードの書き込み
 
@@ -47,9 +49,8 @@ SOLID は、コードを簡単に拡張できるようにするために使用�
 + **1 つの責任**: クラスおよびメソッドには責任が 1 つでなければならず、副作用があってはなりません。 この原則に従うと、パブリックな保護された方法で自動的に作成される拡張ポイントが優れた拡張ポイントになることを保証することができます。
 + **オープン/クローズ**
 
-    - **拡張に対してオープン**: 拡張サーフェイスをデザインして検討することにより、拡張のソリューションを開きます。 拡張ポイントが使用可能になったら、管理を担当します。 この責任は、今後の開発に重要な制限を追加します。 多くの場合、需要に応じて拡張に対してソリューションを開くことをお勧めします。 たとえば、パブリック メソッドより内部メソッドを使用したり、保護されたメソッドよりプライベート メソッドを使用したりします。 プロパティを非公開にし、メソッドを非公開または最終保護にすることにより、拡張サーフェイスを制限します。 この方法により、継承または拡張を通じて、ロジックで依存関係を活用できる人はいません。
-    - **変更に対して閉じている** – それ以上の変更を必要とせずに、ロジック サポート拡張機能を作成します。
-
+    - **拡張に対してオープン**: 拡張サーフェイスをデザインして検討することにより、拡張のソリューションを開きます。 拡張ポイントが使用可能になったら、管理を担当します。 この責任は、今後の開発に重要な制限を追加します。 多くの場合、需要に応じて拡張に対してソリューションを開くことをお勧めします。 たとえば、パブリック メソッドより内部メソッドを使用したり、保護されたメソッドよりプライベート メソッドを使用したりします。
+    - **変更に対して閉じている**: プロパティをプライベートにし、メソッドをプライベートまたは最終保護にします。 この方法により、継承または拡張を通じて、ロジックで依存関係を活用できる人はいません。
 
 + **リスコフ置き換え**: 派生クラスは、基本クラスの代わりに使用できる必要があります。 たとえば、この置き換えは、ファクトリを指定する、SysExtension を使用する、および単純なコンストラクト メソッドを使用することにより実行できます。
 + **インターフェイスの分離**: 簡単なインターフェイスを作成します。 この原則により、拡張担当者は置き換えの実装を提供します。次の SOLID 原則である依存関係の反転と組み合わせて使用する場合は、特に重要です。
@@ -104,6 +105,3 @@ X++ では、すべての保護されたパブリック メソッドが拡張ポ
 + [クリーンなコード: アジャイル ソフトウェア作成者が守るべき事柄のハンドブック](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 + [Clean Coders](https://cleancoders.com/)
 + [DRY 原則](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

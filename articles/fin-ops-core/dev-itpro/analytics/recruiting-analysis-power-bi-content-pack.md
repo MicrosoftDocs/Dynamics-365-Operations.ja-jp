@@ -1,10 +1,12 @@
 ---
 title: Recruiting Power BI コンテンツ
-description: このトピックでは、Recruiting Power BI コンテンツについて説明します。
+description: このトピックでは、Recruiting Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 author: jcart1106
+manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: HcmRecruitmentWorkspace
 audience: Application User, IT Pro
@@ -15,18 +17,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 36ea9f204b50b3d7a6c8e33e69a9c3fd7d82cd79d466e2b9547c6733aa294aea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 524b1c29d204c1b013546008b1be7868cbf8db06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765125"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680565"
 ---
 # <a name="recruiting-power-bi-content"></a>Recruiting Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**採用** Microsoft Power BI コンテンツについて説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
+このトピックでは、**Recruiting** Microsoft Power BI コンテンツについて説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 **Recruiting** Power BI コンテンツが **採用管理** ワークスペースで表示されます。
@@ -62,6 +64,3 @@ ms.locfileid: "6765125"
 | パフォーマンス          | 評価、説明、評価モデル                            | 申請者、採用済申請者、退職済申請者 |
 | 採用プロジェクト  | プロジェクト説明、プロジェクト ステータス、空き状況                | 申請者、採用済申請者、退職済申請者 |
 | 退職済申請者 | 退職済申請者、理由、パフォーマンス、終了日 | 会社、カレンダーのオフセット、日付、地理的な場所、パフォーマンス、人口統計、雇用、メディア、採用プロジェクト、申請者名 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

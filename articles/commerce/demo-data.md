@@ -2,13 +2,16 @@
 title: Modern POS (MPOS) および Cloud POS のデモ データ画面レイアウト
 description: このトピックでは、Dynamics 365 Commerce の販売時点管理 (POS) のデモ データ セットに含まれている画面レイアウトに関する情報を提供します。
 author: josaw1
+manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
+ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761665"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4413909"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Modern POS (MPOS) および Cloud POS のデモ データ画面レイアウト
 
@@ -33,13 +36,13 @@ ms.locfileid: "6761665"
 
 Commerce のデモ データに含まれているサンプル画面レイアウトは、さまざまな小売セグメント、店員の役割、およびデバイスに最適化されたコンテンツを提供します。 1 つのレイアウトに複数のレイアウトサイズとボタングリッドの組み合わせを含めることで、店員によるデバイスとステーション間の移動を確実にカバーできます。 このトピックでは、これらのレイアウトの違いや、レイアウトが提供する操作や全体的なエクスペリエンスについて説明します。
 
-![クロス デバイス デモ データのレイアウト。](../commerce/media/demo-screen-layouts-fig-1-1.png)
+![クロス デバイス デモ データのレイアウト](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>画面レイアウト ID の構造
 
 画面レイアウトを検索するには、**Retail と Commerce** \> **チャネル設定** \> **POS 設定** \> **POS** \> **画面レイアウト** の順に移動します。
 
-![画面レイアウトのページ。](../commerce/media/demo-screen-layouts-fig-2-1.png)
+![画面レイアウトのページ](../commerce/media/demo-screen-layouts-fig-2-1.png)
 
 画面レイアウト ID は、最大 10 文字です。 ID は、次の 3 つの情報と順序で構成された文字列です。
 
@@ -49,11 +52,11 @@ Commerce のデモ データに含まれているサンプル画面レイアウ�
 
 ### <a name="company"></a>法人
 
-| 文書 | 法人         |
+| 文字 | 法人         |
 |--------|-----------------|
 | A      | Adventure Works |
 | F      | Fabrikam        |
-| 貸方      | Contoso         |
+| C      | Contoso         |
 
 ### <a name="layout-version"></a>レイアウトバージョン
 
@@ -79,7 +82,7 @@ F4MGR
 
 次の図は、Fabrikam 店長のようこそ画面の例を示しています。
 
-![Fabrikam 店長のようこそ画面。](../commerce/media/demo-screen-layouts-fig-2-2.png)
+![Fabrikam 店長のようこそ画面](../commerce/media/demo-screen-layouts-fig-2-2.png)
 
 ## <a name="layout-sizes"></a>レイアウト サイズ
 
@@ -108,7 +111,7 @@ F4MGR
 > [!TIP]
 > POSでは、現在のアプリケーション ウィンドウの画面解像度に使用される最も近いサイズに基づいて、レイアウトのサイズが自動的に選択されます。 Modern POS (MPOS) または Retail Cloud POS (CPOS) で、現在使用されている画面レイアウト ID とレイアウトの解像度を知るには、**設定** ページを開き、**セッション情報** セクションを見ます。 現在のアプリケーションまたはブラウザーのフレームの実際のウィンドウの解像度を表示することもできます。 この情報を得た後に、**チャネル設定** \> **POS 設定** \> **POS** \> **画面レイアウト** で、レイアウト コンテンツのソースを検索することができます。
 
-![Commerce と POS での画面レイアウトとレイアウトの解像度/サイズ。](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Commerce と POS での画面レイアウトとレイアウトの解像度/サイズ](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## <a name="companies-and-brands"></a>会社およびブランド
 
@@ -129,19 +132,19 @@ F4MGR
 
 ### <a name="adventure-works"></a>Adventure Works
 
-![Adventure Works のデモ データ ウェルカム ページ。](../commerce/media/demo-screen-layouts-fig-4-1a.png)
+![Adventure Works のデモ データ ウェルカムページ](../commerce/media/demo-screen-layouts-fig-4-1a.png)
 
-![Adventure Works のデモ データ トランザクション ページ。](../commerce/media/demo-screen-layouts-fig-4-1b.png)
+![Adventure Works のデモ データ トランザクションページ](../commerce/media/demo-screen-layouts-fig-4-1b.png)
 
 ### <a name="fabrikam"></a>Fabrikam
 
-![Fabrikam のデモ データ ウェルカム ページ。](../commerce/media/demo-screen-layouts-fig-4-2a.png)
+![Fabrikam のデモ データ ウェルカムページ](../commerce/media/demo-screen-layouts-fig-4-2a.png)
 
-![Fabrikam のデモ データ トランザクション ページ。](../commerce/media/demo-screen-layouts-fig-4-2b.png)
+![Fabrikam のデモ データ トランザクション](../commerce/media/demo-screen-layouts-fig-4-2b.png)
 
 ### <a name="contoso"></a>Contoso
 
-![Contoso のデモ データのレイアウト。](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Contosoのデモ データのレイアウト](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>ユーザー ログ イン マトリックス
 
@@ -168,11 +171,8 @@ F4MGR
 
 <!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 Commerce.](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 
 <!-- END HIDDEN CONTENT -->
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

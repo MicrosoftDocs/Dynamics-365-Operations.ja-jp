@@ -2,9 +2,11 @@
 title: 財務分析コード用の既定テンプレートの管理
 description: このトピックでは、財務分析コードの既定のテンプレートを設定する方法を示します。
 author: aprilolson
+manager: AnnBe
 ms.date: 07/30/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialDimensionDefaultTemplates, DimensionLookup
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2f8e5709639ac256a733546e54a49b11c4cae24e18577792a0c6cae45c8d517d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ecc9adac17a6313e88ac568d016daf8d05b8d818
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748165"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968630"
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>財務分析コード用の既定テンプレートの管理
 
@@ -39,6 +41,3 @@ ms.locfileid: "6748165"
 11. 入力された割合に対応する財務分析コード値を入力します。
 12. **保存** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

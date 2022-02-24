@@ -2,24 +2,26 @@
 title: 支払の FAQ
 description: このトピックでは、Dynamics 365 Commerce で使用できる支払いオプションについて説明します。
 author: athinesh99
-ms.date: 10/14/2021
+manager: AnnBe
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 65801
 ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
 ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b24c7e3aba75f928df35bcb7c5effa51fe5a83b6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2c8edac83d1d350552fd5dc7c2fb54e4d7a5db22
+ms.sourcegitcommit: 9e27a097b7eb3c8f2df66011ccc597ad18bc5445
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783342"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "4878645"
 ---
 # <a name="payments-faq"></a>支払に関してよく寄せられる質問
 
@@ -42,8 +44,8 @@ ms.locfileid: "7783342"
 
 ## <a name="which-payment-providers-are-supported-and-in-what-regions"></a>どの支払プロバイダーがどの地域でサポートされていますか。
 
-- Adyenはカードが存在する、またはカードが存在しない商取引に対応しています。 対応している地域の一覧については、 [Adyen 向け Dynamics 365 Payment Connector の概要ページ](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
-- PayPal はオンライン購買でサポートされます。 対応している地域の一覧については、[PayPal 向け Dynamics 365 Payment Connector の概要ページ](../paypal.md) を参照してください。
+- Adyenはカードが存在する、またはカードが存在しない商取引に対応しています。 対応している地域の一覧については、 [Adyen 向け Dynamics 365 Payment Connector の概要ページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。
+- PayPal はオンライン購買でサポートされます。 対応している地域の一覧については、[PayPal 向け Dynamics 365 Payment Connector の概要ページ](https://docs.microsoft.com/dynamics365/commerce/paypal) を参照してください。
 - **TestConnector** は、ユーザー受け入れテスト (UAT) または運用 (prod) ではサポートされていません。 **TestConnector** は、サンドボックスおよび開発のみで使用することができ、サンプル専用です。 
 - Mastercard Simplify は新しい顧客に対しては対応していません。
 
@@ -59,15 +61,11 @@ Adyen などの Microsoft によって指定されたコネクタを使用する
 
 ## <a name="what-is-the-service-level-agreement-sla-for-out-of-box-payment-connectors-like-adyen"></a>Adyen などの革新的な支払いコネクタ の サービス レベル アグリーメント (SLA) はどうなっているか ?
 
-Adyen コネクタに関して、設定に関する問題の場合は Adyenコネクタの [概要ページ](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。 コネクタに関するその他の設定、または機能の問題については、Microsoftへのサポートリクエストを作成してください。 問題がデバイス本体、またはAdyenの処理サービスに起因する場合は、support-dynamics365@adyen.com Adyenのサポートに連絡してください。
+Adyen コネクタに関して、設定に関する問題の場合は Adyenコネクタの [概要ページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) を参照してください。 コネクタに関するその他の設定、または機能の問題については、Microsoftへのサポートリクエストを作成してください。 問題がデバイス本体、またはAdyenの処理サービスに起因する場合は、support-dynamics365@adyen.com Adyenのサポートに連絡してください。
 
 ## <a name="if-a-supported-payment-provider-issues-an-update-will-microsoft-automatically-update-the-payment-connector-or-do-i-need-to-work-with-the-payment-provider-to-get-the-updated-payment-connector"></a>サポートされている支払プロバイダーが更新プログラムを発行した場合は、Microsoft は自動的に支払コネクタを更新してくれますか? または更新された支払コネクタを取得するために支払プロバイダーと連携する必要がありますか。
 
 支払いコネクターの更新プログラムが支払コネクター プロバイダーによって発行された場合、支払いコネクターの更新バージョンは Dynamics 365 Commerce の次の予定リリースに含まれます。 ただし、顧客は早期に取得するため、支払コネクタ プロバイダと直接作業することもできます。
-
-## <a name="does-dynamics-365-commerce-support-cash-out-or-cash-back-operations-during-the-checkout-process-in-point-of-sale-pos"></a>Dynamics 365 Commerce は販売時点管理 (POS) のチェックアウト プロセス中に「キャッシュ アウト」操作または「キャッシュ バック」操作をサポートしますか?
-
-いいえ、トランザクションの間、POS ではキャッシュ バック操作またはキャッシュ アウト操作はサポートされません。 ただし、拡張機能によるカスタマイズは、ギフトカードの「キャッシュ アウト」操作と同様のキャッシュ リターンおよび支払い操作を使用して達成できます。 
 
 ## <a name="related-topics"></a>関連トピック
 
@@ -75,6 +73,3 @@ Adyen コネクタに関して、設定に関する問題の場合は Adyenコ�
 - [支払コネクタの配置](deploy-payment-connector.md)
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

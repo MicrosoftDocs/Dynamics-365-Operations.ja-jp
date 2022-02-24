@@ -2,9 +2,11 @@
 title: セキュリティ ポリシーを作成する
 description: このトピックでは、顧客グループの範囲に基づいて、顧客および顧客グループへのアクセスを保護する単純なセキュリティ ポリシーを作成する方法について説明します。
 author: Peakerbl
+manager: AnnBe
 ms.date: 07/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: aa7c4301151a013158f9fe61b95c2daec2b4e5b8708cf1ea7179f014722cb98b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8e16634f15fb77011dc4842f679746cb0046f463
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769171"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679912"
 ---
 # <a name="create-a-security-policy"></a>セキュリティ ポリシーを作成する
 [!include [banner](../includes/banner.md)]
@@ -30,7 +32,7 @@ ms.locfileid: "6769171"
 
 1.  Visual Studio にて、プロジェクト/ソリューションに XDSQCustGroup10 などの新しいクエリを追加します。 クエリは、**制約** テーブルからのデータ アクセスを制限するために使用されます。
 
-    ![新しいクエリを追加します。](media/71c5206330564e8c2612a61a5a211dba.png)
+    ![新しいクエリの追加](media/71c5206330564e8c2612a61a5a211dba.png)
 
 2.  **データ ソース** を右クリックし、**新しいデータ ソース** を選択します。
 
@@ -44,13 +46,13 @@ ms.locfileid: "6769171"
 
 7.  **値フィールド** で **10** と入力して、CustGroup フィールドの範囲を定義することで、CustGroup の値が 10 であるデータへアクセスを制限します。
 
-    ![値フィールドで、10 を入力します。](media/c970ccc0649fcd2ee4e2b9a9819eb2fc.png)
+    ![値フィールドで、10 と入力](media/c970ccc0649fcd2ee4e2b9a9819eb2fc.png)
 
 ## <a name="add-a-new-security-policy"></a>新しいセキュリティ ポリシーの追加
 
 1.  XDSCustTableOnCustGroup10 などの新しいセキュリティ ポリシーを追加します。
 
-    ![セキュリティ ポリシーを追加します。](media/118355845fa679f8f004e516f0691cff.png)
+    ![セキュリティ ポリシーの追加](media/118355845fa679f8f004e516f0691cff.png)
 
 2.  **制約付きテーブル** を **はい** に設定します。 これにより、プライマリ テーブルへのアクセスもセキュリティで保護されます。 この例では、これが **CustGroup** テーブルです。
 
@@ -66,11 +68,11 @@ ms.locfileid: "6769171"
 
 8.  **ロール名** フィールドを 「TradeSalesClerk」に設定します。 **コンテキスト タイプ** がこのポリシーの RoleName に設定されているため、ユーザー ロールの AOT 名を入力する必要があります。
 
-    ![ロール名フィールドで、TradeSalesClerk を入力します。](media/9ad07f1e403cadfc3f1a52c2433e42c7.png)
+    ![ロール名フィールドで、TradeSalesClerk を入力](media/9ad07f1e403cadfc3f1a52c2433e42c7.png)
 
 8.  次に、制約されたテーブルを追加します。 この簡単な例では、テーブルを 1 つ追加します。
 
-    ![制約付きテーブルを追加します。](media/e366725fa084d308b7f02a89a3e6175b.png)
+    ![制約付きテーブルの追加](media/e366725fa084d308b7f02a89a3e6175b.png)
 
     a.  **制約付きテーブル** を右クリックし、**新しい \> 制約付きテーブル** を選択します。
 
@@ -81,6 +83,3 @@ ms.locfileid: "6769171"
     d.  **テーブル リレーション** フィールドで、プライマリ テーブルにリレーション、この例では 「custgroup」 と入力します。
 
 10.  最後の手順として、ソリューションをビルドおよび同期し、ポリシーを有効化する必要があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

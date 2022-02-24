@@ -2,9 +2,11 @@
 title: 組織階層の計画
 description: 組織と組織階層を設定する前に、組織をシミュレーションする最善の方法を理解するようにしてください。
 author: sericks007
-ms.date: 02/19/2021
+manager: AnnBe
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771875"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694692"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>組織階層の計画
 
@@ -164,7 +166,7 @@ ms.locfileid: "6771875"
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>組織を法人としてシミュレーションする場合
 
-サポートされる国 / 地域については、ほとんどの法定レポートを作成できます。 
+サポートされる国 / 地域については、ほとんどの法定レポートを作成できます。 それぞれの国 / 地域で利用可能なレポートについては、[Microsoft Dynamics ローカライズのポータル](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) を参照してください。 (CustomerSource ログオンは必須です。)
 
 > [!NOTE]
 > 一般会計の転記階層によって、子会社とは異なる会計基準を使用する親会社に対して調整エントリを作成できます。 たとえば、英国の一般会計慣行 (UK GAAP) を使用する法人の場合、転記階層に調整エントリを作成できます。 これらのエントリは、米国の一般会計原則 (GAAP) を使用する親法人に統合できます。 調整エントリは、英国の GAAP レポートには影響しません。
@@ -239,6 +241,3 @@ ms.locfileid: "6771875"
 - 主要な建て直しシナリオをモデル化する前に、階層の有効日数を使用して、影響分析および検証テストを実行します。
 - 実稼働環境で新しいバージョンを発行する前に、ドラフト モードを使用して階層を変更します。
 - 実稼働環境で階層から組織を追加または削除する権限を持つ人員の数を制限します。 番号が小さくなると、費用のかかる間違いが発生し、修正が必要となる可能性が少なくなります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

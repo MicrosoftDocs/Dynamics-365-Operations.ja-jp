@@ -1,13 +1,16 @@
 ---
 title: 階層リンク モジュール
-description: このトピックでは、 breadcrumb モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: このトピックでは、階層リンク モジュールと、Microsoft Dynamics 365 Commerce のサイト ページへの追加方法について説明します。
 author: anupamar-ms
+manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ba857ef7a796336bab3709817b5ba48fd3fa845667e4b9c40596cfe450290f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720015"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517163"
 ---
 # <a name="breadcrumb-module"></a>階層リンク モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、 breadcrumb モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+このトピックでは、階層リンク モジュールと、Microsoft Dynamics 365 Commerce のサイト ページへの追加方法について説明します。
+
+## <a name="overview"></a>概要
 
 階層リンク モジュールは、サイト ページにおけるセカンダリ ナビゲーションを提供する目的で使用されます。 通常は、ページ上部のヘッダー下部に表示されます。 階層リンク モジュールは任意のページに追加することができますが、製品カテゴリの階層を示す、またはサイト内を簡単に移動する方法として、製品の詳細ページ (PDPs) 上で使用される場合が多く見られます。 また、ユーザーが検索ページまたは一覧ページから PDP を開く際に、階層リンク モジュールを使用して [結果に戻る] リンクを表示することもできます。 これにより、ユーザーは簡単に [フィルタ処理済リスト] のページに戻って買い物を続けることができます。
 
@@ -37,7 +42,7 @@ PDPs やカテゴリ ページなど、製品カテゴリのコンテキスト�
 
 次の図では、PDP のカテゴリ階層を表示する階層リンク モジュールの例を示しています。
 
-![階層リンク モジュールの例。](./media/ecommerce-breadcrumb.PNG)
+![階層リンク モジュールの例](./media/ecommerce-breadcrumb.PNG)
 
 ## <a name="breadcrumb-module-settings"></a>階層リンク モジュールの設定
 
@@ -90,6 +95,3 @@ PDP に階層リンク モジュールを追加して必要なプロパティを
 [購入ボックス モジュール](add-buy-box.md)
 
 [SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

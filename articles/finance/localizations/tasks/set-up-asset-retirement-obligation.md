@@ -2,23 +2,26 @@
 title: 資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力
 description: 日本では、資産除去責務 (ARO) ドキュメントは資産除去責務の 1 つのタイプを識別します。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetRetirementObligationDocument_JP, AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationLine_JP
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 948a48ebbd22b25ed6a626ddef5ba4fe013eaa2bf8dc8727b6b8a6aaa8216a8a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30e25cb02da6a55f5fcb293c49d1354c7f66a6cd
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729526"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4408206"
 ---
 # <a name="set-up-asset-retirement-obligation-documents-and-enter-aro-amount-on-a-fixed-asset"></a>資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力
 
@@ -64,6 +67,3 @@ ms.locfileid: "6729526"
 2. **トランザクション日付** フィールドで、資産除去責務を認識する日付を入力します
 3. **見積除去原価調整** フィールドにキャッシュ フロー金額を入力します
 4. **OK** をクリックします。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

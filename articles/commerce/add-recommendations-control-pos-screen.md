@@ -2,13 +2,16 @@
 title: トランザクション画面への推奨設定の追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。
 author: bebeale
+manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -16,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af76169455cef16467b1faa9eda92a969aa923e85750cf245b0a6bd071a092e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af2450b27106325a86f6db68f9791637694cda63
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731010"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413637"
 ---
-# <a name="add-recommendations-to-the-transaction-screen"></a>トランザクション画面への推奨事項の追加
+# <a name="add-recommendations-to-the-transaction-screen"></a>トランザクション画面への推奨設定の追加
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +46,7 @@ Commerce を使用するときに、POS デバイスに製品レコメンデー�
 6. ログインすると、以下のものに類似したページが表示されます。 レイアウトは、店舗に対して行われたカスタマイズによって異なります。
 
 
-    [![レイアウト デザイナー。](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![レイアウト デザイナー](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>表示オプションを選択
 
@@ -58,11 +61,11 @@ Commerce を使用するときに、POS デバイスに製品レコメンデー�
 1. 左側が顧客パネルと同じ高さになるように、トランザクション明細行の詳細領域の高さを下げます。
 
 
-    [![トランザクション明細行の詳細領域の高さを下げます。](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![トランザクション明細行の詳細領域の高さを減少](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. 左側のメニューから、トランザクション明細行の詳細領域とトランザクション画面の中央下にあるボタン グリッドの間にレコメンデーション コントロールをドラッグ アンド ドロップします。 そのスペースに合うようにコントロールのサイズを変更します。
 
-    [![レコメンデーション コントロールがレイアウトに追加されました。](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![レイアウトに追加されたレコメンデーション コントロール](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. **X** をクリックして、レイアウト デザイナーを保存して終了します。
@@ -77,13 +80,13 @@ Commerce を使用するときに、POS デバイスに製品レコメンデー�
 
 2. **カスタマイズ** をクリックします。
 
-    [![カスタマイズ - タブコントロール ダイアログ ボックス。](./media/pic-5.png)](./media/pic-5.png)
+    [![カスタマイズ - タブコントロール ダイアログ ボックス](./media/pic-5.png)](./media/pic-5.png)
 
 3. **新しいタブ** をクリックします。
 4. さっき追加した新しいタブを探します。 スクロール ダウンしなければならない場合があります。
 5. **コンテンツ** のドロップダウンで、**お勧めの製品** を選択します。
 
-    [![コンテンツ フィールドのお勧め製品を選択します。](./media/pic-6.png)](./media/pic-6.png)
+    [![コンテンツ フィールドのお勧め製品を選択](./media/pic-6.png)](./media/pic-6.png)
 
 6. **ラベル** フィールドに、このレコメンデーション タブの名前を入力します。たとえば、「お勧めの製品」と入力します。
 7. **画像** フィールドで、タブで表示する画像を選択します。
@@ -116,6 +119,3 @@ Commerce を使用するときに、POS デバイスに製品レコメンデー�
 [推奨事項とデモ データの作成](product-recommendations-demo-data.md)
 
 [製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

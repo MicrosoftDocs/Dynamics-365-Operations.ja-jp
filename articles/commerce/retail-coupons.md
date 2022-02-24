@@ -1,26 +1,29 @@
 ---
 title: 小売販売のクーポンの設定
-description: このトピックでは、クーポンの概要と Dynamics 365 Commerce でそれを設定する方法について説明します。
-author: josaw1
-ms.date: 10/05/2021
+description: このトピックでは、クーポンの概要と設定方法について説明します。
+author: scott-tucker
+manager: AnnBe
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
-ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7603126"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413682"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>小売販売のクーポンの設定
 
@@ -38,10 +41,6 @@ ms.locfileid: "7603126"
 
 > [!NOTE]
 > クーポンが割引にリンクされると、コマースの割引ページのいくつかのフィールドは、クーポンの設定で管理されているため読み取り専用になります。 これらのフィールドには、ステータスと標準の日付範囲のフィールドが含まれます。
-> 
-> コール センター チャネルでクーポンを使用しているときに、クーポンに関連付けられた割引を適用するには、**再計算** ボタン **(販売タブ > 計算 > 再計算)** を選択する必要があります。 この追加手順は、将来のリリースで削除されます。
-
-販売時点管理 (POS) の販売トランザクションにクーポンを適用するには、**クーポン コード** または **クーポン のバーコード** を使用できます。 **クーポン コード** を使用するには、POS **トランザクション** [画面レイアウト](pos-screen-layouts.md) で **クーポンコードの追加** 操作を構成する必要があります。 **クーポン コードの追加** を選択し、クーポンコードを入力します。 または、**トランザクション** 画面で **クーポン バーコード** を使用するには、バー コードをスキャンするか、数値キーボードを使用してバー コードを 入力 します。
 
 ### <a name="limited-use-coupons"></a>専用クーポン
 
@@ -83,6 +82,3 @@ ms.locfileid: "7603126"
 - **HQ は部分的に更新されますが、Commerce Scale Unit と POS は更新されません。** HQ 更新では、クーポンと割引ページが更新され、コマース価格エンジンも更新されます。 これら 2 つのコンポーネントの一方だけが更新された場合、コマースの一部のページで価格計算データが一致しなくなります。 そのため、予期しない割引の計算やエラーが、割引の計算時に発生する可能性があります。
 - **HQ は更新されますが、Commerce Scale Unit と POS は更新されません (N-1)。** すべての店舗を同時に更新できるわけではないため、売店舗を更新する前に、HQ を更新することをお勧めします。 N-1 シナリオでは、クーポンに関連する新しい機能は、まだ更新されていない店舗では使用できません。 たとえば、クーポン機能は、明細行の「除外」について説明します。 割引に明細行の除外を使用する場合は、以前のバージョンを実行している店舗では適用されません。
 - **HQ は更新されませんが、Commerce Scale Unit と POS は更新されます (N-1)。** Commerce Scale Unit で更新された価格エンジンで価格の計算時にレガシ割引コードを処理できるので、このシナリオでは更新による機能の影響はありません。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

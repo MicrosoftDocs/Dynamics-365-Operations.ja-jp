@@ -1,20 +1,26 @@
 ---
 title: select ステートメントを式として記述
 description: このトピックでは、select ステートメントを式として使用する方法について説明します。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 06/16/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 7fd7d20810fbb23bce4102a0c6a87749a82788a3
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a08cd9dfdf14a8fb1f7909a77a5a72e08337723e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783234"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408737"
 ---
 # <a name="write-select-statements-as-expressions"></a>select ステートメントを式として記述
 
@@ -78,6 +84,3 @@ if ((select custTable where CustTable.AccountNum == '3000').CreditMax < 5000)
     info('This customer has a credit maximum less than $5000.');
 }
 ```
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

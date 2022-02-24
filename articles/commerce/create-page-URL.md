@@ -2,9 +2,11 @@
 title: ページ URL の作成
 description: このトピックでは、サイトにページ URL を作成するための基本的な概念と手順について説明します。
 author: bicyclingfool
+manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -14,18 +16,21 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 923723ce6e3f92c5186cd8a562a6e3fee3fdf70dfe8db29c86192cb1db515b1a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 062a49df93e442dbe402ac9a78244c966958aaa2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717726"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965256"
 ---
 # <a name="create-a-page-url"></a>ページ URL の作成
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、サイトにページ URL を作成するための基本的な概念と手順について説明します。
+
+## <a name="overview"></a>概要
 
 サイト上のページを指す URL の全体または絶対 URL は、個別のパーツで構成されます。 たとえば、URL `https://www.contoso.com/en-us/contactus` は次の部分から構成されます。
 
@@ -101,6 +106,3 @@ URL を別の URL にリダイレクトするには、次の手順に従いま�
 [ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
 [サイトに言語を追加する](add-languages-to-site.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

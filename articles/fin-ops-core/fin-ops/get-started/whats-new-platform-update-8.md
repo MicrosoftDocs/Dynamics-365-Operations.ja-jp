@@ -2,9 +2,11 @@
 title: Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 の新機能または変更された機能について説明します。 このバージョンは 2017 年 6 月にリリースされました。
 author: tonyafehr
+manager: AnnBe
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 9dd2b75a9597c1cb6c311bce5c5a6e073489350658b9db69df43bc531bce70ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d7d484f65262297a380ad7b9fa028b195f3fd497
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762202"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797805"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-8-june-2017"></a>Dynamics 365 for Finance and Operations Enterprise Edition プラットフォーム更新プログラム 8 (2017 年 6 月) の新機能および変更された機能
 
@@ -69,6 +71,3 @@ Dynamics 365 for Finance and Operations Enterprise Edition の分析レポート
 オンプレミス配置シナリオでは、アプリケーション サーバーおよび SQL データベースは顧客またはパートナーのデータ センター内で実行されます。 顧客とパートナーは、業務プロセスの設計、オンプレミス ノードに展開するためのソフトウェア イメージの作成と展開、システム ヘルス ダッシュボードのオンプレミス ノードの監視、およびメンテナンスを含むマイクロソフト クラウドの LCS を通じてアプリケーション ライフサイクルを管理します。 Microsoft のイノベーションです。
 
 詳細については、[ビジネスに適したクラウド オプション](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/06/the-right-cloud-option-for-your-business) を参照してください。 このブログ記事は、「ローカル ビジネス データ」展開機能を参照しています。 これは、製品とドキュメントの「オンプレミス」と呼ばれる機能です。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,35 +1,33 @@
 ---
-title: 従業員セルフ サービスの構成
+title: 従業員セルフ サービスのコンフィギュレーション
 description: Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービスでトップレベル ナビゲーション用のタイルを構成できます。
-author: twheeloc
-ms.date: 12/06/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83718856a864123d7941b21c078bcdb96a62cca8
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d1534e37e83e22dd9860de54165c062935db3798
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067582"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419422"
 ---
 # <a name="configure-employee-self-service"></a>従業員セルフ サービスのコンフィギュレーション
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Microsoft Dynamics 365 Human Resources では、**従業員セルフ サービス** でトップレベル ナビゲーション用のタイルを構成できます。 福利厚生計画タイルは、適格な福利厚生計画をユーザーに直接示します。
+Microsoft Dynamics 365 Human Resourcesでは、従業員セルフ サービスでトップレベル ナビゲーション用のタイルを構成できます。 福利厚生計画タイルは、適格な福利厚生計画をユーザーに直接示します。
 
 ## <a name="set-up-a-benefit-plans-tile"></a>給付金計画タイルの設定
 
@@ -39,14 +37,17 @@ Microsoft Dynamics 365 Human Resources では、**従業員セルフ サービ�
 
 3. 次のフィールドの値を指定します。
 
-   | フィールド | Description |
+   | フィールド | 説明 |
    | --- | --- |
-   | **計画タイプ コード** | **福利厚生セルフサービス** でこのウィンドウが選択された場合に表示される計画タイプです。 |
    | **タイル ID** | タイルの一意の識別子。 |
-   | **タイル ラベル テキスト** | **福利厚生セルフ サービス** のタイルに表示されるテキストです。 |
+   | **タイル ラベル テキスト** | セルフ サービスのタイルに表示されるテキスト。 |
    | **説明** | タイルの説明。 |
+   | **インターネット アドレス** | 従業員のセルフ サービス ページへの URL を入力します。 |
+   | **タイル サイズ** | タイルのサイズ: 小、中、または大。 |
+   | **ターゲット** | ページを新しいウィンドウで開くか、現在のウィンドウで開くかを指定します。 |
    | **タイルの背景イメージ** | タイルに使用する画像の URL (オプション)。 |
-   | **オープンな登録を追跡する** | このプランのタイプのオープンな登録の進捗状況を追跡するには、このオプションを選択します。 たとえば、**プラン タイプ = その他** の場合はプランを作成できます。 これらのプランは、登録状況を追跡しないオプション プランの場合があります。 このプラン のタイプを選択しない場合、 **オープンな加入契約** タブでの登録の進行状況、または完了を追跡する際に、これらのタイプのプランは無視されます。この設定は、すべての期間および法人に対して選択された計画タイプに適用されます。 |
+   | **開始** | タイルが使用可能になる開始日時。 |
+   | **終了** | タイルが使用可能になる終了日時。 |
 
 4. **保存** を選択します。
 
@@ -58,16 +59,16 @@ Microsoft Dynamics 365 Human Resources では、**従業員セルフ サービ�
 
 3. 次のフィールドの値を指定します。
 
-   | フィールド | Description |
+   | フィールド | 説明 |
    | --- | --- |
-   | **給付金クレジット ID** | **福利厚生セルフサービス** でこのタイルが選択されたときに表示されるフレックス クレジット プログラムのプランです。 |
    | **タイル ID** | タイルの一意の識別子。 |
-   | **タイル ラベル テキスト** | **福利厚生セルフ サービス** のタイルに表示されるテキストです。 |
+   | **タイル ラベル テキスト** | セルフ サービスのタイルに表示されるテキスト。 |
    | **説明** | タイルの説明。 |
+   | **インターネット アドレス** | 従業員のセルフ サービス ページへの URL を入力します。 |
+   | **タイル サイズ** | タイルのサイズ: 小、中、または大。 |
+   | **ターゲット** | ページを新しいウィンドウで開くか、現在のウィンドウで開くかを指定します。 |
    | **タイルの背景イメージ** | タイルに使用する画像の URL (オプション)。 |
-   | **オープンな登録を追跡する** | このプランのタイプのオープンな登録の進捗状況を追跡するには、このオプションを選択します。 たとえば、**プラン タイプ = その他** の場合はプランを作成できます。 これらのプランは、登録状況を追跡しないオプション プランの場合があります。 このプラン のタイプを選択しない場合、 **オープンな加入契約** タブでの登録の進行状況、または完了を追跡する際に、これらのタイプのプランは無視されます。この設定は、すべての期間および法人に対して選択された計画タイプに適用されます。 |
+   | **開始** | タイルが使用可能になる開始日時。 |
+   | **終了** | タイルが使用可能になる終了日時。 |
 
 4. **保存** を選択します。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

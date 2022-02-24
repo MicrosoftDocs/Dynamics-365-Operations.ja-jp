@@ -1,27 +1,30 @@
 ---
 title: MPOS およびクラウド POS の拡張ログオン機能の設定
 description: このトピックでは、Cloud POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。
-author: boycezhu
-ms.date: 09/07/2021
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycez
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: 79878e2ffbf219f77f378997c277ced8bb41598c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478674"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413709"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>MPOS および Cloud POS の拡張ログオン機能の設定
 
@@ -51,7 +54,7 @@ ms.locfileid: "7478674"
 
 ## <a name="assigning-an-extended-logon"></a>拡張ログオンの割り当て
 
-既定では、マネージャのみが作業者に拡張ログオンを割り当てることができます。 拡張ログオンを割り当てるには、POS で **拡張ログオン** に移動します。 検索フィールドに、作業者 ID を入力して、作業者を検索します。 作業者を選択し、**割り当て** をクリックします。 次のページで、作業者に割り当てる拡張ログオンを機械に通すかスキャンします。 読み取りまたはスキャンが正常に読み取られた場合、**OK** ボタンが使用できるようになります。 その作業者の拡張ログオンを保存する場合、**OK** をクリックします。
+既定では、マネージャのみが作業者に拡張ログオンを割り当てることができます。 拡張ログオンを割り当てるには、POS で **拡張ログオン** に移動します。 検索フィールドに、オペレーター ID を入力して、作業者を検索します。 作業者を選択し、**割り当て** をクリックします。 次のページで、作業者に割り当てる拡張ログオンを機械に通すかスキャンします。 読み取りまたはスキャンが正常に読み取られた場合、**OK** ボタンが使用できるようになります。 その作業者の拡張ログオンを保存する場合、**OK** をクリックします。
 
 ## <a name="deleting-an-extended-logon"></a>拡張ログオンの削除
 
@@ -59,13 +62,8 @@ ms.locfileid: "7478674"
 
 ## <a name="extending-extended-logon"></a>拡張ログオンの拡張
 
-拡張ログオンでは、すぐに利用できる 5 つの重要な文字だけが固有識別子になります。 たとえば、「1234567」と「1234578」という ID を持つ 2 つのカードを構成した場合、両方とも「12345」と見なされます。 より多くの文字をサポートする拡張機能をビルドできます。 詳細な指示については、[MPOS および Cloud POS の拡張ログオン機能を拡張する](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/)を確認してください。
-
 ログオン サービスはパーム スキャナーなどの追加ログオン デバイスをサポートするために、拡張できます。 詳細については、POS 拡張ドキュメントを参照してください。
 
 ## <a name="using-extended-logon"></a>拡張ログオンの使用
 
-拡張ログオンを構成すると、作業者にバーコードまたは磁気ストライプが割り当てられ、作業者は POS ログオン ページが表示されている間に、作業者カードを読み取るか、またはスキャンする必要があります。 ログオンを続行する前にパスワードが必要な場合、作業者のパスワードを入力するように要求されます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+拡張ログオンを構成すると、作業者にバーコードまたは磁気ストライプが割り当てられ、作業者は POS ログオン ページが表示されている間に、自分のカードを読み取るか、またはスキャンする必要があります。 ログオンを続行する前にパスワードが必要な場合、作業者は自分のパスワードを入力するように要求されます。

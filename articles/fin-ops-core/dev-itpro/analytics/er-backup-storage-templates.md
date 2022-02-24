@@ -2,9 +2,11 @@
 title: ER テンプレートのバックアップストレージ
 description: このトピックでは、テンプレートの復旧に電子申告 (ER) バックアップストレージを使用する方法について説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 136a81e661590d7af879e816c1142de85fb72e06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767880"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681403"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER テンプレートのバックアップストレージ
 
@@ -65,19 +67,19 @@ ER テンプレート機能のバックアップ ストレージを使用する�
 > [!NOTE]
 > このパラメーターは、アプリケーションユーザーとして定義され、会社に固有のログに記録されます。
 
-![ER コンフィギュレーション ページ。](./media/GER-BackupTemplates-1.png)
+![ER コンフィギュレーション ページ](./media/GER-BackupTemplates-1.png)
 
 次の図は、**破損したテンプレートをバッチで復元する手順を自動的に実行する** パラメーターが **On** に設定されている場合に表示されるメッセージの例を示しています。
 
-![仕入先支払仕訳帳明細ページ。](./media/GER-BackupTemplates-2.png)
+![仕入先支払仕訳帳明細ページ](./media/GER-BackupTemplates-2.png)
 
 次の図は、**バッチ ジョブ** ページの **破損したテンプレートの内部データベース バックアップからの復元** バッチ処理を示しています。
 
-![バッチ ジョブのページ。](./media/GER-BackupTemplates-3.png)
+![バッチ ジョブのページ](./media/GER-BackupTemplates-3.png)
 
 完了した **破損したテンプレートの内部データベース バックアップからの復元** バッチ処理の実行ログには、バックアップの保存場所からプライマリ ストレージの場所に復元されたテンプレートに関する情報が含まれます。
 
-![バッチ ジョブ履歴ページ。](./media/GER-BackupTemplates-4.png)
+![バッチ ジョブ履歴ページ](./media/GER-BackupTemplates-4.png)
 
 既定では、ER 形式の構成に存在するテンプレートのバックアップ コピーを自動的に作成するプロセスが有効になっています。 テンプレートのバックアップ コピーを停止するには、**電子申告のパラメーター** ページの **添付** タブで、**テンプレートのバックアップ コピーの作成を停止する** オプションを **はい** に設定します。 **電子申告** ワークスペースから、このページを開くことができます。
 
@@ -85,7 +87,7 @@ ER テンプレート機能のバックアップ ストレージを使用する�
 
 環境を Finance and Operations  バージョン 10.0.5 (2019 年 10 月) にアップグレードして、実行可能な ER 形式の構成を含む新しい環境に移行する場合は、移行をする前に **電子申告のパラメーター** ページで **バックアップ ストレージに入力する** を選択します。 このボタンをクリックすると、使用可能なすべてのテンプレートのバックアップ コピーを作成するプロセスが開始され、テンプレートの ER バックアップ保存場所に保存できるようになります。
 
-![電子申告のパラメーター ページ。](./media/GER-BackupTemplates-5.png)
+![電子申告のパラメーター ページ](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>手動による回復
 
@@ -100,6 +102,3 @@ Finance and Operations バージョン 10.0.5 では、ER テンプレートの�
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
 [電子申告 (ER) フレームワークの構成](electronic-reporting-er-configure-parameters.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

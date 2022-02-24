@@ -2,23 +2,26 @@
 title: 増加償却パラメーターおよび転記プロファイルのコンフィギュレーション
 description: 日本では、加速償却は [レート係数]、[レートしきい値] および [計算方法] に基づいて計算されます。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 032047878797752e10fd40090294292f5d51655279e4f66f69495c3691417e72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c394246da32e2f4f9cf0376a049fbbfa3806ba26
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714423"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408181"
 ---
 # <a name="configure-accelerated-depreciation-parameters-and-posting-profiles"></a>増加償却パラメーターおよび転記プロファイルのコンフィギュレーション
 
@@ -57,6 +60,3 @@ ms.locfileid: "6714423"
 2. [加速償却] セクションを展開または折りたたみます。
     * [加速償却] に使用する [主勘定] と [相手勘定] を指定します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: ワークスペースのフィルター処理およびコンフィギュレーション
 description: この記事は、ワークスペースを構成してフィルター処理する方法の概要について説明します。
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace, HcmBenefitWorkspace, BudgetPlanningWorkspace, BusinessProcessGenericWorkspace, RetailCatalogManagementWorkspace, RetailCategoryAndProductWorkspace, RetailChannelManagementWorkspace, HcmCompensationWorkspace, CAMCostAccountingLedgerAdminWorkspace, CostAdminWorkspace, CostAnalysisWorkspace, CAMCostControlWorkspace, CustomerCollectionManagerWorkspace, CustomerInvoiceWorkspace, CustPaymentWorkspace, DataManagementWorkspace, DataValidationWorkspace, ERWorkspace, LedgerPeriodCloseProjectWorkspace, AssetWorkspace, GeneralJournalEntryWorkspace, VendVendorPortalInvoiceWorkspace, BudgetTrackingWorkspace, ReqCreatePlanWorkspace, BusinessProcessGenericOwnerWorkspace, SelfHealingWorkspace, WHSOutboundWorkMonitoringWorkspace, WHSWavePlanningWorkspace, PayrollWorkspace, HcmWorkforceWorkspace, RetailDiscountPricingWorkspace, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, EcoResProductVariantMaintainWorkspace, JmgShopSupervisorWorkspace, ProjProjectManagementWorkspace, VendVendorPortalWorkspace, PurchOrderMaintainWorkspace, PurchOrderProcessReceiptsWorkspace, HcmRecruitmentWorkspace, EcoResProductMaintainWorkspace, FMClerkWorkspace, OpResLifecycleManagementWorkspace, RetailITWorkspace, RetailChannelOperationsWorkspace, RetailStoreManagementWorkspace, SalesOrderProcessingWorkspace, SalesReturnWorkspace, SystemAdministrationWorkspaceForm, VendVendorRequestForQuotationsWorkspace, VendVendorProfileManagementWorkspace, VendInvoiceWorkspace, VendPaymentWorkspace
 audience: Application User
@@ -15,19 +17,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96b61457f222836d50a75ed15305c3c1267600c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 10f7e790fdab3866958af1fa131d25735f69a58c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068737"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798454"
 ---
 # <a name="configure-and-filter-workspaces"></a>ワークスペースのフィルター処理およびコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 この記事は、ワークスペースを構成してフィルター処理する方法の概要について説明します。
 
@@ -35,11 +34,11 @@ ms.locfileid: "8068737"
 
 ワークスペース全体に適用される設定を変更することにより、ワークスペースの外観と動作を変更できます。 ワークスペースが構成できる場合、[アクション] ウィンドウには設定を変更するボタンがあり、これをクリックするように指示が表示されます。 たとえば次の図では、**自分のワークスペースのコンフィギュレーション** というボタンが表示されています。
 
-[![ワークスペースの構成とフィルター。](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
+[![ワークスペースの構成とフィルター](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
 
 ボタンをクリックすると、ワークスペースの定義済設定を変更できるダイアログが表示されます。 このダイアログに表示される特定の設定は、各ワークスペースによって異なり、ワークスペースで使用できる特定のコントロールや業務データによっても異なります。
 
-[![マイ ワークスペースの構成。](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+[![マイ ワークスペースの構成](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>ワークスペースのフィルタ処理
 
@@ -49,11 +48,11 @@ ms.locfileid: "8068737"
 
 ワークスペース全体のフィルターを使用すると、ワークスペース全体をフィルター処理できます。 ワークスペース全体のフィルターは、ワークスペースの左上隅にあります。 ドロップダウン リストで特定の値を選択すると、その選択内容に基づいてワークスペースのコンテンツがフィルター処理されます。
 
-[![ワークスペース フィルター。](./media/workspace-filter.png)](./media/workspace-filter.png)
+[![ワークスペース フィルター](./media/workspace-filter.png)](./media/workspace-filter.png)
 
 クリックしてフィルターを開くと、複数のオプションが表示されます。
 
-[![展開済ワークスペース フィルター。](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
+[![展開済ワークスペース フィルター](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
 
 オプションに基づいワークスペースのてフィルターを適用するオプションを選択します。
 
@@ -61,9 +60,6 @@ ms.locfileid: "8068737"
 
 ワークスペースのそれぞれのセクションにフィルタが存在する場合は、各セクションを個別にフィルタ処理できます。 次の図では、フィルター (テキスト「フィルター」を含むフィールド) は自由書式のテキスト フィールドのフィルターの例です。
 
-[![ワークスペース セクション フィルター。](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
+[![ワークスペース セクション フィルター](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 ワークスペース全体のフィルターと同じように、希望のフィルター値を選択または入力して、セクションのコンテンツを絞り込みます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

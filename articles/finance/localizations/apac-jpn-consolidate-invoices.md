@@ -1,26 +1,29 @@
 ---
 title: 日本向け月次締め請求書
 description: 日本では、支払の請求書は毎月統合されます。 この記事は、月次締め請求書に関する情報を提供し、請求金額および期日の計算方法を説明します。
-author: EricWangChen
+author: yijialuan
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustConsInvoice_JP, VendConsInvoice_JP
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 10314
 ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
 ms.search.region: Japan
-ms.author: wangchen
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d95a554cc1e79cb9ae496b7c46bd287c326b5ba
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: a8041d91e72560e832ed6a0ee4b1507c7a02a364
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592614"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408184"
 ---
 # <a name="consolidated-invoices-for-japan"></a>日本向け月次締め請求書
 
@@ -61,6 +64,3 @@ ms.locfileid: "7592614"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

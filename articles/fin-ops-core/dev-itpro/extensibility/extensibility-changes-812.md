@@ -2,24 +2,26 @@
 title: Dynamics 365 for Finance and Operations バージョン 8.1.2 の拡張機能の変更
 description: このトピックは、Dynamics 365 for Finance and Operations バージョン 8.1.2 で実装された拡張機能を一覧表示します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: App 8.1.2
-ms.openlocfilehash: 5a3c544cec8b83e2aad1c10a3ec23dd759a9a963
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6550f8858a2973256d75679b4bd7a71887ca12a0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782019"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409335"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-812"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 の拡張機能の変更
 
@@ -366,6 +368,3 @@ ms.locfileid: "7782019"
 - CW 品目の割合管理を有効にします。
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

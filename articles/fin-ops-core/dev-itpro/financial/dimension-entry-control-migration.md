@@ -1,27 +1,29 @@
 ---
 title: 既定の分析コード コントロールを分析コード エントリ コントロールに移行する
-description: このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。
-author: RyanCCarlson2
+description: このトピックでは、コードのアップグレードを実行した後、既定の分析コード コントロールを分析コード エントリ コントロールに移行するために必要な手順について説明します。 例として、PurchTable フォームを使用します。
+author: robinarh
+manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 25531
 ms.assetid: 05e85771-44e1-4b0a-8dd2-a878be5a3309
 ms.search.region: Global
-ms.author: rcarlson
+ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2f3ecb82eb6f30bcfacf0a64c335880bf3a8426
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9e2b42f42e6f1cf71557f17ede096d588135d5e7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782903"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680512"
 ---
-# <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a>既定の分析コード コントロールの分析コード エントリ コントロールへの移行
+# <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a>既定の分析コード コントロールを分析コード エントリ コントロールに移行する
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,7 +64,7 @@ ms.locfileid: "7782903"
 |-------|--------|
 | /\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\]移行ガイダンスに基づいてこの TODO を置き換えます。 \*/DimensionEntryControlHeader.reactivate(); | このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。 分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。 |
 
-## <a name="data-field-projid-purchtable"></a>データ フィールド ProjId (PurchTable)
+## <a name="data-field-projid"></a>データ フィールド ProjId
 
 (**フォーム&gt;データ ソース &gt;PurchTable&gt; フィールド &gt;ProjId&gt; 方法**)
 
@@ -109,7 +111,7 @@ ms.locfileid: "7782903"
 |--------|--------------------------------------------------|
 | /\* TODO: (コード アップグレード) \[分析コード エントリ コントロール\]移行ガイダンスに基づいてこの TODO を置き換えます。 \*/DimensionEntryControlLine.reactivate(); | このメソッド呼び出しには前に呼び出された parm メソッドがないため、削除することができます。 分析コード エントリ コントロールは、会社または表示されている分析コード セットが変化した場合にのみ再度有効化する必要があります。 |
 
-## <a name="data-field-projid-purchline"></a>データ フィールド ProjId (PurchLine)
+## <a name="data-field-projid"></a>データ フィールド ProjId
 
 (**フォーム&gt;データ ソース &gt;PurchLine&gt; フィールド &gt;ProjId&gt; 方法**)
 
@@ -137,6 +139,3 @@ ms.locfileid: "7782903"
 
 - [分析コード エントリ コントロールの取得](dimension-entry-control-uptake.md)
 - [ダイアログの分析コード エントリ コントロールのサポート](dimension-entry-control-dialog-support.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

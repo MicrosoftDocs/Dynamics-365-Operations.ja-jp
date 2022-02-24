@@ -1,10 +1,12 @@
 ---
 title: 勘定構造の作成
-description: この手順では、勘定構造の作成について説明します。
+description: このタスク ガイドでは、勘定構造の作成について説明します。
 author: aprilolson
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate
 audience: Application User
@@ -13,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9ba43e243df4ba4b7c0eb6188629686206ff09b
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 4a8df7d7d9c4555bf46ac1cc3f71695837b1369b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394542"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968584"
 ---
 # <a name="create-account-structures"></a>勘定構造の作成
 
 [!include [banner](../../includes/banner.md)]
 
-この手順では、勘定構造の作成について説明します。 手順は、デモ データの会社 USMF を使用します。
+このタスク ガイドでは、勘定構造の作成について説明します。 手順は、デモ データの会社 USMF を使用します。
 
 1. **ナビゲーション ウィンドウ > モジュール > 一般会計 > 勘定科目表 > 構造 > 勘定構造の構成** の順に移動します。
 2. **アクション ウィンドウ** で、**新規** をクリックすると、ドロップ ダイアログが開きます。
@@ -58,6 +60,3 @@ ms.locfileid: "7394542"
 29. **アクション ウィンドウ** で、**有効化** をクリックします。
 30. **有効化** をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

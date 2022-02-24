@@ -2,40 +2,46 @@
 title: 新しい eコマース テナントのデプロイ
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して新しい Dynamics 365 Commerce e コマース サイトをデプロイする方法について説明します。
 author: psimolin
+manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b4b54e10cb4bd897b4c0706a13eeaf32f8892a05f7a09f3b27dbdd3dcdad1606
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750717"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517285"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>新しい eコマース テナントのデプロイ
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して新しい Dynamics 365 Commerce e コマース サイトをデプロイする方法について説明します。
 
+## <a name="overview"></a>概要
+
 Microsoft Dynamics Lifecycle Services (LCS) は、パートナーや顧客がプロジェクト環境を管理したり、Microsoft Dynamics 製品や機能に関する最新情報を表示したり、サポート インシデントを作成、追跡、参照したりするために使用できる、クラウドベースのコラボレーション ワークスペースです。 e コマースの管理機能は LCS に統合されています。
 
-LCS の詳細については、[Lifecycle Services ユーザー ガイド](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)を参照してください。
+LCS の詳細については、[Lifecycle Services ユーザー ガイド](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)を参照してください。
     
 ## <a name="get-started"></a>開始する
 
 e コマースを初期化する前に、プロジェクト、環境、Retail Cloud Scale Unit (RCSU) を初期化する必要があります。 LCS で初期化を行うには、プロジェクト所有者ロールまたは環境マネージャ ロールのいずれかのアクセス許可が必要です。 実稼働環境とサンドボックス環境のトポロジがサポートされています。
 
-環境に関する詳細については、[環境計画](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning)を参照してください。 RCSU の詳細については、[Retail Cloud Scale Unit の初期化](/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels)を参照してください。
+環境に関する詳細については、[環境計画](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning)を参照してください。 RCSU の詳細については、[Retail Cloud Scale Unit の初期化](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels)を参照してください。
 
 ## <a name="initialize-e-commerce"></a>e コマースの初期化
 
@@ -106,6 +112,3 @@ Commerce サイト ビルダーにアクセスするには、LCS の **小売管
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

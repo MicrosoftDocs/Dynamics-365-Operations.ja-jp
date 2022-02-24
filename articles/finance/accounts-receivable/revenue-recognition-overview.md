@@ -1,35 +1,36 @@
 ---
-title: 売上認識の概要 (ビデオを含む)
-description: このトピックでは、売上認識機能に関する情報を提供します。 この機能により、複数要素注文の収益価格と収益スケジュールの両方を認識するための会社固有のルールを定義できる、柔軟なフレームワークが提供されます。
+title: 収益認識の概要
+description: このトピックでは、収益認識機能に関する情報を提供します。 この機能により、複数要素注文の収益価格と収益スケジュールの両方を認識するための会社固有のルールを定義できる、柔軟なフレームワークが提供されます。
 author: kweekley
+manager: aolson
 ms.date: 11/11/2019
-ms.topic: overview
+ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: a5e7b6407fe72c56ea04920532d4327d2b89f8d1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 92af567499c1a8a23cd4d51e5bab48eaab2d8422
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982590"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4459431"
 ---
 # <a name="revenue-recognition-overview"></a>収益認識の概要
 
 [!include [banner](../includes/banner.md)]
 
-製品、サービス、サブスクリプションなどの複数の要素を販売する業界の会社では、一連の会社固有および業界固有のガイドラインに基づいて収益を認識できるように、複数要素注文を細分化できる能力が求められます。
-
 > [!NOTE]
 > 収益認識機能は、機能管理を使用して有効にすることはできません。 現時点では、コンフィギュレーション キーを使用して有効にする必要があります。
 
-> バンドル機能を含む収益認識は、Commerce チャネル (eコマース、POS、コール センター) での使用はサポートされません。 収益認識で構成された品目は、Commerce チャネルで作成された注文やトランザクションに追加できません。
+製品、サービス、サブスクリプションなどの複数の要素を販売する業界の会社では、一連の会社固有および業界固有のガイドラインに基づいて収益を認識できるように、複数要素注文を細分化できる能力が求められます。
 
 一般に、収益認識プロセスは、次のタスクを実行するために使用できます。
 
@@ -53,6 +54,3 @@ ms.locfileid: "7982590"
 収益認識スケジュールの詳細は、販売注文明細行ごとに管理されます。 したがって、収益認識マネージャーは、詳細を表示し、契約上の責務が完了した時点で明細行を収益にリリースできます。 各期間の終了時に、収益認識マネージャーは収益仕訳帳を作成して、設定した日付またはそれ以前にスケジュール明細行をリリースできます。 この収益仕訳帳はすぐには転記されません。 したがって、収益認識マネージャーは、正しい金額が繰延収益から実際の収益にリリースされているかどうかを確認できます。
 
 契約の変更により、新しい販売注文明細行が既存の販売注文または新しい販売注文に追加されるようになった場合は、再配賦プロセスを実行して、販売注文のすべての明細行の収益価格を修正することができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

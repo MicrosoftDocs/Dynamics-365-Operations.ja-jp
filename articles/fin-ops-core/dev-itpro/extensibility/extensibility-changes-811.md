@@ -2,24 +2,26 @@
 title: Dynamics 365 for Finance and Operations バージョン 8.1.1 の拡張機能の変更
 description: これのトピック、Dynamics 365 for Finance and Operations バージョン 8.1.1 に実装された拡張機能を一覧します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-10-010
 ms.dyn365.ops.version: App 8.1.1
-ms.openlocfilehash: 3deaf9df3459af64477732408629851b3bfaef33
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 95cb56141eaa9c5e32f6830b7e552086e5e3f1ae
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781644"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409337"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-version-811"></a>Dynamics 365 for Finance and Operations バージョン 8.1.1 の拡張機能の変更
 
@@ -51,7 +53,7 @@ ms.locfileid: "7781644"
 | リファクターされたメソッド                                                                             |
 |------------------------------------------------------------------------------------------------|
 |[拡張性] メソッド シグネチャの変更: WHSWorkExecuteDisplayListWork.displayListWorkStep      |
-|[拡張性] WhsWorkExecuteDisplayAdjustOut の ProcessGuide フレームワークへのリファクター               |
+|[拡張性] WhsWorkExecuteDisplayAdjustOut を ProcessGuide フレームワークにリファクターする               |
 | AssetJournal                                                                                   |
 | AXSalesQuotationTable.setQuotationId                                                           |
 | BankStatementBankAccountIdentify.searchBankAccountTable                                        |
@@ -468,6 +470,3 @@ ms.locfileid: "7781644"
 - アルゴリズムを検索する InventPosting を再設計します 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

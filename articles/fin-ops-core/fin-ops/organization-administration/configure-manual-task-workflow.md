@@ -2,9 +2,11 @@
 title: ワークフローでの手動タスクのコンフィギュレーション
 description: このトピックでは、手動タスクのプロパティをコンフィギュレーションする方法について説明します。
 author: ChrisGarty
+manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 726abcf20789fb3a7a9a3adbebf17249042910d1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: f61e0f7ee16519767192fb379f20c1ed20b69caa
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066471"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798808"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>ワークフローでの手動タスクのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、手動タスクのプロパティをコンフィギュレーションする方法について説明します。
 
@@ -382,6 +381,3 @@ ms.locfileid: "8066471"
 5. ユーザーがタスクを別のユーザーに割り当てることができるようにするには、**委任** チェック ボックスをオンにします。
 6. ユーザーが作業項目キューの他のユーザーにタスクを割り当て直すことができるようにするには、**再割り当て** チェック ボックスをオンにします。
 7. ユーザーが作業項目キューにタスクを割り当て直すことができるようにするには、**リリース** チェック ボックスをオンにします。 すると、別のユーザーがタスクを完了できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

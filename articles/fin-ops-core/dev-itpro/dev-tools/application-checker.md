@@ -2,20 +2,24 @@
 title: アプリケーション チェッカー
 description: このトピックでは、Application チェッカー ツールについて説明します。
 author: AndreasHassing
+manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: anniels
 ms.search.validFrom: 2020-09-22
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: a4df03f8905c9ddc7fc37b147b828de609687a95
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1163a4e0601466a2bbedda9a48134e35c54e6c20
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783251"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409195"
 ---
 # <a name="application-checker"></a>アプリケーション チェッカー
 
@@ -25,6 +29,3 @@ Application チェッカー ツールは、アプリケーション コード (�
 
 アプリケーション チェッカーをインストールして使用する方法については、[Dynamics365FO-AppChecker](https://github.com/microsoft/Dynamics365FO-AppChecker) を参照してください。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,23 +1,27 @@
 ---
 title: カスタマイズをオフにして機能を廃止
-description: この記事では、モデルのカスタマイズを無効にするプロセスについて説明します。 このプロセスに従うことで、オーバーレイに対して不適格となります。
+description: この記事では、モデルのカスタマイズを無効にするプロセスについて説明します。 このプロセスに従うことで、オーバーレイに対して不適格となります。 開発者は引き続きそのモデルを拡張することができます。 この記事では、古い形式の機能を廃止する方法についても説明します。
 author: pvillads
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 89593
 ms.assetid: f3df4b82-84d9-401e-8d7f-cfd42772621c
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 64a1caf4a7f3c63fbb63b78646f4adad3dd7d3ce
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f14a2e67c49d5c8ea40e32270db8796d61d52936
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783038"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408848"
 ---
 # <a name="turn-off-model-customization-and-deprecate-functionality"></a>カスタマイズをオフにして機能を廃止
 
@@ -161,6 +165,3 @@ class SomeApi
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

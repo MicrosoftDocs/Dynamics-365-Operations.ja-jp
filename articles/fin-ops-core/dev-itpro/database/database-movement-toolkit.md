@@ -1,10 +1,12 @@
 ---
 title: データベース移動ツールキット
-description: このトピックでは、データベース移動ツールキットをダウンロードして使用する方法について説明します。
+description: このトピックでは、データベース移動ツールキット (開発環境環境とサンドボックス環境との間でデータを移動するためのカスタマー エクスペリエンスを高める一連のスクリプト) をダウンロードして使用する方法について説明します。
 author: laneswenka
+manager: AnnBe
 ms.date: 12/02/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 9c4923a748996ce4c69aada3a7b9e86031d02087
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9af37770fc61d868eefe734cd06c7a3d7a842916
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986075"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681104"
 ---
 # <a name="database-movement-toolkit"></a>データベース移動ツールキット
 
@@ -72,6 +74,3 @@ ms.locfileid: "7986075"
 | 初期 | ツールキットは LCS 共有 アセット ライブラリにアップロード済み。|
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

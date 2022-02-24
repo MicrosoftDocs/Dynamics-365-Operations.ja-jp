@@ -1,10 +1,12 @@
 ---
 title: グローバル アドレス帳およびその他のアドレス帳の設定
-description: このトピックでは、計画プロセス中に決定する必要のある考慮事項について説明します。
+description: このトピックでは、グローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。
 author: msftbrking
+manager: AnnBe
 ms.date: 01/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b3f6a74c217b0cc7cec784ca6a964ab2caae0c7e9438aee2cc82987a508d63
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f0a53e1f9b378759e0c5adbe0612a5fa8cddc82
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771899"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796949"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>グローバル アドレス帳およびその他のアドレス帳の計画
 
@@ -55,6 +57,3 @@ ms.locfileid: "6771899"
 **意思決定:**
 
 - 追加のアドレス帳をいくつ作成しますか。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,32 +1,30 @@
 ---
 title: クライアントの接続が切断される
-description: このトピックでは、顧客が自身の環境から切断された場合の対処方法について説明します。
-author: twheeloc
-ms.date: 08/19/2021
+description: この記事では、顧客が自身の環境から切断され、またその理由が分からない場合の対処方法について説明します。
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b15c5db19f1b07e3d469986ac700138ecb1d1525
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2088706baf8735fa371960955a2ffc3240ccac76
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071138"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4419457"
 ---
 # <a name="client-disconnects"></a>クライアントの接続が切断される
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **環境の詳細** 
 
@@ -54,6 +52,3 @@ Microsoft Dynamics 365 Human Resources は、2 つの異なるセッションが
 特定のブラウザー タイプにつき 1 つだけの環境が開いていることを確認します。 ユーザーは、同じ環境 (つまり、同じブラウザの複数のタブ) に対して複数のセッションを開くことができます。
 
 同時に 2 つの環境間を移動するユーザーは、異なるブラウザー タイプで各環境を開く必要があります。 (たとえば、ユーザー A は Chrome で環境 1 を、Microsoft Edge で環境 2 を表示できます。)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

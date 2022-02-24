@@ -2,30 +2,36 @@
 title: サイト ナビゲーションのカスタマイズ
 description: このトピックでは、カスタマイズされたオンライン ナビゲーション階層を作成して、Microsoft Dynamics 365 Commerce サイトで参照するため製品を整理する方法について説明します。
 author: bicyclingfool
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8af68fff17f2f92356ade356da0e75867ed54950d744c6cbe730ad8db4ac3975
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c2b6a7a3b35873e80be391c627d0397fd6398a99
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755885"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413738"
 ---
 # <a name="customize-site-navigation"></a>サイト ナビゲーションのカスタマイズ
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、カスタマイズされたオンライン ナビゲーション階層を作成して、Microsoft Dynamics 365 Commerce サイトで参照するため製品を整理する方法について説明します。
+
+## <a name="overview"></a>概要
 
 オンライン店舗では、製品カテゴリを移動することで、顧客は製品を検索して参照することができます。 この機能は通常、ページ上部にあるタブまたは左側にあるナビゲーション バーによって提供されます。 Dynamics 365 Commerce では、カテゴリ ナビゲーションの階層構造と、さまざまなカテゴリに含まれる製品を作成および管理できます。
 
@@ -104,6 +110,3 @@ ms.locfileid: "6755885"
 [ページ URL の作成](create-page-url.md)
 
 [公開グループで動作](publish-groups.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,24 +2,27 @@
 title: 集荷情報モジュール
 description: このトピックでは、集荷情報モジュールと、Microsoft Dynamics 365 Commerce のチェックアウト ページにそれを追加する方法について説明します。
 author: anupamar-ms
+manager: annbe
 ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 61b97d72b6a397737c10476cd6c02764e60f10b1
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764564"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665351"
 ---
 # <a name="pickup-information-module"></a>集荷情報モジュール
 
@@ -40,7 +43,7 @@ Commerce 本社では、適切な店舗の集荷時間帯がコンフィギュ�
 
 次の図は、チェックアウト ページの集荷情報モジュールを使用した時間帯の選択例を示しています。
 
-![チェックアウト ページの集荷情報モジュールの例。](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![チェックアウト ページの集荷情報モジュールの例](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>モジュール プロパティ
 
@@ -56,7 +59,7 @@ Commerce 本社では、適切な店舗の集荷時間帯がコンフィギュ�
 
 次の図は、集配明細行品目の時間帯を含む電子商取引のチェックアウト ページの例を示しています。
 
-![集配明細行品目の時間帯を含む電子商取引のチェックアウト ページの例。](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![集配明細行品目の時間帯を含む電子商取引のチェックアウト ページの例](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -67,6 +70,3 @@ Commerce 本社では、適切な店舗の集荷時間帯がコンフィギュ�
 [注文確認モジュール](order-confirmation-module.md)
 
 [注文詳細のモジュール](account-management.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

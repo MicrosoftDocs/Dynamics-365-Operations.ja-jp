@@ -2,9 +2,11 @@
 title: ワークフローでの承認ステップのコンフィギュレーション
 description: このトピックでは、承認ステップのプロパティをコンフィギュレーションする方法について説明します。
 author: ChrisGarty
+manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070780"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797099"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>ワークフローでの承認ステップのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、承認ステップのプロパティをコンフィギュレーションする方法について説明します。
 
@@ -159,7 +158,7 @@ ms.locfileid: "8070780"
 
     - **1 人の承認者** – ドキュメントに適用されるアクションは、最初に対応した人物によって決定されます。 たとえば、康介は USD 15,000 の経費精算書を送信済です。 その経費精算書は、現在は政美、健一郎、および隆志に割り当てられています。 このドキュメントに最初に対応するのが政美の場合は、彼女が行うアクションがドキュメントに適用されます。 たとえば、政美が経費報告書を却下した場合、ドキュメントは却下され、康介に送り返されます。 政美が経費精算書を承認した場合、ドキュメントは承認を受けるために綾に送信されます。
 
-        ![承認プロセスのあるワークフロー。](./media/workflow_multipleusersinstep.gif)
+        ![承認プロセスのあるワークフロー](./media/workflow_multipleusersinstep.gif)
 
     - **過半数の承認者** – ドキュメントに適用されるアクションは、過半数の承認者が対応したときに決定されます。 たとえば、康介は USD 15,000 の経費精算書を送信済です。 その経費精算書は、現在は政美、健一郎、および隆志に割り当てられています。 最初に対応する 2 人の承認者が政美と健一郎であれば、その 2 人の取るアクションがドキュメントに適用されます。
 
@@ -277,6 +276,3 @@ ms.locfileid: "8070780"
 
 5. エスカレーション パスに追加するユーザーごとに、ステップ 3～4 を繰り返します。 ユーザーの順序は、変更できます。
 6. エスカレーション パスに含まれるユーザーが、割り当てられた時間内に対応しない場合、システムによってドキュメントが自動的に処理されます。 システムによる処理を指定するには、**アクション** 行を選択し、**アクションの終了** タブでアクションを選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

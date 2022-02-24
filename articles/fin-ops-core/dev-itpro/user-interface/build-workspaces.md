@@ -2,24 +2,26 @@
 title: 運用ワークスペースの構築
 description: このトピックでは、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 27111
 ms.assetid: b8ddf156-eb7c-4010-95bd-16754cb1e122
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce08b4fe9a43687ce716c3b66cd013ef56854c2c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e9ceed8d2488e1784b368bcc28154a4b3ce8370f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783144"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679748"
 ---
 # <a name="build-operational-workspaces"></a>運用ワークスペースの構築
 
@@ -43,7 +45,7 @@ ms.locfileid: "7783144"
 - ビジュアル効果を提供します。
 - 最小限の COGS と迅速な応答時間をもたらす規範的なパターンとベスト プラクティスを使用して構築します。
 
-[![ワークスペースの例。](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) 
+[![ワークスペースの例](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) 
 
 これらの目標を達成するため、工程ワークスペース パターンが開発されました。
 
@@ -172,6 +174,3 @@ ms.locfileid: "7783144"
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

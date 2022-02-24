@@ -1,36 +1,39 @@
 ---
 title: 製品を Supply Chain Management から Sales の製品に直接同期する
 description: このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Sales に製品を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: dd84f96a5597c480648ae30b6d0274e15d750ff6
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 6ffd55585ff43f993876de6c669eb61e74a9fd79
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062466"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527317"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>製品を Supply Chain Management から Sales の製品に直接同期する
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> 見込顧客を現金化するソリューションを使用する前に、[Microsoft Dataverse for Apps へデータを統合](/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
+> 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
 
 このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Sales に製品を直接同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
@@ -38,7 +41,7 @@ ms.locfileid: "8062466"
 
 見込み客の現金化ソリューションは、Supply Chain Management と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートにより、Supply Chain Management と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れが可能になります。 次の図は、Supply Chain Management と Sales の間でデータを同期させる方法を示しています。
 
-[![見込み客の現金化へのデータフロー。](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
@@ -77,7 +80,7 @@ Sales では、新しい **外部管理** フィールドが製品に追加さ�
 
 > [!NOTE]
 > - 製品の同期は、一致する通貨を含む価格リストなしでは成功しません。
-> - データ統合プロジェクトの pricelevelid.name [既定の価格リスト (名前)] をマッピングすることにより、統合に使用される価格リストを制御できます。 入力値は、全小文字である必要があります。 たとえば、'標準' という名前の販売での価格リストの既定値は、次のようになります。出力先フィールド: pricelevelid.name [既定の価格リスト (名前)]、およびタイプのマッピング: [ { "transformType": "既定", "defaultValue": "標準" } ]。
+> - データ統合プロジェクトの pricelevelid.name [既定の価格リスト (名前)] をマッピングすることにより、統合に使用される価格リストを制御できます。 入力値は、全小文字である必要があります。 たとえば、'標準' という名前の販売での価格リストの既定値は、次のようになります。出力先フィールド: pricelevelid.name [既定の価格リスト (名前)]、およびタイプのマッピング: [ {  "transformType": "既定", "defaultValue": "標準" } ]。
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 
@@ -104,12 +107,12 @@ Sales では、新しい **外部管理** フィールドが製品に追加さ�
 > [!NOTE]
 > マッピングは、Sales から Supply Chain Management にどのフィールド情報を同期するかを表示します。
 
-![データ インテグレーターのテンプレート マッピング。](./media/products-direct-template-mapping-data-integrator-1.png)
+![データ インテグレーターのテンプレートのマッピング](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
 ## <a name="related-topics"></a>関連トピック
 
-[見込顧客の現金化](prospect-to-cash.md)
+[見込顧客を現金化](prospect-to-cash.md)
 
 [Supply Chain Management の顧客への Sales の勘定の直接同期](accounts-template-mapping-direct.md)
 
@@ -121,6 +124,3 @@ Sales では、新しい **外部管理** フィールドが製品に追加さ�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

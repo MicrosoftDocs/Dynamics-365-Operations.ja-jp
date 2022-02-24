@@ -2,9 +2,11 @@
 title: クラウド環境へ更新プログラムを適用
 description: このトピックでは、Lifecycle Services (LCS) を使用して、バイナリ更新プログラムまたはアプリケーション (AOT) 展開可能なパッケージをクラウド環境に適用する方法について説明します。
 author: laneswenka
-ms.date: 06/08/2021
+manager: AnnBe
+ms.date: 11/06/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7063efc41e5ba5f3f1aec23b728e7b21661ccff6d108f573c2aa956e19f31b5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1c35dea8a3740ec12d2bdc4dc95b218c014a37ad
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752323"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680548"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 
@@ -30,14 +32,14 @@ ms.locfileid: "6752323"
 > 展開可能なパッケージを使用して更新が適用されます。 更新プログラムを適用するとシステムのダウンタイムが発生します。 すべて関連するサービスを停止、およびパッケージを適用中のときには環境を使用できなくなります。 それに応じた計画を立てる必要があります。
 
 ## <a name="supported-environments"></a>サポートされる環境
-Lifecycle Services を介して配置された顧客管理環境および Microsoft 管理環境はすべてサポートされます。 セルフサービス環境の詳細については、[環境の更新](updateenvironment-newinfrastructure.md) を参照してください。
+Lifecycle Services を使用して配置されるすべての環境がサポートされます。 
 
 > [!NOTE]
 > ビルド環境があれば、LCS のみを使用してバイナリ更新プログラムとデータ アップグレード パッケージを適用します。 LCS を使用してアプリケーション配置可能パッケージを適用することはできません。
 
 他の環境 (以下の一覧) については、リモート デスクトップ プロトコル (RDP) を使用して環境に接続し、コマンドラインからインストールする必要があります。 手動のパッケージ配置の詳細については、[コマンド ラインからの配置可能パッケージのインストール](install-deployable-package.md) を参照してください。
 
-- ローカルの開発環境 (仮想ハード ディスク [VHD] からダウンロード可能)
+- ローカルの開発環境 (バーチャル ハード ディスク [VHD] からダウンロード可能)
 - Microsoft Azure (パートナーおよび試用プロジェクト) でのマルチボックス開発/テスト環境
 
 ## <a name="key-concepts"></a>重要な概念
@@ -70,12 +72,9 @@ Lifecycle Services を介して配置された顧客管理環境および Micros
 
 - **実稼動環境でパッケージを適用する前に、パッケージがサンド ボックス環境に適用されていることを確認してください。** 実稼働環境が常に良好な状態に保たれるように、実稼働環境に適用される前にパッケージがサンドボックス環境でテストされていることを確認する必要があります。 したがって、パッケージが実稼働環境で適用されるように要求する前に、自動フローを使用してパッケージがサンドボックス環境に適用されていることを確認してください。
 - **複数のパッケージを適用する場合は、マージ済パッケージを作成します。このパッケージは、まずサンドボックス環境で、次に実稼働環境で適用できます。** 平均環境で単一パッケージのアプリケーションは、約 5 時間のダウンタイムが必要です。 複数のパッケージを適用する必要がある場合にダウンタイムが発生しないように、各タイプのパッケージを 1 つずつ含む単一のパッケージを作成することができます。 資産ライブラリでバイナリ パッケージとアプリケーション配置可能パッケージを選択した場合、**マージ** ボタンは、ツールバー上で利用可能になります。 このボタンをクリックすると、2 つのパッケージを単一のパッケージにマージできるため、合計のダウンタイムを半分に減らすことができます。
-- **サンドボックスおよび運用環境に適用した後、アプリケーション バイナリ更新パッケージが開発/ビルド環境に適用されていることを確認してください** - アプリケーション バイナリ パッケージが開発/ビルド環境に適用され、プラットフォーム ビルド バージョンがターゲット サンドボックスまたは運用環境よりも高くなると、この開発/ビルド環境から作成された AOT パッケージの適用がブロックされます。 開発/ビルド環境から生成された AOT パッケージを適用するには、開発/ビルド インスタンスがターゲット環境と同じか、それ以下である必要があります。
+- **サンド ボックスと製造環境に適用する前に、アプリケーション バイナリ更新プログラムのパッケージが開発/ビルド環境に適用されていることを確認してください** - アプリケーション バイナリ パッケージが階層 2+ サンドボックス環境に直接適用されているが、開発/ビルド環境に適用されてない場合、次に AOT パッケージを開発/ビルド ボックス (サンドボックス環境と同じアプリケーション バイナリを持たない) からサンド ボックスに移動すると、アプリケーション バイナリの一部は開発/ビルド環境で上書きされます。 これにより、サンドボックス環境のバージョンが後退する可能性があります。 
 
 ## <a name="apply-a-package-to-a-non-production-environment-by-using-lcs"></a>LCS を使用して非運用環境にパッケージを適用します
-
-> [!NOTE]
-> セルフサービス タイプ環境の詳細については、[環境の更新](updateenvironment-newinfrastructure.md) を参照してください。
 
 開始する前に、配置可能パッケージが LCS のアセット ライブラリにアップロードされていることを確認します。
 
@@ -88,7 +87,7 @@ Lifecycle Services を介して配置された顧客管理環境および Micros
 
 ## <a name="apply-a-package-to-a-production-environment-by-using-lcs"></a>LCS を使用して運用環境にパッケージを適用します
 
-実稼働環境では、顧客は更新を適用する必要があるときのダウンタイムをスケジュールできます。 セルフサービス タイプ環境の詳細については、[環境の更新](updateenvironment-newinfrastructure.md) を参照してください。  
+実稼働環境では、顧客は更新を適用する必要があるときのダウンタイムをスケジュールできます。  
 
 > [!IMPORTANT]
 > パッケージを実稼働環境に適用するための重要な前提条件は、同じプロジェクトの少なくとも 1 つのサンドボックス環境にパッケージを正常に適用する必要があることです。 
@@ -109,13 +108,13 @@ Lifecycle Services を介して配置された顧客管理環境および Micros
 
 ## <a name="troubleshoot-package-deployment-failures"></a>パッケージ配置失敗のトラブルシューティング
 
-パッケージの配置に失敗した場合は [パッケージ アプリケーションに関する問題のトラブルシューティング](deployable-package-troubleshooting.md) を参照してください。
+パッケージの配置に失敗した場合は [パッケージ アプリケーションに関する問題のトラブルシューティング](deployable-package-troubleshooting.md) のトピックを参照してください。
 
 ## <a name="applying-updates-and-extensions"></a>更新と拡張機能の適用
 
 アプリケーション バージョン 8.1.2.x 以降でレベル 2 サンドボックスまたは運用環境を更新し、Cloud Scale Unit を初期化した場合は、コマース チャネル コンポーネントも更新する必要があります。 詳細については、[Retail Cloud Scale Unit の更新](Update-retail-channel.md) を参照してください。
 
-コンポーネント (Modern POS など) を使用している場合、環境内で更新プログラムと拡張機能を適用した後に、店舗内コンポーネントも更新する必要があります。 詳細については、[Modern POS (MPOS) の構成、インストール、有効化](../../../commerce/retail-modern-pos-device-activation.md) を参照してください。
+コンポーネント (Modern POS など) を使用している場合、環境内で更新プログラムと拡張機能を適用した後に、店舗内コンポーネントも更新する必要があります。 詳細については、[Modern POS (MPOS) の構成、インストール、有効化](../../../retail/retail-modern-pos-device-activation.md) を参照してください。
 
 ## <a name="packages-runbooks-and-the-axupdateinstaller-in-depth"></a>パッケージ、Runbook、および AXUpdateInstaller の詳細
 
@@ -123,17 +122,14 @@ Lifecycle Services を介して配置された顧客管理環境および Micros
 
 **配置可能パッケージ** - 配置可能パッケージとは、環境に適用できる配置の単位です。 デプロイ可能なパッケージは、プラットフォームまたは他のランタイム コンポーネント、更新されたアプリケーション (AOT) パッケージ、または新しいアプリケーション (AOT) パッケージのバイナリ更新です。 LCS からダウンロードした、または開発環境で作成した配置可能なパッケージは、製品タイプ間では適用できません。 たとえば、Finance の展開可能なパッケージはコマース アプリ環境に適用することができず、その逆も同様です。 コマース アプリと互換性のある Finance and Operations アプリの既存のカスタマイズを持ち、それをコマース 環境に適用する場合、コマース 開発環境でソース コードを再パッケージする必要があり、逆の方向に移動させている場合は逆コンパイルする必要があります。   
 
-[![配置可能なパッケージの例。](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
+[![配置可能なパッケージの例](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 
 **Runbook** – 展開 runbook は展開可能なパッケージを対象となる環境に適用させるために生成される一連の手順です。 一部のステップは自動化され、一部のステップは手動です。 AXUpdateInstaller は、これらの手順を一度に 1 つずつ正しい順序で実行できます。
 
-[![展開 runbook の例。](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
+[![展開 runbook の例](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
 
 **AXUpdateInstaller** - Microsoft Visual Studio または Microsoft バイナリ更新プログラムからカスタマイズ パッケージを作成すると、インストーラの実行可能ファイルが配置可能パッケージと共にバンドルされます。 インストーラーは、指定したトポロジの Runbook を生成します。 インストーラーは、特定のトポロジの Runbook に従って、手順を順番に実行することもできます。
 
 ## <a name="additional-resources"></a>その他のリソース
 
 [配置可能なパッケージのコマンドラインからのインストール](install-deployable-package.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,30 +2,34 @@
 title: Azure Pipelines で LCS 接続を作成する
 description: このトピックでは、Azure DevOps から Microsoft Dynamics Lifecycle Services (LCS) への接続を設定する方法について説明します。
 author: jorisdg
+manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a26c1eed4b6840d650061f31e79abe729efaa69
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 10d8f69faf7a85d8695e0fc65a337c7290aecd1f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782938"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408988"
 ---
 # <a name="create-an-lcs-connection-in-azure-pipelines"></a>Azure Pipelines で LCS 接続を作成する
 
-Microsoft Azure DevOps の [Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) 拡張機能には、Microsoft Dynamics Lifecycle Services (LCS) でアクションを実行できるパイプライン タスクがいくつか用意されています。 たとえば、資産のアップロード、資産のダウンロード、および環境のサービスを行うことができます。 LCS を正常に機能させるには、Azure DevOps で新しいサービス接続を設定する必要があります。 このサービス接続は、LCS に接続するために必要な認証の詳細を提供します。 Azure DevOps のサービス接続の詳細については、[サービス接続](/azure/devops/pipelines/library/service-endpoints) を参照してください。
+Microsoft Azure DevOps の [Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) 拡張機能には、Microsoft Dynamics Lifecycle Services (LCS) でアクションを実行できるパイプライン タスクがいくつか用意されています。 たとえば、資産のアップロード、資産のダウンロード、および環境のサービスを行うことができます。 LCS を正常に機能させるには、Azure DevOps で新しいサービス接続を設定する必要があります。 このサービス接続は、LCS に接続するために必要な認証の詳細を提供します。 Azure DevOps のサービス接続の詳細については、[サービス接続](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints) を参照してください。
 
-このトピックは、[Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を持っていることを前提としています。
+このトピックは、[Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started) の実用的な知識を持っていることを前提としています。
 
 > [!NOTE]
-> これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](/azure/devops/marketplace/install-extension)を参照してください。
+> これらのステップをパイプラインに追加するには、[Dynamics 365 Finance and Operations ツール](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)拡張機能が有効になっていて、Azure DevOps アカウントで Azure DevOps が有効化およびインストールされている必要があります。 組織に拡張機能をインストールする方法の詳細については、[拡張機能のインストール](https://docs.microsoft.com/azure/devops/marketplace/install-extension)を参照してください。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -36,28 +40,22 @@ Azure DevOps から対話する 1 つ以上の LCS プロジェクトへのア�
 
 ユーザーの代わりに Azure DevOps から LCS に直接接続できるようにするには、Azure Active Directory (Azure AD) にアプリケーションを登録する必要があります。
 
-1. [クイックスタート: Microsoft ID プラットフォームにアプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app) の指示に従い、新しいリダイレクト URI を追加します。
+1. [クイックスタート: Microsoft ID プラットフォームにアプリケーションを登録する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) の指示に従い、新しいリダイレクト URI を追加します。
 
     1. **パブリック クライアント/ネイティブ (モバイル & デスクトップ)** を選択します。
     2. `http://localhost` などの有効な URI を入力します。
 
-2. LCS web Api にアクセスするためのアクセス許可をアプリケーション登録に追加します。 [Web API にアクセスするためのアクセス許可の追加](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) の手順に従ってください。 API のアクセス許可を要求する場合は、**自分の組織で使用する API** を選択し、**Dynamics Lifecycle Services** を検索します。
-3. 使用するアカウントに、Azure AD でのアプリケーション登録に対して同意が付与されていることを確認します。 [Azure Active Directory でエンドユーザーがアプリケーションに対して同意する方法を構成する](/azure/active-directory/manage-apps/configure-user-consent) の指示に従います。 特定のユーザーを有効にするか、テナント全体に対して管理者の同意を付与する ことができます。
-4. パブリック クライアント アプリケーションとして登録を構成します。
-    1. Azure ポータルで、**アプリの登録** でアプリを選択してから、**認証** を選択します。
-    2. **詳細設定** > **パブリック クライアント フローを許可する** > **次のモバイル およびデスクトップ フローを有効にする:** で、**はい** を選択します。
+2. LCS web Api にアクセスするためのアクセス許可をアプリケーション登録に追加します。 [Web API にアクセスするためのアクセス許可の追加](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) の手順に従ってください。 API のアクセス許可を要求する場合は、**自分の組織で使用する API** を選択し、**Dynamics Lifecycle Services** を検索します。
+3. 使用するアカウントに、Azure AD でのアプリケーション登録に対して同意が付与されていることを確認します。 [Azure Active Directory でエンドユーザーがアプリケーションに対して同意する方法を構成する](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-user-consent) の指示に従います。 特定のユーザーを有効にするか、テナント全体に対して管理者の同意を付与する ことができます。
 
 ## <a name="create-the-dynamics-lifecycle-services-service-connection"></a>Dynamics Lifecycle Services (LCS) へのサービス接続を作成する
 
-パイプライン タスクから直接、またはプロジェクト設定ページから、新しいサービス接続を作成することができます。 サービス接続を作成する方法の詳細については、[サービス接続の作成](/azure/devops/pipelines/library/service-endpoints#create-a-service-connection) を参照してください。 **Dynamics Lifecycle Services** へのサービス接続のダイアログ ボックスで、次の情報が提供されます。
+パイプライン タスクから直接、またはプロジェクト設定ページから、新しいサービス接続を作成することができます。 サービス接続を作成する方法の詳細については、[サービス接続の作成](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints#create-a-service-connection) を参照してください。 **Dynamics Lifecycle Services** へのサービス接続のダイアログ ボックスで、次の情報が提供されます。
 
-- **認証エンドポイント** – 規定値は Azure クラウドのすべての Azure AD テナントで機能します。 Azure AD が国内クラウドにある場合は、[国内クラウド](/azure/active-directory/develop/authentication-national-cloud) を参照して、正しい認証エンドポイントを検索します。
+- **認証エンドポイント** – 規定値は Azure クラウドのすべての Azure AD テナントで機能します。 Azure AD が国内クラウドにある場合は、[国内クラウド](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud) を参照して、正しい認証エンドポイントを検索します。
 - **Lifecycle Services API エンドポイント** – エンドポイントを提供します。
 - **ユーザー名** – ユーザー資格情報の電子メール エイリアスを提供します。
 - **パスワード** – ユーザー資格情報のパスワードを提供します。
 - **アプリケーション (クライアント) ID** – Azure AD でのアプリケーション登録用に以前に作成した ID を提供します。
 - **サービス接続名** – 接続に意味のある名前を提供します。 この名前は、LCS 接続を必要とするパイプライン タスクの接続フィールドで表示されます。
 - **説明** – この接続のオプションの説明を提供します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

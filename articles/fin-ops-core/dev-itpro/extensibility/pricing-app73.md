@@ -2,24 +2,26 @@
 title: 価格と割引の拡張性
 description: このトピックでは、価格設定機能を展開する方法を説明します。
 author: smithanataraj
+manager: AnnBe
 ms.date: 12/21/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: d951168c4b369592157e9a1308c38f372b10adff
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 373f1850ff27181cdcccf09dad7be5847c066200
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783018"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409488"
 ---
 # <a name="price-and-discount-extensibility"></a>価格と割引の拡張性
 
@@ -36,7 +38,7 @@ Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 以�
 
 次の図は、実装を強調表示しています。 メソッドはサブクラスを 1 つだけ示すことに注意してください。 実装は、各サブクラスにする必要があります。 
 
-![PriceGroupTypeTradeAgreementMapping.](media/PricingFall20171.png)
+![PriceGroupTypeTradeAgreementMapping](media/PricingFall20171.png)
 
 ## <a name="pricedisc-class"></a>PriceDisc クラス
 
@@ -46,17 +48,17 @@ Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 以�
 
 次の図では、どのように **PriceDisc** クラスを拡張して、既存の検索を変更したり、拡張された **PriceType** 列挙値に対応する新しい検索メソッドを追加したりできるかを確認できます。
 
-![PriceDiscClass.](media/PricingFall20172.png)
+![PriceDiscClass](media/PricingFall20172.png)
 
 ## <a name="add-a-new-price-search"></a>新しい価格検索の追加
 
 このシナリオでは、**PriceGroupType** 列挙を新しい値 **PriceGroupTypeISVExtension**、および 2 つの対応する **PriceType** 列挙値である **ISVPurchPriceType** と **ISVSalesPriceType** で拡張しました。 
 
-![WalkThrough1.](media/PricingFall20173.png)
+![WalkThrough1](media/PricingFall20173.png)
 
 次の図は、**PriceType** 値および **PriceGroupType** 値に対して新しい価格検索を追加する方法を示しています
 
-![WalkThrough2.](media/PricingFall20174.png)
+![WalkThrough2](media/PricingFall20174.png)
 
 以下に例を示します。
 
@@ -65,6 +67,3 @@ Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 以�
 - **PriceDiscParameters** クラスを拡張して価格割引検索の汎用パラメータを追加します。
 - **PriceDisc** クラスを拡張して新しい価格タイプの新しい価格割引検索メソッドを作成します。
 - **PriceDiscParameters** には、価格と割引の検索に関連するすべてのクラスからアクセスでき、これらは要件に基づいて拡張できます。 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

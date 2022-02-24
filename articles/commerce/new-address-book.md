@@ -1,31 +1,37 @@
 ---
-title: 新しいアドレス帳の作成
+title: アドレス帳の新規作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce でアドレス帳を新規作成する方法について説明します。
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f28e9d301b0a3c30f903ccc32e785ae09f0d702f3625f5febe03817ba44046ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4fe97e3e2f8265c1dc67a4052f45125b693c7218
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729857"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413632"
 ---
 # <a name="create-new-address-book"></a>新しいアドレス帳の作成
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でアドレス帳を新規作成する方法について説明します。
+
+## <a name="overview"></a>概要
 
 Commerce では、顧客リストやチャネルの従業員リストを保存するなど、さまざまな理由でアドレス帳が使用されます。 アドレス帳は、単一のチャネルで使用したり、チャネル間で共有したりできます。
 
@@ -40,7 +46,7 @@ Commerce では、顧客リストやチャネルの従業員リストを保存�
 
 次の図は、小売店舗の従業員アドレス帳の作成を示しています。
 
-![従業員のアドレス帳の例。](media/address-books.png)
+![従業員のアドレス帳の例](media/address-books.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -51,6 +57,3 @@ Commerce では、顧客リストやチャネルの従業員リストを保存�
 [画面レイアウトの概要](pos-screen-layouts.md)       
 
 [Retail Hardware Station のコンフィギュレーションおよびインストール](retail-hardware-station-configuration-installation.md)  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

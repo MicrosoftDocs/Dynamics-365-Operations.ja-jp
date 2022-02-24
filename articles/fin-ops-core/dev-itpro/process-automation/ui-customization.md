@@ -2,23 +2,25 @@
 title: ユーザー インターフェイスのカスタマイズ
 description: このトピックでは、プロセス自動化フレームワークを使用して、ユーザー インターフェースをカスタマイズする方法について説明します。
 author: RyanCCarlson2
+manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ea0577a745512dbe6a53e397ef45765df47c642
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2a0b296e7e4926604edc488e4610bdcbdcd876cd
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783008"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679220"
 ---
 # <a name="customize-the-user-interface"></a>ユーザー インターフェイスのカスタマイズ
 
@@ -40,7 +42,7 @@ ms.locfileid: "7783008"
 
 **ProcessScheduleOccurrenceCard** クラスを使用すると、カレンダー表示に表示されるオカレンス カードの外観をカスタマイズできます。 最初の 2 行はプロセス自動化フレームワークによって制御されており、変更することはできません。 次の図では、サブヘッダーは **完了した** フェーズで、ステータス メッセージは **完了** という言葉の背景が青色であることを示しています。
 
-![ステータスと時間を表示する既定のオカレンス カード。](media/uptake-schedule.png)
+![ステータスと時間を表示する既定のオカレンス カード](media/uptake-schedule.png)
 
 | メソッド | 説明 |
 |---|---|
@@ -198,6 +200,3 @@ public final class ProcessExecutionSampleUptakeExecutionResultsController implem
 | メソッド | 説明 |
 |---|---|
 | `public static ProcessExecutionMessageLogContract newForSourceRecord(ProcessScheduleTypeName _typeName, RefTableId _refTableId, RefRecId _refRecId, guid _executionId = emptyGuid())` | このメソッドは、指定された型名、**RefTableld** 値、および **RefRecld** 値を使用して契約を初期化します。 **ProcessExecutionSourceLink** テーブルには一致するレコ―ドが存在している必要があります。 バックグラウンド プロセスには、複数の実行 ID が割り当てられます。 したがって、実行 ID の省略可能なパラメーターをバックグラウンド処理用に提供する必要があります。 詳細については、[タイプ登録](type-registration.md) を参照してください。 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

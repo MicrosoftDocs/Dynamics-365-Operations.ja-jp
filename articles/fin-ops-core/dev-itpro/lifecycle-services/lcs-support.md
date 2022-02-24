@@ -1,10 +1,12 @@
 ---
-title: 財務と運用アプリまたは Lifecycle Services (LCS) のサポートの入手
-description: このトピックでは、財務と運用アプリまたは Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。
+title: Finance and Operations アプリまたは Lifecycle Services (LCS) に関するサポートを受ける
+description: このトピックでは、Finance and Operations アプリまたは Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。
 author: EricMoos
-ms.date: 08/02/2021
+manager: AnnBe
+ms.date: 09/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro, Developer, Application user
 ms.reviewer: sericks
@@ -14,21 +16,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e697c574efb0b04db6cb04d01c41066a0ac3974
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2ec326f2df53ee465b5a75b4f3c24ed914b28551
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068037"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679995"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>財務と運用アプリまたは Lifecycle Services (LCS) のサポートの入手
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations アプリまたは Lifecycle Services (LCS) に関するサポートを受ける
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-2.md)]
-
-このトピックでは、財務と運用アプリまたは Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。 
+このトピックでは、Finance and Operations アプリまたは Microsoft Dynamics Lifecycle Services (LCS) のヘルプを入手する方法について説明します。 
 
 <table>
 <thead>
@@ -51,7 +50,7 @@ ms.locfileid: "8068037"
 <td><a href="https://lcs.dynamics.com/">LCS</a> で <strong>問題検索</strong> ツールを使用して、Microsoft サポート技術情報 (KB) の記事、修正プログラム、および 報告された問題の回避策をすぐに検索します。 特定の機能領域でどの報告された問題が修正処理中か、どの問題がすでに修正済みかを確認できます。 詳細については、<a href="issue-search-lcs.md">問題検索 (Lifecycle Services, LCS)</a> を参照してください。</td>
 </tr>
 <tr>
-<td>財務と運用アプリでサポートを利用する。</td>
+<td>アプリ内のサポートを取得します。</td>
 <td>アプリの右上隅にある <strong>ヘルプ</strong> ボタン (<strong>?</strong>) を選択し、<strong>サポート</strong> を選択します。 問題は LCS の <strong>アクティブな問題</strong> タブで報告されます。 そこで、管理者は社内サポートを提供するか、Microsoft に問題を送信するかを決定できます。</td>
 </tr>
 <tr>
@@ -69,6 +68,3 @@ ms.locfileid: "8068037"
 </tr>
 </tbody>
 </table>
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

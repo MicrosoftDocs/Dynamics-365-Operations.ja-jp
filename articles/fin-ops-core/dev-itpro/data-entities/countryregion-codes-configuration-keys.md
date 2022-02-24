@@ -1,32 +1,31 @@
 ---
 title: 国/地域コードとコンフィギュレーション キー
 description: この記事では、構成キーと国/地域の両方の実装の観点から適用できるシナリオを説明します。
-author: peakerbl
+author: Sunil-Garg
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 4644
 ms.assetid: 86eda511-b1a6-46d2-bd0f-f9991b727f1a
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3fe63cf0102754267041d2f2835972498dfe6878
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9ecddca62a092729ce38947275e561d3679f59ba
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070079"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679362"
 ---
 # <a name="countryregion-codes-and-configuration-keys"></a>国/地域コードとコンフィギュレーション キー
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 この記事では、構成キーと国/地域の両方の実装の観点から適用できるシナリオを説明します。
 
@@ -109,5 +108,3 @@ Entity E1
 
 |_F4 (UK inferred)
 ```
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

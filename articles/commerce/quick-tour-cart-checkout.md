@@ -2,30 +2,35 @@
 title: 買い物カゴと清算ページの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce の買い物カゴとチェックアウト ページの概要を示します。
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982971"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413859"
 ---
-# <a name="cart-and-checkout-pages-overview"></a>買い物カゴとチェック アウト ページの概要
+# <a name="cart-and-checkout-pages-overview"></a>買い物カゴと清算ページの概要
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の買い物カゴとチェックアウト ページの概要を示します。
+
+## <a name="overview"></a>概要
 
 E コマース Web サイトの買い物カゴのページには、顧客が買い物カゴに追加したすべての品目が表示されます。 買い物カゴのページは、買い物カゴ モジュールを使用して構築されます。 カート モジュールは、カートにある品目を紹介するのに必要なすべてのモジュールをホストするコンテナーです。 また、買い物カゴ モジュールは他のモジュールを使用して、注文集計および顧客注文に適用されたプロモーション コードも表示します。
 
@@ -37,7 +42,7 @@ E コマース Web サイトのチェックアウト ページには、顧客が
 
 以下の図は、モジュール ライブラリおよび 「Fabrikam」 のテーマを使用してビルドされた買い物カゴのページの例を示します。
 
-![買い物カゴのページの例。](./media/cart2.PNG)
+![買い物カゴのページの例](./media/cart2.PNG)
 
 買い物カゴ ページの本文には、顧客が買い物カゴに追加したすべての品目が表示されます。 適用できる割引すべてが表示されます。 これらの割引には、複雑な割引が含まれます。 例には、「3 つの品目を購入し、10% の割引」 または「ボトル 1 本とリュックサックを購入し、10% の割引」が含まれます。 注文集計モジュールは、割引、出荷、税などが適用された後の金額を表示します。 また、プロモーション コード モジュールにより、プロモーション コードの適用または削除ができます。
 
@@ -53,7 +58,7 @@ E コマース Web サイトのチェックアウト ページには、顧客が
 
 以下の図は、モジュール ライブラリを使用してビルドされたチェックアウト ページの例を示します。
 
-![チェックアウト ページの例。](./media/Checkout.PNG)
+![チェックアウト ページの例](./media/Checkout.PNG)
 
 チェックアウト ページの本文では、すべての注文情報が収集されます。 この情報には、出荷先住所、出荷オプション、および支払情報が含まれます。 処理する特定の注文に情報を入力する必要があるため、チェックアウトにはステップバイステップ フローがあります。 たとえば、出荷コストを計算して支払を承認できるようにするために、出荷先住所を入力する必要があります。
 
@@ -83,7 +88,7 @@ E コマース Web サイトのチェックアウト ページには、顧客が
 
 ### <a name="order-summary"></a>注文集計
 
-チェックアウトには、注文を行う前に検証できるように、買い物カゴ内の品目の集計が表示されます。 チェックアウト フロー中は、明細行品目を編集できません。 ただし、ユーザーが戻って明細行品目を編集したい場合のために買い物カゴへのリンクが提供されます。
+チェックアウトには、顧客が注文を行う前に検証できるように、買い物カゴ内の品目の集計が表示されます。 チェックアウト フロー中は、明細行品目を編集できません。 ただし、ユーザーが戻って明細行品目を編集したい場合のために買い物カゴへのリンクが提供されます。
 
 顧客が出荷および請求書作成情報を提供した後、注文集計には、ロイヤルティ ポイント、ギフト カード、および他の支払が適用された後の金額が反映されます。
 
@@ -102,6 +107,3 @@ E コマース Web サイトのチェックアウト ページには、顧客が
 [製品詳細ページの概要](quick-tour-pdp.md)
 
 [アカウント管理ページの概要](quick-tour-account-management.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

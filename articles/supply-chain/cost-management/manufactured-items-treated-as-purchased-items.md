@@ -1,10 +1,12 @@
 ---
 title: 生産または調達する製品を設定する
 description: 製品はさまざまな方法で提供できます。製品は生産 (製造) または調達 (購買) できます。 この記事は、複数の調達をサポートするために、製品の構成時に考慮する一般的な点について説明します。
-author: AndersGirke
+author: cvocph
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 21841
 ms.assetid: acc608b7-2cad-4fba-afee-9b7cc93761ec
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 344a022561fa425747e7674bd600c65d70229557
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7acf4952c1dbb33f4ec615d1ecb9d508a9e7b980
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568234"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967511"
 ---
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>生産または調達する製品を設定する
 
@@ -39,6 +41,3 @@ ms.locfileid: "7568234"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,43 +1,41 @@
 ---
 title: Power Apps 管理センターで環境を作成できない
-description: このトピックでは、管理者が Microsoft Power Apps 管理者センターで環境を作成することができない場合の対処方法について説明します。
-author: twheeloc
-ms.date: 08/19/2021
+description: この記事では、管理者が Microsoft Power Apps 管理者センターで環境を作成することができない場合の対処方法について説明します。
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 937b372fa95c8076666aed14c2b34b12e8029c4d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 68e6dbcbbc9811211570e968047f5faa8a2c8bd0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067707"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419349"
 ---
 # <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a>Power Apps 管理センターで環境を作成できない
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **問題点**
 
 - テナント/環境の管理者が Microsoft Power Apps 管理者センターで環境を作成することができません。
-- ユーザーは、環境を作る権限を付与するライセンスを持っていません。
+- 環境の作成手順を実行する権限をユーザーに提供するライセンスは、その手順を実行しているユーザーに直接割り当てられていません。
 
 **ソリューション**
 
-テナント管理者が、環境を作成するユーザーに有効な Power Apps P2 ライセンスを割り当てている必要があります。 次の Microsoft Dynamics サービス 計画では、環境を作成するアクセス許可が提供されます。
+テナント管理者が、環境の作成手順を実行するユーザーに、有効な Power Apps P2 ライセンスを直接割り当てていることを確認します。 その権限を提供する Microsoft Dynamics サービス プランは次のとおりです。
 
-| 全体の製品の最小管理単位 (SKU)       | Power Apps P2 サービス計画  |
+| 全体の最小在庫管理単位 (SKU)       | Power Apps P2 サービス計画  |
 |------------------------------------------------|----------------------------|
 | Microsoft Dynamics 365 for Operations          | Power Apps for Dynamics 365 |
 | Microsoft Dynamics 365 Plan Enterprise Edition | Power Apps for Dynamics 365 |
@@ -45,7 +43,4 @@ ms.locfileid: "8067707"
 さまざまな Microsoft Office SKU も、スタンドアロンの Power Apps プラン 2 SKU と一緒にこの権利を提供することに注意してください。 重要な点は、これらの SKU のいずれかが必要であることです。
 
 1. [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments) に移動します。
-2. 次の手順に従って、環境を作成します [人事管理のプロビジョニング](/dynamics365/unified-operations/talent/provisioning-talent)。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+2. 次の手順に従って、環境を作成します [人事管理のプロビジョニング](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent)。

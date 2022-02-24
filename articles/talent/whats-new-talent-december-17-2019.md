@@ -56,6 +56,3 @@ ms.locfileid: "4461709"
 ### <a name="current-balance-report-in-leave-pbi-doubles-employee-balance-385581"></a>休暇 PBI の現在の残高レポートが従業員の残高の 2 倍になる (385581)
 
 この変更により、このシナリオの現在の残高レポートが修正されます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

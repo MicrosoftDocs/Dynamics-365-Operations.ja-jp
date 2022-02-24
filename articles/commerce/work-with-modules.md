@@ -2,30 +2,35 @@
 title: モジュールで動作
 description: このトピックでは、Microsoft Dynamics 365 Commerce でモジュールを使用する時期と方法について説明します。
 author: phinneyridge
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 301eb6206fb9e02c3aa7d3c07cf368ba800a1ab9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728267"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413770"
 ---
 # <a name="work-with-modules"></a>モジュールで動作
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でモジュールを使用する時期と方法について説明します。
+
+## <a name="overview"></a>概要
 
 モジュールは、ページ構造を構成する論理構成要素であり、さまざまな目的と範囲があります。 一部のモジュールは上位レベルのコンテナーであり、その唯一の目的は、他のモジュール (子モジュール) を保持して整理することです。 単純なイメージ配置モジュールなど、その他のモジュールには、特定の目的があります。 カルーセル モジュールなど、その他のモジュールは、これら 2 つのカテゴリの間に含まれます。
 
@@ -53,7 +58,7 @@ ms.locfileid: "6728267"
 
 次の図は、モジュールが親コンテナー モジュール スロットの中でどのように入れ子になるかを示しています。
 
-![入れ子のモジュール。](../commerce/media/basic-module-nesting.png)
+![入れ子のモジュール](../commerce/media/basic-module-nesting.png)
 
 ## <a name="add-or-remove-modules"></a>モジュールの追加または削除
 
@@ -168,6 +173,3 @@ ms.locfileid: "6728267"
 
 [公開グループの作業](publish-groups.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

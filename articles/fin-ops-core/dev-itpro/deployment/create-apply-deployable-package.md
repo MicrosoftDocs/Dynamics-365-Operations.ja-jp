@@ -2,9 +2,11 @@
 title: モデルの配置可能パッケージを作成する
 description: このトピックでは、展開可能なパッケージを作成および適用するためのワークフローについて説明します。
 author: jorisdg
+manager: AnnBe
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f96b1840333bff9d33dc2f677a70a962963f6f2c82b96381520735dc14fb0465
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d8d5a8ab2461c182e42e0608cc668f82a559fab
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740928"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680546"
 ---
 # <a name="create-deployable-packages-of-models"></a>モデルの配置可能パッケージを作成する
 
@@ -33,7 +35,7 @@ AOT パッケージは、環境に適用することのできる、1 つまた�
 > [!NOTE]
 > 結合した AOT 配置可能パッケージを使用して、Commerce 用カスタム支払コネクタをパッケージ化する必要があります。 詳細については、[Service Fabric 配置でのアプリケーション エクスプローラー用支払パッケージの作成](../../../commerce/dev-itpro/payment-connector-package.md)を参照してください。
 
-![配置パッケージを作成および適用します。](./media/createandapplydeployablepackage.png)
+![配置パッケージの作成と適用](./media/createandapplydeployablepackage.png)
 
 > [!NOTE]
 > アプリケーション配置可能パッケージにはソース コードが含まれていません。
@@ -46,10 +48,10 @@ AOT パッケージは、環境に適用することのできる、1 つまた�
 開発環境では、開発とテストを完了した後で、次の手順に従って Visual Studio で配置可能パッケージを作成します。
 
 1.  Microsoft Visual Studio で、**Dynamics 365** &gt; **配置** &gt; **配置パッケージの作成** を選択します。
-![配置パッケージの作成。](./media/createdeploymentpackage-986x1024.png)
+![配置パッケージの作成](./media/createdeploymentpackage-986x1024.png)
 
 2.  モデルを含むパッケージを選択し、展開可能なパッケージを作成する場所を選択します。 
-![場所の選択。](./media/pack4.png)
+![場所の選択](./media/pack4.png)
 
 3.  配置可能パッケージが作成された後、Lifecycle Services にサインインし、LCS プロジェクトで、**資産ライブラリ** タイルをクリックします。
 
@@ -60,6 +62,3 @@ AOT パッケージは、環境に適用することのできる、1 つまた�
 
 ## <a name="remove-a-deployable-package"></a>配置可能パッケージの削除
 環境から配置可能パッケージをアンインストールしたり、削除したりするには、[パッケージ のアンインストール](uninstall-deployable-package.md)を参照してください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

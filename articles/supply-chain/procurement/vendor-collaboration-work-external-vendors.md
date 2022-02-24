@@ -1,10 +1,12 @@
 ---
 title: 外部仕入先との仕入先コラボレーション
 description: このトピックでは、購買担当者が外部仕入先とコラボレーションして、発注書および委託販売在庫に関する情報を交換する方法について説明します。
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3b679f8daed1e09c832a5d138473cccba03552f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576979"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016756"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>外部仕入先との仕入先コラボレーション
 
@@ -33,7 +35,7 @@ ms.locfileid: "7576979"
 > [!NOTE]
 > このトピックで仕入先コラボレーションへの適用に関する情報は、Supply Chain Management の現在のバージョンにのみ適用されます。 Microsoft Dynamics AX 7.0 (2016 年 2 月) および Microsoft Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) で、**仕入先ポータル** モジュールを使用して仕入先との共同作業を行います。 **仕入先ポータル** モジュールについては、「[仕入先ポータルを使用して別の仕入先とのコラボレーション](collaborate-vendors-vendor-portal.md)」を参照してください。
 
-仕入先が請求プロセスで仕入先コラボレーションを使用する方法の詳細については、「[仕入先コラボレーションの請求ワークスペース](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)」を参照してください。 新しい仕入先コラボレーション ユーザーをプロビジョニングする方法の詳細については、「[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)」を参照してください。
+仕入先が請求プロセスで仕入先コラボレーションを使用する方法の詳細については、「[仕入先コラボレーションの請求ワークスペース](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)」を参照してください。 新しい仕入先コラボレーション ユーザーをプロビジョニングする方法の詳細については、「[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)」を参照してください。
 
 ## <a name="defining-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>発注書に応答したときに仕入先に表示される情報を定義します
 
@@ -256,6 +258,3 @@ RFQ プロセスに対してパラメータを設定するユーザーは、複�
 - %createddate%
 
 RFQ を送信した後に修正が要求され送信される場合、招待されたすべての仕入先に RFQ が再送信されます。 **見積の公開済依頼を開く** ページで、公開されたドキュメントも更新されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

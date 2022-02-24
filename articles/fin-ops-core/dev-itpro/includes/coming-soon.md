@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6deb8fe233e9cae10a802b3d5070f64a97588b0012b132206c1bdd87f157dedf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a7b7a984f051df342f5b3036a0962fc2c9bfb88f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743919"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409104"
 ---
 > [!IMPORTANT]
 > このコンテンツは、現在使用できない機能について説明します。 機能や仕様は、変更されることがあります。

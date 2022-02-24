@@ -1,25 +1,27 @@
 ---
 title: 支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 description: このトピックでは、PA-DSS 認証の過去、現在、および保留中の一覧について説明します。
-author: BrianShook
-ms.date: 10/13/2021
+author: rapraj
+manager: AnnBe
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rapraj
 ms.search.validFrom: 2016-01-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 17e21084e54ef2488997f093db2ec04b23e26f4f
-ms.sourcegitcommit: b4d9f42c26f6dabdffee687671b254c901c54f1f
+ms.openlocfilehash: 3e440408e5036764f74e7140f4562e6edb5edfce
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7646756"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680404"
 ---
 # <a name="payment-application-data-security-standards-pa-dss-certification"></a>支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
 
@@ -28,33 +30,33 @@ ms.locfileid: "7646756"
 > [!IMPORTANT]
 > Microsoft Dynamics 365 のバージョンが実装されておらず、Microsoft がまだ DSS 証明を完了していない場合、小売業者の Payment Card Industry (PCI) 監査と認定に潜在的な影響がある可能性があります。 具体的には、支払アプリケーションが証明時のテストのスコープとなる可能性があるため、関連付けられていたバージョンの PA-DSS 証明書が完成するまで、PCI 認定がより難しくなり、関与が大きくなる可能性があります。
 
-このトピックでは、Microsoft Dynamics 365 の PA-DSS 認証の過去および現在の一覧について説明します。 現在の認定資格を表示するには、「[PCI PA-DSS 認定支払アプリケーション](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications)」を参照してください。
+このトピックでは、Microsoft Dynamics 365 の PA-DSS 認証の過去、現在、および保留中の一覧について説明します。 現在の認定資格を表示するには、「[PCI PA-DSS 認定支払アプリケーション](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications)」を参照してください。
 
-## <a name="current-certification"></a>現在の証明
-PA-DSS 実装ガイドは、次のテーブルの **バージョン** 列にリングされています。
-
-| リリース  | バージョン |
-| ----------------------------|---------------------- | 
-| Microsoft Dynamics 365 Commerce | [10.0.18](https://mbs2.microsoft.com/fileexchange/?fileID=e37f50d7-767b-47e2-a162-68dc88ee5a44) |
-| Microsoft Dynamics 365 Commerce | [10.0.12](https://download.microsoft.com/download/f/8/3/f83fbcf3-dc8b-46f8-a552-939300cb39b6/PA-DSS%20Implementation%20Guide%20for%20Microsoft%20Dynamics%20365%20Commerce%2010.0.12.pdf)  |
+使用できる PA-DSS 実装ガイドは、下記のテーブルの **バージョン** 列にリングされています。
 
 ## <a name="past-certification"></a>過去の証明書
 
-| リリース | バージョン  | 
-| ----------------------|-------- | 
-| Microsoft Dynamics 365 for Finance and Operations | 10.0  |
-| Microsoft Dynamics 365 for Retail | 2017 年 7 月 (7.2)  |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 2017 年 7 月 (7.2) |
-| Microsoft Dynamics 365 for Operations | 1611 (7.1)  |
-| Microsoft Dynamics AX | 7.0     |
-| Microsoft Dynamics AX | 2012 R3 |
+| リリース | バージョン  | ビルド  |
+| ----------------------|-------- | ----------- |
+| Microsoft Dynamics AX | 2012 R3  | 6.3 |
+| Microsoft Dynamics AX | 7        | 7.0  |
+| Microsoft Dynamics 365 for Operations | [1611](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/installation-setup-guides/PADSSImplementationguide365Operations) | 7.1  |
+
+## <a name="current-certification"></a>現在の証明
+
+| リリース  | バージョン | ビルド  |
+| ----------------------------|---------------------- | ----------- |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [2017 年 7 月 *](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide)  | 7.2 |
+| Microsoft Dynamics 365 for Retail | [2017 年 7 月](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide) | 7.2  |
+| Microsoft Dynamics 365 for Finance and Operations | [10.0](https://www.microsoft.com/download/details.aspx?id=101059) | 10.0 |
+
+\*このリンクの PDF ドキュメントは、Dynamics 365 for Retail (記載されている通り) *および* Dynamics 365 for Finance and Operations、Enterprise edition の両方に適用されます。
+
+## <a name="certification-in-progress"></a>進行中の証明書
+
+| リリース  | バージョン | ビルド |
+| ---------------------------|----------------------- | ----------- |
+| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 10.0.6| 10.0.6 |
+| Microsoft Dynamics 365 for Retail | 10.0.8| 10.0.8 |
 
 
-
-
-
-
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

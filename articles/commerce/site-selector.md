@@ -1,13 +1,16 @@
 ---
 title: サイト セレクター モジュール
-description: このトピックでは、サイト セレクター モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: このトピックでは、サイト セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
+manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: a5f6f6e3ff459447aa4b3c0058b5526c9e8d1038a5d2629eefbed197012aebf0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b4e5f715efcac7f883df99508d282db904be0d80
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772231"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665226"
 ---
 # <a name="site-selector-module"></a>サイト セレクター モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、サイト セレクター モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+このトピックでは、サイト セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+
+## <a name="overview"></a>概要
 
 市場、地域、およびロケールにまたがってサイトが異なる場合は、サイトのユーザーがサイト間を移動したり、使用する買い物サイトを選択したりするための簡単な方法が必要です。 このシナリオに対応するために、サイト選択モジュールを使用すると、ユーザーは複数のサイトにまたがって閲覧できます。
 
@@ -37,7 +42,7 @@ ms.locfileid: "6772231"
 
 次の図は、サイトページのヘッダーに記載されているサイト選択モジュールの例を示しています。
 
-![サイト ページのヘッダーにおけるサイト選択モジュールの例。](./media/ecommerce-sitepicker.PNG)
+![サイトページのヘッダーにおけるサイト選択モジュールの例](./media/ecommerce-sitepicker.PNG)
 
 ## <a name="site-selector-module-properties"></a>サイト セレクター モジュールのプロパティ
 
@@ -59,6 +64,3 @@ ms.locfileid: "6772231"
 [階層リンク モジュール](add-breadcrumb.md)
 
 [ナビゲーション メニュー モジュール](nav-menu-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

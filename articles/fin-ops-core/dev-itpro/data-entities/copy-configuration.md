@@ -1,35 +1,32 @@
 ---
 title: 企業または法人エンティティ間で行う設定データのコピーの概要
-description: このトピックでは、データ プロジェクトとデータ テンプレートを使用して、アプリのインスタンス間で企業または法人のコンフィギュレーション データを移動する方法について説明します。
-author: rcarlson
+description: このトピックでは、コンフィギュレーション データ プロジェクトとコンフィギュレーション データ テンプレートを使用して、Finance and Operations のインスタンス間で企業または法人のコンフィギュレーション データを移動する方法について説明します。
+author: mikefalkner
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom:
-- "77523"
-- intro-internal
+ms.custom: 77523
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
-ms.openlocfilehash: 4a28805aa8e7aab98f1bc621390331e39acc71cb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 1a72bb81b2f9a1cdccab434fc19660de94d82050
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066562"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679364"
 ---
 # <a name="copy-configuration-data-between-companies-or-legal-entities-overview"></a>企業または法人エンティティ間で行う設定データのコピーの概要
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-Finance and Operations 用の構成データをコピーするには、次の 2 つのオプションがあります。
+Finance and Operations では、コンフィギュレーション データをコピーするために 2 つのオプションがあります。
 
 - インスタンス間でデータを移動するには、最初にある会社からデータをエクスポートしてから、別の会社にインポートする必要があります。
 - データを同一インスタンス内のある法人から別の法人に移動するには、**法人にコピー** 機能を使用します。
@@ -87,7 +84,7 @@ Finance and Operations 用の構成データをコピーするには、次の 2 
 
 | 面 | エンティティ | アクション |
 |------|--------|--------|
-| システム設定 | グローバル アドレス帳 | エンティティは、会社の作成時に自動的に作成されるレコードをエクスポートしなくなりました。 インポート時にこれらのレコードは受け入れなくなりました。 |
+| システム設定 | グローバル アドレス帳 | エンティティは、会社の作成時に自動的に作成されるレコードをエクスポートしなくなりました。 インポートでは、プラットフォーム 9 リリース以降、これらのレコードも受け入れなくなりました。 |
 | GL 共有 | 勘定構造の有効なグループ | この複合エンティティは、アクティブな勘定構造のみをエクスポートおよびインポートします。 他の勘定構造エンティティを使用している場合、有効な勘定構造のステータスは **ドラフト** に変更されるため、使用可能になる前に有効化する必要があります。 |
 | | 詳細ルール構造の有効なグループ | この複合エンティティは、勘定構造アクティブ グループ エンティティと組み合わせて使用されます。 有効な詳細ルール構造のみをエクスポートおよびインポートします。 他の詳細なルール構造エンティティを使用している場合、詳細なルール構造のステータスは **ドラフト** に変更されるため、使用可能になる前に有効化する必要があります。 |
 | | 財務分析コード値 | すべての分析コード値がエクスポートされるには、基準となるシステム定義のエンティティはプロジェクトまたは顧客のような値になります。 インポートする前に、システム定義の値を削除します。 システム定義の値をパッケージに残したままにする場合は、インポートしません。 ただし、システム定義の分析コードをバックアップするデータをインポートする際、それらが満たされます。 |
@@ -343,6 +340,3 @@ Finance and Operations 用の構成データをコピーするには、次の 2 
 
 > [!NOTE]
 > 既定では、DAT 会社は国/地域のコンテキストを持っていません。 トランザクション コードおよび 1099 フィールドに使用されるエンティティなどの一部のエンティティは、国/地域コンテキストが必要なため、DAT 会社のデータ プロジェクトに追加された場合は正しくマッピングされません。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

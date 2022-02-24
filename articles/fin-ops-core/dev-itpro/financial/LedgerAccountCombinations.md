@@ -1,25 +1,27 @@
 ---
 title: 勘定科目の組み合せ
 description: このトピックでは、分析コードフレームワークにおける勘定科目の組み合わせに関する情報を提供します。
-author: RyanCCarlson2
+author: jasonsto
+manager: jdinham
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 11314
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
-ms.author: rcarlson
+ms.author: rbrow
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cada442d3039b6165aed125b00b7395cbf43974b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d4a7c1e5d877bdbe3062dceda42f0a68023bc705
+ms.sourcegitcommit: b19bbf8d5fc364045f6a1e5b0b7e20bcfc288d42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783016"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4707640"
 ---
 # <a name="ledger-account-combinations"></a>勘定科目の組み合せ
 
@@ -35,7 +37,7 @@ Microsoft Dynamics AX 2009では、分析コードの数が最小で3、最大10
 
 以下の図は、分析コードフレームワークを構成するさまざまな領域を示しています。
 
-[![フレームワーク分析コード。](./media/DimensionsFrameworkGraph.png)](./media/DimensionsFrameworkGraph.png)
+[![フレームワーク分析コード](./media/DimensionsFrameworkGraph.png)](./media/DimensionsFrameworkGraph.png)
 
 このトピックでは、上記の図で黄色で強調表示されている箇所 [分析コード]、[分析コード値]、[分類]、 [補助要素] について説明します。
 
@@ -47,11 +49,11 @@ Microsoft Dynamics AX 2009では、分析コードの数が最小で3、最大10
 
 以下の図では、 **財務分析コード** ページに2つの分析コードが表示されています。 顧客分析コードには、アプリケーションに既に存在する顧客が表示され、LicensePlate分析コードは新しいカスタムリストが表示されます。
 
-[![財務分析コード ページ。](./media/FinancialDimensions.png)](./media/FinancialDimensions.png)
+[![財務分析コード](./media/FinancialDimensions.png)](./media/FinancialDimensions.png)
 
 それぞれの分析コードは、DimensionAttributeテーブルに格納されています。 下図のSQLクエリは、各分析コードに関連付けられている基本情報の一部を表示しています。
 
-[![DimensionAttribute ストレージのクエリ結果。](./media/FinancialDimensionSQL.png)](./media/FinancialDimensionSQL.png)
+[![DimensionAttribute テーブルのクエリ結果](./media/FinancialDimensionSQL.png)](./media/FinancialDimensionSQL.png)
 
 **Type** の値は、分析コードがシステム上に存在しているエンティティと結びついているのか、もしくはカスタムリストと結びついているのかを表しています。 ただし、分析コード フレームワークは、CustTable のような既存エンティティのバッキング テーブルに対する直接参照は行いません。 その代わりに、システム上でエンティティを使用できるようにカスタムビューが作成されるため、それを分析コードフレームワークで使用できるるようになります。 初期設定では、36 の既存エンティティを分析コードとして使用できます。
 
@@ -67,15 +69,15 @@ Microsoft Dynamics AX 2009では、分析コードの数が最小で3、最大10
 
 以下の図は、CustTableが表示する値の一覧の例を示しています。 以下例では、分析コードフレームワークには値が格納されていません。
 
-[![財務分析コード値ページ (既存のリスト)。](./media/FinancialDimensionValuesForm.png)](./media/FinancialDimensionValuesForm.png)
+[![財務分析コード値ページ (既存のリスト)](./media/FinancialDimensionValuesForm.png)](./media/FinancialDimensionValuesForm.png)
 
 以下の図は、カスタムリストが表示する値の一覧の例を示しています。 以下例では、分析コードフレームワークには値が格納されています。
 
-[![財務分析コード ページ (カスタム リスト)。](./media/FinancialDimensionValuesFormCustom.png)](./media/FinancialDimensionValuesFormCustom.png)
+[![カスタム リストの財務分析コード (カスタムリスト)](./media/FinancialDimensionValuesFormCustom.png)](./media/FinancialDimensionValuesFormCustom.png)
 
 次の図は、上記図の分析コード設定テーブルから取得されたクエリの結果を示しています。
 
-[![分析コード設定テーブルのクエリ結果。](./media/DimensionSetupDataSQL.png)](./media/DimensionSetupDataSQL.png) 
+[![分析コード設定テーブルのクエリ結果](./media/DimensionSetupDataSQL.png)](./media/DimensionSetupDataSQL.png) 
 
 これらの例で、**財務分析コード値** ページには、エンティティに存在する値が表示されます。分析コード フレームワークで実際に使用された値ではありません。 これは、フレームワーク上でこれらの値が使用されるまでは分析コード フレームワークの値が作成されないためであり、バッキング値への参照を保持する必要があるためです。 そのため、まだ使用されていない値は削除できます。 この仕様により、ストレージサイズとパフォーマンスを最適化できます。
 
@@ -87,7 +89,7 @@ Microsoft Dynamics AX 2009では、分析コードの数が最小で3、最大10
 
 このトピックでは、下記の図で黄色で強調表示されている箇所 [分析コード一覧]、[デフォルト分析コード] について説明します。
 
-[![フレームワークの組み合わせ。](./media/SetsInFramework.png)](./media/SetsInFramework.png)
+[![フレームワークの組み合わせ](./media/SetsInFramework.png)](./media/SetsInFramework.png)
 
 分析コード一覧とデフォルト分析コードは、分析コードまたは分析コード値のいずれかへの参照のセットを格納するために使用されます。 一般的には、両方とも **顧客** (CustTable) や **仕入先** (VendTable) のようなプライマリ データ ページにある **財務分析コード** タブに表示されます。
 
@@ -99,15 +101,15 @@ Microsoft Dynamics AX 2009では、分析コードの数が最小で3、最大10
 
 以下の図は、ページ内における分析コード一覧の表示例を示しています。
 
-[![ページ内の分析コードの一覧。](./media/DimensionEnumerationsOnForm.png)](./media/DimensionEnumerationsOnForm.png) 
+[![ページ内の分析コードの一覧](./media/DimensionEnumerationsOnForm.png)](./media/DimensionEnumerationsOnForm.png) 
 
 上記例では、 **dimensionfixed** 一覧を使用して、ドロップダウンリストの値のリストを制約しています。
 
-[![分析コードの一覧 BaseEnum。](./media/DImensionEnumerationBaseEnum.png)](./media/DImensionEnumerationBaseEnum.png) 
+[![ディメンジョン一覧BaseEnum](./media/DImensionEnumerationBaseEnum.png)](./media/DImensionEnumerationBaseEnum.png) 
 
 選択された値は **EnumerationValue** (= **DimensionFixed::Fixed**) にて **1** と表示され、その他の値は **EnumerationValue** (= **DimensionFixed::NotFixed**) にて初期値 **0** として表示されます。 以下の図は、DimensionAttributeSetレコードがどのように格納されているかを示しています。
 
-[![分析コード一覧のストレージのクエリ結果。](./media/DimensionENumerationSQL.png)](./media/DimensionENumerationSQL.png) 
+[![格納された dimension enumeration クエリ結果](./media/DimensionENumerationSQL.png)](./media/DimensionENumerationSQL.png) 
 
 MainAccountLegalEntity のレコードは、 **FixedDimensions** 列を使用して fielddimensionattributeset のレコードを参照しています。 DimensionAttributeSet に格納されているレコードは、列挙型の分析コードの組み合わせを表しています。 DimensionAttributeSetItem のレコードは、分析コードに結びつくデータの組み合わせと、関連する列挙値を表します。 列挙値は、整数値で表示されます。
 
@@ -117,11 +119,11 @@ MainAccountLegalEntity のレコードは、 **FixedDimensions** 列を使用し
 
 以下の図は、ページ内における既定の分析コード例を表示しています。
 
-[![ページ内に表示される既定の分析コード。](./media/DefaultDimensionsOnForm.png)](./media/DefaultDimensionsOnForm.png)
+[![ページ内に表示される既定の分析コード](./media/DefaultDimensionsOnForm.png)](./media/DefaultDimensionsOnForm.png)
 
 上記の例では、ユーザーは分析コード値を選択し、それぞれの分析コードに関連付けています。 以下の図は、これらの値がDimensionAttributeValueSetとDimensionAttributeValueSetItem テーブルにどのように格納されているかを示しています。
 
-[![分析コード値テーブルのクエリ結果。](./media/DImensionValueTablesSQL.png)](./media/DImensionValueTablesSQL.png)
+[![分析コード値テーブルのクエリ結果](./media/DImensionValueTablesSQL.png)](./media/DImensionValueTablesSQL.png)
 
 MainAccountLegalEntity のレコードは、入力された値の組み合わせを表す DimensionAttributeValueSet テーブルへの外部キー参照を保持します。 具体的には、このテーブルは DimensionAttributeValueSetItemテーブルに格納されている分析コード値の一連の組み合わせを保持しています。
 
@@ -133,7 +135,7 @@ DimensionAttributeValueSetItem テーブルは、入力された分析コード�
 
 このトピックでは、下記の図で黄色で強調表示されている箇所 [構造] と [制約] について説明します。
 
-[![フレームワークの構造と制約。](./media/StructuresAndConstraintsInFramework.png)](./media/StructuresAndConstraintsInFramework.png)
+[![フレームワークの構造と制約](./media/StructuresAndConstraintsInFramework.png)](./media/StructuresAndConstraintsInFramework.png)
 
 前述のとおり、分析コード フレームワークでは、分析コードの数に制限がありません。 さらに、ユーザーが勘定科目の組み合わせを入力する際に、組み込む分析コードとその順序を指定できます。 また、その勘定科目の組み合わせの各区分に対する入力値に制約を加えることも可能です。
 
@@ -141,29 +143,29 @@ DimensionAttributeValueSetItem テーブルは、入力された分析コード�
 
 以下の図は、勘定の構造例を示します。
 
-[![勘定構造ページ。](./media/AccountStructureConfigurationForm.png)](./media/AccountStructureConfigurationForm.png)
+[![勘定構造ページ](./media/AccountStructureConfigurationForm.png)](./media/AccountStructureConfigurationForm.png)
 
 以下の図が示すように、この勘定構造は、データベースの DimensionHierarchy テーブルに格納されています。 ここでは、勘定科目の組み合わせの最初の入力区分として主勘定を入力し、続いて顧客およびライセンスプレート番号を入力するように設定されています。 この設定では、階層の順位を定義します。 この設定はデータベースの DimensionHierarchyLevel テーブルに格納されています。
 
-[![勘定構造のクエリ結果。](./media/StructureSQL.png)](./media/StructureSQL.png)
+[![勘定構造のクエリ結果](./media/StructureSQL.png)](./media/StructureSQL.png)
 
 順位の設定に加えて、制約を設定する必要があります。 制約とは、有効な値の組み合わせを定義する条件を意味します。 この例では、すべてのセグメントにて組み合わせの値を指定する必要があります。 この設定を行わない限り、有効とみなされません。 既に存在する値 (つまり、バッキングエンティティに存在するすべての値) を入力でき、有効となる値の組み合わせについて特に制限はありません。 この条件は、DimensionConstraintTree、DimensionConstraintNode、DimensionConstraintNodeCriteria の各テーブルに格納されます。
 
-[![簡単な制約のクエリ結果。](./media/SimpleConstraintsQueryResults.png)](./media/SimpleConstraintsQueryResults.png)
+[![簡単な制約のクエリ結果](./media/SimpleConstraintsQueryResults.png)](./media/SimpleConstraintsQueryResults.png)
 
 上記図の例では、必要最低限の制約ツリーが示されています。 アスタリスク (\*) のついている制約条件は、3つの制約ノードにそれぞれ関連付けられています。 この制約条件は、存在するすべての値を意味します。 データベースではパーセント記号 (%) で保存されており、UI では \<all values\> として表示されます。 これらの制約は、ルックアップを介して各セグメントに入力できる値を表示したり、セグメントに入力された値を検証するために使用されます。 こうした設定の結果、勘定科目の組み合わせに対して誤った値が入力された場合は、制約が検証エラーを返します。
 
 Dimension frameworkでは、より複雑な制約ツリーを設定することが可能となり、最初のセグメントに入力された値によって次の区分に入力可能な値を判断することができます。 以下の図は、この多機能性の一例を表しています。
 
-[![勘定構造ページの制約ビルダー。](./media/ConstraintbuilderonConfigureAccountStructureForm.png)](./media/ConstraintbuilderonConfigureAccountStructureForm.png)
+[![勘定構造 ページの制約ビルダー](./media/ConstraintbuilderonConfigureAccountStructureForm.png)](./media/ConstraintbuilderonConfigureAccountStructureForm.png)
 
 以下の図では、より複雑な制約ツリーを表しています。
 
-[![ページ上で展開された高度な制約ツリー。](./media/AdvancedConstraintTreeExpandedOnForm.png)](./media/AdvancedConstraintTreeExpandedOnForm.png)
+[![ページ上で展開された高度な制約ツリー](./media/AdvancedConstraintTreeExpandedOnForm.png)](./media/AdvancedConstraintTreeExpandedOnForm.png)
 
 以下の図は、制約定義のクエリ結果を示しています。
 
-[![高度な制約ツリーのクエリ結果。](./media/AdvancedConstraintTreeSQL.png)](./media/AdvancedConstraintTreeSQL.png)
+[![高度な制約ツリーのクエリ結果](./media/AdvancedConstraintTreeSQL.png)](./media/AdvancedConstraintTreeSQL.png)
 
 ユーザーが主勘定と顧客に **150-B** と入力した場合は、特定のライセンス プレート番号を入力する必要があります。 一方で、 **150-W** と入力した場合は、ライセンスプレート番号は必要ありません。 どちらの場合も、勘定科目の組み合わせでは常に3つのセグメントが表示されます。このいずれかが空白のままであっても。 勘定科目分析コードが入力された際に、構造、区分、制約が与える影響については、このトピックの [第5部](#part-5-ledger-dimensions) の 勘定科目の入力と保存についての説明を参照してください。
 
@@ -173,7 +175,7 @@ Dimension frameworkでは、より複雑な制約ツリーを設定すること�
 
 このトピックでは、以下の図で黄色で強調表示されている箇所 [高度なルール] について説明します。
 
-[![フレームワークの高度なルール。](./media/AdvancedRulesGraph.png)](./media/AdvancedRulesGraph.png)
+[![フレームワークの高度なルール](./media/AdvancedRulesGraph.png)](./media/AdvancedRulesGraph.png)
 
 勘定構造と制約を使用することで、簡単なものから複雑なものまで有効な組み合わせのツリーを構築することができます。 しかし、常に有効な分析コードの値を制約するのではなく、一定時間のみ勘定科目の組み合わせの一部として分析コードを表示するという業務上の要件があるかもしれません。 高度なルールを使えば、こうした要件にも対応可能です。
 
@@ -192,29 +194,29 @@ Dimension frameworkでは、より複雑な制約ツリーを設定すること�
 
 たとえば、以下の勘定構造が設定されているとします。
 
-![2 つの勘定の基本的な構造と制約。](./media/BasicStructureAndConstraint.png)
+![2 つの勘定の基本的な構造と制約](./media/BasicStructureAndConstraint.png)
 
 以下の高度なルールでは、ユーザーが主勘定に 145 を入力し、かつ顧客に G ~ Qを 入力した場合にのみ、1つから2つ以上のセグメントを追加する設定です。
 
-[![詳細ルールのページ。](./media/AdvancedRuleForm.png)](./media/AdvancedRuleForm.png)
+[![詳細ルールのページ](./media/AdvancedRuleForm.png)](./media/AdvancedRuleForm.png)
 
 ルールを設定した後で、構造と制約定義を作成して、勘定科目の組み合わせにどのようなセグメントを追加するかの定義を加える必要があります。 この手順を完成させるには、以下のルール構造を作成します。 ルール構造を作成するプロセスは、勘定構造を作成するプロセスと共通しています。 これらの構造には、ただちにルールの適用がされません。 したがって、これらのルールを必要に応じて複数のルール間で共有することができます。
 
-[![詳細なルール構造ページ。](./media/AdvancedRuleStructureForm.png)](./media/AdvancedRuleStructureForm.png)
+[![詳細なルール構造ページ](./media/AdvancedRuleStructureForm.png)](./media/AdvancedRuleStructureForm.png)
 
 ルール構造を作成した後、分析コードのルールへと追加します。 そうすると、勘定構造がルールと共に有効化されます。
 
-[![ルールに追加された詳細なルール構造。](./media/AddedAdvancedRuleStructureToRule.png)](./media/AddedAdvancedRuleStructureToRule.png)
+[![詳細ルール構造の追加](./media/AddedAdvancedRuleStructureToRule.png)](./media/AddedAdvancedRuleStructureToRule.png)
 
 このデータが保存される場所は、勘定構造の保存場所と共通のテーブルが使用されます ( [第3部](#part-3-structures-and-constraints)を参照)。 DimensionRule、DimensionRuleAppliedHierarchy、DimensionRuleCriteria の各テーブルには、ルールの定義に特化したデータが格納されます。 ここにはルール構造の定義へのリンクも保持しています。 そのほか残りのテーブルは、勘定構造の定義と共有されています。
 
-[![統合された構造、ルール、およびすべての制約に関するクエリの結果。](./media/CombinesStructureRuleandAllConstraintsSQL.png)](./media/CombinesStructureRuleandAllConstraintsSQL.png)
+[![統合された構造、ルール、およびすべての制約に関するクエリの結果](./media/CombinesStructureRuleandAllConstraintsSQL.png)](./media/CombinesStructureRuleandAllConstraintsSQL.png)
 
 ## <a name="part-5-ledger-dimensions"></a>第5部: 勘定分析コード
 
 このトピックでは、以下の図で黄色で強調表示されている箇所 [勘定分析コード] について説明します。
 
-[![フレームワークにおける勘定科目の分析コードのストレージ。](./media/LedgerDimensionStorageInFramework.png)](./media/LedgerDimensionStorageInFramework.png)
+[![フレームワークにおける勘定科目の分析コードのストレージ](./media/LedgerDimensionStorageInFramework.png)](./media/LedgerDimensionStorageInFramework.png)
 
 すべての設定データを完了すると、勘定科目の組み合わせを追加、検証、継続使用することができます。 この分析コードフレームワーク領域は、主にアプリケーションが使用しています。
 
@@ -224,27 +226,27 @@ Dimension frameworkでは、より複雑な制約ツリーを設定すること�
 
 このセクションでは、このトピックの [第4部](#part-4-advanced-rules) にある勘定構造とルールの設定を使用し、勘定が入力された場合の勘定項目の制御についての操作方法を説明します。 勘定構造は以下のようになります。
 
-![基本の構造と制約では、自分の勘定構造が取得されます。](./media/BasicStructureAndConstraintForm.png)
+![基本の構造と制約では、自分の勘定構造が取得されます](./media/BasicStructureAndConstraintForm.png)
 
 1つの勘定ルールが勘定構造に関連付けられています。
 
-[![1 つのルールの追加。](./media/SingleRuleAdded.png)](./media/SingleRuleAdded.png)
+[![1つのルールの追加](./media/SingleRuleAdded.png)](./media/SingleRuleAdded.png)
 
 以下の図は、追加された構造を示しています。
 
-[![1 つの構造の追加。](./media/SingleStructureAdded.png)](./media/SingleStructureAdded.png)
+[![1つの構造の追加](./media/SingleStructureAdded.png)](./media/SingleStructureAdded.png)
 
 以下の図は、ユーザーが最初にページで表示したときに、フォーカスを持たない勘定科目フィールドがどのように表示されるかを示しています。
 
-[![空白の元帳勘定フィールド (フォーカスなし)。](./media/EmptyLedgerAccountField.png)](./media/EmptyLedgerAccountField.png)
+[![空白の元帳勘定フィールド (フォーカスなし)](./media/EmptyLedgerAccountField.png)](./media/EmptyLedgerAccountField.png)
 
 このフィールドをクリックしても、何も変更されません。 ドロップダウンの矢印を選択すると、ルックアップが表示され、使用可能なセグメントが表示されます。 以下の図では、2つのセグメント候補が表示されています。
 
-[![勘定科目フィールドでルックアップを編集する。](./media/InEditLedgerAccountFieldWithLookup.png)](./media/InEditLedgerAccountFieldWithLookup.png)
+[![勘定科目フィールドでルックアップを編集する](./media/InEditLedgerAccountFieldWithLookup.png)](./media/InEditLedgerAccountFieldWithLookup.png)
 
 以下の例では、 **150-A** の組み合わせが入力されています。
 
-![値 150-A が入力された元帳勘定フィールド。](./media/CompletedLedgerAccountField.png)
+![値 150-A が入力された元帳勘定フィールド](./media/CompletedLedgerAccountField.png)
 
 2番目のセグメントが入力し、 **Tab** を押下して入力欄を移動するとただちに、分析コードフレームワークが制約に基づいた検証を行い、その組み合わせが保存されます。 この例では、入力された組み合わせは有効とみなされています。 ユーザーは、文字を入力するか、あるいはルックアップを使用してセグメントに入力することができます。
 
@@ -257,7 +259,7 @@ Dimension frameworkでは、より複雑な制約ツリーを設定すること�
 
 結果として、以下の図に示すように、2つのセグメントの値が4つのテーブルにまたがって格納されます。
 
-![4 つのテーブルにまたがる勘定科目分析コード ストレージのクエリ結果。](./media/LedgerDimensionStorageSQL.png)]
+![4 つのテーブルにまたがる勘定科目分析コード ストレージのクエリ結果](./media/LedgerDimensionStorageSQL.png)]
 
 1番目のテーブルは **DimensionAttributeValueCombination**.です。 すべてのマルチセグメントアカウントの組み合わせと、その組み合わせに関する非正規化された情報が格納されます。 このテーブルに格納されている情報の例としては、連結されたセグメントをひとつの文字列として格納し、勘定構造への外部キー参照を格納し、使用された主勘定 (150) に対する外部キーが格納されています。
 
@@ -275,19 +277,19 @@ Dimension frameworkでは、より複雑な制約ツリーを設定すること�
 
 このセクションで扱う内容は、前のセクションでの勘定分析コードストレージ例に基づいています。 ここでは、値を **150-A** から **145-Q** に変更します。 前段で説明した高度なルールで述べたように、この変更により3番目のセグメントが勘定構造に追加されます。
 
-[![元帳勘定区分 (タブが押下される前)。](./media/LedgerAccountSegmentBeforeTab.png)](./media/LedgerAccountSegmentBeforeTab.png)
+[![元帳勘定区分 (タブが押下される前)](./media/LedgerAccountSegmentBeforeTab.png)](./media/LedgerAccountSegmentBeforeTab.png)
 
 2番目のセグメントの後にハイフン (-) を入力すると、3番目のセグメントがコントロールに追加され、フォーカスが移ります。
 
-[![元帳勘定区分 (タブが押下された後)。](./media/LedgerAccountSegmentAfterTab.png)](./media/LedgerAccountSegmentAfterTab.png)
+[![元帳勘定区分 (タブが押下された後)](./media/LedgerAccountSegmentAfterTab.png)](./media/LedgerAccountSegmentAfterTab.png)
 
 3番目のセグメントにフォーカスがあるときにルックアップを開くと、3番目のセグメントに対応する値が表示されます。
 
-[![新しいセグメントにフォーカスがある場合のルックアップ。](./media/LookupInSegment.png)](./media/LookupInSegment.png)
+[![新しいセグメントにフォーカスがある場合のルックアップ](./media/LookupInSegment.png)](./media/LookupInSegment.png)
 
 この段階でライセンス番号が入力可能となります。
 
-![ライセンス番号が入力された元帳勘定フィールド。](./media/CompletedLedgerAccountFieldWithAllRules.png)
+![ライセンス番号が入力された元帳勘定フィールド](./media/CompletedLedgerAccountFieldWithAllRules.png)
 
 3番目のフィールドに値を入力し、 **Tab** を押下してコントロールを移動すると、入力された組み合わせの検証が行われます。 入力された組み合わせが有効な場合は、勘定分析コードとして保存されます。
 
@@ -299,7 +301,7 @@ Dimension frameworkでは、より複雑な制約ツリーを設定すること�
 - この値は最初の2つのセグメントのルールと一致するため、 **MyRuleStructure1** という名前の勘定科目のルール構造が追加されました。 この結果、1つのセグメントが追加されました。
 - 3番目のセグメントは、LicensePlate 分析コードです。 コード値は **AAA 111** です。
 
-![値 AAA 111 の勘定分析コード ストレージのクエリ結果。](./media/LedgerDimensionValuesStorageSQL.png)]
+![値 AAA 111 の勘定分析コード ストレージのクエリ結果](./media/LedgerDimensionValuesStorageSQL.png)]
 
 この組み合わせでは、勘定分析コードを格納する4つのテーブルに合計8個の行が挿入されました。 前段 ([第4部](#part-4-advanced-rules)) で述べた最初の勘定科目の組み合わせと、この勘定科目の組み合わせとの違いは、この勘定科目を構成する分析コードを活用するために複数の構造が使用される点です。 2つの分析コードは、DimensionAttributeValueGroupCombination および DimensionAttributeValueGroup テーブルに格納されます。 それぞれのレコードは、完全な組み合わせに使用、または結合される構造を表します。
 
@@ -309,11 +311,11 @@ Dimension frameworkでは、より複雑な制約ツリーを設定すること�
 
 高度なルールを使用する場合は、記憶領域のサイズやデータ挿入のコストに対しても最適化処理が行われます。 たとえば、以下の図では、新しい勘定の組み合わせが入力されています。
 
-[![変更された勘定科目フィールド。](./media/ChangedLedgerAccountField.png)](./media/ChangedLedgerAccountField.png)
+[![変更された勘定科目フィールド](./media/ChangedLedgerAccountField.png)](./media/ChangedLedgerAccountField.png)
 
 この場合、新しい組み合わせと古い組み合わせとの違いは、高度なルール が指定する ライセンスプレート の番号が変更されたことです。 以下の図は、この組み合わせのデータがどのように格納されているかを示しています。 新しいレコードは白で強調表示されます。
 
-[![追加された勘定分析コード ストレージのクエリ結果。](./media/AdditionalLedgerDimensionStorageQueryResults.png)](./media/AdditionalLedgerDimensionStorageQueryResults.png)
+[![追加された勘定分析コードのクエリ結果](./media/AdditionalLedgerDimensionStorageQueryResults.png)](./media/AdditionalLedgerDimensionStorageQueryResults.png)
 
 新しい組み合わせが作成されると、以下5つのレコードが挿入されます。 (これらのレコードは、上記の図にて白で強調表示されています)。
 
@@ -341,7 +343,7 @@ Dimension frameworkでは、より複雑な制約ツリーを設定すること�
 
 以下の図では、分析コードフレームワークを構成するさまざまな領域を示しています。
 
-[![全体的なフレームワーク。](./media/OverallFramework.png)](./media/OverallFramework.png)
+[![全体的なフレームワーク](./media/OverallFramework.png)](./media/OverallFramework.png)
 
 ### <a name="hashes"></a>ハッシュ
 
@@ -395,6 +397,3 @@ Dimension frameworkでは、より複雑な制約ツリーを設定すること�
 構造またはルールが変更された場合、勘定科目の組み合わせが未転記トランザクションに対して保存されていると、分析コードフレームワークが新しい組み合わせが作成し、未転記のトランザクションテーブルの外部キー参照がすべて更新されます。 転記されたトランザクションから参照されている場合があるため、元の組み合わせは変更されません。 この2つの組み合わせは、連係されることがありません。 変更前の構造とルールがどのようなものであったかを判別する方法はありません。 一部の情報は、格納されている組み合わせによって判別できる場合もあります。 ただし、空白の値は保存されておらず、不完全なデータとみなされるため、古いバージョンの再構築に使用することはできません。
 
 分析コードフレームワークでは、分析コード値レベルでの "有効な開始日付" と "有効な終了日付" の両方に対応しています。 これらの日付は、値が "有効" なものであると見なされた時点の日付を示しています。 これらは有効日付データと同様で、値の過去の状態を意味するものではありません。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

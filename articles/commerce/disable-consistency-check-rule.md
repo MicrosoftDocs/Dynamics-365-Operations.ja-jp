@@ -1,13 +1,16 @@
 ---
-title: トランザクション検証プロセスで使用されるルールを無効にする
-description: このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション検証ルールを無効にする機能について説明します。
-author: analpert
-ms.date: 12/11/2021
+title: 小売トランザクションの整合性チェックのルールを無効にする
+description: このトピックでは、Microsoft Dynamics 365 Commerce に導入されたトランザクションの整合性チェックのルールを無効にする機能について説明します。
+author: josaw1
+manager: AnnBe
+ms.date: 10/15/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,21 +18,21 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cdaea51b4c84e6a62f0eb9412315ae77b4c11503
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 37209f1c1de19335f5f9fa6636ab55dd8b2fccc1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919530"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459403"
 ---
-# <a name="disable-rules-used-in-the-transaction-validation-process"></a>トランザクション検証プロセスで使用されるルールを無効にする
+# <a name="disable-rules-in-the-retail-transaction-consistency-checker"></a>小売トランザクションの整合性チェックのルールを無効にする 
 
 [!include [banner](../includes/banner.md)]
 
-小売業者に固有の業務シナリオとプロセスが実現します。 そのため、コマース トランザクション検証プロセスに含まれるあらゆるルールが、すべての小売業者に適用されるとは限りません。 差異を調節するため、Microsoft Dynamics 365 Commerce には、適用されないルールを無効にするための機能が用意されています。
+小売業者に固有の業務シナリオとプロセスが実現します。 したがって、コマース トランザクション整合性チェックに既定で含まれるあらゆるルールが、すべての小売業者に適用されるとは限りません。 差異を調節するため、Microsoft Dynamics 365 Commerce には、適用されないルールを無効にするための機能が用意されています。
 
-環境内のトランザクション検証プロセスで使用できるルールの一覧を表示し、各ルールの状態を確認するには、**Retail と Commerce \> 本社の設定 \> パラメーター \> Commerce パラメーター** の順に移動して、**トランザクションの検証** タブを選択します。有効なすべてのルールは、**店舗トランザクションの検証** プロセス中にトランザクションを検証するために使用され、トランザクションを収集してトランザクション明細書に転記するために渡す必要があります。
+ご利用中の環境内にある小売トランザクション整合性チェックで使用できるルールの一覧を表示したり、各ルールの状態を表示したりするには、**Retail と Commerce \>本社の設定 \> パラメーター \> Commerce パラメーター** に移動し、**トランザクションの検証** タブをクリックします。
 
-既定では、すべてのルールの状態が **有効** に設定されています。 そのため、すべてのルールを使用して小売トランザクションを検証してからコマース トランザクション明細書に取り込めます。 ルールを無効にするには、状態を **無効** に変更します。 **店舗トランザクションの検証** プロセス中にトランザクションが検証される場合、無効になっているルールは考慮されません。
+既定では、すべてのルールの状態が **有効** に設定されています。 したがって、すべてのルールを使用して小売トランザクションを検証してからコマース明細書に取り込まれます。 ルールを無効にするには、状態を **無効** に変更します。 明細書の計算プロセス中にトランザクションが検証されている場合、無効になっているルールは考慮されません。
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+有効になっているルールに関係なく、検証プロセス全体を回避するには **Retail と Commerce \> 本社の設定 \> パラメーター \> Commerce パラメーター** に移動し、**トランザクションの検証** タブで、**Commerce トランザクションの整合性チェックの無効化** オプション **はい** に設定します。 このオプションを **いいえ** に設定すると、ユーザー インターフェイス (UI) から **はい** に設定し直すことはできません。

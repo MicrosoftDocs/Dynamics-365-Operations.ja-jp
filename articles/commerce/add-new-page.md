@@ -2,30 +2,36 @@
 title: 新しいサイト ページの追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいサイト ページを追加する方法について説明します。
 author: psimolin
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090722"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413699"
 ---
 # <a name="add-a-new-site-page"></a>新しいサイト ページの追加
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce に新しいサイト ページを追加する方法について説明します。
+
+## <a name="overview"></a>概要
 
 サイトのテンプレートとフラグメントを作成したら、次はそれらを使用するページの作成を開始します。 作業を開始するには、テンプレートまたはレイアウト、ページ名、およびページの URL を選択する必要があります。
 
@@ -33,11 +39,11 @@ ms.locfileid: "8090722"
 
 新しいページには、テンプレートまたはレイアウトのいずれかを使用できます。 詳細については、[テンプレートおよびレイアウト](templates-layouts-overview.md) を参照してください。
 
-## <a name="specify-the-page-name"></a>ページの名前を指定します
+## <a name="page-name"></a>ページ名
 
-ページ名は、あなたのサイトに固有のものでなければならず、あなたが簡単に見つけられ、他の人がページの目的を理解できるように、説明的なものにする必要があります。 後でページ名を変更するには、ページを編集してから、プロパティ ペインでページ名の横にあるペン記号を選択します。
+ページ名は、ページに対して一意である必要があります。 見つけやすく、他の人がページの目的を理解できるように、説明的なものにする必要があります。 ページ名は後で変更できないので、注意して選択してください。
 
-## <a name="specify-the-page-url"></a>ページの URL を指定します
+## <a name="page-url"></a>ページ URL
 
 新しいページの URL を入力することもできます。 ページを作成するときに、完全な URL を形成するために使用される文字列を入力できます。 この文字列は相対 URL または URL スラッグとも呼ばれます。 次に、URL スラッグに基づいて完全な URL が生成され、新しいページが割り当てられます。 ページを公開する前に URL スラッグを変更することができます。 詳細については、[ページ URL の作成](create-page-URL.md) を参照してください。
 
@@ -84,9 +90,4 @@ ms.locfileid: "8090722"
 
 [カテゴリ ランディング ページの拡充](enrich-category-page.md)
 
-[ページ コンテンツのアクセシビリティの検証](verify-accessibility.md)
-
-[URL のパラメーターに基いて動的な電子商取引ページを作成する](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)

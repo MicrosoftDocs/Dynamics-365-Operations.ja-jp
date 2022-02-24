@@ -1,10 +1,12 @@
 ---
 title: Dynamics 365 Commerce のセルフサービス インストーラーの同期
-description: このトピックでは、標準のセルフサービス ダウンロード メカニズムで使用できるように、セルフサービス インストーラーをアップロードおよび同期する方法について説明します。
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) と Dynamics 365 Headquarters でアセット ライブラリと共用資産ライブラリを使用して、セルフサービス インストーラーをアップロードおよび同期し、標準セルフサービス ダウンロード メカニズムで使用できるようにする方法について説明します。
 author: jashanno
-ms.date: 10/01/2021
+manager: AnnBe
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: Dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 audience: IT Pro
@@ -14,18 +16,18 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 72a662d2a90b86a0562e46ca77ab9d4e28e3880e
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 29e643879312673c9e9bd105e5640a1202a1d230
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592516"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680398"
 ---
 # <a name="synchronize-self-service-installers-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のセルフサービス インストーラーの同期
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) と Dynamics 365 Headquarters でアセット ライブラリと共有アセット ライブラリを使用して、セルフサービス インストーラーをアップロードおよび同期し、標準セルフサービス ダウンロード メカニズムで使用できるようにする方法について説明します。 この機能は、Microsoft によって継続的に管理される環境にのみ適用されることに注意してください。 また、オンプレミス環境や仮想ハード ディスク (VHD) などの他の環境については、現在発行されている LCS から直接インストーラーをダウンロードして使用することを強くお勧めします。
+このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) と Dynamics 365 Headquarters でアセット ライブラリと共有アセット ライブラリを使用して、セルフサービス インストーラーをアップロードおよび同期し、標準セルフサービス ダウンロード メカニズムで使用できるようにする方法について説明します。
 
 > [!IMPORTANT]
 > セルフサービス パッケージをアップロードする以前の方法は、現在もサポートされています。 ただし、これは廃止され、今後削除される予定です。
@@ -40,15 +42,11 @@ ms.locfileid: "7592516"
 
 ## <a name="overview"></a>概要
 
-**共有アセット ライブラリ** の **Retail セルフサービス パッケージ** サブセクションには、セルフサービス インストーラーのすべての月次リリースが格納されます。 これらのインストーラーには、Modern POS (オフライン バージョンを含む)、Commerce Scale Unit (旧 Retail Store Scale Unit \[RSSU\])、ハードウェア ステーションが含まれます。 また、カスタマイズされたインストーラーを、このライブラリとプロジェクト レベルのアセット ライブラリの両方にアップロードすることもできます。 これらの場所を使用することで、Dynamics 365 Headquarters で 使用可能なインストーラーを同期できます。 同期が完了すると、これら 2 つのライブラリ (および以前に環境に存在していたもの) 間で使用可能なすべてのインストーラーは、個別のトピック (このトピックで前述した用語の表のリンクを参照してください) で詳細に説明されている標準セルフサービス ダウンロード プロセスでアクセスできるようになります。
+共有アセット ライブラリの **Retail セルフサービス パッケージ** サブセクションには、セルフサービス インストーラーのすべての月次リリースが格納されます。 これらのインストーラーには、Modern POS (オフライン バージョンを含む)、Commerce Scale Unit (旧 Retail Store Scale Unit \[RSSU\])、ハードウェア ステーションが含まれます。 また、カスタマイズされたインストーラーを、このライブラリとプロジェクト レベルのアセット ライブラリの両方にアップロードすることもできます。 これらの場所を使用することで、Dynamics 365 Headquarters で 使用可能なインストーラーを同期できます。 同期が完了すると、これら 2 つのライブラリ (および以前に環境に存在していたもの) 間で使用可能なすべてのインストーラーは、個別のトピック (このトピックで前述した用語の表のリンクを参照してください) で詳細に説明されている標準セルフサービス ダウンロード プロセスでアクセスできるようになります。
 
 次の図は、共有アセット ライブラリ (またはアセット ライブラリ) の **Retail セルフサービス パッケージ** サブセクションの一般的な例を示しています。
 
-![共有アセット ライブラリの Retail セルフサービス パッケージ サブセクション。](media/SharedAssets.jpg)
-
-## <a name="upload-or-modify-the-self-service-installer-packages"></a>セルフサービス インストーラー パッケージのアップロードまたは変更
-
-**共有資産ライブラリ** で **Retail セルフサービス パッケージ ファイル** のサブセクションを表示すると、リストには Microsoft が公開したコンテンツと、プロジェクトの所有者およびユーザーがアップロードしたコンテンツがリストに含まれます。 パッケージ ファイルのアップロード者 (Microsoft またはユーザー) に関係なく、そのファイルを編集して詳細を追加することができます。 パッケージ一覧の最上部にボタンがあります。 1 つ目のボタンは **アップロード** ボタン、2 つ目は **削除** ボタン、3 つ目は **編集** ボタンです。 ユーザーは **アップロード** ボタンを使用して、特定のプロジェクトに必要なカスタマイズ パッケージまたはカスタム インストーラー/ファイルをアップロードできます。 ファイルのアップロード方法に関係なく、任意のパッケージを選択したり、**編集** ボタンを使用して、フレンドリ名を変更したり、情報をファイルに追加することができます。 Microsoft またはプロジェクト ユーザー/開発者によってアップロードされるレガシ セルフサービス インストーラー パッケージは、有用な説明を追加することによって、より簡易な読み取り、理解、詳細を提供します。 その後、同期すると、表示されたインストーラーをより容易に表示、理解、使用することができます。
+![共有アセット ライブラリの Retail セルフサービス パッケージ サブセクション](media/SharedAssets.jpg)
 
 ## <a name="synchronize-installers-in-dynamics-365-headquarters"></a>Dynamics 365 Headquarters のインストーラーの同期
 
@@ -60,8 +58,8 @@ ms.locfileid: "7592516"
     >
     > このトピックの冒頭で説明したように、以前のセルフサービス パッケージのアップロード方法は廃止されましたが、今後削除されるまで引き続きサポートされます。
 
-3. 同じページで、関連する場所 (**デバイス**、**すべての店舗**、および **チャネル データベース**) の Headquarters 全体で使用される既定のパッケージを選択できます。
-4. 次のテーブルのリンクを使用して、Modern POS、ハードウェア ステーション、または Commerce Scale Unit の標準コンフィギュレーション フローとインストール フローを実行します。
+4. 同じページで、関連する場所 (**デバイス**、**すべての店舗**、および **チャネル データベース**) の Headquarters 全体で使用される既定のパッケージを選択できます。
+5. 次のテーブルのリンクを使用して、Modern POS、ハードウェア ステーション、または Commerce Scale Unit の標準コンフィギュレーション フローとインストール フローを実行します。
 
 > [!NOTE]
 > いくつかのインストーラーがあります。  Modern POS (オフラインでの Modern POS)、Commerce Scale Unit (自己ホスト、以前は *Retail Store Scale Unit* と呼ばれる)、ハードウェア ステーション、および頻繁には使用されないインストーラー (AX 2012 R3 サポート インストーラーと周辺機器シミュレーター)。
@@ -71,6 +69,3 @@ ms.locfileid: "7592516"
 | Modern POS | [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md) |
 | Hardware station | [Retail Hardware Station のコンフィギュレーションおよびインストール](../retail-hardware-station-configuration-installation.md) |
 | Commerce Scale Unit (旧 Retail Store Scale Unit) | [Commerce Scale Unit のコンフィギュレーションとインストール](retail-store-scale-unit-configuration-installation.md) |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

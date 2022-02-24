@@ -2,25 +2,28 @@
 title: 状態が空白の小切手の作成
 description: このトピックでは、小切手ページで銀行口座に対して空白の小切手を作成する方法について説明します。
 author: abruer
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankChequeTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 3c431ed975aecf116fbf626018038b112a0a8cca063e1462e31e206480643e11
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47d54524f87cf718b9b41462b5133df267d5dd9e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720553"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459423"
 ---
 # <a name="create-checks-that-have-blank-status"></a>状態が空白の小切手の作成
 
@@ -36,6 +39,3 @@ ms.locfileid: "6720553"
 **小切手** ページを開くには、**現金および銀行管理 \> 銀行口座 \> 銀行口座** に移動し、アクション ペイン、**支払の管理** タブ、**関連情報** グループで、**小切手** を選択します。 または、**現金および銀行管理 \> 照会およびレポート \> 小切手** に移動します。
 
 状態が **空白** の小切手を作成するには、アクション ペインで **空白の小切手の作成** を選択します。 システムが空白の小切手を作成している間、関連付けられている銀行口座が一時的に無効化されます。 この動作により、空白の小切手が作成されたときと同時に、支払が生成されるリスクが低下します。 処理が完了すると、関連付けられている銀行口座が再度有効化されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

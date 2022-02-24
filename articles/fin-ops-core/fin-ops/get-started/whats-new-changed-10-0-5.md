@@ -2,9 +2,11 @@
 title: Finance and Operations アプリ バージョン 10.0.5 (2019 年 10 月) の新機能と変更点
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.5 の新機能または変更された機能について説明します。 このバージョンは 10 月にリリースされます。
 author: tonyafehr
+manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 672ec553712c286035a0b0eac3dfd1ad43f1f5315b941cfe97fe7fed0e2c0707
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 962813291287ed29761b6cd05106fd6430bf5568
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712281"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797235"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-version-1005-october-2019"></a>Finance and Operations アプリ バージョン 10.0.5 (2019 年 10 月) の新機能と変更点
 
@@ -30,7 +32,7 @@ ms.locfileid: "6712281"
 このトピックでは、Microsoft Dynamics 365 Finance および Microsoft Dynamics 365 Supply Chain Management を含む Finance and Operations アプリ バージョン 10.0.5 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.197 です。 一般提供開始日は 10 月ですが、新機能は 8 月の初期リリースで使用できます。 バージョン 10.0.5 の詳細については [追加リソース](whats-new-changed-10-0-5.md#additional-resources) を参照してください。
 
 
-最新のリリースの Dynamics 365 Retail の新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.5 の新機能と変更](../../../commerce/get-started/whats-new-10-0-5.md) を参照してください。
+最新のリリースの Dynamics 365 Retail の新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.5 の新機能と変更](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5) を参照してください。
 
 
 ## <a name="revenue-recognition"></a>収益認識
@@ -69,7 +71,7 @@ ms.locfileid: "6712281"
 
 通貨の性別を定義できるようになりました。 **通貨** ページで **Declension** を選択します。 **性別** フィールドで、**Masculine**、**Feminine**、または **Neuter** を選択します。 このパラメーターは、キャッシュ注文で現地の言語でテキストで書き込まれた金額のdeclensionに影響を与える可能性があります。 たとえば、金額 1,01 ユーロが英語の文字で、キャッシュオーダー上に *One euro 01 cent* として記載されている場合、**Neuter** として **性別** を設定すると、この金額がチェコ語に翻訳され、、*Edno euro 01 cent* として記載されます。
 
-既存の機能の詳細については、[「レポートおよびドキュメント上の金額の表示方法の更新」](../../../finance/localizations/emea-amount-printing-forms.md)を参照してください。
+既存の機能の詳細については、[「レポートおよびドキュメント上の金額の表示方法の更新」](https://docs.microsoft.com/dynamics365/finance/localizations/emea-amount-printing-forms)を参照してください。
 
 ## <a name="cash-control-public-sector"></a>現金管理 (公的部門)
 
@@ -84,7 +86,7 @@ ms.locfileid: "6712281"
 ## <a name="deferred-put"></a>繰延プット
 繰延処理機能では、入力操作がバックグラウンドで処理されている間でも、倉庫作業者は他の作業を続行できます。 繰延処理では、多くの作業明細行を処理する必要があり、作業者がその作業を非同期に処理できるようにする場合に便利です。 また、サーバーが処理時間の増加をアドホックまたは計画外でおこない、増加した処理時間がユーザーの生産性に影響を与える可能性がある場合にも役立ちます。
 
-詳細については、[倉庫作業の遅延処理](/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)を参照してください。
+詳細については、[倉庫作業の遅延処理](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)を参照してください。
 
 ## <a name="journal-unlock"></a>仕訳帳をロック解除する
 仕訳帳ページの新しいボタンを使用して、**システムによってロック済み** のステータスに設定されている仕訳帳のロックを「はい」に設定することでロック解除することができます。 このロック解除は、実行しているバッチジョブを分析したシステム管理者が実行でき、この仕訳帳がバッチジョブによって積極的に処理されなくなったことを確認します。 このボタンは、**機能管理** ページにある **仕訳帳のロック解除** ボタンで有効にできます。
@@ -100,7 +102,7 @@ ms.locfileid: "6712281"
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md)トピックでは、削除または廃止された機能について説明します。
@@ -111,6 +113,3 @@ ms.locfileid: "6712281"
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,24 +2,26 @@
 title: Dynamics 365 for Finance and Operations 更新プログラム 8.0.4 の拡張機能の変更
 description: このトピックは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.4 でリリースされた拡張機能を一覧表示します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-08-31
 ms.dyn365.ops.version: App 8.0.4
-ms.openlocfilehash: a750d84b0bd9fff94f39618f5550211670e89072
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 98528d9d48cc7c002abcc256863a7d0d5fb85d7b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781646"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409339"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-update-804"></a>Dynamics 365 for Finance and Operations 更新プログラム 8.0.4 の拡張機能の変更
 
@@ -358,6 +360,3 @@ ms.locfileid: "7781646"
 - メタデータの変更: WHSContainerLine, Relations WHSLoadLine & WHSShipmentTable.On Delete。
 - メタデータの変更: WHSContainerTable, Relation WHSShipmentTable.On Delete。
 - プロジェクトの価格決定: 新しい価格決定検索メソッドの完全な取得。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

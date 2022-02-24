@@ -1,10 +1,12 @@
 ---
 title: サービス レベルと説明
 description: このトピックでは、資産管理のサービス レベルと説明について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel, EntAssetServiceLevelLookup
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 32e6dd6ba7291e8ea1cb78eeed2d8e2fcec0f6dd3cbd039336be0169730101ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bb56e5103bd9e18e88c164cd308e55d48e64823
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758691"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019382"
 ---
 # <a name="service-level-and-description"></a>サービス レベルと説明
 
@@ -45,7 +47,7 @@ ms.locfileid: "6758691"
 8. 終了日に加えてワーク オーダーに終了時刻を設定するには、**終了時刻の設定** オプションを **はい** に設定します。 次に、**終了時刻** フィールドに終了時刻を入力します。 このオプションを **いいえ** に設定した場合は、現在の時刻が使用されます。
 9. **保存** を選択します。
 
-![作業指示書サービス レベル ページ。](media/19-setup-for-work-orders.png)
+![作業指示書サービス レベル ページ](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>説明の作成
 
@@ -53,6 +55,3 @@ ms.locfileid: "6758691"
 2. **新規** を選択します。
 3. **説明** フィールドに説明を入力します。
 4. **保存** を選択します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

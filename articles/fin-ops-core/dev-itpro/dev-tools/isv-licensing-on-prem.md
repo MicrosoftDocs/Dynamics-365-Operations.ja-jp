@@ -2,22 +2,26 @@
 title: 独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 description: このトピックでは、オンプレミス環境における独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
 author: jorisdg
-ms.date: 11/29/2021
+manager: AnnBe
+ms.date: 03/08/2018
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 2c218395e764e6c55fac10cd51960991908813d6
-ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
+ms.openlocfilehash: 6b5ad11ad6f93681af752ba10ab36036b45846d2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7894732"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408963"
 ---
 # <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 
@@ -70,7 +74,7 @@ ISV ライセンスの福利厚生についての一般情報、ソリューシ�
     ```
 
 3. 生成されたライセンスを fabric:/AXSF を実行しているマシンの 1 つのフォルダーにコピーし、fabric:/AXSF が正常であることを確認します。
-4. AOS コンピューターのいずれかから **Import-LicensePackage.ps1** スクリプトを実行します。 このスクリプトは、LCS 共有アセット ライブラリの **モデル** タブにある最新の **Microsoft Dynamics 365 Finance + Operations (オンプレミス)、配置スクリプト** フォルダーにあります。 スクリプトに渡す必要があるパラメータの一覧を次に示します。
+4. AOS コンピューターのいずれかから **Import-LicensePackage.ps1** スクリプトを実行します。 このスクリプトは、LCS 内の共有アセット ライブラリにある  **モデル** タブの最新の **配置スクリプト** フォルダーで見つけることができます。 スクリプトに渡す必要があるパラメータの一覧を次に示します。
 
    - **LicenseFilesPath** – インポートする必要があるライセンス ファイルを含むフォルダーのパス。 
    - **SqlUser** – AOS を実行する credentials.json ファイルに指定されている同じユーザー。
@@ -82,6 +86,3 @@ ISV ライセンスの福利厚生についての一般情報、ソリューシ�
 5. スクリプトが正常に実行されたとき、コンフィギュレーション キーがインポートされて有効になっていることを検証します。 製品では、対応するコンフィギュレーション キーは、 **ライセンス コンフィギュレーション**  ページで使用可能になり、有効になります。 既定では、コンフィギュレーションが有効です。 たとえば、ISVConfigurationKey1 と呼ばれるコンフィギュレーション キーを追加した場合、コンフィギュレーション キーの一覧に表示されます。
 
 コンフィギュレーション キーが有効になると、ISV ソリューションの変更は製品に表示されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

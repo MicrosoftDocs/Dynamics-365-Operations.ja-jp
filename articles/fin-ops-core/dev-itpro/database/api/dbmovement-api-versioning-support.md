@@ -2,9 +2,11 @@
 title: データベース移動 API - バージョン管理とサポート
 description: このトピックでは、データベース移動アプリケーション プログラミング インターフェイス (API) のバージョン管理と重大な変更ポリシーの概要について説明します。
 author: laneswenka
+manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: d85cb1a92f2dc9da595d0ecaa5428fafee9851bea1f30804f03f92dfa8c9dc26
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 897f7dccfe6b2be984e277862cda7a61547b6dbc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753576"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681116"
 ---
 # <a name="versioning-and-support"></a>バージョン管理とサポート
 
@@ -64,6 +66,3 @@ Microsoft では、プライベート プレビュー グループにおける A
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

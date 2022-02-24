@@ -1,18 +1,25 @@
 ---
 title: イベント モジュール
 description: イベント モジュール
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 4159bbeb13a649cd4d92ce9edae134f208f976d2
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 7b622c39b9647a0a534b2a83f059578a4d1b5204
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781726"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682565"
 ---
 # <a name="event-module"></a>イベント モジュール
 
@@ -54,6 +61,3 @@ IEventListener: 機能
 
 
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

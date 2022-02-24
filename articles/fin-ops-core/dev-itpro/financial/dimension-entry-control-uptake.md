@@ -1,25 +1,27 @@
 ---
 title: 分析コード エントリ コントロールの取得
 description: 分析コード エントリ コントロールおよび関連するコントローラー クラスについて説明します。
-author: RyanCCarlson2
+author: robinarh
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 25551
 ms.assetid: dbc5c0af-ae97-463e-b5ff-9bfd242529ff
 ms.search.region: Global
-ms.author: rcarlson
+ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f41baed40d694ca448de5d27b94a018ca386b7e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a7dd6adec9b1ae4cae435dd9dbdb3b643eacb958
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782899"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680508"
 ---
 # <a name="uptake-of-dimension-entry-controls"></a>分析コード エントリ コントロールの取得
 
@@ -39,12 +41,12 @@ ms.locfileid: "7782899"
 -   Dynamics AX 2012 では、parmAttributeSetDataSource および parmAttributeValueSetDataSource がデータ ソースと既定の分析コード コントロールに関連付けられたデータ ソースのフィールドを設定するために使用されていました。  これらは通常、DimensionDefaultingController インスタンスを作成した直後にフォームの init メソッドで設定されていました。  すべての呼び出し parmAttributeSetDataSource および parmAttributeValueSetDataSource はアップグレード後に削除されます。  これらの呼び出しの値を使用して、アップグレードされたコントロールのメタデータを設定します。  アップグレード後、これらの呼び出しをすべて削除した後、フォームが正常に機能していることを確認するために、フォームをチェックする必要があります。
 -   ディメンション入力コントロールはフォーム デザインでモデル化されるようになりました。 分析コードの入力管理を検索するには、デザイン要素を展開するか、フォーム デザインで "DimensionEntry" を検索します。 デザイン時に新しいコントロールがどのようなものかを次に示します。
 
-[![新しいプロジェクト ダイアログ。](./media/1.png)](./media/1.png)
+[![新しいプロジェクト ダイアログ](./media/1.png)](./media/1.png)
 
 ## <a name="properties"></a>プロパティ
 分析コード エントリ コントロールのカスタム プロパティは、**コントローラー** グループの下にあります。
 
-[![コントローラーのプロパティ。](./media/capture1.png)](./media/capture1.png)
+[![コントローラーのプロパティ](./media/capture1.png)](./media/capture1.png)
 
 #### <a name="details-on-the-properties"></a>プロパティの詳細
 
@@ -73,9 +75,9 @@ ms.locfileid: "7782899"
 
 いくつかの分析コード入力コントロールには、コントローラー プロパティが設定されていない可能性があります。 この場合、コントローラーはコントロールの値データ フィールドの EDT から推測されます。 一連の分析コード エントリ コントロールの特定のプロパティを以下に示します。 これらのプロパティは、上記の一般的なアプローチのセクション (DimensionEntryControlHeader) で選択した、分析コード入力コントロールの PurchTable フォームのプロパティです。 この分析コード エントリ コントロールは、PurchTableのTable テーブルの DefaultDimension フィールドを使用しています。 PurchTable の DefaultDimension フィールドの拡張データ型プロパティは、LedgerDefaultDimensionValueSet (以下を参照) に設定されます。 実行時に、この EDT は LedgerDefaultDimensionEntryController にマップされます。 したがって、この場合 DimensionEntryControlHeader コントロールは LedgerDefaultDimensionEntryController を使用します。 次の例は、EDT とそれがマップされているコントローラーを示しています。
 
-![新しい品目を追加。](./media/3.png)
+![新しい品目を追加](./media/3.png)
 
-![リソース ファイルの選択。](./media/4.png)
+![リソース ファイルの選択](./media/4.png)
 
 #### <a name="extended-data-types-and-the-controllers-they-are-mapped-to"></a>拡張データ型およびマップされるコントローラー
 
@@ -387,6 +389,3 @@ parmDimensionEntryControlHeader(
 [ダイアログの分析コード エントリ コントロールのサポート](dimension-entry-control-dialog-support.md)
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

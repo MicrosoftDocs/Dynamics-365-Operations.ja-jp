@@ -1,10 +1,12 @@
 ---
 title: メンテナンス ダウンタイム活動
 description: このトピックは、メンテナンス ダウンタイムが、特定の期間、特定の資産に対してメンテナンス ジョブを実行するために必要な能力の概要を取得するために使用される方法について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0e6168033afb97c6f4f1b8466801a6f16332df82a039927ec1b45e03aa3694b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 986b2ae4cf7f7819caaf35e009fd4735f35e6928
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727921"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017959"
 ---
 # <a name="maintenance-downtime-activities"></a>メンテナンス ダウンタイム活動
 
@@ -40,7 +42,7 @@ ms.locfileid: "6727921"
 
 **資産管理** > **共通** > **メンテナンス ダウンタイム アクティビティ** > **すべてのメンテナンス ダウンタイム アクティビティ** をクリックして、すべてのすべてのメンテナンス ダウンタイム アクティビティのリストを開き、アクティビティに関連した情報を表示します。 **メンテナンス ダウンタイム アクティビティ** 列のリンクをクリックして、詳細表示を開きます。 次の図では、**メンテナンス ダウンタイム アクティビティ** リストの例を表示します。
 
-![図 1。](media/19-preventive-maintenance.png)
+![図 1](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>メンテナンス ダウンタイム アクティビティの作成
@@ -61,7 +63,7 @@ ms.locfileid: "6727921"
 
 次の図では、**メンテナンス ダウンタイム アクティビティ** の詳細表示の例を示します。
 
-![図 2。](media/20-preventive-maintenance.png)
+![図 2](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >選択した資産に関連する作業指示書メンテナンス ジョブおよびメンテナンス スケジュール明細行は、メンテナンス ダウンタイム アクティビティを作成した後に新しい作業指示書または明細行が作成された場合に、自動的に更新されます。 たとえば、関連する資産のメンテナンス計画またはメンテナンス ラウンドを、メンテナンス ダウンタイム アクティビティが作成された 2 日後にスケジュールした場合、メンテナンス ダウンタイム アクティビティに新しいメンテナンス スケジュールの明細行が自動的に追加されます。
@@ -72,7 +74,7 @@ ms.locfileid: "6727921"
 
 10. **OK** をクリックして、計算を開始します。 時間の合計数が、**最大能力負荷** の概要に表示されます。 **最大能力負荷** タブの **グループ化** アクション ウィンドウ グループで、該当するボタンをクリックして、予測時間の配賦の詳細な概要を取得します。 次の図では、**最大能力負荷** の原価計算の結果を表示します。
 
-![図 3。](media/21-preventive-maintenance.png)
+![図 3](media/21-preventive-maintenance.png)
 
 11. 最大キャパシティ負荷の概要を取得した後、作業指示書のメンテナンス作業またはメンテナンス スケジュール明細行に対して調整を行う場合、**メンテナンス ダウンタイム アクティビティ** の詳細表示に戻り、**結果としての作業指示書のメンテナンス作業** および **メンテナンス スケジュール明細行** クイック タブで調節する明細行を選択します。
 
@@ -89,11 +91,8 @@ ms.locfileid: "6727921"
 
 16. **OK** をクリックして、計算を開始します。 品目予測の合計数は、**品目予測** の概要に表示されます。 **品目予測** タブの **グループ化** アクション ウィンドウ グループで、該当するボタンをクリックして、予測品目の配賦の詳細な概要を取得します。次の図では、**品目予測** 計算の結果を表示します。
 
-![図 4。](media/22-preventive-maintenance.png)
+![図 4](media/22-preventive-maintenance.png)
 
 - あるメンテナンス ダウンタイム アクティビティから別のアクティビティに資産をコピーすることができます。 **すべてのメンテナンス ダウンタイム アクティビティ** で **メンテナンス ダウンタイム アクティビティのコピー** ボタンを選択します。**メンテナンス ダウンタイム アクティビティのコピー元** および **メンテナンス ダウンタイム アクティビティのコピー先** フィールドを選択し、**OK** をクリックします。
 - **すべてのメンテナンス ダウンタイム アクティビティ** で、**メンテナンス スケジュール明細行** ボタンまたは **有効な作業指示書** ボタンをクリックして関連するリストを開き、選択したメンテナンス ダウンタイム アクティビティに関連する明細行を表示します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

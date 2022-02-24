@@ -1,10 +1,12 @@
 ---
-title: Commerce での新しい製品の作成
+title: Commerce の新しい製品を作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce に新しい製品を作成する方法について説明します。
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,14 +16,14 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 73911d9d8e3fdc6d72eadb8d071382e15dd5375eae8274f88d88b1078e7720f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b578c1bdfe1c6b4bf66cc85cc09ed906fb812a8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753725"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965318"
 ---
-# <a name="create-a-new-product-in-commerce"></a>Commerce での新しい製品の作成
+# <a name="create-a-new-product-in-commerce"></a>Commerce の新しい製品を作成
 
 
 [!include [banner](includes/banner.md)]
@@ -49,13 +51,13 @@ ms.locfileid: "6753725"
 
 次の図は、製品が追加された例を示しています。
 
-![製品を作成します。](media/create-new-product.png)
+![製品の作成](media/create-new-product.png)
 
 製品を追加すると、**製品説明**、**バリアント グループ**、**分析コードグループ**、**製品属性**、**関連製品** などの追加データを設定できます。
 
 次の図は、製品の詳細を示しています。
 
-![製品の詳細。](media/create-new-product-2.png)
+![製品の詳細](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>製品バリアントの作成
 
@@ -74,23 +76,23 @@ ms.locfileid: "6753725"
 
 1. 製品ページで、**リリース製品** を選択します。
 
-    ![リリース製品。](media/create-new-product-3.png)
+    ![製品をリリース](media/create-new-product-3.png)
 
 1. リリースする製品を選択し、**次へ** を選択します。
 
-    ![リリースする製品を選択します。](media/create-new-product-4.png)
+    ![リリースする製品を選択](media/create-new-product-4.png)
 
 1. リリースする製品バリアントのセットを選択し、**次へ** を選択します。
 
-    ![リリースするバリアントを選択します。](media/create-new-product-5.png)
+    ![リリースするバリアントを選択](media/create-new-product-5.png)
 
 1. 法人を選択し、**次へ** を選択します。
 
-    ![法人を選択します。](media/create-new-product-6.png)
+    ![法人の選択](media/create-new-product-6.png)
 
 1. **完了** を選択します。
 
-    ![製品リリースを完了します。](media/create-new-product-7.png)
+    ![製品リリース完了](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>リリースされた製品をコンフィギュレーションする
 
@@ -105,13 +107,10 @@ ms.locfileid: "6753725"
 
 次の図は、リリースされた製品のコンフィギュレーションの例を示しています。
 
-![リリースされた製品をコンフィギュレーションします。](media/create-new-product-8.png)
+![リリースされた製品をコンフィギュレーションする](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
-[法人を作成します](channels-legal-entities.md)
+[法人の作成](channels-legal-entities.md)
 
 [バリアント グループの作成](create-variant-group.md) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

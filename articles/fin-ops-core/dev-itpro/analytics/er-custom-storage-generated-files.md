@@ -2,9 +2,11 @@
 title: 生成されるドキュメントに対するカスタム ストレージの場所を指定する
 description: このトピックでは、電子申告 (ER) 形式で生成されたドキュメントの保存先のリストを拡張する方法について説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 362ac7f10cc61e26be89dfbae0e84745d42588a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594912"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680761"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>生成されるドキュメントに対するカスタム ストレージの場所を指定する
 
@@ -27,7 +29,7 @@ ms.locfileid: "7594912"
 
 ## <a name="prerequisites"></a>必要条件
 
-継続的ビルドをサポートするトポロジを配置します。 詳細については、[継続的ビルドとテストの自動化をサポートするトポロジの配置](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation)を参照してください。 次のいずれかのロールに対応するこのトポロジにアクセスできる必要があります:
+継続的ビルドをサポートするトポロジを配置します。 詳細については、[継続的ビルドとテストの自動化をサポートするトポロジの配置](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation)を参照してください。 次のいずれかのロールに対応するこのトポロジにアクセスできる必要があります:
 
 - 電子申告開発者
 - 電子申告機能コンサルタント
@@ -41,7 +43,7 @@ ms.locfileid: "7594912"
 
 カスタム ストレージの場所を追加する予定のドキュメントを生成するには、**固定資産ロール フォワード** ER 形式の構成を現在のトポロジに [インポート](er-download-configurations-global-repo.md) します。
 
-![構成レポジトリ ページ。](./media/er-custom-storage-generated-files-import-format.png)
+![レポジトリ ページの構成](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>固定資産ロール フォワード レポートの実行
 
@@ -52,7 +54,7 @@ ms.locfileid: "7594912"
 5. **形式マッピング** フィールドで、**固定資産ロール フォワード** を選択します。
 6. **OK** を選択します。
 
-![固定資産ロール フォワード レポートのランタイム ダイアロボックス。](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![固定資産ロール フォワード レポートのランタイム ダイアロボックス](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 Microsoft Excel で、生成されてダウンロード可能な送信ドキュメントを確認します。 この動作は、[送信先](electronic-reporting-destinations.md) が設定されておらず、対話モードで実行されている ER フォーマットの [既定の動作](electronic-reporting-destinations.md#default-behavior) です。
 
@@ -255,7 +257,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. 既存の `AssetRollForwardService` クラスを変更し、レポート ランナーのカスタム送信先ファクトリを設定するコードを記述します。 カスタムの送信先ファクトリが構築されるときに、ターゲット フォルダーを指定するアプリケーション駆動型のパラメーターが渡されることに注意してください。 これにより、そのターゲット フォルダーは、生成されたファイルを保存するために使用されます。
 
     > [!NOTE] 
-    > AOS サービスを実行するサーバーのローカル ファイル システムに、指定したフォルダー (この例では **c:\\0**) が存在することを確認してください。 それ以外の場合は、[DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) 例外が実行時にスローされます。
+    > AOS サービスを実行するサーバーのローカル ファイル システムに、指定したフォルダー (この例では **c:\\0**) が存在することを確認してください。 それ以外の場合は、[DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) 例外が実行時にスローされます。
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -339,6 +341,3 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 - [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 - [拡張機能のホーム ページ](../extensibility/extensibility-home-page.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

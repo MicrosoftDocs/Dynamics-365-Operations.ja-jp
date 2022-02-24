@@ -2,9 +2,11 @@
 title: 品揃えの設定
 description: この記事は、品揃えとは何か、および Dynamics 365 Commerce での品揃えの設定方法を説明します。
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 31ec0079584832537431872fea61a07b58d31648cdac0f29a469bc977009622f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774488"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969829"
 ---
 # <a name="set-up-assortments"></a>品揃えの設定
 
@@ -31,7 +33,7 @@ ms.locfileid: "6774488"
 
 品揃えとは、従来型の店舗、オンライン ストアなどのコマース チャネルに割り当てられた関連する製品の集まりです。 各店舗で利用できる製品を識別するために品揃えを使用します。 品揃えには、製品のカテゴリを含めることができます。 したがって、特定のカテゴリに割り当てられているすべての製品が品揃えに含まれます。 また、品揃えには、製品の特定の製品および特定のバリアントを含めることもできます。 品揃えを設定することで、店舗で必要なあらゆる組み合わせで何千もの製品をチャネルに同時に割り当てることができます。 製品の品揃えは必要なだけ設定できます。 各製品を 1 つまたは複数の品揃えに含めて、各カテゴリを 1 つまたは複数のチャネルに割り当てることができます。 たとえば、製品の基準セットが含まれる 1 つの品揃えを定義します。 すべての店舗はこの品揃えを受入します。 その後、大きいスポーツ用品のみが含まれる別の品揃えを定義します。 大規模な店舗のみこの品揃えを受入します。 次の図は、製品を品揃えに割り当てる方法とそれらの品揃えをチャネルに割り当てる方法を示します。
 
-![製品品揃えリレーションシップ。](./media/assortments_relationship.gif)
+![製品品揃えリレーションシップ](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -52,6 +54,3 @@ ms.locfileid: "6774488"
 2. チャネル、または品揃えが適用されているチャネルの上位レベル グループを選択します。
 3. 製品カテゴリ、個々の製品、または製品バリアントを品揃えに追加します。 特定のカテゴリにすべての製品を含めたり、選択した製品を品揃えに含まれているカテゴリから除外したりすることができます。
 4. 品揃えを公開します。 品揃えを公開すると、品揃えスケジューラが自動的に実行されます。 このプロセスにより、製品の一覧が生成されます。 このプロセスが完了すると、製品の品揃えが割り当てられているチャネルで製品が利用可能になります。 公開されている品揃えを変更したり、品揃えが割り当てられているチャネルを変更したりする場合には、品揃えを更新する必要があります。 変更時に品揃えを更新するには、品揃えスケジューラをバッチ ジョブとして実行できます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

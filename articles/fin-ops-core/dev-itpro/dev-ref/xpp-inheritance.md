@@ -1,20 +1,27 @@
 ---
 title: X++ 継承
 description: このトピックでは、X++ の継承について説明します。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 06/18/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 150303
+ms.assetid: 1b2d76d1-52d9-46b2-937f-5a3b62f2d516
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df7cbb315fb5c4ad0a0a73d44fd7d642711dcc3e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ba6fe9e7547c3f80041d97ad39f1adf005b3c15e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781304"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408690"
 ---
 # <a name="x-inheritance"></a>X++ 継承
 
@@ -153,6 +160,3 @@ public class Attribute
 
 対照的に、*オーバーロード* は複数のメソッドが同じ名前を持つ場合に発生しますが、メソッドは異なるシグネチャ (戻り値の型、パラメーター リスト、または両方) を持ちます。 X++ はオーバーライドをサポートしますが、オーバーロードはサポートしていません。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

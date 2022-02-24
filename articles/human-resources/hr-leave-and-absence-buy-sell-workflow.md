@@ -2,12 +2,15 @@
 title: 休暇の売買申請ワークフローの作成
 description: 休暇の売買申請ワークフローを作成して、Dynamics 365 Human Resources で休暇申請の売買を一貫して管理します。
 author: andreabichsel
+manager: AnnBe
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b9e56c130cd831e6a1ad258c679562cb6de57d9b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d490e0c36ea0e854c5d7afc5b3bf75f6b65e542c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070680"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419427"
 ---
 # <a name="create-a-buy-and-sell-leave-request-workflow"></a>休暇の売買申請ワークフローの作成
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources でワークフローを作成して、休暇の売買申請を一貫して管理します。 **休暇の購入と売却** ワークフローでは、次の操作を行うことができます :
 
@@ -45,7 +43,7 @@ Dynamics 365 Human Resources でワークフローを作成して、休暇の売
 
 4. **このファイルを開きますか ?** メッセージ ボックスが表示されたら、**開く** を選択して、会社の資格情報でサイン インします。
 
-5. ワークフロー エディターを使用して、休暇申請のワークフローを作成します。 ワークフローの作成に関する詳細については、[ワークフローの作成の概要](../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=%2fdynamics365%2fcommerce%2ftoc.json.) を参照してください
+5. ワークフロー エディターを使用して、休暇申請のワークフローを作成します。 ワークフローの作成に関する詳細については、[ワークフローの作成の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.) を参照してください
 
 ## <a name="leave-and-absence-request-workflow-data-elements"></a>休暇および欠勤申請ワークフローの日付要素
 
@@ -74,16 +72,12 @@ Dynamics 365 Human Resources でワークフローを作成して、休暇の売
 
 これらの例では、次のデータ要素を使用してさまざまなタイプのワークフロー条件を作成する方法を示します：
 
-- 自動アクションで **人事担当者による提出** と **マネージャーによる提出** を使用して、これらの役割が従業員に代わって提出する休暇の購入と売却の申請を自動的に承認します。 自動アクションの詳細については、[ワークフローでの承認プロセスの構成](../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md) を参照してください。
+- 自動アクションで **人事担当者による提出** と **マネージャーによる提出** を使用して、これらの役割が従業員に代わって提出する休暇の購入と売却の申請を自動的に承認します。 自動アクションの詳細については、[ワークフローでの承認プロセスの構成](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow) を参照してください。
 
 - 条件文または自動アクションで **休暇タイプ** を使用して、特定の休暇タイプの申請をワークフローでどのようにルーティングするかを制御します。
 
 ## <a name="see-also"></a>参照
 
 [休暇の概要](hr-leave-and-absence-overview.md)<br>
-[休暇の売買ポリシーの管理](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)<br>
-[休暇の売買](hr-employee-self-service-buy-sell-leave.md)
+[休暇の売買ポリシーの管理](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

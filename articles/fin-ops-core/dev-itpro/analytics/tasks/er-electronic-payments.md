@@ -1,10 +1,12 @@
 ---
 title: 書式設定のコンフィギュレーションを使用する、支払用の ER 生成の電子ドキュメント
-description: このトピックでは、支払い処理用の電子ドキュメントを生成するために新しい電子申告 (ER) 形式のコンフィギュレーションを使用する方法について説明します。
+description: 次の手順では、システム管理者または電子申告開発者の役割のユーザーが、支払処理の電子ドキュメントを生成する新しい電子申告 (ER) 形式のコンフィギュレーションを使用する方法を説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym, BankAccountTableLookUp
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05295ff36ffd194b3f50fcdd9d7528c787c80f39104f46f9c51890a75a852735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e88df5c2f92ee2b9b448ba100c8bc4105eddae4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712667"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681736"
 ---
 # <a name="er-generate-electronic-documents-for-payments-using-a-format-configuration"></a>書式設定のコンフィギュレーションを使用する、支払用の ER 生成の電子ドキュメント
 
@@ -79,6 +81,3 @@ ms.locfileid: "6712667"
 25. [OK] をクリックします。
     * XML 形式で作成した支払ファイルを分析します。 設計されたドキュメント レイアウトおよび定義された支払トランザクションの属性と比較します。  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

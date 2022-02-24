@@ -2,24 +2,27 @@
 title: 小売明細書の店舗のコンフィギュレーション
 description: この手順では、コマース明細書の作成される影響を及ぼす、転記または店舗のコンフィギュレーションを説明します。
 author: jashanno
+manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bebe5d6732e6f8156e0271000a0b6caa24ba432491adc0370850109f19b7e4c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e255c58997ed1c0ad5614b15867f14714a8bcfc8
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770936"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4413906"
 ---
 # <a name="store-configurations-for-retail-statements"></a>小売明細書の店舗のコンフィギュレーション
 
@@ -46,6 +49,3 @@ ms.locfileid: "6770936"
 17. 定義された各明細書の方法で明細書が作成されるようにする場合は、**明細書の方法別分割** で「はい」を選択します。 このアクションは、並列処理できる小さな明細書が大量に作成されるため、店舗の大量のトランザクションの転記のパフォーマンスを改善する必要がある場合に役立ちます。  
 18. **一般** クイック タブの **既存の顧客** フィールドで、飛び込みの顧客への販売に使用する顧客口座を選択できます。  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

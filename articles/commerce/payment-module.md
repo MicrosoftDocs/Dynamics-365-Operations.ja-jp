@@ -1,31 +1,34 @@
 ---
 title: 支払いモジュール
-description: このトピックでは、支払いモジュールについて取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+description: このトピックでは、支払いモジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
-ms.date: 01/07/2022
+manager: annbe
+ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 27b73f7a05605e4e3ee8f8b72400172b7a8bfc33
+ms.sourcegitcommit: ec78608eb96478b7a57928b60aece129d6799c5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952472"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4581915"
 ---
-# <a name="payment-module"></a>支払モジュール
+# <a name="payment-module"></a>支払いモジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、支払いモジュールについて取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+このトピックでは、支払いモジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 
 支払モジュールにより、顧客はクレジット カードやデビット カードを使用して注文の支払を行うことができます。 このモジュールの支払い統合は、 Dynamics 365 Payment Connector によって提供されます。 支払いコネクタを設定および構成方法についての詳細は、[Adyen 用の Dynamics 365 Payment Connector ](dev-itpro/adyen-connector.md) を参照してください。  
 
@@ -46,23 +49,23 @@ Adyen 支払いコネクタは強力な顧客認証 (SCA) もサポートしま�
 
 次の図は、チェックアウト ページのギフト カード、ロイヤルティ ポイント、Adyen 支払モジュールの例を示しています。
 
-![チェックアウト ページのギフト カード、ロイヤルティ ポイント、Adyen 支払モジュールの例。](./media/ecommerce-payments.PNG)
+![チェックアウト ページのギフト カード、ロイヤルティ ポイント、Adyen 支払モジュールの例](./media/ecommerce-payments.PNG)
 
 ## <a name="dynamics-365-payment-connector-for-paypal"></a>PayPal 向け Dynamics 365 Payment Connector
 
 Commerce リリース 10.0.14 の時点で、支払モジュールは PayPal 向け Dynamics 365 Payment Connector とも統合されています。 この支払コネクタを設定および構成方法についての詳細は、[PayPal 向け Dynamics 365 Payment Connector ](paypal.md) を参照してください。
  
-チェックアウト ページでは、Adyen と PayPal の両方のコネクタをコンフィギュレーションすることができます。 支払モジュールは、どのコネクタを使用する必要があるかを識別するための追加プロパティを持つように拡張されています。 詳細については、次の表の **サポートされている支払 / 入金タイプ** および **基本支払い** モジュールのプロパティを参照してください。
+チェックアウト ページでは、Adyen と PayPal の両方のコネクタをコンフィギュレーションすることができます。 支払モジュールは、どのコネクタを使用する必要があるかを識別するための追加プロパティを持つように拡張されています。 詳細については、次の表の **サポートされている支払/入金タイプ** および **基本支払い** モジュールのプロパティを参照してください。
   
 PayPal 支払コネクタを使用するように支払モジュールがコンフィギュレーションされている場合、チェックアウト ページに PayPal ボタンが表示されます。 顧客から呼び出された場合、支払モジュールは PayPal 情報を含む iFrame をレンダリングします。 顧客はログインして、この iFrame に PayPal 情報を提供することで、トランザクションを完了できます。 顧客が PayPal での支払いを選択した場合、注文の残りの残高は PayPal 経由で請求されます。
 
 PayPal 支払コネクタは、すべての請求書関連情報が、その iFrame 内の PayPal によって処理されるため、請求先住所のモジュールを必要としません。 ただし、送付先住所と配送オプションの各モジュールが必要です。
 
 次の図は、チェックアウト ページにある 2 つの支払モジュール (Adyen コネクタと PayPal 支払コネクタで構成された支払方法の例) を示しています。
-![チェックアウト ページのAdyen 支払モジュールと PayPal モジュールの例。](./media/ecommerce-paypal.png)
+![チェックアウト ページのAdyen 支払モジュールと PayPal モジュールの例](./media/ecommerce-paypal.png)
 
 次の図は、PayPal ボタンを使用して起動された PayPal iFrame の例を示しています。 
-![チェックアウト ページの Paypal iFrame の例。](./media/ecommerce-paypal-iframe.png)
+![チェックアウト ページの Paypal iFrame の例](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>支払モジュールのプロパティ
 
@@ -72,11 +75,11 @@ PayPal 支払コネクタは、すべての請求書関連情報が、その iFr
 | iframe の高さ | ピクセル | ピクセル単位での iframe の高さ。 高さは必要に応じて調整できます。 |
 | 請求先住所の表示 | **True** または **False** | このプロパティが **True** に設定されている場合、請求先住所は、支払モジュール iframe 内の Adyen で処理されます。 この値が **False** に設定されている場合は、請求先住所が Adyen によって処理されないため、Commerce ユーザーは、チェックアウト ページで請求先住所を表示するようにモジュールをコンフィギュレーションする必要があります。 PayPal の支払コネクタの場合、このフィールドは、PayPal で請求先住所が完全に処理されているので、影響を与えません。 |
 | 支払スタイルの上書き | カスケード スタイル シート (CSS) コード | 支払モジュールは iframe でホストされるため、スタイル機能が制限されます。 このプロパティを使用すると、何らかのスタイルを実現できます。 サイト スタイルをオーバーライドするには、CSS コードをこのプロパティの値として貼り付ける必要があります。 サイト ビルダー CSS が上書きし、スタイルはこのモジュールには適用されません。 |
-|サポートされている支払/入金タイプ| 文字列| 複数の支払コネクタが構成されている場合は、サポートされている支払/入金タイプ文字列を Commerce 本社支払コネクタ コンフィギュレーションで定義されているとおりに提供する必要があります (次の画像を参照)。 空白の場合、既定では Adyen 支払コネクタになります。 Commerce リリース 10.0.14 に追加されました。|
+|サポートされている支払/入金タイプ| 文字列| 複数の支払コネクタがコンフィギュレーションされている場合は、サポートされている支払/入金タイプ文字列を Commerce 本社支払コネクタ コンフィギュレーションで定義されているとおりに提供する必要があります (この画像を参照)。 空白の場合、既定では Adyen 支払コネクタになります。 Commerce リリース 10.0.14 に追加されました。|
 |基本支払|  **True** または **False** | **True** の場合、すべてのエラー メッセージは、チェックアウト ページの基本支払コネクタから生成されます。 Adyen と PayPal の両方の支払コネクタがコンフィギュレーションされている場合は、Commerce リリース 10.0.14 で追加された Adyen を **True** に設定します。|
 
 次の図は、Commerce 本社の支払コネクタのコンフィギュレーションで "PayPal" に設定されている、**サポートされている支払/入金タイプ** の値の例を示しています。
-![Commerce 本社でサポートされている支払/入金タイプの例。](./media/ecommerce-paymenttendertypes.png)
+![Commerce 本社でサポートされている支払/入金タイプの例](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>請求先住所
 
@@ -90,28 +93,11 @@ PayPal 支払コネクタは、すべての請求書関連情報が、その iFr
 
 支払い モジュールは、チェックアウト モジュールにのみ追加できます。 チェックアウト ページをコンフィギュレーションする方法の詳細については、[チェックアウト モジュール](add-checkout-module.md) を参照してください。
 
-## <a name="configure-the-adyen-and-paypal-payment-connectors-when-both-are-used"></a>Adyen と PayPal の支払コネクタを構成する (両方を使用する場合)
-
-Adyen と PayPal の両方の支払コネクタをサイトで使用する場合は、Commerce サイト ビルダの次の手順に従って、各コネクタの支払モジュールをチェックアウト モジュールに追加し、各モジュールのプロパティを構成します。
-
-1. PayPal 支払モジュールのプロパティ ウィンドウで、次の手順に従います。
-
-    1. **サポートされている支払/入金タイプ** プロパティのフィールドに、**PayPal** と入力します。
-    1. **基本支払** プロパティのチェック ボックスをオフにします。
-    1. **コネクタ ID を使用** プロパティ のチェック ボックスを オンにします。
-
-1. Adyen 支払モジュールのプロパティ ウィンドウで、次の手順に従います。
-
-    1. **サポートされている支払/入金タイプ** プロパティのフィールドを空欄のままにします。
-    1. **基本支払** プロパティのチェック ボックスを選択します。
-    1. **コネクタ ID を使用** プロパティ のチェック ボックスを オンにします。
-
-> [!NOTE]
-> Adyen と PayPal のコネクタをまとめて使用するには、**Adyen 向け Dynamics 365 Payment Connector** 構成が、Commerce 本社でオンライン チャンネルの **支払アカウント** コネクタ構成の最初の位置にある必要があります。 コネクタの注文を確認または変更するには、**オンライン ストア** に移動 し、サイトのチャンネルを選択します。 次に、**設定** タブの **支払アカウント** クイックタブの **コネクタ** で 、**Adyen 向け Dynamics 365 Payment Connector** 構成が 1 番目の位置 (つまりトップライン) に配置され、**PayPal 向け Dynamics 365 Payment Connector** 構成が 2 行目に配置されている必要があります。 コネクタを再発注するために必要に応じて、コネクタを追加または削除します。
+Adyen と PayPal の両方の支払コネクタが必要な場合は、両方のモジュールを支払セクションに追加します。 **サポートされている支払/入金タイプ** プロパティ値が PayPal 向けにコンフィギュレーションされていることを確認し、Adyen 向けは空のままにします。 また、**基本支払** プロパティを Adyen 向けに **True** に設定します。
 
 ## <a name="additional-resources"></a>追加リソース
 
-[買い物カゴ モジュール](add-cart-module.md)
+[カート モジュール](add-cart-module.md)
 
 [カート アイコン モジュール](cart-icon-module.md)
 
@@ -132,6 +118,3 @@ Adyen と PayPal の両方の支払コネクタをサイトで使用する場合
 [PayPal 向け Dynamics 365 Payment Connector](paypal.md)
 
 [Adyen を使用した強力な顧客認証 (SCA)](adyen_redirect.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

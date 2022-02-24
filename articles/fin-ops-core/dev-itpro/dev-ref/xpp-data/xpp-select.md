@@ -1,20 +1,26 @@
 ---
 title: データの選択
 description: このトピックでは、X++ 言語での select ステートメントについて説明します。
-author: tonyafehr
-ms.date: 08/27/2021
+author: robinarh
+manager: AnnBe
+ms.date: 06/16/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 150273
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 9354cd373d387eacb708d190cf22dcc6bedcb45b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1963736c429f1af69aa7d69b03937f6287874673
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783261"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408735"
 ---
 # <a name="select-data"></a>データの選択
 
@@ -35,7 +41,7 @@ ms.locfileid: "7783261"
 
 ```xpp
 CustTable custTable;
-select firstonly custTable; //this is a short notation for 'select firstonly * from custTable;'  
+select * from custTable;
 info("AccountNum: " + custTable.AccountNum);
 ```
 
@@ -43,7 +49,7 @@ info("AccountNum: " + custTable.AccountNum);
 
 ```xpp
 CustTable custTable;
-while select custTable
+while select * from custTable
 {
     info("AccountNum: " + custTable.AccountNum);
 }
@@ -53,7 +59,7 @@ while select custTable
 
 ```xpp
 CustTable custTable;
-select custTable;
+select * from custTable;
 info("AccountNum: " + custTable.AccountNum);
 
 next custTable;
@@ -61,5 +67,3 @@ info("AccountNum: " + custTable.AccountNum);
 ```
 
 詳細については、[select ステートメント](xpp-select-statement.md)を参照してください。
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

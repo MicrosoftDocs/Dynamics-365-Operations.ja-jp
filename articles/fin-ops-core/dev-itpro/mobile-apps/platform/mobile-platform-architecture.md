@@ -1,21 +1,27 @@
 ---
 title: モバイル プラットフォームのアーキテクチャと設計の考慮事項
-description: このトピックでは、モバイル プラットフォームのアーキテクチャと設計の考慮事項を提供します。
-author: tonyafehr
+description: このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。
+author: robinarh
+manager: AnnBe
 ms.date: 09/17/2019
-ms.topic: overview
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 255544
+ms.assetid: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: ae854e156d6e0f386ac357b46ecc7dc25f734519
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 47827b37cbc7f20bf026029b244a056f18fdbba6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986073"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679920"
 ---
 # <a name="architecture-and-design-considerations-for-the-mobile-platform"></a>モバイル プラットフォームのアーキテクチャと設計の考慮事項
 
@@ -23,14 +29,14 @@ ms.locfileid: "7986073"
 
 モバイル アプリは、モバイル ワークスペース (およびページに表示されるページとフィールド) のメタデータを取得し、ページのフィールドのデータを取得するために Application Object Server (AOS) と通信します。 モバイル アプリがページのデータを要求するたびに、AOS では、モバイル アプリを使うユーザーのコンテキストで使用している新しいセッションを作成します。 AOSは、次にユーザーのコンテキストを使用して、対応するフォーム (対応するメニュー項目を使用) を開きます。 AOS は、すばやく連続して複数のフォームを開くことができ、それらのフォーム (フィルター処理、情報ボックスを開く、タブ ページの変更、ボタンのクリック) に対してアクションを実行できます。 フォーム上のビジネス ロジックも通常どおり実行されます。 そのプロセスを通じて AOS は要求されたフィールドからデータ値を収集し、そのデータをモバイル アプリに送り返します。 
 
-![モバイル アーキテクチャ。](media/mobilearchitecture.png)
+![モバイル アーキテクチャ](media/mobilearchitecture.png)
 
-モバイル アプリ プラットフォームは、財務と運用アプリへの接続を想定していません。 ナビゲーション、データの表示、データ入力などの活動は、データがキャッシュされた後にサーバー接続の必要はありません。
+モバイル アプリ プラットフォームは、Finance and Operations アプリへの接続を想定していません。 ナビゲーション、データの表示、データ入力などの活動は、データがキャッシュされた後にサーバー接続の必要はありません。
 
 ## <a name="understanding-navigation-in-the-mobile-app"></a>モバイル アプリでのナビゲーションを理解する
 モバイル アプリのナビゲーションは、ダッシュボード、ワークスペース、ページ、およびアクションという 4 つの簡単な概念で構成されています。 
 
-![モバイル アプリのナビゲーション概念。](media/mobilephoneapp1.png)
+![モバイル アプリのナビゲーション概念](media/mobilephoneapp1.png)
 
 -   アプリを起動すると、**ダッシュボード** が表示されます。 **ダッシュボード** には、環境で公開されている **ワークスペース** の一覧が表示されます。
 -   各 **ワークスペース** では、そのワークスペースで使用可能な **ページ** の一覧が表示されます。
@@ -48,7 +54,7 @@ ms.locfileid: "7986073"
 
 **モバイル ワークスペースは、デザイナーを通じて、X++ 属性 API、またはその両方の組み合わせを使用して作成することができます。モバイルワークスペースの構築に X++ API を使用する方法の詳細については、 [SysAppWorkspace クラスを使用したワークスペースのコンフィギュレーション](scenarios/mobile-workspace-configuration.md) を参照してください。**
 
-![モバイル アプリ デザイナー。](media/mobileappdesigner.png)
+![モバイル アプリ デザイナー](media/mobileappdesigner.png)
 
 1.  クライアントを開きます。 
 2.  **設定** &gt; **モバイル アプリ** に移動します。
@@ -68,16 +74,13 @@ ms.locfileid: "7986073"
 
 | 変更のタイプ     | 説明                      |
 |-------|----------------------------------------------|
-| 新しいワークスペース、削除されたワークスペース、またはワークスペースの名前、色、またはアイコンへの変更 | ワークスペースの一覧が表示される、アプリの主要なランディング ページ (ダッシュボード) からプルして更新します。<br>![ダッシュボードからプルして更新します。](media/refreshworkspaces.png) |
-| その他のすべての変更 (新しいまたは変更されたページまたはアクション、またはビジネス ロジックへ変更)         | 編集されたページまたはアクションを持つワークスペースからプルして更新します。<br>![ワークスペースからプルして更新します。](media/refreshpages.png)                                             |
+| 新しいワークスペース、削除されたワークスペース、またはワークスペースの名前、色、またはアイコンへの変更 | ワークスペースの一覧が表示される、アプリの主要なランディング ページ (ダッシュボード) からプルして更新します。<br>![ダッシュボードからプルして更新](media/refreshworkspaces.png) |
+| その他のすべての変更 (新しいまたは変更されたページまたはアクション、またはビジネス ロジックへ変更)         | 編集されたページまたはアクションを持つワークスペースからプルして更新します。<br>![ワークスペースからプルして更新](media/refreshpages.png)                                             |
 
-### <a name="additional-resources"></a>追加リソース
+### <a name="additional-resources"></a>その他のリソース
 
 [ページ デザインのガイドライン](page-design-guidelines.md)
 
 [アクション デザインのガイドライン](action-design-guidelines.md)
 
 [フォーム デザインの要件](form-design-requirements.md)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

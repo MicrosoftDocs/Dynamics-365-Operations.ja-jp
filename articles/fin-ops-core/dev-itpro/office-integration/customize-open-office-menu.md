@@ -1,35 +1,36 @@
 ---
 title: '[Microsoft Office で開く] メニューのカスタマイズ'
-description: このトピックでは、[Open in Office] メニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。
-author: jasongre
-ms.date: 05/24/2021
+description: ほとんどのページには、Microsoft Office で開くメニューが含まれます。 このトピックでは、[Open in Office] メニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。
+author: ChrisGarty
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 270774
 ms.assetid: 3ff1184b-1a8a-4102-9600-f1776634d95f
 ms.search.region: Global
-ms.author: jasongre
+ms.author: cgarty
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 965337eb2c4fc4ae3c931de5ef559c1aba39e866800a2be2b7ca2336fc46fede
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 309557d9760b57af7144d372b8b67499f75d7147
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714565"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679914"
 ---
 # <a name="customize-the-open-in-microsoft-office-menu"></a>Microsoft Office で開くメニューのカスタマイズ
-
-[!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
 
 ほとんどのページには、Microsoft Office で開くメニューが含まれます。 このトピックでは、[Open in Office] メニューについての情報を提供し、オプションの追加、削除、変更によってカスタマイズする方法について説明します。
 
-## <a name="overview"></a>概要
+<a name="overview"></a>概要
+--------
 
 **Microsoft Office で開く** メニュー ボタン (**Office で開く** メニュー) は、ページに表示されるシステム定義ボタンです。 **Office で開く** メニューには、Microsoft Excel や Microsoft Word などのさまざまな Office 製品にデータをエクスポートできるようにするためのメニュー項目が含まれています。 次のテーブルは、**Office で開く** メニューのメニュー項目について説明しています。
 
@@ -105,28 +106,12 @@ public static class MyForm_Extension
 }
 ```
 
-## <a name="office-menu-best-practices"></a>Office メニューのベスト プラクティス
-
-### <a name="avoid-apis-that-could-initialize-the-metadata-cache-during-form-load"></a>フォームの読み込み中にメタデータ キャッシュを初期化する API の回避
-
-次のクラスはメタデータ キャッシュを初期化する可能性があり、非常に時間がかかる場合があります。 このため、これらのクラスをフォームの読み込み中に (`init()` および `run()` など) 実行されるメソッドで使用しないでください。フォームの読み込み時間が長引く場合があります。  
-
--  ExportToExcelMetadataCache
--  ExportToExcelDataEntityContext
--  OfficeDataEntityExportMenuItem
--  ExportToExcelDataEntityHelper
--  ExportToExcelFilterTreeBuilder
-
 ## <a name="typical-customization-scenarios"></a>一般的なカスタマイズ シナリオ
 次の例では、**\_menuOptions** 変数に、カスタマイズしている **OfficeMenuOptions** インスタンスが含まれていると想定しています。
 
 ### <a name="modifying-the-set-of-data-entities-that-is-considered-for-a-page"></a>ページで考慮されるデータ エンティティのセットの変更
 
 **Office で開く** メニューにあるメニュー項目の多くは、ページとみなされるデータ エンティティに基づいて自動的に追加されます。 ただし、場合によっては、データ エンティティのセットを特定するために使用されるアルゴリズムが、正しいセットを特定しない可能性があります。 ページと見なされるデータ エンティティのセットを変更するには、**OfficeIMenuCustomizer.customizeMenuOptions** メソッドまたは **OfficeFormRunHelper.OfficeMenuInitializing** デリゲートから利用可能な **OfficeMenuOptions** を使用します。
-
-> [!WARNING]
-> このコードは、フォーム init() または run() には使用しません。 これは、特にシステムを変更した場合、フォームの読み込み速度に悪影響を与える可能性があります。
-
 
 ```xpp
 // Add an entity to the list
@@ -295,6 +280,3 @@ public class MyEntity extends common
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

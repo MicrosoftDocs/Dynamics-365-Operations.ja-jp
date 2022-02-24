@@ -1,25 +1,27 @@
 ---
 title: Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
-description: このトピックでは、Power BI Embedded を使用して提供されるレポートとデータ セットの両方へのアクセスを保護するための推奨方法について説明します。
-author: RichdiMSFT
+description: このトピックでは、Power BI Embedded を使用して提供されるレポートと、ビューアーのアクセス権に基づいてデータ セットへのアクセスを保護するための推奨方法について説明します。
+author: robinarh
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.custom: 21551
 ms.assetid: ''
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fea9957810d306e3c76d20cab0ede630334d1f102d11fea9121bd55530b4e156
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b9fa3dcd0b81e2e323fdc9c08b8dd1d5625e0bed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721916"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682205"
 ---
 # <a name="help-secure-analytical-workspaces-and-reports-by-using-power-bi-embedded"></a>Power BI Embedded を使用して分析ワークスペースおよびレポートをセキュリティで保護
 
@@ -33,12 +35,12 @@ ms.locfileid: "6721916"
 
 ## <a name="prerequisites"></a>必要条件
 + プラットフォーム更新プログラム 8 以降を実行する開発環境へのアクセス
-+ Microsoft Power BI Desktop を使用して作成され、エンティティ格納データベースから取得されたデータ モデルを持つ分析レポート (.pbix ファイル)
++ Microsoft Power BI Desktop を使用して作成され、エンティティ格納 データベースから取得されたデータ モデルを持つ分析レポート (.pbix ファイル) です。
 
 ## <a name="overview"></a>概要
 既存のアプリケーション ワークスペースを拡張する場合でも、自身のワークスペースを追加する場合でも、埋め込み分析ビューを使用して、ビジネス データの洞察的でインタラクティブなビューを提供できます。 新しい分析ワークスペースおよびレポートを追加する前に、コンテンツを保護するための戦略を確立することは重要です。
 
-Power BI Embedded を使用して分析ソリューションを開発する際には、いくつか注意すべき点があります。 分析レポートはメニュー項目を使用して保護されます。 レポートにアクセスすると、すべての閲覧者はレポートに定義されている基礎データ モデルにアクセスできます。 サービス オプションはレポート データ セットを戻しフィールドを自動的に非表示にすることが可能ですが、レポートのすべての閲覧者はデータ モデル内のフィールドに有効的にアクセスできます。 また、レポートがクライアントに表示される方法に影響を与える X++ 拡張機能が使用できます。 **フィルター** ウィンドウと **レポート** タブの両方を非表示にすることができます。 ただし、Microsoft Power BI フィルターは、クライアント側のスクリプト インジェクションを使用して変更できます。
+Power BI Embedded を使用して分析ソリューションを開発する際には、いくつか注意すべき点があります。 分析レポートはメニュー項目を使用して保護されます。 レポートにアクセスすると、すべての閲覧者はレポートに定義されている基礎データ モデルにアクセスできます。 サービス オプションはレポート データ セットを戻しフィールドを自動的に非表示にすることが可能ですが、レポートのすべての閲覧者はデータ モデル内のフィールドに有効的にアクセスできます。 また、レポートがクライアントに表示される方法に影響を与える X++ 拡張機能が使用できます。 **フィルター** ウィンドウと **レポート** タブの両方を非表示にすることができます。 ただし、Microsoft Power BI フィルターは、クライアント側スクリプト インジェクションを使用して変更できます。
 
 ### <a name="recommendation"></a>推奨事項
 シナリオ固有の .pbix ファイルを作成して分析ビューを作成する:
@@ -79,7 +81,7 @@ Power BI レポート フィルターと **フィルター** ウィンドウは�
 1. レポートまたは適切なタブのメニュー項目を追加します。既定では、その他のタブが選択されていない場合、レポートの最初のタブが表示されます。
 2. メニュー項目を **PowerBIEmbedded\_App** コンフィギュレーション キーにリンクします。
 
-    ![メニュー項目を PowerBIEmbedded_App コンフィギュレーション キーにリンクします。](media/secure-workspace-key.png)
+    ![メニュー項目の PowerBIEmbedded_App コンフィギュレーション キーへのリンク](media/secure-workspace-key.png)
 
 このメニュー項目は、Power BI Embedded サービスの可用性に関連付けられています。 サービスを使用できない場合は、アプリケーションからメニュー項目のリンクが削除されます。
 
@@ -92,7 +94,7 @@ Power BI ワークスペースとレポートは会社が保護できます (た
 2. **モデリング** タブで、**ロールの管理** をクリックします。
 3. **会社** フィールドを含むデータ モデル内の列に対して新しいロールを作成します。 新しいロールに **CompanyFilter** と名前を付けます。 会社によるアクセスを制限するために、データ モデルに **会社** フィールドが必要です。
 
-    ![新しいロールを作成します。](media/secure-workspace-filter.png)
+    ![新しいロールの作成](media/secure-workspace-filter.png)
 
 4. **テーブル フィルターの DAX 式** フィールドに、**\[COMPANY\]=username()** と入力します。
 5. ルールが機能することを確認するには、**モデリング** タブで **ロールとして表示** をクリックします。 ダイアログ ボックスで、次のフィールドを設定します。
@@ -102,6 +104,3 @@ Power BI ワークスペースとレポートは会社が保護できます (た
     3. **CompanyFilter** チェック ボックスをオンにします。
 
 これでレポートに、USMF 企業を経営しているかのようなデータが表示されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

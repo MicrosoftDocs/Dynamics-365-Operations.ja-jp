@@ -2,13 +2,16 @@
 title: POS の入庫在庫操作
 description: このトピックでは、販売時点管理 (POS) の入庫在庫操作の機能について説明します。
 author: hhaines
+manager: annbe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,14 +19,14 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741785"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413780"
 ---
-# <a name="inbound-inventory-operation-in-pos"></a>POS でのインバウンド在庫操作
+# <a name="inbound-inventory-operation-in-pos"></a>POS の入庫在庫操作
 
 [!include [banner](includes/banner.md)]
 
@@ -70,7 +73,7 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.10 またはそれ以降で
 
 ## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>前提条件: POS 画面レイアウトに入庫操作を追加する
 
-組織で入庫操作機能を使用する前に、1つ以上の [POS 画面レイアウト](/dynamics365/unified-operations/retail/pos-screen-layouts) に対して **入庫操作** の POS 操作を構成する必要があります。 新しい操作を実稼働環境に配置する前に、それを完全にテストして、使用できるようにユーザーをトレーニングしておく必要があります。
+組織で入庫操作機能を使用する前に、1つ以上の [POS 画面レイアウト](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) に対して **入庫操作** の POS 操作を構成する必要があります。 新しい操作を実稼働環境に配置する前に、それを完全にテストして、使用できるようにユーザーをトレーニングしておく必要があります。
 
 ## <a name="overview"></a>概要
 
@@ -159,9 +162,9 @@ Commerce バージョン 10.0.14 およびそれ以降では、ユーザーは�
 
 この機能は、発注受入に対してのみ使用できます。 品目が以前に注文され、出庫倉庫から出荷されていない場合、移動オーダーに対して品目を受け取ることはできません。
 
-発注書 [変更管理ワークフロー](../supply-chain/procurement/purchase-order-approval-confirmation.md) が Commerce Headquarters (HQ) で有効になっている場合、ユーザーは、POS 受信中に発注書に新しい製品を追加することはできません。 変更管理を有効にするには、最初に発注書に対するすべての変更を承認してから、受取を許可する必要があります。 このプロセスでは、受取側で発注書に新しい行を追加できるため、変更管理ワークフローが有効な場合、受取は失敗します。 すべての発注書または POS でアクティブに受信されている発注書にリンクされた仕入先に対して、変更管理が有効になっている場合、POS での受取中に新しい製品を発注書に追加することはできません。
+発注書 [変更管理ワークフロー](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) が Commerce Headquarters (HQ) で有効になっている場合、ユーザーは、POS 受信中に発注書に新しい製品を追加することはできません。 変更管理を有効にするには、最初に発注書に対するすべての変更を承認してから、受取を許可する必要があります。 このプロセスでは、受取側で発注書に新しい行を追加できるため、変更管理ワークフローが有効な場合、受取は失敗します。 すべての発注書または POS でアクティブに受信されている発注書にリンクされた仕入先に対して、変更管理が有効になっている場合、POS での受取中に新しい製品を発注書に追加することはできません。
 
-行の追加を可能にする機能は、既に発注書に記載されている製品の追加数量を受け取るための回避方法として使用することはできません。 超過受取は、発注書の製品明細行の標準の [超過受取](#over-receiving-validations) 設定によって管理されます。
+行の追加を可能にする機能は、既に発注書に記載されている製品の追加数量を受け取るための回避方法として使用することはできません。 超過受取は、発注書の製品明細行の標準の [超過受取](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) 設定によって管理されます。
 
 **販売時点管理の受信中に発注書に行を追加** が有効で、ユーザーが POS の **入庫操作** で受信している場合、ユーザーが、現在の発注書の品目としては認識されないが、有効な品目として認識される製品バーコードまたは製品番号をスキャンまたはキー入力すると、ユーザーは発注書に品目を追加することについてのメッセージを受け取ります。 ユーザーが品目を発注書に追加した場合、**入荷中** に入力された数量は、発注書の明細行の注文済数量と見なされます。
 
@@ -218,6 +221,3 @@ POS から、新しい移動オーダー ドキュメントを作成できます
 ## <a name="related-topics"></a>関連トピック
 
 [POS での出庫在庫操作](pos-outbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

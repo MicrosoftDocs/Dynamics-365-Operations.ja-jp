@@ -1,10 +1,12 @@
 ---
 title: 資産ライフサイクル状態
 description: このトピックでは、資産管理の資産ライフサイクル状態とライフサイクル モデルについて説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetLifecycleModelStateNext, EntAssetObjectLifecycleState, EntAssetLifecycleStateUpdate, EntAssetObjectLifecycleModel
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dffedfafd9d75320accf0e27f072bab6fd51f135
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722466"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016555"
 ---
 # <a name="asset-lifecycle-states"></a>資産ライフサイクル状態
 
@@ -61,12 +63,9 @@ ms.locfileid: "6722466"
 
 5. **ライフサイクル状態** クイック タブで、資産ライフサイクル モデルに含める必要がある資産ライフサイクル状態を選択します。
 
-    - モデルに対してライフサイクル状態を使用するには、**残りのライフスタイル状態** セクションでモデルを選択し、右矢印ボタン ![右矢印。](media/15-setup-for-objects.png) を選択して、 **選択されたライフサイクル状態** セクションに移行します。
-    - モデルで使用可能なすべてのライフサイクル状態を使用するには、**使用可能なすべてのライフサイクル状態** ボタン![使用可能なすべてのライフサイクル状態。](media/20-setup-for-objects.png)を選択します。 すべてのライフサイクル状態は、**選択されたライフサイクル状態** セクションに転送されます。
-    - モデルからライフサイクル状態を削除するには、**選択されたライフサイクル** セクションでモデルを選択し、左矢印ボタン ![左矢印。](media/16-setup-for-objects.png) を選択して、 **残りのライフサイクル状態** セクションに移行します。
+    - モデルのライフサイクル状態を使用するには、**残りのライフサイクル状態** セクションでそれを選択し、右矢印ボタン![右矢印](media/15-setup-for-objects.png)を選択して **選択されたライフサイクル状態** セクションに移動します。
+    - モデルで使用可能なすべてのライフサイクル状態を使用するには、**使用可能なすべてのライフサイクル状態** ボタン![使用可能なすべてのライフサイクル状態](media/20-setup-for-objects.png)を選択します。 すべてのライフサイクル状態は、**選択されたライフサイクル状態** セクションに転送されます。
+    - モデルからライフサイクル状態を削除するには、**選択されたライフサイクル状態** セクションでそれを選択し、左矢印ボタン![左矢印](media/16-setup-for-objects.png)を選択して **残りのライフサイクル状態** セクションに移動します。
 
 6. **ライフサイクル状態の更新プログラム** を選択して、選択したライフサイクル状態に従うことができる資産ライフサイクル状態を定義します。
 7. 修復のために受け取った資産を処理する場合は、**資産状態** クイック タブを使用します。 **受信/送信** セクションで、資産ライフサイクル状態を選択して、修理のために受け取る資産のワークフローを示すことができます。 顧客または部門にローン資産を提供する場合は、**ローン** セクションで、ローン資産のライフサイクル状態を選択できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

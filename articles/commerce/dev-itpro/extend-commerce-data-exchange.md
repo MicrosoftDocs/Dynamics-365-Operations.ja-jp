@@ -2,30 +2,32 @@
 title: Commerce Data Exchange の拡張 - リアルタイム サービス
 description: このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange - リアルタイム サービスを拡張する方法について説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 835f37a5a49fdbff8183d3ea63318c68abf03cf6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6cd95c85492b903983b65163e4ba64a4cdf68444
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783346"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681576"
 ---
 # <a name="extend-commerce-data-exchange---real-time-service"></a>Commerce Data Exchange の拡張 - リアルタイム サービス
 
-[!Include [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange (CDX) - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、クライアントがリアルタイムでコマース機能を操作できるようします。 Retail サーバーから Finance and Operation データベースとクラスに直接アクセスすることはできません。 Finance and Operations および Commerce Runtime 拡張機能を使用する CDX クラスの拡張機能を介してアクセスする必要があります。
+このトピックでは、RetailTransactionServiceEx クラスに拡張メソッドを追加して、Commerce Data Exchange (CDX) - リアルタイム サービスを拡張する方法について説明します。 リアルタイム サービスは、クライアントがリアルタイムでコマース機能を操作できるようします。
 
 Commerce Data Exchange - リアルタイム サービスを拡張するには、**RetailTransactionServiceEx** クラスで新しいメソッドを作成します。 このメソッドは、次の基準を満たしている必要があります。
 
@@ -62,7 +64,7 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
 
 11. コード エディターで、次のコードを追加します。 
 
-    ```X++
+    ```C#
     [ExtensionOf(classStr(RetailTransactionServiceEx))]
     final class ContosoRetailTransactionServiceSample
     {
@@ -71,27 +73,27 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
 
 12. クラス内部で、カスタム ロジックを実行する新しいメソッドを追加します。 これは、カスタム ロジックを実行するために CRT から呼び出すメソッドです。
 
-    ```X++
+    ```C#
     [ExtensionOf(classStr(RetailTransactionServiceEx))]
-    final class ContosoRetailTransactionServiceSample_Extension
+    final class ContosoRetailTransactionServiceSample
     {
         public static container SerialCheck(str _serialNum)
         {
             boolean success = false;
             str errorMessage;
             int fromLine;
-            
+
+            ttsbegin;
+
             try
             {
                 if (_serialNum)
                 {
-                     ttsbegin;
-                   // check whether the serial number exists
+                    // check whether the serial number exists
 
                     // Add your custom logic
 
                     errorMessage = "Serial number found";
-                    ttscommit;
                 }
                 else
                 {
@@ -102,9 +104,10 @@ Commerce Data Exchange - リアルタイム サービスを拡張するには、
             }
             catch (Exception::Error)
             {
-                ttsAbort;
                 error = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
             }
+
+            ttscommit;
 
             // Return sanitized error code.
             errorMessage = RetailTransactionServiceUtilities::getErrorCode(errorMessage);
@@ -163,6 +166,3 @@ if(request.RequestContext.Runtime.Configuration.IsMasterDatabaseConnectionString
 ```
 
 -   CDX メソッドへの接続に失敗した場合には、HQ に接続していない場合は操作を実行できない、または CDX メソッドに接続されていない状態でこの操作をする場合には軽減ロジックを実行する必要がある、というエラー メッセージが表示されることがあります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

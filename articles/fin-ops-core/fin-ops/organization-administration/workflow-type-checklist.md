@@ -2,31 +2,30 @@
 title: ワークフロー タイプ チェックリスト
 description: このトピックでは、新しいワークフロー タイプを作成するために必要な手順について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 389f80e432605db3a67977bb5f3e11ccf01998ce
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d2b95d17a80224adadac5f8e833a7023169ba087
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065565"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798761"
 ---
 # <a name="workflow-type-checklist"></a>ワークフロー タイプ チェックリスト
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、新しいワークフロー タイプを作成するために必要な手順について説明します。 ワークフロー タイプは、 ワークフローの構成を作成するために使用されます。
 
@@ -40,7 +39,7 @@ ms.locfileid: "8065565"
 
 1. ワークフロー ドキュメント クラスを作成し、ワークフローに使用するクエリをクラスにバインドします。 詳細については、 [新しいワークフロー ドキュメント クラスの作成](workflow-type-document-create.md) を参照してください。
 2. ワークフロー ドキュメント クラスをワークフロー タイプにバインドします。 詳細については、 [ワークフロー ドキュメント クラスとワークフロー タイプの関連付け](workflow-type-associate-document.md) を参照してください。
-3. 開始、完了、コンフィギュレーションの変更、およびキャンセルされたイベントのワークフロー イベント ハンドラーを作成し、イベント ハンドラーをワークフロー タイプにバインドします。 詳細については、 [新しいワークフロー イベント ハンドラーの作成](/dynamicsax-2012/developer/how-to-create-a-workflow-event-handler) を参照してください。
+3. 開始、完了、コンフィギュレーションの変更、およびキャンセルされたイベントのワークフロー イベント ハンドラーを作成し、イベント ハンドラーをワークフロー タイプにバインドします。 詳細については、 [新しいワークフロー イベント ハンドラーの作成](https://docs.microsoft.com/dynamicsax-2012/developer/how-to-create-a-workflow-event-handler) を参照してください。
 4. **SubmitToWorkflowMenuItem** のクラスを作成します。 必要に応じて、 **CancelMenuItem** のクラスを作成します。 次のステップで作成するアクション メニュー項目にクラスをバインドします。 詳細については、[クラスおよびメソッド](../../dev-itpro/dev-ref/xpp-classes-methods.md) を参照してください。
 5. **SubmitToWorkflowMenuItem** ワークフロー プロパティのアクション メニュー項目を作成します。 必要に応じて、 **CancelMenuItem** プロパティのアクション メニュー項目を作成します。 アクションをワークフロー タイプにバインドします。 詳細については、 [新しいワークフロー タイプの作成](workflow-type-create-new.md) を参照してください。
 
@@ -57,6 +56,3 @@ ms.locfileid: "8065565"
 [ワークフローでの自動化タスクのコンフィギュレーション](configure-automated-task-workflow.md)
 
 [ワークフローでの承認プロセスのコンフィギュレーション](configure-approval-process-workflow.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

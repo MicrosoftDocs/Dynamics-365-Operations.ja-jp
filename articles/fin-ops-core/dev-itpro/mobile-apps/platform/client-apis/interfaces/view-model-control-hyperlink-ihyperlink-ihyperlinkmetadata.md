@@ -1,18 +1,25 @@
 ---
 title: HyperLinkMetadata タイプ
 description: HyperLink メタデータ タイプ。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 65f11663ee8fe625b3ed620d9c7cd9edbe857f43
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 42998006c87c49f83b05fe666fcbb530c5604489
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781062"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681614"
 ---
 # <a name="hyperlinkmetadata-type"></a>HyperLinkMetadata タイプ
 
@@ -41,7 +48,7 @@ HyperLink メタデータ タイプ。
 * [名前](view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md#name)
 * [NumSequence](view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md#numsequence)
 * [注文](view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md#order)
-* [タイプ](view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md#type)
+* [[タイプ](view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md#type)]
 
 ## <a name="properties"></a>プロパティ
 
@@ -190,6 +197,3 @@ Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 > [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承
 
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

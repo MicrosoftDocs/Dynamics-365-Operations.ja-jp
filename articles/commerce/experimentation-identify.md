@@ -2,12 +2,15 @@
 title: 仮想を識別して実験のメトリックを決定する
 description: このトピックでは、Dynamics 365 Commerce で E コマース Web サイトで実行する実験の仮想および成功メトリックを識別する方法について説明します。
 author: sushma-rao
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,17 +18,17 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: a143f00eedc2ddb3b54f05f2475a616609af8d5a7b8a4d19d0bbcb021290dfd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43358264a2107fb139c00ce617054be16a74f935
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720935"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4413890"
 ---
 # <a name="identify-a-hypothesis-and-determine-success-metrics-for-an-experiment"></a>仮想を識別して実験の成功メトリックを決定する
 実験ライフサイクルの第 1 フェーズでは、実験の仮想を識別して、成功を評価するために追跡するメトリックを決定することが含まれます。 次の図は、Dynamics 365 Commerce の E コマース Web サイトでの[実験の設定と実行](experimentation-overview.md)に関連するすべての手順を示しています。 追加の手順については、個別のトピックで説明します。 
 
-[ ![実験ユーザー体験 - 識別。](./media/experimentation_identify.svg) ](./media/experimentation_identify.svg#lightbox)
+[ ![実験ユーザー体験 - 識別](./media/experimentation_identify.svg) ](./media/experimentation_identify.svg#lightbox)
 
 仮想とは、実験の結果を予測する明細書です。 たとえば、ユーザーの行動および収集した Web サイトのデータに関する調査など、仮想の定義には多くの要因があります。 仮想により、実験で検証する前提および理論を定義します。 実験の仮想の例としては、「*皆、夏には軽量で明るい色のものを着たいので、夏の期間は、ホーム ページにある白い T シャツの写真は、ネイビーのセーターよりもクリック率が高くなる。*」 その場合は、白い T シャツとネイビーのセーターを含むバリエーションを作成し、両方を同時に公開します。
 
@@ -37,6 +40,3 @@ ms.locfileid: "6720935"
 
 ## <a name="next-step"></a>次のステップ
 [実験の設定](experimentation-setup.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

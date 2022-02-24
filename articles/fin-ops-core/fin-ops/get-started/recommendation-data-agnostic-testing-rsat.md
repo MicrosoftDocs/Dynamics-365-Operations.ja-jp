@@ -2,9 +2,11 @@
 title: Regression Suite Automation Tool を使用したデータ認識不可能テスト
 description: このトピックでは、Regression Suite Automation Tool を使用したデータ認識不可能テストに関する推奨事項について説明します。
 author: kfend
+manager: AnnBe
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: d9a5bce1cc56dfdf66b2ce58c2e740b7c4b3bdfc7f4e75396fe5dc7cb931b6d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763413"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798204"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Regression Suite Automation Tool を使用したデータ認識不可能テスト
 
@@ -30,7 +32,7 @@ ERP アプリケーションの機能の検証は、完全にデータ認識不�
 - ATL フレームワーク
 - Regression Suite Automation Tool (RSAT)
 
-[![テストの分類ピラミッド。](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![テストの分類ピラミッド](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>概要
 -   **SysTest フレームワーク** – SysTest フレームワークは、単体テストの書き込みに対して信頼性があります。 単体テストは一般にメソッドまたは関数のテストで、常にデータ認識不可能性があり、テストの一部として提供されている入力データにのみ依存しています。
@@ -42,11 +44,8 @@ ERP アプリケーションの機能の検証は、完全にデータ認識不�
     - o 請求書番号などを番号順序で、または =TEXT(NOW(),"yyyymmddhhmm") のような Microsoft Excel の関数により固有識別子入力をします。 この関数により、アクションが発生した時間を追跡できるように、毎分固有の番号が提供されます。 これは、製品受領書番号や仕入先請求書番号などの変数に使用することができます。 これらのテストは、復元を必要とせずに、同じデータベース上で幾度も継続して動作します。
     - 既定のオプションは **自動** であるため、常に環境の **編集モード** を設定して、最初のテスト ケースとして **読み取り** または **編集** を行います。**自動** オプションは常に以前の設定を使用することができ、信頼できないテストを引き起こすことがあります。 
  
-    [![オプション ページ、パフォーマンス タブ。](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![オプション ページ、パフォーマンス タブ](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - 一般的な検証の代わりに、特定のトランザクションに対するフィルター処理をした後にのみ検証します。 たとえば、レコード数について、検証が他のすべてのトランザクションを除外するように、トランザクション番号またはトランザクション日付に対してフィルター処理を行います。 
     - 顧客残高または予算チェックを確認している場合、値を先に保存してトランザクション値を追加することにより、固定の予測値を検証する代わりに、予測された結果を検証します。 
  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

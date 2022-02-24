@@ -2,22 +2,25 @@
 title: 補充戦略
 description: このトピックでは、補充戦略に関する情報を提供し、[補充戦略] フィールドを使用して補充の実行方法を選択する方法について説明します。
 author: mirzaab
+manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
-ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: bd2ddbfeef454f2759ca09d8d763bada36a1fc83
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.16
+ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574164"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646136"
 ---
 # <a name="replenishment-strategies"></a>補充戦略
 
@@ -45,7 +48,7 @@ ms.locfileid: "7574164"
 
 テンプレートにアクセスするには、**倉庫管理 \> 設定 \> 補充 \> 補充テンプレート** に移動します。 **概要** セクションで、**補充タイプ** フィールドが *ウェーブ需要* に設定されているウェーブ補充テンプレートを選択または作成します。 次に、**補充テンプレートの詳細** セクションで補充テンプレート明細行を設定します。 各明細行の **補充戦略** フィールドで、使用する補充方法を選択します。
 
-![補充テンプレート ページ。](media/ReplenTempWaveDmdMaxLocCap.png "補充テンプレート ページ")
+![補充テンプレート ページ](media/ReplenTempWaveDmdMaxLocCap.png "補充テンプレート ページ")
 
 **補充戦略** 列がグリッドに表示されない場合、**補充テンプレートの詳細** セクションで、この機能が有効になっていることと、選択した補充テンプレートで補充タイプとして *ウェーブ需要* が選択されていることを確認します。
 
@@ -85,7 +88,7 @@ ms.locfileid: "7574164"
 - **補充作業 1:** バルク場所から 4 つのボックスをピックし、それを場所 pick-001 にプットします。
 - **補充作業 2:** バルク場所から 5 つのボックスをピックし、それを場所 pick-002 にプットします。
 
-[![例 1。](media/ReplenTemp_example_1.png "例 1")](media/ReplenTemp_example_1_large.png)
+[![例 1](media/ReplenTemp_example_1.png "例 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>例 2
 
@@ -109,9 +112,6 @@ ms.locfileid: "7574164"
 
 結果は、作業を作成するときに使用できる情報によって異なります。 補充ピッキングの場所ディレクティブで **分割を許可** が *はい* に設定されている場合、160 個を検索できたことがわかります。 したがって、その数量に対して作業を作成できます。 ただし、**分割を許可** オプションが *いいえ* に設定されている場合、160 個の存在についてはわかりません。 補充することに決めた追加数量が 3 ボックスの場合、その追加の数量をドロップして元の数量を再度試します。
 
-[![例 2。](media/ReplenTemp_example_2.png "例 2")](media/ReplenTemp_example_2_large.png)
+[![例 2](media/ReplenTemp_example_2.png "例 2")](media/ReplenTemp_example_2_large.png)
 
 したがって、補充された場所に対して最大数量を取得するには、補充ピッキングの保管場所ディレクティブで **分割を許可** オプションを *はい* に設定する必要があります。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

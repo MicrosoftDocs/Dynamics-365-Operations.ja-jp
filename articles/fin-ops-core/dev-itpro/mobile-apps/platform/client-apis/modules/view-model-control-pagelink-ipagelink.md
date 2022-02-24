@@ -1,18 +1,25 @@
 ---
 title: ページリンク モジュール
 description: ページリンクは、別のページに移動するコントロールです。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 4875dad680dd3199ebd3b37ddb54d4a69bbf019d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 65ee73d097248b60dc989d2f0a64b4aa1dd9cf9b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781516"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682559"
 ---
 # <a name="pagelink-module"></a>ページリンク モジュール
 
@@ -81,7 +88,7 @@ ms.locfileid: "7781516"
 | [色](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#color) |color: string (optional)  <br>|コンテナーの前景色。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) から継承 <br> |
 | [excludeContext](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#excludecontext) |excludeContext: boolean (省略可)  <br>|  |
 | [flexFlow](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#flexflow) |flexFlow: string (省略可)  <br>|このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) から継承 <br> |
-| [flexSize](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズを拡大) [(サイズを縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) から継承 <br> |
+| [flexSize](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) から継承 <br> |
 | [fontSize](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#fontsize) |fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (省略可)  <br>|比例テキスト サイズ<br>  [Design](../interfaces/view-model-ipage-idesign.md).[fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) から継承 <br> |
 | [fontWeight](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#fontweight) |fontWeight: "normal" &#124; "bold" (省略可)  <br>|標準または太字のテキスト。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight) から継承 <br> |
 | [hideArrow](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#hidearrow) |hideArrow: boolean (省略可)  <br>|既定のスタイル ナビゲーション コントロールの矢印 ( > ) を非表示にするように許可します。<br>  |
@@ -93,7 +100,7 @@ ms.locfileid: "7781516"
 | [ナビゲーション](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#navigation) |navigation: [NavigationArgs](../interfaces/view-model-ipage-inavigationargs.md) (省略可)  <br>|ページリンクのナビゲーション オブジェクト。<br>  |
 | [スペース](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#padding) |padding: "none" &#124; "small" &#124; "std" (省略可)  <br>|コンポーネントのスペース動作を指定できるように許可します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[padding](../interfaces/view-model-ipage-idesign.md#padding) から継承 <br> |
 | [showCount](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#showcount) |showCount: boolean (省略可)  <br>|True の場合、ターゲット ページのリストに存在するレコードの数を表示します。<br>  |
-| [スタイル](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#style) |style: string (省略可)  <br>|ページリンク コントロールのビジュアル スタイルを指定します。 オプション: *"inline": は、アイコンをインラインに含むラベルによってそのコンテナーの幅全体を示します。*"button": は、アイコンの下のラベルによって、ラベル必要な幅だけを示します。<br>  |
+| [スタイル](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#style) |style: string (省略可)  <br>|ページリンク コントロールのビジュアル スタイルを指定します。 オプション: * "inline": は、アイコンをインラインに含むラベルによってそのコンテナーの幅全体を示します。* "button": は、アイコンの下のラベルによって、ラベル必要な幅だけを示します。<br>  |
 | [タイプ](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md#type) |type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|文字列としてのコントロールのタイプ。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[type](../interfaces/view-model-ipage-idesign.md#type) から継承 <br> |
 
 
@@ -125,7 +132,7 @@ ms.locfileid: "7781516"
 | [ShowCount](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#showcount) |ShowCount: ブール値 (省略可)  <br>|True の場合、ターゲット ページのリストに存在するレコードの数を表示します。<br>  |
 | [スタイル](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#style) |スタイル: 文字列 (省略可)  <br>|ページリンク コントロールのビジュアル スタイルを指定します。<br>  |
 | [ターゲット](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#target) |ターゲット: string (省略可)  <br>|ページリンクが選択されたときに移動するターゲット アクションまたはページの名前。<br>  |
-| [タイプ](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
+| [[タイプ](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#type)] |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
 | [UseDataContext](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#usedatacontext) |UseDataContext: boolean (オプション)  <br>|  |
 
 #### <a name="events"></a>イベント
@@ -134,6 +141,3 @@ ms.locfileid: "7781516"
 | ---- | --------- | ----------- |
 | [OnNavigate](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#onnavigate) |OnNavigate: function(navigation: [NavigationArgs](../interfaces/view-model-ipage-inavigationargs.md) &#124; string): any (optional)  <br>|ナビゲーションがトリガーされたときに発生するイベントです。<br>  |
 
-
-
-[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

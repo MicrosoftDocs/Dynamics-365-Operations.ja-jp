@@ -1,25 +1,27 @@
 ---
 title: 法人間でのネットワーク プリンターへのアクセスの管理
 description: このトピックでは、システム管理ユーティリティを使用してネットワーク プリンターを設定する方法に関する情報が提供されます。
-author: RichdiMSFT
+author: tjvass
+manager: AnnBe
 ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2018-12-04
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc092a9d4be4a6cb8d01c6064c5d3306e9fc332efb1058444ae487d442f1d59a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93ffc9b5db93c05ff9f9386fe4bbdb218a2961b3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759199"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681608"
 ---
 # <a name="manage-access-to-network-printers-across-legal-entities"></a>法人間でのネットワーク プリンターへのアクセスの管理
 
@@ -37,7 +39,7 @@ ms.locfileid: "6759199"
 ## <a name="access-the-feature"></a>機能にアクセスする
 機能がオンになると、**ネットワーク プリンターの管理** ページのアクション ウィンドウの **オプション** タブに **プレビュー** グループが表示されます。
 
-![アクション ウィンドウのプレビュー グループ。](./media/network-printer-01.png)
+![アクション ペインのプレビュー グループ](./media/network-printer-01.png)
 
 1. **組織管理** > **設定** > **ネットワーク プリンター** の順に選択します。
 2. アクション ウィンドウの **プレビュー** グループで、**システム ネットワーク プリンター** を選択します。
@@ -50,6 +52,3 @@ ms.locfileid: "6759199"
 - 組織内のすべての法人のネットワーク プリンターが削除されます。
 - ドメイン管理者は、古いプリンター名を使用してデバイスを登録することができます。
 - 組織管理者、引き続き既存のツールを使用して、1 つの法人のネットワーク プリンターの設定を管理できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

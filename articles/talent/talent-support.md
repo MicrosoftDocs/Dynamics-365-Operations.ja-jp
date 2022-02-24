@@ -48,6 +48,3 @@ Onboard のスタンドアロン アプリのサポートを得るには、次�
 | 問題を報告します。 | ページの右上隅にある **ヘルプ** ボタン (**?**) を選択し、**問題の報告** を選択します。 問題の説明を入力し、その問題をフォローアップしたい場合は、電子メール アドレスを含めます。 |
 | Talent のライセンスに関する質問のヘルプを入手します。 | パートナー、または Microsoft 販売担当者に問い合わせます。 |
 | Onboard 内の新機能および機能を要求する。 | **ヘルプ** ボタン (**?**) を選択し、**アイデア** を選択します。 また、[Dynamics 365 Talent: Onboard のアイデア](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard) にアクセスし、既存のアイデアの表示、検索、または投票をしたり、新しいアイデアを追加したりすることもできます。 |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

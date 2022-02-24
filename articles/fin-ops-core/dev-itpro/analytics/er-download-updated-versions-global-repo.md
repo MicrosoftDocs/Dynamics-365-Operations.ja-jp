@@ -2,9 +2,11 @@
 title: ER コンフィギュレーションの更新バージョンのインポート
 description: このトピックでは、コンフィギュレーション サービスのグローバル リポジトリから電子申告 (ER) コンフィギュレーションの更新済バージョンをインポートする方法について説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 712bccbd48775cadc069ef5e8a04f9aae3c9f223137bcd394ff1815a720393b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 897663998c6c95ff6d7172de2abc4d4dd6ec5f12
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734891"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679513"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>ER コンフィギュレーションの更新バージョンのインポート
 
@@ -28,7 +30,7 @@ ms.locfileid: "6734891"
 
 電子レポート (ER) [リポジトリ](general-electronic-reporting.md#Repository) は、[ER コンフィギュレーション](general-electronic-reporting.md#Configuration) を共有するために使用されます。 異なるリポジトリから Microsoft Dynamics 365 Finance のインスタンスに ER コンフィギュレーションを[インポート](download-electronic-reporting-configuration-lcs.md) できます。 ER コンフィギュレーションをインポートする場合、[コンフィギュレーション プロバイダー](general-electronic-reporting.md#Provider) は、新しい[バージョン](general-electronic-reporting.md#component-versioning) のリポジトリを公開して共有できるようになります。
 
-このトピックでは、コンフィギュレーション サービスのグローバル リポジトリから ER コンフィギュレーションの更新済バージョンをインポートする方法について説明します。 詳細については、[Microsoft Dynamics 365 for Finance and Operations - Regulatory services、コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) を参照してください。
+このトピックでは、コンフィギュレーション サービスのグローバル リポジトリから ER コンフィギュレーションの更新済バージョンをインポートする方法について説明します。 詳細については、[Microsoft Dynamics 365 for Finance and Operations - Regulatory services、コンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) を参照してください。
 
 ## <a name="review-the-available-updated-versions"></a>利用可能な更新済バージョンを確認する
 
@@ -41,11 +43,11 @@ ms.locfileid: "6734891"
 2. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 3. **ローカライズ構成** ページの、**関連リンク** セクションで、**コンフィギュレーション バージョンの更新をインポート** を選択します。
 
-    ![ローカライズ コンフィギュレーション ページ。](./media/er-download-updated-versions-global-repo1.png)
+    ![ローカライズ コンフィギュレーション ページ](./media/er-download-updated-versions-global-repo1.png)
 
 4. **電子レポート コンフィギュレーション バージョンの更新をインポート** ダイアログ ボックスの **実行モード** フィールドで、**使用可能な更新のみ表示** を選択します。 その後、**OK** を選択します。 
 
-    ![実行モード フィールドを使用可能な更新のみに設定。](./media/er-download-updated-versions-global-repo2.png)
+    ![実行モード フィールドを使用可能な更新のみに設定](./media/er-download-updated-versions-global-repo2.png)
 
 5. 受信したメッセージを確認します。 これらのメッセージは、現在の Finance インスタンス ER コンフィギュレーションに関する次の情報を提供し、それがグローバル リポジトリのコンテンツとどのように比較されるかを示します。
 
@@ -72,14 +74,14 @@ ms.locfileid: "6734891"
 4. **電子レポート コンフィギュレーションのバージョンをインポート** ダイアログ ボックスの **実行モード** フィールドで、**最新の更新プログラムをインポート** を選び、ER コンフィギュレーションの最新バージョンをグローバル リポジトリから現在の Finance インスタンスにインポートします。
 5. インポートに対してバッチ ジョブをスケジュールするには、**バックグラウンドで実行** クイックタブで、**バッチ処理** オプションを **はい** に設定します。 定期的にインポートを繰り返したい場合は、必要な繰り返しをコンフィギュレーションします。
 
-    ![最新の更新プログラムをインポートするように設定された実行モード フィールド。](./media/er-download-updated-versions-global-repo5.png)
+    ![最新の更新プログラムをインポートするように設定された実行モード フィールド](./media/er-download-updated-versions-global-repo5.png)
 
 6. **OK** を選択します。
 7. インポートされたコンフィギュレーション バージョンを調べるには、次の手順のいずれかを実行します:
 
     - バッチ ジョブを使用する代わりにインポートを対話的に実行する場合は、受信したメッセージを確認します。
 
-        ![対話型のインポート実行中に受信したメッセージ。](./media/er-download-updated-versions-global-repo6.png)
+        ![対話型のインポート実行中に受信したメッセージ](./media/er-download-updated-versions-global-repo6.png)
 
     - バッチ モードでインポートを実行する場合は、次の手順を実行します:
 
@@ -87,7 +89,7 @@ ms.locfileid: "6734891"
         2. **電子レポート コンフィギュレーション バージョンのインポート** ジョブを検索および選択し、アクション ウィンドウの **バッチ ジョブ** タブで、**バッチ ジョブの履歴経歴** を選びジョブの履歴を表示します。
         3. **バッチ ジョブの履歴** ページで **ログ** を選択します。 次に、受信したメッセージで、**メッセージの詳細** リンクを選びジョブ ログを表示します。
 
-        ![ジョブ ログ。](./media/er-download-updated-versions-global-repo7.png)
+        ![ジョブ ログ](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > 定期的なバッチ ジョブのスケジュールを設定して、更新されたバージョンの ER コンフィギュレーションを運用環境にインポートすることをお勧めします。この場合、インポートされたバージョンをすぐに使用できます。 代わりに、ER コンフィギュレーションのバージョンをサンドボックス環境に配置するには、この方法を使用します。 これにより、運用環境に配置する前に、サンドボックス環境で評価することができます。
@@ -96,6 +98,3 @@ ms.locfileid: "6734891"
 
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする](er-download-configurations-global-repo.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

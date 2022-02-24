@@ -2,9 +2,11 @@
 title: Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Operations プラットフォーム更新プログラム 3 の新機能または変更された機能について説明します。 このバージョンは 2016 年 11 月にリリースされ、ビルド番号は 7.0.4307.16141 です。
 author: sericks007
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 52d5cda0876d6385102636cfad19cf614ec09bf45d93cd0781223afa7995d007
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 75fea5fe3a45e787b7f48be8e393c9ca7db58355
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771913"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797841"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-platform-update-3-november-2016"></a>Dynamics 365 for Operations プラットフォーム更新プログラム 3 (2016 年 11 月) の新機能および変更された機能
 
@@ -151,7 +153,7 @@ Lifecycle Services (LCS) は、毎月の新しい機能をリリースします�
 <tbody>
 <tr>
 <td>列挙されたフィールドを持つ Power BI レポートを作成します。</td>
-<td>列挙型フィールドを持つ Microsoft Power BI レポートを作成するとき、Power BI Desktop に式を記述し、列挙値をその文字列値に拡張する必要がありました。 現在は、列挙されたフィールドがエンティティ格納に展開され、レポートで直接対応するラベル フィールドを使用できるようになりました。</td>
+<td>列挙型フィールドを持つ Microsoft Power BI レポートを作成するとき、Power BI デスクトップに式を記述し、列挙値をその文字列値に拡張する必要がありました。 現在は、列挙されたフィールドがエンティティ格納に展開され、レポートで直接対応するラベル フィールドを使用できるようになりました。</td>
 </tr>
 <tr>
 <td>人事管理向けの 5 つの新しい Power BI コンテンツ パックにアクセス</td>
@@ -191,6 +193,3 @@ Lifecycle Services (LCS) は、毎月の新しい機能をリリースします�
 ## <a name="additional-resources"></a>追加リソース
 
 [Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

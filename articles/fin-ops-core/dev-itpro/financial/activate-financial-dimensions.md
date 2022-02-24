@@ -1,25 +1,27 @@
 ---
 title: 財務分析コードの有効化
 description: このトピックには、財務分析コード プロセスの有効化に関する情報が含まれています。
-author: RyanCCarlson2
+author: aprilolson
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 191363
 ms.assetid: dd1dd40e-6bff-47b5-bf2e-55b9a4dcde1d
 ms.search.region: Global
-ms.author: rcarlson
+ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e479e4578c63b03f7ce51c81031540e150938138
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 97a65f916f6e037a9e1459324e36d197f3b94022
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782725"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680524"
 ---
 # <a name="financial-dimension-activation"></a>財務分析コードの有効化
 
@@ -35,7 +37,7 @@ ms.locfileid: "7782725"
 
 財務分析コードを追加することは、通常、意図的なビジネス プロセスです。 ユーザー受け入れテストなどのマルチ ユーザー環境またはトレーニング環境がある場合、1 人だけがこのプロセスを試行する必要があります。 2 番目のオプションは、有効化オプション、**財務分析コードの再構築** を選択したときに使用できます。 
 
-[![財務分析コードの有効化。](./media/actwiki2.png)](./media/actwiki2.png) 
+[![ActWiki2](./media/actwiki2.png)](./media/actwiki2.png) 
 
 **財務分析コードを再構築** オプションは、初期有効化プロセス中予期しない結果が発生した場合にのみ実行されるプロセスであるため、既定で **いいえ** に設定されます。 再構成することにより、テーブルにすべての財務分析コードと値がドロップされ、再追加されます。
 
@@ -44,6 +46,3 @@ ms.locfileid: "7782725"
 [財務分析コードの定義](../../../finance/general-ledger/tasks/define-financial-dimensions.md)
 
 [メンテナンス モード](../sysadmin/maintenance-mode.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

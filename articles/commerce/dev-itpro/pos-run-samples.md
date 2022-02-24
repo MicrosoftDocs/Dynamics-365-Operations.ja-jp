@@ -2,23 +2,25 @@
 title: 販売時点管理 (POS) サンプルを実行
 description: このトピックでは、POS サンプルを実行する方法について説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 11/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-27
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a5dfdf092b1dc0c859f10f69258422bd77d26423
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5eb0e98d9e4f43f17bd7d5983a1e2fac32a128a6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781132"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681508"
 ---
 # <a name="run-the-point-of-sale-pos-samples"></a>販売時点管理 (POS) サンプルを実行
 
@@ -104,6 +106,3 @@ ms.locfileid: "7781132"
     > [!Note] 
     > クラウド POS では、Visual Studio でクリーン ソリューションを使用して、ソリューションを再構築します。
 8. 製品の検索画面に移動、または上部の検索バーを使用して製品を検索します。 グリッドおよび新しいアプリケーション バーのボタンのカスタム列が表示されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

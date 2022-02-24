@@ -2,13 +2,16 @@
 title: 販売と利益幅のパフォーマンスの監視
 description: Dynamics 365 Commerce を使用してリアルタイムに販売と利益幅のパフォーマンスを監視できます。
 author: ashishmsft
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailSales
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b8455d29b0e1bf7e691a7ac5394724482862b9a4107004aeb0fee91d19823856
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a7b2b6ba8115b43ef2e52e934bf8364e6f4044e7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744485"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413686"
 ---
 # <a name="monitor-sales-and-margin-performance"></a>販売と利益幅のパフォーマンスの監視
 
@@ -46,6 +49,3 @@ Commerce の一部として、ユーザーは次の分析コードで販売と�
 - **カテゴリと製品の管理** ワークスペース &gt; **Retail および Commerce** &gt; **製品とカテゴリ** &gt; **店舗管理** &gt; **レポート**
 - **価格設定および割引の管理** ワークスペース &gt; **Retail および Commerce** &gt; **価格決定と割引** &gt; **店舗管理** &gt; **レポート**
 - **照会とレポート** セクション &gt; **Retail および Commerce** &gt; **照会とレポート** &gt; **売上レポート**
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

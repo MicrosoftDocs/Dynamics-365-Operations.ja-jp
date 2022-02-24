@@ -1,26 +1,29 @@
 ---
 title: 'Adyen コネクタを使用した強力な顧客認証 (Strong Customer Authentication: SCA)'
 description: このトピックでは、店舗内チェックアウトにおける強力な顧客認証 (SCA) について説明します。
-author: BrianShook
+author: rubendel
+manager: annbe
 ms.date: 05/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c1114e810ff5f6a3521d2ef635a5aff6ffa06afb
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 3fccac39fdf5947e5bc2c489a1802056df68497d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779341"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408814"
 ---
 # <a name="strong-customer-authentication-sca-using-the-adyen-connector"></a>Adyen コネクタを使用した強力な顧客認証 (Strong Customer Authentication: SCA)
 
@@ -39,15 +42,15 @@ ms.locfileid: "7779341"
 
 ## <a name="overview"></a>概要
 
-PSD2.0 では、オンライン ショッピングのチェックアウト時に SCA がサポートされ、支払方法を発行した銀行が顧客を認証できるようにする必要があります。 認証は、通常、買い物客がオンライン注文のためにチェックアウト中で、支払詳細を提供した後に行われます。 これらの詳細は評価され、PSD2.0 の条件に基づいて顧客が銀行にリダイレクトされる場合があります。 銀行にリダイレクトされた後、顧客は支払方法に対して認証されたユーザーであることを確定するために、何らかの形式の認証を提供する必要があります。 ユーザーがカード所有者であることが確認されると、支払が既に送信された店舗にリダイレクトされ、その後、チェックアウトの続行が許可されます。 SCA が失敗した場合、そのトランザクションに対してプロセスは続行できません。
+PSD 2.0 では、オンライン ショッピングのチェックアウト時に SCA がサポートされ、支払方法を発行した銀行が顧客を認証できるようにする必要があります。 認証は、通常、買い物客がオンライン注文のためにチェックアウト中で、支払詳細を提供した後に行われます。 これらの詳細は評価され、PSD2.0 の条件に基づいて顧客が銀行にリダイレクトされる場合があります。 銀行にリダイレクトされた後、顧客は支払方法に対して認証されたユーザーであることを確定するために、何らかの形式の認証を提供する必要があります。 ユーザーがカード所有者であることが確認されると、支払が既に送信された店舗にリダイレクトされ、その後、チェックアウトの続行が許可されます。 SCA が失敗した場合、そのトランザクションに対してプロセスは続行できません。
 
 ## <a name="prerequisites-for-sca-support"></a>SCA サポートの前提条件
 
-SCA のサポートは、直ぐに使える [Adyen 向け Dynamics 365 Payment Connector](./dev-itpro/adyen-connector.md?tabs=8-1-3) によって提供されます。 コネクタは、支払 SDK を使用するサード パーティ コネクタによって実装できます。
+SCA のサポートは、直ぐに使える [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) によって提供されます。 これは、支払 SDK を使用するサード パーティ コネクタによって実装できます。
 
 ## <a name="setup"></a>セットアップ
 
-設定の詳細は、支払コネクタによって異なります。 標準の Adyen コネクタに関連する設定の詳細については、[Adyen コネクタの追加情報の構成](./dev-itpro/adyen-connector-setup.md#configure-additional-information-for-the-connector) を参照してください。 
+設定の詳細は、支払コネクタによって異なります。 標準の Adyen コネクタに関連する設定の詳細については、Adyen コネクタ トピックの [E コマース セクション](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) を参照してください。 
 
 ## <a name="functional-experience"></a>機能のエクスペリエンス
 
@@ -55,9 +58,6 @@ SCA のサポートは、直ぐに使える [Adyen 向け Dynamics 365 Payment C
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Adyen 向け Dynamics 365 Payment Connector](./dev-itpro/adyen-connector.md?tabs=8-1-3)
-- [チェックアウト モジュール](./add-checkout-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Adyen 向け Dynamics 365 Payment Connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+- [チェックアウト モジュール](https://docs.microsoft.com/dynamics365/commerce/add-checkout-module)

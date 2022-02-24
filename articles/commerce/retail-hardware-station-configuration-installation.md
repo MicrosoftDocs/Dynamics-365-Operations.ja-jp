@@ -2,13 +2,16 @@
 title: Retail ハードウェア ステーションのコンフィギュレーションとインストール
 description: このトピックでは、セルフサービスを使用して Retail ハードウェア ステーションを構成、ダウンロード、およびインストールする方法について説明します。 また、Retail ハードウェア ステーションをアンインストールする方法についても説明します。
 author: jashanno
-ms.date: 05/11/2021
+manager: AnnBe
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailHardwareStation
 audience: IT Pro
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 27161
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5
 ms.search.region: Global
@@ -16,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c3d47b61d6e7648902563005923c98b1c617e41bbc76e7692a278a7d3de03bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9daa573fcccfdff8f6ef94ca39246d8098c70828
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719479"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408637"
 ---
 # <a name="configure-and-install-retail-hardware-station"></a>Retail ハードウェア ステーションのコンフィギュレーションとインストール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、セルフサービス機能を使用してレガシ Commerce ハードウェア ステーションを構成、ダウンロード、およびインストールする方法について説明します。 シールされたセルフサービス インストーラーの詳細については、[シールされた Commerce セルフサービス コンポーネントの一括配置](dev-itpro/Enhanced-Mass-Deployment.md) を参照してください。 また、Retail ハードウェア ステーションをアンインストールする方法についても説明します。
+このトピックでは、セルフサービスを使用して Retail ハードウェア ステーションを構成、ダウンロード、およびインストールする方法について説明します。 また、Retail ハードウェア ステーションをアンインストールする方法についても説明します。
 
 > [!IMPORTANT]
 > このコンポーネントはサーバー証明書を利用することに注意してください。 有効期限に対してサーバー証明書を管理する必要があります。 既定では、証明書は 1 つの暦年 (365 日) で期限切れになります。
@@ -64,7 +67,7 @@ ms.locfileid: "6719479"
 
 ### <a name="download-the-retail-hardware-station-installer"></a>Retail ハードウェア ステーション インストーラーをダウンロード
 
-1. Azure AD 資格情報を使用して、Retail Headquarters または Retail トライアル版にサインインします。
+1. Azure AD 証明書を使用して、小売用バックオフィスまたは Retail トライアル版にサインインします。
 2. **ようこそ** ページで、左上隅のメニューを使用して、**小売** &gt; **チャンネル** &gt; **小売店舗** &gt; **すべての小売店舗** に移動します。
 3. **すべての小売店舗** ページで、目的の店舗の小売チャネル ID を選択します。 店舗の詳細ビューが表示されます。
 
@@ -93,7 +96,7 @@ ms.locfileid: "6719479"
 ### <a name="run-the-installer"></a>インストーラーを実行
 
 > [!NOTE]
-> Retail ハードウェア ステーション インストーラーを実行する前に、すべての[システム要件](../fin-ops-core/fin-ops/get-started/system-requirements.md)が満たされていることを確認してください。
+> Retail ハードウェア ステーション インストーラーを実行する前に、すべての[システム要件](../fin-and-ops/get-started/system-requirements.md)が満たされていることを確認してください。
 
 Retail ハードウェア ステーション インストーラーは、まず関連付けられているファイルを抽出し、インストールを開始します。
 
@@ -128,7 +131,7 @@ Retail ハードウェア ステーション インストーラーは、まず�
     
     > - バージョン 10.0.6 以降では、Install マーチャント情報ツールは使用されなくなりました。 代わりに、ハードウェア ステーションのマーチャント情報は、ログオン時またはハードウェア ステーションが有効になったときに POS によって設定されます。 ハードウェア ステーションを有効にした後にも Retail サーバーを使用できない場合は、最後の商社プロパティが、Retail サーバーへの接続が再確立されるまでの間に使用されます。 ハードウェア ステーションの更新と同時に、POS クライアントがバージョン 10.0.6 に更新されていないと、POS クライアントが同じまたはそれ以降のバージョンに更新されるまで、商社プロパティは更新されません。 
 
-8. 支払商社情報のインストール ツールは、Azure AD 資格情報を要求する可能性があります。 Retail ハードウェア ステーションをインストールするユーザーの Azure AD 資格情報を入力します。
+8. Install マーチャント情報ツールは、Azure AD 資格情報を要求する可能性があります。 Retail ハードウェア ステーションをインストールするユーザーの Azure AD 資格情報を入力します。
 9. Retail Server URL は、Retail ハードウェア ステーションのインストールによって決定され、自動的に入力されます。 インストーラーは、この URL を使用して、ユーザーがアドレス帳を介して接続している店舗のリストをロードします。
 10. ハードウェア ステーションがインストールされた小売店舗を選択します。
 11. 現在のコンピューターにインストールされていたハードウェア ステーションに一致するハードウェア プロファイルを選択します。
@@ -204,6 +207,3 @@ Microsoft Windows でコントロール パネルを使用して Retail ハー�
 2. コントロール パネルで、**プログラム** &gt; **プログラムのアンインストール** を選択します。 **プログラムと機能** ウィンドウが開きます。
 3. **Microsoft Dynamics 365 for Retail ハードウェア ステーション** を選択し、プログラムの一覧の上にある **アンインストール** を選択します。
 4. アンインストールがプログラムの削除を完了するまで待ちます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

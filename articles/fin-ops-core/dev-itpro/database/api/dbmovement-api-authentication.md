@@ -2,9 +2,11 @@
 title: データベース移動 API - 認証
 description: このトピックでは、データベース移動のアプリケーション プログラミング インターフェイス (API) を使用した認証方法についての概要を示します。
 author: laneswenka
+manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 5831ac1fc8efaff0be9fad66f78ff47faa33ca7f5687a3309c6e5508dd3766e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c13dce5b3ab300c01084325e852fe3266d5829f1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753582"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681122"
 ---
 # <a name="database-movement-api---authentication"></a>データベース移動 API - 認証
 
@@ -69,14 +71,11 @@ GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
         - Web アプリに関しては、アプリのベース URL を指定します。 たとえば、`http://localhost:31544` はローカル コンピューターで実行する Web アプリの URL である可能性があります。 ユーザーは、この URL を使用して Web クライアント アプリにサインインします。
         - パブリック クライアント アプリに関しては、Azure AD を使用してトークン応答を返すための URI を指定します。 `myapp://auth` などの、アプリに固有の値を入力します。
 
-        Web アプリまたはネイティブ アプリの特定の例を表示するには、[Azure AD からのクイック スタート ガイド](/azure/active-directory/develop/#quickstarts) を参照してください。
+        Web アプリまたはネイティブ アプリの特定の例を表示するには、[Azure AD からのクイック スタート ガイド](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts) を参照してください。
 
 5. **API アクセス許可** で、**アクセス許可の追加** を選択します。 次に、**自分の組織が使用する API** タブで、**Dynamics Lifecycle services** サービスを検索し、アプリに **ユーザー\_偽装** のアクセス許可を追加します。
 6. **登録** を選択します。
 
-[![Azure ポータルで新しいアプリに登録する。](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
+[![Azure ポータルで新しいアプリに登録する](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
 
 Azure AD は、アプリに固有のアプリケーション ID (クライアント ID) を割り当て、アプリの **概要** ページが表示されます。 アプリに複数の機能を追加するには、他のコンフィギュレーション オプション (ブランド化のオプションや証明書とシークレットのオプションなど) を選択できます。
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,27 +2,27 @@
 title: ER 形式を調整してカスタム電子ドキュメントを生成
 description: このトピックでは、Microsoft が提供する電子レポート (ER) 形式を調整して、カスタム電子ドキュメントを生成する方法について説明します。
 author: NickSelin
+manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
+ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 20e7a32ac5f6ab21f89ed3c11c64458286864c9d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605233"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680173"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>ER 形式を調整してカスタム電子ドキュメントを生成
 
@@ -144,10 +144,10 @@ ER コンフィギュレーション プロバイダーについては、[コン
 5. **バージョン** クイック タブで、選択した ER 形式コンフィギュレーションのバージョン **1.1** を選択します。
 6. **インポート** を選択して、グローバル リポジトリから現在の Finance インスタンスに選択したバージョンをダウンロードします。
 
-![コンフィギュレーション レポジトリ ページ。](./media/er-quick-start2-import-solution1.png)
+![レポジトリ ページのコンフィギュレーション](./media/er-quick-start2-import-solution1.png)
 
 > [!TIP]
-> [グローバル リポジトリ](er-download-configurations-global-repo.md) へのアクセスに問題がある場合は、Microsoft Dynamics Lifecycle Services (LCS) から[構成をダウンロード](download-electronic-reporting-configuration-lcs.md) ができます。
+> [グローバル リポジトリ](er-download-configurations-global-repo.md) へのアクセスに問題がある場合は、Microsoft Dynamics Lifecycle Services (LCS) から[コンフィギュレーションをダウンロード](download-electronic-reporting-configuration-lcs.md) ができます。
 
 ### <a name="review-the-imported-er-configurations"></a><a id="ReviewImportedERSolution"></a> インポートされた ER コンフィギュレーションのレビュー
 
@@ -160,7 +160,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
     - **支払モデルのマッピング 1611** – このコンフィギュレーションには、実行時にデータ モデルがアプリケーション データが格納される方法を記述する[モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components) ER コンポーネントが含まれています。
     - **BACS (英国)** – このコンフィギュレーションには、[形式](general-electronic-reporting.md#FormatComponentOutbound) と形式マッピング ER コンポーネントが含まれています。 形式コンポーネントは、レポートのレイアウトを指定します。 形式マッピング コンポーネントには、モデル データソースが含まれており、実行時にこのデータソースを使用することによってレポートのレイアウトがどのように入力されるかを指定します。
 
-![ツリーで利用可能な指定された ER の構成を表示する構成ページ。](./media/er-quick-start2-imported-solution1.png)
+![構成ページ](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a> 処理用仕入先支払の準備
 
@@ -179,7 +179,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
     5. **IBAN** フィールドで、**GB33BUKB20201555555555** を入力します。
     6. **支店コード** フィールドで、既定値 <a id="DefineRoutingNumber"></a>**123456** をそのまま使用します。
 
-    ![仕入先の銀行アカウント ページ。](./media/er-quick-start2-bank-account.png)
+    ![仕入先の銀行アカウント ページ](./media/er-quick-start2-bank-account.png)
 
 4. **保存** を選択します。
 5. ページを閉じます。
@@ -187,14 +187,14 @@ ER コンフィギュレーション プロバイダーについては、[コン
 7. 必要に応じて、仕入先の詳細ページで、**編集** を選びページの編集が可能です。
 8. **支払い** クイックタブの **銀行アカウント** フィールドで、**GBP OPER** を選択します。
 
-    ![仕入先の詳細ページ。](./media/er-quick-start2-bank-account-reference.png)
+    ![仕入先の詳細ページ](./media/er-quick-start2-bank-account-reference.png)
 
 9. **保存** を選択します。
 10. ページを閉じます。
 
 ### <a name="enter-a-vendor-payment"></a><a id="EnterVendorPayment"></a> 仕入先支払の入力
 
-[支払提案](../../../finance/accounts-payable/create-vendor-payments-payment-proposal.md) を使用して、新しい仕入先の支払いを入力する必要があります。
+[支払提案](https://docs.microsoft.com/dynamics365/finance/accounts-payable/create-vendor-payments-payment-proposal) を使用して、新しい仕入先の支払いを入力する必要があります。
 
 1. **買掛金勘定** \> **支払** \> **仕入先支払仕訳帳** に移動します。
 2. **仕入先支払仕訳帳** ページで、**新規** を選択します。
@@ -204,11 +204,11 @@ ER コンフィギュレーション プロバイダーについては、[コン
 6. **仕入先支払提案** ダイアログボックスで、**GB_SI_000001** 仕入先アカウントのみのレコードをフィルター処理するための条件をコンフィギュレーションし、**OK** を選択します。
 7. **00000007_Inv** 請求書の明細行を選び、**支払作成** を選択します。
 
-    ![仕入先支払提案のダイアログ ボックス。](./media/er-quick-start2-payment-proposal.png)
+    ![仕入先支払提案のダイアログ ボックス](./media/er-quick-start2-payment-proposal.png)
 
 8. 入力された支払いが、**電子** 支払方法を使用するようにコンフィギュレーションされていることを確認します。
 
-    ![仕入先支払のページ。](./media/er-quick-start2-payment-line.png)
+    ![仕入先支払のページ](./media/er-quick-start2-payment-line.png)
 
 ## <a name="process-a-vendor-payment-by-using-the-standard-er-format"></a><a id="ProcessVendorPayment1"></a> 標準 ER 形式を使用した仕入先支払の処理
 
@@ -222,7 +222,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
 4. **ファイル形式** のクイックタブで、**一般的なエクスポート形式** のオプションを **はい** に設定します。
 5. **形式の構成のエクスポート** フィールドで、**BACS (英国)** 形式コンフィグレーションを選択します。
 
-    ![支払方法 - 標準形式を使用して仕入先の支払いを処理するための電子決済方法を設定する、仕入先ページ。](./media/er-quick-start2-method-of-payment1.png)
+    ![支払方法 - 仕入先ページ](./media/er-quick-start2-method-of-payment1.png)
 
 6. **保存** を選択します。
 
@@ -239,7 +239,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
 5. **OK** を選択します。
 6. **電子申告パラメータ** ダイアログ ボックスで、**印刷の管理レポート** オプションを **はい** に選定して、**OK** を選択します。
 
-    ![電子申告パラメーター ダイアログ ボックスのページ。](./media/er-quick-start2-payment-dialog1.png)
+    ![電子申告パラメーター ダイアログ ボックスのページ](./media/er-quick-start2-payment-dialog1.png)
 
     > [!NOTE]
     > 支払ファイルに加えて、管理レポートを生成できるようになります。
@@ -251,7 +251,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
 
         提供された ER 形式の[構造](#PositionRoutingNumber) に従って、生成されたファイルの支払明細行は、コンフィギュレーションされた銀行アカウントの[定義済み](#DefineRoutingNumber) 支店コードで開始してください。
 
-        ![TXT 形式の支払ファイル。](./media/er-quick-start2-payment-file1.png)
+        ![TXT 形式の支払ファイル](./media/er-quick-start2-payment-file1.png)
 
 ## <a name="customize-the-standard-er-format"></a><a id="CustomizeProvidedFormat"></a> 標準 ER 形式のカスタマイズ
 
@@ -267,13 +267,13 @@ ER コンフィギュレーション プロバイダーについては、[コン
 4. **新しい** フィールド グループで、**派生元の名前: BACS (英国)、Microsoft** オプションを選択します。
 5. **名前** フィールドに、**BACS (英国カスタム)** と入力します。
 
-    ![構成の作成ドロップダウン ダイアログ ボックス。](./media/er-quick-start2-add-derived-format.png)
+    ![構成の作成ドロップダウン ダイアログボックス](./media/er-quick-start2-add-derived-format.png)
 
-6. **構成の作成** を選択します。
+6. **コンフィギュレーションの作成** を選択します。
 
 **BACS (英国カスタム)** ER 形式コンフィギュレーションのバージョン 1.1.1 が作成されます。 このバージョンは **ドラフト** の[状態](general-electronic-reporting.md#component-versioning) で、編集することができます。 カスタム ER 形式の現在の内容は、Microsoft が提供する形式の内容と一致しています。
 
-![BACS (英国カスタム) ER 形式のコ構成バージョン 1.1.1 の構成ページ。](./media/er-quick-start2-derived-format-configuration1.png)
+![構成ページ](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a> カスタム形式の編集
 
@@ -293,7 +293,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
 
 7. **トランザクション** 要素を選択します。
 
-    ![ER 操作デザイナーのトランザクション要素。](./media/er-quick-start2-derived-format0.png)
+    ![ER 操作デザイナーのトランザクション要素](./media/er-quick-start2-derived-format0.png)
 
     > [!NOTE]
     > <a id="PositionRoutingNumber"></a> すべての支払明細行が銀行支店コードで開始するには、指定されたレポートはコンフィギュレーションされます。 **VendBankRouteNum** 形式の要素は、この目的に使用されます。 
@@ -311,13 +311,13 @@ ER コンフィギュレーション プロバイダーについては、[コン
 9. 形式構造ツリーで、**vendBankSWIFT** を選択します。
 10. **上へ移動** を選択して、選択した形式要素がレベル 1 上に移動します。 **vendBankSWIFT** 要素が、親 **取引** 要素下の <a id="PositionSWIFTCode"></a> 最初の要素になるまで、この手順を繰り返します。
 
-    ![ER 操作デザイナーのトランザクション下の最初の要素になる VendBankSWIFT。](./media/er-quick-start2-derived-format1.png)
+    ![ER 操作デザイナーのトランザクション下の最初の要素なる VendBankSWIFT](./media/er-quick-start2-derived-format1.png)
 
 11. **vendBankSWIFT** がまだ形式構造ツリーで選択されている状態で、**マッピング** タブを選択し、**モデル** データ ソースを展開します。
 12. **model.Payment** \> **model.Payment.CreditorAgent** を展開し、**model.Payment.CreditorAgent.BICFI** データ ソース フィールドを選択します。 このデータ ソースのフィールドでは、処理済の仕入先支払で、エージェント ロールが割り当てられている仕入先銀行の SWIFT コードが公開されます。
 13. **バインド** を選択します。 **vendBankSWIFT** 形式要素は、SWIFT コードが生成された支払いファイルに入力されるように、**model.Payment.CreditorAgent BICFI** データ ソース フィールドにバインドされるようになります。
 
-    ![ER 操作デザイナーで model.Payment.CreditorAgent.BICFI データ ソース フィールドにバインドされた vendBankSWIFT 形式要素。](./media/er-quick-start2-derived-format2.png)
+    ![ER 操作デザイナーで model.Payment.CreditorAgent.BICFI データ ソース フィールドにバインドされた vendBankSWIFT 形式要素](./media/er-quick-start2-derived-format2.png)
 
 14. **保存** を選択します。
 15. デザイナー ページを閉じます。
@@ -335,7 +335,7 @@ ER 形式のドラフト バージョンを使用するには、ER 形式を明�
 5. ウィンドウの左側にあるコンフィグレーション ツリーで、**BACS (英国カスタム)** を選択します。
 6. **ドラフトの実行** オプションを **はい** に設定します。
 
-    ![コンフィギュレーション ページのドラフト実行オプション。](./media/er-quick-start2-derived-format-configuration2.png)
+    ![コンフィギュレーション ページのドラフト実行オプション](./media/er-quick-start2-derived-format-configuration2.png)
 
 ## <a name="process-a-vendor-payment-by-using-the-custom-er-format"></a><a id="ProcessVendorPayment2"></a> カスタム ER 形式を使用した仕入先支払の処理
 
@@ -349,7 +349,7 @@ ER 形式のドラフト バージョンを使用するには、ER 形式を明�
 4. **ファイル形式** クイック タブで、**一般的な電子エクスポート形式** オプションを **はい** に設定します。
 5. **形式の構成のエクスポート** フィールドで、**BACS (英国カスタム)** 形式コンフィグレーションを選択します。
 
-    ![支払方法 - カスタム形式を使用して仕入先の支払いを処理するための電子決済方法を設定する、仕入先ページ。](./media/er-quick-start2-method-of-payment2.png)
+    ![支払方法 - 仕入先ページ](./media/er-quick-start2-method-of-payment2.png)
 
 6. **保存** を選択します。
 
@@ -378,7 +378,7 @@ ER 形式のドラフト バージョンを使用するには、ER 形式を明�
 
         カスタム ER 形式の構造に従って、生成されたファイルの支払明細行は、支払が処理された仕入先の銀行アカウントに対して[入力](#DefineSWIFTCode) された SWIFT コードで[開始](#PositionSWIFTCode) されることに注意してください。
 
-        ![仕入先の支払い処理に使用する TXT 形式の支払いファイル。](./media/er-quick-start2-payment-file2.png)
+        ![TXT 形式の支払ファイル](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a> 標準 ER 形式コンフィギュレーションの新バージョンをインポート
 
@@ -395,7 +395,7 @@ ER コンフィギュレーションの新バージョンを現在の Finance �
 5. **バージョン** クイック タブで、選択した ER 形式コンフィギュレーションのバージョン **3.3** を選択します。
 6. **インポート** を選択して、グローバル リポジトリから現在の Finance インスタンスに選択したバージョンをダウンロードします。
 
-![構成リポジトリ ページ (Versions FastTab、インポート ボタン)。](./media/er-quick-start2-import-solution2.png)
+![レポジトリ ページのコンフィギュレーション](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > [グローバル化 リポジトリ](er-download-configurations-global-repo.md) のアクセスに問題がある場合は、代わりに LCS から[コンフィグレーションをダウンロード](download-electronic-reporting-configuration-lcs.md) できます。
@@ -410,7 +410,7 @@ ER コンフィギュレーションの新バージョンを現在の Finance �
 6. **形式デザイナー** ページで、**BACSReportsFolder** 形式要素を展開できます。
 7.  バージョン 3.3 には、仕入先支払の処理時に、支払通知レポートを生成するために使用される **PaymentAdviceReport** 形式要素が含まれていることに注意してください。
 
-    ![ER 操作デザイナーの PaymentAdviceReport 形式要素。](./media/er-quick-start2-imported-solution2.png)
+    ![ER 操作デザイナーの PaymentAdviceReport 形式要素](./media/er-quick-start2-imported-solution2.png)
 
 8. デザイナー ページを閉じます。
 
@@ -436,14 +436,14 @@ ER コンフィギュレーションの新バージョンを現在の Finance �
 3. **バージョン** クイックタブで、バージョン **1.1.2** を選び、**リベース** を選択します。
 4. **リベース** ダイアログ ボックスの **ターゲット バージョン** フィールドで、基準コンフィグレーションのバージョン **3.3** を選択し、新しい基準として適用およびコンフィグレーションを更新するために使用します。
 
-    ![ダイアログ ボックスのリベース。](./media/er-quick-start2-rebase1.png)
+    ![ダイアログ ボックスのリベース](./media/er-quick-start2-rebase1.png)
 
 5. **OK** を選択します。
 6. ドラフト バージョンの番号は **1.1.2** から **3.3.2** に変更され、その変更は基本バージョンに反映されます。
 
     カスタム バージョンと基本バージョンがマージされると、自動的にマージされない形式変更のため、いくつかの矛盾が発見される可能性があります。
 
-    ![コンフィグレーション ページで競合のあるリベース コンフィギュレーション。](./media/er-quick-start2-rebase2.png)
+    ![コンフィグレーション ページで競合のあるリベース コンフィギュレーション](./media/er-quick-start2-rebase2.png)
 
     競合が検出された場合は、形式デザイナーで手動で解決する必要があります。
 
@@ -451,13 +451,13 @@ ER コンフィギュレーションの新バージョンを現在の Finance �
 8. **デザイナー** をクリックします。
 9. **形式デザイナー** ページの **詳細** クイックタブで、リベースの競合レコードを選び、**基準値の適用** を選択します。
 
-    ![ER 操作デザイナーのリベース競合レコード。](./media/er-quick-start2-rebase3.png)
+    ![ER 操作デザイナーのリベース競合レコード](./media/er-quick-start2-rebase3.png)
 
 10. **保存** を選択します。
 
     リベースの競合レコードは、**詳細** クイックタブに表示されなくなります。
 
-    ![ER 操作デザイナーで解決される競合。](./media/er-quick-start2-rebase4.png)
+    ![ER 操作デザイナーで解決される競合](./media/er-quick-start2-rebase4.png)
 
     > [!NOTE]
     > 基準モデルのバージョン 3 を、この ER 形式で使用する必要があることを確認して、競合を解決しました。
@@ -465,7 +465,7 @@ ER コンフィギュレーションの新バージョンを現在の Finance �
 11. **BACSReportsFolder** \> **ファイル** \> **トランザクション** \> **トランザクション** を展開します。
 12. **マッピング** タブで、カスタム ER 形式のバージョン 3.3.2 は、使用しているカスタマイズ (**vendBankSWIFT** 形式要素とそのバインド) と Microsoft が提供する基準 ER 形式のバージョン 3.3 の新しい機能の両方 (入れ子になった要素とコンフィグレーションされたバインド と共にある **PaymentAdviceReport**) を含みます。 新しい基準バージョンをカスタマイズして適用した場合は、マウスを数回クリックするだけで変更を適用することができます。
 
-    ![ER 操作デザイナーでの結合形式。](./media/er-quick-start2-rebase5.png)
+    ![ER 操作デザイナーでの結合形式](./media/er-quick-start2-rebase5.png)
 
 13. デザイナー ページを閉じます。
 
@@ -490,7 +490,7 @@ ER コンフィギュレーションの新バージョンを現在の Finance �
     - **管理レポートの印刷** オプションを **はい** に設定します。
     - **支払通知の印刷** オプションを **はい** に設定します。
 
-    ![電子申告パラメーター ダイアログ ボックス。](./media/er-quick-start2-payment-dialog2.png)
+    ![電子申告パラメーター ダイアログ ボックス](./media/er-quick-start2-payment-dialog2.png)
 
     > [!NOTE]
     > 支払ファイルに加えて、制御レポートと支払通知レポートの両方を生成できるようになりました。
@@ -501,19 +501,16 @@ ER コンフィギュレーションの新バージョンを現在の Finance �
     - Excel 形式の管理レポート
     - Excel 形式の支払通知レポート
 
-        ![Excel 形式の支払通知レポート。](./media/er-quick-start2-payment-advice-report.png)
+        ![Excel 形式の支払通知レポート](./media/er-quick-start2-payment-advice-report.png)
 
     - TXT 形式の支払ファイル
 
         生成されたファイルの支払明細行は、支払が処理された仕入先の銀行アカウントに対して入力 された SWIFT コードで開始 されることに注意してください。
 
-        ![再設定した ER 形式を使用して仕入先への支払い処理使用する TXT 形式の支払いファイル。](./media/er-quick-start2-payment-file3.png)
+        ![TXT 形式の支払ファイル](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>追加リソース
 
 - [電子申告の概要](general-electronic-reporting.md)
 - [ER コンフィギュレーションを Lifecycle Services からダウンロードする](download-electronic-reporting-configuration-lcs.md)
 - [ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする](er-download-configurations-global-repo.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

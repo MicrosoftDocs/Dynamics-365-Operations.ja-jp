@@ -2,9 +2,11 @@
 title: Dynamics 365 Commerce 10.0.14 (2020 年 11 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.14 の新機能または変更された機能について説明します。
 author: josaw1
+manager: AnnBe
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a537247b42ce409a117ff0f883acdb95224262edae06d8cc34e9b7e1a27286fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 280eba948f598e279e9bc00a778c4d4ad3ab91fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738041"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965064"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-commerce-10014-november-2020"></a>Dynamics 365 Commerce 10.0.14 (2020 年 11 月) の新機能と変更された機能
 
@@ -34,15 +36,15 @@ ms.locfileid: "6738041"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
-- [E コマース用の放棄されたカート機能](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
-- [Dynamics 365 Commerce での実験](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)
-- [POS での入荷中に、発注書への品目の追加がサポートされます](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-adding-items-purchase-orders-during-receiving-pos)<br> - 詳細については、[POS での入庫在庫操作](../pos-inbound-inventory-operation.md) を参照してください。
-- [POS から出荷する移動オーダーの出荷時のシリアル番号登録をサポートします](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-serial-number-registration-outbound-transfer-order-shipments-pos)<br> - 詳細については、[POS でシリアル化された品目を使って作業する](../pos-serialized-items.md) を参照してください。
+- [E コマース用の放棄されたカート機能](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/abandoned-cart-capabilities-e-commerce)
+- [Dynamics 365 Commerce での実験](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)
+- [POS での入荷中に、発注書への品目の追加がサポートされます](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-adding-items-purchase-orders-during-receiving-pos)<br> - 詳細については、[POS での入庫在庫操作](../pos-inbound-inventory-operation.md) を参照してください。
+- [POS から出荷する移動オーダーの出荷時のシリアル番号登録をサポートします](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-serial-number-registration-outbound-transfer-order-shipments-pos)<br> - 詳細については、[POS でシリアル化された品目を使って作業する](../pos-serialized-items.md) を参照してください。
 - ソーシャル共有モジュール<br> - 詳細については、[ソーシャル シェア モジュール](../social-share-module.md) を参照してください。
 - ハードウェア ステーションを使用しないクレジットカードの処理<br> - 詳細については、[ハードウェア ステーションのないクレジットカードの処理](../dev-itpro/cnp-pos.md) を参照してください。
-- [ギフト カードの残高の確認モジュール](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/gift-card-purchase-e-commerce)<br> - 詳細については、[ギフト カード モジュール](../add-giftcard.md) を参照してください。
+- [ギフト カードの残高の確認モジュール](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/gift-card-purchase-e-commerce)<br> - 詳細については、[ギフト カード モジュール](../add-giftcard.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -57,7 +59,7 @@ Dynamics 365 Commerce 10.0.14 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
@@ -69,6 +71,3 @@ Dynamics 365 Commerce 10.0.14 には、プラットフォーム更新プログ�
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Commerce の削除済みまたは非推奨の機能](removed-deprecated-features-commerce.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

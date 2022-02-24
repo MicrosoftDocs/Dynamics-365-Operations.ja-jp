@@ -1,26 +1,28 @@
 ---
-title: 非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
+title: デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します
 description: このトピックでは、非画面レイアウト デザイナー ベース ビューにカスタム コントロールを追加する方法について説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 12/08/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 8bb2ed515a0cb24ce8c73c1da89e74f0e51ab884
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 26af1c374139933cc2656ed6837c78f8628c558b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781811"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681526"
 ---
-# <a name="add-custom-controls-to-non-screen-designer-based-pos-views"></a>非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
+# <a name="add-custom-controls-to-pos-views-that-arent-screen-layout-designer-based"></a>デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します
 
 [!include [banner](../../includes/banner.md)]
 
@@ -413,6 +415,3 @@ ms.locfileid: "7781811"
 
 1. **F5** キーを押し、POS を展開してカスタマイズをテストします。
 2. POS の起動後、POS にログインします。 任意の製品を検索し、製品詳細ビュー移動します。 追加したカスタム コントロールが表示されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

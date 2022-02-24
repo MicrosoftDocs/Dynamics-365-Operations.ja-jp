@@ -2,26 +2,26 @@
 title: 移動平均フォールバック コスト シーケンス
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Managementで移動平均を計算するためのフォールバック コスト シーケンスについて説明します。
 author: AndersGirke
+manager: tfehr
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: d91b3b4b8d49e59aa03d62f4dd101b5a1ec18c41
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 541b7ecca5c1c36999f573d6d0f2dc0c9e901631
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568210"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967586"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>移動平均フォールバック コスト シーケンス
-
-[!include [banner](../includes/banner.md)]
 
 在庫の原価を計算する 1 つの方法は、_移動平均_ を使用することです。 各在庫品目には、最大 3 つの原価価値を関連付けることができます。
 
@@ -44,7 +44,4 @@ ms.locfileid: "7568210"
     - **有効な原価 – 最終払出**
     - **有効な原価 – 品目価格** – 在庫が定期的にマイナスになり、同時に、トランザクション量が高い業務プロセスを使用している場合、組織でパフォーマンスの問題が発生する可能性があります。 この設定は、これらのパフォーマンスの問題を軽減するのに役立ちます。
 
-![在庫会計パラメーター。](media/inventory-accounting-parameters.png "在庫会計パラメーター")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+![在庫会計パラメーター](media/inventory-accounting-parameters.png "在庫会計パラメーター")

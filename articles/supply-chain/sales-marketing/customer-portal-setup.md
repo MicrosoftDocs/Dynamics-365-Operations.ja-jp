@@ -1,49 +1,51 @@
 ---
 title: 顧客ポータルのインストール、設定、更新
 description: このトピックでは、顧客ポータルのライセンスの詳細と設定手順を説明します。
-author: Henrikan
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: damadipa
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 187efe1372bf2400241f3d65751189247c001447
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: e61fc5f7151a0bb61d496d47f4ad4e727a2a1d65
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060616"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529533"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>顧客ポータルのインストール、設定、更新
 
-[!include [banner](../includes/banner.md)]
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## <a name="licensing-requirements"></a>ライセンス要件
 
 顧客ポータルの実装には、次のライセンスを所有している必要があります :
 
-- **Power Apps ポータル** - このライセンスは、顧客ポータルのホストに必要です。 ポータルは、使用率に基づいてライセンス供与されます。 詳細については、[Power Apps ポータルのライセンス要件](/power-platform/admin/powerapps-flow-licensing-faq#portals) を参照してください。
-- **デュアル書き込み** - Supply Chain Management のテーブルにデュアル書き込みを有効にするには、必要なライセンスを所有している必要があります。 詳細については、[デュアル書き込みのシステム要件](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md) を参照してください。
+- **Power Apps ポータル** - このライセンスは、顧客ポータルのホストに必要です。 ポータルは、使用率に基づいてライセンス供与されます。 詳細については、[Power Apps ポータルのライセンス要件](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals) を参照してください。
+- **デュアル書き込み** - Supply Chain Management のエンティティにデュアル書き込みを有効にするには、必要なライセンスを所有している必要があります。 詳細については、[デュアル書き込みのシステム要件](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md) を参照してください。
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>デュアル書き込みと、Power Apps ポータルの依存関係
 
 顧客ポータルは、次の図に示すように、Power Apps ポータルとデュアル書き込みと依存関係があります。
 
-![顧客ポータルの依存関係。](media/customer-portal-elements.png "顧客ポータルの依存関係")
+![顧客ポータルの依存関係](media/customer-portal-elements.png "顧客ポータルの依存関係")
 
-Supply Chain Management の他の機能とは異なり、顧客ポータルのテンプレートは Power Apps ポータルに存在します。 したがって、顧客ポータルは、Power Apps ポータルやデュアル書き込みのテーブルが提供する機能や能力によって制限されます。
+Supply Chain Management の他の機能とは異なり、顧客ポータルのテンプレートは Power Apps ポータルに存在します。 したがって、顧客ポータルは、Power Apps ポータルやデュアル書き込みのエンティティが提供する機能や能力によって制限されます。
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>顧客ポータルを有効化する設定が必要です
 
-必要なライセンスを確認した後は、デュアル書き込みを設定し、[デュアル書き込みの初回同期](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md)に記載の指示に従って設定することができます。
+必要なライセンスを確認した後は、デュアル書き込みを設定し、[デュアル書き込みの初回同期](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md)に記載の指示に従って設定することができます。
 
-デュアル書き込みでは、以下のテーブル マッピングを有効化してください:
+デュアル書き込みでは、以下のエンティティ マッピングを有効化してください :
 
 - 販売注文ヘッダー
 - 販売注文の詳細
@@ -75,15 +77,12 @@ Supply Chain Management の他の機能とは異なり、顧客ポータルの�
 
 顧客ポータルを設定してカスタマイズする方法の詳細については、次のドキュメントを参照して基礎となるテクノロジーについて確認してください :
 
-- [Power Apps ポータル ドキュメント](/powerapps/maker/portals/overview)
+- [Power Apps ポータル ドキュメント](https://docs.microsoft.com/powerapps/maker/portals/overview)
 - [デュアル書き込みのドキュメント](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-ポータルを効果的に管理するには、Power Appsポータルと Microsoft Dataverse のライフサイクルを理解しておく必要があります。 詳細については、次のリソースを参照してください :
+ポータルを効果的に管理するには、Power Appsポータルと Common Data Service のライフサイクルを理解しておく必要があります。 詳細については、次のリソースを参照してください :
 
-- [ポータルのライフ サイクルについて](/powerapps/maker/portals/admin/portal-lifecycle)
-- [ポータルのアップグレード](/powerapps/maker/portals/admin/upgrade-portal)
-- [ポータルの構成の移行](/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [ポータルのライフ サイクルについて](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
+- [ポータルのアップグレード](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
+- [ポータルの構成の移行](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [ソリューションのライフサイクル管理 : Dynamics 365 for Customer Engagement アプリ](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

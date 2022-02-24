@@ -143,6 +143,3 @@ Talent および Ceridian Dayforce の統合は、英国のプレビューで利
 
 ![性別フィールドの変換](./media/WorkerTransform.png)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

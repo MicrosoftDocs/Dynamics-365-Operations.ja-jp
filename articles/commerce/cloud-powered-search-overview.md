@@ -2,29 +2,36 @@
 title: クラウドを利用した検索の概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce でのクラウドを利用した検索の概要を示します。
 author: ashishmsft
+manager: annbe
 ms.date: 06/29/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983672"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413630"
 ---
 # <a name="cloud-powered-search-overview"></a>クラウドを利用した検索の概要
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でのクラウドを利用した検索の概要を示します。
+
+## <a name="overview"></a>概要
 
 製品の発見可能性は、カテゴリの閲覧、検索、およびフィルタリングにより、顧客が迅速かつ簡単に製品を見つけられることを保証するのに役立ちます。 小売業者は、製品の検出を、すべてのチャネルでの顧客とのやり取りにおける主要なツールと考えています。
 
@@ -40,7 +47,7 @@ Dynamics 365 Commerce 検索エクスペリエンスの機能が改善され、�
 
 次の図は、一般的な参照と検索の機能の例を示しています。
 
-![ランディング ページを検索します。](./media/SearchLanding.png)
+![検索のランディング ページ](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>ファセットナビゲーションと選択の概要 
 
@@ -50,7 +57,7 @@ Dynamics 365 Commerce 検索エクスペリエンスの機能が改善され、�
 
 次の図は、ファセット ナビゲーションが検索で使用されている例を示しています。
 
-![選択の概要。](./media/ChoiceSummary.png)
+![選択の概要](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>没入型の自動提案
 
@@ -60,7 +67,7 @@ Dynamics 365 Commerce では、さまざまなカテゴリでのキーワード�
 
 次の図は、没入型の自動提案が使用されている例を示しています。
 
-![没入型の自動提案。](./media/ImmersiveAutoSuggestUX.png)
+![没入型の自動提案](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>並べ替え
 
@@ -68,13 +75,10 @@ Dynamics 365 Commerce の強化された並べ替えにより、顧客は検索�
 
 >[!NOTE]
 >これらのクラウドを利用した検索機能は、バージョン 10.0.8 以降で使用できます。 **コマース パラメーター > コンフィギュレーション パラメーター** で、「ProductSearch.UseAzureSearch が "true" に設定」されたエントリがあることを確認します。 
-![クラウドを利用した検索のためのコンフィギュレーション パラメーター。](./media/CloudPoweredSearchConfigurationParameters.png)
+![クラウドを利用した検索のためのコンフィギュレーション パラメーター](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [既定のカテゴリ ランディング ページと検索結果ページの概要](category-search-page-overview.md)
 
 [SEO メタデータの管理](manage-seo-metadata.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

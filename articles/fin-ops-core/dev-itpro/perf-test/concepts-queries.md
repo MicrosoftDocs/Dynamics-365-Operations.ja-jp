@@ -2,24 +2,26 @@
 title: 承認テスト ライブラリのクエリ
 description: このトピックでは承認テスト ライブラリでのクエリの使用法に関する情報を提供します。
 author: MichaelFruergaardPontoppidan
+manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 62f7c90a34c2c377fde86f933e23e3792828eba8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c52c59dc96dc574ef1977f6b2c7d952e4afadc3b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781853"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680922"
 ---
 # <a name="queries-in-the-acceptance-test-library"></a>承認テスト ライブラリのクエリ
 
@@ -78,6 +80,3 @@ loadLine = data.whs().loadLines().query().forLoad(load).withInventQty(10).single
 
 transferLine = data.invent().transferOrderLines().query().forTransferOrder(transferOrder).withInventDims([batch1]).single();
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

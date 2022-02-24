@@ -1,33 +1,31 @@
 ---
 title: 給付金の有効期限の管理
-description: この手順では、給付金を期限切れまたは延長する方法、および作業者の登録日を管理する方法について説明します。
-author: twheeloc
-ms.date: 08/23/2021
+description: この手順では、給付金付を期限切れにするまたは延長する方法、および福利厚生に登録されている作業者の登録日を管理する方法について説明します。
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 04751718e22f7339a032ce4a94e919a653876e4b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 7332a95e1cd558336dc19bcb269ef89ce3721aa9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065971"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419296"
 ---
 # <a name="manage-benefit-expiration-dates"></a>給付金の有効期限の管理
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-この手順では、給付金を期限切れまたは延長する方法、および作業者の登録日を管理する方法について説明します。 この手順の作成に使用するデモ データの会社は USMF です。
+この手順では、給付金付を期限切れにするまたは延長する方法、および福利厚生に登録されている作業者の登録日を管理する方法について説明します。 この手順の作成に使用するデモ データの会社は USMF です。
 
 ## <a name="benefit-expiration-dates"></a>給付金の有効期限
 
@@ -48,6 +46,3 @@ ms.locfileid: "8065971"
 15. [福利厚生] をクリックします。
 16. 一覧で、福利厚生を検索し、レコードを選択します。 新しい適用終了日に注意します。
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

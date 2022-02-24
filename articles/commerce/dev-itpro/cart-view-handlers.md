@@ -2,24 +2,26 @@
 title: POS カートのビュー イベントとハンドラー
 description: このトピックでは、拡張機能がカスタム シナリオの販売時点管理 (POS) ビュー イベントとハンドラーを使用する方法について説明します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 02/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d118605d8a841bfc8a01e622c84c230bbf505f9e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 026ebbbb586f357d18b4fa6612757d9f171df31b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782441"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680384"
 ---
 # <a name="pos-cart-view-events-and-handlers"></a>POS カートのビュー イベントとハンドラー
 
@@ -149,6 +151,3 @@ export default class CartViewController extends CartView.CartExtensionViewContro
 | CustomDeliveryGridColumnBase | 公開タイトル(): 文字列 { } | カスタム列のタイトルを設定します。 |
 |                              | 公開 computeValue(cartLine: ProxyEntities.CartLine): 文字列 { } | カスタム列の値を計算します。 |
 |                              | 公開配置(): CustomGridColumnAlignment { }<p>**サポートされている値:** 列挙 CustomGridColumnAlignment { 左 = 0, 右 = 1 }</p> | カスタム列の左側または右側の配置を設定します。 |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

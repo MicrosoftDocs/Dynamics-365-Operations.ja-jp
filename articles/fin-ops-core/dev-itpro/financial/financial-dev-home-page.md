@@ -1,24 +1,26 @@
 ---
 title: 財務開発ホーム ページ
 description: このトピックでは、財務開発に関するトピックへのリンクを提供します。
-author: tonyafehr
+author: robinarh
+manager: AnnBe
 ms.date: 09/12/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.reviewer: rhaertle
+ms.custom: 21631
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b39c2fe9e807ae81dbfaf7faca64b2f3d606a97
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1269a2bd25209766b0878d1a5420f50eb1df5718
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782893"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680497"
 ---
 # <a name="financials-development-home-page"></a>財務開発のホーム ページ
 
@@ -74,6 +76,3 @@ ms.locfileid: "7782893"
 
 - [[Excel で明細行を開く] メニューへのテンプレートの追加](../user-interface/add-templates-open-lines-excel-menu.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

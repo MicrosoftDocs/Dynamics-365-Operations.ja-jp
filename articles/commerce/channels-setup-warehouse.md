@@ -2,30 +2,36 @@
 title: 倉庫の設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce で新しいチャネルと共に使用する倉庫の設定方法について説明します。
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6987263bfa83582f465e3b47c4f7b9d96cf087c814a1e002afd289852346975b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734022"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413745"
 ---
 # <a name="warehouse-set-up"></a>倉庫の設定
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce で新しいチャネルと共に使用する倉庫の設定方法について説明します。
+
+## <a name="overview"></a>概要
 
 各 Commerce チャネルには、関連付けられるコンフィギュレーション済みの倉庫が必要です。 次の手順では、Commerce チャネルの倉庫を設定するために最低限必要なコンフィギュレーションを提供します。 倉庫の設定に関する詳細については、[倉庫管理の概要](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)を参照してください。
 
@@ -45,9 +51,9 @@ ms.locfileid: "6734022"
 
 次の図は、倉庫サイトの例を示しています。
 
-![倉庫サイトの例。](media/warehouse-site.png)
+![倉庫サイトの例](media/warehouse-site.png)
 
-## <a name="set-up-a-warehouse&quot;></a>倉庫の設定
+## <a name="set-up-a-warehouse"></a>倉庫の設定
 
 倉庫を設定するには、次の手順に従います。
 
@@ -61,14 +67,14 @@ ms.locfileid: "6734022"
     - **トランジット倉庫** を設定する場合は、最初に次の手順に従って、**タイプ** が **トランジット** に設定されている追加の倉庫を作成する必要があります。
 1. アクション ウィンドウで、**保存** を選択します。
 
-## <a name=&quot;set-up-inventory-aisles&quot;></a>通路を設定します
+## <a name="set-up-inventory-aisles"></a>通路を設定します
 
 在庫通路を設定するには、次の手順に従います。
 
 1. ナビゲーション ウィンドウで、**モジュール \> Retail と Commerce \> チャネル設定 \> 場所の設定 \> 在庫通路** の順に移動します。
 1. アクション ウィンドウで、**新規** を選択します。
 1. **倉庫** ドロップダウン リストで、以前に作成した倉庫を選択します。
-1. **通路** フィールドに、名前を入力します (例: &quot;Def")。
+1. **通路** フィールドに、名前を入力します (例: "Def")。
 1. **名前** フィールドに、名前を入力します (例: "既定の通路")。
 1. アクション ウィンドウで、**保存** を選択します。
 
@@ -98,7 +104,7 @@ ms.locfileid: "6734022"
     
 次の図は、サンフランシスコの倉庫在庫場所の設定を示しています。
 
-![在庫場所の設定例。](media/warehouse-inventory-locations.png)
+![在庫場所の設定例](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>倉庫の設定の完了
 
@@ -121,7 +127,7 @@ ms.locfileid: "6734022"
 
 次の図は、コンフィギュレーション済倉庫の詳細を示しています。
 
-![コンフィギュレーション済倉庫の例。](media/warehouse-sample.png)
+![コンフィギュレーション済倉庫の例](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -141,6 +147,3 @@ ms.locfileid: "6734022"
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

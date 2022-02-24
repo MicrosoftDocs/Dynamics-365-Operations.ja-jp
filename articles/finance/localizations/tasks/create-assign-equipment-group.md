@@ -2,9 +2,11 @@
 title: 設備グループの作成および割り当て
 description: この手順では、設備のグループの作成方法と設備グループの固定資産へのコンフィギュレーション方法について説明します。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetAcceleratedDepEquipmentGroup_JP, AssetTable
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7c5b70ed0d28f0b201fa5cdecf472a0cd02b116cb25a36ccfc93976e0f474ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 42bc1c2669a9f0dfc6922ce5aa822a476ffe3c03
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721675"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961543"
 ---
 # <a name="create-and-assign-an-equipment-group"></a>設備グループの作成および割り当て
 
@@ -61,6 +63,3 @@ ms.locfileid: "6721675"
 4. [固定資産設備グループ] フィールドに値を入力します。
 5. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

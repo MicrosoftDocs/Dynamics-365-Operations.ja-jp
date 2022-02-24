@@ -57,6 +57,3 @@ Attract から LinkedIn にサイン インできない場合は、次の手順�
 [Attract でジョブ求人の作成、承認、および投稿](./creating-jobs-attract.md)
 
 [LinkedIn と Microsoft Dynamics 365 Talent - Attract との統合のトラブルシューティング](./attract-troubleshoot-linkedin.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

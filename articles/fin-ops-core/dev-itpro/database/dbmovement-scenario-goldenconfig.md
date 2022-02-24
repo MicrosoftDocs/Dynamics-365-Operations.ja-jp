@@ -2,9 +2,11 @@
 title: ゴールデン コンフィギュレーション プロモーション
 description: このトピックでは、Finance and Operations のゴールデン コンフィギュレーション プロモーションについて説明します。
 author: LaneSwenka
-ms.date: 09/17/2021
+manager: AnnBe
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 00c75c96e1e1eb88eaec46172ee4c3fd8f6dcbde
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 6070ed177ce599a4fbf37a683aed704f468ccacf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7547919"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681084"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -134,7 +136,7 @@ update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUR
 **コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
 
 > [!IMPORTANT]
-> 140 フォルダに現在のバージョンが反映されます。 サンドボックス環境で使用可能なバージョンを使用する必要があります。 したがって、開発環境に [Microsoft SQL Server Management Studio の最新バージョン](/sql/ssms/download-sql-server-management-studio-ssms)をインストールする必要が生じる場合があります。
+> 140 フォルダに現在のバージョンが反映されます。 サンドボックス環境で使用可能なバージョンを使用する必要があります。 したがって、開発環境に [Microsoft SQL Server Management Studio の最新バージョン](https://msdn.microsoft.com/library/mt238290.aspx)をインストールする必要が生じる場合があります。
 
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
@@ -161,20 +163,13 @@ SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exporte
 UAT 環境にゴールデン コンフィギュレーションが適用され、マスター データの移行を開始することができます。 [データ エンティティを使用して](../data-entities/develop-entity-for-data-migration.md)、このデータの移行を行うことができます。 UAT 環境を生産環境にコピーする前にデータ移行アクティビティを完了することをお勧めします。トラブルシューティングのために UAT 環境のデータベースにアクセスするためです。  
 
 > [!IMPORTANT]
-> 次の手順では、Azure Blob Storage に格納されたファイルは UAT から生産にコピーされません。 これには、ドキュメントの添付ファイルやカスタム Microsoft Office テンプレートが含まれます。 Go-Live に添付ファイルまたはカスタム テンプレートが必要な場合は、実稼働環境にあるテンプレートを直接インポートします。
+> 次の手順では、添付されたドキュメントはUAT環境から運用環境にコピーされません。  稼働するにあたって添付が必要な場合は、運用環境ディレクトリにそれらをインポートすることで対応することができます。
 
 ## <a name="copy-the-sandbox-database-to-production"></a>サンドボックス データベースを生産環境にコピーします。
 
 モック Go-Live または実際の Go-Live を行う準備ができたら、生産環境に UAT 環境をコピーすることができます。 このプロセスは、*切替* と呼ばれます。 実際の Go-Live には複数回切り替えることをお勧めします。 このようにして、プロセスの各ステップの詳細な時間見積を取得できます。
 
-実稼働環境の **環境タイプ** を決定し、それに応じて関連する手順を実行します。 
-
-### <a name="self-service"></a>セルフ サービス
-1. LCS で、実稼働環境の **完全な詳細** を開いて、**環境ページ** を読み込みます。
-2. **管理** メニューで、**データベースの移動** を選択します。
-3. 操作のオプションで、**データベースの更新** を選択します。
-4. **ソース環境** で、ゴールデン構成があるサンドボックスを選択します。 このタイプの操作については、[データベース ページの更新](database-refresh.md) にある重要な手順に注意してください。
-5. 操作が運用データベースを上書きすることを理解していることを確認するには、このチェック ボックスをオンにします。 要求を送信すると工程がすぐに開始されます。
+実稼働環境の **環境タイプ** を決定し、それに応じて関連する手順を実行します。
 
 ### <a name="microsoft-managed"></a>Microsoft 管理
 1. LCS のプロジェクト ホーム ページで、**サービス要求** を選択します。
@@ -185,6 +180,12 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
     2. **ダウンタイム開始日を優先** および **ダウンタイム終了日を優先** フィールドを設定します。 サイクル終了日は、サイクル開始日の少なくとも 4 時間後でなければなりません。 要求を実行するためのリソースが確保されるようにするには、推奨ダウンタイム ウィンドウの少なくとも 24 時間前にリクエストを送信することをお勧めします。
     3. 下部にあるチェック ボックスをオンにして、条項に同意します。
 
+### <a name="self-service"></a>セルフ サービス
+1. LCS で、実稼働環境の **完全な詳細** を開いて、**環境ページ** を読み込みます。
+2. **管理** メニューで、**データベースの移動** を選択します。
+3. 操作のオプションで、**データベースの更新** を選択します。
+4. **ソース環境** で、ゴールデン 構成があるサンドボックスを選択します。 このタイプの操作については、[データベースの更新ページ](database-refresh.md) にある重要な手順に注意してください。
+5. 操作が運用データベースを上書きすることを理解していることを確認するには、このチェック ボックスをオンにします。 要求を送信すると工程がすぐに開始されます。
 
 > [!IMPORTANT]
 > データベースの更新ごとに、復元ポイントの **ポイントインタイム復元** チェーンをリセットする新しいデータベースが作成されます。
@@ -210,7 +211,7 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
 
 必要に応じて、システムを構成する場合は、選択したユーザーが環境にアクセスできるようにできます。 デフォルトでは、管理者と Microsoft サービス アカウントを除くすべてのユーザーが無効になります。
 
-**システム管理** \> **ユーザー** \> **ユーザー** にアクセスし、運用環境へのアクセスが必要なユーザーを有効化します。 多くのユーザーを有効にする必要がある場合、[Microsoft Excel アドイン](../office-integration/use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app)を使用してこのタスクをすばやく完了できます。
+**システム管理** \> **ユーザー** \> **ユーザー** にアクセスし、運用環境へのアクセスが必要なユーザーを有効化します。 多くのユーザーを有効にする必要がある場合、[Microsoft Excel アドイン](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#open-entity-data-in-excel-when-you-start-from-finance-and-operations)を使用してこのタスクをすばやく完了できます。
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
@@ -218,6 +219,3 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
 
 * [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) には、コミュニティによって作成された多くの貴重なツールがあります。
 * [GitHub でコミュニティによって提供されたオープン ソース プロジェクト](https://github.com/search?q=dynamics+365+finance+operations&s=stars)。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

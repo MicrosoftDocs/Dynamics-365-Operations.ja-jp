@@ -1,10 +1,12 @@
 ---
 title: 入庫および出庫資産
 description: このトピックでは、資産管理で入庫および出庫資産を登録する方法について説明します。
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0bd3127df1b583acc6841c3e115d3beceabcab2756098e567b2269c1dcc94004
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6dfadf6824c6a3df7be9b3b6f3d9f5dd2749e34
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759626"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018074"
 ---
 # <a name="inbound-and-outbound-assets"></a>入庫および出庫資産
 
@@ -42,7 +44,7 @@ ms.locfileid: "6759626"
 3. **メンテナンス要求の状態の更新** を選択します。
 4. **入庫** (または入庫資産用に作成した別のライフサイクル状態) を選択し、**OK** を選択します。
 
-![資産を入庫として登録する。](media/07-manage-maintenance-requests.png)
+![資産を入庫として登録する](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>入庫資産を入庫済として登録する
 
@@ -51,7 +53,7 @@ ms.locfileid: "6759626"
 3. **資産の受入** を選択します。
 4. **受入済** フィールドで、日時を入力します。 その後、**OK** を選択します。 レコードは、**入庫資産** リスト ページから削除されます。
 
-![入庫資産を入庫済として登録する。](media/08-manage-maintenance-requests.png)
+![入庫資産を入庫済として登録する](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>資産を出庫として登録する
 
@@ -68,6 +70,3 @@ ms.locfileid: "6759626"
 2. 資産またはメンテナンス要求を選択します。
 3. **資産を配送** を選択します。
 4. **配送済** フィールドで、日時を入力します。 その後、**OK** を選択します。 レコードは、**出庫資産** リスト ページから削除されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

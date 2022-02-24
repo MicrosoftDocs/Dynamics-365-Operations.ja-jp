@@ -1,24 +1,26 @@
 ---
 title: 直納として注文を出荷
 description: このトピックは、販売注文の直納を作成する方法を示します。
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94890b0915a49052c298090f124cf2b91c462de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0a8f214a56c6a5013cab8233d5b2e0126deb9220
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572444"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966108"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>直納として注文を出荷
 
@@ -79,6 +81,3 @@ ms.locfileid: "7572444"
     - [直納] のページは、直納予定のすべての販売注文明細行を購買担当者に提供するワークベンチとして機能し、それぞれの発注書を作成することができます。 また、未処理の直納注文および確認済の注文を [確認および出荷] タブで表示することができます。  
     - 直納注文は作成後、自動的に [確認] タブに移動します。このページから注文を直接確認することもできます。 購買は確認されると、受領書を登録できる [出荷] タブに自動的に移動します。  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

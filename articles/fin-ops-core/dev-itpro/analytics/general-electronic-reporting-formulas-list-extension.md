@@ -1,10 +1,12 @@
 ---
-title: 電子申告 (ER) 機能の一覧の拡張
-description: この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。
+title: 電子申告 (ER) 関数の一覧の拡張
+description: テキスト、日時、算術、論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数がデータ変換のための電子報告式でサポートされています。 組み込み関数に加えて、電子申告により使用可能な関数の一覧を拡張できます。 この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。
 author: NickSelin
-ms.date: 10/25/2021
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERExpressionDesignerFormula
 audience: Developer, IT Pro
@@ -15,28 +17,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4968ac8c0503958c9d43ef48bbcaaecea7cd120
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: e2b706e2ff3ad9535d69d28af4ac81fafa5f7130
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700025"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682637"
 ---
 # <a name="extend-the-list-of-electronic-reporting-er-functions"></a>電子申告 (ER) 関数の一覧の拡張
 
 [!include [banner](../includes/banner.md)]
 
-テキスト、日時、算術、論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数がデータ変換のための電子報告式 (ER) でサポートされています。 組み込み関数に加えて、ER により使用可能な関数の一覧を拡張できます。 この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。
+テキスト、日時、算術、論理、情報、データ型変換、およびその他 (ビジネス ドメインの特定の関数) といったさまざまなタイプの関数がデータ変換のための電子報告式でサポートされています。 組み込み関数に加えて、電子申告により使用可能な関数の一覧を拡張できます。 この記事では、新しい機能を導入するために完了しなければならない重要なタスクの概要について説明します。
 
-> [!IMPORTANT]
-> Microsoft Dynamics 365 for Finance and Operations、Enterprise edition 7.3 では、**ERExpression** クラスの拡張機能の使用は非推奨になっています。 **ERExpression** クラスの拡張機能を使用してカスタムの組み込み ER 関数を追加する代わりに、カスタム クラスのパブリック メソッドとしてカスタム ロジックを実装することができます。 これらのメソッドは、[*クラス*](er-formula-supported-data-types-composite.md#class) タイプまたは [*オブジェクト*](er-formula-supported-data-types-composite.md#object) タイプのいずれかの必要な ER データ ソースを構成する ER 形式および ER モデル マッピングから呼び出すことができます。 詳細については、[アプリケーション クラスのメソッドを呼び出す ER 式の設計](tasks/design-expressions-app-class-er.md)を参照してください。
-
-アプリケーション コードのすべての ER 機能は、**ERExpression** クラスを拡張するクラスとして表示されます。 2 種類の関数が認識されます。
+アプリケーション コードのすべての電子レポート機能は、**ERExpression** クラスを拡張するクラスとして表示されます。 2 種類の関数が認識されます。
 
 - **引数の数を固定** – これらの関数は、接頭語 **parm** (次のサンプルコードの **parmInput**、**parmStartNum** を参照してください) を持つメソッドを含むクラスで表されます。 引数の順序は、**SysOperationDisplayOrderAttribute** 属性によって設定されます。
 - **可変数の引数** – これらの機能は (**ERExpressionGenericCase** クラスを参照してください)**ERIObjectContainer** インターフェイスを実装するクラスで表されます。 追加の **追加** メソッドを使用して関数を受け入れる型を宣言します。
 
-ER の新しい機能を導入するのに推奨されている手順を次に示します。
+電子申告式の新しい機能を導入するのに推奨されている手順を次に示します。
 
 - 戻り値の型に基づいて関数の基本クラスを選択します (以下のサンプル コードで **ERExpressionString** を参照してください)。
 
@@ -104,16 +103,14 @@ class ERExpressionStringMid extends ERExpressionString
 ```
 
 ## <a name="suggested-guidance"></a>推奨されるガイダンス
-次のガイダンスは、カスタム ER 機能の設計を支援することを目的としています。
+次のガイダンスは、カスタム電子申告機能の設計を支援することを目的としています。
 
-- ER 式が Excel と同じようにされるため、可能な限り Microsoft Excel の関数名を再利用してください。 この方法で、ER のフォーミュラをエンド ユーザーにわかりやすく保持します。
-- ER では、プリミティブ データ型のリスト タイプがサポートされません。 したがって、単一の **Value** 項目を持つデータ コンテナー リストを使用することに決めました。
-- 新しい関数の一覧の拡張機能を新しいアプリケーションの修正プログラムとしてリリースします。 ER デザイナーは、新しいユーザー定義関数を使用する ER コンフィギュレーションの修正プログラム番号を参照します。 このタイプの構成が新しいインスタンスにインポートされるときはいつでも、必要な修正プログラムがインストールされたかどうかが ER によって評価され、ER と、構成がインポートされるバージョンとの間のコンプライアンスを維持します。
+- 電子レポート式が Excel と同じようにされるため、可能な限り Microsoft Excel の関数名を再利用してください。 この方法で、電子申告のフォーミュラをエンド ユーザーにわかりやすく保持します。
+- 電子申告では、プリミティブ データ型のリスト タイプがサポートされません。 したがって、単一の **Value** 項目を持つデータ コンテナー リストを使用することに決めました。
+- 新しい関数の一覧の拡張機能を新しいアプリケーションの修正プログラムとしてリリースします。 電子申告デザイナーは、新しいユーザー定義関数を使用する電子申告 コンフィギュレーションの修正プログラム番号を参照します。 このタイプの構成が新しいインスタンスにインポートされるときはいつでも、必要な修正プログラムがインストールされたかどうかが電子申告によって評価され、電子申告構成と、構成がインポートされるバージョンとの間のコンプライアンスを維持します。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [電子申告 (ER) の概要](general-electronic-reporting.md)
 
 [電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

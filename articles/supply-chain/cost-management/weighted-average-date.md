@@ -2,9 +2,11 @@
 title: 加重平均日付
 description: 加重平均日付とは加重平均原則に基づく在庫モデルで、在庫からの出庫は、在庫原価計算期間の 1 日ごとに、在庫に入庫された品目の平均額で決定されます。
 author: AndersGirke
+manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572028"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963741"
 ---
 # <a name="weighted-average-date"></a>加重平均日付
 
@@ -39,7 +41,7 @@ ms.locfileid: "7572028"
 
 次の図のように、在庫決算中は期間を通して毎日計算が行われています。 
 
-![加重平均日の日々計算モデル。](./media/weightedaveragedatedailycalculationmodel.gif) 
+![加重平均日の日々計算モデル](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 購買注文、在庫仕訳帳、製造オーダーなど、在庫払出から発する在庫トランザクションは、転記日の見積原価価格で発生します。 この見積原価価格は、移動平均原価価格とも呼ばれます。 在庫原価計算日に、そのシステムが前の期間、前の日付、および現在の日付の在庫トランザクションを分析します。 この分析を使用して、次の在庫計算原則のどちらを使用する必要があるかを決定します。
 
@@ -72,7 +74,7 @@ ms.locfileid: "7572028"
 -   2b. 数量 2 の在庫財務払出を、それぞれの原価 USD 10.00 で更新します。
 -   3. 在庫原価計算は直接決済方式を使用して実行され、在庫財務払出に対して在庫財務入庫を決済します。
 
-![[現物価格を含める] オプションを使用しない加重平均日直接決済。](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![[現物価格を含める] オプションを使用しない加重平均日直接決済](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **図の説明:**
 
@@ -126,7 +128,7 @@ ms.locfileid: "7572028"
 
 次の図は、この一連のトランザクションを示しています。また、加重平均在庫モデルと集計決済原則を使用し、**現物価格を含める** オプションを使用しない場合の影響を示しています。 
 
-![現物価格を含めるオプションを使用しない加重平均日集計決済。](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![[現物価格を含める] オプションを使用しない加重平均日集計決済](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **図の説明:**
 
@@ -175,7 +177,7 @@ ms.locfileid: "7572028"
 
 新しい移動平均原価価格は、USD 27.50 での財務および現物更新済トランザクションの平均を反映しています。 次の図は、この一連のトランザクションを示しています。また、加重平均日付の在庫モデルとマーキングを使用した影響を示しています。
 
-![マーキングを使用した加重平均日。](./media/weightedaveragedatewithmarking.gif) 
+![マーキングを使用した加重平均日](./media/weightedaveragedatewithmarking.gif) 
 
 **図の説明:**
 
@@ -193,6 +195,3 @@ ms.locfileid: "7572028"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

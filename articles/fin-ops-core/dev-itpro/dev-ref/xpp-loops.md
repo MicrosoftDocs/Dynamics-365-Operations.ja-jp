@@ -2,20 +2,27 @@
 title: X++ ループ ステートメント
 description: このトピックでは、X++のループ ステートメントについて説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/17/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
 ms.devlang: xpp
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 150213
+ms.assetid: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 590821aeb05f725470a364621c20e744d351d0c9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7a1114b0eb47ea6dd8386372295f4f001ab42d54
+ms.sourcegitcommit: 71a19a55ae84df917c19a11c065d0d8a6140e669
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783257"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "4409580"
 ---
 # <a name="x-loop-statements"></a>X++ ループ ステートメント
 
@@ -64,7 +71,7 @@ for (int i = 0; i < 10; i++)
 
 ```xpp
 container cont = ["one", "two", "three"];
-int no = 1;
+int no = 0;
 while (no <= conlen(cont))
 {
     info(conPeek(cont, no));
@@ -151,6 +158,3 @@ if (found)
     // do something
 }
 ```
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

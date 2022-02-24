@@ -2,9 +2,11 @@
 title: Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1.2 の新機能または変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされました。
 author: tonyafehr
+manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 6329d3ee17ffb2c35b968228119755c4e0cb256af4b8c38dd5d4da57458559cb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a854612b3f516dfc157f51d730040602db7160d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743159"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797181"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-812-december-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1.2 (2018 年 12 月) の新機能および変更された機能
 
@@ -29,13 +31,13 @@ ms.locfileid: "6743159"
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1.2 の新機能または変更された機能について説明します。 このバージョンは 2018 年 12 月にリリースされ、ビルド番号は 8.1.195 です。
 
-Retail の新機能または変更された機能についての最新のリリースについては、[Dynamics 365 for Retail の新機能または変更された機能](../../../commerce/get-started/whats-new.md) を参照してください。
+Retail の新機能または変更された機能についての最新のリリースについては、[Dynamics 365 for Retail の新機能または変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new) を参照してください。
 
 ### <a name="dynamics-365-october-18-release-notes"></a>Dynamics 365 2018 年 10 月リリース ノート
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2018 年 10 月リリース ノートを確認](/dynamics365/release-plans/). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2018 年 10 月リリース ノートを確認](https://go.microsoft.com/fwlink/?linkid=870424). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ## <a name="bug-fixes"></a>バグ修正
 
@@ -127,8 +129,5 @@ Finance and Operations の今回のリリースでは、列挙、メタデータ
 
 これらのコンフィギュレーション バージョンは、パブリック プレビューとしてリリースされ、受け取ったフィードバックに基づいて更新されます。 これらを使用して、販売の電子形式、購買帳簿、他のシート、Facture の仕訳帳がどのように電子申告で構成されているかを参照してください。 実際の環境で派生したカスタム コンフィギュレーションの基本コンフィギュレーションとしてこれらのコンフィギュレーションを使用しないでください。
 
-詳細については、[売上帳簿、購買帳簿、および請求書 Facture 仕訳帳](../../../finance/localizations/rus-sales-books-purchase-books.md)を参照してください。
+詳細については、[売上帳簿、購買帳簿、および請求書 Facture 仕訳帳](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books)を参照してください。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

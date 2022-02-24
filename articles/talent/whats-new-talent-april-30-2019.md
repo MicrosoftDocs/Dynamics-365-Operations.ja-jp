@@ -101,6 +101,3 @@ ms.locfileid: "4528198"
 ### <a name="email-support-for-alerts"></a>アラートの電子メールサポート
 
 Finance and Operations のプラットフォーム更新プログラム 26 では、あるイベントによって通知がトリガーされた時、自動的に連絡先に電子メール通知を送信する警告ルールを作成できます。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

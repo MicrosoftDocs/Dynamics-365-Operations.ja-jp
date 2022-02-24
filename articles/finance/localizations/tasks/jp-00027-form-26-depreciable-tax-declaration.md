@@ -2,23 +2,26 @@
 title: JP-00027 減価償却税申告のフォーム 26
 description: このタスクでは、登録番号の固定資産への割り当て方法と申告 26 レポートの印刷について説明します。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, LogisticsPostalAddress, SysLookupMultiSelectGrid, LogisticsAddressCityLookup, AssetLocation, AssetLocationEdit_JP, AssetGroup, AssetTable, LedgerJournalTable, LedgerJournalTransAsset, DefaultDashboard
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 955a3869203f74757a412028807879be6474f97046db349045f9423be06ff2c0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c09e9817ccb399300455c06e70454f0567437d47
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713116"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408169"
 ---
 # <a name="jp-00027-form-26-for-depreciable-tax-declaration"></a>JP-00027 減価償却税申告のフォーム 26
 
@@ -98,6 +101,3 @@ ms.locfileid: "6713116"
     * 必要な場所でレポートを表示/保存します。  印刷レポートの検証、固定資産を登録番号ごとに分類してグループ化します。  
     * 同様の固定資産の分類 n グループが、申告 26-1 n 申告 26-2 レポートに提示されます  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

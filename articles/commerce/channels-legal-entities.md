@@ -1,31 +1,37 @@
 ---
-title: 法人を作成します
+title: 法人の作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce で法人を作成する方法について説明していますが、チャネルを作成する前に作成してコンフィギュレーションする必要があります。
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bc5f097a7f941dfa05f4011d9be5caffbb7f01b5f6e67cd7535ef3d1b13f59fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28cbcc42505f1dc90c420adc812735841541c8e0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740434"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413717"
 ---
-# <a name="create-legal-entities"></a>法人を作成します
+# <a name="create-legal-entities"></a>法人の作成
+
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce で法人を作成する方法について説明していますが、チャネルを作成する前に作成してコンフィギュレーションする必要があります。
+
+## <a name="overview"></a>概要
 
 法人とは、登記または法的手続きを済ませた法律上の構造を持つ組織です。 法人には、法的契約の締結が認められており、業績を報告する収支報告書の作成が義務付けられています。
 
@@ -44,7 +50,7 @@ Dynamics 365 Commerce に新しい法人を作成するには、次の手順を�
 1. **国/地域** フィールドで、値を入力または選択します。
 1. **OK** を選択します。 
 
-   ![法人の作成。](media/legal-entities.png)
+   ![法人の作成](media/legal-entities.png)
 
 1. **一般** セクションで、法人に関する次の一般情報を提供します。 
    1. 検索名が必要な場合、検索名を入力します。 検索名は、この法人を検索するために使用できる代替名です。 
@@ -67,7 +73,7 @@ Dynamics 365 Commerce に新しい法人を作成するには、次の手順を�
 
 次の図は、法人の例の詳細を示しています。
 
-![法人の一般セクション。](media/legal-entities-general.png)
+![法人の一般セクション](media/legal-entities-general.png)
    
 ## <a name="additional-resources"></a>追加リソース
 
@@ -80,6 +86,3 @@ Dynamics 365 Commerce に新しい法人を作成するには、次の手順を�
 [チャネルの概要](channels-overview.md)
 
 [チャネル設定の前提条件](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

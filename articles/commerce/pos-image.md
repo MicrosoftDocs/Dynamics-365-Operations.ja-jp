@@ -2,13 +2,16 @@
 title: POS のクライアント イメージ
 description: このトピックは、小売環境で POS クライアント イメージ管理に関連する機能を実装するユーザーを対象としています。 実装の計画時に考慮すべき実装のヒントとガイダンスについて説明します。
 author: josaw1
+manager: annbe
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: cbittner
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: e9824d75107896dbd39a0e405667915b6458c1e110287b2427661a5c95e453e5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c80266a06a3b90dc6be5f3a5dea416b6e7656ed7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759299"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408990"
 ---
 # <a name="client-images-in-pos"></a>POS のクライアント イメージ
 
@@ -43,6 +46,3 @@ ms.locfileid: "6759299"
 
 ## <a name="implementation-example"></a>実装の例 
 1366 x 768 ピクセルの解像度と Contoso デモ データに類似した画面レイアウトを備えた一般的な 18.5 インチ PO Sディスプレイで、キャンバスの 3 分の 2 をカバーするウェルカム画面イメージを作成するには、画面の長さと幅よりもそれほど高くない解像度の画像を選択します。 この例では、911 x 512 ピクセルの解像度で十分です。 長さと幅に比較的高い解像度を選択しても、低い dpi 設定を維持すると、ファイル サイズは適度に小さくなります。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

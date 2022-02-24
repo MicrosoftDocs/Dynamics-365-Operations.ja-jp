@@ -2,30 +2,36 @@
 title: モジュール ライブラリの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce モジュール ライブラリの概要を表示します。
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 94ff18fc34fbfbaee434db12f0d0bc8bb7042c2f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: dfc52dd8e14bb2e9f2f9c026ee0e058aee4cedcb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985762"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413825"
 ---
 # <a name="module-library-overview"></a>モジュール ライブラリの概要
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce モジュール ライブラリの概要を表示します。
+
+## <a name="overview"></a>概要
 
 Dynamics 365 Commerce モジュール ライブラリは、E コマース Web サイトを構築するために使用できるモジュールの集合です。 モジュールには、ユーザー インターフェイス (UI) の側面と機能的動作の側面の両方があります。
 
@@ -60,6 +66,3 @@ Dynamics 365 Commerce モジュール ライブラリは、E コマース Web �
 [ヘッダー モジュール](author-header-module.md)
 
 [フッター モジュール](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Commerce Data Exchange のトラブルシューティング
-description: このトピックでは、実装における CDX のトラブルシューティングに役立つ情報を提供します。
+description: このトピックは、Microsoft Dynamics 365 Commerce 環境にデータ同期 (Commerce Data Exchange、または CDX) に関連する機能の実装を行う IT 担当者を対象としています。 ここでは、実装における CDX のトラブルシューティングに役立つ情報を提供します。
 author: jashanno
-ms.date: 08/26/2020
+manager: AnnBe
+ms.date: 08/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
@@ -16,15 +18,14 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: a3261341127c93c0e1c8759b8443328ba3fd95b3
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: aeb6f764e64e21c507eac68a305bb85b2a6c96ae
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441492"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680406"
 ---
 # <a name="commerce-data-exchange-troubleshooting"></a>Commerce Data Exchange のトラブルシューティング
-
 [!include[banner](../includes/banner.md)]
 
 このトピックは、Microsoft Dynamics 365 Commerce 環境にデータ同期 (Commerce Data Exchange \[CDX\]) に関連する機能の実装を行う IT 担当者を対象としています。 ここでは、実装における CDX のトラブルシューティングに役立つ情報を提供します。
@@ -62,11 +63,8 @@ ms.locfileid: "7441492"
 
 - [Commerce Data Exchange ベスト プラクティス](CDX-Best-Practices.md)
 - [Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md)
-- [Commerce のオフライン実装とトラブルシューティング](implementation-considerations-offline.md)
 - [Dynamics 365 Commerce アーキテクチャの概要](../commerce-architecture.md)
-- [店舗内トポロジの選択](retail-in-store-topology.md)
+- [ストア内トポロジの選択](retail-in-store-topology.md)
 - [デバイス管理実装ガイダンス](../implementation-considerations-devices.md)
 - [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md)
 - [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

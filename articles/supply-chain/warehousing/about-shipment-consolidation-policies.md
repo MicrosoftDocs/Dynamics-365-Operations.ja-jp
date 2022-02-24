@@ -2,27 +2,28 @@
 title: 出荷連結ポリシー
 description: このトピックでは、出荷連結ポリシーの柔軟な構成を実現する機能の概要について説明します。
 author: GarmMSFT
+manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 11ee4beefed02425d4650de3e896e608d3d00ef5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f895b13b2e11d4cb341f80b3cfeb40ed998ccfc4
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577963"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654223"
 ---
 # <a name="shipment-consolidation-policies"></a>出荷連結ポリシー
-
-[!include [banner](../includes/banner.md)]
 
 出荷連結ポリシーを使用した出荷連結のプロセスを使用することで、倉庫への自動リリースと手動リリースの処理にて自動出荷連結が可能となります。 この機能が導入される前の自動連結では、フィールドがハードコーディングされており、これは倉庫対して設定されていた **倉庫にリリースされた出荷を連結する** フィールドをベースにしていました。
 
@@ -134,6 +135,3 @@ ms.locfileid: "7577963"
 ## <a name="additional-resources"></a>追加リソース
 
 - [出荷連結ポリシーを構成する](configure-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

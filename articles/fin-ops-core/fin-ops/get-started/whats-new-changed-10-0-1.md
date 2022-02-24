@@ -2,9 +2,11 @@
 title: Finance and Operations バージョン 10.0.1 (2019 年 4 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 10.0.1 の新機能または変更された機能について説明します。 このバージョンは 4 月にリリースされます。
 author: tonyafehr
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: e77807ac7daabdd72decfeb4b297b054d2dcb16a632e0790e7868978f45c5021
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 209b81b4dd63b3dc68b2f2d2c167ef71eed93efc
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755732"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797245"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-1001-april-2019"></a>Finance and Operations バージョン 10.0.1 (2019 年 4 月) の新機能および変更された機能
 
@@ -29,7 +31,7 @@ ms.locfileid: "6755732"
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.1 の新機能または変更された機能について説明します。 このバージョンは 4 月にリリースされ、ビルド番号は 10.0.51 です。 バージョン 10.0.1 の詳細については [追加リソース](whats-new-changed-10-0-1.md#additional-resources) を参照してください。
 
-Retail の最新のリリースの新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.1 の新機能と変更](../../../commerce/get-started/whats-new-10-0-1.md) を参照してください。
+Retail の最新のリリースの新機能と変更については、[Dynamics 365 for Retail バージョン 10.0.1 の新機能と変更](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-1) を参照してください。
 
 
 ## <a name="enable-edit-for-externally-maintained-fields"></a>外部管理フィールドの編集を有効化
@@ -42,17 +44,17 @@ Retail の最新のリリースの新機能と変更については、[Dynamics 
 この機能は法定形式のアルコール小売販売の仕訳帳の印刷を含みます。
 
 ### <a name="electronic-format-of-accounting-reporting"></a>会計レポートの電子形式
-電子申告コンフィギュレーションが利用可能です。 これを使用すると、電子形式で会計レポートを生成したり、構成された財務諸表に基づいて計算したデータを保持できます。 詳細については [電子形式の会計レポート (ロシア)](../../../finance/localizations/rus-accounting-reporting.md) を参照してください。
+電子申告コンフィギュレーションが利用可能です。 これを使用すると、電子形式で会計レポートを生成したり、構成された財務諸表に基づいて計算したデータを保持できます。 詳細については [電子形式の会計レポート (ロシア)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-accounting-reporting) を参照してください。
 
-[財務諸表 (ロシア)](../../../finance/localizations/rus-financial-reports.md) で次の作業を行う方法に関する情報を見つけることができます:
+[財務諸表 (ロシア)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-financial-reports) で次の作業を行う方法に関する情報を見つけることができます:
 - 財務諸表を設定します。
 - 財務諸表の計算結果を使用するように電子申告を構成します。
 - 財務諸表を生成し結果を保存するように電子メッセージを構成します。
 
-Excel で財務諸表の印刷を構成する方法の詳細は [Excel での財務諸表のコンフィギュレーション (ロシア)](../../../finance/localizations/rus-excel-financial-report.md) を参照してください。
+Excel で財務諸表の印刷を構成する方法の詳細は [Excel での財務諸表のコンフィギュレーション (ロシア)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-excel-financial-report) を参照してください。
 
 ### <a name="assessed-tax-registers-and-electronic-format-of-declaration-version-505-2019"></a>評価税登録および申告バージョン 5.05 (2019) の電子形式
-この機能を使用すると、2019 年の報告から適用可能な、不動産資産に関する技術情報および税務情報の保管、評価税登録の計算、および電子形式で評価税申告の生成が可能になります。 詳細については [評価税申告 (ロシア)](../../../finance/localizations/rus-assessed-tax-declaration.md) を参照してください。
+この機能を使用すると、2019 年の報告から適用可能な、不動産資産に関する技術情報および税務情報の保管、評価税登録の計算、および電子形式で評価税申告の生成が可能になります。 詳細については [評価税申告 (ロシア)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-assessed-tax-declaration) を参照してください。
 
 ### <a name="transport-tax-registers-and-electronic-format-of-declaration"></a>輸送税登録および申告の電子形式
 この機能を使用して、車両の技術情報および税務情報を保持し、輸送税登録を計算し、電子形式で輸送税申告を生成することができます。
@@ -62,10 +64,10 @@ Excel で財務諸表の印刷を構成する方法の詳細は [Excel での財
 
 ### <a name="vat-declaration-in-electronic-format-version-506-2019"></a>電子形式の VAT 申告バージョン 5.06 (2019)
 この機能によって 2019 年の報告から適用可能な XML 形式の VAT 明細書を生成できます。
-詳細については [VAT 申告 (ロシア)](../../../finance/localizations/rus-VAT-declaration.md) を参照してください。
+詳細については [VAT 申告 (ロシア)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration) を参照してください。
 
 ### <a name="sales-purchase-books-and-factures-journals-in-electronic-format-2019"></a>販売、購買帳簿、Facture 仕訳帳の電子形式 (2019)
-この機能により、販売、購買帳簿、factures 仕訳帳を 2019 年から適用される電子形式で生成できます。 販売および購買帳簿の作業方法の詳細は [売上帳簿、購買帳簿、請求書 Facture 仕訳帳](../../../finance/localizations/rus-sales-books-purchase-books.md) を参照してください。
+この機能により、販売、購買帳簿、factures 仕訳帳を 2019 年から適用される電子形式で生成できます。 販売および購買帳簿の作業方法の詳細は [売上帳簿、購買帳簿、請求書 Facture 仕訳帳](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books) を参照してください。
 
 ## <a name="regulatory-updates"></a>規制の更新
 Finance and Operations の規制の更新については、[規制の更新](../../../finance/localizations/regulatory-updates.md) を参照してください。 また、Lifecycle Services (LCS) にログインし、国、機能のタイプ、およびリリースを検索できる問題検索ツールを使用して、計画された規制の更新を表示することができます。
@@ -85,7 +87,7 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.1 には�
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
@@ -97,6 +99,3 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.1 には�
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

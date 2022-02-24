@@ -2,9 +2,11 @@
 title: BPM ライブラリと Azure DevOps の同期
 description: このトピックでは、LCS の BPM ライブラリを Azure DevOps と同期させる方法について説明します。
 author: amarshall
+manager: AnnBe
 ms.date: 05/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: ced46a910ab9ba0a834e4e252dcdbcc59cdeb71340495ce9f33d20fca843b5a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d245bf7caaeee6d11672d666431f932d373d53f0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773774"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681056"
 ---
 # <a name="synchronize-bpm-libraries-with-azure-devops"></a>BPM ライブラリと Azure DevOps の同期
 
@@ -60,7 +62,7 @@ Azure DevOps プロジェクトに接続するために、LCS は個人用アク
 4. Azure DevOps プロジェクトを選択します。
 5. LCS/BPM 項目と関連付けられている Azure DevOps 作業項目の種類の間のマッピングを指定します。
 
-    ![作業項目タイプ マッピング。](./media/newbpm_BlogPost24.png)
+    ![作業項目タイプ マッピング](./media/newbpm_BlogPost24.png)
 
 6. **続行** を選択して変更内容を確認し、**保存** を選択します。
 
@@ -80,11 +82,11 @@ LCS プロジェクトおよび Azure DevOps プロジェクト間の接続を�
 
 BPM ライブラリを Azure DevOps プロジェクトと同期させるには、**業務プロセス ライブラリ** ページで、同期するライブラリのタイルの省略記号ボタン (...) を選択し、**Azure DevOps 同期** を選択します。
 
-![ライブラリのタイルから Azure DevOps 同期を開始。](./media/newbpm_BlogPost25.png)
+![ライブラリのタイルから Azure DevOps 同期を開始](./media/newbpm_BlogPost25.png)
 
 また、BPM ライブラリ内のツールバーから Azure DevOps 同期を開始することができます。 省略記号ボタン (...) を選択し、**Azure DevOps の同期** を選択します。
 
-![ライブラリのツール バーから Azure DevOps 同期を開始。](./media/newbpm_BlogPost26.png)
+![ライブラリのツール バーから Azure DevOps 同期を開始](./media/newbpm_BlogPost26.png)
 
 > [!NOTE]
 > BPM ローカライズはサポートされません。 EN-US 以外の言語で新しい BPM クライアントを編集すると、変更が加えられた言語で BPM を表示したときのみ変更が表示されます。 EN-US で行われた変更を表示するには、変更が表示される前に、Visual Studio Team Server と同期する必要があります。
@@ -108,7 +110,7 @@ BPM ライブラリを Azure DevOps プロジェクトと同期させるには�
    - **黄色の円** – プロセスおよびその子プロセスは部分的に確認されています。
    - **赤いダッシュ** – プロセスとその子プロセスは確認されていません。
 
-![レビュー列の例。](./media/newbpm_BlogPost28.png)
+![レビュー列の例](./media/newbpm_BlogPost28.png)
 
 Azure DevOps に接続されている業務プロセスを確認するとき、Azure DevOps プロジェクトに要求を直接追加することができます。
 
@@ -124,7 +126,7 @@ Azure DevOps に接続されている業務プロセスを確認するとき、A
 
 BPM から Azure DevOps への同期が失敗した場合、失敗したプロセス名、作業項目の種類、およびエラー メッセージが表示されます。 
 
-![BPM 同期エラー。](./media/BPMsyncError.jpg)
+![BPM 同期エラー](./media/BPMsyncError.jpg)
 
 ここでいくつか一般的な原因と、エラーを解決するために推奨するアクションを示します。
 
@@ -135,6 +137,3 @@ BPM から Azure DevOps への同期が失敗した場合、失敗したプロ�
 | 更新する作業項目が見つかりませんでした | 作業項目の更新に失敗しました。 作業項目が存在しないか、読み取るためのアクセス許可がありません。 プロジェクト設定で PAT コンフィギュレーションを確認するか、作業項目が DevOps プロジェクトから直接削除されている場合は作業項目を復元します。 | 削除された場合はごみ箱から作業項目を復元するか、新しい個人用アクセス トークン (PAT) を作成して完全なアクセス許可があることを確認します。 |  
 | 個人用アクセス トークンの期限が切れています | Visual Studio Team Services との同期に失敗しました。 要求応答は次のとおりです: 無許可。 PAT が正しく設定されていてまだ有効なことを確認し、エラーが引き続き発生する場合は再試行してサポートに連絡してください。 | Azure DevOps から新しい個人用アクセス トークン (PAT) を作成し、LCS プロジェクト設定で PAT 値を更新します。 | 
 | 一般的なエラー | Visual Studio Team Services との同期に失敗しました。 要求応答は次のとおりです: {0}。 PAT が正しく設定されていてまだ有効なことを確認し、エラーが引き続き発生する場合は再試行してサポートに連絡してください。 | 同期エラーの原因となった要求応答で、顧客サポートに問い合わせてください。 | 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

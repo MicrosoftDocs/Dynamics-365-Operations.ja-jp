@@ -2,25 +2,28 @@
 title: Supply Chain Management ホーム ページ
 description: このページでは、Supply Chain Management 機能に関するヘルプ トピックとその他のリソースの一覧を示します。
 author: kamaybac
-ms.date: 09/15/2021
+manager: tfehr
+ms.date: 06/30/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9255640240ae07c3857c0b6f55a7ee27ba3bf85b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487867"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459427"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management ホーム ページ
 
@@ -60,8 +63,9 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 
 - [Field Service と Finance and Operations の間の作業指示書の同期](https://youtu.be/hAB4TDVMjxU)
 
-これらの短いビデオでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 (2017 年 12 月) に追加された新しい Supply Chain Management 機能の概要をご紹介します。
+これらの短いビデオでは、Microsoft Dynamics 365 for Finance and Operations、Enterprise Edition 7.3 (2017 年 12 月) に追加された新しい Supply Chain Management 機能を要約しています。
 
+- [Prospect to cash integration (見込顧客リストの現金化への統合)](https://youtu.be/AVV9x5x-XCg) 
 - [最適化アドバイザー](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Use warehouse template to copy configuration (倉庫テンプレートを使用したコンフィギュレーションのコピー)](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
@@ -79,12 +83,13 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
   - [Overview of Cost management (原価管理の概要)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
 - **マスター プラン:**
   - [Extend the demand forecasting functionality (需要予測機能の拡張)](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-  - [マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ](https://youtu.be/7v8BPmEs9Dg)
-  - [MRP パフォーマンス チューニング](https://youtu.be/RLXybx20B5o)
+  - [Master planning - tips and tricks for troubleshooting performance (マスター プラン - パフォーマンスのトラブルシューティングに関するヒントとコツ)](https://youtu.be/7v8BPmEs9Dg)
+  - [Help! MRP is slow! (MRP の処理に時間がかかる!)](https://youtu.be/RLXybx20B5o)
 - **製品情報管理:**
-  - [Microsoft Dynamics AX の製品コンフィギュレーター](https://youtu.be/zotrj3SbCl4)
+  - [Product configurator in Microsoft Dynamics AX (Microsoft Dynamics AX の製品コンフィギュレーター)](https://youtu.be/zotrj3SbCl4)
 - **倉庫管理:**
   - [倉庫管理システムを最大限に活用する](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+  - [新しい Microsoft Dynamics AX 2012 R3 倉庫管理でのラベル](https://youtu.be/5w1MngVchBA)
   - [Dynamics AX 2012 R3: 高度な倉庫管理 - プロセス製造の日常](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **生産管理ビデオ:**
   - [Subcontracting operations and activities in manufacturing (製造での外注の操作および活動)](https://youtu.be/y1jrd3A_k70)
@@ -93,16 +98,13 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 
 ## <a name="blogs"></a>ブログ
 
-[Dynamics AX 製造研究開発チーム ブログ](/archive/blogs/axmfg/) および [Dynamics AX 研究開発チーム ブログの Supply Chain Management](https://blogs.msdn.microsoft.com/dynamicsaxscm/)には、製造およびサプライ チェーン マネジメントに関する多くのトピックがあります。 これらの投稿のほとんどは、以前のバージョンについて書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
+[Dynamics AX 製造研究開発チーム ブログ](https://blogs.msdn.microsoft.com/axmfg/) および [Dynamics AX 研究開発チーム ブログの Supply Chain Management](https://blogs.msdn.microsoft.com/dynamicsaxscm/)には、製造およびサプライ チェーン マネジメントに関する多くのトピックがあります。 これらの投稿のほとんどは、以前のバージョンについて書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
 
 ## <a name="white-papers"></a>ホワイト ペーパー
 
-- [Lean manufacturing: Capable to promise and kanban job scheduling (リーン生産: 生産可能在庫とかんばん作業のスケジューリング)](/dynamics/s-e/)
+- [Lean manufacturing: Capable to promise and kanban job scheduling (リーン生産: 生産可能在庫とかんばん作業のスケジューリング)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
 - [BOM calculation by using a costing sheet (原価計算表を使用した BOM 計算)](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>eLearning コース
 
-オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Supply Chain Management ](/learn/browse/?products=dynamics-scm&resource_type=learning+path) をご確認ください。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path) をご確認ください。

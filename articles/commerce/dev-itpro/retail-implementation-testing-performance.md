@@ -1,25 +1,27 @@
 ---
 title: テストおよびパフォーマンスの問題
-description: このトピックでは、Microsoft Dynamics 365 Commerce のテスティングおよびパフォーマンスの推奨事項について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce 実装プロジェクトのテスティングおよびパフォーマンスの推奨事項について説明します。
 author: andreashofmann1
+manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 6648f245af0b298fe8998f7b14c6edb01cc2e026
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 29248887e9df89dceb549b9577528c0df3f84d43
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781480"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681498"
 ---
 # <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスに関する問題
 
@@ -50,7 +52,7 @@ Modern POS/クラウド POS を使用する場合は、正しいユーザー ロ
 - 追加のチャネル データベース拡張機能。 カスタム SQL が効率的で、正しいインデックスを使用していることを確認してください。
 - 同じカスタムまたは組み込みの CRT SQL クエリを複数回実行します。 この方法ではコストがかかりすぎる場合は、CRT 要求ハンドラーでキャッシュを適切に適用することができます。
 
-詳細については、[IT プロおよび開発者向けコマース](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)トピックを参照してください。
+詳細については、[IT プロおよび開発者向けコマース](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)トピックを参照してください。
 
 店舗のパフォーマンスを調査するときは、[小売チャンネル実績調査](https://dynamicsnotes.com/retail-channel-performance-investigations/)にある提案に従ってください。
 
@@ -87,6 +89,3 @@ Modern POS/クラウド POS を使用する場合は、正しいユーザー ロ
 [コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Retail プロジェクトのコードと環境の更新](./updating-environments.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

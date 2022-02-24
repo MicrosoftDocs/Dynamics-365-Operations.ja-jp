@@ -2,24 +2,26 @@
 title: Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 の拡張機能の変更
 description: このトピックは、Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 でリリースされた拡張機能を一覧表示します。
 author: FrankDahl
+manager: AnnBe
 ms.date: 08/03/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2018-08-31
 ms.dyn365.ops.version: App 8.0.3
-ms.openlocfilehash: d7b927e8575b118d987b7cad71c72ec407ccb502
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ebd582094898347d5847fe2cf1d7e695f207d1bd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783026"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409340"
 ---
 # <a name="extensibility-changes-in-dynamics-365-for-finance-and-operations-update-803"></a>Dynamics 365 for Finance and Operations 更新プログラム 8.0.3 の拡張機能の変更
 
@@ -31,8 +33,8 @@ ms.locfileid: "7783026"
 
 これらのメソッドはリファクターされ、コマンド チェーン、デリゲート、またはメンバーへのアクセスの提供によって、拡張性をサポートします。
 
-| メソッド |
-|---------------|
+| メソッド|
+| --------------- |
 |AccountingSourceExplorerProcessor.filterEntries|
 |AgreementClassification.init|
 |AgreementConfirm.createLineVolumeCommittmentHistory|
@@ -166,7 +168,7 @@ ms.locfileid: "7783026"
 |ProjIntercompanyTransQuery.buildExpenseQuery|
 |ProjIntercompanyTransQuery.buildHoursQuery|
 |ProjIntercompanyTransQuery.buildVendorInvoiceLinesQuery|
-|ProjInventJournalTransMapForm.checkActivity|
+|ProjInventJournalTransMapForm.checkActivity||
 |projInvoiceChooose.setProposalJour|
 |ProjInvoiceChoose.doRevenue|
 |ProjInvoiceChoose.updateInvoiceTotal|
@@ -307,6 +309,3 @@ ms.locfileid: "7783026"
 - EcoResProductSearchName の EDT の文字列のサイズを増加
 - AssetLedgerAccounts の CacheLookup プロパティを NotInTTS に変更します。
 - TaxOnItem、TaxJurisdiction、TaxGroupData、TaxData、およびAssetLedgerAcounts で CacheLookup プロパティを検出に変更します。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

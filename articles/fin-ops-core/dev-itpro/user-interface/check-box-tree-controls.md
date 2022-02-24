@@ -2,24 +2,26 @@
 title: ツリー コントロールでのチェック ボックスのサポート
 description: この記事は、ツリー コントロールのチェック ボックス コントロールを使用するための入門書として作成されています。 ツリー コントロールを使用するための一般的な「方法」ではありません。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 31501
 ms.assetid: 57c0fa59-ef48-4913-9f92-407ff2566c72
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ded5c9b82f43054f481350ff75237d5c15eed98e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 87166c55763b15b1cc359214675b79c5bb1e389e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783138"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679744"
 ---
 # <a name="check-box-support-in-tree-controls"></a>ツリー コントロールでのチェック ボックスのサポート
 
@@ -29,11 +31,11 @@ ms.locfileid: "7783138"
 
 Microsoft Dynamics AX 2012 には、データをツリー階層で表示し、ユーザーがチェック ボックスを使用して 1 つまたは複数のノードを選択できるようにするために強化されたツリー コントロールの例がいくつか含まれています。 Dynamics AX 2012 では、ツリー コントロールには、チェック ボックスのコントロールに対して、組み込みのサポートがありませんでした。 代わりに、チェック ボックスのイメージがツリー コントロール内の各ノードに対して追加されました。 ユーザーがチェックボックスをクリックすると、各ノードのイメージの状態が切り替わりました。 
 
-![以前のバージョンでのツリー コントロールのスクリーン ショット。](./media/treecontrol_legacycheckbox.png) 
+![以前のバージョンでのツリー コントロールのスクリーン ショット](./media/treecontrol_legacycheckbox.png) 
 
 現在のバージョンでは、開発者の経験が大幅に簡素化されています。 チェック ボックスのサポートがツリー コントロールに組み込まれました。 
 
-![現在のバージョンでのツリー コントロールのスクリーン ショット。](./media/treecontrol_ax7checkbox.png) 
+![現在のバージョンでのツリー コントロールのスクリーン ショット](./media/treecontrol_ax7checkbox.png) 
 
 チェック ボックスを含めるイメージを使用する必要がなくなり、選択されている場合にチェック ボックスの状態を明示的に設定する必要もありません。 コントロールは画像を使用せず、チェック ボックスの状態は、トライステートのチェック ボックスで期待どおりに管理されます。 状態チェック ボックスの例では、ほとんどのインストール シナリオで検出が可能です。 状態チェック ボックスが使用されているとき、ユーザーが親ノードを選択すると、その親のすべての子も選択されます。 チェックボックスの操作は、ノードの展開/折りたたみ機能とは独立しています。 親ノードが折りたたまれているのとき (子が非表示のとき)、親ノードに付いているチェック マークは、すべての子も選択されていることを示します。 ただし、複数の子を持つ親の 1 つの子が選択されない場合、親ノードの外観が変化します。 チェックボックスにチェックマークは含まれなくなりましたが、記入されています。 この状態は、部分チェックと見なされます。 したがって、親ノードには 3 つの状態があります。
 
@@ -45,31 +47,31 @@ Microsoft Dynamics AX 2012 には、データをツリー階層で表示し、�
 
 **部分的状態にある親ノード** 
 
-![部分的状態にある親ノードの例。](./media/treecontrol_partialparent.png) 
+![部分的状態にある親ノードの例](./media/treecontrol_partialparent.png) 
 
 **親ノードが選択された後、チェックされた状態の親ノードおよびすべての子ノード**
 
-![チェックされた状態にある親ノードと子ノードの例。](./media/treecontrol_parent.png) 
+![チェックされた状態にある親ノードと子ノードの例](./media/treecontrol_parent.png) 
 
 ユーザーがチェックされた状態にある親ノードのチェック ボックスをクリックすると、親とそのすべての子の状態は未チェックの状態に変更されます。 (親ノードおよびそのすべての子ノードが消去されるようになります。) 
 
 **チェックされた状態にある親ノード** 
 
-![チェックされた状態にある親ノードの例。](./media/treecontrol_parent.png)
+![チェックされた状態にある親ノードの例](./media/treecontrol_parent.png)
 
 **親ノードがクリアされた後、チェックされていない状態の親ノードおよびすべての子ノード** 
 
-![未チェック状態にある親ノードと子ノードの例。](./media/treecontrol_noparent1.png) 
+![未チェック状態にある親ノードと子ノードの例](./media/treecontrol_noparent1.png) 
 
 ユーザーが未チェック状態にある親ノードのチェック ボックスをクリックすると、親とそのすべての子の状態はチェックされた状態に変更されます。 (親ノードおよびそのすべての子ノードが選択されるようになります。) 
 
 **未チェック状態にある親ノード** 
 
-![未チェック状態にある親ノードの例。](./media/treecontrol_noparent1.png) 
+![未チェック状態にある親ノードの例](./media/treecontrol_noparent1.png) 
 
 **親ノードが選択された後、チェックされた状態の親ノードおよびすべての子ノード** 
 
-![チェックされた状態にある親ノードと子ノードの例。](./media/treecontrol_parent.png) 
+![チェックされた状態にある親ノードと子ノードの例](./media/treecontrol_parent.png) 
 
 子を持たない子ノード (つまり、それ自体が親ではない子ノード) には、2 つの状態: チェックされているか未チェックかしかありません。 チェックされた状態の唯一の子である子ノードは、その親の状態に影響します。 子ノードが選択されている場合、その親の状態は部分的な状態に変更されます。 **注記:** ツリー内の 1 つのノードにも、現在のノードであることを示す「選択」状態があります。 この状態は、チェックされた状態とは異なります。
 
@@ -163,6 +165,3 @@ public void checkedStateChanged(int _Idx, FormTreeCheckedState _newState)
 ```
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

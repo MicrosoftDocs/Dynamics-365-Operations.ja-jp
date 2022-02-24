@@ -2,24 +2,26 @@
 title: 支払ターミナルの拡張機能のローカライズされたカスタム エラー メッセージを作成する
 description: このトピックでは、支払ターミナルの拡張機能のカスタム エラー メッセージを作成する方法について説明します。
 author: Reza-Assadi
+manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-07-20
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 649c81493e78f4643c48c3766593b590e3ea2801
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1a551c0127ca339e7e1273221730483600337f19
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781813"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681560"
 ---
 # <a name="create-custom-localized-error-messages-for-payment-terminal-extensions"></a>支払ターミナルの拡張機能のローカライズされたカスタム エラー メッセージを作成する
 
@@ -116,7 +118,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 
 POS でカスタム エラー メッセージを表示する方法を次の図に示します。
 
-![POS のカスタム支払エラー メッセージ。](media/PAYMENTS/CUSTOM-ERRORS/POS-Custom-Payment-Error.jpg)
+![POS での支払のカスタム エラー メッセージ](media/PAYMENTS/CUSTOM-ERRORS/POS-Custom-Payment-Error.jpg)
 
 ## <a name="create-localized-error-messages"></a>ローカライズされたエラー メッセージを作成する
 
@@ -126,7 +128,7 @@ POS でカスタム エラー メッセージを表示する方法を次の図�
 1. Microsoft Visual Studio では、コネクタのプロジェクト (または、必要に応じてサブフォルダー) を右クリックし、**追加 \> 新しい項目** を選択します。
 2. 新しい **新しい項目の追加** ダイアログ ボックスで、左側のウィンドウで **Visual C# 項目** を、中央のウィンドウで **リソース ファイル** を選択します。
 
-    ![Visual Studio の新しいリソース ファイルを作成します。](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-New-Resource-File.jpg)
+    ![Visual Studio の新しいリソース ファイルを作成する](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-New-Resource-File.jpg)
 
 作成するすべてのリソース ファイルのファイル名には、ローカライズされたサテライト アセンブリを生成できるように、カルチャ固有の接尾語 (例: **en-us**) が必要であることに注意してください。
 
@@ -134,16 +136,16 @@ POS でカスタム エラー メッセージを表示する方法を次の図�
 
 カルチャがニュートラルのリソース ファイル (この例では **Messages.resx**) が定義されていることを確認してください。 このファイルは、特定のカルチャのファイルが見つからない場合、予備として使用されます。
 
-![Visual Studio のリソース ファイル。](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Layout-Resource-File.jpg)
+![Visual Studio のリソース ファイル](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Layout-Resource-File.jpg)
 
 次の図が示すように、Visual Studio でリソース ファイルに正しいプロパティが設定されていることを確認する必要があります。
 
-![Visual Studio の新しいリソース ファイルのプロパティ。](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Properties-Resource-File.jpg)
+![Visual Studio の新しいリソース ファイルのプロパティ](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Properties-Resource-File.jpg)
 
 ### <a name="create-custom-localized-error-messages"></a>ローカライズされたカスタム エラー メッセージを作成する
 すべてのリソース ファイルには、カスタマイズし、ローカライズするすべてのエラー メッセージを含める必要があります。 次の図は、リソース ファイルの例を示しています。 **CustomPaymentConnector_Decline** エントリは、特定のロケールの適切なメッセージを取得するコードで参照されています。 各ロケールのすべてのリソース ファイルには、ローカライズされたメッセージの同一のセットが必要です。
 
-![Visual Studio のリソース ファイルのコンテンツ。](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Content-Resource-File.jpg)
+![Visual Studio でのリソース ファイルの内容](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Content-Resource-File.jpg)
 
 ### <a name="load-the-localized-message-in-the-connector-code"></a>コネクタ コードで、ローカライズされたメッセージを読み込む
 次の例では、ローカライズされたメッセージを読み込むために支払コネクタ コードの最初に作成したリソース ファイルの使用方法が確認できます。 プロセスは、2 つの手順で構成されています。
@@ -255,6 +257,3 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
     }
 }
 ```
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

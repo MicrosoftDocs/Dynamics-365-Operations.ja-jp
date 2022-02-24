@@ -2,27 +2,30 @@
 title: 生産現場の実行インターフェースを構成する
 description: このトピックでは、生産現場実行インターフェイスに 1 つ以上の構成を作成する方法について説明します。 生産現場実行インターフェイスを開くと、ブラウザーとデバイスに固有の選択した構成とジョブ フィルターが自動的に読み込まれます。 構成では、特定の用途に適用する必要があるポリシーを設定します。
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
+ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777964"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4664299"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを構成する
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 作業現場の作業者は、生産現場実行インターフェイスを使用して、職務を開始するとき、職務に関するフィードバックを報告するとき、間接活動を登録するとき、休暇を報告するときなどの、日々の作業を登録します。 これらの登録は、製造オーダーの進捗状況とコストを追跡し、従業員の給与の基準を計算するための基礎となります。
 
@@ -39,47 +42,28 @@ ms.locfileid: "7777964"
 
 ### <a name="the-production-floor-execution-interface"></a>生産現場の実行インターフェース
 
-これは、このトピックで説明されている主要な機能です。 Supply Chain Management のバージョン10.0.21では、既定で有効になっています。 生産現場の実行インターフェイスをシステムに追加します。 有効にするには、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。
-
+これは、このトピックで説明されている主要な機能です。 生産現場の実行インターフェイスをシステムに追加します。 有効にするには、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。  
 - 生産現場の実行
 
 ### <a name="generate-license-plates"></a>ライセンス プレートの生成
 
 これらの機能により、生産現場の実行インターフェイスでライセンス プレート機能を使用できるようになります。 この機能を使用する場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を順にオンにします。
 
-1. ジョブ カード デバイスに追加され、完了報告用にライセンスを作成しました (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は既定で有効になっています)。
+1. 完了報告用ライセンス プレートをジョブ カード デバイスに追加
 1. ジョブ カード デバイスでの完了報告時に、ライセンス プレート番号の自動生成を有効にする
 
 ### <a name="print-labels"></a>ラベルの印刷
 
 これらの機能により、生産現場の実行インターフェイスでラベル印刷機能を使用できるようになります。 この機能を使用する場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能を順にオンにします。
 
-1. ジョブ カード デバイスに追加され、完了報告用にライセンスを作成しました (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は既定で有効になっています)。
+1. 完了報告用ライセンス プレートをジョブ カード デバイスに追加
 1. ジョブ カード デバイスからラベルを印刷
 
 ### <a name="allow-locking-the-touch-screen"></a>タッチ スクリーンのロックを許可する
 
-Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 これにより、作業者がタッチスクリーンを校正できるようにするボタンが生産現場の実行インターフェイスに追加されます。 使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能が有効になっていることを確認します。
+この機能により、作業者がタッチスクリーンを校正できるようにするボタンが生産現場の実行インターフェイスに追加されます。 使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。
 
 - 画面ジョブカード デバイスとジョブ カード端末を除菌できるようにロックする機能
-
-### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>生産現場の実行インターフェースの資産管理機能
-
-この機能により、生産フロア実行インターフェイスに資産管理タブが追加されます。 作業者は、このタブを使用して、ジョブ リストの選択したフィルター内のマシン リソースに接続されている資産を選択できます。 選択したマシン資産に対して、作業者は、カウンタの値から資産の状態と状態を最大 4 つのカウンタで表示できます。 この機能を使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で、次の機能を有効にします。
-
-- 生産現場の実行インターフェースの資産管理機能
-
-### <a name="enable-job-search"></a>ジョブ検索の有効化
-
-この機能により、ジョブ リストに検索フィールドを追加できます。 作業者は、ジョブ ID を入力して特定のジョブを検索したり、注文 ID を入力して特定の注文のすべてのジョブを検索できます。 作業員は、キーパッドを使用するか、バーコードをスキャンして ID を入力できます。 使用する場合は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で、次の機能を有効にします。
-
-- 生産現場の実行インターフェイスのジョブ検索
-
-### <a name="enable-reporting-on-co-products-and-by-products"></a>連産物および副産物に関するレポートの有効化
-
-この機能により、作業者は生産現場の実行インターフェイスを使用して、バッチ オーダーの進捗状況を報告できます。 このレポートには、連産物および副産物に関するレポートが含まれます。 この機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします:
-
-- 生産現場の実行インターフェースの連産品と副産物に関するレポート
 
 ## <a name="work-with-production-floor-execution-configurations"></a>生産現場の実行構成を使って作業する
 
@@ -90,8 +74,6 @@ Supply Chain Management のバージョン 10.0.21 では、この機能は既�
 
 次に、選択したデバイス構成のさまざまな設定を構成します。 次のフィールドを使用できます:
 
-- **出勤と退勤のみ** - 出勤時および退勤時機能のみを提供する簡略化されたインターフェイスを作成するには、このオプションを *はい* に設定します。 これにより、このページのその他のオプションのほとんどが無効に設定されます。 このオプションを有効にする前に、**タブ選択** の FastTab からすべての明細行を削除する必要があります。
-- **検索の有効化** - ジョブ リストに検索フィールドを含める場合は、このオプションを *はい* に設定します。 作業者は、ジョブ ID を入力して特定のジョブを検索したり、注文 ID を入力して特定の注文のすべてのジョブを検索できます。 作業員は、キーパッドを使用するか、バーコードをスキャンして ID を入力できます。
 - **退勤時のレポート数量** - このオプションを *はい* に設定すると、作業者は退勤時に進行中のジョブに関するフィードバックを報告するように指示されます。このオプションを *いいえ* に設定すると、作業者にはこのメッセージが表示されません。
 - **従業員のロック** – このオプションを *いいえ* に設定すると、作業者は登録 (新しい職務など) を行った直後にサインアウトされます。 その後、デバイスはサインイン ページに戻ります。 このオプションを *はい* に設定すると、作業者はジョブ カード デバイスにサインインしたままになります。 ただし、作業者は手動でサインアウトできるため、ジョブ カード デバイスが同じシステム ユーザー アカウントで実行されている間、別の作業者がサインインできます。 これらタイプのアカウントの詳細については、[割り当てられたユーザー](config-job-card-device.md#assigned-users)を参照してください。
 - **登録の実際時間を使用する** - このオプションを *はい* に設定すると、新しい各登録の時間が、作業者が登録を送信した正確な時間に設定されます。 このオプションを *いいえ* に設定すると、代わりにサインイン時間が使用されます。 従業員が長期間サインインしたままになることが多い場合に、**従業員のロック** および/または **単一の作業者** オプションを *はい* に設定している場合は、通常、このオプションを *はい* に設定します。
@@ -112,6 +94,3 @@ Supply Chain Management のバージョン 10.0.21 では、この機能は既�
 1. アクション ペインで、**クライアント構成のクリーンアップ** を選択します。
 1. **クライアント構成のクリーンアップ** ダイアログ ボックスで、**日数** フィールドを、考慮する非アクティブの日数 (今日以前) に設定します。 その期間にアクティブでなかったデバイスの構成とサインイン レコードをすべて削除します。
 1. **OK** を選択して、**日数** 設定に基づいて、関連する構成をクリーンアップします。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

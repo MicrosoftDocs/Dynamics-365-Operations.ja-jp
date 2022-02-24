@@ -1,34 +1,33 @@
 ---
-title: 開発の概要
+title: 概要
 description: この開発者ガイドでは、API とカスタム フィールドの参照資料を提供します。 また、他のアプリケーションとの統合についても説明します。
 author: andreabichsel
+manager: AnnBe
 ms.date: 02/03/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
+ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78fc1afc596ca5a847d15a0da2db841aa303bad7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 010920cc84897dc5d2cfc008aa04544db6b08a73
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066803"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528320"
 ---
-# <a name="development-overview"></a>開発の概要
+# <a name="overview"></a>概要
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 この開発者ガイドでは、API とカスタム フィールドの参照資料を提供します。 また、他のアプリケーションとの統合についても説明します。
 
@@ -36,21 +35,21 @@ ms.locfileid: "8066803"
 
 - [Power Apps および Power Automate での拡張](hr-developer-power-apps.md)
 
-- [Dataverse の Human Resources エンティティ](hr-developer-entities.md)
+- [Common Data Service の Human Resources エンティティ](hr-developer-entities.md)
 
 - [カスタム フィールド](hr-developer-custom-fields.md)
 
 - データ統合の設定
   - [データ統合テクノロジの選択](hr-admin-integration-choose-technology.md)
-  - [Dataverse 統合のコンフィギュレーション](hr-admin-integration-common-data-service.md)
+  - [Common Data Service 統合のコンフィギュレーション](hr-admin-integration-common-data-service.md)
   - [Finance との統合のコンフィギュレーション](hr-admin-integration-finance.md)
   - [Dayforce との統合のコンフィギュレーション](hr-admin-integration-dayforce.md)
   - [定期的なデータ エクスポート アプリの作成](hr-admin-integration-recurring-data-export.md)
   - Office との統合
-    - [Office 統合のチュートリアル](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Excel でのエンティティ データの更新](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [[Excel で開く] エクスペリエンスの作成](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Office 統合のトラブルシューティング](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Office 統合のチュートリアル](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Excel でのエンティティ データの更新](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [[Excel で開く] エクスペリエンスの作成](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office 統合のトラブルシューティング](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - エンティティ API 照会
   - [認証](hr-developer-api-authentication.md)
@@ -63,6 +62,3 @@ ms.locfileid: "8066803"
 - [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)
 - [管理者ガイド](hr-admin-overview.md)
 - [ユーザー ガイド](hr-hrpro-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,24 +2,26 @@
 title: 注文のフルフィルメント中の梱包明細の拡張ポイント
 description: このトピックでは、カスタマイズを使用して、顧客注文の処理中に梱包明細に拡張ポイントを追加する方法を示します。
 author: mugunthanm
+manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: 7.3.2
-ms.openlocfilehash: 7b798683a864b78a1a7c7fef0720afc111606576
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 75976565d1ff68229090886e183477bd8db0faaa
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781907"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681566"
 ---
 # <a name="extension-points-for-packing-slips-during-order-fulfillment"></a>注文のフルフィルメント中の梱包明細の拡張ポイント
 
@@ -101,6 +103,3 @@ POS クライアントの要求ハンドラーと同様、カスタム ロジッ
 
 ### <a name="packingslipextensionpoint"></a>packingSlipExtensionPoint
 **packingSlipExtensionPoint** メソッドをカスタマイズして、カスタム ロジックを追加、または梱包明細 ID とともにカスタム情報を戻すことができます。 このカスタム情報には、梱包情報または納品書が含まれています。 このメソッドは、通常、カスタム シナリオの拡張機能に追加されます。 このメソッドは、コマンド拡張ポイントのチェーンを使用して **MarkFulfillmentLinesAsPacked** メソッドから呼び出されます。 **MarkFulfillmentLinesAsPacked** メソッドは、CRT コードが行うリアルタイム サービス呼び出しから実行されます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

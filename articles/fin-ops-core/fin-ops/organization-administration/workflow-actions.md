@@ -2,9 +2,11 @@
 title: ワークフローの承認プロセスでのアクション
 description: この記事は、ワークフローの承認プロセスで各参加者が実行できるアクションを説明します。
 author: ChrisGarty
+manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,25 +16,22 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e546dc57692e31d4501984dafa21fbae23a48fe
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e622f9a0a50cd6c5dbcbaf9cd5d56b691232c849
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070936"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797605"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>ワークフローの承認プロセスでのアクション
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
 この記事は、ワークフローの承認プロセスで各参加者が実行できるアクションを説明します。
 
 ワークフローには、作成者、タスクの割り当て対象者、意志決定者、承認者といった複数のグループのユーザーを含めることができます。 たとえば、次の経費精算書ワークフローでは、康介が作成者で、キューのメンバーがタスクの割り当て対象者で、ジョンが意思決定者で、卓也、政美、および綾が承認者です。
 
-[![ワークフロー\_手動決定を含む。](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+[![ワークフロー\_手動決定を含む](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
 
 以下のセクションでは、各ユーザー グループが実行できるワークフロー アクションについて説明します。
 
@@ -142,6 +141,3 @@ Adventure Works の経費精算書部門のメンバーは、キューを監視�
 たとえば、康介が USD 12,000 の経費精算書を提出し、このドキュメントが政美に割り当てられています。 政美が変更を要求すると、経費精算書は康介に送り返されます。
 
 その後、康介は経費報告書を再送信できるようになります。 最初に変更を依頼することもできますが、または経費精算書のオリジナル バージョンを再送信することもできます。 康介が経費報告書を再送信すると、今度は承認プロセスの最初の承認者である卓也に承認のために送られます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

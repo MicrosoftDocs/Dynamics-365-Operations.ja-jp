@@ -2,23 +2,26 @@
 title: Retail を購入する前に
 description: Dynamics 365 Commerce を体験するのは初めてですか。 お客様が購入を検討されているか、または購入の準備が整っているかにかかわらず、お客様の役に立つガイダンスを作成しました。
 author: jblucher
+manager: AnnBe
 ms.date: 09/28/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 53f3c2f549ba9467b0efe29103cc71f313f4e11396cbe0ace1302fd4fe9c0e61
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fc5261925bbdc1037ec019e736a1c3358d60a2fe
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715420"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408959"
 ---
 # <a name="before-you-buy-retail"></a>Retail を購入する前に
 
@@ -30,9 +33,9 @@ Dynamics 365 Commerce を体験するのは初めてですか。 お客様が購
 
 コマースは、簡単な電子メールでのサインアップ プロセスを通じて 30 日間お試しいただけます。 評価版には、実行中の特定のシナリオを表示することによりステップ バイ ステップの手順が記載されている「はじめに」のタスク ガイドが含まれています。 この製品は、シナリオを通じての探索や作業には使用できますが、カスタマイズすることはできません。 デモ データは、製品をよりよく理解し、経験をより意味のあるものになるために役立ちます。 トライアル版の有効期限が終了する 3 日前に、通知の電子メールが送信されます。 詳細については、[www.microsoft.com/dynamics365/retail](https://www.microsoft.com/dynamics365/retail) に移動します。
 
-## <a name="step-2-buy-and-manage-a-subscription"></a>手順 2: サブスクリプションの購入と管理
+## <a name="step-2-buy-and-manage-a-subscription"></a>手順 2: 定期売買の購入と管理
 
-サブスクリプションのオプションを表示するには、[Dynamics 365](https://www.microsoft.com/dynamics365/pricing) の価格ページに移動します。 このページには、組織のニーズに合わせて複数の異なる計画が含まれています。
+定期売買のオプションを表示するには、[Dynamics 365](https://www.microsoft.com/dynamics365/pricing) の価格ページに移動します。 このページには、組織のニーズに合わせて複数の異なる計画が含まれています。
 
 コマースのサブスクリプションにはオプションがいくつかあります。
 
@@ -46,7 +49,7 @@ Dynamics 365 Commerce を体験するのは初めてですか。 お客様が購
 ボリューム ライセンスでは、コマースは以下を通じて使用可能です。
 
 - エンタープライズ契約
-- エンタープライズ契約のサブスクリプション
+- エンタープライズ契約の定期売買
 - (キャンパスおよび学校契約に基づく) 教育ソリューションの登録
 - Microsoft の製品およびサービス契約 (MPSA)
 
@@ -65,7 +68,4 @@ Microsoft は柔軟性の高い、業界をリードするサポート、サー�
 
 ## <a name="step-3-learn-about-fasttrack-and-plan-your-deployment"></a>手順 3: FastTrack について学び、展開を計画する
 
-Microsoft FastTrack for Dynamics 365 は、Dynamics 365 に円滑、かつ確実に移行できるように設計された顧客成功サービスであり、事業価値をより迅速に実現できます。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 また、Dynamics 365 でのお客様の経験を成功に導く Microsoft エンジニアリング リソースにアクセスできます。 詳細については、[Microsoft FastTrack for Dynamics 365 の概要](/dynamics365/fasttrack/) を参照してください。 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速く達成できるように、Dynamics 365 を円滑かつ確実に移行できるように設計されています。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 また、Dynamics 365 でのお客様の経験を成功に導く Microsoft エンジニアリング リソースにアクセスできます。 詳細については、[Microsoft FastTrack for Dynamics 365 の概要](../../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md) を参照してください。 

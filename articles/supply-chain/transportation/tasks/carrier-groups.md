@@ -2,28 +2,29 @@
 title: 配送業者グループ
 description: このトピックでは、配送業者グループのデータ設定方法について説明します。
 author: Henrikan
+manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSCarrierGroup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 10a30d8fae52a25b7d65b5a9cc991677df33a2a7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2570479edac9bc8cc7aa998a8b69f54ffc10cd61
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574884"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646410"
 ---
 # <a name="carrier-groups"></a>配送業者グループ
-
-[!include [banner](../../includes/banner.md)]
 
 配送業者グループは、出荷の配送業者と配送業者のサービスの集合体です。 各配送業者グループは、配送業者とそれに属する配送業者サービスの優先順位を指定します。
 
@@ -37,6 +38,3 @@ ms.locfileid: "7574884"
 1. **名前** フィールドに、グループの内容を示す名前を入力します。
 1. **詳細** クイックタブで、行を追加し、その行の配送業者と配送業者サービスを選択します。 グループに必要な数の配送業者を追加するまで、この手順を繰り返します。
 1. ページを閉じます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: テンプレート BOM
 description: テンプレート BOM (部品表) は、定期的にサービスされるサービス対象のコンポーネントの標準化された一覧を提供します。
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMATemplateBOMTable
 audience: Application User
@@ -15,23 +17,25 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d34502d74590595f26ba5aae78158ed893a095df
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 01cd4cf03fb0ac1a3399673097895513f7180cf1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571310"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965783"
 ---
-# <a name="template-boms"></a>テンプレート BOM
+# <a name="template-boms"></a>テンプレート BOM    
 
 [!include [banner](../includes/banner.md)]
+
 
 テンプレート BOM (部品表) は、定期的なサービス対象のコンポーネントの一覧を標準化された形式で表示します。 テンプレート BOM に記載されるコンポーネントは、サービス対象の個々のサブコンポーネントを表します。 サービス対象にテンプレート BOM を適用して、サービス対象について交換されたサブコンポーネントのレコードを保持することができます。
 
 サービス合意またはサービス注文にテンプレート BOM を適用するには、サービス対象の関係に関連付けます。
 
+
 > [!NOTE]
-> 1 つのサービス対象に適用できるテンプレートは 1 つだけです。
+> <P>1 つのサービス対象に適用できるテンプレートは 1 つだけです。</P>
 
 ## <a name="create-a-template-bom"></a>テンプレート BOM の作成
 
@@ -39,8 +43,8 @@ ms.locfileid: "7571310"
 
 <table>
 <colgroup>
-<col />
-<col />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -68,6 +72,7 @@ ms.locfileid: "7571310"
 </tbody>
 </table>
 
+
 ## <a name="apply-the-template-bom-to-a-service-agreement-or-service-order"></a>サービス合意またはサービス注文へのテンプレート BOM の適用
 
 テンプレート BOM を、サービス合意、サービス注文、またはその両方に適用できます。 一般にサービス合意には、顧客との長期的な関係があります。 サービス BOM に記録される交換の履歴は、サービス合意にとって有用なデータです。
@@ -78,7 +83,7 @@ ms.locfileid: "7571310"
 
 サービス BOM 明細行の履歴は、複数のサービス合意間でコピーできます。 サービス合意間でサービスの履歴をコピーすることによって、品目の交換の記録を維持できます。
 
-### <a name="example"></a>例
+**例**
 
 顧客の車に対して 3 年間のサービス合意を結びました。 この期間中に、顧客は会社が提供する上質のサービスに慣れてきます。 したがって、契約が切れた後、顧客は新しい合意の設定を望みます。 この時点で、会社に有利な合意を交渉できます。 交換されたコンポーネントに関する記録が将来役立つかもしれないので、サービス BOM の履歴を新しい合意にコピーします。
 
@@ -96,18 +101,26 @@ BOM 内の品目を交換する場合は、BOM デザイナで BOM 明細行の�
 
 テンプレート BOM を使用するには、2 つの番号順序を設定する必要があります。 テンプレート BOM に 1 つの番号順序を、BOM 履歴行番号にもう 1 つの番号順序を設定します。
 
+
 > [!NOTE]
-> 番号順序が使用され、ID を必要とするレコードに割り当てます。 テンプレート BOM または BOM 履歴行番号に番号順序を割り当てるには、その前に、番号順序コードを設定する必要があります。
+> <P>番号順序が使用され、ID を必要とするレコードに割り当てます。 テンプレート BOM または BOM 履歴行番号に番号順序を割り当てるには、その前に、番号順序コードを設定する必要があります。</P>
+
 
 ## <a name="set-up-number-sequences"></a>番号順序の設定
 
-1. **Number sequences** リスト ページで、テンプレート BOM と BOM 履歴行番号の番号順序を作成します。
-1. **サービス管理** \> **設定** \> **サービス管理パラメーター** の順に選択します。
-1. **番号順序** を選択し、**番号順序** フォームで作成した番号順序の参照に対する番号順序コードを選択します。
-1. フォームを閉じて、変更を保存します。
+1.  **Number sequences** リスト ページで、テンプレート BOM と BOM 履歴行番号の番号順序を作成します。 
+
+2.  **サービス管理** \> **設定** \> **サービス管理パラメーター** の順にクリックします。
+
+3.  **番号順序** をクリックし、**番号順序** フォームで作成した番号順序の参照に対する番号順序コードを選択します。
+
+4.  フォームを閉じて、変更を保存します。
+
 
 > [!NOTE]
-> BOM 履歴行番号はシステムによって使用され、BOM 履歴トランザクションをサービス合意またはサービス注文に関連付けます。 この番号は、ユーザー インターフェイスには表示されません。
+> <P>BOM 履歴行番号はシステムによって使用され、BOM 履歴トランザクションをサービス合意またはサービス注文に関連付けます。 この番号は、ユーザー インターフェイスには表示されません。</P>
+
+
 
 ## <a name="see-also"></a>参照
 
@@ -117,4 +130,6 @@ BOM 内の品目を交換する場合は、BOM デザイナで BOM 明細行の�
 
 [サービス BOM の変更](modify-service-bom.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+ 
+
+

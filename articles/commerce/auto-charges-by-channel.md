@@ -2,22 +2,25 @@
 title: チャンルごとの自動請求の有効化とコンフィギュレーション
 description: このトピックでは、Microsoft Dynamics 365 Commerce でチャネルごとに自動請求を有効にしてコンフィギュレーションする方法について説明します。
 author: gvrmohanreddy
+manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d905819d1e0c8223c74509bfb357b3aaa51d20305a2857061eadb0b0ff8f6b9b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1be07c754e563298d82f6ca54f09ae3aa9118602
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727633"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413731"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>チャンルごとの自動請求の有効化とコンフィギュレーション
 
@@ -66,7 +69,7 @@ Commerce の組織階層の目的に既定の階層を割り当てるには、�
 1. アクション ウィンドウで、**今すぐ実行** を選択します。
 1. 前の 2 つの手順を繰り返して、**1070** (**チャンネル コンフィギュレーション**) と **1110** (**グローバル コンフィギュレーション**) ジョブを実行します。
 
-![小売自動請求の組織階層の目的をコンフィギュレーションします。](media/Auto-charges-org-hierarchy-purpose.png)
+![小売自動請求の組織階層の目的をコンフィギュレーションする](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>チャネルごとの自動請求を定義する
 
@@ -74,7 +77,7 @@ Commerce の組織階層の目的に既定の階層を割り当てるには、�
 
 Commerce でチャネルごとの自動請求を定義にするには、次の手順を実行します。
 
-1. **売掛金 \> 諸費用の設定 \> 自動請求** に移動します。
+1.  **売掛金勘定 \> 諸費用の設定 \> 自動請求** に移動します。
 1. 左ウィンドウの **レベル** フィールドで、業務要件に応じて **ヘッダー** または **明細行** を選択します。
 1. **小売チャネル コード** フィールドで、適切なチャンネル コード (たとえば、**テーブル**、**グループ**) を選択します。 既定の設定の **すべて** が使用されている場合、すべてのチャネルに請求ルールが適用されます。
 
@@ -86,7 +89,7 @@ Commerce でチャネルごとの自動請求を定義にするには、次の�
 1. アクション ウィンドウで、**今すぐ実行** を選択します。
 1. 前の 2 つの手順を繰り返して、**1070** (**チャンネル コンフィギュレーション**) と **1110** (**グローバル コンフィギュレーション**) ジョブを実行します。
     
-![チャネルによって定義された自動請求。](media/Auto-charges-line-charge-by-channel.png)
+![チャネルによって定義された自動請求](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>シナリオ例
 
@@ -94,7 +97,7 @@ Commerce でチャネルごとの自動請求を定義にするには、次の�
 
 次の図に示すように、組織は、**リサイクル** という名前の費用コードを定義します。
 
-![リサイクルはコードを請求します。](media/Auto-charges-charge-code.png)
+![リサイクル 費用コード](media/Auto-charges-charge-code.png)
 
 自動請求は明細行レベルで作成されます。 次のコンフィギュレーションがあります:
 
@@ -112,19 +115,16 @@ Commerce でチャネルごとの自動請求を定義にするには、次の�
 - **カテゴリ** フィールドは **固定** に設定されています。
 - **諸費用** フィールドは **$6.25** に設定されています。
 
-![明細行レベルの自動請求と自動請求明細行をコンフィギュレーションします。](media/Auto-charges-recyclingfee-line-fee.png)
+![明細行レベルの自動請求と自動請求明細行のコンフィギュレーション](media/Auto-charges-recyclingfee-line-fee.png)
 
 POS アプリケーションでは、**サンフランシスコ** の店舗チャネルで販売注文が作成されます。 **諸費用** 明細行には、**$6.25** のリサイクル料金が表示されます。
 
 POS アプリケーションで **トランザクション オプション \> 諸費用 \> 諸費用の管理** を選択すると、リサイクル料金の諸費用コードと説明を表示できます。
 
-![POS アプリケーションのリサイクル料金。](media/pos-auto-charges-recyclingfee-line-fee.png)
+![POS アプリケーションのリサイクル料金](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [オムニ チャネルの高度な自動請求](omni-auto-charges.md)
 
 [ヘッダー請求金額を一致する販売明細行に比例配分する](pro-rate-charges-matching-lines.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

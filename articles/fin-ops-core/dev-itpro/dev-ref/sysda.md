@@ -2,19 +2,26 @@
 title: SysDa クラスを使用したデータへのアクセス
 description: このトピックでは、SysDa アプリケーションプログラミングインターフェイス (API) を使用して拡張可能なクエリおよびデータアクセスステートメントを作成する方法について説明します。
 author: RobinARH
-ms.date: 08/20/2021
+manager: AnnBe
+ms.date: 06/24/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 72211
+ms.assetid: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0ac177befb134ff3d2ee0974ae016aa55b096d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 06a8f41eec22779a5e5148c6f3e1114be45f3215
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783265"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408753"
 ---
 # <a name="access-data-by-using-the-sysda-classes"></a>SysDa クラスを使用したデータへのアクセス
 
@@ -39,7 +46,7 @@ SysDa API には、カスタムクエリを作成するための広範な API �
 
 1. 指定されたレコードを含むテーブルインスタンスを指定する、**SysDaQueryObject** オブジェクトを作成および構成します。
 2. **Sysdasearchobject** オブジェクトを作成し、**SysDaQueryObject** オブジェクトをコンストラクターに渡します。
-3. **Sysdasearchobject** オブジェクトを **SysDaSearchStatement.findNext()** メソッドに渡すことで、クエリの結果を繰り返します。
+3. **Sysdasearchobject** オブジェクトを **SysDaSearchStatement.next()** メソッドに渡すことで、クエリの結果を繰り返します。
 
 次の例では **intField**\<= **5** のTestTableのすべての行を検索します。
 
@@ -76,7 +83,7 @@ var so = new SysDaSearchObject(qe);
 var ss = new SysDaSearchStatement();
 
 // Enumerate the designated values by using ss.
-while (ss.findNext(so))
+while (ss.next(so))
 {
     info(t.stringField);
 }
@@ -241,6 +248,3 @@ SysDa クエリは複数の句をサポートします。
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 **toString()** メソッドを、**SysDaQueryObject**、**SysDaUpdateObject**、**SysDaInsertObject**、および **SysDaQueryObject** オブジェクトに対して使用して、構築している明細書を表示できます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

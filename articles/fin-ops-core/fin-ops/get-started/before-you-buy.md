@@ -2,9 +2,11 @@
 title: 購入する前に
 description: Dynamics 365 Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce の購買を検討しているときに使用するステップ バイ ステップのガイドです。
 author: ShellyBakke
-ms.date: 11/30/2021
+manager: AnnBe
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874587"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798552"
 ---
 # <a name="before-you-buy"></a>購入する前に
 
@@ -42,15 +44,15 @@ Finance and Operations アプリケーションをクラウドにまたはオン
 - [オンプレミス配置のシステム要件](system-requirements-on-prem.md)。
 
 > [!IMPORTANT]
-> オンプレミス配置は、Microsoft Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
+> オンプレミス配置は、Microsoft Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。
 
 詳細については、[配置オプション](../../dev-itpro/deployment/choose-deployment-type.md)を参照してください。
 
-## <a name="step-three-buy-and-manage-a-subscription"></a>ステップ 3: サブスクリプションの購入と管理
+## <a name="step-three-buy-and-manage-a-subscription"></a>ステップ 3: 定期売買の購入と管理
 
-サブスクリプション オプションを表示するには、[Dynamics 365 の価格設定](https://www.microsoft.com/dynamics365/pricing) ページに移動します。 このページには、組織のニーズに合わせて複数の異なる計画が含まれています。
+定期売買のオプションを表示するには、[Dynamics 365 の価格設定](https://www.microsoft.com/dynamics365/pricing) ページに移動します。 このページには、組織のニーズに合わせて複数の異なる計画が含まれています。
 
-サブスクリプションには多くのオプションがあります。
+定期売買には多くのオプションがあります。
 
 - クラウド ソリューション プロバイダー (クラウドのみ) を使用して購入。
 - パートナーを通じて購入し、ボリューム ライセンス (クラウドまたはオンプレミス) を使用。
@@ -71,7 +73,7 @@ Finance and Operations オンプレミスを購入するにはパートナーと
 ボリューム ライセンスでは、Finance and Operations アプリケーションは以下を通じて使用可能です。
 
 - エンタープライズ契約
-- エンタープライズ契約のサブスクリプション
+- エンタープライズ契約の定期売買
 - (キャンパスおよび学校契約に基づく) 教育ソリューションの登録
 - Microsoft の製品およびサービス契約 (MPSA)
 
@@ -86,11 +88,8 @@ Microsoft は柔軟性の高い、業界をリードするサポート、サー�
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>ステップ 4: FastTrack について学び、展開を計画する
 
-Microsoft FastTrack for Dynamics 365 は、Dynamics 365 に円滑、かつ確実に移行できるように設計された顧客成功サービスであり、事業価値をより迅速に実現できます。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 さらに、Dynamics 365 でのお客様の経験を成功させるために尽力している Microsoft エンジニアリング リソースにアクセスできます。 詳細については、 [Microsoft FastTrack](/dynamics365/fasttrack/) を参照してください。
+Microsoft FastTrack for Dynamics 365 は、ビジネス上の価値をより速く達成できるように、Dynamics 365 を円滑かつ確実に移行できるように設計されています。 FastTrack プログラムに参加すると、ベスト プラクティスに関するガイダンスと正常に行われる展開を計画する方法が表示されます。 新しいユーザーを有効にし、機能を拡張する方法も自分のペースで学習します。 さらに、Dynamics 365 でのお客様の経験を成功させるために尽力している Microsoft エンジニアリング リソースにアクセスできます。 詳細については、 [Microsoft FastTrack](fasttrack-dynamics-365-overview.md) を参照してください。
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>AX 2012 からアップグレードまたは AX 2009 から移行する場合
 
 Microsoft Dynamics AX 2012 からアップグレードまたは Microsoft Dynamics AX 2009 から移行する場合は、さらに長い期間のトライアル版の対象となる可能性があります。 詳細については、<daxcf@microsoft.com> にお問い合わせください。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,22 +2,26 @@
 title: Visual Studio 用のツールおよびアドイン
 description: このトピックでは、Microsoft Visual Studio に追加されたアドイン インフラストラクチャを説明し、開発者が開発ツールをより簡単に追加できるようにします。
 author: RobinARH
+manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 27521
 ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9141d4bc3654c9752e59de713fcefb7780502ca7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5625510500abb11f9d0f02940bed9f5e52287f81
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782037"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4409326"
 ---
 # <a name="tools-add-ins-for-visual-studio"></a>Visual Studio 用のツールおよびアドイン
 
@@ -35,6 +39,3 @@ ms.locfileid: "7782037"
 アドインの詳細については、以下を参照してください。
 - [フォーム パターンに対応している Visual Studio アドイン](../user-interface/form-pattern-add-ins.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

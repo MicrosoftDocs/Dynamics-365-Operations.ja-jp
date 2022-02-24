@@ -2,24 +2,26 @@
 title: クライアント インターネット接続
 description: このトピックは、オンプレミス配置で、クライアント マシンがインターネットにアクセスできない場合に何が起きるかについて説明します。
 author: jasongre
+manager: AnnBe
 ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 29151
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 6e37db45dcfc2d03081aed1548cb647711263090
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5ba70b2af71d962ae7bb275a10b8d585ac87a6bd
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783140"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679742"
 ---
 # <a name="client-internet-connectivity"></a>クライアントのインターネット接続
 
@@ -51,6 +53,3 @@ Dynamics 365 Finance + Operations (オンプレミス) 展開用のローカル 
 ## <a name="why-does-the-client-connect-to-the-skype-for-business-api-when-it-first-loads"></a>クライアントが最初に読み込まれたときに Skype for Business API に接続する理由。
 
 クライアントの読み込み時に、インターネット接続が使用可能かどうかを確認するために、Skype for Business API へのクイック コール (ping) が実行されます。 使用できない場合は、クライアントは切断された方法で機能します。 環境では、このチェックを実行するために Skype for Business を表示するかどうかを指定する必要はありません。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: 輸送管理での運賃の調整
 description: このトピックでは、運賃調整プロセスについて説明します。
-author: Henrikan
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 89983
 ms.assetid: bc34a9b1-0c11-4797-b463-25409cf98ca8
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a63bfd34860c6a7c34cbc526c6a621cbc9666efc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac07155e4dde77689b1994abfb8b30f45d5a5a30
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574908"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014511"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>輸送管理での運賃の調整
 
@@ -35,13 +37,13 @@ ms.locfileid: "7574908"
 
 運賃は、関連する出荷配送業者に関連付けられているレート エンジンによって計算されます。 積荷が確認されると、運賃請求書が生成され、そこに運賃が転送されます。 運賃は通常の請求プロセスに使用される設定に応じて、関連する元伝票 (発注書、販売注文、または移動オーダー) に雑費として配賦されます。 運賃調整プロセス (照合プロセスとも呼ばれます) は、出荷配送業者から運賃請求書が到着次第開始できます。 請求書は電子ファイルで、または紙面で受領することができます。 紙の請求書を受領した場合は、運賃請求書をテンプレートとして使用して電子請求書を生成できます。
 
-[![運賃調整プロセス。](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
+[![運賃調整プロセス](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
 
 ## <a name="manual-reconciliation"></a>手動調整
 
 運賃を手動で調整する場合は、請求書の各明細行を、運賃請求書の明細行または請求対象となっている積荷の明細行と照合する必要があります。 この照合は **運賃請求書と請求書の照合** ページで行います。 請求明細行の金額が運賃請求書の金額と一致しない場合は、差額を調整する理由を選択する必要があります。 調整する理由が複数ある場合は、一致しない金額をそれら全体に分割できます。 調整の理由によって、差額の総勘定元帳への転記方法が決定されます。 請求書の全額の調整が明確にされると、承認のため送信され、仕訳帳が転記されます。 次の図で、運賃請求書の生成および運賃調整の方法を示します。
 
-[![運賃調整のタスク。](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
+[![運賃調整のタスク](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
 
 ## <a name="automatic-reconciliation"></a>自動調整
 
@@ -103,6 +105,3 @@ ms.locfileid: "7574908"
 1. INv1 と Inv 2 を FB と一つずつ一致させます。 FB は完全に一致します。
 
 この例に示すように、運賃請求書と負の金額の照合は手動でのみ行う必要があります。 これにより、照合順序を制御できるので、運賃請求書を負の金額と完全に照合できない運賃請求書と照合することができます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
