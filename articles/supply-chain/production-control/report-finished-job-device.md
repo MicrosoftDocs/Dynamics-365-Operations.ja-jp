@@ -2,26 +2,23 @@
 title: ジョブ カード デバイスから完了として報告する
 description: このトピックでは、ジョブ カード デバイスのユーザーが製造オーダーから在庫に対して完成品を報告できるようにシステムを構成する方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6ba5d8bc0c22f97e6d2ce61c636090e04fae5abd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431895"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102829"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>ジョブ カード デバイスから完了として報告する
 
@@ -65,7 +62,7 @@ ms.locfileid: "4431895"
 完了報告時にジョブ カード デバイスがバッチ番号を受け取ることができるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して、次の機能を (この順序で) 有効にする必要があります。
 
 1. ジョブ カード デバイスの進捗状況のレポート ダイアログのユーザー エクスペリエンスの向上
-1. ジョブ カード デバイス (プレビュー) からの完了報告時に、バッチ番号とシリアル番号を入力できるようにする
+1. ジョブ カード デバイスからの完了報告時に、バッチ番号とシリアル番号を入力できるようにします。
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>バッチ番号の報告を必要とする製品をコンフィギュレーションする
 
@@ -88,13 +85,13 @@ ms.locfileid: "4431895"
 1. 設定する追跡番号グループを作成または選択します。
 1. **一般** クイックタブで、**手動** オプションを **はい** に設定します。
 
-    ![手動バッチ番号の追跡番号グループ](media/tracking-number-group-manual.png "手動バッチ番号の追跡番号グループ")
+    ![手動バッチ番号の追跡番号グループ。](media/tracking-number-group-manual.png "手動バッチ番号の追跡番号グループ")
 
 1. 必要に応じてその他の値を設定し、このシナリオを使用するリリース済製品のバッチ番号グループとしてこの追跡番号グループを選択します。
 
 このシナリオを使用する場合、ジョブ カード デバイスの **レポートの進行状況** ページに表示される **バッチ番号** フィールド は、作業者が任意の値を入力できるテキスト ボックスです。
 
-![手動バッチ番号を含むレポートの進行状況ページ](media/job-card-device-batch-manual.png "手動バッチ番号のフィールドを含むレポートの進行状況ページ")
+![手動バッチ番号を含むレポートの進行状況ページ。](media/job-card-device-batch-manual.png "手動バッチ番号のフィールドを含むレポートの進行状況ページ")
 
 ### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-batch-numbers"></a>事前に定義されたバッチ番号の一覧を提供する追跡番号グループの設定
 
@@ -105,13 +102,13 @@ ms.locfileid: "4431895"
 1. **一般** クイックタブで、**在庫取引のみ** オプションを **はい** に設定します。
 1. **数量ごと** フィールドを使って、入力した値に基づいて、数量ごとにバッチ番号を分割します。 たとえば、10 個の製造オーダーがあり、**数量ごと** フィールドが *2* に設定されているとします。 この場合、製造オーダーを作成すると、5 つのバッチ番号が製造オーダーに割り当てられます。
 
-    ![事前定義バッチ番号の追跡番号グループ](media/tracking-number-group-predefined.png "事前定義バッチ番号の追跡番号グループ")
+    ![事前定義バッチ番号の追跡番号グループ。](media/tracking-number-group-predefined.png "事前定義バッチ番号の追跡番号グループ")
 
 1. 必要に応じてその他の値を設定し、このシナリオを使用するリリース済製品のバッチ番号グループとしてこの追跡番号グループを選択します。
 
 このシナリオを使用する場合、ジョブ カード デバイスの **レポートの進行状況** ページに表示される **バッチ番号** フィールド は、作業者が任意の値を入力できるドロップダウン リストです。
 
-![事前に定義されたバッチ番号を含むレポートの進行状況ページ](media/job-card-device-batch-predefined.png "事前に定義されたバッチ番号のリストを含むレポートの進行状況ページ")
+![事前に定義されたバッチ番号を含むレポートの進行状況ページ。](media/job-card-device-batch-predefined.png "事前に定義されたバッチ番号のリストを含むレポートの進行状況ページ")
 
 ### <a name="set-up-a-tracking-number-group-that-automatically-assigns-batch-numbers"></a>バッチ番号を自動的にで割り当てることができるように、追跡番号グループを設定する
 
@@ -122,13 +119,13 @@ ms.locfileid: "4431895"
 1. **一般** クイックタブで、**在庫取引のみ** オプションを **いいえ** に設定します。
 1. **手動** オプションを **いいえ** に設定します。
 
-    ![固定バッチ番号の追跡番号グループ](media/tracking-number-group-fixed.png "固定バッチ番号の追跡番号グループ")
+    ![固定バッチ番号の追跡番号グループ。](media/tracking-number-group-fixed.png "固定バッチ番号の追跡番号グループ")
 
 1. 必要に応じてその他の値を設定し、このシナリオを使用するリリース済製品のバッチ番号グループとしてこの追跡番号グループを選択します。
 
 このシナリオを使用する場合、ジョブ カード デバイスの **レポートの進行状況** ページに表示される **バッチ番号** フィールド は、値を表示しますが作業者はそれを編集することはできません。
 
-![固定バッチ番号を含むレポートの進行状況ページ](media/job-card-device-batch-fixed.png "固定バッチ番号を含むレポートの進行状況ページ")
+![固定バッチ番号を含むレポートの進行状況ページ。](media/job-card-device-batch-fixed.png "固定バッチ番号を含むレポートの進行状況ページ")
 
 ## <a name="report-serial-controlled-items-as-finished"></a>シリアル管理された品目を完了として報告する
 
@@ -143,7 +140,7 @@ ms.locfileid: "4431895"
 完了報告時にジョブ カード デバイスがシリアル番号を受け取ることができるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して、次の機能を (この順序で) 有効にする必要があります。
 
 1. ジョブ カード デバイスの進捗状況のレポート ダイアログのユーザー エクスペリエンスの向上
-1. ジョブ カード デバイス (プレビュー) からの完了報告時に、バッチ番号とシリアル番号を入力できるようにする
+1. ジョブ カード デバイスからの完了報告時に、バッチ番号とシリアル番号を入力できるようにします。
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>シリアル番号の報告を必要とする製品をコンフィギュレーションする
 
@@ -168,7 +165,7 @@ ms.locfileid: "4431895"
 1. 設定する追跡番号グループを作成または選択します。
 1. **一般** クイックタブで、**手動** オプションを **はい** に設定します。
 
-    ![追跡番号グループ ページ、シリアル番号](media/tracking-number-group-manual-serial.png "追跡番号グループ ページ、シリアル番号")
+    ![追跡番号グループ ページ、シリアル番号。](media/tracking-number-group-manual-serial.png "追跡番号グループ ページ、シリアル番号")
 
 1. 必要に応じてその他の値を設定し、このシナリオを使用するリリース済製品のシリアル番号グループとしてこの追跡番号グループを選択します。
 
@@ -177,7 +174,7 @@ ms.locfileid: "4431895"
 - シリアル番号を仕損としてマークするには、該当する行の **仕損** ボタンを選択します。 作業者は、**エラーの原因** を入力するように求められます。
 - シリアル番号を削除するには、該当する行の **削除** ボタンを選択します。
 
-![手動シリアル番号を含むレポートの進行状況ページ](media/job-card-device-serial-manual.png "手動シリアル番号を含むレポートの進行状況ページ")
+![手動シリアル番号を含むレポートの進行状況ページ。](media/job-card-device-serial-manual.png "手動シリアル番号を含むレポートの進行状況ページ")
 
 ### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>事前に定義されたシリアル番号の一覧を提供する追跡番号グループの設定
 
@@ -188,13 +185,13 @@ ms.locfileid: "4431895"
 1. **一般** クイックタブで、**在庫取引のみ** オプションを **はい** に設定します。
 1. 1 数量あたりのシリアル番号を分割するには、**数量ごと** フィールドを使用します。
 
-    ![事前定義シリアル番号の追跡番号グループ](media/tracking-number-group-predefined-sn.png "事前定義シリアル番号の追跡番号グループ")
+    ![事前定義シリアル番号の追跡番号グループ。](media/tracking-number-group-predefined-sn.png "事前定義シリアル番号の追跡番号グループ")
 
 1. 必要に応じてその他の値を設定し、このシナリオを使用するリリース済製品のシリアル番号グループとしてこの追跡番号グループを選択します。
 
 このシナリオを使用する場合、ジョブ カード デバイスの **レポートの進行状況** ページに表示される **シリアル番号** フィールド は、作業者が任意の値を入力できるドロップダウン リストです。
 
-![事前に定義されたシリアル番号を含むレポートの進行状況ページ](media/job-card-device-serial-predefined.png "事前に定義されたシリアル番号を含むレポートの進行状況ページ")
+![事前に定義されたシリアル番号を含むレポートの進行状況ページ。](media/job-card-device-serial-predefined.png "事前に定義されたシリアル番号を含むレポートの進行状況ページ")
 
 ### <a name="set-up-a-tracking-number-group-that-automatically-assigns-serial-numbers"></a>シリアル番号を自動的にで割り当てることができるように、追跡番号グループを設定する
 
@@ -205,13 +202,13 @@ ms.locfileid: "4431895"
 1. **一般** クイックタブで、**在庫取引のみ** オプションを **いいえ** に設定します。
 1. **手動** オプションを **いいえ** に設定します。
 
-    ![固定シリアル番号の追跡番号グループ](media/tracking-number-group-fixed-sn.png "固定シリアル番号の追跡番号グループ")
+    ![固定シリアル番号の追跡番号グループ。](media/tracking-number-group-fixed-sn.png "固定シリアル番号の追跡番号グループ")
 
 1. 必要に応じてその他の値を設定し、このシナリオを使用するリリース済製品のシリアル番号グループとしてこの追跡番号グループを選択します。
 
 このシナリオを使用する場合、ジョブ カード デバイスの **レポートの進行状況** ページに表示される **シリアル番号** フィールド は、値を表示しますが作業者はそれを編集することはできません。 このシナリオは、シリアル番号管理された品目のいずれか 1 つの数量に対して製造オーダーが作成されている場合にのみ関連があります。
 
-![固定シリアル番号を含むレポートの進行状況ページ](media/job-card-device-serial-fixed.png "固定シリアル番号を含むレポートの進行状況ページ")
+![固定シリアル番号を含むレポートの進行状況ページ。](media/job-card-device-serial-fixed.png "固定シリアル番号を含むレポートの進行状況ページ")
 
 ## <a name="report-as-finished-to-a-license-plate"></a>ライセンス プレートに完了としてレポートする
 
@@ -221,9 +218,9 @@ ms.locfileid: "4431895"
 
 このセクションで説明されている機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して、次の機能を (この順序で) 有効にする必要があります。
 
-1. 完了報告用ライセンス プレートをジョブ カード デバイスに追加
-1. ジョブ カード デバイスでの完了報告時に、ライセンス プレート番号の自動生成を有効にする
-1. ジョブ カード デバイスからラベルを印刷
+1. *完了報告用ライセンス プレートをジョブ カード デバイスに追加*<br>(Supply Chain Management のバージョン10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management のバージョン 10.0.25 では、この機能は必須です。)
+1. *ジョブ カード デバイスでの完了報告時に、ライセンス プレート番号の自動生成を有効にする*<br>(Supply Chain Management のバージョン 10.0.25 では、この機能は必須です。)
+1. *ジョブ カード デバイスからラベルを印刷*<br>(Supply Chain Management のバージョン 10.0.25 では、この機能は必須です。)
 
 ### <a name="set-up-reporting-as-finished-to-a-license-plate"></a>ライセンス プレートに完了として報告することを設定する
 
@@ -235,7 +232,10 @@ ms.locfileid: "4431895"
     - **ライセンス プレートの生成** - このオプションを **はい** に設定すると、各完了報告に対して新しいライセンス プレートを生成します。 完了レポートごとに既存のライセンスプレートを使用する場合は、**いいえ** に設定します。
     - **印刷ラベル** - 作業員が完了報告ごとにライセンス プレート ラベルを印刷する必要がある場合は、このオプションを **はい** に設定します。 ラベルを必要としない場合は、**いいえ** に設定します。 
 
-![デバイス ページのジョブ カードの構成](media/config-job-card-raf.png "デバイス ページのジョブ カードの構成")
+![デバイス ページのジョブ カードの構成。](media/config-job-card-raf.png "デバイス ページのジョブ カードの構成")
 
 > [!NOTE]
 > ラベルを構成するには、**倉庫管理 \> 設定 \> ドキュメント回覧 \> ドキュメント回覧** の順に移動します。 詳細については、[ライセンス プレート ラベル印刷の有効化](../warehousing/tasks/license-plate-label-printing.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

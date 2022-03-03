@@ -2,24 +2,24 @@
 title: 仕入先請求書の自動化ワークスペース
 description: このトピックでは、仕入先請求書に関連するワークスペースの設定方法について説明し、Microsoft Power BI によって提供される情報を示します。
 author: abruer
-ms.date: 09/28/2020
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dde77a19fae9af8f40af8b14259a29db80f4a80cf8be75233a463d6fec2dac46
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722722"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182582"
 ---
 # <a name="vendor-invoice-automation-workspace"></a>仕入先請求書の自動化ワークスペース
 
@@ -60,14 +60,14 @@ ms.locfileid: "6722722"
 
 **自分の作業** ビューの **保留中の請求書の概要** セクションのタイルには、仕入先請求書の状態の概要が示されます。 まだ転記されていない仕訳帳と保留中の請求書を表示できます。 さらに、仕入先請求書の自動化機能に関連付けられているタイルが 4 つあります。
 
-- 領収書の手動照合が必要です
-- 照合検証が成功しませんでした
-- 請求書がワークフローに送信されていません
-- 請求書がインポートされていません
+- **領収書の手動照合が必要です**
+- **照合検証が成功しませんでした**
+- **請求書がワークフローに送信されていません**
+- **請求書がインポートされていません**
 
-(この 4 つのタイルでは、機能管理で仕入先請求書の自動化機能を有効にする必要があります。)
+(この 4 つのタイルでは、**機能管理** で仕入先請求書の自動化機能を有効にする必要があります。)
 
-**仕入先請求書の復元** タイルを使用するには、買掛金勘定パラメータで機能を有効にする必要があります。 **買掛金勘定 \> 買掛金勘定パラメータ** の順に移動して、**請求書** タブで **仕入先の請求書復元を許可** オプションを **はい** に設定します。
+**仕入先請求書の復元** タイルを使用するには、**買掛金勘定パラメーター** で機能を有効にする必要があります。 **買掛金勘定 \> 買掛金勘定パラメータ** の順に移動して、**請求書** タブで **仕入先の請求書復元を許可** オプションを **はい** に設定します。
 
 この機能が有効になっている場合は、**仕訳帳** と呼ばれるセクションでワークスペース上にグループ化された3つのタイルも一緒にグループ化されます。 このタイルには、**仕訳帳**、**仕訳帳 - 自分に割り当て済み**、および **請求管理プール** のタイトルが付きます。 
 

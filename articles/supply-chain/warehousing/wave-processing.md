@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4b7c01a21dcbe7543332439ee6fd371b426851f4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b89a13e72816bbf140986bd5450d037cf2510753
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579931"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103516"
 ---
 # <a name="wave-creation-and-processing"></a>ウェーブの作成と処理
 
@@ -190,9 +190,9 @@ ms.locfileid: "7579931"
 
 **バッチ ジョブの詳細** ページでは、バッチ ジョブと任意のウェーブに関連付けられている関連タスクを検査します。 これは特に、失敗したウェーブに対するトラブルシューティングを行う場合に役立ちます。 この機能がない場合、通常は管理者だけがバッチ ジョブの詳細にアクセスできます。 **ウェーブ バッチ ジョブの詳細** ページは、管理者以外のユーザーが使用することもでき、バッチ ジョブおよび関連タスクの読み取り専用ビューを表示します。
 
-### <a name="enable-the-wave-batch-job-details-page"></a>[ウェーブ バッチ ジョブの詳細] ページの有効化
+### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>[ウェーブ バッチ ジョブの詳細] ページのオン/オフを切り替える
 
-システムに **ウェーブ バッチ ジョブの詳細** ページがない場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*ウェーブ バッチ ジョブの詳細* 機能をオンにします。
+Supply Chain Management のバージョン 10.0.25 では、**ウェーブ バッチ ジョブの詳細** ページは既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *ウェーブ バッチ ジョブの詳細* 機能を検索して、この機能をオンまたはオフにできます。
 
 ### <a name="use-the-wave-batch-job-details-page"></a>[ウェーブ バッチ ジョブの詳細] ページを使用する
 

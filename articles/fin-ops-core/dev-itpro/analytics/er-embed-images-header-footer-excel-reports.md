@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 20bcf26e1510634c5ee7043576a480ce15889923
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344123"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323778"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>ER 形式をデザインして、ページのヘッダーまたはフッターに画像が埋め込まれた Excel 形式でレポートを生成する
 
@@ -153,9 +153,9 @@ ER コンフィギュレーション プロバイダーについては、[コン
 3. **構成** ページにある左ペインの構成ツリーで、**請求書モデル** を展開します。
 4. 選択した **自由書式の請求書 (Excel)** ER 形式に加えて、その他の必要な ER コンフィギュレーションがインポートされます。 コンフィギュレーションツリーで、次の ER コンフィギュレーションが使用可能であることを確認してください。
 
-    - **請求書モデル** – このコンフィギュレーションには、請求書発行ビジネス ドメインのデータ構造を表す[データ モデル](general-electronic-reporting.md#data-model-and-model-mapping-components) ER コンポーネントが含まれています。
-    - **請求書モデル マッピング** – このコンフィギュレーションには、実行時にデータ モデルがアプリケーション データが格納される方法を記述する[モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components) ER コンポーネントが含まれています。
-    - **自由書式の請求書 (Excel)** – このコンフィギュレーションには、[形式](general-electronic-reporting.md#FormatComponentOutbound)と形式マッピング ER コンポーネントが含まれています。 形式コンポーネントは、Excel 形式のテンプレートに基づいてレポートのレイアウトを指定します。 形式マッピング コンポーネントは、モデル データ ソースが含まれており、このデータ ソースが実行時にレポート レイアウトを埋めるためにどのように使用されるかを指定します。
+    - **請求書モデル** – このコンフィギュレーションには、請求書発行ビジネス ドメインのデータ構造を表すデータ モデル ER コンポーネントが含まれています。
+    - **請求書モデル マッピング** – この構成には、実行時にデータ モデルがアプリケーション データが格納される方法を記述するモデル マッピング ER コンポーネントが含まれています。
+    - **自由書式の請求書 (Excel)** – この構成には、形式と形式マッピング ER コンポーネントが含まれています。 形式コンポーネントは、Excel 形式のテンプレートに基づいてレポートのレイアウトを指定します。 形式マッピング コンポーネントは、モデル データ ソースが含まれており、このデータ ソースが実行時にレポート レイアウトを埋めるためにどのように使用されるかを指定します。
 
 ![コンフィギュレーション ページのインポートされた ER コンフィギュレーション。](./media/er-embed-images-header-footer-excel-reports-imported-solution.png)
 

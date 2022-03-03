@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce と Microsoft Teams の統合を有効化する
 description: このトピックでは、Microsoft Dynamics 365 Commerce と Microsoft Teams の統合を有効化する方法について説明します。
 author: gvrmohanreddy
-ms.date: 03/31/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 9910ee48a0792c89a4e04ec8685fd02484e45575d70b06454dea56a89ee8c914
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52b1a889a15cfe2e6e104e38b7d257f80762954f
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775341"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323433"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Dynamics 365 Commerce と Microsoft Teams の統合を有効化する
 
@@ -38,15 +38,23 @@ Microsoft Teams と Commerce との統合を有効にする前に、Azure ポー
 Azure ポータルで Teams アプリケーションをテナントに登録するには、以下の手順に従います。
 
 1. [クイック スタート : Microsoft IDプラットフォームにアプリを登録する](/azure/active-directory/develop/quickstart-register-app) に記載の手順に従い、Azure ポータルで Teams アプリケーションをテナントに登録します。
-1. 登録されたアプリケーションの **概要** ページから **アプリケーション (クライアント) ID** 値をコピーします。 この値は、Commerce 本部で Teams を有効にするために使用します。
-1. 手順 1 で[証明書を追加](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)した際に入力した証明書の値をコピーします。 証明書は、公開鍵やアプリケーション キーとも呼ばれます。 この値は、Commerce 本部で Teams を有効にするために使用します。
+1. **アプリの登録** タブで、前述の手順で作成したアプリを選択します。 **認証** タブで、**プラットフォームの追加** を選択します。
+1. ダイアログ ボックスで、**Web** を選択します。 **リダイレクト URL** フィールドで、**\<HQUrl\>/oauth** の形式で URL を入力します。 **\<HQUrl\>** をご利用の Commerce 本部の URL に置き換えます (例: `https://hxennugbjtweufmdeo385f47fadb6aa9a0aos.cloudax.int.dynamics.com/oauth`)。
+1. 登録したアプリの **概要** ページで、**アプリケーション (クライアント) ID** をコピーします。 次のセクションで Commerce 本部での Teams 統合を有効にするために、この値を提供する必要があります。
+1. [クライアント シークレットの追加](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)の手順に従って、クライアント シークレットを追加します。 続いて、クライアント用の **シークレットの値** をコピーします。 次のセクションで Commerce 本部での Teams 統合を有効にするために、この値を提供する必要があります。
+1. **API のアクセス許可**、**アクセス許可の追加** の順に選択します。
+1. **API 権限の要求** ダイアログ ボックスで、 **Microsoft Graph** を選択して **委任されたアクセス許可** を選択し、**グループ** を展開して、**Group.ReadWrite.All** を選択して **アクセス許可の追加** を選択します。
+1. **API 権限の要求** ダイアログ ボックスで、 **アクセス許可の追加** を選択して **Microsoft Graph** を選択し、**アプリケーションのアクセス許可** を選択して **グループ** を展開して、**Group.ReadWrite.All** を選択して **アクセス許可の追加** を選択します。
+1. **API 権限の要求** ダイアログ ボックスで、**アクセス許可の追加** を選択します。 **組織が使用している API** タブで、**Microsoft Teams 小売りサービス** を検索し、選択します。
+1. **委任されたアクセス許可** を選択し、**TaskPublishing** を展開し、**TaskPublising.ReadWrite.All** を展開して **アクセス許可の追加** を選択します。 詳細については、[Web API にアクセスするクライアント アプリケーションを構成する](/azure/active-directory/develop/quickstart-configure-app-access-web-apis) を参照してください。
 
 Commerce 本部で Teams の統合を有効にするには、以下の手順に従います。
 
 1. **Retail と Commerce \> チャネル設定 \> Microsoft Teams 統合の構成** に移動します。
 1. アクション ウィンドウで、**編集** を選択します。
 1. **有効化 Microsoft Teams 統合** オプションを **はい** に設定します。
-1. **アプリケーション ID** と **アプリケーション キー** の各フィールドで、Azure ポータルで Teams アプリケーションを登録した際に取得した値を入力します。
+1. **アプリケーション ID** フィールドで、Azure ポータルで Teams アプリケーションを登録した際に取得した **アプリケーション (クライアント) ID** 値を入力します。
+1. **アプリケーション キー** フィールドで、Azure ポータルでクライアント シークレットを追加した際に取得した **シークレット値** を入力します。
 1. アクション ウィンドウで、**保存** を選択します。
 
 次の図は、Commerce 本部での Teams 統合の設定例です。

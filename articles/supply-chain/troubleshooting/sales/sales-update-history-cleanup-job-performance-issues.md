@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: c02273adf90afc67b7c0ae1b82c19d489bfbd3b1
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 371a8c7178cd7c5091d6dd9a91d0ee03b943a269
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920077"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103191"
 ---
 # <a name="sales-update-history-cleanup-job-fails-or-has-performance-issues"></a>販売更新履歴のクリーンアップ ジョブが失敗するか、パフォーマンスに問題があります
 
@@ -30,5 +30,5 @@ ms.locfileid: "7920077"
 
 ## <a name="resolution"></a>解決策
 
-**販売更新履歴クリーンアップ** バッチ ジョブの新しいバージョンが、Supply Chain Management のバージョン 10.0.19 以降で使用できます。 この機能は、規定では有効ではありません。 これを機能させる方法と機能管理で有効化する方法の詳細については、[販売履歴のクリーンアップ パフォーマンスの改善](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md) を参照してください。
+**販売更新履歴クリーンアップ** バッチ ジョブの新しいバージョンが、Supply Chain Management のバージョン 10.0.19 以降で使用できます。 既定では、この機能は有効になっていません。 これを機能させる方法と機能管理で有効化する方法の詳細については、[販売履歴のクリーンアップ パフォーマンスの改善](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md) を参照してください。
 

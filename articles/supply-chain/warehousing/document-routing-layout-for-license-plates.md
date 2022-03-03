@@ -2,30 +2,28 @@
 title: ライセンス プレート ラベルのドキュメント ルーティング レイアウト
 description: このトピックでは、書式設定メソッドを使用してラベルに値を印刷する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
-ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.10
+ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432300"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103893"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>ライセンス プレート ラベルのドキュメント ルーティング レイアウト
 
 [!include [banner](../includes/banner.md)]
+
 
 ドキュメント ルーティング レイアウトでは、ライセンス プレート ラベルのレイアウトと、その上に印刷されるデータを定義します。 印刷トリガー ポイントは、モバイル デバイスのメニュー項目と作業テンプレートを設定するときに設定します。
 
@@ -53,6 +51,10 @@ ms.locfileid: "4432300"
 
 いくつかの広く使用されているラベル生成ツールには、ラベル レイアウトのテキストの書式設定に役立つものがあります。 これらのツールの多くは、`$FieldName$` 形式をサポートしています。 さらに、Microsoft Dynamics 365 Supply Chain Management では、ドキュメント ルーティング レイアウトのフィールド マッピングの一部として特別な書式設定ロジックを使用しています。
 
+## <a name="turn-on-this-feature-for-your-system"></a>システムでこの機能を有効化する
+
+このトピックで説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*拡張されたライセンス プレート ラベルのレイアウト* 機能を有効にします。 (Supply Chain Management のバージョン10.0.21 では、この機能は既定で有効になっています。 (Supply Chain Management 10.0.25 では、この機能は必須であり、オフにすることはできません。)
+
 ## <a name="custom-number-formats"></a>カスタム数値形式
 
 次の形式のコードを使用して、印刷される数値フィールド値の書式設定は、カスタマイズできます。
@@ -71,7 +73,7 @@ $FieldName:FormatString$
 - (プレースホルダーとしてゼロを使用して) 常に 4 桁を表示するには、`$Qty:0000$` を使用します。 たとえば、数量が 10 の場合、ラベルは "0010" と表示されます。
 - 常に小数点以下 2 桁を表示するには、`$Qty:0.00$` を使用します。 たとえば、数量が 10 の場合、ラベルは "10.00" と表示されます。
 
-使用可能な数値形式文字列の完全な一覧については、[カスタム数値形式文字列](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings) を参照してください。
+使用可能な数値形式文字列の完全な一覧については、[カスタム数値形式文字列](/dotnet/standard/base-types/custom-numeric-format-strings) を参照してください。
 
 ## <a name="custom-string-formats"></a>カスタム文字列形式
 
@@ -93,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 この例では、日付 2020 年 4 月 30 日は "30-04-2020" として印刷されます。
 
-使用可能な日付/時刻形式の完全な一覧については、[カスタム日付と時刻の形式文字列](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) を参照してください。
+使用可能な日付/時刻形式の完全な一覧については、[カスタム日付と時刻の形式文字列](/dotnet/standard/base-types/custom-date-and-time-format-strings) を参照してください。
 
 ## <a name="print-individual-lines-from-multiline-data"></a>複数行データから個々の行を印刷する
 
@@ -136,3 +138,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>ラベルを印刷する方法の詳細
 
 ラベルの設定および印刷方法の詳細については、[ライセンス プレート ラベル印刷の有効化](tasks/license-plate-label-printing.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

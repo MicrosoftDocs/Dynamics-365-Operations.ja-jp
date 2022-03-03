@@ -2,11 +2,9 @@
 title: 電子申告における多言語レポートの設計
 description: このトピックでは、電子申告 (ER) ラベルを使用して多言語レポートをデザインおよび生成する方法について説明します。
 author: NickSelin
-manager: AnnBe
-ms.date: 09/14/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7934f36877247460ec843201a08d4670456889f9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eab17635494657740fe46364bde0773dae5b9e4b
+ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679705"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8313694"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>電子申告における多言語レポートの設計
 
@@ -30,9 +28,9 @@ ms.locfileid: "4679705"
 
 ## <a name="overview"></a>概要
 
-ビジネス ユーザーとして、[電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用し、さまざまな国や地域の法的要件に従って生成されなければならない送信ドキュメントの形式を構成できます。 これらの要件により、送信ドキュメントを国や地域ごとに異なる言語で生成する必要がある場合は、言語依存のリソースを含む 1 つの ER [形式](general-electronic-reporting.md#FormatComponentOutbound) を構成できます。 このようにすると、この形式を再利用してさまざまな国や地域の送信ドキュメントを生成できます。 また、1 つの ER 形式を使用して、対応する顧客、仕入先、関連会社、またはその他の関係者向けに、送信ドキュメントを異なる言語で生成することもできます。
+ビジネス ユーザーとして、[電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用し、さまざまな国や地域の法的要件に従って生成されなければならない送信ドキュメントの形式を構成できます。 これらの要件により、送信ドキュメントを国や地域ごとに異なる言語で生成する必要がある場合は、言語依存のリソースを含む 1 つの ER 形式 を構成できます。 このようにすると、この形式を再利用してさまざまな国や地域の送信ドキュメントを生成できます。 また、1 つの ER 形式を使用して、対応する顧客、仕入先、関連会社、またはその他の関係者向けに、送信ドキュメントを異なる言語で生成することもできます。
 
-ER データ モデルとモデル マッピングを構成済み ER 形式のデータソースとして構成し、生成されたドキュメントに挿入するアプリケーション データを指定するデータ フローを定義できます。 ER コンフィギュレーション [プロバイダー](general-electronic-reporting.md#Provider)として 、構成済みの [データ モデル](general-electronic-reporting.md#data-model-and-model-mapping-components)、[モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)、および [形式](general-electronic-reporting.md#FormatComponentOutbound) を ER ソリューションのコンポーネントとして [公開](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) し、特定の送信ドキュメントを生成できます。 公開された ER ソリューションを顧客が [アップロード](general-electronic-reporting-manage-configuration-lifecycle.md) して、使用およびカスタマイズできるようにすることもできます。 顧客が他の言語を話す可能性がある場合は、言語依存のリソースを含むように ER コンポーネントを構成できます。 このようにして、設計時に、編集可能な ER コンポーネントのコンテンツを顧客のユーザー優先言語で表示できます。
+ER データ モデルとモデル マッピングを構成済み ER 形式のデータソースとして構成し、生成されたドキュメントに挿入するアプリケーション データを指定するデータ フローを定義できます。 ER コンフィギュレーション [プロバイダー](general-electronic-reporting.md#Provider)として 、構成済みの データ モデル、モデル マッピング、および 形式 を ER ソリューションのコンポーネントとして [公開](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) し、特定の送信ドキュメントを生成できます。 公開された ER ソリューションを顧客が [アップロード](general-electronic-reporting-manage-configuration-lifecycle.md) して、使用およびカスタマイズできるようにすることもできます。 顧客が他の言語を話す可能性がある場合は、言語依存のリソースを含むように ER コンポーネントを構成できます。 このようにして、設計時に、編集可能な ER コンポーネントのコンテンツを顧客のユーザー優先言語で表示できます。
 
 言語依存のリソースを ER ラベルとして構成できます。 これらのラベルを使用して、ER コンポーネントを次の目的で構成できます:
 
@@ -56,11 +54,11 @@ ER データ モデル、ER モデル マッピング、または ER 形式を�
 
 次の図は、編集可能な ER データ モデルで、この翻訳がどのように行われるかを示しています。 この例では、編集可能な **請求書モデル** の **PurchaseOrder** フィールドの **説明** 属性 が、オーストリアのドイツ語 (DE-AT) および日本語 (JA) に翻訳されています。
 
-![ER データ モデル デザイナーで ER ラベルの翻訳を提供する](./media/er-multilingual-labels-refer.png)
+![ER データ モデル デザイナーで ER ラベルの翻訳を提供します。](./media/er-multilingual-labels-refer.png)
 
 編集可能な ER コンポーネントにあるラベルのラベル テキストのみ翻訳することができます。 たとえば、ER モデル マッピング データ ソースのラベル属性に **翻訳** を選択し、親 ER データ モデルにある ER ラベルを選択すると、ラベルのコンテンツが表示されますが、変更はできません。 この場合、次の図に示すように、**翻訳テキス** フィールドは使用できません。
 
-![ER モデル マッピング デザイナーで提供された ER ラベルの翻訳を確認する](./media/er-multilingual-labels-refer-mapping.png)
+![ER モデル マッピング デザイナーで提供された ER ラベルの翻訳を確認します。](./media/er-multilingual-labels-refer-mapping.png)
 
 > [!NOTE]
 > デザイナーを使用して編集可能な ER コンポーネントに入力されたラベルを削除することはできません。
@@ -73,19 +71,19 @@ ER ラベルは、ER コンポーネントのいくつかの翻訳可能な属�
 
 ER データ モデルを構成するときに、そのデータ モデルに ER ラベルを追加できます。 モデル項目の **ラベル** と **説明** の属性、すべてのモデルのフィールド、およびすべての <a id="LinkModelEnum"></a>モデル列挙値は、ER データ モデルに追加される ER ラベルにリンクできます。
 
-![ER データ モデル デザイナーで説明属性の翻訳を提供する](./media/er-multilingual-labels-refer.png)
+![ER データ モデル デザイナーで説明属性の翻訳を提供します。](./media/er-multilingual-labels-refer.png)
 
 ER データ モデルがこのように構成されている場合、そのコンテンツは ER データ モデル デザイナーのユーザーに各ユーザーの優先言語で表示されます。 したがって、モデル メンテナンスが簡略化されます。 次の図は、DE-AT および JA を優先言語として設定しているユーザーに対して、この機能がどのように機能するかを示しています。
 
-![DE-AT を優先言語として設定しているユーザーのための ER データ モデル デザイナー レイアウト](./media/er-multilingual-labels-refer-de.png)
+![DE-AT を優先言語として設定しているユーザーのための ER データ モデル デザイナー レイアウトです。](./media/er-multilingual-labels-refer-de.png)
 
-![JA を優先言語として設定しているユーザーのための ER データ モデル デザイナー レイアウト](./media/er-multilingual-labels-refer-ja.png)
+![JA を優先言語として設定しているユーザーのための ER データ モデル デザイナー レイアウトです。](./media/er-multilingual-labels-refer-ja.png)
 
 ### <a name="model-mapping-component"></a>モデル マッピング コンポーネント
 
 ER モデル マッピングは ER データ モデルに基づいているため、参照されるデータ モデル要素のラベルは、モデル マッピング デザイナーのユーザーの優先言語で表示されます。 次の図は、**PurchaseOrder** フィールドの意味が、構成済みデータ モデルに追加された **説明** 属性のラベルを使用して、編集可能なモデル マッピングでどのように説明されるかを示しています。 このラベルは、ユーザーの優先言語 (この例では DE-AT) で表示されていることに注意してください。
 
-![DE-AT を優先言語として設定しているユーザーのための ER モデル マッピング デザイナー レイアウト](./media/er-multilingual-labels-show-mapping.png)
+![DE-AT を優先言語として設定しているユーザーのための ER モデル マッピング デザイナー レイアウトです。](./media/er-multilingual-labels-show-mapping.png)
 
 **ユーザー 入力 パラメータ** データ ソースの **ラベル** 属性が ER ラベルにリンクするように構成されている場合、このデータ ソースに対応するパラメータ フィールドは、ランタイムにユーザーの優先言語でユーザー ダイアログ ボックスに表示されます。
 
@@ -102,21 +100,21 @@ ER 形式は ER データ モデルに基づいているため、データ モ�
 
 **ユーザー 入力 パラメータ** データ ソースの **ラベル** 属性が ER ラベルにリンクされている場合、ランタイムにユーザー ダイアログ ボックスのパラメータに対応するフィールドがプロンプトとしてユーザーに表示されます。 次の図は、設計時に **ユーザー入力パラメータ** データソースの **ラベル** 属性を ER ラベルにリンクして、ユーザーが、ランタイムに異なる優先言語 (米国英語 (EN-US) と DE-AT 言語で表示) でパラメータの入力を促すようにする方法を示します。
 
-![ER オペレーション デザイナーでユーザー入力パラメータ属性の翻訳を提供する](./media/er-multilingual-labels-refer-format.png)
+![ER 操作デザイナーでユーザー入力パラメータ属性の翻訳を提供します。](./media/er-multilingual-labels-refer-format.png)
 
-![EN-US ユーザー優先言語ランタイムの ER 仕入先支払い処理](./media/er-multilingual-labels-show-runtime-en.png)
+![EN-US ユーザー優先言語ランタイムの ER 仕入先支払い処理です。](./media/er-multilingual-labels-show-runtime-en.png)
 
-![DE-AT ユーザー優先言語のランタイムの ER 仕入先支払い処理](./media/er-multilingual-labels-show-runtime-de.png)
+![DE-AT ユーザー優先言語のランタイムの ER 仕入先支払い処理です。](./media/er-multilingual-labels-show-runtime-de.png)
 
 ### <a name="expressions"></a>式
 
 ER [式](er-formula-language.md) でラベルを使用するには、構文 **@"GER\_LABEL:X"** を使用する必要があります。接頭語 **@** はオペランドがラベルを参照していることを示し、**GER\_LABEL** は ER ラベルが関係することを示し、**X** は ER ラベル ID です。
 
-![ER フォーミュラ デザイナーで ER ラベルへの参照を含む ER 式を構成する](./media/er-multilingual-labels-expression1.png)
+![ER フォーミュラ デザイナーで ER ラベルへの参照を含む ER 式を構成します。](./media/er-multilingual-labels-expression1.png)
 
 システム (アプリケーション) ラベルを参照するには、構文 **@"X"** を使用します。接頭語 **@** はオペランドがラベルを参照し、**X** がシステム ラベル ID であることを示します。
 
-![ER フォーミュラ デザイナーでアプリケーション ラベルへの参照を含む ER 式を構成する](./media/er-multilingual-labels-expression2.png)
+![ER フォーミュラ デザイナーでアプリケーション ラベルへの参照を含む ER 式を構成します。](./media/er-multilingual-labels-expression2.png)
 
 #### <a name="model-mapping"></a>モデル マッピング
 
@@ -128,19 +126,19 @@ ER モデル マッピングの式は、ラベルを使用して構成できま�
 
 ER 形式の式は、ラベルを使用して構成できます。 この形式を実行して送信ドキュメントを生成すると、実行のコンテキストには言語コードが含まれます。 構成済みの式ラベルには、そのコンテキストの言語に対して構成されたラベル テキストが入力されます。
 
-![ER フォーミュラ デザイナーで編集可能な ER 式の ER ラベルの翻訳を提供する](./media/er-multilingual-labels-refer-in-expression.png)
+![ER フォーミュラ デザイナーで編集可能な ER 式の ER ラベルの翻訳を提供します。](./media/er-multilingual-labels-refer-in-expression.png)
 
-![ER オペレーション デザイナーで ER ラベルを参照するデータ バインディングのサンプル](./media/er-multilingual-labels-refer-in-binding.png)
+![ER 操作デザイナーで ER ラベルを参照するデータ バインディングのサンプルです。](./media/er-multilingual-labels-refer-in-binding.png)
 
 ER 形式の **ファイル** コンポーネントを構成して、ユーザーの優先言語でレポートを生成できます。
 
-![ユーザーの優先言語でレポートを生成するために ER オペレーション デザイナーのファイル コンポーネントを設定する](./media/er-multilingual-labels-language-context-user.png)
+![ユーザーの優先言語でレポートを生成するために ER 操作デザイナーのファイル コンポーネントを設定します。](./media/er-multilingual-labels-language-context-user.png)
 
 このように ER フォーマットを構成すると、ER ラベルの対応するテキストを使用してレポートが生成されます。 次の図は、EN-US および DE-AT ユーザー言語のレポートの例を示しています。
 
-![ユーザーの優先言語 EN-US で生成されたレポートのプレビュー](./media/er-multilingual-labels-report-preview-en.png)
+![ユーザーの優先言語 EN-US で生成されたレポートのプレビューです。](./media/er-multilingual-labels-report-preview-en.png)
 
-![ユーザーの優先言語 DE-AT で生成されたレポートのプレビュー](./media/er-multilingual-labels-report-preview-de.png)
+![ユーザーの優先言語 DE-AT で生成されたレポートのプレビューです。](./media/er-multilingual-labels-report-preview-de.png)
 
 参照されるラベルが、形式の実行コンテキストの言語に翻訳されていない場合、EN-US 言語のラベル テキストが代わりに使用されます。
 
@@ -150,16 +148,41 @@ ERでは、生成されるレポートの言語を指定するさまざまな方
 
 - **会社の基本設定** – 会社指定の言語でレポートを生成します。
 
-    ![ER オペレーション デザイナーで、生成されたレポートの言語として会社の優先言語を指定します](./media/er-multilingual-labels-language-context-company.png)
+    ![ER 操作デザイナーで、生成されたレポートの言語として会社の優先言語を指定します。](./media/er-multilingual-labels-language-context-company.png)
 
 - **ユーザーの基本設定** – ユーザーの優先言語でレポートを生成します。
 - **明示的に定義** – 設計時に指定された言語でレポートを生成します。
 
-    ![ER オペレーション デザイナーで、生成されたレポートの言語として設計時に定義された言語を指定します](./media/er-multilingual-labels-language-context-fixed.png)
+    ![ER 操作デザイナーで、生成されたレポートの言語として設計時に定義された言語を指定します。](./media/er-multilingual-labels-language-context-fixed.png)
 
 - **ランタイムに定義** – ランタイムに指定された言語でレポートを生成します。 この値を選択する場合は、**言語** フィールドで、対応する顧客の言語など、言語の言語コードを返す ER 式を構成します。
 
-    ![ER オペレーション デザイナーで、生成されたレポートの言語としてランタイム定義言語を指定します](./media/er-multilingual-labels-language-context-runtime.png)
+    ![ER 操作デザイナーで、生成されたレポートの言語としてランタイム定義言語を指定します。](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>カルチャ固有の形式
+
+ERでは、生成されるレポートのカルチャを指定するさまざまな方法をサポートしています。 したがって、日付、時刻、および数値に対して、カルチャ固有の正しい形式を使用できます。 電子申告形式をデザインする場合は、**形式** タブの、**カルチャの基本設定** フィールドで **Common\\File**、**Excel\\File**、**PDF\\File** または **PDF\\Merger** タイプの各形式コンポーネントに対して、以下の値を選択することができます。
+
+- **ユーザーの基本設定** – ユーザーの優先するカルチャに従って値をフォーマットします。 このカルチャーは、**ユーザー オプション** ページの **基本設定** タブにある **日付、時刻、および数字の形式** フィールドで定義されます。
+
+    ![ER 操作デザイナーで、生成されたレポートのカルチャとしてユーザーの優先するカルチャを定義します。](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **明示的に定義** – 設計時に指定されたカルチャに従って値をフォーマットします。
+
+    ![設計時に指定されたカルチャを、ER 操作デザイナーで生成されたレポートのカルチャとして定義します。](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **ランタイムに定義** – ランタイムに指定されたカルチャに従って値をフォーマットします。 この値を選択した場合、**マッピング** タブの **日付、時刻、数字の形式** フィールドに、該当する顧客のカルチャなど、カルチャのカルチャ コードを返す ER 式を設定します。
+
+    ![ランタイムに定義されたカルチャを、ER 操作デザイナーで生成されたレポートのカルチャとして定義します。](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> 特定のカルチャを定義する ER コンポーネントには、テキスト値を入力するように構成された子 ER コンポーネントが含まれている場合があります。 既定では、親コンポーネントのカルチャがそれらのコンポーネントの値のフォーマットに使用されます。 次の組み込み ER 機能を使用して、これらのコンポーネントのバインドを構成し、値のフォーマットに代替カルチャを適用できます。
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> バージョン 10.0.20 以降では生成されたドキュメントの [PDF 変換](electronic-reporting-destinations.md#OutputConversionToPDF) 時に、**Common\\File** および **Excel\\File** タイプのフォーマット コンポーネントのロケールを使用して値をフォーマットします。
 
 ## <a name="translation"></a>翻訳
 
@@ -173,19 +196,19 @@ ERでは、生成されるレポートの言語を指定するさまざまな方
 
 ER コンポーネントの構成は、編集可能な ER コンポーネントが存在する ER コンフィギュレーションのドラフト バージョンで行われます。
 
-![ドラフト ステータスのコンフィギュレーション バージョンにアクセスできる ER コンフィギュレーション ページ](./media/er-multilingual-labels-configurations.png)
+![ドラフト状態のコンフィギュレーション バージョンにアクセスできる ER コンフィギュレーション ページです。](./media/er-multilingual-labels-configurations.png)
 
 このトピックで既に説明したように、必須の ER ラベルを編集可能な ER コンポーネントに追加できます。 このようにして、ER ラベルのテキストを EN-US 言語で指定できます。 その後、組み込み ER 関数を使用して ER コンポーネントのラベルをエクスポートできます。 編集可能な ER コンポーネントを含む ER コンフィギュレーションのドラフト バージョンを選択し、**交換 \> ラベルのエクスポート** を選択します。
 
-![選択したコンフィギュレーション バージョンから ER ラベルをエクスポートできる ER コンフィギュレーション ページ](./media/er-multilingual-labels-export.png)
+![選択したコンフィギュレーション バージョンから ER ラベルをエクスポートできる ER コンフィギュレーション ページです。](./media/er-multilingual-labels-export.png)
 
 すべてのラベルまたはエクスポートの開始時に指定した 1 つの言語のラベルをエクスポートできます。 ラベルは、XML ファイルを含む zip ファイルとしてエクスポートされます。 すべての XML ファイルには、1 つの言語のラベルが含まれています。
 
-![DE-AT 言語用の ER ラベルを含むエクスポート ファイルのサンプル](./media/er-multilingual-labels-in-xml.png)
+![DE-AT 言語用の ER ラベルを含むエクスポート ファイルのサンプルです。](./media/er-multilingual-labels-in-xml.png)
 
 この形式は、[Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) などの外部翻訳サービスによるラベルの自動翻訳に使用されます。 翻訳済ラベルを受け取ったら、ラベルを所有する ER コンポーネントを含む ER コンフィギュレーションのドラフト バージョンにインポートできます。 編集可能な ER コンポーネントを含む ER コンフィギュレーションのドラフト バージョンを選択し、**交換 \> ラベルの読み込む** を選択します。
 
-![選択したコンフィギュレーション バージョンに ER ラベルをインポートできる ER コンフィギュレーション ページ](./media/er-multilingual-labels-load.png)
+![選択したコンフィギュレーション バージョンに ER ラベルをインポートできる ER コンフィギュレーション ページです。](./media/er-multilingual-labels-load.png)
 
 翻訳済ラベルは選択した ER コンフィギュレーションにインポートされます。 この ER コンフィギュレーションに存在する翻訳済ラベルは置き換えられます。 ER コンフィギュレーションに翻訳済ラベルがない場合は追加されます。
 
@@ -206,7 +229,27 @@ ER バージョン管理では、ER コンポーネント内の任意の属性�
 - **ラベル** 属性にリンクされている ER ラベルの値は、返された レコードの **ラベル** フィールドに格納されます。
 - **説明** 属性にリンクされている ER ラベルの値は、返された レコードの **説明** フィールドに格納されます。
 
+## <a name="performance"></a><a name=performance></a>業績
+
+ER 形式のコンポーネンを構成してユーザーの優先 [言語](#language)でレポートを生成する場合、またはコンテンツが優先言語で解析される受信ドキュメントをインポートする場合、[機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースで **ER を実行している現在のユーザーの優先言語をキャッシュする** の機能を有効にすることをお勧めします。 特に ER フォーミュラとバインディングのラベルおよび多くの[検証](general-electronic-reporting-formula-designer.md#TestFormula)ルールへの複数の参照を含む ER 形式のコンポーネントがユーザーの優先言語でユーザー メッセージを生成する場合、この機能によりパフォーマンスが向上します。
+
+ERコンフィギュレーション バージョンのステータスを **ドラフト** から **完了** に変更すると、コンフィギュレーション バージョンに ER ラベルが含まれている場合、これらのラベルはアプリケーション データベースに格納されます。 記憶域スキーマは、**ER ラベル記憶域の高速化** 機能の状態に依存します:
+
+- 機能が有効になっていない場合、すべてのラベルは、**ERSOLUTIONVERSIONTABLE** テーブルの **LABELXML** フィールドに 1 つの XML スニペットとして格納されます。
+- 機能が有効になっている場合、**ERSOLUTIONVERSIONLABELSTABLE** テーブルの言語ごとに個別のレコードが作成されます。 このテーブルの **CONTENTS** フィールドには、圧縮された XML スニペットとして言語別のラベルが格納されます。
+
+**機能管理** ワークスペースの **ER ラベル記憶域の高速化** 機能を有効にすることをお勧めします。 この機能により、ほとんどの場合、1 つの ER コンフィギュレーションで作業するときに 1 つの言語の ER ラベルが使用されるため、ネットワーク帯域幅の稼働状況とシステム全体のパフォーマンスが向上します。
+
+選択した記憶域スキーマを適用して、すべての ER コンフィギュレーションのラベルを現在の Finance インスタンスで保持するには、次の手順を実行します。
+
+1. **組織管理** > **定期処理** > **選択したラベルの保存スキーマをすべての ER コンフィギュレーションに適用** の順に移動します。
+2.  **OK** を選択します。
+
+
 ## <a name="additional-resources"></a>追加リソース
 
 - [電子申告の概要](general-electronic-reporting.md)
-- [電子申告機能](er-formula-language.md#functions)
+- [電子申告機能](er-formula-language.md#Functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

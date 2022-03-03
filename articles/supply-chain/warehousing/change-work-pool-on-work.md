@@ -2,26 +2,23 @@
 title: 作業での作業プールの変更
 description: このトピックでは、作業項目の [作業プールの変更] ボタンを使用して、既存の作業の作業プールを変更する方法について説明します。
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 344918b77334f9aca11f799f8c031047ad229ee0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 9255b7d2eaf030592207b557b3b6567a1a5bda98
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432001"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102866"
 ---
 # <a name="change-work-pool-on-work"></a>作業での作業プールの変更
 
@@ -31,12 +28,9 @@ ms.locfileid: "4432001"
 
 *作業中の作業プールを変更する* 機能を使用すると、作業項目のアクション ウィンドウに **作業プールの変更** ボタンが追加されます。 したがって、倉庫管理者は、既存の作業の作業プールを簡単に変更できます。 この機能により、倉庫の作業現場における変化に迅速に対応できるようになり、状況の変化に対する適応能力の改善や、作業を別の作業プールに移動する必要性が改善されるようになります。
 
-## <a name="turn-on-the-change-work-pool-on-work-feature"></a>作業中の作業プールの変更機能を有効にします
+## <a name="turn-the-change-work-pool-on-work-feature-on-or-off"></a>作業中の作業プールの変更機能をオン/オフする
 
-この機能の設定、または使用を開始する前に、システムで使用可能な状態になっていることを確認する必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *倉庫管理*
-- **機能の名称 :** *作業中の作業プールの変更*
+Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *作業中のワークプールを変更する* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>作業中の作業プールの変更機能を設定する
 
@@ -149,3 +143,6 @@ ms.locfileid: "4432001"
 > **作業プールの変更** ダイアログ ボックスが表示された際に、既定で **作業プール ID** フィールドが空白になる場合があります。 このフィールドが空白になっている場合に **OK** を選択して変更を適用すると、作業プールが作業から完全に削除されます。
 >
 > 作業プールを切り替えるだけでなく、この手順を使用して、作業プールがない作業項目に作業プールを追加したり、作業プールがある作業項目から作業プールを削除したりすることもできます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

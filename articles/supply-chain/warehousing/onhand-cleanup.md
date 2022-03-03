@@ -2,11 +2,9 @@
 title: 倉庫管理の手持在庫エントリ クリーンアップ ジョブ
 description: このトピックでは、関連する不要なレコードを識別および削除することによってシステムのパフォーマンスを向上させる、手持在庫エントリのクリーンアップ  ジョブについて説明します。
 author: perlynne
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -14,15 +12,17 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014486"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103866"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>倉庫管理の手持在庫エントリ クリーンアップ ジョブ
+
+[!include [banner](../includes/banner.md)]
 
 手持在庫の計算に使用されるクエリのパフォーマンスは、関連するテーブルのレコード数によって影響されます。 パフォーマンスを向上させる方法の 1 つとして、データベースで考慮する必要があるレコードの数を減らすことがあります。
 
@@ -58,7 +58,7 @@ ms.locfileid: "5014486"
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>最大実行時間の設定を有効にする
 
-規定では、**最大実行時間** 設定は使用できません。 この機能を使用する場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して、システムの関連機能を有効にする必要があります。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
+**最大実行時間** 設定は、*倉庫管理の手持エントリのクリーンアップ ジョブの最大実行時間* 機能が有効になっている場合にのみ使用できます。 Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースの *倉庫管理の手持エントリのクリーンアップ ジョブの最大実行時間* 機能を検索することで、この機能をオンまたはオフにできます。
 
-- **モジュール:** *倉庫管理*
-- **機能名:** *倉庫管理の手持在庫エントリ クリーンアップ ジョブの最大実行時間*
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

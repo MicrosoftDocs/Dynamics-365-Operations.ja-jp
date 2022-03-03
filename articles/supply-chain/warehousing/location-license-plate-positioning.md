@@ -2,26 +2,23 @@
 title: 場所ライセンス プレートの配置
 description: ライセンス プレートの場所の配置を使用すると、ライセンス プレートが複数パレットの場所 (たとえば、2つの深いパレットのラック配置を使用する場所など) を表示できます。
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432285"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102792"
 ---
 # <a name="location-license-plate-positioning"></a>場所ライセンス プレートの配置
 
@@ -33,12 +30,9 @@ ms.locfileid: "4432285"
 
 このトピックでは、機能を設定および使用する方法を示すシナリオを示します。
 
-## <a name="turn-on-the-location-license-plate-positioning-feature"></a>場所ライセンス プレートの配置機能を有効にする
+## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>場所のライセンス プレートの配置機能をオンまたはオフにする
 
-ライセンス プレートの場所の配置機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
-
-- **モジュール:** *倉庫管理*
-- **機能名 :** *場所ライセンス プレートの配置*
+このトピックで説明する機能を使用するには、システムの *場所のライセンス プレートの配置* 機能をオンにする必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *場所のライセンス プレートの配置* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="example-scenario"></a>シナリオ例
 
@@ -91,7 +85,7 @@ ms.locfileid: "4432285"
 1. **ライセンス プレート** を選択したままで、**テーブル結合の追加** を選択します。
 1. 表示されるテーブルの一覧で、**関係** 列の **場所ライセンス プレートの配置 (ライセンス プレート)** を選択します。 次に、**選択** を選択して、**場所ライセンス プレートの配置** を **在庫分析コード** テーブル結合に追加します。
 
-    ![テーブル結合](media/LpTableJoin.png "テーブル結合")
+    ![テーブル結合。](media/LpTableJoin.png "テーブル結合")
 
 1. **OK** を選択して 、更新された結合テーブルを確認し、クエリ エディターを閉じます。
 1. **場所ディレクティブ アクション** クイック タブで、**クエリの編集** を再度選択してクエリ エディターを開きます。
@@ -103,7 +97,7 @@ ms.locfileid: "4432285"
     - **フィールド :** *LP の位置*
     - **基準 :** *1*
 
-    ![新しい範囲](media/LpPositionCriteria.png "新しい範囲")
+    ![新しい範囲。](media/LpPositionCriteria.png "新しい範囲")
 
 1. **OK** を選択して変更を確認し、クエリ エディターを閉じます。
 
@@ -278,6 +272,9 @@ ms.locfileid: "4432285"
 1. **作業 ID のスキャン / ライセンス プレート ID** ページで、**ID** フィールドを選択して、販売明細行から作業 ID を入力します。
 1. このピッキング作業では、品目 *A0002* を場所 *01A01R1S2B* からピッキングするように指示されます。 この指示は、品目 *A0002* が その場所の位置 *1* のライセンス プレート上にあるために表示されます。
 
-    ![位置 1 の場所](media/LocationLicensePlatePositioning.png "位置 1 の場所")
+    ![位置 1 の場所。](media/LocationLicensePlatePositioning.png "位置 1 の場所")
 
 1. 場所に対して作成したライセンス プレートの ID を入力し、プロンプトに従って販売注文を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

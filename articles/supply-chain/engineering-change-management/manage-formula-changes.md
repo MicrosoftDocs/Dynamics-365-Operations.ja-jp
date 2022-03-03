@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c65f929120d2501fa3873880179a9b53ab79c60c73fd4d597fb6151b1c5bb2b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720399"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103047"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>フォーミュラとその成分の変更の管理
 
@@ -27,12 +27,9 @@ Microsoft Dynamics 365 Supply Chain Management のプロセス製造機能を使
 - **連産品と副産物:** フォーミュラ内の連産品と副産物の数量およびその他の情報を編集します。
 - **CW 品目:** CW 品目の変更を管理します。
 
-## <a name="turn-on-this-feature-in-your-system"></a>システムでこの機能を有効にする
+## <a name="turn-this-feature-on-or-off"></a>この機能のオン/オフの切り替え
 
-この機能を使用するには、次の設定手順を完了する必要があります。
-
-1. [エンジニアリング変更管理の概要](product-engineering-overview.md) の説明に従って、*エンジニアリング変更管理* および構成キーを有効にします。 このトピックで説明したように、**プロセス製造の変更管理** ライセンス キー (主要な **エンジニアリング変更管理** ライセンス キーの下に入れ子になった) も有効にしてください。
-1. [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *フォーミュラとその成分の変更の管理* 機能を有効にします。
+このトピックで説明する機能を使用するには、システムで *技術変更管理* と *酢式とその成分への変更を管理する* の両方をオンにする必要があります。 これらの機能のオン/オフの切り替え方法の詳細については、[エンジニアリング変更管理の概要](product-engineering-overview.md) を参照してください。
 
 ## <a name="feature-naming-conventions"></a>機能の名前付け規則
 

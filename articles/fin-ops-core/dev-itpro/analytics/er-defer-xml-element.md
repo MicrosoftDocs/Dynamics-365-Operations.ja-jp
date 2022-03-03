@@ -2,11 +2,9 @@
 title: ER 形式における XML 要素の実行の延期
 description: このトピックは、電子申告 (ER) 形式の XML 要素の実行を延期する方法について説明します。
 author: NickSelin
-manager: kfend
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 6dce3768c886403f789063d516e0e696fc829f81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b804e840b98321ee9e509ea483b360ec42d12880
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680713"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323718"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>ER 形式における XML 要素の実行の延期
 
@@ -30,7 +28,7 @@ ms.locfileid: "4680713"
 
 ## <a name="overview"></a>概要
 
-[電子申告](general-electronic-reporting.md) (ER) フレームワークのオペレーション デザイナーを使用して、XML 形式で送信ドキュメントを生成するために使用する ER ソリューションの [形式コンポーネント](general-electronic-reporting.md#FormatComponentOutbound) を [コンフィギュレーション](./tasks/er-format-configuration-2016-11.md) することができます。 コンフィギュレーションされた形式コンポーネントの階層構造は、さまざまなタイプの形式要素で構成されます。 これらの形式要素は、生成されたドキュメントに実行時に必要な情報を入力するために使用されます。 既定では、ER 形式の実行時に、形式要素は形式階層に表示されているのと同じ順序で、上から下に 1 つずつ実行されます。 ただし、デザイン時に、コンフィギュレーションされた形式コンポーネントのすべての XML 要素の実行順序を変更することができます。
+[電子申告 (ER)](general-electronic-reporting.md) フレームワークのオペレーション デザイナーを使用して、XML 形式で送信ドキュメントを生成するために使用する ER ソリューションの 形式コンポーネント を [構成](./tasks/er-format-configuration-2016-11.md) することができます。 コンフィギュレーションされた形式コンポーネントの階層構造は、さまざまなタイプの形式要素で構成されます。 これらの形式要素は、生成されたドキュメントに実行時に必要な情報を入力するために使用されます。 既定では、ER 形式の実行時に、形式要素は形式階層に表示されているのと同じ順序で、上から下に 1 つずつ実行されます。 ただし、デザイン時に、コンフィギュレーションされた形式コンポーネントのすべての XML 要素の実行順序を変更することができます。
 
 コンフィギュレーションされた形式の XML 形式要素に対して <a name="DeferredXmlElementExecution"></a> **遅延実行** オプションを有効にすることにより、その要素の実行を延期することができます。 この場合、親要素の他の要素すべてが実行されるまで、要素は実行されません。
 
@@ -46,7 +44,7 @@ ms.locfileid: "4680713"
 
 ## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>例: ER 形式の XML 要素の実行の延期
 
-次のステップは、システム管理者または電子申告機能コンサルタント [ロール](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) のユーザーが、実行順序が形式階層の順序とは異なる XML 要素を含む ER 形式をコンフィギュレーションする方法を説明します。
+次のステップは、システム管理者または電子申告機能コンサルタント [ロール](../sysadmin/tasks/assign-users-security-roles.md) のユーザーが、実行順序が形式階層の順序とは異なる XML 要素を含む ER 形式をコンフィギュレーションする方法を説明します。
 
 これらのステップは、Microsoft Dynamics 365 Finance の **USMF** 会社で実行できます。
 
@@ -61,14 +59,14 @@ ms.locfileid: "4680713"
 
 | コンテンツの説明            | ファイル名 |
 |--------------------------------|-----------|
-| ER データ モデル構成    | [遅延 elements.version.1.xml を知るためのモデル](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER モデル マッピング コンフィギュレーション | [遅延 element.version.1.1.xml を知るためのマッピング](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER データ モデル構成    | [遅延 elements.version.1.xml を知るためのモデル](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| ER モデル マッピング コンフィギュレーション | [遅延 element.version.1.1.xml を知るためのマッピング](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 開始する前に、サンプル ER ソリューションの次のコンフィギュレーションをローカル コンピューターにダウンロードして保存する必要もあります。
 
 | コンテンツの説明     | ファイル名 |
 |-------------------------|-----------|
-| ER フォーマット構成 | [遅延 XML elements.version.1.1.xml を知るための形式](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER フォーマット構成 | [遅延 XML elements.version.1.1.xml を知るための形式](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>サンプル ER のコンフィギュレーションのインポート
 
@@ -92,14 +90,14 @@ ms.locfileid: "4680713"
 6. コンフィギュレーション ツリーで、**遅延要素を知るためのモデル** を展開します。
 7. コンフィギュレーション ツリーでインポートされた ER コンフィギュレーションのリストを確認します。
 
-    ![コンフィギュレーション ページのインポートされた ER コンフィギュレーション](./media/ER-DeferredXml-Configurations.png)
+    ![コンフィギュレーション ページのインポートされた ER コンフィギュレーション。](./media/ER-DeferredXml-Configurations.png)
 
 ### <a name="activate-a-configuration-provider"></a>コンフィギュレーション プロバイダーの有効化
 
 1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. **ローカライズのコンフィギュレーション** ページの **コンフィギュレーション プロバイダー** セクションで、Litware, Inc. (`http://www.litware.com`) サンプル会社の [コンフィギュレーション プロバイダー](general-electronic-reporting.md#Provider) がリストに表示されていること、および有効としてマークされていることを確認します。 このコンフィギュレーション プロバイダーがリストに表示されない場合、またはアクティブとしてマークされていない場合、[コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](./tasks/er-configuration-provider-mark-it-active-2016-11.md) トピックの手順に従ってください。
 
-    ![ローカライズのコンフィギュレーション ページの Litware, Inc. サンプル会社](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
+    ![ローカライズのコンフィギュレーション ページの Litware, Inc. サンプル会社。](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 
 ### <a name="review-the-imported-model-mapping"></a>インポートされたモデル マッピングを確認する
 
@@ -121,7 +119,7 @@ ms.locfileid: "4680713"
     - **グループ化** された *グループ化* タイプのデータ ソースは、フィルター処理された **フィルター処理** データ ソースの税トランザクションをグループ化するようコンフィギュレーションされます。
     - **グループ化** されたデータ ソースの **TotalSum** 集計フィールドは、そのデータ ソースでフィルター処理されたすべての税トランザクションに対して、**フィルター処理** されたデータ ソースの **\$TaxAmount** フィールドの値を集計するようにコンフィギュレーションされています。
 
-        ![「GroupBy」パラメーターの編集ページの TotalSum 集計フィールド](./media/ER-DeferredXml-GroupByParameters.png)
+        ![「GroupBy」パラメーターの編集ページの TotalSum 集計フィールド。](./media/ER-DeferredXml-GroupByParameters.png)
 
 9. コンフィギュレーションされたデータ ソースをデータ モデルにバインドする方法、および ER 形式で利用可能になるようにアクセス データを公開する方法を確認します。
 
@@ -129,7 +127,7 @@ ms.locfileid: "4680713"
     - **フィルター処理** されたデータ ソースの **\$TaxAmount** フィールドは、データ モデルの **Data.List.Value** フィールドにバインドされます。
     - **グループ化** されたデータ ソースの **TotalSum** フィールドは、データ モデルの **Data.Summary.Total** フィールドにバインドされます。
 
-    ![モデル マッピング デザイナーのページ](./media/ER-DeferredXml-ModelMapping.png)
+    ![モデル マッピング デザイナーのページ。](./media/ER-DeferredXml-ModelMapping.png)
 
 10. **モデル マッピング デザイナー** および **モデル マッピング** のページを閉じます。
 
@@ -145,7 +143,7 @@ ms.locfileid: "4680713"
     - **レポート\\メッセージ\\レコード** の XML 要素は、1 つのレコード ノードで送信ドキュメントを入力するようにコンフィギュレーションされ、1 つの税トランザクションの詳細を表示します。
     - **レポート\\メッセージ\\集計** の XML 要素は、1 つの集計ノードで送信ドキュメントを入力するようにコンフィギュレーションされ、処理された税トランザクションの税額の合計が含まれます。
 
-    ![形式デザイナー ページのメッセージの XML 要素と入れ子になった XML 要素](./media/ER-DeferredXml-Format.png)
+    ![形式デザイナー ページのメッセージの XML 要素と入れ子になった XML 要素。](./media/ER-DeferredXml-Format.png)
 
 5. **マッピング** タブで、次の詳細を確認します。
 
@@ -159,14 +157,14 @@ ms.locfileid: "4680713"
     - **TotalTaxAmount** 属性は **model.Data.Summary.Total** にバインドされ、処理された税トランザクションの税額合計を生成します。
     - **ExecutionDateTime** 属性は、集計ノードが追加された時の日時 (ミリ秒を含む) を生成します。
 
-    ![フォーマット デザイナー ページのマッピング タブ](./media/ER-DeferredXml-Format2.png)
+    ![フォーマット デザイナー ページのマッピング タブ。](./media/ER-DeferredXml-Format2.png)
 
 ### <a name="run-the-imported-format"></a>インポートされた ER 形式の実行
 
 1. **フォーマット デザイナー** ページで、**実行** を選択します。
 2. Web ブラウザーからファイルをダウンロードし、確認のために開きます。
 
-    ![ダウンロードされたファイル](./media/ER-DeferredXml-Run.png)
+    ![インポートされた形式のダウンロード済ファイル。](./media/ER-DeferredXml-Run.png)
 
 集計ノードには、処理されたトランザクションの税額の合計が示されます。 形式は、合計を返すようバインドされている **model.Data.Summary.Total** を使用するようにコンフィギュレーションされていて、合計はモデル マッピング内の *GroupBy* タイプで **グループ化** されたデータ ソースの **TotalSum** の集計を呼び出して計算されます。 この集計を計算するために、モデル マッピングは、**フィルター処理** されるデータ ソースで選択されたすべてのトランザクションを反復処理します。 集計ノードと最後のレコード ノードの実行時間を比較することにより、合計の計算に 12 ミリ秒 (ms) かかったことを特定できます。 最初と最後のレコード ノードの実行時間を比較することにより、すべてのレコード ノードの生成に 9 ミリ秒 (ms) かかったことを特定できます。 したがって、合計 21 ミリ秒必要でした。
 
@@ -180,25 +178,25 @@ ms.locfileid: "4680713"
 4. **収集したデータ キー名** の式を `WsColumn` としてコンフィギュレーションします。
 5. **収集したデータ キーの値** の式を `WsRow` としてコンフィギュレーションします。
 
-    ![形式デザイナー ページのレコード XML 要素](./media/ER-DeferredXml-Format3.png)
+    ![形式デザイナー ページのレコード XML 要素。](./media/ER-DeferredXml-Format3.png)
 
 6. **レポート\\メッセージ\\レコード\\TaxAmount** 属性を選択します。
 7. **収集したデータ キー名** の式を `SummingAmountKey` としてコンフィギュレーションします。
 
-    ![形式デザイナー ページの TaxAmount 属性](./media/ER-DeferredXml-Format4.png)
+    ![形式デザイナー ページの TaxAmount 属性。](./media/ER-DeferredXml-Format4.png)
 
     セル A1 の値が処理されたすべての税トランザクションからの税額の値で追記されている、この仮想ワークシートのフルフィルメントの設定を考慮することができます。
 
 8. **レポート\\メッセージ\\レコード\\RunningTotal** 属性を選択し、**フォーミュラの編集** を選択します。
 9. 組み込みの [SUMIF](er-functions-datacollection-sumif.md) ER 関数を使用して `SUMIF(SummingAmountKey, WsColumn, WsRow)` 式をコンフィギュレーションし、**保存** を選択します。
 
-    ![SUMIF 式](./media/ER-DeferredXml-FormulaDesigner.png)
+    ![SUMIF 式。](./media/ER-DeferredXml-FormulaDesigner.png)
 
 10. **フォーミュラ デザイナー** ページを閉じます。
 11. **保存** を選択して、**実行** を選択します。
 12. Web ブラウザーからファイルをダウンロードし、確認します。
 
-    ![ダウンロードされたファイル](./media/ER-DeferredXml-Run1.png)
+    ![累計で生成された税額のリスト。](./media/ER-DeferredXml-Run1.png)
 
     最後のレコード ノードには、生成された出力をデータ ソースとして使用することにより、処理されたすべてのトランザクションに対して計算される税額の累計が含まれます。 このデータ ソースは、レポートの先頭から開始し、最後の税トランザクションまで続行します。 集計ノードには、モデル マッピングにおいて *GroupBy* タイプのデータ ソースを使用して計算され、処理されたすべてのトランザクションの税額の合計が含まれています。 これらの値は等しくなります。 したがって、**GroupBy** の代わりに出力ベースの合計を使用できます。 最初のノードと集計ノードの実行時間を比較することにより、すべてのレコード ノードの生成および合計に 11 ミリ秒 (ms) かかったことを特定できます。 したがって、レコード ノードおよび税額の合計の生成が懸念されるかぎり、変更された形式は元の形式よりも約 2 倍速くなります。
 
@@ -207,7 +205,7 @@ ms.locfileid: "4680713"
 15. **保存** を選択して、**実行** を選択します。
 16. Web ブラウザーからファイルをダウンロードし、確認します。
 
-    ![ダウンロードされたファイル](./media/ER-DeferredXml-Run2.png)
+    ![編集されたフォーミュラを使用して生成された税額のリスト。](./media/ER-DeferredXml-Run2.png)
 
     最後のレコード ノードの税額累計は、集計ノードの合計値と等しくなるようになりました。
 
@@ -220,7 +218,7 @@ ms.locfileid: "4680713"
 3. **保存** を選択して、**実行** を選択します。
 4. Web ブラウザーからファイルをダウンロードし、確認します。
 
-    ![ダウンロードされたファイル](./media/ER-DeferredXml-Run3.png)
+    ![レポート ヘッダーの税額のダウンロード済ファイル。](./media/ER-DeferredXml-Run3.png)
 
     この合計が生成された出力に基づいて計算されるようになったので、集計ノードの税額の合計は 0 (ゼロ) と等しくなるようになりました。 最初のレコード ノードが生成される時、生成された出力にはまだトランザクションの詳細のあるレコード ノードは含まれていません。 この形式をコンフィギュレーションして、すべての税トランザクションに対して **レポート\\メッセージ\\レコード** の要素が実行されるまで、**レポート\\メッセージ\\集計** の要素の実行を延期させることができます。
 
@@ -229,12 +227,12 @@ ms.locfileid: "4680713"
 1. **形式** タブの **形式デザイナー** ページで、**レポート\\メッセージ\\集計** XML 要素を選択します。
 2. **遅延実行** オプションを **はい** に設定します。
 
-    ![形式デザイナー ページの集計 XML 要素の遅延実行オプション](./media/ER-DeferredXml-Format5.png)
+    ![形式デザイナー ページの集計 XML 要素の遅延実行オプション。](./media/ER-DeferredXml-Format5.png)
 
 3. **保存** を選択して、**実行** を選択します。
 4. Web ブラウザーからファイルをダウンロードし、確認します。
 
-    ![ダウンロードされたファイル](./media/ER-DeferredXml-Run4.png)
+    ![遅延実行のダウンロード済ファイル。](./media/ER-DeferredXml-Run4.png)
 
     **レポート\\メッセージ\\集計** の要素は、その親要素である **レポート\\メッセージ** の下に入れ子になっている他のすべての品目が実行された後に実行されるようになりました。 したがって、**レポート\\メッセージ\\レコード** の要素が **model.Data.List** データ ソースのすべての税トランザクションに実行された後に実行されます。 最初と最後のレコード ノードの実行時間、およびヘッダーと集計ノードの実行時間は、この事実を示しています。
 
@@ -243,3 +241,6 @@ ms.locfileid: "4680713"
 - [棚卸および集計を行うための形式のコンフィギュレーション](./tasks/er-format-counting-summing-1.md)
 - [パフォーマンス上の問題をトラブルシューティングするため ER 形式の追跡実行](trace-execution-er-troubleshoot-perf.md)
 - [ER 形式におけるシーケンス要素の実行の延期](er-defer-sequence-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

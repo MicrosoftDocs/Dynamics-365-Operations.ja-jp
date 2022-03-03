@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 560b62183f9c0c45c872998373a90dc9dc0ebbb3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d06f05ca27ed8fe58a9a24fcde8c0082662b866
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571716"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103115"
 ---
 # <a name="category-requests-from-vendors"></a>仕入先からのカテゴリ要求
 
@@ -26,11 +26,11 @@ ms.locfileid: "7571716"
 
 カテゴリ要求は、**仕入先情報** ワークスペースの仕入先によって開始されます。 その後、確認および承認のためにエージェンシーに提出されます。 承認されたカテゴリは、仕入先の勘定の調達カテゴリの一覧に追加されます。
 
-## <a name="turn-on-the-feature-in-your-system"></a>システムで機能を有効化する
+## <a name="turn-the-category-requests-from-vendors-feature-on-or-off"></a>ベンダーからのカテゴリー リクエスト機能のオン/オフ
 
-このトピックで説明する機能がシステムにまだ含されていない場合、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)に移動し、*仕入先コラボレーションを通して仕入先が調達カテゴリを適用するのを許可* 機能を有効にします。
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *ベンダー コラボレーションによる調達カテゴリーの申請を可能にする* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
-この機能を有効にした後も、調達カテゴリを仕入先の勘定に手動で追加することができます。 詳細については、[特定の調達カテゴリに対する仕入先の承認](tasks/approve-vendors-specific-procurement-categories.md)を参照してください。
+この機能を有効にした後であっても、調達カテゴリを仕入先の勘定に手動で追加することができます。 詳細については、[特定の調達カテゴリに対する仕入先の承認](tasks/approve-vendors-specific-procurement-categories.md)を参照してください。
 
 ## <a name="vendor-collaboration-requirements"></a>仕入先コラボレーションの要件
 

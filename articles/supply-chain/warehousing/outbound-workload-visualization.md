@@ -2,24 +2,22 @@
 title: 出庫ワークロードの視覚化
 description: このトピックは、ワークロードの視覚化に関する情報を提供します。 この機能により、倉庫管理者と監修者は、現在の作業の進捗状況と残っている金額を監視するために使用できるカスタム ワークロード グラフを作成できるようになります。 倉庫管理者は、複数のビューを作成し、必要に応じて自動更新を設定できます。
 author: Mirzaab
-manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: db6ceb40279e53e9c4751a7ceb3db895e889a7c0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965555"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102891"
 ---
 # <a name="outbound-workload-visualization"></a>出庫ワークロードの視覚化
 
@@ -29,12 +27,9 @@ ms.locfileid: "4965555"
 
 この機能は、集荷作業の進行状況を追跡するために使用できます。 この機能は労働管理に統合されており、労務管理が設定されている場合は、表示されている集荷作業の残りの時間数を計算して表示することができます (フィルター処理)。
 
-## <a name="turn-on-the-outbound-workload-visualization-feature"></a>ワークロードの視覚化機能を有効にする
+## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>出庫ワークロードの視覚化機能をオンまたはオフにする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *ワークロードの視覚化機能を有効にする*
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *出庫ワークロードの視覚化* 機能を検索して、この機能をオンまたはオフにできます。
 
 ## <a name="set-up-outbound-workload-visualizations"></a>出庫ワークロードの視覚化の設定
 
@@ -62,7 +57,7 @@ ms.locfileid: "4965555"
     - **含める日数** – グラフを生成する過去の日数を入力します。
     - **作業指示書タイプ** – フィルター処理する出庫作業指示書タイプを選択します。
 
-    ![フィルターの構成ページ](media/work-viz-filters-1.png "フィルターの構成ページ")
+    ![フィルターの構成ページ。](media/work-viz-filters-1.png "フィルターの構成ページ")
 
 1. **フィルターの構成** ページを閉じて、**出庫ワークロードの視覚化** ページに戻ります。
 
@@ -72,11 +67,11 @@ ms.locfileid: "4965555"
     - **最終更新日時** – このフィールドは、グラフの情報が最後に更新された日時を表示します。
     - **見積済/実際の時間** – 労働基準がシステムで設定されている場合、このオプションを *はい* に設定すると、計算された集荷時間の累計がグラフの各列の上部に表示されます。 労働基準を使用していない場合、このオプションは使用できません。
 
-    ![視覚化の例](media/work-viz-chart.png "視覚化の例")
+    ![視覚化の例。](media/work-viz-chart.png "視覚化の例")
 
 1. グラフ内の任意のバーを選択して、関連する作業明細行の詳細を表示します。
 
-    ![作業ラインの詳細](media/work-viz-work-details.png "作業ラインの詳細")
+    ![作業ラインの詳細。](media/work-viz-work-details.png "作業ラインの詳細")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>例: ゾーンの出庫ワークロードの視覚化
 
@@ -94,6 +89,9 @@ ms.locfileid: "4965555"
 
 以下の図は、結果としてのグラフの一例を表しています。
 
-![ゾーンと作業状態の視覚化](media/work-viz-chart.png "ゾーンと作業状態の視覚化")
+![ゾーンと作業状態の視覚化。](media/work-viz-chart.png "ゾーンと作業状態の視覚化")
 
 このグラフには、**FLOOR** および **BULK** という名前の 2 つのゾーンと **空白** のゾーンが示されています。 **空白** のゾーンは、ゾーンのメンバーではないすべての作業明細行を表します。 グラフには、関係のないすべてのフィルター処理されたデータが常に **空白** として表示され、できるだけ視覚化できるようになっています。 **FLOOR** ゾーンでは、グラフに 3 つの終了した明細行と 4 つの未処理の明細行が表示されています。 **BULK** ゾーンでは、グラフに 4 つの終了した明細行と 1 つの未処理の明細行、24 のキャンセルされた明細行が表示されています。 最後に、ゾーンに含まれていない 8 つの終了した明細行がグラフに表示されるため、**空白** として一覧されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

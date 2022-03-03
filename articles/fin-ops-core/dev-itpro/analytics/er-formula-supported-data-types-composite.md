@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b97b2f7091883e445b2e8474ca140217bda004b0c4d8988411b9ed4209e254
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758267"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323668"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>電子レポートの式でサポートされる複合データ型
 
@@ -27,7 +27,7 @@ ms.locfileid: "6758267"
 
 データ型: *クラス* は、パブリック アプリケーション クラスを参照します。 ERでは、参照されるクラスのすべてのパブリック メソッドに対して個別のフィールドを含む [*レコード*](#record) として表現されます。 メソッドの呼び出しがパラメータ化されている場合は、メソッドを呼び出す構成がされている ER 式の中で、適切なタイプの必要な引数も指定する必要があります。
 
-ER [マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components) および [フォーマット](general-electronic-reporting.md#FormatComponentOutbound) のコンポーネントでは、データソースとして提示され、*クラス* タイプの値を返す **クラス** データソースを追加することができます。 このデータ ソースは、実行時に呼び出すクラスのパブリック メソッドを公開しています。
+ER マッピング および フォーマット のコンポーネントでは、データソースとして提示され、*クラス* タイプの値を返す **クラス** データソースを追加することができます。 このデータ ソースは、実行時に呼び出すクラスのパブリック メソッドを公開しています。
 
 > [!NOTE]
 > 値を返すメソッドのみを ER 式から呼び出できます。

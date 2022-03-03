@@ -2,28 +2,25 @@
 title: 追加の場所ゾーン
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management に追加された新しい場所ゾーンの概要を示します。
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationBuild, WHSZone
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: dd9e97cabe5e3d3bdc261a7280930b73eb8e1419
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432329"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103841"
 ---
 # <a name="additional-location-zones"></a>追加の場所ゾーン
 
@@ -33,12 +30,9 @@ Microsoft Dynamics 365 Supply Chain Management では、3 つの新しいゾー�
 
 ゾーン フィールドを使用するための追加の設定は必要ありません。
 
-## <a name="turn-on-the-additional-location-zone-feature"></a>追加の場所ゾーン機能を有効にする
+## <a name="turn-the-additional-location-zone-feature-on-or-off"></a>追加の場所ゾーン機能のオン/オフ
 
-*追加の場所ゾーン* 機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *追加の場所ゾーン*
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *追加ロケーション ゾーン* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="use-location-zones"></a>場所ゾーンの使用
 
@@ -58,3 +52,6 @@ Microsoft Dynamics 365 Supply Chain Management では、3 つの新しいゾー�
 7. **作成** を選択します。
 8. 新しい場所が追加されたことを示すメッセージが表示されます。 メッセージを表示するには、**メッセージを表示する** のボタンを選択します。
 9. **倉庫管理 \> 設定 \> 倉庫 \> 場所** に移動します。 新しい場所が一覧に表示され、すべてのゾーン フィールド (既存のゾーン フィールドと新しい追加ゾーン フィールド) が使用可能になります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

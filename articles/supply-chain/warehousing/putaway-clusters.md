@@ -2,25 +2,22 @@
 title: プットアウェイ クラスター
 description: プットアウェイ クラスターには、複数のライセンス プレートを同時に選択し、異なる場所にある複数のライセンス プレートを使用する方法が用意されています。 プットアウェイ クラスターは、ライセンス プレートが在庫のパレット数が少ない小売業の場合に非常に役立ちます。
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512333"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103666"
 ---
 # <a name="putaway-clusters"></a>プットアウェイ クラスター
 
@@ -28,12 +25,9 @@ ms.locfileid: "4512333"
 
 プットアウェイ クラスターには、複数のライセンス プレートを同時に選択し、異なる場所にある複数のライセンス プレートを使用する方法が用意されています。 このプロセスは、*ミルク ラン* と呼ばれます。 プットアウェイ クラスターは、ライセンス プレートが在庫のパレット数が少ない小売業の場合に非常に役立ちます。 
 
-## <a name="turn-on-the-cluster-putaway-feature"></a>クラスター プットアウェイ機能をオンにする
+## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>クラスター プットアウェイ機能をオンまたはオフにする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *クラスター プットアウェイ機能*
+このトピックで説明する機能を使用するには、システムの *クラスター プットアウェイ機能* を有効にする必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *クラスター プットアウェイ機能* を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="setup-for-the-example-scenario"></a>サンプル シナリオで設定する
 
@@ -231,7 +225,7 @@ ms.locfileid: "4512333"
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>クラスターへの在庫の入庫と並べ替え
 
-1. 倉庫 *61* を設定したユーザーとして、倉庫アプリにログインします。
+1. 倉庫 *61* が設定されたユーザーとして、倉庫管理モバイル アプリにログインします。
 1. メイン メニューで、**入庫** を選択します。
 1. **入庫** メニューで、**クラスターの入庫と並べ替え** を選択します。
 1. **Ponum** フィールドに発注書番号を入力します。
@@ -273,7 +267,7 @@ ms.locfileid: "4512333"
 
 #### <a name="put-the-cluster-away"></a>クラスター プットアウェイ
 
-1. 倉庫 *61* を設定したユーザーとして、倉庫アプリにログインします。
+1. 倉庫 *61* が設定されたユーザーとして、倉庫管理モバイル アプリにログインします。
 1. メイン メニューで、**入庫** を選択します。
 1. **入庫** メニューで、**クラスター プットアウェイ** を選択します。
 1. **クラスター ID** を選択し、以前にクローズしたクラスターに対して入力したクラスター ID を入力します。
@@ -287,7 +281,7 @@ ms.locfileid: "4512333"
 
     この手順を上書きまたは実行するための標準のオプションがあります。
 
-    ![クラスター プットアウェイ: プット ページ](media/Cluster_putaway-Put.png "クラスター プットアウェイ: プット ページ")
+    ![クラスター プットアウェイ: プット ページ。](media/Cluster_putaway-Put.png "クラスター プットアウェイ: プット ページ")
 
 1. **OK** を選択して、クラスター プットアウェイを確認します。
 
@@ -296,3 +290,6 @@ ms.locfileid: "4512333"
 ## <a name="notes-and-tips"></a>メモとヒント
 
 クラスター ID がネストされたパレットの親ライセンス プレートとなる場合は、そのクラスター ID がスキャンされるときにプット場所が自動的に指定されます。 ライセンス プレートの生成が手動に設定されている場合でも、それ以上のライセンス プレートをスキャンする必要はありません。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

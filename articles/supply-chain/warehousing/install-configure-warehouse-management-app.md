@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069382"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103416"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリケーションのインストールと接続
 
@@ -39,12 +39,9 @@ ms.locfileid: "8069382"
 - Windows 10 (Universal Windows Platform \[UWP\]) 2018 年 10 月更新 1809 (ビルド 10.0.17763) 以降
 - Android 4.4 またはそれ以降
 
-## <a name="turn-on-the-feature"></a>機能をオンにする
+## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Supply Chain Management で Warehouse Management mobile app の機能をオン/オフする
 
-このアプリを使用する前に、関連機能をシステム上で有効化する必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル*
+Warehouse Management mobile app を使用するには、ご利用のシステムで *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* 機能がオンになっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリケーションを取得する
 

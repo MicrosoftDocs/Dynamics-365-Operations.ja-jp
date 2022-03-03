@@ -2,39 +2,33 @@
 title: 倉庫アプリ イベント
 description: このトピックでは、倉庫アプリ イベントのメッセージをバッチ ジョブの一部として処理するために使用される、倉庫アプリのイベント処理について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 210008c4a1366773f465c59b38eca30f11f0b38c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c92bf179006d668f8673e9abc3419a10e644184
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431824"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103266"
 ---
 # <a name="warehouse-app-event-processing"></a>倉庫アプリのイベント処理
 
 [!include [banner](../includes/banner.md)]
 
-Supply Chain Management で実行されるバッチ ジョブでは、キューのデータを使用して、倉庫アプリによって発行されたイベントを処理し、必要に応じて通知されたイベントに対応することができます。 この機能は、アプリを使用しているユーザーが実行する特定のタイプのアクションに応じて、関連するイベントをキューに追加します。 たとえば、**倉庫アプリから作成および処理される移動オーダー** 機能を使用する場合は、システムで **倉庫アプリのイベント処理** バッチ ジョブを実行しているときに、移動オーダー ヘッダーと明細行がバック エンドで作成および更新されます。
+Supply Chain Management で実行されるバッチ ジョブでは、キューのデータを使用して、倉庫管理モバイル アプリによって発行されたイベントを処理し、必要に応じて通知されたイベントに対応することができます。 この機能は、アプリを使用しているユーザーが実行する特定のタイプのアクションに応じて、関連するイベントをキューに追加します。 たとえば、*倉庫アプリから作成および処理される移動オーダー* 機能を使用する場合は、システムで **倉庫アプリのイベント処理** バッチ ジョブを実行しているときに、移動オーダー ヘッダーと明細行がバック エンドで作成および更新されます。
 
-## <a name="enable-the-process-warehouse-app-events-feature"></a>倉庫アプリのイベント処理機能を有効にする
+## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>倉庫アプリのイベント処理機能をオンまたはオフにする
 
-この機能を使用する前に、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページを使用して、機能状態を確認し、必要に応じてそれを有効にすることができます。 倉庫アプリのイベント処理機能は次のように一覧表示されます。
-
-- **モジュール** - 倉庫管理
-- **機能名** - 倉庫アプリのイベント処理
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *倉庫アプリ イベントの処理* 機能を検索して、この機能をオンまたはオフにできます。
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>倉庫アプリのイベントを処理するためのバッチ ジョブを設定する
 
@@ -51,7 +45,7 @@ Supply Chain Management で実行されるバッチ ジョブでは、キュー�
 
 ## <a name="query-warehouse-app-events"></a>倉庫アプリ イベントのクエリ
 
-倉庫アプリによって生成されたイベント キューとイベント メッセージを表示するには、**倉庫管理 \> 照会およびレポート \> モバイル デバイスのログ \> 倉庫アプリのイベント** の順に移動します。
+倉庫管理アプリによって生成されたイベント キューとイベント メッセージを表示するには、**倉庫管理 \> 照会およびレポート \> モバイル デバイスのログ \> 倉庫アプリのイベント** の順に移動します。
 
 ## <a name="the-standard-event-queue-process"></a>標準のイベント キュー プロセス
 
@@ -78,3 +72,6 @@ Supply Chain Management で実行されるバッチ ジョブでは、キュー�
 1. 該当するすべてのメッセージがリセットされるまで作業を続行します。
 
 また、**倉庫アプリ イベントのメッセージ** ツールバーの **削除** オプションを使用して、**失敗** したイベント メッセージを削除することもできます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

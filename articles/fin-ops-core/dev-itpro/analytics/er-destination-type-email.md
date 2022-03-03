@@ -1,12 +1,10 @@
 ---
 title: ER 電子メール送信先のタイプ
-description: このトピックでは、送信ドキュメントを生成するように構成された電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対して、電子メールの送信先を構成する方法について説明します。
+description: このトピックでは、電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対して電子メール送信先を構成する方法について説明します。
 author: NickSelin
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690129"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324011"
 ---
 # <a name="email-er-destination-type"></a>ER 電子メール送信先のタイプ
 
@@ -44,28 +42,59 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 
 1 つの ER 形式構成に対して、複数のコンポーネント グループを構成できます。 このようにして、コンポーネントのグループごとに電子メールの送信先を構成し、コンポーネントごとに電子メールの送信先を構成できます。
 
+## <a name="enable-an-email-destination"></a>電子メール送信先の有効化
+
+1 つ以上の出力ファイルを電子メールで送信するには、次の手順に従います。
+
+1. **電子申告の送信先** ページの **ファイルの送信先** クイックタブで、グリッド内のコンポーネントまたはコンポーネントのグループを選択します。
+2. **設定** を選択し、表示される **送信先設定** ダイアログ ボックスの **電子メール** タブで、**有効** オプションを **はい** に設定します。
+
+[![電子メールの送信先に対して有効オプションをはいに設定する。](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+
 ## <a name="configure-an-email-destination"></a>電子メール送信先の構成
 
-出力ファイルまたは複数の出力ファイルを電子メールで送信するには、**電子申告の送信先** ページの **ファイルの送信先** クイック タブで、グリッド内のコンポーネントまたはコンポーネントのグループを選択し、**設定** を選択します。 表示される **送信先設定** ダイアログ ボックスの **電子メール** タブで、**有効** オプションを **はい** に設定します。 電子メールの受信者を指定して、電子メール メッセージの件名および本文を編集できます。 電子メールの件名および本文の定数のテキストを設定したり、ER [フォーミュラ](er-formula-language.md) を使用して、電子メールのテキストを動的に作成したりできます。
+### <a name="email-content"></a>電子メールの内容
 
-2 つの方法で ER の電子メール アドレスを構成できます。 構成は、印刷管理機能が完了するのと同じ方法で完了させることも、またフォーミュラでER 構成への直接参照を使用してメール アドレスを解決することもできます。
+電子メール メッセージの件名および本文を編集できます。
 
-[![電子メールの送信先に対して有効オプションを "はい" に設定する](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+**件名** フィールドに、実行時に生成される電子メール メッセージの件名フィールドに表示されるメールの件名のテキストを入力します。 **本文** フィールドに、電子メール メッセージの本文フィールドに表示されるメールの本文のテキストを入力します。 電子メールの件名および本文の定型文を設定したり、ER [フォーミュラ](er-formula-language.md) を使用して実行時に電子メールのテキストを動的に作成したりできます。 構成済みのフォーミュラは、[文字列](er-formula-supported-data-types-primitive.md#string) 型の値を返す必要があります。
+
+電子メールの本文は、電子メール クライアントに応じてテキスト形式または HTML 形式で構成されます。 HTML およびインライン カスケードスタイルシート (CSS) で使用できる任意のレイアウト、スタイル、ブランディングを使用できます。
+
+> [!NOTE]
+> 電子メール クライアントにはレイアウトやスタイルの制限があり、メッセージ本文に使用するHTMLや CSS の調整が必要となる場合があります。 人気の高い電子メール クライアントによってサポートされている HTML を作成するためのベスト プラクティスについて理解しておくことをお勧めします。
+>
+> 本文の形式に応じて、正しいエンコードを使用してキャリッジ リターンを実装します。 詳細については、[文字列](er-formula-supported-data-types-primitive.md#string) データ型の説明を参照してください。
+
+### <a name="email-addresses"></a>電子メール アドレス
+
+そこで、電子メールの送信者と受信者を指定できます。 既定では、現在のユーザーに代わって電子メールが送信されます。 別の電子メールの送信者を指定するには、**送信者** フィールドを構成する必要があります。
+
+> [!NOTE]
+> 電子メールの出力先が構成されている場合は、`ERFormatDestinationSenderEmailConfigure` セキュリティ特権を持つユーザーだけが **送信者** フィールドを表示し、**ER 形式の出力先に対して送信者の電子メール アドレスを構成します**。
+>
+> 電子メールの宛先が [実行時](electronic-reporting-destinations.md#security-considerations)に変更のために提供される場合、**差出人** フィールドは、`ERFormatDestinationSenderEmailMaintain` セキュリティ特権を持つユーザーにのみ表示されます。**ER 形式の宛先の送信者の電子メール アドレスを維持します**。
+>
+> **差出人** フィールドが現在のユーザー以外のメール アドレスを使用するように構成されている場合は、**送信者** または **代理送信** のいずれかのアクセス許可を事前に正しく[設定](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group)する必要があります。 それ以外の場合は、実行時に次の例外がスローされます。「\<current user account\> アカウントから \<from email account\> として電子メールを送信できません。\<from email account\> からの「送信」権限を確認してください。」
+
+**送信元** フィールドで複数のメール アドレスを返す場合に使用できます。 この場合、リストの最初のアドレスが電子メールの送信者アドレスとして使用されます。
+
+電子メールの受信者を指定するには、**宛先** フィールドと **CC** (オプション) フィールドを構成する必要があります。
+
+2 つの方法で ER の電子メール アドレスを構成できます。 構成は、印刷管理機能と同じ方法で完了することができます。または、フォーミュラで ER 構成への直接参照を使用してメール アドレスを解決することもできます。
 
 ## <a name="email-address-types"></a>電子メール アドレス タイプ
 
-**送信先設定** ダイアログ ボックスの **To** フィールドまたは **Cc** フィールドの横にある **編集** を選択すると、**電子メールの送信先** ダイアログ ボックスが表示されます。 **追加** を選択して、使用するメール アドレスのタイプを選択します。 現在、次の 2 つのタイプがサポートされています: **印刷管理メール** および **構成メール**。
+**宛先設定** ダイアログ ボックスの **差出人**、**宛先**、または **CC** フィールドの横にある **編集** を選択すると、適切な **メールの差出人**、**メールの宛先**、または **メールの CC** ダイアログ ボックスが表示されます。 そこで、電子メールの送信者と受信者を構成できます。 **追加** を選択して、使用するメール アドレスのタイプを選択します。 現在、次の 2 つのタイプがサポートされています: **印刷管理メール** および **構成メール**。
 
-[![メール アドレスのタイプの選択](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![メール アドレスのタイプの選択。](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>管理電子メールの印刷
 
-メール アドレス タイプとして **印刷管理メール** を選択した場合は、次のフィールドを設定して、**電子メールの送信先** ダイアログ ボックスに固定のメール アドレスを入力できます。
+メール アドレス タイプとして **印刷管理メール** を選択した場合は、次のフィールドを設定して、**メールの差出人**、**メールの宛先** または **メールの CC** ダイアログ ボックスに固定のメール アドレスを入力できます。
 
 - **電子メールの送信元** フィールドで、**なし** を選択します。
 - **";" で区切られた追加のメール アドレス** に、固定のメール アドレスを入力します。
-
-![固定のメール アドレスの構成](./media/er_destinations-emailfixedaddress.png)
 
 または、送信ドキュメントを生成する関係者の連絡先の詳細からメール アドレスを取得することもできます。 固定していないメール アドレスを使用するには、**電子メールの送信元** フィールドで、ファイルの送信先となる関係者の [ロール](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) を選択します。 サポートされているロールは、次のとおりです:
 
@@ -78,6 +107,7 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 - 申請者
 - 見込み仕入先
 - 不許可仕入先
+- 個法
 
 たとえば、仕入先支払の処理に使用される ER 形式の電子メールの送信先を構成するには、**仕入先** ロールを選択します。
 
@@ -88,11 +118,9 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 
 **フォーミュラ デザイナー** ページの **フォーミュラ** フィールドに、サポートされているロールへのドキュメント固有の参照を入力します。 参照を入力する代わりに、**データ ソース** ペインで、構成されたロールのアカウントを表すデータ ソース ノードを検索して選択し、**データ ソースの追加** を選択して、フォーミュラを更新します。 たとえば、仕入先の支払処理に使用する **ISO 20022 の口座振替** 構成の電子メールの送信先を構成する場合、仕入先アカウントを表すノードは `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID` です。
 
-![電子メールの送信元アカウントの構成](./media/er_destinations-emaildefineaddresssource.gif)
+![電子メールの送信元アカウントの構成。](./media/er_destinations-emaildefineaddresssource.gif)
 
 構成されたロールのアカウント番号が、Microsoft Dynamics 365 Finance のインスタンス全体に対して一意である場合、**電子メールの送信先** ダイアログ ボックスの **電子メールの送信元の会社** フィールドは、空白のままにできます。
-
-![電子メールの送信元が空白の会社フィールド](./media/er_destinations-emaildefineaddresssourceformula.png)
 
 または、[グローバルアドレス帳](../../fin-ops/organization-administration/overview-global-address-book.md) のさまざまな関係者が、異なる会社 ([法人](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) に登録されているために、すべて同じアカウント番号を使用して、構成されたロールを満たしている場合もあります。 この場合、構成されたロールのアカウント番号は、Finance インスタンス全体で一意ではありません。 したがって、明示的に関係者を選択する場合は、アカウント番号のみを指定することはできません。 また、構成されたロールを果たすために、関係者の範囲内に登録されている会社を指定する必要もあります。 **電子メールの送信先** ダイアログ ボックスの **電子メールの送信元の会社** フィールドの横にある **バインド** ボタン (チェーン記号) を選択して、[フォーミュラ デザイナー](general-electronic-reporting-formula-designer.md) ページを開きます。 その後、このページを使用して、実行時に目的の送信元が、範囲内にある必要がある会社コードを返すフォーミュラを構成できます。
 
@@ -110,13 +138,11 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 > [!NOTE]
 > **目的** フィールドで目的が選択され、**基本連絡先** オプションが同時に **はい** に設定されている場合は、少なくとも 1 つの構成された条件を満たす、すべての電子メールが、実行時に使用されます。
 
-![電子メール送信元の属性アカウントの構成](./media/er_destinations-emaildefineaddresssourceattributes.png)
-
 ### <a name="configuration-email"></a>コンフィギュレーション電子メール
 
-使用する構成が、1 つのメール アドレスまたはセミコロン (;) で区切られた複数のメール アドレスを返すデータ ソース内のノードを持つ場合は、**構成メール** をメール アドレス タイプとして選択します。 フォーミュラ デザイナーの [データ ソース](general-electronic-reporting.md#FormatComponentOutbound) と [関数](er-formula-language.md#functions) を使用して、正しく書式設定されたメール アドレス、または、セミコロンで区切られた正しく書式設定されたメール アドレスを取得できます。 たとえば、**ISO 20022 の口座振替** の構成を使用する場合は、送付状の送付先となる仕入先の連絡先情報から仕入先の基本メール アドレスを表すノードは `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email` です。
+使用する構成が、1 つのメール アドレスまたはセミコロン (;) で区切られた複数のメール アドレスを返すデータ ソース内のノードを持つ場合は、**構成メール** をメール アドレス タイプとして選択します。 フォーミュラ デザイナーの データ ソース と [関数](er-formula-language.md#Functions) を使用して、正しく書式設定されたメール アドレス、または、セミコロンで区切られた正しく書式設定されたメール アドレスを取得できます。 たとえば、**ISO 20022 の口座振替** の構成を使用する場合は、送付状の送付先となる仕入先の連絡先情報から仕入先の基本メール アドレスを表すノードは `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email` です。
 
-[![メール アドレスの送信元の構成](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![メール アドレスの送信元の構成。](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a name="group-format-components"></a><a id="grouping"></a>形式コンポーネントのグループ化
 
@@ -134,14 +160,17 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 
 次の図は、督促状と適切な顧客の請求書を PDF 形式で含む、zip 形式の送信ファイルを生成するように構成された ER 形式の構造を示しています。
 
-[![送信ドキュメントを生成する ER 形式の構造](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![送信ドキュメントを生成する ER 形式の構造。](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 次の図は、このトピックで説明されているように、個々のコンポーネントをグループ化し、新しいグループの **電子メール** の送信先を有効にして、適切な顧客の請求書と共に督促状が電子メールの添付ファイルとして送信されるプロセスを示しています。
 
-[![個々のコンポーネントのグループ化と電子メールの送信先の有効化](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![個々のコンポーネントのグループ化と電子メールの送信先の有効化。](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## <a name="additional-resources"></a>追加リソース
 
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 - [電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

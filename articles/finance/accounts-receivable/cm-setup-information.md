@@ -2,22 +2,22 @@
 title: 与信管理の設定
 description: このトピックでは、与信管理に必要な設定について説明します。
 author: JodiChristiansen
-ms.date: 09/04/2019
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9b9e756b678786d2c5a8c5bb9e890ce988090c09
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 6977789b039c3e77e6d697e32bf4cac69c35a901
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753671"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182457"
 ---
 # <a name="credit-management-setup"></a>与信管理の設定 
 
@@ -39,7 +39,7 @@ ms.locfileid: "7753671"
 
 支払条件のランキングが有効であり、注文の支払条件のランクが顧客の既定の支払条件よりも高い場合、販売注文は保留されます。
 
-支払条件のランクを設定するには、**与信および回収 \> 設定 \> 与信管理設定 \> 支払条件のランク付け** に移動します  
+支払条件のランクを設定するには、**与信および回収 \> 設定 \> 与信管理設定 \> 支払条件のランク付け** に移動します。  
 
 ### <a name="ranking-settlement-discounts"></a>決済割引のランク付け
 
@@ -86,7 +86,7 @@ ms.locfileid: "7753671"
 
 ## <a name="scoring-groups"></a>スコア グループ
 
-スコアリング グループを設定して、リスク要因と、測定に使用される基準を定義できます。 顧客に関する情報がスコアリング グループに適用されると、リスク要素ごとにスコアが計算され、顧客をリスク グループに入れるために使用されます。 このリスク グループを使用して、与信価値の識別と自動与信限度額の計算を行うことができます。
+**スコアリング グループ** を設定して、リスク要因と、測定に使用される基準を定義できます。 顧客に関する情報がスコアリング グループに適用されると、リスク要素ごとにスコアが計算され、顧客をリスク グループに入れるために使用されます。 このリスク グループを使用して、与信価値の識別と自動与信限度額の計算を行うことができます。
 
 スコアリング グループは、**スコアリング グループ** ページ (**与信および回収 \> 設定 \> 与信管理設定 \> リスク \> スコアリング グループ**) で作成できます。
 

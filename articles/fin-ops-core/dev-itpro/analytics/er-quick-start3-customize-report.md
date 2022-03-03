@@ -2,27 +2,27 @@
 title: 電子レポートのカスタマイズを構成して電子ドキュメントを生成する
 description: このトピックでは、Microsoft が提供する電子レポート (ER) の構成をカスタマイズして、カスタム電子ドキュメントを生成する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
+ms.custom:
+- "220314"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47bb8a2a9adab4ec963a1d0b95e783299aab3819
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683019"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324090"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>電子レポートのカスタマイズを構成して電子ドキュメントを生成する
 
@@ -108,7 +108,7 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 5. **バージョン** FastTab で、バージョン **11.2.2** を選択します。
 6. **インポート** を選択して、グローバル リポジトリから選択したバージョンをダウンロードします。
 
-![レポジトリ ページの構成](./media/er-quick-start3-import-solution1.png)
+![構成レポジトリ ページです。](./media/er-quick-start3-import-solution1.png)
 
 > [!TIP]
 > [グローバル リポジトリ](er-download-configurations-global-repo.md) へのアクセスに問題がある場合は、Microsoft Dynamics Lifecycle Services (LCS) から[構成をダウンロード](download-electronic-reporting-configuration-lcs.md) ができます。
@@ -120,9 +120,9 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 3. **構成** ページで、**構成コンポーネント** クイックタブを展開します。
 4. 左ウィンドウの構成ツリーで、**請求書モデル** を展開し、 **UBL 売上請求書** を展開します。
 
-選択した **Peppol 売上請求書** ER 形式に加えて、その他の必要な ER の構成がインポートされたことに注意してください。 新しいバージョンの ER の構成は、新しい要件に準拠するソリューションを維持するためにグローバル リポジトリと LCS に常に公開されているため、必要な [データ モデル](general-electronic-reporting.md#data-model-and-model-mapping-components)構成の最新バージョンとその [モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)の構成がインポートされます。
+選択した **Peppol 売上請求書** ER 形式に加えて、その他の必要な ER の構成がインポートされたことに注意してください。 新しいバージョンの ER の構成は、新しい要件に準拠するソリューションを維持するためにグローバル リポジトリと LCS に常に公開されているため、必要な データ モデル構成の最新バージョンとその モデル マッピングの構成がインポートされます。
 
-![構成ページ](./media/er-quick-start3-imported-solution1a.png)
+![構成ページです。](./media/er-quick-start3-imported-solution1a.png)
 
 過去に **Peppol 売上請求書** の ER 形式のバージョン **11.2.2** をインポートした場合 (例えば 2019 年 8 月 7 日) に、現在の財務インスタンスの ER 構成がどのような状態になるかをシミュレーションするには、以下の手順に従います。
 
@@ -133,32 +133,32 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 
 - **請求書モデル** ER データモデルの構成 (初期状態の名称は **顧客請求書モデル** です) :
 
-    - バージョン 11 には、請求書発行ビジネス ドメインのデータ構造を表す[データモデル](general-electronic-reporting.md#data-model-and-model-mapping-components) ER コンポーネントのバージョン 10 が含まれています。 この ER 構成は、インポート対象として選択された **Peppol 売り上げ請求書** の ER 形式の原型としてインポートされました。
+    - バージョン 11 には、請求書発行ビジネス ドメインのデータ構造を表すデータモデル ER コンポーネントのバージョン 10 が含まれています。 この ER 構成は、インポート対象として選択された **Peppol 売り上げ請求書** の ER 形式の原型としてインポートされました。
     - バージョン 50 には、データモデル ER コンポーネントのバージョン31 が含まれています。 この ER 構成は、2019 年 8 月 7 日版の **請求書モデル マッピング**  ER モデル マッピング構成の原型としてインポートされています。
 
-    ![構成ページの請求書 モデル ER データモデルの設定](./media/er-quick-start3-imported-solution1b1.png)
+    ![構成ページの請求書 モデル ER データ モデル構成です。](./media/er-quick-start3-imported-solution1b1.png)
 
     > [!TIP]
     > このデータ モデルのバージョン 50 が表示されない場合は、グローバル リポジトリを開き、**請求書マッピング** ER 構成のバージョン 50.19 をインポートし ます。
 
 - **請求書モデル マッピング** ER モデル マッピングの構成 (初期状態の名称は **顧客請求書モデル マッピング** です) :
 
-    - バージョン 50.19 は、**請求モデル** ER のデータモデル構成の最新の50バージョンでの実装としてインポートされました。 これには、実行時にデータモデルがどのようにアプリケーションデータで格納されるかを記述した、 2 つの[モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)ERコンポーネントが含まれています。
+    - バージョン 50.19 は、**請求モデル** ER のデータモデル構成の最新の50バージョンでの実装としてインポートされました。 これには、実行時にデータモデルがどのようにアプリケーションデータで格納されるかを記述した、 2 つのモデル マッピングERコンポーネントが含まれています。
 
-    ![構成ページにおける請求書モデル マッピング ER モデル マッピングの設定](./media/er-quick-start3-imported-solution1b2.png)
+    ![構成ページにおける請求書モデル マッピング ER モデル マッピング構成です。](./media/er-quick-start3-imported-solution1b2.png)
 
     > [!TIP]
     > このモデル マッピングのバージョン 50.19 が表示されない場合は、グローバル リポジトリを開き、**請求書マッピング** ER 構成のバージョン 50.19 をインポートします。
 
 - **UBL 売上請求書** ER 形式の構成 :
 
-    - バージョン 11.2 には、[形式](general-electronic-reporting.md#FormatComponentOutbound)と形式マッピング ER コンポーネントが含まれています。 形式コンポーネントは、レポートのレイアウトを指定します。 形式マッピング コンポーネントは、モデル データ ソースが含まれており、このデータ ソースが実行時にレポート レイアウトを埋めるためにどのように使用されるかを指定します。 この ER 形式は、電子インボイスを汎用ビジネス言語 (UBL) 形式で生成するように構成されています。 この ER 構成は、インポート対象として選択された **Peppol 売り上げ請求書** の ER 形式の親としてインポートされました。
+    - バージョン 11.2 には、形式と形式マッピング ER コンポーネントが含まれています。 形式コンポーネントは、レポートのレイアウトを指定します。 形式マッピング コンポーネントは、モデル データ ソースが含まれており、このデータ ソースが実行時にレポート レイアウトを埋めるためにどのように使用されるかを指定します。 この ER 形式は、電子インボイスを汎用ビジネス言語 (UBL) 形式で生成するように構成されています。 この ER 構成は、インポート対象として選択された **Peppol 売り上げ請求書** の ER 形式の親としてインポートされました。
 
 - **Peppol 売上請求書** ER 形式の構成 :
 
     - バージョン 11.2.2 には、汎欧州オンライン公的調達 (PEPPOL)フォーマットで電子インボイスを生成するように構成された形式と形式マッピング ER コンポーネントが含まれています。
 
-    ![構成ページの Peppol 売上請求書 ER 形式の設定](./media/er-quick-start3-imported-solution1b3.png)
+    ![構成ページの Peppol 売上請求書 ER 形式構成です。](./media/er-quick-start3-imported-solution1b3.png)
 
 ## <a name="configure-the-accounts-receivable-parameters"></a><a name="ConfigureAR1"></a>売掛金のパラメーターを設定する
 
@@ -166,7 +166,7 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 2. **電子ドキュメント** タブの **電子報告書** クイックタブで、**売上と自由書式の請求書** フィールドの **Peppol 売上請求書** を選択します。
 3. **保存** を選択します。
 
-![売掛金パラメーター ページの電子ドキュメント タブ](./media/er-quick-start3-configure-ar1.png)
+![売掛金パラメーター ページの電子ドキュメント タブです。](./media/er-quick-start3-configure-ar1.png)
 
 ## <a name="configure-the-legal-entity-parameters"></a><a name="ConfigureLE"></a>法人パラメーターの構成
 
@@ -218,7 +218,7 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 
 5. **保存** を選択します。
 
-![自由書式の請求書のページ](./media/er-quick-start3-add-invoice.png)
+![自由書式の請求書のページです。](./media/er-quick-start3-add-invoice.png)
 
 詳細については、[自由書式の請求書](../../../finance/accounts-receivable/create-free-text-invoice-new.md)を参照してください。
 
@@ -228,14 +228,14 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 2. **自由書式の請求書** ページのアクション ペインで、**転記** を選択します。
 3. **自由書式の請求書の転記**  ダイアログ ボックスで、**OK** を選択し ます。
 
-![自由書式の請求書の詳細ページ](./media/er-quick-start3-post-invoice.png)
+![自由書式の請求書の詳細ページです。](./media/er-quick-start3-post-invoice.png)
 
 ### <a name="send-a-posted-invoice"></a>転記された請求書を送信する
 
 1. **売掛金勘定** \> **請求書** \> **すべての自由書式の請求書** に移動します。
 2. **自由書式の請求書** ページのアクション ペイン **ドキュメント** グループで、 **送信** \> **原本** を選択し ます。
 
-    ![原本の請求書のプレビュー](./media/er-quick-start3-send-invoice.png)
+    ![元の請求書のプレビューです。](./media/er-quick-start3-send-invoice.png)
 
 3. **自由書式の請求書**  ページを閉じます。
 
@@ -245,12 +245,12 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 2. **電子申告** ジョブ ページで、タスクの説明に **eInvoice XML を送信する** がある初期レコードを選択します。
 3. **ファイルの表示** を選択 すると、生成されたファイルの一覧にアクセスできます。
 
-    ![電子申告ジョブ ページ](./media/er-quick-start3-jobs-list.png)
+    ![電子申告ジョブ ページです。](./media/er-quick-start3-jobs-list.png)
 
 4. **開く** を選択して、生成された電子請求書の XML ファイルをダウンロードします。
 5. 電子請求書の XML ファイルを分析します。 顧客税スキーマは現在、**schemeID** と **schemeAgencyID** の XML 属性で表されていることを確認してください。 また、**cbc: CustomizationID** XML 要素には次のテキストが現在含まれていることに注意してください :  `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0` 。
 
-    ![生成された電子請求書の XML ファイルのプレビュー](./media/er-quick-start3-e-invoice1.png)
+    ![生成された電子請求書の XML ファイルのプレビューです。](./media/er-quick-start3-e-invoice1.png)
 
 ## <a name="add-a-custom-database-field"></a><a name="AddCustomField"></a>カスタム データベース フィールドの追加
 
@@ -282,7 +282,7 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 12. 表示されたメッセージボックスで、**はい** を選択し、**顧客** テーブルに対して新しい **FederalTaxID** フィールド エントリを作成することを確認します。
 13. **挿入** を選択して <a name="insert_custom_field"></a> **FederalTaxID\_Custom** フィールドを現在のページに追加します。
 
-    ![すべての顧客のページ](./media/er-quick-start3-create-new-field.gif)
+    ![すべての顧客のページです。](./media/er-quick-start3-create-new-field.gif)
 
 14. **すべての顧客** ページを閉じます。
 
@@ -312,7 +312,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 これで、ER データ モデル デザイナーを使用して、**請求モデル (Litware)** の ER 構成のバージョン 50.1 を **ドラフト** の[状態](general-electronic-reporting.md#component-versioning)で編集できるようになります。
 
-![構成ページの ER の構成 バージョン 50.1](./media/er-quick-start3-added-custom-model.png)
+![構成ページの ER の構成 バージョン 50.1 です。](./media/er-quick-start3-added-custom-model.png)
 
 #### <a name="configure-a-custom-data-model"></a>カスタム データ モデルの構成
 
@@ -328,7 +328,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 8. **品目タイプ** フィールドで、既定値の **文字列** をそのまま使用します。
 9. **追加** を選択してから、**保存** を選択します。
 
-    ![データ モデル デザイナーのページ](./media/er-quick-start3-add-data-model-field.png)
+    ![データ モデル デザイナーのページです。](./media/er-quick-start3-add-data-model-field.png)
 
     > [!NOTE]
     > **ラベル** フィールドと **説明** フィールドには、新しいフィールドの目的が示されます。 これらのフィールドは、複数の言語で入力できます。 詳細については、[電子申告で複数言語のレポートを設計する](er-design-multilingual-reports.md) を参照してください。
@@ -345,7 +345,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 バージョン 50.1 のステータスは、**ドラフト** から **完了済** に変更され、バージョンは読み取り専用になります。 新しい編集可能なバージョン 50.2 が追加され、状態が **ドラフト** になります。 このバージョンを使用すると、カスタム ER データ モデルの構成にさらに変更を加えることができます。
 
-![構成ページで完了したバージョン 50.1](./media/er-quick-start3-completed-custom-model1.png)
+![構成ページで完了したバージョン 50.1 です。](./media/er-quick-start3-completed-custom-model1.png)
 
 ### <a name="customize-the-model-mapping-configuration"></a>モデル マッピングの構成をカスタマイズする
 
@@ -365,7 +365,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 7. **構成の作成** を選択して、新しい ER の構成を追加します。
 
-![構成ページにおけるカスタム モデル マッピング構成の追加](./media/er-quick-start3-adding-custom-mapping.png)
+![構成ページにカスタム モデル マッピング構成を追加します。](./media/er-quick-start3-adding-custom-mapping.png)
 
 #### <a name="configure-a-custom-model-mapping"></a>カスタム モデル マッピングの構成
 
@@ -376,7 +376,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 3. アクション ウィンドウで、**デザイナー** を選択します。
 4. **モデルからデータ ソースへのマッピング** ページで、**顧客請求書** マッピングを選択します。
 
-    ![モデルからデータ ソースへのマッピング ページ](./media/er-quick-start3-select-customer-mapping.png)
+    ![モデルからデータ ソースへのマッピング ページです。](./media/er-quick-start3-select-customer-mapping.png)
 
 5. **デザイナー** をクリックします。
 6. **モデル マッピング デザイナ** ページの **データ ソース** ペインで、**CustInvoiceJour** アプリケーション テーブルを表す **CustInvoiceJour** データソースを展開します。
@@ -386,7 +386,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 10. **データモデル** ペインで、**顧客情報 (顧客)** を展開 し、**FederalTaxID\_Litware** データ モデル フィールドを選択します。
 11. **バインド** を選択します。
 
-    ![モデル マッピング デザイナーのページ](./media/er-quick-start3-customize-model-mapping.gif)
+    ![モデル マッピング デザイナーのページ。](./media/er-quick-start3-customize-model-mapping.gif)
 
 12. **保存** を選択します。
 13. **モデル マッピング デザイナー** ページを閉じます。
@@ -402,7 +402,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 バージョン 50.19.1 のステータスは、**ドラフト** から **完了済** に変更され、バージョンは読み取り専用になります。 新しい編集可能なバージョン 50.19.2 が追加され、状態が **ドラフト** になります。 このバージョンを使用すると、カスタム ER モデル マッピングの構成にさらに変更を加えることができます。
 
-![構成ページで完了したバージョン 50.19.1](./media/er-quick-start3-completed-custom-mapping1.png)
+![構成ページで完了したバージョン 50.19.1 です。](./media/er-quick-start3-completed-custom-mapping1.png)
 
 > [!NOTE]
 > サポートされている構成[ライフサイクル](general-electronic-reporting-manage-configuration-lifecycle.md) は、データベースの変更のライフサイクルをカバーしていません。 現在の財務インスタンスから **請求書モデルマッピング (Litware)** 構成のバージョン 50.19.1 をエクスポートして、**CustTable** テーブルのカスタム **FederalTaxID\_Custom** フィールドを含まない別のインスタンスにインポートしようとすると、例外が発生します。 この例外は、インポートした ER の構成がターゲットの財務インスタンスのメタデータと互換性がないことを示しています。
@@ -426,11 +426,11 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 7. **データ モデル** フィールドで、**InvoiceCustomer** のルート定義を選択します。
 8. **構成の作成** を選択して、新しい ER の構成を追加します。
 
-![構成ページにおけるカスタム形式構成の追加](./media/er-quick-start3-adding-custom-format.png)
+![構成ページでカスタム形式の構成を追加します。](./media/er-quick-start3-adding-custom-format.png)
 
 これで、ER オペレーション デザイナーを使用して、**Peppol 売上請求書 (Litware)** の ER 構成のバージョン 11.2.2.1 を **ドラフト** の[状態](general-electronic-reporting.md#component-versioning)で編集できるようになります。
 
-![構成ページの ER の構成 バージョン 11.2.2.1](./media/er-quick-start3-added-custom-format.png)
+![構成ページの ER 構成の バージョン 11.2.2.1 です。](./media/er-quick-start3-added-custom-format.png)
 
 #### <a name="configure-a-custom-format"></a>カスタム形式の構成
 
@@ -446,7 +446,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 8. 形式のツリーで、 **XMLHeader** \> **請求書** \> **cac:AccountingCustomerParty** \> **cac:Party** \> **cac:PartyTaxScheme** \> **cac:TaxScheme** \> **cbc:ID** 配下で、**FederalTaxID** を選択します。
 9. **上へ移動** を選択します。
 
-![形式デザイナー ページにおける新しい形式要素](./media/er-quick-start3-customized-format.png)
+![形式デザイナー ページにおける新しい形式要素です。](./media/er-quick-start3-customized-format.png)
 
 #### <a name="configure-a-custom-format-mapping"></a>カスタム形式マッピングの構成
 
@@ -454,7 +454,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 2. **請求書** 配下で  **顧客情報 (顧客)** を展開し、**FederalTaxID\_Litware** を選択します。
 3. **バインド** を選択します。
 
-    ![形式デザイナーのページ](./media/er-quick-start3-customized-format-mapping.png)
+    ![形式デザイナー ページです。](./media/er-quick-start3-customized-format-mapping.png)
 
 4. **モデル** タイプの **請求書** データ ソースを選択し、**編集** を選択します。
 5. **バージョン** フィールドで、カスタム データモデルのバージョン **1** を選択し、**OK** を選択します。
@@ -471,7 +471,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 バージョン 11.2.2.1 のステータスは、**ドラフト** から **完了済** に変更され、バージョンは読み取り専用になります。 新しい編集可能なバージョン 11.2.2.2 が追加され、状態が **ドラフト** になります。 このバージョンを使用すると、カスタム ER 形式の構成に追加の変更を加えることができます。
 
-![構成ページで完了したバージョン 11.2.2.1](./media/er-quick-start3-completed-custom-format1.png)
+![構成ページで完了したバージョン 11.2.2.1 です。](./media/er-quick-start3-completed-custom-format1.png)
 
 ## <a name="configure-the-accounts-receivable-parameters-to-start-to-use-custom-er-configurations"></a><a name="ConfigureAR2"></a>売掛金勘定パラメーターを構成して、カスタマイズした ER の構成を使用する
 
@@ -479,7 +479,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 2. **電子ドキュメント** タブの **電子報告書** クイックタブで、**売上と自由書式の請求書** フィールドの **Peppol 売上請求書 (Litware)** を選択します。
 3. **保存** を選択します。
 
-![売掛金パラメーター ページの、電子ドキュメント タブ、電子報告書 クイックタブ](./media/er-quick-start3-configure-ar2.png)
+![売掛金パラメーター ページの、電子ドキュメント タブ、電子報告書 クイックタブです。](./media/er-quick-start3-configure-ar2.png)
 
 ## <a name="update-a-customer-record-by-adding-a-federal-tax-identification-code"></a><a name="ConfigureCustomer2"></a>連邦税 ID コードを追加して顧客記録を更新する
 
@@ -488,7 +488,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 3. **全般** クイックタブの **連邦税 ID** フィールドに、**LITWARE-6789** と入力します。
 4. **保存** を選択します。
 
-    ![DE-014 顧客の詳細 ページ](./media/er-quick-start3-added-tax-id-value.png)
+    ![DE-014 顧客の詳細ページです。](./media/er-quick-start3-added-tax-id-value.png)
 
 5. **すべての顧客** ページを閉じます。
 
@@ -509,7 +509,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 4. **開く** を選択して、生成された電子請求書の XML ファイルをダウンロードします。
 5. 電子請求書の XML ファイルを分析します。 カスタマイズに従って、顧客税スキーマには、**schemeID** と **schemeAgencyID** の XML 属性に加えて、カスタマイズした **FederalTaxID** XML属性が含まれていることに注意してください。 この新しい XML 属性の値は、請求先に入力された 連邦税ID **LITWARE-6789** によって指定されます。
 
-    ![カスタマイズして生成された e-インボイス XMLファイルのプレビュー](./media/er-quick-start3-e-invoice2.png)
+    ![カスタマイズして生成された 電子請求書の XML ファイルのプレビューです。](./media/er-quick-start3-e-invoice2.png)
 
 ## <a name="import-the-latest-versions-of-standard-er-configurations"></a><a name="ImportERConfigurations2"></a>標準的な ER 構成の最新のバージョンをインポートする
 
@@ -522,7 +522,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 5. **バージョン** クイックタブで、PEPPOL BIS 3形式の顧客電子請求書をサポートするためにリリースされた ER 形式構成のバージョン **32.6.7** を選択します。 詳細については、[KB4490320](https://support.microsoft.com/help/4490320/an-update-for-european-union-to-support-export-of-customers-electronic) を参照してください。
 6. **インポート** を選択して、グローバル リポジトリから現在の Finance インスタンスに選択したバージョンをダウンロードします。
 
-![構成リポジトリ ページにおける、選択されたバージョン 32.6.7](./media/er-quick-start3-import-solution2.png)
+![構成レポジトリ ページで選択されたバージョン 32.6.7 です。](./media/er-quick-start3-import-solution2.png)
 
 このプロセスを自動化する方法の詳細については、[ER 構成の更新されたバージョンをインポートする](er-download-updated-versions-global-repo.md)を参照してください。
 
@@ -543,13 +543,13 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
     - バージョン 206 (またはそれ以降) には、請求書発行ビジネス ドメインのデータ構造を表すデータモデル ER コンポーネントのバージョン 24 (またはそれ以降) が含まれています。 この ER 構成は、最新版の **請求書モデル マッピング**  ER モデル マッピング構成の原型としてインポートされています。
 
-    ![構成ページにおけるバージョン 206](./media/er-quick-start3-imported-solution2b1.png)
+    ![構成ページにおけるバージョン 206 です。](./media/er-quick-start3-imported-solution2b1.png)
 
 - **請求書 モデル マッピング** ER モデル マッピングの構成 :
 
     - **請求書モデル** ER データ モデルの構成バージョン 206 の最新実装として、バージョン206.132 (またはそれ以降) がインポートされています。 これには、実行時にデータモデルがどのようにアプリケーションデータで格納されるかを記述した、複数のモデル マッピングERコンポーネントが含まれています。
 
-    ![構成ページにおけるバージョン 206.132](./media/er-quick-start3-imported-solution2b2.png)
+    ![構成ページにおけるバージョン 206.132 です。](./media/er-quick-start3-imported-solution2b2.png)
 
 - **UBL 売上請求書** ER 形式の構成 :
 
@@ -559,7 +559,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
     - バージョン 32.6.7 には、PEPPOL フォーマットで電子インボイスを生成するように構成された形式と形式マッピング ER コンポーネントが含まれています。
 
-    ![構成ページにおけるバージョン 32.6.7](./media/er-quick-start3-imported-solution2b3.png)
+    ![構成ページにおけるバージョン 32.6.7 です。](./media/er-quick-start3-imported-solution2b3.png)
 
 ## <a name="adopt-the-changes-to-the-new-standard-er-configurations-in-your-custom-er-configurations"></a><a name="RebaseCustomERConfigurations"></a>カスタマイズした ER の構成に新しいバージョンの標準的な ER の構成に変更を適用する
 
@@ -579,7 +579,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 バージョン 206.2 のステータスは、**ドラフト** から **完了済** に変更され、バージョンは読み取り専用になります。 新しい編集可能なバージョン 206.3 が追加され、状態が **ドラフト** になります。 このバージョンを使用すると、カスタム ER データ モデルの構成にさらに変更を加えることができます。
 
-![構成ページで完了したバージョン 206.2](./media/er-quick-start3-completed-custom-model2.png)
+![構成ページで完了したバージョン 206.2 です。](./media/er-quick-start3-completed-custom-model2.png)
 
 ### <a name="adopt-your-custom-er-model-mapping"></a>カスタム ER モデル マッピングの採用
 
@@ -592,12 +592,12 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
     一部のリベースの競合が検出されたことを確認します。 このような競合は手動で解決する必要があります。
 
-    ![構成ページにおける競合メッセージのリベース](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
+    ![構成ページにおける競合メッセージのリベースです。](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
 
 5. アクション ペインで **デザイナ** を選択 し、マッピングの一覧で **顧客請求書** を選択します。
 6. それぞれのリベースの競合については、各コンポーネントに対してカスタム データ モデルのバージョン番号を保持する必要があるため、**独自の値を保持する** を選択します。
 
-    ![モデル マッピング デザイナ ページにおける競合をリベースする](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
+    ![モデル マッピング デザイナ ページにおける競合をリベースします。](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
 
 7. **保存** を選択し、**モデル マッピング デザイナ** ページを閉じます。
 8. マッピングの一覧で、 **プロジェクト請求書** を選択します。
@@ -611,7 +611,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 バージョン 206.132.2 のステータスは、**ドラフト** から **完了済** に変更され、バージョンは読み取り専用になります。 新しい編集可能なバージョン 206.132.3 が追加され、状態が **ドラフト** になります。 このバージョンを使用すると、カスタム ER モデル マッピングの構成にさらに変更を加えることができます。
 
-![構成ページで完了したバージョン 206.132.2](./media/er-quick-start3-completed-custom-mapping2.png)
+![構成ページで完了したバージョン 206.132.2 です。](./media/er-quick-start3-completed-custom-mapping2.png)
 
 ### <a name="adopt-your-custom-er-format"></a>カスタム ER フォーマットの採用
 
@@ -639,7 +639,7 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 
 バージョン 32.6.7.2 のステータスは、**ドラフト** から **完了済** に変更され、バージョンは読み取り専用になります。 新しい編集可能なバージョン 32.6.7.3 が追加され、状態が **ドラフト** になります。 このバージョンを使用すると、カスタム ER 形式の構成に追加の変更を加えることができます。
 
-![構成ページで完了したバージョン 32.6.7.2](./media/er-quick-start3-completed-custom-format2.png)
+![構成ページで完了したバージョン 32.6.7.2 です。](./media/er-quick-start3-completed-custom-format2.png)
 
 ## <a name="process-a-customer-invoice-by-using-new-versions-of-the-custom-er-configurations"></a><a name="ProcessInvoice3"></a>新しいバージョンの カスタマイズした ER の構成を使用して、顧客請求書を処理する
 
@@ -662,12 +662,15 @@ Microsoft が提供する ER 構成を使用して、カスタム ER 構成を�
 4. **開く** を選択して、生成された電子請求書の XML ファイルをダウンロードします。
 5. 電子請求書の XML ファイルを分析します。 カスタマイズに従って、顧客税スキーマには、**schemeID** と **schemeAgencyID** の XML 属性に加えて、カスタマイズした **FederalTaxID** XML 属性が含まれていることを確認してください。 また、ベースとなる新しいバージョンの **UBL 売上請求書** 形式の変更点が、カスタマイズしたものにマージされたため、 XML要素 **cbc:CustomizationID** のテキストが `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0` から `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0` に変更されています。
 
-    ![カスタマイズして生成された e-インボイス XML ファイルのプレビュー](./media/er-quick-start3-e-invoice3.png)
+    ![カスタマイズして生成された電子請求書の XML ファイルのプレビューです。](./media/er-quick-start3-e-invoice3.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 - [電子申告の概要](general-electronic-reporting.md)
 - [ER コンフィギュレーションを Lifecycle Services からダウンロードする](download-electronic-reporting-configuration-lcs.md)
 - [ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする](er-download-configurations-global-repo.md)
-- [自由書式の請求書の作成](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
-- [カスタム フィールドの作成と操作](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+- [自由書式の請求書の作成](../../../finance/accounts-receivable/create-free-text-invoice-new.md)
+- [カスタム フィールドの作成と操作](../../fin-ops/get-started/user-defined-fields.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

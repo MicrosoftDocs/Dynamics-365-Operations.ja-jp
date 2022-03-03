@@ -2,26 +2,23 @@
 title: 場所の製品分析コードの混在
 description: このトピックでは、場所の製品分析コードの混在に関する情報を提供します。 この場所プロファイルの機能は、ファッション業界などで、製品バリアントまたは分析コードを持つ製品を使用した場合に、場所の管理を改善するのに役立ちます。 特定の場所のプロファイルに対して、構成、色、スタイル、およびサイズを混在させることができるかどうか、またはこれらの分析コードのいずれかまたはそれらの組み合わせを同じ場所に配置できるかどうかを決定できます。
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432286"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103491"
 ---
 # <a name="location-product-dimension-mixing"></a>場所の製品分析コードの混在
 
@@ -29,14 +26,11 @@ ms.locfileid: "4432286"
 
 場所の製品分析コードの混合は、ファッション業界などで、製品バリアントまたは分析コードを持つ製品を使用した場合に、場所の管理を改善するのに役立つ場所プロファイルの機能です。 特定の場所のプロファイルに対して、構成、色、スタイル、およびサイズを混在させることができるかどうか、またはこれらの分析コードのいずれかまたはそれらの組み合わせを同じ場所に配置できるかどうかを決定できます。
 
-## <a name="turn-on-the-location-product-dimension-mixing-feature"></a>場所の製品分析コードの混合機能を有効にする
+## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>場所の製品分析コードの混合機能オンまたはオフにする
 
-場所の製品分析コードの混合機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
+このトピックで説明する機能を使用するには、システムの *場所の製品分析コードの混在* 機能をオンにする必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *場所の製品分析コードの混在* 機能を検索して、この機能をオンまたはオフにすることができます。
 
-- **モジュール:** *倉庫管理*
-- **機能名 :** *場所の製品分析コードの混合*
-
-## <a name="setup"></a>セットアップ
+## <a name="setup"></a>設定
 
 倉庫の場所は、場所のプロパティに関連したプロファイルを有している必要があります。 そのため、同じ場所プロファイルを使用するすべての場所では、設定後に製品分析コードの混合を許可できます。
 
@@ -207,9 +201,9 @@ ms.locfileid: "4432286"
 
 1. **保存** を選択します。
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>倉庫アプリでの発注書明細行の受取
+### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリで発注書明細行を受領する
 
-1. 倉庫 *24* を有効にしたユーザーとして、倉庫アプリにログインします。
+1. 倉庫 *24* を有効にしたユーザーとして、倉庫管理モバイル アプリにログインします。
 1. **入庫** メニューを選択します。
 1. **発注書明細行受取** を選択します。
 1. **PONUM** フィールドを選択してから、発注書番号を入力します。
@@ -239,3 +233,5 @@ ms.locfileid: "4432286"
 
 > [!TIP]
 > このシナリオを繰り返すことができますが、今回は、*バルク***場所プロファイル** の、**製品分析コードの混合を許可する** クイック タブの下にある **サイズ** - *いいえ* を設定して、どの製品分析コードも混合しないようにします。 この場合、発注書の受取の際に、各製品バリアントが新しい場所に配置されます。
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

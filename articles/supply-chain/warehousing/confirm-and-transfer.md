@@ -2,26 +2,23 @@
 title: 確認および転送
 description: このトピックでは、確認および転送機能の使用方法について説明します。これにより、ユーザーは、これらの積荷に関連するすべての作業を完了する前に、倉庫から積荷を出荷することができます。
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431730"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103592"
 ---
 # <a name="confirm-and-transfer"></a>確認および転送
 
@@ -48,20 +45,17 @@ ms.locfileid: "4431730"
 
 - ピッキング済の数量が 1 つ以上、積荷明細行に含まれています。
 - 積荷状態は積載済よりも小さくなっています。
-- 積荷明細行データがありません。 (このデータは、ステージング場所でのライセンス プレートの結合を通して作成され、*確認および転送* 機能は、ライセンス プレートの結合をサポートしていません。)
-- 現在、梱包場所に梱包待ちの在庫はありません。 (*確認および転送* 機能は、梱包ステーションにピッキングされているが、まだ梱包されていない在庫はサポートしていません。)
+- 積荷明細行データがありません。 (このデータは、ステージング場所でのライセンス プレートの結合を通して作成され、確認および転送機能は、ライセンス プレートの結合をサポートしていません。)
+- 現在、梱包場所に梱包待ちの在庫はありません。 *確認および転送* 機能は、パックステーションにピッキングされたものの、まだパックされていない在庫には対応していません。ただし、パック済みコンテナがステージング ロケーションに置かれ、出荷作業が作成されている場合はこの限りではありません。
 
 > [!NOTE]
 > この機能は、ピッキング前に積荷を計画および作成することはできず、ピッキング完了後に使用可能な輸送スペースを積載する倉庫で使用する必要がある輸送積載機能とは異なります。
 >
 > *確認および転送* 機能は、通常、積荷が事前に計画および作成されているが、利用可能な輸送手段 (トラックなど) に収まらないなどの例外が発生する場合に使用されます。
 
-## <a name="turn-on-confirm-and-transfer"></a>確認および転送をオンにする
+## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>確認・転送機能のオン/オフを切り替える
 
-*確認および転送* 機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *確認および転送*
+このトピックで説明する機能を使用するには、ご利用システムで *確認と転送* 機能がオンになっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *確認と転送* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="set-up-confirm-and-transfer"></a>確認および転送を設定する
 
@@ -230,3 +224,6 @@ ms.locfileid: "4431730"
 - **数量を新しい積荷に分割** するオプションは、残りの作業ヘッダーのステータスが *処理中* になっている場合にも機能します。 したがって、オーダーのピッキングが既に実行されている場合でも、その機能を使用できます。
 - ステータスが *オープン* または *処理中* の作業が残っているときに、**未履行の数量をキャンセル** を選択すると、次のエラー メッセージが表示されます。「積荷の残りの数量をキャンセルできません。 積荷に対して未処理の作業があります。」
 - 未処理の作業はないが、積荷に未リリースの積荷明細行がある際に、**未履行の数量をキャンセル** を選択すると、次のエラー メッセージが表示されます。「品目の数量が過少配送に定義された割合を超えているため、積荷の出荷を確認できませんでした。」 エラーを回避するには、未リリースの積荷明細行の **過少配送** 率を 100 % に設定します。 未リリースの明細行は新しい積荷に移動されませんが、現在の積荷は過少配送として確認されます。 この場合、元の注文を再度リリースすることはできません。 したがって、これを別の方法で処理する必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

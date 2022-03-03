@@ -2,25 +2,22 @@
 title: バッチ ジョブからの出荷の確認
 description: このトピックでは、出荷準備が完了した転送注文を自動的に確認するバッチ ジョブの設定方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 41dbfb90b7b19c964e725ee0a4c769402414fb17
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: f68dcfc0c1454ee5b095e186c52faa6c83bf8dc6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431728"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103918"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>バッチ ジョブからの出荷の確認
 
@@ -28,12 +25,9 @@ ms.locfileid: "4431728"
 
 このトピックでは、出荷準備が完了した転送注文を自動的に確認するバッチ ジョブの設定方法について説明します。 ここで説明するバッチジョブは、販売注文に対してではなく、転送注文の出荷にのみ適用されます。
 
-## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a>バッチジョブからの出荷確認機能を有効にする
+## <a name="turn-the-confirm-outbound-shipments-from-batch-jobs-feature-on-or-off"></a>バッチジョブからの出荷を確認する機能のオン/オフを切り替える
 
-この機能を使用する前に、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化することができます。 この機能は次のように一覧表示されます :
-
-- **モジュール** - *倉庫管理*
-- **機能名** - *バッチジョブから出荷を確認する*
+このトピックで説明する機能を使用するには、ご利用システムで *バッチジョブからの出荷を確認する* 機能がオンになっている必要があります。 Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *バッチジョブからの出荷を確認する* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="process-outbound-shipments"></a>出荷の処理
 
@@ -54,3 +48,6 @@ ms.locfileid: "4431728"
 1. **出荷の確認** ダイアログ ボックスの **OK** を選択し、バッチ ジョブをバッチキューに追加します。
 
 詳細については、[バッチ処理の概要](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

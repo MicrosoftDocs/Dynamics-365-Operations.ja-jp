@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6b8d663fa9743fae83654ed9938b4131e0fa08b9
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902195"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103316"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのステップ アイコンとタイトルの割り当て
 
@@ -27,12 +27,9 @@ ms.locfileid: "7902195"
 
 ![Warehouse Management モバイル アプリのステップ アイコンとステップ タイトルの例。](media/step-icon-example.png "Warehouse Management モバイル アプリのステップ アイコンとステップ タイトルの例")
 
-## <a name="turn-on-this-feature-in-your-system"></a>システムでこの機能を有効にする
+## <a name="turn-this-feature-on-or-off"></a>この機能のオン/オフの切り替え
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル*
+このトピックで説明する機能を使用するには、*新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* 機能がシステムで有効になっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="standard-step-ids-classes-and-icons"></a>標準的なステップ ID、クラス、アイコン
 

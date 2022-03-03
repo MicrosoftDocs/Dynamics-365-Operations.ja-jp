@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4c83b96673fa717b034207a41c921a1b197e17ef3588e77b2304ec9e27fa93a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2c8adaad2afee3b735c69a501d7949a807f4e770
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738774"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323383"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>B2B eコマース サイトの製品数量制限の設定
 
@@ -77,7 +77,7 @@ Commerce サイトビルダーの B2B 注文数量制限機能を有効にする
 
 [B2B eコマース サイトの設定](set-up-b2b-site.md)
 
-[B2B 組織の組織モデリング階層の作成](org-model.md)
+[顧客階層を使用した B2B ビジネス パートナーの管理](partners-customer-hierarchies.md)
 
 [B2B eコマース サイトでのビジネス パートナー ユーザーの管理](manage-b2b-users.md)
 

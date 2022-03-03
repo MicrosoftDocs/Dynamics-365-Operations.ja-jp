@@ -2,7 +2,7 @@
 title: 一般仕訳帳明細行での消費税計算
 description: このトピックでは、一般仕訳帳明細行のさまざまなタイプの勘定 (仕入先、顧客、元帳、およびプロジェクト) に対する消費税がどのように計算されるかについて説明します。
 author: EricWangChen
-ms.date: 04/22/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 654917705400e0aecc7240e12f68d578827f6ad2
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488314"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8311957"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>一般仕訳帳明細行での消費税計算
 [!include [banner](../includes/banner.md)]
@@ -77,19 +77,9 @@ ms.locfileid: "7488314"
 
 ### <a name="account-type-is-customer"></a>勘定タイプが顧客の場合
 
-伝票に勘定タイプが **顧客** である仕訳帳明細行がある場合、伝票の仕訳帳明細行すべてに同じ税提示方法が適用されます。 次の点は、顧客勘定に対して可能性のある税提示方法を示します。
+伝票に勘定タイプが **顧客** である仕訳帳明細行がある場合、伝票の仕訳帳明細行すべてに同じ税提示方法が適用されます。 
 
-•   消費税コードが免税である場合、消費税提示方法は免税仕入になります。
-
-•   消費税コードがイントラコム VAT である場合、消費税提示方法は消費税収入になります。
-
-•   消費税コードが逆請求である場合、消費税提示方法は消費税収入になります。
-
-それ以外の場合、消費税提示方法は消費税支払になります。
-
-次の図では、ルールをグラフィック表示しています。
-
-![顧客勘定に対する税提示方法の可能性。](media/Sales-Tax-Direction-Customer.jpg)
+消費税コードが非課税販売である場合、消費税提示方法は免税仕入になります。 それ以外の場合、消費税提示方法は消費税支払になります。
 
 ### <a name="account-type-is-ledger"></a>勘定タイプが元帳の場合
 

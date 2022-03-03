@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920726"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102716"
 ---
 # <a name="firm-planned-orders"></a>計画オーダーの確定
 
@@ -35,17 +35,15 @@ ms.locfileid: "7920726"
 
 計画オーダー機能のほとんどは、計画の最適化を使用する Microsoft Dynamics 365 Supply Chain Management のすべての標準インストールで利用できます。 ただし、このトピックで説明する機能のいくつかは、使用前に機能管理で有効にする必要があります。
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>計画オーダーの確定並列化を有効にする
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>計画オーダーの並列確定をオンまたはオフにする
 
-確定並列化により、複数のスレッド間で並列処理することで、確定プロセスの時間を高速化できます。 この方法は、多くの計画オーダーを確定する場合に便利です。
-
-この機能をシステムで使用するには、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)に移動して、*計画オーダーの確定並列化* 機能を有効にします。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
+確定並列化により、複数のスレッド間で並列処理することで、確定プロセスの時間を高速化できます。 この方法は、多くの計画オーダーを確定する場合に便利です。 この機能を使用するには、システムに対して *計画オーダーの並列確定* 機能を有効にする必要があります。 Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して *計画オーダーの並列確定* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>フィルター処理を使用した計画オーダーの確定を有効にする
 
 フィルター処理を使用した計画オーダーの確定により、確定する計画オーダーを選択するロジック基準を定義できます。 選択した計画オーダーをプレビューしたり、プロセスをバックグラウンドで実行したり、またはバッチ ジョブとしてスケジュールしたりもできます。
 
-この機能をシステムで使用するには、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)に移動して、*フィルター処理を使用した計画オーダーの確定* 機能を有効にします。
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *フィルター処理を使った計画オーダーの確定* の機能を検索して、この機能をオンまたはオフにできます。
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>計画最適化の自動確定を有効にする
 

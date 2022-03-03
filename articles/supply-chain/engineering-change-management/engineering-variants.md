@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e24bceac9457212ecaafda876d19ba62df049371
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7471839"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103641"
 ---
 # <a name="generate-variants-for-engineering-products"></a>エンジニアリング製品のバリアントの生成
 
@@ -23,15 +23,9 @@ ms.locfileid: "7471839"
 
 このトピックでは、エンジニアリング製品のバリアントを生成する方法について説明します。
 
-## <a name="turn-on-variant-generation-for-engineering-products"></a>エンジニアリング製品のバリアントの生成を有効にする
+## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>エンジニアリング製品のバリアント生成のオン/オフ設定
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *エンジニアリング変更管理*
-- **機能名:** *エンジニアリング製品のバリアントの生成*
-
-> [!IMPORTANT]
-> *エンジニアリング製品のバリアントの生成* 機能は、*エンジニアリング変更管理* コンフィギュレーション キーを有効にした後にのみ表示されます。 手順については、[エンジニアリング変更管理の概要](product-engineering-overview.md)を参照してください。
+このトピックで説明する機能は、ご利用のシステムで *エンジニアリング変更管理* と *エンジニアリング製品のバリエーション生成* の両方の機能がオンになっている必要があります。 これらの機能のオン/オフの切り替え方法の詳細については、[エンジニアリング変更管理の概要](product-engineering-overview.md) を参照してください。
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>エンジニアリング製品の 1 つ以上の新しいバリアントの生成
 

@@ -2,7 +2,7 @@
 title: Finance Insights の設定に関する問題のトラブルシューティング
 description: このトピックでは、Finance insights の機能の使用時に発生する問題を一覧表示します。 また、これらの問題の修正方法についても説明します。
 author: panolte
-ms.date: 01/29/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064869"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109863"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insights の設定に関する問題のトラブルシューティング
 
@@ -111,6 +111,14 @@ Dynamics 365 Finance ユーザーには、環境の Microsoft Power Apps ユー�
 
 ### <a name="resolution"></a>解決策
 
-**キャッシュ フロー予測** のモデル トレーニングには、1 年を超え、100 件を上回るトランザクションを含むデータが必要です。 これらのトランザクションは、キャッシュ フロー予測設定に含まれる流動資産勘定に影響を与える必要があります。
+**キャッシュ フロー予測** のモデル トレーニングには、1 年以上にわたる 100 件以上のトランザクション データが必要です。 1,000 件以上の取引データが 2 年分以上ある状態が推奨です。
 
-**顧客支払予測** では、予測を作成するために、過去 6 - 9 か月の間に少なくとも 100 件の顧客請求書と支払トランザクションが必要です。  
+**顧客支払予測**  は、過去 6 ヶ月から 9 ヶ月の間に 100 件以上のトランザクションがあることを条件としています。 このトランザクションには、フリーテキストの請求書、受注、顧客支払いなどが含まれます。 このデータは、 **構成** ページで定義されている、**オンタイム**、**遅延**、 **大きな遅延** の各設定にまたがっている必要があります。    
+
+**予算提案** 機能では、少なくとも 3 年分の予算、または実績データが必要です。 このソリューションでは、予測に 3 年から 10 年分のデータを使用します。 3 年以上のデータがあれば、より良い結果が得られます。 データそのものは、数値にばらつきがある方が効果的です。 リース料のように全て一定のデータが含まれている場合、ばらつきがない分、AI が金額を予測する必要がないため、学習が失敗する可能性があります。
+
+## <a name="symptom-error-message-states-that-the-table-with-name-msdyn_paypredpredictionresultentities-does-not-exist-the-remote-server-returned-an-error-404-not-found"></a>症状: エラー メッセージで、「名前 'msdyn_paypredpredictionresultentities' を持つテーブルが存在しません。 リモート サーバーがエラーを返しました: (404) Not Found…」と表示される
+
+### <a name="resolution"></a>解決策
+
+環境が Data Lake Services の最大テーブル数に達しています。 制限の詳細については、[Azure Data Lake へのエクスポートの概要](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md) のトピックの **ほぼリアルタイムのデータ変更を可能にする** セクションを参照してください。

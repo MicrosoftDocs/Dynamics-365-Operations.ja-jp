@@ -1,30 +1,27 @@
 ---
 title: 分析コードおよび製品バリアントの既定の注文設定
 description: 既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。
-author: t-benebo
-manager: tfehr
+author: johanhoffmann
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432256"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102767"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>分析コードおよび製品バリアントの既定の注文設定
 
@@ -118,7 +115,7 @@ Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供�
 
 以下の製品例について考えます。
 
-|                                                     |                                         |
+| 項目                                                | 先頭値                                   |
 |-----------------------------------------------------|-----------------------------------------|
 | **製品名**                                    | 光電センサー                    |
 | **品目番号**                                     | XW56                                    |
@@ -189,12 +186,9 @@ Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供�
 
 厳密な検証は、**既定の注文設定** ページの **発注書**、**在庫**、および **販売注文** のクイックタブで指定されている **標準注文数量** の値に適用されます。 各クイックタブには、独自の **複数** の設定があります。これは、当該クイックタブに指定された **標準注文数量** の値を検証するために使用されます。
 
-### <a name="enable-the-strict-validation-option"></a>厳密な検証オプションの有効化
+### <a name="turn-the-strict-validation-option-on-or-off"></a>厳密な検証オプションのオン/オフ
 
-この厳密な検証オプションを使用するには、システム上で有効化する必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化することができます。 この機能は次のように一覧表示されます。
-
-- **モジュール** - *製品情報管理*
-- **機能名** - *既定の注文数量に対する厳密な検証*
+厳密な検証を行うには、ご利用のシステムで *規定の注文数量に対する厳格な検証* 機能がオンになっている必要があります。 Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25より古いバージョンをご利用の場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *規定の注文数量に対する厳格な検証* の機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ### <a name="set-the-validation-option"></a>検証オプションの設定
 
@@ -204,3 +198,6 @@ Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供�
 1. **一般** タブで、**既定の注文数量に対する検証** を次のいずれかの値に設定します :
     - **厳密** : すべての **標準注文数量** の値が、各クイックタブ (**発注書**、**在庫**、**販売注文**) に対して **複数** の値の倍数になるようにするには、このオプションを選択します。
     - **標準** : 標準の検証を使用するには、このオプションを選択します (この機能が有効化されていない場合も同様に機能します)。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

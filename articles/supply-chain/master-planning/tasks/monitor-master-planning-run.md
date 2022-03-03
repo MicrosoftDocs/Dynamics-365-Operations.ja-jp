@@ -1,27 +1,24 @@
 ---
 title: マスター プランの実行の監視
 description: このトピックでは、生産計画担当が、マスター プランの実行が進行中かどうかを確認する方法について説明します。
-author: josaw1
-manager: tfehr
+author: ChristianRytt
 ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4db1173b35cd196ab39fae3cac3754439fab84d0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431739"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103166"
 ---
 # <a name="monitor-a-master-planning-run"></a>マスター プランの実行の監視
 
@@ -31,12 +28,11 @@ ms.locfileid: "4431739"
 
 **マスター プランの進行状況の表示** ページで、マスター プランの実行履歴の詳細をガント チャートとして表示できます。 この機能は、マスター プランのさまざまなフェーズにかかる時間を理解するのに役立ちます。 現在有効な計画ジョブの場合は、**マスター プランの進行状況の表示** ページを使用して進行状況を追跡し、見積った残り時間を表示できます。
 
-### <a name="turn-on-and-use-the-master-plan-progress-visualization-feature"></a>マスター プランの進行状況の視覚化機能を有効にして使用します。
+### <a name="turn-the-master-plan-progress-visualization-feature-on-or-off"></a>マスター プランの進行状況の視覚化機能をオンまたはオフにする
 
-この機能を使用するには、次の手順を実行します。
+Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *マスター プランの進捗状況の可視化* 機能を検索して、この機能をオンまたはオフにすることができます。
 
-1. **機能管理** ワークスペースの **新規** タブで、一覧から **マスター プランの進行状況の視覚化** を選択します。 この機能が **新しい** タブに表示されない場合は、**無効** タブおよび **すべての** タブを確認します。
-1. **直ちに有効化** を選択します。 または、**スケジュール** を選択し、機能を有効にする時間を選択します。
+### <a name="use-the-master-plan-progress-visualization-feature"></a>マスター プランの進行状況の視覚化機能を使う
 
 **マスター プランの進行状況の表示** ページには、計画ジョブの履歴と有効な計画ジョブの両方を表示できます。 
 
@@ -127,3 +123,6 @@ ms.locfileid: "4431739"
 1. グリッドで、**フィールド** フィールドが **品目番号** に設定されている行を選択します。
 1. **基準** フィールドに値を入力します。
 1. **OK** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

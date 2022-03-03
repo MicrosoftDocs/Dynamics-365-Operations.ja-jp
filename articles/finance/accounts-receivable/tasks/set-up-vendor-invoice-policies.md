@@ -2,33 +2,33 @@
 title: 仕入先請求ポリシーの設定
 description: このトピックでは、仕入先請求ポリシーを設定する方法について説明します。
 author: ShivamPandey-msft
-ms.date: 07/11/2019
+ms.date: 02/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 339f52727b6f5a680f711cf4e6e0b8b0bc290853316fc2f2ff63164c8292d2d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728844"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109759"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>仕入先請求ポリシーの設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、仕入先請求ポリシーを設定する方法について説明します。 [仕入先請求ポリシー] は、[仕入先請求書] ページを使用して仕入先請求書を転記するか、仕入先請求書の [ポリシー違反] ページを開いたときに実行されます。 また、ワークフローに請求書を送信するたびに、仕入先請求書ワークフローを構成して仕入先請求書ポリシーを実行できます。 
+このトピックでは、仕入先請求ポリシーを設定する方法について説明します。 仕入先請求ポリシーは、**仕入先請求書** ページを使用して仕入先請求書を転記するか、仕入先請求書の **ポリシー違反** ページを開いたときに実行されます。 また、ワークフローに請求書を送信するたびに、仕入先請求書ワークフローを構成して仕入先請求書ポリシーを実行できます。 
 
 - 仕入先請求ポリシーは仕入帳や請求仕訳帳で作成した請求書には適用しません。  
-- 請求書照合の検証は、仕入先請求ポリシーを使用せず、[買掛金管理パラメーター] ページで設定します。  
-- このレコードでは、USMF デモ会社を使用します。 買掛金勘定マネージャーまたは会計マネージャーのロールでは、次の手順を実行します。 始める前に、[請求書照合] コンフィギュレーション キーが選択されていることを確認します。
+- 請求書照合の検証は、仕入先請求ポリシーを使用せず、**買掛金管理パラメーター** ページで設定します。  
+- このレコードでは、USMF デモ会社を使用します。 買掛金勘定マネージャーまたは会計マネージャーのロールでは、次の手順を実行します。 始める前に、**請求書照合** コンフィギュレーション キーが選択されていることを確認します。
 
 
 ## <a name="prepare-to-create-vendor-invoice-policies"></a>仕入先請求書ポリシーの作成準備
@@ -56,7 +56,7 @@ ms.locfileid: "6728844"
 2. **新規** を選択します。
 3. **名前** および **説明** フィールドに、値を入力します。
 4. **ポリシーの組織** セクションを展開または折りたたみます。
-5. ツリーで、**Contoso エンターテインメント システム USA** を選択します。
+5. ツリーで、**Contoso Entertainment System USA** を選択します。
 6. **追加** を選択します。
 7. **ポリシー ルール** セクションを展開または折りたたみます。
 8. **ポリシー ルールの作成** を選択します。

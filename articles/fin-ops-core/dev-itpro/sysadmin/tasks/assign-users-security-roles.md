@@ -2,11 +2,9 @@
 title: ユーザーのセキュリティ ロールへの割り当て
 description: Finance and Operations アプリにアクセスするには、ユーザーをセキュリティ ロールに割り当てる必要があります。
 author: Peakerbl
-manager: AnnBe
-ms.date: 05/06/2020
+ms.date: 02/09/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 36874b996cc5708f6fd7fbc45251f3066b5b1c97
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679867"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105541"
 ---
-# <a name="assign-users-to-security-roles"></a>ユーザーのセキュリティ ロールへの割り当て
+# <a name="manage-users-and-security-roles"></a>ユーザーとセキュリティ ロールを管理する
 
 [!include [banner](../../includes/banner.md)]
 
-Finance and Operations アプリで一般的な機能以外のものを使用する場合は、ユーザーがセキュリティ ロールに割り当てられている必要があります。 ルールやビジネスデータに基づいて、ユーザーを自動的にロールに割り当てたり、自動ロール割り当てからユーザーを除外したり、ユーザーを手動でロールに追加することができます。
+財務と運用アプリで一般的な機能以外のものを使用する場合は、ユーザーがセキュリティ ロールに割り当てられている必要があります。 ルールやビジネスデータに基づいて、ユーザーを自動的にロールに割り当てたり、自動ロール割り当てからユーザーを除外したり、ユーザーを手動でロールに追加することができます。
 
 ## <a name="automatically-assign-users-to-roles"></a>ロールへのユーザーの自動割り当て
 この手順では、業務データに基づいてシステム管理者がどのようにしてユーザーを自動的にロールに割り当てられるかについて説明します。 
@@ -42,6 +40,8 @@ Finance and Operations アプリで一般的な機能以外のものを使用す
 10. さまざまなユーザーに割り当てられているロールを確認して、ロール割り当てクエリが正しいことを確認します。 必要に応じて調整して再実行します。
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>自動ロール割り当てからのユーザーの除外
+この手順では、役割の自動割り当ての対象からユーザーを除外する方法について説明します。
+
 1. ページを閉じます。
 2. **ナビゲーション ウィンドウ > モジュール > システム管理 > セキュリティ > ユーザーをロールに割り当てる** に移動します。
 3. ツリーで、「会計監修者」を選択します。 ロールを選択します。 この例では、会計監修者を選択します。  
@@ -57,3 +57,19 @@ Finance and Operations アプリで一般的な機能以外のものを使用す
 2. **ロールに割り当てられたユーザー** メニューで、**手動でユーザーを割り当てる/除外する** を選択します。
 4. **手動でユーザーを割り当てる/除外する** では、ロールが割り当てられていないユーザーが、**割り当てモード** が **なし** に設定された状態で表示され ます。 ロールを割り当てる 1 人または複数のユーザーを選択します。
 5. **アクション ウィンドウ** で、**ロールに割り当てる** を選択します。 **割り当てモード** は **手動** に更新され、ユーザーは新しいロールが割り当てられるようになります。
+
+## <a name="manually-remove-users-from-roles"></a>ロールからユーザーを手動で削除する
+セキュリティ ロールに手動で割り当てられたユーザーは、管理者が手動で削除する必要があります。 自動ロール割り当てのルールは、これらのユーザーを削除しません。
+
+1. **ナビゲーション ウィンドウ > モジュール > システム管理 > セキュリティ > ユーザーをロールに割り当てる** に移動します。
+2. 1 人のユーザーを削除するには、次の手順に従います:
+   1. ツリーでロールを選択します。 
+   2. **ロールに割り当てられているユーザー** 領域で、削除するユーザーを選択します。
+   3. **削除** を選択すると、ユーザーがロールから削除されます。
+3. 複数のユーザーを削除するには、次の手順に従います:
+   1. ツリーでロールを選択します。 
+   2. **ロールに割り当てられたユーザー** 領域で、**手動でのユーザーの割り当て/除外** を選択します。
+   3. **手動でユーザーを割り当てる/除外する** ページで、 ロールに割り当てられていないユーザーには、**割り当てモード** 列に **なし** が表示されます。 ロールから除外するユーザーを選択します。
+   4. **アクション ウィンドウ** で、**ロールから除外** を選択します。 **割り当てモード** の列が **手動** に更新され、ユーザーがロールから除外されるようになります。
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

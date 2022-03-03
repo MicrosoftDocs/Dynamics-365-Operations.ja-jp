@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 98d28c39b2923afecc851299a07aa3b93ef2edce
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 27e9e977193f9ff5c8188b780e8de955742c4ebe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867297"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323878"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Word 形式でレポートを生成するための新しい ER 構成を設計する
 
@@ -28,7 +28,7 @@ ms.locfileid: "7867297"
 
 ![Word デスクトップ アプリケーションの管理レポートのサンプル テンプレート。](./media/er-design-configuration-word-image1.png)
 
-Word ドキュメントを Word 形式のレポートのテンプレートとして使用するには、新しい [電子申告 (ER)](general-electronic-reporting.md) [ソリューション](er-quick-start1-new-solution.md) を構成できます。 このソリューションには、ER [形式](general-electronic-reporting.md#FormatComponentOutbound) コンポーネントを含む ER [構成](general-electronic-reporting.md#Configuration) を含める必要があります。
+Word ドキュメントを Word 形式のレポートのテンプレートとして使用するには、新しい [電子申告 (ER)](general-electronic-reporting.md) [ソリューション](er-quick-start1-new-solution.md) を構成できます。 このソリューションには、ER 形式 コンポーネントを含む ER [構成](general-electronic-reporting.md#Configuration) を含める必要があります。
 
 > [!NOTE]
 > Word 形式でレポートを生成するために新しい ER 形式の構成を作成する場合は、**構成の作成** ドロップダウン ダイアログ ボックスで形式タイプとして **Word** を選択するか、**形式タイプ** フィールドを空白のままにする必要があります。

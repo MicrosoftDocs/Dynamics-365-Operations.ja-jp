@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: d8bc4f0a981b75c1b65d51aa1d8fada9c2187e22
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921218"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323413"
 ---
 # <a name="credit-management-parameters-setup"></a>与信管理パラメーターの設定
 
@@ -50,7 +50,8 @@ ms.locfileid: "7921218"
 
 支払猶予日数を指定しない場合は、与信管理ルールを実行するように設定されているすべての転記手順で、与信ルールがチェックされます。 販売注文を転記せずにリリースした後で、同じ注文処理手順を再度実行すると、与信ルールが再度確認されます。 たとえば、注文は確認後に保留中になり、転記があるかどうかにかかわらずリリースされます。 この場合、注文は、再度確認すると保留になります。 注文が再び保留されずに次の処理ステップに進む必要がある場合は、支払猶予日数を使用します。
 
-一部の転記チェックポイントに対して支払猶予日数を指定できませんが、他のチェックポイントには指定できます。 すべての転記チェックポイントを設定して猶予日数を設定するか、猶予日数がないようにすべての転記チェックポイントを設定する必要があります。
+> [!Note]
+> あるポスティング チェックポイントに猶予日が入力されている場合、ポスティングのためにマークされているすべてのチェックポイントに猶予日を入力する必要があります。
 
 - 明細行に表示される転記チェックポイントが実行されるときに与信管理ルールを実行するには、**転記** チェック ボックスをオンにします。 このチェック ボックスをオフにすると、転記プロセス全体でルールが 1 回だけチェックされます。
 - **転記** チェック ボックスをオンにした場合は、ブロック ルールが再度オンになるまでに経過する支払猶予日数を指定します。 **転記** のチェック ボックスをオフにした場合は、支払猶予日数を追加することはできません。

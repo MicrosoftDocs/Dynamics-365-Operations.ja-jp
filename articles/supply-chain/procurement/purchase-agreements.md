@@ -1,12 +1,10 @@
 ---
 title: 購買契約
 description: この記事は、購買契約書に関する情報を提供します。 購買契約とは、長期にわたって複数の発注書を使用して指定された数量または金額を購入することを組織に確約する契約です。 この確約と引き換えに、購買担当者は特別価格と割引を受けます。
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017190"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103741"
 ---
 # <a name="purchase-agreements"></a>購買契約
 
@@ -43,10 +41,7 @@ ms.locfileid: "5017190"
 購買契約書の分類における主要な担当者および二次担当者を識別できます。 これらの値は、結果としての購買契約によって継承されます。 担当作業者を購買契約書に追加する必要はなく、購買契約書自体に基づいて、ケースごとに直接変更することができます。 二次担当作業者は必要ではありませんが、主要な担当作業者なしに二次担当作業者を指定することは出来ません。 同じ作業者を、主要な、また二次担当作業者の両方に指定することはできません。
 
 > [!IMPORTANT]
-> 責任者の機能を使用するには、システム上で有効化する必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-> 
-> - **モジュール:** *調達*
-> - **機能名:** *購買契約の責任者*
+> 責任者の機能を使用するには、システム上で有効化する必要があります。 Supply Chain Management 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *購買契約の責任者* の機能を検索して、この機能をオンまたはオフにできます。
 
 ## <a name="commitment-types"></a>確約のタイプ
 購買契約書の各行は、購入確約を示します。 複数の発注書 (PO) の行を使用して確約を履行することができます。 確約には次の 4 つのタイプがあります。
@@ -104,12 +99,13 @@ ms.locfileid: "5017190"
 ## <a name="financial-dimensions-on-purchase-agreements"></a>購買契約書の財務分析コード
 購買契約書のドキュメント ヘッダーまたは個々の明細行に財務分析コードをコピーできます。 契約ヘッダーまたは契約明細行にある分析コードを変更する場合、変更はリリースされた注文に影響はしませんが、すべての新しい注文に反映されます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
-[購買契約書の作成](tasks/create-purchase-agreement.md)
-
-[購買契約書からの購買リリース注文の作成](tasks/create-purchase-release-order-purchase-agreement.md)
+- [購買契約書の作成](tasks/create-purchase-agreement.md)
+- [発注書の作成時に購買契約書を適用する](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f0fba0a9234e5b7cb055f7b97578bff72f1d06ac
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571980"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103616"
 ---
 # <a name="enable-change-management-on-existing-products"></a>既存の製品の変更管理の有効化
 
@@ -27,12 +27,9 @@ ms.locfileid: "7571980"
 
 既存の製品の変更管理を有効にすると、その製品のバージョンを作成し、その製品の存続期間を通じて行われた変更を追跡できます。 したがって、変更オーダーを使用することでそれらの変更を追跡できます。 変更管理を有効にするには、関連する製品を *エンジニアリング品目* (エンジニアリング製品とも呼ばれます) に変換する必要があります。 エンジニアリング製品は、変更管理によってバージョン指定され、管理される製品です。 ウィザードに従って変換プロセスを実行できます。
 
-## <a name="turn-on-the-feature-in-your-system"></a>システムで機能を有効化する
+## <a name="turn-this-feature-on-or-off"></a>この機能のオン/オフの切り替え
 
-この機能を使用するには、次の設定手順を完了する必要があります。
-
-1. [エンジニアリング変更管理の概要](product-engineering-overview.md) の説明に従って、エンジニアリング変更管理および構成キーを有効にします。
-1. 機能管理で *既存の製品の変更管理の有効化* 機能を有効にします。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
+このトピックで説明する機能は、ご利用のシステムで *エンジニアリング変更管理* と *既存製品の変更管理を有効にする* の両方の機能がオンになっている必要があります。 これらの機能のオン/オフの切り替え方法の詳細については、[エンジニアリング変更管理の概要](product-engineering-overview.md) を参照してください。
 
 ## <a name="restrictions-and-limitations"></a>規制と制限
 

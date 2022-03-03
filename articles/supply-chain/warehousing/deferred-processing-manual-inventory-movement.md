@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f5c9ba7079895feeb0c171f2021479587aa13cc9
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 21dd01448fcf6c2b3ca90a5476fad061bb0f55e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777669"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102742"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>手動在庫移動の繰延処理
 
@@ -32,10 +32,10 @@ ms.locfileid: "7777669"
 
 この機能を使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします。 次の順序でオンにする必要があります。
 
-1. 組織全体の作業ブロック (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です)。
-1. 倉庫アプリ イベントの処理
-1. 遅延プット オペレーション
-1. 手動在庫移動操作の遅延処理
+1. *組織全体の作業のブロック*<br>(Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です)。
+1. *倉庫アプリ イベントの処理*<br>(Supply Chain Management 10.0.25 より、この機能は規定でオンになっています。)
+1. *遅延プット オペレーション*
+1. *手動在庫移動操作の遅延処理*<br>(Supply Chain Management のバージョン 10.0.25 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です)。
 
 ## <a name="configure-the-work-processing-policies"></a>作業処理ポリシーの構成
 

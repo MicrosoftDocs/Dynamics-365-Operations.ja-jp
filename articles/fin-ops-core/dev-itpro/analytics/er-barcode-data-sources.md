@@ -2,11 +2,9 @@
 title: バーコードのイメージを生成するためにバーコード データソースを使用する
 description: このトピックでは、バーコードのイメージを生成するためのバーコード データ ソースの使用方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: 3fb754267de1120bc3c086d49cb7c63028183bda
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681427"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323955"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>バーコードのイメージを生成するためにバーコード データソースを使用する
 
 [!include[banner](../includes/banner.md)]
 
-[電子レポート (ER)](general-electronic-reporting.md) フレームワークを使用すると、必要な電子形式または印刷可能な送信ドキュメントを生成するために実行できる [ER 形式コンポーネント](general-electronic-reporting.md#FormatComponentOutbound) をデザインできます。 Microsoft Office 形式でで送信ドキュメントを生成するには、Microsoft Excel ドキュメントまたはレポート テンプレートとしての Microsoft Word ドキュメントのいずれかを使用することで、レポートのレイアウトを指定する必要があります。 [ER 操作デザイナー](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) を使用すると、レポートのテンプレートとして Excel または Word ドキュメントを添付できます。 以下の添付されたテンプレートの名前付き要素は、次の構成済みの形式コンポーネントの要素に関連付けられます。
+[電子レポート (ER)](general-electronic-reporting.md) フレームワークを使用すると、必要な電子形式または印刷可能な送信ドキュメントを生成するために実行できる ER 形式コンポーネント をデザインできます。 Microsoft Office 形式でで送信ドキュメントを生成するには、Microsoft Excel ドキュメントまたはレポート テンプレートとしての Microsoft Word ドキュメントのいずれかを使用することで、レポートのレイアウトを指定する必要があります。 [ER 操作デザイナー](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) を使用すると、レポートのテンプレートとして Excel または Word ドキュメントを添付できます。 以下の添付されたテンプレートの名前付き要素は、次の構成済みの形式コンポーネントの要素に関連付けられます。
 
 - Word のコンテンツ コントロール
 - Excel の名前指定シート、範囲、セル、図形、およびイメージ
@@ -39,7 +37,7 @@ ER は **バーコード** データ ソースの種類をサポートするよ�
 
 次のプレースホルダーは、レポート テンプレートでバーコードのイメージを入力するために使用できます。
 
-- Wordの [画像](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) コンテンツ コントロール
+- Wordの [画像](/office/client-developer/word/content-controls-in-word) コンテンツ コントロール
 - Excel の [画像](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344) オブジェクト
 
 **バーコード** タイプのデータ ソースを使用すると、次の形式でバーコードを生成できます。
@@ -118,21 +116,21 @@ ER は **バーコード** データ ソースの種類をサポートするよ�
 
 | コンテンツの説明         | ファイル名                   |
 |-----------------------------|-----------------------------|
-| ER データ モデル構成 | cheques.xml 用のモデル       |
-| ER フォーマット構成     | format.xml を印刷する小切手 |
+| ER データ モデル構成 | [cheques.xml 用のモデル](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)      |
+| ER フォーマット構成     | [format.xml を印刷する小切手](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
 
 さらに、提供されている ER ソリューション用に変更されたテンプレートを含む次の Excel ファイルをダウンロードします。
 
 | コンテンツの説明 | ファイル名                 |
 |---------------------|---------------------------|
-| レポート テンプレート     | テンプレート Excel .xlsx をチェックする |
+| レポート テンプレート     | [テンプレート Excel .xlsx をチェックする](https://download.microsoft.com/download/3/b/d/3bd3b944-da8f-43b4-8533-3c1292a4c3ef/CheckTemplateExcel.xlsx) |
 
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>コンフィギュレーション プロバイダーの有効化
 
 1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. **ローカライズ構成** ページの、**構成プロバイダー** セクションで、**Litware, Inc.** サンプル会社の [構成プロバイダー](general-electronic-reporting.md#Provider) がリストされ、アクティブとしてマークされていることを確認します。 この構成プロバイダーがリストに表示されない場合、またはアクティブとしてマークされていない場合、[構成プロバイダーの作成およびアクティブなプロバイダーとしてのマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) トピックの手順に従ってください。
 
-![ローカライズ構成ページで、サンプル会社をアクティブにする設定](./media/er-barcode-data-source-active-provider.png)
+![ローカライズ構成ページで、サンプル会社をアクティブにする設定。](./media/er-barcode-data-source-active-provider.png)
 
 ### <a name="import-the-provided-er-solution"></a><a name="ExampleImportSolution"></a>指定された ER ソリューションをインポートする
 
@@ -162,14 +160,14 @@ ER は **バーコード** データ ソースの種類をサポートするよ�
 7. 操作ウィンドウで、**印刷テスト** を選択します。
 8. ダイアログ ボックスで、**流通小切手形式** オプションを **はい** に設定し、**OK** を選択します。
 
-    ![レイアウトの確認 - 印刷テストのダイアログ ボックス](./media/er-barcode-data-source-check-layout.png)
+    ![レイアウトの確認 - 印刷テストのダイアログ ボックス。](./media/er-barcode-data-source-check-layout.png)
 
 ### <a name="review-the-generated-payment-check"></a><a name="ExampleReviewGeneratedCheque"></a>生成された支払い小切手をレビューする
 
 - 生成された小切手を Excel で開きます。
 2. 生成した小切手をレビューします。
 
-    ![生成された支払い小切手を Excel で開く](./media/er-barcode-data-source-cheque1.png)
+    ![生成された支払い小切手を Excel で開く。](./media/er-barcode-data-source-cheque1.png)
 
 ### <a name="modify-the-format-of-the-provided-er-solution"></a><a name="ExampleModifyFormat"></a>提供されている ER ソリューションの形式を変更する
 
@@ -177,7 +175,7 @@ ER は **バーコード** データ ソースの種類をサポートするよ�
 
 Excel デスクトップ アプリケーションを使用して、前にインポートした **小切手テンプレートのExcel .xlsx** ファイルを開きます。 このテンプレートは、提供されている ER ソリューションで支払チェックを生成するために使用したテンプレートとは異なることに注意してください。 さらに、バーコード イメージの **AmountBarcode** 要素も含まれます。
 
-![Excel テンプレートの AmountBarcode 要素](./media/er-barcode-data-source-cheque2.png)
+![Excel テンプレートの AmountBarcode 要素。](./media/er-barcode-data-source-cheque2.png)
 
 ER ソリューションを変更してから、変更したテンプレートを[再度適用](modify-electronic-reporting-format-reapply-excel-template.md) する必要があります。
 
@@ -188,7 +186,7 @@ ER ソリューションを変更してから、変更したテンプレート�
 5. ER 運営デザイナーで、**マッピング** タブを選択し、左側の形式ツリー ウィンドウで **展開/折りたたみ** を選択します。
 6. すべてのセル形式要素が適切なデータソースにバインドされていることに注意してください。
 
-    ![ER 操作デザイナーにおけるセル形式要素のデータソースへのバインド](./media/er-barcode-data-source-cells-bound.png)
+    ![ER 操作デザイナーにおけるセル形式要素のデータソースへのバインド。](./media/er-barcode-data-source-cells-bound.png)
 
 7. ページの右側にあるバーで、**フォーマット** を選択します。
 8. 操作ウィンドウで、省略記号 (**...**) を選択し、**インポート** を選択します。
@@ -197,7 +195,7 @@ ER ソリューションを変更してから、変更したテンプレート�
 11. ページの右側にある **マッピング** タブを選択し、左側の形式ツリー ウィンドウで **展開/折りたたみ** を選択します。
 12. **AmountBarcode** セル要素が形式に追加されていることを確認します。 この要素は、変更された Excel テンプレートにバーコードの画像のプレースホルダーとして追加された **AmountBarcode** 要素に関連付けられています。
 
-    ![ER 操作デザイナーの形式に追加された AmountBarcode セル要素](./media/er-barcode-data-source-cell-added.png)
+    ![ER 操作デザイナーの形式に追加された AmountBarcode セル要素。](./media/er-barcode-data-source-cell-added.png)
 
 #### <a name="add-a-new-barcode-data-source"></a><a name="ExampleModifyFormatAddDataSource"></a>新しいバーコード データ ソースを追加する
 
@@ -206,14 +204,14 @@ ER ソリューションを変更してから、変更したテンプレート�
 1. ER 運営デザイナーで、ページの右側にある **マッピング** タブで、データソースの **印刷** を選択します。
 2. **追加** をクリックし、**機能** グループで、**バーコード** データソース タイプを選択します。
 
-    ![バーコード データソース タイプの選択](./media/er-barcode-data-source-add.png)
+    ![バーコード データソース タイプの選択。](./media/er-barcode-data-source-add.png)
 
 3. ダイアログボックスで、**名前** フィールドに **バーコード** と入力します。
 4. **バーコード形式** で、**Code 128** を選択します。
 5. **幅** フィールドに、**500** と入力します。
 6. **OK** を選択します。
 
-    ![データ ソース プロパティ ダイアログ ボックス](./media/er-barcode-data-source-add2.png)
+    ![データ ソース プロパティ ダイアログ ボックス。](./media/er-barcode-data-source-add2.png)
 
 #### <a name="bind-a-new-format-element"></a><a name="ExampleModifyFormatBindFormatElement"></a>新規形式要素をバインドする
 
@@ -224,7 +222,7 @@ ER ソリューションを変更してから、変更したテンプレート�
 3. 操作ウィンドウで、**詳細の表示** を選択します。
 4. **バーコード** データソースは、バインドでは 1 つのパラメータを含む関数として表されているため、バインド形式の要素の名前は、そのパラメータの引数として自動的に取得されます。
 
-    ![ER オペレーション デザイナーのバーコード データソースの詳細](./media/er-barcode-data-source-bind1.png)
+    ![ER オペレーション デザイナーのバーコード データソースの詳細。](./media/er-barcode-data-source-bind1.png)
 
 5. **フォーミュラの編集** を選択してバインドを調整します。
 
@@ -234,7 +232,7 @@ ER ソリューションを変更してから、変更したテンプレート�
 7. **保存** を選択して、[ER 式デザイナー](general-electronic-reporting-formula-designer.md) を閉じます。
 8. バインドが調整されていることを確認します。
 
-    ![ER 操作デザイナーで調整されたバインド](./media/er-barcode-data-source-bind2.png)
+    ![ER 操作デザイナーで調整されたバインド。](./media/er-barcode-data-source-bind2.png)
 
 9. **保存** を選択して、ER 操作デザイナー を閉じます。
 
@@ -279,7 +277,7 @@ ER ソリューションを変更してから、変更したテンプレート�
 6. **OK** を選択します。
 7. 生成した小切手をレビューします。 小切手の未払金額をエンコードするためのバーコードが生成されていることに注意してください。
 
-    ![Excel のバーコードで生成された支払小切手](./media/er-barcode-data-source-cheque3.png)
+    ![Excel のバーコードで生成された支払小切手。](./media/er-barcode-data-source-cheque3.png)
 
 > [!IMPORTANT]
 > **バーコード** データ ソースに固有の適切な要件に、バーコード データ ソースの引数が準拠していない場合は、例外がスローされます。 たとえば、**バーコード** データ ソースが、指定されたテキストに [EAN 8](https://wikipedia.org/wiki/EAN-8) バーコードを生成するために呼び出された場合、テキストの長さが 7 文字を超えると例外がスローされます。
@@ -290,7 +288,7 @@ ER ソリューションを変更してから、変更したテンプレート�
 
 ただし、**バーコード** データ ソースを使用してバーコードを作成する場合、これらのバーコードのレンダリングはフォントに依存しません。 したがって、バーコードが含まれているドキュメントを PDF 形式に簡単に変換できます。 次の図は、構成済みの ER [出力先](electronic-reporting-destinations.md) の設定に基づいて、PDFに [変換された](electronic-reporting-destinations.md#OutputConversionToPDF) 、生成された支払小切手のプレビューを示しています。
 
-![支払小切手の PDF のプレビュー](./media/er-barcode-data-source-cheque4.png)
+![支払小切手の PDF のプレビュー。](./media/er-barcode-data-source-cheque4.png)
 
 ## <a name="limitations"></a>制限
 
@@ -303,3 +301,6 @@ ER ソリューションを変更してから、変更したテンプレート�
 - [電子レポートの出力先](electronic-reporting-destinations.md)
 - [電子報告のフォーミュラ言語](er-formula-language.md)
 - [NUMBERFORMAT 機能](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
