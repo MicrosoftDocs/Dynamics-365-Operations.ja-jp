@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd9962451e8b72677e1a006dd9c1b8b8b268c93e
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: fb268c2643b45f6797793dbc5b7cc2e33d5218d9
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798650"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564217"
 ---
 # <a name="action-search"></a>アクション検索
 
@@ -75,3 +74,6 @@ Ctrl + /、または Alt + Q を押しても、アクション検索を開始で
 ## <a name="action-search-vs-navigation-search"></a>アクション検索対ナビゲーション検索
 
 アクション検索がページで検索し実行するアクションであるのに対し、複数のページを検索し移動する別の検索メカニズムがあります。 この機能の詳細については、「[ナビゲーション検索](navigation-search.md)」の記事を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

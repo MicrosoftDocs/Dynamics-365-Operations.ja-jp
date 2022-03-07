@@ -2,9 +2,11 @@
 title: 財務分析コードおよび転記
 description: 勘定科目表を計画し設定する場合、ドキュメントまたは仕訳帳を転記するときにさまざまなコンポーネントがどのように連携するかを考慮する必要があります。 これらのコンポーネントには、高度なルール、詳細ルール、および差引勘定と固定の分析コードが含まれます。 このトピックでは、各コンポーネントについて、さらにコンポーネントがどのように連携するかについて説明します。
 author: aprilolson
+manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9e7416c1ed69fa9783694e2adee7ada4e25e14054daeb1761428855690eb522f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 086270fda7da17c60239c7c86e9ff4ab3f31ef77
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778969"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225250"
 ---
 # <a name="financial-dimensions-and-posting"></a>財務分析コードおよび転記 
 
@@ -71,29 +73,29 @@ ms.locfileid: "6778969"
 
 次の図は、主勘定 401100 で設定されている固定の既定の分析コードを示します。
 
-[![既定の財務分析コード。](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![既定の財務分析コード](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 この基本的な例では、部門分析コードが既定値 **023** (工程) を使用するよう設定されている一般仕訳帳を入力します。 勘定科目を入力および転記します。 次の図は、一般会計ヘッダーでの既定の財務分析コードを示します。
 
-[![一般仕訳帳。](./media/general-journal.png)](./media/general-journal.png)
+[![一般仕訳帳](./media/general-journal.png)](./media/general-journal.png)
 
 仕訳帳ヘッダーの既定の分析コードは、売上勘定明細行に既定で 023 が適用される部門を発生します。 次の図は、ヘッダーから取得される **023** 既定の分析コード値が適用される、一般仕訳帳明細行を示します。
 
-[![仕訳伝票。](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![仕訳伝票](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 ただし、明細行が転記されると、固定分析コードが適用され、明細行が部門 022 に転記されます。 次の図は、売上勘定に固定分析コードが適用されている転記済の伝票を示します。
 
-[![固定分析コードが適用された伝票トランザクション。](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![伝票トランザクション](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>例 2
 
 この例では、最初の例と同じ設定を使用します。 ただし、2 番目のコンポーネントを追加し、差引勘定の分析コードとして部門分析コードを使用します。 次の図では、**部門** は USMF 元帳の差引勘定の財務分析コードとして設定されます。
 
-[![差引勘定の財務分析コードとしての部門を示す図。](./media/ledger.png)](./media/ledger.png)
+[![元帳](./media/ledger.png)](./media/ledger.png)
 
 同じ仕訳帳ヘッダーの設定を使用する場合、同じトランザクションが転記され、固定分析コードが最初に適用されます。 次に、すべての部門がバランス済みエントリを持つことを保証するよう、分散ロジックが適用されます。 次の図は、固定分析コードを適用した後のバランシング エントリが含まれている伝票トランザクションを示します。
 
-[![バランシング エントリが適用された後の伝票トランザクション。](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![伝票トランザクション](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>例 3
 
@@ -101,11 +103,11 @@ ms.locfileid: "6778969"
 
 この例は、順序のため重要です。 主勘定を入力した後は、勘定構造が決定されます。 勘定構造の設定を参照する場合は、システムは該当する主勘定、事業単位、部門、およびコスト センターを決定できます。 この時点では、仕訳伝票の転記時に既定の分析コードが適用されるまで固定分析コードは適用されないため、詳細ルールはトリガーされていません。 次の図では、詳細ルールの条件が満たされていないため、顧客セグメントが存在していません。
 
-[![勘定科目。](./media/drop-down.png)](./media/drop-down.png)
+[![勘定科目](./media/drop-down.png)](./media/drop-down.png)
 
 固定分析コードがプロセスの最後に適用されたため、転記が成功しません。 分析コードの検証は、主勘定が 401100 および部門 022 である場合に必要である顧客のセグメントを決定します。 転記は、検証エラーが原因で発生しません。 次の図は、分析コードの検証が、顧客を必要なセグメントであると決定した後に表示されるメッセージを示します。
 
-[![メッセージの詳細。](./media/message.png)](./media/message.png)
+[![メッセージの詳細](./media/message.png)](./media/message.png)
 
 この例では、詳細ルールがトリガーされ、顧客セグメントを入力できるよう、既定値を上書きする必要があります。 ただし、このソリューションは常に可能ではなく、一部のユーザーは転記ルールに注意していないかもしれません。 したがって、勘定科目表を設定する際に既定の分析コードが適用される順序を理解しておくことが重要です。
 
@@ -119,11 +121,11 @@ ms.locfileid: "6778969"
 
 [勘定科目表の計画](plan-chart-of-accounts.md) 
 
-[AX 2012 の勘定科目表の計画ブログ](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7)– このリンクは 7 部から成るシリーズの 1 部に移動します。
+[AX 2012 の勘定科目表の計画ブログ](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/)– このリンクは 7 部から成るシリーズの 1 部に移動します。
 
-[勘定配布で既定分析コード](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
+[勘定配布で既定分析コード](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
-[分析コード フレームワークで既定分析コード](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[分析コード フレームワークで既定分析コード](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

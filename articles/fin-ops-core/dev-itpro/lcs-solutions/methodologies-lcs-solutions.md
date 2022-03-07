@@ -1,12 +1,10 @@
 ---
 title: ソリューションへの方法論の追加
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。 また、方法の要件に関する情報も提供されます。
+description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.custom: 197063
 ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 231c2c4b059ef88726fe35a1c197338918568bff
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e7054856f03d138eac607fe2225145096a806e5303e6857d9bbe02f43fea9aee
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685035"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762206"
 ---
 # <a name="add-methodologies-to-solutions"></a>ソリューションへの方法論の追加
 
@@ -27,8 +25,7 @@ ms.locfileid: "4685035"
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の方法を作成および変更する方法について説明します。 また、方法の要件に関する情報も提供されます。
 
-<a name="methodology-requirements"></a>方法の要件
-------------------------
+## <a name="methodology-requirements"></a>方法の要件
 
 方法論の最初の 2 つのフェーズは、LCS ソリューションの消費方法論からの学習と消費のフェーズです。 
 
@@ -45,7 +42,7 @@ ms.locfileid: "4685035"
 
 ## <a name="create-a-new-methodology"></a>新しい方法の作成
 1.  LCS ホーム ページで、**方法の管理** タイルを選択します。
-2.  **新しい方法** ボタン (＋記号[**+**]) を選択します。
+2.  **新しい方法** ボタン (プラス記号 **+**) を選択します。
 3.  フィールドの値を設定し、**確定** を選択します。
 4.  フェーズおよびタスクを作成します。
 5.  必要なリンクされているツールとリソースを追加します。
@@ -69,7 +66,9 @@ ms.locfileid: "4685035"
 4.  **確認** を選択します。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

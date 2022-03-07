@@ -2,28 +2,19 @@
 title: デュアル書き込みの設定方法に関するガイダンス
 description: このトピックでは、デュアル書き込みの設定でサポートされているシナリオについて説明します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 434d1a432cc4b8cfd31198f8f668aef6e04a51fa
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744856"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782606"
 ---
 # <a name="guidance-for-dual-write-setup"></a>デュアル書き込みの設定方法に関するガイダンス
 
@@ -138,3 +129,6 @@ Finance and Operations アプリの既存インスタンスと Customer Engageme
 例については、[Customers V3 の有効化—連絡先テーブル マップ](enable-entity-map.md#enable-table-map)を参照してください
 
 初期同期を実行する必要がある各エンティティのデータ ボリュームに基づく代替的なアプローチについては、[初期同期の考慮事項](initial-sync-guidance.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

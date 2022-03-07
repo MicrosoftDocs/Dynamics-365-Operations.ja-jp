@@ -1,10 +1,12 @@
 ---
 title: ベースライン予測に対して手動調整を行う
 description: このトピックでは、ベースライン予測に手動調整を加えたり、予測の詳細を表示したりする方法を説明します。
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d00061efa551c9fe2ad9d0e441bba44e70b071c
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 90d19e9465abc71125931a7946febe2d633c3181
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103766"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251964"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>ベースライン予測に対して手動調整を行う
 
@@ -67,13 +69,14 @@ ms.locfileid: "8103766"
 
 **メモ :**
 
-- *需要予測詳細での予測モデルの選択* 機能は、**需要予測の詳細** ページで、含める予測モデルを選択できるように設定を追加します。 Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *需要予測詳細での予測モデルの選択* を検索して、この機能をオンまたはオフにすることができます。
-- このページの **予測** セクションに表示される信頼区間は、信頼区間の上限と信頼区間の下限の差を表します。 上限と下限の値を確認するには、**履歴需要と予測のグラフィック表示** セクションでグラフをポイントします。
-- 需要予測 Microsoft Azure Machine Learning を使用する際は、生成される予測に必要な信頼レベルの割合を指定できます。 信頼区間は、需要予測の商品見積として機能する値の範囲で構成されます。 95% の信頼レベルは、需要予測が信頼区間の範囲外になるリスクが 5% あることを示します。
+-   機能管理から **需要予測詳細における予測モデルの選択** を有効にすると、**需要予測の詳細** ページで、過去の予測に含める予測モデルを選択できるようになります。
+-   このページの **予測** セクションに表示される信頼区間は、信頼区間の上限と信頼区間の下限の差を表します。 上限と下限の値を確認するには、**履歴需要と予測のグラフィック表示** セクションでグラフをポイントします。
+-   需要予測 Microsoft Azure Machine Learning を使用する際は、生成される予測に必要な信頼レベルの割合を指定できます。 信頼区間は、需要予測の商品見積として機能する値の範囲で構成されます。 95% の信頼レベルは、需要予測が信頼区間の範囲外になるリスクが 5% あることを示します。
 
 また、**予測** セクションの **予測** 行の値を変更することによって、**需要予測の詳細** ページで予測に手動調整を加えることもできます。
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 [予測精度の監視](monitor-forecast-accuracy.md)
 

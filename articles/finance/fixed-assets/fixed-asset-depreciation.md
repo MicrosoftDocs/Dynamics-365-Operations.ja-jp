@@ -1,12 +1,10 @@
 ---
 title: 固定資産の減価償却
-description: このトピックは、固定資産の償却の概要を示します。
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/30/2017
+description: このトピックでは、固定資産の減価償却の概要について説明します。
+author: moaamer
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
@@ -14,23 +12,26 @@ ms.reviewer: roschlom
 ms.custom: 3121
 ms.assetid: 98ff891f-e0e2-4184-b618-28107a50851f
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b399ab3df9bddbce8b96752ef344bf93cb2563c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969106"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890983"
 ---
 # <a name="fixed-asset-depreciation"></a>固定資産の減価償却
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックは、固定資産の償却の概要を示します。
+このトピックでは、固定資産の減価償却の概要について説明します。
 
 減価償却は、一般に、貸借対照表の固定資産の価値を減少させる定期処理取引であり、損益勘定では支出として記帳します。 したがって、通常、主勘定を使用して貸借対照表の定期減価償却を貸方に転記します。 相手勘定は、勘定科目の損益部分の勘定です。
+
+**帳簿** ページの **正の減価償却** 資産の帳簿を計算するオプションを使用すると、負の簿価額で取得した固定資産の減価償却費を借方に計上することができます。
 
 ## <a name="depreciation-adjustment"></a>減価償却調整
 通常は、転記済みの減価償却取引に対する修正のみが減価償却調整として転記されます。 したがって、主勘定と相手勘定は、減価償却の勘定と同様に設定します。 減価償却調整額は、正にも負にもなりますが、主勘定 (貸借対照表の勘定として) と相手勘定 (通常、損益勘定として) の機能は変わりません。
@@ -56,3 +57,6 @@ ms.locfileid: "4969106"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

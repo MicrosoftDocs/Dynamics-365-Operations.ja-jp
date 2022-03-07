@@ -2,16 +2,13 @@
 title: 製造における材料の置き換え
 description: このトピックでは、生産プロセス中に材料を置き換える方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdBOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 70171
 ms.assetid: ce3b11ef-550e-49b7-8942-2607c2ec3c5c
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b7ee4bbb832fc21d52ff30b7acc8e6a5fd3aece
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 62376c896e64751fbe136919974e15010af6b57e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431701"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825161"
 ---
 # <a name="material-substitution-in-manufacturing"></a>製造における材料の置き換え
 
@@ -49,3 +46,6 @@ BOM を使用している場合ではなく、フォーミュラを使用して�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,25 +1,23 @@
 ---
 title: 既定の製品のライフサイクルの状態を作成
 description: この手順では、既定の製品ライフサイクルの状態の作成方法、およびリリースされた製品に既定状態を関連付ける方法を示します。
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16f604d5e06859b15c6f610e7a5c822ef2089ea3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a628ed2b609f48c22076f409889c212e4d9463ac
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966908"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578203"
 ---
 # <a name="create-a-default-product-lifecycle-state"></a>既定の製品のライフサイクルの状態を作成
 
@@ -61,3 +59,6 @@ ms.locfileid: "4966908"
 > [!NOTE]
 > アクティブな状態を設定したと仮定して、アクティブな状態を選択し、マスター プランおよび BOM レベルの計算で製品を使用できるようになります。 当然、一貫した計画に必要なすべての製品の詳細が指定されている場合にのみ意味があります。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

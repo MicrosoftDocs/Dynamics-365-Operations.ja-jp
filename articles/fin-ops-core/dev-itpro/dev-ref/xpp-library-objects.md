@@ -2,26 +2,19 @@
 title: X++ クラス ライブラリ
 description: このトピックでは、X++ でのクラス ライブラリについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/18/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 150303
-ms.assetid: 1b2d76d1-52d9-46b2-937f-5a3b62f2d516
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d20df2e349964a25ee2ae649cfddc14604d503db
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 05fed5a7b2cb87d8876654aa0c5cd4c9bedd9d39
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409394"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783190"
 ---
 # <a name="x-class-library"></a>X++ クラス ライブラリ
 
@@ -216,3 +209,6 @@ static void noRecurrenceButton(Args _args)
 -   **IO** – 外部ファイルの読み取りと書き込みを行います。
 -   **ODBCConnection** – 外部データベースへの Open Database Connectivity (ODBC) インターフェイス。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

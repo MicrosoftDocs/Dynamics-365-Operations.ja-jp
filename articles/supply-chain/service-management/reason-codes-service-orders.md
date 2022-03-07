@@ -1,12 +1,10 @@
 ---
 title: サービス注文の理由コード
 description: サービス注文のステージの更新時にサービス注文の状態を分かりやすくするための理由コードを使用します。
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAStageTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9093cd36ecf667d3ebf6970f7e4b2deb580e3723
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ac21174cc0e6319494f2db0530e68229325b07f6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965858"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566194"
 ---
 # <a name="reason-codes-for-service-orders"></a>サービス注文の理由コード   
 
@@ -49,3 +47,6 @@ ms.locfileid: "4965858"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

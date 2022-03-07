@@ -2,15 +2,12 @@
 title: 販売注文モバイル ワークスペース
 description: このトピックでは、販売注文モバイル ワークスペースについての情報を提供します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。
 author: Mirzaab
-manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267134
 ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
 ms.search.region: global
@@ -18,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 7e586496212c0cf5c964b434e442725fcdb25fca
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 712b45cf1fd35de9f823af1bf89db9c4a572d61ebf7aa3e1fded16902c09557a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767367"
 ---
 # <a name="sales-orders-mobile-workspace"></a>販売注文モバイル ワークスペース
 
@@ -84,7 +81,7 @@ ms.locfileid: "4432156"
 組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Management を使用する場合の前提条件 
-Supply Chain Management が組織に配置されている場合、システム管理者は **販売注文** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+Supply Chain Management が組織に配置されている場合、システム管理者は **販売注文** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を使用する場合の前提条件
 Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
@@ -104,17 +101,17 @@ Dynamics 365 for Operations バージョン 1611 およびプラットフォー�
 
 <td>KB 4013633 は、<strong>販売注文</strong>モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Microsoft Dynamics Lifecycle Services (LCS)</a> からメタデータ修正プログラムをダウンロードします。</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">メタデータ修正プログラムをインストールします。</a></li>
-<li><strong>SCMMobile</strong> モデルを含む<a href="../../dev-itpro/deployment/create-apply-deployable-package.md">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">配置可能パッケージを適用します</a>。</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Microsoft Dynamics Lifecycle Services (LCS)</a> からメタデータ修正プログラムをダウンロードします。</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li>
+<li><strong>SCMMobile</strong> モデルを含む<a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用します</a>。</li>
 
 </ol></td>
 </tr>
 <tr class="even">
 <td><strong>販売注文</strong>モバイル ワークスペースを公開します。</td>
 <td>システム管理者</td>
-<td>「<a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">モバイル ワークスペースの公開</a>」を参照してください。</td>
+<td>「<a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">モバイル ワークスペースの公開</a>」を参照してください。</td>
 </tr>
 </tbody>
 </table>
@@ -132,7 +129,7 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 3.  初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
 4.  サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
-[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![プルして更新。](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-information-about-sales-orders-for-a-customer-by-using-the-sales-order-mobile-workspace"></a>販売注文モバイル ワークスペースを使用して顧客の販売注文に関する情報を表示
 
@@ -142,3 +139,6 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 4.  顧客を選択します。
 5.  **連絡先情報** または **販売注文** を選択します。 **販売注文** を選択すると、顧客の販売注文の一覧が表示されます。
 6.  **販売注文** を選択します。 販売注文明細行、出荷に関する情報、顧客の連絡先情報、および注文受付者の連絡先情報を表示できるようになりました。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

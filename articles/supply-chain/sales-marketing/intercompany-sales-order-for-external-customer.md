@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: b5f7342a997407c8701b836c2a6a6222d8512121
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 72273a125da2e6c4a2fc16b449cd5077f3d767df
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074997"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7548372"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>外部顧客に対する会社間販売注文書の作成および請求
 
@@ -75,18 +75,5 @@ ms.locfileid: "8074997"
 1. 販売注文を選択してから、**OK** を選択します。
 
 会社間販売注文書の顧客請求書は、法人 B で自動的に転記されます。その後、会社間仕入先請求書が法人 A で自動的に作成および転記されます。元の販売注文が直納として設定されている場合、顧客請求書が法人 A の元の販売注文に対して作成されます。
-
-> [!NOTE]
-> 以前の会社間販売のシナリオでは、会社間販売会社で仕入先請求書のワークフローが構成されている場合、会社間販売注文を正常に請求することができませんでした。 そのため、会社間販売の会社用に仕入先請求のワークフローをオフにする必要がありました。 
-> 
-> この制限は、リリース 10.0.25 の最新機能によって固定されています。 仕入先請求書ワークフローが会社間販売の会社で構成されている場合は、会社間販売注文を請求することができるようになりました。
-> 
-> この機能を有効にするには、次の手順に従います。
->
-> 1. 会社間販売法人を選択します。  
-> 2. **売掛金勘定 \> 顧客 \> すべての顧客** の順に移動します。
-> 3. 会社間購買会社の顧客を選択します。
-> 4. **一般 \> 設定 \> 会社間** に移動します。
-> 5. **発注書ポリシー** タブで、**会社間仕入先請求用の仕入先請求書ワークフローをバイパスする** パラメーターを選択します。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

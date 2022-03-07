@@ -11,18 +11,19 @@ ms.technology: ''
 ms.search.form: EntAssetScheduledExecution
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4b05dfe351bb61dc47c9c2bfe30831ab7b0a16
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d46beb04923d06aa8ccec05355731aa1b3f27c5b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016859"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4431787"
 ---
 # <a name="dispatch-work-order"></a>作業指示の派遣
 

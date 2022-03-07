@@ -2,11 +2,9 @@
 title: インターフェイスとして使用されるテーブル マップの拡張
 description: このトピックでは、インターフェイスとして使用されるテーブル マップを拡張する方法について説明します。
 author: LarsBlaaberg
-manager: AnnBe
 ms.date: 12/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: lolsen
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 21917212400b2d4184d389bf965ccc33daf4b202
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0bbb97622a41b247877b5421888b1994d9e5bac3
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408841"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865916"
 ---
 # <a name="extend-table-maps-that-are-used-as-interfaces"></a>インターフェイスとして使用されるテーブル マップの拡張
 
@@ -151,3 +149,6 @@ public class ISV2PurchTableSalesPurchTable extends ISV2SalesPurchTableInterface
 }
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

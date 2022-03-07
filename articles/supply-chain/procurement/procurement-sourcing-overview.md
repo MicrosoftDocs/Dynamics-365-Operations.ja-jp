@@ -1,28 +1,28 @@
 ---
 title: 調達の概要
 description: この記事は、調達モジュールで使用できる機能の概要を示します。
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 05/06/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 58021
+ms.custom:
+- "58021"
+- intro-internal
 ms.assetid: eea24e23-a803-4de0-a218-6485757cde1b
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4911b1729c811aafc5ca76fb4351ab672e3610f6
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e7be7696716e887a7fa4ea4af234db20c6e161b5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019707"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984223"
 ---
 # <a name="procurement-and-sourcing-overview"></a>調達の概要
 
@@ -92,3 +92,6 @@ ms.locfileid: "5019707"
 ## <a name="vendor-performance"></a>仕入先のパフォーマンス
 
 支出分析および仕入先のパフォーマンス分析を含む、*調達と買掛金勘定レポート* では、購買のパフォーマンスと確認に対応しています。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

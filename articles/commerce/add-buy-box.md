@@ -2,27 +2,24 @@
 title: 購入ボックス モジュール
 description: このトピックでは、購入ボックス モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 4f49c7a1519744cda9cfba31a3938fd23e692841a851a52ec9d18a241f8c0458
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717798"
 ---
 # <a name="buy-box-module"></a>購入ボックス モジュール
 
@@ -30,9 +27,7 @@ ms.locfileid: "4517091"
 
 このトピックでは、購入ボックス モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
-## <a name="overview"></a>概要
-
-*購入ボックス* という用語は、通常 "折りたたみの上" である製品の詳細ページの領域を指し、製品購買に必要な最も重要な情報すべてをホストします。 ("折りたたみの上" である領域はページが最初に読み込まれたときに表示されるため、ユーザーは下にスクロールして表示する必要はありません。)
+*購入ボックス* という用語は、通常 "折りたたみの上" である製品の詳細ページ (PDP) の領域を指し、製品購買に必要な最も重要な情報すべてをホストします。 ("折りたたみの上" である領域はページが最初に読み込まれたときに表示されるため、ユーザーは下にスクロールして表示する必要はありません。)
 
 購入ボックス モジュールは、製品の詳細ページの購入ボックス領域に表示されるすべてのモジュールをホストするために使用する特別なコンテナーです。
 
@@ -40,7 +35,7 @@ ms.locfileid: "4517091"
 
 以下の図は、[商品の詳細] ページにある [購入ボックス] モジュールの例を示しています。
 
-![購入ボックス モジュールの例](./media/ecommerce-pdp-buybox.PNG)
+![購入ボックス モジュールの例。](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>購入ボックス モジュール プロパティおよびスロット 
 
@@ -72,14 +67,16 @@ ms.locfileid: "4517091"
 
 - **カートの明細行の数量上限** – このプロパティは、カートに追加できる各品目の最大数を指定する目的で使用されます。 たとえば、小売業者が、単一のトランザクションで販売できるのは各製品 10 個のみと決定する場合があります。
 - **在庫** - 在庫設定の適用方法については、[在庫設定を適用する](inventory-settings.md)を参照してください。
-- **製品をカートに追加する** - このプロパティは、品目がカートに追加された後の動作を指定するために使用されます。 使用可能な値は、**カート ページに移動**、**カート ページに移動しない**、**通知を表示** です。 この値が **カート ページに移動** に設定されている場合は、ユーザーが品目を追加した後はカート ページに移動します。 この値が **カート ページに移動しない** に設定されている場合は、ユーザーが品目を追加した後もカート ページに移動しません。 この値が **通知を表示** に設定されている場合、ユーザーに確認の通知が表示され、引き続き製品の詳細ページを参照することができます。 
+- **製品をカートに追加** – **製品をカートに追加** 設定を適用する方法については、[製品をカート設定に追加](add-cart-settings.md) を参照してください。
+
+## <a name="buy-box-module-definition-extensions-in-the-adventure-works-theme"></a>Adventure Works テーマのボックス モジュール定義拡張機能を購入
+
+Adventure Works テーマが提供する購入ボックス モジュールには、PDP 購入ボックスのアコーディオン モジュール内での製品仕様モジュールの実装をサポートするモジュール定義拡張機能があります。 PDP 購入ボックスで製品仕様属性を紹介するには、製品仕様モジュールを購入ボックス スロットのアコーディオン モジュール スロットに追加します。
+
 
 > [!IMPORTANT]
-> **製品をカートに追加** サイト設定は、Dynamics 365 Commerce 10.0.11 リリースで使用できます。 古いバージョンの Dynamics 365 Commerce を更新する場合は、appsettings.json ファイルを手動で更新する必要があります。 appsettings.json ファイルを更新する手順については、[SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)を参照してください 。 
+> Adventure Works テーマは、Dynamics 365 Commerce バージョン 10.0.20 リリース時点で使用できます。
 
-次の画像では、Fabrikam サイトにおいて "カートに追加された" 際の確認通知の例を示しています。
-
-![通知モジュールの例](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit インタラクション
 
@@ -133,6 +130,11 @@ ms.locfileid: "4517091"
 
 [ソーシャル共有モジュール](social-share-module.md)
 
+[製品をカートに追加](add-cart-settings.md)
+
 [小売チャンネルの引当可能在庫数量の計算](calculated-inventory-retail-channels.md)
 
 [SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

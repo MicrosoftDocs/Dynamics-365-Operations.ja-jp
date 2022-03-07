@@ -2,11 +2,9 @@
 title: 販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション
 description: 紙幣および硬貨の現金貨幣単位は、POS 内で店舗のレジ担当者、店員およびマネージャーにより使用されるバック オフィスで定義できます。
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e3a5f9a73bdee50e3e7c68125144c3b43305efa8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0ff4eb5bc7c5e2c0192a5349219301b26e479ac6be978eb05063b68f348b4e55
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4961562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743461"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション
 
@@ -35,7 +33,7 @@ ms.locfileid: "4961562"
 
 貨幣単位は店舗ごとに、店舗のプロパティ ページから **設定** \> **現金申告** オプションで設定されます。
 
-![現金申告オプション](./media/image1-denomination.png)
+![現金申告オプション。](./media/image1-denomination.png)
 
 貨幣単位を定義する方法:
 
@@ -43,7 +41,7 @@ ms.locfileid: "4961562"
 1. 種類 (硬貨または紙幣) を指定します。
 1. 金額 (値) を指定します。
 
-![現金申告貨幣ページ](./media/image2-denomination.png)
+![現金申告貨幣ページ。](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>機能プロファイルのコンフィギュレーション
 
@@ -51,3 +49,6 @@ POS での現金による支払の際、ユーザーは、顧客によって支�
 
 - **合計金額以上** ー 既定では、POS は未払い金額より多い紙幣の通貨単位のみを表示し、ワンタッチの支払/入金ができるようにします。 たとえば、請求額が $7.50 の場合、POS は次の通貨単位を表示します: $10、$20、$50、および $100。 これらの金額のいずれかにタッチすると、自動的にその金額に対する売上の支払/入金をします。 $1 および $5 紙幣、これらの金額は、請求額よりも少ないため表示されません。
 - **すべての貨幣単位** ー 請求額に関係なく、POS で常にすべての紙幣の貨幣単位を表示するために、このオプションを選択します。 つまり、ユーザーは請求額に達する紙幣の組み合わせを使用できます。 たとえば、請求額が $25.00 の場合は、ユーザーは $20 よび $5 を選択して販売を完了できます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

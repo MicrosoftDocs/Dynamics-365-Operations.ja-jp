@@ -2,11 +2,9 @@
 title: ビデオ
 description: このページでは、YouTube などで公開されている、Microsoft が作成したハウツーや、Finance and Operations アプリに関連する技術解説ビデオを掲載しています。
 author: sericks007
-manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 56fdfc400b5bc3e640e7951985d54ffa870f96c9
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797878"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487994"
 ---
 # <a name="videos"></a>ビデオ 
 
@@ -36,7 +34,6 @@ ms.locfileid: "4797878"
 
 ### <a name="data-integration"></a>データ統合
 
-- [Prospect to cash integration (見込顧客リストの現金化への統合)](https://youtu.be/AVV9x5x-XCg)
 - [Dynamics 365 for Field Service と Finance and Operations アプリ間で作業指示を同期させる](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>データ管理
@@ -86,14 +83,14 @@ ms.locfileid: "4797878"
 
 ## <a name="videos-for-dynamics-365-finance"></a>Dynamics 365 Finance に関するビデオ
 
+### <a name="business-document-management"></a>ビジネス ドキュメントの管理
+- [ビジネス ドキュメントの管理を使用して新しいビジネス ドキュメントを作成する](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### <a name="customize-the-app"></a>アプリのカスタマイズ
 - [カスタム フィールドを追加する](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [埋め込み Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
-### <a name="expenses"></a>経費
-- [経費エクスペリエンス](https://youtu.be/Ocy-MsTvEE0)
-
-### <a name="financial-reporting"></a>財務諸表
+### <a name="financial-reporting"></a>財務報告
 - [レポート デザイナーのバージョンを検索](https://www.youtube.com/embed/icfA5Q3kp4w)
 
 ### <a name="help-system"></a>ヘルプ システム
@@ -117,6 +114,9 @@ ms.locfileid: "4797878"
 
 
 ## <a name="videos-for-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management に関するビデオ
+
+### <a name="business-document-management"></a>ビジネス ドキュメントの管理
+- [ビジネス ドキュメントの管理を使用して新しいビジネス ドキュメントを作成する](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### <a name="costs"></a>原価
 - [Cost control mobile workspace (原価管理モバイル ワークスペース)](https://youtu.be/imsuTg8rUVk)
@@ -167,3 +167,6 @@ ms.locfileid: "4797878"
 [FastTrack 技術解説](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) は、対象分野固有の詳細知識により顧客とパートナーにベスト プラクティスと技術的なレベルを提供することに焦点を合わせます。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

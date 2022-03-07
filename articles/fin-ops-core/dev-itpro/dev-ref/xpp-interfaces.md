@@ -2,26 +2,19 @@
 title: X++ インターフェイス
 description: このトピックでは、X++ のインターフェイスについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 150303
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27b4dc5123455532a96abaa117d5a9f3dd5e07c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 628efb138289cb80c497925b39e621c708cc004e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408689"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782948"
 ---
 # <a name="x-interfaces"></a>X++ インターフェイス
 
@@ -99,3 +92,6 @@ class UseAnAutomobile
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

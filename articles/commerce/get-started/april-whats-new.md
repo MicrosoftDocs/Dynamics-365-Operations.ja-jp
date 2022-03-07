@@ -2,29 +2,26 @@
 title: Dynamics 365 for Retail (2019 年 4 月) の新機能や変更された機能
 description: このトピックでは Dynamics 365 Retail のプレビュー中の機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-02-15
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 949694a498aa3007ff018af3dfb1321fc18bd352
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 831a52df32e78bcc37fdaff2f2bd14756affc2e6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408960"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792355"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-retail-april-2019"></a>Dynamics 365 for Retail の新機能または変更された機能 (2019 年 4 月)
+# <a name="whats-new-or-changed-in-dynamics-365-for-retail-april-2019"></a>Dynamics 365 for Retail (2019 年 4 月) の新機能や変更された機能
 
 [!include [banner](../../includes/banner.md)]
 
@@ -73,3 +70,6 @@ Retail には、POS の統合サンプルおよびポーランドの会計プリ
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
 [2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

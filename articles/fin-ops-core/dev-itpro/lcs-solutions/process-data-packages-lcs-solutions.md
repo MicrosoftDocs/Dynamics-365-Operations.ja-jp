@@ -2,11 +2,9 @@
 title: Dynamics 365 Finance and Operations アプリ ソリューションでのデータ パッケージの処理と使用
 description: このトピックでは、ソリューションの処理およびデータ パッケージを消費する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.custom: 197113
 ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: c7597cbd88200f235bf02122183e7572436829fb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7ef9e83501167597c0e18f421bdbb59464e247b8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685033"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752272"
 ---
 # <a name="process-and-consume-data-packages-in-dynamics-365-finance-and-operations-apps-solution"></a>Dynamics 365 Finance and Operations アプリ ソリューションでのデータ パッケージの処理と使用
 
@@ -159,3 +157,6 @@ PDP を使用するには、次の手順に従います。
 ### <a name="additional-resources"></a>追加リソース
 
 [AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

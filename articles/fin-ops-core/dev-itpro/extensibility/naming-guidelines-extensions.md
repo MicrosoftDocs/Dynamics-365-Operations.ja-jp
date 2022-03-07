@@ -1,12 +1,10 @@
 ---
 title: 拡張機能の名前付けのガイドライン
-description: このトピックでは、拡張機能の名前付けガイドラインについて説明します。 拡張によって追加されるアーティファクトは、インストール時にすべてのモデルで一意の名前が必要です。
+description: このトピックでは、拡張機能の名前付けガイドラインについて説明します。 アーティファクトは、インストール時にすべてのモデルで一意の名前が必要です。
 author: LarsBlaaberg
-manager: AnnBe
 ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 80fef9be9c241a9d3f812d5626181172cbb42e61
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e19f6e65b0544bd832990c581c498264ca6de71b
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409489"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865975"
 ---
 # <a name="naming-guidelines-for-extensions"></a>拡張機能の名前付けガイドライン
 
@@ -70,3 +68,6 @@ ms.locfileid: "4409489"
  
 + 複数の拡張が同じ用語を使用している可能性、または将来のリリースで基本機能が同じ名前で拡張されるリスクが高いため、一般名は避けてください。 衝突する可能性が高い名前の例としては、**承認者**、**遅延**、**グループ化**、**ルックアップ**、**プロセス** などがあります。   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

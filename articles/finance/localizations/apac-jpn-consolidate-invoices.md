@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustConsInvoice_JP, VendConsInvoice_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10314
 ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8041d91e72560e832ed6a0ee4b1507c7a02a364
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7045af0c9dcf96424469d76ae2b332433c02db62
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408184"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5258194"
 ---
 # <a name="consolidated-invoices-for-japan"></a>日本向け月次締め請求書
 
@@ -64,3 +63,6 @@ ms.locfileid: "4408184"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: アコーディオン モジュール
 description: このトピックでは、アコーディオン モジュールと、Microsoft Dynamics 365 Commerce のサイト ページへの追加方法について説明します。
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2bb18539f610e5af05f8d9a20a0ba9f34db5c94f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9ddca8a3cc136080aa63f58cda3ba32bf6d2ca37
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413671"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346975"
 ---
 # <a name="accordion-module"></a>アコーディオン モジュール
 
@@ -31,15 +28,13 @@ ms.locfileid: "4413671"
 
 このトピックでは、アコーディオン モジュールと、Microsoft Dynamics 365 Commerce のサイト ページへの追加方法について説明します。
 
-## <a name="overview"></a>概要
-
 アコーディオン モジュールは、コンテナと類似するモジュールで、折りたたみ可能な引き出しのような機能を提供することにより、ページ上の情報またはモジュールを整理する目的で使用されます。 アコーディオン モジュールは、任意のページで使用できます。
 
 アコーディオン モジュール内では、1つ以上のアコーディオン項目のモジュールを追加できます。 各アコーディオン項目モジュールは、折りたたみ可能なドロワーを表しています。 アコーディオン モジュール内では、1つ以上のアコーディオン項目のモジュールを追加できます。 アコーディオン項目のモジュールに追加できるモジュールのタイプに制限はありません。
 
 次の図は、ストアのよく寄せられる質問 (FAQ) ページで情報を整理する目的で使用するアコーディオン モジュールの例を示しています。
 
-![アコーディオン モジュールの例](./media/ecommerce-accordion.PNG)
+![アコーディオン モジュールの例。](./media/ecommerce-accordion.PNG)
 
 ## <a name="accordion-module-properties"></a>アコーディオン モジュールのプロパティ
 
@@ -87,3 +82,6 @@ FAQ ページにアコーディオン モジュールを追加して、サイト
 [タブ モジュール](add-tab.md)
 
 [テキスト ブロック モジュール](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

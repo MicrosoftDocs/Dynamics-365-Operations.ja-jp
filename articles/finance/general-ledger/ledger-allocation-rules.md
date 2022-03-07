@@ -1,10 +1,12 @@
 ---
 title: 元帳配賦ルール
 description: この記事は、元帳配賦ルールに関する情報を提供します。 これらの配賦ルールのさまざまなコンポーネントと使用できる配賦方法を説明します。
-author: kweekley
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 audience: Application User
@@ -12,21 +14,21 @@ ms.reviewer: roschlom
 ms.custom: 15402
 ms.assetid: 8147e148-7c11-45ef-95c6-f9889a875b54
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 718640390cd1d4c6c2e9fb1d6bdeba21b515be4a
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 31e01046d22c3b7a598386d5621d020339f44cb4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726874"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249002"
 ---
 # <a name="ledger-allocation-rules"></a>元帳配賦ルール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、元帳の配賦ルールに関する情報を提供します。 これらの配賦ルールのさまざまなコンポーネントと使用できる配賦方法を説明します。
+この記事は、元帳配賦ルールに関する情報を提供します。 これらの配賦ルールのさまざまなコンポーネントと使用できる配賦方法を説明します。
 
 元帳配賦ルールを使用すると、自動的に配賦仕訳帳と勘定項目の計算と生成を行い、元帳残高や固定金額を配賦できます。 配賦方法には、変動的または固定があります。 次の配賦方法が、元帳配賦ルールに使用できます。
 

@@ -1,31 +1,32 @@
 ---
 title: データ エンティティの会社間動作
-description: このトピックでは、データ エンティティと企業間コンセプトとの関係について説明します。 データエンティティのこの側面を理解するには、テーブルとビューが企業間の概念をどのように適用するのかを理解する必要があります。 したがって、このトピックでは、テーブルとビューの概要を説明し、データ エンティティの関連性について説明します。
-author: Sunil-Garg
-manager: AnnBe
+description: このトピックでは、データ エンティティと企業間コンセプトとの関係について説明します。
+author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.custom: 25371
 ms.assetid: f293d97a-9f70-4c45-91d4-574731892353
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cfc3ec06b82c5aa22d0f1fec2eb94490876cc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6adde89632ffd5b469eade05cc416620b76757fa
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679360"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070077"
 ---
 # <a name="cross-company-behavior-of-data-entities"></a>データ エンティティの会社間動作
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、データ エンティティと企業間コンセプトとの関係について説明します。 データエンティティのこの側面を理解するには、テーブルとビューが企業間の概念をどのように適用するのかを理解する必要があります。 したがって、このトピックでは、テーブルとビューの概要を説明し、データ エンティティの関連性について説明します。
 
@@ -72,7 +73,7 @@ AS
 
 ### <a name="making-dirpartytable-the-root-data-source"></a>DirPartyTable をルート データ ソースにする
 
-[![DirPartyTable をルート データ ソースにする](./media/dirpar.png)](./media/dirpar.png)
+[![DirPartyTable をルート データ ソースにします。](./media/dirpar.png)](./media/dirpar.png)
 
 **CustomerList** ビューの 2 つのデータ ソース テーブルの位置を入れ替えて、DirPartyTable テーブルをルート データ ソースにします。
 
@@ -113,7 +114,7 @@ go
 
 次のスクリーンショットは、**FMCustGroupEntity** エンティティの **PrimaryCompanyContext** プロパティに設定された値を示しています。
 
-[![PrimaryCompanyContext プロパティ](./media/prim1.png)](./media/prim1.png)
+[![PrimaryCompanyContext プロパティ。](./media/prim1.png)](./media/prim1.png)
 
 **PrimaryCompanyContext** 値が空でない値に設定されている場合、エンティティは共有エンティティとして動作できません。 **dataAreaId** フィールドは、SQL **Create View** ステートメントに追加されます。
 
@@ -143,9 +144,9 @@ X++ コードのコンテキストでは、データ エンティティの会社
 
 次の X++ コード例は、**PrimaryCompanyContext** プロパティが **dataAreaId** に設定されている、**FMCustGroupEntity** にアクセスします。
 
-[![PrimaryCompanyContext プロパティが DataAreaId に設定されています](./media/fmcust.png)](./media/fmcust.png)
+[![PrimaryCompanyContext プロパティが DataAreaId に設定されています。](./media/fmcust.png)](./media/fmcust.png)
 
-[![X++ コード例は FMCustGroupEntity にアクセスします](./media/snip-550x1024.png)](./media/snip.png)
+[![X++ コード例は FMCustGroupEntity にアクセスします。](./media/snip-550x1024.png)](./media/snip.png)
 
 ### <a name="x-when-primarycompanycontext-is-empty"></a>X++ PrimaryCompanyContext が空の場合
 
@@ -162,7 +163,7 @@ X++ コードのコンテキストでは、データ エンティティの会社
 
 ただし、FMCustGroup テーブルの **dataAreaId** フィールドは、**LegalEntity** という名前の通常のフィールドとして **FMCustomerGroupGlobalEntity** にマップされます。 この例では、FMCustGroup テーブルは **FMCustomerGroupGlobalEntity** のルート データ ソースです。 ただし、システムの自動メカニズムをバイパスする非公式な方法でこの **dataAreaId** フィールドを使用しています。 これらすべての詳細は **法人** フィールドの次のスクリーンショットに表示されます。
 
-[![法人フィールド](./media/ent2.png)](./media/ent2.png)
+[![LegalEntity フィールド。](./media/ent2.png)](./media/ent2.png)
 
 > [!NOTE]
 > *法人エンティティ* および *データ エンティティ* の両方が *エンティティ* という語を使用していますが、混合しないでください。 法人およびデータ エンティティは、まったく異なる 2 つの概念です。 **PrimaryCompanyContext** プロパティが空のとき、SQL の **ビューの作成** ステートメントには、通常、システムの **dataAreaId** 列についての記述は含まれていません。 ただし、現在の例では、データ エンティティの **LegalEntity** 通常フィールドが原因で **dataAreaId** が「半参照」になります。 このフィールドは、次の SQL ステートメントに表示されます。
@@ -190,7 +191,7 @@ AS
 
 **テーブル ブラウザー** ページの次のスクリーンショットは、X++ テスト コードが実行される前の **FMCustomerGroupGlobalEntity** エンティティにあるテスト データを示しています。
 
-[![テーブル ブラウザー ページ](./media/ent3.png)](./media/ent3.png)
+[![テーブル ブラウザー ページ。](./media/ent3.png)](./media/ent3.png)
 
 ### <a name="x-code"></a>X++ コード
 
@@ -199,4 +200,7 @@ AS
 - 読み取りのために共有モードでデータ エンティティにアクセスします。
 - 新しいレコードが作成されたときに、1 つの特定の会社があるデータ エンティティにアクセスします。
 
-[![X++ テスト コード](./media/snip2.png)](./media/snip2.png)
+[![X++ テスト コード。](./media/snip2.png)](./media/snip2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

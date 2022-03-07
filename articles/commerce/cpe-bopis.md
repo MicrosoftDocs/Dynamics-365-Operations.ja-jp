@@ -1,38 +1,35 @@
 ---
 title: Dynamics 365 Commerce の評価環境で BOPIS を構成する
-description: このトピックでは、プロビジョニング後の Microsoft Dynamics 365 Commerce の評価環境における オンライン購入、店舗での受け取り (BOPIS) の構成方法について説明します。
-author: rubendel
-manager: annbe
+description: このトピックでは、プロビジョニング後の Microsoft Dynamics 365 Commerce 環境評価におけるオンライン購入、店舗での受け取り (BOPIS) の構成方法について説明します。
+author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413650"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779797"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce の評価環境で BOPIS を構成する
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境での BOPIS のコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、プロビジョニング後の、 Microsoft Dynamics 365 Commerce の評価環境におけるオンライン購入、店頭受取 (BOPIS) を構成する方法について説明します。
+このトピックでは、プロビジョニング後の Microsoft Dynamics 365 Commerce 評価環境におけるオンライン購入、店頭受取 (BOPIS) の構成方法について説明します。
 
 ## <a name="prerequisite"></a>前提条件
 
-このトピックに記載の手順は、Commerce の評価環境のプロビジョニングと構成が完了した後にのみ実行してください。 環境のプロビジョニングと構成方法については、 [Dynamics 365 Commerce の評価環境をプロビジョニングする](provisioning-guide.md) と [ Dynamics 365 Commerce の評価環境を構成する](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning) を参照してください。
+このトピックに記載の手順は、Commerce の評価環境のプロビジョニングと構成が完了した後にのみ実行してください。 環境のプロビジョニングと構成方法については、 [Dynamics 365 Commerce の評価環境をプロビジョニングする](provisioning-guide.md) と [ Dynamics 365 Commerce の評価環境を構成する](./cpe-post-provisioning.md) を参照してください。
 
 Commerce 環境のプロビジョニングとエンドツーエンドの構成完了後に、このトピックを使用して BOPIS のシナリオを有効化することができます。
 
@@ -40,7 +37,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 
 ### <a name="configure-modern-pos"></a>Modern POS の構成
 
-クレジット カードの支払を含む BOPIS シナリオには、ハードウェア ステーションが必要です。 ハードウェア ステーションは、Windows 用および、 Android 用 Modern POS プログラムに組み込まれています。 iOS 用の Cloud POS または Modern POS を使用している場合、販売時点管理（POS）クライアントは、共有ハードウェア ステーションとペアリングする必要があります。 このトピックでは、Windows 用 BOPIS と Android クライアントの設定方法について説明します。 共有ハードウェア ステーションを設定する方法の詳細については、[小売りハードウェア ステーションの設定とインストール](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation) を参照してください。
+クレジット カードの支払を含む BOPIS シナリオには、ハードウェア ステーションが必要です。 ハードウェア ステーションは、Windows 用および、 Android 用 Modern POS プログラムに組み込まれています。 iOS 用の Cloud POS または Modern POS を使用している場合、販売時点管理（POS）クライアントは、共有ハードウェア ステーションとペアリングする必要があります。 このトピックでは、Windows 用 BOPIS と Android クライアントの設定方法について説明します。 共有ハードウェア ステーションを設定する方法の詳細については、[小売りハードウェア ステーションの設定とインストール](./retail-hardware-station-configuration-installation.md) を参照してください。
 
 1. **小売りとコマース\> チャンネル設定 \> POS 設定 \> レジスター の順に移動します**。
 2. **SANFRAN-5** の登録を選択し、 **編集** を選択します。
@@ -57,7 +54,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 4. **ダウンロード** を選択し、**Retail Modern POS** を選択します。 
 5. **ModernPOSSetup** ファイルのダウンロードが完了したら、**ファイルを開く** を選択します。
 
-    ![ファイルを開きます](./dev-itpro/media/PAYMENTS/openfile.png)
+    ![ファイルを開きます。](./dev-itpro/media/PAYMENTS/openfile.png)
 
 6. インストール プロセスを開始するには、**次へ** を選択します。 インストールが完了したら、**閉じる** を選択します。
 
@@ -90,7 +87,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 
 ### <a name="create-a-storefront-order-for-in-store-pickup"></a>店舗内集配用のウェブストア注文を作成する
 
-1. 環境の構成をする過程の [e コマースの初期化](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) ステップで指定したURLに移動します。
+1. 環境の構成をする過程の [e コマースの初期化](./provisioning-guide.md#initialize-e-commerce) ステップで指定したURLに移動します。
 2. 品目を選択し、**カートに追加する** を選択します。
 3. [ショッピングバッグ] ページで、追加した注文明細行に対して **これを選択する** を選択します。
 4. **店舗の選択** ダイアログ ボックスで、**サンフランシスコ** と入力し、**検索** ボタンを選択します。
@@ -115,7 +112,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 
 ### <a name="synchronize-online-orders-to-the-back-office"></a>オンライン注文をバック オフィスに同期します
 
-オンライン注文を同期する方法の詳細については、[オンライン販売と支払の転記](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments) を参照してください。
+オンライン注文を同期する方法の詳細については、[オンライン販売と支払の転記](./tasks/posting-online-sales-payments.md) を参照してください。
 
 ### <a name="pick-up-an-order-in-the-store"></a>店頭で注文を集荷する
 
@@ -151,16 +148,19 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 
 [Dynamics 365 Commerce 評価環境に関するよく寄せられる質問](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure ポータル](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce Web サイト](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Adyen 支払コネクタ](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+[Adyen 支払コネクタ](./dev-itpro/adyen-connector.md?tabs=8-1-3)
 
-[オンライン支払手段を Adyen コネクタで保存](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
+[オンライン支払手段を Adyen コネクタで保存](./dev-itpro/adyen-connector-listpi.md)
 
-[オムニ チャネル支払の概要](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+[オムニ チャネル支払の概要](./omni-channel-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

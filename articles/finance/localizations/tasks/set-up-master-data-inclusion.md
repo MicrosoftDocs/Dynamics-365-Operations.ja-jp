@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetAdvancedRule_JP, AssetAdvancedRuleCreateEdit_JP,  AssetBookTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cc29b4fb7e17014b4332c43a3f956ee8ea91b539
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 99809192892af64d27a2d0dc4dcd5c194e031449
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408178"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5258164"
 ---
 # <a name="set-up-master-data-for-inclusion-of-deductible-expenses-for-multiple-posting-layers"></a>複数の転記階層の損金算入額のマスター データの設定
 
@@ -66,3 +65,6 @@ ms.locfileid: "4408178"
 12. [保存] をクリックします。
 13. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

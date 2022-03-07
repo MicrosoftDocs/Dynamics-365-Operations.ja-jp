@@ -2,11 +2,9 @@
 title: ヘルプ ウィンドウで使用するコンテンツの準備
 description: このトピックでは、[ヘルプ] ウィンドウで使用できるようにコンテンツを準備する方法について説明します。
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: tfehr
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: 9ac11e90b71df7e9d449dd6bdc2d8325687b7b7b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 58bcb3da7c9518fe0bd3d01a1d0b969115badb3ab447192356af74fe16df2e45
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768395"
 ---
 # <a name="prepare-content-for-use-with-the-help-pane"></a>ヘルプ ウィンドウで使用するコンテンツの準備
 
@@ -92,3 +90,6 @@ AX 2012 の既存のコンテンツがある場合は、Finance、Supply Chain M
 [製品およびヘルプの言語およびロケール記述子](language-locale.md)  
 [Finance and Operations アプリのヘルプ エクスペリエンスのコンフィギュレーション](../../fin-ops/get-started/help-connect.md)  
 [ヘルプ システム](../../fin-ops/get-started/help-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

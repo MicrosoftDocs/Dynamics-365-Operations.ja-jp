@@ -2,15 +2,12 @@
 title: Dynamics 365 Commerce の製品評価の同期
 description: このトピックでは、Microsoft Dynamics 365 Commerce で製品評価を同期する方法について説明します。
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413820"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967953"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の製品評価の同期
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce で製品評価を同期する方法について説明します。
-
-## <a name="overview"></a>概要
 
 販売時点管理 (POS) およびコール センターなどのオムニチャネルで製品評価を使用するには、評価およびレビュー サービスからの製品評価をコマース チャネル データベースにインポートする必要があります。 製品評価をオムニチャネルで使用可能にした場合、顧客が販売担当者との対話を間接的に行うのに役立ちます。
 
@@ -62,7 +57,7 @@ ms.locfileid: "4413820"
 
 次の図は、コマースのサブジョブの詳細ページの例を表示しています。
 
-![RetailProductRating サブジョブの詳細](media/rnr-hq-ratings-sub-job.png)
+![RetailProductRating サブジョブの詳細。](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > **RetailProductRating** サブジョブを検索できない場合、コマース スケジューラを初期化する前に、**同期製品の評価** ジョブおよび **1040 CDX** ジョブが既に実行されている可能性があります。 この場合、次の手順に従って **完全データ同期** ジョブを実行します。
@@ -86,7 +81,7 @@ ms.locfileid: "4413820"
 
 次の図は、コマースのバッチ ジョブ コンフィギュレーションの例を表示しています。
 
-![製品評価の同期バッチ ジョブのコンフィギュレーション](media/rnr-hq-batchjob-recurrence.png)
+![製品評価の同期バッチ ジョブのコンフィギュレーション。](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>製品評価の同期のバッチ ジョブが正常に行われたことの確認
 
@@ -98,7 +93,7 @@ ms.locfileid: "4413820"
 
 次の図は、バッチ ジョブが 2 時間間隔で実行するようにスケジュールされている場合の、コマースでのバッチ ジョブの詳細の例を表示しています。
 
-![製品評価の同期バッチ ジョブの詳細](media/rnr-hq-batchjob-status-checking.png)
+![製品評価の同期バッチ ジョブの詳細。](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>POS で製品評価を使用可能にする
 
@@ -116,15 +111,15 @@ POS で製品の評価を有効にするには、次の手順に従います。
 
 次の図は、POS で製品評価を有効にするためのコマース パラメーターのコンフィギュレーションの例を表示しています。
 
-![POS での製品評価のコマース パラメーターのコンフィギュレーション](media/rnr-hq-enable-ratings-in-pos.png)
+![POS での製品評価のコマース パラメーターのコンフィギュレーション。](media/rnr-hq-enable-ratings-in-pos.png)
 
 以下の図は、POS の製品評価の例を表示しています。
 
-![POS での製品評価](media/rnr-pos-catalog-ratings.png)
+![POS での製品評価。](media/rnr-pos-catalog-ratings.png)
 
 次の図は、コール センター チャネルの製品評価の例を表示しています。
 
-![コール センター チャネルの製品評価](media/rnr-call-center-ratings.png)
+![コール センター チャネルの製品評価。](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -134,4 +129,17 @@ POS で製品の評価を有効にするには、次の手順に従います。
 
 [評価とレビューの管理](manage-reviews.md)
 
-[評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
+[評価とレビューの構成](configure-ratings-reviews.md)
+
+[製品評価の同期](sync-product-ratings.md)
+
+[モデレーターによる評価とレビューの手動公開を有効にする](manual-publish-rating-reviews.md)
+
+[評価とレビューのインポートとエクスポート](import-export-reviews.md)
+
+[サービス間認証の構成](service-to-service-auth.md)
+
+[評価とレビューに関するよく寄せられる質問](ratings-reviews-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

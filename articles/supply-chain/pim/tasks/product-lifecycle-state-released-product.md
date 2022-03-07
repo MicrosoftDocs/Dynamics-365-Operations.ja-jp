@@ -2,25 +2,22 @@
 title: 製品ライフサイクルの状態をリリース済製品に割り当て
 description: ここでは、リリース済製品の製品ライフサイクルの状態を割り当てる手順を説明します。
 author: cvocph
-manager: tfehr
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5e7df272a946506dfa4e8d7a04181dd0cb40972c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b3ccfb13530c8d53234621f083683595c61e046b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431815"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807871"
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product"></a>製品ライフサイクルの状態をリリース済製品に割り当て
 
@@ -37,3 +34,6 @@ ms.locfileid: "4431815"
 5. [製品ライフサイクルの状態] フィールドで値を入力または選択します。
 6. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

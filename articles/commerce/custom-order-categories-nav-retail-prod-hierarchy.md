@@ -2,28 +2,25 @@
 title: 販売促進エンティティの並べ替え順序の変更
 description: このトピックでは、Dynamics 365 Commerce で、販売促進に関連したさまざまなエンティティに対する表示順序の制御に関連する概念について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: Category, Retail product hierarchy, Navigation hierarchy
 audience: Application User, Merchandising manager, Catalog manager
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b983cb5c63db171c76d34375a93a2b9086185d3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: de8840b92307ba63d6d0c2cfa90536bd00696ec3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413760"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349677"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>販売促進エンティティの並べ替え順序の変更
 
@@ -54,9 +51,9 @@ ms.locfileid: "4413760"
 
 チャネル ナビゲーション階層の表示順序は、Commerce 製品階層およびカテゴリ別のリリース済製品に対して HQ で反映されます。
 
-![負の値でカスタム並べ替えされた製品階層](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![負の値でカスタム並べ替えされた製品階層。](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![製品階層に基づいてカスタム並べ替えされた、カテゴリ別のリリース済製品](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![製品階層に基づいてカスタム並べ替えされた、カテゴリ別のリリース済製品。](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>チャネル ナビゲーション階層でのカテゴリに対する表示順序のコンフィギュレーション
 
@@ -80,11 +77,14 @@ ms.locfileid: "4413760"
 
 チャネル ナビゲーション階層の表示順序は HQ、カタログ、およびチャネルで反映されます。
 
-![カスタム並べ替えされたチャネル ナビゲーション階層](./media/ChannelNavCustomSorted.png)
+![カスタム並べ替えされたチャネル ナビゲーション階層。](./media/ChannelNavCustomSorted.png)
 
-![チャネル ナビゲーション階層に基づいてカスタム並べ替えされた、カタログ ナビゲーション階層](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![チャネル ナビゲーション階層に基づいてカスタム並べ替えされた、カタログ ナビゲーション階層。](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![カスタム並べ替えされたカテゴリを含む POS](./media/POSChannelCategoriesCustomSorted.png)
+![カスタム並べ替えされたカテゴリを含む POS。](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> 既定では、カスタム並べ替え順序機能が無効になっています。 この機能およびその他の機能を有効にする方法については、[機能管理](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview) を参照してください。
+> 既定では、カスタム並べ替え順序機能が無効になっています。 この機能およびその他の機能を有効にする方法については、[機能管理](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview) を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

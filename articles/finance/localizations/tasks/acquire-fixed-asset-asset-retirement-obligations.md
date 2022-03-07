@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bb6646d489add132c8ca3e3fda8c5e83a7296284
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 97c6959548be947cbecc8b9675a1d632f131b715
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408180"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228050"
 ---
 # <a name="acquire-a-fixed-asset-with-asset-retirement-obligations"></a>資産除去責務がある固定資産の取得
 
@@ -58,3 +57,6 @@ ms.locfileid: "4408180"
     * 提案金額は現在の値に割引されます。  
 13. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

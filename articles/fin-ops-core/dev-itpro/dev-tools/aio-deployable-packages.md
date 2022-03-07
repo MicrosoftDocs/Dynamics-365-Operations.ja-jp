@@ -2,24 +2,20 @@
 title: オールインワン配置可能パッケージ
 description: このトピックでは、オールインワンの配置可能なパッケージの概念とその使用方法について説明します。
 author: laneswenka
-manager: AnnBe
-ms.date: 09/23/2020
+ms.date: 05/20/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 71ee80c7f2e7e724b44a6ef6b06b4e12aa878298
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2e705c59eee44a6638e44367ea684c51072b87b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345581"
 ---
 # <a name="all-in-one-deployable-packages"></a>オールインワン配置可能パッケージ
 
@@ -28,9 +24,9 @@ ms.locfileid: "4409197"
 このトピックでは、オールインワン配備可能パッケージを作成および管理するためのベスト プラクティスについて説明します。
 
 > [!IMPORTANT]
-> - オール イン ワン パッケージの適用は、フェーズで行われます。 オールインワン配置可能パッケージでは **ない** 配置可能パッケージに対するサポートを拡張する要求は、2020 年 10 月 31 日に終了します。 延長の承認は、有効な正当化の対象となります。
+> - オール イン ワン パッケージの適用は、フェーズで行われます。 オールインワン配置可能パッケージでは **ない** 配置可能パッケージに対するサポートを拡張する要求は、2020 年 10 月 31 日に終了しました。
 > - 現在、支払コネクタが環境に配置されている場合、[支払コネクタ パッケージを作成](../../../commerce/dev-itpro/payment-connector-package.md) して、オールインワン配置可能パッケージに含める必要があります。
-> - 現在、小売販売時点管理で Microsoft Dynamics 365 Commerce 機能を使用している場合は、[セルフサービス インストーラーを同期](../../../commerce/dev-itpro/Synchronize-installers.md) する必要もあります。
+> - 現在、小売販売時点管理で Microsoft Dynamics 365 Commerce 機能を使用している場合は、[セルフサービス インストーラーを同期](../../../commerce/dev-itpro/Synchronize-installers.md) する必要もあります。  Commerce Scale Unit については [CSU へのパッケージの配置](../../../commerce/dev-itpro/retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu)を参照してください。
 
 ## <a name="what-is-an-all-in-one-deployable-package"></a>オールインワン配置可能パッケージとは何ですか?
 
@@ -64,3 +60,6 @@ ISV はライセンスの配置可能パッケージを送信し、ライセン�
 完全に配置可能なパッケージを使用するベスト プラクティスは、特定の環境に適用されるパッケージの複雑さと数を減らすのに役立ちます。 場合によっては、異なるパッケージをインストールすると、環境の動作が変わることがあります。 たとえば、ModelB の後に ModelA をインストールするのではなく、ModelA の後に ModelB をインストールするとします。
 
 さらに、このアプローチはセルフサービス環境にとって、難しい要件です。 これは、これらの環境ではコンテナー詰めテクノロジを使用して、パッケージを適用するたびに、新しい環境を構築するためです。 今日 ModelA を適用し、明日 ModelB のみを適用すると、ModelA を効果的にアンインストールできます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
-description: 次の手順では、システム管理者または電子申告開発者の役割のユーザーが、電子申告 (ER) コンフィギュレーションを設計して、外部ファイルから Microsoft Dynamics 365 Finance アプリケーションにデータをインポートする方法を説明します。
+description: このトピックでは、外部ファイルから Microsoft Dynamics 365 Finance アプリにデータをインポートできるように電子申告コンフィギュレーションを設計します。
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0492fae6cfad505fc9fee5cd20f483c9c6d2a061
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684285"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093726"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
 

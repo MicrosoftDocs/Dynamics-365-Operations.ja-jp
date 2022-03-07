@@ -2,11 +2,9 @@
 title: 電子申告 (ER) のモデル マッピング コンフィギュレーションの作成
 description: 新しい電子申告 (ER) モデル マッピング コンフィギュレーションをデザインして、効率的な集計計算の組み込み ER 機能を使用するには、この手順を使用します。
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 23bc3a525be9f65b7e5100114d02f6b79a286fb5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9a614ce0f055691e36c1aab5d84d4fc3355026f1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682072"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752559"
 ---
 # <a name="create-electronic-reporting-er-model-mapping-configurations"></a>電子申告 (ER) のモデル マッピング コンフィギュレーションの作成
 
@@ -65,3 +63,6 @@ ms.locfileid: "4682072"
     * イントラスタットのサンプル マッピング  
 5. [コンフィギュレーションの作成] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

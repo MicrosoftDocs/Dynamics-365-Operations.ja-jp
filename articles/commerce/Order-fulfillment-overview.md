@@ -1,27 +1,25 @@
 ---
 title: 店舗注文のフルフィルメント
 description: このトピックでは、店舗注文のフルフィルメントにおける概要を説明します。
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fa568926ccdde4620294915679cd094adbd1e833
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 36ce908e81639fbb836d33ff3e84976c395b1473
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965405"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983345"
 ---
 # <a name="store-order-fulfillment"></a>店舗注文のフルフィルメント
 
@@ -35,7 +33,7 @@ ms.locfileid: "4965405"
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>販売時点管理の統一された注文フルフィルメントへのアクセス
 
-注文のフルフィルメント、[操作 ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations)、は販売時点管理の、店舗の注文フルフィルメント作業領域へのアクセスに利用できます。
+注文のフルフィルメント、[操作 ID 928](pos-operations.md)、は販売時点管理の、店舗の注文フルフィルメント作業領域へのアクセスに利用できます。
 
 注文のフルフィルメント操作は、そのまま使用できる独自のアクセス許可を持っていませんが、将来的に、ユーザーは **注文の取得を許可** のアクセス許可を使用して販売時点管理から操作を起動できるようになります。
 
@@ -95,7 +93,7 @@ ms.locfileid: "4965405"
 
 ピッキング プロセスを実行する作業者を支援するために販売時点管理で、ピッキング リストを印刷できます。 ピッキング プロセスを実行する作業者により印刷されたピッキング リストが運ばれ、製品がピッキングされると、作業者はピッキング リストに、ピッキングされた製品を手動でマークすることができます。
 
-ピッキング リストの形式は Commerce で構成され、レシート プロファイルに追加されます。 レシート プロファイルの設定の詳細については、[レシート テンプレートと印刷](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing) を参照してください。
+ピッキング リストの形式は Commerce で構成され、レシート プロファイルに追加されます。 レシート プロファイルの設定の詳細については、[レシート テンプレートと印刷](receipt-templates-printing.md) を参照してください。
 
 明細行が選択され、それらの明細行用にピッキング リストが印刷された場合、**ピッキング** 状態で自動的に更新されます。
 
@@ -121,7 +119,7 @@ ms.locfileid: "4965405"
 - **結果の状態:** 梱包済または一部梱包済
 - **結果のバックオフィスの状態:** 出荷済または一部出荷済
 
-このアクションは梱包済または部分的に梱包済として明細行をマークし、梱包明細を印刷します。 まとめて梱包された製品を検証するために梱包明細を印刷することができます。 梱包明細の形式は Commerce で構成され、レシート プロファイルに追加されます。 レシート プロファイルの設定の詳細については、[レシート テンプレートと印刷](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing) を参照してください。
+このアクションは梱包済または部分的に梱包済として明細行をマークし、梱包明細を印刷します。 まとめて梱包された製品を検証するために梱包明細を印刷することができます。 梱包明細の形式は Commerce で構成され、レシート プロファイルに追加されます。 レシート プロファイルの設定の詳細については、[レシート テンプレートと印刷](receipt-templates-printing.md) を参照してください。
 
 **アクション: 梱包済としてマーク**
 
@@ -217,3 +215,6 @@ ms.locfileid: "4965405"
 - 作成日
 - 出荷日
 - 入荷日
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

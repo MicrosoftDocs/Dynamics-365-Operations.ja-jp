@@ -1,12 +1,10 @@
 ---
 title: 原価会計分析 Power BI コンテンツ
-description: このトピックでは、原価会計分析 Power BI コンテンツの内容について説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
+description: このトピックでは、原価会計分析 Power BI コンテンツの内容について説明します。
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747372"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>原価会計分析 Power BI コンテンツ
 
@@ -42,7 +40,7 @@ ms.locfileid: "4683874"
 原価会計のアクセス レベルのセキュリティを定義して、Power BI で行レベルのセキュリティと組み合わせることにより、すべての原価オブジェクトの所有者に **原価会計分析** Power BI コンテンツにアクセス権を付与できます。 表示されるすべてのデータは、原価会計で操作するアクセス レベルに基づいてフィルター処理されます。 アクセス レベルのセキュリティおよび行レベルのセキュリティの詳細については、[原価会計 Power BI コンテンツ向けセキュリティの設定](setup-security-cost-accounting-content-pack.md)を参照してください。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
-**原価会計分析** Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/) を参照してください。
+**原価会計分析** Power BI コンテンツは、Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリにあります。 コンテンツのダウンロード方法および組織で実装する方法の詳細については、[Microsoft およびパートナーからの LCS での Power BI コンテンツ](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners) を参照してください。
 
 ご使用のバージョンの Microsoft Dynamics 365 に適用される **原価会計分析** コンテンツをダウンロードしてください。
 
@@ -123,3 +121,6 @@ ms.locfileid: "4683874"
 | 会計カレンダー                   | カレンダー、カレンダーの説明                                                                                       |
 | 年度                       | 暦年                                                                                                        |
 | 会計年度期間                     | 暦年                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

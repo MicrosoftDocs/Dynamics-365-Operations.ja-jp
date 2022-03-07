@@ -2,16 +2,13 @@
 title: 販売時点管理 (POS) への周辺機器の接続
 description: このトピックでは、Retail POS に周辺機器を接続する方法について説明します。
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413672"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802048"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>販売時点管理 (POS) への周辺機器の接続
 
@@ -205,3 +202,6 @@ POS レジスターは、主にレジスター自体を介して管理され、�
 ### <a name="client-data-synchronization"></a>クライアント データ同期
 
 デバイス有効化の状態の変更を除いた POS クライアントへのすべての変更を、チャネル データベースに同期して有効にする必要があります。 チャネル データベースへの変更を同期するには、**Retail と Commerce** &gt; **Retail と Commerce IT** &gt; **配布スケジュール** と移動して、必要な配布スケジュールを実行します。 クライアントの変更の場合、**レジスター** と **チャネルのコンフィギュレーション** の配布スケジュールを実行する必要があります。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

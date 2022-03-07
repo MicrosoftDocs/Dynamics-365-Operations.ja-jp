@@ -2,11 +2,9 @@
 title: 電子メッセージ
 description: このトピックでは、Microsoft Dynamics 365 Finance の電子メッセージの概要および設定情報を提供します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d4ecc29e47d68129df424c4212505413cf6c8889
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 42896c85fe72690aadafb878eb7e899c6fe10c32
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968982"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823791"
 ---
 # <a name="electronic-messaging"></a>電子メッセージ
 
@@ -535,3 +533,6 @@ ER 形式を作成してデータソースにマップし、完成させた後�
 ![メッセージ状態の更新](media/update-status.png)
 
 メッセージ状態が **準備済** に更新され、**レポートの生成** を選択してレポートを生成できるようになりました。 レポートが生成され、メッセージ状態およびアクションのログは更新されます。 生成されたレポートを表示するには、ページの右上隅にある **添付ファイル** ボタン (紙クリップ記号) を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

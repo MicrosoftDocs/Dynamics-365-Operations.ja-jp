@@ -2,30 +2,31 @@
 title: ワークフロー カテゴリの作成
 description: このトピックでは、ワークフロー カテゴリの作成方法を説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 6ed544a67d22c7eab674df60581eeec32ec22721
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 3b59686a84a15a1c131ee790e53970b69f8eb418
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798791"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065567"
 ---
 # <a name="create-a-workflow-category"></a>ワークフロー カテゴリの作成
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ワークフロー タイプを作成する際には、ワークフロー タイプをその質問に割り当てる必要があります。 ワークフロー カテゴリによって、特定のモジュールでワークフロー タイプを使用できるかどうかが決まります。 適切なワークフロー カテゴリがまだ存在していない場合は、作成する必要があります。
 
@@ -63,3 +64,6 @@ ms.locfileid: "4798791"
 [ワークフロー タイプの作成](workflow-type-create.md)
 
 [新しいワークフロー タイプの作成](workflow-type-create-new.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,36 +2,30 @@
 title: サイトに言語を追加する
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイトに追加の言語のサポートを追加する方法について説明します。
 author: bicyclingfool
-manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d118c90dc16be964bb22aa6f170fe2d2f009b3e9
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413692"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964557"
 ---
 # <a name="add-languages-to-your-site"></a>サイトに言語を追加する
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイトに追加の言語のサポートを追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 Web サイトは、Commerce がサポートする任意の言語にローカライズできます。 (サポートされている言語の一覧については、このトピックの後半で説明されています。) Web サイトに言語を追加するには、まず、サイトにバインドされているオンライン ストアに言語を追加する必要があります。
 
@@ -171,8 +165,9 @@ Web サイトは、Commerce がサポートする任意の言語にローカラ�
 
 [ファビコンの追加](add-favicon.md)
 
-[ようこそメッセージの追加](add-welcome-message.md)
-
 [著作権に関する注意事項の追加](add-copyright-notice.md)
 
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

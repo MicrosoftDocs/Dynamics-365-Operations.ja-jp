@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 69cbaafb9cc28d4e363d0ef028460235cded54dc
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 0b5e134c70ad81876beacd38eb58442d3784d57d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594359"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222513"
 ---
 # <a name="digital-asset-management-overview"></a>デジタル資産管理の概要
 
@@ -60,3 +59,6 @@ Dynamics 365 Commerce サイト ビルダーのメディア ライブラリー�
 [画像の中心のカスタマイズ](dam-custom-focal-point.md)
 
 [静的ファイルのアップロードと提供](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

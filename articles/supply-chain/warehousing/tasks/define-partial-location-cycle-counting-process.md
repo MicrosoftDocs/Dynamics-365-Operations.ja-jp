@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39a256a5a88a6d70373d6e23f1f380da6791f418
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: dfea71459b80712c924912d909a0fdfa5fad09ad
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432296"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238945"
 ---
 # <a name="define-partial-location-cycle-counting-process"></a>部分的な場所の循環棚卸プロセスの定義 
 
@@ -73,3 +72,6 @@ ms.locfileid: "4432296"
 14. [OK] をクリックします。
 15. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: AX 2012 からのアップグレード - 機能テスト パス
 description: このトピックでは、機能テスト パスを実行して、アップグレードされた Finance and Operations 環境を検証する方法について説明します。
 author: tariqbell
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 12c03287837ccae0925d51b95920131df0c972c7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 98a9d6f1f013cff5daf1cb903791bff0e692f60db7a9a0958ba2d5ce8c512c90
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763460"
 ---
 # <a name="upgrade-from-ax-2012---functional-test-passes"></a>AX 2012 からのアップグレード - 機能テスト パス
 
@@ -50,3 +48,6 @@ ms.locfileid: "4681620"
 
 この生産テスト フローでは、新しいレコードまたは古いレコードのいずれかを入力として使用することで各ステージを実行することができます。 結果は、古いデータと新しいデータのすべての組み合わせをカバーする一連のテストです。 いくつかのプロセスでは、テスト マトリックスは過剰に思われますし、実際に過剰である可能性があります。 したがって、最も多く使用されると予測される特定の組み合わせに焦点を当てることができます。 ただし、何に対応していないかを把握することも役立ちます。 所持しているもの、テストで最も焦点を当てるもの、焦点を当てないものを把握する場合に、連続した意思決定を行います。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

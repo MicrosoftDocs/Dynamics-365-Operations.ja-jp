@@ -1,25 +1,18 @@
 ---
 title: CacheService タイプ
 description: デバイス キャッシュからデータにアクセスし、デバイス キャッシュにデータを更新する機能を提供します。
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 04153cc483e092214267239b61e7f3adb7c249ef
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.openlocfilehash: e0543c76e94fbc3ac7122e540188e3e1765cf314
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679240"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782178"
 ---
 # <a name="cacheservice-type"></a>CacheService タイプ
 
@@ -73,3 +66,6 @@ setData(cacheKey: string, data: any): any
 
 #### <a name="returns-any"></a>any を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

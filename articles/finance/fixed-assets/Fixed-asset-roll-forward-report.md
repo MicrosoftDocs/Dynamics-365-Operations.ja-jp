@@ -1,12 +1,10 @@
 ---
 title: 固定資産ロール フォワード レポート
 description: このトピックでは、固定資産ロール フォワード レポートを使用する方法について説明します。
-author: saraschi2
-manager: ''
+author: moaamer
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: b91da4679a23ba0a70c18e2bcae1b7f757f661ca
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b0c0c8b1a33041e266ce266dc79b29c8a7dbfa14
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969156"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883596"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>固定資産ロール フォワード レポート
 
@@ -30,7 +28,7 @@ ms.locfileid: "4969156"
 
 **固定資産ロール フォワード** レポートは、分かりやすい Microsoft Excel 形式で、ユーザーが必要とする期間決算、財務諸表、および税レポートの詳細な固定資産データを提供します。 レポートには、期間中の評価移動と共に、固定資産の開始および終了時の残高、および期間中に発生した任意の新しい資産の取得と処分が含まれます。 個々の固定資産ごとにデータが報告され、値は固定資産グループおよび法人に対しても集計されます。
 
-**固定資産ロール フォワード** レポートは、電子申告 (ER) フレームワークを使用します。 レポートを実行する前に、固定資産モデルと固定資産ロール フォワード コンフィギュレーションを Microsoft Dynamics Lifecycle Services (LCS) からインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
+**固定資産ロール フォワード** レポートは、電子申告 (ER) フレームワークを使用します。 レポートを実行する前に、固定資産モデルと固定資産ロール フォワード コンフィギュレーションを Microsoft Dynamics Lifecycle Services (LCS) からインポートする必要があります。 手順については、[Lifecycle Services の電子申告コンフィギュレーションのダウンロード](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)を参照してください。
 
 このレポートは、Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3、または Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (2017年7月) の修正プログラムとして利用可能です。 2017 年 7 月リリースのある環境には、3 つの修正プログラムを適用する必要があります。
 
@@ -66,3 +64,6 @@ ms.locfileid: "4969156"
 |           処分: 仕損額            |                                                                                               処分となる固定資産帳簿の仕損額 – 仕損トランザクション                                                                                               |
 |           処分: 利益/損失            |                                                                                 固定資産帳簿に対する処分トランザクションの一部として計算される利益または損失の値。                                                                                 |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

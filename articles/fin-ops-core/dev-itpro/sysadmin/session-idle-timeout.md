@@ -2,11 +2,9 @@
 title: セッション非活動タイムアウトの設定
 description: このトピックでは、セッション非活動タイムアウトを設定する方法について説明します。
 author: paulliew
-manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: IT Pro
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: paulliew
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
-ms.openlocfilehash: 1669eaa11c7b134ada09d8e2804df8ef9bae5a40
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: 0e1d32c715b8347537919aefeea1f58ff836ed85f4f6d934a612d83ea8a3dde0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719317"
 ---
 # <a name="set-the-session-inactivity-timeout"></a>セッション非活動タイムアウトの設定
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 セッション非活動タイムアウト設定は、ユーザーのセッションがタイムアウトして閉じる前にユーザーが非活動になれる時間の長さを表します。 ユーザーブラウザセッションにのみ影響します。
 
@@ -54,3 +51,6 @@ ms.locfileid: "4690114"
 -  **セッション非活動タイムアウト** が 10 分～30 分の間である場合は、セッションが終了に設定される **2 分** 前にカウントダウン通知が表示されます。 
 -  **セッション非活動タイムアウト** が 10 分以下の場合は、セッションが終了に設定される **30 秒** 前にカウントダウン通知が表示されます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

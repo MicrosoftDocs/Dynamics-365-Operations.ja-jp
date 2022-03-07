@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom:
-- "97423"
-- intro-internal
+ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c0197ff9d93833aa50fef56ec597fa0c904d792d
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313649"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894780"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>イタリア用電子請求の使用を開始する
 
@@ -61,7 +59,7 @@ RCS の設定を行う際には、次の作業を実行します :
 
 4. **電子請求書のエクスポート (IT)** 機能を選択し、**インポート** を選択し ます。
 
-![電子請求書エクスポート (IT) 機能をインポートします。](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
+![電子請求書エクスポート (IT) 機能のインポート](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
 
 **電子請求書エクスポート (IT)** 機能をグローバル レポジトリからインポートすると、次のセクションで説明されているすべての設定もインポートされます。
 
@@ -69,13 +67,13 @@ RCS の設定を行う際には、次の作業を実行します :
 
 1. **電子請求機能** ページの **バージョン** タブで、**新規** を選択します。 
 
-    ![新しい電子請求書機能のバージョンを追加します。](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
+    ![新しい電子請求書機能のバージョンを追加する](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
 
     次に、電子請求書の機能に関連付けられている電子レポート (ER) の形式を構成します。
 
 2. **構成** タブで、**追加** を選択して構成のバージョンを管理します。
 
-    ![電子請求書機能の構成バージョンを管理します。](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
+    ![電子請求書機能の構成バージョンを管理する](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
 
     この手順では、イタリアの電子請求書のエクスポートに使用されるさまざまなファイルの ER 形式を追加、構成します。 イタリアの FatturaPA 電子請求書では、次の標準的な構成を使用するか、電子請求書に使用する実際のカスタム構成を使用してください。
 
@@ -87,17 +85,17 @@ RCS の設定を行う際には、次の作業を実行します :
 3. 特定の ER 形式ファイルの構成を選択します。
 4. **編集** または **表示** を選択して **形式デザイナ** ページを開きます。
 
-    ![形式デザイナー ページを開きます。](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
+    ![形式デザイナー ページを開く](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
 5. **形式デザイナー** ページを使用して、ER 形式ファイルの構成を編集、確認します。
 
-    ![形式デザイナー ページです。](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
+    ![形式デザイナーのページ](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>電子請求書機能の設定を管理する
 
 - **電子請求機能**  ページの **設定** タブで、**追加** や **削除**、**編集** を選択して、電子請求機能の設定を管理します。
 
-![電子請求書機能の設定を管理します。](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
+![電子請求書機能の設定を管理する](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
 この手順では、電子請求書に適用するイベントを構成します。これには、**FatturaPA** 形式やデジタル署名 (必要な場合) における XML 出力ファイルの生成が含まれます。
 
@@ -107,20 +105,20 @@ RCS の設定を行う際には、次の作業を実行します :
 2. **編集** を選択します。
 3. **機能のバージョン設定** ページで、**アクション** タブを選択してアクションの一覧を管理します。 アクションは、イベントを完全に実行するために、順番に従って実行する必要がある操作の一覧を定義します。
 
-    ![アクション タブ。](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
+    ![アクション タブ](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
 
     | アクション ID | アクション名        | アクション説明                                     |
     |-----------|--------------------|--------------------------------------------------------|
-    | 1         | ドキュメントを変換する | 電子請求書の XML ファイルを **FatturaPA** 形式で作成します。 |
+    | 1         | ドキュメントの変換 | 電子請求書の XML ファイルを **FatturaPA** 形式で作成します。 |
     | 2         | ドキュメントに署名      | XML ファイルにデジタル署名を適用します。             |
 
 4. 適用のルールを表示、管理するには、**適用ルール** タブを選択します。 適用ルールは、アクションが実行されるコンテキストを定義します。
 
-    ![適合性ルール タブ。](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
+    ![適合性ルール タブ](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
 
 5. 変数を表示、管理するには、**変数** タブを選択します。
 
-    ![変数タブ。](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
+    ![変数タブ](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
 
 6. アクションの実行に必要となるパブリック変数を定義します。
 
@@ -135,7 +133,7 @@ RCS の設定を行う際には、次の作業を実行します :
 3. **有効開始** フィールドで、環境が有効になる日付を選択します。
 4. **有効化** を選択します。 
 
-![電子請求書環境を有効化します。](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
+![電子請求書環境を有効化する](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
 
 ## <a name="publish-the-e-invoicing-feature"></a>電子請求書の機能を公開する
 
@@ -151,7 +149,7 @@ RCS の設定を行う際には、次の作業を実行します :
 1. **電子請求書機能** ページの **バージョン** タブで、状態が **完了** となっている電子請求書機能のバージョンを選択します。
 2. **状態の変更 \> 公開** を選択します。
 
-![電子請求書機能の状態を変更します。](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
+![電子請求書機能の状態を変更する](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
 ## <a name="set-up-electronic-invoicing-integration-in-finance"></a>財務における電子請求統合を設定する
 
@@ -172,7 +170,7 @@ RCS の設定を行う際には、次の作業を実行します :
 1. **組織管理 \> 設定 \> 電子ドキュメント パラメーター** に移動します。
 2. **機能** タブで、機能参照 **IT00036** 行の **有効** チェック ボックスをオンにします。
 
-![FatturaPA 機能を有効にします。](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
+![FatturaPA 機能を有効にする](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
 
 #### <a name="configure-electronic-documents"></a>電子ドキュメントを構成する
 
@@ -187,7 +185,7 @@ RCS の設定を行う際には、次の作業を実行します :
     - **顧客請求書仕訳帳** で、**顧客請求書のコンテキスト** を選択します。
     - **プロジェクト請求書** で、**プロジェクト請求書のコンテキスト** を選択します。
 
-![応答タイプを設定します。](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
+![応答タイプを設定する](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
 
 ## <a name="electronic-invoice-processing"></a>電子請求書の処理
 
@@ -209,13 +207,13 @@ RCS の設定を行う際には、次の作業を実行します :
 2. ドキュメントを初めて送信する場合は、**ドキュメントの再送信** オプションを **いいえ** に設定します。 サービスを使用してドキュメントを再送信する必要がある場合は、このオプションを **はい** に設定します。
 3. **含めるレコード** クイックタブで、**フィルター** を選択して **照会** ダイアログ ボックスを開きます。ここでは送信するドキュメントを選択するクエリを作成できます。
 
-![電子ドキュメント ダイアログ ボックスの送信します。](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
+![電子ドキュメント ダイアログ ボックスの送信](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
 #### <a name="filter-query"></a>フィルター クエリ
 
 1. **照会** ダイアログ ボックスで、売上請求書とプロジェクト請求書の両方のフィルター条件を構成する、または条件を空白のままにして未提出のすべての請求書をすべて含めるようにします。
 
-    ![送信フィルター条件を設定します。](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
+    ![送信フィルター条件を設定する](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
 
 2. **OK** を選択して **照会** ダイアログ ボックスを閉じます。
 3. **OK** を選択し、選択したドキュメントを送信します。
@@ -229,13 +227,13 @@ RCS の設定を行う際には、次の作業を実行します :
 1. **組織管理 \> 定期的 \> 電子ドキュメント  \> 電子ドキュメントの提出ログ** に移動します。
 2. **ドキュメント タイプ** フィールドで、必要な電子ドキュメントをフィルタ処理する **顧客請求書仕訳帳**、または **プロジェクト請求書** を選択します。
 
-    ![提出書類のログを表示するドキュメント タイプを選択します。](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
+    ![提出書類のログを表示するドキュメント タイプの選択](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 
     **提出状態** 列に表示される値は、提出プロセスの状態を表します。 これは、プロセスが構成通りに実行されたかどうか、追加のアクションが必要かどうかを示します。
 
 3. アクション ウィンドウで、**照会\> 提出の詳細** を選択して、提出実行ログの詳細を表示します。
 
-    ![提出書類ログの詳細を表示します。](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
+    ![提出書類ログの詳細を表示する](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
 
 4. **処理中のアクション** クイックタブで、RCS で設定された機能のバージョンで構成されているアクションの実行ログを表示できます。 **状態** 列には、アクションが正常に実行されたかどうかが表示されます。
 5. **アクション ファイル** のクイックタブでは、アクションの実行中に生成された中間ファイルを表示できます。 **表示** を選択すると、出力XMLファイルが **FatturaPA** 形式でダウンロードされ、その内容が表示されます。

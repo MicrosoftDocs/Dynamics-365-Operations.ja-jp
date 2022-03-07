@@ -1,29 +1,26 @@
 ---
 title: 返品理由コードの設定
 description: 返品理由コード グループを設定します。
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c55e7dc087870ac414c5cf6ce3a3d10215ac4e8e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc857f7c2e8bbcf396e6bd7eaa7478f12b26ac12
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431640"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573180"
 ---
 # <a name="set-up-return-reason-codes"></a>返品理由コードの設定   
 
@@ -32,9 +29,9 @@ ms.locfileid: "4431640"
 
 ## <a name="set-up-return-reason-code-groups"></a>返品理由コード グループの設定 
 
-1.  **販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード グループ** の順にクリックします。
+1.  **販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード グループ** に移動します。
 
-2.  Ctrl + N キーを押して、新しい返品理由コード グループの行を作成します。
+2.  **新規** を選択し、新しい返品理由コード グループの行を作成します。
 
 3.  **返品理由コード グループ** フィールドに、このグループの ID を入力します。
 
@@ -44,7 +41,7 @@ ms.locfileid: "4431640"
 
 この手順では、顧客が製品を返品した理由を示すために使用できる、返品理由コードを設定できます。
 
-1.  **販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード** の順にクリックします。
+1.  **販売とマーケティング** \> **設定** \> **販売注文** \> **返品** \> **返品理由コード** に移動します。
 
 2.  Ctrl + N キーを押して、新しい返品理由コード行を作成します。
 
@@ -63,3 +60,6 @@ ms.locfileid: "4431640"
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

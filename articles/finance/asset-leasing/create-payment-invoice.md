@@ -2,13 +2,11 @@
 title: 支払請求書の作成
 description: このトピックでは、月次リースの請求書を作成する方法を説明します。 個々のリースに対する請求書の作成や、バッチ プロセスを使用して複数のリースに対して請求書を作成することもできます。
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeasePaymentSchedule
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 303fb0e70530fdc29cb129736b01c0e0e8d02075
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 94657a1c423fafb89d2fe2c16937947e0d898771ddb30a029d0938cc17aaf7d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969581"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716672"
 ---
 # <a name="create-payment-invoices"></a>支払請求書の作成
 
@@ -48,3 +46,6 @@ ms.locfileid: "4969581"
 6. トランザクションが転記された後は、 リース帳簿の **負債トランザクション** を選択すると、取引情報やリース負債の帳簿価額を確認することができます。
 
     支払スケジュールで、**転記済仕訳帳** チェック ボックスがオンになり、明細行に請求仕訳帳番号が表示されます。 支払仕訳とその仕訳の入力が作成された後は、再作成する前に入力を取り消す必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

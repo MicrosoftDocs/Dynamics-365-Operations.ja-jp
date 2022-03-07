@@ -2,11 +2,9 @@
 title: 1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用
 description: SSRS 修正プログラムをワンボックス開発環境に適用します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5656e0f1db252a50a5214db6a5cace415fc2f2f6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8f9165a52ec1f0dc0ca0e96a401ca2b7f7c445bdfa10133715e2f4e236bf7d74
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764448"
 ---
 # <a name="patch-sql-server-reporting-services-ssrs-in-one-box-environments"></a>1 ボックス環境で SQL Server Reporting Services (SSRS) への修正プログラムの適用
 
@@ -53,7 +51,7 @@ SSRS が実行されているマシンの管理者グループのユーザーと
 -   このタスクは、完了までに 20 ~ 30 分かかります。
 
 ### <a name="manually-copy-binaries-to-the-sql-server-binary-folder"></a>SQL Server バイナリ フォルダーへの手動でのバイナリのコピー
-1.  SQL Server Reporting Services を停止します。 これは、**サービス管理コンソール** または **Reporting Services 構成マネージャー** から実行できます。 [![Configuration\_RSHotfix](./media/configuration_rshotfix.png)](./media/configuration_rshotfix.png)
+1.  SQL Server Reporting Services を停止します。 これは、**サービス管理コンソール** または **Reporting Services 構成マネージャー** から実行できます。 [![Configuration\_RSHotfix.](./media/configuration_rshotfix.png)](./media/configuration_rshotfix.png)
 2.  SQL Server Reporting Services バイナリ フォルダーを検索します。 このフォルダーは、通常、C:\\Program Files\\Microsoft SQL Server\\MSRS11.MSSQLSERVER\\Reporting Services\\ReportServer\\bin にあります。
 3.  次のファイルのいずれかがパッチにある場合は、それらのファイルを SQL Server Reporting Services Bin フォルダーにコピーします。* *
 
@@ -101,3 +99,6 @@ SSRS サービス アカウントはローカル システムを使用して更�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

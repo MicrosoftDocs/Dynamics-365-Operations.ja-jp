@@ -1,27 +1,25 @@
 ---
 title: 委託販売補充注文の作成
 description: このトピックでは、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。
-author: RichardLuan
-manager: tfehr
+author: yufeihuang
 ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple, ConsignmentProductReceiptJournal, ConsignmentReplenishmentOrderLineQuantity
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: riluan
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b27b4d87add38fac29c9eba4ace08af91f9faca1
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9076207b73c6c76cfc44e1e02b21aad4e3f321f8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020157"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574596"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>委託販売補充注文の作成
 
@@ -61,3 +59,6 @@ ms.locfileid: "5020157"
 3. **概要** を選択します。 仕入先が所有する委託製品在庫として受領された品目は手持在庫として使用できます。 委託製品補充注文の残余数量は **発注済合計数** フィールドに表示されます。  
 4. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

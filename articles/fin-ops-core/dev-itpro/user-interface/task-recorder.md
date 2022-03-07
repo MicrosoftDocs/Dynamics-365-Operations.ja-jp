@@ -2,11 +2,9 @@
 title: タスク レコーダー リソース
 description: このトピックでは、タスク レコーダーを使用して、業務プロセスを記録する方法について説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysTaskRecorderPane
 audience: Developer
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b901bdc8b2385ef982bf7e0e30298d6caa6bac9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a3c9a80adaf7da2f9693727ded3fcf200a35a985
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685005"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749584"
 ---
 # <a name="task-recorder-resources"></a>タスク レコーダー リソース
 
@@ -384,7 +382,7 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
 新しい (Chromium ベースの) Microsoft Edge ブラウザーと Google Chrome の両方で機能する **プレリリース** の Chromium ブラウザー拡張機能を使用することにより、タスク レコーダーは、ユーザーが業務プロセスを記録するときにブラウザーのスクリーンショットを撮影することができます。 ユーザーが記録を完了すると、タスク レコーダーはこれらのスクリーンショットを使用して Microsoft Word ドキュメントを生成できます。 この機能を有効にするには、次の手順に従って、プレリリースの Chromium 拡張機能をインストールして、記録中にタスク レコーダーがスクリーンショットを撮影できるようにします。
 
 1.  <https://github.com/Microsoft/FMLab> で、GitHub から拡張機能を含む **FMLabTaskRecorderScreenshot** フォルダをダウンロードします。
-2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。  \<hostname\> を環境のベース URL に置き換えます。
+2.  **オンプレミス配置のみ:** 次のコードと一致するように、拡張機能のマニフェストを調整します。 \<hostname\> を環境のベース URL に置き換えます。
 
     ```xpp
     ...
@@ -470,3 +468,6 @@ UI 要素が画面上に表示されないために、タスク ガイドのポ�
   -   タスク ガイド中の「一般的な値」の表示をサポートしないでください。 現在、録音中に使用された値が表示されます。
 - フィルター ウィンドウは、左側から表示されるフィルターです
   -   タスク ガイドは、クリックする必要があるフィルタ ウィンドウ内の各要素を指定しません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

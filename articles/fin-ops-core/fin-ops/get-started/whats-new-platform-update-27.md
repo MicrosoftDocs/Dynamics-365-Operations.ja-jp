@@ -2,11 +2,9 @@
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) でプレビューされる機能について説明します。
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-06-30
 ms.dyn365.ops.version: Platform 27
-ms.openlocfilehash: 3cfd8c0082e6128f66394e9818e65c11971a1036
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 0e88fbd02edbbb9661b54b3938515056fb018f79ee72e4d98e81a16445df1624
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728975"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-27-june-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 (2019 年 6 月) の新機能および変更された機能
 
@@ -43,7 +41,7 @@ ms.locfileid: "4797847"
 ジョブに現在実行中のタスクが含まれている場合、バッチ ジョブのキャンセルに長い時間がかかることがあります。 中止オプションを使用すると、システム管理者やバッチ ジョブ マネージャーは、ジョブがキャンセルされた場合にジョブに対してすでに実行中のタスクをキャンセルすることができます。 これは他の場所でシステムの使用に影響を与える可能性がある長時間実行中のジョブをキャンセルする、はるかに高速なメカニズムを提供します。 詳細については [実行中のバッチ ジョブの中止](../../dev-itpro/sysadmin/batch-abort.md) を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
-プラットフォーム更新プログラム 27 に含まれる [プラットフォーム拡張機能の 4 番目の波](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility4) は、2019 年 4 月リリース ノートにドキュメントされています。 2 つの機能強化の詳細が記載されており、そのハイライトは表示拡張がラベルとヘルプ テキストの値を変更できるようになったことです。
+プラットフォーム更新プログラム 27 に含まれる [プラットフォーム拡張機能の 4 番目の波](/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility4) は、2019 年 4 月リリース ノートにドキュメントされています。 2 つの機能強化の詳細が記載されており、そのハイライトは表示拡張がラベルとヘルプ テキストの値を変更できるようになったことです。
 
 ## <a name="export-data-from-all-companies-to-byod-can-be-enabled-via-parameters"></a>パラメーターを使用してすべての会社からデータをエクスポートすることもできます。
 すべての企業から BYOD へのエクスポートを可能にする機能を、データ管理のフレームワーク パラメーターで有効にできるようになりました。 この時点では、これにより、不要なフライトが有効になります。
@@ -56,7 +54,7 @@ ms.locfileid: "4797847"
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
@@ -67,3 +65,6 @@ ms.locfileid: "4797847"
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

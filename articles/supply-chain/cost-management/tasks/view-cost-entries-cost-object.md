@@ -2,27 +2,24 @@
 title: 原価オブジェクトの原価エントリの表示
 description: この手順では、原価対象の原価のエントリを表示する方法を示します。
 author: AndersGirke
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, InventValueTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b809c66243d3274bd06b72173ecf4f8a6c04ad4a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9e99d350abd810045b6b5b4c840f67d21c9d5e39
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431724"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569868"
 ---
 # <a name="view-cost-entries-for-a-cost-object"></a>原価オブジェクトの原価エントリの表示
 
@@ -39,3 +36,6 @@ ms.locfileid: "4431724"
 7. [クイック フィルター] を使用して、「p000031」の値を含む [番号] フィールドをフィルターします。
     * 原価のエントリが空白の場合、[開始日] を 2012 年 1 月 31 日に、[終了日] を 2012 年 12 月 31 日に設定します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

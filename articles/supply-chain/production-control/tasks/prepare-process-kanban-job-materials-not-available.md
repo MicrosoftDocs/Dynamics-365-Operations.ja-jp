@@ -1,28 +1,25 @@
 ---
 title: 作業セルで材料が利用不可の場合にプロセスかんばん作業を準備
 description: この手順では、作業セルで材料が利用不可能な場合にプロセスかんばん作業を準備することに焦点をあてるため、倉庫からの材料をピッキングすることが必要です。
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardWorkCell
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d57df6188aacc2f8a56a7ba91c4ab50a90901a7e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2f75cdbc6ce6f7e427bf266c90428d73c065eac3
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431660"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576739"
 ---
 # <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a>作業セルで材料が利用不可の場合にプロセスかんばん作業を準備
 
@@ -52,3 +49,6 @@ ms.locfileid: "4431660"
 6. [準備] をクリックします。
     * [ジョブ ステータス] にアイコンがあるということは、ジョブが準備が整っていることを意味します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

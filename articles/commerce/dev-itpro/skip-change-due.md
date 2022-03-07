@@ -1,10 +1,12 @@
 ---
 title: POS の「お釣りの支払い」ダイアログ ボックスをスキップする
 description: このトピックでは、トランザクションが完全に支払われていてお釣りが必要ない場合に、販売時点管理 (POS) で「お釣りの支払い」ダイアログ ボックスをスキップする方法について説明します。
-author: BrianShook
+author: rubendel
+manager: annbe
 ms.date: 10/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -12,15 +14,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 9fcdbce63440060f467186ca12ac566788c58a7a
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: d8371c4556c8b38d1026a8196c71c4e4765dd5dd
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779480"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687525"
 ---
 # <a name="skip-change-due-dialog-box-in-pos"></a>POS の「お釣りの支払い」ダイアログ ボックスをスキップする
 
@@ -46,11 +48,8 @@ POS での支払いでは、クレジットの使用率が高まっているた�
 
 [支払方法](../payment-methods.md)
 
-[クレジット カードの設定、認証、および取得](../../finance/accounts-receivable/credit-card-authorizations.md)
+[クレジット カードの設定、認証、および取得](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-card-authorizations)
 
 [販売時点管理 (POS) 用の現金貨幣単位のコンフィギュレーション](../cash-denominations.md)
 
 [クレジット カード処理のコンフィギュレーション](../tasks/configure-credit-card-processing.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

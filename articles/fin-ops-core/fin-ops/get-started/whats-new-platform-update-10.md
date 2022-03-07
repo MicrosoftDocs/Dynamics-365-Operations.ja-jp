@@ -2,11 +2,9 @@
 title: Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 10 (2017 年 8 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 10 の新機能または変更された機能について説明します。 このバージョンは 2017 年 8 月にリリースされました。
 author: tonyafehr
-manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: 4930439063414457dd1653fdb6c7e34b2cb4e4ae
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 7c5adf9662b810187af9df8325a11b7bc8541caeefa9cc8497f6847831b2db46
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797123"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763374"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-10-august-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 10 (2017 年 8 月) の新機能および変更された機能
 
@@ -50,3 +48,6 @@ Dynamics 365 for Finance and Operations, Enterprise Edition は、キーボー�
 ## <a name="skype-support-for-human-resources-and-retail"></a>人事管理 および小売の Skype サポート
 
 クラウド プラットフォームを使用して開発されたすべてのアプリケーションで Skype 統合が有効になります。 Skype 統合が Finance and Operations アプリで有効にされている間は、人事管理 および小売を含む他のアプリケーションでもこの機能は使用可能です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: メンテナンス要求のライフサイクルの状態
 description: このトピックでは、資産管理でメンテナンス要求のライフサイクルの状態を設定する方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3c2f717969b938d05e68ac775d31b6a5d5ec26a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3ece0fc1121211706350d804fec59e72ef08282fcba4e65f557a510834738b11
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743677"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>メンテナンス要求のライフサイクルの状態
 
@@ -50,7 +48,7 @@ ms.locfileid: "5022083"
 
 次の図は、**メンテナンス要求のライフサイクルの状態** ページの例を示しています。
 
-![メンテナンス要求のライフサイクルの状態のページ](media/02-setup-for-requests.png)
+![メンテナンス要求のライフサイクルの状態のページ。](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > メンテナンス要求のライフサイクルの状態、ライフサイクルの状態グループ、およびタイプは、ワーク オーダー ライフサイクルの状態、ライフサイクルの状態グループ、およびタイプに関連し、同じように使用されます。 
@@ -68,9 +66,9 @@ ms.locfileid: "5022083"
 
 5. **ライフサイクルの状態** クイック タブで、ライフサイクル モデルに含める必要があるライフサイクル状態を選択します。
 
-    - ライフサイクル モデルにライフサイクルの状態を含めるには、**残りのライフサイクル状態** セクションでそれを選択し、右矢印ボタン![右矢印](media/03-setup-for-requests.png) を選択して **選択されたライフサイクルの状態** セクションに移動します。
-    - ライフサイクル モデルに使用可能なすべてのライフサイクルの状態を含めるには、**使用可能なすべての状態を選択** ボタン![使用可能なすべての状態を選択](media/04-setup-for-requests.png) を選択します。 すべてのライフサイクルの状態は、**選択されたライフサイクルの状態** セクションに移動されます。
-    - ライフサイクル モデルからライフサイクルの状態を削除するには、**選択されたライフサイクルの状態** セクションでそれを選択し、左矢印ボタン![左矢印](media/05-setup-for-requests.png) を選択して **残りのライフサイクルの状態** セクションに移動します。
+    - ライフサイクル モデルにライフサイクル状態を含めるには、**残りのライフスタイル状態** セクションでライフサイクル状態を選択し、右矢印ボタン ![右矢印。](media/03-setup-for-requests.png) を選択して、 **選択されたライフサイクル状態** セクションに移行します。
+    - ライフサイクル モデルに使用可能なすべてのライフサイクルの状態を含めるには、**使用可能なすべての状態を選択** ボタン![使用可能なすべての状態を選択。](media/04-setup-for-requests.png) を選択します。 すべてのライフサイクルの状態は、**選択されたライフサイクルの状態** セクションに移動されます。
+    - ライフサイクル モデルからライフサイクル状態を削除するには、**選択されたライフサイクル状態** セクションでライフサイクル状態を選択し、左矢印ボタン ![左矢印。](media/05-setup-for-requests.png) を選択して、 **残りのライフサイクル状態** セクションに移行します。
 
 6. **一般** クイック タブでは、Depot 修復を使用する場合、**更新** セクションのフィールドが関連します。
 
@@ -79,4 +77,7 @@ ms.locfileid: "5022083"
 
 次の図は、**メンテナンス要求のライフサイクル モデル** ページの例を示しています。
 
-![メンテナンス要求のライフサイクル モデルのページ](media/06-setup-for-requests.png)
+![メンテナンス要求のライフサイクル モデルのページ。](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

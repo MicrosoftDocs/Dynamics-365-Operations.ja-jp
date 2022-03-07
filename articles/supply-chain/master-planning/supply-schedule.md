@@ -1,7 +1,7 @@
 ---
 title: 供給スケジュール
 description: このトピックでは、供給スケジュール ページとその機能についての説明します。
-author: ChristianRytt
+author: crytt
 ms.date: 9/3/2021
 ms.topic: article
 ms.search.form: ReqSupplyDemandSchedule, ReqSupplyDemandScheduleFilters, ReqSupplyDemandItemDetails, ReqTransFuturesActionsPart, ReqSupplyDemandOverviewLegendPart
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d2f0f38d86ae307ef80bd02901e19a08d5e30ae
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0760fcd5408d3960dcc55f773b4e09efc3c9f81c
+ms.sourcegitcommit: 99bde425ade701ef244c6bca6d411aef94a59b3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578371"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "7505584"
 ---
 # <a name="supply-schedule"></a>供給スケジュール
 

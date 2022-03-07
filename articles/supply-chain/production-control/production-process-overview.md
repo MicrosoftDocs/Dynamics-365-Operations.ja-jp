@@ -2,16 +2,13 @@
 title: 生産プロセスの概要
 description: このトピックでは、生産プロセスの概要を示します。 製造オーダー、バッチ オーダー、およびかんばんのオーダーの作成から財務期間の決算までのさまざまなステージについて説明します。
 author: cvocph
-manager: tfehr
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6f0c63459bb61bef9251a677f7fc050120e53fe
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5f3d82089d2917a0ec0b9ceead7cd1ec22457733
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431932"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188152"
 ---
 # <a name="production-process-overview"></a>生産プロセスの概要
 
@@ -77,8 +74,7 @@ ms.locfileid: "4431932"
 12. **期間終了** – 周期平均、バック フラッシュ原価計算、FIFO、LIFOなどいくつかの原価計算の原則は、定期的な活動によって在庫または財務期間を閉じる必要があります。 通常、システムは、期間終了前にすべての材料消費、リソース消費、在庫と仕損の修正を報告するように試みます。 この報告は通常、在庫移動仕訳帳または調整仕訳帳を使用して行われます。 目標は、期間ごとの作業単位の経済パフォーマンスを評価することです。 場合によっては、複数の財務報告期間にまたがる長期の製造オーダーを使用すると、生産仕訳帳が、期間の終わりに生産の進捗状況およびリソース消費を報告するのに使用されます。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [生産フィードバック](production-feedback.md)
 
@@ -88,3 +84,6 @@ ms.locfileid: "4431932"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

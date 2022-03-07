@@ -1,27 +1,27 @@
 ---
 title: データ エンティティを使用したデータの管理と統合についての概要
 description: このトピックでは、同期と非同期の統合の仕組みについて簡単に説明します。
-author: Sunil-Garg
-manager: AnnBe
+author: peakerbl
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: 26441
+ms.custom:
+- "26441"
+- intro-internal
 ms.assetid: 8aa25787-5920-4277-acff-7011200133f4
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 707f97cebda5d0731c3bab8ddd9ecf9ff7ba73a6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 82dddbe07824df3877c201a55bc063f0a3451800
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685687"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984479"
 ---
 # <a name="data-management-and-integration-by-using-data-entities-overview"></a>データ エンティティを使用したデータの管理と統合についての概要
 
@@ -50,7 +50,7 @@ ms.locfileid: "4685687"
 
 次の図は、着信フローを示しています。
 
-![受信フロー](./media/over6.png)
+![受信フロー。](./media/over6.png)
 
 ## <a name="known-limitations-in-data-importexport"></a>データのインポート/エクスポートにおける既知の制限
 テキスト ファイルをインポートするとき、文字列サイズは 32,768 文字に限定されます。 文字列がこれより大きい場合は、インポートされた文字列が切り捨てられます。 これは、基本的な実装の制限であり、SQL Server Integration Services (SSIS) によるものです。
@@ -58,3 +58,6 @@ ms.locfileid: "4685687"
 32,768 文字を超える文字列をインポートする必要がある場合は、コンテナー エンティティ フィールドを使用することをお勧めします。
 
 詳細については、FastTrack 技術解説のビデオ: [Dynamics 365 for Operations – 技術解説: 統合](https://www.youtube.com/watch?v=fooBvQhIo6I)をご覧ください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

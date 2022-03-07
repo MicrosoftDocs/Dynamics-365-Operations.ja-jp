@@ -2,11 +2,9 @@
 title: Finance and Operations バージョン 10.0 (2019 年 4 月) の新機能および変更された機能
 description: このトピックでは Microsoft Dynamics 365 for Finance and Operations バージョン 10.0 のプレビュー中の機能について説明します。 このバージョンは、2019 年 4 月にリリースされます。
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 485da39d612598fd37db6e0fff72ce4391f2834b
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 8ab65493b6dec46c7d27cdb02c2f4ec804d8073ee789df4bde9e55c0aae11f45
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720636"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-version-100-april-2019"></a>Finance and Operations バージョン 10.0 (2019 年 4 月) の新機能および変更された機能
 
@@ -30,7 +28,7 @@ ms.locfileid: "4797233"
 
 このトピックでは Microsoft Dynamics 365 for Finance and Operations バージョン 10.0 の新機能または変更された機能について説明します。 このバージョンのビルド番号は 10.0.8 です。 バージョン 10.0 の詳細については [追加リソース](whats-new-changed-10.md#additional-resources) を参照してください。
 
-Retail の機能については、[Dynamics 365 for Retail (2019 年 4 月) の新機能および変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/april-whats-new) を参照してください。
+Retail の機能については、[Dynamics 365 for Retail (2019 年 4 月) の新機能および変更された機能](../../../commerce/get-started/april-whats-new.md) を参照してください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
 
@@ -193,7 +191,7 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0 には、
 ### <a name="dynamics-365-april-19-release-notes"></a>Dynamics 365 2019 年 4 月 リリース ノート
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md) トピックでは、Dynamics 365 for Finance and Operations の削除または廃止された機能について説明します。
@@ -204,3 +202,6 @@ Microsoft Dynamics 365 for Finance and Operations バージョン 10.0 には、
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

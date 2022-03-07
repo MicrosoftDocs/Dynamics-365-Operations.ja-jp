@@ -2,11 +2,9 @@
 title: AX 2009 アップグレード - データ移行ツールを使用して、Dynamics AX 2009から Finance and Operations へ移行します。
 description: このトピックでは、データ移行ツール (DMT) を使用して、 Microsoft Dynamics AX 2009 から Finance and Operations へデータを移行する方法を説明します。
 author: kfend
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: 2875db50f8b630650463ac2b9964b4f16c7388bf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e0df02298325a88eb853cb7289a6958b30da8feb53943418b8e976cc5df3bad1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763458"
 ---
 # <a name="ax-2009-upgrade---use-the-data-migration-tool-to-migrate-from-dynamics-ax-2009-to-finance-and-operations"></a>AX 2009 アップグレード - データ移行ツールを使用して、Dynamics AX 2009から Finance and Operations へ移行します。 
 
@@ -33,13 +31,13 @@ AX 2009 から Finance and Operations へデータを移行するため Microsof
 ## <a name="architecture"></a>アーキテクチャ
 次の図では、DMT のアーキテクチャ、また、ソース システム (AX 2009) のデータの処理方法とターゲット システム (Finance and Operations) への移動方法について説明します。
 
-![データ移行の技術フロー](media/dmt_technical_flow.png)
+![データ移行の技術フロー。](media/dmt_technical_flow.png)
 
 ## <a name="data-migration-process"></a>データ移行プロセス
 
 次の図で、AX 2009 インスタンスでデータを収集して準備し、新しい環境にそのデータをインポートする全体的なプロセスを示します。
 
-![データ移行プロセス](media/dmt_process_flow.PNG)
+![データ移行プロセス。](media/dmt_process_flow.PNG)
 
 DMT を使用してソース環境 (AX 2009) からデータをエクスポートする前に、次の前処理のタスクを完了させておく必要があります。
 
@@ -59,3 +57,6 @@ AX 2009 からデータを移行する前に、移行の要件を満たすため
 - 各法人の勘定科目表を選択するか、単一の勘定科目に複数の法人を連結します。
 - 基本的な元帳設定を実行します。
 - フィールドの拡張データ型 (EDT) に基づき、ソース データにデータ変換を適用します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

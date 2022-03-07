@@ -1,12 +1,10 @@
 ---
-title: ローカライズ モデルの分離
-description: ローカライズおよび翻訳向け LCS ソリューションの要件の一部として、以前のバージョンの Dynamics 365 Finance and Operations アプリのローカライズ ソリューションに、規制と競合の両方の機能が含まれている場合、ローカライズ ISV ソリューション プロバイダーはソリューションを各機能タイプごとに別々のモデルに分割する必要があります。 この記事では、この要件に関する情報を提供します。
+title: ローカライズ モデルの分類
+description: この記事では、ソリューションを機能タイプごとに個別のモデルに分割する方法について説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/17/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,14 +14,14 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0458dafd76587c0ce1792daa575679fbcb98f2ac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c7507ec693142923612c43739c003f6bd2c10fea0f9a85666a486150145e697a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685025"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759996"
 ---
-# <a name="separation-of-localization-models"></a>ローカライズ モデルの分離
+# <a name="separation-of-localization-models"></a>ローカライズ モデルの分類
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,3 +35,6 @@ ms.locfileid: "4685025"
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,29 +1,20 @@
 ---
 title: 統合された元帳
 description: このトピックでは、Dataverse を使用した Finance and Operations とその他の Dynamics 365 アプリケーション間の元帳データの統合について説明します。
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
-ms.author: rhaertle
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f794d8306a3a752d811d7d84c0ed5f739f423cad
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: e41d600464d707d01a0e319dd3cd343b04aa26b7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681645"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782383"
 ---
 # <a name="integrated-ledger"></a>統合された元帳
 
@@ -31,60 +22,26 @@ ms.locfileid: "4681645"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 ビジネス アプリケーションでは、元帳データによって、会社が業務を行うためのコア設定が定義されます。 たとえば、元帳データには、会社が従う会計年度、トランザクションによって処理される通貨、使用する勘定が記述されます。 このトピックでは、この中心的な財務データの統合について説明します。
 
 ## <a name="templates"></a>テンプレート
 
 次の表に示すように、元帳データには、データ操作中に連携して動作する中心的な財務テーブル マップのコレクションが含まれています。
 
-Finance and Operations アプリ      | Dynamics 365 のモデル駆動型アプリ | 説明
+Finance and Operations アプリ | Customer Engagement アプリ     | 説明
 ---------------------------------|----------------------------------|------------
-通貨                       | transactioncurrencies            |
-FiscalCalendar                   | msdyn\_fiscalcalendars        |
-FiscalCalendarYear               | msdyn\_fiscalcalendaryears        |
-ExchRateType                     | msdyn\_exchangeratetypes        |
-ExchangeRateCurrencyPair         | msdyn\_currencyexchangeratepairs        |
-FiscalPeriodEntity               | msdyn\_fiscalcalendarperiods        |
-MainAccountCategory              | msdyn\_mainaccountcategory        |
-MainAccount                      | msdyn\_mainaccounts        |
-元帳                           | msdyn\_ledgers        |
-ExchangeRates                    | msdyn\_currencyexchangerates        |
-FinancialCalendarPeriod          | msdyn\_fiscalcalendarperiods        |
-DimensionAttributeEntity         | msdyn\_dimensionattributes        |
-DimensionIntegrationFormatEntity | msdyn\_financialdimensionformats        |
-LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
+[CDS 為替レート](mapping-reference.md#123) | msdyn_currencyexchangerates |
+[勘定科目表](mapping-reference.md#121) | msdyn_chartofaccountses |
+[通貨](mapping-reference.md#218) | transactioncurrencies |
+[為替レートの通貨ペア](mapping-reference.md#122) | msdyn_currencyexchangeratepairs |
+[為替レート タイプ](mapping-reference.md#129) | msdyn_exchangeratetypes |
+[財務分析コード形式](mapping-reference.md#130) | msdyn_financialdimensionformats |
+[財務分析コード](mapping-reference.md#128) | msdyn_dimensionattributes |
+[会計カレンダー統合エンティティ](mapping-reference.md#132) | msdyn_fiscalcalendars |
+[会計カレンダー期間](mapping-reference.md#131) | msdyn_fiscalcalendarperiods |
+[会計暦年統合エンティティ](mapping-reference.md#133) | msdyn_fiscalcalendaryears |
+[会計](mapping-reference.md#148) | msdyn_ledgers |
+[主勘定](mapping-reference.md#152) | msdyn_mainaccounts |
+[主勘定カテゴリ](mapping-reference.md#151) | msdyn_mainaccountcategories |
 
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/Currencies-transactioncurrencies.md)]
-
-[!include [Fiscal calendar](includes/FiscalCalendar-msdyn-fiscalcalendars.md)]
-
-[!include [Fiscal calendar year](includes/FiscalCalendarYear-msdyn-fiscalcalendaryears.md)]
-
-[!include [Exchange rate types](includes/ExchRateType-msdyn-exchangeratetypes.md)]
-
-[!include [Exchange rate pair](includes/ExchangeRateCurrencyPair-msdyn-currencyexchangeratepairs.md)]
-
-[!include [Main account category](includes/MainAccountCategory-msdyn-mainaccountcategory.md)]
-
-[!include [Main account](includes/MainAccount-msdyn-mainaccounts.md)]
-
-[!include [Ledger](includes/Ledger-msdyn-ledgers.md)]
-
-[!include [Exchange rates](includes/ExchangeRates-msdyn-currencyexchangerates.md)]
-
-[!include [Financial Calendar Period](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
-
-[!include [Dimension attribute](includes/DimensionAttributeEntity-msdyn-dimensionattributes.md)]
-
-[!include [Dimension integration format](includes/DimensionIntegrationFormatEntity-msdyn-financialdimensionformats.md)]
-
-[!include [Chart Of Account](includes/LedgerChartOfAccounts-msdyn-chartofaccounts.md)]
-
-
-
-
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

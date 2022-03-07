@@ -2,28 +2,25 @@
 title: 周辺機器
 description: このトピックでは、コマース周辺機器に関連する概念を説明します。
 author: rubencdelgado
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413873"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791950"
 ---
 # <a name="peripherals"></a>周辺機器
 
@@ -763,7 +760,6 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 | Epson        | TM-T88V  | OPOS      |                           |
 | Epson        | TM-T88   | ユーザー設定    | ネットワーク経由で接続     |
 | Star         | TSP650II | ユーザー設定    | ネットワーク経由で接続     |
-| Star         | TSP100   | OPOS      | TSP650II ドライバーが必要 |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
 
 #### <a name="payment-terminal"></a>支払ターミナル
@@ -837,3 +833,6 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 [コマースの周辺機器シミュレーター](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

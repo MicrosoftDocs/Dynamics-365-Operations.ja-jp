@@ -3,14 +3,12 @@ title: 店舗セレクター モジュール
 description: このトピックでは、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5400a2e743a78124dca4bf9be3ccaf7870ea8b7d
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665275"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772159"
 ---
 # <a name="store-selector-module"></a>店舗セレクター モジュール
 
@@ -31,21 +29,40 @@ ms.locfileid: "4665275"
 
 このトピックでは、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
-## <a name="overview"></a>概要
-
 顧客は、店舗セレクター モジュールを使用して、オンライン購入後に選択した店舗の製品を集荷できます。 Commerce バージョン 10.0.13 では、店舗セレクター モジュールにも、近くにある店舗を表示する **店舗の検索** ページを紹介する機能が追加されています。
 
 店舗セレクター モジュールを使用すると、場所 (市町村、都道府県、住所など) を入力して検索半径内の店舗を検索できます。 モジュールが最初に開かれたとき、顧客のブラウザーの場所を使用して、店舗が検索されます (同意を得ている場合)。
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>E-コマースの店舗セレクター モジュールの使用方法
+## <a name="store-selector-module-usage"></a>店舗セレクター モジュールの使用
 
 - 製品の詳細ページ (PDP) では、店舗セレクター モジュールを使用して受け取りのための店舗を選択できます。
 - 買い物カゴ ページでは、店舗セレクター モジュールを使用して受け取りのための店舗を選択できます。
 - 店舗セレクター モジュールは、使用可能なすべての店舗を表示するスタンドアロン ページで使用できます。
 
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Commerce 本社でのフルフィルメント グループの設定
+
+店舗セレクターで利用可能な店舗を表示するには、Commerce 本社でフルフィルメント グループを設定する必要があります。 詳細については、[フルフィルメント グループの設定](customer-orders-overview.md#set-up-fulfillment-groups)を参照してください。
+
+さらに、フルフィルメント グループ内の各店舗に関しては、店舗の場所の緯度と経度を本社に定義する必要があります。
+
+Commerce 本社の店舗の場所の経度と緯度値を入力するには次の手順に従います。
+
+1. **在庫管理 \> 設定 \> 在庫詳細** の順に移動します。
+1. 左ウィンドウで、倉庫の場所を選択します。
+1. **住所** クイックタブで、**詳細** を選択します。
+
+    ![本社の店舗詳細の例です。](./media/Store-address.png)
+
+1. アクション ウィンドウで、**編集** を選択します。
+1. **一般** クイックタブで、**緯度** および **軽度** の値を入力します。
+
+    ![本社の店舗に対する緯度と経度設定の例です。](./media/Store-latitude-longitude.png)
+
+1. アクション ウィンドウで、**保存** を選択します。 
+
 ## <a name="bing-maps-integration"></a>Bing Maps の統合
 
-Bing の Geocoding および Autosuggest 機能を使用するために、ストア選択モジュールは [Bing Maps REST アプリケーション プログラミング インターフェイス (API)](https://docs.microsoft.com/bingmaps/rest-services/) と統合されています。 Bing Maps API キーは必須で、Commerce 本社の共有パラメータ ページに追加する必要があります。 Geocoding API は、場所を緯度と経度の値に変換するために使用されます。 Autosuggest API との統合は、ユーザーが検索フィールドに場所を入力したときに検索候補を表示するために使用されます。
+Bing の Geocoding および Autosuggest 機能を使用するために、ストア選択モジュールは [Bing Maps REST アプリケーション プログラミング インターフェイス (API)](/bingmaps/rest-services/) と統合されています。 Bing Maps API キーは必須で、Commerce 本社の共有パラメータ ページに追加する必要があります。 Geocoding API は、場所を緯度と経度の値に変換するために使用されます。 Autosuggest API との統合は、ユーザーが検索フィールドに場所を入力したときに検索候補を表示するために使用されます。
 
 Autosuggest REST API の場合は、サイトのコンテンツ セキュリティ ポリシー (CSP) に対して、次の URL が許可されていることを確認する必要があります。 この設定は、Commerce サイト ビルダーで、サイトのさまざまな CSP ディレクティブ (**img-src** など) に許可された URL を追加することによって実行されます。 詳細については、[コンテンツ セキュリティ ポリシー](manage-csp.md)を参照してください。 
 
@@ -53,21 +70,21 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 - **img-src** ディレクティブに **&#42;.virtualearth.net** を追加します。
 - **script-src** ディレクティブに、**&#42;.bing.com, &#42;.virtualearth.net** を追加します。
 - **script style-src** ディレクティブに、**&#42;.bing.com** を追加します。
- 
+
 ## <a name="pickup-in-store-mode"></a>店舗で受け取りモード
 
 店舗セレクター モジュールでは、製品を受け取ることができる店舗の一覧を表示する **店舗で受け取り** モードをサポートしています。 また、この一覧には店舗の営業時間と店舗ごとの製品在庫も表示されます。 店舗セレクター モジュールでは、製品の利用可能性を表示するためと、選択した店舗で製品の配送モードが **受け取り** に設定されている場合はユーザーが製品を買い物カゴに追加できるように、製品のコンテキストが必要です 。 詳細については、[在庫設定](inventory-settings.md)を参照してください。 
 
 店舗セレクター モジュールは、PDP の購入ボックス モジュールに追加して、製品を受け取ることができる店舗を表示できます。 また、カート モジュールに追加することもできます。 この場合、店舗セレクター モジュールは、買い物カゴ内の各品目に対する受け取りオプションを表示します。 店舗セレクター モジュールは、拡張機能とカスタマイズによって、他のページまたはモジュールに追加することもできます。
 
-このシナリオが機能するためには、**受け取り** 配送モードが使用されるように製品をコンフィギュレーションする必要があります。 それ以外の場合、このモジュールは製品ページでは表示されません。 配送モードをコンフィギュレーションする方法の詳細については、[荷渡方法の設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)を参照してください。
+このシナリオが機能するためには、**受け取り** 配送モードが使用されるように製品をコンフィギュレーションする必要があります。 それ以外の場合、このモジュールは製品ページでは表示されません。 配送モードをコンフィギュレーションする方法の詳細については、[荷渡方法の設定](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)を参照してください。
 
 次の図は、PDP で使用される店舗セレクター モジュールの例を示しています。
 
-![PDP で使用される店舗セレクター モジュールの例](./media/BOPIS.PNG)
+![PDP で使用される店舗セレクター モジュールの例です。](./media/BOPIS.PNG)
 
 > [!NOTE]
-> バージョン 10.0.16 では、新しい機能を有効にして、組織が顧客に対して複数のピッキング モードを定義できるようにすることができます。  この機能が有効になっている場合、電子商取引の店舗セレクターとその他のモジュールが強化され、複数の集荷配送オプション (コンフィギュレーションされている場合) の中から買い物客が選択できるようになります。  この機能の詳細については、[このドキュメント](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes)を参照してください。 
+> バージョン 10.0.16 では、新しい機能を有効にして、組織が顧客に対して複数のピッキング モードを定義できるようにすることができます。  この機能が有効になっている場合、電子商取引の店舗セレクターとその他のモジュールが強化され、複数の集荷配送オプション (コンフィギュレーションされている場合) の中から買い物客が選択できるようになります。  この機能の詳細については、[このドキュメント](./multiple-pickup-modes.md)を参照してください。 
 
 ## <a name="find-stores-mode"></a>店舗検索モード
 
@@ -75,7 +92,7 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 
 次の図は、店舗の場所ページのマップ モジュールと共に使用される店舗セレクター モジュールの例を示しています。
 
-![保管場所ページの店舗セレクター モジュールとマップ モジュールの例](./media/ecommerce-Storelocator.PNG)
+![店舗の場所ページの店舗セレクター モジュールとマップ モジュールの例です。](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>マップのレンダリング
 
@@ -93,6 +110,10 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 | Autosuggest オプション: 最大結果 | 番号 | このプロパティは、Bing Autosuggest API を介して表示できる Autosuggest 結果の最大数を定義します。 |
 | 検索半径 | 番号 | このプロパティは、店舗の検索半径をマイル単位で定義します。 値が指定されていない場合は、既定の検索半径 (50マイル) が使用されます。 |
 | サービス条件 | URL |  このプロパティは、Bing Maps サービスを使用するために必要なサービス URL の条件を指定します。 |
+
+## <a name="site-settings"></a>サイトの設定
+
+店舗のセレクター モジュールでは、[カートに製品を追加の設定](add-cart-settings.md) を遵守します。 店舗のセレクター モジュールから品目がカートに追加されると、サイト ユーザーに適切な構成済ワークフローが表示されます。
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>店舗セレクター モジュールをページに追加する
 
@@ -139,10 +160,13 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 
 [カートとチェックアウトのクイック ツアー](quick-tour-cart-checkout.md)
 
-[荷渡方法の設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[荷渡方法の設定](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [組織の Bing 地図の管理](dev-itpro/manage-bing-maps.md)
 
-[Bing Maps REST API](https://docs.microsoft.com/bingmaps/rest-services/)
+[Bing Maps REST API](/bingmaps/rest-services/)
 
 [マップ モジュール](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

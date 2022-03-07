@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: b735309f8b352ad862fd2169b4dd38b8b488efb4bc80a6a094758941f9a8e4d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d5b5b1b85e8d490341c80a192aa1b4fb48aa4a2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768387"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745979"
 ---
 # <a name="export-business-to-business-b2b-users-to-azure-active-directory"></a>Azure Active Directory への企業間 (B2B) のユーザーのエクスポート
 

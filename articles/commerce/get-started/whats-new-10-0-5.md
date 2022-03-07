@@ -2,27 +2,24 @@
 title: Dynamics 365 for Retail バージョン 10.0.5 の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Retail の新機能または変更された機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-08-02
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: df13f5905db59d6adcb3c1db8f817763acfebc0c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aa77fadc4f51e0aee6c499ab6d83c63b5ad73d51
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408934"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797160"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-version-1005"></a>Dynamics 365 for Retail バージョン 10.0.5 の新機能および変更された機能
 
@@ -58,3 +55,6 @@ POSとRSATの詳細については、[Retail Cloud POS 用のレコーダーお�
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
 [Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

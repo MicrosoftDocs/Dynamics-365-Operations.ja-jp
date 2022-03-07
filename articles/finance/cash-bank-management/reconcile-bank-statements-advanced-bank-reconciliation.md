@@ -2,11 +2,9 @@
 title: 詳細な口座調整を使用した口座取引明細書の調整
 description: 詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 Finance での銀行トランザクションに合わせて自動的に調整することができます。 このトピックでは、調整プロセスについて説明します。
 author: saraschi2
-manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92c04a47b134584280736f4d3d2fa401d2a2a9b7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9e5b097d667186a849b23814917d0d6f837c25de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969431"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835007"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>詳細な口座調整を使用した口座取引明細書の調整
 
@@ -95,3 +93,6 @@ Finance にまだない利息、手数料、諸費用など新しい銀行開始
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,6 +2,7 @@
 title: 倉庫のパフォーマンス Power BI コンテンツ
 description: このトピックでは、倉庫パフォーマンス Power BI コンテンツに何が含まれているのか説明します。
 author: Mirzaab
+manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: db56d1bd26f27987f00126ac1a6434cf36691fbf594cab3dd1260ed5251480a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 29acf305a275ac9d7047c3aceec726019951654c
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750553"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563802"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>倉庫のパフォーマンス Power BI コンテンツ
 

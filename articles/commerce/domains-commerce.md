@@ -2,27 +2,24 @@
 title: Dynamics 365 Commerce のドメイン
 description: このトピックでは、Microsoft Dynamics 365 Commerce でのドメインの処理方法について説明します。
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517358"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022839"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のドメイン
 
@@ -41,7 +38,7 @@ ms.locfileid: "4517358"
 
 次の図は、**サポートされているホスト名** ボックスが強調表示された LCS E コマース プロビジョニング画面を示しています。 
 
-![**サポートされているホスト名** ボックスが強調表示された LCS E コマース プロビジョニング画面](./media/Domains_ProvisioningeCommerceScreen.png)
+![**サポートされているホスト名** ボックスが強調表示された LCS E コマース プロビジョニング画面](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 プロビジョニングが既に行われている場合は、サービス要求を作成して環境にドメインを追加できます。 LCS でサービス要求を作成するには、環境内で **サポート \> サポートの問題** に移動し、**インシデントの送信** を選択します。
 
@@ -154,7 +151,7 @@ Commerce 提供の Azure Front Door インスタンスは、apex ドメイン (�
 
   [新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
 
-  [オンライン ストア チャネルのセットアップ](online-stores.md)
+  [オンライン ストア チャネルのセットアップ](./channel-setup-online.md)
 
   [eコマース サイトの作成](create-ecommerce-site.md)
 
@@ -173,3 +170,6 @@ Commerce 提供の Azure Front Door インスタンスは、apex ドメイン (�
   [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
   [場所に基づく店舗検出の有効化](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

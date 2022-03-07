@@ -2,11 +2,9 @@
 title: 拡張可能なコントロールのパブリック JavaScript API
 description: このトピックでは、拡張可能なコントロールで使用できるパブリック JavaScript API に関するドキュメントの入手先を示します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: ef01ae815cef285adaf329d1b95d46acb1a555ef
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2bdc23eccb382b2118891e489f1585afc97ac03b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683937"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752928"
 ---
 # <a name="public-javascript-apis-for-extensible-controls"></a>拡張可能なコントロールのパブリック JavaScript API
 
@@ -33,3 +31,6 @@ ms.locfileid: "4683937"
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

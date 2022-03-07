@@ -1,18 +1,23 @@
 ---
 title: Part タイプ
 description: パーツ コントロール タイプ。 パーツは、ページのみを含むコンテナー コントロールで、ページがページ内に埋め込まれるのを許可します。
-author: tonyafehr
+author: robinarh
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: d824f92f89da531f561b51dd10dbca1a9952cc38
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 1f1863eb9883d8efada204228d5bad278258d0c0
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781530"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744719"
 ---
 # <a name="part-type"></a>Part タイプ
 

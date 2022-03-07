@@ -2,25 +2,19 @@
 title: X++ 演算子
 description: このトピックでは、X++ でサポートされている演算子について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 12/02/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150373
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34f509c06ed89146493da74dc4e5296ad4ad23c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a30c65359c7d9d27e674e37ab9d174e1a66f8d20
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408825"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661546"
 ---
 # <a name="x-operators"></a>X++ 演算子
 
@@ -318,3 +312,6 @@ today() >= 1\1\1980  // Returns true, because today is later than January 1, 198
 同じ行の演算子には、同等な優先順位があります。 式にこれらの演算子のうち 1 つ以上が含まれる場合、代入演算子が使用されない限り、式は左から右に評価されます。 (代入演算子は、右から左に評価されます)。たとえば、`&&` (論理 `AND`) および `||` (論理 `OR`) には、同じ優先順位で、左から右に評価されます。 したがって、 
 + `0 && 0 || 1` == `1`
 + `1 || 0 && 0` == `0` です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,33 +1,35 @@
 ---
 title: ライフ イベントのプロセス
 description: Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中に、各従業員に対してさまざまなイベントの変化が発生する可能性があります。
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ada986888a22afe83885985a694cd00ff94c9217
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9155795edf657d6589539e58d4c1536f7e9d64c3
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419321"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069658"
 ---
 # <a name="process-life-events"></a>ライフ イベントのプロセス
 
-Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中に、各従業員に対してさまざまなイベントの変化が発生する可能性があります。 たとえば、結婚、雇用の変更、または被扶養/受益者の変更などです。 ライフ イベントを使用するには、給付金パラメータ フォームのライフ イベントを有効にし、ライフ イベント タイプを設定し、さらにプラン タイプのライフ イベント オプションを設定する必要があります。
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中に、各従業員に対してさまざまなイベントの変化が発生する可能性があります。 たとえば、結婚、雇用の変更、または被扶養/受益者の変更などです。 ライフ イベントを使用するには、**給付金パラメーター** ページのライフ イベントを有効にし、ライフ イベント タイプを設定し、さらにプラン タイプのライフ イベント オプションを設定する必要があります。
 
 ライフ イベントを処理するには、採用期間中に、少なくとも一度はオープン登録を実行しておく必要があります。 米国では、オープン登録を通常年に 1 回行います。 米国以外では、オープン登録は入社時に実行されます。 作業者は、処理するべきライフ イベントのために給付金プランを選択する必要はありませんが、オープン登録処理に含まれている必要があります。 
 
@@ -57,3 +59,6 @@ Microsoft Dynamics 365 Human Resources の従業員のライフサイクル中�
    4. **OK** を選択します。 設定したパラメータで処理が実行されます。
 
 4. **OK** を選択します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

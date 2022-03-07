@@ -1,12 +1,10 @@
 ---
-title: 機能タイトルの規制認証情報
-description: ローカライズ &amp; 翻訳向け LCS ソリューションの要件の一部として、ローカライズ ISV ソリューション プロバイダーは意図したマーケットでの販売を、法律に準拠したものにするために。ソリューションが必要とする規制認証に関する詳細を含める必要があります。 この記事では、機能のタイトルに認証に関する情報をどのように使用しているかを示します。
+title: 機能タイトルの規制証明情報
+description: このトピックでは、機能のタイトルで認証に関する情報を使用する方法について説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: janeaug
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a7c226a56142f46b9fda14d0b92b5a580be420
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6182ac9551c035d39caf602e6873342b859dfaa97cd06ec2081fd9c73045b972
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685030"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729011"
 ---
 # <a name="regulatory-certification-information-in-feature-titles"></a>機能タイトルの規制認証情報
 
@@ -54,3 +52,6 @@ BPM の詳細については、[ビジネス プロセス モデラー (BPM) の
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

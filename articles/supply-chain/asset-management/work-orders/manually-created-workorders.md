@@ -1,12 +1,10 @@
 ---
 title: 手動で作成された作業指示書
 description: このトピックでは、資産管理で作業指示書を手動で作成する方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a755fa579d929056296c5512f976d15c4808c336b6688b891a4712051e15e9a1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750103"
 ---
 # <a name="manually-created-work-orders"></a>手動で作成された作業指示書
 
@@ -113,7 +111,7 @@ ms.locfileid: "5017871"
 
 次の図は、**関連する作業指示書の作成** ダイアログの例を示しています。
 
-![図 1](media/03-work-orders.png)
+![図 1。](media/03-work-orders.png)
 
 >[!NOTE]
 >**資産管理パラメーター** > **作業指示書** タブ > **関連する作業指示書のマスク** フィールドで関連する作業指示書のマスクを設定している場合、作業指示書 ID はマスクの設定に基づいて作成されます。 関連する作業指示書のマスクが設定されていない場合は、次に使用可能な作業指示書 ID が関連する作業指示書に対して使用されます。
@@ -139,7 +137,7 @@ ms.locfileid: "5017871"
 
 次の図は、**作業指示書のコピー** ダイアログの例を示しています。
 
-![図 2](media/04-work-orders.png)
+![図 2。](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>メンテナンス要求に基づく作業指示書の作成
@@ -159,9 +157,12 @@ ms.locfileid: "5017871"
 
 次の図は、**作業指示書の作成** ダイアログの例を示しています。
 
-![図 3](media/05-work-orders.png)
+![図 3。](media/05-work-orders.png)
 
 
 >[!NOTE]
 >作業指示書を自動的に作成する場合は、メンテナンス計画ジョブをスケジュールしたり、資産に対して、"自動作成" [メンテナンス計画](../preventive-and-reactive-maintenance/maintenance-plans.md) または [メンテナンス ラウンド](../preventive-and-reactive-maintenance/maintenance-rounds.md) を設定できます。 **すべてのメンテナンススケジュール** リスト ページのメンテナンス要求から作成された作業指示書には、メンテナンス要求で選択されたメンテナンス ジョブ タイプがあります。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: IoT インテリジェンスの Azure resources を設定する
 description: このトピックでは、IoT インテリジェンスに必要となる Microsoft Azure リソースの作成と構成方法について説明します。
 author: robinarh
-manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: ''
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 722904aa75a9d95b99c83f39a1d79b9c796714b3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432277"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821108"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>IoT インテリジェンスの Azure resources を設定する
 
@@ -162,3 +159,6 @@ Redis キャッシュの接続文字列のシークレットを保存するに�
 > いずれかの接続文字列を更新する場合は、常にこのシークレットの値も更新する必要があります。
 
 以上で、必要な Azure リソースのプロビジョニングが完了しました。 次の手順では、[Microsoft Dynamics Lifecycle Services (LCS) に、IoT インテリジェンスをインストール](iot-lcs-setup.md) します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

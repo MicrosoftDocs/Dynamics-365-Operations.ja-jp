@@ -2,7 +2,7 @@
 title: Office 統合のトラブルシューティング (タスク ガイド)
 description: このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。
 author: jasongre
-ms.date: 10/15/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,21 +15,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a8b7fd1136a8b9168fbcd9b9e6b50da6d8ef6e1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 982d558e31434c1b311df6891eea1e373e4a6e75
+ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069364"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6075157"
 ---
 # <a name="troubleshoot-the-office-integration"></a>Office 統合のトラブルシューティング
 
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
 このトピックでは、Microsoft Office 統合の機能に関する質問、ヒント、およびトラブルシューティング情報への回答を示します。 説明されている質問と問題は、ユーザー、管理、および開発のシナリオにわたっています。
@@ -46,7 +43,7 @@ Microsoft Excel アドインと Microsoft Word アドインは、Office Web/Java
 
 ### <a name="does-the-excel-add-in-support-office-for-mac"></a>Excel アドインは Mac のために Office をサポートしますか。
 
-いいえ。 Office JavaScript (JS) API は、特に認証に関しては、Apple Safari と Microsoft Edge/Internet Explorer で動作が異なります。 Office JS API のプラットフォーム サポートの詳細については、[Office アドイン ホストおよびプラットフォームの可用性](/office/dev/add-ins/overview/office-add-in-availability) を参照してください。
+No. Apple Mac および iOS のサポートは、現在開発中です。 Office JavaScript (JS) API は、特に認証に関しては、Apple Safari と Internet Explorer で動作が異なります。 Office JS API のプラットフォーム サポートの詳細については、[Office アドイン ホストおよびプラットフォームの可用性](/office/dev/add-ins/overview/office-add-in-availability) を参照してください。
 
 ### <a name="what-version-of-office-is-required-for-the-excel-add-in-to-support-ad-fs"></a>Excel アドインが AD FS をサポートするために必要な Office のバージョンとは
 
@@ -54,15 +51,15 @@ Microsoft Excel アドインと Microsoft Word アドインは、Office Web/Java
 
 ### <a name="how-can-i-force-an-update-of-office"></a>どのように Office の更新を強制できますか。
 
-Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](/deployoffice/overview-update-channels)). この場合、[Office 配置ツールを使用して現在のチャネルに移動する](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 最も簡単な方法は、Office 配置ツールを使用して現在のチャネルに切り替えることです。 この場合、最新の更新プログラムはすぐにインストールされます。
+Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](/deployoffice/overview-update-channels))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 最も簡単な方法は、Office 配置ツールを使用して現在のチャネルに切り替えることです。 この場合、最新の更新プログラムはすぐにインストールされます。
 
 ### <a name="why-cant-you-tell-me-what-version-of-office-or-excel-a-particular-issue-is-fixed-in"></a>どのバージョンの Office または Excel で特定の問題が修正されたか知ることができないのはなぜですか。
 
-Office には、多くのリリースがあります。 これらのリリースは、さまざまな時刻にアップデートを受け取り、対応しないさまざまなバージョン番号を持ちます。 頻繁に使用されるいくつかのバージョンの Office および更新メソッドは、Click to Run (C2R) Current channel、C2R Deferred、C2R First Update Deferred、Office Insider Fast、Office Insider Slow、MSI/MSO (DVD からインストール) です。 Office バージョンの詳細については、[Microsoft 365 アプリの更新に関するリリース情報 ](/officeupdates/release-notes-microsoft365-apps?f=255&MSPPError=-2147217396) を参照してください。
+Office には、多くのリリースがあります。 これらのリリースは、さまざまな時刻にアップデートを受け取り、対応しないさまざまなバージョン番号を持ちます。 頻繁に使用されるいくつかのバージョンの Office および更新メソッドは、Click to Run (C2R) Current channel、C2R Deferred、C2R First Update Deferred、Office Insider Fast、Office Insider Slow、MSI/MSO (DVD からインストール) です。 Office のバージョンの詳細については、[Microsoft 365 アプリの更新に関するリリース情報](/officeupdates/release-notes-microsoft365-apps?f=255&MSPPError=-2147217396) を参照してください。
 
 ### <a name="why-am-i-having-trouble-signing-into-the-excel-add-in"></a>Excel アドインへのサインインに問題が生じるのはなぜですか。
 
-Excel アドイン (または Office アドイン) を認証するために使用されるブラウザは、Office と操作システムのバージョンに依存します。 コンフィギュレーションへのサインインに使用される特定のブラウザーの詳細については、[Office アドインで使用されるブラウザー](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)。既定では、Excel アドインは、ブラウザーから格納されている資格情報を取得し、格納されている資格情報がない場合は、ブラウザーが現在の Microsoft Windows 資格情報を提供します。 適切な資格情報を使用してサインインしていることを確認します。 Excel アドインで、明示的にサインアウトしてから、適切な資格情報が使用されていることを確認するためにサインインします。
+Excel アドインは、Internet Explorer ウィンドウ内で動作します。 既定では、Excel アドインは Internet Explorer から保存されている資格情報を取得し、保存されている資格情報がない場合には Internet Explorer が現在の Microsoft Windows の資格情報を提供します。 適切な資格情報を使用してサインインしていることを確認します。 Excel アドインで、明示的にサインアウトしてから、適切な資格情報が使用されていることを保証するためにサインインします。
 
 ### <a name="the-excel-add-in-seems-to-be-slow-when-it-publishes-records-how-can-i-learn-more-about-what-is-occurring"></a>レコードを発行するとき、Excel アドインが遅くなったように見えます。 何が起こっているかについてもっと知るにはどうすればいいですか。
 
@@ -81,17 +78,22 @@ Excel アドインとサーバー/サービスの処理時間の関係を確認�
     - 要求から応答までの時間が長い場合、ボトルネックはサーバー/サービスです。
     - 次の要求への応答時間が大きい場合は、ボトルネックは Excel アドイン (つまり、クライアント) です。
 
-### <a name="is-export-to-excel-the-best-way-to-get-data-out-of-the-system"></a>システムからデータを取得するには、Excel にエクスポートするのが最善の方法ですか?
+### <a name="why-is-the-export-to-excel-functionality-limited-to-10000-records-prior-to-platform-update-22"></a>Excel にエクスポート機能が 10,000 レコードに制限されているのはなぜですか (プラットフォーム更新 22 より前)?
 
-エンド ユーザーがシステムからデータを取得する最善の方法は、Excel アドインを使用することです。 アドインは、OData サービスに依存してデータを取得し、データ エンティティが提供するセキュリティを活用します。 データ管理フレームワーク (DMF) およびデータ インポート/エクスポート フレームワーク (DIXF) のインポートとエクスポート機能も使用できます。 ただし、DMF と DIXF は多くの場合、管理者に限定されています。
+プラットフォーム更新 22 より前では、Excel にエクスポート機能が 10,000 レコードに制限されています。 エクスポート処理では、フォーマットされた値、計算された値、および一時テーブルのデータなど、取得できないフィールドとデータを次のレコードに提供するために、データのエクスポート元のフォームが使用されるため、この制限があります。 エクスポート時にフォームが使用されるため、特定のコンピューターのすべてのユーザーが共有するクライアント プロセス内で処理が行われます。 エクスポート中に、他のユーザーはクライアントとの対話をブロックされます。
 
-Excel にエクスポート機能は、上記のオプションが不可能な状況で使用できます。特に、計算列 (表示メソッド)、フォーマットされた値を持つ列、および一時テーブルからのデータを取得する場合に使用できます。 これは、エクスポート プロセスで有効なフォームのデータを使用してこのデータを取得するためです。 Excel にエクスポートすると、グリッドに表示されているとおりにデータが返され、フィルタ処理されたデータセットの場合に便利です。 ただし、OData サービスを経由するオプションを使用するよりも、エクスポートに時間がかかります。
+プラットフォーム更新 22 以降では、Excel にエクスポートに進捗状況ダイアログ ボックスがあり、他のユーザーをブロックしているプロセスがなくなったため、大規模なデータセットをエクスポートできます。 Excel 経由でのデータのエクスポートは、Excel アドインまたはデータ管理フレームワークを使用する場合よりも遅くなりますが、グリッドに表示されるデータが正確に返されます。 これは、フィルター処理されたデータセットの場合に便利です。 ユーザーには、任意の時点で停止することができるダイアログ ボックスが表示されます。 エクスポートには時間がかかることがあるため、自動ダウンロード オプションを有効にした Chrome または Edge ブラウザーを使用して行うことをお勧めします。 自動ダウンロード オプションを使用すれば、15 分の時間制限内にダウンロード リンクが使用されるように、ブラウザーはエクスポートが完了するとすぐにファイルをダウンロードします。
 
-Excel からエクスポートするには時間がかかることがあるため、自動ダウンロード オプションを有効にした Chrome または Edge ブラウザーを使用して行うことをお勧めします。 自動ダウンロード オプションを使用すれば、15 分の時間制限内にダウンロード リンクが使用されるように、ブラウザーはエクスポートが完了するとすぐにファイルをダウンロードします。
+Excel にエクスポートの理想的な代替は、[Excel で開く] と Excel アドインを使用することです。 Excel アドインは、OData サービスを使用してデータを取得し、エンティティが提供するセキュリティを活用します。 データ管理フレームワーク (DMF) およびデータ インポート/エクスポート フレームワーク (DIXF) のインポートおよびエクスポート機能も使用できます。 ただし、DMF/DIXF は、多くの場合管理者に限定されます。
+
+ユーザーが Excel アドイン経由でデータにアクセスすることに懸念がある場合、レコードを更新できないようにする必要があるため、次の点を考慮します。
+
+- エンティティには、フォームにあるすべての検証とロジックが必要です。 所有していない場合は、バグです。 
+- エンティティが保護される方法は、フォームが保護される方法と似ています。 したがって、ユーザーがそのデータを公開するフォームを使用してデータを更新または書き込みする権限を持っていない場合、ユーザーはそのデータを公開するエンティティを使用してデータを更新または書き込みする権限を持つべきではありません。 
 
 ### <a name="why-is-the-publish-button-in-the-excel-add-in-unavailable"></a>Excel アドインで公開ボタンが利用できないのはなぜですか。 
 
-**発行** ボタンをポイントし、現在公開がサポートされていない理由に関する詳細を取得します。 通常、これが発生するのは、エンティティにデータを公開し返すためにすべてのキー フィールドと必須フィールドが存在する必要があるためです。この場合、デザイナを開いて、すべてのキー フィールドがバインドされている必要があります。  
+エンティティにデータを公開するには、すべてのキーおよび必須フィールドが存在する必要があります。 バインドにフィールドを追加するようにデザインを編集してみてください。 
 
 ### <a name="why-are-the-excel-add-in-the-word-add-in-and-the-open-in-excel-options-only-available-when-the-internet-is-available"></a>Excel アドイン、Word アドイン、および Excel で開くオプションは、インターネットが利用可能な場合にのみ利用できます。
 
@@ -132,28 +134,7 @@ Office ストアへの戻しが必要な場合、標準値は次のとおりで�
 
 Excelアドイン、データ管理 フレームワーク、 Power BI レポートはすべて、データベース レベル で データと直接やり取りするように設計されています。 ユーザーのタイムゾーンに合わせて日付と時刻のデータを調整するクライアントが存在しないため、日付と時刻の値はすべて UTC となります。
 
-### <a name="when-is-skype-integration-supported"></a>Skype 統合はいつサポートされますか?
-
-Skype 統合は、パブリック クラウドの環境で利用できます。 オンプレミス環境を含む、パブリック クラウド外部の環境では、Skype 統合は現在サポートされていません。 
-
 ## <a name="troubleshooting-issues"></a>問題のトラブルシューティング
-
-### <a name="issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane"></a>問題: Excel アドインを読み込むが、データが表示される代わりに、作業ウィンドウに「アプレットの読み込み」と表示される 
-
-**問題:** Excel アドインを読み込みますが、データが表示される代わりに、作業ウィンドウに「アプレットの読み込み」と表示されます。 
-
-**説明:** この問題は、通常、次のいずれかの理由によって発生します。
-
--   サインインが正しくない
--   環境でアドインの登録データが初期化されていない
--   OData の問題 
-
-**固定:** 
--  **サインインが正しくない**: この問題の原因として最も考えられるのは、ユーザーが間違ったユーザーとしてサインインしている可能性があります。 これは、ユーザーが複数のアカウントを使用し、ブラウザーが間違ったユーザー コンテキストを使用している場合に発生する可能性があります。 他の修正を試す前に、右上隅のユーザー メニューを使用してアドインからサインアウトしてから、アドインに再度サインインします。 問題が引き続き発生する場合は、次の修正に記載されているように、登録データが適切に初期化されていることを確認してください。 
-
--  **登録データが初期化されない**: アドインに再度サインインしても問題が解決されなかった場合、別の潜在的な原因は、環境でアドイン データがまだ初期化されていないことです。 これを確認するために、管理者は **Office アプリ パラメーター** ページに移動できます。 そのページの各 **アプリ パラメータ**、**登録アプレット**、および **登録リソース** タブについて、各タブにデータが入力されていることを確認します。いずれかのタブに空のグリッドがある場合は、そのタブで適切な **初期化** ボタンを選択します。 
-
--  **OData の問題**: 前の 2 つの修正を試みても問題が解決しない場合、この問題の最終的な原因は、アドインが Finance and Operations と通信する OData サービスが、登録データをアドインに返すことができないことである可能性があります。 そのデータがない場合、アドインは、アプレットの読み込みに失敗します。 この段階で、失敗したセッションの Excel アドインの **アプリケーション相関関係 ID** からの情報を Microsoft サポートに連絡する必要があります。 このフィールドは **オプション** で見つけることができます。
 
 ### <a name="issue-during-sign-in-to-the-excel-add-in-users-receive-an-error-message-saying-they-cannot-access-the-application-2bc50526-cdc3-4e36-a970-c284c34cbd6e-in-that-tenant"></a>問題: Excel アドインへのサインイン中、ユーザーに「テナントのアプリケーション 2bc50526-cdc3-4e36-a970-c284c34cbd6e にアクセスできません」というエラー メッセージが表示される
 
@@ -161,7 +142,7 @@ Skype 統合は、パブリック クラウドの環境で利用できます。 
 -  「AADSTS50020: ID プロバイダー https://sts.windows.net/XXX のユーザー アカウント 'XXX' はテナント 'XXX' に存在しないため、テナントのアプリケーション 2bc50526-cdc3-4e36-a970-c284c34cbd6e (Microsoft Business Office のアドイン) にアクセスできません。」
 -  「選択したユーザー アカウントはテナント 'XXX' に存在しないため、テナントのアプリケーション 2bc50526-cdc3-4e36-a970-c284c34cbd6e にアクセスできません。」
 
-**説明:** この問題は、外部ユーザーに関して 2021 年 4 月に Azure Active Directory (Azure AD) に行われた変更により発生します。 この変更は財務と運用アプリに対して行われたものではないので、すべてのバージョンのプラットフォームまたはアプリケーションの顧客に影響を与える可能性があります。  
+**説明:** この問題は、外部ユーザーに関して 2021 年 4 月に Azure Active Directory (Azure AD) に行われた変更により発生します。 この変更は Finance and Operations アプリに対して行われたものではないので、すべてのバージョンのプラットフォームまたはアプリケーションの顧客に影響を与える可能性があります。  
 
 **修正:** すべての外部ユーザーは、 Azure AD を通してテナントに招待される必要があります。 詳細については、[Azure Active Directory B2B コラボレーションを使用してユーザーを招待する](/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration) を参照してください。
 
@@ -187,20 +168,54 @@ Skype 統合は、パブリック クラウドの環境で利用できます。 
 
 **説明**: クライアントを Internet Explorer で開いていて、ユーザーが **Excel で開く** オプションを選択した直後に、**開く** をクリックすると、このエラー メッセージが表示されます。 Internet Explorer が一時的なインターネット ファイルを処理する方法は、Excel で問題を引き起こします。 この問題は、API 呼び出しの失敗の原因となります。 
 
-**回避策:** Microsoft Edge または別の最新のブラウザを使用することをお勧めします。 これらのブラウザは、既定でファイルをダウンロード フォルダーに保存する傾向があるため、問題が軽減されます。 現在非推奨となっている Internet Explorer を使用している場合は、ブックを開くときに、最初に **保存** を選択してから、**開く** を選択します。 ファイルはダウンロード フォルダーから開かれます。  
+**回避策**: Internet Explorer でブックを開く際、まず **保存** をクリックし、それから **開く** をクリックしてください。 ファイルはダウンロード フォルダーから開かれます。 別の方法として、Edge または Google Chrome ブラウザを使用します。 既定では、これらの両方のブラウザはファイルをダウンロード フォルダに保存します。 したがって、問題は発生しません。 
 
 **長期的な修正プログラム:** Office チームと協力してこの問題を理解し、Excel で解決できるようにしています。
 
-### <a name="issue-vpn-users-see-a-blank-authentication-screen-when-trying-to-sign-into-the-excel-add-in"></a>問題: Excel アドインにサインインしようとする場合、VPN ユーザーに空白の認証画面が表示される
+### <a name="issue-when-i-send-email-by-using-smtp-the-server-response-is-5760-smtp-client-does-not-have-permissions-to-send-as-this-sender"></a>問題: SMTP を使用して電子メールを送信したとき、サーバーからの応答が「5.7.60 SMTP。クライアントにはこの送信者として送信する権限がありません」となります
 
-**問題**: 仮想プライベート ネットワーク (VPN) を使用しているユーザーは、認証ダイアログが空白で表示されるか、テキストが表示されないので、アドインにサインインできません。  
+**問題:** SMTP (Simple Mail Transfer Protocol) を使用して電子メールを送信すると、サーバーの応答として「5.7.60 SMTP; クライアントにこの送信者として送信するアクセス許可がありません」というエラー メッセージが表示されることがあります。 または、「レポートの生成中に問題が発生しました。」 というエラー メッセージの状態かもしれません。
 
-**修正**: VPN で実行しているときの VPN ソフトウェアまたはブラウザの設定により、マシンがリソースを取得したり、それらのリソースを正しく解釈したりできないため、この問題は顧客側から解決する必要があります。
+**説明:** この問題は、通常、電子メール アカウントの送信者アクセス許可が正しく設定されていないために発生します。 
 
-VPN に関する一般的な解決策を次に示します。
--  ユーザーが次の場所にアクセスできることを確認します: [問題: Excel アドインが正しく実行されないか、サインインが有効にならない](#fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in)。
--  ブラウザが Microsoft Edge (または Internet Explorer 11) の「互換性表示でイントラネット サイトを表示する」に設定されていないことを確認します。 これは組織ポリシーによって構成できます。 
--  影響を受けるユーザーに、VPN および Edge/IE ブラウザーの設定を影響を受けていない他のユーザーと比較してもらいます。
+**修正:** Microsoft 365 管理センター (portal.office.com/Admin) で送信者アクセス許可をコンフィギュレーションできます。 **ユーザー** > **有効なユーザー** > **ユーザー** > **メールボックスのアクセス許可を編集** > **このメールボックスから電子メールを送信する** の順にクリックします。 詳細については、[Microsoft 365 - 管理者ヘルプで別のユーザーにメールボックスのアクセス許可を付与する](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E) を参照してください。 
+
+次の図は、**電子メール パラメーター** ページでの SMTP の設定を示しています。 ここで、送信メール サーバー、ポート、ユーザー名、パスワード、および Secure Sockets Layer (SSL) の要件を指定する必要があります。 
+
+[![電子メール パラメータ ページ上の SMTP 設定タブ](./media/smtp.png)](./media/smtp.png)
+
+> [!IMPORTANT]
+> すべてのユーザーは、SMTP アカウントに Microsoft 365 の電子メール設定での送信者アクセス許可を与える必要があります。 この構成は、Microsoft Exchange または Microsoft 365 Admin ポータルのメールボックスのアクセス許可で行われます。 次の図は、STMP サービスアカウントが、**送信者** セクションに追加されているテスト ユーザー アカウントの設定を示しています。 
+
+[![Microsoft 365 で送信者アクセス許可を付与されている SMTP アカウント](./media/o365.png)](./media/o365.png)
+
+### <a name="fixed-issue-the-office-add-ins-dont-yet-support-ad-fs"></a>\[固定\] 問題: Office アドインでは、まだ AD FS をサポートしていない
+
+**影響を受けるバージョン:** CTP8 と 2016 年 2 月のリリース 
+
+**問題**: Active Directory フェデレーションサービス (AD FS) を使用する Azure AD テナントのユーザーが Office アドインにサインインしようとすると (つまり、ユーザーがアカウントを入力して Tab キーを押すか、フィールド内をクリックしてパスワードを入力すると)、別のブラウザウィンドウが開きます。 このブラウザ ウィンドウには通常、`https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.2.1.0/App/DynamicsApp.html\#id\_token=` で始まる URL があります。 ユーザーがログインできません。 
+
+**説明:** Office アドイン (Excel アドインと Word アドインの両方) へのサインイン中、テナントの AD FS サイトへのリダイレクトが発生します。 ただし、そのサイトは不明なため、許可されていないアプリケーション ドメイン (AppDomain) です。 
+
+**長期的な修正プログラム:** 2016 年 5 月 10 日にこの問題の長期的な修正プログラムが適切に配置されました。 Office アドインは、Office チームが追加した新しいダイアログ API を使用するようになりました。 
+
+**AD FS をサポートするアドイン アップデートを利用:** すべての Office のインストールは、**ファイル** > **アカウント** > **更新** (Click-to-Run インストールの場合) または Windows Update(MSI インストールの場合) を経由して更新する必要があります。 AD FS ダイアログ API は、5 月の更新プログラムに含められました (16.0.6868.2060)。 更新プログラムの詳細については、[Microsoft 365 クライアント更新チャネルのリリース](/officeupdates/release-notes-microsoft365-apps?f=255&MSPPError=-2147217396) ページを参照してください。 
+
+Office ビルドが更新されない場合、遅延したトラックにある場合があります ([Microsoft 365 アプリ更新チャネルの概要](/deployoffice/overview-update-channels))。 この場合、[Office 配置ツールを使用して現在のチャネルに移動する](/deployoffice/overview-office-deployment-tool?f=255&MSPPError=-2147217396) を使用するか、最新の更新プログラムがあることを保証するために [Office Insider プログラム](https://products.office.com/office-insider) にサインアップできます。 また、[Office の最新バージョンをインストールする](/office/dev/add-ins/develop/install-latest-office-version) と [管理者向け Office 2016 の展開ガイド](/deployoffice/) を参照してください。 
+
+Office の更新プログラムをインストールできない場合、次の回避策を実行するとユーザーのブロックを解除できます。
+
+#### <a name="workaround-use-internet-explorer-to-sign-in-to-the-client-before-you-use-the-office-add-ins"></a>回避策: Office アドインを使用する前に Internet Explorer を使用してクライアントにサインイン
+
+この回避策には、ユーザーの知識と追加の手順が必要です。 この解決策についてユーザーが教育を受けた後は、解決が容易になります。 
+
+**ユーザー ステップ**: Excel (または Word) を開く前に、Internet Explorer を使用してクライアントにサインインする必要があります。 
+
+**説明:** Excel または Word のアドインではサインイン コンテキストが使用され、リダイレクトは必要ありません。 Office アドインが Excel および Word の Internet Explorer ウィンドウ内で実行されるため、以前のサインインは Internet Explorer で実行する必要があります。 サインインのコンテキストは、ポリシーに応じて 6〜24 時間続きます。 したがって、Internet Explorer を介した新しいサインインが必要な場合があります。
+
+1.  Internet Explorer および Excelを終了します。
+2.  Internet Explorer を起動し、クライアントにサインインします。
+3.  [Excel で開く] エクスペリエンスを使用して Excel アドインをテストします。 (たとえば、**フリート管理** &gt; **顧客** &gt; **顧客** &gt; **Microsoft Office で開く** &gt; **Excel で開く** &gt; **フリート管理の顧客** をクリックします。)
 
 ### <a name="fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in"></a>\[固定\] 問題: Excel アドインが正しく実行されず、サインインが有効にならない
 
@@ -234,9 +249,6 @@ VPN に関する一般的な解決策を次に示します。
 - `https://login.windows.net`
 - `https://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
-
-
-**代替ソリューション:** ユーザーが Windows 10 の古いバージョン (バージョン 1909 より前) を実行している場合は、Windows 10 をバージョン 1909 以降にアップグレードしてください。 バージョン 1909 では、KB5003635 が必要となる場合があります。 詳細については、[2021 年 5 月に解決された問題](/windows/release-health/resolved-issues-windows-10-1909#1610msgdesc)を参照してください。 
 
 ### <a name="issue-the-excel-add-in-needs-an-explicit-sign-out-after-encountering-an-aadsts50058-silent-sign-in-failed-error"></a>問題: AADSTS50058 "サイレント サインインが失敗しました" エラーが発生した後に、Excelアドインで明示的にサインアウトする必要がある。
 

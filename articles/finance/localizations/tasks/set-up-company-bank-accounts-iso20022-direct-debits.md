@@ -2,9 +2,11 @@
 title: ISO20022 口座引落用の会社の銀行口座の設定
 description: このタスクでは、顧客支払ファイルを生成するのに必要な会社固有の銀行口座情報の設定について説明します。
 author: mrolecki
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a0f8ac369bb6b9a7a0f21c23aaddab2601ae3f8f37e2427cbb10b5509a7a2f23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0faa23193111ed771ccc3a5c7f99ca908a036e9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768720"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988139"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-direct-debits"></a>ISO20022 口座引落用の会社の銀行口座の設定
 
@@ -57,6 +59,3 @@ ms.locfileid: "6768720"
     * たとえば、「DEMF OPER」銀行口座を選択します。  
 6. [保存] をクリックします。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

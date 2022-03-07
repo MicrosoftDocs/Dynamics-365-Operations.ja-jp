@@ -1,39 +1,34 @@
 ---
 title: Dynamics 365 Commerce 評価環境の概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce の環境環境の概要を説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce 評価環境の概要を説明します。
 author: v-chgri
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
-ms.custom: ''
+ms.reviewer: josaw
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: v-chgri
+ms.author: josaw
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 25c0574e8d4502bcb846fba0ddf913d81eded87b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f225db13fba91ce78287adfda9c6d084dea20af33e62287f517e51cc5a296352
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752515"
 ---
 # <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Dynamics 365 Commerce 評価環境の概要
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の環境環境の概要を説明します。
+このトピックでは、Microsoft Dynamics 365 Commerce 評価環境の概要を説明します。
 
 > [!NOTE]
 > コマースの評価環境は一般的には提供されておらず、パートナーや顧客からのリクエストに応じて付与されます。 ライセンスの詳細については、Microsoft パートナーにお問い合わせください。
-
-## <a name="overview"></a>概要
 
 コマースの評価環境は、パートナーや見込み顧客にコマース製品を試用できる、 Dynamics 365 Commerce のオプションのエンドツーエンド環境です。
 
@@ -64,3 +59,6 @@ ms.locfileid: "4413647"
 [Dynamics 365 Commerce 評価環境のオプション機能を構成する](cpe-optional-features.md)
 
 [Dynamics 365 Commerce 評価環境に関するよく寄せられる質問](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

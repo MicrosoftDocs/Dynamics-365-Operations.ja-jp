@@ -2,27 +2,24 @@
 title: フッター モジュール
 description: このトピックでは、フッター モジュール、および Dynamics 365 Commerce での作成方法について説明します。
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 42a71ea9498461febca80952acc3158517918332
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413733"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719989"
 ---
 # <a name="footer-module"></a>フッター モジュール  
 
@@ -30,13 +27,11 @@ ms.locfileid: "4413733"
 
 このトピックでは、フッター モジュール、および Microsoft Dynamics 365 Commerce での作成方法について説明します。
 
-## <a name="overview"></a>概要
-
 フッター モジュールは、ページ フッターに表示されるモジュールをホストするために使用される特別なコンテナーです。 たとえば、**お問い合わせ** や **店舗ポリシー** ページなど、サイト内のさまざまなページへのリンクを含めることができます。
 
 以下の図は、サイトのページにおけるフッター モジュールの例を示しています。
 
-![フッター モジュールの例](./media/ecommerce-footer.PNG)
+![フッター モジュールの例。](./media/ecommerce-footer.PNG)
 
 ## <a name="footer-module-properties"></a>フッター モジュール プロパティ 
 
@@ -87,3 +82,6 @@ ms.locfileid: "4413733"
 [ヘッダー モジュール](author-header-module.md)
 
 [フッター モジュール](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

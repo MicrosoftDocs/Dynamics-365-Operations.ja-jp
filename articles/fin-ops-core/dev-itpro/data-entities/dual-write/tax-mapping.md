@@ -1,35 +1,24 @@
 ---
 title: 統合された税
 description: このトピックでは、Finance and Operations と Dataverse 間の税データの統合について説明します。
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
-ms.author: rhaertle
-ms.dyn365.ops.version: ''
+ms.author: tfehr
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 14c22dd6602b5fbf866c8dc6b057f6c8acb1f48f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 532e6603b74ad0293d65684d2d6858ef31fbc496
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679299"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063190"
 ---
 # <a name="integrated-tax"></a>統合された税
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -39,30 +28,14 @@ ms.locfileid: "4679299"
 
 次の表に示すように、税データには、データ操作中に連携して動作するテーブル マップのコレクションが含まれています。
 
-Finance and Operations アプリ | Dynamics 365 のモデル駆動型アプリ | 説明 |
--------------------------|---------------------------------|----|
-品目売上税グループ | msdyn_taxitemgroups |
-消費税所轄官庁 | msdyn_taxauthorities |
-消費税非課税コード エンティティ CDS | msdyn_taxexemptcodes |
-消費税グループ | msdyn_taxgroups |
-消費税元帳転記グループ V2 | msdyn_taxpostinggroups |
-源泉徴収税コード | msdyn_withholdingtaxcodes |
-源泉徴収税グループ | msdyn_withholdingtaxgroups | 
+| 財務と運用アプリ | Customer Engagement アプリ | Description |
+|-----------------------------|-----------------------------------|-------------|
+[品目消費税グループ](mapping-reference.md#196) | msdyn_taxitemgroups | |
+[消費税所轄官庁](mapping-reference.md#193) | msdyn_taxauthorities | |
+[消費税非課税コード エンティティ CDS](mapping-reference.md#194) | msdyn_taxexemptcodes | |
+[消費税グループ](mapping-reference.md#195) | msdyn_taxgroups | |
+[消費税元帳転記グループ V2](mapping-reference.md#197) | msdyn_taxpostinggroups | |
+[源泉徴収税コード](mapping-reference.md#210) | msdyn_withholdingtaxcodes | |
+[源泉徴収税グループ](mapping-reference.md#211) | msdyn_withholdingtaxgroups | |
 
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Tax item groups](includes/TaxItemGroupHeadings-msdyn-taxitemgroups.md)]
-
-[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
-
-[!include [Tax Exemptions](includes/CdsTaxExemptCodes-msdyn-taxexemptcodes.md)]
-
-[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
-
-[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
-
-[!include [Withholding tax codes](includes/WithholdingCode-msdyn-withholdingtaxcodes.md)]
-
-[!include [Withholding tax groups](includes/WithholdingGroups-msdyn-withholdingtaxgroups.md)]
-
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

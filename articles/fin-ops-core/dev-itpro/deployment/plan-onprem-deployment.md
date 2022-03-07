@@ -1,27 +1,25 @@
 ---
 title: オンプレミス配置の計画および準備
 description: このトピックは、オンプレミス展開の計画と準備に役立ちます。
-author: sericks007
-manager: AnnBe
-ms.date: 11/27/2019
+author: PeterRFriis
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: sericks
+ms.author: peterfriis
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: c1c89577367ef860c92b5aa80c2d96d2c2829841
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1e69d89ce42abc421d2c7fb4b267a99fdab1a0b2
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683980"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874569"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
@@ -32,7 +30,7 @@ Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ セ
 このトピックは、オンプレミス展開の計画と準備に役立ちます。
 
 > [!IMPORTANT]
->   Dynamics 365 Finance + Operations (オンプレミス) は、Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。 
+> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ## <a name="differences-between-cloud-deployments-and-on-premises-deployments"></a>クラウド展開とオンプレミス展開の違い
 クラウド展開とオンプレミス展開の機能は異なります。 これらの違いは、計画に影響します。 違いについては、次のトピックで説明します。
@@ -92,13 +90,13 @@ LCS の詳細については、 [Lifecycle Services のリソース](../lifecycl
 
 次の図は、Service Fabric スタンドアロン クラスターに配置されたノード タイプを示しています。
 
-![Service Fabric スタンドアロン クラスターに配置されるノード タイプ](media/on-premises-overview-01.png)
+![Service Fabric スタンドアロン クラスターに配置されるノード タイプ。](media/on-premises-overview-01.png)
 
 ### <a name="service-fabric-resources"></a>Service Fabric リソース
 Service Fabric の詳細については、次のトピックを参照してください。
-- [Azure Service Fabric documentation](https://docs.microsoft.com/azure/service-fabric) - サービスファブリックの詳細について。
-- [Service Fabric application upgrade](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade)- Azure Service Fabric アプリケーションは、定期的なアップグレードを必要となるサービスです。
-- [Service Fabric のスタンドアロン クラスター展開の計画と準備](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Service Fabric クラスターおよびウィルス対策の除外に関する追加情報
+- [Azure Service Fabric documentation](/azure/service-fabric) - サービスファブリックの詳細について。
+- [Service Fabric application upgrade](/azure/service-fabric/service-fabric-application-upgrade)- Azure Service Fabric アプリケーションは、定期的なアップグレードを必要となるサービスです。
+- [Service Fabric のスタンドアロン クラスター展開の計画と準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Service Fabric クラスターおよびウィルス対策の除外に関する追加情報
 
 ## <a name="system-requirements"></a>システム要件
 [オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md)でシステム要件を確認し、オンプレミス展開が必要なコンピューターの台数を確認します。
@@ -117,7 +115,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 
 より詳細なデータを収集するほど、正確にサイジングを見積もることができます。 ハードウェアのサイジングは、データをサポートしていないため、不正確になる可能性があります。 収集する必要のある最小限のデータは、1 時間あたりのトランザクション明細行のピーク負荷です。 サイズ変更に影響する要因を次の図に示します。
 
-![サイズ変更要因](media/sizing-factors.png)
+![サイズ変更要因。](media/sizing-factors.png)
 
 左から右に、サイジングを正確に推定するために必要な最初の最も重要な要素は、トランザクション プロファイルまたはトランザクション特性です。 1 時間あたりのピーク トランザクション量を検索することは重要です。 複数のピーク期間がある場合は、これらの期間を正確に定義する必要があります。
 
@@ -164,7 +162,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 クラスターまたはミラーリングの設定で、常に SQL Server を使用する必要があります。 2 番目の SQL ノードは、1 次ノードと同じ数のコアを持つ必要があります。
 
 #### <a name="active-directory-federation-services-ad-fs"></a>Active Directory フェデレーション サービス (AD FS)
-広告のサイズ変更について、[広告のサーバーの処理能力ドキュメント](https://docs.microsoft.com/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)を参照してください。 A[サイズ変更スプレッドシート](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)は、展開内のインスタンスの数を計画するために使用できます。
+広告のサイズ変更について、[広告のサーバーの処理能力ドキュメント](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)を参照してください。 A[サイズ変更スプレッドシート](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)は、展開内のインスタンスの数を計画するために使用できます。
 
 ### <a name="aos-online-and-batch"></a>AOS (オンラインおよびバッチ)
 
@@ -194,7 +192,7 @@ Service Fabric の詳細については、次のトピックを参照してく�
 Finance + Operations の現在のリリースは、1 つの SSRS ノードしか展開できません。 テスト中に SSRS ノードを監視し、SSRS で使用可能なコアの数を必要に応じて増やします。 SSRS VM とは異なる仮想ホストで事前構成されたセカンダリ ノードを使用できることを確認してください。 これは、SSRS または仮想ホストをホストする仮想マシンに問題がある場合に重要です。 この場合、ノードは交換する必要があります。
 
 ### <a name="environment-orchestrator"></a>環境オーケストレーター
-オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これは、クラスターのピーク負荷に合わせたサイズにする必要があります。 詳細については、 [Service Fabric スタンドアロン クラスタの展開計画](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation)を参照してください。
+オーケストレータ サービスは、展開および LCS との関連する通信を管理するサービスです。 このサービスはプライマリ Service Fabric サービスとして展開され、最低 3 台の VM が必要です。 このサービスは、サービス ファブリック オーケストレーション サービスと同じ場所に配置されています。 これは、クラスターのピーク負荷に合わせたサイズにする必要があります。 詳細については、 [Service Fabric スタンドアロン クラスタの展開計画](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation)を参照してください。
 
 ### <a name="virtualization-and-oversubscription"></a>仮想化と過剰加入
 AOS のようなミッション クリティカルなサービスは、コア、メモリ、ディスクなどの専用リソースを持つ仮想ホストでホストする必要があります。
@@ -203,14 +201,14 @@ AOS のようなミッション クリティカルなサービスは、コア、
 
 オンプレミスの配置では、次の認証方法が使用されます。
 
-- **Azure Active Directory(Azure AD)** - Azure AD は LCS へのログインに使用される認証方法です。 Azure AD は LCS ローカル エージェントの構成に使用されます。 詳細については、「[Azure Active Directory とは何か](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)」を参照してください。
-- **Active Directory ドメイン サービス (AD DS)** - Finance + Operations コンポーネントをホストするコンピューターは、Active Directory ドメインに属している必要があります。 Active Directory ドメイン サービス (AD DS) はネイティブ モードで構成する必要があります。 詳細については、[Active Directory ドメイン サービス](https://docs.microsoft.com/windows-server/identity/ad-ds/active-directory-domain-services) を参照してください。
+- **Azure Active Directory(Azure AD)** - Azure AD は LCS へのログインに使用される認証方法です。 Azure AD は LCS ローカル エージェントの構成に使用されます。 詳細については、「[Azure Active Directory とは何か](/azure/active-directory/active-directory-whatis)」を参照してください。
+- **Active Directory ドメイン サービス (AD DS)** - Finance + Operations コンポーネントをホストするコンピューターは、Active Directory ドメインに属している必要があります。 Active Directory ドメイン サービス (AD DS) はネイティブ モードで構成する必要があります。 詳細については、[Active Directory ドメイン サービス](/windows-server/identity/ad-ds/active-directory-domain-services) を参照してください。
 - **Active Directory フェデレーション サービス (AD FS)** - AD FS は、オンプレミス配置で使用される認証方法です。 AD FS は、Microsoft 365、クラウド ベースの SaaS アプリケーション、および会社のネットワーク上のアプリケーションを含むさまざまなアプリケーション全体でアクセス制御およびシングル サインオンを提供します。
   - IT 組織については、同じ資格情報とポリシーのセットに基づいて、最新および従来のアプリケーション、クラウドのオンプレミスの両方への署名とアクセス制御を提供できます。
   - ユーザーについては、同じ、使い慣れたアカウントの資格情報を使用してシームレスなサインを提供します。
   - 開発者については、組織のディレクトリに ID があるユーザーを認証するための簡単な方法を提供します。 つまり、認証や識別ではなく、アプリケーションに力を注ぐことができます。
 
-    詳細については、[Active Directory フェデレーション サービス](https://docs.microsoft.com/windows-server/identity/active-directory-federation-services) を参照してください。
+    詳細については、[Active Directory フェデレーション サービス](/windows-server/identity/active-directory-federation-services) を参照してください。
 
 ## <a name="data-stored-in-azure-data-centers"></a>Azure データ センターに保存されたデータ
 
@@ -231,3 +229,6 @@ Finance + Operations のオンプレミス配置オプションは、オンプ�
 このトピックに記載されている計画活動を完了した後、 [オンプレミス配置のホーム ページ](on-premises-deployment-landing-page.md) の [研修](on-premises-deployment-landing-page.md#onboard) セクションにリストされている手順を開始することができます。
 
 計画、展開、メンテナンス、およびトラブルシューティングの詳細については、実装を通じて [オンプレミス配置のホーム ページ](on-premises-deployment-landing-page.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,25 +2,19 @@
 title: X++ 静的クラス
 description: このトピックでは、 X++ の静的クラスについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 12/02/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 150303
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb0735a20985c3b1d2464231f50f202c34586f09
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5bb4d3539c09a5320a4c7fb06f35624d08bc2296
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408728"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781302"
 ---
 # <a name="x-static-classes"></a>X++ 静的クラス
 
@@ -111,3 +105,6 @@ ClassName::methodName();
 
 メソッドのアクセサー キーワードは、どのメソッドが静的であるか、静的でないかに関係なく、同じクラスにある 2 つのメソッド間の呼び出しを制限することはありません。 静的メソッドでは、**新しい** コンストラクター メソッドが **プライベート** モディファイアーで修飾されている場合でも、**新しい** コンストラクター メソッドに対する呼び出しは有効です。 これらの呼び出しの構文では、**新しい** キーワードを使用する必要があります。 静的メソッドのコードは、クラスのインスタンス メソッドを呼び出す前に、独自のクラスのインスタンス オブジェクトを構築する必要があります。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

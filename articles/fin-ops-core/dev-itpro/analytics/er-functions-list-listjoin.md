@@ -2,11 +2,8 @@
 title: LISTJOIN ER 関数
 description: このトピックでは、LISTJOIN 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 04/01/2020
-ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28f03e5e6af0f252a994f2e54b57a5ef654f4e67
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d9346afc88adb89c08098f39a5fd1c2cb82f664af2244b8cafbbe8a4d2f516c6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755805"
 ---
 # <a name="listjoin-er-function"></a>LISTJOIN ER 関数
 
@@ -33,7 +30,7 @@ ms.locfileid: "4682246"
 ## <a name="syntax"></a>構文
 
 ```vb
-LIST (list 1 [, list 2, …, list N])
+LISTJOIN (list 1 [, list 2, …, list N])
 ```
 
 ## <a name="arguments"></a>引数
@@ -68,18 +65,21 @@ LIST (list 1 [, list 2, …, list N])
 - **量**: このフィールドには、`Real` タイプの値を返す式が含まれています。
 - **IsValid**: このフィールドには、`Boolean` タイプの値を返す式が含まれています。
 
-![ER モデル マッピング デザイナーのページ](./media/er-functions-list-listjoin-image1.gif)
+![ER モデル マッピング デザイナーのページ。](./media/er-functions-list-listjoin-image1.gif)
 
 この場合、式 `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` は 2 つのレコードを含む新しいリストを返します。
 
-![2 つのレコードを持つ ER モデル マッピング デザイナー ページ](./media/er-functions-list-listjoin-image2.gif)
+![2 つのレコードを持つ ER モデル マッピング デザイナー ページ。](./media/er-functions-list-listjoin-image2.gif)
 
 このフィールドは、呼び出された関数のすべての引数に表示される唯一のフィールドであるため、`Real` タイプの 1 つの **量** フィールドで構成されます。
 
-![ER モデル マッピング デザイナー ページの量フィールド](./media/er-functions-list-listjoin-image3.gif)
+![ER モデル マッピング デザイナー ページの量フィールド。](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [リスト関数](er-functions-category-list.md)
 
 [実行された ER 形式のデータソースをデバッグして、データ フローや変換を解析する](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

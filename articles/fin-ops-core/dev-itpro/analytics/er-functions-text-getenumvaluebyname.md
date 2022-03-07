@@ -2,11 +2,8 @@
 title: GETENUMVALUEBYNAME ER 機能
 description: このトピックでは、GETENUMVALUEBYNAME 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 09/23/2020
-ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29d7ec6498090ea47259303237c5a64a26e4926b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 03759852e5ceb13b79b0df4592bdcef76eb0a82865725c00df40b9cc5f786240
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685934"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774440"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME ER 機能
 
@@ -64,7 +61,7 @@ Nullable *列挙*
 
 次の図では、**ReportDirection** の列挙はデータ モデルで導入されます。 列挙型値のラベルが定義されていることに注意してください。
 
-![データ モデル列挙に使用可能な値](./media/ER-data-model-enumeration-values.PNG)
+![データ モデル列挙に使用可能な値。](./media/ER-data-model-enumeration-values.PNG)
 
 次の図は、これらの詳細について説明しています。
 
@@ -72,7 +69,7 @@ Nullable *列挙*
 - `$IsArrivals` 式は、この関数のパラメーターとして **$Direction** データ ソースに基づきモデル列挙型を使用するため設計されています。
 - この比較式の値は、**TRUE** です。
 
-![データ モデル列挙の例](./media/ER-data-model-enumeration-usage.PNG)
+![データ モデル列挙の例。](./media/ER-data-model-enumeration-usage.PNG)
 
 ## <a name="example-2"></a>例 2
 
@@ -80,14 +77,14 @@ Nullable *列挙*
 
 次の図では、**TransType** データ ソースはモデル マッピングで導入されます。 このデータ ソースは、**LedgerTransType** アプリケーション列挙を参照しています。
 
-![アプリケーション列挙を参照するモデル マッピングのデータ ソース](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+![アプリケーション列挙を参照するモデル マッピングのデータ ソース。](./media/er-functions-text-getenumvaluebyname-example2-1.png)
 
 次の図は、モデル マッピングで構成されている **TransTypeList** データ ソースを示しています。 このデータ ソースは、**TransType** アプリケーション列挙に基づいて構成されます。 この `LISTOFFIELDS` 関数は、すべての列挙値を、フィールドを含むレコードの一覧として返すために使用します。 このようにして、すべての列挙値の詳細が公開されます。
 
 > [!NOTE]
 > **EnumValue** フィールドは、`GETENUMVALUEBYNAME(TransType, TransTypeList.Name)` 式を使用して **TransTypeList** データソースに対して構成されます。 このフィールドは、このリストのすべてのレコードの列挙値を返します。
 
-![選択した列挙のすべての列挙値をレコードの一覧として返すモデル マッピングのデータ ソース](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+![選択した列挙のすべての列挙値をレコードの一覧として返すモデル マッピングのデータ ソース。](./media/er-functions-text-getenumvaluebyname-example2-2.png)
 
 次の図は、モデル マッピングで構成されている **VendTrans** データ ソースを示しています。 このデータ ソースは、**VendTrans** アプリケーション テーブルから仕入先トランザクション レコードを返します。 すべてのトランザクションの元帳タイプは、**TransType** フィールドの値によって定義されます。
 
@@ -96,11 +93,11 @@ Nullable *列挙*
 >
 > **TransTypeTitle** フィールドは、データ モデルの **LedgerType** フィールドにバインドされ、データ ソースとしてデータモデルを使用するすべての ER 形式でこの情報を使用できます。
 
-![仕入先トランザクションを返すモデル マッピングのデータ ソース](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+![仕入先トランザクションを返すモデル マッピングのデータ ソース。](./media/er-functions-text-getenumvaluebyname-example2-3.png)
 
 次の図は、[データ ソース デバッガー](er-debug-data-sources.md) を使用して、構成済みモデル マッピングをテストする方法を示しています。
 
-![データ ソース デバッガーを使用して、構成済モデル マッピングをテストする](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+![データ ソース デバッガーを使用して、構成済モデル マッピングをテストする。](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
 
 データ モデルの **LedgerType** フィールドは、期待どおりにトランザクション タイプのラベルを公開します。
 
@@ -117,3 +114,6 @@ Nullable *列挙*
 [FIRSTORNULL ER 関数](er-functions-list-firstornull.md)
 
 [WHERE ER 関数](er-functions-list-where.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

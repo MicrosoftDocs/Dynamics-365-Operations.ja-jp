@@ -2,11 +2,9 @@
 title: 一般データ保護規則の概要
 description: このトピックでは、Finance and Operations でのユーザー ログの機能に関する情報を提供します。
 author: ToddLefor
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4852686f4e8d743938822725db7851b7471acbc0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 29c64d6b6209783a6d70035d4bd855b15d03c153
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685155"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923554"
 ---
 # <a name="general-data-protection-regulation-overview"></a>一般データ保護規則の概要
 
@@ -252,7 +250,7 @@ Finance and Operations アプリでは、Microsoft はプロセッサとして�
 
 ## <a name="representation-of-a-person-in-finance-and-operations"></a>Finance and Operations のユーザーの表示
 
-Finance and Operations には共通の [グローバル アドレス帳](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
+Finance and Operations には共通の [グローバル アドレス帳](../../fin-ops/organization-administration/overview-global-address-book.md) があります。 連絡先、顧客、ユーザー、作業者、または他の担当者をシステムに追加するたびに、通常はアドレス帳にその人物のエントリを作成します。 アドレス帳の各ユーザーは関係者と呼ばれ、PartyID が割り当てられます。 担当者は、顧客、ユーザー、または作業者などのシステム内でのロールも保有して、CustID、UserID、WorkerID などの ロール ID を持ちます。
 
 ![グローバル アドレス帳のデータ モデル](../media/gdpr-address-data-model.jpg)
 
@@ -273,7 +271,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 
 データ主体がコントローラーに申し入れてユーザーの個人データのコピーを要求するとき、そのコントローラーは、個人を説明するデータを特定するためにグローバル アドレス帳情報を使用する選択をすることがあります。 このトピックの前の図で説明したように、**人物** は **ロール** を担う **関係者** のタイプです。
 
-組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
+組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](..//office-integration/office-integration-edit-excel.md)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
 
 ## <a name="the-person-search-report"></a>個人検索レポート
 
@@ -288,7 +286,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 
 データ主体がコントローラーに申し入れてユーザーの個人データのコピーを要求するとき、そのコントローラーは、個人を説明するデータを特定するためにグローバル アドレス帳情報を使用する選択をすることがあります。 このトピックの前の図で説明したように、**人物** は **ロール** を担う **関係者** のタイプです。
 
-組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
+組織によっては、企業間の関係を通じてのみその活動を実施しているため、DSR の義務がそれほど多くありません。 対照的に、他の組織はビジネスと顧客関係を通じて活動を実施します。 これらの組織は、グローバル アドレス帳や、拡張性、カスタマイズ機能、[Excel で開く](../office-integration/office-integration-edit-excel.md#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option)操作を使用して、カスタム レポート、カスタム フォーム、カスタム クエリ、カスタム データ エクスポート の各機能を書き込み、ビジネスが顧客から収集するデータなどの特殊なニーズに地対応する、この関連データ リレーションシップを使用する場合があります。
 
 ## <a name="additional-notes-that-apply-to-requests-for-data"></a>データの要求に適用される追加のメモ
 
@@ -323,7 +321,7 @@ Finance and Operations には共通の [グローバル アドレス帳](https:/
 + 応募者
 + 競合他社
 
-個人データは、ここにリストされていない他のロールにも含まれている可能性があります。 個人データの入力、表示、編集するために使用されるページは、上記の一覧のほとんどのロールのワークシートで提供されてきました。 CustomerSource の[個人データの検索および管理の参照ドキュメント](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/referencedocumentspersonaldata)ページからスプレッドシートを表示したりダウンロードしたりできます。 
+個人データは、ここにリストされていない他のロールにも含まれている可能性があります。 個人データの入力、表示、編集するために使用されるページは、上記の一覧のほとんどのロールのワークシートで提供されてきました。 CustomerSource の[個人データの検索および管理の参照ドキュメント](/dynamics/s-e/)ページからスプレッドシートを表示したりダウンロードしたりできます。 
 
 ## <a name="detailed-inventory"></a>詳細な在庫
 
@@ -377,3 +375,6 @@ GDPR は、未成年者に保護者の同意がない場合、システムがそ
 + このドキュメントは、情報提供のみを目的としたものであり、法的なアドバイスとして、または GDPR がユーザーおよび組織にどのように適用されるかを判断するためには使用できません。 法的に資格のある専門家と連携して、GDPR、組織への GDPR の具体的な適用方法、およびコンプライアンスをもっとも確実にする方法について検討されることをお勧めします。
 + Microsoft はこのプレゼンテーションに記載されている情報に関して一切保証せず、明示的、暗示的、または法的に保証することもありません。 このドキュメントは、「現状のまま」で提供されています。 URL およびその他のインターネット Web サイトの参照を含む、このドキュメントの情報および見解は、予告なしに変更することがあります。
 + このドキュメントは、Microsoft 製品の知的財産に対する法的権利をお客様に提供するものではありません。 内部での参照目的のみの場合、このプレゼンテーションをコピーして使用できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

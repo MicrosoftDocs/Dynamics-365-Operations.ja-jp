@@ -1,12 +1,10 @@
 ---
 title: ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)
-description: 次の手順では、システム管理者に指定されたユーザーまたは電子レポート開発者のロールが、電子レポート・データソースとしての財務分析コードを使用するために 電子レポート（ER）モデルをどのように環境設定しているのか説明します。
+description: このトピックでは、財務分析コードを ER レポートのデータ ソースとして使用するために、電子申告 (ER) モデルを構成する方法について説明します。 (第 3 部)
 author: NickSelin
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a12f88f1e8b5e451bc8a5c5486d820da61bf3ad0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 74c845cf5ce361b0e9594863cdfca98d9cb9b0ca
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684790"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356322"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER 財務分析コードをデータ ソースとして使用する (第 3 部 - レポートのデザイン)
 
@@ -94,7 +92,7 @@ ms.locfileid: "4684790"
 59. [属性を加える] をクリックします。
 60. [名称] フィールドに説明を入力します。
 61. [OK] をクリックします。
-![ER Operations デザイナーのページ](../media/er-financial-dimensions-guides-format1.png)
+![ER Operations デザイナーのページ。](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>レポートエレメントをデータソースにマッピングする
 1. [マッピング] タブをクリックします。
@@ -141,7 +139,10 @@ ms.locfileid: "4684790"
 42. ツリーで、「Root: XML Element\Company: XML Attribute」を選択します。
 43. ツリーで、「model: Data model Financial dimensions sample model\Company: String」を選択します。
 44. [バインド] をクリックします。
-45. [保存] をクリックします。
+45. 保存 をクリックします。
 46. ページを閉じます。
-![ER Operations デザイナーのページ](../media/er-financial-dimensions-guides-format2.png)
+![ER Operations デザイナーのページ。](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

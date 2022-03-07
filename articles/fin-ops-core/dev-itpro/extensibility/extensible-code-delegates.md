@@ -2,26 +2,24 @@
 title: 委任
 description: このトピックでは、拡張可能コードとデリゲートを書き込む方法について説明します。
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 2d778d03eeff5fce03cae059411035e1a96096f0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb61b2d976358a1bf686dd5da362b85ab8f65d5a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409246"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782457"
 ---
 # <a name="delegates"></a>委任
 [!include [banner](../includes/banner.md)]
@@ -30,4 +28,7 @@ ms.locfileid: "4409246"
 
 新しい委任を作成する代わりに、[拡張可能メソッドを記述するためのガイドライン](extensible-methods.md)で説明されているように、適切な名前を持つ小さいメソッドでコードを構造化します。
 
-デリゲートを使用する場合は、該当する場合は応答が 1 つだけになるようにすること検討してください。 詳細については、[要求または応答シナリオの EventHandlerResult クラス](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class)を参照してください。
+デリゲートを使用する場合は、該当する場合は応答が 1 つだけになるようにすること検討してください。 詳細については、[要求または応答シナリオの EventHandlerResult クラス](../dev-tools/event-handler-result-class.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: Dynamics 365 Commerce 10.0.12 (2020 年 8 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.12 の新機能または変更された機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: e7a92b4ca6d88ca6015e3c0acd27bc6232a12a97
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54efba28bf5c1033d1747521a004043350a8c5a4792513db515da5d8212b6b1c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409289"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716210"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10012-august-2020"></a>Dynamics 365 Commerce 10.0.12 (2020 年 8 月) の新機能または変更された機能
 
@@ -37,8 +34,8 @@ ms.locfileid: "4409289"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-- [保証の設定と販売](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/warranty-set-up-sell)
-- [E コマースの在庫バッファーと在庫レベル](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/define-utilize-inventory-buffers-drive-inventory-level-displays-e-commerce)
+- [保証の設定と販売](/dynamics365-release-plan/2020wave1/dynamics365-commerce/warranty-set-up-sell)
+- [E コマースの在庫バッファーと在庫レベル](/dynamics365-release-plan/2020wave1/dynamics365-commerce/define-utilize-inventory-buffers-drive-inventory-level-displays-e-commerce)
 - [出庫工程における過少配送のクローズ ライン](../pos-outbound-inventory-operation.md)
 
 ## <a name="additional-resources"></a>追加リソース
@@ -54,7 +51,7 @@ Dynamics 365 Commerce 10.0.12 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
@@ -68,3 +65,6 @@ Dynamics 365 Commerce 10.0.12 には、プラットフォーム更新プログ�
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

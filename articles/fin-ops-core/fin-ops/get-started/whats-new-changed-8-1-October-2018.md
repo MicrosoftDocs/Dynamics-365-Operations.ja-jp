@@ -2,11 +2,9 @@
 title: Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.1 の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされました。
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1
-ms.openlocfilehash: 84f91f15e4405a2e09277d4e401136ff3854ff9f
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 0b6b930e9c475d49e9643535f6b93356eed02addc8d4b20f12b70e63c946e54f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797158"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734602"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-81-october-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能および変更された機能
 
@@ -30,13 +28,13 @@ ms.locfileid: "4797158"
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.1 (2018 年 10 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 10 月にリリースされ、ビルド番号は 8.1.136 です。
 
-Retail の新機能または変更された機能についての最新のリリースについては、[Dynamics 365 for Retail の新機能または変更された機能](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new) を参照してください。
+Retail の新機能または変更された機能についての最新のリリースについては、[Dynamics 365 for Retail の新機能または変更された機能](../../../commerce/get-started/whats-new.md) を参照してください。
 
 ### <a name="announcing-the-dynamics-365-october-18-release-notes"></a>Dynamics 365 2018 年 10 月リリース ノートの発表
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2018 年 10 月リリース ノートを確認](https://go.microsoft.com/fwlink/?linkid=870424). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2018 年 10 月リリース ノートを確認](/dynamics365/release-plans/). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ## <a name="use-shared-number-sequences-to-copy-customers-or-vendors"></a>共有番号順序を使用して、顧客または仕入先をコピーする
 
@@ -110,3 +108,6 @@ Finance and Operations の標準売上税機能は、アラブ首長国連邦の
 - アラブ首長国連邦の販売の請求書および貸方票は、ユーザー インターフェイスの新しい ar-AE アラビア語を含む 2 つの言語で印刷されるようになりました。
 - VAT 還付申告レポートは、e-TAX FTA ポータルへのアップロードに対応する電子ファイル形式で印刷されます。
 - 標準監査ファイル機能がアラブ首長国連邦のローカル機能と共有されました。 これは、bht 連邦税所轄官庁 FTA VAT 監査ファイル - (FAF) に必要であり、コンマ区切りファイル形式にエクスポートできます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

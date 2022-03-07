@@ -1,12 +1,10 @@
 ---
 title: 画像のアップロード
-description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像のアップロード方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像アップロードの方法について説明します。
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 69b812c58739357dfdb3f9e65e34e5d54d890284
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5f4f84c41e6af23483ccb74a9189cb713016f4ac9d0d9981bf918ca8a71743eb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757401"
 ---
 # <a name="upload-images"></a>画像のアップロード
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像のアップロード方法について説明します。
-
-## <a name="overview"></a>概要
+このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像アップロードの方法について説明します。
 
 コマース サイト ビルダーのメディア ライブラリーを使用すると、フォルダーを使用してイメージを単独または一括でアップロードできます。 イメージの変更コンポーネントを使用すると、さまざまなビューポートとそのブレークポイントに対する画像が自動的に最適化されるので、最大解像度と品質で画像のバージョンをアップロードする必要があります。
 
@@ -58,7 +54,8 @@ ms.locfileid: "4963013"
 - 従業員の画像は、"**/作業者/\{WorkerNumber\}.jpg**" という名前にする必要があります
 - 製品画像は、"**/製品/\{ProductNumber\}_000_001.png**" という名前にする必要があります
     - 001 は画像の順序で、001、002、003、004、または 005 とすることができます
-- 製品バリアントの画像は、"**/製品/\{ProductNumber\}\_\{サイズ\}\_\{色\}\_\{スタイル\}\_000_001.png**" という名前にする必要があります
+- 製品バリアントの画像は、"**/製品/\{ProductNumber\} \^ \{スタイル\} \^ \{サイズ\} \^ \{色\} \^\_000_001.png**" という名前にする必要があります
+    - 例 : 93039 \^ \^ 2 \^ Black \^_000_001.png
 
 ## <a name="upload-an-image"></a>画像のアップロード
 
@@ -96,3 +93,6 @@ ms.locfileid: "4963013"
 [画像の中心のカスタマイズ](dam-custom-focal-point.md)
 
 [静的ファイルのアップロードと提供](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

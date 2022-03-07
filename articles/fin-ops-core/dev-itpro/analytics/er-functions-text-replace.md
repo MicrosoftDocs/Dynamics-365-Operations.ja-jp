@@ -2,11 +2,9 @@
 title: REPLACE ER 関数
 description: このトピックでは、REPLACE 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c9d3b6748ecb1680586a2d47a425b5ef98551f1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 21cdd8532730925b7d5c6f5b3bb565dcd365dd6d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682921"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746203"
 ---
 # <a name="replace-er-function"></a>REPLACE ER 関数
 
@@ -81,3 +79,6 @@ REPLACE (text, pattern, replacement, regular expression flag)
 ## <a name="additional-resources"></a>追加リソース
 
 [テキスト関数](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

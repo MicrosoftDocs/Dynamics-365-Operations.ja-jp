@@ -2,27 +2,24 @@
 title: オンライン チャネルの設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいオンライン チャネルを作成する方法について説明します。
 author: samjarawan
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 11796d27a6071b180ad58c46ba2a521ecc238c6091517dbdc3a4f153b3d81749
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4413904"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714714"
 ---
 # <a name="set-up-an-online-channel"></a>オンライン チャネルの設定
 
@@ -58,11 +55,11 @@ Commerce でオンライン ストアを作成するには、最初にオンラ�
 
 次の図は、新しいオンライン チャネルの作成を示しています。
 
-![新しいオンライン チャネル](media/channel-setup-online-1.png)
+![新しいオンライン チャネル。](media/channel-setup-online-1.png)
 
 次の図は、オンライン チャネルの例を示しています。
 
-![オンライン チャネルの例](media/channel-setup-online-2.png)
+![オンライン チャネルの例。](media/channel-setup-online-2.png)
 
 ## <a name="set-up-languages"></a>言語の設定
 
@@ -70,7 +67,7 @@ E コマース サイトで複数の言語をサポートする場合は、**言
 
 ## <a name="set-up-payment-account"></a>支払勘定の設定
 
-**支払勘定** セクション内から、サードパーティの支払プロバイダーを追加できます。 Adyen 支払コネクタ設定の詳細については、[Adyen 向け Dynamics 365 Payment Connector](../retail/dev-itpro/adyen-connector.md) を参照してください。
+**支払勘定** セクション内から、サードパーティの支払プロバイダーを追加できます。 Adyen 支払コネクタ設定の詳細については、[Adyen 向け Dynamics 365 Payment Connector](./dev-itpro/adyen-connector.md) を参照してください。
 
 ## <a name="additional-channel-setup"></a>追加のチャネル設定
 
@@ -78,7 +75,7 @@ E コマース サイトで複数の言語をサポートする場合は、**言
 
 次の図は、**設定** タブの **荷渡方法**、**支払方法**、および **フルフィルメント グループの割り当て** の設定オプションを示しています。
 
-![追加のオンライン チャネル設定アクション](media/channel-setup-online-3.png)
+![追加のオンライン チャネル設定アクション。](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>支払方法の設定
 
@@ -93,7 +90,7 @@ E コマース サイトで複数の言語をサポートする場合は、**言
 
 次の図は、現金支払い方法の例を示しています。
 
-![支払方法の例](media/channel-setup-retail-5.png)
+![支払方法の例。](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>荷渡方法の設定
 
@@ -107,7 +104,7 @@ E コマース サイトで複数の言語をサポートする場合は、**言
 
 次の図は、デリバリー モードの例を示しています。
 
-![荷渡方法の設定](media/channel-setup-retail-7.png)
+![荷渡方法を設定します。](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>フルフィルメント グループの割り当ての設定
 
@@ -121,16 +118,19 @@ E コマース サイトで複数の言語をサポートする場合は、**言
 
 次の図は、フルフィルメント グループの割り当ての設定の例を示しています。
 
-![フルフィルメント グループの割り当ての設定](media/channel-setup-retail-9.png)
+![フルフィルメント グループの割り当てを設定します。](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [チャネルの概要](channels-overview.md)
 
-[チャネル設定の前提条件](channels-prerequisites.md)
+[チャネルの設定の前提条件](channels-prerequisites.md)
 
 [小売チャネルの設定](channel-setup-retail.md)
 
 [コール センターのチャネルの設定](channel-setup-callcenter.md)
 
-[Adyen 向け Dynamics 365 Payment Connector](../retail/dev-itpro/adyen-connector.md)
+[Adyen 向け Dynamics 365 Payment Connector](./dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

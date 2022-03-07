@@ -2,28 +2,25 @@
 title: サービス テンプレート
 description: サービス合意をテンプレートとして定義し、後でテンプレート行を別のサービス合意やサービス注文にコピーできます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8a92d67afe5fd427d1bc272c59e459cb1547d22
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 409c15ae9c8f5f3c9c72adf3313f4594ba3c1764
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431644"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819019"
 ---
 # <a name="service-templates"></a>サービス テンプレート
 
@@ -58,3 +55,6 @@ ms.locfileid: "4431644"
 ## <a name="related-topics"></a>関連トピック
 
 [サービス テンプレート行のコピー](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

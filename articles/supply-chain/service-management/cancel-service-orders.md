@@ -2,28 +2,25 @@
 title: サービス注文のキャンセル
 description: サービス注文自体からサービス注文またはサービス注文明細行をキャンセルしたり、定期処理ジョブを実行して複数のサービス注文をキャンセルしたりできます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce3cb9ebc3536ba1b333a7bef6b5c679e09d7516
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 779f535ac617d3f3940cc1b226fa53dc72e3411a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432140"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831605"
 ---
 # <a name="cancel-service-orders"></a>サービス注文のキャンセル   
 
@@ -78,3 +75,6 @@ ms.locfileid: "4432140"
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

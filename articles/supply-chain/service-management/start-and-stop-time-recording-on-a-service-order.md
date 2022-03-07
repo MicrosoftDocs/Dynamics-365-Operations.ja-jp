@@ -2,28 +2,25 @@
 title: サービス注文の時刻記録の開始および停止
 description: サービス注文の時刻記録を開始および停止します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9590a4924442ceccf6f30c35e1dce907f54d368e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 559c80b43230f14a5683558bf74b088f1d85e8ab99044425bbb0ff536fbd63ec
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776755"
 ---
 # <a name="start-and-stop-time-recording-on-a-service-order"></a>サービス注文の時刻記録の開始および停止 
 
@@ -65,3 +62,6 @@ ms.locfileid: "4431633"
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

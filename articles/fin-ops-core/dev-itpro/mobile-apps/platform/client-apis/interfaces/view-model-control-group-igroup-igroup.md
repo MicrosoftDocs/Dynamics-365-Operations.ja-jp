@@ -1,25 +1,18 @@
 ---
 title: グループ タイプ
 description: グループ コンテナーのコントロール タイプ。
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: b0d33291d07044d492b485f14d32be72193dc34b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.openlocfilehash: ae5096fe5418c0df45945a2a07dbe2be2584eeca
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679218"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782707"
 ---
 # <a name="group-type"></a>グループ タイプ
 
@@ -246,3 +239,6 @@ root(): [Page](view-model-ipage-ipage.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

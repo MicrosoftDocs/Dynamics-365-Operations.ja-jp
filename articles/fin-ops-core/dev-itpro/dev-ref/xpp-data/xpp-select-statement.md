@@ -1,26 +1,20 @@
 ---
 title: 明細書を選択
 description: このトピックでは、X++ 言語での select ステートメントについて説明します。
-author: robinarh
-manager: AnnBe
-ms.date: 06/16/2020
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
+author: tonyafehr
+ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 150273
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 120518e8885c201de11d2faba45066b6a6cb5e49
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cace52cacbfbb42d7f5ad242197a1c4bd6306048
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408736"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783232"
 ---
 # <a name="select-statement"></a>明細書を選択
 
@@ -105,9 +99,9 @@ ttsCommit;
 + **\[\]** – かっこはオプションの要素を囲みます。
 + **{}** – 中かっこは、0 回以上含めることができる要素を囲みます。
 + **\+** – プラス記号は、1回以上含めることができる要素を示します。
-+ **|** – バーはオプションを示します。 
++ **|** – バーはオプションを示します。
 
-| 記号                |   | 式 |
+| 記号                | &nbsp;  | 式 |
 |-----------------------|---|------------|
 | *SelectStatement*     | = | *パラメーター* を **選択する** |
 | *パラメーター*          | = | { *FindOption* } \[ *FieldList* **from** \] *TableBufferVariable* \[ *IndexClause* \] \[ *Options* \] \[ *WhereClause* \] \[ *JoinClause* \] |
@@ -263,6 +257,32 @@ CustTable custTable;
 container conCompanies = ['dat','dmo'];
 select crossCompany :conCompanies
     * from custTable;
+```
+
+### <a name="crosscompany-clause-can-contain-arbitrary-expressions"></a>crossCompany 句には任意の式を含めることができます
+
+**crossCompany** 句は、検索ステートメントを考慮する必要のある会社を示すために **select** ステートメントで使用できます。 構文は、コンテナー型の変数である単一の識別子ではなく、コンテナー型の任意の式を許可するように拡張されています。
+
+このコード例では、会社を含むコンテナーを作成します。
+
+```xpp
+private void SampleMethod()
+{
+    MyTable t;
+    container mycompanies = ['dat', 'dmo'];
+    select crosscompany: mycompanies t;
+}
+```
+
+このコードでは、変数の代わりに式を使用します。
+
+```xpp
+private void SampleMethod()
+{
+    MyTable t;
+    container mycompanies = ['dat', 'dmo'];
+    select crosscompany: (['dat'] + ['dmo']) t;
+}
 ```
 
 ## <a name="desc-keyword"></a>降順キーワード
@@ -742,3 +762,5 @@ select * from custTable
     where custTable.accountNum > "100";
 info("AccountNum: " + custTable.AccountNum);
 ```
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

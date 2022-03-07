@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c2d0f671d4b824cb5d38a5d11c4b06b2e97bd0c8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0942ce83060c186212d7f425f8dbd0a4ca2c09e7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528248"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252777"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Field Service の契約の請求書と Supply Chain Management の自由書式の請求書との同期
 
@@ -55,23 +54,23 @@ ms.locfileid: "4528248"
 
 | Field Service  | サプライ チェーン マネジメント                 |
 |----------------|----------------------------------------|
-| 請求書       | CDS 顧客の自由書式請求書ヘッダー |
-| invoicedetails | CDS 顧客の自由書式請求書明細行   |
+| 請求書       | Dataverse 顧客の自由書式請求書ヘッダー |
+| invoicedetails | Dataverse 顧客の自由書式請求書明細行   |
 
 ## <a name="entity-flow"></a>エンティティのフロー
 
-Field Service の契約から作成された請求書は、Common Data Service データの統合プロジェクトを通して Supply Chain Management に同期することができます。 自由書式の請求書の会計ステータスが **処理中** の場合、これらの請求書の更新は Supply Chain Management の自由書式の請求書に同期されます。 自由書式の請求書が Supply Chain Management に転記済で、会計ステータスが **完了** に更新されると、Field Service から更新を同期することはできなくなります。
+Field Service の契約から作成された請求書は、Microsoft Dataverse データの統合プロジェクトを通して Supply Chain Management に同期することができます。 自由書式の請求書の会計ステータスが **処理中** の場合、これらの請求書の更新は Supply Chain Management の自由書式の請求書に同期されます。 自由書式の請求書が Supply Chain Management に転記済で、会計ステータスが **完了** に更新されると、Field Service から更新を同期することはできなくなります。
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM ソリューション
 
-**契約元の行を有する** フィールドが **請求書** エンティティに追加されました。 このフィールドは、契約書から作成された請求書のみが同期されることを保証するのに役立ちます。 契約書に基づく請求明細行が少なくとも 1 つ含まれている場合、値は **true** です。
+**契約元の行を有する** 列が **請求書** テーブルに追加されました。 この列は、契約書から作成された請求書のみが同期されることを保証するのに役立ちます。 契約書に基づく請求明細行が少なくとも 1 つ含まれている場合、値は **true** です。
 
-**契約元を有する** フィールドが **請求明細行** エンティティに追加されました。 このフィールドは、契約書から作成された請求明細行のみが同期されることを保証するのに役立ちます。 請求明細行が契約書に基づいている場合、値は **true** です。
+**契約元の行を有する** 列が **請求明細行** テーブルに追加されました。 この列は、契約書から作成された請求明細行のみが同期されることを保証するのに役立ちます。 請求明細行が契約書に基づいている場合、値は **true** です。
 
-**請求日** は、Supply Chain Management の必須フィールドです。 したがって、このフィールドは同期が発生する前に Field Service に値が必要です。 この要件を満たすためには、次のロジックが追加されます。
+**請求日** は、Supply Chain Management の必須フィールドです。 したがって、この列は同期が発生する前に Field Service に値が必要です。 この要件を満たすためには、次のロジックが追加されます。
 
-- **請求日** フィールドの **請求書** エンティティが空白の場合 (つまり、値が存在しない) 場合、契約に基づく請求明細行が追加された現在の日付が設定されます。
-- ユーザーは **請求日** フィールドを変更できます。 ただし、ユーザーが契約に基づいた請求書を保存する際に、**請求日** フィールドの請求書が空白の場合、ユーザーは業務プロセス エラーを受け取ります。
+- **請求日** 列の **請求書** テーブルが空白の場合 (つまり、値が存在しない場合)、契約に基づく請求明細行が追加された現在の日付が設定されます。
+- ユーザーは **請求日** 列を変更できます。 ただし、ユーザーが契約に基づいた請求書を保存する際に、**請求日** 列の請求書が空白の場合、ユーザーは業務プロセス エラーを受け取ります。
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
@@ -108,3 +107,6 @@ Supply Chain Management フィールド **主勘定表示値** に対する既�
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>契約請求書 (Field Service から Supply Chain Management) : 請求明細行
 
 [![データ統合のテンプレートのマッピング](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

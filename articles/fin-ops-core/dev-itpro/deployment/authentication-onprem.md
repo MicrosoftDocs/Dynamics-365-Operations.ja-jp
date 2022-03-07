@@ -2,11 +2,9 @@
 title: Dynamics 365 Finance + Operations (on-premises) での認証
 description: このトピックでは、認証プロセスの仕組みに関する背景情報を提供して、問題が生じる場合に解決できるようにします。
 author: faix
-manager: AnnBe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5a4e820afdc06450c265eec9c37c5408e4269780
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 241f9a9064cc0839e401a948ea4201d6b3898b42206b75f9ad3b919b55aa1609
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716745"
 ---
 # <a name="authentication-in-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (on-premises) での認証
 
@@ -97,10 +95,13 @@ AOS 構成ファイルの値が正しくない場合、通常は環境を配置�
 ## <a name="ad-fs"></a>AD FS
 認証プロセスの 2 番目の部分は、AD FS 自体です。 AD FS サーバーで、AD FS Management を開き ((**コントロール パネル > システムとセキュリティ > 管理ツール**)、**アプリケーション グループ** に移動すると、**Microsoft Dynamics 365 for Operations オンプレミス** と呼ばれるグループが表示されます。 このグループ内では、Dynamics 365 アプリケーションの AD FS の設定が格納されます。
 
-![AD FS 申請グループの設定](media/ADFS.png)
+![AD FS 申請グループの設定。](media/ADFS.png)
 
 AD FS は、クライアント ID および URL を使用して、アクセスの要求を受け付けるかどうかを判断します。 上記のスクリーンショットのクライアント ID は、前述の OfficeApps および OpenIDConnect セクションで指定された ID と一致していることがわかります。 クライアント ID とリダイレクト URL の両方が AOS が要求しているものと一致しない場合、AD FS は認証の要求を拒否します。 このような場合は、AD FS サーバーのイベントのログオンにエラーが見つかります。 **アプリケーションとサービス ログ > AD FS > 管理者** に、AD FS の特別なイベント ログがあります。
 
-![AD FS のイベント ログ エラー](media/ADFSredirectwrong.png)
+![AD FS のイベント ログ エラー。](media/ADFSredirectwrong.png)
 
 AD FS 申請グループの設定に誤りがある場合、イベント ログに探していた値を説明するエラーが見つかる可能性が高いので、何が正しく設定されていないのかを判断することができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

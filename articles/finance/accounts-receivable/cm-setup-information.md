@@ -1,23 +1,25 @@
 ---
 title: 与信管理の設定
 description: このトピックでは、与信管理に必要な設定について説明します。
-author: JodiChristiansen
-ms.date: 02/15/2022
+author: mikefalkner
+manager: AnnBe
+ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6977789b039c3e77e6d697e32bf4cac69c35a901
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: a2aa1980ebc1fa8412fc388e7837bc40b6902bc0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182457"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991254"
 ---
 # <a name="credit-management-setup"></a>与信管理の設定 
 
@@ -39,7 +41,7 @@ ms.locfileid: "8182457"
 
 支払条件のランキングが有効であり、注文の支払条件のランクが顧客の既定の支払条件よりも高い場合、販売注文は保留されます。
 
-支払条件のランクを設定するには、**与信および回収 \> 設定 \> 与信管理設定 \> 支払条件のランク付け** に移動します。  
+支払条件のランクを設定するには、**与信および回収 \> 設定 \> 与信管理設定 \> 支払条件のランク付け** に移動します  
 
 ### <a name="ranking-settlement-discounts"></a>決済割引のランク付け
 
@@ -86,7 +88,7 @@ ms.locfileid: "8182457"
 
 ## <a name="scoring-groups"></a>スコア グループ
 
-**スコアリング グループ** を設定して、リスク要因と、測定に使用される基準を定義できます。 顧客に関する情報がスコアリング グループに適用されると、リスク要素ごとにスコアが計算され、顧客をリスク グループに入れるために使用されます。 このリスク グループを使用して、与信価値の識別と自動与信限度額の計算を行うことができます。
+スコアリング グループを設定して、リスク要因と、測定に使用される基準を定義できます。 顧客に関する情報がスコアリング グループに適用されると、リスク要素ごとにスコアが計算され、顧客をリスク グループに入れるために使用されます。 このリスク グループを使用して、与信価値の識別と自動与信限度額の計算を行うことができます。
 
 スコアリング グループは、**スコアリング グループ** ページ (**与信および回収 \> 設定 \> 与信管理設定 \> リスク \> スコアリング グループ**) で作成できます。
 
@@ -150,6 +152,3 @@ ms.locfileid: "8182457"
 2. スコアリング グループ情報を評価する方法を定義する比較演算子を選択します。
 3. スコアリング グループに対して指定されている値と比較する値を入力します。
 4. スコアリング グループに対して指定された値と顧客情報が一致した場合に割り当てる与信限度額を入力します。 たとえば、**低** スコアリング グループの自動与信限度額を作成します。 業務年数がスコアリング グループの 1 つである場合は、顧客が業務 5 年以内の場合には 10 万の与信限度額を割り当て、10 年にわたって業務を行っている場合はその他に 20 万を割り当てる明細行を定義できます。
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

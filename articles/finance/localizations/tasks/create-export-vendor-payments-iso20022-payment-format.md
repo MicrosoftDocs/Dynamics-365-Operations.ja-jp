@@ -2,11 +2,9 @@
 title: ISO20022 支払形式を使用した仕入先支払の作成とエクスポート
 description: この手順では、仕入先支払仕訳帳で支払明細行を作成する方法、および ISO2022 口座振替の例を使用して仕入先支払ファイルを生成する方法を示します。
 author: mrolecki
-manager: AnnBe
 ms.date: 01/17/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1df738e3925dc23e7723d93f33acf6a9d811b113
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c7bd5308e7589cb280244ea85e184422cbe2aa09f1cb548a81445defbd082e42
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964544"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752101"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>ISO20022 支払形式を使用した仕入先支払の作成とエクスポート
 
@@ -49,3 +47,6 @@ ms.locfileid: "4964544"
     3.    **ファイル名** フィールドに値を入力します。 この例では、EUR 支払が原因で、生成されたファイルは SEPAに準拠します。 他の通貨での支払いの生成には、ISO20022 口座振替や他の仕入先の支払形式も使用できます。
     4.    **銀行口座** フィールドで、値を入力または選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,26 +1,24 @@
 ---
 title: 仕入先リベート
 description: このトピックでは、仕入先のリベートを作業する場合に実行する、最も一般的なタスクの概要を示します。 仕入先のリベートは、取得したリベートを管理、追跡、および申請するために必要なタスクを自動化することにより、仕入れ先のリベートプログラムを会社が効率的に管理できるようにします。
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 46d6beb287f7d034c6fde09999f7854695a4987c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec8d054d023b7e3f6611199e60f661c480d44d57
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966658"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566866"
 ---
 # <a name="vendor-rebates"></a>仕入先リベート
 
@@ -55,7 +53,7 @@ ms.locfileid: "4966658"
 
 **仕入先のリベート契約** ページを開き、**調達**&gt;**仕入れ先のリベート**&gt;**リベート契約** を選択します。
 
-![購買契約](media/purchase-agreement.PNG)
+![購買契約。](media/purchase-agreement.PNG)
 
 **仕入先リベート契約** ページで、仕入先契約の交渉による条件に関する詳細を表示することができます。
 
@@ -131,7 +129,7 @@ ms.locfileid: "4966658"
 
     リベート見越計上仕訳帳が請求金額に転記されます。 この転記は、予定仕入先貸方の見越計上仕入先リベートの未収勘定の借方に記入し、予定利益の中間見越計上仕入先リベートを適用した勘定の貸方に記入します。
 
-    ![メッセージ](media/message.png)
+    ![メッセージ。](media/message.png)
 
 5. リベートの一覧から明細行を選択します。次に、アクション ペインで **リベート トランザクション** を選択し、リベート見越計上の転記用の仕分けバッチ番号の参照、および移動を行います。
 
@@ -166,3 +164,6 @@ ms.locfileid: "4966658"
 - 正確なリベート請求の作成
 - 一般会計で予定された売掛および中間利益の発生。
 - 割引の期日を迎えた仕入先残高と損益計算書の更新
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

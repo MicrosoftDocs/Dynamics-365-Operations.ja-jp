@@ -1,12 +1,10 @@
 ---
 title: 外部の CSV ファイルからデータをインポートするための ER コンフィギュレーションの設計
-description: この手順を使用して、外部ファイルから CSV 形式で Finance and Operations アプリケーションにデータをインポートできるように電子申告 (ER) コンフィギュレーションを設計します。
+description: この手順を使用して、外部ファイルから CSV 形式で Finance and Operations アプリにデータをインポートできるように電子申告コンフィギュレーションを設計します。
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b542b6250bcc72334659e050f7ab6d5bd87d3508
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 05beb15413362aea557fb80fb471c10e1f832184
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682048"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752535"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>外部の CSV ファイルからデータをインポートするための ER コンフィギュレーションの設計
 
@@ -124,3 +122,6 @@ ms.locfileid: "4682048"
     * 選択ファイルからインポートされてデータ モデルにポートされたデータを表すXML 書式の出力を確認します。 インポートされた CSV ファイルのすべての 7 つの行が処理されたことに注意してください。 フィールドのタイトル行 1 はスキップされ、4 つの取引は正しく解析され、2 つの取引は無効であると認識されます。
 3. ページを閉じます。
 4. ページを閉じます。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

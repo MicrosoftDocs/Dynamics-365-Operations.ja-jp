@@ -2,24 +2,20 @@
 title: 二重書き込みの新機能および変更された機能
 description: このトピックでは、リリース計画、主要な発表、二重書き込みのドキュメントなどへのリンクを提供します。
 author: robinarh
-manager: AnnBe
-ms.date: 06/30/2020
+ms.date: 01/04/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 57acc10a176f7b32b9be07716a01bfdc6c925591
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 885badd98a552a31447d6d76a9f153c8550cbd75
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685470"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306403"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -29,26 +25,176 @@ ms.locfileid: "4685470"
 
 二重書き込みは、Microsoft Dynamics 365 アプリと Finance and Operations アプリの Customer Engagement アプリ間の、ほぼリアルタイムの対話を提供する標準のインフラストラクチャです。 デュアル書き込みを開始する方法については、[デュアル書き込みホームページ](dual-write-home-page.md) を参照してください。
 
-[リリース計画](https://go.microsoft.com/fwlink/?linkid=2010158) におけるデュアル書き込み機能および変更点に関する最新情報を確認してください。
+[リリース計画](/dynamics365/release-plans/) におけるデュアル書き込み機能および変更点に関する最新情報を確認してください。
 
-+ [Dataverse のデータ - フェーズ 1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
-+ [Dataverse のデータ - フェーズ 1 と 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
-+ [Dataverse の Finance and Operations データ – フェーズ 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
++ [Dataverse のデータ - フェーズ 1](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
++ [Dataverse のデータ - フェーズ 1 と 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
++ [Dataverse の Finance and Operations データ – フェーズ 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
+
+## <a name="june-2021-release"></a>2021 年 6 月リリース
+
+2021 年 6 月リリースされた修正プログラムの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.98](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.27](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| バグ修正 | 2 分の時間制限を超えるトランザクションのロールバックを実装します。 | 一般提供 |
+| バグ修正 | キャッチアップ同期中に datetime フィールドの処理が修正されます。 | 一般提供 |
+| 追跡 | 中規模のトランザクション (5 つ以上のレコード) の重要ではないプラグイン トレース ログを制限します。 | 一般提供 |
+| バグ修正 | **共有製品の詳細** テーブルに保管および追跡用分析コード グループのルックアップ フィールドが追加されました。 これらのルックアップ フィールドが **リリース済み製品 V2" - > msdyn_sharedproductdetails** 二重書き込みマップに追加されました。 | 一般提供 |
+| バグ修正 | 販売注文では、既存の製品を選択した場合、**販売製品カテゴリ** の値が **製品カテゴリの割り当て** テーブルからの値への既定値となります。 ただし、既定値が販売階層の一部ではない場合は、品目の追加によってエラー メッセージが表示されます。 エラーを防ぎ、財務およびオペレーション アプリ内での割り当てを許可するには、**販売製品カテゴリ** フィールドを空白のままにできます。  | 一般提供 |
+| バグ修正 | 販売注文では、既存の製品を選択した場合、**販売製品カテゴリ** は読み取り専用です。 このファイルは、製品がリスト外に設定されている場合編集可能です。 | 一般提供 |
+| バグ修正 | 販売見積および販売注文の **税合計** フィールドは読み取り専用です。 **単位あたりの価格** が Finance and Operation アプリの販売見積明細行または販売注文明細行で変更される場合、Customer Engagement アプリの各販売見積明細行または販売注文明細行に逆同期する必要があります。  | 一般提供 |
+| バグ修正 | Finance and Operation アプリの **倉庫名** フィールドを更新すると、Dataverse の **名前** フィールドは空白になります。 | 一般提供 |
+| バグ修正 | ウクライナのためのローカライズの修正です。 | 一般提供 |
+
+## <a name="may-2021-release"></a>2021 年 5 月リリース
+
+2021 年 5 月リリースされた修正プログラムの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.26](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| 政府のコミュニティ クラウドのサポート | 政府のコミュニティ クラウドのリージョンでの二重書き込みランタイムがサポートされます。 | 一般提供 |
+| わかりやすいエラー メッセージ | ライブ同期の失敗のいくつかに関してわかりやすいエラー メッセージを有効にします。 | 一般提供 |
+
+## <a name="may-2021-release-of-party-and-global-address-book"></a>2021 年 5 月リリースの当事者およびグローバル アドレス帳
+
+2021 年 5 月リリースされた修正プログラムの [二重書き込み当事者およびグローバル アドレス帳ソリューション 3.0.0.26](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwgabsln) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されているバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| バグ修正| Customer Engagement アプリでは、潜在顧客に郵便住所が含まれ見込みありとされる場合、その郵便住所がアカウントに関連付けられます。 ただし、Finance and Operations アプリには送られません。| 一般提供 |
+| バグ修正| Customer Engagement アプリでは、既存のアカウントまたは連絡先に住所を追加する場合、住所は Finance and Operations アプリには送られません。| 一般提供 |
+| バグ修正| 顧客住所テーブルには、さらに多くの住所フィールドが追加されます。 | 一般提供 |
+| バグ修正| Dataverse では、msdyn_contactforparties テーブルの表示名を、**顧客または仕入れ先の連絡先** に変更した | 一般提供 |
+| バグ修正| 連絡先 V2 (msdyn_contactforparties) のマッピングで language transformation を修正しました。 | 一般提供 |
+| バグ修正| CDS 関係者の配送先の場所 (msdyn_partypostaladdresses) マッピングで初期同期の問題を修正し、顧客住所テーブル内の一部のレコードが失われしないようにしました。 | 一般提供 |
+
+### <a name="solution-details"></a>ソリューションの詳細
+
+|ソリューション名 | 新たな変更がありますか? | 以前のバージョン | 新しいバージョン |
+|--------------|--------------|--------------|--------------|
+|当事者|あり|3.0.0.1|3.0.0.26|
+|Dynamics365GABExtended|あり|3.0.0.1|3.0.0.26|
+|Dynamics365GABDualWriteEntityMaps|あり|3.0.0.1|3.0.0.26|
+|Dynamics365GABPartyAnchor|あり|3.0.0.1|3.0.0.26|
+|Dynamics365GABPartyCommon|あり|3.0.0.1|3.0.0.26|
+
+### <a name="map-instructions"></a>マッピングの手順
+
+新しいマップを適用するには、次の手順に従います。
+
+1. CDS 住所履歴 V2 (msdyn_postaladdresses) のマッピング用に、最新のマップ バージョン 1.0.0.2 を適用します。
+2. 連絡先 V2 (msdyn_contactforparties) のマッピング用に、最新のマップ バージョンを適用します。
+3. CDS 関係者の配送先の住所 (msdyn_partypostaladdresses) のマッピングの初期同期を 2 回実行し、 住所の同時更新によって顧客住所テーブルの住所レコードが失われないようにします。
+
+## <a name="april-2021-release"></a>2021 年 4 月リリース
+
+2021 年 4 月リリースされた修正プログラムの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.25](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| レコードの削除 | 複数のエンティティを含むトランザクションでのレコードの削除を処理します。 | 一般提供
+| バグ修正 | キャッチアップ同期中に競合の解決を処理します。 | 一般提供
+| バグ修正 | 環境でのソリューションのインポートに関連する問題。 | 一般提供
+| バグ修正 | **メモ** テーブルで **Null** 値が理解するようになりました。 | 一般提供 |
+| バグ修正 | デュアル書き込みオーケストレーション パッケージの2.2.2.50では、**アドレス** テーブルの既存のキー (**msdyn_locationid** フィールド) を、**msdyn_locationid** と **parentid** フィールドの組み合わせである新しいキーに置き換えません。 代わりに、両方のキーが表示されます。 これは新しいバージョン 2.2.2.60 で修正されています。 この新しいバージョンは、[当事者およびグローバル アドレス帳](party-gab.md) ソリューションを使用している場合にのみ適用されます。| 一般提供 |
+
+## <a name="march-2021-release"></a>2021 年 3 月リリース
+
+2021 年 3 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.50](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| [当事者およびグローバル アドレス帳](party-gab.md) | Finance and Operations アプリとスキーマの同等性をもたらし、顧客、仕入先、および連絡担当者に関連する Dataverse の複雑なビジネス上の問題を解決する機能を提供します。 この機能を使用するには [二重書き込み当事者およびグローバル アドレス帳ソリューション](https://aka.ms/dual-write-gab) をインストールします。<br>サポートされる Finance and Operations バージョンは、10.0.605.30025 (プラットフォーム更新プログラム 14)、10.0.644.20031 (プラットフォーム更新プログラム 15)、10.0.689.10027 (プラットフォーム更新プログラム 16)、および 10.0.761.1 (プラットフォーム更新プログラム 17) です | 一般提供 |
+| バグ修正 | **製品カテゴリ名** は、**製品カテゴリ** テーブルのナチュラル/統合キーの一部です。 Finance and Operations アプリを使用して名前更新すると、更新ではなく Dataverse に挿入されます。 バージョン 1.0.0.1 の `msdyn_productcategories - Product categories` の新しいマップを使用してください。 サポートされている Finance and Operations のバージョンは 10.0.778.0 (プラットフォーム更新プログラム 42) です | 一般提供 |
+| バグ修正| ローカライズのバグ修正と更新。 | 一般提供 |
+| バグ修正| 説明のないメモはエラーになります。 | 一般提供 |
+| バグ修正| Finance and Operations アプリで「販売合計の計算」バッチ ジョブを実行すると、過去 24 時間以内に変更されたすべての注文が更新され、注文のステータス、例えば **キャンセル済** や **フルフィルメント** に関係なく合計が修正されます。 このアクションによって、再キャンセルまたは再フルフィルメントがトリガーされ，競合エラーが発生します。 | 一般提供 |
+
+## <a name="february-2021-release"></a>2021 年 2 月リリース
+
+2021 年 2 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション 2.2.2.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) およびバージョン 10.0.16 (10.0.689.10004) または新しいバージョンの Finance and Operations アプリおよびバージョン 9.1.0000.11732 または新しいバージョンの Dataverse に基づいています。
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| [販売見積のコマース価格エンジン](commerce-pricing.md) | コマース価格エンジンを使用した販売見積の価格を取得します。 | 一般提供 |
+| [メモの統合](notes-integration.md) | メモは、Customer Engagement アプリと、顧客、仕入先、販売注文、および発注書用の Finance and Operations アプリケーション間で統合されます。  | 一般提供 |
+
+> [!IMPORTANT]
+> メモの統合を必要としない場合は、二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.2.23 以降をインストールまたはアップグレードしないでください。 更新プログラムをインストールしている場合、メモ機能をアンインストールできません。 
+
+## <a name="january-2021-release"></a>2021 年 1 月リリース
+
+2021 年 1 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.1.30](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) および Finance and Operations アプリのバージョン 10.0.14 に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| バグ修正 | ユーザー インターフェイスのフランス語にローカライズされた文字列が、上限の 100 文字を超えました。 | 一般提供 |
+| バグ修正 | Dataverse リリース済の特徴的製品のマップ起動中にエラーが発生しました。 | 一般提供 |
+
+2021 年 1 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.2.1.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) および Finance and Operations アプリのバージョン 10.0.14 に基づいています。  
+
+このリリースには、次の表に記載されている機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| [発注書の統合](scm-field-service-procurement.md) | Dynamics 365 Field Service と Dynamics 365 Supply Chain Management の間で発注書機能を統合します。 | 一般提供 |
+| バグ修正 | ローカライズの更新。 | 一般提供 |
+| バグ修正 | Customer Engagement アプリでは、**連絡先** フォームで **販売可能** を **はい** に設定してレコードを保存すると、連絡先は取引可能な顧客と見なされます。 顧客はトランザクションに関連付けられているので、保存すると **販売可能** は読み取り専用になります。 この値は **いいえ** に戻すことはできません。 | 一般提供 |
+
+## <a name="december-2020-release"></a>2020 年 12 月リリース
+
+2020 年 12 月リリースの二重書き込みコア ソリューション (1.0.24) には、次のテーブルに示す機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| 信号繰り返しサービス | 二重書き込みランタイム プラグインが、認証サポートを使用して Finance and Operations 信号繰り返しサービスと通信できるようにします。 | 一般提供
+
+## <a name="november-2020-release"></a>2020 年 11 月リリース
+
+2020 年 11 月リリースの二重書き込みコア ソリューション (1.0.23) には、次のテーブルに示す機能とバグ修正が含まれています。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| 認証 | セキュリティを確保するための新しい認証証明書のサポート。 | 一般提供
+
+## <a name="october-2020-release"></a>2020 年 10 月 リリース
+
+二重書き込みアプリケーション オーケストレーション ソリューションおよび二重書き込みコア ソリューションの 2020 年 10 月リリースには、次の表に示す機能とバグ修正プログラムが含まれます。
+
+| 機能 | 説明 |状態 |
+|------|---------|-------|
+| キャメルケースされた列のマッピング | キャメルケースされたナビゲーション プロパティを使用した列マッピングのサポートを追加します。 | 一般提供
+| バグ修正 | 未認識のタグ コンフィギュレーションによって二重書き込みの実行がスキップされるバグを修正する | 一般提供
 
 ## <a name="september-2020-release"></a>2020 年 9 月リリース
 
-2020 年 9 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.0.777.493](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 10.0.21 ](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
+2020 年 9 月リリースの [二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.0.777.493](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) は、[二重書き込みコア ソリューション バージョン 1.0.21](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) に基づいています。  
 
 2020 年 9 月のリリースには、次の表に記載されている機能とバグ修正が含まれています。
 
 | 機能 | 説明 |ステータス |
 |------|---------|-------|
 | Sales での潜在顧客認定プロセスは、会社によってストライプされる | Dynamics 365 Sales のユーザーは、潜在顧客を作成し、営業案件に対する潜在顧客を見込みありとし、営業案件を見積もりに変換し、見積もりを有効にして、注文を作成することができます。 このプロセスは、**潜在顧客** エンティティに対する会社のストライピングが欠如しているために、二重書き込みで分割されました。 基になる **取引先企業** と **営業案件** のテーブルに会社をカスケードするように、**潜在顧客** エンティティに会社のストライピングを実装しています。 したがって、アプリケーション動作が復元され、プロセスがサポートされます。 **潜在顧客** 特定プロセスの間、**取引先担当者** エンティティは会社でストライプされません。 この設計では、2020 年 10 月で期限となる **関係者** エンティティ モデルがサポートされます。 二重書き込みの **関係者** および **GlobalAddressBook** モデルについては、[二重書き込み Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096&view=all) に参加してください。 | 一般提供 |
-| [**注文** から **販売注文** へのマップ状態遷移](sales-status-map.md) | Dynamics 365 Sales の **注文** フォームは、常に **有効** に設定されています。 Dynamics 365 Salesの **注文** から Dynamics 365 Supply Chain Management の **販売注文** に状態遷移を作成するために、**ProcessingStatus** フィールドを導入しました 。 |   一般提供   |  
+| [**注文** から **販売注文** へのマップ状態遷移](sales-status-map.md) | Dynamics 365 Sales の **注文** フォームは、常に **有効** に設定されています。 Dynamics 365 Sales の **注文** から Dynamics 365 Supply Chain Management の **販売注文** に状態遷移を作成するために、**ProcessingStatus** 列を導入しました 。 |   一般提供   |  
 | [金額から 10 進データ型への変換](currrency-decimal-places.md) |  Dataverse 環境では、通貨は小数点以下 4 桁、為替レートは小数点以下 10 桁に制限されています。 Finance and Operations アプリでは、Dataverse より多くの小数点以下の桁数をサポートします。 Dataverse の 10 進数サポートを拡張にオプトインして、二重書き込みを使用するときに小数点以下のデータが失われないようにすることができます。 | 一般提供 |
 | 会社および通貨為替のセキュリティ ロール | 会社と通貨為替テーブルは本質的にグローバルであり、すべての二重書き込みユーザーにはこれら 2 つのテーブルへの読み取りアクセスが必要です。 経験を簡略化するために、**二重書き込みアプリ ユーザー** という名前の新しいセキュリティ ロールを追加しました 。 各二重書き込みユーザーが、このセキュリティ ロールに追加される必要があります。   | 一般提供 |
-| せていのセキュリティ ロール | **二重書き込みランタイム ユーザー** セキュリティ ロールを追加します。 このロールを使用すると、管理者以外のユーザーは、二重書き込み用に設定されたレコードを作成できます。 この機能は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
-| 追跡 | トレースに使用するために追加された内部フィールド。 この機能は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
+| せていのセキュリティ ロール | **二重書き込みランタイム ユーザー** セキュリティ ロールを追加します。 このロールを使用すると、管理者以外のユーザーは、二重書き込み用に設定された行を作成できます。 この機能は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
+| 追跡 | トレースに使用するために追加された内部列。 この機能は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
 | バグ修正 | プラグインと移行先の環境の間に不一致があるために二重書き込みに失敗する問題を修正します。 この修正は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
 | バグ修正 | 未使用のプラグインを確実に削除することをサポートします。 この修正は、二重書き込みコア ソリューション 10.0.21 の一部です。 | 一般提供 |
 
@@ -59,7 +205,7 @@ ms.locfileid: "4685470"
 | 機能 | 説明 |ステータス |
 |------|---------|-------|
 | 複数のテーブル マップの管理 | 日常業務の一部として、テーブル マップを一括処理する必要がある場合があります。 たとえば、一連のテーブル マップを同時に有効化または一時停止することができます。 これを 1 つ行う代わりに、煩雑で時間がかかりますが、二重書き込みリスト ページで複数のテーブル マップを同時に有効化、一時停止、再開、または停止することができます。 | 一般提供 |
-| バグ修正 | プロジェクトの実行時に特定の状況でレコードがスキップされる問題を修正します。 この修正は、二重書き込みコア ソリューション バージョン 10.0.19 の一部です。  | 一般提供 |
+| バグ修正 | プロジェクトの実行時に特定の状況で行がスキップされる問題を修正します。 この修正は、二重書き込みコア ソリューション バージョン 10.0.19 の一部です。  | 一般提供 |
 
 ## <a name="june-2020-release"></a>2020 年 6 月リリース
 
@@ -69,7 +215,6 @@ ms.locfileid: "4685470"
 |------|---------|-------|
 | 二重書き込み設定後に法人を編集する | 企業や法人の一覧は静的ではなく、常に変化しています。 たとえば、段階的なロールアウトや買収の際に、新しい会社を追加することが必要な場合があります。 以前は、会社や法人をシステムのダウンタイムなしで追加することはできませんでした。 このダウンタイム中に、環境のリンクを解除して再リンクする必要があります。 これは、特にデータが既に存在する場合は、費用がかかる可能性があります。 この機能を使用すると、リンクを解除して再リンクすることなく、ライブ環境で会社を追加できます。 | 一般提供 |
 
-
 ## <a name="may-2020-release"></a>2020 年 5 月リリース
 
 2020 年 5 月リリースのデュアル書き込みオーケストレーション パッケージ (バージョン 2.0.777.353) には、次のテーブルに示す機能とバグ修正が含まれています。
@@ -77,7 +222,7 @@ ms.locfileid: "4685470"
 | 機能 | 説明 |ステータス |
 |------|---------|-------|
 | 手持在庫の検索 | Customer Engagement アプリのフォームで、手持在庫と納期回答可能日を参照できます。 | 一般提供 |
-| 単位換算 |    Finance and Operations アプリで見積もり明細行と注文明細行の単位換算が発生すると、Customer Engagement アプリによって、その単位換算が受け入れられ、顧客契約アプリの見積詳細と注文の詳細の単位と価格に対する変更が反映されます。 | 一般提供 |
+| 単位換算 | Finance and Operations アプリで見積もり明細行と注文明細行の単位換算が発生すると、Customer Engagement アプリによって、その単位換算が受け入れられ、顧客契約アプリの見積詳細と注文の詳細の単位と価格に対する変更が反映されます。 | 一般提供 |
 | 通貨変更の制限 | 既存の見積もりや注文に対して Finance and Operations アプリの通貨を変更しようとすると、変更は失敗します。   | 一般提供 |
 | **アカウント** フォームと **連絡先** フォームのパリティ | B2B と B2C の Customer Engagement アプリで **アカウント** フォームと **連絡先** フォームの属性アプリを持ち込みます。  | 一般提供 |
 | アドレスの重複なし | Customer Engagement アプリの見積または注文に対して作成または更新のアクションがある場合は、Finance and Operations アプリでアドレスを重複させないでください。  | 一般提供 |
@@ -87,4 +232,4 @@ ms.locfileid: "4685470"
 | テナント管理者レベルの承認要件の削除 | これまでは、デュアル書き込みを有効にするには、アプリケーションに対する承認を明示的に行う必要がありました。 これは、実用的で、追加の承認が必要であるため、時間がかかる場合があります。 この機能を使用すると、この前提条件と、アプリケーションに対する同意を明示的に提供する必要がなくなりました。 | 一般提供 |
 | デュアル書き込み環境の強制リンク解除 | これまでは、二重書き込みのテスト中に、すべてのテーブル マップを無効にしてから、二重書き込み環境のリンクを解除する必要がありました。 この方法は煩雑になり、いずれかの環境が使用できない場合は不可能になることがあります。 この新しい機能を使用すると、テスト環境とトライアル環境を簡単にリンク解除することができます。 | 一般提供 |
 
-
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

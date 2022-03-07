@@ -11,6 +11,7 @@ ms.technology: ''
 ms.search.form: RetailTenderDiscount
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 9f6747ff9d68c29612346254928e869d6d34d433
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4be0c9a6f0a32016e07b8e31d0aaff44b4a29623
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962938"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4413867"
 ---
 # <a name="tender-based-discounts"></a>支払/入金ベースの割引
 

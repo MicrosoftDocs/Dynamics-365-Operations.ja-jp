@@ -2,11 +2,9 @@
 title: DATEVALUE ER 関数
 description: このトピックでは、DATEVALUE 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43e65055b0803ed330a19568f9565c3fae488ab2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cfaf183c61d3663442cbc244239b872b9e1957bb
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682416"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891236"
 ---
 # <a name="datevalue-er-function"></a>DATEVALUE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`DATEVALUE` 関数は、指定された形式およびオプションで指定された [カルチャ](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) の、特定のテキスト値から日付値に変換される *日付* 値を返します。 サポートされている形式の詳細については、[標準](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) と [カスタム](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) を参照してください。
+`DATEVALUE` 関数は、指定された形式およびオプションで指定された [カルチャ](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) の、特定のテキスト値から日付値に変換される *日付* 値を返します。 サポートされている形式の詳細については、[標準](/dotnet/standard/base-types/standard-date-and-time-format-strings) と [カスタム](/dotnet/standard/base-types/custom-date-and-time-format-strings) を参照してください。
 
 ## <a name="syntax-1"></a>構文 1
 
@@ -79,3 +77,6 @@ DATEVALUE (text, format, culture)
 ## <a name="additional-resources"></a>追加リソース
 
 [日時の関数](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

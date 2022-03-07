@@ -2,11 +2,9 @@
 title: 実装プロジェクトの研修
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトをオンボードする方法を説明します。
 author: ClaudiaBetz-Haubold
-manager: AnnBe
 ms.date: 05/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 457f4147f16a1a33409d826fcc66373965c6a37a
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9ae3853fc443285cfa8d51d4146f08dd184d3ba9
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797694"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923460"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 
@@ -57,7 +55,7 @@ LCS を開始するには、[Finance and Operations アプリ顧客用の Lifecy
 
 LCS **実装プロジェクト** ワークスペースがプロビジョニングされたら、Microsoft FastTrack チームはオンボードの進捗状況を監視します。 LCS **実装プロジェクト** を作成してから数週間以内にプロジェクトのオンボードを完了しなかった場合、プロジェクト チームにアラームが送信されます。 
 
-FastTrack プログラムおよび提供されるサービスの詳細については、 [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md) を参照してください。
+FastTrack プログラムおよび提供されるサービスの詳細については、 [Microsoft FastTrack](/dynamics365/fasttrack/) を参照してください。
 
 LCS プロジェクト オンボードの詳細については、[LCS プロジェクト オンボードの](../../dev-itpro/lifecycle-services/project-onboarding.md)を参照してください。
 
@@ -73,3 +71,6 @@ LCS 実装プロジェクトに顧客やパートナー チームから主要な
 LCSプロジェクトのマイルストーン日付は、必ず最新の状態に保つようにしてください。 このように、さまざまなプロジェクトステージでお客様と連絡をとれます。 お客様が Go-live 日 により近づいたとき、マイクロソフトは、実稼働環境を配置する前に、プロジェクトの Go-live 評価のためにお客様と連絡を取ります。
 
 マイルストーンの日付は、LCS 実装方法に格納されます。 詳細については、「顧客向け LCS」トピックの [方法](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) セクションを参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

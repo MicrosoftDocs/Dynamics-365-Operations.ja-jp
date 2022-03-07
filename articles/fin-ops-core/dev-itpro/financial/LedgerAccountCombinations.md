@@ -2,11 +2,9 @@
 title: 勘定科目の組み合せ
 description: このトピックでは、分析コードフレームワークにおける勘定科目の組み合わせに関する情報を提供します。
 author: jasonsto
-manager: jdinham
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4a7c1e5d877bdbe3062dceda42f0a68023bc705
-ms.sourcegitcommit: b19bbf8d5fc364045f6a1e5b0b7e20bcfc288d42
+ms.openlocfilehash: 3c6778764ee4f81f4b9a27dd2170c8bda4af66a8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4707640"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753926"
 ---
 # <a name="ledger-account-combinations"></a>勘定科目の組み合せ
 
@@ -397,3 +395,6 @@ Dimension frameworkでは、より複雑な制約ツリーを設定すること�
 構造またはルールが変更された場合、勘定科目の組み合わせが未転記トランザクションに対して保存されていると、分析コードフレームワークが新しい組み合わせが作成し、未転記のトランザクションテーブルの外部キー参照がすべて更新されます。 転記されたトランザクションから参照されている場合があるため、元の組み合わせは変更されません。 この2つの組み合わせは、連係されることがありません。 変更前の構造とルールがどのようなものであったかを判別する方法はありません。 一部の情報は、格納されている組み合わせによって判別できる場合もあります。 ただし、空白の値は保存されておらず、不完全なデータとみなされるため、古いバージョンの再構築に使用することはできません。
 
 分析コードフレームワークでは、分析コード値レベルでの "有効な開始日付" と "有効な終了日付" の両方に対応しています。 これらの日付は、値が "有効" なものであると見なされた時点の日付を示しています。 これらは有効日付データと同様で、値の過去の状態を意味するものではありません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

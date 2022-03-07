@@ -2,26 +2,23 @@
 title: 顧客リベートの生成および処理
 description: この手順は、要求の生成から売掛金勘定への見越計上として顧客リベートを渡すまでの、顧客リベートの処理方法を示します。
 author: omulvad
-manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a8ebc281036842bdc8965e062990438e1fb466ff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 450d630c133f2ef9ce10bbf199c3c125a9cdf4bc09d23180f956190096265654
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432090"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779593"
 ---
 # <a name="generate-and-process-customer-rebates"></a>顧客リベートの生成および処理
 
@@ -65,7 +62,7 @@ ms.locfileid: "4432090"
 
 ## <a name="process-rebate-claims"></a>リベート要求の処理
 1. **ナビゲーション ウィンドウ > モジュール > 販売とマーケティング > 顧客リベート > リベート** の順に移動します。
-    - [リベート] ページは、リベート要求の確認、承認、処理を行うワークベンチとして機能します。 リベート契約 USMF-000001 の対象となる顧客 US-009 の販売注文が請求された結果として、作成された請求を処理します。   
+    - リベート ページは、リベート要求の確認、承認、処理を行うワークベンチとして機能します。 リベート契約 USMF-000001 の対象となる顧客 US-009 の販売注文が請求された結果として、作成された請求を処理します。   
     - 最初の行は、製品 T0020 の 40 単位の販売に基づいて、単位ごとに 20 USD として計算された 800 USD のリベート要求を表します。 これは、リベート契約の最初の数量区分の条件と一致します。  
     - 2 番目の要求は、2,400 USD です。これは、製品 T0020 の 60 単位の販売に基づいています。また、契約の 2 番目の数量区分により、1 単位 40 USD として計算されました。  
     - 両方の請求は、"計算対象" 状態にあります。 これは、定期的に顧客の販売実績を追跡する契約に関連付けられ、対応する期間内の合計売上高の勘定を再計算する必要があることを意味します。   
@@ -82,3 +79,6 @@ ms.locfileid: "4432090"
     - リベート見越勘定は、顧客の将来の負債を表すよう貸方に転記されました。
     - リベート経費勘定が販売に関連して発生した原価を認識するよう借方に転記されました。   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

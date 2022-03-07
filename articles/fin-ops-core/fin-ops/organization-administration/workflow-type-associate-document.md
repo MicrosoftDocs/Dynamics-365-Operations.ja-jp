@@ -2,26 +2,24 @@
 title: ワークフロー ドキュメント クラスをワークフロー タイプと関連付ける
 description: このトピックでは、ワークフロー タイプにワークフロー ドキュメント クラスを関連付ける方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 47135b74e602dd20906953957dcc25d4de1d7a96
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 47d685183e1117f4c31665de0fcdb928140c92c4
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798793"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783118"
 ---
 # <a name="associate-a-workflow-document-class-with-a-workflow-type"></a>ワークフロー ドキュメント クラスとワークフロー タイプの関連付け 
 
@@ -45,3 +43,6 @@ ms.locfileid: "4798793"
 [新しいワークフロー タイプの作成](workflow-type-create-new.md)
 
 [ワークフロー ドキュメント クラスの作成](workflow-type-document-create.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

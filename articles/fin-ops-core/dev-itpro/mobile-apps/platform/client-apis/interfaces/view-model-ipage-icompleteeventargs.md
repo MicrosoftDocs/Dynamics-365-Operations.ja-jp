@@ -1,18 +1,23 @@
 ---
 title: CompleteEventArgs タイプ
 description: CompleteEventArgs タイプ
-author: tonyafehr
+author: robinarh
 ms.date: 08/01/2017
+ms.topic: article
+ms.prod: ''
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 9c29896bcd1e202d9a302487deae8138d6d9b734
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 33f26b6951440d46cdee8a02544cd35592147640
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782863"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748183"
 ---
 # <a name="completeeventargs-type"></a>CompleteEventArgs タイプ
 

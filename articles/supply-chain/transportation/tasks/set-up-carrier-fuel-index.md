@@ -2,27 +2,24 @@
 title: 配送業者の燃料インデックスの設定
 description: このガイドでは、燃料インデックス領域、燃料インデックス、および輸送業者の燃料インデックスを作成する方法を説明します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFuelIndexRegion,TMSCarrierFuelIndexTable,TMSFuelIndex
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12ade30b63454dfd997aa47a62cde21b066140fa
-ms.sourcegitcommit: fe7ac653efcb1ac6318083f482394b96ed82b4c7
+ms.openlocfilehash: 504c5143fac0e46f4d7be134d400ae53d999d25b1b364fe0278343b3d7664bf0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4432429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782326"
 ---
 # <a name="set-up-a-carrier-fuel-index"></a>配送業者の燃料インデックスの設定
 
@@ -67,3 +64,6 @@ ms.locfileid: "4432429"
 12. 一覧で、選択された行のリンクをクリックします。
 13. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

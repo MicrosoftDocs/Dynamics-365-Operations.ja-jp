@@ -2,28 +2,28 @@
 title: 作業者の福利厚生の登録および削除
 description: この手順では、1 人の作業者が 1 つ以上の福利厚生に登録する方法、および複数の作業者が 1 つの福利厚生に登録する方法を示します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 36fd724ff27cbb646f3f8a35ca1b30dc86a5afe4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 47e8bf46d3d38cd1b776debb835d53a22e724149
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419290"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805853"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>作業者の福利厚生の登録および削除
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -58,3 +58,6 @@ ms.locfileid: "4419290"
 14. 一覧で、選択された行のリンクをクリックします。
 15. このページは、福利厚生に登録された従業員と、登録されていない従業員を表示することができます。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

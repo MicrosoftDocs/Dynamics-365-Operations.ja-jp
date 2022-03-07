@@ -2,15 +2,12 @@
 title: ソーシャル共有モジュール
 description: このトピックでは、ソーシャル共有モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 2e997cad97d45949c8f542764126a08fb6daa73551079eb2d400d7edfb98ca2b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4413883"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730950"
 ---
 # <a name="social-share-module"></a>ソーシャル共有モジュール
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、ソーシャル共有モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 ソーシャル共有モジュールを使用すると、ユーザーは E コマース サイト ページの URL を Facebook、Twitter、Pinterest、LinkedIn などのソーシャルメディアで共有することができます。 サイトページの URL は、メールを使用して共有することもできます。 ソーシャル共有モジュールは、製品の情報共有でユーザーを支援するために、製品の詳細ページ (PDF) 上で一般に使用されます。
 
@@ -41,7 +36,7 @@ ms.locfileid: "4413883"
 
 次の図は、製品の詳細ページで使用されるソーシャル共有モジュールの例を示しています。
 
-![ソーシャル共有モジュールの例](./media/ecommerce-socialshare.png)
+![ソーシャル共有モジュールの例。](./media/ecommerce-socialshare.png)
 
 ## <a name="social-share-module-properties"></a>ソーシャル共有モジュールのプロパティ
 
@@ -82,3 +77,6 @@ ms.locfileid: "4413883"
 [購入ボックス モジュール](add-buy-box.md)
 
 [Cookie のコンプライアンス](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

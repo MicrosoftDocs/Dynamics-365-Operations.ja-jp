@@ -2,11 +2,9 @@
 title: サービス認証問題のトラブルシューティング
 description: このトピックでは、サービス認証に関する問題を解決するためのヒントをいくつか示します。
 author: nimakms
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afad0e2332b7fd98f3eac1c196ad5bae0451bebd
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f47cddcf9898a275cd0e6f054a99197a1509c41e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685467"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359351"
 ---
 # <a name="troubleshoot-service-authentication-issues"></a>サービス認証問題のトラブルシューティング
 
@@ -54,7 +52,7 @@ ms.locfileid: "4685467"
 
 次の図は、JWT のコンテンツの例を示します。
 
-[![JWT の例](./media/serviceauthenticationtroubleshooting01.png)](./media/serviceauthenticationtroubleshooting01.png)
+[![JWT の例。](./media/serviceauthenticationtroubleshooting01.png)](./media/serviceauthenticationtroubleshooting01.png)
 
 ## <a name="review-the-event-logs"></a>イベント ログを確認
 また、仮想マシン (VM) に対するアクセス権限がある場合、インスタンス マシンのイベント ログを確認することができます。
@@ -75,3 +73,6 @@ ms.locfileid: "4685467"
 
 - JWT の **"aud"** セグメントには、末尾にスラッシュを持つ URI が含まれている可能性があります。 スラッシュを削除する必要があります。
 - JWT の **"aud"** セグメントには、大文字と小文字の間違ったスタイルを使用する URI が含まれている可能性があります。 URI は、すべて小文字であることが必要です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,25 +2,22 @@
 title: チャンルごとの自動請求の有効化とコンフィギュレーション
 description: このトピックでは、Microsoft Dynamics 365 Commerce でチャネルごとに自動請求を有効にしてコンフィギュレーションする方法について説明します。
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 1be07c754e563298d82f6ca54f09ae3aa9118602
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 23d02cf96faf3753303435acc148bf71e487d791
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413731"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799918"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>チャンルごとの自動請求の有効化とコンフィギュレーション
 
@@ -77,7 +74,7 @@ Commerce の組織階層の目的に既定の階層を割り当てるには、�
 
 Commerce でチャネルごとの自動請求を定義にするには、次の手順を実行します。
 
-1.  **売掛金勘定 \> 諸費用の設定 \> 自動請求** に移動します。
+1. **売掛金 \> 諸費用の設定 \> 自動請求** に移動します。
 1. 左ウィンドウの **レベル** フィールドで、業務要件に応じて **ヘッダー** または **明細行** を選択します。
 1. **小売チャネル コード** フィールドで、適切なチャンネル コード (たとえば、**テーブル**、**グループ**) を選択します。 既定の設定の **すべて** が使用されている場合、すべてのチャネルに請求ルールが適用されます。
 
@@ -128,3 +125,6 @@ POS アプリケーションで **トランザクション オプション \> �
 [オムニ チャネルの高度な自動請求](omni-auto-charges.md)
 
 [ヘッダー請求金額を一致する販売明細行に比例配分する](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

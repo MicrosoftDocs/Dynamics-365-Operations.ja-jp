@@ -1,27 +1,25 @@
 ---
 title: 仕入先コラボレーションのモバイル ワークスペース
 description: このトピックでは、[仕入先コラボレーション] モバイル ワークスペースに関する情報を提供します。 このワークスペースでは、仕入先が、承認のために送信された発注書に関する最新の状態を保つことができるようにします。 新規または更新された発注書および連絡先に関する情報を閲覧することもできます。
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: riluan
+ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: efbd0afb0d84f76058b75126af200a9b10197559
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020839"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577027"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>仕入先コラボレーションのモバイル ワークスペース
 
@@ -59,7 +57,7 @@ Web クライアントの仕入先コラボレーション Web インターフ�
 組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Management を使用する場合の前提条件
-Supply Chain Management が組織に配置されている場合、システム管理者は **仕入先コラボレーション** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
+Supply Chain Management が組織に配置されている場合、システム管理者は **仕入先コラボレーション** モバイル ワークスペースを公開する必要があります。 手順については、「[モバイル ワークスペースの公開](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md)」を参照してください。
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム 更新プログラム 3 以降を使用する場合の前提条件
 Microsoft Dynamics 365 for Operations バージョン 1611 およびプラットフォーム更新プログラム 3 以降を組織に配置している場合、システム管理者は次の前提条件を満たす必要があります。 
@@ -79,7 +77,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 <td>プラットフォーム更新プログラム 3 を使用している場合、KB 3216943 はバイナリ更新プログラムです。 この KB を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
 <li>Microsoft Dynamics Lifecycle Services (LCS) からの KB 3216943 のダウンロード</li>
-<li>配置可能パッケージとして配信される、バイナリ更新プログラムをインストールします。 配置可能パッケージを適用する方法についての詳しい情報は、<a href="../../dev-itpro/deployment/apply-deployable-package-system.md">適用可能パッケージ</a>を参照してください。</li>
+<li>配置可能パッケージとして配信される、バイナリ更新プログラムをインストールします。 配置可能パッケージを適用する方法についての詳しい情報は、<a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">適用可能パッケージ</a>を参照してください。</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -87,14 +85,14 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 <td>システム管理者</td>
 <td>KB 4013633 は、<strong>手持ち在庫</strong> モバイル ワークスペースを含む X++ の更新またはメタデータ修正プログラムです。 KB 4013633 を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">LCS からメタデータ修正プログラムのダウンロード</a>。</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">メタデータ修正プログラムをインストールします。</a></li><li><strong>SCMMobile</strong> モデルを含む<a href="../../dev-itpro/deployment/create-apply-deployable-package.md">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">配置可能パッケージを適用します</a>。</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">LCS からメタデータ修正プログラムのダウンロード</a>。</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">メタデータ修正プログラムをインストールします。</a></li><li><strong>SCMMobile</strong> モデルを含む<a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">配置可能パッケージを作成し</a>、配置可能パッケージを LCS にアップロードします。</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">配置可能パッケージを適用します</a>。</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td><strong>仕入先コラボレーション</strong> モバイル ワークスペースを公開する必要があります。</td><td>システム管理者</td>
-<td>「<a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">モバイル ワークスペースの公開</a>」を参照してください。</td>
+<td>「<a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">モバイル ワークスペースの公開</a>」を参照してください。</td>
 </tr>
 <tr class="even">
 <td>仕入先のユーザーは、Web クライアントで仕入先コラボレーション Web インターフェイスにアクセスし、仕入先コラボレーション ユーザーを設定する必要があります。</td><td>購買担当者およびシステム管理者</td>
@@ -122,12 +120,12 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 4.  初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
 5.  サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
-    [![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![プルして更新。](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>仕入先コラボレーションのモバイル ワークスペースを使用します
 **仕入先コラボレーション** ワークスペースを選択すると、次のオプションが表示されます。
 
-![仕入先コラボレーションのモバイル ワークスペース](./media/vendor-collaboration-mobile-app.png)
+![仕入先コラボレーションのモバイル ワークスペース。](./media/vendor-collaboration-mobile-app.png)
 
 **仕入先コラボレーション** ワークスペースには、次のページが含まれます。
 
@@ -169,3 +167,6 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 
 ### <a name="open-confirmed-orders"></a>確認済みのオープン注文
 顧客によって発注書が確認されると、(発注書の状態が **確認済** に変更される)、確定済受注の公開に表示されます。 これは、顧客が受領済に登録されるまでリストに保持されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

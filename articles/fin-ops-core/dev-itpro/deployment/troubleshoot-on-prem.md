@@ -2,26 +2,24 @@
 title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) の配置に対するトラブルシューティング情報を提供します。
 author: PeterRFriis
-manager: AnnBe
-ms.date: 10/29/2020
+ms.date: 11/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: f3ee5620f4cca7a8630a67486a91d174623f8749
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 830a4a84f4dc2df10c426a4700bda92ca81cd8c4
+ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685463"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7894734"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -35,8 +33,8 @@ Service Fabric Explorer には、Web ブラウザーと既定のアドレス `ht
 
 アドレスを確認するには、環境の適切なセットアップおよび配置トピックの「DNS ゾーンの作成と A レコードの追加」セクションで使用されていた値をメモします。
 
-- [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#createdns)
-- [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#createdns)
+- [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#createdns)
+- [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#createdns)
 
 クライアント証明書が、サイトにアクセスするマシンの証明書、cert:\\CurrentUser\\My に含まれている場合のみ、サイトにアクセスできます (証明書マネージャーで、**証明書 - 現在のユーザー** \> **個人** \> **証明書** に移動します。) サイトにアクセスしたとき、メッセージが表示されたら、クライアント証明書を選択します。
 
@@ -83,11 +81,11 @@ Service Fabric Explorer でローカル エージェントなどのステート�
 
 1. イベント ビューアーで **カスタム ビュー** を右クリックして、**カスタム ビューの作成** を選択します。
 
-    ![カスタム表示の作成](media/Create-Custom-View.png)
+    ![カスタム表示を作成します。](media/Create-Custom-View.png)
 
 2. **イベント ログ** フィールドで **Dynamics** を選択します。
 
-    ![Dynamics の選択](media/Select-Dynamics.png)
+    ![Dynamics を選択します。](media/Select-Dynamics.png)
 
 > [!NOTE]
 > また、**カスタム ビュー** で **管理イベント** も確認してください。
@@ -135,14 +133,15 @@ Microsoft Dynamics Lifecycle Services (LCS) で環境のに対する現在の配
 
 該当するセットアップ トピックの "スタンドアロン Service Fabric Cluster のセットアップ" セクションおよび環境の配置トピックに記載されているように Test-D365FOConfiguration.ps1 を実行します。 エラーに注意してください。
 
-- [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#setupsfcluster)
-- [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster)
+- [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#setupsfcluster)
+- [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#setupsfcluster)
+
 
 これらの手順を必ず実行してください。
 
 - すべての Service Fabric ノード上の LocalMachine ストアに Service Fabric Server クライント証明書が存在することを確認します。
 - Service Fabric Server 証明書にすべての Service Fabric ノード上にネットワーク サービス用アクセス制御リスト (ACL) が含まれていることを確認します。
-- [環境設定](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) で記載されているウイルス対策の除外を確認します。
+- [環境設定](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) で記載されているウイルス対策の除外を確認します。
 
 ## <a name="a-time-out-error-occurs-while-youre-waiting-for-installer-service-to-be-completed-for-machine-xxxx"></a>インストーラー サービスがマシン x.x.x.x で完了するのを待つ間にタイムアウト エラーが発生する
 
@@ -230,8 +229,9 @@ Service Fabric クラスターを完全に削除するには、以下の手順�
 
     テンプレートのフィールドに正しく入力する方法については、ご使用の環境に適した設定と配置のトピックを参照してください。
 
-    - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md)
-    - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md)
+    - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md)
+    - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md)
+  
 
 5. LCS でプロジェクトを開き、必要に応じて LCS のオンプレミス コネクタを更新します。
 
@@ -243,8 +243,8 @@ Service Fabric クラスターを完全に削除するには、以下の手順�
 
 6. 環境に適したセットアップと展開のトピックで次の指示に従って、再度展開します。
 
-    - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md)
-    - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md)。
+    - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md)
+    - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md)
 
 ## <a name="find-the-local-agent-values-that-are-used"></a>使用するローカル エージェント値の検索
 
@@ -352,8 +352,8 @@ localagent-configjson ファイルの **コンポーネント** セクション�
 
 3. LCS のローカル エージェント コンフィギュレーションで指定される同じ証明書が、環境に対する適切な設定および配置トピックの「テナント用 LCS 接続の構成」セクションで手順の完了に使用されたことを確認します。
 
-    - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#configurelcs)
-    - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
+    - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#configurelcs)
+    - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#configurelcs)
 
 4. ローカル エージェントをアンインストールします。
 5. ローカル エージェント コンフィギュレーションで正しい証明書を指定し、もう一度コンフィギュレーション ファイルをダウンロードします。
@@ -392,8 +392,8 @@ localagent-configjson ファイルの **コンポーネント** セクション�
 
 3. 適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックが完了したことを確認します。
 
-    - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#setupfile)
-    - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#setupfile)
+    - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#setupfile)
+    - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#setupfile)
 
 4. ローカル エージェントをアンインストールします。
 5. ローカル エージェント コンフィギュレーションで正しいファイル共有指定し、もう一度コンフィギュレーション ファイルをダウンロードします。
@@ -451,7 +451,7 @@ AD DS でユーザーを再作成する場合、SID が変更されることに�
 
 ### <a name="issue"></a>問題点
 
-[データベースを構成する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb) プロシージャを実行するときに SQL Server インスタンスが名前付きインスタンスの場合は、**-DatabaseServer \[FQDN/Instancename\]** パラメーターを使用します。
+[データベースを構成する](setup-deploy-on-premises-pu12.md#configuredb) プロシージャを実行するときに SQL Server インスタンスが名前付きインスタンスの場合は、**-DatabaseServer \[FQDN/Instancename\]** パラメーターを使用します。
 
 ### <a name="issue"></a>問題点
 
@@ -513,7 +513,7 @@ At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
 
 **ステップ:** スクリプトが失敗しているマシンで、**ローカル ユーザーとグループ** を開きます。 管理者グループに移動し、次の画像で強調表示されているようなエントリを持つエントリをすべて削除します。
 
-![無効な SID](media/InvalidSID.png)
+![無効な SID。](media/InvalidSID.png)
 
 このエラーを受け取ったすべてのマシンでこれを実行します。 変更が完了したら、スクリプトを再実行してください。
 
@@ -547,7 +547,7 @@ Windows PowerShell で Service Fabric をアップグレードするにはこれ
 3. アップグレードを開始します。 **-CodePackageVersion** には、最新バージョンを入力します。
 
     > [!NOTE]
-    > **-UpgradeReplicaSetCheckTimeout** は SSRS と Management Reporter の PreUpgradeSafetyCheck をスキップするために使用します。 詳細については、[Service Fabric サービスのアップグレードが動作しない](https://github.com/Azure/service-fabric-issues/issues/595) を参照してください。 **UpgradeDomainTimeoutSec 600 UpgradeTimeoutSec 1800** を使用することもできます。 詳細については、[アプリケーション アップグレード パラメーター](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-parameters) を参照してください。
+    > **-UpgradeReplicaSetCheckTimeout** は SSRS と Management Reporter の PreUpgradeSafetyCheck をスキップするために使用します。 詳細については、[Service Fabric サービスのアップグレードが動作しない](https://github.com/Azure/service-fabric-issues/issues/595) を参照してください。 **UpgradeDomainTimeoutSec 600 UpgradeTimeoutSec 1800** を使用することもできます。 詳細については、[アプリケーション アップグレード パラメーター](/azure/service-fabric/service-fabric-application-upgrade-parameters) を参照してください。
 
     ```powershell
     Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
@@ -559,7 +559,7 @@ Windows PowerShell で Service Fabric をアップグレードするにはこれ
     Get-ServiceFabricClusterUpgrade
     ```
 
-詳細については、[アプリケーション アップグレードのトラブルシューティング](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade-troubleshooting)を参照してください。
+詳細については、[アプリケーション アップグレードのトラブルシューティング](/azure/service-fabric/service-fabric-application-upgrade-troubleshooting)を参照してください。
 
 新しい Service Fabric リリースの時期については、[Azure Service Fabric チームのブログ](https://blogs.msdn.microsoft.com/azureservicefabric/) を参照してください。
 
@@ -579,22 +579,24 @@ Windows PowerShell で Service Fabric をアップグレードするにはこれ
 
 AOS アカウント パスワードを暗号化するために使用されたデータ暗号化証明書がマシンにインストールされていない場合、これらのエラーのいずれかが発生することがあります。 この証明書が証明書 (ローカル コンピューター) に含まれているか、プロバイダーの種類が正しくない可能性があります。
 
-エラーを解決するには、credentials.json ファイルを検証します。 次のコマンドを (AOS1 上で) 入力することにより、テキストが正しく復号化されていることを確認します。
+エラーを解決するには、credentials.json ファイルを検証します。 インフラストラクチャ フォルダーを AOS ノードにコピーします。またはインフラストラクチャ フォルダーがファイル共有に存在する場合は、AOS ノードからスクリプトを実行します。
 
-```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
-```
+1. 次のコマンドを (AOS1 上で) 実行することにより、テキストが正しく復号化されていることを確認します。
 
-このエラーも、**''** パラメーターが ApplicationManifest ファイルで定義されていない場合にも発生させることができます。 イベント ビューアーで、このパラメータが定義されているどうかを確認するには、**カスタム ビュー** \> **管理イベント** の順に移動し、次の情報を確認します。
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
+    ```
 
-- Credentials.json ファイルの資格情報の暗号化には、正しいレイアウト/構造があります。 詳細については、ご使用の環境に適した設定および配置のトピックの「資格情報の暗号化」のセクションを参照してください。
+2. **Credentials.json** ファイルを開き、資格情報が正しいか確認します。
+3. **Credentials.json** ファイルを再暗号化します。
 
-    - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#encryptcred)
-    - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#encryptcred)
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
+    ```
 
-- 決算引用符が線の終わりまたは次の線に表示されます。
+4. いずれかの資格情報の更新が必要な場合は、サービス操作をトリガーする必要があります。 進行中のサービス操作が失敗した場合、[LCS](https://lcs.dynamics.com) から操作を再試行することで資格情報が更新されたことを確認できます。 環境が既に配置済みの状態である場合は、[LCS](https://lcs.dynamics.com) で、SQL Server を更新する環境の **完全な詳細** リンクを選択し、**管理** を選択してから、**更新の設定** を選択します。 設定は変更しないでください。 **準備** を選択し、準備が完了するまで待機してから、**環境の更新** を選択して環境の更新を開始します。
 
-イベント ビューアーの **カスタム ビュー** \> **管理イベント** で、**Microsoft-Service Fabric** ソース カテゴリのエラーに注意します。
+このエラーも、**''** パラメーターが ApplicationManifest ファイルで定義されていない場合にも発生させることができます。 このパラメータが定義されているどうかを確認するには、イベント ビューアーで、**カスタム ビュー** \> **管理イベント** に移動し、**Microsoft-Service Fabric** ソース カテゴリのエラーに注意します。
 
 ## <a name="properties-to-create-a-dataencryption-certificate"></a>DataEncryption 証明書を作成するためのプロパティ
 
@@ -618,12 +620,10 @@ DataEncryption 証明書を作成するのにには、次のプロパティを�
 次のコマンドを使用して暗号化されたテキストを検証することもできます。
 
 ```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
+.\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
 ```
 
 「暗号の解読に使用する証明書と秘密キーを見つけることができません」というメッセージを受信した場合は、axdataenciphermentcert と svc-AXSF$ AXServiceUser ACLs を確認してください。
-
-credentials.json ファイルが変更された場合は、LCS から環境を削除して再配置します。
 
 上記のソリューションのいずれも機能しない場合は、次の手順を実行します。
 
@@ -641,7 +641,7 @@ credentials.json ファイルが変更された場合は、LCS から環境を�
     AOS マシンのいずれかで、データの暗号化証明書が正しいことを確認する次のコマンドを実行します。
 
     ```powershell
-    Invoke-ServiceFabricDecryptText '<encrypted string>' -StoreLocation LocalMachine
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
     ```
 
 7. いずれかの証明書を変更する必要がある場合、もしくは構成が正しくない場合は、次の手順を実行してください:
@@ -649,7 +649,16 @@ credentials.json ファイルが変更された場合は、LCS から環境を�
     1. **ConfigTemplate.xml** ファイルを編集して、正しい値が出るようにします。
     2. すべてのセットアップ スクリプトと **Test-D365FOConfiguration** スクリプトを実行します。
 
-8. LCS で環境を再構成します。
+8. credentials.json ファイルが変更された場合、実行する必要のあるアクションは、LCS の環境ステータスによって異なります:
+
+    - 環境が LCS に配置されている場合は、次の手順に従います:
+
+        1. 環境ページに移動して、**管理** を選択します。
+        1. **更新プログラムの設定** を選択します。
+        1. 設定は変更しないでください。 **準備** を選択します。
+        1. 数分後に、環境が準備され、**配置** を選択できます。
+
+    - LCS で環境が失敗状態の場合は、**再試行** を選択します。 新しい Credentials.json ファイルは、再試行操作中に使用されます。
 
 ## <a name="gateway-fails-to-deploy"></a>ゲートウェイで配置に失敗する
 
@@ -688,13 +697,13 @@ Category does not exist.
 
 ## <a name="management-reporter"></a>Management Reporter
 
-追加のログは、プロバイダーを登録することで実行できます。 [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) を **プライマリ** オーケストレータ マシン にダウンロードし、次のコマンドを実行します。 プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorerで、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。
+プロバイダーを登録することで、追加のログを実行できます。 プロバイダーを登録するには、LCS 共有アセット ライブラリで、資産タイプとして **モデル** を選択してから、**Microsoft Dynamics 365 Finance + Operations (オンプレミス), LBDMRDeployerTroubleshooter** アセットをダウンロードします。 **プライマリ** オーケストレータ マシンにダウンロードされた ZIP ファイルをコピーし、解凍してから、次のコマンドを実行します。 (プライマリ インスタンスであるマシンを判別するには、Service Fabric Explorer で、**クラスター** \> **アプリケーション** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)** の順に展開します。)
 
 > [!NOTE]
 > イベント ビューアーの結果が正しく表示されない場合 (たとえば、単語が切り詰められた場合など)、最新のマニフェストおよび .dll ファイルを取得してください。 最新のマニフェストと .dll ファイルを取得するには、エージェント ファイル共有の WP フォルダに移動します。 この共有は、適切な設定の「ファイル ストレージの設定」セクション、および環境の配置トピックで作成されました。
 > 
-> - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#setupfile)
-> - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#setupfile)
+> - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#setupfile)
+> - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#setupfile)
 > 
 > **例:** \[*エージェント共有*\]\\wp\\\[*配置名*\]\\StandaloneSetup-...\\アプリ\\ ETWManifests
 
@@ -810,7 +819,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 **ステップ:**
 
 1. 既に存在する場合は、データベースから axdbadmin ユーザーを削除します。
-2. **ConfigTemplate.xml** ファイルで、AXDB データベースに追加する必要があるユーザー名を指定してください。
+2. **ConfigTemplate.xml** ファイルで、**userName** 属性を更新することで、AXDB データベースに追加する必要があるユーザー名を指定します。
 
     ```xml
     <Security>
@@ -818,7 +827,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
     </Security>
     ```
 
-3. axdbadmin ユーザーを追加するには、もう一度初期化データベース スクリプトを実行します。
+3. [データベースの構成](./setup-deploy-on-premises-pu41.md#configuredb)の説明に従って、初期化データベース スクリプトを再実行して axdbadmin ユーザーを追加します。
 
 ## <a name="unable-to-resolve-the-xpath-value"></a>xPath 値を解決することができません。
 
@@ -898,7 +907,7 @@ AD FS マシンの、イベント ビューアーで、**アプリケーショ�
 
 ### <a name="fiddler"></a>Fiddler
 
-追加のデバッグには Fiddler を使用することができます。 Fiddler について詳しい情報は、 [AD FS 2.0: Fiddler Web デバッガーを使って WS フェデレーション パッシブ サインインを分析する方法](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx) と [別の AD FS クレーム プロバイダーからの AD FS トークンのクラッキング](https://blogs.technet.microsoft.com/tangent_thoughts/2014/06/04/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider/) をご覧ください。
+追加のデバッグには Fiddler を使用することができます。 Fiddler について詳しい情報は、 [AD FS 2.0: Fiddler Web デバッガーを使って WS フェデレーション パッシブ サインインを分析する方法](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx) と [別の AD FS クレーム プロバイダーからの AD FS トークンのクラッキング](/archive/blogs/tangent_thoughts/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider) をご覧ください。
 
 以下のセクションでは、 Microsoft Dynamics に返される要求に対する重点的なデバッグの手順を示します。
 
@@ -926,12 +935,12 @@ Fiddler の右側のウィンドウには、リクエストとレスポンスが
     > [!IMPORTANT]
     > プライバシー保護のため、状況に応じて個人を特定できる情報を削除してください。
 
-    ![個人情報](media/Scrub-PII.png)
+    ![個人情報。](media/Scrub-PII.png)
 
 6. 次は、結果が **302** 件ある行を選択します。 URL が、 **.../namespaces/AXSF/** となっていることを確認します。
 7. 上記で選択した行に示されているコード行を探してください。 
 
-    ![コード行](media/Note-the-code.png)
+    ![コード行。](media/Note-the-code.png)
 
 8. 等号 (=) の後に表示されているコード値をコピーします。
 9. <https://www.base64decode.org/> に移動し、上記でコピーしたコードを貼り付けます。
@@ -991,8 +1000,8 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 
 キーセットが存在しないことが判明した場合は、スクリプトがすべてのコンピューターで実行されなていなかったことを意味します。 適切な設定の「VM の設定」セクション、および環境の配置トピックを確認し完了します。
 
-- [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#setupvms)
-- [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#setupvms)
+- [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#setupvms)
+- [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#setupvms)
 
 各フォルダ内のスクリプトを、フォルダ名に対応する VM にコピーします。
 
@@ -1044,8 +1053,8 @@ Test-D365FOConfiguration.ps1 を実行時に 「証明書を検出できませ�
 
 クライアントとサーバーが疎通できない場合は双方のアルゴリズムが異なることが原因です。作成した証明書が指定したプロバーダーを使用しているか確認をしてください。これについては"Plan and acquire your certificates" の項目で解説しています。ご利用の環境に応じた適切な設定と配置を行ってください。
 
-- [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#plancert)
-- [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#plancert)
+- [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#plancert)
+- [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#plancert)
 
 ## <a name="find-a-list-of-group-managed-service-accounts"></a>グループ管理サービス アカウント の一覧の検索
 
@@ -1091,16 +1100,16 @@ AOS ユーザーはローカル管理者グループに属しておらず、ユ�
 
 1. 環境の適切な設定および配置トピックの「VMs とドメインを結合」のセクションで説明されているように、ローカル管理者として AOS ユーザーを追加します。
 
-    - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#joindomain)
-    - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#joindomain)
-
+    - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#joindomain)
+    - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#joindomain)
+ 
 2. すべての AOS コンピューターで、**Config-PreReq** スクリプトを実行します。
 3. **テスト構成** スクリプトがパスすることを確認します。
 4. UAC が変更された場合は、変更を有効にする前にマシンを再起動する必要があります。
 
 ## <a name="files-in-use-errors"></a>使用中ファイルのエラー
 
-「ファイルは使用中です」のエラーが発生した場合は、Service Fabric に示されている例外ルールを設定します。 詳細については、[環境設定](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup)を参照してください。
+「ファイルは使用中です」のエラーが発生した場合は、Service Fabric に示されている例外ルールを設定します。 詳細については、[環境設定](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup)を参照してください。
 
 ## <a name="apply-deployable-packages-during-deployment"></a>配置中に配置可能パッケージを適用する
 
@@ -1159,8 +1168,8 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 2. ユーザーの環境での適切なセットアップと配置トピックの「テナントの LCS 接続のコンフィギュレーション」セクションにある手順を実行します。
 
-    - [プラットフォーム update 12](setup-deploy-on-premises-pu12.md#configurelcs)
-    - [プラットフォーム更新プログラム 8 とプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
+    - [プラットフォーム更新 41 以降](setup-deploy-on-premises-pu41.md#configurelcs)
+    - [プラットフォームの更新 12 ~ 40](setup-deploy-on-premises-pu12.md#configurelcs)
 
 3. 新しいテナントに新しい LCS コネクタを作成します。
 4. **local-agent.config** ファイルをダウンロードします。
@@ -1178,31 +1187,50 @@ Microsoft Windows では 260 文字の制限があるため、パッケージの
 
 配備手順の次のセクションをスキップまたは変更することができます。
 
-### <a name="plan-and-acquire-your-certificates-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>証明書の計画と取得 ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#plancert) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#plancert) で記載されたものとして)
+### <a name="plan-and-acquire-your-certificates-as-documented-for-platform-update-42-and-later-or-platform-updates-12-through-40"></a>証明書を計画して取得 ([プラットフォームの更新 42 以降](setup-deploy-on-premises-pu41.md#plancert) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#plancert) で記載されたものとして)
 
 - 同一のオンプレミスのローカル エージェント証明書を使用する必要があります。
 - 同一のスター証明書を使用することができます(AOS SSL および Service Fabric)。
 - 残りの証明書は既存の環境の証明書とは異なる可能性があります。
 
-### <a name="download-setup-scripts-from-lcs-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>LCS からのセットアップ スクリプトのダウンロード ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#downloadscripts) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#downloadscripts) で記載されたものとして)
+### <a name="download-setup-scripts-from-lcs-as-documented-for-platform-update-42-and-later-or-platform-updates-12-through-40"></a>LCS からのセットアップ スクリプトをダウンロード ([プラットフォームの更新 42 以降](setup-deploy-on-premises-pu41.md#downloadscripts) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#downloadscripts) で記載されたものとして)
 
 - ダウンロードしたスクリプトを、新しいフォルダーにコピーする必要があります。
 
-### <a name="set-up-a-standalone-service-fabric-cluster-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#setupsfcluster) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#setupsfcluster) に記載されているように) スタンドアロン Service Fabric クラスタを設定します
+### <a name="set-up-a-standalone-service-fabric-cluster-as-documented-for-platform-update-42-and-later-or-platform-updates-12-through-40"></a>スタンドアロンの Service Fabric Cluster を設定 ([プラットフォームの更新 42 以降](setup-deploy-on-premises-pu41.md#setupsfcluster) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#setupsfcluster) に記載されたものとして)
 
 - ダウンロードしたスクリプトを、新しいフォルダーにコピーする必要があります。
 
-### <a name="configure-lcs-connectivity-for-the-tenant-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>テナント用 LCS 接続 のコンフィギュレーション ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#configurelcs) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs) で記載されたものとして)
+### <a name="configure-lcs-connectivity-for-the-tenant-as-documented-for-platform-update-42-and-later-or-platform-updates-12-through-40"></a>テナントの LCS 接続のコンフィギュレーション ([プラットフォームの更新 42 以降](setup-deploy-on-premises-pu41.md#configurelcs) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#configurelcs) で記載されたものとして)
 
 - テナントに対して、このタスクを 1 回のみ実行する必要があります。
 
-### <a name="configure-ad-fs-as-documented-for-platform-update-12-or-platform-update-8-and-platform-update-11"></a>AD FS のコンフィギュレーション ([プラットフォーム更新プログラム 12](setup-deploy-on-premises-pu12.md#configureadfs) または [プラットフォーム更新プログラム 8 およびプラットフォーム更新プログラム 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs) で記載されたものとして)
+### <a name="configure-ad-fs-as-documented-for-platform-update-42-and-later-or-platform-updates-12-through-40"></a>AD FS のコンフィギュレーション ([プラットフォームの更新 42 以降](setup-deploy-on-premises-pu41.md#configureadfs) または [プラットフォームの更新 12 ~ 40](./setup-deploy-on-premises-pu12.md#configureadfs) で記載されたものとして)
 
 - [複数環境の同じ AD FS インスタンスの再使用](./onprem-reuseadfs.md) ガイドに従って AD FS を構成します。
 
 ## <a name="redeploy-ssrs-reports"></a>SSRS レポートを再配置する
 
-SF.SyncLog のエントリを削除して、AOS マシンの 1 つを再起動します。 AOS コンピューターは DB 同期を再実行し、レポートを配置します。
+#### <a name="version-10013-or-later"></a>バージョン 10.0.13 、またはそれ以降
+
+ビジネス データ データベース (AXDB) に対して次のコマンドを実行します。
+
+```sql
+    UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+```
+
+#### <a name="version-10012-or-earlier"></a>バージョン 10.0.12、または以前
+
+ビジネス データ データベース (AXDB) に対して次のコマンドを実行します。
+
+```sql
+    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CODEPACKAGEVERSION DESC)
+```
+
+>[!NOTE]
+> バージョン 10.0.12、またはそれ以前のバージョンを使用している場合は、データベース全体が同期されます。
+
+コマンドを実行した後、Service Fabric エクスプローラを使用して AOS ノードの 1 つを再起動するか、ノードが実行されている VM を再起動します。
 
 ## <a name="add-axdbadmin-to-tempdb-after-a-sql-server-restart-via-a-stored-procedure"></a>ストアド プロシージャ経由で SQL Server を再起動した後、tempdb に axdbadmin を追加します。
 
@@ -1291,7 +1319,7 @@ Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-0000
 
 ## <a name="odbc-driver-17-is-required-for-platform-updates"></a>プラットフォームの更新には ODBC ドライバー 17 が必要です
 
-プラットフォーム バイナリを最新に更新するには、Open Database Connectivity ODBC ドライバー 17 を使用します。 このアップグレードでは、古いバージョンの ODBC ドライバーに関連する安定性の問題を修正します。 [追加の設定](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) に関するドキュメントが更新されており、次の変更が記載されています。各AOSサーバーにはODBC ドライバー 17 がインストールされている必要があります。 ODBC ドライバー 17 をインストールしない場合は、環境のメンテナンス処理中に DB 同期エラーが表示されます。
+プラットフォーム バイナリを最新に更新するには、Open Database Connectivity ODBC ドライバー 17 を使用します。 このアップグレードでは、古いバージョンの ODBC ドライバーに関連する安定性の問題を修正します。 [追加の設定](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) に関するドキュメントが更新されており、次の変更が記載されています。各AOSサーバーにはODBC ドライバー 17 がインストールされている必要があります。 ODBC ドライバー 17 をインストールしない場合は、環境のメンテナンス処理中に DB 同期エラーが表示されます。
 
 エラーの例を次に示します。
 
@@ -1521,3 +1549,103 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 use master
 GRANT ALTER ANY EVENT SESSION to axdbadmin;
 ```
+
+## <a name="reportingservice-fails-to-start"></a>ReportingService が開始できません
+
+**問題:** 展開中に、ReportingService を開始できません。 イベント ログに表示されるエラーは次のとおりです。
+
+```stacktrace
+Could not load file or assembly 'Microsoft.SqlServer.BatchParser, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type) 
+    at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase) at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+    at Microsoft.SqlServer.Management.Common.ServerConnection.GetStatements(String query, ExecutionTypes executionType, Int32& statementsToReverse)
+    at Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteNonQuery(String sqlCommand, ExecutionTypes executionType)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.ReportsIdentityUpdater.ExecuteSQlScript(String script)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.ReportsIdentityUpdater.CreateReportServerDatabase(String userName, SrsWmi rsconfigSetting)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.ReportsServerInstaller.SetInstanceIdentity(String instanceName, String username)
+    at Microsoft.Dynamics.AX.Framework.Reports.Setup.RunReportsSetup.Execute(String path, String encodedConfigurationValues)
+```
+**理由:** この問題は、正しいバージョンの SSMS がインストールされていないので発生します。 インストールする必要がある SSMS のバージョンは 17.9.1 です。
+
+**解決策:** SSMS バージョン 17.9.1 をインストールします。
+
+## <a name="report-deployment-fails-on-version-10019-and-later"></a>レポートの配置はバージョン 10.0.19 以降で失敗する
+
+**問題:** 配置中にレポートの配置が失敗します。 レポート配置ログに表示されるエラーは次のとおりです。
+
+```stacktrace
+Publish-AXReport : Value cannot be null.
+Parameter name: The value supplied for parameter 'serviceName' cannot be null or empty.
+At C:\ProgramData\SF\AOS12\Fabric\work\Applications\AXSFType_App110\AXSF.Scripts.1.0.20210617153432\Reporting.psm1:492 char:9
++         Publish-AXReport -MaxDegreeOfParallelism 1 -ErrorAction Conti ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ CategoryInfo          : OpenError: (Microsoft.Dynam...shReportCommand:PublishReportCommand) [Publish-AXReport], ArgumentNullException
++ FullyQualifiedErrorId : Value cannot be null.
+Parameter name: The value supplied for parameter 'serviceName' cannot be null or empty.
+Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
+```
+
+**理由:** AOS は BI ノードで実行されているサービスの一覧を取得して、現在インストールされている SSRS のバージョンを探す必要があります。 AOS を実行するアカウントには、サービスの一覧を取得するための適切なアクセス許可が付与されていないので、失敗して serviceName を取得できません。
+
+**解決策:** LCS の共有資産ライブラリから使用できるインフラストラクチャ スクリプトのバージョン 2.11.1 がリリースされ、これらのアクセス許可が反映され、serviceName が取得可能になります。
+
+> [!NOTE]
+> 2.11.0 のインフラストラクチャ スクリプトを使用した場合は、最新バージョンをダウンロードし、次の手順を再度実行します。
+
+#### <a name="automatically-add-these-permissions"></a>次のアクセス許可を自動的に追加します。
+1. LCS の共有アセット ライブラリから最新のインフラストラクチャ スクリプトをダウンロードします。
+1. 必要に応じて ConfigTemplate.xml を移行します。
+1. 管理者特権を持つ PowerShell で次のコマンドを実行します。
+
+    ```powershell
+    .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+    
+1. リモート処理スクリプトを使用しない場合に、生成した VM フォルダを BI ノードにコピーします。
+1. 管理者特権を持つ PowerShell で次のコマンドを実行します。
+
+    ```powershell
+    # If remoting, execute
+    # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
+    .\Complete-PreReqs.ps1
+    ```
+    
+1. 設定を確認するために、管理者特権を持つ PowerShell で次のコマンドを実行します。
+
+    ```powershell
+    # If Remoting, execute
+    # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Test-D365FOConfiguration.ps1
+    ```
+
+> [!IMPORTANT]
+> リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[手順 20. リモート処理が使用された場合、CredSSP を終了処理する](./setup-deploy-on-premises-pu41.md#teardowncredssp) を参照してください。
+
+#### <a name="manually-add-these-permissions"></a>次のアクセス許可を手動で追加します。
+1. BI ノードに移動します。
+1. lusrmgr.msc (ローカル ユーザーとグループ) を開きます。
+1. **Dynamics365ReadServices** という新しいグループを作成します。
+1. (axserviceuser、svc-AXSF$ など) で AOS を実行するアカウントを、上で作成したグループに追加します。
+1. LCS の共有アセット ライブラリから最新のインフラストラクチャ スクリプトをダウンロードします。
+1. インフラストラクチャ スクリプトをBI (SSRS) ノードにコピーします。
+1. 次のコンテンツを含む scmgroups.csv ファイルを作成します。
+
+    ```text
+    "Name"
+    "Dynamics365ReadServices"
+    ```
+    
+1. 管理者特権を持つ PowerShell で次のコマンドを実行します。
+
+    ```powershell
+    .\Set-ServiceControlManagerPermissions.ps1
+    ```
+    
+1. 設定を確認するために、管理者特権を持つ PowerShell で次のコマンドを実行します。
+
+    ```powershell
+    .\Set-ServiceControlManagerPermissions.ps1 -Test
+    ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

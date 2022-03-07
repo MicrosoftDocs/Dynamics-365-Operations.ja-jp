@@ -1,12 +1,10 @@
 ---
 title: 作業指示書のスケジュール
 description: このトピックでは、資産管理でワーク オーダーをスケジュールする方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718062"
 ---
 # <a name="schedule-work-orders"></a>作業指示書のスケジュール
 
@@ -58,7 +56,7 @@ ms.locfileid: "5020232"
 
 *例 :* 次の図では、**開始予定** フィールドに挿入されたフォーミュラは、現在から 1 週間後の開始予定日を持つすべてのワーク オーダーのスケジューリングを生成します。 このフォーミュラは、ワーク オーダーのスケジューリングを継続的に実行する場合に役立ちますが、次の 5-6 日間にスケジュールされたワーク オーダーが再スケジュールされないようにする必要があります。
 
-![図 1](media/03-work-order-scheduling.png)
+![図 1。](media/03-work-order-scheduling.png)
 
 ワーク オーダーに関連したワーク オーダー タイプにより、1 人のメンテナンス作業者のスケジュールを設定できます (**資産管理** > **設定** > **ワーク オーダー** > **ワーク オーダー タイプ** > **1 人のメンテナンス作業者** トグル ボタンを「はい」に設定)。 つまり、ワーク オーダーでワーク オーダー タイプを使用した場合、**1 人のメンテナンス作業者** トグル ボタンは、**すべてのワーク オーダー** の詳細ページ > **ヘッダー** ビュー > **スケジュール** クイック タブで自動的に「はい」に設定されます。 ワーク オーダーのスケジューリング中、ワーク オーダーで作成されるすべてのワーク オーダー ジョブは、その後同じメンテナンス作業者にスケジュールされます。 必要に応じて、**すべてのワーク オーダー** の **1 人のメンテナンス作業者** トグルボタンで選択を編集して、ワーク オーダー ジョブで複数または 1 人の作業者のスケジューリングを許可できます。
 
@@ -137,3 +135,6 @@ ms.locfileid: "5020232"
     - 表示された作業指示を再スケジューリングするには、それを選択して適切な新しい日時にドラッグします。
 
 1. 変更をおこなった場合は、アクション ウィンドウで **保存** を選択して変更を保存します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,35 +2,30 @@
 title: カート モジュール
 description: このトピックでは、カート モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-manager: annbe
-ms.date: 10/20/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: f2db61cf23c217365274297c6e9878a4eb5679f8d9502cb70484372ae43f6b18
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4413910"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716887"
 ---
 # <a name="cart-module"></a>カート モジュール
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、カート モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 カート モジュールでは、顧客がチェックアウトに進む前にカートに追加された品目が表示されます。 モジュールには注文集計も表示され、顧客はプロモーション コードを適用または削除できます。
 
@@ -40,11 +35,11 @@ ms.locfileid: "4413910"
 
 次の図は、Fabrikam のサイトにおける買い物カゴ ページの例を示しています。
 
-![Fabrikam サイトにおける買い物カゴ モジュールの例](./media/cart2.PNG)
+![Fabrikam サイトにおける買い物カゴ モジュールの例。](./media/cart2.PNG)
 
 次の図は、Fabrikam のサイトにおける買い物カゴ ページの例を示しています。 この例では、明細行品目の手数料があります。
 
-![品目に対する取扱手数料がある買い物カゴ モジュールの例](./media/ecommerce-handling-fee.png)
+![品目に対する取扱手数料がある買い物カゴ モジュールの例。](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>カート モジュール プロパティおよびスロット
 
@@ -53,6 +48,7 @@ ms.locfileid: "4413910"
 | ヘッダー | ヘッダー テキストとヘッダー タグ (**H1**、**H2**、**H3**、**H4**、**H5**、または **H6**) | "ショッピング バッグ" や "カート内の品目" などのカートのヘッダー。 |
 | 在庫切れエラーを表示する | **True** または **False** | このプロパティが **True** に設定されている場合、カート ページには在庫関連エラーが表示されます。 サイトに在庫チェックを適用する場合は、このプロパティを **True** に設定することをお勧めします。 |
 | 明細行品目の送料を表示する | **True** または **False** | このプロパティが **True** に設定されていて、この情報が使用可能な場合、カート明細行品目に出荷費用が表示されます。 この機能は、ユーザーがチェックアウト フローでのみ出荷を選択するので、Fabrikam のテーマではサポートされていません。 ただし、該当する場合は、この機能を他のワークフローで有効にすることができます。 |
+| 使用可能なプロモーションの表示| **True** または **False** | このプロパティが **True** に設定されている場合は、カート内の品目に基づいて利用できるプロモーションが表示されます。 この機能は Dynamics 365 Commerce 10.0.16 リリースで使用できます。 |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>カート モジュールで使用できるモジュール
 
@@ -117,3 +113,6 @@ ms.locfileid: "4413910"
 [小売チャンネルの引当可能在庫数量の計算](calculated-inventory-retail-channels.md)
 
 [オンライン機能プロファイルの作成](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

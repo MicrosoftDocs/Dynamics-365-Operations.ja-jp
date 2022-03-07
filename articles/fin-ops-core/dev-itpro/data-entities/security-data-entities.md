@@ -1,12 +1,10 @@
 ---
 title: セキュリティとデータ エンティティ
-description: このトピックでは、データ エンティティのセキュリティについて説明します。 データ エンティティはエントリ ポイント セキュリティをサポートするため、ロール ベースのセキュリティ フレームワークによって制御されます。 データ エンティティのエントリ ポイントを権限および職務にマッピングするモデルは、ターゲット シナリオによって異なります。 したがって、データ エンティティでは、統合モードごとに個別のセキュリティ構成が可能です。
+description: このトピックでは、データ エンティティのセキュリティについて説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2d4a4d29de61dc9df1c303866abb11fa522d0e0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fcf99995d9334be1820444979431ea1924663115
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685237"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749688"
 ---
 # <a name="security-and-data-entities"></a>セキュリティとデータ エンティティ
 
@@ -251,3 +249,6 @@ ms.locfileid: "4685237"
 
 - だれが機密データへのアクセス権を持つかをより簡単に検出することができます。
 - ロールに職務権限と特権の両方を割り当てる場合にのみにロールがアクセス権を取得するので、だれかが誤って機密データへのアクセスできるリスクを軽減できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

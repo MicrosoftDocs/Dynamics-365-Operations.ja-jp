@@ -1,7 +1,7 @@
 ---
 title: 品質管理テスト
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質指示に使用できるテストを作成する方法について説明します。
-author: yufeihuang
+author: rachel-profitt
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: raprofit
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c10b67f86fc29b5e8c08081a9b789d4f42c24cf4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 62e5aca8c41aa324802e83e53f52ea39b623a65882962413e743e6dd2671a901
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573852"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781041"
 ---
 # <a name="quality-management-tests"></a>品質管理テスト
 

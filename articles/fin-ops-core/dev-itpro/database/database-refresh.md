@@ -2,11 +2,9 @@
 title: データベースの更新
 description: このトピックでは、Microsoft Dynamics 365 Finance のデータベースの更新を実行する方法について説明します。
 author: LaneSwenka
-manager: AnnBe
-ms.date: 11/30/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 401d828a1859d5d1629d2bd613aec30bfad0421f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8acbeda194625950132e5d8a99181c50fa8ebe8d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681096"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345583"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -30,6 +28,8 @@ ms.locfileid: "4681096"
 サンドボックス ユーザー受け入れテスト (UAT) 環境に対するデータベースの更新の実行に、Microsoft Dynamics Lifecycle Services (LCS) を使用することができます。 データベースの更新対象となるサンド ボックス UAT 環境に、本番環境のトランザクションおよび財務報告データベースをコピーできます。 別のサンドボックス環境を使用する場合は、その環境から対象のサンドボックス UAT 環境にデータベースをコピーすることもできます。
 
 > [!IMPORTANT]
+> 営業時間中またはピーク時に生産データをコピーすると、生産システムに影響を与える可能性があります。 データベースの更新は、オフピーク時に行い、一度に 1 つの更新操作のみを制限することを強くお勧めします。
+
 > 生産報告を目的としてサンドボックス環境に生産のデータをコピーすることはできません。
 
 ## <a name="self-service-database-refresh"></a>データベースのセルフ サービスエ更新
@@ -56,17 +56,18 @@ ms.locfileid: "4681096"
 * 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
 
 #### <a name="when-refreshing-from-sandbox-environment-to-production-environment"></a>サンドボックス環境から実稼働環境に更新する場合
-これは、[ゴールデン構成プロモーション](/dbmovement-scenario-goldenconfig.md) とも呼ばれます。
+これは、[ゴールデン構成プロモーション](dbmovement-scenario-goldenconfig.md) とも呼ばれます。
 * バッチ ジョブ履歴は、BatchJobHistory、BatchHistory、および BatchConstraintHistory テーブルに格納されています。
 
 #### <a name="these-elements-are-removed-for-all-database-refresh-operations"></a>これらの要素は、すべてのデータベースの更新操作で削除されます
 
 * SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。
-* DocuValue テーブル内のドキュメント添付ファイル。 これらの添付ファイルには、ソース環境で上書きされたすべての Microsoft Office テンプレートが含まれます。
+* Azure Blob Storage に保存されているすべてのファイル。 これには、ドキュメントの添付ファイル (DocuValue テーブルおよび DocuDeletedValue テーブルから)、およびカスタム Microsoft Office テンプレート (DocuTemplate テーブルから) が含まれます。
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
 * 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、sysemailsmtppasswordテーブルの **パスワード** フィールドです。
 * [メンテナンス モード](../sysadmin/maintenance-mode.md) 設定は、ソースで有効になっていた場合でも無効になります。
+* 二重書き込みの構成。  この操作に成功した後にターゲット環境に新しいリンクを設定するには、[二重書き込み環境リンク](../data-entities/dual-write/link-your-environment.md)を参照してください。
 
 これらの要素は、環境固有のものであるためコピーされません。 この例には、BatchServerConfigおよびSysCorpNetPrintersの各レコードが含まれます。 その他の要素は、サポート チケットのデータ量が多くなる懸念があるためコピーされません。 たとえば、簡易メール転送プロトコル (SMTP) はUAT環境でも有効になっているため、重複する電子メールが送信されてしまう可能性があります。また、バッチジョブも有効になっているため、無効な統合メッセージが送信されてしまう可能性もあるため、管理者がポストリフレッシュクリーンアップを行う前にユーザーが有効化されてしまう可能性があります。
 
@@ -83,7 +84,7 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 - 更新処理では、実行対象のデータベースで削除が実行されます。
 - ターゲット環境は、データベースのコピーがターゲット サーバーに達するまで使用可能です。 その時点以降は、更新プロセスが完了するまで、ターゲット環境はオフラインになります。
 - リフレッシュは、アプリケーションおよび Financial Reporting データベースにのみ影響します。
-- Azure blob storage のドキュメントは、ある環境から別の環境にコピーされません。 つまり、添付されたドキュメント処理ドキュメントとチームプレートは変更されず、現在の状態にとどまります。
+-  ある環境から別の環境に、**Azure Blob Storage に保管してあるファイルはコピー** されません。 これには、**ドキュメントの添付ファイルやカスタム Microsoft Office テンプレート** が含まれます。 これらのドキュメントは変更されず、現在の状態のままになります。 
 - 管理者ユーザー、およびその他の内部サービス ユーザー アカウントを除くすべてのユーザーは使用できなくなります。 このプロセスにより、ほかのユーザーがシステムに復帰する前に管理者ユーザーがデータを削除または難読化できます。
 - 管理者ユーザーは、特定のサービスまたは URL に統合エンドポイントを再接続するなど、必要な構成の変更を加える必要があります。
 - 定期的なインポートおよびエクスポート ジョブを持つすべてのデータ管理フレームワークは完全に処理され復元が開始される前にターゲット システムで停止する必要があります。 さらに、すべての定期的なインポートおよびエクスポート ジョブが完全に処理された後に、データベースをソースから選択することをお勧めします。 これにより、いずれかのシステムから Azure ストレージにオーファン ファイルが存在しないことが保証されます。 これは、データベースがターゲット環境にリストアされた後にオーファン ファイルを処理できないため重要です。 復元後、統合ジョブを再開することができます。
@@ -124,3 +125,6 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 新しいアプリケーション バージョンにサンドボックス UAT 環境をアップグレードする場合 (たとえば、7.3 から 8.1)、必ずアップグレードを開始する前にデータベースの更新アクションを実行してください。 サンドボックスが新しいバージョンにアップグレードされると、サンドボックス UAT 環境に古い実稼働環境データベースを復元することはできません。
 
 逆に、実稼働環境がターゲット サンドボックスよりも新しい場合、更新前にターゲット サンドボックスをアップグレードするか、更新の実行前にそのまま割り当て解除、削除、および再展開する必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

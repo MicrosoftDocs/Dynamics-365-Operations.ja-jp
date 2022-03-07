@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, WMSJournalTable, WMSJournalCreate, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 940fa33b10c5f60f469187b11dd066091581996f
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3edf84135e675b6259972327f80c9b6a91821139
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432295"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254170"
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-an-item-arrival-journal"></a>品目を使用して、基本倉庫が有効な品目の品目を着荷仕訳帳登録します。
 
@@ -58,3 +57,6 @@ ms.locfileid: "4432295"
 2. [製品受領書] をクリックします。
 3. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: OMLegalEntity, LogisticsPostalAddress, SysLookupMultiSelectGrid, LogisticsAddressCityLookup, AssetLocation, AssetLocationEdit_JP, AssetGroup, AssetTable, LedgerJournalTable, LedgerJournalTransAsset, DefaultDashboard
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c09e9817ccb399300455c06e70454f0567437d47
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 89a2b72fe0e5cdf22408cb404ad909e635fd53fc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408169"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997452"
 ---
 # <a name="jp-00027-form-26-for-depreciable-tax-declaration"></a>JP-00027 減価償却税申告のフォーム 26
 

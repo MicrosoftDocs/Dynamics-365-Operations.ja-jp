@@ -2,11 +2,9 @@
 title: アウトバウンド ソーティング
 description: このトピックは、アウトバウンド ソーティングに関する情報を提供します。 この機能を使用すると、小さなコンテナーの処理が容易になり、倉庫の従業員がトラックのパレット容量をより効率的に計画および整理できるようになります。
 author: Mirzaab
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 2b0049269b69c0777420b3ecd9b1f649c4a1ab11
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3c576209a86f776ac424f7fb9f2b606bea774a67
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963413"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828397"
 ---
 # <a name="outbound-sorting"></a>アウトバウンド ソーティング
 
@@ -666,3 +664,6 @@ ms.locfileid: "4963413"
     作業が完了しました。
 
 この時点から先は、その他のすべての倉庫プロセスが適用されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

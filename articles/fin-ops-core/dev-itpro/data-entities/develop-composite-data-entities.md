@@ -2,11 +2,9 @@
 title: 複合データ エンティティの開発
 description: 複合エンティティは、相互に関連する複数のエンティティを利用して単一のエンティティを構築できる概念です。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47b49c3f4cfd1082bb69615a7a173ad209194ea6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 639aba7d3daa13f9981e8c3ab5a4bfff7b141ec2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685683"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748657"
 ---
 # <a name="develop-composite-data-entities"></a>複合データ エンティティの開発
 
@@ -164,3 +162,6 @@ DIXF 標準プロセスからの通常のエンティティとして、データ
     - このファイルは初期マッピングにのみ使用します。
     - マッピングに成功したら、明細行データがエンティティに含まれていない実際のファイルをインポートします。 再インポートを使用するか、新しいファイルをアップロードします。
     - レコードの有効性に応じて、部分データ (空の子レコード) を含むファイルをインポートする必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

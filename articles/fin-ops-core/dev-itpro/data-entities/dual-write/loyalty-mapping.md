@@ -2,28 +2,19 @@
 title: 顧客ロイヤルティ カードと報酬ポイント
 description: このトピックでは、二重書き込みでの顧客ロイヤルティ カードと報酬ポイントに関するデータの統合について説明します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/10/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: 28872e9510394cf3d5cee151798d4130b8b6fe27
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 919ce0d57fb306b39cdcdd8655ac9f0b9e26847e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683501"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781667"
 ---
 # <a name="customer-loyalty-cards-and-reward-points"></a>顧客ロイヤルティ カードと報酬ポイント
 
@@ -35,13 +26,10 @@ ms.locfileid: "4683501"
 
 ## <a name="templates"></a>テンプレート
 
-| Finance and Operations アプリ | Dynamics 365 のモデル駆動型アプリ | 説明 |
+Finance and Operations アプリ | Customer Engagement アプリ     | 説明
 |-----------------------------|-----------------------------------|-------------|
-| ロイヤルティ カード                | msdyn\_loyaltycards               | このテンプレートは、顧客のロイヤリティ カードに関する情報を同期します。 |
-| ロイヤルティ報酬ポイント       | msdyn\_loyaltyrewardpoints        | このテンプレートは、顧客の報酬ポイントに関する情報を同期します。 |
+[ロイヤルティ カード](mapping-reference.md#149) | msdyn_loyaltycards | このテンプレートは、顧客のロイヤリティ カードに関する情報を同期します。 |
+[ロイヤルティ レベル](mapping-reference.md#226) | msdyn_loyaltylevels | このテンプレートは、顧客の報酬ポイントに関する情報を同期します。 |
+[ロイヤルティ報酬ポイント](mapping-reference.md#150) | msdyn_loyaltyrewardpoints | |
 
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
-
-[!include [mapping reward points](includes/LoyaltyRewardPoints-msdyn-loyaltyrewardpoints.md)]
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

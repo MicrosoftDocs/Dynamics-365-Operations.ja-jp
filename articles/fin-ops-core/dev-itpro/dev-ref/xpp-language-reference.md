@@ -2,25 +2,20 @@
 title: X++ 言語リファレンス
 description: このトピックでは、X++ のプログラミング ガイドを提供します。
 author: RobinARH
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
+ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: ''
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
+ms.custom: intro-internal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74dc5f3e1531a886c1eabbe11d07b1de9614b463
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 034b1383f49293bd41c9b57f110b472b45d5e2f8
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408687"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968825"
 ---
 # <a name="x-language-reference"></a>X++ 言語リファレンス
 
@@ -39,18 +34,40 @@ X++ は、エンタープライズ リソース プランニング (ERP) プロ�
 | ファイルの操作    | ファイル入力および出力はサポートされており、XML 構築および解析を含みます。 |
 | 取立          | 動的配列はサポートされ、X++ にはいくつかのコレクション オブジェクトが含まれています。|
 
-X++ 言語プログラミング ガイドは、以下のセクションに分かれています。 
+## <a name="x-compiles-to-microsoft-net-cil-common-intermediate-language"></a>X++ コンパイルから Microsoft .NET CIL (共通中間言語)
+
+X++ ソース コードは Microsoft .NET CIL (共通中間言語) にコンパイルされます。 CIL は C\# および Visual Basic の .NETコンパイラ が生成するものです。 CIL にコンパイルする利点は次のとおりです。
+
++ コードは、以前のバージョン (AX2012 以前) よりも高速に動作します。
++ アプリケーション ロジックを他の管理言語で簡単に記述し、そのロジックを X++ アプリに統合した方が簡単です。
++ X++ アプリでは、他の .NET アセンブリ DLL ファイルで使用できるクラスを効率的に参照できます。
++ CIL は多数の .NET ツールで操作できます。
+
+標準のコンパイル ユニットは、他の .NET 言語と同じです。 モデル要素 (クラス、フォーム、クエリなど) で任意のメソッドがコンパイルに失敗すると、すべてのコンパイルが失敗します。
+
+以前のバージョン (AX2012 以前) からコードをアップグレードする場合は、不要になったために `Global::runClassMethodIL` などの CIL ヘルパーのメソッドが削除されていることに注意してください。
+
+詳細については、[「マネージド コード」とは何ですか?](/dotnet/standard/managed-code) を参照してください。
+
+### <a name="the-ignore-list"></a>Ignore リスト
+
+アセンブリは正常に行われたコンパイルから生成され、ランタイム システムは未完了の組み立てを読み込むことができません。 レガシ アプリケーションを移植する場合、段階的なやり方で実行することが有益であり、すべてを移植する前にアプリケーションの一部をテストする必要のあるシナリオがあります。 これはこの非常に限定されたシナリオでは役立ちますが、システムが展開された後は、実行時に発生する問題を隠してしまう可能性があるため、アプリケーションの生産準備ができた後は使用すべきではありません。 X++ コードの一部を無視するために、プロジェクトのコンテキスト メニューを「ベスト プラクティスの抑制を編集する」を選択することで XML でメソッドを指定できます。 これにより、除外項目を管理する XML ドキュメントが開きます。
+
+## <a name="concepts"></a>概念
+
+X++ 言語のプログラミング リファレンスは、以下のセクションに分かれています。
 
 + [変数とデータ型](xpp-variables-data-types.md)
 + [ステートメント、ループ、および例外処理](xpp-conditional.md)
-+ [演算子](xpp-operators.md) 
-+ [クラスおよびメソッド](xpp-classes-methods.md) 
++ [演算子](xpp-operators.md)
++ [クラスおよびメソッド](xpp-classes-methods.md)
 + [データの選択と操作](xpp-data/xpp-data-home-page.md)
-+ [マクロ](xpp-macros.md) 
-+ [属性クラス](xpp-attribute-classes.md) 
++ [マクロ](xpp-macros.md)
++ [属性クラス](xpp-attribute-classes.md)
 
 ## <a name="additional-resources"></a>追加リソース
+
 + [X++ 構文](xpp-syntax.md)
 + [X++ と C# の比較](xpp-cs-comparison.md)
 
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

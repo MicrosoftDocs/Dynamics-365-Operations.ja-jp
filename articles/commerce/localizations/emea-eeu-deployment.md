@@ -2,11 +2,9 @@
 title: チェコ共和国、ハンガリー、およびポーランドの事前請求書レポート印刷の配置ガイドライン
 description: このトピックでは、チェコ共和国、ハンガリー、およびポーランドで POS から事前請求書の印刷を有効にするコマース コンポーネントの拡張機能を作成する方法について説明します。
 author: anmukh
-manager: ezubov
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: anmukh
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 9717c4cdd9aeaeb5e81f40b9696707e49fcbec7a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3f857b5e3b1a123d7c96ec66b462cd3b1a1f43bc8c350b52b13d8ec3e7facd63
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964960"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719918"
 ---
 # <a name="deployment-guidelines-for-advance-invoice-report-printing-for-czech-republic-hungary-and-poland"></a>チェコ共和国、ハンガリー、およびポーランドの事前請求書レポート印刷の配置ガイドライン
 
@@ -111,3 +109,6 @@ ms.locfileid: "4964960"
 
 3. Retail SDK で **msbuild** を実行し、配置可能なパッケージを作成します。
 4. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

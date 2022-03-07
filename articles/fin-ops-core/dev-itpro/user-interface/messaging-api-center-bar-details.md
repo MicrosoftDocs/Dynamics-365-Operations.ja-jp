@@ -2,11 +2,9 @@
 title: メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 description: このトピックでは、メッセージング システムについて説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5217b03373a8ee7150de31301fc8e3c695499d86
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a37a4792ed44420a5cf380c4343933385e3aa83b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683949"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749602"
 ---
 # <a name="messaging-apis---action-center-message-bar-and-message-details"></a>メッセージング API - アクション センター、メッセージ バー、メッセージ詳細
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Finance and Operations アプリのメッセージング システムについて、特にメッセージを作成してエンド ユーザーにルーティングするために使用されるアプリケーション プログラミング インターフェイス (API) の観点から、説明します。  
 
@@ -135,3 +132,6 @@ SystemNotificationsManager::AddNotification(notification);
 ## <a name="additional-resources"></a>追加リソース
 
 [ユーザー インターフェイス開発のホーム ページ](user-interface-development-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,40 +2,36 @@
 title: 顧客との仕入先コラボレーション
 description: このトピックでは、仕入先コラボレーションを使用して発注書を処理し委託販売在庫を監視する方法について説明します。
 author: TaylorVH
-manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dc97b230f23056db90e654b4aea3272bb8f1ba13
-ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
+ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
+ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654343"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8022977"
 ---
 # <a name="vendor-collaboration-with-customers"></a>顧客との仕入先コラボレーション
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management で仕入先コラボレーションを使用して顧客に対応する方法について説明します。 仕入先は、以下のワークスペースから一連のビジネス プロセスを完了できます。
 
 - **発注書の確認** – 発注書 (PO) を監視し対応します。
 - **仕入先の入札** – 見積依頼 (RFQ) を表示し、入札を入力することによってそれらに対応します。
 - **仕入先情報** – 仕入先マスター データを表示および更新します。
-- **請求** – 請求書を処理します。 このトピックでは **請求** ワークスペースについてカバーしていません。 このワークスペースに関する詳細については次を参照してください。[仕入先コラボレーションの請求ワークスペース](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
+- **請求** – 請求書を処理します。 このトピックでは **請求** ワークスペースについてカバーしていません。 このワークスペースに関する詳細については次を参照してください。[仕入先コラボレーションの請求ワークスペース](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 仕入先は、委託販売在庫に関する情報を監視することもできます。
 
@@ -82,7 +78,7 @@ ms.locfileid: "4654343"
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>仕入先入札ワークスペースでの RFQ に関する作業
 
-**仕入先入札** ワークスペースで、応答するよう招待された会社の見積依頼 (RFQ) を確認することができます。 RFQ に応答することもできます。 
+**仕入先入札** ワークスペースで、応答するよう招待された会社の見積依頼 (RFQ) を確認することができます。 RFQ に応答することもできます。
 
 ワークスペースは、失注または受注したすべての RFQ も表示します。 さらに、システムは公的機関用にコンフィギュレーションされ、ワークスペースは公開されている RFQ を表示します。
 
@@ -104,9 +100,17 @@ ms.locfileid: "4654343"
 
 - **見積の公開済依頼を開く** リンクを選択して、公開されている未処理の RFQ の一覧を確認します。 未処理の RFQ は、有効期限がまだ切れていない RFQ です。 RFQ のヘッダーで、有効期限の日付および時刻が表示されます。
 
-    入札するよう招待された場合、**新しい入札の招待** ページで同じ RFQ を見つけることができます。 場合によっては、未処理の RFQ に入札したいかもしれませんが、入札するよう招待されていません。 この場合、顧客が RFQ ケースの自己招待を有効にして、自分で自身を招待することができます。
+    入札するよう招待された場合、**新しい入札の招待** ページで同じ RFQ を見つけることができます。 場合によっては、未処理の RFQ に入札したいかもしれませんが、入札するよう招待されていません。 この場合、顧客が RFQ ケースの自己招待を有効にして、自分で自身を招待することができます。 
 
-    **見積の公開済依頼を開くリンクをタイルとして表示する** 機能をオンにすることで、**見積の公開済依頼を開く** リンクのアクセシビリティを強化します。 この機能は、リンクをタイルに変換して目立つ場所に移動し、見つけやすいようにします。
+    **新しい入札案内** ページでは、開いている RFQ を表示し、承認済の調達カテゴリに一致する明細行を識別するためのフィルタを表示できます。 このフィルタを使用するには、システムで *仕入先が調達カテゴリ別に RFQ を検索できるようにする* 機能を有効にする必要があります。 管理者は、**機能の管理** ワークスペースを使用して、この機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、そこで次のように一覧表示されます。
+
+    - **モジュール:** *買掛金勘定*
+    - **機能名:** *仕入先が調達カテゴリ別に RFQ を検索できるようにする* <!-- KFM: I don't see this here, is this right? -->
+
+    *見積の公開済依頼を開くリンクをタイルとして表示する* 機能をオンにすることで、**見積の公開済依頼を開く** リンクのアクセシビリティを強化します。 この機能は、リンクをタイルに変換して目立つ場所に移動し、見つけやすいようにします。 管理者は、**機能の管理** ワークスペースを使用して、この機能の状態を確認し、必要に応じて有効にすることができます。 Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。この機能は、次の方法で一覧表示されます。
+
+    - **モジュール:** *調達*
+    - **機能名:** *"公開済見積依頼を開く" リンクをタイルとして表示する*
 
 - **終了した公開済見積依頼** リンクを選択して、公開されている終了した RFQ の一覧を確認します。 終了した RFQ は、期限切れの RFQ です。 RFQ のヘッダーで、有効期限の日付および時刻が表示されます。
 
@@ -147,3 +151,6 @@ RFQ が修正された場合は、新しい入札を入力する必要があり�
 ## <a name="additional-resources"></a>その他のリソース
 
 [仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,29 +1,26 @@
 ---
 title: サービス合意とプロジェクトの統合
 description: サービス合意およびサービス合意項目を操作する場合、プロジェクト管理と会計の領域で設定するデータを使用します。
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 578e4b9fe5ef487e999fd0de28d7566bad21fd89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a43a8bab6a5e5ea527f4a062feea79b4313cb56f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432182"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578803"
 ---
 # <a name="integration-for-service-agreements-and-projects"></a>サービス合意とプロジェクトの統合 
 
@@ -83,3 +80,6 @@ ms.locfileid: "4432182"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

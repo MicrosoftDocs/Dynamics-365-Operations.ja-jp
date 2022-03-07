@@ -2,11 +2,9 @@
 title: 構成マネージャーの設定
 description: このトピックでは、構成マネージャーの設定方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 69a48d5fa6368150b51e20392db6e286f60bee0f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 70fb8448241eff111d38e65e675eb04b96619a168699ebfa6cd90a83ed4a1b7b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745850"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 
@@ -33,8 +31,8 @@ ms.locfileid: "4681062"
 ## <a name="before-you-begin"></a>準備
 開始する前に、環境には次のコンポーネントが含まれている必要があります。
 
-- 業務に合わせてコンフィギュレーションされた実行中の AX 2012 R3 のバージョン。 AX 2012 R3 のインストール方法の詳細については、[Microsoft Dynamics AX 2012 のインストール](https://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx)を参照してください。
-- 実行中のデータのインポート/エクスポート フレームワークのインスタンス。 データのインポート/エクスポート フレームワークをインストールする方法の詳細については、[データのインポート/エクスポート フレームワークをインストール (AX 2012 R#)](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/install-the-data-import-export-framework-ax-2012-r3) を参照してください。 
+- 業務に合わせてコンフィギュレーションされた実行中の AX 2012 R3 のバージョン。 AX 2012 R3 のインストール方法の詳細については、[Microsoft Dynamics AX 2012 のインストール](/dynamicsax-2012/appuser-itpro/install-microsoft-dynamics-ax-2012)を参照してください。
+- 実行中のデータのインポート/エクスポート フレームワークのインスタンス。 データのインポート/エクスポート フレームワークをインストールする方法の詳細については、[データのインポート/エクスポート フレームワークをインストール (AX 2012 R#)](/dynamicsax-2012/appuser-itpro/install-the-data-import-export-framework-ax-2012-r3) を参照してください。 
 
     > [!IMPORTANT]
     > データのインポート/エクスポート フレームワークへ接続するためには、構成マネージャー (ベータ) を有効にする DMFEntityExecutionStatusService および DMFService サービス グループを配置する必要があります。
@@ -77,7 +75,7 @@ ms.locfileid: "4681062"
    |     <strong>言語ロケール</strong>      |     EN-US      |
    | <strong>複数値の区切り</strong> |       ;        |
 
-   ![構成マネージャーの DIXF 設定](./media/dixfconfigurationmanager.png)
+   ![構成マネージャーの DIXF 設定。](./media/dixfconfigurationmanager.png)
 
 5. 構成のインポート先の環境で、この手順を繰り返します。
 
@@ -123,7 +121,7 @@ ms.locfileid: "4681062"
     </tbody>
     </table>
 
-    ![構成マネージャーのシステム診断の検出](./media/systemdiagnosticconfigurationmanagerdiscoverysettings.png)
+    ![構成マネージャーのシステム診断の検出。](./media/systemdiagnosticconfigurationmanagerdiscoverysettings.png)
 
 5.  構成のインポート先の環境で、この手順を繰り返します。
 
@@ -132,3 +130,6 @@ ms.locfileid: "4681062"
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

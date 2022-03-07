@@ -2,16 +2,13 @@
 title: 販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
 description: このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に販売見積ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: a39b6b5fff88a02b71d81fd870e8c92ab055bc4d257e14c9b84cac0deac2c5c8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771326"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>販売見積のヘッダーおよび明細行の Sales から Supply Chain Management への直接同期
 
@@ -35,13 +32,13 @@ ms.locfileid: "4527341"
 このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に販売見積ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
 > [!NOTE]
-> 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
+> 見込顧客を現金化するソリューションを使用する前に、[Microsoft Dataverse for Apps へデータを統合](/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
 
 ## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
 
 見込み客の現金化ソリューションは、Supply Chain Management と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートにより、Supply Chain Management と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れが可能になります。 次の図は、Supply Chain Management と Sales の間でデータを同期させる方法を示しています。
 
-[![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![見込み客の現金化へのデータフロー。](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>テンプレートおよびタスク
 
@@ -63,8 +60,8 @@ Sales から Supply Chain Management への販売見積ヘッダーと明細行�
 
 | 販売注文        | サプライ チェーン マネジメント     |
 |--------------|----------------------------|
-| 引用       | CDS 販売見積ヘッダー |
-| QuoteDetails | CDS 販売見積明細行  |
+| 引用       | Dataverse 販売見積もりのヘッダー |
+| QuoteDetails | Dataverse 販売見積明細行  |
 
 ## <a name="entity-flow"></a>エンティティのフロー
 
@@ -133,13 +130,16 @@ Sales では、値が Supply Chain Management に同期されていないため�
 
 ### <a name="quoteheader"></a>QuoteHeader
 
-![データ インテグレーターでテンプレートのマッピング](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
+![データ インテグレーターのテンプレート マッピング。](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="quoteline"></a>QuoteLine
 
-![データ インテグレーターでテンプレートのマッピング](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
+![データ インテグレーターのテンプレート マッピング。](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
 
 ## <a name="related-topics"></a>関連トピック
 
-[見込顧客を現金化](prospect-to-cash.md)
+[見込顧客の現金化](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

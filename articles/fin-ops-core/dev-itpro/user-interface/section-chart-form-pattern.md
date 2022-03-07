@@ -1,27 +1,25 @@
 ---
 title: セクション グラフのフォーム パターン
-description: このトピックでは、セクション グラフのフォーム パターンに関する情報を提供します。 このパターンは主に、作業ワークスペース パターンと組み合わせて使用されます。特に、チャート コントロールを含むフォームに使用されます。
+description: このトピックでは、セクション グラフのフォーム パターンに関する情報を提供します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 29271
 ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a87882348e357b7350eb35897fa87833161ec4e7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0d8a832fb74a1bcb3a41a04b301e5fcbacc3a995
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683935"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783120"
 ---
 # <a name="section-chart-form-pattern"></a>セクション グラフのフォーム パターン
 
@@ -29,13 +27,12 @@ ms.locfileid: "4683935"
 
 このトピックでは、セクション グラフのフォーム パターンに関する情報を提供します。 このパターンは主に、作業ワークスペース パターンと組み合わせて使用されます。特に、チャート コントロールを含むフォームに使用されます。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 セクション グラフ フォーム パターンは、主に運用ワークスペース パターンと組み合わせて使用することを意図しています。 具体的には、グラフ セクションまたは集計セクションに、グラフが含まれるフォームをポイントするフォーム パーツ コントロールが含まれます。 これらの参照されるフォームは、セクション グラフ パターンを使用することを意図しています。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![セクション グラフのフォーム パターンのワイヤーフレーム](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
+[![セクション グラフのフォーム パターンのワイヤーフレーム。](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
 
 ## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations 用のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
@@ -63,7 +60,7 @@ ms.locfileid: "4683935"
 ## <a name="examples"></a>例
 フォーム: **FmBiChartPart\_VehicleByModel** (**すべてのワークスペース** &gt; **予約管理** (**統計** セクションを参照してください) 
 
-[![セクション グラフのフォーム パターンの例](./media/sectionchartexample.png)](./media/sectionchartexample.png)
+[![セクション グラフのフォーム パターンの例。](./media/sectionchartexample.png)](./media/sectionchartexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -73,3 +70,6 @@ ms.locfileid: "4683935"
 ### <a name="open-issues"></a>未処理の問題
 
 None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

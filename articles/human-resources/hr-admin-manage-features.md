@@ -1,37 +1,39 @@
 ---
-title: 機能の管理
-description: Dynamics 365 Human Resources で新機能をオンまたはオフにする方法について説明します。
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: Human Resources の機能を管理する
+description: このトピックでは、機能管理の機能および使用方法について説明します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2d5a27c02df841dfbb17a9375aaf75f93d05cd8e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419411"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069710"
 ---
-# <a name="manage-features"></a>機能の管理
+# <a name="manage-features-in-human-resources"></a>Human Resources の機能を管理する
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources の新機能の継続的なロールアウトの一環として、お客様にできるだけ早く新しい機能を体験していただきたいと思います。 一般公開される準備がほぼ整っており、広範なテストを経たプレビュー機能を提供します。 一般提供にリリースする前に、顧客フィードバックおよび検証の最終ラウンドを探しています。
 
-Human Resources の新機能に関する詳細は、[Human Resources の新機能](hr-admin-whats-new.md) および [Dynamics 365 と Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1) を参照してください。
+Human Resources の新機能に関する詳細は、[Human Resources の新機能](hr-admin-whats-new.md) および [Dynamics 365 と Power Platform リリース プラン](/dynamics365/release-plans/?panel=products1#pivot=products) を参照してください。
 
-**機能管理** ワークスペースでは、各リリースで可能になる機能の一覧を表示できます。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 機能管理の詳細については [機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
+**機能管理** ワークスペースでは、各リリースで可能になる機能の一覧を表示できます。 既定では、新機能が無効になっています。 ワークスペースを使用してそれらを有効にし、それらのドキュメントを参照できます。 機能管理の詳細については [機能管理の概要](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 
 すべての新機能は少なくとも 30 日間、通常は 30-60 日間、プレビューのままになります。 主な機能は、通常、プレビュー期間に従って毎年 10 月と 4 月に使用可能です。 **機能管理** ワークスペースに新しい機能が表示されたら、すぐにそれらをオンにすることができます。 一部の機能は既定でオンになっている場合があります。
 
@@ -70,7 +72,7 @@ Human Resources の新機能に関する詳細は、[Human Resources の新機�
 - **給付金の適格性ポリシー**
 - **適格性イベント**
 
-これらのフォームの情報は、読み取り専用モードで表示できます。 情報を編集する場合は、まず福利厚生の管理を無効にする必要があります (**サンドボックス** 環境にのみ適用)。
+これらのページの情報は、読み取り専用モードで表示できます。 情報を編集する場合は、まず福利厚生の管理を無効にする必要があります (**サンドボックス** 環境にのみ適用)。
 
 ## <a name="enable-or-disable-leave-and-absence"></a>休暇および欠勤の有効化または無効化
 
@@ -93,4 +95,6 @@ Human Resources の新機能に関する詳細は、[Human Resources の新機�
 ## <a name="see-also"></a>参照
 
 - [Human Resources の新機能](hr-admin-whats-new.md)
-- [Dynamics 365 および Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [Dynamics 365 および Power Platform リリース プラン](/dynamics365/release-plans/?panel=products1#pivot=products)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,26 +2,24 @@
 title: 拡張データ型
 description: このトピックでは、拡張データ型 (EDT) について説明します。
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 7a31ecfaaddfd29b82ffa87aca3c4eb3cf64f495
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0bee6c226a87629462ff920a7231c41a1465f628
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409245"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782455"
 ---
 # <a name="extended-data-types"></a>拡張データ型
 [!include [banner](../includes/banner.md)]
@@ -56,3 +54,6 @@ ms.locfileid: "4409245"
 
 + 暗黙的またはハードコードされた四捨五入が発生しないように、すべての切り捨てロジックでは、EDT で指定されている小数点以下の桁数が受け入れられます。
 + この値は、四捨五入が正しく処理されないその他の互換性のない EDT には割り当てられません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

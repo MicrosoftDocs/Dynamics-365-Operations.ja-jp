@@ -2,28 +2,27 @@
 title: 作業者への貸与品目
 description: この手順では、作業者へ品目を貸与する方法および作業者が品目を返品するのを記録する方法を示します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmPersonLoan, HcmPersonLookup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9a80f5ebca69d1dc6c286367edfe81f21a7bc9e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 09ed853cb4e937632015007886676542816094011aec8db87f89fdec3ad7f102
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419360"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734478"
 ---
 # <a name="loan-item-to-a-worker"></a>作業者への貸与品目
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -44,3 +43,6 @@ ms.locfileid: "4419360"
 2. [編集] をクリックします。
 3. [実際の返却日] フィールドに日付を入力します。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

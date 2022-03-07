@@ -2,11 +2,9 @@
 title: 休暇申請の管理
 description: Dynamics 365 Human Resources で、休暇申請を表示および承認します。
 author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
@@ -18,24 +16,39 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 365d933a2d33b7e1929f9f68e02050b624e30839
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 301b8978264dd3cb517652492a0b1791df63e6f3
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419444"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924806"
 ---
-# <a name="manage-leave-and-absence-requests"></a>休暇申請の管理
+# <a name="manage-leave-and-absence-requests"></a>休暇および欠勤要求の管理
 
-マネージャーは、**従業員セルフサービス** ワークスペースからの休暇申請を Dynamics 365 Human Resources で管理できます。 申請は、単純な 1 日申請、または複数の休暇タイプを含む複数日申請が可能です。 ワークフローが有効でない場合は、申請は自動的に承認されます。 ワークフローが有効になっている場合、承認が自動になっている可能性もあれば、ワークフローのコンフィギュレーションによってはサインオフを要求する可能性もあります。
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+休暇申請の管理は、Dynamics 365 Human Resources の **従業員セルフサービス** ワークスペースから行えます。 申請は、単純な 1 日申請、または複数の休暇タイプを含む複数日申請が可能です。 ワークフローが有効でない場合は、申請は自動的に承認されます。 ワークフローを有効にすると、ワークフローの構成に応じて、承認を自動化したり、サインオフを要求したりすることができます。
 
 1. **従業員セルフサービス** ワークスペースで、**自分のチーム** を選択します。
 
-2. **自分のチームの情報** で、**休暇** タブを選択します。 
+2. **自分のチームの情報** で、**休暇** タブを選択します。
 
 3. 必要に応じて自分のチーム メンバーの休暇申請を表示および承認します。
+
+## <a name="preview-leave-request-workflow-experience-enhancements"></a>(プレビュー) 休暇申請ワークフロー エクスペリエンス拡張機能
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+このプレビュー機能は、次の拡張機能を提供します。
+
+- 複数の休暇申請を選択し、すべての休暇申請に対して同じアクションを実行できます。
+- ページの上部に位置するリボンと新しいワークフロー ボタンには、休暇申請に対して実行できるアクションが表示されます。
+
+![マネージャーのエクスペリエンス](media/hr-leave-and-absence-manager-experience.png)
 
 ## <a name="see-also"></a>参照
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
-- [休暇計画の作成](hr-leave-and-absence-plans.md)
+- [休暇および欠勤計画の作成](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: 部品表およびフォーミュラ
 description: このトピックでは、製品および製品バリアントの定義の中心となる部品表 (BOM) およびフォーミュラについて説明します。
 author: cvocph
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace, ProdBOM, ProdJournalTransBOM, ProdBOMCurrent, PmfBOMDesignerEditCoBy, ProdJournalPickingListLineSummary, ProdBOMOverview, PmfCoReqPlanning, EcoResProductProdTypeFormulaNoActiveFormulaFormPart, EcoResItemsMissingActiveRouteVersionFormPart, EcoResItemsProdTypeBOMExpiringBOMFormPart, BOMDesignerBOMVersion, BOMExpandPurch, BOMChangeLine, BOMExpandSales, EcoResItemsProdTypeBOMExpiringRouteFormPart, EngChgEcmBomDesigner, EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmBOMCopyDialog, EngChgEcmBomDesignerEditBom, BOMDesignerFilterDialog, BOMDesignerFilterDialog, BOMPartOf, BOMSetupReportFinish, EcoResItemsMissingActiveBOMVersionFormPart, BOMIdLookup, EcoResProductProdTypeFormulaNoActiveRouteFormPart, BOMExpandPurchRFQ, EngChgCaseRouteTablePart
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01491f15405e28e63e4b83f9a9c7af90c2e4a1b5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bb9b26eaedd9e9645209ce0b4b767170cccfdc48
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966483"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190115"
 ---
 # <a name="bills-of-materials-and-formulas"></a>部品表およびフォーミュラ
 
@@ -31,8 +29,7 @@ ms.locfileid: "4966483"
 
 このトピックでは、製品および製品バリアントの定義の中心となる部品表 (BOM) およびフォーミュラについて説明します。 BOM およびフォーミュラは、特定の製品に必要な材料または成分を指定します。 フォーミュラは、特定の生産コンテキストで入庫する連産品および副産物も指定します。 
 
-<a name="bills-of-materials"></a>部品表
-------------------
+## <a name="bills-of-materials"></a>部品表
 
 部品表 (BOM) は、製品の製造に必要なコンポーネントを定義します。 コンポーネントは、原材料、半完成製品、または材料のいずれかです。 場合によっては、サービスを BOM 内で参照できます。 ただし、一般的に、BOM は、必要な *原材料リソース* について説明しています。  
 
@@ -117,3 +114,6 @@ BOM 明細行が参照する製品バリアントのための、サブ生産、B
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

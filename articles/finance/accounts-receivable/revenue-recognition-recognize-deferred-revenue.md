@@ -2,26 +2,23 @@
 title: 繰延収益の認識
 description: このトピックでは、収益認識機能を使用した繰延収益の認識に関する情報を提供します。
 author: kweekley
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f6b221104d7012d82a0021b6d8f9cc10fe44cb7b8f3473ab8e7ae7a89be0a5e6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459406"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726113"
 ---
 # <a name="recognize-deferred-revenue"></a>繰延収益の認識
 
@@ -39,7 +36,7 @@ ms.locfileid: "4459406"
 - 収益認識スケジュールは、請求済の販売注文から直接開くことができます。 この場合、収益スケジュールの情報は、選択した販売注文の詳細のみを表示するようにフィルター処理されます。 この方法は、販売注文のスケジュールの詳細を検証する場合に役立ちます。
 - 収益認識スケジュールは、**収益認識 \> 定期処理のタスク** ページから開くことができます。 この方法は、多くの場合、期間の最後に収益が認識される場合に使用されます。 ページが最初に開かれたときは、情報は表示されません。 グリッドの上にあるフィルターを使用して、表示するスケジュールの詳細の基準を定義します。 日付範囲、販売注文、顧客、プロジェクト ID、または都道府県を入力して、請求書の日付をフィルター処理できます。
 
-[![収益スケジュール ページ](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+[![収益スケジュール ページの図。](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
 グリッドの下の **財務分析コード** クイック タブに、販売注文明細行の財務分析コードが表示されます。 これらの分析コードは、繰延収益への転記時に考慮されています。 収益が認識されたときにも考慮されます。 使用される分析コード値は、収益および繰延収益の主勘定に配賦されている勘定構造によって異なります。
 
@@ -49,7 +46,7 @@ ms.locfileid: "4459406"
 
 収益を選択して転記するための基準を定義するには、**仕訳帳の作成** を選択し、**仕訳帳の作成** ダイアログ ボックスを開きます。
 
-[![仕訳帳パラメーター オプションの作成](./media/revenue-recognition-create-journal.png)](./media/revenue-recognition-create-journal.png)
+[![仕訳帳パラメーター オプションの作成。](./media/revenue-recognition-create-journal.png)](./media/revenue-recognition-create-journal.png)
 
 ダイアログ ボックスで、**処理日付** フィールド グループのオプションを使用して、収益が認識されるときに使用される転記日付を定義します。 **選択した日付** を選択した場合は、**トランザクション日付** フィールドに転記日付を入力できます。 **収益のスケジュール日付** を選択した場合、トランザクション日付は使用されません。 代わりに、スケジュールの各明細行の **認識日付** フィールドの値が転記日付として使用されます。
 
@@ -59,11 +56,11 @@ ms.locfileid: "4459406"
 
 このプロセスを実行すると、仕訳帳に転送されたスケジュールの明細行が、**処理済** としてマークされます。 **処理済** フラグは、明細行が仕訳帳に転送されたことを示しますが、転記済または未転記にすることができます。 収益認識仕訳帳が転記された後でも、**処理済** フラグは残ります。 収益認識仕訳帳が削除された場合、または明細行が削除された場合は、**処理済み** フラグが削除されます。 このようにして、**仕訳帳の作成** プロセスが再度実行されたときに明細行が認識されるようにすることができます。
 
-[![収益スケジュール ページ](./media/revenue-recognition-rev-recog-schedule-02.png)](./media/revenue-recognition-rev-recog-schedule-02.png)
+[![収益スケジュール ページ。](./media/revenue-recognition-rev-recog-schedule-02.png)](./media/revenue-recognition-rev-recog-schedule-02.png)
 
 **収益認識仕訳帳** ページ (**収益認識 \> 仕訳入力 \> 収益認識仕訳帳**) で、**明細行** を開いて、認識されているものの詳細を表示します。 すべての明細行が同じ勘定科目を使用して同じ日に転記される場合でも、認識されているスケジュールの明細行ごとに個別のトランザクションが常に作成されます。
 
-[![仕訳伝票ページ](./media/revenue-recognition-journal-voucher.png)](./media/revenue-recognition-journal-voucher.png)
+[![仕訳伝票ページ。](./media/revenue-recognition-journal-voucher.png)](./media/revenue-recognition-journal-voucher.png)
 
 **勘定** 列には、繰延収益勘定科目が表示されます。 この勘定科目は編集できません。 この制限は、正しい繰延収益勘定科目が削減されることを保証するのに役立ちます。 この勘定科目は、参照された収益勘定科目への転記が最後に発生してから変更されている可能性があるため、勘定構造に対して検証されません。
 
@@ -85,7 +82,7 @@ ms.locfileid: "4459406"
 
 - **保留中** - 明細行を処理する前に、このフラグを設定またはクリアできます。 フラグをクリアするには、行を選択し、**保留の削除** を選択します。 保留中の明細行では収益を認識できません。 収益スケジュールに自動保留が設定されている場合、明細行を自動的に保留にすることができます。
 
-    [![収益スケジュール - スケジュール明細行の編集](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+    [![収益スケジュール - スケジュール明細行の編集。](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
 
 - **認識日付** - 明細行を処理する前に、認識日付を変更することができます。 収益を認識するための仕訳帳を作成するプロセスが実行されると、日付が **収益認識の日付** フィールドに入力されます。 この日付を **認識日付** フィールドの日付と比較することで、どの明細行を認識するかを決定します。
 - **リリース金額** - 明細行が処理される前に、リリースする金額を変更できます。 認識される収益の金額を減らすことはできますが、収益を増やすことはできません。 このフィールドを使用して、組織は認識日付における収益の一部を認識します。 金額が変更された場合、**残余額** フィールドの金額は、まだ認識する必要がある収益を示します。
@@ -97,15 +94,18 @@ ms.locfileid: "4459406"
 
 スケジュールを変更するには、変更する項目のスケジュール明細行を選択します。 次の図では、12 か月の収益スケジュールを使用して転記された項目 S0008 の明細行が選択されています。 **契約条件の更新** を選択すると、ダイアログ ボックスに契約の開始日と終了日、および収益スケジュールが表示されます。
 
-[![契約の開始日と終了日](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)
+[![契約の開始日と終了日。](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)
 
 契約の開始日と終了日を変更して、正しい日付範囲を反映したものにします。 日付範囲を変更する場合は、**発生数** フィールドの値がシステムで定義されている収益スケジュールと一致している必要があります。 この例では、契約が 24 か月の契約に変更されたので、24 か月間の収益スケジュールを設定する必要があります。 24 か月の収益スケジュールが存在するため、それが既定で入力され、契約を変更できます。 発生数の値が一致する収益スケジュールが存在しない場合、その契約は変更できません。 必要に応じて契約条件と収益スケジュールの更新を完了したら、ダイアログ ボックスで **OK** を選択して変更を保存します。
 
-[![更新された契約日付範囲](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)
+[![更新された契約日付範囲。](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)
 
 契約を変更すると、収益スケジュールの詳細に次のような影響があります。
 
 - 製品に対して収益が認識されなかった場合は、それまでのすべてのスケジュールの詳細が削除され、新しい収益スケジュールの詳細で置き換えられます。 たとえば、品目 S0008 のスケジュールの詳細には、最初 12 行が含まれていました。 この 12 行は、新しい収益スケジュールに基づいて削除され、24 行に置換されます。
 - 製品に対して収益が認識されている場合は、正しくない収益スケジュールに基づいて認識されたために、収益の一部が誤って認識されていました。 これらの明細行は、新しいスケジュールに基づいて、取り消して再度認識する必要があります。 このシナリオでは、元の認識日付で負の金額を持つ新しい収益スケジュール明細行が作成されます。 新しい明細行が作成され、新しい収益スケジュールに基づいて金額が認識されます。 たとえば、2019 年 8 月 8 日に 10.53 ドルの収益が認識されているとします。 2019 年 9 月 8 日に、13.16 ドルの収益を認識しました。 したがって、同じ日付で 2 つの新しい明細行が作成されます。 1 行目は -10.53 ドル、もう 1 行は -13.16 ドルです。 次に、24 行の新しい明細行が作成され、160.61 ドルの繰延収益合計がその全体に配賦されます。 逆仕訳明細行は、**仕訳帳の作成** プロセスを実行することによって転記できます。
 
-[![収益認識スケジュール](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+[![収益認識スケジュール。](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

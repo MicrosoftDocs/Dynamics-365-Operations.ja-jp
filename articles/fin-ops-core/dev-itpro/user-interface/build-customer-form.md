@@ -1,12 +1,10 @@
 ---
 title: 顧客フォームの構築
-description: このラボでは、マスター詳細フォームを作成し、適切なフォームのパターンおよびサブパターンを適用します。 マスター詳細フォームには、多数のフィールドが含まれるプライマリ データが表示されます。 たとえば、作成するフォームは、顧客情報を表示します。
+description: このラボでは、マスター詳細フォームを作成し、フォームのパターンおよびサブパターンを適用します。 マスター詳細フォームには、多数のフィールドが含まれるプライマリ データが表示されます。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40d32a6de03b792d4e95d9c22a6046126d79c02d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 74c7bbee5879c53c1022aa5841b80176f7c3b44cdb07162c31fa35747d3a2347
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682465"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765072"
 ---
 # <a name="build-the-customer-form"></a>顧客フォームの構築
 
@@ -29,15 +27,14 @@ ms.locfileid: "4682465"
 
 このラボでは、マスター詳細フォームを作成し、適切なフォームのパターンおよびサブパターンを適用します。 マスター詳細フォームには、多数のフィールドが含まれるプライマリ データが表示されます。 たとえば、作成するフォームは、顧客情報を表示します。
 
-<a name="prerequisites"></a>前提条件
--------------
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、「[アクセス インスタンス](../dev-tools/access-instances.md)」を参照してください。
 
 ## <a name="overview"></a>概要
 フォームを作成するには、既存のフォーム **FmtCustomer** から開始します。 フォームは、古いマスター詳細テンプレートをテーブルします。 チュートリアルの一環として、このフォーム タイプに一貫した構造を実行するマスターの詳細パターンを適用します。 次の図は、**FmtCustomer** 開始コンポーネントを示しています。 
 
-[![FmtCustomer 開始コンポーネントのスクリーン ショット](./media/custform1.png)](./media/custform1.png)
+[![FmtCustomer 開始コンポーネントのスクリーン ショット。](./media/custform1.png)](./media/custform1.png)
 
 ## <a name="key-concepts"></a>重要な概念
 -   マスター詳細フォームを作成します。
@@ -60,7 +57,7 @@ Visual Studio を使用してチュートリアル プロジェクトをイン�
 6.  **プロジェクト ファイルの場所** テキスト ボックスに、**C:\FMLab** と入力します。
 7.  **要素の上書き** オプションをオンにし、**現在のソリューション** ラジオ オプションをオンにします。 次の図は、完了した **インポート プロジェクト** ダイアログ ボックスを示しています。 
 
-    ![完了したプロジェクトのインポート ダイアログ ボックス](./media/custform2.png)
+    ![完了したプロジェクトのインポート ダイアログ ボックス。](./media/custform2.png)
 
 8.  **OK** をクリックします。
 9.  **ソリューション エクスプローラー** で、**クラス** を展開して、**FMTutorial** プロジェクトで **FMTDataHelper** を右クリックしてから、**スタートアップ オブジェクトとして設定** をクリックします。
@@ -99,7 +96,7 @@ Visual Studio を使用して **FmtCustomer** フォームを作成します。 
 
     2.  協調表示されたフィールドを **Design** &gt; **GridDetailsTab**&gt; **TabPageGrid** &gt; **MainGrid** にドラッグします。 次の図は、グリッド ノードを展開してフィールドを追加した後のグリッドを示しています。 
 
-        ![ノードを展開しフィールドを追加した後の、グリッドを表示するスクリーン ショット](./media/custform3.png)     
+        ![ノードを展開しフィールドを追加した後の、グリッドを表示するスクリーン ショット。](./media/custform3.png)     
 
 8.  **保存** をクリックします。
 9.  **デザイン** &gt; **GridDetailsTab** &gt; **TabPageDetails** &gt; **TitleGroup** の順にクリックし、レコード ヘッダーを詳細ビューに追加します。
@@ -126,7 +123,7 @@ Visual Studio を使用して **FmtCustomer** フォームを作成します。 
 1.  **ソリューション エクスプローラー** で、**FmtCustomer** を右クリックしてから、**スタートアップ オブジェクトとして設定** をクリックします。
 2.  **Ctrl+F5** キーを押します。 グリッド ビューは、次の図のように表示する必要があります。 
 
-    [![グリッド ビューの図](./media/custform4-1024x567.png)](./media/custform4.png)
+    [![グリッド ビューの図。](./media/custform4-1024x567.png)](./media/custform4.png)
 
 3.  アプリケーション バーで、**Microsoft Office を開く** &gt; **Excel にエクスポート &gt; 顧客** をクリックして、グリッド ビューの情報を Microsoft Excel スプレッドシートに送信します。 (ページを終了するかどうかを確認するダイアログが表示されたら、「このページを終了」をクリックします。) 求められたら、**開く** をクリックして Excel でデータを表示します。
 4.  Excel を閉じます。
@@ -138,9 +135,9 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 
 1.  **デザイン** を右クリックして **パターンの適用** をポイントし、**詳細マスター** をクリックします。
 
-    [![詳細マスター フォーム パターンの適用](./media/custform6.png)](./media/custform6.png)
+    [![詳細マスター フォーム パターンの適用。](./media/custform6.png)](./media/custform6.png)
 
-    [![ナビゲーション リスト グループが表示されないスクリーン ショット](./media/custform7.png)](./media/custform7.png)
+    [![ナビゲーション リスト グループが表示されないスクリーン ショット。](./media/custform7.png)](./media/custform7.png)
 
 2.  欠落しているナビゲーション リスト グループを追加します。 パターン情報パネルが赤色でハイライトされると、このコントロールがないことを示します。
     1.  **デザイン** を右クリックして **新規** をクリックし、**グループ** をクリックします。
@@ -149,15 +146,15 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 
 3.  **デザイン** を再度クリックします。 **ナビゲーション リスト** と **パネル タブ** の周りの黄色のハイライトは、パターンが正常に適用される前にこれらの各ノードの下で解決する必要のある問題があることを示します。
 
-    [![デザインを再度クリックする](./media/custform8.png)](./media/custform8.png)
+    [![デザインを再度クリックする。](./media/custform8.png)](./media/custform8.png)
 
-    [![黄色の強調表示を含むノードを示すスクリーン ショット](./media/custform9.png)](./media/custform9.png)
+    [![黄色の強調表示を含むノードを示すスクリーン ショット。](./media/custform9.png)](./media/custform9.png)
 
 4.  パターン情報パネルで **SidePanel** をクリックします。
 
-    [![情報パネルで選択した SidePanel](./media/custform10.png)](./media/custform10.png)
+    [![情報パネルで選択した SidePanel。](./media/custform10.png)](./media/custform10.png)
 
-    [![欠落しているコントロールを示す SidePanel](./media/custform11.png)](./media/custform11.png)
+    [![欠落しているコントロールを示す SidePanel。](./media/custform11.png)](./media/custform11.png)
 
 5.  欠落しているコントロールを追加します。
     1.  **SidePanel** を右クリックして **新規** をクリックし、**QuickFilter** をクリックします。
@@ -189,39 +186,39 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 
 7.  **SidePanel** をクリックします。 **パターン情報パネル** は、このサブツリーのコントロールがパターンに完全に準拠していることを示しています。
 
-    ![パターン情報パネル](./media/custform12.png)
+    ![パターン情報パネル。](./media/custform12.png)
 
-    ![パターン情報パネル](./media/custform13.png)
+    ![パターン情報パネル。](./media/custform13.png)
 
 8.  **デザイン** &gt; **GridDetailsTab** とクリックします。 サブノードの周りの黄色のハイライトは、フォーム パターンが正常に適用される前に両方のノードの下で解決する必要のある問題があることを示します。
 
-    [![GridDetailsTab](./media/custform14.png)](./media/custform14.png)
+    [![GridDetailsTab。](./media/custform14.png)](./media/custform14.png)
 
-    [![サブノードの周囲の黄色い強調表示](./media/custform15.png)](./media/custform15.png)
+    [![サブノードの周囲の黄色い強調表示。](./media/custform15.png)](./media/custform15.png)
 
 9.  パターンは **グリッド パネル** が **詳細パネル** の後に配置されることを期待します。 **TabPageGrid** をクリックし、**Alt + ↓** キーを押してそのタブを **詳細パネル** の下に移動します。
 10. **GridDetailsTab** をクリックします。 **TabPageDetails** タブ ページはパターンに準拠するようになりました。 ただし、**TabPageGrid** タブ ページには更なる注意が必要です。
 
-    [![GridDetailsTab](./media/custform16.png)](./media/custform16.png)
+    [![GridDetailsTab。](./media/custform16.png)](./media/custform16.png)
 
-    [![TabPageGrid タブ ページには更なる注意が必要](./media/custform17.png)](./media/custform17.png)
+    [![TabPageGrid タブ ページには更なる注意が必要です。](./media/custform17.png)](./media/custform17.png)
 
 11. **TabPageGrid** をクリックします。 デザイナーでフォーカスがすぐに **TabPageGrid** がオンになり、**パターン情報パネル** が更新されています。
 
-    [![TabPageGrid のフォーカス](./media/custform18.png)](./media/custform18.png)
+    [![TabPageGrid のフォーカス。](./media/custform18.png)](./media/custform18.png)
 
-    [![パターン情報パネル](./media/custform19.png)](./media/custform19.png)
+    [![パターン情報パネル。](./media/custform19.png)](./media/custform19.png)
 
 12. **パターン情報パネル** には、**TabPageGrid** コンテナーの上部で欠落しているグループ コントロールが表示されるようになりました。
     1.  **TabPageGrid** を右クリックして **新規** をポイントし、**グループ** をクリックします。
     2.  **Alt+上方向** キーを 2 回押して、そのグループをグループの最初のコントロールとして配置します。
-    3.  **プロパティ** ウィンドウの **名前** プロパティに、**GridCustomFilterGroup** と入力します。 [![GridCustomFilterGroup の入力](./media/custform20.png)](./media/custform20.png)
+    3.  **プロパティ** ウィンドウの **名前** プロパティに、**GridCustomFilterGroup** と入力します。 [![GridCustomFilterGroup の入力。](./media/custform20.png)](./media/custform20.png)
 
 13. パターンが、**GridCustomFilterGroup** に適用されるサブパターンをお探しています。 **GridCustomFilterGroup** を右クリックして **パターンの適用** をポイントし、**カスタムおよびクイック フィルター** をクリックします。
 
-    [![カスタムおよびクイック フィルターをクリックする](./media/custform21.png)](./media/custform21.png)
+    [![カスタムおよびクイック フィルターをクリックする。](./media/custform21.png)](./media/custform21.png)
 
-    [![カスタムおよびクイック フィルター](./media/custform22.png)](./media/custform22.png)
+    [![カスタムおよびクイック フィルター。](./media/custform22.png)](./media/custform22.png)
 
 14. **カスタムおよびクイック フィルター** サブパターンには、QuickFilter コントロールが必須です。
     1.  **GridCustomFilterGroup** を右クリックして **新規** をクリックし、**QuickFilter** をクリックします。
@@ -240,13 +237,13 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 
 1.  **Ctrl+F5** キーを押してプロジェクトを実行します。 次の図は、グリッド ビューの表示方法を示しています。
 
-    [![グリッド ビューの図](./media/custform23-1024x599.png)](./media/custform23.png)
+    [![グリッド ビューの図。](./media/custform23-1024x599.png)](./media/custform23.png)
 
 2.  **Phil** をクリックしてそのレコードの詳細ビューに移動します。 
 
 3.  ナビゲーション リストを開くには、フォームの左側にある **リストを表示** ボタンをクリックします。 
 
-    [![ナビゲーション リストを表示するために開かれたフォーム](./media/custform25-1024x597.png)](./media/custform25.png)
+    [![ナビゲーション リストを表示するために開かれたフォーム。](./media/custform25-1024x597.png)](./media/custform25.png)
 
 4.  グリッド表示に戻るには、**閉じる** (またはブラウザーの [戻る] ボタン) をクリックします。
 5.  Visual Studio に戻ります。
@@ -254,33 +251,33 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 ## <a name="add-subpatterns"></a>サブパターンの追加
 1.  Visual Studio の、フォーム デザイナーで、**FmtCustomer** を右クリックして **アドイン** をポイントしてから、**フォーム統計情報** を選択します。 
 
-    [![フォーム デザイナーで選択されたフォームの統計情報](./media/custform26.png)](./media/custform26.png) 
+    [![フォーム デザイナーで選択されたフォームの統計情報。](./media/custform26.png)](./media/custform26.png) 
 
     **フォーム統計** アドインは、フォームの状態に関するいくつかの役に立つデータ ポイントを提供します。 これには、次のものが含まれます。
     -   **パターン = 未指定のカウント** – フォーム パターンまたはサブパターンが適用されていないノードの数。
     -   **パターン = カスタム カウント** – カスタム パターンが適用されたノードの数。構造が既存のパターンに適合しなかったことを意味します。
     -   **パターン カバレッジ** – フォーム上のコントロールのうち、フォーム パターンまたはサブパターンの対象となるものの割合。 100% の値は、完全に対象となるフォームを示します。 
 
-        [![フォームに関するデータを示すダイアログ ボックス](./media/custform27.png)](./media/custform27.png)
+        [![フォームに関するデータを示すダイアログ ボックス。](./media/custform27.png)](./media/custform27.png)
 
 2.  このフォームのパターン カバレッジを完成させるには、Pattern = Unspecified カウントをゼロにする必要があります。 Visual Studio のフォーム検索を使用して、フォーム内の「指定されていない」すべてのインスタンスを検索します。 
 
-    [![検索からの Visual Studio の例](./media/custform28.png)](./media/custform28.png)
+    [![検索からの Visual Studio の例。](./media/custform28.png)](./media/custform28.png)
 
 3.  **一般** タブ ページには入力コントロールのみが含まれており、このクイックタブにはカスタム レイアウトが不要なため、応答レイアウトを保証するためにフィールドおよびフィールド グループのパターンを適用する必要があります。 **全般** を右クリックして **パターンの適用** をポイントし、**フィールドおよびフィールド グループ** を選択します。
 4.  画面の右端で、**検索のクリア** をクリックします。 
 
-    [![画面の右端にある検索のクリア オプションを示すスクリーン ショット](./media/custform29.png)](./media/custform29.png)
+    [![画面の右端にある検索のクリア オプションを示すスクリーン ショット。](./media/custform29.png)](./media/custform29.png)
 
 5.  **Ctrl+S** キーを押してフォームを保存します。
 6.  手順 1 を繰り返して **フォーム統計** アドインを再度実行し、フォームがパターンによって完全にカバーされていることを確認します。 
 
-    [![100% パターン カバレッジを示すダイアログ ボックス](./media/custform30.png)](./media/custform30.png)
+    [![100% パターン カバレッジを示すダイアログ ボックス。](./media/custform30.png)](./media/custform30.png)
 
 7.  **Ctrl+F5** キーを押してプロジェクトを実行し、更新されたフォームを表示します。
 8.  **里美 (サンプル)** をクリックし、詳細ビューに移動します。 次の図は、フィールドおよびフィールド グループのサブパターンを適用し、フィールドが反応しやすいようにレイアウトした後に詳細ビューがどのように表示されるかを示しています。 ブラウザーの幅を変更することで、ブラウザーの幅を十分に埋めるためにフィールド レイアウトがどのように調整されるのかが分かります。 
 
-    [![フィールドおよびフィールド グループのサブパターンを適用した後の詳細ビュー](./media/custform31-1024x674.png)](./media/custform31.png)
+    [![フィールドおよびフィールド グループのサブパターンを適用した後の詳細ビュー。](./media/custform31-1024x674.png)](./media/custform31.png)
 
 9.  Visual Studio に戻る
 
@@ -289,17 +286,20 @@ Visual Studio を使用して **顧客** フォームに Master Details のフ�
 
     フォームのパターン レポートが生成されたときに表示される通知ダイアログです。 
 
-    [![レポートが生成されたことを示すダイアログ ボックス](./media/custform33.png)](./media/custform33.png)
+    [![レポートが生成されたことを示すダイアログ ボックス。](./media/custform33.png)](./media/custform33.png)
 
 2.  PatternsReport ファイルを Excel で開きます。
 3.  フリート管理チュートリアル モデルへのレポートをフィルター処理します。
     1.  **データ** &gt; **フィルター** の順にクリックします。
     2.  FleetMgmntTutorial への **モデル** 列をフィルター処理します。 
 
-        [![フィルター処理されたレポートのスクリーン ショット](./media/custform34-1024x422.png)](./media/custform34.png)
+        [![フィルター処理されたレポートのスクリーン ショット。](./media/custform34-1024x422.png)](./media/custform34.png)
 
 
 レポートには、現在適用されている最上位のフォーム パターンと、パターンでカバーされているフォーム上のコントロールの割合など、このモデルのフォームに関するパターン関連の情報が表示されます。 これは、1 つまたは複数のモデルの残りのパターンの作業を追跡するために使用できます。  
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

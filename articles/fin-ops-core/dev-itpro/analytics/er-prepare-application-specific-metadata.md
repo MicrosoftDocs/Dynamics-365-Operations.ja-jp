@@ -2,11 +2,9 @@
 title: RCS および ER のアプリケーション固有のメタデータを準備する
 description: このトピックでは、Regulatory configuration service (RCS) および電子レポート (ER) のアプリケーション固有のメタデータを準備する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f15b78d3ed5b4df47540f9f89cc69c0b535a7241
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f0501fd67da0cbc5c10171b55004cb7f4fd4fd16
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680197"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743706"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>RCS および ER のアプリケーション固有のメタデータを準備する
 
@@ -280,3 +278,6 @@ ms.locfileid: "4680197"
 ## <a name="additional-resources"></a>追加リソース
 
 または、アプリケーションの **RCS で使用できるアプリケーション メタデータを準備する** タスク ガイド、**ER コンフィギュレーションを使用してアプリケーション メタデータにアクセスする** および RCS の **接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする** タスク ガイドを再生することができます。 これらのタスク ガイドは、[Dynamics 365 for Finance and Operations 8.1 電子レポート タスク ガイド](https://go.microsoft.com/fwlink/?linkid=2082739)のページからダウンロードできます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

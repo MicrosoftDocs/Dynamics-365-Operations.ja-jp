@@ -2,11 +2,9 @@
 title: 会社のディレクトリ モバイル ワークスペース
 description: このトピックでは、ユーザーが閲覧し、組織内の他の従業員と連絡が取れるようにする、会社のディレクトリ モバイル ワークスペースに関する情報を提供します。
 author: jcart1106
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3193fbc4d4b3492960c7c13dc24b41bb920e7d23
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 51ed47075ad7fdea490bd0d06831449388ecdf6e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683435"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360795"
 ---
 # <a name="company-directory-mobile-workspace"></a>会社のディレクトリ モバイル ワークスペース
 
@@ -79,7 +77,7 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 3.  初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
 4.  サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
-[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![プルして更新。](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>モバイル ワークスペースを使用して、会社のディレクトリを表示します。
 1.  モバイル アプリで、**会社のディレクトリ** ワークスペースを選択します。 従業員の一覧が表示されます。
@@ -89,3 +87,6 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 1.  モバイル アプリで、**会社のディレクトリ** ワークスペースを選択します。
 2.  **検索** フィールドに、従業員の名、姓、肩書き、または部署を入力して検索を開始します。
 3.  従業員を選択します。 **従業員のプロファイル** ページが表示されます。 このページの情報には、従業員の名、姓、肩書き、および部署が含まれます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

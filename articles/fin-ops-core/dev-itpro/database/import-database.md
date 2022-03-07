@@ -2,11 +2,9 @@
 title: データベースのインポート
 description: このトピックでは、Finance and Operations アプリのデータベースをインポートする方法について説明します。
 author: LaneSwenka
-manager: AnnBe
 ms.date: 08/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 98592ce126ed1408275c9c1d56f4db23930f7385
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 51695447c7b33b430e5e2543dfa738bdaedc25c0
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681078"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749970"
 ---
 # <a name="import-a-database"></a>データベースのインポート
 
@@ -56,3 +54,6 @@ web.config ファイルを変更するために環境に管理者ユーザー �
 ## <a name="steps-to-complete-after-a-database-import-for-environments-that-use-commerce-functionality"></a>コマース機能を使用する環境のデータベース インポート後に実行する手順
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

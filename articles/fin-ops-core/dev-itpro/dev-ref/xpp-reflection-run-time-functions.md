@@ -2,26 +2,21 @@
 title: X++ リフレクション ランタイム関数
 description: このトピックでは、リフレクション ランタイム関数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 31381
-ms.assetid: d0d4043e-5abb-42ae-bcc2-c6b678f4ef5b
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 880789cebd317d872b71938b2a21b1f0ba5f5a0a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 62040659145062b07808a4332773ab0ed1bcf63c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408727"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188424"
 ---
 # <a name="x-reflection-runtime-functions"></a>X++ リフレクション ランタイム関数
 
@@ -29,8 +24,7 @@ ms.locfileid: "4408727"
 
 このトピックでは、リフレクション ランタイム関数について説明します。
 
-<a name="classidget"></a>classIdGet
-----------
+## <a name="classidget"></a>classIdGet
 
 初期化されるオブジェクトが属しているクラスの数値識別子 (クラス ID) を取得します。
 
@@ -481,3 +475,6 @@ typeof(conpeek(conpeek(c, 1), 1)) != Types::Integer)
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

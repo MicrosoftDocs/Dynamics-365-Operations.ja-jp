@@ -1,33 +1,32 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 4 月 13 日)
 description: この記事では、2020 年 4 月 13 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
-author: Darinkramer
-manager: AnnBe
-ms.date: 4/13/2020
+author: andreabichsel
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a7ea8348cfe1c66d6d0cfa39b46c8e69111fe185
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b5af74329fa741a443932a1007a6c2ef6abd3445
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528524"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062214"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 4 月 13 日)
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 この記事では、Dynamics 365 Human Resources の新機能および変更された機能について説明します。 変更は、ビルド番号 8.1.3136 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
 
@@ -43,9 +42,9 @@ ms.locfileid: "4528524"
 
 "フィールド 見越計上日の基準を入力する必要があります" というエラーを発生させることなく、登録終了日を編集できるようになりました。
 
-## <a name="employment-entity-doesnt-sync-to-common-data-service-430834"></a>雇用エンティティが Common Data Service に同期されない (430834)
+## <a name="employment-entity-doesnt-sync-to-dataverse-430834"></a>雇用エンティティが Dataverse に同期されない (430834)
 
-この変更により、財務分析コードを追加した後、雇用データが Common Data Service に同期されなかった問題が修正されます。 
+この変更により、財務分析コードを追加した後、雇用データが Dataverse に同期されなかった問題が修正されます。 
 
 ## <a name="remove-multi-parenting-for-work-calendar-time-interval-entity-431775"></a>作業カレンダー時間間隔エンティティのマルチ ペアレンティングの削除 (431775)
 
@@ -94,6 +93,8 @@ SharePoint で保存されているドキュメントのドキュメント プ�
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

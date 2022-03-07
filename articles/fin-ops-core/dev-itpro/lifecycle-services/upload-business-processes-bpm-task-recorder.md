@@ -1,12 +1,10 @@
 ---
 title: 独自の業務プロセスからビジネス プロセス モデラー (BPM) へのアップロード
-description: Microsoft Dynamics Lifecycle Services では、タスク レコーダーの更新されたバージョンを使用して独自の業務プロセスに関する情報を記録できます。 記録するファイルをビジネス プロセス モデラーにアップロードすることができます。
+description: Microsoft Dynamics Lifecycle Services では、タスク レコーダーの更新されたバージョンを使用して独自の業務プロセスに関する情報を記録できます。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2631b386aa21ebabd37d93ba2ce9b935101d0704
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a9327c9ea593ab19a39a831eabb19eda37a827f6
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681050"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189332"
 ---
 # <a name="upload-custom-business-processes-to-business-process-modeler-bpm"></a>独自の業務プロセスからビジネス プロセス モデラー (BPM) へのアップロード
 
@@ -45,8 +43,7 @@ Microsoft Dynamics Lifecycle Services では、タスク レコーダーの更�
 4.  業務プロセスのファイルをアップロードした後、**業務プロセスのライブラリ** ページから業務プロセス フレームワークを表示できます。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)](./ax-2012/business-process-modeler-lcs.md)
 
@@ -56,3 +53,6 @@ Microsoft Dynamics Lifecycle Services では、タスク レコーダーの更�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

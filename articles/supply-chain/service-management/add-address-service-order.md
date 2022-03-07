@@ -1,12 +1,10 @@
 ---
 title: 住所をサービス注文に追加する
 description: このトピックでは、サービス注文に顧客の住所を追加する方法について説明します。
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6c8f00eb1a1fe2ef3aea22da20ce218d7568f64
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 055903628b2d72f420415bae5c72d0c7d9d57cba
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966058"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573324"
 ---
 # <a name="add-an-address-to-a-service-order"></a>住所をサービス注文に追加する    
 
@@ -74,3 +72,6 @@ ms.locfileid: "4966058"
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

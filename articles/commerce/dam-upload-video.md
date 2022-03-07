@@ -2,15 +2,12 @@
 title: ビデオのアップロード
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのビデオのアップロード方法について説明します。
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8dd9e710f9a6ea593a0673e7902fadf84ca05cff
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 5ec20f8caee2f5a62230be05923dfd52600c1e35
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594311"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799208"
 ---
 # <a name="upload-videos"></a>ビデオのアップロード
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのビデオのアップロード方法について説明します。
-
-## <a name="overview"></a>概要
 
 コマース サイト ビルダーのメディア ライブラリーを使用すると、ビデオをアップロードできます。 イメージの変更コンポーネントを使用すると、さまざまなビューポートとそのブレークポイントに対するビデオが適切に変換されるので、最大速度と解像度でビデオのバージョンをアップロードする必要があります。
 
@@ -73,3 +68,6 @@ ms.locfileid: "4594311"
 [画像の中心のカスタマイズ](dam-custom-focal-point.md)
 
 [静的ファイルのアップロードと提供](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: オンライン注文用の消費税のコンフィギュレーション
 description: このトピックでは、Dynamics 365 Commerce のさまざまなオンライン注文タイプに対する消費税グループの選択の概要を示します。
 author: gvrmohanreddy
-manager: AnnBe
-ms.date: 11/16/2020
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,68 +15,73 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 40c20bf13779f73289e43df21b763e1b864686a7
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 5801bbfb5b5850cb4c9ae06140bff5adca9b368febdc06d69c538fc49f9ee40a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4530200"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772964"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>オンライン注文用の消費税のコンフィギュレーション
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
-このトピックでは、さまざまなオンライン注文タイプに対する消費税グループの選択の概要を示します。 
+このトピックでは、宛先に基づく、または顧客アカウントに基づく税設定を使用して、異なるオンライン注文タイプに対する消費税グループの選択の概要を示します。 
 
-電子商取引チャンネルでは、注文の配送や集配などのオプションをサポートする必要があります。 消費税の適用は、オンライン ユーザーによって選択されたオプションに基づいて行われます。 サイト顧客が品目をオンラインで購入して住所に出荷することを選択した場合、その消費税は、顧客の出荷住所税グループ設定に基づいて決定されます。 顧客が購買品目を店舗でピックアップすることを選択した場合、その消費税は、集配店舗の税グループ設定に基づいて決定されます。 
+電子商取引チャンネルで、注文の配送や集配などのオプションをサポートする必要があります。 消費税の適用は、オンライン顧客によって選択されたオプションに基づいて行われます。 
 
-## <a name="orders-shipped-to-a-customer-address"></a>顧客住所への出荷注文 
+## <a name="destination-based-taxes-for-online-orders"></a>オンライン注文の宛先に基づく税
 
-一般に、顧客の住所に送付されるオンライン注文の税は、宛先によって定義されます。 各消費税グループには、ビジネスが国/地域、都道府県、郡、市区町村などの出荷先の詳細を階層形式で定義できる、小売の宛先に基づく税コンフィギュレーションがあります。 オンライン注文が行われると、Commerce 税エンジンにより、その注文の各明細行品目の配送先住所が使用され、宛先に基づく税基準が一致する消費税グループが検索されます。 たとえば、明細行品目の配送先がカリフォルニア州サンフランシスコになっているオンライン注文では、税エンジンにより、カリフォルニア州の消費税グループと消費税コードが検出され、それに応じて明細行品目ごとに税金が計算されます。  
+一般に、顧客の住所に送付されるオンライン注文の税は、宛先によって定義されます。 各消費税グループには、ビジネスが国または地域、都道府県、郡、市区町村などの出荷先の詳細を階層形式で定義できる、小売の宛先に基づく税コンフィギュレーションがあります。
 
-## <a name="customer-based-tax-groups"></a>顧客ベースの税グループ
+### <a name="orders-delivered-to-customer-address"></a>顧客住所へ配送される注文
 
-Commerce 本社には、顧客税グループがコンフィギュレーションされている場所が 2 つあります。
+オンライン注文が行われると、Commerce 税エンジンにより、その注文の各明細行品目の配送先住所が使用され、宛先に基づく税基準が一致する消費税グループが検索されます。 たとえば、明細行品目の配送先がカリフォルニア州サンフランシスコになっているオンライン注文では、税エンジンにより、カリフォルニア州の消費税グループと消費税コードが検出され、それに応じて明細行品目ごとに税金が計算されます。
 
-- **顧客のプロファイル**
-- **顧客の出荷先住所**
+### <a name="order-pick-up-in-store"></a>店舗で受け取る注文
 
-### <a name="if-a-customers-profile-has-a-tax-group-configured"></a>顧客のプロファイルに税グループがコンフィギュレーションされている場合
+店舗での受け取りまたはカーブサイド ピックアップが指定されている注文明細行の場合は、選択したピックアップ店舗の税グループが適用されます。 特定の店舗の消費税を設定する方法の詳細については、[店舗のその他の税オプションの設定](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores)を参照してください。
 
-本社の顧客プロファイル レコードに消費税グループがコンフィギュレーションされている場合がありますが、オンライン注文では、顧客のプロファイルでコンフィギュレーションされた消費税グループは、税エンジンによって使用されません。 
+## <a name="customer-account-based-taxes-for-online-orders"></a>オンライン注文の顧客アカウントに基づく税
 
-### <a name="if-a-customers-shipping-address-has-a-tax-group-configured"></a>顧客の出荷先住所に税グループがコンフィギュレーションされている場合
+Commerce 本社の特定の顧客アカウントに消費税グループを構成する業務シナリオが存在する場合があります。 本社には、顧客アカウントに対して消費税を構成できる場所が 2 つあります。 そこにアクセスするには、まず **Retail と Commerce \> 顧客 \> 全ての顧客** の順に移動してから、顧客を選択して、顧客の詳細ページにアクセスする必要があります。
 
-顧客の出荷先住所レコードに税グループがコンフィギュレーションされていて、オンライン注文 (または明細行品目) が顧客の出荷先住所に出荷される場合、顧客の住所レコードにコンフィギュレーションされている税グループは、税計算のために税エンジンによって使用されます。
+顧客アカウントに対して消費税を構成できる場所の 2 つは次のとおりです:
 
-#### <a name="configure-a-tax-group-for-a-customers-shipping-address-record"></a>顧客の出荷先住所レコードの税グループのコンフィギュレーション
+- 顧客の詳細ページの **請求書と出荷** クイック タブにある **消費税グループ**。 
+- **住所の管理** ページの **一般** クイック タブにある **消費税**。 顧客の詳細ページからアクセスするには、**住所** クイックタブで特定の住所を選択してから、**詳細** を選択します。
 
-Commerce 本社の顧客の出荷先住所レコードに対する税グループをコンフィギュレーションするには、次の手順に従います。
+> [!TIP]
+> オンライン顧客注文の場合、宛先に基づく税のみを適用し、顧客アカウントに基づく税を回避する場合は、顧客の詳細ページの **請求書と出荷** クイックタブの **消費税グループ** フィールドが空であることを確認してください。 オンライン チャネルを使用してサインアップする新規顧客が、既定の顧客または顧客グループ設定から消費税グループ設定を継承しないようにするには、オンライン チャネルの既定の顧客設定および顧客グループ設定 (**Retail と Commerce \> 顧客 \> 顧客グループ**) に対する **消費税グループ** フィールドも空であることを確認してください。
 
-1. **すべての顧客** に移動し、目的の顧客を選択します。 
-1. **住所** クイックタブで、目的の住所を選択し、**その他のオプション \> 詳細** を選択します。 
-1. **住所の管理** ページの **全般** タブで、必要に応じ て消費税額を設定します。
+## <a name="determine-destination-based-tax-or-customer-account-based-tax-applicability"></a>宛先に基づく税または顧客アカウントに基づく税の適用を決定する 
 
-> [!NOTE]
-> 税グループは、注文明細行の配送先住所を使用して定義され、宛先に基づく税は税グループ自体でコンフィギュレーションされます。 詳細については、[宛先に基づくオンライン ストアのための税の設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)を参照してください。
+次の表は、オンライン注文に対して宛先に基づく税または顧客アカウントに基づく税を適用するかどうかを示します。 
 
-## <a name="order-pickup-in-store"></a>店舗での注文の受け取り
-
-店舗での受け取りまたはカーブサイド ピックアップが指定されている注文明細行の場合は、選択したピックアップ店舗の税グループが適用されます。 特定の店舗の税グループをコンフィギュレーションする方法の詳細については、[店舗のその他の税オプションの設定](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores)を参照してください。
-
-> [!NOTE]
-> 店舗で注文明細行がピックアップされると、顧客の住所の税設定 (設定されている場合) が税エンジンによって無視され、ピックアップ店舗の税コンフィギュレーションが適用されます。 
+| 顧客タイプ | 出荷先住所                   | 顧客 > 請求書と出荷> 消費税グループ? | 本社の顧客アカウントの住所? | 顧客の住所 > 詳細 > 一般 > 消費税グループ?                                              | 適用される消費税グループ      |
+|---------------|------------------------------------|-----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------|
+| ゲスト         | マンハッタン、NY                      | なし (空白)                                                | なし (空白)                              | なし (空白)                                                                                                   | NY (宛先に基づく税) |
+| サインイン済み     | オースティン、TX                          | なし (空白)                                             | あり                               | None<br/><br/>オンライン チャネル経由で追加された新しいアドレス。                                                            | TX (宛先に基づく税) |
+| サインイン済み     | サンフランシスコ、CA (店舗で受け取り) | あり (NY)                                            | 適用できません                              | 適用できません                                                                                                    | CA (宛先に基づく税) |
+| サインイン済み     | ヒューストン、TX                         | あり (NY)                                            | あり                               | あり (NY)<br/><br/>オンライン チャネル経由で追加された新しい住所と、顧客アカウントから継承された消費税グループ。 | NY (顧客アカウントに基づく税)  |
+| サインイン済み     | オースティン、TX                          | あり (NY)                                            | あり                               | あり (NY)<br/><br/>オンライン チャネル経由で追加された新しい住所と、顧客アカウントから継承された消費税グループ。 | NY (顧客アカウントに基づく税)  |
+| サインイン済み     | サラソータ、FL                       | あり (NY)                                            | あり                               | あり (WA)<br/><br/>手動で WA に設定します。                                                                          | WA (顧客アカウントに基づく税)  |
+| サインイン済み     | サラソータ、FL                       | なし (空白)                                                | あり                               | あり (WA)<br/><br/>手動で WA に設定します。                                                                          | WA (顧客アカウントに基づく税)  |
 
 ## <a name="additional-resources"></a>追加リソース
 
-[消費税の概要](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
+[宛先に基づくオンライン ストアの税を設定する](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
 
-[[発生元] フィールドでの消費税計算方法](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
+[消費税の概要](../finance/general-ledger/indirect-taxes-overview.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[消費税の割り当ておよび上書き](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/sales-tax-assignment-overrides?toc=/dynamics365/commerce/toc.json) 
+[[発生元] フィールドでの消費税計算方法](../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[消費税コードの合計額と間隔計算オプション](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
+[消費税の割り当ておよび上書き](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+
+[消費税コードの合計額と間隔計算オプション](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
 [非課税の計算](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

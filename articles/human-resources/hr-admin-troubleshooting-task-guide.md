@@ -1,36 +1,38 @@
 ---
 title: LCS にタスク ガイドを保存して再生する
-description: この記事では、タスク Guides を Microsoft Dynamics Lifecycle Services (LCS) に保存し、それらを再生する方法について説明します。
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: このトピックでは、タスク ガイドを Microsoft Dynamics Lifecycle Services (LCS) に保存し、それらを再生する方法について説明します。
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54251aed1a54f626e5cd6cbd983e3eb4589a02e8
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419379"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068362"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>LCS にタスク ガイドを保存して再生する
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **環境の詳細** 
 
 Microsoft Dynamics Lifecycle Services (LCS) 経由で配置された Microsoft Dynamics 365 Human Resources
 
-**払出**
+**出庫**
 
 顧客は自分の LCS プロジェクトに新しいタスクの記録を保存し、保存されているタスク ガイドを再生することを希望しています。
 
@@ -53,7 +55,7 @@ LCS にタスク記録を保存するには、次の手順に従います。
 10. タスク記録を作成します。
 11. 完了したら、**Lifecycle Services に保存** を選択します。
 
-    ![Lifecycle Services に保存](media/task-guides.png)
+    ![Lifecycle Services に保存。](media/task-guides.png)
 
 12. タスク記録を保存する BPM ライブラリとノードを選択します。
 
@@ -63,3 +65,6 @@ LCS からタスク ガイドを再生するにはこれらの手順に従いま
 2. **LCS から開く** を選択します。
 3. タスク ガイドが保存されているライブラリと BPM ノードを選択します。
 4. タスク ガイドを開きます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

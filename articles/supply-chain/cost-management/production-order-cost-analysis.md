@@ -2,11 +2,9 @@
 title: 製造オーダーの原価分析
 description: この記事は、完了した製造オーダーおよび現在の製造オーダーに対して実行できる原価分析について説明します。 [価格計算] ページまたは [原価見積] レポートを使用して、見積原価および実際原価を分析できます。 コンポーネント品目、工順工程、および間接原価ごとに見積原価と実績原価 (および数量) についての情報を表示できます。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0858e0e9ed0f09a47954274a05f6da1a2537c4a3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1b0690a683cdefaeb5e441d3e2ea467a680a8fc1dd0905b6a94fd72bcbf36e1e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967286"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734262"
 ---
 # <a name="production-order-cost-analysis"></a>製造オーダーの原価分析
 
@@ -43,7 +41,7 @@ ms.locfileid: "4967286"
 
 次の図に、製造オーダーの終了時の品目の原価レコード内の製造オーダーの実績原価と算出原価の差異を説明する 4 つの差異を示します。 
 
-![完了した製造オーダーの差異を説明する差異](./media/control.jpg) 
+![完了した製造オーダーの差異を説明する差異。](./media/control.jpg) 
 
 **差異** ページまたは **製造差異** レポートを使用して製造差異を分析できます。 表示オプションを使用して、品目および運営リソース別または原価グループ別の詳細な差異を表示します。 在庫パラメータ内の原価内訳ポリシーは、差異が原価グループ別に追跡されるかどうかを決定します。 また、**単一**、**複数**、および **合計** 表示オプションを使用して、要約された差異を表示することもできます。 詳細な差異に関する情報は、各差異のソースを理解するのに役立ちます。 製造オーダーが終了する前に差異を予期するには、**原価見積** レポートで提供される詳細情報を分析します。
 
@@ -57,10 +55,12 @@ ms.locfileid: "4967286"
 -   **仕掛完成品目**− このレポートには、指定したトランザクション日付の時点での、現在の製造オーダーと完了報告済トランザクションが表示されます。
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [製造差異の一般的な発生源](common-sources-of-production-variances.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

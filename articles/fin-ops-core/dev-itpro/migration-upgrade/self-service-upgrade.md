@@ -1,12 +1,10 @@
 ---
 title: 最新バージョンへのセルフサービス アップグレード
-description: このトピックでは、Finance and Operations の最新の更新バージョンに移行するプロセスについて説明します。
+description: このトピックでは、Finance and Operations の最新の更新プログラムに移行するためのプロセスについて説明します。
 author: laneswenka
-manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,18 +12,20 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: f09dbf28435de28e89d200043fb9d49137598100
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 13d5358aba9e2196ffe948a0beb8cc07a8a7df01
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681038"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777853"
 ---
 # <a name="self-service-upgrade-to-the-latest-version"></a>最新バージョンへのセルフサービス アップグレード
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
+> ここで説明されているプロセスは、Finance and Operations アプリの古いバージョンと最新バージョン間のデータ更新では非推奨となりました。 Dynamic AX 2012 アップグレードの詳細については、[AX 2012 から Finance and Operations へのアップグレード](upgrade-overview-2012.md)を参照してください。
+>
 > このトピックは、次の開始バージョンに適用されます:
 >
 > - Microsoft Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) (バージョン 7.1 とも呼ばれます)
@@ -205,7 +205,7 @@ ms.locfileid: "4681038"
 
 サンドボックス UAT 環境でアップグレードをコミットした後、サンドボックス環境でアップグレード プロセスを完了します。 実稼働環境で、同じプロセスを開始できるようになりました。 実行する手順は同じです。
 
-実稼働環境のアップグレード時に非常に長いダウンタイムを引き起こす問題が発生した場合、[実稼働環境の停止の報告](https://docs.microsoft.com/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage)プロセスを使用して、Microsoft に知らせてサポートを受けます。
+実稼働環境のアップグレード時に非常に長いダウンタイムを引き起こす問題が発生した場合、[実稼働環境の停止の報告](/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage)プロセスを使用して、Microsoft に知らせてサポートを受けます。
 
 ### <a name="upgrade-additional-environments"></a>追加の環境のアップグレード
 
@@ -228,3 +228,6 @@ ms.locfileid: "4681038"
 **アプリケーション構成の同期に失敗しました。最初に TTSBEGIN を呼び出さずに TTSCOMMIT の呼び出してください。**
 
 この TTSCOMMIT エラーは断続的であり、データ アップグレード パッケージの **再開** ボタンを使用して解決できます。 **再開** を選択すると、同じ段階でプロセスが再開されます。 (この問題は PU 21 で修正されます。)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 97ec85ebccacd3a827e8a016098939134823dceb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413685"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243698"
 ---
 # <a name="reset-receipt-numbers"></a>レシート番号のリセット 
 
@@ -68,3 +67,6 @@ ms.locfileid: "4413685"
 
 > [!NOTE]
 > 選択するリセット日付、およびとレシート形式に応じて、レシート番号が重複している場合があります。 販売時点管理 (POS) システムではこれらの状況を処理できますが、販売担当者が重複するレシートから選択する必要があるため、返品の処理にかかる時間が増加します。 重複するレシートが計画された結果ではない場合、データ クリーンアップに関連するその他の問題が発生する可能性があります。 したがって、動的な日付文字 (たとえば、**ddd**、**MM**、**DD**、および **YY**) を使用して、リセット後のレシート番号の重複を防ぐようお勧めします。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

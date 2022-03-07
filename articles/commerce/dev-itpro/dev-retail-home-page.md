@@ -2,11 +2,9 @@
 title: IT プロおよび開発者向けコマース
 description: このページには、IT プロとコマースをサポートする開発者が利用できるリソースが一覧表示されています。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8874217778315bf0d935f868d2e029535b45c8df
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2b949488bcbe655d0f4bd15f8c6f21bf58e53544
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684975"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793015"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -75,8 +73,8 @@ ms.locfileid: "4684975"
 - [販売時点管理 (POS) トランザクション グリッドへのカスタム列の追加](pos-custom-transaction-column.md)
 - [販売時点管理 (POS) API または POS 拡張からの工程を呼び出す](pos-api-extension.md)
 - [POS (MPOS) のトリガーと印刷](pos-trigger-printing.md)
-- [デザイナー ベースの画面レイアウトではない POS のビューにカスタム コントロールを追加します](pos-control-non-screen.md)
-- [管理者アクセスのないクラウド ホスト開発環境での開発](cloud-dev-box.md)
+- [非画面デザイナー ベース POS ビューへのカスタム コントロールの追加](pos-control-non-screen.md)
+- [管理者のアクセス権を使用しないクラウド ホスト環境での開発](cloud-dev-box.md)
 - [Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](pos-rsat.md)
 - [POS カート ビューのイベントおよびハンドラー](cart-view-handlers.md)
 - [カスタム ボタンを POS ヘッダー バーに追加](pos-header-bar.md)
@@ -111,7 +109,7 @@ ms.locfileid: "4684975"
 
 - [Retail ソフトウェア開発キット (SDK) アーキテクチャ](retail-sdk/retail-sdk-overview.md)
 - [Retail SDK の今後の変更](UpcomingSDKChanges.md)
-- [バージョン 10.0.10 から 10.0.13 への重要な開発上および ALM の変更](dev-changes-10-13.md)
+- [バージョン 10.0.10 から 10.0.13 における開発と ALM の変更](dev-changes-10-13.md)
 - [配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)
 - [コマースおよび Finance のビルド システムのマージ](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行](retail-sdk/migrate-sdk.md)
@@ -133,7 +131,7 @@ ms.locfileid: "4684975"
 - [POS でカスタム通知を表示する](extend-pos-notification.md)
 - [Commerce SDK ビルド パイプラインの設定](retail-sdk/SDK-build-pipeline.md)
 - [Retail SDK FAQ](retail-sdk/sdk-faq.md)
-- [新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)](retail-server-icontroller-extension.md)
+- [Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)](retail-server-icontroller-extension.md)
 - [新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以前)](retail-server-extension.md)
 - [外部アプリケーションでの Retail Server API の使用](consume-retail-server-api.md)
 
@@ -148,4 +146,7 @@ ms.locfileid: "4684975"
 - [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 - [支払コネクタの配置](deploy-payment-connector.md)
-- [Service Fabric 配置でアプリケーション エクスプローラーの支払パッケージの作成](payment-connector-package.md)
+- [Finance and Operations 配置用コマース支払パッケージの作成](payment-connector-package.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

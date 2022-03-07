@@ -1,12 +1,10 @@
 ---
 title: Lifecycle Services (LCS) での問題検索
-description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) の問題検索ツールに関する情報を提供します。 製品の問題と規制機能を検索する方法について説明し、各ステータスに用意されている情報について説明します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) の問題検索ツールに関する情報を提供します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0db776c846e30cdfca45c3f94b4b495c5163260c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f03eff13d1798f9ae7365fb9bf2c85bf77603fa8e003e2ed4665c3ab81d32058
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753008"
 ---
 # <a name="issue-search-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) での問題検索
 
@@ -29,8 +27,7 @@ ms.locfileid: "4680010"
 
 この記事では、Microsoft Dynamics Lifecycle Services (LCS) の問題検索ツールに関する情報を提供します。 製品の問題と規制機能を検索する方法について説明し、各ステータスに用意されている情報について説明します。
 
-<a name="prerequisites"></a>前提条件
--------------
+## <a name="prerequisites"></a>前提条件
 
 None
 
@@ -142,3 +139,6 @@ None
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

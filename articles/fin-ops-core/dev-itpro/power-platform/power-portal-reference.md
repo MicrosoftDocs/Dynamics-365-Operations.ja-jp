@@ -2,11 +2,9 @@
 title: Power Apps ポータルと Finance and Operations
 description: このトピックでは、Power Apps ポータルを Finance and Operations で使用する方法について説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d5237ef5904da47b1049e0b477f261046c70eb02
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: d8539ca7ed9b3089010b37a346d3ba821005cf2cadc59a9c321bbcaf453522aa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744419"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736242"
 ---
 # <a name="power-apps-portals-with-finance-and-operations"></a>Power Apps ポータルと Finance and Operations
 
@@ -28,7 +26,7 @@ ms.locfileid: "4744419"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
+> この機能を使用するには、Finance and Operations アプリのバージョン 10.0.12 が必要ですが、Dataverse にはサービス更新 189 が必要です。 Dataverse のリリース情報は、[最新バージョンの利用可能性](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)ページに発行されています。
 
 Power Apps ポータルでは、Dataverse の仮想エンティティとして使用できる Finance and Operations エンティティに対して、作成、更新、および削除 (CRUD) 操作を行うことができます。 このトピックでは、Finance and Operations アプリの Power Apps ポータルに実装されているシナリオについて説明します。
 
@@ -50,3 +48,6 @@ Power Apps ポータル認証は Dataverse の連絡先エンティティにリ�
 
 > [!NOTE]
 > ユーザー (認証済または匿名) にいずれかの Finance and Operations アプリで、システム管理者ロールが割り当てられている場合、Power Apps ポータルからのアクセスは失敗します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

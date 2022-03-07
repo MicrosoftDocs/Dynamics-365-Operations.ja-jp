@@ -2,27 +2,24 @@
 title: モバイル デバイスで最も古いバッチをピッキング
 description: このトピックでは、最も古いバッチをピッキングづつオプションを適用する方法について説明します。
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f235c34d6369c6f0584a7bac1c1be75f3d84c9c0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d96221ae14610057cceed304efa01261eb01aef134e4bdad10ccd0386bd52cf9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431843"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746726"
 ---
 # <a name="pick-oldest-batch-on-a-mobile-device"></a>モバイル デバイスで最も古いバッチをピッキング
 
@@ -41,3 +38,6 @@ ms.locfileid: "4431843"
 **警告** および **強制**: 作業者が、バッチを選択すると、有効期限日がもっとも古いバッチの一覧がバッチ コントロールの上に表示されます。 場所がライセンス プレートで制御されている場合、最も古いバッチを持つナンバー プレートのリストがナンバー プレート コントロールの上に表示されます。 
 -   **警告**: 表示されている一覧の上にあるライセンス プレートまたはバッチを選択すると、コントロールが非表示になり、古いバッチを選択できるという警告が表示されます。 作業を続行できるようにするには、作業者は同じライセンス プレートまたはバッチを再度選択できます。  
 -   **強制**: 作業者には、さらに古いバッチのピッキングがあるというメッセージが引き続き表示されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

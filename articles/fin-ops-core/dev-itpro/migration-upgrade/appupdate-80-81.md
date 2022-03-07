@@ -2,11 +2,9 @@
 title: バージョン 8.0 から 10.0.X への環境の更新
 description: このトピックでは、既存の Finance and Operations 8.0 環境を、10.0.X アプリケーション リリースに更新するために必要な手順について説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: adf1ddd59c3f034bc6814b89aef1fe3d16bb9429
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb1af4d0a2cee3ae8f99cdd45fc72be52f57f10155b0ef868a32ce716d1b080a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745846"
 ---
 # <a name="update-environments-from-version-80-to-100x"></a>バージョン 8.0 から 10.0.X への環境の更新
 
@@ -62,12 +60,12 @@ Lifecycle Services で、手順 1 で配置した **ビルド サーバー** に
 ## <a name="begin-branch-work-for-version-control-and-remove-any-application-hotfixes"></a>バージョン管理の分岐作業を開始し、アプリケーション修正プログラムを削除
 新しい環境が展開されるとき、更新の分岐作業を開始します。 例として、バージョン管理での次の分岐構造を使用します。  分岐の設計は顧客ごとに異なりますので、分岐の設定に基づき、それに応じてステップを調整するように注意してください。
 
-[![VersionControl](./media/VersionControl.png)](./media/VersionControl.png)
+[![VersionControl。](./media/VersionControl.png)](./media/VersionControl.png)
 
 ### <a name="prepare-using-visual-studio"></a>Visual Studio を使用する準備
 その他の開発コンピューター (展開される新規コンピューター以外) で、Visual Studio を開き、ソース管理エクスプローラーに移動します。 10.0.X 更新用に分離される新しい分岐を作成します。
 
-[![BranchFor81](./media/BranchFor81.png)](./media/BranchFor81.png)
+[![BranchFor81。](./media/BranchFor81.png)](./media/BranchFor81.png)
 
 次に、この分岐で Microsoft パッケージ フォルダーを削除します。 削除する必要のある 8.0 での修正プログラムの適用するからチェックインした、ApplicationSuite などのパッケージがあります。 カスタム パッケージまたは ISV が残っているときのみ、分岐にこれらの変更をチェックインします。
 
@@ -119,3 +117,6 @@ Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadat
 DVT または ETWのステップが実行されると IIS/アプリケーション プールが完全に再開されない既知の問題があります。 DVT が環境の URL に接続しようとしているため、問題が発生します。 この問題を解決するには、LCS の展開で **再開** をクリックして、ステップを再試行します。  この問題を解決するため、タイマーと自動再試行が追加されます。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

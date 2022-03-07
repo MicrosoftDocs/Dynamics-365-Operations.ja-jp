@@ -1,10 +1,12 @@
 ---
 title: 固定資産の取得の転記勘定
-description: この記事では、資産の取得について総勘定元帳の転記勘定を設定する方法について説明します。
-author: moaamer
+description: この記事は、資産の取得について総勘定元帳の転記勘定を設定する方法を説明します。
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
@@ -12,21 +14,21 @@ ms.reviewer: roschlom
 ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7718ab6ad40dd135a79d2d07def19465aef68b33
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: fa0d73790a20f3fe5bb76b87e635b1f16e034479
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675027"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976119"
 ---
 # <a name="fixed-asset-acquisition-posting-accounts"></a>固定資産の取得の転記勘定
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、資産の取得について総勘定元帳の転記勘定を設定する方法について説明します。
+この記事は、資産の取得について総勘定元帳の転記勘定を設定する方法を説明します。
 
 固定資産の取得の転記に使用される勘定は、資産を取得するのに使用された方法によって異なる場合があります。 [固定資産転記プロファイル] ページの [勘定科目] タブで、元帳に転記する固定資産勘定を設定するための取得と取得原価調整を選択します。 
 
@@ -42,6 +44,3 @@ ms.locfileid: "7675027"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

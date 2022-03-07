@@ -1,12 +1,10 @@
 ---
 title: 仕入先コラボレーションの設定と管理
 description: このトピックでは、Dynamics 365 Supply Chain Management で仕入先コラボレーションを設定する方法について説明します。 また、新しい仕入先コラボレーション ユーザーのプロビジョニング方法およびそれらのユーザーのセキュリティ ロールの管理方法についても説明します。
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
 audience: IT Pro
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5c4d534a40582fb0f5cb7c924ed4287376eda70f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 38c1a8b63d4c18646ba9d83139a7a46e09c607e7
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016364"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575449"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>仕入先コラボレーションの設定と管理
 
@@ -117,10 +115,10 @@ Supply Chain Management で提供されている **仕入先見込顧客 (外部
 #### <a name="branch-to-provision-new-users"></a>新しいユーザーをプロビジョニングするための分岐
 
 1. 新しいユーザーに仕入先コラボレーション情報へのアクセスを許可することを承諾する担当者に、承認タスクを割り当てます。
-2. Azure ポータルで新しい Microsoft Azure Active Directory (Azure AD) ユーザー アカウントを要求する担当者にタスクを割り当てます。 この手順では、事前に定義された **Azure B2B ユーザー招待状の送信** タスクを使用します。 B2B ユーザーは、Azure AD に自動的にエクスポートできます。 定義済みの **Azure AD B2B ユーザーのプロビジョニング** を使用します。 詳細については、[Azure AD に B2B ユーザーをエクスポート](../../dev-itpro/sysadmin/implement-b2b.md)を参照してください。
+2. Azure ポータルで新しい Microsoft Azure Active Directory (Azure AD) ユーザー アカウントを要求する担当者にタスクを割り当てます。 この手順では、事前に定義された **Azure B2B ユーザー招待状の送信** タスクを使用します。 B2B ユーザーは、Azure AD に自動的にエクスポートできます。 定義済みの **Azure AD B2B ユーザーのプロビジョニング** を使用します。 詳細については、[Azure AD に B2B ユーザーをエクスポート](../../fin-ops-core/dev-itpro/sysadmin/implement-b2b.md)を参照してください。
 3. 承認タスクを Azure にアップロードするユーザーに割り当てます。 勘定が正常に作成されていない場合、このユーザーはタスクを却下し、ワークフローを終了します。 この承認タスクは、B2B アプリケーション プログラミング インターフェイス (API) を使用して Azure に新しいユーザー アカウントを自動的にエクスポートするステップを含めるとスキップできます。
 4. 新しいユーザーを準備する自動化タスクを追加します。 この手順では、事前に定義された **ユーザーの自動プロビジョニング** タスクを使用します。
-5. 新しいユーザーに通知するタスクを追加します。 Supply Chain Management の URL を含むようこそ電子メールを新しいユーザーに送信する可能性があります。 このメールでは、**電子メール メッセージ** ページで作成したテンプレートを使用して、**ユーザー ワークフロー パラメーター** ページを選択できます。 テンプレートには、**%portal URL%** タグを含めることができます。 ようこそ電子メールが生成されると、このタグは Supply Chain Management テナントの URL に置き換わります。
+5. 新しいユーザーに通知するタスクを追加します。 Supply Chain Management の URL を含むようこそ電子メールを新しいユーザーに送信する可能性があります。 このメールでは、**電子メール メッセージ** ページで作成したテンプレートを使用して、**ユーザー ワークフロー パラメーター** ページを選択できます。 テンプレートには、**%portalURL%** タグを含めることができます。 ようこそ電子メールが生成されると、このタグは Supply Chain Management テナントの URL に置き換わります。
 
     > [!NOTE]
     > このワークフローは、ユーザー オンボードを含む複数のシナリオで使用できます。 たとえば、見込み仕入先または連絡担当者に仕入先コラボレーション アカウントを必要とする場合、使用できます。 したがって、複数の目的に使用できる一般的なステートメントとしてメールを使用する必要があります。
@@ -154,10 +152,13 @@ Supply Chain Management で提供されている **仕入先見込顧客 (外部
 
 新しいベンダー コラボレーション ユーザーの電子メール アドレスが、テナントとして Azure に登録されているドメインに属している場合 (つまり、管理対象ドメイン アカウントの場合)、電子メール アドレスは既存の Azure AD アカウントである必要があります。 それ以外の場合、プロビジョニング プロセスを実行することはできません。
 
-Azure AD アカウント管理のワークフローでの **Azure B2B ユーザー招待の送信** タスクで使用されるプロセスの詳細については、[Azure Active Directory B2B コラボレーション](https://azure.microsoft.com/documentation/articles/active-directory-b2b-collaboration-overview/) を参照してください。
+Azure AD アカウント管理のワークフローでの **Azure B2B ユーザー招待の送信** タスクで使用されるプロセスの詳細については、[Azure Active Directory B2B コラボレーション](/azure/active-directory/external-identities/what-is-b2b) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [外部仕入先との仕入先コラボレーション](vendor-collaboration-work-external-vendors.md)
 
 仕入先のオンボーディング プロセスの簡単なビデオ[新しい仕入先の搭載](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)をご覧ください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

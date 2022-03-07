@@ -2,11 +2,9 @@
 title: 自分のデータベースの持ち込み (BYOD)
 description: このトピックでは、エンティティを 独自の Azure SQL データベースにエクスポートする方法について説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 3feaf73644ed4f5ee6409f047016bbaaf72b34d6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f6886d12933943b7908dc283555a541b24577e6a
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682785"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935897"
 ---
 # <a name="bring-your-own-database-byod"></a>自分のデータベースの持ち込み (BYOD)
 
@@ -36,7 +34,7 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 
 ## <a name="entity-store-or-byod"></a>エンティティ格納または BYOD か
 
-[Microsoft Power BI 統合についてのブログ投稿](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)のシリーズに従った場合、エンティティ格納に精通できます。 エンティティ格納は運用データ ウェアハウスです。 エンティティ格納では、Power BI の実稼働レポートの組み込み統合を提供します。 既製のレポートと分析ワークスペースでエンティティ格納を使用します。 アプリケーションの環境のデータを使用して Power BI レポートを作成する場合は、エンティティ格納を使用する必要があります。
+[Microsoft Power BI 統合についてのブログ記事](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update) のシリーズに従った場合、エンティティ格納に精通できます。 エンティティ格納は運用データ ウェアハウスです。 エンティティ格納では、Power BI の実稼働レポートの組み込み統合を提供します。 既製のレポートと分析ワークスペースでエンティティ格納を使用します。 アプリケーションの環境のデータを使用して Power BI レポートを作成する場合は、エンティティ格納を使用する必要があります。
 
 ただし、次のシナリオでは BYOD 機能をお勧めします。
 
@@ -61,6 +59,8 @@ BYOD 機能により、管理者は、独自のデータベースを構成し、
 
 > [!NOTE]
 > BYOD データベースは、Finance and Operations アプリからアクセスできる必要があります。 BYOD にアクセスできない問題が発生した場合は、BYOD のファイアウォール規則が適切に構成されていることを確認する必要があります。
+> 
+> Azure SQL データベースのパフォーマンス層の使用が推奨されます。 層の詳細については 、[SQL Azure層](https://docs.microsoft.com/azure/azure-sql/database/service-tiers-dtu) を参照してください。
 
 ## <a name="configuring-the-entity-export-option"></a>エンティティのエクスポート オプションのコンフィギュレーション
 
@@ -153,7 +153,7 @@ BYOD からデータを読み取るレポート システムのシナリオで�
 
 複数のエンティティを持つデータ プロジェクトを作成することができます。 バッチ フレームワークを使用することにより、このデータ プロジェクトの実行をスケジュールすることができます。 また、**バッチ処理でのエクスポート** オプションを選択することにより、データ エクスポート ジョブを定期的に実行するようにスケジュールします。
 
-同じジョブを使用してすべての会社からデータをエクスポートすることもできます。 プラットフォーム更新プログラム 27 以前では、この機能はフライト DMFEnableAllCompanyExport を有効にすることで有効化することができます。これについては、 [データ管理の概要](../data-entities/data-entities-data-packages.md) で解説しています。 プラットフォーム更新プログラム 27 以降では、この機能はデータ管理フレームワークのパラメーターで有効にすることができます。 この機能を有効にすると、データプロジェクトにエンティティを追加する際に新しいオプションが表示されます。 このオプションを有効にすると、すべての会社から特定のエンティティのデータをエクスポートすることができます。 
+同じジョブを使用してすべての会社からデータをエクスポートすることもできます。 プラットフォーム更新プログラム 27 以前では、この機能はフライト DMFEnableAllCompanyExport を有効にすることで有効化することができます。これについては、 [データ管理の概要](../data-entities/data-entities-data-packages.md) で解説しています。 プラットフォーム更新プログラム 27 以降では、この機能はデータ管理フレームワークのパラメーターで有効にすることができます。 この機能を有効にすると、データプロジェクトにエンティティを追加する際に新しいオプションが表示されます。 このオプションを有効にすると、すべての会社から特定のエンティティのデータをエクスポートすることができます。 ジョブは順次、各会社からデータをエクスポートします。 この動作は、パフォーマンスやその他の課題のために、異なる会社からのデータの並列エクスポートを許可することで変更され、ソリューションの信頼性が低下しました。
 
 > [!NOTE]
 > BYOD 用のエクスポート プロジェクト に複数の エンティティ を追加する場合は、BYOD エクスポート の全体的な信頼性が損なわれないように注意して実行する必要があります。 同じプロジェクトに追加する エンティティ の数を決定する場合は、異なるパラメータを考慮する必要があります。 これらのパラメータには、エンティティの複雑度、予想されるエンティティごとのデータ量、ジョブレベルでのエクスポート完了までの全体的な時間が含まれている必要があります。 大量の エンティティ を追加することは避ける必要があるため、より少ないエンティティ数で複数のジョブを作成することを推奨します。
@@ -184,7 +184,7 @@ BYOD は独自のデータベースであるため、データが同期されて
 
 #### <a name="you-cant-export-composite-entities-into-your-own-database"></a>独自のデータベースに複合エンティティをエクスポートすることはできません。
 
-現在、複合エンティティがサポートされていません。 複合エンティティを構成する個々 のエンティティをエクスポートする必要があります。 ただし、同じデータ プロジェクト内の両方のエンティティをエクスポートすることができます。
+現在、複合エンティティがサポートされていません。 複合エンティティを構成する個々のエンティティをエクスポートする必要がありますが、これは同じデータプロジェクト内で行うことができます。
 
 #### <a name="entities-that-dont-have-unique-keys-cant-be-exported-by-using-incremental-push"></a>固有キーを持たないエンティティは、増分プッシュを使用してエクスポートすることは不可能
 
@@ -214,5 +214,8 @@ Failed to open a fastload rowset for <entityStaging>. Check that the object exis
 OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
 ```
 
-**解決策** - AZURE SQL BYOD サーバーの接続ポリシーがプロキシに設定されている場合に、この問題が発生することがあります。 [SQL DB 接続アーキテクチャ](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture) の説明に従って、これを「リダイレクト」に変更する必要があります。
+**解決策** - AZURE SQL BYOD サーバーの接続ポリシーがプロキシに設定されている場合に、この問題が発生することがあります。 [SQL DB 接続アーキテクチャ](/azure/sql-database/sql-database-connectivity-architecture) の説明に従って、これを「リダイレクト」に変更する必要があります。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

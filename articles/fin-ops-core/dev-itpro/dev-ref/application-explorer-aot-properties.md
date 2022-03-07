@@ -2,26 +2,21 @@
 title: アプリケーション エクスプローラーのプロパティ
 description: このトピックでは、アプリケーション エクスプローラーの品目向けに Microsoft Visual Studio のプロパティ ウィンドウに表示されるプロパティについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 85213
-ms.assetid: ca186dda-8a78-4969-9be0-b81be00892e5
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53a9b9630a2c99dd980187d5ae8000165f0fb6de
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: 958394fd0fca370bce825e5a0a5a8f2bad850407
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4409707"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865867"
 ---
 # <a name="application-explorer-properties"></a>アプリケーション エクスプローラーのプロパティ
 
@@ -3947,3 +3942,6 @@ T次のテーブルでは、アプリケーション エクスプローラーの
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

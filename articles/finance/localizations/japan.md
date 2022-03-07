@@ -2,25 +2,22 @@
 title: 日本の概要
 description: このトピックでは、日本固有の機能の概要を示します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: cd1ac44bd9e36a482f18bccd250726fe7b7cf4d1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 92e9dedff1e94596c011b8b17ebb210f9521a982
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408156"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983113"
 ---
 # <a name="japan-overview"></a>日本の概要
 
@@ -125,6 +122,9 @@ ms.locfileid: "4408156"
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [電子申告の概要](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [電子申告の概要](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Lifecycle Services から電子申告コンフィギュレーションをダウンロードする](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics のローカライズのポータル: オーストラリアのレポート (CustomerSource アカウントが必要です)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/japan.html)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

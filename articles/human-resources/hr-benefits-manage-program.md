@@ -1,39 +1,41 @@
 ---
 title: 給付金プログラムの定義および管理
-description: 人事管理は、給付金、控除、および組織が作業者に対して提供または処理する作業者の報酬プランを設定および管理するのに使用できる一連のツールを提供します。 この記事は、管理された給付金を設定する方法に関する情報を提供します。
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: 人事管理は、給付金、控除、および組織が作業者に対して提供または処理する作業者の報酬プランを設定および管理するのに使用できる一連のツールを提供します。 このトピックは、給付金を管理および設定する方法に関する情報を提供します。
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListPage, SysPolicySourceDocumentRuleType, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a7fe99d4982b8f35871b15e8049c39eb806e315c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1f2bfa901aa299a091194978ee95ff0e69f2cdbf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419335"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065354"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>福利厚生プログラムの定義および管理
 
-Human Resources は、組織が従業員に対して提供または処理する給付金、控除、および従業員の報酬プランを設定および管理するために使用できる一連のツールを提供します。 この記事は、設定と給付金を管理する方法の情報を提供します。
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Human Resources は、組織が従業員に対して提供または処理する給付金、控除、および従業員の報酬プランを設定および管理するために使用できる一連のツールを提供します。 このトピックは、給付金を管理および設定する方法に関する情報を提供します。
 
 ## <a name="benefit-setup"></a>Benefit の設定
 
 作業者を給付金に登録する前に、各給付金の要素を作成する必要があります。 これらの要素は同様の給付金計画を組み合わせて、控除割合と計算の詳細などの既定の設定を定義します。 これらの設定の多くは、作業者が給付金に後で登録されたときに調整できます。 各給付金計画に対して、組織が複数の登録オプションを提供するか、作業者が計画への登録を免除できます。 
 
-[![給付金プロセス フロー](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
+[![給付金プロセス フロー。](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>給付金の要素
 
@@ -45,7 +47,7 @@ Human Resources は、組織が従業員に対して提供または処理する�
 
 視力または歯科などの各給付金のタイプごとに、組織は作業者に複数の計画を提供できます。 各計画ごとに、組織はさまざまなオプションを提供できます。 たとえば、作業者は年間の給与から、1 回 2 回または 3 回追加の定期生命保険の補充を購入できます。 計画とオプションの各組み合わせが、作業者が登録する給付金になります。 
 
-[![給付金の図](./media/benefit-pic.png)](./media/benefit-pic.png)
+[![給付金の図。](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>適格性
 さまざまな要因により、雇用主が提供する給付金のさまざまなタイプに対する作業者の適格性が決定します。 Dynamics 365 Human Resources を使用して給付金を作成すると、その給付金が適用される適格性のタイプを設定できます。 
@@ -64,3 +66,6 @@ Human Resources は、組織が従業員に対して提供または処理する�
 同様に、給付金の一括延長により、当初計画していた期間より長く給付金を提供すると決定した場合に、給付金およびその給付金に登録されている作業者両方の有効期限を同時に延長できます。
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

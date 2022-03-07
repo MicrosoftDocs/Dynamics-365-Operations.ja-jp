@@ -2,11 +2,11 @@
 title: 使用権資産減価償却の記録 (プレビュー)
 description: このトピックでは、組織の貸借対照表に表示されるリースに必要な償却のための仕訳入力方法について説明します。
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetLeaseAssetSchedule
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a766247e5482677429706a324c09cc9be4386c0b
-ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
+ms.openlocfilehash: c64f19d4cf334a6cbcacaaa3753dbafe8cbf1ffe
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/29/2021
-ms.locfileid: "7947318"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823074"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>使用権資産減価償却の記録 (プレビュー)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 組織の貸借対照表に表示されているリースについては、使用権 (ROU) 資産が月ごとに償却されます。 このトピックでは、償却のための仕訳入力方法について説明します。 転記プロファイルの設定とリース タイプに基づいて、償却によって経費勘定科目の借方に転記され、減価償却累計額の勘定科目は貸方に転記されます。 これらのエントリは、各リースに対して作成することも、バッチ仕訳機能を使用して複数のリースに対して作成することもできます。
 
@@ -35,12 +33,9 @@ ms.locfileid: "7947318"
 1. **リースの概要** ページで、[リース] を選択します。 次に、**帳簿 \> 資産減価償却スケジュール** の順に選択し、**資産減価償却スケジュール** ページを開きます。
 
     使用件資産減価償却の経費仕訳帳のエントリは、**減価償却経費** 列の金額に基づいています。 会計の基準コンプライアンスに関するガイダンスの例については、このトピックの後半で説明する [ファイナンス リースに対する使用権資産償却経費を計算](#calculation-of-rou-asset-amortization-expense-for-finance-leases) セクションを参照してください。
-    
+
 2. 減価償却期間を選択し、**仕訳帳の作成** を選択します。 減価償却の作成を記録するために使用する仕訳帳が作成されたことを示すメッセージが表示されます。
 3. **仕訳帳 \> 資産リース仕訳帳** の順に選択し、**資産リース仕訳帳** ページを開きます。このページでは、作成した減価償却経費仕訳帳エントリが表示されます。
-
-   このシステムには、トランザクションとスケジュールの間に差異が生じないように、特定の財務フィールドが編集できないようロックされています。 ロックされている一部のフィールドは次のとおりです。**勘定**、**金額**、**財務分析コード**、**通貨**、**トランザクション タイプ**。 また、スケジュールとトランザクションの間に差異が発生することがあるため、資産リース仕訳入力に仕訳明細行を追加または削除することはできません。
-
 4. [仕訳入力] を選択し、**転記** を選択すると、減価償却エントリが一般会計に記録されます。
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>オペレーティング リースにおける使用権資産の償却経費の計算
@@ -70,8 +65,6 @@ ms.locfileid: "7947318"
 
 > [!NOTE]
 > ASC 842 によると、オペレーティング リースに対する使用権資産の減価償却は、損益計算書にリース経費として分類します。 可視性を実現するため、資産リースでは、エントリが使用権資産の減価償却として記述されます。 ただし、借方エントリはオペレーティング リースの経費勘定に割り当てる必要があり、貸方エントリは、オペレーティング リースに対する使用権資産に直接割り当てる必要があります。 それでも、リース パラメータでは、オペレーティング使用権資産の減価償却累計額勘定に対してクレジット エントリを作成するように指定できます。
-
-リースが営業リースとして分類される場合、減損後の月間の減価償却は、一定の減価償却を使用して計算されます。
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-finance-leases"></a>ファイナンス リースにおける使用権資産の償却経費の計算
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: cf307964a07c2b69eb5e4ef2cf9dc094482736d0970e333e84f674c9be6331c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8e11dc918eb3c9085018d15b43819522cc8bebe3
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740530"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026676"
 ---
 # <a name="only-one-label-is-printed-for-multiple-work-headers-on-a-single-receipt"></a>1 つのレシートの複数の作業ヘッダーに対して印刷されるラベルは 1 つのみである
 

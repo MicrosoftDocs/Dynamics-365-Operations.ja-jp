@@ -2,11 +2,9 @@
 title: 勤務時間外の登録
 description: このトピックでは、勤務時間外登録を処理する方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a61f23ac5a16000275e53d3901c8aea202bab0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b765ae63cfb17e26439758f2a0ed64770ef70881
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966633"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809281"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>勤務時間外の登録
 
@@ -108,3 +106,6 @@ ms.locfileid: "4966633"
 ### <a name="calculate-and-approve-absence"></a>休暇の計算と承認
 
 - **休暇時間** &gt; **確認および承認** &gt; **承認または計算** を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

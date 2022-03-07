@@ -2,25 +2,23 @@
 title: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 description: このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24411
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 47db8718e7223d8a6a78068538c39afa9b0ca193
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 63827793cf72ac44a40157363f159ed481f9c34b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681504"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781709"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -60,34 +58,36 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | SearchOrdersView                | いいえ                            | はい                          | いいえ                                   |
 | SearchPickingAndReceivingView   | 無                            | 有                          | 有                                   |
 | CustomerOrderHistoryView        | 無                            | 有                          | 無                                   |
-| SearchStockCountView            | 無                            | はい                          | いいえ                                   |
-| StockCountDetailsView           | いいえ                            | はい                          | いいえ                                   |
-| ResumeCartView                  | いいえ                            | はい                          | はい                                    |
-| InventoryLookupMatrixView       | いいえ                            | いいえ                           | はい                                   |
-| SuspendTransactionView          | 無                            | 有                          | 無                               |   
-| ManageShiftView                 | 無                            | 無                           | 有                               |  
-| ReportDetailsView               | 無                            | 無                           | 有                               |
-| SearchReceiptsView              | 無                            | 無                           | 有                               |
-| StockCountDetailsView           | いいえ                            | いいえ                           | はい                               |
-| TransferOrderDetailsView        | いいえ                            | いいえ                           | はい                               |
+| SearchStockCountView            | なし                            | あり                          | なし                                   |
+| StockCountDetailsView           | なし                            | あり                          | あり                                   |
+| ResumeCartView                  | なし                            | あり                          | あり                                    |
+| InventoryLookupMatrixView       | なし                            | なし                           | はい                                   |
+| SuspendTransactionView          | 無                            | あり                          | なし                               |   
+| ManageShiftView                 | なし                            | なし                           | あり                               |  
+| ReportDetailsView               | なし                            | なし                           | あり                               |
+| TransferOrderDetailsView        | なし                            | なし                           | あり                               |
 | FulfillmentLineView             | いいえ                            | はい                          | はい                               |
 | ReturnTransactionView           | いいえ                            | はい                          | はい                               |
 | PickingAndReceivingDetailsView  | いいえ                            | はい                          | はい                    |
 | PickingAndReceivingDetailsView (高度な倉庫)  | 無                            | 有                          | 有           |
 | SalesInvoiceDetailsView (10.0.11) | 無                            | 無                          | 有           |
 | SalesInvoicesView (10.0.11) | 無                            | 有                          | 無           |
-| InventoryDocumentShippingAndReceivingView (10.0.13) | なし                            | なし                          | あり           |
+| InventoryDocumentShippingAndReceivingView (10.0.13) | なし                            | はい (10.0.23)                          | あり           |
 | InventoryDocumentListView  | なし                            | はい (10.0.15)                          | はい (10.0.13)          |
+| ManageShiftsView  | なし                            | はい (10.0.21)                          | なし          |
 
 
 
 > [!NOTE]
 > 上記に表示される表は、リリースされた最新バージョンおよび修正プログラムに基づいて更新されています。 旧バージョンでは、これらの拡張ポイントの一部は使用できません。
 
-> [!NOTE]
-> 仕訳帳の表示 (行グリッド) と 返品トランザクション ビューのカスタム列は、行サブ フィールドの使用をサポートしています。 これらのサブ フィールドは、情報コード メッセージ、シリアル番号、割引の値などのように、列ではなく行として表示されます。
+> 仕訳帳の表示 (行グリッド) と 返品トランザクション ビューでは、行サブ フィールドを使用してカスタム列をサポートしています。 これらのサブ フィールドは、情報コード メッセージ、シリアル番号、割引の値などのように、列ではなく行として表示されます。
 
-フィルターの拡張機能は **仕訳帳ビューを表示** および **注文ビューを検索** でもサポートされ、カスタム フィルターを追加します。 **注文ビューを検索** は拡張機能を使用してユーザー インターフェイス (UI) に検索用の既定パラメーターを設定することもサポートしています。 たとえば、既定のストア検索パラメータを追加する場合は、拡張機能を使用して UI に表示することでそれを実行できます。 
+## <a name="custom-filter-extension"></a>カスタム フィルターの拡張機能
+
+カスタム フィルターの拡張機能は **仕訳帳表示ビュー**、**注文検索ビュー**、**FulfillmentLine ビュー**、および **在庫ドキュメント出荷および入荷ビュー** でサポートされます。 **注文検索ビュー** は拡張機能を使用してユーザー インターフェイス (UI) に検索用の既定パラメーターを設定することもサポートしています。 たとえば、店舗検索において既定のパラメーターを追加する場合は、拡張機能を使用して UI に表示することでそれを実行できます。 
+
+カスタム フィルターの拡張機能のサンプル コードは、Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts) で使用可能です。
 
 ## <a name="add-a-custom-column-and-an-app-bar-button"></a>カスタム列とアプリ バー ボタンの追加
 
@@ -417,3 +417,6 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
     追加したカスタム列が表示されました。
 
 3. 顧客を選択し、新しいアプリケーション バーのボタンを選択します。 選択した顧客に関する詳細を含むダイアログ ボックスが表示されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

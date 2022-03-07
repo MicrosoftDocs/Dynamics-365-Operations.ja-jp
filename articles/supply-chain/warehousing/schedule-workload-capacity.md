@@ -2,11 +2,9 @@
 title: ワークロード能力のスケジューリング
 description: このトピックでは、倉庫内の従業員または倉庫全体のワークロード能力を設定およびスケジュールする方法について説明します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8db243949b2aeee0a8263276234d439652905449
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 004abe379004d0dc8d0bff526872312bfa7a994b0f7422d1c415927bbecc90ec
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780485"
 ---
 # <a name="schedule-workload-capacity"></a>ワークロード能力のスケジューリング
 
@@ -79,3 +77,6 @@ ms.locfileid: "4965580"
 3. **注文タイプ** フィールドで、**計画済かつ確認済**、**計画済**、または **確認済** を選択し、レポートで予測する注文のタイプを示します。
 4. **負荷タイプ** フィールドで、負荷タイプを選択して、量、または重量のワークロード能力を予測するかどうかを指定します。
 5. **ワークロード能力** フィールドで、ワークロード能力の設定を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

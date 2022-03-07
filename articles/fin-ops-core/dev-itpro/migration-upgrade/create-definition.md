@@ -1,12 +1,10 @@
 ---
 title: AX 2009 の移行 － 移行グループの作成
-description: このトピックでは、財務と Supply Chain Management のように、Microsoft Dynamics AX 2009 から Finance and Operations アプリにアップグレードするための移行グループの作成方法について説明します。
+description: このトピックでは、Microsoft Dynamics AX 2009 から Finance and Operations アプリにアップグレードするために移行グループを作成する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: dfe89d7ccfd727522bf1c878350872d485b4cfb4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: dd080004e8ca5b753e4e6250dc1cbff432e0ee6b26d0e3f142f370765a1cfde7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745842"
 ---
 # <a name="ax-2009-migration--create-migration-groups"></a>AX 2009 の移行 – 移行グループの作成
 
@@ -36,3 +34,6 @@ ms.locfileid: "4683474"
 5. **移行グループ** フォームで、**エンティティ** をクリックし、移行に含める行を選択します。
 6. 必要に応じて、フィールド マッピングの空白を埋めます。
 7. **順序の適用** をクリックしてフォームを閉じます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

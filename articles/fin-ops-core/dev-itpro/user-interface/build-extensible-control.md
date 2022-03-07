@@ -2,26 +2,24 @@
 title: 拡張可能コントロールの構築
 description: このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24291
 ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72ccc5f74564f23e0c486b493827b62b21778818
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 677ee25c7e08a8750a81d8283239bfbb1b294efa
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679828"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783150"
 ---
 # <a name="build-extensible-controls"></a>拡張可能なコントロールの構築
 
@@ -29,8 +27,7 @@ ms.locfileid: "4679828"
 
 このトピックでは、Visual Studio にプロパティ シートを持ち、サーバーサイドのビジネス ロジックを持つ新しいアプリケーション コントロールを作成する方法について説明します。
 
-<a name="prerequisites"></a>必要条件
--------------
+## <a name="prerequisites"></a>必要条件
 
 このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 詳細については、トピック [開発環境の配置とアクセス](../dev-tools/access-instances.md) を参照してください。
 
@@ -56,13 +53,13 @@ Visual Studio を使用してチュートリアル プロジェクトをイン�
 
 1. フリート管理のサンプルを <https://github.com/Microsoft/FMLab> からダウンロードし、**C:\\** に保存してから解凍します。
 2. デスクトップで、Visual Studio ショートカットをダブルクリックして、開発環境を開きます。
-3. <strong>Dynamics 365 **メニューで、**プロジェクトのインポート</strong>をクリックします。
+3. <strong>Dynamics 365**メニューで、**プロジェクトのインポート</strong>をクリックします。
 4. **プロジェクトのインポート** ダイアログ ボックスで、**ファイル名** テキスト ボックスの隣にある、省略記号ボタン (...) をクリックします。
 5. **インポートするファイルの選択** ダイアログ ボックスで、**C:\FMLab** を参照して **FMTutorialDataModel.axpp** をクリックしてから **開く** をクリックします。
 6. **プロジェクト ファイルの場所** フィールドに、**C:\FMLab** と入力します。
 7. **要素の上書き** チェック ボックスをオンにし、**現在のソリューション** オプションをオンにします。 次のスクリーン ショットは、完了した **プロジェクトのインポート** ダイアログボックスを示しています 
 
-   [![完了したプロジェクトのインポート ダイアログ ボックス](./media/ext1.png)](./media/ext1.png)
+   [![完了したプロジェクトのインポート ダイアログ ボックス。](./media/ext1.png)](./media/ext1.png)
 
 8. **OK** をクリックします。
 9. ソリューション エクスプローラーの **FMTutorial** プロジェクトで **クラス** を展開します。
@@ -86,7 +83,7 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 1.  ソリューション エクスプローラーで **フォーム** を展開し、**FMTClerkWorkspace** を右クリックしてから、**スタートアップ オブジェクトとして設定** をクリックします。
 2.  Ctrl+F5 キーを押して、Internet Explorer で **フリート管理係** ページを開きます。 次のスクリーン ショットに示されているように、複数の文字列および日付を含むリスト スタイルの単純なグリッドとしてこのページではデータが表示されます。 
 
-    [![フリート管理係ページのスクリーン ショット](./media/ext2-1024x515.png)](./media/ext2.png)
+    [![フリート管理係ページのスクリーン ショット。](./media/ext2-1024x515.png)](./media/ext2.png)
 
 3.  Internet Explorer を終了します。
 
@@ -99,15 +96,15 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 
 -   **名前** – コントロールをフォームに追加すると、フォーム デザイナに表示されるコントロール名を指定できます。 名前を指定するには、拡張可能コントロールのビルド クラス宣言に **FormDesignControlAttribute** 属性を追加します。 たとえば、次の **FMTBuildContactControl** クラスの申告は、属性を表示します。 
 
-    [![ビルド クラス宣言に追加された FormDesignControlAttribute の例](./media/x1.png)](./media/x1.png)
+    [![ビルド クラス宣言に追加された FormDesignControlAttribute の例。](./media/x1.png)](./media/x1.png)
 
 -   **デザイナー プロパティ** - これらは、コントロールをフォームに追加すると、プロパティ シートに表示されるプロパティです。 さまざまなタイプのデザイナー プロパティを追加できる属性がいくつかあります。 たとえば、**FormDesignPropertyAttribute** 属性はプロパティ シートにプロパティを追加し、プロパティ名およびセクションが属性への引数として指定されます。 たとえば、次のコードは、**アクション名** プロパティを **FMTContactControlAction** クラスに追加します。 
 
-    [![アクション名プロパティが追加されたコードの例](./media/x2.png)](./media/x2.png)
+    [![アクション名プロパティが追加されたコードの例。](./media/x2.png)](./media/x2.png)
 
     次のスクリーン ショットは、このプロパティが Visual Studio の **プロパティ** ウィンドウにどのように表示されるかを示しています。 
 
-    [![プロパティ ウィンドウのスクリーン ショット](./media/ext3.png)](./media/ext3.png)
+    [![プロパティ ウィンドウのスクリーン ショット。](./media/ext3.png)](./media/ext3.png)
 
 -   **子デザイン コンポーネント** - これらは、コントロールをフォームに追加した後に表示される子ノードです。 子の設計コンポーネントには、リーフとリーフ コレクションの 2 つのタイプがあります。
     -   リーフは、別のビルド クラスを受け入れるか、返す X++ メソッドの **FormDesignComponentAttribute** 属性を使用して定義されます。 ビルド クラスは、リーフがプロパティ シートに持つプロパティを決定します。
@@ -115,11 +112,11 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 
     たとえば、次のコードは、**FMTBuildContactControl** クラスの **アクション** という名前のリーフ コレクションを追加します。 
 
-    [![アクション リーフ コレクションが追加されたコードの例](./media/x3.png)](./media/x3.png) 
+    [![アクション リーフ コレクションが追加されたコードの例。](./media/x3.png)](./media/x3.png) 
 
     次のスクリーン ショットは、コントロールをフォームに追加する場合に、指定された子デザイン コンポーネントがどのように表示されるかを示しています。 
 
-    [![コントロールをフォームに追加した後のスクリーン ショット](./media/ext4.png)](./media/ext4.png)
+    [![コントロールをフォームに追加した後のスクリーン ショット。](./media/ext4.png)](./media/ext4.png)
 
 
 ### <a name="tutorial-steps"></a>チュートリアルの手順
@@ -128,11 +125,11 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 2.  子デザイン コンポーネントを FMTBuildContactControl クラスに追加します。 子デザイン コンポーネントを使用すると、フォームにコントロールを設置した開発者は、コントロールに表示されるイメージを指定することができます。 この手順では、**FormDesignComponentAttribute** 属性を追加して、プロパティ シートに新しいエントリを作成します。 次に、**FormDesignPropertyDataFieldAttribute** 属性を追加します。この属性は、新しいデザイナー プロパティがデータ フィールドの選択を使用可能にすることを示します。
     1.  クラスの申告に次の強調表示されたコードを追加します。 このコードは、**FMTBuildContactControl** クラスが使用している X++ に **FormBindingDataField** フィールドを追加します。 
 
-        [![FormBindingDataField フィールドを追加するコードの例](./media/x4.png)](./media/x4.png)
+        [![FormBindingDataField フィールドを追加するコードの例。](./media/x4.png)](./media/x4.png)
 
     2.  **FMTBuildContactControl** クラスに、次のコードを追加します。 データ ソースのデザイナー プロパティの後に、このメソッドを追加します。 
 
-        [![FMTBuildContactControl クラスに追加するコードの例](./media/x5.png)](./media/x5.png)
+        [![FMTBuildContactControl クラスに追加するコードの例。](./media/x5.png)](./media/x5.png)
 
         > [!NOTE]
         > 子デザイン コンポーネントは **FormBindingDataField** ビルド クラスで使用可能なプロパティを表示します。 これは、データ フィールドとデータ ソースへのイメージ データのバインドを有効にするために適しています。 これは、連絡先コントロールのビルド クラスにデザイナー プロパティを追加するために必要なものです。
@@ -143,7 +140,7 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 6.  フォーム デザイナーで、**デザイン** &gt; **PickingUpTodayGrid** を展開してから、グリッドに表示されているコントロールを選択して削除します。
 7.  **PickingUpTodayGrid** を右クリックして **新規** をポイントし、**FMTContactControl** をクリックします。 **FMTContactControl** ノードを展開し、**画像** が新しい子デザイン コンポーネントとして表示されることを通知します。 次の図は、フォーム デザイナーの連絡先コントロールを示しています。 
 
-    [![フォーム デザイナーでの連絡先コントロールのスクリーン ショット](./media/ext5.png)](./media/ext5.png) 
+    [![フォーム デザイナーでの連絡先コントロールのスクリーン ショット。](./media/ext5.png)](./media/ext5.png) 
 
     デザイン時の変更を使用する連絡先管理のための実行時クラスを更新することも必要です。 フォームにコントロールを追加し、後でデータ バインドとプロパティ値を指定することを再検討します。
 8.  Ctrl+S キーを押して変更を保存し、フォーム デザイナーを閉じます。
@@ -161,7 +158,7 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 
     **FormPropertyAttribute** 属性を使用してランタイム プロパティが宣言されます。 次の例は、**FMTContactControl** のプロパティ宣言を示しています。. 
 
-    [![FMTContactControl のプロパティ宣言の例](./media/x6.png)](./media/x6.png)
+    [![FMTContactControl のプロパティ宣言の例。](./media/x6.png)](./media/x6.png)
 
     **FormPropertyAttribute** 属性は、2 つの引数を受け取ります。
     -   最初の引数は、作成する JavaScript ビュー モデル プロパティの種類をフレームワークに示します。
@@ -174,29 +171,29 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 
 -   **コントロールの実行時コマンド** – コマンドはクライアント側のユーザーとのやり取りに基づく、トリガー X++ ロジックのクライアント部分のコントロールを有効にします。 コマンドは **FormCommandAttribute** 属性を使用して宣言されます。 単一の引数は、JavaScript ビューモデルに表示されるコマンドの名前を指定します。 次の例は、**FMTContactControl** のコマンド宣言を示しています。. 
 
-    [![FMTContactControl のコマンド宣言の例](./media/x7.png)](./media/x7.png)
+    [![FMTContactControl のコマンド宣言の例。](./media/x7.png)](./media/x7.png)
 
 ### <a name="tutorial-steps"></a>チュートリアルの手順
 
 1.  コード エディターで **FMTContactControl** が開いていることを確認します。 そうされていない場合は、ソリューション エクスプローラーで **クラス** を展開し、**FMTContactControl** を右クリックして、**コードを表示** をクリックします。
 2.  **FMTContactControl** に画像データの実行時プロパティを追加します。 **FMTContactControl** クラスで、次の例で強調表示された行で示すように **imageFieldProperty** という **FormProperty** を宣言します。 
 
-    [![ImageFieldProperty と呼ばれる FormProperty の宣言の例](./media/x8.png)](./media/x8.png)
+    [![ImageFieldProperty と呼ばれる FormProperty の宣言の例。](./media/x8.png)](./media/x8.png)
 
 3.  **parmDataSource** X++ メソッドの後に、次の X++ メソッドを追加します。 新しいメソッドは、**imageFieldProperty** のゲッター/セッターとして機能します。
 
     > [!NOTE]
     > 後で見るように、フレームワークはクライアントのデータにバインドさせるため、ここでは画像データの値を返しません。 
 
-    [![X++ メソッドが追加されたコードの例](./media/x9.png)](./media/x9.png)
+    [![X++ メソッドが追加されたコードの例。](./media/x9.png)](./media/x9.png)
 
 4.  **imageFieldProperty** は、次の例で強調表示された行を **FMTContactControl** の新しいメソッドに追加することで初期化されます。 
 
-    [![初期化された imageFieldProperty の例](./media/x10.png)](./media/x10.png)
+    [![初期化された imageFieldProperty の例。](./media/x10.png)](./media/x10.png)
 
 5.  ここで、次の例で強調表示された行を **FMTContactControl** の **applyBuild** メソッドに追加することで **imageFieldProperty** へのバインディングを供給します。 
 
-    [![ImageFieldProperty へのバインドを提供するコードの例](./media/x11.png)](./media/x11.png)
+    [![ImageFieldProperty へのバインドを提供するコードの例。](./media/x11.png)](./media/x11.png)
 
 6.  Ctrl + S を押して変更を保存します。 これで、実行時クラスの変更が完了しました。 次に、画像を表示する HTML ビューを更新します。
 
@@ -207,19 +204,19 @@ FMTAggregateMeasurements を使用して、Microsoft SQL Server Analysis Service
 
 **bind** 属性と **text** バインディング ハンドラーを組み合わせると、HTML 要素の **text** プロパティへのバインディングが有効になります。 たとえば、次の HTML は **バインド** 属性および **テキスト** バインディング ハンドラーを使用します。 
 
-[![バインド属性とテキスト バインディング ハンドラーを使用する HTML コードの例](./media/x12.png)](./media/x12.png) 
+[![バインド属性とテキスト バインディング ハンドラーを使用する HTML コードの例。](./media/x12.png)](./media/x12.png) 
 
 上記の HTML は、次の HTML と同じです。 
 
-[![同等の HTML コードの例](./media/x13.png)](./media/x13.png) 
+[![同等の HTML コードの例。](./media/x13.png)](./media/x13.png) 
 
 プロパティまたはコマンドにバインドするとき、バインドの利点が分かります。 たとえば、**名** という名前のビュー モデル プロパティある場合、次の例に示すようにそれをバインドすることができます。 ここで、**$data** はビュー モデル プロパティおよびコマンドを含むオブジェクトです。 
 
-[![プロパティまたはコマンドにバインドする HTML コードの例](./media/x14.png)](./media/x14.png) 
+[![プロパティまたはコマンドにバインドする HTML コードの例。](./media/x14.png)](./media/x14.png) 
 
 HTML 出力は、**FirstName** の現在の値に基づいて変更されます。 次の例は、**名** の値が **John** の場合の出力を示しています。 
 
-[**![変更された HTML 出力の例](./media/x15.png)**](./media/x15.png) 
+[**![変更された HTML 出力の例。](./media/x15.png)**](./media/x15.png) 
 
 何らかの理由で **FirstName** プロパティが変更した場合 (たとえば、X++ または JavaScript がプロパティを更新するために実行された)、バインドは自動的に再評価され、HTML 出力により変更がすぐに反映されます。 バインド値が変更されるとすべてのバインディング ハンドラーは自動再評価のパターンに従います。 **if** および **foreach** バインディング ハンドラーは、バインディング値に基づいて DOM 操作を実行するという点で独自です。
 
@@ -236,15 +233,15 @@ HTML 出力は、**FirstName** の現在の値に基づいて変更されます�
 
 コントロールの HTML 内での HTML 要素の使用に加えて、CheckBox、Group、Tile、SectionContainer、Label、および List などのフレームワーク コントロールをコントロールに追加することもできます。 バインディング ハンドラーの代わりに、各フレームワーク コントロールでバインド値をビュー モデル プロパティに渡すことができます。 たとえば、**CommandButton** は **ロール** 属性を使用して追加されます。 
 
-[![CommandButton を追加するコード例](./media/x16.png)](./media/x16.png) 
+[![CommandButton を追加するコード例。](./media/x16.png)](./media/x16.png) 
 
 この場合、**ActionCommand** は JavaScript 機能とともに提供されます。 
 
-[![JavaScript 機能により提供された ActionCommand のコード例](./media/x17.png)](./media/x17.png) 
+[![JavaScript 機能により提供された ActionCommand のコード例。](./media/x17.png)](./media/x17.png) 
 
 HTML バインディング構文の追加機能の 1 つは、バインディングのコンテキスト認識の性質です。 既定では、すべての HTML 要素のコンテキストはコントロールの JavaScript ビュー モデルに設定されます。 ただし、コンテキストは特定の状況で変化します。 たとえば、**foreach** バインディングに対して、ホスト要素 (**foreach** バインディングを持つ要素) 内に入れ子になったすべての子要素は、コンテキストとしてループで現在の品目を取得します。 **foreach** バインドの内部にあるときに親要素のコンテキストにアクセスするには、**$parent** オブジェクトを使用します。 FTMContactControl.htm の次の例は、この点を明確にするのに役立ちます。 
 
-[![バインディングのコンテキスト認識の性質を示すコード例](./media/x18.png)](./media/x18.png) 
+[![バインディングのコンテキスト認識の性質を示すコード例。](./media/x18.png)](./media/x18.png) 
 
 **アクション** コントロールの JavaScript ビュー モデルで使用可能なリスト プロパティです。 このプロパティは、**FMTContactControl** ランタイム クラスで定義されています。 **アクション** リストの各アクションには、**データ ソース**、**データ フィールド**、および **アクション名** プロパティがあります。 **foreach** ループ内で、**$data** は現在のアクションを参照し、**$data.ActionName** カムはループ内の現在のアクションから **ActionName** プロパティを取得します。 ループ内では、コントロール上のビュー モデル プロパティは **$data** 経由でアクセスすることはできません。 代わりに、**$parent** を使用してビュー モデル プロパティを取得できます。
 
@@ -255,7 +252,7 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
 1.  ソリューション エクスプローラーで、**FMTutorial** プロジェクトの **リソース** フォルダーを展開し、**FMTContactControlHTM** をダブルクリックします。 FMTContactControl.htm ファイルは、HTML エディターで開きます。
 2.  FMTContactControl.htm HTML に、次の HTML を追加します。 灰色のテキストは、配置コンテキストにのみ表示されます。 
 
-    [![追加する HTML コード](./media/x19.png)](./media/x19.png)
+    [![追加する HTML コード。](./media/x19.png)](./media/x19.png)
 
 3.  Ctrl+S を押し、FMTContactControl.htm の変更を保存します。
 
@@ -268,11 +265,11 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
 
 コントロール拡張フレームワークには、データ バインドおよびデータ アクセスを支援する多くの機能が用意されています。 FMTContactControl.htm で使用されるいくつかの関数 (**$field$** や **$model** など) を使うと、HTML バインドからデータ ソースとそのフィールドにアクセスできます。 これらの関数は、フレームワークによって定義された JavaScript 関数の HTML バインディングで使用される関数別名です。 拡張された JavaScript ビュー モデル内では、等価の、非エイリアス関数は **$dyn.getField** および **$dyn.getModel** です。 また、**$** シンボルを使用して、拡張 JavaScript ビュー モデル内で jQuery を使用することができます。 次の例は、拡張 JavaScript ビュー モデルのコンストラクターを定義するために使用される標準パターンを示しています。 この例では、**this** への参照を保存し、基本 **コントロール** クラスの動作を適用してから、自動的に生成されたプロパティおよびコマンドと、拡張表示モデルからのプロパティおよびコマンドを結合します。 
 
-[![拡張 JavaScript ビュー モデルのコンストラクターを定義するのに使用される標準パターンを示すコード例](./media/x20.png)](./media/x20.png) 
+[![拡張 JavaScript ビュー モデルのコンストラクターを定義するのに使用される標準パターンを示すコード例。](./media/x20.png)](./media/x20.png) 
 
 **self** 変数には、X++ ランタイム クラスから生成されたすべてのプロパティとコマンドが含まれるようになりました。 次の例は、ビュー モデルを拡張するためのクライアント専用のプロパティを追加する方法を示しています。 
 
-[![ビュー モデルを拡張するためにクライアント専用のプロパティが追加されたコード例](./media/x21.png)](./media/x21.png) 
+[![ビュー モデルを拡張するためにクライアント専用のプロパティが追加されたコード例。](./media/x21.png)](./media/x21.png) 
 
 **self** 変数に、X++ の実行時クラスから生成されたすべてのプロパティおよびコマンドと、クライアント専用プロパティとして追加された **ActionTypes** プロパティも含まれるようになります。 コントロールのビュー モデルを構築することに関連するトピックは他にもたくさんありますが、このチュートリアルの範囲外です。 このチュートリアルでは、**FMTContactControl** のビュー モデルに変更を加える必要はありません。 したがって、FMTContactControl.js ファイルを閉じて次のセクションに進みます。
 
@@ -432,3 +429,6 @@ HTML バインディング構文の追加機能の 1 つは、バインディン
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

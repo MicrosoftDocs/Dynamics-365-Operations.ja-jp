@@ -2,16 +2,13 @@
 title: 予測精度の監視
 description: このトピックでは、Dynamics 365 Supply Chain Management によって計算される予測精度のタイプおよび精度の値の表示方法を説明しています。
 author: roxanadiaconu
-manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72863
 ms.assetid: 810a0d63-f4c6-4167-b2b3-a178b74ead89
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60e5425e54f9e0093888f355a51064e7f0057976
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 99e6806b6d13d8c8e88cde52c444e684e6b40bbd77d3e5c6181ff5a49b183b8f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771450"
 ---
 # <a name="monitor-forecast-accuracy"></a>予測精度の監視
 
@@ -41,8 +38,7 @@ Supply Chain Management では、次のタイプの予測の正確性を計算�
 > 需要予測 Microsoft Azure Machine Learning を使用する場合、内部モデル精度の計算はテスト データ セットに基づきます。 テスト データ セットのサイズを指定するには、**需要予測のパラメータ** ページで **TEST\_SET\_SIZE\_PERCENT** パラメーターを設定します。 たとえば、値を **20** に設定する場合、履歴データの最後の 20 パーセントは内部モデル精度の計算に使用されます。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [調整された需要予測の承認](authorize-adjusted-forecast.md)
 
@@ -50,3 +46,6 @@ Supply Chain Management では、次のタイプの予測の正確性を計算�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

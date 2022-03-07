@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 179d66e19c7fa81d587ea920b1c71468ec070177d7e7e68e45c2b58da2f9f5af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e53c8ceb91a007775fa74f0c9598a65745f01cec
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716351"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638100"
 ---
 # <a name="return-serial-numbercontrolled-products-in-pos"></a>POS でシリアル番号管理された製品の返品
 

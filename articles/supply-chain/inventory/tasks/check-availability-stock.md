@@ -2,26 +2,23 @@
 title: 有効在庫数の確認
 description: この手順では、特定の品目番号において現物手持在庫を確認する方法を示します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand, InventOnhandItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 28446e32c8f126e76b13f41f379ecf994a7b7a0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c1b68a40ba433f7db6eb910961cd429629387bbe
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432232"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834100"
 ---
 # <a name="check-the-availability-of-stock"></a>有効在庫数の確認
 
@@ -60,3 +57,6 @@ ms.locfileid: "4432232"
 5. **OK** をクリックします。
 6. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

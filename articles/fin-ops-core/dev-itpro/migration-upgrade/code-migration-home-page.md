@@ -2,23 +2,25 @@
 title: コードの移行とホーム ページのアップグレード
 description: このトピックでは、コードの移行に関するトピックへのリンクを提供します。
 author: RobinARH
-ms.date: 03/22/2021
+manager: AnnBe
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: intro-internal
+ms.custom: 21631
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d73c7b8995ba3f60e740c05c6f181dd5979449a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 75ba6341b97d396f3452953b628c6397a9c80e42
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782934"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688511"
 ---
 # <a name="code-migration-and-upgrade-home-page"></a>コードの移行とホーム ページのアップグレード
 
@@ -37,18 +39,11 @@ Dynamics AX 2012 から Dynamics 365 Finance、Supply Chain Management、また�
 - [Finance and Operations の削除済みまたは非推奨の機能](deprecated-features.md)
 - [非推奨 API](deprecated-apis.md)
 
-## <a name="learning-path"></a>ラーニング パス
-
-- [Dynamics AX 2012 を Finance and Operations アプリにアップグレード](/learn/paths/upgrade-ax-2012-finance-operations/)
-
 ## <a name="additional-concepts"></a>追加コンセプト
 
 - [コードの移行中にデリゲートを使用してモデル間の依存関係の解決](delegates-migration.md)
-- [SQL Server Analysis Services プロジェクトを AOT にインポートする方法](/dynamicsax-2012/appuser-itpro/import-a-sql-server-analysis-services-project-into-the-aot)
+- [SQL Server Analysis Services プロジェクトを AOT にインポートする方法](https://technet.microsoft.com/library/dn754850.aspx)
 - [アップグレード、更新プログラム、および修正プログラムのリソース](upgrade-home-page.md)
 - [Finance and Operations のワークフロー サブシステムのアップデート](workflow-subsystem.md)
 - [更新した AX 2012 R3 セールスキューブをエンティティ の ストレージ へと移行する](migrate-upgraded-cube-entity-store.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

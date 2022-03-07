@@ -1,26 +1,24 @@
 ---
 title: 一時仕入先に対する発注書の作成
 description: この手順では、一時仕入先向けの発注書の作成方法を説明します。
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c4885547cdf2f8496446761e27ce39e67e670f15
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1e6c8283290564d930418c1832bbd285532445ff0e69db8f78d13542c8232e97
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016405"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720303"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>一時仕入先に対する発注書の作成
 
@@ -38,3 +36,6 @@ ms.locfileid: "5016405"
 5. [OK] をクリックします。
     * これで他のすべての注文と同様に、発注書を完了し、処理できます。 この実行方法に関する特殊な属性はありません。 請求書では、注文に伴い作成し、その後支払いの処理を実行する仕入先のトランザクションの期日が計上されます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

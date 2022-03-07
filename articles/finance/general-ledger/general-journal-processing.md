@@ -1,7 +1,7 @@
 ---
 title: 一般仕訳帳の処理
 description: このトピックでは、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ内部コントロールが悪影響を受けていないことを確認する手助けとなる Microsoft  Dynamics 365 Finance の機能について説明します。
-author: kweekley
+author: ShylaThompson
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: b7e9c8981968cbe36070c336d57f0b086b9ab930d0287d11faaeb0f32ee46364
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726780"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742882"
 ---
 # <a name="general-journal-processing"></a>一般仕訳帳の処理
 

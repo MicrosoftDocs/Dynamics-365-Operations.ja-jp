@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
-ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
+ms.openlocfilehash: 6dc2be8a6f62ce13068ce2242f92ef17830c2447
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "4828214"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205750"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>顧客集荷の時間帯の作成と更新
 
@@ -127,3 +127,6 @@ POS で注文または注文明細行が集荷に対して識別されると、�
 ## <a name="additional-resources"></a>追加リソース
 
 [集荷情報モジュール](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

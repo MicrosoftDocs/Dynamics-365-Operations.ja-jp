@@ -2,30 +2,27 @@
 title: 生産現場の実行インターフェイスをデザインする
 description: このトピックでは、各コンフィギュレーションのユーザーインターフェイスのコンテンツをデザインする方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
-ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
+ms.openlocfilehash: 4e2b3746e690623e347e0319ab1b55f2645a5e23
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664275"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814683"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>生産現場の実行インターフェイスをデザインする
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 生産現場の実行インターフェイスで使用される各コンフィギュレーションのユーザーインターフェイスの内容をデザインできます。 たとえば、ある作業セルの作業者が生産現場のジョブ指示を開くことができるようにする必要がありますが、別の作業セルでは指示が不要です。 この場合、ドキュメントの添付ファイルを開くボタンと、このボタンを使用しないコンフィギュレーションの 2 つのコンフィギュレーションを作成する必要があります。
 
@@ -46,7 +43,7 @@ ms.locfileid: "4664275"
 
 新しいタブを作成して構成するには、次の手順に従います:
 
-1. **生産管理 &gt; 設定 &gt; 製造実行** に移動します。
+1. **生産管理 \> 設定 \> 製造実行 \> 生産現場の実行を構成** に移動します。
 
 1. アクション ウィンドウの **タブのデザイン** を選択して、**タブのデザイン** ページを開きます。
 
@@ -57,7 +54,7 @@ ms.locfileid: "4664275"
 1. ページのヘッダーで次の設定を行います。
 
     - **タブ名** - タブの名前を指定します。
-    - **メイン ビュー** - 事前に定義された 2 つのジョブ リスト (*有効なジョブ* または *すべてのジョブ*) から選択します。
+    - **メイン ビュー** - 事前に定義された 2 つのジョブ リスト (*有効なジョブ*、*すべてのジョブ*、または *マイ マシン*) から選択します。
     - **詳細ビュー** - 空白の値または **ジョブの詳細** のいずれかを選択します。 空白の値を選択すると、詳細な情報はタブに表示されません。**ジョブの詳細** を選択した場合は、メイン ビューのジョブ リストで選択したジョブの詳細な説明が、詳細ビューに表示されます。
 
 1. **プライマリ ツールバー** セクションで、プライマリ ツールバーで使用できるボタンを選択します。 **使用できるアクション** 列には、追加できるすべてのボタンの一覧が表示されます。 **選択したアクション** 列には、現在のコンフィギュレーションに含まれるすべてのボタンの一覧が表示されます。 列の間のボタンを使用して、選択した品目を必要に応じて列間で移動します。 **選択したアクション** 列の横にある上下ボタンを使用して、ユーザー インターフェイスにボタンが表示される順序を制御します。
@@ -68,7 +65,7 @@ ms.locfileid: "4664275"
 
 必要なタブをすべてデザインしたら、構成に関連付けることができます。
 
-1. **生産管理 &gt; 設定 &gt; 生産フロア実行の構成** に移動します。
+1. **生産管理 \> 設定 \> 製造実行 \> 生産現場の実行を構成** に移動します。
 
     ![生産フロア実行の構成](media/pfe-config-prod-floor-execution.png "生産フロア実行の構成")
 
@@ -79,3 +76,6 @@ ms.locfileid: "4664275"
 1. 必要に応じて、追加のタブを追加します。
 
 1. 必要に応じてタブを配置するには、ツールバーの **上へ移動** または **下へ移動** ボタンを使用します。 上のスクリーンショットに示されている順序で、タブは左から右に表示されます (一番上にあるタブが左側に表示されます)。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

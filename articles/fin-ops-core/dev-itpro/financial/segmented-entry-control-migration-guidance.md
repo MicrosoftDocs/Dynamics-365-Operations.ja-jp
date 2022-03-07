@@ -1,27 +1,25 @@
 ---
 title: セグメント化されたエントリ コントロールの移行のガイダンス
-description: このトピックでは、セグメント化エントリ コントロールを Microsoft Dynamics AX 2012 のパターンから Microsoft Dynamics AX の新しいパターンに移行するプロセスについて説明します。
-author: robinarh
-manager: AnnBe
+description: このトピックは、セグメント化されたエントリ コントロールの移行プロセスについて説明します。
+author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25651
 ms.assetid: eea675a0-d9d8-453d-9f5a-70c833a7a0d6
 ms.search.region: Global
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: faaefc11830a25465a1c076cb1c127010b2fa6fb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bf2801d309c845e1a422632ca8fd51f8f23d92b7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683971"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783376"
 ---
 # <a name="migration-guidance-for-segmented-entry-controls"></a>セグメント化されたエントリ コントロールに関する移行ガイダンス
 
@@ -76,7 +74,7 @@ ms.locfileid: "4683971"
 ## <a name="properties"></a>プロパティ
 **セグメント化エントリ** コントロールのカスタム プロパティは、**コントローラー** の下にあります。 次のスクリーン ショットは、例を示します。 
 
-[![111](./media/111.png)](./media/111.png) 
+![セグメント化されたエントリ コントロールのカスタム プロパティ。](./media/111.png)
 
 すべてのプロパティがすべての **コントローラー** クラス タイプに適用されるわけではありません。 選択したコントローラー クラスに適用されないプロパティは無効になります。 次のテーブルは、それぞれのプロパティに関する詳細を示します。
 
@@ -105,13 +103,14 @@ ms.locfileid: "4683971"
 | LedgerDimensionDefaultAccount | このコントローラーは、セグメント化された入力コントロールの既定のアカウントのサポートを提供します。 |
 
 ## <a name="migration-steps"></a>移行ステップ
+
 ### <a name="step-1"></a>ステップ１
 
 #### <a name="ax-2012"></a>AX 2012
 
 **SegmentedEntry** は任意のコントロールの横にあるタイプとして表示され、**SegmentedEntryControl** と変更します。 
 
-[![SegmentMigrate01](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
+[![SegmentedEntry コントロール タイプ。](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
@@ -120,11 +119,11 @@ ms.locfileid: "4683971"
 > [!NOTE] 
 > コントロールを参照するテストおよび他のコードが破損しないようにするには、新しいコントロールが古いコントロールと同じ名前であることを確認します。 新しいコントロールを追加するには、**Segmented Entry** コントロールを含む親コントロールを右クリックし、**New** &gt; **SegmentedEntryControl** を選択します。 
 
-[![SegmentMigrate02](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 
+[![新しい SegmentedEntryControl。](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 
 
 次のスクリーンショットは、新しいコントロールの外観を示しています。 
 
-[![SegmentMigrate03](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
+[![リストの新しいコントロール。](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
 
 ### <a name="step-2"></a>ステップ２
 
@@ -549,9 +548,9 @@ ledgerDimensionDefaultAccountController = LedgerDimensionDefaultAccountControlle
 -   **参照フィールド**
 -   **コントローラー クラス**
 
-[![SegmentMigrate04](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) 
+[![コントローラー クラスを設定します。](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) 
 
-[![SegmentMigrate05](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) 
+[![参照フィールドを設定します。](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) 
 
 > [!NOTE]
 > コントロールが機能するには、コントローラクラスが必要です。 したがって、**Controller Class** プロパティが設定されていないと、ランタイム エラーがスローされます。
@@ -605,7 +604,7 @@ ledgerDimensionDefaultAccountController.parmFilterLedgerPostingType(LedgerPostin
 
 これは、コントロールの **転記タイプ** プロパティです。 **PostingType** プロパティを設定する必要があるコントロールは、**parmControl()** 呼び出しを見て派生したマッピングの詳細から判別できます。 
 
-[![SegmentMigrate06](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) 
+[![転記タイプ プロパティ。](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) 
 
 これらのプロパティは、コントロール インスタンスで **parm** メソッドを介してコードで設定することもできます。 次に例を示します。
 
@@ -619,7 +618,7 @@ ClearingAccount.parmPostingType(LedgerPostingType::VendSettlement);
 
 元帳分析コードのデータ ソース フィールドで **resolveReference()** をオーバーライドします。 
 
-[![SegmentMigrate07](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
+[![resolveReference メソッド。](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
 
 #### <a name="dynamics-ax"></a>Dynamics AX
 
@@ -992,8 +991,8 @@ ledgerDimensionDefaultAccountControllerResourceIssueOffset.loadFromId(wrkCtrTabl
     -   **予算計画** コントローラーを用いて、使用する勘定構造を指定する必要があります。 **Dialog** クラスは、ユーザーが勘定構造を選択し (SEC の外部で)、選択した勘定構造を SEC で設定する方法を実装する必要があります。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
+
 
 [ダイアログのセグメント化されたエントリ コントロールのサポート](segmented-entry-control-dialog-support.md)
 
@@ -1006,3 +1005,6 @@ ledgerDimensionDefaultAccountControllerResourceIssueOffset.loadFromId(wrkCtrTabl
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

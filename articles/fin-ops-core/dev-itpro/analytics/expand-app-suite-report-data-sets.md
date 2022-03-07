@@ -1,27 +1,25 @@
 ---
 title: アプリケーション スイート レポート データ セットを展開する
 description: このトピックでは、レポート データ プロバイダー (RDP) クラスで X++ ビジネス ロジックを使用して作成された既存のレポート データ セットを拡張する方法について説明します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.custom: 266594
 ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 0aef414d357ee5175b44dd2f831245daf39b5ad2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ffb3a7d61d6ed94c8f6c09772cebb457b3e7bb2d0d23cabe0a228f7e8f60475e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769912"
 ---
 # <a name="expand-application-suite-report-data-sets"></a>アプリケーション スイート レポート データ セットを展開する
 
@@ -31,7 +29,7 @@ ms.locfileid: "4682811"
 
 このトピックでは、レポート データ プロバイダー (RDP) クラスで X++ ビジネス ロジックを使用して作成された既存のレポート データ セットの拡張について説明します。 カスタムのデリゲート ハンドラーおよびテーブル拡張機能を使用して、追加のフィールド データと計算の両方またはいずれかを含めます。 アプリケーション スイートを重層化する必要はありません。 次に、標準のアプリケーション ソリューションを置き換えてデータをユーザーに提供する、カスタムのデザインを作成します。 次の図は、このトピックで説明されている一般的なアプリケーションのカスタマイズを示しています。
 
-[![extendingdatasets](./media/extendingdatasets.png)](./media/extendingdatasets.png)
+[![extendingdatasets。](./media/extendingdatasets.png)](./media/extendingdatasets.png)
 
 ## <a name="whats-important-to-know"></a>知っている必要がある重要なこと
 このソリューションを適用する前に知っておくべき基本的な前提がいくつかあります。
@@ -49,27 +47,27 @@ ms.locfileid: "4682811"
 
 ### <a name="before-standard-design"></a>(標準デザイン) の前に
 
-[![標準デザイン (カスタマイズ前)](./media/fleet-extension-rentals-list-before-1024x673.png)](./media/fleet-extension-rentals-list-before.png)
+[![標準デザイン (カスタマイズ前)。](./media/fleet-extension-rentals-list-before-1024x673.png)](./media/fleet-extension-rentals-list-before.png)
 
 ### <a name="after-custom-solution"></a>変更後 (カスタム ソリューション)
 
-[![カスタム ソリューション (カスタマイズ後)](./media/fleet-extension-rentals-list-after-1024x672.png)](./media/fleet-extension-rentals-list-after.png)
+[![カスタム ソリューション (カスタマイズ後)。](./media/fleet-extension-rentals-list-after-1024x672.png)](./media/fleet-extension-rentals-list-after.png)
 
 1. **アプリケーション カスタマイズの新しいモデルを作成します。** 拡張モデルに関する詳細については、 [拡張機能およびオーバーレイによるカスタマイズ](../extensibility/customization-overlayering-extensions.md) を参照してください。 この例では、**フリート管理拡張** モデルにカスタム レポートを追加します。
 2. **Microsoft Visual Studio で、新しいプロジェクトを作成します。** プロジェクトが拡張モデルに関連付けられていることを確認します。 次の図はプロジェクト設定を示します。
 
-    [![Visual Studio でのプロジェクト設定](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
+    [![Visual Studio でのプロジェクト設定。](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
 
 3. **カスタム レポート データを格納するテーブル拡張機能を追加します。** RDP クラスによって設定される **TmpFMRentalsByCust** データ セットの一時的キャッシュを検索し、モデルで拡張を作成します。 レポート サーバーのデータの格納に使用するフィールドを定義し、**保存** をクリックして変更を保存します。 次の図は、この例で必要なテーブル拡張機能を示しています。
 
-    [![この例の拡張テーブル](./media/fleet-extension-table-extension.png)](./media/fleet-extension-table-extension.png)
+    [![この例の拡張テーブル。](./media/fleet-extension-table-extension.png)](./media/fleet-extension-table-extension.png)
 
 4. **プロジェクトに、カスタム レポートを追加します。** カスタム デザインは、標準的なソリューションによく似ています。 したがって、**フリート管理拡張** モデルで既存のアプリケーション レポートを複製してから、レンタル料金コンテナーにカスタム タイトルと追加テキスト ボックスが含まれるようにレポート デザインを更新することができます。
 5. **レポートの名前を変更して、わかりやすい名前にします。** この例では、カスタム レポートの **FERentalsByCustomer** の名前を変更し、標準のソリューションと区別します。
 6. **レポート データ セットの参照を復元します。** レポート デザイナーを開いて、**データセット** コレクションを展開し、**FMRentalsByCustDS** と名付けられたデータ セットを右クリックし、それから **復元** をクリックします。 データ セットは、新しく導入された列を含むように拡張されます。 したがって、これらの列は、レポート デザイナーで使用できるようになりました。
 7. **レポート デザインのカスタマイズ** デザイナーは、カスタム ソリューションを作成するために使用できる自由形式のデザイン サーフェスを提供します。 次の図は、この例で使用されるカスタム デザインを示しています。
 
-    [![この例のカスタム デザイン](./media/fleet-extension-custom-design.png)](./media/fleet-extension-custom-design.png)
+    [![この例のカスタム デザイン。](./media/fleet-extension-custom-design.png)](./media/fleet-extension-custom-design.png)
 
 8. **新しいレポート ハンドラー (X++) クラスをプロジェクトに追加します。** クラスに、それが既存のアプリケーション レポートのハンドラーであることを適切に表す名前を付けます。 この例では、クラスの **FERentalsByCustomerHandler** の名前を変更し、他のレポート ハンドラーと区別します。
 9. **PostHandler メソッドを追加して、カスタム レポートの使用を開始します。** この例では、次のコードを使用して標準ソリューション **FMRentalsByCustController** のコントローラー クラスを展開します。
@@ -132,3 +130,6 @@ ms.locfileid: "4682811"
         ```
 
 これで、レポート データ セットの拡張が完了しました。 アプリケーションをコンパイルした後、拡張モデルで定義されているレポート クラス ハンドラーで定義したカスタム X++ ビジネス ロジックを使用して、新しいレポート デザインにユーザー ナビゲーションを再ルーティングし始めます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

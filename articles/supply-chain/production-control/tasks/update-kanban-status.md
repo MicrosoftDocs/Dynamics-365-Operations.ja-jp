@@ -2,27 +2,24 @@
 title: かんばん状態の更新
 description: かんばんが誤って空けられるか、または受取済みのかんばんが空けられる必要のある場合、かんばんのステータスを更新する必要があります。
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Kanban, KanbanResetEmpty
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bb8559c0843d7e6e538b5b29dc394a50d05462ee
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a0e03da4671ffec4ecf4835b20a00ef87971c94
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432130"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831820"
 ---
 # <a name="update-kanban-status"></a>かんばん状態の更新
 
@@ -48,3 +45,6 @@ ms.locfileid: "4432130"
 2. 一覧で、選択された行をマークします。
     * [材料取り扱い単位] ステータスが空になっていることに注意してください。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

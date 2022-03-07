@@ -2,26 +2,23 @@
 title: オーストラリアのキャッシュ レジスターの配置ガイドライン
 description: このトピックは、オーストリアのローカライズ用配置ガイドです。
 author: AlexChern0v
-manager: ezubov
 ms.date: ''
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Austria
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bf8672d46443101b57eed94129f7b838c620645e
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: ad2d9e1b76c2f86afd8041b41d1b2f91dc2f4d4e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4409531"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798847"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-austria"></a>オーストラリアのキャッシュ レジスターの配置ガイドライン
 
@@ -229,3 +226,6 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 4. Visual Studio utility 用に、MSBuild コマンド プロンプトを起動し 、Retail SDK フォルダーの下で **msbuild** を実行し、配置可能なパッケージを作成します。
 5. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 6. [バックオフィスで要求されるパラメーターの設定](#set-up-required-parameters-in-headquarters) を完了します
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

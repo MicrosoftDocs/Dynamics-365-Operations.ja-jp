@@ -1,26 +1,23 @@
 ---
 title: マスター プランから製品を除外する場合は、製品ライフサイクルの状態を作成
 description: この手順では、マスター プランおよび BOM レベルの計算から製品を除外する新製品ライフサイクルの状態を作成する方法を示します。
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5f9573fd220cd8b6a58f81e4d17ca65234f41beb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c7f72be341b81515b7c5540d66f61647df93af41
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431822"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567034"
 ---
 # <a name="create-a-product-lifecycle-state-to-exclude-products-from-master-planning"></a>マスター プランから製品を除外する場合は、製品ライフサイクルの状態を作成
 
@@ -44,3 +41,6 @@ ms.locfileid: "4431822"
 5. 一覧で、選択された行をマークします。
 6. [製品ライフサイクルの状態] フィールドで値を入力または選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

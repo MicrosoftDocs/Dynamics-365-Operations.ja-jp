@@ -2,26 +2,23 @@
 title: 帳簿の資産耐用年数期間中の減価償却方法の変更
 description: 日本では、固定資産の耐用年数期間中、減価償却方法を変更することができます。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBookTable, AssetGroupBookSetup, AssetDepProfileChangeApply_JP,  AssetUndepreciatedBalancedSchedule_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2dfc5a184c40cde922d629e8af18871e8efbeddc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 31914a3adf4fe89e30f64b71e419b427f1663ba7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408205"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823605"
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-book"></a>帳簿の資産耐用年数期間中の減価償却方法の変更
 
@@ -58,3 +55,6 @@ ms.locfileid: "4408205"
 1. [固定資産] > [設定] > [償却率表] > [経年表] に移動します。
     * 減価償却プロファイルの更新には対応するデータが必要です。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

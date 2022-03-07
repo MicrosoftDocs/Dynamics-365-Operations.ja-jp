@@ -2,26 +2,19 @@
 title: X++ 構文
 description: このトピックには、X++ の構文リファレンスが含まれています。
 author: RobinARH
-manager: AnnBe
 ms.date: 07/22/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 72211
-ms.assetid: bb238a46-3a43-4f3c-a9b6-86b26e988881
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6425813c83242cfd2179e8f8698e56fc572f2fa
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: 3faecba0333b984a324bb9d45f87a638eeacdccf
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4409508"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783222"
 ---
 # <a name="x-syntax"></a>X++ 構文
 
@@ -29,8 +22,7 @@ ms.locfileid: "4409508"
 
 このトピックには、X++ の構文リファレンスが含まれています。 
 
-<a name="x-keywords"></a>X++ キーワード
-------------
+## <a name="x-keywords"></a>X++ キーワード
 
 次の表に示す X++ キーワードは予約されています。 これらのキーワードは、他の目的に使用することはできません。
 
@@ -734,7 +726,7 @@ ms.locfileid: "4409508"
 </tr>
 <tr class="even">
 <td><strong>validTimeState</strong></td>
-<td>X++ SQL <code>select</code> 明細書により有効時間状態テーブルから取得される行をフィルター処理します。 例: <span class="code">xMyTable; から validTimeState(myDateEffective) *を選択</span> ... または ...  <span class="code">xMyTable; から validTimeState(myDateFrom, myDateTo)* を選択</span></td>
+<td>X++ SQL <code>select</code> 明細書により有効時間状態テーブルから取得される行をフィルター処理します。 例: <span class="code">xMyTable; から validTimeState(myDateEffective) *を選択</span> ...または...  <span class="code">xMyTable; から validTimeState(myDateFrom, myDateTo)* を選択</span></td>
 <td>有効時間状態テーブルが読み取りおよび書き込み操作に及ぼす影響</td>
 </tr>
 <tr class="odd">
@@ -810,7 +802,7 @@ Extended Backus Naur Form (EBNF) は metalanguage あり、このガイドでは
 
 ### <a name="example"></a>例
 
-Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester この例は Work\_Team を `Manager` および一人またはそれ以上の `Employees` で構成されるように定義します。 `Employee` は、`Developer`、または `Tester` として定義されています。 この例で使用されているシンボルについては、次の表で説明します。
+Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester この例は Work\_Team を `Manager` および一人またはそれ以上の `Employees` で構成されるように定義します。 `Employee` は、`Developer`、または `Tester` として定義されています。 この例で使用されているシンボルについては、次の表で説明します。
 
 ### <a name="special-symbols-in-ebnf"></a>EBNF の特殊記号
 
@@ -821,7 +813,7 @@ Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester こ�
 | \[<em>式</em>\] |               オプション: \[ と \] の間の項目はオプションです。 すべてまたはいずれかの項目に括弧が含まれます。                |
 |      {Expression}       |                     繰り返し: { と } の間の項目はオプションですが、必要な回数繰り返し実行できます。                     |
 
-たとえば、自転車のために購入するアクセサリがサドル、飲料水ボトル ホルダー、ベル、およびクラクションから成る場合、ベルまたはクラクションのいずれか、および 0 個、1 個、または複数の飲料水ボトル ホルダー、さらにちょうど 1 つのサドルを持つことができ、この場合以下のように表されます: \_自転車アクセサリ = サドル\[ベル | クラクション\] {飲料水\_ボトル\_ホルダー} この文法は次の選択を定義します。`saddle`  `saddle bell`  `saddle horn`  サドル 飲料水\_ボトル\_ホルダー  サドル ベル 飲料水\_ボトル\_ホルダー  サドル ベル 飲料水\_ボトル\_ホルダー 飲料水\_ボトル\_ホルダーなど。
+たとえば、自転車のために購入するアクセサリがサドル、飲料水ボトル ホルダー、ベル、およびクラクションから成る場合、ベルまたはクラクションのいずれか、および 0 個、1 個、または複数の飲料水ボトル ホルダー、さらにちょうど 1 つのサドルを持つことができ、この場合以下のように表されます: 自転車\_アクセサリ = サドル \[ベル | クラクション\] {飲料水\_ボトル\_ホルダー} この文法は次の選択を定義します。`saddle`  `saddle bell`  `saddle horn` サドル 飲料水\_ボトル\_ホルダー サドル ベル 飲料水\_ボトル\_ホルダー サドル ベル飲料水\_ボトル\_ホルダー飲料水\_ボトル\_ホルダーなど。
 
 ## <a name="x-grammar"></a>X++ 文法
 このトピックでは、X++ 言語の正式な文法を示します。
@@ -1343,7 +1335,7 @@ X++ の文法の BNF で、ターミナルのほとんどに名前の接尾語�
     UNCHECKED_STMT ::= UNCHECKED_HEADER  STATEMENT
     UNCHECKED_HEADER ::= UNCHECKED_SYM  LEFT_PAR_SYM  IF_EXPR  RGHT_PAR_SYM
 ```
- 
+ 
 
 ## <a name="x-language-syntax-is-stricter-in-microsoft-dynamics-ax-2012"></a>X++ 言語の構文は Microsoft Dynamics AX 2012 では厳密です
 Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバージョンの製品より厳しくなっています。 このトピックでは、構文の変更について説明します。
@@ -1402,7 +1394,7 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 </tbody>
 </table></td>
 <td>単純な代入演算子である等号記号 (<code>=</code>) で派生オブジェクトに基本オブジェクトを代入することができました。 コンパイラはこれらの割り当てを受け入れましたが、実行時に不適切なダウンキャスト割り当てを誤って使用するとエラーが発生しました。</td>
-<td>現在は、ダウンキャストは明示的にできるようになりました。 これは、演算子と<strong>して</strong>新しく実行されます。 <strong>as</strong> キーワードによる明示的なダウンキャストは、<code>ThingClass</code> が <code>Object</code> で拡張する次のコード例で示されています。<code>ThingClass myThing = new ThingClass();</code>  <code>Object myObject = myThing;</code>  <code>myThing = myObject as ThingClass; // Explicit downcast, good.</code> 詳細については、式の演算子: 継承の Is および As を参照してください。</td>
+<td>現在は、ダウンキャストは明示的にできるようになりました。 これは、演算子と<strong>して</strong>新しく実行されます。 <strong>as</strong> キーワードによる明示的なダウンキャストは、<code>ThingClass</code> が <code>Object</code> で拡張する次のコード例で示されています。<code>ThingClass myThing = new ThingClass();</code>  <code>Object myObject = myThing;</code>  <code>myThing = myObject as ThingClass; // Explicit downcast, good.</code> 詳細については、式の演算子: 継承の Is および As を参照してください。</td>
 </tr>
 <tr class="odd">
 <td>継承</td>
@@ -1479,9 +1471,11 @@ Microsoft Dynamics AX 2012 以降では、X++ の構文ルールが以前のバ�
 
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [X++ 言語リファレンス](xpp-language-reference.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

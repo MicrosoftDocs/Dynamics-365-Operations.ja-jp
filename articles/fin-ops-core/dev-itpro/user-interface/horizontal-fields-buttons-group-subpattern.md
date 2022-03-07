@@ -4,18 +4,22 @@ description: この記事では、個々のフィールドにアクションを�
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
+ms.prod: ''
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 12464
+ms.assetid: 56b16f26-d4d3-4052-9ebc-0878b09cc00d
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6981d3e9c9bdaffc87febe28e07a49c9d6c1f671
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ba8d185c8e686ca53886fcf56d995d4b48c0a6a2476f40efc9e108bf195a4f0e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781919"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712526"
 ---
 # <a name="horizontal-fields-and-buttons-group-subpattern"></a>水平フィールドおよびボタン グループのサブパターン
 
@@ -75,7 +79,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="examples"></a>例
 フォーム: **SalesTable (GroupHeaderAddressHeaderOverview)** 
 
-[![SalesTable フォームの例。](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
+[![フォームの例。](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
 
 ## <a name="resources"></a>リソース
 ### <a name="typically-used-by-patterns"></a>通常、パターンによって使用される

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7975088be898ccecceb1f7be009cecff107f6e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8745a461986c1f16f2b3f9fd23011701d104a30c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431936"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264021"
 ---
 # <a name="approve-planned-orders"></a>計画オーダーの承認
 
@@ -43,3 +42,6 @@ ms.locfileid: "4431936"
 - **承認済 :** 編集を維持する場合や、計画された注文を確定する場合は、*承認済み* に変更してください。 *承認済みの* 状態で計画された注文は、マスタープランで固定され、供給が見込まれているとみなされるため、後のマスタープランの実行中に変更や削除されません。 これを達成するため、計画ロジックはマスター プラン中に、*承認済* 計画オーダーを古い計画バージョンから新しい計画バージョンにコピーします。 ただし、 *承認済* の計画された注文は、特定のマスタープラン内でのみ供給されると見なされます。
 
 計画された注文は、**マスター プラン** ワークスペース、**計画オーダー** リスト、または **計画製造オーダー**、**計画発注書**、**計画移動** リストから管理できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

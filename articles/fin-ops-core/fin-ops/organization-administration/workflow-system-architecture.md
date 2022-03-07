@@ -2,11 +2,9 @@
 title: ワークフロー システムのアーキテクチャ
 description: この記事では、ワークフロー システムのアーキテクチャについて説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee2eeedd1e48aa30ea95462a21da3b833b3e078b
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 090549aee7201b0cb187c923253a6b30c56fe133
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797564"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359331"
 ---
 # <a name="workflow-system-architecture"></a>ワークフロー システムのアーキテクチャ
 
@@ -29,7 +27,7 @@ ms.locfileid: "4797564"
 
 この記事では、ワークフロー システムのアーキテクチャについて説明します。
 
-ワークフロー インフラストラクチャは、Application Object Server (AOS) でホストされる 2 つのコンポーネント (X++ ワークフロー ランタイムおよび管理ワークフロー ランタイム) から構成されます。
+ワークフロー インフラストラクチャは、Application Object Server (AOS) でホストされる 2 つのコンポーネント (X++ ワークフロー ランタイムおよび管理ワークフロー ランタイム) で構成されます。
 
 X++ ワークフロー ランタイムは、次のコンポーネントで構成されます。
 
@@ -59,3 +57,6 @@ X++ ワークフロー ランタイムは、次のコンポーネントで構成
 | 4    | 両方                     | この同じメッセージング パターンが、ワークフロー インスタンスのライフサイクル全体で必要に応じて繰り返されます。 |
 
 このワークフロー アーキテクチャは、信頼できる堅牢なメッセージ システムを提供し、また、ワークフローの状態とアプリケーションの状態を常に同期させるために役立ちます。 ハードウェアやソフトウェアに予期しない障害が発生すると、ワークフロー インスタンスの状態は最後に保存された既知の点まで戻され、メッセージはキュー内に保持されます。 したがって、アーキテクチャから見ると、復旧モデルは、問題の解決とワークフローの再開です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

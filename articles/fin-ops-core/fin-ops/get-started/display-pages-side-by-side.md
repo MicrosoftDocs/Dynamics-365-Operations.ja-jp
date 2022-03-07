@@ -2,11 +2,9 @@
 title: '[新しいウィンドウで開く] 機能を使用してページを並べて表示する'
 description: この記事では、ページを並べて表示する方法を説明します。
 author: aneesmsft
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35ade352edf31fe895a9b9118a8ad7d5fe6c0bde
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: a4c8086d511892f8965dfefca2789742a006f63f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798406"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068062"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>[新しいウィンドウで開く] 機能を使用してページを並べて表示する
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 この記事では、ページを並べて表示する方法を説明します。
 
@@ -48,3 +49,6 @@ ms.locfileid: "4798406"
 **新しいウィンドウで開く** 機能は、ウィンドウで 1 つ以上のページが開いている場合にのみ使用できます。 また、ポップアップ ウィンドウは、開いているページがなくなると (つまり、そのウィンドウで最後のページが閉じると) 自動的に閉じます。 アプリケーションの別の領域に移動すると、システムも開いているページを閉じます。 したがって、ポップアップ ウィンドウを開いてアプリケーションの別の領域に移動すると、システムがそれらのウィンドウ内のページを閉じるので、ポップアップ ウィンドウは自動的に閉じます。
 
 ポップアップ ウィンドウの上部バーは読み取り専用で、その中にページが開かれ、会社に関する情報が表示されます。 また、ポップアップ ウィンドウは、メインのブラウザー ウィンドウに依存します。 メイン ウィンドウが閉じるか、または更新されると、開いているすべてのポップアップ ウィンドウは、読み取り専用になります。 これが発生する場合、これらのウィンドウに情報を表示することはできますが、その情報を使用した作業が行えないことを示します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: ジョブ スケジュールのガント チャート
 description: 生産プランナーはガント チャートを使用して、生産計画のコントロールおよび最適化を行うことができます。
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ce2c20874b0dc901ff8684da2881c7f16ce622c9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432063"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836545"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>ジョブ スケジュールのガント チャート
 
@@ -158,5 +155,8 @@ ms.locfileid: "4432063"
 ## <a name="additional-resources"></a>その他のリソース  
 [Visual scheduling with Gantt chart for production and batch orders (ビデオ)](https://youtu.be/BtbuShkGj4I)
 
-[生産 (デモ スクリプト) の視覚的スケジューリング](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
+[生産 (デモ スクリプト) の視覚的スケジューリング](https://docs.microsoft.com/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

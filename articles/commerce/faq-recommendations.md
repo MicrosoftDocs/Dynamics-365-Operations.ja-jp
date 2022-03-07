@@ -2,16 +2,13 @@
 title: 製品推奨事項に関するよく寄せられる質問
 description: このトピックでは、製品推奨事項またはその結果に関連する問題のトラブルシューティングに使用できる、プロセスおよびツールに関する情報を提供します。
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cf3df2267671b50c20b28dbdb1c6a21696bf2515
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b3db432ae10139bcd8ee400b0bbc1173e33ef206
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413643"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019814"
 ---
 # <a name="product-recommendations-faq"></a>製品推奨事項に関するよく寄せられる質問
 
@@ -71,7 +68,7 @@ ms.locfileid: "4413643"
 
 ## <a name="how-do-i-add-a-list-to-an-e-commerce-page"></a>E コマース ページにリストを追加する方法はありますか。
 
-製品推奨事項ページを E コマース Web サイトに追加する方法の詳細については、[製品推奨リストをページに追加する](add-reco-list-to-page.md)を参照してください。
+製品推奨事項ページを E コマース Web サイトに追加する方法の詳細については、[製品推奨リストをページに追加する](./product-recommendations.md)を参照してください。
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>POS で推奨事項を有効にするにはどうすればよいですか。
 
@@ -100,3 +97,6 @@ ms.locfileid: "4413643"
 [収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
 
 [推奨事項とデモ データの作成](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

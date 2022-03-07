@@ -1,12 +1,10 @@
 ---
 title: メンテナンス スケジュール コスト
 description: このトピックでは、資産管理におけるメンテナンス スケジュール コストについて説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9befa52d27a1a12e7a2d9f2615c2ce8e5f1ebe53
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9cbb1d81f9108a908bdfdd2a27b92b685d3afdac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017999"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361021"
 ---
 # <a name="maintenance-schedule-cost"></a>メンテナンス スケジュール コスト
 
@@ -51,5 +49,8 @@ ms.locfileid: "5017999"
 
 次の図では、メンテナンス スケジュールの原価計算の結果を表示します。
 
-![図 1](media/17-preventive-maintenance.png)
+![図 1。](media/17-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

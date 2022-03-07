@@ -2,11 +2,9 @@
 title: 組織階層の作成
 description: 組織階層を作成するには、次の手順に従います。
 author: sericks007
-manager: AnnBe
 ms.date: 12/15/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8627c1aa0ce9ec011b568224040b1143f0f54c31
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 4d27bec86302f3e6cef8318a0d846f31d2d9c6a5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796925"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747396"
 ---
 # <a name="create-an-organization-hierarchy"></a>組織階層の作成
 
@@ -48,3 +46,6 @@ ms.locfileid: "4796925"
     - 必要に応じて組織を追加します。  
     - 組織を追加するには、**編集**、 次に **挿入** をクリックして組織を追加します。 変更が完了したら、ドラフトを **保存** または変更を **公開** できます。  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

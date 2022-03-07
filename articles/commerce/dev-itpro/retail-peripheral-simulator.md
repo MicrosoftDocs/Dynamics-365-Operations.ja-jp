@@ -1,29 +1,27 @@
 ---
 title: コマースの周辺機器シミュレーター
 description: このトピックでは、Dynamics 365 Commerce で提供される周辺機器シミュレーター ツールについて説明します。
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 03/22/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 266544
 ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: dbde30231ff06154f081e2955ed75c2637bc20fc
-ms.sourcegitcommit: 3d37d4f509a185f941ee77dc156728378c8a341b
+ms.openlocfilehash: 9ba3260c01e0a3a5507743e965f5f351cb87b85e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "4801437"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782916"
 ---
 # <a name="peripheral-simulator-for-commerce"></a>コマースの周辺機器シミュレーター
 
@@ -533,3 +531,6 @@ POS シミュレーターは、Windows プリンターをテストするため�
 ## <a name="additional-resources"></a>追加リソース
 
 [周辺機器](../retail-peripherals-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

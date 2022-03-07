@@ -2,26 +2,23 @@
 title: 1 つの会社に対するリリース済製品の作成
 description: この手順は、1 つの法人単位のコンテキストでリリース済製品を 1 つ作成する方法を説明します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, UnitOfMeasureLookup, DimensionLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90924c853793a3d70f2f2d46d8a154a19bd7d6bb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fe1f34f268c6427c1381a9cfced49334893acc00
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431956"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833284"
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>1 つの会社に対するリリース済製品の作成
 
@@ -103,3 +100,6 @@ ms.locfileid: "4431956"
 12. 一覧で、目的のレコードを見つけ、選択します。
 13. 一覧で、選択された行のリンクをクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: 仕訳入力またはトランザクションの表示
 description: この手順では、仕訳入力やトランザクションを検索するための伝票トランザクションの照会の使用方法について説明します。
 author: aprilolson
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysQueryForm, LedgerTransVoucher, LedgerTransBase, Originaldocuments
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 102ba12231271892e5eb6c377e046b668a1eb9aa65751a4991e771ecc0576b69
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5863fcc677e6dcfedf32031a14354674255ea137
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771635"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994393"
 ---
 # <a name="view-journal-entries-or-transactions"></a>仕訳入力またはトランザクションの表示
 
@@ -40,6 +42,3 @@ ms.locfileid: "6771635"
 12. アクション ウィンドウで、**元の文書** をクリックします。
 13. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: 受信したドキュメントを解析する
-description: このトピックでは、受信したドキュメントを解析し、選択したコンテンツをアプリケーション データに適用して更新できるように電子報告 (ER) 形式を設定する方法について説明します。
+description: このトピックでは、受信したドキュメントを解析できる電子申告の形式を設定する方法について説明します。
 author: nickselin
-manager: AnnBe
-ms.date: 02/20/2019
+ms.date: 11/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ede95a0a8d6025525464534047e380ded194db33
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0566fbc10dd71073dec3c1f38f61fc3c7931fd20
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679400"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074929"
 ---
 # <a name="parse-incoming-documents"></a>受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]
@@ -48,12 +46,12 @@ ms.locfileid: "4679400"
 
 | コンテンツの説明           | ファイル                                                              |
 |-------------------------------|-------------------------------------------------------------------|
-| ER データ モデル構成   | [EFSTAmodel.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
-| ER フォーマット構成       | [EFSTAformat.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
-| Web サービス応答サンプル 1 | [Response1.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-| Web サービス応答サンプル 2 | [Response2.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-| Web サービス応答サンプル 3 | [Response3.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-| Web サービス応答サンプル 4 | [Response4.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
+| ER データ モデル構成   | [EFSTAmodel.xml](https://download.microsoft.com/download/9/d/9/9d9c8562-7281-4db9-8bb3-b9083c6e2b5d/EFSTAmodel.xml)  |
+| ER フォーマット構成       | [EFSTAformat.xml](https://download.microsoft.com/download/8/8/e/88e230cf-120f-4d58-93eb-779f2db1190f/EFSTAformat.xml) |
+| Web サービス応答サンプル 1 | [Response1.xml](https://download.microsoft.com/download/8/0/5/805cc4fc-c6d2-447f-90e8-67ca6e970f2d/Response1.xml)   |
+| Web サービス応答サンプル 2 | [Response2.xml](https://download.microsoft.com/download/e/0/a/e0a53eca-0d75-4958-8e3d-f9b1d91f1421/Response2.xml)   |
+| Web サービス応答サンプル 3 | [Response3.xml](https://download.microsoft.com/download/e/c/2/ec24dcfa-84cd-44b9-9398-ff90f9627986/Response3.xml)   |
+| Web サービス応答サンプル 4 | [Response4.xml](https://download.microsoft.com/download/6/6/b/66ba9a89-989a-454a-96c2-5e50b7e53fd7/Response4.xml)   |
 
 ## <a name="parse-incoming-documents-in-excel-format"></a>受信ドキュメントを Excel 形式で解析する
 
@@ -62,20 +60,30 @@ Microsoft Excel のブック (XLSX 形式のファイル) でデータを表す�
 - 新しいモデルおよびフォーマットをデザインし、実行時にテストします。 この場合、Excel は実際のアプリケーション データをシミュレーションします。
 - アプリケーションを超えたデータを Excel で管理し、特定のレポートを送信するのに、このデータをインポートします。
 
+受信ドキュメントを解析するための新しい ER 形式を設計する場合、Excel ワークブックを受信ファイルのテンプレートとしてインポートできます。 Excel の名前付きセルに保存されているデータ型を自動的に検出するには、**Excel からの更新** ダイアログ ボックスで **セル コンポーネントに Excel データ型を適用する** オプションを **はい** に設定します。
+
+![Excel から更新ダイアログ ボックスの ER テンプレート インポートでセル コンポーネントに Excel データ型を適用するオプションをはいに設定します。](./media/er-parse-incoming-documents-update-from-excel.png)
+
+編集した ER 形式の 1 つの [セル](er-fillable-excel.md#cell-component) コンポーネントに、データ型なし (無効) または不正なデータ型が自動的に検出された場合、後で **形式** タブの **データ型** フィールドでセルを手動で変更することが可能です。 これらのデータ型は、受信ファイルからのデータを使ってデータ モデルに入力する方法を指定する際に、形式モデルのマッピングで使用されます。
+
+![モデル マッピング デザイナー ページのデータ モデル フィールドに形式フィールドのバインドのためにセルのデータ型を使用する。](./media/er-parse-incoming-documents-configure-model-mapping.gif)
+
+既定では、この形式を実行して実際の受信ファイルを解析すると、Excel テンプレートをインポートしたときと同じように、ER は各セルのデータ型を検出しようとします。 場合によっては、誤ったデータ型が検出され、誤ったデータ変換やランタイム例外が発生することがあります。 Finance バージョン 10.0.25 以降では、編集された ER フォーマットの **形式** タブの **データ型** フィールドで各セル コンポーネントに対して指定されたデータ変換データ型を実行時に ER フレームワークに強制的に使用させることができます。 この動作を強制するには、**機能管理** ワークスペースで **ER 形式で定義されたセル データ タイプのみをデータ解析に強制使用する** 機能を有効にします。
+
 この機能の詳細については、タスク ガイド **Microsoft Excel ファイルからの ER インポート データ (第 1 部: 形式の設計)** および  **Microsoft Excel ファイルからの ER インポート データ (第 2 部: データのインポート)** を実行してください (7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの一部)。 これらのタスク ガイドは、 受信ドキュメントから情報をインポートしてアプリケーション データを更新する、ER 形式を使用した受信した Excel ファイルの解析方法を説明します。 タスク ガイドは [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=874684)からダウンロードできます。
 
 上記のタスク ガイドを完了するには、次のファイルをダウンロードしてください。
 
 | コンテンツの説明                         | ファイル                                                                       |
 |---------------------------------------------|----------------------------------------------------------------------------|
-| .XLSX 形式の受信ファイル - テンプレート    | [1099import template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266) |
-| .XLSX 形式の受信ファイル - サンプル データ | [1099import data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
+| .XLSX 形式の受信ファイル - テンプレート    | [1099import template.xlsx](https://download.microsoft.com/download/b/8/b/b8ba3c9c-97c6-4fc2-898f-7701aac6035c/1099import-template.xlsx) |
+| .XLSX 形式の受信ファイル - サンプル データ | [1099import data.xlsx](https://download.microsoft.com/download/f/f/4/ff4dbce9-8364-4391-adee-877945ff01f7/1099import-data.xlsx)     |
 
-次のタスク ガイド [外部ファイルから電子申告にデータをインポートするのに必要なコンフィギュレーションの ER 作成](./tasks/er-required-configurations-import-data.md)を、現在の Finance and Operations アプリケーションで実行していない場合、次のファイルをダウンロードしてください。
+次のタスク ガイド [外部ファイルから電子申告にデータをインポートするのに必要なコンフィギュレーションの ER 作成](./tasks/er-required-configurations-import-data.md) を、現在の財務と運用アプリケーションで実行していない場合、次のファイルをダウンロードしてください。
 
 | コンテンツの説明    | ファイル                                                            |
 |------------------------|-----------------------------------------------------------------|
-| ER モデル構成 | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+| ER モデル構成 | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml) |
 
 ##  <a name="parse-incoming-documents-in-csv-format"></a>CSV 形式で受信したドキュメントを解析する
 
@@ -113,11 +121,14 @@ Microsoft Excel のブック (XLSX 形式のファイル) でデータを表す�
 
 | 肩書き                                  | ファイル名                                                            |
 |----------------------------------------|----------------------------------------------------------------------|
-| ER フォーマット構成                | [1099formatcsv.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
-| .csv 形式の受信ファイルのサンプル | [1099entriescsv.csv](https://go.microsoft.com/fwlink/?linkid=862266) |
+| ER フォーマット構成                | [1099formatcsv.xml](https://download.microsoft.com/download/c/0/1/c014b0fa-d4ee-4de6-8f55-fa539df9ce83/1099formatcsv.xml)  |
+| .csv 形式の受信ファイルのサンプル | [1099entriescsv.csv](https://download.microsoft.com/download/0/0/c/00c7c78c-55d5-46ba-b6ac-971fb9646502/1099entriescsv.csv) |
 
-タスク ガイドを再生していない場合は、上記のタスク ガイドを完了するために必要な次のファイルをダウンロードしてください: 現在の Finance and Operations アプリケーションの **外部ファイルから電子申告にデータをインポートするのに必要なコンフィギュレーションの ER 作成**。
+タスク ガイドを再生していない場合は、上記のタスク ガイドを完了するために必要な次のファイルをダウンロードしてください。現在の財務と運用アプリケーションの **外部ファイルから電子申告にデータをインポートするのに必要なコンフィギュレーションの ER 作成**。
 
 | 肩書き                  | ファイル名                                                       |
 |------------------------|-----------------------------------------------------------------|
-| ER モデル構成 | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+| ER モデル構成 | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,24 +2,26 @@
 title: 入力、テーブル、およびグリッド コントロール用のフォントと背景
 description: このトピックでは、色を選択できるようにするための新しいカラー ピッカー コントロールについて説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 90513
 ms.assetid: 84e06ee2-be1c-443b-b595-9309eaea84c5
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 743581c098654a2f804e08bcd6729b195dd782b5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 659b38d5861a60618a359fcccf5799c79300a76f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783352"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688549"
 ---
 # <a name="font-and-background-colors-for-input-table-and-grid-controls"></a>入力、テーブル、およびグリッド コントロール用のフォントと背景
 
@@ -113,7 +115,7 @@ public FormControl editControl(int column, int row)
 }
 ```
 
-[![色分けされたセルのあるテーブル コントロールの例。](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)
+[![色分けされたセルのあるテーブル コントロールの例](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)
 
 ## <a name="using-color-in-a-grid-control"></a>グリッド コントロールでの色の使用
 
@@ -164,6 +166,3 @@ Static int GrayColor = 14474460; // DCDCDC or 220,220,220
 ```
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

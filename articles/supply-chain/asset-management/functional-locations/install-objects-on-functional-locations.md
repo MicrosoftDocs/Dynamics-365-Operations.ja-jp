@@ -1,12 +1,10 @@
 ---
 title: 機能的な場所に資産を導入する
 description: このトピックでは、資産管理で機能的な場所に資産を導入する方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationObjectChange, EntAssetFunctionalLocationObjectInstall, EntAssetFunctionalLocationObject
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ea67e2392d8e25a2a5f3cb7e1ff5032322f2c48
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022033"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775750"
 ---
 # <a name="install-assets-on-functional-locations"></a>機能的な場所に資産を導入する
 
@@ -82,3 +80,6 @@ ms.locfileid: "5022033"
 1. **すべての機能的な場所** ページで、資産を自動的に作成する機能的な場所が、この目的のために作成した機能的な場所タイプを使用していることを確認します。
 2. リストから機能的な場所を選択します。
 3. **機能的な場所の状態を更新する** を選択し、この目的のために作成したライフサイクル状態を選択します。 1 つの資産が機能的な場所に自動的に導入されるようになりました。 この資産は、機能的な場所と同じ名前です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

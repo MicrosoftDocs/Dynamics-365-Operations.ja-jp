@@ -1,23 +1,24 @@
 ---
 title: バッチ ビジネス イベント
 description: このトピックでは、バッチ ビジネス イベントの詳細情報を提供します。
-author: matapg007
+author: sarvanisathish
 ms.date: 02/25/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: matgupta
+ms.author: sarvanis
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d1e8e7a20d7f716a50cf1a2bcd706861ae6e9f5e
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 573941023fcd5e4f6f59b0275d0f0d71f10de1c2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500621"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745349"
 ---
 # <a name="batch-business-events"></a>バッチ ビジネス イベント
 

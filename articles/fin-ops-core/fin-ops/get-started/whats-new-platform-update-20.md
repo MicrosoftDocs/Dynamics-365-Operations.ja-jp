@@ -2,11 +2,9 @@
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 (2018 年 9 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 20 の新機能または変更された機能について説明します。 このバージョンは 2018 年 9 月にリリースされました。
 author: tonyafehr
-manager: AnnBe
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
-ms.openlocfilehash: ea9db2e71944f19f5fb6f52649edeba6550cd8db
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9beab388278d19235ff68e79da07af226de01428cae5c73180eb06f76e3bdbdc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797859"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748252"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-20-september-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 20 (2018 年 9 月) の新機能および変更された機能
 
@@ -36,7 +34,7 @@ ms.locfileid: "4797859"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2018 年 10 月リリース ノートを確認](https://go.microsoft.com/fwlink/?linkid=870424). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2018 年 10 月リリース ノートを確認](/dynamics365/release-plans/). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="platform-update-20-bug-fixes"></a>プラットフォーム アップデート 20 のバグ修正プログラム
 
@@ -58,41 +56,41 @@ Finance and Operations Web クライアントは、Microsoft Fluent Design に�
 
     次の画像は、プラットフォーム更新プログラム 20 より前のワークスペース カードのダッシュボード上での表示方法を示しています。
 
-    ![古いダッシュボード](media/prePU20-dashboard-cropped.png  "古いダッシュボード")
+    ![古いダッシュボード。](media/prePU20-dashboard-cropped.png  "古いダッシュボード")
   
     次の画像は、プラットフォーム更新プログラム 20 以降でのワークスペース カードの表示方法を示しています。
 
-    ![新しいダッシュボード](media/postPU20-dashboard-cropped.png  "新しいダッシュボード")
+    ![新しいダッシュボード。](media/postPU20-dashboard-cropped.png  "新しいダッシュボード")
 
 -  **アクション ウィンドウ** - アクション ウィンドウには、テーマ性に優れた背景色は表示されなくなり、代わりに、アクション ウィンドウには灰色の背景色が表示されます。 これは、Fluent に対応するためだけでなく、ユーザーが背景色はっきりとした違いが原因でページの残りの部分をアクション ウィンドウに関連付けないといういくつかの操作性問題に対処するためにも行われました。
 
     次の画像は、プラットフォーム更新プログラム 20 より前のアクション ウィンドウの表示方法を示しています。
 
-    ![古い詳細ページ](media/prePU20-customers-actionpane.png  "古い詳細ページ")
+    ![古い詳細ページ。](media/prePU20-customers-actionpane.png  "古い詳細ページ")
 
     次の画像は、プラットフォーム更新プログラム 20 以降でのアクション ウィンドウの表示方法を示しています。
 
-    ![新しい詳細ページ](media/postPU20-customers-actionpane.png  "新しい詳細ページ")
+    ![新しい詳細ページ。](media/postPU20-customers-actionpane.png  "新しい詳細ページ")
 
 -  **フィルター ウィンドウ** - フィルタ ウィンドウは、明るい背景色、フィールドをフィルター処理する錠剤のような外観、ウィンドウ上部の [フィルター フィールドの追加] ボタンの位置変更によって、完全に再編成されました。
 
     次の画像は、プラットフォーム更新プログラム 20 より前のフィルター ウィンドウの表示方法を示しています。
 
-    ![古いリスト ページ](media/prePU20-customers-cropped.png  "古いリスト ページ")
+    ![古いリスト ページ。](media/prePU20-customers-cropped.png  "古いリスト ページ")
 
     次の画像は、プラットフォーム更新プログラム 20 以降でのフィルター ウィンドウの表示方法を示しています。
 
-    ![新しいリスト ページ](media/postPU20-customers-cropped.png  "新しいリスト ページ")
+    ![新しいリスト ページ。](media/postPU20-customers-cropped.png  "新しいリスト ページ")
 
 -  **情報ボックス ウィンドウ**- 情報ボックス ウィンドウも外観が変更されました。 このウィンドウは、開いたときにページの高さ全体に広がり、最も重要な点として、折りたたまれたバージョンが見つけやすくなり、右側にある見落としやすいアイコンではなく、画面の右端に沿って **関連情報** ブレードとして表示されるようになりました。  
 
     次の画像は、プラットフォーム更新プログラム 20 より前の情報ボックス ウィンドウの表示方法を示しています。
 
-    ![古い情報ボックス ウィンドウ](media/prePU20-expandedFactBox-cropped.png  "古い情報ボックス ウィンドウ")
+    ![古い情報ボックス ウィンドウ。](media/prePU20-expandedFactBox-cropped.png  "古い情報ボックス ウィンドウ")
   
     次の画像は、プラットフォーム更新プログラム 20 以降での情報ボックス ウィンドウの表示方法を示しています。  
 
-    ![新しい情報ボックス ウィンドウ](media/postPU20-expandedFactBox-cropped.png  "新しい情報ボックス ウィンドウ")
+    ![新しい情報ボックス ウィンドウ。](media/postPU20-expandedFactBox-cropped.png  "新しい情報ボックス ウィンドウ")
 
 
 ## <a name="adding-and-removing-columns-in-a-grid-is-easier"></a>グリッドでの列の追加と削除の方がより簡単に
@@ -170,7 +168,7 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスクの自�
 - データ エンティティのコマンド チェーンを有効にします。
 - データ ソースやコントロールを含む、フォーム内の入れ子になった型でコマンド チェーンを有効にします。
 
-すべての拡張機能の詳細については、[拡張機能のホーム ページ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page) を参照してください。
+すべての拡張機能の詳細については、[拡張機能のホーム ページ](../../dev-itpro/extensibility/extensibility-home-page.md) を参照してください。
 
 ## <a name="performance-improvement-in-the-visual-studio-development-environment"></a>Visual Studio 開発環境でのパフォーマンスの向上
 
@@ -205,3 +203,6 @@ Microsoft Dynamics 365 for Finance and Operations のデータ タスクの自�
 説明、会社、スケジュールの開始日および時間、繰り返し、およびアカウントごとの実行を同時に設定することができます。 バッチ ジョブをコピーするときに、元のジョブから警告と依存関係もコピーされます。
 
 詳細については、[バッチ ジョブのコピー](../../dev-itpro/sysadmin/copy-batch-job.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

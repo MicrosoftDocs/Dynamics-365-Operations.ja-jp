@@ -2,28 +2,27 @@
 title: 新しい給付金の作成
 description: このタスクは、新しい福利厚生の作成時に使用する福利厚生の要素の作成方法を示します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: f9618e62e33655bfc1a0653cb767abe0094d1e79
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d476e8e7f116ca998f466d21a8d0eec33a11bf8f
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419329"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053180"
 ---
 # <a name="create-a-new-benefit"></a>新しい給付金の作成
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 このタスクは、新しい福利厚生の作成時に使用する福利厚生の要素の作成方法を示します。 このタスクの作成に使用するデモ データの会社は USMF です。 このタスクは、報酬と給付金マネージャーのために用意されています。
 
@@ -53,3 +52,6 @@ ms.locfileid: "4419329"
 6. [有効開始] フィールドで、日付と時刻を入力します。
 7. [福利厚生の作成] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

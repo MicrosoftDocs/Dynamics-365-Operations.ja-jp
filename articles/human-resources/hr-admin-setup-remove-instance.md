@@ -2,11 +2,9 @@
 title: インスタンスの削除
 description: この記事では、Microsoft Dynamics 365 Human Resources のテスト ドライブ環境または実稼動環境の削除について説明します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a6f23adedc287b85018fe0b0af445677f6dc597c
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419407"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889911"
 ---
 # <a name="remove-an-instance"></a>インスタンスの削除
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 この記事では、Microsoft Dynamics 365 Human Resources のテスト ドライブ環境または実稼動環境の削除について説明します。
 
@@ -81,7 +81,10 @@ ms.locfileid: "4419407"
 
 1. [Power Apps 環境の復旧](/power-platform/admin/recover-environment.md)の指示に従います。
 
-2. 管理者に連絡して、人事環境を復元してください。 詳細については、[サポート](hr-admin-troubleshooting-support.md) を参照してください。
+2. 管理者に連絡して、人事環境を復元してください。 詳細については、[サポート](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照してください。
 
 > [!Warning]
 > Power Apps 環境は、削除後の 7 日間のみ保存されています。 この 7 日の期間内に環境を復旧する必要があります。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

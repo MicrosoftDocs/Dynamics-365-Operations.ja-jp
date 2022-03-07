@@ -1,27 +1,27 @@
 ---
 title: Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
-description: この記事では、Commerce Runtime (CRT) のアーキテクチャと構成に関する情報を提供します。 CRT は、ビジネス ロジックをカプセル化するポータブル .NET ライブラリの集合です。 コマース チャネルのエンジンとして機能します。
+description: この記事では、Commerce Runtime (CRT) のアーキテクチャと構成に関する情報を提供します。
 author: AamirAllaq
-manager: AnnBe
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
-ms.custom: 218654
+ms.reviewer: tfehr
+ms.custom:
+- "218654"
+- intro-internal
 ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
 ms.search.region: Global
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 19adceb4df14f66581f99b8795d2458dca755715
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9e29c740a0436ea9120c5b8d1a684cc4b1588b5a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683358"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984895"
 ---
 # <a name="commerce-runtime-crt-architecture-and-configuration"></a>Commerce Runtime (CRT) のアーキテクチャおよびコンフィギュレーション
 
@@ -29,12 +29,11 @@ ms.locfileid: "4683358"
 
 この記事では、Commerce Runtime (CRT) のアーキテクチャと構成に関する情報を提供します。 CRT は、ビジネス ロジックをカプセル化するポータブル .NET ライブラリの集合です。 コマース チャネルのエンジンとして機能します。 
 
-<a name="commerce-runtime-architecture"></a>Commerce Runtime のアーキテクチャ
------------------------------
+## <a name="commerce-runtime-architecture"></a>Commerce Runtime アーキテクチャ
 
 次の図は、Microsoft Dynamics 365 Commerce Runtime (CRT) のコンポーネントを示しています。 
 
-[![Commerce Runtime コンポーネント](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
+[![Commerce Runtime のコンポーネント。](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
 
 ### <a name="data-access"></a>データ アクセス
 
@@ -53,7 +52,7 @@ ms.locfileid: "4683358"
 ワークフロー レイヤーーの上は、アプリケーション プログラミング インターフェイス (API) レイヤーです。 項目に関する情報の取得、価格の計算、配送料の計算、および発注などのタスクのために API を使用することができます。 業務プロセスに合わせて API を拡張することができます。
 
 ## <a name="commerce-runtime-configuration"></a>Commerce Runtime のコンフィギュレーション
+
 サービスは、CRT コンフィギュレーション ファイルのタイプとして列挙されます。 タイプを CRT 構成ファイルに追加して、どのサービスが CRT に読み込まれるかコントロールすることができます。 コンフィギュレーション ファイルに一覧表示された順序でサービスが読み込まれます。 すべての既定サービスは自動的に読み込まれます。 ただし、既定のサービスのいずれかの上に新しいサービスを追加する場合、新しいサービスは既定のサービスに置き換えられます。
 
-
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

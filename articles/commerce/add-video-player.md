@@ -2,36 +2,30 @@
 title: ビデオ プレーヤー モジュール
 description: このトピックでは、ビデオ プレーヤー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8d09797d24572a99cc8f5ed2d34b73eb7144af7a35661a929b6a571a20dfed04
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413708"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731722"
 ---
 # <a name="video-player-module"></a>ビデオ プレーヤー モジュール
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、ビデオ プレーヤー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 ビデオ プレーヤー モジュールは、ビデオの再生をサポートするために使用されます。 コンテンツ管理システム (CMS) にビデオ コンテンツをアップロードして使用可能であれば、任意のページに追加することができます。 ビデオ プレーヤー モジュールは、.mp4 メディア タイプがサポートしています。
 
@@ -49,12 +43,16 @@ ms.locfileid: "4413708"
 
 以下の図は、ホーム ページにおけるビデオ プレイヤー モジュールの例を示しています。
 
-![ビデオ プレイヤー モジュールの例](./media/ecommerce-videoplayer.PNG)
+![ビデオ プレイヤー モジュールの例。](./media/ecommerce-videoplayer.PNG)
 
 ### <a name="video-player-module-properties"></a>ビデオ プレーヤー モジュールのプロパティ
 
 | プロパティ名         | 先頭値                               | 説明 |
 |-----------------------|-------------------------------------|-------------|
+| ヘッダー               | ヘッダー テキストとヘッダー タグ (**H1**、**H2**、**H3**、**H4**、**H5**、または **H6**) | 既定では、**H2** ヘッダー タグがヘッダーに使用されますが、アクセシビリティ要件を満たすようにヘッダー タグを変更できます。 |
+| リッチ テキスト             | 段落のテキスト | モジュールは、リッチ テキスト形式の段落テキストをサポートします。 ハイパーリンク、太字、下線付き、および斜体など、基本的なリッチ テキスト機能がいくつかサポートされます。 これらの機能の一部は、モジュールに適用されるページ テーマによって上書きされる場合があります。 |
+| リンク                  | リンク テキスト、リンク URL、アクセス可能リッチ インターネット アプリケーション (ARIA) ラベル、および **新しいタブでリンクを開く** セレクター | モジュールは、1 つ以上の "アクションの呼び出し" リンクをサポートします。 リンクを追加すると、リンク テキスト、URL、および ARIA ラベルが必要になります。 ARIA ラベルは、アクセシビリティ要件を満たしていることを説明する必要があります。 リンクをコンフィギュレーションして、新しいタブで開くことができます。 |
+| サブ テキスト              | ヘッダー、テキスト、またはリンク | ビデオ プレーヤー モジュールに対する追加のコンテキストでは、作成者またはデザイナー名、個人用ブログへのリンクなどを追加できます。 |
 | 自動再生             | **True** または **False**               | 値が **True** に設定されている場合、ビデオは自動的に再生されます。 |
 | ミュート                  | **True** または **False**               | 値が **True** に設定されている場合、オーディオはミュートされます。 このプレーヤーの既定値は **False** です。 Chrome ブラウザーでは、自動再生ビデオは既定でミュートになっており、ユーザーがビデオを手動で再生した場合にのみオーディオが再生されます。 |
 | ループ                  | **True** または **False**               | 値が **True** に設定されている場合、ビデオはループで繰り返されます。 |
@@ -64,6 +62,9 @@ ms.locfileid: "4413708"
 | ビデオ プレーヤーのコントロール | **True** または **False**               | 値が **True** に設定されている場合は、すべてのビデオ プレーヤー コントロールが表示されます。 これらのコントロールには、再生ボタンと一時停止ボタン、進捗状況インジケーター、およびクローズド キャプション オプションが含まれます。 |
 | ポスター画像の非表示     | **True** または **False**               | ビデオにはポスター フレームを含めることができます。 このプロパティの値が **True** に設定されている場合、ポスター フレームは非表示になっています。 |
 | マスク レベル            | **0** から **100** までの数字 | スタイル設定のためにビデオに適用されるマスク。 |
+
+> [!IMPORTANT]
+> **ヘッダー**、**リッチ テキスト**、**リンク**、および **サブ テキスト** のプロパティは、Dynamics 365 Commerce バージョン 10.0.20 リリース時点で使用できます。
 
 ## <a name="add-a-video-player-module-to-a-page"></a>ビデオ プレーヤー モジュールをページに追加する
 
@@ -106,3 +107,6 @@ ms.locfileid: "4413708"
 [テキスト ブロック モジュール](add-content-rich-block.md)
 
 [コンテンツ ブロック モジュール](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

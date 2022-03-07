@@ -2,26 +2,24 @@
 title: ワークフロー タイプのクエリの作成
 description: このトピックでは、ワークフロー タイプのクエリを作成する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 5b01bfdb03c69758772a96bc7a9ab20a07e3039b
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: ca84f0a471361298ef48898f9bd9608f0b2e3129
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798757"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781723"
 ---
 # <a name="create-a-query-for-a-workflow-type"></a>ワークフロー タイプのクエリの作成 
 
@@ -41,4 +39,7 @@ ms.locfileid: "4798757"
 4. **プロパティ** シートで、ワークフローを定義しているドキュメント タイプのメイン テーブルに対して **テーブル** プロパティを設定します。
 5. アプリケーション オブジェクト ツリー (AOT) で、新しいクエリを右クリックし、 **保存** を選択します。
 
-クエリの作成方法の詳細については、 [AOTを使用したクエリの作成](https://docs.microsoft.com/dynamicsax-2012/developer/how-to-create-queries-by-using-the-aot) を参照してください。
+クエリの作成方法の詳細については、 [AOTを使用したクエリの作成](/dynamicsax-2012/developer/how-to-create-queries-by-using-the-aot) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

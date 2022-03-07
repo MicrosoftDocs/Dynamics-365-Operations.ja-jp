@@ -1,22 +1,22 @@
 ---
 title: 販売注文に関するよく寄せられる質問
 description: このページでは、Dynamics 365 Supply Chain Management の販売注文の処理時によく寄せられる質問を取り上げます。
-author: Henrikan
+author: SmithaNataraj
 ms.date: 06/24/2021
 ms.topic: troubleshooting
 ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: smnatara
 ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3cee75b1d740e7cb414c674157dde0146e8faa50
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d75022dcc476052040b16c9033cf5ff2a697ae6c
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571620"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7476867"
 ---
 # <a name="sales-order-faqs"></a>販売注文に関するよくある質問
 

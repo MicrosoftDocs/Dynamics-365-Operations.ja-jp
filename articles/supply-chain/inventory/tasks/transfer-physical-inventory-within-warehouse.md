@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 540ba2266ea74c36babce57670f84159c89018f1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b745308aca2503b31d7d24d7cac693bb803fc6ab
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432216"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244258"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>倉庫内の現物在庫の移動
 
@@ -59,3 +58,6 @@ ms.locfileid: "4432216"
 1. **在庫** をクリックします。
 2. **トランザクション** をクリックします。 ここで、仕訳帳の転記時に作成されたトランザクションを確認できます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

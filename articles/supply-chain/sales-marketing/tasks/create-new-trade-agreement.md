@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43426e77c30e46f4dd1cc117c38cf6ba5437655b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c4ac436b57b6010a5d5b3759d2ccf1c4af95446
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431768"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208138"
 ---
 # <a name="create-a-new-trade-agreement"></a>新しい売買契約の作成
 
@@ -71,5 +70,13 @@ ms.locfileid: "4431768"
 5. ページを閉じます。
 
 ## <a name="additional-resources"></a>追加リソース
+
+### <a name="whitepaper"></a>ホワイト ペーパー
+詳細については、次のホワイト ペーパー (AX2012 をサポートするように記述されているが、Dynamics 365 Supply Chain Management にも適用される) をダウンロードしてください
+- [売買契約](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
 ### <a name="community-blogs"></a>コミュニティのブログ
 - [Dynamics 365 for Finance and Operations での販売価格](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

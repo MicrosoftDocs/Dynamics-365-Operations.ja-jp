@@ -1,28 +1,25 @@
 ---
 title: 部分的に引当済の移動オーダーのバッチ リリース
 description: このトピックでは、モバイル デバイスから、部分的に引当済の移動オーダーのバッチ リリースを設定し、適用する方法について説明します。
-author: pjacobse
-manager: tfehr
+author: perlynne
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
-ms.author: pjacobse
+ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7807ae109a4a708f3530112feed1a4fb210a30ef
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0fbe12b66da68bcd130fdb188eb0106b686200c3b59edc2af96b79f65022567a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759385"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>部分的に引当済の移動オーダーのバッチ リリース
 
@@ -64,3 +61,6 @@ ms.locfileid: "4432326"
 -   移動オーダーの **数量** および **部分的にリリースされた注文のリリースを許可** パラメーターを設定するには、**倉庫管理** \> **倉庫にリリース** \> **移動オーダーの自動リリース** の順にクリックします。
 
 -   販売注文の **数量** および **部分的にリリースされた注文のリリースを許可** パラメーターを設定するには、**倉庫管理** \> **倉庫にリリース** \> **販売注文の自動リリース** の順にクリックします。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

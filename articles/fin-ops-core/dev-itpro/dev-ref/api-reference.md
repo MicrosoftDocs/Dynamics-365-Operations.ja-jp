@@ -2,26 +2,21 @@
 title: API、クラス、テーブルのリファレンス
 description: このトピックでは、Visual Studio および Microsoft のドキュメント サイトで API ドキュメントを見つける場所について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 63853
-ms.assetid: 46e5e47b-2c80-44fd-a7a3-e41884da2f55
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 598645eb5ddf42352b3d3f056afa650592acfeee
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 149e524c550f810d514b548e9cb0ea65ba28d81f
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408756"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923255"
 ---
 # <a name="api-class-and-table-resources"></a>API、クラス、テーブルのリファレンス
 
@@ -33,7 +28,7 @@ ms.locfileid: "4408756"
 
 ### <a name="application-class-and-table-documentation-is-in-visual-studio"></a>アプリケーション クラスおよびテーブル ドキュメントは Visual Studio にあります
 
-Microsoft Visual Studio のアプリケーション クラスについては、ドキュメントを参照してください。 アプリケーション エクスプローラーでクラス名を検索し、そのコードを表示します。 クラスに関する追加のメタデータは **プロパティ** ウィンドウ内にあります。 [技術参照レポート](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) 内のすべてのテーブルの一覧をダウンロードすることができます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。
+Microsoft Visual Studio のアプリケーション クラスについては、ドキュメントを参照してください。 アプリケーション エクスプローラーでクラス名を検索し、そのコードを表示します。 クラスに関する追加のメタデータは **プロパティ** ウィンドウ内にあります。 [技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) 内のすべてのテーブルの一覧をダウンロードすることができます。 詳細については、[標準データ エンティティに関する情報の検索](../data-entities/data-entities-report.md) を参照してください。
 
 ### <a name="programming-with-application-tables-and-classes"></a>アプリケーション テーブルおよびクラスを使用したプログラミング
 
@@ -79,6 +74,9 @@ Microsoft docs サイトで使用可能なアプリケーション エクスプ�
 
 システム クラスのリファレンス ドキュメントは .NET API ブラウザーに含まれています。
 
-[Microsoft.Dynamics.Ax.Xpp 名前空間](https://docs.microsoft.com/dotnet/api/microsoft.dynamics.ax.xpp)
+[Microsoft.Dynamics.Ax.Xpp 名前空間](/dotnet/api/microsoft.dynamics.ax.xpp)
 
-[Dynamics.AX.Application 名前空間](https://docs.microsoft.com/dotnet/api/dynamics.ax.application)
+[Dynamics.AX.Application 名前空間](/dotnet/api/dynamics.ax.application)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

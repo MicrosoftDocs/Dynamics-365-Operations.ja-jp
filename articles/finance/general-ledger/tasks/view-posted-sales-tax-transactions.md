@@ -2,23 +2,26 @@
 title: 転記された売上税トランザクションの表示
 description: このトピックでは、転記された売上税トランザクションを表示するいくつかの方法について説明します。
 author: twheeloc
+manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTrans, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90789800b431c5052c34263289c51c9d4947f34ffc10177fbf1b14d8012d3bed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b4e35d6a07ef4220bdd883eb3384a1c800ecd9e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761233"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445288"
 ---
 # <a name="view-posted-sales-tax-transactions"></a>転記された売上税トランザクションの表示
 
@@ -46,6 +49,3 @@ ms.locfileid: "6761233"
 2. アクション ウィンドウで、**売上税コード** を選択します。
 3. **転記済売上税** を選択します。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

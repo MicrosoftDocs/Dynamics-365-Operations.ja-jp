@@ -2,26 +2,24 @@
 title: プロジェクト リソースのスケジューリング データ モデル
 description: このトピックでは、プロジェクト リソースのスケジューリング データ モデルについて説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 202281
 ms.assetid: 46d23d3e-b5ef-43a7-ae9d-a1e202cc8abc
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe6d577b30fd54ab77de5d2e2e813a93738e5d71
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 918666b480d212e6a36da1199161ae2efad9f493
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679974"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781158"
 ---
 # <a name="project-resource-scheduling-data-model"></a>プロジェクト リソースのスケジューリング データ モデル
 
@@ -31,7 +29,7 @@ ms.locfileid: "4679974"
 
 ## <a name="physical-data-model-for-project-resource-scheduling"></a>プロジェクト リソースのスケジューリングの物理データ モデル
 
-次の図は、プロジェクト リソース スケジューリング物理データ モデルのデータ設計構造を表しています。   [![リソース管理データ モデル](./media/resource-management-data-model.jpg)](./media/resource-management-data-model.jpg)
+次の図は、プロジェクト リソース スケジューリング物理データ モデルのデータ設計構造を表しています。   [![リソース管理データ モデル。](./media/resource-management-data-model.jpg)](./media/resource-management-data-model.jpg)
 
 ## <a name="tables"></a>テーブル
 次のテーブルに、リソース管理データ モデルをサポートする追加のテーブルの一覧を示します。
@@ -76,7 +74,7 @@ ms.locfileid: "4679974"
 これらのセクションには、プロジェクト リソースのスケジューリングに関連する機能の実装の一部である、テーブルおよびフィールドのコード変更に関する情報が含まれています。
 
 ### <a name="resource-scheduling"></a>リソース スケジューリング
-テーブル <strong>PSASchedEmplReservation</strong> は、リソースの予約の保存には使用されなくなりました。 その代わり、予約は <strong>ResAssignment</strong> および <strong>ResBooking **テーブルに保存されます。**活動リソース</strong> フィールドの外部キーを <strong>PSAProjSchedRole.RecId</strong> に対して使用してリソースの予約を保存します。 <strong>PSAProjSchedRole</strong> テーブルは、どのリソースがプロジェクト チームまたは見積チームのメンバーであるかを識別するために、<strong>ResourceView.RecId</strong> への <strong>Resource</strong> フィールド外部キーと <strong>CompanyInfo.RecId</strong> への <strong>ResourceLegalEntity</strong> フィールド外部キーを持つプロジェクト チーム テーブルです。 <strong>PSAProjSchedRole.Resource</strong> フィールド = 0 の場合、この活動のリソースは計画リソースとなります。 計画されているリソースは、実際のリソースではサポートされないシャドウ リソースです。 <strong>PSAProjSchedRole.ResourceCategory</strong> は、このチームメンバーのロールを格納する <strong>PSASchedRole</strong> の外部キーです。 <strong>ResourceResourceCategorySetup</strong> テーブルは、既定の時間効率の良いリソース/役割の関連付けを保存します。 ただし、<strong>ResourceResourceCategorySetup</strong> テーブルの既定のロール定義を無視し、<strong>PSAProjSchedRole.ResourceCategory</strong> により定義された任意のロールにリソースを引当できます。 WBS バージョン管理については、テーブル <strong>ProjPlanVersions</strong> および <strong>ProjPlanVersionDetails</strong> に WBS タスク バージョンが保存されます。 最初、すべての WBS タスク データは、ユーザーが WBS タスクの内容を編集しているときにこれらのテーブルに保存されます。 ユーザーが <strong>発行</strong> ボタンをクリックすると、タスクのデータは元の階層テーブルにプッシュされます (<strong>smmActivities</strong> および <strong>PSAActivitySetup</strong>) 。 リソース管理機能では、元の階層テーブルにデータが必要で、公開された WBS が必要です。
+テーブル <strong>PSASchedEmplReservation</strong> は、リソースの予約の保存には使用されなくなりました。 その代わり、予約は <strong>ResAssignment</strong> および <strong>ResBooking**テーブルに保存されます。**活動リソース</strong> フィールドの外部キーを <strong>PSAProjSchedRole.RecId</strong> に対して使用してリソースの予約を保存します。 <strong>PSAProjSchedRole</strong> テーブルは、どのリソースがプロジェクト チームまたは見積チームのメンバーであるかを識別するために、<strong>ResourceView.RecId</strong> への <strong>Resource</strong> フィールド外部キーと <strong>CompanyInfo.RecId</strong> への <strong>ResourceLegalEntity</strong> フィールド外部キーを持つプロジェクト チーム テーブルです。 <strong>PSAProjSchedRole.Resource</strong> フィールド = 0 の場合、この活動のリソースは計画リソースとなります。 計画されているリソースは、実際のリソースではサポートされないシャドウ リソースです。 <strong>PSAProjSchedRole.ResourceCategory</strong> は、このチームメンバーのロールを格納する <strong>PSASchedRole</strong> の外部キーです。 <strong>ResourceResourceCategorySetup</strong> テーブルは、既定の時間効率の良いリソース/役割の関連付けを保存します。 ただし、<strong>ResourceResourceCategorySetup</strong> テーブルの既定のロール定義を無視し、<strong>PSAProjSchedRole.ResourceCategory</strong> により定義された任意のロールにリソースを引当できます。 WBS バージョン管理については、テーブル <strong>ProjPlanVersions</strong> および <strong>ProjPlanVersionDetails</strong> に WBS タスク バージョンが保存されます。 最初、すべての WBS タスク データは、ユーザーが WBS タスクの内容を編集しているときにこれらのテーブルに保存されます。 ユーザーが <strong>発行</strong> ボタンをクリックすると、タスクのデータは元の階層テーブルにプッシュされます (<strong>smmActivities</strong> および <strong>PSAActivitySetup</strong>) 。 リソース管理機能では、元の階層テーブルにデータが必要で、公開された WBS が必要です。
 
 ### <a name="price-by-resource-and-resource-category"></a>リソースおよびリソース カテゴリ別の価格
 価格決定テーブル、**ProjCostPriceExpense**、**ProjCostSalesPrice**、および **ProjRevenueSalesPrice** には、**ResourceView.RecId** からの外部キーがあります。 テーブル **ProjHourCostPrice**、**ProjHourSalesPrice**、**ProjTransferPrice** には、**ResourceView.RecId** からの外部キーがあります。 フィールド **ResourceCategory** は、**ResourceCategoryView.RecId** の外部キーの一部です。 これは、価格設定が作業者ではなくリソースに基づいており、リソース カテゴリによる価格設定が可能になるように行われます。
@@ -108,3 +106,6 @@ ms.locfileid: "4679974"
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

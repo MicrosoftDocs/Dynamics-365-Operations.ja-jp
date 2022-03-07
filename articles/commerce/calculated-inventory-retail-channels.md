@@ -2,29 +2,26 @@
 title: 小売チャネルの引当可能在庫数量の計算
 description: このトピックでは、店舗およびオンライン チャネルの手持在庫を表示するために使用できるオプションについて説明します。
 author: hhainesms
-manager: annbe
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: de4ee98198f441b8f42a8a55aa5ff1015f485234
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 29efccab017d9dff98872871bfe953fba19d2c30
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413740"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799688"
 ---
-# <a name="calculate-inventory-availability-for-retail-channels"></a>小売チャネルの引当可能在庫数量の計算
+# <a name="calculate-inventory-availability-for-retail-channels"></a>小売チャンネルの引当可能在庫数量の計算
 
 [!include [banner](../includes/banner.md)]
 
@@ -114,3 +111,6 @@ POS の **注文フルフィルメント** スクリーンでは、注文フル�
 > パフォーマンス上の理由から、チャネル側在庫の可用性計算が E コマース API's または新しい POS チャネル側の在庫ロジックを使用して、在庫の可用性依頼を作成するために使用される際、計算によって再度計算ロジックの実行が正当化するのに十分な時間が経過したかどうか特定するためのキャッシュが使用されます。 既定のキャッシュは 60 秒に設定されています。 たとえば、店舗のチャネル側計算を有効にして、**在庫検索** ページで製品の手持在庫を表示しているとします。 その後、製品の 1 つのユニットが販売された場合、**在庫検索** ページではキャッシュがクリアーされるまで、在庫の減少が示されません。 POS でトランザクションを転記した後、手持在庫が削減されたことを確認する前に、60 秒待機する必要があります。
 
 ビジネス シナリオが短いキャッシュ時間を要求する場合、製品サポート担当者に問い合わせてください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

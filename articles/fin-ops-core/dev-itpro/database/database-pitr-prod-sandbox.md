@@ -1,12 +1,10 @@
 ---
-title: サンドボックス環境への本番データベースをポイント イン タイム復元を実行する
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用して、サンドボックスのユーザー受け入れテスト(UAT)環境に本番データベースのポイント インタイム復元 (PITR) を実行する方法について説明します。
+title: サンドボックス環境への生産データベースのポイントインタイム復元
+description: このトピックでは、Microsoft Dynamics Lifecycle Services を使用して生産データベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
-manager: AnnBe
-ms.date: 12/09/2020
+ms.date: 08/4/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ee66ea3dc1c9c057ec487fc77515088f574764a9
-ms.sourcegitcommit: 792a81ae86d4854e450c3c5006d2523dd721d522
+ms.openlocfilehash: fd36707ab30f18240a9b9cc406460e4fb143e514
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "4723393"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345592"
 ---
-# <a name="point-in-time-restore-of-the-production-database-to-a-sandbox-environment"></a>サンドボックス環境への本番データベースをポイント イン タイム復元を実行する
+# <a name="point-in-time-restore-of-the-production-database-to-a-sandbox-environment"></a>サンドボックス環境への生産データベースのポイントインタイム復元
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用すると、ユーザー受け入れテスト(UAT)のサンドボックス環境に対して、本番データベースのポイント イン タイム復元(PITR)を実行できます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 7 日間維持します。
+Microsoft Dynamics Lifecycle Services (LCS) を使用すると、ユーザー受け入れテスト(UAT)のサンドボックス環境に対して、本番データベースのポイント イン タイム復元(PITR)を実行できます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](/azure/sql-database/sql-database-automated-backups)を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 7 日間維持します。
 
 > [!IMPORTANT]
 > Microsoft は、実稼働レポートを目的とした実稼働データのサンドボックス環境へのコピーには対応していません。
@@ -40,7 +38,7 @@ Lifecycle Services チームは、手動または手動のプロセスに依存�
 4. 復元操作がすぐに開始されます。
 
 > [!IMPORTANT]
-> セルフ サービス PITR は、異なる地域にある環境間ではサポートされていません。 詳細については、このトピックで後述する「既知の問題」を参照してください。
+> セルフ サービスのポイントインタイム復元 (PITR) は、異なる地域にある環境間ではサポートされていません。 詳細については、このトピックで後述する「既知の問題」を参照してください。
 
 ### <a name="restore-operation-failure"></a>失敗した操作の復元
 
@@ -57,11 +55,12 @@ Lifecycle Services チームは、手動または手動のプロセスに依存�
 * SysEmailParameters テーブルの シンプル メール トランスファー プロトコル (SMTP) リレーサーバー。
 * PrintMgmtSettings と PrintMgmtDocInstance テーブルの印刷管理設定。
 * SysServerConfig、SysServerSessions、SysCorpNetPrinters、SysClientSessions、BatchServerConfig、および BatchServerGroup テーブル内の環境固有のレコード。
-* DocuValue テーブル内のドキュメント添付ファイル。 これらの添付ファイルには、ソース環境で上書きされたすべての Microsoft Office テンプレートが含まれます。
+* Azure Blob Storage に保存されているすべてのファイル。 これには、ドキュメントの添付ファイル (DocuValue テーブルおよび DocuDeletedValue テーブルから)、およびカスタム Microsoft Office テンプレート (DocuTemplate テーブルから) が含まれます。
 * 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
 * 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、sysemailsmtppasswordテーブルの **パスワード** フィールドです。
+* 二重書き込みの構成。  この操作に成功した後にターゲット環境に新しいリンクを設定するには、[二重書き込み環境リンク](../data-entities/dual-write/link-your-environment.md)を参照してください。
 
 これらの要素は、環境固有のものであるためコピーされません。 この例には、BatchServerConfigおよびSysCorpNetPrintersの各レコードが含まれます。 その他の要素は、サポート チケットのデータ量が多くなる懸念があるためコピーされません。 たとえば、簡易メール転送プロトコル (SMTP) は UAT 環境でも有効になっているため、重複する電子メールが送信されてしまう可能性があります。また、バッチ ジョブも有効になっており、無効な統合メッセージが送信されてしまう可能性もあるため、管理者が更新後クリーンアップを行う前にユーザーが有効化してしまう可能性があります。
 
@@ -80,7 +79,7 @@ Lifecycle Services チームは、手動または手動のプロセスに依存�
 - 更新処理では、実行対象のデータベースで削除が実行されます。
 - ターゲット環境は、データベースのコピーがターゲット サーバーに達するまで使用可能です。 その時点以降は、更新プロセスが完了するまで、ターゲット環境はオフラインになります。
 - リフレッシュは、アプリケーションおよび Financial Reporting データベースにのみ影響します。
-- Azure blob storage のドキュメントは、環境間でのコピーができません。 したがって、添付されたドキュメントを処理するドキュメントとテンプレートは変更されず、現在の状態のままとなります。
+-  ある環境から別の環境に、**Azure Blob Storage に保管してあるファイルはコピー** されません。 これには、**ドキュメントの添付ファイルやカスタム Microsoft Office テンプレート** が含まれます。 これらのドキュメントは変更されず、現在の状態のままになります。 
 - 管理者ユーザー、およびその他の内部サービス ユーザー アカウントを除くすべてのユーザーは使用できなくなります。 そのため、管理者ユーザーは他のユーザーがシステムに復帰する前にデータの削除や難読化することができます。
 - 管理者ユーザーは、特定のサービスまたは URL に統合エンドポイントを再接続するなど、必要な構成の変更を加える必要があります。
 - 定期的なインポートおよびエクスポート ジョブを持つすべてのデータ管理フレームワークは、復元を開始する前に、対象のシステムを完全に処理して停止する必要があります。 さらに、すべての定期的なインポートおよびエクスポート ジョブが完全に処理された後に、データベースをソースから選択することをお勧めします。 このようにして、Azure ストレージ内のいずれのシステムからも孤立ファイルがないことを確認してください。 対象の環境でデータベースを復元した後は、孤立したファイルを処理できないため、この手順は重要となります。 復元後、統合ジョブを再開することができます。
@@ -127,7 +126,13 @@ Lifecycle Services チームは、手動または手動のプロセスに依存�
 
 逆に、実稼働環境が実行対象のサンドボックス環境よりも新しい場合は、更新前に対象のサンドボックス環境をアップグレードするか、更新の実行前に環境の割り当て解除、削除、および再展開をする必要があります。
 
-### <a name="the-source-and-target-are-on-different-infrastructure-microsoft-managed-vs-self-service"></a>ソースおよびターゲットが異なるインフラストラクチャ上にある (Microsoft による管理対セルフ サービス)
+### <a name="the-source-and-target-are-on-different-infrastructure-microsoft-managed-vs-self-service"></a>異なるインフラストラクチャ (Microsoft による管理対セルフ サービス) 上にあるソースおよびターゲット
 
-ポイント インタイム復元 (PITR) プロセスは、2 つの異なるリージョン間の Microsoft による管理およびセルフ サービス環境間でサポートされていません。 たとえば、実稼働環境が Microsoft によって管理されており、米国東部 2 で、セルフ サービスのサンドボックス環境に PITR が必要な場合、米国東部では PITR はサポートされていません。 代わりに、実稼働環境をセルフ サービスに移動するか、定期的なデータベース更新を選択することもできます。 PITR は、同じインフラストラクチャ上の環境内で、リージョン間および同じリージョン内の両方でサポートされています。
+PITR プロセスは、ソースとして Microsoft 管理環境と、行先としてのセルフサービス環境の間ではサポートされません。 たとえば、実稼働環境が Microsoft によって管理されており、米国東部にある場合、また、セルフサービスで米国東部にあるサンドボックス環境に PITR が必要な場合です。 PITR はサポートされていません。 代わりに、実稼働環境をセルフ サービスに移動するか、定期的なデータベース更新を選択することもできます。
 
+### <a name="point-in-time-restore-between-source-and-target-that-are-both-on-self-service-in-different-regions"></a>異なる地域で、両方ともセルフ サービスにあるソースとターゲット間のポイントインタイム復元
+PITR プロセスは、異なる地域間のセルフ サービス環境間ではサポートされていません。 たとえば、実稼働環境が米国東部にあり、セルフ サービスのサンドボックス環境に PITR が必要な場合、西ヨーロッパでは PITR はサポートされていません。 代わりに、環境を両方とも同じ地域にするか、定期的なデータベース更新を選択することもできます。
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

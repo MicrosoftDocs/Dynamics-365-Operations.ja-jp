@@ -2,11 +2,9 @@
 title: 認識テストの作成および確認
 description: 日本では、減損は 2 つの主要なステップにより処理されます。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetImpairmentManageTestResult_JP, AssetImpairmentRecognition_JP
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a16951822506a88fead0df5606920e0b751b4f56
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 128a853cae80b7a7b85adf0b0db436714c13fe2f38ce1e8880cdca2115a1b3d1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4961356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775057"
 ---
 # <a name="create-and-confirm-recognition-test"></a>認識テストの作成および確認
 
@@ -57,3 +55,6 @@ ms.locfileid: "4961356"
     * 確認済の認識テストだけを転記することができます。  
 11. [はい] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

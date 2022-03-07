@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 16041
 ms.assetid: 94ffa218-de7d-4d13-9a8a-461cad0970b3
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d23378e4e7e084ec207fa8528ac76b444c06ec6d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c0a253a1b1ded66b4fce3bc9cd96029d4b887ac0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781264"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354355"
 ---
 # <a name="drop-dialog-form-pattern"></a>ダイアログ削除のフォーム パターン
 

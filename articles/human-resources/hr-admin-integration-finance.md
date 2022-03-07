@@ -1,37 +1,36 @@
 ---
-title: Finance との統合を構成する
-description: この記事では、Dynamics 365 Human Resources および Dynamics 365 Finance から統合できる機能について説明します。
-author: andreabichsel
-manager: AnnBe
-ms.date: 03/26/2020
+title: Finance との統合のコンフィギュレーション
+description: このトピックでは、Dynamics 365 Human Resources と Dynamics 365 Finance 間の統合について説明します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ba984d26c5c0b1376c0ad85e5c0665da004a46a5
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527921"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414691"
 ---
 # <a name="configure-integration-with-finance"></a>Finance との統合のコンフィギュレーション
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dynamics 365 Human Resources と Dynamics 365 Finance を統合するには、[データ インテグレーター](https://docs.microsoft.com/powerapps/administrator/data-integrator)の 「Human Resources から Finance へ」 のテンプレートを使用します。 「Human Resources から Finance へ」 のテンプレートでは、職務、職位、および作業者のデータフローを使用できます。 このテンプレートを使用すると、データを Human Resources から Finance に転送できますが、Finance から Human Resources にデータを渡すことはできません。
+Dynamics 365 Human Resources と Dynamics 365 Finance を統合するには、[データ インテグレーター](/powerapps/administrator/data-integrator)の 「Human Resources から Finance へ」 のテンプレートを使用します。 「Human Resources から Finance へ」 のテンプレートでは、職務、職位、および作業者のデータフローを使用できます。 このテンプレートを使用すると、データを Human Resources から Finance に転送できますが、Finance から Human Resources にデータを渡すことはできません。
 
-![Human Resources から Finance への統合フロー](./media/hr-admin-integration-finance-flow.png)
+![Human Resources から Finance への統合フロー。](./media/hr-admin-integration-finance-flow.png)
 
 Human Resources から Finance へのソリューションは、次のタイプのデータ同期を提供します：
 
@@ -44,7 +43,7 @@ Human Resources から Finance へのソリューションは、次のタイプ�
 
 統合ソリューションには、次のバージョンの Human Resources および Finance が必要です。 
 
-- Common Data Service の Dynamics 365 Human Resources
+- Dataverse の Dynamics 365 Human Resources
 - Dynamics 365 Finance バージョン 7.2 およびそれ以降
 
 ## <a name="template-and-tasks"></a>テンプレートおよびタスク
@@ -55,7 +54,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 2. **プロジェクト** を選択し、 右上隅の **新しいプロジェクト** を選択します。 新しいプロジェクトは、Finance に統合する法人ごとに作成してください。
 
-3. **Human Resources（Human Resources Common Data Service から Finance へ）** を選択し、Human Resources から Finance にレコードを同期します。
+3. **Human Resources（Human Resources Dataverse から Finance へ）** を選択し、Human Resources から Finance にレコードを同期します。
 
 このテンプレートは、以下の基になるタスクを使用して、Human Resources から Finance にレコードを同期します。
 
@@ -81,14 +80,14 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="job-functions-to-compensation-job-function"></a>職務権限から報酬職務権限
 
-| Common Data Service エンティティ (ソース) | Finance エンティティ（宛先） |
+| Dataverseテーブル (ソース) | Finance エンティティ（宛先） |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   関数名)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | DESCRIPTION   (DESCRIPTION)                 |
 
 ### <a name="departments-to-operating-unit"></a>部門から作業単位
 
-| Common Data Service エンティティ (ソース)           | Finance エンティティ（宛先） |
+| Dataverseテーブル (ソース)           | Finance エンティティ（宛先） |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NAME)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -97,7 +96,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="job-types-to-compensation-job-type"></a>ジョブ タイプから報酬ジョブ タイプ
 
-| Common Data Service エンティティ (ソース)   | Finance エンティティ（宛先） |
+| Dataverseテーブル (ソース)   | Finance エンティティ（宛先） |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | DESCRIPTION   (DESCRIPTION)                 |
@@ -105,7 +104,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="jobs-to-jobs"></a>ジョブからジョブ
 
-| Common Data Service エンティティ (ソース)                           | Finance エンティティ（宛先）           |
+| Dataverseテーブル (ソース)                           | Finance エンティティ（宛先）           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -115,7 +114,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="jobs-to-job-detail"></a>ジョブからジョブ詳細
 
-| Common Data Service エンティティ (ソース)                             | Finance エンティティ（宛先） |
+| Dataverseテーブル (ソース)                             | Finance エンティティ（宛先） |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (ジョブ タイプ (ジョブ タイプ名))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -126,7 +125,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="position-types-to-position-type"></a>職位タイプから職位タイプ
 
-| Common Data Service エンティティ (ソース)       | Finance エンティティ（宛先） |
+| Dataverseテーブル (ソース)       | Finance エンティティ（宛先） |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | DESCRIPTION   (DESCRIPTION)                 |
@@ -134,13 +133,13 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="job-positions-to-base-position"></a>ジョブ職位から基本職位
 
-| Common Data Service エンティティ (ソース)           | Finance エンティティ（宛先） |
+| Dataverseテーブル (ソース)           | Finance エンティティ（宛先） |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (職位番号) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>ジョブ職位から職位の詳細
 
-| Common Data Service エンティティ (ソース)              | Finance エンティティ（宛先）       |
+| Dataverseテーブル (ソース)              | Finance エンティティ（宛先）       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (職位番号)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (職務 (名前))                                        | JOBID (JOBID)                                    |
@@ -154,7 +153,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="job-positions-to-position-durations"></a>ジョブ職位から職位の期間
 
-| Common Data Service エンティティ (ソース)             | Finance エンティティ（宛先） |
+| Dataverseテーブル (ソース)             | Finance エンティティ（宛先） |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (職位番号)   | POSITIONID (POSITIONID)                      |
 | 計算された有効化 (計算された有効化) | VALIDFROM (VALIDFROM)                        |
@@ -162,7 +161,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="job-positions-to-position-hierarchies"></a>ジョブの職位から職位の階層
 
-| Common Data Service エンティティ (ソース)        | Finance エンティティ（宛先） |
+| Dataverseテーブル (ソース)        | Finance エンティティ（宛先） |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (職位番号)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -172,7 +171,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 
 ### <a name="workers-to-worker"></a>作業者から作業者
-| Common Data Service エンティティ (ソース)           | Finance エンティティ（宛先）       |
+| Dataverseテーブル (ソース)           | Finance エンティティ（宛先）       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
 | cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
@@ -191,7 +190,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="employments-to-employment"></a>雇用から雇用
 
-| Common Data Service エンティティ (ソース)                             | Finance エンティティ（宛先） |
+| Dataverseテーブル (ソース)                             | Finance エンティティ（宛先） |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -201,7 +200,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="employments-to-employment-detail"></a>雇用から雇用詳細
 
-| Common Data Service エンティティ (ソース)                             | Finance エンティティ（宛先）   |
+| Dataverseテーブル (ソース)                             | Finance エンティティ（宛先）   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -219,7 +218,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>職位作業者割り当てから職位作業者割り当て
 
-| Common Data Service エンティティ (ソース)                             | Finance エンティティ（宛先）   |
+| Dataverseテーブル (ソース)                             | Finance エンティティ（宛先）   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber   (職位番号)                   | POSITIONID(POSITIONID)                        |
@@ -228,7 +227,7 @@ Human Resources から Finance へのテンプレートにアクセスする方�
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>作業者住所から作業者の住所 V2
 
-| Common Data Service エンティティ (ソース)                             | Finance エンティティ（宛先）   |
+| Dataverseテーブル (ソース)                             | Finance エンティティ（宛先）   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
@@ -248,10 +247,12 @@ Human Resources から Finance にデータを統合する場合は、ID に基�
 
 これが発生する領域は、 **従業員番号** を使用した一致が実行される **作業者** と、**職位** です。 職務には、番号シーケンスは使用されません。 その結果、同一の職務ジョブ ID が Human Resources と Finance の両方に存在する場合は、Human Resources の情報で Dynamics 365 Finance の情報が上書きされます。 
 
-重複する ID の問題を防ぐには、[番号順序](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json)に接頭語を追加するか、その他のシステムの範囲を超えている番号順序の開始番号を設定します。 
+重複する ID の問題を防ぐには、[番号順序](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)に接頭語を追加するか、その他のシステムの範囲を超えている番号順序の開始番号を設定します。 
 
 番号順序に含まれていない作業者住所に使用される場所 ID。 Human Resources から Finance に作業者住所を統合するとき、Finance に作業者の住所が既に存在する場合は、重複する住所レコードが作成される場合があります。 
 
 次の図は、データ インテグレーターのテンプレート マッピングの例を示しています。 
 
-![テンプレートのマッピング](./media/IntegrationMapping.png)
+![テンプレート マッピング。](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

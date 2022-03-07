@@ -1,7 +1,7 @@
 ---
 title: 誰かの代わりに製品を注文するためのアクセス許可の設定
 description: このトピックでは、他の作業者に代わって購買要求を作成するためのアクセス許可を作業者に付与する方法を説明します。
-author: RichardLuan
+author: mkirknel
 manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -11,16 +11,17 @@ ms.technology: ''
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: riluan
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 585f5c6cf83ad93b649e3f36e0d486a037915cd4
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 145d8a0e341857bf238fc934cd668ff12b8505b8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017295"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4432011"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>誰かの代わりに製品を注文するためのアクセス許可の設定
 

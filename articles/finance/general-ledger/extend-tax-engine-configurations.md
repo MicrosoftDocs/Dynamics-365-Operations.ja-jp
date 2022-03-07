@@ -2,26 +2,23 @@
 title: 税エンジン コンフィギュレーションの拡張
 description: このトピックでは、税エンジンのコンフィギュレーションの拡張について説明します。
 author: yijialuan
-manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 53dd729fe36e21ea60d65019afd3d33dfc5c8de1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a9d3d7ad26bf753f3b6f1872149f8c91122fbc52
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409463"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345610"
 ---
 # <a name="extend-tax-engine-configurations"></a>税エンジン コンフィギュレーションの拡張 
 
@@ -54,7 +51,7 @@ ms.locfileid: "4409463"
 3. 新しいコンフィギュレーション プロバイダーを作成し、ページを閉じます。
 4. 作成したコンフィギュレーション プロバイダーで、**...** > **有効な設定** をクリックします。
 
-![アクティブ ソリューション](media/gte-extension-active-solution.png)
+![有効なソリューション。](media/gte-extension-active-solution.png)
 
 ## <a name="scenario-1-extend-the-tax-engine-configuration-for-utgst"></a>シナリオ 1 : UTGST 用税コンフィギュレーションを拡張する
 
@@ -80,7 +77,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 1. [拡張コンフィギュレーションを作成します](#create-extension-configurations)  
 2. [課税対象のドキュメントを拡張して、IntraStateInUnionTerritory フラグを含むようにします](#extend-the-taxable-document-so-that-it-includes-the-intrastateinunionterritory-flag)
 3. [拡張された課税対象のドキュメントのデータ マッピングを完了します](#complete-data-mapping-for-the-extended-taxable-document)
-4. [税 (インド販売税 Contoso) のデータ モデルを変更します。](#change-the-data-model-of-tax-india-gst-contoso)
+4. [税 (インド販売税 Contoso) のデータ モデルを変更する](#change-the-data-model-of-tax-india-gst-contoso)
 5. [州販売税 (SGST) の適用条件を変更します](#change-the-applicability-of-sgst)
 6. [UTGST タスク コンポーネントを構成します](#configure-the-utgst-tax-component)
 7. [UTGST を含めるための明細行の式を変更します](#modify-the-formulas-of-lines-to-include-utgst)
@@ -95,31 +92,31 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 
 1. **ローカライズ コンフィギュレーション** ワークスペース (**組織管理** > **ワークスペース** > **電子申告**)、をクリックして **税のコンフィギュレーション**。
 2. ツリーで、**課税対象のドキュメント (インド)** コンフィギュレーションを見つけ、**コンフィギュレーションの作成** をクリックします。
-3. **課税対象のドキュメント モデルから派生** オプションを選択し、名前と、派生課税対象ドキュメントの説明を入力します。 たとえば、**課税対象のドキュメント (インド Contoso)** と名前を入力します。
+3. **課税対象のドキュメント モデルから派生** オプションを選択し、名前と、派生課税対象ドキュメントの説明を入力します。 例えば、**課税対象のドキュメント (インド Contoso)** と名前を入力します。
 4. **コンフィギュレーションの作成** をクリックします。
 5. ツリーで、**税 (インド販売税)** コンフィギュレーションを選択し、**コンフィギュレーションの作成** をクリックします。
-6. **税コンフィギュレーションから派生** オプションを選択し、名前と、派生課税対象ドキュメントの説明を入力します。 たとえば、**税 (インドContoso)** と名前を入力します。
+6. **税コンフィギュレーションから派生** オプションを選択し、名前と、派生課税対象ドキュメントの説明を入力します。 この例では、**税 (インド販売税 Contoso)** と入力します。
 7. **コンフィギュレーションの作成** をクリックします。
 
 ### <a name="extend-the-taxable-document-so-that-it-includes-the-intrastateinunionterritory-flag"></a>課税対象のドキュメントを拡張して、IntraStateInUnionTerritory フラグを含むようにします。
 
-**IntraStateInUnionTerritory** フラグを **課税対象のドキュメント (インド Contoso)** に追加するため、次の手順を完了します。
+次の手順を完了して、**IntraStateInUnionTerritory** フラグを **課税対象のドキュメント (インド Contoso)** に追加します。
 
- 1. ツリーで、[拡張機能コンフィギュレーションの作成](#create-extension-configurations)で作成した **課税対象のドキュメント (インド Contoso)** コンフィギュレーションを見つけ、**デザイナー** をクリックします。
+ 1. ツリーで、[拡張機能コンフィギュレーションの作成](#create-extension-configurations)で作成した **課税対象ドキュメント (インド Contoso)** のコンフィギュレーションを見つけ、**デザイナー** をクリックします。
  2. ツリーで、**課税対象のドキュメント** > **ヘッダー** > **明細行** と移動し、**新規** をクリックして新しいノードを作成します。
  3. ノードの名前を入力し、アイテムの種類を選択します。
     -   **名前:** IntraStateInUnionTerritory
     -   **アイテムの種類:** Enum
 
-    ![新しいノードの作成](media/gte-create-node-tax-document.png)
+    ![新しいノードの作成。](media/gte-create-node-tax-document.png)
 
  4. **追加** をクリックします。
  5. **ノード** クイック タブで、**項目参照を切り替える** をクリックします。
  6. ツリーで **NoYes** を選択し、**OK** をクリックします。
  7. コンフィギュレーションを保存し、デザイナーを閉じます。
- 8. ツリーで選択されている **課税対象のドキュメント (インド Contoso)** で、**バージョン** リストにある **ステータスを変更** > **完了** をクリックします。
+ 8. **課税対象ドキュメント (インド Contoso)** がまだツリーで選択されている状態で、**バージョン** リストにある **ステータスの変更** > **完了** をクリックします。 
 
-    ![コンフィギュレーションの状態の更新](media/gte-change-configuration-status.png)
+    ![コンフィギュレーション状態の更新。](media/gte-change-configuration-status.png)
 
  9. **UTGST** のように説明を入力し、**OK** をクリックします。
  10. エラーがある場合は、デザイナーを開き、**検証** をクリックし、エラーを修正します。
@@ -138,7 +135,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
     1. **組織管理** > **グローバル アドレス帳** > **アドレス** > **アドレスの設定** の順に移動します。 
     2. **連邦直轄領** 列を右クリックし、**フォーム情報** > **フォーム名: LogisticsAddressSetup** をクリックします。 たとえば、列のシステムの名前が **LogisticsAddressState.UnionTerritory_IN** であることを確認します。
 
-    ![連邦直轄領の GTE 拡張](media/gte-extension-union-territory-form-info.png)
+    ![連邦直轄領の GTE 拡張機能。](media/gte-extension-union-territory-form-info.png)
 
 2. 連邦直轄領内のイントラスタット取引の税エンジン モデル フィールドを追加します。
 
@@ -188,25 +185,25 @@ UTGST のインプット タックス クレジット の使用率の順序は�
     ```
 
 3. デザイナーでのデータ連結を実行します。
-   1. **課税対象ドキュメント (インド Contoso)** コンフィギュレーションに移動し、**デザイナー** をクリックします。
+   1. **課税対象ドキュメント (インド Contoso)** コンフィギュレーションで、**デザイナー** をクリックします。
 
-      ![税コンフィギュレーション デザイナー](media/gte-extension-tax-configuration-designer.png)
+      ![税コンフィギュレーション デザイナー。](media/gte-extension-tax-configuration-designer.png)
 
    2. **データ ソースへのマップ モデル** をクリックします。
    3. 発注書または販売注文など、それぞれの課税対象ドキュメントと参照モデルのためのたくさんのデータ マッピングがあります。 ビジネスの要求に応じて、データ マッピングを行う必要があります。 例:
       1. 販売注文明細行を選択します。
       2. **デザイナー** をクリックします。
 
-         ![データ マッピング](media/gte-extension-data-mapping.png)
+         ![データ マッピング。](media/gte-extension-data-mapping.png)
 
    4. 1 ~ 5 の手順を実行した後、データ ソースの、**販売注文** > **ヘッダー** > **明細行** の下に、**IntraStateInUnionTerritory** を見つけることができます。 このフィールドを、課税対象のドキュメントの **IntraStateInUnionTerritory:Enumeration** 値に連結することができます。
 
-      ![データ バインディング](media/gte-extension-data-binding.png)
+      ![データ バインディング。](media/gte-extension-data-binding.png)
 
    5. コンフィギュレーションを保存し、デザイナーを閉じます。
    6. **コンフィギュレーション** ワークスペースで、**ステータスを変更** > **完了** をクリックします。
 
-      ![コンフィギュレーション状態の変更](media/gte-change-configuration-status.png)
+      ![コンフィギュレーション状態の変更。](media/gte-change-configuration-status.png)
 
    7. **UTGST** のように説明を入力し、**OK** をクリックします。
    8. エラーがある場合は、デザイナーを開き、**検証** をクリックし、エラーを修正します。
@@ -215,21 +212,21 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 この方法を使用する前に、ER およびテーブルの関係、クラス、および発注書に関するメソッドに精通するようにしてください。 
 1. 発注書に対してモデル マッピング デザイナーを開き、**PurchLine** をルート データ ソースとしてテーブル レコードに追加します。
 
-   ![Purchline 拡張機能](media/gte-extension-purchline.png)
+   ![Purchline 拡張機能。](media/gte-extension-purchline.png)
 
 2. Data model\Enumeration **YesNo Global** および Dynamics 365 for Operations \Enumeration **NoYes** を追加します。
 
-   ![列挙型の追加](media/gte-extension-add-enumerations.png)
+   ![列挙型の追加。](media/gte-extension-add-enumerations.png)
 
 3. **データ ソース** ツリーで、**発注書** > **明細行** の下に計算済フィールドとして **$PurchLine** を追加し、既存の課税対象ドキュメントである **発注書** と **PurchLine** テーブル レコードの関係を構築します。 **式の編集** をクリックします。
 
-   ![式の編集](media/gte-extension-edit-formula.png)
+   ![式の編集。](media/gte-extension-edit-formula.png)
 
 4. **PurchLine** および **発注書** 間の関係を記述する式を入力します: 
 
    ```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId))```
 
-   ![フォーミュラの追加](media/gte-extension-add-formula.png)
+   ![式の追加。](media/gte-extension-add-formula.png)
 
 5. **保存** をクリックし、ページを閉じます。
 6. **$PurchLine** で、計算済フィールド **\$IsIntraStateInUnionTerritory** を追加し、次の式を使用します。 
@@ -243,7 +240,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
    2. **Data Model** ツリーで、**IntraStateInUnionTerritory** を選択します。
    3. **編集** をクリックします。
 
-      ![データ マッピングの編集](media/gte-extension-data-binding2.png)
+      ![データ マッピングの編集。](media/gte-extension-data-binding2.png)
 
    4. ブール値を、拡張課税対象ドキュメントの **IntraStateInUnionTerritory** フィールドで使用される列挙値に変換するために次の式を入力します。
 
@@ -256,17 +253,17 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 8. コンフィギュレーションを保存し、デザイナーを閉じます。
 9. **コンフィギュレーション** ワークスペースで、**ステータスを変更** > **完了** をクリックします。
 
-    ![コンフィギュレーション状態の変更](media/gte-change-configuration-status.png)
+    ![コンフィギュレーション状態の変更。](media/gte-change-configuration-status.png)
 
 10. **UTGST** のように説明を入力し、**OK** をクリックします。
 11. エラーがある場合は、デザイナーを開き、**検証** をクリックし、エラーを修正します。
 
-### <a name="change-the-data-model-of-tax-india-gst-contoso"></a>税 (インド販売税 Contoso) のデータ モデルを変更します。
+### <a name="change-the-data-model-of-tax-india-gst-contoso"></a>税 (インド販売税 Contoso) のデータ モデルを変更する
 
 1. **税 (インド販売税 Contoso)** コンフィギュレーションに移動し、**デザイナー** をクリックします。
-2. **税務書類** をクリックして、データ モデルとして **課税対象ドキュメント (インド Contoso)** を選択し、データ モデル バージョンとして **1** を選択します。
+2. **税務署類** をクリックして、データ モデルとして **課税対象ドキュメント (インド Contoso)** を選択し、データ モデル バージョンとして **1** を選択します。
 
-    ![税務書類](media/gte-tax-document-designer.png)
+    ![税務書類。](media/gte-tax-document-designer.png)
 
 3. **保存** をクリックしてコンフィギュレーションを保存します。
 
@@ -291,7 +288,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
    2. **追加** をクリックし、**税措置** を選択します。
    3. UTGST の適用可能性以外、プロパティ、検索、式、転記の場合、および会計など、すべてのロジックは SGST の場合と同じです。 したがって、SGST で使用するすべての税基準を **名前** 一覧で選択し、**OK** をクリックします。 
 
-      ![一覧表示されている措置](media/gte-utgst-list.png)
+      ![一覧表示されている措置。](media/gte-utgst-list.png)
 
 4. ルックアップの率/パーセンテージを構成します。
     1. **UTGST** 税コンポーネント ノードを展開します。
@@ -308,7 +305,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
    2. **条件** の横にある **編集** (鉛筆アイコン) クリックします。
    3. SGST が使用するのと同じ条件を入力します。
 
-      ![SGST 条件](media/gte-sgst-condition.png)
+      ![SGST 条件。](media/gte-sgst-condition.png)
 
    4. 税務書類を保存します。
 
@@ -359,7 +356,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 1. **税務書類** > **ヘッダー** > **明細行** と移動します。 **式** タブをクリックします。
 2. **基準金額**、**明細行の税額**、および **価格に含まれる税額** 基準を含むすべての数式を変更し、数式が UTGST を反映するようにします。 たとえば、**内税額** 式を次のように変更します。
 
-   ![内税の式](media/gte-tax-amount-inclusive.png)
+   ![内税額の式。](media/gte-tax-amount-inclusive.png)
     
 3. 税務書類を保存します。
 4. デザイナーを閉じます。
@@ -375,7 +372,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 1. **税** > **設定** > **税コンフィギュレーション** > **税の設定** と移動します。
 2. 新しいレコードを作成し、税の設定を定義します。
 
-    ![新しい税の設定](media/gte-extension-new-tax-setup.png)
+    ![新しい税の設定。](media/gte-extension-new-tax-setup.png)
 
 3. **コンフィギュレーション** をクリックします。
 
@@ -385,18 +382,18 @@ UTGST のインプット タックス クレジット の使用率の順序は�
     > [!NOTE]
     > 税に追加されるコンフィギュレーションは、**使用可能なコンフィギュレーション** タブに一覧表示されます。
     
-    ![新しいコンフィギュレーション](media/gte-extension-new-configuration2.png)
+    ![新しいコンフィギュレーション。](media/gte-extension-new-configuration2.png)
 
 6. **税 (インド販売税)** のように、必要なコンフィギュレーションを選択します。 **保存** をクリックします。
 7. **同期化** をクリックします。
 
-    ![コンフィギュレーションの同期](media/gte-extension-synchronize-configuration.png)
+    ![コンフィギュレーションの同期。](media/gte-extension-synchronize-configuration.png)
 
 8. **有効化** をクリックします。
 
-    ![コンフィギュレーションをアクティブにします。](media/gte-extension-activate-configuration.png)
+    ![コンフィギュレーションの有効化。](media/gte-extension-activate-configuration.png)
 
-    ![コンフィギュレーションをアクティブにします。](media/gte-extension-active-configuration.png)
+    ![有効なコンフィギュレーション。](media/gte-extension-active-configuration.png)
 
 9. **閉じる** をクリックします。
 10. **会社** クイック タブをクリックします。
@@ -404,7 +401,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 12. **保存** をクリックします。
 13. **有効化** をクリックして、会社のコンフィギュレーションを有効にします。
 
-    ![会社のコンフィギュレーションの有効化します。](media/gte-extension-activate-configuration-to-company.png)
+    ![会社のコンフィギュレーションの有効化。](media/gte-extension-activate-configuration-to-company.png)
 
 14. **設定** をクリックして、新しいバージョンのデータを設定します。
 
@@ -459,7 +456,7 @@ Microsoft 製のコンフィギュレーションごとに、BCD の税率は、
     4. テーブルを選択します。
     5. **OK** をクリックします。
     
-    ![テーブル レコードの追加](media/gte-extension-add-table-records.png)
+    ![テーブル レコードの追加。](media/gte-extension-add-table-records.png)
 
 7. テーブルをバインドします。
 
@@ -467,7 +464,7 @@ Microsoft 製のコンフィギュレーションごとに、BCD の税率は、
     2. **日付モデル** ツリーで、**原産国: レコードの一覧** を選択します。
     3. **バインド** をクリックします。
     
-    ![テーブルのバインド](media/gte-extension-bind-table.png)
+    ![テーブルのバインド。](media/gte-extension-bind-table.png)
 
 8. フィールドをバインドします。
 
@@ -475,7 +472,7 @@ Microsoft 製のコンフィギュレーションごとに、BCD の税率は、
     2. **データ モデル** ツリーで、**原産国: 文字列** を選択します。
     3. **バインド** をクリックします。
 
-    ![フィールドのバインド](media/gte-extension-bind-field.png)
+    ![フィールドのバインド。](media/gte-extension-bind-field.png)
 
 9. **保存** をクリックします。
 
@@ -502,3 +499,29 @@ Microsoft 製のコンフィギュレーションごとに、BCD の税率は、
 5.  ルックアップ列として **原産国/地域** を選択し、右矢印ボタンをクリックします。
 6.  **保存** をクリックします。
 
+### <a name="rebase-the-extension-configuration-to-the-latest-microsoft-configuration"></a>拡張機能コンフィギュレーションを最新の Microsoft コンフィギュレーションにリベースする
+
+1. **拡張機能コンフィギュレーション** に移動し、**リベース** を選択します。 
+2. **リベース** ダイアログ ボックスの **ターゲット バージョン** フィールドで、ターゲットバージョンを最新の Microsoft バージョンに変更します。
+
+    [![リベース手順 1。](./media/extend-tax-engine-configurations-rebase1.png)](./media/extend-tax-engine-configurations-rebase1.png)
+
+    競合がある場合は、警告メッセージが表示されます。
+    
+    [![リベース手順 2。](./media/extend-tax-engine-configurations-rebase2.png)](./media/extend-tax-engine-configurations-rebase2.png)
+
+3. 競合を解決するには、**デザイナー** を選択してリベースされた拡張機能コンフィギュレーションを開きます。
+
+    [![リベース手順 3。](./media/extend-tax-engine-configurations-rebase3.png)](./media/extend-tax-engine-configurations-rebase3.png)
+
+4. 次の 3 つの方法のいずれかを選択して、競合を解決します。
+
+    - **前の基準値を適用する**: コンフィギュレーションを初めて作成するときに、基本コンフィギュレーションから元の値を適用します。
+    - **基準値を適用する**: ターゲット基本コンフィギュレーションから現在の値を適用します。
+    - **独自の値を保持する**: 拡張機能コンフィギュレーションから値を適用します。
+
+5. 競合を解決すると、**解決済** のチェック ボックスがマークされます。
+
+    [![リベース手順 4。](./media/extend-tax-engine-configurations-rebase4.png)](./media/extend-tax-engine-configurations-rebase4.png)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

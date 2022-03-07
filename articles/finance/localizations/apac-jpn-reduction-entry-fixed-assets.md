@@ -2,27 +2,24 @@
 title: 固定資産の圧縮記帳の設定
 description: この記事は、固定資産の圧縮記帳に関する情報、および固定資産の圧縮記帳を Microsoft Dynamics 365 Finance で設定する方法について説明します。 圧縮記帳は、政府助成金を使用して取得される固定資産の特別な会計処理です。 耐用年数中に、これらの資産の法人所得税を繰延する場合に使用できます。
 author: yijialuan
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetReductionEntryMassUpdate_JP, AssetReductionEntryProfile_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 2871
 ms.search.region: Japan
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dac9e8eca7ff3e181ad6761c93dff9da19f21d3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 87e9b22eb6a790f4168cd73bdcf62b03e5c8e390bc1d779095cd9493c91f8713
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731414"
 ---
 # <a name="set-up-reduction-entries-for-fixed-assets"></a>固定資産の圧縮記帳の設定
 
@@ -106,3 +103,6 @@ ms.locfileid: "4408131"
 | コンフィギュレーション キー | **資産コンフィギュレーション** キーが、**データ ディクショナリ** &gt; **コンフィギュレーション キー** ノードで使用可能であることを確認します。 |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

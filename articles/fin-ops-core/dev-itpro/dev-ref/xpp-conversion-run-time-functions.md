@@ -2,26 +2,19 @@
 title: X++ 変換ランタイム関数
 description: このトピックでは、変換ランタイム関数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/26/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 31321
-ms.assetid: cf3e4f05-5ef0-49b1-b76e-8269913ee29d
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9dde779d57bb301412b99869169005b0f94f928
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 353bf3887a92446b01228ba4bb0e79f079357d76
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408747"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783050"
 ---
 # <a name="x-conversion-runtime-functions"></a>X++ 変換ランタイム関数
 
@@ -29,8 +22,7 @@ ms.locfileid: "4408747"
 
 このトピックでは、変換ランタイム関数について説明します。
 
-<a name="any2date"></a>any2Date
---------
+## <a name="any2date"></a>any2Date
 
 **anytype** 値を **日付** 値に変換します。
 
@@ -1079,3 +1071,6 @@ info(uint2str(3123456789)); //returns 3123456789 as a string.
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

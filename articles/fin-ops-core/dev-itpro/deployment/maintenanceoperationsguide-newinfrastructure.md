@@ -2,11 +2,9 @@
 title: 配置の保守操作
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の保守操作を実行する方法について説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 856579ac016b8881cb8e36896bad7c1128f67c02
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9be7005d4809ba482675c7491ac798b3063819e8c611e76eb0472c1eafb49f53
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720676"
 ---
 # <a name="maintenance-operations-for-deployments"></a>配置の保守操作
 
@@ -59,3 +57,6 @@ Finance and Operations アプリには、[メンテナンス モード](../sysad
 [セルフサービス配置](infrastructure-stack.md)エクスペリエンスを使用して配置された環境では、リモート アクセスがオフになっています。 実装時に、トラブルシューティング目的で階層 2、階層 3、階層 4、または階層 5 の標準受け入れテスト環境のデータベースに接続する必要がある場合、必要に応じてアクセスが許可されます。 アクセス権は永続的ではありません。
 
 データベースに接続するには、[Just-In-Time のアクセスを有効にする](../database/database-just-in-time-jit-access.md)に従ってください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

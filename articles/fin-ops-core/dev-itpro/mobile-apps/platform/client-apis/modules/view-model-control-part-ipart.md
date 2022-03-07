@@ -1,25 +1,18 @@
 ---
 title: パート モジュール
 description: パーツは、ページのみを含むコンテナー コントロールで、ページがページ内に埋め込まれるのを許可します。
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: cc398bb6d7e6f57df982e1487739244d2e5643c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.openlocfilehash: 804d2bbbf43eac1a33ed631a45d2364cdbd380f3
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682557"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783206"
 ---
 # <a name="part-module"></a>パート モジュール
 
@@ -90,7 +83,7 @@ ms.locfileid: "4682557"
 | [色](../interfaces/view-model-control-part-ipart-ipartdesign.md#color) |color: string (optional)  <br>|コンテナーの前景色。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[color](../interfaces/view-model-ipage-idesign.md#color) から継承 <br> |
 | [デザイン](../interfaces/view-model-control-part-ipart-ipartdesign.md#design) |design: [PartDesign](../interfaces/view-model-control-part-ipart-ipartdesign.md) (optional)  <br>|ターゲット ページの設計をします。<br>  |
 | [flexFlow](../interfaces/view-model-control-part-ipart-ipartdesign.md#flexflow) |flexFlow: string (省略可)  <br>|このプロパティを指定すると、コンポーネントがフレックス コンテナー コンポーネントになります。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexFlow](../interfaces/view-model-ipage-idesign.md#flexflow) から継承 <br> |
-| [flexSize](../interfaces/view-model-control-part-ipart-ipartdesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) から継承 <br> |
+| [flexSize](../interfaces/view-model-control-part-ipart-ipartdesign.md#flexsize) |flexSize: string (省略可)  <br>|1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズを拡大) [(サイズを縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[flexSize](../interfaces/view-model-ipage-idesign.md#flexsize) から継承 <br> |
 | [fontSize](../interfaces/view-model-control-part-ipart-ipartdesign.md#fontsize) |fontSize: "medium" &#124; "xx-small" &#124; "x-small" &#124; "small" &#124; "large" &#124; "x-large" &#124; "xx-large" (省略可)  <br>|比例テキスト サイズ<br>  [Design](../interfaces/view-model-ipage-idesign.md).[fontSize](../interfaces/view-model-ipage-idesign.md#fontsize) から継承 <br> |
 | [fontWeight](../interfaces/view-model-control-part-ipart-ipartdesign.md#fontweight) |fontWeight: "normal" &#124; "bold" (省略可)  <br>|標準または太字のテキスト。<br>  [Design](../interfaces/view-model-ipage-idesign.md).[fontWeight](../interfaces/view-model-ipage-idesign.md#fontweight) から継承 <br> |
 | [itemBorder](../interfaces/view-model-control-part-ipart-ipartdesign.md#itemborder) |itemBorder: "solid" &#124; "none" (省略可)  <br>|True の場合、リストの各行の周りに境界線が表示されます。<br>  [ContainerControlDesign](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md).[itemBorder](../interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md#itemborder) から継承 <br> |
@@ -127,5 +120,8 @@ ms.locfileid: "4682557"
 | [名前](../interfaces/view-model-control-part-ipart-ipartmetadata.md#name) |Name: 文字列 (省略可)  <br>|コントロールの名前です。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Name](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#name) から継承 <br> |
 | [注文](../interfaces/view-model-control-part-ipart-ipartmetadata.md#order) |注文: 番号 (オプション)  <br>|コントロールがページに表示される順序を示す番号。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) から継承 <br> |
 | [ターゲット](../interfaces/view-model-control-part-ipart-ipartmetadata.md#target) |ターゲット: [PageTarget](../interfaces/view-model-ipage-ipagetarget.md) (オプション)  <br>|パーツのターゲット ページ。<br>  |
-| [[タイプ](../interfaces/view-model-control-part-ipart-ipartmetadata.md#type)] |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
+| [タイプ](../interfaces/view-model-control-part-ipart-ipartmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (省略可)  <br>|コントロール タイプを示す文字列。<br>  [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) から継承 <br> |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

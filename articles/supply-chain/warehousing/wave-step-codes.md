@@ -2,28 +2,25 @@
 title: ウェーブ ステップ コード
 description: このトピックでは、ウェーブ ステップ コードの概要とその使用方法について説明します。
 author: josaw1
-manager: tfehr
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f44d500d58dffb37b27d230b0633336eb87996a6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432372"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838061"
 ---
 # <a name="wave-step-codes"></a>ウェーブ ステップ コード
 
@@ -93,3 +90,6 @@ ms.locfileid: "4432372"
 6. **ウェーブ ステップ コード** で、補充テンプレートで選択したウェーブ ステップ コードを選択します。
 
 これらの手順を各法人に対して実行します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

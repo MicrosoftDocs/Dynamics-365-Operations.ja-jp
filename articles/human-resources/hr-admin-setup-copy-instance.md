@@ -2,15 +2,12 @@
 title: インスタンスのコピー
 description: Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 Human Resources データベース をサンドボックス環境にコピーすることができます。
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527840"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360152"
 ---
 # <a name="copy-an-instance"></a>インスタンスのコピー
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -39,9 +38,9 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics
 
 - 対象の環境の管理者である必要があります。そうすることでコピー後のインスタンスにサイン インすることができます。
 
-- Human Resources データベースをコピーする際は、 Microsoft Power Apps 環境に含まれる要素 (アプリやデータ) のコピーをしないでください。 Power Apps 環境の各要素のコピー方法については、 [環境をコピーする](https://docs.microsoft.com/power-platform/admin/copy-environment) を参照してください。 上書きを行う Power Apps 環境 は、サンドボックス環境である必要があります。 Power Apps の運用環境をサンドボックス環境に変更するには、グローバル テナントの管理者である必要があります。 Power Apps 環境の変更に関する詳細については、 [インスタンスを切り替える](https://docs.microsoft.com/dynamics365/admin/switch-instance) を参照してください。
+- Human Resources データベースをコピーする際は、 Microsoft Power Apps 環境に含まれる要素 (アプリやデータ) のコピーをしないでください。 Power Apps 環境の各要素のコピー方法については、 [環境をコピーする](/power-platform/admin/copy-environment) を参照してください。 上書きを行う Power Apps 環境 は、サンドボックス環境である必要があります。 Power Apps の運用環境をサンドボックス環境に変更するには、グローバル テナントの管理者である必要があります。 Power Apps 環境の変更に関する詳細については、 [インスタンスを切り替える](/dynamics365/admin/switch-instance) を参照してください。
 
-- サンドボックス環境にインスタンスをコピーしてサンドボックス環境を Common Data Service と統合する場合は、ユーザー設定フィールドを Common Data Service エンティティに再適用する必要があります。 [カスタムフィールドを Common Data Service に適用する](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service)を参照してください 。
+- サンドボックス環境にインスタンスをコピーしてサンドボックス環境を Dataverse と統合する場合は、ユーザー設定フィールドを Dataverse テーブルに再適用する必要があります。 [カスタムフィールドを Dataverse に適用する](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service)を参照してください 。
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Human Resources データベースのコピーによる影響
 
@@ -72,15 +71,15 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 4. **インスタンスをコピーする** のタスク ウィンドウで、上書きするインスタンスを選択し、続いて **コピー** を選択します。 **コピーのステータス** フィールドの値が **完了** となるまで待機してください。
 
-   ![[上書きするインスタンスを選択します](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[上書きするインスタンスを選択する。](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. **Power Platform** を選択し、 Microsoft Power Platform 管理センターにサインインします。
 
-   ![[Power Platformを選択します](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Power Platform を選択する。](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. コピーをするPower Apps 環境 を選択して、 **コピー** を選択します。
 
-7. コピー処理の完了後、対象のインスタンスにサインインし、 Common Data Service 統合を有効化します。 詳細情報と解説については、 [Common Data Service の統合を構成する](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration) を参照してください。
+7. コピー処理の完了後、対象のインスタンスにサインインし、 Dataverse 統合を有効化します。 詳細情報と解説については、 [Dataverse の統合を構成する](./hr-admin-integration-common-data-service.md) を参照してください。
 
 ## <a name="data-elements-and-statuses"></a>データの属性と状態
 
@@ -122,11 +121,11 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 コピー先のサンドボックス環境内の全ての非管理者ユーザーは無効化され、サンドボックス環境へと不必要なログインができません。 システム管理者は、必要に応じてユーザーを有効化することができます。
 
-## <a name="apply-custom-fields-to-common-data-service"></a>カスタム フィールドを Common Data Service に適用する
+## <a name="apply-custom-fields-to-dataverse"></a>カスタム フィールドを Dataverse に適用する
 
-サンドボックス環境にインスタンスをコピーしてサンドボックス環境を Common Data Service と統合する場合は、ユーザー設定フィールドを Common Data Service エンティティに再適用する必要があります。
+サンドボックス環境にインスタンスをコピーしてサンドボックス環境を Dataverse と統合する場合は、ユーザー設定フィールドを Dataverse テーブルに再適用する必要があります。
 
-Common Data Service エンティティに表示されるユーザー設定フィールドごとに、次の手順を実行します :
+Dataverse テーブルに表示されるユーザー設定フィールドごとに、次の手順を実行します :
 
 1. カスタム設定フィールドに移動して、**編集** を選択し ます。
 
@@ -140,9 +139,9 @@ Common Data Service エンティティに表示されるユーザー設定フィ
 
 6. 再度 **変更を適用する** を選択します。
 
-選択解除、変更の適用、再選択、変更の再適用を行うプロセスでは、カスタム フィールドを含むように Common Data Service でスキーマを更新するように促されます。
+選択解除、変更の適用、再選択、変更の再適用を行うプロセスでは、カスタム フィールドを含むように Dataverse でスキーマを更新するように促されます。
 
-カスタム フィールドについての詳細については、[カスタム フィールドの作成と操作](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields) を参照してください。
+カスタム フィールドについての詳細については、[カスタム フィールドの作成と操作](../fin-ops-core/fin-ops/get-started/user-defined-fields.md) を参照してください。
 
 ## <a name="see-also"></a>参照
 
@@ -150,3 +149,6 @@ Common Data Service エンティティに表示されるユーザー設定フィ
 [インスタンスの削除](hr-admin-setup-remove-instance.md)</br>
 [更新プロセス](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,27 +1,25 @@
 ---
 title: ワークスペース ページ フィルター グループのサブパターン
-description: この記事では、ワークスペース ページ フィルター グループのサブパターンについて説明します。 このサブパターンは、ワークスペースがフォーム上で 1 つのワークスペース全体にかかわるフィルターを公開する必要があるとき、運用ワークスペース パターンの一部として使用されます。
+description: この記事では、ワークスペース ページ フィルター グループのサブパターンについて説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 29231
 ms.assetid: 90d5a70b-a99b-4e79-a52d-b4ef5a942607
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d1e19ab247be6a5e8970adc7653982380700ad8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4b7f2fb5d5db830fd750b2e2a48d450c0a59c285
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684989"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782443"
 ---
 # <a name="workspace-page-filter-group-subpattern"></a>ワークスペース ページ フィルター グループのサブパターン
 
@@ -29,14 +27,13 @@ ms.locfileid: "4684989"
 
 この記事では、ワークスペース ページ フィルター グループのサブパターンについて説明します。 このサブパターンは、ワークスペースがフォーム上で 1 つのワークスペース全体にかかわるフィルターを公開する必要があるとき、運用ワークスペース パターンの一部として使用されます。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 ワークスペース ページ フィルター グループのサブパターンは、特にワークスペースがフォーム上で 1 つのワークスペース全体にかかわるフィルターを公開する必要があるときに、運用ワークスペース パターンの一部として使用されます。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-[![ワークスペース ページ フィルター グループのサブパターンのワイヤーフレーム](./media/workspacepagefiltergroupwireframe.png)](./media/workspacepagefiltergroupwireframe.png)
+[![ワークスペース ページ フィルター グループのサブパターンのワイヤーフレーム。](./media/workspacepagefiltergroupwireframe.png)](./media/workspacepagefiltergroupwireframe.png)
 
 ## <a name="pattern-changes-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用のパターンの変更
 このパターンは、Microsoft Dynamics AX 2012 には存在しませんでした。
@@ -67,7 +64,7 @@ ms.locfileid: "4684989"
 ## <a name="examples"></a>例
 フォーム: **ReqCreatePlanWorkspace** (**すべてのワークスペース** &gt; **マスター プラン**) 
 
-[![ワークスペース ページ フィルター グループの例](./media/workspacepagefiltergroupexample.png)](./media/workspacepagefiltergroupexample.png)
+[![ワークスペース ページ フィルター グループの例。](./media/workspacepagefiltergroupexample.png)](./media/workspacepagefiltergroupexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -77,3 +74,6 @@ ms.locfileid: "4684989"
 ### <a name="open-issues"></a>未処理の問題
 
 None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

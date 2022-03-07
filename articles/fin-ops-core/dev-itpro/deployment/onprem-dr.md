@@ -1,12 +1,10 @@
 ---
-title: オンプレミスにおけるディザスター リカバリーの構成
-description: このコンテンツでは、ディザスター リカバリーに向けて Dynamics 365 Finance + 操作 (オンプレミス) を構成する方法と、プライマリ データセンターとセカンダリ データセンターの切り替えプロセスを構成する方法について説明します。
+title: オンプレミス障害復旧コンフィギュレーション
+description: このトピックでは、ディザスター リカバリー用に Dynamics 365 Finance + Operations (オンプレミス) を構成する方法について説明します。
 author: faix
-manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,14 +12,14 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 419aab6e0776ad186ec6cdac320a79d0a68e980d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5de9376a989a9e7c9dd99290733a3d6a36457d08
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685455"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594705"
 ---
-# <a name="on-premises-disaster-recovery-configuration"></a>オンプレミスにおけるディザスター リカバリーの構成
+# <a name="on-premises-disaster-recovery-configuration"></a>オンプレミス障害復旧コンフィギュレーション
 ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + 操作 (オンプレミス) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
 
 ディザスター リカバリーの中心となる概念は、データ復元環境を含む2番目のデータセンターを使用することです。 ディザスター リカバリーの計画、文書化、テストは、運用環境の設定と同様に慎重に行うことを推奨します。
@@ -50,7 +48,7 @@ Microsoft が指定した新しい前提条件を適用していることを確�
 
 以下の図では、必要となる設定の詳細を示しています。
 
-![ディザスター リカバリー アーキテクチャ](media/DRArchitecture.png)
+![ディザスター リカバリー アーキテクチャ。](media/DRArchitecture.png)
 
 ## <a name="environment-configuration"></a>環境のコンフィギュレーション
 
@@ -102,7 +100,7 @@ Finance and Operations AOS ノードと SQL Server は、同じデータセン�
 
 ## <a name="sql-server-always-on-availability-configuration"></a>SQL Server の常時可用性を構成する
 
-ビジネス データ データベース (AXDB) は、通常は SQL Server の常時可用性グループ機能を使用して、セカンダリ データセンターに複製する必要があります。 詳細については、[常時可用性グループ](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016)を参照してください。
+ビジネス データ データベース (AXDB) は、通常は SQL Server の常時可用性グループ機能を使用して、セカンダリ データセンターに複製する必要があります。 詳細については、[常時可用性グループ](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server)を参照してください。
 
 | データベース | レプリケート済 |
 |----------|------------|
@@ -117,7 +115,7 @@ Finance and Operations AOS ノードと SQL Server は、同じデータセン�
 
 障害イベントが発生した場合、プライマリ データセンターが使用できなくなった場合であっても、セカンダリ データセンター内では、以下のコンポーネントが使用できます。
 
-![配置設定の拇印の例](media/DRArchitectureSingle.png)
+![配置設定におけるサムプリントの例。](media/DRArchitectureSingle.png)
 
 障害が発生した最初の時点では、ディザスター リカバリー環境は空になります。 ここで存在するのは、複製された本番データのすべてを含む、構成済みの Service Fabric Cluster と SQL Server になります。 
 
@@ -232,13 +230,13 @@ SSRS ノードの IP が異なる場合は、次の値を変更する必要が�
 
 1. **管理** を選択し、**更新の設定** を選択します。
 
-    ![更新設定の適用](media/addf4f1d0c0a86d840a6a412f774e474.png)
+    ![更新設定を適用します。](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 1. 値を変更しないでください。 **準備** を選択します。
 
 1. ダウンロードと準備が完了後は、**環境の更新** ボタンが表示されます。 このボタンを選択して、環境の更新を開始します
 
-    ![環境の更新ボタン](media/0a9d43044593450f1a828c0dd7698024.png)
+    ![環境の更新ボタン。](media/0a9d43044593450f1a828c0dd7698024.png)
 
 1. 環境が配置されると、ディザスター リカバリー環境を使用できるようになります。 
 
@@ -270,3 +268,6 @@ SSRS ノードの IP が異なる場合は、次の値を変更する必要が�
 
 >[!IMPORTANT]
 > ご利用のプライマリ環境は通常どおり機能しており、チェックリストのすべての品目が確実に検証された後でサービスを実行することができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

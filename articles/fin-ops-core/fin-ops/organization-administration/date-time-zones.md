@@ -2,11 +2,9 @@
 title: 日時データとタイム ゾーン
 description: この記事では、日付、日時フィールド、タイム ゾーンに関する情報を提供します。
 author: pvillads
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserSetup, SystemDate
 audience: IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b89a8af57ce24d46bc202e77139b73eb38b34d8
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 30ebe47be0d9c790872b52dfb20b76ba3d5618f83c1ff6832fd59a1ce5003a7c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742242"
 ---
 # <a name="datetime-data-and-time-zones"></a>日時データとタイム ゾーン
 
@@ -41,3 +39,6 @@ ms.locfileid: "4797616"
 ## <a name="time-zones"></a>タイム ゾーン
 
 UTC 時刻を現地時間で 表すには、タイム ゾーンを指定する必要があります。 タイム ゾーンは、ローカル時刻に相当する UTC からの補正時間を制御します。 たとえば、モスクワの補正時間は UTC+3 になります。 優先タイム ゾーンは、コンピュータの Windows ロケールに従って最初に設定されますが、管理者によって変更されている場合もあります。 優先タイム ゾーンは、結合された日付と時刻を表示する場合にのみ使用されます。 ユーザーの優先タイム ゾーンを設定するには、**ユーザー** ページに移動します。 ページにシステムのユーザーのリストが表示されます。 優先タイム ゾーンを設定するユーザーを選択し、**ユーザー オプション** をクリックします。 **言語と地域** タブで、優先タイム ゾーンを選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

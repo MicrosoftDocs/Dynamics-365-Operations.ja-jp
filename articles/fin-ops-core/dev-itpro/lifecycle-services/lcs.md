@@ -1,12 +1,10 @@
 ---
 title: Lifecycle Services のリソース
-description: Microsoft Dynamics 用 Lifecycle Services (LCS) は、Dynamics 365 Finance and Operations アプリの実装アプリケーション ライフサイクルの管理に役立つ環境と定期的に更新される一連のサービスを提供するコラボレーション ポータルです。
+description: Microsoft Dynamics 用 Lifecycle Services (LCS) は、アプリケーションのライフサイクルの管理に役立つ環境およびサービスを提供します。
 author: kfend
-manager: AnnBe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50941f0cab0a26d5519148d996181816db5a905b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 32cb85e07a71672cb6385f87323d0dba73d6eb30
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682585"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404016"
 ---
 # <a name="lifecycle-services-resources"></a>Lifecycle Services のリソース
 
@@ -41,7 +39,7 @@ Microsoft Dynamics 用 Lifecycle Services (LCS) は、Dynamics 365 Finance and O
 -   [Lifecycle Services (LCS) 内のカスタマイズ分析](./ax-2012/customization-analysis-lcs.md)
 -   [Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール](./ax-2012/infrastructure-estimator-lcs.md)
 -   [Lifecycle Services (LCS) での問題検索](issue-search-lcs.md)
--   [Lifecycle Services (LCS) のライセンス数見積もりツール](./ax-2012/license-sizing-estimator-lcs.md)
+-   [Lifecycle Services (LCS) のライセンス数見積もりツール](/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs)
 -   [提案依頼 (RFP) の応答](./ax-2012/rfp-responses-lcs.md)
 -   [Lifecycle Services (LCS) のシステム診断](./ax-2012/system-diagnostics-lcs.md)
 -   [Lifecycle Services (LCS) におけるアップグレード分析](./ax-2012/upgrade-analysis-lcs.md)
@@ -56,3 +54,6 @@ Microsoft Dynamics 用 Lifecycle Services (LCS) は、Dynamics 365 Finance and O
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

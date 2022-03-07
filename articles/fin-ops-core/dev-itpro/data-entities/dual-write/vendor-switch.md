@@ -1,35 +1,26 @@
 ---
 title: 仕入先デザインの切り替え
-description: このトピックでは、Finance and Operations アプリと Dataverse との間の仕入先データの統合を切り替える方法について説明します。
+description: このトピックでは、財務と運用アプリと Dataverse 間の仕入先データの統合を切り替える方法について説明します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: d2c22123d5f05945b34eb107c5b912852aec387a
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 80de21b5e46e4f274626fa311f16e81312a2f5ab
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744468"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062753"
 ---
 # <a name="switch-between-vendor-designs"></a>仕入先デザインの切り替え
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 
@@ -50,14 +41,14 @@ ms.locfileid: "4744468"
 
 1. **仕入先** テーブルのワークフロー プロセスを作成して、**取引先企業テーブルで仕入先を作成** ワークフロー プロセス テンプレートを選択します。 その後、**OK** を選択します。 このワークフローでは、**取引先企業** テーブルの仕入先作成シナリオを処理します。
 
-    ![取引先企業テーブル ワークフロー プロセスでの仕入先の作成](media/create_process.png)
+    ![取引先企業テーブル ワークフロー プロセスでの仕入先の作成。](media/create_process.png)
 
 2. **仕入先** テーブルのワークフロー プロセスを作成して、**取引先企業テーブルで仕入先を更新** ワークフロー プロセス テンプレートを選択します。 その後、**OK** を選択します。 このワークフローでは、**取引先企業** テーブルの仕入先更新シナリオを処理します。
 3. **仕入先** テーブルのワークフロー プロセスを作成して、**仕入先テーブルで取引先企業を作成** ワークフロー プロセス テンプレートを選択します。
 4. **取引先企業** テーブルのワークフロー プロセスを作成して、**仕入先テーブルで取引先企業を更新** ワークフロー プロセス テンプレートを選択します。
 5. ワークフローは、必要に応じてリアルタイムまたはバックグラウンドのワークフローとしてコンフィギュレーションできます。 ワークフローをバックグラウンド ワークフローとしてコンフィギュレーションするには、**バックグラウンド ワークフローに変換** を選択します。
 
-    ![バックグラウンド ワークフロー ボタンへの変換](media/background_workflow.png)
+    ![バックグラウンド ワークフロー ボタンへの変換。](media/background_workflow.png)
 
 6. **取引先企業** テーブルと **仕入先** テーブルで作成したワークフローを有効にして、その **組織** タイプの仕入先情報を保存するために **取引先企業**  テーブルの使用を開始します。
 
@@ -78,3 +69,6 @@ ms.locfileid: "4744468"
 4. **連絡先** テーブルのワークフロー プロセスを作成して、**仕入先テーブルでタイプが個人の仕入先を更新する** テンプレートを選択します。
 5. ワークフローは、必要に応じてリアルタイムまたはバックグラウンドのワークフローとしてコンフィギュレーションできます。 ワークフローをバックグラウンド ワークフローとしてコンフィギュレーションするには、**バックグラウンド ワークフローに変換** を選択します。
 6. **連絡先** テーブルと **仕入先** テーブルで作成したワークフローを有効にして、その **個人** タイプの仕入先情報を保存するために **連絡先** テーブルの使用を開始します。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

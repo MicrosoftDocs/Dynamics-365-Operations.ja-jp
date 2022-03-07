@@ -2,16 +2,13 @@
 title: POS ユーザー インターフェイスのビジュアル コンフィギュレーション
 description: このトピックでは、Dynamics 365 Commerce POS (販売時点管理) の画面レイアウトに関する情報を提供します。
 author: boycezhu
-manager: annbe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 17379dc97c7a8b22912482a7aeebd0d8ac08dc496fa7b1661952bca10a21c75b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4413885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765883"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>POS ユーザー インターフェイスのビジュアル コンフィギュレーション
 
@@ -35,15 +32,15 @@ Microsoft Dynamics 365 Commerce の販売時点管理 (POS) のユーザー イ�
 
 次の図は、POS UI のコンフィギュレーション可能な側面を構成するさまざまなエンティティ間の関係を示します。
 
-![POS 画面レイアウト エンティティ](../commerce/media/POS-layout-configuration-entities-diagram.png)
+![POS 画面レイアウト エンティティ。](../commerce/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>ビジュアル プロファイル
 
 視覚プロファイルはレジスターに割り当てられ、レジスター固有でユーザー間で共有される視覚要素を指定します。 レジスターにサインインするすべてのユーザーには、同じテーマ、レイアウト、色、画像が表示されます。
 
-![Light テーマの POS ようこそ画面](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
+![Light テーマの POS ようこそ画面。](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
-![Dark テーマの POS トランザクション画面](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
+![Dark テーマの POS トランザクション画面。](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
 
 - **プロファイル番号** – プロファイル番号は、視覚プロファイルの固有識別子です。
 - **説明** – 状況に合った正しいプロファイルを特定するのに役立つ、わかりやすい名前を指定できます。
@@ -68,15 +65,15 @@ Microsoft Dynamics 365 Commerce の販売時点管理 (POS) のユーザー イ�
 
 画面レイアウト構成によって、POS **ようこそ** 画面および **トランザクション** 画面での UI コントロールのアクション、コンテンツ、および配置が決定されます。
 
-![POS 画面レイアウト表示](../commerce/media/POS-Screen-Layout-View.png)
+![POS 画面レイアウト表示。](../commerce/media/POS-Screen-Layout-View.png)
 
 - **ようこそ画面** – ほとんどの場合、ようこそ画面は、ユーザーが初めて POS にサインインするときに表示されるページです。 ようこそ画面は、ブランド イメージと、POS 操作へのアクセスを提供するボタン グリッドで構成することができます。 通常、現在のトランザクションに固有でない操作はこのスクリーンに表示されます。
 
-    ![POS ようこそ画面](../commerce/media/POS-Welcome-Screen.png)
+    ![POS ようこそ画面。](../commerce/media/POS-Welcome-Screen.png)
 
 - **トランザクション画面** – **トランザクション** 画面は、販売トランザクションおよび注文処理のための POS のメイン画面です。 コンテンツやレイアウトは、画面レイアウト デザイナーを使用してコンフィギュレーションします。
 
-    ![POS トランザクション画面](../commerce/media/POS-Transaction-Screen.png)
+    ![POS トランザクション画面。](../commerce/media/POS-Transaction-Screen.png)
 
 - **既定のスタート画面** – 一部の小売業者は、サインイン後にレジ担当者が **トランザクション** 画面に直接移動することを好みます。 **既定のスタート画面** 設定では、各画面レイアウトのサインイン後に表示される既定の画面を指定できます。
 
@@ -92,7 +89,7 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 
 起動時に、POS アプリケーションはデバイス用にコンフィギュレーションされたものに最も近いレイアウト サイズを自動的に選択します。 画面レイアウトは、ランドスケープとポートレート両方のモード、およびフルサイズとコンパクト両方のデバイスのコンフィギュレーションを含めることもできます。 したがって、ユーザーは店舗内で使用されるさまざまなサイズとフォーム係数で使用する 1 つの画面レイアウトに割り当てられます。
 
-![POS のレイアウト サイズ](../commerce/media/POS-Screen-Layout-Sizes.png)
+![POS のレイアウト サイズ。](../commerce/media/POS-Screen-Layout-Sizes.png)
 
 - **名前** – 画面のサイズを識別するために、わかりやすい名前を入力することができます。
 - **レイアウト タイプ** – POS アプリケーションは、特定のデバイスに最適なユーザー エクスペリエンスを提供する各種のモードでその UI を表示することができます。
@@ -105,7 +102,7 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 > [!TIP]
 > アプリで解決策を表示することによって、POS 画面に必要なレイアウト サイズがわかります。 POS を起動し、**設定\>セッション情報** に移動します。 POS は、現在読み込まれている画面レイアウト、レイアウトのサイズ、およびアプリのウィンドウの解像度を表示します。
 
-![現在読み込まれている画面レイアウト、レイアウトのサイズ、およびアプリのウィンドウの解像度を表示する POS セッション情報のページ](../commerce/media/POS-Session-Information.png)
+![現在読み込まれている画面レイアウト、レイアウトのサイズ、およびアプリのウィンドウの解像度を表示する POS セッション情報のページ。](../commerce/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>ボタン グリッド
 
@@ -115,9 +112,12 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 
 コンパクト POS レイアウトでは、ボタン グリッドは上から下へ、最も小さい番号 (トランザクション画面 1) から最も大きい番号へ自動的にレイアウトされます。 **アクション** メニューからアクセスできます。
 
-![コンパクト レイアウトのボタン グリッド](../commerce/media/Compact-View-Button-Grids.png)
+![コンパクト レイアウトのボタン グリッド。](../commerce/media/Compact-View-Button-Grids.png)
 
-### <a name="images"></a>イメージ
+> [!NOTE]
+> デザイナーのボタンのサイズは、ウィンドウのサイズに合わせて拡大縮小されるため、POS で表示された実際のボタンを正確に反映していない場合があります。 ボタングリッドレイアウトを最も適格にシミュレートするには、デザイナー ウィンドウを POS と同じサイズに調整します。
+
+### <a name="images"></a>画像
 
 画面レイアウトでの各レイアウト サイズで、POS UI に含めるための画像を指定できます。 フル POS レイアウトには、ようこそ画面に 1 つの画像を指定できます。 この画像は、左側に最初の UI 要素として表示されます。 **トランザクション** 画面で、タブの画像、またはロゴとして画像を使用することができます。 コンパクト POS レイアウトは、これらの画像を使用しません。
 
@@ -132,7 +132,7 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 
 フル レイアウト デザイナーでは、ユーザーは UI コントロールを POS **トランザクション** 画面にドラッグし、それらのコントロールの設定をコンフィギュレーションできます。
 
-![POS フル レイアウト デザイナー (ランドスケープ モード)](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
+![POS フル レイアウト デザイナー (ランドスケープ モード)。](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
 
 - **インポート レイアウト/エクスポート レイアウト** – POS 画面レイアウト デザインを環境間で簡単に再利用して共有できるように、XML ファイルとしてエクスポートおよびインポートできます。 正しいレイアウト サイズのレイアウト デザインをインポートすることが重要です。 それ以外の場合、UI 要素が画面に正しく収まらない場合があります。
 - **ランドスケープ/ポートレート** – POS デバイスでユーザーがランドスケープ モードとポートレート モードを切り替えることができる場合は、各モードの画面レイアウトを定義する必要があります。 POS は自動的にスクリーン ローテーションを検出し、正しいレイアウトを示します。
@@ -140,11 +140,11 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 - **デザイナー ズーム** – デザイナー ビューをズームインおよびズームアウトして、POS 画面のコンテンツの表示を向上できます。 この機能は、POS 画面の解像度がデザイナーで使用されている画面の解像度と大幅に異なる場合に便利です。
 - **ナビゲーション バーの表示/非表示** – フル POS レイアウトでは、**トランザクション** 画面に左側のナビゲーション バーを表示するかどうかを選択できます。 この機能は、表示の解像度が低い場合に便利です。 可視性を設定するには、デザイナー内のナビゲーション バーを右クリックし、**常に表示** チェック ボックスをオンまたはオフにします。 ナビゲーション バーが表示されていない場合でも、POS ユーザーは左上のメニューを使用することでアクセスできます。
 
-    ![ナビゲーション バーの表示/非表示](../commerce/media/Navigation-Bar.PNG)
+    ![ナビゲーション バーの表示/非表示。](../commerce/media/Navigation-Bar.PNG)
 
 - **POS コントロール** – POS レイアウト デザイナーは次のコントロールをサポートします。 右クリックしてショートカット メニューを使用することで、多くのコントロールをコンフィギュレーションできます。
 
-    ![POS UI コントロール](../commerce/media/POS-UI-Controls.png)
+    ![POS UI コントロール。](../commerce/media/POS-UI-Controls.png)
 
     - **テンキー** – テンキーは、POS **トランザクション** 画面のユーザー入力の主なメカニズムです。 コントロールをコンフィギュレーションして、完全なテンキーが表示されるようにします。 このオプションは、タッチ スクリーン デバイスに最適です。 また、入力フィールドのみが表示されるようにコンフィギュレーションすることもできます。 この場合、物理的なキーボードは入力に使用されます。 テンキーの設定は、フル レイアウトでのみ使用できます。 コンパクト レイアウトでは、完全なテンキーは常に **トランザクション** 画面に表示されます。
     - **合計パネル** – 合計パネルを 1 列または 2 列でコンフィギュレーションして、行数、割引額、料金、小計、および税金などの値を表示できます。 コンパクト レイアウトは、1 つの列だけをサポートします。
@@ -159,13 +159,13 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 
 フル レイアウト デザイナーと同様、コンパクト レイアウト デザイナーでは電話や小さなタブレット用の POS 画面レイアウトをコンフィギュレーションできます。 ただし、この場合は、レイアウト自体は固定されています。 右クリックしてショートカット メニューを使用することで、レイアウトのコントロールをコンフィギュレーションできます。 ただし、追加のコンテンツにドラッグ アンド ドロップ操作を使用することはできません。
 
-![コンパクト レイアウト デザイナー](../commerce/media/Compact-Layout-Designer.png)
+![コンパクト レイアウト デザイナー。](../commerce/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>ボタン グリッド デザイナー
 
 ボタン グリッドのデザイナーにより、フルおよびコンパクト両方のレイアウトの、POS ようこそ画面および **トランザクション** 画面で使用可能なボタン グリッドをコンフィギュレーションできます。 さまざまなレイアウトとレイアウト タイプで、同じボタン グリッドを使用できます。 画面レイアウト デザイナーと同様、ボタン グリッド デザイナーは、ユーザーがアクセスするたびに ClickOnce の配置テクノロジーを使用してアプリケーションの最新バージョンをダウンロード、インストール、および起動します。 必ず ClickOnce のブラウザの要件を確認してください。 Google Chrome などの一部のブラウザーでは、拡張機能が必要です。
 
-![ボタン グリッド デザイナー](../commerce/media/Button-Grid-Designer.png)
+![ボタン グリッド デザイナー。](../commerce/media/Button-Grid-Designer.png)
 
 - **新しいボタン** – クリックして、ボタン グリッドに新しいボタンを追加します。 既定では、新しいボタンはグリッドの左上隅に表示されます。 ただし、レイアウトにドラッグしてボタンを並べ替えることもできます。
 
@@ -178,7 +178,7 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
     > [!IMPORTANT]
     > 一部のボタン グリッドの設定は、Modern POS やクラウド POS ではなく、エンタープライズ POS にのみ適用されます。
 
-    ![ボタン グリッドのボタン プロパティ](../commerce/media/Button-grid-button-properties.png)
+    ![ボタン グリッドのボタン プロパティ。](../commerce/media/Button-grid-button-properties.png)
 
     - **アクション** – 該当する POS の操作の一覧で、POS でボタンがクリックされるときに呼び出される操作を選択します。
 
@@ -190,7 +190,7 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
     - **ツール ヒント** – ユーザーがボタンの上にマウスを重ねるときに表示される追加のヘルプ テキストを指定します。
     - **列内のサイズ/行内のサイズ** – ボタンの高さと幅を指定できます。
 
-        ![行および列内の POS ボタン サイズ](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
+        ![行および列内の POS ボタン サイズ。](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
     - **カスタム フォント** – **POS のカスタム フォントの有効化** チェック ボックスを選択するとき、POS の既定のシステム フォント以外のフォントを指定することができます。
     - **カスタム テーマ** – 既定では、POS ボタンは視覚プロファイルからアクセント色を使用します。 **カスタム テーマの使用** チェック ボックスを選択すると、 追加の色を指定することができます。
@@ -200,8 +200,11 @@ POS UI の大部分は応答可能で、レイアウトは画面のサイズや�
 
     - **ボタン画像** – ボタンには、画像かアイコンを含めることができます。 **Retail とコマース \> チャンネル設定 \> POS 設定 \> POS \> 画像** で指定されている利用可能な画像の中から選択します。
 
-![POS でのボタン グリッドの例](../commerce/media/Example-Button-Grid-In-POS.png)
+![POS でのボタン グリッドの例。](../commerce/media/Example-Button-Grid-In-POS.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [Retail 販売時点管理 (POS) のレイアウト デザイナーのインストール](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

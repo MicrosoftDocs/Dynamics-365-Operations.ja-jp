@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,14 +18,14 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 850d1eba3675ffe04f9abff7a892d3dc661d338e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413639"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237825"
 ---
-# <a name="outbound-inventory-operation-in-pos"></a>POS の出庫在庫操作
+# <a name="outbound-inventory-operation-in-pos"></a>POS でのアウトバウンド在庫操作
 
 [!include [banner](includes/banner.md)]
 
@@ -193,3 +192,6 @@ POS から、新しい移動オーダー ドキュメントを作成できます
 ## <a name="related-topics"></a>関連トピック
 
 [POS の入庫在庫操作](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

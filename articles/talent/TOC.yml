@@ -1,5 +1,5 @@
 - name: Dynamics 365 for Talent
-  href: talent-welcome.md
+  href: ./index.md
   items:
     - name: 使用開始
       items:
@@ -151,7 +151,7 @@
         - name: Attract および Onboard からのデータのエクスポート
           href: attract-onboard-export-data.md
         - name: Power Apps からキャンバス アプリを埋め込む
-          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
         - name: Talent に関するサポートの利用
           href: talent-support.md
     - name: Attract による組織のスタッフ配置

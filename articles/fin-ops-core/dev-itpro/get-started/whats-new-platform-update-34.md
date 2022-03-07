@@ -2,11 +2,9 @@
 title: Finance and Operations アプリ バージョン 10.0.10 のプラットフォーム更新プログラム（2020 年 5 月）
 description: このトピックでは、Finance and Operationsアプリ バージョン10.0.10 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 5c2630acda860140f66f53e455f4e49e8709c12e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3f995eb447de71b24d2ce2ee5159d23abea348ad38a4a641aeb6ed1432adac2d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763466"
 ---
 # <a name="platform-updates-for-version-10010-of-finance-and-operations-apps-may-2020"></a>Finance and Operations アプリ バージョン 10.0.10 のプラットフォーム更新プログラム（2020 年 5 月）
 
@@ -35,9 +33,9 @@ ms.locfileid: "4685111"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-- [メッセージバーの埋め込みアクション](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/embed-actions-message-bar) - 詳細は、[メッセージング API - アクション センター、メッセージ バー、およびメッセージ詳細](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/messaging-api-center-bar-details) を参照してください。　
-- [保存されているビューの更新](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--saved-views--phase-2) - 詳細は、[保存されているビュー](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views) および [タスク レコーダーのリソース](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder) を参照してください。
-- [新しいグリッド コントロールの安定化続行](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2) - 詳細は、[グリッド機能](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities?toc=/dynamics365/finance/toc.json) を参照してください。 
+- [メッセージバーの埋め込みアクション](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/embed-actions-message-bar) - 詳細は、[メッセージング API - アクション センター、メッセージ バー、およびメッセージ詳細](../user-interface/messaging-api-center-bar-details.md) を参照してください。　
+- [保存されているビューの更新](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--saved-views--phase-2) - 詳細は、[保存されているビュー](../../fin-ops/get-started/saved-views.md) および [タスク レコーダーのリソース](../user-interface/task-recorder.md) を参照してください。
+- [新しいグリッド コントロールの安定化続行](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2) - 詳細は、[グリッド機能](../../fin-ops/get-started/grid-capabilities.md) を参照してください。 
 
 
 ## <a name="additional-resources"></a>追加リソース
@@ -50,7 +48,7 @@ ms.locfileid: "4685111"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
@@ -62,3 +60,6 @@ ms.locfileid: "4685111"
 製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

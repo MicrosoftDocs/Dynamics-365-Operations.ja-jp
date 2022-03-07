@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f56dcf27704db5d304f002f1204631f8d389cd60bce8b3235433c0131b9473a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a4e2ffd24904f822f4993525cc196a050db1ba4
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744037"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026665"
 ---
 # <a name="users-can-unpick-material-lines-for-products-that-have-been-reported-as-finished"></a>ユーザーが、完了と報告された製品の材料明細行のピッキングを解除できる
 

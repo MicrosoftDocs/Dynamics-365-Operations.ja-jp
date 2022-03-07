@@ -1,31 +1,34 @@
 ---
 title: データ管理の概要
-description: このトピックでは、Finance and Operations のデータ管理について説明します。
-author: Sunil-Garg
-manager: AnnBe
-ms.date: 06/18/2020
-ms.topic: article
+description: このトピックでは、Finance and Operations のデータの管理に関する情報を提供します。
+author: peakerbl
+ms.date: 04/22/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 96283
+ms.custom:
+- "96283"
+- intro-internal
 ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4eadce499e9c0fe3d5692393d4d384ad3d13f523
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 316ae9974517f78b85bfe2e2d2ca69fa2c0f7ddf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685719"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065726"
 ---
 # <a name="data-management-overview"></a>データ管理の概要
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、データ管理フレームワークを使用して、Finance and Operations のデータ エンティティおよびデータ エンティティ パッケージを管理する方法について説明します。
 
@@ -110,7 +113,7 @@ ms.locfileid: "4685719"
 
 2. シーケンスを表示または編集するには、データ プロジェクトのアクション ウィンドウにある **エンティティのシーケンス** ボタンをクリックします。
 
-    ![エンティティ シーケンス](./media/dataentitiesdatapackages01.png)
+    ![エンティティ シーケンス。](./media/dataentitiesdatapackages01.png)
 
 3. 定義グループ エンティティの順序で、実行単位と順序を表示できます。 一覧からデータ エンティティを選択して、異なる実行単位またはシーケンスを等しく設定してから、**選択対象の更新** をクリックすることにより、シーケンスを変更することができます。 **選択対象の更新** をクリックした後、エンティティはエンティティの一覧で上または下に移動します。
 
@@ -118,7 +121,7 @@ ms.locfileid: "4685719"
 
 次のスクリーンショットは、消費税 CodeGroups データ パッケージに設定されているエンティティの順序を示しています。
 
-![売上税 CodeGroups データ パッケージの順序](./media/dataentitiesdatapackages02.png)
+![売上税 CodeGroups データ パッケージの順序。](./media/dataentitiesdatapackages02.png)
 
 売上税コードとグループを正常にインポートするためには、最初に売上税コードおよび詳細を読み込んでから、売上税グループをインポートする必要があります。 売上税コードとグループがすべて実行単位 = 1 になっていますが、シーケンスはインポートされる順序になっています。 読み込まれる他のデータ エンティティに依存していないその他の関連する売上税エンティティは、パッケージに含まれます。 たとえば、消費税非課税番号が独自の実行単位 = 2 に設定されます。 このデータ エンティティは、直前に読み込んでいる他のエンティティに依存しないため、すぐに読み込みを開始します。
 
@@ -133,19 +136,19 @@ ms.locfileid: "4685719"
 
 **モジュール番号**
 
-[![モジュール地域番号](./media/dataentitiesdatapackages03.png)](./media/dataentitiesdatapackages03.png)
+[![モジュール地域番号。](./media/dataentitiesdatapackages03.png)](./media/dataentitiesdatapackages03.png)
 
 **データ型の数**
 
-[![データ型番号](./media/dataentitiesdatapackages04.png)](./media/dataentitiesdatapackages04.png)
+[![データ型番号。](./media/dataentitiesdatapackages04.png)](./media/dataentitiesdatapackages04.png)
 
-**番号順序**
+**連番**
 
-[![番号順序](./media/dataentitiesdatapackages05.png)](./media/dataentitiesdatapackages05.png)
+[![シーケンス番号。](./media/dataentitiesdatapackages05.png)](./media/dataentitiesdatapackages05.png)
 
 データ パッケージは、シーケンス番号に続いて、モジュールの省略形、記述の順に続きます。 次の例は、総勘定元帳 データ パッケージを示しています。
 
-[![番号付けの例](./media/dataentitiesdatapackages06.png)](./media/dataentitiesdatapackages06.png)
+[![番号付けの例。](./media/dataentitiesdatapackages06.png)](./media/dataentitiesdatapackages06.png)
 
 ## <a name="mapping"></a>マッピング
 データ エンティティを使用するときは、ソースへのエンティティのマッピングは自動です。 必要な場合は、フィールドの自動マッピングを上書きできます。
@@ -159,7 +162,7 @@ ms.locfileid: "4685719"
 
 ソースからステージングへのフィールド マッピングも、同じプロセスを使用してインポートした後で編集できます。
 
-[![マッピングの視覚化](./media/dataentitiesdatapackages07.png)](./media/dataentitiesdatapackages07.png)
+[![マッピングの視覚化。](./media/dataentitiesdatapackages07.png)](./media/dataentitiesdatapackages07.png)
 
 ### <a name="regenerate-a-map"></a>マップを再生成
 エンティティ (追加済みフィールド) を拡張する場合、または自動マッピングが不適切であると表示された場合は、エンティティのマッピングを **マッピング** フォームで再生成できます。
@@ -173,31 +176,31 @@ ms.locfileid: "4685719"
 ### <a name="generate-data"></a>データの生成
 エンティティに、インポート時にデータを生成するフィールドがある場合は、ソース ファイルにデータを提供する代わりに、エンティティのマッピングの詳細で自動生成された機能を使用できます。 たとえば、顧客および顧客の住所情報をインポートしても、住所情報がグローバル アドレス帳エンティティで以前にインポートされなかった場合、インポート上の関係者番号を自動生成するエンティティを持つことができ、GAB 情報が作成されます。 この機能にアクセスするには、エンティティのマップを表示し、**マッピング詳細** タブをクリックします。自動生成するフィールドを選択します。 これにより、ソース フィールドが **自動** に変更されます。
 
-[![データの生成](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
+[![データの生成。](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
 
 ### <a name="turn-off-automatically-generated-number-sequences"></a>自動的に生成される番号シーケンスをオフにする
 多くのエンティティは、番号順序の設定に基づく ID の自動生成をサポートしています。 たとえば、製品を作成するときに、製品番号は自動で生成され、フォームで値を手動で編集することはできません。
 
-[![自動番号 sequence.png](./media/dataentitiesdatapackages15-300x213.jpg)](./media/dataentitiesdatapackages15.jpg)
+[![自動番号 sequence.png。](./media/dataentitiesdatapackages15-300x213.jpg)](./media/dataentitiesdatapackages15.jpg)
 
 特定のエンティティに対する番号順序の手動割り当てを有効にできます。
 
-[![手動番号順序を有効化](./media/dataentitiesdatapackages16-300x153.png)](./media/dataentitiesdatapackages16.png)
+[![手動番号順序を有効化。](./media/dataentitiesdatapackages16-300x153.png)](./media/dataentitiesdatapackages16.png)
 
 手動割り当てを有効にした後、代わりに手動で割り当てられた番号を指定できます。
 
-[![番号シーケンスの提供](./media/dataentitiesdatapackages17-300x214.png)](./media/dataentitiesdatapackages17.png)
+[![番号シーケンスの提供。](./media/dataentitiesdatapackages17-300x214.png)](./media/dataentitiesdatapackages17.png)
 
 ## <a name="export"></a>輸出
 エキスポートは、データ エンティティを使用してシステムからデータを取得するプロセスです。 エクスポート プロセスは、プロジェクトを通じて行われます。 エクスポートするとき、エクスポート プロジェクトの定義方法に関して、多くの柔軟性があります。 エクスポートするデータ エンティティ、エンティティ数、使用するファイル形式 (エクスポートのために選択できる 14 の形式があります)、を選択して、各エンティティにフィルターを適用してエクスポート対象を制限することができます。 データ エンティティがプロジェクトを取り出した後、前述されたシーケンスとマッピングは、各エクスポート プロジェクトに対して実行できます。
 
-[![ページのエクスポート](./media/dataentitiesdatapackages08-1024x400.png)](./media/dataentitiesdatapackages08.png)
+[![ページのエクスポート。](./media/dataentitiesdatapackages08-1024x400.png)](./media/dataentitiesdatapackages08.png)
 
 プロジェクトが作成され保存された後は、プロジェクトをエクスポートし、ジョブを作成することができます。 エクスポート プロセス中に、ジョブのステータスとレコード数をグラフィカルに表示できます。 このビューには複数のレコードが表示されるので、実際のファイルをダウンロードする前に各レコードの状態を確認できます。
 
-[![実行の要約](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png)
+[![実行の要約。](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png)
 
-[![レコードのカウント](./media/dataentitiesdatapackages11.png)](./media/dataentitiesdatapackages11.png)
+[![レコード数。](./media/dataentitiesdatapackages11.png)](./media/dataentitiesdatapackages11.png)
 
 ジョブが完了した後、ファイルのダウンロード方法を選択できます。各データ エンティティは別々のファイルにすることも、ファイルをパッケージにまとめることもできます。 ジョブに複数のデータ エンティティがある場合は、パッケージ オプションを選択すると、アップロードのプロセス速度が上がります。 パッケージは zip ファイルであり、各エンティティのデータ ファイルとパッケージ ヘッダーとマニフェストを含んでいます。 これらの追加のドキュメントは、データ ファイルを正しいデータ エンティティに追加してインポート プロセスを順序付けるために、インポート時に使用されます。
 
@@ -214,7 +217,7 @@ ms.locfileid: "4685719"
     2. **ソース データ形式** フィールドで、**パッケージ** を選択します。
     3. **アップロード** ボタンをクリックし、インポートするデータの場所から適切なパッケージ ファイルを選択します。 これにより、パッケージからすべてのファイルがインポートされます。
 
-        [![パッケージファイルを選択する](./media/dataentitiesdatapackages12-1024x555.png)](./media/dataentitiesdatapackages12.png)
+        [![パッケージファイルを選択。](./media/dataentitiesdatapackages12-1024x555.png)](./media/dataentitiesdatapackages12.png)
 
     4. **保存** をクリックし、**インポート** をクリックします。
 
@@ -224,7 +227,7 @@ ms.locfileid: "4685719"
 - 各パッケージの新しいジョブを作成し、上記の手順 4(a) から 4(d) をパッケージごとに繰り返します。 
 - 1 つのジョブを作成して、複数のパッケージをシーケンス内にインポートします。 インポートする必要があるすべてのパッケージで上記の手順 4(a) ～ 4(c) を繰り返します。 パッケージを選択した後に、ステップ 4 (d) を実行し選択したデータ パッケージから単一のジョブでデータをインポートします。
 
-    [![複数のデータ パッケージ](./media/dataentitiesdatapackages13-1024x555.png)](./media/dataentitiesdatapackages13.png)
+    [![複数のデータ パッケージ。](./media/dataentitiesdatapackages13-1024x555.png)](./media/dataentitiesdatapackages13.png)
 
 **インポート** をクリックした後、ステージング テーブルを使用してデータがインポートされます。 インポートの進行状況は、画面の右上にある **更新** ボタンを使用して追跡できます。
 
@@ -237,7 +240,6 @@ ms.locfileid: "4685719"
 ### <a name="export-process-troubleshooting"></a>プロセス トラブルシューティングをエキスポート
 - エクスポート プロセス中にエラーが発生した場合、**実行ログの表示** をクリックし、ログのテキスト、ステージング ログ詳細、詳細情報の情報ログをを確認します。
 - エクスポート プロセス中にエラーが発生し、ステージングをスキップするように指示ノートが表示された場合、**ステージングをスキップ** オプションをオフにし、エンティティを追加します。 複数のデータ エンティティをエクスポートする場合は、個々のデータ エンティティに対して **ステージングのスキップ** ボタンを使用できます。
-- プラットフォーム更新プログラム 32 以前では、エクスポート処理により処理可能なファイル サイズには 256 MB の制限がありました。 エクスポートされるレコード数が多い場合、生成されるファイル サイズがこの制限を超えないようにします。 このようなシナリオを処理するための別の方法は、データのサブセットのみをエクスポートするようエンティティでフィルターを使用することです。 現実的ではない場合、ソリューション全体で自分のデータベースの持ち込みを考慮する必要があります。 この制限は、プラットフォーム更新プログラム 32 以降では存在しません。
 
 ### <a name="import-process-troubleshooting"></a>プロセス トラブルシューティングのインポート
 データ エンティティ ファイルをアップロードするとき、次の操作を行います。
@@ -302,3 +304,6 @@ ms.locfileid: "4685719"
 
 ## <a name="additional-resources"></a>追加リソース
 - [データ エンティティの概要](data-entities.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

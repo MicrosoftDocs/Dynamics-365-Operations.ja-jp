@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce 評価環境のプロビジョニング
 description: このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニングする方法について説明します。
 author: psimolin
-manager: annbe
 ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969904"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777503"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境のプロビジョニング
 
@@ -34,8 +32,6 @@ ms.locfileid: "4969904"
 
 > [!NOTE]
 > コマースの評価環境は一般的には提供されておらず、パートナーや顧客からのリクエストに応じて付与されます。 ライセンスの詳細については、Microsoft パートナーにお問い合わせください。
-
-## <a name="overview"></a>概要
 
 Commerce 評価環境を正常にプロビジョニングするには、特定の製品名とタイプを持つプロジェクトを作成する必要があります。 この環境と Commerce Scale Unit (CSU) には、後から E コマースをプロビジョニングする場合に使用する必要がある特定のパラメーターもいくつかあります。 このトピックの手順では、プロビジョニングを完了するために必要なすべての手順と、使用する必要があるパラメーターについて説明します。
 
@@ -80,7 +76,7 @@ LCS に新しいプロジェクトを作成するには、次の手順を実行�
 
 ### <a name="add-the-azure-connector"></a>Azure コネクタの追加
 
-Azure コネクタ を LCS プロジェクトに追加するには、[Azure Resource Manager (ARM) 研修プロセス](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding) の手順に従ってください。
+Azure コネクタ を LCS プロジェクトに追加するには、[Azure Resource Manager (ARM) 研修プロセス](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md) の手順に従ってください。
 
 ### <a name="deploy-the-environment"></a>環境の配置
 
@@ -94,16 +90,16 @@ Azure コネクタ を LCS プロジェクトに追加するには、[Azure Reso
 1. **アプリケーション バージョン** フィールドで、最新のバージョンを選択します。 最新バージョン以外のアプリケーション バージョンを特定する必要がある場合は、**10.0.14** より前のバージョンを選択しないでください。
 1. **プラットフォーム バージョン** フィールドで、選択したアプリケーション バージョンに対して自動的に選択されたプラットフォーム バージョンを使用します。 
 
-    ![アプリケーションとプラットフォーム バージョンを選択する](./media/project1.png)
+    ![アプリケーションとプラットフォーム バージョンを選択する。](./media/project1.png)
 
 1. **次へ** を選択します。
 1. 環境のトポロジとして **デモ** を選択します。
 
-    ![環境トポロジ 1 を選択する](./media/project2.png)
+    ![環境トポロジ 1 を選択する。](./media/project2.png)
 
 1. **環境の配置** のページで、環境名を入力します。 詳細設定はそのままにしておきます。
 
-    ![環境の配置のページ](./media/project4.png)
+    ![環境の配置のページ。](./media/project4.png)
 
 1. VM サイズを必要に応じて調整します。 (VM 最小在庫管理単位をお勧めします \[SKU\] **D13 v2**。)
 1. 価格決定およびライセンス条件を確認、チェック ボックスをオンにして同意したことを示します。
@@ -184,10 +180,13 @@ Commerce 評価環境のプロビジョニングと構成のプロセスを続�
 
 [Dynamics 365 Commerce 評価環境に関するよく寄せられる質問](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (クラウド)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (クラウド)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure ポータル](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce Web サイト](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

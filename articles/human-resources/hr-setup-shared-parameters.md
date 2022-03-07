@@ -2,30 +2,30 @@
 title: 共有パラメーターのコンフィギュレーション
 description: 職位レコードなど、会社間で共有されるのレコードの共有パラメーターを設定する必要があります。 この記事は、法人間に人事管理パラメーターを設定する方法を説明します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmSharedParameters, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 72742c38c3ff25d665bd1a3d0ea54f167dc0693c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: abcaf42a2e8b227e2c7c1b07ed61ea005832667a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419314"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802386"
 ---
 # <a name="configure-shared-parameters"></a>共有パラメーターのコンフィギュレーション
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 職位レコードなど、会社間で共有されるのレコードの共有パラメーターを設定する必要があります。 この記事は、法人間に人事管理パラメーターを設定する方法を説明します。
 
@@ -45,3 +45,6 @@ ms.locfileid: "4419314"
 
 -   **常時** – 職位の作成時に新しい職位に作業者を割り当てることができます。 職位を作成すると、**職位** ページの **概要** タブ上の **割り当てに使用可能** 日時が、自動的に作成日時に設定されます。
 -   **なし** – 職位の作成時に新しい職位に作業者を割り当てることはできません。 このオプションを選択する場合、新しい各職位が使用できるように **職位** ページを開き、作業者の割り当てを有効にするのに **一般** タブの **割り当てに使用可能** 日付を入力する必要があります。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

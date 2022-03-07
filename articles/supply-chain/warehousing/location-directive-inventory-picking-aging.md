@@ -2,26 +2,23 @@
 title: 場所のディレクティブ在庫ピッキング エイジング
 description: このトピックでは、ピッキング中の先入れ先出し (FIFO) と後入れ先出し (LIFO) の場所ディレクティブ戦略の使用方法について説明します。
 author: mirzaab
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 8a08b1582ee5edba019031a687dba375a195d661484c0f0bdd2983fed2a0d6cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714189"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>場所のディレクティブ在庫ピッキング エイジング
 
@@ -140,3 +137,6 @@ LIFO 戦略は、最新のエイジング日付を含む場所を検出し、そ
 1. **作業タイプ** の値が *ピッキング* となっている行は、**場所** の値が *FL-001* であることに注意してください。 この場所には、最新のエイジング日付 (LIFO) を持つライセンス プレートが含まれています。
 
 このようなシナリオでは、選択した戦略に応じて、場所のエージング戦略が、最も古い在庫または最新の在庫のいずれかを持つ在庫場所に作業をどのように指示するかを見てきました。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

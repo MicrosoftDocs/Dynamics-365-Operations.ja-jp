@@ -1,7 +1,7 @@
 ---
 title: 派生帳簿を転記する
 description: この記事は、派生帳簿を使用する方法について説明します。
-author: moaamer
+author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef0c7b2ad93f4a9c4ff24052c749f7891f9e915d
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: f76b30ebf61e0fc709513d1f5a1670930fab54a51d976df80842c35a2ae10b63
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675422"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754245"
 ---
 # <a name="post-with-derived-books"></a>派生帳簿を転記する
 
@@ -52,7 +52,7 @@ ms.locfileid: "7675422"
 > [!NOTE]                                                                                                         
 > 派生帳簿を使用しない場合は、帳簿 VM 1 および帳簿 VM 2 の両方に対して固定資産の取得を転記する必要があります。
 
-詳細については、[派生帳簿](derived-books.md) を参照してください。
+詳細については、「[派生帳簿](derived-books.md)」を参照してください。
 
 
 

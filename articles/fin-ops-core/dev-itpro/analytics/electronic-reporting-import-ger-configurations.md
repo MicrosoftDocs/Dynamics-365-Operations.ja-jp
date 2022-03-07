@@ -2,9 +2,11 @@
 title: 電子申告 (ER) コンフィギュレーションのインポート
 description: このトピックでは、Lifecycle Services (LCS) からローカルのビジネス データ アプリケーションに電子申告 (ER) の構成をインポートする方法について説明します。
 author: NickSelin
-ms.date: 06/17/2021
+manager: AnnBe
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
 audience: Developer
@@ -15,21 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: fd28d513ee79d26192b768308ace8525ce271c0229733f1a7105a1cebb1390f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 435a3b375a6c6aa67e317f8a42c46e3704f01e19
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772046"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687142"
 ---
 # <a name="import-electronic-reporting-er-configurations"></a>電子申告 (ER) コンフィギュレーションのインポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) からローカルのビジネス データ アプリケーションに[電子申告 (ER) のコンフィギュレーション](general-electronic-reporting.md#Configuration) をダウンロードする方法について説明します。 また、ER リポジトリからローカル ビジネス データ (LBD) アプリケーションに ER 構成をアップロードする方法についても説明します。
-
-> [!IMPORTANT]
-> ER コンフィギュレーションの記憶域リポジトリとして LCS を使用することは[廃止される](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release) 予定です。 詳細については、[Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止](../../../finance/localizations/rcs-lcs-repo-dep-faq.md) を参照してください。
+このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) からローカルのビジネス データ アプリケーションに電子申告 (ER) のコンフィギュレーションをダウンロードする方法について説明します。 また、ER リポジトリからローカル ビジネス データ (LBD) アプリケーションに ER 構成をアップロードする方法についても説明します。
 
 1. 次のロールのいずれかを使用して、ローカル ビジネス データ アプリケーションにログインします。
 
@@ -79,6 +78,3 @@ ms.locfileid: "6772046"
 **質問:** 共有アセット ライブラリで **すべてダウンロード** をクリックすると、次の警告が表示されます: Zip の生成が進行中です。数分後にもう一度お試しください。 なぜこの警告を受信するのですか。
 
 **回答:** これは、新しいコンフィギュレーションが共有アセット ライブラリに追加され、ER コンフィギュレーションがアーカイブされているため、この警告が表示されます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

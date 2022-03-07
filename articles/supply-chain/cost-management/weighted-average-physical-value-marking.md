@@ -2,16 +2,13 @@
 title: 現物価格とマーキングを使用した加重平均
 description: 加重平均は加重平均原則に基づく在庫モデルであり、在庫原価計算期間中に受け入れて在庫となった品目の平均価値に、前の期間からの手持在庫を加えて、在庫からの払出の価値を決めます。
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 225379df8bb86522d5817add570d614d09a1a92d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ce87f14c17aa44d73de22e7f1711794a499c67de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431803"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352715"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>現物価格とマーキングを使用した加重平均
 
@@ -68,7 +65,7 @@ ms.locfileid: "4431803"
 
 次の図は、加重平均在庫モデルおよび [現物価格を含める] オプションを使用しない直接決済原則を選択した場合の、この一連のトランザクションを示しています。 
 
-![[現物価格を含める] がオフの場合の加重平均 DS](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+![現物価格を含めるがオフの場合の加重平均 DS。](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **図の説明**
 - 在庫トランザクションは、縦の矢印で表されています。
@@ -102,7 +99,7 @@ ms.locfileid: "4431803"
 
 次の図は、加重平均在庫モデルおよび [現物価格を含める] オプションを使用しない集計決済原則を選択した場合の、この一連のトランザクションを示しています。 
 
-![[現物価格を含める] がオフの場合の加重平均 SS](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![現物価格を含めるがオフの場合の加重平均 SS。](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **図の説明**
 - 在庫トランザクションは、縦の矢印で表されています。
@@ -131,7 +128,7 @@ ms.locfileid: "4431803"
 
 次の図は、加重平均在庫モデルおよび [現物価格を含める] オプションを使用した直接決済原則を選択した場合の、この一連のトランザクションを示しています。 
 
-![[現物価格を含める] がオンの場合の加重平均 DS](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+![現物価格を含めるがオンの場合の加重平均 DS。](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **図の説明**
 - 在庫トランザクションは、縦の矢印で表されています。
@@ -164,7 +161,7 @@ ms.locfileid: "4431803"
 
 次の図は、加重平均在庫モデルおよび [現物価格を含める] オプションを使用しない集計決済原則を選択した場合の、この一連のトランザクションを示しています。 
 
-![[現物価格を含める] がオンの場合の加重平均 SS](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+![現物価格を含めるがオンの場合の加重平均 SS。](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **図の説明**
 - 在庫トランザクションは、縦の矢印で表されています。
@@ -212,7 +209,7 @@ ms.locfileid: "4431803"
 
 次の図は、マーキングを使用した加重平均在庫モデルを選択した場合の、この一連のトランザクションを示しています。 
 
-![[マーキング] が有効な場合の加重平均](./media/weightedaveragewithmarking.gif) 
+![マーキングが有効な場合の加重平均。](./media/weightedaveragewithmarking.gif) 
 
 **図の説明**
 - 在庫トランザクションは、縦の矢印で表されています。
@@ -230,3 +227,6 @@ ms.locfileid: "4431803"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

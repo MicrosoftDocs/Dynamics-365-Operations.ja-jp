@@ -1,25 +1,18 @@
 ---
 title: PageTarget タイプ
 description: PageTarget タイプ
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: f263cdd72d32dddb6ba03a9afb1400b9cf56beac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.openlocfilehash: 9c47eca5b9b8981484f722b9465249ba659cdca1
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679926"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783368"
 ---
 # <a name="pagetarget-type"></a>PageTarget タイプ
 
@@ -52,3 +45,6 @@ to: string (省略可)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44288cc3979a0ac2ed6b4a8478aac21a85aca24e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 68c5114b8c1e2a2ac5d357ee9e75cc54c149f39d
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684214"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564269"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>形式作成時のデータ モデル定義の選択
 
@@ -98,3 +97,6 @@ ms.locfileid: "4684214"
     * アプリケーション データ ソースにマップするのに、現在 1 つのみのルート項目が使用可能であることに注意してください。 少なくとも 1 つのモデル マッピングが導入された場合、ER 形式が追加されている間は、アプリケーションのデータソースにマッピングされているモデルのルート項目のみをモデル定義として選択することができます。   
 5. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

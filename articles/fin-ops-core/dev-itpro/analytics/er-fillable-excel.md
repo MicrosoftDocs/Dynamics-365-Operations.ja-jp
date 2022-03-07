@@ -2,7 +2,7 @@
 title: ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
 description: このトピックでは、Excel テンプレートに入力する電子レポート (ER) のフォーマットを設計し、Excel 形式の出力ドキュメントを生成する方法について説明します。
 author: NickSelin
-ms.date: 01/05/2022
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
+ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952655"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7943615"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel 形式でドキュメントを生成する構成を設計する
 
@@ -379,7 +379,7 @@ ER 形式を実行して、Excel ワークブック形式の送信ドキュメ�
     2. ER を使用して、Finance から必要な詳細情報を持つ 2 つ目の Excel ワークブック (ワークブック B) を生成します。 
     3. ワークブック B が生成されたら、すぐにワークブック A のワークブック B を参照します。
 
-- 機能をオフにし、**電子レポート フレームワークで EPPlus ライブラリの使用を有効化して**、EPPlus 以外のオプションを使用します。 
+- EPPlus 以外のオプションを使用して機能をオフにします。 
 
 ## <a name="additional-resources"></a>追加リソース
 

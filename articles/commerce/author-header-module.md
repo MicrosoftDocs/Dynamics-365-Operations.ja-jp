@@ -2,27 +2,24 @@
 title: ヘッダー モジュール
 description: このトピックでは、ヘッダー モジュールおよび Microsoft Dynamics 365 Commerce でのページ ヘッダーの作成方法について説明します。
 author: anupamar-ms
-manager: annbe
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
-ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
+ms.openlocfilehash: afdc12230ebad3d5db59c384b2f1066d2c7929339f282ed4880ff967b1fd2d8b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4413888"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712793"
 ---
 # <a name="header-module"></a>ヘッダー モジュール
 
@@ -30,15 +27,13 @@ ms.locfileid: "4413888"
 
 このトピックでは、ヘッダー モジュールおよび Microsoft Dynamics 365 Commerce でのページ ヘッダーの作成方法について説明します。
 
-## <a name="overview"></a>概要
-
 Dynamics 365 Commerce では、ページのヘッダーは、ヘッダー、プロモーション バナー、cookie 同意モジュールを含むページ フラグメントとして構成されます。 
 
 ヘッダー モジュールには、サイトのロゴ、ナビゲーション階層へのリンク、サイト上の他のページへのリンク、カート アイコンのモジュール、ウィッシュ リスト記号、サインイン オプション、検索バーが含まれています。 ヘッダー モジュールは、サイトが表示されているデバイス (デスクトップ デバイスまたはモバイル デバイス) に対して自動的に最適化されます。 たとえば、モバイル デバイスでは、ナビゲーションバーを **メニュー** ボタンで折りたたむことができます (このボタンは、*ハンバーガー メニュー* と呼ばれることもあります)。
 
 以下の図は、ホーム ページにおけるヘッダー モジュールの例を示しています。
 
-![ヘッダー モジュールの例](./media/ecommerce-header.png)
+![ヘッダー モジュールの例。](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>ヘッダー モジュールのプロパティ
 
@@ -63,9 +58,16 @@ Dynamics 365 Commerce では、ページのヘッダーは、ヘッダー、プ�
 - **店舗セレクター** - ヘッダー モジュールの店舗セレクター スロットに、ストア選択モジュールを含めることができます。 この機能を使用すると、ユーザーは近くの店舗を参照および検索できます。 ユーザーは、優先店舗を指定することもできます。 優先店舗はヘッダーに表示されます。 店舗選択モジュールがヘッダー モジュールに含まれている場合、**モード** プロパティを **店舗検索** に設定する必要があります。 詳細については、[店舗セレクター モジュール](store-selector.md) を参照してください。
 
 > [!NOTE]
-> - Dynamics 365 Commerce 10.0.11 リリースは、ヘッダー モジュールでの買い物カゴ アイコン モジュールをサポートしています。
-> - Dynamics 365 Commerce 10.0.14 リリースは、ヘッダー モジュールでのサイト セレクター モジュールをサポートしています。
-> - Dynamics 365 Commerce 10.0.15 リリースは、ヘッダー モジュールでの店舗セレクター モジュールをサポートしています。
+> - ヘッダー モジュールでの買い物カゴ アイコン モジュールのサポートは、Dynamics 365 Commerce 10.0.11 リリース時点で使用できます。
+> - ヘッダー モジュールでのサイト セレクター モジュールのサポートは、Dynamics 365 Commerce 10.0.14 リリース時点で使用できます。
+> - ヘッダー モジュールでの店舗セレクター モジュールのサポートは、Dynamics 365 Commerce 10.0.15 リリース時点で使用できます。
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Adventure Works テーマのヘッダー モジュール
+
+Adventure Works テーマでは、ヘッダー モジュールは **モバイル ロゴ** プロパティをサポートします。 このプロパティを使用すると、モバイル ビューポートにロゴを指定できます。 **モバイル ロゴ** プロパティは、モジュール定義拡張機能として使用できます。
+
+> [!IMPORTANT]
+> Adventure Works テーマは、Dynamics 365 Commerce バージョン 10.0.20 リリース時点で使用できます。
 
 ## <a name="create-a-header-fragment-for-a-page"></a>ページで使用するヘッダー フラグメントの作成
 
@@ -119,3 +121,6 @@ Dynamics 365 Commerce では、ページのヘッダーは、ヘッダー、プ�
 [サイト セレクター モジュール](site-selector.md)
 
 [店舗セレクター モジュール](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Finance and Operations アプリのヘルプ エクスペリエンスを構成する
-description: このトピックでは、一部の Microsoft Dynamics 365 アプリのヘルプシステムのコンポーネントに関する情報を提供します。 また、これらのアプリケーションの接続方法と、ユーザー定義のヘルプを作成するプロセスの概要についても説明します。
+description: このトピックでは、一部の Microsoft Dynamics 365 アプリのヘルプシステムのコンポーネントに関する情報を提供します。
 author: margoc
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d000c3f801d382921a027c8ee259fd44ac5cdc80
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 1a70a9771d5f9c1acea9274b8454a23c8dd7c1ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798283"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343937"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations アプリのヘルプ エクスペリエンスを構成する
 
@@ -34,7 +32,7 @@ ms.locfileid: "4798283"
 
 Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365](/dynamics365/) サイトにて公開されている概要やその他のトピックが含まれています。 このコンテンツには、製品内の **ヘルプ** ウィンドウからアクセスできます。 次の図は、ヘルプ システムの一部を示します。
 
-[![ヘルプ アーキテクチャ](./media/help-architecture.png)](./media/help-architecture.png)
+[![ヘルプ アーキテクチャ。](./media/help-architecture.png)](./media/help-architecture.png)
 
 製品内のヘルプ システムでは、docs.microsoft.com やその他の接続 web サイトから記事を取得しています。 また、Microsoft Dynamics Lifecycle Services (LCS) 内の業務プロセス (BPM) にて保管されているタスクガイドも取得しています。
 
@@ -49,14 +47,14 @@ Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365
 > - ヘルプを構成するには、アプリを導入しているテナントと同じアカウントを使用してサイン インする必要があります。
 > - ローカル仮想ハード ドライブ (VHD) で実行されているアプリのインスタンスからは、LCS ライブラリに接続することはできません。
 
-[![システム パラメーター フォームとヘルプ設定](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![システム パラメーター フォームとヘルプ設定。](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 ソリューションの作業ガイドを構成するには、**システム パラメーター** のページで次の手順を実行 します。
 
 > [!IMPORTANT]
 > 初めて **ヘルプ** タブを開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクを選択し、接続されるまで待機します。ダイアログ ボックスを閉じ、**OK** を選択して **システム パラメーター** ページを取得します。
 >
-> [![LCS に接続](./media/connect-to-lcs-crop-1024x365.png "LCS に接続")](./media/connect-to-lcs-crop.png)
+> [![LCS への接続](./media/connect-to-lcs-crop-1024x365.png "LCS への接続。"](./media/connect-to-lcs-crop.png)
 
 1. 接続する Lifecycle Services プロジェクトを選択します。
 2. タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
@@ -99,3 +97,6 @@ Microsoft では、ユーザー定義のヘルプを展開して **ヘルプ** �
 [タスク レコーダー リソース](../../dev-itpro/user-interface/task-recorder.md)  
 [タスク レコーダーを使用したドキュメントやトレーニングの作成](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [カスタム ヘルプ GitHub リポジトリ](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

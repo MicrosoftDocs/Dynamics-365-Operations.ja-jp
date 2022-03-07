@@ -1,26 +1,24 @@
 ---
 title: 販売時点管理 (POS) 支払拡張機能
-description: 支払いの拡張性をサポートするために POS で拡張点を使用すると、ハードウェア ステーション API を使用する支払デバイスまたは支払コネクタに主要な支払いロジックを実装することができます。
+description: このトピックでは、ハードウェア ステーション API を使用して、支払デバイスまたは支払コネクタに主要な支払いロジックを実装する方法について説明します。
 author: mugunthanm
-manager: AnnBe
-ms.date: 09/01/2017
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24411
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8eabce858f50369c791dbcf41ea538826bbf8f82
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0cf39bb7eb048e03b9c456f33a776fdb287a7409
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681510"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781713"
 ---
 # <a name="point-of-sale-pos-payment-extension"></a>販売時点管理 (POS) 支払拡張機能
 
@@ -39,6 +37,11 @@ POS 側から以下の要求ハンドラーをオーバーライドして、支�
 - PaymentTerminalExecuteTaskRequestHandler
 - PaymentTerminalRefundPaymentRequestHandler
 - PaymentTerminalVoidPaymentRequestHandler
+- PaymentTerminalCancelOperationRequest
+- PaymentTerminalEnquireGiftCardBalancePeripheralRequest
+- PaymentTerminalAddBalanceToGiftCardPeripheralRequest
+- PaymentTerminalActivateGiftCardPeripheralRequest
+- PaymentTerminalBeginTransactionRequest
 
 POS ランタイムは、これらの要求ハンドラーに拡張機能があるかどうかを確認するために拡張子マニフェストをチェックします。 拡張機能がある場合は、ランタイムは拡張要求をロードし、オーバーライドされた要求を実行します。 拡張プロジェクトでは、これらの要求をオーバーライドし、カスタム支払プロバイダーを呼び出す独自の実装を追加して、プロバイダーによって返されるステータスに基づいて応答を更新します。 要求を上書きするときは、コア ロジックのみを上書きします。 すべてのカスタム ロジックの実行後、ハードウェア ステーション (支払デバイス/コネクタ) から受信した更新済の応答を POS に送信します。 すべての標準ワークフローは POS によって処理されるため、支払ラインの追加、無効、拒否、および応答に基づいたトランザクションの完結の方法を心配する必要はありません。
 
@@ -343,3 +346,6 @@ export default class PaymentTerminalExecuteTaskRequestHandlerExt extends Payment
 **PaymentTerminalVoidPaymentRequestHandler**、無効化要求、無効化カード支払要求を開始する POS からの支払要求です。 無効なワークフローを変更する場合は、この要求をオーバーライドします。 リクエストをオーバーライドにするには、POS の **PaymentTerminalVoidPaymentRequestHandler** を拡張する必要があります。
 
 無効および払い戻し要求コード パターンを拡張することは、承認および取得要求と同じです。 拡張プロパティを渡す方法とともに、無効および払い戻し支払要求の完全なコードサンプルは、RetailSDK\Code\POS\Extensions\PaymentSample フォルダーの Retail SDK アプリケーション 3 で利用できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

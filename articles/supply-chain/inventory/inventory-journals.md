@@ -2,28 +2,25 @@
 title: 在庫仕訳帳
 description: このトピックでは、在庫仕訳帳を使用してさまざまなタイプの物理在庫トランザクションを転記する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d184b34ec33184d730d5b6eed3db144f1433f1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a94c5371db10fa4f0090f2d177b1a01233ab0f30
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431722"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826038"
 ---
 # <a name="inventory-journals"></a>在庫仕訳帳
 
@@ -117,3 +114,6 @@ BOM を完了済と報告する場合、BOM 仕訳帳を作成できます。 BO
 ## <a name="additional-resources"></a>その他のリソース
 
 [データ エンティティ](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

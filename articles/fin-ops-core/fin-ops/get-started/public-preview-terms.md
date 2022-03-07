@@ -2,11 +2,9 @@
 title: Microsoft Dynamics 365 プレビューの追加使用条件
 description: トピックの説明
 author: ShellyBakke
-manager: AnnBe
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1f148c5783645bd6eab4bd309e988040b0e51f8e
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: de57f7a6583eb6af9f96f6556a983b4984d1c3ab54701fdd0581d96a944ee02b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798240"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719284"
 ---
 # <a name="supplemental-terms-of-use-for-microsoft-dynamics-365-previews"></a>Microsoft Dynamics 365 プレビューの追加使用条件
 
@@ -53,8 +51,11 @@ Dynamics 365 は、顧客フィードバック ("プレビュー") を入手す�
 MPEG LA, L.L.C. この通知が必要です。この製品は AVC、VC-1、MPEG-4 パート2、および MPEG-2 ビジュアル特許ポートフォリオ ライセンスの下で、個人及び非営利消費者のために、(i) 上記 (ビデオ標準) に準拠したビデオのエンコードおよび/または (ii) 個人および非営利活動に従事する消費者によってエンコードされた AVC、VC-1、MPEG-4 パート 2、および MPEG-2 ビデオのデコード、および/またはそのようなビデオを提供するビデオ プロバイダー ライセンスから取得されたものです。  他の用途での使用については、ライセンスは付与されず、暗示されることもありません。  MPEG LA、L.L.C から追加情報を取得できます。 [wwww.mpegla.com](http://www.mpegla.com "代替テキスト"). を参照します。  明確にするために、この通知は (i) サード パーティへのソフトウェアの再配布、もしくは (ii) サード パーティへの配布のために、ビデオ標準テクノロジに準拠したコンテンツの作成を含まない通常のビジネスでのソフトウェアの使用を制限または禁止するものではありません。  契約とこれらのプレビューの使用条件の間に不整合がある場合、そうした不整合の範囲に対して、これらのプレビューの使用条件が契約内の競合している条件をコントロールします。
 
 + **ソフトウェアの使用条件の追加プレビュー**  
-Microsoft は、このプレビューに関連して使用する特定のソフトウェアにアクセスできるようにします。 Microsoft プレビュー ソフトウェア ライセンス条件 Dynamics 365 Commerce [ソフトウェア開発キット](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/SDK-terms-conditions "ソフトウェア開発キット") (「SDK ライセンス条項」) または Dynamics 365 Commerce [ストア スターター キット](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/RSSK-terms-conditions "ソフトウェア キット ライセンス条項") (「ストア キット ライセンス条項」) (総称 「SLT」) の反対条項にかかわらず、Microsoft は Dynamics 365 Commerce の実稼働環境、もしくは「ライブ オペレーティング」でソフトウェア開発キットおよびストア スターター キット (総称ソフトウェア) を使用する許可をお客様に付与します。  SLTs の契約条件に準拠している場合は、(A) ソフトウェアを使用して Dynamics 365 Commerce の実稼働環境もしくは 「ライブ オペレーティング」で Webサイトの開発とテスト、(B) ソフトウェアを使用して、電子商取引トランザクションを実行するためにソフトウェアで作成した Web サイトの作成およびテストができます (つまり、インターネットまたはその関係者がアクセス可能なコンピュータ ネットワークによる商品やサービスの交換)、限定なしに配送、クレジット カード、金銭、または他の銀行取引を含む、そして (C) サード パーティがインターネット経由でアクセスするためにソフトウェアで作成した Web サイトを配置します。ただし、次の条件に準拠している場合に限ります。
+Microsoft は、このプレビューに関連して使用する特定のソフトウェアにアクセスできるようにします。 Microsoft プレビュー ソフトウェア ライセンス条件 Dynamics 365 Commerce [ソフトウェア開発キット](./sdk-terms-conditions.md "ソフトウェア開発キット") (「SDK ライセンス条項」) または Dynamics 365 Commerce [ストア スターター キット](./rssk-terms-conditions.md "ソフトウェア キット ライセンス条項") (「ストア キット ライセンス条項」) (総称 「SLT」) の反対条項にかかわらず、Microsoft は Dynamics 365 Commerce の実稼働環境、もしくは「ライブ オペレーティング」でソフトウェア開発キットおよびストア スターター キット (総称ソフトウェア) を使用する許可をお客様に付与します。  SLTs の契約条件に準拠している場合は、(A) ソフトウェアを使用して Dynamics 365 Commerce の実稼働環境もしくは 「ライブ オペレーティング」で Webサイトの開発とテスト、(B) ソフトウェアを使用して、電子商取引トランザクションを実行するためにソフトウェアで作成した Web サイトの作成およびテストができます (つまり、インターネットまたはその関係者がアクセス可能なコンピュータ ネットワークによる商品やサービスの交換)、限定なしに配送、クレジット カード、金銭、または他の銀行取引を含む、そして (C) サード パーティがインターネット経由でアクセスするためにソフトウェアで作成した Web サイトを配置します。ただし、次の条件に準拠している場合に限ります。
 
      **#1 外部での製品使用** データをバックアップおよび保護するにあたって適切な予防措置を講じてください。(ii)お客様は、マイクロソフトからの通知を受けた時点で直ちにそのような使用を中止することに同意するものとします。(iii) Web サイトには、その Web  サイトが正しく動作しない可能性のあるプレリリース版の、時間制限のある、サポートされていないソフトウェアで作成された、またはそのソフトウェアに依存していることをユーザーに明示する必要があります。(iv) お客様は、Microsoft に代わって、またはソフトウェアやそのパフォーマンスに関して、いかなる表明、保証、または約束も行うものではありません。
 
      **#2  危険性のある環境** 本ソフトウェアは、フェイルセーフ制御を必要とする危険な環境で使用する Webサイト の開発やテストに使用することはできません。この環境には、原子力施設、航空機ナビゲーション、通信システム、航空交通管制、生命維持、兵器システムが含まれます。これら環境の設計、建設、保守、運用を含みますが、本制約はこれらに限定されないものとします。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

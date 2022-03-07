@@ -2,31 +2,27 @@
 title: 倉庫管理による CW 製品の処理
 description: このトピックでは、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。
 author: perlynne
-manager: tfehr
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c263fdcf7fdf2888e1c66e7e2b67d8b26729128c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432324"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907622"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>倉庫管理による CW 製品の処理
 
 [!include [banner](../includes/banner.md)]
-
 
 ## <a name="feature-exposure"></a>エクスポージャ機能
 
@@ -44,7 +40,7 @@ CW 製品を処理する倉庫管理を使用するには、ライセンス コ�
 - CW 単位が最小在庫単位 (SKU) として定義されている順序グループの単位を設定します。
 - CW 品目の取り扱いに関するポリシーを設定します。
 
-詳細については、[設定および CW 品目の管理](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items) を参照してください。
+詳細については、[設定および CW 品目の管理](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items) を参照してください。
 
 ## <a name="transaction-adjustments"></a>取引の調整
 
@@ -53,7 +49,7 @@ CW 製品を処理する倉庫管理を使用するには、ライセンス コ�
 > [!NOTE]
 > モバイル デバイスの活動では、品目の CW 品目の処理ポリシーの出庫重量の差異メソッドが **重量の差異を許可** である場合にのみ、トランザクション調整がトリガーされます。
 
-**例 1**
+### <a name="example-1"></a>例 1
 
 **完了レポート** の生産処理中に、CW 製品の 8 つのボックスを含むライセンス プレートのインバウンド重量は 80.1 kg として記録されます。 ライセンス プレートは完成品エリアで格納され、保管期間中に、いくつかの重量が失われます。
 
@@ -61,7 +57,7 @@ CW 製品を処理する倉庫管理を使用するには、ライセンス コ�
 
 この場合、システムでは自動的に不足している 0.3 kg に対して取引を転記して差異を調整します。
 
-**例 2**
+### <a name="example-2"></a>例 2
 
 その定義では、製品を **ボックス** CW 単位の 8 kg の最小重量および 12 kg の最大重量を許容するように設定されています。
 
@@ -107,7 +103,7 @@ CW タグの処理に関連する別の重要なパラメーターは、**CW タ
 **CW タグの追跡が使用されている場合**、タグは常に受信されたすべての CW 単位に対して作成される必要があり、すべてのタグは常に重量と関連付けられる必要があります。
 
 たとえば、**ボックス** は CW 単位で、8 つのボックスのうち 1 つのパレットを受信します。 この場合、8 つの固有 CW タグを作成し、重量は各タグを関連付ける必要があります。 入庫 CW タグによっては、8 つすべてのボックスが記録される、各ボックスに配る、または固有重量を各ボックスに記録するのどちらかが可能です。
-**製造オーダーを完了済として報告するときに既存の CW タグを使用する** 機能をモバイル デバイスのメニュー項目経由で有効になっているプロセスと共に使用するときは、在庫は既存の CW タグ情報に基づいて更新されます。 その結果、倉庫アプリは、完了した工程としての生産レポートの一部として CW タグ データのキャプチャを要求しません。
+**製造オーダーを完了済として報告するときに既存の CW タグを使用する** 機能をモバイル デバイスのメニュー項目経由で有効になっているプロセスと共に使用するときは、在庫は既存の CW タグ情報に基づいて更新されます。 その結果、倉庫管理モバイルアプリは、完了した工程としての生産レポートの一部として CW タグ データのキャプチャを要求しません。
 
 **CW タグの追跡が使用されていない場合**、各分析コードの設定 (たとえば、それぞれのライセンス プレートと追跡用分析コードごと) の重量をキャプチャできます。 または、5 つのライセンス プレート (パレット) などの統合されたレベルに基づく重量を記録することができます。
 
@@ -195,7 +191,11 @@ CW 品目の処理ポリシーでは、複数の重量キャプチャ メソッ�
 
 ### <a name="catch-weight-tags"></a>不定貫タグ
 
-CW タグは、倉庫アプリ プロセスを使って作成 (フォームで手動作成できる)、またはデータ エンティティのプロセスを使って作成できます。 CW タグが発注書明細行などの元伝票明細行に関連付けられている場合、タグが登録されます。 明細行を出荷処理に使用すると、タグは出荷済として更新されます。
+CW タグは、倉庫管理モバイルアプリ プロセスを使って作成 (**倉庫管理 > 問い合わせとレポート > CW タグ** フォームで手動作成できます)、またはデータ エンティティのプロセスを使って作成できます。 CW タグが発注書明細行などの元伝票明細行に関連付けられている場合、タグが登録されます。 明細行を出荷処理に使用すると、タグは出荷済として更新されます。 **CW タグ** ページから、[CW タグ登録] オプションを使用して、**CW タグ登録イベントの履歴** をすべて表示できます。
+
+[タグのキャプチャ した重量の変更] オプションを使用すると、**CW タグ** の重量の値を手動で更新できます。 この手動プロセスで在庫の重量は調整されませんが、現在有効な CW タグと現在の在庫の間の不一致を確認するために、**CW タグ付けされた品目** ページの [在庫不一致] を簡単に使用できます。
+
+その他の手動のオプションとして、ソース ドキュメント行への **タグの登録** と、既存の倉庫作業に対する **作業の登録** があります。
 
 現在 CW 製品に適用されている制限に加え、タグ付けされている CW 製品には、現在適用されている制約が他にもあります。
 
@@ -210,3 +210,6 @@ CW タグは、倉庫アプリ プロセスを使って作成 (フォームで�
 
 > [!NOTE]
 > CW タグに関する前述の情報は、CW 製品の CW タグ分析コード追跡メソッドが完全に追跡されている場合にのみ有効です (つまり、CW 品目の処理ポリシーで **CW タグ分析コードの追跡メソッド** のパラメーターが **製品分析コード、追跡用分析コード、およびすべての保管分析コード** に設定されている場合)。 CW 品目が部分的にタグ追跡されている場合 (つまり、CW 品目の処理ポリシーで **CW タグ分析コードの追跡メソッド** パラメーターが **製品分析コード、追跡用分析コード、および在庫状態** に設定されている場合)、追加の制限が適用されます。 この場合、タグと在庫の間の可視性が失われるため、追加のシナリオはサポートされません。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

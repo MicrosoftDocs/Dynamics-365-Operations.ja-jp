@@ -1,28 +1,28 @@
 ---
 title: 組織と組織階層の概要
-description: 組織とは、業務プロセスを実行や目標の達成を協力して行う人々の集まりです。 組織階層とは、業務を構成する組織の関係を表すものです。
+description: 組織階層とは、業務を構成する組織の関係を表すものです。
 author: sericks007
-manager: AnnBe
-ms.date: 07/25/2019
-ms.topic: article
+ms.date: 01/03/2022
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
-ms.custom: 17291
+ms.custom:
+- "17291"
+- intro-internal
 ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 368569f2cdd389b6fc99ddcf05f35cc9a750ec9e
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797048"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992082"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>組織と組織階層の概要
 
@@ -54,7 +54,7 @@ ms.locfileid: "4797048"
 | 事業単位       | 戦略的なビジネス目標達成のために作成された半自治の事業単位。 | 法人とは別に、組織が係わる業界または製品ラインに基づいた財務報告に使用します。 |
 | バリュー ストリーム        | 一つ以上の生産フローを制御する作業単位。 | 消費者に製品やサービスを提供するために必要な活動およびフローを管理するリーン生産に一般的に使用します。 |
 | 部門          | 販売や会計など、特定のタスクを実行する組織のカテゴリまたは機能パーツを表す作業単位。 | 機能分野の報告に使用します。 部門は損益の職責を担っており、複数のコスト センターで構成される場合があります。 |
-| Commerce チャネル      | 従来型の店舗、オンライン ストア、またはオンライン マーケットプレースを表す作業単位。 | 法人内または法人全体の 1 つ以上の店舗の管理と運用管理に使用されます。 |
+| 小売チャンネル      | 従来型の店舗、オンライン ストア、またはコール センターを表す作業単位。 | 法人内または法人全体の 1 つ以上の店舗の管理と運用管理に使用されます。 |
 
 ### <a name="teams"></a>チーム
 
@@ -64,6 +64,19 @@ ms.locfileid: "4797048"
 
 業務について、さまざまな観点から表示と報告を行う組織階層を設定します。 たとえば、税金、法律、または法令についての報告に使用するの法人の階層を設定できます。 法的に必須でなくても内部統制に使用する財務情報を報告する階層を、作業単位に基づいて設定します。 たとえば、購買ポリシー、ルール、および業務プロセスを管理する購買階層を作成できます。
 
+> [!NOTE]
+> 階層に作業単位を追加した後は、その作業単位を削除できません。 
+
 各階層は目的で割り当てられます。 階層の目的により、階層に含めることができる組織のタイプが決まります。 この目的により、どのアプリケーションのシナリオで階層を使用できるかが決まります。
 
 各階層の組織では、パラメータ、ポリシー、およびトランザクションを共有できます。 親組織のパラメータは、各組織で継承または上書きできます。 ただし、製品やアドレス帳などの共有マスタ データは組織全体に適用され、個々の組織では上書きすることはできません。 組織と階層の作成は慎重に計画する必要があります。 詳細については、[組織階層の計画](plan-organizational-hierarchy.md) を参照してください。
+
+## <a name="additional-resources"></a>追加リソース
+- [組織階層の計画](plan-organizational-hierarchy.md)
+- [組織階層の作成](tasks/create-organization-hierarchy.md)
+- [法人の作成](tasks/create-legal-entity.md)
+- [作業単位の作成](tasks/create-operating-unit.md)
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

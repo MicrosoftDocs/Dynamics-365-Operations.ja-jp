@@ -2,9 +2,11 @@
 title: 元帳発生トランザクションの作成
 description: このタスク ガイドでは、発生主義スキーマに基づく元帳計上トランザクションの生成について説明します。
 author: aprilolson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransAccrual, LedgerJournalTransAccrualTrans
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6500da88424ea71aa8f8836dfdb7d42ef444637b50efe4401a6f76a876e3e0cf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1722c72ebc5ea7c0f8704ba3761f971f5075744
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750391"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216452"
 ---
 # <a name="create-ledger-accrual-transactions"></a>元帳発生トランザクションの作成
 

@@ -2,11 +2,9 @@
 title: アドレス帳 FAQ
 description: このトピックでは、アドレス帳に関連してよく寄せられる質問に対する回答を示します。
 author: msftbrking
-manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796901"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463628"
 ---
 # <a name="address-books-faq"></a>アドレス帳に関するよく寄せられる質問
 
@@ -67,3 +65,13 @@ ms.locfileid: "4796901"
 ## <a name="can-i-translate-address-information-for-party-records"></a>関係者レコードの住所情報を翻訳できますか。
 
 プログラム内のユーザーの言語 (システム言語) で情報を表示して、販売注文などのドキュメントでは別の言語で表示するように住所情報の翻訳を設定できます。 国/地域名、住所の目的、名前の順序の翻訳を入力できます。 たとえば、システム言語がデンマーク語で、フランスの顧客に販売注文を作成するとします。 この場合、プログラムではデンマーク語で顧客レコードを表示しつつ、印刷した販売注文にはフランス語で住所情報を表示することができます。 翻訳を設定した場合、一覧に各品目の翻訳を入力する必要があります。 翻訳が入力されていない品目は、システム言語で表示されます。 たとえば、システムの言語が、デンマーク語で、スペインの顧客にドキュメントを送信するとします。 住所情報にスペイン語 (ESP) の翻訳を入力しなかった場合、その情報は、システムと印刷資料ともにデンマーク語で表示されます。
+
+## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>住所をインポートした後に、なぜレコードを編集できないのですか?
+
+住所をインポートするときに、**IsLocationOwner** という名前のフィールドがあります。 このフィールドは、場所 (住所) に関連付けられている関係者が住所の所有者かどうかを示します。 関係者が住所の所有者である場合、住所は、グローバル アドレス帳で関係者が使用されているとき、またはマスター レコードのページ (顧客、仕入先、作業者など) から使用するときに編集できます。 関係者が住所の所有者ではない場合は、レコードを編集することはできません。 
+
+住所をインポートする際、関連付けられた関係者を使用して住所を編集できるようにする場合は、**IsLocationOwner** フィールドを **はい** に設定する必要があります。 このフィールドが正しくインポートされなかった場合は、グローバル アドレス帳で場所の所有者を更新できます。
+
+インポートされた住所の場所の所有者を変更する方法の詳細については、[場所の所有者の管理](./global-address-book-location-owner.md)を参照してください。
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

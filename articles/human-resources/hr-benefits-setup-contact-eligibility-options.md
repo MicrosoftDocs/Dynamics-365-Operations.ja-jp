@@ -1,33 +1,35 @@
 ---
-title: 個人の連絡先適格性オプションのコンフィギュレーション
-description: Microsoft Dynamics 365 Human Resources にて、個人の連絡先の適格性オプションをコンフィギュレーションします。 個人の連絡先は、受益者または扶養家族とすることができます。
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: 個人の連絡先の適格性オプションのコンフィギュレーション
+description: このトピックでは、Microsoft Dynamics 365 Human Resources で、個人の連絡先の適格性オプションを構成する方法について説明します。
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 68364b0cc1c579a3ee9813474c9d3f6e4df1c05d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ad9dc9d12bcc419c3925b0f78566d9f3eb0a1e35
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419393"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070353"
 ---
-# <a name="configure-personal-contact-eligibility-options"></a>個人の連絡先適格性オプションのコンフィギュレーション
+# <a name="configure-personal-contact-eligibility-options"></a>個人の連絡先の適格性オプションのコンフィギュレーション
 
-この記事では、Microsoft Dynamics 365 Human Resources で給付金で使用する個人の連絡先のタイプをコンフィギュレーションする方法について説明します。 個人の連絡先は、受益者または扶養家族とすることができます。 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+このトピックでは、Microsoft Dynamics 365 Human Resources で給付金で使用できる個人の連絡先のタイプをコンフィギュレーションする方法について説明します。 個人の連絡先は、プランの対象となる個人 (扶養家族)、または計画から益を得る個人 (受益者) です。 通常、扶養家族は配偶者または子です。 受益者は、配偶者、子、信頼関係にある人、または親とすることができます。
 
 1. **給付金管理** ワーク スペースの **設定** で、**個人の連絡先適格性オプション** を選択します。
 
@@ -45,3 +47,6 @@ ms.locfileid: "4419393"
    | **年齢** | 給付金プランの受給資格を持つ個人連絡先の最大年齢。 このフィールドは、リレーションシップを選択した場合にのみ有効になります。 この年齢は、個人の連絡先の計算された年齢と比較されます。 計算された年齢: (補充日 – 個人連絡先の生年月日 / 365)。 この数値は、常に整数です。 |
 
 4. **保存** を選択します。 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

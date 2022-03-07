@@ -1,12 +1,10 @@
 ---
-title: リンクされた払戻 - 以前に承認および確認済みのトランザクションの払戻
+title: 以前に承認および確認済みのトランザクションのリンクされた払戻
 description: このトピックでは、リンクされた払戻を有効にして使用する方法を説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 7/29/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,20 +14,20 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-03-28
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 5c8fe296e7351d744ad5105d84f39e5a1e641c6a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e048d32f255c1726b6bcada31cfffae76c237470
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685397"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799193"
 ---
-# <a name="linked-refunds--refunds-of-previously-approved-and-confirmed-transactions"></a>リンクされた払戻 – 以前に承認および確認済みのトランザクションの払戻
+# <a name="linked-refunds-of-previously-approved-and-confirmed-transactions"></a>以前に承認および確認済みのトランザクションのリンクされた払戻
 
 [!include [banner](../../includes/banner.md)]
 
 返品は小売企業にとって重要な業務です。 販売に対する返品を受け入れて顧客への支払いを払い戻す機能により、小売企業は顧客のニーズに対応して問題を解決できます。
 
-このトピックでは、リンクされた払戻を構成および使用する方法に関する情報を提供します。 リンクされた払戻は、以前に承認および確認されたトランザクションの払戻です。 払戻は、トランザクションの全額払戻、または部分払戻のいずれかで、元の承認の全額を超えることはできません。 リンクされた払戻の機能は、Microsoft Dynamics 365 Retail バージョン 10.0.1 で利用できます。
+このトピックでは、リンクされた払戻を構成および使用する方法に関する情報を提供します。 リンクされた払戻は、以前に承認および確認されたトランザクションの払戻です。 払戻は、トランザクションの全額払戻、または部分払戻のいずれかで、元の承認の全額を超えることはできません。 リンクされた払戻の機能は Microsoft Dynamics 365 Retail バージョン 10.0.1 で利用できます。
 
 Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業はカードへの払い戻しを処理できますが、レジ担当者はこれらの払戻を手動で指定する必要があります。 レジ担当者は顧客がその支払い方法を提供した場合にのみ、元の支払い方法への払戻を処理できます。 したがって、新しいカードの詳細を提供することにより、顧客は返品プロセスを使用してあるカードから別のカードに残高を移動できるため、不正なカード残高の移動を行うことができます。
 
@@ -98,3 +96,6 @@ Microsoft Dynamics 365 Retail バージョン 10.0 以前では、小売企業�
 
 - [支払に関するよく寄せられる質問](payments-retail.md)
 - [Adyen 向け Dynamics 365 Payment Connector](adyen-connector.md?tabs=8-1-3)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

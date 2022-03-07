@@ -2,11 +2,9 @@
 title: Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機能
 description: この記事では、Microsoft Dynamics AX 7.0 の新機能および変更された機能について説明します。 このバージョンにはプラットフォームとアプリケーションの両方の機能が含まれており、2016 年 2 月にリリースされました。
 author: sericks007
-manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c1b63ba623eb1699938476825a77fd40d838142
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 6539bf6acf0216f1491cbf852f2c9a7063fbe26e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797222"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752869"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機能
 
@@ -1033,3 +1031,6 @@ Lifecycle Services (LCS) は、サインアップから日常業務までのシ�
 [Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
 
 [新しいタスク ガイド (2016 年 2 月)](new-task-guides-available-february-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

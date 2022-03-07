@@ -2,25 +2,27 @@
 title: プロジェクト請求
 description: このトピックでは、時間および素材プロジェクトおよび固定価格プロジェクトでの、プロジェクト請求の概要について説明します。 ここには、仮発行請求書 (仮請求書)、請求の管理、分割払請求、仕入先請求、および貸方票に関する情報が含まれます。
 author: TaylorVH
+manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
-ms.reviewer: zezhangzhao
+ms.reviewer: roschlom
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 82de9c8ff1b3eeb1811332316522e541b2a405ff
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 41c5e53969b5ee88e869196e8749dddd58047de2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883571"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227501"
 ---
 # <a name="project-invoicing"></a>プロジェクト請求
 
@@ -58,7 +60,7 @@ ms.locfileid: "7883571"
 
 仮発行請求書の手数料トランザクションを作成できます。 また、時間、経費、品目、手数料トランザクションの販売価格を変更できます。 仮発行請求書を転記すると、更新された価格とトランザクションはプロジェクト レポートおよびトランザクション履歴に追加されます。 
 
-プロジェクトの複数の顧客請求書を作成するには、各請求書の仮発行請求書を作成する必要があります。 たとえば、トランザクション タイプに基づいて請求書を作成できます。 1 つの顧客請求書で時間を指定し、別の請求書で品目を指定するには、時間トランザクションと手数料トランザクションに個別の仮発行請求書を作成する必要があります。 
+プロジェクトの複数の顧客請求書を作成するには、各請求書の仮発行請求書を作成する必要があります。 たとえば、トランザクション タイプに基づいて請求書を作成できます。 1 つの顧客請求書で時間を指定し、別の請求書で品目を指定するには、時間トランザクションと手数料トランザクションに別の仮発行請求書を作成する必要があります。 
 
 1 つ以上の資金調達ソースがあるプロジェクトの場合、資金調達ソースごとに別の仮発行請求書を作成できます。 **資金調達ルール配賦** ページで、丸め誤差を転記するソースと各資金調達ソースに配賦するトランザクション金額の割合を定義できます。
 

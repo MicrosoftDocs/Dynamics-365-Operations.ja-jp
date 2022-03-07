@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAAgreementGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51b51640a09f78ed613994e2ade755c8ad831ea9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 37c046d6007c79cbe7cb30ae80485552523c265e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432053"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219200"
 ---
 # <a name="service-agreements-overview"></a>サービス契約の概要
 
@@ -42,3 +41,6 @@ ms.locfileid: "4432053"
 ## <a name="related-topics"></a>関連トピック
 
 [サービス契約グループの作成](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

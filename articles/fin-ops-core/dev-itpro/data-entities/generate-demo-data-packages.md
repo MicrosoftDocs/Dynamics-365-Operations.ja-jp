@@ -2,11 +2,9 @@
 title: データ パッケージを使用してデモ データを生成します
 description: このトピックでは、デモ データ パッケージを使用して、システムのデータを生成する方法について説明します。
 author: panolte
-manager: AnnBe
-ms.date: 06/06/2018
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 4f61f4c25adc0a9d796422e48b2198afcbd5ec66
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 30bda3991958d2cab06c6437c9b07dabf9904bac8b45b8b7e0b20d6a129154b9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728151"
 ---
 # <a name="generate-demo-data-by-using-data-packages"></a>データ パッケージを使用してデモ データを生成します
 
@@ -42,7 +40,7 @@ ms.locfileid: "5018665"
 
 デモ データ パッケージは、次の図に示すように、お互いの最上部に重ねて表示されるように設計されています。
 
-![デモ データ パッケージ](./media/demodatapackages_layers.png)
+![デモ データ パッケージ。](./media/demodatapackages_layers.png)
 
 ただし、1 つのデモ シナリオのグローバル情報には、別のデモ シナリオのグローバル情報とは全く異なる要求がある場合があります。 たとえば、1 つのシナリオの分析コードは、別のシナリオの分析コードを妨げます。 この場合、個別のグローバル情報パッケージが作成され、グローバル情報に関連するパッケージのみをパッケージの最上部に重ねることができます。
 
@@ -173,10 +171,6 @@ ms.locfileid: "5018665"
 4. プロジェクト管理および会計パッケージをロードした後、**リソース能力のロールアップ** バッチ ジョブを実行する必要があります。 このジョブは **リソース能力のロールアップを同期** ページ (**プロジェクト管理と会計** &gt; **定期処理** &gt; **能力の同期** &gt; **リソース能力のロールアップを同期**) から実行することができます。 将来の長い期間リソースをスケジュールすることができる終了日を指定します。 バッチ ジョブを実行した後、チーム機能の自動生成は、プロジェクトの作業分解構造 (WBS) で有効になります。
 5. 各モジュールの印刷管理設定を追加します。
 
-### <a name="scenario-scripts"></a>シナリオ スクリプト
-
-デモ データがサポートするシナリオの多くにスクリプトが用意されています。 これらのスクリプトは、[デモ データ スクリプト](https://go.microsoft.com/fwlink/?linkid=861599) で検索できます。
-
 ## <a name="transactions-and-automatic-posting"></a>トランザクションと自動転記
 
 デモ データの多くのシナリオでは、インポート後にトランザクションを処理する必要があります。 投稿準備機能を使用することにより、トランザクションを処理することができます。 この機能には、転記すべき取引を定義するページと、定義をインポートして自動的に実行できるエンティティの両方が含まれます。
@@ -246,3 +240,6 @@ ms.locfileid: "5018665"
 すべてのトランザクション エンティティの後でデータ プロジェクトの最後に **投稿準備完了** エンティティを挿入します。 データ プロジェクトで、トランザクション エンティティに使用される順序番号より大きい順序番号を指定します。
 
 複数のトランザクションが混在している場合、一部のトランザクションを処理する必要がある一方で、その他のトランザクションは処理できないため、日付とドキュメントの範囲を使用し処理されるトランザクションを制限します。 範囲を使用できない場合は、未転記のトランザクションの個別のデータ パッケージを使用する必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

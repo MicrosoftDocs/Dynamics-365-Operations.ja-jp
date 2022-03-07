@@ -2,36 +2,30 @@
 title: 小売チャネルの設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいチャネルを作成する方法について説明します。
 author: samjarawan
-manager: annbe
-ms.date: 01/27/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a9291dddf7d4dc080b6eb1ec60702de32a761f45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fe6262fa8a7fb27fda7642180f605376af726e54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413715"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346061"
 ---
 # <a name="set-up-a-retail-channel"></a>小売チャネルの設定
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce に新しいチャネルを作成する方法について説明します。
-
-## <a name="overview"></a>概要
 
 Dynamics 365 Commerce は複数の小売チャンネルをサポートします。 これらの小売チャンネルには、オンライン ストア、コール センター、および小売用店舗 (従来型の店舗とも呼ばれる) が含まれます。 各小売店舗チャネルは、独自の支払方法、価格グループ、POS レジスタ、収入/経費勘定、およびスタッフを持つことができます。 小売店舗チャネルを作成する前に、これらのすべての要素を設定する必要があります。 
 
@@ -56,11 +50,11 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、新しい小売チャネルの作成を示しています。
 
-![新しい小売チャネル](media/channel-setup-retail-1.png)
+![新しい小売チャネル。](media/channel-setup-retail-1.png)
 
 次の図は、小売チャネルの例を示しています。
 
-![小売チャネルの例](media/channel-setup-retail-2.png)
+![小売チャネルの例。](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>その他の設定
 
@@ -70,17 +64,17 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、小売チャネルの設定構成の例を示しています。
 
-![小売チャネル構成の例](media/channel-setup-retail-3.png)
+![小売チャネル構成の例。](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>追加チャネルの設定
 
-**設定** セクションの下にある **アクション ウィンドウ** で、チャネルに対して設定する必要がある追加の品目があります。
+**設定** セクションの下にあるアクション ウィンドウで、チャネルに対して設定する必要がある追加の品目があります。
 
 オンライン チャネルの設定に必要な追加タスクには、支払方法、現金申告、荷渡方法、収入/経費勘定、セクション、フルフィルメント グループの割り当て、および安全があります。
 
 次の図は、**設定** タブのさまざまな追加の小売チャネル設定オプションを示します。
 
-![チャネルの設定](media/channel-setup-retail-4.png)
+![チャネルを設定します。](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>支払方法の設定
 
@@ -95,7 +89,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、現金支払い方法の例を示しています。
 
-![支払方法の例](media/channel-setup-retail-5.png)
+![支払方法の例。](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>現金申告の設定
 
@@ -104,11 +98,11 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、現金申告の例を示しています。
 
-![現金申告の設定](media/channel-setup-retail-6.png)
+![現金申告を設定します。](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>荷渡方法の設定
 
-構成されたデリバリー モードは、**アクション ウィンドウ** の **設定** タブで **デリバリー モード** を選択することによって確認できます。  
+構成されたデリバリー モードは、アクション ウィンドウの **設定** タブで **デリバリー モード** を選択することによって確認できます。  
 
 デリバリー モードを変更または追加するには、次の手順に従います。
 
@@ -118,7 +112,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、デリバリー モードの例を示しています。
 
-![荷渡方法の設定](media/channel-setup-retail-7.png)
+![荷渡方法を設定します。](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>収入/経費勘定の設定
 
@@ -135,7 +129,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 以下の図は、収入/経費勘定の例を示します。
 
-![収入/経費勘定の設定](media/channel-setup-retail-8.png)
+![収入/経費勘定を設定します。](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>セクションの設定
 
@@ -161,7 +155,7 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 
 次の図は、フルフィルメント グループの割り当ての設定の例を示しています。
 
-![フルフィルメント グループの割り当ての設定](media/channel-setup-retail-9.png)
+![フルフィルメント グループの割り当てを設定します。](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>安全の設定
 
@@ -172,13 +166,47 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 1. 安全の名前を入力します。
 1. アクション ウィンドウで、**保存** を選択します。
 
+### <a name="ensure-unique-transaction-ids"></a>固有のトランザクション ID の確認
+
+Commerce バージョン 10.0.18 の時点で、販売時点管理 (POS) 対して生成されたトランザクション ID は連続しており、次の部分を含みます。
+
+- 店舗 ID とターミナル ID を連結した固定部分。 
+- 番号順序である連番部分。 
+
+具体的に、形式は *{store}-{terminal}-{numbersequence}* です。 
+
+トランザクション ID はオフライン モードとオンライン モードで生成することができるので、重複したトランザクション ID が生成されたインスタンスがあります。 重複するトランザクション ID を消去するには、手動で多くのデータ修正を行う必要があります。 
+
+Commerce バージョン 10.0.19 では、トランザクション ID の形式の連続部分が削除され、1970 年からの時間をミリ秒で計算することによって生成された 13 桁の番号を使用するように更新されました。 この変更により、新しいトランザクション ID の形式は *{store}-{terminal}-{millisecondsSince1970}* です。 この更新により、トランザクション ID に連続性がなくなり、トランザクション ID は常に一意になりました。 
+
+> [!NOTE]
+> トランザクション ID は内部システムでのみ使用することを意味しているので、連続している必要はありません。 ただし、多くの国ではレシート ID は連続している必要があります。
+
+新しいトランザクション ID 形式の機能は、**機能管理** ワークスペースから有効にできます。 
+
+新しいトランザクション ID の使用を有効にするには、次の手順を実行します。
+
+1. Commerce 本社で、**システム管理者 \> ワークスペース \> フィーチャー管理** の順に移動します。
+1. "Retail と Commerce" モジュールのフィルター。
+1. **トランザクション ID の重複を回避するため、新しいトランザクション ID を有効にする** という機能名を検索します。
+1. 機能を選択し、右側のウィンドウで **今すぐ有効にする** を選択します。  
+1. **Retail とコマース \> Retail とコマース IT \> 配送スケジュール** の順に移動します。
+1. **1070 チャンネル コンフィギュレーション** と **1170 POS タスク レコーダー** ジョブを実行して、有効にした機能を店舗に同期させます。
+1. 変更を店舗に送信した後、新しいトランザクション ID 形式を使用するために、POS ターミナルを閉じて、再度開く必要があります。 
+
+> [!NOTE]
+> 新しいトランザクション ID 形式の機能を有効にした後、この機能を無効することはできません。 無効にする必要がある場合は、Commerce サポートに問い合わせください。
+
 ## <a name="additional-resources"></a>追加リソース
 
 [チャネルの概要](channels-overview.md)
 
-[チャネル設定の前提条件](channels-prerequisites.md)
+[チャネルの設定の前提条件](channels-prerequisites.md)
 
 [オンライン チャネルの設定](channel-setup-online.md)
 
 [コール センターのチャネルの設定](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: ウォレット支払のサポート
 description: このトピックでは、Microsoft Dynamics 365 Commerce のウォレット支払のサポートの概要を説明します。
 author: rubendel
-manager: annbe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -18,14 +15,14 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ab4f295ed4ca9d446dac0630748b1cab9d21e111
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: fb47a536615e1d166c45c77233671adfbd07fd61
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644819"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791571"
 ---
-# <a name="wallet-payment-support"></a>ウォレット支払サポート
+# <a name="wallet-payment-support"></a>Wallet 支払サポート
 
 [!include [banner](../includes/banner.md)]
 
@@ -86,3 +83,6 @@ ms.locfileid: "4644819"
 
 - [支払に関するよく寄せられる質問](dev-itpro/payments-retail.md)
 - [PayPal 向け Dynamics 365 Payment Connector](paypal.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

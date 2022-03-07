@@ -2,9 +2,11 @@
 title: 運用サポートと監視
 description: このトピックでは、プロジェクトのライフサイクルに関連するサポートのタイプと、環境を監視するためのベスト プラクティスについて説明します。
 author: PedroTubal
-ms.date: 10/12/2021
+manager: AnnBe
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: v-petbal
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2ee99afcca1f8cb437d30bbcfb7c498fe8bd9128
-ms.sourcegitcommit: 60ade60f72fd0fa0683f7a3eaf93439d10cf3373
+ms.openlocfilehash: 0ab22816a01bbfe9437877d3bbfc0158952c417a
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7655373"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881894"
 ---
 # <a name="production-support-and-monitoring"></a>運用サポートと監視
 
@@ -27,7 +29,7 @@ ms.locfileid: "7655373"
 
 Microsoft のツールおよびサポートは、インフラストラクチャとアプリケーションのサポートを提供することにより、環境の安定性および有効性に役立ちます。 ただし、このサポートは、実装されているシステムとその環境をパートナーおよびクライアントが正しく開発、テスト、構成、管理、および監視している場合にのみ有効です。
 
-![Microsoft が提供するサポート。](./media/support-provided-microsoft.png)
+![Microsoft が提供するサポート](./media/support-provided-microsoft.png)
 
 ## <a name="supporting-actions"></a>サポート アクション
 
@@ -99,7 +101,7 @@ Microsoft のツールおよびサポートは、インフラストラクチャ�
 
 選択できる複数の[サポート計画](https://go.microsoft.com/fwlink/?LinkId=871952) があります。 したがって、すべてのビジネスでは、そのニーズを満たす計画を見つける必要があります。
 
-サポートを要求する前に、重要度の適切なレベルを選択することが重要です。 適切な重要度レベルを識別し、要求の最初の応答時間を見積もる方法の詳細については、[サポート概要](/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request) および[業務停止のレポート](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) を参照してください。
+サポートを要求する前に、重要度の適切なレベルを選択することが重要です。 適切な重要度レベルを識別し、要求の最初の応答時間を見積もる方法の詳細については、[サポート概要](https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request) および[業務停止のレポート](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) を参照してください。
 
 ## <a name="monitoring-elements"></a>監視の要素
 
@@ -121,7 +123,7 @@ Microsoft 365 サービスの問題が発生しているのに、**サービス�
 
 ### <a name="environment-monitoring"></a>環境の監視
 
-環境の監視とは、[LCS を経由した環境の正常性のトラブルシューティング](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics) と監視に役立つ一連のツールです。
+環境の監視とは、[LCS を経由した環境の正常性のトラブルシューティング](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics) と監視に役立つ一連のツールです。
 
 プロジェクトの特定の環境ページの **監視** セクションには、**環境監視ダッシュボード** に移動できる **環境の監視** リンクが含まれています 。
 
@@ -144,14 +146,17 @@ Microsoft 365 サービスの問題が発生しているのに、**サービス�
 
 さらに、独自のカスタム フィルターを追加し、分析のためにログをコンマ区切り値 (CSV) ファイルにエクスポートすることもできます。
 
-![活動タブ。](./media/activity.png)
+![活動タブ](./media/activity.png)
 
 #### <a name="health-metrics"></a>正常性指標
 
 **正常性指標** ダッシュボードでは、インスタンス (AOS または バッチ AOS) および時間枠でフィルターされた一連のライン チャートが提供されます。 **AOS** タブでは、SQL の実行を監視できます。 **システム** タブでは、システム メモリと CPU 使用率を時間の経過とともに監視できます。 このツールを使用すると、動作の変更を簡単に識別できます。 したがって、時間の経過に伴う問題やソリューション内の変更の影響を追跡することができます。
 
+#### <a name="sql-insights"></a>SQL インサイト
 
-LCS 環境の監視に関連する追加コンテンツについては、[Lifecycle Services (LCS) のツールを使用したパフォーマンスのトラブルシューティング](../../dev-itpro/lifecycle-services/performancetroubleshooting.md)を参照してください。 
+SQL インサイトは、パフォーマンス分析を有効にする高度な SQL トラブルシューティング ツールを提供します。 これらのツールの一部は、Microsoft Dynamics AX 2012 での SQL トラブルシューティングに使用されていた DynPerf ツールと類似しています。 詳細については、 [Lifecycle Services (LCS) 内のツールを使用したパフォーマンスのトラブルシューティング](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) および[パフォーマンスのトラブルシューティング ツール TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) を参照してください。
+
+SQL インサイトは、要求されるパフォーマンス測定方法を収集する信頼性の高い方法です。 これにより、顧客やパートナーは、サンドボックスまたは生産環境での問題を軽減するために使用できる事前定義された一連のアクションを実行できます。 これは直接 SQL Server をクエリするため、ほぼリアルタイムでクエリ ストア指標が取得されます。
 
 環境を監視することは重要ですが、常に監視している必要はありません。 また Microsoft は、LCS 通知リストによって提供される電子メールを使用して、重要な問題や実行する必要のあるアクションについて警告し、実装自体に対する予防的ガイダンスを提供します。
 

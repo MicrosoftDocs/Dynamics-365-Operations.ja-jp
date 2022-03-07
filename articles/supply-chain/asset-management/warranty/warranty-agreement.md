@@ -1,12 +1,10 @@
 ---
 title: 保証契約
 description: このトピックでは、資産管理の保証契約について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7080af2059c9c9bcdd11ca0ee9c5e339cef69302
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1f5c8ca5acab8f62637be8f6a04d982a3181ffc2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021507"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354231"
 ---
 # <a name="warranty-agreements"></a>保証契約
 
@@ -53,4 +51,7 @@ ms.locfileid: "5021507"
     3. **間隔** フィールドに数値を入力します。 このフィールドでは、保証が有効な期間数を定義します。
     4. **割合** フィールドに、保証明細行の補償割合を入力します。 この割合は、会社の補償範囲を示します。
 
-![保証ページ](media/01-warranty.png)
+![保証ページ。](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

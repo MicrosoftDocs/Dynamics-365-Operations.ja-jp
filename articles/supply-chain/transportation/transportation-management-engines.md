@@ -1,29 +1,26 @@
 ---
 title: 輸送管理エンジン
 description: 輸送管理エンジンは、輸送管理で配送率を生成およびプロセスするために使用するロジックを定義します。
-author: MarkusFogelberg
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: bce886b8029b3a00c6572642d339efa9dcad4267
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432332"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580123"
 ---
 # <a name="transportation-management-engines"></a>輸送管理エンジン
 
@@ -46,8 +43,7 @@ ms.locfileid: "4432332"
 | **運賃請求書タイプ**            | 運賃請求書と配送料の明細行を標準化し、配送料の自動照合に使用されます。                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>出荷を評価するため、どのエンジンをコンフィギュレーションする必要がありますか。
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>出荷を評価するため、どのエンジンをコンフィギュレーションする必要がありますか。
 
 特定の配送業者を使用して出荷を評価するには、複数の輸送管理エンジンをコンフィギュレーションする必要があります。 **レート エンジン** は必要ですが、**レート エンジン** をサポートするために他の輸送管理エンジンも必要な場合があります。 たとえば、**レート エンジン** を使用すると、**マイレージ エンジン** からデータを取得して、起点と終点の間の距離に基づいてレートを計算できます。
 
@@ -65,8 +61,7 @@ ms.locfileid: "4432332"
 |  <em>MileageEngineCode</em>  |                       データベースのマイレージ エンジン レコードを識別する、マイレージ エンジン コード。                        |
 | <em>ApportionmentEngine</em> |                        データベースの予定エンジンを識別する、汎用エンジン コード。                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>輸送管理エンジンのでどのようにメタデータを使用しますか。
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>輸送管理エンジンのでどのようにメタデータを使用しますか。
 
 Supply Chain Management で定義されたデータに依存する輸送管理エンジンは、異なるデータ スキーマを使用します。 輸送管理エンジン システムを使用すると、異なる輸送管理エンジンが同じ汎用物理データベース テーブルを使用できます。 エンジン データの実行時の解釈が正しくなるように、データベース テーブルのメタデータを定義できます。 Operations では追加テーブルおよびフォーム構造が必要ないため、これにより、新しい輸送管理エンジンの構築コストを軽減できます。
 
@@ -89,7 +84,7 @@ Supply Chain Management で定義されたデータに依存する輸送管理�
 | **ゾーン エンジン**                                | メタデータはゾーン マスターで直接設定する必要があります。                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **輸送時間エンジン** および **マイレージ エンジン** | マイレージ エンジンのコンフィギュレーション設定フォームから直接メタデータを取得します。                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **レート エンジンのメタデータの例** 輸送管理エンジンには、出荷元住所の ID、目的地の都道府県および国/地域、出荷の開始と終了地点が必要です。 これらの要件を使用して、メタデータは、次の表のデータのようになります。 また、テーブルには、どのような入力データが必要かに関する情報も含まれます。
+  **レート エンジンのメタデータの例** 輸送管理エンジンには、出荷元住所の ID、目的地の都道府県および国/地域、出荷の開始と終了地点が必要です。 これらの要件を使用して、メタデータは、次の表のデータのようになります。 また、テーブルには、どのような入力データが必要かに関する情報も含まれます。
 -   この情報は、**レート基準タイプ** ページの **配送管理** &gt; **設定** で定義します。
 
 | 順番 | 氏名                          | フィールド タイプ | データ型 | 参照タイプ    | 必須 |
@@ -99,3 +94,12 @@ Supply Chain Management で定義されたデータに依存する輸送管理�
 | 3        | 発送先開始郵便番号 | 割り当て | 文字列    | 郵便番号    | 選択済  |
 | 4        | 発送先終了郵便番号   | 割り当て | 文字列    | 郵便番号    | 選択済  |
 | 5        | 発送先国           | 割り当て | 文字列    | 国/地域 |           |
+
+### <a name="whitepaper"></a>ホワイト ペーパー
+
+詳細については、次のホワイト ペーパー (AX2012 をサポートするように記述されているが、Dynamics 365 Supply Chain Management にも適用される) をダウンロードしてください
+
+- [輸送管理エンジン](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,37 +1,34 @@
 ---
 title: 倉庫作業者の管理
-description: この記事では、倉庫の従業員によって実行される作業の管理と監視に、倉庫アプリを使用する方法について説明します。
+description: この記事では、倉庫管理モバイル アプリを使用して、倉庫で働く従業員の作業を管理・監視する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2156b5de6abc3751cae1822b3825acbbd0b9a712
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 9d1794d0f34ad9d22f012fc893f3e407eb57614e
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432280"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102953"
 ---
 # <a name="manage-warehouse-workers"></a>倉庫作業者の管理
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、倉庫の従業員によって実行される作業の管理と監視に、倉庫アプリを使用する方法について説明します。
+この記事では、倉庫管理モバイル アプリを使用して、倉庫で働く従業員の作業を管理・監視する方法について説明します。
 
-倉庫管理で機能を使用すると、すべての倉庫作業員の工程は *作業* 呼ばれます。 ピッキング、移動、および手持在庫の棚卸などの作業は、モバイル デバイスを使用して記録されます。 倉庫作業者が作業を実行する前に、作業者は人事管理の作業者と関連付けられる必要があります。 各 **作業者** のアカウントは、関連付けられる複数の倉庫のユーザーが使用できます。 これらの作業ユーザーは異なる倉庫で、異なるレベルのさまざまなモバイル デバイス メニューへのアクセスを使用できます。 倉庫の作業ユーザーを、選択した作業者に対しての複数のログオンとして考えることができます。 各作業ユーザーには既定の倉庫があり、作業ユーザーに利用可能なメニュー項目によって特定のワークフローが公開されます。 
+倉庫管理で機能を使用すると、すべての倉庫作業員の工程は *作業* 呼ばれます。 ピッキング、移動、および手持在庫の棚卸などの作業は、モバイル デバイスを使用して記録されます。 倉庫作業者が作業を実行する前に、人事管理で作業者に関連付ける必要があります。 各 **作業者** のアカウントは、関連付けられる複数の倉庫のユーザーが使用できます。 これらの作業ユーザーは異なる倉庫で、異なるレベルのさまざまなモバイル デバイス メニューへのアクセスを使用できます。 倉庫の作業ユーザーを、選択した作業者に対しての複数のログオンとして考えることができます。 各作業ユーザーには既定の倉庫があり、作業ユーザーに利用可能なメニュー項目によって特定のワークフローが公開されます。 
 
 新たな作業ユーザーを作成する場合は、**倉庫** セクションの、**一般** タブの、**作業者** ページで、**作業者** をクリックします。 ユーザー ID、ユーザー名、既定の倉庫、およびメニュー名を指定する必要があります。 倉庫モバイル デバイス ポータルにユーザーがサインインするとき、このメニューが読み込まれ、どのメニュー項目へユーザーがアクセスできるかを定義できます。 
 
@@ -57,3 +54,6 @@ ms.locfileid: "4432280"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

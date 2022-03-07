@@ -2,11 +2,9 @@
 title: 輸送管理での運賃の調整
 description: このトピックでは、運賃調整プロセスについて説明します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSFBDetailReconcile, TMSInvoiceTable,TMSInvoiceLineReconcile,TMSReconcileInvoice, TMSFreightBillDetail, TMSFreightBillTypeAssignment, TMSRejectInvoiceLine, TMSMiscellaneousCharge
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac07155e4dde77689b1994abfb8b30f45d5a5a30
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.openlocfilehash: d523af235d645bd282af07d6a1f617bca5fba2dc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014511"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809089"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>輸送管理での運賃の調整
 
@@ -105,3 +103,6 @@ ms.locfileid: "5014511"
 1. INv1 と Inv 2 を FB と一つずつ一致させます。 FB は完全に一致します。
 
 この例に示すように、運賃請求書と負の金額の照合は手動でのみ行う必要があります。 これにより、照合順序を制御できるので、運賃請求書を負の金額と完全に照合できない運賃請求書と照合することができます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

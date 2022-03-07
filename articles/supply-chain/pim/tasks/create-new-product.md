@@ -1,27 +1,24 @@
 ---
 title: 新しい製品の作成
 description: このトピックでは、新しい共有製品の作成方法を説明します。
-author: ShylaThompson
-manager: tfehr
+author: t-benebo
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a4745fe4fc44f85bcfd388ee573f5a6d0cd8519
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f509758ed062b756d99c93b2721c99dcdbae5155
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431964"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575587"
 ---
 # <a name="create-a-new-product"></a>新しい製品の作成
 
@@ -43,3 +40,6 @@ ms.locfileid: "4431964"
 3. **追跡用分析コード グループ** フィールドで、値を入力または選択します。 追跡用分析コード グループにより、製品の各トランザクションに入力する必要がある追跡用分析コードと、在庫で処理される方法が決まります。  
 4. **OK** を選択します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

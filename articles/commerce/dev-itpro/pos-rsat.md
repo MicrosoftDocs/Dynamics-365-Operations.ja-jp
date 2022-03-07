@@ -2,11 +2,9 @@
 title: Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 description: このトピックでは、POS テスト レコーダーと Regression Suite Automation Tool (RSAT) を使用して、ユーザー受け入れテスト (UAT) を自動化する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0665491bf1e5d86e7bc841c9799c6b0d90ac171a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5657c6e6bf99aef28c05448c811f24bb7cf1b802
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681512"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019527"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -229,7 +227,7 @@ Azure DevOps に直接アップロードするには:
 RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイルを [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357) からダウンロードします。 MSI ファイルをダブルクリックして、実行します。 RSAT をインストールした後、Selenium と Web ブラウザーのドライバーをインストールする必要があります。 
 
 > [!NOTE]
-> テストを実行する前に Azure DevOps を設定する必要があります。また、必要な全般設定およびその他の RSAT で必要な設定を完了しておく必要があります。 詳細な手順については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。
+> テストを実行する前に Azure DevOps を設定する必要があります。また、必要な全般設定およびその他の RSAT で必要な設定を完了しておく必要があります。 詳細な手順については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。
 
 次の手順では、POS のテスト ケースを実行するために必要なコンフィギュレーションについて説明します。
 
@@ -277,7 +275,7 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
 このセクションでは、Azure DevOps からのテスト ケースの読み込み、自動化ファイルの生成、テスト パラメーターの変更、テストの実行、結果の調査、Azure DevOps への作業の保存方法について説明します。
 
 > [!NOTE]
-> Azure DevOps およびテスト ケースの設定の詳細については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。 テストの実行を開始する前に、この設定を完了する必要があります。 テストの実行/再生の前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
+> Azure DevOps およびテスト ケースの設定の詳細については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。 テストの実行を開始する前に、この設定を完了する必要があります。 テストの実行/再生の前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
 
 ### <a name="load-test-cases-and-create-parameter-files"></a>テスト ケースの読み込みとパラメーター ファイルの作成
 
@@ -395,3 +393,6 @@ RSAT で、**実行** を選択して、選択したテスト ケースを実行
 ### <a name="multifactor-authentication"></a>マルチファクター認証
 
 デバイス アクティベーション ユーザーに対してマルチファクター認証が有効になっている場合、再生が失敗する可能性があります。 可能な場合は、アクティベーション ユーザーのマルチファクター認証を一時的に無効にします。 有効化が完了したら、マルチファクター認証を再度有効にします。 有効化は、初回の再生時にのみ要求されます。 この変更を行う前に、この方法についてセキュリティの専門家に相談することをお勧めします。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

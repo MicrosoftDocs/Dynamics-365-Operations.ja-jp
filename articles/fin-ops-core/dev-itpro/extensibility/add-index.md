@@ -2,26 +2,24 @@
 title: 拡張機能を使用してテーブルにインデックスを追加
 description: このトピックでは、テーブルにインデックスを追加する方法について説明します。
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 5f08262953367b63ce3a7bbf73a244879a68a777
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db20ddfb01278d83f77649411e894d2039e0b6a0
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409274"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782459"
 ---
 # <a name="add-indexes-to-tables-through-extension"></a>拡張機能を使用してテーブルにインデックスを追加
 
@@ -31,7 +29,10 @@ ms.locfileid: "4409274"
 
 次の図では、InventTable の拡張機能を使用して、InventTable テーブルに新しいフィールドのインデックスを定義します。
 
-![新しいインデックス](media/AddIndex.jpg) 
+![新しいインデックス。](media/AddIndex.jpg) 
 
 > [!WARNING]
 > 固有のインデックスを作成するのに、この手法は用いないでください。 この変更は、他の独立系ソフトウェア ベンダー (ISV) のソリューションが同じ環境に展開されている場合、そのソリューションを破壊する可能性のある侵入的な変更です。 この機能は、将来のプラットフォーム リリースでは削除されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

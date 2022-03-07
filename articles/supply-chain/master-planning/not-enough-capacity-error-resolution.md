@@ -1,5 +1,5 @@
 ---
-title: "'十分な容量が見つかりませんでした' のスケジュール エラーと容量の限界を修正する"
+title: スケジュール エンジン エラー '十分な容量が見つかりませんでした' を修正する
 description: このトピックでは、'製造オーダー %1 をスケジュール設定できない理由と解決策に関する情報を提供します。 十分な容量が見つかりませんでした' スケジューリング エンジン エラー。
 author: ChristianRytt
 ms.date: 7/29/2021
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: becd537d37a8ba8931f2598dccbae8554a4d168e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 16626a7ee74e89bd129d8435a17d16b41a5e0387
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985033"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565762"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>スケジュール エンジン エラー "十分な容量が見つかりませんでした" を修正する
 
@@ -105,11 +105,5 @@ ms.locfileid: "7985033"
 
 1. **組織管理 \> リソース \> リソース グループ** に移動し、スケジュール設定できないオーダーに適用できるリソース グループを選択します。
 1. アクション ペインの **リソース グループ** タブの **表示** グループで、**最大キャパシティ負荷** または **最大キャパシティ負荷、グラフィック表示** を選択し、使用可能な容量を確認します。
-
-## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>リソース カレンダーのクローズ時にマスター プランからリソースを帳簿に作成する場合
-
-運用のスケジューリングを使用する場合、マスター プランでは、基本リソース グループのカレンダーに従って能力が計画されます。 二次的な運用を基本運用と同時に予約し、二次運用のカレンダーや能力は考慮されません。 その結果、製造オーダーが終了したカレンダーにスケジュール設定されている場合や、副次的な運用の変更ができない (カレンダーが閉じたり、能力がない) 場合にスケジュールされる可能性があります。
-
-ジョブのスケジューリングを使用する場合、マスター プランでは、注文のスケジュール時に基本および副次の両方の運用の能力とカレンダーが考慮されます。 注文をスケジュールするには、両方の運用のリソースのカレンダーを開いて、使用可能な能力を持つ必要があります。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

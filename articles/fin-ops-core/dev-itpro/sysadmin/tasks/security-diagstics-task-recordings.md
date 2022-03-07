@@ -2,11 +2,9 @@
 title: タスク記録のセキュリティ診断
 description: このトピックでは、タスクの記録に基づいてセキュリティ許可要件を分析して管理する方法について説明します。
 author: Peakerbl
-manager: AnnBe
 ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: 88eb90b35f1a9754cc4daa01d8f40cdf712db4f8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cb4d544d8d74ad10432901381253f84ec9331ae7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679793"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745768"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>タスク記録のセキュリティ診断
 
@@ -49,3 +47,6 @@ ms.locfileid: "4679793"
     - **ロール** を選択した場合は 、**ユーザーへの役割の追加** を選択します。 **ロールにユーザーを割り当てる** ページが表示され ます。 詳細については、[ユーザーにセキュリティ ロールへを割り当てる](assign-users-security-roles.md)ページを参照してください。
     - **職務** を選択した場合は、**ロールに職務を追加する** を選択し、職務を追加するロールを選択して、**OK** を選択します。
     - **権限** を選択した場合は、**職務に権限を追加する** を選択し、権限を追加する職務を選択して、**OK** を選択します。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

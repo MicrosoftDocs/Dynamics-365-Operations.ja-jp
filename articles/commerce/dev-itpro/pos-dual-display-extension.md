@@ -2,25 +2,23 @@
 title: 販売時点管理 (POS) デュアル ディスプレイ ビューの拡張
 description: このトピックでは、ユーザー情報が表示されるように、POS デュアル ディスプレイ ビューを拡張する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: mumani
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f07857c5d9e34e6fab8499b0a5e7c514e96df6f8
-ms.sourcegitcommit: 93884aacaed7ac2b599d5c5ed87fdd119db43edd
+ms.openlocfilehash: 926fd0dbea5cfe5d17db7b96225be6473f6171e7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4712680"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783338"
 ---
 # <a name="extend-the-point-of-sale-pos-dual-display-view"></a>販売時点管理 (POS) デュアル ディスプレイ ビューの拡張
 
@@ -611,3 +609,6 @@ POS デュアル ディスプレイ ビューにカスタム コントロール�
 3. 品目をトランザクションに追加します。 たとえば、品目番号 **0005** を追加します。
 4. 顧客をトランザクションへ追加します。 たとえば、**Karen Berg** を追加します。
 5. デュアル ディスプレイには、買い物カゴ、合計、従業員、および顧客の詳細が表示される必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

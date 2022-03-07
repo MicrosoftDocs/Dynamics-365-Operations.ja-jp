@@ -1,28 +1,28 @@
 ---
 title: 資産属性の概要
 description: このトピックでは、資産管理の資産属性の概要を説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectAttributeOverview
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2214
+ms.custom:
+- "2214"
+- intro-internal
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a092fac4f1b8648c2c93791f1c5efb90708c44e2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f86f6be390bcc8bed85fae24df499569e9e9961b37e76e8b1f85ed3bc5106d44
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773588"
 ---
 # <a name="asset-attribute-overview"></a>資産属性の概要
 
@@ -39,3 +39,6 @@ ms.locfileid: "5020182"
 3. **OK** を選択します。 リストには、選択した資産タイプを使用するすべての資産が表示されます。 各資産について、関連するすべての資産属性タイプが同じ明細行に表示されます。
 
 **資産属性** ページには、資産で使用される属性タイプごとに個別の明細行が表示されます。 このページを開くには、**資産管理** \> **照会** \> **資産** \> **資産属性** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

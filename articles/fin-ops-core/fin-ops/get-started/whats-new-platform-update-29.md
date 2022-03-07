@@ -2,11 +2,9 @@
 title: Finance and Operations アプリのプラットフォーム更新プログラム 29 (2019 年 10 月) の新機能および変更された機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 29 の機能について説明します。
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
-ms.openlocfilehash: d40369e56d08ad93b4da4cafbfb917acd509d59c
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: a1469f2a970eeafbcfdc8f4da2638786a36df7e46c2ed390a7446953e9488e1d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797843"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745052"
 ---
 # <a name="whats-new-or-changed-in-platform-update-29-for-finance-and-operations-apps-october-2019"></a>Finance and Operations アプリのプラットフォーム更新プログラム 29 (2019 年 10 月) の新機能および変更された機能
 
@@ -40,7 +38,7 @@ ms.locfileid: "4797843"
 詳細については [機能管理の概要](feature-management/feature-management-overview.md) を参照してください。
 
 ## <a name="data-management-job-history-clean-up"></a>データ管理ジョブ履歴のクリーンアップ
-実行履歴の定期的なクリーンアップをスケジュールするには、データ管理の [ジョブ履歴クリーンアップ機能](../../dev-itpro/data-entities/data-import-export-job.md#job-history-clean-up-available-in-platform-update-29-and-later) を使用する必要があります。 この機能は、現在は推奨されていない既存のステージング テーブルのクリーンアップ機能を置き換えます。
+実行履歴の定期的なクリーンアップをスケジュールするには、データ管理の [ジョブ履歴クリーンアップ機能](../../dev-itpro/data-entities/data-import-export-job.md#job-history-clean-up) を使用する必要があります。 この機能は、現在は推奨されていない既存のステージング テーブルのクリーンアップ機能を置き換えます。
 
 ## <a name="business-events-catalog-security"></a>ビジネス イベント カタログのセキュリティ
 [ロールベース セキュリティ](../../dev-itpro/business-events/home-page.md#role-based-security-for-business-events) は、ビジネス イベント カタログの個々のビジネス イベントに適用できるようになりました。 このセキュリティを有効にしてコンフィギュレーションすると、ユーザーは、ロールがアクセス権を持つビジネス イベントのみを表示したり、購読したりすることができます。 このセキュリティは、 Microsoft Flow などの統合シナリオにも適用されます。
@@ -52,7 +50,7 @@ ms.locfileid: "4797843"
 セッション アイドル タイムアウトは、セッションがタイムアウトして閉じるまでにユーザーが非アクティブになれる時間の長さを表します。 プラットフォーム更新プログラム 29では、ユーザーインターフェイスに Web ブラウザー セッション タイムアウト設定が公開され、既定値が 60 分ではなく 30 分に最適化されています。 最大60分まで値を変更および設定できますが、システムに余分な負荷が発生する可能性があります。 詳細については、 [セッション アイドル タイムアウトの設定](../../dev-itpro/sysadmin/session-idle-timeout.md) を参照してください。
 
 ## <a name="visual-refresh-of-the-web-client-to-align-with-the-fluent-design-language"></a>Fluent Design言語に合わせたWeb クライアントのビジュアル更新
-Dynamics 365アプリ全体の取り組みの一環として、Web クライアントのビジュアル更新に向けて段階的に取り組んでおり、コントロールとページを Microsoft Fluent Design言語とより密接に連携させています。 プラットフォーム 更新プログラム 29 には、変更の初期セットが含まれています。 詳細については、リリース計画の [Fluent Design言語に合わせたWeb クライアントのビジュアル更新](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) トピックを参照してください。
+Dynamics 365アプリ全体の取り組みの一環として、Web クライアントのビジュアル更新に向けて段階的に取り組んでおり、コントロールとページを Microsoft Fluent Design言語とより密接に連携させています。 プラットフォーム 更新プログラム 29 には、変更の初期セットが含まれています。 詳細については、リリース計画の [Fluent Design言語に合わせたWeb クライアントのビジュアル更新](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) トピックを参照してください。
 
 この変更の一部として、ダッシュボードのワークスペース タイルに新しいビジュアル スタイルが追加されました。 視覚的に配置されるワークスペース タイルの画像の作成に関する更新されたガイダンスについては、[ワークスペース タイル用のアイコンの作成](../../dev-itpro/user-interface/create-icons-workspace-tiles.md)を参照してください。
 
@@ -60,7 +58,7 @@ Dynamics 365アプリ全体の取り組みの一環として、Web クライア�
 保存されたビュープがプレビューで使用できるようになりました。 この機能は、個人用設定サブシステムの大幅な拡張機能であり、ユーザーは、ページごとに複数の名前を付けた個人用設定セットを持つことができます。 リストページでは、これらのビューにフィルターを含めることもできます。 ビューはセキュリティ ロールに対して公開できるので、個人用設定の管理もビューを使用することで大幅に簡単になります。 開発者環境でこの機能を有効にする方法の詳細については、 [保存されたビュー](saved-views.md) を参照してください。 また、 [保存されたビューを十分に活用するフォームの作成](../../dev-itpro/user-interface/understanding-saved-views.md) トピックも参照してください。 このプレビュー機能は、一般に使用可能になるまで進化し変更し続けることに注意してください。 
 
 ## <a name="new-grid-control-preview"></a>新しいグリッド コントロール (プレビュー) 
-[新しいグリッド コントロール](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/user-productivity-new-grid) がプレビューで使用できるようになりました。 この新しいグリッドは既存のグリッド コントロールに代わるものであり、より高速なレンダリング、よりスムーズなスクロール、グリッド内でのより簡単なナビゲーション、ドラッグ アンド ドロップによる列の並べ替えなどの機能を備えています。 新しいグリッドでは、フッターの表形式グリッドの数値列の下部に総計を表示することもできます。これは、列ヘッダーの右クリック コンテキスト メニューを使用して有効にできます。 有効にすると、すべての表形式とリストのグリッドが自動的に新しいグリッドを使用するように切り替わります。ただし、非反応拡張コントロールを含むグリッドがページにある場合は、既存のグリッドコントロールがそのページで使用されます。 このプレビュー機能は、一般に使用可能になるまで進化し変更し続けることに注意してください。
+[新しいグリッド コントロール](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/user-productivity-new-grid) がプレビューで使用できるようになりました。 この新しいグリッドは既存のグリッド コントロールに代わるものであり、より高速なレンダリング、よりスムーズなスクロール、グリッド内でのより簡単なナビゲーション、ドラッグ アンド ドロップによる列の並べ替えなどの機能を備えています。 新しいグリッドでは、フッターの表形式グリッドの数値列の下部に総計を表示することもできます。これは、列ヘッダーの右クリック コンテキスト メニューを使用して有効にできます。 有効にすると、すべての表形式とリストのグリッドが自動的に新しいグリッドを使用するように切り替わります。ただし、非反応拡張コントロールを含むグリッドがページにある場合は、既存のグリッドコントロールがそのページで使用されます。 このプレビュー機能は、一般に使用可能になるまで進化し変更し続けることに注意してください。
 
 新しいグリッドコントロールを試すには、開発者環境のURLに &debug=reactGridを追加します。 フライティングによって、他の環境で機能が動作しなくなることに注意してください。  
 
@@ -102,7 +100,7 @@ X++ ソース コード エディターには、現在、Visual Studio の CodeL
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019 リリースのウェーブ 2 プラン
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 [Finance and Operations の削除または廃止された機能](../../dev-itpro/migration-upgrade/deprecated-features.md)トピックでは、削除または廃止された機能について説明します。
@@ -113,3 +111,6 @@ X++ ソース コード エディターには、現在、Visual Studio の CodeL
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Finance and Operations の削除済みまたは非推奨の機能](../../dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

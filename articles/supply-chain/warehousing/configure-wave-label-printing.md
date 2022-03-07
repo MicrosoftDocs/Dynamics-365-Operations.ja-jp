@@ -1,29 +1,26 @@
 ---
-title: ウェーブ ラベル印刷の設定と使用
+title: サイクル ラベル印刷
 description: このトピックでは、ウェーブ ラベル印刷についての説明と、設定方法について解説します。
-author: GarmMSFT
-manager: PJacobse
+author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
-ms.reviewer: PJacobse
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: 3040406af731e2e35fff456804f893108e7eb896bfa0132082986c09ad128952
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4432404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777674"
 ---
-# <a name="set-up-and-use-wave-label-printing"></a>ウェーブ ラベル印刷の設定と使用
+# <a name="wave-label-printing"></a>サイクル ラベル印刷
 
 [!include [banner](../includes/banner.md)]
 
@@ -932,3 +929,10 @@ ms.locfileid: "4432404"
 - ウェーブ ラベル履歴
 
 これらのほとんどのページでは、アクションウィンドウの **出荷** タブにある **関連情報** グループの **ウェーブラベル** を選択することにより、関連する機能を見つけることができます。
+
+## <a name="additional-resources"></a>追加リソース
+
+- [ウェーブ ラベルの再印刷と無効化](reprint-and-void-wave-labels.md)
+- [サイクル中にサイクル ラベルの印刷をスケジュールする](configure-task-based-wave-label-printing.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: 認証
 description: この記事では、Microsoft Dynamics 365 Human Resources データのアプリケーション プログラミング インターフェイス (API) を使用した認証方法についての概要を示します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3396f0ae6d089f43c39f318dc9d92a88a7db3d7c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419304"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070878"
 ---
 # <a name="authentication"></a>認証
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 この記事では、Microsoft Dynamics 365 Human Resources データのアプリケーション プログラミング インターフェイス (API) を使用した認証方法についての概要を示します。
 
@@ -82,13 +84,13 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - Web アプリに関しては、アプリのベース URL を指定します。 たとえば、`http://localhost:31544` はローカル コンピューターで実行する Web アプリの URL である可能性があります。 ユーザーは、この URL を使用して Web クライアント アプリにサインインします。
         - パブリック クライアント アプリに関しては、Azure AD を使用してトークン応答を返すための URI を指定します。 `myapp://auth` などの、アプリに固有の値を入力します。
 
-        Web アプリまたはネイティブ アプリの特定の例を表示するには、[Microsoft ID プラットフォーム (旧「開発者向けAzure Active Directory」)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts)のクイックスタートを参照してください。
+        Web アプリまたはネイティブ アプリの特定の例を表示するには、[Microsoft ID プラットフォーム (旧「開発者向けAzure Active Directory」)](/azure/active-directory/develop/#quickstarts)のクイックスタートを参照してください。
 
 5. **API アクセス許可** で、**アクセス許可の追加** を選択します。 次に、**自分の組織が使用する API** タブで **Dynamics 365 Human Resources** サービスを検索し、アプリに **user\_impersonation** のアクセス許可を追加します。 人事管理のアプリケーション ID は f9be0c49-aa22-4ec6-911a-c5da515226ff です。 この ID を使用して、正しいアプリケーションが選択されていることを確認します。
 
 6. **登録** を選択します。
 
-   [![Azure ポータルで新しいアプリに登録する](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
+   [![Azure ポータルで新しいアプリに登録する。](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
 Azure AD は、アプリに固有のアプリケーション ID (クライアント ID) を割り当て、アプリの **概要** ページへと移動します。 アプリに複数の機能を追加するには、他のコンフィギュレーション オプション (ブランド化のオプションや証明書とシークレットのオプションなど) を選択できます。
 
@@ -185,3 +187,6 @@ namespace TalentODataPoC
 ```
 
 アクセス トークンを取得したら、上記のように、データ API に送信する各要求でベアラー トークンとして認証ヘッダーでトークンを渡します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

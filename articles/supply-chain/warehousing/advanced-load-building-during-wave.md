@@ -2,26 +2,23 @@
 title: ウェーブ中の高度な積荷構築
 description: このトピックでは、ウェーブ実行時に既存のウェーブに積荷が自動的に割り当てられる、高度なウェーブ積荷構築に関する情報を提供します。 したがって、積荷計画ワークベンチを使用することなく、トラックを表す適切な積荷を作成することができます。
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 7f51b3d65c8dd1e11296956c37ef9dfe568e5ec2
-ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 08e44b4e37f28ec91eeb8e53930de5133607bd66
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654201"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574740"
 ---
 # <a name="advanced-load-building-during-wave"></a>ウェーブ中の高度な積荷構築
 
@@ -250,3 +247,6 @@ ms.locfileid: "4654201"
 1. 作成した販売注文の **販売注文明細行** クイック タブで **明細行の追加** を選択して、別の行を追加します。
 1. 新しい明細行で、**品目番号** フィールドを *M9200* に、**数量** フィールドを *1* に設定します。
 1. 6 行目から 9 行目を繰り返して明細行を引当し、倉庫にリリースします。 以前と同様に、システムは追加した明細行に **新規** の出荷を作成します。 ただし、この品目は **CarAudio** 品目グループのものであるため、**積荷混合グループに設定した制約を渡すことができません**。 したがって、**新しい積荷に追加** されます。 積荷構築テンプレートに積荷混合グループを指定していない場合は、この出荷が最初の積荷に追加されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

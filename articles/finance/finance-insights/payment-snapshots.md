@@ -2,28 +2,27 @@
 title: スナップショットの概要 (プレビュー)
 description: このトピックでは、スナップショット機能を使用して、分析のためのキャッシュフロー予測を保存したり、後で実績と比較したりできます。 キャッシュフロー予測を生成する場合は、その予測を "スナップショット" として保存できます。 その後、そのスナップショットを使用して、予測に含まれていた勘定を編集したり、スナップショットの予測を実績と比較することができます。
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/19/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f0d0bdde8b69148c72b8c645e040f0e596ecba92
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 23df01603e74847f6f01a1eaa84b8fd3bb1d6e59
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645628"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337211"
 ---
 # <a name="snapshots-overview-preview"></a>スナップショットの概要 (プレビュー)
 
@@ -46,5 +45,4 @@ ms.locfileid: "4645628"
 
 財務実績結果を、スナップショットとして保存された予測と比較するには、**実績と比較** を選択します。 **スナップショットの比較** ページには、実際の金額と予測の比較が表示されます。 このページの上部セクションのグラフは、2 つのスナップショット間の重複する期間におけるキャッシュ インフロー、キャッシュ アウトフロー、および銀行残高を比較したものです。 下部のグリッドには、期間あたりの実際の残高と各流動性金額に対する予測残高の詳細な比較が示されます。 グリッドの **差異** 列には、期間内の実際の残高から予測残高との間の差が表示されます。
 
-#### <a name="privacy-notice"></a>プライバシー通知
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

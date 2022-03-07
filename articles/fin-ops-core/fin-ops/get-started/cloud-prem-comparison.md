@@ -2,11 +2,9 @@
 title: クラウドおよびオンプレミスの機能比較
 description: このトピックでは、クラウドとオンプレミスでサポートされる機能を示します。
 author: sericks007
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 309131f0d7390288a46f84b1375bd87922407159
-ms.sourcegitcommit: a017fc0583a894382b959e22511231dd07d4254a
+ms.openlocfilehash: 68082ad0ae264b76a852d8d12412af8c4ad917703441c41e67743d1b499a8d73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "4959897"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736225"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>クラウドとオンプレミスの機能比較
 
@@ -44,9 +42,9 @@ ms.locfileid: "4959897"
 |---------------------|-----------------------------|-----------|-----------------|
 | コンプライアンスおよび証明書        |                                                                                           | はい       | はい             |
 |                                      | SOC 1 タイプ 1 証明書                                                                | はい       | いいえ              |
-| データの管理および統合      |                                                                                           | はい       | はい             
+| データの管理および統合      |                                                                                           | はい       | はい             |
 |                                      | 独自のデータ ウェアハウスへのデータのエクスポート                                                    | はい       | はい             |
-|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | はい       | はい              |
+|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | はい       | はい             |
 |                                      | データ統合                                                                         | はい       | はい             |
 | ドキュメント管理                  |                                                                                           | はい       | はい             |
 | 財務管理                 |                                                                                           | 有       | 有             |
@@ -63,8 +61,8 @@ ms.locfileid: "4959897"
 |                                      | 分析ワークスペース                                                                     | あり       | なし              |
 |                                      | インテリジェントなビジネス プロセス: Recommendations                                             | 有       | 無              |
 |                                      | Power BI デスクトップまたは Excel PowerQuery ツールを使い、OData の Power BI レポートの作成    | 有       | 無              |
-|                                      | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。                                 | はい       | いいえ              |
-|                                      | テレメトリがクラウドへ転送されます                                                   | はい       | いいえ              |
+|                                      | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。                                 | あり       | あり             |
+|                                      | テレメトリがクラウドへ転送されます                                                   | あり       | なし              |
 | Lifecycle サービス                   |                                                                                           | はい       | はい             |
 |                                      | コンフィギュレーション可能な業務プロセス                                                           | はい       | いいえ              |
 | ローカライズ                        |                                                                                           | はい       | はい             |
@@ -86,7 +84,7 @@ ms.locfileid: "4959897"
 
 | **エリア**                | **機能**             | **クラウド** | **オンプレミス** |
 |-------------------------|-------------------|-----------|-----------------|
-| 資産管理                     |                                                                                           | あり       | なし |
+| 資産管理                     |                                                                                           | あり       | あり             |
 | コンプライアンスおよび証明書        |                                                                                           | あり       | あり             |
 |                                      | SOC 1 タイプ 1 証明書                                                                | 有       | 無              |
 | 原価計算                      |                                                                                           | 有       | 有             |
@@ -97,7 +95,7 @@ ms.locfileid: "4959897"
 | データの管理および統合      |                                                                                           | 有       | 有             |
 |                                      | コンフィギュレーション駆動型の拡張機能                                                            | 有       | 無              |
 |                                      | 独自のデータ ウェアハウスへのデータのエクスポート                                                    | 有       | 有             |
-|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | 有       | 有              |
+|                                      | データ エンティティへの差分更新のエクスポート有効化                                 | 有       | 有             |
 |                                      | データ統合                                                                         | 有       | 有             |
 | ドキュメント管理                  |                                                                                           | 有       | 有             |
 | ヘルプ                                 |                                                                                           | はい       | いいえ              |
@@ -112,8 +110,8 @@ ms.locfileid: "4959897"
 |                                      | 分析ワークスペース                                                                     | あり       | なし              |
 |                                      | インテリジェントなビジネス プロセス: Recommendations                                             | 有       | 無              |
 |                                      | Power BI デスクトップまたは Excel PowerQuery ツールを使い、OData の Power BI レポートの作成    | 有       | 無              |
-|                                      | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。                                 | 有       | 無              |
-|                                      | テレメトリがクラウドへ転送されます                                                   | 有       | 無              |
+|                                      | SQL Server Reporting Services (SSRS) は、スケール アウトをサポートします。                                 | あり       | あり             |
+|                                      | テレメトリがクラウドへ転送されます                                                   | あり       | なし              |
 | 在庫管理                 |                                                                                           | 有       | 有             |
 | Lifecycle サービス                   |                                                                                           | 有       | 有             |
 |                                      | コンフィギュレーション可能な業務プロセス                                                           | 有       | 無              |
@@ -149,7 +147,7 @@ ms.locfileid: "4959897"
 
 ## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-オンプレミス展開で利用可能な機能の一覧を表示するには、[オンプレミス展開で利用可能なコマース機能](../../../retail/retail-onprem.md) を参照してください。
+オンプレミス展開で利用可能な機能の一覧を表示するには、[オンプレミス展開で利用可能なコマース機能](../../../commerce/retail-onprem.md) を参照してください。
 
 ## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 
@@ -176,3 +174,6 @@ ms.locfileid: "4959897"
 
 \* オンプレミス環境では、クライアントの結果が PerfTimer によってのみ表示されます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

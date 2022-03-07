@@ -1,6 +1,6 @@
 ---
-title: 他のコンポーネントの ER コンフィギュレーションの依存関係の定義
-description: これらの手順を完了するには、最初にタスク ガイドでの手順を実行し、ER モデル マッピング コンフィギュレーションを管理し、および Microsoft Dynamics Lifecycle Services (LCS) にアクセスする必要があります。
+title: 他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
+description: このトピックでは、電子レポート (ER) コンフィギュレーションを設計し、他のソフトウェア コンポーネントからその依存関係を指定する方法について説明します。
 author: NickSelin
 manager: AnnBe
 ms.date: 06/23/2017
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: dd9516ac68c46649ebc50711357b97179bfc1b2c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681976"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092153"
 ---
-# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>他のコンポーネントの ER コンフィギュレーションの依存関係の定義
+# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
 
 [!include [banner](../../includes/banner.md)]
 

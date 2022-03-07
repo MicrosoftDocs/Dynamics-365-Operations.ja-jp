@@ -2,11 +2,9 @@
 title: 住所変更の表示と管理
 description: このトピックでは、Dynamics 365 Human Resources の住所変更を表示および管理する方法について説明します。
 author: andreabichsel
-manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8746f449f2b30b2e2119446c1912842c420acbfc
-ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
+ms.openlocfilehash: 387caeee3ba44e1fbc661e2c31915b75dd80c31e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5152056"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892132"
 ---
 # <a name="view-and-manage-address-changes"></a>住所変更の表示と管理
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 このトピックでは、Dynamics 365 Human Resources で従業員セルフサービスの **個人の詳細の編集** ページまたは **作業者**  の詳細ページで、住所の変更を表示および管理する方法について説明します。
 
@@ -125,6 +125,9 @@ ms.locfileid: "5152056"
 **住所変更** タイルを選択すると、新しいページに住所変更の詳細が表示されます。 右上隅の **将来の住所変更を含める** を選択して、将来の日付での住所の変更を表示できます。
 
 > [!NOTE]
-> これらの住所変更に関する警告またはメールを受信する場合は、アクション ウィンドウの **オプション** タブで新しいアラート ルールを作成できます。 アラート ルールを作成する方法の詳細については、[アラート ルールを作成](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts) を参照してください。<br><br>
+> これらの住所変更に関する警告またはメールを受信する場合は、アクション ウィンドウの **オプション** タブで新しいアラート ルールを作成できます。 アラート ルールを作成する方法の詳細については、[アラート ルールを作成](../fin-ops-core/fin-ops/get-started/create-alerts.md) を参照してください。<br><br>
 
-> 住所の変更に対してワークフローをコンフィギュレーションする場合は、アラート ルールで **外部送信** オプションを選択し、Power Automate を使用して、ビジネス イベントのトリガーとワークフローのコンフィギュレーションを行うことができます。 詳細については、[ビジネス イベントとしてのアラート](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events) を参照してください。
+> 住所の変更に対してワークフローをコンフィギュレーションする場合は、アラート ルールで **外部送信** オプションを選択し、Power Automate を使用して、ビジネス イベントのトリガーとワークフローのコンフィギュレーションを行うことができます。 詳細については、[ビジネス イベントとしてのアラート](../fin-ops-core/fin-ops/get-started/create-alerts.md#alerts-as-business-events) を参照してください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

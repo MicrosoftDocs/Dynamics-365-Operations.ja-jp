@@ -13,17 +13,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70e42cbf657a28327699d927731edd36de7c4a64
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 1ff65a0518232275f7c5d0b4a70d04f77e4936c5
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069760"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314116"
 ---
 # <a name="payroll-worker-address"></a>給与作業者の住所
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -39,26 +36,20 @@ ms.locfileid: "8069760"
 
 | プロパティ</br>**現物名**</br>**_種類_** | 使用 | 説明 |
 | --- | --- | --- |
-| **個人番号**</br>mshr_personnelnumber</br>*文字列* | 読み取り専用 | 従業員の一意の職員番号。 |
-| **場所 ID**</br>mshr_locationidbr>*文字列* | 読み取り専用 | 住所の ID。 |
-| **住所に住んでいた**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes オプション セット](hr-admin-integration-payroll-api-no-yes.md)* | 読み取り専用 | 住所が従業員の居住地であるかどうかを示す値。 |
-| **住所で作業** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes オプション セット](hr-admin-integration-payroll-api-no-yes.md)* | 読み取り専用 | 住所が従業員の勤務地であるかどうかを示す値。 |
-| **国地域**</br>mshr_countryregionid</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている国や地域。 |
-| **郵便番号**</br>mshr_zipcode<br>*文字列* | 読み取り専用 | 従業員に対して定義されている ID 番号。 |
-| **住所**</br>mshr_street</br>*文字列* | 読み取り専用 | 住所に定義されている番地。 |
-| **市区町村**</br>mshr_city</br>*文字列* | 読み取り専用 | 住所に定義されている市区町村。 |
-| **行政単位 (区画)**</br>mshr_state</br>*文字列* | 読み取り専用 | 住所に定義されている都道府県。 |
-| **郡**</br>mshr_county</br>*文字列* | 読み取り専用 | 住所に定義されている国。 |
-| **発効日**</br>mshr_postaladdressvalidfrom</br>*日時オフセット* | 読み取り専用 | 住所が有効となる開始日付。 |
-| **失効日**</br>mshr_postaladdressvalidto</br>*日時オフセット* | 読み取り専用 | 住所が有効な日付の期限。 |
-| **基本フィールド**</br>mshr_primaryfield</br>*文字列* | 読み取り専用 | プライマリ フィールド。 |
-| **給与作業者の住所 ID**</br>mshr_payrollworkeraddressentityid</br>*GUID* | システム生成 | 住所を一意に識別するための、システムが生成したグローバルに一意な識別子 (GUID) の値です。 |
-
-## <a name="relations"></a>リレーション
-
-| プロパティ値 | 関連するエンティティ | ナビゲーション プロパティ | コレクション タイプ |
-| --- | --- | --- | --- |
-| _mshr_fk_worker_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Worker_id | mshr_FK_PayrollEmployeeEntity_Address |
+| **市区町村**</br>mshr_city</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている市町村。   |
+| **個人番号**</br>mshr_personnelnumber</br>*文字列* | 読み取り専用</br>必須 | 従業員の一意の職員番号。  |
+| **国地域**</br>mshr_countryregionid</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている国の地域。  |
+| **発効日**</br>mshr_postaladdressvalidfrom</br>*日時オフセット* | 読み取り専用 </br>必須 | 住所が有効な日付。 |
+| **住所で作業** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes オプション セット](hr-admin-integration-payroll-api-no-yes.md)* | 読み取り専用</br>必須 | 住所が従業員の勤務地であるかどうかを表します。 |
+| **郡**</br>mshr_county</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている国。  |
+| **給与作業者の住所 ID**</br>mshr_payrollworkeraddressentityid</br>*GUID* | 必須</br>システム生成 | 住所を一意に識別するためのシステム生成の GUID 値。  |
+| **基本フィールド**</br>mshr_primaryfield</br>*文字列* | 読み取り専用</br>必須 |  |
+| **住所**</br>mshr_street</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている番地。 |
+| **失効日**</br>mshr_postaladdressvalidto</br>*日時オフセット* | 読み取り専用 </br>必須 | 住所が有効な日付。  |
+| **場所 ID**</br>mshr_locationidbr>*文字列* | 読み取り専用 <br>必須 | 住所の ID。  |
+| **郵便番号**</br>mshr_zipcode<br>*文字列* | 読み取り専用 <br>必須 |従業員に対して定義される ID 番号。  |
+| **住所に住んでいた**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes オプション セット](hr-admin-integration-payroll-api-no-yes.md)* | 読み取り専用</br>必須 | 住所が従業員の居住地であるかどうかを表します。 |
+| **行政単位 (区画)**</br>mshr_state</br>*文字列* | 読み取り専用</br>必須 | 住所に定義されている状態。  |
 
 ## <a name="example-query"></a>クエリの例
 

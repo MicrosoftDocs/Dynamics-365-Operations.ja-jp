@@ -12,19 +12,18 @@ ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, Ro
 ms.author: sorenand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f95ecf7faa9f3c89b0a5f65961c42e6ebe7d51df
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431774"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262120"
 ---
 # <a name="routes-and-operations"></a>工順と工程
 
@@ -260,3 +259,6 @@ Supply Chain Management がリリース済製品に最も関連する関連工�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

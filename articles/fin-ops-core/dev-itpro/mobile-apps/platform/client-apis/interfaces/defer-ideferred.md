@@ -2,24 +2,17 @@
 title: 繰延タイプ<T>
 description: 繰延タイプ
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 281099e81d87146cf539c489c1c68d87ee84e96f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b076498c88abf21e9bbb374262e97c91043912b1e3f912ad6d430f7b3c215d2c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685431"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731519"
 ---
 # <a name="deferred-typelttgt"></a>延期されたタイプ&lt;T&gt;
 
@@ -83,3 +76,6 @@ resolve (value?: T &#124; PromiseLike &lt;T&gt;) : void
 
 #### <a name="returns-void"></a>void を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -1,31 +1,30 @@
 ---
 title: Dynamics 365 Human Resources (2020年5月14日) の新機能と変更された機能
 description: このトピックでは、2020 年 5 月 14 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2c5ae1078e3490fef3383fc6d637df70128683e7
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528500"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6051020"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Dynamics 365 Human Resources (2020年5月14日) の新機能と変更された機能
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -33,11 +32,11 @@ ms.locfileid: "4528500"
 
 ## <a name="platform-changes"></a>プラットフォームの変更
 
-プラットフォームの変更は今週のリリースに含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.10 のプラットフォーム更新プログラム (2020年5月) ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34) を参照してください。 このリリースには、バグ修正や保存されたビューへの変更が含まれています。
+プラットフォームの変更は今週のリリースに含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.10 のプラットフォーム更新プログラム (2020年5月) ](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md) を参照してください。 このリリースには、バグ修正や保存されたビューへの変更が含まれています。
  
-## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Common Data Service の候補リストがすべての列挙と一致することを保証する (436343)
+## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Dataverse の候補リストがすべての列挙と一致することを保証する (436343)
 
-Common Data Service の候補リストがすべての列挙と一致するようになっています。
+Dataverse の候補リストがすべての列挙と一致するようになっています。
 
 ## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>申請の量に応じた休暇申請のワークフローを構成できるようにする (300044)
 
@@ -75,7 +74,7 @@ Common Data Service の候補リストがすべての列挙と一致するよう
 
 この変更により、システム管理者やデータ管理者以外のユーザーに対して、[はじめに] のバナーが表示されなくなります。 
 
-## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Common Data Service 作業者の住所エンティティの勤務時間の発効日が、Human Resources とは異なる (425071)
+## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Dataverse 作業者の住所エンティティの勤務時間の発効日が、Human Resources とは異なる (425071)
 
 この変更により、特定のシナリオでは、住所の日付に基づいて住所情報の整合性が保たれます。
 
@@ -116,6 +115,8 @@ DMF エンティティが見越し計上の停止に使用できるようにな�
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

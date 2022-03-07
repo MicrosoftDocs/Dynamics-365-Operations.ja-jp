@@ -2,11 +2,9 @@
 title: Dynamics 365 Fraud Protection の Dynamics 365 Commerce との統合
 description: このトピックでは、Microsoft Dynamics 365 Fraud Protection と Dynamics 365 Commerce との間で使用可能な標準統合について説明します。
 author: rubendel
-manager: AnnBe
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e18c6e83efa122daef0e9281ef1c81b0ead15262
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fcdf5d273c089d3214bec591a185d8afa77d9419
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680402"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793045"
 ---
 # <a name="dynamics-365-fraud-protection-integration-with-dynamics-365-commerce"></a>Dynamics 365 Fraud Protection の Dynamics 365 Commerce との統合
 
@@ -165,3 +163,6 @@ Microsoft にとってお客様のプライバシーは重要です。 詳細に
 
 - [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 支払データの使用](https://docs.microsoft.com/dynamics365/retail/payment-connector-data-fields)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

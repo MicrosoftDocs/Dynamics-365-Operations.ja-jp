@@ -1,18 +1,18 @@
 ---
 title: InputControlDesign タイプ
 description: 入力コントロール デザイン。
-author: tonyafehr
+author: robinarh
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: 08267e9db8de6efb2844f8ae7a9abe53962b78e0
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.openlocfilehash: 3c42bceb75d483734e18fa2d22d0ab4b2b1f824a
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781064"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661492"
 ---
 # <a name="inputcontroldesign-type"></a>InputControlDesign タイプ
 

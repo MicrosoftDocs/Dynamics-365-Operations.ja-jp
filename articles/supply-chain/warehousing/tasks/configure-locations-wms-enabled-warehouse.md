@@ -2,27 +2,24 @@
 title: WMS に対応した倉庫の場所のコンフィギュレーション
 description: このガイドでは、新しい WMS が有効な倉庫 (詳細な倉庫管理プロセスを使用する倉庫) の場所の設定をコンフィギュレーションする方法を示します。
 author: perlynne
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 31f016c4c8b8b08139836336ac38196fbd1fba6f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66fa4d7fb58fea1277ef514b8be5f1079b88a786
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431830"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831077"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>WMS に対応した倉庫の場所のコンフィギュレーション
 
@@ -175,3 +172,6 @@ ms.locfileid: "4431830"
 6. 一覧で、選択された行のリンクをクリックします。
 7. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

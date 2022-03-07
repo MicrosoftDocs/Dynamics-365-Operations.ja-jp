@@ -2,30 +2,30 @@
 title: 部門、職務、職位を使用した従業員の編成
 description: 部門、職務、および職位は、人事管理で管理される組織の要素です。 この記事では、これらの要素についての概念に関する情報を説明します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 826de9e1e5d70ba1ec088b44254c871726b5c38e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 31b9532eea82fd5b88fe59718af7be4d242dc885
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419355"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027893"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>部門、職務、職位を使用した従業員の編成
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 部門、職務、および職位は、人事管理で管理される組織の要素です。 この記事では、これらの要素についての概念に関する情報を説明します。 
 
@@ -159,9 +159,12 @@ ms.locfileid: "4419355"
 </tbody>
 </table>
 
-前のテーブルに示されている職位または職務の情報を変更し、職位または職務への変更が有効になる日付を指定できます。 たとえば、一つの職位は 1 人の作業者にのみ割り当てることができますが、経理担当-A の職位に割り当てられている Patel Sanjay は 2 週間以内に退職します。 Joe Healy は、Sanjay Patel が退職した後、その職位に就きます。 Sanjay がまだ彼の職位に割り当てられている場合でも、Sanjay の最終日の後にのみ割り当てが有効になるように Joe Heal を同じ職位に割り当てることができます。
+前のテーブルに示されている職位または職務の情報を変更し、職位または職務への変更が有効になる日付を指定できます。 たとえば、一つの職位は 1 人の作業者にのみ割り当てることができますが、経理担当-A の職位に割り当てられている Patel Sanjay は 2 週間以内に退職します。 Joe Healy は、Sanjay Patel が退職した後、Sanjay の職位に就きます。 Sanjay がまだ彼の職位に割り当てられている場合でも、Sanjay の最終日の後にのみ割り当てが有効になるように Joe Heal を同じ職位に割り当てることができます。
 
 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

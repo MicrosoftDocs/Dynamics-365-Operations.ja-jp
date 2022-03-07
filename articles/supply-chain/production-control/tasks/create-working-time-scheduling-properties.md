@@ -1,28 +1,25 @@
 ---
 title: 作業時間スケジューリング プロパティの作成
 description: 作業時間のスケジューリングのプロパティを使用して、作業時間の間隔を分類し、オペレータが考慮する必要のある設定を定義します。
-author: sorenva
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OpResLifeCycleManagementWorkspace, WrkCtrProperty
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 79ca3d0405cc62b181f8c80df6de3a3cc9e12f99
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: de9bb64c93a686ce8a6ea365267980ec737a9335
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431671"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566602"
 ---
 # <a name="create-working-time-scheduling-properties"></a>作業時間スケジューリング プロパティの作成
 
@@ -30,17 +27,22 @@ ms.locfileid: "4431671"
 
 作業時間のスケジューリングのプロパティを使用して、作業時間の間隔を分類し、オペレータが考慮する必要のある設定を定義します。 この手順では、作業時間のスケジューリングのプロパティおよび関連するプロパティ値を定義する方法を示します。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。
 
-1. [すべてのワークスペース] > [リソース ライフサイクル管理] の順に移動します。
-2. [プロパティ] をクリックします。
+1. **ワークスペース\> リソース ライフサイクル管理** の順にクリックします。
+2. **プロパティ** を選択します。
 
 ## <a name="create-property"></a>プロパティーの作成
-1. [新規] をクリックします。
-2. [プロパティー] フィールドに値を入力します。
-3. [名前] フィールドに値を入力します。
+
+1. **新規** を選択します。
+2. **プロパティ** フィールドに値を入力します。
+3. **名前** フィールドに値を入力します。
 
 ## <a name="create-property-values"></a>プロパティー値の作成
-1. 一覧で、選択された行をマークします。
-2. [名前] フィールドに値を入力します。
-3. [値] フィールドに値を入力します。
-4. [保存] をクリックします。
 
+1. 一覧で、選択された行をマークします。
+2. **名前** フィールドに値を入力します。
+3. **値** フィールドに値を入力します。
+4. **保存** を選択します。
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

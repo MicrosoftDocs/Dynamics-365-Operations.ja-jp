@@ -2,11 +2,9 @@
 title: 製品に対する複数の小売割引の適用
 description: このトピックでは、製品に複数の割引を適用できる場合に考慮されるすべての要素を確認します。
 author: shajain
-manager: AnnBe
 ms.date: 12/31/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 6c0b02fc3b33959709ddda910a781a11642ef3cd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0667c6ebed8ddaabf3fdb139b49c2cbcabdf7c83f609897524bedcebb8c2edb6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714775"
 ---
 # <a name="apply-multiple-retail-discounts-to-a-product"></a>製品に対する複数の小売割引の適用
 
@@ -80,7 +78,7 @@ ms.locfileid: "4970143"
 
     次の図では、さまざまな優先順位の間で価格決定アルゴリズムが割引をループする様子の簡単なビューを示します。 次の図は、両方の割引同時実行管理モデルに適用されますが、価格決定アルゴリズムがの優先順位の異なる割引を処理する方法に違いがあることに注意してください。 この違いは、以下の例を使用して詳しく説明します。
 
-    ![簡略化された価格決定ロジック](./media/Simplified-pricing-logic.png "簡略化された価格決定ロジック")
+    ![簡略化された価格決定ロジック。](./media/Simplified-pricing-logic.png "簡略化された価格決定ロジック")
 
 2. 優先順位 10 内で、価格決定エンジンはまず、同時実行モードが **排他的** に設定されている割引を考慮します。 複数の排他割引が製品に適用される場合、最適な排他割引が適用されます。 製品は、排他割引を引き受け、どの優先順位でもこの製品に他の割引を適用することはできません。
 
@@ -99,7 +97,7 @@ ms.locfileid: "4970143"
 
 上のロジックは次の図で示されています。この図では、さまざまな優先順位の間で価格決定アルゴリズムが割引をループする様子の詳細なビューを示します。 次の図は、両方の割引同時実行管理モデルに適用されますが、価格決定アルゴリズムがの優先順位の異なる割引を処理する方法に違いがあることに注意してください。
 
-![詳細な価格決定ロジック](./media/Detailed-pricing-logic.png "詳細な価格決定ロジック")
+![詳細な価格決定ロジック。](./media/Detailed-pricing-logic.png "詳細な価格決定ロジック")
 
 この例では、次の設定を仮定します。
 
@@ -240,3 +238,6 @@ ms.locfileid: "4970143"
 
 > [!NOTE]
 > 同じ割引設定の場合、選択された割引同時実行管理モデルによって結果は大幅に異なります。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

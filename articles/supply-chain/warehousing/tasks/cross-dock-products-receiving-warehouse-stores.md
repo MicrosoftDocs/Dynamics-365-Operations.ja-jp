@@ -1,28 +1,25 @@
 ---
 title: 受入倉庫から店舗までのクロスドッキング製品
 description: この手順は、発注書の入荷場所から、一つまたは複数の店舗に製品を配分するクロスドッキングを作成および処理する手順を説明します。
-author: ShylaThompson
-manager: tfehr
+author: Mirzaab
 ms.date: 02/17/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailBuyersPushPerPackage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 033d4f72b626130c144faff30fe0d35349b26c6d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6e65535a1879eab229f185e0e97d81a304fd292d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432349"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572964"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>受入倉庫から店舗までのクロスドッキング製品
 
@@ -49,3 +46,6 @@ ms.locfileid: "4432349"
 15. 一覧で、製品を受け入れる倉庫を見つけ、選択します。
 16. 選択した倉庫に対して作成された注文を表示するには、[注文] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

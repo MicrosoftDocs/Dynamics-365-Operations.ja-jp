@@ -2,11 +2,9 @@
 title: ワークフローに関するよく寄せられる質問
 description: このトピックでは、ワークフロー システムについてよく寄せられる質問に回答します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 64ce34cf38e4d6f37d9d417b70843a8308a408a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797394"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890360"
 ---
 # <a name="workflow-faq"></a>ワークフローに関するよく寄せられる質問
 
@@ -47,9 +45,9 @@ ms.locfileid: "4797394"
     - 今後の更新で、ユーザーにワークフロー 作業項目が割り当てられるようにアクション センター メッセージを追加します。 
 - ワークフローへの通知の追加
     - アクション センター メッセージは、X++ のワークフローから作成されたメッセージのように、特定のユーザーに対して作成されます。
-    - 顧客が探している通知を持つフローをトリガーするために使用できる [ビジネス イベントのあるワークフロー](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow)。   
+    - 顧客が探している通知を持つフローをトリガーするために使用できる [ビジネス イベントのあるワークフロー](../../dev-itpro/business-events/business-events-workflow.md)。   
 
-要約すると、ユーザーがワークフロー作業項目を割り当てられた時、アクション センターから適切な通知を取得できなかった場合、[ワークフロー ビジネス イベント](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) と Microsoft Power Automate を活用して、追加のまたは異なる通知を行います。
+要約すると、ユーザーがワークフロー作業項目を割り当てられた時、アクション センターから適切な通知を取得できなかった場合、[ワークフロー ビジネス イベント](../../dev-itpro/business-events/business-events-workflow.md) と Microsoft Power Automate を活用して、追加のまたは異なる通知を行います。
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>AD FS 下でワークフロー エディターを起動できないのはなぜですか。
 アップグレードされた環境で Active Directory フェデレーション サービス (AD FS) を実行している場合、ワークフロー エディターで問題が発生する可能性があります。 その場合、ADFS 設定の **Microsoft Dynamics 365 for Operations オンプレミス - ワークフロー - ネイティブ アプリケーション** プロパティに、URL 「https://dynamicsaxworkfloweditor/」が追加されていることを確認してください。
@@ -59,3 +57,6 @@ ms.locfileid: "4797394"
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>ワークフロー拡張エラー機能とは ?
 Version 10.0.13 のワークフロー拡張エラー機能によって、さまざまなクラスのワークフロー エラーを区別するためのエラー コードが追加されます。 報告されたエラーメッセージは、多くの場合、若干の違いがあるため、わかりやすくすることができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

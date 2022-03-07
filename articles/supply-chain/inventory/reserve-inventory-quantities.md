@@ -1,29 +1,26 @@
 ---
 title: 在庫数量の引当
 description: このトピックでは、在庫を引当するために使用できるさまざまなオプションについて説明します。
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea7311ce34fec476ad9953e954a07a86acd13afc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0cf6f14e30f84f48428b351287eb1c65915a14c1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432235"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571140"
 ---
 # <a name="reserve-inventory-quantities"></a>在庫数量の引当
 
@@ -49,7 +46,7 @@ ms.locfileid: "4432235"
 
 **在庫ポリシー** セクションには、次の引当ポリシーが含まれます。
 
-|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| &nbsp;                  | &nbsp;                                                                                                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **引当ポリシー**  | **説明**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | FIFO 日付管理    | **FIFO 日付管理** オプションを選択した場合、在庫引当は先入れ先出し (FIFO) 原則を使用した日付の並び替えに従って行われます。 先入れ先出し (FIFO) の原則に従って、品目の最も早い受取日に基づいてバッチが引き当てられます。                                                                                                                                                                                                                                                                       |
@@ -83,3 +80,6 @@ ms.locfileid: "4432235"
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>生産パラメータ ページの在庫引当ポリシー
 
 **生産パラメータ** ページの **一般** タブの **引当** フィールドの値は、引当を行う必要のある在庫の生産プロセスでの既定ポイントを決定します。 たとえば、在庫は作業がスケジュールされた時点、または作業の開始時に引当することができます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

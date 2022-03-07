@@ -2,26 +2,23 @@
 title: サイトの計画の作成
 description: 生産計画担当者は、特定品目を生産するための材料と能力要件を計算します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqTransPOUrgentFormPart, SysQueryForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52721d948554d4853f9e1d4dec45e45e619a4829
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bf3016e289248acafc3bc6b79d853fd9de8c5417
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431981"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841650"
 ---
 # <a name="create-a-plan-for-a-site"></a>サイトの計画の作成
 
@@ -55,3 +52,6 @@ ms.locfileid: "4431981"
 2. [確定] をクリックします。
 3. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

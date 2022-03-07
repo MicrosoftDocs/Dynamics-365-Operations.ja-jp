@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: f9073a14143423676f23f9bf8dc9c17dbae18a6c3ad0d2f6d1e33919fd9162bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 637962cf63bfd8c2330726f33545f939ec91d58d
+ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759822"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6295821"
 ---
 # <a name="regulatory-configuration-service-rcs---delete-an-rcs-environment"></a>Regulatory Configuration Service (RCS) - RCS 環境の削除
 
@@ -38,11 +38,11 @@ ms.locfileid: "6759822"
 1. RCS を開き、**電子申告** ワークスペース タイルを選択します。
 2. **関連リンク** セクションで、**RCS 環境の削除** を選択します。
 
-    ![関連リンク セクションで、RCS 環境リンクを削除する。](media/01_RCS-Delete-Environ-Related-Link.PNG)
+    ![関連リンク セクションで、RCS 環境リンクを削除する](media/01_RCS-Delete-Environ-Related-Link.PNG)
 
 3. 表示されるダイアログ ボックスで、環境削除のスコープに関するメッセージを確認します。
 
-    ![RCS 環境の削除ダイアログ ボックスのメッセージ。](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
+    ![RCS 環境の削除ダイアログ ボックスのメッセージ](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
 
     > [!IMPORTANT]
     > RCS 環境の削除は取り消しできません。

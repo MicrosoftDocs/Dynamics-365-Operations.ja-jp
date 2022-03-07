@@ -13,17 +13,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e853a8a5730d397f253c8ce3a330794594dfd907
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 450872a38c833de9d37e2c6224839f2bca7cb4c6
+ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068487"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7429238"
 ---
 # <a name="payroll-employee"></a>給与従業員
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -53,17 +50,17 @@ ms.locfileid: "8068487"
 | **識別タイプ ID**</br>mshr_identificationtypeid</br>*文字列* |読み取り専用 | 従業員に対して定義される ID タイプ。 |
 | **ID 番号**</br>mshr_identificationnumber</br>*文字列* | 読み取り専用 |従業員に対して定義される ID 番号。 |
 | **支払準備完了**</br>mshr_readytopay</br>[mshr_noyes オプション セット](hr-admin-integration-payroll-api-no-yes.md) | 読み取り専用 | 従業員が支払準備完了としてマークされたかどうかを示します。 |
-| **給与従業員エンティティ ID**</br>mshr_payrollemployeeentityid</br>*GUID* | システム生成 | 従業員を一意に識別するための、システムが生成したグローバルに一意な識別子 (GUID) の値です。 |
+| **給与従業員エンティティ ID**</br>mshr_payrollemployeeentityid</br>*GUID* | 必須</br>システム生成 | 従業員を一意に識別するためのシステム生成の GUID 値。 |
 
 ## <a name="relations"></a>リレーション
 
 |プロパティ値 | 関連するエンティティ | ナビゲーション プロパティ | コレクション タイプ |
 | --- | --- | --- | --- |
-| _mshr_fk_employment_id_value | mshr_hcmemploymentdetailentity | mshr_FK_Employment_id | mshr_FK_HcmEmploymentDetailEntity_PayrollEmployee |
+| _mshr_fk_employment_id_value | mshr_hcmemploymentdetailentity | mshr_FK_Employment_id | - |
 | _mshr_fk_fixedcompplan_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Employee |
 | _mshr_fk_name_id_value | mshr_dirpersonnamehistoricalentity | mshr_FK_Name_id | - |
-| _mshr_fk_worker_id_value | mshr_hcmworkerbaseentity | mshr_FK_Worker_id | mshr_FK_HcmWorkerBaseEntity_PayrollEmployee |
-| _mshr_fk_workerbankaccount_id_value | mshr_hcmworkerbankaccountentity | mshr_FK_WorkerBankAccount_id | mshr_FK_HcmWorkerBankAccountEntity_PayrollEmployee |
+| _mshr_fk_worker_id_value | mshr_hcmworkerbaseentity | mshr_FK_Worker_id | - |
+| _mshr_fk_workerbankaccount_id_value | mshr_hcmworkerbankaccountentity | mshr_FK_WorkerBankAccount_id | - |
 | _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_Employee |
 | _mshr_fk_address_id_value | [mshr_payrollworkeraddressentity](hr-admin-integration-payroll-api-payroll-worker-address.md) | mshr_FK_Address_id | mshr_FK_PayrollWorkerAddressEntity_Worker |
 

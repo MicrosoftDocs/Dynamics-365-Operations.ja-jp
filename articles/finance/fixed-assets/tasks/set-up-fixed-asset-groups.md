@@ -1,24 +1,26 @@
 ---
 title: 固定資産グループの設定
 description: このトピックでは、新しい固定資産グループを作成する方法を説明します。
-author: moaamer
+author: saraschi2
+manager: AnnBe
 ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetGroup, AssetGroupBookSetup
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a39d709d739ac4fea4bf79e3174d2fbe39d4ded
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 4eead36e1274194b151b230767a4d6385173b12f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883796"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994843"
 ---
 # <a name="set-up-fixed-asset-groups"></a>固定資産グループの設定
 
@@ -36,6 +38,3 @@ ms.locfileid: "7883796"
 8. **減価償却方法** フィールドで、オプションを選択します。
 9. ページを閉じます。
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

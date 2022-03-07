@@ -1,12 +1,10 @@
 ---
 title: 原価会計分析の Power BI コンテンツのセキュリティ設定
-description: このトピックでは、Microsoft Power BI で行レベルのセキュリティに原価会計のアクセス レベルのセキュリティを反映する方法を説明します。 この機能により、ユーザーがアクセス権を持つ Power BI データのみが表示されるようになります。
+description: このトピックでは、Microsoft Power BI で行レベルのセキュリティに原価会計のアクセス レベルのセキュリティを反映する方法を説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 04ff1523f7b05fe8398513e913702b0f3c7c354c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 32093f4e47fe3d9ca691b70e15adfc3199e65beb
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682192"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754267"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>原価会計分析の Power BI コンテンツのセキュリティ設定
 
@@ -63,3 +61,6 @@ Power BI にアクセス レベルのセキュリティを反映するには、P
 
 ## <a name="additional-resources"></a>追加リソース
 Power BI の行レベルのセキュリティの詳細については、「[Power BI のモデルでのセキュリティ管理](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model)」を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

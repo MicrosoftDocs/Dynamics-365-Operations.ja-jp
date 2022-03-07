@@ -2,26 +2,19 @@
 title: X++ 日付ランタイム関数
 description: このトピックでは、日付ランタイム関数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 31341
-ms.assetid: fbaf07ef-63d0-40aa-bef5-e44d6c6a4643
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc4c26f116eb45aabe2505877af907dfe60bf74a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3044bb39c6368f2123116d5722e3ac077173318f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408691"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782045"
 ---
 # <a name="x-date-runtime-functions"></a>X++ 日付ランタイム関数
 
@@ -29,8 +22,7 @@ ms.locfileid: "4408691"
 
 このトピックでは、日付ランタイム関数について説明します。
 
-<a name="dayname"></a>dayName
--------
+## <a name="dayname"></a>dayName
 
 番号で指定されている曜日の名前を取得します。
 
@@ -193,7 +185,7 @@ endMth(0221989); //Returns the date 2821989.
 ```
 
 ## <a name="mkdate"></a>mkDate
-日、月、および年を示す 3 つの整数に基づいて日付を作成します。
+日、月、および年を示す 3 つの整数に基づいて日付を作成します。 "y" など、年の引数の "短縮形" 値はサポートされていません。
 
 ```xpp
 date mkDate(int day, int month, int year)
@@ -203,7 +195,7 @@ date mkDate(int day, int month, int year)
 
 | パラメーター | 説明                                                               |
 |-----------|---------------------------------------------------------------------------|
-| 日       | 月の日を表す整数。                          |
+| 曜日       | 月の日を表す整数。                          |
 | 月     | 年の月を表す整数。                         |
 | 年      | 1900 年から 2154 年の間で必要とする年を表す整数。 |
 
@@ -686,3 +678,6 @@ year(0221998); //Returns the value 1998.
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: 連結勘定グループおよび追加連結勘定
-description: このトピックでは、連結勘定グループと追加連結勘定について、およびそれら使用方法について説明します。
-author: panolte
+description: このトピックでは、連結勘定グループと追加連結勘定について、および Microsoft Dynamics 365 Finance での使用方法についての情報を提供します。
+author: aprilolson
+manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup
 audience: Application User
@@ -12,25 +14,26 @@ ms.reviewer: roschlom
 ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
-ms.author: roschlom
+ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 489f5417b6044e02d4711a03a17d6c19031cc2ee
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 0f89ffda27ff29e03bb517dfb6e7bfebee716027
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883390"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210244"
 ---
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>連結勘定グループおよび追加の連結勘定
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>連結勘定グループおよび追加連結勘定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、連結勘定グループと追加連結勘定について、およびそれら使用方法について説明します。
+このトピックでは、連結勘定グループと追加連結勘定について、および Microsoft Dynamics 365 Finance での使用方法についての情報を提供します。
 
-## <a name="consolidation-account-groups"></a>連結勘定グループ
+<a name="consolidation-account-groups"></a>連結勘定グループ
+----------------------------
 
-連結勘定グループで、データを連結するのに使用する勘定のグループを作成することができます。 通常、連結勘定グループは政府が定めた勘定科目を表します。 連結勘定グループは、本社が定義したグループに勘定をマッピングすることも可能です。 **連結** モジュールの **設定** 領域で連結勘定グループを検索できます。 新しいグループを追加するときに、勘定グループと名称の固有 ID を入力します。
+連結勘定グループで、データを連結するのに使用する勘定のグループを作成することができます。 連結勘定グループは通常、政府指定の勘定科目表を表すか、会社の本社によって定義されるグループにアカウントをマップします。 **連結** モジュールの **設定** 領域で連結勘定グループを検索できます。 新しいグループを追加するときに、勘定グループと名前の固有 ID を入力します。
 
 ## <a name="additional-consolidation-accounts"></a>追加連結勘定
 連結統合で、既存の勘定科目表から連結勘定グループに勘定を割り当てることができます。 その後、連結勘定の値と名前を指定できます。 

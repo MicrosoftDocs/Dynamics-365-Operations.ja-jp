@@ -1,12 +1,10 @@
 ---
-title: 個別の ER コンフィギュレーションにおける ER モデル マッピングの管理
-description: 次のステップでは、「システム管理者」または「電子レポート開発者」ロールに割り当てられたユーザーが、個別の ER コンフィギュレーションの電子申告 (ER) モデル マッピングを管理する方法を説明します。
+title: 個別の電子申告コンフィギュレーションで電子申告モデル マッピングを管理する
+description: このトピックでは、個別の ER コンフィギュレーションで電子申告 (ER) モデル マッピングを管理する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cf4896bec7aa68cc6616756ef07c4db95e20a5cf7ebde3102f482cd5abad1420
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776051"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>個別の ER コンフィギュレーションにおける ER モデル マッピングの管理
 
@@ -161,3 +159,6 @@ ER コンフィギュレーションは会社間で共有されるので、選�
 7. [OK] をクリックします。
     * 既定のモデル マッピング コンフィギュレーションが、電子ドキュメントを生成するためにこの形式コンフィギュレーションによって使用されます (作成した出力に会社コードが含まれます)。  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

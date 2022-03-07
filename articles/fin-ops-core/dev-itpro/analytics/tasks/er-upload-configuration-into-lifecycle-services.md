@@ -1,12 +1,10 @@
 ---
 title: Lifecycle Services へのコンフィギュレーションのアップロード
-description: このトピックでは、システム管理者または電子申告開発者の役割のユーザーが新しい電子申告 (ER) コンフィギュレーションを作成し、Microsoft Dynamics Lifecycle Services (LCS) にアップロードする方法について説明します。
+description: このトピックでは、新しい電子申告 (ER) のコンフィギュレーションを作成して、Microsoft Dynamics Lifecycle Services (LCS) にアップロードする方法について説明します。
 author: NickSelin
-manager: AnnBe
-ms.date: 09/14/2020
+ms.date: 06/17/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport
 audience: Application User
@@ -15,18 +13,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b480351875c7d300db790a68d61a402218f8ee36d8247188b912762f21d035b3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720763"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Lifecycle Services へのコンフィギュレーションのアップロード
 
 [!include [banner](../../includes/banner.md)]
 
 このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、新しい [電子申告 (ER) コンフィギュレーション](../general-electronic-reporting.md#Configuration) を作成し、Microsoft Dynamics Lifecycle Services (LCS) の [プロジェクト レベルのアセット ライブラリ](../../lifecycle-services/asset-library.md) にアップロードする方法について説明します。
+
+> [!IMPORTANT]
+> ER コンフィギュレーションの記憶域リポジトリとして LCS を使用することは[廃止される](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release)予定です。 詳細については、[Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md)を参照してください。
 
 この例では、コンフィギュレーションを作成し、それを Litware, Inc. という名前のサンプル会社の LCS にアップロードします。ER コンフィギュレーションはすべての会社間で共有されるため、これらの手順はどの企業でも完了できます。 これらの手順を完了するには、まず [コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) の手順を完了する必要があります。 LCS へのアクセスも必要です。
 
@@ -145,3 +146,6 @@ ms.locfileid: "4684166"
     アップロードした ER コンフィギュレーションがリストされます。
 
     プロバイダーがこの LCS プロジェクトにアクセスできる場合に、アップロードされた LCS コンフィギュレーションは、別のインスタンスにインポートできることに注意してください。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

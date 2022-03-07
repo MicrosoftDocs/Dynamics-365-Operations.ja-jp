@@ -2,15 +2,12 @@
 title: 売上グループを使用した販売時点管理 (POS) でのコミッションの追跡
 description: 顧客からの支援、アップセリング、クロスセリング、トランザクションの処理を担当したアソシエイトの売上を追跡するのは、一般的な小売業務です。
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -18,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: afbf69c072ae205e973203d97a5fbca7504ae04f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ca77ad5564cc93e9fcf335b5a49548f91c7c13face41fd73477ae4083f78be57
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770912"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>売上グループを使用した販売時点管理 (POS) でのコミッションの追跡
 
@@ -72,7 +69,7 @@ ms.locfileid: "4413638"
 
 ## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a>POS トランザクション画面の営業担当者情報の照会
 
-POS トランザクション画面のレイアウトと内容は、画面レイアウト設計者および店舗、登録者、または作業者に割り当てられた画面レイアウトを使用して設定することができます。**販売担当者** フィールドは、入荷ウィンドウの明細行タブに追加できます。これにより、取引画面に各明細行の指定された販売グループの ID が表示されます。
+POS トランザクション画面のレイアウトと内容は、画面レイアウト設計者および店舗、登録者、または作業者に割り当てられた画面レイアウトを使用して設定することができます。 **販売担当者** フィールドは、入荷ウィンドウの明細行タブに追加可能です。  これにより、取引画面に各明細行の指定された販売グループの ID が表示されます。
 
 ## <a name="adding-sales-representative-operations-to-pos-button-grids"></a>販売担当者操作を POS ボタン グリッドに追加する
 
@@ -80,11 +77,14 @@ POS では、画面レイアウトに含まれるボタン グリッドを設定
 
 | 操作                                 | 説明 |
 |-------------------------------------------|-------------|
-| 明細行の販売担当者の設定          | この POS 操作によって、店舗の適格な販売グループ (ID : 名前) のリストが表示されます。このリストから売上グループを選択すると、現在のトランザクション明細行の値が設定されます。 |
+| 明細行の販売担当者の設定          | この POS 操作によって、店舗の適格な販売グループ (ID : 名前) のリストが表示されます。 このリストから売上グループを選択すると、現在のトランザクション明細行の値が設定されます。 |
 | 明細行の販売担当者のクリア        | この POS 操作は、現在のトランザクション明細行から現在の売上グループの値を削除します。 |
-| トランザクションの販売担当者を設定   | この POS 操作によって、店舗の適格な販売グループ (ID : 名前) のリストが表示されます。このリストから売上グループを選択すると、現在のトランザクションの既定値が設定されます。 売上グループが割り当てられていない既存の明細行が設定され、その後に追加される明細行も設定されます。 |
+| トランザクションの販売担当者を設定   | この POS 操作によって、店舗の適格な販売グループ (ID : 名前) のリストが表示されます。 このリストから売上グループを選択すると、現在のトランザクションの既定値が設定されます。 売上グループが割り当てられていない既存の明細行が設定され、その後に追加される明細行も設定されます。 |
 | トランザクション販売担当者をクリア | この POS 操作は、現在のトランザクション明細行から現在の既定の売上グループ値を削除します。 トランザクションにすでに存在する明細行には影響しません。 |
 
 ## <a name="calculating-commissions"></a>コミッションの計算
 
-コミッションは、明細の転記または受注時の転記時に、指定された売上グループの従業員に対して計算されます。コミッション金額は、売上グループで定義されている従業員のコミッション分配、および取引の顧客および/または製品に関連するコミッションの計算設定に基づいて決定されます。
+コミッションは、明細の転記または受注時の転記時に、指定された売上グループの従業員に対して計算されます。 手数料金額は、営業グループで定義された就業者の手数料シェアと、取引上の顧客または製品 (あるいはその両方) の関連手数料計算設定に基づいて決定されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

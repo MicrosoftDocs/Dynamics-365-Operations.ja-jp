@@ -2,16 +2,13 @@
 title: マスター プラン - サイトと倉庫の補充、倉庫は必須
 description: このトピックでは、サイトおよび倉庫の補充分析コードを持つ品目の計画方法について説明します。 倉庫分析コードは必須です。
 author: roxanadiaconu
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2554
 ms.assetid: 3211e95f-b91a-4d27-8d92-f328ae2bcf12
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92160b45590245e2b1caab6732d1b0aaeaabd208
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 132a7171488b3c4da8ef13e11bed87c78071744d
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431841"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187461"
 ---
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>マスター プラン - サイトと倉庫の補充、倉庫は必須
 
@@ -48,8 +45,7 @@ ms.locfileid: "4431841"
 
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [マスター プランとマルチサイト機能の概要](master-plan-multisite-functionality.md)
 
@@ -63,3 +59,6 @@ ms.locfileid: "4431841"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

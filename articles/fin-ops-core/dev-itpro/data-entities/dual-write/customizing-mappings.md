@@ -2,11 +2,9 @@
 title: テーブル マッピングと列マッピングのカスタマイズ
 description: このトピックでは、テーブル マッピングと列マッピングをカスタマイズする方法について説明します。
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Developer
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8f3b0dcfbfbf02f3b6703054153ec3727efc325
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: fdf20030fe904c81b2653030ef34601514049bfd
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744787"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941097"
 ---
 # <a name="customize-table-and-column-mappings"></a>テーブル マッピングと列マッピングのカスタマイズ
 
@@ -96,9 +94,9 @@ ms.locfileid: "4744787"
     | Accounttype eq '3' | (accounttype == '3') |
     | numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
 
-    クエリ範囲で式を使用する方法の例については、[クエリ範囲での式の使用](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges) を参照してください。
+    クエリ範囲で式を使用する方法の例については、[クエリ範囲での式の使用](/dynamicsax-2012/developer/using-expressions-in-query-ranges) を参照してください。
     
-    現時点では、二重書き込みソース フィルターでのネストされたルックアップはサポートされていません。 テーブル列に対して直接、標準のフィルタ演算子のみがサポートされています。 例については、[標準フィルタ演算子](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) を参照してください。
+    現時点では、二重書き込みソース フィルターでのネストされたルックアップはサポートされていません。 テーブル列に対して直接、標準のフィルタ演算子のみがサポートされています。 例については、[標準フィルタ演算子](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators) を参照してください。
     
 ## <a name="add-new-table-maps"></a>新しいテーブル マップの追加
 
@@ -120,3 +118,6 @@ Microsoft は引き続き新しいテーブルを追加していますが、標�
 ## <a name="next-steps"></a>次のステップ
 
 [エラー管理と警告通知](errors-and-alerts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

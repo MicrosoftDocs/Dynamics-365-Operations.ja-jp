@@ -1,12 +1,10 @@
 ---
 title: ER プリンター送信先のタイプ
-description: このトピックでは、PDF または Microsoft Office 形式 (Excel\Word) で送信ドキュメントを生成するようにコンフィギュレーションされている電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対して、プリンター送信先をコンフィギュレーションする方法について説明します。
+description: このトピックでは、電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対してプリンター出力先を構成する方法について説明します。
 author: NickSelin
-manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7749a458020de664d00e81ccf0e480ae459da617
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679609"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894007"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>プリンター出力先
 
@@ -32,7 +30,7 @@ ms.locfileid: "4679609"
 
 ## <a name="prerequisites"></a>必要条件
 
-開始する前に、ドキュメント回覧エージェントのインストールおよびコンフィギュレーションを行い、ネットワーク プリンターを登録する必要があります。 詳細については、 [ドキュメント ルーティング エージェントをインストールしてネットワーク印刷を有効にする](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent) を参照してください。
+開始する前に、ドキュメント回覧エージェントのインストールおよびコンフィギュレーションを行い、ネットワーク プリンターを登録する必要があります。 詳細については、 [ドキュメント ルーティング エージェントをインストールしてネットワーク印刷を有効にする](./install-document-routing-agent.md) を参照してください。
 
 ## <a name="make-the-printer-destination-available"></a>プリンター送信先を利用可能にする
 
@@ -48,8 +46,6 @@ Microsoft Dynamics 365 Finance の現在のインスタンスで **プリンタ�
 **プリンター** 送信先は、印刷可能な PDF 形式 (PDF 合併または PDF ファイル形式の要素) または Microsoft Office Excel/Word 形式 (Excel ファイル) のいずれかで出力を生成するために使用されるファイル コンポーネントに対してのみコンフィギュレーションできます。 出力が PDF 形式で生成された場合、プリンターに送信されます。 出力が Microsoft Office 形式で生成された場合、自動的に PDF 形式に変換され、プリンターに送信されます。
 
 ### <a name="limitations"></a>制限
-
-この機能はプレビュー機能で、[Microsoft Dynamics 365 プレビューの追加使用条件](https://go.microsoft.com/fwlink/?linkid=2105274) で説明されている使用条件に従います。
 
 **印刷** 送信先は、クラウド配置に対してのみ実装されます。
 
@@ -70,3 +66,6 @@ Microsoft Dynamics 365 Finance の現在のインスタンスで **プリンタ�
 
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: AX 2012 からのアップグレード - コードのアップグレード サービスを使用した工数見積
-description: このトピックでは、LCS のコード アップグレード サービスを使用して、Microsoft Dynamics AX 2012 から Finance and Operations にコード ベースをアップグレードするために必要な作業と労力を見積もる方法を説明します。
+description: このトピックでは、LCS のコード アップグレード サービスを使用してコード ベースをアップグレードするために必要な作業と労力を見積もる方法を説明します。
 author: LaneSwenka
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 32eb1932cd320beaea72f24adc41e4175262a53e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e382895b3b7487aa16bd91c7505afa9fe56e7fe1fe21dc9080e5f02ad5666728
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683482"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724323"
 ---
 # <a name="upgrade-from-ax-2012---estimate-effort-by-using-the-code-upgrade-service"></a>AX 2012 からのアップグレード - コードのアップグレード サービスを使用した工数見積
 
@@ -43,8 +41,11 @@ ms.locfileid: "4683482"
 
 次の図は、コードのアップグレード サービスを構成するプロセスの概要を示しています。
 
-![コード アップグレード サービスのコンフィギュレーション プロセス](media/codeUpgradeConfigurationProcess.png)
+![コード アップグレード サービスのコンフィギュレーション プロセス。](media/codeUpgradeConfigurationProcess.png)
 
 コード アップグレード サービスを構成する方法については、 [Lifecycle Services (LCS) で、コード アップグレード サービスを構成する](../lifecycle-services/configure-execute-code-upgrade.md) を参照してください。
 
 コード アップグレード サービスの出力は、開発者が使用するように設計されています。 この出力は、開発者がコードのアップグレード タスクを完了するために必要な工数を見積もるのに役立ちます。 見積もりを作成するには、サービスが Azure DevOps で生成するタスクと、サービスが生成する新しいバージョンのコードを確認する必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

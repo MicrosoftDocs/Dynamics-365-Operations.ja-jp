@@ -2,26 +2,23 @@
 title: 倉庫作業の繰延処理
 description: このトピックでは、Dynamics 365 Supply Chain Management で倉庫作業の繰延処理を使用可能にする機能について説明します。
 author: josaw1
-manager: tfehr
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f6e35e52aea389d90dd140a4f85fe21e335704cad4cbab4ea26bcad1fd6774eb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735875"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>倉庫作業の繰延処理
 
@@ -31,7 +28,7 @@ ms.locfileid: "4432301"
 
 繰延処理機能では、プット工程がバックグラウンドで処理されている間でも、倉庫作業者は他の作業を続行できます。 繰延処理では、多くの作業明細行を処理する必要があり、作業者がその作業を非同期に処理できるようにする場合に便利です。 また、サーバーの処理時間がアドホックまたは予定外で増加する場合、さらに増加した処理時間がユーザーの生産性に影響を与える可能性がある場合にも役立ちます。
 
-バックグラウンド処理は、SysOperation フレームワークを使用して行われます。 詳細については、[SysOperation フレームワークの概要](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview) を参照してください。
+バックグラウンド処理は、SysOperation フレームワークを使用して行われます。 詳細については、[SysOperation フレームワークの概要](/dynamicsax-2012/developer/sysoperation-framework-overview) を参照してください。
 
 ## <a name="configuring-the-work-processing-policies"></a>作業処理ポリシーの構成
 
@@ -110,3 +107,9 @@ ms.locfileid: "4432301"
 ## <a name="deleting-completed-tasks"></a>完了済みのタスクの削除
 
 完了した繰延プット処理タスクは、それらを選択してページ上で削除することで削除できます。
+
+## <a name="additional-resources"></a>追加リソース
+
+- [手動在庫移動操作の遅延処理](deferred-processing-manual-inventory-movement.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

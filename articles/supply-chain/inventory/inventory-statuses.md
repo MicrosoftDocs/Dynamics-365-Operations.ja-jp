@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db15ad94355823c699e83c9e3f47660f813e1c9a
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: f5b38ab4674c80da496e09e5179a412d6dcd85a7
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103466"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577675"
 ---
 # <a name="inventory-statuses"></a>在庫状態
 
@@ -64,7 +64,7 @@ ms.locfileid: "8103466"
 - 在庫状態をアドホック プロセスとして変更するには、**場所別手持在庫** ページに移動して、関連するレコードを選択し、**在庫状態の変更** を選択します。
 
 > [!NOTE]
-> *追跡分析コードが制御する品目の在庫状態の変更* 機能を使用すると、選択したレコードのみを更新する機能を含めて、追跡分析コードが制御する品目の在庫状態を変更できます。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *トラッキング ディメンジョンで管理されているアイテムの在庫状況の変更* 機能を検索して、この機能のオン/オフを切り替えることができます。 この機能を有効にすると、次の操作を実行できるようになります:
+> *追跡分析コードが制御する品目の在庫状態の変更* 機能を使用すると、選択したレコードのみを更新する機能を含めて、追跡分析コードが制御する品目の在庫状態を変更できます。 [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を使用して、必要な機能を有効化します。 機能を有効にすると、次の操作を実行できるようになります。
 >
 > - **場所別手持在庫** ページで、**分析コードの表示** ボタンを使用して表示されている分析コードに基づいて明細行をグループ化し、選択した明細行の状態を変更することができます。
 > - **場所別手持在庫** ページで、複数のレコードを選択してから **在庫状態の変更** ボタンを使用して一度に変更できます。

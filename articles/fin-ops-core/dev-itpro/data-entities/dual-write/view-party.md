@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-16
-ms.openlocfilehash: 0c64e48122358d954e92343f562330d457d8c882
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4fec63de2633b1784429e565d803008e6fefd1da
+ms.sourcegitcommit: 61c77ddda4c9f79789d4f4fb138a466d309fb220
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062583"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "7863332"
 ---
 # <a name="view-party-data"></a>関係者データを表示する
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 アカウント データや連絡先データと同様に、ユーザー インターフェイス (UI) を通じて関係者データにアクセスできます。 二重書き込み関係者およびグローバル アドレス帳ソリューションのバージョン 3.3.0.5 では、関係者レコードとそれに関連付けられているすべての顧客、仕入先、連絡先、住所と電子住所を表示、作成、および管理できる **関係者** ページを提供します。
 

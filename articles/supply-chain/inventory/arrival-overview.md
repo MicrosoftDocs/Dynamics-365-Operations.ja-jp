@@ -1,30 +1,29 @@
 ---
 title: 着荷の概要
 description: このトピックでは、着荷の概要の機能に関する情報を提供します。 着荷の概要ページはこの機能の一部で、受入品目として入庫が予定されているすべての品目の概要を提供します。
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 274363
+ms.custom:
+- "274363"
+- intro-internal
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 30859292f8ec481f018fe0c5a5ca4ca11c246d4c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432037"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567442"
 ---
 # <a name="arrival-overview"></a>着荷の概要
 
@@ -37,7 +36,7 @@ ms.locfileid: "4432037"
 ## <a name="business-scenario"></a>業務シナリオ
 入荷プロセスには、次のシナリオを検討してください。
 
-[![業務シナリオ](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
+[![業務シナリオ。](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 入荷事務員のサミーは、現在の日付で入庫すると予定されている荷を知りたいとします。 **着荷の概要** ページで、サミーは現在のタスクの概要と、数量、容量、重量の概算やさまざまな注文タイプなどを取得できます。 その後、配送が入庫ドックの 1 つに到着し、サミーは配送先の一覧を受け取ります。 **着荷の概要** ページで、サミーは次のタスクを実行できます。
 
@@ -69,7 +68,7 @@ ms.locfileid: "4432037"
 
 -   仕訳帳を作成するには、仕訳帳の名前を指定する必要があります。
 
-[![仕訳帳名の指定](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
+[![仕訳帳名を指定します。](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
 -   **倉庫** および **場所** フィールドで値を指定した場合、これらの値は仕訳帳明細行に適用されます。 値を指定しない場合は、在庫トランザクションで指定されている分析コードの値が使用されます。
 
@@ -121,3 +120,6 @@ ms.locfileid: "4432037"
 
 ## <a name="summary"></a>概要
 **着荷の概要** ページは、倉庫マネージャおよび倉庫作業者が、入荷プロセスの一部として実行する必要のある作業の概要を理解する助けになります。 このページは品目の着荷プロセスの開始にも使用でき、品目が倉庫入ってきた時から追跡できるよう保証します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

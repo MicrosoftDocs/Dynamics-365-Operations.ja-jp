@@ -2,11 +2,9 @@
 title: 出荷連結ポリシーを使用して出荷を連結する
 description: このトピックでは、出荷連結ポリシーの使用方法を示すシナリオへのリンク集を提供します。
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 3f56e254eaec18cd9a7dec641a7a189967a7eda6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f2fe01dc8eae2f4cb350b2733c1f4c9f5a57907943b20cc0bd776cce2e097dd8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758427"
 ---
 # <a name="consolidate-shipments-by-using-shipment-consolidation-policies"></a>出荷連結ポリシーを使用して出荷を連結する
 
@@ -38,3 +36,6 @@ ms.locfileid: "4963362"
 
 - [出荷連結ポリシー](about-shipment-consolidation-policies.md)
 - [出荷連結ポリシーを構成する](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

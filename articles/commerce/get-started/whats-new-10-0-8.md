@@ -2,45 +2,42 @@
 title: Dynamics 365 Commerce 10.0.8 の新機能と変更点 (2020 年 2 月)
 description: このトピックでは、Dynamics 365 Commerce 10.0.8 の新機能または変更された機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 01/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4b947c355ad3bd6189edd2c005c8f8e4e1a3149b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8cd3532d77abb24624b37b526b470e6aeff47575abc7a0416f13341bebff271f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409292"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729868"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-1008-february-2020"></a>Dynamics 365 Commerce 10.0.8 の新機能と変更点 (2020 年 2 月)
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 Commerce 10.0.8 の新機能または変更された機能について説明します。 このバージョンには 10.0.319 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Commerce 10.0.8 の新機能または変更された機能について列挙します。 このバージョンには 10.0.319 のビルド番号が含まれており、次のように使用できます。
 
 - **プレビュー リリース** 2019 年 12 月
 - **一般提供 (自己更新):** 2020 年 1 月
 - **自動更新:** 2020 年 2 月 
 
-このリリースでは次の機能が含まれています。 機能のタイトルは、[リリース プランのサイト](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) の追加情報にリンクしています。
+このリリースでは次の機能が含まれています。 機能のタイトルは、[リリース プランのサイト](/dynamics365-release-plan/2019wave2/index) の追加情報にリンクしています。
 
-- [E コマースのチェックアウト中に Dynamics 365 Fraud Protection を呼び出す](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-retail/invoke-dynamics-365-fraud-protection-during-e-commerce-checkout)
-- [おすすめ候補](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-commerce/recommendations)
-- [POS の製品推奨事項](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-retail/product-recommendations-pos)
-- [チャネルごとの Azure Active Directory 企業と顧客間テナント](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
+- [E コマースのチェックアウト中に Dynamics 365 Fraud Protection を呼び出す](/dynamics365-release-plan/2019wave2/dynamics365-retail/invoke-dynamics-365-fraud-protection-during-e-commerce-checkout)
+- [おすすめ候補](/dynamics365-release-plan/2019wave2/dynamics365-commerce/recommendations)
+- [POS の製品推奨事項](/dynamics365-release-plan/2019wave2/dynamics365-retail/product-recommendations-pos)
+- [チャネルごとの Azure Active Directory 企業と顧客間テナント](/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
 
 
 ## <a name="additional-resources"></a>追加リソース
@@ -58,7 +55,7 @@ Microsoft Dynamics 365 Commerce 10.0.8 には、プラットフォーム更新�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
@@ -70,3 +67,6 @@ Microsoft Dynamics 365 Commerce 10.0.8 には、プラットフォーム更新�
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

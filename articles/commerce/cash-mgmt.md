@@ -2,15 +2,12 @@
 title: 現金管理の改善
 description: このトピックでは、Dynamics 365 Commerce の POS で現金管理の改善について説明します。
 author: anpurush
-manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0c561c39dfcbfa739c5a22394c05191e7f9bc107
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f878f39e8e9913edbe1da192e199090139a88adb6b7ed9a1e9b779c5748171b5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413718"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735657"
 ---
 # <a name="cash-management-improvements"></a>現金管理の改善
 
@@ -62,3 +59,6 @@ Retail 10.0.3 以降では、現金トランザクションに関連する次の
 - 調整中に、選択したトランザクションのバランスが取れない場合、ユーザーは不均衡調整の理由説明を入力する必要があります。 ユーザーは、単一のトランザクションを選択し、必要に応じて、関連する理由の説明に従って調整することができます。
 - シフトが終了するまで、ユーザーはトランザクションを調整したり、未調整にすることができます。 シフトを終了した後は、トランザクションを調整することはできません。
 - シフトの終了を選択した場合、Commerce はシフトに未調整の現金管理トランザクションが含まれていないことを検証します。 未調整トランザクションがある場合、ユーザーはシフトを終了させることはできません。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

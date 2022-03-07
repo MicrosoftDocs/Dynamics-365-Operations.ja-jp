@@ -1,12 +1,10 @@
 ---
 title: ER 棚卸および集計を行うための形式のコンフィギュレーション (第 4 部 - 形式の実行)
-description: 次の手順では、システム管理者または電子レポート開発者のロールに指定されたユーザーが、生成済みのテキスト出力に基づく計算と集計の電子レポート（ER）フォーマットをどのように環境設定するのかについて示します。
+description: このトピックでは、既に生成されたテキスト出力のデータに基づいて棚卸および集計を行うために電子レポート形式を構成する方法について説明します。 (第 4 部)
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, IntrastatParameters, Intrastat, InventItemIdLookupSimple, IntrastatCommodityLookup, ERFormatMappingRunLogTable, DocuView
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8f37fc3c611e9c5328f4d99be8c7c63ab59b2f08
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5202f8be275df08142c9848a2381fe5bc2ed7289a1f1fe1f8e6d349e38c2b14d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684646"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753601"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-4---run-format"></a>ER 棚卸および集計を行うための形式のコンフィギュレーション (第 4 部 - 形式の実行)
 
@@ -103,3 +101,6 @@ ms.locfileid: "4684646"
 21. [開く] をクリックします。
     * 選択した設定の実行中に収集された計算と集計の情報を含む作成済みのXMLファイルを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

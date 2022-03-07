@@ -1,28 +1,25 @@
 ---
 title: 倉庫の在庫レベルの調整 (基本倉庫)
 description: この手順では、倉庫にある製品の在庫レベルを調整するために、在庫調整仕訳帳を作成して転記するプロセスを説明します。
-author: MarkusFogelberg
-manager: tfehr
+author: yufeihuang
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventJournalCreate, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9678dffd84e9e4032510811731a67da953b40431
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 02458d588c9925a1f4cb9afeada793dfc55a2071
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432234"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573828"
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>倉庫の在庫レベルの調整 (基本倉庫)
 
@@ -60,3 +57,6 @@ ms.locfileid: "4432234"
 5. フォームを閉じます。
 6. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

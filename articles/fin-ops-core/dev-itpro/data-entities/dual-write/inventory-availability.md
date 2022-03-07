@@ -2,11 +2,9 @@
 title: 二重書き込みでの在庫状況
 description: このトピックでは、二重書き込みでの在庫状況の確認方法について説明します。
 author: yijialuan
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: riluan
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: a7bfe998d2d787203a507a831c171fc43b03fedc
-ms.sourcegitcommit: cc9921295f26804259cc9ec5137788ec9f2a4c6f
+ms.openlocfilehash: 9d9b7970720218fbcf2f512345ade672810440b4
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "4839552"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748568"
 ---
 # <a name="inventory-availability-in-dual-write"></a>二重書き込みでの在庫状況
 
@@ -118,3 +116,6 @@ Finance and Operations フィールド | タイプのマッピング | Customer 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

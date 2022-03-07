@@ -1,27 +1,25 @@
 ---
 title: 拡張機能にオーバーレイをリファクタリングするモデルの制限を緩和
-description: このトピックでは、オーバーレイを拡張機能にリファクタリングできるように、モデルの制限を緩和する方法について説明します。 これは、モデルが Microsoft Dynamics 365 for Finance and Operations 8.0 にシールされているために、必要です。
+description: このトピックでは、オーバーレイを拡張機能にリファクタリングできるように、モデルの制限を緩和する方法について説明します。
 author: CGarty
-manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: CGarty
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 3e4b1bc440d3bf62d8e932f9d45fe1f3bc56bfcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d104012d74460b4fe71d8aac6437cdaaba432f7a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409486"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782007"
 ---
 # <a name="relax-model-restrictions-to-refactor-overlayering-into-extensions"></a>オーバーレイを拡張機能にリファクタリングするため、モデルの制限を緩和する
 
@@ -54,7 +52,7 @@ Dynamics AX 2012や Dynamics 365 for Finance and Operations バージョン7か�
     
 4. オーバーレイをリファクタリングして拡張機能にし、テストします。 ​オーバーレイを削除できるように、拡張機能を利用します。 必要な場合には、拡張機能の要求を行います。
 5. Microsoft のモデルに対する一時的な変更を元に戻します。 オーバーレイを使用するモデルの展開はできなくなるため、記述子ファイルを更新することが重要です。
- 
+ 
 ## <a name="prototyping-extensibility-requests"></a>拡張機能の要求のプロトタイピング
 拡張機能を使用するようにソリューションを徐々に移行していく中で、ソリューションにおける課題を解消するために拡張機能の要求が必要になることがあります。 ソリューションの課題を解消し、拡張機能を使用するための移行プロセスをスムーズに進めるために何が必要なのかを十分に把握するために、拡張機能のプロトタイプを別のモデルとして作成することができます。
 
@@ -69,3 +67,6 @@ Dynamics AX 2012や Dynamics 365 for Finance and Operations バージョン7か�
 4. プロトタイプの拡張機能で問題がなければ、対応する要求を作成します。
 5. その拡張機能をプラットフォームやアプリケーションに実装する際には、プロトタイプの拡張機能および関連するオーバーレイはすべて、拡張機能プロトタイプ モデルから削除する必要があります。
 6. ソリューションのすべてのオーバーレイが拡張機能にリファクタリングされ、拡張機能プロトタイプ モデルが空になったら、ソリューションのリファクタリングは完了です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

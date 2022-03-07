@@ -2,25 +2,23 @@
 title: 販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 description: Retail POS API を使用すると、拡張機能を構築したり、POS に新しい機能を追加したりすることができます。
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a4cc8cffddd0f86fa5eaad7b0b78edaf7cd91c6c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0e38172ec6d49c582174641d7619fb547cbd101c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681524"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781717"
 ---
 # <a name="call-point-of-sale-pos-apis-or-operations-from-pos-extensions"></a>販売時点管理 (POS) API または POS 拡張からの工程を呼び出す
 
@@ -370,3 +368,6 @@ API は要求/応答パターンを使用して公開されるため、ビジネ
 2.  POS にログインし、任意の品目をトランザクションに追加します。
 3.  トランザクションに顧客を追加します。
 4.  **支払** ボタンをクリックし、トランザクションをコミットします。 属性を保存するかどうかをたずねるダイアログ ボックスが表示されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

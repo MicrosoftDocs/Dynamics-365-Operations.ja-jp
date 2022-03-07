@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) から更新プログラムをダウンロード
 description: このトピックでは、期待される更新と、更新を Lifecycle Services (LCS) から取得する方法について説明します。
 author: AngelMarshall
-manager: AnnBe
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a8172ddfceb48dcf142a6e037b66b214f660d90
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a84939118d786d243adc084a8c48e68af9f934bb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679940"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358571"
 ---
 # <a name="download-updates-from-lifecycle-services-lcs"></a>Lifecycle Services (LCS) から更新プログラムをダウンロード
 
@@ -84,7 +82,7 @@ ms.locfileid: "4679940"
 > [!NOTE]
 > 上記バージョンをご利用の場合は、可能な限り早めに更新を行ってください。 
 >
-> これらバージョンに対してリリースされた X++ の更新プログラムについては、 [Lifecycle Services でのイシューの検索](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) からご利用いただけます。
+> これらバージョンに対してリリースされた X++ の更新プログラムについては、 [Lifecycle Services でのイシューの検索](../lifecycle-services/issue-search-lcs.md) からご利用いただけます。
 
   
 ## <a name="download-binary-updates"></a>バイナリ更新プログラムのダウンロード
@@ -97,7 +95,7 @@ ms.locfileid: "4679940"
    > [!NOTE]
    > 保存するサポート技術情報 (KB) の記事を選択できません。これは、バイナリ更新プログラムですべての KB が更新パッケージに自動的に保存されるためです。        
    
-   ![バイナリ パッケージの保存](./media/ReviewAndSaveBinaryPackage.jpg)
+   ![バイナリ パッケージを保存します。](./media/ReviewAndSaveBinaryPackage.jpg)
 
 3. **更新プログラムの確認と保存** ページで、**パッケージの保存** を選択します。
 
@@ -127,3 +125,6 @@ X++ 更新プログラムをダウンロードするには、LCS で次の手順
 ## <a name="additional-resources"></a>追加リソース
 - [クラウド環境への更新プログラムの適用](../deployment/apply-deployable-package-system.md)
 - [開発環境でのメタデータ修正プログラムのインストール](./install-metadata-hotfix-package.md) 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b25a3489d009a02b45d66d4c3a0271a56a92f5ac
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: abae35db7e37e65950c05c8e21b8e8555edbf3be
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985628"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920784"
 ---
 # <a name="get-started-with-electronic-invoicing-for-egypt"></a>エジプト向けの電子請求を開始する
 
