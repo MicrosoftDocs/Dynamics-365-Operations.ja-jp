@@ -1,29 +1,26 @@
 ---
 title: 仕入先負担の銀行支払手数料 (日本)
 description: このトピックでは、日本の仕入先負担の銀行支払手数料についてよく寄せられる質問に回答します。
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PaymFeeBankRule_JP, VendPaymFeeGroup_JP, VendPaymModeFee
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10214
 ms.assetid: aa8a8ef3-1e5e-4174-817b-3b98e1e51509
 ms.search.region: Japan
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 896138d821a68c0126b9340b0e057140170d59d1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8ba57b9024f43a0702ed70d94cc5d389e36ad271
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408159"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592518"
 ---
 # <a name="bank-payment-fees-covered-by-vendors-in-japan"></a>仕入先負担の銀行支払手数料 (日本)
 
@@ -50,7 +47,7 @@ ms.locfileid: "4408159"
 | 異なる銀行の銀行口座                     | Bank\_Diff        | 銀行コード              | &lt;&gt;     | 銀行コード          |
 
 ## <a name="can-i-set-up-a-rule-to-compare-values"></a>値を比較するルールを設定できますか。
-はい。 **値** フィールドで指定した値を、**銀行手数料組合せ** ページの **サード パーティ銀行グループ** フィールドで選択したフィルター値に対して比較するルールを設定できます。 たとえば、銀行コード 001 の特定の銀行に適用するルールを作成するには、**サード パーティ銀行グループ** フィールドで **銀行コード** を選択し、**リレーションシップ** フィールドで **=** を選択し、**値** フィールドに **001** を入力します。
+はい。 **値** フィールドで指定した値を、**銀行の手数料に関するルール** ページの **サード パーティ銀行グループ** フィールドで選択したフィルター値に対して比較するルールを設定できます。 たとえば、銀行コード 001 の特定の銀行に適用するルールを作成するには、**サード パーティ銀行グループ** フィールドで **銀行コード** を選択し、**リレーションシップ** フィールドで **=** を選択し、**値** フィールドに **001** を入力します。
 
 | [ルールの条件]                     | サード パーティ銀行グループ | 続柄 | 先頭値 |
 |--------------------------------------------|------------------------|--------------|-------|
@@ -59,7 +56,7 @@ ms.locfileid: "4408159"
 ## <a name="how-can-i-calculate-the-consumption-tax-on-the-bank-payment-fees"></a>銀行支払手数料の消費税はどのように計算できますか。
 銀行支払手数料の消費税の計算するには、**支払手数料の設定** ページの **全般** タブで次の情報を設定します。
 
--   支払額に **手数料金額** フィールドの税を含めるかどうかを指定します。 手数料の金額に売上税を含めるには、**支払仕訳帳** ページの **設定** タブで **金額に売上税を含める** チェック ボックスを選択します。
+-   **手数料金額** フィールドの支払額に税を含めるかどうかを指定します。 手数料の金額に消費税を含めるには、**支払仕訳帳** ページの **設定** タブで **消費税を含めた金額** チェック ボックスを選択します。
 -   **支払方法** フィールドで支払方法を選択します。
 -   **割合/金額** フィールドで、**パーセンテージ** を選択します。
 -   **手数料金額** フィールドで、支払手数料率を指定します。
@@ -71,3 +68,6 @@ ms.locfileid: "4408159"
 ## <a name="additional-resources"></a>その他のリソース
 - [支払手数料の生成および転記](./tasks/post-payment-fee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

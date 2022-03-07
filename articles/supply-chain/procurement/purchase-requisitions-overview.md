@@ -1,28 +1,28 @@
 ---
 title: 購買要求の概要
 description: このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 11/02/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2174
+ms.custom:
+- "2174"
+- intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 189debe46ea28808cf3081a7d8f49686298e8c8e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: acd0deebe79e29bd1beb32ea21cd179f5bf12c43
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020082"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982905"
 ---
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
@@ -49,7 +49,7 @@ ms.locfileid: "5020082"
 
 次の図は、購買要求と購買要求明細行がワークフロー プロセス内を移動するときに割り当てられるステータスを示しています。  
 
-[![購買要求のヘッダーと明細行のステータス](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![購買要求のヘッダーと明細行のステータス。](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>購買要求のヘッダーと明細行の状態の関係
 
@@ -181,7 +181,7 @@ ms.locfileid: "5020082"
 
 予算管理が組織用に構成されている場合、かつ予算引当や事前債務が記録され、購買要求がワークフローで承認されている場合、需要連結のプロセスが開始されます。 次の図は、需要連結のプロセス フローを示しています。  
 
-[![需要連結のプロセス フロー](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![需要連結のプロセス フロー。](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 承認済購買要求明細行を連結するには、次の手順に従います。
 
@@ -192,8 +192,7 @@ ms.locfileid: "5020082"
 5.  連結機会の連結要求明細行または購買要求明細行の発注書を作成します。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [消費要求の作成](tasks/create-requisition-consumption.md)
 
@@ -201,3 +200,6 @@ ms.locfileid: "5020082"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

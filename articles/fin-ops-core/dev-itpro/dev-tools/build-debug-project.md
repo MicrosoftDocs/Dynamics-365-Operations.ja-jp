@@ -1,27 +1,23 @@
 ---
 title: プロジェクトのビルドおよびデバッグ
-description: このチュートリアルでは、フリート管理アプリケーションでコードを分析してデバッグするために Visual Studio でのツールの使用について確認します。 ブレークポイントを設定し、あるコードを変更し、その結果を構築する、単純な開発者のシナリオを検討します。
+description: このチュートリアルでは、フリート管理アプリを使用して、ブレークポイントの設定方法、コードの変更方法、および結果の構築方法を示します。
 author: pvillads
-manager: AnnBe
 ms.date: 02/06/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26731
 ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5880e09cd17f7ff9b0f6700597309802e6192bd1
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: 9e964e3fe92d24d37befb69381439fd52abf2bfe
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4409501"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867339"
 ---
 # <a name="build-and-debug-projects"></a>プロジェクトのビルドおよびデバッグ
 
@@ -53,10 +49,10 @@ ms.locfileid: "4409501"
 5.  **開く** をクリックします。 ソリューションの読み込みには時間がかかる場合があります。
 6.  **FleetManagement** プロジェクトをスタートアップ プロジェクトにします。 **ソリューション エクスプローラー** で、**フリート管理** プロジェクトを右クリックして、コンテキスト メニューで **スタートアップ プロジェクトとして設定** を選択します。
 7.  **ソリューション エクスプローラー** で、**フリート管理** プロジェクトをダブルクリックして内容を表示します。
-8.  **Code** フォルダーをダブルクリックしてから、フリート管理プロジェクトの **Classes** フォルダーをダブルクリックします。 **FMRentailCheckoutProcessor** クラスを検索します。 このクラスを右クリックしてから、**開く** をクリックします。 または、ソリューション エクスプローラー ウィンドウの上部にあるソリューション エクスプローラーの検索バーを使用できます。 検索バーに名前を入力すると、ソリューション エクスプローラーで選択された対応するコンポーネントが表示されます。 クラスで X++ コードを表示できるようになりました。 このクラスには **FinalizeRentalCheckout** という名前のメソッドがあります。
+8.  フリート管理プロジェクトの **クラス** フォルダーをダブルクリックします。 **FMRentalCheckoutProcessor** クラスを検索します。 このクラスを右クリックしてから、**開く** をクリックします。 または、ソリューション エクスプローラー ウィンドウの上部にあるソリューション エクスプローラーの検索バーを使用できます。 検索バーに名前を入力すると、ソリューション エクスプローラーで選択された対応するコンポーネントが表示されます。 クラスで X++ コードを表示できるようになりました。 このクラスには **FinalizeRentalCheckout** という名前のメソッドがあります。
 9.  最初のコメントの次の行にあるこのメソッドにブレークポイントを配置します。 これを行うには、デバッガで実行を一時停止するコード行の左側の余白をクリックします。 また、コード行の任意の場所をクリックして、F9 を押すことができます。 次の図はブレークポイントを示しています。ブレークポイントは余白に赤で塗りつぶされた円として表示されます。 
 
-    [![FMRentalCheckoutProcessorのブレークポイント](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png) 
+    [![FMRentalCheckoutProcessor のブレークポイント。](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png) 
 
     FinalizeRentalCheckout メソッドは、レンタル トランザクションが保存されるときに呼び出されます。 このメソッドは、RentalTransactionAboutTobeFinalizedEvent という名前のデリゲートを呼び出します。 このデリゲートで呼び出される、イベント ハンドラー メソッドを実装することができます。 デリゲートを呼び出すメソッドは、RentalConfirmation という名前のパラメーターを渡します。このパラメーターには、レンタルを許可するかブロックするかを示す値が含まれています。 レンタルが許可されている場合、値に true が含まれ、ブロックされている場合は、値に false が含まれます。 イベント ハンドラーは、開発者がコード内で実装するために選択するテストに基づいてこの値を変更できます。 この場合、クレジット カードの有効期限をテストするコードを変更します。
 10. F5 を押してアプリケーションをデバッグのために起動するか、**デバッグ** メニューで **デバッグ開始** をクリックします。 これらの方法のいずれかでアプリケーションを開始することが重要です。 しない場合は、Visual Studio デバッガーは起動されないため、設定されたブレークポイントのいずれかはヒットされません。 **注記**: デバッガーは、コードの位置をソースの位置に関連付ける必要があります。 アセンブリおよび net モジュールに沿って生成された PDB ファイルの消費を通じて実行されます。 デバッガーは、グローバル ツール設定の設定に示すように、PDBファイルから記号を読み込みます。 読み込むシンボルを制御する設定を含むオプション ページを開くには、**ツール** メニューで **オプション** を選択します。 **Microsoft Dynamics 365 for Finance and Operations** グループで、**デバッグ** ページを選択します。 このオプションが選択されている場合、システムは、現在のソリューションのコンポーネントに関連する PDB ファイルのみから記号を読み込みます。 これにより起動時間が大幅に短縮されるため、このラボでは必ずそれを選択してください。 このオプションを選択すると、現在のソリューションの外部にあるエンティティからソース コードを確認することはできません。 数分後、ブラウザーが起動し、プロジェクトで選択されたスタートアップ オブジェクトを表示します。
@@ -67,20 +63,20 @@ ms.locfileid: "4409501"
 12. 既存のレンタルに変更を加えます。 たとえば、**編集** をクリックして、レンタル期間が開始した時刻を変更します。
 13. レンタル レコードを強制的に検証するには、**保存** をクリックします。 ブレークポイントを配置するメソッドが呼び出されます。 実行は、ブレークポイントを含むコード行で一時停止します。 
 
-    [![ブレークポイントでの実行の一時停止](./media/forcevalidation_builddebugproj.png)](./media/forcevalidation_builddebugproj.png) 
+    [![ブレークポイントでの実行の一時停止。](./media/forcevalidation_builddebugproj.png)](./media/forcevalidation_builddebugproj.png) 
     
     アプリケーションがブレークポイントで一時停止している間に、アプリケーションの状態を調べることができます。 通常 Visual Studio で開発するアプリケーションと同じ方法を使用します。 たとえば、ツールヒントでその値を表示する変数またはパラメーターにカーソルを置きます。 
     
-    [![一時停止中のブレークポイントのヒント](./media/tooltip_builddebugproj.png)](./media/tooltip_builddebugproj.png)
+    [![一時停止中のブレークポイントのヒント。](./media/tooltip_builddebugproj.png)](./media/tooltip_builddebugproj.png)
 
 14. Visual Studio の他のデバッグ ツールも利用することができます。 たとえば、**ローカル** ウィンドウは、実行が停止した場所のすべてのローカル変数を表示します。 Visual Studio の下部にある **ローカル** タブをクリックし、**fmrentalrecord** 変数を展開します。 レコード内のすべてのフィールドの値を示す、レコードの内部状態が表示されます。 
 
-    [![ローカル ウィンドウ](./media/internalstate_builddebugproj.png)](./media/internalstate_builddebugproj.png) 
+    [![ローカル ウィンドウ。](./media/internalstate_builddebugproj.png)](./media/internalstate_builddebugproj.png) 
     
     **fmrentalrecord** 変数の **車両** プロパティの値に注目してください。 このプロパティは、**FMRental** テーブルの外部キー フィールドです。 デバッガーを使用すると、FMVehicle テーブルの関連するレコードを調べることができます。 **AutoIdentification** フィールド グループに属する値を示します。
 15. **ブレークポイント** ウィンドウには、設定されているすべてのブレークポイントが一覧表示されます。 **ブレークポイント** タブをクリックし、コンテンツを表示します。 
 
-    [![ブレークポイント ウィンドウ](./media/breakpoint_builddebugproj.png)](./media/breakpoint_builddebugproj.png)
+    [![ブレークポイント ウィンドウ。](./media/breakpoint_builddebugproj.png)](./media/breakpoint_builddebugproj.png)
 
 16. F10 キーを数回押してコードを 1 行ずつ実行し、デバッガー機能の完全な補完を使用します。 **ローカル** ウィンドウが、実行される各ステートメントですぐに変数の値を更新することに注意します。
 17. ツール バーで、**続行** をクリックするか、F5 を押します。
@@ -208,13 +204,12 @@ public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct ren
 11. **顧客** ドロップダウン リストで、一覧から Adrian Lannin を選択して **保存** をクリックします。 実行は、イベントハンドラー メソッドで設定したブレークポイントで一時停止します。
 12. F10 キーを 3 回押して、コード ブロックを実行します。 
 
-    [![コードを進める](./media/stepcodeblock_builddebugproj.png)](./media/stepcodeblock_builddebugproj.png)
+    [![コードを進める。](./media/stepcodeblock_builddebugproj.png)](./media/stepcodeblock_builddebugproj.png)
     
-13. コール スタックのコード マップを表示するには、コード エディターを右クリックし、**コード マップにコール スタックを表示** をクリックします。 呼び出し履歴にコメントを追加し、コードを進め、それに応じたコード マップの変更としてウォッチすることが必要な場合があります。
-14. F5 キーを押して続行します。 その顧客が許可されていないことが表示されます。
-15. 同じレンタルで、顧客名を Phil Spencer に変更してから **更新** をクリックします。 今回は、トランザクションが可能です。
-16. Internet Explorer を閉じます。
-17. **RentalFinalizedEventHandler** メソッドで **SubscribesTo** をコメントにします。 このステップでは、残りのチュートリアルで作業してもクレジット カード テストが実行されなくなります。
+13. F5 キーを押して続行します。 その顧客が許可されていないことが表示されます。
+14. 同じレンタルで、顧客名を Phil Spencer に変更してから **更新** をクリックします。 今回は、トランザクションが可能です。
+15. Internet Explorer を閉じます。
+16. **RentalFinalizedEventHandler** メソッドで **SubscribesTo** をコメントにします。 このステップでは、残りのチュートリアルで作業してもクレジット カード テストが実行されなくなります。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
@@ -226,3 +221,6 @@ public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct ren
 4.  ベスト プラクティス ルールのセットの一部に対する選択内容をマークします。 たとえば、**CodeStyleRules** のエントリを選択する場合、変数のベスト プラクティスのガイドラインが検査されます。 選択を更新した後、**OK** をクリックします。
 5.  プロジェクト名を右クリックして **リビルド** をクリックすることにより、フリート管理プロジェクトをリビルドします。 指定したベスト プラクティス ルールの違反が **エラー一覧** ウィンドウに表示されることがわかります。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

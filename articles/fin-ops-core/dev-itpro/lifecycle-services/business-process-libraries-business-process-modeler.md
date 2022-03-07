@@ -1,10 +1,12 @@
 ---
 title: ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
-description: このトピックでは、ビジネス プロセス ライブラリを表示する方法、コピーおよび変更する方法、ライブラリに関する情報を Microsoft Word にエクスポートする方法について説明します。
+description: この記事では、ビジネス プロセス モデラーで標準ビジネス プロセス ライブラリを表示する方法、ビジネス プロセス ライブラリをコピーおよび変更する方法、ビジネス プロセス ライブラリに関する情報を Microsoft Word にエクスポートする方法について説明します。
 author: RobinARH
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 0d7092a15802eb1cf256600d8645fc09184bcc825baba3416ac7a20d09afc9da
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4255eca80ecbf25765dc74daa8db0929b0818762
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712550"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687924"
 ---
 # <a name="business-process-libraries-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ
 
@@ -69,6 +71,3 @@ ms.locfileid: "6712550"
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

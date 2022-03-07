@@ -1,12 +1,10 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 4 月 3 日)
 description: この記事では、2020 年 4 月 3 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,17 +13,19 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8f5d7ab996e0d27f763cd4c3c51e9a2c923d909b
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 8df0fb0349ca3bde6ed4f9851900f396fb3d9335
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526789"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790311"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-3-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 4 月 3 日)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -64,7 +64,7 @@ LCS のプロジェクトあたりの環境数の制限が変更されました�
  - 休暇計画層 V2
  - 休暇計画 V2
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service ソリューションが、次の変更で利用可能になりました。
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse ソリューションが、次の変更で利用可能になりました。
 
 | 説明 | 計上額 |
 | --- | --- |
@@ -76,18 +76,18 @@ LCS のプロジェクトあたりの環境数の制限が変更されました�
 | 新しい変動報酬の設定エンティティ | <ul><li>**変動報酬プラン タイプ**</li><li>**変動報酬プラン**</li><li>**給付ルール**</li><li>**変動報酬プラン レベル**</li></ul> |
 | 新しい **作業者カレンダー雇用** エンティティ | <ul><li>追加された **作業カレンダー エンティティ**</li></ul> |
 | 新しい **給与職位詳細** エンティティ | <ul><li>追加された **給与職位詳細**</li></ul> |
-| 新しい **肩書** エンティティ | <ul><li>追加された **タイトル**</li></ul>新しい **タイトル** エンティティは Common Data Service に含まれますが、この時点では **職位** または **職務** エンティティから参照されません。 |
+| 新しい **肩書** エンティティ | <ul><li>追加された **タイトル**</li></ul>新しい **タイトル** エンティティは Dataverse に含まれますが、この時点では **職位** または **職務** エンティティから参照されません。 |
 
 > [!NOTE]
-> 職位と雇用どちらの財務分析コードは、Human Resources から Common Data Service への更新の一方向の統合を提供します。 財務分析コードの更新は、現在 Common Data Service から Human Resources へは同期されません。
+> 職位と雇用どちらの財務分析コードは、Human Resources から Dataverse への更新の一方向の統合を提供します。 財務分析コードの更新は、現在 Dataverse から Human Resources へは同期されません。
 
-今後数週間のうちに、これらのエンティティの変更がすべての環境で使用できるようになります。 Human Resources の最新 Common Data Service ソリューションを手動でインストールするには、次の操作を行います。
+今後数週間のうちに、これらのエンティティの変更がすべての環境で使用できるようになります。 Human Resources の最新 Dataverse ソリューションを手動でインストールするには、次の操作を行います。
 
 1.  [Power Platform 管理センター](https://admin.powerplatform.microsoft.com) に移動します。
 
 2.  **環境** を選択します。
 
-3.  アップグレードする環境を検索します。 環境は、Human Resources の **バージョン情報** フォームで、**Common Data Service 情報** セクションの **環境名** に対応している必要があります。
+3.  アップグレードする環境を検索します。 環境は、Human Resources の **バージョン情報** フォームで、**Dataverse 情報** セクションの **環境名** に対応している必要があります。
 
 4.  環境の詳細を表示するための環境を選択します。
 
@@ -137,3 +137,5 @@ SharePoint で保存されているドキュメントのドキュメント プ�
 [Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

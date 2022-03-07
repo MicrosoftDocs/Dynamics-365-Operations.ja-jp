@@ -2,26 +2,19 @@
 title: 演算子の優先順位
 description: このトピックでは、演算子の優先順位について説明します。
 author: pvillads
-manager: AnnBe
 ms.date: 07/01/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 6174
-ms.assetid: dd4a4971-c35a-466d-9c24-244cd75f9020
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e3dac0a00a88c7460f821600840e29596f74ba4
-ms.sourcegitcommit: 9e31a7347800d8d453d7be2c0f826010be946e95
+ms.openlocfilehash: 6b1d48fc2aad4d7ead64c5d1b1ddb0a1b530f437
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4409591"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782039"
 ---
 # <a name="operator-precedence"></a>演算子の優先順位
 
@@ -50,3 +43,6 @@ ms.locfileid: "4409591"
 | 条件付                                              | `? :`                   |
 
 テーブルの同じ行の演算子には、同等な優先順位があります。 式にこれらの演算子が 1 つ以上ある場合、代入演算子が使用されていない限り、式は左から右に評価されます。 代入演算子は右から左に評価されます。 たとえば、`&&` (論理的 AND) および `||` (論理的 OR) は、優先順位が等しく、左から右に評価されます。 つまり、`0 && 0 || 1 == 1`、および `1 || 0 && 0 == 0` です
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

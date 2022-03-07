@@ -2,24 +2,23 @@
 title: アップグレード、更新プログラム、および修正プログラムのリソース
 description: このトピックでは、Finance and Operations 環境およびデータに対する修正プログラムのアップグレード、更新、および適用に関する情報の参照先を示します。
 author: margoc
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0c312bfd854ca4c7e4c0d38f4d4799ee00836cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4f6d369e8488b1c53211f3d9fa9393f11ff8b900f30cbc8bd65da99043060510
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765784"
 ---
 # <a name="upgrades-updates-and-hotfixes-resources"></a>アップグレード、更新プログラム、修正プログラム
 
@@ -73,3 +72,6 @@ Finance and Operations のオンプレミス バージョンに更新プログ�
  詳細については、以下を参照してください。 
 - [データベースの更新](../database/database-refresh.md)
 - [Finance and Operations アプリのテクニカル サポートの設定](../lifecycle-services/support-experience.md) 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

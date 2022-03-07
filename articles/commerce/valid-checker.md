@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c7ca41b9e8a4c3127c98c756348959530a87996
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cce0d408ac6d372fb726eff8fa4b0358ec200243
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459366"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210998"
 ---
 # <a name="retail-transaction-consistency-checker"></a>小売トランザクションの整合性チェック
 
@@ -79,3 +78,6 @@ ms.locfileid: "4459366"
 
 > [!NOTE]
 > より多くのシナリオをサポートするための検証ルールは、将来のリリースで追加されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

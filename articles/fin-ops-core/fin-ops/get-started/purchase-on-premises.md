@@ -1,34 +1,33 @@
 ---
 title: Finance + Operations (オンプレミス) の購入
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) を購入し、展開する方法を説明します。
-author: maertenm
-manager: AnnBe
-ms.date: 09/12/2019
+author: cabeln
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sericks
+ms.author: cabeln
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3d6c181d0aec9758a96ae9a354ffb9aa876b8fb5
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 2d7538a6686aadd0b271c6084a98fcb96c3a5e24
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798191"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874535"
 ---
 # <a name="buy-finance--operations-on-premises"></a>Finance + Operations (オンプレミス) の購入
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Finance + Operations (オンプレミス) では、組織のニーズに最適な幅広いライセンスの種類を取りそろえております。 Finance + Operations (オンプレミス) のライセンス取得方法を理解するには、PartnerSource の [ライセンス ガイド](https://mbs.microsoft.com/Files/public/365/DynamicsOperationsOnPremEnterprise.pdf) にアクセスできるパートナーと協力してください。 組織のライセンスを購入する準備ができたら、パートナーと協力して、このトピックで説明している手順に従います。
+Microsoft Dynamics 365 Finance + Operations (オンプレミス) では、組織のニーズに最適な幅広いライセンスの種類を取りそろえております。 Finance + Operations (オンプレミス) のライセンス取得方法を理解するには、[ライセンス ガイド](https://go.microsoft.com/fwlink/?LinkId=866544) にアクセスできるパートナーと作業してください。 組織のライセンスを購入する準備ができたら、パートナーと協力して、このトピックで説明している手順に従います。
 
 > [!IMPORTANT]
-> オンプレミス環境は、Azure を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。
+> オンプレミス環境は、Azure を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
+
 
 ## <a name="purchase-client-access-licenses"></a>クライアント アクセス ライセンスを購入
 
@@ -58,11 +57,9 @@ Finance + Operations (オンプレミス) を購入するには、Microsoft Onli
 
 Microsoft Online Services ID は、Finance + Operations (オンプレミス) をエンティティが所有するハードウェアと環境にプロビジョニングして登録するために必要です。 プロビジョニングおよび登録プロセスを完了するには、プロビジョニング ガイド (下へのリンク) を参照してください。 Microsof tオンライン サービス ID が既に存在する場合は、グローバル管理者によって、プロセスを完了する必要があります。 Microsoft オンライン サービスの ID を最初に作成する場合は、プロセスを開始する担当者がグローバル管理者になります。
 
-既存の Microsoft オンライン サービス試用版または有料サブスクリプションがある場合は、サインアップ時に作成された Microsoft オンライン サービス ID が既にあります。 次のリンクをクリックするときは、オンプレミス環境にこの同じ Azure Active Directory (AAD) テナントを使用する場合に、このアカウントでログインを選択します。
-
-プロビジョニング ガイドへのアクセスについては、こちらを参照してください。
-
-- [CustomerSource のプロビジョニング ガイド](https://go.microsoft.com/fwlink/?linkid=852080)
-- [PartnerSource のプロビジョニング ガイド](https://mbs.microsoft.com/partnersource/global/deployment/documentation/user-guides/D365Ops_OnPremEEProvisionGuide)
+既存の Microsoft オンライン サービス試用版または有料サブスクリプションがある場合は、サインアップ時に作成された Microsoft オンライン サービス ID が既にあります。 オンプレミス環境にこの同じ Azure Active Directory (AAD) テナントを使用する場合、このアカウントでログインを選択します。 詳細については、[プロビジョニング ガイド](https://mbs2.microsoft.com/fileexchange/?fileID=b5aec84e-28e9-491f-ba91-9f662acd4e70) を参照してください。
 
 LCS にログインすると、プロジェクトが自動的にプロビジョニングします。 LCS プロジェクトでは、オンプレミス環境を配置できます。 LCS プロジェクトの使い方の詳細については、[Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

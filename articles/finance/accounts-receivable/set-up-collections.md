@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e06da265271e2148804c51abc7cd9ffc29a3e20e73dda3a1a23966f0e6586e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c5e08832d39f0428590780d47fd6b686048889cd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769821"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835223"
 ---
 # <a name="set-up-collections"></a>回収の設定
 
@@ -40,7 +40,8 @@ ms.locfileid: "6769821"
 
 これらの点については、このトピックの残りの部分で詳しく説明します。 
 
-## <a name="set-up-aging-period-definitions"></a>エイジング期間の定義の設定
+<a name="set-up-aging-period-definitions"></a>エイジング期間の定義の設定
+-------------------------------
 
 エイジング期間の定義の設定 エイジング期間の定義は、**エイジングした残高**、**回収活動**、および **回収ケース** リスト ページで表示される列で定義します。 また、**コレクション** ページに表示される期間を定義します。 顧客プールを設定する場合、プールのエイジング期間の定義が使用されます。 プールが設定されていない場合、**売掛金勘定パラメーター** ページで指定されている既定のエイジング期間の定義が使用されます。 既定のエイジング期間の定義が指定されていない場合、**エイジング期間の定義** ページの最初のエイジング期間の定義が使用されます。
 

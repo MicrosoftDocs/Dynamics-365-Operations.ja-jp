@@ -1,27 +1,25 @@
 ---
 title: モバイル プラットフォームを使い始める
 description: このトピックでは、モバイル プラットフォームでの開発方法について説明します。
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
-ms.custom: 255544
+ms.reviewer: tfehr
+ms.custom: intro-internal
 ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: d95920affdbde898d353bbd734bfe651142281e3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 58d754c234a642cb39e91e751ba06164f7fdde6a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679918"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985378"
 ---
 # <a name="get-started-with-the-mobile-platform"></a>モバイル プラットフォームを使い始める
 
@@ -35,7 +33,7 @@ ms.locfileid: "4679918"
 
 1.  [フリート管理プロジェクトを含むファイルをダウンロードする](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp ファイル)。
 2.  ZIP ファイルの内容を開発用コンピュータの一時的な場所に抽出します。
-3.  Microsoft Visual Studio を使用して、プロジェクト (.axpp) ファイルをインポート (**Finance and Operations** &gt; **プロジェクトのインポート** をクリック) します。
+3.  Visual Studio を使用して、プロジェクト (.axpp) ファイルをインポートします (**Finance and Operations** &gt; **プロジェクトのインポート** をクリックします)。
 4.  プロジェクト ファイルをインポートした後は、プロジェクトまたはモジュールをビルドします。
 
 ### <a name="get-the-sample-workspace"></a>サンプル ワークスペースを取得します
@@ -68,3 +66,6 @@ ms.locfileid: "4679918"
 [クライアント APIs リファレンス](client-apis/client-apis-reference.md)
 
 [サーバー APIs 参照](mobile-workspace-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

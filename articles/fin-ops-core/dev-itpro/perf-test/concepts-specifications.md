@@ -2,26 +2,24 @@
 title: 詳細のクラス
 description: このトピックでは、詳細のクラスに関する情報を提供します。
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 96493e796edf04df8fcfd4fa92ecb84acad828e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 80283214db89ef885f28cd531a2d2a8e1092ec60
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680918"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782926"
 ---
 # <a name="specification-classes"></a>詳細のクラス
 
@@ -69,3 +67,6 @@ work.lines().assertExpectedLines(
     workLines.spec().withLineNum(5).withWorkType(WHSWorkType::Put).setQuantity(2).setStatus(WHSWorkStatus::Cancelled)
 );
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,25 +2,23 @@
 title: プロセスの実行
 description: このトピックでは、プロセス自動化フレームワークでプロセスを実行する方法について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eed4135c7aa9f4017a84725a1f0d25fb0fb88e39
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bd3d19bbfaa3f79c1379899b4825793101c74d96
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679222"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781056"
 ---
 # <a name="run-processes"></a>プロセスの実行
 
@@ -34,7 +32,7 @@ ms.locfileid: "4679222"
 
 プロセス自動化フレームワークでは、並列処理を実行し、複数のバッチ タスクを必要とするプロセスの一覧をサポートしています。 実行中のプロセスが **RunBaseBatch** を実装する古いプロセスである場合は、リストから返されることはありません。 この場合、2 つのオプションがあります。
 
-- プロセスを **SysOperationServiceController** に変換します。 詳細については、[SysOperations フレームワーク](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview)を参照してください。 該当する場合は、このオプションを使用することをお勧めします。
+- プロセスを **SysOperationServiceController** に変換します。 詳細については、[SysOperations フレームワーク](/dynamicsax-2012/developer/sysoperation-framework-overview)を参照してください。 該当する場合は、このオプションを使用することをお勧めします。
 - **SysOperationServiceController** から継承された新しいクラスを使用して、レガシ **RunBaseBatch** クラスをラップします。 例については、アプリケーション オブジェクト ツリー (AOT) の **LedgerCovTotalProcessAutomationProcessor** を参照してください。
 
 次の例は、**ProcessAutomationTask** インターフェイスの実装を示しています。
@@ -90,3 +88,6 @@ internal final class ProcessAutomationTaskTestImplementation extends ProcessAuto
 | `public ProcessScheduleDateTime parmScheduledDateTime(ProcessScheduleDateTime _scheduledDateTime = scheduledDateTime)` | プロセスの実行がスケジュールされている日時。 この日時は、実際にプロセスが実行されたときの日時とは異なる場合があります。 |
 | `public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | 実行中の発生の所有者。 |
 | `public void initializeFromScheduleWorkItem(ProcessScheduleWorkItem _item)` | 別のインスタンスから **ProcessScheduleWorkItem** のインスタンスを初期化します。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

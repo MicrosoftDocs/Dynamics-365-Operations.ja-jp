@@ -2,24 +2,19 @@
 title: クライアント API のホームページ
 description: モバイル プラットフォーム クライアント API
 author: robinarh
-manager: AnnBe
 ms.date: 07/23/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 08/09/2017
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4962f366629820bbf479d65fabc48066bad1fb1c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ffbfe4e556b02b3bae92824d93fe994a8eefd81ae7eb81011db6a93b6156e623
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771970"
 ---
 # <a name="client-apis-home-page"></a>クライアント API のホームページ
 
@@ -205,3 +200,6 @@ ms.locfileid: "4679242"
 
   * [PageData](interfaces/services-business-logic-services-ipagedata.md)
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

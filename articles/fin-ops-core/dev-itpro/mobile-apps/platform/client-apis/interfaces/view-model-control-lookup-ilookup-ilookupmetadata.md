@@ -1,18 +1,18 @@
 ---
 title: LookupMetadata タイプ
 description: ルックアップ メタデータの種類。
-author: tonyafehr
+author: robinarh
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: f4b1d4d56aea0bdd9f0697538ada763c195a652e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.openlocfilehash: 52477d01e32a4d8d122b54cdfd653704c67e0a39
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781534"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661414"
 ---
 # <a name="lookupmetadata-type"></a>LookupMetadata タイプ
 

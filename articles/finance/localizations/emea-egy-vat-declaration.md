@@ -2,23 +2,25 @@
 title: エジプトの VAT 申告
 description: このトピックでは、エジプトの VAT 還付フォームを構成および生成する方法について説明します。
 author: sndray
-ms.date: 06/03/2021
+manager: AnnBe
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: sndray
+ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 7859d5a5e3273cd6e55edd1c1ce9fc4699d7ab33
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403951"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574335"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>エジプトの VAT 申告 (EG-00002)
 
@@ -77,7 +79,7 @@ Lifecycle Services (LCS) またはグローバル リポジトリから電子申
 
 エジプトの売上帳簿および購買帳簿レポートには、特定のトランザクション分類に対応する一連の列が、エジプトに固有の操作、製品およびドキュメントのタイプとして含まれます。 これらの新しい分類をトランザクションの転記時に新しいエントリ データとして含める代わりに、エジプトの VAT レポートの要件を満たすため、**構成** > **アプリケーション固有のパラメーターの設定** > **設定** で紹介された異なるルックアップに基づいて分類が決定されます。 
 
-![アプリケーション固有のパラメーター ページ。](media/egypt-vat-declaration-setup1.png)
+![アプリケーション固有のパラメーター ページ](media/egypt-vat-declaration-setup1.png)
 
 次のルックアップ構成を使用して、購買および売上 VAT 帳簿レポートのトランザクションを分類します。
 
@@ -85,7 +87,6 @@ Lifecycle Services (LCS) またはグローバル リポジトリから電子申
 - **VATRateTypeLookup** > 列 B: 税のタイプ
 - **VATRateTypeLookup** > 列 C: テーブルのアイテムの種類
 - **PurchaseOperationTypeLookup** > 列 A: ドキュメント タイプ
-- **CustomerTypeLookup** > 列A: ドキュメント タイプ
 - **SalesOperationTypeLookup** > 列 N: 操作タイプ
 - **SalesItemTypeLookup** > 列 O: アイテムの種類
 
@@ -99,8 +100,6 @@ VAT 申告および関連する帳簿レポートの生成に使用する異な�
 6. 使用可能なすべてのルックアップで手順 3 ～ 5 を繰り返します。
 7. **追加** を選択して、最後のレコード行を含め、**ルックアップの結果** の列で **適用できません** を選択します。 
 8. 残りの列で、**空白でない** を選択します。 
-9. **ステータス** フィールドで **完了** を選択します。
-10. **保存** を選択して、**アプリケーションに特化したパラメーター** のページを閉じます。
 
 > [!NOTE]
 > 最後のレコード **適用できません** を追加する場合、次のルールを定義します。引数として渡された消費税グループ、品目消費税グループ、税コード、および名前が前のルールを満たしていない場合、トランザクションは売上 VAT 帳簿に含まれません。 このルールは、レポートの生成時には使用されませんが、ルールの構成が欠落しているときにレポート生成でエラーを回避するのに役立ちます。
@@ -141,7 +140,7 @@ VAT 申告および関連する帳簿レポートの生成に使用する異な�
 | サービス       | 7    | VAT_SERV                | *空白でない* | SaleExempt            |
 | サービス       | 8    | VAT_SERV                | *空白でない* | SalesExemptCreditNote |
 | 調整    | 9    | *空白*                 | VAT_ADJ     | 販売注文                 |
-| 調整    | 10   | *空白*                 | VAT_ADJ     | SalesCreditNote       |
+| 調整    | 10   | *空白*                 | VAT_ADJ     | 購買              |
 | 適用できません | 11   | *空白でない*             | *空白でない* | *空白でない*           |
 
 **PurchaseItemTypeLookup**
@@ -151,14 +150,16 @@ VAT 申告および関連する帳簿レポートの生成に使用する異な�
 | 商品                  | 1    | VAT_GOODS               | *空白でない* | 購買                 |
 | 商品                  | 2    | VAT_GOODS               | *空白でない* | PurchaseCreditNote       |
 | サービス               | 3    | VAT_SERV                | *空白でない* | 購買                 |
-| サービス               | 4    | VAT_SERV                | *空白でない* | PurchaseCreditNote       |
+| サービス               | 4    | VAT_SERV                | *空白でない*  | PurchaseCreditNote       |
 | マシンおよび設備  | 5    | VAT_M&E                 | *空白でない* | 購買                 |
 | マシンおよび設備  | 6    | VAT_M&E                 | *空白でない* | PurchaseCreditNote       |
 | パーツ マシン         | 7    | VAT_PARTS               | *空白でない* | 購買                 |
 | パーツ マシン         | 8    | VAT_PARTS               | *空白でない* | PurchaseCreditNote       |
 | 控除             | 9    | VAT_EXE                 | *空白でない*  | PurchaseExempt           |
 | 控除             | 10   | VAT_EXE                 | *空白でない* | PurchaseExemptCreditNote |
-| 適用できません         | 11   | *空白でない*             | *空白でない* | *空白でない*              |
+| 適用できません         | 11   | *空白*                 | VAT_ADJ     | *空白でない*              |
+| 適用できません         | 12   | *空白でない*             | *空白でない* | *空白でない*              |
+| 適用できません         | 13   | *空白*                 | *空白でない* | *空白でない*              |
 
 **PurchaseOperationTypeLookup**
 
@@ -175,17 +176,6 @@ VAT 申告および関連する帳簿レポートの生成に使用する異な�
 | 調整    | 9    | *空白*          | VAT_ADJ     | PurchaseCreditNote       |
 | 調整    | 10   | *空白*          | VAT_ADJ     | 購買                 |
 | 適用できません | 11   | *空白でない*      | *空白でない* | *空白でない*              |
-
-**CustomerTypeLookup**
-
-|    ルックアップの結果    | ライン | 売上税グループ |
-|---------------------|------|-----------------|
-| 組織        |  1   | VAT_LOCAL       |
-| 組織        |  2   | VAT_EXPORT      |
-| 組織        |  3   | VAT_EXE         |
-| 最終コンシューマー      |  4   | VAT_FINALC      |
-| 組織 |  5   | VAT_PUBLIO      |
-| 該当なし      |  6   | *空白でない*     |
 
 **VATRateTypeLookup**
 
@@ -206,7 +196,7 @@ Microsoft Excel 形式で VAT 還付フォーム レポートを生成するに�
 2. **消費税** タブの **税のオプション** セクションの **VAT 明細書の形式マッピング** フィールドで、**VAT 申告 Excel (EG)** を選択します。 フィールドを空白のままにすると、標準消費税レポートが SSRS 形式で生成されます。
 3. **カテゴリ階層** を選択します。 このカテゴリにより、対外貿易のタブ トランザクションの商品コードを使用してユーザーが商品やサービスを選択および分類できるようにします。 この分類の説明は、販売および購買トランザクション レポートで詳細に表示されます。 この構成はオプションです。
 
-![申告フォーム。](media/egypt-vat-declaration-setup2.png)
+![申告 フォーム](media/egypt-vat-declaration-setup2.png)
 
 
 ## <a name="generate-a-vat-return-report"></a>VAT 還付レポートの生成

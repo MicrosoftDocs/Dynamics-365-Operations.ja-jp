@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b302c5ace34a11a53a98c733b59633a11a463bfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d8d5b8c7ac5da9c68926d7fbb4f37b81b56665cb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431741"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264725"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>購買売買契約を使用したマスター プラン
 
@@ -74,19 +73,22 @@ ms.locfileid: "4431741"
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>計画の最適化によって仕入先とリードタイムを検索する方法の例
 
-次の表に、リリースされた製品とその関連する購買売買契約のさまざまな設定が、結果として得られる計画発注書の値にどのように影響するかを示します。 右端の 2 つの列の **太字** の値は、計画の最適化によって選択された値です。 他の列の ***太字と斜体*** の値は、各行の結果の値を生成した設定です。
+次の表に、リリースされた製品とその関連する購買売買契約のさまざまな設定が、結果として得られる計画発注書の値にどのように影響するかを示します。 右端の 2 つの列の **太字** の値は、計画の最適化によって選択された値です。 その他の列の **_bold and italic_** の値は、各行の結果の値を生成した設定です。
 
 | リリース済製品: バリアント | 既定の注文設定: リードタイム | 品目補充: 仕入先の上書き | 品目補充: リードタイムの上書き | 売買契約: 仕入先 | 売買契約: リードタイム | 売買契約: リードタイムの無視 | 結果の仕入先 | 結果のリードタイム |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001*** | ***1*** | 無 | 無 | US003 | 3 | 無 | **US001** | **1** |
-| US001 | 1 | ***はい: US002*** | ***はい: 2*** | US003 | 3 | 無 | **US002** | **2** |
-| *(空白)* | 1 | 無 | 無 | ***US003*** | ***3*** | 無 | **US003** | **3** |
-| *(空白)* | ***1*** | 無 | 無 | ***US003*** | 3 | 有 | **US003** | **1** |
-| *(空白)* | ***1*** | ***はい: US002*** | 無 | US003 | 3 | 無 | **US002** | **1** |
-| *(空白)* | ***1*** | ***はい: US002*** | 無 | US003 | 3 | 無 | **US002** | **1** |
-| *(空白)* | 1 | 無 | はい: 2 | ***US003*** | ***3*** | 無 | **US003** | **3** |
-| *(空白)* | 1 | 無 | ***はい: 2*** | ***US003*** | 3 | 有 | **US003** | **2** |
+| ***US001** _ | _*_1_*_ | なし | なし | US003 | 3 | なし | _ *US001** | **1** |
+| US001 | 1 | ***はい: US002** _ | _*_はい: 2_*_ | US003 | 3 | なし | _ *US002** | **2** |
+| *(空白)* | 1 | なし | なし | ***US003** _ | _*_3_*_ | なし | _ *US003** | **3** |
+| *(空白)* | ***1** _ | なし | なし | _*_US003_*_ | 3 | あり | _ *US003** | **1** |
+| *(空白)* | ***1** _ | _*_はい: US002_*_ | なし | US003 | 3 | なし | _ *US002** | **1** |
+| *(空白)* | ***1** _ | _*_はい: US002_*_ | なし | US003 | 3 | なし | _ *US002** | **1** |
+| *(空白)* | 1 | なし | はい: 2 | ***US003** _ | _*_3_*_ | なし | _ *US003** | **3** |
+| *(空白)* | 1 | なし | ***はい: 2** _ | _*_US003_*_ | 3 | あり | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>追加リソース
 
 [購買契約](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

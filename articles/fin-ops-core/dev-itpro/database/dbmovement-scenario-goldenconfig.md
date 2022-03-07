@@ -2,11 +2,9 @@
 title: ゴールデン コンフィギュレーション プロモーション
 description: このトピックでは、Finance and Operations のゴールデン コンフィギュレーション プロモーションについて説明します。
 author: LaneSwenka
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 6070ed177ce599a4fbf37a683aed704f468ccacf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 503c07c286f18c413a4c38d64082fc8dc94317ca
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681084"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940910"
 ---
 # <a name="golden-configuration-promotion"></a>ゴールデン コンフィギュレーション プロモーション
 
@@ -136,7 +134,7 @@ update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUR
 **コマンド プロンプト** ウィンドウを開き、次のコマンドを実行します。
 
 > [!IMPORTANT]
-> 140 フォルダに現在のバージョンが反映されます。 サンドボックス環境で使用可能なバージョンを使用する必要があります。 したがって、開発環境に [Microsoft SQL Server Management Studio の最新バージョン](https://msdn.microsoft.com/library/mt238290.aspx)をインストールする必要が生じる場合があります。
+> 140 フォルダに現在のバージョンが反映されます。 サンドボックス環境で使用可能なバージョンを使用する必要があります。 したがって、開発環境に [Microsoft SQL Server Management Studio の最新バージョン](/sql/ssms/download-sql-server-management-studio-ssms)をインストールする必要が生じる場合があります。
 
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
@@ -211,7 +209,7 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
 
 必要に応じて、システムを構成する場合は、選択したユーザーが環境にアクセスできるようにできます。 デフォルトでは、管理者と Microsoft サービス アカウントを除くすべてのユーザーが無効になります。
 
-**システム管理** \> **ユーザー** \> **ユーザー** にアクセスし、運用環境へのアクセスが必要なユーザーを有効化します。 多くのユーザーを有効にする必要がある場合、[Microsoft Excel アドイン](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#open-entity-data-in-excel-when-you-start-from-finance-and-operations)を使用してこのタスクをすばやく完了できます。
+**システム管理** \> **ユーザー** \> **ユーザー** にアクセスし、運用環境へのアクセスが必要なユーザーを有効化します。 多くのユーザーを有効にする必要がある場合、[Microsoft Excel アドイン](../office-integration/use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app)を使用してこのタスクをすばやく完了できます。
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
@@ -219,3 +217,6 @@ UAT 環境にゴールデン コンフィギュレーションが適用され、
 
 * [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) には、コミュニティによって作成された多くの貴重なツールがあります。
 * [GitHub でコミュニティによって提供されたオープン ソース プロジェクト](https://github.com/search?q=dynamics+365+finance+operations&s=stars)。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

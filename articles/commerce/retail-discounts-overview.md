@@ -2,29 +2,28 @@
 title: 小売割引
 description: このトピックでは、Dynamics 365 Commerce でのコール センターの割引機能の概要を示します。 さまざまな割引フォームにあるプロパティとおよび割引管理のベスト プラクティスについて説明します。
 author: shajain
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: 16181
+ms.custom:
+- "16181"
+- intro-internal
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-ms.openlocfilehash: 7b609993f424332e00d17bd5002d21b6d1bb1d82
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 7f7c4b38deadcba1b23d1ba10db3812ec9162fd8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594466"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345070"
 ---
 # <a name="retail-discounts"></a>小売割引
 
@@ -53,7 +52,7 @@ ms.locfileid: "4594466"
 
 割引を管理するときは、各割引オプションを個別に理解することが重要ですが、どのオプションが互いにどのような影響を与えるかを理解しておくことも同じように重要です。 割引の一般的な設定は、2 つのカテゴリに分類されます。 最初の分類は、考慮すべき割引をフィルター処理する設定です。 例としては、**ステータス**、**通貨**、および **測定単位** です。 2 番目のカテゴリの設定は、複数の割引が考慮されて適用される順序を制御します。 例としては、**割引同時実行モード** および **価格決定の優先順位** があります。 次の図は、割引の各種プロパティを示しています。
 
-![割引プロパティ](./media/discount-properties.png "割引プロパティ")
+![割引プロパティ。](./media/discount-properties.png "割引プロパティ")
 
 ### <a name="discount-id"></a>割引 ID
 
@@ -177,3 +176,6 @@ Retail 8.1.1 リリース以降、製品の分析コード レベルで割引を
 - 有効でなくなった場合に割引の有効期限が切れます。 このようにして、価格決定エンジンがトランザクションの際に考慮する割引の合計が無限に増えないようにします。 そうしないと、時間の経過と共に割引の計算のパフォーマンスに影響する可能性があります。
 - 製品の認可や最後の時期の製品など、製品をグループ化するために補助的なカテゴリを活用できます。
 - 重複する割引明細行は常に回避するか最小限にしてください。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

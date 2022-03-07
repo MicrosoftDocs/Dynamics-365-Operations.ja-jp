@@ -2,9 +2,11 @@
 title: ロールベース セキュリティ
 description: このトピックでは、ロールベースのセキュリティの要素の概要を提供します。
 author: peakerbl
+manager: AnnBe
 ms.date: 01/27/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 audience: IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a83a67649038cf2fbcd9e2469351aa1116c0163022d3eb1a9d02f17ff6582ad4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 207d52f42cb99ae69d2df74e35529a52e602a266
+ms.sourcegitcommit: 053f4cda6862fbcd9e3aa6e9cb009e7de833beac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746551"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5075753"
 ---
 # <a name="role-based-security"></a>ロールベース セキュリティ
 
@@ -34,15 +36,17 @@ Finance and Operations アプリでは、ロールベースのセキュリティ
 
 自動ロール割り当てのルールを設定できるため、ユーザーの責任が変更されるたびに管理者が関与する必要はありません。 セキュリティ ロールとルールが設定された後、業務管理者は、業務データに基づく日常的なユーザーのアクセスを制御できます。
 
-## <a name="overview-of-role-based-security"></a>ロール ベースのセキュリティの概要
+<a name="overview-of-role-based-security"></a>ロール ベースのセキュリティの概要
+-------------------------------
 
 このセクションでは、ロールベースのセキュリティの要素の概要を提供します。 セキュリティ モデルは階層型であり、階層内の各要素は異なるレベルの詳細を表します。 アクセス許可は、メニュー項目やテーブルなどの個々のセキュリティ保護可能なオブジェクトへのアクセスを表します。 権限は、アクセス許可で構成されており、支払のキャンセルや預金残高の処理などのタスクへのアクセスを表します。 職務は特権で構成され、銀行取引の維持などビジネス プロセスの一部を表します。 職務と権限の両方をロールに割り当てて、Finance and Operations へのアクセスを許可することができます。 
 
 次の図は、ロールベースのセキュリティとそれらの関係の要素を示しています。 
 
-[![ロールベースのセキュリティ フレームワークの例。](./media/rbs.png)](./media/rbs.png)
+[![ロールベースのセキュリティ フレームワークの例](./media/rbs.png)](./media/rbs.png)
 
-## <a name="security-roles"></a>セキュリティ ロール
+<a name="security-roles"></a>セキュリティ ロール
+--------------
 
 すべてのユーザーは Finance and Operations にアクセスするため少なくとも 1 つのセキュリティ ロールに割り当てられている必要があります。 ユーザーに割り当てられたセキュリティ ロールにより、ユーザーが実行できる職務と、ユーザーが表示できるユーザー インターフェイスの部分が決まります。 
 
@@ -74,6 +78,3 @@ Finance and Operations アプリでは、ロールベースのセキュリティ
 フォームまたはサービスなどの各機能は、エントリ ポイントを使ってアクセスします。 メニュー項目、Web コンテンツ項目、およびサービス工程は、総称してエントリ ポイントと呼ばれます。 
 
 セキュリティ モデルでは、セキュリティ保護可能なオブジェクトと機能を実行するために必要なアクセス レベルは権限によってグループ化されます。 これには、エントリ ポイントからアクセスされるテーブル、フィールド、フォーム、またはサーバー側のメソッドが含まれます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

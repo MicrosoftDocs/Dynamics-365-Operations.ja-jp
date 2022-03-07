@@ -2,26 +2,19 @@
 title: セット ベースからレコード単位への操作の変換
 description: このトピックでは、X++ 言語での SQL 操作を高速化する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/16/2020
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: robinr
-ms.custom: 150273
-ms.assetid: 999a5ecf-559b-4d66-8b05-9a8e477e0518
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: af1980881454ce4ba22a1b7a9d683d4ae4ea15b6
-ms.sourcegitcommit: 9e31a7347800d8d453d7be2c0f826010be946e95
+ms.openlocfilehash: b11f744837bfcb98e36f4c234fd7fdada6127bb6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4409600"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783380"
 ---
 # <a name="conversion-of-operations-from-set-based-to-record-by-record"></a>セットベースからレコード単位への操作の変換
 
@@ -30,8 +23,8 @@ ms.locfileid: "4409600"
 - [delete_from](xpp-delete.md#delete-from-statement)
 - [update_recordset](xpp-update.md#update-recordset-statement)
 - [insert_recordset](xpp-insert.md#insert-recordset-statement)
-- [RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)
-- [RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)
+- [RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)
+- [RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)
 
 状況によっては、これらのレコード セット ベースの操作をより低速のレコードごとの操作に変換できます。 次のテーブルは、これらの状況を識別します。
 
@@ -62,3 +55,6 @@ public void tutorialRecordInsertList()
     insertList.insertDatabase();
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

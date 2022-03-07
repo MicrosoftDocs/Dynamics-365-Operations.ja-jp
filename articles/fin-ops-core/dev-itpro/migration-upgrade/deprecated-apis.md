@@ -2,11 +2,9 @@
 title: 非推奨 API
 description: このドキュメントでは、非推奨の API のリストと非推奨の API の移行ガイドを提供しています。
 author: aneesmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eaafed277943724ae90b4630162ad1342b4102cc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c2298b5ef496f5f10b240bac3b01d07fbc61ea37785256ad233dacd86c7c1ae5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736250"
 ---
 # <a name="deprecated-apis"></a>非推奨 API
 
@@ -169,3 +167,6 @@ Dynamics AX 2012 から API の番号が識別されています。 各 API の�
 | XmlWriter | 方法 | CreateNewFile |  |
 | XppCompiler | クラス |  |  |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

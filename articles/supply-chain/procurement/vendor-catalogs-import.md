@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: riluan
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6a6fc2b4fe4245a1fe5b5a7eaafe8cc7fd337ab9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f752e6c42653d7ac39e011e71d0d31f936996499
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020757"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260530"
 ---
 # <a name="import-vendor-catalogs"></a>仕入先カタログのインポート
 
@@ -69,3 +69,6 @@ Microsoft Dynamics 365 クライアントから、仕入先より送信された
 3. **名前を付けて保存** ダイアログ ボックスで、カタログ ファイル テンプレートを保管する場所を選択したり、ファイルを保存します。
 
 詳細および例については、このブログ投稿を参照してください: [Dynamics AX の仕入先カタログ](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/)。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

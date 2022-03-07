@@ -2,28 +2,25 @@
 title: 船荷証券の作成
 description: このトピックでは、倉庫管理のプロセスを使用して、船荷証券の作成方法を説明します。
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrier, WHSBillOfLadingOrder
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 193583
 ms.assetid: 1ad0c1cb-4346-4042-a59b-923115fac03e
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd014f5804681936920b47e999709f153def11bc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: a14d971475c71e6a02957acfa0c6e6494c4638fc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432382"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807635"
 ---
 # <a name="create-a-bill-of-lading"></a>船荷証券の作成
 
@@ -43,3 +40,6 @@ ms.locfileid: "4432382"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

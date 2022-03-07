@@ -2,26 +2,24 @@
 title: 侵入的なカスタマイズ
 description: このトピックは、侵襲性のあるカスタマイズの特性を定義します。
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 37d5e95474e1295e77e149c52d8a68b604713d90
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: afd919717c4327c557c915e4a4e291fcc5d15f7b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408844"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782011"
 ---
 # <a name="intrusive-customizations"></a>侵入的なカスタマイズ
 
@@ -64,3 +62,6 @@ ms.locfileid: "4408844"
 
 > [!NOTE]
 > 拡張機能の作成者は、これらの原則に違反しないようにする責任があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

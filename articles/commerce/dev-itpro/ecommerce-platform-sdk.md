@@ -2,26 +2,24 @@
 title: E コマース プラットフォーム ソフトウェア開発キット (SDK)
 description: このトピックでは、電子商取引プラットフォーム SDK について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 18101
 ms.assetid: c0b1740b-1cbb-47c4-94e8-779cde8411af
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 72250684395aa59142b3669722c7fe581704c8e3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4cddb6b4e5a4b9ac2083eb7f2e8fd0a3c489c5f3
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684969"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782413"
 ---
 #  <a name="e-commerce-platform-software-development-kit-sdk"></a>E コマース プラットフォーム ソフトウェア開発キット (SDK)
 
@@ -41,7 +39,7 @@ ms.locfileid: "4684969"
 
 Retail SDK は、開発環境と、Retail SDK フォルダーにある修正プログラム パッケージで使用できます。
 
-- 開発インスタンスから SDK を取得すると、構成および使用の準備がすぐに整います。 詳細については、「[アクセス インスタンス](../../dev-itpro/dev-tools/access-instances.md)」を参照してください。 
+- 開発インスタンスから SDK を取得すると、構成および使用の準備がすぐに整います。 詳細については、「[アクセス インスタンス](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md)」を参照してください。 
 - 修正プログラムから SDK を取得する場合は、修正プログラムのパッケージでは圧縮フォルダとして含まれています。 修正プログラムは累積的であり、その他のすべての修正プログラムが含まれています。 
 
 Visual Studio Online などのソース管理システムに SDK を配置することをお勧めします。
@@ -107,3 +105,6 @@ E コマース プラットフォームは、認証のためのメカニズム�
 2.  **Retail 共有パラメーター -&gt; ID プロバイダーを開く** フォームは、追加プロバイダーを登録するために使用できます。
 3.  配送スケジュール 1110 を実行します。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

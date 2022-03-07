@@ -2,31 +2,27 @@
 title: 人材の更新
 description: この記事は、Microsoft Dynamics 365 Talent に関するプロセスと頻度についての情報を提供します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: anbichse
-ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent October 2019 update
-ms.openlocfilehash: 13cda71e1bc0e9287916ab2412defabc7334cc4e
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2c48d3ed160b13c5eb39a572632634814096765a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528233"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063303"
 ---
 # <a name="talent-updates"></a>人材の更新
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Microsoft Dynamics 365 Talent は、継続的な自動サービス更新を提供するサービス (SaaS) としての真のソフトウェアです。 これらの更新には、定期的な更新を含むサービスに対する重要な改良を提供する、アプリケーションとプラットフォーム両方の変更が含まれます。
 
@@ -38,11 +34,11 @@ Microsoft Dynamics 365 Talent は、継続的な自動サービス更新を提�
 
 Talent の更新は、すべての環境に自動的に適用されます。 Talent には次の 2 つの種類のリリースがあります:
 
-- **サービス更新**: バグ修正および新機能を含む週 1 回の更新。 サービス更新には、リリース時に該当するプラットの更新も含まれます。 プラットフォーム更新がリリースされた時期を把握するには、[表 3: Platform リリース](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases) を参照してください。 毎週の更新は通常水曜日にリリースされます。 毎週の更新についての詳細は、[Dynamics 365 Talent の新機能および変更された機能](https://docs.microsoft.com/dynamics365/talent/whats-new) を参照してください。
+- **サービス更新**: バグ修正および新機能を含む週 1 回の更新。 サービス更新には、リリース時に該当するプラットの更新も含まれます。 プラットフォーム更新がリリースされた時期を把握するには、[表 3: Platform リリース](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases) を参照してください。 毎週の更新は通常水曜日にリリースされます。 毎週の更新についての詳細は、[Dynamics 365 Talent の新機能および変更された機能](./whats-new.md) を参照してください。
 
     特に断りのない限り、サポートされているすべてのデータセンターが毎週更新されます。 毎週の更新は、通常は水曜日に開始され、日曜日に完了します。 米国、オーストラリア、ヨーロッパ、英国、アジア、およびカナダ地域が毎週の更新プログラムに含まれています。 
 
-- **Common Data Service ソリューションの更新**: これらの更新は、必要に応じて約 6 週間ごとに行われます。 この中には、新規エンティティと Common Data Service の既存のエンティティに対する変更が含まれています。 これらの更新は、週単位の更新と同じ地域に対してリリースされ、すべてのデータ センターを通じてレプリケートされるまでに約 6 週間かかります。 ソリューションび更新は、毎週のサービス更新と一致しない場合もあります。
+- **Dataverse ソリューションの更新**: これらの更新は、必要に応じて約 6 週間ごとに行われます。 この中には、新規テーブルと Dataverse の既存のテーブルに対する変更が含まれています。 これらの更新は、週単位の更新と同じ地域に対してリリースされ、すべてのデータ センターを通じてレプリケートされるまでに約 6 週間かかります。 ソリューションび更新は、毎週のサービス更新と一致しない場合もあります。
 
 次の表は、スケジュールの例を示します。
 
@@ -85,11 +81,11 @@ Talent の作業の内容と、次の場所でリリースされた機能につ�
 
 - [Dynamics 365 Talent ロードマップ](https://dynamics.microsoft.com/roadmap/talent/)
 
-- [Dynamics 365 リリース プラン](https://docs.microsoft.com/dynamics365/release-plans/)
+- [Dynamics 365 リリース プラン](/dynamics365/release-plans/)
 
-- [Dynamics 365 Talent での新機能と変更](https://docs.microsoft.com/dynamics365/talent/whats-new)
+- [Dynamics 365 Talent での新機能と変更](./whats-new.md)
 
-- [Lifecycle Services (LCS) での問題検索](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (プラットフォームに関連するバグのみ)
+- [Lifecycle Services (LCS) での問題検索](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (プラットフォームに関連するバグのみ)
 
 - [Talent ブログ](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -97,7 +93,7 @@ Talent の作業の内容と、次の場所でリリースされた機能につ�
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>サンドボックス環境におけるプレビュー機能
 
-サンドボックス環境でプレビュー機能を検証してから、実働環境で有効にすることができます。 機能の有効化についての詳細は、[機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
+サンドボックス環境でプレビュー機能を検証してから、実働環境で有効にすることができます。 機能の有効化についての詳細は、[機能管理の概要](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 
 すべての新機能は少なくとも 30 日間、通常は30-60日間、プレビューのままになります。 主な機能は、通常、プレビュー期間に従って毎年 10 月と 4 月に使用可能です。 機能管理ワークスペースに新しい機能が表示されたら、すぐにそれらをオンにすることができます。 一部の機能は既定でオンになっている場合があります。
 
@@ -107,7 +103,7 @@ Talent の作業の内容と、次の場所でリリースされた機能につ�
 
 サンドボックス環境またはトライアル環境で機能をプレビューすることを強くお勧めします。 データを使用して新しい機能を完成させるには、現在の実稼働環境またはデータベースのコピーをサンドボックス環境に作成することをお勧めします。
 
-サンドボックス環境のプロビジョニングの詳細については、[Talent プロジェクトのプロビジョニング](provisioning-talent.md#provision-a-talent-project) を参照してください。 テスト環境を削除するには、[テスト ドライブ環境の削除](remove-talent-environment.md#removing-a-test-drive-environment) を参照してください。 
+サンドボックス環境のプロビジョニングの詳細については、[Talent プロジェクトのプロビジョニング](provisioning-talent.md#provision-a-talent-project) を参照してください。 テスト環境を削除するには、[テスト ドライブ環境の削除](../human-resources/hr-admin-setup-remove-instance.md#remove-a-test-drive-environment) を参照してください。 
 
 ## <a name="report-bugs"></a>バグのレポート
 
@@ -115,6 +111,9 @@ Talent の作業の内容と、次の場所でリリースされた機能につ�
 
 ## <a name="see-also"></a>参照
 
-- [Dynamics 365 および Power Platform リリース プラン](https://docs.microsoft.com/dynamics365/release-plans)
-- [Dynamics 365 Talent での新機能と変更](https://docs.microsoft.com/dynamics365/talent/whats-new)
-- [ソフトウェアのライフサイクル ポリシー](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+- [Dynamics 365 および Power Platform リリース プラン](/dynamics365/release-plans)
+- [Dynamics 365 Talent での新機能と変更](./whats-new.md)
+- [ソフトウェアのライフサイクル ポリシー](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

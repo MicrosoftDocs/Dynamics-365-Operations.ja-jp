@@ -2,26 +2,23 @@
 title: 計画企業内需要 (アウトバウンド) の表示
 description: この手順では、会社間仕入先によって達成されるすべての計画オーダーを表示する方法を示します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqOutboundIntercompanyDemand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 259ce229c18466b7d29fd231dc3f0be8a6906c6b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2eb361e1c1d18369d6b945ec18a7e3a6a1ebfb97
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431738"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829597"
 ---
 # <a name="view-outbound-planned-intercompany-demand"></a>計画企業内需要 (アウトバウンド) の表示
 
@@ -43,3 +40,6 @@ ms.locfileid: "4431738"
 8. [上流の需要の詳細] のセクションを展開します。
     * このセクションでは、どのように需要が達成されるかについての詳細を確認することができます。 ここで追加情報を表示する前に、提供会社で実行するマスター プランを待機する必要があります。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: CSV 形式で受信したドキュメントを解析する
 description: このトピックでは、受信した CSV 形式のドキュメントを解析するように電子報告 (ER) 形式を設定する方法について説明します。
 author: nickselin
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7d12e23b0b82d1290f0999c76afeacc6d36c95eb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4f608595eec130fb42d6a5267c68ed0b20a9f6a66de65ae5c66c746a69d14d47
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685751"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728252"
 ---
 # <a name="parse-incoming-documents-in-csv-format"></a>CSV 形式で受信したドキュメントを解析する
 [!include [banner](../includes/banner.md)]
@@ -69,3 +67,6 @@ ms.locfileid: "4685751"
 | 肩書き                  | ファイル名                                                       |
 |------------------------|-----------------------------------------------------------------|
 | ER モデル構成 | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

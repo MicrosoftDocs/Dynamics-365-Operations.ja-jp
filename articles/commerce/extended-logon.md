@@ -2,16 +2,13 @@
 title: MPOS およびクラウド POS の拡張ログオン機能の設定
 description: このトピックでは、Cloud POS と Retail Modern POS (MPOS) の拡張ログオンを設定するためのオプションについて説明します。
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 79878e2ffbf219f77f378997c277ced8bb41598c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f9d8889581e2e11fa5261805c866a6014df57611
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413709"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027579"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>MPOS および Cloud POS の拡張ログオン機能の設定
 
@@ -54,7 +51,7 @@ ms.locfileid: "4413709"
 
 ## <a name="assigning-an-extended-logon"></a>拡張ログオンの割り当て
 
-既定では、マネージャのみが作業者に拡張ログオンを割り当てることができます。 拡張ログオンを割り当てるには、POS で **拡張ログオン** に移動します。 検索フィールドに、オペレーター ID を入力して、作業者を検索します。 作業者を選択し、**割り当て** をクリックします。 次のページで、作業者に割り当てる拡張ログオンを機械に通すかスキャンします。 読み取りまたはスキャンが正常に読み取られた場合、**OK** ボタンが使用できるようになります。 その作業者の拡張ログオンを保存する場合、**OK** をクリックします。
+既定では、マネージャのみが作業者に拡張ログオンを割り当てることができます。 拡張ログオンを割り当てるには、POS で **拡張ログオン** に移動します。 検索フィールドに、作業者 ID を入力して、作業者を検索します。 作業者を選択し、**割り当て** をクリックします。 次のページで、作業者に割り当てる拡張ログオンを機械に通すかスキャンします。 読み取りまたはスキャンが正常に読み取られた場合、**OK** ボタンが使用できるようになります。 その作業者の拡張ログオンを保存する場合、**OK** をクリックします。
 
 ## <a name="deleting-an-extended-logon"></a>拡張ログオンの削除
 
@@ -66,4 +63,7 @@ ms.locfileid: "4413709"
 
 ## <a name="using-extended-logon"></a>拡張ログオンの使用
 
-拡張ログオンを構成すると、作業者にバーコードまたは磁気ストライプが割り当てられ、作業者は POS ログオン ページが表示されている間に、自分のカードを読み取るか、またはスキャンする必要があります。 ログオンを続行する前にパスワードが必要な場合、作業者は自分のパスワードを入力するように要求されます。
+拡張ログオンを構成すると、作業者にバーコードまたは磁気ストライプが割り当てられ、作業者は POS ログオン ページが表示されている間に、作業者カードを読み取るか、またはスキャンする必要があります。 ログオンを続行する前にパスワードが必要な場合、作業者のパスワードを入力するように要求されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

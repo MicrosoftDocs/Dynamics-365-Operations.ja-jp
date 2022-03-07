@@ -2,11 +2,9 @@
 title: 運用ワークスペースの構築
 description: このトピックでは、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9ceed8d2488e1784b368bcc28154a4b3ce8370f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f4bd903f0f725c985b1d59571e220d3814353416
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679748"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752672"
 ---
 # <a name="build-operational-workspaces"></a>運用ワークスペースの構築
 
@@ -174,3 +172,6 @@ ms.locfileid: "4679748"
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

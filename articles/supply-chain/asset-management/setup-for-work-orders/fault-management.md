@@ -1,12 +1,10 @@
 ---
 title: エラー管理
 description: このトピックでは、資産管理のエラー管理について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetFaultArea, EntAssetFaultDesigner, EntAssetFaultCopyFromObjectType, EntAssetFaultRemedy, EntAssetObjectFaultRelationRequestInfoPart, EntAssetObjectFaultRelationWorkOrderInfoPart, EntAssetFaultCreateCombinations, EntAssetObjectFaultSymptom, EntAssetObjectFaultSymptomListPage, EntAssetFaultType, EntAssetFaultSymptom, EntAssetFaultCause
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 176fbebcf88e7557bf2bafc56524cd2ec015220e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 149d4fc8026a2a1878155d2b708cf3a79dd0e5af966db4e7f9339d8ca582da70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6711956"
 ---
 # <a name="fault-management"></a>エラー管理
 
@@ -108,7 +106,7 @@ ms.locfileid: "5020967"
 
 7. **保存** をクリックして、変更を保存します。
 
-![エラー デザイナーのページ](media/21-setup-for-work-orders.png)
+![エラー デザイナーのページ。](media/21-setup-for-work-orders.png)
 
 ## <a name="create-fault-causes"></a>エラー原因タイプを作成
 
@@ -132,3 +130,6 @@ ms.locfileid: "5020967"
 
 > [!NOTE]
 > エラー現象、領域、タイプ、原因、および救済の名前は必要に応じて変更できます。 名前の変更は、関連するエラー登録に自動的に反映されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

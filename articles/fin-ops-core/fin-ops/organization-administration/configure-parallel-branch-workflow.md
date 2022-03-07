@@ -2,11 +2,9 @@
 title: ワークフロー内の並列分岐のコンフィギュレーション
 description: 並列分岐をコンフィギュレーションするには、ワークフロー エディターで次の手順を実行します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d23e981526fd17a3cb856fffcc39e76cf24da68
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: e7dac62abe080ac362abc3456a7760bbd3f790fd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797704"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066496"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>ワークフロー内の並列分岐のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 並列分岐をコンフィギュレーションするには、ワークフロー エディターで次の手順を実行します。
 
@@ -50,3 +51,6 @@ ms.locfileid: "4797704"
 ## <a name="additional-resources"></a>追加リソース
 
 [ワークフローの作成の概要](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

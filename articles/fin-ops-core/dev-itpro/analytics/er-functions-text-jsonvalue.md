@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11f9ac680ea00622367ea56106fd22508628d85d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 203fe1b1616f724ddf3015258306e0d9e8d4f599
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685910"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570019"
 ---
 # <a name="jsonvalue-er-function"></a>JSONVALUE ER 関数
 
@@ -59,3 +58,6 @@ JSON データのスカラー値の識別子。
 ## <a name="additional-resources"></a>追加リソース
 
 [テキスト関数](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

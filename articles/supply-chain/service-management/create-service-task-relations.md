@@ -2,28 +2,25 @@
 title: サービス作業関係の作成
 description: サービス契約またはサービス注文で実行するサービス作業を記述するには、サービス作業をその契約または注文に関連付けることができます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e50b4322c65097ab4f8aba9c36e4d5e6cc4c01b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f9a7808357916ed80ddfa46e1e4f362e0dde1671
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432086"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819067"
 ---
 # <a name="create-service-task-relations"></a>サービス作業関係の作成    
 
@@ -33,13 +30,13 @@ ms.locfileid: "4432086"
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>サービス合意との関係の作成
 
-1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** の順にクリックします。
+1.  **サービス管理** \> **共通** \> **サービス契約** \> **サービス契約** に移動します。
 
 2.  既存のサービス合意を選択するか、新しいサービス合意を作成します。
 
-3.  アクション ウィンドウで、**サービス作業** ボタンをクリックします。
+3.  アクション ウィンドウで、**サービス作業** ボタンを選択します。
 
-4.  **サービス作業** フォームで Ctrl + N キーを押して新しい行を作成し、**サービス作業** リストからサービス作業を選択して、サービス作業をサービス契約に関連付けます。
+4.  **サービス作業** フォームで **新規** を選択して新しい行を作成し、**サービス作業** リストからサービス作業を選択して、サービス作業をサービス契約に関連付けます。
 
 5.  **説明** タブで、自由書式のフィールドに内部または外部の任意のメモ説明を入力します。
 
@@ -51,13 +48,13 @@ ms.locfileid: "4432086"
 
 ## <a name="create-a-relation-with-a-service-order"></a>サービス注文との関係の作成
 
-1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** の順にクリックします。
+1.  **サービス管理** \> **共通** \> **サービス注文** \> **サービス注文** に移動します。
 
 2.  既存のサービス注文を選択するか、新しいサービス注文を作成します。
 
-3.  アクション ウィンドウで、**サービス作業** ボタンをクリックします。
+3.  アクション ウィンドウで、**サービス作業** ボタンを選択します。
 
-4.  **サービス作業** フォームから、Ctrl + N キーを押して新しい行を作成し、**サービス作業** リストからサービス作業を選択して、サービス作業をサービス注文に関連付けます。
+4.  **サービス作業** フォームから、**新規** を選択して新しい行を作成し、**サービス作業** リストからサービス作業を選択して、サービス作業をサービス注文に関連付けます。
 
 5.  **説明** タブで、自由書式のフィールドに内部または外部の任意のメモ説明を入力します。
 
@@ -75,3 +72,6 @@ ms.locfileid: "4432086"
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

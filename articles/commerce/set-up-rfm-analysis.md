@@ -2,16 +2,13 @@
 title: Recency、頻度、および金融 (RFM) 分析の設定
 description: このトピックでは、顧客の Recency、頻度、および金融 (RFM) 分析の設定方法について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRRFMDefinition
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 78943
 ms.assetid: 8ff9aac3-5ada-4150-85fd-18901c926d53
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0eece0678335caa789f0b2c4a324deab6832b53c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413828"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795480"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Recency、頻度、および金融 (RFM) 分析の設定
 
@@ -97,3 +94,6 @@ RFM スコアが **顧客サービス** ページの右側の **注文履歴** �
 2. **RFM 分析** ページで、表示するレコードを選択します。
 3. レコード履歴を表示するには、**履歴** クイックタブを選択します。
 4. レコードの履歴をクリアするには、**履歴のクリア** を選択します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
