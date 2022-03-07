@@ -2,11 +2,9 @@
 title: 採用による既存の従業員の雇用
 description: 場合によっては、空いている職位が既に組織の従業員である候補者によって一杯になることがあります。
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42a6fbdad19db3c85509078c9f7549a6397f93fc
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 057dfd841524ad331aadb2ceca762a867d47fa86
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797262"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751961"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>採用による既存の従業員の雇用
 
@@ -40,3 +38,6 @@ ms.locfileid: "4797262"
 9. [職位の変更] をクリックします。
     * この時点で、報酬を変更することもできます。 この時点で報酬を割り当てていない場合、作業者フォームに移動して、[報酬] タブを選択し、「固定プラン」を選択すると、報酬を変更できます。 「職位の変更」を選択すると、申請のステータスは「採用済」に更新されます。  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: 休暇タイプのコンフィギュレーション
 description: Dynamics 365 Human Resources で、従業員が使用できる休暇のタイプを設定します。
 author: andreabichsel
-manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6e6ca7d04b86232ba48474fcbe288a18995661ae
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419345"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271130"
 ---
 # <a name="configure-leave-and-absence-types"></a>休暇タイプのコンフィギュレーション
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources で休暇タイプは、従業員がレポートできる休暇のタイプを定義します。 休暇タイプは、組織のニーズに応じてカスタマイズできます。 たとえば次のような休暇タイプを入力します。
 
@@ -72,8 +71,7 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
    
  3. 休暇タイプに **繰越休暇タイプ** を設定します。 このオプションを選択すると、繰越残日数は指定された休暇タイプに転送されます。 繰越休暇タイプも、休暇および不就業プランに含める必要があります。 
  
- 4. 休暇タイプの **有効期限ルール** を定義します。 このオプションを設定すると、日数または月数の単位を選択して、有効期限の期間を設定できます。 有効期限ルールの有効日を設定することもできます。 有効期限の時点で存在する休暇残高は、休暇タイプから差し引かれ、休暇残高に反映されます。 
- 
+4. 休暇タイプの **有効期限ルール** を定義します。 このオプションを設定すると、日数または月数の単位を選択して、有効期限の期間を設定できます。 有効期限ルールの有効日は、休暇の有効期限を処理するバッチ ジョブの実行を開始する時期、またはルールが有効になる日付を決定するために使用されます。 有効期間自体は、常に見越計上期間の開始日に発生します。 たとえば、見越計上期間の開始日が 2021 年 8 月 3 日で、有効期限ルールが 6 か月に設定されている場合、ルールは見越計上期間の開始日からの有効期限のオフセットに基づいて処理され、2022 年 2 月 3 日に実行されることになります。 有効期限の時点で存在する休暇残高は、休暇タイプから差し引かれ、休暇残高に反映されます。
  
 ## <a name="see-also"></a>参照
 
@@ -81,4 +79,8 @@ Dynamics 365 Human Resources で休暇タイプは、従業員がレポートで
 - [休暇および欠勤計画の作成](hr-leave-and-absence-plans.md)
 - [作業時間カレンダーの作成](hr-leave-and-absence-working-time-calendar.md)
 - [休暇の中断](hr-leave-and-absence-suspend-leave.md)
+- [休暇の売買申請ワークフローの作成](hr-leave-and-absence-buy-sell-workflow.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

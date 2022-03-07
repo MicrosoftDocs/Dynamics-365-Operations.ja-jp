@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9861d6bc83d3f1d62091154a36436627eeccad4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 61f25b93440495b2d1b70227ecda011c43c2e564
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969356"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208778"
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>原価管理ワークスペース パラメーターのコンフィギュレーション
 
@@ -58,3 +58,6 @@ ms.locfileid: "4969356"
 27. [原価オブジェクト分析コード階層ノード] フィールドで、値を入力または選択します。
     * [原価オブジェクト分析コード階層] を選択後、[原価要素分析コード階層] を展開し、要求された原価の値を確認します。 たとえば、値を表示するには、階層から [製造間接費] へ展開できます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

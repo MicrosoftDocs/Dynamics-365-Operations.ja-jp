@@ -2,26 +2,23 @@
 title: ロイヤルティ契約管理
 description: このトピックでは、Microsoft Dynamics 365 Finance のロイヤルティ契約管理について説明します。
 author: t-benebo
-manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment
 audience: IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a6d32d1b4c3011353ff60b6adcca1ddb9099b353
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e7f68ac66f878ed1964d7d1f19b56899513473040a0cb4de63665aaa1d81f975
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408852"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737223"
 ---
 # <a name="royalty-contract-management"></a>ロイヤルティ契約管理
 
@@ -55,7 +52,7 @@ ms.locfileid: "4408852"
 
 ロイヤルティ契約は、**ロイヤリティ契約** ページで登録されます。 **ロイヤルティ契約** ページを開くには、**買掛金勘定 \> ブローカーおよびロイヤルティ \> ロイヤルティ契約** を選びます。
 
-![ロイヤルティ契約ページ](./media/royalty-contract-management-royalty-agreements-page.png "ロイヤルティ契約ページ")
+![ロイヤルティ契約ページ。](./media/royalty-contract-management-royalty-agreements-page.png "ロイヤルティ契約ページ")
 
 ページの下の部分の **選択** タブは、ロイヤリティ手数料の対象製品を示しています。
 
@@ -76,7 +73,7 @@ ms.locfileid: "4408852"
 
 販売注文明細行がロイヤリティ手数料の対象となるかどうかを確認するには、**販売注文明細行 \> 表示 \> 価格の詳細** を選択します。 **価格の詳細** ページで、**ロイヤルティ** クイックタブを選択します。
 
-![価格の詳細ページのロイヤルティ クイック タブ](./media/royalty-contract-management-price-details.png "価格の詳細ページのロイヤルティ クイック タブ")
+![価格の詳細ページのロイヤルティ クイック タブ。](./media/royalty-contract-management-price-details.png "価格の詳細ページのロイヤルティ クイック タブ")
 
 **ロイヤリティ** クイック タブは、明細行に適用される有効な契約コードからのロイヤリティ手数料を示しています。 また、**詳細** クイック タブの **利益見積** にある **ロイヤリティ金額** フィールドは、製品単位あたりのロイヤリティ手数料を指定します。
 
@@ -127,3 +124,6 @@ ms.locfileid: "4408852"
 - ロイヤルティの期日を迎えた仕入先残高と損益計算書の更新
 
 このように、この機能は、潜在的なエラーや未払いロイヤルティに対する利息を回避するのに役立ち、会社にとって適切なタイミングのキャッシュ フロー予測に貢献します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

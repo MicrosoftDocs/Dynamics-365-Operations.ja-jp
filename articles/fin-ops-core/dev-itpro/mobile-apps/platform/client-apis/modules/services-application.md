@@ -1,25 +1,18 @@
 ---
 title: アプリケーション モジュール
-description: アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。 各アプリケーションは、ページ、アクション、データ クエリおよびそれらを結合するロジックで構成されています。 アプリケーションは主に宣言型メタデータ システムで記述され、付随的な拡張モデルを持つことができます。
-author: robinarh
-manager: AnnBe
+description: アプリケーションとはその内部で使用される概念とデータの周りにサンドボックス化されたランタイム実行の単位です。
+author: tonyafehr
 ms.date: 09/17/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 85deae4eb8f77348419c6a35259b11e658ae5b51
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.openlocfilehash: 4141ed8834efc7d3a9c82217c7fd37fdaa46ea9f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682562"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781857"
 ---
 # <a name="application-module"></a>アプリケーション モジュール
 
@@ -99,3 +92,6 @@ main(metadataService: [MetadataService](../interfaces/services-business-logic-se
 
 #### <a name="returns-application"></a>[Application](../interfaces/services-application-iapplication.md) を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: コンフィギュレーション可能な製品の販売注文の作成
 description: この手順では、販売注文で製品にコンフィギュレーション テンプレートを適用する方法を示します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrder, SalesTable, PCRuntimeConfigurator, PCTemplateConfigurationSelection
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 988d87757019d20dcaf675af925166ed376685f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 81e573593fbbb0bf87e53c5cbd985b38a8db89ac
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431955"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841602"
 ---
 # <a name="create-a-sales-order-for-a-configurable-product"></a>コンフィギュレーション可能な製品の販売注文の作成
 
@@ -53,3 +50,6 @@ ms.locfileid: "4431955"
 
 ## <a name="select-the-product-configuration"></a>製品コンフィギュレーションの選択
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

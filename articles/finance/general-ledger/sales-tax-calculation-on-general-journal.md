@@ -1,26 +1,29 @@
 ---
 title: 一般仕訳帳明細行での消費税計算
 description: このトピックでは、一般仕訳帳明細行のさまざまなタイプの勘定 (仕入先、顧客、元帳、およびプロジェクト) に対する消費税がどのように計算されるかについて説明します。
-author: EricWangChen
-ms.date: 02/16/2022
+author: EricWang
+manager: Ann Beebe
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: wangchen
+ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 51d43c8e6d16201e1f8c392c13ead20287782dcc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311957"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445040"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>一般仕訳帳明細行での消費税計算
 [!include [banner](../includes/banner.md)]
@@ -55,7 +58,7 @@ ms.locfileid: "8311957"
 
 次の図では、ルールをグラフィック表示しています。
 
-![プロジェクト勘定に対する税提示方法の可能性。](media/Sales-Tax-Direction-Vendor.jpg)
+![プロジェクト勘定に対する税提示方法の可能性](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>勘定タイプが仕入先の場合
 
@@ -73,13 +76,23 @@ ms.locfileid: "8311957"
 
 次の図では、ルールをグラフィック表示しています。
 
-![仕入先勘定に対する税提示方法の可能性。](media/Sales-Tax-Direction-Vendor.jpg)
+![仕入先勘定に対する税提示方法の可能性](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>勘定タイプが顧客の場合
 
-伝票に勘定タイプが **顧客** である仕訳帳明細行がある場合、伝票の仕訳帳明細行すべてに同じ税提示方法が適用されます。 
+伝票に勘定タイプが **顧客** である仕訳帳明細行がある場合、伝票の仕訳帳明細行すべてに同じ税提示方法が適用されます。 次の点は、顧客勘定に対して可能性のある税提示方法を示します。
 
-消費税コードが非課税販売である場合、消費税提示方法は免税仕入になります。 それ以外の場合、消費税提示方法は消費税支払になります。
+•   消費税コードが免税である場合、消費税提示方法は免税仕入になります。
+
+•   消費税コードがイントラコム VAT である場合、消費税提示方法は消費税収入になります。
+
+•   消費税コードが逆請求である場合、消費税提示方法は消費税収入になります。
+
+それ以外の場合、消費税提示方法は消費税支払になります。
+
+次の図では、ルールをグラフィック表示しています。
+
+![顧客勘定に対する税提示方法の可能性](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>勘定タイプが元帳の場合
 
@@ -89,11 +102,11 @@ ms.locfileid: "8311957"
 
 •   消費税コードが免税である場合、消費税提示方法は免税仕入になります。
 
-それ以外は、仕訳帳金額が借方 (正) の場合、消費税提示方法は消費税収入になります。仕訳帳金額が貸方 (負) の場合、消費税提示方法は消費税支払となります。
+それ以外は、仕訳帳金額が借方 (正) の場合、消費税提示方法は消費税収入になります。仕訳帳金額が貸方 (負) の場合、消費税提示方法は消費税支払になります。
 
 次の図では、ルールをグラフィック表示しています。
 
-![元帳勘定に対する税提示方法の可能性。](media/Sales-Tax-Direction-Ledger.jpg)
+![元帳勘定に対する税提示方法の可能性](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>消費税提示方法を上書きする
 
@@ -105,9 +118,9 @@ ms.locfileid: "8311957"
 
 このセクションでは、消費税金額の符号の計算方法について説明します。
 
-![消費税トランザクション ページ。](media/sales-tax-amount-sign.jpg)
+![消費税トランザクション ページ](media/sales-tax-amount-sign.jpg)
 
-次の表では、一時的な消費税テーブルで消費税提示方法および消費税金額の符号を決定する一般的なルールを示します。
+次の表では、一時的な消費税テーブルで消費税金額の符号を決定する一般的なルールを示します。
 
 | 仕訳帳明細行の金額 | 消費税提示方法  | 消費税金額の符号 |
 |---------------------|----------------------|-----------------------|
@@ -116,7 +129,7 @@ ms.locfileid: "8311957"
 | 負            | 消費税収入 | 負              |
 | 負            | 消費税支払    | 正              |
 
-**元帳** 明細行で消費税グループまたは品目消費税グループが選択されている場合、**プロジェクト** または **元帳** 明細行のみを持つ伝票に対して特別なルールがあります。 このルールは、**一般仕訳帳の独立した消費税計算機能を有効にする** 機能により制御されます。 この機能をオフにすると、**元帳** 明細行の税金額は、**プロジェクト** 明細行の借方/貸方の方向を使用します。 機能をオンにすると、**元帳** 明細行の税金額はそれ自体の借方/貸方の方向を使用します。 次の表では、各シナリオのルールを示します。 
+**元帳** 明細行で消費税グループまたは品目消費税グループが選択されている場合、**プロジェクト** または **元帳** 明細行のみを持つ伝票に対して特別なルールがあります。 このルールは、一般仕訳帳の独立した消費税計算機能を有効にすることにより制御されます。 この機能をオフにすると、**元帳** 明細行の税金額は、**プロジェクト** 明細行の借方/貸方の方向を使用します。 機能をオンにすると、**元帳** 明細行の税金額はそれ自体の借方/貸方の方向を使用します。 次の表では、各シナリオのルールを示します。 
 
 **機能がオンになっている場合のルール**
 
@@ -144,6 +157,3 @@ ms.locfileid: "8311957"
 | 消費税収入 | 負              | 税収入の勘定 | 負 (貸方)  |
 | 消費税支払    | 正              | 税支払の勘定    | 負 (貸方)  |
 | 消費税支払    | 負              | 税支払の勘定    | 正 (借方)  |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

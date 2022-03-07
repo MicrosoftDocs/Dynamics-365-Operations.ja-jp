@@ -5,17 +5,17 @@ author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b254e31979f0240f56b5f6e6a88247f2018d1471
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: eed4d9b320720156598b3da5a0e1587e9e5b4c4a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782152"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594729"
 ---
 # <a name="fields-and-field-groups-subpattern"></a>フィールドおよびフィールド グループのサブパターン
 

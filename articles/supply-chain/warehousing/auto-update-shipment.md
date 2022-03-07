@@ -1,29 +1,26 @@
 ---
 title: 出荷の自動更新
 description: このトピックでは、出荷の自動更新機能の概要を示します。
-author: josaw1
-manager: tfehr
+author: Mirzaab
 ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTemplateTable,SalesTableListPage,SalesTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7fa2684340f5ce45b99ff9aee9937071f936b81a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3402a4c90299cf52e489e85ed55aff9762796545
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431761"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580099"
 ---
 # <a name="shipment-auto-updates"></a>出荷の自動更新
 
@@ -140,3 +137,6 @@ ms.locfileid: "4431761"
 出荷のステータスが **ウェーブ済** またはそれ以上である場合、販売注文明細行の数量に対する更新は、出荷に関連付けられている積荷明細行に対して反映または検証されません。 積荷明細行の数量を変更する場合は、積荷明細行で直接行う必要があります。
 
 検証は、積荷明細行に対する作業が作成され、引当が行われた後に行われます。 販売注文明細行の数量の減少は、作業明細行の引当に対して検証されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

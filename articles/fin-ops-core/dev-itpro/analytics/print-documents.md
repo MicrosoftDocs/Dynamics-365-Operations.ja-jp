@@ -1,27 +1,27 @@
 ---
 title: ドキュメントの印刷の概要
 description: ローカル プリンターまたはネットワークに接続されたデバイスのいずれかを使用してドキュメントを印刷できます。 この記事では、ドキュメントの印刷方法の概要を提供します。
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: kfend
-ms.custom: 69161
+ms.custom:
+- "69161"
+- intro-internal
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1d64a2efeade5e9ba24f4dfe61c861f5a4cbad4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680099"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984911"
 ---
 # <a name="document-printing-overview"></a>ドキュメントの印刷の概要
 
@@ -51,10 +51,10 @@ ms.locfileid: "4680099"
 シナリオによってソリューションが異なるため、アプリケーションは組み込みサービスおよびユーザーがその目標を達成するのためのツールを提供します。
 
 - **シナリオ 1** は HTML5 クライアントのブラウザーの表示によってサポートされています。
-- **シナリオ 2** は、クライアント アプリケーションおよび Microsoft 365 サービスを使用します。
+- **シナリオ 2** はクライアント アプリケーションおよび Microsoft 365 サービスを使用します。
 - **シナリオ 3** には、クライアント アプリケーションからおよび Microsoft Azure でホストされているサービスからのサポートが必要です。
 
-Azure サブスクリプションに配置されているプラットフォームに加えて、Finance and Operations アプリケーションは顧客に、統合された、ドキュメントを印刷するためドメインでホストされるデバイスをより使いやすくするファースト パーティ Azure アプリケーションを提供します。
+Azure サブスクリプションに配置されているプラットフォームに加えて、Finance and Operations アプリケーションは顧客に、統合された、ドキュメントを印刷するためドメインでホストされるデバイスをより使いやすくする当事者 Azure アプリケーションを提供します。
 
 ## <a name="service-overview"></a>サービスの概要
 ホストされるアプリケーションによって生成されるドキュメントが、ネットワークに接続されたデバイスで印刷されるのを待機している間に、Azure BLOB ストレージに保存されます。 [ネットワーク印刷を有効にするため、ドキュメント回覧エージェントをインストールする](install-document-routing-agent.md) は Azure 認証を使用して、Azure サービスへのセキュリティで保護されたチャネルを確立します。
@@ -71,6 +71,9 @@ Azure サブスクリプションに配置されているプラットフォー�
 
 次の図は、ネットワーク印刷操作のサポートに役立つ基本的なコンポーネントを示します。
 
-[![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
+[![service-components-for-network-printing\_2016。](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 複数のドキュメント回覧エージェントを使用して単一のプリンターを登録できることに注意してください。 プリンターの基本設定を解決するため、ホストされているサービスは、すべてのネットワーク プリンターを一意に識別するネットワーク パスを使用します。 その結果、プリンターが複数のクライアントにより登録されている場合でも、アプリケーションで使用可能なプリンターの一覧で単一の選択として表示されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

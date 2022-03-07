@@ -2,11 +2,9 @@
 title: POS アクセス許可グループの作成
 description: このトピックでは、POS アクセス許可グループの作成方法を説明します。
 author: scott-tucker
-manager: AnnBe
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, HcmJob
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ac03e1bfb7a2463b31feca0a4303c182a00ad259
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 362fbfb5f0cae7cc8583754b53a198eae90bc67f24a871523374c4b7997826eb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964823"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762299"
 ---
 # <a name="create-pos-permission-groups"></a>POS アクセス許可グループの作成
 
@@ -47,3 +45,6 @@ ms.locfileid: "4964823"
 16. [POS アクセス許可グループ] フィールドで、値を入力または選択します。 作業者の POS アクセス許可が職位のレベルで上書きされない場合、このジョブの職位のすべての作業者は、この POS アクセス許可グループの設定を使用します。  
 17. **保存** を選択します。 変更が保存された後、チャネルへ変更をプッシュするために、スタッフ配送スケジュールを実行する必要があります。  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

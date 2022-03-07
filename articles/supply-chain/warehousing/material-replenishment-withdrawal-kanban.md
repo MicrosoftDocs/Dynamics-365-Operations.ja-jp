@@ -2,16 +2,13 @@
 title: 引き取りかんばんを使用した補充
 description: このトピックでは、製造活動における材料補充の引き取りかんばん使用方法を説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: b90e4699c440d0dd753cd16ff17cf958507e7872138a7f2c2c84f645f713d3db
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432279"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742587"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>引き取りかんばんを使用した補充
 
@@ -33,13 +30,12 @@ ms.locfileid: "4432279"
 このトピックでは、製造活動における材料補充の引き取りかんばん使用方法を説明します。
 
 ## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>引き取りかんばんを使用する材料補充のワークフロー
--------------------------------------------------------------------
 
 引き取りかんばんは、倉庫と材料が消費される生産場所の間で、1 つの品目のかんばんを移動することに使用できます。 引き取りかんばんは、プル信号が特定の需要の供給をトリガするために必要な材料補充のプル ベースのソリューションをサポートします。 
 
 次のシナリオでは、プル信号が生産プロセスの材料補充を行うかんばんの作成をトリガーする、プル ベース補充システムを示します。 
 
-[![プル信号が生産プロセスの材料補充を行うかんばんの作成をトリガーします](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![プル信号が生産プロセスの材料補充を行うかんばんの作成をトリガーします。](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  引き取りかんばん
 2.  「開始」場所と倉庫作業用のプット場所のかんばん
@@ -76,7 +72,7 @@ ms.locfileid: "4432279"
 
 次のシナリオでは、引き取りかんばんの転送活動は同じ倉庫内の 2 つの場所の間で転送するように構成されています。 引き取りかんばんの転送活動は、自動的に完了すように設定されます。 
 
-[![かんばんピッキング作業が処理されると、転送活動は自動的に完了します](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![かんばんピッキング作業が処理されると、転送活動は自動的に完了します。](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  原材料と生産の倉庫を共有
 2.  原材料の倉庫の場所
@@ -87,3 +83,6 @@ ms.locfileid: "4432279"
 
 生産入庫の場所でかんばんを消費すると、空と報告され、新しいかんばんがフローに追加されます。 かんばんが作成されると、ウェーブ明細行がかんばんウェーブに追加されます。 かんばんウェーブが処理されるときは、かんばんピッキング用の倉庫作業が作成されます。 倉庫作業者は、かんばんピッキングの作業を処理すると倉庫場所のかんばん用材料をピッキングする作業を行うよう指示されます。 この倉庫作業者がピッキングを確認する際、かんばんは自動的に完了し、作業者は材料を生産入庫の場所に配置するようガイドされます。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4ad389a18d2b6d79ef9fb25da810323927e5f04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d618ff09cf8d693741e8278dd44248f4ffe8bb7b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413790"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982269"
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a>ハードウェア ステーションをダウンロードするセルフサービスの実行
 

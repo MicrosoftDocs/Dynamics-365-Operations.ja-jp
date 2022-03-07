@@ -2,26 +2,23 @@
 title: 決済トランザクションを使用した顧客月次締め請求書の決済
 description: このトピックでは、月次締め請求書に対して作成および決済される支払に関する情報を提供します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustConsInvoice_JP, CustTable, CustOpenTrans
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d3ae079411a12aa02f43743b531e8efd7c584373
-ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
+ms.openlocfilehash: b0f631e7c031af16e49fd48075febae4c2b37430036154c5861c4f0fa14d398f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735413"
 ---
 # <a name="settle-customer-consolidated-invoices-by-using-settle-transactions"></a>決済トランザクションを使用した顧客月次締め請求書の決済
 
@@ -52,3 +49,6 @@ ms.locfileid: "4668995"
 9. [売掛金勘定] > [定期処理タスク] > [月次締め請求書] の順に移動します。
     * [月次締め請求書] のステータスが [決済済] に更新されていることを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

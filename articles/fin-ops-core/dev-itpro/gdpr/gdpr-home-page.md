@@ -1,26 +1,24 @@
 ---
 title: GDPRデータの要求リソースに応答する
-description: このトピックでは、Finance and Operations アプリ、およびその他の Dynamics 365 製品を使用する顧客として、一般データ保護規則 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。
+description: このトピックでは、一般データ保護規則 (GDPR) に基づくデータ権利要求への対応に役立つ情報へのリンクを提供します。
 author: rschloma
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 10031
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b25fd35c4283439176f3fb48a401b8b32ac4a1e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9d312fa30cfe442264ecb60be1004428821843921f388c04dca0af6659977d86
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755764"
 ---
 # <a name="respond-to-gdpr-data-requests-resources"></a>GDPR データ要求への応答のリソース
 
@@ -58,7 +56,7 @@ ms.locfileid: "4685153"
 
 - [コンプライアンス マネージャー プレビューが閲覧可能になりました](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Compliance-Manager-Preview-is-now-available/ba-p/124662) (Tech Community 2017 年 11 月)
 
-- [新しいサービス信頼ポータルについて理解する](https://blogs.technet.microsoft.com/scottschnoll/2017/11/21/get-to-know-the-new-service-trust-portal/) (TechNet 2017 年 11 月) 
+- [新しいサービス信頼ポータルについて理解する](/archive/blogs/scottschnoll/get-to-know-the-new-service-trust-portal) (TechNet 2017 年 11 月) 
 
 - [コンプライアンス マネージャーの発表](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Manage-Your-Compliance-from-One-Place-Announcing-Compliance/ba-p/106493) (Tech Community 2017 年 9 月)
 
@@ -70,3 +68,6 @@ ms.locfileid: "4685153"
 ## <a name="additional-resources"></a>追加リソース
 
 GDPR および組織がデータの要求に対して実行する必要があるアクションの詳細については、[Microsoft サービス信頼ポータル](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers) にアクセスしてください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

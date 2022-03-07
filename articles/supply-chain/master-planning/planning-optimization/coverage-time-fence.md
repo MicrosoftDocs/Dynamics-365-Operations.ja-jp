@@ -2,11 +2,13 @@
 title: 補充タイム フェンス
 description: このトピックでは、計画の最適化を使用している場合に補充タイム フェンスを設定する方法について説明します。 補充タイム フェンスは、計画期間と計画限界を示します。
 author: ChristianRytt
+manager: tfehr
 ms.date: 01/18/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqGroup, ReqItemTable, ReqPlanSched
+ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,16 +18,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 32bf890d1ff74155a75862afd6b0e861fbfc10e2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f970d7aa9f758d3bc35b7a1b9d1e43be928fd250
+ms.sourcegitcommit: 995c678b4715be267f1f97148902a6b3dde3bcab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567322"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "5033218"
 ---
 # <a name="coverage-time-fences"></a>補充タイム フェンス
-
-[!include [banner](../../includes/banner.md)]
 
 このトピックでは、計画の最適化を使用している場合に *補充タイム フェンス* を設定する方法について説明します。 プランナーは、計画期間 (日数で表した補充タイム フェンス) を定義し、その期間を超える需要と供給を除外できます。 そのため、補充タイム フェンスを使用すると、何か月も対応する必要のない供給提案によって発生する "雑音" を防ぐのに役立ちます。 たとえば、通常のリード タイムをはるかに超えた来年の予測注文や顧客注文などです。
 
@@ -85,6 +85,3 @@ ms.locfileid: "7567322"
 - 計算された指定出荷日が補充タイム フェンス内にない場合、企業内需要は無視されます。 組み込みマスター プランの場合、企業内需要は補充タイム フェンスで制限されないことに注意してください。
 - 予算日が補充タイム フェンス内にない場合、需要予測は無視されます。 組み込みマスター プランの場合、需要予測は補充タイム フェンスで制限されないことに注意してください。
 - 計画の最適化は、タイム ゾーンに対応しています。 需要と供給サイトのタイム ゾーンと、計画実行の時間を考慮します。 たとえば、マスター プランが 10 月 15 日の午前 11 時にデンマーク (GMT+1 タイム ゾーン) のサイトからトリガーされ、10 日間の補充タイム フェンスが使用されます。 この場合、シアトル (GMT-8 タイム ゾーン) のサイトからの需要と供給は、10 月 25 日の午前 2 時まで含まれます (= マスター プランがトリガーから 9 時間のタイム ゾーン差を差し引いた 24 時間の 10 日間)。 組み込みのマスター プラン エンジンではタイム フェンスの日付だけが考慮されることに注意してください。 したがって、結果は異なる場合があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

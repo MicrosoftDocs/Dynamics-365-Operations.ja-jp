@@ -1,29 +1,26 @@
 ---
 title: Dynamics 365 支払データの使用
 description: このトピックでは、Microsoft Dynamics 365 の支払コネクタによって管理されているデータの概要を示します。
-author: rubendel
-manager: AnnBe
+author: BrianShook
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
-ms.openlocfilehash: a8e4dcb0b7d23604c38e606f000696132f706680
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f8d183196540a0a1c604ae0ef86d81a767066962
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408948"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779759"
 ---
 # <a name="dynamics-365-payment-data-use"></a>Dynamics 365 支払データの使用
 
@@ -333,4 +330,7 @@ ms.locfileid: "4408948"
 
 ## <a name="related-topics"></a>関連トピック
 
-- **[支払端末のエンド ツー エンド支払統合の作成](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – このトピックでは、カスタム支払コネクタを作成する方法について説明します。
+- **[支払端末のエンド ツー エンド支払統合の作成](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – このトピックでは、カスタム支払コネクタを作成する方法について説明します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

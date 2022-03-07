@@ -1,33 +1,27 @@
 ---
 title: POS 拡張パッケージ情報の表示
-description: このトピックでは、販売時点管理 (POS) の設定ビューの拡張パッケージ セクションに関する情報を提供します。 この新しいセクションは、コア POS の一部として含まれる拡張パッケージを一覧表示するとともに、ステータス情報やその他の詳細を表示できます。
+description: このトピックでは、販売時点管理 (POS) の設定ビューの拡張パッケージ セクションに関する情報を提供します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-02-25
 ms.dyn365.ops.version: AX 10.0.1
-ms.openlocfilehash: de6b4384dafdb0eb5d16d52c819326dd0672627b
-ms.sourcegitcommit: 93884aacaed7ac2b599d5c5ed87fdd119db43edd
+ms.openlocfilehash: c8572b1a84f03b82862f74065c59f43f61974b1b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4712678"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782912"
 ---
 # <a name="view-pos-extension-package-information"></a>POS 拡張パッケージ情報の表示
 
-
 [!include [banner](../includes/banner.md)]
-
-
-
 
 販売時点管理 (POS) の **設定** ビューでは、**拡張パッケージ** セクションにコア POS の一部として含まれている POS 拡張パッケージのリストが表示されます。 各パッケージのタイルには、そのパッケージの状態が表示されます。 パッケージの状態は、拡張機能がロードされたのか、ロードできなかったのか、またはスキップされたのかを示します。
 
@@ -39,7 +33,7 @@ ms.locfileid: "4712678"
 - **失敗** – 拡張パッケージが正常に読み込まれませんでした。
 - **スキップ** – パッケージはスキップされ、読み込まれませんでした。 拡張マニフェストでパッケージが **en-fr** など特定のロケールに対して読み込まれ、他のすべてのロケールに対してはスキップするよう指定できます。
 
-[![POS 設定ビューの拡張パッケージ セクション](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
+[![POS 設定ビューの拡張パッケージ セクション。](./media/ExtensionPackage.png)](./media/ExtensionPackage.png)
 
 > [!NOTE]
 > クラウド POS は **POS 設定** ページの **情報** セクションの下の Customization.settings ファイルに拡張機能のバージョンを表示せず、Microsoft アプリ パッケージのバージョンのみを表示します。 拡張機能パッケージのバージョンは **拡張機能の詳細** セクションからのみ表示できます。
@@ -57,3 +51,6 @@ ms.locfileid: "4712678"
 > [!NOTE]
 > デュアル ディスプレイ カスタム コントロールとデュアル ディスプレイに関連するその他の拡張機能の詳細情報は、拡張機能の詳細ビューには表示されません。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

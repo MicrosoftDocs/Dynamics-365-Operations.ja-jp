@@ -1,37 +1,33 @@
 ---
 title: 危険物の概要
 description: このトピックでは、製品情報管理と倉庫管理の際における危険物の処理および文書化に関連する機能の概要を示します。
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 06/10/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 34c0a19308bb5159faa9a4ab06bf65e58da0deb1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431716"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986279"
 ---
 # <a name="hazardous-materials-overview"></a>危険物の概要
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 送料と配送の規制を維持するには、危険商品として分類された材料を出荷する組織には、その出荷を伴う追加の書類を含める必要があります。 危険物機能により、顧客はリリースされた品目に関する情報を保存することができます。 この情報は、船積書類を準備するために使用できます。 危険な商品を出荷する組織には、出荷プロセスを管理するための独自のプロセスと手順が必要です。 Microsoft Dynamics 365 Supply Chain Managementは、必要なドキュメントの生成を支援するためのツールでしかありません。
 
 次の図は、危険物機能を設定および使用するために必要な手順を示しています。
 
-![危険物機能の設定および使用](media/hazmat-overview.png "危険物機能の設定および使用")
+![危険物機能の設定および使用。](media/hazmat-overview.png "危険物機能の設定および使用")
 
 危険物の機能は、製品情報管理で設定されており、倉庫管理を使用して印刷できるドキュメントが用意されています。 したがって、このような領域は、次の 2 つの主要領域で、この機能の確認、設定、および使用を行います。
 
@@ -62,3 +58,6 @@ ms.locfileid: "4431716"
 ## <a name="warehouse-management"></a>倉庫管理
 
 倉庫管理で出荷を準備すると、製品情報管理で設定した情報を使用するいくつかの新しいレポートを印刷できるようになります。 利用可能なレポートとその使用方法の詳細については、[危険物の照会およびレポート](hazmat-reports.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

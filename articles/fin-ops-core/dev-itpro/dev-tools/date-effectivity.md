@@ -1,27 +1,23 @@
 ---
 title: 日付の有効期間
-description: このトピックでは、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。 また、日付の有効性が読み取りおよび書き込みアクティビティに適用される方法についても説明します。
-author: Sunil-Garg
-manager: AnnBe
+description: このトピックでは、データ エンティティとデータ ソースの開始日時に関する情報を提供し、エンティティの開始日時を作成する方法を示します。
+author: peakerbl
 ms.date: 12/04/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 24861
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87ee95ba63ae4281cdf7cb5cc13d39e9350115af
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9621337206ad7e52e2bb86ad00bbc5d1c844db6c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409392"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781088"
 ---
 # <a name="date-effectivity"></a>日付の有効期間
 
@@ -120,7 +116,7 @@ B. エンティティは有効日では *ない*、なぜならば ValidTimeStat
 
 次のスクリーン ショットは、**日付フィルターの適用** プロパティを **はい** に設定したものです。 したがって、**Address** データ ソースの読み取りに日付フィルターが適用されます。 
 
-[![日付フィルターの適用 = はい](./media/date1.png)](./media/date1.png)
+[![日付フィルターの適用 = はい。](./media/date1.png)](./media/date1.png)
 
 ## <a name="write-activities"></a>活動の記述
 このセクションでは、有効日エンティティとその有効日データ ソースの動作を設定するオプションについて説明します。 有効日テーブルの概念を確認し、それを有効日エンティティと対比させることから開始します。 **有効日テーブル:** データが有効日テーブルに挿入または更新されると、プロセスは、**xRecord.validTimeStateUpdateMode** メソッドをテーブルバッファーで呼び出すことができます。 このメソッドは、**ValidTimeStateUpdate** 列挙型の要素を受け入れます。 使用可能な要素値を次に示します。
@@ -140,7 +136,7 @@ B. エンティティは有効日では *ない*、なぜならば ValidTimeStat
 2.  ソリューション エクスプローラーで、プロジェクトを右クリックしてから **プロパティ** をクリックします。 プロジェクトの **プロパティ ページ** ダイアログ ボックスが開きます。
 3.  **ビルドでのデータベースの同期** プロパティの値を **True** に変更し、**OK** をクリックします。 このプロパティはプロジェクトごとに 1 回のみ設定する必要があります。 
 
-    [![ビルド上にデータベースを同期 =True](./media/date3.png)](./media/date3.png)
+    [![ビルド上にデータベースを同期 = True。](./media/date3.png)](./media/date3.png)
 
 #### <a name="add-a-new-data-entity-to-your-project"></a>プロジェクトへの新しいデータ エンティティの追加
 
@@ -150,16 +146,16 @@ B. エンティティは有効日では *ない*、なぜならば ValidTimeStat
 2.  **追加** をクリックします。 **データ エンティティ ビュー** ウィザードが起動します。
 3.  次のスクリーン ショットに表示される作成するデータ エンティティのプロパティ値を指定します。 最も重要なフィールドは、**FMVehicleRate** を選択する **プライマリ データ ソース** です。 
 
-    [![プライマリ データ ソース =FMVehicleRate](./media/date5.png)](./media/date5.png) **次へ** をクリックします。
+    [![プライマリ データ ソース = FMVehicleRate。](./media/date5.png)](./media/date5.png) **次へ** をクリックします。
 
 4.  プライマリ データ ソース、**FMVehicleRate** からエンティティにフィールドを追加します。
 5.  すべてのフィールドを選択し、**完了** をクリックします。 
 
-    [![新たに追加されたフィールドをすべて選択する](./media/date6.png)](./media/date6.png) 
+    [![新たに追加されたフィールドをすべて選択。](./media/date6.png)](./media/date6.png) 
     
     項目がソリューション エクスプローラーのプロジェクトに追加されます。 
     
-    [![ソリューション エクスプローラー内のプロジェクト](./media/date7.png)](./media/date7.png)
+    [![ソリューション エクスプローラー内のプロジェクト。](./media/date7.png)](./media/date7.png)
 
 #### <a name="build-your-project"></a>プロジェクトの構築
 
@@ -170,23 +166,23 @@ B. エンティティは有効日では *ない*、なぜならば ValidTimeStat
 
 -   ソリューション エクスプローラーで、**FMVehicleRateEntity** ノードを選択し、**FMVehicleRateEntity** エンティティのプロパティを **プロパティ** ウィンドウの値と比較して確認します。 
 
-    [![プロパティ ウィンドウの値](./media/date8.png)](./media/date8.png)
+    [![プロパティ ウィンドウの値。](./media/date8.png)](./media/date8.png)
 
 #### <a name="make-your-entity-date-effective"></a>エンティティの日付を有効にする
 
 1.  ソリューション エクスプローラーで、**FMVehicleRateEntity** ノードを右クリックしてから **開く** をクリックします。 エンティティのデザイナーが中央のウィンドウに開きます。 
 
-    [![FMVehicleRateEntity エンティティのデザイナー](./media/date9.png)](./media/date9.png)
+    [![FMVehicleRateEntity エンティティのデザイナー。](./media/date9.png)](./media/date9.png)
 
 2.  **時間状態が有効であるかどうかを検証する** プロパティの値を **はい** に変更します。 
 
-    [![時間状態が有効であるかどうかを検証する = はい](./media/date10.png)](./media/date10.png)
+    [![時間状態が有効であるかどうかを検証する = はい。](./media/date10.png)](./media/date10.png)
 
 #### <a name="configure-the-valid-time-state-update-property-for-the-date-effective-data-source"></a>有効日データソースの有効時間状態の更新プロパティのコンフィギュレーション
 
 -   **FMVehicleRate** データ ソースを選択し、**有効時間状態の更新** プロパティを **CreateNewTimePeriod** に設定します。 
 
-    [![有効時間状態の更新 = CreateNewTimePeriod](./media/date11.png)](./media/date11.png)
+    [![有効時間状態の更新 = CreateNewTimePeriod。](./media/date11.png)](./media/date11.png)
 
 #### <a name="test-your-project"></a>プロジェクトをテスト
 
@@ -273,3 +269,6 @@ B. エンティティは有効日では *ない*、なぜならば ValidTimeStat
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

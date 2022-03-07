@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: cd86fdf640e59885e5e8aea841dc1c1c9604825b0f18d3b741c5a2777f8e9ff8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 569f932b256054f2d93a6d699ca5d5af3da08ca6
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728796"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897939"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>コスト管理モバイル ワークスペース
 
@@ -70,7 +70,7 @@ ms.locfileid: "6728796"
 
     リンクを選択すると、カードが原価要素ごとに表示されます。 すべてのカードに表示される金額は、実績、予算、予算差異、予算差異 (%)、修正予算、修正予算差異、修正予算差異 (%) です。
     
-    [![原価要素のカード。](./media/Cost-controlling.png)](./media/Cost-controlling.png)
+    [![原価要素のカード](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
 ## <a name="prerequisites"></a>必要条件
 組織に配置されている Microsoft Dynamics 365 のバージョンに基づいて、前提条件は異なります。
@@ -125,7 +125,7 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 3.  初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
 4.  サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
-[![プルして更新。](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>原価管理モバイル ワークスペースを使用して、原価部門のパフォーマンスを表示します。
 

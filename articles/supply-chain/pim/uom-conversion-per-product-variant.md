@@ -2,27 +2,24 @@
 title: 製品バリアントごとの測定単位の変換
 description: このトピックでは、測定単位の変換を製品バリアントに設定する方法について説明します。 これには、設定の例が含まれています。
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eaa20f9a8f145fa8d44bfe77cc85f4dc565c2d27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432251"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841506"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>製品バリアントごとの測定単位の変換
 
@@ -59,7 +56,7 @@ ms.locfileid: "4432251"
     - **製品** – この値を選択すると、商品マスタに単位変換を設定することができます。 この単位換算は、単位換算が定義されていないすべての製品バリアントの代替として使用されます。
     - **製品バリアント** – この値を選択すると、特定の製品バリアントに対して単位変換を設定することができます。 バリアントを選択するには、**製品バリアント** フィールドを使用します。
 
-    ![![新たな単位換算を追加する](media/uom-new-conversion.png "新たな単位換算を追加する")](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![新たな単位換算を追加する](media/uom-new-conversion.png "新たな単位換算を追加する")
 
 1. 単位換算の設定に用意されているその他のフィールドを使用します。
 1. **OK** を選択して、新しい単位換算を保存します。
@@ -107,3 +104,6 @@ ms.locfileid: "4432251"
 ## <a name="additional-resources"></a>追加リソース
 
 [測定単位の管理](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

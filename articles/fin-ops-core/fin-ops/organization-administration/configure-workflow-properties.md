@@ -2,11 +2,9 @@
 title: ワークフロー プロパティのコンフィギュレーション
 description: このトピックでは、ワークフローの各種プロパティをコンフィギュレーションする方法について説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 81f73f187f75e40297f1f8462e9fff58a309f7f0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693285"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069251"
 ---
 # <a name="configure-workflow-properties"></a>ワークフロー プロパティのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、ワークフローの各種プロパティをコンフィギュレーションする方法について説明します。
 
@@ -73,6 +74,9 @@ ms.locfileid: "4693285"
     4. **翻訳テキスト** フィールドで、テキストを入力します。
     5. テキストをカスタマイズするには、プレースホルダーを挿入します。 プレースホルダーを入力する方法については、ステップ 3 を参照してください。
     6. **閉じる** をクリックします。
+
+> [!NOTE]
+> ターゲット情報が正しく貼り付けられていないため、プレースホルダーはコピーと貼り付けを使用して追加できません。 インターフェイスを使用してプレースホルダーを追加します。
 
 ## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>有効化条件を使用してこのワークフローがをいつ使用するかを指定する
 
@@ -179,3 +183,6 @@ ms.locfileid: "4693285"
 2. **ワークフローに関するコメントの入力** フィールドにコメントを入力します。
 3. 入力したコメントを確認します。 追加したコメントは変更できません。
 4. **追加** をクリックして、**コメントの履歴** 領域にコメントを追加します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

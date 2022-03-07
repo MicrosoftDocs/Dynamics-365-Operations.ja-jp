@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr
 audience: IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 261394
 ms.search.region: China (PRC)
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e0c690dc4d272435f70daa8798cc33cc589db2f9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f41d52c42dc6250511a2bf391b46f679bb00f403
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408929"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154141"
 ---
 # <a name="import-the-chinese-golden-tax-data-entity"></a>中国金税データ エンティティのインポート
 
@@ -45,7 +44,7 @@ ms.locfileid: "4408929"
 8.  **変換** タブで、**新規** をクリックします。
 9.  **ファイルのアップロード** をクリックして .xlst ファイルの場所を参照します。
 
-データ エンティティのインポート方法を示す特定の手順については、[エンティティを使用したデータのインポート](../../dev-itpro/data-entities/build-consuming-data-entities.md)を参照してください。 デモ データ会社 CNMF を使用して中国金税データ エンティティのインポートを実行するには、以下のファイルを [CustomerSource](https://mbs.microsoft.com/customersource/global/ax/learning/samplefilestaximportchina) からダウンロードします。
+データ エンティティのインポート方法を示す特定の手順については、[エンティティを使用したデータのインポート](../../dev-itpro/data-entities/build-consuming-data-entities.md)を参照してください。 デモ データ会社 CNMF を使用して中国金税データ エンティティのインポートを実行するには、以下のファイルを [CustomerSource](https://docs.microsoft.com/dynamics/s-e/) からダウンロードします。
 
 -   **ImportSampleFile.xml** - このファイルは中国金税データ エンティティ複合です。
 -   **Tax-Import-to-XML.xslt** - このファイルは変換ファイル マッピングとして使用されます。

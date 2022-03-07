@@ -2,27 +2,24 @@
 title: チャネル ナビゲーション階層の作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce にチャネル ナビゲーション階層を作成する方法について説明します。
 author: samjarawan
-manager: annbe
-ms.date: 01/27/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e83860667f142adcc85cd8542d521e18f16dbc2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d522838bdddf6cda6d7e451b27183f733e3de53df865d49cdadf846cf99cc953
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749958"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>チャネル ナビゲーション階層の作成
 
@@ -52,7 +49,7 @@ ms.locfileid: "4413649"
 
 次の図は、ルート ノードの例を示しています。
 
-![サンプル ルート ノード](media/create-channel-hierarchy-1.png)
+![サンプル ルート ノード。](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>ナビゲーション カテゴリ ノードの作成
 
@@ -68,7 +65,7 @@ ms.locfileid: "4413649"
 
 次の図は、チャネル ナビゲーション階層の完成例を示しています。
 
-![サンプル チャネル階層](media/create-channel-hierarchy-2.png)
+![サンプル チャネル階層。](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>製品をカテゴリ ノードに追加する
 
@@ -80,11 +77,11 @@ ms.locfileid: "4413649"
 1. アクション ウィンドウで、**保存** を選択します。
 
 > [!NOTE]
-> 選択されたチャネルで製品を表示するために、チャネル ナビゲーション階層内ノードへの製品の追加だけでなく、その製品を製品に類別する必要もあります。
+> 選択されたチャネルで製品を表示するためには、チャネル ナビゲーション階層内ノードへの製品の追加だけでなく、その製品をチャネルに類別する必要もあります。 品揃えの詳細については、[品揃え管理](assortments.md) を参照してください。
 
 次の図は、製品が追加されたノードの例を示しています。
 
-![カテゴリ ノードに追加された製品](media/create-channel-hierarchy-3.png)
+![カテゴリ ノードに追加された製品。](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>製品属性グループをカテゴリ ノードに追加
 
@@ -100,10 +97,13 @@ ms.locfileid: "4413649"
 
 次の図は、製品属性グループが追加されたサンプル ノードを示しています。
 
-![ノードで製品属性グループの表示](media/create-channel-hierarchy-4.png)
+![ノードで製品属性グループの表示。](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [品揃えの設定](set-up-assortments.md)
 
 [属性および属性グループの管理](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

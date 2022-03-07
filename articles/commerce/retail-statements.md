@@ -2,16 +2,13 @@
 title: 小売明細書
 description: このトピックでは、明細書を作成および転記する方法について説明します。
 author: ashishmsft
-manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 64b6fbda9f0396eb4ee6e2e248941f1429d4485278180d5c70dac6dd837a4537
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738699"
 ---
 # <a name="retail-statements"></a>小売明細書
 
@@ -34,7 +31,7 @@ Dynamics 365 Commerce では、クラウド販売時点管理 (POS) または Mo
 
 次の図は、明細書の転記プロセスを示しています。 このプロセスでは、POS に記録されているトランザクションは、コマース スケジューラを使用してクライアントに送信されます。 クライアントがトランザクションを受け入れた後、ストアのトランザクション明細書を作成し、計算および転記できます。
 
-[![明細書転記プロセス](./media/retail-statements.png)](./media/retail-statements.png)
+[![明細書転記プロセス。](./media/retail-statements.png)](./media/retail-statements.png)
 
 ## <a name="creating-and-posting-statements"></a>明細書を作成および転記する
 
@@ -88,3 +85,6 @@ Dynamics 365 Commerce では、クラウド販売時点管理 (POS) または Mo
 - POS のトランザクションに顧客が追加された販売により、個別の販売注文と請求書が固有の顧客ごとに 1 つずつ生成されます。
 
 支払仕訳帳は明細書の支払に対して自動的に作成され、在庫は POS 店舗に更新されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

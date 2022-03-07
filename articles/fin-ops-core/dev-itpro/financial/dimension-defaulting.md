@@ -1,6 +1,6 @@
 ---
 title: 既定の財務分析コード
-description: このトピックでは、既定の財務分析コードについて説明します。 ここでは、分析コードのがどのように生成されるか、その分析に使用されるAPI、および元帳分析コードの作成に使用する方法について説明します。
+description: このトピックでは、財務分析コードがどのように生成されるか、その結合に使用される API、および元帳分析コードの作成に使用する方法について説明します。
 author: jasonsto
 manager: annbe
 ms.date: 01/09/2020
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rbrow
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0dd2fd7c34a565ecb30ef0f772f2e81537f117e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 56e730ae47f1ade7411a3be00626ee0799d90499
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680516"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130781"
 ---
 # <a name="default-financial-dimensions"></a>既定の財務分析コード
 [!include [banner](../includes/banner.md)]
@@ -158,13 +158,22 @@ ms.locfileid: "4680516"
 
 ![ユーザーが修正したドキュメントヘッダー上の既定の分析コード (注文書)](./media/DefaultDimensions3-7DocumentHeader.png "ユーザーが修正したドキュメントヘッダー上の既定の分析コード (注文書)")
 
-以下の図は、ヘッダレコードの既定の分析コード参照に対するSQLクエリを示しています。
+以下のコードは、ヘッダー レコードの既定の分析コード参照に対する SQL クエリを示しています。
 
-![DefaultDimensions3-8SQLModifiedDocHearder.png](./media/DefaultDimensions3-8SQLModifiedDocHearder.png "SQL クエリ")
+```sql
+SELECT RecID, PURCHID, DEFAULTDIMENSION from PurchTable
+WHERE PURCHID = '00000125' and DATAAREAID = 'usmf'
+
+SELECT DA.NAME, DISPLAYVALUE, V.DIMENSIONATTRIBUTEVALUESET,
+V.SETITEMRECID
+FROM DIMENSIONATTRIBUTEVALUESETITEMVIEW V
+JOIN DIMENSIONATTRIBUTE DA ON DA.RECID = V.DIMENSIONATTRIBUTE
+WHERE V.DIMENSIONATTRIBUTEVALUESET = 52565466755
+```
 
 以下の図は、作成された既定の分析コードを示しています。
 
-![DefaultDimensions3-8SQLResultModifiedDocHearder.png](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png "注文書レコードにおける更新された既定の分析コードを表示した出力結果")
+![注文書レコードにおける更新された既定の分析コードを表示した出力結果](media/DefaultDimensions3-8SQLResultModifiedDocHearder.png)
 
 ユーザーが **ライン** ビューに切り替えて明細行を入力すると、以下の図に示すように、発注書ヘッダーから既定の分析コードがコピーされます。
 
@@ -194,9 +203,17 @@ ms.locfileid: "4680516"
 
 ![品目の既定の分析コード](./media/DefaultDimension4-3Item.png "品目の既定の分析コード")
 
-以下の図は、データベース内の既定の分析コードに対するSQLクエリを示しています。
+以下のコードは、データベース内の既定の分析コードに対する SQL クエリを示しています。
 
-![SQL クエリ](./media/DefaultDimension4-4SQLItem.png "SQL クエリ")
+```sql
+SELECT ItemId, NAMEALIAS, DefaultDimension from InventTable where ItemId = '1000' AND DATAAREAID = 'USMF'
+
+SELECT DA.NAME, DISPLAYVALUE, V.DIMENSIONATTRIBUTEVALUESET,
+V.SETITEMRECID
+FROM DIMENSIONATTRIBUTEVALUESETITEMVIEW V
+JOIN DIMENSIONATTRIBUTE DA ON DA.RECID = V.DIMENSIONATTRIBUTE
+WHERE V.DIMENSIONATTRIBUTEVALUESET = 68719490324
+```
 
 以下の図は、クエリの実行結果を示しています。
 
@@ -206,9 +223,17 @@ ms.locfileid: "4680516"
 
 ![ドキュメント明細行 (購買注文の明細行) の既定の分析コード値のマージ](./media/DefaultDimension4-5PurchLineResult.png)
 
-以下の図は、SQLクエリとその実行結果と購買注文明細行の品目レコードの既定の分析コードを示しています。
+以下のコードおよび図は、SQL クエリと購買注文明細行の品目レコードからの既定の分析コードの結果を示しています。
 
-[![SQL クエリ](./media/DefaultDimension4-6SQLOnItem.png)](./media/DefaultDimension4-6SQLOnItem.png)
+```sql
+SELECT PURCHID, LINENUMBER, ITEMID, DEFAULTDIMENSION from PURCHLINE where PURCHID = '00000100' AND DATAAREAID = 'USMF'
+
+SELECT DA.NAME, DISPLAYVALUE, V.DIMENSIONATTRIBUTEVALUESET,
+V.SETITEMRECID
+FROM DIMENSIONATTRIBUTEVALUESETITEMVIEW V
+JOIN DIMENSIONATTRIBUTE DA ON DA.RECID = V.DIMENSIONATTRIBUTE
+WHERE V.DIMENSIONATTRIBUTEVALUESET = 68719490325
+```
 
 [![ドキュメント明細行の品目レコードの既定の分析コードを示す出力 (購買注文明細行)](./media/DefaultDimension4-6SQLResultOnItem.png)](./media/DefaultDimension4-6SQLResultOnItem.png)
 

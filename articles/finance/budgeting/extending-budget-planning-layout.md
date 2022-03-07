@@ -2,11 +2,9 @@
 title: 予算計画レイアウトの拡張
 description: このトピックでは、BudgetPlanLineActiveView テーブルの列数を拡張して、予算計画レイアウトの追加データに対応する方法を説明します。
 author: panolte
-manager: AnnBe
 ms.date: 07/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: roschlom
@@ -15,12 +13,12 @@ ms.search.region:
 ms.author: panolte
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: 3e1d4431912518ca4262c78861f0568ab4443e0f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: fc7ab7e1d513e86070f2da73f4ceac1b47b9f6e6629d9917c06540053ed1ee8f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752213"
 ---
 # <a name="extend-the-budget-planning-layout"></a>予算計画レイアウトの拡張
 
@@ -127,3 +125,6 @@ BudgetPlanLineActiveView と BudgetPlanLine テーブル間のマッピングを
 変更を検証するには、36 の通貨列や数量列を超える予算計画のレイアウトを作成する必要があります。 すべてのステップを正しく完了した場合、各列に値を入力し値を保存して Excel で編集できます。
 
 変更を検証した後は、拡張機能をローカルの開発環境を越えて発行および宣伝できます。 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

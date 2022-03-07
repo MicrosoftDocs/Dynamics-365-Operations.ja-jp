@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fde81efed6b8a72e2149056f0196e4f9d60e59f2
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d68e1b3a4dc31823ec56a525149f16bdc23c0883
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345522"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6023402"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>仕訳帳を使用して請求書の TDS を計算する
 
@@ -31,7 +31,7 @@ ms.locfileid: "7345522"
 
 **一般仕訳帳** ページを開きます (**一般会計 > 仕訳入力 > 一般仕訳帳**)。
 
-[![一般仕訳帳。](./media/apac-ind-TDS-57.png)](./media/apac-ind-TDS-57.png)
+[![一般仕訳帳](./media/apac-ind-TDS-57.png)](./media/apac-ind-TDS-57.png)
 
 1. テーブルに記載されている仕訳フォームを使用して、仕訳の明細を作成します。 勘定タイプとオフセット勘定タイプを選択し、取引の金額を入力します。 
 

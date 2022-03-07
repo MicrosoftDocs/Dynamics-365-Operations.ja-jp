@@ -1,12 +1,10 @@
 ---
 title: ハードウェア ステーションを使用しないクレジットカードの処理
 description: このトピックでは、ハードウェア ステーションを含まない POS クライアントで "カードが存在しない" トランザクションの処理をする販売時点管理 (POS) を設定する方法について説明します。
-author: rubendel
-manager: AnnBe
+author: BrianShook
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -14,15 +12,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4b0c8af3bcd47596a218d7fee98492722bd91b58
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 73ba5ea8a005918c3b6c293d7a60c8f5cc427c36
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684981"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779584"
 ---
 # <a name="process-credit-cards-without-a-hardware-station"></a>ハードウェア ステーションを使用しないクレジットカードの処理
 
@@ -79,11 +77,14 @@ ms.locfileid: "4684981"
 2. 該当のレジを選択し、**編集** を選択します。
 3. **全般** クイックタブの **カードが存在しない処理** フィールドで、**小売サーバーを使用する** を選択します。 (既定では、このフィールドは **ハードウェア ステーションを使用する** に設定されています。)
 
-    ![カードが存在しない処理フィールド](media/PAYMENTS/CNP-POS.png)
+    ![カードが存在しない処理フィールド。](media/PAYMENTS/CNP-POS.png)
 
 4. **保存** を選択します。
 5. 変更を保存した後で、**1090** の配送スケジュールを実行して変更を POS に同期します。
 
 ## <a name="additional-resources"></a>追加リソース
 
-[オムニチャネル支払の概要](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+[オムニチャネル支払の概要](../omni-channel-payments.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

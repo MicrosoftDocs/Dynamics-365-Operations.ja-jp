@@ -2,25 +2,23 @@
 title: シリーズ登録
 description: このトピックでは、プロセス自動化フレームワークでシリーズを作成する方法について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34c5b90c97959d090f30d757ffa98a033be3b305
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c2372870f09ebaffed83ed3cfaae48fc5a95199d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679226"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783010"
 ---
 # <a name="series-registration"></a>シリーズ登録
 
@@ -175,3 +173,6 @@ internal final class ProcessScheduleExplodeAutomationBackgroundDialogValidationP
 | `public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | 次に協定世界時 (UTC) で予定されているプロセスの実行。 |
 | `public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | スリープを開始するタイミングを指定します。 プロセス自動化フレームワークによって、システム管理者はプロセスを一定時間スリープ状態にすることができます。 **parmPolledNextScheduleDateTime()** の設定に関係なく、この時間範囲中にプロセスが実行されることはありません。 この時間範囲は最大 16 時間であり、日付をまたぐことができます。 |
 | `public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | スリープを終了するタイミングを指定します。 プロセス自動化フレームワークによって、システム管理者はプロセスを一定時間スリープ状態にすることができます。 **parmPolledNextScheduleDateTime()** の設定に関係なく、この時間範囲中にプロセスが実行されることはありません。 この時間範囲は最大 16 時間であり、日付をまたぐことができます。  |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

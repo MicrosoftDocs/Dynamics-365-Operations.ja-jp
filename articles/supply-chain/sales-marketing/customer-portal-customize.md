@@ -1,49 +1,47 @@
 ---
 title: 顧客ポータルをカスタマイズして使用する
 description: このトピックでは、顧客ポータルをシステムに追加した後でカスタマイズする方法について説明します。
-author: dasani-madipalli
-manager: tfehr
+author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 02ad0470b7886b2e9b259682a7f8c8150d656cfb
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527366"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063496"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>顧客ポータルをカスタマイズして使用する
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 
 このトピックでは、顧客ポータルで使用できるさまざまなページについて説明します。 ここでは、ページの機能とカスタマイズ方法について説明します。
 
 顧客 ポータルでは、既成 の Web ページとアクションが用意されています。 次のサイトマップは、これら Web ページとアクションの概要と、アクションを実行できるロールを示しています。
 
-![顧客ポータルのサイトマップ](media/customer-portal-site-map.png "顧客ポータルのサイトマップ")
+![顧客ポータルのサイトマップ。](media/customer-portal-site-map.png "顧客ポータルのサイトマップ")
 
 ## <a name="typical-customizations"></a>一般的なカスタマイズ
 
 次のトピックでは、Power Apps ポータルの基本とポータルのカスタマイズ方法について説明し ます。
 
-- [テンプレートで作業する](https://docs.microsoft.com/powerapps/maker/portals/work-with-templates) - このトピックでは、Power Apps ポータルの機能概要と、ポータルを簡単にカスタマイズする方法を示します。
-- [ポータル コンテンツの管理](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) - このトピックでは、ポータルに表示されるコンテンツの管理方法とカスタマイズする方法について説明します。
-- [編集 CSS](https://docs.microsoft.com/powerapps/maker/portals/edit-css) - このトピックでは、ポータルのユーザー インターフェイス (UI) に対してさらに複雑なカスタマイズを行うことができます。
-- [ポータルのテーマを作成する](https://docs.microsoft.com/dynamics365/portals/create-theme) - このトピックは、ポータルの UI のテーマを作成する際に役立ちます。
-- [ポータルのコンテンツを簡単に作成して公開する](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) - このトピックでは、ポータルで使用する基となるデータとエンティティの管理について説明します。
-- [ポータルで使用する連絡先の構成](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) - このトピックでは、ユーザー ロールの作成とカスタマイズの方法、および Power Apps ポータルにおけるセキュリティと認証機能について説明します。
-- [ポータルでのエンティティ フォームと Web フォームのメモの構成](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) - このトピックでは、ドキュメントと追加のストレージをポータルに追加する方法について説明します。
-- [ポータル Web サイトのエラー処理 ](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) - このトピックでは、ポータルのエラーログを表示して Microsoft Azure Blob ストレージ アカウントに保管する方法について説明し ます。
+- [テンプレートで作業する](/powerapps/maker/portals/work-with-templates) - このトピックでは、Power Apps ポータルの機能概要と、ポータルを簡単にカスタマイズする方法を示します。
+- [ポータル コンテンツの管理](/dynamics365/portals/manage-portal-content) - このトピックでは、ポータルに表示されるコンテンツの管理方法とカスタマイズする方法について説明します。
+- [編集 CSS](/powerapps/maker/portals/edit-css) - このトピックでは、ポータルのユーザー インターフェイス (UI) に対してさらに複雑なカスタマイズを行うことができます。
+- [ポータルのテーマを作成する](/dynamics365/portals/create-theme) - このトピックは、ポータルの UI のテーマを作成する際に役立ちます。
+- [ポータルのコンテンツを簡単に作成して公開する](/dynamics365/portals/create-expose-portal-content) - このトピックでは、ポータルで使用する基となるデータとテーブルの管理について説明します。
+- [ポータルで使用する連絡先の構成](/powerapps/maker/portals/configure/configure-contacts) - このトピックでは、ユーザー ロールの作成とカスタマイズの方法、および Power Apps ポータルにおけるセキュリティと認証機能について説明します。
+- [ポータルでのテーブル フォームと Web フォームのメモの構成](/powerapps/maker/portals/configure-notes) - このトピックでは、ドキュメントと追加のストレージをポータルに追加する方法について説明します。
+- [ポータル Web サイトのエラー処理 ](/powerapps/maker/portals/admin/view-portal-error-log) - このトピックでは、ポータルのエラーログを表示して Microsoft Azure Blob ストレージ アカウントに保管する方法について説明し ます。
 
 ## <a name="customize-the-order-creation-process"></a>注文作成プロセスのカスタマイズ
 
@@ -64,12 +62,12 @@ ms.locfileid: "4527366"
     - **要求番号** - 注文の要求番号を入力します。 このフィールドは必須ではありません。
     - **配送先の国/地域** - 品目が配送される国または地域を入力します。 このフィールドは、管理者以外のユーザーには自動的に設定されます。
 
-    ![注文情報のページ](media/customer-portal-order-information.png "注文情報のページ")
+    ![注文情報のページ。](media/customer-portal-order-information.png "注文情報のページ")
 
 1. **次へ** を選択します。
 1. **品目** ページで、**品目の追加** を選択します。
 
-    ![品目ページ](media/customer-portal-items.png "品目ページ")
+    ![品目ページ。](media/customer-portal-items.png "品目ページ")
 
 1. **品目情報** のダイアログ ボックスで、次のフィールドを設定します :
 
@@ -78,20 +76,20 @@ ms.locfileid: "4527366"
     - **単位** - 測定単位を指定します ( **個**、**kg**、**箱** など )。
     - **見積正味金額** - この値は、選択された単位の品目の見積価格 × 数量で計算されます。
 
-    ![品目情報のダイアログ ボックスの追加](media/customer-portal-item-information.png "品目情報のダイアログ ボックスの追加")
+    ![品目情報のダイアログ ボックス。](media/customer-portal-item-information.png "品目情報のダイアログ ボックスの追加")
 
 1. **送信** を選択して、品目を注文に追加します。
 1. 手順 4 から 6 を繰り返して、注文するすべての品目を追加します。
 1. 品目の追加の完了後は、**品目** ページで **次へ** を選択します。
 1. **注文情報** ページに注文の概要が表示されます。 注文内容と配送の詳細を確認します。 すべてが正しい場合は、**送信** を選択して注文を送信します。
 
-    ![注文情報のページ](media/customer-portal-order-submit.png "注文情報のページ")
+    ![完了した注文情報のページ。](media/customer-portal-order-submit.png "完了した注文情報のページ")
 
 ### <a name="standard-data-setup"></a>標準データの設定
 
 円滑なユーザーエクスペリエンスを実現する目的でに、顧客ポータルでは、いくつかの必須フィールドの値が自動的に入力されます。 これらの値は、注文を送信する顧客の連絡先レコードの情報に基づいています。
 
-顧客ポータルを使用して注文を送信する顧客の[連絡先レコード](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) には、以下の必須フィールドに値を指定する必要があります。 それ以外の場合は、エラーが発生します。
+顧客ポータルを使用して注文を送信する顧客の [連絡先行](/powerapps/maker/portals/configure/configure-contacts) には、以下の必須フィールドに値を指定する必要があります。 それ以外の場合は、エラーが発生します。
 
 - **会社** - 注文が属するエンティティを選択します
 - **見込み顧客** - 選択した注文に関連付けられている顧客 ID
@@ -99,7 +97,7 @@ ms.locfileid: "4527366"
 - **通貨** - 価格に適用する通貨
 - **配送先の国/地域** - 品目を配送する国または地域
 
-販売注文エンティティには、次のフィールドが自動的に設定されます :
+販売注文テーブルには、次のフィールドが自動的に設定されます:
 
 - **言語** - 注文の言語 (既定では、この値は連絡先レコードから取得されます)
 - **配送先の国/地域** : 品目の配送先の国または地域 (既定では、この値は連絡先レコードから取得されます)
@@ -116,7 +114,7 @@ ms.locfileid: "4527366"
 
 基本の注文作成プロセスを変更していない場合は、顧客ポータルの外観と UI を自由に変更できます。 注文の作成プロセスを変更する場合は、いくつかの点に注意する必要があります。
 
-デュアル書き込みにて販売注文を作成する必要があるため、Common Data Service の販売注文エンティティでは以下のフィールドを削除しないでください :
+デュアル書き込みにて販売注文を作成する必要があるため、Microsoft Dataverse の販売注文テーブルでは以下の列を削除しないでください:
 
 - **会社** - 注文が属するエンティティを選択します
 - **名前** - 販売注文の名前
@@ -127,7 +125,7 @@ ms.locfileid: "4527366"
 - **言語** - 注文で使用する言語 (通常は、潜在顧客の使用する言語です)
 - **配送先住所の説明** - 販売注文の配送先住所です
 
-品目には、以下のフィールドが必須です :
+品目には、以下の列が必須です:
 
 - **製品** - 注文する製品
 - **数量** - 選択した製品のの数量
@@ -135,34 +133,34 @@ ms.locfileid: "4527366"
 - **出荷先の国/地域** 出荷先の国または地域
 - **配送先住所の説明** - 注文の配送先住所
 
-顧客 ポータルでは、これらのすべてのフィールドの値が必ず送信されるようにする必要があります。
+顧客ポータルでは、これらのすべての列の値が必ず送信されるようにする必要があります。
 
-ページにフィールドを追加、削除するには、[簡易作成フォームの作成または編集編集して、効率的なデータ入力を実現する](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms)を参照してください。
+ページに列を追加あるいは削除するには、[データ入力を効率化するための簡易作成フォームを作成または編集する](/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms) を参照してください。
 
-フィールドの規定値とページ保存時の値の設定を変更する場合は、Power Apps ポータル ドキュメントの次の情報を参照してください :
+列のプリセット方法とページ保存時に値の設定方法を変更する場合は、Power Apps ポータル ドキュメントで次の情報を参照してください:
 
-- [フィールドの事前入力](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
-- [保存時に値を設定する](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
+- [フィールドの事前入力](/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
+- [保存時に値を設定する](/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
 
 ## <a name="customize-the-home-page"></a>ホームページのカスタマイズ
 
-顧客ポータルのすべてのコントロールには、Power Apps ポータル コントロールが実装されています。 これらをカスタマイズするには、Power Apps ポータル ドキュメントで[ページを作成する](https://docs.microsoft.com/powerapps/maker/portals/compose-page) に記載の手順に従ってください。
+顧客ポータルのすべてのコントロールには、Power Apps ポータル コントロールが実装されています。 これらをカスタマイズするには、Power Apps ポータル ドキュメントで[ページを作成する](/powerapps/maker/portals/compose-page) に記載の手順に従ってください。
 
 ホームページのタイル作成には、顧客ポータルのテンプレートに含まれるカスタム コントロールのみが使用されます。
 
-![ホームページのタイル](media/customer-portal-home-page-tiles.png "ホームページのタイル")
+![ホームページのタイル。](media/customer-portal-home-page-tiles.png "ホームページのタイル")
 
 タイルを変更するには、次の手順を実行します。
 
-1. [ポータル管理アプリ](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal)を開きます。
+1. [ポータル管理アプリ](/powerapps/maker/portals/configure/configure-portal)を開きます。
 1. 左のナビゲーション ウィンドウで、**ページ テンプレート** を選択します。
 
-    ![ポータル管理ナビゲーション ウィンドウ](media/customer-portal-nav.png "ポータル管理ナビゲーション ウィンドウ")
+    ![ポータル管理ナビゲーション ウィンドウ。](media/customer-portal-nav.png "ポータル管理ナビゲーション ウィンドウ")
 
 1. **ホーム** という名前のページ テンプレートを選択します。
 1. **Web テンプレート** フィールドで、**ホーム** リンクを選択して、そのページのソース コードを開きます。
 
-    ![Web テンプレートのフィールド](media/customer-portal-web-template.png "Web テンプレートのフィールド")
+    ![Web テンプレートのフィールド。](media/customer-portal-web-template.png "Web テンプレートのフィールド")
 
 1. ホーム ページのすべてのソース コードが表示され、必要に応じて変更できるようになります。
 
@@ -170,9 +168,12 @@ ms.locfileid: "4527366"
 
 顧客ポータルを設定、カスタマイズする方法の詳細については、次のリソースを参照してください :
 
-- [Power Apps ポータル ドキュメント](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Power Apps ポータル ドキュメント](/powerapps/maker/portals/overview)
 - [デュアル書き込みのドキュメント](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
-- [ポータルのライフ サイクルについて](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [ポータルのアップグレード](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [ポータルの構成の移行](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [ポータルのライフ サイクルについて](/powerapps/maker/portals/admin/portal-lifecycle)
+- [ポータルのアップグレード](/powerapps/maker/portals/admin/upgrade-portal)
+- [ポータルの構成の移行](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [ソリューションのライフサイクル管理 : Dynamics 365 for Customer Engagement アプリ](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

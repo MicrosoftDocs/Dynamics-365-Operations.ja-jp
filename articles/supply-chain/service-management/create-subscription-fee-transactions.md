@@ -1,45 +1,45 @@
 ---
-title: 定期売買手数料トランザクションの作成
-description: このトピックでは、定期売買手数料トランザクションを作成する方法について説明します。
-author: ShylaThompson
-manager: tfehr
+title: サブスクリプション手数料トランザクションの作成
+description: このトピックでは、サブスクリプション手数料トランザクションを作成する方法について説明します。
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionCreateDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0553cef4bd5cafa89d756ae393284f4c23453727
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 03f798b5357d62e32834ffc2f41bcdabb97343c9
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432092"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571476"
 ---
-# <a name="create-subscription-fee-transactions"></a>定期売買手数料トランザクションの作成 
+# <a name="create-subscription-fee-transactions"></a>サブスクリプション手数料トランザクションの作成 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  **サービス管理** \> **共通** \> **サービスの定期売買** \> **すべてのサービス定期売買** の順にクリックします。
+1.  **サービス管理** \> **共通** \> **サービス サブスクリプション** \> **すべてのサービス サブスクリプション** の順にクリックします。
 
-2.  **すべてのサービス定期売買** リスト ページで、定期売買手数料トランザクションを作成する定期売買を選択します。
+2.  **すべてのサービス サブスクリプション** リスト ページで、サブスクリプション手数料トランザクションを作成するサブスクリプションを選択します。
 
-3.  **アクション ウィンドウ** の、**定期売買** タブで、**定期売買手数料** をクリックします。
+3.  **アクション ウィンドウ** の、**サブスクリプション** タブで、**サブスクリプション手数料** をクリックします。
 
-4.  **定期売買手数料の作成** フォームで、フィールドに適切な情報を入力します。
+4.  **サブスクリプション手数料の作成** フォームで、フィールドに適切な情報を入力します。
 
 5.  **OK** をクリックします。
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

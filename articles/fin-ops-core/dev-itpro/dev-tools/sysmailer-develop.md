@@ -2,25 +2,21 @@
 title: SysMailerフレームワークを使用して電子メール体験を開発する
 description: このトピックでは、SysMailer フレームワークを使用して、電子メールを送信する方法について説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 270774
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 76997218b645a48cbb8a116ae05ab11c60d7376d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c82c919769c83d3aef793f1d1bc93e385cb130eb
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408731"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781899"
 ---
 # <a name="develop-email-experiences-by-using-the-sysmailer-framework"></a>SysMailerフレームワークを使用して電子メール体験を開発する
 
@@ -198,3 +194,6 @@ public boolean sendInteractive(System.Net.Mail.MailMessage _message)
 ## <a name="migration-from-microsoft-dynamics-ax-2012-to-finance-and-operations-applications"></a>Microsoft Dynamics AX 2012 から Finance and Operations アプリケーションへの移行
 
 移行には、このトピックの例に示すように **SysMailerMessageBuilder** オブジェクトを使用して メッセージを構築し、**SysMailerFactory** を使用して送信することが含まれます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

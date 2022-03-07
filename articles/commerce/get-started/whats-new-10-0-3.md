@@ -2,27 +2,24 @@
 title: Dynamics 365 for Retail バージョン 10.0.3 の新機能および変更された機能
 description: このトピックでは Dynamics 365 Retail のプレビュー中の機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-retail
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Release 10
-ms.openlocfilehash: 2c288b24339e765674ea7703365de7e4da4f382e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9bc5375227bacad807f6851fac2e61f0fc23de5a0616d463efa935a2b7421328
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409260"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762310"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-version-1003"></a>Dynamics 365 for Retail バージョン 10.0.3 の新機能および変更された機能
 
@@ -30,7 +27,7 @@ ms.locfileid: "4409260"
 
 このトピックでは、Dynamics 365 Retail の新機能または変更された機能について説明します。 
 
-Microsoft Dynamics 365 for Finance and Operations の機能については、[Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能と変更点](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations の機能については、[Finance and Operations バージョン 10.0.3 (2019 年 6 月) の新機能と変更点](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3) を参照してください。
 
 ## <a name="new-calculation-logic-for-autocharges-in-call-center-for-mixed-delivery-mode-sales-lines"></a>混載配送モードの販売明細行の、コール センターにおける自動請求のための新しい計算ロジック
 
@@ -63,4 +60,7 @@ Microsoft Dynamics 365 for Finance and Operations の機能については、[Fi
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2019 年 4 月リリース ノートをご覧ください](https://docs.microsoft.com/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2019 年 4 月リリース ノートをご覧ください](/business-applications-release-notes/April19/index)。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

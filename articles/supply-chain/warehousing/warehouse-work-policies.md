@@ -2,34 +2,31 @@
 title: 作業ポリシー
 description: このトピックでは、作業ポリシーを設定する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 1d7f00891925a5c313d0d86dddaba4b7da335ad534b682473446abd2617e9937
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432374"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773084"
 ---
 # <a name="work-policies"></a>作業ポリシー
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、作業ポリシーをサポートするようにシステムと倉庫アプリを設定する方法について説明します。 この機能を使用すると、発注書または移動オーダーを受け取ったとき、または製造プロセスを完了したときに、他の必要な機能を作成することなく、すぐに在庫を登録することができます。 このトピックでは、一般情報を提供します。 ライセンス プレートの受け取りに関する詳細については、[ウェアハウス アプリを介したライセンス プレートの受け取り](warehousing-mobile-device-app-license-plate-receiving.md)を参照してください。
+このトピックでは、作業ポリシーをサポートするようにシステムと倉庫管理モバイル アプリを設定する方法について説明します。 この機能を使用すると、発注書または移動オーダーを受け取ったとき、または製造プロセスを完了したときに、他の必要な機能を作成することなく、すぐに在庫を登録することができます。 このトピックでは、一般情報を提供します。 ライセンス プレートの受け取りに関する詳細については、[倉庫管理モバイル アプリを介したライセンス プレートの受け取り](warehousing-mobile-device-app-license-plate-receiving.md) を参照してください。
 
-作業ポリシーは、製造品目が完了として報告されたとき、または倉庫アプリを使用して商品を受け取ったときに、倉庫作業を作成するかどうかを制御します。 各作業ポリシーを設定するには、作業指示タイプとプロセス、在庫場所、必要に応じて各製品の条件を定義します。 たとえば、製品 *A0001* の発注書は、倉庫 *24* の場所 *RECV* で受け取る必要があります。 その後、製品は、場所 *RECV* の別のプロセスで消費されます。 この場合は、作業者が場所 *RECV* で受け取った製品 *A0001* を報告したときに、プットアウェイ作業が作成されないようにするための作業ポリシーを設定できます。
+作業ポリシーは、製造品目が完了として報告されたとき、または倉庫管理モバイル アプリを使用して商品を受け取ったときに、倉庫作業を作成するかどうかを制御します。 各作業ポリシーを設定するには、作業指示タイプとプロセス、在庫場所、必要に応じて各製品の条件を定義します。 たとえば、製品 *A0001* の発注書は、倉庫 *24* の場所 *RECV* で受け取る必要があります。 その後、製品は、場所 *RECV* の別のプロセスで消費されます。 この場合は、作業者が場所 *RECV* で受け取った製品 *A0001* を報告したときに、プットアウェイ作業が作成されないようにするための作業ポリシーを設定できます。
 
 > [!NOTE]
 > - 作業ポリシーを有効にするには、**作業ポリシー** ページの **在庫場所** クイックタブで、少なくとも 1 つの場所を定義する必要があり ます。 
@@ -203,7 +200,7 @@ ms.locfileid: "4432374"
 
 次の例では、2 つの製造オーダー、*PRD-001* と *PRD-002* があります。 製品オーダー *PRD-001* は、製品 *SC1* が場所 *001* に完了済として報告される *組み立て* として名付けられた工程があります。 製造オーダー *PRD-002* には、*塗装* と名付けられた、および場所 *001* から製品 *SC1* の消費の工程があります。 製造オーダー *PRD-002* は、場所 *001* からの原材料消費 *RM1* も消費します。 原材料 *RM1* は、倉庫の場所 *BULK-001* に保存され、原材料のピッキングの倉庫作業によって場所 *001* がピッキングされます。 ピッキング作業は、生産 *PRD-002* がリリースされるときに生成されます。
 
-[![倉庫作業ポリシー](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![倉庫作業ポリシー。](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 このシナリオの倉庫作業ポリシーをコンフィギュレーションする計画の場合、次の点を考慮する必要があります:
 
@@ -298,6 +295,9 @@ ms.locfileid: "4432374"
 
 モバイル デバイス メニュー項目の詳細については、[倉庫作業用のモバイル デバイスの設定](configure-mobile-devices-warehouse.md) を参照してください。
 
-ライセンス プレートの受け取りと作業ポリシーに関する詳細については、[ウェアハウス アプリを介したライセンス プレートの受け取り](warehousing-mobile-device-app-license-plate-receiving.md)を参照してください。
+ライセンス プレートの受け取りと作業ポリシーに関する詳細については、[倉庫管理モバイル アプリを介したライセンス プレートの受け取り](warehousing-mobile-device-app-license-plate-receiving.md) を参照してください。
 
 入庫積荷管理に関する詳細情報については、[発注書に対する入庫積荷の倉庫処理](inbound-load-handling.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

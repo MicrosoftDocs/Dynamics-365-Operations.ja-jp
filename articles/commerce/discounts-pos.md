@@ -1,17 +1,14 @@
 ---
-title: POS に割引を表示
-description: このトピックでは、Microsoft Dynamics 365 Commerce が販売担当者に対してどのようにプロモーションについて知り、クロスセルとアップセルに使用できるかについて説明します。
+title: POS での割引の表示
+description: このトピックでは、販売担当者がプロモーションについて学習するのに Microsoft Dynamics 365 Commerce がどのように役立つか、およびそれらをクロスセルとアップセルの活動に使用する方法について説明します。
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,24 +16,24 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731670"
 ---
 # <a name="show-discounts-in-pos"></a>POS に割引を表示
 
 [!include [banner](includes/banner.md)]
 
-プロモーションは、購買決定を行う動機付けの顧客にとって重要な役割を果たします。 たとえば、魅力的なプロモーションと割引によって小売市場全体があふれているので、休日は小売業者の最大販売数を生産できます。 店舗では、利用可能なプロモーションを把握して理解している場合、それらのプロモーションを簡単に活用して、品目のクロスセルおよびアップセルを行うことができます。 このトピックでは、Microsoft Dynamics 365 Commerce が販売担当者に対してどのようにプロモーションについて知り、クロスセルとアップセルに使用できるかについて説明します。
+プロモーションは、購買決定を行う動機付けの顧客にとって重要な役割を果たします。 たとえば、魅力的なプロモーションと割引によって小売市場全体があふれているので、休日は小売業者の最大販売数を生産できます。 店舗では、利用可能なプロモーションを把握して理解している場合、それらのプロモーションを簡単に活用して、品目のクロスセルおよびアップセルを行うことができます。 このトピックでは、販売担当者がプロモーションについて学習するのに Microsoft Dynamics 365 Commerce がどのように役立つか、およびそれらをクロスセルとアップセルの活動に使用する方法について説明します。
 
 ## <a name="learn-about-store-discounts"></a>店舗割引について
 
 コマースには、「すべての割引の表示」という名前の操作が含まれます。 この操作では、店舗で現在実行中のすべての割引が表示されます。 「すべての割引の表示」操作は、販売時点管理 (POS) にマップできます。このボタンは、**ようこそ** ページまたは **トランザクション** ページに追加できます。 次の図は、開かれた **すべての割引** ページを示しています。
 
-![すべての割引ページ](./media/View_all_discounts.png "すべての割引ページ")
+![すべての割引ページ。](./media/View_all_discounts.png "すべての割引ページ")
 
 割引を表示するために、システムは次のいずれかの条件に一致するすべての割引を検索します。
 
@@ -64,8 +61,11 @@ ms.locfileid: "4413757"
 
 次の図は、割引同時実行管理時に使用するロジックが **優先順位内のみの最良価格と組み入れ、優先順位間で組み入れない** に設定を表示しています。
 
-![優先順位内のみの最良価格と組み入れ、優先順位間で組み入れないロジック](./media/Model_1.png "優先順位内のみの最良価格と組み入れ、優先順位間で組み入れないロジック")。
+![優先順位内のみの最良価格と組み入れ、優先順位間で組み入れないロジック。](./media/Model_1.png "優先順位内のみの最良価格と組み入れ、優先順位間で組み入れないロジック")。
 
 次の図は、割引同時実行管理時に使用するロジックが **優先順位内のみの最良価格、常に優先順位間で組み入れ** に設定を表示しています。
 
-![優先順位内のみの最良価格、常に優先順位間で組み入れロジック](./media/Model_2.png "優先順位内のみの最良価格、常に優先順位間で組み入れロジック")。
+![優先順位内のみの最良価格、常に優先順位間で組み入れロジック。](./media/Model_2.png "優先順位内のみの最良価格、常に優先順位間で組み入れロジック")。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

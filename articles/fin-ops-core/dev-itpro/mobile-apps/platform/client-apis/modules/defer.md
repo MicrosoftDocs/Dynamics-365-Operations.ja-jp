@@ -1,25 +1,18 @@
 ---
 title: 延期モジュール
 description: 延期タイプ
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 513eadb369379672b34dd3ecb6f8d087c907efbf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.openlocfilehash: 1e3f2a8316bfe618fbc7ff9581928556b928b2f7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682567"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783366"
 ---
 # <a name="defer-module"></a>延期モジュール
 
@@ -60,7 +53,7 @@ ms.locfileid: "4682567"
 | [否認](../interfaces/defer-ideferred.md#reject) |reject(error?: any): void|  |
 | [解決](../interfaces/defer-ideferred.md#resolve) |resolve (value?: T &#124; PromiseLike &lt;T&gt;) : void|  |
 
-## <a name="functions"></a>関数
+## <a name="functions"></a>ファンクション
 
 
 ### <a name="all"></a>すべて
@@ -115,3 +108,6 @@ resolve &lt;T&gt; (value?: T &#124; PromiseLike &lt;T&gt;) : Promise &lt;T&gt;
 
 #### <a name="returns-promise-lttgt"></a>Promise &lt;T&gt; を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

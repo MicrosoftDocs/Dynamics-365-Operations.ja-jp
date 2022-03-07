@@ -2,11 +2,9 @@
 title: ワークフロー要素
 description: このトピックは、ワークフローを構成するさまざまな要素について説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b259d733076193cda793a227bd0bb71c232339d1
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: e9491b8ee6da69ba93c830bf0721c1d58fd4385b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797579"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070453"
 ---
 # <a name="workflow-elements"></a>ワークフロー要素
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックは、ワークフローを構成するさまざまな要素について説明します。
 
@@ -62,7 +63,7 @@ ms.locfileid: "4797579"
 
 ワークフローを作成して、ドキュメントやドキュメントの行項目を処理できます。 たとえば、タイムシートの承認ワークフローが作成済みであるとします。 (このワークフローを *ドキュメント ワークフロー* と呼びます。) そのドキュメント ワークフローには、*行項目 ワークフロー* 要素を追加できます。 行項目要素の実行時には、ドキュメントの各行項目が処理のために送信されます。 すべての行項目を同じ行項目ワークフローで処理することも、各行項目を異なる行項目ワークフローで処理することもできます。 従業員が、次の図のようなタイム シートを提出したとします。
 
-![行項目を含むワークフロー](./media/workflow_lineitemworkflow.gif)
+![行項目を含むワークフロー。](./media/workflow_lineitemworkflow.gif)
 
 このシナリオの場合は、次のような行項目ワークフローを作成することもできます。
 
@@ -89,3 +90,6 @@ ms.locfileid: "4797579"
 ### <a name="subworkflow"></a>サブワークフロー
 
 *サブワークフロー* は、他のワークフローのコンテキストで実行するワークフローです。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

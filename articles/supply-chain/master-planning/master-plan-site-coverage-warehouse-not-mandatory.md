@@ -1,12 +1,10 @@
 ---
 title: マスター プラン - サイトの補充、倉庫は必須ではない
 description: このトピックでは、サイト分析コードを品目補充用に持つ品目の計画方法について説明します。
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 2474
 ms.assetid: 316da918-67ae-43c5-baea-00ae559e29b0
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe5cb5f9d21afcd12f3041bb9acc89fff360c95e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 484b178f3ac43f727fd6acb5deb40b7907c931ec
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970459"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579619"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>マスター プラン - サイトの補充、倉庫は必須ではない
 
@@ -43,12 +41,11 @@ ms.locfileid: "4970459"
 -   倉庫に対して補充関係が定義されています。 **在庫管理] &gt; [設定] &gt; [在庫詳細] &gt; [倉庫** の順にクリックします。 **マスター計画** タブに、**主要倉庫** フィールド グループが表示されます。
 -   既定の注文タイプは [生産]、[発注書] または [かんばん] に設定されます。 **製品情報管理] &gt; [製品] &gt; [リリースされた製品** の順にクリックします。 品目を選択し、**計画] &gt; [既定の注文設定** の順にクリックします。 **既定の注文設定** フォームの **既定の注文タイプ** フィールドを参照してください。
 
-![サイトの補充が必要、倉庫は必須ではない    ](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
+![サイトの補充が必要、倉庫は必須ではない。](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
 
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [マスター プランとマルチサイト機能の概要](master-plan-multisite-functionality.md)
 
@@ -62,3 +59,6 @@ ms.locfileid: "4970459"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

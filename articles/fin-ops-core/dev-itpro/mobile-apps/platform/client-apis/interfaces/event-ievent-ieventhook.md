@@ -1,25 +1,18 @@
 ---
 title: EventHook タイプ<T>
 description: EventHook タイプ
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 687a52746b54475d8de7ba3c0fa28bcb0093c27b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.openlocfilehash: 9edbce8c112aeed8d70104eca3a40eb5aa9814e6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685429"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781729"
 ---
 # <a name="eventhook-typelttgt"></a>EventHook タイプ&lt;T&gt;
 
@@ -80,3 +73,6 @@ unsubscribeAll(): void
 
 #### <a name="returns-void"></a>void を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

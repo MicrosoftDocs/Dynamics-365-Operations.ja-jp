@@ -2,7 +2,9 @@
 title: SPLIT ER 関数
 description: このトピックでは、SPLIT 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-ms.date: 04/01/2021
+manager: kfend
+ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a42b0c7cfa2a8d3dcb7448224c9e88a48276f7d8cdbcce484383a778b8275a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 806a0995f0c138f4e80396bb993bc6f41bc7c827
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757324"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567345"
 ---
 # <a name="split-er-function"></a>SPLIT ER 関数
 
@@ -79,17 +81,9 @@ SPLIT (input, delimiter)
 
 `SPLIT ("XAb aBy", "aB")` は、*文字列* 型の **値** フィールドのある 3 つのレコードで構成される新しいリストを返します。 最初のレコードの **値** フィールドには、テキスト **"X"** が、2 つ目のレコードの **値** フィールドには、テキスト **"&nbsp;"** が、3 つ目のレコードの **値** フィールドにはテキスト **"y"** が含まれます。 
 
-## <a name="example-3"></a>例 3
-
-[INDEX](er-functions-list-index.md) 関数を使用して、指定された入力文字列の個別の要素にアクセスできます。 **計算済フィールド** タイプの **MyList** データ ソースを入力し、それに対して `SPLIT("abc", 1)` を構成している場合、式 `INDEX(MyList,2).Value` はテキスト **"b"** を返します。
-
-## <a name="example-4"></a>例 4
-
-[ENUMERATE](er-functions-list-enumerate.md) 関数は、指定された入力文字列の個別の要素にアクセスするのに役立ちます。 最初に **計算済フィールド** タイプの **MyList** データ ソースを入力し、それに対して `SPLIT("abc", 1)` 式を構成した後、**計算済フィールド** タイプの **EnumeratedList** データ ソースを入力し、それに対して `ENUMERATE(MyList)` 式を構成する場合、式 `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value` はテキスト **"b"** を返します。
-
 ## <a name="additional-resources"></a>追加リソース
 
-[リスト関数](er-functions-category-list.md)
+[リスト機能](er-functions-category-list.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

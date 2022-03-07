@@ -2,11 +2,9 @@
 title: Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations バージョン 8.0 の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされました。
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -17,22 +15,22 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 2b5b79776b122a2c4e38825468823d96bf7b52c8
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: a89b63c30519fcce25a0a0f0875da8183028d7dc
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797183"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061450"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-version-80-april-2018"></a>Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 8.0 (2018 年 4 月) の新機能または変更された機能について説明します。 このバージョンは 2018 年 4 月にリリースされ、ビルド番号は 8.0.30 と 8.0.35 です。
 
-ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース計画](https://docs.microsoft.com/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
+ビジネス アプリケーションの最新の更新プログラムや、独自のアプリケーションと拡張機能をプラットフォームにビルドするための新しい機能を見つけるには、[Dynamics 365 2018 年春リリース計画](/business-applications-release-notes/April18/release-overview)をダウンロードしてください。 リリース ノートでは、Dynamics 365 for Finance and Operations の新規または変更のいずれかの機能に関する詳細を提供します。
 
 ### <a name="introducing-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations の導入
 
@@ -75,11 +73,11 @@ Finance and Operations 内で担当者および個人データを検索するこ
 - **18 年春リリース** – 機能は、一般会計パラメーターによって既定で、オフになります。 ただし、組織が単一伝票文書に記載されているビジネス シナリオ ギャップの範囲内にシナリオがある場合、機能をオンにできます。
 
     - 顧客が 1 つの伝票を必要としないビジネス シナリオがある場合、機能をオンにしないでください。 この機能が使用される場合、単一伝票文書に記載されている領域の「不具合」は修正されません。
-    - 機能的なギャップのいずれかに必要な機能でない限り、 Microsoft Dynamics 365 Finance and Operations への統合に 1 つの伝票を使用しないでください。
+    - 機能のギャップのいずれかに機能が必要でない限り、Microsoft Dynamics 365 Finance and Operations への統合に 1 つの伝票を使用しないでください。
 
 - **18 年秋およびそれ以降のリリース** – 機能的なギャップが埋まります。 機能的なギャップが埋められた後、1 つの伝票の機能が完全にオフになります。
 
-この機能の使用と廃止に関する詳細については、[1 つの伝票ドキュメント](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/one-voucher)を参照してください。
+この機能の使用と廃止に関する詳細については、[1 つの伝票ドキュメント](../../../finance/general-ledger/one-voucher.md)を参照してください。
 
 ## <a name="extensibility-and-customization"></a>拡張性およびカスタマイズ
 
@@ -107,7 +105,7 @@ Dynamics 365 for Finance and Operations では、Finance and Operations と Dyna
 
 ### <a name="integration-with-dynamics-365-for-field-service"></a>Dynamics 365 for Field Service との統合
 
-データ インテグレーターを活用して、Field Service アクティビティが Finance and Operations の外で行われるシナリオをサポートするためのデータ統合を提供します。
+データ統合を活用して、Field Service アクティビティが Finance and Operations の外で行われるシナリオをサポートするためのデータ統合を提供します。
 
 ### <a name="integration-with-dynamics-365-for-project-service-automation"></a>Dynamics 365 for Project Service Automation との統合
 
@@ -167,7 +165,7 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 
 ### <a name="improved-delivery-of-platform-and-financial-reporting-updates"></a>プラットフォームおよび財務レポート更新のデリバリーの強化
 
-プラットフォームおよび財務レポートの更新は、オプションの更新プログラムではなく、Microsoft によって管理される継続的な更新になります。 この変更は、サービスの信頼性と可用性を向上させるとともに、最新の改善と修正を顧客に確実に提供することを目的としています。  プラットフォームと財務レポートの更新には、下位互換性があります。 詳細については、[Finance and Operations クラウド プラットフォームの毎月の更新に関するよく寄せられる質問](../../../dev-itpro/sysadmin/faq-platform-monthly-updates.md) を参照してください。
+プラットフォームおよび財務レポートの更新は、オプションの更新プログラムではなく、Microsoft によって管理される継続的な更新になります。 この変更は、サービスの信頼性と可用性を向上させるとともに、最新の改善と修正を顧客に確実に提供することを目的としています。  プラットフォームと財務レポートの更新には、下位互換性があります。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](./one-version.md)を参照してください。
 
 ### <a name="upgrade-automation"></a>自動アップグレード
 
@@ -190,3 +188,6 @@ LCS では、テレメトリ駆動の KB の推奨事項を提供します。
 ### <a name="accessibility-enhancements"></a>アクセシビリティの拡張機能
 
 業界をリードするアクセシビリティ標準については [Trust Center](https://www.microsoft.com/trustcenter/compliance/accessibility) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

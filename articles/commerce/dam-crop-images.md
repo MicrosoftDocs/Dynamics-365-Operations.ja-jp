@@ -2,15 +2,12 @@
 title: 画像のトリミング
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像のトリミング方法について説明します。
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a8f52c22a57d465ce1c2bedac6e8f13db3e856c0
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 6b90199e2f6c22863c379b488e8d89c566a14ec9
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594481"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799328"
 ---
 # <a name="crop-images"></a>画像のトリミング
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーの画像のトリミング方法について説明します。
-
-## <a name="overview"></a>概要
 
 Commerce サイト ビルダーのメディア ライブラリーを使用すると、画像をトリミングして、さまざまな種類のモジュールとビューポートに対して最適化することができます。
 
@@ -66,3 +61,6 @@ Commerce サイト ビルダーのメディア ライブラリーを使用する
 [画像の中心のカスタマイズ](dam-custom-focal-point.md)
 
 [静的ファイルのアップロードと提供](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

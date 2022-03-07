@@ -2,11 +2,9 @@
 title: アクション デザインのガイドライン
 description: このトピックでは、モバイル アプリの設計に関する詳細な情報を示します。
 author: robinarh
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: d1c9c313dd8c6b7a60d8cadd46c456c53ef61038
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 21d039b8b8a0aac6b9739a5ceec75d4cfa104ca7cc74ce3bca78593711e6c959
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680454"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769179"
 ---
 # <a name="action-design-guidelines"></a>アクション デザインのガイドライン
 
@@ -64,7 +62,7 @@ ms.locfileid: "4680454"
 2.  アクションのデザインが終了した後、フィールドを選択して豊富なルックアップ機能を追加し、**プロパティ** をクリックします。
 3.  **コントロールのプロパティ** ダイアログ ボックスで、手順 1 で指定または作成したリスト ビュー ページを選択し、その他の関連するプロパティを設定します。 
 
-![コントロール プロパティの設定](media/lookupdesigner.png)
+![コントロール プロパティの設定。](media/lookupdesigner.png)
 
 4.  アクションに変更内容を保存して公開します。
 
@@ -110,3 +108,5 @@ function main(metadataService, dataService, cacheService, $q) {
     }; 
 }
 ```
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

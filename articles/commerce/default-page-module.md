@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 60c04e136e7c2ab51a6214489c1a81a46af84fdf56df08b990d6168bc72eaa3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3abb76273bd83cd418f69bb5b34490909347f62f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758364"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349590"
 ---
 # <a name="default-page-module"></a>既定のページ モジュール
 

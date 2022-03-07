@@ -1,23 +1,21 @@
 ---
 title: Finance and Operations の更新とカスタム コード ライフサイクルの管理
-description: このトピックでは、ソースコードの開発分岐を管理し、Microsoft サービス更新プログラムの次のバージョンを適用し、カスタムコードの新しいバージョンを適用するためのアプリケーション ライフサイクル シナリオについて説明します。
+description: このトピックでは、Finance and Operations の更新とカスタム コード ライフサイクルを管理する方法について説明します。
 author: rbadawy
-manager: AnnBe
-ms.date: 10/22/2020
+ms.date: 11/08/2021
 ms.topic: article
-ms.service: dynamics-ax-platform
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
-ms.openlocfilehash: 94843d180c3561365a47c236a6eda5f81cdda40b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8668ad51af4331d89bf9eb53f38d9237a6394f26
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683476"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781072"
 ---
 # <a name="manage-finance-and-operations-updates-and-your-custom-code-lifecycle"></a>Finance and Operations の更新とカスタム コード ライフサイクルの管理
 
@@ -113,7 +111,7 @@ ms.locfileid: "4683476"
 + **UAT** – ユーザー受け入れテストに使用される実稼働前の環境。 UAT 環境は、レベル 2 (標準承認テスト) またはそれ以上の環境です。 実稼働環境と同じバージョンの Finance and Operations アプリを実行します。 また、カスタム コード拡張機能の最新のリリースバージョンも実行します。 この環境は通常、運用データベースのコピーに接続されています。
 + **生産** – 運用データベースで実行される実際の実稼動環境。
 
-:::image type="content" source="media/uguide-environments.png" alt-text="現在のリリースを実行する環境":::
+:::image type="content" source="media/uguide-environments.png" alt-text="現在のリリースを実行する環境。":::
 
 ### <a name="environments-that-run-the-next-version-of-your-custom-code"></a><a id="next-environments"></a>カスタム コードの次のバージョンを実行する環境
 
@@ -122,13 +120,13 @@ ms.locfileid: "4683476"
 - **開発 2** – カスタム コード拡張機能の次のバージョンの開発に使用される開発環境。 カスタム コードのバージョン 管理に Azure DevOps を使用します。 これは、カスタム コードの現在の開発分岐 (**メイン** ブランチ) に接続されています。 詳細については、[ソース コード分岐の管理](#manage-source-code-branches) セクションを参照してください。
 - **テスト 2** – カスタム コード拡張機能の次のバージョンのテストに使用される機能テスト環境。
 
-:::image type="content" source="media/uguide-next-environments.png" alt-text="カスタム コードの次のバージョンを実行する環境":::
+:::image type="content" source="media/uguide-next-environments.png" alt-text="カスタム コードの次のバージョンを実行する環境。":::
 
 ## <a name="manage-source-code-branches"></a>ソース コード分岐の管理
 
 カスタム コード分岐を管理する場合は、ベスト プラクティスに従うことが重要です。 これにより、原価を最小限に抑え、リリースと更新の品質を保証するのに役立ちます。
 
-:::image type="content" source="media/uguide-branches.png" alt-text="ソース コード分岐の管理":::
+:::image type="content" source="media/uguide-branches.png" alt-text="ソース コード分岐の管理。":::
 
 **メイン** 分岐 (開発分岐) には、コードの次期リリースの最新の機能バージョンが含まれています。
 
@@ -142,7 +140,7 @@ ms.locfileid: "4683476"
 
 カスタム コードの新しいバージョンをリリースする準備ができたら、**メイン** 分岐に基づく新しいリリース分岐を作成します。 この例では、**メイン** に基づいて **2020-July** という名前の新しいリリース分岐を作成します。
 
-コードの特定の分岐に基づく特定の作業項目で作業しているときに、個々の開発者が作業するプライベート分岐がある場合があります。 作業が完了すると、プライベート分岐は親分岐にマージされます。 詳細については、[Team Foundation バージョン管理 (TFVC) の分岐戦略と効果的な戦略の選択方法について](https://docs.microsoft.com/azure/devops/repos/tfvc/branching-strategies-with-tfvc) を参照してください。
+コードの特定の分岐に基づく特定の作業項目で作業しているときに、個々の開発者が作業するプライベート分岐がある場合があります。 作業が完了すると、プライベート分岐は親分岐にマージされます。 詳細については、[Team Foundation バージョン管理 (TFVC) の分岐戦略と効果的な戦略の選択方法について](/azure/devops/repos/tfvc/branching-strategies-with-tfvc) を参照してください。
 
 ## <a name="apply-the-next-version-of-a-microsoft-service-update"></a><a id="apply-next-update"></a>Microsoft サービス更新プログラムの次のバージョンを適用する
 
@@ -166,6 +164,9 @@ Microsoft 更新プログラムを取得する場合、カスタム コードを
 すべての Microsoft 更新プログラムは、ランタイムの下位互換性を保つことを意図しています。 この互換性はバイナリ互換性と機能互換性の両方を対象にしています。 ランタイム互換性とは、実稼働環境およびサンドボックス環境に存在するカスタマイズが、それらの環境に Microsoft サービス更新プログラムが配置された後も引き続き機能することを意味します。 それらの更新プログラムは、サービス更新と品質更新を含みます。 ランタイムの互換性は、Microsoft 更新プログラムが以前のプラットフォームでコンパイルされたカスタマイズと下位互換性があることも意味します。
 
 バイナリ互換性は、後方向のみです。 古いアプリケーション バージョンとプラットフォーム バージョンでカスタマイズをコンパイルし、それを新しいバージョンを実行している環境に配置できます。 ただし、コードがコンパイルされたバージョンよりも前のバージョンを実行している環境にコードを配置することはできません。
+
+> [!IMPORTANT]
+> 個人用設定はランタイムの互換性によってカバーされ、これらの環境に Microsoft サービス更新プログラムが配置された後も機能します。 このため、サービス更新プログラム後 (または他の時点) に、すべての個人用設定を再インポートすることは不要であり、今後推奨されません。   
 
 #### <a name="design-time-compatibility"></a><a id="design-compatibility"></a>デザイン時の互換性
 
@@ -387,7 +388,7 @@ UAT 環境を指すクライアントは、リリース 10.0.7 (実稼働環境�
 
 UAT または製品環境で重大なバグが見つかった場合は、リリース分岐 (**メイン** 分岐または開発分岐にはない) のバグを修正し、標準プロセスを使用して配置可能なパッケージを UAT と製品に適用します。
 
-:::image type="content" source="media/uguide-hotfix.png" alt-text="修正プログラムのプロセス":::
+:::image type="content" source="media/uguide-hotfix.png" alt-text="修正プログラムのプロセス。":::
 
 1. 開発 1 では、リリース分岐でコードの修正を行います。 必要な修正が ISV コードにある場合は、ソリューションの次のバージョンではなく、現在のリリースの新しいビルドを ISV に送信するよう依頼します。
 2. コンパイルしてテストします。
@@ -428,3 +429,6 @@ UAT または製品環境で重大なバグが見つかった場合は、リリ�
 6. 目的のクライアント タイプとデバイスのインストーラーをダウンロードします。
 7. 対象のデバイスにインストールします。
 8. テストして検証します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

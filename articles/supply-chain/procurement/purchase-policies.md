@@ -1,7 +1,7 @@
 ---
 title: 購入ポリシーの概要
 description: この記事は、購入ポリシーに関する情報を提供します。 購入ポリシーは、要求プロセスを制御するルールのコレクションです。 購入ポリシーは調達管理者が組織の戦略購買の要求に対応するポリシー構造を作成することによって自分の調達戦略を実行できるように助けます。
-author: RichardLuan
+author: mkirknel
 manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
@@ -11,18 +11,19 @@ ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 11614
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: riluan
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: def842116e0c6c57d407cb4fb30a26a9e17d9a2c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 00200bc79f83e9d072ff8220c89a6aaa70cb07a5
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022209"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4432397"
 ---
 # <a name="purchasing-policies-overview"></a>購入ポリシーの概要
 

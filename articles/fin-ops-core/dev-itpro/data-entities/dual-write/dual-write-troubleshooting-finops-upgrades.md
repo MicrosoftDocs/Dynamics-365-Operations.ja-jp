@@ -1,12 +1,10 @@
 ---
-title: Finance and Operations アプリのアップグレードに関する問題のトラブルシューティング
+title: Finance and Operations アプリのアップグレードで生じる問題のトラブルシューティング
 description: このトピックでは、Finance and Operations アプリの更新に関する問題の修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,14 +16,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 97509ac662fad6181cbd60e5e0a44f674410acb9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683602"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754041"
 ---
-# <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Finance and Operations アプリのアップグレードに関する問題のトラブルシューティング
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Finance and Operations アプリのアップグレードで生じる問題のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
@@ -42,7 +40,7 @@ ms.locfileid: "4683602"
 
 **問題の修正に必要な役割：** システム管理者
 
-**DualWriteProjectConfiguration** エンティティを使用して、プラットフォーム更新プログラム 30 を Finance and Operations アプリに更新すると、次のようなエラーメッセージが表示される場合があります。
+**DualWriteProjectConfiguration** テーブルを使用して、Platform update 30 に Finance and Operations アプリを更新すると、次の例のようなエラー メッセージが表示される場合があります。
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -62,7 +60,7 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 8. データベース全体の同期を実行するには、**同期** を選択します。
 9. データベース全体の同期処理が正常に完了した後で、Microsoft Dynamics Lifecycle Services（LCS）でデータベースの同期を再実行し、必要に応じて手動アップグレードスクリプトを使用して、更新を進めることができます。
 
-## <a name="missing-entity-fields-issue-on-maps"></a>マッピングに存在しないエンティティ フィールドの問題
+## <a name="missing-table-columns-issue-on-maps"></a>マップに存在しないテーブル列の問題
 
 **問題の修正に必要な役割：** システム管理者
 
@@ -70,24 +68,27 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 
 *スキーマ内の存在しないソース フィールド \<field name\>。*
 
-![存在しないソース フィールドを示すエラー メッセージの例](media/error_missing_field.png)
+![存在しないソース列のエラー メッセージの例](media/error_missing_field.png)
 
-この問題を解決するには、まず次の手順に従って、フィールドがエンティティに含まれていることを確認します。
+この問題を解決するには、まず次の手順に従って、列がテーブルに含まれていることを確認します。
 
 1. Finance and Operations アプリの VM にログインします。
-2. **ワークスペース \> データ管理** に移動して、**フレームワーク パラメーター** のタイルを選択し、**テーブルの設定** タブにて、**エンティティ リストを更新する** を選択してテーブルを更新します。
-3. **ワークスペース \> データ管理** に移動し、**データ テーブル** タブを選択して、エンティティが一覧表示されていることを確認します。 エンティティが一覧に表示されない場合は、当該 Finance and Operations アプリの VM にログインして、エンティティが使用可能となっていることを確認してください。
+2. **ワークスペース \> データ管理** に移動して、**フレームワーク パラメーター** タイルを選択し、**テーブルの設定** タブにて、**テーブル リストの更新** を選択してテーブルを更新します。
+3. **ワークスペース \> データ管理** に移動し、**データ テーブル** タブを選択して、テーブルが一覧表示されていることを確認します。 テーブルが一覧に表示されない場合は、Finance and Operations アプリの VM にサインインして、テーブルが使用可能となっていることを確認してください。
 4. Finance and Operations アプリにて **デュアル書き込み** ページの **テーブル マッピング** ページを開きます。
-5. **エンティティ リストの更新** を選択すると、テーブル マッピングのフィールドが自動的に入力されます。
+5. **テーブル リストの更新** を選択すると、テーブル マッピングの列が自動的に入力されます。
 
 問題が解決しない場合は、次の手順を実行してください。
 
 > [!IMPORTANT]
-> 次の手順に従い、エンティティを削除してから再度追加するプロセスを実行します。 問題を回避するには、手順を正確に守ってください。
+> これらの手順では、テーブルを削除してから再度追加するプロセスを示します。 問題を回避するには、手順を正確に守ってください。
 
 1. Finance and Operations アプリで、**ワークスペース \> データ管理** に移動し、**データ テーブル** タイルを選択します。
-2. 属性が欠落しているエンティティを検索します。 ツールバーの **ターゲット マッピングの変更** をクリックします。
+2. 属性が欠落しているテーブルを検索します。 ツールバーの **ターゲット マッピングの変更** をクリックします。
 3. **ステージングをターゲットにマッピング** ウィンドウで、**マッピングの生成** をクリックします。
 4. Finance and Operations アプリにて **デュアル書き込み** ページの **テーブル マッピング** ページを開きます。
 5. マッピング上で属性が自動設定されていない場合は、**属性の追加** ボタンをクリックして手動で追加し、**保存** をクリックします。 
 6. マッピングを選択し、**実行** をクリックします。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

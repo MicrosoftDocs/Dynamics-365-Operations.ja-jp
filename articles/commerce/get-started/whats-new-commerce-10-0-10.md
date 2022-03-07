@@ -2,27 +2,24 @@
 title: " Dynamics 365 Commerce 10.0.10 (2020 年 5 月) の新機能および変更された機能"
 description: このトピックでは、Dynamics 365 Commerce 10.0.10 の新機能または変更された機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 099d0639df734f043205d087b8b8ba22900d5745
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 814be81954e3a128c2e797ec30df80ae0a788e28314af18fd7ad526b5753cdc6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409290"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742402"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10010-may-2020"></a> Dynamics 365 Commerce 10.0.10 (2020 年 5 月) の新機能および変更された機能
 
@@ -37,14 +34,14 @@ ms.locfileid: "4409290"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/)のサイトに関する追加情報にリンクします。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365-release-plan/2020wave1/)のサイトに関する追加情報にリンクします。
 
-- [POS のサインインの Azure AD サポート](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
-- [店舗で使用可能な現物在庫のチャンネル側計算](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
-- [POS でのデリバリー運営の変更モード](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
-- [POS の販売を表示できるようにするには、使用可能な割引を使用してアップセルとクロスセルを販売します](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/up-sell-cross-sell-using-discounts-enabling-store-associates-view-promotions-point-sale-pos.)
-- [仕訳帳からのレシートのメール送信](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/email-receipt-journal)
-- [チャネルに基づくサポート料金の自動請求の向上](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
+- [POS のサインインの Azure AD サポート](/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
+- [店舗で使用可能な現物在庫のチャンネル側計算](/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
+- [POS でのデリバリー運営の変更モード](/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
+- [POS の販売を表示できるようにするには、使用可能な割引を使用してアップセルとクロスセルを販売します](/dynamics365-release-plan/2020wave1/dynamics365-commerce/up-sell-cross-sell-using-discounts-enabling-store-associates-view-promotions-point-sale-pos.)
+- [仕訳帳からのレシートのメール送信](/dynamics365-release-plan/2020wave1/dynamics365-commerce/email-receipt-journal)
+- [チャネルに基づくサポート料金の自動請求の向上](/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
 
 
 ## <a name="additional-resources"></a>追加リソース
@@ -61,7 +58,7 @@ Dynamics 365 Commerce 10.0.10 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
@@ -73,3 +70,6 @@ Dynamics 365 Commerce 10.0.10 には、プラットフォーム更新プログ�
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

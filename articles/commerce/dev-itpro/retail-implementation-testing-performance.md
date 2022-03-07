@@ -1,12 +1,10 @@
 ---
 title: テストおよびパフォーマンスの問題
-description: このトピックでは、Microsoft Dynamics 365 Commerce 実装プロジェクトのテスティングおよびパフォーマンスの推奨事項について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce のテスティングおよびパフォーマンスの推奨事項について説明します。
 author: andreashofmann1
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: IT Pro
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: 29248887e9df89dceb549b9577528c0df3f84d43
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 68a2010b9ed79b2ab005cd41daa68f82d670ce20
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681498"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797209"
 ---
 # <a name="testing-and-performance-issues"></a>テストおよびパフォーマンスに関する問題
 
@@ -89,3 +87,6 @@ Modern POS/クラウド POS を使用する場合は、正しいユーザー ロ
 [コマース プロジェクトの新しい環境、Azure DevOps、およびブランチの設定](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Retail プロジェクトのコードと環境の更新](./updating-environments.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

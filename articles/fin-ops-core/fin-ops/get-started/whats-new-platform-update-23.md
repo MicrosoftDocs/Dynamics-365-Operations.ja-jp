@@ -2,11 +2,9 @@
 title: Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operation プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能または変更された機能について説明します。
 author: tonyafehr
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform 23
-ms.openlocfilehash: 07b8ed191028bb2027183720fd75527bf582f145
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c6f617a92ec4712bb3f8ceb52dbbbbd6c04da4904bacf2e978e6fcf49cce8f9e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727438"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-23-january-2019"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 23 (2019 年 1 月) の新機能および変更された機能
 
@@ -33,7 +31,7 @@ ms.locfileid: "4797853"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[2018 年 10 月リリース ノートを確認](https://go.microsoft.com/fwlink/?linkid=870424). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[2018 年 10 月リリース ノートを確認](/dynamics365/release-plans/). あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="platform-update-23-bug-fixes"></a>プラットフォーム アップデート 23 のバグ修正プログラム
 
@@ -43,7 +41,7 @@ ms.locfileid: "4797853"
 
 プラットフォーム更新プログラム 23 以降、会社間クエリを含むグリッドでは、グリッド内の他の列と同様、列ドロップダウン メニューを使用して、ユーザーが *法人* 列をフィルター処理できます。 たとえば、ユーザーが特定の顧客のグローバル トランザクションを見ているとき、会社の小さいサブセット内のトランザクションを検索することがあります。 この機能が追加される前は、フィルターまたは並べ替えの編集ダイアログ ボックスの顧客範囲タブを使用してフィルター処理するか、ページ固有のカスタム フィルターを使用する必要がありました。
 
-![法人によるフィルター](media/legalEntityFiltering.png "法人によるフィルター")
+![法人によるフィルター。](media/legalEntityFiltering.png "法人によるフィルター")
 
 ## <a name="export-to-excel"></a>Excel にエクスポート
 
@@ -61,7 +59,7 @@ DRA を使用してネットワーク プリンターをサービスに登録す
 
 ## <a name="enabling-index-hints-in-x-again"></a>X++ でのインデックス ヒントの再有効化
 
-Microsoft Dynamics AX 2009 以前のバージョンでは、X++ からのインデックス ヒントがサポートされていました。 ただし、Dynamics AX 2012 のリリース時にこれは非推奨になりました。 詳細については、[非推奨: X++ インデックス ヒント句](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/deprecated-x-index-hint-clause)を参照してください。
+Microsoft Dynamics AX 2009 以前のバージョンでは、X++ からのインデックス ヒントがサポートされていました。 ただし、Dynamics AX 2012 のリリース時にこれは非推奨になりました。 詳細については、[非推奨: X++ インデックス ヒント句](/dynamicsax-2012/appuser-itpro/deprecated-x-index-hint-clause)を参照してください。
 
 これが非推奨になった主な理由は、誤ったインデックス ヒットによってクエリが破損し、クエリを解決するまでほとんど実行できないことでした。 現在では、数百のテナントに数千のクエリが表示され、一部のシンプルなクエリのあまり最適でないプランと共に SQL が表示されると、Finance and Operations が X++ ヒントを戻したことになります。 ただし、X++ ヒントは特別な注意を払って使用してください。
 
@@ -89,4 +87,7 @@ public void testIndexHintRegularTable()
 プラットフォーム更新プログラム 23 では、エンティティ格納を Data Lake として選択できます。 この機能が有効になると、エンティティ格納データは、Microsoft サブスクリプションでリレーショナル エンティティ格納データベースに入力されません。 代わりに、独自のサブスクリプションの Azure Data Lake Storage Gen2 アカウントに入力されます。 PowerBI.com およびその他の Azure ツールのすべての機能をエンティティ格納で使用できます。 この機能をプレビューして使用するには、[Insider プログラム](https://experience.dynamics.com/insider)に是非ご参加ください。
 
 ## <a name="extensibility-enhancements"></a>拡張性の強化
-プラットフォーム更新プログラム 23 に含まれる[プラットフォーム拡張機能の 4 番目の波](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility4)は、2018 年 10 月リリース ノートにドキュメントされています。 6 つの強化機能が詳細に説明されており、ハイライトの 1 つはクエリ データソースへの新しいリレーションの追加です。
+プラットフォーム更新プログラム 23 に含まれる[プラットフォーム拡張機能の 4 番目の波](/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility4)は、2018 年 10 月リリース ノートにドキュメントされています。 6 つの強化機能が詳細に説明されており、ハイライトの 1 つはクエリ データソースへの新しいリレーションの追加です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

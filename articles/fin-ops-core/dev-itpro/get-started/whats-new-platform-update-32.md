@@ -2,11 +2,9 @@
 title: Finance and Operations アプリのプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラム 32 でプレビューされている機能について説明します。
 author: sericks007
-manager: AnnBe
 ms.date: 02/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 32
-ms.openlocfilehash: 55276bc80a31884f6390908ff2d9cd95c7f653e3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 63032709dd7a77252d69a39b462830a4989323ac40d5497b3dd3a67f24687a6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685115"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770781"
 ---
 # <a name="whats-new-or-changed-in-platform-update-32-for-finance-and-operations-apps-february-2020"></a>Finance and Operations アプリのプラットフォーム更新プログラム 32 (2020 年 2 月) の新機能および変更された機能
 
@@ -39,7 +37,7 @@ ms.locfileid: "4685115"
 
 ### <a name="file-size-limit-for-data-management-export-has-been-removed"></a>データ管理エクスポートのファイル サイズ制限が削除されました
 
-詳細情報については、[データ管理エクスポートのファイル サイズ制限が削除されました](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-management-export-file-size-limit-removed)を参照してください。
+詳細情報については、[データ管理エクスポートのファイル サイズ制限が削除されました](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-management-export-file-size-limit-removed)を参照してください。
 
 ### <a name="finance-and-operations-aos-kernel-improvements"></a>Finance and Operations AOS (カーネル) の改善
 
@@ -47,22 +45,22 @@ ms.locfileid: "4685115"
 
 ### <a name="continued-stabilization-of-saved-views"></a>保存されたビューの継続的な安定化
 
-この機能の詳細については、[ユーザーの生産性 – 保存されたビュー](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views)を参照してください。
+この機能の詳細については、[ユーザーの生産性 – 保存されたビュー](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views)を参照してください。
 
 ### <a name="improved-responsiveness-of-action-panes-on-smaller-screens"></a>小さい画面上でアクション ペインの応答性が向上
 
-この機能の詳細については、[モバイル デバイス エクスペリエンスの向上 – フェーズ 1 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1)を参照してください。
+この機能の詳細については、[モバイル デバイス エクスペリエンスの向上 – フェーズ 1 ](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1)を参照してください。
 
 ### <a name="ability-to-filter-on-blank-values-by-using-the-filter-pane-and-filters-in-grid-column-headers"></a>グリッド列ヘッダーのフィルター ウィンドウとフィルターを使用して、空白の値をフィルター処理する機能
 
-この機能の詳細については、[ユーザーの生産性 – フィルター処理の強化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-filtering-enhancements)を参照してください。
+この機能の詳細については、[ユーザーの生産性 – フィルター処理の強化](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-filtering-enhancements)を参照してください。
 
 ### <a name="continued-evolution-of-the-new-grid"></a>新しいグリッド進化の継続
 
-この機能の詳細については、[ユーザーの生産性 – 新規グリッド](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-new-grid)を参照してください。
+この機能の詳細については、[ユーザーの生産性 – 新規グリッド](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-new-grid)を参照してください。
 
 ### <a name="priority-based-scheduling-for-batch-jobs"></a>バッチ ジョブの優先度のスケジュール
-[バッチ ジョブの優先度スケジュール](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs)機能の既存のバッチ ジョブとタスクを準備できるように 2 つの新しいシステム バッチ ジョブを導入しました。 その 2 つの新しいシステム バッチは、次のようなものです。
+[バッチ ジョブの優先度スケジュール](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs)機能の既存のバッチ ジョブとタスクを準備できるように 2 つの新しいシステム バッチ ジョブを導入しました。 その 2 つの新しいシステム バッチは、次のようなものです。
 
 - **バッチ ジョブにバッチ グループの関連付けをシードするシステム ジョブ:** このバッチ ジョブは、クラス名 **SysMigrateBatchGroupsForPriorityBasedScheduling** で、バッチ ジョブをバッチ グループに関連付けます。
 - **期限切れのバッチレコードを削除するシステムジョブ:** このバッチ ジョブでは、クラス名 **SysCleanupBatchHeartbeatTable** で、新しい内部監視 **BatchHeartbeatTable** テーブルを削除します。
@@ -79,7 +77,7 @@ ms.locfileid: "4685115"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
@@ -91,3 +89,6 @@ ms.locfileid: "4685115"
 製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: クラスター ピッキングの製品の確認
 description: このトピックでは、クラスタ ピッキングと共に品目検証を設定する方法について説明します。
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 272c3a13b68e2b862faf20cc269ca790322b61de
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 530129ba6877c68475217d3a035775e25930cd07
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432002"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808873"
 ---
 # <a name="product-confirmation-for-cluster-picking"></a>クラスター ピッキングの製品の確認
 
@@ -42,3 +39,6 @@ ms.locfileid: "4432002"
 |        オプション        |                                    説明                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | 製品の確認 | スキャンしたときに、モバイル デバイスから各在庫を確認できます。 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

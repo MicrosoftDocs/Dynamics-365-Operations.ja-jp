@@ -2,9 +2,11 @@
 title: ナビゲーション メニュー モジュール
 description: このトピックでは、ナビゲーション メニュー モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
 author: anupamar-ms
-ms.date: 10/27/2021
+manager: annbe
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,16 +17,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 1af1fc03ead21150415295d83d292afe0110e5bd
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: f3461993e2bd59d66be1640331e4ef315a078469
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109685"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251214"
 ---
 # <a name="navigation-menu-module"></a>ナビゲーション メニュー モジュール
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、ナビゲーション メニュー モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
 
@@ -33,7 +36,7 @@ ms.locfileid: "8109685"
 ナビゲーション メニュー モジュールは、ページのヘッダー モジュールに追加できます。 Fabrikam テーマでは、ナビゲーション メニューは既定では 2 つのレベルで表示されます。 Starter テーマでは、ナビゲーション メニューは既定では 3 つのレベルで表示されます。 レベル数を変更するには、テーマにビュー拡張機能が必要です。
 
 次の図は、カテゴリ階層の 2 つのレベルと、いくつかの静的メニュー項目を含む、Fabrikam サイトのナビゲーション メニューの例を示しています。
-![ナビゲーション メニュー モジュールの例。](./media/ecommerce-header.png)
+![ナビゲーション メニュー モジュールの例](./media/ecommerce-header.png)
 
 ## <a name="navigation-menu-module-properties"></a>ナビゲーション メニュー モジュールのプロパティ
 
@@ -41,8 +44,8 @@ ms.locfileid: "8109685"
 |---------------------------|-----------------------|-------------|
 | 配賦元                  | **Retail**、**手動による作成**、**Retail と手動作成** | **Retail** の値を使用すると、Commerce 本社のチャンネル ナビゲーション階層がナビゲーション メニューに表示されます。 **手動作成** の値によって、静的なメニュー項目を選別できます。 **Retail および手動作成** 値により、両方を組み合わせることができます。 |
 | カテゴリ イメージの表示 | **True** または **False**    | このプロパティを有効にすると、カテゴリごとのカテゴリ イメージがナビゲーション メニューに表示されます。 Commerce リリース 10.0.14 に追加されました。 |
-| プロモーション画像を表示します | **True** または **False** | このプロパティを有効にすると、画像、リンク、テキストを使用してプロモーションを構成できます。 このプロパティは、Commerce のバージョン 10.0.17 リリースで追加されました。 |
-|カテゴリ プロモーション コンテンツの追加 | テキスト、画像、またはリンク | **プロモーション画像の表示** プロパティが有効になっている場合は、ナビゲーション メニューで、プロモーション コンテンツにテキスト、画像、リンクを追加できます。 |
+| プロモーションの表示 | **True** または **False** | このプロパティを有効にすると、画像、リンク、テキストを使用してプロモーションを構成できます。 このプロパティは、Commerce のバージョン 10.0.17 リリースで追加されました。 |
+| プロモーションの追加 | テキスト、画像、またはリンク | **プロモーションの表示** プロパティが有効になっている場合は、ナビゲーション メニューで、プロモーション コンテンツにテキスト、画像、リンクを追加できます。 |
 | 複数レベルのナビゲーション メニューの有効化 | **True** または **False** | このプロパティを有効にすると、ナビゲーション メニューに複数のレベルのナビゲーション階層を表示できます。 この機能は、Commerce のバージョン 10.0.15 リリースで利用できます。 |
 | レベルの数 | integer | このプロパティは、**複数レベルのナビゲーション メニューの有効化** プロパティが、**True** に設定されている場合に表示されるレベルの数を定義します。 |
 | 静的メニュー項目| 値の配列| メニュー項目名を静的サイトページへのリンクに関連付ける静的メニュー項目。 その他のメニュー項目以下にメニュー項目を作成できます。 既定では、静的メニューはルート レベルで表示され、存在する場合はチャンネル ナビゲーション階層に追加されます。 |
@@ -50,7 +53,7 @@ ms.locfileid: "8109685"
 | ルート メニュー | 文字列 | **ルート メニューを表示** プロパティが **True** に設定されている場合、このプロパティを使用してカスタム ルートのテキストを定義できます。 |
 
 次の図は、Fabrikam サイトのナビゲーション メニューに表示されるカテゴリ イメージの例を示しています。
-![カテゴリ イメージを含むナビゲーション メニュー モジュールの例。](./media/ecommerce-categoryimages.PNG)
+![カテゴリ イメージを含むナビゲーション メニュー モジュールの例](./media/ecommerce-categoryimages.PNG)
 
 ## <a name="add-a-navigation-menu-module-to-a-header-module"></a>ヘッダー モジュールへのナビゲーション メニュー モジュールの追加
 
@@ -62,13 +65,13 @@ ms.locfileid: "8109685"
 
 [階層リンク モジュール](add-breadcrumb.md)
 
-[サイト ピッカー モジュール](site-selector.md)
+[サイト セレクター モジュール](site-selector.md)
 
 [購入ボックス モジュール](add-buy-box.md)
 
 [Cookie のコンプライアンス](cookie-compliance.md)
 
-[ヘッダーモジュール](author-header-module.md)
+[ヘッダー モジュール](author-header-module.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

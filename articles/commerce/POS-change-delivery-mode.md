@@ -2,11 +2,9 @@
 title: POS の荷渡方法の変更
 description: このトピックでは、POS の荷渡方法の変更操作のコンフィギュレーション方法および使用方法について説明します。
 author: hhainesms
-manager: annbe
 ms.date: 03/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: ''
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 6bfe27a7b4a768da00c67e307a0bd7e57b333d11
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ef778763b26954057b83df3e963e34008819fd208a55d55e07075853ffce8b35
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714043"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>POS の荷渡方法の変更
 
@@ -33,7 +31,7 @@ Dynamics 365 Commerce バージョン 10.0.10 以降では、POS 画面レイア
 
 荷渡方法の変更機能により、POS トランザクションで 1 つ以上の出荷コンフィギュレーションの販売明細行に対して、荷渡方法を変更するオプションが提供されます。 以前のバージョンの Commerce では、出荷用にコンフィギュレーションされた既存の明細行の荷渡方法を変更する場合、**すべて出荷** または **選択された出荷** のコンフィギュレーション フロー全体を使用する必要がありました。 この処理には時間がかかり、明細行の配送元または配送日が誤って変更される可能性がありました。 この新しい機能により、これら販売明細行の荷渡方法を効率的に更新する代替方法が提供されます。
 
-POS ボタン グリッドのボタンに操作を追加する方法の詳細については、[販売時点管理の画面レイアウト](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) を参照してください。
+POS ボタン グリッドのボタンに操作を追加する方法の詳細については、[販売時点管理の画面レイアウト](pos-screen-layouts.md) を参照してください。
 
 POS でこの機能がコンフィギュレーションされた後、**荷渡方法の変更** を選択すると、荷渡方法を変更するトランザクションの明細行を選択できる一覧のページが表示されます。 明細行の一部またはすべてを選択するか、または何も変更せずに終了することができます。 変更可能なリストの明細行は、以前に出荷用にコンフィギュレーションされた販売明細行のみです。 集荷または Carryout に指定された明細行を変更する場合、**すべて出荷** または **選択された出荷** 操作を使用する必要があります。 逆に、出荷として指定された明細行を集荷または Carryout に変更する場合、**すべて集荷**、**選択された集荷**、**すべて Carryout**、または **選択された Carryout** 操作を使用する必要があります。
 
@@ -46,3 +44,6 @@ POS でこの機能がコンフィギュレーションされた後、**荷渡�
 [コール センター注文の作成](tasks/create-call-center-orders.md)
 
 [配送モードによるトランザクション メールのカスタマイズ](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,35 +2,30 @@
 title: 評価とレビュー モジュール
 description: このトピックでは、Microsoft Dynamics 365 Commerce の製品詳細ページで使用される評価とレビューのモジュールについて説明します。
 author: gvrmohanreddy
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: 85fb1272103eed7d6e44635b7c20438471d96b34
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66ee2d4185cad45b70b19fb474c64ae77a2868e835b20d5275e21610c0150370
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413854"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761565"
 ---
-# <a name="ratings-and-reviews-modules"></a>評価とレビュー モジュール
+# <a name="ratings-and-reviews-modules"></a>評価およびレビュー モジュール
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce の製品詳細ページ (PDP) で使用される評価とレビューのモジュールについて説明します。
-
-## <a name="overview"></a>概要
 
 E コマース Web サイトの評価およびレビューは、購入を決定する前に顧客が製品について学習するのに役立ち、製品に関する他の顧客のフィードバックを収集するメカニズムでもあります。 
 
@@ -47,19 +42,23 @@ E コマース Web サイトの評価およびレビューは、購入を決定�
  
 次の図は、PDP の評価とレビュー モジュールがどのようなものかを示しています。
 
-![PDP 上の評価とレビュー モジュール](media/rnr-eCommerce-pdp-reviews-modules_design.png)
+![PDP 上の評価とレビュー モジュール。](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
 > [!TIP] 
 > E コマース サイト上の複数の PDP 間で評価とレビュー モジュールのコンフィグレーションを共有できるように、PDP テンプレートとレイアウトを最適化する方法の詳細は、[テンプレートとレイアウトの概要](templates-layouts-overview.md) を参照してください。
 
 次の図は、**モジュールの追加** ダイアログ ボックスがどのように Dynamics 365 Commerce の評価とレビュー モジュールで表示されるかを示しています。
-![モジュールの追加ダイアログ ボックス](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
+![モジュールの追加ダイアログ ボックス。](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
 
 ### <a name="write-review-module"></a>レビューの書き込みモジュール
 
 レビューの書き込みモジュールには、ユーザーがサインインし、評価を割り当て、製品のレビューを書くことのできる **レビューを書く** ボタンが含まれています。 このモジュールで、ユーザーが以前に送信した評価またはレビューを編集することもできます。 このモジュールは通常、PDP 上の評価ヒストグラムおよび製品レビュー リスト モジュールの上に表示されます。
 次の図は、顧客が **レビューを書く** を選択したときに表示される **レビューを書く** ダイアログ ボックスを示しています。 顧客は、このダイアログ ボックスを使用して評価およびレビューを送信できます。
-![レビューを書くダイアログ ボックス](media/rnr-eCommerce-write-review-module.png) 次の表は、オーサリング ツールでコンフィギュレーションする必要があるレビューの書き込みモジュール プロパティを示します。
+
+![レビューを書くダイアログ ボックス。](media/rnr-eCommerce-write-review-module.png)
+
+次の表は、オーサリング ツールでコンフィギュレーションする必要がある レビューの書き込みモジュール プロパティを示します。
+
 | プロパティ名 | 金額        | プロパティの説明                 |
 |---------------|--------------|--------------------------------------|
 | 氏名          | レビューの書き込み | レビューの書き込みモジュールの名前。 |
@@ -68,7 +67,7 @@ E コマース Web サイトの評価およびレビューは、購入を決定�
 
 評価ヒストグラム モジュールは、評価ヒストグラムを表示します。 このモジュールは通常、レビューの書き込みモジュールと PDP の製品レビュー リスト モジュールの間に表示されます。
 評価ヒストグラム モジュールには、コンフィギュレーションは必要ありません。 PDP テンプレートにモジュールを追加するだけです。 次の図は、評価とレビュー モジュールが Dynamics 365 Commerce PDP 上で表示されるようコンフィギュレーションされているときに、どのような PDP テンプレートが表示されるかを示しています。
-![PDP 上で表示されるよう評価とレビューがコンフィギュレーションされている場合の PDP テンプレート](media/rnr-eCommerce-pdp-reviews-modules.png)
+![PDP 上で表示されるよう評価とレビューがコンフィギュレーションされている場合の PDP テンプレート。](media/rnr-eCommerce-pdp-reviews-modules.png)
 
 ### <a name="product-reviews-list-module"></a>製品レビュー リスト モジュール
 
@@ -83,7 +82,7 @@ E コマース Web サイトの評価およびレビューは、購入を決定�
 
 製品レビュー リスト モジュールには、評価ヒストグラム モジュールを追加できるスロットが含まれています。 次の図は、Dynamics 365 Commerce の製品 レビュー リスト モジュールに評価ヒストグラム モジュールを追加する方法を示しています。
 
-![製品レビュー リスト モジュールにおける評価ヒストグラム モジュールの追加](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
+![製品レビュー リスト モジュールにおける評価ヒストグラム モジュールの追加。](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -100,3 +99,6 @@ E コマース Web サイトの評価およびレビューは、購入を決定�
 [ヘッダー モジュール](author-header-module.md)
 
 [フッター モジュール](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

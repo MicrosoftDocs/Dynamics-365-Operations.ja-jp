@@ -2,35 +2,30 @@
 title: システム テーブル
 description: このトピックでは、システム テーブルについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 11/06/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 104503
-ms.assetid: 90f8562a-075d-4d5a-96ec-b0ff1ae98fb5
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 815c2f264edf541f15bd82ec2ff0f013b50491e6
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: a0920725f35adcca979c26402e33e3e094dac4e3
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4409710"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782049"
 ---
 # <a name="system-tables"></a>システム テーブル
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、システム テーブルについて説明します。
+このトピックには、システム クラスで使用できるドキュメントが含まれています。 
 
-<a name="common"></a>共通
-----------
+> [!NOTE]
+> このトピックは、システム テーブル メンバーの完全な一覧ではありません。 テーブルとそのメンバーの完全な一覧は、アプリケーション エクスプローラーで確認できます。
+
+## <a name="common"></a>共通
 
 共通テーブルとは、すべてのテーブルに対して基本クラスです。 これにデータは含まれていません。 多様な方法で任意のテーブルを参照するために主に X++ コードで使用されます。
 
@@ -187,7 +182,7 @@ ms.locfileid: "4409710"
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common)
 
 ## <a name="dataarea"></a>DataArea
 DataArea テーブルには、データベースで作成された会社の一覧が含まれています。
@@ -225,7 +220,7 @@ DataArea テーブルには、データベースで作成された会社の一�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [DataArea テーブル](#dataarea)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [DataArea テーブル](#dataarea)
 
 ## <a name="databaselog"></a>DatabaseLog
 DatabaseLog テーブルは、SysDatabaseLog テーブルのコンフィギュレーション情報を格納します。
@@ -272,7 +267,7 @@ DatabaseLog テーブルは、SysDatabaseLog テーブルのコンフィギュ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [DatabaseLog テーブル](#databaselog)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [DatabaseLog テーブル](#databaselog)
 
 ## <a name="del_accessrightslist"></a>DEL\_AccessRightsList
 このテーブルを使用すると、権限昇格攻撃またはサービス拒否攻撃につながるおそれがあります。 したがって、AOSAuthorization プロパティは CreateUpdateDelete の列挙値に設定されます。 Application Object Server は、現在のユーザーがそのテーブルで要求された操作を実行するためのアクセス許可を持っていることを確認することで、テーブルに対する作成、更新、および削除アクションをそれぞれ許可します。 操作を開始したユーザーが操作を実行する権限がない場合は、例外が発生します。
@@ -321,7 +316,7 @@ DatabaseLog テーブルは、SysDatabaseLog テーブルのコンフィギュ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) DEL-AccessRightsList テーブル
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) DEL-AccessRightsList テーブル
 
 ## <a name="del_companydomainlist"></a>DEL_CompanyDomainList
 CompanyDomainList テーブルには、DomainInfo および DataArea テーブル間の関連付けが含まれています。 ドメインごとにセキュリティ権限が付与されます。
@@ -362,7 +357,7 @@ CompanyDomainList テーブルには、DomainInfo および DataArea テーブ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) DEL_CompanyDomainList テーブル
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) DEL_CompanyDomainList テーブル
 
 ## <a name="del_domaininfo"></a>DEL_DomainInfo
 このテーブルを使用すると、権限昇格攻撃またはサービス拒否攻撃につながるおそれがあります。 したがって、AOSAuthorization プロパティは CreateUpdateDelete の列挙値に設定されます。 Application Object Server は、現在のユーザーがそのテーブルで要求された操作を実行するためのアクセス許可を持っていることを確認することで、テーブルに対する作成、更新、および削除アクションをそれぞれ許可します。 操作を開始したユーザーが操作を実行する権限がない場合は、例外が発生します。
@@ -394,7 +389,7 @@ CompanyDomainList テーブルには、DomainInfo および DataArea テーブ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) DEL_DomainInfo テーブル
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) DEL_DomainInfo テーブル
 
 ## <a name="del_usergroupinfo"></a>DEL_UserGroupInfo
 UserGroupInfo テーブルには、使用可能なユーザー グループの一覧が含まれています。
@@ -422,7 +417,7 @@ UserGroupInfo テーブルには、使用可能なユーザー グループの�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) DEL_UserGroupInfo テーブル
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) DEL_UserGroupInfo テーブル
 
 ## <a name="del_usergrouplist"></a>DEL_UserGroupList
 UserGroupList テーブルには、各ユーザー グループに関連付けられているユーザーのリストが含まれています。
@@ -459,7 +454,7 @@ UserGroupList テーブルには、各ユーザー グループに関連付け�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) DEL_UserGroupList テーブル
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) DEL_UserGroupList テーブル
 
 ## <a name="modelsecpolruntimeex"></a>ModelSecPolRuntimeEx
 ModelSecPolRuntimeEx テーブルは、セキュリティ ポリシーを適用するために必要なランタイム メタデータが保存されます。
@@ -501,7 +496,7 @@ ModelSecPolRuntimeEx テーブルは、セキュリティ ポリシーを適用�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [ModelSecPolRuntimeEx テーブル](#modelsecpolruntimeex)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [ModelSecPolRuntimeEx テーブル](#modelsecpolruntimeex)
 
 ## <a name="modelsecpolruntimeview"></a>ModelSecPolRuntimeView
 ModelSecPolRuntimeView ビューは、現在アクティブなセキュリティ ポリシーのランタイム メタデータを表示します。
@@ -532,7 +527,7 @@ ModelSecPolRuntimeView ビューは、現在アクティブなセキュリティ
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [ModelSecPolRuntimeView テーブル](#modelsecpolruntimeview)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [ModelSecPolRuntimeView テーブル](#modelsecpolruntimeview)
 
 ## <a name="partitions"></a>パーティション
 Partitions テーブルには、システム内のデータ パーティションの一覧が含まれています。
@@ -577,7 +572,7 @@ Partitions テーブルには、システム内のデータ パーティショ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [Partitions テーブル](#partitions)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [Partitions テーブル](#partitions)
 
 ## <a name="printjobheader"></a>PrintJobHeader
 PrintJobHeader テーブルには、現在のプリント ジョブに関する情報が含まれています
@@ -628,7 +623,7 @@ PrintJobHeader テーブルには、現在のプリント ジョブに関する�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [PrintJobHeader テーブル](#printjobheader)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [PrintJobHeader テーブル](#printjobheader)
 
 ## <a name="printjobpages"></a>PrintJobPages
 PrintJobPages テーブルには、プリント ジョブの現在印刷中のページに関する情報が含まれています
@@ -664,7 +659,7 @@ PrintJobPages テーブルには、プリント ジョブの現在印刷中の�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [PrintJobPages テーブル](#printjobpages)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [PrintJobPages テーブル](#printjobpages)
 
 ## <a name="securableobject"></a>SecurableObject
 SecurableObject テーブルには、セキュリティ フレームワークによるすべてのセキュリティ コンポーネント参照が含まれています。
@@ -698,7 +693,7 @@ SecurableObject テーブルには、セキュリティ フレームワークに
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurableObject テーブル](#securableobject)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurableObject テーブル](#securableobject)
 
 ## <a name="securityduty"></a>SecurityDuty
 ### <a name="fields"></a>フィールド
@@ -725,7 +720,7 @@ SecurableObject テーブルには、セキュリティ フレームワークに
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityDuty テーブル](#securityduty)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityDuty テーブル](#securityduty)
 
 ## <a name="securityentrypointinferredtables"></a>SecurityEntryPointInferredTables
 ### <a name="fields"></a>フィールド
@@ -749,7 +744,7 @@ SecurableObject テーブルには、セキュリティ フレームワークに
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityEntryPointInferredTables テーブル](#securityentrypointinferredtables)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityEntryPointInferredTables テーブル](#securityentrypointinferredtables)
 
 ## <a name="securityentrypointlink"></a>SecurityEntryPointLink
 SecurityEntryPointLink テーブルには、メニュー項目や Web メニュー項目の AOT ノードで指定されているセキュリティ保護可能なオブジェクト マッピングへのエントリ ポイントが含まれています。
@@ -785,7 +780,7 @@ SecurityEntryPointLink テーブルには、メニュー項目や Web メニュ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityEntryPointLink テーブル](#securityentrypointlink)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityEntryPointLink テーブル](#securityentrypointlink)
 
 ## <a name="securitypermission"></a>SecurityPermission
 SecurityPermission テーブルには、フォーム、レポート、セキュリティ コードのアクセス許可、およびサービス操作の AOT ノードで指定されているアクセス許可の一覧が含まれています。
@@ -823,7 +818,7 @@ SecurityPermission テーブルには、フォーム、レポート、セキュ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityPermission テーブル](#securitypermission)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityPermission テーブル](#securitypermission)
 
 ## <a name="securityprivilege"></a>SecurityPrivilege
 ### <a name="fields"></a>フィールド
@@ -850,7 +845,7 @@ SecurityPermission テーブルには、フォーム、レポート、セキュ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityPrivilege テーブル](#securityprivilege)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityPrivilege テーブル](#securityprivilege)
 
 ## <a name="securityrole"></a>SecurityRole
 SecurityRole テーブルには、セキュリティ AOT ロール ノードで定義したロールの一覧が反映されます。
@@ -895,7 +890,7 @@ SecurityRole テーブルには、セキュリティ AOT ロール ノードで�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityRole テーブル](#securityrole)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityRole テーブル](#securityrole)
 
 ## <a name="securityroleassignmentrule"></a>SecurityRoleAssignmentRule
 動的にユーザーをロールに割り当てるためのルール
@@ -935,7 +930,7 @@ SecurityRole テーブルには、セキュリティ AOT ロール ノードで�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityRoleAssignmentRule テーブル](#securityroleassignmentrule)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityRoleAssignmentRule テーブル](#securityroleassignmentrule)
 
 ## <a name="securityroledutyexplodedgraph"></a>SecurityRoleDutyExplodedGraph
 ### <a name="fields"></a>フィールド
@@ -961,7 +956,7 @@ SecurityRole テーブルには、セキュリティ AOT ロール ノードで�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityRoleDutyExplodedGraph テーブル](#securityroledutyexplodedgraph)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityRoleDutyExplodedGraph テーブル](#securityroledutyexplodedgraph)
 
 ## <a name="securityroleexplodedgraph"></a>SecurityRoleExplodedGraph
 SecurityRoleExplodedGraph テーブルには、セキュリティ ロール ノードの AOT サブロール ノードで定義されているすべてのロール関係 (直接または間接) が含まれています。
@@ -998,7 +993,7 @@ SecurityRoleExplodedGraph テーブルには、セキュリティ ロール ノ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityRoleExplodedGraph テーブル](#securityroleexplodedgraph)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityRoleExplodedGraph テーブル](#securityroleexplodedgraph)
 
 ## <a name="securityrolepermissionoverride"></a>SecurityRolePermissionOverride
 SecurityRolePermissionOverride テーブルには、セキュリティ ロール AOT ノードで指定されているアクセス許可の一覧が含まれています。
@@ -1035,7 +1030,7 @@ SecurityRolePermissionOverride テーブルには、セキュリティ ロール
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityRolePermissionOverride テーブル](#securityrolepermissionoverride)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityRolePermissionOverride テーブル](#securityrolepermissionoverride)
 
 ## <a name="securityroleprivilegeexplodedgraph"></a>SecurityRolePrivilegeExplodedGraph
 ### <a name="fields"></a>フィールド
@@ -1061,7 +1056,7 @@ SecurityRolePermissionOverride テーブルには、セキュリティ ロール
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityRolePrivilegeExplodedGraph テーブル](#securityroleprivilegeexplodedgraph)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityRolePrivilegeExplodedGraph テーブル](#securityroleprivilegeexplodedgraph)
 
 ## <a name="securityroleruntime"></a>SecurityRoleRuntime
 ### <a name="fields"></a>フィールド
@@ -1113,7 +1108,7 @@ SecurityRolePermissionOverride テーブルには、セキュリティ ロール
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityRoleRuntime テーブル](#securityroleruntime)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityRoleRuntime テーブル](#securityroleruntime)
 
 ## <a name="securityroletaskgrant"></a>SecurityRoleTaskGrant
 SecurityRoleTaskGrant テーブルには、AOT セキュリティ ロール ノードによって定義されるとおり、ローカルから職務権限へのマッピングとロールから特権へのマッピングの一覧が含まれています。
@@ -1147,7 +1142,7 @@ SecurityRoleTaskGrant テーブルには、AOT セキュリティ ロール ノ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityRoleTaskGrant テーブル](#securityroletaskgrant)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityRoleTaskGrant テーブル](#securityroletaskgrant)
 
 ## <a name="securitysegregationofdutiesconflict"></a>SecuritySegregationOfDutiesConflict
 SecuritySegregationOfDutiesConflict テーブルには、ロールへのユーザーの割り当て試行の結果生じた職務分掌競合と、権限のあるユーザーから提供された競合の解決策に関する情報が含まれています。
@@ -1217,7 +1212,7 @@ SecuritySegregationOfDutiesConflict テーブルには、ロールへのユー�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecuritySegregationOfDutiesConflict テーブル](#securitysegregationofdutiesconflict)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecuritySegregationOfDutiesConflict テーブル](#securitysegregationofdutiesconflict)
 
 ## <a name="securitysegregationofdutiesrule"></a>SecuritySegregationOfDutiesRule
 SecuritySegregationOfDutiesRule テーブルは、職務分掌を規定するルールを格納します。
@@ -1273,7 +1268,7 @@ SecuritySegregationOfDutiesRule テーブルは、職務分掌を規定するル
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecuritySegregationOfDutiesRule テーブル](#securitysegregationofdutiesrule)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecuritySegregationOfDutiesRule テーブル](#securitysegregationofdutiesrule)
 
 ## <a name="securitysubrole"></a>SecuritySubRole
 SecuritySubRole テーブルには、セキュリティ ロール AOT ノードで指定されているすべてのサブロールが含まれています。
@@ -1311,7 +1306,7 @@ SecuritySubRole テーブルには、セキュリティ ロール AOT ノード�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecuritySubRole テーブル](#securitysubrole)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecuritySubRole テーブル](#securitysubrole)
 
 ## <a name="securitysubtask"></a>SecuritySubTask
 SecuritySubTask テーブルには、セキュリティ職務権限 AOT ノードで指定されている職務権限から特権へのマッピングが含まれています。
@@ -1347,7 +1342,7 @@ SecuritySubTask テーブルには、セキュリティ職務権限 AOT ノー�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecuritySubTask テーブル](#securitysubtask)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecuritySubTask テーブル](#securitysubtask)
 
 ## <a name="securitytask"></a>SecurityTask
 SecurityTask テーブルには、AOT セキュリティ職務権限およびセキュリティ特権ノードで定義されている職務権限と権限の一覧が含まれています。
@@ -1385,7 +1380,7 @@ SecurityTask テーブルには、AOT セキュリティ職務権限およびセ
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityTask テーブル](#securitytask)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityTask テーブル](#securitytask)
 
 ## <a name="securitytaskentrypoint"></a>SecurityTaskEntryPoint
 SecurityTaskEntryPoint テーブルには、AOT セキュリティ権限ノードで指定されている特権からエントリ ポイントへのマッピングの一覧が含まれています。
@@ -1422,7 +1417,7 @@ SecurityTaskEntryPoint テーブルには、AOT セキュリティ権限ノー�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityTaskEntryPoint テーブル](#securitytaskentrypoint)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityTaskEntryPoint テーブル](#securitytaskentrypoint)
 
 ## <a name="securitytaskexplodedgraph"></a>SecurityTaskExplodedGraph
 SecurityTaskExplodedGraph テーブルには、セキュリティ職務権限 AOT ノードで指定されている職務権限から特権へのマッピングが含まれています。
@@ -1458,7 +1453,7 @@ SecurityTaskExplodedGraph テーブルには、セキュリティ職務権限 AO
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityTaskExplodedGraph テーブル](#securitytaskexplodedgraph)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityTaskExplodedGraph テーブル](#securitytaskexplodedgraph)
 
 ## <a name="securitytaskpermission"></a>SecurityTaskPermission
 SecurityTaskPermission テーブルは使用されていません。
@@ -1494,7 +1489,7 @@ SecurityTaskPermission テーブルは使用されていません。
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityTaskPermission テーブル](#securitytaskpermission)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityTaskPermission テーブル](#securitytaskpermission)
 
 ## <a name="securitytaskpermissionoverride"></a>SecurityTaskPermissionOverride
 SecurityTaskPermissionOverride テーブルには、セキュリティ権限 AOT ノードで指定されているアクセス許可の一覧が含まれています。
@@ -1531,7 +1526,7 @@ SecurityTaskPermissionOverride テーブルには、セキュリティ権限 AOT
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityTaskPermissionOverride テーブル](#securitytaskpermissionoverride)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityTaskPermissionOverride テーブル](#securitytaskpermissionoverride)
 
 ## <a name="securityuserrole"></a>SecurityUserRole
 SecurityUserRole テーブルには、ユーザーからロールへのマッピングが含まれています。
@@ -1573,7 +1568,7 @@ SecurityUserRole テーブルには、ユーザーからロールへのマッピ
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityUserRole テーブル](#securityuserrole)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityUserRole テーブル](#securityuserrole)
 
 ## <a name="securityuserrolecondition"></a>SecurityUserRoleCondition
 SecurityUserRoleCondition テーブルには、ユーザーからロールへのマッピングを制限する会社の一覧が含まれています。 役割のマッピングに特定のユーザーのエントリが存在しない場合、ユーザーには、その役割の権限がすべての企業に付与されます。
@@ -1612,7 +1607,7 @@ SecurityUserRoleCondition テーブルには、ユーザーからロールへの
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SecurityUserRoleCondition テーブル](#securityuserrolecondition)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SecurityUserRoleCondition テーブル](#securityuserrolecondition)
 
 ## <a name="sqldescribe"></a>SqlDescribe
 SqlDescribe テーブルは、テーブルおよびフィールドのメタデータを格納するために使用します。 SqlDataDictionary::tablemetadata メソッドは、バックエンド データベース クエリを使用して、このテーブルを設定します。
@@ -1653,7 +1648,7 @@ SqlDescribe テーブルは、テーブルおよびフィールドのメタデ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SqlDescribe テーブル](#sqldescribe)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SqlDescribe テーブル](#sqldescribe)
 
 ## <a name="sqldictionary"></a>SqlDictionary
 SqlDictionary テーブルは、テーブルおよびフィールド メタデータに関するデータベースの現在の状態について説明します。 このテーブルには、ビューおよび表の依存関係情報も含まれています。 データベース同期エンジンは、SqlDictionary テーブルを使用して、AOT とデータベースを同期させるために必要なアクションを決定します。
@@ -1695,7 +1690,7 @@ SqlDictionary テーブルは、テーブルおよびフィールド メタデ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SqlDictionary テーブル](#sqldictionary)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SqlDictionary テーブル](#sqldictionary)
 
 ## <a name="sqlparameters"></a>SqlParameters
 SqlParameters テーブルは、パラメーターと値の組み合わせの形式でデータベースに関連する情報を格納します。 このテーブルは Microsoft Dynamics Ax 2009 では使用されません。
@@ -1724,7 +1719,7 @@ SqlParameters テーブルは、パラメーターと値の組み合わせの形
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SqlParameters テーブル](#sqlparameters)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SqlParameters テーブル](#sqlparameters)
 
 ## <a name="sqlstatistics"></a>SqlStatistics
 SqlStatistics テーブルは、ユーザーの関連するデータベースの統計情報を格納します。 このテーブルは Microsoft Dynamics Ax 2009 では使用されません。
@@ -1779,7 +1774,7 @@ SqlStatistics テーブルは、ユーザーの関連するデータベースの
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SqlStatistics テーブル](#sqlstatistics)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SqlStatistics テーブル](#sqlstatistics)
 
 ## <a name="sqlstorage"></a>SqlStorage
 SqlStorage テーブルには、テーブル スペースに関する情報とその Oracle 属性が含まれています。
@@ -1812,7 +1807,7 @@ SqlStorage テーブルには、テーブル スペースに関する情報と�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SqlStorageテーブル](#sqlstorage)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SqlStorageテーブル](#sqlstorage)
 
 ## <a name="sqlsyncinfo"></a>SqlSyncInfo
 SqlSyncInfo テーブルは、データベース同期プロセス中にメッセージと DDL ステートメントをキャプチャします。 同期プロセスが完了すると、テーブル内の情報が削除されます。
@@ -1845,7 +1840,7 @@ SqlSyncInfo テーブルは、データベース同期プロセス中にメッ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SqlSyncInfo テーブル](#sqlsyncinfo)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SqlSyncInfo テーブル](#sqlsyncinfo)
 
 ## <a name="subquery"></a>サブクエリ
 Subquery テーブルは、職位に基づくページング機能によって使用されます。
@@ -1872,7 +1867,7 @@ Subquery テーブルは、職位に基づくページング機能によって�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [Sebquery テーブル](#subquery)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [Sebquery テーブル](#subquery)
 
 ## <a name="sysactivetemptable"></a>SysActiveTempTable
 SysActiveTempTable テーブルは、現在作成されている一時データベース テーブルに関するデータを提供します。 このテーブルは、これらのテーブルの存続期間を管理するためにフレームワークによって使用されます。
@@ -1902,7 +1897,7 @@ SysActiveTempTable テーブルは、現在作成されている一時データ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysActiveTempTable テーブル](#sysactivetemptable)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysActiveTempTable テーブル](#sysactivetemptable)
 
 ## <a name="sysbcproxyuseraccount"></a>SysBCProxyUserAccount
 SysBCProxyUserAccount テーブルは、SysBcAliasForm セキュリティ フォームを通じて入力されているビジネス コネクタ プロキシ情報を格納します。 このテーブルには、常に 1 つのレコードが格納されます。
@@ -1930,7 +1925,7 @@ SysBCProxyUserAccount テーブルは、SysBcAliasForm セキュリティ フォ
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysBCProxyUserAccount テーブル](#sysbcproxyuseraccount)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysBCProxyUserAccount テーブル](#sysbcproxyuseraccount)
 
 ## <a name="sysbreakpointlist"></a>SysBreakpointList
 SysBreakpointList テーブルには、MorphX にブレークポイントを持つ開発者の一覧が含まれています。
@@ -1963,7 +1958,7 @@ SysBreakpointList テーブルには、MorphX にブレークポイントを持�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysBreakpointList テーブル](#sysbreakpointlist)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysBreakpointList テーブル](#sysbreakpointlist)
 
 ## <a name="sysbreakpoints"></a>SysBreakpoints
 SysBreakpoints テーブルには、MorphX にあるすべてのブレークポイントの一覧が含まれています。
@@ -1995,7 +1990,7 @@ SysBreakpoints テーブルには、MorphX にあるすべてのブレークポ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysBreakpoints テーブル](#sysbreakpoints)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysBreakpoints テーブル](#sysbreakpoints)
 
 ## <a name="syscacheflush"></a>SysCacheFlush
 SysCacheFlush テーブルには、複数の AOS サーバー間のキャッシュの同期に使用されるデータが含まれています。
@@ -2021,7 +2016,7 @@ SysCacheFlush テーブルには、複数の AOS サーバー間のキャッシ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysCacheFlush テーブル](#syscacheflush)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysCacheFlush テーブル](#syscacheflush)
 
 ## <a name="sysclientaccesslog"></a>SysClientAccessLog
 ### <a name="fields"></a>フィールド
@@ -2055,7 +2050,7 @@ SysCacheFlush テーブルには、複数の AOS サーバー間のキャッシ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysClientAccessLog テーブル](#sysclientaccesslog)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysClientAccessLog テーブル](#sysclientaccesslog)
 
 ## <a name="sysclientsessions"></a>SysClientSessions
 SysClientSessions には、システムで現在アクティブなクライアント セッションのデータが含まれています。
@@ -2107,7 +2102,7 @@ SysClientSessions には、システムで現在アクティブなクライア�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysClientSessions テーブル](#sysclientsessions)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysClientSessions テーブル](#sysclientsessions)
 
 ## <a name="sysconfig"></a>SysConfig
 SysConfig テーブルには、ライセンスおよびコンフィギュレーション情報が含まれています。
@@ -2145,7 +2140,7 @@ SysConfig テーブルには、ライセンスおよびコンフィギュレー�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysConfig テーブル](#sysconfig)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysConfig テーブル](#sysconfig)
 
 ## <a name="sysencryptionkey"></a>SysEncryptionKey
 SysEncryptionKey テーブルには、EP クエリ文字列を暗号化し、データ パラメーターを転記するために使用される暗号化キーが格納されます。
@@ -2176,7 +2171,7 @@ SysEncryptionKey テーブルには、EP クエリ文字列を暗号化し、デ
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysEncryptionKey テーブル](#sysencryptionkey)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysEncryptionKey テーブル](#sysencryptionkey)
 
 ## <a name="sysglobalconfiguration"></a>SysGlobalConfiguration
 SysGlobalConfiguration テーブルには、特定のコンポーネントを構成するために使用できるシステム レベル グローバル設定が保存されます。
@@ -2205,7 +2200,7 @@ SysGlobalConfiguration テーブルには、特定のコンポーネントを構
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysGlobalConfiguration テーブル](#sysglobalconfiguration)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysGlobalConfiguration テーブル](#sysglobalconfiguration)
 
 ## <a name="sysinheritancerelations"></a>SysInheritanceRelations
 テーブル継承の SysInheritanceRelations フレームワーク ヘルパー テーブル。 テーブルには、テーブル継承階層関連の情報が格納されます。
@@ -2228,7 +2223,7 @@ SysGlobalConfiguration テーブルには、特定のコンポーネントを構
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysInheritanceRelations テーブル](#sysinheritancerelations)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysInheritanceRelations テーブル](#sysinheritancerelations)
 
 ## <a name="syslastvalue"></a>SysLastValue
 SysLastValue テーブルは、ユーザーがシステムを移動したときに記録される使用状況データの記憶域です。
@@ -2267,7 +2262,7 @@ SysLastValue テーブルは、ユーザーがシステムを移動したとき�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysLastValue テーブル](#syslastvalue)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysLastValue テーブル](#syslastvalue)
 
 ## <a name="sysmodel"></a>SysModel
 SysModel テーブルには、システムにインストールされているモデルに関する情報が含まれています。
@@ -2297,7 +2292,7 @@ SysModel テーブルには、システムにインストールされている�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModel テーブル](#sysmodel)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModel テーブル](#sysmodel)
 
 ## <a name="sysmodelelement"></a>SysModelElement
 SysModelElement テーブルは、インストールが保持する ModelElements を一覧表示します。
@@ -2336,7 +2331,7 @@ SysModelElement テーブルは、インストールが保持する ModelElement
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelElement テーブル](#sysmodelelement)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelElement テーブル](#sysmodelelement)
 
 ## <a name="sysmodelelementdata"></a>SysModelElementData
 SysModelElementData テーブルは、任意の SysModelElement のレイヤー固有のデータを提供します。
@@ -2380,7 +2375,7 @@ SysModelElementData テーブルは、任意の SysModelElement のレイヤー�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelElementData テーブル](#sysmodelelementdata)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelElementData テーブル](#sysmodelelementdata)
 
 ## <a name="sysmodelelementdataold"></a>SysModelElementDataOld
 SysModelElementDataOld テーブルは、任意の SysModelElementOld のレイヤー固有のデータを提供します。
@@ -2424,7 +2419,7 @@ SysModelElementDataOld テーブルは、任意の SysModelElementOld のレイ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelElementDataOld テーブル](#sysmodelelementdataold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelElementDataOld テーブル](#sysmodelelementdataold)
 
 ## <a name="sysmodelelementlabel"></a>SysModelElementLabel
 SysModelElementLabel テーブルには、特定の言語のラベル テキストが含まれています。
@@ -2455,7 +2450,7 @@ SysModelElementLabel テーブルには、特定の言語のラベル テキス�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelElementLabel テーブル](#sysmodelelementlabel)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelElementLabel テーブル](#sysmodelelementlabel)
 
 ## <a name="sysmodelelementlabelold"></a>SysModelElementLabelOld
 SysModelElementLabelOld テーブルには、特定の言語のラベル テキストが含まれています。
@@ -2485,7 +2480,7 @@ SysModelElementLabelOld テーブルには、特定の言語のラベル テキ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelElementLabelOld テーブル](#sysmodelelementlabelold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelElementLabelOld テーブル](#sysmodelelementlabelold)
 
 ## <a name="sysmodelelementold"></a>SysModelElementOld
 SysModelElementOld テーブルは、インストールが保持する ModelElements を一覧表示します。
@@ -2524,7 +2519,7 @@ SysModelElementOld テーブルは、インストールが保持する ModelElem
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelElementOld テーブル](#sysmodelelementold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelElementOld テーブル](#sysmodelelementold)
 
 ## <a name="sysmodelelementsource"></a>SysModelElementSource
 SysModelElementSource テーブルには、ソースを持つすべての SysModelElements のソース テキストが含まれています。
@@ -2558,7 +2553,7 @@ SysModelElementSource テーブルには、ソースを持つすべての SysMod
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelElementSource テーブル](#sysmodelelementsource)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelElementSource テーブル](#sysmodelelementsource)
 
 ## <a name="sysmodelelementsourceold"></a>SysModelElementSourceOld
 SysModelElementSourceOld テーブルには、ソースを持つすべての SysModelElementsOld のソース テキストが含まれています。
@@ -2592,7 +2587,7 @@ SysModelElementSourceOld テーブルには、ソースを持つすべての Sys
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelElementSourceOld テーブル](#sysmodelelementsourceold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelElementSourceOld テーブル](#sysmodelelementsourceold)
 
 ## <a name="sysmodelelementtype"></a>SysModelElementType
 SysModelElementType テーブルは、使用可能な SysModelElement 型を指定します。 その Recid は「古い」要素タイプの UtilRecordType 列挙の下位互換性です。
@@ -2626,7 +2621,7 @@ SysModelElementType テーブルは、使用可能な SysModelElement 型を指�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelElementType テーブル](#sysmodelelementtype)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelElementType テーブル](#sysmodelelementtype)
 
 ## <a name="sysmodelelementtypeold"></a>SysModelElementTypeOld
 SysModelElementTypeOld テーブルは、使用可能な SysModelElementOld 型を指定します。 その Recid は「古い」要素タイプの UtilRecordType 列挙の下位互換性です。
@@ -2659,7 +2654,7 @@ SysModelElementTypeOld テーブルは、使用可能な SysModelElementOld 型�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelElementTypeOld テーブル](#sysmodelelementtypeold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelElementTypeOld テーブル](#sysmodelelementtypeold)
 
 ## <a name="sysmodellayer"></a>SysModelLayer
 SysModelLayer テーブルは、考えられる LayerId と Name を一覧表示します。 レイヤーにモデル データが存在する場合は、そのレイヤーの集計バージョン番号を報告します。
@@ -2686,7 +2681,7 @@ SysModelLayer テーブルは、考えられる LayerId と Name を一覧表示
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelLayer テーブル](#sysmodellayer)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelLayer テーブル](#sysmodellayer)
 
 ## <a name="sysmodellayerold"></a>SysModelLayerOld
 SysModelLayerOld テーブルは、考えられる LayerId と Name を一覧表示します。 レイヤーにモデル データが存在する場合は、そのレイヤーの集計バージョン番号を報告します。
@@ -2712,7 +2707,7 @@ SysModelLayerOld テーブルは、考えられる LayerId と Name を一覧表
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelLayerOld テーブル](#sysmodellayerold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelLayerOld テーブル](#sysmodellayerold)
 
 ## <a name="sysmodelmanifest"></a>SysModelManifest
 SysModelManifest テーブルには、説明、発行元、モデルのバージョンなど、配置されたモデルに関するマニフェスト情報が含まれます。
@@ -2763,7 +2758,7 @@ SysModelManifest テーブルには、説明、発行元、モデルのバージ
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelManifest テーブル](#sysmodelmanifest)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelManifest テーブル](#sysmodelmanifest)
 
 ## <a name="sysmodelmanifestcategory"></a>SysModelManifestCategory
 SysModelManifestCategory テーブルには、展開されたモデルのマニフェスト情報のカテゴリ面が含まれています。
@@ -2789,7 +2784,7 @@ SysModelManifestCategory テーブルには、展開されたモデルのマニ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelManifestCategory テーブル](#sysmodelmanifestcategory)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelManifestCategory テーブル](#sysmodelmanifestcategory)
 
 ## <a name="sysmodelmanifestcategoryold"></a>SysModelManifestCategoryOld
 SysModelManifestCategoryOld テーブルには、展開されたモデルのマニフェスト情報のカテゴリ面が含まれています。
@@ -2814,7 +2809,7 @@ SysModelManifestCategoryOld テーブルには、展開されたモデルのマ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelManifestCategoryOld テーブル](#sysmodelmanifestcategoryold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelManifestCategoryOld テーブル](#sysmodelmanifestcategoryold)
 
 ## <a name="sysmodelmanifestold"></a>SysModelManifestOld
 SysModelManifestOld テーブルには、説明、発行元、モデルのバージョンなど、配置されたモデルに関するマニフェスト情報が含まれます。
@@ -2865,7 +2860,7 @@ SysModelManifestOld テーブルには、説明、発行元、モデルのバー
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelManifestOld テーブル](#sysmodelmanifestold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelManifestOld テーブル](#sysmodelmanifestold)
 
 ## <a name="sysmodelold"></a>SysModelOld
 SysModelOld テーブルには、システムにインストールされているモデルに関する情報が含まれています。
@@ -2895,7 +2890,7 @@ SysModelOld テーブルには、システムにインストールされてい�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysModelOld Table](#sysmodelold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysModelOld Table](#sysmodelold)
 
 ## <a name="sysoccconfiguration"></a>SysOccConfiguration
 SysOccConfiguration テーブルは、グローバルな同時実行モデルの設定を保存し、競合例外ログイン ポリシーを更新します。
@@ -2924,7 +2919,7 @@ SysOccConfiguration テーブルは、グローバルな同時実行モデルの
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysOccConfiguration テーブル](#sysoccconfiguration)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysOccConfiguration テーブル](#sysoccconfiguration)
 
 ## <a name="sysrecordlevelsecurity"></a>SysRecordLevelSecurity
 SysRecordLevelSecurity テーブルには、システム管理者によって構成されているすべてのレコード レベルのセキュリティ制限が含まれています。 この制限は、企業ごと、グループごとに保持されます。
@@ -2972,7 +2967,7 @@ SysRecordLevelSecurity テーブルには、システム管理者によって構
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysRecordLevelSecurity テーブル](#sysrecordlevelsecurity)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysRecordLevelSecurity テーブル](#sysrecordlevelsecurity)
 
 ## <a name="sysserversessions"></a>SysServerSessions
 SysServerSessions テーブルを使用して、システムにアクティブな AOS サーバーに関する情報を格納します。
@@ -3009,7 +3004,7 @@ SysServerSessions テーブルを使用して、システムにアクティブ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysServerSessions テーブル](#sysserversessions)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysServerSessions テーブル](#sysserversessions)
 
 ## <a name="syssetbasedhelper"></a>SysSetbasedHelper
 テーブル継承セットに基づく操作の SysSetbasedHelper フレームワーク ヘルパー テーブル。
@@ -3031,7 +3026,7 @@ SysServerSessions テーブルを使用して、システムにアクティブ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SysSetbasedHelper テーブル](#syssetbasedhelper)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SysSetbasedHelper テーブル](#syssetbasedhelper)
 
 ## <a name="systemsequences"></a>SystemSequences
 SystemSequences テーブルには、各テーブルの次に利用可能なレコード ID ブロックが保持されます。
@@ -3069,7 +3064,7 @@ SystemSequences テーブルには、各テーブルの次に利用可能なレ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [SystemSequences テーブル](#systemsequences)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [SystemSequences テーブル](#systemsequences)
 
 ## <a name="tablecollectionlist"></a>TableCollectionList
 TableCollectionList テーブルには、テーブル コレクションと仮想会社の間のマッピングが格納されます。
@@ -3106,7 +3101,7 @@ TableCollectionList テーブルには、テーブル コレクションと仮�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [TableCollectionList テーブル](#tablecollectionlist)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [TableCollectionList テーブル](#tablecollectionlist)
 
 ## <a name="timezoneslist"></a>TimeZonesList
 TimeZonesList テーブルには、サポートされているタイム ゾーンの一覧が含まれています。
@@ -3135,7 +3130,7 @@ TimeZonesList テーブルには、サポートされているタイム ゾー�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [TimeZonesList テーブル](#timezoneslist)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [TimeZonesList テーブル](#timezoneslist)
 
 ## <a name="timezonesrulesdata"></a>TimeZonesRulesData
 TimeZonesRulesData テーブルには、GMT オフセット、およびサポートされているすべてのタイム ゾーンの夏時間情報が含まれています。
@@ -3186,7 +3181,7 @@ TimeZonesRulesData テーブルには、GMT オフセット、およびサポー
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [TimeZonesRulesData テーブル](#timezonesrulesdata)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [TimeZonesRulesData テーブル](#timezonesrulesdata)
 
 ## <a name="userdataareafilter"></a>UserDataAreaFilter
 UserDataAreaFilter テーブルには、ユーザーが選択できる会社の一覧が含まれています。 これは、SecurityRights クラスの populateSelectableCompanies メソッドを呼び出すことによって入力されます。
@@ -3220,7 +3215,7 @@ UserDataAreaFilter テーブルには、ユーザーが選択できる会社の�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [UserDataAreaFilter テーブル](#userdataareafilter)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [UserDataAreaFilter テーブル](#userdataareafilter)
 
 ## <a name="userinfo"></a>UserInfo
 UserInfo テーブルには、ユーザー、そのアクティブなディレクトリ、および既定の情報の一覧が含まれています。
@@ -3332,7 +3327,7 @@ UserInfo テーブルには、ユーザー、そのアクティブなディレ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [UserInfo テーブル](#userinfo)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [UserInfo テーブル](#userinfo)
 
 ## <a name="userinfostartupmodel"></a>UserInfoStartupModel
 UserInfoStartupModel テーブルには、各ユーザーの各レイヤーの優先スタートアップ モデルが保持されます。
@@ -3372,7 +3367,7 @@ UserInfoStartupModel テーブルには、各ユーザーの各レイヤーの�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [UserInfoStartupModel テーブル](#userinfostartupmodel)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [UserInfoStartupModel テーブル](#userinfostartupmodel)
 
 ## <a name="utilelements"></a>UtilElements
 UtilElements テーブルには、AOT 内に表示されるアプリケーションが含まれています。
@@ -3412,7 +3407,7 @@ UtilElements テーブルには、AOT 内に表示されるアプリケーショ
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [UtilElements テーブル](#utilelements)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [UtilElements テーブル](#utilelements)
 
 ## <a name="utilelementsold"></a>UtilElementsOld
 UtilElementsOld テーブルには、アプリケーション フォルダーに格納されているアプリケーション モデルが含まれています。 アップグレード プロセス中に使用されます。
@@ -3448,7 +3443,7 @@ UtilElementsOld テーブルには、アプリケーション フォルダーに
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [UtilElementsOld テーブル](#utilelementsold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [UtilElementsOld テーブル](#utilelementsold)
 
 ## <a name="utilidelements"></a>UtilIdElements
 UtilIdElements テーブルには、AOT 内に表示されるアプリケーション モデルが含まれています。
@@ -3489,7 +3484,7 @@ UtilIdElements テーブルには、AOT 内に表示されるアプリケーシ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [UtilIdElements テーブル](#utilidelements)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [UtilIdElements テーブル](#utilidelements)
 
 ## <a name="utilidelementsold"></a>UtilIdElementsOld
 UtilIdElementsOld テーブルには、アプリケーション フォルダーに格納されているアプリケーション モデルが含まれています。 アップグレード プロセス中に使用されます。
@@ -3526,7 +3521,7 @@ UtilIdElementsOld テーブルには、アプリケーション フォルダー�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [UtilIdElementsOld テーブル](#utilidelementsold)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [UtilIdElementsOld テーブル](#utilidelementsold)
 
 ## <a name="utilmodels"></a>UtilModels
 UtilModels テーブルには、システムにインストールされているモデルに関する情報が含まれています。
@@ -3568,7 +3563,7 @@ UtilModels テーブルには、システムにインストールされている
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [UtilModels テーブル](#utilmodels)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [UtilModels テーブル](#utilmodels)
 
 ## <a name="virtualdataarealist"></a>VirtualDataAreaList
 VirtualDataAreaList テーブルには、実際の会社と仮想会社の間のマッピングが格納されます。
@@ -3611,7 +3606,7 @@ VirtualDataAreaList テーブルには、実際の会社と仮想会社の間の
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [VirtualDataAreaList テーブル](#virtualdataarealist)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [VirtualDataAreaList テーブル](#virtualdataarealist)
 
 ## <a name="vsassembly"></a>VSAssembly
 VSAssembly テーブルには、AOT 内で Visual Studio プロジェクト ノードの下に格納されているアセンブリの最後の配置を説明する同期情報が含まれています。
@@ -3641,7 +3636,10 @@ VSAssembly テーブルには、AOT 内で Visual Studio プロジェクト ノ�
 
 ### <a name="inheritance-hierarchy"></a>継承階層
 
-[xRecord クラス](system-classes/xRecord-class.md) [共通テーブル](#common) [VSAssembly テーブル](#vsassembly)
+[xRecord クラス](/dotnet/api/dynamics.ax.application) [共通テーブル](#common) [VSAssembly テーブル](#vsassembly)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

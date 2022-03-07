@@ -2,27 +2,24 @@
 title: Dynamics 365 Finance 10.0.12 (2020 年 8 月) の新機能または変更された機能
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.12 プレビュー リリースの新機能または変更された機能について説明します。
 author: roschlom
-manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: a889a47c54e979db56e386ae6dd69defaf5e4cac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2abddea71cabca301d96a795359dcace5f97828a
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409178"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896974"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-10012-august-2020"></a>Dynamics 365 Finance 10.0.12 (2020 年 8 月) の新機能または変更された機能
 
@@ -36,19 +33,19 @@ ms.locfileid: "4409178"
 - **自動更新:** 2020 年 8 月
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 
 
 ### <a name="dynamics-365-finance"></a>Dynamics 365 Finance
-- [顧客支払予測](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/customer-payment-predictions)
- - [会計登録者ワークスペース](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/treasurer-workspace)
- - [予測銀行残高](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/forecast-bank-balance)
- - [キャッシュ フロー予測の外部データ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/external-data-cash-forecasting)
- - [詳細な元帳決済: 個別に処理された決済および逆決済](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
- - [仕入先支払提案の自動化](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/automatic-vendor-payment-proposal)
+- [顧客支払予測](/dynamics365-release-plan/2020wave1/dynamics365-finance/customer-payment-predictions)
+ - [会計登録者ワークスペース](/dynamics365-release-plan/2020wave1/dynamics365-finance/treasurer-workspace)
+ - [予測銀行残高](/dynamics365-release-plan/2020wave1/dynamics365-finance/forecast-bank-balance)
+ - [キャッシュ フロー予測の外部データ](/dynamics365-release-plan/2020wave1/dynamics365-finance/external-data-cash-forecasting)
+ - [詳細な元帳決済: 個別に処理された決済および逆決済](/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
+ - [仕入先支払提案の自動化](/dynamics365-release-plan/2020wave1/dynamics365-finance/automatic-vendor-payment-proposal)
  
  ### <a name="public-sector"></a>公的機関
- - [転記時に利息配分と口座残高の更新を許可する](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
- - [予算計画を置き換えるオプションの削除](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
+ - [転記時に利息配分と口座残高の更新を許可する](/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
+ - [予算計画を置き換えるオプションの削除](/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
  
 ## <a name="additional-resources"></a>追加リソース
 
@@ -59,13 +56,13 @@ Dynamics 365 Finance 10.0.12 には、プラットフォーム更新プログラ
 この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746) を参照してください。
 
 ### <a name="regulatory-updates"></a>規制の更新
-Dynamics 365 Finance and Operations アプリの規制の更新については、[規制の更新](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates)を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
+Dynamics 365 Finance and Operations アプリの規制の更新については、[規制の更新](../localizations/regulatory-updates.md)を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
 
 ### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: 2020 リリースのウェーブ 1 プラン
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 1 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 1 プラン](/dynamics365-release-plan/2020wave1/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
@@ -77,3 +74,6 @@ Dynamics 365 Finance and Operations アプリの規制の更新については�
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

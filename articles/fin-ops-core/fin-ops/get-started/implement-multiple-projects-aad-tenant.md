@@ -2,11 +2,9 @@
 title: 1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 description: このトピックでは、複数の LCS プロジェクトと実稼動環境を同じ Azure Active Directory テナント上に実装する方法について説明します。
 author: ClaudiaBetz-Haubold
-manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: aa594eca38d54efd1c4f90a9d4b433837b9d1e69
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 8a650665bd10106c5fd06c1b144f751cd0183815
+ms.sourcegitcommit: 013196e9737acfc9a3d1f842f351e95f79f64d36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797329"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "7878885"
 ---
 # <a name="multiple-lcs-projects-and-environments-on-one-azure-ad-tenant"></a>1 つの Azure AD テナントにおける複数の LCS プロジェクトおよび環境
 
@@ -30,7 +28,7 @@ ms.locfileid: "4797329"
 - 移住地や待機時間のデータまたはデータ量のグローバル実装の要件は、1 つのインスタンスでは満たされません。
 - 組織内の異なる部署は、製品を独立したアプリケーションとして個別に実行しています。
 
-Microsoft Dynamics サービス エンジニアリング (DSE) チームによる手動操作は、共有 Azure AD テナントで追加の LCS プロジェクトを作成するために必要になります。 このアプローチは、単一インスタンスの戦略が本当に実現可能でない場合にのみ使用する必要があります。 追加の LCS プロジェクトを作成する前に、業務の妥当性を指定し、アプローチのすべての影響を理解していることを確認する必要があります。 このプロセスは、可能な限り実装ライフサイクルの早い段階で開始する必要があります。 続行する場合は、追加の LCS プロジェクトを必要としているプロジェクトに誰が割り当てられているかを、FastTrack ソリューション アーキテクトに通知する必要があります。 ソリューション アーキテクトがプロジェクトに割り当てられていない場合、顧客は、サポート チケットを開く必要があります。
+Microsoft Dynamics サービス エンジニアリング (DSE) チームによる手動操作は、共有 Azure AD テナントで追加の LCS プロジェクトを作成するために必要になります。 このアプローチは、単一インスタンスの戦略が本当に実現可能でない場合にのみ使用する必要があります。 追加の LCS プロジェクトを作成する前に、業務の妥当性を指定し、アプローチのすべての影響を理解していることを確認する必要があります。 このプロセスは、可能な限り実装ライフサイクルの早い段階で開始する必要があります。 続行を決定した顧客は、既存の LCS プロジェクトを介してサポート チケットを開く必要があります。
 
 ## <a name="licensing-requirements"></a>ライセンス要件
 
@@ -58,6 +56,7 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
 - 待機時間低減のため、LCS プロジェクトごとにデータ センターを選択することができます。
 - データ所在地の法的要件を満たすため、LCS プロジェクトごとにデータ センターを選択することができます。
 - コードの導入やアップグレードなど、サービス運用のスケジュールを立てることがより柔軟になります。
+- さまざまな LCS 実装プロジェクトに対して、さまざまな利害関係者が含まれる可能性があります。
 
 ## <a name="requesting-multiple-lcs-projects-on-the-same-azure-ad-tenant"></a>同じ Azure AD テナントで複数の LCS プロジェクトを要求します。
 
@@ -72,6 +71,9 @@ Microsoft Dynamics サービス エンジニアリング (DSE) チームによ�
 - 同じ Azure AD テナントにおける、複数の LCS プロジェクトの影響を、顧客が理解していることを確認します。
 
 ## <a name="online-deployments-in-china-sovereign-cloud"></a>中国の主権クラウドにおけるオンラインの展開
-中国の導入 / ロールアウトが実装に含まれる場合、Dynamics 365 Finance オンライン導入が 2019 年 4 月より中国本土で利用可能になったと伝えています。 詳細については、[中国で 21Vianet が運用する Finance and Operations アプリ](../../dev-itpro/deployment/china-local-deployment.md)を参照してください。 この配置は、中国における規制要件に準拠するように設計されており、サービスには 21Vianet が運営およびトランザクション処理する別のテナント (Azure Active Directory) を持つクラウド サービスのインスタンスが、物理的に分離されています。 
+中国の導入 / ロールアウトが実装に含まれる場合、Dynamics 365 Finance オンライン導入が 2019 年 4 月より中国本土で利用可能になったと伝えています。 詳細については、[Finance and Operations アプリ - 中国で 21Vianet が運用](../../dev-itpro/deployment/china-local-deployment.md) を参照してください。 この配置は、中国における規制要件に準拠するように設計されており、サービスには 21Vianet が運営およびトランザクション処理する別のテナント (Azure Active Directory) を持つクラウド サービスのインスタンスが、物理的に分離されています。 
 
 これは、別のテナント (Azure Active Directory) を持つ複数のクラウドの単一組織です。 上記のように、マルチ Lifecycle Services プロジェクトまたは運用環境におけるメリットとデメリットは引き続き適用されますが、ライセンス要件と要求の手順は異なります。 あらゆるプロセス支援において、Microsoft Account Executive または実装パートナーと協力します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

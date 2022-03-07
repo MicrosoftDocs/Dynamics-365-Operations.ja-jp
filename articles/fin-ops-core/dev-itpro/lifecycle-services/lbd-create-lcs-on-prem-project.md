@@ -2,26 +2,24 @@
 title: Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) でオンプレミス プロジェクトを設定するプロセスについて説明します。
 author: PeterRFriis
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efc15f3ef4ec81a9b09009317b4d73322f99842d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: da38f02999c87110ced3df4d88ee4d0d543736b75212b9748333772a5ada5218
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679980"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740924"
 ---
 # <a name="set-up-on-premises-projects-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定
 
@@ -29,7 +27,7 @@ ms.locfileid: "4679980"
 
 Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics 365 Finance + Operations (オンプレミス) のインスタンスを配置し更新する必要があります。 ボリューム ライセンス フローまたは Dynamics 価格リスト フローを通じてサーバーとユーザーのライセンスを購入した後は、 [Finance + Operations (オンプレミス) の購入](../../fin-ops/get-started/purchase-on-premises.md) を参照して、 Azure AD アカウントを作成、または既存の Azure AD アカウントを使用して、すべてのサインアップ手順を完了します。 ユーザーは LCS へリダイレクトされ、そこでオンプレミス実装プロジェクトがプロビジョニングされます。
 
- [![On-premises 実装プロジェクト](./media/lbd-proejcts-01.png)](./media/lbd-proejcts-01.png)
+ [![オンプレミス実装プロジェクト。](./media/lbd-proejcts-01.png)](./media/lbd-proejcts-01.png)
 
 オンプレミス プロジェクトには、オンプレミス ソリューションの実装、保守、および運用に必要なすべてのツールがあります。 オンプレミス プロジェクトで使用可能なツールの一部を次に示します。
 
@@ -46,3 +44,6 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics 365 Finan
 - **SharePoint のオンライン ライブラリ** – オンラインの Microsoft SharePoint ライブラリに接続します。
 
 オンプレミス実装を開始するには、プロジェクトを正しくセットアップし、開発者とビルド環境を展開してから、サンドボックス環境と実稼働環境を展開する方法の手順に従う必要があります。 展開に役立つように、2 つの環境スロットがオンプレミス プロジェクトにあらかじめ割り当てられています。 一方のスロットはサンドボックス環境用で、もう一方のスロットは実稼働環境用です。 これらのスロットは、サービス フロー中に使用され、パッケージが実稼働環境で適用される前にサンドボックス環境でテストされることを保証します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

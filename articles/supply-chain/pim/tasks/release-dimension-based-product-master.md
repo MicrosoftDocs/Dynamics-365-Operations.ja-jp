@@ -2,26 +2,23 @@
 title: 分析コードベースの製品マスターのリリース
 description: この手順では、分析コード ベースのコンフィギュレーションに使用する製品マスターをリリースする方法を示します。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductRelease
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cd207d202c24ced9e29bdfc7386fb6464a838a0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a6f4cee6d12ed702d10edb576e11a912ac2cb3b193409c3a208661d6306c3347
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781881"
 ---
 # <a name="release-a-dimension-based-product-master"></a>分析コードベースの製品マスターのリリース
 
@@ -41,3 +38,6 @@ ms.locfileid: "4431814"
 7. [次へ] をクリックします。
 8. [完了] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

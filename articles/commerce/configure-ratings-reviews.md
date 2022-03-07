@@ -2,35 +2,30 @@
 title: 評価とレビューのコンフィギュレーション
 description: このトピックでは、Microsoft Dynamics 365 Commerce で顧客の評価とレビューを表示するように E コマース サイトを構成する方法について説明します。
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413655"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968105"
 ---
 # <a name="configure-ratings-and-reviews"></a>評価とレビューのコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce で顧客の評価とレビューを表示するように E コマース サイトを構成する方法について説明します。
-
-## <a name="overview"></a>概要
 
 E コマース ウェブ サイトの評価およびレビューでは、それらの製品に対する他の顧客の意見を示すことによって、顧客が購入決定を行う前に製品について学ぶことができます。 E コマース Web サイトは、評価とレビューも製品に関する顧客フィードバックを収集するためのメカニズムです。 
 
@@ -49,7 +44,7 @@ E コマース ウェブ サイトの評価およびレビューでは、それ�
 
 次の図は、このコンフィグレーションが Dynamics 365 Commerce でどのように表示されるかを示しています。
 
-![評価とレビューを表示するようサイトをコンフィギュレーションする](media/rnr-eCommerce-site-appsettings.png)
+![評価とレビューを表示するようサイトをコンフィギュレーションします。](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>製品評価を PDP のレビュー セクションにリンクする
 
@@ -63,7 +58,7 @@ E コマース ウェブ サイトの評価およびレビューでは、それ�
 
 次の図は、このコンフィグレーションが Dynamics 365 Commerce でどのように表示されるかを示しています。
 
-![製品評価を PDP のレビュー セクションにリンクする](media/rnr-eCommerce-buy-box-rating-summary.png)
+![製品評価を PDP のレビュー セクションにリンクします。](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>プライバシーおよびポリシー ページへのリンクをコンフィギュレーションします。
 
@@ -92,6 +87,17 @@ E コマース ウェブ サイトの評価およびレビューでは、それ�
 
 [評価とレビューの管理](manage-reviews.md)
 
-[製品詳細ページに評価とレビュー モジュールをコンフィギュレーション](ratings-reviews-modules.md)
-
 [Dynamics 365 Retail の商品評価の同期](sync-product-ratings.md)
+
+[モデレーターによる評価とレビューの手動公開を有効にする](manual-publish-rating-reviews.md)
+
+[評価とレビューのインポートとエクスポート](import-export-reviews.md)
+
+[サービス間認証の構成](service-to-service-auth.md)
+
+[評価とレビューに関するよく寄せられる質問](ratings-reviews-faq.md)
+
+[評価およびレビュー モジュール](ratings-reviews-modules.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

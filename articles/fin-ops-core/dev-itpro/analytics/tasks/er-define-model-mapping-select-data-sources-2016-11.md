@@ -1,12 +1,10 @@
 ---
 title: ER モデル マッピングの定義およびそのデータ ソースの選択
-description: 次の手順では、システム管理者または電子申告開発者ロールのユーザーがどのように電子申告データ モデルのデータ ソースを選択できるか説明します。
+description: このトピックでは、システム管理者または電子申告開発者が電子申告データ モデルのデータ ソースを選択する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d57c191761b8e2367ff8806c1cd98d6d83559e3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7d88aaa24d61d6768801a84c81002d7a6ab2f316
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682120"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755085"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>ER モデル マッピングの定義およびそのデータ ソースの選択
 
@@ -157,3 +155,6 @@ ms.locfileid: "4682120"
 71. ページを閉じます。
 72. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

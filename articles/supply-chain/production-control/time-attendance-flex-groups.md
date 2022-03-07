@@ -2,28 +2,25 @@
 title: フレックス グループ
 description: このトピックでは、時刻と出勤でのフレックス グループの使用方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 03/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgFlexGroup, JmgFlexCorrection
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c71ebab0788b6c5d7466a5d71e3c72a7e86e41db
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7628f2fc3d3a7e5bb1175edf59f856bc40f9b987
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432007"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102833"
 ---
 # <a name="flex-groups"></a>フレックス グループ
 
@@ -185,3 +182,6 @@ ms.locfileid: "4432007"
 | 午後 06 時 00 分 | 午後 08 時 00 分 | 2    | 1.5       | 3            |
 | 午後 08 時 00 分 | 午後 09 時 00 分 | 1    | 2         | 2            |
 |          |          |      | **合計** | **8**        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

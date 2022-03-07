@@ -1,7 +1,7 @@
 ---
 title: 与信限度額の調整
 description: このトピックでは、与信限度額調整の設定および追加方法について説明します。
-author: JodiChristiansen
+author: mikefalkner
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c171ab99a434e529c48f39be9147ac411fb08b9b
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: eb65d8a7a0ae34ff6222561b20538da65862d10e7b18fda60a42d55e8b5516ae
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753901"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724114"
 ---
 # <a name="credit-limit-adjustments"></a>与信限度額の調整 
 

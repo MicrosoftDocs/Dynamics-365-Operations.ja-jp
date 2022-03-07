@@ -2,12 +2,15 @@
 title: Dynamics 365 Human Resources 2021 年 1 月 21 日の新機能および変更された機能
 description: このトピックでは、2021 年 1 月 21 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
+manager: tfehr
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -15,22 +18,20 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02f0b0664dcb78d20c2719b4377dcc6047f2bf3392225f1cf9c166a1073ecd59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af847ed36187c0d0629ce4063d9c17cb0fa8cfcf
+ms.sourcegitcommit: 630a0b3f800f36ced49b79156dd52132904fef75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772619"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "5060845"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Dynamics 365 Human Resources 2021 年 1 月 21 日の新機能および変更された機能
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
-新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2020 リリース ウェーブ 2 の概要](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
+新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2020 リリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
 
 
 ## <a name="in-this-release"></a>今回のリリース
@@ -43,8 +44,8 @@ ms.locfileid: "6772619"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| プラットフォーム更新プログラム 10.0.16(40) | -- | [Finance and Operations アプリのバージョン 10.0.16 のプラットフォーム更新プログラム (2021 年 2 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
-| ワークフローの申請と承認の強化 | [組織および人事管理ワークフロー エクスペリエンスの強化](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [自分のリストに割り当てられた作業項目を配置するコンフィギュレーション オプション](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| プラットフォーム更新プログラム 10.0.16(40) | -- | [Finance and Operations アプリのバージョン 10.0.16 のプラットフォーム更新プログラム (2021 年 2 月)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16) |
+| ワークフローの申請と承認の強化 | [組織および人事管理ワークフロー エクスペリエンスの強化](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [自分のリストに割り当てられた作業項目を配置するコンフィギュレーション オプション](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | フォーム1095-C、フォーム1095-B、レガシ-の福利厚生に関する電子報告に対する、アフォーダブルケア法 (ACA) 準拠の更新 | -- | -- | 
 | 福利厚生管理では、米国に拠点を置く法人に対する ACA に準拠するレポートに対応します | -- | [福利厚生管理での ACA レポートの生成](hr-benefits-management-aca-reports.md) |
 | 福利厚生管理に、福利厚生レート層および福利厚生率の2層エンティティが含まれています  | -- | -- |
@@ -79,13 +80,13 @@ ms.locfileid: "6772619"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| Microsoft Teams の Human Resources アプリ | [Microsoft Teams の従業員の休暇および欠勤体験](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Teams の Human Resources アプリ](./hr-admin-teams-leave-app.md)<br>[Teams での休暇要求の管理](hr-teams-leave-app.md) |
-| LinkedIn タレント ハブとの統合 | [LinkedIn タレント ハブとの統合](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [LinkedIn Talent Hub との統合](./hr-admin-integration-linkedin.md) |
-| マネージャーの休暇を会社間で表示 | [マネージャーの従業員休暇を会社間で表示](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [休暇と欠勤のパラメータのコンフィギュレーション](./hr-leave-and-absence-parameters.md) |
-|休暇残高に追加の分析情報を提供する| [休暇残高に追加の分析情報を提供する](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [従業員の休暇の管理](./hr-leave-and-absence-manage-employee-leave.md) |
-| マネージャーは職位の採用要求を送信できます | [マネージャーは空いている職位の採用要求を送信できます](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [採用要求の追加](./hr-personnel-recruit.md#add-a-recruiting-request) |
-| 人材管理で改善された候補者のプロファイル | [人材管理で改善された候補者のプロファイル](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [候補者プロファイルの追加または編集](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
-| 簡素化された採用プロバイダーとの統合を有効化 | [簡素化された採用プロバイダーとの統合を有効化](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [職務候補者の採用](./hr-personnel-recruit.md) |
+| Microsoft Teams の Human Resources アプリ | [Microsoft Teams の従業員の休暇および欠勤体験](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Teams の Human Resources アプリ](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Teams での休暇要求の管理](hr-teams-leave-app.md) |
+| LinkedIn タレント ハブとの統合 | [LinkedIn タレント ハブとの統合](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [LinkedIn Talent Hub との統合](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
+| マネージャーの休暇を会社間で表示 | [マネージャーの従業員休暇を会社間で表示](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [休暇と欠勤のパラメータのコンフィギュレーション](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
+|休暇残高に追加の分析情報を提供する| [休暇残高に追加の分析情報を提供する](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [従業員の休暇の管理](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-employee-leave) |
+| マネージャーは職位の採用要求を送信できます | [マネージャーは空いている職位の採用要求を送信できます](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [採用要求の追加](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
+| 人材管理で改善された候補者のプロファイル | [人材管理で改善された候補者のプロファイル](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [候補者プロファイルの追加または編集](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
+| 簡素化された採用プロバイダーとの統合を有効化 | [簡素化された採用プロバイダーとの統合を有効化](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [職務候補者の採用](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
 
 ## <a name="coming-soon"></a>間もなく公開
 | 機能 | 細目 |
@@ -93,22 +94,19 @@ ms.locfileid: "6772619"
 | 福利厚生の確認メール | この機能により、従業員が従業員セルフサービスの給付金登録エクスペリエンスからチェックアウトする際に、確認メールを送信するオプションが提供されます。 詳細については、[会社ごとの福利厚生管理パラメータの構成](hr-benefits-setup-parameters-per-company.md)を参照してください。 |
 | マネージャーが従業員に対して入力したスキルは、ワークフローで自動承認できます | 間もなく公開予定。 |
 
-予定されている機能とリリースの完全な一覧については、[Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
+予定されている機能とリリースの完全な一覧については、[Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
 
 ## <a name="terminology-updates-for-microsoft-dataverse"></a>Microsoft Dataverse の専門用語の更新
 
-2020 年 11 月より、 Common Data Service は [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro) に改名されます。 詳細については、Power Apps ブログの [公式声明](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/)を参照してください。 この改名に関連して、用語 Dataverse が更新されています。 たとえば、*エンティティ* は *テーブル* になり、*フィールド* は *列* になります。 詳細については、[用語の更新](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)を参照してください。
+2020 年 11 月より、 Common Data Service は [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro) に改名されます。 詳細については、Power Apps ブログの [公式声明](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/)を参照してください。 この改名に関連して、用語 Dataverse が更新されています。 たとえば、*エンティティ* は *テーブル* になり、*フィールド* は *列* になります。 詳細については、[用語の更新](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)を参照してください。
 
 このリリースでは、Dynamics 365 Human Resources と Dataverse の統合に関する用語は、アプリケーション全体で更新されており、これら変更が反映されています。 たとえば、**Common Data Service 統合** フォームが **Microsoft Dataverse 統合** となっています。
 
-Dynamics 365 Human Resources と Microsoft Dataverse の統合の詳細については、[Microsoft Dataverse の統合を構成する](./hr-admin-integration-common-data-service.md) と [Microsoft Dataverse の仮想テーブルを構成する](./hr-admin-integration-common-data-service-virtual-entities.md)を参照してください。
+Dynamics 365 Human Resources と Microsoft Dataverse の統合の詳細については、[Microsoft Dataverse の統合を構成する](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service) と [Microsoft Dataverse の仮想テーブルを構成する](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities)を参照してください。
 
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2020 のリリース ウェーブ 2 の概要](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

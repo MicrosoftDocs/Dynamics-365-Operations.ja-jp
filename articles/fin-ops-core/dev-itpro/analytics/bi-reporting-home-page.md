@@ -2,26 +2,25 @@
 title: Power BI ホーム ページを使用したレポートと分析
 description: このトピックでは、使用可能なビジネス インテリジェンスおよびレポート ツールの詳細を学ぶためのリソースを紹介します。
 author: sericks007
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "27681"
-- intro-internal
+ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1c0ee254a5300cfc84eb434e4785b6eceacf0375b983b33991445443957a33
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 644cf8ea39da872962e44a38294af88d1dfa809e
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712739"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559872"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Power BI ホーム ページを使用したレポートと分析
 
@@ -39,7 +38,7 @@ ms.locfileid: "6712739"
 
 ユーザーはページ上のビジュアルをクリックまたはタッチすることで、データを操作できます。 ワークスペース内だけで、原因と影響を分析したり、簡単な what-if 操作を実行したりできます。 魅力的で対話型のビジュアルにより、ユーザーはデータの調査に没頭し、隠れたトレンドを発見することができます。
 
-![ワークスペースにおける Power BI の例。](./media/Power-BI-in-D365-Workspace.png)
+![ワークスペースにおける Power BI の例](./media/Power-BI-in-D365-Workspace.png)
 
 詳細については、次のトピックを参照してください。
 
@@ -52,7 +51,7 @@ ms.locfileid: "6712739"
 ## <a name="business-documents-and-printing"></a>ビジネス ドキュメントと印刷
 レポート ソリューションは多くの場合、業務トランザクションの詳細を把握し、伝えるために使用されます。 したがって、レポート ソリューションは、ネットワーク プリンターなどの既存のデバイスを使用して業務データを物理的に表現することが求められます。 ビジネス ドキュメントの例には、売上請求書、顧客明細書、小切手などがあります。
 
-[![ビジネス ドキュメントの例。](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
+[![ビジネス ドキュメントの例](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
 詳細については、次のトピックを参照してください。
 
@@ -63,7 +62,7 @@ ms.locfileid: "6712739"
 ## <a name="electronic-reporting"></a>電子申告
 電子申告 (ER) は、さまざまな国や地域の法的要件に従って電子ドキュメントの形式を構成できるツールです。 電子申告の対象には、会計監査、税金の申告、電子請求があります。
 
-[![電子申告の例。](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
+[![電子申告の例](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
 詳細については、次のトピックを参照してください。
 
@@ -74,7 +73,7 @@ ms.locfileid: "6712739"
 ## <a name="financial-reporting"></a>財務諸表
 既定の主勘定カテゴリを使用した標準の財務諸表が提供されます。 レポート デザイナーを使用すると、損益計算書や貸借対照表など、従来型の財務諸表を作成、変更できます。 その後、完成した財務諸表を組織の他のメンバーと共有することができます。 財務諸表の例として、1 年間の貸借対照表、キャッシュ フロー、集計試算表があります。
 
-[![財務諸表の例。](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
+[![財務諸表の例](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
 詳細については、次のトピックを参照してください。
 

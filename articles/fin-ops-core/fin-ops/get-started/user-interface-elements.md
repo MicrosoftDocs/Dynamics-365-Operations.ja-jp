@@ -2,11 +2,9 @@
 title: ユーザー インターフェイスの要素
 description: このトピックでは、アプリのユーザー インターフェイス (UI) の要素について説明します。
 author: tlefor
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,14 +12,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 60e85841ec940ed65d73dc052848168be70301d6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797948"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069326"
 ---
 # <a name="user-interface-elements"></a>ユーザー インターフェイスの要素
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、アプリで使用されるユーザー インターフェイス (UI) の要素について説明します。 ユーザーがインターフェイスを操作できるようにするには、インターフェイスを構成する要素の名前と機能を把握しておくことが重要です。
 
@@ -86,3 +87,6 @@ ms.locfileid: "4797948"
 *リスト* は、スクロールして表示できるレコードのコレクションに付けられた名前です。 これらのレコードを選択してページに取り込むことができます。 多くの場合、これによってグリッドが開きます。
 
 ![次の図は、ツールバー、グリッド、およびリストの例を示しています。](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,26 +2,21 @@
 title: X++ 例外処理
 description: このトピックでは、X++の例外処理について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 11/01/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150213
-ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdea8c4c88489296f6e48e8802ad44bfa47baead
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4f4efe8bd7bc17d7b2b5ab4edf5b9426df4359c1
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409237"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5865900"
 ---
 # <a name="x-exception-handling"></a>X++ 例外処理
 
@@ -499,3 +494,6 @@ public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
 | UpdateConflictNotRecovered        | オプティミスティック同時実行制御を使用しているトランザクションでエラーが発生しました。 このコードは再試行されません。 この例外は、トランザクション内では検出されません。    |
 | 警告                           | 例外的なイベントが発生しました。 ユーザーはアクションの実行をする必要がありますが、イベントは致命的ではありません。 **警告** 例外をスローしないでください。                         |
 | [X++ の SQL 接続エラー例外](sql-connection-error.md)       | クエリ実行時にエラーが発生しました。 トランザクションはキャンセルされます。 この例外は、トランザクション内では検出されません。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

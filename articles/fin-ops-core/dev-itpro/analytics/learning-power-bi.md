@@ -2,11 +2,9 @@
 title: 学習 Power BI コンテンツ
 description: このトピックでは、学習 Power BI コンテンツについて説明します。
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 46b7a442470d1fe78ebc5c9d5a0c6e155c0d9918
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 668308b0a5cfe2fe242a218250c4f714d6f2c279
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685252"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744266"
 ---
 # <a name="learning-power-bi-content"></a>学習 Power BI コンテンツ
 
@@ -62,3 +60,6 @@ ms.locfileid: "4685252"
 | 配置         | 職位、タイトル、およびフルタイム相当額 (FTE)                  | コース議題、コース参加者 |
 | 従業員名    | 名、姓、フルネーム                             | コース出席者 |
 | 従業員の肩書き   | 役職と勤続日数                                         | コース出席者 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

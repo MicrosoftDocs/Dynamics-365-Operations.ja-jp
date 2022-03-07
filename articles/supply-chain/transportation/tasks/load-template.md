@@ -2,27 +2,24 @@
 title: 積荷テンプレート
 description: このトピックでは、積荷テンプレートの設定方法と、新しい積荷に積荷テンプレートを関連付ける方法について説明します。
 author: Henrikan
-manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1ea7f5244b483a1b9d6c55227c676a3878a71d83
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 35e858970114224fe6c4dabf05675d1204b8fd49c3147dab5b8758ab3de47f5a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745433"
 ---
 # <a name="load-templates"></a>積荷テンプレート
 
@@ -54,3 +51,6 @@ ms.locfileid: "4646408"
 1. アクション ウィンドウの、**供給と需要** タブの **追加** グループで、**新しい積荷へ** を選択します。
 1. **積荷テンプレートの割り当て** ダイアログ ボックスの、**積荷テンプレート ID** フィールドで、適用するテンプレートを選択します。
 1. テンプレートを適用するには、**OK** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) のセキュリティの構成
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のセキュリティが、組織レベルとプロジェクト レベルの両方で制御される方法について説明します。
 author: AngelMarshall
-manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf02ea673a550a7ac257008e3e67277025d13506
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 22bb07b235ff9bbed40eb144683e3e397b1cd7c4070c022c6729355f50583a7d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754316"
 ---
 # <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 
@@ -29,21 +27,17 @@ ms.locfileid: "4679254"
 
 Microsoft Dynamics Lifecycle Services (LCS) のセキュリティは、組織レベルとプロジェクト レベルの両方で制御されます。 組織のすべてのメンバーが、すべてのプロジェクトへのアクセス権を持っているわけではありません。 また、プロジェクトのメンバーは、すべて同じ組織のメンバーではない可能性があります。 <br>
 
-現在、サインアップ時に [Microsoft 365 ポータル](https://go.microsoft.com/fwlink/?LinkID=324287)で作成した Microsoft Azure Active Directory (Azure AD) 資格情報を使用してサインインすることができます。 Azure AD の組織の管理者になっているユーザーは、Lifecycle Services (LCS) の管理者になります。 <br> 
+現在、サインアップ時に Microsoft 365 ポータルで作成した Microsoft Azure Active Directory (Azure AD) 資格情報を使用してサインインすることができます。 Azure AD の組織の管理者になっているユーザーは、Lifecycle Services (LCS) の管理者になります。 
 
-Microsoft Dynamics AX 2012 では、LCS への組織レベルのアクセスは、個人の Microsoft ID と CustomerSource または PartnerSource の組織との関連付けによって制御されます。 したがって、CustomerSource または PartnerSource のユーザーは、LCS の組織のワークスペースに自動的にアクセスし、参加するように招待されたすべてのプロジェクトを表示できます。 CustomerSource および PartnerSource の組織の管理者になっているユーザーは LCS の管理者になります。 <br>
-
-管理者は CustomerSource または PartnerSource の資格情報を持っていないユーザーを LCS の組織のメンバーに招待できますが、この方法はお勧めしません。 LCS 組織のメンバーとなるよう招待されたユーザーには、CustomerSource または PartnerSource での資格情報が提供されません。 <br> 
-
-LCS へのプロジェクト レベル アクセスは、招待によって行われます。 プロジェクトの所有者およびチーム メンバーとして組織のメンバーを招待することができます。 また、組織のメンバーではなく、Azure AD、CustomerSource、または PartnerSource のアカンウントを持たないユーザーをチーム メンバーに招待できます。
+LCS へのプロジェクト レベル アクセスは、招待によって行われます。 プロジェクトの所有者およびチーム メンバーとして組織のメンバーを招待することができます。 また、組織のメンバーではなく、Azure AD のアカンウントを持たないユーザーをチーム メンバーに招待できます。
 
 > [!IMPORTANT]
-> 会社内のすべてのユーザーを組織レベルで管理することを強くお勧めします。 この方法で、組織との関係が CustomerSource、PartnerSource、および Azure AD で正しいことを確認できます。 また、ユーザーが組織で利用できる福利厚生にアクセスできることを確認します。
+> 会社内のすべてのユーザーを組織レベルで管理することを強くお勧めします。 また、ユーザーが組織で利用できる福利厚生にアクセスできることを確認します。
 
 ## <a name="manage-lcs-organization-users"></a>LCS 組織のユーザーの管理
 管理者のみユーザーを管理できます。 以下の手順を実行します。
 
-1.  CustomerSource、PartnerSource、または Azure AD で、LCS へのアクセスを必要とする組織内のすべてのユーザーを組織と関連付けます。 ユーザーは、LCS にログインできるようになるまでに、2 営業日待機することが必要な場合があります。
+1.  PartnerSource ビジネス センター (PSBC)、または Azure AD で、LCS へのアクセスを必要とする組織内のすべてのユーザーを組織と関連付けます。 ユーザーは、LCS にログインできるようになるまでに、2 営業日待機することが必要な場合があります。
 2.  LCS の適切なプロジェクトに、ユーザーを追加します。
 
 ### <a name="invite-a-user-to-an-lcs-project"></a>LCS プロジェクトへのユーザーの招待
@@ -56,16 +50,6 @@ LCS へのプロジェクト レベル アクセスは、招待によって行�
 > [!NOTE]
 > 実装プロジェクトで、招待されたユーザーの実装ロールを選択できます。 **FastTrack からの連絡を許可する** を **はい** に設定した場合、Microsoft FastTrack チームは実装ロールと実装プロジェクトのステージに基づいてご連絡を差し上げる場合があります。   
 
-## <a name="working-with-customersource-and-partnersource"></a>CustomerSource および PartnerSource での作業
-このセクションの情報は、CustomerSource または PartnerSource へのアクセスを支援することを目的としています。
-
-### <a name="signing-in-to-customersource-or-partnersource"></a>CustomerSource または PartnerSource へのサインイン
-
-[CustomerSource サインイン ページ](https://mbs.microsoft.com/customersource/)に移動し、Microsoft アカウント (以前は Windows Live ID と呼ばれる) のユーザー名とパスワードを入力してサイトにアクセスします。 組織の CustomerSource 勘定へのアクセスがない場合、「[CustomerSource](https://mbs.microsoft.com/customersource/northamerica/news-events/news-events/news/NeedAccesstoCustomerSource) にログインする方法」ページに従います。
-
-### <a name="determining-the-administrator-for-your-organization-in-customersource-or-partnersource"></a>CustomerSource または PartnerSource で組織の管理者を決定する
-
-CustomerSource の管理者がわからない場合、または組織に CustomerSource 管理者がいない場合は、電子メールを [itmbssup@microsoft.com](mailto:itmbssup@microsoft.com) に送信してお問い合わせください。
 
 ## <a name="configuring-project-security"></a>プロジェクト セキュリティのコンフィギュレーション
 プロジェクトにユーザーとして参加するように、組織の内外からユーザーを招待することができます。 次のテーブルに、ユーザーが使用可能なロールを示します。
@@ -115,6 +99,9 @@ CustomerSource の管理者がわからない場合、または組織に Custome
 1 つのプロジェクトのセキュリティをコンフィギュレーションした後は、別のプロジェクトにユーザーをインポートできます。
 
 ## <a name="configure-implementation-roles"></a>実装ロールのコンフィギュレーション 
-実装プロジェクトがある場合、プロジェクト ユーザーの実装ロールを指定するためのオプションが表示されます。 詳細については、[Dynamics 365 実装のロール](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles) を参照してください。
+実装プロジェクトがある場合、プロジェクト ユーザーの実装ロールを指定するためのオプションが表示されます。 詳細については、[Dynamics 365 実装のロール](/learn/modules/get-started-implementation-project/01-2-roles) を参照してください。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

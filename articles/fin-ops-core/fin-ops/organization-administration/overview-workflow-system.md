@@ -2,30 +2,33 @@
 title: ワークフロー システムの概要
 description: このトピックでは、ワークフロー システムについて説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 56381
+ms.custom:
+- "56381"
+- intro-internal
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660e01618eea66bc611dd51818694d36993ba9ea
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 70776ba0a0461998d2c1f62ba05b55cd4307a0f7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796999"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067936"
 ---
 # <a name="workflow-system-overview"></a>ワークフロー システムの概要
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、ワークフロー システムについて説明します。
 
@@ -41,7 +44,7 @@ ms.locfileid: "4796999"
 
 1 つのワークフローは 1 つの業務プロセスを表します。 ここでは、タスクを完了し、決定を下し、ドキュメントを承認するユーザーを示すことによって、システムにおけるドキュメントの流れ (移動) を定義します。 たとえば、次の図は経費精算書のワークフローを示しています。
 
-![ユーザーに割り当てられた要素を含むワークフロー](./media/workflow_user.gif)
+![ユーザーに割り当てられた要素を含むワークフロー。](./media/workflow_user.gif)
 
 このワークフローをよりよく理解するため、Sam が USD 7,000 の経費精算書を送信したと仮定します。 このシナリオでは、Sam から送られた領収書を Ivan が確認する必要があります。 その後、Frank と Sue が経費精算書を承認する必要があります。 次に、Sam が USD 11,000 の経費精算書を送信したとします。 このシナリオでは、Ivan が領収書を確認する必要があり、Frank、Sue、および Ann が経費精算書を承認する必要があります。
 
@@ -71,3 +74,6 @@ ms.locfileid: "4796999"
 + [ワークフロー内の並列分岐のコンフィギュレーション](configure-parallel-branch-workflow.md)
 + [品目ワークフローのコンフィギュレーション](configure-line-item-workflow.md)
 + [ワークフローに関するよく寄せられる質問](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

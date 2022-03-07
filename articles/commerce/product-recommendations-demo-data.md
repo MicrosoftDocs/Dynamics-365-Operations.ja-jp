@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cca6913375eec2565852676f3c1da5a67f71e14f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 378acccc9b3afb190d0b8f79bec3d64cd6a41fdb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413625"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231059"
 ---
 # <a name="create-recommendations-with-demo-data"></a>推奨事項とデモ データの作成
 
@@ -90,3 +89,6 @@ ms.locfileid: "4413625"
 [収集された推奨事項の手動作成](create-editorial-recommendation-lists.md)
 
 [製品推奨事項に関するよく寄せられる質問](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

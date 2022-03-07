@@ -1,27 +1,24 @@
 ---
 title: cXML 拡張機能の購入
 description: 購買 cXML 拡張機能は、購買要求に対して使用される既存の外部カタログ機能である PunchOut に基づいています。
-author: dasani-madipalli
-manager: tfehr
+author: Henrikan
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-08-03
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: d7184f14ab67d646451c8c2b1313336d47e59316
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432394"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777770"
 ---
 # <a name="purchasing-cxml-enhancements"></a>cXML 拡張機能の購入
 
@@ -31,7 +28,7 @@ _購買 cXML 拡張機能_ 機能は、購買要求に対して使用される [
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>cXML 拡張機能の購入機能を有効にする
 
-この機能を有効にするには、**[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** ページを開いて、*cXML 拡張機能の購入* と名前の付いた機能を検索します。 機能を選択し、**直ちに有効化** を選択してオンにします。
+この機能を有効にするには、**[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** ページを開いて、*cXML 拡張機能の購入* と名前の付いた機能を検索します。 機能を選択し、**直ちに有効化** を選択してオンにします。 (Supply Chain Management のバージョン10.0.21では、この機能は既定で有効になっています。)
 
 この機能を有効にした後、次の 3 つの領域の設定をコンフィギュレーションする必要があります。
 
@@ -41,7 +38,7 @@ _購買 cXML 拡張機能_ 機能は、購買要求に対して使用される [
 
 次の図は、このコンフィギュレーションの概要を示しています。
 
-![cXML 機能を設定するための領域](media/cxml-settings-areas.png "cXML 機能を設定するための領域")
+![cXML 機能を設定するための領域。](media/cxml-settings-areas.png "cXML 機能を設定するための領域")
 
 また、[発注書要求バッチジョブ](#po-batch) を設定する必要があります。 このバッチ ジョブは、確認された発注書を送信するために使用されます。
 
@@ -49,7 +46,7 @@ _購買 cXML 拡張機能_ 機能は、購買要求に対して使用される [
 
 **cXML パラメータ** ページを使用して、発注書を送信するための機能に適用するいくつかのグローバル パラメータを設定します。
 
-![cXML パラメータ ページ](media/cxml-parameters.png "cXML パラメータ ページ")
+![cXML パラメータ ページ。](media/cxml-parameters.png "cXML パラメータ ページ")
 
 **調達 \> 設定 \> cXML 管理 \> cXML パラメータ** に移動し、次のパラメータを設定します。
 
@@ -70,7 +67,7 @@ _購買 cXML 拡張機能_ 機能は、購買要求に対して使用される [
 - 要求から作成されたすべての新規発注書に対して cXML を自動的に使用するように仕入先を設定するには、**調達 \> 仕入先 \> すべての仕入先** に移動して、仕入先を選択または作成して、[詳細] ページを表示します。 その後、**発注書の既定値** クイックタブで、**cXML を介して発注書を送信する** をオプションを _はい_ に設定します。 要求から作成 **されていない** 新しい発注書に対して cXML も自動的に使用する必要がある場合は、このトピックの後の [「注文プロパティの設定」](#set-order-properties) セクションの説明に従って、関連する外部カタログの **ENABLEMANUALPO** 注文プロパティを _True_ に設定する必要があります。
 - 個々の発注書について、**調達 \> 発注書 \> すべての発注書** の順に移動して、購買注文を選択または作成して [詳細] ページを表示します。 **ヘッダー** ビューに切り替え、**設定** クイックタブで、必要に応じて **cXML オプションを介して発注書を送信** オプションを設定します。
 
-![仕入先の発注書の既定の設定](media/cxml-order-defaults.png "仕入先の発注書の既定の設定")
+![仕入先の発注書の既定の設定。](media/cxml-order-defaults.png "仕入先の発注書の既定の設定")
 
 ## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>cXML を使用するために外部カタログを設定する
 
@@ -79,7 +76,7 @@ _購買 cXML 拡張機能_ 機能は、購買要求に対して使用される [
 > [!NOTE]
 > CXML 経由で送信可能な発注書を確認すると、その発注書に関連付けられている仕入先がシステムによって検索され、その仕入先に関連付けられている最初の有効な外部カタログが検索されます。 その後、その外部カタログの設定を使用して、発注書が送信されます。 複数の外部カタログが設定されている場合、システムは、発注書の仕入先に基づいて、最初に検出された外部カタログのみを使用します。 したがって、仕入先ごとに外部カタログを 1 つだけ作成することをお勧めします。
 
-![外部カタログの設定](media/cxml-supplier-catalog.png "外部カタログの設定")
+![外部カタログの設定。](media/cxml-supplier-catalog.png "外部カタログの設定")
 
 ### <a name="set-the-punchout-protocol-type"></a>PunchOut プロトコル タイプの設定
 
@@ -146,11 +143,11 @@ _購買用 cXML 拡張_ 機能を使用すると、外部カタログに対し�
 
 システムで検索するメモのタイプを設定するには、**調達 \> 設定 \> フォーム \> フォーム設定** に移動します。 次に、**発注書** タブで、**含めるドキュメントのタイプ** フィールドを含めることができる注記のタイプに設定します。 ドキュメントの添付ファイルではなく、テキスト注記のみが含められます。
 
-![フォーム設定ページ](media/cxml-form-setup.png "フォーム設定ページ")
+![フォーム設定ページ。](media/cxml-form-setup.png "フォーム設定ページ")
 
 添付ファイルが発注書に含まれるのは、その **タイプ** フィールドに **タイプのドキュメントを含める** フィールドで選択した値が設定されており、**制限** フィールドが _外部_ に設定されている場合のみです。 発注書の添付ファイルを作成、表示、または編集するには、**調達 \> すべての発注書** に移動して、発注書を選択または作成して、右上隅にある **添付ファイル** ボタン (クリップの記号) を選択します。
 
-![仕入先に送信するように設定されている添付ファイル](media/cxml-note-to-vendor.png "仕入先に送信するように設定されている添付ファイル")
+![仕入先に送信するように設定されている添付ファイル。](media/cxml-note-to-vendor.png "仕入先に送信するように設定されている添付ファイル")
 
 ## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a>外部カタログ PunchOut の cXML カート メッセージ ログを表示する
 
@@ -158,7 +155,7 @@ _購買用 cXML 拡張_ 機能を使用すると、外部カタログに対し�
 
 外部カタログのログを開くには、関連するカタログを選択し、アクションウィンドウで **cXML カート メッセージ ログ** を選択します。 **cXML カートのメッセージ ログ** ページに、返品されたカート、それらのカートに関連する XML、関連する購買要求で作成された明細行の一覧が表示されます。
 
-![cXML カート メッセージ ログページ](media/cxml-cart-message-log.png "cXML カート メッセージ ログページ")
+![cXML カート メッセージ ログ ページ。](media/cxml-cart-message-log.png "cXML カート メッセージ ログページ")
 
 ## <a name="set-the-extrinsic-elements-for-external-catalog-punchout"></a>外部カタログ PunchOut の外部カタログの外部要素を設定する
 
@@ -181,21 +178,21 @@ _購買用 cXML 拡張_ 機能を使用すると、外部カタログに対し�
         - **姓** - 外部カタログにアクセスするユーザーに関連付けられている連絡担当者の姓を使用します。
         - **電話番号** - 外部カタログにアクセスするユーザーに関連付けられている連絡担当者の主な電話番号を使用します。
 
-![外部要素の設定](media/cxml-extrinsics.png "外部要素の設定")
+![外部要素の設定。](media/cxml-extrinsics.png "外部要素の設定")
 
 外部要素はユーザーが PunchOut を行うまで追加されないため、ユーザーまたは管理者は外部要素を表示しません。 これらは、cXML セットアップ要求メッセージの **BuyerCookie** と **BrowserFromPost** との間に自動的に挿入され ます。 したがって、外部カタログを設定するときに、XMLで手動で設定する必要はありません。
 
-![XML に追加された外部要素](media/cxml-extrinsics-xml.png "XML に追加された外部要素")
+![XML に追加された外部要素。](media/cxml-extrinsics-xml.png "XML に追加された外部要素")
 
 ## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a>発注書を作成し、処理する
 
 仕入先の発注書を作成すると、その仕入先からの **cXML を介して発注書を送信** オプションの設定が継承されます。 ただし、この設定は後で必要に応じて変更できるように、発注書の **ヘッダー** にある **設定** クイックタブで使用できます。
 
-![cXML を使用するように設定された発注書](media/cxml-purchase-order.png "cXML を使用するように設定された発注書")
+![cXML を使用するように設定された発注書。](media/cxml-purchase-order.png "cXML を使用するように設定された発注書")
 
 PunchOut フローからの購買要求から発注書を作成すると、必要な明細行の詳細がすべて入力されます。 その後、発注書明細行を手動で追加したり、他の発注書からコピーしたりできます。 すべての必須フィールドが設定されていることを確認します。 これらの必須項目には、外部参照番号 (cXMLメッセージで使用される仕入先番号) が含まれます。
 
-![外部参照番号の例](media/cxml-line-details.png "外部参照番号の例")
+![外部参照番号の例。](media/cxml-line-details.png "外部参照番号の例")
 
 発注書の詳細をすべて入力したら、確認してください。 発注書が確認されない限り、メッセージは送信されません。 発注書を確認するには、アクション ペインの **アクション** グループの **購入** タブで、**確認** を選択します。 
 
@@ -203,17 +200,17 @@ PunchOut フローからの購買要求から発注書を作成すると、必�
 
 各発注書には、複数の確認を付けることができます。 各確認には、増分番号が付けられています。 次の図では、発注書が *00000275*、確認が *00000275-1* です。 この番号付けにより、標準の Supply Chain Management の機能が反映されます。ここでは、発注書の変更が行われ、したがって、仕入先に送信する必要がある cXML メッセージのタイプが確認書に基づいて識別されます。 図に示すように、**発注書の確認** ページには、**注文送信ステータス** と **注文要求の仕入先ステータス** フィールドも含まれます。 このページに表示される可能性があるさまざまなステータス値の詳細については、このトピックで後述する [発注書要求の監視](#monitor-po-requests) セクションを参照してください。
 
-![発注書確認ページ](media/cxml-po-confirmations.png "発注書確認ページ")
+![発注書確認ページ。](media/cxml-po-confirmations.png "発注書確認ページ")
 
 ドキュメントに関する詳細情報を表示するには、グリッドの上にある **発注書要求** を選択します。
 
 **発注書要求** ページには 2 つのグリッドが含まれています。 ページの上部にあるグリッドには、送信用にマークされている発注書ごとに 1 つのレコードがあります。 ページ下部の **発注書の要求履歴** タブにあるグリッドに、選択した発注書の複数のレコードがあり、各確認書のステータスを示している場合があります。 次の図は、**発注書の要求履歴** タブのグリッドにある上部グリッドとドキュメント 00000275-1 の発注書 00000275 を示しています。
 
-![発注書要求ページ](media/cxml-po-request.png "発注書要求ページ")
+![発注書要求ページ。](media/cxml-po-request.png "発注書要求ページ")
 
 バッチ ジョブが設定されて実行されている場合は、ドキュメントが送信されます。 ドキュメントが送信された後にステータスの変更を表示できます。 次の図では、**注文送信ステータス** フィールドが _送信済_ に設定されています。 **"注文要求の仕入先ステータス** フィールドは _"承認済_ に設定され、仕入先がドキュメントを受信したことを示し、それを読み取ってシステムに保管することができました。 **発注書要求履歴** タブのグリッドには、ドキュメントが送信された時刻が表示されます。 このページに表示される可能性があるさまざまなステータス値の詳細については、[発注書要求の監視](#monitor-po-requests) セクションを参照してください。
 
-![発注書要求 ページのステータス メッセージ](media/cxml-po-request-2.png "発注書要求 ページのステータス メッセージ")
+![発注書要求ページのステータス メッセージ。](media/cxml-po-request-2.png "発注書要求 ページのステータス メッセージ")
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>発注書要求バッチ ジョブのスケジュール
 
@@ -229,7 +226,7 @@ PunchOut フローからの購買要求から発注書を作成すると、必�
 
 cXML 経由で送信できる注文は確認されると、_待機_ ステータスになります。 [発注書の作成および処理](#create-po) セクションで説明したように、**発注書要求** ページに発注書ステータスが表示されます。 各発注書要求には、パラメータとデータに応じて、複数のステータスのいずれかが含まれる場合があります。 このセクションでは、さまざまなステータスのタイプとその値について説明します。 この情報は問題を管理し、発注書のステータスを理解するのに役立ちます。
 
-![発注書要求 ページの発注書ステータス](media/cxml-monitor-po-request.png "発注書要求 ページの発注書ステータス")
+![発注書要求ページの発注書ステータス。](media/cxml-monitor-po-request.png "発注書要求 ページの発注書ステータス")
 
 **発注書要求** ページの上部にあるグリッドには、次のステータス値が表示される場合があります。
 
@@ -265,15 +262,18 @@ cXML 経由で送信できる注文は確認されると、_待機_ ステータ
 
 発注書要求メッセージの XML を表示するには、**発注書の要求** ページの下部にある **XML テキストの要求** タブを選択します。 このタブの情報は、テスト中またはエラー検証時に役立ちます。 情報を読みやすくするために、情報をフォーマットされたメッセージとして表示できます。 タブの内容をテキスト ファイルにコピーしてから、XML エディターで表示します。
 
-![要求 XML テキスト タブ](media/cxml-request-xml-text.png "要求 XML テキスト タブ")
+![要求 XML テキスト タブ。](media/cxml-request-xml-text.png "要求 XML テキスト タブ")
 
 ### <a name="view-the-details-of-the-vendor-response"></a>仕入先応答の詳細表示
 
 仕入先の確認またはエラー応答の内容を表示するには、**注文要求** ページの下部にある **応答XML** タブを選択します。
 
-![応答 XML タブ](media/cxml-response-xml.png "応答 XML タブ")
+![応答 XML タブ。](media/cxml-response-xml.png "応答 XML タブ")
 
 ## <a name="additional-resources"></a>追加リソース
 
-- [パンチアウト e-procurement の外部カタログの設定](set-up-external-catalog-for-punchout.md)
+- [パンチアウト eProcurement の外部カタログの設定](set-up-external-catalog-for-punchout.md)
 - [パンチアウト e-procurement の外部カタログの使用](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

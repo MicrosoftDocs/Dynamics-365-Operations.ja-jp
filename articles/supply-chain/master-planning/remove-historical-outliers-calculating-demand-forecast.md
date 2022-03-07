@@ -1,30 +1,27 @@
 ---
 title: 需要予測を計算するときに、トランザクション履歴データから異常値を削除します。
 description: この記事では、需要予測の計算に使用される履歴データから異常値を除外する方法について説明します。 異常値を除外すると、予測の精度が向上します。
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup, ReqDemPlanOutlierQueryPreview
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72621
 ms.assetid: 88a964af-14eb-4c5c-945b-388e5908362c
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dec963ed5abd6f77e82029a3ea5ba1a69d44e36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc0826d3a0dd8ded19590867e9a8138bb772c89a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431834"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568642"
 ---
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>需要予測を計算するときに、トランザクション履歴データから異常値を削除します。
 
@@ -42,8 +39,7 @@ ms.locfileid: "4431834"
 
 **注記:** 既存のクエリに基づいたクエリの作成もできます。 コピーするクエリを選択してから **重複** をクリックします。 **クエリ日付** フィールドがバージョンを識別します。 クエリをそのまま使用するか、**クエリの編集** をクリックして基準を変更することもできます。 必要に応じて新しいクエリの名前と説明を変更できます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [需要予測の概要](introduction-demand-forecasting.md)
 
@@ -51,3 +47,6 @@ ms.locfileid: "4431834"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

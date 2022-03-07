@@ -2,11 +2,9 @@
 title: URL リダイレクトの一括アップロード
 description: このトピックでは、Microsoft Dynamics 365 Commerce でリダイレクトのコンマ区切り値 (csv) ファイルをアップロードすることによって、URL リダイレクトを一括して実装する方法について説明します。
 author: BrianShook
-manager: annbe
 ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
@@ -16,20 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2225ee862fe43197dc23d23f96f47fe327162b4d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5c539b7b8618417509bfc6903a7a7075d5db8511
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962897"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801399"
 ---
 # <a name="upload-url-redirects-in-bulk"></a>URL リダイレクトの一括アップロード
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でリダイレクトのコンマ区切り値 (csv) ファイルをアップロードすることによって、URL リダイレクトを一括して実装する方法について説明します。
-
-## <a name="overview"></a>概要
 
 Dynamics 365 Commerce で新しい電子商取引サイトの作成が完了し、稼動する準備ができたら、古いサイトから新しいサイトにドメイン名システム (DNS) スイッチを設定する必要があります。 このスイッチを設定すると、新しいサイトの URL が古いサイトの URL とは異なる可能性があります。 特定の URL の場合は、古い URL を使用するトラフィックを新しい URL にリダイレクトできます。 このようにして、サイトの訪問者が目的の場所にアクセスできるようにすることができます。 リダイレクトすることにより、顧客のリンク切れを防ぐことができます。また、確立された検索エンジン最適化 (SEO) の結果を管理するのに役立ちます。
 
@@ -136,3 +132,6 @@ https://www.contoso.com/news, https://www.fabrikam.com/updates, 301
 [コンテンツ配信ネットワーク (CDN) のサポートの追加](add-cdn-support.md)
 
 [場所に基づく店舗検出の有効化](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

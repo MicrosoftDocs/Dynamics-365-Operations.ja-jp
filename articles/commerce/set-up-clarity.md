@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce での Microsoft Clarity の設定
 description: このトピックでは、Dynamics 365 Commerce 環境内で Microsoft Clarity を設定する方法について説明します。
 author: BrianShook
-ms.date: 01/28/2022
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-01-25
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a35c7cc064154ecd3ef62f17ae3592b4473f5e35
-ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
+ms.openlocfilehash: 942805812d1951dae04c81d0ec380b07232f3ea3
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8051384"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018568"
 ---
 # <a name="set-up-microsoft-clarity-in-dynamics-365-commerce"></a>Dynamics 365 Commerce での Microsoft Clarity の設定
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、Dynamics 365 Commerce 環境内で Microsoft Clarity を設定する方法について説明します。 
 
@@ -34,7 +35,7 @@ Clarity を Dynamics 365 Commerce サイトに統合するのは簡単です。�
 
 ## <a name="sign-up-for-clarity"></a>Clarity にサインアップします
 
-Clarity にサインアップするには、[Clarity](https://clarity.microsoft.com/) Web サイトに移動して **開始** を選択します。 設定プロセス中に、Commerce サイトに関連付けられた実稼働環境ドメイン URL を使用します。 Clarity 設定の詳細については、[はじめに](/clarity/getting-started) を参照してください。
+Clarity にサインアップするには、[Clarity](https://clarity.microsoft.com/) Web サイトに移動して **開始** を選択します。 設定プロセス中に、Commerce サイトに関連付けられた実稼働環境ドメイン URL を使用します。 Clarity 設定の詳細については、[はじめに](https://docs.microsoft.com/clarity/getting-started) を参照してください。
 
 ## <a name="integrate-clarity-with-your-commerce-site"></a>Clarity を Commerce のサイトに統合する
 
@@ -52,6 +53,19 @@ Commerce サイト ビルダーで Clarity を構成するには、次の手順�
 1. **child-src** ディレクティブ セクションで、**追加** を選択します。
 1. **``https://www.clarity.ms``** を入力します。
 1. **connect-src** および **script-src** ディレクティブについて、手順 4 と 5 を繰り返します。
+1. **保存と公開** を選択します。
+
+### <a name="add-clarity-to-the-correlation-header-excluded-domains-allow-list"></a>除外ドメイン許可リストの相関ヘッダーに Clarity を追加
+
+Clarity をサイトで機能させるには、Clarity ドメインを **相関ヘッダー除外ドメイン** 許可リストに追加する必要があります。 
+
+Commerce サイト ビルダーの相関ヘッダー除外ドメインリストに Clarity を追加するには、次の手順に従います。
+
+1. Commerce サイトに移動します。
+1. **サイト 設定 > 拡張機能** を選択します。
+1. **構成** タブを選択します。
+1. **相関ヘッダー除外ドメイン** セクションで **追加** を選択します。
+1. **\*.clarity.ms** を入力します。
 1. **保存と公開** を選択します。
 
 ### <a name="embed-clarity-tracking-script-code-into-site-pages"></a>Clarity トラッキング スクリプト コードをサイト ページに埋め込む
@@ -80,7 +94,7 @@ Clarity 追跡コードを Commerce サイト ビルダーのサイト ページ
 1. **保存** を選択してから、**発行** を選択します。 更新したテンプレートを使用するすべてのサイト ページに、Clarity スクリプト コードが埋め込まれます。
 1. Clarity スクリプトコードを追加する追加のテンプレートは、必要に応じて前の手順を繰り返します。
 
-Clarity スクリプトがサイト ページに埋め込まれているかどうかをテストする方法については、[Clarity セットアップ: 検証](/clarity/clarity-setup#verification) を参照してください 。
+Clarity スクリプトがサイト ページに埋め込まれているかどうかをテストする方法については、[Clarity セットアップ: 検証](https://docs.microsoft.com/clarity/clarity-setup#verification) を参照してください 。
 
 ### <a name="embed-clarity-tracking-script-code-into-a-specific-site-page"></a>Clarity 追跡 スクリプト コードを特定のサイト ページに埋め込みます
 

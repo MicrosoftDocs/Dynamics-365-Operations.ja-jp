@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 917a7da63085f5266d9796d7b2bc689bc37b909c1414c144c84e34a0adee824c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5c5570cb702cc23a18e657a4d6383c11ce3f041c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760114"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358709"
 ---
 # <a name="document-reporting-services"></a>ドキュメント レポート サービス
 

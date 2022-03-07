@@ -2,15 +2,12 @@
 title: LinkedIn タレント ハブとの統合
 description: このトピックでは、Microsoft Dynamics 365 Human Resources と LinkedIn タレント ハブ間の統合を設定する方法について説明します。
 author: jaredha
-manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 6e500125e1d96f6b595910e1168e2e1baeef0cd3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527888"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360595"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn タレント ハブとの統合
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [banner](includes/preview-feature.md)]
 
@@ -49,7 +48,7 @@ LinkedIn タレント ハブとの統合を有効にするには、システム�
 
 5. **Dynamics 365 Human Resources** ページで、LinkedIn タレント ハブをリンクする環境を選択し、**リンク** を選択します。
 
-    ![LinkedIn タレント ハブのオンボード](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn タレント ハブのオンボード。](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > ユーザー アカウントに Human Resources 環境と関連する Power Apps 環境の両方への管理者アクセス権がある環境にのみリンクできます。 Human Resources リンク ページに環境が表示されない場合は、テナントに Human Resources 環境のライセンスがあることと、リンク ページにサインインしたユーザーに Human Resources 環境と Power Apps 環境の両方に対する管理者権限があることを確認してください。
@@ -92,7 +91,7 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
 
 6. 一覧上にあるドロップダウン メニューを使用して、ビューを既定の **有効なユーザー** ビューから **アプリケーション ユーザー** に変更します。
 
-    ![アプリケーション ユーザー ビュー](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![アプリケーション ユーザー ビュー。](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. ツール バーの **新規** を選択します。
 
@@ -127,14 +126,14 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
     - **名前**: 以前に作成した Power Apps セキュリティ ロール (**LinkedIn タレント ハブ HRIS の統合** など) の名前を入力します。
     - **ユーザー ID**: 人事管理でデータを書き込むアクセス許可を持つユーザーを選択します。
 
-### <a name="create-the-entity-in-common-data-service"></a>Common Data Service でのエンティティの作成
+### <a name="create-the-table-in-dataverse"></a>Dataverse でのテーブルの作成
 
 > [!IMPORTANT]
-> LinkedIn タレント ハブは、Common Data Service for Human Resources の仮想エンティティに依存します。 設定でのこの手順の前提条件として、仮想エンティティを構成する必要があります。 仮想エンティティの構成方法については、[Common Data Service 仮想エンティティの構成](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities) を参照してください。
+> LinkedIn タレント ハブは、Dataverse for Human Resources の仮想テーブルに依存します。 設定でのこの手順の前提条件として、仮想テーブルを構成する必要があります。 仮想テーブルの構成方法については、[Dataverse 仮想テーブルの構成](./hr-admin-integration-common-data-service-virtual-entities.md) を参照してください。
 
-1. Human Resources で、**Common Data Service (CDS) の統合** ページを開きます。
+1. Human Resources で、**Dataverse の統合** ページを開きます。
 
-2. **仮想エンティティ** タブを選択します。
+2. **仮想テーブル** タブを選択します。
 
 3. エンティティの一覧をエンティティ ラベルでフィルターして、**LinkedIn がエクスポートした候補者** を検索します。
 
@@ -142,7 +141,7 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
 
 ## <a name="exporting-candidate-records"></a>候補者レコードのエクスポート
 
-設定が完了した後、採用担当者と人事管理 (HR) 担当者は、LinkedIn タレント ハブの **HRIS へのエクスポート** 機能を使用して、採用された候補者レコードを LinkedIn タレント ハブから Human Resources にエクスポートできます。
+設定が完了した後、採用担当者と人事管理 (HR) 担当者は、LinkedIn タレント ハブの **HRIS へのエクスポート** 機能を使用して、採用された候補者のレコードを LinkedIn タレント ハブから Human Resources にエクスポートできます。
 
 ### <a name="export-records-from-linkedin-talent-hub"></a>LinkedIn タレント ハブからのレコードのエクスポート
 
@@ -164,7 +163,7 @@ LinkedIn タレント ハブ アダプターに対してアプリケーション
     - **場所** フィールドに、従業員が拠点とする場所を入力します。
     - 従業員の電子メール アドレスを入力または確認します。
 
-![LinkedIn タレント ハブの HRIS ペインにエクスポート](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![LinkedIn タレント ハブの HRIS ペインにエクスポート。](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Human Resources でのオンボードの完了
 
@@ -188,5 +187,8 @@ LinkedIn タレント ハブから Human Resources にエクスポートされ�
 
 ## <a name="see-also"></a>参照
 
-[Common Data Service 仮想エンティティの構成](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Common Data Service とは](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+[構成 Dataverse 仮想テーブル](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Microsoft Dataverse とは](/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

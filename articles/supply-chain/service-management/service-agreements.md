@@ -2,28 +2,25 @@
 title: サービス契約の作成および締結の概要
 description: サービス契約では、標準的なサービス訪問で使用されるリソース、およびそれらのリソースに関する顧客への請求方法を定義できます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd17cc0304d58d27afe2cededa5bc0b96557b5e9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e90161e7fa599fc76013277d3c80919fc144b77d3477e5d0318bdb5ef6da422c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432052"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771254"
 ---
 # <a name="develop-and-establish-service-agreements-overview"></a>サービス契約の作成および締結の概要
 
@@ -79,3 +76,6 @@ ms.locfileid: "4432052"
 ## <a name="related-topics"></a>関連トピック
 
 [サービス契約の作成](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

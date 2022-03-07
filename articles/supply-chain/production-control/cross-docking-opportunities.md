@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 2d2f264564f627889d89444a7423179de0c6d4d0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432311"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246288"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>製造オーダーから出荷ドックへのクロスドッキング
 
@@ -106,7 +105,7 @@ ms.locfileid: "4432311"
 8.  製造オーダーを作成します。 **製造オーダー** リスト ページに移動し、製品 L0101 の製造オーダーを作成します。 数量 = 20。 製造オーダーを見積もりして開始します。 なお、**ピッキング リスト転記** フィールドは **いいえ** に設定されたままです。
 9.  モバイル デバイスから完了レポートをします。 モバイル デバイス ポータルに移動し、メニュー項目 **完了レポートとプット アウェイ** を選択します。 次はハンドヘルド デバイスから L0101 の完了レポートをします。 数量 = 10。 なお、プット場所は **ベイ ドア** です。 この場所は **プット** ワーク オーダー タイプの **移動の出庫** 場所のディレクティブから検出されます。 なお、タイプ **移動の出庫** の作業が作成され完了していることにも注意してください。 移動オーダー作業の詳細に移動して作業を確認します。
 10. モバイル デバイスから 10 個の追加を報告します。 なお、プット場所は再度 **ベイ ドア** です。 なお、タイプ **移動の出庫** の新しい作業が 10 個用に作成されていることにも注意してください。
-11. 次は製造オーダーでさらに 20 個を開始し、ハンドヘルド デバイスを使用して 20 個それぞれの完了レポートをしてみます。 今回は、場所 **LP 001** がプット場所として提示されます。 この場所は **完成品のプット アウェイ** の場所のディレクティブから検出されます。 クロスドッキングの営業案件が存在しないため、この場所のディレクティブが使用されています。 LP-001 の移動オーダーは、ステップ 9 および 10 での 2 つのクロスドッキング活動によって完全に処理されました。 タイプ **完成品のプット アウェイ** の作業が作成され処理されたことに注意してください。
+11. 次に、製造オーダーでさらに 20 個を開始し、ハンドヘルド デバイスを使用して 20 個それぞれを完了としてレポートしてみます。 今回は、場所 **LP 001** がプット場所として提示されます。 この場所は **完成品のプット アウェイ** の場所のディレクティブから検出されます。 クロスドッキングの営業案件が存在しないため、この場所のディレクティブが使用されています。 LP-001 の移動オーダーは、ステップ 9 および 10 での 2 つのクロスドッキング活動によって完全に処理されました。 タイプ **完成品のプット アウェイ** の作業が作成され処理されたことに注意してください。
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>シナリオ 2 - 予定のスケジュールを用いた生産から移動オーダーへのクロスドッキング
 
@@ -127,3 +126,6 @@ ms.locfileid: "4432311"
 -   クロスドッキング シナリオは、バッチおよびシリアル番号分析コードが引当階層の場所の上と下の両方で定義されている、バッチおよびシリアル制御された品目でサポートされています。 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

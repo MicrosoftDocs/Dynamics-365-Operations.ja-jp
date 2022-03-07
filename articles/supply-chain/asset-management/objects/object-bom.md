@@ -1,12 +1,10 @@
 ---
 title: 資産 BOM
 description: このトピックでは、資産管理の資産部品表 (BOM) について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetStandardSparePartsItemGroup, EntAssetObjectBOM
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: baaf516eb386c3cf63d72bf31800b8731121fe26
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751988"
 ---
 # <a name="asset-boms"></a>資産 BOM
 
@@ -83,3 +81,6 @@ ms.locfileid: "5019527"
 5. 品目の有効期限が切れる場合 **は、有効期限** フィールドに終了日を入力します。
 6. **品目番号** フィールドで、品目を選択します。 名前は **製品名** フィールドに自動的に入力されます。
 7. **数量** フィールドに、使用される数量を入力します。 **単位** フィールドは自動的に更新されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,27 +1,25 @@
 ---
 title: レポート ソリューションの作成
-description: このチュートリアルでは、データをエクスポートしてレポートを作成する方法、定義済みのビューを展開してチャートにナビゲーションを追加する方法、フリーフォームのレポート デザイナーを使用する方法、およびパラメータの操作方法をカスタマイズする方法について説明します。
-author: TJVass
-manager: AnnBe
+description: このチュートリアルでは、レポートを作成する方法、定義済みのビューを展開する方法、グラフにナビゲーションを追加する方法、自由形式のレポート デザイナーを使用する方法、およびパラメーターをカスタマイズする方法について説明します。
+author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
 ms.custom: 21551
 ms.assetid: 2e1c96f8-46c9-428e-bb3d-6791f2a954ef
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd6c2d1012012d9b0bd1a2132b7f4f702af9faa8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2db2a5f5f60f1a4f1600b9e0605e2efa8f8bc8a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683859"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893316"
 ---
 # <a name="create-reporting-solutions"></a>レポート ソリューションの作成
 
@@ -171,7 +169,7 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 
 [![レポート デザイナー](./media/report-designer-1024x665.png)](./media/report-designer.png) 
 
-上図は、Visual Studio Precision Designer を使用して表示される FMRentalsByCustomer レポート デザイン定義のスクリーン ショットです。 Precision Designer には、レポートのコンテンツおよびレイアウトをカスタマイズできる組み込みツールが備わった、自由書式デザイン サーフェイスが用意されています。 また、埋め込み VB コードを活用して、実行時デザイン操作を作成し、ユーザーとの対話をサポートすることができます。 統合されたツールとして、開発者は、AX EDT に基づいてレポート本文のデータをフォーマットするために、AX ラベルとパブリック API を参照することができます。 MSDN には、SSRS 書式設定機能に関連する豊富な開発者ドキュメントが用意されています。 有効 SSRS レポートを設計する基本的な方法については、[Reporting Services レポート (SSRS)](https://msdn.microsoft.com/library/bb522712.aspx) を参照してください。
+上図は、Visual Studio Precision Designer を使用して表示される FMRentalsByCustomer レポート デザイン定義のスクリーン ショットです。 Precision Designer には、レポートのコンテンツおよびレイアウトをカスタマイズできる組み込みツールが備わった、自由書式デザイン サーフェイスが用意されています。 また、埋め込み VB コードを活用して、実行時デザイン操作を作成し、ユーザーとの対話をサポートすることができます。 統合されたツールとして、開発者は、AX EDT に基づいてレポート本文のデータをフォーマットするために、AX ラベルとパブリック API を参照することができます。 MSDN には、SSRS 書式設定機能に関連する豊富な開発者ドキュメントが用意されています。 有効 SSRS レポートを設計する基本的な方法については、[Reporting Services レポート (SSRS)](/sql/reporting-services/reports/reporting-services-reports-ssrs) を参照してください。
 
 ## <a name="customizing-the-parameter-experience"></a>パラメータ経験のカスタマイズ
 レポート フレームワークは、モデル化されたソリューションを使用して対処できない要件を持つ先進的なソリューションを促進するため、サービスの拡張機能を通じて柔軟性を提供します。 VS デザイナーを使用して、基本的なパラメーターの書式設定、グループ化、入力の検証を追加します。 X++ ベースのデータ コントラクト検証はより高度なシナリオで使用可能です。 ユーザー インターフェイス (UI) ビルダ クラスを追加して、レポートを実行する前にセッション入力を促すパラメータ ウィンドウをカスタマイズすることを検討してください。 これらのカスタム拡張機能は、次の機能に有効です。
@@ -245,3 +243,6 @@ SSRS は、引き続き ERP アプリケーションの高度なビジネス ド
 - 電子メール サポート、バッチによるスケジュール実行、および印刷アーカイブを含む組み込みのバック オフィス ドキュメント管理機能
 - フォームおよびその他のレポートへドリル スルー ナビゲーションが可能な、パラメーター化されたビュー。
 - 地方自治体が規制するビジネス慣行に準拠した正確なドキュメントの作成に使用
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

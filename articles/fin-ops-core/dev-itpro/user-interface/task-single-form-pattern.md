@@ -1,12 +1,10 @@
 ---
 title: タスク シングルのフォーム パターン
-description: この記事では、タスク シングル フォームのパターンに関する情報を提供します。 このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。
+description: この記事では、タスク シングル フォームのパターンに関する情報を提供します。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0d6be915848d955ce1c7d03f67ef562fed00608
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d47c7ad919058d3578af7c4138a1b5ddb25348ba
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685001"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188063"
 ---
 # <a name="task-single-form-pattern"></a>タスク シングルのフォーム パターン
 
@@ -29,8 +27,7 @@ ms.locfileid: "4685001"
 
 この記事では、タスク シングル フォームのパターンに関する情報を提供します。 このパターンは、ユーザーが複数のレコードを持つ単一のデータソースから発生したと認識するデータを表示するために以前は使用されていました。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 このタイプのフォームは、データが複数のレコードを持つ単一のデータ ソースから発生したとユーザーが認識することを表す場合に使用されました。 新しいフォームの推奨パターンではありません。 このパターンを使用する新しいフォームを作成する必要はありません。 このパターンは、レガシー フォームの構造と安定性を提供し、より現代的なフォーム パターンへの移行パスも提供します。
 
@@ -115,3 +112,6 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
 [![前のバージョンのビジュアルの例](./media/tasksingle4.png)](./media/tasksingle4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: メンテナンス ダウンタイム活動
 description: このトピックは、メンテナンス ダウンタイムが、特定の期間、特定の資産に対してメンテナンス ジョブを実行するために必要な能力の概要を取得するために使用される方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 986b2ae4cf7f7819caaf35e009fd4735f35e6928
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b2162621968c5b1c3957ea1a1639e71439000918
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017959"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837828"
 ---
 # <a name="maintenance-downtime-activities"></a>メンテナンス ダウンタイム活動
 
@@ -96,3 +94,6 @@ ms.locfileid: "5017959"
 - あるメンテナンス ダウンタイム アクティビティから別のアクティビティに資産をコピーすることができます。 **すべてのメンテナンス ダウンタイム アクティビティ** で **メンテナンス ダウンタイム アクティビティのコピー** ボタンを選択します。**メンテナンス ダウンタイム アクティビティのコピー元** および **メンテナンス ダウンタイム アクティビティのコピー先** フィールドを選択し、**OK** をクリックします。
 - **すべてのメンテナンス ダウンタイム アクティビティ** で、**メンテナンス スケジュール明細行** ボタンまたは **有効な作業指示書** ボタンをクリックして関連するリストを開き、選択したメンテナンス ダウンタイム アクティビティに関連する明細行を表示します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

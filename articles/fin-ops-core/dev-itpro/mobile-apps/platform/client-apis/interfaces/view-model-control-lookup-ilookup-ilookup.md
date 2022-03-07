@@ -1,25 +1,18 @@
 ---
 title: 参照タイプ
 description: ルックアップ コントロールの種類。 ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: cdf10d73e74eb02791d55370d7b93265c5493fe5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.openlocfilehash: 9247c26916e5d48bf0d49840d4891fe6d4c31d8a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680958"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781536"
 ---
 # <a name="lookup-type"></a>参照タイプ
 
@@ -252,3 +245,6 @@ onDataChanged: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 > [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged) から継承
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

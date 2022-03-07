@@ -1,12 +1,10 @@
 ---
 title: 機能的な場所を作成する
 description: このトピックでは、資産管理で機能的な場所を作成する方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationCopyStructure, EntAssetFunctionalLocationCreate
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81b5b81d7c318ba0a195dbc6324d700ccb8d39bf
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e8bdf8367cb7a54520c671fbc05807b891e0cc45
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018224"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813848"
 ---
 # <a name="create-functional-locations"></a>機能的な場所を作成する
 
@@ -131,3 +129,6 @@ ms.locfileid: "5018224"
 
 >[!NOTE]
 >機能的な場所を削除できない場合は、代わりに、この目的用に機能的な場所のライフサイクル状態を設定して削除を処理できます。 たとえば、**機能的な場所のライフサイクル状態** フォームで、有効な状態であってはならない "仕損済" または "削除済" 状態を設定できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

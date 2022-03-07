@@ -2,11 +2,9 @@
 title: Microsoft Dynamics Insider Program
 description: これらの補足プレビュー条件 (プレビュー条項) は、 Microsoft Dynamics 365 Insiderプログラム契約 ("プログラム合意" と、これらのプレビュー用語で補足するために本プログラムの参加者が同意した "契約" と呼ばれます) に加えて補足します。
 author: ShellyBakke
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ROBOTS: NOINDEX, NOFOLLOW
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-4-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 8271253f5c0032367e98528554eeb367f9cd4a8a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ce2add393bcd3adc50d023e9874fff58252d5429f609908abd1ee7fff9f5bf70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741622"
 ---
 # <a name="microsoft-dynamics-insider-program"></a>Microsoft Dynamics Insider Program
 [!include [banner](../includes/banner.md)] 
@@ -101,3 +99,6 @@ ms.locfileid: "4693004"
 
    **(C)**  マイクロソフトが、本契約に関連してマイクロソフトが顧客に提供する製品またはサービスに関して個人データの処理者または復処理者である限り、マイクロソフトは、GDPRの第28条、第28条 (3) の要件に適合する別個の契約をカスタマーと締結することに同意し、表明し、保証します。  本プログラムの参加者の合理的な意見において、マイクロソフトがGDPRの28条の義務に準拠していない場合、本プログラムの参加者はマイクロソフトに対してデータの共有を停止することがあります。  マイクロソフトによる、顧客に対するの契約上の義務の不履行、またはGDPRの条項の侵害によって生じた、顧客または本プログラムの参加者への損害については、マイクロソフトが全責任を負うものとする。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

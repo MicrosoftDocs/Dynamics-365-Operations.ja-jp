@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 8f2b738fd87219be383b103eaf5fafeb971fc702
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a6cc730f8d672d906072a9b97b737dbdea9faf2d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432162"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243204"
 ---
 # <a name="dual-use-goods"></a>デュアルユース商品
 
@@ -108,3 +107,6 @@ ms.locfileid: "4432162"
     | 請求書に印刷する | このチェック ボックスをオンにすると、指定された日付の範囲で、指定された国に対応する証明書番号が請求書に印刷されます。 |
     | 梱包明細に印刷する | このチェック ボックスをオンにすると、指定された日付の範囲で、指定された国に対応する証明書番号が梱包明細に印刷されます。 |
     | 販売注文書に印刷する | このチェック ボックスをオンにすると、指定された日付の範囲で、指定された国に対応する証明書番号が販売注文書に印刷されます。 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -5,6 +5,7 @@ author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
 audience: Application User
@@ -13,13 +14,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
-ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 9293beba6a251a670b918fecbb2315a5e94660b9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.18
+ms.openlocfilehash: 3546547bd064835d195a2c6ac7e4eb1d5afc9b00
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572268"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838109"
 ---
 # <a name="containerization"></a>コンテナー化
 
@@ -108,8 +109,6 @@ ms.locfileid: "7572268"
 
       - **空のコンテナーすべてに梱包** システムによって、配賦ラインがコンテナー詰めのサイクル中に作成されたコンテナーに適合するかどうかが評価されます。
       - **現在のコンテナーにのみ梱包** – システムにより、配賦ラインが最近作成されたコンテナーに適合するかどうかが評価されます。
-
-    コンテナー梱包計画の使用方法を示す詳細と例については、[コンテナー梱包計画](container-packing-strategy-overview.md)を参照してください。
 
 1. コンテナーに配賦ラインを梱包するルールを設定するには、**混合ロジック ブレーク** を選択します。 たとえば、作業者が同じコンテナーの 2 種類の品目の配賦ラインを梱包できるようにするルールを作成できます。 混合ルールを定義するには、次の手順に従います。
 

@@ -6,19 +6,18 @@ ms.topic: article
 ms.date: 07/27/2020
 ms.author: margoc
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3bd028e7d61fd57ed434a8a598bf24329a54ac1c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 50ae26931ee648404a9def54c4772e991ac06682
+ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963638"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5637315"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Dynamics 365 Supply Chain Management 機能コンサルタント向けラーニング カタログ
 
@@ -113,3 +112,6 @@ ms.locfileid: "4963638"
 | [試験 MB-300: Microsoft Dynamics 365 Unified Operations コア](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、一般的な機能と実装ツールの使用、セキュリティ、プロセス、およびオプションの設定、データ移行の実施、ソリューションの検証とサポートという技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
 | [試験 MB-330: Microsoft Dynamics 365 for Finance and Operations、Supply Chain Management](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | この試験では、製品情報管理の実装、在庫管理の実装、サプライ チェーン プロセスの実装および管理、倉庫管理と輸送管理の実装および業務プロセスの実行という技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
 | [試験 MB-320: Microsoft Dynamics 365 for Finance and Operations、製造](https://www.microsoft.com/learning/exam-MB-320.aspx) | この試験では、製造の設定とコンフィギュレーション、生産とリーンの注文の作成および管理、生産バッチ オーダーの作成、処理、および管理という技術的タスクを遂行する能力を評価します。 | 試験、費用は地域によって異なる |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

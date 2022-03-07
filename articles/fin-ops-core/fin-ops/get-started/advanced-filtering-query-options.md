@@ -1,12 +1,10 @@
 ---
 title: 高度なフィルター処理とクエリ構文
-description: このトピックでは、フィルター処理とクエリ オプションについて説明します。フィルター ウィンドウあるいはグリッド列ヘッダーのフィルター処理においてフィルター/並べ替えの編集ダイアログあるいは matches (一致) 演算子を使う時に利用できます。
+description: このトピックでは、高度なフィルター/並べ替えダイアログのためのフィルター処理とクエリ オプションについて、さらには [フィルター] ペインまたはグリッド列見出しフィルターの一致演算子について説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysQueryForm
 audience: Application User
@@ -17,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 650f1c209b1797973634c788645a4659bff28f13
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798674"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070012"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>高度なフィルター処理とクエリ構文
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、フィルター処理とクエリ オプションについて説明します。フィルター ウィンドウあるいはグリッド列ヘッダーのフィルター処理においてフィルター/並べ替えの編集ダイアログあるいは **一致** 演算子を使う時に利用できます。
 
@@ -121,7 +122,7 @@ ms.locfileid: "4798674"
 <td>2 つの連続した二重引用符 (<strong>""</strong>) は、現在の列に対する値のない行を検索します。</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operationsクエリ</span>) (Finance and Operations かっこ間のクエリ)</td>
+<td>(<span class="code">Finance and Operations クエリ</span>) (かっこの間の Finance and Operations クエリ)</td>
 <td>定義されたクエリと一致</td>
 <td>Finance and Operations クエリ言語を使用して、かっこの間にクエリを SQL ステートメントとして入力します。</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
@@ -242,3 +243,6 @@ ms.locfileid: "4798674"
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

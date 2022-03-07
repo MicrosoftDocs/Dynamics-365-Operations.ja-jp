@@ -2,28 +2,19 @@
 title: 初めて同期をする際に発生する問題のトラブルシューティング
 description: このトピックでは、 初めて同期をする際に発生する可能性のある問題の修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744640"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416984"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>初めて同期をする際に発生する問題のトラブルシューティング
 
@@ -40,7 +31,7 @@ ms.locfileid: "4744640"
 
 マッピングのテンプレートを有効にすると、マッピングの状態が **実行中** になります。 状態が **非実行中** のとなっている場合、初回の同期中にエラーが発生しています。 エラーを表示するには、**デュアル書き込み** ページの **初回同期の詳細** タブを選択し ます。
 
-![[初期同期の詳細] タブでのエラー](media/initial_sync_status.png)
+![[初期同期の詳細] タブでのエラー。](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>初回同期を完了できません：400 要求が不正です
 
@@ -48,7 +39,7 @@ ms.locfileid: "4744640"
 
 マッピングと初回の同期実行時に、次のメッセージが表示される場合があります。
 
-*(\[要求が不正です\]、リモート サーバーからエラーが返されました: (400) 要求が不正です)、AX のエクスポート中にエラーが発生しました*
+*(\[要求が不正です\]、リモート サーバーからエラーが返されました: (400) 要求が不正です。)、AX のエクスポート中にエラーが発生しました。*
 
 次に、完全なエラー メッセージの例を示します。
 
@@ -87,7 +78,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 1. Finance and Operations アプリにサインインします。
 2. **Azure Active Directory アプリケーション** のページで、**DtAppID** クライアントを削除し、再度追加します。
 
-![Azure AD アプリケーションの一覧の DtAppID クライアント](media/aad_applications.png)
+![Azure AD アプリケーションの一覧の DtAppID クライアント。](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>初回の同期中の自己参照または循環参照エラー
 
@@ -117,11 +108,11 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     2. **primarycontactperson** を検索して、**PrimaryContactPersonId** ソース列を見つけます。
     3. **アクション** を選択し、**削除** を選択します。
 
-        ![PrimaryContactPersonId 列の削除](media/vend_selfref3.png)
+        ![PrimaryContactPersonId 列を削除します。](media/vend_selfref3.png)
 
     4. これらの手順を繰り返して、**InvoiceVendorAccountNumber** 列を削除します。
 
-        ![InvoiceVendorAccountNumber 列の削除](media/vend-selfref4.png)
+        ![InvoiceVendorAccountNumber 列を削除します。](media/vend-selfref4.png)
 
     5. マッピングへの変更を保存します。
 
@@ -131,11 +122,11 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     2. **仕入先 V2** テーブルを選択します。
     3. 操作ウィンドウで、**オプション** を選択し、**Change Tracking** を選択します。
 
-        ![Change Tracking オプションの選択](media/selfref_options.png)
+        ![Change Tracking オプションを選択します。](media/selfref_options.png)
 
     4. **Change Tracking を無効にする** を選択します。
 
-        ![Change Tracking を無効にする選択](media/selfref_tracking.png)
+        ![Change Tracking を無効にするを選択します。](media/selfref_tracking.png)
 
 3. **仕入先 V2 (msdyn\_vendors)** マッピングの初期同期を実行します。 初期同期はエラーなしで正常に実行されます。
 4. **CDS 連絡先 V2 (連絡先)** マッピングの初期同期を実行します。 連絡先行に対しても初期同期する必要があるため、仕入先テーブルの基本連絡先列を同期する場合は、このマッピングを同期する必要があります。
@@ -164,11 +155,11 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     2. **contactperson** を検索して、**ContactPersonID** ソース列を見つけます。
     3. **アクション** を選択し、**削除** を選択します。
 
-        ![ContactPersonID 列の削除](media/cust_selfref3.png)
+        ![ContactPersonID 列を削除します。](media/cust_selfref3.png)
 
     4. これらの手順を繰り返して、**InvoiceAccount** 列を削除します。
 
-        ![InvoiceAccount 列の削除](media/cust_selfref4.png)
+        ![InvoiceAccount 列を削除します。](media/cust_selfref4.png)
 
     5. マッピングへの変更を保存します。
 
@@ -178,11 +169,11 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
     2. **顧客 V3** テーブルを選択します。
     3. 操作ウィンドウで、**オプション** を選択し、**Change Tracking** を選択します。
 
-        ![Change Tracking オプションの選択](media/selfref_options.png)
+        ![Change Tracking オプションを選択します。](media/selfref_options.png)
 
     4. **Change Tracking を無効にする** を選択します。
 
-        ![Change Tracking を無効にする選択](media/selfref_tracking.png)
+        ![Change Tracking を無効にするを選択します。](media/selfref_tracking.png)
 
 3. **顧客 V3 (アカウント)** マッピングの初期同期を実行します。 初期同期はエラーなしで正常に実行されます。
 4. **CDS 連絡先 V2 (連絡先)** マッピングの初期同期を実行します。
@@ -194,20 +185,54 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 6. **顧客 V3 (アカウント)** マッピングの初期同期を再度実行します。 Change Tracking が無効になっているため、**InvoiceAccount** と **ContactPersonId** のデータが Finance and Operations アプリから Dataverse に同期されます。
 7. **InvoiceAccount** と **ContactPersonId** のデータを Dataverse から Finance and Operations アプリに同期するには 、データ統合プロジェクトを使用します。
 
-    1. Power Apps で、**Sales.Account** と **Finance and Operations apps.Customers V3** テーブルの間にデータ統合プロジェクトを作成します。 データの方向は、Dataverse から Finance and Operations アプリである必要があります。 **InvoiceAccount** は二重書き込みの新しい属性なので、この属性の初期同期をスキップすることができます。 詳細については、[Dataverse へデータを統合](https://docs.microsoft.com/power-platform/admin/data-integrator) を参照してください。
+    1. Power Apps で、**Sales.Account** と **Finance and Operations apps.Customers V3** テーブルの間にデータ統合プロジェクトを作成します。 データの方向は、Dataverse から Finance and Operations アプリである必要があります。 **InvoiceAccount** は二重書き込みの新しい属性なので、この属性の初期同期をスキップすることができます。 詳細については、[Dataverse へデータを統合](/power-platform/admin/data-integrator) を参照してください。
 
         次の図は、**CustomerAccount** と **ContactPersonId** を更新するプロジェクトを示しています。
 
-        ![CustomerAccount と ContactPersonId を更新するためのデータ統合プロジェクト](media/cust_selfref6.png)
+        ![CustomerAccount と ContactPersonId を更新するためのデータ統合プロジェクト。](media/cust_selfref6.png)
 
-    2. Finance and Operations アプリではフィルター基準と一致する行のみが更新されるため、Dataverse 側のフィルターに会社の基準を追加します。 フィルタを追加するには、[フィルタ] ボタンを選択します。 その後、**クエリの編集** ダイアログ ボックスで、**\_msdyn\_company\_value eq '\<guid\>'** のようなフィルター クエリを追加できます。 
+    2. Finance and Operations アプリではフィルター基準と一致する行のみが更新されるため、Dataverse 側のフィルターに会社の基準を追加します。 フィルタを追加するには、[フィルタ] ボタンを選択します。 その後、**クエリの編集** ダイアログ ボックスで、**\_msdyn\_company\_value eq '\<guid\>'** のようなフィルター クエリを追加できます。
 
         > [注記] フィルタ― ボタンが表示されない場合は、サポート チケットを作成して、データ統合チームにテナントのフィルター機能を有効にするよう依頼します。
 
         **\_msdyn\_company\_value** のフィルター クエリを入力しない場合、すべての行が同期されます。
 
-        ![フィルタ クエリの追加](media/cust_selfref7.png)
+        ![フィルタ クエリを追加します。](media/cust_selfref7.png)
 
     行の初期同期が完了しました。
 
 8. Finance and Operations アプリで、**顧客 V3** テーブルの Change Tracking をオンにし直します。
+
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>10 以上のルックアップ フィールドを持つマップでの初期同期に失敗した場合
+
+**顧客 V3 - アカウント**、**販売注文**、または 10 以上のルックアップ フィールドを持つマップで初期同期を実行しようとする場合、失敗して次のエラー メッセージが表示される場合があります:
+
+*CRMExport: パッケージの実行が完了しました。エラーの説明5 https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc からデータを取得しようとしましたが失敗しました。*
+
+クエリのルックアップの制限により、エンティティ マッピングに 10 件以上のルックアップが含まれている場合、初期同期が失敗します。 詳細については、[クエリで関連エンティティ レコードを取得する](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query)を参照してください。
+
+この問題を解決するには、次の手順に従います:
+
+1. ルックアップの数が 10 以下になるように、オプションのルックアップ フィールドを二重書き込みエンティティ マップから削除します。
+2. マップを保存し、初期同期を実行します。
+3. 最初の手順の初期同期が正常に完了したら、残りのルックアップ フィールドを追加し、最初の手順で同期したルックアップ フィールドを削除します。 ルックアップ フィールドの数が 10 以下であることを確認します。 マップを保存し、初期同期を実行します。
+4. すべてのルックアップ フィールドが同期されるまで、これらの手順を繰り返します。
+5. すべてのルックアップ フィールドをマップに戻し、マップを保存し、**初期同期をスキップ** してマップを実行します。
+
+このプロセスにより、マップでライブ同期モードが有効になります。
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>当事者郵便番号と当事者電子住所の初期同期中の既知の問題
+
+当事者の郵便番号と当事者の電子住所の初期同期を実行しようとする場合に、以下のエラー メッセージが表示される場合があります:
+
+*当事者番号が Dataverse で見つかりませんでした。*
+
+**個人** と **組織** タイプの当事者をフィルタ処理するため、Finance and Operations アプリで **DirPartyCDSEntity** に範囲が指定されています。 その結果、**CDS 当事者 - msdyn_parties** マッピングの初期同期は、**法人** や **作業単位** など、他のタイプの当事者とは同期しません。 **CDS 関係者の郵便番号 (msdyn_partypostaladdresses)** または **関係者の連絡先V3 (msdyn_partyelectronicaddresses)** で初期同期を実行するとき、エラーを受け取る可能性があります。
+
+すべてのタイプの関係者が Dataverse に正常に同期するために、Finance and Operations エンティティで当事者タイプの範囲を削除するよう修正中です。
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>顧客または連絡先データの初期同期を実行する際のパフォーマンスに問題がありますか?
+
+**顧客** データの初期同期を実行し、**顧客** マップを実行中で、**連絡先** データの初期同期を実行しているなら、**顧客** 住所の **LogisticsPostalAddress** や **LogisticsElectronicAddress** テーブルへの挿入および更新時にパフォーマンスに問題が発生する可能性があります。 **CustCustomerV3Entity** と **VendVendorV2Entity** では同じグローバル郵便住所と電子アドレス テーブルが追跡されており、二重書き込みによって、データを他方の側に書き込むクエリをさらに作成しようとします。 **顧客** の初期同期を既に実行している場合は、**連絡先** データの初期同期を実行している間は対応するマップを停止してください。 同じ作業を **仕入先** データに行います。 初期同期が完了したら、すべてのマップを初期同期をスキップして実行できます。
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

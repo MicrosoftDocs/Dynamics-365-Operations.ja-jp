@@ -2,11 +2,9 @@
 title: データベース ポイントインタイム復元 (PITR)
 description: このトピックでは、Finance and Operations のデータベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 06/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6134652bbb07edfc74593baa473990b81890a873
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e53f2546fe8813c54e49acf32754c8e60fae19175ce6c569fe598cfab1344f7e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770795"
 ---
 # <a name="database-point-in-time-restore-pitr"></a>データベース ポイントインタイム復元 (PITR)
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス ユーザー受け入れテスト (UAT) 環境のポイントインタイム復元 (PITR) を実行することができます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 14 日間維持します。
+Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス ユーザー受け入れテスト (UAT) 環境のポイントインタイム復元 (PITR) を実行することができます。 Microsoft は、業務および財務報告用のデータベースの[自動バックアップ](/azure/sql-database/sql-database-automated-backups) を、実稼働環境の場合は 28 日間、サンドボックス環境の場合は 7 日間維持します。
 
 ## <a name="self-service-point-in-time-restore"></a>セルフサービスポイントインタイム復元
 [!include [pitr](../includes/dbmovement-pitr.md)]
@@ -37,6 +35,9 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス
 
 ### <a name="data-elements-that-need-attention-after-restore"></a>復元後に注意が必要なデータの要素
 以前の時点からデータベースを復元する場合、データベースは "現状のまま" 提供されることに注意してください。 例えば、システム内のバッチ ジョブやその他のデータ要素が進行中の状態になる可能性があります。 これらの要素は、手動で確認が必要となります。
+
+> [!NOTE]
+> 復元は、Azure Blob Storage に保存されているファイルへの参照を保存するテーブルに影響を与えます (ドキュメントの添付ファイルやカスタム Microsoft Office テンプレートなど)。 ただし、Azure Blob Storage 自体は、このプロセスの影響を受けません。復元時点の後に追加されたファイルは引き続き Azure Blob Storage に存在しますが、データベースには反映されません。 
 
 ### <a name="environment-administrator"></a>環境管理者
 対象の環境のシステム管理者アカウント (**Admin** の **UserId** 値を持つアカウント) が、対象の環境に存在する web.config ファイルで検出された値にリセットされます。 この値は、LCS の管理者アカウントの値と一致している必要があります。 使用するアカウントをプレビューするには、LCS でターゲット サンドボックス環境の **環境詳細** ページに移動します。 環境が最初に展開されたときに **環境管理者** フィールドで選択された値は、トランザクション データベースのシステム管理者に更新されます。 環境のテナントが環境管理者のテナントになります。
@@ -55,3 +56,6 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用し、サンドボックス
 
 ### <a name="restore-is-denied-for-environments-that-run-platform-update-20-or-earlier"></a>プラットフォーム 更新プログラム 20 以前が稼働している環境では、復元は拒否されます
 環境でプラットフォーム更新 20 以前を実行している場合は、データベース復元の処理を実行することはできません。 詳細については、[ソフトウェアのライフサイクル ポリシーとクラウド リリース](..//migration-upgrade/versions-update-policy.md)で現在サポートされているプラットフォーム更新の一覧を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

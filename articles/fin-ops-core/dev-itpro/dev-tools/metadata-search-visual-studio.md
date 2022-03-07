@@ -2,26 +2,22 @@
 title: Visual Studio でのメタデータの検索
 description: この記事では、メタデータ検索を使用して、任意のパターンやコンテンツのコードとメタデータを検索する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83303
 ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c53dc1bf08b54c60c6f7e65d011fbeb134abe2a
-ms.sourcegitcommit: 9e31a7347800d8d453d7be2c0f826010be946e95
+ms.openlocfilehash: 9dca75c96b74cc73c770f6a0653ec06796193591
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4409596"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783036"
 ---
 # <a name="metadata-search-in-visual-studio"></a>Visual Studio でのメタデータの検索
 
@@ -35,17 +31,17 @@ ms.locfileid: "4409596"
 
 メタデータ検索ツール ウィンドウには **Dynamics 365 &gt; メタデータ検索** メニュー コマンドからアクセスすることができます。 検索クエリを入力して検索を開始します。 結果は、入力と同時にウィンドウへの入力が非同期で開始されます。 任意の結果行をダブルクリックして、検索クエリに一致する、対応する X++ コードまたはメタデータに移動することができます。
 
-[![メタデータ検索ツール ウィンドウ](./media/posted_metasearch.png)](./media/posted_metasearch.png)
+[![メタデータ検索ツール ウィンドウ。](./media/posted_metasearch.png)](./media/posted_metasearch.png)
 
 また、1 つまたは複数の結果を選択して、右クリックし、これらの要素をプロジェクトに追加することができます。 検索結果とやりとりを開始するまで、検索の完了を待機する必要はありません。
 
-[![メタデータ検索から新しいプロジェクトへの追加](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
+[![メタデータ検索から新しいプロジェクトに追加します。](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
 
 ## <a name="navigate-to-window"></a>ウィンドウへの移動
 
 **移動先** ウィンドウは、**Ctrl + ','** (コンマ区切り記号) ショートカット キーを使用して呼び出されます。 **Ctrl+‘,’** キーを押すと、Visual Studio の主要なドキュメント ウィンドウの右上隅にクエリ エントリ ボックスが表示されます。 また、Visual Studio の **編集** メニューから **移動先** ウィンドウにアクセスすることができます。 クエリを検索し、入力時に結果が表示されることを確認します。 検索が完了したら、進行状況インジケーターが停止します。 結果とやりとりを開始するために、検索の完了を待機する必要はありません。
 
-[![ウィンドウへの移動](./media/typeform_metasearch.png)](./media/typeform_metasearch.png)
+[![ウィンドウに移動します。](./media/typeform_metasearch.png)](./media/typeform_metasearch.png)
 
 ## <a name="search-query-syntax"></a>クエリ構文を検索
 
@@ -74,7 +70,7 @@ ms.locfileid: "4409596"
 
 検索ボックスで使用可能なドロップダウンリスト メニューを開いて、フィルターおよびフィルター構文の使用に関するヘルプを取得することができます。
 
-[![メタデータ検索フィルター ボタン](./media/metadatasearchfilter.jpg)]
+[![メタデータ検索フィルター ボタン。](./media/metadatasearchfilter.jpg)]
 
 ## <a name="examples"></a>例
 
@@ -98,3 +94,6 @@ ms.locfileid: "4409596"
 |`code:"insert" type:table,form`    | 「挿入」を含むフォームまたはテーブルのいずれかのソース コード内で、すべての場所を検索します。   |
 |`code:"public display" type:form,method`  | 「公開表示」のコードを含む、すべてのフォーム メソッドを検索します。 |
 |`type:formbuttoncontrol property:text=` | **空** テキスト プロパティを持つ、すべてのフォームのボタン コントロールを検索します。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

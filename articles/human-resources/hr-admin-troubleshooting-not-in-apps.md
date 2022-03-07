@@ -1,32 +1,34 @@
 ---
 title: Microsoft Dynamics 365 アプリでは、人事管理が表示されない
-description: この記事では、顧客が Microsoft Dynamics 365 アプリの中で Microsoft Dynamics 365 Human Resources アプリを表示できない場合の対処方法について説明します。
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: このトピックでは、Microsoft Dynamics 365 Human Resources が Microsoft Dynamics 365 アプリで表示されない場合の対処方法について説明します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cbf47b4673e1c97965bba7728e5669b7639c4d56
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4bdbe6c4065a8266fd30a3b093743ded91524f6a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419350"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069683"
 ---
-# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Microsoft Dynamics 365 アプリでは、人事管理が表示されない
+# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources アプリが Microsoft Dynamics 365アプリに表示されない
 
-**問題点**
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+**問題**
 
 顧客は、Microsoft Dynamics 365 アプリで Dynamics 365 Human Resources を表示できません。
 
@@ -40,11 +42,11 @@ ms.locfileid: "4419350"
 
 3. **セキュリティ** タブの、**環境ロール** タブで、**環境メーカー** を選択します。
 
-    ![環境ロール タブ](media/environment-roles.png)
+    ![環境ロール タブ。](media/environment-roles.png)
 
 4. **ユーザー** タブで、ユーザーまたは組織を追加します。
 
-    ![ユーザー タブ](media/environment-maker.png)
+    ![ユーザー タブ。](media/environment-maker.png)
 
 5. **保存** を選択します。
 
@@ -52,6 +54,9 @@ ms.locfileid: "4419350"
 
 7. **同期** を選択してユーザー アプリを更新します。
 
-    ![同期ボタン](media/get-more.png)
+    ![同期ボタン。](media/get-more.png)
 
     同期が完了した後、人事管理はホーム ページに表示されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

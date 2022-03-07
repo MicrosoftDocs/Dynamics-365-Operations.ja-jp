@@ -10,28 +10,24 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413667"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477903"
 ---
 # <a name="create-a-default-customer"></a>既定の顧客の作成
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce でチャネルを作成する時に使用する既定の顧客を作成する方法について説明します。
-
-## <a name="overview"></a>概要
 
 チャネルを作成する場合、既定の顧客を指定する必要があります。 顧客グループおよび顧客のアドレス帳を最初に作成した後に、簡単に既定の顧客を作成できます。
 
@@ -113,3 +109,6 @@ ms.locfileid: "4413667"
 [チャネルの概要](channels-overview.md)
 
 [チャネル設定の前提条件](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

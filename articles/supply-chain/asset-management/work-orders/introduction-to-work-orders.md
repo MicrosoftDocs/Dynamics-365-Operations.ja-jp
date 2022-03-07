@@ -1,28 +1,26 @@
 ---
 title: 作業指示書の概要
 description: このトピックでは、資産管理の作業指示書の概要を示します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderLineNote, EntAssetWorkOrderTable, EntAssetWorkOrderActive, EntAssetWorkOrderHoursInfoPart, EntAssetWorkOrderLineListPage, EntAssetWorkOrderAddObjectBOMItem, EntAssetWorkOrderTablePoolAdd, EntAssetWorkOrderPurchReqListPagePreviewPane, EntAssetWorkOrderPoolReferenceAdd, EntAssetWorkOrderWorkspace, EntAssetWorkOrderTableAdjust, EntAssetWorkOrderGantt, EntAssetWorkOrderNotes, EntAssetWorkOrderActivePart, EntAssetWorkOrderTableInfoPart, EntAssetWorkOrderLineListPagePreviewPane, EntAssetWorkOrderTool, EntAssetMobileWorkOrderLineDetails, EntAssetMobileWorkOrderLineList, EntAssetMobileWorkOrderDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 378fc6d55deada95e94f91ed3f73f2518efbeb1f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3891ea08a484950d8fef57d6229117e90ed93a92ab800f9de3ad82db3aff956d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021883"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754707"
 ---
 # <a name="introduction-to-work-orders"></a>作業指示書の概要
 
@@ -53,7 +51,7 @@ ms.locfileid: "5021883"
 
 次の図は、**すべての作業指示書** リスト ページの例を示しています。
 
-![図 1](media/01-work-orders.png)
+![図 1。](media/01-work-orders.png)
 
 有効な作業指示書のみのリストを表示するには、**資産管理** > **共通** > **作業指示書** > **有効な作業指示書** を選択します。 
 
@@ -71,7 +69,7 @@ ms.locfileid: "5021883"
 
 次の図は、**すべての作業指示書** 詳細ビューの例を示しています。
 
-![図 2](media/02-work-orders.png)
+![図 2。](media/02-work-orders.png)
 
 
 アクション ウィンドウのボタンはタブで整理されます。 次のテーブルで、資産管理に関連するボタンについて簡単に説明します:
@@ -118,3 +116,6 @@ ms.locfileid: "5021883"
 >[!NOTE]
 >マスター スケジューリングを実行する際に作業指示書で作成した予測を含めるには、**資産管理パラメーター** ページで選択した予測モデルを使用します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

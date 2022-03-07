@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: fa737f61bfd5bd71ba6d76e75e57c8e2d682cda3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dca006ca00e7ff5aa3681daac713f1e93187cd9c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965680"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239200"
 ---
 # <a name="system-directed-cluster-picking"></a>システム主導のクラスター ピッキング
 
@@ -206,3 +206,6 @@ ms.locfileid: "4965680"
 1. モバイル デバイスの最後のステップは、クラスターを最終的な場所に **プット** することです。  **OK** を選択します
     - このプット操作が確認されると、クラスター プロファイルの **クラスターの分割場所** フィールドに設定した値に基づいて、クラスターは閉じられ分割されます。 作業 ID も閉じられます。
 1. モバイル デバイスに「クラスター完了」というメッセージが表示されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

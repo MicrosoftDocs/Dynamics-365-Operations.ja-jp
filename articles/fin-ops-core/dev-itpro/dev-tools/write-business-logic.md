@@ -1,13 +1,9 @@
 ---
 title: C# および X++ ソース コードを使用したビジネス ロジックを記述する
-description: このチュートリアルの主な目的は、Microsoft Dynamics AX での C# と X++ 間で相互運用性について説明することです。 このチュートリアルでは、C# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。
+description: このチュートリアルでは、C# と X++ 間での相互運用性について説明します。 このチュートリアルでは、C# ソース コードおよび X++ ソース コードでビジネス ロジックを記述します。
 author: pvillads
-manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 26821
@@ -15,12 +11,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53ada319a9b9b969eb27b4ed9c7d74e295bb3644
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d8e26e995e0c17cf4f3e01140b926fdd931c80a7
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409279"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866228"
 ---
 # <a name="write-business-logic-by-using-c-and-x-source-code"></a>C# および X++ ソース コードを使用したビジネス ロジックを記述する
 
@@ -288,3 +284,6 @@ C\# DriversLicenseEvaluator プロジェクトは、 FleetManagement Migrated �
 
 9.  **F5** キーを押して **保存** 操作を完了します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: 原価エントリ
 description: この記事は、原価エントリおよびその作成時に関する情報を提供します。 原価エントリは、特定のイベントの数量と原価を登録するレコードです。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12ff771cf44595420ca721605daabaa6b071a4ff
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c03a059aa3491f3f42a1a7ce67cff56e67314edaebbcbe8a766fe769ee06ae88
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967817"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782003"
 ---
 # <a name="cost-entries"></a>原価エントリ
 
@@ -64,10 +62,12 @@ ms.locfileid: "4967817"
 > [!NOTE]
 > 原価エントリは、[原価オブジェクト](cost-object.md) またはリリースされた製品でのみ使用できます。
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [原価オブジェクト](cost-object.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

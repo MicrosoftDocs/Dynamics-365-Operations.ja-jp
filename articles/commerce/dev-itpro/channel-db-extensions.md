@@ -2,25 +2,23 @@
 title: チャネル データベース 拡張機能
 description: このトピックでは、チャネル データベースを拡張する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83892
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: 350897f8f2e7a4953eaf84bbc3cd8fc6290ab42d
-ms.sourcegitcommit: 93884aacaed7ac2b599d5c5ed87fdd119db43edd
+ms.openlocfilehash: e3ccd6edd3a7af2e2a3e204b66b52537b22e2892
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4712676"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781845"
 ---
 # <a name="channel-database-extensions"></a>チャネル データベース 拡張機能
 
@@ -35,8 +33,8 @@ ms.locfileid: "4712676"
 アップグレード時の拡張機能の処理の方法にいくつかの改善を加えました。 以下の環境構成のいずれかを使用することをお勧めします。
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 年 7 月) およびアプリケーション更新プログラム 5
-- Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 はすぐに入手できるようになります。
-- Microsoft Dynamics 365 Retail 7.3 はアプリケーション更新プログラム 5 を含みます。
+- Microsoft Dynamics 365 Retail 7.2 およびアプリケーション更新プログラム 5 (まもなく利用できます)
+- Microsoft Dynamics 365 Retail 7.3 (アプリケーション更新プログラム 5 を含みます)
 - Microsoft Dynamics 365 for Finance and Operations 7.3 (アプリケーション更新プログラム 5 を含みます)
 
 ## <a name="ext-schema"></a>Ext スキーマ
@@ -228,11 +226,15 @@ GO
 
 配置プロセスは、データベースのコンポーネントに変更があるかどうかを判断します。 CRT、AX、または DBO スキーマ オブジェクトを変更しようとした場合、またはどのシナリオの場合でも SQL でそれらに直接アクセスすると、展開は失敗します。
 
+## <a name="deployment-timeout"></a>配置のタイムアウト
+
+配置スクリプトを 30 分以上実行すると、SQL Server はタイム アウトになります。 タイムアウトと配置に失敗しないように、実行時間の長いスクリプトを複数の小さなスクリプトに分割し、30 分未満で実行します。
+
 ## <a name="extension-scripts-and-deployment"></a>拡張スクリプトおよび展開
 
 チャンネル データベース拡張は、1 つまたは複数の T-SQL スクリプト ファイルを作成し、[展開可能なパッケージ](./retail-sdk/retail-sdk-packaging.md)に含めることで用意されます。 このプロセスについては、[Retail SDK](./retail-sdk/retail-sdk-overview.md) ドキュメントで説明します。
 
-拡張スクリプト ファイルは、[T-SQL](https://docs.microsoft.com/sql/t-sql/language-reference) を使用して記述され、[Azure SQL データベース](https://docs.microsoft.com/azure/sql-database/sql-database-features)と互換性があります。
+拡張スクリプト ファイルは、[T-SQL](/sql/t-sql/language-reference) を使用して記述され、[Azure SQL データベース](/azure/sql-database/sql-database-features)と互換性があります。
 スクリプト ファイルの末尾は *.sql* ファイル拡張子にする必要があります。その他のファイルは無視されます。または、パッケージングまたは配置障害を引き起こす可能性があります。 Commerce Scale Unit または Modern POS オフラインの一部としてチャネル データベース拡張機能を展開する場合、スクリプトは、それらのコンポーネントに対して使用される SQL Express または SQL Server のバージョンの両方またはいずれかと互換性があることも必要です。
 
 配置とインストール中、拡張子スクリプトは、スクリプト ファイル名に基づいたアルファベット順で実行されます。
@@ -281,3 +283,6 @@ GO
 ### <a name="do-write-backward-compatible-channel-database-extensions"></a>後方互換性のあるチャネルデータベースの拡張機能を作成する
 
 チャネルデータベースには後方互換性がある必要があります。 これは、Commerce Scale Unit または POS を更新せずにチャネル データベースだけを更新することにより、既存の Commerce Scale Unit または POS 操作が正常に機能するのを妨げてはならないことを意味します。 配置フロー中は、Commerce Scale Unit と Modern POS のさまざまなコンポーネントが、依存関係なく逆で更新されます。 これは、チャネル データベースが最初に更新されるコンポーネントで、Commerce Scale Unit または POS が次に更新されることを意味します。 Commerce Scale Unit または POS が正常に更新できなかった場合、これらのコンポーネントはロールバックされて、以前の作業状態に戻されます。 このような場合であっても、データの損失を防ぐためにチャネルデータベースはロールバックされません。 ご利用の拡張機能に後方互換性がない場合、正常な展開処理が完了するまでは、これら拡張機能が正しく動作しない可能性があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

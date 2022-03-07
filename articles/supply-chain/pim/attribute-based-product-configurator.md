@@ -1,28 +1,27 @@
 ---
 title: 制約ベースの製品コンフィギュレーションの属性ベースの販売価格
 description: このトピックでは、物理的な部品表と工順ではなく、コンポーネントと属性に基づく販売価格の販売価格モデルを作成する方法について説明します。
-author: sorenva
-manager: tfehr
+author: t-benebo
 ms.date: 10/2/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: sorenand
+ms.author: benebotg
 ms.search.validFrom: 2020-08-17
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c0f9c1bb94b4dcc3c3c1e7656868ef6e6bd903db
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: e50b2d1e9ccf03a58e0ddf6d4ecfb34c6c504161
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431628"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577459"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>制約ベースの製品コンフィギュレーションの属性ベースの販売価格
+
+[!include [banner](../includes/banner.md)]
 
 このトピックでは、物理的な部品表と工順ではなく、コンポーネントと属性に基づく販売価格の販売価格モデルを作成する方法について説明します。 製品コンフィギュレーション モデルごとに、複数の販売価格モデルを作成できます。
 
@@ -36,7 +35,7 @@ ms.locfileid: "4431628"
 1. **制約ベースの製品コンフィギュレーション モデル** のタブを開きます。
 1. **既定の通貨** ドロップダウン リストを開き、通貨を選択します。
 
-    ![制約ベースの製品コンフィギュレーションの既定の通貨を設定する](media/prod-config-currency.png "制約ベースの製品コンフィギュレーションの既定の通貨を設定する")
+    ![制約ベースの製品コンフィギュレーションの既定の通貨を設定します。](media/prod-config-currency.png "制約ベースの製品コンフィギュレーションの既定の通貨を設定する")
 
 1. すべての注文明細行または見積明細行に対して価格内訳を含む Excel ファイルを関連付ける場合、**価格モデル** のセクションで **添付** を *はい* に設定します。
 
@@ -63,7 +62,7 @@ ms.locfileid: "4431628"
 - ローズウッド キャビネット仕上げの場合、119.95 EUR 加算します。
 - スピーカの高さは単位ごとに 12.95 EUR 加算します。
 
-![価格モデルの例](media/prod-config-rules-example.png "価格モデルの例")
+![価格モデルの例。](media/prod-config-rules-example.png "価格モデルの例")
 
 ## <a name="add-support-for-multiple-currencies"></a>複数通貨のサポートを追加する
 
@@ -84,7 +83,7 @@ ms.locfileid: "4431628"
 
 次の例では、_EUR_ が既定の通貨であり、_USD_ は追加の通貨として追加されています。
 
-![複数の通貨を使用するモデルの例](media/prod-config-rules-currency-example.png "複数の通貨を使用するモデルの例")
+![複数の通貨を使用するモデルの例。](media/prod-config-rules-currency-example.png "複数の通貨を使用するモデルの例")
 
 > [!NOTE]
 > 既定以外の通貨に対して一意となる式ルールを追加することはできません。 既定の通貨以外の通貨にのみ関連する式ルールを作成するには、既定の通貨の価格式を 0 に設定します。 その後、既定以外の通貨に適切な式を設定します。
@@ -96,11 +95,11 @@ ms.locfileid: "4431628"
 - ここで提供されるコンフィギュレーション設定を使用して製品オプションを選択し、**価格および出荷日** について表示されている値への影響を確認します。
 - **価格内訳の表示** を選択し、価格の計算方法に関する完全な詳細情報を示す Excel ドキュメントをダウンロードします。
 
-![製品モデルのテスト](media/prod-config-test.png "製品モデルのテスト")
+![製品モデルをテストします。](media/prod-config-test.png "製品モデルのテスト")
 
 ダウンロードされたスプレッドシートには、絶対値と利益率の両方が有効な価格要素ごとに割合で表示されます。 **製品情報管理パラメーター** ページで **添付** 価格モデル オプションを設定した場合、この Excel シートが注文明細行または見積明細行に添付されます。
 
-![価格内訳を示す Excel スプレッドシート](media/prod-config-excel-example.png "価格内訳を示す Excel スプレッドシート")
+![価格内訳を示す Excel スプレッドシート。](media/prod-config-excel-example.png "価格内訳を示す Excel スプレッドシート")
 
 ## <a name="set-up-selection-criteria-for-price-models"></a>価格モデルの選択基準を設定する
 
@@ -119,7 +118,7 @@ ms.locfileid: "4431628"
     - **発効日** - クエリを適用する最初の日を指定します。
     - **有効期限** - クエリを適用する最後の日付を指定します。
 
-    ![価格モデル基準](media/prod-config-price-model-criteria.png "価格モデル基準")
+    ![価格モデル基準。](media/prod-config-price-model-criteria.png "価格モデル基準")
 
 1. 定義するクエリの行を選択し、**アクション ウィンドウ** で **編集** を選択します。 クエリ デザイナー ダイアログボックスが開きます。 Supply Chain Management のクエリ デザイナーと同じように機能します。 これを使用して、選択した行の価格モデルを適用する条件を定義します。
 
@@ -140,4 +139,7 @@ ms.locfileid: "4431628"
 1. ターゲットにする製品構成モデルを選択します。
 1. アクション ウィンドウで、**モデル** タブを開き、**製品モデルの詳細** グループから、**バージョン** を選択します。
 1. **バージョン** ページが開きます。 **価格決定方法** が **属性ベース** に設定されていることを確認します。
-    ![価格決定方法を属性ベースに設定する](media/prod-config-versions.png "価格決定方法を属性ベースに設定する")
+    ![価格決定方法を属性ベースに設定します。](media/prod-config-versions.png "価格決定方法を属性ベースに設定する")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

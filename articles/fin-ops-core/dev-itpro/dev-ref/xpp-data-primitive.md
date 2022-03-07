@@ -2,26 +2,21 @@
 title: X++ プリミティブ データ型
 description: このトピックでは、X++のプリミティブ データ型について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 150183
-ms.assetid: 0ff4e759-851d-4b53-aa67-6f03eee53f02
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 167efe21c8ea8a6175a665c0ab8e13c0080776b4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0c6a03cb65406f6f5c945ed658c61e6483c6d0f8
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408741"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866011"
 ---
 # <a name="x-primitive-data-types"></a>X++ プリミティブ データ型
 
@@ -495,3 +490,6 @@ public void UtcdatetimeMethod()
     utcdatetime myUtc4 = DateTimeUtil::parse("1988-07-20T13:34:45");
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

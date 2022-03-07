@@ -1,26 +1,24 @@
 ---
 title: 番号順序を個別に設定する
 description: このトピックでは、番号順序を個別に設定する方法について説明します。
-author: sericks007
-manager: AnnBe
+author: SunilGarg
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sericks
+ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 260fae39d9a98feb7bfa82188c5b05de9a533136
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796633"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777916"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>番号順序を個別に設定する
 
@@ -32,7 +30,7 @@ ms.locfileid: "4796633"
 2. **番号順序** を選択します。
 3. **番号順序コード** フィールドに値を入力します。
 4. **名前** フィールドに値を入力します。
-5. **スコープ パラメーター** クイック タブで、番号順序の範囲を選択してドロップダウン リストから範囲値を選択します。 範囲によって、番号順序を使用する組織が決まります。 また、**共有** 以外の範囲が指定されている番号順序に、その範囲に対応する区分を設定することもできます。 たとえば、法人の範囲の番号順序には、**法人** の区分を含めることができます。 範囲の詳細については、[番号順序の概要](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview) を参照してください。 
+5. **スコープ パラメーター** クイック タブで、番号順序の範囲を選択してドロップダウン リストから範囲値を選択します。 範囲によって、番号順序を使用する組織が決まります。 また、**共有** 以外の範囲が指定されている番号順序に、その範囲に対応する区分を設定することもできます。 たとえば、法人の範囲の番号順序には、**法人** の区分を含めることができます。 範囲の詳細については、[番号順序の概要](../number-sequence-overview.md) を参照してください。 
 6. **区分** セクションを展開します。
     - 区分の追加、削除、および並べ替えを行って、番号順序の形式を定義します。  
     - すべての範囲の番号順序には、*定数区分* および *英数字区分* を含めることができます。 定数区分には、一定の英数字が含まれています。 この区分タイプは、番号順序区分の間にハイフンまたはその他の区切り文字を追加する場合に使用します。 英数字区分には、番号記号 (#) とアンパサンド (&) の組み合わせが含まれています。 これらの文字は、順序の番号が使用されるたびに繰り上がる文字と数字を表します。 番号記号 (#) は数字の繰り上げに、アンパサンド (&) は文字の繰り上げに使用します。 たとえば、`#####_2014` という形式を指定した場合、`00001_2014`、`00002_2014` という順序で番号が割り当てられます。 英数字区分は少なくとも 1 つ必要です。 会社や法人などの範囲区分は必須ではありません。 ただし、形式に範囲区分を含めない場合、選択した参照先の番号は範囲ごとに生成されます。  
@@ -40,3 +38,6 @@ ms.locfileid: "4796633"
 8. **一般** セクションを展開します。 [全般] クイック タブで、番号順序を手動で生成するかどうか、および連続させるかどうかを選択します。 また、番号順序で使用できる最小番号と最大番号を入力します。 連続しない番号順序を連続する番号順序に変更することはお勧めしません。 番号順序が、完全には連続しなくなります。 この変更を行うと、データベースに重複キーエラーが発生してしまうこともあります。 また、連続する番号順序は、パフォーマンスに大きな影響を与えます。   
 9. **保存** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

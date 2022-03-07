@@ -13,16 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e279a00b41a45ae19664d73d996e37891f29efa7
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 5d34e97d0131159b9b6d34c766e2c616ff83b014
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913689"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647775"
 ---
 # <a name="electronic-reporting-framework-api-changes-for-application-update-10023"></a>Application update 10.0.23 での電子申告フレームワーク API の変更
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.23 で[電子申告 (ER)](general-electronic-reporting.md) フレームワークのアプリケーション プログラミング インターフェイス (API) がどのように変更されたかについて説明します。
 

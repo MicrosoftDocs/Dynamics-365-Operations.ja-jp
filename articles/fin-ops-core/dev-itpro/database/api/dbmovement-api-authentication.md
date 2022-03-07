@@ -2,11 +2,9 @@
 title: データベース移動 API - 認証
 description: このトピックでは、データベース移動のアプリケーション プログラミング インターフェイス (API) を使用した認証方法についての概要を示します。
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: c13dce5b3ab300c01084325e852fe3266d5829f1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 226f39fe78d8588a6782f2a949508807235dee33
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681122"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750548"
 ---
 # <a name="database-movement-api---authentication"></a>データベース移動 API - 認証
 
@@ -79,3 +77,6 @@ GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
 [![Azure ポータルで新しいアプリに登録する](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
 
 Azure AD は、アプリに固有のアプリケーション ID (クライアント ID) を割り当て、アプリの **概要** ページが表示されます。 アプリに複数の機能を追加するには、他のコンフィギュレーション オプション (ブランド化のオプションや証明書とシークレットのオプションなど) を選択できます。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

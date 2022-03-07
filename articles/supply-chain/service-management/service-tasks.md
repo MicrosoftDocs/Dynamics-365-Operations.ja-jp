@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceTask
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b433632523bfd64119fda62f8e4b108ff9b5dccd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9dfeddcf754ccaf1f5fb5d3f20ca771145c5f2a1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431645"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5223317"
 ---
 # <a name="service-tasks-overview"></a>サービス作業の概要
 
@@ -90,3 +89,6 @@ ms.locfileid: "4431645"
 2. **設定** タブの、**サービス注文の組み合わせ** フィールドで **サービス作業別** を選択します。
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

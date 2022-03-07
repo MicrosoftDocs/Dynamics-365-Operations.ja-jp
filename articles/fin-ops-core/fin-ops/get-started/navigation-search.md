@@ -2,11 +2,9 @@
 title: ナビゲーション検索
 description: このトピックでは、検索機能を使用して他のページに移動する方法を説明します。
 author: aneesmsft
-manager: AnnBe
-ms.date: 04/27/2017
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43fa263bcbb6f5a6465af59ffb744aa865d66239
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4799107"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069987"
 ---
 # <a name="navigation-search"></a>ナビゲーション検索
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、検索機能を使用して他のページに移動する方法を説明します。
 
@@ -36,7 +37,7 @@ ms.locfileid: "4799107"
 > [!NOTE]
 > **検索** ボックスは、ページの検索や移動に役立ちます。 特定のデータまたはアクションの検索には役立ちません。
 
-[![検索ボックス](media/navigation-search.png "検索ボックス")
+![検索ボックス。](media/navigation-search.png "検索ボックス")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>特定のページにすばやく移動する
 
@@ -62,3 +63,6 @@ ms.locfileid: "4799107"
 ## <a name="development"></a>開発
 
 開発の観点からすれば、ナビゲーション検索機能は、メニュー項目の配置と検索結果の表示機能の間に遅延がないため、活用が非常に容易です。 メニュー項目は、ナビゲーション ウィンドウまたはダッシュボードにリンクされている場合、自動的に検索可能になります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

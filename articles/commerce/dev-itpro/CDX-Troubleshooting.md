@@ -1,12 +1,10 @@
 ---
 title: Commerce Data Exchange のトラブルシューティング
-description: このトピックは、Microsoft Dynamics 365 Commerce 環境にデータ同期 (Commerce Data Exchange、または CDX) に関連する機能の実装を行う IT 担当者を対象としています。 ここでは、実装における CDX のトラブルシューティングに役立つ情報を提供します。
+description: このトピックでは、実装における CDX のトラブルシューティングに役立つ情報を提供します。
 author: jashanno
-manager: AnnBe
 ms.date: 08/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
@@ -18,14 +16,15 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: aeb6f764e64e21c507eac68a305bb85b2a6c96ae
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b76a1ae173201dd7f573e77cf6bd613a776f28d1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680406"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801935"
 ---
 # <a name="commerce-data-exchange-troubleshooting"></a>Commerce Data Exchange のトラブルシューティング
+
 [!include[banner](../includes/banner.md)]
 
 このトピックは、Microsoft Dynamics 365 Commerce 環境にデータ同期 (Commerce Data Exchange \[CDX\]) に関連する機能の実装を行う IT 担当者を対象としています。 ここでは、実装における CDX のトラブルシューティングに役立つ情報を提供します。
@@ -68,3 +67,5 @@ ms.locfileid: "4680406"
 - [デバイス管理実装ガイダンス](../implementation-considerations-devices.md)
 - [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md)
 - [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

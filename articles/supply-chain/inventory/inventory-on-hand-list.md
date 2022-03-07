@@ -1,27 +1,24 @@
 ---
 title: 手持在庫リスト
 description: このトピックでは、[手持在庫リスト] ページを使用して手持在庫の詳細を検査する方法について説明します。 さまざまなフィルタ処理オプションと並べ替えオプションが連動するいくつかの方法と、これらのオプションを組み合わせたときに予期しない結果が生じる可能性があることを示しています。
-author: sherry-zheng
-manager: tfehr
+author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2020-07-07
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432379"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573924"
 ---
 # <a name="inventory-on-hand-list"></a>手持在庫リスト
 
@@ -146,3 +143,6 @@ ms.locfileid: "4432379"
 | IA0001 | 1 | 2 | 2 |
 
 **フィルター** ペインの設定は、このセクションの冒頭で示した詳細 (非集計) 在庫テーブルに適用されることに注意してください。 したがって、条件 **引当可能現物数** \| _1_\| **よりも少ない、または等しい** では、テーブルから2つの行が検出されます (**引当可能現物数** に _1_ の値を持つ1番目と3番目の行)。 ただし、このシナリオでは、**手持在庫のリスト** ページで **倉庫** の分析コードを表示するようには設定されていません 。 したがって、表示されるすべての分析コードの値が同じであるため、元の2つの行が1つの結果行に集計されます。 **引当可能現物数** の値は _2_ と表示されるため、一見ではこの行がフィルタ条件に反しているように見えます。 ただし、**フィルター** ペインの設定は、**手持在庫リスト** ページに表示される集計テーブルには適用されず、元のテーブルに対して適用されるため、正確な結果を表わしていることになります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

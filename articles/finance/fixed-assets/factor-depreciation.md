@@ -1,7 +1,7 @@
 ---
 title: 係数減価償却
 description: この記事は、係数償却方法の減価償却の概要を示します。
-author: moaamer
+author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 13831
 ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aab5ab518f2806e1b27f352e354dc9280fd27def
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 8adfc91251ba1707c688fac6da04adaa9af1a47f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674458"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815695"
 ---
 # <a name="factor-depreciation"></a>係数減価償却
 
@@ -28,7 +28,7 @@ ms.locfileid: "7674458"
 
 この記事は、係数償却方法の減価償却の概要を示します。
 
-係数は、資産の減価償却に使用される比率です。 固定資産の減価償却プロファイルを設定し、**減価償却プロファイル** ページの **方法** フィールドで **係数** を選択すると、累進的減価償却、累減的減価償却、または定額減価償却を設定できます。
+係数は、資産の減価償却に使用される比率です。 固定資産減価償却プロファイルを設定し、**減価償却プロファイル** ページの **方法** フィールドで **係数** を選択すると、累進的減価償却、累減的減価償却、または定額減価償却を設定できます。
 
 -   累進的減価償却では、減価償却期間ごとに減価償却金額は増加します。
 -   累減的減価償却では、期間ごとの減価償却金額はしだいに減少します。

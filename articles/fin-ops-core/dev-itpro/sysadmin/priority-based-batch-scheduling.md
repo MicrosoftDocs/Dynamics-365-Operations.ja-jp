@@ -2,11 +2,9 @@
 title: 優先順位に基づくバッチスケジューリング
 description: このトピックでは、優先順位に基づくバッチスケジューリングの機能について説明します。
 author: peakerbl
-manager: AnnBe
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Platform Update31
-ms.openlocfilehash: 1240bd7f953bdfab4c0e08655e28ddbecf289fb2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8dd18db0b4e1435b1d6e0f267ace35888bc37a4671579de8937c92f09d103db4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682523"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773768"
 ---
 # <a name="priority-based-batch-scheduling"></a>優先順位に基づくバッチスケジューリング 
 
@@ -132,3 +130,6 @@ ms.locfileid: "4682523"
 この機能を有効にすると、バッチジョブが実行され、最終実行時以降のバッチジョブが移行されます。 この機能を有効にしたユーザーには、移行バッチ ジョブの ID への参照を含む通知が送信されます。
 
 この機能を有効化して移行が完了したら、自動バッチグループへの割り当てを確認することを推奨します。 この確認作業を容易にする目的で、タスクの **バッチグループ** フィールドは読み取り専用になっています。 下位互換性に対応するため、このフィールドの値は、新たなバッチタスクが追加された際にジョブから反映されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

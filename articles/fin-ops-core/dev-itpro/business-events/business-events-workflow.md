@@ -2,7 +2,7 @@
 title: ワークフロー ビジネス イベント
 description: ワークフロー ビジネス イベントは、ワークフローの処理のさまざまなポイントで生成されます。
 author: ChrisGarty
-ms.date: 01/18/2022
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: d90aaf4c85ec3ebc068f85686debe2813e90cc2b
-ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
+ms.openlocfilehash: e869838e6470978d4d453f3e740a5b12ed919694
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8007327"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748255"
 ---
 # <a name="workflow-business-events"></a>ワークフロー ビジネス イベント
 [!include[banner](../includes/banner.md)]
@@ -46,41 +46,41 @@ ms.locfileid: "8007327"
 
 ワークフロー ビジネス イベントには 5 つの異なるカテゴリがあります。 カテゴリが Microsoft Power Automate に表示され、イベントを選択できます。
 
-![Microsoft Power Automate でのビジネス イベント カテゴリ。](media/Business-event-category.png  "Microsoft Power Automate でのビジネス イベント カテゴリ")
+![Microsoft Power Automate でのビジネス イベント カテゴリ](media/Business-event-category.png  "Microsoft Power Automate でのビジネス イベント カテゴリ")
 - **カテゴリ: ワークフロー タイプ** 
      - これらのイベントは、開始および完了などのワークフロー イベントで発生します。 すべてのワークフロー インスタンスはこのカテゴリに相当します。
-     - 例: 購買要求承認ワークフローの開始
      - **ID の形式** - "Workflow_" + ワークフロー名 + ワークフロー インスタンス ID、たとえば、"Workflow_BudgetPlanReview_000002"
+     - **名前の形式** - ワークフロー ラベル + " (" + ワークフロー インスタンス ID ")"、たとえば、"Prepare department budget (000002)"
 - **カテゴリ: 開始されたワークフロー要素**
      - これらのイベントはワークフロー要素が開始されたときに発生します。 ワークフロー インスタンス内のすべての有効なワークフロー要素はこのカテゴリに相当します。 
-     - 例: 購買要求の自動承認の開始
      - **ID の形式** - "Workflow_" + ワークフロー名 + ワークフロー インスタンス ID + "_" + ワークフロー要素名 + "_Started"、たとえば、"Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_Started"
+     - **名前の形式** - ワークフロー ラベル + " (" + ワークフロー インスタンス ID ") - " + ワークフロー要素ラベル、たとえば、"Prepare department budget (000002) - Activate associated budget plan"
 - **カテゴリ: ワークフロー要素**
      - これらのイベントは、完了などの、開始以外のワークフロー要素イベントで発生します。 ワークフロー インスタンス内のすべての有効なワークフロー要素はこのカテゴリに相当します。 
-     - 例: 購買要求の自動承認の完了
      - **ID の形式** - "Workflow_" + ワークフロー名 + ワークフロー インスタンス ID + "_" + ワークフロー要素名、たとえば、"Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild"
+     - **名前の形式** - ワークフロー ラベル + " (" + ワークフロー インスタンス ID ") - " + ワークフロー要素ラベル、たとえば、"Prepare department budget (000002) - Activate associated budget plan"
 - **カテゴリ: ワークフローの外部タスク** 
      - これらのイベントはワークフロー自動化タスク要素が開始されたときに発生します。 ワークフロー インスタンス内のすべての有効なワークフロー自動化タスク要素はこのカテゴリに相当します。 
-     - 例: 購買要求の自動承認の開始
      - **ID の形式** - "Workflow_" + ワークフロー名 + ワークフロー インスタンス ID + "_" + ワークフロー要素名 + "_ExternalTask"、たとえば、"Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_ExternalTask"
+     - **名前の形式** - ワークフロー ラベル + " (" + ワークフロー インスタンス ID ") - " + ワークフロー要素ラベル、たとえば、"Prepare department budget (000002) - Activate associated budget plan"
 - **カテゴリ: ワークフロー作業項目**
      - これらのイベントはユーザーに対してワークフロー作業項目が作成されるときに発生します。 ワークフロー インスタンス内のすべての有効なワークフロータスクおよびワークフロー承認はこのカテゴリに相当します。 
-     - 例: Bob に対して作成された購買要求の手動承認作業項目
      - **ID の形式** - "Workflow_" + ワークフロー名 + ワークフロー インスタンス ID + "_" + ワークフロー要素名 + "_WorkItem"、たとえば、"Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_WorkItem"
+     - **名前の形式** - ワークフロー ラベル + " (" + ワークフロー インスタンス ID ") - " + ワークフロー要素ラベル、たとえば、"Prepare department budget (000002) - Activate associated budget plan"
 
 ## <a name="completion-of-a-work-item-in-power-automate"></a>Power Automate で作業項目を完了する
-ワークフロー ビジネス イベント は承認フローのトリガーに優れたターゲットです。 **ワークフロー作業項目** イベントは、OData アクションの検証と完了と組み合わせて使用することで、Power Automate の作業項目完了を容易にすることができます。
+ワークフロー ビジネス イベント は承認フローのトリガーに優れたターゲットです。 **ワークフロー作業項目** イベントは、 Power Automate の作業項目の完了を容易にする目的で、検証 および OData 完了アクションと組み合わせて使用できます。
 
 承認やタスク作業項目は、次の手順を使用して Power Automate で完了することができます:
-- 適切な **ワークフロー作業項目** イベントを対象にした **ビジネス イベントが発生した場合** のトリガーを使用して、Power Automate をトリガーします。
-- **ワークフロー作業項目** に有効な一連の情報が含まれていることを検証し、**WorkflowWorkItems** エンティティで **検証** メソッドを呼び出して完了できるようにします。 
+- 適切な **ワークフロー作業項目** イベントを対象にした **ビジネス イベントが発生した場合** の トリガーを使用して、Power Automate をトリガーします。
+- **WorkflowWorkItems** エンティティで **検証** メソッドを呼び出すことで、**ワークフロー作業項目** に有効な一連の情報が含まれ、完了の準備が出来ていることを検証します。 
 - 作業項目に完了する準備ができていない場合は、割り当てられたユーザーに通知を送信して、注意が必要な作業項目があることを知らせます。
-- 作業項目を完了する準備ができたら、使用可能な回答オプションをユーザーに送信して、割り当てられたユーザーに回答を要求します。
-- 回答が提供されたら、**WorkflowWorkItems** エンティティの **完了** メソッドを呼び出して、その回答で作業項目を完了します。 
+- 作業項目に完了す準備ができている場合は、使用可能な回答オプションをユーザーに送信して、割り当てられたユーザーに回答を要求します。
+- 回答が提供された後で **WorkflowWorkItems** エンティティの **完了** メソッドを呼び出して、その回答で作業項目を完了します。 
 
 作業項目の外部完了を可能にするには、作業項目のアクション マネージャー クラスは、IValidateWorkflowWorkItemAction インターフェイスを実装する必要があります。 標準の WorkflowWorkItemActionManager クラスはこのインターフェイスを実装しています。 プラットフォーム更新 32 では、IValidateWorkflowWorkItemAction インターフェイスの実装をおこなうために TrvWorkflowWorkItemActionManager クラスが更新されます。 例として、既存の IValidateWorkflowWorkItemAction 実装を使用して、その他の WorkflowWorkItemActionManager クラスについての更新を通知します。
 
-Microsoft Power Automate で作業項目完了を設定する詳細なガイドは [ワークフロー承認ビジネス イベントを消費する](how-to/how-to-flow.md) を参照してください。
+Microsoft Power Automate で作業項目完了を設定する詳細なガイドは [ワークフロー承認ビジネス イベントを消費する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow) を参照してください。
 
 ## <a name="templates-for-work-item-completion-in-power-automate"></a>Power Automate での作業項目完了のテンプレート
 

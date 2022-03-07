@@ -7,29 +7,27 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: edb8687b9dae0afc1bc15a3a5c197e14e7e8cf1e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ea6fc745ffb5892a32196394cb28cb5e646b7639
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069224"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795072"
 ---
 # <a name="example-query-for-candidate-to-hire"></a>採用する採用候補者に対するクエリの例
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 このトピックでは、Dynamics 365 Human Resources における採用候補者エンティティに対するクエリの例を示します。
 
-このトピックでは、*ディープ インサート* を使用して、ひとつの API 操作で新しい候補レコードのすべての詳細を作成する方法について説明します。 ディープ インサートの詳細については、 [関連するエンティティ レコードを一度の操作で作成する](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation)を参照してください。
+このトピックでは、*ディープ インサート* を使用して、ひとつの API 操作で新しい候補レコードのすべての詳細を作成する方法について説明します。 ディープ インサートの詳細については、 [関連するエンティティ レコードを一度の操作で作成する](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation)を参照してください。
 
 **mshr_hcmcandidatetohireentity** エンティティ は、**mshr_dirpersonentity** エンティティとの関係性から一意となります。 **mshr_hcmcandidatetohireentity** のプロパティの多く (**mshr_firstname**、**mshr_lastname**、**mshr_birthdate** など) は **mshr_dirpersonentity** レコードから派生しています。 ディープインサートを使用せずに **mshr_hcmcandidatetohireentity** に新しい候補レコードを投稿する場合、これらのプロパティの値を **mshr_hcmcandidatetohireentity** レコードに直接定義することができます。 関連付けられている **mshr_dirpersonentity** レコードは、プロパティに定義された値で暗黙的に作成されます。 その後、個別の API 呼び出しとして、その他すべての関連エンティティ レコード (スキルや学歴など) を作成できます。
 

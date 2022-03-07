@@ -2,7 +2,7 @@
 title: デバイス、市場、および位置情報の指定
 description: このトピックでは、デバイス、市場、および位置情報の情報を使用して、Microsoft Dynamics 365 Commerce サイト ビルダーの対象者およびターゲットを作成、編集、および管理する方法について説明します。
 author: sushma-rao
-ms.date: 02/03/2022
+ms.date: 07/30/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: b17c394105d4bb878c8375989924d3c3da079c78
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090697"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985140"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>デバイス、市場、および位置情報の指定
 
@@ -96,18 +96,6 @@ Commerce サイト ビルダーで対象者を作成するには、次の手順�
 
 > [!NOTE]
 > 対象者は、Commerce サイト ビルダーのサイト レベルの概念です。 同じ対象者を複数のターゲット間で共有できます。
-
-### <a name="rename-an-audience-in-site-builder"></a>サイト ビルダーでオーディエンスの名前を変更する
-
-Commerce サイト ビルダーで既存のオーディエンスの名前を変更するには、次の手順に従います。
-
-1. 左側のナビゲーション ウィンドウで、**対象者** を選択します。
-1. 名前を変更したいオーディエンス セグメントの名前を選択します。
-1. オーディエンスの編集を開始するには、**編集** を選択します。
-1. オーディエンス プロパティ ウィンドウで、オーディエンスの名前の横のペン記号を選択します。
-1. 必要に応じてオーディエンスの名前を編集します。
-1. 名前の変更を確認する場合は、チェック マークを選択します。
-1. **編集完了** を選択します。
 
 ## <a name="targets"></a>ターゲット
 

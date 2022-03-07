@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 16061
 ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b27b9d9ecb9a3bc32c6b71d788f96468030152a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1e993ecdde65fe2b1e945e9ea516c807931aa32b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782162"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354357"
 ---
 # <a name="dialog-form-pattern"></a>ダイアログのフォーム パターン
 

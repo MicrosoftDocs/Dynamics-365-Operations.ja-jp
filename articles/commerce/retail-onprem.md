@@ -2,25 +2,22 @@
 title: オンプレミス配置で使用できるコマースの機能
 description: このトピックでは、オンプレミス配置で使用できるコマースの機能を一覧表示します。
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30
-ms.openlocfilehash: 5b5082450014fdccb6711a426f443076595c3ebf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8e8e720f752e9086a36e8014a4542f8e30a0ce21
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408871"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022637"
 ---
 # <a name="commerce-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できるコマースの機能
 
@@ -28,7 +25,7 @@ ms.locfileid: "4408871"
 
 このトピックでは、オンプレミス配置で使用できるコマースの機能を一覧表示します。
 
-オンプレミス配置の詳細については、[オンプレミス配置のホーム ページ](../dev-itpro/deployment/on-premises-deployment-landing-page.md) を参照してください。
+オンプレミス配置の詳細については、[オンプレミス配置のホーム ページ](../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) を参照してください。
 
 | コンポーネント            | On-premises ステータス |
 |----------------------|--------------------|
@@ -120,3 +117,6 @@ ms.locfileid: "4408871"
 | 配送のモデル             | 取得可能          |
 | 返品場所               | 取得可能          |
 | 配分済み注文の管理   | 使用不可      |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

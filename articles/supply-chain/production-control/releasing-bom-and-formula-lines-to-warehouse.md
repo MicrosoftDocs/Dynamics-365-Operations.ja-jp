@@ -2,27 +2,24 @@
 title: BOM とフォーミュラ明細行を倉庫にリリース
 description: このトピックでは、BOM 明細行とフォーミュラ明細行の原材料消費を倉庫にリリースするプロセスについて説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432308"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731226"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>BOM とフォーミュラ明細行を倉庫にリリース
 
@@ -64,7 +61,7 @@ BOM とフォーミュラ明細行をリリースするために使用する方�
 
 次の図は、10 と 20 の 2 つのジョブを持つ製造オーダーを示します。これらのジョブは、製造オーダーの組み立ておよび梱包をカバーします。 各ジョブは、多数の材料の消費に設定されます。 この図で、リリース タイム フェンスは、**(LessThanDate())** 条件で指定されている日数に等しい時刻行の下の緑の矢印で示されます。 たとえば **(LessThanDate(2))** は、ジョブが 2 日間のタイム フェンス内でのみリリースされていない数量を検索する必要があります。
 
-![2 つのバッチ ジョブをもつ製造オーダーの例](media/bach-job-setup.PNG)
+![2 つのバッチ ジョブをもつ製造オーダーの例。](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>工程番号ごと、または完成品の量に比例する材料をリリース
 
@@ -81,7 +78,7 @@ BOM とフォーミュラ明細行をリリースするために使用する方�
 
 次の図は、10、20 の 2 つの工程をもつ製造オーダーを示します。 この例では、工程 10 へのリリースを制限する場合、材料 M9203 のみリリースされます。
 
-![工程番号ごとの材料のリリースの例](media/two-operations.PNG)
+![工程番号ごとの材料のリリースの例。](media/two-operations.PNG)
 
 完成品の量に比例して材料をリリースする方法の簡単なデモについては、[製造オーダー リリース プロセスの拡張機能](https://www.youtube.com/watch?v=Rm3ojAz6Zu0) に関する、この短い YouTube ビデオをご覧ください。
 
@@ -98,3 +95,6 @@ BOM とフォーミュラ明細行をリリースするために使用する方�
     使用可能な単位は、完成品の単位順序グループ ID で定義されます。
 
     たとえば完成品は、ポンド単位 (Ibs) とパレット (PL) の間の単位換算で、1 パレット = 100 ポンドとなります。 10,000 ポンドの製造オーダーを作成します。 その完成品のうち、生産予定のパレット番号の原材料をリリースできます。 単位で **PL** を選び、そして **数量** フィールドで対応する数を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

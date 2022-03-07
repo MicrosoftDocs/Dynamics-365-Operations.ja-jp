@@ -2,16 +2,13 @@
 title: オフライン販売時点管理 (POS) の機能
 description: この記事では、Commerce Scale Unit が利用できない場合にチャンネルのデータベースからオフライン データベースに POS デバイスが自動的に切り替わる、Modern POS のオフライン モードについて説明します。 また、この記事ではオフライン モードの一般的な設定情報も含まれ、オフライン データベースとチャンネルのデータベース間で発生するデータ同期についても説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 27041
 ms.assetid: 20b51874-8912-40cf-9296-864df707315a
 ms.search.region: Global
@@ -19,20 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 049fcc7d40043bae6f330fcf2339363e66888fea
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6fd7ca2f90ce07df00ac9169e07d5f66344bc98b0b92d97f7d8161b2815f2c4a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745272"
 ---
 # <a name="offline-point-of-sale-pos-functionality"></a>オフライン販売時点管理 (POS) の機能
 
 [!include [banner](includes/banner.md)]
 
 この記事では、Commerce Scale Unit が利用できない場合にチャンネルのデータベースからオフライン データベースに POS デバイスが自動的に切り替わる、Modern POS のオフライン モードについて説明します。 また、この記事ではオフライン モードの一般的な設定情報も含まれ、オフライン データベースとチャンネルのデータベース間で発生するデータ同期についても説明します。
-
-## <a name="overview"></a>概要
 
 Modern POS では、Commerce Scale Unit が利用できないときはいつでも 販売時点管理 (POS) デバイスがオフライン モードになります。 したがって、接続が失われると、POS はオフライン データベースに自動的に切り替わります。 
 
@@ -42,15 +37,15 @@ Modern POS では、Commerce Scale Unit が利用できないときはいつで�
 
 Modern POS のステータス ヘッダーは現在の接続ステータスを表示し、**接続ステータス** ウィンドウはオフライン データベースと同期する最後の試行のステータスを表示します。
 
-[![接続ステータス](./media/status.png)](./media/status.png)
+[![接続ステータス。](./media/status.png)](./media/status.png)
 
 ### <a name="creating-a-button-to-manually-switch-between-online-and-offline-modes"></a>手動でオンラインとオフライン モードを切り替えるためのボタンを作成
 
 Modern POS にオンラインとオフライン モードを手動で切り替えるボタンを追加できます。 POS 操作 **917 – データベース接続ステータス** のボタンを作成します。 このボタンの名前は、POS が Commerce Scale Unit に接続されている場合は **接続解除** となり、接続解除されている場合は **接続** となります。 このボタンは接続の表示、Commerce Scale Unit との接続解除および接続に使用できます。
 
-[![Retail Modern POS の接続解除ボタン](./media/details-1024x537.png)](./media/details.png)
+[![Retail Modern POS の接続解除ボタン。](./media/details-1024x537.png)](./media/details.png)
 
-## <a name="setup"></a>セットアップ
+## <a name="setup"></a>段取り
 
 POS のデバイス (登録) のオフライン サポートを有効にするには、**登録** ページで、**オフラインのサポート** オプションを **はい** に設定します。 新しいチャンネル データベース エンティティが作成され、店舗のチャンネル データ グループに追加されます。 その後、オフライン データベースのデータ パッケージを生成するためにすべての配送スケジュールを実行します。 次に、Modern POS のオフライン バージョンをインストールします。 インストール プロセスでは、オフライン データベースが作成されます。 さらに、必要な場合は、Microsoft SQL Server 2014 Express をインストールします。 Modern POS への最初のサインイン後にオフライン データの同期が開始されます。
 
@@ -58,4 +53,7 @@ POS のデバイス (登録) のオフライン サポートを有効にする�
 
 コマース スケジューラはオフライン データベースにマスター データを送信するのに使用されます。 既定では、配送スケジュールの実行時に、データの変更がチャンネルのデータベースとオフライン データベースの両方に送信されます。 Modern POS には、使用可能なすべてのデータ パッケージをダウンロードし、オフライン データベースに挿入する async sync ライブラリが含まれます。 トランザクションがオフラインで作成された場合、POS はそれらを Commerce Scale Unit にアップロードし、チャンネル データベースに挿入できるようにします。 オフラインのデータ同期は、Modern POS の実行時にのみ実行できます。
 
-[![オフライン同期](./media/offline-sync-1024x521.png)](./media/offline-sync.png)
+[![オフライン同期。](./media/offline-sync-1024x521.png)](./media/offline-sync.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

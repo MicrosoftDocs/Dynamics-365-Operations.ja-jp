@@ -1,36 +1,31 @@
 ---
 title: コンテナー モジュール
-description: このトピックでは、コンテナー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: このトピックでは、コンテナー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページへの追加方法について説明します。
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 752d0ddc6f666a5d96a2593c8c246a82dc7e1de2fd4bd2356a275222d7abec29
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715443"
 ---
 # <a name="container-module"></a>コンテナー モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、コンテナー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
-
-## <a name="overview"></a>概要
+このトピックでは、コンテナー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページへの追加方法について説明します。
 
 コンテナー モジュールは、その中の他のモジュールをホストするモジュールです。 コンテナー モジュールの主な目的は、それに対して設定されているプロパティを通じて、内部に含まれるモジュールのレイアウトを定義することです。 たとえば、それらのモジュールは 2 列、3 列、4 列、または 6 列のレイアウトで左右に並んで表示できます。 また、コンテナーの幅に限定することも、画面全体に表示することもできます。 ヘッダーは、各コンテナー モジュールに追加することもできます。
 
@@ -47,7 +42,7 @@ ms.locfileid: "4413689"
 
 次の図は、Commerce サイト ビルダーのカルーセル モジュールを含むコンテナー モジュールの例を示しています。 この例では、コンテナー モジュールの **幅** プロパティを **全画面表示** に設定しています。
 
-![コンテナー モジュールの例](./media/ecommerce-container.PNG)
+![コンテナー モジュールの例。](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>コンテナー モジュール プロパティ
 
@@ -142,3 +137,6 @@ ms.locfileid: "4413689"
 [ヘッダー モジュール](author-header-module.md)
 
 [フッター モジュール](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: システム要件と前提条件
 description: このトピックでは、Finance and Operations アプリで二重書き込みを有効にする前に設定する必要があるシステム要件と前提条件について説明します。
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Developer
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d871858c438ae014bb4d12338f7ed5046af4c51
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 3c91c950c215342f5737e3667eac52b154b1dfdc
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744313"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6016970"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
@@ -52,7 +50,7 @@ ms.locfileid: "4744313"
 
 次の図に示すように、環境の設定時に **Dynamics 365 アプリ** を **はい** に設定する必要があります。 または、Dataverse に付属している Dynamics 365 環境で、すでに **Dynamics 365 アプリを有効化する** が **はい** に設定されているモデル駆動型アプリを選択することもできます。
 
-:::image type="content" source="media/add_database.png" alt-text="アプリ切り替えの有効化" lightbox="media/add_database_expanded.png":::
+:::image type="content" source="media/add_database_expanded2.png" alt-text="アプリ切り替えの有効化":::
 
 1. プラットフォーム更新プログラムとアプリのバージョンを検証します。
 
@@ -123,7 +121,7 @@ ms.locfileid: "4744313"
     7. **Dynamics 365 \> 設定 \> セキュリティ** に移動し、**チーム** を選択して、**すべての所有者チーム** にビューを変更します。
     8. **ルートの事業単位の既定のチーム** を選択し、**ロールの管理** を選択して、**チーム ロールの管理** ダイアログ ボックスで事前にコンフィギュレーションされた **セキュリティ ロール** を選択し、二重書き込みを通して統合された各テーブルの **ユーザー** スコープに対して **読み取り** 権限を付与します。 
     
-      セキュリティ ロールの作成方法に関する説明については、[カスタム セキュリティ ロールの作成またはコンフィギュレーション](https://docs.microsoft.com/power-platform/admin/database-security#create-or-configure-a-custom-security-role)を参照してください。
+      セキュリティ ロールの作成方法に関する説明については、[カスタム セキュリティ ロールの作成またはコンフィギュレーション](/power-platform/admin/database-security#create-or-configure-a-custom-security-role)を参照してください。
       
       > [!NOTE]
       > ルートの事業単位の既定チームは、二重書き込みを通して統合されたすべての行の既定の所有者になります。
@@ -166,7 +164,7 @@ ms.locfileid: "4744313"
 
 7. **二重書き込みアプリケーション オーケストレーション ソリューション** マップ ソリューションをインストールします。
 
-    Power Apps の左ウィンドウで、**ソリューション** を選択します。 **AppSource を開く** を選択し、**二重書き込みアプリケーション オーケストレーション ソリューション** という名前のソリューションを検索します。 ソリューションを選択し、プロンプトに従ってインポートします。 インストール後、**ソリューション** の下に新しいソリューションがいくつか表示されます。 詳細については、[ソリューションの概要](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview)を参照してください。 
+    Power Apps の左ウィンドウで、**ソリューション** を選択します。 **AppSource を開く** を選択し、**二重書き込みアプリケーション オーケストレーション ソリューション** という名前のソリューションを検索します。 ソリューションを選択し、プロンプトに従ってインポートします。 インストール後、**ソリューション** の下に新しいソリューションがいくつか表示されます。 詳細については、[ソリューションの概要](/powerapps/maker/common-data-service/solutions-overview)を参照してください。 
  
     二重書き込みコア ソリューションには、テーブル マップのメタデータが含まれていますが、二重書き込みアプリケーション オーケストレーション ソリューションには、次の追加のマスタ データ シナリオが含まれます:
     
@@ -212,3 +210,6 @@ ms.locfileid: "4744313"
 ## <a name="next-steps"></a>次のステップ
 
 [二重書き込みウィザードを使用して環境をリンクする](link-your-environment.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

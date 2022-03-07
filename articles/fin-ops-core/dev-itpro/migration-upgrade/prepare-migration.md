@@ -1,12 +1,10 @@
 ---
 title: Finance and Operations へのコード移行の準備
-description: このトピックでは、Lifecycle Services のコード アップグレード サービスと Visual Studio ツールを使用して、コードとメタデータを Dynamics AX 2012 R3 から Finance and Operations に移行する方法について説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。
+description: このトピックでは、コード アップグレード サービスと Visual Studio ツールを使用して、Dynamics AX 2012 R3 から Finance and Operations に移行する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 400bb81fc5a36409d54dae8b21e142006c8b1886
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5966416869cbc5d4d75fa2272512fe21720a5b4ad48ddff301aee71474fd04c4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716739"
 ---
 # <a name="prepare-to-migrate-code-to-finance-and-operations"></a>Finance and Operations へのコード移行の準備
 
@@ -29,8 +27,7 @@ ms.locfileid: "4681040"
 
 このトピックでは、Lifecycle Services のコード アップグレード サービスと Visual Studio ツールを使用して、コードとメタデータを Dynamics AX 2012 R3 から Finance and Operations に移行する方法について説明します。 これらの手順のほとんどは、Finance and Operations の 2 つのメジャー バージョンの間でのコードの移行にも適用されます。 
 
-<a name="prerequisites"></a>必要条件
--------------
+## <a name="prerequisites"></a>必要条件
 
 リモート デスクトップを使用して Finance and Operations 開発環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 コードをアップグレードする前に、Finance and Operations の開発、カスタマイズ、およびユーザー インターフェイスの概念の幾つかをよく理解しておくことをお勧めします。 次にいくつかの参照を挙げます。
 
@@ -108,7 +105,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 
 これらのルールは、ソリューションの移行中に「オン」に設定する必要があります。 この設定は、AxRuleSet フォルダー内の XML ファイルによって実行されます。 たとえば、C:\\Packages\\ApplicationSuite\\Foundation\\AxRuleSet の下にある、アプリケーション スイート xml ファイル、BPRules.xml を参照してください。 
 
-[![bpupgraderules](./media/bpupgraderules.png)](./media/bpupgraderules.png) 
+[![bpupgraderules.](./media/bpupgraderules.png)](./media/bpupgraderules.png) 
 
 移行を完了するには、すべての移行固有のベスト プラクティス ルールを修正する必要があります。 エラーは警告としてエラー リストに表示されます。 エラー一覧には、コンパイラの警告やベスト プラクティスのエラーが表示されます。 ベスト プラクティスのエラーには接頭語として **BP** のテキストが付けられます。 たとえば、**BPErrorFormControlPatternUnspecified**。
 
@@ -135,7 +132,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 
 フォームは完成しているように見えますが、移行を完了するために必要なコード移行タスクがあります。 
 
-[![i](./media/i1.png)](./media/i1.png)
+[![i.](./media/i1.png)](./media/i1.png)
 
 ### <a name="navigation-migration-tasks"></a>ナビゲーション移行タスク
 
@@ -143,7 +140,7 @@ LCS コード アップグレード サービス構成のコードをアップ�
 2.  **コメント** ドロップダウン リストをクリックして、TO DO: (コード アップグレード) タスクを表示します。
 3.  一覧で、ActionPane TODO を検索します。
 
-[![j](./media/j1.png)](./media/j1.png)
+[![j.](./media/j1.png)](./media/j1.png)
 
 ### <a name="code-upgrade-rule---action-pane"></a>コード アップグレード ルール - アクション ウィンドウ
 
@@ -164,7 +161,7 @@ Finance and Operations では、次の主要なアクションはシステム定
 
 1.  Visual Studio では、次に示す TODO を検索して、TODO をダブルクリックします。
 
-    [![k](./media/k1.png)](./media/k1.png)
+    [![k.](./media/k1.png)](./media/k1.png)
 
 2.  以下に示すように、TODO とコード行を置き換えます。
     -   システム定義の **削除** ボタンの状態は、firstmaster データソースの AllowDelete プロパティによって制御されます。 AllowDelete を false に設定することにより、キーボード ショートカットが使用されている場合に削除タスクは実行されません。
@@ -178,14 +175,14 @@ Finance and Operations では、次の主要なアクションはシステム定
 
 3.  エディターで、DeleteCmdButton を探してフォーム デザインから削除します。 
 
-    [![l](./media/l1.png)](./media/l1.png)
+    [![l.](./media/l1.png)](./media/l1.png)
 
 4.  **Ctrl+S** キーを押してフォームを保存します。
     -   次に、システム編集ボタンと重複する EditCmdButton に焦点を当てて、このボタンに関連付けられた 2 つの "仕事" の処理とこのボタンの削除を行います。
 
 5.  Visual Studio では、次に示す TODO を検索して、TODO をダブルクリックします。
 
-    [![m](./media/m1.png)](./media/m1.png)
+    [![m.](./media/m1.png)](./media/m1.png)
 
 6.  **編集** ボタンの表示はフォームの表示/編集モードで制御されるため、このコードを変更してプロパティを設定する必要があります。 次の図に示すように、TODO とコード行を置き換えます。
 
@@ -206,7 +203,7 @@ Finance and Operations では、次の主要なアクションはシステム定
 
 7.  このボタンのその他の TODO をダブルクリックします。
 
-    [![n](./media/n1.png)](./media/n1.png)
+    [![n.](./media/n1.png)](./media/n1.png)
 
 8.  モデル化された **編集** ボタンでコードを検査します。 このロジックは、フォームの task() メソッドに移動する必要があります。
 
@@ -282,7 +279,7 @@ Finance and Operations では、次の主要なアクションはシステム定
 
 11. エディターで、**EditCmdButton** を探してフォーム デザインから削除します。 
 
-    [![o](./media/o1.png)](./media/o1.png)
+    [![o.](./media/o1.png)](./media/o1.png)
 
 12. **Ctrl+S** キーを押してフォームを保存します。
 13. **Ctrl+F5** キーを押してフォームを表示します。 **確約** タブの **削除** および **編集** ボタンが削除されたことを確認します。
@@ -300,7 +297,7 @@ Finance and Operations では、X++ は完全に中間言語 (IL) ベースで�
 6.  **Ctrl+F5** キーを押してフォームを実行します。
 7.  フォームを実行するときに、次のような例外が発生することに注意してください。
 
-    [![u](./media/u1.png)](./media/u1.png)
+    [![u.](./media/u1.png)](./media/u1.png)
 
 8.  cosDimCheckBoxController クラスを右クリックし、**コードの表示** を選択します。
 9.  cosDimCheckBoxController::getBuildControl() にブレークポイントを設定します。
@@ -309,11 +306,11 @@ Finance and Operations では、X++ は完全に中間言語 (IL) ベースで�
 
 11. buildcontrol をポイントしてタイプを表示し、相違点に注目します。
 
-    [![v](./media/v1.png)](./media/v1.png)
+    [![v.](./media/v1.png)](./media/v1.png)
 
 12. **F10** キーを押して例外をヒットします。
 
-    [![w](./media/w2.png)](./media/w2.png)
+    [![w.](./media/w2.png)](./media/w2.png)
 
 13. デバッグを停止します。
 14. 例外を修正するには、メソッド宣言を FormBuildStringControl から FormBuildCheckBoxControl に変更します。
@@ -325,7 +322,7 @@ Finance and Operations では、X++ は完全に中間言語 (IL) ベースで�
     
 15. プロジェクトをリビルドして、**Ctrl+F5** を押します。 キャスト エラーが解決されたため、フォームが正常に開きます。
 
-    [![a](./media/a-1024x576.png)](./media/a.png)
+    [![a.](./media/a-1024x576.png)](./media/a.png)
 
 ## <a name="migrating-context-menus-and-mouse-double-click-code"></a>コンテキスト メニューとマウス ダブルクリック コードの移行
 コンテキスト メニューとマウスのダブルクリック アクションを処理する Dynamics AX 2012 コードを移行するには、このトピックを参照してください。
@@ -336,3 +333,6 @@ Finance and Operations では、X++ は完全に中間言語 (IL) ベースで�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

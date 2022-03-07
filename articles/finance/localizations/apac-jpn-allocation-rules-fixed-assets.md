@@ -1,27 +1,25 @@
 ---
 title: 日本の固定資産配賦ルール
 description: この記事は、日本の固定資産配賦ルールについてよく寄せられる質問に回答します。
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetAllocationRuleSetup_CN
 audience: Application User
 ms.reviewer: kfend
 ms.custom: 10194
 ms.search.region: Japan
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5161013e614583be11048c78d171369a970d9584
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ffe44f73fb8033c570a309538ab327074c8ba99c
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968362"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592520"
 ---
 # <a name="fixed-asset-allocation-rules-for-japan"></a>日本の固定資産配賦ルール
 
@@ -60,3 +58,6 @@ ms.locfileid: "4968362"
 
 ## <a name="additional-resources"></a>その他のリソース
 - [資産グループへの共有資産とのれんの帳簿価額の配賦](./tasks/allocate-carrying-amount.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

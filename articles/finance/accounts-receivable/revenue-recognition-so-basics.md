@@ -2,26 +2,23 @@
 title: 販売注文の収益認識
 description: このトピックでは、販売注文と請求書の収益を認識するための基本的な機能について説明します。 収益認識は、販売注文と、販売注文から作成された対応する請求書で使用できます。
 author: kweekley
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e2eafc6785aaf9bc7421bc80c90fa4a7f98a2d4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e9c6423a7fb604005d4fb7f1eca05a1ef7d210e5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459379"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817224"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>販売注文の収益認識
 
@@ -98,3 +95,6 @@ ms.locfileid: "4459379"
 予定収益認識スケジュールが削除され、最終収益認識スケジュールに置き換えられます。 収益スケジュールの詳細は販売注文明細行ごとに管理され、契約上の責務が満たされたときに、繰延収益を実際の収益にリリースするために使用されます。
 
 [![最終収益認識スケジュール](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: MICROSOFT プレビュー ソフトウェア ライセンス条件
 description: これらのライセンス条件は、お客様と Microsoft Corporation (またはその関連会社の 1 つ) の間の契約です。
 author: ShellyBakke
-manager: AnnBe
 ms.date: 09/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 661a6ceb7af0cbfaa2b223e6dc923c33c8cf18eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c0f3f7011e64e8bb566b3d450f2b3352d353e3a65581b94b79b685feebd24cd6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743185"
 ---
 # <a name="microsoft-preview-software-license-terms"></a>MICROSOFT プレビュー ソフトウェア ライセンス条件 
 
@@ -125,3 +123,6 @@ Cette limitation concerne:
 Elle s’applique également, même si Microsoft connaissait ou devrait connaître l’éventualité d’un tel dommage. Si votre pays n’autorise pas l’exclusion ou la limitation de responsabilité pour les dommages indirects, accessoires ou de quelque nature que ce soit, il se peut que la limitation ou l’exclusion ci-dessus ne s’appliquera pas à votre égard.
 
 EFFET JURIDIQUE. Le présent contrat décrit certains droits juridiques. Vous pourriez avoir d’autres droits prévus par les lois de votre pays. Le présent contrat ne modifie pas les droits que vous confèrent les lois de votre pays si celles-ci ne le permettent pas.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

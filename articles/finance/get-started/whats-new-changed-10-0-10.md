@@ -2,27 +2,24 @@
 title: " Dynamics 365 Finance 10.0.10 (2020 年 5 月) の新機能および変更された機能"
 description: このトピックでは、Dynamics 365 Finance 10.0.10 の新機能または変更された機能について説明します。
 author: roschlom
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c698e2ea6869c6384a46f3fc6d76cd2a0fe16b70
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f876e33ec03964c5809ae10b281a972ca345e6c3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408666"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836901"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance-10010-may-2020"></a> Dynamics 365 Finance 10.0.10 (2020 年 5 月) の新機能および変更された機能
 
@@ -90,3 +87,6 @@ Dynamics 365 Finance and Operations アプリの規制の更新については�
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

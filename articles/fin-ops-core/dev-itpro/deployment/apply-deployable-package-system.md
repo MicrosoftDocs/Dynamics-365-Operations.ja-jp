@@ -2,11 +2,9 @@
 title: クラウド環境へ更新プログラムを適用
 description: このトピックでは、Lifecycle Services (LCS) を使用して、バイナリ更新プログラムまたはアプリケーション (AOT) 展開可能なパッケージをクラウド環境に適用する方法について説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 11/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 1c35dea8a3740ec12d2bdc4dc95b218c014a37ad
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3076052a07713605500b832331137fad79627306
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680548"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941043"
 ---
 # <a name="apply-updates-to-cloud-environments"></a>クラウド環境への更新プログラムの適用
 
@@ -39,7 +37,7 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 
 他の環境 (以下の一覧) については、リモート デスクトップ プロトコル (RDP) を使用して環境に接続し、コマンドラインからインストールする必要があります。 手動のパッケージ配置の詳細については、[コマンド ラインからの配置可能パッケージのインストール](install-deployable-package.md) を参照してください。
 
-- ローカルの開発環境 (バーチャル ハード ディスク [VHD] からダウンロード可能)
+- ローカルの開発環境 (仮想ハード ディスク [VHD] からダウンロード可能)
 - Microsoft Azure (パートナーおよび試用プロジェクト) でのマルチボックス開発/テスト環境
 
 ## <a name="key-concepts"></a>重要な概念
@@ -114,7 +112,7 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 
 アプリケーション バージョン 8.1.2.x 以降でレベル 2 サンドボックスまたは運用環境を更新し、Cloud Scale Unit を初期化した場合は、コマース チャネル コンポーネントも更新する必要があります。 詳細については、[Retail Cloud Scale Unit の更新](Update-retail-channel.md) を参照してください。
 
-コンポーネント (Modern POS など) を使用している場合、環境内で更新プログラムと拡張機能を適用した後に、店舗内コンポーネントも更新する必要があります。 詳細については、[Modern POS (MPOS) の構成、インストール、有効化](../../../retail/retail-modern-pos-device-activation.md) を参照してください。
+コンポーネント (Modern POS など) を使用している場合、環境内で更新プログラムと拡張機能を適用した後に、店舗内コンポーネントも更新する必要があります。 詳細については、[Modern POS (MPOS) の構成、インストール、有効化](../../../commerce/retail-modern-pos-device-activation.md) を参照してください。
 
 ## <a name="packages-runbooks-and-the-axupdateinstaller-in-depth"></a>パッケージ、Runbook、および AXUpdateInstaller の詳細
 
@@ -133,3 +131,6 @@ Lifecycle Services を使用して配置されるすべての環境がサポー�
 ## <a name="additional-resources"></a>その他のリソース
 
 [配置可能なパッケージのコマンドラインからのインストール](install-deployable-package.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: アクション コントロール
 description: アクションは、エンタープライズ リソース プランニング (ERP) システムに不可欠なコンポーネントであり、マウスのクリック、キーボード、タッチによってトリガーされます。
 author: jasongre
-manager: AnnBe
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf4194b1b544c34617841e5f7627ac2dad96515b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 40a9f903eeb8054e22188ae6df4b2815335c1f24
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682469"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189228"
 ---
 # <a name="action-controls"></a>アクション コントロール
 
@@ -29,8 +27,7 @@ ms.locfileid: "4682469"
 
 アクションは、エンタープライズ リソース プランニング (ERP) システムに不可欠なコンポーネントであり、マウスのクリック、キーボード、タッチによってトリガーされます。
 
-<a name="introduction"></a>はじめに
-------------
+## <a name="introduction"></a>はじめに
 
 アクションは、エンタープライズ リソース プランニング (ERP) システムの不可欠なコンポーネントです。 アクションは、さまざまなメカニズムからアクセスすることができます。
 
@@ -166,3 +163,6 @@ ms.locfileid: "4682469"
 ## <a name="action-search"></a>アクション検索
 Dynamics AX 2012 には、ユーザーが Alt キーを押してから一連の文字を押すことで、アクション ウィンドウ内の任意のコマンドを実行できるようにするキー ヒントの機能が含まれていました。 アクション検索機能は、以前のキー ヒント機能に代わるものとして実装されています。 アクション検索は、フォーム上部の標準アクション ウィンドウにある検索フィールドからアクセスできます。 現在、アクション ウィンドウには虫眼鏡アイコンが表示されています (ナビゲーション バーのナビゲーション検索機能とは異なります)。  アクション検索フィールドで、フィールドで実行するアクションの名前の冒頭 (通常は、2 ～ 4 文字のみ必要) を入力できます。 この検索メカニズムは、表示されたアクション ペイン内のすべてのボタンを、検索文字列と一致するフォームに検出します。 結果リスト内でボタンをクリックを使用して、コマンドを実行することができます。 生産性については、フォーカスは、ボタンがトリガーされた後にフォーム内の最後の位置を返します。 Ctrl+' または Alt+Q を押してアクションの検索を開始することもできます。 フォームの最後の位置にフォーカスを返すには、キーボード ショートカットを再度押します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

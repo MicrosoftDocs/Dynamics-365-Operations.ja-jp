@@ -2,7 +2,7 @@
 title: 拡張機能を使用した税統合のデータ フィールドの追加
 description: このトピックでは、X++ 拡張機能を使用して税統合のデータ フィールドを追加する方法について説明します。
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: cdac52ed7f11f796b9559e5454456fb139c6ba00
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323523"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346401"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>拡張機能を使用した税統合のデータ フィールドの追加
 
@@ -353,73 +353,11 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 }
 ```
 
-このコードでは `_destination` が転記要求の生成に使用されるラッパー オブジェクトであり、`_source` が `TaxIntegrationLineObject` オブジェクトになります。
+このコードでは `_destination` が転記要求の生成に使用されるラッパー オブジェクトであり、`_source` が `TaxIntegrationLineObject` オブジェクトになります。 
 
 > [!NOTE]
-> 要求フォームで **private const str** と使用されるキーは次のように定義します 。 文字列は、トピック[税コンフィギュレーションへのデータ フィールドの追加](tax-service-add-data-fields-tax-configurations.md)で追加したメジャー名と同じである必要があります。
-> **SetField** メソッドを使用して、**copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** メソッドのフィールドを設定します。 2 番目のパラメータのデータ型は、**文字列** である必要があります。 データ型が **文字列** でない場合、変換します。
-> X++ **列挙型** が拡張 されている場合は、値、ラベル、および名前の違いを確認してください。
-> 
->   - 列挙値は整数です。
->   - 列挙のラベルは、優先する言語で異なる場合があります。 列挙型タイプを文字列に変換するのに **enum2Str** は使用しないでください。
->   - 列挙型の名前は固定なので推奨されています。 **enum2Symbol** は、列挙型を名前に変換する場合に使用できます。 税コンフィギュレーションに追加する変更要素の値は、列挙名と完全に同じにしてください。
-
-## <a name="model-dependency"></a>モデルの依存関係
-
-プロジェクトを正常に構築するには、次の参照モデルをモデルの依存関係に追加します。
-
-- ApplicationPlatform
-- ApplicationSuite
-- 税エンジン
-- 分析コード (財務分析コードが使用されている場合)
-- コード内で参照されるその他の必要なモデル
-
-## <a name="validation"></a>検証
-
-前の手順を完了したら、プロジェクトをビルドして変更を検証できます。
-
-1. 財務で、**買掛金管理** に移動し、**&debug=vs%2CconfirmExit&** を URL に追加します。 たとえば、https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&。 最後の **&** は必須です。
-2. **発注書** ページを開いて、**新規** を選択して発注書を作成します。
-3. カスタマイズされたフィールドの値を設定し、**売上税** を選択します。 接頭語が付けられているトラブルシューティング ファイルである **TaxServiceTroubleshootingLog** は自動的にダウンロードされます。 このファイルには、税務計算サービスに転記されたトランザクション情報が含まれます。 
-4. カスタマイズされた追加フィールドが **税計算入力 JSON** セクションに存在し、値が正しいことを確認します。 値の変更が修正しない場合は、このドキュメントの手順をダブルクリックします。
-
-ファイルの例:
-
-```
-===Tax service calculation input JSON:===
-{
-  "TaxableDocument": {
-    "Header": [
-      {
-        "Lines": [
-          {
-            "Line Type": "Normal",
-            "Item Code": "",
-            "Item Type": "Item",
-            "Quantity": 0.0,
-            "Amount": 1000.0,
-            "Currency": "EUR",
-            "Transaction Date": "2022-1-26T00:00:00",
-            ...
-            /// The new fields added at line level
-            "Cost Center": "003",
-            "Project": "Proj-123"
-          }
-        ],
-        "Amount include tax": true,
-        "Business Process": "Journal",
-        "Currency": "",
-        "Vendor Account": "DE-001",
-        "Vendor Invoice Account": "DE-001",
-        ...
-        // The new fields added at header level, no new fields in this example
-        ...
-      }
-    ]
-  },
-}
-...
-```
+> * 要求フォームで `private const str` と使用されるキーは次のように定義します 。
+> * `SetField` メソッドを使って、`copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` メソッドのフィールドを設定します。 2 番目のパラメータのデータ型は、`string` である必要があります。 データ型が `string` でない場合、データ型を `string` に変換します。
 
 ## <a name="appendix"></a>付録
 

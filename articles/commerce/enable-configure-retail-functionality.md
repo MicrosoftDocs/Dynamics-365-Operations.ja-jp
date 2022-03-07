@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 49621
 ms.assetid: 4dc762eb-190e-4485-8f55-b0cafc81bc37
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24d4d49c51738203bb89a9844d57f644b8afd4b7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a12bd7a178d8d40db8c919410a00fbf021625f50
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413663"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238753"
 ---
 # <a name="initialize-seed-data-in-new-commerce-environments"></a>新しい Commerce 環境におけるシード データの初期化
 
@@ -69,3 +68,6 @@ Commerce ソリューションが Microsoft Dynamics Lifecycle Services (LCS) �
 - Commerce チャネル
 - レジスターとデバイス
 - 品揃え
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

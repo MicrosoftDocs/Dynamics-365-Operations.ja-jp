@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: ilebedev
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 94d569684a0bfa2398e98147b9b85531954f8d56748894034a048fa627230ef0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 826496c2de956ff949dd79ab8aa643053719bf75
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775510"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026683"
 ---
 # <a name="planned-purchase-order-is-created-when-a-purchase-exists-within-negative-days"></a>購買がマイナス日以内に存在する場合に計画発注書が作成される
 

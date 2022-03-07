@@ -2,11 +2,9 @@
 title: Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 の新機能または変更された機能について説明します。 このバージョンは 2017 年 11 月にリリースされました。
 author: tonyafehr
-manager: AnnBe
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 7c3e65d935882bbb8e244439a20a4aa2efbef46a
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 8bb0a2a8af334e959ea28491e4c802aa35f63401a278d9ad28d8c5e40063f1bf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797113"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715186"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-enterprise-edition-platform-update-12-november-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition プラットフォーム更新プログラム 12 (2017 年 11 月) の新機能および変更された機能
 
@@ -85,3 +83,6 @@ BYOD とも呼ばれる「自分のデータベースの持ち込み」機能に
 ## <a name="table-extension--previewpartref-property"></a>テーブル拡張 - PreviewPartRef プロパティ
 
 このリリースには、テーブル拡張を介して **PreviewPartRef** プロパティの値を変更する機能が含まれています。 この機能を使用すると、TMSRoute のプレビューの強化など、既存へのプレビューを強化できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

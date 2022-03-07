@@ -1,12 +1,10 @@
 ---
 title: スケジュール済み作業指示書の最大能力負荷の計算
 description: このトピックでは、資産管理でスケジュール済み作業指示書の最大能力負荷を計算する方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7b7e4a20ed56b1eac29d16d527693d6e455cdc37
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 09e0fc17a288a278b7b1feaba8c7b73425aa2d52
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021657"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808163"
 ---
 # <a name="calculate-capacity-load-on-scheduled-work-orders"></a>スケジュール済み作業指示書の最大能力負荷の計算
 
@@ -57,3 +55,6 @@ ms.locfileid: "5021657"
 
 スケジュール済み作業指示書でなく、メンテナンス スケジュール明細行で最大能力負荷を計算する方法についての詳細は、[最大能力負荷の計算](../capacity-planning/calculate-capacity-load.md) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

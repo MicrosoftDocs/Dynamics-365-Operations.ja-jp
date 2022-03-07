@@ -2,36 +2,30 @@
 title: 倉庫の設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce で新しいチャネルと共に使用する倉庫の設定方法について説明します。
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1fce2570e1b0cc334fc0e92e5e83c53a4566b4a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413745"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345987"
 ---
 # <a name="warehouse-set-up"></a>倉庫の設定
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce で新しいチャネルと共に使用する倉庫の設定方法について説明します。
-
-## <a name="overview"></a>概要
 
 各 Commerce チャネルには、関連付けられるコンフィギュレーション済みの倉庫が必要です。 次の手順では、Commerce チャネルの倉庫を設定するために最低限必要なコンフィギュレーションを提供します。 倉庫の設定に関する詳細については、[倉庫管理の概要](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)を参照してください。
 
@@ -51,7 +45,7 @@ ms.locfileid: "4413745"
 
 次の図は、倉庫サイトの例を示しています。
 
-![倉庫サイトの例](media/warehouse-site.png)
+![倉庫サイトの例。](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>倉庫の設定
 
@@ -104,7 +98,7 @@ ms.locfileid: "4413745"
     
 次の図は、サンフランシスコの倉庫在庫場所の設定を示しています。
 
-![在庫場所の設定例](media/warehouse-inventory-locations.png)
+![在庫場所の設定例。](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>倉庫の設定の完了
 
@@ -127,7 +121,7 @@ ms.locfileid: "4413745"
 
 次の図は、コンフィギュレーション済倉庫の詳細を示しています。
 
-![コンフィギュレーション済倉庫の例](media/warehouse-sample.png)
+![コンフィギュレーション済倉庫の例。](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -147,3 +141,6 @@ ms.locfileid: "4413745"
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

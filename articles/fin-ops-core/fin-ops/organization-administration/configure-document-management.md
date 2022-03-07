@@ -1,30 +1,27 @@
 ---
 title: ドキュメント管理のコンフィギュレーション
 description: このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。
-author: ChrisGarty
-manager: AnnBe
-ms.date: 11/17/2020
+author: jasongre
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c0cdac7ede45b453abbd8b2b2bc82905eca7763a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 2ffd926749d7b4e628e26dd03697a5090dfc1e8c389503e6ae146571963c3550
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692906"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768379"
 ---
 # <a name="configure-document-management"></a>ドキュメント管理のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、添付ファイルおよびレコードのメモを格納するように、ドキュメント管理 (ドキュメント処理) を構成する方法について説明します。 これには、この機能に関連する概念および機能に関する情報が含まれています。
 
@@ -53,7 +50,10 @@ ms.locfileid: "4692906"
 
 ## <a name="configure-sharepoint-storage"></a>SharePoint 記憶域のコンフィギュレーション
 
-Microsoft SharePoint Online は、ネイティブでサポートされる保存場所の 1 つです。 現在、SharePoint Online だけがサポートされています。 オンプレミス SharePoint (ローカル SharePoint サーバー) のサポートは将来追加される可能性があります。
+Microsoft SharePoint Online は、ネイティブでサポートされる保存場所の 1 つです。 現在、SharePoint Online だけがサポートされています。 オンプレミス SharePoint (ローカル SharePoint サーバー) のサポートは将来追加される可能性があります。 
+
+> [!IMPORTANT]
+> SharePoint ストレージは、Microsoft が管理する環境でのみ使用可能です。
 
 SharePoint ストレージを使用するには、ドキュメント タイプの **場所** フィールドを **SharePoint** に設定します。 その後、**SharePoint アドレス** フィールドに、有効な SharePoint アドレスを入力します。
 
@@ -73,7 +73,8 @@ SharePoint 通信は、次の条件が満たされた場合にのみ、現在の
 
 - Microsoft 365 ライセンスが、ユーザーのアカウントに関連付けられています。
 - ユーザーは、外部ユーザーではなくテナントの一般的なユーザーです (別のテナントのユーザーなど)。
-- テナント用の SharePoint サイト (たとえば、Contoso.SharePoint.com など) が存在します。
+- テナント用の SharePoint サイト (たとえば、 Contoso.SharePoint.com など) が存在します。
+- SharePoint サイトでは、**このサイトが検索結果として表示されるのを許可** するように構成されています。
 - ユーザーは、ドキュメントが格納されているフォルダにアクセスできます。
 
 SharePoint に保存されているドキュメントが開かず、プレビューに表示されない場合は、次の手順に従って問題をトラブルシューティングします: 
@@ -98,11 +99,16 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 ## <a name="configure-document-preview"></a>ドキュメント プレビューのコンフィギュレーション
 
-添付ファイルのプレビューには、Microsoft Office Online Server で提供される Web アプリ オープン プラットフォーム インターフェイス (WOPI) を使用します。 **ドキュメント管理パラメーター** ページの **全般** タブの **Office Web Apps サーバー** フィールドで、添付ファイルのプレビューに使用する Office Online サーバー インスタンスを指定します。 既定値は [`https://onenote.officeapps.live.com`] です。 この値は、クラウド ベースの WOPI サーバーを指しています。
+添付ファイルのプレビューには、Microsoft Office Online Server で提供される Web アプリ オープン プラットフォーム インターフェイス (WOPI) を使用します。 **ドキュメント管理パラメーター** ページの **全般** タブの **Office Web Apps サーバー** フィールドで、添付ファイルのプレビューに使用する Office Online サーバー インスタンスを指定します。 既定値は、クラウドベースの WOPI サーバーをポイントする `https://onenote.officeapps.live.com` です。 
+
+> [!NOTE]
+> 次の場合は、指定通りの **Office Web Apps サーバー** フィールドを調整する必要があります。 
+> -  中国の環境では、https://onenote.partner.officewebapps.cn を使用します。 
+> -  Government Commmunity Cloud (GCC) の環境では、https://gb4-onenote.officeapps.live.com を使用します。
 
 ### <a name="for-a-microsoft-dynamics-365-finance--operations-on-premises-environment"></a>Microsoft Dynamics 365 Finance + Operations (オンプレミス) 環境の場合
 
-財務 + 運営の規定のクラウドベース WOPI サーバーが、プレビューを提供する添付ファイルを読み込みできません。 プレビューが必要な場合は、[オンプレミス Office Online サーバー インスタンスをインストールし](https://technet.microsoft.com/library/jj219455.aspx)、それを環境内で構成する必要あります。 **Office Web アプリケーション サーバー** フィールドを、インストールされている Office Online Server インスタンスのホスト名に設定し、**保存** をクリックします。
+財務 + 運営の規定のクラウドベース WOPI サーバーが、プレビューを提供する添付ファイルを読み込みできません。 プレビューが必要な場合は、[オンプレミス Office Online サーバー インスタンスをインストールし](/officeonlineserver/deploy-office-online-server)、それを環境内で構成する必要あります。 **Office Web アプリケーション サーバー** フィールドを、インストールされている Office Online Server インスタンスのホスト名に設定し、**保存** をクリックします。
 
 プレビューが必要な場合は、**Office Web アプリケーション サーバー** フィールドを `https://localhost` に設定します。 プレビューは、その後は、エラー メッセージではなく、「プレビューを利用できません」というメッセージを表示します。
 
@@ -115,7 +121,7 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 これらのオプションが使用されることはほとんどありませんが、考慮すべきその他のコンフィギュレーション オプションを次に示します。
 
 - **ドキュメント管理パラメーター** ページの、**一般** タブで、**ドキュメント テーブルの使用** オプションを使用して、**アクティブ ドキュメント テーブル** 許可リストを有効にすることができます。 このオプションを **はい** に設定すると、他のすべてのテーブルの添付ファイルが無効になります。 したがって、必要なときにのみこのオプションをオンにしてください。
-- **ドキュメント管理パラメーター** ページの、**全般** タブで、**最大ファイル サイズ(単位: メガバイト)** フィールドを使用して、添付ファイルの最大ファイル サイズを設定できます。 ユーザーがファイルを提供する機能は、構成ファイルで環境に対して設定されているファイル サイズ制限でも制限されることに注意してください。 これらの設定ファイルは、クライアント ページから変更することはできません。
+- **ドキュメント管理パラメーター** ページの、**全般** タブで、**最大ファイル サイズ(単位: メガバイト)** フィールドを使用して、添付ファイルの最大ファイル サイズを設定できます。 SharePoint がドキュメント タイプとして使用される場合、ユーザーは最大ファイル サイズが 262 メガバイトのドキュメントのみをアップロードできます。 
 - **オプション** ページ (**設定** \> **ユーザー オプション**) では、**基本設定** タブで、**ドキュメント処理の有効化** オプションを使用して、ドキュメント処理を無効にします (ドキュメント管理)。
 
 ## <a name="accessing-document-management-attachments"></a>ドキュメント管理添付ファイルへのアクセス 
@@ -124,7 +130,18 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 **添付** ボタンには、現在選択されているレコードの添付ファイルの数も表示されます。 したがって、現在のレコードの添付ファイルが存在するかどうかを確認するには、**添付ファイル** ページを開いておく必要はありません。 このボタンでは、0 ～ 9 件の添付ファイルの正確なカウントが表示されます。 9 つ以上の添付ファイルがある場合、このボタンには、**9+** がカウントとして表示されます。 このようにして、カウントが大きくなると生じる可能性があるパフォーマンスへの影響と視覚的なノイズが減少します。
 
-バージョン 10.0.12 では、**関連するドキュメントの添付ファイルを表示** 機能により、ドキュメント添付ファイルのエクスペリエンスが次の 2 つの方法で変更されます。 まず、この機能を有効にすると、1 つのデータ ソースに関連する添付ファイルだけが **添付ファイル** ページに表示されなくなります。 代わりに、有効なレコードに関連付けられている、ページ上のすべてのデータ ソースの添付ファイルを表示します。 **添付** ボタンの添付ファイルの数についても、この変更が反映されます。 次に、ユーザーは **添付ファイル** ページの関連するデータ ソース間で、添付ファイルを移動したりコピーしたりできます。  
+### <a name="showing-related-document-attachments"></a>関連ドキュメントの添付ファイルの表示
+バージョン 10.0.12 では、**関連するドキュメントの添付ファイルを表示** 機能により、ドキュメント添付ファイルのエクスペリエンスが次の方法で変更されます。 
+
+-  この機能を有効にする場合、1 つのデータ ソースに関連する添付ファイルだけが **添付ファイル** ページに表示されなくなります。 代わりに、ユーザーは有効なレコードに関連付けられている、ページ上の他のデータ ソースから添付ファイルを表示してアクセスできます。 これを生じさせるため、データ ソースが次の条件を実行する必要があります。 
+    -  内部結合または外部結合を使用して、親データソースに直接関連付けられます。
+    -  基数が 1:1 または 0:1 のアクティブ、遅延、またはパッシブ結合を使用して、親データソースに直接関連付けられます。
+
+    この基準では、ヘッダー レコードでの添付ファイルの表示時に、子コレクション (明細行など) からの添付ファイルの表示が除外されます。  
+
+    **添付** ボタンの添付ファイルの数についても、この変更が反映されます。 
+
+-  ユーザーは **添付ファイル** ページの関連するデータ ソース間で、添付ファイルを移動したりコピーしたりできます。
 
 ## <a name="document-attachment-history"></a>ドキュメントの添付ファイルの履歴
 
@@ -219,6 +236,21 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
     }
 ```
 
+## <a name="developer-specifying-valid-content-types-when-attaching-documents-programmatically"></a>[開発者] ドキュメントをプログラムで関連付ける際の有効なコンテンツのタイプを指定
+
+`DocumentManagement` クラスからの次の API を使用すると、開発者は関連付けるファイルのファイル コンテンツ タイプ (MIME タイプ) を指定できます。 
+-  attachFileToCommon()
+-  attachFile()
+-  attachFileToDocuRef()
+
+このファイル コンテンツ タイプが正しく指定されていない場合、関連付けられているドキュメントが予期した動作をしない可能性があります。 このため、これらの API を使用する場合は、次のいずれかのアクション コースを考慮する必要があります。  
+
+-  先行する API のいづれかで、`_fileContentType` パラメーターの **null** を渡します。 これにより、ファイル名から正しいコンテンツ タイプを推定できます。 
+-  `_fileContentType` パラメータを含めない次のいずれかの方法で切り替えます。 これにより、誤ったファイル コンテンツ タイプを受け渡す可能性が回避されます。
+    -  attachFileToCommon() を置き換える **attachFileForRecord()**
+    -  attachFile() を置き換える **attachFileForReference()**
+    -  attachFileToDocuRef() を置き換える **attachFileForDocuRefRecord()**
+
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="what-is-the-difference-between-document-handling-and-document-management"></a>ドキュメント処理とドキュメント管理の違いは何ですか。
@@ -241,9 +273,9 @@ SharePoint に保存されているドキュメントが開かず、プレビュ
 
 はい。 SharePoint 記憶域はネイティブでサポートされ、ドキュメント タイプの保管場所として選択できます。 さらに、任意の URL アドレス指定可能なファイルを **URL** ドキュメント タイプ経由で添付できます。
 
-### <a name="how-does-the-default-storage-location-for-document-management-change-in-finance--operations-environments"></a>ドキュメント管理の規定の保存スペース場所は、財務 + 運営環境ではどのように変わりますか？
+### <a name="what-is-the-default-storage-location-for-attachments-in-finance--operations-environments"></a>Finance + Operations 環境での添付ファイルの既定の保管場所はどこですか?
 
-Finance + Operations 環境の場合、添付ファイルの Azure Blob ストレージ プロバイダーはファイル フォルダー ストレージ プロバイダーに置き換えられ、添付ファイルはクラウドに格納される代わりにオンプレミスに保存されます。 したがって、添付ファイルの既定の保管場所はファイル フォルダとなります。
+既定では、添付ファイルは製品クラウド オファリングの一部として、自動的に Azure Blob 記憶域に保存されます。
 
 ### <a name="if-i-accidentally-delete-an-attachment-stored-in-azure-blob-storage-can-it-be-restored"></a>誤って Azure Blob Storage に格納されている添付ファイルを削除した場合、復元できますか。
 
@@ -284,3 +316,6 @@ Azure Blob Storage に格納されている添付ファイルが誤って削除�
 ### <a name="how-does-the-document-preview-work-for-attachments-stored-in-sharepoint"></a>SharePoint に保存された添付ファイルにおけるドキュメント プレビューのしくみ。
 
 ファイルは、WOPI サービスによって現在のユーザーのアクセス許可を使用して SharePoint から取得されます。 これらのファイルは、ドキュメント プレビューを表示するために HTML で表示されます。 つまり、現在のユーザーは、ファイルをプレビューしたり開いたりするためにファイルにアクセスできる必要があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

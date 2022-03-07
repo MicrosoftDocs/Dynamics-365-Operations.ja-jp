@@ -1,27 +1,24 @@
 ---
 title: 税エンジンの統合
 description: このトピックでは、税エンジンの統合について説明します。
-author: yijialuan
-manager: AnnBe
+author: kailiang
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: kfend
 ms.search.region: India
-ms.author: riluan
+ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6d23e00c3859fba6c9eb65bc443cf14ffa3c9d5a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 324bac132e0fb8880793cb150c6f3732346ad195
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408661"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601479"
 ---
 # <a name="tax-engine-integration"></a>税エンジンの統合
 
@@ -41,7 +38,7 @@ ms.locfileid: "4408661"
     - アプリケーションの統合
     - 会計の統合
 
-![GTE 統合モデル](./media/gte-3-models.PNG)
+![GTE 統合モデル。](./media/gte-3-models.PNG)
 
 ###  <a name="tax-engine-interfaces-with-the-tax-engine-service-model"></a>税エンジン サービス モデルを使用した税エンジン インターフェース
 
@@ -51,7 +48,7 @@ ITaxEngine インターフェースとその実装には、税エンジンの基
 
 ITaxDocument インターフェイスと実装のセットにより、税エンジンが計算して返す税務書類から情報を読み取ることができます。 このセットには、ITaxDocument、ITaxDocumentLine、ITaxDocumentField、ITaxDocumentComponentLine、およびITaxDocumentMeasure が含まれます。
 
-![GTE インターフェイス](./media/gte-itaxdocument_interfaces.jpg)
+![GTE インターフェイス。](./media/gte-itaxdocument_interfaces.jpg)
 
 これらのインタフェースは、ITaxDocumentLine から指定されたフィールド値 (**ITaxDocumentField**) および ITaxDocumentComponentLine から予測される数値 (**ITaxDocumentMeasure**) を取得するためのメソッドも提供します。
 
@@ -178,13 +175,13 @@ Finance からのトランザクション情報は、税エンジンに送信す
 
 課税対象文書は、一連のデータ プロバイダーを使用して、トランザクションの情報をカプセル化します。 トランザクションの情報は、TaxableDocument オブジェクトによってラップされます。 このオブジェクトの TaxableDocumentDescriptor オブジェクトは、トランザクションとは何かを説明し、税モデル属性をトランザクション データにバインドする一連のデータ プロバイダーをリストする必要があります。
 
-![課税対象文書](media/gte-taxable-doc.png)
+![課税対象文書。](media/gte-taxable-doc.png)
 
 **TaxableDocumentDescriptor** は、一連の TaxableDocumentTypeDefinition インターフェイスを実装し、トランザクションとは何かを説明するクラスです。 技術的には、TaxableDocumentDescriptors は Finance のテーブル ベースですが、TaxableDocumentTypeDefinitions はよりビジネス主導型であり、主に税の設定条件に使用されます。
 
 次の例では、TaxableDocumentDescriptorPurchaseOrderParm は、同じ PurchParmTable テーブルを共有する 3 つのインターフェースを実装します。
 
-![共有テーブルの例](media/gte-example-shared-table.png)
+![共有テーブルの例。](media/gte-example-shared-table.png)
 
 追加の属性が税コンフィギュレーションに追加され、それらがルックアップ、条件、式、またはその他のコンフィギュレーションに使用される場合は、属性をトランザクション データとバインドする必要があります。 したがって、トランザクションに対応するデータ プロバイダー クラスを変更して、このようなデータ バインディングが行われるようにする必要があります。
 
@@ -225,7 +222,7 @@ Finance トランザクションの会計には、元伝票会計と非元伝票
 
 次の図は、TaxTrans および伝票の作成方法を示します。
 
-![TaxTrans および伝票の作成](media/gte-create-taxtrans-voucher.png)
+![TaxTrans および伝票を作成します。](media/gte-create-taxtrans-voucher.png)
 
 > [!NOTE]
 > **taxTrans** フィールドに税務書類の追加フィールドを入力する必要がある場合は、 **TaxAcctTaxTransTaxDocAttrMapping** クラス、**TaxAcctTxTransTaxDocMeasureMapping** クラス、またはこれらのクラスのいずれかの拡張クラスをデータ バインディングに適切な方法で更新する必要があります。
@@ -342,25 +339,25 @@ AccJourRuleVendPaymReqTaxMeasure</td>
 
 **TaxableDocumentTypeDefintionPurchaseInvoice** および **TaxableDocumentDescriptorPurchaseInvoice** は、税エンジンの課税対象文書として仕入請求書を定義するクラスです。
 
-![課税対象文書クラス](media/gte-classes-taxable-document.png)
+![課税対象文書クラス。](media/gte-classes-taxable-document.png)
 
 TaxableDocumentTypeDefinitionPurchaseInvoice は、課税対象文書として仕入請求書を定義するインターフェイスです。
 
-![仕入請求書の課税対象文書](media/gte-purch-invoice-taxable-doc.png)
+![仕入請求書の課税対象文書。](media/gte-purch-invoice-taxable-doc.png)
 
 **TaxableDocumentDescriptorPurchaseInvoice.getDataProvider()** は、仕入請求書に使用されるデータ プロバイダー クラスを指定します。
 
-![仕入請求書のデータ プロバイダー](media/gte-data-provider-class-purch.png)
+![仕入請求書のデータ プロバイダー。](media/gte-data-provider-class-purch.png)
 
 ### <a name="define-data-providers"></a>データ プロバイダーの定義
 
 次の図は、税関連の操作でトランザクション データを税エンジンに送信するために使用されるデータ プロバイダーを示しています。
 
-![GTE のデータ プロバイダー](media/gte-data-providers.png)
+![GTE のデータ プロバイダー。](media/gte-data-providers.png)
 
 **TaxableDocPurchaseInvoiceDataProvider.buildQuery()** は、VendInvoiceInfoTable や VendInvoiceInfoLine など、すべての関連トランザクションに対するクエリを提供します。 また、行のデータ プロバイダーで各データ ソースを登録します。 たとえば、VendInvoiceInfoTable データ ソースは、TableDocVendInvoiceInfoTableRowDP で登録されます。
 
-![VendInvoiceInfoTable データ ソース](media/gte-example-vend-invoice.png)
+![VendInvoiceInfoTable データ ソース。](media/gte-example-vend-invoice.png)
 
 TaxableDocVendInvoiceInfoTableRowDP は **TaxableDocPurchTableRowDataProvider** クラスを拡張してトランザクション ヘッダー関連情報を設定し、TaxableDocVendInvoiceInfoLineRowDP は **TaxableDocPurchLineRowDataProvider** を拡張して請求明細行関連の情報を設定します。
 
@@ -393,8 +390,8 @@ TaxableDocVendInvoiceInfoTableRowDP は **TaxableDocPurchTableRowDataProvider** 
 | 構成スキーム             | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 無 |
 | 顧客タイプ                  | TaxableDocumentRowDataProviderHeader.fillInFields                           | 有                          | なし |
 | 仮評価         | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 無 |
-| 外部関係者                  | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 無 |
-| 評価の種類              | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 法人 |
+| 外部関係者                  | TaxableDocumentRowDataProviderHeader.fillInFields                           | なし                           | なし |
+| 評価の種類              | TaxableDocumentRowDataProviderHeader.fillInFields                           | なし                           | 会社 |
 | 優先的関係者            | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 無 |
 | GTA 商業仕入先          | TaxableDocumentRowDataProviderHeader.fillInFields                           | 無                           | 無 |
 | 元帳通貨                | TaxableDocumentRowDataProviderHeader.fillInFields                           | 有                          | |
@@ -427,9 +424,9 @@ TaxableDocVendInvoiceInfoTableRowDP は **TaxableDocPurchTableRowDataProvider** 
 
 税エンジンで税計算をトリガーする 1 つの方法は、トランザクションに追加する **税務書類** ボタンを使用することです。 このボタンをクリックすると、トランザクション データが事前定義された課税対象文書オブジェクトとして税エンジンに送信され、税計算が税エンジンでトリガーされます。 ボタンは通常、**VendEditInvoice** などのトランザクション ページに追加されます。 税が計算された直後に、結果が税務書類のユーザー インターフェイス (UI) に表示されます。
 
-![アクション ペインの税務書類ボタン](media/gte-vend-taxdocument.png)
+![アクション ウィンドウの税務書類ボタン。](media/gte-vend-taxdocument.png)
 
-![taxdocumentlauncher プロパティ](media/gte-vend-taxdocumentlauncher.png)
+![taxdocumentlauncher プロパティ。](media/gte-vend-taxdocumentlauncher.png)
 
 ### <a name="integrate-with-transaction-totals"></a>トランザクションの合計との統合
 
@@ -437,7 +434,7 @@ TaxableDocVendInvoiceInfoTableRowDP は **TaxableDocPurchTableRowDataProvider** 
 
 Finance の既存の実装では、この機能を処理するために **PurchTotals** クラスのセットが作成されています。 したがって、税エンジン関連のコードがクラスの **calcTax** メソッドに挿入され、予想される税金の合計金額が確実に開始されるようになります。
 
-![calcTax メソッド](media/gte-trx-totals.png)
+![calcTax メソッド。](media/gte-trx-totals.png)
 
 既存のロジックとの調整のため、既存の **taxTotal** パラメーターを使用して、トランザクション全体の税額を表示します。 **taxTotalGTE** という名前の新しいパラメーターは、仕入先に転記される税を表示するために使用されます。 逆請求など、場合によっては、**taxTotal** の値が **taxTotalGTE** の値と一致しません。 したがって、**taxTotal** が仕訳の転記に使用され、**taxTotalGTE** は **合計** ページで合計税額を表示するために使用されます。
 
@@ -445,47 +442,47 @@ Finance の既存の実装では、この機能を処理するために **PurchT
 
 仕入請求書は、元伝票のトランザクションです。 したがって、税エンジンから計算された税の結果は、Finance の既存の元伝票フレームワークと統合する必要があります。 主要なロジックはすでに完成しており、税エンジン統合フレームワークによって処理されています。 ただし、各元伝票トランザクションについては、配分ルールおよび仕訳ルールを会計目的で定義する必要があります。
 
-![配分ルールと仕訳ルール](media/gte-distribution-journalization-rule.png)
+![配分ルールと仕訳ルール。](media/gte-distribution-journalization-rule.png)
 
 仕入請求書用に **AcctDistRuleProductTaxMeasure** および **AccJourRuleVendPaymReqTaxMeasure** の 2 つのクラスが作成されます。
 
-![AcctDistRuleProductTaxMeasure クラス](media/gte-class1.png)
+![AcctDistRuleProductTaxMeasure クラス。](media/gte-class1.png)
 
-![AccJourRuleVendPaymReqTaxMeasure クラス](media/gte-class2.png)
+![AccJourRuleVendPaymReqTaxMeasure クラス。](media/gte-class2.png)
 
 元伝票クラスが正しく作成されると、配分ページには、計算された税金とコンポーネント ラベル、税額、および勘定科目が表示されます。
 
-![勘定配布](media/gte-accounting-distribution.png)
+![勘定配布。](media/gte-accounting-distribution.png)
 
 ### <a name="delete-a-transaction"></a>トランザクションの削除
 
 仕入請求書が削除されると、関連する税務書類も削除されます。 関連する税務書類を削除するには、VendInvoiceInfoTable の **削除** メソッドで TaxBusinessService を呼び出します。
 
-![トランザクションの削除方法](media/gte-delete-trx.png)
+![トランザクションの削除方法。](media/gte-delete-trx.png)
 
 ### <a name="delete-a-transaction-line"></a>トランザクション明細行を削除する
 
 トランザクション明細行が削除されると、税務書類を再計算する必要があります。 パフォーマンス上の理由から、トランザクション明細行が削除された直後に GTE が税を再計算することはありません。 代わりに、税務書類のステータスを **ダーティー** に更新します。 表示または転記できるように税務書類が取得されると、GTE は状態が **ダーティー** かどうかを確認します。 ステータスによっては、再計算が行われます。
 
-![税務書類のステータス](media/gte-tax-doc-status1.png)
+![税務書類のステータス。](media/gte-tax-doc-status1.png)
 
-![税務書類のステータスの変更](media/gte-tax-doc-status2.png)
+![税務書類のステータスの変更。](media/gte-tax-doc-status2.png)
 
 ### <a name="update-transaction-header-information"></a>トランザクション ヘッダー情報を更新する
 
 一部のトランザクション ヘッダー情報は税の計算に影響を与えることがあります。 例には、トランザクションの日付と通貨が含まれます。 したがって、この種の情報が別の値に更新された場合は、後で再計算できるよう税務書類を **ダーティー** としてマークする必要があります。
 
-![税務書類のダーティー ステータス](media/gte-trx-header-info.png)
+![税務書類のダーティー ステータス。](media/gte-trx-header-info.png)
 
 次の方法は、仕入請求書の税計算に影響を与える可能性のあるフィールドを一覧表示します。
 
-![税計算に影響を与えるフィールドを一覧表示する方法](media/gte-tax-calc-purchase.png)
+![税計算に影響を与えるフィールドを一覧表示する方法。](media/gte-tax-calc-purchase.png)
 
 ### <a name="update-transaction-line-information"></a>トランザクション明細行情報を更新する
 
 同様に、いくつかのトランザクション明細行フィールドの更新も、税計算に影響します。
 
-![税計算に影響を与えるトランザクション明細行](media/gte-update-trx-line-info.png)
+![税計算に影響を与えるトランザクション明細行。](media/gte-update-trx-line-info.png)
 
 ### <a name="update-tax-information"></a>税情報を更新する
 
@@ -495,23 +492,23 @@ Finance の既存の実装では、この機能を処理するために **PurchT
 
 仕入請求書および仕訳帳に税務書類を関連付けるには、ルールを定義する必要があります。 **TaxDocumentTransitRuleEventHandler::initTransitDocumentRuleList()** では、VendInvoiceInfoTable、VendInvoiceInfoLine、VendInvoiceJour、VendInvoiceTrans の各ルールを定義して、税務書類または税務書類行をトランザクション テーブルに関連付ける必要があります。
 
-![税務書類の輸送ルール](media/gte-tax-doc-transit-rule.png)
+![税務書類の輸送ルール。](media/gte-tax-doc-transit-rule.png)
 
 **TaxDocumentTransitRuleEventHandler::initTransitDocumentRuleExtList()** には、トランザクションから仕訳帳への輸送アクションの拡張ルールの定義が含まれています。
 
-![税務書類の輸送ルールの拡張](media/gte-tax-doc-transit-rule-ext.png)
+![税務書類の輸送ルールの拡張。](media/gte-tax-doc-transit-rule-ext.png)
 
 ### <a name="transfer-a-tax-document"></a>税務書類を転送する
 
 トランザクションから仕訳帳が作成される場合、税務書類を仕訳帳に転送する必要があります。 次のコードは、税務書類を仕入請求書から仕入請求書の仕訳帳に転送します。
 
-![税務書類を転送する](media/gte-transfer-tax-document.png)
+![税務書類を転送します。](media/gte-transfer-tax-document.png)
 
 ### <a name="post-tax"></a>税を転記する
 
 税の転記は、仕入請求書の仕訳帳が転記されるときに発生します。 したがって、**FormLetterJournalPost.postTax()** 基本クラスで **TaxBusinessService::PostTax()** が仕入請求書の仕訳帳を転記するために呼び出されます。
 
-![税の転記](media/gte-post-tax.png)
+![税の転記。](media/gte-post-tax.png)
 
 ### <a name="add-inventory-tax"></a>在庫税を追加する
 
@@ -519,17 +516,17 @@ Finance の既存の実装では、この機能を処理するために **PurchT
 
 次の例は、**taxEngineInventMovement().updateTaxFinancial()** クラス メソッドを使用して、在庫に対する税を転記する **在庫** モジュールのロジックを示しています。
 
-![在庫税を追加する](media/gte-purchinvoicejournalpost.png)
+![在庫税を追加する。](media/gte-purchinvoicejournalpost.png)
 
 ### <a name="post-a-tax-document"></a>税務書類を転記する
 
 税が転記されたら、税務書類を転記したことを示すステータスに税務書類を更新する必要があります。
 
-![税務書類を転記する](media/gte-tax-document-status.png)
+![税務書類を転記します。](media/gte-tax-document-status.png)
 
 上記のメソッドが呼び出されると、GeneralDournalEntry と仕訳帳トランザクションの関係を維持するために、TaxDocumentGeneralJournalEntryLink テーブルに追加のレコードが作成されます。 このレコードは GTE が GeneralJournalEntry レベルで税務書類を簡単に取得するのに役立ちます。
 
-![税務書類の仕訳帳入力](media/gte-taxdocumentgeneraljournalentrylink.png)
+![税務書類の仕訳帳入力。](media/gte-taxdocumentgeneraljournalentrylink.png)
 
 ## <a name="debugging"></a>デバッグ
 
@@ -539,7 +536,7 @@ Finance の既存の実装では、この機能を処理するために **PurchT
 
 次の図に示すように、**TaxEngineServiceProxy.calculate()** にブレークポイントを設定します。
 
-![トランザクション データのデバッグ](media/gte-debug-transaction-data.png)
+![トランザクション データのデバッグ。](media/gte-debug-transaction-data.png)
 
 **JsonStr** には、データ プロバイダーによって作成されたすべてのトランザクション データ情報が含まれています。 オンラインの JSON ビューアーを使用して、税モデルの属性にデータが正しく設定されているかどうかを簡単に識別できます。
 
@@ -559,3 +556,6 @@ Finance の既存の実装では、この機能を処理するために **PurchT
 
 - [税エンジンの概要](tax-engine.md)
 - [税エンジン コンフィギュレーションの拡張](extend-tax-engine-configurations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

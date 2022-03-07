@@ -2,26 +2,22 @@
 title: 1 ボックス開発環境の構成
 description: この記事では、ワンボックス開発環境の推奨構成について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 23361
 ms.assetid: 09dbb06c-dbc7-468d-a78e-e89a97a59fe6
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d86d25bafba4d419871e055742b9c108b4df358a
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: d2dd925854dcd8a35d5663003fc179bc73a39ccd
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644849"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782950"
 ---
 # <a name="configure-one-box-development-environments"></a>1 ボックス開発環境の構成
 
@@ -29,8 +25,7 @@ ms.locfileid: "4644849"
 
 この記事では、ワンボックス開発環境の推奨構成について説明します。
 
-<a name="setup"></a>セットアップ
------
+## <a name="setup"></a>セットアップ
 
 1. Visual Studio を起動し、ツール バーで <strong>Dynamics 365 **&gt;**オプション</strong>をクリックします。
 2. **Microsoft Dynamics** ノードを展開し、**プロジェクト** をクリックします。
@@ -45,3 +40,6 @@ ms.locfileid: "4644849"
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

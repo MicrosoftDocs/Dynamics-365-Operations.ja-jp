@@ -2,11 +2,9 @@
 title: 製品モデルのためのデータの転送
 description: 製品コンフィギュレーション モデルのデータをエクスポートするには、少なくとも 1 つの製品モデルが使用可能である必要があります。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCImport
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a1f992ff912f32e2ff75b99c200934d4a28e2ef6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 94372960c7478ec07540edb6bce9ca8bc68ec39f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966808"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825497"
 ---
 # <a name="transfer-data-for-product-models"></a>製品モデルのためのデータの転送
 
@@ -36,3 +34,6 @@ ms.locfileid: "4966808"
 5. [製品モデルをエクスポート] をクリックします。
     * ダウンロードの動作は、セキュリティ設定の設定方法によってブラウザーごとに異なります。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

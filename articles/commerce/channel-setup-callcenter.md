@@ -2,29 +2,26 @@
 title: コール センターのチャネルの設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいコール センター チャネルを作成する方法について説明します。
 author: samjarawan
-manager: annbe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 3b21d5e57058fee5bb77beb6731c18967ed11cacc1925e44d2f7d8cdb26d7bcb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4413905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744537"
 ---
-# <a name="set-up-a-call-center-channel"></a>コール センターのチャネルの設定
+# <a name="set-up-a-call-center-channel"></a>コール センター チャネルの設定
 
 
 [!include [banner](includes/banner.md)]
@@ -57,11 +54,11 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 
 次の図は、新しいコール センター チャネルの作成を示しています。
 
-![新しいコール センター チャネル](media/channel-setup-callcenter-1.png)
+![新しいコール センター チャネル。](media/channel-setup-callcenter-1.png)
 
 次の図は、コール センター チャネルの例を示しています。
 
-![コール センター チャネルの例](media/channel-setup-callcenter-2.png)
+![コール センター チャネルの例。](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>追加のチャネル設定
 
@@ -69,7 +66,7 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 
 次の図は、**設定** タブの **荷渡方法** および **支払方法** の設定オプションを示しています。
 
-![追加のコール センター チャネル設定アクション](media/channel-setup-callcenter-3.png)
+![追加のコール センター チャネル設定アクション。](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>支払方法の設定
 
@@ -84,7 +81,7 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 
 次の図は、現金支払い方法の例を示しています。
 
-![支払方法の例](media/channel-setup-callcenter-payments.png)
+![支払方法の例。](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>荷渡方法の設定
 
@@ -100,7 +97,7 @@ Dynamics 365 Commerce では、コール センターはアプリケーション
 
 次の図は、デリバリー モードの例を示しています。
 
-![荷渡方法の設定](media/channel-setup-retail-7.png)
+![荷渡方法を設定します。](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>チャネルのユーザーの設定
 
@@ -136,3 +133,6 @@ Commerce 本社からコール センター チャネルにリンクされた販
 [詐欺警告の設定および使用](set-up-fraud-alerts.md)
 
 [コール センターの連続プログラムの設定](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

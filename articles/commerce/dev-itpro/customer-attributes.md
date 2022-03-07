@@ -2,11 +2,9 @@
 title: 顧客属性
 description: このトピックでは、顧客属性に関する情報を提供し、構成を使用して顧客のマスター レコードに新しいフィールドを追加する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a86308c160c1b624c4129e6d551454dcd581aeec
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 046e359eef161aaf6fcf1de0a59e1763f70a58bb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683349"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795671"
 ---
 # <a name="customer-attributes"></a>顧客属性
 
@@ -112,12 +110,20 @@ ms.locfileid: "4683349"
 9. デザイナーが開始された後、**顧客** カードを画面レイアウト デザイナーの任意の場所にドラッグします。
 10. **顧客** カードを右クリックし、**カスタマイズ** を選択します。
 11. **カスタマイズ - 顧客** カードのページが表示されたら、**利用可能な列** セクションで必要な属性を選択してから、右矢印ボタン (**>**) を選択して 、それらを **選択された列** セクションに移動します。 **上** または **下** ボタンを選択することにより、属性を上または下に移動することができます。
-12. 完了したら、**OK** を選択して、変更を保存します。
-13. 右上隅の **閉じる** ボタン (**X**) を選択し、画面レイアウト デザイナーを閉じます。 メッセージが表示されたら、**はい** を選択して、変更を保存します。
-14. **Retail とコマース** &gt; **Retail とコマース IT** &gt; **配送スケジュール** の順に選択します。
-15. **レジスター** ジョブ (1090) を選択し、アクション ペインで **今すぐ実行** を選択します。 メッセージが表示されたら、**はい** を選択します。
+
+[!NOTE]
+>顧客属性は法人固有であり、つまり画面レイアウト デザイナーは **システム管理 > ユーザー** にログインしたユーザーに対して設定された法人 (会社) に固有の顧客属性をフェッチします。 別の法人に対して属性を構成した場合、画面レイアウト デザイナーがこれらの値が表示しない場合があります。
+
+13. 完了したら、**OK** を選択して、変更を保存します。
+14. 右上隅の **閉じる** (**X**) を選択し、画面レイアウト デザイナーを閉じます。 メッセージが表示されたら、**はい** を選択して、変更を保存します。
+15. **Retail とコマース** &gt; **Retail とコマース IT** &gt; **配送スケジュール** の順に選択します。
+16. **レジスター** ジョブ (1090) を選択し、アクション ペインで **今すぐ実行** を選択します。 **はい** を選択します。
+.
 
 #### <a name="pos"></a>POS
 
 1. POS を起動し、顧客をトランザクションに追加します。
 2. トランザクション画面を開いて、追加された属性を表示します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: コントロールに対してタスク レコーダーが生成するテキストの制御
-description: この記事では、タスク レコーダーがコントロールに対して生成する命令ラベルを決定する方法について説明します。 また、これらのラベルがユーザーにとって意味があることを確認できる方法について説明します。
+description: この記事では、タスク レコーダーがコントロールに対して生成する命令ラベルを決定する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5deefe4d8c28f1b3f7b9b600ff6c5d1f8a0f4b4b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fe62937d5ebb2f5dd5bf40d9e03b92c7eb620094
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680950"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744177"
 ---
 # <a name="control-the-text-that-task-recorder-generates-for-a-control"></a>コントロールに対してタスク レコーダーが生成するテキストの制御
 
@@ -98,3 +96,6 @@ ms.locfileid: "4680950"
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

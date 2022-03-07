@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0aea02b5a966e0eaf94694031b47b4bee0610d153798485af3429be95f704505
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 89bb62a93579782ed2a6edbeb7bb9a3b46826566
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751469"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748235"
 ---
 # <a name="workflow-subsystem-updates-in-finance-and-operations"></a>Finance and Operations のワークフロー サブシステムのアップデート
 
@@ -48,7 +48,8 @@ Dynamics AX 2012 を使用したことがあれば、Finance and Operations の�
 -   ワークフロー開発ウィザードは Microsoft Visual Studio にポート済みです。
 
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 [開発者向け技術概念ガイド](../dev-tools/developer-home-page.md)
 

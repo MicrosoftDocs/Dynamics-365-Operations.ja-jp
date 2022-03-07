@@ -2,11 +2,9 @@
 title: タイプ登録
 description: このトピックでは、プロセス自動化フレームワークでタイプを登録する方法について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbb9f21be26c4f91aa3d79a569f9d1a8c088e202
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 09798a76253f4cdb38e3b0f733d2bfa3e5dba1b3
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679224"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866116"
 ---
 # <a name="type-registration"></a>タイプ登録
 
@@ -207,3 +205,6 @@ internal final class VendPaymProposalAutomationFeature implements IFeatureMetada
 | `public LabelId parmCaption(LabelId _caption = caption)` | パラメーター ページのキャプション。 |
 | `public LabelId parmHelpText(LabelId _helpText = helpText)` | パラメーター ページのヘルプ テキスト。 |
 | `public static ProcessScheduleTypeRegistrationParameterTabItem newFromMenuItem(MenuItemName _menuItemName)` | 指定されたメニュー項目名でインスタンスを初期化するコンストラクター。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: メンテナンス作業者および作業者グループ
 description: このトピックでは、資産管理のメンテナンス作業者および作業者グループについて説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b81de02f144712786704a46d2096dfb510d5ce68
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750127"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>メンテナンス作業者および作業者グループ
 
@@ -63,3 +61,6 @@ ms.locfileid: "5017395"
 6. リソース グループを選択したメンテナンス作業者グループに関連づける場合は、**リソース グループからコピー** を選択します。 **グループ** フィールドで、カレンダーの設定をコピーするリソース グループを選択します。 次に、**作業者グループ** フィールドで、リソース グループのカレンダー設定をコピーする作業者グループを選択します。 このステップは、作業指示書のスケジューリング中に、メンテナンス作業者がリソース (ワーク センター) に関連するカレンダーを使用する場合にのみ関連します。
 
     **詳細** クイック タブのフィールドには、選択したメンテナンス作業者グループに設定されたメンテナンス作業者グループの数が表示されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

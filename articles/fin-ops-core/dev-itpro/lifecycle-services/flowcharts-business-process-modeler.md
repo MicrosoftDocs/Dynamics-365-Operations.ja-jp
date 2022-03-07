@@ -1,12 +1,10 @@
 ---
 title: ビジネス プロセス モデラー (BPM) のフローチャート
-description: このトピックでは、Microsoft Dynamics Lifecycle Services の既定の接続フローチャートを変更し、タスク レコーダーから接続されたフローチャートを作成してアップロードし、別のライブラリからビジネス プロセス モデルのフローチャートをインポートする方法について説明します。
+description: このトピックでは、接続フローチャートを変更し、タスク レコーダーからのフローチャートを作成してアップロードし、ビジネス プロセス モデルのフローチャートをインポートする方法について説明します。
 author: AngelMarshall
-manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,18 +14,19 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: fc7636e47964be5c6471b5c5ee8745298b2a1ebf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c656e52442a3f615f84da23cc730539b01ab60b7dbfdad8db9a4a7cb3e6326d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680014"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772893"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
 [!include [banner](../includes/banner.md)]
 
-> [!重要] ビジネス プロセス モデラーのフローチャート図は、非推奨になりました。 非推奨の詳細については、[ビジネス プロセス モデラーのフローチャートの図](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler) を参照してください。
+> [!IMPORTANT]
+> ビジネス プロセス モデラーのフローチャート図は、非推奨になりました。 非推奨の詳細については、[ビジネス プロセス モデラーのフローチャートの図](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler) を参照してください。
 
 Microsoft Dynamics Lifecycle Services (LCS) でビジネス プロセス モデラーを使用して、組織のためにビジネス プロセス フローチャートを定義および格納することができます。 このトピックでは、既定の接続フローチャートを表示する方法、接続したフローチャートを Visio ファイルの形式でエクスポートする方法、および未接続のフローチャートをアップロードして表示する方法について説明します。
 
@@ -67,7 +66,7 @@ Activities that can appear in flowcharts are described in the following table.
 
 1.  Lifecycle Services にサインインしてプロジェクトを開き、**ビジネス プロセス モデラー** をクリックします。
 2.  **プロジェクト ライブラリ** セクションで、表示するライブラリを選択します。 
-3.  業務プロセス ライブラリを展開し、関連付けられたフローチャート アイコンを持つライブラリ ノードをクリックします: [![フローチャート BPM トピック 1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
+3.  業務プロセス ライブラリを展開し、関連付けられたフローチャート アイコンを持つライブラリ ノードをクリックします: [![フローチャート BPM トピック 1。](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
 
     フローチャートが表示されます。 プロセスの各活動は、図の形によって表されます。 プロセス ステップが右のウィンドウに表示されます。 
 
@@ -145,7 +144,10 @@ Visio のダイアグラムなどの未接続のフローチャートは、Finan
 <!--
 ### View an unconnected flowchart
 
-A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
+A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2.](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
 --->
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

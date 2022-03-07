@@ -1,30 +1,27 @@
 ---
 title: 製品のコンフィギュレーションの再利用
 description: 製品の既存のコンフィギュレーションを自動的に再利用することを指定できます。 次にユーザーがコンフィギュレーション セッションを完了すると、ユーザーの選択と一致するコンフィギュレーションが既に存在するかどうかが確認されます。 一致するコンフィギュレーションが見つかった場合は、コンフィギュレーション ID、対応する部品表 (BOM)、および工順が再利用されます。
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 201813
 ms.assetid: 4985e308-7824-41fc-83fd-fd0bdae888e3
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd6d730528522f4074b6e2a3ce6059cc12ff5a0f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0898bd1832fa7007fc3aa265beee2e930f157a39
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431732"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577411"
 ---
 # <a name="reuse-product-configurations"></a>製品のコンフィギュレーションの再利用
 
@@ -32,8 +29,7 @@ ms.locfileid: "4431732"
 
 製品の既存のコンフィギュレーションを自動的に再利用することを指定できます。 次にユーザーがコンフィギュレーション セッションを完了すると、ユーザーの選択と一致するコンフィギュレーションが既に存在するかどうかが確認されます。 一致するコンフィギュレーションが見つかった場合は、コンフィギュレーション ID、対応する部品表 (BOM)、および工順が再利用されます。
 
-<a name="requirements-for-reusing-configurations"></a>コンフィギュレーションを再利用するための条件
----------------------------------------
+## <a name="requirements-for-reusing-configurations"></a>コンフィギュレーションを再利用するための条件
 
 コンフィギュレーションの再利用を有効にするには、**製品コンフィギュレーション モデルの詳細** ページで、コンポーネントと属性の次の情報を指定する必要があります:
 
@@ -45,3 +41,6 @@ ms.locfileid: "4431732"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

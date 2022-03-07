@@ -2,35 +2,30 @@
 title: お気に入りの追加
 description: このトピックでは、サイトにお気に入りを追加する方法について説明します。
 author: bicyclingfool
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413687"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964735"
 ---
-# <a name="add-a-favicon"></a>お気に入りの追加
+# <a name="add-a-favicon"></a>ファビコンの追加
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、サイトにお気に入りを追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 お気に入りは小さなグラフィック ファイルで、Web ブラウザー タブ、アドレス バー、閲覧の履歴、およびブックマークやお気に入りなど、その他の場所内に表示されます。 サイトにお気に入りを追加することをお勧めします。それによりブランドを代表して強化し、顧客が閲覧する他のサイトと区別するのに役立ちます。
 
@@ -66,7 +61,7 @@ ms.locfileid: "4413687"
 1. **新規ページ フラグメント** ダイアログボ ックスで、ページ フラグメントの基になるモジュールに **メタタグ** を選択します。
 1. フラグメントの名前を入力し、**OK** を選択します。
 1. フラグメント階層ツリーで、**既定のメタタグ** 子を選択し ます。
-1. 右側のウィンドウで、 **Metaタグ** 配下の **追加** を選択、前述の作成済みの HTML 文字列を入力します。 
+1. 右側のウィンドウで、 **Metaタグ** 配下の **追加** を選択、前述の作成済みの HTML 文字列を入力します。 
 1. **編集の完了** を選択し、 **発行** を選択してフラグメントを公開します。
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>ページの HTML 内の head セクションにメタタグのページ フラグメントを追加する
@@ -91,11 +86,12 @@ ms.locfileid: "4413687"
 
 [CSS 上書きファイルの作業](css-override-files.md)
 
-[ようこそメッセージの追加](add-welcome-message.md)
-
 [著作権に関する注意事項の追加](add-copyright-notice.md)
 
 [サイトに言語を追加する](add-languages-to-site.md)
 
 [サイト ページにスクリプト コードを追加してテレメトリをサポートする](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

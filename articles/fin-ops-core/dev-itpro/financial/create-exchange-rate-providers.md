@@ -1,27 +1,25 @@
 ---
 title: 為替レート プロバイダーの作成
 description: このトピックでは、為替レート プロバイダーの設定方法について説明します。
-author: RobinARH
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global
-ms.author: jbye
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 794c2f150d64d7402f254140158586e39b9cf2bb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 26302762a90ced5a976391daa95b175d905077d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680522"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347232"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
@@ -36,12 +34,12 @@ ms.locfileid: "4680522"
 -   **為替レート プロバイダーのコンフィギュレーション**: 使用方法を決定する為替レート プロバイダーのコンフィギュレーション設定。
 -   **為替レート サービス** - 発行された為替レートの一覧を提供する無料または有料の定期売買サービス。 OANDA による外貨為替レートは、為替レートを提供するサービスの例です。
 -   **フレームワーク** – プロバイダーからの為替レートの取得および、その為替レートの適切なストレージを調整するインポート通貨の為替レートのフレームワーク。
--   **SysPlugin フレームワーク** - この拡張フレームワークは、Managed Extension Framework に基づいています。 マネージ拡張フレームワークは、SysPlugin 拡張フレームワークを非 X++ コードで使用できるようにします。 詳細については、[ファクトリ メソッドのサブクラスを登録] (https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/register-subclass-factory-methods) を参照してください。 
+-   **SysPlugin フレームワーク** - この拡張フレームワークは、Managed Extension Framework に基づいています。 マネージ拡張フレームワークは、SysPlugin 拡張フレームワークを非 X++ コードで使用できるようにします。 詳細については、[工場メソッドに対する登録] (../機能性/レジスター - 工場 - メソッド) を参照してください。 
 
 ## <a name="conceptualclass-model"></a>概念/クラス モデル
 次の図は、為替レート プロバイダーのフレームワークを構成する主なインターフェイスとクラス、およびそれらの関係を示しています。 新しい為替レート プロバイダーは、**IExchangeRateProvider** インターフェイスから派生している必要があります。 為替レート プロバイダーは、X++ で記述されます。 X++ は .NET 言語なので、プロバイダーで簡単に Microsoft .NET Framework を使用できます。 
 
-[![為替レート プロバイダー フレームワークの概念/クラス モデル](./media/exchangerates.png)](./media/exchangerates.png) 
+[![為替レート プロバイダー フレームワークの概念/クラス モデル。](./media/exchangerates.png)](./media/exchangerates.png) 
 
 図で表示されるインターフェイスおよびクラスを次に示します。
 
@@ -49,7 +47,7 @@ ms.locfileid: "4680522"
 - **IExchangeRateProviderFrameworkFactory** – このインターフェイスにより、為替レート プロバイダーは、図の中のいくつかのインターフェイスを表す様々なタイプのプロバイダー フレームワーク クラスを作成することができます。
 - **IExchangeRateProviderSupportedOptions** – 為替レート プロバイダーは、レートをインポートする際にいくつかのオプションをサポートします。 為替レート プロバイダーは、このインターフェイスを使用して、サポートするオプションについてフレームワークに通知します。
 - **IExchangeRateProviderConfig** – 各為替レート プロバイダーは、固有のコンフィギュレーションを持つことができます。 このインターフェイスにより、プロバイダーはこの構成を取得できます。
-- <strong>IExchangeRateProviderConfigDefaults</strong> - 為替レート プロバイダーは、コンフィギュレーションのデフォルト値を作成して提供できます。 ユーザーは、<strong>為替レート プロバイダーのコンフィギュレーション</strong> ページ (<strong>一般会計</strong> &gt; <strong>通貨 **&gt; **為替レート プロバイダーのコンフィギュレーション</strong> でこれらの値を変更できます)。
+- <strong>IExchangeRateProviderConfigDefaults</strong> - 為替レート プロバイダーは、コンフィギュレーションのデフォルト値を作成して提供できます。 ユーザーは、<strong>為替レート プロバイダーのコンフィギュレーション</strong> ページ (<strong>一般会計</strong> &gt; <strong>通貨 **&gt;**為替レート プロバイダーのコンフィギュレーション</strong>でこれらの値を変更できます)。
 - **IExchangeRateRequest** – このインターフェイスは、為替レートのインポートを要求する固有のデータを表します。 このデータには、日付範囲、オプション、レートを取得するための通貨ペアが含まれます。
 - **IExchangeRateCalendar** – このインターフェイスは、次の作業日 (月曜日から金曜日まで) を取得する場合に使用される為替レート カレンダーを表します。
 - **IExchangeRateResponse** – 為替レート プロバイダーでは、このインターフェイスを使用して、通貨のペアや、サービスから返される為替レートを格納します。
@@ -506,3 +504,6 @@ ms.locfileid: "4680522"
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

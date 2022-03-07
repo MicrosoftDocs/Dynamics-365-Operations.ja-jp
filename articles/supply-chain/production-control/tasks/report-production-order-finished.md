@@ -2,27 +2,24 @@
 title: 製造オーダーの完了レポート
 description: この手順では、製造オーダーを完了として報告する方法を示します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdTableListPage, ProdParmReportFinished, ProdJournalTransProd, ProdSetupReportFinished
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 93193e6365bcf82fbbf93af81e2581a358899fa1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: aa27691942b27886e85c52b7b3a736a62db7b7bd
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431656"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580603"
 ---
 # <a name="report-a-production-order-as-finished"></a>製造オーダーの完了レポート
 
@@ -52,3 +49,6 @@ ms.locfileid: "4431656"
 4. 一覧で、選択された行のリンクをクリックします。
     * 完了レポート仕訳帳が転記されます。 仕訳帳に調整を加える場合は、新しい仕訳帳を作成し、この仕訳帳に手動で変更を加えることができます。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

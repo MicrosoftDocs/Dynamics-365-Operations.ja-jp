@@ -1,26 +1,24 @@
 ---
 title: 電子メールによるクライアント警告通知
 description: このトピックでは、定義済のイベントが発生する電子メール通知を送信するルールを設定する方法について説明します。
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a1d520584e331631bb5a6a88ba6c9a8b50b3d29e
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 4e2205ba3bdf5ec2a4e6d9390007eaf1098293c3dd2a5b2ff1b3c73c7de5a83f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798626"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734617"
 ---
 # <a name="client-alert-notifications-by-email"></a>電子メールによるクライアント警告通知
 
@@ -38,7 +36,7 @@ ms.locfileid: "4798626"
 
 次の図は、**電子メールの送信** オプションを含む **警告ルールの作成** ダイアログ ボックスを示しています。
 
-[![ 電子メールの送信オプションがはいに設定されている警告ルールの作成ダイアログ ボックス](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
+[![ 電子メールの送信オプションがはいに設定されている警告ルールのダイアログ ボックスを作成します。](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
 
 > [!NOTE]
 > **電子メールの送信** オプションが **はい** に設定されている場合、警告通知はアクション センターから配信され続けます。
@@ -49,4 +47,7 @@ ms.locfileid: "4798626"
 
 次の図は、電子メールで受信された時の警告通知の構造を表示します。
 
-[![レコードの作成、フィールドの変更、およびテンプレート削除のためのテンプレートに基づく警告通知](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+[![レコードの作成、フィールドの変更、およびテンプレート削除のためのテンプレートに基づく警告通知。](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

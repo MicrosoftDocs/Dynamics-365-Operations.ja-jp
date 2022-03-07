@@ -2,26 +2,24 @@
 title: Trace Parser を使用してトレースを実行
 description: このチュートリアルでは、トレースする方法についてのガイドラインを示します。
 author: RobinARH
-manager: AnnBe
 ms.date: 10/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25471
 ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eec0b714329620ea7a3d9b237bcf848b4639cc58
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 72bbe52151cc4c1fa26d9fd8c6171d8e41f9fd5f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680426"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781935"
 ---
 # <a name="take-traces-by-using-trace-parser"></a>Trace Parser を使用してトレースを実行
 
@@ -57,7 +55,7 @@ ms.locfileid: "4680426"
 1. ユーザーにトレースをキャプチャする権利を与えるには、 **システム管理&gt; ユーザー &gt;ユーザー** を参照してください。
 2. ユーザーを選択し、**システム追跡ユーザー** ロールを割り当てます。 
 
-    [![ユーザーへのトレース権限の割り当ての例](./media/trace2-284x300.jpg)](./media/trace2.jpg)
+    [![ユーザーへのトレース権限の割り当ての例。](./media/trace2-284x300.jpg)](./media/trace2.jpg)
 
     ユーザーが不要なトレースを回避するために追跡を行ったら、ユーザー ロールを削除します。
 
@@ -75,3 +73,6 @@ ms.locfileid: "4680426"
 
 > [!NOTE]
 > 注記: トレースは、7 日後に削除されます。 Trace Parser のデスクトップ バージョンの詳細については、[Trace Parser を使用して問題を診断し、パフォーマンスを分析します](trace-parser.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

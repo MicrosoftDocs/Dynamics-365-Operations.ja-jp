@@ -1,12 +1,10 @@
 ---
 title: データベース ログの構成
-description: このトピックでは、データベース ログの管理について説明します。 データベース ログの設定方法、セキュリティとパフォーマンスの管理方法、およびデータベース ログのクリーンア ップ方法について説明します。
+description: このトピックでは、データベース ログの設定方法、セキュリティとパフォーマンスの管理方法、およびデータベース ログのクリーンアップ方法について説明します。
 author: hasaid
-manager: AnnBe
 ms.date: 03/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40cd2a76d0328d8542f6cb115f1edc017046aa14
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2801579c571bf7e65db4da146307ce227e10fed4a7d3388415307d4669e06e16
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713866"
 ---
 # <a name="configure-database-logging"></a>データベース ログの構成
 
@@ -66,7 +64,7 @@ ms.locfileid: "4683953"
 
 **ログ データベースの変更** ウィザードを使用して、データベースのログを設定できます。 このウィザードを使用すると、テーブルやフィールドのログを柔軟に設定することができます。
 
-1. **システム管理** \> **設定** \> **データベース** \> **データベース ログの設定** に移動します。
+1. **システム管理** \> **設定** \> **データベース ログ** \> **データベース ログの設定** に移動します。
 2. **新規** を選択して、**ログ データベースの変更** ウィザードを開きます。
 3. ウィザードの操作を完了します。
 
@@ -90,3 +88,6 @@ ms.locfileid: "4683953"
 
 1. **システム管理** \> **問い合わせ** \> **設定** \> **データベース ログ** に移動します。
 2. **データベース ログ** のページで、 **整合性チェック** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

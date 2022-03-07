@@ -2,11 +2,9 @@
 title: 破壊試験
 description: このトピックでは、Finance and Operations の破壊テスト シナリオについて説明します。
 author: LaneSwenka
-manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 81ea7f372ce75afba2eb7e2f11b38bf3f4525322
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0a411928d19787020371d6a9637fa109dc6c810fc163ccfbb725b0a7a4007057
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681090"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751479"
 ---
 # <a name="destructive-testing"></a>破壊試験 
 
@@ -62,3 +60,6 @@ ms.locfileid: "4681090"
 ポイントタイム復元を使用する利点は、データベース バックアップ (.bacpac) ファイルの処理を回避できるため、破壊テスト セッションの間の時間を短縮できることです。
 
 デメリットは、ポイントインタイム復元の現在の制限により、復元が完了した後に新しい復元の日時を記録する必要があることです。 ポイントインタイム復元では常に新しいデータベースが作成されるため、使用された元の日時は新しいデータベースの復元ポイントとして使用できません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

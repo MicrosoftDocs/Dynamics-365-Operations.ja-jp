@@ -2,11 +2,9 @@
 title: オンプレミス配置の倉庫管理アプリを構成
 description: このトピックでは、オンプレミス展開でのウェアハウス アプリの前提条件について説明します。
 author: MarkusFogelberg
-manager: AnnBe
-ms.date: 09/18/2019
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4ba02e3c82593e44c0e516a3029b734ecb431b4b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3b121759d831dfa5daca63dd4e3d823a0e64f0129338f4747ddd11da9e40a514
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763500"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 
@@ -73,7 +71,7 @@ Finance + Operations で AD FS アプリケーションを使用できるよう�
     
     c.  例のスクリーンショットに示されているように、倉庫モバイル デバイス ユーザー ロールを割り当てます。
 
-    ![ユーザーの作成およびコンフィギュレーション](media/wmapp-users.png)
+    ![ユーザーを作成およびコンフィギュレーションします。](media/wmapp-users.png)
 
 2.  AD FS アプリケーションと倉庫保管アプリ ユーザーを関連付けます。
 
@@ -83,11 +81,14 @@ Finance + Operations で AD FS アプリケーションを使用できるよう�
     
     c.  AD FS でアプリケーション エントリを作成したときに取得したクライアント ID を入力します (「AD FS でのアプリケーション エントリの作成」の手順 2)。 名前を入力し、倉庫管理アプリ ユーザーを選択します。
 
-    ![Azure Active Drectory アプリケーション ](media/azure-active-directory.png)
+    ![Azure Active Drectory アプリケーション。](media/azure-active-directory.png)
 
 ## <a name="certificates"></a>証明書 
 
-アプリがインストールされているデバイスに、リソースにアクセスする適切な証明書があることを確認します。 自己署名証明書を使用している場合、コンピューター アカウント/ユーザー アカウントの信頼されているルートに star(AX) と AD FS をインポートすることで、これらが各デバイスにインストールされている必要があります。 詳細については、[自己署名証明書の作成およびエクスポート](https://technet.microsoft.com/library/ff710475(v=ws.10).aspx) を参照してください。
+アプリがインストールされているデバイスに、リソースにアクセスする適切な証明書があることを確認します。 自己署名証明書を使用している場合、コンピューター アカウント/ユーザー アカウントの信頼されているルートに star(AX) と AD FS をインポートすることで、これらが各デバイスにインストールされている必要があります。 詳細については、[自己署名証明書の作成およびエクスポート](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)) を参照してください。
+
+> [!IMPORTANT]
+> 自己署名証明書のある環境には、Android デバイスからアクセスできません。 Android デバイスから環境にアクセスする必要がある場合は、AD FS および Finance + Operations に対して公開されている信頼できる証明書を使用します。 また、AD CS を使用して AD FS および Finance + Operations の証明書を生成できます。 ただし、その場合は、Android デバイスに手動で証明機関の証明書をインポートする必要があります。   
 
 ## <a name="configure-the-application"></a>アプリケーションのコンフィギュレーション
 
@@ -112,3 +113,6 @@ AD FS アプリケーションを使用してサーバーに接続するには�
     アプリケーションはサーバーに接続し、倉庫ワーカーのログイン画面が表示されます。
     
 5. 倉庫アプリのテレメトリ ID がない場合、いくつかエラーが発生する可能性があります。 これは、既知の問題です。 回避策は既存のクライアントにサインインしてテレメトリ ID を取得することです。 この問題は、将来のリリースで修正されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,24 +1,24 @@
 ---
 title: 残余決済
 description: その金額を勘定科目に適用することで、決済活動から残りの金額を決済することができます。
-author: twheeloc
-ms.date: 02/16/2022
+author: roschlom
+ms.date: 10/16/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 881b46774d3ca6a9b91d4dc06babb30c8677183a
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 216c5c1d7db72e5f5071f2cd03656df538a64e72
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182407"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754099"
 ---
 # <a name="settle-remainder"></a>残余決済
 
@@ -27,7 +27,7 @@ ms.locfileid: "8182407"
 その金額を勘定科目または他の顧客に適用することで、決済活動から残りの金額を決済することができます。 仕訳帳に入力された金額を決済するとき、または未処理トランザクションのみを決済するときに、残りの部分を決済できます。
 
 ## <a name="setting-up-defaults"></a>既定値の設定 
-**残余決済** 機能を有効にして、**残余決済** を使用する前に、既定の設定を設定する必要があります。
+残余決済機能を有効にして、残余決済を使用する前に、既定の設定を設定する必要があります。
 
 1)  **売掛金 > パラメーター > 決済** または **買掛金 > パラメーター > 決済** をクリックします。
 2)  **決済** タブを選択し、**残余決済の有効化** をクリックします。

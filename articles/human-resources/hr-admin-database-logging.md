@@ -1,31 +1,33 @@
 ---
 title: データベース ログの構成と管理
 description: データベース ログを使用すると、Dynamics 365 Human Resources のテーブルとフィールドに対する変更を追跡できます。
-author: Darinkramer
-manager: AnnBe
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3dc4658a0a13af95978c66f5aab882902f754a2d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419370"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066446"
 ---
 # <a name="configure-and-manage-database-logging"></a>データベース ログの構成と管理
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 データベース ログを使用すると、Dynamics 365 Human Resources のテーブルとフィールドに対する変更を追跡できます。 このトピックでは、次の方法について説明します:
 
@@ -66,7 +68,22 @@ ms.locfileid: "4419370"
 **ログ データベースの変更** ウィザードを使用して、データベースのログを設定できます。 ウィザードでは、テーブルやフィールドのログを柔軟に設定できます。
 
 1. **システム管理 > リンク > データベース > データベース ログの設定** に移動します。 **新規** を選択して、**ログ データベースの変更** ウィザードを開始します。
-2. ウィザードの操作を完了します。
+2. **次へ** を選択します。 
+3. ウィザードの **テーブルとフィールド** ページで、データベース ログを有効にするテーブルとフィールドを選択して、**次へ** を選択します。
+
+   > [!Note]
+   > データベース ログは、Human Resources データベースの全テーブルで使用できません。 一覧の下の **すべてのテーブルを表示** を選択すると、テーブルおよびフィールドの一覧が展開され、データベース ログが使用できるすべてのデータベース テーブルが表示されますが、これはデータベース テーブルの完全リストのサブセットになります。
+
+4. ウィザードの **変更のタイプ** ページで、各テーブルおよびフィールドの変更を追跡するデータ操作を選択し、**次へ** を選択します。 ログできるデータ操作の説明については、下の表を参照してください。
+5. **完了** ページで変更を確認し、**完了** を選択します。
+
+| 操作 | 説明 |
+| -- | -- |
+| 新しいトランザクションの追跡 | テーブルに作成される新しいレコードのログを作成します。 |
+| Update | テーブル レコードの更新またはテーブル内で個別に選択されたフィールドに対して、更新のログを作成します。 テーブルの更新のログを選択すると、テーブル上のすべてのレコードのフィールドが更新されるたびにログ レコードが作成されます。 特定のフィールドの更新をログする場合は、テーブル レコードのそれらのフィールドが更新された場合にのみログ レコードが作成されます。 |
+| 消去 | テーブルから削除されたレコードのログを作成します。 |
+| キーの名前変更 | テーブル キーの名前が変更された場合にログ レコードを作成します。 |
+
 
 ## <a name="clean-up-database-logs"></a>データベース ログのクリーン アップ
 
@@ -79,11 +96,14 @@ ms.locfileid: "4419370"
 データベース ログのクリーンアップを設定するには、次の手順を実行します: 
 
 1. **システム管理 > リンク > データベース > データベース ログ** に移動します。 **ログのクリーンアップ** を選択します。
-
-2. 次のいずれかのオプションを入力して、削除するログを選択する方法を選択します:
+2. **対象に含めるレコード** ヘッダーで、**フィルター** を選択します。
+3. 削除するログを選択する方法を選択します。 以下のいずれかのオプションを入力します:
 
    - テーブル ID
    - ログのタイプ
    - 作成日時
 
-3. **データベース ログのクリーンアップ** タブを使用して、ログのクリーンアップ タスクをいつ実行するかを決定します。 既定では、データベース ログは 30 日間使用できます。
+4. **データベース ログのクリーンアップ** タブを使用して、ログのクリーンアップ タスクをいつ実行するかを決定します。 既定では、データベース ログは 30 日間使用できます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

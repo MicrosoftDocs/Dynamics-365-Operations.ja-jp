@@ -1,27 +1,25 @@
 ---
 title: フォーム パターン セクション リストのフォーム パターン
-description: このトピックでは、フォーム パート セクション リストのフォーム パターンについての情報を提供します。 これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。
+description: このトピックでは、フォーム パート セクション リストのフォーム パターンに関する情報を提供します。これは、ワークスペース内にフィルタ処理されたリストを表示するために開発されました。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 29211
 ms.assetid: 05e02e22-6b71-45f2-bacd-5e3f8ea898fb
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ba777ac433d8d4c0f6d8bbfea54e72bdd9e84fd
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 95bf2c9e38901354030ab896a4cbdeb1f8cdcb10
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683909"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781254"
 ---
 # <a name="form-part-section-list-form-patterns"></a>フォーム パターン セクション リストのフォーム パターン
 
@@ -29,8 +27,7 @@ ms.locfileid: "4683909"
 
 このトピックでは、フォーム パート セクション リストのフォーム パターンについての情報を提供します。 これらのワークスペース固有のパターンは、ワークスペース内にフィルターされたリストを表示するために開発されました。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 フォーム パターン セクション リストのフォーム パターンは、フィルター処理されたリストの表示に使用されるワークスペース固有のパターンです。 ワークスペースのタブ付きセクションには、一連の垂直タブが含まれています。 各タブはフォーム パーツ コントロールを含み、いずれかのフォーム パーツ セクション リスト パターンを含むフォームを指します。 この記事では、2 つのパターンについて説明します。
 
@@ -40,11 +37,11 @@ ms.locfileid: "4683909"
 ## <a name="wireframe"></a>ワイヤーフレーム
 ### <a name="form-part-section-list"></a>フォーム パート セクション リスト
 
-[![フォーム パターン セクション リストのフォーム パターンのワイヤーフレーム](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)
+[![フォーム パターン セクション リストのフォーム パターンのワイヤーフレーム。](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)
 
 ### <a name="form-part-section-list---double"></a>フォーム パート セクション リスト - ダブル
 
-[![フォーム パターン セクション リスト -- ダブル のフォーム パターンのワイヤーフレーム](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
+[![フォーム パターン セクション リスト -- ダブル のフォーム パターンのワイヤーフレーム。](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
 
 ## <a name="pattern-changes-for-finance-and-operations"></a>Finance and Operations 用のパターンの変更
 これらのパターンは、Microsoft Dynamics AX 2012 では存在しませんでした。
@@ -109,13 +106,13 @@ ms.locfileid: "4683909"
 
 フォーム: **PurchOrderProcessReceiptsWorkspace** &gt; **PurchOrdersWithDelayedReceiptsPart** (**すべてのワークスペース** &gt; **発注書入庫とフォローアップ**) 
 
-[![フォーム パート セクション リストの例](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)
+[![フォーム パート セクション リストの例。](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)
 
 ### <a name="form-part-section-list---double"></a>フォーム パート セクション リスト - ダブル
 
 フォーム: **BudgetTrackingWorkspace** &gt; **BudgetTransactionPart** (**すべてのワークスペース** &gt; **元帳予算および予測**) 
 
-[![フォーム パート セクション リスト -- ダブルの例](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)
+[![フォーム パート セクション リスト -- ダブルの例。](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -125,3 +122,6 @@ ms.locfileid: "4683909"
 ### <a name="open-issues"></a>未処理の問題
 
 None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

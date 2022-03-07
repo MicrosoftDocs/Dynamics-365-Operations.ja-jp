@@ -6,20 +6,18 @@ ms.topic: article
 ms.date: 07/27/2020
 ms.author: margoc
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 504433fba95893bc0af651d74f43dd112238e8c1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f7a74acb3a04316140c602d670963ea38ef7d8ae
+ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413728"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5634683"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-functional-consultants"></a>Dynamics 365 Commerce 機能コンサルタント向けラーニング カタログ
 
@@ -55,3 +53,6 @@ ms.locfileid: "4413728"
 | コンテンツ  | 説明 | 書式設定  | 期間    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Dynamics 365 Commerce での E コマースのコンフィギュレーションと作業](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Dynamics 365 Commerce のオンライン チャンネルと E コマース サイトでは、小売業者がブランドのオンライン プレゼンスを確立できます。 | 無料の自習型オンライン学習パス | 4 時間   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

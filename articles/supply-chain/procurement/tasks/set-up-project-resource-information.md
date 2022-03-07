@@ -1,27 +1,25 @@
 ---
 title: プロジェクト リソース情報の設定
 description: この手順では、プロジェクト リソースを設定する方法を示します。
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ResResourcesListPage, ResAddResourceForm, ProjCostPriceHour, ProjSalesPriceHour
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0906b7c92f8288adf834ccd33f0ca0df40cd4f44
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c7ba8264bb3ccc6db3b766b76a435e0eccf2d7a2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017270"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577051"
 ---
 # <a name="set-up-project-resource-information"></a>プロジェクト リソース情報の設定
 
@@ -51,3 +49,6 @@ ms.locfileid: "5017270"
 20. [保存] をクリックします。
 21. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

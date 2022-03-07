@@ -2,26 +2,23 @@
 title: インド向けアップグレードと N-1 のサポート
 description: このトピックでは、インドでのコマース顧客向けの N-1 サポート概要を提供します。
 author: kfend
-manager: ezubov
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ada6f65ea61b2931b9e0fff801e029cef8c8e421
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: f6d52c3c7a68f87852622cd63a22edbc35abddaedce6cc08bf5e778f8c9147e0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4409532"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719944"
 ---
 # <a name="support-for-upgrade-and-n-1-for-india"></a>インド向けアップグレードと N-1 のサポート
 
@@ -49,3 +46,6 @@ GST コンフィギュレーション データは AX 2012 およびコマース
 2. **OK** をクリックします。
 
 税構成の変更が行われて確定するたび、データを AX 2012 チャネルに送信する間に上記の操作を実行する必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

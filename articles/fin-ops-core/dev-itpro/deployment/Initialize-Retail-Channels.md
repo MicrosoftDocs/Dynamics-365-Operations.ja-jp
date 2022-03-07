@@ -2,11 +2,9 @@
 title: Commerce Scale Unit (クラウド) の初期化
 description: このトピックでは、Commerce Scale Unit (クラウド) を初期化する方法について説明します。
 author: AamirAllaq
-manager: AnnBe
-ms.date: 02/09/2021
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6dd3dd23016ec871470e108b4ea32396cf39650a
-ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
+ms.openlocfilehash: 1e25a0d3290aabbf789a8e1b5f9d8989c5009970
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5152211"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641101"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) の初期化
 
@@ -30,12 +28,12 @@ ms.locfileid: "5152211"
 このトピックでは、Commerce Scale Unit (クラウド) を初期化する手順について説明します。
 
 > [!IMPORTANT]
-> クラウドで小売チャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、Commerce Scale Unit を使用する小売チャネルの更新を行う必要があります。 Commerce Scale Unit を使用せずに配置された新しい環境は、クラウド ホストの小売チャンネル コンポーネントの品質とサービスの更新を受けられなくなります。 Commerce Scale Unit (自己ホスト) を独占して使用している顧客に対しては、アクションは必要ありません。  延長が必要な場合は、Microsoft FastTrack ソリューション アーキテクトまでご連絡ください。
+> クラウドで小売チャネル機能を使用している既存の顧客の場合、業務の継続的かつ中断のないサポートを確保するには、Commerce Scale Unit を使用する小売チャネルの更新を行う必要があります。 Commerce Scale Unit を使用せずに配置された新しい環境は、クラウド ホストの小売チャンネル コンポーネントの品質とサービスの更新を受けられなくなります。 Commerce Scale Unit (自己ホスト) を独占して使用している顧客に対しては、アクションは必要ありません。 延長が必要な場合は、Microsoft FastTrack ソリューション アーキテクトまでご連絡ください。
 
 ## <a name="prerequisites"></a>必要条件
 
-1. アプリケーション バージョン 8.1.2.x またはそれ以降を持つレベル 2 サンドボックスまたは運協環境を配置します。
-2. Microsoft Dynamics Lifecycle Services (LCS) 内の環境ごとに複数の RCSU を必要とする場合は、サポート要求を作成し、**複数の Commerce Cloud Scale Unit に対するアクセス要求** を入力し、環境 ID、CSU の数、および対応するデータセンター リージョンを指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の CSU を必要としない場合は、サポート要求を作成する必要はありません。 
+1. バージョン 8.1.2.x またはそれ以降を持つレベル 2 サンドボックスまたは運用環境を配置します。
+2. 環境ごとに最大 2 つの Commerce Scale Unit をセルフ配置できます。 Microsoft Dynamics Lifecycle Services (LCS) 内の環境ごとに複数の Commerce Scale Unit を必要とする場合は、サポート要求を作成し、**追加 Commerce Scale Unit の要求** を入力し、環境 ID、Commerce Scale Unit の数、および目的のデータセンター リージョンを指定します。 要求は、5 営業日以内に完了されます。 環境ごとに複数の Commerce Scale Unit を必要としない場合は、サポート要求を作成する必要はありません。 
 3. 環境で Retail ライセンス コンフィギュレーション キーが有効になっていることを確認します。 詳細については、[ライセンス コードとコンフィギュレーション キーのレポート](../sysadmin/license-codes-configuration-keys-report.md) を参照してください。 Commerce Scale Unit を使用するには、次のキーを有効にする必要があります。
 
 - RetailBasic
@@ -78,15 +76,15 @@ Commerce Scale Unit は、次の地域に配置することができます。
 
 制限能力地域での配置の許容範囲にはかなり制約があります。 配置要求は、状況に応じて評価されます。 制限されたキャパシティ地域での配置に関して説得力のあるビジネス ニーズがある場合は、待機リストに追加するサポート要求を提出することができます。
 
-![地域の利用可能性を示すマップ](media/Commerce-Scale-Unit-Region-Availability.png "地域の利用可能性を示すマップ")
+![地域の可用性を示すマップ。](media/Commerce-Scale-Unit-Region-Availability.png "地域の利用可能性を示すマップ")
 
 ## <a name="initialize-commerce-scale-unit-as-part-of-a-new-environment-deployment"></a>Commerce Scale Unit を新しい環境の展開の一部として初期化します
 
 本社が使用可能か確認してください。 これは、初期化プロセス中にスケール ユニットを本社に登録するために必要です。 サービス プロセスで利用できなくなる可能性があるため、本社がサービス中の場合はスケール ユニットの初期化をお勧めしません。
 
 1. 本社環境が使用可能で [メンテナンス モード](../sysadmin/maintenance-mode.md) でないことを確認してください。
-2. LCS の環境の詳細 ページで、**環境機能 \> Retail** を選択します。
-3. Retail 設定配置ページで、**初期化** を選択します。
+2. LCS の環境の詳細 ページで、**環境機能 \> Commerce** を選択します。
+3. Commerce 設定配置ページで、**初期化** を選択します。
 4. 初期化する Commerce Scale Unit のバージョンを選択します。
 5. 地域を選択して Commerce Scale Unit を初期化します。
 
@@ -172,3 +170,6 @@ Commerce Scale Unit を初期化する前に、次の追加手順を実行する
 - スタンドアロン ハードウェア ステーション インスタンスは引き続き機能します。
 - POS チャンネル側のレポートはリセットされ、データを初期化する前に表示されません。
 - 仕訳帳の処理の表示もリセットされるため、初期化前のデータは表示されません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

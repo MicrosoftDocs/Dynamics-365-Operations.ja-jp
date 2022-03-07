@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e27a441ddbeeac1e64c77168414177191cba4f5f
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 728aa5905c15422bc60a7ab8fa90f25e4a984576
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744707"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684041"
 ---
 # <a name="error-management-and-alert-notifications"></a>エラー管理と警告通知
 
@@ -36,7 +36,7 @@ Microsoft は、エラーに強い二重書き込みを実現するために、�
 
 ## <a name="consolidated-error-management"></a>統合されたエラー管理
 
-アクティビティ ログは、特定のテーブル マップが **実行していません** の状態から **実行中** 状態に移行するイベントの時系列一覧を提供します。 たとえば、一覧には、作成されたマッピング、列マッピングの更新、実行されたマッピングを含めることができます。 さらに、エラーが発生した場合は、ログをダウンロードして、次のレベルの詳細を取得できます。
+アクティビティ ログは、特定のテーブル マップが **実行していません** の状態から **実行中** 状態に移行するイベントの時系列一覧を提供します。 たとえば、一覧には、作成されたマッピング、フィールド マッピングの更新、実行されたマッピングを含めることができます。 さらに、エラーが発生した場合は、ログをダウンロードして、次のレベルの詳細を取得できます。
 
 ![アクティビティ ログの表示](media/activity-log.png)
 

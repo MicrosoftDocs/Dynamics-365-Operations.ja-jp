@@ -2,16 +2,13 @@
 title: 現物価格を含める
 description: '[品目モデル グループ] ページの [在庫モデル] クイックタブにある [現物価格を含める] チェック ボックスは、物理的に更新された取引を品目の平均原価価格を計算するときに考慮するかどうかを指定するために使用されます。'
 author: AndersGirke
-manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 79033
 ms.assetid: 1928c145-bf82-436d-87ca-e7a173e31923
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6e70a40b15bf08d88958cbf3ee3e82ed63e7a48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 711c30376c4f1ecc5c1a747c675e6438a867c51ed066b6c15cdace6a071f7cfd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751125"
 ---
 # <a name="include-physical-value"></a>現物価格を含める
 
@@ -60,3 +57,6 @@ ms.locfileid: "4431942"
 
 > [!NOTE]
 > これに対して、この品目の **現物価格を含める** チェック ボックスをオンにすると、販売注文が転記されるときに転記された原価金額が USD 12.00 となります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

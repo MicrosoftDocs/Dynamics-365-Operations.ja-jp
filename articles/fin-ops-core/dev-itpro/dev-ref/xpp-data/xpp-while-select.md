@@ -2,11 +2,9 @@
 title: 明細書の選択中
 description: このトピックでは、X++ 言語での while select ステートメントについて説明します。
 author: robinarh
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 75101c6065f6bd51fcd6fc4223fbe2f487509b43
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1b345b0f24c53302175bddec326d00bad2d62b6d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408732"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749950"
 ---
 # <a name="while-select-statement"></a>明細書の選択中
 
@@ -59,3 +57,6 @@ while select custTable
     info(strFmt("%1 , %2", custTable.AccountNum, custTable.SalesGroup));
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: 運営リソースの作成
 description: プロジェクト活動または生産プロセスを実行する運営リソース。
 author: sorenva
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WrkCtrTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e2e59b1e6a83d902df98a0b40ee6c572a6567f05
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9ab91c449293338469fa2832156a85c4c32301fd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431681"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829045"
 ---
 # <a name="create-an-operations-resource"></a>運営リソースの作成
 
@@ -81,3 +78,6 @@ ms.locfileid: "4431681"
 4. [入庫場所] フィールドで、値を入力または選択します。
     * 運営リソースが消費する材料を格納している倉庫の場所を指定します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,28 +1,28 @@
 ---
 title: 発注書の概要
 description: この記事では、発注書 (PO) の概要について説明し、発注書が実行するさまざまなステージに関連する追加の記事へのリンクが提供されます。
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 93083
+ms.custom:
+- "93083"
+- intro-internal
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fef4eaa9563647b8878e0d0fb0bc185fdc4ed319
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b2e01f73aa78c0fabf0f5a1e0acd3bbc4f69cfc4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022234"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982307"
 ---
 # <a name="purchase-order-overview"></a>発注書の概要
 
@@ -43,7 +43,7 @@ ms.locfileid: "5022234"
 -   [発注書の作成](purchase-order-creation.md)
 -   [発注書の承認と確認](purchase-order-approval-confirmation.md)
 -   [発注書に対する製品受領書](product-receipt-against-purchase-orders.md)
--   [仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [仕入先請求書の概要](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>発注書のタイプ
 PO には次の 3 つのタイプがあります。 注文書を作成すると、タイプを指定する必要があります。 **調達パラメーター** ページで、新しい注文の既定の注文のタイプを設定できます。
@@ -78,8 +78,7 @@ PO には次の 3 つのタイプがあります。 注文書を作成すると�
 -   **確認済** – 注文が確認された後に、このステータスが割り当てられます。 通常、このステータスは注文に割り当てられる最後の承認のステータスです。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [発注書の作成](purchase-order-creation.md)
 
@@ -87,7 +86,10 @@ PO には次の 3 つのタイプがあります。 注文書を作成すると�
 
 [発注書に対する製品受領書](product-receipt-against-purchase-orders.md)
 
-[仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
+[仕入先請求書の概要](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

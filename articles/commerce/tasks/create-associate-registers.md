@@ -1,27 +1,25 @@
 ---
 title: レジスターの作成と関連付け
 description: この手順では、販売時点管理 (POS) レジスターを作成する方法を示します。
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2415945c5a8f73e095627d638fcc572c50ffe8ca
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 48ad1891955b15d22f3cecac128a831adabdac87
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964898"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779430"
 ---
 # <a name="create-and-associate-registers"></a>レジスターの作成と関連付け
 
@@ -43,3 +41,6 @@ ms.locfileid: "4964898"
     * EFT POS レジスター番号はどの支払ターミナルが認証要求を送信しているかを支払処理担当者に通知するために使用されます。 この値は、"ターミナル ID" または "TID" と呼ばれます。 TID は、支払デバイスのステッカーの明細行から見つけることができます。  
 9. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

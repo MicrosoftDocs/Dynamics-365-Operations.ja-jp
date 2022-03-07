@@ -2,16 +2,13 @@
 title: マスター プランの設定
 description: このトピックでは、マスター プランの設定に使用される各種重要な戦略およびパラメーターについて説明します。
 author: t-benebo
-manager: tfehr
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: a74d2987eac7409b5f576a52eccc37cf29566c7b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fe7ff2ab877182dd3145e39574aa7229c48b6057
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431777"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833404"
 ---
 # <a name="set-up-master-planning"></a>マスター プランの設定
 
@@ -227,3 +224,6 @@ ms.locfileid: "4431777"
 このタイム フェンス内にある計画済供給オーダーのみが使用され、その外側に新しい計画オーダーが作成されます。 動的マイナス在庫日数の利点は、個々の製品のリード タイムが含まれるため、既存の注文を再利用し、リード タイムによる遅延で後の日付で新しい計画オーダーを作成するのを避けれるという点です。 
 
 詳細については、[マイナス在庫日数および動的マイナス在庫日数](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

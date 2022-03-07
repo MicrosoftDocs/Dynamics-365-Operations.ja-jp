@@ -2,11 +2,9 @@
 title: 予算案 (プレビュー)
 description: このトピックでは、組織の履歴データで機械学習モデルを使用して予算案を生成するプロセスについて説明します。
 author: panolte
-manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: roschlom
@@ -15,12 +13,12 @@ ms.search.region:
 ms.author: panolte
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: 3fc551496a060f83541af75dea5a79a05cb7ee8b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b38b9ee57fa319d2436507f52b896201cbafcef2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020925"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811425"
 ---
 # <a name="budget-proposals-preview"></a>予算案 (プレビュー)
 
@@ -101,3 +99,6 @@ ms.locfileid: "5020925"
 
 #### <a name="privacy-notice"></a>プライバシー通知
 プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

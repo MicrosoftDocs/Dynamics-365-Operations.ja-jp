@@ -1,38 +1,38 @@
 ---
 title: オンプレミス配置の概要
-description: Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ センターでビジネス プロセスを実行することをサポートします。
-author: kfend
-manager: AnnBe
-ms.date: 09/18/2019
-ms.topic: article
+description: Dynamics 365 Finance + Operations (on-premises) は、顧客データ センターでビジネス プロセスの実行をサポートします。
+author: cabeln
+ms.date: 11/30/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 60373
+ms.custom:
+- "23401"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: arifk
+ms.author: cabeln
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 6cb35972504a030abbfe01ddc7cba0ab804a2728
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 72207868b5e0e43e2668e3b63a0f5c45fa649957
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685461"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984120"
 ---
 # <a name="on-premises-deployment-overview"></a>オンプレミス配置の概要
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ センターでビジネス プロセスを実行することをサポートします。 この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。 顧客およびパートナーは、Microsoft Dynamics Lifecycle Services (LCS) を利用して、社内展開を管理します。 LCS は、クラウドおよびオンプレミスでの実装のアプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。 業務プロセス モデリング、ソフトウェアの展開および修正、監視および診断などの LCS の機能は、オンプレミス配置をサポートするために使用されます。
+Microsoft Dynamics 365 Finance + Operations (on-premises) は、顧客データ センターでビジネス プロセスの実行をサポートします。 この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。 顧客およびパートナーは、Microsoft Dynamics Lifecycle Services (LCS) を利用して、社内展開を管理します。 LCS は、クラウドおよびオンプレミスでの実装のアプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。 業務プロセス モデリング、ソフトウェアの展開および修正、監視および診断などの LCS の機能は、オンプレミス配置をサポートするために使用されます。
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (オンプレミス) は、Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていません。 
+> Dynamics 365 Finance + Operations (on-premises) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
-## <a name="architecture"></a>アーキテクチャ 
+## <a name="architecture"></a>アーキテクチャ
 
 オンプレミス配置オプションは、Microsoft Azure Server Service Fabric スタンドアロン クラスターを使用して、オンプレミスで実行されるクラウド コンポーネントを使用します。 Service Fabric は、企業規模の大規模なアプリケーションを構築および管理するための次世代の Microsoft ミドルウェア プラットフォームです。 Service Fabric スタンドアロン クラスターは、Windows Server を実行しているどのコンピューターにも展開することができます。 
 
@@ -45,11 +45,11 @@ Microsoft Dynamics 365 Finance + Operations (オンプレミス) は、顧客デ
 
 図 1 は、Service Fabric スタンドアロン クラスターで配置されるノード タイプの論理的な図を示します。 
 
-[![Service fabric スタンドアロン クラスター](./media/on-premises-overview-01.png)](./media/on-premises-overview-01.png)
+[![Service fabric スタンドアロン クラスター。](./media/on-premises-overview-01.png)](./media/on-premises-overview-01.png)
 
 オンプレミス配置のアプリケーション ライフサイクル管理は、LCS を通じて調整されます。 顧客は、LCS の実績のあるツールと方法を使用して、社内展開を管理することができます (図2)。 開発経験は、1 ボックス VHD によるクラウド配置と同じです。 
 
-[![ローカル ビジネス データ展開のアプリケーション ライフ サイクル管理](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)
+[![ローカル ビジネス データ展開のアプリケーション ライフサイクル管理。](./media/on-premises-overview-02.png)](./media/on-premises-overview-02.png)
 
 ## <a name="data-storage"></a>データ ストレージ 
 オンプレミス配置オプションは、オンプレミスのコア顧客データを格納します。 コア顧客データは、[Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/how-microsoft-defines-customer-data) で提供される顧客データ定義のサブセットです。 表 1 では、LCS、Azure Active Directory、および Microsoft Office のサインアップ ポータルなどのサービスにより、米国内にある Microsoft Azure データ センターに格納されている顧客データのカテゴリについて説明します。 コア顧客データと呼ばれる他のすべての顧客データは、オンプレミスに保管されます。  
@@ -65,3 +65,6 @@ Microsoft Dynamics 365 Finance + Operations (オンプレミス) は、顧客デ
   
 
 追加のサービスまたはコンポーネントは、必要に応じてオンプレミス配置を拡張するためにコンフィギュレーションすることができます。ただし、コンフィギュレーションの選択により、コア顧客データが顧客データ センターの外部に転送される可能性があります。 たとえば、オンプレミス配置の外部サービスを統合するために使用されるデータ管理機能のコンフィギュレーションにより、オンプレミス配置外のコア顧客データが転送される可能性があります。 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

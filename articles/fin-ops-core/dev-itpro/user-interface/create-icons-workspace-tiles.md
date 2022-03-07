@@ -2,26 +2,24 @@
 title: ワークスペース タイル用のアイコンの作成
 description: このトピックでは、アイコンを作成してカスタム ワークスペース タイルに割り当てるためのガイドラインと推奨事項について説明します。
 author: jasongre
-manager: AnnBe
-ms.date: 08/12/2019
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 141853
 ms.assetid: 4f78c3a4-011f-4ebd-bada-98e77d43821e
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 3c7c0e8b7edf46cab677d3b8149fdc9509132de5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9671afe34cf63387de2a64475778b6dd64aaf267
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682457"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781632"
 ---
 # <a name="create-icons-for-workspace-tiles"></a>ワークスペース タイル用のアイコンの作成
 
@@ -48,51 +46,37 @@ ms.locfileid: "4682457"
 
 これらの推奨事項に従って、ワーク スペースのアイコンのスタイルとサイズが、他のワーク スペースのアイコンと同一のものであり、ワーク スペースのアイコンの内容が画像に適用されている CSS によって加工されないようことに留意してください。
 
-### <a name="images-for-platform-update-29-or-later"></a>プラットフォーム更新プログラム 29 またはそれ以降における画像
 -   イメージ ファイルは、縦横比が 1:1 の PNG ファイルである必要があります。
--   推奨する画像サイズは 50 x 50 ピクセルで、アイコンは中央部分の **30 x 30 px** ピクセルに収まるように配置します (以下の図を参照してください)。
+-   推奨される最小画像サイズは、50 × 50 ピクセル (px) で、アイコンは画像の中央に位置する四角に含まれます。 最低 50 × 50 px の画像サイズの場合、アイコンは画像中央の **30 × 30 px** 四方 に含まれている必要があります。
+
+    > [!NOTE]
+    > 標準のワークスペース アイコンとカスタム ワークスペース アイコンの鮮明さは、ズーム レベルで異なる場合があります。 この違いの理由は、PNG形式の画像が固定解像度を持っているのに対し、標準のワークスペース アイコンはフォントがスムーズに拡大縮小するからです。 異なるズーム レベルでの解像度を向上するには、同じ相対分析コードで大きな画像を作成することを考慮します。 たとえば、200 ×200 px または 400 × 400 px の画像を作成します。
+
 -   アイコンは、 **白い背景で透明性のあるコンテンツ** となっている必要があります。 
 -   フレームワークによって、イメージの透明な部分に既定の背景色が設定され、既存のユーザーのテーマに一致します。
 
-### <a name="images-for-platform-update-28-or-earlier"></a>プラットフォーム更新プログラム 28 またはそれ以前における画像
--   イメージ ファイルは、縦横比が 1:1 の PNG ファイルである必要があります。
--   推奨する画像サイズは 50 x 50 ピクセルで、アイコンは中央部分の **21 x 21 px** ピクセルに収まるように配置します (以下の図を参照してください)。
--   アイコンは、 **透明性のある背景で白いコンテンツ** となっている必要があります。
--   フレームワークによって、イメージの透明な部分に既定の背景色が設定され、既存のユーザーのテーマに一致します。
 
 ## <a name="example"></a>例 
 新しいワークスペースに使用される次のイメージ/アイコンを検討します。 
 
-[![新しいワークスペースに使用されるアイコン](./media/newlogo3.png)](./media/newlogo3.png) 
+[![新しいワークスペースに使用されるアイコン。](./media/newlogo3.png)](./media/newlogo3.png) 
 
-### <a name="platform-update-29-or-later"></a>プラットフォーム更新プログラム 29 またはそれ以降 
 
 このアイコンは、 **白い背景と透明性のあるコンテンツを持つ** 画像に変換され、アイコンは以下の図のように大きなイメージキャンバスの中央に配置されます。  
 
-![新しいガイダンスに従った ワークスペース アイコン](./media/baseIcon_img_PU29.png) 
+![新しいガイダンスに従った ワークスペース アイコンです。](./media/baseIcon_img_PU29.png) 
 
 これが推奨サイズ設定とどのように関連しているかを理解するには、以下の新しい推奨サイズ設定を合成したワークスペース アイコンを参照してください。   
 
-![新しい推奨サイズ設定のワークスペース アイコン](./media/baseIcon_Guides_PU29.png) 
+![新しい推奨サイズ設定のワークスペース アイコンです。](./media/baseIcon_Guides_PU29.png) 
 
 この画像をワークスペース タイルで使用すると、ダッシュ ボードには次の結果が得られます。 
 
-[![ワークスペース タイルで画像を使用するときのダッシュボードでの結果](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
-
-
-### <a name="platform-update-28-or-earlier"></a>プラットフォーム更新プログラム 28 またはそれ以前
-旧バージョンの製品では、アイコンは透明な背景と白いコンテンツを持つ画像に変換され、アイコンは以下の図のようにイメージキャンバスの中央に配置されます。 
-
-![古いのバージョンのワークスペース アイコン](./media/newicon.png) 
-
-これが推奨サイズ設定とどのように関連しているかを理解するには、以下の古い推奨サイズ設定を合成したワークスペース アイコンを参照してください。   
-
-![古い推奨サイズ設定のワークスペース アイコン](./media/newicon_guides.png) 
-
-この画像をワークスペース タイルで使用すると、ダッシュ ボードには次の結果が得られます。 
-
-[![ワークスペース タイルで画像を使用するときのダッシュボードでの結果](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
+[![ワークスペース タイルで画像を使用するときのダッシュボードでの結果。](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

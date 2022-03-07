@@ -1,15 +1,13 @@
 ---
 title: Commerce Runtime (CRT) のサービス
-description: このトピックでは、コマース チャネルおよび価格設定機能のコア ビジネス ロジックを含むポータブル .NET ライブラリの集合である Commerce Runtime (CRT) サービスについて説明します。
+description: このトピックでは、コマース チャネルおよび価格設定機能のコア ビジネス ロジックを含むライブラリである Commerce Runtime (CRT) サービスについて説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-05-18
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
-ms.openlocfilehash: 5542abd97e41887708255eb32739fcb43b806174
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 79d7fe0f302ad06d8cbe3d789ef222078cd9176d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683348"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782415"
 ---
 # <a name="commerce-runtime-crt-services"></a>Commerce Runtime (CRT) のサービス
 
@@ -42,7 +40,11 @@ CRT には、次の 3 つの主要なレイヤーがあります。
 
 ビジネス ロジックのすべての CRT カスタマイズがワークフローまたはデータ アクセス レイヤーのサービスで実行可能で、CRT が作業するに必要な他のコア レイヤーは、ランタイム、認証、およびデータ アクセスのマネージャーであり、これらのレイヤーのカスタマイズは避ける必要があります。
 
+> [!NOTE]
+> CRT のすべてのクラスの詳細情報は、RetailSDK\Documents\CommerceRuntimeMessages.chm にある Retail SDK を参照してください。
+
 ## <a name="overall-flow"></a>全体的な流れ
+
 全体的なフローは次のようになります。
 
 CRT サービス要求 \< \> 0 以上のワークフロー要求 \< \> 0 以上のデータ アクセス要求
@@ -89,197 +91,10 @@ CRT の多くのサービスは、チャネルおよび店舗運営の機能を�
 | TaxService                 | このサービスは、現在の注文に対する売上税を計算します。 提供された売上情報、またはサード パーティ売上税サービスからの売上税情報を使用できます。 |
 | TotalingService            | このサービスは、販売トランザクションおよび販売明細行の合計を計算します。 |
 
-拡張シナリオでは、サービス クラス内の要求のいずれかを上書きできます。 たとえば、顧客の検索フローを変更するには、**CustomerService** サービスから、**CustomersSearchServiceRequest** リクエストを拡張します。
+拡張シナリオでは、CRT トリガーの追加、新しいサービスの作成、サービス クラス内の要求の上書きを行えます。 CRT 拡張パターンの拡張と理解する方法の詳細については [Commerce Runtime (CRT) の拡張機能](commerce-runtime-extensibility.md) を参照してください。
 
 > [!NOTE]
 > CRT 拡張コードでは、CRT ビジネス ロジック クラス、メソッド、またはハンドラー (Runtime.Workflow、Runtime.Services、Runtime.DataServices のクラスなど) を参照したり使用したりすることはできません。 これらのクラスには、下位互換性がありません。アップグレード中に拡張機能が無効になる可能性があります。 拡張では、Runtime.*.Messages、Runtime.Framework、Runtime.Data、Runtime.Entities の要求クラス、応答クラス、エンティティ クラスのみ使用する必要があります。
-
-## <a name="sample-service-class-implementation"></a>サービス クラス実装の例
-
-```C#
-public class MyService : IRequestHandler
-{
-    /// <summary>
-    /// Gets the collection of supported request types by this handler.
-    /// </summary>
-
-    public IEnumerable<Type> SupportedRequestTypes
-    {
-        get
-        {
-            return new[]
-            {
-                typeof(MyRequest),
-                typeof(MyRequest1),
-                typeof(MyRequest2),
-            };
-        }
-    }
-
-    /// <summary>
-    /// Entry point to my service. Takes a service request and returns the result
-    /// of the request execution.
-    /// </summary>
-
-    /// <param name="request">The my service request to execute.</param>
-
-    /// <returns>Result of executing request, or null object for void operations.</returns>
-
-    public Response Execute(Request request)
-    {
-        if (request == null)
-        {
-            throw new ArgumentNullException("request");
-        }
-        Type requestType = request.GetType();
-        Response response;
-        if (requestType == typeof(MyRequest))
-        {
-            response = MyRequestCustomMethod((MyRequest)request);
-        }
-        else if (requestType == typeof(MyRequest1))
-        {
-            response = MyRequest1CustomMethod ((MyRequest1)request);
-        }
-        else if (requestType == typeof(MyRequest2))
-        {
-            response = MyRequest2CustomMethod ((MyRequest2)request);
-        }
-        else
-        {
-            throw new NotSupportedException(string.Format(CultureInfo.InvariantCulture, "Request '{0}' is not supported.", request.GetType().ToString()));
-        }
-        return response;
-    }
-    private static MyResponse MyRequestCustomMethod (MyRequest request)
-    {
-        return myresponse;
-    }
-}
-```
-
-
-## <a name="how-to-execute-the-base-handler-in-extension"></a>拡張機能で基本ハンドラーを実行する方法
-
-### <a name="nothandledresponse"></a>NotHandledResponse()
-
-一部のシナリオでは、オーバーライドされたロジックで基本ハンドラーを実行する場合、**NotHandledResponse()** を返すことによってこれを実現できます。 NotHandledResponse が返された場合、CRT フレームワークは、基本または帯域外ロジックの実行を要求する拡張機能を使用するため、CRT フレームワークは帯域外ハンドラーを実行します。
-
-**NotHandledResponse** は、拡張機能によって基本ハンドラー ロジックが実行される場合に使用できます。 たとえば、オーバーライドされた要求が基本ハンドラー ロジックを実行する場合、実行する基本ハンドラーに NotHandledResponse を返すことができます。 または、拡張機能によってカスタム ロジックと基本ロジックが実行される場合は、カスタム ロジックを実行した後で NotHandledResponse を返すことができます。
-
-```C#
-  private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizationCustomReceiptFieldServiceRequest request)
-        {
-            ThrowIf.Null(request.SalesOrder, nameof(request.SalesOrder));
-
-            string receiptFieldName = request.CustomReceiptField;
-            string receiptFieldValue = string.Empty;
-
-            if (request.SalesOrder.TaxCalculationType == TaxCalculationType.GTE)
-            {
-                switch (receiptFieldName)
-                {
-                    case "Sample":
-                        receiptFieldValue = this.GetGstRegistrationNumber(request);
-                        break;
-                    default:
-                        return new NotHandledResponse();
-                }
-            }
-            else
-            {
-                return new NotHandledResponse();
-            }
-
-            int receiptFieldLength = request.ReceiptItemInfo == null ? 0 : request.ReceiptItemInfo.Length;
-            var returnValue = ReceiptStringUtils.WrapString(receiptFieldValue, receiptFieldLength);
-
-            return new GetCustomReceiptFieldServiceResponse(returnValue);
-        }
-
-```
-
-## <a name="how-to-execute-extension-request-for-a-channel-type"></a>チャネル タイプに対して拡張要求を実行する方法
-
-拡張要求を特定のチャネル タイプに対してのみ実行する必要がある場合 (たとえば、小売チャネル (物理店舗) 用ではなくオンライン チャネルの要求を実行するなど)、要求を実行する前に、チャネル タイプをチェックしてカスタム ロジックを実行するか、NotHandledResponse() を呼び出して基本ロジックを実行します。
-
-```C#
-if (requestContext.GetChannel().OrgUnitType == RetailChannelType.RetailStore)
-{
-    // run your extension code here.
-}
-else
-{
-    return new NotHandledResponse();
-}
-```
-
-## <a name="extension-pattern-for-crt"></a>CRT 拡張パターン
-
-- **新しいサービス クラスを作成し、1 つまたは複数の要求 / 応答を実装** – このアプローチを使用して、新しい機能を作成します。
-- **コア要求/応答のオーバーライド** – このアプローチを使用して、標準ワークフローまたはビジネス ロジックを変更します。
-- **応答/要求のプレ トリガーまたはポスト トリガーの追加** – このアプローチを使用して、ビジネス ロジックまたはカスタム フィールドなどを追加します。
-
-> [!NOTE]
-> データ アクセス要求、ワークフロー要求、またはサービス要求を作成するかどうかは重要ではありません。 CRT のすべての内容は、要求または応答です。 要求/応答に必要なロジックを記述します。 要求が論理上の理由から異なるタイプに分類されても、全て同じフレームワーク観点です。
-
-次の 3 つのクラスは、すべての要求/応答で実装されます。
-
-- **クラスのリクエスト** – このクラスは、POS/Retail サーバー/E コマース/CRT ワークフロー クラスの作業の要求を行います。
-- **応答クラス** – このクラスは、呼び出し元の要求に基づいて、応答を返します。
-- **ハンドラー クラス** – このクラスには、要求のコア ロジックが含まれます。 ハンドラー クラスで、他の要求を呼び出して、カスタム ロジックなどを実行できます。
-
-### <a name="request-class"></a>クラスのリクエスト
-
-```C#
-public class MyRequest : Request
-{
-    /// <summary>
-    /// Initializes a new instance of the <see cref="MyRequest"/> class.
-    /// </summary>
-
-    public MyRequest ()
-    {
-    }
-
-    // other properties
-}
-```
-
-### <a name="response-class"></a>応答クラス
-
-```C#
-public sealed class MyResponse : Response
-{
-    /// <summary>
-    /// Initializes a new instance of the <see cref=" MyResponse"/> class.
-    /// </summary>
-
-    public MyResponse ()
-    {
-    }
-}
-```
-
-### <a name="handler-class"></a>ハンドラー クラス
-
-```C#
-public sealed class MyRequestHandler : SingleRequestHandler< MyRequest, MyResponse >
-{
-    /// <summary>
-    /// Saves (updating if it exists and creating a new one if it does not) the shopping cart on the request.
-    /// </summary>
-
-    /// <param name="request">The request.</param>
-
-    /// <returns><see cref=" MyResponse "/> object containing the cart with updated item quantities.</returns>
-
-    protected override MyResponse Process(MyRequest request)
-    {
-        //logic class.
-    }
-}
-```
 
 ### <a name="addressservice"></a>AddressService
 
@@ -403,65 +218,9 @@ public sealed class MyRequestHandler : SingleRequestHandler< MyRequest, MyRespon
 
 サービス レイヤーの上は、ワークフロー レイヤーです。 ワークフローは、サービスとビジネス ロジックを共に業務プロセスを定義するコレクションです。 たとえば、顧客がカートに品目を追加すると、価格の取得、検証の実行、在庫数量の確認、出荷費用の計算、税計算、および割引計算をするためワークフローを使用できます。 既存のワークフローをカスタマイズすることも、新しいワークフローを作成することもできます。 ワークフローを使用して、業務プロセスの一部としてサードパーティ製システムに接続することもできます。
 
-サービスと同じように、ワークフローは要求/応答パターンを使用します。 基本 CRT [要求](https://technet.microsoft.com/library/microsoft.dynamics.commerce.runtime.messages.request.aspx) クラスから継承された要求オブジェクト。 基本 CRT [応答](https://technet.microsoft.com/library/microsoft.dynamics.commerce.runtime.messages.response.aspx) クラスから継承された応答オブジェクト。 ワークフローには、[WorkflowRequestHandler<TRequest, TResponse>](https://technet.microsoft.com/library/jj764791.aspx) クラスを拡張する要求ハンドラー クラスもあります。 ワークフローを作成するには、要求クラスおよび応答クラスを作成し、ワークフローのビジネス ロジックが含まれる要求ハンドラー クラスを作成します。
+サービスと同じように、ワークフローは要求/応答パターンを使用します。 基本 CRT [要求](/dynamicsax-2012/appuser-itpro/request-class-microsoft-dynamics-commerce-runtime-messages) クラスから継承された要求オブジェクト。 基本 CRT [応答](/dynamicsax-2012/appuser-itpro/response-class-microsoft-dynamics-commerce-runtime-messages) クラスから継承された応答オブジェクト。 ワークフローには、[WorkflowRequestHandler<TRequest, TResponse>](/dynamicsax-2012/appuser-itpro/workflowrequesthandler-trequest-tresponse-class-microsoft-dynamics-commerce-runtime-workflow) クラスを拡張する要求ハンドラー クラスもあります。 ワークフローを作成するには、要求クラスおよび応答クラスを作成し、ワークフローのビジネス ロジックが含まれる要求ハンドラー クラスを作成します。
 
 たとえば、現金払いトランザクションまたは顧客からの注文を作成する場合、注文が作成される前に、多くの異なるステップやワークフローが完了します。 注文プロセスでのワークフロー ステップの 1 つは、カート要求の保存です。 カート要求ワークフローの保存は、POS からカートに加えられる変更の保存を担当します。 たとえば、買い物カゴに品目を追加したり、数量を変更するなど POS で行う行為は、SaveCart を呼び出して POS とデータベースに変更を保存します。
-
-次の 3 つのクラスは、カート要求ワークフローの保存で実装されます。
-
-### <a name="request-class"></a>クラスのリクエスト
-
-```C#
-public class SaveCartRequest : Request
-{
-    /// <summary>
-    /// Initializes a new instance of the <see cref="SaveCartRequest"/> class.
-    /// </summary>
-
-    public SaveCartRequest()
-    {
-    }
-
-    // other properties
-}
-```
-
-### <a name="response-class"></a>応答クラス
-
-```C#
-public sealed class SaveCartResponse : Response
-{
-    /// <summary>
-    /// Initializes a new instance of the <see cref="SaveCartResponse"/> class.
-    /// </summary>
-
-    public SaveCartResponse()
-    {
-    }
-}
-```
-
-### <a name="handler-class"></a>ハンドラー クラス
-
-```C#
-public sealed class SaveCartRequestHandler : SingleRequestHandler<SaveCartRequest, SaveCartResponse>
-{
-    /// <summary>
-    /// Saves (updating if it exists and creating a new one if it does not) the shopping cart on the request.
-    /// </summary>
-
-    /// <param name="request">The request.</param>
-
-    /// <returns><see cref="SaveCartResponse"/> object containing the cart with updated item quantities.</returns>
-
-    protected override SaveCartResponse Process(SaveCartRequest request)
-    {
-        //logic class.
-    }
-}
-```
-
-すべてのワークフロー クラスは、同じパターンに従います。
 
 ### <a name="default-workflows-and-handlers"></a>既定のワークフローとハンドラー
 
@@ -500,3 +259,6 @@ public sealed class SaveCartRequestHandler : SingleRequestHandler<SaveCartReques
 | UpdateCommissionSalesGroupRequest | UpdateCommissionSalesGroupHandler       | この要求により、カートまたはカート行の販売担当者を更新するための要求がカプセル化されます。                    |
 | UploadOrderRequest                | UploadOrderRequestHandler               | この要求は、販売注文をアップロードします。                                                                                      |
 | ValidateCartForCheckoutRequest    | ValidateCartForCheckoutRequestHandler   | この要求は、チェックアウトのカートを検証します。                                                                              |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

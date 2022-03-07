@@ -1,30 +1,26 @@
 ---
 title: 製品ライフサイクル状態の概要
 description: 製品ライフサイクルの状態は、リリースされた製品または製品バリアントのライフサイクルの状態を付記します。
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 01/06/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 51a6b19e84f368bf72b664e120f262ddcf7c7611
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: f71ce701adbe60b69b25e41810dda7adeec1d390
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4432422"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983797"
 ---
 # <a name="product-lifecycle-state-overview"></a>製品ライフサイクル状態の概要
 
@@ -109,3 +105,6 @@ ms.locfileid: "4432422"
 - [リリース済製品に製品ライフサイクル状態を割り当てる](tasks/product-lifecycle-state-released-product.md)
 - [古い形式の製品バリアントを検索して、製品ライフサイクルの状態を割り当てる](tasks/obsolete-product-variants.md)
 - [マスター プランから製品を除外する場合は、製品ライフサイクルの状態を作成](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

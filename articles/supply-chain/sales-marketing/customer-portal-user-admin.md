@@ -2,25 +2,22 @@
 title: 顧客ポータルのユーザーの作成と管理
 description: このトピックでは、顧客ポータルのユーザー アカウントを作成し、アクセス権限の設定方法について説明します。
 author: dasani-madipalli
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0c08cee1fc772dbd06aeca3a96fdc40c1ca62413
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528296"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353893"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>顧客ポータルのユーザーの作成と管理
 
@@ -39,34 +36,34 @@ ms.locfileid: "4528296"
 
 ## <a name="prerequisite-setup"></a>前提条件の設定
 
-Power Apps ポータルの担当者は、Common Data Service の **担当者** エンティティにレコードとして保存されます。 デュアル書き込みでは、これらのレコードが必要に応じて Microsoft Dynamics 365 Supply Chain Management に同期されます。
+Power Apps ポータルの担当者は、Microsoft Dataverse の **担当者** テーブルにレコードとして保存されます。 デュアル書き込みでは、これらのレコードが必要に応じて Microsoft Dynamics 365 Supply Chain Management に同期されます。
 
-![顧客ポータルの担当者で使用するシステム ダイアグラム](media/customer-portal-contacts.png "顧客ポータルの担当者で使用するシステム ダイアグラム")
+![顧客ポータルの担当者で使用するシステム ダイアグラム。](media/customer-portal-contacts.png "顧客ポータルの担当者で使用するシステム ダイアグラム")
 
-新たな顧客の招待をする前に、**担当者** エンティティのマッピングがデュアル書き込みで有効化されていることを確認してください。
+新たな顧客の招待をする前に、**担当者** テーブルのマッピングがデュアル書き込みで有効化されていることを確認してください。
 
 ## <a name="the-invitation-process"></a>招待の処理
 
-顧客ポータルに既に存在する担当者を招待するには、Power Apps ポータル ドキュメントにおける [ポータルへの担当者への招待](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) に記載の手順に従ってください。
+顧客ポータルに既に存在する担当者を招待するには、Power Apps ポータル ドキュメントにおける [ポータルへの担当者への招待](/powerapps/maker/portals/configure/invite-contacts) に記載の手順に従ってください。
 
-顧客を顧客ポータルに招待する前に、顧客の [担当者レコード ](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) が有効なものであり、次のように設定されていることを確認してください :
+顧客を顧客ポータルに招待する前に、顧客の [担当者レコード ](/powerapps/maker/portals/configure/configure-contacts) が有効なものであり、次のように設定されていることを確認してください :
 
 1. **会社** フィールドを、Supply Chain Management にて顧客を所属させる法人に設定します。
 2. **顧客番号** フィールドを、Supply Chain Management にて顧客に設定する顧客アカウントの番号に設定します。
 
 担当者の作成後は、Supply Chain Management でその担当者を表示できるようになります。
 
-詳細については、Power Apps ポータル ドキュメントの [ポータルで使用する担当者の構成](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) を参照してください。
+詳細については、Power Apps ポータル ドキュメントの [ポータルで使用する担当者の構成](/powerapps/maker/portals/configure/configure-contacts) を参照してください。
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>既成の Web ロールとエンティティのアクセス許可
+## <a name="out-of-box-web-roles-and-table-permissions"></a>既成の Web ロールとテーブルのアクセス許可
 
-Power Apps ポータルのユーザー ロールは 、[Web ロール](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles)と[エンティティのアクセス許可](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions)によって定義されます。 既定では、顧客ポータルには少数のロールのみが定義されています。 新たなロールの作成、既存のロールの変更または削除が可能です。
+Power Apps ポータルのユーザー ロールは、[Web ロール](/powerapps/maker/portals/configure/create-web-roles) と [テーブルのアクセス許可](/powerapps/maker/portals/configure/assign-entity-permissions) によって定義されます。 既定では、顧客ポータルには少数のロールのみが定義されています。 新たなロールの作成、既存のロールの変更または削除が可能です。
 
 ### <a name="out-of-box-web-roles"></a>既成の Web ロール
 
 このセクションでは、顧客ポータルと共に提供される既成の Web ロールについて説明します。
 
-既成のユーザー ロールの変更方法の詳細については、 Power Apps ポータル ドキュメントに記載の [ポータルで使用する Web ロールの作成](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) と [ポータルのエンティティ権限を使用してレコードに基づくセキュリティを追加する](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) を参照してください。
+既成のユーザー ロールの変更方法の詳細については、Power Apps ポータル ドキュメントに記載の [ポータルで使用する Web ロールの作成](/powerapps/maker/portals/configure/create-web-roles) と [ポータルのテーブル権限を使用してレコードに基づくセキュリティを追加する](/powerapps/maker/portals/configure/assign-entity-permissions) を参照してください。
 
 #### <a name="administrator"></a>管理者
 
@@ -96,3 +93,6 @@ Power Apps ポータルのユーザー ロールは 、[Web ロール](https://d
 
 > [!NOTE]
 > サムとジェーンのどちらも顧客 X に勤務する担当者ですが、自分が発注した注文のみを表示でき、その他注文は表示されません。 メイは、システム内に注文があっても、承認されていないユーザーであるため、顧客ポータルで当該注文を表示することはできません。 (さらに、メイは顧客のポータル以外のチャネルを使用して発注している必要があります)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

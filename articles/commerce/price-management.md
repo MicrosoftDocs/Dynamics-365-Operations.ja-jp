@@ -2,27 +2,24 @@
 title: 小売販売の価格管理
 description: このトピックでは、Dynamics 365 Commerce で販売価格を作成および管理するための概念について説明します。
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 85f6188bff4d3535369e4af145f8f55a3263c4a3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413629"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794166"
 ---
 # <a name="retail-sales-price-management"></a>Retail 販売価格の管理
 
@@ -240,3 +237,6 @@ Dynamics 365 で販売価格を設定する場合、設定する価格の値が�
 価格は、多くの顧客の購買決定を制御するための最も重要な要素の 1 つであり、多くの顧客が購買を行う前に、さまざまなサイトの価格を比較しています。 競争力のある価格の提供を保証するために、小売業者は競合他社について慎重に監視し、プロモーションを実行することができます。 これらの小売業者が顧客を惹きつけには、製品検索、参照機能、一覧、および最も正確な価格を表示する製品の詳細ページが重要です。
 
 コマースの次期リリースでは、**GetActivePrices** アプリケーション プログラミング インターフェイス (API) から、単純割引を含む価格が返されます (たとえば、買い物カゴの他の品目に依存しない単一行の割引)。 これにより、表示される価格は、顧客が品目に対して支払う実際の金額に近くなります。 この API には、すべてのタイプの単純割引、たとえば所属ベース、ロイヤルティベース、カタログベース、チャネルベースの割引が含まれます。 さらに、この API は適用された割引の名前と有効性の情報を返すので、小売業者は、価格の詳細な説明を提供し、割引の有効期限が近づいた場合に緊急性を高めることができます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

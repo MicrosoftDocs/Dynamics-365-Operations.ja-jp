@@ -2,9 +2,11 @@
 title: 自動化エンティティ格納更新
 description: このトピックでは自動化エンティティ格納更新を有効にする方法について説明します。
 author: MilindaV2
+manager: AnnBe
 ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: AutomatedEntityStoreRefresh
 audience: IT Pro
@@ -15,19 +17,16 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 209c2f4e209dec8352f26792be35a93bfed61fbb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 527f45a4e927a109379d00918f0a65e23502259a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070162"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687292"
 ---
 # <a name="automated-entity-store-refresh"></a>自動化エンティティ格納更新
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ## <a name="overview"></a>概要
 
@@ -47,7 +46,7 @@ ms.locfileid: "8070162"
 
 新しいエクスペリエンスが表示されます。
 
-![新しい UI エクスペリエンス。](./media/entity-store-data-lake-3.JPG)
+![新しい UI エクスペリエンス](./media/entity-store-data-lake-3.JPG)
 
 新しいエクスペリエンスをオンにすると、それぞれの集計の測定で更新を定義できます。 次の更新オプションを選択できます。
 
@@ -60,6 +59,3 @@ ms.locfileid: "8070162"
 
 > [!IMPORTANT]
 > 自動化更新を有効にすると、システムは集計測定の更新を無効にすることができます。 集計測定に戻って、適切な更新間隔が適用されていることを検証する必要があります。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

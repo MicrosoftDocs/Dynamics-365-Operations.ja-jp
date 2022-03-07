@@ -3,7 +3,7 @@ title: 買掛金勘定の請求書照合の概要
 description: 買掛金勘定の請求書照合は、仕入先請求書、発注書、および製品受領情報を照合するプロセスです。
 author: sunfzam
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7ffcd731b127b9a51551d4fe966dcfd69a34e54
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: befc9b9ef3dcd5545ff3f252a706cab546165cb0
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984080"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595068"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>買掛金勘定の請求書照合の概要
 

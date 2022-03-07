@@ -2,26 +2,19 @@
 title: X++ 属性クラス
 description: このトピックでは、X++ での属性の使用について説明します。
 author: pvillads
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
+ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 150243
-ms.assetid: 9c927660-3268-4a77-9a83-97759a487483
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 156ca965127399cd4f517434e26e051c7a914b82
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7cf2c4784545ef4502dddd01848e94e171aa232a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408752"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783386"
 ---
 # <a name="x-attribute-classes"></a>X++ 属性クラス
 
@@ -29,9 +22,12 @@ ms.locfileid: "4408752"
 
 このトピックでは、X++ での属性の使用について説明します。
 
-属性は、**SysAttribute** クラスを拡張 (継承) する非抽象クラスです。 属性は型およびメソッドに関するメタデータを表すか、または保存します。 属性はクラス、インターフェイス、クラスのメソッド、インターフェイスまたはテーブルに関連付けることができます。
+属性は、**SysAttribute** クラスを拡張 (継承) する非抽象クラスです。 属性は型およびメソッドに関するメタデータを表すか、または保存します。 属性はクラス、クラス フィールド、クラス メソッド、インターフェイスまたはテーブルに関連付けることができます。
+
+属性はデリゲートとメソッドのハンドラーに適用され、ハンドラーをこれらの対象にマッピングします。
 
 ## <a name="creating-an-attribute-class"></a>属性クラスを作成しています
+
 属性クラスは **SysAttribute** クラスを直接拡張したり、**SysAttribute** クラスのすべての子孫を拡張することもできます。 **SysAttribute** クラスは、**abstract** と宣言されているため、属性として使用できません。 次の例は、作成できる通常の属性クラスの宣言とデザインを示しています。
 
 ```xpp
@@ -67,6 +63,8 @@ public class RegularClass
 }
 ```
 
+接尾語が `Attribute` の場合は、属性名の接尾語を省略できます。 たとえば、前の例では `[Practice]` を `[PracticeAttribute]` の代わりに使用できます。
+
 ### <a name="attribute-constructors"></a>属性コンストラクター
 
 コンストラクターがパラメーターを持つようにすることで、クラスを修飾するためにメタデータが使用されるたびに、属性クラスが作成済みメタデータを格納するようにできます。 コンストラクターのパラメータは、**int**、**enum**、または **str** などの、プリミティブ型のリテラルにする必要があります。 コンパイラは、属性クラスのインスタンスを構築しません。 属性クラスの名前、およびコンストラクターのリテラル値を格納します。 したがって、属性コンストラクター内のロジックが例外をスローすると、その属性を持つクラスを修飾することによって例外が見つかりません。 例外は、後でプロセスがクラスを調べて、それが装飾されている属性を見るときに見つかります。 属性が作成されたときです。
@@ -76,6 +74,7 @@ public class RegularClass
 すべての属性クラスには名前に接尾語 **属性** があります。 **属性** サフィックスは、推奨される名前付け規則ですが、システム要件ではありません。 **アプリケーション エクスプローラー** 内のクラスを選択して **プロパティ** ウインドウで **拡張** プロパティを確認することにより、クラスが **SysAttribute** から直接 **拡張** されるか決定することができます。
 
 ## <a name="sysobsoleteattribute"></a>SysObsoleteAttribute
+
 システムは、**SysObsoleteAttribute** クラスを含むいくつかの属性を提供します。 **SysObsoleteAttribute** クラスの 1 つの使用方法は、ソース コード内の特定のメソッドが呼び出された場合、コンパイルが失敗することをコンパイラに通知することです。 コンパイラはコンパイルを拒否し、この属性の使用に格納されている特定のメッセージを表示します。 **SysObsoleteAttribute** クラスを使用すると、エラーではなく問題の警告メッセージをコンパイラに通知することもできます。
 
 ### <a name="sysobsoleteattribute-code-example"></a>SysObsoleteAttribute コードの例
@@ -89,17 +88,18 @@ class Bicycle
 ```
 
 ## <a name="metadata-reflection"></a>メタデータ リフレクション
+
 クラスに関連付けられている属性メタデータを検索するには、リフレクションを使用します。 属性リフレクションに使用するクラスは次のとおりです。
 
--   **DictClass** クラス - クラスおよびインタフェース用です。
--   **DictMethod** クラス - クラス、インターフェイス、またはテーブルのメソッド用です。
+- **DictClass** クラス - クラスおよびインタフェース用です。
+- **DictMethod** クラス - クラス、インターフェイス、またはテーブルのメソッド用です。
 
 前のリフレクション クラスで、属性メタデータを反映した方法は次のとおりです。
 
--   **getAllAttributes** メソッド
--   **getAttribute** メソッド
--   **getAttributedClasses** メソッド
--   **getAttributes** メソッド
+- **getAllAttributes** メソッド
+- **getAttribute** メソッド
+- **getAttributedClasses** メソッド
+- **getAttributes** メソッド
 
 > [!NOTE]
 > X++ コードから特定の属性で飾られたすべてのメソッドまたはクラスをリストするメカニズムはありません。 ただし、X++ コンパイラは、相互参照データベースにこの情報を記録するため、そこから情報を得ることができます。
@@ -174,4 +174,4 @@ static void AttributeReflection33Job(Args _args)
 **************/
 ```
 
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

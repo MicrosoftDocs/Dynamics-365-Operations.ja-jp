@@ -1,12 +1,10 @@
 ---
 title: 作業指示書レポート
 description: このトピックでは資産管理の作業指示書レポートについて説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 93544f0459641c5e72ec6a0af10f0db9718ad799
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3686629af4116df6fc7ea530216ec0d12ecd60bab8f7150e0d2a3917bc12adaf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780249"
 ---
 # <a name="work-order-report"></a>作業指示書レポート
 
@@ -44,9 +42,12 @@ ms.locfileid: "5022361"
 
 次の図は、レポート パラメーターの設定方法の例を示しています。
 
-![図 1](media/20-work-orders.png)
+![図 1。](media/20-work-orders.png)
 
 次の図は、その設定に基づいて生成される作業指示書レポートの例を示しています。
 
-![図 2](media/21-work-orders.png)
+![図 2。](media/21-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

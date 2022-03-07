@@ -13,17 +13,14 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c84c0e43f149224ff5a57220c71b507c42b44e0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3aa36d1cc7f3c84c2a4f8d88616f782ec634b3b8
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068512"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314431"
 ---
 # <a name="payroll---gender-option-set"></a>給与 - 性別オプション セット
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

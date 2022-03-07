@@ -2,9 +2,11 @@
 title: オンプレミス環境の問題を解決するためのスクリプト
 description: このトピックは、オンプレミス環境の問題を修正するために使用できるスクリプトの中央レポジトリとして機能します。
 author: faix
-ms.date: 07/01/2021
+manager: AnnBe
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-11-30]
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 43f0902a733168a45bb24390c713eae6b722093ef9707b27fc571d737cd2b812
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 25988d97e2ae8dbc7272da85f3cf27f5670de8db
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765086"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687326"
 ---
 # <a name="scripts-for-resolving-issues-in-on-premises-environments"></a>オンプレミス環境の問題を解決するためのスクリプト
 [!include [banner](../includes/banner.md)]
@@ -49,8 +51,6 @@ ms.locfileid: "6765086"
     #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
     
     #& $agentShare\scripts\TSG_RemoveFilesFromZip.ps1 -agentShare $agentShare -filesToRemove 'Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingMapping.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.ElectronicReportingServiceContracts.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.dll','Packages\TaxEngine\bin\Microsoft.Dynamics.ElectronicReporting.Instrumentation.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.pdb','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.dll','Packages\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFrameworkForAx.pdb'
-
-    #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
     ```
 
 3. このトピックの該当する部分から、問題を修正するために必要なコードをコピーし、新しいファイルに貼り付けます。 このファイルを、 Predeployment.ps1 スクリプトが格納されているフォルダと同じフォルダに保存します。 ファイル名は、コードをコピーしたセクションのタイトルと同じである必要があります。 修正する必要があるその他の問題について、この手順を繰り返します。
@@ -295,63 +295,3 @@ finally
 }
 
 ```
-
-## <a name="tsg_enablegmsaforaosps1"></a><a name="useGMSA"></a>TSG\_EnableGMSAForAOS.ps1
-
-次のスクリプトは、AOS が Active Directory (AD) ユーザーからグループ管理サービス アカウント (gMSA) に実行されるアカウントを変更するために使用されます。
-
->[!NOTE]
-> このスクリプトは、バージョン 10.0.17 でのみ使用できます。
-> gMSA アカウントで使用できないプリンタを各 AOS ノードに再インストールする必要があります。 詳細については、[オンプレミス環境でのネットワーク プリンター デバイスのインストール](../analytics/install-network-printer-onprem.md) を参照してください。
-
-```powershell
-param (
-    [Parameter(Mandatory)]
-    [ValidateNotNullOrEmpty()]
-    [ValidateScript({ Test-Path -Path $_ })]
-    [string] $agentShare,
-
-    [Parameter(Mandatory=$true)]
-    [string]
-    $gmsaAccount
-)
-
-$ErrorActionPreference = "Stop"
-
-$basePath = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\ |
-    Select-Object -First 1 -Expand FullName
-
-if(!(Test-Path $basePath))
-{
-    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
-}
-
-$configJsonPath = "$basePath\config.json"
-
-$configJson = Get-Content $configJsonPath | ConvertFrom-Json
-
-$updatedComponents = @()
-foreach ($component in $configJson.components)
-{
-    if($component.name -eq "AOS")
-    {
-        $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
-        $component.parameters.infrastructure.principalUserAccountName.value = $gmsaAccount
-    }
-
-    if($component.name -eq "ReportingServices")
-    {
-        $component.parameters.accountListToAccessReports.value = $gmsaAccount
-    }
-
-    $updatedComponents += $component
-}
-
-$configJson.components = $updatedComponents
-
-$configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
-
-Write-Host "Successfully updated the configuration for AOS gMSA execution."
-```
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

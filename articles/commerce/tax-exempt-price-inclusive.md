@@ -1,29 +1,26 @@
 ---
 title: 非課税の計算
 description: このトピックでは、販売時点管理 (POS) およびコール センターでの非課税計算の機能について説明します。
-author: rubendel
-manager: annbe
+author: BrianShook
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 75314397df0e7041caf9c9fcd9bd1bf0b2ce39a6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 691ad18e908a37819ce8c4aaefa25ec7ac1628a3
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409410"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779441"
 ---
 # <a name="calculation-of-tax-exemption"></a>非課税の計算
 
@@ -44,7 +41,7 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.13 以降には、**消費�
 
 この設定は、コール センターまたは店舗で作成された注文でもサポートされます。
 
-![非課税シナリオで価格を調整するための、非課税を含む価格の計算オプションの設定](media/CalcPriceInc.png)
+![非課税シナリオで価格を調整するための、非課税を含む価格の計算オプションの設定。](media/CalcPriceInc.png)
 
 ## <a name="set-up-price-reductions-for-tax-exemptions"></a>非課税の価格下方修正を設定する
 
@@ -119,3 +116,6 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.13 以降には、**消費�
 18. ジョブの同期が完了したら、POS を開きます。
 19. 品目 **91050** をトランザクションに追加します。 予定されている合計金額は **$75.06** です。
 20. **Matthew Tolley** をトランザクションに追加します。 この顧客の控除を反映するように税額が再計算されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

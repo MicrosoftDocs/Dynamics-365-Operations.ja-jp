@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesRule
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bcbd32131f9980a4f55e91b9d7ad48171069f72e
-ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
+ms.openlocfilehash: 1c1521d6bbbe12964fef0942fcc4943f12a4360a
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "4826397"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5562500"
 ---
 # <a name="set-up-segregation-of-duties"></a>職務分掌の設定
 
@@ -42,3 +41,6 @@ ms.locfileid: "4826397"
 
 > [!IMPORTANT] 
 > 職務の分離に関するルールへの準拠は、ルールを作成する際には検証されません。 既存のロールの競合を作成するルールを作成できます。 既存のユーザー ロールの割り当てが、新しいルールと競合している可能性があります。 ルールを作成または変更した後で、コンプライアンスを検証する必要があります。 詳細については、[職務分掌の競合の識別と解決](identify-resolve-conflicts-segregation-duties.md) を参照してください
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

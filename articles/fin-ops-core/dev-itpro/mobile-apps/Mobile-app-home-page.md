@@ -2,26 +2,24 @@
 title: モバイル アプリのホーム ページ
 description: このトピックでは、Finance and Operations (Dynamics 365) モバイル アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 272853
+ms.custom: intro-internal
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: e4a9d6424e2d214624c148c0565c88ea4cf4ccf9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683461"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729711"
 ---
 # <a name="mobile-app-home-page"></a>モバイル アプリのホーム ページ
 
@@ -29,8 +27,7 @@ ms.locfileid: "4683461"
 
 このトピックでは、**Finance and Operations (Dynamics 365)** モバイル アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 モバイル アプリにより、組織が業務プロセスをモバイル デバイスで使用可能になります。 IT 管理者が組織用のモバイル ワークスペースを有効にすると、ユーザーはアプリにログインしてすぐにモバイル デバイスから業務プロセスの実行を開始できます。 モバイル アプリには、生産性を高めるのに役立つ次の機能が含まれています。
 
@@ -42,7 +39,7 @@ ms.locfileid: "4683461"
 ## <a name="elements-of-the-mobile-app"></a>モバイル アプリの要素
 モバイル アプリのナビゲーションは、ダッシュボード、ワークスペース、ページ、およびアクションという 4 つの基本概念で構成されています。 
 
-[![モバイル アプリのナビゲーション概念](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![モバイル アプリのナビゲーション概念。](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. アプリを起動すると、**ダッシュボード** に移動します。
 2. ダッシュボードでは、公開された **ワークスペース** の一覧が表示されます。
@@ -56,7 +53,7 @@ ms.locfileid: "4683461"
 ## <a name="implementation-process"></a>実装プロセス
 次の図では、Microsoft に提供されるモバイル ワークスペースとカスタム モバイル ワークスペースの両方を実装するためのプロセスを表示します。 
 
-[![モバイル アプリの実装プロセス](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![モバイル アプリの実装プロセス。](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 次の表には、Microsoft によって提供されるモバイル ワークスペースとカスタム モバイル ワークスペースの両方を実装する際に役立つリソースへのリンクが含まれています。 最初の列の番号は、前述の図の番号付きの手順に対応します。
 
@@ -93,8 +90,8 @@ ms.locfileid: "4683461"
 <li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">手持在庫モバイル ワークスペース</a></li>
 <li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">販売注文モバイル ワークスペース</a></li>
 <li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">仕入先コラボレーションのモバイル ワークスペース</a></li>
-<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">プロジェクト時間入力モバイル ワークスペース</a></li>
-<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">経費管理モバイル ワークスペース</a></li>
+<li><a href="/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace">プロジェクト時間入力モバイル ワークスペース</a></li>
+<li><a href="/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace">経費管理モバイル ワークスペース</a></li>
 
 </ul></td>
 </tr>
@@ -151,3 +148,6 @@ ms.locfileid: "4683461"
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 [モバイル プラットフォームのリソース](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

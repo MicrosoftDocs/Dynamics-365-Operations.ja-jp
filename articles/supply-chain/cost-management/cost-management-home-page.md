@@ -2,28 +2,26 @@
 title: 原価管理ホーム ページ
 description: 原価管理では、原材料、半完成品、完成品、および進行中の作業資産の評価および会計処理ができます。
 author: AndersGirke
-manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc146f8a3707e830ff574964c5a8865271e69b50
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 83881e6b3bb588dad61fd14aa4db28aa76305925aab3ee08e2ebe7e001f2aff2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739110"
 ---
 # <a name="cost-management-home-page"></a>原価管理ホーム ページ
 
@@ -45,7 +43,7 @@ ms.locfileid: "4967686"
 
 製造の会計では、製造オーダーおよびバッチ オーダーで [作業オーダー原価計算](production-order-cost-analysis.md)、さらにリーン生産で [一括引き落とし原価計算](backflush-costing.md) の処理ができます。
 
-[原価管理 Power BI コンテンツ](../../dev-itpro/analytics/cost-management-content-pack.md) では、在庫および仕掛品 (WIP) 在庫の管理上の情報、および時間経過に伴ってカテゴリごとに原価がどのように流れているかを示します。 この情報は、財務諸表の詳細な補足情報として使用できます。
+[原価管理 Power BI コンテンツ](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) では、在庫および仕掛品 (WIP) 在庫の管理上の情報、および時間経過に伴ってカテゴリごとに原価がどのように流れているかを示します。 この情報は、財務諸表の詳細な補足情報として使用できます。
 
 ### <a name="additional-resources"></a>追加リソース
 
@@ -59,8 +57,10 @@ ms.locfileid: "4967686"
 
 #### <a name="blogs"></a>ブログ
 
-[Dynamics AX 製造研究開発チーム ブログ](https://blogs.msdn.microsoft.com/axmfg) および [Dynamics AX の Supply Chain Management の研究開発チーム ブログ](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、原価管理に関する意見、ニュース、その他の情報を見つけることができます。 これらの投稿の一部は原価管理の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
+[Dynamics AX 製造研究開発チーム ブログ](/archive/blogs/axmfg/) および [Dynamics AX の Supply Chain Management の研究開発チーム ブログ](https://blogs.msdn.microsoft.com/dynamicsaxscm) で、原価管理に関する意見、ニュース、その他の情報を見つけることができます。 これらの投稿の一部は原価管理の以前のバージョンに関して書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
 
 #### <a name="task-guides"></a>タスク ガイド
 
 追加のヘルプは、タスク ガイドとして使用できます。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

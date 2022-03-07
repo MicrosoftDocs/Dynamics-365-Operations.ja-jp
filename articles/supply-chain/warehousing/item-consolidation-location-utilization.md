@@ -2,26 +2,23 @@
 title: 品目の連結 - 場所の使用率
 description: このトピックでは、倉庫管理者が倉庫全体の場所の容積使用率を容易に確認およびフィルター処理できる機能について説明します。 管理者は品目の連結ページから直接場所を選択して在庫移動作業を作成することで、品目を連結することができるため、倉庫空間をより有効に活用できます。
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432288"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578611"
 ---
 # <a name="item-consolidation---location-utilization"></a>品目の連結 - 場所の使用率
 
@@ -150,7 +147,7 @@ ms.locfileid: "4432288"
 
 ## <a name="example-scenario"></a>シナリオ例
 
-次のシナリオでは、モバイル デバイスの倉庫アプリを使用して、倉庫内の 2 箇所に在庫を *調整* します。
+次のシナリオでは、倉庫管理モバイル アプリを使用して、倉庫内の 2 箇所に在庫を *調整* します。
 
 ### <a name="add-inventory-to-locations"></a>場所に在庫を追加する
 
@@ -208,3 +205,6 @@ ms.locfileid: "4432288"
 
     > [!NOTE]
    > システムは、完了する必要がある各移動に対して、1 つの作業 ID を作成します。 在庫が既に含まれている場所を指定した場合、1 つの作業 ID のみが作成されます。 新しい場所を指定した場合は、2 つの作業 ID が作成されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

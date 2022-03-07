@@ -2,11 +2,9 @@
 title: TABLENAME2ID ER 関数
 description: このトピックでは、TABLENAME2ID 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a68a8e1f4afa378ab446eae12bc90cdb3aba8b19
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0f94d00d9d40830d895e906ffbaa2a236f1efc43
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681161"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746558"
 ---
 # <a name="tablename2id-er-function"></a>TABLENAME2ID ER 関数
 
@@ -59,3 +57,6 @@ TABLENAME2ID (text)
 ## <a name="additional-resources"></a>追加リソース
 
 [その他 (ビジネス ドメインの特定の) 関数](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

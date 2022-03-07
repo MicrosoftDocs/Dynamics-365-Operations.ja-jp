@@ -2,25 +2,28 @@
 title: 貸借対照表の会計報告書
 description: この記事では、貸借対照表の既定のレポートについて説明します。 また、これらのレポートに関連付けられる構成要素を説明します。
 author: jcart1106
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0fae7ccb216ced0cbcbdb69980b3bae754a4980ecaf9314893368ae89459fa0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e96552447182f3692a19d4cfd962afbcb28e5508
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734517"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4445256"
 ---
 # <a name="balance-sheet-financial-reports"></a>貸借対照表の会計報告書
 
@@ -28,7 +31,8 @@ ms.locfileid: "6734517"
 
 この記事では、貸借対照表の既定のレポートについて説明します。 また、これらのレポートに関連付けられる構成要素を説明します。 
 
-## <a name="default-balance-sheet-reports"></a>既定の貸借対照表のレポート
+<a name="default-balance-sheet-reports"></a>既定の貸借対照表のレポート
+-----------------------------
 
 2 つの既定の貸借対照表レポートがあります。 1 つのレポートでは、セクションが積み重ねられています。 他のレポートでは、セクションは並べて表示されています。
 
@@ -67,7 +71,8 @@ ms.locfileid: "6734517"
 
 
 
-## <a name="additional-resources"></a>追加リソース
+<a name="additional-resources"></a>追加リソース
+--------
 
 [財務諸表の概要](financial-reporting-getting-started.md)
 
@@ -77,6 +82,3 @@ ms.locfileid: "6734517"
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

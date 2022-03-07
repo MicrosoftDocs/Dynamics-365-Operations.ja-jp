@@ -2,11 +2,9 @@
 title: Finance and Operations アプリ バージョン 10.0.15 のプラットフォーム更新プログラム (2021 年 1 月)
 description: このトピックでは、Finance and Operations アプリ バージョン 10.0.15 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-manager: AnnBe
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: aa5ad25f50ac4f83ff31e1fa5e69c44d8f2e6f7c
-ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
+ms.openlocfilehash: f41cbcd71456c124a9b294f1533a34fcd830327b7e568bc2b5914815246b080c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4700995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730559"
 ---
 # <a name="platform-updates-for-version-10015-of-finance-and-operations-apps-january-2021"></a>Finance and Operations アプリ バージョン 10.0.15 のプラットフォーム更新プログラム (2021 年 1 月)
 
@@ -49,7 +47,7 @@ ms.locfileid: "4700995"
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-platform-features"></a>削除済みおよび非推奨のプラットフォーム機能
 
@@ -61,3 +59,6 @@ ms.locfileid: "4700995"
 製品から機能を削除する 12 か月前に、[削除または非推奨のプラットフォーム機能](removed-deprecated-features-platform-updates.md) のトピックに廃止通知が追加されます。
 
 互換性を破る変更で、それがコンパイル時間にのみ影響を与えるが、サンドボックスと運用環境に対するバイナリ互換である場合、廃止期間は 12 ヶ月未満になります。 通常、これらの変更は、コンパイラに対して行う必要がある機能更新です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

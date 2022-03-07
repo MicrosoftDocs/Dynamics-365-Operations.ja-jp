@@ -2,16 +2,13 @@
 title: ロイヤルティの概要
 description: このトピックでは、Dynamics 365 Commerce 内でのロイヤルティ機能、および小売業者がロイヤルティ プログラムを容易に始めるのに役立つ、対応する設定手順について説明します。
 author: scott-tucker
-manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 119046ee2b783e6a4b868fff2b1d7a1b59966e7b
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 25f02517bf333716bdb7c74ce1decebcd4e30c6d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4413878"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801894"
 ---
 # <a name="loyalty-overview"></a>ロイヤルティの概要
 
@@ -151,3 +148,6 @@ ms.locfileid: "4413878"
 
     > [!NOTE]
     > 数量割引、単純割引、組み合わせ割引、およびしきい値割引などの期間割引とは異なり、出荷割引は割引明細行を作成せず、出荷費用が直接編集され、割引の名前が請求金額の説明に追加されます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

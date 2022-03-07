@@ -1,12 +1,10 @@
 ---
-title: 倉庫アプリのアプリ フィールド名のコンフィギュレーション
-description: このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。
-author: MarkusFogelberg
-manager: tfehr
+title: 倉庫管理モバイル アプリのフィールドを構成する
+description: このトピックでは、倉庫管理モバイル アプリのフィールド名と優先順位の定義および構成方法について説明します。
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
@@ -15,24 +13,24 @@ ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ac31b3d2b3b1d9ca51919fe75e06f0de1cda0c63
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8c9c1d921f68538d5b84db16b1e88e28147e6b41
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963438"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902299"
 ---
-# <a name="configure-app-field-names-in-the-warehouse-app"></a>倉庫アプリのアプリ フィールド名のコンフィギュレーション
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリのフィールドを構成する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Supply Chain Management の倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法について説明します。 
+このトピックでは、倉庫管理モバイル アプリのフィールド名と優先順位の定義および構成方法について説明します。
 
 > [!NOTE]
-> このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 Warehousing は倉庫作業の実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫アプリ フィールド名と優先順位の定義およびコンフィギュレーション方法、および Warehousing での使用方法について説明します。 FWarehousing への接続をコンフィギュレーションする方法の詳細については、チュートリアル [倉庫アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)を参照してください。
+> このトピックは、倉庫管理の機能に適用されます。 在庫管理の機能には適用しません。 倉庫管理モバイル アプリは、倉庫タスクの実行に使用できるアプリケーションです。 アプリで使用されるフィールド名を定義してコンフィギュレーションし、フィールド名に割り当てる優先順位をフィールド名をコンフィギュレーションできます。 このトピックでは、これらの倉庫管理モバイル アプリのフィールド名と優先順位の定義および構成方法と使用方法について説明します。
 
 ## <a name="configure-warehouse-app-field-names"></a>倉庫アプリ フィールド名のコンフィギュレーション
 
@@ -52,7 +50,7 @@ Warehousing をモバイル デバイスで使用するときに、**倉庫ア�
 <tbody>
 <tr class="odd">
 <td>優先入力モード</td>
-<td>このオプションは、スキャン フィールドまたは手動入力フィールドを選択したフィールド名に表示するかどうかを定義します。 これは、バーコードがフィールドに使用されるかどうかによって、フィールドを区別する場合に役立ちます。 <strong>注記:</strong> 優先入力モードを <strong>スキャン</strong> に設定したフィールド名では、バーコードが読み取れない場合や破損している場合に手動で情報を入力できます。</td>
+<td>このオプションは、スキャン フィールドまたは手動入力フィールドを選択したフィールド名に表示するかどうかを定義します。 これは、バーコードがフィールドに使用されるかどうかによって、フィールドを区別する場合に役立ちます。 <strong>注記: </strong> 優先入力モードを<strong>スキャン</strong>に設定したフィールド名では、バーコードが読み取れない場合や破損している場合に手動で情報を入力できます。</td>
 </tr>
 <tr class="even">
 <td>入力タイプ</td>
@@ -139,7 +137,9 @@ Warehousing をモバイル デバイスで使用するときに、**倉庫ア�
 
 場所などの残りのメタデータは、タスク ページに表示されませんが、詳細ページに表示されます。 ユーザー インターフェイスの詳細や例については、ブログ投稿 [Finance and Operations - Warehousing の発表](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/) を参照してください。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
-[倉庫アプリのインストールとコンフィギュレーションの概要](install-configure-warehousing-app.md)
+[倉庫管理モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

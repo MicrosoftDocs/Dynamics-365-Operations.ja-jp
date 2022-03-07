@@ -2,9 +2,11 @@
 title: クラスター位置フル
 description: このトピックでは、クラスター位置フル機能について説明します。 この機能により、クラスター ピッキングが使用されているときに、コンテナやトートの容量制限においてより大きな誤差を許容できるため、作業の中断に関するルールをより厳格に適用することができます。
 author: Mirzaab
+manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: b6a7cad070377de58d21a8eb91ee3e1ffaf1c660
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102841"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233010"
 ---
 # <a name="cluster-position-full"></a>クラスター位置フル
 
@@ -28,11 +30,14 @@ ms.locfileid: "8102841"
 
 この機能により、クラスター内の作業単位のいずれかで **フル** ボタンを実行する機能が導入されます。 以前のバージョンでは、このオプションは、通常の注文のピッキングに対してのみ使用でき、クラスター ピッキングには使用できませんでした。 ただし、この機能は、残りの作業をキャンセルするという点で、標準の **フル** ボタンとは異なります。 ユーザーが同じクラスタに別の在庫置場を追加することを推奨するものでも、自動的に新しい作業を作成するものでもありません。
 
-## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>クラスター ポジション フル機能のオン/オフ
+## <a name="turn-on-the-cluster-position-full-feature"></a>クラスター位置フルの機能をオンにする
 
-このトピックで説明する機能を使用するには、ご利用システムで *クラスター ポジション フル* 機能がオンになっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *クラスター ポジション フル* 機能を検索して、この機能のオン/オフを切り替えることができます。
+この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
-## <a name="setup"></a>設定
+- **モジュール:** *倉庫管理*
+- **クラスター名称 :** *クラスター位置フル*
+
+## <a name="setup"></a>段取り
 
 このセクションでは、*クラスター位置フル* の機能を設定および使用する際のガイドラインと例を示します。
 
@@ -208,7 +213,7 @@ ms.locfileid: "8102841"
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>モバイル デバイスフローの実行 – 製品に使用する作業確認の設定
 
-1. 倉庫 *61* のユーザーとして、Warehouse Management モバイル アプリにログインします。
+1. 倉庫 *61* でユーザーとして倉庫アプリにサインインします。
 1. **アウトバウンド \> クラスター ピッキングの作成** に移動します。
 
     **タスク : 作業をクラスターに割り当てる** ページが表示されます。

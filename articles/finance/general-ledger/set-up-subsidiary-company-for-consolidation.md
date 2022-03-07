@@ -2,9 +2,11 @@
 title: 連結のための関連法人の設定
 description: このトピックでは、連結会社の勘定表の使用方法について説明します。
 author: jinniew
+manager: AnnBe
 ms.date: 10/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: fbec5ad8fa5e17b75859c07ee64a66c9568c97d3d18b6a7616a64303d3a33f10
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44bd184514b24a816cc83f6b0070a5e08163921b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727962"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204812"
 ---
 # <a name="set-up-a-subsidiary-legal-entity-for-consolidation"></a>連結のための関連法人の設定
 

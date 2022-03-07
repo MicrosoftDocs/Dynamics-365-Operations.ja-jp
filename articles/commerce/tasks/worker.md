@@ -2,27 +2,24 @@
 title: 作業者のコンフィギュレーション
 description: この手順では、POS の販売手数料が適用される販売員としての作業者を環境設定する方法を示します。
 author: jblucher
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, HcmWorker
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd437f549ffc1f8879ce3814ace1193040b280e1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 43e65de1fda223c2d0503848e7e57936898c1b73
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413842"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804068"
 ---
 # <a name="configure-a-worker"></a>作業者のコンフィギュレーション
 
@@ -57,3 +54,6 @@ ms.locfileid: "4413842"
 6. [既定のグループ] フィールドで、値を入力または選択します。
 7. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

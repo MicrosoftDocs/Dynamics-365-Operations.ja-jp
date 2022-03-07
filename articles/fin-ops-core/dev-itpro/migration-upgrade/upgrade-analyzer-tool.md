@@ -2,11 +2,9 @@
 title: AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
 description: このトピックでは、アップグレード アナライザー ツールを使用して、Dynamics AX 2012 からアップグレードを計画する方法について説明します。
 author: tariqbell
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 70a13af8b2fb8fad6005b8a607562e33fef5e6c3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d665bf4ca5977829224d45305799d09756f8591ffc3843a9533d0f35edc6f044
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771968"
 ---
 # <a name="upgrade-from-ax-2012---plan-by-using-the-upgrade-analyzer-tool"></a>AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
 
@@ -39,10 +37,13 @@ LCS の Microsoft Power BI レポートでは、システム診断サービス�
 
 次の図は、アップグレード アナライザーを使用する手順の概要を示しています。
 
-![アナライザー プロセスのアップグレード](media/upgradeAnalyzerProcess.png)
+![アナライザー プロセスのアップグレード。](media/upgradeAnalyzerProcess.png)
 
 AX 2012 環境内のシステム診断サービスを既に使用している場合は、既存のコンピューターとは異なるコンピューターで、サービスの新しいインスタンスをコンフィギュレーションする必要があります。
 
 AX 2012 環境内のシステム診断サービスをコンフィギュレーションする方法の詳細については、[システム診断のインストールと実行](../lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md)を参照してください。
 
 システム診断サービスを構成してから数分で、AX 2012 環境が LCS プロジェクトに表示されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

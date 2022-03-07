@@ -2,26 +2,24 @@
 title: コントロールのチェックリスト
 description: この記事では、コントロールのすべてのリリース条件を分類して説明しています。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 30141
 ms.assetid: 9e67e62c-1ced-45bd-8591-941e9afb0ab1
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 641b339c2ca67aa746fa956f2e2985c72333a5b0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 80e97da850dbd87a94421adce48dd53055410b1e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681582"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783134"
 ---
 # <a name="control-checklist"></a>コントロールのチェックリスト
 
@@ -29,8 +27,7 @@ ms.locfileid: "4681582"
 
 この記事では、コントロールのすべてのリリース条件を分類して説明しています。
 
-<a name="introduction"></a>はじめに
-------------
+## <a name="introduction"></a>はじめに
 
 通常、新しいコントロールを作成する場合、主にシナリオ機能と技術的な実装に焦点を当てます。 ただし、この記事で説明されているように、コントロールが出荷できる状態になったと見なされる前に、一連のベスト プラクティス、品質、および開発リリース基準に準拠している必要があります。
 
@@ -247,3 +244,6 @@ ms.locfileid: "4681582"
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: 販売と収益性のパフォーマンス Power BI コンテンツ
 description: このトピックでは、販売と収益性のパフォーマンス Power BI コンテンツに何が含まれているのか説明します。
 author: ShylaThompson
+manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ec9ef5f4abf898100c670b1ca1cc845d6ebeeea36f21cdda3a9b7d3f1027d4e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7aafaa4c974f6b72e78f870eceb266fd0ef71900
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725213"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093566"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>販売と収益性のパフォーマンス Power BI コンテンツ
 
@@ -76,7 +78,7 @@ ms.locfileid: "6725213"
 ## <a name="understanding-the-data-model-and-entities"></a>データ モデルおよびエンティティの理解
 次のデータは、**販売と収益性のパフォーマンス** Power BI コンテンツのレポートに入力するために使用されます。 このデータは、エンティティ ストアで実施される集計の測定として表されます。 エンティティ ストアは、分析に最適化された Microsoft SQL Server データベースです。 詳細については、[エンティティ格納と Power BI の統合](power-bi-integration-entity-store.md) を参照してください。
 
-このコンテンツの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の売上キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。
+このコンテンツの集計の測定は Microsoft Dynamics AX 2012 および Microsoft Dynamics AX 2012 R3 の売上キューブに使用できた集計の測定のサブセットです。 エンティティ格納でキューブの集計の測定を公開するには、それらを配置可能にする必要があります。 詳細については、[Dynamics におけるエンティティ ストアとの Power BI の統合](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) ブログ投稿で、集計の測定をエンティティ格納へ公開する手順を参照してください。
 
 請求明細行エンティティの以下のキー集計の測定は、コンテンツの基準として使用されます。
 
@@ -105,6 +107,3 @@ ms.locfileid: "6725213"
 | 日付            | 日付                                                |
 
 既定では、コンテンツは、現在の暦年のデータが表示されます。 ただし、レポートのフィルタ セクションの日付のフィルタを変更できます。 会社フィルターを変更することもできます。
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

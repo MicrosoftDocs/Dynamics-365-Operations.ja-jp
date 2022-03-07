@@ -1,12 +1,10 @@
 ---
 title: 定期統合
-description: このトピックでは、定期的な統合について説明します。 データ移行のプロセスや、エンタープライズ システムの内外への移動は、どのプラットフォームでもサポートする必要がある重要な要素です。
+description: このトピックでは、データ移行のプロセスや、エンタープライズ システムの内外への移動など、定期的な統合について説明します。
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1223870603885ce82ffc9d7a52317e04667a9c67
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 12f45ed7bb751325bfd02f1e18ce202a219dbe00
+ms.sourcegitcommit: 97ada5d52ed1829dcf030dad254096cd8df25da8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685472"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5864340"
 ---
 # <a name="recurring-integrations"></a>定期統合
 
@@ -88,7 +86,7 @@ REST API の統合は、その他の サービス エンドポイント と同�
     ![スケジュール済みデータ ジョブの管理](./media/image013.jpg)
 
 ## <a name="submitting-data-to-recurring-data-jobs"></a>定期的なデータ ジョブにデータを送信
-統合 REST エンドポイントを使用して、クライアントと統合、ドキュメントの送信 (インポート)、またはダウンロードに使用可能なドキュメントのポーリング (エクスポート) を実行することができます。 これらのエンドポイントは OAuth をサポートします。
+統合 REST エンドポイントを使用して、クライアントと統合、ドキュメントの送信 (インポート)、またはダウンロードに使用可能なドキュメントのプル (エクスポート) を実行することができます。 これらのエンドポイントは OAuth をサポートします。
 
 ## <a name="integration-rest-apis"></a>REST API の統合
 次の API セットは、統合クライアントとアプリケーション間でデータを交換するために使用されます。
@@ -217,3 +215,6 @@ BODY
 デキュー API は、HTTPS ではなく HTTP を返します。 この動作は、運用環境などのロード バランサーを使用するアプリケーション環境で確認できます。 (1 つのボックス環境で動作を表示ことはできません)。 アプリケーションからキューから削除しようとするミドルウェア アプリケーションで、URI スキームを HTTPS に変更することをお勧めします。
 
 ![バッチ ジョブの状態](./media/show-batch-status.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

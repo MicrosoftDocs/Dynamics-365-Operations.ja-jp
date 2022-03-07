@@ -1,28 +1,25 @@
 ---
 title: 生産フローおよびバージョンの検証
 description: この手順では、新しい生産フローとリーン生産の最初のバージョンを作成する方法を示します。
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30947d01cfb85ea3dbf1aa3e4ea8e092efd18cb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6d87aa427c2bc3868e255c97ea11fd4e79456eef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432062"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573588"
 ---
 # <a name="validate-a-production-flow-and-version"></a>生産フローおよびバージョンの検証
 
@@ -64,3 +61,6 @@ ms.locfileid: "4432062"
     * 実際のサイクル時間の期間は、実際のサイクル時間を計算するために実際の分数を遡って集計されるジョブの日数です。 価は随時変更することができ、実際のサイクル時間の計算にのみ使用されます。  
 13. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

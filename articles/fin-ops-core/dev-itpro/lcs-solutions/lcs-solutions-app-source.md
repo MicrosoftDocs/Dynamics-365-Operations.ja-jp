@@ -2,11 +2,9 @@
 title: AppSource でアプリを公開するための要件
 description: このトピックでは、Dynamics 365 Finance and Operations アプリ向けのソリューションの作成要件を理解するのに役立つリソースを紹介します。
 author: kfend
-manager: AnnBe
 ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.custom: 197023
 ms.assetid: 6a5b4272-c6f3-4747-a7bf-9664d7950dad
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 4bae5238c9975db4e21edcf60f3f3c385d331ed7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ea17217f8f7d20b068434d7c2cbaf2d3f63db742
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685037"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921103"
 ---
 # <a name="requirements-for-publishing-apps-on-appsource"></a>AppSource でアプリを公開するための要件
 
@@ -34,4 +32,7 @@ Microsoft AppSource の Lifecycle Services (LCS) ソリューション パッケ
 -   [データベースのバックアップ](database-backup-lcs-solutions.md) および [データ パッケージ](process-data-packages-lcs-solutions.md)
 -   [ビジネス プロセス モデル](business-process-modeler-libraries-lcs-solutions.md)
 -   [方法](methodologies-lcs-solutions.md)
--   [マーケティング](marketing-content-lcs-solutions.md)
+-   [マーケティング](/azure/marketplace/partner-center-portal/create-new-operations-offer)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

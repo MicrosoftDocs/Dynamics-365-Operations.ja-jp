@@ -2,11 +2,9 @@
 title: ユーザー インターフェイス ファイルを翻訳します
 description: このトピックでは、Microsoft Dynamics 365 製品における UI Translation service の使用方法について説明します。
 author: kfend
-manager: AnnBe
-ms.date: 03/29/2018
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: ejcho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ad122ac1b69dfdaeee0e8512c2fbfffae7ddaec
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 52a88282ad5e72e13360f3fbd0d47c97a3d1fa1466e0381be1ad836658e6dcf2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681046"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724321"
 ---
 # <a name="translate-user-interface-files"></a>ユーザー インタ フェース ファイルの翻訳
 
@@ -34,7 +32,7 @@ Microsoft Dynamics 365 Translation Service (DTS) に関する詳細について�
 ## <a name="create-a-translation-request"></a>翻訳要求を作成する
 1. Microsoft Dynamics Lifecycle Services (LCS) で、DTS ダッシュボードの **追加** を選択して新しい翻訳要求を作成します。
 
-    ![ボタンの追加](./media/dts-request1.png "ボタンの追加")
+    ![追加ボタン。](./media/dts-request1.png "ボタンの追加")
 
     LCS ホーム ページから、またはプロジェクト内から、DTS ダッシュ ボードを開くことができます。 詳細については、[DTS にアクセス](./translation-service-overview.md#accessing-dts) を参照してください。
 
@@ -48,7 +46,7 @@ Microsoft Dynamics 365 Translation Service (DTS) に関する詳細について�
     | 製品バージョン | 製品バージョンを選択します。 LCS プロジェクト内から DTS にアクセスする場合、このフィールドではプロジェクトからの既定の製品バージョン情報を表示されます。 ただし、別のバージョンを選択できます。 |
     | 翻訳元言語、翻訳先言語 | 翻訳対象のソース言語とターゲット言語のセットを選択します。 業務で同じソース言語から複数のターゲット言語に翻訳する必要がある場合、1 つの要求ですべてのターゲット言語を選択できます。 言語名の横にあるチェック ボックスを使用してターゲット言語を選択します。 これにより、時間が節約され、1 つの要求ですべてのターゲット言語翻訳のステータスを追跡できます。 このフィールドには、選択した製品名とバージョンでサポートされているすべての言語がサポートされています。 **太字** タイプで表示される言語名は、Microsoft Dynamics 製品の一般提供 (GA) 言語です。 つまり、Microsoft のトレーニングを受けた機械翻訳 (MT) システムをこれらの言語で使用でき、MT システムは Microsoft Dynamics の用語でトレーニングされます。 GA 言語以外の場合、MT システムは一般的なドメイン トレーニングを使用します。 |
 
-![言語を選択する](./media/dts-target-lang.png "言語を選択する")
+![言語を選択する。](./media/dts-target-lang.png "言語を選択する")
 
 3. **作成** を選択します。 要求の詳細が正しく選択されていることを確認し、**はい** をクリックして続行します。 
 
@@ -72,7 +70,7 @@ Microsoft Dynamics 365 Translation Service (DTS) に関する詳細について�
 ### <a name="upload-xliff-translation-memory-files-optional"></a>XLIFF 翻訳メモリファイル (オプション) のアップロード
 以前の UI 翻訳要求の XLIFF TM ファイルがある場合、または[整列ツール](use-translation-service-tm.md)を使用し、XLIFF TM を作成した場合、それらをアップロードする前にすべての TM ファイルを含む zip ファイルを作成します。 その後、製品バージョン間の整合性を保証するために一致する文字列が再利用されます。 XLIFF TM の詳細については、[翻訳メモリ ファイル](use-translation-service-tm.md) を参照してください。
 
-![TM アップロード:](./media/dts-tm-upload.png "TM アップロード:")
+![TM アップロード。](./media/dts-tm-upload.png "TM アップロード:")
 
 複数のターゲット言語の翻訳依頼を作成した場合は、TM ファイルがどのターゲット言語用であるかを選択する必要があります。 
 
@@ -82,11 +80,11 @@ Microsoft Dynamics 365 Translation Service (DTS) に関する詳細について�
 
 ファイルのアップロードが終了したら、**送信** を選択して翻訳プロセスを開始します。 
 
-要求を送信すると、新しい要求 ID が DTS ダッシュ ボードに作成されます。 複数のターゲット言語に要求を送信した場合は、同じ要求 ID を持つ個別の行に各ターゲット言語ステータスが表示されます。 ダッシュボードの行を選択することで、要求の概要情報を表示するためにダッシュボード ウィンドウを右に展開します。  
+要求を送信すると、新しい要求 ID が DTS ダッシュ ボードに作成されます。 複数のターゲット言語に要求を送信した場合は、同じ要求 ID を持つ個別の明細行に各ターゲット言語ステータスが表示されます。 ダッシュボードの明細行を選択した場合、要求の情報の概要を表示するためにダッシュボード ページを右に展開します。  
 
 要求のステータスを確認するには、ダッシュボードで要求 ID のリンクをクリックします。 **要求ステータス** タブは、要求の情報の概要と共にアップロードしたソース ファイル一覧を表示します。
 
-![ステータス タブの要求](./media/dts-request-status.png "ステータス タブの要求")
+![ステータス タブの要求。](./media/dts-request-status.png "ステータス タブの要求")
 
 処理時間は、DTS キューに入っている要求の数と、送信するソース ファイルの文字数に依存することに注意してください。
 
@@ -97,9 +95,10 @@ Microsoft Dynamics 365 Translation Service (DTS) に関する詳細について�
     + 一般的な MT システムを使用している場合、ファイル サイズに応じて要求を数分で実行することができます。
 
 ## <a name="after-translation-is-completed"></a>翻訳の完了後
-翻訳要求の処理が完了すると、DTS から電子メール通知を受信します。 結果を要求詳細ページの **要求の出力** タブ上に表示することができます。
 
-![出力タブの要求](./media/dts-output.png "出力タブの要求")
+翻訳要求が処理されると、DTS から電子メール通知を受信します。 結果を **要求の詳細** ページの **要求出力** タブ上に表示することができます。
+
+![出力タブの要求。](./media/dts-output.png "出力タブの要求")
 
 UI 翻訳の要求では、翻訳プロセスが完了した後、出力ファイルの 2 つのタイプが使用できます。 
 
@@ -119,6 +118,9 @@ XLIFF での翻訳ファイルのレビューと編集が完了したら、次�
 3. プロンプトで、アップロードを確認します。 
 4. **共有出力** タブは、コンテンツが即座に更新されます。 再生成したばかりの対象の言語ノードを展開して、**更新日時** タイムスタンプを確認した後、更新済の出力ファイルをダウンロードします。 
 
-![再生成された出力](./media/dts-regenerate-output.png "再生成された出力")
+![再生成された出力。](./media/dts-regenerate-output.png "再生成された出力")
 
 必要に応じて何度でも再生成プロセスを繰り返すことができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

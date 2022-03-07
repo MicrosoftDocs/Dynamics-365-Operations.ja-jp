@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ec5e0ac8dd097e5ebf016683fc5c17df7ecb2305
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 25507a482b2db7c01f56679bf3e8454249de3a6b9965f9c359a2ebe2cc8445ce
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920401"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6711690"
 ---
 # <a name="quantity-that-youre-trying-to-update-exceeds-the-receiveddelivered-quantity"></a>更新しようとしている数量が、入庫済/配送済の数量を超えている場合
 
@@ -62,8 +62,8 @@ ms.locfileid: "7920401"
 
 1. **倉庫管理 \> 積荷 \> すべての積荷** に移動します。
 1. 梱包明細が生成できない積荷を選択します。
-1. アクション ペインの、**出荷と入荷** タブの、**取消** グループで、**出荷確定の取消** を選択します。
-1. **積荷明細行** タブで、問題の原因となる品目の積荷明細行を選択します。
+1. アクション ウィンドウの、 **出荷と入荷** タブの、 **取消** グループで、 **出荷確定の取消** を選択します。
+1.  **積荷明細行** タブで、問題の原因となる品目の積荷明細行を選択します。
 1. **ピッキング済数量の削減** を選択して、選択した数量を調整します。
 1. **ピッキング済数量の削減** フィールドが積荷明細行の調整を反映するように設定します。
 
@@ -75,5 +75,5 @@ ms.locfileid: "7920401"
 
 1. **売掛金勘定 \> 注文 \> すべての注文** の順に移動します。
 1. 積荷の梱包明細を転記できない販売注文を選択します。
-1. **販売注文明細行** タブで、ピッキング登録が実行された販売注文明細行を選択します。
+1.  **販売注文明細行** タブで、ピッキング登録が実行された販売注文明細行を選択します。
 1. **明細行の更新 \> ピッキング** を選択して、品目のピッキングを解除します。

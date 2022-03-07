@@ -1,33 +1,35 @@
 ---
 title: 休暇パラメーターのコンフィギュレーション
-description: Dynamics 365 Human Resources で休暇のための人事管理パラメーターを定義します。
-author: andreabichsel
-manager: tfehr
-ms.date: 11/02/2020
+description: このトピックでは、Dynamics 365 Human Resources で休暇および欠勤の人事管理パラメーターを定義する方法について説明します。
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.openlocfilehash: 7bd1aebd633af0530c550f8ec7510a0c09985ca1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4419461"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067355"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>休暇パラメーターのコンフィギュレーション
 
-Dynamics 365 Human Resources で休暇計画を設定する前に、下記を含むすべての関連する人事管理パラメーターの設定を確認することをお勧めします。
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dynamics 365 Human Resources で休暇計画を設定する前に、下記を含むすべての関連する **人事管理パラメーター** の設定を確認することをお勧めします。
 
 - 休暇申請の番号順序
 - 育児介護休業法 (FMLA) 設定
@@ -75,7 +77,7 @@ Dynamics 365 Human Resources で休暇計画を設定する前に、下記を含
 
     - **残日数の計算** を選択して、今日の残日数、または見越計上期間の残日数を表示します。 **今日現在の残日数** を選択すると、残日数には今日時点のすべての見越、調整、および申請の合計が表示されます。 **見越計上期間の時点での残日数** を選択した場合、残日数には、休暇計画の頻度で定義された見越計上期間の時点でのすべての見越、調整、申請の合計が表示されます。 
 
-    - 繰り越し有効期限バッチジョブの開始時刻を設定します。  
+    - **繰り越し有効期限** バッチ ジョブの **開始時刻** を設定します。  
     
     - **はい** を選択すると、**従業員に休暇の購入を許可する** と **従業員の休暇の売却を許可する** ことができます。 これらのオプションに対して **はい** を選択すると、休暇の購入と売却ポリシーの作成と、従業員が休暇の購入と売却の申請を送信できるようになります。
 
@@ -92,3 +94,6 @@ Dynamics 365 Human Resources で休暇計画を設定する前に、下記を含
 ## <a name="see-also"></a>参照
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

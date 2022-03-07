@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d767fdce861ccb481a3fe289480a51a7534dc207
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 187363db3030ee0741f0c7e7746295b88320162c156120112332bb78593bb673
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744657"
 ---
 # <a name="physical-remaining-quantity-in-the-unit-must-not-be-zero"></a>単位の残余現物数量がゼロではない
 
@@ -63,10 +63,10 @@ ms.locfileid: "7920227"
 
 1. **倉庫管理 \> 積荷 \> すべての積荷** に移動します。
 1. 梱包明細が生成できない積荷を選択します。
-1. アクション ペインの、**出荷と入荷** タブの、**取消** グループで、**出荷確定の取消** を選択します。
-1. **積荷明細行** タブで、超過配送を超える品目の積荷明細行を選択します。
+1. アクション ウィンドウの、 **出荷と入荷** タブの、 **取消** グループで、 **出荷確定の取消** を選択します。
+1.  **積荷明細行** タブで、超過配送を超える品目の積荷明細行を選択します。
 1. **ピッキング済数量の削減** を選択して、選択した数量を調整します。
-1. **明細行の詳細** タブで、**注文** を選択します。
+1.  **明細行の詳細** タブで、**注文** を選択します。
 1. **数量** フィールドをピッキング済数量 (つまり、**作業作成数量** フィールドの値) に設定して、梱包明細の生成が続行されるようにします。
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>積荷明細行を確認し、単位の小数点以下の精度に合わせて単位と数量を調整する

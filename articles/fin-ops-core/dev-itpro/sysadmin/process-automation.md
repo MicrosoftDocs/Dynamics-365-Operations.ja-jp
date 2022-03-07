@@ -2,11 +2,9 @@
 title: プロセスの自動化
 description: このトピックでは、プロセスの自動化を使用して、バッチ サーバーによって実行されるプロセスを簡単にスケジューリングする方法について詳しく説明します。
 author: RyanCCarlson2
-manager: tonyafehr
-ms.date: 08/12/2020
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProcessScheduleSeries
 audience: Application User, Developer, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 479f621ef05519f4f2c97112a0115dccdbf24c52
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b69fa378539e39053b6f7066ba4b6ae9984157c9bdc4f38b78de4c062c04ad09
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682512"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746540"
 ---
 # <a name="process-automation"></a>プロセスの自動化
 
@@ -32,13 +30,13 @@ ms.locfileid: "4682512"
 
 すべてのプロセス自動化の全体管理ページは、システム管理モジュールの **設定** メニューにあります。 このページには、システムで設定されているすべての自動化されたプロセス (シリーズ) が一覧表示されます。 また、このページから新しいプロセスの自動化を直接追加することもできます。 シリーズを設定した後は、この一覧から各シリーズを管理できます。 スケジュール済の作業をしばらく一時停止する場合は、シリーズ全体を編集するか、削除するか、リスト ビューにすべての発生を表示するか、シリーズを無効にするかを選択できます。 
 
-機能を無効にしても、機能管理で無効になっているプロセスは表示されません。 さらに、プロセス自動化スケジューリング エンジンでは、無効な機能に対して発生またはバックグラウンド プロセスがスケジュールされることはありません。 機能を再度有効にすると、過去のすべてのスケジュールされた出来事またはバックグラウンド プロセスが直ちに実行されます。
+機能を無効にしても、機能管理で無効になっているプロセスは表示されません。 さらに、プロセス自動化スケジューリング エンジンでは、無効な機能に対して発生またはバックグラウンド プロセスがスケジュールされることはありません。 機能を再度有効にすると、過去のすべてのスケジュールされた出来事またはバックグラウンド プロセスが直ちに実行されます。 プロセス自動化スケジューリング エンジンは、システム バッチ ジョブ、**プロセス自動化ポーリング システム ジョブ** に依存して実行されます。 ジョブはどんな時にも変更または改ざんしないでください。 
 
 ## <a name="calendar-view"></a>カレンダー表示
 
 プロセス自動化の主な利点の 1 つとして、スケジュール済の作業を単純なカレンダー表示で確認できる機能があります。  この表示では、一度に 1 週間の作業を表示できます。 このビューは、**プロセスの自動化** ページの右側に表示されます。 選択したシリーズのスケジュール済の作業が設定されます。 
 
-[![プロセス自動化カレンダー](./media/CalendarView2.png)](./media/CalendarView2.png)
+[![プロセス自動化カレンダー。](./media/CalendarView2.png)](./media/CalendarView2.png)
 
 ## <a name="occurrence-changes"></a>発生の変更
 
@@ -47,3 +45,6 @@ ms.locfileid: "4682512"
 ## <a name="developer-documentation"></a>開発者のドキュメント
 
 プロセス自動化フレームワークを使用すると、開発者はプロセス自動化フレームワークを拡張できます。 [プロセス自動化フレームワーク](../process-automation/process-automation-framework.md) ドキュメントでは、プロセス自動化ウィザードでスケジュールされたバッチ サーバーによって実行され、カレンダー表示に自動的に表示される必要があるカスタム プロセスを作成する方法について説明します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

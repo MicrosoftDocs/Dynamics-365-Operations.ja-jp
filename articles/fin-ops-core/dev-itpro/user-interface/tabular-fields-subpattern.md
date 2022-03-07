@@ -4,18 +4,22 @@ description: この記事では、表形式フィールドのサブパターン�
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
+ms.prod: ''
+ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 14761
+ms.assetid: a2c38c58-b312-44b1-bf48-c40dc8518011
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06faab4ca06d63ba9f7bff455b7468702d2738ef
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 5bff62f7584204b0079c05bc1f918a067d659507
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782992"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359725"
 ---
 # <a name="tabular-fields-subpattern"></a>表形式フィールドのサブパターン
 
@@ -31,8 +35,7 @@ ms.locfileid: "7782992"
 -   グループ コントロール
 
 ## <a name="wireframes"></a>ワイヤーフレーム
-
-[![グリッドを使用する表形式フィールドのワイヤーフレーム。](./media/tabularfields1.png)](./media/tabularfields1.png)
+### <a name="wireframe-for-tabular-fieldsmediatabularfields1png"></a>[![表形式フィールドのワイヤーフレーム。](./media/tabularfields1.png)](./media/tabularfields1.png)
 
 構造のワイヤーフレーム
 

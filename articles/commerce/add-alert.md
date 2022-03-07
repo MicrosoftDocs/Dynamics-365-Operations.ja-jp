@@ -2,15 +2,12 @@
 title: プロモーション バナー モジュール
 description: このトピックでは、プロモーション バナー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: be3cc9729b58fce9ebc9885d8cb20b63114362a0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413668"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796249"
 ---
 # <a name="promo-banner-module"></a>プロモーション バナー モジュール
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、プロモーション バナー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 プロモーション バナー モジュールは、ページにインライン情報メッセージを表示するために使用されます。 電子商取引サイトのすべてのページに表示される、サイト全体のプロモーションを表示するために使用できます。 
 
@@ -96,3 +91,6 @@ ms.locfileid: "4413668"
 [コンテンツ ブロック モジュール](add-hero-module.md)
 
 [ビデオ プレーヤー モジュール](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

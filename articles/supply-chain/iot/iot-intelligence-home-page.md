@@ -1,27 +1,24 @@
 ---
 title: IoT インテリジェンス ホーム ページ
 description: このトピックでは、IoT インテリジェンスに関する情報へのリンクについて説明します。
-author: robinarh
-manager: tfehr
+author: tonyafehr
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
-audience: Developer
-ms.reviewer: rhaertle
-ms.search.scope: Operations
-ms.custom: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: tfehr
+ms.custom: intro-internal
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbb4e2d87b4e8b7a71073e66ffc1861701ce8c3f
-ms.sourcegitcommit: bb75a2373b520a8e2b6a9a276d40697bf90ced75
+ms.openlocfilehash: 6b6c179052cdb9d1ca808d9cba089163bde0d5d5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "4717265"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782684"
 ---
 # <a name="iot-intelligence-home-page"></a>IoT インテリジェンスのホーム ページ
 
@@ -46,9 +43,9 @@ IoT インテリジェンスにより、次のシナリオがサポートされ�
 
 次の図は、Azure IoT Hub、IoT インテリジェンス、Supply Chain Management の相互作用を示しています。
 
-![IoT Hub、IoT インテリジェンス、Supply Chain Management](media/iot_intelligence.png)
+![IoT Hub、IoT インテリジェンス、Supply Chain Management。](media/iot_intelligence.png)
 
-## <a name="setup"></a>セットアップ
+## <a name="setup"></a>段取り
 
 コードを記述することなく、IoT インテリジェンスを設定およびコンフィギュレーションすることができます。 基本的な手順は次のとおりです。
 
@@ -66,3 +63,6 @@ IoT インテリジェンスにより、次のシナリオがサポートされ�
 + [アドインのアンインストール](iot-lcs-setup.md#uninstall-addin)
 + [実行中の IoT インテリジェンス シナリオの変更](iot-management.md#modify-a-running-iot-intelligence-scenario)
 + [シミュレーション オプション](iot-management.md#simulation-options)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

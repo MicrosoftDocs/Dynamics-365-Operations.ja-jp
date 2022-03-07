@@ -2,26 +2,23 @@
 title: 税エンジンの適用性
 description: このトピックでは、税エンジンの適用性について説明します。
 author: yijialuan
-manager: AnnBe
 ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE, Applicability
 audience: IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: India
 ms.author: riluan
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5d442bacb99a1772e43e5a8fef80566a32ca7b8c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: abfd947e74e8e0cace290ccc6c6638178ff52cd5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408686"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838777"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 
@@ -178,3 +175,6 @@ OR(
 ![ルックアップ列](media/gte-tax-document-applicability-change-lookups.png)
 
 **使用可能な列** で **品目 ID** を選択し、商品を一意に決定します。 右矢印アイコンをクリックして、**選択された列** 側に追加します。 HSN が不要な場合は、**選択された列** で **HSN コード** を選択し、左矢印アイコンをクリックして削除できます。 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

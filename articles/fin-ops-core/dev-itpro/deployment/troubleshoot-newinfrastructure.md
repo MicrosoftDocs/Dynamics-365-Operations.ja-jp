@@ -2,11 +2,9 @@
 title: セルフサービス配置で配置された環境のトラブルシューティング
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の問題をトラブルシューティングおよび診断する方法について説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e122487fd7bedcbd3f5de16b7435d20532d1b650
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b540697fab7c6bda5cc09a90e1144396c033df5c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685157"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750370"
 ---
 # <a name="troubleshoot-environments-deployed-through-self-service-deployment"></a>セルフサービス配置で配置された環境のトラブルシューティング
 
@@ -71,3 +69,6 @@ ms.locfileid: "4685157"
 > 環境監視には、パフォーマンスの問題を診断および軽減するための高度な SQL トラブルシューティングのツールも含まれます。 この機能は、現在は使用できませんが、すぐに追加されます。 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

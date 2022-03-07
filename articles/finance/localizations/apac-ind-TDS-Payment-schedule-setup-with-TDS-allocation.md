@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 55bfdfb97c418ec9fd856a151da46c1bcf94aa2cb4df85185b47f722d8526ef2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47551f52f35fec5ae49d696e3f4027b7d2eb2e19
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769725"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6023396"
 ---
 # <a name="set-up-payment-schedules-with-tds-allocation"></a>TDS 配賦の支払スケジュールの設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "6769725"
 
 1. **買掛金勘定 \> 支払の設定 \> 支払スケジュール** の順に移動します。
 
-    [![支払スケジュール ページ。](./media/apac-ind-TDS-27.png)](./media/apac-ind-TDS-27.png)
+    [![支払スケジュール ページ](./media/apac-ind-TDS-27.png)](./media/apac-ind-TDS-27.png)
 
 2. アクション ペインで、**新規** を選択して、支払いスケジュールを作成し、必要な情報を入力します。
 3. **配賦** フィールドで、支払スケジュールの支払の配賦に使用する手段を選択します。

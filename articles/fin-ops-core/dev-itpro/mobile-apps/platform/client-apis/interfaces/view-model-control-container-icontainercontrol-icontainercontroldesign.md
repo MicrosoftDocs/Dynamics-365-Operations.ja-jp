@@ -1,18 +1,18 @@
 ---
 title: ContainerControlDesign タイプ
 description: コンテナー コントロール デザイン オブジェクトには、すべてのコンテナー コントロール固有のプロパティがあります。
-author: tonyafehr
+author: robinarh
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: tfehr
-ms.openlocfilehash: e6ff8b50a3dcede40eceb7537a2986f96bf6c1c8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.author: rhaertle
+ms.openlocfilehash: 75754edda5296312fcdd715c1bb8cc4a235a562d
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781546"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661428"
 ---
 # <a name="containercontroldesign-type"></a>ContainerControlDesign タイプ
 

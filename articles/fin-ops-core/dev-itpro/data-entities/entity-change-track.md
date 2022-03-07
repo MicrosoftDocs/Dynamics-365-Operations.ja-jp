@@ -2,11 +2,9 @@
 title: エンティティへの変更追跡の有効化
 description: Finance and Operations からのデータの差分エクスポートを有効にする追跡の変更を使用します。
 author: Milindav2
-manager: AnnBe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -16,18 +14,26 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 402fce89b2531a967435f7daabd40c78cd761978
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bc5533dd3e9d8f35dc71d68aee108399b6b81eb1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685469"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071226"
 ---
 # <a name="enable-change-tracking-for-entities"></a>エンティティの変更追跡の有効化
 
 [!include [banner](../includes/banner.md)]
 
-変更追跡は、データ管理を使用して Finance and Operations からのデータの差分エクスポートを有効化します。 増分エクスポートでは、変更されたレコードのみがエクスポートされます。 差分エクスポートを有効にするには、エンティティの変更追跡を有効にする必要があります。 エンティティで追跡を有効にしない場合は、毎回完全なエクスポートしか有効にできません。 BYOD と BYOD 以外のシナリオで変更の追跡を有効にすることができますが、必要があることのみを表示、自分のデータベースの持ち込み (BYOD) ユース ケースでのみ、エンティティでこれがサポートされている場合は変更の追跡が削除を追跡できます。 削除処理は エンティティ内 の ルート データ ソース に対してのみ追跡されます。
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+変更追跡は、データ管理を使用して財務と運用アプリからのデータの差分エクスポートを有効化します。 増分エクスポートでは、変更されたレコードのみがエクスポートされます。 差分エクスポートを有効にするには、エンティティの変更追跡を有効にする必要があります。 エンティティで追跡を有効にしない場合は、毎回完全なエクスポートしか有効にできません。 
+
+変更追跡は、自分のデータベース (BYOD) シナリオと非 BYOD シナリオの両方に対して有効にできます。 これには、Dataverse 仮想エンティティを介したレコードの変更の取得が含まれます。
+
+> [!NOTE]
+> 変更の追跡では、エンティティがサポートしている場合、独自のデータベース (BYOD) および Dataverse 仮想エンティティのユース ケースに対してのみレコードの削除を追跡します。 他の非 BYOD シナリオでは、追跡レコードの削除は含まれません。 削除処理は エンティティ内 の ルート データ ソース に対してのみ追跡されます。
 
 ## <a name="enable-change-tracking-for-byod"></a>BYOD の変更追跡を有効する
 データ ストア (BYOD) に 1 つまたは複数のエンティティを発行するとき、変更追跡を有効にすることができます。
@@ -52,7 +58,15 @@ ms.locfileid: "4685469"
     > 変更がトリガーされた場合、変更はフィールド レベルではなくレコード全体で追跡されます。 エンティティ レコード全体がエクスポート先にエクスポートされます。 選択したオプションに関係なく、エンティティのフィールドの数はターゲットにエクスポートされた数になります。
 
 ## <a name="enable-change-tracking-for-non-byod-scenarios"></a>非 BYOD シナリオでの変更追跡の有効化
-非 BYOD シナリオでは、変更追跡は、エンティティを選択して **変更追跡** をクリックすることによって、データ管理のデータ エンティティ リスト ページから有効にできます。
+変更追跡は、非 BYOD シナリオに対して有効にできます。 これには、財務と運用アプリの Dataverse 仮想エンティティを介したレコードの変更の取得が含まれます。 エンティティで変更追跡が有効になっている場合、優先設定ヘッダーとして `odata.track-changes` を追加することで、エンティティの OData エンドポイントから変更点を取得することができます。
+
+エンティティに対する変更追跡の使用の詳細については、「[変更追跡を使用したデータと外部システムとの同期](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)」を参照してください。
+
+非 BYOD シナリオで変更追跡を有効化する方法 :
+
+1. **データ管理** ワークスペースから、**データ エンティティ** リスト ページを選択します。
+2. 変更追跡を有効にするエンティティを選択します。 
+3. アクション リボンで、**変更追跡** アクションを選択し、エンティティの変更を追跡する方法について必要なオプションを選択します。 使用可能なオプションの詳細については、前述の「[BYOD に対して変更追跡を有効にする](#enable-change-tracking-for-byod)」セクションのテーブルを参照してください。
 
 ## <a name="custom-query-for-change-tracking"></a>変更追跡用のカスタム クエリ
 次の例は、エンティティに静的メソッドを追加する方法を示しています。 メソッドがクエリを返し、ルート ノードがエンティティと同様であることを確認する必要があります。 たとえば、顧客エンティティについては、ルート ノードは custTable で、その変更追跡クエリも custTable です。
@@ -80,3 +94,6 @@ public static Query defaultCTQuery()
     return q;
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

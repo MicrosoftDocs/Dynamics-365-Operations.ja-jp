@@ -2,9 +2,11 @@
 title: Microsoft Teams と Dynamics 365 Commerce POS 間でタスク管理を同期させる
 description: このトピックでは、Microsoft Teams と Dynamics 365 Commerce の販売時点管理 (POS) の間で同期する方法について説明します。
 author: gvrmohanreddy
-ms.date: 02/17/2021
+manager: annbe
+ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c07ca28b45335de5e327305b7426d1b6de8ce5c7
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 3b4a9ad561e3bff67720a08d6e4184a81e01f734
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323500"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908272"
 ---
 # <a name="synchronize-task-management-between-microsoft-teams-and-dynamics-365-commerce-pos"></a>Microsoft Teams と Dynamics 365 Commerce POS 間でタスク管理を同期させる
 
@@ -54,9 +56,6 @@ Teams でテスト タスク リストを公開するには、次の手順に従
 ## <a name="link-pos-and-teams-for-task-management"></a>POS とタスク管理のための Teams のリンク
 
 Commerce Headquarters でタスク管理用の POS と Microsoft Teams アプリケーションをリンクするには、次の手順に従います。
-
-> [!NOTE]
-> タスク管理を Microsoft Teams に統合する前に、[Dynamics 365 Commerce および Microsoft Teams 統合](enable-teams-integration.md)が有効になっている必要があります。 
 
 1. **Commerce \> タスク管理 \> Microsoft Teams とのタスク統合** に移動します。
 1. アクション ウィンドウで、**編集** を選択します。

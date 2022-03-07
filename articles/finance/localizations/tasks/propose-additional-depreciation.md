@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f901c64902571e4137c93c536279f5dfb374523c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d82a6fcd51ce5c955e9fe5fd720d9b8516a1dc88
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408147"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222959"
 ---
 # <a name="propose-additional-depreciation"></a>割増償却の提案
 
@@ -51,3 +50,6 @@ ms.locfileid: "4408147"
 11. [OK] をクリックします。
 12. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

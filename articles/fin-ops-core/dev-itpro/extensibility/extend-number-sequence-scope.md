@@ -2,26 +2,24 @@
 title: 番号順序スコープの拡張
 description: このトピックでは、開発者が番号シーケンスのスコープを拡張する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 04/14/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
 ms.author: lgou
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b06c72e16ba071e2029cc6402cab712bbaba422
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 59f92cfd8bc23e85a8ed06c64cd09eb649485a66
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409350"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782188"
 ---
 # <a name="extend-the-scope-of-number-sequences"></a>番号順序スコープの拡張
 
@@ -51,3 +49,6 @@ ms.locfileid: "4409350"
 8. **NumberSequenceTableEntity** および **NumberSequencesReferenceEntity** データ エンティティの拡張クラスを追加します。 新しいスコープ タイプの **NumberSequenceScope** を生成するために、**GenerateNumberSequenceScopeTypes** メソッドと **GenerateNumberSequenceScopeValues** メソッドのポスト ハンドラーを作成します。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

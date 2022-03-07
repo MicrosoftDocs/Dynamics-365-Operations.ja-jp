@@ -2,11 +2,9 @@
 title: Teams での休暇要求の管理
 description: このトピックでは、Microsoft Teams で Dynamics 365 Human Resources アプリを使用して休暇を申請する方法について説明します。
 author: andreabichsel
-manager: AnnBe
-ms.date: 10/28/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
@@ -18,22 +16,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
-ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
+ms.openlocfilehash: 72fa3309b77717d0291b8b6828ed5bc4c65e95ab
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4419458"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790575"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Teams の Microsoft Dynamics 365 Human Resources アプリを使用することで、簡単に休暇を申請することができ、Microsoft Teams で休暇の残日数情報を表示することができます。 ボットと対話して情報を要求し、休暇申請を開始することができます。 **休暇** タブには、より詳細な情報が表示されます。 さらに、Human Resources アプリの外で、チームやチャットで今後の休暇についての情報を送信することもできます。
+Microsoft Teams の Dynamics 365 Human Resources アプリを使用することで、簡単に休暇を申請することができ、Microsoft Teams で休暇の残日数情報を表示することができます。 ボットと対話して情報を要求し、休暇申請を開始することができます。 **休暇** タブには、より詳細な情報が表示されます。 さらに、Human Resources アプリ外部の Teams やチャットで今後の休暇についての情報を送信することもできます。
 
 ## <a name="install-the-app"></a>アプリのインストール
 
-Human Resources アプリは、Teams ストアにあります。
+Dynamics 365 Human Resources アプリは、Teams ストアにあります。
 
 1. Microsoft Teams で省略記号を選択します。
 
@@ -70,29 +68,21 @@ Human Resources アプリは、Teams ストアにあります。
 
 ボットには次の依頼ができます:
 
-- 登録されている休暇タイプごとに、休暇残数情報を表示する。
-
-   ![Teams Human Resources 休暇アプリが残日数を表示します](./media/hr-teams-leave-app-bot-balances.png)
- 
-- 特定の休暇タイプに関する追加情報を表示する。
-
-   ![Teams Human Resources 休暇アプリが詳細情報を表示します](./media/hr-teams-leave-app-bot-details.png)
-
 - 休暇申請を開始する。
 
-   ![Teams Human Resources 休暇アプリが休暇を申請します](./media/hr-teams-leave-app-bot-request.png)
- 
-休暇申請を開始した後、カード内で日数を調整できます。
+  ![Teams チャットでの休暇申請の開始](./media/hr-teams-leave-app-initiate.png)
 
-![Teams Human Resources 休暇アプリが申請を編集します](./media/hr-teams-leave-app-bot-edit.png)
- 
-情報の入力が完了したら、**送信** を選択して、承認のために送信します。 また、**下書きとして保存** を選択すると、後で処理の続きを進めることができます。
+- チャット ボットでユーザーの休暇申請を入力します。 **休暇申請** を選択し、申請の詳細を編集します。
 
-![Teams Human Resources 休暇アプリが申請を送信します](./media/hr-teams-leave-app-bot-submit.png)
+  ![休暇申請詳細情報の編集](./media/hr-teams-leave-app-details.png)
+
+- 休暇申請詳細情報の編集が完了したら、**送信** を選択して、承認を依頼します。
+
+  ![休暇申請の送信](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Teams で休暇を管理する
 
-**休暇** タブでは、次の情報を表示できます:
+**休暇** タブでは、次の情報を表示できます: 
 
 - 登録されている休暇タイプごとに、休暇残数の情報を表示する
 
@@ -164,21 +154,51 @@ Teams 向けの Human Resources アプリをインストールすると、チー
 
 1. Teams の Human Resources アプリで、**休暇** を選択します。
 
-2. **チーム カレンダー** を選択します。
+2. **チーム カレンダー** を選択します。 カレンダーには、直属の部下の承認済と保留中の休暇が表示されます。
 
    ![Teams の Human Resources アプリでカレンダーを表示](./media/hr-teams-leave-app-view-calendar.png)
 
-カレンダーには、直属の部下の承認済と保留中の休暇が表示されます。
+   > [!NOTE]
+   > チーム カレンダーが表示できない場合は、有効にできるよう管理者に問い合わせてください。 詳細については、[インストールと設定](hr-admin-teams-leave-app.md#install-and-setup)を参照してください。
 
-![Teams の Human Resources アプリの休暇カレンダー](./media/hr-teams-leave-app-calendar.png)
+## <a name="supported-languages"></a>対応している言語
+
+Teams の Dynamics 365 Human Resources アプリでは、次の言語がサポートされます。
+
+| ロケール ID | 言語 |
+| --- | --- |
+| de-DE | ドイツ語 (ドイツ) |
+| es-ES | スペイン語 (スペイン) |
+| es-MX | スペイン語 (メキシコ) |
+| fr-CA | フランス語 (カナダ) |
+| fr-FR | フランス語 (フランス) |
+| it-IT | イタリア語 (イタリア) |
+| nl-NL | オランダ語 (オランダ) |
+| pt-BR | ポルトガル語 (ブラジル) |
+| tr-TR | トルコ語 (トルコ) |
+| zh-CN | 中国語 (簡体) |
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-Teams Human Resources アプリへのサインインまたは使用で問題が発生した場合は、次のトラブルシューティングの手順を実行してください。 トラブルシューティング後も問題が解決しない場合は、サポートにお問い合わせください。 詳細については、[サポート](hr-admin-troubleshooting-support.md) を参照してください。
+Dynamics 365 Human Resources Teams アプリへのサインインまたは使用で問題が発生した場合は、次のトラブルシューティングの手順を実行してください。 トラブルシューティング後も問題が解決しない場合は、サポートにお問い合わせください。 詳細については、[サポート](hr-admin-troubleshooting-support.md) を参照してください。
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリにサインインできない
 
 アプリにサインインできない場合は、Microsoft Teams へのサインインに使用しているアカウントが Dynamics 365 Human Resources の従業員レコードに関連付けられていない可能性があります。 システム管理者に連絡して、従業員レコードが正しく関連付けられていることを確認してください。
+
+### <a name="translations-dont-display-correctly"></a>翻訳が正しく表示されない
+
+翻訳が期待した通りに表示されない場合は、Teams で選択する言語が Human Resources **ユーザー オプション** で選択された言語と一致していることを確認してください。
+
+Teams で、**設定** の **アプリ言語** を確認します。
+
+![Teams の設定](./media/hr-teams-leave-app-settings.png)
+
+Human Resources で、**設定** を選択してから、**ユーザー オプション** を選択します。 **言語** フィールドが Teams の **アプリ言語** フィールドと一致していることを確認します。
+
+![Human Resources ユーザー オプション](./media/hr-teams-leave-app-user-options.png)
+
+それでも翻訳の問題が発生する場合は、お知らせください。 詳細については、[Finance and Operations アプリまたは Lifecycle Services (LCS) のサポートを得る](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-support?toc=/dynamics365/human-resources/toc.json)を参照してください。
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリで休暇申請を承認する際のエラー
 
@@ -196,10 +216,8 @@ Teams の Human Resources アプリには、今後のリリースに向けて修
 | --- | --- |
 | デスクトップで 400% に拡大すると、一部のアクション ボタンが表示されない場合があります。 | この拡大のレベルがサポートされるまで、代わりに拡大鏡を使用することをお勧めします。 |
 | **休暇** タブで、VoiceOver が、タイムアウト グリッドのヘッダーを読みながら、ボタンのアクションを読み上げます。 | グリッド内のヘッダーと要素は年によってグループ化され、折りたたむことができます。 VoiceOver は、これをアクション可能な項目として解釈しますが、アクション可能ではありません。 |
-| ポップアップまたはメニューが開いているときにスワイプすると、VoiceOver はポップアップまたはメニューのコンテンツを読み取りません。 | フィンガー スキャンを使用してコンテンツを確認します。 |
 | **休暇** タブで、新しい要求の **理由コード** へ移動する際に追加のスワイプ ジェスチャがあります。 | スワイプ ナビゲーションがアクセスしようとしている非表示のコントロールはありません。 |
 | **休暇** タブで、カレンダーが開いている状態でスワイプすると、新しい要求の上部または要求の編集中に移動するのではなく、コントロールの外部に出てしまいます。 | **今日に移動** が表示された場合、コントロールの最後で逆方向にスワイプして一番上に戻ることを検討してください。 |
-| VoiceOver は、日付のラベルを読み取りません。 | ペアになる日付は、常に **開始日** と **終了日** です。 |
 | **チャット** タブで、支援ツールまたはキーボードのナビゲーションを使用して日付を入力すると、フォーカスが上に戻ってきます。 | 入力領域に戻るまでタブを押し続けます。 |
 
 ## <a name="privacy-notice"></a>プライバシー通知
@@ -229,3 +247,6 @@ Human Resources アプリでチャット ボットと会話しながら、会話
 [Microsoft Teams のダウンロードとインストール](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teams ヘルプ センター](https://support.office.com/teams)</br>
 [Teams の Human Resources アプリ](hr-admin-teams-leave-app.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

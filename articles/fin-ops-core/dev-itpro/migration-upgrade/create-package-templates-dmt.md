@@ -2,11 +2,9 @@
 title: AX 2009 の移行 - パッケージ テンプレートの作成
 description: このトピックでは、Microsoft Dynamics AX 2009 から Finance and Operations へデータを移行するために使用できるパッケージ テンプレートを作成する方法について説明します。
 author: kfend
-manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
-ms.openlocfilehash: b4161ec043e6034c58643e59dcbe04be6f5d2b45
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b4f7d3ee446cad0167d9c48cf935fffd166e4598a6411942b117e8f2769b7e93
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745840"
 ---
 # <a name="ax-2009-migration--create-package-templates"></a>AX 2009 の移行 － パッケージ テンプレートの作成
 
@@ -29,7 +27,7 @@ ms.locfileid: "4683472"
 
 データ移行ツール (DMT) には、次の図に示すように、20 の事前に定義されたテンプレートが用意されています。
 
-[![データ エンティティ インポート テンプレートの一覧](./media/data-entity-templates.png)](./media/data-entity-templates.png)
+[![データ エンティティ インポート テンプレートの一覧。](./media/data-entity-templates.png)](./media/data-entity-templates.png)
 
 既存のテンプレートをカスタマイズできます。または、必要に応じて、独自のテンプレートを作成することができます。
 
@@ -42,3 +40,6 @@ ms.locfileid: "4683472"
 5. **エンティティの詳細** タブで、移行するすべてのエンティティ行の **移行対象として選択** チェック ボックスをオンにします。
 6. **順序の適用** をクリックします。
 7. カスタマイズされたテンプレートを作成するには、アプリケーション オブジェクト ツリーで、**リソース** に移動し、XML 形式で新しいテンプレートを作成します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

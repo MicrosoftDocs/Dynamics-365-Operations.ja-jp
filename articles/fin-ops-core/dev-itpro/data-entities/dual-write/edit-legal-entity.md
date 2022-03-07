@@ -1,33 +1,38 @@
 ---
 title: 二重書き込み設定後に法人を編集する
 description: このトピックでは、二重書き込みの設定後に、会社または法人を追加または削除する方法について説明します。
-author: nhelgren
+author: sabinn-msft
 ms.date: 07/21/2020
 ms.topic: article
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: v-douklo
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.author: nhelgren
+ms.author: sabinn
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25ec96bc887e911987442d935c6873366d664d85
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9445003ed936e59fa90dc96f3100c0de966aabd7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061812"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350728"
 ---
 # <a name="edit-a-legal-entity-after-dual-write-setup"></a>二重書き込み設定後に法人を編集する 
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
 二重書き込みウィザードにより、二重書き込みの設定後に会社または法人を追加または削除することが可能になります。 これは、二重書き込み環境のリンクを解除して再リンクすることなく実行できます。 
 
-このウィザードを使用すると、財務と運用アプリを Dataverse を環境にリンクすることができます。 このウィザードの一部として、1 つ以上の会社または法人を選択することもできます。 企業または法人の一覧は静的なままではなく、常に変化しています。 これは、特に段階的なロールアウトまたは買収の一部として、新しい会社を追加する必要があるためです。 これまでは、システムのダウンタイムがないと企業や法人を追加できませんでした。そのため、環境のリンクを解除して再リンクする必要がありました。 これらはすべて、特に既存のデータのために、費用が高くなる場合があります。 この機能を使用すると、既存の二重書き込み環境とのリンクを解除することなく、実稼働環境に会社を追加することができます。
+このウィザードを使用すると、Finance and Operations アプリを Dataverse 環境にリンクすることができます。 このウィザードの一部として、1 つ以上の会社または法人を選択することもできます。 企業または法人の一覧は静的なままではなく、常に変化しています。 これは、特に段階的なロールアウトまたは買収の一部として、新しい会社を追加する必要があるためです。 これまでは、システムのダウンタイムがないと企業や法人を追加できませんでした。そのため、環境のリンクを解除して再リンクする必要がありました。 これらはすべて、特に既存のデータのために、費用が高くなる場合があります。 この機能を使用すると、既存の二重書き込み環境とのリンクを解除することなく、実稼働環境に会社を追加することができます。
 
 ## <a name="add-a-company-or-legal-entity-after-dual-write-has-been-set-up"></a>二重書き込みが設定された後の会社または法人の追加 
 

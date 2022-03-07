@@ -2,16 +2,13 @@
 title: E コマース ユーザーとロールの管理
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイトの作成環境へのアクセスをユーザーに許可する方法について説明します。
 author: bicyclingfool
-manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a1f9abae20d0f2e71790a3b27337338dc042b52
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff0d3e607eb905eb9264bbb9ba151fbd527a81a2c72252252f2a45edc201e1b4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715409"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>E コマース ユーザーとロールの管理
 
@@ -71,3 +68,6 @@ Microsoft Dynamics Lifecycle Services (LCS) 環境で Dynamics 365 Commerce を�
 [サイトにおける検索エンジン最適化 (SEO) の考慮事項](search-engine-optimization-considerations.md)
 
 [コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

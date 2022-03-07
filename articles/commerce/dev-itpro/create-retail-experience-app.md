@@ -2,11 +2,9 @@
 title: Retail Experience アプリにブランディングを作成し適用する
 description: このトピックでは、ブランディングを Retail Experience アプリに適用して Google Play と Apple App Store にリリースする方法について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ed078df080af0cc1d0a3e2cea3953d34137d4b8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bb8a2606226989fa370431d3822a5626ce4ca2f44fcbbf62aabb5e8e98ce778b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683353"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749895"
 ---
 # <a name="create-and-apply-branding-to-the-retail-experience-app"></a>ブランドの作成と Retail Experience アプリへの適用
 
@@ -37,7 +35,7 @@ Retail Experience アプリは、Android および iOS スマートフォン プ
 
 Xamarin は [Xamarin 用の Visual Studio Tools](https://www.xamarin.com/download) からダウンロードできます。 
 
-Windows に Xamarin をインストールする方法を示すチュートリアルについては 「[Xamarin のリソース](https://docs.microsoft.com/xamarin/get-started/installation/index?pivots=windows)」 を参照してください。
+Windows に Xamarin をインストールする方法を示すチュートリアルについては 「[Xamarin のリソース](/xamarin/get-started/installation/index?pivots=windows)」 を参照してください。
 
 ### <a name="update-xamarin"></a>Xamarin の更新
 
@@ -201,3 +199,6 @@ Xamarin.iOS アプリケーションで利用可能な配布方法の詳細は�
 
 > [!NOTE]
 > 証明書を Apple 開発者エンタープライズ プログラムの一部として使用していて、手動でアプリをインストールする場合 (テストなど) は、手動で信頼を確立する必要があります。 詳細については [iOS にカスタム エンタープライズ アプリをインストールする](https://support.apple.com/HT204460) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

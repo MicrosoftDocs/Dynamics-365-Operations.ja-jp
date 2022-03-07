@@ -2,11 +2,9 @@
 title: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 description: このトピックでは、管理者アクセスを許可しない仮想マシンに関するよくある質問 (FAQ) への回答を示します。
 author: yukonpeegs
-manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: b9e5ab743e5adb6842ff77f27f2c23b9dec3459d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0c58e8a5a19391000833792c9484e88a2b4f70b9347d1d14a10b21a24cf809ce
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740239"
 ---
 # <a name="development-and-build-vms-that-dont-allow-admin-access-faq"></a>管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
 
@@ -102,7 +100,7 @@ LCS を使用して、クラウド開発環境にライセンス配置可能パ�
 LCS では、AOT またはライセンス配置可能パッケージをビルド環境にインストールできません。 これを回避するには、VM にリモート接続し、「[配置可能なパッケージのコマンドラインからのインストール](../deployment/install-deployable-package.md)」で説明されているようにコマンド ラインから **-devinstall** オプションを使用してライセンス配置可能パッケージをインストールします。 このコマンド ライン インストールは、プラットフォーム更新 17 で機能します。 プラットフォーム更新プログラム 17 より古いプラットフォーム バージョンを実行しており、ビルド環境への管理者アクセス権を持っていない場合、サポート リクエストを作成し、ライセンス配置可能パッケージのインストールを Microsoft に依頼します。
 
 ## <a name="is-licensing-visual-studio-by-entering-a-product-key-supported"></a>プロダクト キーを入力することによってライセンス Visual Studio はサポートされますか。
-Visual Studio に直接プロダクト キーを入力することはサポートされていません。 代わりに、Visual Studio 定期売買ライセンスを使用し、ライセンスに関連付けられている電子メール アドレス (ユーザー アカウント) で Visual Studio にサインインします。 Visual Studio ライセンスをユーザー アカウントにリンクするには、MSDN ライセンスをユーザー アカウントに割り当てるか、または https://www.visualstudio.com/subscriptions-administration を使用してユーザー アカウントにライセンスを割り当てます。
+Visual Studio に直接プロダクト キーを入力することはサポートされていません。 代わりに、Visual Studio サブスクリプション ライセンスを使用し、ライセンスに関連付けられている電子メール アドレス (ユーザー アカウント) で Visual Studio にサインインします。 Visual Studio ライセンスをユーザー アカウントにリンクするには、MSDN ライセンスをユーザー アカウントに割り当てるか、または https://www.visualstudio.com/subscriptions-administration を使用してユーザー アカウントにライセンスを割り当てます。
 
 ## <a name="can-i-upgrade-my-database-to-a-new-application-release"></a>新しいアプリケーションのリリースに、データベースをアップグレードすることはできますか？
 Lifecyle Services (LCS) の 2018 年 2 月リリースと同じく、開発環境の LCS 環境ページからデータ アップグレード パッケージを実行できます。 LCS からのデータ アップグレード パッケージの実行では、VM の管理者である必要はありません。
@@ -110,4 +108,7 @@ Lifecyle Services (LCS) の 2018 年 2 月リリースと同じく、開発環�
 [開発環境またはデモ環境でのデータのアップグレード](../migration-upgrade/upgrade-data-to-latest-update.md) で説明されているプロセスは、コマンド ラインからのデータ アップグレード パッケージを実行します。 これを行うには、VM の管理者である必要があります。
 
 ## <a name="what-do-i-need-to-know-if-i-am-developing-for-commerce"></a>コマースの開発をしている場合、何を把握する必要がありますか。
-Dynamics 365 Commerce を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../../retail/dev-itpro/cloud-dev-box.md) に記載されています。
+Dynamics 365 Commerce を開発する場合、コンフィギュレーション手順および他の重要な情報は、[管理者のアクセス権がないクラウド ホストの開発環境で作業している Retail 開発者向けのコンフィギュレーション手順](../../../commerce/dev-itpro/cloud-dev-box.md) に記載されています。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,12 +2,8 @@
 title: 独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 description: このトピックでは、オンプレミス環境における独立系ソフトウェア ベンダー (ISV) のライセンス機能について説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
 ms.custom: 70381
@@ -16,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 6b5ad11ad6f93681af752ba10ab36036b45846d2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 951e033e001163229c9a553e2e9b4f2200dcc9fa
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408963"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866324"
 ---
 # <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 
@@ -86,3 +82,6 @@ ISV ライセンスの福利厚生についての一般情報、ソリューシ�
 5. スクリプトが正常に実行されたとき、コンフィギュレーション キーがインポートされて有効になっていることを検証します。 製品では、対応するコンフィギュレーション キーは、 **ライセンス コンフィギュレーション**  ページで使用可能になり、有効になります。 既定では、コンフィギュレーションが有効です。 たとえば、ISVConfigurationKey1 と呼ばれるコンフィギュレーション キーを追加した場合、コンフィギュレーション キーの一覧に表示されます。
 
 コンフィギュレーション キーが有効になると、ISV ソリューションの変更は製品に表示されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

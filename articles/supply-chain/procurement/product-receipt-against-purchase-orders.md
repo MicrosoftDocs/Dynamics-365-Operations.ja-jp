@@ -1,12 +1,10 @@
 ---
 title: 発注書に対する製品受領書
 description: このトピックでは、入庫の際の、製品を登録するためのさまざまなオプションについて説明します。
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 11/15/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a07b6b05b8eb25b8c41a5eecbb71fb765a3e9d5f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 8c22b4f914dc7eba34f2f9a2657d21d66f38c019
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019682"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570517"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>発注書に対する製品受領書
 
@@ -55,8 +53,7 @@ ms.locfileid: "5019682"
 
 **発注書** ページの **入庫** のアクション グループから、このページにアクセスできます。 仕訳帳内の情報には、数量、日付、および分析コードに関する詳細情報が含まれています。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [発注書の概要](purchase-order-overview.md)
 
@@ -64,7 +61,10 @@ ms.locfileid: "5019682"
 
 [発注書の承認と確認](purchase-order-approval-confirmation.md)
 
-[仕入先請求書の概要](../../financials/accounts-payable/vendor-invoices-overview.md)
+[仕入先請求書の概要](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

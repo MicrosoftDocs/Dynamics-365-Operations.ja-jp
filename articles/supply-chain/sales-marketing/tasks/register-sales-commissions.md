@@ -1,27 +1,24 @@
 ---
 title: 販売コミッションの登録
 description: このトピックでは、販売コミッションを計算および登録する方法を説明します。
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CommissionTrans, LedgerTransVoucher, CustClassificationGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57e3b95cb1f4a13b49ddcd336efaeabb12e5defc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4aca37350938d54d4acf283093365bfcab64f70
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431790"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575366"
 ---
 # <a name="register-sales-commissions"></a>販売コミッションの登録
 
@@ -71,3 +68,6 @@ ms.locfileid: "4431790"
 3. ページを閉じます。
 4. **伝票** を選択します。 伝票トランザクションを確認すると、事前定義されたコミッション経費とコミッション支払勘定に転記されたコミッション金額が分かります。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

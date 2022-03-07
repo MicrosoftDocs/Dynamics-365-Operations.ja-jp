@@ -2,27 +2,24 @@
 title: Dynamics 365 Supply Chain Management 10.0.8 の新機能および変更された機能 (2020 年 2 月)
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.8 の新機能または変更された機能について説明します。
 author: kamaybac
-manager: tfehr
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 1b18965b41822c6ae6c263948c6605a229277165
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: b8508301b3dfcb36d876de0f3195c247caefcfcd22e476461ab1e8721b37976d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4432269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773397"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Dynamics 365 Supply Chain Management 10.0.8 の新機能および変更された機能 (2020 年 2 月)
 
@@ -36,28 +33,28 @@ ms.locfileid: "4432269"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクをポイントすると、その機能に対して現在使用可能な追加のドキュメントやビデオが表示されます。 これらの機能の一部には、以前の差分リリースが含まれている場合もありますが、前回の *新機能* トピックでは発表されていないので、ここに追加します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクをポイントすると、その機能に対して現在使用可能な追加のドキュメントやビデオが表示されます。 これらの機能の一部には、以前の差分リリースが含まれている場合もありますが、前回の *新機能* トピックでは発表されていないので、ここに追加します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
-- [追加の場所ゾーン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+- [追加の場所ゾーン](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 
-- [資産管理](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - 詳細については [資産管理の概要](../asset-management/index.md)を参照してください。
-- [作業のキャンセル](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - 詳細については、[例外処理のための倉庫作業のキャンセル](../warehousing/cancel-warehouse-work.md)を参照してください。
-- [作業での作業プールの変更](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - 詳細については、[作業のワークプールの変更](../warehousing/change-work-pool-on-work.md) を参照してください。
-- [クラスター位置フル](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - 詳細については、[クラスター位置フル](../warehousing/cluster-position-full.md) を参照してください。
-- [確認および転送](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - 詳細については、[確認して転送](../warehousing/confirm-and-transfer.md) を参照してください。
-- [場所のディレクティブ在庫ピッキング エイジング](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - 詳細については、[場所ディレクティブ在庫ピッキング エージング](../warehousing/location-directive-inventory-picking-aging.md) を参照してください。
-- [場所の状況](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
-- [ピッキング行のグループ化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - 詳細については、[ピッキング行のグループ化](../warehousing/pick-line-grouping.md)を参照してください。
-- [出荷の自動更新](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - 詳細については[出荷の自動更新](../warehousing/auto-update-shipment.md)を参照してください。
-- [ピック補充作業ステップの作成から要求補充作業を分割](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step)
-- [作業を分割する](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work)
-- [システム主導のクラスター ピッキング](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking)<br> - 詳細については、[システム主導のクラスター ピッキング](../warehousing/system-directed-cluster-pick.md)を参照してください。
-- [RSAT を使用したウェアハウス アプリ タスク検証](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
-- [倉庫リリース ルール](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
-- [ウェーブ ステータスの視覚化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
-- [ウェーブ テンプレートのグループ化](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - 詳細については、[ウェーブ テンプレートのグループ化](../warehousing/wave-template-grouping.md).を参照してください。
-- [作業ラインの詳細](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - 詳細については、[作業ラインの詳細](../warehousing/work-line-details.md) と [作業ラインの詳細](https://www.microsoft.com/videoplayer/embed/RE4fcYN) のビデオを参照してください。
-- [ゾーンしきい値の補充](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - 詳細については、[ゾーンのしきい値の補充](../warehousing/zone-threshold-replenishment.md) を参照してください。
+- [資産管理](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - 詳細については [資産管理の概要](../asset-management/index.md)を参照してください。
+- [作業のキャンセル](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - 詳細については、[例外処理のための倉庫作業のキャンセル](../warehousing/cancel-warehouse-work.md)を参照してください。
+- [作業での作業プールの変更](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - 詳細については、[作業のワークプールの変更](../warehousing/change-work-pool-on-work.md) を参照してください。
+- [クラスター位置フル](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - 詳細については、[クラスター位置フル](../warehousing/cluster-position-full.md) を参照してください。
+- [確認および転送](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - 詳細については、[確認して転送](../warehousing/confirm-and-transfer.md) を参照してください。
+- [場所のディレクティブ在庫ピッキング エイジング](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - 詳細については、[場所ディレクティブ在庫ピッキング エージング](../warehousing/location-directive-inventory-picking-aging.md) を参照してください。
+- [場所の状況](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
+- [ピッキング行のグループ化](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - 詳細については、[ピッキング行のグループ化](../warehousing/pick-line-grouping.md)を参照してください。
+- [出荷の自動更新](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - 詳細については[出荷の自動更新](../warehousing/auto-update-shipment.md)を参照してください。
+- [ピック補充作業ステップの作成から要求補充作業を分割](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step)
+- [作業を分割する](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work)
+- [システム主導のクラスター ピッキング](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking)<br> - 詳細については、[システム主導のクラスター ピッキング](../warehousing/system-directed-cluster-pick.md)を参照してください。
+- [RSAT を使用したウェアハウス アプリ タスク検証](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
+- [倉庫リリース ルール](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
+- [ウェーブ ステータスの視覚化](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
+- [ウェーブ テンプレートのグループ化](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - 詳細については、[ウェーブ テンプレートのグループ化](../warehousing/wave-template-grouping.md).を参照してください。
+- [作業ラインの詳細](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - 詳細については、[作業ラインの詳細](../warehousing/work-line-details.md) と [作業ラインの詳細](https://www.microsoft.com/videoplayer/embed/RE4fcYN) のビデオを参照してください。
+- [ゾーンしきい値の補充](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - 詳細については、[ゾーンのしきい値の補充](../warehousing/zone-threshold-replenishment.md) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -73,7 +70,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.8 には、プラットフ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>削除済みおよび非推奨の Supply Chain Management 機能
 
@@ -85,3 +82,6 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.8 には、プラットフ�
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

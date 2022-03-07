@@ -1,10 +1,12 @@
 ---
 title: ギフト カードとクレジット メモ操作のシームレスなオフライン切り替え
 description: このトピックでは、特定の支払タイプに対してシームレスなオフライン切り替えを提供する改善の概要について説明します。
-author: BrianShook
+author: rubendel
+manager: AnnBe
 ms.date: 02/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -12,15 +14,15 @@ ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 0bf37453740d1c2b09b5bd7ae4841f23da20a3ec
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779495"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687540"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>ギフト カードとクレジット メモ操作のシームレスなオフライン切り替え
 
@@ -30,13 +32,13 @@ ms.locfileid: "7779495"
 
 ## <a name="completing-gift-card-transactions-in-offline-mode"></a>オフライン モードにおけるギフト カード トランザクションを完了する
 
-ギフト カードの残高は、Microsoft Dynamics 365 Commerce 本社で集中管理する必要があるため、内部ギフト カードは Real-time Service に依存します。 不正またはその他の同期の問題を防ぐために、ギフト カードはトランザクションに追加されるとすぐにロックされます。 ロック機能を使用すると、ギフト カードを複数のターミナルで同時に使用することはできなくなります。 トランザクションが完了すると、ギフト カードは更新されロック解除されます。
+ギフト カードの残高は Microsoft Dynamics 365 Commerce 本社で集中管理する必要があるため、内部ギフト カードは Real-time Service に依存します。 不正またはその他の同期の問題を防ぐために、ギフト カードはトランザクションに追加されるとすぐにロックされます。 ロック機能を使用すると、ギフト カードを複数のターミナルで同時に使用することはできなくなります。 トランザクションが完了すると、ギフト カードは更新されロック解除されます。
 
 ただし、ギフト カードがトランザクションに追加された後に POS が接続を失った場合、ギフト カードは使用できなくなる場合があります。 この状況を回避するため、Dynamics 365 Commerce には POS がオフラインの間にギフト カード明細行を含むトランザクションを完了できるようにするパラメーターがあります。 このパラメーターがオンになっている場合は、強制的にオフラインにされたギフト カード トランザクションは、オフライン トランザクションと共に保存され、オフライン トランザクションが同期されるとコマース本社に同期されます。 また同期により、ギフト カードのロックは解除され、別のターミナルで使用できるようになります。
 
 オフライン モードに切り替えた後にギフト カード トランザクションを完了する機能を有効にするには、**コマース パラメーター** の **転記** タブに移動します。 このタブで、**ギフトカード** クイック タブを見つけ、**オフライン モードにおけるギフト カード トランザクションの実行を許可する** を **はい** に設定します。
 
-![オフラインのギフト カード設定。](../media/gift.png)
+![オフラインのギフト カード設定](../media/gift.png)
 
 通常、コマース パラメーターはキャッシュされます。 したがって、このパラメーターの設定が更新され、チャネルに変更を同期するために配布スケジュールが開始された後、変更が有効になるまでに最大 24 時間かかることがあります。 変更を直ちに有効にするには、Microsoft インターネット インフォメーション サービス (IIS) をリセットします。
 
@@ -46,14 +48,11 @@ ms.locfileid: "7779495"
 
 オフライン モードに切り替えた後にクレジット メモ トランザクションを完了する機能を有効にするには、**コマース パラメーター** ページの **転記** タブに移動します。 このタブで、**クレジット メモ** クイック タブを見つけ、**オフライン モードにおけるクレジット メモ トランザクションの実行を許可する** を **はい** に設定します。
 
-![オフラインのクレジット メモの設定。](../media/creditmemo.png)
+![オフラインのクレジット メモの設定](../media/creditmemo.png)
 
 通常、コマース パラメーターはキャッシュされます。 したがって、このパラメーターの設定が更新され、チャネルに変更を同期するために配布スケジュールが開始された後、変更が有効になるまでに最大 24 時間かかることがあります。 変更を直ちに有効にするには、IIS をリセットしてください。
 
 ## <a name="related-topics"></a>関連トピック
 
-- [オフライン販売時点管理 (POS) の機能](../pos-offline-functionality.md)
-- [オンラインおよびオフラインでの販売時点管理 (POS) の操作](../pos-operations.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [オフライン販売時点管理 (POS) の機能](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
+- [オンラインおよびオフラインでの販売時点管理 (POS) の操作](https://docs.microsoft.com/dynamics365/retail/pos-operations)

@@ -1,39 +1,36 @@
 ---
 title: Supply Chain Management の顧客への Sales の勘定の直接同期
 description: このトピックでは、Dynamics 365 Sales から Supply Chain Management に勘定を同期するために使用されるテンプレートと基本的なタスクについて説明します。
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 8aa03f94e0fb89a6d34ce014dbb6004a1a666327
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b3257f4582ede6cd1be8e593a5ed99f5ffd0ca6f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529213"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063088"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Supply Chain Management の顧客への Sales の勘定の直接同期
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!NOTE]
-> 見込顧客を現金化するソリューションを使用する前に、[Common Data Service for Apps へデータを統合](https://docs.microsoft.com/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
+> 見込顧客を現金化するソリューションを使用する前に、[Microsoft Dataverse for Apps へデータを統合](/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
 
 このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に勘定を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
@@ -41,7 +38,7 @@ ms.locfileid: "4529213"
 
 見込み客の現金化ソリューションは、Supply Chain Management と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。  データ統合機能で利用可能な見込み顧客を現金化するテンプレートにより、Supply Chain Management と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れが可能になります。 次の図は、Supply Chain Management と Sales の間でデータを同期させる方法を示しています。
 
-[![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![見込み客の現金化へのデータフロー。](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
@@ -49,7 +46,7 @@ ms.locfileid: "4529213"
 
 Sales から Supply Chain Management への勘定同期には、以下のテンプレートと基本的なタスクが使用されます。
 
-- **データ統合におけるテンプレートの名前:**  勘定 (Sales からFinance and Operations ) - 直接
+- **データ統合におけるテンプレートの名前:**  勘定 (Sales から Fin and Ops) - 直接
 - **プロジェクトのタスクの名前:** - 勘定 - 顧客
 
 アカウント/顧客の同期が発生する前に、同期タスクは必要ありません。
@@ -66,11 +63,11 @@ Sales から Supply Chain Management への勘定同期には、以下のテン�
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>売上の見込顧客を現金化するソリューション
 
-**勘定番号** フィールドは、**勘定** ページで利用できます。 統合をサポートするため固有なナチュラル キーとなっています。 顧客関係管理 (CRM) ソリューションのナチュラル キー機能は、すでに **勘定番号** フィールドを使用しているが、勘定ごとに一意の **勘定番号** 値を使用していない顧客に影響する可能性があります。 現時点では、統合ソリューションは、このケースをサポートしていません。
+**勘定番号** 列は、**勘定** ページで利用できます。 統合をサポートするため固有なナチュラル キーとなっています。 顧客関係管理 (CRM) ソリューションのナチュラル キー機能は、すでに **勘定番号** 列を使用しているが、勘定ごとに一意の **勘定番号** 値を使用していない顧客に影響する可能性があります。 現時点では、統合ソリューションは、このケースをサポートしていません。
 
 新しいアカウントが作成され、**勘定番号** 値が存在しない場合、番号順序を使用して自動的に生成されます。 その値は **勘定** で構成され、続いて番号順序が増加し、6 文字の接尾辞が続きます。 次に例を示します: **ACC-01000-BVRCPS**
 
-売上の統合ソリューションが適用されている場合、アップグレード スクリプトにより、売上の既存のアカウントの、**勘定番号** フィールドが設定されます。 **勘定番号** 値がない場合は、前述した番号順序を使用します。
+売上の統合ソリューションが適用されている場合、アップグレード スクリプトにより、売上の既存のアカウントの、**勘定番号** 列が設定されます。 **勘定番号** 値がない場合は、前述した番号順序を使用します。
 
 ## <a name="preconditions-and-mapping-setup"></a>前提条件とマッピングの設定
 
@@ -95,19 +92,19 @@ Sales から Supply Chain Management への勘定同期には、以下のテン�
 ## <a name="template-mapping-in-data-integration"></a>データ統合のテンプレートのマッピング
 
 > [!NOTE]
-> **支払条件**,**運賃条件**,**配送条件**,**送付方法**,および **配送モード** フィールドは、既定のマッピングに含まれていません。 これらのフィールドをマップするには、エンティティ間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
+> **支払条件**、**運賃条件**、**配送条件**、**送付方法**、および **配送モード** 列は、既定のマッピングには含まれていません。 これらの列をマップするには、テーブル間で同期される組織内のデータに固有の値マッピングを設定する必要があります。
 
 次の図は、データ統合のテンプレート マッピングの例を示しています。 
 
 > [!NOTE]
-> マッピングは、Sales から Supply Chain Management にどのフィールド情報を同期するかを表示します。
+> マッピングは、Sales から Supply Chain Management にどの列情報を同期するかを表示します。
 
-![データ統合のテンプレートのマッピング](./media/accounts-direct-template-mapping-data-integrator-1.png)
+![データ統合のテンプレートのマッピング。](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
 ## <a name="related-topics"></a>関連トピック
 
 
-[見込顧客を現金化](prospect-to-cash.md)
+[見込顧客の現金化](prospect-to-cash.md)
 
 [Supply Chain Management の顧客への Sales の勘定の直接同期](accounts-template-mapping-direct.md)
 
@@ -117,3 +114,6 @@ Sales から Supply Chain Management への勘定同期には、以下のテン�
 
 [売上請求書のヘッダーおよび明細行の Supply Chain Management から Sales への直接同期](sales-invoice-template-mapping-direct.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

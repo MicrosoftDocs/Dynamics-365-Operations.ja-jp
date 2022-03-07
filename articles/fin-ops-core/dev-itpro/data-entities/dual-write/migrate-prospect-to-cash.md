@@ -2,11 +2,9 @@
 title: データ統合からデュアル書き込みへの見込顧客の現金データへの移行
 description: このトピックでは、データ統合からデュアル書き込みへの見込顧客の現金データへの移行方法について説明します。
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-01-04
-ms.openlocfilehash: f1478f0246e7f1ff8bd72232cbaf4c2034cf4edb
-ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
+ms.openlocfilehash: f6758fe366c2ea59dc75be2f1070650eb5c2f9fc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "4959849"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750863"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>データ統合からデュアル書き込みへの見込顧客の現金データへの移行
 
@@ -98,3 +96,6 @@ ms.locfileid: "4959849"
 ## <a name="quote-and-quote-product-tables"></a>見積および見積製品テーブル
 
 **見積** テーブルについては、このトピックの前にある [オーダー テーブル](#order-table) セクションの指示に従ってください。 **見積製品** テーブルについては、[オーダー製品テーブル](#order-products-table) セクションの指示に従ってください。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

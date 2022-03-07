@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace, EcoResProductVariantPerCompanyImagePart, EcoResProductRelationType,EcoResProductAvailabilityPart,  EcoResProductReleasedSelect, EcoResProductLookup, EcoResProductVariantsPendingReleaseFormPart, EcoResProductSearchLookup, EcoResProductNumberRename, EcoResDimensionBasedConfigWorkspace, EcoResProductVariantImagePart, EcoResProductImagePart, EcoResProductVariantsPerCompanyPart, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleaseSessions, EcoResProductVariantMaintainWorkspaceConfiguration, EcoResProductProcessManufacturingWorkspaceConfiguration, EcoResProductMasterVariantsPart, EcoResProductDiscreteManufacturingWorkspaceConfiguration, EcoResProductVariantAvailabilityPart, EcoResProductInformationFactBox, EcoResProductLookupTest, EcoResProductImageTest, EcoResProductReleasedRecentlyCreatedFormPart, EcoResPhysicalProductDimensions, PdsMRCRegulatedListItem, EcoResProductAvailabilityPart, PdsMRCRestrictionList, InventItemIdLookupAllocationId, EcoResProductAvailability, EcoResProductEntityAttributeTableFieldAssociation, EcoResProductImagePart, EcoResProductRelation, EcoResProductReleaseAddProduct, EcoResProductPerCompanyListPage, EcoResProductParameters, PdsMRCRestrictedItemByCountryState, EngChgCasePreview, InventTablePreview, PdsMRCItemDetails, EngChgCaseAssociate, PdsMRCCustomerHistory, PdsMRCVendorHistory, PdsMRCRestrictedCountryStateByItem, InventItemIdGroupLookup, InventLocationLookup, PdsMRCValidityIntervalbyCountry, PdsMRCValidityIntervalbyCountry, PdsMRCEventTracker, PdsMRCReportingCountry, PdsMRCDocument, PdsMRCReportingList, PdsMRCItemCAS, GraphicsTestForm, EngChgPicklist
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 18b371494248c8b8f395996c786bb6bf7a54a6de
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527389"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987207"
 ---
 # <a name="product-information-overview"></a>製品情報の概要
 
@@ -59,7 +58,7 @@ ms.locfileid: "4527389"
 
 Supply Chain Management で製品定義を作成することができます。 製品ライフサイクル管理 (PLM)、製品データ管理 (PDM)、製品情報管理 (PIM) システムからインポートすることもできます。 複数の Supply Chain Management インスタンスが使用されている場合、1 つのインスタンスは通常、他のすべてのインスタンスの製品データのマスターとして使用されます。 この方法は、1 つのインスタンスから別のインスタンスへの製品定義データのエクスポートおよびインポートを可能にする大量のデータ エンティティによってサポートされています。
 
-多くのインスタンスへの製品データの配分をサポートするために、Supply Chain Management では Common Data Service を使用できます。 製品定義は、Supply Chain Management のインスタンスから Common Data Service にエクスポートできます。 製品定義を使用して、Dynamics 365 Sales などの他のビジネス アプリケーションに製品データをプロビジョニングすることができます。
+多くのインスタンスへの製品データの配分をサポートするために、Supply Chain Management では Microsoft Dataverse を使用できます。 製品定義は、Supply Chain Management のインスタンスから Microsoft Dataverse にエクスポートできます。 製品定義を使用して、Dynamics 365 Sales などの他のビジネス アプリケーションに製品データをプロビジョニングすることができます。
 
 動的および迅速な組織では、製品情報のデータが毎日変わることに注意してください。 したがって、正確および実際の製品データの管理は、それ自体が重要な業務プロセスです。
 

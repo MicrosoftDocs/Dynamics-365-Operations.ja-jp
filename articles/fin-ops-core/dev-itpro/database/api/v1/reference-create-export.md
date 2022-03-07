@@ -2,11 +2,9 @@
 title: データベース移動 API - 照会 - v1 - データベース エクスポートの作成
 description: このトピックでは、データベース移動に関するアプリケーション プログラミング インターフェイス (API) バージョン 1 (v1) の参照資料を提供します。
 author: laneswenka
-manager: AnnBe
 ms.date: 09/30/2020
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: f4f8baf07d693842c81d9ea51904c9cb86a1aa8a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 90f65c95fc4da954aa69736cab0ab7cb8fe83c1c
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681114"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343399"
 ---
 # <a name="create-a-database-export"></a>データベース エクスポートの作成
 
@@ -71,3 +69,6 @@ POST /databasemovement/v1/export/project/12345/environment/5362377c-bc37-4f92-b3
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

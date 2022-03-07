@@ -2,26 +2,19 @@
 title: X++ セッション ランタイム関数
 description: このトピックでは、セッション ランタイム関数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 31421
-ms.assetid: a83ec18b-cc9e-40e3-ab06-87ff1c972a6a
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13ffbcb6f2649c52a88a54703f1191855fdc167b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2eb96254b0812578ff418b5c501c3b01bde503d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408729"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783226"
 ---
 # <a name="x-session-runtime-functions"></a>X++ セッション ランタイム関数
 
@@ -29,8 +22,7 @@ ms.locfileid: "4408729"
 
 このトピックでは、セッション ランタイム関数について説明します。
 
-<a name="curext"></a>curExt
-------
+## <a name="curext"></a>curExt
 
 現在の会社に使用できる拡張を取得します。
 
@@ -151,7 +143,7 @@ int64 getCurrentPartitionRecId()
 
 ### <a name="remarks"></a>備考
 
-**getCurrentPartitionRecId** 関数に依存するコード例を参照するには、[[パーティションのフィルターを直接 Transact-SQL に含める方法](https://msdn.microsoft.com/library/5ce90a42-e862-464e-90bc-1eb16a8afd1a(AX.60).aspx)] を参照してください。
+**getCurrentPartitionRecId** 関数に依存するコード例を参照するには、[[パーティションのフィルターを直接 Transact-SQL に含める方法](/dynamicsax-2012/developer/how-to-include-a-filter-for-partition-in-direct-transact-sql)] を参照してください。
 
 ### <a name="example"></a>例
 
@@ -300,7 +292,7 @@ container runAs(
 
 ### <a name="remarks"></a>備考
 
-この関数を使用すると、別のユーザーとしてコードを実行できます。 この機能はセキュリティ上の脅威です。 したがって、この関数は、[コード アクセス セキュリティ](https://msdn.microsoft.com/library/09299e91-5b73-4cf5-a17e-f1f39b6bae76(AX.60).aspx)で実行されます。 サーバー上でこの関数を呼び出すには、**RunAsPermission** クラスからのアクセス許可が必要です。 このアプリケーション プログラミング インターフェイス (API) を使用するたびに、脅威なモデル化とする必要があります。 セキュリティの脆弱性が見つかった場合は、この API への入力を検証します。 デバッガーは、**runAs** 関数を使用して呼び出されるメソッドにあるブレークポイントを無視することがあります。 **runAs** 関数として実行される X++ コードは、Microsoft .NET Framework の共通中間言語 (CIL) として実行する必要があります。 CIL が対象となる静的メソッドに対して生成されていない場合、メソッドが見つからないことを示すエラーメッセージが表示されます。 **PartitionKey** システムの型は、*partition* パラメーターの正確な型です。 **PartitionKey** は最大長が 8 文字の文字列です。
+この関数を使用すると、別のユーザーとしてコードを実行できます。 この機能はセキュリティ上の脅威です。 したがって、この関数は、[コード アクセス セキュリティ](/dynamicsax-2012/developer/code-access-security)で実行されます。 サーバー上でこの関数を呼び出すには、**RunAsPermission** クラスからのアクセス許可が必要です。 このアプリケーション プログラミング インターフェイス (API) を使用するたびに、脅威なモデル化とする必要があります。 セキュリティの脆弱性が見つかった場合は、この API への入力を検証します。 デバッガーは、**runAs** 関数を使用して呼び出されるメソッドにあるブレークポイントを無視することがあります。 **runAs** 関数として実行される X++ コードは、Microsoft .NET Framework の共通中間言語 (CIL) として実行する必要があります。 CIL が対象となる静的メソッドに対して生成されていない場合、メソッドが見つからないことを示すエラーメッセージが表示されます。 **PartitionKey** システムの型は、*partition* パラメーターの正確な型です。 **PartitionKey** は最大長が 8 文字の文字列です。
 
 ### <a name="example"></a>例
 
@@ -354,3 +346,6 @@ static void setPrefixExample(Args _arg)
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

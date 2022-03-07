@@ -2,15 +2,12 @@
 title: 評価とレビューの管理
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーで評価とレビューを管理する方法について説明します。
 author: gvrmohanreddy
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 35a649463b853d4ff0ef158167e5a3e0bcc4ddc5e6e9007fddda82dd14a00851
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413775"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731596"
 ---
 # <a name="manage-ratings-and-reviews"></a>評価とレビューの管理
 
@@ -48,7 +45,7 @@ Commerce サイト ビルダーのレビューを読むには、次の手順を�
 
 追加のフィルターを使用すると、期間、評価、チャネル、または関連する状態 (停止、回答済、または報告済) によってレビューを制限することができます。
 
-![ホーム ページの管理](media/rnr-moderation-home.png) 
+![ホーム ページの管理。](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>レビューへの応答 
 
@@ -62,7 +59,7 @@ Commerce サイト ビルダーでレビューに返信するには、次の手�
 1. 応答テキストと、応答者に表示される名前を入力します。 既定の応答者の名前は **モデレーター** です。
 1. 完了したら、**応答を投稿** を選択します。
 
-![レビューへの応答](media/rnr-moderation-response.png) 
+![レビューへの応答。](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>レビューの削除 
 
@@ -85,7 +82,7 @@ Commerce サイト ビルダーで顧客データを検索したり削除した�
 1. 顧客にレビュー活動 (たとえば、レビューの送信、別の顧客のレビューの有用性に関する投票、または別の顧客のレビューに関するコメント) がある場合、その結果が表示されます。 各品目には、**削除** ボタンがあります。
 1. 削除する必要がある各品目について、**削除** を選択します。 確認が求められたら、**はい** を選択します。 
     
-![顧客データの削除](media/rnr-moderation-delete-reviews.png) 
+![顧客データの削除。](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - データがシステムから完全に削除されるまでに最大 7 日かかる場合があります。 モデレーターは、この遅延を顧客に通知する必要があります。
@@ -109,19 +106,19 @@ Commerce サイト ビルダーの評価とレビューの傾向を表示する�
 1. **ホーム \> レビュー \> レポート** に移動します。
 1. **PowerBI テンプレート** を選択し、テンプレートをダウンロードします。
 
-    ![Power BI テンプレートをダウンロードする](media/rnr-moderation-reports.png) 
+    ![Power BI テンプレートをダウンロードする。](media/rnr-moderation-reports.png) 
 
 1. Power BI アプリを使用して、ダウンロードしたテンプレートを開きます。 表示される **Web コンテンツへのアクセス** ダイアログ ボックスを閉じ、表示される更新エラー メッセージを閉じます。
 1. **ホーム** に移動し、**クエリの編集** を選択し、**データ ソースの設定** を選択します。
 1. **データ ソースの設定** ダイアログ ボックスで、**ソースの変更** を選択します。
 1. **URL** フィールドに、前の手順でダウンロードしたレビュー データのパスを入力します (たとえば、**c:\\reviews\\ReviewsData.csv**)。
 
-    ![コンマ区切り値ダイアログ ボックスの URL フィールド](media/rnr-powerbi-datasource-settings.png) 
+    ![コンマ区切り値ダイアログ ボックスの URL フィールド。](media/rnr-powerbi-datasource-settings.png) 
 
 1. **OK** を選択し、**変更の適用** を選択します。 データ ソースに変更を適用するには、1 ~ 2 分かかります。
 1. 評価とレビューの傾向を表示するには、**傾向シート** を選択します。
 
-    ![評価とレビューの傾向](media/rnr-powerbi-dashboard-template.png) 
+    ![評価とレビューの傾向。](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>追加リソース
 
@@ -132,3 +129,6 @@ Commerce サイト ビルダーの評価とレビューの傾向を表示する�
 [評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
 
 [Dynamics 365 Retail の商品評価の同期](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

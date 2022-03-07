@@ -2,26 +2,23 @@
 title: 倉庫フローのシーケンス番号を構成する
 description: このトピックでは、ライセンスプレート ID、ウェーブ ラベル ID、コンテナ ID、船荷証券 ID のシーケンス番号拡張機能を提供する機能の概要について説明します。
 author: GarmMSFT
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSNumberSequenceExt
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: e9ba06908b9e82763557e98715e495cfaf649753
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4432405"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574716"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>倉庫フローのシーケンス番号を構成する
 
@@ -92,3 +89,6 @@ ms.locfileid: "4432405"
     | チェック ディジット | このセグメント タイプではチェック ディジットが追加され、これはモジュロ 10 の算出がされます。 (この動作は、ライセンスプレート ID の既存のロジックと一致しています。) このセグメント タイプでは、**値** フィールドは常にキャレット (*^*)に設定され、**長さ** フィールドは常に *1* に設定されます。 |
 
 1. 最終的な番号書式の例を表示するには、**セグメント** クイックタブの下部にある **形式** フィールドを確認してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

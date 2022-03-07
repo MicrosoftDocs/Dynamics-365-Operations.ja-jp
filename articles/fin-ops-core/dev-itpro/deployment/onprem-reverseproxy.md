@@ -2,11 +2,9 @@
 title: オンプレミス環境でのプロキシのコンフィギュレーション
 description: このトピックでは、プロキシ環境下にあるオンプレミス環境を保護する方法について説明します。
 author: faix
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: f2f1631314941c96b2ab99f04fe6ef8ac7934f4f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fc0febb59368096d8fdf7561f2a501189ca7edc953bdd13dc2c240d0a237e3ef
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712554"
 ---
 # <a name="configure-proxies-for-on-premises-environments"></a>オンプレミス環境でのプロキシのコンフィギュレーション
 
@@ -66,3 +64,6 @@ LocalAgent は Azure リソースと通信する必要があります。 結果�
 - dc.services.visualstudio.com
 - uswelcs1lcm.blob.core.windows.net
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Dynamics 365 Supply Chain Management 10.0.7 (2020 年 1 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.7 の新機能または変更された機能について説明します。
 author: josaw1
-manager: tfehr
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 4da0c95d753685cc9cce774dc63309a53bd2fbd0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 031feb3c2fa55b182deb0863cb1fc3d63652a03f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963538"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814879"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1007-january-2020"></a>Dynamics 365 Supply Chain Management 10.0.7 (2020 年 1 月) の新機能および変更された機能
 
@@ -64,3 +62,5 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.7 には、プラットフ�
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 068f9cd8d59c13c14990e9eb76040df3d30464be4a7b01d59e70a164bf2532b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: afac787a70b20903e0fa2f106cc414e99db480d3
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738037"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655970"
 ---
 # <a name="enable-automatic-linking-of-identity-records-to-customer-accounts"></a>ID レコードの顧客 ID への自動リンクを有効にする 
 

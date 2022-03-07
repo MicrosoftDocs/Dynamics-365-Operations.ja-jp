@@ -2,27 +2,24 @@
 title: 手動梱包の設定 (2016 年 2 月 & 2016 年 5 月)
 description: 梱包プロセスで、製品を検証してコンテナーに梱包できます。
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e1e99b479752a027c60a878c57bd35d4219981
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 2843c42474fcd4afbbc2cd7753c0d06cfe467dbe
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432347"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810369"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>手動梱包の設定 (2016 年 2 月 & 2016 年 5 月)
 
@@ -95,3 +92,6 @@ ms.locfileid: "4432347"
 8. [重量単位] フィールドで、値を入力または選択します。
 9. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

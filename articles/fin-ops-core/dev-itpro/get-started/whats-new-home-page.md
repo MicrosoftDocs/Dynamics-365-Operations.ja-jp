@@ -1,37 +1,41 @@
 ---
-title: プラットフォーム更新の新機能と変更された機能
+title: Platform update における新機能および変更された機能
 description: このトピックでは、Finance and Operations アプリのプラットフォーム更新における新しい機能と変更された機能について説明するトピックを示します。
 author: sericks007
-manager: AnnBe
-ms.date: 11/20/2020
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 03a1b3d52080d4f6bf1685ad68012970278d6104
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fe07551069e5e9b619715dd006dca4679a1c02ea
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685145"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472185"
 ---
-# <a name="whats-new-and-changed-in-platform-updates"></a>プラットフォーム更新の新機能と変更された機能
+# <a name="whats-new-or-changed-in-platform-updates"></a>Platform update における新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 Finance and Operations アプリのプラットフォーム更新での新機能や変更事項を確認するには、次のトピックを参照してください。
 
-| **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細**                                                                                                                                                                                                                        |
+| **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細はこちら**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| プラットフォーム更新プログラム 10.0.16 | 7.0.5860     | 2021 年 2 月     | [Finance and Operations アプリ バージョン 10.0.16 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-16.md)  |
+| プラットフォーム更新プログラム 10.0.22 | 7.0.6164 | 2021 年 11 月     | [Finance and Operations アプリ バージョン 10.0.22 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-22.md)  |
+| プラットフォーム更新プログラム 10.0.21 | 7.0.6129 | 2021 年 10 月     | [Finance and Operations アプリ バージョン 10.0.21 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-21.md)  |
+| プラットフォーム更新プログラム 10.0.20 | 7.0.6060    | 2021 年 8 月     | [Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-20.md)  |
+| プラットフォーム更新プログラム 10.0.19 | 7.0.6009    | 2021年 6 月     | [Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-19.md)  |
+| プラットフォーム更新プログラム 10.0.18 | 7.0.5968    | 2021 年 5 月     | [Finance and Operations アプリ バージョン 10.0.18 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-18.md)  |
+| プラットフォーム更新プログラム 10.0.17 | 7.0.5934    | 2021 年 4 月     | [Finance and Operations アプリ バージョン 10.0.17 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-17.md)  |
+| プラットフォーム更新プログラム 10.0.16 | 7.0.5860    | 2021 年 2 月  | [Finance and Operations アプリ バージョン 10.0.16 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-16.md)  |
 | プラットフォーム更新プログラム 10.0.15 | 7.0.5816     | 2021 年 1 月     | [Finance and Operations アプリ バージョン 10.0.15 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-15.md)  |
 | プラットフォーム更新プログラム 10.0.14 | 7.0.5778      | 2020 年 11 月     | [Finance and Operations アプリ バージョン 10.0.14 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-14.md)  |
 | プラットフォーム更新プログラム 10.0.13 | 7.0.5746      | 2020 年 10 月     | [Finance and Operations アプリ バージョン 10.0.13 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-13.md)  |
@@ -67,3 +71,6 @@ Finance and Operations アプリのプラットフォーム更新での新機能
 | プラットフォーム update 1  | 7.0.4127.16103   | 2016 年 5 月         | [Dynamics AX プラットフォーム更新プログラム 1 の新機能および変更された機能](../../fin-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md)                                    |
 | Dynamics AX 7.0                | 7.0.4030.16079   | 2016 年 2 月    | [Dynamics AX 7.0 の新機能および変更された機能](../../fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                                         |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

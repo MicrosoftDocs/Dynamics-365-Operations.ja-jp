@@ -1,7 +1,7 @@
 ---
 title: 仕訳元帳タイプ
 description: このトピックでは、財務仕訳帳に設定できる仕訳帳タイプについて説明します。
-author: kweekley
+author: ShylaThompson
 ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 253da3d5cf894820e516b6b4f8d2a4fce40c92db
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 34390014e0094518df45b1cc38e40ca4aa82de54
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7727020"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823695"
 ---
 # <a name="ledger-journal-types"></a>仕訳元帳タイプ
 

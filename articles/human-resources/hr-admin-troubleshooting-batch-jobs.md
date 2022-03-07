@@ -2,31 +2,33 @@
 title: 数時間後にバッチ ジョブのスケジュールを設定して、パフォーマンスを最適化する
 description: このトピックでは、数時間後の実行時間が長いバッチ ジョブのスケジュールを設定して、Microsoft Dynamics 365 Human Resources でのパフォーマンスに関する問題を解決する方法について説明します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Human Resources
+ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 452a87cf5ba6c1ac73636584d75b2ec2ac555e02
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 14354ba9454b8837246b75cd413497553423511e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527768"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065429"
 ---
 # <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a>数時間後にバッチ ジョブのスケジュールを設定して、パフォーマンスを最適化する
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 ## <a name="issue"></a>問題
 
@@ -52,11 +54,11 @@ Microsoft Dynamics 365 Human Resources は、通常の営業時間中に実行�
 
 3. **バックグラウンドで実行** を選択して、**再実行** を選択します。
 
-   ![再実行の設定](media/talent-batch-history-cleanup-recurrence.png)
+   ![再実行の設定。](media/talent-batch-history-cleanup-recurrence.png)
 
 4. **再実行の定義** で、**開始日** および **開始時刻** を時間外または週末に発生するよう設定します。 **終了日なし** を選択します。 
 
-   ![再実行の開始日時の定義](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![再実行の開始日時の定義。](media/talent-batch-history-cleanup-define-recurrence.png)
 
 5. **OK** を選択します。
 
@@ -65,3 +67,6 @@ Microsoft Dynamics 365 Human Resources は、通常の営業時間中に実行�
 ## <a name="additional-resources"></a>追加リソース
 
 [自動クリーンアップ タスクを使用したパフォーマンスの最適化](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

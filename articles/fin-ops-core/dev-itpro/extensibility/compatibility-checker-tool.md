@@ -2,26 +2,24 @@
 title: 互換性チェック ツール
 description: このトピックでは、メタデータの互換性を破る変更を検索して報告する互換性チェックツールについて説明します。
 author: smithanataraj
-manager: AnnBe
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: 38bad607ce8a5241b2cfb89f1fd53c803eae6707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: da95f351797ad04eb131c4fbfa149db15a6029fc
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409266"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781648"
 ---
 # <a name="compatibility-checker-tool"></a>互換性チェック ツール
 
@@ -146,3 +144,6 @@ CompatibilityChecker.exe -BaselineDirectory="\\servername\archive\Build1\Baselin
 ### <a name="application-elements"></a>申請の要素
 
 + **要素を削除する** – ユーザーは、要素の存在にコンパイル時の依存関係を持っている可能性があります。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: 現代レポートのデザイン テンプレートのインストール
-description: このトピックでは、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。 これらのサンプルを使用すると、ヘッダーとフッターに柔軟なブランドのあるグラフィックの豊富なビジネス ドキュメントを作成することができます。
+description: このトピックでは、最新のレポート デザイン テンプレートをアプリケーション スイートにインストールする方法について説明します。
 author: tjvass
 manager: AnnBe
 ms.date: 01/12/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b74bd55388c7dc9fa05ab28c552ae12493a636ba
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7662a4fb929e01757de775b8d8621ebd51b7c25d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685287"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094199"
 ---
 # <a name="install-modern-report-design-templates"></a>現代レポートのデザイン テンプレートのインストール
 

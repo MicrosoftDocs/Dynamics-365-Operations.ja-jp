@@ -2,11 +2,9 @@
 title: テスト データのナビゲーション概念
 description: このトピックでは、ナビゲーションを使用してテスト データ生成メソッドの発見可能性を単純化する方法に関する情報を提供します。
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.openlocfilehash: 99467eb7aa302024c93a1e5fa271e87b205cf997
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cd59f852bc625e8ac28a97b08c9d3cd416d09437
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680920"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866206"
 ---
 # <a name="navigation-concepts-for-test-data"></a>テスト データのナビゲーション概念
 
@@ -148,3 +146,6 @@ AtlDataHelpers
 
 AtlDataWHSHelpers
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

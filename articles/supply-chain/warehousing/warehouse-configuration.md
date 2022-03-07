@@ -2,27 +2,27 @@
 title: 倉庫のコンフィギュレーションの概要
 description: この記事は、倉庫をコンフィギュレーションする方法について説明します。 これには、倉庫レイアウトおよび倉庫プロセスを有効にする方法に関する情報が含まれます。
 author: perlynne
-manager: tfehr
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 11554
+ms.custom:
+- "11554"
+- intro-internal
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b0ebb5d7f77e2104d0280bcee7c018d9cf97bd5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970159"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983007"
 ---
 # <a name="warehouse-configuration-overview"></a>倉庫のコンフィギュレーションの概要
 
@@ -111,10 +111,12 @@ Supply Chain Management で倉庫管理を使用するには、倉庫を作成�
 
 場所ディレクティブの明細行と関連付けられるアクションの定義をすばやく、容易にするには、事前に定義された戦略の 1 つを使用します。 たとえば、**作業を受け取らない空の場所** 戦略を使用して倉庫の空いている場所を検索したり、出荷販売ピッキングに対して **FEFO バッチ引当** 戦略を使用できます。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [WMS に対応した倉庫の場所のコンフィギュレーション](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

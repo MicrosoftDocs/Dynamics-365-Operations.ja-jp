@@ -1,31 +1,30 @@
 ---
-title: 作業者の給付金プランの作成
-description: Microsoft Dynamics 365 Human Resources で作業者の給付金プランを作成して、従業員の給付金プランを選択および給付金プランの選択を確認することができます。
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: 作業者の福利厚生計画の作成
+description: このトピックでは、Microsoft Dynamics 365 Human Resources で、作業者の給付金プランを作成、選択、および確認する方法について説明します。
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ebd19cba8dd7cac8ccf6d17d4206731be87a225
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 701bc6f1bb3ef684b163c32032e1094c8ae4deb0
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419323"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417407"
 ---
-# <a name="create-worker-benefit-plans"></a>作業者の給付金プランの作成
+# <a name="create-worker-benefit-plans"></a>作業者の福利厚生計画の作成
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources で作業者の給付金プランを作成して、従業員の給付金プランを選択および給付金プランの選択を確認することができます。 通常、従業員は従業員のセルフ サービスを使用して給付金プランを選択し、給付金プランの管理者はその選択を確認します。 
 
@@ -49,3 +48,6 @@ Microsoft Dynamics 365 Human Resources で作業者の給付金プランを作�
    | 計画 | プラン クイック タブには、指定したフィルター基準を満たすプランが表示されます。 HR スタッフによって設定された関連コンフィギュレーション オプションと、従業員によって選択された登録の選択は、各行に含まれています。 修飾フィールドでは、プランの選択に検証の競合があるかどうかを指定します。 |
 
 4. **保存** を選択します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

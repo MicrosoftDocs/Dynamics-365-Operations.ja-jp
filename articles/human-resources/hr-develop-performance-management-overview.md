@@ -2,29 +2,30 @@
 title: パフォーマンス管理
 description: 業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。 次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
-ms.custom: 221024
+ms.search.scope: Human Resources
+ms.custom:
+- "221024"
+- intro-internal
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc0821a2e3974bee93fc40241fd141374906c456e73730d82d902924b56c0a04
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732180"
 ---
 # <a name="performance-management"></a>パフォーマンス管理
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 業績管理プロセスにより、従業員は管理者と業績を文書化し、話し合うことができます。 次に、管理者は、従業員にフィードバックおよびガイダンスを提供できます。  
 
@@ -34,7 +35,7 @@ ms.locfileid: "4419382"
 -   目標
 -   業績の確認
 
-次の図は、業績管理の主要なコンポーネントがどのように相互に関連するかを示します。 [![業績プロセスの概要](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+次の図は、業績管理の主要なコンポーネントがどのように相互に関連するかを示します。 [![業績プロセスの概要。](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>業績仕訳
 
@@ -93,7 +94,7 @@ ms.locfileid: "4419382"
 
 作成したテンプレートに基づく新しい確認を作成できます。 たとえば、1 対 1、開発計画、定期的な確認のためのテンプレートを作成できます。 新しい確認を作成するときにテンプレートを選択できます。
 
-レビューを印刷するには、**レビューを印刷** ボタンを選択します。 **レビュー** ページにボタンが表示されない場合は、**機能管理** ワークスペースでその機能が有効になっていることを確認してください。 機能管理の詳細については [機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
+レビューを印刷するには、**レビューを印刷** ボタンを選択します。 **レビュー** ページにボタンが表示されない場合は、**機能管理** ワークスペースでその機能が有効になっていることを確認してください。 機能管理の詳細については [機能管理の概要](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 
 > [!NOTE]
 > 業績評価の印刷機能は、人事でのみ使用できます。 Dynamics 365 Finance では使用できません。
@@ -163,3 +164,5 @@ Worker Review ワークフローには 2 つの要素があります:
 ### <a name="review-types"></a>確認タイプ
 
 業績確認タイプは、確認の動作をコントロールできます。 確認のためのワークフローを有効にするか、または無効にすることができます。 確認がワークフローを使用していない場合は、確認の作成時に使用される既定のステータスを定義できます。 従業員、管理者、または両方が確認でサインオフする必要があるかどうかを選択することもできます。
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: パッケージのアンインストール
 description: このトピックでは、配置可能パッケージを環境から削除する方法について説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac77f92ae947571dda5ee3ff2cf0aa97381b9b6f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 46b39c2b4f48072bd1eced44defc96c049b7408f714040586ecd2407e0518452
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685453"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763504"
 ---
 # <a name="uninstall-a-package"></a>パッケージのアンインストール
 
@@ -48,3 +46,6 @@ ms.locfileid: "4685453"
 4. パッケージを Lifecycle Services アセット ライブラリにアップロードします。 アセットが検証を終了するのを待ち、ページの右側にあるアセットの詳細パネルに表示される任意の警告を確認します。
 5. 配置可能パッケージをインストールします。 配置可能パッケージをインストールする方法の詳細については、[クラウド配置に更新プログラムを適用する](apply-deployable-package-system.md)を参照してください。
 6. 実稼動環境で、この手順を実行する前に、パッケージがアンインストールされたことを確認します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

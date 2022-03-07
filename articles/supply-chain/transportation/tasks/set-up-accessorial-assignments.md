@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSAccessorialAssignment
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d7f48da374a0434130f2cf95bf77a126635cd63
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: eed109551762ff2e120ab4362c6ca0f01f71d0c2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4432335"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233754"
 ---
 # <a name="set-up-accessorial-assignments"></a>付帯サービス割り当ての設定
 
@@ -50,3 +49,6 @@ ms.locfileid: "4432335"
 14. [付帯サービス手数料タイプ] フィールドに数値を入力します。
 15. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

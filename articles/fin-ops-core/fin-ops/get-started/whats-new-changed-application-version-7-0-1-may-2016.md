@@ -2,11 +2,9 @@
 title: Dynamics AX application version 7.0.1 (2016 年 5 月) の新機能および変更された機能
 description: この記事では、Microsoft Dynamics AX application version 7.0.1 の新機能および変更された機能について説明します。 このバージョンは、2016 年 5 月にリリースされ、7.0.1265.23014 のビルド番号を持ちます。
 author: sericks007
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 17067ff534e0e3f4636d7a307563128db55cf2ba
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9a455ffbc4396ea4bf0e3df12e7acdcbfeaa5f5269dbe772848341ac0d22a5e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748267"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Dynamics AX application version 7.0.1 (2016 年 5 月) の新機能および変更された機能
 
@@ -78,7 +76,7 @@ ms.locfileid: "4797167"
 </tr>
 <tr>
 <td>同じ品目でさまざまな製品分析コードを持つ品目を含む BOM をサポートします。</td>
-<td>実稼動環境で 1 つまたは複数の製品分析コードを使用している場合、同じ品目の異なるバリアントに基づいて、品目を生産したい状況を手に入れることができます。 詳細については、<a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">このブログ</a>を参照してください。</td>
+<td>実稼動環境で 1 つまたは複数の製品分析コードを使用している場合、同じ品目の異なるバリアントに基づいて、品目を生産したい状況を手に入れることができます。 詳細については、<a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">このブログ</a>を参照してください。</td>
 </tr>
 <tr>
 <td>BOM の最初のレベルでの循環構造による製造オーダーは、原材料リソースを計画するための BOM レベルの計算から除外されます。</td>
@@ -106,3 +104,6 @@ ms.locfileid: "4797167"
 [Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md)
 
 [新規または更新されたタスク ガイド (2016 年 5 月)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,27 +1,24 @@
 ---
 title: 製品のバッチ属性の作成
 description: この手順では、バッチ属性の作成方法、既定値の範囲の割り当て方法、グループに属性を含める方法を示します。
-author: ShylaThompson
-manager: tfehr
+author: t-benebo
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsBatchAttrib
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8924eedfbb635ca04aa167d7f6c44872fef496fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71779bf864b4dbe86d90131808014d1d08815155
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431970"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565609"
 ---
 # <a name="create-batch-attributes-for-a-product"></a>製品のバッチ属性の作成
 
@@ -55,3 +52,6 @@ ms.locfileid: "4431970"
 22. [保存] をクリックします。
 23. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

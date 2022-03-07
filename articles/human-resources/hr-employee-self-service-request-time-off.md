@@ -2,15 +2,12 @@
 title: 休暇の申請
 description: Dynamics 365 Human Resources で休暇を申請します。
 author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b034f3bac7264ff96100396cbb45e5b869765ce8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 86a0c659c8b586912ee848aa5f233f2e16f05fd4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419442"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357194"
 ---
 # <a name="request-time-off"></a>休暇の申請
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources において、休暇申請の送信や、休暇残日数の表示、さらに申請中休暇のステータスを確認することができます。
 
@@ -45,7 +44,7 @@ Dynamics 365 Human Resources において、休暇申請の送信や、休暇残
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>既存の申請に添付ファイルを追加
 
-既存の休暇申請を更新する場合は、添付ファイルを追加できます。 特定の日付に関連付けられているすべての申請を表示することもできます。 
+既存の休暇申請を更新する場合は、添付ファイルを追加できます。 特定の日付に関連付けられているすべての申請を表示することもできます。
 
 ## <a name="view-leave-balances"></a>休暇残日数の表示
 
@@ -59,6 +58,21 @@ Dynamics 365 Human Resources において、休暇申請の送信や、休暇残
 
 2. 承認された休暇申請を表示するには、**承認済休暇** を選択します。 保留中の休暇申請を表示するには、**休暇申請** を選択します。
 
+## <a name="cancel-time-off-requests"></a>休暇申請のキャンセル
+
+1. **従業員セルフ サービス** ワークスペースで、**休暇残日数** タイルの **休暇の表示** を選択します。
+
+2. **休暇** フォームで、キャンセルする 1 つかそれ以上の休暇申請を選択します。
+
+3. **キャンセル** ボタンを選択します。
+
+4. **キャンセルの詳細** ウィンドウでコメントを入力し、**送信** を選択します。
+
+   ![休暇申請のキャンセル。](media/hr-leave-and-absence-cancel.png)
+
 ## <a name="see-also"></a>参照
 
 - [休暇の概要](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

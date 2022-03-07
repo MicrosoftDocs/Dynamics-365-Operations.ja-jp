@@ -1,27 +1,24 @@
 ---
 title: 在庫仕訳帳の承認ワークフロー
 description: このトピックでは、さまざまな種類の現物在庫取引の在庫仕訳帳の承認ワークフローを設定方法と使用方法について説明します。 在庫仕訳帳のワークフローは、承認済の在庫仕訳帳のみをトランザクションに転記できるようにするのに役立ちます。
-author: sherry-zheng
-manager: tfehr
+author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431721"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778308"
 ---
 # <a name="inventory-journal-approval-workflows"></a>在庫仕訳帳の承認ワークフロー
 
@@ -31,6 +28,13 @@ ms.locfileid: "4431721"
 
 > [!NOTE]
 > 在庫仕訳帳のワークフローは、在庫管理モジュールを使用して記録された取引にのみ適用されます。 倉庫管理モジュールからトリガーされた在庫仕訳帳では動作しません。
+
+## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>在庫仕訳帳の承認ワークフロー機能をオンにする
+
+Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化または無効化することができます。 この機能は次のように一覧表示されます。
+
+- **モジュール:** *在庫と倉庫管理*
+- **機能名:** *在庫仕訳帳承認ワークフロー*
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>在庫仕訳帳の承認ワークフローの作成
 
@@ -51,7 +55,7 @@ ms.locfileid: "4431721"
     - **在庫 BOM 仕訳帳**
     - **在庫調整仕訳帳**
 
-    ![作成ワークフロー ダイアログ ボックス](media/journal-workflow-create-workflow.png "作成ワークフロー ダイアログ ボックス")
+    ![作成ワークフロー ダイアログ ボックス。](media/journal-workflow-create-workflow.png "作成ワークフロー ダイアログ ボックス")
 
 1. ワークフロー エディタ アプリがマシン上で起動します。 (このアクションの承認が要求される場合があります。)必要に応じてワークフローの設計に利用してください。 ワークフロー エディターの使用方法については、[ワークフロー システムの概要](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md)を参照してください。
 1. ワークフロー エディター アプリを保存して閉じた後、このワーク フローのバージョンをアクティブにするか、非アクティブのままにしておくかを選択する必要があります。
@@ -69,7 +73,7 @@ ms.locfileid: "4431721"
 1. リスト列から仕訳帳名を選択すると、設定ページが表示されます。
 1. **全般** クイック タブ で、**承認ワークフロー** を **はい** に設定します。 アクションの承認を求めるメッセージが表示されたら、**はい** を選択します。
 
-    ![仕訳帳名にワークフローを割り当てる](media/journal-workflow-journal-name.png "仕訳帳名にワークフローを割り当てる")
+    ![仕訳帳名にワークフローを割り当てる。](media/journal-workflow-journal-name.png "仕訳帳名にワークフローを割り当てる")
 
 1. **ワークフロー** のドロップダウン リストを開き、承認ワークフローを選択します。 このリストには、ワークフロー エディター アプリを使用して作成したそれぞれのアクティブなワークフローが表示されます。
 
@@ -83,7 +87,7 @@ ms.locfileid: "4431721"
 1. 必要に応じて仕訳帳を完成させます。
 1. 承認ワークフローに関連付けられた在庫仕訳帳を作成、または開くと、アクション ペインで **ワークフロー** ボタンがアクティブになります。 承認のために仕訳帳を送信する準備ができたら、**ワークフロー** ボタンを選択してドロップダウン ダイアログ ボックスを開き、**送信** を選択します。 承認要求が関連する承認者に送信されます。この承認者にはワークフローで設定された通知方法を使用して通知がされます。
 
-    ![承認のために仕訳帳を送信する](media/journal-workflow-inventory-journal.png "承認のために仕訳帳を送信する")
+    ![承認のために仕訳帳を送信する。](media/journal-workflow-inventory-journal.png "承認のために仕訳帳を送信する")
 
 承認要求を取り消すには、該当する仕訳帳を開き、**ワークフロー** ボタンを選択し、**取り消し** を選択します。 これにより、ワークフローがリセットされます。
 
@@ -112,3 +116,6 @@ ms.locfileid: "4431721"
 1. ナビゲーション ウィンドウで、**在庫管理 \> 仕訳帳の入力 \> 項目** を展開し、在庫仕訳帳のタイプを選択します。
 1. 関連する仕訳を開きます。
 1. アクションペインの **ワークフロー** ボタンを選択すると、ドロップダウン ダイアログ ボックスが開きます。 **ワークフロー履歴** を選択します。 詳細については、[ワークフロー履歴を確認する](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

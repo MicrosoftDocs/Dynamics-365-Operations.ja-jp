@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c30a7c2765647aad17a475ba8705b8e688d166593adf242fcd15d90e49334189
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3639c05b24de31cfa09d2d9d0cf427122f51eae
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733032"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810201"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>原価オブジェクト コントローラーのアクセス権
 
@@ -62,8 +62,9 @@ ms.locfileid: "6733032"
 
 階層デザイナーの **ユーザー** クイック タブで、各ノードに 1 つまたは複数のユーザー ID を挿入できます。
 
-|             ノード                 | ユーザー            | 移動元分析コード メンバー     |   移動先分析コード メンバー   |
+|                                   | ユーザー            | 分析コード メンバーの範囲   |                         |
 |-----------------------------------|------------------|---------------------------|-------------------------|
+| **ノード**                         | **ユーザー ID**      | **移動元分析コード メンバー** | **移動先分析コード メンバー** |
 | 組織                      | ベンジャミン、クレア |                           |                         |
 | &nbsp;&nbsp;管理者                 | 4 月            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;財務   | アリシア           | CC002                     | CC003                   |
@@ -94,14 +95,14 @@ ms.locfileid: "6733032"
     - Dynamics 365 Finance クライアントに埋め込まれた Power BI ビジュアル化データ
 
 > [!IMPORTANT]
-> - アクセス リスト階層が Power BI のデータに影響を及ぼす前に、アクセス リスト階層と Power BI の行レベルのセキュリティがペアリングされる必要があります。 詳細については、「[原価会計コンテンツ パックのセキュリティ設定](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)」を参照してください。
+> - アクセス リスト階層が Power BI のデータに影響を及ぼす前に、アクセス リスト階層と Power BI の行レベルのセキュリティがペアリングされる必要があります。 詳細については、「[原価会計コンテンツ パックのセキュリティ設定](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)」を参照してください。
 > - このトピックでは、**原価管理** ワークスペースを使用するための前提条件を説明します。
 
 その他のリソース
 
 - [原価管理ワークスペース](cost-control-workspace.md)
 - [分析コード階層](dimension-hierarchy.md)
-- [原価会計コンテンツ パックのセキュリティ設定](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+- [原価会計コンテンツ パックのセキュリティ設定](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

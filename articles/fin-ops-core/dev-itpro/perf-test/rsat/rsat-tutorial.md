@@ -1,21 +1,24 @@
 ---
 title: Regression Suite Automation Tool のチュートリアル
 description: このトピックでは、Regression Suite Automation Tool (RSAT) の使用方法について説明します。 さまざまな機能について説明し、高度なスクリプトを使用した例を示します。
-author: FrankDahl
-ms.date: 09/23/2021
+author: robinarh
+ms.date: 01/15/2021
 ms.topic: article
+ms.prod: ''
+ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: 21761
 ms.search.region: Global
-ms.author: fdahl
+ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d70b2e7cf497fbf165a452f7977a14a98b9e1956e5a964d42c7bf8a6c3abe0bd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781966"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714552"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool のチュートリアル
 
@@ -79,19 +82,13 @@ RSAT を使用してこのメッセージを検証するには、該当する記
 
 この機能は、タスク記録中に実行された手順のスクリーンショットを撮ります。 これは、監査やデバッグの目的で役立ちます。
 
-- ユーザー インターフェイスを使用して RSAT を実行しているときにこの機能を使用するには、RSAT のインストール ホルダー (例: **C:\\Program Files (x86)\\Regression Suite Automation Tool**) にある **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** ファイルを開き、次の要素の値を **False** から **True** に変更します。
+- この機能を使用するには、RSAT のインストール フォルダー (たとえば、**C:\\Program Files (x86)\\Regression Suite Automation Tool**) にある **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** ファイルを開き、次の要素の値を **False** から **True** に変更します。
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-- CLI (例: Azure DevOps) で RSAT を実行しているときにこの機能を使用するには、RSAT のインストール ホルダー (例: **C:\\Program Files (x86)\\Regression Suite Automation Tool**) にある **Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe.config** ファイルを開き、次の要素の値を **False** から **True** に変更します。
-
-    ```xml
-    <add key="VerboseSnapshotsEnabled" value="false" />
-    ```
-
-テスト ケースを実行すると、RSAT は、ステップのスナップショット (画像) を生成し、作業ディレクトリ内のテスト ケースの再生フォルダーに保存します。 再生フォルダーには、**StepSnapshots** という別のサブフォルダーが作成されます。 そのフォルダーには、実行されたテスト ケースのスナップショットが格納されます。
+テスト ケースを実行すると、RSAT は、作業ディレクトリ内のテスト ケースの再生フォルダにあるステップのスナップショット (画像) を生成します。 古いバージョンの RSAT を使用している場合、画像は **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback** に保存され、実行される各テスト ケースに対して個別のフォルダが作成されます。
 
 ## <a name="assignment"></a>割り当て
 
@@ -524,7 +521,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 次の例は、オープン データ プロトコル (OData) 呼び出しを使用して、発注書のオーダー状態を検索します。 ステータスが **請求済** ではない場合、たとえば、請求書を転記する RSAT のテスト ケースを呼び出すことができます。
 
-```powershell
+```xpp
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

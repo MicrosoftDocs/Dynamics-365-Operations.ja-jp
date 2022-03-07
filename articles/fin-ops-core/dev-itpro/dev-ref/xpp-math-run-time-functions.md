@@ -2,26 +2,19 @@
 title: X++ 数学ランタイム関数
 description: このトピックでは、数学ランタイム関数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31361
-ms.assetid: 8982f158-f638-46d7-b3f7-ba8cfd356d57
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e10be9ba9c9ccb9437ffc3f4fbb721af50ccb72a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b98f09b16ac27ba19f8cbb0910ba1c347c541ba6
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408824"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661550"
 ---
 # <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 
@@ -31,8 +24,7 @@ ms.locfileid: "4408824"
 
 これらの関数は数学的な計算を実行します。
 
-<a name="abs"></a>abs
----
+## <a name="abs"></a>abs
 
 実数の絶対値を取得します。 例
 
@@ -224,8 +216,8 @@ real corrFlagSet(real real, int arg)
 
 **0** フラグが現在オフの場合。フラグがオンの場合はゼロ以外の値。
 
-<a name="cos"></a>cos
----
+## <a name="cos"></a>cos
+
 
 実数の余弦を取得します。
 
@@ -333,8 +325,7 @@ real decRound(real figure, int decimals)
 -   **decRound(12345.6789,1)** は、値 **12345.70** を返します。
 -   **decRound(12345.6789,-1)** は、値 **12350.00** を返します。
 
-<a name="exp"></a>exp
----
+## <a name="exp"></a>exp
 
 指定した実数の値の自然逆対数を取得します。
 
@@ -478,8 +469,7 @@ real logN(real arg)
 
 **logN(45)** は、値 **3.81** を返します。
 
-<a name="max"></a>最大
----
+## <a name="max"></a>最大
 
 2 つの指定した値の大きい方を取得します。
 
@@ -503,8 +493,7 @@ anytype max(anytype object1, anytype object2)
 -   **最大 (12.0,12.1)** は、値 **12.1** を返します。
 -   **最大 (2,33)** は、値 **33** を返します。
 
-<a name="min"></a>最小
----
+## <a name="min"></a>最小
 
 2 つの指定した値の小さい方を取得します。
 
@@ -588,7 +577,7 @@ real round(real _arg, real _decimals)
 
 ### <a name="remarks"></a>備考
 
-指定した小数点以下の桁数に実数を丸めるには、[decround 関数](https://msdn.microsoft.com/library/03bd2ea2-414e-43e0-ba05-f5db1a943b91(AX.60).aspx)を使用します。
+指定した小数点以下の桁数に実数を丸めるには、[decround 関数](/previous-versions/dynamics/ax-2012/reference/aa499511(v=ax.60))を使用します。
 
 ### <a name="remarks"></a>備考
 
@@ -597,8 +586,7 @@ real round(real _arg, real _decimals)
 -   **丸め (23.9,5.0)** は、値 **25.00** を返します。
 -   **丸め (26.1,5.0)** は、値 **25.00** を返します。
 
-<a name="sin"></a>sin
----
+## <a name="sin"></a>sin
 
 実数の正弦を取得します。
 
@@ -687,8 +675,7 @@ static void sinhExample(Args _arg)
 }
 ```
 
-<a name="tan"></a>tan
----
+## <a name="tan"></a>tan
 
 実数の正接を取得します。
 
@@ -801,3 +788,6 @@ static void truncExample(Args _arg)
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

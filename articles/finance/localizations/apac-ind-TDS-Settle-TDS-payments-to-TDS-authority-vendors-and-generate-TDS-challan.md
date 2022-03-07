@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 19f41020c6e1db8b08c7f69a58d33852c730931447803e2e1e970b1c293b6acd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b77985a75d2930267cf94d6f218d53b47e6e705
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779401"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6023395"
 ---
 # <a name="settle-tds-payments-to-tds-authority-vendors-and-generate-tds-challan"></a>TDS 所轄官庁の仕入先への TDS 支払いの決済と TDS チャランの作成
 
@@ -31,7 +31,7 @@ ms.locfileid: "6779401"
 
 1. **買掛金勘定 \> 支払 \> 仕入先支払仕訳帳** に移動します。
 
-    [![仕入先支払仕訳帳明細ページ。](./media/apac-ind-TDS-51.png)](./media/apac-ind-TDS-51.png)
+    [![仕入先支払仕訳帳明細ページ](./media/apac-ind-TDS-51.png)](./media/apac-ind-TDS-51.png)
 
 2. **仕入先支払仕訳帳** ページで **新規** を選択して仕訳帳行を作成します。
 3. **勘定** フィールドで、TDS 支払を決済する TDS 所轄官庁の仕入先を選択します。

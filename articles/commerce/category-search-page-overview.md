@@ -2,27 +2,24 @@
 title: 既定のカテゴリ ランディング ページと検索結果ページの概要
 description: このトピックでは、Dynamics 365 Commerce での既定のカテゴリ ランディング ページと検索結果ページの概要を提供します。
 author: ashishmsft
-manager: annbe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f380f3f56727d927d7cd328fef3c9d999afa2873
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413719"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794352"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>既定のカテゴリ ランディング ページと検索結果ページの概要
 
@@ -111,3 +108,6 @@ Web サイトのユーザーは、ナビゲーション階層からカテゴリ�
 
 [アカウント管理ページの概要](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

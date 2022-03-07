@@ -2,16 +2,13 @@
 title: 製品カテゴリおよび製品の管理
 description: このトピックでは、販売促進マネージャーが製品カテゴリを使用して、Commerce 製品階層とリリースされた製品の詳細な関係を管理する方法について説明します。
 author: ashishmsft
-manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: ''
 ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9d47a866703b830e84e3f2e37a02d9d58f73987b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 89237c830109e8cb304b2547230484f15b90d875
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413720"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351300"
 ---
 # <a name="manage-product-categories-and-products"></a>製品カテゴリおよび製品の管理
 
@@ -44,11 +41,11 @@ ms.locfileid: "4413720"
 
 すべての法人の間でプロパティを管理するには、**すべての法人用に表示** (または **すべての法人用に編集**) を選択してください。
 
-![すべての法人用に表示/編集](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+![すべての法人用に表示/編集します。](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
 特定の法人のプロパティを管理するには、**特定の法人用に表示** (または **特定の法人用に編集**) を選択してください。
 
-![特定の法人用に表示/編集](media/ToggleToEditForAllLegalEntities.PNG)
+![特定の法人用に表示/編集します。](media/ToggleToEditForAllLegalEntities.PNG)
 
 また、拡張された製品カテゴリ構造では、販売促進マネージャーが、個々のカテゴリ レベルで追加の製品プロパティ セットの既定値を定義できるようになりました。 次に、製品が作成されると、製品階層内の個々のカテゴリとそれらのプロパティの関連付けに基づいて、製品プロパティの既定値が継承されます。 これらの継承された製品プロパティは、個々の業務要件を満たすために製品ごとに変更することもできます。
 
@@ -56,4 +53,7 @@ ms.locfileid: "4413720"
 
 新しい、拡張された製品プロパティ構造を使用して、関連付けられた製品にプッシュされる必要がある更新された製品プロパティを選択することができます。 **Commerce 製品階層** ページのアクション ウィンドウで、**カテゴリ** を選択し、次に **製品の更新** を選択して **製品の更新** ダイアログ ボックスを開きます。
 
-![製品の更新ダイアログ ボックス](media/NewUpdateProductsEnhancedView.PNG)
+![製品のダイアログ ボックスを更新します。](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

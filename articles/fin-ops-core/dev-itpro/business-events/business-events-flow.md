@@ -1,10 +1,12 @@
 ---
-title: Microsoft Power Automate 内のビジネス イベント
-description: このトピックでは、アプリケーション コネクタを介して Microsoft Power Automate で使用可能となるビジネス イベントに関する情報を提供します。
+title: Microsoft Power Automate の ビジネス イベント
+description: このトピックでは、アプリケーション コネクタを介して Microsoft Power Automate で利用可能なビジネス イベントに関する情報を提供します。
 author: Sunil-Garg
-ms.date: 10/18/2021
+manager: AnnBe
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,92 +14,50 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: sunilg
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 356e985ff3f26fe2bc356bdeb75c8ca037434f8d
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 5daf6bfd09a7124d240259a7153bf8b802f124d5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675395"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687336"
 ---
-# <a name="business-events-in-microsoft-power-automate"></a>Microsoft Power Automate 内のビジネス イベント
+# <a name="business-events-in-microsoft-power-automate"></a>Microsoft Power Automate の ビジネス イベント
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations コネクタと Microsoft Dataverse コネクタは、Microsoft Power Automate 内のビジネス イベントを消費するために使用できます。 Finance and Operations コネクタには **ビジネス イベントの発生時** というトリガーがあります。 Dataverse コネクタには、**アクションが実行される場合** というトリガーがあります。 これらのトリガーのいずれかを、Finance and Operations アプリ内で使用できる任意のビジネス イベントの購読に使用できます。 どちらのトリガーも同じ機能を提供しますが、実行の仕方は少し異なります。
-
-Dataverse コネクタによって、Finance and Operations アプリ内のデータ イベントを購読するための **行が追加、変更、または削除される場合** というトリガーを使用できます。 このトリガーにより、選択された Finance and Operations アプリ エンティティに対する (CUD) イベントを作成、更新、または削除することにより Power Automate フローがトリガーされるようになります。
+ビジネス イベントは アプリケーション コネクタを介して Microsoft Power Automate で使用することができます。 コネクタには **ビジネス イベントの発生時** という名前のトリガーがあります。 このトリガーは、アプリケーションのターゲット インスタンスで使用可能なビジネス イベントの購読に使用することができます。
 
 ## <a name="prerequisite"></a>前提条件
 
 ビジネス イベントについて理解することは重要です。 詳細については[ビジネス イベント](home-page.md) のドキュメントを参照してください。
 
-## <a name="subscribing-to-business-events"></a>ビジネス イベントの購読
+> [!IMPORTANT]
+> ビジネス イベントは以前のプラットフォーム リリースでは使用可能でないため、**ビジネス イベント発生時** トリガーは、Platform update 24 またはそれ以降を実行するアプリケーション インスタンスでのみ動作します。
 
-### <a name="using-the-finance-and-operations-connector"></a>Finance and Operations コネクタの使用
+## <a name="subscribing-to-business-events-and-unsubscribing-from-them"></a>ビジネス イベントの購読および購読解除
 
-Finance and Operations コネクタは、サブスクリプションを確立するために Finance and Operations アプリと直接通信しますが、実行時に Dataverse によってトリガーされます。 コネクタは、Azure Active Directory (Azure AD) テナント上の任意の Finance and Operations アプリのインスタンスに接続できます。 
-
-**ビジネス イベントの発生時** というトリガーをフローに追加した後、以下の情報を提供する必要があります。
+**ビジネス イベント発生時** トリガーをフローに追加した後、以下の情報を提供する必要があります。
 
 - **インスタンス** – ビジネス イベントが発生するインスタンスのホスト名を指定します。 環境インスタンスは指定されたドロップダウン メニューで利用可能である必要がありますが、環境が一覧表示されていない場合はカスタム値として入力することができます。
-- **カテゴリ** - ビジネス イベントのカテゴリを選択します。 Finance and Operations アプリのビジネス イベント カタログ内の一意のビジネス イベント カテゴリの一覧が表示されます。
-- **ビジネス イベント**- フローをトリガーする必要があるビジネス イベントを選択します。 一覧に表示されるビジネス イベントはすべて、Finance and Operations アプリのビジネス イベント カタログで選択したカテゴリのビジネス イベントです。
+- **カテゴリ** - ビジネス イベントのカテゴリを選択します。 **ビジネス イベント** フィールドにそのカテゴリのビジネス イベントが表示されます。
+- **ビジネス イベント** - 選択したカテゴリで利用可能なビジネス イベント。
 - **法人** - ビジネス イベントが購読されている法人を指定します。 フローは法人でビジネス イベントが発生するときにトリガーされます。 既定では、このフィールドは空白で、ビジネス イベントは **すべて** の法人で購読されます。
-
-![ビジネス イベント発生時というトリガー。](../media/businessevents_FinOpsConnector.png)
 
 フローが保存されると、選択したビジネス イベントに対するサブスクリプションが環境インスタンスに追加されます。 サブスクリプション プロセスの一部として、必要なエンドポイントが設定され、対応するビジネス イベントが有効にされます。
 
-### <a name="using-the-dataverse-connector"></a>Dataverse コネクタの使用
+トリガーが削除されるか、フローがオフになっている場合は、ビジネス イベントのエンドポイントが自動的に削除されます。
 
-Finance and Operations アプリのビジネス イベントは、Dataverse コネクタの **アクションが実行される場合** というトリガーを通しても公開されます。 このトリガーは、**Catalog** テーブルおよび **CatalogAssignment** テーブルを使用して Dataverse で構成されたアクションおよびテーブル操作を公開します。 このコンフィギュレーションは、Finance and Operations アプリのビジネス イベントに限定されない、Dataverse でのよりジェネリックなビジネス イベント フレームワークを提供します。 Finance and Operations アプリのビジネス イベント カタログのビジネス イベントは、Dataverse ビジネス イベント カタログと同期されます。 したがって、Finance and Operations アプリのビジネス イベントを購読して、Power Automate フローでビジネス ロジックを開始できます。 Dataverse ビジネス イベント フレームワークでのカタログの詳細については、[Catalog テーブルおよび CatalogAssignment テーブル](/powerapps/developer/data-platform/catalog-catalogassignment) を参照してください 。
-
-Dataverse コネクタの **アクションが実行される場合** というトリガーで Finance and Operations アプリのビジネス イベントを使用するには、Microsoft Power Platform 統合を Finance and Operations アプリ環境に対して有効にする必要があり、それによって Finance and Operations アプリ環境が Dataverse 環境に接続されます。 Finance and Operations アプリ環境の Microsoft Power Platform 統合を有効にする方法の詳細については、[Microsoft Power Platform 統合の有効化](../power-platform/enable-power-platform-integration.md) を参照してください。 
-
-> [!NOTE]
-> Microsoft Power Platform 統合では、Finance and Operations アプリと Microsoft Power Platform 環境の間に 1 対 1 の接続 があります。 この関係のため、Finance and Operations コネクタの **ビジネス イベントの発生時** というトリガーとして、複数の Finance and Operations アプリ環境を選択できません。 トリガーは、 Microsoft Power Platform 統合に対して選択された Finance and Operations アプリ環境に自動的に接続 します。
-
-**アクションが実行される場合** というトリガーを Power Automate でフローに追加した後、以下の情報を提供する必要があります。
-
-- **カタログ**- **Finance and Operations** を選択します。 これにより、Finance and Operations ビジネス イベントが Dataverse ビジネス イベント カタログとして公開されます。
-- **カテゴリ**- 目的のビジネス イベントのカテゴリを選択します。 Finance and Operations アプリのビジネス イベント カタログ内の一意のビジネス イベント カテゴリの一覧が表示されます。
-- **テーブル名**- アクションが特定のテーブルに関連する場合に、関連するテーブルを選択します。 通常、値は Finance and Operations アプリ ビジネス イベントに対して **(なし)** になります。
-- **アクション名**- フローをトリガーする必要があるアクションまたはビジネス イベントを選択します。 ドロップダウン リストには、Finance and Operations アプリのビジネス イベント カタログで選択したカテゴリのすべての同期されたビジネス イベントが表示されます。
-
-![Microsoft Dataverse コネクタの、アクションが実行される場合というトリガー。](../media/businessevents_DataverseConnector.png)
-
-Power Automate での **アクションが実行される場合** というトリガーの使用方法の詳細については、[アクションを含むトリガー フロー](/power-automate/dataverse/action-trigger) を参照してください 。
+複数のフローは、同一もしくは異なる法人内の同じビジネス イベントを購読することができます。 1 つのイベントごとの既定のエンドポイント制限は、10 であることに注意してください。 必要に応じて、**ビジネス イベント パラメーター** ページの **イベントごとに許可されるエンドポイント** を調整します。
 
 > [!NOTE]
 > Power Automate エンドポイントは、手動で構成することはできません。 上記の説明に従って、エンドポイントは Power Automate で自動的に作成されます。
 
-## <a name="subscribing-to-data-events"></a>データ イベントの購読
-
-Dataverse で仮想エンティティとして有効な Finance and Operations アプリ エンティティが Dataverse コネクタの **行が追加、変更または削除される場合** というトリガーに含まれます。 Power Automate でトリガーをフローに追加する場合、フローをトリガーするテーブルのテーブル名を定義します。 **テーブル名** の一覧には、Microsoft Power Platform 統合を通して Microsoft Power Platform 環境に接続されている Finance and Operations アプリ環境から Dataverse で仮想エンティティとして公開される、すべての Finance and Operations アプリ エンティティの一覧が含まれます。 仮想エンティティを有効化する方法については、[Dataverse 仮想エンティティの有効化](../power-platform/enable-virtual-entities.md) を参照してください。
-
-![Microsoft Dataverse コネクタの行が追加、変更または削除されるというトリガー。](../media/businessevents_DataEventConnector.png)
-
-> [!NOTE]
-> **テーブル名** フィールドに **mserp** を入力することで、テーブルの一覧をフィルター処理して、環境に対して有効な使用可能な Finance and Operations アプリ仮想エンティティのみを表示できます。
-
-詳細なオプションに関する情報など、Dataverse コネクタの **行が追加、変更または削除される** というトリガーを使用する方法の詳細については、[行が追加、変更または削除される場合のトリガー フロー](/power-automate/dataverse/create-update-delete-trigger) を参照してください。
-
-## <a name="unsubscribing-from-business-events"></a>ビジネス イベントの購読解除
-
-トリガーが削除されるか、フローがオフになっている場合は、ビジネス イベントのエンドポイントが自動的に削除されます。
-
-## <a name="adjusting-flow-parameter-limits"></a>フロー パラメーターの制限の調整
-
-複数のフローは、同一もしくは異なる法人内の同じビジネス イベントを購読することができます。 1 つのイベントごとの既定のエンドポイント制限は、10 です。 必要に応じて、**ビジネス イベント パラメーター** ページの **イベントごとに許可されるエンドポイント** を調整します。
+Microsoft Flow でビジネス イベントを使用する方法については [Microsoft Flow でビジネス イベントを消費する](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow) を参照してください。 
 
 ## <a name="other-ways-to-consume-business-events-in-power-automate"></a>Power Automate 内のビジネス イベントを消費する他の方法
 
-前のセクションでは、コネクタ内でトリガーを使用することにより Power Automate から直接ビジネス イベントを購読する方法について説明しました。 ただし、[Microsoft Power Automate 用イベント グリッド コネクタ](/connectors/azureeventgrid/) を使用することにより、Microsoft Azure Event Grid から Microsoft Power Automate 内のビジネス イベントを消費することもできます。
+前のセクションでは、コネクタ内でトリガーを使用することにより Power Automate から直接ビジネス イベントを購読する方法について説明しました。 ただし、 [Microsoft Power Automateのイベント グリッド コネクタ](https://docs.microsoft.com/connectors/azureeventgrid/) を使用して、 Microsoft Azure のイベント グリッド から Microsoft Power Automate のビジネス イベントを使用することもできます。
 
 実装内の他の統合で既に使用されている場合、イベント グリッドは Power Automate 内のビジネス イベントを消費するための実行可能なアプローチである可能性があります。 同じ法人内のビジネス イベントが複数のフローをトリガする必要がある場合、イベント グリッドからビジネス イベントを消費することを検討する必要があります。
 
 このアプローチは、コネクタが Power Automate 内のビジネス イベントで使用可能である場合、ビジネス イベントのエンドポイントとして使用されるメッセージングまたはイベント プラットフォームに対して適用することができます。
-
-Microsoft Flow でビジネス イベントを使用する方法については [Microsoft Flow でビジネス イベントを消費する](how-to/how-to-flow.md) を参照してください。 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

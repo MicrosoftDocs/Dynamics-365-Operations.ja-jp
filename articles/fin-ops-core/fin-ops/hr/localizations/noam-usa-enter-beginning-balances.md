@@ -1,12 +1,10 @@
 ---
 title: 給与の期首残高を入力します。
-description: 所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。 この情報は、パートナーが別のシステムから新しい給与実装のデータを移行または転送する場合に役立ちます。
+description: 所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,14 +14,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 0a5529e3268727dce022daebb853e50710e5bde84811014febe30e80afee9ed6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797787"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721879"
 ---
-# <a name="enter-payroll-beginning-balances"></a>給与の期首残高を入力します。
+# <a name="enter-payroll-beginning-balances"></a>給与の期首残高の入力
 
 [!include [banner](../../includes/banner.md)]
 
@@ -166,3 +164,6 @@ ms.locfileid: "4797787"
 2. **はい** をクリックするのは、「この支払明細書を相殺するために取消支払明細書が作成されます。 支払明細書を編集することもできません。 この支払明細書を取り消しますか」 というメッセージが表示されたときです。 
 
 支払明細書を取り消した後、前に作成した損益計算書から新しい支払明細書を作成することができます。 新しい支払明細書を生成する前に、損益計算書に誤った行を修正してから、正しい金額の新しい支払明細書を生成します。 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

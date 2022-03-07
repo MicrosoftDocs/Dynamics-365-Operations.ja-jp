@@ -2,11 +2,9 @@
 title: ワークフロー履歴の表示
 description: このトピックでは、処理および承認のためにワークフロー システムに送信されたドキュメントの状態を表示する手順について説明します。
 author: jasongre
-manager: AnnBe
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowStatus
 audience: Application User
@@ -15,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 325478ed89b9c650899001dd08d1c98550fce520
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 0ca9a8bff246cc878a0703947a7f8c1c4fc01963
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798983"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069962"
 ---
 # <a name="view-workflow-history"></a>ワークフロー履歴の表示
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 このトピックでは、処理および承認のためにワークフロー システムに送信されたドキュメントの状態を表示する手順について説明します。 この手順の作成に使用するデモ データの会社は USMF です。
 
@@ -46,3 +47,6 @@ ms.locfileid: "4798983"
     - **再割り当て** ボタンは、作業項目を別のユーザーに再度割り当てることができるダイアログ ボックスを開きます。  
     - **追跡の詳細** セクションが展開されていることを確認します。 このセクションでは、選択したドキュメントのワークフロー履歴を表示することができます。  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

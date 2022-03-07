@@ -2,11 +2,9 @@
 title: 財務分析コードとして使用可能なバッキング テーブルの作成
 description: このトピックでは、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。
 author: aprilolson
-manager: AnnBe
 ms.date: 03/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e767d216bc7df93113d0f39a6d8232e68400fa8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b68cb711208dcd1cb35b2033aaad8070878bf94f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680504"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753906"
 ---
 # <a name="make-backing-tables-consumable-as-financial-dimensions"></a>財務分析コードとして使用可能なバッキング テーブルの作成
 
@@ -30,7 +28,7 @@ ms.locfileid: "4680504"
 このトピックでは、サポート テーブルを財務分析コードとして使用できるようにするために必要な手順について説明します。
 
 > [!IMPORTANT]
-> 再利用できない値を持つまたは 1 対 1 の分析コード値を使用する、財務分析コードを作成しないでください。 再利用できない値を持つまたは 1 対 1 の分析コード値を使用する、財務分析コードを作成しないでください。 ビューを、DimAttribute の分析コード値のソースとして使用することはできません。 これはうまくいくように見えますが、分析コードのファクト データがデータベースにインポートされるようにするため、MR が行ごとの処理にフォールバックされます。 これにより、パフォーマンスがかなり低下したり、レポートが遮断されます。 
+> 再利用できない値を持つまたは 1 対 1 の分析コード値を使用する、財務分析コードを作成しないでください。 ビューを、DimAttribute の分析コード値のソースとして使用することはできません。 これはうまくいくように見えますが、分析コードのファクト データがデータベースにインポートされるようにするため、MR が行ごとの処理にフォールバックされます。 これにより、パフォーマンスがかなり低下したり、レポートが遮断されます。 
 >
 > 財務分析コードのデータのソースとして使用する基本テーブルには、30 文字以内の固有ナチュラル キー値が必用であり、その値はそのテーブル内の 1 つの RECID を解決する必要があります。 拡張された名前列は、追加のコンテキストをユーザーに表示する場合にのみ使用され、ナチュラル キー エントリの一意性を解決するためには使用されないため、もう 1 つのソース結合 (DirPartyTable や別の場所など) から取得できます。
      
@@ -194,3 +192,6 @@ public void persistEntity(DataEntityRuntimeContext _entityCtx)
 
 > [!NOTE]
 > これにより、分析コードが自身を既定の既定値として使用するようにする場合、情報が正しい順序で作成されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

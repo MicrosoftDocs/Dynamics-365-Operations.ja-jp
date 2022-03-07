@@ -1,53 +1,60 @@
 ---
 title: 商品の品質の調査
-description: このトピックでは、品質指示を処理する方法について説明します。
-author: perlynne
-manager: tfehr
-ms.date: 08/01/2019
+description: このトピックでは、品質指示を処理する方法について示します。
+author: yufeihuang
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee5f83b2dad60567341f33a73ce63d01e9da8289
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cc2fbbedb608b38c6855fbd48ff0c3e26ee3e0bc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432224"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575851"
 ---
 # <a name="inspect-the-quality-of-goods"></a>商品の品質の調査
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、品質指示を処理する方法について説明します。 デモ データの会社 USMF でこのガイドを実行できます。 このサンプル手順を開始する前に、発注書 "000016" を確認し、製品受領書を転記する必要があります。 これにより、品質指示が自動的に作成されます。 品質検査は、通常、品質検査の担当者により実行されます。
+このトピックでは、品質指示を処理する方法について示します。 品質検査は、通常、品質検査の担当者により実行されます。
 
+標準のデモ データがインストールされている場合は、そのデータを使用してこのトピックの手順を完了できます。 デモ データを使用するには、開始する前に *USMF* 法人を選択する必要があります。 その後、発注書 *000016* を確認して、製品のレシートを転記する必要があります。 品質指示は自動的に生成されます。
 
-## <a name="select-a-quality-order"></a>品質指示の選択
-1. ナビゲーション ウィンドウで **モジュール > 在庫管理 > 定期処理 > 品質管理 > 品質指示** に移動します。
-2. この手順を開始する前に作成された品質指示を選択します。  
+## <a name="step-1-select-a-quality-order"></a>手順 1: 品質指示を選択する
 
-## <a name="record-test-results"></a>テスト結果の記録
+品質指示を選択するには、次の手順に従います。
+
+1. **在庫管理 \> 定期処理タスク \> 品質管理 \> 品質指示** の順に移動します。
+1. この手順を開始する前に生成された品質指示を選択します。
+
+## <a name="step-2-record-test-results"></a>手順 2: テスト結果を記録する
+
+テスト結果を記録するには、次の手順に従います。
+
 1. **結果** を選択します。
-2. **編集** を選択します。
-3. **結果数量** フィールドに数値を入力します。
-4. **結果** フィールドで、ドロップダウン メニューから目的のレコードを選択します。  
-- この例では、結果は定義済の結果に基づいています。 通常、サイズまたは他の分析コードなどより詳細なテスト結果を記録します。  
-5. **保存** を選択します。
-6. ページを閉じます。
+1. **編集** を選択します。
+1. **結果数量** フィールドに数値を入力します。
+1. **結果** フィールドで、目的の記録を選択します。 この例では、結果は定義済の結果に基づいています。 通常、サイズまたは他の分析コードなどより詳細なテスト結果を記録します。
+1. **保存** を選択します。
+1. ページを閉じます。
 
-## <a name="validate-the-quality-order"></a>品質指示を検証する
+## <a name="step-3-validate-the-quality-order"></a>手順 3: 品質指示を検証する
+
+品質指示を検証するには、次の手順に従います。
+
 1. **検証** を選択します。
-2. **検証者** フィールドで、ドロップダウン メニューから検査を実行するユーザーを選択します。  
-3. **選択** をクリックします。
-4. **OK** を選択します。
-5. ページを閉じます。
+1. **検証者** フィールドで、検査を行うユーザーを選択します。
+1. **選択** を選択します。
+1. **OK** を選択します。
+1. ページを閉じます。
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

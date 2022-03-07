@@ -2,26 +2,19 @@
 title: X++ コレクション クラス
 description: このトピックでは、X++のコレクション クラスについて説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150183
-ms.assetid: 0ff4e759-851d-4b53-aa67-6f03eee53f02
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2d977ddaf95b548217a245bc55c539433de9fc0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 386d42b9d38fe54860377ce2701088dbc4d5a89641ecc248dc699e1d773fa535
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408744"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770789"
 ---
 # <a name="x-collection-classes"></a>X++ コレクション クラス
 
@@ -53,3 +46,6 @@ myMap.getEnumerator()
 コレクション クラスを使用するとより複雑なクラスを作成することができます。 たとえば、リストの先頭に要素が常に追加されるリストを使用して、スタックを簡単に実装できます。 最新の要素がスタックの先頭を占めます。 
 
 コレクション クラスを拡張することもできます。 たとえば、**リスト** クラスを拡張して、操作がタイプ セーフである顧客レコードの一覧を作成します。 この場合、派生したコレクション クラスは顧客レコードのみを受け入れます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

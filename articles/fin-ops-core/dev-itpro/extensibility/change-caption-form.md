@@ -2,11 +2,9 @@
 title: 拡張機能によって、フォームのキャプションを変更します。
 description: このトピックでは、ユーザーが Web ブラウザーで現在のページを識別するためのフォーム キャプションを変更する方法について説明します。
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.openlocfilehash: 754fa36bfce8b1c2ae0723f6c175514042c79264
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 96a7e87cd1db1a455704ecdba539c159fbda026f
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409267"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866092"
 ---
 # <a name="change-the-captions-of-forms-through-extension"></a>拡張機能によって、フォームのキャプションを変更します。
 
@@ -37,3 +35,6 @@ ms.locfileid: "4409267"
 
 > [!NOTE]
 > フォームのデザインの他のプロパティはいずれも変更できません。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

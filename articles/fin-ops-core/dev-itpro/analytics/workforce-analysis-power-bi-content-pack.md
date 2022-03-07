@@ -1,10 +1,12 @@
 ---
 title: 要員指標 Power BI コンテンツ
-description: このトピックでは、要員指標 Power BI コンテンツについて説明します。
+description: このトピックでは、要員指標 Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 author: jcart1106
+manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9393b4dcc6cb5f65d38c6904bf38def9d50af281671e0e09314148824f3e6891
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e921b9ca7d46b3365068a5cdcb029396b62a0ce
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757276"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687354"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>要員指標 Power BI コンテンツ
 
@@ -84,6 +86,3 @@ ms.locfileid: "6757276"
 | 従業員のトレンド           | 時間経過に伴う作業者、人員、会社、職位                                 | 会社、地理的な場所、従業員名、レポート先、カレンダーのオフセット、日付、従業員の肩書き、従業員層、雇用、職務 |
 | 大量雇用プロジェクト        | 大量雇用プロジェクト、プロジェクトの所有者、およびプロジェクトのステータスの数                     | 会社、大量雇用ライン |
 | 大量雇用ライン           | 部門、雇用タイプ、および職位                                           | 日付、職務、大量採用プロジェクト |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,26 +3,24 @@ title: 確認後支払の概要
 description: この記事は確認後支払についての情報を提供し、銀行に提出する小切手の電子リストを生成するのに使用されます。
 author: panolte
 ms.date: 08/22/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankPositivePaySummary
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "88463"
-- intro-internal
+ms.custom: 88463
 ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5f36230b68986cffc985353a7130ba429dabd10e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c72b50c3becb305cff6e21bc281962f5372bc273
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984055"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828013"
 ---
 # <a name="positive-pay-overview"></a>確認後支払の概要
 

@@ -2,25 +2,19 @@
 title: SQL インジェクション攻撃の緩和
 description: このトピックでは、X++ で SQL インジェクション攻撃を緩和する方法について説明します。
 author: pvillads
-manager: tfehr
 ms.date: 12/01/2020
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31301
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71ecd37a9adb41f5891d8a104594bc745c2091ab
-ms.sourcegitcommit: 8bc270f80651f40a70169ba9d451ce5bc20c7376
+ms.openlocfilehash: a45ed173cf2ae5fc19881ce44a71ba2708ce4acaff76dda1eed2eafafb8d168e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "4738085"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763492"
 ---
 # <a name="mitigate-a-sql-injection-attack"></a>SQL インジェクション攻撃の緩和
 
@@ -29,6 +23,8 @@ ms.locfileid: "4738085"
 [!include [preview-banner](../includes/preview-banner.md)]
 
 SQL インジェクション攻撃は、悪意のあるデータ値がクエリ文字列で Microsoft SQL Server に渡されるときに発生します。 それらの値により、データベースに多くの損害が発生することがあります。 SQL インジェクションは、ユーザー入力など、制御されていないソースからデータを SQL Server に渡すクエリを使用する方法に慎重でない場合に発生することがあります。 通常、X++ の組み込みデータ アクセス ステートメントにより回避されるため、Finance and Operations アプリで SQL インジェクションは問題になりません。 ただし、ダイレクト SQL を使用する場合、SQL コードがそのままサーバーに渡されるときに SQL インジェクションが発生する可能性があります。
+
+新しい API は、これらの攻撃を軽減するのに役立ちます。 Finance and Operations アプリのバージョン 10.0.17 用のプラットフォーム更新プログラム (2021 年 4 月) から API が使用可能です。
 
 ## <a name="the-issue"></a>問題
 
@@ -139,3 +135,6 @@ public void InsertWithStrParameter()
 Microsoft は新しいメソッドを導入しているので、既存のメソッド (つまり、パラメーターなしのメソッド) を廃止としてマークしています。 通常の廃止期間が適用されます。 したがって、コードを更新して、パラメーターにより提供される新しい保護を活用することができます。
 
 新しい **executeQueryWithParameters** API は顧客を災害から保護するのに役立ちますが、使用する必要はありません。 文字列を連結し、空のパラメーター セットを提供することもできます。 ただし、この場合、パラメーターを提供することによるメリットはありません。 この機会を利用して、コード内で使用されている危険を取り除いてください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

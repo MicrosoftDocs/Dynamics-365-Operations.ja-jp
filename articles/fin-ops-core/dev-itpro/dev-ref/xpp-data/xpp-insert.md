@@ -2,25 +2,19 @@
 title: データの挿入
 description: このトピックでは、X++ を使用してテーブルにデータを挿入する方法について説明します。
 author: robinarh
-manager: AnnBe
 ms.date: 06/16/2020
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150273
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 5310f978a7f625e6a5bfdafc0aa5d09f7e5b9ba9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eec876d6ae964f93299ce4624b398b69bf3a12f5
+ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408738"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "6661356"
 ---
 # <a name="insert-data"></a>データの挿入
 
@@ -31,8 +25,8 @@ ms.locfileid: "4408738"
 + **[insert メソッド](#insert-method)** – 一度に 1 行を挿入します。
 + **[doInsert メソッド](#do-insert-method)** – 一度に 1 行を挿入します。
 + **[insert\_recordset ステートメント](#insert-recordset-statement)** – 複数のレコードを 1 つまたは複数のテーブルから別のテーブルに 1 回のデータベース トリップで直接コピーします。
-+ **[RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)** – 1 回のデータベース トリップで複数の行を同時に挿入します。 データをソートする必要がない場合は、この構文を使用します。
-+ **[RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)** – 1 回のデータベース トリップで複数の行を同時に挿入します。 特定のテーブルのデータのサブセットを必要とし、現在インデックスとして存在しない順序でソートする場合は、このコンストラクトを使用します
++ **[RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – 1 回のデータベース トリップで複数の行を同時に挿入します。 データをソートする必要がない場合は、この構文を使用します。
++ **[RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – 1 回のデータベース トリップで複数の行を同時に挿入します。 特定のテーブルのデータのサブセットを必要とし、現在インデックスとして存在しない順序でソートする場合は、このコンストラクトを使用します
 
 **RecordSortedList**、**RecordInsertList**、および **insert\_recordset** を使用すると、複数のレコードを挿入できます。 これらのメソッドを使用することにより、アプリケーションとデータベース間の通信が減少します。 したがって、パフォーマンスの向上に役立ちます。 場合によっては、レコードのセットに基づく操作をレコードごとの操作に戻すことができます。 詳細については、[セット ベースからレコード単位への操作の変換](xpp-data-perf.md)を参照してください。
 
@@ -257,3 +251,6 @@ static void JobDuplicKeyException44Job(Args _args)
     ---- .insert() successful.
 */
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

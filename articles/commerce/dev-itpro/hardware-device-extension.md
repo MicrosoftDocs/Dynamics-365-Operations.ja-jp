@@ -2,11 +2,9 @@
 title: POS と新しいハードウェア デバイスの統合
 description: このトピックでは、新しいハードウェア デバイスに販売時点管理 (POS) を統合する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: rhaertle
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
-ms.openlocfilehash: 613c015d1a8288e4a444ec0f2347e65d6d4df9e0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3fa4c4465159481c7159b61d50864556454d23b8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685409"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797219"
 ---
 # <a name="integrate-the-pos-with-a-new-hardware-device"></a>POS と新しいハードウェア デバイスの統合
 
@@ -259,3 +257,6 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
         "Sample", "Custom parameters or custom object");
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

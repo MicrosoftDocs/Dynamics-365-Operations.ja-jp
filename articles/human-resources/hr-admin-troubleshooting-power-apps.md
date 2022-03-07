@@ -2,7 +2,7 @@
 title: Power Apps 管理センターで環境を作成できない
 description: この記事では、管理者が Microsoft Power Apps 管理者センターで環境を作成することができない場合の対処方法について説明します。
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 68e6dbcbbc9811211570e968047f5faa8a2c8bd0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 664c644c9b34e3489b4134040e165d26202dbd38
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419349"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113261"
 ---
 # <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a>Power Apps 管理センターで環境を作成できない
 
 **問題点**
 
 - テナント/環境の管理者が Microsoft Power Apps 管理者センターで環境を作成することができません。
-- 環境の作成手順を実行する権限をユーザーに提供するライセンスは、その手順を実行しているユーザーに直接割り当てられていません。
+- ユーザーは、環境を作る権限を付与するライセンスを持っていません。
 
 **ソリューション**
 
-テナント管理者が、環境の作成手順を実行するユーザーに、有効な Power Apps P2 ライセンスを直接割り当てていることを確認します。 その権限を提供する Microsoft Dynamics サービス プランは次のとおりです。
+テナント管理者が、環境を作成するユーザーに有効な Power Apps P2 ライセンスを割り当てている必要があります。 次の Microsoft Dynamics サービス 計画では、環境を作成するアクセス許可が提供されます。
 
-| 全体の最小在庫管理単位 (SKU)       | Power Apps P2 サービス計画  |
+| 全体の製品の最小管理単位 (SKU)       | Power Apps P2 サービス計画  |
 |------------------------------------------------|----------------------------|
 | Microsoft Dynamics 365 for Operations          | Power Apps for Dynamics 365 |
 | Microsoft Dynamics 365 Plan Enterprise Edition | Power Apps for Dynamics 365 |

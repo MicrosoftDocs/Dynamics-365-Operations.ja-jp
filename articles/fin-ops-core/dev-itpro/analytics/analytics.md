@@ -2,11 +2,9 @@
 title: 分析、集計の測定、および KPI モデリング
 description: このトピックでは、組込みビジネス インテリジェンス (BI)、集計測定値、分析コード、データ エンティティ、集計プログラミング モデルについて説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b2cc30b601376740a85435122a3b8a9f921e2af
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 97fcb666f412c4966f3c97ba6811664dc558909cef72aff648a3629dda95757a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683127"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726371"
 ---
 # <a name="analytics-aggregate-measurements-and-kpi-modeling"></a>分析、集計の測定、および KPI モデリング
 
@@ -73,3 +71,6 @@ Dynamics AX 2012 およびそれ以降の視点を使って生成されたプロ
 
 ## <a name="kpi-modeling-and-customization"></a>KPI のモデリングおよびカスタマイズ
 AX 2012 およびそれ以前のバージョンでは、KPI とビジネス指標をネイティブの SQL Server 開発ツールを使用してモデル化する必要がありました。 ユーザーは KPI または **業務概要** Web パーツを使用して業務インジケーターにロール センターを固定できますが、KPI 定義を目標のように変更することはできません。 ユーザーは開発者によりビルドされ公開された KPI 定義を変更するために、リッチ クライアントのフォームを使用できます。 集計測定値に含まれる集計データを使用して、新しい KPI を定義することもできます。 開発者は、Microsoft Visual Studio で KPI の定義をモデル化して、プロジェクトまたは独立系ソフトウェア ベンダー (ISV) ソリューションと共に、顧客に出荷することができます。 KPI を定義した後、ユーザーは実行時にカスタマイズできます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

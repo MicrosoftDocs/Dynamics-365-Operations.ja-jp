@@ -1,27 +1,25 @@
 ---
 title: 分析コード式ビルダーのサブパターン
 description: この記事では、分析コード式ビルダー コントロールを使用するコンテナー コントロールに適用される分析コード式ビルダーのサブパターンについて説明します。
-author: jasongre
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 29451
 ms.assetid: 6ab0f75d-3168-4dfe-b2ce-d17d3861216e
 ms.search.region: Global
-ms.author: jasongre
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a99bf3c514073d54e61f61ce5c11b978a699fd5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ca9bef4fede4128a612202e3f265d8e8c50ea456
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680506"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782723"
 ---
 # <a name="dimension-expression-builder-subpattern"></a>分析コード式ビルダーのサブパターン
 
@@ -29,13 +27,13 @@ ms.locfileid: "4680506"
 
 この記事では、分析コード式ビルダー コントロールを使用するコンテナー コントロールに適用される分析コード式ビルダーのサブパターンについて説明します。  
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 分析コード式ビルダー パターンは、分析コード式ビルダー コントロールを使用するグループまたはタブ ページがあるときに使用されます。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![dimensionExpressionBuilderWireframe](./media/dimensionexpressionbuilderwireframe.png)](./media/dimensionexpressionbuilderwireframe.png)
+
+[![コンテナーのワイヤーフレーム。](media/dimensionexpressionbuilderwireframe.png)](./media/dimensionexpressionbuilderwireframe.png)
 
 ## <a name="model"></a>モデル
 ### <a name="high-level-structure"></a>高レベル構造体
@@ -58,7 +56,7 @@ TabPage | Group
 None
 
 ## <a name="examples"></a>例
-フォーム: **BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)** (**予算作成** &gt; **設定** &gt; **予算管理** &gt; **予算管理コンフィギュレーション**) [![dimensionExpressionBuilderExample](./media/dimensionexpressionbuilderexample.png)](./media/dimensionexpressionbuilderexample.png)
+フォーム: **BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)** (**予算作成** &gt; **設定** &gt; **予算管理** &gt; **予算管理コンフィギュレーション**) [![フォーム例。](media/dimensionexpressionbuilderexample.png)](./media/dimensionexpressionbuilderexample.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -69,5 +67,4 @@ None
 
 None
 
-
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

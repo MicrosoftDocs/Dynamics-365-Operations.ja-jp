@@ -2,11 +2,9 @@
 title: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
 description: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
 author: ChrisGarty
-manager: AnnBe
 ms.date: 05/11/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BatchJob
 audience: IT Pro
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-05-19
 ms.dyn365.ops.version: Platform update 6
-ms.openlocfilehash: 2ba107da07d56372e9397bd79524adfd13b3a55d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 66019d7c7464edb557a5bc41a48a7e9cd2ddfff6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797590"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070920"
 ---
 # <a name="configure-the-workflow-message-processing-batch-job-as-critical"></a>ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ワークフロー システムでは、さまざまなバッチ ジョブを使用します。 **ワークフロー メッセージ処理** は、ワークフロー メッセージを処理するために使用される重要なバッチ ジョブです。 ワークフローが組織の重要なコンポーネントである場合は、**ワークフロー メッセージ処理** バッチ ジョブを重要なものとして構成することを検討する必要があります。
 
@@ -39,3 +40,6 @@ ms.locfileid: "4797590"
 4. アクション ウィンドウの **編集** をクリックします。
 5. **重要なジョブ** チェック ボックスをオンにします。
 6. アクション ウィンドウの **保存** をクリックします。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

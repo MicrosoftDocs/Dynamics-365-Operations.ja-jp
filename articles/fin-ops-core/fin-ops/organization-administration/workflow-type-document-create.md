@@ -2,34 +2,35 @@
 title: ワークフロー ドキュメント クラスの作成
 description: このトピックでは、ワークフロー ドキュメント クラスを作成する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 202694
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: c3784f6b102f5452fbf0eb8ea2202e7817b71d9b
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 33c1f931f964e6fcba58a543fdcca1e9d99ee4c7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798759"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070083"
 ---
 # <a name="create-a-workflow-document-class"></a>ワークフロー ドキュメント クラスの作成
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 クエリでテーブルフィールドを定義して、ワークフロー条件を作成します。 一般的なシナリオでは、計算済フィールドはワークフローの動作を決定するために使用されます。 たとえば、テーブル内のすべてのレコードの動的な販売合計をワークフロー条件として使用し、ステップを使用するかどうかを決定できます。 ただし、クエリの制限としては、クエリ自体に計算済フィールドを定義できないことが挙げられます。 このクエリ制限を克服するには、ワークフロー ドキュメント クラスを使用する必要があります。 このトピックでは、ワークフロー ドキュメント クラスを作成する方法について説明します。
 
-作成するワークフロー ドキュメント クラスは、アプリケーション エクスプローラーのクエリとパラメータ メソッドという 2 つの方法で、条件のテーブル フィールドを定義します。 クエリの名前を返すには、 [WorkflowDocument クラス](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg798542(v=ax.60)) の **getQueryName** メソッドをオーバーライドする必要があります。 必要に応じて、クラスの特定の署名を持つパラメータ メソッドを追加して、計算済フィールドを追加することができます。 ワークフロー条件の詳細については、 [ワークフロー プロパティのコンフィギュレーション](configure-workflow-properties.md) と [ワークフローでの条件付き意思決定のコンフィギュレーション](configure-conditional-decision-workflow.md) を参照してください。
+作成するワークフロー ドキュメント クラスは、アプリケーション エクスプローラーのクエリとパラメータ メソッドという 2 つの方法で、条件のテーブル フィールドを定義します。 クエリの名前を返すには、 [WorkflowDocument クラス](/previous-versions/dynamics/ax-2012/application-classes/gg798542(v=ax.60)) の **getQueryName** メソッドをオーバーライドする必要があります。 必要に応じて、クラスの特定の署名を持つパラメータ メソッドを追加して、計算済フィールドを追加することができます。 ワークフロー条件の詳細については、 [ワークフロー プロパティのコンフィギュレーション](configure-workflow-properties.md) と [ワークフローでの条件付き意思決定のコンフィギュレーション](configure-conditional-decision-workflow.md) を参照してください。
 
 次の手順では、計算済フィールドのパラメータ メソッドを含むワークフロー ドキュメント クラスを作成する方法について説明します。 開始する前に、アクセスするデータを指定するクエリを作成する必要があります。 ワークフロー クエリの詳細については、 [ワークフロー タイプのクエリの作成](workflow-type-query.md) を参照してください。
 
@@ -56,7 +57,7 @@ ms.locfileid: "4798759"
 5. 新しいクラスを右クリックし、 **オーバーライド メソッド** をポイントして、次に **getQueryName** を選択します。 **GetQueryName** という名前のメソッド ノードがワークフロー ドキュメント クラス ノードの下に表示され、 **エディター** ウィンドウが表示されます。
 
     > [!NOTE]
-    > オーバーライドする方法として **getQueryName** を選択してください。 [WorkflowDocument.getQuery メソッド](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg798533(v=ax.60)) は、 [WorkflowDocument.getQueryName メソッド](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg798541(v=ax.60)) によって返される文字列に基づいて、実際のクエリを取得するために内部的にのみ使用されます。
+    > オーバーライドする方法として **getQueryName** を選択してください。 [WorkflowDocument.getQuery メソッド](/previous-versions/dynamics/ax-2012/application-classes/gg798533(v=ax.60)) は、 [WorkflowDocument.getQueryName メソッド](/previous-versions/dynamics/ax-2012/application-classes/gg798541(v=ax.60)) によって返される文字列に基づいて、実際のクエリを取得するために内部的にのみ使用されます。
 
 6. **エディター** ウィンドウで、次のコードをクエリ メソッドに入力します。
 
@@ -93,3 +94,6 @@ ms.locfileid: "4798759"
 ## <a name="see-also"></a>参照
 
 [ワークフロー ドキュメント クラスとワークフロー タイプの関連付け](workflow-type-associate-document.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

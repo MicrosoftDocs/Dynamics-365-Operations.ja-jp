@@ -2,11 +2,9 @@
 title: ゾーンしきい値の補充
 description: ゾーンに基づいた補充では、最小/最大 (最小/最大) 補充方法が使用されますが、個々の場所ではなく、倉庫ゾーン全体が評価されます。 したがって、倉庫管理者はピッキング ゾーンで追加の在庫が必要になるタイミングをより迅速に知ることができます。
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 2e83d6885bf7400916d633a49d3b19b8843b0269
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: f3e94cc79f0daac9107f9876ac8414d2c4cff366
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965505"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569002"
 ---
 # <a name="zone-threshold-replenishment"></a>ゾーンしきい値の補充
 
@@ -343,3 +341,6 @@ ms.locfileid: "4965505"
 
 - 動的な場所を使用している場合、場所ディレクティブ アクションが **連結** 戦略を使用するように設定されている場合は、最初に使用可能な場所または在庫が含まれている場所に対して補充作業が作成されます。
 - ゾーンではなく固定の場所を使用する場合は、[標準の最小/最大補充](tasks/set-up-min-max-replenishment-process.md)を使用する必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

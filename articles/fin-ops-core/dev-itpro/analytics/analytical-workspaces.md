@@ -2,11 +2,9 @@
 title: 分析ワークスペース
 description: このトピックでは、使用可能な埋め込み分析ワークスペースの一覧を示し、リソースについて詳しく知ることができます。
 author: sericks007
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 136c3cdd391f6ff92d6760a17d89ddfeec8d45a1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a758d696833ff68b234b77f93d67c3788a18daf2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683141"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754551"
 ---
 # <a name="analytical-workspaces"></a>分析ワークスペース
 [!include[banner](../includes/banner.md)]
@@ -45,3 +43,6 @@ ms.locfileid: "4683141"
 - [仕入先支払ワークスペース](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [倉庫のパフォーマンス Power BI コンテンツ](warehouse-power-bi-content.md)
 - [要員指標 Power BI コンテンツ](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

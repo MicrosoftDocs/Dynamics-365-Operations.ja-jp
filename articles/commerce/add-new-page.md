@@ -2,36 +2,30 @@
 title: 新しいサイト ページの追加
 description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいサイト ページを追加する方法について説明します。
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4b031431499eba0e109ac04dc46ec187250eba694284864bf78bb1f90265d788
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725389"
 ---
 # <a name="add-a-new-site-page"></a>新しいサイト ページの追加
-
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce に新しいサイト ページを追加する方法について説明します。
-
-## <a name="overview"></a>概要
 
 サイトのテンプレートとフラグメントを作成したら、次はそれらを使用するページの作成を開始します。 作業を開始するには、テンプレートまたはレイアウト、ページ名、およびページの URL を選択する必要があります。
 
@@ -90,4 +84,9 @@ ms.locfileid: "4413699"
 
 [カテゴリ ランディング ページの拡充](enrich-category-page.md)
 
-[ページ コンテンツ アクセシビリティの検証](verify-accessibility.md)
+[ページ コンテンツのアクセシビリティの検証](verify-accessibility.md)
+
+[URL のパラメーターに基いて動的な電子商取引ページを作成する](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

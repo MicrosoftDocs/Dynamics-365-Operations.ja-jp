@@ -1,6 +1,6 @@
 ---
 title: 主勘定の作成
-description: この手順では、主勘定を既存の勘定科目表に追加する方法について説明します。
+description: このタスクのガイドは、既存の勘定科目表への主勘定の追加方法について説明します。
 author: aprilolson
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cbc93e2d2aec1ffcfa755c46553022931bc24c5b
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 66e248d029063d4a465ad789e5eb193706b8a2351bf659306050c7ac7d1c950d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729633"
 ---
 # <a name="create-a-main-account"></a>主勘定の作成
 
 [!include [banner](../../includes/banner.md)]
 
-この手順では、主勘定を既存の勘定科目表に追加する方法について説明します。 このレコードでは、USMF デモ会社を使用します。  
+このタスクのガイドは、既存の勘定科目表への主勘定の追加方法について説明します。 このレコードでは、USMF デモ会社を使用します。  
 
 1. **ナビゲーション ウィンドウ > モジュール > 総勘定元帳 > 勘定科目表 > 勘定 > 主勘定** の順に移動します。
 2. **新規** をクリックします。

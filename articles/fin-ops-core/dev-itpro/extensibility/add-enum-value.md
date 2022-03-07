@@ -2,26 +2,24 @@
 title: 拡張機能を使用して列挙体に値を追加
 description: このトピックでは、列挙型を拡張することによって列挙型に新しい値を追加する方法について説明します。
 author: smithanataraj
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 062cd0ac9280d82656f3454027e07314d6bcd933
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f9495f56cc0d289efd91d3d061d567e1090e486e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409275"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782757"
 ---
 # <a name="add-values-to-enums-through-extension"></a>拡張機能を使用して列挙体に値を追加
 
@@ -29,7 +27,7 @@ ms.locfileid: "4409275"
 
 新しい値を列挙型に追加するには、列挙型を拡張する必要があります。 **拡張可能** (**IsExtensible = true**) としてマークされている列挙は拡張できます。 拡張機能の情報は、次の図に示すように、Microsoft Visual Studio の **プロパティ** ウィンドウで見つけることができます。
 
-![拡張可能な列挙](media/AddEnum01.png)
+![拡張可能な列挙。](media/AddEnum01.png)
 
 拡張可能な列挙の列挙値が同期されると、拡張可能な列挙の値が non-deterministic であるのに対して、ベースライン列挙の整数値は deterministic です。 値は、同期時に生成されます。 したがって、列挙値の整数値に依存する X++ ロジックを持つことはできません。 次にいくつか例を挙げます。
 
@@ -52,10 +50,13 @@ ms.locfileid: "4409275"
 
 + 新しい列挙拡張子を使用するモデル参照を持つプロジェクトを作成します。 拡張する列挙値を右クリックし、**拡張を作成** を選択します。
 
-    ![拡張列挙を作成する (方法1)](media/AddEnum02.png)
+    ![拡張列挙を作成する (方法 1)。](media/AddEnum02.png)
 
 + 拡張する列挙値を右クリックし、**新しいプロジェクトで拡張を作成** を選択します。 拡張列挙を作成する必要のあるモデルを選択するように求められます。
         
-    ![拡張列挙を作成する (方法2)](media/AddEnum03.png)
+    ![拡張列挙を作成する (方法 2)。](media/AddEnum03.png)
         
 選択されたモデルで列挙型拡張が作成されます。 新しい列挙値をこの拡張に追加することができます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

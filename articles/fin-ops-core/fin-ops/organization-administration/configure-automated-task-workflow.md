@@ -2,11 +2,9 @@
 title: ワークフローでの自動化タスクのコンフィギュレーション
 description: このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 003a5d2332aaf12ee7e9352ecb61ef190c04a41f
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c7346649108824eb4e7209a2476456a469affa1c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798908"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066521"
 ---
 # <a name="configure-automated-tasks-in-a-workflow"></a>ワークフローでの自動化タスクのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。
 
@@ -110,3 +111,6 @@ ms.locfileid: "4798908"
     </table>
 
 8. ステップ 2 で選択したイベントごとに、ステップ 3～7 を繰り返します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
