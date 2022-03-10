@@ -1,24 +1,24 @@
 ---
 title: 税エンジン コンフィギュレーションの拡張
 description: このトピックでは、税エンジンのコンフィギュレーションの拡張について説明します。
-author: yijialuan
+author: kailiang
 ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: India
-ms.author: riluan
+ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a9d3d7ad26bf753f3b6f1872149f8c91122fbc52
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2321431da3ee7bdad2415fa5f23b77161f8e7190
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345610"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601470"
 ---
 # <a name="extend-tax-engine-configurations"></a>税エンジン コンフィギュレーションの拡張 
 
@@ -77,7 +77,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 1. [拡張コンフィギュレーションを作成します](#create-extension-configurations)  
 2. [課税対象のドキュメントを拡張して、IntraStateInUnionTerritory フラグを含むようにします](#extend-the-taxable-document-so-that-it-includes-the-intrastateinunionterritory-flag)
 3. [拡張された課税対象のドキュメントのデータ マッピングを完了します](#complete-data-mapping-for-the-extended-taxable-document)
-4. [税 (インド販売税 Contoso) のデータ モデルを変更する](#change-the-data-model-of-tax-india-gst-contoso)
+4. [税 (インド販売税 Contoso) のデータ モデルを変更します。](#change-the-data-model-of-tax-india-gst-contoso)
 5. [州販売税 (SGST) の適用条件を変更します](#change-the-applicability-of-sgst)
 6. [UTGST タスク コンポーネントを構成します](#configure-the-utgst-tax-component)
 7. [UTGST を含めるための明細行の式を変更します](#modify-the-formulas-of-lines-to-include-utgst)
@@ -92,17 +92,17 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 
 1. **ローカライズ コンフィギュレーション** ワークスペース (**組織管理** > **ワークスペース** > **電子申告**)、をクリックして **税のコンフィギュレーション**。
 2. ツリーで、**課税対象のドキュメント (インド)** コンフィギュレーションを見つけ、**コンフィギュレーションの作成** をクリックします。
-3. **課税対象のドキュメント モデルから派生** オプションを選択し、名前と、派生課税対象ドキュメントの説明を入力します。 例えば、**課税対象のドキュメント (インド Contoso)** と名前を入力します。
+3. **課税対象のドキュメント モデルから派生** オプションを選択し、名前と、派生課税対象ドキュメントの説明を入力します。 たとえば、**課税対象のドキュメント (インド Contoso)** と名前を入力します。
 4. **コンフィギュレーションの作成** をクリックします。
 5. ツリーで、**税 (インド販売税)** コンフィギュレーションを選択し、**コンフィギュレーションの作成** をクリックします。
-6. **税コンフィギュレーションから派生** オプションを選択し、名前と、派生課税対象ドキュメントの説明を入力します。 この例では、**税 (インド販売税 Contoso)** と入力します。
+6. **税コンフィギュレーションから派生** オプションを選択し、名前と、派生課税対象ドキュメントの説明を入力します。 たとえば、**税 (インドContoso)** と名前を入力します。
 7. **コンフィギュレーションの作成** をクリックします。
 
 ### <a name="extend-the-taxable-document-so-that-it-includes-the-intrastateinunionterritory-flag"></a>課税対象のドキュメントを拡張して、IntraStateInUnionTerritory フラグを含むようにします。
 
-次の手順を完了して、**IntraStateInUnionTerritory** フラグを **課税対象のドキュメント (インド Contoso)** に追加します。
+**IntraStateInUnionTerritory** フラグを **課税対象のドキュメント (インド Contoso)** に追加するため、次の手順を完了します。
 
- 1. ツリーで、[拡張機能コンフィギュレーションの作成](#create-extension-configurations)で作成した **課税対象ドキュメント (インド Contoso)** のコンフィギュレーションを見つけ、**デザイナー** をクリックします。
+ 1. ツリーで、[拡張機能コンフィギュレーションの作成](#create-extension-configurations)で作成した **課税対象のドキュメント (インド Contoso)** コンフィギュレーションを見つけ、**デザイナー** をクリックします。
  2. ツリーで、**課税対象のドキュメント** > **ヘッダー** > **明細行** と移動し、**新規** をクリックして新しいノードを作成します。
  3. ノードの名前を入力し、アイテムの種類を選択します。
     -   **名前:** IntraStateInUnionTerritory
@@ -114,7 +114,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
  5. **ノード** クイック タブで、**項目参照を切り替える** をクリックします。
  6. ツリーで **NoYes** を選択し、**OK** をクリックします。
  7. コンフィギュレーションを保存し、デザイナーを閉じます。
- 8. **課税対象ドキュメント (インド Contoso)** がまだツリーで選択されている状態で、**バージョン** リストにある **ステータスの変更** > **完了** をクリックします。 
+ 8. ツリーで選択されている **課税対象のドキュメント (インド Contoso)** で、**バージョン** リストにある **ステータスを変更** > **完了** をクリックします。
 
     ![コンフィギュレーション状態の更新。](media/gte-change-configuration-status.png)
 
@@ -185,7 +185,7 @@ UTGST のインプット タックス クレジット の使用率の順序は�
     ```
 
 3. デザイナーでのデータ連結を実行します。
-   1. **課税対象ドキュメント (インド Contoso)** コンフィギュレーションで、**デザイナー** をクリックします。
+   1. **課税対象ドキュメント (インド Contoso)** コンフィギュレーションに移動し、**デザイナー** をクリックします。
 
       ![税コンフィギュレーション デザイナー。](media/gte-extension-tax-configuration-designer.png)
 
@@ -258,10 +258,10 @@ UTGST のインプット タックス クレジット の使用率の順序は�
 10. **UTGST** のように説明を入力し、**OK** をクリックします。
 11. エラーがある場合は、デザイナーを開き、**検証** をクリックし、エラーを修正します。
 
-### <a name="change-the-data-model-of-tax-india-gst-contoso"></a>税 (インド販売税 Contoso) のデータ モデルを変更する
+### <a name="change-the-data-model-of-tax-india-gst-contoso"></a>税 (インド販売税 Contoso) のデータ モデルを変更します。
 
 1. **税 (インド販売税 Contoso)** コンフィギュレーションに移動し、**デザイナー** をクリックします。
-2. **税務署類** をクリックして、データ モデルとして **課税対象ドキュメント (インド Contoso)** を選択し、データ モデル バージョンとして **1** を選択します。
+2. **税務書類** をクリックして、データ モデルとして **課税対象ドキュメント (インド Contoso)** を選択し、データ モデル バージョンとして **1** を選択します。
 
     ![税務書類。](media/gte-tax-document-designer.png)
 

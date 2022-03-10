@@ -2,26 +2,19 @@
 title: X++ ビジネス ランタイム関数
 description: このトピックでは、ビジネス ランタイム関数について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 31281
-ms.assetid: 7107cd00-ecb0-46d2-91d6-c342e4314345
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33eaeae2b0a27032579738236e80782fbd43bef7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f06816fb261ce2eeb25b344fd6367de1d480d299
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408751"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781308"
 ---
 # <a name="x-business-runtime-functions"></a>X++ ビジネス ランタイム関数
 
@@ -587,3 +580,6 @@ static void termExample(Args _args)
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Field Service の契約の請求書と Supply Chain Management の自由書式の請求書との同期
 description: このトピックでは、Dynamics 365 Field Service の契約請求書を Dynamics 365 Supply Chain Management の自由書式の請求書に同期するために使用されるテンプレートと基本的なタスクについて説明します。
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -15,21 +13,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 0942ce83060c186212d7f425f8dbd0a4ca2c09e7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 70f1c072c3a2a1b201aac1f1d2beea9979a3b792
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5252777"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060767"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Field Service の契約の請求書と Supply Chain Management の自由書式の請求書との同期
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Dynamics 365 Field Service の契約請求書を Dynamics 365 Supply Chain Management の自由書式の請求書に同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
@@ -70,7 +68,7 @@ Field Service の契約から作成された請求書は、Microsoft Dataverse �
 **請求日** は、Supply Chain Management の必須フィールドです。 したがって、この列は同期が発生する前に Field Service に値が必要です。 この要件を満たすためには、次のロジックが追加されます。
 
 - **請求日** 列の **請求書** テーブルが空白の場合 (つまり、値が存在しない場合)、契約に基づく請求明細行が追加された現在の日付が設定されます。
-- ユーザーは **請求日** 列を変更できます。 ただし、ユーザーが契約に基づいた請求書を保存する際に、**請求日** 列の請求書が空白の場合、ユーザーは業務プロセス エラーを受け取ります。
+- ユーザーは **請求日** 列を変更できます。 しかし、契約に基づく請求書を保存しようとすると、請求書の **請求日** 列が空白の場合、ビジネス プロセス エラーが発生します。
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
@@ -102,11 +100,11 @@ Supply Chain Management フィールド **主勘定表示値** に対する既�
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>契約請求書 (Field Service から Supply Chain Management) : 請求書ヘッダー
 
-[![データ統合のテンプレートのマッピング](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![請求書ヘッダーのデータ統合でのテンプレート マッピング。](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>契約請求書 (Field Service から Supply Chain Management) : 請求明細行
 
-[![データ統合のテンプレートのマッピング](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+[![請求書ヘッダーのデータ統合でのテンプレート マッピング。](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

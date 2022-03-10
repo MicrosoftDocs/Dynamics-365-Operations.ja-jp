@@ -2,11 +2,9 @@
 title: 製品別の売上実績の評価
 description: Dynamics 365 Commerce を使用して、上位 10 製品の収益性を調査できます。
 author: ashishmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SysOperationsTemplateForm
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8cef9d868c5c84949b10a591d8ab5993ac799d5c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c16d55426dec090947311b485e68010a6e0b8943b67d00da10d4cd24ac214393
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989443"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762647"
 ---
 # <a name="assess-sales-performance-by-product"></a>製品別の売上実績の評価
 
@@ -43,3 +41,6 @@ Dynamics 365 Commerce を使用して、上位 10 製品の収益性を調査で
 - **店舗管理** ワークスペース &gt; **Retail と Commerce** &gt; **チャネル** &gt; **店舗管理** &gt; **レポート** &gt; **上位製品レポート**
 - **カテゴリと製品の管理** ワークスペース &gt; **Retail とコマース** &gt; **チャネル** &gt; **店舗管理** &gt; **レポート** &gt; **上位製品レポート**
 - **照会およびレポート** セクション &gt; **Retail と Commerce** &gt; **照会およびレポート** &gt; **売上レポート** &gt; **上位製品レポート**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: マスター プランの設定
 description: このトピックでは、マスター プランの設定に使用される各種重要な戦略およびパラメーターについて説明します。
-author: t-benebo
+author: ChristianRytt
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fe7ff2ab877182dd3145e39574aa7229c48b6057
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833404"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580723"
 ---
 # <a name="set-up-master-planning"></a>マスター プランの設定
 
@@ -106,11 +106,11 @@ ms.locfileid: "5833404"
 
 ### <a name="operations-scheduling"></a>工程のスケジューリング
 
-この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。 工程スケジューリングでは、生産工順の工程がジョブに展開されません。 工程スケジューリングの詳細については、[工程スケジューリング](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) を参照してください。
+この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。 工程スケジューリングでは、生産工順の工程がジョブに展開されません。 工程スケジューリングの詳細については、[工程スケジューリング](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) を参照してください。
 
 ### <a name="job-scheduling"></a>ジョブのスケジューリング
 
-ジョブ スケジューリングはより詳細なスケジューリング方法で、それぞれの工程が個々のタスクまたはジョブに分割されます。 ジョブ スケジューリングには、能力に関する情報が含まれます。 通常、近または短期的な時間枠に、作業現場の個々のジョブをスケジュールするために使用されます。 ジョブ スケジューリングの詳細については、[ジョブ スケジューリング](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) を参照してください。
+ジョブ スケジューリングはより詳細なスケジューリング方法で、それぞれの工程が個々のタスクまたはジョブに分割されます。 ジョブ スケジューリングには、能力に関する情報が含まれます。 通常、近または短期的な時間枠に、作業現場の個々のジョブをスケジュールするために使用されます。 ジョブ スケジューリングの詳細については、[ジョブ スケジューリング](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) を参照してください。
 
 ## <a name="time-fences-in-days"></a>タイム フェンス (日)
 
@@ -158,7 +158,7 @@ ms.locfileid: "5833404"
 
 **アクション メッセージ** オプションを **はい** に設定することにより、マスター スケジューリング時に品目に対して定義されているアクション メッセージ タイム フェンスを上書きできます。 この場合、マスター スケジューリングにおいて要求に対するアクション メッセージを生成する必要のある日数を入力します。 アクション メッセージ タイム フェンスは、現在の日付から未来に向かって計算されます。
 
-アクション メッセージの詳細については、[アクション メッセージ](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages) を参照してください。
+アクション メッセージの詳細については、[アクション メッセージ](/dynamics365/unified-operations/supply-chain/master-planning/action-messages) を参照してください。
 
 > [!NOTE]
 > アクション メッセージの計算により、マスター プランの実行時間が長くなります。 アクション メッセージが定期的に分析および適用されない場合 (毎日、毎週など)、マスター プラン実行中の計算を無効にすることを考慮してください。 計算をオフにするには、**マスター プラン** ページで、実行中のマスター プランに対する **アクション メッセージ** タイム フェンスを **0** (ゼロ) に設定します。 また、すべての補充グループに対して **アクション メッセージ** の設定が無効になっていることを確認してください。
@@ -223,7 +223,7 @@ ms.locfileid: "5833404"
 
 このタイム フェンス内にある計画済供給オーダーのみが使用され、その外側に新しい計画オーダーが作成されます。 動的マイナス在庫日数の利点は、個々の製品のリード タイムが含まれるため、既存の注文を再利用し、リード タイムによる遅延で後の日付で新しい計画オーダーを作成するのを避けれるという点です。 
 
-詳細については、[マイナス在庫日数および動的マイナス在庫日数](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days) を参照してください。
+詳細については、[マイナス在庫日数および動的マイナス在庫日数](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days) を参照してください。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

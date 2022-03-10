@@ -2,7 +2,7 @@
 title: Teams における人事管理アプリ
 description: このトピックでは、Microsoft Teams における Microsoft Dynamics 365 Human Resources について説明します。
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: ffd6967431227b578e227ee570dbe06c356fb8d6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771510"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067054"
 ---
 # <a name="human-resources-app-in-teams"></a>Teams における人事管理アプリ
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,6 +44,21 @@ Dynamics 365 Human Resources アプリは、Teams ストアにあります。 Te
 Teams におけるアプリのアクセス許可の管理については、[Microsoft Teams におけるアプリのアクセス許可ポリシーを管理する](/MicrosoftTeams/teams-app-permission-policies)を参照してください。
 
 ユーザーがアプリで休暇および欠勤カレンダーを表示するには、機能管理で **Teams の休暇および欠勤カレンダー** を有効にする必要があります。 機能を有効にする方法については、[機能の管理](hr-admin-manage-features.md)を参照してください。
+
+## <a name="update-app"></a>アプリの更新
+>[!NOTE]
+> 2021 年 12 月 20 日以降、Microsoft テナントにホストされている人事管理アプリのボット サービスは廃止されます。 最新の拡張機能 (バージョン1.1.5) がインストール可能なため、影響はありません。 主な影響は、古いの拡張機能 (バージョン1.1.4) で発生します。 当該バージョンのチャット ボットは動作しなくなります。 **休暇** タブは引き続き両方の拡張機能で使用できます。
+
+バージョン 1.1.4 では、チャットボットがメッセージに一切応答しなくなります。 たとえば、**サインイン**、**残高を表示する**、**休暇を表示する** などです。 アプリを手動で最新版に更新する必要があります。 詳細については、[Microsoft Teams のアプリを更新する](/MicrosoftTeams/apps-update-experience) を参照してください。
+
+バージョン 1.1.5 に更新するには、次の手順を実行します:
+1. Microsoft Teams で、**アプリ** に移動します。
+2. **人事管理** アプリを探します。
+3. **アップグレード** を選択します。
+
+人事管理アプリのバージョンは、**バージョン情報** タブまたは **個人用アプリ** セクションで確認できます。 
+
+![人事管理の **バージョン情報** タブ。](./media/HR-teams-about.png)
 
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリの通知を有効にする
 
@@ -111,6 +129,9 @@ Teams の Dynamics 365 Human Resources アプリでは、次の言語がサポ�
 ## <a name="troubleshooting"></a>トラブルシューティング
 
 ユーザーが Teams の Human Resources アプリへのサインインまたは使用で問題が発生した場合は、次のトラブルシューティングの手順を実行してください。 トラブルシューティング後も問題が解決しない場合は、サポートにお問い合わせください。 詳細については、[サポート](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) を参照してください。
+
+### <a name="ensure-the-teams-human-resources-application-is-up-to-date"></a>Teams Human Resources アプリケーションを最新の情報に更新する
+Teams Human Resources アプリで問題が発生した場合、最新バージョンを使用しているかどうかを確認する必要があります。 サポートされる最小バージョンは、1.1.5 です。 Teams アプリケーションを更新する手順については、[Teams のドキュメント](/MicrosoftTeams/apps-update-experience)を 参照してください。
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリにサインインできない
 

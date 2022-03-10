@@ -2,7 +2,7 @@
 title: Retail ハードウェア ステーションのコンフィギュレーションとインストール
 description: このトピックでは、セルフサービスを使用して Retail ハードウェア ステーションを構成、ダウンロード、およびインストールする方法について説明します。 また、Retail ハードウェア ステーションをアンインストールする方法についても説明します。
 author: jashanno
-ms.date: 09/24/2020
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 39a65a4d112e6c34f96339e074cfc6525ee307fb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c3d47b61d6e7648902563005923c98b1c617e41bbc76e7692a278a7d3de03bf1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792000"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719479"
 ---
 # <a name="configure-and-install-retail-hardware-station"></a>Retail ハードウェア ステーションのコンフィギュレーションとインストール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、セルフサービスを使用して Retail ハードウェア ステーションを構成、ダウンロード、およびインストールする方法について説明します。 また、Retail ハードウェア ステーションをアンインストールする方法についても説明します。
+このトピックでは、セルフサービス機能を使用してレガシ Commerce ハードウェア ステーションを構成、ダウンロード、およびインストールする方法について説明します。 シールされたセルフサービス インストーラーの詳細については、[シールされた Commerce セルフサービス コンポーネントの一括配置](dev-itpro/Enhanced-Mass-Deployment.md) を参照してください。 また、Retail ハードウェア ステーションをアンインストールする方法についても説明します。
 
 > [!IMPORTANT]
 > このコンポーネントはサーバー証明書を利用することに注意してください。 有効期限に対してサーバー証明書を管理する必要があります。 既定では、証明書は 1 つの暦年 (365 日) で期限切れになります。
@@ -93,7 +93,7 @@ ms.locfileid: "5792000"
 ### <a name="run-the-installer"></a>インストーラーを実行
 
 > [!NOTE]
-> Retail ハードウェア ステーション インストーラーを実行する前に、すべての[システム要件](../fin-and-ops/get-started/system-requirements.md)が満たされていることを確認してください。
+> Retail ハードウェア ステーション インストーラーを実行する前に、すべての[システム要件](../fin-ops-core/fin-ops/get-started/system-requirements.md)が満たされていることを確認してください。
 
 Retail ハードウェア ステーション インストーラーは、まず関連付けられているファイルを抽出し、インストールを開始します。
 

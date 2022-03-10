@@ -2,35 +2,30 @@
 title: クロスチャンネル共有の有効化と使用
 description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのクロスチャンネル共有機能を有効にし、使用する方法について説明します。
 author: psimolin
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4413882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742419"
 ---
-# <a name="enable-and-use-cross-channel-sharing"></a>クロスチャンネル共有の有効化と使用
+# <a name="enable-and-use-cross-channel-sharing"></a>クロスチャネル共有の有効化と使用
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのクロスチャンネル共有機能を有効にし、使用する方法について説明します。
-
-## <a name="overview"></a>概要
 
 クロスチャンネル共有により、小売業者はサイトの複数のチャンネル間でコンテンツを再利用し、共有することができます。 この機能は、サイトチャンネルに互換性のある基本言語が設定されている場合や、多数のコンテンツ項目が共通である場合に役立ちます。
 
@@ -53,15 +48,15 @@ ms.locfileid: "4413882"
 1. **サイト設定 \> 機能** に移動します。
 1. **クロス チャンネル** 機能のオプションを **オン** にします。
 
-    ![クロス チャンネル オプションをコマース サイト ビルダーでオンに設定](./media/enabling-cross-channel-sharing.png)
+    ![クロスチャンネル オプションをコマース サイト ビルダーでオンに設定します。](./media/enabling-cross-channel-sharing.png)
 
 クロスチャンネル共有を有効にした後、次の図に示す例のように、クロスチャンネルの情報は **サイト設定 \> 機能** で、**チャンネル** セクションに表示されます。
 
-![クロスチャンネル共有が有効になった後、チャンネル情報は表示されます](./media/channels-cross-channel.png)
+![クロスチャンネル共有が有効になった後、チャンネル情報は表示されます。](./media/channels-cross-channel.png)
 
 さらにクロスチャンネル共有を有効にすると、コマース サイト ビルダーの右上隅の **チャンネル** フィールドでは、次の図で示すように、クロスチャンネル コンテンツを管理するために使用できる **クロス チャンネル オンライン サイト** オプションが含まれます。
 
-![クロスチャンネル共有の有効後、チャンネル フィールドのクロス チャンネル オンライン ストアのオプション](./media/cross-channel-dropdown.png)
+![クロスチャンネル共有の有効後、チャンネル フィールドのクロス チャンネル オンライン ストアのオプション。](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>クロスチャンネル コンテンツの作成および使用
 
@@ -137,3 +132,6 @@ ms.locfileid: "4413882"
 [ドキュメントの状態とライフサイクル](document-states-overview.md)
 
 [公開グループの作業](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

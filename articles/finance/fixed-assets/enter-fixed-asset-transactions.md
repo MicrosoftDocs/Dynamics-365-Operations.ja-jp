@@ -1,35 +1,32 @@
 ---
 title: 固定資産トランザクションのオプション
-description: このトピックは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
-author: ShylaThompson
-manager: AnnBe
-ms.date: 02/07/2019
+description: このトピックでは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 23061
 ms.assetid: 338c495b-a4d8-461e-b85b-a83faf673730
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f08750c369475f9d8be3c723aaf4eb6cf36eb7c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2c5530bb7b0472aad75ec04c00ba828b8efb877d
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445124"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891575"
 ---
 # <a name="fixed-asset-transaction-options"></a>固定資産トランザクションのオプション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
+このトピックでは、固定資産トランザクションの作成に使用できるさまざまな方法について説明します。
 
 買掛金勘定、売掛金勘定、調達、および一般会計との統合のために、固定資産を設定できます。 また、これらの項目を内部で使用する場合は、在庫管理の品目を固定資産に転送できます。
 
@@ -49,7 +46,7 @@ ms.locfileid: "4445124"
 ## <a name="general-ledger"></a>総勘定元帳
 すべての固定資産トランザクション タイプは [一般仕訳帳] ページで転記できます。 また、固定資産の仕訳帳を使用して、固定資産トランザクションを転記できます。
 
-## <a name="options-for-entering-fixed-asset-transaction-types"></a>固定資産トランザクション タイプの入力のためのオプション
+### <a name="options-for-entering-fixed-asset-transaction-types"></a>固定資産トランザクション タイプの入力のためのオプション
 
 
 | トランザクション タイプ                    | モジュール                   | オプション                                   |
@@ -61,10 +58,25 @@ ms.locfileid: "4445124"
 | 減価償却                        | 固定資産             | 固定資産                              |
 |                                     | 一般会計           | 一般仕訳帳                           |
 | 処分                            | 固定資産             | 固定資産                              |
-| ** **                               | 一般会計           | 一般仕訳帳                           |
-| ** **                               | 売掛金管理      | 自由書式の請求書                         |
+|                                     | 一般会計           | 一般仕訳帳                           |
+|                                     | 売掛金管理      | 自由書式の請求書                         |
 
-
-減価償却トランザクション タイプの仕訳帳明細行がデータ エンティティを通じて手動で作成またはインポートされた場合、固定資産の減価償却期間の残存価額は更新されません。 この値は、減価償却提案プロセスを使用して仕訳帳明細行を作成したときに更新されます。
+減価償却トランザクション タイプの仕訳帳明細行がデータ エンティティを通じて手動で作成またはインポートされた場合、固定資産の減価償却期間の残存価額は更新されません。 残存価格は、償却提案プロセスを使用して仕訳帳明細行を作成したときに更新されます。
 
 詳細については、「[固定資産の統合](fixed-asset-integration.md)」を参照してください。
+
+システムは、同じ期間に減価償却が 2 回転記されることを防ぎます。 たとえば、2 人のユーザーが 1 月に償却提案を個別に作成した場合、最初のユーザーからの減価償却は最初の仕訳帳に転記されます。 2 人目のユーザーが 2 つ目の仕訳帳に減価償却を転記すると、システムは最後に実行された減価償却の日付を確認し、同じ期間中の 2 回目の減価償却は転記しません。
+
+### <a name="transactions-that-require-a-different-voucher-number"></a>異なる伝票番号が必要なトランザクション
+
+次の固定資産トランザクションでは、異なる伝票番号が使用されます。
+
+- 資産の追加取得が行われ、減価償却の「遡及」が計算されます。
+- 資産が分割されます。
+- 処分時の減価償却を計算するためのパラメーターは有効になり、資産が処分されます。
+- 資産利用開始日は、取得日付より前になります。 したがって、減価償却調整額が転記されます。
+
+> [!NOTE]
+> トランザクションを入力するときは、すべてのトランザクションが同じ固定資産に適用されることを確認します。 **新しい伝票** フィールドが、一般会計の **仕訳帳名** ページで **1 つの伝票番号のみ** に設定されている場合でも、複数の固定資産が含まれていると、伝票は転記されません。 伝票に複数の固定資産を含めると、「1 つの伝票に対して指定できる固定資産トランザクションは 1 つのみです」というメッセージを受け取り、伝票を転記することはできません。
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

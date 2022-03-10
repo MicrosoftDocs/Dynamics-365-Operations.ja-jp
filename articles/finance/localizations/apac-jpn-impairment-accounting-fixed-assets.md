@@ -1,28 +1,25 @@
 ---
 title: 日本の固定資産の減損会計
 description: このトピックでは、日本の固定資産の減損会計に関する情報について説明します。
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP, AssetImpairmentManageTestResult_JP
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 28811
 ms.search.region: Japan
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aec3abb8a4d9d8156c2b2fdd6c1085b3a92acd5e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cfb2591997187fe16399f2acd70070f097b5f30b
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408134"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592476"
 ---
 # <a name="impairment-accounting-for-fixed-assets-for-japan"></a>日本の固定資産の減損会計
 
@@ -39,7 +36,7 @@ ms.locfileid: "4408134"
 -   固定資産の減損のトランザクションの詳細を表示します。
 
 ## <a name="how-can-i-identify-impairments-in-fixed-assets"></a>固定資産の減損をどのように識別できますか。
-固定資産の減損を識別するために減損のインジケーターを使用できます。 **減損の確認** ページで、減損しているとみられる固定資産の一覧を生成できます。 値引き前キャッシュ フローを手動で計算し、**減損インジケーターの更新** ページで固定資産の減損インジケーターを更新します。 減損の認識テストの実行時に、固定資産の減損を識別するには、更新した減損インジケーターを使用できます。
+固定資産の減損を識別するために減損のインジケーターを使用できます。 **減損の確認** ページで、減損している可能性がある固定資産の一覧を生成できます。 値引き前キャッシュ フローを手動で計算し、**減損インジケーターの更新** ページで固定資産の減損インジケーターを更新します。 減損の認識テストの実行時に、固定資産の減損を識別するには、更新した減損インジケーターを使用できます。
 
 ## <a name="can-i-select-which-assets-to-test-for-impairment"></a>減損をテストする資産を選択できますか。
 減損をテストする資産を選択できます。 基準を指定するには、**減損認識のテスト** ページの **クエリ** をクリックします。
@@ -72,3 +69,6 @@ ms.locfileid: "4408134"
 - [減損会計の共通パラメーターおよび転記プロファイルの設定](./tasks/impairment-accounting.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

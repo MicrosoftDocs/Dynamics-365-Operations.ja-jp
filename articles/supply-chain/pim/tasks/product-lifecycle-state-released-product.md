@@ -1,7 +1,7 @@
 ---
 title: 製品ライフサイクルの状態をリリース済製品に割り当て
 description: ここでは、リリース済製品の製品ライフサイクルの状態を割り当てる手順を説明します。
-author: cvocph
+author: t-benebo
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b3ccfb13530c8d53234621f083683595c61e046b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 02a1a32213d9b44574ed47bc32a1683c205024a6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807871"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566986"
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product"></a>製品ライフサイクルの状態をリリース済製品に割り当て
 

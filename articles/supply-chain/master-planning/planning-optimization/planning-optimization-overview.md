@@ -2,29 +2,25 @@
 title: 計画の最適化の概要
 description: このトピックでは、計画の最適化機能の概要を示します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/31/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 110045d4c7e4f32c29b73096dd4df3a09b5434ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 49da88be9faff8f327f8079245b3c07db79308e6
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431744"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983445"
 ---
 # <a name="planning-optimization-overview"></a>計画の最適化の概要
 
@@ -36,7 +32,7 @@ Microsoft Dynamics 365 Supply Chain Management の計画の最適化アドイン
 
 次の図は、営業時間内に計画の最適化を実行する利点を示しています。
 
-![営業時間内に計画の最適化を実行する利点](media/PlanningOptimization1.png)
+![営業時間内に計画の最適化を実行する利点。](media/PlanningOptimization1.png)
 
 ## <a name="improved-performance"></a>パフォーマンスの向上
 
@@ -65,11 +61,11 @@ LCS から計画の最適化アドインをインストールすると、計画�
 
 次の図はデータ フローを示します。
 
-![再生成実行のためのデータ フロー](media/PlanningOptimization2.png)
+![再生成実行のためのデータ フロー。](media/PlanningOptimization2.png)
 
 ## <a name="related-resources"></a>関連するリソース
 
-[計画の最適化を開始する](get-started.md)
+[計画最適化の開始](get-started.md)
 
 [計画の最適化フィット分析](planning-optimization-fit-analysis.md)
 
@@ -78,3 +74,6 @@ LCS から計画の最適化アドインをインストールすると、計画�
 [プランへのフィルターの適用](plan-filters.md)
 
 [計画ジョブのキャンセル](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

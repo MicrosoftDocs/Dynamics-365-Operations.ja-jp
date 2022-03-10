@@ -3,7 +3,7 @@ title: タスク管理の概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce におけるマネージャーおよび作業者のタスク管理の概要を示します。
 author: gvrmohanreddy
 ms.date: 02/10/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: bc33a8b21c75a308aea738f0db1f3786695f0633
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7cdcc0ba6a9f5a3d9dd4ea781adc9e81c45e3d02
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791729"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985396"
 ---
 # <a name="task-management-overview"></a>タスク管理の概要
 
@@ -37,13 +37,13 @@ ms.locfileid: "5791729"
 
 次の図は、Commerce におけるタスク管理の概念アーキテクチャを示しています。
 
-![タスク管理の概念アーキテクチャ](media/Tasks-management-conceptual-architecture.png)
+![タスク管理の概念アーキテクチャ。](media/Tasks-management-conceptual-architecture.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 [タスク管理のコンフィギュレーション](task-mgmt-configure.md)
 
-[タスク リストの作成およびタスクの追加](task-mgmt-create-lists.md)
+[タスク リストの作成とタスクの追加](task-mgmt-create-lists.md)
 
 [店舗または従業員へのタスク リストの割り当て](task-mgmt-assign-lists.md)
 

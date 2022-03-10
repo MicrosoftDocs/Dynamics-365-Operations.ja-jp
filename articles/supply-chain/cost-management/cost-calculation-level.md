@@ -2,27 +2,26 @@
 title: 原価計算レベル
 description: このトピックでは、原価計算レベルを指定した部品表 (BOM) のレベルについて説明します。 このBOMレベルでは、計算から生産およびバッチ注文は計算から除外されます。
 author: AndersGirke
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-23
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 52b77e794ee38add556ac01d62c973b38c48a548
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: e08d11c8e9d98e56c5ef076cbab7bb68bedea62a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431874"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581035"
 ---
 # <a name="cost-calculation-level"></a>原価計算レベル
+
+[!include [banner](../includes/banner.md)]
 
 **原価計算レベル** が指定された部品表 (BOM) レベルでは、計算から製造注文とバッチ注文が除外されます。 このシステムは、原価計算のバージョンで原価計算を実行する際に、このレベルを使用します。 再計算や在庫原価計算などのプロセスでは、システムは代わりに **原価計算レベル** の BOM レベルを使用します。
 
@@ -57,3 +56,6 @@ ms.locfileid: "4431874"
     - **製品 C :** 2
 
 この動作により、製造オーダー BOM に対する変更が後続の原価計算に影響を与えることがなくなります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

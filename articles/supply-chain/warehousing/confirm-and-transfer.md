@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767954"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103592"
 ---
 # <a name="confirm-and-transfer"></a>確認および転送
 
@@ -45,20 +45,17 @@ ms.locfileid: "6767954"
 
 - ピッキング済の数量が 1 つ以上、積荷明細行に含まれています。
 - 積荷状態は積載済よりも小さくなっています。
-- 積荷明細行データがありません。 (このデータは、ステージング場所でのライセンス プレートの結合を通して作成され、*確認および転送* 機能は、ライセンス プレートの結合をサポートしていません。)
-- 現在、梱包場所に梱包待ちの在庫はありません。 (*確認および転送* 機能は、梱包ステーションにピッキングされているが、まだ梱包されていない在庫はサポートしていません。)
+- 積荷明細行データがありません。 (このデータは、ステージング場所でのライセンス プレートの結合を通して作成され、確認および転送機能は、ライセンス プレートの結合をサポートしていません。)
+- 現在、梱包場所に梱包待ちの在庫はありません。 *確認および転送* 機能は、パックステーションにピッキングされたものの、まだパックされていない在庫には対応していません。ただし、パック済みコンテナがステージング ロケーションに置かれ、出荷作業が作成されている場合はこの限りではありません。
 
 > [!NOTE]
 > この機能は、ピッキング前に積荷を計画および作成することはできず、ピッキング完了後に使用可能な輸送スペースを積載する倉庫で使用する必要がある輸送積載機能とは異なります。
 >
 > *確認および転送* 機能は、通常、積荷が事前に計画および作成されているが、利用可能な輸送手段 (トラックなど) に収まらないなどの例外が発生する場合に使用されます。
 
-## <a name="turn-on-confirm-and-transfer"></a>確認および転送をオンにする
+## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>確認・転送機能のオン/オフを切り替える
 
-*確認および転送* 機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *確認および転送*
+このトピックで説明する機能を使用するには、ご利用システムで *確認と転送* 機能がオンになっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *確認と転送* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="set-up-confirm-and-transfer"></a>確認および転送を設定する
 

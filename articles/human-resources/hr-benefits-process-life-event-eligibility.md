@@ -1,8 +1,8 @@
 ---
-title: ライフ イベントの適格性を処理
-description: この記事では、ライフ イベント適格性の処理を実行する方法について説明します。
-author: andreabichsel
-ms.date: 04/06/2020
+title: ライフ イベントの適格性の処理
+description: このトピックでは、ライフ イベントの適格性を処理する方法について説明します。
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,24 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 825754d75dee5f8c86922e9e407fbc20f8ad125d1e91a4461218678001c569ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3086718ed8dc0a8da988eb2d4cd07a2fff38e52c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716569"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065896"
 ---
-# <a name="process-life-event-eligibility"></a>ライフ イベントの適格性を処理
+# <a name="process-life-event-eligibility"></a>ライフ イベントの適格性の処理
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-この記事では、ライフ イベント適格性の処理を実行する方法について説明します。
+このトピックでは、ライフ イベントの適格性の処理方法について説明します。
 
 1. **給付金管理** ワークスペースにて、**処理** の下の **ライフ イベントの適格性処理** を選択します。
 

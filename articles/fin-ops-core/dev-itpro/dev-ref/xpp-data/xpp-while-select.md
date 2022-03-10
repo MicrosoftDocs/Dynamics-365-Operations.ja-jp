@@ -1,24 +1,20 @@
 ---
 title: 明細書の選択中
 description: このトピックでは、X++ 言語での while select ステートメントについて説明します。
-author: robinarh
+author: tonyafehr
 ms.date: 06/16/2020
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: ''
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1b345b0f24c53302175bddec326d00bad2d62b6d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7396beb7b54732a65ad2665ebb9370653facb5b0
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749950"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783255"
 ---
 # <a name="while-select-statement"></a>明細書の選択中
 

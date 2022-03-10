@@ -1,27 +1,25 @@
 ---
 title: IoT インテリジェンスのシナリオ設定
 description: このトピックでは、IoT インテリジェンスのシナリオを Microsoft Dynamics 365 Supply Chain Management でコンフィギュレーションする方法について説明します。
-author: robinarh
-manager: tfehr
+author: tonyafehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 91deb080121d50794e6ff6fe79f9ca876b76deb4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b8e8c65cebe64f86dcf158668e8a4f5600c158a1
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005255"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782430"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>IoT インテリジェンスのシナリオ設定
 
@@ -44,7 +42,7 @@ ms.locfileid: "5005255"
 このシナリオを構成するには、次の手順に従います。
 
 1. Supply Chain Management にサインインします。
-2. IoT インテリジェンス機能のフラグを有効化します。 詳細については [機能管理の概要](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) を参照してください。
+2. IoT インテリジェンス機能のフラグを有効化します。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 3. メトリックを構成します。 構成方法の詳細については、[メトリックの構成方法](iot-metrics-setup.md#configure-metrics)を参照してください。
 4. **生産管理 \> 設定 \> IoT インテリジェンス \> シナリオ管理** に移動します。
 6. **装置のダウンタイムタイル** タイルで、**コンフィギュレーション** を選択して、コンフィギュレーション ウィザードを開きます。
@@ -142,3 +140,6 @@ ms.locfileid: "5005255"
 2. シナリオのタイルで、**コンフィギュレーション** を選択します。
 3. **次へ** を選択して最後のウィザード ページに進みます。
 4. オプションを設定してシナリオを無効化します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,21 @@
 ---
 title: テーブル マップ拡張
 description: テーブル マップを拡張するために、テーブル マップをモデルにリファクタリングしました。追加のフィールドとメソッドを使用してソリューションを拡張できます。
-author: LarsBlaaberg
-manager: AnnBe
+author: MichaelFruergaardPontoppidan
 ms.date: 12/20/2017
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 89563
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: lolsen
+ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
-ms.openlocfilehash: 02ed19d12227187a0610f2fa4f4dc1e613a385b8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: da01496279aaf496b92d93784bfe4f553456f26c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408842"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781642"
 ---
 # <a name="table-map-extension"></a>テーブル マップ拡張
 
@@ -33,11 +27,11 @@ ms.locfileid: "4408842"
 
 次の図は、**SalesPurchTable** テーブル マップを示しています。これは、**ApplicationSuite** モデルの **SalesTable**、**PurchTable**、および **SalesBasket** テーブルによって実装されています。 さらに、**ISV1Header** テーブルは **SalesPurchTable** テーブル マップを実装しますが、**ISV1Header** は **ISVModule1** モデルの一部です。
 
-![MapExtensionsProblem](media/MapExtensions1.png)
+![拡張なしのマップ。](media/MapExtensions1.png)
 
 たとえば、**AccountingGroupId** という名前の新しいフィールドおよび **validateAccountingGroup** という名前の新しいメソッドが **ApplicationSuite** モデルでテーブル マップに追加されます。それから、そのテーブル マップを実装するテーブルは、フィールドおよび追加されるメソッドも含むよう更新できます。 ただし、**ISVModule1** モデルの **ISV1Header** テーブルは、開発者が **ApplicationSuite** モデルに変更を加えるコントロールの外にあります。
 
-![MapExtensionsProblem](media/MapExtensions2.png)
+![新しいフィールドを使用するマップ拡張。](media/MapExtensions2.png)
 
 ビジネス ロジックを **ApplicationSuite** モデルに追加する場合、そのロジックは新しい **AccountingGroupId** フィールドをクエリし、テーブル マップ レコードのタイプが **ISV1Header** である場合、ランタイム エラーが発生します。
 
@@ -61,7 +55,10 @@ if (headerTable.validateAccountingGroup())
 
 フィールドまたはメソッドを追加する機能が拡張機能を介してテーブル マップに追加された場合は、競合は解決されません。 これは、**ISVModule2** に **ApplicationSuite** モデルのテーブル マップと実装テーブルの拡張が含まれている次の図に示されています。 **ISVModule2** を実装する開発者は、**ISVModule1** モデルの **ISV1Header** テーブルを制御できません。**ISV1Header** テーブルには、**AccountingGroupId** フィールドのマッピングと **validateAccountingGroup** メソッドの実装がありません。
 
-![MapExtensionsProblem](media/MapExtensions3.png)
+![新しいフィールドおよび新しいメソッドを使用する拡張。](media/MapExtensions3.png)
 
 コンパイラがテーブル マップのすべてのフィールドとメソッドを、テーブル マップを実装するすべてのテーブルにマップする必要がある場合でも、競合は解決されません。 マップされた新しいフィールドまたは実装された新しいメソッドがないテーブルは、追加されたフィールド/メソッドを含むモデルが適用されるときにコンパイルするため、ランタイム エラーを受け取る代わりに、フィールドまたはメソッドを追加することで重大な変更をクリアします。 テーブル マップを拡張するために、テーブル マップをモデルにリファクタリングしました。追加のフィールドとメソッドを使用してソリューションを拡張できます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

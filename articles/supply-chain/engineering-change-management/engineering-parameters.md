@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 34c2cd1bb7bfaac50f8816e7eecabf754bc714c3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 106c3a79236bcb8112ecbd48e29f3f5f3148a867
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832229"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581011"
 ---
 # <a name="engineering-change-management-parameters"></a>エンジニアリング変更管理のパラメーター
 

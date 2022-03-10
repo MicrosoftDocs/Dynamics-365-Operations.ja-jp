@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c1477e3c1b99172d84d2cdc64fc0ed01c057e0fa59422b30c17868ca400de4d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743701"
 ---
 # <a name="creating-work-orders"></a>作業指示書の作成
 
@@ -48,7 +48,7 @@ ms.locfileid: "5836737"
 
     **作業指示書の作成** ダイアログ ボックスが表示されます。 **メンテナンス予測時間** フィールドには、選択した明細行に対する予測時間数の合計が表示されます。
 
-    ![作業指示書の作成ダイアログ ボックス](media/18-preventive-maintenance.png)
+    ![作業指示書のダイアログ ボックスを作成します。](media/18-preventive-maintenance.png)
 
 1. **パラメーター** セクションで、作成する作業指示書の数を指定します。 次のオプションのいずれかを選択します。
 

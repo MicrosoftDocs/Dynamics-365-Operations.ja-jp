@@ -2,11 +2,9 @@
 title: 元帳を構成する
 description: このトピックでは、各法人に対して元帳を構成する方法について説明します。 ここでは、通貨の選び方、会計カレンダー、勘定科目表、各法人で使用すべき勘定科目構成などの情報を掲載しています。
 author: kweekley
-manager: ''
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5a7fcda435fd957edbbe09d796685c0c742dc6a8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3e6c4d966f2720339941fb848ff9ac79e4593868ce10d3712efbb1ad18a9ceea
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975819"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712222"
 ---
 # <a name="configure-ledgers"></a>元帳を構成する
 
@@ -81,3 +79,6 @@ Dynamics 365 Finance の各法人は、ひとつつ以上の勘定構造を使�
 実現利益と実現損失は、完了したトランザクションから得られる利益と損失です。 これらは、損益計算書に記録されます。 未実現利益と未実現損失は、具体化された利益と損失ですが、トランザクションは完了していません。 たとえば、請求書は既に転記されていますが、請求書はまだ決済されておらず、支払いもされていない状態です。 未実現利益と未実現損失は、貸借対照表に記録されます。
 
 二重通貨の詳細については、[二重通貨](dual-currency.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

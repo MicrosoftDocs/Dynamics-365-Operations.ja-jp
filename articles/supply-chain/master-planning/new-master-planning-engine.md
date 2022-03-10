@@ -2,16 +2,13 @@
 title: マスター プランの計画最適化への移行
 description: このトピックでは、新しいマスター プラン エンジン、最適化の計画、および既存のエンジンからの移行に関する情報を提供します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 94e5668da45c524ed9ab9eef10b40d0fb5336a65
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728582"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>マスター プランの計画最適化への移行
 
@@ -66,8 +63,12 @@ Microsoft は、現在組み込みの計画エンジンを計画の最適化に�
 
 必要な機能が使用可能になった後、例外の期限が切れるまで猶予期間が提供されます。 必要な機能が使用可能になり、猶予期間が開始されると、環境管理者に通知されます。
 
+次のフローチャートは、このトピックで提供される情報を要約しているため、例外を要求する必要があるかどうかをすばやく判断できます。 例外を要求する必要がある場合は、[計画の最適化の移行と例外に関するアンケート](https://go.microsoft.com/fwlink/?linkid=2144962) に記入して送信してください。
+
+![例外フローチャート。](media/exception-diagram.png "例外フローチャート")
+
 > [!NOTE]
-> 例外の要求は、運用環境に対してのみ行うことができ、サンドボックス環境では要求できません。 サービス (IaaS) サンドボックス環境としてのインフラストラクチャにおける計画の最適化例外エラーを無効にする必要がある場合は、[サンドボックス環境](#faq-sandbox)で提供されている SQL クエリを実行します。
+> 例外を要求できるのは、サンドボックス環境のみのテナントではなく、現在実稼動環境が含まれている、または含まれる予定のテナントのみです。 サービス (IaaS) サンドボックス環境としてのインフラストラクチャにおける計画の最適化例外エラーを無効にする必要がある場合は、[サンドボックス環境](#faq-sandbox)で提供されている SQL クエリを実行します。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -116,3 +117,6 @@ ELSE
 > 次のアンケートに記入して、移行に関連する要求の例外を計画の最適化に適用してください。
 
 **回答:** いいえ、マスター プランはブロックされていません。 マスター プランの実行が正常に完了し、その結果を通常の方法で使用できるようになりました。 ただし、今後のマスター プランの実行時にこのエラー メッセージが表示されないようにするには、計画の最適化に直ちに移行するか、エラー メッセージのリンクを使用して例外を要求する必要があります。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

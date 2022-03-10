@@ -1,9 +1,9 @@
 ---
 title: マスター プランとマルチサイト機能の概要
 description: マスター プランでは、サイトと倉庫の在庫分析コードの設定が考慮されます。
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: InventLocation, InventSite
@@ -15,15 +15,15 @@ ms.custom:
 ms.assetid: 7f05c031-a446-4168-8cce-03a6305f5c4d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65a1b7570466907e6b919f583db0bf553cbd542a
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: e594cfd71201c6a629c04d5557c117649e6b19b0
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6335967"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982332"
 ---
 # <a name="master-planning-and-multisite-functionality-overview"></a>マスター プランとマルチサイト機能の概要
 

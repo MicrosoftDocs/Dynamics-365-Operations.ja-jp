@@ -2,11 +2,9 @@
 title: エンジニアリング会社およびデータ所有権のルール
 description: このトピックでは、1 以上のエンジニアリング会社を使用して、製品のマスター データを一元的に作成して管理する方法について説明します。 エンジニアリング会社とは、エンジニアリング製品を所有している会社と、エンジニアリングに関連するデータを表します。
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEngineeringOrganization
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 837960a628ef03df4d73909e96713e256d0f5e60
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 1a05ad1a9d24239e2659c1ffecc21e5e186b1e96
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262312"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572916"
 ---
 # <a name="engineering-companies-and-data-ownership-rules"></a>エンジニアリング会社およびデータ所有権のルール
 

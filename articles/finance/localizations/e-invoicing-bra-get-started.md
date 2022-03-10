@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom:
-- "97423"
-- intro-internal
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fd37c98b64e6074d54b40e20f87f24912abcdd75575aa92e1e2b7345d3cce5a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82bbf806d207af0b15406e4bec516420db7f2c06
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730480"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984856"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>ブラジル向けの電子請求を開始する 
 
@@ -55,7 +53,7 @@ Finance および Supply Chain Management に接続されたアプリケーシ�
 
 このセクションは、トピック [電子請求を開始する](e-invoicing-get-started.md)の **アプリケーション設定** セクションを補完するものです。
 
-1. RCS の **グローバリゼーション機能** ワークスペースの **機能** セクションで、 **電子請求* タイルを選択します。
+1. RCS の **グローバリゼーション機能** ワークスペースの **機能** セクションで、 **電子請求** タイルを選択します。
 2. **電子請求機能** ページで、**ブラジル NF-e (BR)** 電子請求機能が選択されていることを確認します。
 3. **バージョン** タブで、**ドラフト** バージョンが選択されている必要があります。
 4. **設定** タブで、**アプリケーション設定** を選択し、**接続済みアプリケーション** フィールドで、配置するアプリケーションを選択します。
@@ -108,7 +106,7 @@ Finance および Supply Chain Management に接続されたアプリケーシ�
 6. **応答タイプ** を選択し、**新規** を選択します。
 7. **応答タイプ** フィールドに固定値として "ABRASFCuritibaSubmitResponse" と入力し、**説明** フィールドに "Description" と入力します。
 8. **提出の状態** フィールドで **保留** を選択します。
-9. **モデル マッピング** フィールドで、**応答メッセージのインポート** を **(プレビュー)  NFS-e ABRASF クリチバ 応答メッセージのインポート (BR)** と共に選択し、**保存** を選択します。
+9. **モデル マッピング** フィールドで、**応答メッセージのインポート** を **(プレビュー) NFS-e ABRASF クリチバ 応答メッセージのインポート (BR)** と共に選択し、**保存** を選択します。
 10. **新規** を選択し、**応答タイプ** フィールドに固定値として "ABRASFCuritibaSubmitResponseData" と入力し、**説明フィールド** に、"Description" と入力します。
 11. **提出の状態** フィールドで **保留** を選択します。
 12. **モデル マッピング** フィールドで、**応答データのインポート** を **(プレビュー) NFS-e ABRASF 応答データのインポート形式 (BR)** と共に選択し、**保存** を選択します。

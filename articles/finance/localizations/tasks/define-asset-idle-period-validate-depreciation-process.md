@@ -2,26 +2,23 @@
 title: 資産のアイドル期間の定義および減価償却プロセスの検証
 description: このタスクでは、固定資産のアイドル期間の定義について説明します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, AssetIdlePeriodAssign_JP, AssetTable, AssetBook, AssetIdlePeriodUpdate_JP, AssetProfile, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3914a2158302ead7ff9561fa5f82843f3d96a4d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6f9974e4112dfff4d38691a1454d5ee9530b3bbcc9ed3e0c17ed244c1f795dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408191"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772705"
 ---
 # <a name="define-asset-idle-period-and-validate-depreciation-process"></a>資産のアイドル期間の定義および減価償却プロセスの検証
 
@@ -113,3 +110,6 @@ ms.locfileid: "4408191"
 17. [OK] をクリックします。
     * アイドル期間に対して作成された特別償却の仕訳帳は検証なし  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: ウェーブ ステップ コード
 description: このトピックでは、ウェーブ ステップ コードの概要とその使用方法について説明します。
-author: josaw1
+author: Mirzaab
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f44d500d58dffb37b27d230b0633336eb87996a6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c32e795fcb12be02d9c9324051101fa378935303
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838061"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572244"
 ---
 # <a name="wave-step-codes"></a>ウェーブ ステップ コード
 

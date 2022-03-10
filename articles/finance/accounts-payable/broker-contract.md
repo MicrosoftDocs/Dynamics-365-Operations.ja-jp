@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2630e53ada8272a93372e764412ffc0717df79ba
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f58205434322c6bee29ce8fb4a2040739007ba815cbaf1bebde0b85ff749836c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360190"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749090"
 ---
 # <a name="broker-contract-management"></a>ブローカー契約管理
 

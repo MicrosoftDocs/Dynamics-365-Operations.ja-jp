@@ -1,26 +1,24 @@
 ---
 title: 日本の郵便番号のインポート
 description: このトピックでは、日本の郵便番号をインポートする方法について説明します。
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 11/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 49e6f5efda8cb06b6dc083df875cd76371331644
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8855582950e63bce17b6fcdb16224ce1f5273861
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258171"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592508"
 ---
 # <a name="import-postal-codes-for-japan"></a>日本の郵便番号のインポート
 

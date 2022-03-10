@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52740246f745272f238ec3dcf8e53f7310e4b24271da4a5d6388a1b9c4706521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774852"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074970"
 ---
 # <a name="safety-margins"></a>安全マージン
 
@@ -61,9 +61,6 @@ ms.locfileid: "6774852"
 
 ### <a name="reorder-margin"></a>再発注マージン
 
-> [!NOTE]
-> **間もなく:** この機能は計画の最適化ではサポートされていません。 サポート対象となるまでは、**品目のリードタイムに追加された再注文マージン** に入力されたすべての値はに入力されたすべての値は *0* (ゼロ) として処理されます。
-
 次の図では、再注文マージンを強調表示しています。
 
 ![再発注マージン。](media/safety-margins-3.png)
@@ -71,9 +68,6 @@ ms.locfileid: "6774852"
 再注文マージンは、マスター プラン中のすべての計画オーダーについて、品目のリードタイムの前に追加されます。 したがって、供給オーダーを配置するための時間が余分に必要になります。 このマージンは、通常、注文の作成時に承認プロセスまたはその他の内部プロセスに必要な時間を確保するためにバッファーとして使用されます。 再注文マージンは、供給の *注文日* と *開始日* の間に置かれます。
 
 ### <a name="issue-margin"></a>払出安全日数
-
-> [!NOTE]
-> **間もなく:** この機能は計画の最適化ではサポートされていません。 サポート対象となるまでは、**要求日から差し引いた払出安全日数** に入力されたすべての値は *0* (ゼロ) として処理されます。
 
 次の図では、払出安全日数を強調表示しています。
 

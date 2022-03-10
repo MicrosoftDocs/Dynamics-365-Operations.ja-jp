@@ -2,11 +2,9 @@
 title: オンライン注文トランザクションと非同期顧客注文トランザクションの編集と監査
 description: このトピックでは、Microsoft Dynamics 365 Commerce でオンライン注文トランザクションと非同期顧客注文トランザクションを編集および監査する方法について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 11/04/2020
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8fa6f7a71bae759e2b8feb3c5778200bb7bdbfe9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 99ad5be36587a3f726f5b40cccfdd30ab0ef48e1a87563a884f83264f40842fc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010154"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765293"
 ---
 # <a name="edit-and-audit-online-order-and-asynchronous-customer-order-transactions"></a>オンライン注文トランザクションと非同期顧客注文トランザクションの編集と監査
 
@@ -90,3 +88,6 @@ Commerce 本社でトランザクションの編集と監査を行うには、�
 [小売トランザクションを編集するために Excel ブックを作成する](create-excel-edit.md)
 
 [小売トランザクションを編集するために Excel ブックにフィールドを追加する](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

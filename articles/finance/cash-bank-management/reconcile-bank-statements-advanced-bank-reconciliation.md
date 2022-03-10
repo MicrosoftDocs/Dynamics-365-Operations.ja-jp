@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e5b097d667186a849b23814917d0d6f837c25de
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fbfa999d2aaa4b6dad711bb57916a68fb37c57d9add09092783ad3a8d6450c1f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714451"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>詳細な口座調整を使用した口座取引明細書の調整
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835007"
 
 詳細な口座調整機能では、電子口座取引明細書をインポートし、Dynamics 365 Finance での銀行トランザクションに合わせて自動的に調整することができます。 このトピックでは、調整プロセスについて説明します。  
 
-<a name="import-an-electronic-bank-statement"></a>電子口座取引明細書のインポート
------------------------------------
+## <a name="import-an-electronic-bank-statement"></a>電子口座取引明細書のインポート
 
 **口座取引明細書** ページの **明細書のインポート** アクションを使用して、口座取引明細書をインポートします。 口座取引明細書では、銀行口座は、銀行口座の詳細で設定されている値の組み合わせによって識別されます。 これらの値には、銀行名、銀行口座番号、支店コード、国際銀行間通信協会 (SWIFT) コード、および国際銀行番号 (IBAN) が含まれます。 
 

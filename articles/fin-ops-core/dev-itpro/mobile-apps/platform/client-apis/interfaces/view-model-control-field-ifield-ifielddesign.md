@@ -1,18 +1,18 @@
 ---
 title: FieldDesign タイプ
 description: フィールド コントロール用のデザイン オブジェクト インターフェイス。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: c6cca8888037a9396b7137d2772593d34f89a2db30797ff39510f81a804c70d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: cd30da4860b1c95f9c94bd57ea8691478b95cc8a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733103"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781873"
 ---
 # <a name="fielddesign-type"></a>FieldDesign タイプ
 

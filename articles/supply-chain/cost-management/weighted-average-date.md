@@ -2,29 +2,26 @@
 title: 加重平均日付
 description: 加重平均日付とは加重平均原則に基づく在庫モデルで、在庫からの出庫は、在庫原価計算期間の 1 日ごとに、在庫に入庫された品目の平均額で決定されます。
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431778"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572028"
 ---
 # <a name="weighted-average-date"></a>加重平均日付
 
@@ -32,7 +29,7 @@ ms.locfileid: "4431778"
 
 加重平均日は加重平均原則に基づく在庫モデルです。 加重平均原則では、在庫からの出庫は、在庫原価計算期間に毎日受け取って入庫された品目の平均値で評価されます。 
 
-加重平均日付を使用して在庫原価計算を実行すると、1 日のすべての入庫が、仮想出庫に対して決済されます。 この仮想出庫は、その日の合計入庫数量と金額を保持します。 仮想出庫には対応する仮想入庫があり、この仮想入庫に対して出庫が決済されます。 そのため、すべての出庫が同じ平均原価を取得します。 仮想の払出と入庫は仮想の転送と見なすことができ、*加重平均在庫原価計算転送* と呼ばれます。 
+加重平均日付を使用して在庫原価計算を実行すると、1 日のすべての入庫が、仮想出庫に対して決済されます。 この仮想出庫は、その日の合計入庫数量と金額を保持します。 仮想出庫には対応する仮想入庫があり、この仮想入庫に対して出庫が決済されます。 そのため、すべての出庫が同じ平均原価を取得します。 仮想の払出と入庫は仮想の転送と見なすことができ、*加重平均在庫決算転送* と呼ばれます。 
 
 その日付以前に発生した入庫が 1 つしかない場合、平均を求める必要はありません。 すべての出庫がその入庫から決済されるため、仮想移動は作成されません。 同様に、その日付に出庫しか発生しない場合、平均を求めるための入庫がなく、仮想移動は作成されません。 加重平均日付を使用する場合、特定の品目の受入が特定の払出を対象に決済されるように、在庫トランザクションをマークすることもできます。 この場合、加重平均日付のルールを使用しません。 加重平均日付の在庫モデルを使用する場合は、在庫原価計算を毎月行うことをお勧めします。 
 
@@ -42,7 +39,7 @@ ms.locfileid: "4431778"
 
 次の図のように、在庫決算中は期間を通して毎日計算が行われています。 
 
-![加重平均日の日々計算モデル](./media/weightedaveragedatedailycalculationmodel.gif) 
+![加重平均日の日々計算モデル。](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 購買注文、在庫仕訳帳、製造オーダーなど、在庫払出から発する在庫トランザクションは、転記日の見積原価価格で発生します。 この見積原価価格は、移動平均原価価格とも呼ばれます。 在庫原価計算日に、そのシステムが前の期間、前の日付、および現在の日付の在庫トランザクションを分析します。 この分析を使用して、次の在庫計算原則のどちらを使用する必要があるかを決定します。
 
@@ -51,7 +48,7 @@ ms.locfileid: "4431778"
 
 決済は、原価計算日時点での正しい加重平均に払出を調整する在庫原価計算転記です。 
 
-**注記:** 決済の詳細については、在庫決算についての記事を参照してください。 次の例は、5 つのコンフィギュレーションで加重平均を使用した場合の影響を示しています。
+**注記:** 決済の詳細については、在庫決算についての記事を参照してください。 次の例は、5 つのコンフィギュレーションで加重平均を使用した場合の影響を示しています。
 
 -   **現物価格を含める** オプションを使用しない加重平均日直接決済
 -   **現物価格を含める** オプションを使用しない加重平均日集計決済
@@ -75,7 +72,7 @@ ms.locfileid: "4431778"
 -   2b. 数量 2 の在庫財務払出を、それぞれの原価 USD 10.00 で更新します。
 -   3. 在庫原価計算は直接決済方式を使用して実行され、在庫財務払出に対して在庫財務入庫を決済します。
 
-![[現物価格を含める] オプションを使用しない加重平均日直接決済](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![[現物価格を含める] オプションを使用しない加重平均日直接決済。](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **図の説明:**
 
@@ -129,7 +126,7 @@ ms.locfileid: "4431778"
 
 次の図は、この一連のトランザクションを示しています。また、加重平均在庫モデルと集計決済原則を使用し、**現物価格を含める** オプションを使用しない場合の影響を示しています。 
 
-![[現物価格を含める] オプションを使用しない加重平均日集計決済](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![現物価格を含めるオプションを使用しない加重平均日集計決済。](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **図の説明:**
 
@@ -178,7 +175,7 @@ ms.locfileid: "4431778"
 
 新しい移動平均原価価格は、USD 27.50 での財務および現物更新済トランザクションの平均を反映しています。 次の図は、この一連のトランザクションを示しています。また、加重平均日付の在庫モデルとマーキングを使用した影響を示しています。
 
-![マーキングを使用した加重平均日](./media/weightedaveragedatewithmarking.gif) 
+![マーキングを使用した加重平均日。](./media/weightedaveragedatewithmarking.gif) 
 
 **図の説明:**
 
@@ -196,3 +193,6 @@ ms.locfileid: "4431778"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

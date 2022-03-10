@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778110"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102767"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>分析コードおよび製品バリアントの既定の注文設定
 
@@ -186,12 +186,9 @@ Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供�
 
 厳密な検証は、**既定の注文設定** ページの **発注書**、**在庫**、および **販売注文** のクイックタブで指定されている **標準注文数量** の値に適用されます。 各クイックタブには、独自の **複数** の設定があります。これは、当該クイックタブに指定された **標準注文数量** の値を検証するために使用されます。
 
-### <a name="enable-the-strict-validation-option"></a>厳密な検証オプションの有効化
+### <a name="turn-the-strict-validation-option-on-or-off"></a>厳密な検証オプションのオン/オフ
 
-Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページで機能状態を確認し、必要に応じて有効化または無効化することができます。 この機能は次のように一覧表示されます。
-
-- **モジュール** - *製品情報管理*
-- **機能名** - *既定の注文数量に対する厳密な検証*
+厳密な検証を行うには、ご利用のシステムで *規定の注文数量に対する厳格な検証* 機能がオンになっている必要があります。 Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25より古いバージョンをご利用の場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *規定の注文数量に対する厳格な検証* の機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ### <a name="set-the-validation-option"></a>検証オプションの設定
 

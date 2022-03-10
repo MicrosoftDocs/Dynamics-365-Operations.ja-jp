@@ -1,26 +1,24 @@
 ---
 title: フォーミュラのコピー
 description: 多少の違いはあっても、既存のフォーミュラと同じ構成要素を含んでいるフォーミュラを作成することに焦点を当てています。
-author: ShylaThompson
-manager: tfehr
+author: johanhoffmann
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0643209f7ef5090684db693bea2483fadcf3760b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 654e631ee7f2f3bbd2d874ad698f1ecaeaa14418
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4998781"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566674"
 ---
 # <a name="copy-a-formula"></a>フォーミュラのコピー
 
@@ -64,3 +62,6 @@ ms.locfileid: "4998781"
 5. [選択] をクリックします。
 6. [OK] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

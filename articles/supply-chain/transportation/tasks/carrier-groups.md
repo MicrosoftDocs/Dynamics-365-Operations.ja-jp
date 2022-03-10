@@ -14,14 +14,16 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9fe95ee9a0b6d69544f35ac6bc9cdf3dd00db291
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 10a30d8fae52a25b7d65b5a9cc991677df33a2a7
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809065"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574884"
 ---
 # <a name="carrier-groups"></a>配送業者グループ
+
+[!include [banner](../../includes/banner.md)]
 
 配送業者グループは、出荷の配送業者と配送業者のサービスの集合体です。 各配送業者グループは、配送業者とそれに属する配送業者サービスの優先順位を指定します。
 

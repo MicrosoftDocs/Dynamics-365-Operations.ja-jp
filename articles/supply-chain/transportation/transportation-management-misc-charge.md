@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
-ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 53c25f204e98a911e9697f5bb950706555749a55
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: 776c73b1a29666e393bed7c40059a578fe86cb0d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828322"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576187"
 ---
 # <a name="transportation-management-miscellaneous-charges"></a>輸送管理の雑費
 

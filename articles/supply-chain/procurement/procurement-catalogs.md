@@ -1,26 +1,28 @@
 ---
 title: 調達カタログの概要
 description: この記事は、購買担当者が調達カタログを設定および管理する方法について高レベルで説明します。 調達カタログは、会社の従業員が内部で使用するために注文する品目およびサービスを定義します。
-author: kamaybac
+author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2214
+ms.custom:
+- "2214"
+- intro-internal
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b72ccbcec1e3796917c041def19f3985668e7e1e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: efe0541859822b4c6404f2833ae38e07b79dd634
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807923"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984298"
 ---
 # <a name="procurement-catalogs-overview"></a>調達カタログの概要
 
@@ -66,8 +68,7 @@ ms.locfileid: "5807923"
 -   **両方** – **静的** を既定の更新タイプとした製品カテゴリを含むカタログは、これらのカテゴリの更新時に手動で更新する必要があります。 **動的** を既定の更新タイプにした製品カテゴリを含むカタログは、カタログが変更されるたびに自動的に更新されます。
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [調達カテゴリ階層の設定](tasks/set-up-procurement-category-hierarchy.md)
 

@@ -1,29 +1,26 @@
 ---
 title: 機能的な場所のライフサイクルの状態
 description: このトピックでは、資産管理に機能的な場所の状態とライフサイクル モデルを設定する方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3eedc21dde32671b4f5539ac4e798a8e1329c191
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432262"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360973"
 ---
 # <a name="functional-location-lifecycle-states"></a>機能的な場所のライフサイクルの状態
 
@@ -59,7 +56,10 @@ ms.locfileid: "4432262"
 1. **資産管理** > **設定** > **機能的な場所** > **ライフサイクル モデル** を選択します。
 2. **新規** を選択して、新しいライフサイクル モデルを作成します。
 3. **ライフサイクル モデル** フィールドにライフサイクル モデル ID を、また **名前** フィールドにライフサイクル モデルの名前を挿入します。 **機能的な場所のタイプ** および **ライフサイクルの状態** フィールドでは、ライフサイクル モデルを使用する機能的な場所のタイプの数と、ライフサイクル モデルで選択された状態の数を確認できます。
-4. **ライフサイクルの状態** クイック タブで、モデルに含める必要がある状態を選択します。 これは、**残りのライフスタイル状態** セクションの状態をクリックし、![前方矢印](media/02-setup-for-functional-locations.png) ボタンをクリックすることにより実行されます。
-5. モデルで使用可能なすべての状態を選択する場合は ![使用可能なすべてのステージを選択](media/03-setup-for-functional-locations.png) ボタンをクリックします。 すべての状態は、**選択されたライフサイクル状態** セクションに転送されます。
-6. 選択した状態をモデルから削除する場合は、**選択されたライフサイクル状態** セクションで状態を選択し ![戻る矢印](media/04-setup-for-functional-locations.png) ボタンを選択します。
+4. **ライフサイクルの状態** クイック タブで、モデルに含める必要がある状態を選択します。 これは、**残りのライフスタイル状態** セクションの状態をクリックし、![前方矢印](media/02-setup-for-functional-locations.png) ボタンをクリックすることにより 実行されます。
+5. モデルで使用可能なすべての状態を選択する場合は ![使用可能なすべてのステージを選択](media/03-setup-for-functional-locations.png) ボタンを クリックします。 すべての状態は、**選択されたライフサイクル状態** セクションに転送されます。
+6. 選択した状態をモデルから削除する場合は、**選択されたライフサイクル状態** セクションで状態を選択し ![戻る矢印](media/04-setup-for-functional-locations.png) ボタンを 選択します。
 7. **ライフサイクル状態の更新プログラム** を選択して、選択した状態に従うことができるライフサイクル状態を定義します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

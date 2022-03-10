@@ -1,29 +1,26 @@
 ---
 title: 複数レベル資産
 description: このトピックでは、複数レベル資産の作成および削除する方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b7609a85f0315ee5cb5fae62d151b271ef5febe
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f43c7c97f8b05a1bf76b2f2c869e6868689f388d06337064f04af839f2403357
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769614"
 ---
 # <a name="multi-level-assets"></a>複数レベル資産
 
@@ -62,3 +59,6 @@ ms.locfileid: "4432099"
 
 > [!NOTE]
 > この手順を使用して資産を削除できない場合は、削除を処理するもう 1 つの方法として、この目的のために資産ライフサイクル状態を設定します。 たとえば、**資産ライフサイクル状態** ページの **仕損済** または **削除** でライフサイクル状態を設定できます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: 組織単位間のリレーションシップのデザイン
 description: この手順では、組織単位間の関係をデザインする方法を説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner, OMNodeSelection,  HierarchyPublishAndCloseForm
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b516d51210604a5813d637aa342dc7e269c60d89
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bd358b72978b2115bd53d95d3ab7a89d0639f0fc9088073fbf891de21cda14df
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759240"
 ---
 # <a name="design-the-relationships-between-organizational-units"></a>組織単位間のリレーションシップのデザイン
 
@@ -62,3 +60,6 @@ ms.locfileid: "4972248"
 29. [発行] をクリックします。
 30. [閉じる] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

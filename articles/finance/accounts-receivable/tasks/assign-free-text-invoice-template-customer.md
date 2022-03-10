@@ -2,26 +2,23 @@
 title: 顧客への自由書式の請求書テンプレートの割り当て
 description: このタスクは顧客に自由書式の請求書テンプレートを割り当てる方法を示します。
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 19742c53406cd1c616e8be1172b93157437132e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fb8a683792051a95b443fac47b4670f37c12cc4b4142ee2290b89ee1845662cf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740101"
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>顧客への自由書式の請求書テンプレートの割り当て
 
@@ -50,3 +47,6 @@ ms.locfileid: "4445082"
     + [毎年] – [間隔] フィールドでこのオプションを選択し、年数を入力します。 たとえば、2 を入力すると、請求書はこの顧客に対して 2 年ごとに生成されます。  
 14. **間隔** フィールドに数値を入力します。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

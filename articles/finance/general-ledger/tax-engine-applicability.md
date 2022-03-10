@@ -10,15 +10,15 @@ ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE, 
 audience: IT Pro
 ms.reviewer: roschlom
 ms.search.region: India
-ms.author: riluan
+ms.author: pacheren
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: abfd947e74e8e0cace290ccc6c6638178ff52cd5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c9b2872d6edca895c668a1eebda02cd11956951959aa9202f6cf3c05743107c7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766277"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 
@@ -54,13 +54,13 @@ ms.locfileid: "5838777"
 
 **デザイナー** ボタンをクリックして税 (インドの GST) を開きます。 
 
-![CGST 条件](media/gte-tax-document-applicability-cgst.png)
+![CGST 条件。](media/gte-tax-document-applicability-cgst.png)
 
 CGST、税コンポーネント CGST を選択し、鉛筆アイコンをクリックして、詳細な条件をチェックします。 
 
-![CGST 条件の詳細](media/gte-tax-document-applicability-cgst-condition.png)
+![CGST 条件の詳細。](media/gte-tax-document-applicability-cgst-condition.png)
 
-条件は、実際には、[電子申告](../../dev-itpro/analytics/general-electronic-reporting.md) 式です。 これは **データ ソース** の左側のフィールドと右側の **関数** で構成されています。 サポートされている機能の一覧については、[電子申告 (ER) のフォーミュラ デザイナー](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md) を参照してください。 
+条件は、実際には、[電子申告](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) 式です。 これは **データ ソース** の左側のフィールドと右側の **関数** で構成されています。 サポートされている機能の一覧については、[電子申告 (ER) のフォーミュラ デザイナー](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md) を参照してください。 
 
 次の条件は、*課税対象文書のタイプ* を「在庫転送オーダー受信」、「在庫転送オーダー出荷」、または「在庫転送オーダー」にすることはできないことを意味します。 つまり HSN コードまたは SAC のいずれかを指定する必要があります。
 
@@ -123,7 +123,7 @@ AND(
 ### <a name="lookup-for-static-applicability-rules"></a>静的適用ルールのルックアップ
 **GST** を選択して、**ルックアップ** をクリックします。
 
-![CGST 条件](media/gte-tax-document-applicability-static-lookups.png)
+![ルックアップの CGST 条件。](media/gte-tax-document-applicability-static-lookups.png)
 
 ルックアップは静的適用ルールと動的適用ルールの両方を処理できるので、**ソース タイプ** ドロップダウンリストはこの目的のためにあります。 静的適用ルールには **コンフィギュレーション** を使用します。これは、ルックアップで使用されるデータがコンフィギュレーションから取得されることを意味します。 動的適用ルールには **ユーザー データ** を使用します。これは、ルックアップに使用されるデータがランタイム環境から取得されることを意味します。
 
@@ -161,7 +161,7 @@ OR(
 
 ここでは、CGST レートを決定する方法を確認しましょう。 **CGST > レート** の順に選択し、**ルックアップ** をクリックします。
 
-![CGST、レート、ルックアップの選択](media/gte-tax-document-applicability-dynamic-lookups.png)
+![CGST、レート、ルックアップを選択します。](media/gte-tax-document-applicability-dynamic-lookups.png)
 
 ランタイム データは税率を決定するために必要なので、システムは **ソース タイプ** と **ユーザー データ** の値を隠します。
 
@@ -172,7 +172,7 @@ OR(
 
 **列** をクリックします。 左側に **使用可能な列** がすべてあります。 構造は、参照モデルがないことを除けば、フォーミュラ デザイナーの **データ ソース** と同じです。
 
-![ルックアップ列](media/gte-tax-document-applicability-change-lookups.png)
+![ルックアップ列。](media/gte-tax-document-applicability-change-lookups.png)
 
 **使用可能な列** で **品目 ID** を選択し、商品を一意に決定します。 右矢印アイコンをクリックして、**選択された列** 側に追加します。 HSN が不要な場合は、**選択された列** で **HSN コード** を選択し、左矢印アイコンをクリックして削除できます。 
 

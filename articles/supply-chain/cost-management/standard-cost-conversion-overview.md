@@ -2,28 +2,28 @@
 title: 標準原価換算の概要
 description: この記事は、標準原価換算を設定および実行するのに役立つプロセスの概要を提供します。 説明されているステップは、標準原価換算の前提条件の完了後に実行することを意図しています。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 78212
+ms.custom:
+- "78212"
+- intro-internal
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcbd8464532722c83f170db6b19cca5dd77846a0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9796449bee4361b2b871af10d30341c2f0760ab1
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011800"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982692"
 ---
 # <a name="standard-cost-conversion-overview"></a>標準原価換算の概要
 
@@ -94,10 +94,12 @@ ms.locfileid: "5011800"
 -   日付を遡らせた在庫移動を分析します。 換算後に入力された、日付を遡らせた在庫移動を表示するには、**在庫金額** レポートを使用します。 レポートの開始日と終了日は、移行の開始日と換算日のそれぞれの前日と一致する必要があります。 レポートの選択基準は、換算された品目を反映します。 このレポートは、移行期間中に標準原価で行われた在庫移動を表示します。
 
 
-<a name="additional-resources"></a>その他のリソース
---------
+## <a name="additional-resources"></a>その他のリソース
 
 [標準原価換算の前提条件](prerequisites-standard-cost-conversion.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

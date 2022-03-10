@@ -2,26 +2,24 @@
 title: 拡張可能クラスの書き込み
 description: このトピックでは、拡張可能クラスを書き込む方法について説明します。
 author: smithanataraj
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 268724
 ms.assetid: ''
 ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: cc53a87a6a511c66ecdfdccb5c870e98317db8cc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fb0a3411dacb3804bde38ad5b9850c54fdd232e1
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409247"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782182"
 ---
 # <a name="write-extensible-classes"></a>拡張可能クラスの書き込み
 
@@ -94,3 +92,6 @@ ms.locfileid: "4409247"
 
 ## <a name="deprecation"></a>廃止
 クラスまたはパブリックまたは保護メソッドが不要になった場合、必ずまず警告を使用し、メソッドが廃止されたことをユーザーに通知します。 次に、すべてのユーザーは、変更または新しい API を取り込むことができ、メソッドを廃止できます。 クラスおよびメソッドの廃止 (または、それ以外の場合はクラス メンバーの削除) は、大きな変更点です。 詳細については、[重大な変更](breaking-changes.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

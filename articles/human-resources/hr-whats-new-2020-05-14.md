@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2c5ae1078e3490fef3383fc6d637df70128683e7
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: cb4693f3c856e7abcc39cbd658183d01ec98a066
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051020"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063750"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Dynamics 365 Human Resources (2020年5月14日) の新機能と変更された機能
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3244 に適用されます。 一部のヘッダーにあるかっこ内の数字は、参照用に Lifecycle Services (LCS) のサポート番号を参照しています。
 
 ## <a name="platform-changes"></a>プラットフォームの変更
 
-プラットフォームの変更は今週のリリースに含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.10 のプラットフォーム更新プログラム (2020年5月) ](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md) を参照してください。 このリリースには、バグ修正や保存されたビューへの変更が含まれています。
+プラットフォームの変更は今週のリリースに含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.10 のプラットフォーム更新プログラム (2020 年 5 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md) を参照してください。 このリリースには、バグ修正や保存されたビューへの変更が含まれています。
  
 ## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Dataverse の候補リストがすべての列挙と一致することを保証する (436343)
 

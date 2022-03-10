@@ -2,11 +2,9 @@
 title: 元帳トランザクション別消費税詳細のレポート
 description: このトピックでは、元帳トランザクション レポート別の消費税詳細を使用して、消費税の計算対象である元帳トランザクションに関する情報を表示および印刷する方法について説明します。
 author: ericwang
-manager: Ann Beebe
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-19
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: b90ae491605bf59b93137936a2804c4b84c6e1b7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f835f06c190f1d174fbde6b68f189b0484a7b39610bc2edc0676a3e2fa320268
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721758"
 ---
 # <a name="sales-tax-specification-by-ledger-transaction-report"></a>元帳トランザクション別消費税詳細のレポート
 [!include [banner](../includes/banner.md)]
@@ -56,7 +54,7 @@ ms.locfileid: "5204885"
 
 レポートで非課税勘定のみを表示するには、次の図に示すように、アスタリスク(\*) などのフィルター条件を設定します。
 
-![非課税勘定を表示するレポート](media/taxspecperledgertrans.png)
+![非課税勘定を表示するレポート。](media/taxspecperledgertrans.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

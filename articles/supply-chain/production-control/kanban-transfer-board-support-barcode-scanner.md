@@ -1,12 +1,10 @@
 ---
-title: バーコード スキャナー用かんばん転送ボードのサポート
+title: バーコード スキャナーのかんばん転送ボードのサポート
 description: かんばん転送ボードは、かんばん作業を選択、開始、完了、および空にするためのウィジェット バーコード スキャナーのスキャナー入力をサポートします。
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
@@ -15,24 +13,23 @@ ms.custom: 19391
 ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b6d65430d09c293fd5bca032b8b0e88c971d5a9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b18aad4dcdbf8c2d18960ae306556c3ea679d622
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246096"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566814"
 ---
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>バーコード スキャナー用かんばん転送ボードのサポート
+# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>バーコード スキャナーのかんばん転送ボードのサポート
 
 [!include [banner](../includes/banner.md)]
 
 かんばん転送ボードは、かんばん作業を選択、開始、完了、および空にするためのウィジェット バーコード スキャナーのスキャナー入力をサポートします。
 
-<a name="registration-modes"></a>登録モード
-------------------
+## <a name="registration-modes"></a>登録モード
 
 **スキャナーの登録** クイック タブで登録モードを選択すると、登録モードを選択できます。これは、[かんばんカード番号] フィールドでかんばんカード番号をスキャンまたは手動入力するときのアクションを制御します。
 
@@ -44,8 +41,7 @@ ms.locfileid: "5246096"
 | 選択                | かんばんカード番号を登録すると、自動的にかんばんリストに参照されるジョブが選択されます。 |
 
  
-<a name="registration-mode-select"></a>[選択] の登録モード
-------------------------
+## <a name="registration-mode-select"></a>[選択] の登録モード
 
 ジョブを選択するのにバーコードを使用する場合、かんばんボードの表示モードを変更します。 このモードでは、次の要件が適用されます。
 
@@ -94,7 +90,7 @@ ms.locfileid: "5246096"
 <td>有</td>
 <td>有</td>
 <td>有</td>
-<td>第        条</td>
+<td>無</td>
 <td>有</td>
 </tr>
 <tr class="even">
@@ -104,61 +100,61 @@ ms.locfileid: "5246096"
 <li>ペギングにされたジョブが [完了] ではない</li>
 </ul></td>
 <td>有</td>
-<td>第        条</td>
+<td>無</td>
 <td>有</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="odd">
 <td>移動</td>
 <td>処理中</td>
 <td>有</td>
-<td>第        条</td>
+<td>無</td>
 <td>有</td>
 <td>有</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="even">
 <td>移動</td>
 <td>完了</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 <td>有</td>
-<td>第        条</td>
+<td>無</td>
 </tr>
 <tr class="odd">
 <td>転送または処理中</td>
 <td>空</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="even">
 <td>転送または処理中</td>
 <td>かんばんカードがない</td>
-<td>いいえ</td>
-<td>いいえ</td>
-<td>いいえ</td>
-<td>いいえ</td>
-<td>いいえ</td>
-<td>いいえ</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="odd">
 <td>転送または処理中</td>
 <td>かんばんカードはあるが、かんばんに割り当てられていない</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="even">
 <td>処理</td>
@@ -167,22 +163,22 @@ ms.locfileid: "5246096"
 <li>準備済</li>
 <li>処理中</li>
 </ul></td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 <tr class="odd">
 <td>処理</td>
 <td>完了</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
-<td>第        条</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
+<td>無</td>
 </tr>
 </tbody>
 </table>

@@ -1,7 +1,7 @@
 ---
 title: 販売時点管理 (POS) への周辺機器の接続
 description: このトピックでは、Retail POS に周辺機器を接続する方法について説明します。
-author: rubencdelgado
+author: BrianShook
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 66912443c25adfae6fa11e6a25c4a97f63a438ba
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802048"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779521"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>販売時点管理 (POS) への周辺機器の接続
 
@@ -78,7 +78,7 @@ MPOS とは、Windows 8.1 またはそれ以降の PC ベースのオペレー�
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>周辺機器が接続されている MPOS
 
-[![従来の固定販売時点管理](./media/traditional-300x279.png)](./media/traditional.png)
+[![従来の固定販売時点管理。](./media/traditional-300x279.png)](./media/traditional.png)
 
 従来の固定 POS シナリオで MPOS を POS 周辺機器に接続するには、まずレジスタ自体に移動し、ハードウェア プロファイルを割り当てます。 **Retail と Commerce** &gt; **チャネル設定** &gt; **POS 設定** &gt; **レジスター** に POS レジスターがあります。 
 
@@ -97,7 +97,7 @@ MPOS とは、Windows 8.1 またはそれ以降の PC ベースのオペレー�
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>スタンドアロンのハードウェア ステーション付きの MPOS またはクラウド POS
 
-[![共有周辺機器](./media/shared-300x254.png)](./media/shared.png)
+[![共有周辺機器。](./media/shared-300x254.png)](./media/shared.png)
 
 このシナリオでは、スタンドアロンのハードウェア ステーションは MPOS とクラウド POS クライアント間で共有されます。 このシナリオでは、ダウンロード パッケージ、ポート、およびハードウェア ステーションが使用しているハードウェア プロファイルを指定するためにハードウェア ステーションのプロファイルを作成する必要があります。 ハードウェア ステーションのプロファイルは、**Retail と Commerce** &gt; **チャネル設定** &gt; **POS 設定** &gt; **POS プロファイル** &gt; **ハードウェア ステーションのプロファイル** にあります。 
 

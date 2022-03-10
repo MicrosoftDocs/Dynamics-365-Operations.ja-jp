@@ -2,16 +2,13 @@
 title: 製造品目の標準原価を管理するための準備
 description: このトピックでは、製造品目の原価の管理を準備するステップについて説明します。
 author: AndersGirke
-manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 866da2ce58e33676c2fa4bb2d6abfde891a5d021
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec68e1efc261920dc8f08ed602836b1939511dfce01008c093af7916ecd71618
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432000"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734334"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>製造品目の標準原価を管理するための準備
 
@@ -66,10 +63,12 @@ ms.locfileid: "4432000"
 
 原価計算のために工順情報を使用したい場合は、追加の準備手順が必要です。 たとえば、工順操作には正確で完全な原価カテゴリを割り当てる必要があります。
 
-<a name="related-topics"></a>関連トピック
---------
+## <a name="related-topics"></a>関連トピック
 
 [製造品目の固定費の償却](amortize-constant-costs-manufactured-item.md)
 
 [生産または調達する製品を設定する](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

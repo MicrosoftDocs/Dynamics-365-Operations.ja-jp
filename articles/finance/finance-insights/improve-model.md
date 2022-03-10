@@ -1,8 +1,8 @@
 ---
-title: 予測モデルの改善 (プレビュー)
+title: 予測モデルの改善
 description: このトピックでは、予測モデルのパフォーマンスを向上させるために使用できる機能について説明します。
 author: ShivamPandey-msft
-ms.date: 05/28/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 197aba724ea68ef79c2d16028c23533d952329a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810028"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595040"
 ---
-# <a name="improve-the-prediction-model-preview"></a>予測モデルの改善 (プレビュー)
+# <a name="improve-the-prediction-model"></a>予測モデルの改善
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、予測モデルのパフォーマンスを向上させるために使用できる機能について説明します。 Microsoft Dynamics 365 Finance での  **顧客支払い予測** ワークスペースのモデルの改善を開始します。 次に、改善手順が AI Builder で完了します。
 
@@ -33,7 +32,7 @@ ms.locfileid: "5810028"
 
 **期限遵守**、**遅延**、**非常に遅い** の 3 つの結果から、請求書に対して可能な 3 つの結果を最初に選択します。 3 つの結果をすべて選択する必要があります。 いずれかの結果の選択を解除すると、請求書がトレーニング プロセスからフィルターで除外され、予測の精度が低下します。
 
-[![実績の確認](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![実績を確認します。](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 組織で 2 つの結果しか必要としない場合は、**遅延** と **非常に遅い** のしきい値を 0 (ゼロ) 日に変更します。 このようにして、予測を効果的に、**期限遵守** または **遅延** のバイナリ状態に効果的に折りたたむことができ ます。
 
@@ -51,7 +50,7 @@ ms.locfileid: "5810028"
 
 次の図は、請求書テーブルで使用できるフィールドを示しています。
 
-[![請求書テーブルで使用できるフィールド](./media/available-fields.png)](./media/available-fields.png)
+[![請求書テーブルで使用できるフィールドです。](./media/available-fields.png)](./media/available-fields.png)
 
 次のフィールドは、トレーニング対象として選択しないでください。
 
@@ -66,7 +65,7 @@ ms.locfileid: "5810028"
 
 次の図は、顧客テーブルで使用できるフィールドを示しています。
 
-[![顧客テーブルで使用できるフィールド](./media/related-entities.png)](./media/related-entities.png)
+[![顧客テーブルで使用できるフィールドです。](./media/related-entities.png)](./media/related-entities.png)
 
 次のフィールドは、トレーニング対象として選択しないでください。
 
@@ -74,12 +73,8 @@ ms.locfileid: "5810028"
 
 ## <a name="filters"></a>フィルター
 
-現在、フィルターでは顧客支払予測シナリオはサポートしていません。 したがって、**このステップをスキップ** を選択して、概要ページに進みます。
+トレーニングに使用される請求書をフィルター処理するには、請求書または顧客テーブルのフィールドでフィルター規準を設定します。 たとえば、合計が特定の金額以上の請求書のみを含むしきい値を設定できます。 また、特定の顧客グループの顧客に関連付けられている請求書を除外できます。
 
-[![フィルターを使用したフォーカス モデル](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
-
-#### <a name="privacy-notice"></a>プライバシー通知
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
-
+データのフィルター処理の詳細については、[予測モデルの作成](/ai-builder/prediction-create-model#filter-your-data) を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

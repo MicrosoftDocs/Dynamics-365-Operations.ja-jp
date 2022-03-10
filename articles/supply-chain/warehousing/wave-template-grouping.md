@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a591624f6611148abe4888e67d8d3a9bbea9cd27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838037"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579907"
 ---
 # <a name="wave-template-grouping"></a>ウェーブ テンプレートのグループ化
 

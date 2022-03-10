@@ -1,30 +1,27 @@
 ---
 title: 売上請求書のヘッダーおよび明細行の Supply Chain Management から Sales への直接同期
 description: このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Sales に売上請求書ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 6cbc4d86ac41d90480428ec5439d1360c4d67137
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c2f988b4f170c027444ba7cf54a55e0bd846cedf
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431838"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571644"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Finance and Operations から Sales への請求書ヘッダーおよび明細行の直接同期
 
@@ -36,7 +33,7 @@ ms.locfileid: "4431838"
 
 見込み客の現金化ソリューションは、Supply Chain Management と Sales のインスタンス間でデータを同期するため、データの統合機能を使用します。 データ統合機能で利用可能な見込み顧客を現金化するテンプレートにより、Supply Chain Management と Sales 間での勘定、連絡先、製品および販売見積、販売注文、および売上請求書のデータの流れが可能になります。 次の図は、Supply Chain Management と Sales の間でデータを同期させる方法を示しています。
 
-[![見込み客の現金化へのデータフロー](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![見込み客の現金化へのデータフロー。](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>テンプレートおよびタスク
 
@@ -119,17 +116,17 @@ Supply Chain Management から Sales への販売請求書ヘッダーと明細�
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
-![データ統合のテンプレートのマッピング](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+![SalesInvoiceHeader のデータ統合でのテンプレート マッピング。](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="salesinvoiceline"></a>SalesInvoiceLine
 
-![データ統合のテンプレートのマッピング](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
+![SalesInvoiceLine のデータ統合でのテンプレート マッピング。](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
 
 
 
 ## <a name="related-topics"></a>関連トピック
 
-[見込顧客を現金化](prospect-to-cash.md)
+[見込顧客の現金化](prospect-to-cash.md)
 
 [Supply Chain Management の顧客への Sales の勘定の直接同期](accounts-template-mapping-direct.md)
 
@@ -138,3 +135,6 @@ Supply Chain Management から Sales への販売請求書ヘッダーと明細�
 [Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期](contacts-template-mapping-direct.md)
 
 [販売注文の Sales と Supply Chain Management の間の直接同期](sales-order-template-mapping-direct-two-ways.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

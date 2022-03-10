@@ -1,12 +1,10 @@
 ---
 title: 150% 逓減残高による減価償却
-description: この記事は、減価償却の 150% 逓減残高法の概要を示します。
-author: saraschi2
-manager: AnnBe
+description: このトピックでは、減価償却の 150% 逓減残高法の概要を説明します。
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4edc868b76d466c41be8036b962730db90eeb68a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fe8a794e9d5f01e4cd8844b5388b37970607d0be
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249440"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883315"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>150% 逓減残高による減価償却
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、減価償却の 150% 逓減残高法の概要を示します。
+このトピックでは、減価償却の 150% 逓減残高法の概要を説明します。
 
 固定資産減価償却プロファイルを設定し、**減価償却プロファイル** ページの **方法** フィールドで、**150% 逓減残高** を選択すると、減価償却プロファイルが割り当てられる固定資産は各減価償却期間で適用される比率と同じ比率で減価償却されます。 この比率は資産の耐用年数に基づいて計算されます。 たとえば、資産の耐用年数が 5 年の場合は、比率が 30% (150% ÷ 5) として計算されます。 
 
@@ -66,7 +64,7 @@ ms.locfileid: "5249440"
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a>150% 逓減残高による減価償却の例
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | 取得価額               | 11,000 |
 | 救済価格                  | 1.000  |

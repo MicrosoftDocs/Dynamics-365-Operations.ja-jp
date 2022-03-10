@@ -2,27 +2,27 @@
 title: 予算計画の概要
 description: このトピックでは予算計画について説明します。 予算計画の構成と予算計画プロセスの設定に役立つ情報が含まれます。
 author: panolte
-manager: AnnBe
 ms.date: 01/11/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 17251
+ms.custom:
+- "17251"
+- intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 847ae83102345a8005a8b2a630805d22ccfd736d
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 391f62f42e482f79420bbe1bbd4cec4930790229
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019231"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982068"
 ---
 # <a name="budget-planning-overview"></a>予算計画の概要
 
@@ -42,7 +42,7 @@ ms.locfileid: "5019231"
 - **予算計画ステージ** – 予算計画ステージは、予算計画の開始から最終的な承認までの手順を定義します。 予算計画ステージは予算計画のワークフローに表示されます。
 - **予算計画のワークフロー** – 予算計画のワークフローは、予算計画ステージにより構成され、また定義されます。 予算計画ワークフローは、予算作成ワークフローと関連付けられます。 予算作成ワークフローは、予算計画ステージを使用して予算計画を動かす自動化されたプロセス、または手動のプロセスです。
 
-[![予算計画用語](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![予算計画用語。](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="typical-tasks"></a>一般的なタスク
 
@@ -67,17 +67,17 @@ Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) で導入された�
 
 次の図は、個別の予算計画のワークフローが組織のさまざまなレベルに対して作成される一般的な例を示します。 ステージは、各ワークフロー内で定義され、予算データを保持する各ステージに、特定のシナリオが割り当てられます。 1 つのステージから次のステージへデータを移動するためのタスクが完了しました。 たとえば、金額は、異なる勘定、承認、または他の確認のために割り当てるか、または集計できます。 この図では、斜体のテキストはステージの間では編集できないシナリオ、または過去のデータ、または前のステージで承認されたため、変更できないデータを示します。
 
-[![予算計画汎用スキーマ](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![予算計画汎用スキーマ。](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
 次の図は、本社が最初の予算のベースライン金額を見積、販売部門に配分する例を示しています。 次に販売部門は見積を作成し、予測を本社に提出し、予算マネージャーはそれらを集計し予測を調整します。 最後に、予算マネージャーが確認および調整された予算金額を最高財務責任者 (CFO) に送信し、CFO はそれを確認し、最終調整を行い、承認します。
 
-[![予算計画スキーマ例](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![予算計画スキーマ例。](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ### <a name="organization-hierarchy-for-budget-planning"></a>予算計画の組織階層
 
 **組織階層** ページで、各予算計画プロセスの予算計画の階層として組織階層を指定できます。 予算計画の階層は、他の目的に使用される標準的な組織階層と一致させる必要はありません。 この階層は、データの集計および配布に使用されるため、別の構造にすることもできます。 例のスキーマでは、販売部門は予算と財務部門を含む本社より下のレベルです。 この構造は販売部門の工程を管理するために使用される構造とは異なる可能性があります。 1 つの組織階層のみを各予算計画プロセスに割り当てることができます。
 
-詳細については、「[組織と組織階層](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md)」を参照してください。
+詳細については、「[組織と組織階層](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md)」を参照してください。
 
 ### <a name="user-security"></a>ユーザーのセキュリティ
 
@@ -95,7 +95,7 @@ Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) で導入された�
 
 **予算作成ワークフロー** ページで、予算計画の予算作成ワークフローを作成します。 このプロセスは、他のワークフローを作成するプロセスに似ています。 次の図は、本社のワークフローの例を示しています。
 
-[![予算計画用のワークフロー予算作成](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![予算計画用のワークフロー予算作成。](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
 ワークフローには、次の要素が含まれます。
 
@@ -143,11 +143,11 @@ Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) で導入された�
 
 このトピックで先ほど示した例のスキーマでは、1 つの配賦が実行され、本社の「ベースライン」ステージの予算計画とシナリオから、販売部門の「見積」ステージの別の予算計画とシナリオへと金額が振り替えられます。 次の図は、例のスキーマの関連するセクションを示します。
 
-[![ステージ割り当て](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![ステージを配賦します。](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
 また例のスキーマでは、販売部門の「送信済」ステージの予算計画とシナリオから、本社の「ロールアップ」ステージの親の計画に集約が実行されます。 次の図は、例のスキーマの関連するセクションを示します。
 
-[![Aggregation](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![集約。](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>優先順位
 
@@ -165,7 +165,7 @@ Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) で導入された�
 
 スキーマの例では、「PY の販売」、「契約」、および「予測」の各シナリオ用の列を作成できます。 (次の図ではスキーマに関連するセクションを示します。) 次に、会計年度期間の各四半期ごとにこれらのシナリオの 1 つまたはすべてを細分化します。これにより販売部門のマネージャーは各期間の正確な予測金額を入力できます。
 
-[![列](./media/columns.png)](./media/columns.png)
+[![列を追加するためのスキーマのセクションの図。](./media/columns.png)](./media/columns.png)
 
 各レイアウト要素 (列) が編集可能で、そのレイアウトに作成されたワークシート テンプレートすべてを使用可能にするかどうかも指定します。 「見積」のステージで使用されるレイアウトの例のスキーマでは、「予測」の列は編集可能ですが、「PY の販売」、および「契約」の列は読み取り専用です。
 
@@ -203,4 +203,7 @@ Dynamics 365 Finance バージョン 10.0.9 (2020 年 4 月) で導入された�
 
 **アクション** メニューで、別の役立つコマンドは **予算プロセス状態の表示** です。 このコマンドは、計画のワークフロー ステータス、金額別および単位別集計、予算計画自体へのワンクリック ナビゲーションなどの関連するデータと共に、プロセス内の予算計画をグラフィック表示します。
 
-[![予算計画プロセス状態](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![予算計画プロセス状態。](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

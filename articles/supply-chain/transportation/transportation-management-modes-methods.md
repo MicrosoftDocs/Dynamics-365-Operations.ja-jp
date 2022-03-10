@@ -2,24 +2,22 @@
 title: 輸送管理モードと方法
 description: このトピックでは、運輸管理のモードと方法を設定する方法について説明します。
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
-ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b9b548212c6f1f3faac56cd7ca182d84cc339bd2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: a24e2300f3f3ee21b9c480c8768c4382b21867aa
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973913"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574788"
 ---
 # <a name="transportation-management-modes-and-methods"></a>輸送管理モードと方法
 
@@ -46,3 +44,6 @@ ms.locfileid: "4973913"
 1. **新規** を選択して新しい配送方法を作成します。
 1. 配送方法のための固有 ID および説明のついた名前を入力します。
 1. ページを閉じます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

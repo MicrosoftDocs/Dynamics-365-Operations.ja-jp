@@ -1,31 +1,29 @@
 ---
 title: 履行サービス契約の概要
 description: このトピックでは、サービス契約を履行するタスクについて説明します。
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/03/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b23ab70ea06daf2b2b91fc93ac1d77d73649693c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 39fe65638c413f5fbc1ea6ad4922e97f6e8fb35e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824513"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985889"
 ---
-# <a name="fulfill-service-agreements-overview"></a>履行サービス契約の概要 
+# <a name="fulfill-service-agreements-overview"></a>履行サービス契約の概要
 
 [!include [banner](../includes/banner.md)]
-
 
 このトピックでは、サービス契約を履行するタスクについて説明します。 また、各業務プロセス コンポーネントに関連するフォームを一覧表示し、各業務プロセス コンポーネントに関連するタスクについても説明します。
 
@@ -41,9 +39,9 @@ ms.locfileid: "5824513"
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -60,8 +58,8 @@ ms.locfileid: "5824513"
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><strong>定期売買</strong></p></td>
-<td><p>サービス定期売買を作成し、管理します。</p></td>
+<td><p><strong>サブスクリプション</strong></p></td>
+<td><p>サービス サブスクリプションを作成し、管理します。</p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -95,8 +93,8 @@ ms.locfileid: "5824513"
 </tr>
 <tr class="odd">
 <td><p></p></td>
-<td><p><strong>定期売買の指数化 </strong></p></td>
-<td><p>定期売買の基準価格およびインデックスを更新します。</p></td>
+<td><p><strong>サブスクリプションの指数化 </strong></p></td>
+<td><p>サブスクリプションの基準価格およびインデックスを更新します。</p></td>
 </tr>
 </tbody>
 </table>

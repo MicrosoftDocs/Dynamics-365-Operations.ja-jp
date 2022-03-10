@@ -2,7 +2,7 @@
 title: プロモーション バナー モジュール
 description: このトピックでは、プロモーション バナー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: be3cc9729b58fce9ebc9885d8cb20b63114362a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f781ed22852cb2108850e7dc6762aa6a9ba0db97574cb0dcc7959f8926e47a08
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718783"
 ---
 # <a name="promo-banner-module"></a>プロモーション バナー モジュール
 
@@ -34,7 +34,7 @@ ms.locfileid: "5796249"
 
 プロモーション バナー モジュールは、コンテンツ管理システム (CMS) からのデータによって駆動し、任意のページに配置できます。
 
-## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>E コマースのプロモーション バナーの使用例
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>eコマースのプロモーション バナーの使用例
 
 次の例に示すように、プロモーション バナーをサイト ヘッダーに使用して、サイト全体のプロモーションまたはメッセージを表示することができます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "5796249"
 
 次の図は、プロモーション バナーの例を示しています。
 
-![プロモーション バナー モジュールの例](./media/ecommerce-Promobanner.PNG)
+![プロモーション バナー モジュールの例。](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>プロモーション バナー モジュール プロパティ
 
@@ -59,6 +59,10 @@ ms.locfileid: "5796249"
 | カルーセル フリッパーを表示する     | **True** または **False**              | カルーセル フリッパーを表示するかどうかを示す値なので、顧客は複数のバナー項目を手動で切り替えて、循環させることができます。 |
 | テキスト配置            | **右**、**左**、または **中央** | プロモーション バナー モジュールのテキスト配置。 |
 | リンク                      | URL                              | オプション リンクの URL |
+|テキスト配置             | **右**、**左**、または **中央** | このプロパティは、Adventure Works テーマのテーマ拡張として使用できます。 これにより、ユーザーがプロモーション バナーのテキスト配置を設定できます。 |
+
+> [!IMPORTANT]
+> Adventure Works テーマは、Dynamics 365 Commerce バージョン 10.0.20 リリース時点で使用できます。
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>プロモーション バナー モジュールをページに追加する 
 
@@ -78,7 +82,6 @@ ms.locfileid: "5796249"
 
 > [!NOTE]
 > プロモーション バナーは、通常、ページ ヘッダー スロットまたはサブヘッダー スロットで使用されます。
-
 
 ## <a name="additional-resources"></a>追加リソース
 

@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 34e29a43cebeec16357aecb036c534da35820d90ae602d67419a9606afc542ee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735971"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752835"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを実行するデバイスを設定する
 
@@ -28,9 +28,9 @@ ms.locfileid: "6735971"
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>特定のデバイスの構成とフィルタの設定
 
-デバイスの構成とジョブ フィルターを設定するには、*時間スーパーバイザーの管理* 権限を含むセキュリティ ロールを持つアカウントを使用して、**生産現場の実行** ページにサインインします。 (最初から用意されているセキュリティ ロールの中で、*作業現場の監督* だけがこの権限を持ちます。) 次に、以下の手順を実行します。
+デバイスの構成とジョブ フィルターを設定するには、*時間監視の管理* 職務権限を含むセキュリティ ロールを持つアカウントを使用して、**生産現場の実行** ページにサインインします。 (最初から用意されているセキュリティ ロールの中で、*作業現場の監督* だけがこの権限を持ちます。) 次に、以下の手順を実行します。
 
-1. 設定するデバイスに移動して、作業現場監督として Microsoft Dynamics 365 Supply Chain Management にサインインします。 (*時間スーパーバイザーの管理* 権限を含むアカウントを使用します。)
+1. 設定するデバイスに移動して、作業現場監督として Microsoft Dynamics 365 Supply Chain Management にサインインします。 (*時間監視の管理* 職務権限を含むアカウントを使用します。)
 1. 設定するデバイスの構成が使用可能であることを確認します。 構成がまだ存在しない場合は、既定の構成が提供されます。 構成の設定方法については、[生産現場の実行インターフェースを構成する](production-floor-execution-configure.md) を参照してください。
 1. **生産管理 \> 製造実行 \> 生産現場の実行** に移動します。
 

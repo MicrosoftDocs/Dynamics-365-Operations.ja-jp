@@ -2,15 +2,12 @@
 title: POS で URL を開く
 description: このトピックでは、Dynamics 365 Commerce の製品および顧客検索機能に加えられた改良の概要を示します。
 author: AamirAllaq
-manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
@@ -18,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 137b699d5f60b9b62a5ce9501e3b2a262e60a88f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714117"
 ---
 # <a name="open-url-in-pos"></a>POS で URL を開く
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、小売販売時点管理 (POS) のボタンをコンフィギュレーションして URL を開く方法について説明します。 この機能はコードのカスタマイズを必要とせず、開発者以外のロールのユーザーがコンフィギュレーションすることもできます。 
+このトピックでは、Dynamics 365 Commerce 販売時点管理 (POS) のボタンをコンフィギュレーションして URL を開く方法について説明します。 この機能はコードのカスタマイズを必要とせず、開発者以外のロールのユーザーがコンフィギュレーションすることもできます。 
 
 この機能では、ボタン グリッド デザイナーを使用して URL を開くことで、POS のボタンをコンフィギュレーションすることができます。 現時点では、これは次のコンフィギュレーションでサポートされています:
 
@@ -49,15 +46,15 @@ POS 内で Web URL を開くことは、現在 Windows 用 Modern POS に対し�
 
 この機能では、ネイティブ アプリを開くための Web 以外の URL を指定することもできます。 たとえば、MailTo、SIP、IM、または MSTEAMS などの、ホスト デバイス上のそれぞれのネイティブ アプリで処理できる URL プロトコルを指定できます。 これを有効にするには、**新しいウィンドウで開く** オプションを選択して URL をコンフィギュレーションする必要があります。
 
-- Windows のコンピューターで、Deployment Image Servicing and Management (DISM) を使用してコンピューターを設定している場合は、[既定のアプリケーション アソシエーションをエクスポートまたはインポートする](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) を参照して、既定のプロトコル アソシエーションを設定できます。
-- Intune のような MDM を使用して Windows コンピューターを管理している場合は、[ポリシー CSP - ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults) を参照してください。
-- カスタム Web サイトを構築する開発者の場合は、[URI の規定のアプリを起動する](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app) を参照してください。
+- Windows のコンピューターで、Deployment Image Servicing and Management (DISM) を使用してコンピューターを設定している場合は、[既定のアプリケーション アソシエーションをエクスポートまたはインポートする](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) を参照して、既定のプロトコル アソシエーションを設定できます。
+- Intune のような MDM を使用して Windows コンピューターを管理している場合は、[ポリシー CSP - ApplicationDefaults](/windows/client-management/mdm/policy-csp-applicationdefaults) を参照してください。
+- カスタム Web サイトを構築する開発者の場合は、[URI の規定のアプリを起動する](/windows/uwp/launch-resume/launch-default-app) を参照してください。
 
 ## <a name="open-a-native-app-seamlessly"></a>ネイティブ アプリをシームレスに開く
 
 Windows、iOS、および Android では、アプリ プロトコル アソシエーションに基づいてアプリをよりシームレスに開くことが可能になります。 アプリがまだ Web ブラウザから開くことを処理するようにコンフィギュレーションされていない場合、これをコンフィギュレーションするには開発者が必要な場合があります。
 
-- Windows の場合は、[アプリ URI ハンドラーを使用して Web サイトのアプリを有効にする](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking) を参照してください。
+- Windows の場合は、[アプリ URI ハンドラーを使用して Web サイトのアプリを有効にする](/windows/uwp/launch-resume/web-to-app-linking) を参照してください。
 - iOS の場合は、[開発者向けの汎用リンク](https://developer.apple.com/ios/universal-links/) を参照してください。
 - Android の場合は、[Android アプリの操作リンク](https://developer.android.com/training/app-links/)を参照してください。
 
@@ -83,3 +80,6 @@ POS で開くように URL をコンフィギュレーションするには、�
 5. アクションとして **URL を開く** を選択します。
 6. 使用する URL を入力します。
 7. 新しいウィンドウで URL を開くかどうかをコンフィギュレーションします。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,29 +1,26 @@
 ---
 title: 作業指示の派遣
 description: このトピックでは、資産管理で作業指示を派遣する方法について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetScheduledExecution
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d46beb04923d06aa8ccec05355731aa1b3f27c5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 87f67f4db143fabbfae926e30e7e5d97ac6af0f6fa5469218e4ab3605aa44dcb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4431787"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778727"
 ---
 # <a name="dispatch-work-order"></a>作業指示の派遣
 
@@ -55,8 +52,11 @@ ms.locfileid: "4431787"
 
 次の図は、**作業指示のスケジュール** ダイアログでの派遣選択の例を示します。
 
-![図 1](media/04-work-order-scheduling.png)
+![図 1。](media/04-work-order-scheduling.png)
 
 [!NOTE]
 作業指示のスケジュールを削除する場合は、**すべての作業指示** で作業指示を選択し、**一般** タブの **スケジュールの削除** をクリックします。スケジュールを削除した場合、作業指示ライフサイクル状態を手動で更新することを忘れないでください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

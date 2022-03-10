@@ -1,12 +1,10 @@
 ---
 title: 工程のスケジューリング
 description: このトピックでは、工程のスケジューリングに関する情報を提供します。 この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 198073
 ms.assetid: 12c28b11-80aa-4668-b15b-724cb24890bd
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dd24dc21dc3f31c14ae2978ed0f59401c51cf1b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258569"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574572"
 ---
 # <a name="operations-scheduling"></a>工程のスケジューリング
 
@@ -76,8 +74,7 @@ ms.locfileid: "5258569"
 ## <a name="finite-materials"></a>有限原材料
 有限原材料を使用する場合、スケジューリングはさらに、生産に必要な材料の利用可能性によって異なります。 生産に利用可能なコンポーネントが十分ではない場合、生産が遅れる可能性があります。 生産に利用する必要のある材料を指定して、材料の使用に基づいてスケジューリングできます。 リソースの能力と材料の利用可能性に基づいて最適化すると、生産は、これらの制限に基づいて計算されます。 製造オーダーは、能力と材料が同時に、必要量利用可能になるまで、スケジューリングすることはできません。
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [工程スケジューリング オプション](operation-scheduling-options.md)
 

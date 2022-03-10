@@ -2,26 +2,22 @@
 title: モデルとパッケージ
 description: このトピックでは、モデルとパッケージの概念について説明します。 新しいモデルの作成方法、パラメーターの更新方法、およびモデル間の依存関係を視覚化する方法について説明します。
 author: jorisdg
-manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 83351
 ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65e514843b5594d26a793b9771ea9d3f9d9f2e6f
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 15aa348ec669ac4b6837bcd3974b7ef9360d2958
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093460"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783176"
 ---
 # <a name="models-and-packages"></a>モデルとパッケージ
 
@@ -38,7 +34,7 @@ ms.locfileid: "5093460"
 **モデルの作成** ウィザードを使用して、新しいモデルを作成します。 このウィザードには **Dynamics 365** メニューの **モデル管理** からアクセスすることができます。 モデルは 2 種類作成することができます。
 
 -   **固有のパッケージに配置されているモデル** - このタイプのモデルを使用して、新しいモデル要素を作成し、参照モデルのメタデータとビジネス ロジックを拡張することができます。 このウィザードでは、参照モデルを選択できます。 このタイプのモデルは、独自のアセンブリとバイナリにコンパイルされるため、一般的なアップグレード、展開、アプリケーション ライフサイクル管理のコストが削減され、簡素化されます。
--   **既存のパッケージの一部であるモデル** - このタイプのモデルを使用して、ソース コードおよびメタデータのオーバーレイなどの高度なカスタマイズを実行することができます。
+-   **既存のパッケージの一部であるモデル** - このタイプのモデルを使用して、ソース コードおよびメタデータのオーバーレイなどのレガシー機能を一時的に使用できます。 この機能はレガシと見なされ、レガシ バージョンからのアップグレードにのみサポートされます。
 
 **モデルの作成** ウィザードで、レイヤーの **usr** を選択します。 このレイヤーには、ユーザーのカスタマイズが保存されます。 必要に応じて、**usp** レイヤーを使用してカスタマイズをパッチできます。 異なるレイヤーに同じオブジェクトの複数のバージョンがある場合は、最上位のレイヤーが優先され、使用されます。
 
@@ -65,9 +61,9 @@ ms.locfileid: "5093460"
 
 選択したモデルが依存するすべてのパッケージのグラフが生成されます。 
 
-![ビューの相互関係](./media/viewdependencies2.png) 
+![依存関係を表示します。](./media/viewdependencies2.png) 
 
-![ディレクトリ依存関係](./media/directorydependencies.png)
+![ディレクトリ依存関係。](./media/directorydependencies.png)
 
 ## <a name="deleting-a-model"></a>モデルの削除
 開発またはテスト環境では、次の手順に従ってモデルを削除します。
@@ -76,20 +72,21 @@ ms.locfileid: "5093460"
 
 モデルが独自のパッケージに属している場合。 たとえば、パッケージに他のモデルが含まれていない拡張パッケージ。
 
-1. 次のサービスを停止: AOS Web サービスおよびバッチ管理サービス。
-2. パッケージ フォルダー C:\AOSService\PackagesLocalDirectory\MyModel1 を削除します。
-3. 手順 1 で停止したサービスを再起動します。
-4. Visual Studio を実行している場合、モデルを更新します (**Visual Studio > Dynamics 365 > モデル管理 > モデルの更新**)
+1. Visual Studio すべてのインスタンスを閉じます。
+2. 次のサービスを停止: AOS Web サービスおよびバッチ管理サービス。
+3. パッケージ フォルダーを削除します `C:\AOSService\PackagesLocalDirectory\MyModel1`。 クラウドでホストされている環境では、このフォルダは `K:` などの別のドライブ文字にある場合があります。
+4. 手順 1 で停止したサービスを再起動します。
 5. Visual Studio で、完全なデータベース同期を実行します (**Visual Studio > Dynamics 365 > データベースの同期**)。
 
 モデルが複数のモデルを含むパッケージに属している場合。 たとえば、MyModel1 は、アプリケーションスイートをオーバーレイします。
 
-1. 次のサービスを停止: AOS Web サービスおよびバッチ管理サービス。
-2. モデル フォルダー C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1 を削除します。 この例の場合。 PackageName=ApplicationSuite。
-3. 手順 1 で停止したサービスを再起動します。
-4. Visual Studio で、モデルを更新します (**Visual Studio > Dynamics 365 > モデル管理 > モデルの更新**)。
-5. Visual Studio で、削除したモデルが属しているパッケージをビルドします (**Visual Studio > Dynamics 365 > モデルをビルド**)。
-6. Visual Studio で、完全なデータベース同期を実行します (**Visual Studio > Dynamics 365 > データベースの同期**)。
+1. Visual Studio すべてのインスタンスを閉じます。
+2. 次のサービスを停止: AOS Web サービスおよびバッチ管理サービス。
+3. モデル フォルダーを削除します `C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1`。 この例の場合、`PackageName=ApplicationSuite` です。 クラウドでホストされている環境では、このフォルダは `K:` などの別のドライブ文字にある場合があります。
+4. `C:\AOSService\PackagesLocalDirectory\<PackageName>\Descriptor\MyModel1.xml` でモデルの記述子ファイルを削除します 。 クラウドでホストされている環境では、このフォルダは `K:` などの別のドライブ文字にある場合があります。
+5. 手順 1 で停止したサービスを再起動します。
+6. Visual Studio で、削除したモデルが属しているパッケージをビルドします (**Visual Studio > Dynamics 365 > モデルをビルド**)。
+7. Visual Studio で、完全なデータベース同期を実行します (**Visual Studio > Dynamics 365 > データベースの同期**)。
 
 ## <a name="additional-resources"></a>追加リソース
 
@@ -98,3 +95,6 @@ ms.locfileid: "5093460"
 [開発およびカスタマイズのホーム ページ](developer-home-page.md)
 
 [モデルのエクスポートとインポート](models-export-import.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

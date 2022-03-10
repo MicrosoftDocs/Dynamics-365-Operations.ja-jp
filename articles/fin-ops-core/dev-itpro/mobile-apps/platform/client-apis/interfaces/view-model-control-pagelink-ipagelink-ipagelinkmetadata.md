@@ -1,18 +1,18 @@
 ---
 title: PageLinkMetadata タイプ
 description: ページ リンク メタデータ タイプ。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 7f5601a94e79ad94891cc4766ef036a698f8aaa604f7662acf87801bc9b74a02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 1c8b01c191447300453278927f2cccabd4cee93e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739449"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781859"
 ---
 # <a name="pagelinkmetadata-type"></a>PageLinkMetadata タイプ
 

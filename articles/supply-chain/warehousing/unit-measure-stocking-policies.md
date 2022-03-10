@@ -2,28 +2,25 @@
 title: 測定単位と在庫ポリシー
 description: この記事は、倉庫のプロセスで既定の単位、単位の順序、単位換算を使用する方法について説明します。
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorageDimensionGroup, InventItemOrderSetup, UnitOfMeasureConversion, WHSRFMenuItem, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 29611
 ms.assetid: 4b5ca875-9a06-416d-9ac0-cc3ab8f7338e
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd6a3ea9d7b339df99ffa65f058fc4b98b58b9c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c0de12620bca54c7e43713138d7a152c2bd6edff3453f81cf779f9b875cf77eb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714839"
 ---
 # <a name="unit-of-measure-and-stocking-policies"></a>測定単位と在庫ポリシー
 
@@ -50,3 +47,6 @@ ms.locfileid: "4432254"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

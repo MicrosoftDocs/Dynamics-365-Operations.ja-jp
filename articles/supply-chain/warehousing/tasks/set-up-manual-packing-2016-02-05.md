@@ -1,7 +1,7 @@
 ---
 title: 手動梱包の設定 (2016 年 2 月 & 2016 年 5 月)
 description: 梱包プロセスで、製品を検証してコンテナーに梱包できます。
-author: ShylaThompson
+author: Mirzaab
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2843c42474fcd4afbbc2cd7753c0d06cfe467dbe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bbcd9653f2f3752f067828918ee61d96f9307c6d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810369"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576067"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>手動梱包の設定 (2016 年 2 月 & 2016 年 5 月)
 

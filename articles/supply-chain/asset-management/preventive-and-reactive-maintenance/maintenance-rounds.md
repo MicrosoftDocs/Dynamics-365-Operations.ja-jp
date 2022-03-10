@@ -1,12 +1,10 @@
 ---
 title: メンテナンス ラウンド
 description: このトピックでは、資産管理におけるメンテナンス ラウンドについて説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: dc0d8ec546e7455187a87ac124c5e56a93f5bafd2270bf275af950991fc4b87e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018549"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740722"
 ---
 # <a name="maintenance-rounds"></a>メンテナンス ラウンド
 
@@ -82,7 +80,7 @@ ms.locfileid: "5018549"
 
 次の図は、3 つの資産を含むメンテナンス ラウンドの例を表示します。
 
-![図 1](media/13-preventive-maintenance.png)
+![図 1。](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>メンテナンス ラウンドのスケジュール
@@ -108,11 +106,14 @@ ms.locfileid: "5018549"
 
 以下の 2 つの図では、**メンテナンス ラウンドのスケジュール** ダイアログのスケジュール ジョブと、そのスケジュールジョブに基ずく **全てのメンテナンス スケジュール** で作成されたメンテナンス スケジュールの明細行を表示します。
 
-![図 2](media/14-preventive-maintenance.png)
+![図 2。](media/14-preventive-maintenance.png)
 
-![図 3](media/15-preventive-maintenance.png)
+![図 3。](media/15-preventive-maintenance.png)
 
 - 仕入先保証の対象となる資産に作業指示書を手動で作成した場合、ユーザーに保証を確認するためのダイアログ ボックスが表示されます。 次に、作業指示書の作成をキャンセルできます。 自動的に作成される作業指示書については、保証関係のチェックは省略されます。  
 - **バックグラウンドで実行** クイック タブでバッチ ジョブを設定し、定期的にラウンドをスケジュールすることができます。  
 - ラウンドが複数の作業指示書プールに含まれている場合 ([作業指示書プール](../work-orders/work-order-pools.md) を参照)、**未処理のメンテナンス スケジュール プール** の各プールに 1 つのレコードが表示されます。 これは、作業指示書プールに対するフィルター処理オプションを最適化するために行われます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

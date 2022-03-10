@@ -2,26 +2,22 @@
 title: 開発システム要件
 description: このトピックでは、開発のシステム要件を一覧表示します。
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 33221
 ms.assetid: f39dbe39-7dc3-463c-923e-f22af231b979
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 605240cec0e541656c811d23c006a638427b5af8
-ms.sourcegitcommit: 9e31a7347800d8d453d7be2c0f826010be946e95
+ms.openlocfilehash: 07765c3f17163398f8ffcef8e1fc76e235273174
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4409599"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782033"
 ---
 # <a name="development-system-requirements"></a>開発システム要件
 
@@ -30,3 +26,6 @@ ms.locfileid: "4409599"
 このトピックでは、開発のシステム要件を一覧表示します。
 
 開発環境は、ローカルまたは Microsoft Azure でホストできます。 ビルド プロセス、X++ コンパイル、および相互参照情報の生成は、通常、16 GB のメモリと 2 つの CPU コアを搭載したマシンで十分に動作します。 コンパイラではリソースを使用するため、特に同時プロセスからのリソースの競合がある場合、より多くの RAM とコアがコンパイルを高速化することができます。 同時プロセスを実行している場合は、4 つのコアで 24 GBのメモリをお勧めします。 同時に実行される可能性のあるコンポーネントが開発環境に多数含まれているので、少なくとも 2 つの CPU コアをお勧めします。 コンポーネントには、AOS Web アプリケーション、Visual Studio、Management Reporter および SQL Server が含まれます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

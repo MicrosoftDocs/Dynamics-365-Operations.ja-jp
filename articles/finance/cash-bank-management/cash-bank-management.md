@@ -1,28 +1,28 @@
 ---
 title: 現金および銀行管理ホーム ページ
 description: 現金および銀行管理を使用して、法人の銀行口座と、その銀行口座に関連付けられている財務証書を管理できます。
-author: panolte
-manager: AnnBe
+author: roschlom
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21941
+ms.custom:
+- "21941"
+- intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: panolte
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf933d3356fbca5c89652b5372fc35632d127df3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: de37cc3df673a672a091ffe90ca543fae77bc9d5
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243590"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883697"
 ---
 # <a name="cash-and-bank-management-home-page"></a>現金および銀行管理ホーム ページ
 
@@ -32,9 +32,9 @@ ms.locfileid: "5243590"
 
 財務証書には、預金伝票、小切手、受取手形、支払手形が含まれます。 口座取引明細書を調整したり、標準レポートに銀行データを印刷したりもできます。
 
-**業務プロセス**
+**ビジネス プロセス**
 
-[![業務プロセス](./media/Cash-process.PNG)](./media/Cash-process.PNG)
+[![ビジネス プロセス。](./media/Cash-process.PNG)](./media/Cash-process.PNG)
 
 -   [現金割引](cash-discounts.md)
 -   [決済の概要](settlement-overview.md)
@@ -85,7 +85,7 @@ ms.locfileid: "5243590"
 
 #### <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
-予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース プラン](https://go.microsoft.com/fwlink/?linkid=2010158) を参照してください。 
+予定されている新機能を確認するには、[Microsoft Dynamics 365 リリース プラン](/dynamics365/release-plans/) を参照してください。 
 
 #### <a name="blogs"></a>ブログ
 

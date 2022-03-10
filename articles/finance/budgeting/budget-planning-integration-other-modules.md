@@ -1,12 +1,10 @@
 ---
 title: 他のモジュールとの予算計画の統合
 description: 予算計画はいくつかの異なるリソースから生成することもできます。 定期的なプロセスの基本要素は、すべてのリソースと同じです。
-author: ShylaThompson
-manager: AnnBe
+author: panolte
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanGenerate
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d94e95c921d8237d8f69f793dbf48f1f40632964
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ceae7296ef6d8a0f181c306bd533694c0219e467
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210340"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594745"
 ---
 # <a name="budget-planning-integration-with-other-modules"></a>他のモジュールとの予算計画の統合
 
@@ -32,8 +30,7 @@ ms.locfileid: "5210340"
 
 
 
-<a name="periodic-processes-for-generating-budget-plans"></a>予算計画を生成するための定期的なプロセス
-----------------------------------------------
+## <a name="periodic-processes-for-generating-budget-plans"></a>予算計画を生成するための定期的なプロセス
 
 予算計画は次のリソースから生成することもできます:
 

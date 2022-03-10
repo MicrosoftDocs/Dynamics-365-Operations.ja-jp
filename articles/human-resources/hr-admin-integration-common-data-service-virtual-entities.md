@@ -1,40 +1,42 @@
 ---
-title: Dataverse の仮想テーブルを構成する
-description: このトピックでは、Dynamics 365 Human Resources の仮想テーブルを構成する方法について説明します。 既存の仮想テーブルを生成・更新し、生成されたエンティティと使用可能なテーブルを分析します。
-author: andreabichsel
-ms.date: 01/25/2021
+title: Dataverse の仮想テーブルのコンフィギュレーション
+description: このトピックでは、Dynamics 365 Human Resources の既存の仮想テーブルを構成、生成、更新し、生成された利用可能なテーブルを分析する方法を示します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CDSIntegrationAdministration
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4d80680f66d8669425482a54066f48af8ebcfbc8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805109"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069149"
 ---
-# <a name="configure-dataverse-virtual-tables"></a>Dataverse の仮想テーブルを構成する
+# <a name="configure-dataverse-virtual-tables"></a>Dataverse の仮想テーブルのコンフィギュレーション
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Human Resources は Microsoft Dataverse の仮想データ ソースです。 このサービスでは、Dataverse および Microsoft Power Platform からの作成、読み取り、更新、および削除 (CRUD) の完全な操作が提供されます。 仮想テーブルのデータは Dataverse には格納されませんが、アプリケーション データベースに保存されます。
 
 Dataverse から Human Resources エンティティに対して CRUD 操作を有効にするには、エンティティを Dataverse の仮想テーブルとして使用できるようにする必要があります。 これにより、Human Resources のデータで Dataverse と Microsoft Power Platform から CRUD 操作を実行できます。 また、この操作では、Human Resources のビジネス ロジックの完全な検証をサポートしているため、エンティティにデータを書き込むときにデータの整合性を確保できます。
 
 > [!NOTE]
-> Human Resources エンティティは Dataverse テーブルに対応します。 Dataverse (旧 Common Data Service) および用語更新の詳細については、[Microsoft Dataverse とは何ですか?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)を参照してください
+> Human Resources エンティティは Dataverse テーブルに対応します。 Dataverse (旧 Common Data Service) および用語更新の詳細については、[Microsoft Dataverse とは何ですか?](/powerapps/maker/data-platform/data-platform-intro)を参照してください
 
 ## <a name="available-virtual-tables-for-human-resources"></a>Human Resources で使用可能な仮想テーブル
 
@@ -42,7 +44,7 @@ Human Resources のすべての Open Data Protocol (OData) テーブルは、Dat
 
 環境で有効になっている仮想テーブルの一覧を表示し、**Dynamics 365 HR 仮想テーブル** ソリューションで [Power Apps](https://make.powerapps.com) のテーブルの操作を開始できます。
 
-![Power Apps の Dynamics 365 HR 仮想テーブル](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+![Power Apps の Dynamics 365 HR 仮想テーブル。](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
 ## <a name="virtual-tables-versus-native-tables"></a>仮想テーブルとネイティブ テーブルの対比
 
@@ -51,7 +53,7 @@ Human Resources の仮想テーブルは、Human Resources 向けに作成され
 Human Resources のネイティブ テーブルは、Dataverse の HCM Common ソリューションで個別に生成・管理されます。 ナチュラル テーブルでは、データが Dataverse に保存され、Human Resources アプリケーション データベースとの同期が必要になります。
 
 > [!NOTE]
-> Human Resources の Dataverse ナチュラル テーブルの一覧については、[Dataverse テーブル](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)を参照してください 。
+> Human Resources の Dataverse ナチュラル テーブルの一覧については、[Dataverse テーブル](./hr-developer-entities.md)を参照してください 。
 
 ## <a name="setup"></a>段取り
 
@@ -71,7 +73,7 @@ Human Resources のネイティブ テーブルは、Dataverse の HCM Common �
 
 ### <a name="register-the-app-in-microsoft-azure"></a>アプリを Microsoft Azure に登録する
 
-Microsoft ID プラットフォームがアプリとユーザーに対して認証および承認サービスを提供できるように、Azure portal で Human Resources インスタンスを登録する必要があります。 Azure でのアプリの登録に関する詳細については、「[クイックスタート: Microsoft ID プラットフォームでアプリケーションを登録する](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)」を参照してください。
+Microsoft ID プラットフォームがアプリとユーザーに対して認証および承認サービスを提供できるように、Azure portal で Human Resources インスタンスを登録する必要があります。 Azure でのアプリの登録に関する詳細については、「[クイックスタート: Microsoft ID プラットフォームでアプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app)」を参照してください。
 
 1. [Microsoft Azure ポータル](https://portal.azure.com)を開きます。
 
@@ -93,7 +95,7 @@ Microsoft ID プラットフォームがアプリとユーザーに対して認�
 
 10. 説明を入力し、期間を選択して、**追加** を選択します。
 
-11. シークレットの値を記録します。 この情報は、[仮想テーブル データ ソースを構成する](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source)際に入力します。
+11. テーブルの **値** プロパティからシークレットの値を記録します。 この情報は、[仮想テーブル データ ソースを構成する](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source)際に入力します。
 
     > [!IMPORTANT]
     > この時点でシークレットの値をメモしておく必要があります。 このページから移動すると、シークレットは再度表示されません。
@@ -102,27 +104,15 @@ Microsoft ID プラットフォームがアプリとユーザーに対して認�
 
 Power Apps 環境に Dynamics 365 HR Virtual テーブルアプリをインストールして、仮想テーブルのソリューション パッケージを Dataverse にデプロイします。
 
-1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com)を開きます。
+1. Human Resources で、**Microsoft Dataverse の統合** ページを開きます。
 
-2. **環境** の一覧で、Human Resources のインスタンスに関連付けられている Power Apps 環境を選択します。
+2. **仮想テーブル** タブを選択します。
 
-3. ページの **リソース** セクションで、**Dynamics 365 アプリ** を選択します。
+3. **テーブル アプリのインストール** を選択します。
 
-4. **アプリのインストール** アクションを選択します。
+### <a name="configure-the-virtual-table-data-source"></a>仮想テーブル データ ソースの構成
 
-5. **Dynamics 365 HR 仮想テーブル** を選択し、**次へ** を選択します。
-
-6. サービス使用条件に同意することを確認してマークします。
-
-7. **インストール** を選択します。
-
-インストールには数分かかります。 完了したら、次の手順に進みます。
-
-![Power Platform 管理センターから Dynamics 365 HR 仮想テーブル アプリをインストールします](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
-
-### <a name="configure-the-virtual-table-data-source"></a>仮想テーブル データ ソースの構成 
-
-次の手順では、Power Apps 環境で仮想テーブルのデータ ソースを構成します。 
+次の手順では、Power Apps 環境で仮想テーブルのデータ ソースを構成します。
 
 1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com)を開きます。
 
@@ -133,6 +123,9 @@ Power Apps 環境に Dynamics 365 HR Virtual テーブルアプリをインス�
 4. **ソリューションの正常性ハブ** で、アプリケーション ページの右上にある **高度な検索** アイコンを選択します。
 
 5. **高度な検索** ページの **検索対象** ドロップダウン リストで、**Finance and Operations 仮想データ ソースの構成** を選択します。
+
+   > [!NOTE]
+   > 前の設定手順から仮想テーブル アプリをインストールするには、数分かかる場合があります。 **Finance and Operations 仮想データ ソースの構成** がリストにない場合は、1 分ほど待ってからリストを更新してください。
 
 6. **結果** を選択します。
 
@@ -151,13 +144,16 @@ Power Apps 環境に Dynamics 365 HR Virtual テーブルアプリをインス�
      >[!NOTE]
      >URL の末尾に "**/**" 文字を挿入し、エラーを回避します。
 
+     >[!NOTE]
+     >ターゲット URL は、仮想テーブルがデータに対してポイントする Human Resources 環境を決定します。 運用環境のコピーを作成してサンドボックス環境を作成する場合は、この値を新しいサンドボックス環境の名前空間 URL に更新します。 これにより、仮想テーブルは、運用環境をポイントし続けずに、サンドボックス環境と接続できます。
+
    - **テナント ID**: Azure Active Directory (Azure AD) テナント ID。
 
    - **AAD アプリケーション ID**: Microsoft Azure ポータルに登録されているアプリケーションに対して作成されたアプリケーション (クライアント) ID。 この情報は、[アプリを Microsoft Azure に登録する](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure)のステップで先に取得しました。
 
    - **AAD アプリケーション シークレット**: Microsoft Azure ポータルに登録されているアプリケーションに対して作成されたクライアント シークレット。 この情報は、[アプリを Microsoft Azure に登録する](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure)のステップで先に取得しました。
 
-   ![Microsoft HR データ ソース](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Microsoft HR データ ソース。](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. **保存して閉じる** を選択します。
 
@@ -186,7 +182,7 @@ Human Resources でアクセス許可を付与するのは、次の 2 つの Azu
 
 設定が完了したら、Dataverse インスタンスで生成して有効にする仮想テーブルを選択できます。
 
-1. Human Resources で、**Dataverse の統合** ページを開きます。
+1. Human Resources で、**Microsoft Dataverse の統合** ページを開きます。
 
 2. **仮想テーブル** タブを選択します。
 
@@ -197,7 +193,7 @@ Human Resources でアクセス許可を付与するのは、次の 2 つの Azu
 
 4. **生成/更新** を選択します。
 
-![Dataverse の統合](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Dataverse の統合。](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>テーブルの生成状態の確認
 
@@ -215,12 +211,11 @@ Human Resources でアクセス許可を付与するのは、次の 2 つの Azu
 
 ## <a name="see-also"></a>参照
 
-[Dataverse とは](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Dataverse のテーブル](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[テーブルの関連付けの概要](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[外部データ ソースのデータを含む仮想テーブルの作成と編集](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
-[Power Apps ポータルについて](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
-[Power Apps でのアプリの作成の概要](https://docs.microsoft.com/powerapps/maker/)
-
+[Dataverse とは](/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Dataverse のテーブル](/powerapps/maker/common-data-service/entity-overview)<br>
+[テーブルの関連付けの概要](/powerapps/maker/common-data-service/relationships-overview)<br>
+[外部データ ソースのデータを含む仮想テーブルの作成と編集](/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Power Apps ポータルについて](/powerapps/maker/portals/overview)<br>
+[Power Apps でのアプリの作成の概要](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

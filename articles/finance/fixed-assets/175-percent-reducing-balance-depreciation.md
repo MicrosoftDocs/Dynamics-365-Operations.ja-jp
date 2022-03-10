@@ -1,35 +1,32 @@
 ---
 title: 175% 逓減残高による減価償却
-description: このトピックは、減価償却の 175% 逓減残高法の概要を示します。
-author: saraschi2
-manager: AnnBe
+description: このトピックでは、減価償却の 175% 逓減残高法の概要を説明します。
+author: moaamer
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a21c315aa9a7193c20e4184da20d4d6d38386c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 99bd47192d389c373b29a98f5344e1e0c1ab04e6
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445224"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883266"
 ---
 # <a name="175-percent-reducing-balance-depreciation"></a>175% 逓減残高による減価償却
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、減価償却の 175% 逓減残高法の概要を示します。
+このトピックでは、減価償却の 175% 逓減残高法の概要を説明します。
 
 固定資産減価償却プロファイルを設定し、**減価償却プロファイル** ページの **方法** フィールドで、**175% 逓減残高** を選択すると、減価償却プロファイルが割り当てられる固定資産は各減価償却期間で適用される比率と同じ比率で減価償却されます。 
 
@@ -67,7 +64,7 @@ ms.locfileid: "4445224"
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>175% 逓減残高による減価償却の例
 
-|                                |        |
+| フィールド                          | 先頭値  |
 |--------------------------------|--------|
 | 取得価額               | 11,000 |
 | 救済価格                  | 1.000  |
@@ -81,10 +78,13 @@ ms.locfileid: "4445224"
 |--------|-----------------------------------------------|-----------------------------|---------------------------------------|
 | 年 1 | (11,000 – 1,000) × 35% = 3,500                | 11,000 - 3,500 = 7,500      | 11,000 – 1,000 – 3,500 = 6,500        |
 | 年 2 | 6,500 × 35% = 2,275                           | 7,500 - 2,275 = 5,225       | 6,500 - 2,275 = 4,225                 |
-| 年 3 | 4,225 × 35% = 1,478.75                        | 5,225 - 1,478.75 = 3,746.25 | 4,225 - 1,478.75 = 2,746.25           |
+| 年 3 | 4,225 × 35% = 1,478.75                        | 5,225 – 1,478.75 = 3,746.25 | 4,225 – 1,478.75 = 2,746.25           |
 
 > [!NOTE] 
 > 通常、175% 逓減残高による減価償却方法を使用して計算される金額が、定額法を使用して計算された金額より低くなる場合、残余耐用期間では定額法への換算が行われます。
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

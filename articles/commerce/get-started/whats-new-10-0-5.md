@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-08-02
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: aa77fadc4f51e0aee6c499ab6d83c63b5ad73d51
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2dc8ea943d1e1eb8f905336bda22c11eb75cf8c10118bb68f321441862f90360
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747661"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail-version-1005"></a>Dynamics 365 for Retail バージョン 10.0.5 の新機能および変更された機能
 
@@ -29,7 +29,7 @@ ms.locfileid: "5797160"
 このトピックでは、Dynamics 365 Retail 10.0.5 の新機能または変更された機能について説明します。 
 
 
-Microsoft Dynamics 365 for Finance and Operations の機能については、[Finance and Operations バージョン 10.0.5 (2019 年 10 月) の新機能と変更点](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5) を参照してください。
+Microsoft Dynamics 365 for Finance and Operations の機能については、[Finance and Operations バージョン 10.0.5 (2019 年 10 月) の新機能と変更点](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5) を参照してください。
 
 ## <a name="test-recorder-and-regression-suite-automation-tool-for-retail-cloud-pos"></a>Retail Cloud POS 用のレコーダーおよび Regression Auite Automation Tool のテスト
   
@@ -39,12 +39,12 @@ Microsoft Dynamics 365 for Finance and Operations の機能については、[Fi
 > [!NOTE]
 > テスト レコーダーは、Chrome ブラウザーを使用て Cloud POS のみでサポートされ、他のブラウザーやデバイスタイプのサポートは後で追加されます。
 
-![テスト レコーダー](../dev-itpro/media/CreateTest.png)
+![テスト レコーダー。](../dev-itpro/media/CreateTest.png)
 
 ### <a name="regression-suite-automation-tool"></a>Regression Suite Automation Tool
 Regression Suite Automation Tool (RSAT) を使用すると、機能パワーユーザーは Retail POS でテストケースを実行し、テストの実行 Azure DevOps 結果をレポートおよび調査に対して再度更新できます。 RSAT には、テストの失敗を調査するためのオプションが用意されています。 RSAT では、テストパラメーターをテストステップから切り離し、Microsoft Excel でパラメーターをファイルに格納して、テストパラメーター値を簡単に編集できるようにします。 これで、RSATツールは Retail POS タブで更新され、Retail POS の記録を再生し、小売パラメーターと変数ファイルを生成するための小売固有の設定を指定します。
 
-![POS 再生の環境設定](../dev-itpro/media/Settings.PNG)
+![POS 再生の環境設定。](../dev-itpro/media/Settings.PNG)
 
 POSとRSATの詳細については、[Retail Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト](../dev-itpro/pos-rsat.md) を参照してください。
 
@@ -54,7 +54,7 @@ POSとRSATの詳細については、[Retail Cloud POS 用のレコーダーお�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2019 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2019 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2019wave2/index) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

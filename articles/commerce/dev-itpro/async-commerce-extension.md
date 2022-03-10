@@ -4,22 +4,18 @@ description: このトピックでは、非同期で実行される コマース
 author: mugunthanm
 ms.date: 02/13/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: ea4eae3f6bfb9e2481a4eadc61923683a762a4004c60a69fa2b1cefe7a782b68
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1914c1bee8fba1703fd25dc5dc4d6e5ce90a27eb
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730971"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782988"
 ---
 # <a name="create-asynchronous-commerce-crt-apis-in-your-business-logic"></a>ビジネス ロジックで非同期コマース (CRT) API を作成する
 
@@ -28,14 +24,13 @@ ms.locfileid: "6730971"
 > [!NOTE]
 > このトピックは、Microsoft Dynamics 365 Commerce バージョン 10.0.10 およびそれ以降に適用されます。
 
-このトピックでは、新しい非同期フレームワークを使用して Commerce Runtime (CRT) 用の新しいビジネス ロジック (アプリケーション プログラミング インターフェイス、または API) を作成する方法について説明します。 コマース API フレームワークでは、拡張機能および標準のコマース ハンドラーの非同期プログラミング モデルがサポートされるようになりました。   
+このトピックでは、新しい非同期フレームワークを使用して Commerce Runtime (CRT) 用の新しいビジネス ロジック (アプリケーション プログラミング インターフェイス、または API) を作成する方法について説明します。 コマース API フレームワークでは、拡張機能および標準のコマース ハンドラーの非同期プログラミング モデルがサポートされるようになりました。
 
-このフレームワーク拡張機能が追加される前は、要求が同期的にのみ実行できました。 入力/出力 (I/O) 操作、データベース クエリ、またはネットワーク要求などの長い操作により、実行スレッドがブロックされました。 非同期モデルのサポートが Commerce Runtime (CRT) に追加されたので、これらの操作の非同期バージョンを使用できます。 非同期要求は、実行スレッドをブロック解除します。   
+このフレームワーク拡張機能が追加される前は、要求が同期的にのみ実行できました。 入力/出力 (I/O) 操作、データベース クエリ、またはネットワーク要求などの長い操作により、実行スレッドがブロックされました。 非同期モデルのサポートが Commerce Runtime (CRT) に追加されたので、これらの操作の非同期バージョンを使用できます。 非同期要求は、実行スレッドをブロック解除します。
 
 コマース API フレームワークでは、拡張 CRT 要求ハンドラーの **非同期** および **待機** キーワードでサポートされる、**タスク** および **タスク\<T\>** クラスがサポートされるようになりました。 すべての新しい拡張 API に対して非同期のコマース API フレームワークを使用し、拡張機能には標準の非同期コマース API を使用する必要があります。
 
-## <a name="async-classesinterface-added-in-the-commerce-api-framework"></a>コマース API フレームワークに追加された非同期クラス/インターフェイス:
-
+## <a name="async-classesinterface-added-in-the-commerce-api-framework"></a>コマース API フレームワークに追加された非同期クラス/インターフェイス
 
 次の非同期クラスおよびインターフェイスが、コマース API フレームワークに追加されました。
 
@@ -47,37 +42,34 @@ ms.locfileid: "6730971"
 | CommerceControllerAsync   | 非同期拡張機能 Retail サーバー コントローラー クラスの基本クラス。 |
 | DatabaseContext           | 非同期データベース実行メソッドの基本クラス。 |
 
-
-
 次の非同期メソッドが、コマース API フレームワークに追加されました。
 
 | クラス/インターフェイス           | メソッド                                              | 説明 |
 |---------------------------|-----------------------------------------------------|-------------|
-| SingleAsyncRequestHandler | タスク\<TResponse\> プロセス                           | 各派生クラスによって上書きされる実行メソッド。 |
-|                           | タスク\<Response\> 実行                            | 要求ハンドラーのエントリ ポイントを表すメソッド。 |
-| IRequestHandlerAsync      | タスク\<Response\> 実行 (要求の要求)          | 非同期要求ハンドラーのインターフェイス。 |
-| IRequestTriggerAsync      | タスク OnExecuting(要求の要求)                   | 要求が **IRequestHandler** によって処理される前に呼び出されるメソッド。 |
-| IRequestTriggerAsync      | タスク OnExecuted(要求の要求、応答の応答) | 要求が **IRequestHandler** によって処理された後に呼び出されるメソッド。 |
-| DatabaseContext           | 非同期タスク<Tuple<int, PagedResult<T>>> ExecuteStoredProcedureAsync<T>(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings) | 指定されたパラメーターを使用して、ストアド プロシージャを実行するメソッド。 |
-| DatabaseContext           | 非同期タスク<ReadOnlyCollection<T>> ExecuteNonPagedStoredProcedureAsync<T>(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings) where T : CommerceEntity, new() | 指定されたパラメーターを使用して、ストアド プロシージャを実行するメソッド。 実行はページ設定されていません。 |
-|DatabaseContext            | 非同期タスク<Tuple<PagedResult<T1>、ReadOnlyCollection<T2>>> ExecuteStoredProcedureAsync<T1, T2>(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() | 指定されたストアド プロシージャを実行するメソッド。 |
-| DatabaseContext                          | 非同期タスク<Tuple<int, Tuple<PagedResult<T1>、ReadOnlyCollection<T2>>>> ExecuteStoredProcedureAsync<T1, T2>(文字列 procedureName、ParameterSet パラメーター、ParameterSet outputParameters、QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() | 指定されたストアド プロシージャを実行するメソッド。 |
-|DatabaseContext                        | 非同期タスク<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>>> ExecuteStoredProcedureAsync<T1, T2, T3>(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() | 指定されたストアド プロシージャを実行するメソッド。 |
-| DatabaseContext                          | 非同期タスク<Tuple<int, Tuple<PagedResult<T1>、ReadOnlyCollection<T2>、ReadOnlyCollection<T3>>>> ExecuteStoredProcedureAsync<T1, T2, T3>(文字列 procedureName、ParameterSet パラメーター、ParameterSet outputParameters、QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() | 指定されたストアド プロシージャを実行するメソッド。 |
-| DatabaseContext                           | 非同期タスク<Tuple<PagedResult<T1>、ReadOnlyCollection<T2>、ReadOnlyCollection<T3>、ReadOnlyCollection<T4>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4>(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() | 指定されたストアド プロシージャを実行するメソッド。 |
-| DatabaseContext           | 非同期タスク<Tuple<int, Tuple<PagedResult<T1>、ReadOnlyCollection<T2>、ReadOnlyCollection<T3>、ReadOnlyCollection<T4>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4>(文字列 procedureName、ParameterSet パラメーター、ParameterSet outputParameters、 QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() | 指定されたストアド プロシージャを実行するメソッド。 |
-|DatabaseContext   | 非同期タスク<Tuple<PagedResult<T1>、ReadOnlyCollection<T2>、ReadOnlyCollection<T3>、ReadOnlyCollection<T4>、 ReadOnlyCollection<T5>、ReadOnlyCollection<T6>、ReadOnlyCollection<T7>、Tuple<ReadOnlyCollection<T8>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4, T5, T6, T7, T8>(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() where T5 : CommerceEntity, new() where T6 : CommerceEntity, new() where T7 : CommerceEntity, new() where T8 : CommerceEntity, new() | 指定されたストアド プロシージャを実行するメソッド。 |
-| DatabaseContext    | 非同期タスク<Tuple<int, Tuple<PagedResult<T1>、ReadOnlyCollection<T2>、ReadOnlyCollection<T3>、ReadOnlyCollection<T4>、 ReadOnlyCollection<T5>、ReadOnlyCollection<T6>、ReadOnlyCollection<T7>、Tuple<ReadOnlyCollection<T8>>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4, T5, T6, T7, T8>(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() where T5 : CommerceEntity, new() where T6 : CommerceEntity, new() where T7 : CommerceEntity, new() where T8 : CommerceEntity, new() | 指定されたストアド プロシージャを実行するメソッド。 |
-| DatabaseContext       | 非同期タスク<ReadOnlyCollection<T>> ExecuteStoredProcedureScalarCollectionAsync<T>(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings)                   | 単一の結果のコレクションを返すクエリを実行します。 |
-| DatabaseContext       | タスク<int> ExecuteStoredProcedureNonQueryAsync(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings) | 指定されたパラメーターを使用して、指定されたストアド プロシージャを実行するメソッド。 |
-| DatabaseContext       | タスク<int> ExecuteStoredProcedureScalarAsync(文字列 procedureName、ParameterSet パラメーター、QueryResultSettings resultSettings) | 指定されたパラメーターを使用して戻り値を返す、ストアド プロシージャを実行するメソッド。 |
-| DatabaseContext      | タスク OnExecuting(要求の要求)                   | 指定されたパラメーターを使用して戻り値を返す、ストアド プロシージャを実行します。 |
-| DatabaseContext      | タスク<int> ExecuteStoredProcedureScalarAsync(文字列 procedureName、ParameterSet パラメーター、ParameterSet outputParameters、QueryResultSettings resultSettings) | 指定されたパラメーターを使用して戻り値を返す、ストアド プロシージャを実行するメソッド。 |
-| DatabaseContext       | タスク<PagedResult<T>> ReadEntityAsync<T>(IDatabaseQuery query) where T : CommerceEntity, new()  | データベースからエンティティを読み取るメソッド。 |
-| DatabaseContext       | タスク ExecuteNonQueryAsync (IDatabaseQuery クエリ)                   | 出力のないクエリを実行するメソッド。 |
-| DatabaseContext       | タスク<T> ExecuteScalarAsync<T>(IDatabaseQuery クエリ)                   | 出力のないクエリを実行するメソッド。 |
-| DatabaseContext       | タスク<ReadOnlyCollection<T>> ExecuteScalarCollectionAsync<T>(IDatabaseQuery クエリ)                   | 単一の結果のコレクションを返すクエリを実行するメソッド。 |
-    
+| `SingleAsyncRequestHandler` | `Task\<TResponse\> Process`                           | 各派生クラスによって上書きされる実行メソッド。 |
+|                           | `Task\<Response\> Execute`                            | 要求ハンドラーのエントリ ポイントを表すメソッド。 |
+| `IRequestHandlerAsync`      | `Task\<Response\> Execute (Request request)`          | 非同期要求ハンドラーのインターフェイス。 |
+| `IRequestTriggerAsync`      | `Task OnExecuting(Request request)`                   | 要求が **IRequestHandler** によって処理される前に呼び出されるメソッド。 |
+| `IRequestTriggerAsync`      | `Task OnExecuted(Request request, Response response)` | 要求が **IRequestHandler** によって処理された後に呼び出されるメソッド。 |
+| `DatabaseContext`           | `async Task<Tuple<int, PagedResult<T>>> ExecuteStoredProcedureAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)` | 指定されたパラメーターを使用して、ストアド プロシージャを実行するメソッド。 |
+| `DatabaseContext`           | `async Task<ReadOnlyCollection<T>> ExecuteNonPagedStoredProcedureAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T : CommerceEntity, new()` | 指定されたパラメーターを使用して、ストアド プロシージャを実行するメソッド。 実行はページ設定されていません。 |
+|`DatabaseContext`            | `async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>>> ExecuteStoredProcedureAsync<T1, T2>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new()` | 指定されたストアド プロシージャを実行するメソッド。 |
+| `DatabaseContext`                          | `async Task<Tuple<int, Tuple<PagedResult<T1>, ReadOnlyCollection<T2>>>> ExecuteStoredProcedureAsync<T1, T2>(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new()` | 指定されたストアド プロシージャを実行するメソッド。 |
+|`DatabaseContext`                        | `async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>>> ExecuteStoredProcedureAsync<T1, T2, T3>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new()` | 指定されたストアド プロシージャを実行するメソッド。 |
+| `DatabaseContext`                          | `async Task<Tuple<int, Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>>>> ExecuteStoredProcedureAsync<T1, T2, T3>(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new()  where T3 : CommerceEntity, new()` | 指定されたストアド プロシージャを実行するメソッド。 |
+| `DatabaseContext`                           | `async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>, ReadOnlyCollection<T4>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new()` | 指定されたストアド プロシージャを実行するメソッド。 |
+| `DatabaseContext`           | `async Task<Tuple<int, Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>, ReadOnlyCollection<T4>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4>(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new()` | 指定されたストアド プロシージャを実行するメソッド。 |
+|`DatabaseContext`   | `async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>, ReadOnlyCollection<T4>, ReadOnlyCollection<T5>, ReadOnlyCollection<T6>, ReadOnlyCollection<T7>, Tuple<ReadOnlyCollection<T8>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4, T5, T6, T7, T8>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() where T5 : CommerceEntity, new() where T6 : CommerceEntity, new() where T7 : CommerceEntity, new() where T8 : CommerceEntity, new()` | 指定されたストアド プロシージャを実行するメソッド。 |
+| `DatabaseContext`    | `Task<Tuple<int, Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>, ReadOnlyCollection<T4>, ReadOnlyCollection<T5>, ReadOnlyCollection<T6>, ReadOnlyCollection<T7>, Tuple<ReadOnlyCollection<T8>>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4, T5, T6, T7, T8>(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() where T5 : CommerceEntity, new() where T6 : CommerceEntity, new() where T7 : CommerceEntity, new() where T8 : CommerceEntity, new()` | 指定されたストアド プロシージャを実行するメソッド。 |
+| `DatabaseContext`       | `Task<ReadOnlyCollection<T>> ExecuteStoredProcedureScalarCollectionAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)`                   | 単一の結果のコレクションを返すクエリを実行します。 |
+| `DatabaseContext`       | `Task<int> ExecuteStoredProcedureNonQueryAsync(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)` | 指定されたパラメーターを使用して、指定されたストアド プロシージャを実行するメソッド。 |
+| DatabaseContext       | `Task<int> ExecuteStoredProcedureScalarAsync(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)` | 指定されたパラメーターを使用して戻り値を返す、ストアド プロシージャを実行するメソッド。 |
+| `DatabaseContext`      | `Task OnExecuting(Request request)`                   | 指定されたパラメーターを使用して戻り値を返す、ストアド プロシージャを実行します。 |
+| `DatabaseContext`      | `Task<int> ExecuteStoredProcedureScalarAsync(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings)` | 指定されたパラメーターを使用して戻り値を返す、ストアド プロシージャを実行するメソッド。 |
+| `DatabaseContext`       | `Task<PagedResult<T>> ReadEntityAsync<T>(IDatabaseQuery query) where T : CommerceEntity, new()`  | データベースからエンティティを読み取るメソッド。 |
+| `DatabaseContext`       | `Task ExecuteNonQueryAsync(IDatabaseQuery query)`                   | 出力のないクエリを実行するメソッド。 |
+| `DatabaseContext`       | `Task<T> ExecuteScalarAsync<T>(IDatabaseQuery query)`                   | 出力のないクエリを実行するメソッド。 |
+| `DatabaseContext`       | `Task<ReadOnlyCollection<T>> ExecuteScalarCollectionAsync<T>(IDatabaseQuery query)`                   | 単一の結果のコレクションを返すクエリを実行するメソッド。 |
 
 非同期実行は、次のようなシナリオでサポートされます。
 
@@ -420,6 +412,5 @@ namespace Contoso
     }
 }
 ```
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

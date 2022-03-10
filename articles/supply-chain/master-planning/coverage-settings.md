@@ -1,12 +1,10 @@
 ---
 title: 補充設定
 description: このトピックでは、在庫品目要求の計算にマスター スケジューリングが使用する補充設定について説明します。
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 2494
 ms.assetid: 5a95ae4f-ca75-47d9-a1c3-68c97b42f166
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0aaacf28701542d329afedd8206a12f7c11b7ac7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1d0fec443ee4c531d2bc7edc6623d309e863348b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4999984"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569796"
 ---
 # <a name="coverage-settings"></a>補充設定
 
@@ -65,3 +63,6 @@ ms.locfileid: "4999984"
 ## <a name="additional-resources"></a>追加リソース
 
 [マスター プランの概要](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

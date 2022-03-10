@@ -2,29 +2,26 @@
 title: 現物価格とマーキングを使用した LIFO 日付
 description: 後入れ先出し日付 (LIFO 日付) は、LIFO 原則に基づく在庫モデルです。 在庫からの出庫は、在庫トランザクションの日付に基づいて在庫への最後の入庫を対象として決済されます。 払出より前の入庫が存在しない場合、LIFO 日付を使用することで、払出の日付より後に発生する入庫を対象に払出が決済されます。 同じ日付の複数の払出は、最終払出、最後の受入の順に決済される場合があります。
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fed3de8741b375cf4992578db3e57d6e5a35a93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 72e1dab8bbbb830619629d1fb62a89413d388a7f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4432019"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567562"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>現物価格とマーキングを使用した LIFO 日付
 
@@ -58,7 +55,9 @@ LIFO 日付在庫モデルを使用する場合は、在庫原価計算を定期
 
 新しい移動平均原価価格は、USD 15.00 での財務更新済トランザクションの平均を反映しています。 
 
-次の図は、**現物価格を含める** オプションを使用しない場合の LIFO 日付在庫モデルの影響について説明しています。 ![[現物価格を含める] がオンの場合の LIFO 日付](./media/lifodatewithoutincludephysicalvalue.gif) 
+次の図は、**現物価格を含める** オプションを使用しない場合の LIFO 日付在庫モデルの影響について説明しています。 
+
+![[現物価格を含める] オプションを指定しない LIFO 日付。](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **図の説明**
 
@@ -93,7 +92,9 @@ LIFO 日付在庫モデルを使用する場合は、在庫原価計算を定期
 
 新しい移動平均原価価格は、USD 20.00 での財務更新済トランザクションの平均を反映しています。 
 
-次の図は、**現物価格を含める** オプションを使用した LIFO 在庫モデルの影響について説明しています。 ![[現物価格を含める] がオンの場合の LIFO 日付](./media/lifodatewithincludephysicalvalue.gif) 
+次の図は、**現物価格を含める** オプションを使用した LIFO 在庫モデルの影響について説明しています。 
+
+![[現物価格を含める] オプションを使用した LIFO 日付。](./media/lifodatewithincludephysicalvalue.gif) 
 
 **図の説明**
 
@@ -139,7 +140,7 @@ LIFO 日付在庫モデルを使用する場合は、在庫原価計算を定期
 
 新しい移動平均原価価格は、USD 27.50 での財務および現物更新済トランザクションの平均を反映しています。 
 
-次の図は、払出と入庫の間でマーキングを使用するときの LIFO 在庫モデルの影響を示しています。 ![[マーキング] が有効な場合の LIFO 日付](./media/lifodatewithmarking.gif) 
+次の図は、払出と入庫の間でマーキングを使用するときの LIFO 在庫モデルの影響を示しています。 ![マーキングが有効な場合の LIFO 日付。](./media/lifodatewithmarking.gif) 
 
 **図の説明**
 
@@ -157,3 +158,6 @@ LIFO 日付在庫モデルを使用する場合は、在庫原価計算を定期
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

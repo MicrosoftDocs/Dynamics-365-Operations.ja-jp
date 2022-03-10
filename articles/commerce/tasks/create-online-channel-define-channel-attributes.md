@@ -2,11 +2,9 @@
 title: オンライン チャンネルの作成およびチャンネルの属性の定義
 description: この手順では、新しいオンライン チャンネルを作成し、組織階層に追加する手順を説明しています。
 author: jashanno
-manager: AnnBe
 ms.date: 06/04/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailSPOnlineStoreDetailPage, SysLookupMultiSelectGrid, DimensionLookup, OMHierarchyManager, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8f85a74e44be28452f5d892f1875d74261f9dbe3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 98d218a2d4f3b31084adfbc013dd0999f459dc1572e29a6470edc7cb899809c1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5215439"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713369"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>オンライン チャンネルの作成およびチャンネルの属性の定義
 

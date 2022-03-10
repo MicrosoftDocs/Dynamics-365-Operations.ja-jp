@@ -1,12 +1,10 @@
 ---
 title: 資産カウンターの手動更新
 description: このトピックでは、資産管理での資産カウンターの手動更新について説明します。
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetCounter
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5318bac961682f88e192ac70c4993c62b69b399c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 74d840cbb064018560a6abc2823f520c2f3179ac42b149c0507c9421a4e73391
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020888"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776437"
 ---
 # <a name="manual-update-of-asset-counters"></a>資産カウンターの手動更新
 
@@ -56,10 +54,13 @@ ms.locfileid: "5020888"
 
 次の図は、**資産カウンター** ページの例を示しています。
 
-![図 1](media/11-work-orders.png)
+![図 1。](media/11-work-orders.png)
 
 **資産カウンター** ページ (**資産管理** > **照会** > **資産** > **資産カウンター**) では、必要に応じて、複数の資産に対して同時にカウンター登録を行うことができます。
 
 >[!NOTE]
 >手動のカウンター登録に対する差異を定義する範囲を設定できます。 登録が定義された範囲に含まれていない場合に表示されるメッセージのタイプを指定することもできます。 カウンターの設定方法の詳細については、[カウンター](../setup-for-objects/counters.md) を参照してください。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

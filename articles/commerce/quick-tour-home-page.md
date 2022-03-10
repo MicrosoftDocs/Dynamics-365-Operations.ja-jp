@@ -1,42 +1,37 @@
 ---
 title: ホーム ページの概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce のホーム ページの概要を提供します。
+description: このトピックでは、Microsoft Dynamics 365 Commerce のホーム ページの概要を示します。
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ebc8b4ebd3720815cdaaab708fbfdd8302cbea1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413860"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984497"
 ---
 # <a name="home-page-overview"></a>ホーム ページの概要
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のホーム ページの概要を提供します。
-
-## <a name="overview"></a>概要
+このトピックでは、Microsoft Dynamics 365 Commerce のホーム ページの概要を示します。
 
 ホーム ページは、買い物客が E コマース サイトにアクセスした場合に移動する既定のページです。 通常、このページは、マーケティング モジュールの組み合わせを使用して、製品およびプロモーションを示します。 ホーム ページは、買い物客を関連付けるために、豊かな画像とテキストが必要です。
 
 以下の図は、モジュール ライブラリおよび 「Fabrikam」 のテーマを使用してビルドされたホーム ページの例を示します。
 
-![ホーム ページの例](./media/Homepage2.PNG)
+![ホーム ページの例。](./media/Homepage2.PNG)
 
 ホーム ページの上部には、小売業者が顧客に参照させたいすべての製品カテゴリおよび他のページを表示するヘッダーがあります。 ホーム ページの下部には、顧客が興味を持つさまざまなトピックへのクイック リンクを含むフッターがあります。
 
@@ -46,13 +41,13 @@ ms.locfileid: "4413860"
 
     以下の図は、主なセクションの最初の項目が "新着" と呼ばれるコンテンツ ブロック モジュールのヒーロー レイアウトであるホーム ページの例を示します。
 
-    ![ヒーロー モジュールの例](./media/Hero.PNG)
+    ![ヒーロー モジュールの例。](./media/Hero.PNG)
 
 - **機能** – 画像とテキストの組み合わせを使用して製品またはプロモーションをマーケティングするために、コンテンツ ブロック モジュールの機能レイアウトが使用されます。 機能レイアウトは個別に使用することができ、またカルーセル モジュールでホストすることもできます。
 
     以下の図は、ホーム ページ内におけるコンテンツ ブロック モジュールの機能レイアウトの例を示しています。
 
-    ![機能モジュールの例](./media/Feature.PNG)
+    ![機能モジュールの例。](./media/Feature.PNG)
 
 - **タイル** – コンテンツ ブロック モジュールのタイル レイアウトは、複数行レイアウトの画像とテキストの組み合わせを使用して、複数の製品または製品カテゴリを表示するために使用されます。 このトピックの前の部分で示したホーム ページの図において、タイル レイアウトは、**女性店員**、**男性店員**、および **店舗のアクセサリ** 項目の 3 列のレンダリングで使用されています。
 - **ビデオ プレーヤー** – ビデオ プレーヤー モジュールを使用して、ホーム ページにビデオ コンテンツを表示することができます。 このトピックの前の部分で示したホーム ページの図には、ビデオ プレーヤー モジュールが含まれます。
@@ -61,7 +56,7 @@ ms.locfileid: "4413860"
 
     以下の図は、ホーム ページ内における製品推奨モジュールの例を示しています。
 
-    ![製品推奨モジュールの例](./media/Recommendations.PNG)
+    ![製品推奨モジュールの例。](./media/Recommendations.PNG)
 
 > [!NOTE]
 > ここに一覧表示されているすべてのモジュールは、すべてのサイト ページで使用できます。 ただし、顧客がサイトで最初に対話するページなので、ホーム ページ上での配置は重要です。
@@ -73,3 +68,6 @@ ms.locfileid: "4413860"
 [買い物カゴとチェックアウト ページの概要](quick-tour-cart-checkout.md)
 
 [アカウント管理ページの概要](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: レシート番号のリセット
 description: このトピックでは、目的の日付 (たとえば、会計年度や暦年) のさまざまなアクションに使用されるレシート番号をリセットする方法について説明します。
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 97ec85ebccacd3a827e8a016098939134823dceb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 855c39f15db6de8fac1f0cd4667eec485c70542b9aebde0d7085e2703f4609bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733872"
 ---
 # <a name="reset-receipt-numbers"></a>レシート番号のリセット 
 
@@ -57,7 +55,7 @@ ms.locfileid: "5243698"
 1. **レシート タイプのリセット** フィールドで、**1 回のみ** または **年 1 回** を選択します。
 1. **OK** を選択します。
 
-![レシートのリセット日付の選択](media/Enable_receipt_reset.png "レシートのリセット日付の選択")
+![レシートのリセット日付の選択。](media/Enable_receipt_reset.png "レシートのリセット日付の選択")
 
 日付を選択したら、**次のレシート番号リセット日付** 列に表示されます。 リセット日付は、すべてのレシート トランザクション タイプに適用可能です。 したがって、レシートの番号順序はすべてのレシート タイプに対してリセットされます。
 

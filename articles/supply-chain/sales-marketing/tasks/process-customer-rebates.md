@@ -1,7 +1,7 @@
 ---
 title: 顧客リベートの生成および処理
 description: この手順は、要求の生成から売掛金勘定への見越計上として顧客リベートを渡すまでの、顧客リベートの処理方法を示します。
-author: omulvad
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesT
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 450d630c133f2ef9ce10bbf199c3c125a9cdf4bc09d23180f956190096265654
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779593"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969090"
 ---
 # <a name="generate-and-process-customer-rebates"></a>顧客リベートの生成および処理
 
@@ -69,7 +69,7 @@ ms.locfileid: "6779593"
 2. **累計** をクリックします。
 3. **顧客** フィールドで値を入力または選択します。
 4. **開始日** フィールドで、今日の日付を選択します。
-5. **OK** をクリックします。 **累計** 機能を実行した結果、見積要求の金額は、関連する期間の顧客の合計売上高が最初のリベートが生成されたときより高いため、勘定が調整されています。 つまり、購買合計数量が 100 単位に達したため、顧客は、単位ごとに 40 USD (契約の2 番目の数量区分により)、または合計リベート金額の 400 USD を利用できます。 差額は、800 USD 追加という新しい要求「調整」として記録されます。 累積的な更新プログラムに含まれているリベート要求の状態は、計算済に設定されます。 
+5. **OK** をクリックします。 **累計** 機能を実行した結果、見積要求の金額は、関連する期間の顧客の合計売上高が最初のリベートが生成されたときより高いため、勘定が調整されています。 つまり、購買合計数量が 100 単位に達したため、顧客は、単位ごとに 40 USD (契約の2 番目の数量区分により)、または合計リベート金額の 4,000 USD を利用できます。 差額は、800 USD 追加という新しい要求「調整」として記録されます。 累積的な更新プログラムに含まれているリベート要求の状態は、計算済に設定されます。 
 6. リストで、すべての行をマークします。
 7. **承認** をクリックします。
 8. **プロセス** をクリックします。

@@ -2,7 +2,7 @@
 title: e コマース サイトの作成
 description: このトピックでは、Dynamics 365 Commerce サイト ビルダーで新しい e コマース サイトを作成するために必要な手順と情報について説明します。
 author: bicyclingfool
-ms.date: 07/02/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 60fea46da2d1ac9b319ed0a7b832809da70baa6eb8ae22319321200fb938c70e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737631"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090772"
 ---
 # <a name="create-an-e-commerce-site"></a>e コマース サイトの作成
 
@@ -48,14 +48,21 @@ Dynamics 365 Commerce 機能のライセンスを取得すると、サイト ビ
 | ドメイン                              | このオンライン ストアでドメインとして使用されるドメイン名を選択します。 LCS でドメインをコンフィグレーションしていない場合は、このフィールドを空白のままにしておくことができます。 ドメインを LCS でコンフィグレーションしたら、**サイトの設定** でそのドメインをオンライン ストアに追加する必要があります。  |
 | パス                              | サイトが、特定のドメイン名に対して複数の言語をサポートしている場合は、パス フィールドを使用して、そのドメインと言語の組み合わせに固有のサイト URL を作成します。 **既定の言語** フィールドに指定した言語のみ、このドメインに対してサポートされる場合、またはサイトを他の言語にローカライズした後も、その言語を既定の言語として使用する場合は、このフィールドを空白のままにすることをお勧めします。 |
 
-
 サイトが作成されると、**製品** タブを選択することにより、そのサイトがオンライン ストアに関連付けられていることを確認できます。そこでは、オンライン ストアに割り当てられた製品の品揃えが表示されます。 ページの左上にあるドロップダウン メニューを使用して、割り当てられた製品にカテゴリ別にアクセスすることもできます。
+
+## <a name="rename-your-site"></a>ご利用のサイトの名称変更
+
+サイト ビルダーでサイトの名称変更するには、次の手順を実行します。
+
+1. サイトのリスト ビューを開く場合は、右上隅の **サイトの切り替え** を選択し、**サイトの管理** を選択します。 
+1. 名前を変更するサイトの横のチェックボックスをオンにし、コマンド バーの **名前の変更** を選択します。
+1. テンプレート名 配下の  **新規サイト名** ダイアログ ボックスに、新しいサイトの名称を入力し、**OK** を選択します。 サイトの一覧が更新され、サイトの新しい名前が表示されます。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [ドメイン名のコンフィギュレーション](configure-your-domain-name.md)
 
-[新しい eコマース テナントのデプロイ](deploy-ecommerce-site.md)
+[新しい eコマース テナントの配置](deploy-ecommerce-site.md)
 
 [オンライン チャンネルと Dynamics 365 Commerce サイトの関連付け](associate-site-online-store.md)
 

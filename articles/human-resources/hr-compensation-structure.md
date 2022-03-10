@@ -1,31 +1,33 @@
 ---
 title: 報酬の構造の作成
-description: この記事では、固定報酬プランを作成する方法、および適格性ルールで計画に従業員を登録する有効にする方法について説明します。
-author: andreabichsel
-ms.date: 02/10/2020
+description: このトピックでは、固定報酬プランを作成し、適格性ルールを介して従業員をプランに登録する方法を説明します。
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 75d1a05d4f94689581e2a67a13adeef6b14ac0cd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2e35f4978cc4e8162c56ba05de28ab5b2366ccc7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800906"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065289"
 ---
 # <a name="develop-a-compensation-structure"></a>報酬の構造の作成
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-この記事では、固定報酬プランを作成する方法、および適格性ルールで計画に従業員を登録する有効にする方法について説明します。 この記事は、USMF のデモ データを使用し、報酬と給付金マネージャーに適用されます。
+このトピックでは、固定報酬プランの作成と、適格性ルールによる従業員の登録について説明します。 このトピックでは、USMF のデモ データを使用し、報酬と福利厚生マネージャーに適用されます。
 
 ## <a name="create-a-fixed-compensation-plan"></a>固定報酬プランの作成
 
@@ -43,7 +45,7 @@ ms.locfileid: "5800906"
 
 7. **タイプ** フィールドで、固定報酬プランが **バンド**、**等級**、**ステップ** 計画のいずれであるかを選択します。
 
-8. **許可された報酬認定** チェック ボックスは、プロセス イベントでこの計画に追加されたアクションの既定値として機能します。 報酬認定を許可すると、報酬を処理するときに計算された規定額を上書きすることができます。
+8. **推奨の許可** チェック ボックスは、プロセス イベントでこのプランに追加されたアクションの既定の値になります。 報酬認定を許可すると、報酬を処理するときに計算された規定額を上書きすることができます。
 
 9. **許容範囲外** フィールドでは、特定のレベルに対して、指定の報酬構造の範囲外になる報酬額をどのように処理するかを指定することができます。 **許容範囲外** フィールドを **なし** に設定すると、任意の報酬額を使用できます。 **ソフトの許容範囲** では、報酬額がそのレベルの最小基準点の金額より少ない場合、または最大金額を超える場合に、ユーザーに警告します。 ユーザーは警告を無視して操作を継続できます。 **ハードの許容範囲** では、従業員の報酬額がそのレベルの最小または最大の基準点の範囲外の場合にエラーを生成します。また、従業員の報酬が範囲内になるように自動的に調整します。
 

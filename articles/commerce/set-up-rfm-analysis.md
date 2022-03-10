@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0eece0678335caa789f0b2c4a324deab6832b53c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765222"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Recency、頻度、および金融 (RFM) 分析の設定
 
@@ -33,13 +33,13 @@ ms.locfileid: "5795480"
 
 - 最初の桁は、顧客の recency 評価で、どれほど最近に顧客が組織から購買したかを示します。
 - 2 番目の桁は、顧客が購買を行う頻度の評価で、組織からの顧客の購買の頻度を示します。
-- 3 番目の桁は、顧客の金額の評価で、組織から購買を行うときに顧客が費やす金額を示します。
+- 3 番目の桁は、顧客の金額の評価で、顧客が組織から購買を行うときに顧客が費やす金額を示します。
 
 たとえば、1 から 5 のスケールで 5 が最も高い評価で、評価を設定します。 この場合、535 の顧客の評価は、顧客に関する次の情報を示します:
 
 - **Recency 評価 5** - 顧客は最近購買をしました。
 - **頻度評価 3** - 顧客が中程度の頻度で組織から製品を購入します。
-- **金額評価 5** – 顧客が購買を行うとき、かなりの金額を使用します。
+- **金額評価 5** – 顧客が購買を行うとき、顧客はかなりの金額を使用します。
 
 組織がこれらの数の合計を使用する場合は、スコアとして、個別の評価が合計されます。 同じ例では、顧客の評価は 13 です (5 + 3 + 5)。
 

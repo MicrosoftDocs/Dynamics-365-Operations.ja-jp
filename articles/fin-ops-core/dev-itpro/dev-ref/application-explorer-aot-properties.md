@@ -3,20 +3,18 @@ title: アプリケーション エクスプローラーのプロパティ
 description: このトピックでは、アプリケーション エクスプローラーの品目向けに Microsoft Visual Studio のプロパティ ウィンドウに表示されるプロパティについて説明します。
 author: RobinARH
 ms.date: 11/03/2017
-ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 85213
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 958394fd0fca370bce825e5a0a5a8f2bad850407
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: ee6bbaa53637e3c8858f3b30a2d9b4d2785ee26f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5865867"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783271"
 ---
 # <a name="application-explorer-properties"></a>アプリケーション エクスプローラーのプロパティ
 

@@ -1,12 +1,10 @@
 ---
 title: 理由コードの作成
 description: サービス注文のステージを更新する理由を説明する、理由コードを作成できます。
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAReasonCodeTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 254a94548bc75ee6d1eae1d1c9f3ae4bdbf58855
-ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
+ms.openlocfilehash: a8692e8a9322098b4e4dd2f3ca56338ca71df0f6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470980"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569170"
 ---
 # <a name="create-reason-codes"></a>理由コードの作成
 

@@ -2,11 +2,9 @@
 title: 製造オーダーから出荷ドックへのクロスドッキング
 description: このトピックでは、生産ラインから出荷輸送ドックまでの完了レポートがされているクロスドッキング材料のプロセスを管理する方法について説明します。
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d2f264564f627889d89444a7423179de0c6d4d0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ee91fa28943a27474bff5fb7a7fc368142dabcdd6c9c9772d38134af0257ef6e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715749"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>製造オーダーから出荷ドックへのクロスドッキング
 
@@ -30,8 +28,7 @@ ms.locfileid: "5246288"
 
 このトピックでは、生産ラインから出荷輸送ドックまでの完了レポートがされているクロスドッキング材料のプロセスを管理する方法について説明します。
 
-<a name="introduction"></a>はじめに
-------------
+## <a name="introduction"></a>はじめに
 
 生産から出荷場所へのクロスドッキングは、大量生産しており、生産ラインから完了レポートされ次第完成品を出荷することを理想とするメーカーに適しています。 製造サイトで在庫を増やすのではなく、物理的に顧客需要の近くに位置した物流センターに製品を出荷することを目的としています。
 
@@ -45,7 +42,7 @@ ms.locfileid: "5246288"
 -   既にトレーラーがそのベイ ドアに割り当てられている場合、トラック ドライバーはそのトレーラーに直接製品を積み込むよう指示されます。
 -   製品を移す計画活動がない場合、フォーク リフト ドライバーは製品を内部倉庫 (5) 内の場所に保管するよう指示されます。
 
-[![便乗クロスドッキング](./media/scenario1.png)](./media/scenario1.png)
+[![便乗クロスドッキング。](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>クロスドッキングのコンフィギュレーション
 **作業ポリシー** でクロスドッキング プロセスをコンフィギュレーションします。 作業ポリシーには、ワーク オーダー タイプ、場所、および製品が含まれます。 次の例では、クロスドッキングは製品 X と場所 Y 用にコンフィギュレーションされています。

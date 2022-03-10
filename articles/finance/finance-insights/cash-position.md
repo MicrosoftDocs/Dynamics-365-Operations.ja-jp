@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
-ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
+ms.openlocfilehash: 7d43657573ea8092f047615fc50a1a50ab97f094
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "7945804"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968990"
 ---
 # <a name="cash-position"></a>現金持高
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 キャッシュ ポジションとは、キャッシュフローのプロジェクションであり、近い将来の予測を意味します。 これは、未払いの請求書や注文を支払う顧客からの現金収入の予測に基づくものであり、また購入の請求書や注文のために仕入先に支払われる現金支出の予測に基づくものです。
 

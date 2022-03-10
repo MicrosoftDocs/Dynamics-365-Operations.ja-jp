@@ -1,27 +1,25 @@
 ---
 title: 付帯サービス割り当ての設定
 description: この手順では、付帯サービスの割り当てを設定する方法を示します。
-author: ShylaThompson
-manager: tfehr
+author: Henrikan
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSAccessorialAssignment
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eed109551762ff2e120ab4362c6ca0f01f71d0c2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0062428cf984a48eeddc8c838f92daac254c4c78
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233754"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566050"
 ---
 # <a name="set-up-accessorial-assignments"></a>付帯サービス割り当ての設定
 

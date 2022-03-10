@@ -1,27 +1,24 @@
 ---
 title: IoT インテリジェンスの指標の設定
 description: このトピックでは、IoT インテリジェンスの指標を設定する方法について説明します。
-author: robinarh
-manager: tfehr
+author: tonyafehr
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
-audience: Developer
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+audience: Application User, Developer, IT Pro
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d854923876e013cc53542d809f61901e997dc09f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 85db0211c32ad4e27c3a9a65d2c74c5a39687f9c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409461"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783101"
 ---
 # <a name="set-up-metrics-for-iot-intelligence"></a>IoT インテリジェンスの指標の設定
 
@@ -70,3 +67,6 @@ Redis キャッシュ内のすべての指標キーが取得され、**指標キ
 1. Supply Chain Management で、**生産管理 \> 照会とレポート \> IoT インテリジェンス \> 指標キー** に移動します。
 2. **指標キー** ページで、削除する指標キーを選択します。
 3. **削除** を選択します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

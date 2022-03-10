@@ -2,27 +2,24 @@
 title: Dynamics 365 Commerce 10.0.15 (2021 年 1 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.15 の新機能または変更された機能について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: eaac3dd2c46b032912245219b3b160998d7c52a9
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: dad3ffec843a4afbcda0fd00a21a70cfd41708cce48c57fdfcd503491dde21e2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665251"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738039"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10015-january-2021"></a>Dynamics 365 Commerce 10.0.15 (2021 年 1 月) の新機能および変更された機能
 
@@ -37,15 +34,15 @@ ms.locfileid: "4665251"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](https://docs.microsoft.com/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
+このリリースでは次の機能が含まれています。 機能タイトルは、[リリース計画](/dynamics365/release-plans/)のサイトに関する追加情報にリンクします。 追加のリンクは、その機能に対して現在使用可能な追加のドキュメントを指します。 これらの機能のほとんどは、使用する前に[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)を使用して有効にする必要があります。
 
 - カーブサイド ピックアップ<br> - 詳細については、[ハードウェア ステーションのないクレジットカードの処理](../dev-itpro/cnp-pos.md) を参照してください。
-- [POS での入荷中に、発注書の明細行の終了をサポートする](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-closing-lines-purchase-orders-during-receiving-pos)
-- [Dynamics 365 Commerce での実験](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)<br> - 詳細については、「[Dynamics 365 Commerce での実験](../experimentation-overview.md)」を参照してください。
-- [ブラジル向け Commerce ローカライズ](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/commerce-localization-brazil)<br> - 詳細については、「[ブラジル向け Commerce ローカライズ](../localizations/latam-bra-commerce-localization.md)」を参照してください。
-- [店舗における入庫/出庫の操作の改善](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)<br> - 詳細については、[POS での入庫在庫操作](../pos-inbound-inventory-operation.md) を参照してください。
-- [販売時点管理 (POS) の注文の取り消し操作の改善](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/improvements-facilitating-curbside-pickup-store-operations)<br> - 詳細については、「[POS での注文の取り消し操作](../enhancedorderrecall.md)」を参照してください。
-- [変更予定がない場合に POS の「変更期限」ダイアログをスキップする機能](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/ability-skip-change-due-dialog-pos-when-no-change-due)
+- [POS での入荷中に、発注書の明細行の終了をサポートする](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/support-closing-lines-purchase-orders-during-receiving-pos)
+- [Dynamics 365 Commerce での実験](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/experimentation-dynamics-365-commerce)<br> - 詳細については、「[Dynamics 365 Commerce での実験](../experimentation-overview.md)」を参照してください。
+- [ブラジル向け Commerce ローカライズ](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/commerce-localization-brazil)<br> - 詳細については、「[ブラジル向け Commerce ローカライズ](../localizations/latam-bra-commerce-localization.md)」を参照してください。
+- [店舗における入庫/出庫の操作の改善](/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)<br> - 詳細については、[POS での入庫在庫操作](../pos-inbound-inventory-operation.md) を参照してください。
+- [販売時点管理 (POS) の注文の取り消し操作の改善](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/improvements-facilitating-curbside-pickup-store-operations)<br> - 詳細については、「[POS での注文の取り消し操作](../enhancedorderrecall.md)」を参照してください。
+- [変更予定がない場合に POS の「変更期限」ダイアログをスキップする機能](/dynamics365-release-plan/2020wave2/commerce/dynamics365-commerce/ability-skip-change-due-dialog-pos-when-no-change-due)
 - インライン スクリプトおよびスタイルの CSP サポート、および nonce の有効化<br> - 詳細については、「[コンテンツ セキュリティ ポリシー (CSP) の管理](../manage-csp.md)」を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
@@ -61,7 +58,7 @@ Dynamics 365 Commerce 10.0.15 には、プラットフォーム更新プログ�
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365: 2020 リリース ウェーブ 2 プラン](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
+[Dynamics 365: 2020 リリース ウェーブ 2 プラン](/dynamics365-release-plan/2020wave2/) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際に 1 つのドキュメントでそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
@@ -73,3 +70,6 @@ Dynamics 365 Commerce 10.0.15 には、プラットフォーム更新プログ�
 製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Commerce の削除済みまたは非推奨の機能](removed-deprecated-features-commerce.md)のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

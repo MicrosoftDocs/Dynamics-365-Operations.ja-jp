@@ -1,12 +1,10 @@
 ---
 title: 買掛金勘定からの資産の作成と取得
-description: このタスク ガイドでは、購買プロセスで固定資産を作成し、取得する方法を説明します。
+description: この手順では、購買プロセスで固定資産の作成と取得について説明します。
 author: saraschi2
-manager: AnnBe
 ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb7c92fcab622109b01590d4acadce0d707d3d2d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dbac069362a15b5ab1d2dbf88a732a14a3cf709d
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227091"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394661"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>買掛金勘定からの資産の作成と取得
 
 [!include [banner](../../includes/banner.md)]
 
-このタスク ガイドでは、購買プロセスで固定資産を作成し、取得する方法を説明します。  ここでは、経理担当者、買掛金勘定係、デモ会社 USMF を使用します。
+この手順では、購買プロセスで固定資産の作成と取得について説明します。  ここでは、経理担当者、買掛金勘定係、デモ会社 USMF を使用します。
 
 
 ## <a name="set-fixed-assets-parameters"></a>固定資産パラメーターの設定

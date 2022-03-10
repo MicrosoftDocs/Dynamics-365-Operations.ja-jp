@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fdfe4d5042e0a6a7948a09334dc675e210e765a1
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a1f1f83fbf4b7280aec579b17c96e8d9fc59e39bcea5d6d5d7366397cf8f2875
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773372"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Dynamics 365 Supply Chain Management 10.0.9 の新機能と変更点 (2020 年 4 月)
 
@@ -71,7 +71,7 @@ ms.locfileid: "5909818"
 
 - [梱包対保管分析コード](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 
-- [計画オーダーの確定並列化](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - 詳細については、[確定並列化](../master-planning/maintain-planned-orders.md#parallelize-firming)および [MRP パフォーマンスおよび有用性の向上](https://www.microsoft.com/videoplayer/embed/RE4myrJ)のビデオを参照してください。
+- [計画オーダーの確定並列化](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - 詳細については、[計画オーダーの確定](../master-planning/planning-optimization/planned-order-firming.md) および [MRP パフォーマンスおよび有用性の向上](https://www.microsoft.com/videoplayer/embed/RE4myrJ) のビデオを参照してください。
 
 - [配布に関する最適化の計画](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - 詳細については、[計画最適化の概要](../master-planning/planning-optimization/planning-optimization-overview.md)を参照してください。
 

@@ -1,23 +1,18 @@
 ---
 title: FieldMetadata タイプ
 description: フィールド メタデータのインターフェイス。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d42cc6853f1c6670917f374e821b7502ba81bef
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.author: tfehr
+ms.openlocfilehash: dd5af9ac7fc2b0bb4bf03f0a689174aa75bb379e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744199"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781871"
 ---
 # <a name="fieldmetadata-type"></a>FieldMetadata タイプ
 
@@ -52,7 +47,7 @@ ms.locfileid: "5744199"
 * [ReferenceAppId](view-model-control-field-ifield-ifieldmetadata.md#referenceappid)
 * [ReferencePageId](view-model-control-field-ifield-ifieldmetadata.md#referencepageid)
 * [スタイル](view-model-control-field-ifield-ifieldmetadata.md#style)
-* [[タイプ](view-model-control-field-ifield-ifieldmetadata.md#type)]
+* [タイプ](view-model-control-field-ifield-ifieldmetadata.md#type)
 * [UnWrapText](view-model-control-field-ifield-ifieldmetadata.md#unwraptext)
 * [WrapText](view-model-control-field-ifield-ifieldmetadata.md#wraptext)
 

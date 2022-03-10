@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,14 +15,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15cedc16fbdbb5d25daa262f094a56bb8fe2f5cc
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: b9e56c130cd831e6a1ad258c679562cb6de57d9b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892708"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070680"
 ---
 # <a name="create-a-buy-and-sell-leave-request-workflow"></a>休暇の売買申請ワークフローの作成
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -79,7 +81,8 @@ Dynamics 365 Human Resources でワークフローを作成して、休暇の売
 ## <a name="see-also"></a>参照
 
 [休暇の概要](hr-leave-and-absence-overview.md)<br>
-[休暇の売買ポリシーの管理](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+[休暇の売買ポリシーの管理](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)<br>
+[休暇の売買](hr-employee-self-service-buy-sell-leave.md)
 
 
 

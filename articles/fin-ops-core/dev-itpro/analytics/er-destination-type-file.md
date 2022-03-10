@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f48d4c28f74d9eea7289b9911269527073304d6f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: adb32efd3849c94294d9fe9e706f39d209116d259e0d964d1558cc0e49009a5a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753483"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760801"
 ---
 # <a name="file-destination"></a>ファイルの送信先
 
@@ -30,7 +30,7 @@ ms.locfileid: "5753483"
 
 **送信先設定** のページで **有効** を **はい** に設定すると、コンフィギュレーションの実行が終了した時に、開くまたは保存のダイアログ ボックスが開かれます。
 
-[![送信先の設定ページ](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
+[![送信先の設定ページ。](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

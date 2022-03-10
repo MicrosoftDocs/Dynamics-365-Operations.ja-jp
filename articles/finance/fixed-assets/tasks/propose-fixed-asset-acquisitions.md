@@ -1,7 +1,7 @@
 ---
 title: 固定資産の取得の提案
 description: このトピックでは、固定資産仕訳帳の取得提案を使用して固定資産を取得する方法について説明します。
-author: saraschi2
+author: moaamer
 ms.date: 03/17/2021
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAss
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d529cd53b41827a78b282afd4d2c69d2f2db555e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 70347009ede494760cd7f51b46db04b434b9fbcc
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817171"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883823"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>固定資産の取得の提案
 

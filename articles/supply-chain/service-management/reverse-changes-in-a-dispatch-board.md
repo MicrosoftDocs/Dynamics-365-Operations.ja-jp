@@ -1,12 +1,10 @@
 ---
 title: 派遣表の変更の取消
 description: このトピックでは、派遣表で行った未保存の変更を取り消す方法について説明します。
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMADispatchBoard
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ef7312243cf7e9b890456fbeeeefb85728b4b5b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 93db36066ba9b355fb0deb63019b3cecca61768c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219248"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567898"
 ---
 # <a name="reverse-changes-in-a-dispatch-board"></a>派遣表の変更の取消 
 

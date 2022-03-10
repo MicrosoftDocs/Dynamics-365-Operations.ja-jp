@@ -1,12 +1,10 @@
 ---
 title: 顧客トランザクション リスト ページ
 description: このトピックでは、Microsoft Dynamics 365 Finance の顧客トランザクション リスト ページについての情報を提供します。
-author: mikefalkner
-manager: aolson
+author: abruer
 ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTrans
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c1bb422b12489598d099b59b3447f620c80c9438
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4339990d4e2fd89abde4da54b005b212cacff751
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991070"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753877"
 ---
 # <a name="customer-transactions-list-page"></a>顧客トランザクション リスト ページ
 
@@ -96,3 +94,6 @@ ms.locfileid: "4991070"
 - **現金割引の条件を編集** - 基準日と現金割引条件に基づき、現金割引は変更されます。
 
 支払設定の編集を終えたら、**閉じる** を選び変更を保存します。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

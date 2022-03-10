@@ -2,11 +2,9 @@
 title: ピッキング行のグループ化
 description: このトピックでは、ピッキング行のグループ化の概要を示します。
 author: Mirzaab
-manager: tfehr
 ms.date: 12/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: e70244d46ec2787fefdb097d0354af7910b55e9c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 076a4dfdc49525eef616d1008073371be1dd4a248cd6f16d395b544ae70e7531
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757497"
 ---
 # <a name="pick-line-grouping"></a>ピッキング行のグループ化
 
@@ -170,3 +168,6 @@ ms.locfileid: "4989721"
 >   - 未完了の補充作業がある作業明細行
 >   - 超過ピッキング
 >   - 品目再配賦の未処理ピッキング
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

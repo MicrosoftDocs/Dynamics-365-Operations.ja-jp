@@ -2,26 +2,22 @@
 title: プレビュー サブスクリプションのサインアップ
 description: このトピックでは、プレビュー/パートナー オファーをサブスクライブして環境を配置する方法について説明します。
 author: RobinARH
-manager: AnnBe
 ms.date: 12/16/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b078b34e7be39f2150e98774c9dc148a84731327
-ms.sourcegitcommit: de4dbef4ed7704597a22c15acf58bb4b1d872c2a
+ms.openlocfilehash: 13fdc61a1409100df855815e09dc90972c877e0e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "4743453"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782196"
 ---
 # <a name="sign-up-for-preview-subscriptions"></a>プレビュー サブスクリプションのサインアップ
 
@@ -37,8 +33,8 @@ ms.locfileid: "4743453"
 
 ## <a name="key-terms"></a>重要な用語
 
-- **Microsoft Online Services テナント** – テナントは、組織のすべての定期売買とユーザーのグループです。 テナントは、Microsoft Online Services の最初のサブスクリプションと同時に作成されます。
-- **定期売買** – 定期売買により、オンライン クラウドの環境と経験が得られます。 また、これにより、作成したカスタマイズをクラウドに配置する方法も確認できます。
+- **Microsoft Online Services テナント** – テナントは、組織のすべてのサブスクリプションとユーザーのグループです。 テナントは、Microsoft Online Services の最初のサブスクリプションと同時に作成されます。
+- **サブスクリプション** – サブスクリプションにより、オンライン クラウドの環境と経験が得られます。 また、これにより、作成したカスタマイズをクラウドに配置する方法も確認できます。
 - **Microsoft Azure Active Directory** – クラウド環境には、Azure AD が含まれます。 オンプレミス環境の管理と同様、Azure AD はオンライン アプリケーションのユーザー、グループ、セキュリティ ロール、およびライセンスを管理するのに役立ちます。
 - **ユーザー** – 組織がサブスクリプションしているサービスのユーザーは Azure AD で管理されます。 テナント内のすべてのユーザーを追加して、セキュリティ ロールに割り当てることができます。
 - **開発者と管理者** - 開発者と管理者は、プロジェクトや環境を管理できる LCS にもアクセスできるユーザーです。 これらのユーザーは、エンド ユーザーでもあります。
@@ -47,7 +43,7 @@ ms.locfileid: "4743453"
     > [!IMPORTANT]
     > このリリースでは、Microsoft 365 や Microsoft Dynamics CRM Online など、他のオンライン サービスに関連付けられている既存の資格情報を使用しないでください。
 
-- **Microsoft アカウント** – Microsoft アカウントは、以前は Passport アカウントまたは Windows Live ID アカウントと呼ばれていました。 現在、Finance and Operations アプリケーション、Microsoft Dynamics 365 Commerce、またはその他の Microsoft オンライン サービスで Microsoft アカウントを使用することはできません。 ただし、Microsoft アカウントは、CustomerSource、PartnerSource、ソース情報、および Microsoft Dynamics コミュニティなどの Microsoft Connect および他の Microsoft Business Solutions サイトに対して必要です。 これらのサービスにアクセスするには、Microsoft アカウントを引き続き使用します。
+- **Microsoft アカウント** – Microsoft アカウントは、以前は Passport アカウントまたは Windows Live ID アカウントと呼ばれていました。 現在、Finance and Operations アプリケーション、Microsoft Dynamics 365 Commerce、またはその他の Microsoft オンライン サービスで Microsoft アカウントを使用することはできません。 ただし、Microsoft アカウントは、Information Source および Microsoft Dynamics コミュニティなどの Microsoft Connect および他の Microsoft Business Solutions サイトに対して引き続き必要です。 これらのサービスにアクセスするには、Microsoft アカウントを引き続き使用します。
 - **Microsoft 365 管理センター** – Microsoft 365 管理センターは、Microsoft 365 が管理者に提供するサブスクリプション管理ポータルです。 Microsoft 365 管理センターは、ユーザーおよびサブスクリプションの管理機能を提供するために使用されます。
 - **環境** - 必要に応じて、仮想マシン (VM) の単一インスタンスをいくつでも配置できます。 これらのインスタンスを *環境* と呼び出ます。
 
@@ -66,7 +62,7 @@ ms.locfileid: "4743453"
 2. **アカウント設定** ページの、**国または地域** フィールドで、国または地域の選択をします。
 3. 最後のステップに到達するまで、サインアップを完了するウィザードおよびプロンプトに従います。
 
-    [![準備ができました](./media/wizardprompt.png)](./media/wizardprompt.png)
+    [![準備ができました。](./media/wizardprompt.png)](./media/wizardprompt.png)
 
 ## <a name="start-a-new-project-in-lcs"></a>LCS で新しいプロジェクトを開始
 
@@ -77,16 +73,16 @@ LCS を使用して環境を管理するには、新しいプロジェクトを�
 3. サブスクライブするために使用したアカウントを使用してサインインします。
 4. プラス記号 (**+**) を選択して新しいプロジェクトを作成します。
 
-    [![プロジェクトの作成](./media/11.jpg)](./media/11.jpg)
+    [![プロジェクトを作成します。](./media/11.jpg)](./media/11.jpg)
 
 5. プロジェクト タイプを選択します。
 6. プロジェクト情報を入力し、**作成** を選択します。
 
-    コマースを評価する予定がある場合は、**製品名** フィールドで **Microsoft Dynamics 365 Commerce** を必ず選択します。
+    Commerce を評価する予定がある場合は、**製品名** フィールドで **Microsoft Dynamics 365 Commerce** を必ず選択します。
 
     インスタンスを管理するための新しいプロジェクトが作成されます。
 
-    ![新規プロジェクト](./media/projectworkspace.jpg)
+    ![新規プロジェクト。](./media/projectworkspace.jpg)
 
 ## <a name="add-users-to-lcs"></a>LCS へのユーザーの追加
 
@@ -131,7 +127,7 @@ LCS でプロジェクト ページを開始します。
 
     環境を配置した後、**環境** セクションは使用可能です。
 
-    [![環境セクションにある新規環境](./media/pic7.jpg)](./media/pic7.jpg)
+    [![環境セクションにある新しい環境。](./media/pic7.jpg)](./media/pic7.jpg)
 
 13. 配置のステータスに関する詳細を表示するための環境を選択します。 最初の配置には数時間かかりますが、その後の配置はずっと高速になります。
 14. 配置状態が **配置済み** に変わったときに、**ログイン** を選択してクライアントに接続するか、または VM の名前を選択して、リモート デスクトップを使用して開発マシンに接続します。 配置が完了した後、リモート デスクトップ経由で環境に接続するために必要な基本 URL と情報を見つけることができます。
@@ -150,11 +146,11 @@ LCS は、オンライン管理アクティビティを実行するための出�
 
 2. 右にスクロールし、タイルを確認します。
 
-    ![タイル](./media/pic9.jpg)]
+    ![タイル。](./media/pic9.jpg)]
 
     使用可能なタイルには、LCS のさまざまなツールとサービスがあります。 次の追加のタイトルも含まれます。
 
-    - **自分の定期売買** – Microsoft 365 定期売買の管理ポータルでは、オンライン定期売買を表示して操作できます。 ページの左側のナビゲーション セクションで **ユーザーとグループ** を選択することにより、オンライン ユーザーを管理することもできます。
+    - **自分のサブスクリプション** – Microsoft 365 サブスクリプションの管理ポータルでは、オンライン サブスクリプションを表示して操作できます。 ページの左側のナビゲーション セクションで **ユーザーとグループ** を選択することにより、オンライン ユーザーを管理することもできます。
 
         > [!NOTE]
         > このページにアクセスするには、組織の Microsoft Online Services テナントにおいて **グローバル管理者** ロールのメンバーである必要があります。
@@ -165,4 +161,7 @@ LCS は、オンライン管理アクティビティを実行するための出�
         > [!NOTE]
         > このページにアクセスするには、組織の Microsoft Online Services テナントにおいて **グローバル管理者** ロールのメンバーである必要があります。 インストール ユーザーは常にグローバル管理者ですが、他のユーザーをこのロールに追加する必要があります。
 
-        [![Microsoft 365 管理センターの有効なユーザー](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+        [![Microsoft 365 管理センターの有効なユーザー。](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

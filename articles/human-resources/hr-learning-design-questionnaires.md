@@ -1,35 +1,35 @@
 ---
 title: アンケートの作成
-description: この記事は、アンケートを作成するプロセスについて説明します。 最初の手順では、アンケートを設計します。 アンケートを設計する場合は、質問と回答を書き込むだけでなく、回答を記録し、表にする構造を作成します。
-author: andreabichsel
-manager: tfehr
-ms.date: 06/20/2017
+description: このトピックは、アンケートを作成するプロセスについて説明します。
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: eb4632d7f7d73dbef690be16419e5f3aa25e880e
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 90dd59b605c21abd03d2e0d64a89dc787850c26e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467822"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065204"
 ---
 # <a name="create-questionnaires"></a>アンケートの作成
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-この記事は、アンケートを作成するプロセスについて説明します。 最初の手順では、アンケートを設計します。 アンケートを設計する場合は、質問と回答を書き込むだけでなく、回答を記録し、表にする構造を作成します。 
+このトピックは、アンケートを作成するプロセスについて説明します。 最初の手順では、アンケートを設計します。 アンケートを設計する場合は、質問と回答を書き込むだけでなく、回答を記録し、表にする構造を作成します。 
 
 アンケートを入念に設計することは、収集するデータの質の向上につながります。 デザインを入念に作成することで、適切な時点で、アンケートの適切なオプションをさらにうまく選択できます。 次の点が有効なアンケートを計画するのに役立ちます。
 
@@ -66,7 +66,7 @@ ms.locfileid: "5467822"
 
 ### <a name="questionnaire-types"></a>アンケートのタイプ
 
-アンケート タイプは必須で、アンケートを作成する際に割り当てる必要があります。 アンケートのタイプは、アンケートを容易に管理および分類するためにも使用できます。 アンケート タイプは、アンケートを分類して互いに区別するために使用します。 たとえば、複数のアンケートから選択できる場合、特定のアンケートの検索を容易にするためにそれらをタイプでフィルタ処理できます。 アンケートのタイプの例を次に示します。
+**アンケート タイプ** は必須で、アンケートを作成する際に割り当てる必要があります。 **アンケートのタイプ** は、アンケートを容易に管理および分類するためにも使用できます。 アンケート タイプは、アンケートを分類して互いに区別するために使用します。 たとえば、複数のアンケートから選択できる場合、特定のアンケートの検索を容易にするためにそれらをタイプでフィルタ処理できます。 アンケートのタイプの例を次に示します。
 
 -   人材開発
 -   顧客アンケート
@@ -74,9 +74,9 @@ ms.locfileid: "5467822"
 
 ### <a name="question-types"></a>質問タイプ
 
-質問タイプは必須で、質問の作成時に割り当てる必要があります。 
+**質問タイプ** は必須で、質問の作成時に割り当てる必要があります。 
 
-レポートの質問を分類するには質問タイプを使用します。 **質問** ページのタイプをフィルタとして使用できるため、質問タイプは質問の検索を容易にします。 質問タイプの例を次に示します。
+レポートの質問を分類するには **質問タイプ** を使用します。 **質問** ページのタイプをフィルタとして使用できるため、**質問タイプ** は質問の検索を容易にします。 質問タイプの例を次に示します。
 
 -   人事リソース
 -   業務の管理
@@ -95,7 +95,7 @@ ms.locfileid: "5467822"
 ## <a name="questionnaire-components"></a>アンケート コンポーネント
 アンケートは 3 つの主要な要素から成り立ちます。多項選択の質問、質問、アンケート自体の回答を含んだ回答グループ。 また、オプションでアンケートの質問を結果グループにグループ化することができます。 結果グループでは、質問を分類し、アンケートの詳細な分析を行うことができます。 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![QuestionnaireComponents。](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>回答グループおよび回答
 
@@ -108,7 +108,7 @@ ms.locfileid: "5467822"
 
 回答グループと回答は、質問が作成された情報元の本体を構成するコンポーネントです。 回答グループを作成した後に、**質問** ページの **回答グループ** フィールドでその回答グループを質問に関連付けることができます。 
 
-回答グループは、同じアンケートの複数の質問で使用できるほか、複数のアンケートにわたって使用することもできます。 
+**回答グループ** は、同じアンケートの複数の質問で使用できるほか、複数のアンケートにわたって使用することもできます。 
 
 > [!NOTE]
 > すでに完了したアンケートで使用されている回答グループの回答テキストを修正すると、データの評価が難しくなり、アンケート結果が無効となる場合があります。 回答グループを変更する必要がある場合、既存の回答グループを変更するのではなく新しく作成することをご検討してください。 質問や回答に関連付けられている回答グループ、あるいは既に回答が行われた回答グループは削除できません。
@@ -174,7 +174,7 @@ ms.locfileid: "5467822"
 
 ### <a name="result-groups"></a>結果グループ
 
-結果グループは、アンケートに質問を関連付けるときのオプションです。 
+**結果グループ** は、アンケートに質問を関連付けるときのオプションです。 
 
 結果グループは、ポイントを計算し、アンケートの結果を分類するために使用されます。 結果グループを使用すると、次の作業を実行できます。
 

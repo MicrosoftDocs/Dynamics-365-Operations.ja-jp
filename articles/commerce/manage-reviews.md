@@ -15,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35a649463b853d4ff0ef158167e5a3e0bcc4ddc5e6e9007fddda82dd14a00851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1aefa6eb93ef251778a48ba972d87e0cd5930bf0
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731596"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968230"
 ---
 # <a name="manage-ratings-and-reviews"></a>評価とレビューの管理
 
 [!include [banner](includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーで評価とレビューを管理する方法について説明します。
-
-## <a name="overview"></a>概要
 
 Dynamics 365 Commerce は、Microsoft Azure 認知サービスを使用して、俗語を編集することでレビュー テキストを自動的に管理します。 さらに、モデレーターは Dynamics 365 Commerce サイト ビルダーを使用して、次の手動タスクを実装することもできます。
 
@@ -129,6 +127,14 @@ Commerce サイト ビルダーの評価とレビューの傾向を表示する�
 [評価とレビューのコンフィギュレーション](configure-ratings-reviews.md)
 
 [Dynamics 365 Retail の商品評価の同期](sync-product-ratings.md)
+
+[モデレーターによる評価とレビューの手動公開を有効にする](manual-publish-rating-reviews.md)
+
+[評価とレビューのインポートとエクスポート](import-export-reviews.md)
+
+[サービス間認証の構成](service-to-service-auth.md)
+
+[評価とレビューに関するよく寄せられる質問](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

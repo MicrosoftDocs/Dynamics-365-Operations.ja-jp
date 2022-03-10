@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 22aa33135535d543eb8fe437821cab7a4865d6df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360152"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060834"
 ---
 # <a name="copy-an-instance"></a>インスタンスのコピー
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Microsoft Dynamics Lifecycle Services (LCS) を使用して、Microsoft Dynamics 365 Human Resources データベース をサンドボックス環境にコピーすることができます。 別のサンドボックス環境を使用する場合は、その環境から対象のサンドボックス環境にデータベースをコピーすることもできます。
 
@@ -52,9 +52,9 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 - Microsoft Azure Blob storage 内のドキュメントは環境間でのコピーがされません。 そのため、この ストレージ に属するドキュメントやテンプレートはコピーされず、コピー元の環境に残ります。
 
-- 管理者ユーザー、およびその他の内部サービス ユーザー アカウントを除くすべてのユーザーは使用できなくなります。 管理者ユーザーは他のユーザーがシステムに復帰する前にデータの削除や難読化することができます。
+- 「システム管理者」セキュリティ ロールを持つユーザー以外のユーザー、および他の内部サービス ユーザー アカウントは使用できません。 管理者ユーザーは他のユーザーがシステムに復帰する前にデータの削除や難読化することができます。
 
-- 管理者ユーザーは、特定のサービスまたは URL に統合エンドポイントを再接続するなど、必要な構成の変更を加える必要があります。
+- 「システム管理者」というセキュリティ ロールを持つユーザーは、統合エンドポイントを特定のサービスや URL に再接続するなど、必要な設定変更を行う必要があります。
 
 ## <a name="copy-the-human-resources-database"></a>Human Resources データベースのコピー
 
@@ -111,7 +111,7 @@ Human Resources データベースのコピーをする際に、次のイベン�
 
 また、インスタンスのコピー時には、次の状態変更がされます :
 
-- 管理者以外の全ユーザーが **無効化** されます。
+- 「システム管理者」セキュリティ ロールを持つユーザーを除くすべてのユーザーが **無効** に設定されます。
 
 - 一部のシステムジョブを除いた、すべてのバッチジョブが **保留** となります。
 

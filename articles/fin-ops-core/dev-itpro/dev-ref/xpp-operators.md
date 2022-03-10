@@ -4,17 +4,17 @@ description: このトピックでは、X++ でサポートされている演算
 author: RobinARH
 ms.date: 12/02/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a30c65359c7d9d27e674e37ab9d174e1a66f8d20
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: f1021067bd94b5f52cd24040efc734b3c5cca53b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661546"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783044"
 ---
 # <a name="x-operators"></a>X++ 演算子
 

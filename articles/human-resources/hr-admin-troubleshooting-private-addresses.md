@@ -1,8 +1,8 @@
 ---
 title: セキュリティ ロールで個人住所にアクセスする
-description: この記事では、顧客が個人住所にアクセスできない問題を解決する方法について説明します。
-author: andreabichsel
-ms.date: 11/02/2018
+description: このトピックでは、顧客が個人住所にアクセスできない場合の解決方法について説明します。
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,17 +11,20 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15616a9b3673a4c1842e389b976a80d599e2e77f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 05895d58cfd108c45c3c75921cb6930b904a6482
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346325"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068387"
 ---
-# <a name="access-to-private-addresses-by-security-role"></a>セキュリティ ロールによる個人住所へのアクセス
+# <a name="access-to-private-addresses-by-security-role"></a>セキュリティ ロールで個人住所にアクセスする
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

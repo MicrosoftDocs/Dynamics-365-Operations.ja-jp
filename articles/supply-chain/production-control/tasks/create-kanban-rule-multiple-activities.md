@@ -1,7 +1,7 @@
 ---
 title: 複数の活動のかんばんルールの作成
 description: この手順では、生産フローの複数の活動を含むかんばんルールを作成する方法を示します。
-author: ChristianRytt
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 828b01fbb3b94b1fcb9fe8a565b1191a4f4bf630
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f55034f4f0557023ce0c659c1e8258214cf8bfa3
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829117"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569242"
 ---
 # <a name="create-a-kanban-rule-for-multiple-activities"></a>複数の活動のかんばんルールの作成
 

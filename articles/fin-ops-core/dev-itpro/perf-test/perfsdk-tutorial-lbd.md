@@ -2,26 +2,19 @@
 title: オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 description: このトピックでは、パフォーマンス ソフトウェア開発キット (SDK) を使用して、オンプレミス環境でマルチユーザー負荷テストを実行する方法について説明します。
 author: hasaid
-manager: AnnBe
 ms.date: 03/22/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
-ms.openlocfilehash: e8d19c22e3bb765ff97a69a862d46a020cec2564
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 767ba3e95aba22dc392e21fdce35b9a204a17fdd
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679234"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087642"
 ---
 # <a name="performance-sdk-and-multiuser-testing-in-on-premises-environments"></a>オンプレミス環境でのパフォーマンス SDK およびマルチユーザー テスト
 
@@ -46,7 +39,7 @@ ms.locfileid: "4679234"
 
     - Microsoft Visual Studio Enterprise またはそれ以降のバージョンがインストールされています。
     - パフォーマンス SDK をインストールします。 (SDK は K:\\PerfSDK\\PerfSDKLocalDirectory にある可能性があります。 ただし、環境によっては C:\\PerfSDK のような別の場所にある可能性があります。)
-    - オンプレミス環境は、Web ブラウザーでアクセスできます。 (オンプレミス環境と同じドメインに開発仮想マシン [VM] が、またはオンプレミス環境にパブリックに登録済みのドメイン名がある可能性があります。)
+    - オンプレミス環境は、Web ブラウザーでアクセスできます。 (オンプレミス環境と同じドメインに開発仮想マシン [VM]が、またはオンプレミス環境には、パブリックに登録済みのドメイン名がある場合があります。)
 
 ## <a name="create-a-single-user-c-test-from-an-xml-recording"></a>XML 記録からシングル ユーザー C# テストを作成する
 
@@ -59,7 +52,7 @@ ms.locfileid: "4679234"
 3. **Dynamics 365** &gt; **アドイン** &gt; **記録から C# パフォーマンス テストを作成** を選択します。
 4. **タスクの記録をインポート** ダイアログ ボックスで、必要な詳細を入力し、**インポート** を選択します。
 
-    [![インポート タスク記録 ダイアログ ボックス](./media/perf103a.png)](./media/perf103a.png)
+    [![インポート タスク記録 ダイアログ ボックス。](./media/perf103a.png)](./media/perf103a.png)
 
     C# テストは、選択したプロジェクトに対して生成されたフォルダーに生成されます。
 
@@ -73,12 +66,12 @@ ms.locfileid: "4679234"
 
 1. Microsoft Windows のコントロール パネルで、**システムとセキュリティ**  &gt; **システム** &gt; **システムの詳細設定** を選択します。 **TestRoot** 環境変数が PerfSDK フォルダーのパスに設定されていることを確認します。
 
-    [![TestRoot 環境変数](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
+    [![TestRoot 環境変数。](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
 2. [https://selenium-release.storage.googleapis.com/index.html?path=2.42/](https://selenium-release.storage.googleapis.com/index.html?path=2.42/) から、**selenium-dotnet-strongnamed-2.42.0.zip** および **IEDriverServer\_Win32\_2.42.0.zip** ファイルをダウンロードし、ファイルを抽出します。
 3. 動的リンク ライブラリ (DLL) を、**selenium-dotnet-strongnamed-2.42.0.zip\net40** フォルダから **PerfSDK\\Common\\External\\Selenium** フォルダにコピーします。 **IEDriverServer.exe** を **IEDriverServer\_Win32\_2.42.0.zip** から **PerfSDK\\Common\\External\\Selenium** フォルダーにもコピーします。
 
-    [![PerfSDK\Common\External\Selenium フォルダーにある DLL](./media/perf103d.png)](./media/perf103d.png)
+    [![PerfSDK\Common\External\Selenium フォルダーにある DLL。](./media/perf103d.png)](./media/perf103d.png)
 
 4. テストの認証に使用する証明書を生成します。 証明書ファイルを生成するには、管理者として [コマンド プロンプト] ウィンドウを開き、次のコマンドを実行します。 プライベート キーのパスワードを要求するメッセージが表示されたら、**なし** を選択します。
 
@@ -208,7 +201,7 @@ ms.locfileid: "4679234"
 
 7. Service Fabric Explorer では、AOS ノードのための **コード** パッケージを検索し、省略記号ボタン (**...**) を選択し、アプリケーションを再起動させるため **再起動** を選択します。
 
-    ![Service Fabric Explorer から Finance and Operations の再起動](./media/ServiceFabricExplorerRestart.png)
+    ![Service Fabric Explorer から Finance and Operations を再起動します。](./media/ServiceFabricExplorerRestart.png)
 
 ### <a name="run-the-single-user-test"></a>単一ユーザー テストを実行
 
@@ -221,7 +214,7 @@ ms.locfileid: "4679234"
     }
     ```
 
-    [![PurchaseReq.cs でコメント アウトされた行](./media/perf103e.png)](./media/perf103e.png)
+    [![PurchaseReq.cs でコメント アウトされた行。](./media/perf103e.png)](./media/perf103e.png)
 
 2. **テスト** &gt; **テスト設定** を選択し、**既定のプロセッサ アーキテクチャ** フィールドを **x64** に設定して、ソリューションをビルドします。
 3. **テスト** &gt; **Windows** &gt; **テスト エクスプローラー** を選択してテストの一覧を表示します。
@@ -303,7 +296,7 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
         - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
         - C:\\PerfSDK\\ Visual Studio Online\\
 
-        [![フィールドを配置するための追加ファイルおよびディレクトリ](./media/PerfSDKOnlineTestSettings.PNG)](./media/PerfSDKOnlineTestSettings.PNG)
+        [![フィールドを配置するための追加ファイルおよびディレクトリ。](./media/PerfSDKOnlineTestSettings.PNG)](./media/PerfSDKOnlineTestSettings.PNG)
 
         > [!NOTE]
         > PerfSDK フォルダーが異なっている場合があります。
@@ -312,15 +305,15 @@ UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
 9. **ホスト** タブについて、**64 ビット コンピューターで 64 ビット プロセスのテストを実行** を選択します。
 10. テストを実行するには、**SampleLoadTest.loadtest** ファイルを開き、**負荷テストを実行** を選択します。
 
-    [![負荷テストの実行](./media/perf103u.png)](./media/perf103u.png)
+    [![負荷テストを実行する。](./media/perf103u.png)](./media/perf103u.png)
 
     テストの実行が終了したら、トランザクションの結果を示す概要が表示されます。 次に例を示します。
 
-    [![トランザクションの結果](./media/perf103v.png)](./media/perf103v.png)
+    [![トランザクションの結果。](./media/perf103v.png)](./media/perf103v.png)
 
 11. テスト コント ローラーとテスト シナリオのさまざまな指標を表示するには、**グラフ** ビューに切り替えます。
 
-    [![グラフ 表示](./media/perf103w.png)](./media/perf103w.png)
+    [![グラフ表示。](./media/perf103w.png)](./media/perf103w.png)
 
     > [!NOTE]
     > テストの実行中、システムに関する情報はこのビューで利用することができません。 この情報にアクセスするには、Microsoft Dynamics Lifecycle Services (LCS) を使用して、AOS マシンの CPU およびメモリ使用量を監視する必要があります。 または、AOS マシンに直接 perfmon を設定して、Microsoft Azure ポータルを設定し、Microsoft SQL Server データベース トランザクションの単位 (DTU) の使用を監視することができます。
@@ -367,7 +360,7 @@ Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc427181
 
 - CloudEnvironment.Config および wif.config ファイルにコピーした証明書の拇印には、非表示の Unicode 文字が含まれています。 拇印に非表示の Unicode 文字が含まれているかどうかを確認するには、Unicode コード コンバータに貼り付けて、**HTML/XML** フィールドに余分な文字が表示されているかどうかを確認します。 たとえば、[https://r12a.github.io/apps/conversion/](https://r12a.github.io/apps/conversion/) で使用可能な Unicode コンバーターを使用できます。
 
-    ![Unicode コードの変換](./media/sdk_unicode_code_converter.jpg)
+    ![Unicode コードの変換。](./media/sdk_unicode_code_converter.jpg)
 
 - 証明書が AOS マシンに正しくインストールされていません。 AOS マシンで証明書が見つかることを確認するには、次の Windows PowerShell スクリプトを実行します。
 
@@ -380,7 +373,7 @@ Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc427181
 
 - 負荷テストを実行するときにこの問題が発生した場合、セットアップ スクリプトが .pfx ファイルを正しくインストールしていない可能性があります。 CloudCtuFakeACSInstall.cmd ファイルに指定されているパスワードが証明書が作成されたときに設定されたパスワードと一致していることを確認します。
 
-    ![CloudCtuFakeACSInstall.cmd ファイルのパスワード](./media/set_cloudctufakeacsinstall.jpg)
+    ![CloudCtuFakeACSInstall.cmd ファイルのパスワード。](./media/set_cloudctufakeacsinstall.jpg)
 
 ### <a name="no-endpoint-is-listening"></a>リッスンしているエンドポイントはありません
 
@@ -419,7 +412,7 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 
 - CloudEnvironment.Config ファイルで **SelfMintingAdminUser** として指定されたユーザーはシステム管理者ロールを持っている必要があります。 この問題は、**SelfMintingAdminUser** として指定されたユーザーにシステム管理者の役割が割り当てられていない場合に発生します。 適切なユーザーが指定されていることを確認するには、エンドポイントにサインインし、ユーザーのロールを表示します。
 
-    ![管理者ユーザー](./media/sdk_admin.png)
+    ![管理者ユーザー。](./media/sdk_admin.png)
 
 - 正しくない **NetworkDomain** 値が CloudEnvironment.Config ファイルで **SelfMintingAdminUser** として指定されているユーザーに指定されました。 オンプレミス配置の **AXDB** データベースに対して次の SQL クエリを実行することにより、正しい値を見つけることができます。
 
@@ -485,7 +478,7 @@ System.TypeInitializationException: System.TypeInitializationException: The type
 
 ファイルが欠落している場合は、テストの設定で配置項目に追加します。
 
-![テスト設定](./media/test-settings.png)
+![テスト設定。](./media/test-settings.png)
 
 ### <a name="interactiveclientid-wasnt-specified-in-the-settings"></a>InteractiveClientId は設定で指定されていませんでした
 
@@ -545,3 +538,6 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 #### <a name="solution"></a>ソリューション
 
 この問題を解決する修正プログラムが利用可能です。 Microsoft サポート技術情報 (KB) 番号は 4095640 です。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

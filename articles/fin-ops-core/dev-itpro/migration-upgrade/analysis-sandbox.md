@@ -1,12 +1,10 @@
 ---
 title: 'AX 2012 からのアップグレード: 分析のためのデモ環境の展開'
-description: このトピックでは、Microsoft Dynamics AX 2012 から Finance and Operations にアップグレードするためのプロジェクトの解析フェーズ中に、デモ環境を展開する理由および方法を説明します。
+description: このトピックでは、Microsoft Dynamics AX 2012 から Finance and Operations にアップグレードする分析フェーズ中に、デモ環境を配置する方法について説明します。
 author: tariqbell
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: e640a0ec0781d14a71336822333132f809c74967
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5fbf2eaa0e0e508894da5de6359c221768591c326800efdb600dfbbba916e394
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680458"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765080"
 ---
 # <a name="upgrade-from-ax-2012---deploy-a-demo-environment-for-analysis"></a>AX 2012 からのアップグレード: 分析のためのデモ環境の展開
 
@@ -36,3 +34,6 @@ ms.locfileid: "4680458"
 ライセンスをまだ購入しておらず、無料トライアルを使用している場合は、 [デモ環境の配置](../deployment/deploy-demo-environment.md) の手順に従い、自分で持ち込む Microsoft Azure サブスクリプションにデモ環境を配置できます。
 
 ライセンスを既に購入している場合、Microsoft Dynamics Lifecycle Services (LCS) で特殊なタイプのプロジェクト (実装プロジェクト) を構成するためのリンクを受け取ります。 実装プロジェクトにより、開発者/テスト環境とサンドボックス環境を配置できます。 このタイプの環境の配置の詳細については、[AX 2012 アップグレード - サンドボックス環境でのデータ アップグレード](upgrade-data-sandbox.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

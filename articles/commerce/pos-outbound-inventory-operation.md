@@ -2,11 +2,9 @@
 title: POS の出庫在庫操作
 description: このトピックでは、販売時点管理 (POS) の出庫在庫操作の機能について説明します。
 author: hhaines
-manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 850d1eba3675ffe04f9abff7a892d3dc661d338e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237825"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581140"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>POS でのアウトバウンド在庫操作
 
@@ -73,7 +71,7 @@ Microsoft Dynamics 365 Commerce バージョン 10.0.10 またはそれ以降で
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>前提条件: 入庫操作を POS 画面レイアウトに追加する
 
-組織で出庫操作機能を使用する前に、1 つ以上の [POS 画面レイアウト](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts)に対して **出庫操作** の POS 操作を構成する必要があります。 新しい操作を実稼働環境に配置する前に、それを完全にテストして、使用できるようにユーザーをトレーニングしておく必要があります。
+組織で出庫操作機能を使用する前に、1 つ以上の [POS 画面レイアウト](/dynamics365/unified-operations/retail/pos-screen-layouts)に対して **出庫操作** の POS 操作を構成する必要があります。 新しい操作を実稼働環境に配置する前に、それを完全にテストして、使用できるようにユーザーをトレーニングしておく必要があります。
 
 ## <a name="overview"></a>概要
 
@@ -118,7 +116,7 @@ POS アプリケーションから出庫操作を開始すると、リスト ペ
 
 ### <a name="over-delivery-shipping-validations"></a>超過配送の検証
 
-検証は、ドキュメント明細行の入荷プロセス中に行われます。 これには、超過配送の検証が含まれます。 ユーザーが発注書で注文されたよりも多くの在庫を受け取ろうとしても、超過配送が設定されていないか、受け取った数量が発注書明細行に設定された超過配送許容値を超えている場合、ユーザーにはエラーが表示されます。超過した数量を受け取ることはできません。
+検証は、ドキュメント明細行のフルフィルメント プロセス中に行われます。 これには、超過配送の検証が含まれます。 ユーザーが移動オーダーで注文したよりも多くの在庫を出荷しようとしても、超過配送が設定されていないか、出荷された数量が移動オーダー明細行に設定された超過配送許容値を超えている場合、ユーザーにはエラーが表示され、超過した数量を出荷することはできません。
 
 ### <a name="underdelivery-close-lines"></a>過少配送のクローズ ライン
 

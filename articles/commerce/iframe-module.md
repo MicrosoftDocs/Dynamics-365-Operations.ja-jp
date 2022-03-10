@@ -2,7 +2,7 @@
 title: IFRAME​​ モジュール
 description: このトピックでは、iframe モジュールについて取り上げ、Microsoft Dynamics 365 Commerce でサイトのページに追加する方法を説明します。
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7b397b91d1b8a45347ef2d05f42fb7c610ab3912
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797073"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754017"
 ---
 # <a name="iframe-module"></a>iframe モジュール
 
@@ -37,7 +37,7 @@ iframe モジュールにはターゲットの URL が必要となります。 �
 
 以下の画像は、サイトページに外部動画を表示する iframe モジュールの例です。
 
-![外部動画を表示する iframe モジュールの例](./media/ecommerce-iframe.PNG)
+![外部動画を表示する iframe モジュールの例。](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>iframe モジュールのプロパティ
 
@@ -66,7 +66,10 @@ iframe モジュールをページに追加して外部動画を表示するに�
 1. 必要に応じて、 **ヘッダー** や **高さ** などのプロパティを設定します。
 1. **保存** を選択し、 **編集の完了** を選択してページにチェックインし、**発行** を選択して公開します。
 1. ご利用のサイトのマーケティング ページに移動します。 動画が iframe モジュールでレンダリングされていることが確認できます。
- 
+
+> [!NOTE]
+> iFrame モジュールには外部コンテンツがホストされているため、サイトの作成者は、iFrame モジュール内でホストされているコンテンツが、それぞれの市場のコンテンツ制限ポリシーに違反していないように確認する必要があります。 iFrame モジュールを使用するページにコンテンツ違反がある場合、サイト作成者は、サイト ビルダーでページを開き、iFrame モジュール スロットで **モジュールの削除** を選択した後、ページを保存および再公開することで、iFrame モジュールを削除できます。
+
 ## <a name="additional-resources"></a>追加リソース
 
 [モジュール ライブラリの概要](starter-kit-overview.md)

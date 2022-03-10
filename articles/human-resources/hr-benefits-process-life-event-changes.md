@@ -1,31 +1,33 @@
 ---
-title: ライフ イベントの変更を処理
-description: ライフ イベント変更における Microsoft Dynamics 365 Human Resourcesのライフ イベント 変更の処理を行います。
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: ライフ イベントの変更の処理
+description: このトピックでは、Microsoft Dynamics 365 Human Resources でライフ イベントの変更を処理する方法について説明します。
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39d1e94347809a1756fc4f66e5edc345c70eaf39
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cb894d9886c095d760efe66abcf773a975a99caa
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419322"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067607"
 ---
-# <a name="process-life-event-changes"></a>ライフ イベントの変更を処理
+# <a name="process-life-event-changes"></a>ライフ イベントの変更の処理
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 2 つのライフ イベント変更における Microsoft Dynamics 365 Human Resourcesのライフ イベント 変更の処理:
 
@@ -52,3 +54,6 @@ ms.locfileid: "4419322"
    4. **OK** を選択します。 設定したパラメータで処理が実行されます。
 
 4. **OK** を選択します。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

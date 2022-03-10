@@ -1,7 +1,7 @@
 ---
 title: 製品バリアント番号と名前の分類
 description: このトピックでは、固定形式 [製品マスター番号 - コンフィギュレーション - サイズ - 色 - スタイル] を置換するために製品番号の分類を設定する方法を説明します。
-author: roxanadiaconu
+author: t-benebo
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 220104
 ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: edab3420cbd39539358c03fe4d6b3646433f8ec5
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 14ea9bb5afe7b05f1f0392fde523a95a04a6e2ad
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190163"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569700"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>製品バリアント番号と名前の分類
 

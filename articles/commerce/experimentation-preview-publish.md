@@ -2,11 +2,9 @@
 title: 実験のプレビューと発行
 description: このトピックでは、Dynamics 365 Commerce から実験をプレビューおよび公開する方法について説明します。
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7b35af35f5d0347192ed94bed51dfd2484cfa481
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 41957befe109102aaa7d3a5783b54f96824dfe76a25ab787f94afc778c08fca5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238585"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740386"
 ---
 # <a name="preview-and-publish-an-experiment"></a>実験のプレビューと発行
 
 このトピックでは、[実験を接続してバリエーションを編集](experimentation-connect-edit.md) した後、Dynamics 365 Commerce で実験をプレビューして公開する方法について説明します。 次の図は、Dynamics 365 Commerce の電子商取引 web サイトでの実験の設定と実行に関連するすべての手順を示しています。 追加の手順については、個別のトピックで説明します。
 
-[ ![実験ユーザー体験 - プレビューと公開](./media/experimentation_preview_publish.svg)](./media/experimentation_preview_publish.svg#lightbox)
+[ ![実験ユーザー体験 - プレビューと公開。](./media/experimentation_preview_publish.svg)](./media/experimentation_preview_publish.svg#lightbox)
 
 ## <a name="preview-your-experiment-variations"></a>実験のバリエーションをプレビューする
 バリエーションをプレビューして、希望どおりに表示されるまで編集を続けることができます。

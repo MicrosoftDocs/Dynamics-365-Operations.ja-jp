@@ -2,11 +2,9 @@
 title: "\"類似したルックを買う\" 推奨を有効にする"
 description: このトピックでは、Microsoft Dynamics 365 Commerce で "同じような商品を探す" 製品推奨製品を有効にする方法について説明します。
 author: bebeale
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d0b3585ce326e47b119b3f6c41436b9e6494ec87
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5478095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722003"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>"同じような商品を探す" 推奨事項の有効化
 
@@ -70,7 +68,7 @@ Commerce本社で"同様のスタイルを探す" 推奨機能を有効にする
 
 次の図は、Commerce本社の **機能管理** ページの **類似したスタイルを探す** 機能を示しています。
 
-![次の図は、Commerce 本社の [機能管理] ページの [類似したスタイルを探す] 機能を示しています。](./media/enableshopsimilarlooks.png)
+![次の図は、Commerce 本社の機能管理ページの類似したスタイルを探す機能を示しています。](./media/enableshopsimilarlooks.png)
 
 上記のタスクが完了すると、POS ターミナルは、**類似した製品を探す** パネルで自動的に拡張されます。 **詳細を表示** を選択すると、POS 端末のユーザーは、さらに絞り込むことができる、専用の "類似したスタイルを探す" ページに移動できます。
 
@@ -90,7 +88,7 @@ Commerce サイト ビルダーを使用することで、**類似したスタ�
 
 次の図は、サイト ビルダーの PDP 例上の **類似したスタイルを探すリンクを有効にする** チェック ボックスと **類似したスタイルを探す** ボタンを示しています。
 
-![サイト ビルダーの PDP 上で、[類似したスタイルを探すリンク] チェック ボックスと [類似したスタイルを探す] ボタンを有効化します。](./media/SSLecomtooling.png)
+![サイト ビルダーの PDP 上で、類似したスタイルを探すリンク チェック ボックスと類似したスタイルを探すボタンを有効化します。](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>追加リソース
 

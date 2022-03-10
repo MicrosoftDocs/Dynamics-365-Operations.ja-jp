@@ -1,12 +1,10 @@
 ---
 title: 仕入先ワークフロー
 description: 仕入先情報を変更し、それを承認するワークフローを使用します。
-author: mikefalkner
-manager: annbe
+author: sunfzam
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1fad41fa4fb3562ab94adde522d3899271c85467
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 48d81c727de29a285e5e33672e8f6d2eccef6249
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979167"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753925"
 ---
 # <a name="vendor-workflow"></a>仕入先ワークフロー
 
@@ -60,3 +58,6 @@ ms.locfileid: "4979167"
     ページのステータスが **変更の承認待ち** に変わります。
 
 ワークフローは、標準的なワークフロー プロセスに従います。 承認者は **仕入先** ページに転送され、そこで **提案済みの変更** ページの変更内容を確認してから **ワークフロー \> 承認** を選択してワークフローを承認します。 すべての承認が完了すると、フィールドは提示した値に更新されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

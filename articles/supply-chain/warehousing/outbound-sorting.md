@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3c576209a86f776ac424f7fb9f2b606bea774a67
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 004224090d8244028b6df7f32e1853ad60371cea
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828397"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575198"
 ---
 # <a name="outbound-sorting"></a>アウトバウンド ソーティング
 

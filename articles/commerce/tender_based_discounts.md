@@ -2,16 +2,13 @@
 title: 支払/入金ベースの割引
 description: このトピックでは、小売業者が特定の支払/入金タイプに対する割引を構成できるようにする機能の概要を示します。
 author: bebeale
-manager: AnnBe
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderDiscount
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 4be0c9a6f0a32016e07b8e31d0aaff44b4a29623
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 52b9510b2c22157aec27b865115273064bb0e803443306ea20468b93a2ea3ca7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4413867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719468"
 ---
 # <a name="tender-based-discounts"></a>支払/入金ベースの割引
 
@@ -72,3 +69,6 @@ Microsoft Dynamics 365 Commerce では、小売業者は、顧客が優先支払
 
 > [!NOTE]
 > **すべての割引を禁止** のコンフィギュレーションが **はい** に設定されている場合、製品に割引は適用されません。 非偶数の支払/入金ベースの割引は適用されません。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

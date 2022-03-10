@@ -1,12 +1,10 @@
 ---
 title: 固定資産の統合
 description: 固定資産は、一般会計、在庫管理、売掛金勘定、および買掛金勘定と統合できます。 また、固定資産を発注書と統合するように設定することもできます。
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3501
 ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 145fb91ad167c3201a5516e7115a9a401bb204c6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3e53d171ba0b9be7bbfffa25c27bd21fe036acee
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994943"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674778"
 ---
 # <a name="fixed-assets-integration"></a>固定資産の統合
 
@@ -30,8 +28,7 @@ ms.locfileid: "4994943"
 
 固定資産は、一般会計、在庫管理、売掛金勘定、および買掛金勘定と統合できます。 また、固定資産を発注書と統合するように設定することもできます。
 
-<a name="general-ledger"></a>一般会計
---------------
+## <a name="general-ledger"></a>一般会計
 
 一般会計では、すべての固定資産の金額は通常、財務報告に必要な複数の主勘定に集計されます。 ただし、**固定資産** ページでは、多くの固定資産レコードを作成できます。 これらのレコードには、取得価格、減価償却、および価額評価などの情報を含めることができます。 固定資産のトランザクションを転記するたびに、該当する主勘定が更新されます。 固定資産の主勘定には常に固定資産の更新金額が表示されます。
 
@@ -94,3 +91,6 @@ ms.locfileid: "4994943"
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

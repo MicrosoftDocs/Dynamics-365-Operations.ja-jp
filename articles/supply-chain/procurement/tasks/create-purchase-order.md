@@ -1,7 +1,7 @@
 ---
 title: 発注書の作成
 description: このトピックでは、手動での注文書の作成方法を説明します。
-author: kamaybac
+author: Henrikan
 ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventDimParmFixed
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4fca62bcfc1d6e15c8882bed32b82b63eb4c1666
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: be4e4a89c5341fd683a0a022ad7c2d4bcbd72981
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812305"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579523"
 ---
 # <a name="create-a-purchase-order"></a>発注書の作成
 

@@ -2,7 +2,7 @@
 title: メキシコ用電子請求の使用を開始する
 description: このトピックでは、メキシコ向けの電子請求の使用を開始するにあたっての情報を提供します。
 author: gionoder
-ms.date: 09/22/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 26091a068ed15ec9ff14c9194c3e0e0ad0779351
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
+ms.sourcegitcommit: 385fc4e9c641b43734ddb030893904489361af7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6344785"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881594"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>メキシコ用電子請求の使用を開始する
 
@@ -35,7 +35,15 @@ ms.locfileid: "6344785"
 
 ## <a name="prerequisites"></a>必要条件
 
-このトピックの手順を実行する前に、 [電子請求の使用を開始する](e-invoicing-get-started.md)に記載の手順を完了する必要があります。
+このトピックの手順を実行する前に、[電子請求書発行サービスの運用を開始する](e-invoicing-get-started-service-administration.md)と[電子請求書を始める](e-invoicing-get-started.md)に記載の手順を完了する必要があります。
+
+## <a name="set-up-the-cadena-xslt"></a>Cadena XSLT の設定
+
+CFDI 処理のグローバル化機能に Cadena XSLT スキーマを追加するには、次の手順を実行します。
+
+1. [SAT Web サイト](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt)から スキーマをダウンロードします。
+2. スキーマを ZIP ファイルに圧縮します。
+3. 新しいコンテナ用にサービス環境に設定した Azure Storage アカウントに xslt ファイルを保存します。
 
 ## <a name="rcs-setup"></a>RCS の設定
 
@@ -127,6 +135,17 @@ CFDI 請求書の取り消しを送信するには、**取り消し** 機能と 
 
 > [!NOTE]
 > **取り消し** と **取り消し申請** 機能設定で使用する **メキシコ向け PAC サービス アクションの呼び出し** の URL を更新するには、同じ手順を使用します。
+
+### <a name="set-up-the-path-for-the-cadena-xlst-schema"></a>Cadena XLST スキーマのパスを設定する
+
+1. **機能バージョン設定** ページの **変数** タブで、変数名 **DigitalSignatureXSLT** を選択します。
+2. **値** フィールド: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
+   
+    場所: <RelativePath> = フォルダ\\フォルダ\\ファイル名とダブル バックスラッシュ、ContainerName はサービスに使用されるコンテナを表す必要があります。
+   
+    変数の例は次のようになります:
+    
+    {"path":"xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\dev\\cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
 
 ## <a name="assign-the-draft-version-to-an-e-invoicing-environment"></a>電子請求書の環境に下書きのバージョンを割り当てる
 

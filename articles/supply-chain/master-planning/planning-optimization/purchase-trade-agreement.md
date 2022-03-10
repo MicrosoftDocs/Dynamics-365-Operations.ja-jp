@@ -2,11 +2,9 @@
 title: 購買売買契約を使用したマスター プラン
 description: このトピックでは、計画の最適化で計画オーダーの仕入先やリードタイムを、購買契約書に記載されている最高価格またはリードタイムに基づいて検出する方法について説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d8d5b8c7ac5da9c68926d7fbb4f37b81b56665cb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 10b4f9f45899b808bd0baa73974a173cf120aa6c3fd33e10d0d79a59614f1f70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264725"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757761"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>購買売買契約を使用したマスター プラン
 
@@ -69,7 +67,7 @@ ms.locfileid: "5264725"
 1. 各関連製品に対してこの手順を繰り返します。
 
 > [!NOTE]
-> 購買売買契約明細行の通貨は、選択した仕入先の通貨と一致する必要があります。 マスター プランには、通貨が仕入先の通貨と一致する購買売買契約明細行の情報のみが含まれます。
+> 計画の最適化では複数通貨の購買売買契約をサポートします。 **最小リード タイム** オプションを使用して売買契約を検索する際に、為替レートが売買契約明細行の通貨と法人の会計通貨の間で為替レートが定義されている場合、システムでは異なる通貨での売買契約明細行が考慮されます。 それ以外の場合は、売買契約明細行が無視され、マスター プラン中にエラーが表示されます。 したがって、 プランには、価格を会計通貨に換算できる、関連するすべての購買売買契約明細行からの情報が含まれます。 購買売買契約明細行の価格換算時には、丸めルールが考慮されないので注意が必要です。
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>計画の最適化によって仕入先とリードタイムを検索する方法の例
 

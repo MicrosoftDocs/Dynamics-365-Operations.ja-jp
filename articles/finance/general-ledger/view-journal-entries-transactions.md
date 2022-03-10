@@ -2,11 +2,9 @@
 title: 仕訳入力およびトランザクションの表示
 description: この記事は、仕訳入力およびトランザクションを表示するためのさまざまな方法を説明します。
 author: aprilolson
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransVoucher
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1875911695b1bde0b5ce4f969ad7a0c88717dc6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 673d61868d863568ae7613552d95e3fbadd66d2b4072d71315ab43660a8d1866
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234144"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731455"
 ---
 # <a name="view-journal-entries-and-transactions"></a>仕訳入力およびトランザクションの表示
 

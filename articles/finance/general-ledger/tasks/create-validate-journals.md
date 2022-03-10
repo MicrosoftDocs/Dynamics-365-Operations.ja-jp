@@ -1,27 +1,24 @@
 ---
 title: 仕訳帳の作成および検証
 description: この手順では、仕訳帳と仕訳帳明細行を作成し、検証します。
-author: ryansandness
-manager: AnnBe
+author: panolte
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ac70a6fd52a47e5edbdd21145a47c925256fa71
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 8775b5f9b3c1cd2bb65c674b00ddbccdda64f28fff8534340ec45ad0080bf528
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646314"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725053"
 ---
 # <a name="create-and-validate-journals"></a>仕訳帳の作成および検証
 
@@ -43,3 +40,6 @@ ms.locfileid: "4646314"
 12. **転記** をクリックします。
 13. **伝票** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c3496d43fa3791f765abfb1eb25c45f1f21b972f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573012"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103666"
 ---
 # <a name="putaway-clusters"></a>プットアウェイ クラスター
 
@@ -25,12 +25,9 @@ ms.locfileid: "7573012"
 
 プットアウェイ クラスターには、複数のライセンス プレートを同時に選択し、異なる場所にある複数のライセンス プレートを使用する方法が用意されています。 このプロセスは、*ミルク ラン* と呼ばれます。 プットアウェイ クラスターは、ライセンス プレートが在庫のパレット数が少ない小売業の場合に非常に役立ちます。 
 
-## <a name="turn-on-the-cluster-putaway-feature"></a>クラスター プットアウェイ機能をオンにする
+## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>クラスター プットアウェイ機能をオンまたはオフにする
 
-この機能を使用するには、システム上で有効にする必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 この機能は、次のようにして表示されます。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *クラスター プットアウェイ機能*
+このトピックで説明する機能を使用するには、システムの *クラスター プットアウェイ機能* を有効にする必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *クラスター プットアウェイ機能* を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="setup-for-the-example-scenario"></a>サンプル シナリオで設定する
 

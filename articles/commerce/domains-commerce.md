@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022839"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733994"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のドメイン
 
@@ -38,7 +38,7 @@ ms.locfileid: "6022839"
 
 次の図は、**サポートされているホスト名** ボックスが強調表示された LCS E コマース プロビジョニング画面を示しています。 
 
-![**サポートされているホスト名** ボックスが強調表示された LCS E コマース プロビジョニング画面](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![**サポートされているホスト名** ボックスが強調表示された LCS E コマース プロビジョニング画面。](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 プロビジョニングが既に行われている場合は、サービス要求を作成して環境にドメインを追加できます。 LCS でサービス要求を作成するには、環境内で **サポート \> サポートの問題** に移動し、**インシデントの送信** を選択します。
 
@@ -56,7 +56,7 @@ e コマース環境のプロビジョニング後、サイトを作業用 URL �
 
 次の図は、サイト ビルダーで初めてサイトにアクセスするときの、"default" という名前のサイトの **サイトの設定** ダイアログ ボックスを示しています。
 
-![**サイトの設定** ダイアログ ボックス](./media/Domains_SetupyoursiteScreen.png)
+![**サイトの設定** ダイアログ ボックス。](./media/Domains_SetupyoursiteScreen.png)
 
 **ドメインの選択** ボックスを使用すると、LCS でサイトに用意されている、サポートされているホスト名の 1 つをサイト ビルダーでサイトに関連付けることができます。
 
@@ -79,11 +79,11 @@ e コマース環境のプロビジョニング後、サイトを作業用 URL �
 
 次の図は、URL パスの例が強調表示されたサイト ビルダーの **新しい URL** ダイアログ ボックスを示しています。 
 
-![サイト ビルダーの **新しい URL** ダイアログ ボックス](./media/Domains_PageSetup2a.png)
+![サイト ビルダーの **新しい URL** ダイアログ ボックス。](./media/Domains_PageSetup2a.png)
 
 次の図は、URL の例が一覧で強調表示されたサイト ビルダーの **URL** ページを示しています。
 
-![ポリシー フローでのユーザー フロー オプションの実行](./media/Domains_URLsInSiteBuilder2a.png)
+![ポリシー フローでのユーザー フロー オプションの実行。](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>サイト ビルダーのドメイン
 

@@ -1,28 +1,26 @@
 ---
 title: Adyen コネクタでオンライン支払手段を保存する
 description: このトピックでは、電子商取引の Adyen コネクタを使用して支払手段を保存する方法を説明します。
-author: rubendel
-manager: AnnBe
+author: BrianShook
 ms.date: 05/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: db8061a743a6e4857d5d090f2b2b065922b3e4c3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0d877c0b2b0da861f4334d76cf141f1e7d91fe3b
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680390"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782116"
 ---
 # <a name="saving-online-payment-instruments-with-the-adyen-connector"></a>オンライン支払手段を Adyen コネクタで保存
 
@@ -55,14 +53,14 @@ ms.locfileid: "4680390"
 - リスト PI 機能と互換性のある支払コネクタ
 - 顧客がその支払プロセッサに保存させたい支払手段に一意の顧客 ID をマッピングする支払プロセッサ
 
-一般的な支払コネクタとソフトウェア開発キット (SDK) の実装方法の詳細については、[IT プロおよび開発者向けのコマース ホームページ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors) にアクセスしてください。
+一般的な支払コネクタとソフトウェア開発キット (SDK) の実装方法の詳細については、[IT プロおよび開発者向けのコマース ホームページ](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors) にアクセスしてください。
 
 ## <a name="setup"></a>セットアップ
 
 リスト PI 機能には次のコンポーネントと設定手順が必要です:
 
-- **電子商取引の統合** – オンライン ストアフロントとコマースの統合が必要です。 電子商取引 SDK の詳細は [電子商取引プラットフォーム ソフトウェア開発キット (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk) を参照してください。
-- **オンライン支払コンフィギュレーション** – Adyen の Dynamics 365 支払コネクタは、そのままでリスト PI をサポートします。 オンライン ストアの支払いを構成する方法については [Adyen の Dynamics 365 支払コネクタ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) を参照してください。 
+- **電子商取引の統合** – オンライン ストアフロントとコマースの統合が必要です。 電子商取引 SDK の詳細は [電子商取引プラットフォーム ソフトウェア開発キット (SDK)](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk) を参照してください。
+- **オンライン支払コンフィギュレーション** – Adyen の Dynamics 365 支払コネクタは、そのままでリスト PI をサポートします。 オンライン ストアの支払いを構成する方法については [Adyen の Dynamics 365 支払コネクタ](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) を参照してください。 
 
     このトピックで説明されている電子商取引の設定手順を完了することに加えて、**オンライン ストア** フォームの支払口座クイック タブの **電子商取引で支払情報の保存を許可する** オプションを **はい** に設定する必要があります。 
 
@@ -78,13 +76,13 @@ ms.locfileid: "4680390"
 
 名前付きユーザー (サインインした顧客) が、チェックアウト プロセスの支払手順に進むとリスト PI 機能を経験します。 名前付きユーザーが初めてチェックアウトしたとき、クレジットカード情報が入力されるセクションに **次回の支払のために保存する** チェック ボックスが表示されます。 
 
-![[次回の支払のために保存する] オプション](../media/Payments/Save_PI.png)
+![次回の支払のために保存するオプション。](../media/Payments/Save_PI.png)
 
 このチェックボックスが選択された場合、支払のために新しいクレジットカードを送信すると、名前付きユーザーの一意の顧客 ID が支払プロセッサに送信され、クレジットカードが安全に保存されてその一意の顧客 ID にマップされます。 
 
 同じ顧客が将来ストアフロントを訪れる際にサインインした場合、チェックアウト時の支払いに同じクレジットカードを選択ができます。 
 
-![以前に保存された支払手段](../media/Payments/Saved_PI.jpg)
+![以前に保存された支払手段。](../media/Payments/Saved_PI.jpg)
 
 ### <a name="order-fulfillment-and-processing"></a>注文のフルフィルメントと処理
 
@@ -104,4 +102,7 @@ ms.locfileid: "4680390"
 
 ## <a name="related-articles"></a>関連記事
 
-- [支払に関するよく寄せられる質問](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [支払に関するよく寄せられる質問](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

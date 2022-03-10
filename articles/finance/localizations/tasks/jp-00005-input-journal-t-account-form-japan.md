@@ -2,11 +2,9 @@
 title: JP-00005 T 勘定フォームでの仕訳帳入力 (日本)
 description: 日本では、仕訳入力には一般的に T 字勘定形式が使用されます。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransDailyTAccount
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7e6f52b13bc10dff80ae0bf3fc970c1b1f88561a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e08bb8f0a8b802af79d23a7eaa8f1ae1e6179ea9bfce321966ba41c4ef6bde7a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4997444"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775055"
 ---
 # <a name="jp-00005-input-journal-in-t-account-form-japan"></a>JP-00005 T 勘定フォームでの仕訳帳入力 (日本)
 
@@ -54,3 +52,6 @@ ms.locfileid: "4997444"
 16. ページを閉じます。
 17. [転記] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: 予算計画データの配賦
 description: このトピックは、Microsoft Dynamics 365 Finance で利用できる配賦方法と、その使用方法ついて説明します。
-author: ShylaThompson
-manager: AnnBe
+author: panolte
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3ce04e8936ace70d83febc6be1e39c210fecfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c6011c4c005a26720fd57caca0075483404f41b4
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210388"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595120"
 ---
 # <a name="budget-planning-data-allocation"></a>予算計画データの配賦
 
@@ -38,28 +36,28 @@ ms.locfileid: "5210388"
 > [!NOTE] 
 > 集約には、親計画で以前に実行された配布またはその他の変更に使用されたシナリオとは異なる一意のシナリオを使用する必要があります。  
 
-[![配賦方法を複数の期間に割り当てる](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+[![配賦方法を複数の期間に割り当てます。](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **複数の期間に割り当て** – 期間割り当てカテゴリを使用して、ソース予算計画シナリオの予算計画明細行を、ターゲット シナリオの期間全域に配賦します。 当初起票額は、期間割り当てカテゴリで定義された割合と日付に基づいて、ターゲット シナリオの複数の明細行に割り当てられます。         
 
-[![分析コード配賦方法への配賦](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
+[![分析コード配賦方法に配賦します。](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **分析コードへの配賦** – 選択した予算配賦条件で定義された割合および財務分析コードに基づいて、ソース予算計画シナリオからターゲット シナリオの 1 つ以上の明細行に予算計画明細行を配賦します。           
 
-![集計チャート](./media/aggregatechart-300x230.png)
+![集計チャート。](./media/aggregatechart-300x230.png)
 **集計** – 関連付けられた (子) 予算計画のソース予算計画シナリオから、親予算計画のターゲット シナリオに予算計画明細行を集計します。 この方法で、上位レベルで統合されるように組織の下位レベルで準備した予算金額が有効になります。          
 
-[![配分チャート](./media/distributechart-300x230.png)](./media/distributechart.png)
+[![配分チャート。](./media/distributechart-300x230.png)](./media/distributechart.png)
 **配分** – 関連付けられた計画の組織単位の財務分析コードに基づいて、親予算計画のソース予算計画シナリオから、関連付けられた (子) 予算計画のターゲット シナリオに予算計画明細行を配分します。 この方法で、さらなるローカライズ レビューのために分配されるよう組織の上位レベルで準備した予算金額が有効になります。           
 
-[![元帳配賦ルール](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
+[![元帳配賦ルール。](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
 **元帳配賦ルールの使用** – 選択された元帳配賦ルールに基づいて、ソース予算計画シナリオからターゲット シナリオに予算計画明細行を分配します。 
 
-[![予算計画からのコピー](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
+[![予算計画からコピーします。](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
 **予算計画からのコピー** – 配分配賦の方法のように、関連する予算計画の明細行に基づいて、ターゲットに予算計画明細行を作成します。 ただし、この方法の場合、ソース予算計画は親である必要はありませんが、予算計画階層の上位になる可能性があります。 この配賦方法は、結合された金額をさらに上位レベルで予算とする場合に役立ち、詳細な確認と調整を行うには組織の下位レベルに転送させると、上位レベルの承認を受けられます。          
 
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>予算計画の配賦方法を使用
 予算計画ページで配賦を実行するには、配賦する明細行を選択し、**予算の配賦** をクリックします。
 
-[![予算配賦ボタン](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
+[![予算配賦ボタン。](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 次に、配賦方法を選択します。 残りのフィールドが選択した方法に基づいて設定されます。 これらのフィールドでは、予算計画データのソースとターゲット、および目標金額が作成される際に指定した係数をソースに掛けられる、バルク調整を簡単にするためのオプションが含まれます。 **計画への追加** オプションも設定できます。 **いいえ** を選択して既存の予算計画明細行を置き換えるか、**はい** を選択して既存の予算計画明細行をそのままにし、配賦済金額の新しい明細行を追加します。
 
@@ -72,7 +70,7 @@ ms.locfileid: "5210388"
 
 最後に、目的のワークフロー ステージで予算計画ステージ配賦の自動化タスクを追加します。 次の例では、2 つの予算計画ステージ配賦 (赤に示されています) がワークフローに挿入されます。
 
-[![予算計画ステージ配賦](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+[![予算計画ステージ配賦。](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
 
 
 

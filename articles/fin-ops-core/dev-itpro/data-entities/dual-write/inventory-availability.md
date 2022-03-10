@@ -1,27 +1,20 @@
 ---
 title: 二重書き込みでの在庫状況
 description: このトピックでは、二重書き込みでの在庫状況の確認方法について説明します。
-author: yijialuan
+author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
-ms.author: riluan
-ms.dyn365.ops.version: ''
+ms.author: ramasri
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 9d9b7970720218fbcf2f512345ade672810440b4
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 989ba6cd26d6e48c24db856fa9bb0bd5d2bae80e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748568"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782532"
 ---
 # <a name="inventory-availability-in-dual-write"></a>二重書き込みでの在庫状況
 
@@ -64,58 +57,12 @@ Sales では、**ATP情報** ボタンが **見積**、**注文**、**請求書*
 - CDS 在庫の手持在庫要求 (msdyn_inventoryonhandrequests)
 
 ## <a name="templates"></a>テンプレート
+
 次のテンプレートを使用して、手持在庫の在庫データを公開します。
 
-Finance and Operations アプリ | Customer Engagement アプリ | 説明 
+Finance and Operations アプリ | Customer Engagement アプリ     | 説明
 ---|---|---
-[CDS 手持在庫エントリ](#145) | msdyn_inventoryonhandentries |
-[CDS 手持在庫要求](#147) | msdyn_inventoryonhandrequests |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a>CDS 在庫の手持在庫エントリー (msdyn_inventoryonhandentries)
-
-このテンプレートは、Finance and Operations アプリと Dataverse 間でデータを同期します。
-
-Finance and Operations フィールド | タイプのマッピング | Customer Engagement フィールド | 既定値
----|---|---|---
-`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
-`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
-`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
-`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
-`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
-`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
-`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
-`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
-`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
-`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
-`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
-`ATPDATE` | = | `msdyn_atpdate` |
-`ATPQUANTITY` | > | `msdyn_atpquantity` |
-`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
-`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
-`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
-`ORDERQUANTITY` | > | `msdyn_orderquantity` |
-`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
-
-###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a>CDS 在庫の手持在庫要求 (msdyn_inventoryonhandrequests)
-
-このテンプレートは、Finance and Operations アプリと Dataverse 間でデータを同期します。
-
-Finance and Operations フィールド | タイプのマッピング | Customer Engagement フィールド | 既定値
----|---|---|---
-`REQUESTID` | = | `msdyn_requestid` |
-`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
-`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
-`ORDERQUANTITY` | < | `msdyn_orderquantity` |
-`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
-`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
-`REFERENCENUMBER` | < | `msdyn_referencenumber` |
-`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
-
-
-
-
-
+[CDS 手持在庫エントリ](mapping-reference.md#145) | msdyn_inventoryonhandentries |
+[CDS 手持在庫要求](mapping-reference.md#147) | msdyn_inventoryonhandrequests |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

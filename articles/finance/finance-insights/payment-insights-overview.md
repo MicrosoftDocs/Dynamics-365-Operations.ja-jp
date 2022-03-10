@@ -1,33 +1,32 @@
 ---
-title: 顧客支払予測 (プレビュー)
+title: 顧客支払予測
 description: このトピックでは、顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、コレクション プロセスを開始したとしても、それ以外の状況を把握することができます。
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/26/2020
-ms.topic: article
+ms.date: 11/03/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f306f9437b78005d8b8aa11f0b6f210ebdd4fd2a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995068"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982042"
 ---
-# <a name="customer-payment-predictions-preview"></a>顧客支払予測 (プレビュー)
+# <a name="customer-payment-predictions"></a>顧客支払予測
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、コレクション プロセスを開始したとしても、それ以外の状況を把握することができます。
 
@@ -55,11 +54,11 @@ ms.locfileid: "4995068"
 
 この機能では、予測支払の集計ビューも提供されます。
 
-[![支払予測の集計ビュー](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![支払予測の集計ビュー。](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 各請求書には期限内支払いの確度が割り当てられます。 期限支払いの確度が 50 パーセント未満の請求書は赤い丸でタグ付けられ、この請求書は回収代行業者からのアクションが必要かもしれないことを示します。
 
-[![支払確度の一覧](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![支払確度の一覧。](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 顧客支払予測機能では、予測を説明するためのコンテキスト情報も提供されます。 この情報には、予測の影響を受けるトップ要素、顧客との取引の現在の状態、および顧客の過去の支払動作に関する詳細が含まれます。
 
@@ -69,12 +68,4 @@ ms.locfileid: "4995068"
 
 従来は、人工知能 (AI) ソリューションを開発および配置することは困難でした。 データ科学者、領域の専門家 (SME)、およびエンジニアのチームが、使用可能な AI ソリューションの作成、開発、展開、および管理を行うために長期間働く必要があります。 顧客支払予測を使用すると、Microsoft Dynamics 365 Finance で AI ソリューションを簡単に導入および使用できるようになります。 Microsoft は、Microsoft AI Builder の上に構築された AI ソリューションをパッケージ化しています。 したがって、ユーザーは、AI ソリューションを 1 回のマウスクリックで配置することにより、インテリジェント予測のメリットを活用することができます。 予測の正確性に満足しない場合は、パワー ユーザーは (ここでも 1 回のクリックで)、AI Builder の拡張機能のエクスペリエンスへと入り、予測生成に使用するフィールドを選択または選択解除できます。 準備が整ったら、モデルを "トレーニング" して変更を公開することができます。 新しくトレーニングしたモデルは、Dynamics 365 Finance で予測を生成するために自動的に選択されます。
 
-## <a name="release-details"></a>リリースの詳細
-
-財務インサイトのパブリック プレビューは、米国、ヨーロッパ、および英国でのデプロイの試行ができます。 Microsoft は、その他の地域へのサポートも段階的に追加しています。
-
-パブリック プレビュー機能は、Tier-2 のサンドボックス環境でのみ有効にすることができます。 サンドボックス環境で作成された設定および AI モデルは、運用環境に移行できない可能性があります。 詳細については、[Microsoft Dynamics 365 プレビューの補足の使用条件](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms) を参照してください。
-
-## <a name="privacy-notice"></a>プライバシー通知
-
-プレビューは (1) Dynamics 365 Finance and Operations サービスを下回るプライバシーおよび少ないセキュリティ対策を使用している場合があり、(2) このサービスのためにサービス レベル アグリーメント (SLA) には含まれておらず、(3) 個人データや、その他の法律上またはコンプライアンス要件の対象となるデータの処理に使用されず、(4) サポートが制限されます。
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

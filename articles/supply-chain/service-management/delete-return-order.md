@@ -1,7 +1,7 @@
 ---
 title: 返品注文の削除
 description: 複数の返品注文を削除するには、返品注文の削除フォームを使用します。
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32e61e76c16c994f463825507629e3af502dbe5d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 450e0d911d9d1e8e2217d258283095525909ccc4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817536"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569098"
 ---
 # <a name="delete-a-return-order"></a>返品注文の削除 
 

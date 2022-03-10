@@ -2,11 +2,9 @@
 title: 特定の製品ライフサイクル状態の製品を除外する
 description: このトピックでは、計画の最適化機能を使用するときに、ライフサイクルの状態に基づいて製品を除外する方法について説明します。
 author: ChristianRytt
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 02c31aa3862df8dabc2b8c065dc3a94877d237f6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 030bdea7c03dd5eb3347c1d43acd1aeabdf566602872dd8ef5aab6d16b06f503
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739038"
 ---
 # <a name="exclude-products-that-have-specific-product-lifecycle-states"></a>特定の製品ライフサイクル状態の製品を除外する
 
@@ -41,3 +39,6 @@ ms.locfileid: "4992423"
 製品ライフサイクルの状態の詳細については、[製品ライフサイクルの状態の概要](../../pim/product-lifecycle.md)を参照してください。
 
 製品ライフサイクルの状態を使用して、製品をマスター プランおよび BOM レベルの計算から製品を除外する手順の詳細については、[マスター プランから製品を除外する製品ライフサイクルの状態を作成](../../pim/tasks/exclude-products-master-planning.md)を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

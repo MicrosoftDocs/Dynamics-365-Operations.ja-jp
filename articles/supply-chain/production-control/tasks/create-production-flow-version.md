@@ -1,26 +1,24 @@
 ---
 title: 生産フロー バージョンの作成
 description: この手順は、生産フローの新規バージョンに焦点を当てています。
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b57dbd2516a25b414193ca76367bd8d5c4a1b298
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5b72d6162edd0ae6ccbfdcfe3e63ecff30528454
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255064"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569263"
 ---
 # <a name="create-a-production-flow-version"></a>生産フロー バージョンの作成
 

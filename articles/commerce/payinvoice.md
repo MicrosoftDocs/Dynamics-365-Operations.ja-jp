@@ -2,11 +2,9 @@
 title: 請求書の支払シナリオを設定する
 description: このトピックでは、請求書の支払に関するさまざまなシナリオに対応できるように、Dynamics 365 Commerce を構成する方法について説明します。
 author: josaw1
-manager: AnnBe
 ms.date: 11/14/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6f818fa552fe5651dc7d56de265fe989c57fa822
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9dc4ff9241cec4033b65f15449c233bdb43233c0dce1ab04a2cd66baf5272a6b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772988"
 ---
 # <a name="set-up-pay-invoice-scenarios"></a>請求書の支払シナリオを設定する
 
