@@ -4,11 +4,41 @@
       items:
         - name: Dynamics 365 Commerce ホーム ページ
           href: index.md
-        - name: 使用開始
+        - name: 新機能および変更された機能
           items:
+            - name: 財務と運用アプリの新機能または変更された機能
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
+            - name: Commerce の新機能および変更された機能
+              items:
+                - name: Commerce の新機能および変更された機能に関するホーム ページ
+                  href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.26 (2022 年 5 月)
+                  href: get-started/whats-new-commerce-10-0-26.md
+                - name: Commerce 10.0.25 (2022 年 4 月)
+                  href: get-started/whats-new-commerce-10-0-25.md
+                - name: Commerce 10.0.24 (2022 年 2 月)
+                  href: get-started/whats-new-commerce-10-0-24.md
+                - name: Commerce 10.0.23 (2022 年 1 月)
+                  href: get-started/whats-new-commerce-10-0-23.md
+            - name: 削除済みまたは非推奨の機能
+              items:
+                - name: 削除済みまたは非推奨の機能に関するホーム ページ
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
+                - name: Finance and Operations の削除済みまたは非推奨の機能
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                - name: Dynamics 365 Commerce の削除済みまたは非推奨の機能
+                  href: get-started/removed-deprecated-features-commerce.md
+            - name: 延期された AX 2012 の機能
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
+            - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
+        - name: 概要
+          items:
+            - name: サービスの説明
+              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
             - name: 購入する前に
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
-            - name: One Version のサービス更新
+            - name: 1 つのバージョンのサービス更新
               items:
                 - name: 1 つのバージョンのサービス更新の概要
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
@@ -52,7 +82,7 @@
                   href: cpe-optional-features.md
                 - name: Dynamics 365 Commerce 評価環境に関してよく寄せられる質問
                   href: cpe-faq.md
-            - name: 配置に関する考慮事項
+            - name: 展開に関する考慮事項
               items:
                 - name: 配置オプション
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/commerce/toc.json
@@ -72,46 +102,16 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce Data Exchange 実装ガイダンス
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: 中国で 21Vianet が運用する Finance and Operations アプリ
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: フランスの Finance and Operations アプリ
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: サポートの利用
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: アップグレードおよび N-1 のサポート
               items:
                 - name: Commerce のアップグレードおよび N-1 のサポート
                   href: dev-itpro/overview-upgrade-n-minus1.md
-                - name: Phased Rollout (N-1) のインストール、構成、切替
+                - name: 段階的なロールアウト (N-1) のインストール、構成、切替
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: 小売チャネル拡張機能を最新の Retail SDK にアップグレード
                   href: dev-itpro/RetailSDK-update.md
-            - name: 新機能および変更された機能
-              items:
-                - name: Finance and Operations アプリの新機能または変更された機能
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
-                - name: Commerce の新機能および変更された機能
-                  items:
-                    - name: Commerce ホーム ページの新機能および変更された機能
-                      href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.19 (2021 年 7 月)
-                      href: get-started/whats-new-commerce-10-0-19.md
-                    - name: Commerce 10.0.18 (2021 年 5 月)
-                      href: get-started/whats-new-commerce-10-0-18.md
-                    - name: Commerce 10.0.17 (2021 年 4 月)
-                      href: get-started/whats-new-commerce-10-0-17.md
-                - name: 削除済みまたは非推奨の機能
-                  items:
-                    - name: 削除済みまたは非推奨の機能のホーム ページ
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
-                    - name: Finance and Operations の削除済みまたは非推奨の機能
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
-                    - name: Dynamics 365 Commerce の削除済みまたは非推奨の機能
-                      href: get-started/removed-deprecated-features-commerce.md
-                - name: 延期された AX 2012 の機能
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
-                - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
             - name: ドキュメント リソース
               items:
                 - name: ヘルプ システム
@@ -128,8 +128,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
                 - name: ビデオ
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-                - name: 用語集
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
             - name: ラーニング カタログ
               items:
                 - name: ラーニング カタログのホームページ
@@ -198,7 +196,7 @@
               items:
                 - name: 実装ライフサイクル管理ホーム ページ
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations アプリのアーキテクチャ
+                - name: 財務と運用アプリのアーキテクチャ
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Microsoft FastTrack
                   href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
@@ -206,9 +204,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
                 - name: 環境計画
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Go Live の準備
+                - name: Go-Live の準備
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Go Live に関するよく寄せられる質問
+                - name: Go-Live に関するよく寄せられる質問
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: サービス要求の送信
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
@@ -240,25 +238,29 @@
                   href: commerce-architecture.md
                 - name: Dynamics 365 Commerce 認証フロー
                   href: arch-auth-flow.md
-                - name: Dynamics 365 Commerceコンポーネント バージョンの管理要件
-                  href: arch-component-versioning.md
-                - name: Commerce Scale Unit アーキテクチャ
+                - name: ヘッドレス コマース アーキテクチャ
                   href: dev-itpro/retail-server-architecture.md
-                - name: ストア内トポロジの選択
+                - name: 店舗内トポロジの選択
                   href: dev-itpro/retail-in-store-topology.md
                 - name: Commerce Data Exchange
                   items:
                     - name: Commerce Data Exchange のベスト プラクティス
                       href: dev-itpro/CDX-Best-Practices.md
-                    - name: Commerce Data Exchange とコマース チャネルのコミュニケーション
+                    - name: Commerce Data Exchange とコマース チャネルの通信
                       href: dev-itpro/define-retail-channel-communications-cdx.md
                     - name: Commerce Data Exchange のトラブルシューティング
                       href: dev-itpro/CDX-Troubleshooting.md
-                - name: Modern POS アーキテクチャ
+                    - name: Commerce Data Exchange パッケージをプライマリ インデックスで並べ替える
+                      href: CDX-package-sort.md
+                - name: Modern POS のアーキテクチャ
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: オンライン ストア発行アーキテクチャ
+                - name: Commerce の店舗テクノロジ スタックを最新化する (ホワイト ペーパー)
+                  href: 'https://www.microsoft.com/download/details.aspx?id=103896'
+                - name: Commerce のオフライン実装とトラブルシューティング
+                  href: dev-itpro/implementation-considerations-offline.md
+                - name: オンライン ストア カタログの公開
                   href: dev-itpro/retail-online-store-publishing-architecture.md
-                - name: Retail Channel Performance Power BI コンテンツ
+                - name: Retail Channel Performance Power BI のコンテンツ
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: 支払アプリケーション データ セキュリティ標準 (PA-DSS) 証明
                   href: dev-itpro/PA-DSS-Certification.md
@@ -292,6 +294,28 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: 新しい Commerce 環境でのシード データの初期化
                   href: enable-configure-retail-functionality.md
+        - name: 実装
+          items:
+            - name: アプリケーション ライフサイクル管理
+              items:
+                - name: Dynamics 365 Commerce コンポーネントのバージョン管理要件
+                  href: arch-component-versioning.md
+            - name: Go-Live および更新の推奨事項
+              items:
+                - name: Go-Live および更新の推奨事項の概要
+                  href: go-live/go-live-overview.md
+                - name: パフォーマンス
+                  items:
+                    - name: 画像の最適化
+                      href: go-live/performance-optimize-images.md
+                    - name: 使用されていないモジュールを除外して JavaScript を削減する
+                      href: go-live/performance-reduce-javascript.md
+            - name: AX 2012 の段階的なロールアウト
+              items:
+                - name: Commerce のアップグレードおよび N-1 のサポート
+                  href: dev-itpro/overview-upgrade-n-minus1.md
+                - name: 段階的なロールアウト (N-1) のインストール、構成、切替ガイド
+                  href: dev-itpro/n-1-installation-configuration.md
         - name: チャネルの設定
           items:
             - name: チャネルの概要
@@ -364,8 +388,12 @@
                   href: channel-setup-retail.md
                 - name: 小売作業者のコンフィギュレーション
                   href: tasks/worker.md
-                - name: Modern Point of Sale (MPOS) および Cloud POS
+                - name: Modern Point of Sale (MPOS)、Cloud POS、Store Commerce
                   items:
+                    - name: Microsoft Dynamics 365 Commerce の Store Commerce アプリ (プレビュー)
+                      href: dev-itpro/store-commerce.md
+                    - name: デバイス管理実装ガイダンス
+                      href: implementation-considerations-devices.md
                     - name: MPOS か Cloud POS かの選択
                       href: MPOS-or-CPOS.md
                     - name: オンラインおよびオフラインの POS 操作
@@ -422,6 +450,18 @@
                           href: set-up-manage-images-retail-mpos.md
                         - name: POS のクライアント イメージ
                           href: pos-image.md
+                        - name: POS で URL を開く
+                          href: open-url-in-pos.md
+                    - name: 支払
+                      items:
+                        - name: ギフト カード
+                          items:
+                            - name: 外部ギフト カードのサポート
+                              href: dev-itpro/gift-card.md
+                    - name: RSAT
+                      items:
+                        - name: Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
+                          href: dev-itpro/pos-rsat.md
                     - name: 店員
                       items:
                         - name: 売上グループを使用した POS でのコミッションの追跡
@@ -454,8 +494,10 @@
                       href: dev-itpro/embed-cc-receipt.md
                 - name: 販売担当者の機能プロファイルの作成
                   href: tasks/configure-functionality-profile-sales-representative.md
-                - name: 小売チャネルの財務分析コードの作成と店舗の値のコンフィギュレーション
+                - name: 小売チャネルの財務分析コードの作成と店舗の値の構成
                   href: tasks/create-financial-dimensions-retail-channels.md
+                - name: eコマース チャネルで一貫した配送モードの処理を有効にする
+                  href: consistent-delivery-mode-handling.md
             - name: オンライン チャネルの設定
               items:
                 - name: オンライン チャネルの設定
@@ -518,8 +560,16 @@
                       href: tasks/configure-credit-card-processing.md
                     - name: 'POS の [期日の変更] ダイアログボックスをスキップする'
                       href: dev-itpro/skip-change-due.md
-                    - name: Adyen 支払コネクタ
-                      href: dev-itpro/adyen-connector.md
+                    - name: Adyen 向け Dynamics 365 Payment Connector
+                      items:
+                        - name: Adyen 向け Dynamics 365 Payment Connector の概要
+                          href: dev-itpro/adyen-connector.md
+                        - name: Adyen 向け Dynamics 365 Payment Connector の設定
+                          href: dev-itpro/adyen-connector-setup.md
+                        - name: Adyen 向け Dynamics 365 Payment Connector に関するよく寄せられる質問
+                          href: dev-itpro/adyen-connector-faq.md
+                        - name: Adyen 向け Dynamics 365 Payment Connector のトラブルシューティング
+                          href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: オンライン支払手段を Adyen コネクタで保存
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Adyen コネクタを使用した強力な顧客認証 (SCA)
@@ -534,6 +584,8 @@
                       href: duplicate-payment-protection.md
                     - name: オムニチャネル支払の概要
                       href: omni-channel-payments.md
+                    - name: 店舗での受け取りに使用できる複数の支払方法
+                      href: dev-itpro/multiple-payments-pickup.md
                     - name: オムニチャネル Commerce 注文支払
                       href: dev-itpro/commerce-payments.md
                     - name: クレジット カード トランザクション データのアーカイブ
@@ -542,13 +594,15 @@
                       href: dev-itpro/cnp-pos.md
                     - name: PayPal 向け Dynamics 365 Payment Connector
                       href: paypal.md
-                    - name: Wallet 支払サポート
+                    - name: ウォレット支払のサポート
                       href: wallets.md
-                    - name: 支払に関してよく寄せられる質問
+                    - name: 店頭会計の支払を強化
+                      href: dev-itpro/enhanced-sca.md
+                    - name: 支払に関する FAQ
                       href: dev-itpro/payments-retail.md
-                - name: 電子メールと通知
+                - name: メールと通知
                   items:
-                    - name: カスタム レイアウトおよびテンプレートを使用するためのレシートの電子メールのコンフィギュレーション
+                    - name: 領収書メールを構成してカスタム レイアウトとテンプレートを利用する
                       href: configure-emailed-receipt-formats.md
                     - name: トランザクションとレシートの電子メールへの QR コードまたはバー コードの追加
                       href: add-qr-code-barcode-email.md
@@ -556,6 +610,8 @@
                   href: dev-itpro/manage-bing-maps.md
                 - name: 顧客集荷の時間スロットの作成と更新
                   href: dev-itpro/pickup-timeslots.md
+                - name: 製品分析コード値を見本として表示するように構成する
+                  href: dev-itpro/dimensions-swatch.md
         - name: 製品とサービスの販売
           items:
             - name: カテゴリ、製品、品揃え
@@ -648,6 +704,8 @@
                   href: tasks/base-price-trade-agreements.md
                 - name: カテゴリの価格決定ルールを使用した売買契約の作成
                   href: tasks/category-pricing-rules-trade-agreements.md
+                - name: 正確な価格と割引の計算を遅延する
+                  href: delayed-price-calculation.md
             - name: 推奨事項
               items:
                 - name: 製品推奨事項の概要
@@ -688,10 +746,18 @@
                   href: opt-in-ratings-reviews.md
                 - name: 評価とレビューの管理
                   href: manage-reviews.md
-                - name: 評価とレビューのコンフィギュレーション
+                - name: 評価とレビューの構成
                   href: configure-ratings-reviews.md
                 - name: 製品評価の同期
                   href: sync-product-ratings.md
+                - name: モデレーターによる評価とレビューの手動公開を有効化する
+                  href: manual-publish-rating-reviews.md
+                - name: 評価とレビューのインポートとエクスポート
+                  href: import-export-reviews.md
+                - name: サービス間認証の構成
+                  href: service-to-service-auth.md
+                - name: 評価とレビューに関するよくあるご質問
+                  href: ratings-reviews-faq.md
             - name: 在庫の管理
               items:
                 - name: 在庫
@@ -742,11 +808,13 @@
                   href: multiple-pickup-modes.md
                 - name: POS での顧客注文集荷の処理
                   href: process-order-pickup-POS.md
+                - name: ゲスト清算の注文検索を有効にする
+                  href: order-lookup-guest.md
             - name: 販売注文
               items:
                 - name: コール センター注文の作成
                   href: tasks/create-call-center-orders.md
-                - name: 配送モードによるトランザクション メールのカスタマイズ
+                - name: 配送方法ごとにトランザクション メールをカスタマイズする
                   href: customize-email-delivery-mode.md
                 - name: POS での配送モードの変更
                   href: POS-change-delivery-mode.md
@@ -764,15 +832,21 @@
                   href: order-fulfillment-pos-setup.md
                 - name: POS での注文通知の表示
                   href: notifications-pos.md
-                - name: 連続プログラムの販売と販売注文の処理
+                - name: 販売継続プログラムと販売注文処理
                   href: tasks/use-continuity-program.md
-                - name: 販売時点管理 (POS) での顧客のチェックイン通知の有効化
+                - name: POS で顧客チェックイン通知を利用する
                   href: enable-customer-check-in.md
-            - name: 返品
+            - name: 返品と払戻
               items:
+                - name: POS で返品を作成する
+                  href: POS-returns.md
+                - name: シリアル番号で管理する製品を POS で返品する
+                  href: POS-serial-returns.md
                 - name: リンクされた払戻
                   href: dev-itpro/linked-refunds.md
-                - name: 店舗の品揃えに含まれていない製品の販売および返品
+                - name: Adyen に対応した Dynamics 365 Commerce Payment Connector でリンク済みの払戻を処理する
+                  href: dev-itpro/unlinked-refunds.md
+                - name: 店舗の品揃えに含まれない製品の販売と返品
                   href: sell-return-outside-assortments.md
                 - name: 返品注文に対する交換のコンフィギュレーションとプロセス
                   href: orderexchanges.md
@@ -786,6 +860,10 @@
           items:
             - name: 店舗内の顧客管理
               href: customer-mgmt-stores.md
+            - name: 非同期顧客作成モード
+              href: async-customer-mode.md
+            - name: 非同期顧客の同期顧客への変換
+              href: convert-async-to-sync.md
             - name: クライアンテリング
               items:
                 - name: クライアンテリングの概要
@@ -800,13 +878,13 @@
                   href: tasks/define-loyalty-reward-points.md
                 - name: ロイヤルティ スキーマの定義
                   href: tasks/define-loyalty-schemes.md
-                - name: ロイヤルティ報酬ポイントの処理の調整
+                - name: ロイヤルティ報酬ポイントのプロセスの調整
                   href: tasks/process-loyalty-reward-point-adjustments.md
         - name: 財務の管理
           items:
             - name: 明細書の概要
               href: retail-statements.md
-            - name: トランザクションの整合性チェック
+            - name: 明細書の算定のための店舗トランザクションの検証
               href: valid-checker.md
             - name: 小売トランザクションの整合性チェックのルールを無効にする
               href: disable-consistency-check-rule.md
@@ -876,12 +954,14 @@
               href: online-store-overview.md
             - name: eコマース サイトの作成
               items:
-                - name: ドメイン名のコンフィギュレーション
+                - name: ドメイン名の構成
                   href: configure-your-domain-name.md
                 - name: 新しい eコマース テナントの配置
                   href: deploy-ecommerce-site.md
                 - name: eコマース サイトの作成
                   href: create-ecommerce-site.md
+                - name: eコマース サイトのコピー
+                  href: copy-ecommerce-site.md
                 - name: Dynamics 365 Commerce サイトとオンライン チャネルの関連付け
                   href: associate-site-online-store.md
                 - name: robots.txt ファイルの管理
@@ -892,6 +972,8 @@
                   href: set-up-B2C-tenant.md
                 - name: ユーザーのサインインに対するカスタム ページの設定
                   href: custom-pages-user-logins.md
+                - name: ID レコードと顧客 ID の自動リンクの有効化
+                  href: identity-record-linking.md
                 - name: Commerce 環境での複数の B2C テナントのコンフィギュレーション
                   href: configure-multi-B2C-tenants.md
                 - name: Dynamics 365 Commerce のドメイン
@@ -904,6 +986,8 @@
                   href: enable-store-detection.md
                 - name: eコマース デジタル ギフト カード
                   href: digital-gift-cards.md
+                - name: 無料で購入する製品の構成
+                  href: configure-free-product.md
                 - name: Dynamics 365 Commerce サイトのブラウザー要件
                   href: browser-requirements.md
             - name: サンプル サイトの概要
@@ -924,6 +1008,8 @@
                   href: manage-ecommerce-users-roles.md
                 - name: 在庫設定の適用
                   href: inventory-settings.md
+                - name: カートに製品を追加する設定の適用
+                  href: add-cart-settings.md
                 - name: サイトにおける検索エンジンの最適化 (SEO) の考慮事項
                   href: search-engine-optimization-considerations.md
                 - name: コンテンツ セキュリティ ポリシー (CSP) の管理
@@ -932,6 +1018,8 @@
                   href: web-activity-opt-out.md
                 - name: 測定単位設定の適用
                   href: unit-of-measure.md
+                - name: 製品分析コードの表示設定の適用
+                  href: dimension-settings.md
             - name: サイト コンテンツの管理
               items:
                 - name: コンテンツを追加する方法
@@ -956,8 +1044,6 @@
                       href: style-presets.md
                     - name: ファビコンの追加
                       href: add-favicon.md
-                    - name: ようこそメッセージの追加
-                      href: add-welcome-message.md
                     - name: 著作権に関する注意事項の追加
                       href: add-copyright-notice.md
                     - name: 言語の追加
@@ -1006,6 +1092,12 @@
                       href: customize-site-navigation.md
                     - name: ページ URL の作成
                       href: create-page-URL.md
+                - name: Adventure Works のテーマ
+                  items:
+                    - name: Adventure Works のテーマの概要
+                      href: adventure-works-theme.md
+                    - name: Adventure Works のテーマのインストール
+                      href: install-adventure-works.md
             - name: デジタル資産の管理
               items:
                 - name: デジタル資産管理の概要
@@ -1060,6 +1152,16 @@
                       href: add-hero-module.md
                     - name: ビデオ プレーヤー モジュール
                       href: add-video-player.md
+                    - name: 有効な画像モジュール
+                      href: active-image-module.md
+                    - name: 画像リスト モジュール
+                      href: image-list-module.md
+                    - name: 対話型機能モジュール
+                      href: interactive-feature-module.md
+                    - name: 購読モジュール
+                      href: subscribe-module.md
+                    - name: タイトル リスト モジュール
+                      href: tile-list-module.md
                 - name: ヘッダー モジュールとフッター モジュール
                   items:
                     - name: ヘッダー モジュール
@@ -1108,7 +1210,9 @@
                       href: order-confirmation-module.md
                     - name: ギフト カード モジュール
                       href: add-giftcard.md
-                - name: 店舗ファインダー モジュール
+                    - name: 注文検索モジュール
+                      href: order-lookup-module.md
+                - name: 店舗検索モジュール
                   items:
                     - name: 地図モジュール
                       href: map-module.md
@@ -1136,6 +1240,8 @@
                       href: nav-menu-module.md
                     - name: サイト セレクター モジュール
                       href: site-selector.md
+                    - name: 国/地域の選択モジュール
+                      href: country-region-picker-module.md
                 - name: 検索モジュール
                   items:
                     - name: 検索結果モジュール
@@ -1154,6 +1260,12 @@
               items:
                 - name: オンライン チャネル レポートの生成
                   href: generate-reports.md
+            - name: ターゲット設定
+              items:
+                - name: デバイス、市場、および位置情報のターゲット設定
+                  href: targeting-overview.md
+                - name: 地域の検出とリダイレクトを設定する
+                  href: geo-detection-redirection.md
             - name: 実験
               items:
                 - name: Dynamics 365 Commerce での実験
@@ -1184,10 +1296,16 @@
           items:
             - name: B2B eコマース サイトの設定
               href: b2b/set-up-b2b-site.md
-            - name: B2B 組織の組織モデリング階層の作成
-              href: b2b/org-model.md
+            - name: 顧客階層を使用した B2B ビジネス パートナーの管理
+              href: b2b/partners-customer-hierarchies.md
             - name: B2B eコマース サイトでのビジネス パートナー ユーザーの管理
               href: b2b/manage-b2b-users.md
+            - name: Dynamics 365 Sales を使用した B2B eコマース サイトでのビジネス パートナー ユーザーの管理
+              href: b2b/prospect-management-sales.md
+            - name: B2B Web サイトの注文をすばやく行う
+              href: b2b/quick-bulk-orders.md
+            - name: B2B eコマース Web サイトの請求書管理
+              href: b2b/invoice-management.md
             - name: B2B eコマース サイト用の顧客アカウントの支払方法の構成
               href: b2b/payment-method.md
             - name: B2B eコマース サイトの製品数量制限の設定
@@ -1200,7 +1318,7 @@
               href: analyze-sales-trends-patterns.md
             - name: 製品別の売上実績の評価
               href: sales-performance-products.md
-            - name: 顧客と製品の収益性の評価
+            - name: 顧客と製品の売上性の評価
               href: assess-customer-product-profitability.md
             - name: 店舗のパフォーマンスの分析
               href: store-performance-information.md
@@ -1208,35 +1326,79 @@
               href: set-up-rfm-analysis.md
             - name: Dynamics 365 Commerce での Microsoft Clarity の設定
               href: set-up-clarity.md
+            - name: Commerce 分析 (プレビュー)
+              href: commerce-analytics.md
         - name: グローバリゼーション
           items:
             - name: Commerce チャネルの会計統合の概要
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Commerce チャネルの会計統合の設定
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: 会計統合サンプル用のビルド パイプラインの設定
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: 小売店舗のユーザー定義の証明書プロファイル
               href: localizations/certificate-profiles-for-retail-stores.md
-            - name: Regulatory Configuration Service
+            - name: Regulatory Configuration Service (RCS)
               items:
-                - name: Regulatory Configuration Service の概要
+                - name: Regulatory Configuration Service (RCS) の概要
                   href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service - グローバリゼーション機能
+                - name: (RCS) Regulatory Configuration Service (RCS) - グローバリゼーション機能
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service で ER コンフィギュレーションを作成し、グローバル リポジトリにアップロードする
+                - name: Regulatory Configuration Service (RCS) で ER 構成を作成し、グローバル リポジトリにアップロードする
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service (RCS) – Lifecycle Services ストレージの廃止
+                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce に ER コンフィギュレーションをダウンロードする
+                  items:
+                    - name: RCS からコンフィギュレーションをダウンロードする
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: コンフィギュレーションを RCS からインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                    - name: グローバル リポジトリ (GR)
+                      items:
+                        - name: コンフィギュレーションを GR からインポートする
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: ER コンフィギュレーションの更新バージョンのインポート
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: GR でコンフィギュレーションを検索するための強化されたフィルター処理
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: GR へコンフィギュレーションをアップロードする
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                        - name: GR でコンフィギュレーションを共有する
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                        - name: RCS グローバル リポジトリのコンフィギュレーションを中止する
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: オーストリア
               items:
                 - name: オーストリア向け会計登録サービス統合サンプル
                   href: localizations/emea-aut-fi-sample.md
+                - name: オーストリア向け会計統合サンプルの配置ガイドライン (レガシ)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: ブラジル
               items:
                 - name: ブラジル向け Commerce ローカライズ
                   href: localizations/latam-bra-commerce-localization.md
+                - name: ブラジル向け Commerce ローカライズの設定と展開
+                  href: localizations/latam-bra-deployment.md
+                - name: ブラジル向け Commerce POS の NFC-e 会計ドキュメント機能
+                  href: localizations/latam-bra-nfce.md
+                - name: ブラジル向け POS の顧客情報管理
+                  href: localizations/latam-bra-customer-information.md
+                - name: ブラジル向け Commerce POS の NFC-e ドキュメントのキャンセルと返品
+                  href: localizations/latam-bra-nfce-cancel-return.md
+                - name: オフライン代替モードで発行された NFC-e ドキュメントの登録延期
+                  href: localizations/latam-bra-nfce-contingency-mode.md
+                - name: Commerce 本社の小売明細書によるブラジルの会計ドキュメントの転記
+                  href: localizations/latam-bra-retail-statements.md
+                - name: ブラジル向け Commerce POS の CF-e 会計ドキュメントおよび SAT との統合機能
+                  href: localizations/latam-bra-cf-e-sat.md
+                - name: ブラジル向け Commerce POS が搭載する Adyen に対応した Dynamics 365 Payment Connector
+                  href: localizations/latam-bra-adyen.md
             - name: 東ヨーロッパ
               items:
                 - name: 共通
                   items:
-                    - name: 東ヨーロッパにおける Commerce の事前請求書
+                    - name: 東ヨーロッパ向け Commerce の高度な請求書
                       href: localizations/emea-eeu-advance-invoices-for-retail.md
                     - name: 東ヨーロッパにおける Commerce の小口現金管理
                       href: localizations/emea-eeu-petty-cash-for-retail.md
@@ -1248,22 +1410,34 @@
                   items:
                     - name: チェコ共和国向け会計登録サービス統合サンプル
                       href: localizations/emea-cze-fi-sample.md
+                    - name: チェコ共和国向け会計統合サンプルの配置ガイドライン (レガシ)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: ポーランド
                   items:
                     - name: ポーランド向け会計プリンター統合サンプル
                       href: localizations/emea-pol-fpi-sample.md
                     - name: ポーランドの顧客情報管理
                       href: localizations/emea-pol-customer-information.md
+                    - name: ポーランド向け会計統合サンプルの配置ガイドライン (レガシ)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: フランス
               items:
                 - name: キャッシュ レジスター機能
                   href: localizations/emea-fra-cash-registers.md
                 - name: キャッシュ レジスターの配置ガイドライン
+                  href: localizations/emea-fra-fi-deployment.md
+                - name: 会計アーカイブおよびデータの整合性の検証
+                  href: localizations/emea-fra-fiscal-archive.md
+                - name: フランス向けレガシ機能からの移行
+                  href: localizations/emea-fra-fi-migration.md
+                - name: キャッシュ レジスターの配置ガイドライン (レガシ)
                   href: localizations/emea-fra-deployment.md
             - name: ドイツ
               items:
                 - name: ドイツ向け会計登録サービス統合サンプル
                   href: localizations/emea-deu-fi-sample.md
+                - name: ドイツ向け会計統合サンプルの配置ガイドライン (レガシ)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: インド
               items:
                 - name: キャッシュ レジスターの商品及びサービス税 (GST) 統合
@@ -1272,14 +1446,18 @@
                   href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: インド向けアップグレードと N-1 のサポート
                   href: localizations/apac-ind-n-1-for-india.md
-                - name: QR コードの生成とレシートへの印刷
+                - name: インド向け QR コードの生成とレシートへの印刷
                   href: localizations/ind-generate-qr-code-print-receipt.md
+                - name: eコマース サイト用のキャッシュ レジスターの商品及びサービス税 (GST) 統合
+                  href: localizations/apac-ind-e-commerce.md
             - name: イタリア
               items:
                 - name: イタリア向け会計プリンター統合サンプル
                   href: localizations/emea-ita-fpi-sample.md
                 - name: イタリアの顧客情報管理
                   href: localizations/emea-ita-customer-information.md
+                - name: イタリア向け会計統合サンプルの配置ガイドライン (レガシ)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: メキシコ
               items:
                 - name: メキシコ向けグローバル CFDI 電子請求書
@@ -1289,14 +1467,36 @@
                 - name: キャッシュ レジスター機能
                   href: localizations/emea-nor-cash-registers.md
                 - name: キャッシュ レジスターの配置ガイドライン
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: キャッシュ レジスターの配置ガイドライン (レガシ)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
+            - name: ロシア
+              items:
+                - name: ロシア向け Commerce ローカライズ
+                  href: localizations/rus-commerce-localization.md
+                - name: ロシア向け Commerce ローカライズの設定
+                  href: localizations/rus-commerce-setup.md
+                - name: ロシア向け Commerce での前払
+                  href: localizations/rus-commerce-prepayments.md
+                - name: ロシア向け Commerce POS の簡易顧客住所形式
+                  href: localizations/rus-simplified-address.md
+                - name: ロシア向け会計プリンター統合サンプル
+                  href: localizations/rus-fpi-sample.md
+                - name: ロシアの顧客情報管理
+                  href: localizations/rus-customer-information.md
+            - name: サウジアラビア
+              items:
+                - name: サウジアラビア向け QR コードの生成とレシートへの印刷
+                  href: localizations/emea-sau-qr-code.md
             - name: スウェーデン
               items:
                 - name: キャッシュ レジスター機能
                   href: localizations/emea-swe-cash-registers.md
                 - name: スウェーデン向け制御ユニットの統合サンプル
                   href: localizations/emea-swe-fi-sample.md
-                - name: 制御ユニット (レガシ) との Retail POS の統合サンプル
+                - name: スウェーデン向け制御ユニット統合サンプルの配置ガイドライン (レガシ)
+                  href: localizations/emea-swe-fi-sample-sdk.md
+                - name: 制御ユニットとの Retail POS の統合サンプル (レガシ)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: レポートと Power BI の統合
           items:
@@ -1316,7 +1516,7 @@
               items:
                 - name: Power BI コンテンツのホーム ページ
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
-                - name: 学習
+                - name: ラーニング
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
                 - name: 組織トレーニング
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
@@ -1398,11 +1598,13 @@
           items:
             - name: 電子申告の概要
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: コンフィギュレーション
+            - name: 電子申告コンポーネント
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/commerce/toc.json
+            - name: 構成
               items:
-                - name: コンフィギュレーションの作成
+                - name: 構成の作成
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/commerce/toc.json
-                - name: 他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
+                - name: 他のコンポーネントに対する電子申告構成の依存関係を定義する
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
                 - name: 電子申告ソリューションのコンポーネントを準備する
                   items:
@@ -1442,11 +1644,17 @@
               items:
                 - name: フォーミュラ言語
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
+                - name: ER フォーミュラのサポートされるデータ型
+                  items:
+                    - name: プリミティブ データ型
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
+                    - name: 複合データ型
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
                 - name: 関数
                   items:
                     - name: コンテナー
                       items:
-                        - name: コンテナーの機能
+                        - name: コンテナー関数
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/commerce/toc.json
                         - name: Base64StringToContainer
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/commerce/toc.json
@@ -1456,6 +1664,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/commerce/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/commerce/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/commerce/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/commerce/toc.json
                         - name: DateTimeFormat
@@ -1482,7 +1692,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
-                    - name: リスト
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
+                    - name: List
                       items:
                         - name: リスト関数
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/commerce/toc.json
@@ -1600,6 +1812,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/commerce/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/commerce/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/commerce/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
                         - name: NumeralsToText
@@ -1706,12 +1920,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
             - name: さまざまな形式で送信ドキュメントを生成するための電子申告形式を設計する
               items:
+                - name: OPENXML 形式でレポートを生成するためのコンフィギュレーションを設計する
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
                 - name: 送信ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
                   items:
                     - name: ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/commerce/toc.json
-                    - name: OPENXML 形式でレポートを生成する例
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Excel テンプレートを再適用して電子申告形式を変更する
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
                     - name: 水平に拡張された範囲として列を Excel レポートに動的に追加する
@@ -1720,11 +1934,15 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
                         - name: Excel レポートに列を動的に追加するための形式を実行する
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
-                - name: Word 形式のレポートを生成するためのコンフィギュレーションを設計する
+                    - name: Excel で生成したドキュメントをページ割付する ER 形式を設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/commerce/toc.json
+                    - name: 同じ Excel ページに行をまとめる ER 形式を設計する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?toc=/dynamics365/commerce/toc.json
+                - name: Word 形式のレポートを生成するための構成を設計する
                   items:
-                    - name: Word 形式のレポートを生成するための新しい ER コンフィギュレーションを設計する
+                    - name: Word 形式のレポートを生成するための新しい ER 構成を設計する
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/commerce/toc.json
-                    - name: Excel テンプレートで電子申告コンフィギュレーションを再利用して Word 形式のレポートを生成する
+                    - name: Excel テンプレートで ER コンフィギュレーションを再利用して Word 形式のレポートを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: 生成されるレポートの Word コンテンツ コントロールを非表示にする
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/commerce/toc.json
@@ -1742,6 +1960,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
                         - name: 画像が埋め込まれた Office 形式でレポートを生成する
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
+                    - name: ER 形式をデザインして、ページのヘッダーまたはフッターに画像が埋め込まれた Excel でレポートを生成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
                 - name: 生成されたファイルの BOM 文字を非表示にする
@@ -1768,7 +1988,9 @@
                   items:
                     - name: 外部 XML ファイルからデータをインポートするためのコンフィギュレーションを作成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
-                - name: SharePoint にあるファイルからのバッチ モードのデータのインポートを構成する
+                    - name: 手動で選択したファイルからバッチ モードでデータをインポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
+                - name: SharePoint にあるファイルからバッチ モードのデータ インポートを構成する
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
                 - name: XML 形式のファイルをインポートする
                   items:
@@ -1790,10 +2012,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
                     - name: コンフィギュレーション (LBD) のインポート
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory services (RCS)
+                - name: Regulatory Configuration Service (RCS)
                   items:
-                    - name: RCS のグローバリゼーション機能
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                    - name: Regulatory Configuration Service (RCS) の概要
+                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
                     - name: Commerce に ER コンフィギュレーションをダウンロードする
                       items:
                         - name: RCS からコンフィギュレーションをダウンロードする
@@ -1870,13 +2092,17 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
                         - name: ドキュメント管理ファイルを使用するための形式を変更して実行する
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
-                    - name: データ ソースのデバッグ
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: バーコードを使用してバーコード イメージを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
-                - name: モデル マッピングのコンフィギュレーション
+                    - name: ER アプリケーション固有のパラメータを使用するルックアップ データ ソースを構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: ER 形式でデータ収集データ ソースを使用する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: データ ソースのデバッグ
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: モデル マッピングを構成する
                   items:
-                    - name: 国のコンテキスト依存 ER モデル マッピングのコンフィギュレーション
+                    - name: 国のコンテキストに依存する ER モデル マッピングを構成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
                     - name: 個別の ER コンフィギュレーションで ER モデル マッピングを管理する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
@@ -1936,28 +2162,34 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/commerce/toc.json
                         - name: 画面出力先
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/commerce/toc.json
-                    - name: 行先のコンフィギュレーション
+                    - name: 送信先を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
-                    - name: アクションに依存する行先のコンフィギュレーション
+                    - name: アクションに依存する送信先を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/commerce/toc.json
-                - name: 電子申告形式への参照の設定
+                    - name: 印刷管理レコード固有の ER 送信先を構成する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/commerce/toc.json
+                - name: ER 形式への参照を設定する
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/commerce/toc.json
                 - name: 生成されたレポートの自動検証
                   items:
                     - name: 生成されたレポート結果を追跡し、ベースライン値と比較する
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-                    - name: 生成された ER レポートの追跡結果およびベースライン値との比較における改善
+                    - name: 生成された ER レポートの結果を追跡し、ベースライン値と比較するための改善
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
                     - name: ER によるテストの自動化
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
                 - name: 電子申告コンフィギュレーションを使用して業務プロセスを自動化する
                   items:
-                    - name: Power BI にデータをプルするよう ER を構成する
+                    - name: ER を構成して Power BI にデータをプルする
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
-                    - name: 印刷可能な自由書式の請求書 (FTI) フォームを生成する
+                    - name: 印刷に対応した自由書式請求書 (FTI) フォームを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                - name: 効率的な電子申告ソリューションをデザインする
+                  items:
+                    - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                    - name: ER コンフィギュレーションのパフォーマンスの問題のトラブルシューティング
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
                 - name: ビジネス ドキュメントの管理 (BDM)
                   items:
                     - name: BDM 概要
@@ -1978,18 +2210,32 @@
                   items:
                     - name: Application update 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/commerce/toc.json
-                    - name: Application update 10.0.11
+                    - name: アプリケーション更新プログラム 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
-                    - name: Application update 10.0.17
+                    - name: アプリケーション更新プログラム 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
-                - name: 生成されるドキュメントに対するカスタム ストレージ場所を指定する
+                    - name: アプリケーション更新プログラム 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
+                    - name: アプリケーション更新プログラム 10.0.21
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
+                    - name: アプリケーション更新プログラム 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+                    - name: アプリケーション更新プログラム 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
+                - name: 生成したドキュメントに対してカスタム保存場所を指定する
                   items:
                     - name: イベントをサブスクライブして、サブスクライビング ハンドラーからの応答を要求する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: 電子申告の送信先の作成をカスタム送信先ファクトリに委任する
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
-                - name: ユーザー入力パラメータタイプのデータ ソース値をソースコードから開始する
+                    - name: 生成されるドキュメントに対するカスタム送信先の実装
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
+                - name: USER INPUT PARAMETER タイプのデータ ソース値をソース コードから開始する
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
+                - name: コードを変更して、ユーザーが名前付き送信先を構成して使用可能にする
+                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
+                - name: 受信したドキュメントのカスタム ER ソースを実装する
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations (Dynamics 365) モバイル アプリ
           items:
             - name: モバイル アプリのホーム ページ
@@ -2034,13 +2280,13 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
             - name: Excel でエンティティ データを開き、Excel アドインを使用して更新する
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-            - name: '[Excel で開く] エクスペリエンスの作成'
+            - name: '[Excel で開く] エクスペリエンスに関するよくあるご質問'
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
             - name: '[Excel で明細行を開く] メニューへのテンプレートの追加'
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
             - name: '[Microsoft Office で開く] メニューのカスタマイズ'
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
-            - name: 電子メールのコンフィギュレーションと送信
+            - name: メールの構成と送信
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: トランザクション イベント用の電子メール テンプレートの作成
               href: email-templates-transactions.md
@@ -2080,7 +2326,9 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: グローバル アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
-                - name: アドレス帳に関するよく寄せられる質問
+                - name: 住所の設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
+                - name: アドレス帳に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: アドレス帳の構成
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/commerce/toc.json
@@ -2108,6 +2356,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: 承認ステップのコンフィギュレーション
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: 支出確認者のコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
                     - name: 手動決定のコンフィギュレーション
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: 条件付き意思決定のコンフィギュレーション
@@ -2180,386 +2430,422 @@
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/commerce/toc.json
             - name: ドキュメント管理のコンフィギュレーション
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/commerce/toc.json
-            - name: 電子メールのコンフィギュレーションと送信
+            - name: メールの構成と送信
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: 日時データとタイム ゾーン
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
-        - name: 拡張性
+        - name: 開発
           items:
-            - name: Commerce 開発と拡張性
-              href: dev-itpro/dev-retail-home-page.md
-            - name: オンライン チャネルの拡張性
+            - name: クロスソリューション
               items:
-                - name: オンライン チャネルの拡張性の概要
-                  href: e-commerce-extensibility/overview.md
-                - name: 使用開始
+                - name: Commerce SDK の概要
                   items:
-                    - name: eコマース オンライン拡張機能の開発を開始する
-                      href: e-commerce-extensibility/sdk-getting-started.md
-                    - name: システム要件
-                      href: e-commerce-extensibility/system-requirements.md
-                    - name: 開発環境の設定
-                      href: e-commerce-extensibility/setup-dev-environment.md
-                    - name: 開発環境 (.env) ファイルのコンフィギュレーション
-                      href: e-commerce-extensibility/configure-env-file.md
-                    - name: Commerce クラウド環境に対して eコマース開発環境をコンフィギュレーションする
-                      href: e-commerce-extensibility/debug-tier-1.md
-                    - name: Azure DevOps コードの共有の設定とビルド パイプラインの作成
-                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
-                - name: プラットフォームの概要
+                    - name: サンプルと参照パッケージ
+                      href: dev-itpro/retail-sdk/sdk-github.md
+                    - name: レガシ Retail SDK の移行
+                      href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+                    - name: Commerce の店舗テクノロジ スタックを最新化する (ホワイト ペーパー)
+                      href: 'https://www.microsoft.com/download/details.aspx?id=103896'
+                - name: 環境設定
                   items:
-                    - name: eコマース アーキテクチャの概要
-                      href: e-commerce-extensibility/architectural-overview.md
-                    - name: eコマース コンポーネント
-                      href: e-commerce-extensibility/ecommerce-components.md
-                    - name: CLI コマンド リファレンス
-                      href: e-commerce-extensibility/cli-command-reference.md
-                - name: モジュールの構造
+                    - name: ローカル開発環境
+                      href: dev-itpro/setup-local-dev-env.md
+                    - name: Commerce SDK ビルド パイプライン (独立したパッケージ)
+                      href: dev-itpro/build-pipeline.md
+                - name: 支払
                   items:
-                    - name: モジュールの概要
-                      href: e-commerce-extensibility/modules-overview.md
-                    - name: モジュール定義ファイル
-                      href: e-commerce-extensibility/module-definition-file.md
-                    - name: モジュール反応コンポーネント ファイル
-                      href: e-commerce-extensibility/module-react-file.md
-                    - name: モジュール表示ファイル
-                      href: e-commerce-extensibility/module-view-file.md
-                    - name: モジュール データ ファイル
-                      href: e-commerce-extensibility/module-data-file.md
-                    - name: モジュール モック ファイル
-                      href: e-commerce-extensibility/module-mock-file.md
-                    - name: モジュール テスト ファイル
-                      href: e-commerce-extensibility/module-test-file.md
-                    - name: モジュール props.autogenerated.ts ファイル
-                      href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
-                    - name: モジュール コンフィギュレーションのプリセット
-                      href: e-commerce-extensibility/module-config-presets.md
-                - name: モジュールの開発
+                    - name: 支払コネクタの配置
+                      href: dev-itpro/deploy-payment-connector.md
+                    - name: 支払データの使用
+                      href: payment-connector-data-fields.md
+                    - name: 支払 SDK での予想のサポート
+                      href: dev-itpro/tipping.md
+                    - name: 注文請求の増分取得
+                      href: dev-itpro/incremental-capture.md
+                - name: ローカライズ
                   items:
-                    - name: 新しいモジュールの作成
-                      href: e-commerce-extensibility/create-new-module.md
-                    - name: モジュール ライブラリ モジュールのクローン
-                      href: e-commerce-extensibility/clone-starter-module.md
-                    - name: モジュール構成フィールドの追加
-                      href: e-commerce-extensibility/add-module-config-fields.md
-                    - name: プレビュー モジュールとデバッグ モジュール
-                      href: e-commerce-extensibility/test-module.md
-                    - name: モジュール モックを使用したテスト モジュール
-                      href: e-commerce-extensibility/test-module-mock.md
-                    - name: ページ モックを使用したテスト モジュール
-                      href: e-commerce-extensibility/test-page-mock.md
-                    - name: コンテナー モジュール
-                      href: e-commerce-extensibility/container-modules.md
-                    - name: レイアウト コンテナー モジュールの作成
-                      href: e-commerce-extensibility/create-layout-container.md
-                    - name: ページ コンテナー モジュールの作成
-                      href: e-commerce-extensibility/create-page-containers.md
-                    - name: モジュールのローカライズ
-                      href: e-commerce-extensibility/localize-module.md
-                - name: 高度なモジュールのトピック
-                  items:
-                    - name: 要求プロパティ オブジェクト
-                      href: e-commerce-extensibility/request-properties-object.md
-                    - name: アプリの設定
-                      href: e-commerce-extensibility/app-settings.md
-                    - name: プラットフォーム設定ファイル
-                      href: e-commerce-extensibility/platform-settings.md
-                    - name: モジュール定義の拡張
-                      href: e-commerce-extensibility/extend-module-definition.md
-                    - name: Cookie API の概要
-                      href: e-commerce-extensibility/cookie-api-overview.md
-                    - name: 対話型コンポーネントの概要
-                      href: e-commerce-extensibility/interactive-components.md
-                    - name: ローカル開発中にサインイン状態をモックする
-                      href: e-commerce-extensibility/mock-sign-in.md
-                    - name: コンテキストに基づいて表示されるモジュール プロパティの構成
-                      href: e-commerce-extensibility/configure-properties-context.md
-                    - name: CultureInfoFormatter クラスを使用したグローバライズ モジュール
-                      href: e-commerce-extensibility/globalize-modules.md
-                    - name: Azure Key Vault を設定してキーをセキュアに管理する
-                      href: e-commerce-extensibility/set-up-key-vault.md
-                - name: データ アクションの開発
-                  items:
-                    - name: データ アクションの概要
-                      href: e-commerce-extensibility/data-actions.md
-                    - name: データ アクション キャッシュのオプション
-                      href: e-commerce-extensibility/data-action-cache.md
-                    - name: モックを使用したデータ アクションのテスト
-                      href: e-commerce-extensibility/test-data-action-mocks.md
-                    - name: ページ読み込みデータ アクション
-                      href: e-commerce-extensibility/page-load-data-action.md
-                    - name: イベント ベースのデータ アクション
-                      href: e-commerce-extensibility/event-based-data-actions.md
-                    - name: コア データ アクション
-                      href: e-commerce-extensibility/core-data-actions.md
-                    - name: Retail Server API の呼び出し
-                      href: e-commerce-extensibility/call-retail-server-apis.md
-                    - name: Retail Server 拡張 API の呼び出し
-                      href: e-commerce-extensibility/call-retail-extension-api.md
-                - name: 高度なデータ アクションのトピック
-                  items:
-                    - name: チェーン データ アクション
-                      href: e-commerce-extensibility/chain-data-actions.md
-                    - name: バッチ データ アクション
-                      href: e-commerce-extensibility/batch-data-actions.md
-                    - name: 監視可能なデータ アクション
-                      href: e-commerce-extensibility/create-observable-data-action.md
-                    - name: モジュール間で状態を共有
-                      href: e-commerce-extensibility/share-state-across-modules.md
-                    - name: データ アクション キャッシュの設定
-                      href: e-commerce-extensibility/data-action-cache-settings.md
-                    - name: データ アクションの上書き
-                      href: e-commerce-extensibility/data-action-overrides.md
-                    - name: データ アクションのフック
-                      href: e-commerce-extensibility/data-action-hooks.md
-                    - name: AJAX を含むサーバー側データ アクションの呼び出し
-                      href: e-commerce-extensibility/data-actions-with-ajax.md
-                - name: テーマの開発
-                  items:
-                    - name: テーマの概要
-                      href: e-commerce-extensibility/theming.md
-                    - name: テーマの作成
-                      href: e-commerce-extensibility/create-theme.md
-                    - name: テーマ設定のコンフィギュレーション
-                      href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: テーマ スタイル プリセットのコンフィギュレーション
-                      href: e-commerce-extensibility/theme-style-presets.md
-                    - name: テーマを拡張してモジュール拡張機能を追加する
-                      href: e-commerce-extensibility/theme-module-extensions.md
-                    - name: テーマのモジュール ライブラリ コンポーネントをオーバーライドする
-                      href: e-commerce-extensibility/override-theme-component.md
-                    - name: 基準テーマからテーマを拡張する
-                      href: e-commerce-extensibility/extend-theme.md
-                    - name: カスタマイズ コードへのカスタム リソースの追加
-                      href: e-commerce-extensibility/add-custom-resources.md
-                - name: スクリプトの挿入
-                  items:
-                    - name: スクリプトの挿入
-                      href: e-commerce-extensibility/script-injector.md
-                - name: コネクタ
-                  items:
-                    - name: コネクタのコンフィギュレーションと有効化
-                      href: e-commerce-extensibility/connectors.md
-                - name: テレメトリと分析
-                  items:
-                    - name: テレメトリ ロガー
-                      href: e-commerce-extensibility/telemetry-logger.md
-                - name: 開発とメンテナンス
-                  items:
-                    - name: パッケージ コンフィギュレーションとオンライン環境へのその配置
-                      href: e-commerce-extensibility/package-deploy.md
-                    - name: SDK およびモジュール ライブラリの更新
-                      href: e-commerce-extensibility/sdk-updates.md
-                - name: ベスト プラクティスとよく寄せられる質問
-                  items:
-                    - name: Dynamics 365 Commerce 開発のベスト プラクティス
-                      href: e-commerce-extensibility/best-practices-dev.md
-                    - name: Dynamics 365 Commerce オンライン SDK に関するよく寄せられる質問
-                      href: e-commerce-extensibility/sdk-faq.md
-                    - name: Dynamics 365 Commerce 開発に関するデバッグのベスト プラクティス
-                      href: e-commerce-extensibility/debugging-best-practices.md
-            - name: Retail SDK
+                    - name: Commerce 拡張リソースおよびラベル ファイルのカスタマイズ
+                      href: dev-itpro/extension-resource-localization.md
+            - name: ヘッドレス コマース
               items:
-                - name: Retail SDK アーキテクチャ
-                  href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: Retail SDK の今後の変更
-                  href: dev-itpro/UpcomingSDKChanges.md
-                - name: バージョン 10.0.10 から 10.0.13 における開発と ALM の変更
-                  href: dev-itpro/dev-changes-10-13.md
-                - name: Commerce および Finance and Operations のビルド システムのマージ
-                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-                - name: Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行
-                  href: dev-itpro/retail-sdk/migrate-sdk.md
-                - name: Retail SDK の拡張機能サンプル
-                  href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-                - name: 配置可能パッケージの作成
-                  href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-                - name: 管理者のアクセス権を使用しないクラウド ホスト環境での開発
-                  href: dev-itpro/cloud-dev-box.md
-                - name: Commerce SDK ビルド パイプラインの設定
-                  href: dev-itpro/retail-sdk/SDK-build-pipeline.md
-                - name: GitHub および NuGet からサンプルとパッケージをダウンロードする
-                  href: dev-itpro/retail-sdk/sdk-github.md
-                - name: Retail SDK に関するよく寄せられる質問
-                  href: dev-itpro/retail-sdk/sdk-faq.md
-            - name: 販売時点管理の拡張機能
+                - name: API と参照
+                  items:
+                    - name: Commerce Scale Unit の顧客およびコンシューマー API
+                      href: dev-itpro/retail-server-customer-consumer-api.md
+                    - name: 外部アプリケーションでの Retail Server API の使用
+                      href: dev-itpro/consume-retail-server-api.md
+                    - name: Retail POS 向け Typescript および C# プロキシ
+                      href: dev-itpro/typescript-proxy-retail-pos.md
+                    - name: Commerce Runtime (CRT) のアーキテクチャとコンフィギュレーション
+                      href: dev-itpro/commerce-runtime-overview.md
+                    - name: Commerce Runtime (CRT) のサービス
+                      href: dev-itpro/crt-services.md
+                - name: 新しい機能の作成
+                  items:
+                    - name: Commerce Scale Unit API の作成
+                      href: dev-itpro/retail-server-icontroller-extension.md
+                    - name: Commerce Runtime (CRT) の拡張機能
+                      href: dev-itpro/commerce-runtime-extensibility.md
+                    - name: Application Insights への拡張イベントの記録
+                      href: dev-itpro/commerce-application-insights.md
+                    - name: 非同期 Commerce (CRT) API の作成
+                      href: dev-itpro/async-commerce-extension.md
+                    - name: チャネル データベース拡張機能
+                      href: dev-itpro/channel-db-extensions.md
+                    - name: Commerce Data Exchange の拡張 - リアルタイム サービス
+                      href: dev-itpro/extend-commerce-data-exchange.md
+                - name: 既存の機能の拡張
+                  items:
+                    - name: Commerce Runtime (CRT) の拡張機能とトリガー
+                      href: dev-itpro/commerce-runtime-extensibility-trigger.md
+                    - name: チャネル データベースの事前拡張された列
+                      href: dev-itpro/extended-columns.md
+                    - name: 拡張機能を介したカスタム Commerce Data Exchange 同期の有効化
+                      href: dev-itpro/cdx-extensibility.md
+                    - name: Commerce Store レシートの拡張
+                      href: dev-itpro/retail-sdk/retail-sdk-samples.md
+                    - name: 顧客属性
+                      href: dev-itpro/customer-attributes.md
+                    - name: 注文属性
+                      href: dev-itpro/order-attributes.md
+                    - name: 小売チャネルのシークレットの管理
+                      href: dev-itpro/manage-secrets.md
+                - name: サンプル
+                  items:
+                    - name: トリガーの使用によるトランザクションのブロック
+                      href: dev-itpro/trigger-example-blocking-transaction.md
+                    - name: 破棄されたカートの検出と顧客への通知の送信
+                      href: dev-itpro/abandoned-cart-sample-app.md
+                    - name: ロイヤルティの拡張機能のサンプル
+                      href: dev-itpro/retail-sdk/loyalty-extension-sample.md
+                    - name: 注文のフルフィルメント中の梱包明細の拡張ポイント
+                      href: dev-itpro/extensions-shipping-carrier-integration.md
+                - name: パッケージと展開
+                  items:
+                    - name: Cloud Scale Unit 拡張機能の削除
+                      href: dev-itpro/retail-sdk/remove-csu-package.md
+            - name: Store Commerce
               items:
-                - name: POS 画面レイアウト
-                  href: pos-screen-layouts.md
-                - name: POS で URL を開く
-                  href: Open-URL-in-POS.md
-                - name: POS のレイアウト デザイナーのインストール
-                  href: install-pos-layout-designer.md
-                - name: POS Dual ディスプレイ ビューの拡張
-                  href: dev-itpro/pos-dual-display-extension.md
-                - name: POS ビューへのカスタム コントロールの追加
-                  href: dev-itpro/pos-custom-control.md
-                - name: ボタン グリッド デザイナーを使用して POS 操作を POS レイアウトに追加
-                  href: dev-itpro/add-POS-operations.md
-                - name: POS API
-                  href: dev-itpro/POS-APIs.md
-                - name: POS 支払拡張機能
-                  href: dev-itpro/pos-payment-extension.md
-                - name: POS 支払 SDK での予想のサポート
-                  href: dev-itpro/tipping.md
-                - name: 外部ギフト カードのサポート
-                  href: dev-itpro/gift-card.md
-                - name: ブランドの作成と Retail Experience アプリへの適用
-                  href: dev-itpro/create-retail-experience-app.md
-                - name: Android および iOS での POS Hybrid アプリのセットアップ
-                  href: dev-itpro/hybridApp.md
-                - name: POS 要求ハンドラーのオーバーライド
-                  href: dev-itpro/pos-handler.md
-                - name: POS 拡張パッケージ情報の表示
-                  href: dev-itpro/view-pos-extension-package-details.md
-                - name: Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
-                  href: dev-itpro/pos-rsat.md
-                - name: POS Totals パネルへのカスタム フィールドの追加
-                  href: dev-itpro/custom-field-pos-totals.md
-                - name: POS でカスタム通知を表示する
-                  href: dev-itpro/extend-pos-notification.md
-                - name: コード署名証明書を使用した MPOS の署名
-                  href: dev-itpro/pos-app-signing-certificate.md
-                - name: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
-                  href: dev-itpro/pos-view-extension.md
-                - name: Modern POS トランザクション ページへのカスタム コントロールの追加
-                  href: dev-itpro/pos-custom-transaction.md
-                - name: POS トランザクション グリッドへのカスタム列の追加
-                  href: dev-itpro/pos-custom-transaction-column.md
-                - name: POS 拡張機能からの POS API または POS 操作の呼び出し
-                  href: dev-itpro/pos-api-extension.md
-                - name: POS トリガー
-                  href: dev-itpro/pos-trigger-printing.md
-                - name: 非画面デザイナー ベース POS ビューへのカスタム コントロールの追加
-                  href: dev-itpro/pos-control-non-screen.md
-                - name: POS サンプルの実行
-                  href: dev-itpro/pos-run-samples.md
-                - name: デバイス管理実装ガイダンス
-                  href: implementation-considerations-devices.md
-                - name: POS カート ビューのイベントおよびハンドラー
-                  href: dev-itpro/cart-view-handlers.md
-                - name: カスタム ボタンを POS ヘッダー バーに追加
-                  href: dev-itpro/pos-header-bar.md
-                - name: POS の独立したパッケージ SDK
+                - name: 概要
                   items:
                     - name: POS 拡張機能の概要
                       href: dev-itpro/pos-extension/pos-extension-overview.md
-                    - name: POS 拡張機能の使用を開始する
-                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
+                    - name: POS 拡張機能の概念と用語
+                      href: dev-itpro/pos-extension/pos-extension-basics.md
+                    - name: Commerce SDK への POS 拡張機能の移行
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                - name: 環境設定
+                  items:
+                    - name: ローカル開発環境
+                      href: dev-itpro/setup-local-dev-env.md
                     - name: POS 拡張機能パッケージ プロジェクトの作成
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
                     - name: Modern POS 拡張パッケージの .appx ファイルの作成
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
                     - name: POS 拡張機能のデバッグ
                       href: dev-itpro/pos-extension/debug-pos-extension.md
-                    - name: 拡張機能パッケージと展開
+                - name: API と参照
+                  items:
+                    - name: POS 拡張パッケージ情報の表示
+                      href: dev-itpro/view-pos-extension-package-details.md
+                    - name: POS API
+                      href: dev-itpro/pos-apis.md
+                    - name: 拡張機能での POS コントロールの使用
+                      href: dev-itpro/pos-extension/controls-pos-extension.md
+                    - name: POS デュアル ディスプレイ ビューの拡張
+                      href: dev-itpro/pos-dual-display-extension.md
+                    - name: POS でのカスタム ヘッドレス Commerce API およびエンティティの使用
+                      href: dev-itpro/pos-extension/consume-apis-pos.md
+                    - name: POS 拡張機能での外部またはサード パーティ ライブラリの使用
+                      href: dev-itpro/pos-extension/knockout-pos-extension.md
+                - name: 新しい機能の作成
+                  items:
+                    - name: POS 操作の作成
+                      href: dev-itpro/add-pos-operations.md
+                    - name: POS でのカスタム ビューの作成
+                      href: dev-itpro/pos-extension/custom-pos-view.md
+                    - name: 新しいハードウェア デバイスの作成と POS との統合
+                      href: dev-itpro/hardware-device-extension.md
+                    - name: 支払ターミナルのエンドツーエンド支払統合の作成
+                      href: dev-itpro/end-to-end-payment-extension.md
+                    - name: 支払ターミナルの拡張機能向けにローカライズされたカスタム エラー メッセージの作成
+                      href: dev-itpro/payment-custom-error-messages.md
+                    - name: 支払コネクタの重複支払保護の有効化
+                      href: dev-itpro/duplicate-payments-protection.md
+                - name: 既存の機能の拡張
+                  items:
+                    - name: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
+                      href: dev-itpro/pos-view-extension.md
+                    - name: カスタム コントロール追加のための POS ビューの拡張
+                      href: dev-itpro/pos-control-non-screen.md
+                    - name: POS ヘッダー バーの拡張
+                      href: dev-itpro/pos-header-bar.md
+                    - name: POS 通知の拡張
+                      href: dev-itpro/extend-pos-notification.md
+                    - name: POS 要求ハンドラーのオーバーライド
+                      href: dev-itpro/pos-handler.md
+                    - name: POS トリガー
+                      href: dev-itpro/pos-trigger-printing.md
+                    - name: POS カート ビュー
                       items:
-                        - name: Modern POS 拡張機能パッケージの作成
-                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
-                        - name: Modern POS (MSIX) 拡張機能パッケージへのコード署名
-                          href: dev-itpro/pos-extension/mpos-extension-signing.md
-                        - name: Cloud POS 拡張機能パッケージの作成
-                          href: dev-itpro/pos-extension/cpos-extension-package.md
-                    - name: 独立したパッケージ モデルへの POS 拡張機能の移行
-                      href: dev-itpro/pos-extension/migrate-pos-extension.md
-                    - name: POS 拡張機能開発ガイド
+                        - name: POS カート ビューのイベントおよびハンドラー
+                          href: dev-itpro/cart-view-handlers.md
+                        - name: POS Totals ペインへのカスタム フィールドの追加
+                          href: dev-itpro/custom-field-pos-totals.md
+                        - name: POS トランザクション グリッドへのカスタム列の追加
+                          href: dev-itpro/pos-custom-transaction-column.md
+                        - name: POS カート ビューへのカスタム コントロールの追加
+                          href: dev-itpro/pos-custom-transaction.md
+                    - name: POS ビューへのカスタム コントロールの追加
+                      href: dev-itpro/pos-custom-control.md
+                    - name: POS 支払拡張機能
+                      href: dev-itpro/pos-payment-extension.md
+                - name: パッケージと展開
+                  items:
+                    - name: MPOS 拡張機能パッケージの作成
+                      href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                    - name: MPOS (MSIX) 拡張機能パッケージへのコード署名
+                      href: dev-itpro/pos-extension/mpos-extension-signing.md
+                    - name: Cloud POS 拡張機能パッケージの作成
+                      href: dev-itpro/pos-extension/cpos-extension-package.md
+            - name: eコマース
+              items:
+                - name: 概要
+                  items:
+                    - name: オンライン チャネルの拡張性の概要
+                      href: e-commerce-extensibility/overview.md
+                    - name: eコマース アーキテクチャの概要
+                      href: e-commerce-extensibility/architectural-overview.md
+                    - name: eコマース コンポーネント
+                      href: e-commerce-extensibility/ecommerce-components.md
+                    - name: eコマース オンライン拡張機能の開発を開始する
+                      href: e-commerce-extensibility/sdk-getting-started.md
+                    - name: システム要件
+                      href: e-commerce-extensibility/system-requirements.md
+                - name: 環境設定
+                  items:
+                    - name: 開発環境
+                      href: e-commerce-extensibility/setup-dev-environment.md
+                    - name: 開発環境 (.env) ファイルのコンフィギュレーション
+                      href: e-commerce-extensibility/configure-env-file.md
+                    - name: Commerce クラウド環境に対して eコマース開発環境をコンフィギュレーションする
+                      href: e-commerce-extensibility/debug-tier-1.md
+                - name: API と参照
+                  items:
+                    - name: CLI コマンド リファレンス
+                      href: e-commerce-extensibility/cli-command-reference.md
+                    - name: モジュールの構造
                       items:
-                        - name: POS 拡張機能の基本
-                          href: dev-itpro/pos-extension/pos-extension-basics.md
-                        - name: POS でのカスタム ビューの作成
-                          href: dev-itpro/pos-extension/custom-pos-view.md
-                        - name: 拡張機能での POS コントロールの使用
-                          href: dev-itpro/pos-extension/controls-pos-extension.md
-                        - name: タスク
+                        - name: モジュールの概要
+                          href: e-commerce-extensibility/modules-overview.md
+                        - name: モジュール定義ファイル
+                          href: e-commerce-extensibility/module-definition-file.md
+                        - name: モジュール反応コンポーネント ファイル
+                          href: e-commerce-extensibility/module-react-file.md
+                        - name: モジュール表示ファイル
+                          href: e-commerce-extensibility/module-view-file.md
+                        - name: モジュール データ ファイル
+                          href: e-commerce-extensibility/module-data-file.md
+                        - name: モジュール モック ファイル
+                          href: e-commerce-extensibility/module-mock-file.md
+                        - name: モジュール テスト ファイル
+                          href: e-commerce-extensibility/module-test-file.md
+                        - name: モジュール props.autogenerated.ts ファイル
+                          href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                        - name: モジュール コンフィギュレーションのプリセット
+                          href: e-commerce-extensibility/module-config-presets.md
+                - name: 新しい機能の作成
+                  items:
+                    - name: モジュール
+                      items:
+                        - name: 新しいモジュールの作成
+                          href: e-commerce-extensibility/create-new-module.md
+                        - name: モジュール構成フィールドの追加
+                          href: e-commerce-extensibility/add-module-config-fields.md
+                        - name: プレビュー モジュールとデバッグ モジュール
+                          href: e-commerce-extensibility/test-module.md
+                        - name: モジュール モックを使用したテスト モジュール
+                          href: e-commerce-extensibility/test-module-mock.md
+                        - name: ページ モックを使用したテスト モジュール
+                          href: e-commerce-extensibility/test-page-mock.md
+                        - name: コンテナー モジュール
+                          href: e-commerce-extensibility/container-modules.md
+                        - name: レイアウト コンテナー モジュールの作成
+                          href: e-commerce-extensibility/create-layout-container.md
+                        - name: ページ コンテナー モジュールの作成
+                          href: e-commerce-extensibility/create-page-containers.md
+                        - name: モジュールのローカライズ
+                          href: e-commerce-extensibility/localize-module.md
+                        - name: 詳細
                           items:
-                            - name: POS 拡張機能での Knockout.js の使用
-                              href: dev-itpro/pos-extension/knockout-pos-extension.md
-                            - name: カスタム ヘッドレス Commerce API の使用
-                              href: dev-itpro/pos-extension/consume-apis-pos.md
-            - name: Hardware Station の拡張機能
+                            - name: 要求プロパティ オブジェクト
+                              href: e-commerce-extensibility/request-properties-object.md
+                            - name: アプリの設定
+                              href: e-commerce-extensibility/app-settings.md
+                            - name: 有効な機能に基づくサイト ビルダー グローバル構成設定のコンフィギュレーション
+                              href: e-commerce-extensibility/config-settings-for-features.md
+                            - name: プラットフォーム設定ファイル
+                              href: e-commerce-extensibility/platform-settings.md
+                            - name: Cookie API の概要
+                              href: e-commerce-extensibility/cookie-api-overview.md
+                            - name: 対話型コンポーネントの概要
+                              href: e-commerce-extensibility/interactive-components.md
+                            - name: ローカル開発中にサインイン状態をモックする
+                              href: e-commerce-extensibility/mock-sign-in.md
+                            - name: コンテキストに基づいて表示されるモジュール プロパティの構成
+                              href: e-commerce-extensibility/configure-properties-context.md
+                            - name: CultureInfoFormatter クラスを使用したグローバライズ モジュール
+                              href: e-commerce-extensibility/globalize-modules.md
+                            - name: Azure Key Vault を設定してキーをセキュアに管理する
+                              href: e-commerce-extensibility/set-up-key-vault.md
+                            - name: 画像のコンポーネント
+                              href: e-commerce-extensibility/image-component.md
+                    - name: データ アクション
+                      items:
+                        - name: データ アクションの概要
+                          href: e-commerce-extensibility/data-actions.md
+                        - name: データ アクション キャッシュのオプション
+                          href: e-commerce-extensibility/data-action-cache.md
+                        - name: モックを使用したデータ アクションのテスト
+                          href: e-commerce-extensibility/test-data-action-mocks.md
+                        - name: ページ読み込みデータ アクション
+                          href: e-commerce-extensibility/page-load-data-action.md
+                        - name: イベント ベースのデータ アクション
+                          href: e-commerce-extensibility/event-based-data-actions.md
+                        - name: コア データ アクション
+                          href: e-commerce-extensibility/core-data-actions.md
+                        - name: Commerce Scale Unit API の呼び出し
+                          href: e-commerce-extensibility/call-retail-server-apis.md
+                        - name: Retail Server 拡張機能 API の呼び出し
+                          href: e-commerce-extensibility/call-retail-extension-api.md
+                        - name: 詳細
+                          items:
+                            - name: チェーン データ アクション
+                              href: e-commerce-extensibility/chain-data-actions.md
+                            - name: バッチ データ アクション
+                              href: e-commerce-extensibility/batch-data-actions.md
+                            - name: 監視可能なデータ アクション
+                              href: e-commerce-extensibility/create-observable-data-action.md
+                            - name: モジュール間で状態を共有
+                              href: e-commerce-extensibility/share-state-across-modules.md
+                            - name: データ アクション キャッシュの設定
+                              href: e-commerce-extensibility/data-action-cache-settings.md
+                            - name: AJAX を含むサーバー側データ アクションの呼び出し
+                              href: e-commerce-extensibility/data-actions-with-ajax.md
+                    - name: テーマ
+                      items:
+                        - name: テーマの概要
+                          href: e-commerce-extensibility/theming.md
+                        - name: テーマの作成
+                          href: e-commerce-extensibility/create-theme.md
+                        - name: テーマ設定の構成
+                          href: e-commerce-extensibility/configure-theme-settings.md
+                        - name: テーマ スタイル プリセットの構成
+                          href: e-commerce-extensibility/theme-style-presets.md
+                        - name: カスタマイズ コードへのカスタム リソースの追加
+                          href: e-commerce-extensibility/add-custom-resources.md
+                    - name: スクリプトの挿入
+                      items:
+                        - name: スクリプトの挿入
+                          href: e-commerce-extensibility/script-injector.md
+                    - name: コネクタ
+                      items:
+                        - name: コネクタの構成と有効化
+                          href: e-commerce-extensibility/connectors.md
+                - name: 既存の機能の拡張
+                  items:
+                    - name: モジュール
+                      items:
+                        - name: モジュール ライブラリ モジュールの複製
+                          href: e-commerce-extensibility/clone-starter-module.md
+                        - name: モジュール定義の拡張
+                          href: e-commerce-extensibility/extend-module-definition.md
+                    - name: データ アクション
+                      items:
+                        - name: データ アクションの上書き
+                          href: e-commerce-extensibility/data-action-overrides.md
+                        - name: データ アクションのフック
+                          href: e-commerce-extensibility/data-action-hooks.md
+                    - name: テーマ
+                      items:
+                        - name: テーマを拡張してモジュール拡張機能を追加する
+                          href: e-commerce-extensibility/theme-module-extensions.md
+                        - name: テーマのモジュール ライブラリ コンポーネントをオーバーライドする
+                          href: e-commerce-extensibility/override-theme-component.md
+                        - name: 基準テーマからテーマを拡張する
+                          href: e-commerce-extensibility/extend-theme.md
+                - name: パッケージと展開
+                  items:
+                    - name: パッケージ コンフィギュレーションとオンライン環境へのその配置
+                      href: e-commerce-extensibility/package-deploy.md
+                    - name: SDK およびモジュール ライブラリの更新
+                      href: e-commerce-extensibility/sdk-updates.md
+                    - name: Azure DevOps コードの共有の設定とビルド パイプラインの作成
+                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
+                - name: ベスト プラクティス、パフォーマンス、FAQ
+                  items:
+                    - name: Dynamics 365 Commerce 開発のベスト プラクティス
+                      href: e-commerce-extensibility/best-practices-dev.md
+                    - name: Dynamics 365 Commerce オンライン SDK に関する FAQ
+                      href: e-commerce-extensibility/sdk-faq.md
+                    - name: Dynamics 365 Commerce 開発に関するデバッグのベスト プラクティス
+                      href: e-commerce-extensibility/debugging-best-practices.md
+                    - name: メモリ リークについて e コマース サイトのページをテストする
+                      href: e-commerce-extensibility/memory-leak-detection.md
+                    - name: パフォーマンス
+                      items:
+                        - name: ページ キャッシュの構成
+                          href: e-commerce-extensibility/page-caching.md
+                        - name: データ アクション インスタンス キャッシュ
+                          href: e-commerce-extensibility/instance-cache.md
+                    - name: テレメトリと分析
+                      items:
+                        - name: テレメトリ ロガー
+                          href: e-commerce-extensibility/telemetry-logger.md
+            - name: Commerce HQ
               items:
-                - name: Hardware Station および拡張機能
-                  href: dev-itpro/hardware-station-extensibility.md
-                - name: POS と新しいハードウェア デバイスの統合
-                  href: dev-itpro/hardware-device-extension.md
-            - name: Retail Server の拡張機能
+                - name: パッケージと展開
+                  items:
+                    - name: 財務と運用の展開のための Commerce 支払パッケージの作成
+                      href: dev-itpro/payment-connector-package.md
+            - name: Retail SDK (レガシ)
               items:
-                - name: Commerce Scale Unit の顧客およびコンシューマー API
-                  href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
-                  href: dev-itpro/retail-server-icontroller-extension.md
-                - name: 新しい Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以前)
-                  href: dev-itpro/retail-server-extension.md
-                - name: Retail Typescript と C# プロキシ
-                  href: dev-itpro/typescript-proxy-retail-pos.md
-                - name: 外部アプリケーションでの Retail Server API の使用
-                  href: dev-itpro/consume-retail-server-api.md
-            - name: Commerce Runtime (CRT) の拡張機能
-              items:
-                - name: CRT のアーキテクチャとコンフィギュレーション
-                  href: dev-itpro/commerce-runtime-overview.md
-                - name: CRT サービス
-                  href: dev-itpro/crt-services.md
-                - name: CRT拡張機能のパターン
-                  href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Retail チャネルのシークレットの管理
-                  href: dev-itpro/manage-secrets.md
-                - name: CRT の拡張機能およびトリガー
-                  href: dev-itpro/commerce-runtime-extensibility-trigger.md
-                - name: トリガーを使用したトランザクションのブロック
-                  href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: ロイヤルティの拡張機能
-                  href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-                - name: 梱包明細の拡張ポイント
-                  href: dev-itpro/extensions-shipping-carrier-integration.md
-                - name: チャネル データベース拡張機能
-                  href: dev-itpro/channel-db-extensions.md
-                - name: 拡張機能を介したカスタム CDX 同期の有効化
-                  href: dev-itpro/cdx-extensibility.md
-                - name: 注文属性の定義および設定
-                  href: dev-itpro/order-attributes.md
-                - name: 顧客属性
-                  href: dev-itpro/customer-attributes.md
-                - name: レシート拡張機能
-                  href: dev-itpro/retail-sdk/retail-sdk-samples.md
-                - name: Application Insights への拡張イベントの記録
-                  href: dev-itpro/commerce-application-insights.md
-                - name: ビジネス ロジックでの非同期 Commerce (CRT) API の作成
-                  href: dev-itpro/async-commerce-extension.md
-                - name: チャネル データベースの事前拡張された列
-                  href: dev-itpro/extended-columns.md
-                - name: Commerce Data Exchange の拡張 - リアルタイム サービス
-                  href: dev-itpro/extend-commerce-data-exchange.md
-            - name: 支払コネクタの拡張機能
-              items:
-                - name: 支払ターミナルの支払統合の作成
-                  href: dev-itpro/end-to-end-payment-extension.md
-                - name: 支払コネクタと支払デバイスの実装 (ホワイト ペーパー)
-                  href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
-                - name: 支払コネクタの配置
-                  href: dev-itpro/deploy-payment-connector.md
-                - name: バックオフィスの請求の増分取得
-                  href: dev-itpro/incremental-capture.md
-                - name: 支払ターミナルの拡張機能向けにローカライズされたカスタム エラー メッセージの作成
-                  href: dev-itpro/payment-custom-error-messages.md
-                - name: 支払コネクタ用の Windows インストーラーの作成
-                  href: dev-itpro/create-windows-installer-payment-connector.md
-                - name: 支払データの使用
-                  href: payment-connector-data-fields.md
-                - name: 支払コネクタの重複支払保護の有効化
-                  href: dev-itpro/duplicate-payments-protection.md
-                - name: Finance and Operations のデプロイのための Commerce 支払パッケージの作成
-                  href: dev-itpro/payment-connector-package.md
-            - name: サード パーティ E コマースの拡張機能
-              items:
-                - name: オンライン ストアのコンフィギュレーション
-                  href: dev-itpro/configure-online-store.md
-                - name: 認証プロバイダーのコンフィギュレーション
-                  href: dev-itpro/configure-authentication-providers.md
-                - name: eコマース プラットフォーム SDK
-                  href: dev-itpro/ecommerce-platform-sdk.md
-            - name: Commerce 拡張リソースおよびラベル ファイルのローカライズ
-              href: dev-itpro/extension-resource-localization.md
+                - name: 概要
+                  items:
+                    - name: Retail ソフトウェア開発キット (SDK)
+                      href: dev-itpro/retail-sdk/retail-sdk-overview.md
+                    - name: Retail ソフトウェア開発キット (SDK) の拡張機能サンプル
+                      href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+                    - name: Retail SDK に関する FAQ
+                      href: dev-itpro/retail-sdk/sdk-faq.md
+                    - name: Retail SDK の Visual Studio 2015 から Visual Studio 2017 への移行
+                      href: dev-itpro/retail-sdk/migrate-sdk.md
+                - name: 環境設定
+                  items:
+                    - name: 管理者のアクセス権を使用しないクラウド ホスト環境での開発
+                      href: dev-itpro/cloud-dev-box.md
+                    - name: Retail SDK ビルド パイプライン
+                      href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+                    - name: POS サンプルの実行
+                      href: dev-itpro/pos-run-samples.md
+                - name: 参照
+                  items:
+                    - name: eコマース プラットフォーム ソフトウェア開発キット (SDK)
+                      href: dev-itpro/ecommerce-platform-sdk.md
+                    - name: オンライン ストアの構成
+                      href: dev-itpro/configure-online-store.md
+                    - name: 認証プロバイダーの構成
+                      href: dev-itpro/configure-authentication-providers.md
+                - name: パッケージと展開
+                  items:
+                    - name: 展開可能パッケージの作成
+                      href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+                    - name: コード署名証明書を使用した MPOS appx の署名
+                      href: dev-itpro/pos-app-signing-certificate.md
+                    - name: Android および iOS での POS Hybrid アプリの設定
+                      href: dev-itpro/hybridapp.md
+                    - name: ブランドの作成と Retail Experience アプリへの適用
+                      href: dev-itpro/create-retail-experience-app.md
         - name: トラブルシューティング
           items:
             - name: 注文処理
@@ -2576,7 +2862,7 @@
                   href: troubleshoot/refund-declined.md
                 - name: Adyen 向け Dynamics 365 Payment Connector
                   items:
-                    - name: Adyen 向け Dynamics 365 Payment Connector のトラブルシューティング
+                    - name: Adyen 向け Dynamics 365 Payment Connector に関する問題のトラブルシューティング
                       href: troubleshoot/adyen-support.md
                     - name: '[次回の支払のために保存する] オプションが表示されない'
                       href: troubleshoot/next-payment-link-not-appearing.md
@@ -2602,13 +2888,19 @@
                   href: troubleshoot/pickup-store-link-missing.md
                 - name: 小売店舗が店舗リストに表示されない
                   href: troubleshoot/pickup-store-missing.md
-                - name: 在庫のない品目をチェックアウトできる
+                - name: 在庫のない品目を清算できる
                   href: troubleshoot/items-without-inventory-checked-out.md
+                - name: 評価とレビューのソリューションが有効になっていないと、検索結果とカテゴリ ページに評価の絞り込み機能が表示される
+                  href: troubleshoot/hide-ratings-refiner.md
+            - name: 顧客管理
+              items:
+                - name: 新規顧客の作成時にようこそメールが送信されない
+                  href: troubleshoot/email-not-sent-when-new-customer-created.md
             - name: SDK のトラブルシューティング
               items:
-                - name: レベル 1 Retail Server 仮想マシンに対するデバッグの eコマース開発環境の設定
+                - name: eコマース開発環境をセットアップしてレベル 1 Retail Server 仮想マシンにデバッグを実行する
                   href: troubleshoot/set-up-dev-environment-debugging.md
-    - name: Finance and Operations アプリの開発と管理
+    - name: 財務と運用アプリの開発と管理
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

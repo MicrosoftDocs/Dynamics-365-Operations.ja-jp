@@ -1,28 +1,30 @@
-- name: Finance and Operations アプリの開発と管理
+- name: 財務と運用アプリの開発と管理
   items:
-    - name: Finance and Operations アプリの開発と管理
+    - name: 財務と運用アプリの開発と管理
       items:
         - name: Finance and Operations アプリケーションのドキュメント
           href: ../fin-ops/index.md
-        - name: Finance and Operations アプリの開発と管理
+        - name: 財務と運用アプリの開発と管理
           href: index.md
         - name: 新機能および変更された機能
           items:
-            - name: Finance and Operations アプリの新機能または変更された機能
+            - name: 財務と運用アプリの新機能または変更された機能
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Platform update における新機能および変更された機能
+            - name: プラットフォーム更新プログラムの新機能および変更された機能
               items:
-                - name: プラットフォーム更新プログラムの最新情報や変更事項に関するホームページ
+                - name: プラットフォーム更新プログラムの新機能および変更された機能に関するホームページ
                   href: get-started/whats-new-home-page.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.21 (2021 年 10 月)
-                  href: get-started/whats-new-platform-updates-10-0-21.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.20 (2021 年 8 月)
-                  href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.19 (2021 年 6 月)
-                  href: get-started/whats-new-platform-updates-10-0-19.md
+                - name: バージョン 10.0.26 のプラットフォーム更新プログラム (2022 年 5 月)
+                  href: get-started/whats-new-platform-updates-10-0-26.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.25 (2022 年 4 月)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.24 (2022 年 2 月)
+                  href: get-started/whats-new-platform-updates-10-0-24.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.23 (2022 年 1 月)
+                  href: get-started/whats-new-platform-updates-10-0-23.md
             - name: 削除済みまたは非推奨の機能
               items:
-                - name: 削除済みまたは非推奨の機能のホーム ページ
+                - name: 削除済みまたは非推奨の機能に関するホーム ページ
                   href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: 削除済みまたは非推奨のプラットフォームの機能
                   href: get-started/removed-deprecated-features-platform-updates.md
@@ -32,42 +34,6 @@
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Microsoft Dynamics AX 2009 および 2012 のメインストリーム サポートの終了
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-        - name: ビジネス イベント
-          items:
-            - name: ビジネス イベントの概要
-              href: business-events/home-page.md
-            - name: アプリケーション ビジネス イベント
-              href: business-events/app-business-events.md
-            - name: ワークフロー ビジネス イベント
-              href: business-events/business-events-workflow.md
-            - name: バッチ ビジネス イベント
-              href: business-events/system-business-events.md
-            - name: ビジネス イベントとしての警告
-              href: business-events/alerts-business-events.md
-            - name: Microsoft Flow 内のビジネス イベント
-              href: business-events/business-events-flow.md
-            - name: ビジネス イベント開発者ドキュメント
-              href: business-events/business-events-dev-doc.md
-            - name: ビジネス イベントのトラブルシューティング
-              href: business-events/troubleshooting.md
-            - name: ビジネス イベントのユースケース
-              href: business-events/potential-use-cases.md
-            - name: チュートリアル
-              items:
-                - name: ビジネス イベントおよび Microsoft Flow
-                  href: business-events/how-to/how-to-flow.md
-                - name: ビジネス イベントおよび Azure Event Grid
-                  href: business-events/how-to/how-to-eventgrid.md
-                - name: ビジネス イベントおよび Azure Service Bus
-                  href: business-events/how-to/how-to-servicebus.md
-                - name: ビジネス イベントおよびワークフローの承認
-                  href: business-events/how-to/how-to-workflow.md
-                - name: ビジネス イベントおよび Microsoft Forms Pro
-                  href: business-events/how-to/FormsPro.md
-                - name: ビジネス イベントおよび Azure Event Hubs
-                  href: business-events/how-to/event-hub.md
-                - name: 財務期間終了時のビジネス イベント
-                  href: business-events/how-to/period-close.md
         - name: 継続的デリバリー
           items:
             - name: 継続的デリバリーのホーム ページ
@@ -84,7 +50,7 @@
               href: dev-tools/version-models-build.md
         - name: データ統合
           items:
-            - name: Finance and Operations アプリとサード パーティ サービス間の統合
+            - name: 財務と運用アプリとサード パーティ サービス間の統合
               href: data-entities/integration-overview.md
             - name: 優先順位に基づく調整
               hreF: data-entities/priority-based-throttling.md
@@ -134,15 +100,15 @@
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
                         - name: Finance and Operations の顧客への Sales の勘定の直接同期
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Sales の 製品への Finance and Operations の製品の直接同期
+                        - name: Sales 製品への Finance and Operations の製品の直接同期
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
                         - name: Finance and Operations の連絡先または顧客への Sales の連絡先の直接同期
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Finance and Operations への Sales の販売見積書ヘッダーおよび明細行の直接同期
+                        - name: 販売見積書のヘッダーおよび明細行の Sales から Finance and Operations への直接同期
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                        - name: Sales と Finance and Operations 間での販売注文の直接同期
+                        - name: 販売注文の Sales と Finance and Operations の間の直接同期
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Finance and Operations から Sales への請求書ヘッダーおよび明細行の直接同期
+                        - name: 売上請求書のヘッダーおよび明細行の Finance and Operations から Sales への直接同期
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                     - name: Field Service との統合のコンフィギュレーション
                       items:
@@ -150,7 +116,7 @@
                           href: ../../supply-chain/sales-marketing/field-service.md
                         - name: Finance and Operations の製品と Field Service の製品との同期
                           href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: Field Service の作業指示書と Finance and Operations の販売注文との同期
+                        - name: Field Service のワーク オーダーと Finance and Operations の販売注文との同期
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
                         - name: Field Service の契約の請求書と Finance and Operations の自由書式の請求書との同期
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
@@ -164,7 +130,7 @@
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
                         - name: Finance and Operations から Field Service への倉庫の同期
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Field Service から Finance and Operations への作業指示書の同期
+                        - name: Field Service から Finance and Operations へのプロジェクトのワーク オーダーの同期
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                     - name: Project Service Automation 統合のコンフィギュレーション
                       items:
@@ -226,7 +192,7 @@
                   href: data-entities/data-synchronize-date-and-time.md
                 - name: 一般仕訳エンティティを使用した伝票のインポート
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Finance and Operations アプリのデータ移行の最適化
+                - name: 財務と運用アプリのデータ移行の最適化
                   href: sysadmin/optimize-data-migration.md
             - name: データ エンティティの開発
               items:
@@ -268,11 +234,11 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Azure Data Lake の概要
-              href: data-entities/azure-data-lake-overview.md
-            - name: Azure Data Lake へのエクスポートのコンフィギュレーション
+            - name: Azure Data Lake へのエクスポートの概要
+              href: data-entities/Azure-Data-Lake-GA-version-overview.md
+            - name: Azure Data Lake へのエクスポート アドインのインストール
               href: data-entities/configure-export-data-lake.md
-            - name: Azure Data Lake の Finance and Operations アプリ
+            - name: Azure Data Lake の財務と運用アプリ
               href: data-entities/finance-data-azure-data-lake.md
             - name: エンティティ格納を Data Lake として使用可能にする
               href: data-entities/entity-store-data-lake.md
@@ -370,9 +336,9 @@
                   href: deployment/arm-onboarding.md
                 - name: 米国政府の LCS プロジェクトに対する Azure Resource Manager オンボード プロセスを完了する
                   href: deployment/arm-onbarding-us-goverment.md
-                - name: Azure ExpressRoute および Finance and Operations
+                - name: Azure ExpressRoute と Finance and Operations
                   href: deployment/expressroute.md
-                - name: Finance and Operations アーキテクチャ
+                - name: Finance and Operations のアーキテクチャ
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: クラウド環境への更新プログラムの適用
                   href: deployment/apply-deployable-package-system.md
@@ -442,6 +408,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: 複数の環境への同じ AD FS インスタンスの再利用
                       href: deployment/onprem-reuseadfs.md
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の SQL Serverインスタンスのアップグレード
+                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: ローカル エージェント
                   items:
                     - name: AD FS Microsoft 365 の互換性
@@ -462,13 +430,15 @@
               items:
                 - name: 配置可能なモデル パッケージの作成
                   href: deployment/create-apply-deployable-package.md
-                - name: 配置可能なパッケージのコマンドラインからのインストール
+                - name: コマンド ラインから展開可能パッケージをインストールする
                   href: deployment/install-deployable-package.md
                 - name: パッケージのアンインストール
                   href: deployment/uninstall-deployable-package.md
+                - name: ゼロ ダウンタイムで X++ カスタム スクリプトを実行する
+                  href: deployment/run-custom-scripts.md
                 - name: パッケージ アプリケーションに関する問題のトラブルシューティング
                   href: deployment/deployable-package-troubleshooting.md
-            - name: カスタム ヘルプの配置
+            - name: カスタム配置のヘルプ
               items:
                 - name: カスタム ヘルプの概要
                   href: help/custom-help-overview.md
@@ -494,9 +464,19 @@
                   href: help/language-locale.md
                 - name: ヘルプでの拡張、カスタマイズ、および共同作業
                   href: help/contributor-guide.md
+            - name: 展開に関する考慮事項
+              items:
+                - name: Dynamics 365 Finance と Dynamics 365 Supply Chain Management の主権クラウドとローカル クラウド展開オプション
+                  href: deployment/deployment-options-geo.md
+                - name: US Government Community Cloud (GCC) の Finance と Supply Chain Management
+                  href: deployment/us-gcc-deployment.md
+                - name: 中国で 21Vianet が運用する Finance と Supply Chain Management
+                  href: deployment/china-local-deployment.md
+                - name: フランスの財務と運用アプリ
+                  href: deployment/france-local-deployment.md
         - name: 開発およびカスタマイズ
           items:
-            - name: ホーム ページの開発およびカスタマイズ
+            - name: 開発およびカスタマイズのホーム ページ
               href: dev-tools/developer-home-page.md
             - name: アプリケーション スタックおよびサーバーのアーキテクチャ
               href: dev-tools/application-stack-server-architecture.md
@@ -536,6 +516,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Azure Pipelines での Lifecycle Services (LCS) 接続の作成
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Azure Pipelines での LCS 接続認証タスクの MSAL への更新
+                  href: dev-tools/pipeline-lcs-connection-update.md
                 - name: 新しい NuGet パッケージ用にホストされる Azure Pipeline の更新
                   href: dev-tools/pipeline-nuget-split.md
                 - name: Azure Pipelines でのレガシ パイプラインの更新
@@ -582,7 +564,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: モデルとパッケージ
                   href: dev-tools/models.md
-                - name: Finance and Operations プロジェクト タイプ
+                - name: Finance and Operations のプロジェクト タイプ
                   href: dev-tools/projects.md
                 - name: Visual Studio 用のツールおよびアドイン
                   href: dev-tools/developer-tools-add-ins.md
@@ -590,24 +572,24 @@
                   href: dev-tools/update-development-tools.md
             - name: X++ プログラミング言語
               items:
-                - name: X++ およびデバッガーの機能
-                  href: dev-tools/new-x-debugger-features.md
-                - name: X++ の Visual Studio 2017 の要件
-                  href: dev-tools/developer-tools-vs2017.md
-                - name: X++ コードのデバッグ
-                  href: dev-tools/debug-xpp.md
-                - name: 要求または応答シナリオの EventHandlerResult クラス
-                  href: dev-tools/event-handler-result-class.md
-                - name: C# および X++ ソース コードを使用したビジネス ロジックの記述
-                  href: dev-tools/write-business-logic.md
-                - name: X++ と X++ コンパイラの変更
-                  href: dev-tools/programming-language-support.md
-                - name: C# の LINQ プロバイダー
-                  href: dev-tools/linq-provider-c.md
-                - name: ベスト プラクティス ルールの記述
-                  href: dev-tools/author-best-practice-rules.md
-                - name: アプリケーション エクスプローラーのプロパティ
-                  href: dev-ref/application-explorer-aot-properties.md
+                - name: X++ 言語サポート
+                  items:
+                    - name: Visual Studio で X++ を使用する要件
+                      href: dev-tools/developer-tools-vs2017.md
+                    - name: X++ コードのデバッグ
+                      href: dev-tools/debug-xpp.md
+                    - name: 要求または応答シナリオの EventHandlerResult クラス
+                      href: dev-tools/event-handler-result-class.md
+                    - name: C# および X++ ソース コードを使用したビジネス ロジックの記述
+                      href: dev-tools/write-business-logic.md
+                    - name: C# の LINQ プロバイダー
+                      href: dev-tools/linq-provider-c.md
+                    - name: ベスト プラクティス ルールの記述
+                      href: dev-tools/author-best-practice-rules.md
+                    - name: アプリケーション エクスプローラーのプロパティ
+                      href: dev-ref/application-explorer-aot-properties.md
+                    - name: SysSetupConfigAttribute 属性
+                      href: dev-tools/syssetupconfigattribute.md
                 - name: X++ 言語リファレンス
                   items:
                     - name: X++ 言語リファレンスの概要
@@ -652,7 +634,7 @@
                           href: dev-ref/xpp-interfaces.md
                         - name: ライブラリ
                           href: dev-ref/xpp-library-objects.md
-                        - name: イベント
+                        - name: イベントと代表者
                           href: dev-ref/xpp-events.md
                     - name: X++ データの選択と操作
                       items:
@@ -878,7 +860,9 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: クラスおよびメソッドの属性を使用した SysTest フィルター処理
                   href: perf-test/systest-filtering.md
-                - name: 承認テストのライブラリ
+                - name: 複数の値をテストする SysTestRow 属性
+                  href: perf-test/systest-row.md
+                - name: 承認テスト ライブラリ
                   items:
                     - name: 承認テスト ライブラリのリソース
                       href: perf-test/acceptance-test-library.md
@@ -906,6 +890,8 @@
               href: dev-tools/date-effectivity.md
             - name: 独立系ソフトウェア ベンダーのための開発
               items:
+                - name: ISV 開発のホーム ページ
+                  href: dev-tools/isv-dev-home-page.md
                 - name: ISV Studio を使用した X++ モジュールのパッケージへのリンク
                   href: dev-tools/isv-studio-solutions.md
                 - name: ISV ライセンス
@@ -1002,13 +988,17 @@
                   href: lifecycle-services/cloud-operations-servicing.md
                 - name: Dynamics サービス エンジニアリング チームへのサービス要求の送信
                   href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-                - name: 予定された保守ウィンドウに関するよく寄せられる質問
+                - name: 計画メンテナンス ウィンドウに関するよく寄せられる質問
                   href: lifecycle-services/planned-maintenance-window-faq.md
-            - name: モニタリングおよび診断
-              href: lifecycle-services/monitoring-diagnostics.md
-            - name: 環境サービスの再開
+            - name: 監視と診断
+              items:
+                - name: 監視と診断のツール
+                  href: lifecycle-services/monitoring-diagnostics.md
+                - name: Azure Data Explorer を使用して生の情報ログをクエリする
+                  href: lifecycle-services/azure-data-explorer.md
+            - name: 環境サービスを再開する
               href: lifecycle-services/restart-environment-services.md
-            - name: 稼働停止をレポート
+            - name: 稼働停止をレポートする
               href: lifecycle-services/report-production-outage.md
             - name: ユーザー サインインの追跡
               href: lifecycle-services/user-logins.md
@@ -1018,20 +1008,28 @@
               href: lifecycle-services/performancetroubleshooting.md
             - name: クックブックの照会
               href: lifecycle-services/querycookbook.md
+            - name: サブスクリプションの期限切れとデータ削除
+              href: lifecycle-services/expired-subscription-data-deletion.md
             - name: Microsoft Dynamics 365 Translation Service
               items:
                 - name: Dynamics 365 Translation Service の概要
                   href: lifecycle-services/translation-service-overview.md
-                - name: ユーザー インタ フェース ファイルの翻訳
+                - name: ユーザー インターフェイス ファイルの翻訳
                   href: lifecycle-services/use-translation-service.md
                 - name: ドキュメント ファイルの翻訳
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: 翻訳メモリ ファイル
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Azure DevOps 拡張機能 (パブリック プレビュー)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform 統合
           items:
-            - name: Finance and Operations と Microsoft Power Platform の統合
+            - name: 概要
               href: power-platform/overview.md
+            - name: Power Platform 統合の有効化
+              href: power-platform/enable-power-platform-integration.md
+            - name: 認証と承認
+              href: power-platform/authentication-and-authorization.md
             - name: 二重書き込み
               items:
                 - name: 二重書き込みのホームページ
@@ -1048,11 +1046,13 @@
                       href: data-entities/dual-write/connection-setup.md
                     - name: 初期同期に関する考慮事項
                       href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: ライブ同期に関する制限事項
+                      href: data-entities/dual-write/sync-limits.md
                     - name: Lifecycle Services からの二重書き込みの設定
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: 既存の Finance and Operations アプリの二重書き込みの有効化
+                    - name: 既存の財務と運用アプリの二重書き込みを有効にする
                       items:
-                        - name: 既存の Finance and Operations アプリの二重書き込みの有効化
+                        - name: 既存の財務と運用アプリの二重書き込みを有効にする
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: システム要件と前提条件
                           href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1060,6 +1060,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: エンティティ マップの二重書き込みの有効化
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: 分離型二重書き込みアプリケーション オーケストレーション パッケージ
+                      href: data-entities/dual-write/separated-solutions.md
                     - name: 二重書き込みの通貨データ型の移行
                       href: data-entities/dual-write/currrency-decimal-places.md
                     - name: 販売注文の状態フィールドのマッピングを設定
@@ -1070,10 +1072,14 @@
                   items:
                     - name: エンティティとフィールドのマッピングのカスタマイズ
                       href: data-entities/dual-write/customizing-mappings.md
+                    - name: 二重書き込みのカスタマイズに関するガイダンス
+                      href: data-entities/dual-write/custom-best-practices.md
                     - name: 複数のエンティティ マップを処理する
                       href: data-entities/dual-write/multiple-entity-maps.md
                     - name: 二重書き込み設定後に法人を編集する
                       href: data-entities/dual-write/edit-legal-entity.md
+                    - name: メンテナンス時に二重書き込みを一時停止する
+                      href: data-entities/dual-write/pause-for-maintenance.md
                     - name: エラー管理と警告通知
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: アプリケーション ライフサイクル管理
@@ -1136,6 +1142,8 @@
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: 当事者およびグローバル アドレス帳モデルへのアップグレード
                       href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: 関係者データを表示する
+                      href: data-entities/dual-write/view-party.md
                     - name: 注記の統合
                       href: data-entities/dual-write/notes-integration.md
                     - name: マッピング参照
@@ -1156,16 +1164,18 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
                         - name: ライブ同期の問題のトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Finance and Operations アプリの二重書き込みの問題のトラブルシューティング
+                        - name: 財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: 当事者およびグローバル アドレス帳の問題に関するトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: ソリューションの認識に関する問題のトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Finance and Operations アプリのアップグレードの問題のトラブルシューティング
+                        - name: 財務と運用アプリのアップグレードに関する問題のトラブルシューティング
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Finance and Operations アプリと Dataverse での二重書き込みの構成の確認
+                        - name: 財務と運用アプリおよび Dataverse で二重書き込みの構成を確認する
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: テーブル マップ正常性確認のエラー コード
+                          href: data-entities/dual-write/table-map-health-check.md
                 - name: 二重書き込みに関してよく寄せられる質問
                   href: data-entities/dual-write/dual-write-faq.md
             - name: 仮想エンティティ
@@ -1176,12 +1186,58 @@
                   href: power-platform/entity-modeling.md
                 - name: アプリケーション ライフサイクル管理
                   href: power-platform/application-lifecycle-management.md
-                - name: Finance and Operations および Dataverse 管理リファレンス
+                - name: Dataverse 仮想エンティティの構成
                   href: power-platform/admin-reference.md
+                - name: Dataverse 仮想エンティティを有効化する
+                  href: power-platform/enable-virtual-entities.md
                 - name: Power Apps ポータルと Finance and Operations
                   href: power-platform/power-portal-reference.md
-                - name: Finance and Operations 仮想エンティティに関するよく寄せられる質問
+                - name: Finance and Operations 仮想エンティティに関するよくあるご質問
                   href: power-platform/faq.md
+            - name: ビジネス イベント
+              items:
+                - name: ビジネス イベントの概要
+                  href: business-events/home-page.md
+                - name: ビジネス イベント エンドポイントの管理
+                  href: business-events/managing-business-event-endpoints.md
+                - name: アプリケーション ビジネス イベント
+                  href: business-events/app-business-events.md
+                - name: ワークフロー ビジネス イベント
+                  href: business-events/business-events-workflow.md
+                - name: バッチ ビジネス イベント
+                  href: business-events/system-business-events.md
+                - name: ビジネス イベントとしての警告
+                  href: business-events/alerts-business-events.md
+                - name: データ イベント
+                  href: business-events/data-events.md
+                - name: Power Automate のビジネス イベント
+                  href: business-events/business-events-flow.md
+                - name: ビジネス イベント開発者ドキュメント
+                  href: business-events/business-events-dev-doc.md
+                - name: ビジネス イベントのトラブルシューティング
+                  href: business-events/troubleshooting.md
+                - name: ビジネス イベントのユースケース
+                  href: business-events/potential-use-cases.md
+                - name: チュートリアル
+                  items:
+                    - name: ビジネス イベントおよび Power Automate
+                      href: business-events/how-to/how-to-flow.md
+                    - name: ビジネス イベントおよび Azure Event Grid
+                      href: business-events/how-to/how-to-eventgrid.md
+                    - name: ビジネス イベントおよび Azure Service Bus
+                      href: business-events/how-to/how-to-servicebus.md
+                    - name: ビジネス イベントおよび Azure Service Bus キュー
+                      href: business-events/how-to/how-to-servicebus-queue.md
+                    - name: ビジネス イベントおよびワークフローの承認
+                      href: business-events/how-to/how-to-workflow.md
+                    - name: ビジネス イベントおよび Microsoft Forms Pro
+                      href: business-events/how-to/FormsPro.md
+                    - name: ビジネス イベントおよび Azure Event Hubs
+                      href: business-events/how-to/event-hub.md
+                    - name: Dataverse のイベントをサブスクライブする
+                      href: business-events/how-to/how-to-dataverse-events.md
+                    - name: 財務期間終了時のビジネス イベント
+                      href: business-events/how-to/period-close.md
             - name: アドイン
               items:
                 - name: アドインの概要
@@ -1192,7 +1248,7 @@
           items:
             - name: モバイル プラットフォームのリソース
               href: mobile-apps/platform/mobile-platform-home-page.md
-            - name: 使用開始
+            - name: 概要
               items:
                 - name: モバイル プラットフォームの使用を開始する
                   href: mobile-apps/platform/mobile-platform-getting-started.md
@@ -1438,6 +1494,8 @@
               href: perf-test/rsat/rsat-best-practices.md
             - name: Regression Suite Automation Tool を使用したデータ認識不可能テスト
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+            - name: Regression Suite Automation Tool (RSAT) を並列実行する
+              href: perf-test/rsat/rsat-parallel-execution.md
             - name: トラブルシューティング
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Lifecycle Services を使用したリリースのソリューション
@@ -1480,11 +1538,11 @@
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 のサポートの概要
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: 中国で 21Vianet が運用する Finance and Operations のサポートを受ける
+            - name: 中国の 21Vianet で運用される Finance and Operations に対するサポートの取得
               href: lifecycle-services/21vianet-support.md
-            - name: Finance and Operations アプリのテクニカル サポートを設定する
+            - name: 財務と運用アプリの技術サポートの設定
               href: lifecycle-services/support-experience.md
-            - name: Finance and Operations アプリのサポート エクスペリエンスを管理する
+            - name: 財務と運用アプリのサポート エクスペリエンスの管理
               href: lifecycle-services/cloud-powered-support-lcs.md
             - name: 運用サポートと監視
               href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
@@ -1512,7 +1570,7 @@
                   href: sysadmin/role-based-security.md
                 - name: セキュリティ アーキテクチャ
                   href: sysadmin/security-architecture.md
-                - name: Finance and Operations アプリの暗号化
+                - name: 財務と運用アプリの暗号化
                   href: sysadmin/encryption.md
                 - name: セッション非活動タイムアウトの設定
                   href: sysadmin/session-idle-timeout.md
@@ -1554,13 +1612,15 @@
                   href: sysadmin/batch-server-overview.md
                 - name: バッチ ジョブの作成
                   href: sysadmin/tasks/create-batch-job.md
-                - name: バッチ ジョブで自動再試行を実現
+                - name: バッチ再試行の有効化
                   href: sysadmin/retryable-batch.md
                 - name: バッチ ジョブのコピー
                   href: sysadmin/copy-batch-job.md
+                - name: 優先順位に基づくバッチスケジューリング
+                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: 有効なバッチ期間
                   href: sysadmin/activeperiod.md
-                - name: 有効なバッチ期間で夏時間をサポート
+                - name: 有効なバッチ期間における夏時間のサポート
                   href: sysadmin/batch-active-period-dst.md
                 - name: バッチ マネージャーのセキュリティ ロール
                   href: sysadmin/runby.md
@@ -1572,13 +1632,15 @@
                   href: sysadmin/batch-history-cleanup.md
                 - name: 実行中のバッチ ジョブのキャンセル
                   href: sysadmin/batch-abort.md
+                - name: バッチ OData API
+                  href: sysadmin/batch-odata-api.md
             - name: 最適化アドバイザー
               items:
                 - name: 最適化アドバイザーの概要
                   href: sysadmin/optimization-advisor-overview.md
-                - name: 最適化アドバイザーのルールの作成
+                - name: 最適化アドバイザーのルールを作成する
                   href: sysadmin/create-rules-optimization-advisor.md
-            - name: 稼働停止をレポート
+            - name: 稼働停止をレポートする
               href: lifecycle-services/report-production-outage.md
             - name: データベース ログの構成と管理
               href: sysadmin/configure-manage-database-log.md
@@ -1604,10 +1666,8 @@
                   href: migration-upgrade/analysis-sandbox.md
                 - name: AX 2012 アップグレード - 開発環境のデータ アップグレード
                   href: migration-upgrade/data-upgrade-2012.md
-                - name: AX 2012 アップグレード - データ アップグレードにともなう事前確認事項
+                - name: AX 2012 アップグレード - データ アップグレードに伴う事前確認事項
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: AX 2012 からのアップグレード - SQL トランザクション レプリケーション
-                  href: database/replication-setup.md
                 - name: AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
                   href: migration-upgrade/data-upgrade-self-service.md
                 - name: AX 2012 アップグレード - オンプレミス環境
@@ -1628,8 +1688,6 @@
                   items:
                     - name: 勘定科目表の区切り記号を一意にする
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
-                    - name: 単一伝票仕訳帳と通貨再評価のアップグレード
-                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
                     - name: プロジェクト リソースのスケジューリング データ モデル
                       href: migration-upgrade/data-model-changes-resource-management.md
                     - name: ワークフロー サブシステムの変更
@@ -1642,7 +1700,7 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: AX 2009 からのデータの移行
               items:
-                - name: AX 2009 から Finance and Operations へのデータの移行
+                - name: AX 2009 から Finance and Operations へのデータ移行
                   href: migration-upgrade/data-migration-tool.md
                 - name: AX 2009 の移行 － データ移行ツールのインストール
                   href: migration-upgrade/install-dmt.md
