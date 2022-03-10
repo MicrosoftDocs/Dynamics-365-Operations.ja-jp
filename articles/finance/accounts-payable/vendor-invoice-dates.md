@@ -2,25 +2,25 @@
 title: 仕入先請求書の日付
 description: このトピックでは、仕入先請求書に表示される日付について説明します。 また、転記日付を自動的に調整するためにシステムを設定する方法も説明します。
 author: sunfzam
-ms.date: 08/30/2021
+ms.date: 2/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: a066f828b47f297b8ad520b9eb0f4f311d49b111
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647898"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105467"
 ---
 # <a name="vendor-invoice-dates"></a>仕入先請求書の日付
 
@@ -50,6 +50,9 @@ ms.locfileid: "7647898"
     - **転記日付は常にシステム日付に変更する** - 転記中は、システムによって転記日付が自動的に変更されます。
     - **転記日付期間が終了または保留状態のときに転記日付をシステム日付に変更する** - システムは、転記時に転記日付をシステム日付に変更します。ただし、転記日付の対応する期間に **終了した** または **保留中** のステータスが設定されている場合にだけ変更されます。
     - **転記日付期間が終了済みまたは保留中のときに転記日を新しい期間の最初の日に変更する** - システムは、転記日を新しくオープンした期間の最初の日に変更しますが、転記日の対応する期間に **終了した** または **保留中** のステータスが設定されている場合にだけ変更されます。
+
+> [!NOTE]
+> 自動的に調整された新しい転記日付が新しい会計年度の場合、請求書の転記日付は更新されません。 "会計年度が変更されました。 転記日付を確認し、再入力してください。" というエラーが表示されます。 請求書の転記日付は、転記する新しい会計年度日付に更新する必要があります。
 
 ## <a name="impact-of-posting-date-changes"></a>転記日の変更の影響
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: f5fb4c7cb941b352bbc6e2fcf5347244e1c8a40c
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 1f6ade36ac184a3c8bf790fc0d899ea01d90c8d2
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920808"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952418"
 ---
 # <a name="inventory-visibility-tips"></a>在庫可視化のヒント
 
@@ -28,7 +28,10 @@ ms.locfileid: "7920808"
 - 複数の LCS 環境を使用する場合は、環境ごとに異なる Azure Active Directory (Azure AD) アプリケーションを作成します。 同じアプリケーション ID とテナント ID を使用して異なる環境の在庫視覚化アドインをインストールした場合、古い環境ではトークンの問題が発生します。 最後にインストールされた在庫可視化アドインのインスタンスのみが有効になります。
 - 在庫の可視性は、現在、クラウド ホスト環境ではサポートされていません。 これは、Tier-2+ 環境でのみサポートされます。
 - アプリケーション プログラミング インターフェース (API) は、現在、最大 100 個の個別項目を `ProductID` の値で照会することをサポートしています。 各クエリには、複数の `SiteID` と `LocationID` の値を指定することもできます。 最大制限は、`NumOf(SiteID) * NumOf(LocationID) <= 100` として定義されます。
+- バルク API では、要求ごとに最大 512 件のレコードを返します。
 - `fno` データ ソースは Supply Chain Management 用に予約されています。 在庫可視性アドインが Supply Chain Management 環境と統合されている場合は、[データソース](inventory-visibility-configuration.md#data-source-configuration)の `fno` に関連する設定を削除しないことをお勧めします。
+- 在庫品目一覧で `fno` データ ソースのデータを変更できない。 データ フローは一方向です。つまり、`fno` データ ソースに対するすべての数量の変更は、Supply Chain Management 環境から取得される必要があります。 したがって、API を使用して `fno` データ ソースに対する受信要求や引当要求を送信することはできません。
+- Supply Chain Management 環境に 1 つ以上の新しいメジャーを追加する場合は、在庫の可視性にも追加する必要があります。 ただし、新しいメジャーの数量変更はすべて Supply Chain Management 環境から行う必要があります。
 - 現在、[パーティション構成](inventory-visibility-configuration.md#partition-configuration)は、データの分散方法を示す 2 つの基本分析コード (`SiteId` と `LocationId`) で構成されています。 同じパーティションで運用することで、より高いパフォーマンスを低コストで実現できます。 ソリューションには、このパーティション構成が規定で含まれています。 したがって、 *自分で定義する必要はありません*。 既定のパーティション構成をカスタマイズしないでください。 それを削除したり変更したりすると、予期せぬエラーが発生する可能性があります。
 - パーティション構成で定義されている基本分析コードは、[プロダクトインデックスの階層構成](inventory-visibility-configuration.md#index-configuration) では定義しないでください。
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 756cc2c0e3b823b806887f3737a68b34e55b520c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 83ee0defbc96c9f44d1f2e431d78442edf06491c
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4409102"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594783"
 ---
 開発環境から標準ユーザー承認テスト (UAT) まで準備されたデータベース、または UAT 環境から前回エクスポートしたデータベースをインポートするには、次のステップに従います。
 
@@ -13,13 +13,15 @@ ms.locfileid: "4409102"
 3. 警告に注意してください。 バックアップ ファイルからクリーンアップされたデータ要素の一覧を確認します。
 4. インポート操作をすぐに開始します。
 
+> [!NOTE]
+> 管理者ユーザー、およびその他の内部サービス ユーザー アカウントを除くすべてのユーザーはインポート後に使用できなくなります。 そのため、管理者ユーザーは他のユーザーがシステムに復帰する前にデータの削除や難読化することができます。
 
 データベース バックアップ (.bacpac) ファイルをダウンロードした後、データベースを開発環境にインポートするには、レベル 1 環境の手動インポート操作の開始が可能です。 データベースをインポートするときは、これらのガイドラインに従うことお勧めします。
 
 - 必要な場合は、後で戻すことができるように、既存の AxDB データベースのコピーを保持します。
 - **AxDB\_fromProd** などの新しい名前の下に新しいデータベースをインポートします。
 
-最良のパフォーマンスを確実にするためには、\*.bacpac ファイルをインポート元のコンピューターにコピーします。 sqlpackage .NET Core for Windows を [Get sqlpackage .NET Core for Windows](https://docs.microsoft.com/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows) からダウンロードします。 **コマンド プロンプト** ウィンドウを開き、sqlpackage .NET Core フォルダーから次のコマンドを実行します。
+最良のパフォーマンスを確実にするためには、\*.bacpac ファイルをインポート元のコンピューターにコピーします。 sqlpackage .NET Core for Windows を [Get sqlpackage .NET Core for Windows](/sql/tools/sqlpackage-download#get-sqlpackage-net-core-for-windows) からダウンロードします。 **コマンド プロンプト** ウィンドウを開き、sqlpackage .NET Core フォルダーから次のコマンドを実行します。
 
 ```
 
@@ -35,4 +37,4 @@ SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<ta
 > [!NOTE]
 > インポート中に、ユーザー名およびパスワードは必要ありません。 既定では、SQL Server は、現在サインインしているユーザーに対して Microsoft Windows 認証を使用します。
 
-レベル 1 の環境に手動インポート処理を実行する方法については、[データベースのインポート](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-exportuat#import-the-database) を参照してください。 
+レベル 1 の環境に手動インポート処理を実行する方法については、[データベースのインポート](../database/dbmovement-scenario-exportuat.md#import-the-database) を参照してください。

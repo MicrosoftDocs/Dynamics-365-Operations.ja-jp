@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 51107731090b77e75a0e5a8c91b052d494b452e4
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 98641f9989322feb77ab683df66c2c1f9ad50a0d
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944918"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077068"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>ドイツ向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
 
@@ -156,13 +156,13 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 ## <a name="design-of-extensions"></a>拡張機能の設計
 
-ドイツ向け会計登録サービス統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md) に基づいています。 会計統合ソリューションの設計に関する詳細は、[会計統合サンプル設計の概要](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) を参照してください。
+ドイツ向け会計登録サービス統合サンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md) に基づいています。 会計統合ソリューションの設計に関する詳細は、[会計統合サンプル設計の概要](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) を参照してください。
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime 拡張機能の設計
 
 会計ドキュメント プロバイダーである拡張機能の目的は、サービスに特化したドキュメントを生成して会計登録サービスからの応答を処理することです。
 
-CRT 拡張機能は **Runtime.Extensions.DocumentProvider.EFRSample** です。 会計統合ソリューションの設計に関する詳細は、[コマースチャネルの会計統合の概要](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) を参照してください。
+CRT 拡張機能は **Runtime.Extensions.DocumentProvider.EFRSample** です。 会計統合ソリューションの設計に関する詳細は、[コマースチャネルの会計統合の概要](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) を参照してください。
 
 #### <a name="request-handler"></a>要求ハンドラー
 

@@ -5,18 +5,18 @@ author: RobinARH
 ms.date: 08/27/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18624e2af605cbf6620413facc691ea0e95f1036
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 414f744233fd09c846d742439ee2ad5433546459
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441524"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783040"
 ---
 # <a name="independent-software-vendor-isv-development-home-page"></a>独立系ソフトウェア ベンダー (ISV) 開発のホーム ページ
 
