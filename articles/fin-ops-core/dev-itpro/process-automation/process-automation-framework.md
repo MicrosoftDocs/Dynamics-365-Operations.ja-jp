@@ -2,25 +2,23 @@
 title: プロセスの自動化のフレームワークの開発
 description: このトピックでは、プロセス自動化フレームワークを使用する開発の概要について説明します。
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44f85c7805f4cc36067e184ff24de14dea7941b4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2cb5d1c34d37899254811f22e77571fbb330fb7c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685415"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781933"
 ---
 # <a name="process-automation-framework-development"></a>プロセスの自動化のフレームワークの開発
 
@@ -67,3 +65,6 @@ UI のカスタマイズのほとんどは、バックグラウンド プロセ�
 | [プロセスの実行](run-process.md)                     | あり | あり |
 | [結果とメッセージを記録する](log-results.md)          | あり | あり |
 | [ユーザー インターフェイスのカスタマイズ](ui-customization.md) | なし | [ユーザー インターフェイスのカスタマイズ](ui-customization.md)を参照してください。 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

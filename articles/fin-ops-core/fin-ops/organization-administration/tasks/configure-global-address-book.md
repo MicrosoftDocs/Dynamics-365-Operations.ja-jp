@@ -2,11 +2,9 @@
 title: グローバル アドレス帳のコンフィギュレーション
 description: グローバル アドレス帳の既定値およびセキュリティ ポリシーを設定するには、この手順を使用します。
 author: msftbrking
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 24d89e061cc3dfc4ef0d350730525ac5ab7af775
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 34b0ab8b2d3ffa840e20d73716265c445e77189044840fd6850c5bffb3e3365b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694668"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759068"
 ---
 # <a name="configure-the-global-address-book"></a>グローバル アドレス帳のコンフィギュレーション
 
@@ -45,3 +43,6 @@ ms.locfileid: "4694668"
 13. 一覧で、目的のレコードを見つけ、選択します。 Shift キーを押して、**選択されたロール** ウィンドウに追加する複数のロールを選択し、次に矢印をクリックして選択したロールを追加します。  
 14. **保存** をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

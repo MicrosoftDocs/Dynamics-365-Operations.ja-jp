@@ -2,9 +2,7 @@
 title: VALUEIN ER 関数
 description: このトピックでは、VALUEIN 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-manager: kfend
-ms.date: 08/18/2020
-ms.topic: article
+ms.date: 12/14/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5a0ac314a61abce610407550e65479cbf5a6b5b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: efa811df360b2ca38eb59bac849e70041405fa81
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565835"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922365"
 ---
 # <a name="valuein-er-function"></a>VALUEIN ER 関数
 
@@ -64,6 +62,9 @@ VALUEIN (input, list, list item expression)
 ```
 
 場合によっては、`EXISTS JOIN` オペレーターを使用してデータベース SQL ステートメントに変換されます。
+
+> [!NOTE]
+> `VALUEIN` 関数が返す値は、この関数が [`FILTER`](er-functions-list-filter.md) 関数と [`WHERE`](er-functions-list-where.md) 関数のどちらの選択条件を指定するために使用されたかによって[異なり](er-functions-list-filter.md#usage-notes)ます。
 
 ## <a name="example-1"></a>例 1
 

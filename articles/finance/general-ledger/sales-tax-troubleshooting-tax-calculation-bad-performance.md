@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6fce4e2cb8c5507769533a875e23ccc4531abf51
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: da19a83945450c2d35f95be2241b84e407860fe7808ff83934686ca2e00859bc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748957"
 ---
 # <a name="tax-calculation-performance-affects-transactions"></a>税計算のパフォーマンスがトランザクションに与える影響
 
@@ -36,7 +36,7 @@ ms.locfileid: "6020142"
 - 複数のセッションで、同じ取引税計算を同時に処理します。
 - トランザクションには複数の明細行が作成され、ビューはリアルタイムで更新されます。 たとえば、**一般仕訳帳** ページの **計算上の消費税金額** フィールドは、明細行のフィールドが変更された場合にリアルタイムで更新されます。
 
-   [![仕訳伝票ページの計算上の消費税金額フィールド](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
+   [![仕訳伝票ページの計算上の消費税金額フィールド。](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
 これらの条件が満たされている場合は、税計算を遅延させます。
 
@@ -53,11 +53,11 @@ ms.locfileid: "6020142"
 
 - トランザクションにより、システムはセッションが終了するまで応答を停止します。 そのため、トランザクションで税の結果を計算できません。 次の図は、表示される「セッション終了」メッセージ ボックスを示しています。
 
-    [![セッション終了メッセージ](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
+    [![セッション終了メッセージ。](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
 
 - **TaxUncommitted** メソッドは、他のメソッドより時間がかかります。 たとえば、次の図では、**TaxUncommitted::updateTaxUncommitted()** メソッドの所要時間は 43,347.42 秒ですが、他のメソッドの所要時間は 0.09 秒です。
 
-    [![メソッドの期間](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
+    [![メソッドの期間。](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
 
 ## <a name="customizing-and-calling-tax-calculation"></a>税計算のカスタマイズと呼び出し
 

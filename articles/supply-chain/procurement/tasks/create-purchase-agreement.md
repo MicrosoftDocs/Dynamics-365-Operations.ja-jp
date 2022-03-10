@@ -1,26 +1,24 @@
 ---
 title: 購買契約書の作成
 description: このトピックでは、購買契約書の作成方法について説明します。
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchAgreement, PurchAgreementCreate, InventItemIdLookupSimple, AgreementConfirmRunForm, PurchAgreementHistory
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 92c9b429a05a2c25672cc14a0c9ee7adfef42631
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ee2cf437446f2e4c2cdd3cc0cd3be863bbafa132
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016834"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565450"
 ---
 # <a name="create-a-purchase-agreement"></a>購買契約書の作成
 
@@ -71,3 +69,6 @@ ms.locfileid: "5016834"
 5. **購買契約確認** を選択します。 **プレビュー/印刷** オプションにより、仕入先に印刷または送信する購買契約書のドキュメントを生成できます。 契約を更新して後で再確認すると、両方のバージョンがここに表示されます。  
 6. ページを閉じます。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,6 @@
 title: ワークフローでの条件付き意思決定のコンフィギュレーション
 description: 条件判断のプロパティをコンフィギュレーションするには、次の手順に従います。
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a593d4e188f47b73967f0c5468f7d7c3e9f64dc8
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0fa708b4ac1f17a9ed6852a9eeb3e764b750a4a4
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567463"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070961"
 ---
 # <a name="configure-conditional-decisions-in-a-workflow"></a>ワークフローでの条件付き意思決定のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 条件判断のプロパティをコンフィギュレーションするには、次の手順に従います。
 

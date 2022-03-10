@@ -1,7 +1,7 @@
 ---
 title: データ エンティティのビルドおよび使用
 description: このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,22 @@ ms.reviewer: sericks
 ms.custom: 77523
 ms.assetid: 1de997fb-d5c4-4668-9759-0758d141a3eb
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e866ab1d7458798ab012066a8d95f1351255ead0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2b06bf8760c7506cbe74ab4066303a79b5d5b8ff
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356277"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068750"
 ---
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。 データのインポートとエクスポート、統合、および OData サービスなどのさまざまな統合シナリオで、これらのデータ エンティティが使用される方法もプレビューされます。
 
@@ -78,7 +81,7 @@ FMLabCustomerEntity
 
 ### <a name="create-a-new-project"></a>新しいプロジェクトの作成
 
-1. Visual Studio で、**ファイル** &gt; **新規** &gt; **プロジェクト** をクリックして、**Finance and Operations プロジェクト** を選択します。
+1. Visual Studio で、**ファイル** &gt; **新規** &gt; **プロジェクト** の順にクリックしてから、**Finance and Operations のプロジェクト** を選択します。
 2. プロジェクトを右クリックして **プロパティ** をクリックし、プロジェクトがフリート管理モデルであることを確認します。 設定されていない場合、**モデル** プロパティを **フリート管理** に設定します。
 
 ### <a name="add-a-new-data-entity-to-your-project"></a>プロジェクトへの新しいデータ エンティティの追加

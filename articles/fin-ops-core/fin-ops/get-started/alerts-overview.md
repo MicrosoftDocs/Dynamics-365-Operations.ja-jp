@@ -1,26 +1,24 @@
 ---
-title: 警告の概要
+title: 警告の概要 (ビデオを含む)
 description: このトピックでは、警告に関する一般情報を提供します。 警告を使用することで、作業日に追跡したいイベントに関する情報を常に受け取ることができます。
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/04/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 191f8a5d788f57964e7870167109e98cbde65c43
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: c3332bdf7f2edb693c95a4d5a6f95906e14c0a42
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694167"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984971"
 ---
 # <a name="alerts-overview"></a>警告の概要
 
@@ -79,12 +77,15 @@ ms.locfileid: "4694167"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-[警告を使用してフィルター処理されたデータを監視する方法](https://youtu.be/ZYKMcv6kl9s) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は YouTube でご覧いただけます。
+[警告を使用してフィルタ処理されたデータを監視する方法](https://youtu.be/ZYKMcv6kl9s) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は YouTube でご覧いただけます。
 
 ### <a name="alert-rule-options"></a>警告ルールオプション
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-[警告ルールオプション](https://youtu.be/cpzimwOjicM) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は YouTube でご覧いただけます。
+[警告ルールオプション](https://youtu.be/cpzimwOjicM) ビデオ (上記) を含む、[Finance and Operations プレイリスト](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) は、YouTube でご覧いただけます。
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: 複合データ エンティティの開発
 description: 複合エンティティは、相互に関連する複数のエンティティを利用して単一のエンティティを構築できる概念です。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: sericks
 ms.custom: 18411
 ms.assetid: 1cb19868-cbfd-4f45-bc47-39b9f303583d
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 639aba7d3daa13f9981e8c3ab5a4bfff7b141ec2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b285e9a87477097608bff2d8384bc35e4985959f
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748657"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403910"
 ---
 # <a name="develop-composite-data-entities"></a>複合データ エンティティの開発
 
@@ -34,7 +34,7 @@ ms.locfileid: "5748657"
 ## <a name="example"></a>例
 売上ヘッダーと販売明細行は、システムの 2 つの異なるエンティティです。 顧客の要求がそのヘッダーを示し、明細行が 1 つのドキュメントの一部である場合、これら 2 つのエンティティは複合エンティティとしてマージすることができます。 サンプル販売注文エンティティ: 複合エンティティ (MySalesTableCompositeEntity) は、販売注文ヘッダー エンティティ (MySalesTableEntity) と販売注文明細行エンティティ (MySalesTableLineEntity) から構成される販売注文ドキュメントを表します。
 
-[![DevelopingCompositeEntities (17)](./media/developingcompositeentities-17-1024x290.png)](./media/developingcompositeentities-17.png)
+[![DevelopingCompositeEntities (17)。](./media/developingcompositeentities-17-1024x290.png)](./media/developingcompositeentities-17.png)
 
 リンクされたエンティティに基づいて、これらのエンティティは、エンティティの埋め込み要素タグを持つ XML ドキュメントとして公開されます。 XML はデータ管理で複合エンティティを公開する唯一の方法です。
 
@@ -67,24 +67,24 @@ XML 内の各ノードでは、個々のエンティティから属性を表し�
 
 リレーション ノードの親エンティティへのリレーションを追加します。 例 – MySalesLineEntity は、MySalesTableEntity と関係性があります。
 
-[![DevelopingCompositeEntities (18)](./media/developingcompositeentities-18.png)](./media/developingcompositeentities-18.png)
+[![DevelopingCompositeEntities (18)。](./media/developingcompositeentities-18.png)](./media/developingcompositeentities-18.png)
 
 ### <a name="step-3-create-a-new-composite-entity"></a>手順 3: 新しい複合エンティティを作成する
 
 1. **Composite entity** タイプの新しい **Dynamics 365** コンポーネント品目をプロジェクトに追加します。
 2. デザイナー モードで、エンティティを右クリックし、**新しいルート データ エンティティ参照** を選択します。
 
-    [![DevelopingCompositeEntities (2)](./media/developingcompositeentities-2.png)](./media/developingcompositeentities-2.png)
+    [![DevelopingCompositeEntities (2)。](./media/developingcompositeentities-2.png)](./media/developingcompositeentities-2.png)
 
 3. 親データ エンティティにデータ エンティティを設定します。 ここでは、MySalesTableEntity です。
 4. 親エンティティ ノードを右クリックし、**新しい埋め込みデータ エンティティ参照** を選択します。
 
-    [![DevelopingCompositeEntities (3)](./media/developingcompositeentities-3.png)](./media/developingcompositeentities-3.png)
+    [![DevelopingCompositeEntities (3)。](./media/developingcompositeentities-3.png)](./media/developingcompositeentities-3.png)
 
 5. 子エンティティとして埋め込みデータ エンティティを設定します。 ここでは、MySalesLineEntity です。
 6. 埋め込みデータ エンティティ プロパティのドロップダウン リストから **関係** プロパティを設定します。
 
-    [![DevelopingCompositeEntities (4)](./media/developingcompositeentities-4.png)](./media/developingcompositeentities-4.png)
+    [![DevelopingCompositeEntities (4)。](./media/developingcompositeentities-4.png)](./media/developingcompositeentities-4.png)
 
 7. 複合エンティティには、複数レベルの子エンティティがサポートされています。
 
@@ -94,11 +94,11 @@ XML 内の各ノードでは、個々のエンティティから属性を表し�
 
 1. MySalesLineStaging テーブルの外部キー関係を追加します。
 
-    [![DevelopingCompositeEntities (5)](./media/developingcompositeentities-5.png)](./media/developingcompositeentities-5.png)
+    [![DevelopingCompositeEntities (5)。](./media/developingcompositeentities-5.png)](./media/developingcompositeentities-5.png)
 
 2. 複合データ エンティティに関連付けられているすべてのステージング テーブルに、2 つの列、RowId と ParentRowId (int 型) を追加します。 列のプロパティについては、SysCompositeHeaderStaging テーブルを参照してください。
 
-    [![DevelopingCompositeEntities (7)](./media/developingcompositeentities-7.png)](./media/developingcompositeentities-7.png)
+    [![DevelopingCompositeEntities (7)。](./media/developingcompositeentities-7.png)](./media/developingcompositeentities-7.png)
 
 これらの列は、ターゲット データのランタイム リレーションシップを定義するために使用されます。
 
@@ -111,7 +111,7 @@ XML 内の各ノードでは、個々のエンティティから属性を表し�
 
 1. **DIXF パラメータ &gt; エンティティ設定** に移動します。 **エンティティ リストの更新** をクリックします。
 
-    [![DevelopingCompositeEntities (8)](./media/developingcompositeentities-8-1024x212.png)](./media/developingcompositeentities-8.png)
+    [![DevelopingCompositeEntities (8)。](./media/developingcompositeentities-8-1024x212.png)](./media/developingcompositeentities-8.png)
 
 2. 別の方法として、複合エンティティ リストのメタデータを更新するために次のジョブを書き込むことができます。
 

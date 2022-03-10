@@ -2,7 +2,7 @@
 title: Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 description: このトピックでは、クラウドでホストされているコマース チャネル コンポーネントへの更新プログラムと拡張機能を適用する方法について説明します。
 author: AamirAllaq
-ms.date: 07/28/2020
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 31440c7f1b71637b645ee37de4c51fe11389c3f1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0a7f9d2726260a6cf694b58e51ad5c5959e42a88
+ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748253"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7919436"
 ---
 # <a name="apply-updates-and-extensions-to-commerce-scale-unit-cloud"></a>Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用
 
@@ -58,8 +58,29 @@ CSU を更新するには、それぞれについて、次の手順を実行し�
 > [!NOTE]
 > 拡張機能と更新プログラムを同時に適用するには、1 回のダウンタイムが必要なため、複数のダウンタイムを避ける効果的な方法です。
 
-## <a name="view-history"></a>履歴の表示
+### <a name="troubleshooting-updates"></a>アップデートのトラブルシューティング
+
+#### <a name="potential-downgrade"></a>ダウングレードの可能性
+環境内の Commerce Scale Unit に更新を適用すると、バージョンのダウングレード検出に関するエラー メッセージが表示される場合があります。
+
+**エラー メッセージ** 
+
+「バージョン 'X.XX.XXXXX.X' からバージョン 'X.XX.XXXXX.X' へのダウングレードの可能性が識別されたため、この操作はキャンセルされました」
+
+**説明** 
+
+この問題は、適用しようとするサービス更新プログラムに含まれていない可能性がある品質更新プログラム (修正プログラム) が Commerce Scale Unit に適用されている場合に発生します。 これは、最新のサービス更新にまだ最新の品質更新が発行されていないため (まれ)、または最新バージョンではないサービス更新のバージョンに手動で更新している可能性があるためです。
+
+**解決策** 
+
+1. 更新プロセス中にサービス更新の最新バージョンを選択したことを確認してください。
+2. サービス更新プログラムで最新の品質更新プログラムをまだ利用できない場合は、最大 3 営業日待機し、もう一度やり直してください。 それでも問題が解消しない場合は、サポート リクエストを送信することができます。
+
+## <a name="view-history"></a>履歴を表示する
 最新の操作履歴をスケールユニットで表示するには、**アクション** タブの **履歴** を選択し、**スケール ユニットの履歴** ページを開きます。 このページでは、初期化、サービス更新、品質更新、バージョン、拡張機能の詳細、その他の関連情報など、最近の操作を表示できます。
+
+## <a name="restart-commerce-scale-unit"></a>Commerce Scale Unit を再起動する
+トラブルシューティングの際に、Commerce Scale Unit はサービスのセルフサービス再起動を許可します。 Commerce Scale Unit の再起動は、サービスの信頼性やパフォーマンスに関する問題を解決するのに役立ちます。 Commerce Scale Unit を再起動するには、Scale Unit を選択し、**再起動** を選択します。 ダイアログ ボックスが表示されます。 **再起動** を選択すると、サービスが再開されます。 Commerce Scale Unit を再起動すると、再起動する前にすべての有効な接続が閉じられます。 **強制再起動** オプションを選択して、直ちに再起動することもできます。 これにより、直ちにすべての有効な接続が閉じられ、再起動が開始されます。
 
 ## <a name="csu-auto-update-sequence"></a>CSU の自動更新順序
 
@@ -68,7 +89,7 @@ CSU を更新するには、それぞれについて、次の手順を実行し�
 
 CSU は、Microsoft によって自動更新された後、次の順序で実行されます。
 
-![CSU の自動更新順序](./media/CSU-auto-update-timeline.png)
+![CSU の自動更新順序。](./media/CSU-auto-update-timeline.png)
 
 
 

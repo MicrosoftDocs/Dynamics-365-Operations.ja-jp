@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77159f9dd18f9295a9f7b6cee262bc2bbb34332e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e28fbd4fe0be7b031c3f777d6d39a20c5691746c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744281"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345675"
 ---
 # <a name="install-the-document-routing-agent-to-enable-network-printing"></a>ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 
@@ -53,7 +53,7 @@ ms.locfileid: "5744281"
 1. **ネットワーク プリンターの管理** ページを開きます。(**組織管理** &gt; **設定** &gt; **ネットワーク プリンター**)
 2. **オプション** タブの、**アプリケーション** グループで、**ドキュメント回覧エージェント インストーラーのダウンロード** をクリックします。
 
-    [![download-document-routing-agent-installer](./media/download-document-routing-agent-installer.png)](./media/download-document-routing-agent-installer.png)
+    [![download-document-routing-agent-installer.](./media/download-document-routing-agent-installer.png)](./media/download-document-routing-agent-installer.png)
 
 3. インストール プロセスを開始するためにダウンロードしたファイルを実行します。
 4. 設定プロセスを完了します。
@@ -67,7 +67,7 @@ ms.locfileid: "5744281"
 2. デスクトップで、ドキュメント回覧エージェントを実行します。
 3. ツール バーで、**設定** をクリックします。
 
-    [![the-document-routing-agent-window](./media/the-document-routing-agent-window.png)](./media/the-document-routing-agent-window.png)
+    [![the-document-routing-agent-window.](./media/the-document-routing-agent-window.png)](./media/the-document-routing-agent-window.png)
 
 4. 次の設定を追加します。
 
@@ -89,7 +89,7 @@ ms.locfileid: "5744281"
 1. ツール バーで、**プリンター** をクリックします。
 2. アプリケーションで使用できるようにするプリンターを選択します。
 
-    [![printers-to-add](./media/printers-to-add.png)](./media/printers-to-add.png)
+    [![printers-to-add.](./media/printers-to-add.png)](./media/printers-to-add.png)
 
 3. プリンターの既定の名前を指定します。
 4. **OK** をクリックします。
@@ -101,7 +101,7 @@ ms.locfileid: "5744281"
 
 1. **ネットワーク プリンターの管理** ページを開きます。(**組織管理** &gt; **設定** &gt; **ネットワーク プリンター**)
 
-    [![manage-network-printers-page](./media/manage-network-printers-page.png)](./media/manage-network-printers-page.png)
+    [![manage-network-printers-page.](./media/manage-network-printers-page.png)](./media/manage-network-printers-page.png)
 
 2. 各ネットワーク プリンターにマップされている既存のエントリを編集します。 変更の一環として、接続パスを編集します。
 3. **印刷先** フィールドにプリンタをオプションとして含めるには、**有効** フィールドを **はい** に設定します。

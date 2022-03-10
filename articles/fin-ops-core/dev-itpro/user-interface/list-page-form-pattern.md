@@ -2,26 +2,24 @@
 title: リスト ページのフォーム パターン
 description: この記事では、リスト ページのフォーム パターンに関する情報を提供します。 リスト ページには一連のデータが表示されるため、特定のレコードを検索して連携できます。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 14241
 ms.assetid: c70933b1-3d6a-4e26-b9ef-d9fb1e1b29a3
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52c9a50fab181a13ae52f31403b0ef127d4e8114
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: e7c298b5d3ef84225b52c1ab23bb08c07b77bd86
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092134"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782924"
 ---
 # <a name="list-page-form-pattern"></a>リスト ページのフォーム パターン
 
@@ -29,13 +27,12 @@ ms.locfileid: "5092134"
 
 この記事では、リスト ページのフォーム パターンに関する情報を提供します。 リスト ページには、レコードを参照するために最適化された UI の一連のデータが表示されるため、特定のレコードを検索して連携できます。 
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 リスト ページには、最適化されたユーザー インターフェイスの一連のデータが表示されるため、レコードの参照、適切なレコードの検索、そのレコードでのアクションを実行できます。 リスト ページでは、ユーザーはデータを検索、フィルタリング、並べ替えできます。 グリッドの右側にある情報ボックスは、有効なレコードの関連データを表示します。 レコードに関連するアクションは、ページの上部にある ActionPane に配置されます。 現在、このパターンの使用は、リスト ページと詳細ページの間に 1 対 1 の対応がある場合は推奨されません。 現在のガイダンスは、リスト ページにバッキングの詳細ページがない場合や複数のバッキングの詳細ページがある場合 (たとえば、プロジェクト見積と販売見積が同じリスト ページにまとめられている場合など) の場合のみ、このパターンを使用することです。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
-[![ワイヤーフレーム](./media/listpage1-1024x576.png)](./media/listpage1.png)
+[![ワイヤーフレーム。](./media/listpage1-1024x576.png)](./media/listpage1.png)
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -105,7 +102,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 -   **情報ボックス** ガイドラインは、[情報ボックスのフォーム パターン](factbox-form-patterns.md) ドキュメントに統合されました。
 
 ## <a name="examples"></a>例
-フォーム: **SalesTableListPage** [![リスト ページの例](./media/listpage2-1024x510.png)](./media/listpage2.png)
+フォーム: **SalesTableListPage** [![リスト ページの例。](./media/listpage2-1024x510.png)](./media/listpage2.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -132,9 +129,12 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 #### <a name="ax-2012-links"></a>AX 2012 リンク
 
--   [MSDN AX 2012 リスト ページのユーザー エクスペリエンスのガイドライン](https://msdn.microsoft.com/library/gg853328.aspx)
--   [MSDN AX 2012 リスト ページ フォーム](https://msdn.microsoft.com/library/cc635077.aspx)
+-   [MSDN AX 2012 リスト ページのユーザー エクスペリエンスのガイドライン](/dynamicsax-2012/developer/list-page-user-experience-guidelines)
+-   [MSDN AX 2012 リスト ページ フォーム](/dynamicsax-2012/developer/list-page-forms)
 
 #### <a name="ax-2012-example"></a>AX 2012 の例
 
-[![例](./media/listpage3-1024x671.png)](./media/listpage3.png)
+[![例。](./media/listpage3-1024x671.png)](./media/listpage3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

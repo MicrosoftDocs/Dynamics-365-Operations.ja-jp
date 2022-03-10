@@ -2,24 +2,24 @@
 title: Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 description: このトピックでは、Retail SDK バージョン 10.0.11 以降を使用して新しい Retail Server API を作成する方法について説明します。
 author: mugunthanm
-ms.date: 02/17/2021
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 28021
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 22fa9e482acfb0a843e7c80c2ad3e3b961308c4b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1cf749128a056c0b0163d993d6991773fb771a5f
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792975"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782108"
 ---
 # <a name="create-a-retail-server-extension-api-retail-sdk-version-10011-and-later"></a>Retail Server 拡張 API の作成 (Retail SDK バージョン 10.0.11 以降)
 
@@ -44,7 +44,7 @@ Retail SDK には、Commerce Runtime (CRT) を含む、エンドツーエンド�
 
 次の図は、拡張機能のクラス ダイアグラムを示しています。
 
-![Commerce Scale Unit の拡張機能クラス ダイアグラム](media/RSExtensionClass.png)
+![Commerce Scale Unit の拡張機能クラス ダイアグラム。](media/RSExtensionClass.png)
 
 > [!NOTE]
 > Retail サーバーでは、IController と CommerceController の両方の拡張機能の読み込みはサポートされていません。 両方のタイプの拡張機能を含めると、Retail サーバーの負荷は失敗します。 拡張機能は IController または CommerceController のいずれかである必要があります。 IController 拡張機能に移行する場合は、すべての Retail サーバー拡張機能を IController に移行します。
@@ -63,7 +63,10 @@ Retail SDK には、Commerce Runtime (CRT) を含む、エンドツーエンド�
     [RoutePrefix("SimpleExtension")]
     ```
 
-8. コントローラー クラスで **BindEntity** 属性を追加します。 この属性は、新しいコントローラーを作成してエンティティを公開する場合に必要です。
+> [!NOTE]
+> RoutePrefix 属性の追加はオプションです。 **RoutePrefix** 属性を追加する場合、カスタム エンティティのみを含む **BindEntity** 属性を追加する必要があります。 すぐに利用できる **RoutePrefix** (顧客および製品など) の追加、およびすぐに利用できるエンティティ (製品、買い物カゴ、および顧客など) の追加はサポートされていません。 **RoutePrefix** および **顧客** カスタム エンティティのみを追加することができます。
+
+8. コントローラー クラスで **BindEntity** 属性を追加します。 この手順はオプションです。 **RoutePrefix** を追加し、カスタム エンティティを返す場合のみ属性を追加します。
 
 ```csharp
 [BindEntity(typeof(SimpleEntity))]
@@ -77,7 +80,7 @@ Retail SDK には、Commerce Runtime (CRT) を含む、エンドツーエンド�
 ### <a name="sample-code-for-a-controller-class-bounded-to-a-custom-entity"></a>カスタム エンティティにバインドされるコントローラ クラスのサンプルコード
 
 > [!NOTE]
-> 拡張コードは、顧客や製品などの既存の OOB エンティティにバインドしてはいけません。
+> 拡張コードは、顧客、買い物カゴ、または製品などの既存のエンティティにバインドしてはいけません。 API がコレクションを返す場合、`IEnumerable<T>` 型のみを返す必要があり、`Dictionary <String, String>` のような他の型を返すことはサポートされていません。 結果として、`System.Collections.Generic.Dictionary2[System.String,System.String] is not supported.` などのエラーが表示されることがあります。コレクションを返すには、Commerce API で `PageResult<T>` を使用し、`IEnumerable<T>` を実装します。 このパターンに従い、コレクションを返します。
 
 ```csharp
 // New extended controller.
@@ -211,7 +214,7 @@ public static class CommerceRoles
 
 ### <a name="support-paging-in-retail-server-apis"></a>Retail Server API のページングのサポート
 
-リリース 10.0.18 から、API にページングが必要な場合、API に **QueryResultSettings** を追加し、クライアントから値を渡すことができます。 **QueryResultSettings** には、**PagingInfo** およびレコードがフェッチまたはスキップするための他のパラメーターが含まれます。  
+リリース 10.0.19 から、API にページングが必要な場合、API に **QueryResultSettings** を追加し、クライアントから値を渡すことができます。 **QueryResultSettings** には、**PagingInfo** およびレコードがフェッチまたはスキップするための他のパラメーターが含まれます。  
 
 拡張機能は、**QueryResultSettings** を CRT 要求に渡すことができ、データベース クエリがあるときに CRT 要求で使用することができます。
 

@@ -2,11 +2,9 @@
 title: AX 2012 からのアップグレード - アップグレード後のタスク
 description: このトピックでは、Microsoft Dynamics AX 2012 からコードとデータのアップグレードを完了した後に実行する必要があるタスクについて説明します。
 author: LaneSwenka
-manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 770b7660027e77d6b320adf8c48e12b36343bb05
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 2f681d028fa7bcc0edd10bc930d70bee280d5a09cd33c527d95e19c05f35940b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719806"
 ---
 # <a name="upgrade-from-ax-2012---post-upgrade-tasks"></a>AX 2012 からのアップグレード - アップグレード後のタスク
 
@@ -55,7 +53,7 @@ AX 2012 からアップグレードを完了すると、レジスターおよび
 
 AX 2012 からアップグレードを完了した後は、リソース キャパシティ ロールアップおよびプロジェクト元帳の会社間転記を設定する必要があります。
 
-リソース キャパシティのロールアップ バッチ ジョブを実行するには、**プロジェクト管理と会計** > **照会とレポート** > **キャパシティ同期** をクリックします。 リソースおよびリソース カレンダーの予約データを設定するには、このバッチ ジョブを実行する必要があります。 このデータは、プロジェクト リソースのスケジューリングを使用する場合に必要です。 詳細については、「[プロジェクト リソース](../../../finance/project-management/project-resourcing.md)」を参照してください。
+リソース キャパシティのロールアップ バッチ ジョブを実行するには、**プロジェクト管理と会計** > **照会とレポート** > **キャパシティ同期** をクリックします。 リソースおよびリソース カレンダーの予約データを設定するには、このバッチ ジョブを実行する必要があります。 このデータは、プロジェクト リソースのスケジューリングを使用する場合に必要です。 詳細については、「[プロジェクト リソース](/dynamics365/project-operations/prod-pma/project-resourcing)」を参照してください。
 
 プロジェクト元帳の企業間転記を有効にするには、**プロジェクト管理と会計** > **設定** > **転記** > **元帳転記の設定** をクリックします。 **原価会計** タブの、**勘定タイプ** フィールドで、**会社間原価**、および貸出側法人の詳細を入力します。 **収益勘定** タブの、**勘定タイプ** フィールドで、**会社間収益**、および貸出側法人の詳細を入力します。
 
@@ -66,3 +64,6 @@ AX 2012 からのアップグレードが完了した後、予算計画の列と
 また、各予算ステージに適切なレイアウトを使用するための予算計画プロセスを更新する必要があります。 予算計画プロセスを更新するには、**予算作成** > **設定** > **予算計画** > **予算計画プロセス** をクリックします。
 
 予算計画の更新に関する詳細については、 [予算計画の更新](upgrade-budget-planning.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

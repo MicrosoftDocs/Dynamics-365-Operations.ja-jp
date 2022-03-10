@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e4ecdab1fdee704e77549747b187b7fbcbee3432
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d17095ef2aa6acd1cd1aac2a5ef9c5dea6542cac89ab5df97eaf18bf4276aade
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018300"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718515"
 ---
 # <a name="implement-a-custom-destination-for-generated-documents"></a>生成されるドキュメントに対するカスタム 送信先の実装
 
@@ -40,7 +40,7 @@ ms.locfileid: "6018300"
 
 現在のトポロジでは、[新しい ER フォーマットを作成](tasks/er-format-configuration-2016-11.md) して、カスタマイズされた ER 送信先を使用して格納したいドキュメントを生成します。 または、[既存の ER フォーマットをこのトポロジにインポート](general-electronic-reporting-manage-configuration-lifecycle.md) できます。
 
-![形式デザイナーのページで ER 形式の構造を確認する](media/er-custom-file-destination-format-structure.png)
+![形式デザイナー ページで ER 形式の構造を確認する。](media/er-custom-file-destination-format-structure.png)
 
 > [!IMPORTANT]
 > 作成またはインポートする ER フォーマットには、次のフォーマット エレメントのうち少なくとも 1 つを含める必要があります。
@@ -230,11 +230,11 @@ ms.locfileid: "6018300"
     ```
 
     > [!NOTE]
-    > 上記のコードでは、`ERFormatDestinationSaveInFolderSettings` クラスが `static` クラスとして導入されます。 実装オブジェクトには、オブジェクトを作成し、オブジェクトが正しくパックおよび展開プロセスに必要なコンテナーを展開する `static create(container)` メソッドが必要です。 詳細については[パック-アンパック デザイン パターン](https://docs.microsoft.com/dynamicsax-2012/developer/pack-unpack-design-pattern#aa879675collapse_allen-usax60gifpublic-static-yourclass-createcontainer-_packedobject) を参照してください 。
+    > 上記のコードでは、`ERFormatDestinationSaveInFolderSettings` クラスが `static` クラスとして導入されます。 実装オブジェクトには、オブジェクトを作成し、オブジェクトが正しくパックおよび展開プロセスに必要なコンテナーを展開する `static create(container)` メソッドが必要です。 詳細については[パック-アンパック デザイン パターン](/dynamicsax-2012/developer/pack-unpack-design-pattern#aa879675collapse_allen-usax60gifpublic-static-yourclass-createcontainer-_packedobject) を参照してください 。
 
 3. Visual Studio プロジェクトで、`ERFormatDestinationSettings` フォームに新しい拡張子を追加し、カスタム送信先のカスタム UI を実装するコードを記述します。 次の図は、この UI が Visual Studio デザイナーでどのように表示されるかを示しています。
 
-    ![Visual Studio デザイナーでカスタム UI の 確認](media/er-custom-file-destination-form-extension.png)
+    ![Visual Studio デザイナーでカスタム UI を確認する。](media/er-custom-file-destination-form-extension.png)
 
 4. Visual Studio プロジェクトに新しいクラス (この例では、`ERFormatDestinationSettingsEventHandlers`) を追加し、拡張送信先フォームのイベント ハンドラー コードを記述します。 この手順は、パブリック `ERIFormatFileDestinationSettingsStorage` インターフェイス を実装する必要があります。
 
@@ -294,14 +294,14 @@ ms.locfileid: "6018300"
 
 1. 作成またはインポートした ER 形式について、前述のコンポーネント (ファイル、フォルダー、マージ、または添付ファイル) の 1 つに対して[アーカイブ](er-destination-type-archive.md) 送信先を構成します。 詳細については、[ER ER コンフィギュレーション先](tasks/er-destinations-2016-11.md) を参照してください。
 
-    ![送信先の設定ダイアログ ボックスでのアーカイブ先を構成](media/er-custom-file-destination-destination-setting-archive.png)
+    ![送信先の設定ダイアログ ボックスでのアーカイブ先のコンフィギュレーション。](media/er-custom-file-destination-destination-setting-archive.png)
 
 2. 選択した ER 形式の同じコンポーネントについて、カスタムの **フォルダーに保存** の保存先を有効にして構成します。
 
-    ![送信先の設定ダイアログ ボックスでのフォルダーに保存の保存先を構成](media/er-custom-file-destination-destination-setting-custom.png)
+    ![送信先の設定ダイアログ ボックスでのフォルダーに保存の保存先のコンフィギュレーション。](media/er-custom-file-destination-destination-setting-custom.png)
 
     > [!NOTE] 
-    > AOS サービスを実行するサーバーのローカル ファイル システムに、指定したカスタム送信先フォルダー (この例では **c:\\0**) が存在することを確認してください。 それ以外の場合は、[DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) 例外が実行時にスローされます。
+    > AOS サービスを実行するサーバーのローカル ファイル システムに、指定したカスタム送信先フォルダー (この例では **c:\\0**) が存在することを確認してください。 それ以外の場合は、[DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) 例外が実行時にスローされます。
 
 ## <a name="run-the-er-format-that-you-created-or-imported"></a>作成またはインポートした ER フォーマットの実行
 

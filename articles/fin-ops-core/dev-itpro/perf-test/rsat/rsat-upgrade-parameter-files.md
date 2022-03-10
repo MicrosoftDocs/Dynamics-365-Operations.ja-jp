@@ -5,18 +5,18 @@ author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d750fc927f3f5f124318bc191702d57a6b88f3cc
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: c2fd316c611a5604e47a37fcc2c05b1676d05e12
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093908"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781951"
 ---
 # <a name="upgrade-parameter-files"></a>パラメーター ファイルのアップグレード
 
@@ -63,7 +63,7 @@ RSAT の 2.2 以降のリリースで、パラメーター ファイルには **
 2. アップグレードするパラメーター ファイルがあるテスト ケースを選択します。
 3. **新規** メニューで、**パラメーター ファイルのアップグレード (テスト実行ファイルの自動生成)** を選択します。
 
-    ![新規メニューのパラメーター ファイルのアップグレード (テスト実行ファイルの自動生成) コマンド](media/new_dropdown_menu.png)
+    ![新規メニューのパラメーター ファイルのアップグレード (テスト実行ファイルの自動生成) コマンド。](media/new_dropdown_menu.png)
 
 選択したケースすべてのパラメーター ファイルがアップグレードされます。
 
@@ -79,11 +79,11 @@ RSAT の 2.2 以降のリリースで、パラメーター ファイルには **
 
 次の図は、メッセージ ボックスの概要の例を示しています。
 
-![メッセージ ボックスの概要](media/upgrade_summary.png)
+![メッセージ ボックスの概要。](media/upgrade_summary.png)
 
 失敗したアップグレードについては、テスト ケース タイトルの横にある黄色の三角警告記号を選択することで、詳細情報を参照できます。 次の図は、表示されるメッセージ ボックスの例を示しています。
 
-![失敗したアップグレードに対する警告メッセージ ボックス](media/upgrade_triangle_error.png)
+![失敗したアップグレードに対する警告メッセージ ボックス。](media/upgrade_triangle_error.png)
 
 > [!IMPORTANT]
 > アップグレードは、繰り返し実行できます。 この場合、新しくアップグレードされたパラメーター ファイルはスキップされます。 ただし、新しい部分ファイルによって既存の部分ファイルが上書きされます。 アップグレードを再実行する前に、すべての部分ファイルを完成し、名前を変更することをお勧めします。

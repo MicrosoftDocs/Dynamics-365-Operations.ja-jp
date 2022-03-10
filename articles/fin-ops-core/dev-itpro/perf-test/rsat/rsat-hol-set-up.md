@@ -1,25 +1,25 @@
 ---
 title: Regression Suite Automation Tool の設定およびインストール チュートリアル
 description: このトピックは、Regression Suite Automation Tool (RSAT) の設定およびインストール方法を説明するチュートリアルです。
-author: robinarh
+author: tonyafehr
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 21761, NotInToc
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 725bce4b3aa7feb61bd7d7ded1be07f803424e57
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745200"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781994"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool の設定およびインストール チュートリアル
 
@@ -54,7 +54,7 @@ ms.locfileid: "5745200"
 
 ### <a name="user-eligibility"></a>ユーザーの適格性
 
-ユーザーが Azure DevOps に作成されていること、および Azure テスト計画へのアクセスを提供するサブスクリプション レベルを持っていることを確認します。 Azure DevOps テスト計画ライセンスは、ユーザーがテスト ケースを作成および管理する場合にのみ必要です (つまり、すべての RSAT ユーザーがこのライセンスを必要とするわけではありません)。 ライセンスの要件については、[ライセンス要件](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements) を参照してください。
+ユーザーが Azure DevOps に作成されていること、および Azure テスト計画へのアクセスを提供するサブスクリプション レベルを持っていることを確認します。 Azure DevOps テスト計画ライセンスは、ユーザーがテスト ケースを作成および管理する場合にのみ必要です (つまり、すべての RSAT ユーザーがこのライセンスを必要とするわけではありません)。 ライセンスの要件については、[ライセンス要件](/azure/devops/test/manual-test-permissions#license-requirements) を参照してください。
 
 ### <a name="create-a-new-azure-devops-project"></a>新しい Azure DevOps プロジェクトの作成
 
@@ -67,14 +67,14 @@ RSATは、テスト ケースとテスト スイートの管理、レポート�
 - 作業項目タイプの状態は削除しないでください。
 - 必須フィールドを作業項目タイプに追加しないでください。
 
-![ベスト プラクティスの一覧に表示されるエラー メッセージ](./media/setup_rsa_tool_02.png)
+![ベスト プラクティスの一覧に表示されるエラー メッセージです。](./media/setup_rsa_tool_02.png)
 
 それ以外の場合は、このチュートリアルでは新しい Azure DevOps プロジェクトを作成することをお勧めします。 詳細については、[カスタム Azure DevOps (VSTS) プロセス テンプレートを使用して BPM に同期するときの問題](https://blogs.msdn.microsoft.com/lcs/2018/11/28/issues-when-syncing-to-bpm-using-a-custom-azure-devops-vsts-process-template/) を参照してください。
 
 1. Azure DevOps URL (`https://dev.azure.com/<Azure DevOps Name>`) を開きます。
 2. Azure DevOps ページの右上隅にある **プロジェクトを作成する** を選択します。
 
-    ![プロジェクト ボタンを作成する](./media/setup_rsa_tool_03.png)
+    ![プロジェクト ボタンを作成します。](./media/setup_rsa_tool_03.png)
 
 3. 次のフィールドに入力し、**作成** をクリックします。
 
@@ -82,7 +82,7 @@ RSATは、テスト ケースとテスト スイートの管理、レポート�
     - **バージョン管理** ー **Team Foundation バージョン管理** を選択します。 既定のオプションでは **Git** はサポートされていないことに注意してください。
     - **作業項目プロセス**
 
-    ![新しいプロジェクト ダイアログ ボックスを作成する](./media/setup_rsa_tool_04.png)
+    ![新しいプロジェクト ダイアログ ボックスを作成します。](./media/setup_rsa_tool_04.png)
 
 ### <a name="create-a-personal-access-token"></a>個人用アクセス トークンを作成する
 
@@ -90,11 +90,11 @@ RSATは、テスト ケースとテスト スイートの管理、レポート�
 
 1. Azure DevOps プロジェクトのページの右上隅にある プロファイル アイコンを選択し、**セキュリティ** を選択します。
 
-    ![セキュリティ コマンド](./media/setup_rsa_tool_05.png)
+    ![セキュリティ コマンドです。](./media/setup_rsa_tool_05.png)
 
 2. 左ウィンドウの **セキュリティ** で、**個人用アクセス トークン** を選択します。 **新しいトークン** を選択します。
 
-    ![ユーザー設定の個人用アクセス トークン タブの新しいトークン ボタン](./media/setup_rsa_tool_06.png)
+    ![ユーザー設定の個人用アクセス トークン タブの新しいトークン ボタンです。](./media/setup_rsa_tool_06.png)
 
 3. 次のフィールドに入力し、**作成** をクリックします。
 
@@ -102,12 +102,12 @@ RSATは、テスト ケースとテスト スイートの管理、レポート�
     - **有効期限 (UTC)** ー **カスタム定義** を選択し、日付の選択を使用して、使用可能な最後の日付を選択します。
     - **スコープ** ー **フル アクセス** オプションを選択します。
 
-    ![新しい個人用アクセス トークン ダイアログ ボックスを作成する](./media/setup_rsa_tool_07.png)
+    ![新しい個人用アクセス トークン ダイアログ ボックスを作成します。](./media/setup_rsa_tool_07.png)
 
     > [!NOTE]
     > 作成された個人用アクセス トークンをメモします。 これは、RSAT の構成を設定するときに必要になります。
 
-    ![個人用アクセス トークン](./media/setup_rsa_tool_08.png)
+    ![個人用アクセス トークンです。](./media/setup_rsa_tool_08.png)
 
 ## <a name="configure-the-lcs-project"></a>LCS プロジェクトを構成する
 
@@ -123,11 +123,11 @@ LCS プロジェクトでは、既存の顧客実装またはパートナー プ
 1. LCS 実装プロジェクトに移動します。
 2. ページの右上隅にある **設定** ボタン (ギヤ記号) を選択して、**言語の基本設定** を選択します。
 
-    ![言語設定の更新](./media/setup_rsa_tool_09.png)
+    ![言語設定を更新します。](./media/setup_rsa_tool_09.png)
 
 3. **優先言語** フィールドで **英語 (米国)** を選択し、**保存** を選択します。
 
-    ![ユーザー設定の言語の基本設定タブ](./media/setup_rsa_tool_10.png)
+    ![ユーザー設定の言語の基本設定タブです。](./media/setup_rsa_tool_10.png)
 
 ### <a name="configure-lcs-to-connect-to-the-azure-devops-project"></a>LCS プロジェクトを構成して Azure DevOps プロジェクトに接続する
 
@@ -136,67 +136,67 @@ LCS プロジェクトでは、既存の顧客実装またはパートナー プ
 1. LCS 実装プロジェクトに移動します。
 2. **メニュー** ボタンを選択し、**プロジェクトの設定** を選択します。
 
-    ![プロジェクト設定コマンド](./media/setup_rsa_tool_11.png)
+    ![プロジェクト設定コマンドです。](./media/setup_rsa_tool_11.png)
 
 3. 左ウィンドウで、**Visual Studio Team Services** を選択し、**Visual Studio Team Services の設定** を選択します。
 
-    ![プロジェクト設定の Visual Studio Team Services タブ](./media/setup_rsa_tool_12.png)
+    ![プロジェクト設定の Visual Studio Team Services タブです。](./media/setup_rsa_tool_12.png)
 
 4. **Azure DevOps サイト URL** フィールドに、Azure DevOps サイトの URL を入力します。 **個人用アクセス トークン** フィールドに、先ほど作成した個人用アクセス トークンを入力します。
 
     > [!NOTE]
     > VSTS は現在、Azure DevOps と呼ばれていますが、LCS を Azure DevOps プロジェクトに接続するためには、古い URL を使用します。 たとえば、このチュートリアルで使用する Azure DevOps URL は `https://dev.azure.com/D365FOFastTrack/` です。 ただし、次の図では、`https://D365FOFastTrack.visualstudio.com/` と入力されています。
 
-    ![Visual Studio Team Services のステップ 1](./media/setup_rsa_tool_13.png)
+    ![Visual Studio Team Services のステップ 1 です。](./media/setup_rsa_tool_13.png)
 
 5. **続行** を選択します。
 6. **Visual Studio Team Services プロジェクト** フィールドで、選択したサイトの VSTS プロジェクトを選択して、LCS プロジェクトにリンクさせます。 **プロセス テンプレート** フィールドは、既定で **アジャイル** に設定されています。 カスタム テンプレートの場合は、[新しい Azure DevOps プロジェクトを作成する](#create-a-new-azure-devops-project) セクションのベスト プラクティスのガイダンスを参照してください。 その後 **続行** を選択します。
 
-    ![Visual Studio Team Services のステップ 2](./media/setup_rsa_tool_14.png)
+    ![Visual Studio Team Services のステップ 2 です。](./media/setup_rsa_tool_14.png)
 
 7. 設定を確認し、**保存** をクリックします。
 
-    ![Visual Studio Team Services のステップ 3](./media/setup_rsa_tool_15.png)
+    ![Visual Studio Team Services のステップ 3 です。](./media/setup_rsa_tool_15.png)
 
 8. **承認** を選択すると、構成された Azure DevOps サイトに代理でアクセスし、VSTS と統合する機能を有効にすることを LCS に承認します。
 
-    ![承認ボタン](./media/setup_rsa_tool_16.png)
+    ![承認ボタンです。](./media/setup_rsa_tool_16.png)
 
 9. 「Lifecycle Services がユーザーに代わって Visual Studio Team Services に接続することを承認するために、外部サイトにリダイレクトされます。 続行しますか?」というメッセージが表示されます。 **はい** を選択します。
 
-    ![メッセージ ボックス](./media/setup_rsa_tool_17.png)
+    ![メッセージ ボックスです。](./media/setup_rsa_tool_17.png)
 
 10. **受け入れる** を選択します。
 
-    ![アクセスを承認する](./media/setup_rsa_tool_18.png)
+    ![アクセスを承認します。](./media/setup_rsa_tool_18.png)
 
 11. ユーザーとして承認されている場合、UI は LCS プロジェクト設定ページに戻る必要があります。
 
-    ![承認されたユーザー](./media/setup_rsa_tool_19.png)
+    ![許可されているユーザーです。](./media/setup_rsa_tool_19.png)
 
 ### <a name="create-a-new-bpm-library"></a>新しい BPM ライブラリの作成
 
 1. LCS 実装プロジェクトに移動します。
 2. **メニュー** ボタンを選択し、**ビジネス プロセス モデラー** を選択します。
 
-    ![ビジネス プロセス モデラー コマンド](./media/setup_rsa_tool_20.png)
+    ![ビジネス プロセス モデラー コマンドです。](./media/setup_rsa_tool_20.png)
 
 3. **新しいライブラリ** を選択します。
 
-    ![新しいライブラリ ボタン](./media/setup_rsa_tool_21.png)
+    ![新しいライブラリ ボタンです。](./media/setup_rsa_tool_21.png)
 
 4. **ライブラリの名前** フィールドで、名前を入力し、**作成** を選択します。 このチュートリアルでは、BPM ライブラリに **RSAT** という名前を付けます。
 
-    ![新しいライブラリ ダイアログ ボックスを作成する](./media/setup_rsa_tool_22.png)
+    ![新しいライブラリ ダイアログ ボックスを作成します。](./media/setup_rsa_tool_22.png)
 
 5. 新しい **RSAT** BPM ライブラリを開きます。
 6. **サンプル コア業務プロセス** プロセスを選択し、右側で **編集モード** を選択します。
 
-    ![編集モード ボタン](./media/setup_rsa_tool_23.png)
+    ![編集モード ボタンです。](./media/setup_rsa_tool_23.png)
 
 7. **名前** フィールドと **説明** フィールドの両方の値を、**製品の作成** に変更します。 その後、**保存** を選択します。
 
-    ![名前と説明フィールド](./media/setup_rsa_tool_24.png)
+    ![名前と説明フィールドです。](./media/setup_rsa_tool_24.png)
 
 ## <a name="environment"></a>環境
 
@@ -219,14 +219,14 @@ LCS プロジェクトでは、既存の顧客実装またはパートナー プ
 2. **システム管理 \> 設定 \> システム パラメーター** の順に移動します。
 3. **ヘルプ** タブの **Lifecycle Services ヘルプの構成** フィールドで、該当する LCS プロジェクト (このチュートリアルでは **RSAT**) を選択します。
 
-    ![ヘルプ タブの Lifecycle Services ヘルプの構成フィールド](./media/setup_rsa_tool_25.png)
+    ![ヘルプ タブの Lifecycle Services ヘルプの構成フィールドです。](./media/setup_rsa_tool_25.png)
 
     適切な LCS プロジェクトの下に、BPM ライブラリが入力されます。
 
 4. **保存** を選択します。
 5. 更新されたヘルプの内容を表示するには、ブラウザーを更新する必要がある場合があります。
 
-    ![ブラウザーの更新に関する通知](./media/setup_rsa_tool_26.png)
+    ![ブラウザーの更新に関する通知です。](./media/setup_rsa_tool_26.png)
 
 ## <a name="task-recordings"></a>タスクの記録
 
@@ -240,54 +240,54 @@ LCS プロジェクトでは、既存の顧客実装またはパートナー プ
 1. クライアントを開きます。
 2. メイン ダッシュボードで、**設定** ボタン (ギヤ記号) を選択し、**タスク レコーダー** を選択します。
 
-    ![[設定] メニューのタスク レコーダの選択](./media/setup_rsa_tool_27.png)
+    ![設定メニューのタスク レコーダーを選択します。](./media/setup_rsa_tool_27.png)
 
 3. **記録の作成** を選択します。
 
-    ![記録ボタンの作成](./media/setup_rsa_tool_28.png)
+    ![記録ボタンを作成します。](./media/setup_rsa_tool_28.png)
 
 4. **記録の名前** フィールドと **記録の説明** フィールドに入力し、**開始** を選択します。
 
-    ![記録の名前と記録の説明フィールド](./media/setup_rsa_tool_29.png)
+    ![記録の名前と記録の説明フィールドです。](./media/setup_rsa_tool_29.png)
 
 5. 製品を作成するステップを記録します。 完了したら、**停止** を選択して記録を停止します。
 
-    ![製品を作成するステップ](./media/setup_rsa_tool_30.png)
+    ![製品を作成するステップです。](./media/setup_rsa_tool_30.png)
 
 6. **Lifecycle Services に保存** を選択します。
 
-    ![Lifecycle Services へのタスク記録の保存](./media/setup_rsa_tool_31.png)
+    ![タスク記録を Lifecycle Services に保存します。](./media/setup_rsa_tool_31.png)
 
     ライブラリ情報が LCS から読み込まれます。
 
-    ![ライブラリ情報の読み込み](./media/setup_rsa_tool_32.png)
+    ![ライブラリ情報を読み込みます。](./media/setup_rsa_tool_32.png)
 
 7. タスク記録に関連付ける BPM ライブラリを選択します。 このチュートリアルでは、先ほど作成した **RSAT** BPM ライブラリとその下にある **製品の作成** 業務プロセスを選択します。 その後、**OK** を選択します。
 
-    ![タスク記録を BPM ライブラリと業務プロセスに関連付ける](./media/setup_rsa_tool_33.png)
+    ![タスク記録を BPM ライブラリと業務プロセスに関連付けます。](./media/setup_rsa_tool_33.png)
 
     「Lifecycle Services への保存が成功しました。」というメッセージが表示されます。
 
-    ![LCS への保存に成功したことを示すメッセージ](./media/setup_rsa_tool_34.png)
+    ![LCS に正常に保存されたことを示すメッセージです。](./media/setup_rsa_tool_34.png)
 
 8. タスク記録をローカルに保存してから LCS を介して BPM にアップロードする場合は、次のステップを実行します。
 
     1. 記録が完了したら、**この PC に保存** を選択します。
 
-        ![この PC に保存](./media/setup_rsa_tool_35.png)
+        ![この PC に保存します。](./media/setup_rsa_tool_35.png)
 
     2. ブラウザーの通知バーで、**保存** または **名前を付けて保存** を選択して、ローカル コンピューターにファイルを保存します。
 
-        ![通知バー](./media/setup_rsa_tool_36.png)
+        ![通知バーです。](./media/setup_rsa_tool_36.png)
 
     3. **RSAT** BPM ライブラリに移動し、タスク記録を保存する業務プロセスを選択します。
     4. **概要** タブで、**アップロード** を選択します。
 
-        ![アップロード ボタン](./media/setup_rsa_tool_37.png)
+        ![アップロード ボタンです。](./media/setup_rsa_tool_37.png)
 
     5. **参照** をクリックし、先ほど保存した .axtr ファイルを選択します。 **アップロード** を選択します。
 
-        ![アップロードする .axtr ファイルを選択する](./media/setup_rsa_tool_38.png)
+        ![アップロードする .axtr ファイルを選択します。](./media/setup_rsa_tool_38.png)
 
 ### <a name="test-the-synchronization-from-bpm-to-azure-devops"></a>BPMから Azure DevOps への同期をテストする
 
@@ -299,36 +299,36 @@ LCS プロジェクトでは、既存の顧客実装またはパートナー プ
 1. BPM ライブラリに移動し、先ほど作成した **RSAT** ライブラリを開きます。
 2. 省略記号ボタン (**...**) を選択し、**VSTS 同期** を選択します。
 
-    ![省略記号メニューの VSTS 同期コマンド](./media/setup_rsa_tool_39.png)
+    ![省略記号メニューの VSTS 同期コマンドです。](./media/setup_rsa_tool_39.png)
 
     VSTS の同期が完了すると、左側に **要件** タブが表示され、対応する Azure DevOps 作業項目が含まれます。
 
     > [!NOTE]
     > Azure DevOps で作成された作業項目には、タイトルの接頭語として BPM ライブラリ名が割り当てられます。
 
-    ![要件タブ](./media/setup_rsa_tool_40.png)
+    ![要件タブです。](./media/setup_rsa_tool_40.png)
 
 3. ページを更新します。
 4. 省略記号ボタン (**...**) を選択すると、追加のオプションである **テスト ケースの同期** が表示されます。 このオプションを選択します。
 
-    ![省略記号メニューのテスト ケースの同期コマンド](./media/setup_rsa_tool_41.png)
+    ![省略記号メニューのテスト ケースの同期コマンドです。](./media/setup_rsa_tool_41.png)
 
     > [!NOTE]
     > ページを更新した後で **テスト ケースの同期** オプションを使用できない場合は、BPMのメイン ページに移動し、ライブラリ自体の **テスト ケースの同期** を選択します。 このようにして、ライブラリ全体を効果的に同期することができます。
     >
-    > ![ライブラリ全体のテスト ケースの同期を選択する](./media/setup_rsa_tool_42.png)
+    > ![ライブラリ全体のテスト ケースの同期を選択します。](./media/setup_rsa_tool_42.png)
 
     テスト ケースの同期が完了すると、**要件** タブに新しいテスト ケースが作成されます。
 
-    ![要求タブの新しいテスト ケース](./media/setup_rsa_tool_43.png)
+    ![要求タブの新しいテスト ケースです。](./media/setup_rsa_tool_43.png)
 
 5. Azure DevOps プロジェクトに移動し、**ボード\>作業項目** を選択します。
 
-    ![ボードの作業項目コマンド](./media/setup_rsa_tool_44.png)
+    ![ボードの作業項目コマンドです。](./media/setup_rsa_tool_44.png)
 
 6. BPM 同期によって作成した作業項目とテスト ケースが存在することを検証します。
 
-    ![作業項目とテスト ケース](./media/setup_rsa_tool_45.png)
+    ![作業項目とテスト ケースです。](./media/setup_rsa_tool_45.png)
 
 ## <a name="install-and-configure-rsat"></a>RSAT のインストールと構成
 
@@ -354,16 +354,16 @@ RSAT は、Windows 10 を実行していて、Web ブラウザー (Internet Expl
     > [!NOTE]
     > 証明書はローカル コンピューターに格納されているので、**certmgr.msc** ではなく、**certlm.msc** と入力してください。
 
-    ![D365 自動テスト証明書の証明書](./media/setup_rsa_tool_46.png)
+    ![D365 自動テスト証明書の証明書です。](./media/setup_rsa_tool_46.png)
 
 3. 証明書を右クリックし、**コピー** を選択します。
 4. **信頼済ルート証明機関 \> 証明書** に移動します。
 
-    ![信頼済ルート証明機関フォルダの下の証明書フォルダ](./media/setup_rsa_tool_47.png)
+    ![信頼済ルート証明機関フォルダーの下の証明書フォルダです。](./media/setup_rsa_tool_47.png)
 
 5. **アクション** メニューの **貼り付け** を選択して、証明書を **信頼済ルート証明機関** にコピーします。
 
-    ![アクション メニューの貼り付けコマンド](./media/setup_rsa_tool_48.png)
+    ![アクション メニューの貼り付けコマンドです。](./media/setup_rsa_tool_48.png)
 
 6. インストールされている証明書の拇印を取得するには、スペースや特殊文字を使用しないで、管理者として Windows PowerShell ウィンドウを開き、次のコマンドを実行します。
 
@@ -384,11 +384,11 @@ RSAT は、Windows 10 を実行していて、Web ブラウザー (Internet Expl
 1. AOS コンピューターへのリモート デスクトップ プロトコル (RDP) 接続を確立します。 サインインの詳細については、LCS の環境の詳細ページを参照してください。
 2. Microsoft インターネット インフォメーション サービス (IIS) を開いて、サイトの一覧にある **AOSService** を検索します。
 
-    ![サイトの一覧にあるAOSService](./media/setup_rsa_tool_49.png)
+    ![サイトの一覧にある AOSService です。](./media/setup_rsa_tool_49.png)
 
 3. **エクスプローラー** を右クリックして **\<Drive\>: \\AosService\\WebRoot** フォルダーを開きます。 **wif.config** ファイルを検索します。
 
-    ![WebRoot フォルダーの Wif.config ファイル](./media/setup_rsa_tool_50.png)
+    ![WebRoot フォルダーの Wif.config ファイルです。](./media/setup_rsa_tool_50.png)
 
 4. 次の例に示すように、証明書と機関名に対応する新しい機関のエントリを追加して、**wif.config** ファイルを更新します。
 
@@ -434,11 +434,11 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 1. <https://www.microsoft.com/download/details.aspx?id=57357> に移動して、**ダウンロード** を選択します。
 2. すべてのファイルを選択し、**次へ** を選択します。
 
-    ![すべてのファイルを選択する](./media/setup_rsa_tool_51.png)
+    ![すべてのファイルを選択します。](./media/setup_rsa_tool_51.png)
 
 3. .msi パッケージをダブルクリックして、インストーラーを実行します。 インストールが完了したら、**完了** をクリックします。
 
-    ![RSAT インストーラー ファイル](./media/setup_rsa_tool_52.png)
+    ![RSAT インストーラー ファイルです。](./media/setup_rsa_tool_52.png)
 
 ### <a name="install-selenium-and-browser-drivers"></a>Selenium およびブラウザー ドライバーをインストールする
 
@@ -453,46 +453,46 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 1. Azure DevOps プロジェクトに移動して、**テスト計画** を選択します。
 
-    ![テスト計画コマンド](./media/setup_rsa_tool_53.png)
+    ![テスト計画コマンドです。](./media/setup_rsa_tool_53.png)
 
 2. **新しいテスト計画** を選択します。
 
-    ![新しいテスト計画ボタン](./media/setup_rsa_tool_54.png)
+    ![新しいテスト計画ボタンです。](./media/setup_rsa_tool_54.png)
 
 3. **名前** フィールドに入力し、**作成** をクリックします。 このチュートリアルでは、テスト計画に **RSAT テスト計画** という名前を付けます。
 
-    ![新しいテスト計画ダイアログ ボックス](./media/setup_rsa_tool_55.png)
+    ![新しいテスト計画ダイアログ ボックスです。](./media/setup_rsa_tool_55.png)
 
 4. プラス記号 (**+**) を選択し、**静的スイート** を選択して、新しいテスト計画の下に静的スイートを作成します。 新しいテスト スイートに **T01 ー 製造から在庫** という名前を付けます。
 
     > [!NOTE]
     > BPM の新しいテスト ケースを自動的に RSAT テスト スイートに取り込む必要がある場合は、クエリ ベースのスイートを作成することもできます。
 
-    ![静的スイートの作成](./media/setup_rsa_tool_56.png)
+    ![静的スイートを作成します。](./media/setup_rsa_tool_56.png)
 
 ### <a name="attach-test-cases-to-test-suites"></a>テスト ケースをテスト スイートに関連付ける
 
 1. テスト スイートに既存のテスト ケースを追加するには、右側の **既存の追加** を選択します。
 
-    ![既存の追加ボタン](./media/setup_rsa_tool_57.png)
+    ![既存の追加ボタンです。](./media/setup_rsa_tool_57.png)
 
 2. **スイートにテスト ケースを追加** ページで **クエリの実行** を選択し、テスト スイートに追加するテスト ケースを選択します。 このチュートリアルでは、**新しい製品の作成** テスト ケースを選択します。 次に、ページの右下隅にある **テスト ケースの追加** を選択します (このボタンは次の図には示されていません)。
 
-    ![クエリの実行ボタン](./media/setup_rsa_tool_58.png)
+    ![クエリの実行ボタンです。](./media/setup_rsa_tool_58.png)
 
     **T01-製造から在庫** テスト スイートにテスト ケースが追加されます。
 
-    ![テスト スイートに追加されたテスト ケース](./media/setup_rsa_tool_59.png)
+    ![テスト スイートに追加されたテスト ケースです。](./media/setup_rsa_tool_59.png)
 
 ### <a name="configure-rsat"></a>RSAT のコンフィギュレーション
 
 1. RSAT を開きます。
 
-    ![RSAT アイコン](./media/setup_rsa_tool_60.png)
+    ![RSAT アイコンです。](./media/setup_rsa_tool_60.png)
 
 2. 「Regression Suite Automation Tool には Seleniumが必要です。今すぐ自動的にダウンロードしてインストールしますか?」という警告メッセージが表示されます。 **はい** を選択します。
 
-    ![Selenium を必要とする Regression Suite Automation Tool を必要とする警告メッセージ](./media/setup_rsa_tool_61.png)
+    ![Regression Suite Automation Tool が Selenium を必要とするという警告メッセージです。](./media/setup_rsa_tool_61.png)
 
 3. 右上隅にある **設定** ボタン (ギヤ記号) を選択し、表示されるダイアログ ボックスで、次のフィールドに情報を入力します。
 
@@ -506,7 +506,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
         > [!NOTE]
         > ホスト名と SOAP ホスト名を検索するには、IIS マネージャーを開き、**サイト \> AOSService** を右クリックして、**バインディングの編集** を選択します。 **ホスト名** 列の値によって、ホスト名と SOAP ホスト名が指定されます (SOAP ホスト名の URL には接尾語 **soap** が使用されています)。
 
-        ![ホスト名列のホスト名と SOAP ホスト名](./media/setup_rsa_tool_63.png)
+        ![ホスト名列のホスト名と SOAP ホスト名です。](./media/setup_rsa_tool_63.png)
 
     - **管理者ユーザー名** ー テスト環境の管理者ユーザーの電子メール アドレスを入力します。
     - **拇印** ー このチュートリアルの前の説明に従って、認証証明書の拇印を入力します。
@@ -520,7 +520,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
     - **テスト アクション タイムアウト** ー このフィールドは Finance and Operation 環境のサーバー要求のタイムアウト期間を分単位で制御します。 通常は、既定値 (2 分) で十分です。 ただし、低速な環境では、タイムアウトに関連するエラーが発生する場合、値を増やすことをお勧めします。
     - **会社名** ー Excel パラメーター ファイルを作成するときに、既定の会社として使用する会社名を入力します。 後で Excel パラメーター ファイルを編集して会社を変更できます。
 
-    ![設定ダイアログ ボックス](./media/setup_rsa_tool_62.png)
+    ![設定ダイアログ ボックスです。](./media/setup_rsa_tool_62.png)
 
 4. **適用** を選択して、設定を適用または保存します。
 
@@ -532,15 +532,15 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
 1. Azure DevOps プロジェクトから **RSAT テスト計画** のテスト計画を読み込むには、**読み込み** を選択します。
 
-    ![読み込みボタン](./media/setup_rsa_tool_64.png)
+    ![読み込みボタンです。](./media/setup_rsa_tool_64.png)
 
 2. テスト スイートから **新しい製品の作成** テスト ケースを選択し、**新規 \> テスト実行とパラメーター ファイルの生成** を選択します。
 
-    ![新しいメニューにテスト実行とパラメーター ファイルを生成する](./media/setup_rsa_tool_65.png)
+    ![新しいメニューにテスト実行とパラメーター ファイルを生成します。](./media/setup_rsa_tool_65.png)
 
     Excel パラメーター ファイルは RSAT 構成 (たとえば、**C:\\Temp\\RegressionTool**) で指定したローカル フォルダーに作成されます。
 
-    ![作成された Excel パラメーター ファイル](./media/setup_rsa_tool_66.png)
+    ![作成された Excel パラメーター ファイルです。](./media/setup_rsa_tool_66.png)
 
 3. パラメーター ファイルを保存する場合は、**アップロード** を選択します。 選択したすべてのテスト ケースのテスト自動化ファイルは、将来使用するために Azure DevOps にアップロードされます。 (これらのファイルには、Excel テスト パラメーター ファイルが含まれています。)
 
@@ -553,33 +553,33 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
     - **.xlsx** – Excel パラメーター ファイル
     - **.xml** – 記録ファイル
 
-    ![添付ファイル タブのファイル](./media/setup_rsa_tool_67.png)
+    ![添付ファイル タブのファイルです。](./media/setup_rsa_tool_67.png)
 
 5. 実行するテスト ケースを選択し、**実行** を選択します。
 
     > [!NOTE]
     > テスト ケースを実行する前に、ブラウザーとして Internet Explorer を使用している場合は、**Windows のディスプレイ設定 \> 拡大縮小とレイアウト** でデスクトップの解像度が **100%** に設定されていることを確認してください。 仮想マシン (VM) でこの設定を変更できない場合は、VM にアクセスしようとしているクライアント (ラップトップ) で変更します。 解像度の設定は、VM の表示設定に継承されます。
 
-    ![100% に設定されたデスクトップの解像度](./media/setup_rsa_tool_68.png)
+    ![デスクトップの解像度は 100% に設定されました。](./media/setup_rsa_tool_68.png)
 
 6. ブラウザー ドライバーがシステムにインストールされていない場合は、次のような警告メッセージが表示されます: "この操作には \<browser name\> ドライバーが必要です。 今すぐ自動的にダウンロードしてインストールしますか?」という警告メッセージが表示されます。 **はい** を選択します。
 
-    ![Internet Explorer の警告メッセージ](./media/setup_rsa_tool_69.png)
+    ![Internet Explorer の警告メッセージです。](./media/setup_rsa_tool_69.png)
 
-    ![Chrome の警告メッセージ](./media/setup_rsa_tool_70.png)
+    ![Chrome の警告メッセージです。](./media/setup_rsa_tool_70.png)
 
     > [!NOTE]
     > ブラウザーとして Chrome を使用していて、Chrome バージョンが正しくないためにセッションが作成されなかったことを示すエラー メッセージが表示された場合は、最新の Chrome を<http://chromedriver.chromium.org/downloads> から **C:\\Program Files (x86)\\Regression Suite Automation Tool\\Common\\External\\Selenium** フォルダーにダウンロードします。
 
-    ![Chrome のエラー メッセージ](./media/setup_rsa_tool_71.png)
+    ![Chrome のエラー メッセージです。](./media/setup_rsa_tool_71.png)
 
     テスト ケースが実行され、**結果** フィールドが更新されます。
 
-    ![更新された結果フィールド](./media/setup_rsa_tool_72.png)
+    ![更新された結果フィールドです。](./media/setup_rsa_tool_72.png)
 
     このチュートリアルに従っている場合は、製品を作成するためのタスク記録で製品名をハードコーディングされた値として保存しているので、**新しい製品の作成** テスト ケースは失敗します。 同じテスト ケースを再実行すると、製品が既に存在するため、エラー メッセージが表示されます。
 
-    ![失敗に設定された結果フィールド](./media/setup_rsa_tool_72.png)
+    ![失敗に設定された結果フィールドです。](./media/setup_rsa_tool_72.png)
 
 ### <a name="view-the-test-results"></a>テスト結果の表示
 
@@ -587,38 +587,38 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 
     エラー メッセージを受信します。
 
-    ![エラー メッセージ](./media/setup_rsa_tool_73.png)
+    ![エラー メッセージです。](./media/setup_rsa_tool_73.png)
 
 2. **詳細** を選択すると、エラー メッセージの全体が表示されます。
 
-    ![エラー メッセージの全体](./media/setup_rsa_tool_74.png)
+    ![エラー メッセージの全体です。](./media/setup_rsa_tool_74.png)
 
 3. Azure DevOps で詳細なバージョンのエラー メッセージを表示するには、**Azure DevOps で開く** を選択します。 Azure DevOps では、テスト ケースと詳細なエラー メッセージの状態を表示できます。
 
-    ![Azure DevOps の詳細なエラー メッセージ](./media/setup_rsa_tool_75.png)
+    ![Azure DevOps の詳細なエラー メッセージです。](./media/setup_rsa_tool_75.png)
 
 4. Azure DevOps プロジェクトでテスト結果を直接表示するには、**テスト計画\>テスト計画\>実行** の順に移動します。 詳細を表示するテストの実行をダブルクリックします。
 
-    ![Azure DevOps でのテストの実行の一覧](./media/setup_rsa_tool_76.png)
+    ![Azure DevOps でのテストの実行の一覧です。](./media/setup_rsa_tool_76.png)
 
 5. **実行の概要** タブには、テスト ケースが失敗したことが示されますが、実際のエラー メッセージは表示されません。 詳細なエラー メッセージを表示するには、**テスト結果** タブを選択します。
 
-    ![実行の概要タブ](./media/setup_rsa_tool_77.png)
+    ![実行の概要タブです。](./media/setup_rsa_tool_77.png)
 
     **テスト結果** タブには、テスト ケースの情報と共に、結果とエラー メッセージが表示されます。
 
-    ![テスト結果タブ](./media/setup_rsa_tool_78.png)
+    ![テスト結果タブです。](./media/setup_rsa_tool_78.png)
 
 6. 関連するレコードをダブルクリックして、詳細なエラー メッセージを表示します。
 
-    ![詳細なエラー メッセージ](./media/setup_rsa_tool_79.png)
+    ![詳細なエラー メッセージです。](./media/setup_rsa_tool_79.png)
 
     > [!NOTE]
     > すべてのエラー メッセージは、**C:\\Users\\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg-.txt** でローカルでも利用可能です。
 
 7. **エクスポート** を選択して、テスト計画レベルでテストの実行の結果をエクスポートすることもできます。
 
-    ![テスト計画のエクスポート](./media/setup_rsa_tool_80.png)
+    ![テスト計画をエクスポートします。](./media/setup_rsa_tool_80.png)
 
 ### <a name="modify-the-excel-parameter-file"></a>Excel パラメーター ファイルの変更
 
@@ -636,23 +636,23 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
     > [!NOTE]
     > **一般** タブに加えて、Excel パラメーター ファイルには、テスト ケースがアクセスするすべてのフォーム ページのデータ タブが含まれています。
 
-    ![製品番号フィールド](./media/setup_rsa_tool_81.png)
+    ![製品番号フィールドです。](./media/setup_rsa_tool_81.png)
 
 4. **保存** を選択して、Excel ブックを閉じます。
 5. **アップロード** を選択して Excel パラメーター ファイルを Azure DevOps に保存します。
 
-    ![ファイルのアップロードに成功したことを示すメッセージ](./media/setup_rsa_tool_82.png)
+    ![ファイルのアップロードに成功したことを示すメッセージです。](./media/setup_rsa_tool_82.png)
 
     > [!NOTE]
     > 特定のユーザー コンテキストでテスト ケースを実行するには、Excel パラメーター ファイルの **一般** タブの **テスト ユーザー** フィールドにユーザーの電子メール ID を入力します。 最新バージョンの RSAT では、Excel パラメーター ファイルのフィールドのレイアウトは更新されていますが、概念は同じです。
     >
-    > ![テスト ユーザー フィールド](./media/setup_rsa_tool_83.png)
+    > ![テスト ユーザー フィールドです。](./media/setup_rsa_tool_83.png)
 
 ### <a name="validate-the-results"></a>結果の検証
 
 - **実行** を選択してテスト ケースを再実行し、テスト ケースが成功したことを確認します。 テスト結果は、[テスト結果の表示](#view-the-test-results) セクションの説明に従って表示できます。
 
-    ![成功に設定された結果フィールド](./media/setup_rsa_tool_84.png)
+    ![成功に設定された結果フィールドです。](./media/setup_rsa_tool_84.png)
 
 ### <a name="chaining-of-test-cases"></a>テスト ケースの連鎖
 
@@ -666,27 +666,27 @@ RSAT の主要な機能の 1 つとして、テスト ケースの連鎖 (つま
 2. **設定** ボタン (ギヤ記号) を選択し、**タスク レコーダー** を選択します。
 3. **記録の編集** を選択します。
 
-    ![記録の編集ボタン](./media/setup_rsa_tool_85.png)
+    ![記録の編集ボタンです。](./media/setup_rsa_tool_85.png)
 
 4. **Lifecycle Services から開く** を選択します。
 
-    ![Lifecycle Services から開くボタン](./media/setup_rsa_tool_86.png)
+    ![Lifecycle Services から開くボタンです。](./media/setup_rsa_tool_86.png)
 
 5. **Lifecycle Services ライブラリを選択する** を選択します。
 
-    ![Lifecycle Services ライブラリの選択ボタン](./media/setup_rsa_tool_87.png)
+    ![Lifecycle Services ライブラリの選択ボタンです。](./media/setup_rsa_tool_87.png)
 
     BPM ライブラリが LCS から読み込まれます。
 
-    ![BPM ライブラリの読み込み](./media/setup_rsa_tool_88.png)
+    ![BPM ライブラリを読み込みます。](./media/setup_rsa_tool_88.png)
 
 6. BPM ライブラリが LCS から読み込まれたら、**RSAT** BPM ライブラリと、タスク記録が関連付けられていた **新しい製品の作成** 業務プロセスを選択します。 その後、**OK** を選択します。
 
-    ![BPM ライブラリと業務プロセスの選択](./media/setup_rsa_tool_89.png)
+    ![BPM ライブラリと業務プロセスを選択します。](./media/setup_rsa_tool_89.png)
 
 7. 適切なタスク記録の名前が **記録の名前** フィールドに入力されます。 **スタート** を選択します。
 
-    ![記録の名前フィールド内のタスク記録の名前](./media/setup_rsa_tool_90.png)
+    ![記録の名前フィールド内のタスク記録の名前です。](./media/setup_rsa_tool_90.png)
 
 8. **製品情報管理\>製品** に移動し、**新規** を選択すると、元のタスク記録や **製品の作成** などが記録されたページが開きます。
 9. **ステップの挿入** を選択します。
@@ -694,15 +694,15 @@ RSAT の主要な機能の 1 つとして、テスト ケースの連鎖 (つま
     > [!NOTE]
     > 新しいステップは、ウィンドウで選択したステップの **後に** 挿入されます。
 
-    ![ステップの挿入ボタン](./media/setup_rsa_tool_91.png)
+    ![ステップの挿入ボタンです。](./media/setup_rsa_tool_91.png)
 
 10. **製品番号** フィールドを右クリックし、**タスク レコーダー \> コピー** を選択します。
 
-    ![コピー コマンド](./media/setup_rsa_tool_92.png)
+    ![コピー コマンドです。](./media/setup_rsa_tool_92.png)
 
 11. 新しいステップがウィンドウに追加されます。 後で必要になるため、**製品番号** フィールドの値をメモしておきます。
 
-    ![追加された新しいステップ](./media/setup_rsa_tool_93.png)
+    ![新しいステップが追加されました。](./media/setup_rsa_tool_93.png)
 
 12. **編集の完了** を選択します。
 13. **Lifecycle Services に保存** を選択し、新しいタスク記録を、元のタスク記録が関連付けられていたのと同じ BPM ライブラリおよび業務プロセスに関連付けます。 詳細については、[タスクの記録の作成と BPM ライブラリへの保存](#create-a-task-recording-and-save-it-to-the-bpm-library) セクションを参照してください。
@@ -714,7 +714,7 @@ RSAT の主要な機能の 1 つとして、テスト ケースの連鎖 (つま
 
 16. **編集** を選択して新しい Excel パラメーター ファイルを開きます。 新しい **保存された変数** のエントリが、行 9 に表示されます。 この変数 **{{EcoResProductCreate\_Identification\_ProductNumber\_Copy}}** はタスク記録の XML ファイルに保存され、後続のテストで使用できます。
 
-    ![保存された変数エントリ](./media/setup_rsa_tool_94.png)
+    ![保存された変数エントリです。](./media/setup_rsa_tool_94.png)
 
 #### <a name="create-a-new-test-case"></a>新しいテスト ケースの作成
 
@@ -722,7 +722,7 @@ RSAT の主要な機能の 1 つとして、テスト ケースの連鎖 (つま
 2. **サンプル サポート業務プロセス** プロセスを選択し、右側で **編集モード** を選択します。
 3. **名前** フィールドと **説明** フィールドの両方の値を、**製品のリリース** に変更します。 その後、**保存** を選択します。
 
-    ![製品のリリースに変更された名前と説明](./media/setup_rsa_tool_95.png)
+    ![製品のリリースに変更された名前と説明です。](./media/setup_rsa_tool_95.png)
 
 #### <a name="create-a-new-task-recording-that-has-a-validate-function"></a>検証機能を持つ新しいタスク記録を作成します。
 
@@ -731,21 +731,21 @@ RSAT の主要な機能の 1 つとして、テスト ケースの連鎖 (つま
     > [!NOTE]
     > 連鎖したテスト ケースでは、*フィールドの値を手動で入力する* ことによって、必要なレコードを検出またはフィルター処理することをお勧めします。 このようにして、ツールは、後続のテスト ケースでアクションを実行する必要があるレコードを決定できます。
 
-    ![検証機能を持つ新しいタスク記録](./media/setup_rsa_tool_96.png)
+    ![検証機能を持つ新しいタスク記録です。](./media/setup_rsa_tool_96.png)
 
     上の図に示されているように、クイック フィルターを使用して製品を検出した後、**製品のリリース** を選択する前に、**製品番号** フィールドの値を検証して、製品 ID が以前に作成された製品 ID であることを確認します。 値を検証するには、**製品番号** フィールドを右クリックして、**タスク レコーダー \> 検証 \> 現在の値** を選択します。
 
-    ![現在の値の検証](./media/setup_rsa_tool_97.png)
+    ![現在の値を検証します。](./media/setup_rsa_tool_97.png)
 
 #### <a name="save-the-task-recording-to-bpm"></a>タスク記録を BPM に保存する
 
 1. タスク記録が完了したら、**Lifecycle Services に保存** を選択します。
 
-    ![Lifecycle Services への完了したタスク記録の保存](./media/setup_rsa_tool_98.png)
+    ![Lifecycle Services への完了したタスク記録を保存します。](./media/setup_rsa_tool_98.png)
 
 2. ライブラリ情報が LCS から読み込まれます。
 
-    ![LCS からのライブラリ情報の読み込み](./media/setup_rsa_tool_99.png)
+    ![LCS からのライブラリ情報を読み込みます。](./media/setup_rsa_tool_99.png)
 
 3. タスク記録に関連付ける BPM ライブラリを選択します。 このチュートリアルでは、先ほど作成した **RSAT** BPM ライブラリとその下にある **製品のリリース** 業務プロセスを選択します。 その後、**OK** を選択します。
 
@@ -763,22 +763,22 @@ RSAT の主要な機能の 1 つとして、テスト ケースの連鎖 (つま
 3. **スイートにテスト ケースを追加** ページで、**クエリの実行** を選択します。
 4. **製品のリリース** に対して作成された新しいテスト ケースを選択し、ページの右下隅にある **テスト ケースの追加** を選択します (このボタンは次の図には示されていません)。
 
-    ![スイートにテスト ケースを追加ページ](./media/setup_rsa_tool_100.png)
+    ![スイートにテスト ケースを追加ページです。](./media/setup_rsa_tool_100.png)
 
     テスト スイートには、2 つのテスト ケースが含まれるようになりました。
 
-    ![テスト スイートの 2 つのテスト ケース](./media/setup_rsa_tool_101.png)
+    ![テスト スイートの 2 つのテスト ケースです。](./media/setup_rsa_tool_101.png)
 
 #### <a name="load-test-cases-into-rsat"></a>テストケースの RSAT への読み込み
 
 1. RSAT を開き、**読み込み** を選択します。
 2. テスト ケースが読み込まれ、「このアクションは Excel のテスト データ ファイルを上書きします」という警告が表示され、ローカルの変更が失われます。 続行しますか? **はい** を選択すると、Azure DevOps にアップロードされた Excel パラメーター ファイルではなく、ローカル システムの Excel パラメーター ファイルが更新されます。
 
-    ![このアクションにより、Excel テスト データ ファイルが上書きされます](./media/setup_rsa_tool_102.png)
+    ![このアクションにより、Excel テスト データ ファイルが上書きされます。](./media/setup_rsa_tool_102.png)
 
     両方のテスト ケースが、最初のテスト ケースの Excel パラメーター ファイルと共に読み込まれます。 前回の実行で **アップロード** を選択したため、パラメーター ファイルが Azure DevOps から引き出されます。
 
-    ![読み込まれたテスト ケース](./media/setup_rsa_tool_103.png)
+    ![テスト ケースが読み込まれました。](./media/setup_rsa_tool_103.png)
 
 3. 2 番目のテスト ケースのみを選択して、**新規 \> テスト実行とパラメーター ファイルの生成** を選択します。
 
@@ -787,7 +787,7 @@ RSAT の主要な機能の 1 つとして、テスト ケースの連鎖 (つま
 1. 2 番目のテスト ケースのみを選択し、**編集** を選択して対応する Excel パラメーター ファイルを開きます。
 2. 保存された変数 **{{EcoResProductCreate\_Identification\_ProductNumber\_Copy}}** を最初のテスト ケースから製品番号が使用されているすべてのフィールドへコピーします ([既存のタスク記録を変更して保存された変数を作成する](#modify-an-existing-task-recording-to-create-a-saved-variable) セクションを参照してください)。 この場合、変数を **EcoResProductListPage** シートの **製品番号** フィールドと **製品番号の検証** フィールドにコピーします。
 
-    ![製品番号と製品番号の検証フィールド](./media/setup_rsa_tool_104.png)
+    ![製品番号と製品番号の検証フィールドです。](./media/setup_rsa_tool_104.png)
 
     > [!NOTE]
     > 変数は、同じテストの実行中にのみテスト間で受け渡すことができます。 変数の名前は完全に一致している必要があります。
@@ -800,7 +800,7 @@ RSAT の主要な機能の 1 つとして、テスト ケースの連鎖 (つま
 1. 両方のテスト ケースを選択し、**実行** を選択します。
 2. 両方のテスト ケースが成功していることを確認します。
 
-    ![両方のテスト ケースに対して成功に設定された結果フィールド](./media/setup_rsa_tool_105.png)
+    ![両方のテスト ケースに対して成功に設定された結果フィールドです。](./media/setup_rsa_tool_105.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

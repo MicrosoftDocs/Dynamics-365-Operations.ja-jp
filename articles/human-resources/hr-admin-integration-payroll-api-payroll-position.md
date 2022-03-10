@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 05e9d6441cf99dce3f4663b9d5ba57e2b386e8c2f3060f75550270083f3b98b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2bbb234d2f51391ea65e3d6153d6cee250f3c6dc
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741456"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069810"
 ---
 # <a name="payroll-position"></a>給与職位
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -32,22 +35,29 @@ ms.locfileid: "6741456"
 
 このエンティティは、特定の従業員の職位に関連する情報を提供します。
 
-現物名。 
+物理名: mshr_payrollpositionentity。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ<br>**現物名**<br>**_種類_** | 使用 | 説明 |
+| プロパティ</br>**現物名**</br>**_種類_** | 使用 | 説明 |
 | --- | --- | --- |
-| **年間基本勤務時間**<br>annualregularhours<br>*実数* | 読み取り専用<br>必須 | 職位に定義されている年間基本勤務時間。  |
-| **給与職位詳細エンティティ ID**<br>payrollpositiondetailsentityid<br>*Guid* | 必須<br>システム生成。 | 職位を一意に識別するためのシステム生成の GUID 値。  |
-| **基本フィールド**<br>mshr_primaryfield<br>*文字列* | 必須<br>システム生成 |  |
-| **職位職務 ID の値**<br>_mshr_fk_positionjob_id_value<br>*GUID* | 読み取り専用<br>必須<br>外部キー: mshr_payrollpositionjobentity の mshr_PayrollPositionJobEntity |この職位に関連付けられているジョブの ID です。|
-| **固定報酬の報酬計画 ID 値**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | 読み取り専用<br>必須<br>外部キー: mshr_payrollfixedcompensationplanentity の mshr_FixedCompPlan_id  | この職位に関連付けられている固定報酬計画の ID です。 |
-| **支払サイクル ID**<br>mshr_primaryfield<br>*文字列* | 読み取り専用<br>必須 | 職位に定義された支払サイクル。 |
-| **法人による支払**<br>paidbylegalentity<br>*文字列* | 読み取り専用<br>必須 | 支払の発行を担当する職位で定義されている法人。 |
-| **職位 ID**<br>mshr_positionid<br>*文字列* | 読み取り専用<br>必須 | 職位の ID。 |
-| **失効日**<br>validto<br>*日時オフセット* | 読み取り専用<br>必須 |職位の詳細が有効になる日付。  |
-| **発効日**<br>validfrom<br>*日時オフセット* | 読み取り専用<br>必須 |職位の詳細が有効な日付。  |
+| **職位 ID**</br>mshr_positionid</br>*文字列* | 読み取り専用 | 職位の ID。 |
+| **支払サイクル ID**</br>mshr_paycycleid</br>*文字列* | 読み取り専用 | 職位に定義されている支払サイクル。 |
+| **年間基本勤務時間**</br>annualregularhours</br>*小数* | 読み取り専用 | 職位に定義されている年間の基本勤務時間。 |
+| **法人による支払**</br>paidbylegalentity</br>*文字列* | 読み取り専用 | 職位に定義されている、支払いを発行する責任を負う法人。 |
+| **失効日**</br>validto</br>*日時オフセット* | 読み取り専用 | 職位の詳細が有効となる期限の日付。 |
+| **発効日**</br>validfrom</br>*日時オフセット* | 読み取り専用 | 職位の詳細が有効となる開始日付。 |
+| **基本フィールド**</br>mshr_primaryfield</br>*文字列* | システム生成 | プライマリ フィールド。 |
+| **給与職位詳細エンティティ ID**</br>payrollpositiondetailsentityid</br>*Guid* | 必須</br>システム生成。 | 職位を一意に識別するための、システムが生成したグローバルに一意な識別子 (GUID) の値です。 |
+
+## <a name="relations"></a>リレーション
+
+| プロパティ値 | 関連するエンティティ | ナビゲーション プロパティ | コレクション タイプ |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_PayrollPosition |
+| _mshr_fk_hcmpositionhierarchy_id_value | mshr_hcmpositionhierarchyentity | mshr_FK_HcmPositionHierarchy_id | 該当なし |
+| _mshr_fk_job_id_value | mshr_payrollpositionjobentity | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_Payroll |
+| _mshr_fk_positionassignmentv2_id_value | mshr_hcmpositionworkerassignmentv2entity | mshr_FK_PositionAssignmentV2_id | 該当なし |
 
 ## <a name="example-query"></a>クエリの例
 

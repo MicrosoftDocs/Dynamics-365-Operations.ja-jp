@@ -1,18 +1,18 @@
 ---
 title: 繰延タイプ<T>
 description: 繰延タイプ
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: b076498c88abf21e9bbb374262e97c91043912b1e3f912ad6d430f7b3c215d2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: 16135e7a11941d54b7c4c8def7dc45d7f72033fb
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731519"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782877"
 ---
 # <a name="deferred-typelttgt"></a>延期されたタイプ&lt;T&gt;
 

@@ -2,11 +2,9 @@
 title: Finance and Operations アプリのアプリケーションの検証
 description: このトピックでは、カスタム コードが Microsoft のガイドラインを満たしていることを確認するために使用する要件の情報を提供します。
 author: kfend
-manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.custom: 196913
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: 999cf1a99dc3563e0136b8a1e637d12f2e6e9d3f
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 805e75187b3cca9ab1dc220fca3195a5872a4c84a81111f4927c42dd089171c3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129139"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730557"
 ---
 # <a name="validate-applications-for-finance-and-operations-apps"></a>Finance and Operations アプリのアプリケーションの検証
 
@@ -94,7 +92,9 @@ AppSource で発行されている生成されたソリューションを使用�
 | 1     | 1      | 顧客コードを検証します。 | CAR ツールを使用してすべての顧客モデル ファイルを実行し、レポートを生成します。 | ローカライズ、アクセシビリティ、パフォーマンス、セキュリティ上の問題なく CAR を正常に作成します。 最新のメジャー リリースにアップグレードした後、CAR が強調表示するすべてのメジャーな問題に対処する必要があります。 CAR は、春および秋の各メジャーリリース後から 8 週間以内に Microsoft に送信する必要があります。 |
 
 
-<a name="additional-resources"></a>追加リソース
---------
+## <a name="additional-resources"></a>追加リソース
 
 [AppSource でアプリを公開するための要件](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

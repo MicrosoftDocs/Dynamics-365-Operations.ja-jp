@@ -1,26 +1,26 @@
 ---
 title: 増分支払の取得
 description: このトピックでは、Dynamics 365 Commerce での注文請求の一部として増分取得に対するすぐに使えるサポートについて説明します。
-author: rubendel
+author: BrianShook
 ms.date: 3/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0631c47512ace05000c31f71bc405a11b8919ce9
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: fb57b8bc7b478dcd05296f7b32a05b5b18da582d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346736"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781721"
 ---
 # <a name="incremental-capture-for-order-invoicing"></a>注文請求の増分取得
 

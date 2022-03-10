@@ -1,15 +1,13 @@
 ---
 title: 工順と工程
 description: このトピックでは、工順と工程に関する情報を提供します。
-author: sorenva
-manager: tfehr
+author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart,
-ms.author: sorenand
+ms.author: johanho
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 268124
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f95ecf7faa9f3c89b0a5f65961c42e6ebe7d51df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262120"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891956"
 ---
 # <a name="routes-and-operations"></a>工順と工程
 
@@ -31,8 +29,7 @@ ms.locfileid: "5262120"
 
 このトピックでは、工順と工程に関する情報を提供します。 工順は、製品または製品バリアントを生産するためのプロセスを定義します。 ここでは、生産プロセス内の各ステップ (工程) とこれらのステップが実行される必要がある手順について説明します。 ステップごとに、工程は必要な運営リソース、必要な段取り時間と実行時間、およびコストが計算される必要がある方法も定義します。
 
-<a name="overview"></a>概要
---------
+## <a name="overview"></a>概要
 
 工順は、製品または製品バリアントの製造に必要な工程順序について説明します。 工程ごとに、工順は必要な運営リソース、工程を設定および実行するために必要な時間、およびコストを計算する方法も定義します。 複数の製品を生産するために同じ工順を使用するか、 各製品または製品バリアントへの固有の工順を定義したりできます。 同じ製品に複数の工順を使用することもできます。 この場合、使用される工順は必要な生産数量などの要因によって異なります。 Supply Chain Management の工順の定義は、生産プロセスを表す 4 つの別々の要素をまとめることにより構成されます。
 
@@ -48,7 +45,7 @@ ms.locfileid: "5262120"
 
 簡易工順は連続しており、工順の開始点は 1 つだけです。  
 
-[![簡易工順](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![簡易工順。](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 生産管理パラメータで簡易工順のみを有効にすると、工順の定義時に Supply Chain Management により工程番号 (10、20、30 など) が自動的に生成されます。
 
@@ -56,7 +53,7 @@ ms.locfileid: "5262120"
 
 生産管理パラメータでより複雑な工順ネットワークを有効にすると、複数の開始点がある工順および並行して実行可能な工程を定義できます。  
 
-[![工順ネットワーク](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![工順ネットワーク。](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - 各工程は後続工程を 1 つだけ使用でき、全体の工順は 1 つの工程で終了する必要があります。
@@ -67,7 +64,7 @@ ms.locfileid: "5262120"
 
 工程を実行するために、異なる特性を持つ複数の運営リソースの組み合わせが必要な場合もあります。 たとえば、ある組み立て工程では機械、工具、工程を監督する作業者が機械 2 台ごとに 1 人必要です。 この例は、1 つの工程を基本工程とし、その他を副次と指定する並行工程を用いてモデル化できます。  
 
-[![基本工程と二次工程がある工順](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![基本工程と二次工程がある工順。](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 通常、基本工程はボトルネック リソースを表し、二次工程の実行時間を決めます。 ただし、有限能力でスケジューリングする際には、基本工程と二次工程の両方にスケジューリングされたリソースが同時に利用可能で自由な機能を持っている必要があります。  
 
@@ -81,7 +78,7 @@ ms.locfileid: "5262120"
 
 各工順は、個別に承認または未承認にすることができます。 ただし、工順が承認されない場合は、すべての関連する工順バージョンも承認されないことに注意してください。 生産管理パラメーターでは、工順の承認を取り消すどうか、および承認された工順を変更するどうかを指定できます。  
 
-誰が各工順を承認したか記録したログを保存する必要がある場合は、工順の承認に電子署名を要求できます。 ユーザーは、[電子署名](../../fin-and-ops/organization-administration/electronic-signature-overview.md) を使用して身分証明の確認をすることが必要になります。
+誰が各工順を承認したか記録したログを保存する必要がある場合は、工順の承認に電子署名を要求できます。 ユーザーは、[電子署名](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) を使用して身分証明の確認をすることが必要になります。
 
 ## <a name="operations"></a>Operations
 工程とは、生産プロセス内の手順です。 各工程には ID と簡単な説明があります。 次の表に、機械工場の工程の一般的な例を示します。
@@ -187,7 +184,7 @@ Supply Chain Management がリリース済製品に最も関連する関連工�
 
 ### <a name="electronic-signatures"></a>電子署名
 
-誰が各工順バージョンを承認し有効化したかを記録したログを保存する必要がある場合は、これらの作業に電子署名を要求できます。 工順バージョンを承認し有効化したユーザーは、[電子署名](../../fin-and-ops/organization-administration/electronic-signature-overview.md) を使用して身分証明の確認をすることが必要になります。
+誰が各工順バージョンを承認し有効化したかを記録したログを保存する必要がある場合は、これらの作業に電子署名を要求できます。 工順バージョンを承認し有効化したユーザーは、[電子署名](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) を使用して身分証明の確認をすることが必要になります。
 
 ### <a name="product-change-that-uses-case-management"></a>ケース管理を使用した製品変更
 
@@ -226,7 +223,7 @@ Supply Chain Management がリリース済製品に最も関連する関連工�
 工程のリソース要件の一部として運営リソースまたはリソース グループを指定しない場合、適用可能なリソースは異なる速度で実行することがあります。 したがって、工程を処理するために必要な時間は異なる場合があります。 この問題を解決するには、関連工程の **フォーミュラ** フィールドを使用して処理時間の計算方法を指定できます。  次のオプションを使用できます。
 
 - **標準** – (既定のオプション) 計算には関連工程のフィールドのみが使用され、注文数量に応じて指定された実行時間が乗算されます。
-- **能力** – 計算には運営リソースの **能力** フィールドが含まれます。 したがって、時間はリソース依存です。 運営リソースで指定された値は、時間あたりの能力です。 **処理時間** は、**注文数量** を **容量** で割った値として計算されます。
+- **能力** – 計算には運営リソースの **能力** フィールドが含まれます。 したがって、時間はリソース依存です。 運営リソースで指定された値は、時間あたりの能力です。 **処理時間** は、**注文数量** を **容量** で割った値として計算されます。 容量の値は、特定の測定単位に固有であるため、**容量単位** フィールドに基づいて変換されません。これは、計算に使用しない説明的なフィールドです。
 - **バッチ** – バッチ能力は、関連工程からの情報を使用して計算されます。 したがって、バッチ数、処理時間は注文数量に基づいて計算されます。
 - **リソース バッチ** – このオプションは基本的には **バッチ** オプションと同じです。 ただし、計算には運営リソースの **バッチ能力** フィールドが含まれます。 したがって、時間はリソース依存です。
 
@@ -255,7 +252,7 @@ Supply Chain Management がリリース済製品に最も関連する関連工�
 
 - [リソースの能力](resource-capabilities.md)
 
-- [電子署名の概要](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [電子署名の概要](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 

@@ -2,11 +2,9 @@
 title: 新規または更新されたタスク ガイド (2017 年 12 月)
 description: このトピックでは、Microsoft Dynamics 365 for Operations の Microsoft (2016 年 12 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0829296d01e474437e8080db8b03d047e3a613fc
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 42bf8e4a1264b67ff11dad7417d16b6273e6feb36294596014faf562a4a0ef3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695016"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723058"
 ---
 # <a name="new-or-updated-task-guides-december-2017"></a>新規または更新されたタスク ガイド (2017 年 12 月)
 
@@ -368,3 +366,6 @@ BPM 明細行が削除されると、BPM 明細行に関連付けられている
 **削除された BPM 明細行**
 
 - スケジュール済みかんばん作業の移動
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

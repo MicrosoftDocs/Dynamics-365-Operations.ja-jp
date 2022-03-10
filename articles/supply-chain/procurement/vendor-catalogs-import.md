@@ -1,12 +1,10 @@
 ---
 title: 仕入先カタログのインポート
 description: このトピックでは、仕入先カタログ データをインポートするプロセスについて説明します。
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests, CatVendorCatalogDetails, CatVendorCatalogReleaseApprovedProducts, CatVendorCMRDetails, CatVendorCatalogProductPerCompanyStatus, CatVendorMaintenanceEventLog, CatVendorCatalogReviewTool, CatVendorCatalogFileUpload, CatVendorCatalogMaintenanceRequest, CatVendorCatalogFileInLegalEntity, CatVendorCatalogSchema, CatVendorCatalogFilePreviewPane, CatVendorCatalogImportParameter
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: f752e6c42653d7ac39e011e71d0d31f936996499
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fb7e9735ac29fae50a4a3874b713a9a75799605c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260530"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570396"
 ---
 # <a name="import-vendor-catalogs"></a>仕入先カタログのインポート
 

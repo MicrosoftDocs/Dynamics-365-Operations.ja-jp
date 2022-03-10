@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce2c20874b0dc901ff8684da2881c7f16ce622c9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 180fb7b31ea826c546aa8472a7ef4025a3b8865a783a5b662ed30b69f98acf92
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730205"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>ジョブ スケジュールのガント チャート
 
@@ -45,10 +45,10 @@ ms.locfileid: "5836545"
 
 ## <a name="order-view"></a>注文の表示
 
-[![注文の表示](./media/orderview.png)](./media/orderview.png)
+[![注文の表示。](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>リソース ビュー
-[![リソース ビュー](./media/resview.png)](./media/resview.png)
+[![リソース ビュー。](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>活動
 活動はバーとして表示され、予定された開始時刻および終了時刻とともにタイム スケール グリッドで整理され、バーの長さは活動を完了させるのに必要な時間に比例します。 活動はタイム スケールに従って表示されます。 開始日と終了日、および、時間または日数などの時間単位を選択するメニューから、タイム スケールを調整することができます。 タイム スケールを調整することによって、活動を管理したい時間間隔にフォーカスできます。 
@@ -102,25 +102,25 @@ ms.locfileid: "5836545"
 
 同じ製造オーダーに所属するジョブなどの活動のネットワーク内で、**前のジョブのスケジュール設定** 機能を使用して、ネットワーク内で選択したジョブに関連する前のジョブをスケジューリングできます。 次の例では、強調表示された活動が選択したジョブです。 図では、前のジョブがスケジュールされる前と後を示しています。 
 
-[![前のジョブのスケジュール設定](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![前のジョブのスケジュール。](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>次のジョブのスケジュール設定
 
 **次のジョブのスケジュール設定** 機能を使用して、活動のネットワーク内で選択したジョブに関連する次のジョブをスケジューリングできます。 次の例では、強調表示された活動が選択したジョブです。 図では、次のジョブがスケジュールされる前と後を示しています。 
 
-[![次のジョブのスケジュール設定](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![次のジョブのスケジュール。](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>ジョブに関するスケジュール
 
 **ジョブに関するスケジュール** 機能を使用して、活動のネットワーク内で選択したジョブに関連する次のジョブと前のジョブをスケジューリングできます。 次の例では、強調表示された活動が選択したジョブです。 図では、ジョブがスケジュールされる前と後を示しています。 
 
-[![ジョブに関するスケジュール](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![ジョブに関するスケジュール。](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>ジョブの調整
 
 **調整** 機能を使用して、同じリソースで選択した活動を調整することができます。 これらの活動は活動の同じネットワーク内にありますが、別のネットワークに属していることも可能です。 調整機能を使用すると、選択した活動間の時間のギャップが削除されます。 この機能を使用して、リソースの能力利用を最適化できます。 図では、ジョブがスケジュールされる前と後を示しています。 
 
-[![ジョブの調整](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![ジョブの調整。](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>活動を 1 つのリソースから別のリソースに再割り当てする
 
@@ -155,7 +155,7 @@ ms.locfileid: "5836545"
 ## <a name="additional-resources"></a>その他のリソース  
 [Visual scheduling with Gantt chart for production and batch orders (ビデオ)](https://youtu.be/BtbuShkGj4I)
 
-[生産 (デモ スクリプト) の視覚的スケジューリング](https://docs.microsoft.com/dynamics/s-e/)
+[生産 (デモ スクリプト) の視覚的スケジューリング](/dynamics/s-e/)
 
 
 

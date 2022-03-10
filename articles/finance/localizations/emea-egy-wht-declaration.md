@@ -5,26 +5,24 @@ author: sndray
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4e3d68ac003fabaa504ffe81b8bf2f7ff8d7538d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839795"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403894"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>エジプトの源泉徴収税申告 (EG-00005)
 
 [!include[banner](../includes/banner.md)]
-
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>概要
@@ -104,7 +102,7 @@ Microsoft Excel で WHT 申告フォーム レポートを生成するには、*
 2. **源泉徴収税** タブの **WHT 申告フォーマット マッピング** フィールドで、**WHT 申告 Excel (EG)** を選択します。 フィールドを空白のままにすると、標準消費税レポートが SSRS 形式で生成されます。
 
 
-![申告 フォーム](media/egypt-wht-declaration-setup1.png)
+![申告フォーム。](media/egypt-wht-declaration-setup1.png)
 
 ## <a name="generate-the-withholding-declaration-forms"></a>源泉徴収申告フォームの生成
 特定の期間の源泉徴収申告フォームを準備および送信するプロセスは、支払税の決済および転記ジョブ中に転記された源泉徴収税トランザクションに基づいています。 グローバル源泉徴収税の詳細については、[グローバル源泉徴収税](../general-ledger/global-withholding-tax-overview.md) を参照してください。
@@ -114,7 +112,7 @@ Microsoft Excel で WHT 申告フォーム レポートを生成するには、*
 1. **税** > **申告** > **源泉徴収税** > **源泉徴収税の支払* に移動します。
 2. 決済期間を選択し、レポートの開始日を選択します。 
 3. トランザクションの日付を入力して **OK** を選択します。
-4. 開かれているダイアログ ボックスで、1 つ以上のフォーム タイプ **フォーム ナンバー 41**、**フォーム ナンバー 11** または **なし** を選択します。 **なし** を選択すると、標準レポートが生成されます。 
+4. 開かれているダイアログ ボックスで、**フォーム No 41**、**フォーム No 11** または **なし** から 1 つ以上のフォーム タイプを選択します。 **なし** を選択すると、標準レポートが生成されます。 
 5. 言語を選択します。 すべてのレポートは、**en-us** および **ar-eg** に移動されます。
 6. 税支払が行われる銀行の支店と名前を入力します。
 7. ビジネス タイプを選択し、チェック番号および文書番号を入力します。 

@@ -2,14 +2,12 @@
 title: 支払コネクタの配置
 description: このトピックでは、支払コネクタ パッケージを適切なコンポーネントに配置する方法について説明します。
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6650f179038484f19f6f9f265b526213f65c7032
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e0ea58d1cc41667e4a1d227d19b45f64f71d3114
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684979"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783082"
 ---
 # <a name="deploy-payment-connectors"></a>支払コネクタの配置
 
@@ -58,7 +56,7 @@ ms.locfileid: "4684979"
         - Commerce Scale Unit (自己ホスト)
 
 > [!NOTE]
-> 10.0.10 以前のリリースでは、AOS および CSU の両方に RetailDeployablePackage を配置できます。 その後のリリースでは、RetailDeployablePackage は CSU にのみ配置できます。 支払コネクタを AOS アプリケーション バージョン 10.0.10 以降に配置するには、[セルフサービス配置のアプリケーション エクスプローラー用支払パッケージの作成](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/payment-connector-package) の情報に従ってください。
+> 10.0.10 以前のリリースでは、AOS および CSU の両方に RetailDeployablePackage を配置できます。 その後のリリースでは、RetailDeployablePackage は CSU にのみ配置できます。 支払コネクタを AOS アプリケーション バージョン 10.0.10 以降に配置するには、[セルフサービス配置のアプリケーション エクスプローラー用支払パッケージの作成](./payment-connector-package.md) の情報に従ってください。
 
 ### <a name="upload-and-deploy-deployable-packages"></a>展開可能なパッケージのアップロードと展開
 
@@ -74,7 +72,7 @@ ms.locfileid: "4684979"
 5. **アップロード** をクリックします。
 6. 圧縮済みのパッケージを選択してアップロードし、**確定** をクリックします。
 
-配置可能パッケージを LCS 資産ライブラリにアップロードした後、LCS ポータルを通じて環境に配置することができます。 サンドボックス環境内の配置を検証した後は、実稼働環境を配置するサービス要求を作成できます。 詳細については、[配置可能パッケージの適用](../../dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
+配置可能パッケージを LCS 資産ライブラリにアップロードした後、LCS ポータルを通じて環境に配置することができます。 サンドボックス環境内の配置を検証した後は、実稼働環境を配置するサービス要求を作成できます。 詳細については、[配置可能パッケージの適用](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md) を参照してください。
 
 #### <a name="download-and-run-installers-on-client-computers"></a>クライアント コンピューターでインストーラーをダウンロードして実行
 
@@ -90,17 +88,14 @@ ms.locfileid: "4684979"
 
 |  コネクタ | IPaymentProcessor Assemblies フォルダーのコンテンツ | 支払い Web ファイル フォルダーのコンテンツ | IPaymentDevice Assemblies フォルダーのコンテンツ |
 |-----------|-----------------------------|------------------------------|---|
-| Application Object Server (AOS)                                            | &lt;*Aos.PackageDirectory*&gt;/bin/Connectors/ &lt;*Aos.WebRoot*&gt;/bin/ | &lt;*Aos.WebRoot*&gt;/Connectors/        | 適用できません                                   |
-| コマース スケール ユニット                                                              | &lt;*RS.WebRoot*&gt;/bin/                                                 | 適用できません                           | 適用できません                                   |
+| Commerce Scale Unit                                                              | &lt;*RS.WebRoot*&gt;/bin/                                                 | 適用できません                           | 適用できません                                   |
 | クラウド POS                                                                  | 適用できません                                                            | &lt;*CPOS.WebRoot*&gt;/Connectors/       | 該当なし                                   |
 | リモート ハードウェア ステーション (インターネット インフォメーション サービス \[IIS\])            | &lt;*HWS.WebRoot*&gt;/bin/                                                | 該当なし                           | &lt;*HWS.WebRoot*&gt;/bin/                       |
 | Modern POS のローカルのハード ステーション (情報の保護とコントロール \[IPC\]) | &lt;*MPOS.AppRoot*&gt;/ClientBroker/                                      | 該当なし                           | &lt;*MPOS.AppRoot*&gt;/ClientBroker/             |
-| E コマース                                                                 | 該当なし                                                            | &lt;*ECOM.WebRoot*&gt;/Connectors/       | 該当なし                                   |
+| E コマース                                                                 | 該当なし                                                            | &lt;*ECOM.WebRoot*&gt;/Connectors/       | 適用できません                                   |
 
 上記のテーブルへのキーを次に示します。
 
-- &lt;*Aos.PackageDirectory*&gt; は AOS のパッケージ ディレクトリです。 パスは AOS の web.config ファイルから見つけることができます (key = **Aos.PackageDirectory**)。
-- &lt;*Aos.WebRoot*&gt; は AOS の Web アプリケーション ルートです。
 - &lt;*RS.WebRoot*&gt; は Commerce Scale Unit の Web アプリケーション ルートです。
 - &lt;*HWS.WebRoot*&gt; はリモート ハードウェア ステーションの Web アプリケーション ルートです。
 - &lt;*MPOS.AppRoot*&gt; は Modern POS (例えば、\\C:Program Files (x86)\\Microsoft Dynamics AX70\\Retail Modern POS) のアプリ インストール フォルダーです。
@@ -117,3 +112,6 @@ E コマース サイトは、LCS の管理された環境では配置されて�
 [支払コネクタと支払デバイスの実装ガイド](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 
 [配置可能パッケージの作成](retail-sdk/retail-sdk-packaging.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09ca57d6a3654e56e12240af73d6793002eb1794e4b41d25e182b9b1d3b66df5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff67198980765f288b5394d91927ae1826266841
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746798"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103341"
 ---
 # <a name="cycle-counting-example-scenarios"></a>循環棚卸のシナリオ例
 
@@ -32,10 +32,7 @@ ms.locfileid: "6746798"
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのサポートをオンにする
 
-新しい Warehouse Management モバイル アプリを使用する前に、サポートをシステムに追加する必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *倉庫管理*
-- **機能名:** *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル*
+Warehouse Management mobile app を使用するには、ご利用のシステムで *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* 機能がオンになっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* を検索して、この機能をオンまたはオフにすることができます。
 
 ### <a name="prepare-demo-data-for-the-scenarios"></a><a name= "prepare-demo-data"></a>シナリオのデモ データの準備
 

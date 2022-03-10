@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: eb4200deed5407bef6861913cecdad7114ea68cc
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: b12740e58b2bf8667bee8a2c51917d69771779f2
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270790"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103366"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>生産材料の既定の予約原則の上書き
 
@@ -31,12 +31,9 @@ ms.locfileid: "6270790"
 
 たとえば、それらの製品に対して作成される原材料または材料がピック作業を必要とする場合、BOM かフォーミュラ明細行の物理的な予約が必要になります。これは、倉庫作業の生成には物理的な予約が前提条件となります。 通常、予約を自動的に行う場合は、*見積*、*スケジューリング*、*リリース*、または *開始* のいずれかの予約原則を選択します。 一方、ピック作業を必要としない材料または材料がある場合は、場所から直接消費されるのが一般的です。*手動* 予約原則は、物理的な引当を行わないか、ピック作業を生成しません。
 
-## <a name="turn-on-the-feature"></a>機能をオンにする
+## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>既定の生産引当のオーバーライドをオンまたはオフにする
 
-この機能を使用するには、システム上で有効化する必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *生産制御*
-- **機能名:** *規定の生産計画の上書き*
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *既定の生産引当のオーバーライド* 機能を検索して、この機能をオンまたはオフにできます。
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>品目モデル グループへの生産予約ポリシーの割り当て
 

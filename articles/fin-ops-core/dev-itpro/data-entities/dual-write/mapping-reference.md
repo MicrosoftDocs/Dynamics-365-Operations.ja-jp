@@ -1,27 +1,27 @@
 ---
 title: 二重書き込みマッピングのリファレンス
 description: このトピックでは、各二重書き込みマッピングの列マッピングを一覧表示します。
-author: robinarh
+author: tonyafehr
 ms.date: 12/22/2020
 ms.topic: reference
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85aaaafa1cec40d8f4681b9a74c3c8c11f8c10e468157c2b7343a5d20849d702
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 17b6a1493c5931d3d78f34863baf3bb5bacf99d4
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767741"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063043"
 ---
 # <a name="dual-write-mapping-reference"></a>二重書き込みマッピングのリファレンス
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [!include [banner](includes/dual-write-symbols.md)]
 

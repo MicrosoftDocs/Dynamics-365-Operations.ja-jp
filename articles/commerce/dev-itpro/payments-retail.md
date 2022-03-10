@@ -2,24 +2,24 @@
 title: 支払の FAQ
 description: このトピックでは、Dynamics 365 Commerce で使用できる支払いオプションについて説明します。
 author: athinesh99
-ms.date: 10/16/2020
+ms.date: 10/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 65801
 ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
 ms.search.region: Global
 ms.author: athinesh
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7643b10f8766ccdba35c38c9fb0a46d4bd804309a3f65c4c1a6af9acdb0d5c3b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b24c7e3aba75f928df35bcb7c5effa51fe5a83b6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729873"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783342"
 ---
 # <a name="payments-faq"></a>支払に関してよく寄せられる質問
 
@@ -64,6 +64,10 @@ Adyen コネクタに関して、設定に関する問題の場合は Adyenコ�
 ## <a name="if-a-supported-payment-provider-issues-an-update-will-microsoft-automatically-update-the-payment-connector-or-do-i-need-to-work-with-the-payment-provider-to-get-the-updated-payment-connector"></a>サポートされている支払プロバイダーが更新プログラムを発行した場合は、Microsoft は自動的に支払コネクタを更新してくれますか? または更新された支払コネクタを取得するために支払プロバイダーと連携する必要がありますか。
 
 支払いコネクターの更新プログラムが支払コネクター プロバイダーによって発行された場合、支払いコネクターの更新バージョンは Dynamics 365 Commerce の次の予定リリースに含まれます。 ただし、顧客は早期に取得するため、支払コネクタ プロバイダと直接作業することもできます。
+
+## <a name="does-dynamics-365-commerce-support-cash-out-or-cash-back-operations-during-the-checkout-process-in-point-of-sale-pos"></a>Dynamics 365 Commerce は販売時点管理 (POS) のチェックアウト プロセス中に「キャッシュ アウト」操作または「キャッシュ バック」操作をサポートしますか?
+
+いいえ、トランザクションの間、POS ではキャッシュ バック操作またはキャッシュ アウト操作はサポートされません。 ただし、拡張機能によるカスタマイズは、ギフトカードの「キャッシュ アウト」操作と同様のキャッシュ リターンおよび支払い操作を使用して達成できます。 
 
 ## <a name="related-topics"></a>関連トピック
 

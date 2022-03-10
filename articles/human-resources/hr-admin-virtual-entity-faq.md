@@ -1,8 +1,8 @@
 ---
 title: Human Resources 仮想テーブルに関するよく寄せられる質問
-description: このトピックでは、Human Resources 仮想エンティティに関してよく寄せられる質問の一覧を示します。
+description: このトピックでは、Human Resources 仮想エンティティに関してよく寄せられる質問への回答を提供します。
 author: jaredha
-ms.date: 05/26/2021
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,21 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 1c302c36d43d7a9460a4a2c50950fd07809225faaf775e34f84b47af0333c3a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5709c6a0cfbce21db191ac3d4fe133bd6c5e550a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750261"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069694"
 ---
 # <a name="human-resources-virtual-tables-faq"></a>Human Resources 仮想テーブルに関するよく寄せられる質問
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の仮想テーブルに関してよく寄せられる質問のコレクションを示します。
+このトピックでは、よく寄せられる Dynamics 365 Human Resources の仮想テーブルに関していくつかの質問に対する回答を提供します。
 
 > [!NOTE]
 > Dataverse (旧 Common Data Service) および用語更新の詳細については、[Microsoft Dataverse とは何ですか?](/powerapps/maker/data-platform/data-platform-intro)を参照してください
@@ -116,7 +119,7 @@ No. すべての Human Resources 仮想テーブルは、Dynamics 365 HR Virtual
 
 7. **インストール** を選択します。
 
-インストールには数分かかります。 完了すると **Finance and Operations 仮想データ ソースの構成** エンティティをこの環境で生成されます。
+インストールには数分かかります。 完了すると **Finance and Operations 仮想データ ソースの構成** エンティティがこの環境で生成されます。
 
 ![Power Platform 管理センターから Dynamics 365 HR 仮想テーブル アプリをインストールします。](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 

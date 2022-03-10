@@ -2,25 +2,23 @@
 title: Finance and Operations アプリにおける暗号化処理
 description: このトピックでは、環境の SQL Server データベースと Azure ストレージに格納されている、休眠している顧客データの保護に使用される暗号化技術について説明します。
 author: nedb
-manager: ''
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 21631
 ms.search.region: Global
 ms.author: nedb
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3337bd40ee00c3f0d296928d32d88ea7460a1fd7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a771d790917542e9df2c0d81d2ec3cf39515b047
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679908"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783152"
 ---
 # <a name="encryption-in-finance-and-operations-apps"></a>Finance and Operations アプリにおける暗号化処理
 
@@ -30,7 +28,7 @@ ms.locfileid: "4679908"
 
 Microsoft は、環境の SQL Server データベースと Azure ストレージに格納されている、休眠している顧客データを保護する目的で暗号化技術を使用しています。
 
-すべてのインスタンスは、[Microsoft SQL Server Transparent Data Encryption (TDE) ](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption)と [Azure ストレージ暗号化](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) を使用して、ディスクに書き込まれる休眠データをリアルタイムで暗号化しています。 
+すべてのインスタンスは、[Microsoft SQL Server Transparent Data Encryption (TDE) ](/sql/relational-databases/security/encryption/transparent-data-encryption)と [Azure ストレージ暗号化](/azure/storage/common/storage-service-encryption) を使用して、ディスクに書き込まれる休眠データをリアルタイムで暗号化しています。 
 
 Finance and Operations アプリでは、サービス管理キーを使用してサーバーサイドの暗号化を使用します。 キーの発行、ローテーション、バックアップなどのキーに関する管理は、Microsoft が処理します。
 
@@ -59,7 +57,10 @@ Finance and Operations アプリは以下の暗号スイートにのに対応し
 
 ## <a name="additional-resources"></a>追加リソース
 
-* [Azure 休眠データの暗号化](https://docs.microsoft.com/azure/security/fundamentals/encryption-atrest)
-* [Microsoft SQL Server透過データの暗号化 (TDE)](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption)
-* [Azure ストレージの暗号化](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)
+* [Azure 休眠データの暗号化](/azure/security/fundamentals/encryption-atrest)
+* [Microsoft SQL Server透過データの暗号化 (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption)
+* [Azure ストレージの暗号化](/azure/storage/common/storage-service-encryption)
 * [開発のための内部者向けヒント](https://community.dynamics.com/ax/b/newdynamicsax)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

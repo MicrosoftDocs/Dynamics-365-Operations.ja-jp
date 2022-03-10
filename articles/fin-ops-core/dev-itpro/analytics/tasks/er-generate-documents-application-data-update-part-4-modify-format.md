@@ -1,12 +1,10 @@
 ---
 title: アプリケーション データを含むドキュメントを生成するための形式の変更
-description: この手順のステップを完了するには、まず「ER アプリケーション データ更新と共にドキュメントを生成する (パート 3 - モデルとマッピングの変更)」の手順を完了する必要があります。
+description: このトピックでは、電子ドキュメントを生成し、アプリケーション データを更新するためのレポート コンフィギュレーションを設計する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 312a49fc524cc7359d2c1815597214656df11c018034da384d30bfb9d9efee4b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752414"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するための形式の変更
 
@@ -149,3 +147,6 @@ ms.locfileid: "4684550"
 46. ページを閉じます。
 47. ページを閉じます。
 48. ページを閉じます。
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

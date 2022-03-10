@@ -2,11 +2,9 @@
 title: Microsoft Teams に既存のチームがある場合は、店舗とチームをマッピングします
 description: ここでは、Commerce の統合前に Microsoft Teams でチームを作成していた場合に、Dynamics 365 Commerce 本部の店舗と対応するチームをマッピングする方法について説明します。
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3edd176788b24a5f5246e9b7bcb3c6fbcdca2254
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6faba58304e1fe9e9ba2ce1a76fbf1cc783466bf01b0d4e3774e8ed090485bb1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842697"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757372"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Microsoft Teams に既存のチームがある場合は、店舗とチームをマッピングします
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 ここでは、Commerce の統合前に Microsoft Teams でチームを作成していた場合に、Dynamics 365 Commerce 本部の店舗と対応するチームをマッピングする方法について説明します。
 
@@ -60,7 +57,7 @@ Commerce 本部で店舗と対応するチームをマッピングするには�
 
 次のイメージ例では、Commerce の **チームのマッピングのエクスポート** グループで、**エンティティの追加** 要素とエクスポートされた CSV ファイルのヘッダーが強調表示されています。
 
-![Commerce の チームのマッピングのエクスポート グループで、エンティティの追加 要素とエクスポートされた CSV ファイルのヘッダーが強調表示されています](media/d365-commerce-data-mgmt-export-entity.png)
+![Commerce の チームのマッピングのエクスポート グループで、エンティティの追加 要素とエクスポートされた CSV ファイルのヘッダーが強調表示されている。](media/d365-commerce-data-mgmt-export-entity.png)
 
 > [!NOTE]
 > 上記手順の完了後は、[Microsoft Teams と POS 間のタスク管理を同期する](synchronize-tasks-teams-pos.md) に記載の手順に従い、タスク管理を同期します。 

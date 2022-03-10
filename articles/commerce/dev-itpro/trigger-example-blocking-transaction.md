@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 65893
 ms.assetid: 605f5986-f84f-4b18-b94e-b0912cb367a1
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 83aaa95263a6d0880c703515f7b503a2f5e33ae3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bc119696e65c3158f96a7ff24d5e356af4031412
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792913"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782401"
 ---
 # <a name="block-transactions-by-using-triggers"></a>トリガーを使用してトランザクションをブロックする
 

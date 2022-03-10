@@ -3,23 +3,22 @@ title: 作成ページの概要
 description: このトピックでは、Microsoft Dynamics 365 Commerce の作成ページの概要を示します。
 author: brendans
 ms.date: 10/31/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: abd534035a75d5d63b972c7d6668c9dc766b019a
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349749"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984624"
 ---
 # <a name="authoring-page-overview"></a>作成ページの概要
 

@@ -2,11 +2,9 @@
 title: ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする
 description: このトピックでは、コンフィギュレーション サービスのグローバル リポジトリから電子申告 (ER) コンフィギュレーションをダウンロードする方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a96e78a64fe0559ae5f3bfddabf3fe1cad8a3dcb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679561"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605334"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、コンフィギュレーション サービスのグローバル リポジトリから [電子申告 (ER) コンフィギュレーション](general-electronic-reporting.md#Configuration) をダウンロードする方法について説明します。 詳細については、[Microsoft Dynamics 365 for Finance and Operations - Regulatory services、コンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) を参照してください。
+このトピックでは、コンフィギュレーション サービスのグローバル リポジトリから [電子申告 (ER) コンフィギュレーション](general-electronic-reporting.md#Configuration) をダウンロードする方法について説明します。 詳細については、[Microsoft Dynamics 365 for Finance and Operations - Regulatory services、コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) を参照してください。
 
 ## <a name="open-configurations-repository"></a>コンフィギュレーション リポジトリを開く
 
@@ -42,7 +40,7 @@ ms.locfileid: "4679561"
 3. **コンフィギュレーション プロバイダー** セクションで、**Microsoft** タイルを選択します。
 3. **Microsoft** タイルで **リポジトリ** を選択します。
 
-    ![電子申告ワークスペース](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![電子申告ワークスペース。](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. **コンフィギュレーション リポジトリ** ページのグリッドで、**グローバル** タイプの既存のリポジトリを選択します。 このリポジトリがグリッドに表示されない場合は、次の手順に従います。
 
@@ -54,7 +52,7 @@ ms.locfileid: "4679561"
 
 5. **開く** を選択して、選択したリポジトリの ER コンフィギュレーションの一覧を表示します。
 
-    ![コンフィギュレーション レポジトリ ページ](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![コンフィギュレーション レポジトリ ページ。](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>単一のコンフィギュレーションをインポートする
 
@@ -65,7 +63,7 @@ ms.locfileid: "4679561"
     > [!NOTE]
     > **インポート** ボタンは、現在の Finance インスタンスにある ER コンフィギュレーション バージョンでは使用できません。
 
-    ![レポジトリ ページのコンフィギュレーション](./media/er-download-configurations-global-repo-repository-content.png)
+    ![構成リポジトリ ページ (構成 FastTab)。](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>フィルター処理されたコンフィギュレーションをインポートする
 
@@ -79,7 +77,7 @@ ms.locfileid: "4679561"
 4. **コンフィギュレーション** クイック タブで、**インポート** を選択し、フィルタ処理されたコンフィギュレーションをグローバル リポジトリから現在のインスタンスにダウンロードします。
 5. **コンフィギュレーション** クイック タブで、**フィルタのリセット** を選択し、指定された選択条件をクリーンアップします。
 
-    ![レポジトリ ページのコンフィギュレーション](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![構成リポジトリ ページ (Versions FastTab、インポート ボタン)。](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > ER の設定に応じて、コンフィギュレーションはインポートされた後に検証されます。 不整合の問題が検出されると、通知を受け取る場合があります。 インポートしたコンフィギュレーションのバージョンを使用する前に、問題を解決する必要があります。 詳細については、このトピックの関連リソースの一覧を参照してください。
@@ -90,3 +88,6 @@ ms.locfileid: "4679561"
 ## <a name="additional-resources"></a>追加リソース
 
 [電子申告 (ER) の概要](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

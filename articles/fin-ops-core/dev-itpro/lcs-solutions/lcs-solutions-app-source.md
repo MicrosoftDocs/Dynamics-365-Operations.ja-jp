@@ -1,6 +1,6 @@
 ---
 title: AppSource でアプリを公開するための要件
-description: このトピックでは、Dynamics 365 Finance and Operations アプリ向けのソリューションの作成要件を理解するのに役立つリソースを紹介します。
+description: このトピックでは、Finance and Operations アプリ向けのソリューションの作成要件を理解するのに役立つリソースを紹介します。
 author: kfend
 ms.date: 07/31/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.custom: 197023
 ms.assetid: 6a5b4272-c6f3-4747-a7bf-9664d7950dad
 ms.search.region: Global
 ms.author: omarc
-ms.openlocfilehash: ea17217f8f7d20b068434d7c2cbaf2d3f63db742
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 12efb314c8a6c0b92bbaa566c579a27dc95bc118
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921103"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7404049"
 ---
 # <a name="requirements-for-publishing-apps-on-appsource"></a>AppSource でアプリを公開するための要件
 

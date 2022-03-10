@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 595de6292b81ca78bf08a66f61850c3b5a537396
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354394"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324115"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>1 つのモデル ルートに対する複数の派生マッピングの管理
 
 [!include [banner](../includes/banner.md)]
 
-[電子申告 (ER)](general-electronic-reporting.md) データ [モデル](general-electronic-reporting.md#data-model-and-model-mapping-components) コンポーネントは、発信ドキュメントを生成するデータ ソースとして、すべての構成済 ER [形式](general-electronic-reporting.md#FormatComponentOutbound) コンポーネントで使用されます。 1 つのビジネス ドメインを記述するには、多数のルート定義を持つデータ モデル コンポーネントを構成します。 
+[電子申告 (ER)](general-electronic-reporting.md) データ モデル コンポーネントは、発信ドキュメントを生成するデータ ソースとして、すべての構成済 ER 形式 コンポーネントで使用されます。 1 つのビジネス ドメインを記述するには、多数のルート定義を持つデータ モデル コンポーネントを構成します。 
 
-すべてのルート定義では、特定のレポート目的に最も適した方法で、そのドメインのデータを表すことができます。 すべてのルート定義に対して、ER [モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components) コンポーネントを、データ モデルの Microsoft Dynamics 365 Finance 固有の実装として構成できます。 この方法で、実行時にデータ モデルがどのように入力されるのかについて説明します。
+すべてのルート定義では、特定のレポート目的に最も適した方法で、そのドメインのデータを表すことができます。 すべてのルート定義に対して、ER モデル マッピング コンポーネントを、データ モデルの Microsoft Dynamics 365 Finance 固有の実装として構成できます。 この方法で、実行時にデータ モデルがどのように入力されるのかについて説明します。
 
 ER モデル マッピング コンポーネントは、ER データ モデル [構成](general-electronic-reporting.md#Configuration) および ER モデル マッピング構成内に配置することができます。 1 つの ER 構成には、多数のマッピング コンポーネントを含めることができ、それぞれが 1 つのルート定義用に構成されます。 また、1 つの ER 構成には、1 つのルート定義用に構成されたマッピング コンポーネントを 1 つだけ含めることができます。
 

@@ -2,11 +2,9 @@
 title: 行定義セルの変更
 description: このトピックでは、財務諸表の行定義内の各セルに、必要なそれらの情報を入力する方法について説明します。
 author: ShylaThompson
-manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 80df992ce14577ba78587648f8af2c35b382a589
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685862"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344888"
 ---
 # <a name="modify-row-definition-cells"></a>行定義セルの変更
 
@@ -176,7 +174,7 @@ ms.locfileid: "4685862"
 
 次の例では、どの現金勘定にも動きがないため、ユーザーはレポートの **現金合計** 行の見出しとアンダー スコアを印刷しないようにしようとしています。 したがって、**関連するフォーミュラ / 行 / 単位** セル内の (**---** 書式コードが示すようにフォーマット行である) 行 220 に、ユーザーはユーザーが抑制したい金額行の行コードである **250** を入力します。
 
-[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition。](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>列計算の基準行の選択
 相関性レポートでは、**CBR** (変更基準行) 書式コードを使用して、行定義で 1 行以上の基準行を割り当てます。 こうすることで、基準行は列定義の計算によって参照されます。 CBR 計算の典型的ないくつかの例を示します。
@@ -401,7 +399,7 @@ ms.locfileid: "4685862"
 2. **財務分析コードへのリンク** 列のセルをダブルクリックします。
 3. **分析コード** ダイアログ ボックスで、分析コード名の下のセルをダブルクリックします。
 4. 分析コードのダイアログ ボックスで、**個々または範囲** を選択します。
-5. **開始** フィールドに、開始分析コードを入力するか、![参照](media/browse.gif "参照") をクリックして使用できる分析コードを検索します。 分析コードの範囲を入力するには、**終了** フィールドに終了する分析コードを入力します。
+5. **開始** フィールドに開始分析コードを入力するか、![参照。](media/browse.gif "参照") をクリックして 使用できる分析コードを検索します。 分析コードの範囲を入力するには、**終了** フィールドに終了する分析コードを入力します。
 6. **OK** をクリックして、分析コードのダイアログ ボックスを終了します。 **分析コード** ダイアログ ボックスは、更新された分析コードまたは範囲を表示します。
 7. **OK** をクリックして、**分析コード** ダイアログ ボックスを終了します。
 
@@ -478,7 +476,7 @@ ms.locfileid: "4685862"
 
 | 品目                | 説明 |
 |---------------------|-------------|
-| 個々または範囲 | **開始** フィールドに口座名を入力するか、 **参照** ボタン ![参照](media/browse.gif "参照") をクリックして口座を参照します。 範囲にを選択するには、**終了** フィールドを入力するか参照します。 |
+| 個々または範囲 | **開始** フィールドに口座名を入力するか、**参照** ボタン ![参照。](media/browse.gif "参照") をクリックして 勘定を参照します。 範囲にを選択するには、**終了** フィールドを入力するか参照します。 |
 | [分析コード値セット] | **名前** フィールドに、分析コード値セットの名前を入力します。 セットを作成、変更、コピー、または削除するには、**分析コード値セットの管理** をクリックします。 **式** フィールドには、**財務分析コードへのリンク** セルから、行定義内のこの分析コード値セットに対する式が挿入されます。 |
 | 勘定の集計   | **名前** フィールドに、勘定の集計の分析コードを入力または参照します。 **式** フィールドには、**財務分析コードへのリンク** セルから、レポート定義内のこの分析コード値に対する式が挿入されます。 |
 
@@ -529,3 +527,6 @@ ms.locfileid: "4685862"
 ## <a name="additional-resources"></a>追加リソース
 
 [財務諸表](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

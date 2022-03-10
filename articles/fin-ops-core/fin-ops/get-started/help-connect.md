@@ -1,8 +1,8 @@
 ---
-title: Finance and Operations アプリのヘルプ エクスペリエンスを構成する
+title: 財務と運用アプリのヘルプ エクスペリエンスの構成
 description: このトピックでは、一部の Microsoft Dynamics 365 アプリのヘルプシステムのコンポーネントに関する情報を提供します。
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,25 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a70a9771d5f9c1acea9274b8454a23c8dd7c1ed
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6343937"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071011"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations アプリのヘルプ エクスペリエンスを構成する
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>財務と運用アプリのヘルプ エクスペリエンスの構成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、Dynamics 365 Human Resources などの Finance and Operations アプリに関するヘルプシステムのコンポーネントの概要を説明します。 また、これらのコンポーネントの接続方法と、ユーザー定義のヘルプを作成するプロセスの概要についても説明します。
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+このトピックでは、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、Dynamics 365 Human Resources などの財務と運用アプリに関するヘルプ システムのコンポーネントの概要を説明します。 また、これらのコンポーネントの接続方法と、ユーザー定義のヘルプを作成するプロセスの概要についても説明します。
 
 ## <a name="help-architecture"></a>ヘルプ アーキテクチャ
 
-Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365](/dynamics365/) サイトにて公開されている概要やその他のトピックが含まれています。 このコンテンツには、製品内の **ヘルプ** ウィンドウからアクセスできます。 次の図は、ヘルプ システムの一部を示します。
+財務と運用アプリには、[Microsoft Dynamics 365 ドキュメント](/dynamics365/) サイトにて公開されている概要やその他のトピックが含まれています。 このコンテンツには、製品内の **ヘルプ** ウィンドウからアクセスできます。 次の図は、ヘルプ システムの一部を示します。
 
 [![ヘルプ アーキテクチャ。](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -39,7 +42,7 @@ Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365
 ## <a name="adding-task-guides"></a>タスク ガイドの追加
 
 > [!NOTE]
-> 現時点では、**タスク ガイド** タブは人事管理やコマースでは使用できません。 <!--We are currently working to enable this functionality in a future release.--> しかし、人事管理内の [はじめに] のタスク ガイドは、基本機能の一環として利用可能となっています。 [https://docs.microsoft.com/dynamics365](/dynamics365/) 上の手順ガイドは、コマースおよび人事管理の両方で利用可能です。
+> 現時点では、**タスク ガイド** タブは人事管理やコマースでは使用できません。 <!--We are currently working to enable this functionality in a future release.--> しかし、人事管理内の [はじめに] のタスク ガイドは、基本機能の一環として利用可能となっています。 コマースおよび人事管理のの手順ガイドは、[Microsoft Dynamics 365 ドキュメント](/dynamics365/) サイトで利用可能です。
 
 **システム パラメーター** ページでは、システム管理者は、実装に関連するタスク ガイド ライブラリへのアクセスを構成できます。
 
@@ -54,13 +57,13 @@ Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365
 > [!IMPORTANT]
 > 初めて **ヘルプ** タブを開く際には、Lifecycle Services に接続する必要があります。 フォームの中程のリンクを選択し、接続されるまで待機します。ダイアログ ボックスを閉じ、**OK** を選択して **システム パラメーター** ページを取得します。
 >
-> [![LCS への接続](./media/connect-to-lcs-crop-1024x365.png "LCS への接続。"](./media/connect-to-lcs-crop.png)
+> [![LCS に接続](./media/connect-to-lcs-crop-1024x365.png "LCS に接続します。")](./media/connect-to-lcs-crop.png)
 
 1. 接続する Lifecycle Services プロジェクトを選択します。
 2. タスク記録を取得する BPM ライブラリ (選択したプロジェクト内) を選択します。
 3. BPM ライブラリの表示順序を選択します。 表示順序では、ライブラリからのタスク録画が **ヘルプ** ウィンドウに表示される順序を定義します。
 
-これらのステップを完了すると、**ヘルプ** ウィンドウを開いて **タスク ガイド** タブを選択すすることができます。Finance and Operations アプリの現在のページに対応するタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。
+これらのステップを完了したのちに、**ヘルプ** ウィンドウを開いて **タスク ガイド** タブを選択できます。財務と運用アプリケーションの現在のページに対応するタスク ガイドが表示されるようになります。 タスク ガイドがない場合は、検索するキーワードを入力できます。
 
 ### <a name="showing-translated-task-guides"></a>翻訳されたタスク ガイドの表示
 
@@ -84,7 +87,7 @@ Finance and Operations アプリには、[https://docs.microsoft.com/dynamics365
 
 ### <a name="connect-a-custom-help-site"></a>ユーザー定義のヘルプ サイトに接続する
 
-Finance and Operations アプリが既成のフォームで使用されることはほとんどありません。 その代わりに、ソリューションは組織のニーズに合わせてカスタマイズされ、拡張されます。 また、ヘルプ エクスペリエンスをカスタマイズ、拡張することが可能です。 たとえば、製品内の **ヘルプ** ウィンドウにユーザー定義のヘルプを追加できます。
+財務と運用アプリが既成のフォームで使用されることはほとんどありません。 その代わりに、ソリューションは組織のニーズに合わせてカスタマイズされ、拡張されます。 また、ヘルプ エクスペリエンスをカスタマイズ、拡張することが可能です。 たとえば、製品内の **ヘルプ** ウィンドウにユーザー定義のヘルプを追加できます。
 
 Microsoft では、ユーザー定義のヘルプを展開して **ヘルプ** ウィンドウに接続するツールキットを提供しています。 **ヘルプ** ウィンドウに接続されているユーザー定義のヘルプ ソリューションを設定する方法の詳細については 、[カスタムヘルプの概要](../../dev-itpro/help/custom-help-overview.md)を参照してください。
 

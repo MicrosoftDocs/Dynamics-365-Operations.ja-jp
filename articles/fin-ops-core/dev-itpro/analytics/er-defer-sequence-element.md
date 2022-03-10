@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 3a8d4c57ca6b1fee5f4eb1414bfb503470b5e570
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 19d1cf0aa6e9b40a0e72a3a74acda6e2579d6ee2
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348095"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323693"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>ER 形式におけるシーケンス要素の実行の延期
 
@@ -28,7 +28,7 @@ ms.locfileid: "6348095"
 
 ## <a name="overview"></a>概要
 
-[電子申告](general-electronic-reporting.md) (ER) フレームワークのオペレーション デザイナーを使用して、テキスト形式で送信ドキュメントを生成するために使用する ER ソリューションの [形式コンポーネント](general-electronic-reporting.md#FormatComponentOutbound) を [コンフィギュレーション](tasks/er-format-configuration-2016-11.md) することができます。 コンフィギュレーションされた形式コンポーネントの階層構造は、さまざまなタイプの形式要素で構成されます。 これらの形式要素は、生成されたドキュメントに実行時に必要な情報を入力するために使用されます。 既定では、ER 形式の実行時に、形式要素は形式階層に表示されているのと同じ順序で、上から下に 1 つずつ実行されます。 ただし、デザイン時に、コンフィギュレーションされた形式コンポーネントのすべてのシーケンス要素の実行順序を変更することができます。
+[電子申告 (ER)](general-electronic-reporting.md) フレームワークのオペレーション デザイナーを使用して、テキスト形式で送信ドキュメントを生成するために使用する ER ソリューションの 形式コンポーネント を [構成](tasks/er-format-configuration-2016-11.md) することができます。 コンフィギュレーションされた形式コンポーネントの階層構造は、さまざまなタイプの形式要素で構成されます。 これらの形式要素は、生成されたドキュメントに実行時に必要な情報を入力するために使用されます。 既定では、ER 形式の実行時に、形式要素は形式階層に表示されているのと同じ順序で、上から下に 1 つずつ実行されます。 ただし、デザイン時に、コンフィギュレーションされた形式コンポーネントのすべてのシーケンス要素の実行順序を変更することができます。
 
 コンフィギュレーションされた形式のシーケンス形式要素に対して <a name="DeferredSequenceExecution"></a> **遅延実行** オプションを有効にすることにより、その要素の実行を延期することができます。 この場合、親要素の他の要素すべてが実行されるまで、要素は実行されません。
 

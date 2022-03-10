@@ -1,25 +1,18 @@
 ---
 title: Design タイプ
 description: デザイン オブジェクトの種類。
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: c338ac007640ad6afd6d873944dab1bc41f30afa
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.openlocfilehash: 4e1caec97c7895a4c8953d04f233dfc2312957ad
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688201"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782861"
 ---
 # <a name="design-type"></a>Design タイプ
 
@@ -92,7 +85,7 @@ color: string (optional)
 この属性を設定するときは、必要に応じて背景色を同時に設定することを検討してください。<br>
 注記: 色が「テーマ」に設定されている場合、アプリケーションのテーマ色が使用されます。<br>
 使用可能な色は次のとおりです。 <br>
-![使用可能な色の画像](../../../media/colors.PNG)
+![使用可能な色の画像。](../../../media/colors.PNG)
 
 
 ### <a name="flexflow"></a>flexFlow
@@ -108,7 +101,7 @@ flexFlow: string (省略可)
 
 flexSize: string (省略可) 
 
-1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズの拡大) [(サイズの縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。
+1 つの番号または 2 つの番号が文字列として書き込まれています。 たとえば、「(サイズを拡大) [(サイズを縮小)]」して、即時フレックス コンテナーの使用可能領域に対応します。
 このプロパティは、CSS プロパティ「flex」のエイリアスです。 "flex" プロパティに関するドキュメントは、[この Web ページ](https://css-tricks.com/snippets/css/a-guide-to-flexbox)をご覧ください。
 
 
@@ -170,3 +163,6 @@ type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 文字列としてのコントロールのタイプ。
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

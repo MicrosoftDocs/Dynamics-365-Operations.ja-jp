@@ -1,8 +1,8 @@
 ---
 title: Platform update における新機能および変更された機能
-description: このトピックでは、Finance and Operations アプリのプラットフォーム更新における新しい機能と変更された機能について説明するトピックを示します。
+description: このトピックでは、財務と運用アプリのプラットフォーム更新における新しい機能と変更された機能について説明するトピックを示します。
 author: sericks007
-ms.date: 09/03/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,39 +14,42 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fe07551069e5e9b619715dd006dca4679a1c02ea
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: e7ec19211ef6649e902609cfcc16cd62f8f75fe8
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472185"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074927"
 ---
-# <a name="whats-new-or-changed-in-platform-updates"></a>Platform update における新機能および変更された機能
+# <a name="whats-new-or-changed-in-platform-updates"></a>プラットフォーム更新プログラムの新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations アプリのプラットフォーム更新での新機能や変更事項を確認するには、次のトピックを参照してください。
+財務と運用アプリのプラットフォーム更新での新機能や変更事項を確認するには、次のトピックを参照してください。
 
 | **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細はこちら**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| プラットフォーム更新プログラム 10.0.22 | 7.0.6164 | 2021 年 11 月     | [Finance and Operations アプリ バージョン 10.0.22 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-22.md)  |
-| プラットフォーム更新プログラム 10.0.21 | 7.0.6129 | 2021 年 10 月     | [Finance and Operations アプリ バージョン 10.0.21 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-21.md)  |
-| プラットフォーム更新プログラム 10.0.20 | 7.0.6060    | 2021 年 8 月     | [Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-20.md)  |
-| プラットフォーム更新プログラム 10.0.19 | 7.0.6009    | 2021年 6 月     | [Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-19.md)  |
-| プラットフォーム更新プログラム 10.0.18 | 7.0.5968    | 2021 年 5 月     | [Finance and Operations アプリ バージョン 10.0.18 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-18.md)  |
-| プラットフォーム更新プログラム 10.0.17 | 7.0.5934    | 2021 年 4 月     | [Finance and Operations アプリ バージョン 10.0.17 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-17.md)  |
-| プラットフォーム更新プログラム 10.0.16 | 7.0.5860    | 2021 年 2 月  | [Finance and Operations アプリ バージョン 10.0.16 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-16.md)  |
-| プラットフォーム更新プログラム 10.0.15 | 7.0.5816     | 2021 年 1 月     | [Finance and Operations アプリ バージョン 10.0.15 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-15.md)  |
-| プラットフォーム更新プログラム 10.0.14 | 7.0.5778      | 2020 年 11 月     | [Finance and Operations アプリ バージョン 10.0.14 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-14.md)  |
-| プラットフォーム更新プログラム 10.0.13 | 7.0.5746      | 2020 年 10 月     | [Finance and Operations アプリ バージョン 10.0.13 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-13.md)  |
-| プラットフォーム更新プログラム 10.0.12 | 7.0.5688     | 2020 年 8 月     | [Finance and Operations アプリ バージョン 10.0.12 のプラットフォーム更新プログラム](whats-new-platform-update-10-0-12.md)  |
-| プラットフォーム更新プログラム 10.0.11 | 7.0.5644     | 2020 年 7 月     | [Finance and Operations アプリ バージョン 10.0.11 のプラットフォーム更新プログラム](whats-new-platform-update-35.md)  |
-| プラットフォーム更新プログラム 10.0.10 | 7.0.5600         | 2020 年 5 月     | [Finance and Operations アプリ バージョン 10.0.10 のプラットフォーム更新プログラム](whats-new-platform-update-34.md)  |
-| プラットフォーム update 33 | 7.0.5559         | 2020 年 4 月     | [Finance and Operations アプリのプラットフォーム更新プログラム 33 の新機能および変更された機能](whats-new-platform-update-33.md)  |
-| プラットフォーム update 32 | 7.0.5493         | 2020 年 2 月     | [Finance and Operations アプリのプラットフォーム更新プログラム 32 の新機能および変更された機能](whats-new-platform-update-32.md)  |
-| プラットフォーム update 31 | 7.0.5457      | 2020 年 1 月     | [Finance and Operations アプリのプラットフォーム更新プログラム 31 の新機能および変更された機能](whats-new-platform-update-31.md) |
-| プラットフォーム update 30 | 7.0.5407       | 2019 年 11 月     | [Finance and Operations アプリのプラットフォーム更新プログラム 30 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-30.md) |
-| プラットフォーム update 29 | 7.0.5372         | 2019 年 10 月     | [Finance and Operations アプリのプラットフォーム更新プログラム 29 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-29.md)                      |
+| プラットフォーム更新プログラム 10.0.25 | 7.0.6316 | 2022 年 4 月    | [財務と運用アプリのバージョン 10.0.25 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-25.md)  |
+| プラットフォーム更新プログラム 10.0.24 | 7.0.6253 | 2022 年 2 月    | [財務と運用アプリのバージョン 10.0.24 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-24.md)  |
+| プラットフォーム更新プログラム 10.0.23 | 7.0.6206 | 2022 年 1 月    | [財務と運用アプリのバージョン 10.0.23 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-23.md)  |
+| プラットフォーム更新プログラム 10.0.22 | 7.0.6164 | 2021 年 11 月     | [財務と運用アプリのバージョン 10.0.22 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-22.md)  |
+| プラットフォーム更新プログラム 10.0.21 | 7.0.6129 | 2021 年 10 月     | [財務と運用アプリのバージョン 10.0.21 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-21.md)  |
+| プラットフォーム更新プログラム 10.0.20 | 7.0.6060    | 2021 年 8 月     | [財務と運用アプリのバージョン 10.0.20 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-20.md)  |
+| プラットフォーム更新プログラム 10.0.19 | 7.0.6009    | 2021年 6 月     | [財務と運用アプリのバージョン 10.0.19 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-19.md)  |
+| プラットフォーム更新プログラム 10.0.18 | 7.0.5968    | 2021 年 5 月     | [財務と運用アプリのバージョン 10.0.18 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-18.md)  |
+| プラットフォーム更新プログラム 10.0.17 | 7.0.5934    | 2021 年 4 月     | [財務と運用アプリのバージョン 10.0.17 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-17.md)  |
+| プラットフォーム更新プログラム 10.0.16 | 7.0.5860    | 2021 年 2 月  | [財務と運用アプリのバージョン 10.0.16 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-16.md)  |
+| プラットフォーム更新プログラム 10.0.15 | 7.0.5816     | 2021 年 1 月     | [財務と運用アプリのバージョン 10.0.15 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-15.md)  |
+| プラットフォーム更新プログラム 10.0.14 | 7.0.5778      | 2020 年 11 月     | [財務と運用アプリのバージョン 10.0.14 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-14.md)  |
+| プラットフォーム更新プログラム 10.0.13 | 7.0.5746      | 2020 年 10 月     | [財務と運用アプリのバージョン 10.0.13 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-13.md)  |
+| プラットフォーム更新プログラム 10.0.12 | 7.0.5688     | 2020 年 8 月     | [財務と運用アプリのバージョン 10.0.12 のプラットフォーム更新プログラム](whats-new-platform-update-10-0-12.md)  |
+| プラットフォーム更新プログラム 10.0.11 | 7.0.5644     | 2020 年 7 月     | [財務と運用アプリのバージョン 10.0.11 のプラットフォーム更新プログラム](whats-new-platform-update-35.md)  |
+| プラットフォーム更新プログラム 10.0.10 | 7.0.5600         | 2020 年 5 月     | [財務と運用アプリのバージョン 10.0.10 のプラットフォーム更新プログラム](whats-new-platform-update-34.md)  |
+| プラットフォーム update 33 | 7.0.5559         | 2020 年 4 月     | [財務と運用アプリのプラットフォーム更新プログラム 33 の新機能および変更された機能](whats-new-platform-update-33.md)  |
+| プラットフォーム update 32 | 7.0.5493         | 2020 年 2 月     | [財務と運用アプリのプラットフォーム更新プログラム 32 の新機能および変更された機能](whats-new-platform-update-32.md)  |
+| プラットフォーム update 31 | 7.0.5457      | 2020 年 1 月     | [財務と運用アプリのプラットフォーム更新プログラム 31 の新機能および変更された機能](whats-new-platform-update-31.md) |
+| プラットフォーム update 30 | 7.0.5407       | 2019 年 11 月     | [財務と運用アプリのプラットフォーム更新プログラム 30 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-30.md) |
+| プラットフォーム update 29 | 7.0.5372         | 2019 年 10 月     | [財務と運用アプリのプラットフォーム更新プログラム 29 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-29.md)                      |
 | プラットフォーム update 28 | 7.0.5314         | 2019 年 7 月        | [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 28 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-28.md)                         |
 | プラットフォーム update 27 | 7.0.5286         | 2019 年 6 月        | [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 27 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-27.md)                         |
 | プラットフォーム update 26 | 7.0.5257         | 2019 年 5 月         | [Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 26 の新機能および変更された機能](../../fin-ops/get-started/whats-new-platform-update-26.md)                          |

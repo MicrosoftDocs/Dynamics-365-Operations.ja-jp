@@ -4,17 +4,17 @@ description: このトピックでは、数学ランタイム関数について�
 author: RobinARH
 ms.date: 06/20/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b98f09b16ac27ba19f8cbb0910ba1c347c541ba6
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.openlocfilehash: ee668ceaefacb455d0b31c5c99af810796d3756a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661550"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782041"
 ---
 # <a name="x-math-runtime-functions"></a>X++ 数学ランタイム関数
 

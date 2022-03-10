@@ -1,18 +1,18 @@
 ---
 title: ContainerControlMetadata タイプ
 description: コンテナー コントロール メタデータ タイプ。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: 857572f595331bd5a205e80408fc9be36cfc7026
-ms.sourcegitcommit: ff5e892a91a1585472af2191ae45d6291cceb7f6
+ms.author: tfehr
+ms.openlocfilehash: a210a32a69664d8a9812a46bff2454dabc908d84
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "6661426"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782873"
 ---
 # <a name="containercontrolmetadata-type"></a>ContainerControlMetadata タイプ
 

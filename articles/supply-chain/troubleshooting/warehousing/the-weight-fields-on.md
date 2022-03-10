@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-05-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 639b82a9d46b74f179d6904d2c3b8e7dfb813b58
-ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
+ms.openlocfilehash: f71ac7b2777cb77fccdf1a4c72a47c9b406bbd68b2d20c41ddc96028d2ffc348
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5924354"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756706"
 ---
 # <a name="the-weight-fields-on-load-lines-dont-match-the-weight-fields-on-the-load"></a>積荷明細行の重量フィールドが積荷の重量フィールドと一致しない
 

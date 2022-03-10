@@ -2,7 +2,7 @@
 title: Commerce Data Exchange のトラブルシューティング
 description: このトピックでは、実装における CDX のトラブルシューティングに役立つ情報を提供します。
 author: jashanno
-ms.date: 08/01/2020
+ms.date: 08/26/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: b76a1ae173201dd7f573e77cf6bd613a776f28d1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a3261341127c93c0e1c8759b8443328ba3fd95b3
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801935"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441492"
 ---
 # <a name="commerce-data-exchange-troubleshooting"></a>Commerce Data Exchange のトラブルシューティング
 
@@ -62,8 +62,9 @@ ms.locfileid: "5801935"
 
 - [Commerce Data Exchange ベスト プラクティス](CDX-Best-Practices.md)
 - [Commerce Data Exchange 実装ガイダンス](implementation-considerations-cdx.md)
+- [Commerce のオフライン実装とトラブルシューティング](implementation-considerations-offline.md)
 - [Dynamics 365 Commerce アーキテクチャの概要](../commerce-architecture.md)
-- [ストア内トポロジの選択](retail-in-store-topology.md)
+- [店舗内トポロジの選択](retail-in-store-topology.md)
 - [デバイス管理実装ガイダンス](../implementation-considerations-devices.md)
 - [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](../retail-modern-pos-device-activation.md)
 - [Commerce Scale Unit のコンフィギュレーションとインストール (自己ホスト)](retail-store-scale-unit-configuration-installation.md)

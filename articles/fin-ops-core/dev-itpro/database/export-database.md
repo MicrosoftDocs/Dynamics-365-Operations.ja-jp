@@ -2,11 +2,9 @@
 title: データベースのエクスポート
 description: このトピックでは、Finance and Operations のデータベースをエクスポートする方法について説明します。
 author: LaneSwenka
-manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 1e165da0762bb3486059d5d0377f1f8f54595457
-ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
+ms.openlocfilehash: c5e794baaca80b4e5b591f36a6ba0fe72a51e861
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "4826382"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7547869"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 
@@ -35,9 +33,11 @@ ms.locfileid: "4826382"
 LCS からデータベースのエクスポートを実行するシステムを維持するために、最大 bacpac サイズの制限が設定されています。 この制限は、エクスポートする bacpac ごとに、50 GB に設定されます。 この制限の理由は次のとおりです。 
 
 - 一元化されたシステムでは、同じ地域の複数の顧客に対してエクスポートを実行しています。このシステムは、ディスク領域に制限があります。  
-- Azure SQL は、データを bacpac 形式で適切に圧縮します。多くの場合、顧客が 50 GB を超えると、カスタマイズ、またはバイナリ データがバックアップ ファイルのサイズは大幅に増加します。  
+- Azure SQL は、データを bacpac 形式で適切に圧縮します。多くの場合、顧客が 50 GB を超えると、カスタマイズ、またはバイナリ データがバックアップ ファイルのサイズは大幅に増加します。 
 
-出力される bacpac のサイズが 50 GB を超えるためにエクスポートに失敗した場合、次の SQL スクリプトをサンドボックス データベースに対して実行して、上位 15 テーブルをメガバイト単位で特定してください。  データ エンティティのステージングに使用するすべてのテーブル (テーブル名の最後に「ステージング」が割り当てられます) は、切り捨てることができます。 バイナリまたは BLOB データを格納しているテーブル (JSON/XML/binary) はすべて切り捨てられるか、フィールドのコンテンツを削除して領域を解放する必要があります。 バイナリ データは圧縮できないので、データベース自体に大量のデータを格納すると、すぐに 50 GBの制限に達することになります。
+データベースのサイズを小きくする必要がある場合は、[クリーンアップ ルーチン](../sysadmin/cleanuproutines.md) に従います。
+
+上記のクリーンアップ ルーチンによって bacpac ファイルのサイズが 50 GB 以下にならなかった場合、次の SQL スクリプトをサンドボックス データベースに対して実行して、上位 15 テーブルをメガバイト単位で特定してください。 データ エンティティのステージングに使用するすべてのテーブル (テーブル名の最後に「staging」が付く) は、切り捨てることができます。 バイナリまたは BLOB データを格納しているテーブル (JSON/XML/binary) はすべて切り捨てるか、フィールドのコンテンツを削除して領域を解放する必要があります。 バイナリ データは圧縮できないので、データベース自体に大量のデータを格納すると、すぐに 50 GBの制限に達することになります。
 
 ```sql
 USE [YourDBName] -- replace your dbname
@@ -79,6 +79,8 @@ GO
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。
 * 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、**SysEmailSMTPPassword** テーブルの **パスワード** フィールドです。
+* [メンテナンス モード](../sysadmin/maintenance-mode.md) 設定は、ソースで有効になっていた場合でも無効になります。
+* 二重書き込みの構成。  この操作に成功した後にターゲット環境に新しいリンクを設定するには、[二重書き込み環境リンク](../data-entities/dual-write/link-your-environment.md)を参照してください。
 
 
 ### <a name="known-issues"></a>既知の問題
@@ -90,3 +92,6 @@ GO
 #### <a name="export-doesnt-show-any-progress-in-lcs"></a>エクスポートで LCS に進捗状況が表示されない
 
 エクスポートのプロセスは、他のデータベース移動の操作および、ランブックを使用しない一般的なパッケージ展開とは異なります。 したがって、LCS の進行状況インジケーターには、たとえ他のシナリオに通常は出力が表示されても、表示されません。 LCS チームは、ユーザーが解決策を見つけるため、データベースのエクスポート操作のログに追加されるように、既知のエラー コードを識別するよう努めています。 LCS の将来のリリースでは、これらの既知のエラー コードが追加されます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

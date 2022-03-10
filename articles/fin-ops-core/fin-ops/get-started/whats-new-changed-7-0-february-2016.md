@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6539bf6acf0216f1491cbf852f2c9a7063fbe26e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bcc69cbf418131d0b1747f1c904de3188d7ba84216cb3145607b45553263244c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757222"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機能
 
@@ -732,7 +732,7 @@ Retail サーバーとデータ管理によって、オンライン、店舗、�
 </tr>
 <tr>
 <td>Commerce Data Exchange を使用して、Microsoft Dynamics AX のバック オフィスとチャンネルの間でデータを移動します。</td>
-<td>Commerce Data Exchange は、Microsoft Dynamics AX およびオンライン ストア、実際の店舗などの小売チャンネルの間でデータを転送するシステムです。 詳細については、「<a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>」を参照してください。</td>
+<td>Commerce Data Exchange は、Microsoft Dynamics AX およびオンライン ストア、実際の店舗などの小売チャンネルの間でデータを転送するシステムです。 詳細については、「<a href="/dynamicsax-2012/appuser-itpro/commerce-data-exchange">Commerce Data Exchange [AX 2012]</a>」を参照してください。</td>
 <td>Microsoft Dynamics AX 2012 CU8 と同等の機能を備えています。 ただし、次の詳細に留意してください。
 <ul>
 <li>Commerce Data Exchange はクラウド用に再設計されました。</li>

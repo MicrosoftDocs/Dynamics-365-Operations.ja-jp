@@ -1,25 +1,23 @@
 ---
 title: ビジネス イベント開発者ドキュメント
 description: このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
-author: Sunil-Garg
-manager: AnnBe
-ms.date: 09/19/2019
+author: jaredha
+ms.date: 11/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global for most topics. Set Country/Region name for localizations
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: 2263289d95c5d9f2eb8c7f10bb593d5a0d90a058
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f32a68a870e03286a704fdbd32ee88228c75281a
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687335"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867234"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -607,9 +605,9 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContext
 {
     private utcdatetime eventTime;
-    public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
+    public utcdatetime parmEventTime(utcdatetime _eventTime = eventTime)
     {
-        eventTime = \_eventTime;
+        eventTime = _eventTime;
         return eventTime;
     }
 }
@@ -624,7 +622,7 @@ class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContex
 public final class CustomPayloadContextBusinessEventsSender_Extension
 {
     protected BusinessEventsCommitLogPayloadContext
-    buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
+    buildPayloadContext(BusinessEventsCommitLogEntry _commitLogEntry)
     {
         BusinessEventsCommitLogPayloadContext payloadContext = next
         buildPayloadContext(_commitLogEntry);
@@ -644,17 +642,18 @@ public final class CustomPayloadContextBusinessEventsSender_Extension
 **BusinessEventsServiceBusAdapter** クラスには、**addProperties** という名前の CoC メソッドがあります。
 
 ```xpp
+using Microsoft.ServiceBus.Messaging;
+
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
 public final class CustomBusinessEventsServiceBusAdapter_Extension
 {
-    protected void addProperties(BrokeredMessage \_message,
-    BusinessEventsEndpointPayloadContext \_context)
+    protected void addProperties(BrokeredMessage _message, BusinessEventsEndpointPayloadContext _context)
     {
+        next addProperties(_message, _context);
         if (_context is CustomCommitLogPayloadContext)
         {
-            CustomCommitLogPayloadContext customPayloadContext = \_context as
-            CustomCommitLogPayloadContext;
-            var propertyBag = \_message.Properties;
+            CustomCommitLogPayloadContext customPayloadContext = _context as CustomCommitLogPayloadContext;
+            var propertyBag = _message.Properties;
             propertyBag.Add('EventId', customPayloadContext.parmEventId());
             propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
             // Convert the enum to string to be able to serialize the property.
@@ -662,6 +661,28 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
             customPayloadContext.parmBusinessEventCategory()));
             propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
             propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
+        }
+    }
+}
+```
+
+
+**BusinessEventsEventGridAdapter** クラスには、**setContextProperties** という名前の CoC メソッドがあります。 次の例は、イベント グリッド アダプターに対するこのステップの概要を示しています。 eventGridMessage には、フィルター処理できる件名があります。
+
+```xpp
+using Microsoft.Azure.EventGrid.Models;
+
+[ExtensionOf(classStr(BusinessEventsEventGridAdapter))]
+public final class CustomBusinessEventsEventGridAdapter_Extension
+{
+    protected void setContextProperties(EventGridEvent _eventGridEvent, BusinessEventsEndpointPayloadContext _context)
+    {
+        next setContextProperties(_eventGridEvent, _context);
+        if (_context is CustomCommitLogPayloadContext)
+        {
+            CustomCommitLogPayloadContext customPayloadContext = _context as CustomCommitLogPayloadContext;
+
+            _eventGridEvent.Subject = _eventGridEvent.Subject + customPayloadContext.parmLegalEntity();
         }
     }
 }
@@ -675,17 +696,17 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
 
 各エンドポイント タイプは、列挙 **BusinessEventsEndpointType** によって表されます。 新しいエンドポイントを追加するプロセスの最初のステップは、次の図に示すように、この列挙を拡張することです。
 
-![列挙拡張子](../media/customendpoint1.png)
+![列挙拡張子。](../media/customendpoint1.png)
 
 ### <a name="step-2-add-a-new-endpoint-table-to-the-hierarchy"></a>ステップ 2: 新しいエンドポイント テーブルを階層に追加します
 
 すべてのエンドポイント データは階層テーブルに保存されます。 このテーブルのルートは、BusinessEventsEndpoint テーブルです。 新しいエンドポイント テーブルは、**サポート継承** プロパティを **Yes** に、**拡張** プロパティを **"BusinessEventsEndpoint"** (または BusinessEventsEndpoint 階層内の他の任意のエンドポイント) に設定して、このルート テーブルを拡張する必要があります。
 
-![テーブルは BusinessEventsEndpoint を拡張](../media/customendpoint2.png)
+![テーブルは BusinessEventsEndpoint を拡張します。](../media/customendpoint2.png)
 
 その後、新しいテーブルに、初期化およびコード内でのエンドポイントとの通信に必要なカスタム フィールドの定義が保持されます。 競合を回避するには、属している特定のエンドポイントに対してフィールド名を限定する必要があります。 たとえば、2 つのエンドポイントは、**URL** フィールドの概念を持つことができます。 フィールドを区別するために、名前はカスタム エンドポイントに対して固有である必要があります。 たとえば、カスタム エンドポイントの **CustomURL** のフィールドに名前を付けます。
 
-![カスタム フィールドを含む新しいテーブル](../media/customendpoint3.png)
+![カスタム フィールドを含む新しいテーブル。](../media/customendpoint3.png)
 
 ### <a name="step-3-add-a-new-endpoint-adapter-class-that-implements-the-ibusinesseventsendpoint-interface"></a>ステップ 3: IBusinessEventsEndpoint インターフェイスを実装する新しいエンドポイント アダプター クラスを追加します
 
@@ -703,10 +724,9 @@ public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 if (!(_endpoint is CustomBusinessEventsEndpoint))
 {
     BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
-    \_endpoint.RecId);
+    _endpoint.RecId);
 }
-CustomBusinessEventsEndpoint customBusinessEventsEndpoint = \_endpoint as
-CustomBusinessEventsEndpoint;
+CustomBusinessEventsEndpoint customBusinessEventsEndpoint = _endpoint as CustomBusinessEventsEndpoint;
 customField = customBusinessEventsEndpoint.CustomField;
 if (!customField)
 {
@@ -719,11 +739,11 @@ if (!customField)
 
 カスタム フィールド入力を保持するには FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ の下に新しいグループ コントロールを追加します。
 
-![カスタム フィールド入力用の新しいグループ コントロール](../media/customendpoint4.png)
+![カスタム フィールド入力用の新しいグループ コントロール。](../media/customendpoint4.png)
 
 カスタム フィールドの入力は、前の手順で作成した新しいテーブルとフィールドにバインドする必要があります。 次の例に示すように、**BusinessEventsEndpointConfiguration** フォームの **getConcreteType** と **showOtherFields** メソッドを拡張するクラス拡張機能を作成します。
 
-![データ ソースのクラス拡張](../media/customendpoint5.png)
+![データ ソースのクラス拡張。](../media/customendpoint5.png)
 
 ```xpp
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
@@ -771,3 +791,6 @@ public DateTimeIso8601 testIsoEdtUtcDateTime(DateTimeIso8601 _value = this._test
     return this._testIsoDateTime;
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

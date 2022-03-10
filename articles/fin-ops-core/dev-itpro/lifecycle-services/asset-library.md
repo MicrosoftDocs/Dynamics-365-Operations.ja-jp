@@ -2,11 +2,9 @@
 title: Lifecycle Services (LCS) のアセット ライブラリ
 description: このトピックでは、Lifecycle Services (LCS) のアセット ライブラリ機能について説明します。
 author: laneswenka
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a25b186fb23c1eea6b9838d080be9f6a11ef8f7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1183724aad4f6ec44d6ab1e7c8834a8636d1379bc3ce1088067ed9c2666b9834
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685019"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775268"
 ---
 # <a name="asset-library-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のアセット ライブラリ
 
@@ -31,11 +29,11 @@ ms.locfileid: "4685019"
 
 - **共有資産ライブラリ** – 共有資産ライブラリは、Microsoft およびパートナーによって資産を共有するために複数のテナント、プロジェクト、および LCS の環境の間で 使用されます。 このライブラリは、LCS にサインインするすべてのユーザーがアクセスできます。 共用資産ライブラリにアクセスするには、LCS にサイン インして、**共用資産ライブラリ** タイルをクリックします。
 
-    [![共有アセット ライブラリ タイル](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
+    [![共有アセット ライブラリ タイル。](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
 
 - **プロジェクト レベルのアセット ライブラリ** – プロジェクト レベルの資産ライブラリは、LCS のプロジェクト内の環境全体で資産を共有するために使用されます。 このライブラリはプロジェクト内のすべてのユーザーがアクセスできます。 。プロジェクト レベルのアセット ライブラリにアクセスするには、LCS にサイン インし、プロジェクトを開きます。 ハンバーガー メニューで、**アセット ライブラリ** をクリックします。
 
-    [![プロジェクト レベル資産ライブラリを開きます](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
+    [![プロジェクト レベルのアセット ライブラリを開きます。](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
     
     > [!NOTE]
     > プロジェクト アセット ライブラリ内で同じアセットのバージョンのアップロードはサポートされていません。 
@@ -106,3 +104,8 @@ ms.locfileid: "4685019"
 2. 保存する資産を選択し、**ライブラリに保存** をクリックします。
 
 資産が、プロジェクト レベルのアセット ライブラリから共有アセット ライブラリに再び保存され、範囲が **自分自身** に設定されます。
+
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

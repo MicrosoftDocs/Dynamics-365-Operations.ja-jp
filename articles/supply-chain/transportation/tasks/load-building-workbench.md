@@ -2,11 +2,9 @@
 title: 積荷構築ワークベンチ
 description: このトピックでは、積荷構築ワークベンチを操作する方法について説明します。
 author: Henrikan
-manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSLoadBuildWorkbench,TMSLoadBuildTemplateCreate,TMSLoadBuildStrategy,TMSLoadBuildTemplateApply
 audience: Application User
@@ -16,14 +14,16 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1ed91adba5c7accf9a18d7a754d33b2b35b848f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 306ca4f77d9c1d4879d750992e51c8b83917839e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974230"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574860"
 ---
 # <a name="load-building-workbench"></a>積荷構築ワークベンチ
+
+[!include [banner](../../includes/banner.md)]
 
 負荷構築ワークベンチを使用すると、荷重を作成するときに荷重構築戦略を適用できます。
 
@@ -66,3 +66,6 @@ ms.locfileid: "4974230"
 1. 提案された積荷および積荷明細行を確認します。
 1. アクション ウィンドウで **積荷の作成** を選択して、**積荷明細行の提案** クイック タブの元伝票明細行に基づく積荷を作成します。
 1. **積荷構築ワークベンチ** ページを閉じます。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

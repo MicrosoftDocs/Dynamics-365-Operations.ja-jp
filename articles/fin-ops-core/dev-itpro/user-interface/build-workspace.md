@@ -1,26 +1,24 @@
 ---
 title: タイル、リスト、およびデータ キャッシュを使用してワークスペースを変更する
-description: このチュートリアルでは、新しいタイルを作成し、ワークスペースの概要にそれを含め、ワークスペースの新しいリストを構築して、ワークスペースにリストのデータ キャッシュを作成します。
+description: このチュートリアルでは、ワークスペースの概要に新しいタイルを作成し、新しいリストを構築して、リストのデータ キャッシュを作成します。
 author: jasongre
-manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 10794
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51d5b55f2141ec1b97eca7a18c231e790a9c5761
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e950a4bd9c8dba4cf81ec9c42ec775b17375a8c7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679774"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783142"
 ---
 # <a name="modify-a-workspace-with-a-tile-list-and-data-cache"></a>タイル、リスト、およびデータ キャッシュを使用してワークスペースを変更する
 
@@ -52,7 +50,7 @@ Microsoft Visual Studio を使用してチュートリアル プロジェクト�
 5. **インポートするファイルの選択** ダイアログ ボックスで、**ダウンロード** フォルダーを参照して **FMTutorialDataModel.axpp** をクリックしてから **開く** をクリックします。
 6. **要素の上書き** チェック ボックスをオンにし、**現在のソリューション** オプションをオンにします。 次の図は、完了した **インポート プロジェクト** ダイアログ ボックスを示しています。
 
-    ![完了したプロジェクトのインポート ダイアログ ボックス](media/importproject1.png)
+    ![完了したプロジェクトのインポート ダイアログ ボックス。](media/importproject1.png)
 
 7. **OK** をクリックします。
 8. ソリューション エクスプローラーで **クラス** を展開して、**FMTutorial** プロジェクトで **FMTDataHelper** を右クリックしてから、**スタートアップ オブジェクトとして設定** をクリックします。
@@ -76,11 +74,11 @@ Visual Studio を使用して FMTutorial プロジェクトを開きます。 Vi
 2. **デザイン** ノードをクリックします。
 3. **パターン** タブをクリックします。運用ワークスペースにはオプションのアクション ウィンドウとオプションのフィルター グループがあります (これらのノードの左に 0..1 の表記で示されています)。 ただし、このパターンによってパノラマ スタイル タブが必要になります。 **パターン** タブでは、PanoramaBody コントロールがパターンで必要なタブと一致していることを示しますが、このパターンのレベルでオプションの項目に対応するコントロールはありません。
 
-    ![稼働中のワークスペース パターン](./media/workspacepattern1.png)
+    ![稼働中のワークスペース パターン。](./media/workspacepattern1.png)
 
 4. **PanoramaBody** をクリックします。
 
-    ![パターン タブ、PanoramaBody](./media/workspacepattern2.png)
+    ![パターン タブ、PanoramaBody。](./media/workspacepattern2.png)
 
 All すべてのワークスペースに必要な 3 つのセクションがあります。
 
@@ -95,7 +93,7 @@ All すべてのワークスペースに必要な 3 つのセクションがあ�
 1. ソリューション エクスプローラーで、**FmtClerkWorkspace** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定** をクリックします。
 2. **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorer でフォームが開きます。
 
-    ![フォームを開く](./media/fmtworkspaceinitial.png)
+    ![フォームを開く。](./media/fmtworkspaceinitial.png)
 
 ## <a name="exercise-2-create-a-new-tile-for-the-workspace"></a>手順 2: ワークスペースの新しいタイルを作成
 
@@ -191,7 +189,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 1. ソリューション エクスプローラーで、**FmtClerkWorkspace** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定** をクリックします。
 2. **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorer でフォームが開きます。
 
-    [![レンタル タイル](./media/currentrentalstile.png)](./media/currentrentalstile.png)
+    [![レンタル タイル。](./media/currentrentalstile.png)](./media/currentrentalstile.png)
 
 3. **現在のレンタル** タイルをクリックします。 **レンタル** ページに移動し、それは 3 つの現在のレンタルにフィルター処理する必要があります。
 4. **戻る** ボタン、または **閉じる** ボタンをクリックし、ワークスペースに戻ります。
@@ -205,7 +203,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 2. **タイル データ** を入力し、検索結果の **タイル データ キャッシュ構成** をクリックします。
 3. **FMTCurrentRentalsTile** レコードを検索します。
 
-    ![タイル キャッシュ パラメーター](./media/tilecacheparams.png)
+    ![タイル キャッシュ パラメーター。](./media/tilecacheparams.png)
 
 このページから、システム管理者はタイル キャッシュにいくつかのランタイム変更を実行できます。 たとえば、システム管理者は、データ キャッシュの有効化/無効化、更新頻度の変更、およびカウント タイルを手動で更新する機能の有効化/無効化をすることができます。 タイル キャッシュは、タイルのあるフォームが最初に開かれたときに登録されることに注意してください。 したがって、ご使用の環境に表示されているタイルのリストが、上の図のリストと異なる場合があります。
 
@@ -231,7 +229,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 
 4. **AvailableVehiclesContainer** を右クリックし、**新規** をポイントして、**パーツから** をクリックします。 **フォーム パート** は運用ワークスペースのパターンにより、ここで唯一許可されるコントロール タイプです。 このコントロールは、このセクションのコンテンツを保持するためにビルドするフォームにリンクするために使用されます。
 
-   ![セクションを追加](./media/addsection1.png)
+   ![セクションを追加。](./media/addsection1.png)
 
 5. **プロパティ** ウィンドウで、**名前** プロパティを **AvailableVehiclesPart** に設定します。
 6. **Ctrl+S** キーを押して保存します。
@@ -265,7 +263,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 7. **パターン: \<select\>** の記法が **フォーム デザイン** の横にあることに注目してください。 これは、このノードに必要なパターンを示します。 **デザイン** を右クリックして **パターンの適用** をポイントし、**フォーム パターン セクション リスト** をクリックします。 このフォーム パターンは通常、ワークスペースのリストで使用されます。
 8. このパターンの予想されるコンテンツを表示するには、**パターン** タブをクリックします。 この情報は、フォームのコンテンツを作成する際に役立ちます。 **注記:** 今後は、選択したフォーム パターンに基づいて自動的にフォーム構造を作成するメカニズムを提供する予定です。
 
-    [![セクション リスト](./media/formpartsectionlist.png)](./media/formpartsectionlist.png)
+    [![セクション リスト。](./media/formpartsectionlist.png)](./media/formpartsectionlist.png)
 
     特に、このパターンは次の要素を検索します。
     - ワークスペース リストに必要なすべてのフィルターおよびアクションを含むオプションのヘッダー グループです。
@@ -364,7 +362,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 1. ソリューション エクスプローラーで、**FmtClerkWorkspace** フォームを右クリックしてから、**スタートアップ オブジェクトとして設定** をクリックします。
 2. **Ctrl+F5** キーを押して、フォームをビルドおよび実行します。 Internet Explorer でフォームが開きます。
 
-    ![使用可能なリスト](./media/availablelist.png)
+    ![使用可能なリスト。](./media/availablelist.png)
 
 3. **使用可能な車両** タブをクリックし、新しいリストを表示します。
 4. QuickFilter をクリックして **Lit** と入力し、**Enter** を押して利用可能な Litware モデルの車両に絞り込みます。
@@ -428,7 +426,7 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 
     作成したクエリは、次の図と一致する必要があります。
 
-    ![キャッシュ クエリ](./media/cachequery.png)
+    ![キャッシュ クエリ。](./media/cachequery.png)
 
 15. **Ctrl+S** キーを押して保存します。
 
@@ -684,3 +682,6 @@ Visual Studio を使用し、更新した **FmtClerkWorkspace** フォームを�
 
 - [顧客フォームの作成](build-customer-form.md) – フォーム パターンを公開する場合は、このチュートリアルを参照してください。 このチュートリアルでは、詳細マスター パターンをフォームに適用するプロセスについて説明します。
 - [ナビゲーションの構築](build-navigation.md) – メニュー構造にワークスペースを追加する方法については、このチュートリアルを参照してください。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

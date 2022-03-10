@@ -2,11 +2,9 @@
 title: PDF テンプレートに入力する ER コンフィギュレーションのデザイン
 description: このトピックでは、PDF テンプレートに入力する電子レポート (ER) 形式をデザインする方法について説明します。
 author: NickSelin
-manager: AnnBe
-ms.date: 04/19/2019
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: de31469e79addfb82b3b57e647ff82e4d254881a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758291"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>PDF テンプレートに入力する ER コンフィギュレーションのデザイン
 
@@ -47,15 +45,15 @@ ms.locfileid: "4688128"
 
 また、[コンフィギュレーション プロバイダーを作成しアクティブとマーク](tasks/er-configuration-provider-mark-it-active-2016-11.md) の手順を完成する必要があります。
 
-最後に、[CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111) から次のファイルをダウンロードする必要があります。
+最後に、次のファイルをダウンロードします。
 
 | コンテンツの説明                       | ファイル名                                     |
 |-------------------------------------------|-----------------------------------------------|
-| レポートの最初のページをテンプレート | [IntrastatReportTemplate1.pdf](https://mbs.microsoft.com/Files/public/CS)                  |
-| レポートの他のページをテンプレート    | [IntrastatReportTemplate2.pdf](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatReportTemplate2.pdf)                  |
-| ER フォーマットのサンプル - PDF                          | [イントラスタット レポート (PDF). バージョン .1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatreportPDFversion11.xml)        |
-| ER フォーマットのサンプル - Excel                          | [イントラスタット (Excel からインポート). バージョン .1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatimportfromExcelversion11.xml) |
-| サンプル データセット                            | [イントラスタット サンプル データ .xlsx](https://mbs.microsoft.com/Files/public/CS/AX/Intrastatsampledata.xlsx)                    |
+| レポートの最初のページをテンプレート | [IntrastatReportTemplate1.pdf](https://download.microsoft.com/download/0/8/3/0832c82b-4448-4562-afbf-01e0efc8d999/IntrastatReportTemplate1.pdf)                  |
+| レポートの他のページをテンプレート    | [IntrastatReportTemplate2.pdf](https://download.microsoft.com/download/c/7/a/c7a8a806-2192-4034-9052-e8b84b527d5e/IntrastatReportTemplate2.pdf)                  |
+| ER フォーマットのサンプル - PDF                          | [イントラスタット レポート (PDF). バージョン .1.1.xml](https://download.microsoft.com/download/a/8/7/a87aea3e-3f60-404c-8899-c471d20e7ea9/IntrastatreportPDFversion1.1.xml)        |
+| ER フォーマットのサンプル - Excel                          | [イントラスタット (Excel からインポート). バージョン .1.1.xml](https://download.microsoft.com/download/a/2/c/a2c0c145-d989-4e55-9d47-9647c02e4ee4/IntrastatimportfromExcelversion1.1.xml) |
+| サンプル データセット                            | [イントラスタット サンプル データ .xlsx](https://download.microsoft.com/download/9/f/1/9f1c5b96-3800-475f-8cf6-1ddd42873758/Intrastatsampledata.xlsx)                    |
 
 ## <a name="design-the-format-configuration"></a>形式のコンフィギュレーションをデザイン
 
@@ -117,11 +115,11 @@ ms.locfileid: "4688128"
 
 次の図は、レポートの最初のページの PDF テンプレートを示しています。
 
-![テンプレート 1](media/rcs-ger-filloutpdf-template1.png)
+![テンプレート 1。](media/rcs-ger-filloutpdf-template1.png)
 
 次の図は、レポートの他のページの PDF テンプレートを示しています。
 
-![テンプレート 2](media/rcs-ger-filloutpdf-template2.png)
+![テンプレート 2。](media/rcs-ger-filloutpdf-template2.png)
 
 1. **構成** ページで、**デザイナー** を選択します。
 2. **ルートの追加** を選択します。
@@ -148,7 +146,7 @@ ms.locfileid: "4688128"
 
 12. **OK** を選択します。
 
-    ![PDF ダイアログ ボックスからインポート](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![PDF ダイアログ ボックスからインポート。](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. ツリーで、**アウトプット** を展開します。
 
@@ -178,7 +176,7 @@ ms.locfileid: "4688128"
 
     読み込んだ PDF ドキュメントが編集した ER 形式で関連付けられていることを確認します。
 
-    ![PDF ファイルのプレビュー](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![PDF 添付ファイルのプレビュー。](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. この形式を引き続きデザインするには、2 番目の PDF テンプレートをインポートし、必要なバインドをデータ ソースに追加します。
 20. **保存** を選択します。
@@ -217,7 +215,7 @@ ms.locfileid: "4688128"
 1. **フォーマット デザイナー** ページで、**マッピング** タブを選択します。
 2. ツリーで、**ページング \> ページ** を展開します。
 
-    ![モデル ツリーが展開される数式デザイナーのページ](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![モデル ツリーが展開される数式デザイナーのページ。](media/rcs-ger-filloutpdf-reviewformat.png)
 
     次の詳細に留意してください。
 
@@ -240,7 +238,7 @@ ms.locfileid: "4688128"
 
     この形式要素の **名前** 属性は、**訂正 1** として定義されていることに注意してください。 また、書式要素の **名前** 式は、**ページング .FldName(「訂正」、\@. 番号)** で定義されていることに注意してください。
 
-![マッピングが選択されている形式デザイナー](media/rcs-ger-filloutpdf-reviewformat2.png)
+![マッピングが選択されている形式デザイナー。](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 **フィールド** の形式要素は、親の **PDF ファイル** 形式要素のテンプレートとして定義される入力可能な PDF ドキュメントの個々のフィールドに入力するために使用されます。 **PDF ファイル** 形式要素またはネストした要素のバインディングは、ネストした要素がある場合、対応する PDF フィールドに入力された値が指定されます。 個々の形式要素によって入力される PDF フィールドを指定するには、**フィールド** 形式要素のさまざまなプロパティを使用できます。
 
@@ -277,7 +275,7 @@ ms.locfileid: "4688128"
 
     **モデル マッピングの規定値** が **はい** に設定されている場合、インポートされた **イントラスタット (Excel からインポート)** ER 形式は、**イントラスタット レポート (PDF)** 形式コンフィギュレーションの規定値のデータ ソースとして割り当てられます。 その後、**イントラスタット レポート (PDF)** 形式のコンフィギュレーションが実行されると、**イントラスタット (Excel からインポート)** ER 形式によって解析された Excel ブックの内容により、外部取引トランザクションがシミュレーションされます。 次の図は、Excel ブックの例を示します。
 
-    ![サンプル データが含まれる Excel ブック](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![サンプル データが含まれる Excel ブック。](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>形式のコンフィギュレーションを実行
 
@@ -291,13 +289,16 @@ ms.locfileid: "4688128"
 
 次の図で、生成されるレポートの最初のページの例を示します。
 
-![生成されたレポートの最初のページ](media/rcs-ger-filloutpdf-generatedreport.png)
+![生成されたレポートの最初のページ。](media/rcs-ger-filloutpdf-generatedreport.png)
 
 次の図で、生成されるレポートの別のページの例を示します。
 
-![生成されたレポートの別のページ](media/rcs-ger-filloutpdf-generatedreport2.png)
+![生成されたレポートの別のページ。](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## <a name="additional-resources"></a>追加リソース
 
 - [OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)](tasks/er-design-reports-openxml-2016-11.md)
 - [Word 形式でレポートを生成するための ER コンフィギュレーションのデザイン](tasks/er-design-configuration-word-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

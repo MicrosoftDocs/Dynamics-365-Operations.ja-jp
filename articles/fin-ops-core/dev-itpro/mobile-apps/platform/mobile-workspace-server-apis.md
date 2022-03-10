@@ -1,26 +1,24 @@
 ---
 title: サーバー側の開発 (ワークスペース X++ API)
-description: このトピックでは、モバイル フォン アプリをサポートするプラットフォームに関する詳細情報を提供します。これにより、オフラインおよびモバイルの相互関係が充実し、使いやすいデザイナー エクスペリエンスを実現できます。
-author: robinarh
-manager: AnnBe
+description: このトピックでは、携帯電話アプリをサポートするプラットフォームについて説明します。このプラットフォームは、充実したオフラインおよびモバイルの相互関係、および使いやすいデザイナー エクスペリエンスを提供します。
+author: tonyafehr
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 255544
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 622b27b6149009129de8d0847625ba35f4d9bdff
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4305eaa8d1b5a0587f8a9b3ab5935e42550932a5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681612"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782166"
 ---
 # <a name="server-side-development-workspace-x-apis"></a>サーバー側の開発 (ワークスペース X++ API)
 
@@ -1845,3 +1843,6 @@ public MenuItemType WorkspaceMenuItemType ([MenuItemType _workspaceMenuItemType]
 #### <a name="return-value"></a>戻り値
 
 ワークスペース セキュリティ属性のワークスペース メニュー項目タイプ
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

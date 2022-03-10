@@ -5,7 +5,6 @@ author: kamaybac
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d84520b8f551df847cb5d77d8dcbce1701d3795b
-ms.sourcegitcommit: d77b2175a3364694b5c74e0062e317f612416796
+ms.openlocfilehash: 8c68b8ed1703f2cd49d47fad73485e9e4093aa82b902a484fb79bad4dd2dcbfb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5934970"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773564"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Dynamics 365 Supply Chain Management バージョン 10.0.18 (2021 年 5 月) の新機能または変更された機能
 
@@ -38,9 +37,11 @@ ms.locfileid: "5934970"
 
 - 発注書の自動リリース ([スケール単位をクラウドに含む倉庫の実行する](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud) 機能拡張)<br> - 詳細については、[クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード](../cloud-edge/cloud-edge-workload-warehousing.md) を参照してください。
 
-- [エンタープライズ スケールの在庫パフォーマンスの改善とアーカイブ](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - 詳細については、[在庫トランザクションをアーカイブ](../inventory/archive-inventory-transactions.md) を参照してください
+- [仕入先コラボレーション インターフェイスでの証明書の作成と表示](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/create-view-certifications-vendor-collaboration-interface)<br> - 詳細については、[仕入先証明の管理](../../finance/public-sector/manage-vendor-certification.md) を参照してください。
 
-- [リベート管理](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - 詳細については、[リベート管理モジュールの概要](../rebate-management/rebate-management-overview.md) を参照してください
+- [エンタープライズ スケールの在庫パフォーマンスの改善とアーカイブ](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - 詳細については、[在庫トランザクションをアーカイブ](../inventory/archive-inventory-transactions.md) を参照してください。
+
+- [リベート管理](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - 詳細については、[リベート管理モジュールの概要](../rebate-management/rebate-management-overview.md) を参照してください。
 
 - [販売データ エンティティのエクスポート設定ポリシー](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
 

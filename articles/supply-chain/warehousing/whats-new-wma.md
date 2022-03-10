@@ -1,27 +1,67 @@
 ---
 title: Warehouse Management モバイル アプリの新機能または変更された機能
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能および変更された機能を一覧表示します。
-author: MarkusFogelberg
-ms.date: 09/09/2021
+author: Mirzaab
+ms.date: 01/18/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6ab5f6887cb60d3d0434b59cda82b44eca272d7e
-ms.sourcegitcommit: 60ade60f72fd0fa0683f7a3eaf93439d10cf3373
+ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7655388"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067254"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20150"></a>Version 2.0.15.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- メモリ リークの問題を修正してパフォーマンスを改善しました。
+- 詳細ページで選択したフィールド値が正しく更新されない問題を修正しました。
+
+## <a name="version-20140"></a>Version 2.0.14.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- 既定の [送信] ボタンが無効になる問題を修正しました。
+
+## <a name="version-20130"></a>Version 2.0.13.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+ 
+- よりスムーズなアニメーションでページ間のスクロールが改善しました。
+- スワイプ動作に対する直感的でない反応や、時折発生する画面フリーズを修正しました。
+- ダーク モード テキストと背景色の組み合わせが改善され、読みやすくなりました。
+- アプリ ウィンドウのサイズ変更時に、一部のテキストが非常に小さくなる問題を修正しました。
+- バーコードのスキャン時にアプリがクラッシュする可能性がある問題を修正しました。
+- スライダーをボタンに置き換えることができるようになりました。
+- アプリに「AADSTS7000215: 無効なクライアント シークレットが指定されました」というエラー メッセージが表示される問題を修正しました。
+- 下にスワイプするジェスチャを使用してページを閉じる方法を示すヒント アニメーションを修正しました。
+- フリック ダウン ジェスチャでページを閉じることができるようになりました。
+- **ユーザー設定** ページでドロップダウン リストのタイトルが表示されない問題を修正しました。
+- アプリがコンマ (,) を小数点記号として認識しないローカライズの問題を修正しました。
+- アクセシビリティが向上しました。
+- **新規接続** ページのナビゲーションを修正し、アクセシビリティを向上させました。
+- 入力フィールドの選択時にソフト (画面) キーボードが表示されない問題を修正しました。
+- ユーザーがウィンドウのサイズを素早く変更すると、アプリがクラッシュする問題を修正しました。
+- 高速のキー押下が長押しと見なされることがある問題を修正しました。
+- Supply Chain Management でフィールドをカスタマイズすると、アプリのレイアウトが壊れる問題を修正しました。
+- 品目の場所が正しく表示されない問題を修正しました。
+- 製品バリアント ワークフローの未処理ピッキングに関連する問題を修正しました。
+- 事前設定された既定値が含まれるフィールドの不必要な検証を削除しました。
+- パフォーマンスを改善しました。
+- カード ページでフィールドのフィルター処理および並べ替えを行う方法をユーザーが選択できる新しい設定を追加しました。
 
 ## <a name="version-20110"></a>バージョン 2.0.11.0
 

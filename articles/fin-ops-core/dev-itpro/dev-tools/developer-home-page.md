@@ -2,25 +2,21 @@
 title: ホームページの開発とカスタマイズ
 description: このトピックでは、開発に関するトピックへのリンクを提供します。
 author: RobinARH
-manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 10/26/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 21631
+ms.reviewer: tfehr
+ms.custom: intro-internal
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d0d2ecd3644c31e5c4ed3f896f10a248c058134
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: ba0e0b27228f9433c58005955a72dea81ad00377
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130771"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781650"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -30,7 +26,7 @@ ms.locfileid: "5130771"
 
 ## <a name="overview"></a>概要
 
-Finance and Operations アプリケーションは、Microsoft が提供する次世代エンタープライズ リソース プランニング (ERP) を表します。 このアプリでは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体の ERP アプリケーション スイートを有効できます。 このアプリは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 開発経験には次のものが含まれます。
+Finance and Operations アプリは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体のエンタープライズ リソース プランニング (ERP) アプリケーション スイートを有効にします。 このアプリは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 開発経験には次のものが含まれます。
 
 - 実行環境から切り離された開発ツール。 オンライン データベースではなく、ローカルの XML ベースのファイルに対して作成します。
 - Microsoft Visual Studio が開発環境です。 Visual Studio 環境は、円滑で慣れ親しんだエクスペリエンスを提供するようにカスタマイズされています。
@@ -94,26 +90,27 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 - [Azure Pipelines を使用した資産のアップロード](pipeline-asset-upload.md)
 - [Azure Pipelines を使用した資産のデプロイ](pipeline-deploy-asset.md)
 - [Azure Pipelines での Lifecycle Services (LCS) 接続の作成](pipeline-lcs-connection.md)
+- [新しい NuGet パッケージ用にホストされる Azure Pipeline の更新](pipeline-nuget-split.md)
 - [Azure Pipelines でのレガシ パイプラインの更新](pipeline-msbuild-update.md)
 
 ## <a name="x-programming-language"></a>X++ プログラミング言語
 
+### <a name="reference"></a>参照
+
+- [X++ 言語リファレンス](../dev-ref/xpp-language-reference.md)
+
 ### <a name="overviews"></a>概要
 
-- [X++ およびデバッガーの機能](new-x-debugger-features.md)
 - [C\# と X++ ソース コードを使用してビジネス ロジックを記述する](write-business-logic.md)
+- [X++ の Visual Studio の要件](developer-tools-vs2017.md)
 
 ### <a name="language-support"></a>言語サポート
 
-- [X++ と X++ コンパイラの変更](programming-language-support.md)
 - [要求または応答シナリオの EventHandlerResult クラス](event-handler-result-class.md)
 - [Visual Studioのデバッガーを使用して  X++ コードをデバッグする](debug-xpp.md)
 - [C\# の統合言語クエリ (LINQ) プロバイダー](linq-provider-c.md)
 - [ベスト プラクティス ルールの記述](author-best-practice-rules.md)
-
-### <a name="reference"></a>参照
-
-- [X++ 言語リファレンス](../dev-ref/xpp-language-reference.md)
+- [SysSetupConfigAttribute 属性](syssetupconfigattribute.md)
 
 ## <a name="customize-with-extensions-and-overlayering"></a>拡張機能およびオーバーレイによってカスタマイズする
 
@@ -175,15 +172,17 @@ Finance and Operations アプリケーションは、Microsoft が提供する�
 
 - [Dynamics 365 Finance ホーム ページの開発](../financial/financial-dev-home-page.md)
 
-## <a name="licensing"></a>ライセンス
+## <a name="development-for-independent-software-vendors"></a>独立系ソフトウェア ベンダーのための開発
 
-- [独立系ソフトウェア ベンダー (ISV) ライセンス](isv-licensing.md)
+- [独立系ソフトウェア ベンダー (ISV) 開発のホーム ページ](isv-dev-home-page.md)
 
-## <a name="supply-chain-management"></a>サプライ チェーン マネジメント
+## <a name="supply-chain-management"></a>Supply Chain Management
 
-- [ガント コントロール作成ガイド](../user-interface/gantt-development-guide.md)
+- [ガント コントロール開発ガイド](../user-interface/gantt-development-guide.md)
 - [新しい輸送管理エンジンの作成](../../../supply-chain/transportation/create-new-transportation-management-engine.md)
 
 ## <a name="additional-resources"></a>その他のリソース
 
 [開発のための内部者向けヒント](https://community.dynamics.com/ax/b/newdynamicsax)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

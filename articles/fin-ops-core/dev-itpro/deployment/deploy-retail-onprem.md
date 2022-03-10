@@ -2,11 +2,9 @@
 title: オンプレミス環境での小売チャネルのコンポーネントのインストール手順
 description: このトピックでは、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
 author: jashanno
-manager: AnnBe
-ms.date: 06/16/2020
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 72439f3160f42bed3aadccc18c74b88844c5b4e3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 37f95ffb3a9049a36991d2b45dda7d4cc0f704d1
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680539"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860833"
 ---
 # <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での小売チャネルのコンポーネントのインストール手順
 
@@ -27,9 +25,10 @@ ms.locfileid: "4680539"
 
 このトピックでは、オンプレミス環境でのコマース チャネルのコンポーネントのインストール手順について説明します。
 
-## <a name="overview"></a>概要
+> [!IMPORTANT]
+> 現在、セルフサービス パッケージがオンプレミス環境に正しく適用されないという既知の問題があります。 そのため、インストーラーを Microsoft Dynamics Lifecycle Services (LCS) から直接プルし、必要に応じて使用することをお勧めします。 これにより、Commerce 本部はインストーラーのダウンロードに使用されなくなり、必要に応じて構成ファイルだけがダウンロードされます。
 
-オンプレミス環境では、チャネル機能は Commerce Scale Unit (自己ホスト) の使用により排他的に有効になります。 概要については、[Commerce Scale Unit (自己ホスト)](../../../retail/dev-itpro/retail-store-system-begin.md) を参照してください。 
+オンプレミス環境では、チャネル機能は Commerce Scale Unit (自己ホスト) の使用により排他的に有効になります。 概要については、[Commerce Scale Unit (自己ホスト)](../../../commerce/dev-itpro/retail-store-system-begin.md) を参照してください。 
 
 クラウド展開とは異なり、オンプレミス環境では Lifecycle Services (LCS) 経由でチャネル コンポーネントのシームレスで可用性の高い展開は有効になりません。 Commerce Scale Unit (自己ホスト) をインストールすることによってのみ、チャネル コンポーネントを使用できます。
 
@@ -50,7 +49,8 @@ ms.locfileid: "4680539"
     .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/' -SendProductSupportTelemetryToMicrosoft
     ```
     > [!IMPORTANT]
-    > 上記の手順は、バージョン10.0以降にて有効です。  Retail オンプレミス機能のオリジナル 8.1.3 版では、オリジナルバージョンのスクリプト区切り文字を使用する必要があります。
+    > - 現在、セルフサービス パッケージがオンプレミス環境に正しく適用されないという既知の問題があります。 そのため、インストーラーを Microsoft Dynamics Lifecycle Services (LCS) から直接プルし、必要に応じて使用することをお勧めします。 これにより、Commerce 本部はインストーラーのダウンロードに使用されなくなり、必要に応じて構成ファイルだけがダウンロードされます。
+    > - 上記の手順は、バージョン 10.0 以降に適用されます。
     >
     > ```powershell
     > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>' -SendProductSupportTelemetryToMicrosoft
@@ -92,7 +92,7 @@ ms.locfileid: "4680539"
      >
      > このシークレットを安全に保つことが重要です。 このシークレットは、1 回だけコピーしてください。システムに保存しないでください。  生成されたクライアント ID とシークレットは、Commerce Scale Unit インストーラーの実行中に使用されるため、後で使用する必要があります。  シークレットはいつでも再度リセットできますが、前のシークレットを使用した Commerce Scale Unit で更新する必要があります。
 
-11.  **Retail とコマース** &gt; **バックオフィスの設定** &gt; **コマース スケジューラ** &gt; **Microsoft Dynamics AX のコネクタ** の順に移動します。
+11.  **Retail と Commerce \> バックオフィスの設定 \> Commerce スケジューラ \> Microsoft Dynamics AX のコネクタ** に移動します。
 12.  アクション ウィンドウで **編集** を選択します。
 13.  **プロファイル** フィールドに、**既定** 値を入力します。  必要に応じて、**説明** フィールドに説明を入力します。
 
@@ -103,23 +103,26 @@ ms.locfileid: "4680539"
 15.  **プロトコル** フィールドで、**https** を選択します。
 16.  **通称** フィールドに、**AXServiceUser@contoso.com** と入力します。
 17.  アクション ウィンドウで、 **保存** を選択します。
-18.  バックオフィスで、**Retail とコマース** &gt; **バックオフィスの設定** &gt; **パラメーター** &gt; **コマースの共有パラメーター** の順に移動します。
+18.  バックオフィスで、**Retail と Commerce \> バックオフィスの設定 \> パラメーター \> Commerce 共有パラメーター** に移動します。
 19.  **セキュリティ** タブを選択します。
 20.  **取引サービスの従来のプロパティ** の下位ヘッダーにて、 **Real-time サービス プロファイル** フィールドを選択し、新たに作成した **既定** 値を選択します。
 21.  **ID プロバイダー** タブを選択します。
 22.  **ID プロバイダー** クイック タブで、**追加** を選択します。
 23.  新しい **発行者** 行で、新しい ID プロバイダー値 **https://sts.windows.net/** をフィールドに入力します。
 24.  アクション ウィンドウで、 **保存** を選択します。
-25.  **Retail とコマース** &gt; **バックオフィスの設定** &gt; **パラメーター** &gt; **コマース パラメーター** の順に移動します。
+25.  **Retail と Commerce \> 本社の設定 \> パラメーター \> Commerce パラメーター** の順にクリックします。
 26.  **全般** タブで、**初期化** リンクを選択し、コマース機能のシード データを構成します。
 
      > [!NOTE]
-     > 初めてダウンロードが試みられるとき、インストーラーは関連するページからダウンロードされません。  これは、インストーラーはダウンロードの場所に配置されているだけであり、関連付けられているデータベースの値がまだ存在しないためです。  バックオフィスで、**ダウンロード** 機能が試行されると (たとえば、Commerce Scale Unit または Modern POS)、エラーが表示され、2 回目にダウンロードが試みられたときにインストーラーをダウンロードできるようにする自動アップロード機能が開始されます。 (インストーラーのダウンロードがもう一度試みられるまで 1 分待ってください)。
-     >
-     > 周辺機器シミュレータ (本社の ハードウェアプロファイル ページにてダウンロードできます) は、最低でも1つのハードウェア プロファイルが作成され、動作可能となるまで使用することができません。 それらが完了していれば、以下のスクリプトを実行することができます。
+     > - この記事の冒頭にある、重要なメッセージをお読みください。インストーラーがダウンロードのためにバックオフィスを介して機能することがなくなったという既知の問題に関するものです。
+     > - 初めてダウンロードが試みられるとき、インストーラーは関連するページからダウンロードされません。  これは、インストーラーはダウンロードの場所に配置されているだけであり、関連付けられているデータベースの値がまだ存在しないためです。  バックオフィスで、**ダウンロード** 機能が試行されると (たとえば、Commerce Scale Unit または Modern POS)、エラーが表示され、2 回目にダウンロードが試みられたときにインストーラーをダウンロードできるようにする自動アップロード機能が開始されます。 (インストーラーのダウンロードがもう一度試みられるまで 1 分待ってください)。
+     > - 周辺機器シミュレータ (本社の ハードウェアプロファイル ページにてダウンロードできます) は、最低でも1つのハードウェア プロファイルが作成され、動作可能となるまで使用することができません。 それらが完了していれば、以下のスクリプトを実行することができます。
      >
      > ```powershell
      > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
      > ```
 
-28. Commerce Scale Unit をインストールするためのインストール手順に従います。 手順については、[Commerce Scale Unit (自己ホスト) のコンフィギュレーションとインストール](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md) を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 
+28. Commerce Scale Unit をインストールするためのインストール手順に従います。 手順については、[Commerce Scale Unit (自己ホスト) のコンフィギュレーションとインストール](../../../commerce/dev-itpro/retail-store-scale-unit-configuration-installation.md) を参照してください。  このドキュメントの複数の場所に、オンプレミス配置の指示に対する変更を参照するメモがあります。 これらの変更を記録することが重要です。 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

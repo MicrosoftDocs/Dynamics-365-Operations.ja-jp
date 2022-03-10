@@ -2,11 +2,9 @@
 title: 予算計画の妥当性ドキュメント
 description: 妥当性ドキュメントは、予算を要求する人物に対して特定の予算が必要な理由の記述を提供します。
 author: panolte
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanJustificationTemplate
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8754c017a966cb1d11a72d6f8a80e1088aeb9100
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5eb74b5d2b71372f99dd927ff6e2bee96e199a6f75b3ae920607e5ec37a4241a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752969"
 ---
 # <a name="budget-planning-justification-documents"></a>予算計画の妥当性ドキュメント
 

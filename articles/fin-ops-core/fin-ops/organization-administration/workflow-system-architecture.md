@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 090549aee7201b0cb187c923253a6b30c56fe133
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 04bb87db231c6d4205b73451fd62e6e5bd8578f7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359331"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069946"
 ---
 # <a name="workflow-system-architecture"></a>ワークフロー システムのアーキテクチャ
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 この記事では、ワークフロー システムのアーキテクチャについて説明します。
 
@@ -37,7 +40,7 @@ X++ ワークフロー ランタイムは、次のコンポーネントで構成
 
 必要に応じて、メッセージング バッチ ジョブまたはワークフロー ランタイム API のいずれかがアプリケーション コードを呼び出すことができます。 X++ ワークフロー ランタイムは、Microsoft .NET フレームワークの CIL (共通中間言語) にコンパイルされます。
 
-管理型ワークフロー ランタイムは、Windows Workflow Foundation と Finance and Operations アプリの機能拡張で構成されます。
+管理ワークフロー ランタイムは、Windows Workflow Foundation および財務と運用アプリの拡張機能で構成されます。
 
 論理的には、ワークフロー インフラストラクチャは拡張であり、ユーザーにとって透過的です。 物理的には、X++ ワークフローおよび管理ワークフローのランタイムは両方とも AOS でホストされます。 ワークフロー インフラストラクチャは AOS と .NET Interop でバッチ処理を使用して、その 2 つのサブシステムを統合し、片方のサブシステムからもう一方のサブシステムにメッセージを渡します。 バッチ プロセッサで実行される X++ コードは、.NET CIL にコンパイルされます。 バッチ処理は、.NET 共通言語ランタイム (CLR) で実行されます。
 

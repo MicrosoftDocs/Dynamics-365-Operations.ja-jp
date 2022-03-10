@@ -2,11 +2,9 @@
 title: 統計分析コード メンバーと統計測定プロバイダーで使用するプロバイダーのテンプレート
 description: このトピックでは、統計分析コード メンバーと統計測定プロバイダー テンプレートについて説明します。 統計分析コード メンバーは、コスト配分やコスト配賦などのポリシーの配賦基準として使用できます。 また、非金銭的コスト消費を報告するために使用することもできます。
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 79e8bf0714871ffd342bb6053153e6e4d0f5c668
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c79451a5145a6e419ae0e332c67f06ca2df65996f959333a508dbf62dbf435ff
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767650"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>統計分析コード メンバーと統計測定プロバイダーで使用するプロバイダーのテンプレート
 
@@ -162,7 +160,7 @@ HcmEmployment テーブルには、インスタンス内のすべての従業員
 
 **統計エントリ**
 
-| 原価オブジェクト |    | 会計日 | 統計分析コード メンバー |  説明        | 大きさ |
+| 原価オブジェクト |  説明  | 転記日 | 統計分析コード メンバー |  説明        | 大きさ |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | HR | 2017 年 1 月 31 日      | FTE                         | フルタイム従業員 | 1.00      |
 | CC002       | FI | 2017 年 1 月 31 日      | FTE                         | フルタイム従業員 | 2.00      |
@@ -328,7 +326,7 @@ ProdRouteTrans テーブルには、法人 DataAreadID ごとのすべての生�
 
 **統計エントリ**
 
-| 原価オブジェクト |    | 会計日 | 統計分析コード メンバー |      説明                   | 大きさ  |
+| 原価オブジェクト | 説明 | 転記日 | 統計分析コード メンバー |      説明                   | 大きさ  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | HR | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 2,450.00   |
 | CC002       | FI | 2017 年 1 月 31 日      | 電気                  | 電気消費 | 4,100.00   |
@@ -336,12 +334,15 @@ ProdRouteTrans テーブルには、法人 DataAreadID ごとのすべての生�
 
 コスト配分ルールで、配賦の基準として、電気が事前に定義された分析コード メンバーが割り当てられた場合は、次の配賦係数を使用して、コストが配分されます。
 
-| 原価オブジェクト |    | 大きさ | 配賦係数          |
-|-------------|----|-----------|----------------------------|
-| CC001       | HR | 2,450.00  | (2,450 ÷ 21,550) × 金額  |
-| CC002       | FI | 4,100.00  | (4,100 ÷ 21,550) × 金額  |
-| CC003       | IT | 15,000.00 | (15,000 ÷ 21,550) × 金額 |
+| 原価オブジェクト | 説明   | 大きさ | 配賦係数          |
+|-------------|---------------|-----------|----------------------------|
+| CC001       | HR            | 2,450.00  | (2,450 ÷ 21,550) × 金額  |
+| CC002       | FI            | 4,100.00  | (4,100 ÷ 21,550) × 金額  |
+| CC003       | IT            | 15,000.00 | (15,000 ÷ 21,550) × 金額 |
 
 ## <a name="additional-resources"></a>その他のリソース
 
 [配賦基準](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

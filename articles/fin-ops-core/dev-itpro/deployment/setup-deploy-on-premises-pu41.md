@@ -1,8 +1,8 @@
 ---
 title: オンプレミス環境の設定と配置 (Platform update 41 以降)
-description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
+description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 11/01/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 98259839b295d1a01f431ebd022fa21056b13371
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 78fe0ca4b1697a36519259061f9ec70402708893
+ms.sourcegitcommit: eb236eec9eacb507433206fccce585b25980bedd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728773"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8045511"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。 プラットフォーム更新プログラム 41 はバージョン 10.0.17 で利用可能です。
+このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。 プラットフォーム更新プログラム 41 はバージョン 10.0.17 で利用可能です。
 
 [ローカル ビジネス データ Yammer グループ](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) が利用可能です。 そこでは、オンプレミス展開に関する質問またはフィードバックをすべて投稿できます。
 
@@ -69,7 +69,7 @@ Finance + Operations アプリケーションは、次の 3 つの主要なコ�
 - 次はオプションですが、**強く** お勧めします: Windows Server の Active Directory Certificate Services (AD CS)
 
 > [!IMPORTANT]
-> サポートされているバージョンについては、[Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされているソフトウェア](./onprem-compatibility.md)を参照してください。
+> サポートされているバージョンについては、[サポートされているソフトウェア Microsoft Dynamics 365 Finance + Operations (on-premises)](./onprem-compatibility.md) を参照してください。
 
 ## <a name="lcs"></a>LCS
 
@@ -100,7 +100,7 @@ VMware を使用している場合は、次の Web ページに記載されて�
 - [vmxnet3 仮想アダプターのいくつかの問題](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
 > [!WARNING]
-> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure スタック ハブ](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
+> Dynamics 365 Finance + Operations (on-premises) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ハードウェア構成には、次のコンポーネントが含まれます。
 
@@ -113,7 +113,7 @@ VMware を使用している場合は、次の Web ページに記載されて�
 詳細については、[オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md) を参照してください。
 
 > [!IMPORTANT]
-> サポートされているバージョンについては、[Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされているソフトウェア](./onprem-compatibility.md)を参照してください。
+> サポートされているバージョンについては、[サポートされているソフトウェア Microsoft Dynamics 365 Finance + Operations (on-premises)](./onprem-compatibility.md) を参照してください。
 
 ### <a name="hardware-layout"></a>ハードウェア レイアウト
 
@@ -176,13 +176,13 @@ Finance + Operations のインフラストラクチャを設定するには、�
 1. [VM のドメインへの参加](#joindomain)
 1. [LCS からセットアップ スクリプトのダウンロード](#downloadscripts)
 1. [コンフィギュレーションの記述](#describeconfig)
+1. [ファイル ストレージの設定](#setupfile)
 1. [証明書の構成](#configurecert)
 1. [SSIS を設定する](#setupssis)
 1. [SSRS を設定する](#setupssrs)
 1. [VMs を設定する](#setupvms)
 1. [スタンドアロン Service Fabric クラスターの設定](#setupsfcluster)
 1. [テナント用 LCS 接続の構成](#configurelcs)
-1. [ファイル ストレージの設定](#setupfile)
 1. [SQL Server の設定](#setupsql)
 1. [データベースを構成する](#configuredb)
 1. [資格情報の暗号化](#encryptcred)
@@ -369,7 +369,7 @@ Microsoft ではセットアップ エクスペリエンスを向上させるた
 
 1. [LCS](https://lcs.dynamics.com/v2) にサインインします。
 2. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
-3. **モデル** を資産タイプとして選択してから、グリッドで、**Dynamics 365 for Operations オンプレミス - 展開スクリプト** の行を選択します。
+3. **モデル** を資産タイプとして選択してから、グリッドで、**Microsoft Dynamics 365 Finance + Operations (on-premises) 展開スクリプト** の行を選択します。
 4. **バージョン** を選択し、スクリプトの zip ファイルの最新版をダウンロードします。
 5. zip ファイルをダウンロードした後、ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
 6. zip ファイルをスクリプトの実行に使用するコンピューターにコピーします。
@@ -395,6 +395,7 @@ infrastructure\\ConfigTemplate.xml コンフィギュレーション ファイ�
 - 通信を保護するために必要な証明書
 - データベース コンフィギュレーション
 - Service Fabric Cluster コンフィギュレーション
+- アプリケーションが機能するために必要なファイル共有
 
     > [!IMPORTANT]
     > Service Fabric cluster をコンフィギュレーションする際に、主要なノード タイプ (**OrchestratorType**) の 3 つのフォールト ドメインがあることを確認します。 また、1 台のコンピューターに展開できるノードのタイプは 1 つだけになるようにします。
@@ -407,6 +408,8 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
 - 厳密な名前の検証を有効にするかどうか
 - 開くファイアウォール ポートの一覧
 - アカウントがコンピューターに必要とするアクセス許可
+- オペレーティング システムの既定のトランスポート層セキュリティ (TLS) プロトコルを使用するように .NET Framework を構成するかどうか。
+- セキュリティ保護されていない TLS および SSL プロトコルを無効にするかどうか。
 
 データベースごとに、infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml コンフィギュレーション ファイルでは、次の詳細について説明します。
 
@@ -433,7 +436,54 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
     Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="step-8-configure-certificates"></a><a name="configurecert"></a>手順 8、 証明書の構成
+### <a name="step-8-set-up-file-storage"></a><a name="setupfile"></a>手順 8、 ファイル ストレージの設定
+
+以下の SMB 3.0 ファイル共有を設定する必要があります。
+
+- AOS にアップロードされるユーザー ドキュメントを格納するファイル共有 (たとえば、\\\\DAX7SQLAOFILE1\\aos-storage)。
+- デプロイメントを調整するための最新のビルド ファイルと構成ファイルを保存するファイル共有 (たとえば、\\\\DAX7SQLAOFILE1\\agent)。
+- Service Fabric Cluster (たとえば、\\\\DAX7SQLAOFILE1\\DiagnosticsStore など) の診断情報を格納するファイル共有。
+
+    > [!WARNING]
+    > 共有に入れるファイルの最大パス長を超えないように、このファイル共有パスはできるだけ短くしておいてください。
+
+SMB 3.0 を有効にする方法については、[SMB セキュリティの強化](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1) を参照してください。
+
+> [!IMPORTANT]
+> - セキュリティで保護されたダイアレクト ネゴシエーションでは、SMB 2.0 または 3.0 から SMB 1.0 へのダウングレードを検出または防止できません。 したがって、SMB 1.0 サーバーを無効にすることを強くお勧めします。 これにより、SMB 暗号化のすべての機能を利用できます。 SMB 1.0 を無効にする方法については、[Windows で SMBv1、SMBv2、および SMBv3 を検出、有効化、および無効化する方法](/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3#how-to-remove-smbv1) を参照してください。
+> - 環境内の残りの部分でデータが保護されていることを保証するために、BitLocker ドライブ暗号化をすべてのコンピューターで有効にする必要があります。 BitLocker を有効にする方法については、[BitLocker: Windows Server 2012 以降で配置する方法](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) を参照してください。
+
+1. ファイル共有マシンで、次のコマンドを実行します。
+
+    ```powershell
+    Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
+    ```
+
+2. **\\\\DAX7SQLAOFILE1\\aos-storage** ファイル共有を設定します。
+
+    1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
+    2. **タスク** \> **新しい共有** を選択し、共有を作成します。 新しい共有に **aos-storage** と名前を付けます。
+    3. **共有のキャッシュを許可** を選択したままにします。
+    4. **データ アクセスを暗号化** チェックボックスをオンにします。
+    5. **OrchestratorType** を除いて、Service Fabric cluster 内のすべてのマシンに対して **変更** 許可を与えます。
+    6. gMSA ユーザー (**contoso\\svc-AXSF$**) に対する **変更** 許可を与えます。 AOS サーバーがドメイン ユーザーの下で実行されている場合は、そのドメイン ユーザー (**contoso\\AXServiceUser**) も追加します。
+
+    > [!NOTE]
+    > コンピュータを追加するには、**オブジェクト タイプ** で **コンピューター** を有効にする場合があります。 サービス アカウントを追加するには、**オブジェクト タイプ** で **サービス アカウント** を有効にする場合があります。
+
+3. **\\\\DAX7SQLAOFILE1\\agent** ファイル共有を設定します。
+
+    1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
+    2. **タスク** \> **新しい共有** を選択し、共有を作成します。 新しい共有に **エージェント** と名前を付けます。
+    3. ローカル展開エージェント (**contoso\\svc-LocalAgent$**) の gMSA ユーザーに対して **フル コントロール** の許可を与えます。
+
+4. オプション: **\\\\DAX7SQLAOFILE1\\DiagnosticsStore** ファイル共有を設定します。
+
+    1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
+    1. **タスク** \> **新しい共有** を選択し、共有を作成します。 新しい共有に **DiagnosticsStore** と名前を付けます。
+    1. Service Fabric Cluster内のすべてのマシンに対して **変更** 許可を与えます。
+
+### <a name="step-9-configure-certificates"></a><a name="configurecert"></a>手順 9、 証明書の構成
 
 1. 最初に **インフラストラクチャ** フォルダーを展開したコンピューターに移動します。
 2. 証明書を生成します。
@@ -472,7 +522,7 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="step-9-set-up-ssis"></a><a name="setupssis"></a>手順 9、 SSIS の設定
+### <a name="step-10-set-up-ssis"></a><a name="setupssis"></a>手順 10、 SSIS の設定
 
 データ管理と SSIS ワークロードを有効にするには、各 AOS VM に SSIS をインストールする必要があります。 各 AOS VM で、次の手順に従います。
 
@@ -482,7 +532,7 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
 
 詳細については、[統合サービス (SSIS) のインストール](/sql/integration-services/install-windows/install-integration-services)を参照してください。
 
-### <a name="step-10-set-up-ssrs"></a><a name="setupssrs"></a>手順 10、 SSRS の設定
+### <a name="step-11-set-up-ssrs"></a><a name="setupssrs"></a>手順 11、 SSRS の設定
 
 複数の SSRS ノードを構成できます。 詳細については、[SSRS ノードの高可用性の構成](./onprem-SSRSHA.md)を参照してください。
 
@@ -519,7 +569,7 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
     > 
     > 代わりに、これらのスクリプトは、Service Fabric サービス (ReportingService) が必要なコンフィギュレーションを実行するために必要なアクセス許可を付与します。
 
-### <a name="step-11-set-up-vms"></a><a name="setupvms"></a>手順 11、 VMs の設定
+### <a name="step-12-set-up-vms"></a><a name="setupvms"></a>手順 12、 VMs の設定
 
 1. 次のコマンドを実行して、各 VM で実行する必要があるスクリプトをエクスポートします。
 
@@ -588,7 +638,7 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
 > [!IMPORTANT]
 > リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[手順 20、リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)セクションを参照してください。
 
-### <a name="step-12-set-up-a-standalone-service-fabric-cluster"></a><a name="setupsfcluster"></a>手順 12、 スタンドアロン Service Fabric クラスターの設定
+### <a name="step-13-set-up-a-standalone-service-fabric-cluster"></a><a name="setupsfcluster"></a>手順 13、 スタンドアロン Service Fabric クラスターの設定
 
 1. [Service Fabric スタンドアロン インストール パッケージ](https://go.microsoft.com/fwlink/?LinkId=730690) を Service Fabric ノードのいずれかにダウンロードします。
 2. zip ファイルをダウンロードした後、ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
@@ -628,13 +678,13 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
     > - クライアント コンピューターがサーバー コンピューター (たとえば、Windows Server 2019 を実行しているコンピューター) である場合は、**Service Fabric Explorer** ページにアクセスするときに Internet Explorer のセキュリティ強化の構成をオフにする必要があります。
     > - 任意のウィルス対策ソフトウェアをインストールする場合は、除外を設定してください。 [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) ドキュメントのガイダンスに従ってください。
 
-### <a name="step-13-configure-lcs-connectivity-for-the-tenant"></a><a name="configurelcs"></a>手順 13、 テナント用 LCS 接続の構成
+### <a name="step-14-configure-lcs-connectivity-for-the-tenant"></a><a name="configurelcs"></a>手順 14、 テナント用 LCS 接続の構成
 
 オンプレミスのローカル エージェントは、LCS を通じて Finance + Operations の展開とサービスを調整するために使用されます。 LCS から Finance + Operations テナントへの接続を確立するには、Azure AD テナント (たとえば、contoso.onmicrosoft.com) の代わりに動作するローカル エージェントを可能にする証明書をコンフィギュレーションする必要があります。
 
 CA から取得したオンプレミス エージェントの証明書またはスクリプトを使用して生成した自己署名証明書を使用します。 オンプレミス エージェント証明書は、テナントごとに複数のサンドボックス環境および実稼動環境で再利用できます。
 
-グローバル管理者ディレクトリの役割を持つユーザー アカウントだけが、LCS を承認するための証明書を追加できます。 既定では、組織の Microsoft 365 にサインアップする担当者がディレクトリのグローバル管理者です。
+グローバル管理者ディレクトリの役割を持つユーザー アカウントだけが、LCS を承認するための証明書を追加できます。 既定では、組織の Microsoft 365 にサインアップする担当者が、ディレクトリのグローバル管理者です。
 
 > [!IMPORTANT]
 > - テナントごとに証明書を正確に **1** 回構成する必要があります。 同じ環境のすべてのオンプレミス環境では、同じ証明書を使用して LCS に接続できます。
@@ -647,7 +697,7 @@ CA から取得したオンプレミス エージェントの証明書または�
     # If you have issues downloading the Azure PowerShell Az module, run the following:
     # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-    Install-Module Az
+    Install-Module Az -RequiredVersion 6.6.0
     Import-Module Az
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
@@ -667,78 +717,6 @@ CA から取得したオンプレミス エージェントの証明書または�
 > ```powershell
 > .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
 > ```
-
-### <a name="step-14-set-up-file-storage"></a><a name="setupfile"></a>手順 14、 ファイル ストレージの設定
-
-以下の SMB 3.0 ファイル共有を設定する必要があります。
-
-- AOS にアップロードされるユーザー ドキュメントを格納するファイル共有 (たとえば、\\\\DAX7SQLAOFILE1\\aos-storage)。
-- デプロイメントを調整するための最新のビルド ファイルと構成ファイルを保存するファイル共有 (たとえば、\\\\DAX7SQLAOFILE1\\agent)。
-
-    > [!WARNING]
-    > 共有に入れるファイルの最大パス長を超えないように、このファイル共有パスはできるだけ短くしておいてください。
-
-SMB 3.0 を有効にする方法については、[SMB セキュリティの強化](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1) を参照してください。
-
-> [!IMPORTANT]
-> - セキュリティで保護されたダイアレクト ネゴシエーションでは、SMB 2.0 または 3.0 から SMB 1.0 へのダウングレードを検出または防止できません。 したがって、SMB 1.0 サーバーを無効にすることを強くお勧めします。 これにより、SMB 暗号化のすべての機能を利用できます。
-> - 環境内の残りの部分でデータが保護されていることを保証するために、BitLocker ドライブ暗号化をすべてのコンピューターで有効にする必要があります。 BitLocker を有効にする方法については、[BitLocker: Windows Server 2012 以降で配置する方法](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) を参照してください。
-
-1. ファイル共有マシンで、次のコマンドを実行します。
-
-    ```powershell
-    Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
-    ```
-
-2. **\\\\DAX7SQLAOFILE1\\aos-storage** ファイル共有を設定します。
-
-    1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
-    2. **タスク** \> **新しい共有** を選択し、共有を作成します。 新しい共有に **aos-storage** と名前を付けます。
-    3. **共有のキャッシュを許可** を選択したままにします。
-    4. **データ アクセスを暗号化** チェックボックスをオンにします。
-    5. **OrchestratorType** を除いて、Service Fabric cluster 内のすべてのマシンに対して **変更** 許可を与えます。
-    6. AOS ドメイン ユーザー (**contoso\\AXServiceUser**) と gMSA ユーザー (**contoso\\svc-AXSF$**) に対して、**変更** 許可を与えます。
-
-    > [!NOTE]
-    > コンピュータを追加するには、**オブジェクト タイプ** で **コンピューター** を有効にする場合があります。 サービス アカウントを追加するには、**オブジェクト タイプ** で **サービス アカウント** を有効にする場合があります。
-    > 
-    > ドメイン ユーザーの代わりに gMSA アカウントが使用される最新の基本配置で配置する場合は、ファイル共有 ACL への **AOSDomainUser** アカウントの追加を省略できます。
-
-3. **\\\\DAX7SQLAOFILE1\\agent** ファイル共有を設定します。
-
-    1. サーバー マネージャーで、**ファイルと保管サービス** \> **共有** を選択します。
-    2. **タスク** \> **新しい共有** を選択し、共有を作成します。 新しい共有に **エージェント** と名前を付けます。
-    3. ローカル展開エージェント (**contoso\\svc-LocalAgent$**) の gMSA ユーザーに対して **フル コントロール** の許可を与えます。
-
-    ```powershell
-    # Specify user names
-    $AOSDomainUser = 'Contoso\AXServiceUser';
-    $LocalDeploymentAgent = 'contoso\svc-LocalAgent$';
-
-    # Specify the path
-    $AosStorageFolderPath = 'D:\aos-storage';
-    $AgentFolderPath = 'D:\agent';
-
-    # Create new directory
-    $AosStorageFolder = New-Item -type directory -path $AosStorageFolderPath;
-    $AgentFolder = New-Item -type directory -path $AgentFolderPath;
-
-    # Create new SMB share
-    New-SmbShare –Name aos-storage -Path $AosStorageFolderPath -EncryptData $True
-    New-SmbShare –Name agent -Path $AgentFolderPath
-
-    # Set ACL for AOS storage folder
-    $Acl = Get-Acl $AosStorageFolder.FullName;
-    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($AOSDomainUser,'Modify','Allow');
-    $Acl.SetAccessRule($Ar);
-    Set-Acl $AosStorageFolder.FullName $Acl;
-
-    # Set ACL for AgentFolder
-    $Acl = Get-Acl $AgentFolder.FullName;
-    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($LocalDeploymentAgent,'FullControl','Allow');
-    $Acl.SetAccessRule($Ar);
-    Set-Acl $AgentFolder.FullName $Acl;
-    ```
 
 ### <a name="step-15-set-up-sql-server"></a><a name="setupsql"></a>手順 15、 SQL Server の設定
 
@@ -816,10 +794,14 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 1. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
 1. 資産タイプとして **モデル** を選択します。 次にグリッドで、必要なリリースのデータ タイプを選択し、zip ファイルをダウンロードします。
 
-    | リリース |  データベース |
+    | リリース | データベース |
     |---------|----------|
-    | オンプレミス プラットフォーム更新プログラム 41 | Dynamics 365 for Operations オンプレミス、バージョン 10.0.17 デモ データ |
-    | オンプレミス プラットフォーム更新プログラム 41 | Dynamics 365 for Operations オンプレミス、バージョン 10.0.17 空のデータ |
+    | バージョン 10.0.21 (プラットフォーム更新プログラム 45 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.21 デモ データ |
+    | バージョン 10.0.21 (プラットフォーム更新プログラム 45 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.21 空データ |
+    | バージョン 10.0.20 (プラットフォーム更新プログラム 44 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.20 デモ データ |
+    | バージョン 10.0.20 (プラットフォーム更新プログラム 44 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.20 空データ |
+    | バージョン 10.0.17 (プラットフォーム更新プログラム 41 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.17 デモ データ |
+    | バージョン 10.0.17 (プラットフォーム更新プログラム 41 を含む) | Microsoft Dynamics 365 Finance + Operations (on-premises)、バージョン 10.0.17 空データ |
 
 1. zip ファイルには、単一のバックアップ (.bak) ファイルが含まれます。 必要に応じて、ダウンロードするファイルを選択します。
 1. zip ファイルのダウンロード後、そのファイルがブロックされていないことを確認します。 ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
@@ -915,42 +897,23 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 ### <a name="step-17-encrypt-credentials"></a><a name="encryptcred"></a>手順 17、 資格情報の暗号化
 
-1. 任意のクライアント コンピューターで、**LocalMachine\\My** 証明書ストアに暗号化証明書をインストールします。
-2. 現在のユーザーにこの証明書の秘密キーへの **読み取り** アクセスを許可します。
-3. 次のようにして、**Credentials.json** ファイルを作成します。
-
-    ```json
-    {
-        "AosPrincipal": {
-            "AccountPassword": "<encryptedDomainUserPassword>"
-        },
-        "AosSqlAuth": {
-            "SqlUser": "<encryptedSqlUser>",
-            "SqlPwd": "<encryptedSqlPassword>"
-        }
-    }
-    ```
-
-    - **AccountPassword** – AOS ドメインユーザー (**contoso\\axserviceuser**) の暗号化されたドメイン ユーザー パスワード。
-    > [!NOTE]
-    > ドメイン ユーザーの代わりに gMSA アカウントが使用される最新の基本配置で配置する場合は、**AccountPassword** フィールドを空白のままにします。 ただし、インストーラーは引き続きこのフィールドを検索するため、存在していることを確認する必要があります。 この点については、今後のアップデートで対応する予定です。
-    - **SqlUser** – Finance + Operations データベース (**AXDB**) にアクセス権限が付与されている暗号化された SQL ユーザー (**axdbadmin**)
-    - **SqlPassword** – 暗号化された SQL パスワード。
-
-4. .json ファイルを SMB ファイル共有: **\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json** にコピーします。
-5. 暗号化された値で **Credentials.json** ファイルを更新します。
+1. インフラストラクチャ フォルダーを AOS ノードにコピーします。
+2. 次のコマンドを実行して、**Credentials.json** ファイルを作成します。
 
     ```powershell
-    # Service fabric API to encrypt text and copy it to the clipboard.
-    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Create
     ```
 
-    > [!IMPORTANT]
-    > - **Invoke-ServiceFabricEncryptText** コマンドを呼び出す前に、[Microsoft Azure Service Fabric ソフトウェア開発キット (SDK)](/azure/service-fabric/service-fabric-get-started#sdk-installation-only) をインストールする必要があります。
-    > - Service Fabric SDK をインストールした後で、次のエラー メッセージが表示されます:「Invoke-ServiceFabricEncryptText は認識されないコマンドです」 この場合は、コンピュータを再起動し、もう一度やり直してください。
+    スクリプトにより、いくつかの資格情報を入力するように求められます。
 
-    > [!WARNING]
-    > すべての **ServiceFabricEncryptText** コマンドの起動が完了したら、Windows PowerShell の履歴を削除することを忘れないでください。 それ以外の場合は、暗号化されていない資格情報が表示されます。
+    - **AccountPassword** – AOS ドメインユーザー (**contoso\\axserviceuser**) の暗号化されたドメイン ユーザー パスワード。 ドメイン ユーザーの代わりに gMSA アカウントが使用される最新の基本配置を使用して配置する場合は、このプロンプトはスキップされます。 ただし、インストーラーはプレースホルダー値を検索するため、スクリプトはプレースホルダー値を作成します。 Microsoftは、将来の更新でこの問題に対処する予定です。
+    - **SqlUser** – Finance + Operations データベース (**AXDB**) にアクセス権限が付与されている暗号化された SQL ユーザー (**axdbadmin**)。
+    - **SqlPassword** – 暗号化された SQL パスワード。
+    
+    > [!NOTE]
+    > スクリプトは、Credentials.json ファイルを SMB ファイル共有 (**\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**) に自動的に配置します。
+    >
+    > スクリプトは、エンティティ格納機能に必要な資格情報を要求しますが、この要求はスキップできます。 詳細については、[オンプレミス環境との PowerBI.com の統合](../analytics/entity-store-on-prem.md) を参照してください。
 
 ### <a name="step-18-configure-ad-fs"></a><a name="configureadfs"></a>手順 18、 AD FS のコンフィギュレーション
 
@@ -970,7 +933,7 @@ Finance + Operations では、既定で標準のコンフィギュレーショ�
     > [!WARNING]
     > AD FS がシングル サインオン用 Microsoft 365 (旧 Office 365) と連携するように設定されている場合、この手順はシナリオを壊す可能性があります。
     >
-    > シナリオが引き続き機能するには、展開オプションを指定して、Dynamics 365 for Finance + Operations インストールをその要件に合わせることができます。 詳細については、[AD FS Microsoft 365 の互換性](./onprem-adfscompatibility.md) を参照してください。
+    > シナリオが引き続き機能するには、展開オプションを指定して、Dynamics 365 for Finance + Operations インストールをその要件に合わせることができます。 詳細については、[AD FS Microsoft 365 互換性](./onprem-adfscompatibility.md) を参照してください。
 
 2. 混在環境用に AD FS を構成していない限り、イントラネット認証接続用に Windows 統合認証 (WIA) を無効にする必要があります。 WIA を AD FS で使用できるように構成する方法の詳細については、[AD FS で Windows 統合認証 (WIA) を使用するようにブラウザを構成する](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia) を参照してください。
 
@@ -1034,7 +997,8 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
 
 10. コンフィギュレーションを保存してから、**コンフィギュレーションのダウンロード** を選択して **localagent-config.json** コンフィギュレーション ファイルをダウンロードします。
 11. **localagent-config.json** ファイルを、エージェント インストーラー パッケージが展開されているコンピューターにコピーします。
-12. **コマンド プロンプト** ウィンドウで、エージェント インストーラーを含むフォルダーに移動して、次のコマンドを実行します。
+12. ローカル エージェントには、環境固有の設定/要件を指定するために設定可能な追加のオプション コンフィギュレーションがあります。 追加のオプションについては、[ローカル エージェントの配置コンフィギュレーション](./onprem-localagent-options.md) を参照してください。 
+13. **コマンド プロンプト** ウィンドウで、エージェント インストーラーを含むフォルダーに移動して、次のコマンドを実行します。
 
     ```powershell
     LocalAgentCLI.exe Install <path of config.json>
@@ -1043,8 +1007,8 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
     > [!NOTE]
     > このコマンドを実行するユーザーは、OrchestratorData データベースに対して **db\_owner** のアクセス許可を持っている必要があります。
 
-13. ローカル エージェントが正常にインストールされてから、LCS のオンプレミス コネクタに戻るようにします。
-14. **3: 設定の検証** タブで、**メッセージ エージェント** を選択して、ローカル エージェントへの LCS 接続をテストします。 接続が正常に確立されると、下のメッセージが表示されます: 「検証が完了しました。 エージェントへの接続が確立されました。」
+14. ローカル エージェントが正常にインストールされてから、LCS のオンプレミス コネクタに戻るようにします。
+15. **3: 設定の検証** タブで、**メッセージ エージェント** を選択して、ローカル エージェントへの LCS 接続をテストします。 接続が正常に確立されると、下のメッセージが表示されます: 「検証が完了しました。 エージェントへの接続が確立されました。」
 
 ### <a name="step-20-tear-down-credssp-if-remoting-was-used"></a><a name="teardowncredssp"></a>手順 20、 リモート処理が使用されたら、CredSSP を終了処理する
 
@@ -1130,6 +1094,6 @@ Service Fabric Cluster のすべてのコンピューターで **新しい資格
 - [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)
 - [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、印刷](../analytics/printing-capabilities-on-premises.md)
-- [オンプレミス環境用プロキシの構成](onprem-reverseproxy.md)
-- [Finance and Operations アプリのテクニカル サポートの設定](../lifecycle-services/support-experience.md)
-- [クライアント インターネット接続](../user-interface/client-disconnected.md)
+- [オンプレミス環境でのプロキシのコンフィギュレーション](onprem-reverseproxy.md)
+- [財務と運用アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
+- [クライアントのインターネット接続](../user-interface/client-disconnected.md)

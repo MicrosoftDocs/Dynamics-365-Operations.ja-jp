@@ -1,5 +1,5 @@
 ---
-title: '[Excel で開く] エクスペリエンスの作成'
+title: Excel エクスペリエンスで開くに関する FAQ
 description: Excel と Word を Office エクスペリエンスで開く機能について学んで作成します。
 author: jasongre
 ms.date: 11/17/2020
@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6ec1753316ffe4322f2e2c5cb4cd15b3bd98865
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 23d552afe8cb6ce2a6f2c7e42167e1940aca1e1e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361306"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069366"
 ---
-# <a name="create-open-in-excel-experiences"></a>[Excel で開く] エクスペリエンスの作成
+# <a name="open-in-excel-experiences-faq"></a>Excel エクスペリエンスで開くに関する FAQ
 
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Excel と Word を Office エクスペリエンスで開く機能について学んで作成します。
 

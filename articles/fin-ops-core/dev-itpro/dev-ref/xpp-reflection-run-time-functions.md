@@ -3,20 +3,18 @@ title: X++ リフレクション ランタイム関数
 description: このトピックでは、リフレクション ランタイム関数について説明します。
 author: RobinARH
 ms.date: 06/20/2017
-ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 31381
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62040659145062b07808a4332773ab0ed1bcf63c
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 554eda70876dc20f7ba082b7896e8271f3658b49
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188424"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783188"
 ---
 # <a name="x-reflection-runtime-functions"></a>X++ リフレクション ランタイム関数
 

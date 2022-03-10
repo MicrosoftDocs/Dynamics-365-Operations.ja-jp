@@ -8,20 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DataValidationWorkspace
 audience: Application User
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: a8c57cc2c8e6e16e3eeb37dd360e2f7730668fa13f4f9c2af2da42a3ef26394e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fef3130f06cbb1d8afdbae93bdc55b47be3480b3
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773757"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070830"
 ---
 # <a name="data-validation-checklist-workspace"></a>データ検証チェックリスト ワークスペース
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 このトピックでは、**データ検証チェックリスト ワークスペース** と関連するコンフィギュレーションの概要を示します。
 

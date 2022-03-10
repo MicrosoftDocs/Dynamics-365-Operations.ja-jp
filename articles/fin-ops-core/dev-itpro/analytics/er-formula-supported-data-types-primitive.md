@@ -3,24 +3,19 @@ title: 電子レポート形式でサポートされるプリミティブ デー
 description: このトピックでは、電子申告 (ER) の式でサポートされるプリミティブ データ型について説明します。
 author: NickSelin
 ms.date: 06/02/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 96fdf33f4cc5f22015c00c57858bd438e6465764
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355325"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323643"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>電子レポート形式でサポートされるプリミティブ データ型
 
@@ -106,7 +101,7 @@ Datetimes は、次の関数を使用して開始できます。
 
 ## <a name="enumeration"></a><a name="enumeration"></a>列挙型
 
-*列挙* のプリミティブ データ型は、リテラルのリストです。 アプリケーションの [ソース コード](../dev-ref/xpp-data-primitive.md#enum) で定義されている列挙体を使用できます。 ER [データ モデル ](general-electronic-reporting.md#data-model-and-model-mapping-components)コンポーネントとER [形式](general-electronic-reporting.md#FormatComponentOutbound) コンポーネントで独自の列挙を導入することもできます。
+*列挙* のプリミティブ データ型は、リテラルのリストです。 アプリケーションの [ソース コード](../dev-ref/xpp-data-primitive.md#enum) で定義されている列挙体を使用できます。 ER データ モデル コンポーネントとER 形式 コンポーネントで独自の列挙を導入することもできます。
 
 アプリケーション *列挙* は、ER モデル マッピングと ER 形式の式で使用できます。
 

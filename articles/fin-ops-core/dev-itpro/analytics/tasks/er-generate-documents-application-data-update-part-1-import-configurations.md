@@ -2,7 +2,6 @@
 title: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのインポート
 description: この手順に記載のステップを完了するには、まず 「ER 構成プロバイダを作成し、アクティブとしてマークする」 に記載の手順を完了する必要があります。
 author: NickSelin
-manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a809b9867b4ca96fb53f1849f57ef470253d9d17
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727488"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのインポート
 

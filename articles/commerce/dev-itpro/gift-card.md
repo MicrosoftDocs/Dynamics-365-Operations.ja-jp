@@ -1,14 +1,14 @@
 ---
 title: 外部ギフト カードのサポート
 description: このトピックでは、Microsoft Dynamics 365 Commerce で現在利用できる外部ギフト カードのサポートについて説明します。
-author: rubencdelgado
+author: BrianShook
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.devlang: ''
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: ivanv
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 8bad7634cf401d1345f0b03a0787aa228d82342a
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 232197ee248471bb561b13e68ac3d7ca0118e082
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016069"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781134"
 ---
 # <a name="support-for-external-gift-cards"></a>外部ギフト カードのサポート
 
@@ -87,7 +87,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 
 9. **転記** クイック タブで、**ギフト カード品目番号** フィールドを **0010** に設定します。
 
-    ![ギフト カード品目の番号フィールドの設定](./media/05_02.png)
+    ![ギフト カード品目番号フィールドの設定。](./media/05_02.png)
 
 10. **保存** を選択します。
 11. **カード設定** を選択し、**新規** を選択して、ギフト カードの支払方法をサンフランシスコ店舗の新規作成された外部ギフト カード支払方法にマップします。
@@ -101,7 +101,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 4. **EFT サービス** クイック タブの、**コネクタ** グリッドで、最初の入力 **TestConnector** を選択します。
 5. **サポートされる支払/入金タイプ** フィールドに、**GiftCard** を追加します。
 
-    ![サポートされている支払/入金タイプのリストへの GiftCard の追加](./media/01.png)
+    ![サポートされている支払/入金タイプのリストへの GiftCard の追加。](./media/01.png)
 
 6. **保存** を選択します。
 
@@ -115,7 +115,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 3. アクション ウィンドウで、**デザイナー** を選択しボタン デザイナー アプリケーションをダウンロードします。
 4. グリッド デザイナーが表示されたら、空の (灰色) 領域を右クリックして、**新規作成ボタン** を選択します。
 
-    ![新しいボタン](./media/07.png)
+    ![新しいボタン。](./media/07.png)
 
 5. 新しいボタンを右クリックし、**ボタン プロパティ** を選択します。
 6. 次のマトリックスに従って **アクション**、**支払タイプ**、および **ボタンのテキスト** プロパティを設定します。
@@ -129,7 +129,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 
     完了したら、ボタンのレイアウトは次の図のようになります。
 
-    ![完了したボタン レイアウト](./media/10.png)
+    ![完了したボタン レイアウト。](./media/10.png)
 
 7. デザイナーを閉じます。
 8. **配送スケジュール** を検索します。
@@ -251,7 +251,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 
 ## <a name="online-store-payments-setup"></a>オンライン ストア支払いの設定
 
-外部のギフト カードの処理に Adyen を使用するようオンライン ストアの支払口座をコンフィギュレーションするには、Adyen コネクタ用ドキュメントの [eコマース設定セクション](adyen-connector.md?tabs=8-1-3#e-commerce)を参照してください。 
+外部のギフト カードの処理に Adyen を使用するようオンライン ストアの支払口座をコンフィギュレーションするには、[Adyen コネクタのコンフィギュレーションの追加情報](adyen-connector-setup.md#configure-additional-information-for-the-connector)を参照してください。 
 
 
 #### <a name="test-connector-external-gift-card-setup"></a>テスト コネクタの外部ギフト カードの設定
@@ -278,13 +278,13 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 14. **製品バリアント** を選択し、**バリアント修正候補** を選択してから、必要に応じてギフト カード バリアント番号を編集します。
 15. **作成** を選択します。
 
-    ![外部ギフト カードの製品バリアント](media/VariantSuggestions.png)
+    ![外部ギフト カードの製品バリアント。](media/VariantSuggestions.png)
 
 16. **リリース製品** を選択し、**次へ** を 2 回選択し、会社 (たとえば、**USRT**) を選択してから、**次へ** を選択します。 最後に **次へ** を選択して、製品マスターをリリースします。
 17. **荷渡方法** を検索して、**荷渡方法** ページを開きます。
 18. **電子** 荷渡方法を選択してから、**電子メール** ギフト カード バリアントを追加します。 該当するコール センターおよびオンライン チャネルが含まれていることを確認してください。
 
-    ![電子的方法による納品](media/EmailMoD.png)
+    ![電子的方法による納品。](media/EmailMoD.png)
 
 19. **保存** を選択します。
 20. **配送モードの処理** を検索して、**配送モードの処理** ダイアログ ボックスを開きます。
@@ -378,7 +378,7 @@ Microsoft Dynamics 365 Commerce では、*内部* および *外部* ギフト �
 3. 外部ギフト カードの支払方法を選択し、該当する場合は番号と PIN を入力します。 テスト コネクタの場合、**61234** を番号として使用でき、PIN は検証されません。
 4. 割合または支払金額を使用して、支払金額を定義します。
 
-    ![コール センターでの外部ギフト カードの支払](media/PayinCallCenter.png)
+    ![コール センターでの外部ギフト カードの支払。](media/PayinCallCenter.png)
 
 5. **OK** を選択します。
 6. **送信** を選択して、注文を完了します。

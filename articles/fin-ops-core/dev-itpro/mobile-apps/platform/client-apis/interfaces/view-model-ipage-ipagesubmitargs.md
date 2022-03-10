@@ -1,25 +1,18 @@
 ---
 title: PageSubmitArgs タイプ
 description: ページの OnSubmit イベントに指定された引数。
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 51d241efe64fc911268f96804989777f89326305
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.author: tfehr
+ms.openlocfilehash: d556304d5c66a2f8f68a80e501a38c048b7693c7
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679930"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783170"
 ---
 # <a name="pagesubmitargs-type"></a>PageSubmitArgs タイプ
 
@@ -129,3 +122,6 @@ wait(promise: Promise &lt;any&gt;): any
 
 #### <a name="returns-any"></a>any を返します
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

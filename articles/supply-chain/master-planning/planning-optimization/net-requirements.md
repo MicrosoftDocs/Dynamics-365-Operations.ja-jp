@@ -1,7 +1,7 @@
 ---
 title: 計画最適化を使用した正味必要量およびペギング情報
 description: このトピックでは、計画最適化で計算された正味必要量とペギング情報に関する情報を提供します。
-author: crytt
+author: ChristianRytt
 ms.date: 7/28/2021
 ms.topic: article
 ms.search.form: ReqTransOverview
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a25eb9e6efc85d2c26e46b925135b3c7c69b1c26173267a2ce3f001f35fd0bab
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 5dbe4633ef061a054388e1b6aa6300e1c835c36a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7012188"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569772"
 ---
 # <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>計画最適化を使用した正味必要量およびペギング情報
 

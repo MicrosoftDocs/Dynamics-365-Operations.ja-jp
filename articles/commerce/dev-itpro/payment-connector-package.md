@@ -1,40 +1,38 @@
 ---
-title: セルフサービス配置でのアプリケーション エクスプローラー用支払パッケージの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce でセルフサービス配置用にアプリケーション エクスプローラーの支払コネクタをパッケージ化する方法について説明します。
+title: Finance and Operations 配置用コマース支払パッケージの作成
+description: このトピックでは、Microsoft Dynamics 365 Commerce の Finance and Operations 配置用に支払コネクタをパッケージ化する方法について説明します。
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: b75d3836e13d2c9e161457636d49b984e69a90d6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 74f8599b1ec1133ceac4b866fa92b76c7d1e06b5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681558"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781815"
 ---
-# <a name="create-payment-packaging-for-application-explorer-for-self-service-deployment"></a>セルフサービス配置でのアプリケーション エクスプローラー用支払パッケージの作成
+# <a name="create-commerce-payment-packaging-for-finance-and-operations-deployment"></a>Finance and Operations のデプロイのための Commerce 支払パッケージの作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce でセルフサービス配置用にアプリケーション エクスプローラーの支払コネクタをパッケージ化する方法について説明します。
+このトピックでは、Microsoft Dynamics 365 Commerce の Finance and Operations 配置用に支払コネクタをパッケージ化する方法について説明します。
 
 10.0.10 より前のリリースでは、コマース ソフトウェア開発キット (SDK) を使用して支払コネクタ パッケージを作成します。 (以前は Commerce SDK は Retail SDK と呼ばれていました。) 10.0.10 リリース以降では、Visual Studio のみを使用して Application Object Server (AOS) 支払コネクタ パッケージを作成できます。 この方法を使用して作成したパッケージは、[オールイン ワンパッケージ](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md) を使用して、以前の展開とセルフサービス配置の両方に展開できます。
 
 > [!NOTE]
 > 10.0.10 以前のリリースでは、単一の支払パッケージを作成し、それをアプリケーション エクスプローラーとコマース チャネルおよびクラウド コンポーネント (Commerce Scale Unit) の両方に使用できます。 10.0.10 リリースでは、2 つのパッケージを作成する必要があります。 1 つのパッケージはアプリケーション エクスプローラー用で、Dynamics 365 パッケージング モデルを使用して作成します。 もう 1 つのパッケージは、コマース チャネルとクラウド コンポーネント用で、コマース SDK を使用して作成します。 コマース SDK を使用してアプリケーション エクスプローラー支払パッケージを作成した以前の方法は、10.0.10 リリースの時点で廃止 (非推奨) となります。
 
-セルフ サービスで配置できる支払パッケージを作成するには、次のセクションの手順に従います。
+配置できる支払パッケージを作成するには、次のセクションの手順に従います。
 
 > [!NOTE]
 > コマース チャネルとクラウド コンポーネント用パッケージを作成するため、コマース SDK を使用する手順は変更されていません。 詳細については、「[コネクタの作成と配置](deploy-payment-connector.md)」を参照してください。
@@ -46,7 +44,7 @@ ms.locfileid: "4681558"
 
     モデル名には、**RetailPaymentConnectors** の接頭語を付ける必要があります。 この接頭語の後に、カスタム モデル名に関する情報を追加します。 たとえば、作成するモデルには **RetailPaymentConnectorsCustomConnector** という名前が付けられます。 **RetailPaymentConnectors** の接頭語で始まるモデル名のみが、コマース支払コネクタ オプションに読み込まれます。
 
-    ![モデルの作成ウィザードでのパラメーター ページの追加](./media/CreateModel.png)
+    ![モデルの作成ウィザードにパラメーター ページを追加します。](./media/CreateModel.png)
 
 3. **新しいパッケージの作成** オプションを選択し、**次へ** を選択します。
 4. 必要な参照パッケージを選択し、**次へ** を選択します。
@@ -54,27 +52,32 @@ ms.locfileid: "4681558"
 6. ソリューション エクスプローラーで、プロジェクトを選択し、**参照** を右クリックしてから、**参照の追加** を選択します。
 7. すべての支払コネクタ アセンブリとその依存関係を、プロジェクトに参照として追加します。
 
-    ![参照ダイアログ ボックスの追加](./media/Reference.png)
+    ![参照ダイアログ ボックスを追加します。](./media/Reference.png)
+    
+[!NOTE]
+> すべての支払いコネクタ dll は移動可能である必要があります。移動可能および移動不可の支払いコネクタ dll があると、コネクタの読み取り時に問題が発生します。
 
 8. 拡張機能を実装するのに HTML と CSS ファイルが必要な場合 、それらをリソース ファイルとしてプロジェクトに追加します。 配置中は、HTML ファイルが AosService\WebRoot\Resources\Html フォルダーにコピーされます。 CSS ファイルは AosService\WebRoot\Resources\Styles フォルダーにコピーされ、次の URL 形式を使用してアクセスすることができます。
+
+例: GetPaymentAcceptPoint の実装は、必要に応じてこの URL を返す更新する必要があります。
 
 ```
 https://AOSUrl/resources/html/Myhtml.html
 https://AOSUrl/resources/styles/Mycss.css
 ```
 > [!NOTE]
-> リソースとしてプロジェクトに追加された HTML および CSS ファイルは AosService\WebRoot\, にコピーされ、リソースとして追加された他のファイル形式は AosService\WebRoot\. にコピーされません。 AosService\WebRoot\ フォルダーにファイルが必要な場合は、HTML ファイル形式に移行する必要があります。
+> リソースとしてプロジェクトに追加された HTML および CSS ファイルは AosService\WebRoot\, にコピーされ、リソースとして追加された他のファイル形式は AosService\WebRoot\. にコピーされません。 AosService\WebRoot\ フォルダーのファイルが必要な場合、HTML ファイル形式に移行するか、またはサポートされていないファイル形式を外部でホストします。 外部でホストされている場合、カスタマイズまたはパートナーがホスティングを管理する必要があります。
 
 9. 支払コネクタに関連付けられているその他の支払 X++ 拡張機能がない場合、ソリューションをビルドします。
 
 > [!NOTE]
-> 他の拡張機能パッケージが存在しない場合は、次の手順に進みます。 追加の拡張機能パッケージがある場合は、すべてを 1 つの配置可能なパッケージに結合させます。 これを行わないと、このパッケージは他のパッケージを上書きします。 詳細については、「[オールインワン配置可能パッケージ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages)」を参照してください。
+> 他の拡張機能パッケージが存在しない場合は、次の手順に進みます。 追加の拡張機能パッケージがある場合は、すべてを 1 つの配置可能なパッケージに結合させます。 これを行わないと、このパッケージは他のパッケージを上書きします。 詳細については、「[オールインワン配置可能パッケージ](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md)」を参照してください。
 
 10. 配備可能なパッケージを作成するには、**Dynamics 365** メニューで、**配置 \> 配置パッケージの作成** を選択します。
 11. 以前に作成したモデルを選択し、パッケージ ファイルの場所を指定してから、**作成** を選択します。
 
 
-    ![配置パッケージ ダイアログ ボックスの作成](./media/Create.png)
+    ![配置パッケージ ダイアログ ボックスを作成します。](./media/Create.png)
 
     Visual Studio はモデルをビルドし、配置可能なパッケージを作成します。
 
@@ -88,3 +91,6 @@ https://AOSUrl/resources/styles/Mycss.css
 ## <a name="remove-a-deployable-package"></a>配置可能パッケージの削除
 
 環境から配置可能パッケージをアンインストールまたは削除する方法についての詳細は、[パッケージのアンインストール](../../fin-ops-core/dev-itpro/deployment/uninstall-deployable-package.md) を参照してください。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

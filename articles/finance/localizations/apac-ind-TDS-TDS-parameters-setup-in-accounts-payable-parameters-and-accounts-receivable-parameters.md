@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 4540cdfff2362d8fb7cc2b4cccf9c340be9750ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2205ddc1b651ff851a4285b1ded17106600e6058c719fecf0b447ac8c87d43cb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023388"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755619"
 ---
 # <a name="set-tds-parameters-in-accounts-payable-and-accounts-receivable"></a>買掛金勘定および売掛金勘定の TDS パラメータの設定
 
@@ -38,12 +38,12 @@ ms.locfileid: "6023388"
     - **プロンプト** – ユーザーは、注文明細行の TDS グループを更新するように求めるメッセージを受信します。
 4. **OK** を選択します。
 
-    [![注文明細行の更新ダイアログ ボックス](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
+    [![注文明細行のダイアログ ボックスを更新します。](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
 
 5. **税 \> 設定 \> パラメーター \> 買掛金勘定パラメーター** に移動します。
 6. **全般** タブの **配送情報に基づく分割** クイック タブで、**製品受領書** オプションを **はい** に設定して、異なる配送先住所および税勘定番号 (TAN) を持つ製品受領書を転記および分割します。 このオプションが **いいえ** に設定されている場合は、配送先住所と TAN が異なる購買梱包明細を転記できません。
 7. **請求書** オプションを **はい** に設定し、異なる配送先住所と TAN を含む仕入請求書を転記および分割します。
 
-    [![配送情報に基づく分割クイック タブ](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
+    [![配送情報クイック タブに基づいて分割します。](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
 
 8. ページを閉じます。

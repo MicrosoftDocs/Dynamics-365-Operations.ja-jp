@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: b540697fab7c6bda5cc09a90e1144396c033df5c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f4aca8e202911897f1272d409ff1da0a54ba18a4a4f95337df87c9ee8af3e772
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765084"
 ---
 # <a name="troubleshoot-environments-deployed-through-self-service-deployment"></a>セルフサービス配置で配置された環境のトラブルシューティング
 
@@ -35,7 +35,7 @@ ms.locfileid: "5750370"
 
 環境監視ダッシュボードに、**概要** および **活動** の 2 つのタブが表示されます。
 
-[![問題を解決する](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
+[![問題を解決します。](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
 
 ## <a name="overview-tab"></a>[概要] タブ
 

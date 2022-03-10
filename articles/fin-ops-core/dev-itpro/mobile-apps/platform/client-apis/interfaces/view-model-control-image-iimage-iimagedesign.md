@@ -1,18 +1,18 @@
 ---
 title: ImageDesign タイプ
 description: イメージ デザイン オブジェクトの種類。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.openlocfilehash: b8c973def0129fa34a4e729c52b79b7fe6249ced3c30c7cbf286dcee06c37374
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.author: tfehr
+ms.openlocfilehash: f94048bdfda7c196918e1e1d40bf75ddf3b54288
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766359"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782875"
 ---
 # <a name="imagedesign-type"></a>ImageDesign タイプ
 

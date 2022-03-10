@@ -2,11 +2,9 @@
 title: 電子申告 (ER) フレームワークの構成
 description: このトピックでは、電子レポート (ER) フレームワークのパラメーターを構成する方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFormatDestinationTable
 audience: Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7dd4e7208bebc05ce49bc00b8d9980d0c92c9a31
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: aa341711549e123c57acd8f2a4f465614e67b9c1d0351e8e6c254ddcc4056b51
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687144"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760112"
 ---
 # <a name="configure-the-electronic-reporting-er-framework"></a>電子申告 (ER) フレームワークの構成
 
@@ -60,14 +58,14 @@ ER を設定する前に、ドキュメント管理で必要な [ドキュメン
 - **デザイン モードを有効にする**
 
     - このオプションを **はい** に設定すると、埋め込み ER デザイナーが有効になり、ユーザーが独自の ER コンフィギュレーションを作成できるようになります。
-    - ユーザーが [コンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) にサインアップして ER デザイナーの機能にアクセスすることを要求するには、このオプションを **いいえ** に設定します。
+    - ユーザーが [コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) にサインアップして ER デザイナーの機能にアクセスすることを要求するには、このオプションを **いいえ** に設定します。
 
 - **データ処理の ER パフォーマンスの追跡を無効にします**
 
     - このオプションを **いいえ** に設定すると、Microsoft Telemetry は単一の着信または送信レコードを ER コンフィギュレーションとして処理するために必要な平均時間に関する情報を収集できます。 この情報は、環境の特定の正常性指標として追跡され、Microsoft が ER フレームワークを使用するお客様に影響する問題をすばやく特定して対処するのに役立ちます。
     - テレメトリ情報の収集を停止するには、このオプションを **はい** に設定します。
 
-[![電子申告パラメーター ページの一般タブ](./media/er-configure-parameters-main.png)](./media/er-configure-parameters-main.png)
+[![電子申告パラメーター ページの一般タブ。](./media/er-configure-parameters-main.png)](./media/er-configure-parameters-main.png)
 
 ## <a name=""></a><a name="ManageDocumentsParameters">ドキュメントを管理するためのパラメーター</a>
 
@@ -85,19 +83,19 @@ ER を設定する前に、ドキュメント管理で必要な [ドキュメン
 
     詳細については、[ER テンプレートのバックアップストレージ](er-backup-storage-templates.md) を参照してください。
 
-[![電子申告パラメーター ページの添付ファイル タブ](./media/er-configure-parameters-documents.png)](./media/er-configure-parameters-documents.png)
+[![電子申告パラメーター ページの添付ファイル タブ。](./media/er-configure-parameters-documents.png)](./media/er-configure-parameters-documents.png)
 
 ## <a name="lcs-parameters"></a>LCS パラメーター
 
 **電子申告のパラメーター** ページの **LCS** タブで、Microsoft Dynamics Lifecycle Services (LCS) のリポジトリから ER コンフィギュレーションの読み込みに使用する必要がある並列スレッドの数を定義し、最も効率的な方法でコンフィギュレーションが読み込まれます。 値の範囲は、現在のプログラムで使用可能なリソースに応じて、**1** から **15** です。 この設定とその他のタスクの数とその優先順位に基づいて、スレッドの実際の数が自動的に定義されます。
 
-[![電子申告パラメーター ページの LCS タブ](./media/er-configure-parameters-lcs.png)](./media/er-configure-parameters-lcs.png)
+[![電子申告パラメーター ページの LCS タブ。](./media/er-configure-parameters-lcs.png)](./media/er-configure-parameters-lcs.png)
 
 ## <a name="rcs-parameters"></a>RCS パラメーター
 
-**電子申告のパラメーター** ページの **RCS** タブで、[コンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) にサインアップします。
+**電子申告のパラメーター** ページの **RCS** タブで、[コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) にサインアップします。
 
-[![電子申告パラメーター ページの RCS タブ](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
+[![電子申告パラメーター ページの RCS タブ。](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
 
 ## <a name="active-er-configurations-provider"></a>アクティブな ER コンフィギュレーション プロバイダー
 
@@ -130,4 +128,7 @@ ER を設定する前に、ドキュメント管理で必要な [ドキュメン
 
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
 - [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
-- [Regulatory Services のコンフィギュレーション サービス](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
+- [Regulatory Services のコンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

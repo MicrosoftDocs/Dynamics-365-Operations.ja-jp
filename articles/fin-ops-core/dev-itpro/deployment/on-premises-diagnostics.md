@@ -2,26 +2,24 @@
 title: オンプレミス診断
 description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) 配置の診断データを公開するための情報を提供します。
 author: PeterRFriis
-manager: AnnBe
-ms.date: 09/18/2019
+ms.date: 04/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 60373
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-ms.openlocfilehash: ee21526058eb72ef6fd32a7fc29070704a1a2d7f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f989e1bb36c288fc3d52aeed20143f2f56ebe77e5f02a82cdd542ddc71973f59
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685465"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713354"
 ---
 # <a name="on-premises-diagnostics"></a>オンプレミス診断
 
@@ -144,7 +142,7 @@ Logstash が起動時に実行されることを確認するために、Non-Suck
 
 Microsoft が実行したテストでは、NSSM には、インストールされたサービスの再起動に問題がありました。 Logstash と Kibana に対し NSSM は 100% の信頼性がなかったため、サービスは OS 起動サービスとして扱われました。
 
-Microsoft は、Logstash に対し構成ファイルを作成し、[C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises) にプットします。このファイルは診断で、便利な変換を実行します。
+Microsoft は、logstash-dyn365finops.conf という Logstash の構成ファイルを作成しました。 このファイルは、LCS 共有アセット ライブラリの「LBD 診断構成」と呼ばれる zip ファイルのモデル アセット タイプで使用できます。 [LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary) に移動して、このファイルをダウンロードします。 抽出した後 C:\\ELK\\Logstash\\6.2.4\\config に配置する必要があります。このファイルは、診断で有用な変換を実行します。
 
 設定のためコンフィギュレーションを行うには、クラスターの Elasticsearch ノードを指すように、**出力** セクションの **ホスト** フィールドを変更する必要があります。 たとえば、**ホスト** を **\["ORCH1:9200", "ORCH2:9200"\]** に変更します。
 
@@ -153,7 +151,7 @@ Microsoft は、Logstash に対し構成ファイルを作成し、[C:\\ELK\\Log
 ビートが Logstash にデータを送信できるように、Logstash をホストしているコンピューターのファイアウォールで、Winlogbeat ポート (既定では、ポート 5044) を開くことを忘れないでください。
 
 ### <a name="winlogbeat"></a>Winlogbeat
-Microsoft は Winlogbeat を C:\\ELK\\Winlogbeat の 各 Application Object Server (AOS) およびオーケストレータ ノードにダウンロードし、[winlogbeat.yml file](https://aka.ms/ConfigFilesOnPremises) を構成しました。
+Microsoft は Winlogbeat を C:\\ELK\\Winlogbeat の 各 Application Object Server (AOS) およびオーケストレータ ノードにダウンロードし、winlogbeat.yml file を構成しました。 Winlogbeat のサンプル構成ファイルは、LCS 共有アセット ライブラリの「LBD 診断構成」と呼ばれる zip ファイルのモデル アセット タイプで使用できます。 [LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary) に移動して、このファイルをダウンロードします。 
 
 設定のためコンフィギュレーションを行うには、すべての Logstash ノードを指すように **output.logstash.hosts** フィールドを変更する必要があります。 Winlogbeat は、負荷分散を処理します。
 
@@ -180,7 +178,7 @@ Kibana から、Microsoft は **管理** タブでインデックス パター�
 
 Microsoft は、既定のパターンとしてランタイム -\* インデックス パターンを設定しました。 **管理** タブのインデックス パターンを確認するときは、アスタリスク (\*) をクリックします。 インデックス パターンが、**Discover** タブに表示されます。
 
-[![ランタイム インデックス パターン](./media/runtime-index-patter.png)](./media/runtime-index-patter.png)
+[![ランタイム インデックス パターン。](./media/runtime-index-patter.png)](./media/runtime-index-patter.png)
 
 Microsoft は Kibana を Logstash と同じ方法でサービスとして実行し、Kibana が OS の起動時に起動されるようにしました。 Logstash とは異なり、kibana.bat は、コンフィギュレーション ファイルのパスは必要ありません。 したがって、C:\\ELK\\Kibana\\6.2.4\\bin\\kibana.bat を参照する NSSM サービスをインストールできます。
 
@@ -192,19 +190,19 @@ Microsoft は Kibana を Logstash と同じ方法でサービスとして実行�
 - **低速データベース クエリの検索:** 検索フィールドに **低速** と入力して、イベント データのどこかに「低速」という単語が含まれているイベントを検索します。 より正確にするには、**AosDatabaseSlowQuery** のタスク名を持つイベントを検索し、検索フィールドに **TaskName:AosDatabaseSlowQuery** と入力します。
 - **最新の例外を見つける:** **例外** を検索フィールドに入力して、例外をスローしたイベント、または例外を処理してログに記録したイベントを探します。 Kibana の右上隅で、検索を制限する必要がある期間を選択します。 そこで設定したタイム フレームは、タブの間で保持されます。 したがって、**視覚化** タブ上のデータは選択されているタイム フレームに反映されます。
 
-    [![検索の時間枠](./media/time-visualize.png)](./media/time-visualize.png) 
+    [![検索の時間枠。](./media/time-visualize.png)](./media/time-visualize.png) 
 
 - **AOS ノードからイベントを検索:** ノードからすべてのイベントを検索するために、検索フィールドに **host:AOS1** と入力します。
 - **他のイベントと最も近い、特定のイベントを見つける:** 興味のあるイベントが見つかったら、そのイベントのヘッダーの横にある **関連するドキュメントを表示します** をクリックして、同時に発生したイベントを見つけます。 同時に発生した、異なる Application Object Server (AOS) ノードからのイベントが表示されている場合、追加のフィルターを追加して、必要なノードからのイベントのみを表示できます。
 
-    [![関連するドキュメントを表示します](./media/events-with-proximity.PNG)](./media/events-with-proximity.PNG)
+    [![関連するドキュメントを表示します。](./media/events-with-proximity.PNG)](./media/events-with-proximity.PNG)
 
 #### <a name="thirty-day-data-retention"></a>30 日間のデータの保持
 古いデータからハード ディスクを保持するために、Microsoft は Curator v5.5 を使用して 30 日以上経過したインデックスをクリーンアップしました。
 
-Microsoft はキュレーターを C:\\ELK\\Curator でオーケストレータ ノードのいずれかにダウンロードします。 Microsoft は、[C:\\ELK\\Curator](https://aka.ms/ConfigFilesOnPremises) に配置された構成ファイルを使用して、キュレーターを Elasticsearch クラスターに接続しました。
+Microsoft はキュレーターを C:\\ELK\\Curator でオーケストレータ ノードのいずれかにダウンロードします。 [zip ファイル「LBD診断構成」のモデル アセット タイプのLCS 共有アセットライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary) で使用可能なサンプル構成ファイル curator.yml は、 次に、C:\\ELK\\Curator に配置して、キュレーター を Elasticsearch クラスターに接続します。 特定のサーバーを参照するにはファイルを編集する必要があります。 
 
-キュレーターはアクションを実行し、Microsoft は [C:\\ELK\\Curator](https://aka.ms/ConfigFilesOnPremises) 内に配置された 30 日前のインデックスをクリーンアップするアクションを作成しました。
+キュレーターはアクションを実行し、Microsoft は「30day_data_retention_actions.yml」というアクション構成ファイルを作成して、C:\\ELK\\Curator 内の 30 日経過したインデックスをクリーンアップします。 留保構成ファイルは、LCS 共有アセット ライブラリの「LBD 診断構成」と呼ばれる zip ファイルのモデル アセット タイプで使用できます。 [LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary) に移動して、このファイルをダウンロードします。
 
 Microsoft は、Windows タスク スケジューラの基本的なタスクを作成します。 このタスクは、土曜日と日曜日に毎週トリガーを持ち、トリガーにはプログラムを開始するための次の設定があります。
 
@@ -247,3 +245,6 @@ Kibana では、**検出** タブで、クエリを作成し、保存します�
 ## <a name="troubleshooting"></a>トラブルシューティング
 ### <a name="you-dont-receive-any-data-in-kibana"></a>Kibana 内のデータを受信しません
 Kibana で、何もデータを受け取っていない場合、Winlogbeat から Logstash、Elasticsearch、および Kibana のログを確認してください。 Winlogbeat のインストールでは、C:\\ProgramData\\winlogbeat\\Logs にログが記録されますが、他の Elastic スタック コンポーネントはログをインストール パスに近づけることに注意してください (例: C:\\ELK\\Elasticsearch\\logs)。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

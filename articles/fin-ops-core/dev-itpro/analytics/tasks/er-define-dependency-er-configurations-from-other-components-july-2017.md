@@ -2,11 +2,9 @@
 title: 他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
 description: このトピックでは、電子レポート (ER) コンフィギュレーションを設計し、他のソフトウェア コンポーネントからその依存関係を指定する方法について説明します。
 author: NickSelin
-manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 07/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd9516ac68c46649ebc50711357b97179bfc1b2c
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717597"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>他のコンポーネントに対する電子申告コンフィギュレーションの依存関係を定義する
 
@@ -139,3 +137,9 @@ ms.locfileid: "5092153"
 26. ツリーで、「サンプル データ モデル」を展開します。
     * モデル 「サンプル マッピング」 マッピングの構成が、選択されたデータ モデルの構成と共にダウンロードされたことに留意してください。 「サンプル マッピング」 は、は選択したデータモデルを実装するものとして定義されており、アプリケーションに適用できるため、これらのファイルは同時にダウンロードされます。 「サンプル マッピング (代替)」の構成は、必要なアプリケーション バージョンの条件が満たされていないためダウンロードされません。   
     * Finance and Operations にサインインし、同じプロバイダを登録し、同じ LCS プロジェクトにアクセスし、同じデータモデル設定をダウンロードした場合、「サンプル マッピング（代替）」設定はダウンロードされますが、「サンプル マッピング」設定はスキップされます。  
+
+## <a name="additional-resources"></a>追加リソース
+
+[電子申告 (ER) コンフィギュレーション ライフサイクルの管理](../general-electronic-reporting-manage-configuration-lifecycle.md)
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

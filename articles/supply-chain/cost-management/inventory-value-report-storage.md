@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 7978c7b326ef1b62f76711ac187c28539eb1f449
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798324"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103943"
 ---
 # <a name="inventory-value-reports"></a>在庫金額レポート
 
@@ -53,12 +53,9 @@ ms.locfileid: "7798324"
 > [!NOTE]
 > **在庫金額レポート ストレージ** レポートには、レポート レイアウトで定義されている小計は含まれません。 一般会計残高は、レポート レイアウトで残高が定義されている場合でも、含まれません。 一般会計への調整は、試算表を使用して行う必要があります。 ただし、標準 **在庫金額** レポートには、これらの小計および残高が含まれます。
 
-## <a name="turn-on-the-inventory-value-report-storage-feature"></a>在庫評価額レポート ストレージ機能を有効にする
+## <a name="turn-the-inventory-value-report-storage-feature-on-or-off"></a>在庫評価額レポートのストレージ機能をオン/オフにする
 
-標準 **在庫金額** レポートは、既定により有効です。 ただし、高度な **在庫評価額レポート ストレージ** レポートを生成する場合、システムでこの機能を有効にしておく必要があります。 管理者は、[機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
-
-- **モジュール:** *Cost Management*
-- **機能名称:** *在庫金額レポート ストレージ*
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *棚卸価値レポートの保管* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="define-inventory-value-report-configurations"></a><a name="report-configuration"></a>在庫金額レポートのコンフィギュレーションの定義
 

@@ -1,7 +1,7 @@
 ---
 title: セキュリティとデータ エンティティ
 description: このトピックでは、データ エンティティのセキュリティについて説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,22 @@ ms.reviewer: sericks
 ms.custom: 17852
 ms.assetid: a9ede141-56fa-4310-997d-aeef184f7a52
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcf99995d9334be1820444979431ea1924663115
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3eeab83eaaa487cf036bb7d2f7d67ef388e63b9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749688"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071072"
 ---
 # <a name="security-and-data-entities"></a>セキュリティとデータ エンティティ
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 > [!NOTE]
 > データ エンティティは拡張可能なデータ セキュリティ (XDS) の概念をサポートしません。
@@ -231,7 +234,7 @@ ms.locfileid: "5749688"
     - **データ管理** - データのインポート/エクスポートおよびコネクタの統合のみに適用されます。
     - **データ サービス** - OData サービスにのみ適用されます。
 
-[![RolebasedSecurity](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
+[![RolebasedSecurity.](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
 
 ## <a name="sensitive-data"></a>機密データ
 テーブル保護フレームワーク (TPF) は、Finance and Operations に格納されているデータへの厳密なアクセス制御を使用できます。 この機能は、テーブルおよびテーブルのフィールドの AOSAuthorization プロパティを介して公開されます。 AOSAuthorization を使用してテーブルまたはフィールドにマークを付ける場合、セキュリティ フレームワークでは、そのリソースへの明示的なアクセス権がユーザーに付与されている必要があります。 この要件は、テーブルまたはフィールドにデータエンティティでアクセスする場合にも適用されます。 この項では、データ エンティティの TPF アクセス許可を付与するためのガイドラインについて説明します。

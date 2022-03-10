@@ -1,33 +1,26 @@
 ---
 title: Dataverse の組織階層
-description: このトピックでは、Finance and Operations アプリと Dataverse 間の組織データの統合について説明します。
+description: このトピックでは、財務と運用アプリと Dataverse 間の組織データの統合について説明します。
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 77625e6e80bfa45add6839df89d9aae27e41d456
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355301"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062089"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Dataverse の組織階層
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Finance は財務システムであるため、*組織* は中核的な概念であり、システムの設定は組織階層の構成から始まります。 ビジネスの財務は、組織レベルおよび組織階層内のすべてのレベルで追跡できます。
 
@@ -35,42 +28,27 @@ Dataverse は組織階層の概念はないが、総売上高など、いくつ�
 
 ## <a name="data-flow"></a>データ フロー
 
-Finance and Operations アプリと Dataverse を構成するビジネス エコシステムは、組織階層を持ち続けます。 この組織階層は Finance and Operations アプリに基づいて構築されていますが、情報と拡張目的のために Dataverse で公開されています。 次の図は、Finance and Operations アプリから Dataverse に一方向のデータ フローとして Dataverse 内に公開される、組織階層の情報を示します。
+財務と運用アプリと Dataverse を構成するビジネス エコシステムは、組織階層を持ち続けます。 この組織階層は財務と運用アプリに基づいて構築されていますが、情報と拡張目的のために Dataverse で公開されています。 次の図は、財務と運用アプリから Dataverse に一方向のデータ フローとして Dataverse 内に公開される、組織階層の情報を示します。
 
 ![アーキテクチャ イメージ。](media/dual-write-data-flow.png)
 
-組織階層のテーブル マップは、Finance and Operations アプリから Dataverse へのデータの一方向の同期に使用できます。
+組織階層のテーブル マップは、財務と運用アプリから Dataverse へのデータの一方向の同期に使用できます。
 
 ## <a name="templates"></a>テンプレート
 
 製品情報には、製品分析コードや追跡、保管分析コードなど、製品とその定義に関連するすべての情報が含まれます。 次のテーブルが示すように、製品と関連する情報を同期するためにテーブル マップのコレクションが作成されます。
 
-Finance and Operations アプリ | その他の Dynamics 365 アプリ | 説明
+財務と運用アプリ | Customer Engagement アプリ     | 説明
 -----------------------|--------------------------------|---
-組織階層の目的 | msdyn_internalorganizationhierarchypurposes | このテンプレートでは、組織階層目的テーブルの一方向の同期を行うことができます。
-組織階層タイプ | msdyn_internalorganizationhierarchytypes | このテンプレートでは、組織階層タイプ テーブルの一方向の同期を行うことができます。
-組織階層 - 公開済み | msdyn_internalorganizationhierarchies | このテンプレートでは、組織階層の公開済みテーブルの一方向の同期を行うことができます。
-作業単位 | msdyn_internalorganizations |
-法人 | msdyn_internalorganizations |
-法人 | cdm_companies | 法人 (会社) 情報の双方向の同期を提供します。
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Organization hierarchy purposes](includes/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
-
-[!include [Organization hierarchy type](includes/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
-
-[!include [Organization hierarchy - published](includes/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
+[法人](mapping-reference.md#102) | cdm_companies | 法人 (会社) 情報の双方向の同期を提供します。
+[法人](mapping-reference.md#142) | msdyn_internalorganizations |
+[作業単位](mapping-reference.md#143) | msdyn_internalorganizations |
+[組織階層 - 公開済み](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | このテンプレートでは、組織階層の公開済みテーブルの一方向の同期を行うことができます。
+[組織階層の目的](mapping-reference.md#140) | msdyn_internalorganizationhierarchypurposes | このテンプレートでは、組織階層目的テーブルの一方向の同期を行うことができます。
+[組織階層タイプ](mapping-reference.md#141) | msdyn_internalorganizationhierarchytypes | このテンプレートでは、組織階層タイプ テーブルの一方向の同期を行うことができます。
 
 ## <a name="internal-organization"></a>内部組織
 
 Dataverse の内部組織情報は、**作業単位** と **法人エンティティ** の 2 つのテーブルから来ています。
-
-[!include [Operating unit](includes/OperatingUnit-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-Companies.md)]
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

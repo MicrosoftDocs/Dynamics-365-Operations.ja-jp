@@ -2,11 +2,9 @@
 title: 返品注文に対する交換のコンフィギュレーションとプロセス
 description: このトピックでは、Dynamics 365 Commerce で返品に対する交換のコンフィギュレーションを行う方法について説明します。
 author: josaw1
-manager: AnnBe
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 60d58e4194481c875c5ff3f08fc3f8e12a87caa0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 488f6fb5af6451bc462566a9714054b49eb1a80b8264528778797f6a39647764
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972746"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758339"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>返品注文に対する交換のコンフィギュレーションとプロセス
 
@@ -34,9 +32,12 @@ ms.locfileid: "4972746"
 
 ## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>返品注文での交換をサポートするように Commerce を構成する
 
-返品注文での交換をサポートするようにシステムを構成するには、次の手順を実行します。
+> [!NOTE]
+> Commerce バージョン 10.0.20以降では、[POS での統合返品処理エクスペリエンス] と呼ばれる新しい機能を利用できます。 この機能を有効にした場合、次の設定手順は必要ありません。 **返品注文を販売注文として処理する** が永久に構成された設定になり、変更できなくなります。
 
-1. **Retail と Commerce \> 本社の設定 \> パラメーター \> コマース パラメーター** の順にクリックします。 **顧客注文** クイック タブで、**返品注文を販売注文として処理する** オプションで **はい** を設定します。
+次の手順に従って、返品注文で交換をサポートするようにシステムを構成します (**POS での統合返品処理エクスペリエンス** 機能を有効にしていない場合)。
+
+1. **Retail と Commerce \> 本社の設定 \> パラメーター \> Commerce パラメーター** の順にクリックします。 **顧客注文** クイック タブで、**返品注文を販売注文として処理する** オプションで **はい** を設定します。
 2. **グローバル構成配送スケジュール** ジョブ (**1110**) を実行します。
 
 ## <a name="make-an-exchange"></a>交換を行う
@@ -50,3 +51,6 @@ ms.locfileid: "4972746"
 - **充当済預金** – ユーザーが顧客注文の集荷を行う場合に、取引に適用される預金額です。 預金の上書きがなく、10% の預金率が構成されている場合、このフィールドの金額は、顧客注文の合計額の 90% になります。
 - **金額の実行** – 顧客注文の作成時または編集時、あるいは顧客注文の交換中に、配送モードが **実行** に設定されていた明細行の合計額です。 このフィールドの金額には、税金および諸費用が含まれます。
 - **返品金額** – 顧客注文の交換中の数量が負の値の明細行の合計金額です。 このフィールドの金額には、税金および諸費用が含まれます。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

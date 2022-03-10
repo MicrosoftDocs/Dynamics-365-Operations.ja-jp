@@ -1,31 +1,33 @@
 ---
-title: すべての会社に対する給付金の管理と従業員セルフサービス パラメータの設定
-description: Microsoft Dynamics 365 Human Resources で給付金の管理と従業員セルフサービスのパラメータを構成する。
-author: andreabichsel
-manager: tfehr
-ms.date: 12/07/2020
+title: すべての会社に対する給付金の管理と従業員のセルフ サービス パラメーターを設定する
+description: Microsoft Dynamics 365 Human Resources で給付金管理と従業員のセルフ サービスのパラメーターを構成します。
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b50c4f71789c34f08ce810312f3c3198303b031e
-ms.sourcegitcommit: fd097f6f76f0d8428038fa3655b3188bf093b517
+ms.openlocfilehash: 822e5b37be7b2d5712d61bf7fb00f40d1692f406
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692700"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066928"
 ---
-# <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>すべての会社に対する給付金の管理と従業員セルフサービス パラメータの設定
+# <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>すべての会社に対する給付金の管理と従業員のセルフ サービス パラメーターを設定する
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources で給付金計画を設定する前に、給付金管理パラメーターをコンフィギュレーションする必要があります。 これらのパラメーターは既定値、理由コード、およびその他のオプションを設定します。 
 
@@ -54,7 +56,7 @@ Microsoft Dynamics 365 Human Resources で給付金計画を設定する前に�
 
 3. **保存** を選択します。
 
-## <a name="configure-employee-self-service-parameters"></a>従業員のセルフサービス パラメーターをコンフィグレーションする
+## <a name="configure-employee-self-service-parameters"></a>従業員のセルフ サービス パラメーターをコンフィグレーションする
 
 1. **福利厚生管理** ワークスペースの **設定** で、**人事管理パラメーター** を選択します。
 
@@ -62,9 +64,12 @@ Microsoft Dynamics 365 Human Resources で給付金計画を設定する前に�
 
    | フィールド | 説明 |
    | --- | --- |
-   | **給付金の検証** | セルフサービス給与金のチェックアウト中に使用する検証テキスト。 |
+   | **給付金の検証** | セルフ サービス給付金のチェックアウト中に使用する検証テキスト。 |
    | **被指名人の自動選択** | 計画オプションに対する適格性に基づいて被扶養者と受益者を自動的に選択するかどうかを指定します。 |
 
 3. **保存** を選択します。
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

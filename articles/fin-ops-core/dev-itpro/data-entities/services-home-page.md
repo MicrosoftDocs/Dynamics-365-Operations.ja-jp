@@ -1,25 +1,24 @@
 ---
 title: サービス エンドポイント 概要
 description: このトピックでは、使用できるサービス エンドポイントについて説明します。
-author: Sunil-Garg
+author: peakerbl
 ms.date: 06/22/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
-ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96c57fd1f1a72aa679b5312cbe4780cf3cd5ae5a
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: fa4ab63934190e544e65bae30a7b2958a8047810
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941009"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986081"
 ---
 # <a name="service-endpoints-overview"></a>サービス エンドポイント 概要
 
@@ -32,7 +31,7 @@ ms.locfileid: "5941009"
 
 | サービス エンドポイント            | AX 2012 | Finance and Operations         |
 |-----------------------------|---------|--------------------------------|
-| ドキュメント サービス (AXDs)    | はい     | いいえ – データ エンティティに置き換えられます |
+| ドキュメント サービス (AXDs)    | 有     | いいえ – データ エンティティに置き換えられます |
 | SOAP ベースのメタデータ サービス | 有     | いいえ – REST メタデータに置き換えられます |
 | SOAP ベースのクエリ サービス    | 有     | いいえ – OData に置き換えられます         |
 | OData クエリ サービス         | 有     | いいえ – OData に置き換えられます         |
@@ -63,11 +62,11 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 次の図は、認証コードの付与フローに対して認証を設定する方法について説明します。
 
-![認証コードの付与フロー](./media/services-authentication.png)
+![認証コードの付与フロー。](./media/services-authentication.png)
 
 以下の図では、クライアントの資格情報 (共有秘密または証明書) を使用したサービス間の呼び出し承認の仕組みを説明します。
 
-![クライアントの資格情報を使用したサービス間呼び出し](./media/S2SAuth.jpg)
+![クライアントの資格情報を使用したサービス間呼び出し。](./media/S2SAuth.jpg)
 
 ### <a name="register-a-web-application-with-aad"></a>AAD に Web アプリケーションを登録する
 
@@ -90,7 +89,7 @@ Microsoft Azure Active Directory (AAD) では、次の 2 種類のアプリケ�
 
 ### <a name="register-your-external-application"></a>外部アプリケーションの登録 
 
-1. Finance and Operations アプリで、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション** の順に移動します。
+1. 財務と運用アプリで、**システム管理** \> **セットアップ** \> **Azure Active Directory アプリケーション** に移動します。
 2. **新規** を選択します。
 3. 新しいレコード用のフィールドに入力します。
 

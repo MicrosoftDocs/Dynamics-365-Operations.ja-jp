@@ -1,23 +1,18 @@
 ---
 title: NavigationArgs タイプ
 description: NavigationArgs タイプ
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: ddaee0d95e3ae3b4dc0a900ac43adb51a08c203c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.author: tfehr
+ms.openlocfilehash: 07b11d57bc2b85a3e52f7c5e95949e36beececa1
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748179"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783172"
 ---
 # <a name="navigationargs-type"></a>NavigationArgs タイプ
 

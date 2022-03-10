@@ -2,7 +2,7 @@
 title: データベースのインポート
 description: このトピックでは、Finance and Operations アプリのデータベースをインポートする方法について説明します。
 author: LaneSwenka
-ms.date: 08/21/2020
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,22 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 51695447c7b33b430e5e2543dfa738bdaedc25c0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2872411d8f21dba954d8e7770da9d9d748a4d7e8
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749970"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778245"
 ---
 # <a name="import-a-database"></a>データベースのインポート
 
 [!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics Lifecycle Services (LCS) は、ゴールデン コンフィギュレーション データベースをサンドボックス ユーザー受入テスト (UAT) の環境にインポートするために使用できます。
+
+## <a name="prerequisites"></a>必要条件
+
+Dynamics AX 2012 アップグレード用に構成された LCS プロジェクトには、データベース インポートは適用できません。 したがって、**プロジェクト オンボーディング** \> **プロジェクト概要** で、**レガシ システム** フィールドが **AX2012 アップグレード** に設定された場合、インポートはブロックされます。
 
 ## <a name="self-service-import-database"></a>セルフ サービス インポート データベース
 
@@ -44,6 +48,8 @@ Microsoft Dynamics Lifecycle Services (LCS) は、ゴールデン コンフィ�
 * システム ヘルプとタスク ガイドに再接続されていることを確認します。
 * バッチ ジョブのステータスが **待機中** に設定されていることを確認します。
 * ユーザーが再度有効化されたことを確認します。
+* 必要に応じて、二重書き込みが再リンクされていることを確認します。
+* 必要に応じて、二重書き込みが再リンクされていることを確認します。  この操作に成功した後にターゲット環境に新しいリンクを設定するには、[二重書き込み環境リンク](../data-entities/dual-write/link-your-environment.md)を参照してください。
 
 ### <a name="environment-admin"></a>環境管理者
 

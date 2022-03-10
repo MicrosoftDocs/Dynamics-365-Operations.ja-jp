@@ -2,26 +2,24 @@
 title: タスク ダブルのフォーム パターン
 description: この記事では、タスク ダブル フォームのパターンに関する情報を提供します。 このパターンは、以前は同じフォームに親エンティティと子エンティティを表示するために使用されていました。
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 14651
 ms.assetid: 9f28e5f9-efec-48c5-aaa6-b68a505c4df3
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d1a538dbe586c5cc27b056f66f1a80371b04cb8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0b761c4aea2ab329865171be2c9752d1de2c7b48
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680952"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782990"
 ---
 # <a name="task-double-form-pattern"></a>タスク ダブルのフォーム パターン
 
@@ -29,14 +27,13 @@ ms.locfileid: "4680952"
 
 この記事では、タスク ダブル フォームのパターンに関する情報を提供します。 このパターンは、以前は同じフォームに親エンティティと子エンティティを表示するために使用されていました。
 
-<a name="usage"></a>用途
------
+## <a name="usage"></a>用途
 
 このタイプのフォームは、以前は親/子エンティティを同じフォームに表示する場合に使用されていました。 新しいフォームの推奨パターンではありません。 このパターンを使用する新しいフォームを作成する必要はありません。 このパターンは、レガシー フォームの構造と安定性を提供し、より現代的なフォーム パターンへの移行パスも提供します。
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-![タスク ダブルのフォームのワイヤーフレーム](./media/patterntaskdouble.png)]
+![タスク ダブルのフォームのワイヤーフレーム。](./media/patterntaskdouble.png)]
 
 ## <a name="pattern-changes"></a>パターンの変更
 Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主な変更を次に示します。
@@ -107,7 +104,7 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 ## <a name="example"></a>例
 フォーム: **HRMAbsenceTableHistory** 
 
-[![タスク ダブルの例](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
+[![タスク ダブルの例。](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -116,8 +113,11 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="open-issues"></a>未処理の問題
 
--   なし
+-   None
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![AX 2012 視覚例](./media/taskdouble3.png)](./media/taskdouble3.png)
+[![AX 2012 視覚例。](./media/taskdouble3.png)](./media/taskdouble3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

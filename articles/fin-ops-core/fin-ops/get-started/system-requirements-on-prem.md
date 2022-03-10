@@ -2,7 +2,7 @@
 title: オンプレミス配置のシステム要件
 description: このトピックでは、オンプレミス配置のシステム要件を一覧表示します。
 author: PeterRFriis
-ms.date: 01/22/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: ffc5335f6e5ed229191d734e210b8d4fd07ac028
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: b2b11b52d1aee663c6c2d6bc361853bfb827789c
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923363"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874541"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、現在のバージョンの Microsoft Dynamics 365 Finance + Operations (オンプレミス) 配置のシステム要件を一覧表示します。 インストールする前に、このステップが適切な場合、作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを検証します。
+このトピックは、現在のバージョンの Microsoft Dynamics 365 Finance + Operations (オンプレミス) 配置のシステム要件を一覧表示します。 作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを確認します。
 
 > [!IMPORTANT]
-> Azure を含む、任意のパブリック クラウド インフラストラクチャでサポートされていない、Dynamics 365 Finance + Operations (オンプレミス) 配置。
+> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ## <a name="network-requirements"></a>ネットワーク要件
 
@@ -73,15 +73,11 @@ Finance + Operations は、ユーザー ワークステーションからイン�
 </tr>
 <tr>
 <td><strong>サーバー</strong></td>
-<td>AOS または Microsoft Azure Service Fabric 層は、LCS と通信できる必要があります。 オンプレミス ブラウザーベースのクライアントには、インターネットへのアクセスは不要です。</td>
+<td>配置およびサービス操作を行う場合は、オーケストレーター ノード タイプが LCS と通信できる必要があります。 オンプレミス ブラウザーベースのクライアントには、インターネットへのアクセスは不要です。</td>
 </tr>
 <tr>
 <td><strong>テレメトリ</strong></td>
 <td>接続に長時間の障害があると、テレメトリ データが失われる可能性があります。 LCS への接続の中断は、オンプレミスのアプリケーション機能に影響しません。</td>
-</tr>
-<tr>
-<td><strong>LCS</strong></td>
-<td>配置、コードの配置、およびサービス操作には、LCS への接続が必要です。</td>
 </tr>
 </tbody>
 </table>
@@ -99,6 +95,7 @@ Finance + Operations をインストールする場合は、次のドメイン�
 - ドメイン コントローラは、Microsoft Windows Server 2012 R2 またはそれ以降であり、ドメイン機能レベルは 2012 R2 またはそれ以上である必要があります。
 
 ### <a name="full-2-way-trust"></a>双方向の完全な信頼
+
 Windows Server 2008 R2 ドメイン機能レベル (DFL) 上の会社のドメイン コントローラーと互換性を保つために、Windows Server 2008 R2 DFL ユーザー ドメインと Windows Server 2012 R2 DFL Finance + Operations サービス ドメインの間の双方向の完全な信頼は、プラットフォーム更新 33 以降でサポートされています。
 
 つまり、Finance + Operations (オンプレミス) アプリケーションのユーザーは、Windows Server 2008 R2 DFL メインから取得され、Finance + Operations (オンプレミス) インフラストラクチャとサービスをホストするリソースとサービス アカウントは Windows Server 2012 R2 DFL ドメインから取得されます。
@@ -108,6 +105,7 @@ Windows Server 2008 R2 ドメイン機能レベル (DFL) 上の会社のドメ�
 <img src="./media/2WayTrust.png" width="700" hspace="50" alt="Examples of supported full 2-way trust between DFL versions"/>
 
 #### <a name="known-limitations-with-using-the-full-2-way-trust-setup"></a>双方向の完全な信頼設定を使用した場合の既知の制限
+
 * Windows Server 2008 R2 ユーザー ドメインからのセキュリティ グループのインポートはサポートされていません。
 
 ## <a name="hardware-requirements"></a>ハードウェア要件
@@ -127,7 +125,7 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 
 次の図は、Service Fabric クラスターのノードの最小推奨数を示しています。
 
-[![Service Fabric クラスターの推奨されるノード数](./media/Minimum-infrastructure-Jan2017.png)](./media/Minimum-infrastructure-Jan2017.png)
+[![Service Fabric Cluster の推奨されるノード数。](./media/Minimum-infrastructure-Jan2017.png)](./media/Minimum-infrastructure-Jan2017.png)
 
 ## <a name="processor-and-ram-requirements"></a>プロセッサおよび RAM 要件
 
@@ -239,42 +237,36 @@ SQL Server は、生産用として少なくとも 2 つのノードを持つ高
 
 環境の仮想ホストを設定する場合は、[Service Fabric クラスターの計画および準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) と [Service Fabric クラスターの説明](/azure/service-fabric/service-fabric-cluster-resource-manager-cluster-description) のガイドラインを参照してください。 各仮想ホストには、サイズ変更されているインフラストラクチャ用のコアが十分にある必要があります。 SQL Server が物理ハードウェア上に存在し、その他のすべてが仮想化されている場合は、複数の高度な構成が可能です。 SQL Server が仮想化されている場合、ディスク サブシステムは高速 SAN または同等のものにする必要があります。 いずれの場合も、仮想ホストの基本設定が高可用性および重複であることを確認してください。 いずれの場合も、仮想化を使用する場合は、VM スナップショットを作成する必要はありません。
 
+> [!IMPORTANT]
+> 仮想ホストに動的なメモリを使用することはできません。
+
 Finance + Operations には、非 Microsoft 仮想化プラットフォーム (具体的には VMWare) での操作に関する Microsoft の標準サポート ポリシーが適用されます。 詳細については、[Microsoft ソフトウェアのサポート ポリシー](https://support.microsoft.com/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw)を参照してください。 つまり、この環境では製品をサポートしますが、問題の調査を依頼された場合、仮想化プラットフォームのない状態または Microsoft 仮想化プラットフォームで問題を再現するようまずお客様に依頼する場合があります。
 
 ## <a name="software-requirements-for-all-server-computers"></a>すべてのサーバー コンピュータのソフトウェア要件
 
 Finance + Operations コンポーネントをインストールする前に、次のソフトウェアがコンピュータに存在している必要があります:
 
-- Microsoft .NET Framework。 バージョン情報については、[配置の設定](../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md#setup)を参照してください。
+- Microsoft .NET Framework。 バージョン情報については、[配置の設定](../../dev-itpro/deployment/setup-deploy-on-premises-pu41.md#prerequisites)を参照してください。
 - Service Fabric
 
-詳細については、[Service Fabric クラスターの計画と準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) を参照してください。
+Service Fabric の詳細については、[Service Fabric Cluster の計画および準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation)を参照してください。
 
-## <a name="supported-server-operating-systems"></a>サポートされるサーバー オペレーティング システム
+> [!NOTE]
+> サポートされているバージョンについては、[Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされているソフトウェア](../../dev-itpro/deployment/onprem-compatibility.md)を参照してください。
 
-次の表は、サポートされているサーバー オペレーティング システムの一覧を示します。
+### <a name="software-requirements-for-database-servers"></a>データベース サーバーのソフトウェア要件
 
-| オペレーティング システム                                     | 摘要 |
-|------------------------------------------------------|-------|
-| Microsoft Windows Server 2016 Datacenter または Standard | これらの要件は、AOS をホストするデータベースおよび Service Fabric クラスターに対するものです。<p>en-US OS インストールのみがサポートされます。</p> |
+SQL Server のハードウェア要件については、[SQL Server インストール用のハードウェアおよびソフトウェア要件](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server)を参照してください。 |
 
-## <a name="software-requirements-for-database-servers"></a>データベース サーバーのソフトウェア要件
-
-- 64 ビット バージョンの SQL Server 2016 のみがサポートされています。
+- 64 ビット バージョンの SQL Server のみがサポートされています。
 - サーバーおよびデータベースの照合順序では、**SQL\_Latin1\_General\_CP1\_CI\_AS** のみ有効です。 SQL Server データベースの照合順序を選択する方法の詳細については、「[SQL Server に関するドキュメント](/sql/sql-server/sql-server-technical-documentation)」を参照してください。
 - 実稼動環境では、使用している SQL Server のバージョンの最新の累積的な更新プログラム (CU) をインストールすることをお勧めします。
 
-次の表では、データベースでサポートされている SQL Server バージョンを一覧表示します。 詳細については、「[SQL Server](https://www.microsoft.com/sql-server/sql-server-2016) の最小ハードウェア要件」を参照してください。
-
-| 必要量                                                      | 摘要 |
-|------------------------------------------------------------------|-------|
-| Microsoft SQL Server2016 Standard Edition または Enterprise Edition | SQL Server 2016 のハードウェア要件については、「[SQL Server 2016 インストール用のハードウェアおよびソフトウェア要件](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server)」を参照してください。 |
-
-## <a name="software-requirements-for-application-object-server-aos"></a>Application Object Server (AOS) のソフトウェア要件
+### <a name="software-requirements-for-application-object-server-aos"></a>Application Object Server (AOS) のソフトウェア要件
 
 - SQL Server Integration Services (SSIS)
 
-## <a name="software-requirements-for-reporting-server-bi"></a>レポート サーバー (BI) のソフトウェア要件
+### <a name="software-requirements-for-reporting-server-bi"></a>レポート サーバー (BI) のソフトウェア要件
 
 - SQL Server Reporting Services (SSRS)
 
@@ -288,11 +280,29 @@ Finance + Operations コンポーネントをインストールする前に、�
 - Internet Explorer 11 (非推奨)
 
 > [!NOTE]
-> パフォーマンスを最適化し、最適なエクスペリエンスを提供するために、最新のブラウザ、特に Microsoft Edge の最新バージョンを使用することをお勧めします。 Internet Explorer 11 のサポートは非推奨です。 詳細については、[Internet Explorer 非推奨のお知らせ](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps)を参照してください。
+> パフォーマンスを最適化し、最適なエクスペリエンスを提供するために、最新のブラウザ、特に Microsoft Edge の最新バージョンを使用することをお勧めします。 
+> 
+> **バージョン 10.0.21 以降:** Microsoft Edge の古いバージョンおよび Google Chrome (バージョン 83 以前) のユーザーには、ブラウザーを最新バージョンに更新するよう求めるメッセージが表示されます。 
+
+### <a name="internet-explorer-deprecation"></a>Internet Explorer の廃止
+
+2020 年 12 月に Internet Explorer 11 のサポートが廃止され、2021 年 8 月にブラウザーのサポートが終了します。 詳細については、[Internet Explorer 非推奨のお知らせ](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps) を参照してください。
+
+バージョン 10.0.20 から、Internet Explorer で Finance and Operations アプリにアクセスするユーザーにそのブラウザーに対するサポートの終了に関する通知が表示されます。 2021 年 8 月 17 日より前に、複数の Internet Explorer ユーザーに対して、Internet Explorer サポートが間もなく終了するという情報メッセージが表示されます。 その日以降、サポートが正式に終了したという警告が Internet Explorer ユーザーに表示されます。 組織は、Internet Explorer がユーザーにとって必須になっている以外は、これらの通知を継続することが推奨されます。そのケースでは、**Internet Explorer のサポート終了通知** 機能を無効にし、ユーザー ベースを Microsoft Edge または他の最新のブラウザーに移行する内部プロセスに依存することによりこれらの通知の非表示を選択できます。 
+
+Finance and Operations アプリ内の Internet Explorer の使用をブロックするための現在の目標は 2022 年 4 月です。 組織がそれ以前に Internet Explorer をブロックする必要があり、バージョン 10.0.21 以降を使用している場合は、Microsoft サポートに問い合わせてください。
+
+組織およびユーザーが今後の Internet Explorer のブロックに対応するために、2022 年 1 月以降、Internet Explorer ユーザーは Internet Explorer サポートが間もなくブロックされることを示す無視できないエラー メッセージを受信します。 このエラー メッセージは **Internet Explorer サポート終了通知** により制御 **されません**。 このメッセージを組織に対して非表示にする必要がある場合、顧客は Microsoft サポートに問い合わせる必要があります。
+
+### <a name="special-considerations"></a>特別な注意事項
+
+- タスク レコーダーがスクリーンショットをキャプチャし、生成された Microsoft Word ドキュメントにそれらを含めるには、プレリリース版の Chrome 拡張機能をインストールする必要があります。
+- 財務報告のワークフロー エディターおよびレポート デザイナーは、ClickOnce アプリケーションとして起動されます。 それには 64 ビットの互換性のあるオペレーティング システムが必要です。 Microsoft Edge と Internet Explorer (Microsoft Windows のサポートされているバージョン) のみが、ClickOnce アプリケーションをそのままの状態でサポートします。 Chrom を使用している場合、ClickOnce アプリケーションを使用するには、[Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) などの ClickOnce 拡張をインストールする必要があります。 匿名モードで Chrome を使用する場合、ClickOnce の拡張機能が匿名モードに対しても有効化されていることを確認します。
+- PDF ファイルをプレビューするには、Windows 10 の Microsoft Edge (公開されている最新のバージョン)、もしくは Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン) などの最新のブラウザを使用することをお勧めします。
 
 ## <a name="software-requirements-for-active-directory-federation-services"></a>Active Directory フェデレーション サービスのソフトウェア要件
 
-Windows Server 2016 の Active Directory フェデレーション サービス (AD FS) は必要です。
+Windows Server の Active Directory フェデレーション サービス (AD FS) は必要です。
 
 ドメイン コントローラは、Windows Server 2012 R2 またはそれ以降であり、ドメイン機能レベルは 2012 R2 またはそれ以上である必要があります。 ドメイン機能レベルの詳細については、次のページを参照してください。
 
@@ -310,6 +320,5 @@ Windows Server 2016 の Active Directory フェデレーション サービス (
 ## <a name="hardware-and-software-requirements-for-commerce-components"></a>コマース コンポーネントのハードウェアおよびソフトウェア要件
 
 現在、Finance + Operations はコマース コンポーネントを含んでいません。
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

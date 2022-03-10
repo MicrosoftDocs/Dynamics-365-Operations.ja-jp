@@ -2,7 +2,7 @@
 title: オンプレミス配置の計画および準備
 description: このトピックは、オンプレミス展開の計画と準備に役立ちます。
 author: PeterRFriis
-ms.date: 11/30/2021
+ms.date: 01/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,29 +14,29 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 1e69d89ce42abc421d2c7fb4b267a99fdab1a0b2
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: ec3d19795d44fbc7442d5991c730ecc5d54d0e5e
+ms.sourcegitcommit: 378c9340176956862687ae8d55c636486e3105d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874569"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "8044543"
 ---
 # <a name="plan-and-prepare-for-on-premises-deployments"></a>オンプレミス配置の計画および準備
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance + Operations (オンプレミス) は、顧客データ センターでビジネス プロセスを実行することをサポートします。 この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。
+Dynamics 365 Finance + Operations (on-premises) は、顧客データ センターでビジネス プロセスの実行をサポートします。 この配置オプションでは、アプリケーション サーバーおよび Microsoft SQL Server データベースは顧客のデータ センター内で実行されます。
 
 このトピックは、オンプレミス展開の計画と準備に役立ちます。
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
+> Dynamics 365 Finance + Operations (on-premises) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ## <a name="differences-between-cloud-deployments-and-on-premises-deployments"></a>クラウド展開とオンプレミス展開の違い
 クラウド展開とオンプレミス展開の機能は異なります。 これらの違いは、計画に影響します。 違いについては、次のトピックで説明します。
 - [配置オプション](choose-deployment-type.md)
 - [クラウドとオンプレミスの機能比較](../../fin-ops/get-started/cloud-prem-comparison.md)
-- [Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md)
+- [Finance and Operations の削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
 
 ## <a name="how-lcs-is-used-with-on-premises-deployments"></a>オンプレミス配置で LCS を使用する方法
 Microsoft Dynamics Lifecycle Services (LCS) は、アプリケーション ライフサイクルを管理するためのツールおよびサービスを提供するアプリケーション管理ポータルです。 顧客とパートナーは LCS を使用して、クラウドとオンプレミスの両方の導入を管理します。 以下のタスクに対して LCS を使用することができます。
@@ -64,9 +64,9 @@ LCS の詳細については、 [Lifecycle Services のリソース](../lifecycl
 - 環境オーケストレータを実行している 3 台のコンピューター
 - Application Object Server (AOS) を実行する 2 台のコンピューター
 - Management Reporter (MR) を実行している 1 台のコンピューター
-- SQL Server Reporting Services (SSRS) を実行している 1 台のコンピューター
+- ローカル SQL Server (データベース エンジン) を使用する SQL Server Reporting Services (SSRS) を実行する 1 台のコンピューター
 - Active Directory を実行している 1 台のコンピューター
-- SQL Server を実行している 1 台のコンピューター
+- SQL Server を実行している 1 台のコンピューター (データベース エンジン)
 
 ### <a name="production-environment"></a>実稼働環境
 実働環境は、ユーザーや顧客がアクセスできる実際の展開です。 実稼働環境を展開するには、 [オンプレミス環境の設定と配置のホーム ページ](setup-deploy-on-premises-environments.md) を参照してください。
@@ -75,8 +75,8 @@ LCS の詳細については、 [Lifecycle Services のリソース](../lifecycl
 - 環境オーケストレータを実行している 3 台のコンピューター
 - Application Object Server (AOS) を実行している 3 台のコンピューター
 - Management Reporter (MR) を実行している 1 台のコンピューター
-- SQL Server Reporting Services (SSRS) を実行している 1 台のコンピューター
-- SQL Server を実行している 2 台以上のコンピューター
+- ローカル SQL Server (データベース エンジン) を使用する SQL Server Reporting Services (SSRS) を実行する 1 台のコンピューター
+- SQL Server を実行している 2 台以上のコンピューター (データベース エンジン)
 - Active Directory を実行している 2 台以上のコンピューター
 
 ## <a name="service-fabric"></a>Service Fabric
@@ -203,7 +203,7 @@ AOS のようなミッション クリティカルなサービスは、コア、
 
 - **Azure Active Directory(Azure AD)** - Azure AD は LCS へのログインに使用される認証方法です。 Azure AD は LCS ローカル エージェントの構成に使用されます。 詳細については、「[Azure Active Directory とは何か](/azure/active-directory/active-directory-whatis)」を参照してください。
 - **Active Directory ドメイン サービス (AD DS)** - Finance + Operations コンポーネントをホストするコンピューターは、Active Directory ドメインに属している必要があります。 Active Directory ドメイン サービス (AD DS) はネイティブ モードで構成する必要があります。 詳細については、[Active Directory ドメイン サービス](/windows-server/identity/ad-ds/active-directory-domain-services) を参照してください。
-- **Active Directory フェデレーション サービス (AD FS)** - AD FS は、オンプレミス配置で使用される認証方法です。 AD FS は、Microsoft 365、クラウド ベースの SaaS アプリケーション、および会社のネットワーク上のアプリケーションを含むさまざまなアプリケーション全体でアクセス制御およびシングル サインオンを提供します。
+- **Active Directory フェデレーション サービス (AD FS)** - AD FS は、オンプレミス配置で使用される認証方法です。 AD FS は、Microsoft 365、クラウド ベースの SaaS アプリケーション、会社のネットワーク上のアプリケーションを含むさまざまなアプリケーション全体でアクセス制御とシングル サインオンを提供します。
   - IT 組織については、同じ資格情報とポリシーのセットに基づいて、最新および従来のアプリケーション、クラウドのオンプレミスの両方への署名とアクセス制御を提供できます。
   - ユーザーについては、同じ、使い慣れたアカウントの資格情報を使用してシームレスなサインを提供します。
   - 開発者については、組織のディレクトリに ID があるユーザーを認証するための簡単な方法を提供します。 つまり、認証や識別ではなく、アプリケーションに力を注ぐことができます。

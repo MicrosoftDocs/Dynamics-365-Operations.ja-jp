@@ -2,11 +2,9 @@
 title: 自分のチーム モバイル ワークスペース
 description: このトピックでは、管理者が直属の部下と拡張スタッフを表示できる自分のチーム モバイル ワークスペースについて、情報を提供します。
 author: ShielaSogge
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 79678c42545a07054af00cd408e04e9d1a42caed
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5127548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767115"
 ---
 # <a name="my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペース
 
@@ -80,7 +78,7 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 3.  初めてサインインすると、ユーザー名とパスワードを要求されます。 資格情報を入力します。
 4.  サインインすると、使用可能な会社のワークスペースが表示されます。 なお、システム管理者が後で新しいワークスペースを公開すると、モバイル ワークスペースのリストを更新する必要があります。
 
-[![プルして更新](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![プルして更新。](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペースを使用して、チーム メンバーを表示
 1.  モバイル アプリで、**自分のチーム** ワークスペースを選択します。 チーム メンバーの一覧が表示されます。 一覧では、各チーム メンバーのタイトル、およびそのメンバーの直属の部下にも表示されます。
@@ -97,3 +95,6 @@ Finance and Operations モバイル アプリのダウンロードとインス�
 1.  **称賛の送信** を選択します。 
 1. 送信する称賛のテキストを入力します。 
 1. **完了** を選択します。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

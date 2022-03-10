@@ -2,13 +2,11 @@
 title: 負債、資産、および経費トランザクションの表示
 description: このトピックでは、リース資産のトランザクションを表示する方法について説明します。 これらのトランザクションには、リース負債トランザクションと、転記された履行費用トランザクションが含まれます。
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 76c7eff17df92b01317544112099e391fd05d105
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 58a57b2a1237b41c99e44cf40c57d80257fc9b5b77188586aab6735a8a3f4984
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765743"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>負債、資産、および経費トランザクションの表示
 
@@ -47,3 +45,6 @@ ms.locfileid: "4995371"
 リース経費トランザクションを表示するには、**リースの概要** ページでリースを選択し、**帳簿** を選択して、リース レコードに関連付けられているリース帳簿を開きます。 次に、**経費トランザクション** を選択します。
 
 **経費トランザクション** ページには、リースに対して転記されたすべての経費 (支払利息、減価償却費、履行費用など) が表示されます。
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

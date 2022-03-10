@@ -2,40 +2,34 @@
 title: 既存の製品の変更管理の有効化
 description: このトピックでは、既存の製品の変更管理を有効にする方法を説明します。 また、変更管理を有効にできる機能が制限されるケースについて説明します。
 author: t-benebo
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
-ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 8b9f34f5980937da62610d9668a95816ba6054ef
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500865"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103616"
 ---
 # <a name="enable-change-management-on-existing-products"></a>既存の製品の変更管理の有効化
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、既存の製品の変更管理を有効にする方法を説明します。 また、変更管理を有効にできる機能が制限されるケースについて説明します。
 
 既存の製品の変更管理を有効にすると、その製品のバージョンを作成し、その製品の存続期間を通じて行われた変更を追跡できます。 したがって、変更オーダーを使用することでそれらの変更を追跡できます。 変更管理を有効にするには、関連する製品を *エンジニアリング品目* (エンジニアリング製品とも呼ばれます) に変換する必要があります。 エンジニアリング製品は、変更管理によってバージョン指定され、管理される製品です。 ウィザードに従って変換プロセスを実行できます。
 
-## <a name="turn-on-the-feature-in-your-system"></a>システムで機能を有効化する
+## <a name="turn-this-feature-on-or-off"></a>この機能のオン/オフの切り替え
 
-この機能を使用するには、次の設定手順を完了する必要があります。
-
-1. [エンジニアリング変更管理の概要](product-engineering-overview.md) の説明に従って、エンジニアリング変更管理および構成キーを有効にします。
-1. 機能管理で *既存の製品の変更管理の有効化* 機能を有効にします。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
+このトピックで説明する機能は、ご利用のシステムで *エンジニアリング変更管理* と *既存製品の変更管理を有効にする* の両方の機能がオンになっている必要があります。 これらの機能のオン/オフの切り替え方法の詳細については、[エンジニアリング変更管理の概要](product-engineering-overview.md) を参照してください。
 
 ## <a name="restrictions-and-limitations"></a>規制と制限
 
@@ -50,7 +44,9 @@ ms.locfileid: "5500865"
 
 *エンジニアリング製品カテゴリ* は、すべてのエンジニアリング製品に割り当てる必要があります。 この割り当ては、**エンジニアリング製品に変換** ウィザードを実行するときに行います。 エンジニアリング製品カテゴリは、関連する標準製品を変換する *前* に、すべての標準製品に対して存在している必要があります。
 
-エンジニアリング製品カテゴリは、エンジニアリング製品を作成するための基礎を提供し、一連の既定値とポリシーを設定します。 エンジニアリング製品カテゴリは、割り当てる製品と一致している必要があります。 たとえば、製品タイプと分析コード グループは、製品およびエンジニアリング製品カテゴリの両方と一致する必要があります。 詳細については、[エンジニアリング バージョンとエンジニアリング製品カテゴリ](engineering-versions-product-category.md)を参照してください。
+エンジニアリング製品カテゴリは、エンジニアリング製品を作成するための基礎を提供し、一連の既定値とポリシーを設定します。 また、エンジニアリング属性とその既定の値 (エンジニアリング カテゴリで定義されたもの) が、結果として得られるエンジニアリング プロダクトに適用されます。 必要に応じて、属性値の編集や、生成される製品にエンジニアリング属性を追加することができます。
+
+エンジニアリング製品カテゴリは、割り当てる製品と一致している必要があります。 たとえば、製品タイプと分析コード グループは、製品およびエンジニアリング製品カテゴリの両方と一致する必要があります。 詳細については、[エンジニアリング バージョンとエンジニアリング製品カテゴリ](engineering-versions-product-category.md)を参照してください。
 
 > [!IMPORTANT]
 > **エンジニアリング製品への変換** ウィザードを使用すると、トランザクションでバージョンが追跡されていないエンジニアリング製品にのみ製品を変換できます。 したがって、**トランザクションのバージョンを追跡** オプションは、既存の製品を変換するために作成するエンジニアリング製品カテゴリでは *いいえ* に設定する必要があります。

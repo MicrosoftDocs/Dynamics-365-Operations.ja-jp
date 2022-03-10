@@ -2,25 +2,22 @@
 title: 原価ロールアップ ポリシーの作成
 description: この手順では、原価ロールアップ ポリシーとポリシーのルールを作成する方法を示します。
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b6d32cc2c1844c6c334dd00b249c736e153f13d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd7a390ced7b7b4997d9c86b9218f1fa83ee14729e450e1ae1cb53dbbd605edb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4445324"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755669"
 ---
 # <a name="create-a-cost-rollup-policy"></a>原価ロールアップ ポリシーの作成
 
@@ -68,3 +65,6 @@ ms.locfileid: "4445324"
     * 全てのコスト センターに、対応する第 2 原価要素が位置づけされるまで続けます。  
 16. [保存] をクリックします。
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

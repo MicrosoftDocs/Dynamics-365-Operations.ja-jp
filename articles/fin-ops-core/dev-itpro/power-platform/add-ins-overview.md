@@ -1,10 +1,10 @@
 ---
 title: アドインの概要
-description: このトピックでは、Finance and Operations アプリの機能を拡張するために使用できるアドインに関する情報を提供します。
+description: このトピックでは、財務と運用アプリの機能を拡張するために使用できるアドインに関する情報を提供します。
 author: ankugo
 manager: AnnBe
 ms.date: 05/20/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: ankugo
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2fc191f3506e9179932a58b3b20a8524fb0cf042
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: ecd68d8989d7dd79aaf97aaca28f3df44a6fa77b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103644"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984986"
 ---
 # <a name="add-ins-overview"></a>アドインの概要
 
 [!include[banner](../includes/banner.md)]
 
-アドインを使用すると、Finance and Operations アプリの機能を拡張できます。 すべてのアドインは、Microsoft Dynamics Lifecycle Services (LCS) のサンドボックスおよび運用環境の環境詳細ページを介してインストールされ、管理されます。 アーキテクチャおよび機能のロック解除方法については、[Finance and Operations との Microsoft Power Platform 統合](overview.md) を参照してください。
+アドインを使用すると、財務と運用アプリの機能を拡張できます。 すべてのアドインは、Microsoft Dynamics Lifecycle Services (LCS) のサンドボックスおよび運用環境の環境詳細ページを介してインストールされ、管理されます。 アーキテクチャおよび機能のロック解除方法については、[財務と運用アプリとの Microsoft Power Platform 統合](overview.md)を参照してください。
 
 ## <a name="what-add-ins-are-available"></a>どのアドインで使用できますか?
 
@@ -41,7 +41,7 @@ Inventory Visibility Add-in は、リアルタイムで手持在庫を追跡を�
 
 ### <a name="export-to-azure-data-lake"></a>Azure Data Lake へのエクスポート
 
-Azure Data Lake へのエクスポート機能は、Finance and Operations アプリ データを Azure Data Lake へエクスポートし、データを最新の状態に維持するマイクロサービスに基づきます。 詳細については、[Azure Data Lake へのエキスポートの構成](../data-entities/configure-export-data-lake.md) を参照してください。
+Azure Data Lake へのエクスポート機能は、財務と運用アプリ データを Azure Data Lake へエクスポートし、データを最新の状態に維持するマイクロサービスに基づいています。 詳細については、[Azure Data Lake へのエキスポートの構成](../data-entities/configure-export-data-lake.md) を参照してください。
 
 ### <a name="iot-intelligence"></a>IoT インテリジェンス
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b47ec93f548ed1c7d50480fcb2d2ff2e52837c8d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c64cb0ae24abd5c7226816b75676178094d561540ae7f27f6ab8c43defae7bc3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748123"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746567"
 ---
 # <a name="planned-maintenance-window-faq"></a>予定された保守ウィンドウのよく寄せられる質問
 [!include [banner](../includes/banner.md)]
@@ -67,7 +67,7 @@ Microsoft はサービスのダウンタイムの必要性を減らすよう継�
 オペレーティング システムレベルの更新は、Microsoft が管理するレベル 2 からレベル 5 のサンドボックス環境と実稼働環境に毎月適用されます。 ただし、Microsoft が管理するレベル 1 環境は、地域ごとに定義されたメンテナンス期間に毎週更新されます。
 
 ### <a name="where-can-i-learn-more-about-what-is-applied"></a>何が適用されたかについての詳細はどこですか。
-適用される更新プログラムの詳細については、[Microsoft セキュリティ速報](https://technet.microsoft.com/security/bulletins.aspx) を参照してください。
+適用される更新プログラムの詳細については、[Microsoft セキュリティ速報](/security-updates/) を参照してください。
 
 ### <a name="where-can-i-track-progress-of-the-update"></a>更新プログラムの進捗はどのように追跡できますか。
 オペレーティング システム レベルの更新中に、LCS は現在どのパッチ適用が進行中であるかを示しません。 ただし、Microsoft はこの機能をある時点で追加する予定です。

@@ -5,7 +5,6 @@ author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMRebateDeal
 audience: Application User
@@ -14,18 +13,17 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b75743a64fef53f79159a1476c99a7035b7e4f3b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: 18d03ad89942997d8b5e794bb8d79a67821ef2c4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839176"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580555"
 ---
 # <a name="rebate-management-deals"></a>リベート管理取引
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 リベート管理取引は、リベートやロイヤルティを計算するさまざまな方法と基準を制御するために使用されます。 これには、包含および除外のルールが含まれます。 リベート管理取引には、顧客リベート、顧客ロイヤルティ、仕入先リベートの 3 つのタイプがあります。 3 つのタイプのすべてが同様の設定を使用します。 このトピックでは、それらの違いについて説明します。
 
@@ -104,6 +102,7 @@ ms.locfileid: "5839176"
         - *すべて* – 取引明細行は、すべての品目に適用されます。
 
     - **商品関係** – **品目コード** フィールドで *テーブル* を選択した場合、取引明細行が適用される品目を選択します。 *グループ* を選択した場合は、品目グループを選択します。 *すべて* を選択した場合は、このフィールドは使用できません。
+    - **単位タイプ** – 取引明細行に適用される単位タイプ (*在庫単位* または *Catch Weight 単位*) を選択します。 古いレコードの場合、このフィールドは空白になる可能性があることに注意してください。 この場合は、*在庫単位* 値が想定されます。
     - **(在庫管理パラメーター)** – 取引明細行の残りのフィールドで、取引に含まれる品目を定義するために使用される在庫管理パラメーター (品目のサイズ、色、スタイル、サイト、倉庫など) の値を指定します。 分析コードを追加または削除するには、アクション ペインの **分析コードの表示** を選択します。
 
 1. アクション ウィンドウで、**保存** を選択します。

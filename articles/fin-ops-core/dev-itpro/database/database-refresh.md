@@ -2,7 +2,7 @@
 title: データベースの更新
 description: このトピックでは、Microsoft Dynamics 365 Finance のデータベースの更新を実行する方法について説明します。
 author: LaneSwenka
-ms.date: 05/24/2021
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8acbeda194625950132e5d8a99181c50fa8ebe8d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 529ccb8d6082cd810b2222a0ca67aaf88ec3b103
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345583"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777654"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -29,7 +29,7 @@ ms.locfileid: "7345583"
 
 > [!IMPORTANT]
 > 営業時間中またはピーク時に生産データをコピーすると、生産システムに影響を与える可能性があります。 データベースの更新は、オフピーク時に行い、一度に 1 つの更新操作のみを制限することを強くお勧めします。
-
+>
 > 生産報告を目的としてサンドボックス環境に生産のデータをコピーすることはできません。
 
 ## <a name="self-service-database-refresh"></a>データベースのセルフ サービスエ更新
@@ -96,6 +96,10 @@ web.config ファイルを別の値に変更するために環境で管理者ユ
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## <a name="known-issues"></a>既知の問題
+
+### <a name="the-restore-operation-fails-if-the-sandbox-customizations-are-incompatible-with-production-data"></a>サンドボックスのカスタマイズが生産データと互換性がない場合、復元操作は失敗します
+
+カスタマイズがサンドボックス環境に正常に追加された場合 (つまり、顧客の AOT 配置可能パッケージが LCS 経由で正常にインストールされた場合)、生産データに対して成功しない可能性があります。 たとえば、顧客が **仕入先名** の一意のインデックスを VendTable テーブルに追加します。 このカスタマイズは、サンドボックス環境に重複した仕入先名がない場合、正常にインストールされます。 ただし、生産データベースを復元操作の一環として使用した場合、サンドボックス環境にインバウンドするデータセットに重複があると、インストールが失敗することがあります。 このデータセットの重複はサポートされていません。 したがって、復元操作を成功させる前に、カスタマイズを削除する必要があります。
 
 ### <a name="refresh-is-denied-for-environments-that-run-platform-update-20-or-earlier"></a>プラットフォーム 更新プログラム 20 以前が稼働している環境では、更新処理は拒否されます
 現在、環境がプラットフォーム更新プログラム 20 またはそれ以前を実行している場合は、データベースの更新プロセスを完了することはできません。 詳細については、[現在サポートされているプラットフォーム更新の一覧](../migration-upgrade/versions-update-policy.md) を参照してください。

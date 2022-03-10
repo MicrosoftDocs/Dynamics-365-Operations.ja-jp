@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.openlocfilehash: a8087351fdf1eff72ce5a2dd7670cf603b829db6a13b22b669de0df575426005
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 84c37d86e42fcc324544a8f0739a82f5b3b996fd
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758172"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595411"
 ---
 # <a name="custom-help-toolkit-the-htmlfromrepogenerator-tool"></a>カスタム ヘルプ ツールキット: HtmlFromRepoGenerator ツール
 
@@ -80,25 +80,25 @@ HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> 
 
 次の例では、en-US リポジトリを複製し、en-US の HTML ファイルを生成します。
 
-```
+```dos
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
 次の例では、以前に複製された en-US リポジトリを使用し、en-US の HTML ファイルを生成します。
 
-```
+```dos
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
 次の例では、de-DE と en-US リポジトリを複製し、de の HTML ファイルを生成します。
 
-```
+```dos
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
 次の例では、既存の de-DE と en-US リポジトリを使用し、de の HTML ファイルを生成します。 既存の de-DE リポジトリを使用する場合、そのリポジトリが最新であることを確認してください。
 
-```
+```dos
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNotClone --externalText "(This is an external link)" --enOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 

@@ -2,20 +2,20 @@
 title: Modern POS (MSIX) 拡張機能パッケージへのコード署名
 description: このトピックでは、Modern POS (MSIX) 拡張パッケージにコード署名する方法について説明します。
 author: mugunthanm
-ms.date: 04/13/2021
+ms.date: 10/21/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: e35d132a486621ae614833ab18c7716afa8afe83
-ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
+ms.openlocfilehash: bd44ee78751cabf5bbde1f0831c3829e2e6ad315
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6559974"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782920"
 ---
 # <a name="code-signing-a-modern-pos-msix-extension-package"></a>Modern POS (MSIX) 拡張機能パッケージへのコード署名
 
@@ -40,10 +40,10 @@ Modern Pos JavaScript プロジェクト ファイルにコード署名証明書
 + [ビルド ソリューションのビルド タスクの構成](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-the-build-solution-build-task)
 + [パーッケージの署名用の証明書を作成する](/windows/msix/package/create-certificate-package-signing)
 
-GitHub のサンプルは、ビルド中に自己署名のテスト証明書を生成します。 この証明書は、開発目的でのみ使用されます。 開発シナリオのブロックを解除する場合にのみ使用できます。
+GitHub のサンプルは、ビルド中に自己署名のテスト証明書を生成します。 この証明書は、開発目的でのみ使用されます。 この開発証明書を生産アプリケーション拡張パッケージに使用しないのは、開発シナリオのブロックを解除する方法のみです。
 
 > [!WARNING]
-> この開発証明書を運用アプリの拡張パッケージに使用することはできません。
+> テスト証明書を生成するために、GitHub に含まれているサンプル のスクリプトは、ドメイン アカウントでのみ機能します。 ドメイン アカウントを使用していない場合、ビルドは失敗します。 ドメイン以外のアカウントを実行している場合は、「PackageCertificateKeyFile」セクションに独自の証明書を生成または含める必要があります。
 
 生成されたテスト証明書は、プロジェクトの中間出力ディレクトリで使用可能です。
 

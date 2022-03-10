@@ -1,32 +1,32 @@
 ---
 title: 買掛金勘定の集中支払
-description: 複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 この記事は、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。
+description: 複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 このトピックでは、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。
 author: abruer
-ms.date: 02/12/2017
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14341
 ms.assetid: 7bd02e32-2416-4ac6-8a60-85525267fdb7
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7162545d07cdc249a4f785606957076de1676d5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3030bc7d2501e2162758c94c0dc1a073655c9c0f
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820788"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182521"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>買掛金勘定の集中支払
 
 [!include [banner](../includes/banner.md)]
 
-複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 この記事は、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。
+複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 このトピックでは、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。
 
 複数の法人を含む組織では、すべての支払を処理する法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 また、組織では、支払プロセスが合理化されるため、時間を節約できます。
 

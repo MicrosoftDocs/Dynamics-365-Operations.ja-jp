@@ -2,7 +2,7 @@
 title: ローカル エージェントの更新
 description: このトピックでは、ローカル エージェントを更新する方法について説明します。
 author: faix
-ms.date: 10/06/2021
+ms.date: 10/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,23 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 619f288826d1a3c625df4842514d281e916da8e4
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: 8fa05e3e0df76c3660afea71d0a88efb16375af1
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612342"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728699"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンは、2021 年 10 月にリリースされたバージョン 2.7.1 です。
+このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンは、2021 年 11 月にリリースされたバージョン 3.0.0 です。
 
 | ローカル エージェントのバージョン | 能力 | 
 |---------------------|------------|
+| 3.0.0               | このバージョンには、Edge Scale Unit アプリケーション ライフサイクル管理のサポートが含まれています。 |
+| 2.7.2               | このバージョンには、古いアプリケーション バージョンを配置するための修正が含まれています。 | 
 | 2.7.1               | このバージョンでは、新しい展開オプションが導入され、展開オプションによるバグが修正されます。 |
 | 2.7.0               | 10.0.21 以降のバージョンへの展開または更新を有効にします。 さらに、このバージョンでは Microsoft SQL Server 2019 と一部のバグ修正プログラムがある環境への配置が有効になります。 |
 | 2.6.0               | このバージョンは、Service Fabric SDK をアップグレードし、更新状態のバグを修正して、アプリケーション プロビジョニングのタイムアウトを増やします。 |
@@ -44,6 +46,15 @@ ms.locfileid: "7612342"
 | 1.1.0               | このバージョンでは、正常に展開するために[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)が有効になり、複数モデルのパッケージ展開が可能になり、プラットフォーム更新プログラム 8 および 11 が展開されます。 | 
 | 1.0.0               | このバージョンでは、展開が失敗した場合のために[再構成機能](../../dev-itpro/lifecycle-services/reconfigure-environment.md)が有効になります。 |
 | Null                | この初期バージョンでは、Platform update 8 が導入されています。 |
+
+## <a name="whats-new-in-local-agent-300"></a>ローカル エージェント 3.0.0 の新機能
+
+- ローカル エージェント 3.0.0 には、スケール ユニット管理ポータルを通じて Edge Scale Unit のライフサイクルを管理するためのサポートが含まれます。 詳細については、[分散ハイブリッド トポロジ](../../../supply-chain/cloud-edge/cloud-edge-landing-page.md)を参照してください。
+- このリリースでは、LCS から最新の変更を取り込むために .NET Framework バージョン 4.8 が必要です。
+
+## <a name="whats-new-in-local-agent-272"></a>ローカル エージェント 2.7.2 の新機能
+
+- Local agent 2.7.2 では、古いバージョンのアプリケーションの環境が配置に失敗する問題が修正されます。
 
 ## <a name="whats-new-in-local-agent-271"></a>ローカル エージェント 2.7.1 の新機能
 
@@ -77,7 +88,7 @@ ms.locfileid: "7612342"
 
 ## <a name="whats-new-in-local-agent-240"></a>ローカル エージェント 2.4.0 の新機能
 
-- ローカル エージェント 2.4.0 では、LCS から最新の変更を取り込むために .NET Framework 4.8 が必要になりました。 最新の要件を満たすために、LCS で利用可能な最新のインフラストラクチャ スクリプトを実行してください。
+- ローカル エージェント 2.4.0 では、LCS から最新の変更を取り込むために .NET Framework バージョン 4.7.2 が必要になりました。 最新の要件を満たすために、LCS で利用可能な最新のインフラストラクチャ スクリプトを実行してください。
 - このリリースでは、ハードコーディングされたタイムアウトのために AXService の展開が遅い環境で失敗する問題も修正されています。
 
 ## <a name="whats-new-in-local-agent-230"></a>ローカル エージェント 2.3.0 の新機能

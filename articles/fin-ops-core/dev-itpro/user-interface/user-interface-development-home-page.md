@@ -2,26 +2,24 @@
 title: ユーザー インターフェイス開発ホーム ページ
 description: このトピックには、ユーザー インターフェイス要素の開発に関するトピックへのリンクが含まれています。
 author: RobinARH
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 191453
+ms.reviewer: tfehr
+ms.custom: intro-internal
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4c14a39a35f806dfe9d7fcd40152c1be25ee742
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0669bdeda1a12227e341daa9554f273cc817dd46
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684987"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781138"
 ---
 # <a name="user-interface-development-home-page"></a>ユーザー インターフェイス開発ホーム ページ
 
@@ -95,3 +93,6 @@ Finance and Operation アプリケーションのユーザー インターフェ
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

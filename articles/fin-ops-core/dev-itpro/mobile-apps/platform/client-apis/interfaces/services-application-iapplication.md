@@ -1,23 +1,18 @@
 ---
 title: アプリケーション タイプ
 description: アプリケーションの実行時のインスタンスを表します。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: fa355bf2d7aaef6a4f9e71f29c8fafd422ed7302
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.author: tfehr
+ms.openlocfilehash: 114969807d94f5447180348cb6cdf5ddd0993b83
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744209"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782715"
 ---
 # <a name="application-type"></a>アプリケーション タイプ
 

@@ -4,22 +4,18 @@ description: この記事では、設定コンフィギュレーションに複�
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 14621
-ms.assetid: 1785880c-d729-43b7-bd78-9ae03bac4043
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37d90e11e09d54abc82b3429fa62050d3fdf7d7c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 00d3c461a346c1d15c70f37c3f9353e16d18e9c5
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358921"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781058"
 ---
 # <a name="table-of-contents-form-pattern"></a>目次のフォーム パターン
 
@@ -118,13 +114,13 @@ Microsoft Dynamics AX 2012 以降に加えられるこのパターンへの主�
 
 ### <a name="open-issues"></a>未処理の問題
 
--   None
+-   なし
 
 ### <a name="ax-2012-content"></a>AX 2012 コンテンツ
 
-[![例。](./media/toc3.png)](./media/toc3.png)
+[![売掛金勘定パラメータの例。](./media/toc3.png)](./media/toc3.png)
 
-[![例。](./media/toc4.png)](./media/toc4.png)
+[![給付金の要素の例。](./media/toc4.png)](./media/toc4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

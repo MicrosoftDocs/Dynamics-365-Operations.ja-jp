@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26302762a90ced5a976391daa95b175d905077d3
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 73cec7c7b269d3e13539d09c081e134bfdc29fab
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347232"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781761"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
@@ -32,7 +32,7 @@ ms.locfileid: "6347232"
 -   **為替レート プロバイダー** - 外部ソースから為替レートを取得する担当の X++ クラス。
 -   **為替レート プロバイダー登録** - 使用できるように、為替レート プロバイダーを有効にするプロセス。 既定では、為替レート プロバイダーは配置されると登録されません。
 -   **為替レート プロバイダーのコンフィギュレーション**: 使用方法を決定する為替レート プロバイダーのコンフィギュレーション設定。
--   **為替レート サービス** - 発行された為替レートの一覧を提供する無料または有料の定期売買サービス。 OANDA による外貨為替レートは、為替レートを提供するサービスの例です。
+-   **為替レート サービス** - 発行された為替レートの一覧を提供する無料または有料のサブスクリプション サービス。 OANDA による外貨為替レートは、為替レートを提供するサービスの例です。
 -   **フレームワーク** – プロバイダーからの為替レートの取得および、その為替レートの適切なストレージを調整するインポート通貨の為替レートのフレームワーク。
 -   **SysPlugin フレームワーク** - この拡張フレームワークは、Managed Extension Framework に基づいています。 マネージ拡張フレームワークは、SysPlugin 拡張フレームワークを非 X++ コードで使用できるようにします。 詳細については、[工場メソッドに対する登録] (../機能性/レジスター - 工場 - メソッド) を参照してください。 
 

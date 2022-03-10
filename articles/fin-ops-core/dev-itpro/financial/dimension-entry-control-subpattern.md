@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 15951
 ms.assetid: 6baee22e-2a86-428c-b9e2-178581c57830
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e05868618113c79a00c07fb4fc36aab1fe58b236
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: 3d255c50e9249d80aa976debbdb79b2a652dad71
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111676"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782901"
 ---
 # <a name="dimension-entry-control-subpattern"></a>分析コード エントリ コントロールのサブパターン
 
@@ -33,7 +33,7 @@ ms.locfileid: "6111676"
 
 ## <a name="wireframe"></a>ワイヤーフレーム
 
-![分析コード エントリ コントロールのサブパターンのワイヤーフレーム](media/decwireframe.png)
+![分析コード エントリ コントロールのサブパターンのワイヤーフレーム。](media/decwireframe.png)
 
 ## <a name="model"></a>モデル
 
@@ -55,7 +55,7 @@ TabPage | Group *TopFieldGroup (グループ) \[オプション\]* – **注:** 
 
 フォーム: **CustTable (TabFinancialDimensions)**
 
-![TabFinancialDimensions を使用した CustTable の例](media/decexample.png)
+![TabFinancialDimensions を使用した CustTable の例。](media/decexample.png)
 
 ## <a name="appendix"></a>付録
 

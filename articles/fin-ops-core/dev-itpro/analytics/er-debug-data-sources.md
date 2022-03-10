@@ -2,7 +2,6 @@
 title: 実行された ER 形式のデータソースをデバッグして、データ フローや変換を解析する
 description: このトピックでは、構成されたデータ フローと変換をよりよく理解するために、実行された ER 形式のデータ ソースをデバッグする方法について説明します。
 author: NickSelin
-manager: AnnBe
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: bda81da80996d8cba38ac48e29c47ffef61d3bdb
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562193"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323764"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>実行された ER 形式のデータソースをデバッグして、データ フローや変換を解析する
 
@@ -29,7 +28,7 @@ ms.locfileid: "5562193"
 
 [!include[banner](../includes/preview-banner.md)]
 
-電子レポート（ER）ソリューションを [構成](tasks/er-format-configuration-2016-11.md) してアウトバウンド文書を生成する場合、アプリケーションからデータを取得し、生成される出力にデータを入力するために使用する方法を定義します。 ER ソリューションのライフ サイクル サポートをより効率的には、ご利用のソリューションを、ER [データモデル](general-electronic-reporting.md#DataModelComponent) とその [マッピング](general-electronic-reporting.md#ModelMappingComponent) コンポーネント、および [ER](general-electronic-reporting.md#FormatComponentOutbound)フォーマットとそのマッピング コンポーネントで構成する必要があります。モデル マッピングがアプリケーション固有のものであるのに対し、他のコンポーネントはアプリケーションに依存しないようにしてください。 したがって、一部の ER コンポーネントは、生成された出力にデータを入力するプロセスに [影響を与える](general-electronic-reporting.md#FormatComponentOutbound) 場合があります。
+電子レポート（ER）ソリューションを [構成](tasks/er-format-configuration-2016-11.md) してアウトバウンド文書を生成する場合、アプリケーションからデータを取得し、生成される出力にデータを入力するために使用する方法を定義します。 ER ソリューションのライフ サイクル サポートをより効率的には、ご利用のソリューションを、ER データモデル とその マッピングコンポーネント、および ERフォーマットとそのマッピング コンポーネントで構成する必要があります。モデル マッピングがアプリケーション固有のものであるのに対し、他のコンポーネントはアプリケーションに依存しないようにしてください。 したがって、一部の ER コンポーネントは、生成された出力にデータを入力するプロセスに 影響を与える 場合があります。
 
 生成された出力のデータは、アプリケーション データベースの同じデータとは異なる場合があります。 そのような場合は、どの ER コンポーネントがデータ変換を担当しているかを特定する必要があります。 ER データソース デバッガー機能を実行すると、この調査に必要な時間と費用を大幅に削減できます。 ER 形式の実行を中断して、データソース デバッガ インターフェイスを開くことができます。 この機能では、使用可能なデータソースを参照し、実行する個別のデータソースを選択できます。 この手動実行では、ER 形式の実稼働中にデータソースの実行をシミュレートします。 結果は、受信したデータを分析するページに表示されます。
 
@@ -65,7 +64,7 @@ ms.locfileid: "5562193"
 
 1. 本トピックの [付録3](#appendix3) に記載の手順に従って、仕入先の支払いを処理します。
 
-    ![仕入先の支払い処理中](./media/er-data-debugger-process-payment.png)
+    ![仕入先の支払い処理中。](./media/er-data-debugger-process-payment.png)
 
 2. ZIP ファイルをご利用のコンピューターにダウンロード し、保存します。
 3. ZIP ファイルから **ISO20022 Credit transfer.xml** 支払ファイルを抽出します。
@@ -73,7 +72,7 @@ ms.locfileid: "5562193"
 
     支払ファイルでは、仕入先の銀行口座の国際銀行口座番号 (IBAN) コードにスペースが含まれていません。 したがって、**銀行口座** ページで [入力](#enteredIBANcode) した値とは異なります。
 
-    ![空白のない IBAN コード](./media/er-data-debugger-payment-file.png)
+    ![空白のない IBAN コード。](./media/er-data-debugger-payment-file.png)
 
     ER データソースデバッガーを使用して、ER ソリューションのどのコンポーネントが IBAN コードのスペースの切り捨てに使用されているかを説明します。
 
@@ -86,14 +85,14 @@ ms.locfileid: "5562193"
     > [!NOTE]
     > このパラメーターはユーザーに固有のものまたは会社固有のものであることに注意してください。
 
-    ![ユーザー パラメーター ダイアログ ボックス](./media/er-data-debugger-user-parameters.png)
+    ![ユーザー パラメーター ダイアログ ボックス。](./media/er-data-debugger-user-parameters.png)
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>仕入先支払の処理のデバッグ
 
 1. 本トピックの [付録3](#appendix3) に記載の手順に従って、仕入先の支払いを処理します。
 2. メッセージ ボックスで、**はい** を選択して、仕支入の支払い処理を中断し、代わりに **デバッグ データソース** のページでデータ ソースのデバッグを開始することを確認します。
 
-    ![確認用メッセージボックス](./media/er-data-debugger-start-debugging.png)
+    ![確認用メッセージボックス。](./media/er-data-debugger-start-debugging.png)
 
 ## <a name="debug-data-sources-that-are-used-in-payment-processing"></a>支払処理に使用されるデバッグ データ ソース
 
@@ -116,7 +115,7 @@ ms.locfileid: "5562193"
 
 7. **すべて展開** を選択します。
 
-    ![モデル マッピングの IBAN フィールドの値](./media/er-data-debugger-debugging-model-mapping.png)
+    ![モデル マッピングの IBAN フィールドの値。](./media/er-data-debugger-debugging-model-mapping.png)
 
     このように、仕入先の銀行口座に対して返される IBAN コードにスペースが含まれているため、モデル マッピングではスペースが切り捨てられることはありません。 したがって、データ ソースのデバッグを続行する必要があります。
 
@@ -131,7 +130,7 @@ ms.locfileid: "5562193"
 7. **値の取得** を選択します。
 8. **すべて展開** を選択します。
 
-    ![形式マッピングの IBAN フィールドの値](./media/er-data-debugger-debugging-format-mapping.png)
+    ![形式マッピングの IBAN フィールドの値。](./media/er-data-debugger-debugging-format-mapping.png)
 
     このように、仕入先の銀行口座に返されるIBANコードにはスペースが含まれているため、形式マッピングのデータソースはスペースの切り捨てに責任を負いません。 したがって、データ ソースのデバッグを続行する必要があります。
 
@@ -143,7 +142,7 @@ ms.locfileid: "5562193"
 4. 形式の要素を展開して **ISO20022CTReports** \> **XMLHeader** \> **ドキュメント** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** を選択し、**値を取得する** を選択します。
 5. **すべて展開** を選択します。
 
-    ![形式の IBAN フィールドの値](./media/er-data-debugger-debugging-format.png)
+    ![形式の IBAN フィールドの値。](./media/er-data-debugger-debugging-format.png)
 
    このように、仕入先の銀行口座に対して返される IBAN コードにスペースが含まれているため、形式のバインドではスペースが切り捨てられることはありません。 したがって、**BankIBAN** 要素は、スペースを切り捨てる形式変換を使用するように構成されます。
 
@@ -155,13 +154,13 @@ ms.locfileid: "5562193"
 2. **構成** ページで、**支払モデル** \> **ISO20022 クレジット転送** を選択します。
 3. **デザイナー** を選択し、続いて要素を展開して **ドキュメント** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** を選択します。
 
-    ![形式デザイナー ページの BankIBAN 要素](./media/er-data-debugger-referred-transformation.png)
+    ![形式デザイナー ページの BankIBAN 要素。](./media/er-data-debugger-referred-transformation.png)
 
     このように、**BankIBAN** 要素は、**英数字以外を削除** するように構成されています。
 
 4. **変換** タブを選択します。
 
-    ![BankIBAN 要素が使用する変換タブ](./media/er-data-debugger-transformation.png)
+    ![BankIBAN 要素が使用する変換タブ。](./media/er-data-debugger-transformation.png)
 
     このように、**英数字以外の** 変換は、提供されたテキスト文字列からスペースを切り捨てる式を使用するように構成されています。
 
@@ -169,7 +168,7 @@ ms.locfileid: "5562193"
 
 ER 形式の下書きバージョンを操作デザイナーから直接実行できるように構成した場合は、アクション ウィンドウで **デバッグの開始** を選択することにより、データソース デバッガーにアクセスできます。
 
-![形式デザイナー ページのデバッグ開始ボタン](./media/er-data-debugger-run-from-designer.png)
+![形式デザイナー ページのデバッグ開始ボタン。](./media/er-data-debugger-run-from-designer.png)
 
 編集中の ER 形式の形式マッピングと形式コンポーネントのデバッグが可能です。
 
@@ -177,7 +176,7 @@ ER 形式の下書きバージョンを操作デザイナーから直接実行�
 
 **モデル マッピング** ページから実行できる ER モデル マッピングを構成した場合、アクション ウィンドウで **デバッグの開始** を選択すると、データ ソース デバッガーにアクセスできます。
 
-![モデル マッピング デザイナー ページのデバッグ開始ボタン](./media/er-data-debugger-run-from-designer-mapping.png)
+![モデル マッピング デザイナー ページのデバッグ開始ボタン。](./media/er-data-debugger-run-from-designer-mapping.png)
 
 編集中の ER マッピングのモデル マッピング コンポーネントは、デバッグが可能です。
 
@@ -187,18 +186,18 @@ ER 形式の下書きバージョンを操作デザイナーから直接実行�
 
 ER ソリューションを使用して、処理された仕入先決済の電子決済ファイルをする場合は、 Microsoft Dynamics Lifecycle Services (LCS) の共有アセット ライブラリまたはグローバル リポジトリから入手可能な **ISO20022 クレジット転送** ER 決済フォーマットを [ダウンロード](download-electronic-reporting-configuration-lcs.md) することができます。
 
-![構成リポジトリ ページの ER 決済形式のインポート](./media/er-data-debugger-import-from-repo.png)
+![構成リポジトリ ページの ER 決済形式のインポート。](./media/er-data-debugger-import-from-repo.png)
 
 選択された ER 形式に加えて、**ISO20022 クレジット転送** ER ソリューションの一環として、以下の[構成](general-electronic-reporting.md#Configuration) を Microsoft Dynamics 365 Finance インスタンスに自動的にインポートする必要があります：
 
-- **支払モデル** [ER データ モデル 構成](general-electronic-reporting.md#DataModelComponent)
-- **ISO20022 クレジット連想** [ER 形式の構成](general-electronic-reporting.md#FormatComponentOutbound)
-- **支払 モデル マッピング 1611** [ER モデル マッピングの構成](general-electronic-reporting.md#ModelMappingComponent)
+- **支払モデル** ER データ モデル 構成
+- **ISO20022 クレジット転送** ER 形式の構成
+- **支払 モデル マッピング 1611** ER モデル マッピング コンフィギュレーション
 - **支払 モデルのマッピング先 SO20022** ER モデル マッピングの構成
 
 これらの構成は、ER フレームワークの **構成** ページ（**組織管理** \> **電子レポート** \> **構成**）で確認できます。
 
-![構成ページでインポートされた ER 構成](./media/er-data-debugger-configurations.png)
+![構成ページでインポートされた ER 構成。](./media/er-data-debugger-configurations.png)
 
 上記のいずれかの構成が構成ツリーに表示されない場合は、**ISO20022 クレジット転送** ER 支払形式と同じ方法でダウンロードし、LCS 共有アセットライブラリから手動でダウンロードする必要があります。
 
@@ -214,7 +213,7 @@ ER ソリューションを使用して、処理された仕入先決済の電�
 
     データモデルの **支払** フィールドは、処理中のベンダーの支払いラインのリストを返す **\$notSentTransactions** データ ソースにバインドされていることに注意してください。
 
-    ![モデル マッピング デザイナー ページの支払フィールド](./media/er-data-debugger-model-mapping.png)
+    ![モデル マッピング デザイナー ページの支払フィールド。](./media/er-data-debugger-model-mapping.png)
 
 #### <a name="review-the-format-mapping"></a>形式マッピングを確認する
 
@@ -225,7 +224,7 @@ ER ソリューションを使用して、処理された仕入先決済の電�
 
     **ドキュメント** \> **CstmrCdtTrfInitn** \> **PmtInf** element of the **ISO20022CTReports** \> **XMLHeader** のファイルは **\$PaymentByDebtor** データ ソースにバインドされており。このデータ ソースは、データ モデルの **支払い** フィールドのレコードをグループ化するように構成されていることを留意してください。
 
-    ![形式デザイナー ページの PmtInf 要素](./media/er-data-debugger-format-mapping.png)
+    ![形式デザイナー ページの PmtInf 要素。](./media/er-data-debugger-format-mapping.png)
 
 #### <a name="review-the-format"></a>形式を確認する
 
@@ -235,7 +234,7 @@ ER ソリューションを使用して、処理された仕入先決済の電�
 
     **ドキュメント** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** が、支払いファイルに仕入先アカウントの IBAN コードを入力するように設定されていることを留意してください。
 
-    ![形式デザイナー ページの BankIBAN 要素](./media/er-data-debugger-format.png)
+    ![BankIBAN 形式デザイナー ページにおける新しい形式要素です。](./media/er-data-debugger-format.png)
 
 ## <a name="appendix-2-configure-accounts-payable"></a><a name="appendix2"></a>付録 2：買掛金勘定を構成する
 
@@ -246,7 +245,7 @@ ER ソリューションを使用して、処理された仕入先決済の電�
 3. **ID** クイックタブの **IBAN** フィールド に、<a name="enteredIBANcode"></a>**GB33 BUKB 2020 1555 5555 55** を入力します。
 4. **保存** を選択します。
 
-![仕入先の銀行口座ページで設定された IBAN フィールド](./media/er-data-debugger-iban.png)
+![仕入先の銀行口座ページで設定された IBAN フィールド。](./media/er-data-debugger-iban.png)
 
 ### <a name="set-up-a-method-of-payment"></a>支払方法の設定
 
@@ -256,7 +255,7 @@ ER ソリューションを使用して、処理された仕入先決済の電�
 4. **形式の構成のエクスポート** フィールドで、ER 形式に **ISO20022 クレジット転送** を選択します。
 5. **保存** を選択します。
 
-![支払方法ページにおけるファイル形式の設定](./media/er-data-debugger-payment-method.png)
+![支払方法ページにおけるファイル形式の設定。](./media/er-data-debugger-payment-method.png)
 
 ### <a name="add-a-vendor-payment"></a>仕入先の支払を追加する
 
@@ -268,7 +267,7 @@ ER ソリューションを使用して、処理された仕入先決済の電�
 6. **支払方法** フィールドで、**SEPA CT** を選択します。
 7. **保存** を選択します。
 
-![仕入先支払ページに追加された仕入先の支払](./media/er-data-debugger-payment-journal.png)
+![仕入先支払ページに追加された仕入先の支払。](./media/er-data-debugger-payment-journal.png)
 
 ## <a name="appendix-3-process-a-vendor-payment"></a><a name="appendix3"></a>付録 3：仕入先の支払いを処理する
 

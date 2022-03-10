@@ -2,11 +2,9 @@
 title: 規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
 description: このトピックは、規制コンフィギュレーション サービスから電子申告 (ER) コンフィギュレーションをインポートする方法について説明します。
 author: NickSelin
-manager: AnnBe
-ms.date: 11/07/2018
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionRepositoryTable
 audience: IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7f49fe0244b6e48546a2de96f0f261b50af3683e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3e6c9399619c5b723bde4965bc26a3b178867f2458de551b066cbc8bf4ee64a7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680576"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745926"
 ---
 # <a name="import-electronic-reporting-er-configurations-from-regulatory-configuration-services-rcs"></a>規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) 構成のインポート
 
@@ -28,7 +26,7 @@ ms.locfileid: "4680576"
 
 規制コンフィギュレーション サービス (RCS) を使用すると電子申告 (ER) 構成をインポートできます。 ER ツールは、1 つの会社用にプロビジョニングされた RCS の各インスタンスで構成されているコンフィギュレーションの一覧へのアクセスを提供します。 この機能を使用して、現在のインスタンスに、RCS インスタンスで構成した構成をインポートできます。 コンフィギュレーションをインポートした後、受信ドキュメントの処理や、送信電子ドキュメントの生成に使用できます。
 
-この機能の詳細を知るには、このトピックの例を実行します。 または、7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの一部である **RCS からの ER インポート構成** タスク ガイドを再生します。 このタスク ガイドは [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=2082739)からダウンロードできます。 RCS インスタンスから現在のインスタンスに ER コンフィギュレーションをインポートするプロセスを示します。
+この機能の詳細を知るには、このトピックの例を実行します。 または、7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの一部である [RCS からの ER インポート構成](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) タスク ガイドをダウンロードおよび再生します。 RCS インスタンスから現在のインスタンスに ER コンフィギュレーションをインポートするプロセスを示します。
 
 ## <a name="example-import-an-er-configuration-from-rcs"></a>例: RCS からの ER コンフィギュレーションのインポート
 
@@ -66,3 +64,6 @@ ms.locfileid: "4680576"
 ## <a name="additional-resource"></a>その他のリソース
 
 - [電子申告 (ER) の概要](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

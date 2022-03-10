@@ -1,34 +1,25 @@
 ---
 title: エラー管理と警告通知
 description: このトピックでは、問題のトラブルシューティングに役立つエラー ログと警告通知について説明します。
-author: sabinn-msft
-manager: AnnBe
+author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Developer
-ms.reviewer: v-douklo
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 728aa5905c15422bc60a7ab8fa90f25e4a984576
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c6f6fbf3cc17df5ff35757d36a80647d3984b18e
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684041"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061587"
 ---
 # <a name="error-management-and-alert-notifications"></a>エラー管理と警告通知
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -36,19 +27,36 @@ Microsoft は、エラーに強い二重書き込みを実現するために、�
 
 ## <a name="consolidated-error-management"></a>統合されたエラー管理
 
-アクティビティ ログは、特定のテーブル マップが **実行していません** の状態から **実行中** 状態に移行するイベントの時系列一覧を提供します。 たとえば、一覧には、作成されたマッピング、フィールド マッピングの更新、実行されたマッピングを含めることができます。 さらに、エラーが発生した場合は、ログをダウンロードして、次のレベルの詳細を取得できます。
+アクティビティ ログは、特定のテーブル マップが **実行していません** の状態から **実行中** 状態に移行するイベントの時系列一覧を提供します。 たとえば、一覧には、作成されたマッピング、列マッピングの更新、実行されたマッピングを含めることができます。 さらに、エラーが発生した場合は、ログをダウンロードして、次のレベルの詳細を取得できます。
 
-![アクティビティ ログの表示](media/activity-log.png)
+![活動ログの表示。](media/activity-log.png)
 
-Finance and Operations アプリ と Dataverse の間で既存のデータをコピーしているときに問題が発生した場合、**初回同期の詳細** タブにエラー数が表示されます。 また、原因となっているエラーを修正した後、実行を再実行することもできます。
+## <a name="re-running-execution-for-initial-sync"></a>初期同期の実行の再実行
 
-![エラーの修正と再実行](media/fix-error-rerun.png)
+財務と運用アプリと Dataverse の間で既存のデータをコピーしているときに問題が発生した場合は、**初期同期の詳細** タブにエラーの数が表示されます。 
 
-さらにドリル ダウンして、エラーが発生した同期の方向を表示できます。 この情報は、トラブルシューティングの範囲を絞り込むのに役立ちます。
+![初期同期エラー。](media/Initial-sync-rerun-1.png)
 
-![同期方向エラーの表示](media/sync-direction-error.png)
+個々のプロジェクトをクリックすると、同期が失敗した方向 (財務と運用アプリから Dataverse またはその逆) と、失敗した理由の詳細が表示されます。 基になる問題を修正することを選択してから、最後の同期で失敗またはエラーが発生したレコードとともに、に実行全体を再試行する **実行の再実行** を選択できます。これが完了すると、初期同期が完了し、テーブルは **実行中** の状態に戻ります。 エラーを無視して新しい増分データを追加する場合があります。 この場合は、**エラーなしで再実行** を選択できます。これにより、新しいデータを追加し、エラーが発生したレコードを再試行する必要がなくなります。 
 
-同様に、**キャッチ アップ エラー** タブは、一時停止状態から再開したときの問題のトラブルシューティングに役立ちます。
+![エラーのある初期同期再試行。](media/Initial-sync-rerun-3.png)
+
+完了すると、状態が **完了** とマークされ、テーブルを **実行中** の状態に変更できます。 
+
+![エラーのない初期同期再試行。](media/Initial-sync-rerun-4.png)
+
+## <a name="catch-up-errors-from-pausing-a-table-map"></a>テーブル マップの一時停止からのキャッチアップ エラー
+
+[一時停止の後にテーブル マップを再開する場合](pause-for-maintenance.md)、送信先アプリでのビジネス検証など、さまざまな理由により、一部のレコードがエラーが発生し、書き込みに失敗することがあります。 このような場合、レコードは引き続きキューに残り、**キャッチ アップ エラー** タブに表示されます。
+
+![キューに入っているレコードの再試行の選択。](media/Queued-Insights-retry-selected3.png "キューに入れられたレコードの再試行を選択")
+
+詳細なエラー メッセージは、基になる問題を修正するのに役立ちます。その後、**再試行の選択** レコードまたは **すべて再試行** レコードを選択できます。 再試行が成功すると、**再試行の状態** が **完了** とマークされます。
+
+![キューに入っているレコードの完了。](media/Queued-Insights-retry-selected4.png "キューに入れられたレコードの再試行を選択")
+
+> [!NOTE]
+> エラーが発生したレコードは、7 日間キューで使用可能になり、その後キューは削除されます。 場合によっては、これらのレコードが不要になり、キューから削除できることがあります。
 
 ## <a name="alert-notifications"></a>警告の通知
 
@@ -56,14 +64,20 @@ Finance and Operations アプリ と Dataverse の間で既存のデータをコ
 
 次の図は、**アプリケーション エラー** タイプのエラーが 15 分以内に 10 回発生した場合に、二重書き込みが一時停止する例を示しています。
 
-![1 つ以上の警告設定の作成](media/create-alert-settings.png)
+![1 つ以上の警告設定の作成。](media/create-alert-settings.png)
 
-**警告設定の作成** を選択することにより、追加の警告を作成できます。 また、個人またはグループのどちらに通知を送信するかを選択したり、二重書き込みシステムがユーザーに代わりにアクションを実行するかどうかを選択することもできます。
+**警告設定の作成** を選択することにより、追加の警告を作成できます。 また、個人またはグループのどちらに通知を送信するかを選択したり、二重書き込みシステムがユーザーに代わりにアクションを実行するかどうかを選択することもできます。 警告をグループに送信するには、コンマで区切られた値、例えば "id1@contoso.com, id2@contoso.com" を入力します。
 
-![警告の作成と通知の送信](media/create-alert-notification.png)
+![警告の作成と通知の送信。](media/create-alert-notification.png)
+
+> [!NOTE]
+> 警告を有効にするには、テーブル マップを再起動する必要があります
 
 この機能は、計画外のメンテナンスがある場合に特に便利です。 たとえば、アプリの 1 つが使用できなくなり、定義したしきい値に基づいて、二重書き込みが一時停止状態になり、すべての新しい要求がキューに入れられるます (つまり、それらは失われません)。 基になる問題を修正し、両方のアプリが正常に実行されたら、一時停止状態から再開できます。 更新はキューから読み戻され、復元されたアプリに書き込まれます。
 
 ## <a name="next-steps"></a>次のステップ
 
 [アプリケーション ライフサイクル管理](app-lifecycle-management.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

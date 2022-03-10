@@ -1,32 +1,30 @@
 ---
 title: 固定資産転記プロファイルの設定
-description: このタスク ガイドでは、固定資産転記プロファイルを設定します。
-author: saraschi2
-manager: AnnBe
+description: この手順では、固定資産の転記プロファイルを設定する方法について説明します。
+author: moaamer
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2041a8cb36d106bfe3b5a858725c83d278f666a3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ee0006c9588a22d720687e7aceb49acc756b83e1
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219918"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883771"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>固定資産転記プロファイルの設定
 
 [!include [banner](../../includes/banner.md)]
 
-このタスク ガイドでは、固定資産転記プロファイルを設定します。  これは USMF の法人に対して経理担当ロールとデモ データを使用します。  タスク ガイドにある例は、基本転記プロファイル用であるのに対して、転記プロファイルは、特定の勘定科目表と財務報告の要件に基づいて作成される必要があります。
+この手順では、固定資産の転記プロファイルを設定する方法について説明します。 このトピックでは、基本的な投稿プロファイルの例を示していますが、投稿プロファイルは、特定の勘定科目表や財務報告要件に合わせて作成する必要があります。
 
 1. ナビゲーション ウィンドウで、**モジュール > 固定資産 > 設定 > 固定資産転記プロファイル** に移動します。
 2. **新規** をクリックします。

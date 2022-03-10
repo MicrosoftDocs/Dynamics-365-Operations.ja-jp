@@ -5,7 +5,6 @@ author: faix
 ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 94779fd90af4d25b792043db92c5d237372cab20
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7b20ed1d325b61fd5a32b0268d19d1cf7e0d44d557d20a6c6e82328c21c27faa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745333"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713878"
 ---
 # <a name="configure-high-availability-for-sql-server-reporting-services-ssrs-nodes"></a>SQL Server Reporting Services (SSRS) ノードの高可用性を構成する
 
@@ -30,11 +29,11 @@ ms.locfileid: "5745333"
 
 このシナリオでは、Windows フェールオーバー クラスターを使用します。 したがって、すべての要求を受信する 1 つのアクティブなノードと、1 つのアイドルなパッシブ ノードが必要になります。 アクティブなノードが使用できなくなると、クラスターはこのイベントを検出し、パッシブ ノードはすべてのネットワーク トラフィックの受信を開始します。
 
-このトピックでは、Windows フェールオーバー クラスターの設定についてカバーしていません。 詳細については、[フェールオーバー クラスターを作成する](https://docs.microsoft.com/windows-server/failover-clustering/create-failover-cluster)を参照してください。
+このトピックでは、Windows フェールオーバー クラスターの設定についてカバーしていません。 詳細については、[フェールオーバー クラスターを作成する](/windows-server/failover-clustering/create-failover-cluster)を参照してください。
 
 クラスターの設定後に、インストールを構成できます。 以下の例は、次の図に表示される情報に基づいています。
 
-![Windows フェールオーバー クラスター構成の例](./media/WFC.png)
+![Windows フェールオーバー クラスター構成の例。](./media/WFC.png)
 
 1. 構成ファイル (**ConfigTemplate.xml**) を更新します。
 

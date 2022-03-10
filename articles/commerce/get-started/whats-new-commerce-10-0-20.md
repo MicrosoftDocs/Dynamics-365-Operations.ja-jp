@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Commerce 10.0.20 (2021 年 7 月) の機能のプレビュー
+title: Dynamics 365 Commerce 10.0.20 (2021 年 8 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.20 の新機能または変更された機能について説明します。
 author: josaw1
 ms.date: 05/27/2021
@@ -13,23 +13,23 @@ ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-04-30
-ms.dyn365.ops.version: 10.0.209
-ms.openlocfilehash: 6fc250ca30333048fc80c4f062a1d4c966ea7e1c
-ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
+ms.dyn365.ops.version: 10.0.20
+ms.openlocfilehash: 9cc3d4e92d36b7c6989224f5bd48e1bd2c8e773e
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6123378"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675141"
 ---
-# <a name="whats-new-and-changed-in-dynamics-365-commerce-10020-july-2021"></a>Dynamics 365 Commerce 10.0.20 (2021 年 7 月) の新機能と変更された機能
+# <a name="whats-new-and-changed-in-dynamics-365-commerce-10020-august-2021"></a>Dynamics 365 Commerce 10.0.20 (2021 年 8 月) の新機能と変更された機能
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 このトピックでは、Microsoft Dynamics 365 Commerce 10.0.20 の新機能または変更された機能について列挙します。 このバージョンのビルド番号は 10.0.886 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2021 年 5 月
-- **リリースの一般提供 (手動更新):** 2021 年 6 月
+- **リリースの一般提供 (手動更新):** 2021 年 7 月
 - **リリースの一般提供 (自動更新):** 2021 年 7 月
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
@@ -42,14 +42,14 @@ ms.locfileid: "6123378"
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
 | 製品分析コード |  Commerce 本社で製品の分析コード値を見本として構成します。  |  [製品の分析コード値を見本として表示する設定](../dev-itpro/dimensions-swatch.md)|
 | 製品分析コード |  Commerce 本社での表示設定を構成します。 |  [製品の分析コードの表示設定を適用する](../dimension-settings.md) |
-| 販売時点管理 (POS) | 販売時点管理 (POS) でシリアル番号管理された製品の返品 | 返品プロセスの一部としてシリアル番号が付された品目を検証するには、この機能を使用します。 <!--[Return serial number-controlled products in point of sale (POS)](../pos-serial-returns.md)--> |
-| 販売時点管理 (POS) | 販売時点管理 (POS) での返品の作成 | この機能により、POS アプリケーションで、現金売りまたは顧客注文の返品を開始できます。 <!--[Create returns in point of sale (POS)](../pos-returns.md) --> |
+| 販売時点管理 (POS) | 販売時点管理 (POS) でシリアル番号管理された製品の返品 | [販売時点管理 (POS) でシリアル番号管理された製品の返品](../pos-serial-returns.md)|
+| 販売時点管理 (POS) | 販売時点管理 (POS) での返品の作成 | [販売時点管理 (POS) での返品の作成](../pos-returns.md) |
 | 販売時点管理 (POS) | [Chromium レンダリング エンジンおよび統合されたハードウェア サポートを含む Store Commerce アプリ](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/store-commerce-app-chromium-rendering-engine-integrated-hardware-support)  |  [Microsoft Dynamics 365 Commerce での Store Commerce アプリ (プレビュー)](../dev-itpro/store-commerce.md)  |
 | 販売時点管理 (POS)  | [POS からの在庫調整のサポート](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/support-inventory-adjustments-pos)  |   POS を使用して、在庫の出し入れの調整を行います。 |
 | 支払利息  | [ウォレット スタイルの支払方法の初期設定サポート](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/out-of-box-support-wallet-style-payment-methods)  | [Wallet 支払サポート](../wallets.md) |
 |  支払利息 |  [店頭チェックアウトでのリファクターされた支払処理](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/refactored-payment-processing-storefront-checkout)  | この機能により、支払プロセッサへの認証要求数が減少し、欧州連合の強力な顧客認証 (SCA) へのより良いサポートが追加されます。 |
 | E コマース  |  [ゲスト顧客の注文の検索を有効にする](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enable-order-lookup-guest-customers)   | この機能は、ゲスト チェックアウトの注文の検索を有効にします。 |
-|   E コマース|  [在庫を認識するように強化された e コマース製品の検出](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhanced-e-commerce-product-discovery-be-inventory-aware)  | 製品の在庫確認を有効にして、使用可能な在庫がある場合にのみ製品の購入を許可します。 | 
+|   E コマース|  [在庫を認識するように強化された e コマース製品の検出](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhanced-e-commerce-product-discovery-be-inventory-aware)  | [在庫設定の適用](../inventory-settings.md)<br>[検索結果モジュール](../search-result-module.md) | 
 | E コマース  |  [E コマースの在庫状態検索の API に対する拡張機能](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhancements-e-commerce-inventory-availability-lookup-apis)  |  この機能によって、GetEstimatedAvailability API および GetEstimatedProductAvahouseAvailability API に拡張機能が提供されます。  |
 |  E コマース   |   [最新の e コマース サイトを表示するための没入型テーマ](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/immersive-theme-showcase-modern-e-commerce-site)   | この新しいテーマを使用して、e コマース サイトで最新かつ没入型のエクスペリエンスを構築します。 |
 | グローバリゼーション |  [ブラジル向け Adyen 支払コネクタ](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/adyen-payment-connector-brazil)    |  ブラジルにある店舗での支払操作をサポートするには、Adyen 向け Dynamics 365 支払コネクタを使用します。 | 
@@ -64,6 +64,8 @@ Dynamics 365 Commerce 10.0.20 には、プラットフォーム更新プログ�
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8) を参照してください。
+
+Commerce 固有の重大な変更を加える場合は、[Dynamics 365 Commerce オンライン SDK に関するよく寄せられる質問](../e-commerce-extensibility/sdk-faq.md) を参照してください。
 
 ### <a name="dynamics-365-2021-release-wave-1-plan"></a>Dynamics 365: 2021 リリースのウェーブ 1 プラン
 

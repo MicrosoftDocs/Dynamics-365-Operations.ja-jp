@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 29151
 ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45a3264a0ab67b723de3c7899cec2e407c7a4eb4a408a42e88e76a67f5bb9f27
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ecb53966e102aa945733bc091a33e0df9a23010d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738494"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781136"
 ---
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 

@@ -1,37 +1,30 @@
 ---
-title: Finance and Operations アプリのアップグレードで生じる問題のトラブルシューティング
-description: このトピックでは、Finance and Operations アプリの更新に関する問題の修正に役立つトラブルシューティング情報を提供します。
+title: 財務と運用アプリのアップグレードに関する問題のトラブルシューティング
+description: このトピックでは、財務と運用アプリの更新に関する問題の修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 97509ac662fad6181cbd60e5e0a44f674410acb9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: c7c036ef44b0470c9b3f8087e7b5b1e16dde1b34
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754041"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062828"
 ---
-# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Finance and Operations アプリのアップグレードで生じる問題のトラブルシューティング
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>財務と運用アプリのアップグレードに関する問題のトラブルシューティング
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
-このトピックでは、Finance and Operations アプリと Dataverse 間のデュアル書き込み統合に関するトラブルシューティングの情報を提供します。 このトピックでは、Finance and Operations アプリの更新に関する問題の修正に役立つトラブルシューティングに特化した情報を提供します。
+
+このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、財務と運用アプリの更新に関する問題の修正に役立つトラブルシューティングに特化した情報を提供します。
 
 > [!IMPORTANT]
 > このトピックで説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
@@ -40,7 +33,7 @@ ms.locfileid: "5754041"
 
 **問題の修正に必要な役割：** システム管理者
 
-**DualWriteProjectConfiguration** テーブルを使用して、Platform update 30 に Finance and Operations アプリを更新すると、次の例のようなエラー メッセージが表示される場合があります。
+**DualWriteProjectConfiguration** テーブルを使用して、Platform update 30 に財務と運用アプリを更新すると、次の例のようなエラー メッセージが表示される場合があります。
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -50,7 +43,7 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 
 問題を解決するには、次の手順に従います。
 
-1. Finance and Operations アプリの仮想マシン（VM）にサイン インします。
+1. 仮想マシン (VM) にサインインし、財務と運用アプリにアクセスします。
 2. Visual Studio を管理者で起動し、アプリケーション オブジェクト ツリー（AOT）を開きます。
 3. **DualWriteProjectConfiguration** を検索します。
 4. AOT で、**DualWriteProjectConfiguration** を右クリックし、**新しいプロジェクトに追加する** を選択します。 **OK** を選択すると、既定のオプションを使用した新たなプロジェクトが作成されます。
@@ -68,14 +61,14 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 
 *スキーマ内の存在しないソース フィールド \<field name\>。*
 
-![存在しないソース列のエラー メッセージの例](media/error_missing_field.png)
+![存在しないソース列のエラー メッセージの例。](media/error_missing_field.png)
 
 この問題を解決するには、まず次の手順に従って、列がテーブルに含まれていることを確認します。
 
-1. Finance and Operations アプリの VM にログインします。
+1. VM にサインインし、財務と運用アプリにアクセスします。
 2. **ワークスペース \> データ管理** に移動して、**フレームワーク パラメーター** タイルを選択し、**テーブルの設定** タブにて、**テーブル リストの更新** を選択してテーブルを更新します。
-3. **ワークスペース \> データ管理** に移動し、**データ テーブル** タブを選択して、テーブルが一覧表示されていることを確認します。 テーブルが一覧に表示されない場合は、Finance and Operations アプリの VM にサインインして、テーブルが使用可能となっていることを確認してください。
-4. Finance and Operations アプリにて **デュアル書き込み** ページの **テーブル マッピング** ページを開きます。
+3. **ワークスペース \> データ管理** に移動し、**データ テーブル** タブを選択して、テーブルが一覧表示されていることを確認します。 テーブルが一覧に表示されない場合は、財務と運用アプリの VM にサインインして、テーブルが使用可能となっていることを確認してください。
+4. 財務と運用アプリで **デュアル書き込み** ページの **テーブル マッピング** ページを開きます。
 5. **テーブル リストの更新** を選択すると、テーブル マッピングの列が自動的に入力されます。
 
 問題が解決しない場合は、次の手順を実行してください。
@@ -83,10 +76,10 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 > [!IMPORTANT]
 > これらの手順では、テーブルを削除してから再度追加するプロセスを示します。 問題を回避するには、手順を正確に守ってください。
 
-1. Finance and Operations アプリで、**ワークスペース \> データ管理** に移動し、**データ テーブル** タイルを選択します。
+1. 財務と運用アプリで、 **ワークスペース \> データ管理** に移動し、**データ テーブル** タイルを選択します。
 2. 属性が欠落しているテーブルを検索します。 ツールバーの **ターゲット マッピングの変更** をクリックします。
 3. **ステージングをターゲットにマッピング** ウィンドウで、**マッピングの生成** をクリックします。
-4. Finance and Operations アプリにて **デュアル書き込み** ページの **テーブル マッピング** ページを開きます。
+4. 財務と運用アプリで **デュアル書き込み** ページの **テーブル マッピング** ページを開きます。
 5. マッピング上で属性が自動設定されていない場合は、**属性の追加** ボタンをクリックして手動で追加し、**保存** をクリックします。 
 6. マッピングを選択し、**実行** をクリックします。
 

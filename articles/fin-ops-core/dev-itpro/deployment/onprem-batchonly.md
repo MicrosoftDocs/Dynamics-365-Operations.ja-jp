@@ -2,11 +2,9 @@
 title: オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
 description: このトピックでは、環境をコンフィギュレーションして、バッチのみおよび対話型のみの AOS ノードを配置できるようにする方法について説明します。
 author: faix
-manager: AnnBe
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 4c6f7b558be86ae975f26d960c01d065ff7a920e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bc0d39411187414bb9cea73be1ca16596d5b6bb19981bbc9aaddd823994707b4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685457"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724327"
 ---
 # <a name="configure-batch-only-and-interactive-only-aos-nodes-in-on-premises-deployments"></a>オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
 
@@ -215,3 +213,6 @@ ms.locfileid: "4685457"
      > [!IMPORTANT]
     > この手順により、ダウンタイムが発生するため、しばらくの間環境を使用できなくなる可能性があることを確認してください。 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

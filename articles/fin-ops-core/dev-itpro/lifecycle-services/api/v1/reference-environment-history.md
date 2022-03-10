@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jorichar
 ms.search.validFrom: 2021-08-12
-ms.openlocfilehash: d1932295283548b079a9f57437242bdd409ee4bd
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 11f4fbf3371e82fc2c6ed1ae5b29d8933b5e5b82
+ms.sourcegitcommit: 5aecb04178e45e1fdea032b3ef3ce338332005dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404448"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7966702"
 ---
 # <a name="fetch-environment-history"></a>フェッチ環境履歴
 
@@ -98,8 +98,8 @@ HTTP 要求のヘッダーで次のヘッダー値を使用します。
             "Name": "Finance insights",
             "Type": "InstallAddin",
             "TypeDisplay": "Install addin",
-"StartDateTimeUtc": "2021-06-03T15:10:00.0",
-            "EndDateTimeUtc": "2021-06-03T15:11:00.0",
+            "StartDateTimeUTC": "2021-06-03T15:10:00.0",
+            "EndDateTimeUTC": "2021-06-03T15:11:00.0",
             "Status": "Completed",
             "ActivityId": "0924ecdd-1b80-40cc-8158-172785841c15",
             "EnvironmentId": "9ba7fcc3e3b941e09eccd40abde85429",
@@ -109,8 +109,8 @@ HTTP 要求のヘッダーで次のヘッダー値を使用します。
             "Name": "Contoso Package deployment",
             "Type": "ApplicationHotfix",
             "TypeDisplay": "Application deployable package",
-            "StartDateTimeUtc": "2021-06-03T10:10:00.0",
-            "EndDateTimeUtc": "2021-06-03T10:11:00.0",
+            "StartDateTimeUTC": "2021-06-03T10:10:00.0",
+            "EndDateTimeUTC": "2021-06-03T10:11:00.0",
             "Status": "Completed",
             "ActivityId": "34703e5c3d224d1685dbaa7f8677d237",
             "EnvironmentId": "9ba7fcc3e3b941e09eccd40abde85429",

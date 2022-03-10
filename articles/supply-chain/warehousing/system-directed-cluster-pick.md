@@ -2,11 +2,9 @@
 title: システム主導のクラスター ピッキング
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management のシステム主導のクラスター ピッキングの概要について説明します。
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkCluster, WHSClusterProfile
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: dca006ca00e7ff5aa3681daac713f1e93187cd9c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3c474705e5260f4be62bc59d8d1d84a1ba597b6f96eafd8f673cc110285fc597
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239200"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772355"
 ---
 # <a name="system-directed-cluster-picking"></a>システム主導のクラスター ピッキング
 

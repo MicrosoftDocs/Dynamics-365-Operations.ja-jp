@@ -1,23 +1,18 @@
 ---
 title: フィールド タイプ
 description: フィールド コントロール タイプ。
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
-ms.search.validFrom: ''
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 49498735f650fcac52bcb9a52d7db79cd8c6eead
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.author: tfehr
+ms.openlocfilehash: 01ab6697b7efc97f51095847b88a942b50716050
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749255"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782176"
 ---
 # <a name="field-type"></a>フィールド タイプ
 

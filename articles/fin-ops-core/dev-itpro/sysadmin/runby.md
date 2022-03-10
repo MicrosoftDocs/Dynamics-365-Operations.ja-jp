@@ -2,11 +2,9 @@
 title: バッチ マネージャーのセキュリティ ロール
 description: このトピックでは、バッチ ジョブの管理に使用されるバッチ管理者のセキュリティ ロールに関する情報を提供します。
 author: hasaid
-manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2018-08-15
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 67e8120a3a01d927d1e14dfa9576f1ace1216791
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8dc6e83606b85b52704828ae4ef557e9b4d35cc38220f0cd104b555b3e140d30
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682473"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750526"
 ---
 # <a name="batch-manager-security-role"></a>バッチ マネージャーのセキュリティ ロール
 
@@ -38,11 +36,11 @@ ms.locfileid: "4682473"
 
 1. **システム管理** > **セキュリティ** > **ユーザーをロールに割り当てる** を選択します。
 
-![ロールへのユーザーの割り当て](./media/assign-batchmanager-role.png) 
+![ロールにユーザーを割り当てます。](./media/assign-batchmanager-role.png) 
 
 2. **バッチ ジョブ マネージャー** をクリックし、左ウィンドウで **ユーザーを手動で割り当てる/除外する** を選択します。
 
-![バッチ マネージャー ロール](./media/assign-batchmanager-role-2.png) 
+![バッチ マネージャー ロール。](./media/assign-batchmanager-role-2.png) 
 
 3. 一覧からユーザーを選択し、**ロールに割り当て** を選択します。
 4. ページを閉じます。 
@@ -51,4 +49,7 @@ ms.locfileid: "4682473"
 
 **実行者ユーザー** 機能により、バッチ管理者は、バッチ ジョブを実行するユーザーを指定できます。 この機能は、現在ジョブの実行が割り当てられているユーザーを変更する場合、または別の会社にバッチ ジョブをコピーするときにユーザーをすばやく設定する場合に便利です。 この機能は、バッチ ジョブをコピーするのにも使用できます。
 
-![実行者ユーザー](./media/runby-user.png)  
+![実行者ユーザー。](./media/runby-user.png)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

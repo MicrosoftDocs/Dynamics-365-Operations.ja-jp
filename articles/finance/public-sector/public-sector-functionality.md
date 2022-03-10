@@ -1,7 +1,7 @@
 ---
 title: 公的機関ホーム ページ
-description: Dynamics 365 Finance は、一般的な公的機関の業務プロセスをサポートしています。 これには、予算編成、購買、買掛金勘定、売掛金勘定のタスクなどがあります。
-author: ShylaThompson
+description: Dynamics 365 Finance は、一般的な公的機関の業務プロセスをサポートしています。 これらのプロセスには、予算編成、購買、買掛金勘定、売掛金勘定のタスクなどがあります。
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b8779f0ece4f9befe612750ceb9c78e19a7a483
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: f59522ab857445d69012f4cfdfade47c40189266
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338658"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817744"
 ---
 # <a name="public-sector-home-page"></a>公的機関ホーム ページ
 

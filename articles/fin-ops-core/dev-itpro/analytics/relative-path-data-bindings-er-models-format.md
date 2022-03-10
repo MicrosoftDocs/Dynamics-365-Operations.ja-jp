@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b9d072914b5effdd733ec2c18e4ada877f932ba8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: af3a646e24976d50f83d8564e3006fc2c50d8e2a
+ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350163"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8313570"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>ER モデルおよび形式のデータ バインディングにおける相対パスの使用
 
@@ -26,8 +26,8 @@ ms.locfileid: "6350163"
 
 電子申告 (ER) ツールは、ユーザーが電子フォーマット構造を定義できるようにし、アプリケーションに存在するデータとアルゴリズムを使用してこれらの構造を入力する方法を説明します。 詳細については、[電子申告 (ER) コンフィギュレーションの作成](electronic-reporting-configuration.md) を参照してください。 Finance and Operations のデータを取得し、それを使用して電子ドキュメントを生成するためのデータ フローを指定するには、以下を実行する必要があります。
 
-- 設計されたドメイン固有の[データ モデル](general-electronic-reporting.md#data-model-and-model-mapping-components)の要素に対して構成されたデータ ソースをバインドします。 モデル構造と選択されたデータ ソースは、複雑な階層構造の一部であることがあります。 このため、最終バインディングは非常に大きくなり、異なるタイプのさまざまな要素 (たとえば、関係、テーブル、およびメソッド) を含むことがあります。 バインディングは読み取れず、特に所有者でない場合、確認や把握が非常に複雑になることがあります。 
-- データ モデル要素と[形式](general-electronic-reporting.md#FormatComponentOutbound) コンポーネントをバインドして、データ モデルから生成された形式の出力にどのようなデータが入力されるかを定義します。
+- 設計されたドメイン固有のデータ モデルの要素に対するコンフィギュレーションされたデータ ソースをバインドします。 モデル構造と選択されたデータ ソースは、複雑な階層構造の一部であることがあります。 このため、最終バインディングは非常に大きくなり、異なるタイプのさまざまな要素 (たとえば、関係、テーブル、およびメソッド) を含むことがあります。 バインディングは読み取れず、特に所有者でない場合、確認や把握が非常に複雑になることがあります。 
+- データ モデル要素と形式コンポーネントをバインドして、データ モデルから生成された形式の出力に設定するデータを定義します。
 
 ER マッピング デザイナーの使用可能性を改善する目的でに、[相対パス](er-formula-language.md#relative-path)機能がリリースされました。 既定では、ER デザイン エクスペリエンスが有効になっているアプリケーションのすべての新しいインスタンスに対して、相対パスの表示オプションが有効になっています (Microsoft Dynamics 365 Finance、Microsoft Regulatory Configuration Service)。 この ER バインディングのプレゼンテーションと共に動作している時に、フル パスを使用しつづけられるように、相対パス パラメータを実装しています。
 

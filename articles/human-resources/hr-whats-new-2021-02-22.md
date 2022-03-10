@@ -2,15 +2,12 @@
 title: Dynamics 365 Human Resources (2021 年 2 月 22 日) の新機能および変更された機能
 description: このトピックでは、2021 年 2 月 22 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
-manager: tfehr
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 363ea7d47a46234b2854a073029859c31277d88f
-ms.sourcegitcommit: 75b432ce9019c81253eb6bd865db905701e28a26
+ms.openlocfilehash: 379a902489bdccdfa3490a830cc3b0bbf7639e7f0b62079a3ff3a999b0a7c412
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5579358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721562"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-22-2021"></a>Dynamics 365 Human Resources (2021 年 2 月 22 日) の新機能および変更された機能
 
@@ -33,7 +30,7 @@ ms.locfileid: "5579358"
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
-新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2021 リリース ウェーブ 1 の概要](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/) を参照してください。
+新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2021 リリース ウェーブ 1 の概要](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/) を参照してください。
 
 ## <a name="in-this-release"></a>今回のリリース
 
@@ -45,7 +42,7 @@ ms.locfileid: "5579358"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| Microsoft Teams 用 Dynamics 365 Human Resources アプリ | [Microsoft Teams の従業員の休暇および欠勤体験](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Teams の Human Resources アプリ](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Teams での休暇要求の管理](hr-teams-leave-app.md) |
+| Microsoft Teams 用 Dynamics 365 Human Resources アプリ | [Microsoft Teams の従業員の休暇および欠勤体験](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Teams の Human Resources アプリ](./hr-admin-teams-leave-app.md)<br>[Teams での休暇要求の管理](hr-teams-leave-app.md) |
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -69,9 +66,9 @@ ms.locfileid: "5579358"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| マネージャーの休暇を会社間で表示 | [マネージャーの従業員休暇を会社間で表示](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [休暇と欠勤のパラメータのコンフィギュレーション](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-| 給付金管理ワークスペース | [給付金管理ワークスペース (プレビュー)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [給付金管理ワークスペース](hr-benefits-management-workspace.md) |
-| 従業員がビジネスの連絡先情報を編集するのを制限する | [従業員がビジネスの連絡先情報を編集するのを制限する](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [個人情報の編集の制限](hr-employee-self-service-restrict-editing.md)|
+| マネージャーの休暇を会社間で表示 | [マネージャーの従業員休暇を会社間で表示](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [休暇と欠勤のパラメータのコンフィギュレーション](./hr-leave-and-absence-parameters.md) |
+| 給付金管理ワークスペース | [給付金管理ワークスペース (プレビュー)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [給付金管理ワークスペース](hr-benefits-management-workspace.md) |
+| 従業員がビジネスの連絡先情報を編集するのを制限する | [従業員がビジネスの連絡先情報を編集するのを制限する](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [個人情報の編集の制限](hr-employee-self-service-restrict-editing.md)|
 
 ## <a name="coming-soon"></a>間もなく公開
 
@@ -79,15 +76,15 @@ ms.locfileid: "5579358"
 | --- | --- |
 | マネージャーが従業員に対して入力したスキルは、ワークフローで自動承認できます | 間もなく公開予定。 |
 
-予定されている機能とリリースの完全な一覧については、[Dynamics 365 Human Resources 2021 のリリース ウェーブ 1 の概要](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/) を参照してください。
+予定されている機能とリリースの完全な一覧については、[Dynamics 365 Human Resources 2021 のリリース ウェーブ 1 の概要](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/) を参照してください。
 
 ## <a name="terminology-updates-for-microsoft-dataverse"></a>Microsoft Dataverse の専門用語の更新
 
-2020 年 11 月より、 Common Data Service は [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro) に改名されます。 詳細については、Power Apps ブログの [公式声明](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/)を参照してください。 この改名により、Dataverse で一部の用語が更新されています。 たとえば、*エンティティ* は *テーブル* になり、*フィールド* は *列* になります。 詳細については、[用語の更新](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)を参照してください。
+2020 年 11 月より、 Common Data Service は [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro) に改名されます。 詳細については、Power Apps ブログの [公式声明](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/)を参照してください。 この改名により、Dataverse で一部の用語が更新されています。 たとえば、*エンティティ* は *テーブル* になり、*フィールド* は *列* になります。 詳細については、[用語の更新](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)を参照してください。
 
 このリリースでは、Dynamics 365 Human Resources と Dataverse の統合に関する用語は、アプリケーション全体で更新されており、これら変更が反映されています。 たとえば、**Common Data Service 統合** フォームが **Microsoft Dataverse 統合** となっています。
 
-Dynamics 365 Human Resources と Microsoft Dataverse の統合の詳細については、[Microsoft Dataverse の統合を構成する](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service) と [Microsoft Dataverse の仮想テーブルを構成する](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities)を参照してください。
+Dynamics 365 Human Resources と Microsoft Dataverse の統合の詳細については、[Microsoft Dataverse の統合を構成する](./hr-admin-integration-common-data-service.md) と [Microsoft Dataverse の仮想テーブルを構成する](./hr-admin-integration-common-data-service-virtual-entities.md)を参照してください。
 
 ## <a name="updates-to-service-deployment"></a>サービス配置に関する更新
 
@@ -95,12 +92,12 @@ Dynamics 365 Human Resources と Microsoft Dataverse の統合の詳細につい
 
 今後も、2 週間の配置頻度を実行していきます。 ただし、更新プログラムは、通常、以前のリリースとは異なる 2 週間サイクルの日に Human Resources 環境に適用されることになります。
 
-サービス更新プロセスの詳細については、[更新プロセス](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-setup-update-process)を参照してください。
+サービス更新プロセスの詳細については、[更新プロセス](./hr-admin-setup-update-process.md)を参照してください。
 
 ## <a name="see-also"></a>参照
 
 [Human Resources の新機能および変更された機能](hr-admin-whats-new.md)</br>
-[Dynamics 365 Human Resources 2021 のリリース ウェーブ 1 の概要](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
+[Dynamics 365 Human Resources 2021 のリリース ウェーブ 1 の概要](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
 [更新プロセス](hr-admin-setup-update-process.md)</br>
 [機能の管理](hr-admin-manage-features.md)
 

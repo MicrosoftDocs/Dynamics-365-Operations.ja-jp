@@ -5,7 +5,6 @@ author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowTableListPageRnr
 audience: Application User
@@ -14,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 16f1c56ecd69f4dc7bfd80e74d3f35147cc173d6
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: 7f18c3bd95901303379c460d026bc944cee809b7
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5919822"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576667"
 ---
 # <a name="rebate-management-deal-workflows"></a>リベート管理取引のワークフロー
 
@@ -28,12 +27,12 @@ ms.locfileid: "5919822"
 
 リベート契約を承認するには、リベート管理が他の Finance and Operations アプリと同じワークフロー プラットフォームを使用します。 2 つのジョブ プロセスが各ワークフローに関連付けられている。
 
-- ワークフローの 1 つの要素によって取引が有効化された場合、ユーザー プロセスまたはワークフロー プロセスによってトランザクションが承認されます。
 - ワークフローの 1 つの要素で取引が承認されます。
+- ワークフローの 1 つの要素によって取引が有効化された場合、ユーザー プロセスまたはワークフロー プロセスによってトランザクションが承認されます。
 
 リベート契約を使用するには、**リベート管理** モジュールでリベート契約を有効にする必要 があります。 契約を有効にするには、最初に *リベート管理契約ワークフロー* を作成および構成する必要があります。
 
-リベート管理でワークフローが有効になると、ユーザーは取引を手動で承認できません。 ワークフローは常に使用する必要があります。
+ユーザーは取引を手動で承認することはできません。 ワークフローを常に使用する必要があります。
 
 ## <a name="create-and-manage-rebate-management-deal-workflows"></a>リベート管理取引のワークフローの作成と管理
 
@@ -43,4 +42,17 @@ ms.locfileid: "5919822"
 
 ワークフローを通じて取引を有効にするには、取引を開きます (例えば **すべてのリベート管理契約** ページなど)。 その後、アクション ペインで、**ワークフロー \>提出** を選択します。 ワークフローを通じて新しい取引が処理および承認されると、新しい取引が有効にされ、使用できる状態になります。
 
-取引が有効化された後は、設定を変更できません。 有効な取引を変更する必要がある場合は、無効にしてから、新しい取引を作成します。 新しい取引が古い取引と似ている場合は、古い取引をコピーして作成できます。
+取引が有効化された後は、設定の大部分は変更できません。 有効な取引を変更する必要がある場合は、まず無効にしてから、新しい取引を作成します。 新しい取引が古い取引と似ている場合は、古い取引をコピーして作成できます。
+
+取引が有効化された後に、次の設定を変更できます:
+
+- 調整基準
+- 累積保証
+- 転記プロファイル
+- 保証用の転記プロファイル
+- ドキュメント メモ
+- 通貨
+- 自
+- 最終日
+
+さらに、リベート明細行を削除できます。

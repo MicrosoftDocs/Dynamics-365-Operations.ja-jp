@@ -2,11 +2,9 @@
 title: オンプレミス環境のインプレース アップグレード プロセス
 description: このトピックでは、 バージョン 7.x のオンプレミス環境を 10.0.x にアップグレードする詳細なプロセスを説明します。
 author: laneswenka
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.x
-ms.openlocfilehash: 93b0ab28d4a8fd7ac595e4eb77d4c1dda4dd2e1d
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 3331f41dde31ebe6dbb9403bcf06aa2756d3993f
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077464"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594679"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
@@ -56,7 +54,7 @@ ms.locfileid: "5077464"
 
 4.  Hyper-V を使用して、仮想マシン (VM) を起動し、VHD を接続します。 (マシンはジェネレーション 1 である必要があります。)
 
-5.  VM に接続します。 資格情報を[仮想マシン (VM) をローカルで実行](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally)から見つけることができます。
+5.  VM に接続します。 資格情報を[仮想マシン (VM) をローカルで実行](../dev-tools/access-instances.md#running-the-virtual-machine-locally)から見つけることができます。
 
 6.  オンプレミスで予定されている 10.0.x のターゲット バージョンとダウンロードした VHD イメージによっては、 **アセットタイプの選択** と **ソフトウェアで展開可能なパッケージ** 配下にある共有アセット ライブラリから必要なアプリケーションとプラットフォーム更新プログラムをダウンロードして適用することが必要となる場合があります。 詳細な情報については、[コマンド ラインからの配置可能なパッケージのインストール](../deployment/install-deployable-package.md) を参照してください。
 
@@ -66,7 +64,7 @@ ms.locfileid: "5077464"
 
 1.  オンプレミス AOS、BI、および MR サーバーをシャットダウンするか、または各ノードで Service Fabric Host Service を停止し、無効にします。
 
-2.  オンプレミス環境 (通常は AXDB) から、データベースをバックアップします。 詳細については、「[フル データベース バックアップの作成](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017)」を参照してください。
+2.  オンプレミス環境 (通常は AXDB) から、データベースをバックアップします。 詳細については、「[フル データベース バックアップの作成](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)」を参照してください。
 
 3.  VHD で C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage に移動し、MinorVersionDataUpgrade zip ファイルをコピーします。
 
@@ -74,7 +72,7 @@ ms.locfileid: "5077464"
 
 5.  管理者としてコマンド プロンプトを開き、手順 4 で展開していないフォルダーへディレクトリを変更します。
 
-6.  Onebox VM に作成したバックアップを復元します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
+6.  Onebox VM に作成したバックアップを復元します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
 
 7.  オプション: 復元したデータベースの名前が AXDB ではない場合は、管理者権限を持つ PowerShell を使用して実行します。
     
@@ -82,7 +80,7 @@ ms.locfileid: "5077464"
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
     > [!NOTE] 
-    > (たとえば、AXDB などの) 適切な値に <DB-Name> を置き換えます。 値をさらに編集する場合は、このトピックの付録を参照します。
+    > (たとえば、AXDB などの) 適切な値に `<DB-Name>` を置き換えます。 値をさらに編集する場合は、このトピックの付録を参照します。
 
     スクリプトは、データベース接続のテストを実行し、入力した情報が有効であることを確認します。
 
@@ -116,9 +114,9 @@ ms.locfileid: "5077464"
 
     b.  **資産タイプを選択** 配下で、**モデル** を選択し、Dynamics 365 for Finance and Operations オンプレミスのバージョン 10.0.x デモ データをダウンロードします。 設置型のベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
 
-    c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
+    c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
      
-    d.  データベースを構成する必要があります。 [Finance and Operations データベースのコンフィギュレーション](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database) の手順に従います。
+    d.  データベースを構成する必要があります。 [Finance and Operations データベースのコンフィギュレーション](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database) の手順に従います。
 
     e.  LCS にて、新たな環境を設定し、バージョン 10.0.x (再展開) を展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 配置する場合、指定するデータベースは手順 13 c (通常は AXDB) で作成したものにする必要があります。
 
@@ -147,9 +145,9 @@ ms.locfileid: "5077464"
 
 1.  オンプレミス AOS、BI、および MR サーバーをシャットダウンするか、または Service Fabric ポータルからサービスを停止します。
 
-2.  オンプレミス環境 (通常は AXDB) から、データベースをバックアップします。 詳細については、「[フル データベース バックアップの作成 (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017)」を参照してください。
+2.  オンプレミス環境 (通常は AXDB) から、データベースをバックアップします。 詳細については、「[フル データベース バックアップの作成 (SQL Server)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)」を参照してください。
 
-3.  先ほど作成したバックアップをデータベース サーバーを復元し、別の名前 (AXDBtoupgrade) を付けます。 詳細については、「[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
+3.  先ほど作成したバックアップをデータベース サーバーを復元し、別の名前 (AXDBtoupgrade) を付けます。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
 
 4.  接続されたら、C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage に移動し、MinorVersionDataUpgrade zip ファイルをコピーします。
 
@@ -167,9 +165,9 @@ ms.locfileid: "5077464"
     > \<\*\> を必要な値に置き換えます。
 
     > [!NOTE]
-    > - SQL Server 認証のみが、このアップグレードで正式にサポートされます。 詳細については、「[データベース ユーザーの作成](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017)」を参照してください。
+    > - SQL Server 認証のみが、このアップグレードで正式にサポートされます。 詳細については、「[データベース ユーザーの作成](/sql/relational-databases/security/authentication-access/create-a-database-user)」を参照してください。
     >
-    > - SQL Server 証明書に署名した証明書を、 OneBox の信頼された証明機関に追加する必要があります。 詳細については、「[信頼されたルート証明書をインストールする](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate)」を参照します。
+    > - SQL Server 証明書に署名した証明書を、 OneBox の信頼された証明機関に追加する必要があります。 詳細については、「[信頼されたルート証明書をインストールする](/skype-sdk/sdn/articles/installing-the-trusted-root-certificate)」を参照します。
     >
     > - 使用するデータベースのユーザーに、sysadmin サーバー ロールが割り当てられているか、またはアップグレードするデータベースに少なくともすべての特権があり、tempDB にアクセスする許可があるかを確認します。 これが該当しない場合は、アップグレード プロセスの手順 6 で失敗します。
     >
@@ -199,7 +197,7 @@ ms.locfileid: "5077464"
 
     b.  **資産タイプを選択** 配下で、**モデル** を選択し、Dynamics 365 for Finance and Operations オンプレミスのバージョン 10.0.x デモ データをダウンロードします。 設置型のベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
 
-    c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017)」を参照してください。
+    c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
 
     d.  データベースを構成する必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
 
@@ -397,3 +395,6 @@ else{
 -   接続が確立できませんでした。 Ip/fqdn とポートを確認します。例外を呼び出します。\"0\" 引数で\"開きます\"。\"SQL Server への接続を確立中に、ネットワーク関連またはインスタンス固有のエラーが発生しました。 サーバーが見つからない、またはアクセスできませんでした。 インスタンス名が正しいかを確認し、さらに SQL Server が構成されリモート接続が許可されていることを確認します。 (プロバイダー: 名前付きパイプ プロバイダー、エラー: 40: - SQL Server への接続を開けませんでした)\"
 
 -   ログイン資格情報が正確ではありません。 例外 の呼び出し: \"0\" 引数で\"開きます\"。\"ユーザー \'axdbadmin\' のログインが失敗しました。\"
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

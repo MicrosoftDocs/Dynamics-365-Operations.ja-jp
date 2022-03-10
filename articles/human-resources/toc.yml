@@ -1,309 +1,836 @@
 - name: Dynamics 365 Human Resources
-  href: ./index.md
   items:
-    - name: 新機能
+    - name: Dynamics 365 Human Resources
       items:
-        - name: Human Resources の新機能および変更された機能
-          href: hr-admin-whats-new.md
-        - name: 2021 年 6 月 22 日
-          href: hr-whats-new-2021-06-22.md
-        - name: 2021 年 5 月 20 日
-          href: hr-whats-new-2021-05-20.md
-        - name: 2021 年 5 月 3 日
-          href: hr-whats-new-2021-05-03.md
-        - name: 2021 年 4 月 19 日
-          href: hr-whats-new-2021-04-19.md
-        - name: 2021 年 4 月 5 日
-          href: hr-whats-new-2021-04-05.md
-        - name: 2021 年 3 月 22 日
-          href: hr-whats-new-2021-03-22.md
-        - name: 2021 年 3 月 8 日
-          href: hr-whats-new-2021-03-08.md
-        - name: 2021 年 2 月 22 日
-          href: hr-whats-new-2021-02-22.md
-        - name: 2021 年 1 月 28 日
-          href: hr-whats-new-2021-01-28.md
-        - name: 2021 年 1 月 21 日
-          href: hr-whats-new-2021-01-21.md
-        - name: 2020 年 12 月 2 日
-          href: hr-whats-new-2020-12-02.md
-        - name: 2020 年 10 月 22 日
-          href: hr-whats-new-2020-10-22.md
-        - name: 2020 年 10 月 6 日
-          href: hr-whats-new-2020-10-06.md
-        - name: 2020 年 9 月 26 日
-          href: hr-whats-new-2020-09-26.md
-        - name: 2020 年 9 月 16 日
-          href: hr-whats-new-2020-09-16.md
-        - name: 2020 年 9 月 3 日
-          href: hr-whats-new-2020-09-03.md
-        - name: 2020 年 8 月 20 日
-          href: hr-whats-new-2020-08-20.md
-        - name: 2020 年 8 月 6 日
-          href: hr-whats-new-2020-08-06.md
-        - name: 2020 年 7 月 23 日
-          href: hr-whats-new-2020-07-23.md
-        - name: 2020 年 7 月 8 日
-          href: hr-whats-new-2020-07-08.md
-        - name: 2020 年 6 月 25 日
-          href: hr-whats-new-2020-06-23.md
-        - name: 2020 年 6 月 11 日
-          href: hr-whats-new-2020-06-11.md
-        - name: 2020 年 5 月 28 日
-          href: hr-whats-new-2020-05-28.md
-        - name: 2020 年 5 月 14 日
-          href: hr-whats-new-2020-05-14.md
-        - name: 2020 年 5 月 1 日
-          href: hr-whats-new-2020-05-01.md
-        - name: 新機能アーカイブ 2020
-          items:
-            - name: 2020 年 4 月 13 日
-              href: hr-whats-new-2020-04-13.md
-            - name: 2020 年 4 月 3 日
-              href: hr-whats-new-2020-04-03.md
-            - name: 2020 年 3 月 24 日
-              href: hr-whats-new-2020-03-24.md
-            - name: 2020 年 3 月 19 日
-              href: hr-whats-new-2020-03-19.md
-            - name: 2020 年 3 月 10 日
-              href: hr-whats-new-2020-03-10.md
-            - name: 2020 年 3 月 3 日
-              href: hr-whats-new-2020-03-03.md
-            - name: 2020 年 2 月 25 日
-              href: hr-whats-new-2020-02-25.md
-            - name: 2020 年 2 月 18 日
-              href: hr-whats-new-2020-02-18.md
-            - name: 2020 年 2 月 12 日
-              href: hr-whats-new-2020-02-12.md
-            - name: 2020 年 2 月 7 日
-              href: hr-whats-new-2020-02-07.md
-            - name: 2020 年 2 月 3 日
-              href: hr-whats-new-2020-02-03.md
-    - name: 管理者ガイド
-      items:
+        - name: Dynamics 365 Human Resources のホーム ページ
+          href: index.md
+        - name: インフラストラクチャ リリース 10.0.25
+          href: hr-infrastructure.md
+        - name: Dynamics 365 Human Resources 統合インフラストラクチャの新機能または変更された機能
+          href: ./get-started/hr-whats-new-changed-10-0-25.md
         - name: 概要
-          href: hr-admin-overview.md
-        - name: システム要件
-          href: hr-admin-system-requirements.md
-        - name: インスタンスの設定と管理
           items:
-            - name: Human Resources のプロビジョニング
-              href: hr-admin-setup-provision.md
-            - name: インスタンスのコピー
-              href: hr-admin-setup-copy-instance.md
-            - name: インスタンスの削除
-              href: hr-admin-setup-remove-instance.md
-            - name: 更新プロセス
-              href: hr-admin-setup-update-process.md
-        - name: データ統合の設定
-          items:
-            - name: データ統合テクノロジの選択
-              href: hr-admin-integration-choose-technology.md
-            - name: スロットリングに関するよく寄せられる質問
-              href: hr-admin-integration-throttling-faq.md
-            - name: Dataverse 統合のコンフィギュレーション
-              href: hr-admin-integration-common-data-service.md
-            - name: Dataverse テーブル
-              href: hr-developer-entities.md
-            - name: Dataverse の仮想テーブルのコンフィギュレーション
-              href: hr-admin-integration-common-data-service-virtual-entities.md
-            - name: Human Resources 仮想テーブルに関するよく寄せられる質問
-              href: hr-admin-virtual-entity-faq.md
-            - name: Finance との統合のコンフィギュレーション
-              href: hr-admin-integration-finance.md
-            - name: Dayforce との統合のコンフィギュレーション
-              href: hr-admin-integration-dayforce.md
-            - name: 定期的なデータ エクスポート アプリの作成
-              href: hr-admin-integration-recurring-data-export.md
-            - name: LinkedIn Talent Hub との統合
-              href: hr-admin-integration-linkedin.md
-            - name: Office との統合
+            - name: 新機能
+              href: hr-admin-whats-new.md
+            - name: 新機能または変更された機能の 2021 年アーカイブ
               items:
-                - name: Office 統合のチュートリアル
-                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: Excel でのエンティティ データの更新
-                  href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: '[Excel で開く] エクスペリエンスの作成'
-                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: Office 統合のトラブルシューティング
-                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-        - name: データ管理のコンフィギュレーション
-          items:
-            - name: データ管理フレームワークの概要
-              href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-            - name: データ エンティティ
+                - name: 2021 年 11 月 29 日
+                  href: hr-whats-new-2021-11-29.md
+                - name: 2021 年 10 月 5 日
+                  href: hr-whats-new-2021-10-04.md
+                - name: 2021 年 9 月 20 日
+                  href: hr-whats-new-2021-09-20.md
+                - name: 2021 年 9 月 6 日
+                  href: hr-whats-new-2021-09-06.md
+                - name: 2021 年 8 月 23 日
+                  href: hr-whats-new-2021-08-23.md
+                - name: 2021 年 8 月 9 日
+                  href: hr-whats-new-2021-08-09.md
+                - name: 2021 年 7 月 26 日
+                  href: hr-whats-new-2021-07-26.md
+                - name: 2021 年 7 月 12 日
+                  href: hr-whats-new-2021-07-12.md
+                - name: 2021 年 6 月 22 日
+                  href: hr-whats-new-2021-06-22.md
+                - name: 2021 年 5 月 20 日
+                  href: hr-whats-new-2021-05-20.md
+                - name: 2021 年 5 月 3 日
+                  href: hr-whats-new-2021-05-03.md
+                - name: 2021 年 4 月 19 日
+                  href: hr-whats-new-2021-04-19.md
+                - name: 2021 年 4 月 5 日
+                  href: hr-whats-new-2021-04-05.md
+                - name: 2021 年 3 月 22 日
+                  href: hr-whats-new-2021-03-22.md
+                - name: 2021 年 3 月 8 日
+                  href: hr-whats-new-2021-03-08.md
+                - name: 2021 年 2 月 22 日
+                  href: hr-whats-new-2021-02-22.md
+                - name: 2021 年 1 月 28 日
+                  href: hr-whats-new-2021-01-28.md
+                - name: 2021 年 1 月 21 日
+                  href: hr-whats-new-2021-01-21.md
+            - name: 新機能アーカイブ 2020
               items:
-                - name: データ エンティティの概要
-                  href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: コンフィギュレーション データ プロジェクト
-                  href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 会社間または法人間のコンフィギュレーション データのコピー
+                - name: 2020 年 12 月 2 日
+                  href: hr-whats-new-2020-12-02.md
+                - name: 2020 年 10 月 22 日
+                  href: hr-whats-new-2020-10-22.md
+                - name: 2020 年 10 月 6 日
+                  href: hr-whats-new-2020-10-06.md
+                - name: 2020 年 9 月 26 日
+                  href: hr-whats-new-2020-09-26.md
+                - name: 2020 年 9 月 16 日
+                  href: hr-whats-new-2020-09-16.md
+                - name: 2020 年 9 月 3 日
+                  href: hr-whats-new-2020-09-03.md
+                - name: 2020 年 8 月 20 日
+                  href: hr-whats-new-2020-08-20.md
+                - name: 2020 年 8 月 6 日
+                  href: hr-whats-new-2020-08-06.md
+                - name: 2020 年 7 月 23 日
+                  href: hr-whats-new-2020-07-23.md
+                - name: 2020 年 7 月 8 日
+                  href: hr-whats-new-2020-07-08.md
+                - name: 2020 年 6 月 25 日
+                  href: hr-whats-new-2020-06-23.md
+                - name: 2020 年 6 月 11 日
+                  href: hr-whats-new-2020-06-11.md
+                - name: 2020 年 5 月 28 日
+                  href: hr-whats-new-2020-05-28.md
+                - name: 2020 年 5 月 14 日
+                  href: hr-whats-new-2020-05-14.md
+                - name: 2020 年 5 月 1 日
+                  href: hr-whats-new-2020-05-01.md
+                - name: 2020 年 4 月 13 日
+                  href: hr-whats-new-2020-04-13.md
+                - name: 2020 年 4 月 3 日
+                  href: hr-whats-new-2020-04-03.md
+                - name: 2020 年 3 月 24 日
+                  href: hr-whats-new-2020-03-24.md
+                - name: 2020 年 3 月 19 日
+                  href: hr-whats-new-2020-03-19.md
+                - name: 2020 年 3 月 10 日
+                  href: hr-whats-new-2020-03-10.md
+                - name: 2020 年 3 月 3 日
+                  href: hr-whats-new-2020-03-03.md
+                - name: 2020 年 2 月 25 日
+                  href: hr-whats-new-2020-02-25.md
+                - name: 2020 年 2 月 18 日
+                  href: hr-whats-new-2020-02-18.md
+                - name: 2020 年 2 月 12 日
+                  href: hr-whats-new-2020-02-12.md
+                - name: 2020 年 2 月 7 日
+                  href: hr-whats-new-2020-02-07.md
+                - name: 2020 年 2 月 3 日
+                  href: hr-whats-new-2020-02-03.md
+            - name: 概要
+              href: hr-admin-overview.md
+            - name: システム要件
+              href: hr-admin-system-requirements.md
+            - name: インスタンスの設定と管理
+              items:
+                - name: Human Resources のプロビジョニング
+                  href: hr-admin-setup-provision.md
+                - name: インスタンスのコピー
+                  href: hr-admin-setup-copy-instance.md
+                - name: インスタンスの削除
+                  href: hr-admin-setup-remove-instance.md
+                - name: 更新プロセス
+                  href: hr-admin-setup-update-process.md
+            - name: データ統合の設定
+              items:
+                - name: データ統合テクノロジの選択
+                  href: hr-admin-integration-choose-technology.md
+                - name: スロットリングに関するよく寄せられる質問
+                  href: hr-admin-integration-throttling-faq.md
+                - name: Dataverse 統合のコンフィギュレーション
+                  href: hr-admin-integration-common-data-service.md
+                - name: Dataverse テーブル
+                  href: hr-developer-entities.md
+                - name: Dataverse の仮想テーブルのコンフィギュレーション
+                  href: hr-admin-integration-common-data-service-virtual-entities.md
+                - name: Human Resources 仮想テーブルに関するよく寄せられる質問
+                  href: hr-admin-virtual-entity-faq.md
+                - name: Finance との統合のコンフィギュレーション
+                  href: hr-admin-integration-finance.md
+                - name: Dayforce との統合のコンフィギュレーション
+                  href: hr-admin-integration-dayforce.md
+                - name: 定期的なデータ エクスポート アプリの作成
+                  href: hr-admin-integration-recurring-data-export.md
+                - name: LinkedIn Talent Hub との統合
+                  href: hr-admin-integration-linkedin.md
+                - name: Office との統合
                   items:
-                    - name: コンフィギュレーション データのコピーの概要
-                      href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: コンフィギュレーション データ パッケージ
-                      href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: コンフィギュレーション データ パッケージ (2017 年 7 月リリースのみ)
-                      href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: コンフィギュレーション データ テンプレート
-                  href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: エンティティの変更の追跡
-                  href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 標準データ エンティティに関する情報の検索
-                  href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 複数のワークシート付きデータ テンプレート
-                  href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: エンティティの変更追跡の有効化
-                  href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: コンフィギュレーション キーおよびデータ エンティティ
-                  href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: コンフィギュレーション データ パッケージ
-                  href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-            - name: データ インポート/エクスポート ジョブ
+                    - name: Office 統合のチュートリアル
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: Excel でのエンティティ データの更新
+                      href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: '[Excel で開く] エクスペリエンスに関するよくあるご質問'
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: Office 統合のトラブルシューティング
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                - name: データ管理のコンフィギュレーション
+                  items:
+                    - name: データ管理フレームワークの概要
+                      href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: データ エンティティ
+                      items:
+                        - name: データ エンティティの概要
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: コンフィギュレーション データ プロジェクト
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: 会社間または法人間のコンフィギュレーション データのコピー
+                      items:
+                        - name: コンフィギュレーション データのコピーの概要
+                          href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: コンフィギュレーション データ パッケージ
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: コンフィギュレーション データ パッケージ (2017 年 7 月リリースのみ)
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: コンフィギュレーション データ テンプレート
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: エンティティの変更の追跡
+                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: 標準データ エンティティに関する情報の検索
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: 複数のワークシート付きデータ テンプレート
+                          href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: エンティティの変更追跡の有効化
+                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: コンフィギュレーション キーおよびデータ エンティティ
+                          href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: コンフィギュレーション データ パッケージ
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: データ インポート/エクスポート ジョブ
+                      items:
+                        - name: データ インポート/エクスポート ジョブの概要
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
+                          href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: データ エンティティの開発
+                      items:
+                        - name: データ エンティティに関する設計原則とベスト プラクティス
+                          href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: 新しいデータ エンティティの作成
+                          href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: データ エンティティのプロパティ
+                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: 計算列と仮想フィールドの作成
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: 会社間動作
+                          href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: 国/地域コードの処理
+                          href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: 継承パターン
+                          href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: データ エンティティ ウィザード ルール
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: メタデータのプロパティ
+                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: 検証、既定値、およびマップされていないフィールド
+                          href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: セキュリティとデータ エンティティ
+                          href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: サード パーティ サービス テスト ユーティリティの使用
+                          href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                        - name: 財務分析コードを公開する読み取り専用エンティティの作成
+                          href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: 自分のデータベースの持ち込み
+                      href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: BYOD バッチ ジョブの最適化
+                      href: hr-admin-integration-byod-batch-jobs.md
+                    - name: 自動化エンティティ格納更新
+                      href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: データ タスクの自動化
+                      href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: データ検証チェックリスト ワークスペース
+                      href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: データ管理エラーの説明
+                      href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                    - name: 機能の管理
+                      href: hr-admin-manage-features.md
+                    - name: データベース ログの構成と管理
+                      href: hr-admin-database-logging.md
+            - name: ユーザー インターフェイスの操作
               items:
-                - name: データ インポート/エクスポート ジョブの概要
-                  href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 一般仕訳エンティティを使用して伝票をインポートするためのベスト プラクティス
-                  href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-            - name: データ エンティティの開発
+                - name: ユーザー インターフェイスの要素
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
+                - name: ユーザー補助機能
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
+                - name: 機能管理の概要
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: クライアント FAQ
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json
+                - name: アクション検索
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json
+                - name: 高度なフィルター処理とクエリ構文
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークスペースのコンフィギュレーションとフィルター処理
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
+                - name: '[新しいウィンドウで開く] 機能を使用してページを並べて表示する'
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
+                - name: キーボード ショートカット
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: 法人のバナーまたはロゴ画像の変更
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json
+                - name: ナビゲーション検索
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json
+                - name: ユーザー エクスペリエンスのパーソナライズ
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json
+                - name: 保存されているビュー
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
+                - name: カスタム フィールドの作成と操作
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Power Apps からキャンバス アプリを埋め込む
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
+                - name: ルックアップを使用した情報の検索
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
+                - name: セッションの日付変更
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
+                - name: ユーザーの優先タイム ゾーンの設定
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
+                - name: Lifecycle Services の理解
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+                - name: Go-Live の準備
+                  href: hr-admin-go-live-prepare.md
+                - name: Go-Live に関するよく寄せられる質問
+                  href: hr-admin-go-live-faq.md
+                - name: Human Resources インフラストラクチャの統合に関するよく寄せられる質問
+                  href: hr-infrastructure-merge-faq.md
+                - name: ドキュメント リソース
+                  items:
+                    - name: ヘルプ システム
+                      href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ヘルプ システムに接続する
+                      href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
+                    - name: カスタム ヘルプの概要
+                      href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
+                    - name: フィールドの説明の表示およびエクスポート
+                      href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
+                    - name: タスク レコーダー
+                      href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
+                    - name: タスク レコーダーを使用したドキュメントやトレーニングの作成
+                      href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
+                - name: Human Resources のトラブルシューティング
+                  items:
+                    - name: サポートの利用
+                      href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 時間後にバッチ ジョブのスケジュールを設定してパフォーマンスを最適化する
+                      href: hr-admin-troubleshooting-batch-jobs.md
+                    - name: 自動クリーンアップ タスクを使用したパフォーマンスの最適化
+                      href: hr-admin-troubleshooting-batch-history.md
+                    - name: 行き詰まったバッチ ジョブのリセット
+                      href: hr-admin-troubleshooting-batch-execution.md
+                    - name: Dataverse 同期のリセット
+                      href: hr-admin-troubleshooting-dataverse-sync.md
+                    - name: 分析レポートが更新されない
+                      href: hr-admin-troubleshooting-analytic-reports.md
+                    - name: Power Apps 管理センターで環境を作成できない
+                      href: hr-admin-troubleshooting-power-apps.md
+                    - name: クライアントの接続が切断される
+                      href: hr-admin-troubleshooting-disconnect.md
+                    - name: 職位階層でのテキストの切り捨ての回避
+                      href: hr-admin-troubleshooting-truncate.md
+                    - name: 報酬プロセスを実行する
+                      href: hr-admin-troubleshooting-compensation.md
+                    - name: LCS へのタスク ガイドの保存
+                      href: hr-admin-troubleshooting-task-guide.md
+                    - name: セキュリティ ロールで個人住所にアクセスする
+                      href: hr-admin-troubleshooting-private-addresses.md
+                    - name: Human Resources が Dynamics 365 アプリに表示されない
+                      href: hr-admin-troubleshooting-not-in-apps.md
+                    - name: レポート オプション
+                      href: hr-admin-troubleshooting-reporting.md
+                    - name: 統合に関してよく寄せられる質問
+                      href: hr-admin-troubleshooting-integration.md
+            - name: Human Resources の設定
               items:
-                - name: データ エンティティに関する設計原則とベスト プラクティス
-                  href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 新しいデータ エンティティの作成
-                  href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: データ エンティティのプロパティ
-                  href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 計算列と仮想フィールドの作成
-                  href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 会社間動作
-                  href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 国/地域コードの処理
-                  href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 継承パターン
-                  href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: データ エンティティ ウィザード ルール
-                  href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: メタデータのプロパティ
-                  href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 検証、既定値、およびマップされていないフィールド
-                  href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: セキュリティとデータ エンティティ
-                  href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: サード パーティ サービス テスト ユーティリティの使用
-                  href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: 財務分析コードを公開する読み取り専用エンティティの作成
-                  href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-            - name: 自分のデータベースの持ち込み
-              href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-            - name: BYOD バッチ ジョブの最適化
-              href: hr-admin-integration-byod-batch-jobs.md
-            - name: 自動化エンティティ格納更新
-              href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-            - name: データ タスクの自動化
-              href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-            - name: データ検証チェックリスト ワークスペース
-              href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-            - name: データ管理エラーの説明
-              href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-        - name: 機能の管理
-          href: hr-admin-manage-features.md
-        - name: データベース ログの構成と管理
-          href: hr-admin-database-logging.md
-        - name: ユーザー インターフェイスの操作
+                - name: Human Resources パラメーターのコンフィギュレーション
+                  href: hr-setup-parameters.md
+                - name: Human Resources 共有パラメーターのコンフィギュレーション
+                  href: hr-setup-shared-parameters.md
+                - name: Human Resources ワークフローの設定
+                  href: hr-workflow-manage-employee-information.md
+                - name: 日付と時刻のフィールドの理解
+                  href: hr-setup-date-time-fields.md
+            - name: 組織設定のコンフィギュレーション
+              items:
+                - name: 組織管理ホーム ページ
+                  href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json
+                - name: 番号順序
+                  items:
+                    - name: 番号順序の概要
+                      href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 番号順序を個別に設定する
+                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ウィザードを使用した番号順序の設定
+                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
+                - name: 組織と組織階層
+                  items:
+                    - name: 組織と組織階層の概要
+                      href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 組織階層の計画
+                      href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 組織階層の作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 法人の作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 作業単位の作成
+                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/human-resources/toc.json
+                - name: グローバル アドレス帳
+                  items:
+                    - name: グローバル アドレス帳の概要
+                      href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                    - name: グローバル アドレス帳およびその他のアドレス帳の計画
+                      href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
+                    - name: グローバル アドレス帳の構成
+                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 住所の設定
+                      href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
+                    - name: アドレス帳に関するよくあるご質問
+                      href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
+                    - name: アドレス帳の構成
+                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 場所の所有者の管理
+                      href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-location-owner.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー システム
+                  items:
+                    - name: ワークフロー システムの概要
+                      href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ワークフロー システムのアーキテクチャ
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ワークフロー要素
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ワークフロー アクション
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ワークフローの作成
+                      items:
+                        - name: ワークフローの作成の概要
+                          href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                        - name: ワークフロー プロパティのコンフィギュレーション
+                          href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                        - name: 手動タスクのコンフィギュレーション
+                          href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                        - name: 自動化タスクのコンフィギュレーション
+                          href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                        - name: 承認プロセスのコンフィギュレーション
+                          href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                        - name: 承認ステップのコンフィギュレーション
+                          href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                        - name: 手動決定のコンフィギュレーション
+                          href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                        - name: 条件付き意思決定のコンフィギュレーション
+                          href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                        - name: 並列活動のコンフィギュレーション
+                          href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                        - name: 並列分岐のコンフィギュレーション
+                          href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                        - name: 品目ワークフローのコンフィギュレーション
+                          href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ワークフローの作業項目をデリゲート
+                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ワークフロー履歴の表示
+                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ユーザーにワークフローに関連する電子メールを送信するシステムのコンフィギュレーション
+                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ワークフロー タイプ
+                      items:
+                        - name: ワークフロー タイプの作成
+                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                        - name: ワークフロー タイプのチェックリスト
+                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                        - name: ワークフローカテゴリの作成
+                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                        - name: ワークフロー タイプのクエリの作成
+                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                        - name: 新しいワークフロー タイプの作成
+                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                        - name: ワークフロー ドキュメント クラスの作成
+                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                        - name: SubmitToWorkflow クラスの作成
+                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                        - name: ワークフロー ドキュメント クラスとワークフロー タイプの関連付け
+                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+                        - name: ワークフロー タイプのレポート
+                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+                        - name: ワークフローに関するよく寄せられる質問
+                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
+                - name: 警告
+                  items:
+                    - name: 警告の概要
+                      href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 警告ルールの作成
+                      href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 警告のバッチ処理
+                      href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
+                    - name: 電子メールによるクライアント警告通知
+                      href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
+                - name: ケース管理
+                  items:
+                    - name: ケース管理の概要
+                      href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json
+                    - name: ケース セキュリティ、プロセス、およびカテゴリの計画
+                      href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/human-resources/toc.json
+                - name: レコード テンプレート
+                  items:
+                    - name: レコード テンプレートの概要
+                      href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/human-resources/toc.json
+                    - name: レコード テンプレートの作成
+                      href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/human-resources/toc.json
+                    - name: レコード テンプレートを使用した新しいレコードの作成
+                      href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/human-resources/toc.json
+                - name: ドキュメント管理の構成
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
+                - name: メールの構成と送信
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
+                - name: 日時データとタイム ゾーン
+                  href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
+        - name: 従業員セルフ サービス
           items:
-            - name: ユーザー インターフェイスの要素
-              href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
-            - name: ユーザー補助機能
-              href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
-            - name: 機能管理の概要
-              href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json
-            - name: クライアント FAQ
-              href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json
-            - name: アクション検索
-              href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json
-            - name: 高度なフィルター処理とクエリ構文
-              href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
-            - name: ワークスペースのコンフィギュレーションとフィルター処理
-              href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
-            - name: '[新しいウィンドウで開く] 機能を使用してページを並べて表示する'
-              href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
-            - name: キーボード ショートカット
-              href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
-            - name: 法人のバナーまたはロゴ画像の変更
-              href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json
-            - name: ナビゲーション検索
-              href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json
-            - name: ユーザー エクスペリエンスのパーソナライズ
-              href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json
-            - name: 保存されているビュー
-              href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
-            - name: カスタム フィールドの作成と操作
-              href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-            - name: Power Apps からキャンバス アプリを埋め込む
-              href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
-            - name: ルックアップを使用した情報の検索
-              href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
-            - name: セッションの日付変更
-              href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
-            - name: ユーザーの優先タイム ゾーンの設定
-              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
-            - name: Lifecycle Services の理解
-              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
-        - name: Teams の Human Resources アプリ
-          href: hr-admin-teams-leave-app.md
-        - name: Go Live の準備
-          href: hr-admin-go-live-prepare.md
-        - name: Go Live に関するよく寄せられる質問
-          href: hr-admin-go-live-faq.md
-        - name: ドキュメント リソース
+            - name: 従業員およびマネージャー セルフ サービスの概要
+              href: hr-employee-manager-self-service-overview.md
+            - name: マネージャー セルフ サービスでカスタム リンクを作成する
+              href: hr-employee-manager-self-service-custom-links.md
+            - name: 従業員セルフサービスのワークスペース名の変更
+              href: hr-employee-self-service-workspace-name.md
+            - name: 個人情報の編集
+              href: hr-employee-manager-self-service-edit-personal-information.md
+            - name: 個人情報の編集の制限
+              href: hr-employee-self-service-restrict-editing.md
+        - name: 人事管理
           items:
-            - name: ヘルプ システム
-              href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
-            - name: ヘルプ システムに接続する
-              href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-            - name: カスタム ヘルプの概要
-              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
-            - name: フィールドの説明の表示およびエクスポート
-              href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
-            - name: タスク レコーダー
-              href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
-            - name: タスク レコーダーを使用したドキュメントやトレーニングの作成
-              href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
-        - name: Human Resources のトラブルシューティング
+            - name: 従業員の編成
+              href: hr-personnel-departments-jobs-positions.md
+            - name: 人事管理ワークスペース
+              href: hr-personnel-personnel-management-workspace.md
+            - name: 職務のコンポーネントの設定
+              href: hr-personnel-jobs.md
+            - name: 部門の定義
+              href: hr-personnel-define-departments.md
+            - name: 階層への部門の追加
+              href: hr-personnel-add-department-hierarchy.md
+            - name: 職務の定義
+              href: hr-personnel-define-jobs.md
+            - name: 職位
+              href: hr-personnel-positions.md
+            - name: 作業時間カレンダーの作成
+              href: hr-personnel-create-working-time-calendar.md
+            - name: 職務候補者の採用
+              href: hr-personnel-recruit.md
+            - name: 個人のアクションに関するよく寄せられる質問
+              href: hr-personnel-actions-faq.md
+            - name: ワークフローを使用した従業員情報の管理
+              href: hr-workflow-manage-employee-information.md
+            - name: 住所変更の表示と管理
+              href: hr-personnel-view-address-changes.md
+            - name: 職位の報告関係の変更
+              href: hr-personnel-modify-reporting-relationships-position.md
+            - name: 合理化された従業員の入力
+              href: ../talent/streamlined-employee-entry.md?toc=/dynamics365/human-resources/toc.json
+            - name: 作業者情報の入力
+              href: hr-personnel-enter-worker-information.md
+            - name: 雇用されていない作業者
+              href: hr-personnel-workers-without-employment.md
+            - name: 作業者への貸与品目
+              href: hr-personnel-loan-item-worker.md
+            - name: 貸与品目の作成
+              href: hr-personnel-create-loan-items.md
+            - name: 貸与品目の管理
+              href: hr-personnel-loan-items.md
+            - name: 継続的計画の作成
+              href: hr-personnel-develop-succession-plan.md
+            - name: プロジェクト タイムシートの入力
+              href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md?toc=/dynamics365/human-resources/toc.json
+            - name: 大量雇用プロジェクト
+              href: hr-personnel-mass-hire-projects.md
+            - name: 大量雇用プロジェクトの作成
+              href: hr-personnel-create-mass-hire-project.md
+            - name: 職位の設定
+              href: hr-personnel-set-up-positions.md
+            - name: けが/病気の情報の設定
+              href: hr-personnel-set-up-injury-illness-information.md
+            - name: 従業員のけが/病気の情報の管理
+              href: hr-personnel-maintain-employee-injury-illness-information.md
+            - name: 候補者の採用
+              items:
+                - name: 採用プロセスの管理
+                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                - name: 大量雇用プロジェクト
+                  href: ../human-resources/hr-personnel-mass-hire-projects.md
+                - name: 大量雇用プロジェクトの作成
+                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
+                - name: 申請者およびアプリケーション データの手動入力
+                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+                - name: 求人の作成と実施
+                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+                - name: 職位の設定
+                  href: ../human-resources/hr-personnel-set-up-positions.md
+                - name: 採用による候補者の雇用
+                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+                - name: 採用による既存の従業員の雇用
+                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+                - name: 候補者採用手段の確認と配置
+                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+        - name: タスク管理
+          href: hr-task-mgmt.md
+        - name: 休暇
           items:
-            - name: サポートの利用
-              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
-            - name: 時間後にバッチ ジョブのスケジュールを設定してパフォーマンスを最適化する
-              href: hr-admin-troubleshooting-batch-jobs.md
-            - name: 自動クリーンアップ タスクを使用したパフォーマンスの最適化
-              href: hr-admin-troubleshooting-batch-history.md
-            - name: 行き詰まったバッチ ジョブのリセット
-              href: hr-admin-troubleshooting-batch-execution.md
-            - name: 分析レポートが更新されない
-              href: hr-admin-troubleshooting-analytic-reports.md
-            - name: Power Apps 管理センターで環境を作成できない
-              href: hr-admin-troubleshooting-power-apps.md
-            - name: クライアントの接続が切断される
-              href: hr-admin-troubleshooting-disconnect.md
-            - name: 職位階層でのテキストの切り捨ての回避
-              href: hr-admin-troubleshooting-truncate.md
-            - name: 報酬プロセスを実行する
-              href: hr-admin-troubleshooting-compensation.md
-            - name: LCS へのタスク ガイドの保存
-              href: hr-admin-troubleshooting-task-guide.md
-            - name: セキュリティ ロールで個人住所にアクセスする
-              href: hr-admin-troubleshooting-private-addresses.md
-            - name: Human Resources が Dynamics 365アプリに表示されない
-              href: hr-admin-troubleshooting-not-in-apps.md
-            - name: レポート オプション
-              href: hr-admin-troubleshooting-reporting.md
-            - name: 統合に関してよく寄せられる質問
-              href: hr-admin-troubleshooting-integration.md
-    - name: 開発者ガイド
+            - name: 概要
+              href: hr-leave-and-absence-overview.md
+            - name: 休暇と欠勤のパラメータのコンフィギュレーション
+              href: hr-leave-and-absence-parameters.md
+            - name: 作業時間カレンダーの作成
+              href: hr-leave-and-absence-working-time-calendar.md
+            - name: 休暇申請ワークフローの作成
+              href: hr-leave-and-absence-workflow.md
+            - name: 休暇および欠勤タイプのコンフィギュレーション
+              href: hr-leave-and-absence-types.md
+            - name: 休暇および欠勤計画の作成
+              href: hr-leave-and-absence-plans.md
+            - name: 休暇計画への作業者の割り当て
+              href: hr-leave-and-absence-enroll.md
+            - name: 休暇および欠勤計画の累計
+              href: hr-leave-and-absence-accrue.md
+            - name: 休暇の中断
+              href: hr-leave-and-absence-suspend-leave.md
+            - name: 休暇申請
+              href: hr-employee-self-service-request-leave-of-absence.md
+            - name: 従業員の休暇の管理
+              href: hr-leave-and-absence-manage-employee-leave.md
+            - name: 休暇および欠勤の分析の表示
+              href: hr-leave-and-absence-analytics.md
+            - name: 休暇および欠勤要求の管理
+              href: hr-employee-self-service-manage-requests.md
+            - name: 休暇申請
+              href: hr-employee-self-service-request-time-off.md
+            - name: チームおよび会社のカレンダーの表示
+              href: hr-employee-self-service-calendar.md
+            - name: 休暇マネージャー ロールのコンフィギュレーション
+              href: hr-configure-absence-manager.md
+            - name: 休暇の売買ポリシーの管理
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: 休暇の売買ワークフローの作成
+              href: hr-leave-and-absence-buy-sell-workflow.md
+            - name: 休暇の売買
+              href: hr-employee-self-service-buy-sell-leave.md
+        - name: 給付金
+          items:
+            - name: 給付金プログラムの定義および管理
+              href: hr-benefits-manage-program.md
+            - name: 給付金の適格性ポリシー
+              href: hr-benefits-eligibility-policies.md
+            - name: 給付金適格性処理
+              href: hr-benefits-eligibility-process.md
+            - name: 給付金の適格性ルールおよびポリシーの定義
+              href: hr-benefits-define-eligibility-rules.md
+            - name: 従業員手当プログラムの提供
+              href: hr-benefits-deliver-employee-benefits-program.md
+            - name: 新しい給付金の作成
+              href: hr-benefits-create.md
+            - name: 給付金に作業者を登録する
+              href: hr-benefits-enroll-workers.md
+            - name: 給付金の有効期限の管理
+              href: hr-benefits-expiration-dates.md
+            - name: ACA レポートの生成
+              href: hr-benefits-aca-reports.md
+        - name: 給付金の管理
+          items:
+            - name: 給付金の管理の概要
+              href: hr-benefits-management-overview.md
+            - name: 給付金管理ワークスペース
+              href: hr-benefits-management-workspace.md
+            - name: 給付金の管理のコンフィギュレーション
+              items:
+                - name: 会社ごとの給付金管理パラメーターのコンフィギュレーション
+                  href: hr-benefits-setup-parameters-per-company.md
+                - name: すべての会社の給付金管理と従業員セルフサービスのパラメータの設定
+                  href: hr-benefits-setup-parameters.md
+                - name: 適格性のルールとオプションのコンフィギュレーション
+                  href: hr-benefits-setup-eligibility-rules.md
+                - name: 個人の連絡先の適格性オプションのコンフィギュレーション
+                  href: hr-benefits-setup-contact-eligibility-options.md
+                - name: 補充オプションの作成
+                  href: hr-benefits-setup-coverage-options.md
+                - name: 支払頻度の設定
+                  href: hr-benefits-setup-payment-frequencies.md
+                - name: ライフ イベント タイプのコンフィギュレーション
+                  href: hr-benefits-setup-life-event-types.md
+                - name: 計画タイプの概要
+                  href: hr-benefits-setup-plan-types.md
+                - name: 理由コードの設定
+                  href: hr-benefits-setup-reason-codes.md
+                - name: 階層コードの設定
+                  href: hr-benefits-setup-tier-codes.md
+                - name: レートのコンフィギュレーション
+                  href: hr-benefits-setup-rates.md
+                - name: 控除のコンフィギュレーション
+                  href: hr-benefits-setup-deductions.md
+                - name: 待機日数のコンフィギュレーション
+                  href: hr-benefits-setup-waiting-days.md
+                - name: 待機期間のコンフィギュレーション
+                  href: hr-benefits-setup-waiting-periods.md
+                - name: 丸めルールの設定
+                  href: hr-benefits-setup-rounding-rules.md
+                - name: 雇用カテゴリの作成
+                  href: hr-benefits-setup-employment-categories.md
+                - name: 雇用タイプの設定
+                  href: hr-benefits-setup-employment-types.md
+                - name: 従業員セルフ サービスのコンフィギュレーション
+                  href: hr-benefits-setup-employee-self-service.md
+                - name: 給付金計画の作成
+                  items:
+                    - name: 給付金計画の設定
+                      href: hr-benefits-plans-setup.md
+                    - name: フレックス クレジット プログラムの設定
+                      href: hr-benefits-plans-flex-credit-programs.md
+                - name: 給付金計画の処理
+                  items:
+                    - name: 登録適格性の処理
+                      href: hr-benefits-process-enrollment-eligibility.md
+                    - name: ライフ イベントの処理
+                      href: hr-benefits-process-life-events.md
+                    - name: ライフ イベントの変更の処理
+                      href: hr-benefits-process-life-event-changes.md
+                    - name: ライフ イベントの適格性の処理
+                      href: hr-benefits-process-life-event-eligibility.md
+                    - name: レート変更の処理
+                      href: hr-benefits-process-rate-changes.md
+                - name: 従業員の給付金の選択
+                  href: employee-select-benefits-ess.md
+                - name: ACA 報告書
+                  href: hr-benefits-management-aca-reports.md
+                - name: 給付金明細書
+                  href: hr-benefits-statement.md
+        - name: 報酬管理
+          items:
+            - name: 報酬プランの概要
+              href: hr-compensation-overview.md
+            - name: 報酬グリッドの設定
+              href: hr-compensation-grids.md
+            - name: 報酬の構造と計画の作成
+              href: hr-compensation-structure.md
+            - name: 固定報酬プランの作成
+              href: hr-compensation-fixed-plans.md
+            - name: 変動報酬プランの作成
+              href: hr-compensation-variable-plans.md
+            - name: 固定報酬プランへの従業員の登録
+              href: hr-compensation-enroll-employees-fixed.md
+            - name: 変動報酬プランへの従業員の登録
+              href: hr-compensation-enroll-employees-variable.md
+            - name: 報酬プロセスの定義と結果の計算
+              href: hr-compensation-define-process.md
+            - name: 報酬プランの処理
+              href: hr-compensation-process.md
+            - name: 従業員を支払準備完了とマークする
+              href: hr-compensation-payroll.md
+        - name: 従業員の能力開発
+          items:
+            - name: 業績管理の概要
+              href: hr-develop-performance-management-overview.md
+            - name: スキル
+              items:
+                - name: スキルの構成
+                  href: hr-develop-skills.md
+                - name: スキルの入力
+                  href: hr-develop-enter-skills.md
+                - name: スキルのマッピング
+                  href: hr-develop-map-skills.md
+                - name: 要員のスキルの調整
+                  href: hr-develop-skills.md
+            - name: 業績仕訳への追加
+              href: hr-develop-add-performance-journal.md
+            - name: 目標の作成
+              href: hr-develop-create-goal.md
+            - name: パフォーマンス確認の作成
+              href: hr-develop-create-performance-review.md
+        - name: ラーニング
+          items:
+            - name: トレーニング コースの設定
+              href: hr-learning-courses.md
+            - name: アンケートの概要
+              href: hr-learning-questionnaires.md
+            - name: アンケートのデザイン
+              href: hr-learning-design-questionnaires.md
+            - name: アンケートの配布とスケジューリング
+              href: hr-learning-distribute-questionnaires.md
+            - name: スケジューリングを使用したアンケートの配布
+              href: hr-learning-distribute-questionnaires-scheduling.md
+            - name: アンケート結果の表示
+              href: hr-learning-evaluate-questionnaire-results.md
+            - name: アンケート結果の分析
+              href: hr-learning-analyze-questionnaire-results.md
+            - name: 自由回答式の質問の作成
+              href: hr-learning-create-open-ended-question.md
+            - name: 選択式の質問の作成
+              href: hr-learning-create-closed-ended-question.md
+            - name: 依存質問の作成
+              href: hr-learning-depending-question.md
+        - name: ワークフロー システムの使用
+          items:
+            - name: ワークフロー システムの概要
+              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー システムのアーキテクチャ
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー要素
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー アクション
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフローの作成
+              items:
+                - name: ワークフローの作成の概要
+                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー プロパティのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                - name: 手動タスクのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 自動化タスクのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 承認プロセスのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 承認ステップのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 支出確認者のコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+                - name: 手動決定のコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 条件付き意思決定のコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 並列活動のコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 並列分岐のコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: 品目ワークフローのコンフィギュレーション
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフローの作業項目をデリゲート
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー履歴の表示
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+            - name: ユーザーにワークフローに関連する電子メールを送信するシステムのコンフィギュレーション
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー タイプ
+              items:
+                - name: ワークフロー タイプの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー タイプのチェックリスト
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフローカテゴリの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー タイプのクエリの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                - name: 新しいワークフロー タイプの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー ドキュメント クラスの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: SubmitToWorkflow クラスの作成
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: ワークフロー ドキュメント クラスとワークフロー タイプの関連付け
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフロー タイプのレポート
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+            - name: ワークフローに関するよく寄せられる質問
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
+        - name: 職場の安全性とコンプライアンス (米国)
+          items:
+            - name: フォーム I-9 の検証
+              href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
+            - name: フォーム I-9 を使用した雇用適格性の検証
+              href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
+            - name: フォーム I-9 ドキュメント タイプの設定
+              href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
+            - name: 米国障碍者法 (Americans with Disabilities Act) への準拠
+              href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
+            - name: 作業者の特別設備の管理
+              href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
+    - name: Human Resources の開発
       items:
         - name: 概要
           href: hr-developer-overview.md
-        - name: Power Apps および Power Automate を使用した拡張
+        - name: Power Apps と Power Automate を使用した拡張
           href: hr-developer-power-apps.md
         - name: Dataverse テーブル
           href: hr-developer-entities.md
@@ -355,6 +882,8 @@
           items:
             - name: 概要
               href: hr-admin-integration-ats-api-introduction.md
+            - name: ATS 統合のサーバー間認証
+              href: hr-admin-integration-ats-api-s2s-auth.md
             - name: 採用要求および関連エンティティ
               items:
                 - name: 採用要求
@@ -387,7 +916,7 @@
                   href: hr-admin-integration-ats-api-certificate-type.md
                 - name: 当事者の連絡先
                   href: hr-admin-integration-ats-api-party-contact.md
-                - name: 名前
+                - name: 個人
                   href: hr-admin-integration-ats-api-person.md
                 - name: 住所
                   href: hr-admin-integration-ats-api-person-address.md
@@ -443,397 +972,59 @@
               href: hr-admin-integration-payroll-api-introduction.md
             - name: 給与エンティティの生成および確認
               href: hr-admin-integration-payroll-api-generate-review-entities.md
-            - name: 給与従業員
-              href: hr-admin-integration-payroll-api-payroll-employee.md
-            - name: 給与作業者の住所
-              href: hr-admin-integration-payroll-api-payroll-worker-address.md
-            - name: 固定報酬の報酬計画
-              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-            - name: 給与職位職務
-              href: hr-admin-integration-payroll-api-payroll-position-job.md
-            - name: 給与職位
-              href: hr-admin-integration-payroll-api-payroll-position.md
-    - name: ユーザー ガイド
-      items:
-        - name: 概要
-          href: hr-hrpro-overview.md
-        - name: Human Resources の設定
-          items:
-            - name: Human Resources パラメーターのコンフィギュレーション
-              href: hr-setup-parameters.md
-            - name: Human Resources 共有パラメーターのコンフィギュレーション
-              href: hr-setup-shared-parameters.md
-            - name: 日付と時刻のフィールドの理解
-              href: hr-setup-date-time-fields.md
-        - name: 組織設定のコンフィギュレーション
-          items:
-            - name: 組織管理ホーム ページ
-              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json
-            - name: 番号順序
+            - name: 給与統合パラメーター
+              href: hr-admin-integration-payroll-api-parameters.md
+            - name: 給与エンティティ
               items:
-                - name: 番号順序の概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: 番号順序を個別に設定する
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
-                - name: ウィザードを使用した番号順序の設定
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
-            - name: 組織と組織階層
+                - name: 給与従業員
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: 給与作業者の住所
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: 固定報酬の報酬計画
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: 変動報酬の報酬計画
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
+                - name: 給与職位
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: 給与職位職務
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: 休暇および欠勤に関連するエンティティ
               items:
-                - name: 組織と組織階層の概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json
-                - name: 組織階層の計画
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/human-resources/toc.json
-                - name: 組織階層の作成
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/human-resources/toc.json
-                - name: 法人の作成
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/human-resources/toc.json
-                - name: 作業単位の作成
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/human-resources/toc.json
-            - name: グローバル アドレス帳
+                - name: 休暇残高
+                  href: hr-admin-integration-payroll-api-leave-balance.md
+                - name: 休暇タイプ
+                  href: hr-admin-integration-payroll-api-leave-type.md
+                - name: 休暇申請
+                  href: hr-admin-integration-payroll-api-leave-request.md
+            - name: 給付金に関連するエンティティ
               items:
-                - name: グローバル アドレス帳の概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json
-                - name: グローバル アドレス帳およびその他のアドレス帳の計画
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
-                - name: グローバル アドレス帳の構成
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
-                - name: アドレス帳に関するよく寄せられる質問
-                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
-                - name: アドレス帳の構成
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
-            - name: ワークフロー システム
+                - name: 給与作業者の給付金計画
+                  href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+            - name: その他のエンティティ
               items:
-                - name: ワークフロー システムの概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
-                - name: ワークフロー システムのアーキテクチャ
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
-                - name: ワークフロー要素
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
-                - name: ワークフロー アクション
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
-                - name: ワークフローの作成
-                  items:
-                    - name: ワークフローの作成の概要
-                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: ワークフロー プロパティのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 手動タスクのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 自動化タスクのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 承認プロセスのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 承認ステップのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 手動決定のコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 条件付き意思決定のコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 並列活動のコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 並列分岐のコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 品目ワークフローのコンフィギュレーション
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: ワークフロー メッセージ処理バッチ ジョブの重要なものとしてのコンフィギュレーション
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
-                - name: ワークフローの作業項目をデリゲート
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: ワークフロー履歴の表示
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
-                - name: ユーザーにワークフローに関連する電子メールを送信するシステムのコンフィギュレーション
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
-                - name: ワークフロー タイプ
-                  items:
-                    - name: ワークフロー タイプの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
-                    - name: ワークフロー タイプのチェックリスト
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
-                    - name: ワークフローカテゴリの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
-                    - name: ワークフロー タイプのクエリの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 新しいワークフロー タイプの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
-                    - name: ワークフロー ドキュメント クラスの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
-                    - name: SubmitToWorkflow クラスの作成
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: ワークフロー ドキュメント クラスとワークフロー タイプの関連付け
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
-                - name: ワークフロー タイプのレポート
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
-                - name: ワークフローに関するよく寄せられる質問
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
-            - name: 警告
+                - name: 氏名の履歴
+                  href: hr-admin-integration-payroll-api-person-name-history.md
+                - name: 変換率
+                  href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
+            - name: オプション セット
               items:
-                - name: 警告の概要
-                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: 警告ルールの作成
-                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/human-resources/toc.json
-                - name: 警告のバッチ処理
-                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
-                - name: 電子メールによるクライアント警告通知
-                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-            - name: ケース管理
-              items:
-                - name: ケース管理の概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json
-                - name: ケース セキュリティ、プロセス、およびカテゴリの計画
-                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/human-resources/toc.json
-            - name: レコード テンプレート
-              items:
-                - name: レコード テンプレートの概要
-                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/human-resources/toc.json
-                - name: レコード テンプレートの作成
-                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/human-resources/toc.json
-                - name: レコード テンプレートを使用した新しいレコードの作成
-                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/human-resources/toc.json
-            - name: ドキュメント管理のコンフィギュレーション
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
-            - name: 電子メールのコンフィギュレーションと送信
-              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
-            - name: 日時データとタイム ゾーン
-              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
-        - name: 個人の管理
-          items:
-            - name: 従業員の編成
-              href: hr-personnel-departments-jobs-positions.md
-            - name: 職務のコンポーネントの設定
-              href: hr-personnel-jobs.md
-            - name: 部門の定義
-              href: hr-personnel-define-departments.md
-            - name: 階層への部門の追加
-              href: hr-personnel-add-department-hierarchy.md
-            - name: 職務の定義
-              href: hr-personnel-define-jobs.md
-            - name: 作業時間カレンダーの作成
-              href: hr-personnel-create-working-time-calendar.md
-            - name: 職務候補者の採用
-              href: hr-personnel-recruit.md
-            - name: 個人のアクションに関するよく寄せられる質問
-              href: hr-personnel-actions-faq.md
-            - name: ワークフローを使用した従業員情報の管理
-              href: hr-workflow-manage-employee-information.md
-            - name: 住所変更の表示と管理
-              href: hr-personnel-view-address-changes.md
-            - name: 職位の報告関係の変更
-              href: hr-personnel-modify-reporting-relationships-position.md
-            - name: 作業者情報の入力
-              href: hr-personnel-enter-worker-information.md
-            - name: 雇用されていない作業者
-              href: hr-personnel-workers-without-employment.md
-            - name: 作業者への貸与品目
-              href: hr-personnel-loan-item-worker.md
-            - name: 貸与品目の作成
-              href: hr-personnel-create-loan-items.md
-            - name: 貸与品目の管理
-              href: hr-personnel-loan-items.md
-            - name: 継続的計画の作成
-              href: hr-personnel-develop-succession-plan.md
-            - name: 大量雇用プロジェクト
-              href: hr-personnel-mass-hire-projects.md
-            - name: 大量雇用プロジェクトの作成
-              href: hr-personnel-create-mass-hire-project.md
-            - name: 職位の設定
-              href: hr-personnel-set-up-positions.md
-            - name: けが/病気の情報の設定
-              href: hr-personnel-set-up-injury-illness-information.md
-            - name: 従業員のけが/病気の情報の管理
-              href: hr-personnel-maintain-employee-injury-illness-information.md
-        - name: 報酬プランの設定
-          items:
-            - name: 報酬プランの概要
-              href: hr-compensation-overview.md
-            - name: 報酬グリッドの設定
-              href: hr-compensation-grids.md
-            - name: 報酬の構造と計画の作成
-              href: hr-compensation-structure.md
-            - name: 固定報酬プランの作成
-              href: hr-compensation-fixed-plans.md
-            - name: 変動報酬プランの作成
-              href: hr-compensation-variable-plans.md
-            - name: 固定報酬プランへの従業員の登録
-              href: hr-compensation-enroll-employees-fixed.md
-            - name: 変動報酬プランへの従業員の登録
-              href: hr-compensation-enroll-employees-variable.md
-            - name: 報酬プロセスの定義と結果の計算
-              href: hr-compensation-define-process.md
-            - name: 報酬プランの処理
-              href: hr-compensation-process.md
-        - name: 福利厚生の管理
-          items:
-            - name: 給付金管理
-              items:
-                - name: 福利厚生の管理の概要
-                  href: hr-benefits-management-overview.md
-                - name: 給付金管理ワークスペース
-                  href: hr-benefits-management-workspace.md
-                - name: 福利厚生の管理のコンフィギュレーション
-                  items:
-                    - name: 会社ごとの福利厚生管理パラメーターのコンフィギュレーション
-                      href: hr-benefits-setup-parameters-per-company.md
-                    - name: すべての会社の福利厚生管理と従業員セルフサービスのパラメータの設定
-                      href: hr-benefits-setup-parameters.md
-                    - name: 適格性のルールとオプションのコンフィギュレーション
-                      href: hr-benefits-setup-eligibility-rules.md
-                    - name: 個人の連絡先の適格性オプションのコンフィギュレーション
-                      href: hr-benefits-setup-contact-eligibility-options.md
-                    - name: 補充オプションの作成
-                      href: hr-benefits-setup-coverage-options.md
-                    - name: 支払頻度の設定
-                      href: hr-benefits-setup-payment-frequencies.md
-                    - name: ライフ イベント タイプのコンフィギュレーション
-                      href: hr-benefits-setup-life-event-types.md
-                    - name: 計画タイプの作成
-                      href: hr-benefits-setup-plan-types.md
-                    - name: 理由コードの設定
-                      href: hr-benefits-setup-reason-codes.md
-                    - name: 層コードの設定
-                      href: hr-benefits-setup-tier-codes.md
-                    - name: レートのコンフィギュレーション
-                      href: hr-benefits-setup-rates.md
-                    - name: 控除のコンフィギュレーション
-                      href: hr-benefits-setup-deductions.md
-                    - name: 待機日数のコンフィギュレーション
-                      href: hr-benefits-setup-waiting-days.md
-                    - name: 待機期間のコンフィギュレーション
-                      href: hr-benefits-setup-waiting-periods.md
-                    - name: 丸めルールの設定
-                      href: hr-benefits-setup-rounding-rules.md
-                    - name: 雇用カテゴリの作成
-                      href: hr-benefits-setup-employment-categories.md
-                    - name: 雇用タイプの設定
-                      href: hr-benefits-setup-employment-types.md
-                    - name: 従業員セルフ サービスのコンフィギュレーション
-                      href: hr-benefits-setup-employee-self-service.md
-                - name: 福利厚生計画の作成
-                  items:
-                    - name: 福利厚生計画の設定
-                      href: hr-benefits-plans-setup.md
-                    - name: フレックス クレジット プログラムの設定
-                      href: hr-benefits-plans-flex-credit-programs.md
-                - name: 福利厚生計画の処理
-                  items:
-                    - name: 登録適格性の処理
-                      href: hr-benefits-process-enrollment-eligibility.md
-                    - name: ライフ イベントの処理
-                      href: hr-benefits-process-life-events.md
-                    - name: ライフ イベントの変更の処理
-                      href: hr-benefits-process-life-event-changes.md
-                    - name: ライフ イベントの適格性の処理
-                      href: hr-benefits-process-life-event-eligibility.md
-                    - name: レート変更の処理
-                      href: hr-benefits-process-rate-changes.md
-                - name: ACA 報告書
-                  href: hr-benefits-management-aca-reports.md
-            - name: 福利厚生プログラムの定義および管理
-              href: hr-benefits-manage-program.md
-            - name: 給付金適格性ポリシー
-              href: hr-benefits-eligibility-policies.md
-            - name: 給付金適格性処理
-              href: hr-benefits-eligibility-process.md
-            - name: 給付金の適格性ルールおよびポリシーの定義
-              href: hr-benefits-define-eligibility-rules.md
-            - name: 従業員手当プログラムの提供
-              href: hr-benefits-deliver-employee-benefits-program.md
-            - name: 新しい給付金の作成
-              href: hr-benefits-create.md
-            - name: 福利厚生に作業者を登録する
-              href: hr-benefits-enroll-workers.md
-            - name: 給付金の有効期限の管理
-              href: hr-benefits-expiration-dates.md
-            - name: ACA レポートの生成
-              href: hr-benefits-aca-reports.md
-        - name: 休暇および欠勤の管理
-          items:
-            - name: 概要
-              href: hr-leave-and-absence-overview.md
-            - name: 休暇と欠勤のパラメータのコンフィギュレーション
-              href: hr-leave-and-absence-parameters.md
-            - name: 作業時間カレンダーの作成
-              href: hr-leave-and-absence-working-time-calendar.md
-            - name: 休暇申請ワークフローの作成
-              href: hr-leave-and-absence-workflow.md
-            - name: 休暇および欠勤タイプのコンフィギュレーション
-              href: hr-leave-and-absence-types.md
-            - name: 休暇および欠勤計画の作成
-              href: hr-leave-and-absence-plans.md
-            - name: 休暇計画への作業者の割り当て
-              href: hr-leave-and-absence-enroll.md
-            - name: 休暇および欠勤計画の累計
-              href: hr-leave-and-absence-accrue.md
-            - name: 休暇の中断
-              href: hr-leave-and-absence-suspend-leave.md
-            - name: 休暇申請
-              href: hr-employee-self-service-request-leave-of-absence.md
-            - name: 従業員の休暇の管理
-              href: hr-leave-and-absence-manage-employee-leave.md
-            - name: 休暇および欠勤の分析の表示
-              href: hr-leave-and-absence-analytics.md
-            - name: 休暇および欠勤要求の管理
-              href: hr-employee-self-service-manage-requests.md
-            - name: 休暇申請
-              href: hr-employee-self-service-request-time-off.md
-            - name: チームおよび会社のカレンダーの表示
-              href: hr-employee-self-service-calendar.md
-            - name: 休暇の売買ポリシーの管理
-              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
-            - name: 休暇の売買ワークフローの作成
-              href: hr-leave-and-absence-buy-sell-workflow.md
-            - name: 休暇の売買
-              href: hr-employee-self-service-buy-sell-leave.md
-        - name: Teams での休暇要求の管理
-          href: hr-teams-leave-app.md
-        - name: 従業員の育成
-          items:
-            - name: 業績管理の概要
-              href: hr-develop-performance-management-overview.md
-            - name: スキル
-              items:
-                - name: スキルの設定
-                  href: hr-develop-skills.md
-                - name: スキルの入力
-                  href: hr-develop-enter-skills.md
-                - name: スキルのマッピング
-                  href: hr-develop-map-skills.md
-            - name: 業績仕訳への追加
-              href: hr-develop-add-performance-journal.md
-            - name: 目標の作成
-              href: hr-develop-create-goal.md
-            - name: 業績の確認の作成
-              href: hr-develop-create-performance-review.md
-        - name: コースの作成
-          items:
-            - name: トレーニング コースの設定
-              href: hr-learning-courses.md
-            - name: アンケートの概要
-              href: hr-learning-questionnaires.md
-            - name: アンケートのデザイン
-              href: hr-learning-design-questionnaires.md
-            - name: アンケートの配布とスケジューリング
-              href: hr-learning-distribute-questionnaires.md
-            - name: スケジューリングを使用したアンケートの配布
-              href: hr-learning-distribute-questionnaires-scheduling.md
-            - name: アンケート結果の表示
-              href: hr-learning-evaluate-questionnaire-results.md
-            - name: アンケート結果の分析
-              href: hr-learning-analyze-questionnaire-results.md
-            - name: 自由回答式の質問の作成
-              href: hr-learning-create-open-ended-question.md
-            - name: 選択式の質問の作成
-              href: hr-learning-create-closed-ended-question.md
-            - name: 依存質問の作成
-              href: hr-learning-depending-question.md
-        - name: 従業員およびマネージャー セルフ サービスの設定
-          items:
-            - name: 従業員およびマネージャー セルフ サービスの概要
-              href: hr-employee-manager-self-service-overview.md
-            - name: マネージャー セルフ サービスでカスタム リンクを作成する
-              href: hr-employee-manager-self-service-custom-links.md
-            - name: 従業員セルフサービスのワークスペース名の変更
-              href: hr-employee-self-service-workspace-name.md
-            - name: 個人情報の編集
-              href: hr-employee-manager-self-service-edit-personal-information.md
-            - name: 個人情報の編集の制限
-              href: hr-employee-self-service-restrict-editing.md
+                - name: 性別
+                  href: hr-admin-integration-payroll-api-gender.md
+                - name: いいえ はい
+                  href: hr-admin-integration-payroll-api-no-yes.md
+                - name: 報奨タイプ
+                  href: hr-admin-integration-payroll-api-award-type.md
+                - name: プロセスのタイプ
+                  href: hr-admin-integration-payroll-api-process-type.md
+                - name: 給付金計画タイプの適用
+                  href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
+                - name: 従業員の給付金計画の状態
+                  href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
+    - name: 財務と運用アプリの開発と管理
+      href: ../fin-ops-core/dev-itpro/index.md
+    - name: Dynamics 365 Finance
+      href: ../finance/index.md
+    - name: Dynamics 365 Supply Chain Management
+      href: ../supply-chain/index.md
+    - name: Dynamics 365 Commerce
+      href: ../commerce/index.md

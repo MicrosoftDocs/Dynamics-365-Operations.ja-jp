@@ -2,7 +2,7 @@
 title: Adventure Works テーマのインストール
 description: このトピックでは、Microsoft Dynamics 365 Commerce で Adventure Works テーマをインストールする方法について説明します。
 author: anupamar-ms
-ms.date: 07/21/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ad704c6c3b95abcfd52e449a0ffbb4b82b236498ae8d2775c4e65811de3ef503
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9d0d04c1a698c765b5effcca88624e6fb99da64
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763839"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913705"
 ---
 # <a name="install-the-adventure-works-theme"></a>Adventure Works テーマのインストール
 
@@ -32,7 +32,7 @@ ms.locfileid: "6763839"
 
 ## <a name="prerequisites"></a>必要条件
 
-Adventure Works テーマをインストールする前に、Retail Cloud Scale Unit (RCSU)、Commerce オンライン ソフトウェア開発キット (SDK)、および Commerce モジュール ライブラリを含む Dynamics 365 Commerce 環境 (Commerce Version 10.0.20 以降) が必要です。 Commerce SDK およびモジュール ライブラリのインストール方法については、[SDK およびモジュール ライブラリの更新プログラム](e-commerce-extensibility/sdk-updates.md)を参照してください。 
+Adventure Works テーマをインストールする前に、Retail Cloud Scale Unit (RCSU)、Commerce オンライン ソフトウェア開発キット (SDK)、および Commerce モジュール ライブラリを含む Dynamics 365 Commerce 環境 (Commerce Version 10.0.20 以降) が必要です。 Commerce SDK およびモジュール ライブラリのインストール方法については、[開発環境の設定](e-commerce-extensibility/setup-dev-environment.md)を参照してください。 
 
 ## <a name="installation-steps"></a>インストール手順
 
@@ -48,11 +48,19 @@ Adventure Works テーマ パッケージは、**dynamics365-commerce** フィ�
 
     `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`  
     
-ローカル環境にパッケージをインストールするには、コマンド プロンプトから次のコマンドを実行します。 このコマンドは、依存関係が含まれるように package.json ファイルを自動的に更新します。
+パッケージをローカル環境にインストールするには、 `yarn add THEME_PACKAGE@VERSION` コマンド プロンプトからコマンドを実行します。**THEME_PACKAGE** は、テーマ パッケージ (@msdyn365-commerce-theme/adventureworks-theme-kit) であり、**バージョン** は使用するモジュール ライブラリのバージョン番号です。 テーマ パッケージとモジュール ライブラリのバージョンは一致していることが重要です。 使用するモジュールライブラリのバージョン番号を確認するには、package.json ファイルを開き、**依存関係** セクションの **starter-pack** の値を確認します。 次の例では、package.json ファイルは、Dynamics 365 Commerce バージョン 10.0.22 リリースに対応するモジュール ライブラリのバージョン 9.32 を使用しています。  
 
-`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit`
+```json
+"dependencies": {
+    "@msdyn365-commerce-modules/starter-pack": "9.32",
+}
+```
 
-**package.json** ファイルでは、テーマのバージョンを特定のバージョンに更新します。
+以下の例では、`yarn add` コマンドを実行して、Adventure Works テーマのバージョン 9.32 を追加しています。 このコマンドは、package.json ファイルを自動的に更新されるため、依存関係が含まれます。
+
+`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit@9.32`
+
+モジュール ライブラリのバージョン更新については、[SDK およびモジュール ライブラリの更新](e-commerce-extensibility/sdk-updates.md) を参照してください 。 
 
 > [!IMPORTANT]
 > - すべての機能が期待どおりに機能するように、テーマのバージョンはモジュール ライブラリのバージョンと一致している必要があります。 

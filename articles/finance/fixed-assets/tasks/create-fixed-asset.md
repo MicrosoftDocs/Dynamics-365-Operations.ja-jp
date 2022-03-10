@@ -2,26 +2,23 @@
 title: 固定資産の作成
 description: このトピックでは、固定資産リスト ページから新しい固定資産レコードを作成する方法について説明します。
 author: moaamer
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 481bdb55b813dad5366f382ae35d8345b0e67d9f
-ms.sourcegitcommit: a9efbd69f2670fd6ba0ad0babf304fc206d01249
+ms.openlocfilehash: 7bf6e74253d2cf4150914fcb8bcc51aa2f32c0435c563b677def40115e0163fa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "4445415"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758128"
 ---
 # <a name="create-a-fixed-asset"></a>固定資産の作成
 
@@ -55,3 +52,6 @@ Excel アドインのテンプレートに固定資産番号を定義してい�
 
 > [!WARNING]
 > トランザクションが関連付けられた帳簿に転記されている場合や、新たに作成された固定資産が仕訳帳明細行に入力済で転記されていない場合、固定資産レコードは削除されません。 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

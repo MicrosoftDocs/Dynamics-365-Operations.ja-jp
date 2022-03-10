@@ -2,11 +2,9 @@
 title: エンティティ格納を Data Lake として使用可能にする
 description: このトピックでは、エンティティ格納を Microsoft Azure Data Lake として使用可能にする方法について説明します。
 author: MilindaV2
-manager: AnnBe
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2018-12-03
 ms.dyn365.ops.version: Platform Update 23
-ms.openlocfilehash: a60ec67f5bae5f961339fe6a5a32938de5040ebc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 19b4bbeaf0bb16fd9a97224dfeccc30bcaf6143ee53e2c105e575b0f5d951cc0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688093"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721912"
 ---
 # <a name="make-entity-store-available-as-a-data-lake"></a>エンティティ格納を Data Lake として使用可能にする
 
@@ -51,7 +49,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
 
 新しいエクスペリエンスが表示されます。
 
-![新しい UI エクスペリエンス](./media/entity-store-data-lake-03.png)
+![新しい UI エクスペリエンス。](./media/entity-store-data-lake-03.png)
 
 新しいエクスペリエンスをオンにすると、それぞれの集計の測定で更新を定義できます。 次の更新オプションを選択できます。
 
@@ -87,7 +85,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
 1. Azure ポータルで、新しいストレージ アカウントを作成します。
 2. **ストレージ アカウントを作成** ダイアログ ボックスで、次のパラメーター フィールドの値を指定します。
 
-    - **場所:** 環境があるデータ センターを選択します。 選択したデータ センターが異なる Azure リージョンにある場合、追加のデータ移動コストが発生します。 Microsoft Power BI やデータ ウェアハウスが別の地域にある場合、地域間でストレージを移動するためにレプリケーションを使用することができます。
+    - **場所:** 環境があるデータ センターを選択します。 選択したデータ センターが異なる Azure リージョンにある場合、追加のデータ移動コストが発生します。 Microsoft Power BI やデータ ウェアハウスが別の地域にある場合は、地域間でのストレージ移動にはレプリケーションを使用することができます。
     - **パフォーマンス:** **標準** を選択することをお勧めします。
     - **アカウントの種類:** **StorageV2** を選択する必要があります。
 
@@ -132,7 +130,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
 4. **キーのアクセス許可** フィールドで、**取得** および **リスト** のアクセス許可を選択します。
 5. **シークレットのアクセス許可** フィールドで、**取得** および **リスト** のアクセス許可を選択します。
 
-    ![取得およびリストのアクセス許可](./media/entity-store-data-lake-05.png)
+    ![取得および一覧のアクセス許可。](./media/entity-store-data-lake-05.png)
 
 6. **保存** を選択します。
 
@@ -146,7 +144,7 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
     - **DNS 名:** Key Vault の DNS 名を入力します。
     - **シークレット名:** 接続文字列情報と共に Key Vault に追加したシークレットの名前を入力します。
 
-    ![[システム パラメーター] ページの [データ接続] タブ](./media/entity-store-data-lake-04.png)
+    ![システム パラメーター ページのデータ接続タブ。](./media/entity-store-data-lake-04.png)
 
 3. **Azure Key Vault のテスト** および **Azure Storage のテスト** リンクを選択し、指定した構成情報にシステムがアクセスできることを検証します。
 4. **データ接続を有効にする** チェック ボックスをオンにします。
@@ -154,3 +152,6 @@ Date Lake 統合を有効にする前に、自動のエンティティ店舗更�
 エンティティ格納データが、リレーショナル エンティティ格納データベースではなく、指定したストレージ場所に入力されるようになりました。
 
 集計の測定と、エンティティ格納 UI で選択した更新オプションが、Data Lake にコピーされたデータに適用されるようになりました。
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

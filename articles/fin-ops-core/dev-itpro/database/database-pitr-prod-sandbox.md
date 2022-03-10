@@ -2,7 +2,7 @@
 title: サンドボックス環境への生産データベースのポイントインタイム復元
 description: このトピックでは、Microsoft Dynamics Lifecycle Services を使用して生産データベースのポイントインタイム復元を実行する方法について説明します。
 author: LaneSwenka
-ms.date: 08/4/2021
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fd36707ab30f18240a9b9cc406460e4fb143e514
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d6bd7e1d58a5cd87978b90d1201f3b6ca2aaf408
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345592"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778047"
 ---
 # <a name="point-in-time-restore-of-the-production-database-to-a-sandbox-environment"></a>サンドボックス環境への生産データベースのポイントインタイム復元
 
@@ -94,7 +94,11 @@ Lifecycle Services チームは、手動または手動のプロセスに依存�
 
 ## <a name="known-issues"></a>既知の問題
 
-### <a name="restore-is-denied-for-environments-that-run-platform-update-20-or-earlier"></a>プラットフォーム 更新プログラム 20 以前が稼働している環境では、復元は拒否されます
+### <a name="the-restore-operation-fails-if-the-sandbox-customizations-are-incompatible-with-production-data"></a>サンドボックスのカスタマイズが生産データと互換性がない場合、復元操作は失敗します
+
+カスタマイズがサンドボックス環境に正常に追加された場合 (つまり、顧客の AOT 配置可能パッケージが LCS 経由で正常にインストールされた場合)、生産データに対して成功しない可能性があります。 たとえば、顧客が **仕入先名** の一意のインデックスを VendTable テーブルに追加します。 このカスタマイズは、サンドボックス環境に重複した仕入先名がない場合、正常にインストールされます。 ただし、生産データベースを復元操作の一環として使用した場合、サンドボックス環境にインバウンドするデータセットに重複があると、インストールが失敗することがあります。 このデータセットの重複はサポートされていません。 したがって、復元操作を成功させる前に、カスタマイズを削除する必要があります。
+
+### <a name="the-restore-operation-is-denied-for-environments-that-run-platform-update-20-or-earlier"></a>プラットフォーム 更新プログラム 20 以前が稼働している環境では、復元操作は拒否されます
 
 現在、環境がプラットフォーム更新プログラム 20 またはそれ以前を実行している場合は、データベースの更新プロセスを完了することはできません。 詳細については、[現在サポートされているプラットフォーム更新の一覧](../migration-upgrade/versions-update-policy.md) を参照してください。
 

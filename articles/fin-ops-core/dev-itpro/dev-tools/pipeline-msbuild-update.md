@@ -5,18 +5,18 @@ author: jorisdg
 ms.date: 09/23/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d180759f89aa457f676b28fc4e9b19aa04ef46f0329a62ab519eb45ed9a0bfb6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 17dab44ceefbaaec41bb078c54cdb6e94b57e44c
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736256"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783174"
 ---
 # <a name="update-a-legacy-pipeline-in-azure-pipelines"></a>Azure Pipelines でのレガシ パイプラインの更新
 

@@ -3,20 +3,18 @@ title: API、クラス、テーブルのリファレンス
 description: このトピックでは、Visual Studio および Microsoft のドキュメント サイトで API ドキュメントを見つける場所について説明します。
 author: RobinARH
 ms.date: 07/23/2019
-ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: 63853
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 149e524c550f810d514b548e9cb0ea65ba28d81f
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: f59a6b66ab0b672bd6d5ef5949f7de31537efcea
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923255"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782952"
 ---
 # <a name="api-class-and-table-resources"></a>API、クラス、テーブルのリファレンス
 
@@ -73,6 +71,8 @@ Microsoft docs サイトで使用可能なアプリケーション エクスプ�
 ## <a name="system-classes"></a>システム クラス
 
 システム クラスのリファレンス ドキュメントは .NET API ブラウザーに含まれています。
+
+[Finance and Operations アプリの API 参照](/dotnet/api/fin-ops-api-landing)
 
 [Microsoft.Dynamics.Ax.Xpp 名前空間](/dotnet/api/microsoft.dynamics.ax.xpp)
 

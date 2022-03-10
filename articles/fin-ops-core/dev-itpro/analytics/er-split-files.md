@@ -2,11 +2,9 @@
 title: ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
 description: このトピックでは、ファイルのサイズおよびコンテンツの品目数量に基づいて生成されるファイルを分割する方法に関する情報を提供します。
 author: NickSelin
-manager: AnnBe
-ms.date: 05/25/2018
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: d60266aba42f502e7707bdace921cfee4526b6ae
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3735bcb06eff966fc364a891b38d44e34e845e35f59314822d13eba40d51d5f4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769975"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>ファイル サイズとコンテンツ量に基づいて、生成された XML ファイルを分割する
 
@@ -40,10 +38,13 @@ XML ELEMENT および XML SEQUENCE 形式要素を使用して生成されるフ
 
 この機能の詳細については、**7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677)** 業務プロセスの一部である **ファイルのサイズおよびコンテンツの品目数量に基づく ER 分割 XML ファイル** タスクガイドを再生し、[Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=874684) からダウンロードできます。 このタスク ガイドでは、ファイル サイズおよびコンテンツの品目数量の制限に基づいて生成されたファイルを分割するため、ER 形式のコンフィギュレーションのプロセスについて説明します。 タスクガイドを完了するには、次のファイルをダウンロードする必要があります。
 
-- [ER モデル コンフィギュレーション - XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
-- [ER 形式コンフィギュレーション - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+- [ER モデル コンフィギュレーション - XmlFilesSplittingModel.xml](https://download.microsoft.com/download/e/a/f/eaffe96a-22ec-4a32-898a-f4328c91c387/XmlFilesSplittingModel.xml)
+- [ER 形式コンフィギュレーション - XmlFilesSplittingFormat.xml](https://download.microsoft.com/download/e/9/c/e9c5849b-8254-4cdf-bb00-4c2ebc72ddec/XmlFilesSplittingFormat.xml)
 
 ## <a name="additional-resources"></a>追加リソース
 [電子申告 (ER) の送信先](electronic-reporting-destinations.md)
 
 [電子申告 (ER) のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,29 +1,26 @@
 ---
 title: POS 周辺機器およびサービスの正常性チェック
 description: このトピックは、販売時点管理 (POS) での正常性チェックの操作概要を提供します。
-author: rubendel
-manager: AnnBe
+author: BrianShook
 ms.date: 03/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 86f0964b6d929d0434a8bf04aaefc173bee21c6f
-ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
+ms.openlocfilehash: cd4e97b8dbfc4faf336d4ea927342fd4fa3cc7cd
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4413877"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779875"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>POS 周辺機器およびサービスの正常性チェック
 
@@ -35,7 +32,7 @@ ms.locfileid: "4413877"
 
 小売店舗は、多くのアプリケーションとデバイスが使用される複雑な環境になることがあります。 たとえば、周辺機器が故障したり、誤って 1 日中プラグが外れるなど、相互関係のため、操作が増えると常に操作をスムーズに実行するのが困難になることがあります。 デバイスやサービスに関係する問題のトラブルシューティングは、大きな商社には費用がかかり、小さな操作ゆえに均等にもどかしくなることがあります。
 
-Microsoft Dynamics 365 Commerce バージョン 10.0.10 以降には、このような費用とフラストレーションを回避するのに役立つ正常性チェックの操作が含まれています。 通常の操作以外のこの操作により、POS からデバイスを直接テストする方法が提供されます。 したがって、小売業者は問題が発生する前に検出することができます。
+Microsoft Dynamics 365 Commerce バージョン 10.0.10 以降には、このようなコストとフラストレーションを回避するのに役立つ正常性チェックの操作が含まれています。 通常の操作以外のこの操作により、POS からデバイスを直接テストする方法が提供されます。 したがって、小売業者は問題が発生する前に検出することができます。
 
 ## <a name="key-terms"></a>重要な用語
 
@@ -83,3 +80,6 @@ OPOS キーロックなどの一部のデバイスには、最初から用意さ
 ## <a name="related-articles"></a>関連記事
 
 [Modern POS (MPOS) のトリガーと印刷](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

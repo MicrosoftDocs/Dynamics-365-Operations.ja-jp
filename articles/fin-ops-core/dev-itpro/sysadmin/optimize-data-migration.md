@@ -2,7 +2,7 @@
 title: Finance and Operations アプリのデータ移行の最適化
 description: このトピックでは、Finance and Operations アプリのデータ移行を最適化するために使用できる手順とアクションの概要を示します。
 author: skaue-ms
-ms.date: 04/22/2021
+ms.date: 10/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: toskaue
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ef4cfb21ac8758451a980b8c75b00f35483a394acc7ec4ebaabcc5d6707c4e1d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea49cda1f037b1675134be907767d61c82745538
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766353"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675247"
 ---
 # <a name="optimize-data-migration-for-finance-and-operations-apps"></a>Finance and Operations アプリのデータ移行の最適化
 
@@ -75,7 +75,7 @@ ms.locfileid: "6766353"
 
 ## <a name="configure-the-maximum-number-of-batch-threads"></a>バッチ スレッドの最大数を構成する
 
-並列処理とマルチスレッド処理をより有効に利用するために、**サーバーの構成** ページの **バッチ スレッドの最大数** フィールド (**システム管理 \> 設定 \> サーバーの構成**) を設定することにより、Application Object Server (AOS) のインスタンスごとにバッチ スレッドの最大数を構成できます。 このフィールドの値の変更には注意が必要です。 値が高すぎるとパフォーマンスに悪影響が及ぼす可能性があります。 現在、既定値は **4** です。 必要に応じて値を **8** に変更することもできます。 ただし、大幅なパフォーマンス テストを行わない限り、このフィールドを 8 を超える値に設定しないでください。
+並列処理とマルチスレッド処理をより有効に利用するために、**サーバーの構成** ページの **バッチ スレッドの最大数** フィールド (**システム管理 \> 設定 \> サーバーの構成**) を設定することにより、Application Object Server (AOS) のインスタンスごとにバッチ スレッドの最大数を構成できます。 このフィールドの値の変更には注意が必要です。 値が高すぎるとパフォーマンスに悪影響が及ぼす可能性があります。 現在、既定値は **8** です。 値を **12** または **16** に増やします。 ただし、大幅なパフォーマンス テストを行わない限り、このフィールドを 16 を超える値に設定しないでください。
 
 ## <a name="import-in-batch-mode"></a>バッチ モードでのインポート
 

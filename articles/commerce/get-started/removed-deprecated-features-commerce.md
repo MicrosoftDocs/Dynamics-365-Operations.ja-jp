@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 author: josaw
-ms.date: 01/11/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: aa6030468259069cf031feb8df48d6710e1160f310a1d82c1034afe69249f00f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740410"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559562"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
@@ -32,6 +32,67 @@ ms.locfileid: "6740410"
 
 > [!NOTE]
 > Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Commerce 10.0.21 リリースの削除済みまたは非推奨の機能
+
+[!include [banner](../includes/preview-banner.md)]
+
+### <a name="overlapping-discounts-handling-setting-in-commerce-parameters"></a>Commerce パラメーターでの重複割引処理の設定
+
+**Commerce パラメーター** ページの **重複割引処理** 設定は、Commerce バージョン 10.0.21 のリリースで非推奨になりました。 今後、Commerce 価格決定エンジンは単一のアルゴリズムを使用して、重複する割引の最適な組み合わせを決定します。
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | <p>Commerce パラメーターの **重複割引処理** の設定は、Commerce の価格設定エンジンがどのように重複する割引の最適な組み合わせを検索および決定するかを制御します。 現在、次の 3 つのオプションがあります:<p><ul><li> **最適なパフォーマンス** – このオプションは、高度なヒューリスティック アルゴリズムと [基準額のランキング](../optimal-combination-overlapping-discounts.md) の方法を使用して、最適な割引の組み合わせを適切な方法で優先順位付け、評価、および決定します。</li><li>**バランス計算** – 現在のコード ベースでは、このオプションは **最適なパフォーマンス** オプションと同様に機能します。 したがって、これは基本的に重複したオプションです。</li><li>**包括的な計算** – このオプションでは、価格計算中にすべての可能な割引の組み合わせを調べる古いアルゴリズムを使用します。 このオプションは、明細行と数量が大きい注文では、パフォーマンス上の問題が発生する可能性があります。</li></ul><p>設定を簡素化し、パフォーマンスを向上させ、古いアルゴリズムによって発生するインシデントを削減するために、**重複割引処理** の設定を完全に削除し、 Commerce の価格設定エンジンの内部ロジックを更新して、高度なアルゴリズム (つまり、**最適なパフォーマンス** オプションのアルゴリズム) のみを使用するようにします。</p> |
+| **別の機能で置き換えられているか?**   | いいえ。 この機能を削除する前に、**バランス計算** または **包括的な計算** オプションを使用している組織では、**最適なパフォーマンス** オプションに切り替えることをお勧めします。 |
+| **影響を受ける製品領域**         | 価格決定と割引 |
+| **配置オプション**              | すべて |
+| **状態**                         | 10.0.21 リリースでは、2022 年 10 月に **重複割引処理** の設定が Commerce パラメーターから削除されます。 |
+
+### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Lifecycle Services を使用して配布された Retail SDK
+
+Retail SDKはLifecycle Services (LCS) に出荷されます。 この配布モードは、リリース 10.0.21 では非推奨になりました。 今後、Retail SDK 参照パッケージ、ライブラリ、およびサンプルは、GitHub の公開レポジトリで公開されます。
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Retail SDK は LCS に出荷されます。 LCS プロセスは完了するのに数時間かかり、更新の度にプロセスを繰り返す必要があります。 今後、Retail SDK 参照パッケージ、ライブラリ、およびサンプルは、GitHub の公開レポジトリで公開されます。 拡張子サンプルおよび参照パッケージは簡単に消費され、更新は数分で完了します。 |
+| **別の機能で置き換えられているか?**   |  [GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) |
+| **影響を受ける製品領域**         | Retail SDK |
+| **配置オプション**              | All |
+| **状態**                         | 非推奨: 現在のリリース 10.0.21で、LCS VM を介して出荷された SDK は、2022 年 10 月に削除されます。 |
+
+### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>小売展開可能パッケージと、結合された POS、ハードウェア ステーション、および Cloud スケール ユニット インストーラー
+
+Retail SDK MSBuild を使用して生成された小売展開可能パッケージは、10.0.21 で非推奨になりました。 今後、Cloud スケール ユニット拡張機能 (Commerce Runtime、チャンネル データベース、ヘッドレス コマース API、支払、および Cloud Point of Sale (POS)) の Cloud Scale Unit (CSU) パッケージを使用します。 POS、ハードウェア ステーション、および Cloud スケール ユニットの自己ホストには、拡張機能のインストーラーのみを使用します。
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 小売展開可能パッケージは、拡張機能パッケージとインストーラー完全なセットを含む結合パッケージです。 この結合パッケージは、CSU 拡張機能が Cloud スケール ユニットに移動し、インストーラーがストアに配置されるため、配置が複雑になります。 インストーラーには拡張機能と基本製品が含まれ、更新が困難です。 アップグレードごとに、コード マージとパッケージの生成が必要です。 このプロセスを簡略化するために、拡張機能パッケージはコンポーネントに分離され、配置と管理が容易になります。 新しいアプローチでは、拡張機能と基本製品のインストーラーが分離され、コード マージや再梱包を行わずに独立してサービスを提供および更新できます。|
+| **別の機能で置き換えられているか?**   | CSU 拡張機能、POS 拡張機能インストーラー、ハードウェア ステーションの拡張機能インストーラー |
+| **影響を受ける製品領域**         | Dynamics 365 Commerce 拡張機能と展開 |
+| **配置オプション**              | All |
+| **状態**                         | 非推奨: リリース 10.0.21 で、LCS の RetailDeployablePackage を配置するためのサポートは 2022 年 10 月に削除されます。 |
+
+詳細については、以下を参照してください。
+
++ [Commerce Cloud Scale Unit (CSU) の個別パッケージの生成](../dev-itpro/retail-sdk/retail-sdk-packaging.md#generate-a-separate-package-for-commerce-cloud-scale-unit-csu)
++ [Modern POS 拡張機能パッケージの作成](../dev-itpro/pos-extension/mpos-extension-packaging.md)
++ [POS と新しいハードウェア デバイスの統合](../dev-itpro/hardware-device-extension.md)
++ Code サンプル
+    + [Commerce Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
+    + [POS、CSU およびハードウェア ステーション](https://github.com/microsoft/Dynamics365Commerce.InStore)
+
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>Retail SDK の ModernPOS.Sln と CloudPos.sln
+
+ModernPos.sln、CloudPOs.sln、POS.Extension.csproj、および POS フォルダーを使用した POS 拡張機能開発は、リリース 10.0.21 では非推奨になりました。 今後は、POS の独立したパッケージ SDK を POS 拡張機能として使用します。
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Retail SDK の以前のバージョンでは、POS 拡張機能がある場合、最新バージョンの POS に更新するため、コード マージと再梱包を行う必要がありました。 コード マージは時間のかかるアップグレード プロセスであり、Retail SDK 全体をリポジトリに維持する必要があります。 また、コア POS.App プロジェクトをコンパイルする必要があります。 独立したパッケージ モデルを使用して、拡張機能のみを維持する必要があります。 POS 拡張機能の最新バージョンに更新するプロセスは、プロジェクトで消費する NuGet パッケージのバージョン更新と同様に簡単です。 拡張機能は個別に配置でき、サービスは拡張機能インストーラーを使用します。 基準 POS は個別に配置および管理でき、基準インストーラーまたはコードとのコード マージや再梱包は必要ありません。 |
+| **別の機能で置き換えられているか?**   | [POS の独立したパッケージ SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
+| **影響を受ける製品領域**         | Dynamics 365 Commerce POS 拡張機能と展開 |
+| **配置オプション**              | All |
+| **状態**                         | 非推奨: リリース 10.0.21 で、Retail SDKの ModernPos.Sln、CloudPOs.sln、および POS.Extensons.csproj を使用する結合 POS パッケージと拡張モデルのサポートは、2022 年 10 月に削除される予定です。 |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Commerce 10.0.17 リリースの削除済みまたは非推奨の機能
 
@@ -51,11 +112,11 @@ ms.locfileid: "6740410"
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
+| **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月を過ぎると、Internet Explorer 11 はサポートされません。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
 | **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
 | **影響を受ける製品領域**         | すべての Dynamics 365 製品 |
-| **配置オプション**              | All|
-| **ステータス**                         | 非推奨。 2021 年 8 月以降は、Internet Explorer 11 はサポートされません。|
+| **配置オプション**              | すべて|
+| **状態**                         | 非推奨。 2021 年 8 月を過ぎると、Internet Explorer 11 はサポートされません。|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Commerce 10.0.11 リリースの削除済みまたは非推奨の機能
 ### <a name="data-action-hooks"></a>データ アクションのフック

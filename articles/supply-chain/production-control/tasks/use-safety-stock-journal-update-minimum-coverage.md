@@ -1,27 +1,25 @@
 ---
 title: 安全在庫仕訳帳を使用した最小補充の更新
 description: この手順では、履歴トランザクションに基づいて最小補充提案を計算し、提案を使用して品目補充を更新する方法を示します。
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b0985169f7ffadbf97ed4f237c8ec11120cfc3e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5ae2209fc2412a4a67b46d6eb82ecb70aafc0159
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980993"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573612"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>安全在庫仕訳帳を使用した最小補充の更新
 
@@ -65,3 +63,6 @@ ms.locfileid: "4980993"
 5. **アクション ウィンドウ** で計画をクリックします。
 6. **品目補充** をクリックします。 **最小数量** が、安全在庫仕訳帳からの新しい最小数量で更新されたことを確認します。  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

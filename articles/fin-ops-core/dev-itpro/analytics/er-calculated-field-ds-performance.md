@@ -2,7 +2,7 @@
 title: パラメーター化された計算フィールドのデータ ソースを追加して、ER ソリューションのパフォーマンスを向上させる
 description: このトピックでは、パラメーター化された計算フィールドのデータ ソースを追加して、電子申告 (ER) ソリューションのパフォーマンスを向上させる方法について説明します。
 author: NickSelin
-ms.date: 09/02/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 299570d6a94b0f9e7ee7cf490d4c1aeeb86d5716
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753673"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>パラメーター化された計算フィールドのデータ ソースを追加して、ER ソリューションのパフォーマンスを向上させる
 
@@ -56,7 +56,7 @@ ms.locfileid: "5749516"
     2. **参照** を選択して、ER コンフィギュレーションに適したファイルを XML 形式で選択します。
     3. **OK** を選択します。
 
-![コンフィギュレーション ページでインポートされたコンフィギュレーション](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![コンフィギュレーション ページでインポートされたコンフィギュレーション。](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>サンプル ER ソリューションのレビュー
 
@@ -76,7 +76,7 @@ ms.locfileid: "5749516"
 
     このコンフィギュレーションのモデル マッピングは、このモデルに対して作成され Finance で実行される、すべての ER 形式の基本データ モデルを実装します。 したがって、**Trans** データ ソースの内容は、抽象 **モデル** データ ソースなどの ER 形式に対して公開されます。
 
-    ![モデル マッピング デザイナー ページの Trans データ ソース](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![モデル マッピング デザイナー ページの Trans データ ソース。](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. **モデル マッピング デザイナー** ページを閉じます。
 5. **モデルからデータ ソースへのマッピング** ページを閉じます。
@@ -90,7 +90,7 @@ ms.locfileid: "5749516"
 
     この ER 形式は、仕入先トランザクション レポートを XML 形式で生成するように設計されています。
 
-    ![形式デザイナー ページでの形式要素の形式データ ソースと構成済みバインディング](media/er-calculated-field-ds-performance-format.png)
+    ![形式デザイナー ページでの形式要素の形式データ ソースと構成済みバインディング。](media/er-calculated-field-ds-performance-format.png)
 
 5. **形式デザイナー** ページを閉じます。
 
@@ -103,7 +103,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 1. **DEMF** 会社を選択します。
 2. [ER パフォーマンス追跡を有効にする](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) の手順に従って、ER 形式の実行中にパフォーマンス追跡を生成します。
 
-    ![ユーザー パラメーター ダイアログ ボックス](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![ユーザー パラメーター ダイアログ ボックス。](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>ER 形式を実行する
 
@@ -124,7 +124,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 - データ ソースを使用してデータの取得に費やした実際の時間
 - モデル マッピング全体の実行に費やされた合計時間の割合で表される同じ時間
 
-![モデル マッピング デザイナー ページの実行時間の詳細](./media/er-calculated-field-ds-performance-mapping-2.png)
+![モデル マッピング デザイナー ページの実行時間の詳細。](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 **パフォーマンス統計** グリッドは、**Trans** データ ソースが VendTrans テーブルを 1 回呼び出すことを示しています。 **Trans** データ ソースの値 **\[265\]\[Q:265\]** は、265 個の仕入先トランザクションがアプリケーション テーブルから取得された、データ モデルに返されたことを示します。
 
@@ -137,7 +137,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 
 - 仕入先テーブルは、取得したトランザクションが 5 つの仕入先に対してのみ転記されている場合でも、反復された仕入先トランザクションごとに呼び出されます。 530 回の呼び出しのうち、525 回は重複しています。 次の図は、重複する呼び出し (データベース要求) についてのメッセージを示しています。
 
-![モデル マッピング デザイナー ページの重複データベース要求に関するメッセージ](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![モデル マッピング デザイナー ページの重複データベース要求に関するメッセージ。](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 モデル マッピングの合計実行時間 (約 8 秒) のうち、80% (約 6 秒) 以上が VendTable アプリケーション テーブルから値を取得するために費やされたことに注目してください。 この割合は、VendTransアプリケーション テーブルからの情報量と比較して、5 つの仕入先の 2 つの属性に対して大きすぎます。
 
@@ -172,7 +172,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
     3. ダイアログ ボックスで、**名前** フィールドに **Box** と入力します。
     3. **OK** を選択します。
 
-    ![モデル マッピング デザイナー ページの Box データ ソース](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![モデル マッピング デザイナー ページの Box データ ソース。](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. **計算フィールド** 型のパラメーター化されたデータ ソースを追加するには、次の手順に従います:
 
@@ -208,7 +208,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 
 9. **保存** を選択します。
 
-    ![モデル マッピング デザイナー ページの Vend データ ソース](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![モデル マッピング デザイナー ページの Vend データ ソース。](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. **モデル マッピング デザイナー** ページを閉じます。
 11. **モデル マッピング** ページを閉じます。
@@ -232,11 +232,11 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 
 モデル マッピングに対して行った調整によって、データベースへの重複するクエリが消去されたことに注意してください。 このモデル マッピングのデータベース テーブルおよびデータ ソースへの呼び出し数も減少しました。
 
-![モデル マッピング デザイナー ページ 1 の追跡情報](./media/er-calculated-field-ds-performance-mapping-5.png)
+![モデル マッピング デザイナー ページ 1 の追跡情報。](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 合計実行時間は約 20 倍 (約 8 秒から約 400 ミリ秒) に短縮されました。 したがって、ER ソリューション全体のパフォーマンスが向上しました。
 
-![モデル マッピング デザイナー ページ 2 の追跡情報](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![モデル マッピング デザイナー ページ 2 の追跡情報。](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>付録 1: サンプル Microsoft ER ソリューションのコンポーネントのダウンロード
 
@@ -244,9 +244,9 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 
 | ファイル                                        | コンテンツ |
 |---------------------------------------------|---------|
-| Performance improvement model.version.1     | [ER データ モデル構成のサンプル](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Performance improvement mapping.version.1.1 | [ER モデル マッピング構成のサンプル](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Performance improvement format.version.1.1  | [ER フォーマット構成のサンプル](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Performance improvement model.version.1     | [ER データ モデル構成のサンプル](https://download.microsoft.com/download/4/6/f/46f0f3fa-782b-414a-8f7b-b6c64a388661/Performance_improvement_model.version.1.xml) |
+| Performance improvement mapping.version.1.1 | [ER モデル マッピング構成のサンプル](https://download.microsoft.com/download/8/9/1/8913a763-afb8-4bf4-aaf1-95ad793ffc5a/Performance_improvement_mapping.version.1.1.xml) |
+| Performance improvement format.version.1.1  | [ER フォーマット構成のサンプル](https://download.microsoft.com/download/9/0/c/90c75963-bc78-4edc-9096-556bbe281f10/Performance_improvement_format.version.1.1.xml) |
 
 ## <a name="appendix-2-configure-the-er-framework"></a><a name="appendix2"></a>付録 2: ER フレームワークを構成する
 

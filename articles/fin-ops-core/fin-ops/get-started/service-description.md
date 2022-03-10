@@ -2,19 +2,19 @@
 title: Finance and Operations アプリのサービス説明
 description: このトピックでは、Finance and Operations アプリのサービス説明を示します。
 author: tomhig
-ms.date: 09/29/2021
+ms.date: 01/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581819"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952369"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations アプリのサービス説明
 
@@ -50,7 +50,7 @@ Finance and Operations アプリの運用モデルでは、サービスの有効
 
 ### <a name="customer-activities"></a>顧客活動
 
-顧客は、[Success by Design](/dynamics365/fasttrack/success-by-design-overview) のフレームワークに従い、パートナーや [Microsoft FastTrack](/dynamics365/fasttrack/) と協力し、[Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) で提供されるツールとベスト プラクティス テンプレートを使用して、ソリューションを実装します。 一般的な活動は次のとおりです。
+顧客は、[Dynamics 365 実装ガイド](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide)、[Success by Design](/dynamics365/fasttrack/success-by-design-overview) のフレームワーク、[Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) で提供されるツールとベスト プラクティスのテンプレートに従って、パートナーや [Microsoft FastTrack](/dynamics365/fasttrack/) と協力し、ソリューションを実装します。 一般的な活動は次のとおりです。
 
 - ユーザー ID とセキュリティ管理
 - 業務プロセスの定義、開発、および操作
@@ -117,7 +117,7 @@ Finance and Operations アプリは、世界中の複数の Azure リージョ�
 ### <a name="countryregion-specific-considerations"></a>国/地域固有の考慮事項
 
 - 現地のデータ所在地を必要とするフランスの法人とビジネスを行う規制対象の業界または商業組織の顧客は、[フランスの Finance and Operations](../../dev-itpro/deployment/france-local-deployment.md) を確認する必要があります。
-- 中国で事業を行っている顧客は、[中国の 21Vianet で運用されている Finance and Operations](../../dev-itpro/deployment/china-local-deployment.md) を確認する必要があります。
+- 中国で事業を行っている顧客は、[Azure China プレイブック](/azure/china/) と [中国の 21Vianet で運用されている Finance and Operations](../../dev-itpro/deployment/china-local-deployment.md) を確認する必要があります。
 - ロシアで事業を行っている顧客は、[ロシアの個人データローカリゼーション法](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia) を確認する必要があります。
 
 ### <a name="general-data-protection-regulation-gdpr"></a>一般データ保護規則 (GDPR)
@@ -314,9 +314,9 @@ Microsoft の障害復旧の計画と手順は、System and Organization Control
 | Microsoft は、プライマリ実稼働インスタンスが配置されると、Azure ペア データセンターにセカンダリ環境をプロビジョニングします。 詳細については、[事業の継続性と障害復旧 (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions) を参照してください。 | None |
 | Microsoft は、プライマリ実稼働インスタンスを配置すると、Azure SQL と Azure Blob Storage のジオ重複が有効します。 | None |
 | Microsoft は、Azure SQL データベースの自動バックアップを有効にします。 | None |
-| <p>障害が発生した場合、Microsoft は、顧客に対してフェールオーバーを実行する必要があるかどうか、およびデータが失われるかどうかを判断します。 データ損失は最大 5 秒です。 詳細については、[Azure SQL データベース ジオ リストア](https://azure.microsoft.com/blog/azure-sql-database-geo-restore) を参照してください。</p><p>データが失われた場合、Microsoft は、フェールオーバーのために顧客のサインオフを要求します。</p> | データが失われた場合、フェールオーバーをトリガーするために、顧客は書面によるサインオフの提供が必要となる場合があります。 |
+| <p>障害が発生した場合、Microsoft は、顧客に対してフェールオーバーを実行する必要があるかどうか、およびデータが失われるかどうかを判断します。 稼働停止の性質とタイミングによっては、最大 15 分間、顧客データの損失が発生する場合があります。 | データが失われた場合、フェールオーバーをトリガーするために、顧客は書面によるサインオフの提供が必要となる場合があります。 |
 | フェールオーバーが発生した場合、該当するサービスは限定モードで機能します。 フェールオーバー モードでは、更新のメンテナンスは、トリガーできません。 | 顧客は、フェールオーバー モードでパッケージの配置、またはその他の定期的なメンテナンス要求を要求できません。 |
-| データセンターが運用可能になると、Microsoft はプライマリの Azure 地域の実稼働インスタンスにフェール バックします。 通常の運用を再開します。 | 顧客は、プライマリの Azure 地域の実稼働インスタンスに対するフェールバックでサインオフが必要となる場合があります。 |
+| データセンターが運用可能になると、Microsoft はプライマリの Azure 地域の実稼働インスタンスにフェール バックします。 通常の運用を再開します。 | 顧客は、プライマリの Azure 地域の運用インスタンスに対するフェールバックでサインオフが必要となる場合があります。 |
 
 ## <a name="finance-and-operations-support-offerings"></a>Finance and Operations サポートの提供
 
@@ -356,6 +356,7 @@ Microsoft は、サービスの月あたり 99.9% の可用性レートを約束
 - **[ライセンス ガイド](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Dynamics 365 のライセンスを取得する方法の詳細については、このガイドを参照してください。
 - **[カスタマー サポート](https://dynamics.microsoft.com/support/)** – Dynamics 365 アプリの業界をリードするサポートを利用できます。
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – アプリケーションのライフサイクルを管理し、予測可能で反復可能な高品質の実装を行います。
+- **[Dynamics 365 実装ガイド](https://aka.ms/D365ImplementationGuideFlip)** - Dynamics 365 実装ガイドは、時間テスト済 Success by Design の原則をドキュメントにし、Dynamics 365 ソリューションの開発、構築、テスト、および配置に関する事前のガイダンスを提供します。
 
 ## <a name="definitions"></a>定義
 
@@ -428,6 +429,10 @@ SLA は Microsoft オンライン サービスに適用されます。 詳細に
 ### <a name="service-update"></a>サービスの更新
 
 Microsoft は、サービスの更新を通じて、一貫した基準で Finance and Operations 環境を提供しています。 顧客は、業務ニーズに基づいて、独自のサービス更新カレンダーを設定します。 詳細については、[1 つのバージョンのサービス更新](../../dev-itpro/lifecycle-services/oneversion-overview.md) を参照してください。
+
+### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+
+Dynamics 365 ソリューションのアーキテクチャ、セキュリティ、パフォーマンス、ユーザー体験を最適化するために、重要なステージにある一連の評価を通じて実装を体系的にガイドするフレームワーク。
 
 ### <a name="user"></a>ユーザー
 

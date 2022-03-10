@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 29191
 ms.assetid: 8e32ba2f-6cc1-4bfd-9c79-42a8392fa812
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 175643724aba55079e6378e56bdaeb853f745624
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c09165576a2067d6059d89eedd459639bc9e3bd9
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189314"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782146"
 ---
 # <a name="filters-and-toolbar-subpatterns"></a>フィルターおよびツールバーのサブパターン
 
@@ -46,11 +46,11 @@ ms.locfileid: "6189314"
 ## <a name="wireframe"></a>ワイヤーフレーム
 ### <a name="filters-and-toolbar---inline"></a>フィルターおよびツールバー - インライン
 
-[![フィルターとツール バーのワイヤフレーム -- インライン](./media/filtertoolbarinlinewireframe.png)](./media/filtertoolbarinlinewireframe.png)
+[![フィルターとツール バーのワイヤーフレーム -- インライン。](./media/filtertoolbarinlinewireframe.png)](./media/filtertoolbarinlinewireframe.png)
 
 ### <a name="filters-and-toolbar---stacked"></a>フィルターおよびツールバー - 積み上げ
 
-[![フィルターとツール バーのワイヤフレーム -- 積み上げ](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
+[![フィルターとツール バーのワイヤーフレーム -- 積み上げ。](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
 
 ## <a name="model"></a>モデル
 ### <a name="filters-and-toolbar---inline-high-level-structure"></a>フィルターおよびツールバー - インライン: 高度なレベル構造
@@ -104,13 +104,13 @@ ms.locfileid: "6189314"
 
 フォーム: **HcmWorkforceManagement** &gt; **HcmOpenPositionsPart** (**すべてのワークスペース** &gt; **要員管理**) 
 
-[![フィルターとツールバーの例 -- インライン](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
+[![フィルターとツール バーの例 -- インライン。](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
 
 ### <a name="filters-and-toolbar---stacked"></a>フィルターおよびツールバー - 積み上げ
 
 フォーム: **HcmWorkforceManagement** &gt; **HcmWorkerOnLeaveListPart** (**すべてのワークスペース** &gt; **要員管理**) 
 
-[![フィルターとツールバーの例 -- 積み上げ](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
+[![フィルターとツール バーの例 -- 積み上げ。](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
 
 ## <a name="appendix"></a>付録
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問

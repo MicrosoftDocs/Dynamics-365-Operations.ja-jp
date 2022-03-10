@@ -2,11 +2,9 @@
 title: 財務諸表の表示およびデザイン
 description: この記事では、Microsoft Dynamics 365 Finance の財務諸表の表示および作成の練習を提供します。
 author: jcart1106
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReportingSetup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97895081293d9ee5a82a718e0644bebdaa0f2777
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c13169ab05dd506f75b2c9d28f05fcf4471f5a7c8f0a563c974bc38949993295
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724446"
 ---
 # <a name="view-and-design-financial-reports"></a>財務諸表の表示およびデザイン
 
@@ -197,3 +195,6 @@ ms.locfileid: "4686248"
 [財務諸表の表示](../../../finance/general-ledger/view-financial-reports.md)
 
 [Dynamics 365 Finance ブログ](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e41d600464d707d01a0e319dd3cd343b04aa26b7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782383"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063650"
 ---
 # <a name="integrated-ledger"></a>統合された元帳
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ビジネス アプリケーションでは、元帳データによって、会社が業務を行うためのコア設定が定義されます。 たとえば、元帳データには、会社が従う会計年度、トランザクションによって処理される通貨、使用する勘定が記述されます。 このトピックでは、この中心的な財務データの統合について説明します。
 
@@ -28,7 +28,7 @@ ms.locfileid: "7782383"
 
 次の表に示すように、元帳データには、データ操作中に連携して動作する中心的な財務テーブル マップのコレクションが含まれています。
 
-Finance and Operations アプリ | Customer Engagement アプリ     | 説明
+財務と運用アプリ | Customer Engagement アプリ     | 説明
 ---------------------------------|----------------------------------|------------
 [CDS 為替レート](mapping-reference.md#123) | msdyn_currencyexchangerates |
 [勘定科目表](mapping-reference.md#121) | msdyn_chartofaccountses |

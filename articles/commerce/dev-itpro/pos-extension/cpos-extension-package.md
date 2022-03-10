@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 77b36cac5ffbdb372f5cc778d58c694c37f7a45d
-ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
+ms.openlocfilehash: cb79b1270fd6d941897423d7c3f813e237097504
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6560034"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781807"
 ---
 # <a name="create-a-cloud-pos-extension-package"></a>Cloud POS 拡張機能パッケージの作成
 
