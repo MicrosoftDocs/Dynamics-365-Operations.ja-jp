@@ -2,19 +2,19 @@
 title: 財務と運用アプリのバージョン 10.0.25 (2022 年 4 月) のプラットフォーム更新プログラム
 description: このトピックでは、財務と運用アプリのバージョン 10.0.25 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。
 author: sericks007
-ms.date: 02/01/2022
+ms.date: 02/09/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2022-01-31
-ms.openlocfilehash: a15b9c46127a0cf806a7aa036b8ef927d1a16270
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 9c9902132db7a98de45d934d857ccaa9b7635490
+ms.sourcegitcommit: 035a32174bb9c7d119ad1b6f757ab72963842a22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087255"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "8128228"
 ---
 # <a name="platform-updates-for-version-10025-of-finance-and-operations-apps-april-2022"></a>財務と運用アプリのバージョン 10.0.25 (2022 年 4 月) のプラットフォーム更新プログラム
 
@@ -35,6 +35,7 @@ ms.locfileid: "8087255"
 
 | 機能領域    | フィーチャー | 詳細 |  に  によって有効化 |
 |-----------------|---------|------------------|---------------------------|
+| Web クライアント | **バッチ ジョブの優先度のスケジュール**<br><br>優先順位に基づくスケジューリングではバッチ グループをバッチ サーバーから切り離し、バッチ グループの優先順位を定義できます。<br><br>バッチ ジョブをバッチ サーバーに割り当てる必要はなくなりました。 代わりに、使用可能なバッチサーバー間でタスクが実行される順序を決定するために、業務要件に基づく相対的なスケジューリング優先順位が使用されます。 | [優先順位に基づくバッチスケジューリング](../sysadmin/priority-based-batch-scheduling.md) | 機能管理 (*バッチの優先順位に基づくスケジューリング*) |
 | Web クライアント | [垂直方向にスクロールするワークスペース](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/vertically-scrolling-workspaces)  | <ul><li>[ワークスペースのフォーム パターン](../user-interface/workspace-form-pattern.md)</li><li>[運用ワークスペースの構築](../user-interface/build-workspaces.md)</li></ul> | 内部ワークスペースが最新の視覚に移行されました。 視覚的な一貫性を維持するには、外部ワークスペースを移行する必要があります。  |
 | Web クライアント  | <p>**jQuery UI を1.13.0 にアップグレード**</p><p>この機能は、財務と運用アプリケーションの jQuery ユーザー インターフェイス (UI) をバージョン 1.13.0 (1.12.1 から) にアップグレードします。 この機能を有効にする前に、拡張可能なコントロールまたはカスタム JavaScript コード、特に jQuery UI API を利用するものをテストする必要があります。 この機能は、2022 年秋リリースで必須となることを目標としていますが、影響を受けるAPI の移行に時間をかけるために、現在はオプションです。</p> | | 機能管理<br>(*jQuery UI を 1.13.0 にアップグレード*)|
 | Web クライアント  | [ダイアログに対応した保存済みビュー](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/updates-saved-views-personalization#view-support-for-dialogs)  | [保存されたビューを十分に活用するフォームの作成](../user-interface/understanding-saved-views.md)  | 機能管理<br>(*ダイアログに対応した保存済みビュー*)  |

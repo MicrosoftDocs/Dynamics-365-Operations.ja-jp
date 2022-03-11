@@ -2,8 +2,7 @@
 title: アドインの概要
 description: このトピックでは、財務と運用アプリの機能を拡張するために使用できるアドインに関する情報を提供します。
 author: ankugo
-manager: AnnBe
-ms.date: 05/20/2021
+ms.date: 02/11/2022
 ms.topic: overview
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: ankugo
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ecd68d8989d7dd79aaf97aaca28f3df44a6fa77b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a1fdc390573f991186d13e4f75143d306638d4be
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984986"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109618"
 ---
 # <a name="add-ins-overview"></a>アドインの概要
 
@@ -46,5 +45,9 @@ Azure Data Lake へのエクスポート機能は、財務と運用アプリ デ
 ### <a name="iot-intelligence"></a>IoT インテリジェンス
 
 IoT インテリジェンスは、Supply Chain Management のアドインです。 また、モノのインターネット (Internet of Things: IoT) の信号を Supply Chain Management のデータと統合し、実用的な分析情報を生み出します。 詳細については、[IoT インテリジェンスのホーム ページ](../../../supply-chain/iot/iot-intelligence-home-page.md) を参照してください。
+
+### <a name="finance-insights"></a>Finance Insights
+
+Finance Insights には構成可能なソリューションが用意されており、会社のキャッシュ フローを的確に予測したり、未払の債権に対する支払をいつ受け取るかを予測したり、予算作成プロセスを高速化するための予算案を生成できます。 これらの機能では、インテリジェントな機械学習テンプレートを使用して、ビューローからの消費者レポート情報などのサード パーティからのデータを含む提供されたデータを使用してモデルを構築します。 これらのインテリジェントな機能は、意思決定に役立ち、現在および予想されるビジネス上の課題に効果的に対応するための行動を支援します。 詳細については、[Finance insights ホーム ページ](../../../finance/finance-insights/finance-insights-home-page.md) を参照してください。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

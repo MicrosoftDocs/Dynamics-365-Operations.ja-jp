@@ -2,7 +2,7 @@
 title: ローカル エージェントの更新
 description: このトピックでは、ローカル エージェントを更新する方法について説明します。
 author: faix
-ms.date: 10/19/2021
+ms.date: 02/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8fa05e3e0df76c3660afea71d0a88efb16375af1
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 8432aefdaadb30a209d62a719b1f0a5dc0006ec6
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728699"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8331728"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、ローカル エージェントを更新する方法について説明します。 ローカル エージェントの最新バージョンは、2021 年 11 月にリリースされたバージョン 3.0.0 です。
+
+> [!IMPORTANT]
+> 準備フェーズが完了した場合でも、サービス操作中にローカル エージェントを更新しないでください。 
 
 | ローカル エージェントのバージョン | 能力 | 
 |---------------------|------------|
@@ -38,7 +41,7 @@ ms.locfileid: "7728699"
 | 2.4.0               | このバージョンでは、展開の問題が修正され、ローカル エージェントのランタイムがアップグレードされます。 |
 | 2.3.1               | このバージョンでは、一部の環境でのクリーンアップ中に発生する可能性があるオーケストレーション サービスのクラッシュを修正します。<br><br>プラットフォーム更新プログラム 29 以前のバージョン 10.0.5 を展開するには、FinancialReportingDeployer.exe.config. の自動更新に事前配置スクリプトを使用する必要があります。詳細については、[オンプレミス展開のトラブルシューティング](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework)を参照してください。 |
 | 2.3.0               | このバージョンに、配置前スクリプトと配置後スクリプトのサポートが追加されます。  |
-| 2.2.0               | このバージョンは、クリーンアップ中にロックされた dll を修正し、Microsoft 365 用でも使用される Active Directory Federation Services (AD FS) をサポートするための前提条件を有効にします。 |
+| 2.2.0               | このバージョンでは、クリーンアップ中にロックされた dll を修正し、Microsoft 365 でも使用される Active Directory フェデレーション サービス (AD FS) をサポートするための前提条件を有効にします。 |
 | 2.1.2               | このバージョンには、更新されたAzure依存関係が含まれており、ダウンロードの安定性を向上し、ファイルがダウンロードされた場合に正しく評価するロジックを使用 これにより、ファイルが完全にダウンロードされるという問題が修正されますが、論理上数バイトが不足していると見なされ、ダウンロードに失敗します。  |
 | 2.1.1               | このバージョンはダウンロードが失敗したときに発生する Lifecycle Services (LCS) **管理** ボタンが利用できない問題を修正します。 その他の変更には、Azure Storage との通信を改善し TLS 1.2 を有効にする Azure Storage ライブラリの更新を含みます。  |
 | 2.1.0               | このバージョンでは、**準備** および **更新** が 2 つの個別のステップである 2 段階サービスが可能になります。 |

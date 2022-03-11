@@ -2,19 +2,19 @@
 title: Azure Data Lake へのエクスポートの概要
 description: このトピックでは、Finance and Operations 環境を Data Lake に接続してデータで非表示にされているインサイトのロック解除をする方法について説明します。
 author: MilindaV2
-ms.date: 11/20/2021
+ms.date: 02/09/2022
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2021-11-30
-ms.openlocfilehash: 6ab29848ce9e00b692d5bb21d33da3356216ff78
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4a54d26e96365b6ea5d409b77d5dfb3e0fc2dfe3
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986526"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105416"
 ---
 # <a name="export-to-azure-data-lake-overview"></a>Azure Data Lake へのエクスポートの概要
 
@@ -28,14 +28,14 @@ Azure Data Lake へのエクスポート アドインを有効にするとき、
 
 財務と運用アプリのデータを選択すると、システムは Data Lake 内のデータの初期コピーを作成します。 その初期コピーを作成した後、変更されたデータを継続的に挿入、更新、および削除することにより、システムは Data Lake 内のデータを最新に保ちます。 サービスをエクスポートしたり管理したりする必要はなく、Finance and Operations ワークロードに負担になることはありません。
 
-Data Lake に保存されるデータは、Common Data Model 形式を使用するフォルダー構造で整理されています。 Common Data Model 形式は、機械可読の JavaScript Object Notation (JSON) 形式で追加のメタデータを提供しま、下流のツールはデータのセマンティクスを決定することができます。 追加のメタデータには、テーブル構造、説明、およびデータ型が含まれます。
+Data Lake に保存されたデータは、[Common Data Model](https://powerplatform.microsoft.com/common-data-model/) を使用してまとめられています。 Common Data Model によって、Data Lake のデータの価値が強化されます。 例については、機械可読の JavaScript Object Notation (JSON) 形式で追加のメタデータが提供されますので、下流ツールはデータのセマンティクスを決定することができます。 追加のメタデータには、テーブル構造、説明、およびデータ型が含まれます。
 
 Azure Data Lake へのエクスポートは、Microsoft が完全に管理する、スケーラブルで可用性の高いサービスです。 組み込みのディザスター リカバリーが含まれます。 サポートされる機能の一部を次に示します。
 
 - 最大 200 テーブル選択できます。 データに対するすべての変更は、Data Lake 内で継続的に更新されます。 これらの変更には、挿入、更新、および削除の操作が含まれます。
 - テーブルまたはエンティティを使用してデータを選択できます。 エンティティを使用する場合、基本テーブルはサービスにより選択されます。
 - 標準エンティティとカスタム エンティティおよびテーブルの両方を選択できます。
-- Transact-SQL (T-SQL) と Synapse SQL Serverless を使用して、Data Lake のデータを操作することができます。 [CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution) という名前の一連の既製のソリューション テンプレートを使用すると、Data Lake のデータを簡単に Synapse ワークスペースに統合することができます。
+- Microsoft Azure Synapse Analytics または他の多くのサード パーティ ツールを使用して、Data Lake でデータを処理することができます。
 
 ストレージ アカウントは、Finance and Operations 環境と同じ Azure リージョンにある必要があります。
 
@@ -73,7 +73,7 @@ Azure Data Lake へのエクスポートは、Dynamics 365 サービスへのサ
 
 自身のサブスクリプションには Data Lake Storage Gen2 が含まれているため、Data Lake にデータを読み書きする際に発生するデータ ストレージや入出力 (I/O) のコストを負担する必要があります。 また、財務と運用アプリが Data Lake にデータを書き込んだり、データを更新することにより、I/O コストが発生する場合もあります。 領域内の I/O コストを削減するために、財務と運用アプリでは Finance and Operations 環境と同じ国や地理的リージョンに Data Lake をプロビジョニングする必要があります。
 
-FastTrack ソリューション テンプレートは、財務と運用アプリの業務量に基づいて、ストレージのコストを見積もるツールを提供します。 詳細については、[CostCalculator](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CostCalculator) を参照してください。
+FastTrack ソリューション テンプレートは、財務と運用アプリの業務量に基づいて、ストレージのコストを見積もるツールを提供します。 詳細については、[FastTrack for Dynamics 365- CostCalculator](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CostCalculator) を参照してください。
 
 ### <a name="i-am-currently-using-a-byod-service-why-should-i-transition-to-data-lake"></a>現在、BYOD サービスを使用しています。 Data Lake へ移行する必要があるのはなぜですか?
 
@@ -87,7 +87,23 @@ FastTrack ソリューション テンプレートは、財務と運用アプリ
 
 - **データが既に存在するため、エクスポートの必要がありません。** Data Lake 統合は、財務と運用アプリで変更された Data Lake への継続的なデータのエクスポートを管理します。 BYOD の場合のように、データ エクスポートの監視と管理を行う必要はありません。
 - **データ ストレージのコストが削減されます。** データは、BYOD が要求する SQL データベース内にではなく、Data Lake に格納されます。 したがって、顧客は Azure SQL データベースよりも安価なストレージ メディアを使用してデータを保存できます。
-- **既存の下流/消費パイプラインを維持することができます。** 最初のタイプのシナリオにおいて、多くのレポート ツールは、T-SQL を使用してデータを読み取ることができるため、SQL データベースで動作します。 Azure Synapse Analytics を使用して、SQL Server のエンドポイントを作成できます。 Synapse には、T-SQL 言語を使用して Data Lake のクエリを可能にする SQL のオンデマンド機能が含まれています。 2 つ目のタイプのシナリオでは、T-SQL エンドポイントを使用することができますが、データ統合パイプラインで、Data Lake でファイルを使用できることがあります。 どちらの方法でも、主なコストを発生させることなく BYOD から移行できます。
+- **既存の下流/消費パイプラインを維持することができます。** [Azure Synapse Analytics サーバーレス SQL プール](/azure/synapse-analytics/sql/on-demand-workspace-overview) を使用して、レイク内のデータに対して T-SQL ビュー定義を作成し、BYOD からデータを読み取るのと同じ方法でデータを読み取ることができます。 データ統合パイプラインを再指定して、主なコストを発生させることなく、Data Lake でデータを使用することができる場合があります。 
+
+BYOD ソリューションは、財務と運用アプリから Azure SQL データベースにエンティティ データの形状をエクスポートします。 **Data Lake へのエクスポート** 機能により、エンティティの形状またはテーブルを使用してデータを選択できます。 Data Lake にエクスポートされたデータを使用すると、 [FastTrack for Dynamics 365- CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution) を使用して、Azure Synapse Analytics サーバーレス SQL プール内のエンティティの形状を再作成できます。  
+
+### <a name="how-is-the-data-stored-in-the-lake"></a>データはどのように Data Lake に格納されますか?
+Data Lake 内のデータは、システムによって管理されるフォルダー構造に CSV ファイルとして格納されます。 フォルダー構造は、財務と運用アプリのデータ構成に基づいています。 例については、**財務**、**サプライ チェーン**、**コマース** などの名前を持つフォルダーが表示され、これらのフォルダー内に、**売掛金勘定**、または **買掛金勘定** などの名前を持つサブフォルダーが表示されます。 下位階層には、各テーブルの実際のデータを含むフォルダーが表示されます。 テーブルレベルのフォルダー内には、複数の CSV ファイルと、データの形式を説明するメタデータ ファイルが表示されます。 
+
+財務と運用アプリのデータが更新される際に、テーブル フォルダーの CSV ファイル内の対応するデータ行が更新されます。 財務と運用アプリのテーブルに新しい行を追加するか、既存の行を削除すると、対応する CSV ファイルから新しい行が追加または削除されます。 
+
+例については、財務と運用アプリでデータ構造が変更された場合、テーブルに新しいフィールドを追加すると、その変更を反映するように、Data Lake 内のメタデータ ファイルが更新されます。 データ構造の変更を破壊的に行う場合は、システムがテーブル フォルダー全体 (すべての CSV ファイル) を再設定する場合もあります。 例については、財務と運用アプリのテーブルからフィールドが削除される場合、まれに破壊的なシナリオでは、テーブル フォルダー全体が再設定されます。 新しいフィールドを追加した場合、すべてのデータ ファイルは再設定されません。 変更された行を含むデータ ファイルだけが、新しいフィールドを含むように更新されます。 多くの消費元のツールは、新しく追加されたデータ フィールド (*スキーマ ドリフト* と呼ばれる機能) を使用できるので、システムはフォルダー全体を再設定できません。  
+
+### <a name="how-can-i-consume-data-in-the-lake"></a>Data Lake のデータをどのように消費できますか?
+Microsoft およびサード パーティの各種のツールを使用して、Data Lake のデータを管理することができます。 ほとんどのツールでは、CSV ファイルとして Data Lake 内に保存されているデータを消費できます。  
+
+Azure Synapse Analytics サーバーレス SQL プールを使用すると、Transact-SQL 言語 (T-SQL) を使用して、同じ言語のデータを消費することができます。 T-SQL 言語は、多くのツールによって広くサポートされています。 データベースからデータを消費する場合と同様に、Synapse ワークスペースを Data Lake のデータ上で定義し、T-SQL、Spark または Syapse Pipelines を使用することができます。 Data Lake のデータ上に Synapse ワークスペースを作成するには [FastTrack for Dynamics 365- CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution) を使用します。
+
+既製のソリューション テンプレートを使用して、Data Lake から SQL Server データ ウェアハウスまたは別の接続先にデータをコピーすることもできます。 詳細については、[FastTrack for Dynamics 365- SynapseToSQL_ADF](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF) を参照してください。
 
 ### <a name="how-often-is-data-in-the-data-lake-updated"></a>Data Lake のデータはどのくらいの頻度で更新されますか?
 
@@ -101,11 +117,11 @@ Finance and Operations 環境にある **Data Lake へのエクスポート** �
 
 ### <a name="why-dont-i-see-the-export-to-data-lake-feature-in-my-environment"></a>環境で Data Lake へのエクスポート機能が表示されないのはなぜですか?
 
-Data Lake へのエクスポート機能は、以下の地域でのみ使用できます: **米国**、**カナダ**、**英国**、**ヨーロッパ**、**東南アジア**、**インド**、**東アジア**、**オーストラリア**、および **日本** リージョン。 Finance and Operations 環境がそれらの地域にある場合は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境でこの機能を有効にできます。 機能は最終的により多くの地域で使用可能になります。
+Data Lake へのエクスポート機能は、米国、カナダ、英国、ヨーロッパ、スイス、東南アジア、インド、東アジア、オーストラリア、および日本リージョンでのみ使用できます。 Finance and Operations 環境がそれらの地域にある場合は、Microsoft Dynamics Lifecycle Services (LCS) を使用して、環境でこの機能を有効にできます。 機能は最終的により多くの地域で使用可能になります。
 
 Data Lake へのエクスポート機能は、Tier 1 (開発者) 環境では使用できません。 この機能を有効にするには、クラウド ベースの Tier 2 またはそれ以上のサンドボックス環境が必要です。
 
-Tier 1 (開発者) 環境では、[GitHub ツール](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md) を使用して機能の実装のプロトタイプを作成または計画できます。 このツールを使用すると、機能がエクスポートしたのと同じ形式で、階層 1 またはサンドボックス環境のデータをストレージ アカウントにエクスポートすることができます。
+レベル 1 (開発者) 環境では、[FastTrack for Dynamics 365- GitHub ツール](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md) を使用してプロトタイプを使用、または機能の実装を計画できます。 このツールを使用すると、機能がエクスポートしたのと同じ形式で、階層 1 またはサンドボックス環境のデータをストレージ アカウントにエクスポートすることができます。
 
 ### <a name="how-can-i-stay-in-touch-about-upcoming-features"></a>今後の機能に関してどのように連絡を取り合えますか?
 

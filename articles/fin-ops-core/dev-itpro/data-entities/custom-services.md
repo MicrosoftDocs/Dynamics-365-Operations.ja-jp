@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42965ab7bda7d7853d04960fa3d8bc063c2fbb12
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: fb01dbce72b7b6fee51f74db9ec536091a123533
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404187"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105422"
 ---
-# <a name="custom-service-development"></a>カスタム サービスの開発
+# <a name="custom-service-development"></a>顧客サービスの開発
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations に対してカスタム サービスを開発できます。 開発者が 1 つのサービス グループに属するカスタム サービスを書き込むと、そのサービス グループは次の 2 つのエンドポイントに常に配置されます。
+Finance and Operations 用にカスタム サービスを開発できます。 開発者が 1 つのサービス グループに属するカスタム サービスを書き込むと、そのサービス グループは次の 2 つのエンドポイントに常に配置されます。
 
 - SOAP エンドポイント
 - JSON エンドポイント
@@ -62,7 +62,7 @@ JSON エンドポイントが `https://host_uri/api/services/service_group_name/
 
 **例**
 
-`https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
+`https://usnconeboxax1aos.cloud.onebox.dynamics.com/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
 
 JSON サービスを使用するためのコード例は、[Microsoft Dynamics AX 統合 GitHub リポジトリ](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication) で利用できます。
 

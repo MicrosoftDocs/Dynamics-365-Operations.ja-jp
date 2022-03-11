@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: d5029272003f4143c3190b6c8172e0aeed64ca49930bfcc041d4bc96478d5c21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d520f6805ad9c92aed8c71312eeef1d8656c5188
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751507"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323966"
 ---
 # <a name="electronic-reporting-framework-api-changes-for-application-update-10011"></a>Application update 10.0.11 での電子申告フレームワーク API の変更
 
@@ -27,7 +27,7 @@ ms.locfileid: "6751507"
 
 ## <a name="api-to-run-a-format-mapping-for-the-generation-of-outbound-documents"></a>送信ドキュメントの生成に対して形式マッピングを実行する API
 
-[送信ドキュメント](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents) を生成するには、ER  [形式マッピング](general-electronic-reporting.md#FormatComponentInbound) を実行する必要があります。 ほとんどの ER 形式のマッピングには、**データ モデル** 型のデータ ソースが含まれています。 実行時には、特定の [モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)が、データソースが設定されている [データモデル](general-electronic-reporting.md#data-model-and-model-mapping-components) の実装として識別される必要があります。
+[出荷ドキュメント](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents) を生成するには、ER 形式マッピングを実行する必用があります。 ほとんどの ER 形式のマッピングには、**データ モデル** 型のデータ ソースが含まれています。 実行時には、特定の モデル マッピングが、データソースが設定されている データモデル の実装として識別される必要があります。
 
 ER フレームワークの [初期](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API を使用してソースコードの実行ポイントから ER 形式のマッピングを呼び出すと、モデル マッピング コンポーネントを含む、対応する ER [構成](general-electronic-reporting.md#Configuration)の設定（既定のモデルマッピング フラグと国/地域コード）を考慮したモデル マッピングが見つかります。 詳細については、[国のコンテキスト依存 ER モデル マッピングを構成する](er-country-dependent-model-mapping.md) を参照してください。
 

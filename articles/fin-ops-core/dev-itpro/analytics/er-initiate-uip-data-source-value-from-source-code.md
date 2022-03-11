@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 7873e1e05ee577a2bfc00332d4bae9440e8b7ddbeed5673d5f34ef5a778836b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 85280cb2c5b12ae21b8720a663ae551d66065877
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760014"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323858"
 ---
 # <a name="initiate-data-source-values-of-the-user-input-parameter-type-from-source-code"></a>ソース コードからユーザー入力パラメーターのデータ ソース値を開始する
 
 [!include [banner](../includes/banner.md)]
 
-ER [モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)および ER [形式](general-electronic-reporting.md#FormatComponentOutbound)コンポーネントを設計する場合は、*ユーザー入力パラメーター* タイプを使用して、ER フォーマットの実行が開始される前に実行時に提供される必要な値を取得します。 このダイアログ ボックスは、必要なパラメーターを別のページに入力した場合、または ER フォーマットを無人 (バッチ) モードで実行した場合に、プログラムを使用してオフにすることができます。 ER ダイアログ ボックスがオフになっている場合、ソース コードから *ユーザー入力パラメーター* タイプのデータ ソース値を開始する必要があります。
+ER モデル マッピングと ER 形式のコンポーネントを設計する際は、*ユーザー入力パラメーター* タイプのデータ ソースを使い、ER 形式の回が始まる前にランタイムで提供される必要な値を取得します。 このダイアログ ボックスは、必要なパラメーターを別のページに入力した場合、または ER フォーマットを無人 (バッチ) モードで実行した場合に、プログラムを使用してオフにすることができます。 ER ダイアログ ボックスがオフになっている場合、ソース コードから *ユーザー入力パラメーター* タイプのデータ ソース値を開始する必要があります。
 
 ## <a name="format-components-for-outgoing-electronic-documents"></a>送信する電子ドキュメントの形式のコンポーネント
 
-送信ドキュメントを生成するには、ER [形式](general-electronic-reporting.md#FormatComponentOutbound)をコンフィギュレーションします。 この形式をコンフィギュレーションすると、送信ドキュメントに入力するために使用されるデータ ソースとして ER [データ モデル](general-electronic-reporting.md#data-model-and-model-mapping-components)が選択されます。 ER [モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)をコンフィギュレーションして、選択したデータ モデルが実行時にアプリケーション データによってどのように入力されるかを指定します。 モデル マッピングを設計するときは、データ ソースを指定して、さまざまなソースから目的の値を収集しし、それらをデータ モデルに入力します。 特に、*ユーザー入力パラメーター* タイプのデータ ソースを使用して、ER 形式を最初に[実行](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export)したときに表示される ER ユーザー ダイアログ ボックスでユーザーが入力した値をデータ モデルに入力できます。 
+送信ドキュメントを生成するには、ER 形式をコンフィギュレーションします。 この形式をコンフィギュレーションすると、送信ドキュメントに入力するために使用されるデータ ソースとして ER データ モデルが選択されます。 ER モデル マッピングをコンフィギュレーションして、選択したデータ モデルが実行時にアプリケーション データによってどのように入力されるかを指定します。 モデル マッピングを設計するときは、データ ソースを指定して、さまざまなソースから目的の値を収集しし、それらをデータ モデルに入力します。 特に、*ユーザー入力パラメーター* タイプのデータ ソースを使用して、ER 形式を最初に[実行](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export)したときに表示される ER ユーザー ダイアログ ボックスでユーザーが入力した値をデータ モデルに入力できます。 
 
 送信ドキュメントを生成するようにコンフィギュレーションされた ER 形式の場合、`ERObjectsFactory` クラスの `createFormatMappingRunByFormatMappingId()` メソッドの `_showPromptDialog` パラメーターを使用して、ER ダイアログ ボックスをプログラムでオフにすることができます。 この場合、ソースコードから *ユーザー入力パラメーター* タイプのデータ ソースの値を開始する必要があります。 それには、次のパターンを使用します。
 
@@ -39,7 +39,7 @@ ERObjectsFactory::createFormatMappingRunByFormatMappingId(formatMappingID, fileN
             .run();
 ```
 
-送信ドキュメントを生成するようにコンフィギュレーションされている ER フォーマットの場合、ER データ ソースへのパスは、スラッシュ (**/**) 文字で区切られた接頭語と接尾語から構成されます。 接頭語は、実行中の ER 形式に存在する *モデル* タイプのデータ ソースの名前を表します。 接尾語は、関連する [データ モデル](general-electronic-reporting.md#data-model-and-model-mapping-components)の実装として実行中の ER 形式で使用される [モデル マッピング](general-electronic-reporting.md#data-model-and-model-mapping-components)に存在する *ユーザー入力パラメーター* タイプのデータ ソースへのパスを表します。
+送信ドキュメントを生成するようにコンフィギュレーションされている ER フォーマットの場合、ER データ ソースへのパスは、スラッシュ (**/**) 文字で区切られた接頭語と接尾語から構成されます。 接頭語は、実行中の ER 形式に存在する *モデル* タイプのデータ ソースの名前を表します。 接尾語は、関連するデータ モデルの実装として ER 形式を実行することで使用されるモデル マッピングに存在する *ユーザー入力パラメーター* タイプのデータ ソースへパスを表わします。
 
 > [!TIP]
 > データ ソース パスのノードは、スラッシュ (**/**) 文字で区切られ ます。 `ERPath::Combine()` メソッドを使用して、パスを作成します。
@@ -82,7 +82,7 @@ ERObjectsFactory::createFormatMappingRunByFormatMappingId(formatMappingID, fileN
 
 ## <a name="format-components-for-inbound-electronic-documents"></a>受信電子ドキュメントの形式のコンポーネント
 
-受信ドキュメントを解析して、アプリケーション データを更新するために[実行](general-electronic-reporting.md#FormatComponentInbound)できる ER [形式](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import)を構成することもできます。 この形式には、受信ドキュメントのコンテンツに基づいてアプリケーション データを更新するために使用される *宛先* タイプのモデル マッピングを参照する形式マッピングが含まれている必要があります。 このタイプのモデル マッピングでは、*ユーザー入力パラメーター* タイプのデータ ソースを使用して、実行時に ER ユーザー ダイアログ ボックスから値を取得し、アプリケーション データの更新に使用することもできます。
+[実行](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) し、インバウンド ドキュメントを解析およびアプリケーション データを更新する ER 形式の構成も可能です。 この形式には、受信ドキュメントのコンテンツに基づいてアプリケーション データを更新するために使用される *宛先* タイプのモデル マッピングを参照する形式マッピングが含まれている必要があります。 このタイプのモデル マッピングでは、*ユーザー入力パラメーター* タイプのデータ ソースを使用して、実行時に ER ユーザー ダイアログ ボックスから値を取得し、アプリケーション データの更新に使用することもできます。
 
 受信ドキュメントを解析するために ER 形式が実行される場合、`ERObjectsFactory` クラスの `createMappingDestinationRunByImportFormatMappingId()` メソッドの `_showPromptDialog` パラメーターを使用して、ER ダイアログ ボックスをプログラムでオフにすることができます。
 

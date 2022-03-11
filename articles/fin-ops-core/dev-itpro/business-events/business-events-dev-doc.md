@@ -2,7 +2,7 @@
 title: ビジネス イベント開発者ドキュメント
 description: このトピックでは、ビジネス イベントを実装するための開発プロセスおよびベスト プラクティスについて説明します。
 author: jaredha
-ms.date: 11/24/2021
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 ms.author: jaredha
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
-ms.openlocfilehash: f32a68a870e03286a704fdbd32ee88228c75281a
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: ef2ff64873787fcb69aa3f786c439c6db32df59e
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867234"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384349"
 ---
 # <a name="business-events-developer-documentation"></a>ビジネス イベント開発者ドキュメント
 
@@ -33,7 +33,7 @@ ms.locfileid: "7867234"
 
 ビジネス イベントのキャプチャの背後にある目的を明確に把握している必要があります。 つまり、ビジネス イベントをキャプチャする理由、および受信者が使用する方法です。
 
-ビジネス イベントをキャプチャして、Finance and Operations で発生するビジネス イベントに応答して Dynamics 365 Finance and Operations アプリの外部でビジネス アクションを実行することを目的としている場合、ビジネス イベントに対する良いユース ケースがあります。 ビジネス イベントに応答して実行されるビジネス アクションは、ビジネス イベントに関するユーザーの変更や、販売注文の作成などのビジネス アクションを実行する他のビジネス アプリケーションを呼び出すことである場合があります。 ビジネス アクションを実行するビジネス アクションの種類でのビジネス イベントに必要な基準としてではなく、汎用として考えることは重要です。
+ビジネス イベントをキャプチャして、財務と運用アプリで発生するビジネス イベントに応じて Dynamics 365 Finance および運用アプリの外部でビジネス アクションを実行することを目的としている場合、ビジネスイベントの良いユース ケースがあります。 ビジネス イベントに応答して実行されるビジネス アクションは、ビジネス イベントに関するユーザーの変更や、販売注文の作成などのビジネス アクションを実行する他のビジネス アプリケーションを呼び出すことである場合があります。 ビジネス アクションを実行するビジネス アクションの種類でのビジネス イベントに必要な基準としてではなく、汎用として考えることは重要です。
 
 データを受信者に転送し、効果的にデータ エクスポート シナリオを実現することを目的としている場合、ビジネス イベントに対する良いユースケースはありません。 実際、データ転送シナリオのビジネス イベントの使用は、ビジネス イベント フレームワークの誤用になります。 このようなシナリオでは、データ管理で既に使用可能であるデータ エクスポート メカニズムを使用し続ける必要があります。
 
@@ -570,13 +570,17 @@ extends BusinessEventsContract
 }
 ```
 
-#### <a name="step-6-wrap-the-buildcontract-method"></a>ステップ 6: buildContract メソッドをラップします。
+#### <a name="step-6-extend-the-business-event-class-to-wrap-the-buildcontract-and-getextendedbusinesseventscontractname-methods"></a>手順 6: ビジネス イベント クラスを拡張して buildContract と getExtendedBusinessEventsContractName メソッドを折り返す
 
-標準ビジネス イベント契約をロードしてペイロード拡張機能を投入する **next** を呼び出す、ビルド契約の実装を提供します。 これは完全なクラスです。
+ビジネス イベント標準ビジネス イベント契約をロードしてペイロード拡張機能を投入する **next** を呼び出す、**buildContract** の実装を指定します。 
+
+新しい拡張契約クラスの名前を返す、**getExtendedBusinessEventsContractName** 実装を指定します。 これにより、新しい契約名とフィールドがビジネス イベント カタログの UI に表示されます。
+
+これは完全なクラスです。
 
 ```xpp
 [ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEvent))]
-public final class FreeTextInvoicePostedBusinessEventContract_Extension
+public final class CustFreeTextInvoicePostedBusinessEvent_Extension
 {
     public BusinessEventsContract buildContract()
     {
@@ -585,6 +589,13 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
         buildContract());
         businessEventContract.parmCustomerClassification(CustomerClassifier::deriveCustomerClassification(businessEventContract.parmInvoiceAccount()));
         return businessEventContract;
+    }
+    
+    public BusinessEventsContractEDT getExtendedBusinessEventsContractName()
+    {
+        next getExtendedBusinessEventsContractName();
+
+        return classStr(CustFreeTextInvoicePostedBusinessEventExtendedContract);
     }
 }
 ```

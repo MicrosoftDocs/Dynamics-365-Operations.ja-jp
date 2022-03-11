@@ -2,7 +2,7 @@
 title: 予定された保守ウィンドウのよく寄せられる質問
 description: このトピックでは、Microsoft の計画されたメンテナンス ウィンドウに関するよくある質問に対する回答を示します。
 author: angelmarshall
-ms.date: 10/15/2019
+ms.date: 02/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,18 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c64cb0ae24abd5c7226816b75676178094d561540ae7f27f6ab8c43defae7bc3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bfffeda9160b505c08d9d31d4c9344c7210b6f06
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746567"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349757"
 ---
-# <a name="planned-maintenance-window-faq"></a>予定された保守ウィンドウのよく寄せられる質問
+# <a name="planned-maintenance-window-faq"></a>計画メンテナンス ウィンドウに関するよく寄せられる質問
 [!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> このトピックは、Infrastructure-as-a-Service (IaaS) 環境に適用され、間もなく削除される予定です。 最新の情報については、[セルフサービス環境におけるよくある質問の計画メンテナンス](../deployment/plannedmaintenance-selfservice.md) を参照してください。
 
 ### <a name="what-is-a-planned-maintenance-window"></a>計画されているメンテナンス期間とは何ですか ?
 メンテナンス予定期間は、機器設備や [サービス](../../fin-ops/get-started/one-version.md) に関する重要な更新を適用するために Microsoft がスケジュール設定をした時間枠です。

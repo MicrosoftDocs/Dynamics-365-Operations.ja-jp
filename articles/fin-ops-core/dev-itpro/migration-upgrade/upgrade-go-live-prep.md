@@ -2,7 +2,7 @@
 title: AX 2012 からのアップグレード - 稼働の準備
 description: このトピックでは、ソース Dynamics AX 2012 システムとアップグレード プロセスが安定した状態を保ち、運用の一貫性があることを保証する方法について説明します。
 author: tariqbell
-ms.date: 01/31/2018
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 61164c2a73eedf9309772dd8b3118fc0c46f258c0cea8e9e662b760e2a75df13
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10ae4eb98e00a3ea95f9087759afe71b93e2f9c6
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763456"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323995"
 ---
 # <a name="upgrade-from-ax-2012---prepare-for-go-live"></a>AX 2012 からのアップグレード - 稼働の準備
 
@@ -45,6 +45,11 @@ AX 2012 環境のすべてのコード変更を凍結する必要があります
 
 > [!NOTE]
 > データ自体が毎日変更されるため、コードを凍結して、アップグレード プロジェクトの開始時の変更をセットアップする場合でも、このステップを完了する必要があります。 また、この最終的な切替テストは、現在のデータが正常にアップグレードされたことを検証します。
+
+エンド ツー エンドのデータ アップグレード テストを完了します。 
+
+> [!WARNING]
+> 少なくとも 1 つの最終的なテスト データ アップグレードを完了し、これが稼働する AX 2012 実稼働環境で再テストし、レプリケーション プロセスが有効なトランザクション データベースで機能することを確認する必要があります。 SQL データベースの有効なトランザクションがレプリケーションの動作に影響を与えるため、実稼働のコピーに対してレプリケーションをテストするのは同じではありません。 また、このテストは、実際に実行される数週間のような、短い時間枠内で実行される必要があります。 最終テストの実行から本番稼働までの時間を大きく空けると、データ量が大幅に増加した場合にテストが無効になる可能性があります。
 
 機能テストがこの最後にアップグレードしたコピーに対して実行されることを確認します。
 

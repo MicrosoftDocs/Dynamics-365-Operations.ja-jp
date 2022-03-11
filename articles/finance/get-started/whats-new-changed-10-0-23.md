@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0338d7481f4a9de452739f2290bad75765c12d67
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 6fcdbf4674c526075fe314b40d3094aa2717044f
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890657"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182389"
 ---
 # <a name="preview-features-in-dynamics-365-finance-10023-january-2022"></a>Dynamics 365 Finance 10.0.23 (2022 年 1 月) のプレビュー機能
 
@@ -40,7 +40,7 @@ ms.locfileid: "7890657"
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化  |
 |----|----|----|----|
 | グローバル アドレス帳 | 住所の設定で国/地域ごとに既定の都道府県を定義する | グローバル アドレス帳の住所設定で国/地域ごとに既定の都道府県を定義できるようになりました。 既定の都道府県が設定されている場合は、その国/地域に新しい郡または市のレコードが作成される際、それが都道府県フィールドに入力された規定値になります。 詳細については、[住所の設定](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md)を参照してください | 既定で有効 |
-|税の計算    | [自由形式の請求書との統合](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [税計算 Finance and Operations との統合](/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | 機能管理   |
+|税の計算    | [自由形式の請求書との統合](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [財務と運用との税計算の統合](/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | パラメーター   |
 |電子請求    | [イタリア SDI システムへのコンフィギュレーション可能な電子請求書の送信](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/electronic-invoicing-service-configurable-e-invoice-submission-italian-sdi-sistema-di-interscambio-system-preview)   | [電子請求の概要](/dynamics365/finance/localizations/e-invoicing-service-overview)   | 機能管理   |
 |   買掛金  | [仕入先未処理トランザクション レポート](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/open-vendor-transaction-report)  |  [仕入先請求書の概要](../accounts-payable/vendor-invoices-overview.md) |  機能管理   |
 |  買掛金  | [買掛金勘定で数量オプション パラメーターに基づいて請求明細行を作成](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/create-invoice-lines-based-quantity-option-parameter-accounts-payable)  | [仕入先請求書をインポートする際に請求明細行を生成する](../accounts-payable/auto-create-invc-lines-at-import.md) | 既定で有効 |
@@ -61,8 +61,8 @@ ms.locfileid: "7890657"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
-Dynamics 365 Finance 10.0.23 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.23 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md) を参照してください。 
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
+Dynamics 365 Finance 10.0.23 には、プラットフォーム更新プログラムが含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.23 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md) を参照してください。 
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=627874) を参照してください。 このリリースでは次の問題が修正されています。
@@ -73,7 +73,7 @@ Dynamics 365 Finance 10.0.23 には、プラットフォーム更新プログラ
 | トランザクション ログの日付フィルター   | 多くの場合、プロセスの実行中に、日付範囲の連結プロセスを再開します。 これは、プロセスが正しく開始されなかったと思われる場合や、開始された後に停滞した場合に起こります。 プロセスが再開されると、その日付範囲で開始したプロセスの実行中に、同じ日付範囲が連結に対して入力されます。 連結トランザクションに移動して、連結プロセスの実行中に同じ日付範囲の連結結果を削除しようとする場合があります。 同じデータ セットに対して複数のプロセスを同時に実行すると、問題が発生する可能性があります。 別の連結が既に進行中の場合に、同じ日付範囲では連結プロセスまたは削除を実行できないことを確認する検証を行う、という変更が追加されました。 この変更の一環として、リアルタイムではなくバッチを使用して連結を実行する必要があります。 |  
 
 ### <a name="regulatory-updates"></a>規制の更新
-Finance and Operations アプリの規制の更新については、[規制の更新](../localizations/regulatory-updates.md)を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
+財務と運用アプリの規制の更新については、[規制の更新](../localizations/regulatory-updates.md) を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
 
 ### <a name="dynamics-365-2021-release-wave-2-plans"></a>Dynamics 365: 2021 リリース ウェーブ 2 プラン
 

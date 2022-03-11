@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 393ba241f0f7408ec9231f26f237050b3462bb02
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 098f783b9a626ec03255806a96291f13527500cc
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781711"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367906"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -31,7 +31,7 @@ ms.locfileid: "7781711"
 このトピックは、Dynamics 365 Retail および Dynamics 365 Finance バージョン 10.0.5 (2019 年 10 月) 以降に適用されます。
 
 > [!NOTE]
-> テスト レコーダーは、Google Chrome Web ブラウザーを使用している場合にのみ、Cloud POS でサポートされます。 その他の Web ブラウザーおよびデバイス タイプのサポートは、今後追加されます。
+> テスト レコーダーは、Google Chrome または Microsoft Edge Web ブラウザーの Cloud POS でのみ使用されます。
 
 ## <a name="test-recorder"></a>テスト レコーダー
 
@@ -242,7 +242,7 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
     + **Commerce Scale Unit URL** – デバイスがまだ有効化されていない場合にデバイスの有効化に使用する、Commerce Scale Unit URL を入力します。
 
         > [!NOTE]
-        > Cloud POS および Commerce Scale Unit URL は Finance and Operations 環境から取得できます。 **Retail とコマース > チャネル設定 > チャネル プロファイル** の順に移動します。 LCS 環境ページから URL を取得することもできます。
+        > Cloud POS と Commerce Scale Unit URL は、財務と運用の環境から取得できます。 **Retail とコマース > チャネル設定 > チャネル プロファイル** の順に移動します。 LCS 環境ページから URL を取得することもできます。
    
    + **AAD ユーザー電子メール** - デバイスの有効化に使用する Azure Active Directory (Azure AD) ユーザーの電子メール アドレスを入力します。 Azure AD ユーザーは、デバイスを有効にするアクセス許可を持っている必要があります。
    + **AAD パスワード** - デバイスの有効化に使用する Azure AD ユーザーのパスワードを入力します。

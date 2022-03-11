@@ -2,7 +2,7 @@
 title: データ エンティティのビルドおよび使用
 description: このチュートリアルでは、エンティティを構築する方法と、統合シナリオで一部のアウト・オブ・バンド (OOB) エンティティを使用する方法を示します。
 author: peakerbl
-ms.date: 05/26/2020
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b06bf8760c7506cbe74ab4066303a79b5d5b8ff
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a32a2b7dda222f534d7a0048ac10eb411a871383
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068750"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371468"
 ---
 # <a name="build-and-consume-data-entities"></a>データ エンティティのビルドおよび使用
 
@@ -35,7 +35,7 @@ ms.locfileid: "8068750"
 - 新しいプロジェクトを作成し、作成したばかりのプロジェクトにモデル プロパティを設定します。
 
 ## <a name="prerequisites"></a>必要条件
-このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスの管理者としてプロビジョニングする必要があります。
+このチュートリアルでは、リモート デスクトップを使用して環境にアクセスし、インスタンスに管理者としてプロビジョニングする必要があります。
 
 このチュートリアルでは、baseUrl はインスタンスのベース URL を指します。
 
@@ -60,11 +60,11 @@ FMLabCustomerEntity
 
 #### <a name="data-entity-fields"></a>データ エンティティ フィールド
 
-| 氏名          | マッピング                     |
+| Name          | マッピング                     |
 |---------------|-----------------------------|
 | CellPhone     | FMCustomer.CellPhone        |
-| DriverLicense | FMCustomer.DriverLicense    |
-| 電子メール         | FMCustomer.Email            |
+| DriversLicense | FMCustomer.DriversLicense    |
+| メール         | FMCustomer.Email            |
 | 名     | FMCustomer.FirstName        |
 | 姓      | FMCustomer.LastName         |
 | CustomerGroup | FMCustomer.CustGroup        |
@@ -99,7 +99,7 @@ FMLabCustomerEntity
 5. **次へ** をクリックします。 各プロパティ機能の詳細については、 [データ エンティティ の概要](data-entities.md) 内の「エンティティのカテゴリ」および「エンティティの作成」を参照してください。
 6. 次の図に示すように、データ ソースから新しいエンティティにフィールドを追加します。 主要なデータ ソース、**FMCustomer** からフィールドを追加することができます。 このエンティティについては、テストを効率化するため **画像** および **LicenseImage** コンテナー タイプのチェック ボックスをオフにします。
 7. データ エンティティのフィールドの名前を、パブリック データ コントラクト標準を反映するように変更するか、**ラベルをフィールド名に変換** をクリックして既存のラベルから名前を生成します。
-8. **DriverLicense** フィールドの行で、**必須** チェック ボックスを選択します。 このフィールドはエンティティのナチュラル キーとして使用されます。
+8. **DriversLicense** フィールドの行で、**必須** チェック ボックスを選択します。 このフィールドはエンティティのナチュラル キーとして使用されます。
 
     [![データ エンティティ ウィザード 2。](./media/data-entity-wizard-2.png)](./media/data-entity-wizard-2.png)
 
@@ -185,21 +185,21 @@ FMLabCustomerEntity
         customer.clear();
         customer.FirstName = "Bob";
         customer.LastName = "Smith";
-        customer.DriverLicense = license;
+        customer.DriversLicense = license;
         customer.insert();
 
         info(strfmt("Tried to insert customer '%1 %2' with license %3", 
-            customer.FirstName, customer.LastName, customer.DriverLicense));
+            customer.FirstName, customer.LastName, customer.DriversLicense));
 
         //Display newly created record
-        select forupdate customer where customer.DriverLicense==license;
+        select forupdate customer where customer.DriversLicense==license;
         info(strfmt("Found newly created customer '%1 %2' with license %3", 
-            customer.FirstName, customer.LastName, customer.DriverLicense));
+            customer.FirstName, customer.LastName, customer.DriversLicense));
 
         //Now delete the record from the entity
         customer.delete();
-        select customer where customer.DriverLicense==license ;
-        info(strfmt("Deleted customer does not exist: license- %1", customer.DriverLicense));
+        select customer where customer.DriversLicense==license ;
+        info(strfmt("Deleted customer does not exist: license- %1", customer.DriversLicense));
     }
     ```
 
@@ -279,10 +279,10 @@ FMLabCustomerEntity
 11. **CustomerRelation** で新しいノードを右クリックし、**プロパティ** を選択します。
 12. 次のプロパティを設定します。
 
-    | プロパティ      | 先頭値                                                                         |
+    | プロパティ      | 値                                                                         |
     |---------------|-------------------------------------------------------------------------------|
-    | フィールド         | **CustomerDriverLicense** これは、**FMRentalEntity** の外部キーフィールドです。 |
-    | 関連フィールド | **DriverLicense** これは、**FMCustomerEntity** の固有のキーです。              |
+    | フィールド         | **CustomerDriversLicense**- これは、**FMRentalEntity** の外部キー フィールドです。 |
+    | 関連フィールド | **DriversLicense**- これは、**FMCustomerEntity** の固有のキーです。              |
 
     Visual Studio でのリレーションを次の図に示します。
 
@@ -331,7 +331,7 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
     {  
         { 
             "@odata.etag":"W/"JzEsNTYzNzE0NDU3NjsxLDU2MzcxNDQ1NzY7MTc4NjA2OTg1Niw1NjM3MTQ0NjA1Jw=="",
-            "Comments":"","StartMileage":0,"VehicleRatePerDay":40,"CustomerDriverLicense":
+            "Comments":"","StartMileage":0,"VehicleRatePerDay":40,"CustomerDriversLicense":
             "S468-3184-6541","VehicleRateTotal":280,"VehicleId":"Litware_LitwareFour_1",
             "RentalId":"000001",
             "StartFuelLevel":"Full","StartDate":"2010-04-09T00:00:00Z","CustomerLastName":"Spencer",
@@ -342,7 +342,7 @@ Internet Explorer  を使用して一部の OData URI を表示できるよう�
 
             {"@odata.etag":"W/"JzEsNTYzNzE0NDU3NjsxLDU2MzcxNDQ1NzYn"",
             "CellPhone":"(999) 555-0100",
-            "DriverLicense":"S468-3184-6541","AddressLine2":"",
+            "DriversLicense":"S468-3184-6541","AddressLine2":"",
             "State":"FL","Country":"US","FirstName":"Phil",
             "Email":"phil.spencer@adatum.com","CustomerGroup":
             "adv_mem_1","AddressLine1":"167 BBN Way","City":"Orlando",

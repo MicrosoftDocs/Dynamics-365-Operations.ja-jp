@@ -1,8 +1,8 @@
 ---
 title: SQL Server Reporting Services (SSRS) ノードの高可用性を構成する
-description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) 展開用に Microsoft SQL Server Reporting Services (SSRS) ノードを構成する方法について説明します。
+description: このトピックでは、Dynamics 365 Finance + Operations (on-premises) 展開用に Microsoft SQL Server Reporting Services (SSRS) ノードを構成する方法について説明します。
 author: faix
-ms.date: 03/22/2021
+ms.date: 02/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7b20ed1d325b61fd5a32b0268d19d1cf7e0d44d557d20a6c6e82328c21c27faa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2abdabf75d612ab9b5659c743e97edcdaca0409
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713878"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8331730"
 ---
 # <a name="configure-high-availability-for-sql-server-reporting-services-ssrs-nodes"></a>SQL Server Reporting Services (SSRS) ノードの高可用性を構成する
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) 展開用に複数の Microsoft SQL Server Reporting Services (SSRS) ノードを構成する方法について説明します。
+このトピックでは、Dynamics 365 Finance + Operations (on-premises) 展開用に複数の Microsoft SQL Server Reporting Services (SSRS) ノードを構成する方法について説明します。
 
 ## <a name="high-availability-with-windows-failover-clusters"></a>Windows フェールオーバー クラスターによる高可用性
 
@@ -148,7 +148,7 @@ param (
     $ServiceAccount,
 
     [string]
-    $ssrsServicePort = ""
+    $SsrsServicePort = "443"
 )
 
 $ErrorActionPreference = "Stop"
@@ -173,7 +173,7 @@ foreach ($component in $configJson.components)
         $component.parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value = $Listener
         $component.parameters.biReporting.reportingServers.value = $MachinesList
         $component.parameters.biReporting.ssrsUseHttps.value = "True"
-        $component.parameters.biReporting.ssrsHttpsPort.value = $ssrsServicePort
+        $component.parameters.biReporting.ssrsHttpsPort.value = $SsrsServicePort
     }
     elseif($component.name -eq "ReportingServices")
     {
@@ -183,7 +183,7 @@ foreach ($component in $configJson.components)
         $component.parameters.principalUserAccountType.value = "ManagedServiceAccount"
         $component.parameters.principalUserAccountName.value = $ServiceAccount
         $component.parameters.reportingServers.value = $MachinesList
-        $component.parameters.ssrsHttpsPort.value = $ssrsServicePort
+        $component.parameters.ssrsHttpsPort.value = $SsrsServicePort
     }
 
     $updatedComponents += $component

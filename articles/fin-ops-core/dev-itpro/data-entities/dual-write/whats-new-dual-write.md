@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 026d9431cd619ab56e3a4a70eff3d486ed942479
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 56bef8d2d5f1aca288b4867aa88d7342f0de3fe4
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087307"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8110034"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -27,13 +27,21 @@ ms.locfileid: "8087307"
 
 ## <a name="january-2022-release"></a>2022 年 1 月リリース 
 
+
+[二重書き込みコア バージョン 1.1.33](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) の 2022 年 1 月リリース版には次の変更が含まれます。 
+
+| フィーチャー | Description |Status |
+|------|---------|-------|
+| パフォーマンス| Microsoft Dataverse エンティティ取得のパフォーマンスが向上します。 | 一般提供 |
+| 追跡| エンティティの処理中に余分な追跡ログを制限します。 | 一般提供 |
+
 2022 年 1 月リリースの[二重書き込みアプリケーション オーケストレーション ソリューション バージョン 2.3.3.2](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) には、次のバグ修正が含まれます。 
 
 | フィーチャー | Description |Status |
 |------|---------|-------|
 | バグ修正| Customer Engagement アプリでは、見積明細行情報フォームは、会社ではなくサイトごとに倉庫をフィルタリングします。 | 一般提供 |
 | バグ修正| 財務と運用アプリでは、品目モデル グループが設定されていない製品をリリースした場合、Customer Engagement アプリの **FieldServiceProductType** 属性に対して設定されている空白の値が原因で、操作は失敗します。 これは、**FieldServiceProductType** 属性が「NotAvailable」値を許可することで修正されました。 | 一般提供 |
-| バグ修正| Microsoft Dataverse が更新された販売価格 0.00 を送信した場合、財務と運用アプリでは更新されません。 | 一般提供 |
+| バグ修正| Dataverse が更新された販売価格 0.00 を送信した場合、財務と運用アプリでは更新されません。 | 一般提供 |
 
 このリリースには、[特徴的製品をリリースした CDS] - [製品] という名前のマップ変更が 1 件含まれています。 マップを変更するには、「Dynamics365FinanceAndOperationsDualWriteMaps」ソリューション バージョン 2.3.3.2 を適用し、[特徴的製品をリリースした CDS] - [製品] をバージョン 1.0.0.3 にマップします。
 

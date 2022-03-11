@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 72e72b35d4b088877e7d66c2529ae61f66f200d0
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 881de9c7d88d461029ece211b635b99f1e738a42
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413549"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323862"
 ---
 # <a name="electronic-reporting-framework-api-changes-for-application-update-10017"></a>Application update 10.0.17 での電子申告フレームワーク API の変更
 
@@ -28,7 +28,7 @@ ms.locfileid: "7413549"
 
 ## <a name="api-to-run-a-format-mapping-that-provides-a-user-action-code-to-run-action-dependent-destinations"></a>アクションの依存先を実行するためユーザー アクション コードを提供する形式マッピングを実行する <a name="er-api-run-format-with-action-code"></a> API
 
-[送信ドキュメント](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents) を生成するには、ER  [形式マッピング](general-electronic-reporting.md#FormatComponentInbound) を実行する必要があります。 ER フレームワークの[初期](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API を使用して ER 形式マッピングを呼び出す場合、形式のコンポーネントに対して構成されている[送信先](electronic-reporting-destinations.md#applicability)はすべて常に実行されます。 このタイプの呼び出しのサンプル コードを確認するには、[レポート サービス クラスを追加する](er-quick-start1-new-solution.md#ServiceClass)を参照してください。
+[出荷ドキュメント](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents) を生成するには、ER 形式マッピングを実行する必用があります。 ER フレームワークの[初期](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API を使用して ER 形式マッピングを呼び出す場合、形式のコンポーネントに対して構成されている[送信先](electronic-reporting-destinations.md#applicability)はすべて常に実行されます。 このタイプの呼び出しのサンプル コードを確認するには、[レポート サービス クラスを追加する](er-quick-start1-new-solution.md#ServiceClass)を参照してください。
 
 ```xpp
 // Call ER to generate the report.

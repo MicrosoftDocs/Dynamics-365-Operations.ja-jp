@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: 0e9ddb704248c8e0c64cc7a7842dc9605af1d80a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bd06f17e7515ef81fa41e6f487f984a51776f586
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782407"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384577"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -57,7 +57,7 @@ Xamarin をインストールした後、最新の安定バージョンに更新
 
 1. インストールが完了したら、Visual Studio を起動し、Microsoft アカウント (これは、Windows で使用するのと同じアカウント) を使用してサインインします。 **ツール > オプション > Xamarin** または **ツール > オプション > Xamarin > その他** をクリックして、Xamarin の更新をチェックします。 ここには、**いますぐ確認** リンクがあります。 Xamarin のオプションが **ツール > オプション** に表示されない場合、インストールを確認するか、Visual Studio を再起動してみてください。 **オプション** ダイアログ ボックスで Xamarin を検索することもできます。 必要な場合は、最新バージョンをダウンロードおよびインストールします。
       
-2.  Retail SDK フォルダーで、SampleExtensions\HybridApp\Android\solution を開きます。 エミュレーターを使用して構築および展開し、すべて正常に表示されていることを確認します。
+2.  [Retail SDK フォルダー](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk) で、SampleExtensions\HybridApp\Android\solution を開きます。 エミュレーターを使用して構築および展開し、すべて正常に表示されていることを確認します。
   
 3.  [Android 用 Visual Studio エミュレーター](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Android 用の Visual Studio エミュレーター") または Android 用のエミュレーターを使用して、POS ハイブリッド アプリを起動し、Commerce Scale Unit URL を入力して、保存します。
   
@@ -81,7 +81,7 @@ iOS で Xamarin をインストールに関する詳しい手順については�
   
   ### <a name="build-the-ios-retail-hybrid-app"></a>iOS Retail ハイブリッド アプリの構築
   
-  1.  Retail SDK フォルダーで、SampleExtensions\HybridApp\iOS\solution を開きます。
+  1.  [Retail SDK フォルダー](/retail-sdk/retail-sdk-overview#download-the-retail-sdk) で、SampleExtensions\HybridApp\iOS\solution を開きます。
       Mac に接続して Visual Studio でアプリケーションを構築したら、iOS デバイスの種類を選択し、選択したデバイス上にアプリケーションを展開します。
       
        ![展開用 POS iOS アプリ VS 設定。](./media/iOSSetting.png)

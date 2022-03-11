@@ -2,8 +2,8 @@
 title: Microsoft Power Platform と財務と運用アプリの統合
 description: このトピックでは、財務と運用アプリ用 Microsoft Dynamics Lifecycle Services と Microsoft Dataverse を介した Microsoft Power Platform 統合の概要について説明します。
 author: Sunil-Garg
-ms.date: 05/20/2021
-ms.topic: overview
+ms.date: 02/15/2022
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 8916b7f0c7a32f2f185b23f761a822495e7dd488
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 6bb90b2c8020b926f98951f5c680417ecdebc699
+ms.sourcegitcommit: 3e78d9af127ba205c562612bb587aa19145605d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062579"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8336966"
 ---
 # <a name="microsoft-power-platform-integration-with-finance-and-operations-apps"></a>Microsoft Power Platform と財務と運用アプリの統合
 
@@ -26,6 +26,16 @@ ms.locfileid: "8062579"
 
 
 Microsoft Power Platform は、Power Platform 管理者センターを介した Dynamics 365 アプリケーションの一連の機能を提供します。 今日、財務と運用アプリは Power Platform 管理者センターで管理されていません。 ただし、時間の経過とともに、Microsoft Dynamics Lifecycle Services (LCS) から管理センターに移行される管理機能がますます増えています。 暫定的に、顧客は、LCS の Microsoft Power Platform 統合機能を介して、二重書き込み機能、仮想エンティティ、アドインなどの機能のロックを解除できるようになります。
+
+## <a name="environment-lifecycle-considerations"></a>環境ライフサイクルの考慮次項
+
+既定では、LCS によって管理されるすべての財務と運用の環境は、リンクされた Power Platform 環境を Dataverse なしで受け取ります。 これは 1 対 1 の関係で、財務と運用アプリが移行する場所になります。 LCS の環境にリンクされている環境では、Power Platform 管理センターの環境詳細ページで、財務と運用アプリの URL が表示されます。
+
+:::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="リンクされた Power Platform 環境":::
+
+この環境は、削除したりリセットしたりすることはできず、Dataverse データベースを手動で追加することもできません。 Dataverse を追加するには、全体的に Power Platform 統合を設定し、次の手順を実行します。 
+
+また、仮想エンティティ、アドイン、デュアル書き込みなど、Power Platform 統合シナリオの既存の Dataverse 環境を再利用する場合は、[既存 Dataverse 環境のデュアル書き込みを設定](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment) に関する推奨事項に従います。
 
 ## <a name="prerequisite-reading"></a>前提条件の参照先
 

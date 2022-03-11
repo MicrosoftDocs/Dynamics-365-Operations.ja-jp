@@ -2,7 +2,7 @@
 title: Commerce Data Exchange のトラブルシューティング
 description: このトピックでは、実装における CDX のトラブルシューティングに役立つ情報を提供します。
 author: jashanno
-ms.date: 08/26/2020
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: a3261341127c93c0e1c8759b8443328ba3fd95b3
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 12ea4eb961933ed740e0a1bf39b62fca249e03ec
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441492"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370936"
 ---
 # <a name="commerce-data-exchange-troubleshooting"></a>Commerce Data Exchange のトラブルシューティング
 
@@ -29,13 +29,19 @@ ms.locfileid: "7441492"
 
 このトピックは、Microsoft Dynamics 365 Commerce 環境にデータ同期 (Commerce Data Exchange \[CDX\]) に関連する機能の実装を行う IT 担当者を対象としています。 ここでは、実装における CDX のトラブルシューティングに役立つ情報を提供します。
 
-## <a name="overview"></a>概要
-
 データの構成と同期は、正しい実装を行うにあたって非常に重要となります。 業務上の要件、IT インフラストラクチャ、全体的な準備のいずれであっても、データが正しく同期されていない場合は、環境全体が事実上役に立たないことになります。 したがって、コマース 本社から Commerce Scale Unit を通じて、従来の店舗 (オフラインのデータベースがある店舗とない店舗の両方)、およびその他の店舗内コンポーネントに至るまで、データ同期に関連する問題のトラブルシューティングのプロセスを理解しておくことが重要です。 このトピックでは、一部の問題を軽減または修正する方法についての一般的なガイダンスを提供します。 また、サポート依頼を作成するのに最適なタイミングや、サポート依頼を迅速に行う場合に最も重要となるデータなどの情報も提供しています。
 
 このトピックに進む前に、チャネル (店舗)、レジスターとデバイス、および Modern POS オフライン データベースの概念を理解することが重要です。 したがって、このトピックの後半にある 「CDX 実装ガイダンス」や「コマース アーキテクチャの概要」などのリソースをご確認いただくことを推奨します。
 
-## <a name="troubleshooting"></a>トラブルシューティング
+## <a name="scenario-based-usage-troubleshooting"></a>シナリオベースの使用法に関するトラブルシューティング
+
+次の既知のシナリオでは、Commerce 本部の一部のコンフィギュレーションでは、CDX の機能が予期した正常な結果を達成できない場合があります。 このリストは、追加のシナリオが既知になると更新されます。
+
+- [拡張可能なデータ セキュリティ (XDS) ポリシー](../../fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies.md) 機能が有効になっていると、CDX が正しく動作しない場合があります。 具体的には、Commerce 本部ではすべてのコマース チャネルを参照できない場合があります。 このシナリオでは、ユーザーが CDX ジョブを実行した場合、部分的なデータ (このユーザーが確認できるデータ) だけが生成されます。 そのため、チャネル データベースのデータが不完全で、エラーが発生する可能性が高いです。
+- **RetailServiceAccount** のユーザーが変更されるか、XDS ポリシーが割り当てられます。 **RetailServiceAccount** は、さまざまな理由と目的で使用される、事前生成された重要なアカウントです。 このアカウントを変更しないように強くお勧めします。 XDS ポリシーを使用している場合は、アカウントを表示またはアクセスできるデータが減らされるこのアカウントに割り当てないでください。
+- アップロード パッケージの生成時に、CDX ジョブはタイムアウト エラーで失敗します。 ほとんどの場合、これらの生成されたテーブルの **ReplicationCounterFromOrigin** 列でカスタム作成のトランザクション テーブルにインデックスが存在しない場合に発生します。
+
+## <a name="error-based-troubleshooting"></a>エラーベースのトラブルシューティング
 
 次の表に含まれないエラーが発生した場合は、必要に応じて、Microsoft サポートが問題の解決を援助できるようにサポート依頼を作成してください。 このトピックでは、Microsoft サポートを使用せずに、直接修正可能な問題と、Microsoft サポートを使用せずに確認できるが、サポートなしでは修正できない問題について重点的に説明します。
 

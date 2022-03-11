@@ -2,19 +2,19 @@
 title: Dynamics 365 Translation Service Azure DevOps の拡張機能
 description: このトピックでは、Dynamics 365 Translation Service DevOps 拡張機能を Azure DevOps ワークフローに統合する方法を説明します。
 author: joshsantana
-ms.date: 11/22/2021
+ms.date: 02/09/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: joshsantana
 ms.search.validFrom: 2021-11-19
-ms.openlocfilehash: 378818a1661bfcff461bf48b804df51bba59e482
-ms.sourcegitcommit: d13ea8b6baf73601a8b57548232aac84ffaba717
+ms.openlocfilehash: 5f5b561b3d10661cb7d9eea2b978911391a5da2e
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7941358"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109847"
 ---
 # <a name="dynamics-365-translation-service-azure-devops-extension-public-preview"></a>Dynamics 365 Translation Service Azure DevOps 拡張機能 (パブリック プレビュー)
 
@@ -151,10 +151,12 @@ DTSで認証するために LCS サービス接続を作成するには、まず
 
 | 入力 | 必須 | Description |
 |-------|----------|-------------|
-| ユーザー名 | あり | <p>DTS を使用して要求を送信するユーザー。</p><p><strong>注:</strong> MFA は無効にする必要があります。</p> |
+| 認証エンドポイント | 有効 | アプリに使用するエンドポイント。 詳細については、[アプリの登録](#register-an-application) セクションを参照してください。 |
+| Lifecycle Services API エンドポイント | 有効 | LCS API エンドポイント。  既定値は [https://lcsapi.lcs.dynamics.com] です。 すべての処理済みデータを欧州連合 (EU) 内で取得する必要がある場合は、https://lcsapi.eu.lcs.dynamics.com を使用します。
+| ユーザー名 | 有効 | <p>DTS を使用して要求を送信するユーザー。</p><p><strong>注:</strong> MFA は無効にする必要があります。</p> |
 | パスワード | あり | ユーザーのパスワード。 |
 | クライアント ID | あり | 登録済アプリのクライアント ID。 詳細については、このトピックの前述の[アプリの登録](#register-an-application) セクションを参照してください。 |
-| 認証エンドポイント | あり | アプリに使用するエンドポイント。 詳細については、[アプリの登録](#register-an-application) セクションを参照してください。 |
+
 
 1. Azure DevOps プリジェクトの左メニューの下部で、**プロジェクトの設定** を選択します。
 2. **プロジェクト設定** ウィンドウの **パイプライン** で、**サービスの接続** を選択します。 次に、**サービス接続を作成** を選択します。

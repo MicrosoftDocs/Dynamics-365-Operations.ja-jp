@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-12-31
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 61997ba4688addd6d9e71a496287bee8c0ecedf0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: af6abfd20c4c6d94f874726a04b88f41a7cd119f
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982133"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388429"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10024-february-2022"></a>Dynamics 365 Commerce 10.0.24 の新機能および変更された機能 (2022 年 2 月)
 
@@ -39,8 +39,8 @@ ms.locfileid: "7982133"
 | 機能領域   | フィーチャー                                                  | 詳細                                          |   に  によって有効化             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
 |  B2B         | PDP および簡易注文入力ページでの製品バリアントのマトリックス ビューをサポートしています。        | [B2B eコマース サイトの設定](../b2b/set-up-b2b-site.md)            | サイト ビルダー |
-|  在庫   |  [POS の在庫棚卸操作の改善](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-stock-count-operation-pos)  | この機能により、POS アプリの在庫棚卸操作に対するいくつかの機能およびエクスペリエンス拡張機能が導入されます。  | 機能管理  |
-| 支払 | [POS での集荷注文処理に対する支払フローの改善](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improvements-payment-flows-pick-up-order-processing-pos) | [店舗内での受取に使用できる複数の支払方法](../dev-itpro/multiple-payments-pickup.md) | 機能管理 (*オムニチャネル支払*) |
+|  在庫   |  [POS の在庫棚卸操作の改善](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-stock-count-operation-pos)  | この機能により、POS アプリの在庫棚卸操作に対するいくつかの機能およびエクスペリエンス拡張機能が導入されます。  | 機能管理<p>*POS の在庫棚卸操作の改善*  |
+| 支払 | [POS での集荷注文処理に対する支払フローの改善](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improvements-payment-flows-pick-up-order-processing-pos) | [店舗内での受取に使用できる複数の支払方法](../dev-itpro/multiple-payments-pickup.md) | 機能管理<p>*オムニ チャネル支払* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
 
@@ -50,7 +50,7 @@ ms.locfileid: "7982133"
 
 | モジュール | 機能管理の機能名 | 詳細 |
 |---|---|---|
-| 顧客管理  | 顧客の拡張非同期作成を有効にする  | この機能により、非同期モードで顧客を作成する際に、タイトル、所属、および二次連絡先情報の収集が可能になります。  <!-- Refer to [Synchronous and asynchronous customer](/synchronous-and-asynchronous-customers.md) for more details. --> |
+| 顧客管理  | 顧客の拡張非同期作成を有効にする  | この機能により、非同期モードで顧客を作成する際に、タイトル、所属、および二次連絡先情報の収集が可能になります。  詳細については、[顧客作成モードを非同期化する](../async-customer-mode.md)を参照してください。 |
 | 本社の設定   |  本社の更新後に "コマース スケジューラの初期化" を実行する |  [Commerce Data Exchange ベスト プラクティス](../dev-itpro/cdx-best-practices.md) |
 
 
@@ -61,7 +61,7 @@ ms.locfileid: "7982133"
 Dynamics 365 Commerce 10.0.24 には、プラットフォーム更新プログラムが含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.24 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正 
-この更新プログラムに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、 <!-- Add correct link --> [サポート技術情報 (KB) の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f)を確認してください。
+この更新プログラムに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f) を参照してください。
 
 Commerce 固有の重大な変更を加える場合は、[Dynamics 365 Commerce オンライン SDK に関するよく寄せられる質問](../e-commerce-extensibility/sdk-faq.md) を参照してください。
 

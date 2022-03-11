@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e279a00b41a45ae19664d73d996e37891f29efa7
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 118633fd219530c64ea6e359ee4ef82c85d9f06d
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913689"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323939"
 ---
 # <a name="electronic-reporting-framework-api-changes-for-application-update-10023"></a>Application update 10.0.23 での電子申告フレームワーク API の変更
 
@@ -172,7 +172,7 @@ public interface ERIImportFileSourceSettingsStorage
 }
 ```
 
-このインターフェイスでは、カスタム ソース パラメーターを **ER ソース設定** ダイアログ ボックスで提供し、設計時に設定できるようになっています。 構成済みのソースを使用して、構成済みのカスタム ソースで実行時にインポートする必要のある[受信](general-electronic-reporting.md#FormatComponentInbound)ドキュメントにアクセスできます。
+このインターフェイスでは、カスタム ソース パラメーターを **ER ソース設定** ダイアログ ボックスで提供し、設計時に設定できるようになっています。 構成済みのソースを使用して、構成済みのカスタム ソースで実行時にインポートする必要のある受信ドキュメントにアクセスできます。
 
 このインターフェイスの詳細については、[受信ドキュメントのカスタム ソースを実装する](er-custom-file-source.md)の例を完了してください。
 

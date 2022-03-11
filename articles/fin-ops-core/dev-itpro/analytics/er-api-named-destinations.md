@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: bf8e8b5121752d80a1fb73eea7d84bdc1230d7fd
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: af83a70bc8ef1e4d25ffdc48f1697d65597ef3c8
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413625"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323856"
 ---
 # <a name="change-code-to-enable-users-to-configure-and-use-named-er-destinations"></a>コードを変更して、ユーザーが名前付き送信先を構成して使用できるようにする
 
 [!include [banner](../includes/banner.md)]
 
-[送信ドキュメント](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents) を生成するには、ER  [形式マッピング](general-electronic-reporting.md#FormatComponentInbound) を実行する必要があります。 ER フレームワークの[初期](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API を使用して ER 形式マッピングを呼び出す場合、形式のコンポーネントに対して構成されている[送信先](electronic-reporting-destinations.md#applicability)はすべて常に実行されます。 このタイプの呼び出しのサンプル コードを確認するには、[レポート サービス クラスを追加する](er-quick-start1-new-solution.md#ServiceClass)を参照してください。
+[出荷ドキュメント](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents) を生成するには、ER 形式マッピングを実行する必用があります。 ER フレームワークの[初期](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API を使用して ER 形式マッピングを呼び出す場合、形式のコンポーネントに対して構成されている[送信先](electronic-reporting-destinations.md#applicability)はすべて常に実行されます。 このタイプの呼び出しのサンプル コードを確認するには、[レポート サービス クラスを追加する](er-quick-start1-new-solution.md#ServiceClass)を参照してください。
 
 ER 形式の[アクション依存の ER 送信先](er-action-dependent-destinations.md)を構成することもできます。 次に、ER フレームワークの[拡張](er-apis-app10-0-17.md#er-api-run-format-with-action-code) API を使用して、ユーザー アクション コードを提供する ER 形式のマッピングを呼び出すこともできます。 アクション コードは、設定されているアクション用に構成された送信先に対して実行されます。
 

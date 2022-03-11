@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kesaelen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: d68073a944fb5bca840d703b02e882fc87efb113
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 58bcca8ab8918aa3d86cd76585fdef8c11c7302b
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781050"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384395"
 ---
 # <a name="run-multi-user-testing-by-using-the-performance-sdk"></a>パフォーマンス SDK によるマルチユーザー テストを実行する
 
@@ -73,7 +73,7 @@ ms.locfileid: "7781050"
 9. 証明書ファイルをダブルタップ (またはダブルクリック) して、開きます。 **詳細** タブで、**拇印** セクションが見つかるまで下にスクロールします。 **拇印** を選択し、テキスト ボックスに ID をコピーします。 この拇印を保存し、パフォーマンス SDK に対して **CloudEnvironment.config** 拇印を更新します。
 
 > [!NOTE]
-> Microsoft は、有効期限が切れる前に証明書を自動的にローテーションします。 その時点で、証明書の新しいバージョンをダウンロードする必要があります。 セルフ サービス環境では、証明書は有効期限に最も近いダウンタイム ウィンドウで 90 日ごとにローテーションされます。 ダウンタイム ウィンドウには、顧客が開始したパッケージ展開、および環境を対象とするデータベース移動操作が含まれます。
+> Microsoft は、有効期限が切れる前に証明書を自動的にローテーションします。 その時点で、証明書の新しいバージョンをダウンロードする必要があります。 セルフ サービス環境では、証明書は有効期限に最も近いダウンタイム ウィンドウで 60 日ごとにローテーションされます。 ダウンタイム ウィンドウには、顧客が開始したパッケージ展開、および環境を対象とするデータベース移動操作が含まれます。
 
 ## <a name="prepare-the-perfsdksample-solution-for-multi-user-testing"></a>マルチユーザー テスト用の PerfSDKSample ソリューションの準備
 
@@ -100,7 +100,7 @@ ms.locfileid: "7781050"
     6. **AzureActiveDirectoryConfiguration** 要素と **KeyVaultConfigurations** 要素をコメント行にします。
 
     > [!NOTE]
-    > Finance and Operations アプリが 21Vianet に配置されている場合、必ず `NetworkDomain="https://sts.chinacloudapi.cn/"` を **SelfMintingSysUser** および **SelfMintingAdminUser** で指定してください。
+    > 財務と運用アプリが V21Vianet に配置されている場合、必ず `NetworkDomain="https://sts.chinacloudapi.cn/"` を **SelfMintingSysUser** および **SelfMintingAdminUser** で指定してください。
 
     結果は次の例のようになります。
 

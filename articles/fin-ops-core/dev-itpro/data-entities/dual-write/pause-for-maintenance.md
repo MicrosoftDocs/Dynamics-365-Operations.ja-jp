@@ -2,7 +2,7 @@
 title: メンテナンス時に二重書き込みを一時停止する
 description: このトピックでは、テーブル マップを一時停止する方法について説明します。
 author: nhelgren
-ms.date: 10/13/2021
+ms.date: 02/09/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdb5b5f95660c4788824fb709a37053e1bb214c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: af0b4812a7c4e18e9b6e4bb706c1b34fa305331f
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060325"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105421"
 ---
 # <a name="pause-dual-write-for-maintenance"></a>メンテナンス時に二重書き込みを一時停止する
 
@@ -28,7 +28,12 @@ ms.locfileid: "8060325"
 **実行中** の状態のテーブル マップを一時停止すると、テーブル マップを再開するまで、作成または更新されたすべてのレコードがキューに入れられます。 キューに入れられたレコードは、安全な Microsoft Azure ストレージに格納されます。 テーブル マップを再開して **実行中** の状態に戻す際、これらのテーブルが再び実行されます。
 
 > [!NOTE]
-> テーブル マップが **一時停止** の状態の間、キューに入れるレコードの数とレコードをキューに入れる時間には制限があります。 最初に発生した制限が適用されます。 プロセスはソフト制限から始まり、最終的にハード制限を適用して、ストレージ制限を超えないようにします。
+> テーブル マップが **一時停止** の状態中に、次の制限が適用されます。 
+> - 一時停止を有効にできるのは、最大 7 日間です。
+> - キューに入れることができるレコードの最大サイズは 1 GB です。 
+> 
+> 制限のいずれか 1 つに到達すると、同期が再開され、キューに入れられたレコードが追いつかれるまで、結果として全ての追加レコードがブロックされます。 キャッチ アップを完了するために、ユーザーがジョブを手動で再開する必要があります。
+
 
 **一時停止** 状態のテーブル マップ用に作成または更新されたレコードは、テーブル マップの **キューに入れられたレコード** で表示できます。
 

@@ -2,7 +2,7 @@
 title: 実装プロジェクト FAQ の Go-live
 description: このトピックでは、実装プロジェクトの運用についてよく寄せられる質問を一覧表示します。
 author: sshashi7
-ms.date: 07/12/2019
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sshashi
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5dd6f4309fbbfdca628b02c79caa6336c96eb7dd5a0d4635826f5e7cd74bcdf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d993168feebd98f4c4a90b692d64186ed53df20e
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735476"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103877"
 ---
 # <a name="go-live-for-implementation-projects-faq"></a>実装プロジェクト FAQ の Go-live
 
@@ -44,7 +44,7 @@ FastTrack ソリューション アーキテクトがプロジェクトに割り
 
 ## <a name="the-production-button-isnt-available-in-lcs-how-do-i-request-my-production-environment"></a>生産ボタンは、LCS では使用できません。 実稼働環境を要求するにはどうすればよいですか。
 
-LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイン & 開発**、および **テスト** フェースを完了した後にのみ使用可能です。 これらのフェーズを完了する方法の詳細については、[Finance and Operations アプリ顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。
+LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイン & 開発**、および **テスト** フェースを完了した後にのみ使用可能です。 これらのフェーズを完了する方法の詳細については、 [Finance and Operations アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。
 
 > [!NOTE]
 > 実稼働環境は、運用の評価/レビューが完了するまで配置されません。
@@ -82,7 +82,7 @@ Microsoft FastTrack チームによる Go-live アセスメントが完了し、
 
 ## <a name="how-often-is-my-production-database-backed-up"></a>どのくらいの頻度で生産データベースがバックアップされますか。
 
-データベースは自動バックアップによって保護されています。 完全なデータベース バックアップは毎週行われ、差異のデータベース バックアップは毎時間行われ、およびトランザクション ログのバックアップは 5 分ごとに行われます。 自動バックアップは 35 日間保持されます。
+データベースは自動バックアップによって保護されています。 完全なデータベース バックアップは毎週行われ、差異のデータベース バックアップは毎時間行われ、およびトランザクション ログのバックアップは 5 分ごとに行われます。 自動バックアップは 28 日間保持されます。
 
 詳細については、[自動 SQL データベースのバックアップについて](/azure/sql-database/sql-database-automated-backups) を参照してください。
 

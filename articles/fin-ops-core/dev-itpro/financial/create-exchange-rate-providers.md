@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73cec7c7b269d3e13539d09c081e134bfdc29fab
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f5d26272d406ed8230b77d522c06fdb328900898
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781761"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105417"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
@@ -498,7 +498,6 @@ ms.locfileid: "7781761"
 為替レートのプロバイダーが為替レートを取得をするために使用するメソッドには制限がないため、このフレームワークはいくつかの興味深いシナリオを有効にします。 参照するアイデアを次に示します。
 
 -   **他の為替レート タイプからの為替レートを取得するプロバイダー** – このシナリオにより、さまざまな為替レート タイプ間の為替レートの同期が可能になります。 この機能は、さまざまな元帳間の分離を維持するために、多くの為替レート タイプが存在する状況で役立ちます。 
--   **為替レート サービスの任意の形式を ExchangeRateResponse クラスのインスタンスに変換するために Extensible Stylesheet Language Transformations (XSLT) を使用するプロバイダー** – このシナリオが実装されると、ユーザーは為替レート サービスに必要な XSLT 変換を追加することができ、アプリケーションはそのサービスをサポートします。 プロバイダー固有のコードは必要ありません。
 -   **一部の為替レート プロバイダー サービスは、消費されるすべてのレートに対して料金を請求します** – サービスで消費されるレート毎に課金されるシナリオのために、このリストの最初のアイデアと、サービスから取得するレートの数の制限を組み合わせることを検討してください。
 
 

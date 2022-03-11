@@ -2,7 +2,7 @@
 title: オンプレミス配置のシステム要件
 description: このトピックでは、オンプレミス配置のシステム要件を一覧表示します。
 author: PeterRFriis
-ms.date: 11/30/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,25 +14,26 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b2b11b52d1aee663c6c2d6bc361853bfb827789c
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: 26137b2b85867b756c24f8113072d4f4acd7f2f9
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874541"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109885"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-このトピックは、現在のバージョンの Microsoft Dynamics 365 Finance + Operations (オンプレミス) 配置のシステム要件を一覧表示します。 作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを確認します。
+このトピックでは、現在のバージョンの Microsoft Dynamics 365 Finance + Operations (on-premises) 配置のシステム要件を一覧表示します。 作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを確認します。
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (オンプレミス) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
+> Dynamics 365 Finance + Operations (on-premises) は、Microsoft Azure クラウド サービス を含む、任意のパブリック クラウド インフラストラクチャではサポートされていません。 ただし、[Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) および [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) での実行はサポートされています。
 
 ## <a name="network-requirements"></a>ネットワーク要件
 
-Dynamics 365 Finance + Operations (オンプレミス) は、インターネット プロトコル バージョン 4 (IPv4) またはインターネット プロトコル バージョン 6 (IPv6) を使用するネットワークで処理できます。 システムを計画して次のガイドラインを使用するには、ネットワーク環境を検討してください。
+Dynamics 365 Finance + Operations (on-premises) は、インターネット プロトコル バージョン 4 (IPv4) またはインターネット プロトコル バージョン 6 (IPv6) を使用するネットワークで処理できます。 システムを計画して次のガイドラインを使用するには、ネットワーク環境を検討してください。
 
 ### <a name="network-response-time"></a>ネットワークの応答時間
 
@@ -252,7 +253,7 @@ Finance + Operations コンポーネントをインストールする前に、�
 Service Fabric の詳細については、[Service Fabric Cluster の計画および準備](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation)を参照してください。
 
 > [!NOTE]
-> サポートされているバージョンについては、[Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされているソフトウェア](../../dev-itpro/deployment/onprem-compatibility.md)を参照してください。
+> サポートされているバージョンについては、[サポートされているソフトウェア Microsoft Dynamics 365 Finance + Operations (on-premises)](../../dev-itpro/deployment/onprem-compatibility.md) を参照してください。
 
 ### <a name="software-requirements-for-database-servers"></a>データベース サーバーのソフトウェア要件
 
@@ -288,9 +289,9 @@ SQL Server のハードウェア要件については、[SQL Server インスト
 
 2020 年 12 月に Internet Explorer 11 のサポートが廃止され、2021 年 8 月にブラウザーのサポートが終了します。 詳細については、[Internet Explorer 非推奨のお知らせ](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps) を参照してください。
 
-バージョン 10.0.20 から、Internet Explorer で Finance and Operations アプリにアクセスするユーザーにそのブラウザーに対するサポートの終了に関する通知が表示されます。 2021 年 8 月 17 日より前に、複数の Internet Explorer ユーザーに対して、Internet Explorer サポートが間もなく終了するという情報メッセージが表示されます。 その日以降、サポートが正式に終了したという警告が Internet Explorer ユーザーに表示されます。 組織は、Internet Explorer がユーザーにとって必須になっている以外は、これらの通知を継続することが推奨されます。そのケースでは、**Internet Explorer のサポート終了通知** 機能を無効にし、ユーザー ベースを Microsoft Edge または他の最新のブラウザーに移行する内部プロセスに依存することによりこれらの通知の非表示を選択できます。 
+バージョン 10.0.20 から、Internet Explorer で 財務と運用アプリにアクセスするユーザーに、そのブラウザに対するサポートの終了に関する通知が表示されます。 2021 年 8 月 17 日より前に、複数の Internet Explorer ユーザーに対して、Internet Explorer サポートが間もなく終了するという情報メッセージが表示されます。 その日以降、サポートが正式に終了したという警告が Internet Explorer ユーザーに表示されます。 組織は、Internet Explorer がユーザーにとって必須になっている以外は、これらの通知を継続することが推奨されます。そのケースでは、**Internet Explorer のサポート終了通知** 機能を無効にし、ユーザー ベースを Microsoft Edge または他の最新のブラウザーに移行する内部プロセスに依存することによりこれらの通知の非表示を選択できます。 
 
-Finance and Operations アプリ内の Internet Explorer の使用をブロックするための現在の目標は 2022 年 4 月です。 組織がそれ以前に Internet Explorer をブロックする必要があり、バージョン 10.0.21 以降を使用している場合は、Microsoft サポートに問い合わせてください。
+バージョン 10.0.25 から、Internet Explorer 11 の使用が財務と運用アプリでブロックされます。 組織がそれ以前に Internet Explorer をブロックする必要があり、バージョン 10.0.21 以降を使用している場合は、Microsoft サポートに問い合わせてください。 
 
 組織およびユーザーが今後の Internet Explorer のブロックに対応するために、2022 年 1 月以降、Internet Explorer ユーザーは Internet Explorer サポートが間もなくブロックされることを示す無視できないエラー メッセージを受信します。 このエラー メッセージは **Internet Explorer サポート終了通知** により制御 **されません**。 このメッセージを組織に対して非表示にする必要がある場合、顧客は Microsoft サポートに問い合わせる必要があります。
 

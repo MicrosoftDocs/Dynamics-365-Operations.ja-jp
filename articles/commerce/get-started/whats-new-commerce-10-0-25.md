@@ -1,8 +1,8 @@
 ---
-title: Dynamics 365 Commerce 10.0.25 の機能のプレビュー (2022 月 4 月)
+title: Dynamics 365 Commerce 10.0.25 (2022 年 4 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.25 の新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 01/31/2021
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 5ef59deaef2394ed9352c1f942a6909c0d670e3a
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: c9de07ef4ea906009fcce092b4848b15bb193cb0
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087651"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388430"
 ---
-# <a name="preview-features-in-dynamics-365-commerce-10025-april-2022"></a>Dynamics 365 Commerce 10.0.25 の機能のプレビュー (2022 月 4 月)
+# <a name="whats-new-or-changed-in-dynamics-365-commerce-10025-april-2022"></a>Dynamics 365 Commerce 10.0.25 (2022 年 4 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,6 +46,7 @@ ms.locfileid: "8087651"
 | グローバリゼーション | [POS からの直接会計統合](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos) | [コマース チャネルの会計統合の概要](../localizations/fiscal-integration-for-retail-channel.md) | 開発者のオプトイン| 
 | グローバリゼーション | [拡張会計コネクタ構成](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration) | [コマース チャネルの会計統合の概要](../localizations/fiscal-integration-for-retail-channel.md) | 開発者のオプトイン| 
 | グローバリゼーション | インドの QR コードの参照を更新 | [インド向け QR コードの生成とレシートへの印刷](../localizations/ind-generate-qr-code-print-receipt.md) | 開発者のオプトイン|
+| POS  | [POS 在庫操作での追加フィルター オプションのサポート](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/additional-filter-options-pos-inventory-operations) |  この機能により、POS 在庫操作間で一般に要求される追加フィルター オプションがサポートされます。これにより、不必要な拡張機能が削除され、店舗在庫操作の効率が大幅に向上します。 | 機能管理<p>*POS 在庫操作の追加のフィルター オプション* |
 |明細書 |  明細書転記機能の改良  | [明細書転記機能の改良](../statement-posting-EOD.md) | コマース パラメーター |
 
 

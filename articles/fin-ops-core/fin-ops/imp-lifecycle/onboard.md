@@ -2,7 +2,7 @@
 title: 実装プロジェクトの研修
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を使用してプロジェクトをオンボードする方法を説明します。
 author: ClaudiaBetz-Haubold
-ms.date: 01/26/2022
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 230a5bcf373ae08ad1659df0695170a00b9ff67b
-ms.sourcegitcommit: 378c9340176956862687ae8d55c636486e3105d3
+ms.openlocfilehash: 5e3c09b33e98ed2c0bae26074b6778f7fe1d49a4
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "8044475"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105451"
 ---
 # <a name="onboard-an-implementation-project"></a>実装プロジェクトの研修
 
@@ -34,7 +34,7 @@ ms.locfileid: "8044475"
 2. テナント管理者の資格情報を使用してログインします。
 3. **請求 > 製品 & サービス** に移動して、配置するアプリケーションに対して有効なサブスクリプションがあることを確認します。 
    > [!NOTE]
-   > 有効なサブスクリプションが表示されない場合は、ライセンス パートナーに問い合わせて、サブスクリプション トランザクションの状態を確認してください。 適切な Azure AD テナントのためにサブスクリプションが購入されたことを確認することは重要です。  既定では、すべての Microsoft オンライン サービスが同じ Azure AD テナント上で実行されている必要があります。 ライセンスの遅延の最も頻繁な原因は、サブスクリプションが誤った Azure AD テナントに配置されることです。 
+   > 有効なサブスクリプションが表示されない場合は、ライセンス パートナーに問い合わせて、サブスクリプション トランザクションの状態を確認してください。 適切な Azure AD テナントのためにサブスクリプションが購入されたことを確認することは重要です。  既定では、すべての Microsoft オンライン サービスが同じ Azure AD テナント上で実行されている必要があります。 オンボードの遅延の最も頻繁な原因は、サブスクリプションが誤った Azure AD テナントに配置されることです。 
 4. 問題のサブスクリプションが有効と表示されている場合は、LCS にサインインして実装のプロジェクト作成フローをトリガーすることにより、次のステップに進むことができます。
 5. 別のプライベートブラウザータブを開き、[Lifecycle Services](https://lcs.dynamics.com)に移動します。 現在のテナント管理者の資格情報を使用してアクセスするには、**ログイン** を選択します。
    > [!NOTE]

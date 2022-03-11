@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: d17095ef2aa6acd1cd1aac2a5ef9c5dea6542cac89ab5df97eaf18bf4276aade
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6263fc1a06f3733ae312674f75538403fae65ba
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718515"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323860"
 ---
 # <a name="implement-a-custom-destination-for-generated-documents"></a>生成されるドキュメントに対するカスタム 送信先の実装
 
 [!include[banner](../includes/banner.md)]
 
-[電子申告 (ER)](general-electronic-reporting.md) フレームワークのアプリケーション プログラミング インターフェイス (API) により、ER [形式](general-electronic-reporting.md#FormatComponentOutbound) で生成されたドキュメントを格納する ER 送信先のリストを[拡張](er-apis-app10-0-19.md#er-api-extend-destination) することができます。 このトピックには、カスタマイズされた ER 送信先を実装するために完了する必要のある主要なタスクに関する概要が含まれます。
+[電子申告 (ER)](general-electronic-reporting.md) フレームワークのアプリケーション プログラミング インターフェイス (API) により、ER 形式で生成されるドキュメントを格納する ER 送信先のリストを[拡張](er-apis-app10-0-19.md#er-api-extend-destination) できます。 このトピックには、カスタマイズされた ER 送信先を実装するために完了する必要のある主要なタスクに関する概要が含まれます。
 
 ## <a name="prerequisites"></a>必要条件
 

@@ -2,7 +2,7 @@
 title: データベースのエクスポート
 description: このトピックでは、Finance and Operations のデータベースをエクスポートする方法について説明します。
 author: LaneSwenka
-ms.date: 09/23/2021
+ms.date: 02/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: c5e794baaca80b4e5b591f36a6ba0fe72a51e861
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 35efffc9770be6752fef3b0b287494081c46e00f
+ms.sourcegitcommit: 3b0eead55f6d7a61cc269d44cd63fe69218c4c22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7547869"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "8325132"
 ---
 # <a name="export-a-database"></a>データベースのエクスポート
 
@@ -75,6 +75,7 @@ GO
 * **PrintMgmtSettings** と **PrintMgmtDocInstance** テーブルの印刷管理設定。
 * **SysServerConfig**、**SysServerSessions**、**SysCorpNetPrinters**、**SysClientSessions**、 **BatchServerConfig**、および **BatchServerGroup** テーブル内の環境固有のレコード。
 * **DocuValue** テーブル内のドキュメント添付ファイル。 これらの添付ファイルには、ソース環境で上書きされたすべての Microsoft Office テンプレートが含まれます。
+* **DatabaseLog** テーブルのデータベース ログ履歴。
 * 管理者以外のすべてのユーザーは **無効** のステータスに設定されます。
 * すべてのバッチ ジョブは、 **保留** 状態に設定されます。
 * すべてのユーザーのパーティション値は "初期" パーティション レコード ID にリセットされます。

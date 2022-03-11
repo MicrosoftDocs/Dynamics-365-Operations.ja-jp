@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 993edccd619538cf5ce5255f2a949068d4ac8164
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: df4048385ff309bcb45586d8d5059def12e8d846
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075765"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384348"
 ---
 # <a name="preview-of-dynamics-365-human-resources-10025-april-2022"></a>Dynamics 365 Human Resources 10.0.25 (2022 年 4 月) のプレビュー
 
@@ -31,7 +31,7 @@ ms.locfileid: "8075765"
 - **リリースの一般提供 (自己更新)**: 2022 年 3 月
 - **リリースの一般提供 (自動更新)**: 2022 年 4 月
 
-10.0.25 リリースでは、インフラストラクチャ マージの最初のサイクルが搭載されています。 インフラストラクチャの統合では、Microsoft Dynamics 365 Human Resources は Finance and Operations のインフラストラクチャに統合されます。 しかし、 Dynamics 365 Finance や Dynamics 365 Supply Chain Management のように、独立したアプリケーションとしてのライセンスは継続されます。 インフラストラクチャ マージの詳細については、[Dynamics 365 Human Resources インフラストラクチャ マージ FAQ](/human-resources/hr-infrastructure-merge-faq.md)を参照してください
+10.0.25 リリースでは、インフラストラクチャ マージの最初のサイクルが搭載されています。 インフラストラクチャの統合では、Microsoft Dynamics 365 Human Resources は Finance and Operations のインフラストラクチャに統合されます。 しかし、 Dynamics 365 Finance や Dynamics 365 Supply Chain Management のように、独立したアプリケーションとしてのライセンスは継続されます。 インフラストラクチャ マージの詳細については、 [Dynamics 365 Human Resources インフラストラクチャ マージ FAQ](../../human-resources/hr-infrastructure-merge-faq.md) を参照してください。
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
@@ -39,14 +39,14 @@ ms.locfileid: "8075765"
 
    | 機能名 | 概要 | リリース状態 |
    |--------------|----------|----------------|
-   | 勤続年数の計算 | 設定オプションを使用すると、**サービス年** の計算に使用する日付を選択できます。 詳細については、[Human Resources パラメーターのコンフィギュレーション](/human-resources/hr-setup-parameters.md#general)を参照してください。| 一般に入手可能 |
-   | ワークフロー エクスペリエンスの強化 | 新しく **送信** と **承認** ボタンが **アプリケーション** ページに追加されました。 詳細については、[組織および人事管理ワークフロー エクスペリエンスの強化](/dynamics365-release-plan/2020wave2/human-resources/organization-personnel-management-workflow-experience-enhancements)を参照してください。| 一般に入手可能 | 
-   | 業務評価を印刷する | パフォーマンス レビューは PDF 形式で印刷できます。 詳細については、[パフォーマンス管理](/human-resources/hr-develop-performance-management-overview.md)を参照してください。 | 一般に入手可能 | 
-   | **マネージャー セルフサービス** のカスタム リンク | **マネージャ セルフサービス** の **関連リンク** セクションに表示されるカスタム リンクを作成できます。 詳細については、[マネージャー セルフ サービスでカスタム リンクを作成する](/human-resources/hr-employee-manager-self-service-custom-links.md)を参照してください。 | 一般に入手可能 | 
-   | 会社間報酬ビュー | ユーザーは、会社を切り替えることなく、すべての法人を対象に **マネージャ セルフサービス** で報酬プランを閲覧することができます。 詳細については、[従業員およびマネージャー セルフサービスの概要](/human-resources/hr-employee-manager-self-service-overview.md#compensation-tab) を参照してください。 | 一般に入手可能 | 
-   | 職務 \*&dagger; ごとに複数の報酬レベルを構成する | ジョブが複数の報酬レベルに対応しました。 詳細については、[個人ジョブ](/human-resources/hr-personnel-jobs.md)を参照してください。 | プレビュー | 
-   | タスク管理\* | オンボード、オフボード、切り替えプロセスのチェック リストやタスクを作成することができます。 詳細については、[タスク管理](/human-resources/hr-task-mgmt.md)を参照してください。 | プレビュー | 
-   | 合理化された従業員の入力 | この機能により、既存の **作業者r** ページに表示される最新のユーザー エクスペリエンスが提供されます。 詳細については、[合理化された従業員の入力](../../talent/streamlined-employee-entry.md)を参照してください | プレビュー | 
+   | 勤続年数の計算 | 設定オプションを使用すると、**サービス年** の計算に使用する日付を選択できます。 詳細については、[Human Resources パラメーターのコンフィギュレーション](../../human-resources/hr-setup-parameters.md#general)を参照してください。| 一般に入手可能 |
+   | ワークフロー エクスペリエンスの強化 | 新しく **送信** と **承認** ボタンが **アプリケーション** ページに追加されました。 詳細については、[ワークフロー システムの概要](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) を参照してください。| 一般に入手可能 | 
+   | 業務評価を印刷する | パフォーマンス レビューは PDF 形式で印刷できます。 詳細については、[パフォーマンス管理](../../human-resources/hr-develop-performance-management-overview.md)を参照してください。 | 一般に入手可能 | 
+   | **マネージャー セルフサービス** のカスタム リンク | **マネージャ セルフサービス** の **関連リンク** セクションに表示されるカスタム リンクを作成できます。 詳細については、[マネージャー セルフ サービスでカスタム リンクを作成する](../../human-resources/hr-employee-manager-self-service-custom-links.md)を参照してください。 | 一般に入手可能 | 
+   | 会社間報酬ビュー | ユーザーは、会社を切り替えることなく、すべての法人を対象に **マネージャ セルフサービス** で報酬プランを閲覧することができます。 詳細については、[従業員およびマネージャー セルフサービスの概要](../../human-resources/hr-employee-manager-self-service-overview.md#compensation-tab) を参照してください。 | 一般に入手可能 | 
+   | 職務 \*&dagger; ごとに複数の報酬レベルを構成する | ジョブが複数の報酬レベルに対応しました。 詳細については、[個人ジョブ](../../human-resources/hr-personnel-jobs.md)を参照してください。 | プレビュー | 
+   | タスク管理\* | オンボード、オフボード、切り替えプロセスのチェック リストやタスクを作成することができます。 詳細については、[タスク管理](../../human-resources/hr-task-mgmt.md)を参照してください。 | プレビュー | 
+   | 合理化された従業員の入力 | この機能により、既存の **作業者r** ページに表示される最新のユーザー エクスペリエンスが提供されます。 詳細については、[合理化された従業員の入力](../../talent/streamlined-employee-entry.md) を参照してください。 | プレビュー | 
   
 \* **人事管理ユーザー エクスペリエンス向上** 機能を使用する前に、この機能を有効にする必要があります。
 
@@ -57,12 +57,12 @@ ms.locfileid: "8075765"
 | 機能名 | 詳細 | 
 |--------------|----------| 
 | 雇用の削除 | 従業員の雇用を削除できます。 | 
-| ジョブ ファミリ | 類似する仕事をしていて、類似するトレーニング、スキル、知識、専門知識を必要とする仕事のグループを追跡することができます。 詳細については、[個人ジョブ](/human-resources/hr-personnel-jobs.md)を参照してください | 
-| 追加の雇用フィールド | **雇用カテゴリ**、**雇用タイプ**、**雇用ステータス** のフィールドが追加されました。 詳細については、[雇用カテゴリの設定](/human-resources/hr-benenfits-setup-employment-categories.md)を参照してください。| 
-| **雇用されていない作業者** ページ | ページには、雇用レコードのない労働者のリストが表示されています。 詳細については、「[雇用されていない作業者](/human-resources/hr-personnel-workers-without-employment.md)」を参照してください。| 
-| 職位分析コードのユーザーエクスペリエンス更新 | 法人ごとに職位分析コードを割り当てる際のユーザー エクスペリエンスが向上しました。 詳細については、[Human Resources 担当者](/human-resources/hr-personnel-positions.md) 参照してください。 | 
-| **個人管理** ワークスペースの住所変更 | この機能は、**人事管理パラメーター** ページに定義されているように、指定された日数の間に発生したすべての住所変更のカウントを提供します。 詳細については、[人事管理ワークスペース](/human-resources/hr-personnel-personnel-management-workspace#address-changes-tile)を参照してください。| 
-| **個人管理** ワークスペースの期限切れレコード | この機能では、証明書、身分証明書、検認、審査、テストなどの期限切れ、または期限が切れる予定のアイテムのリストを提供します。 詳細については、[人事管理ワークスペース](/human-resources/hr-personnel-personnel-management-workspace#expiring-records-tab)を参照してください。 | 
+| ジョブ ファミリ | 類似する仕事をしていて、類似するトレーニング、スキル、知識、専門知識を必要とする仕事のグループを追跡することができます。 詳細については、[個人ジョブ](../../human-resources/hr-personnel-jobs.md)を参照してください。 | 
+| 追加の雇用フィールド | **雇用カテゴリ**、**雇用タイプ**、**雇用ステータス** のフィールドが追加されました。 詳細については、[雇用カテゴリの設定](../../human-resources/hr-benefits-setup-employment-categories.md)を参照してください。| 
+| **雇用されていない作業者** ページ | ページには、雇用レコードのない労働者のリストが表示されています。 詳細については、「[雇用されていない作業者](../../human-resources/hr-personnel-workers-without-employment.md)」を参照してください。| 
+| 職位分析コードのユーザーエクスペリエンス更新 | 法人ごとに職位分析コードを割り当てる際のユーザー エクスペリエンスが向上しました。 詳細については、[Human Resources 担当者](../../human-resources/hr-personnel-positions.md) 参照してください。 | 
+| **個人管理** ワークスペースの住所変更 | この機能は、**人事管理パラメーター** ページに定義されているように、指定された日数の間に発生したすべての住所変更のカウントを提供します。 詳細については、[人事管理ワークスペース](../../human-resources/hr-personnel-personnel-management-workspace.md#address-changes-tile)を参照してください。| 
+| **個人管理** ワークスペースの期限切れレコード | この機能では、証明書、身分証明書、検認、審査、テストなどの期限切れ、または期限が切れる予定のアイテムのリストを提供します。 詳細については、[人事管理ワークスペース](../../human-resources/hr-personnel-personnel-management-workspace.md#expiring-records-tab)を参照してください。 | 
 | **職位階層の検証** ページ | 職位ライン階層での循環参照のチェックが行われます。 | 
 | 国固有の給与情報 | 作業者が雇用されている法人の国/地域に応じて、**作業者の雇用** ページに追加の給与計算フィールドが用意されています。 | 
 | コンプライアンス レポートの拡張機能 | 追加のレポート オプションは、EEO-1、Vets 4212、OSHA300a に対して使用できます。 | 

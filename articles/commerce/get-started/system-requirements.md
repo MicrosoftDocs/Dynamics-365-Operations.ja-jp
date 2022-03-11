@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce のクラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Dynamics 365 Commerce におけるクラウド配置のシステム要件を一覧表示します。
 author: jashanno
-ms.date: 08/23/2021
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a97064f2a4e3a1d3835144a4832e839a225dac56
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: a8a20841a39568684f8f13f397a0d5dc5e626a28
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414572"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370938"
 ---
 # <a name="system-requirements-for-cloud-deployments-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のクラウド配置のシステム要件
 
@@ -193,6 +193,17 @@ Commerce Scale Unit (自己ホスト) に関して、レガシ POS システム�
 - 2 GB の RAM (ただし 4 GB の RAM を推奨)。
 - コアごとの CPU 最大処理スピード 1.6 GHz (最少 2 コア)
 - 少なくとも 15 GB の空き領域 (チャネル データベースが大量の領域を必要とする場合があります)。 サイズは数テラバイトでも指定できます)。
+
+## <a name="recommended-network-exceptions"></a>推奨されるネットワーク例外
+
+多くの場合 (特に企業環境) 、ネットワーク関連のセキュリティに関して、特定の例外に注意する必要があります。 これらのセキュリティ重視のネットワークでは、ネットワーク関連の許可リストに少なくとも次の例外を追加することをお勧めします:
+
+- \*.static.akamaitechnologies.com
+- \*.azure.com
+- \*.dynamics.com
+- \*.microsoft.com
+- \*.visualstudio.com
+- \*.windows.net
 
 ## <a name="requirements-for-development-on-local-vms"></a>ローカル VM の開発要件
 

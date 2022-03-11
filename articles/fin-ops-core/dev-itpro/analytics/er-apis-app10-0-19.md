@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 005b8f517a0b234a1fb502414a713dcd099127fd4711691469cd74f0f19c086a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d65e29aea003e61ecb26f51b939235ddd74df873
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730623"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323993"
 ---
 # <a name="electronic-reporting-framework-api-changes-for-application-update-10019"></a>Application update 10.0.19 での電子申告フレームワーク API の変更
 
@@ -98,7 +98,7 @@ public interface ERIFormatFileDestinationSettings extends SysPackable
 }
 ```
 
-このインターフェイスを使用すると、ER の接続先ダイアログ ボックスでカスタム接続先のパラメータを提供し、設計時に設定できます。 その後、構成された接続先を実行時に使用して、生成された[送信](general-electronic-reporting.md#FormatComponentOutbound) ドキュメントを格納できます。
+このインターフェイスを使用すると、ER の接続先ダイアログ ボックスでカスタム接続先のパラメータを提供し、設計時に設定できます。 その後、構成された接続先を実行時に使用して、生成された送信 ドキュメントを格納できます。
 
 このインターフェイスの詳細については、[生成されるドキュメントのカスタム送信先を実装する](er-custom-file-destination.md) の例を完了してください。
 

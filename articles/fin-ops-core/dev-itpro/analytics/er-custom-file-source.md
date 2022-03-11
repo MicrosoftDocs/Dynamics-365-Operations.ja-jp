@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ef4702749c333e8258ee17bfff534c67570de04d
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: a0205ca5ffa71c3bb914a2dda6e5d9677a424aea
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913532"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324022"
 ---
 # <a name="implement-a-custom-er-source-of-inbound-documents"></a>受信したドキュメントのカスタム ER ソースを実装する
 
 [!include[banner](../includes/banner.md)]
 
-[電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用して受信ドキュメントからデータをインポートするには、インポートをサポートする ER [形式](general-electronic-reporting.md#FormatComponentInbound) を構成し、その形式をデータ ソースとして使用する **宛先** タイプのモデル マッピングを実行します。 データをインポートするには、インポートするドキュメントに移動し、SharePoint フォルダーを、無人モードでインポート可能な受信ドキュメントの標準 ER ソースとして使用します。 このプロセスの詳細については、[SharePoint からのデータ インポートを構成する](er-configure-data-import-sharepoint.md) を参照してください。
+[電子申告 (ER)](general-electronic-reporting.md) フレームワークを使用して受信ドキュメントからデータをインポートするには、インポートをサポートする ER 形式を構成し、データ ソースとしてその形式を使用する **宛先** タイプのモデル マッピングを実行します。 データをインポートするには、インポートするドキュメントに移動し、SharePoint フォルダーを、無人モードでインポート可能な受信ドキュメントの標準 ER ソースとして使用します。 このプロセスの詳細については、[SharePoint からのデータ インポートを構成する](er-configure-data-import-sharepoint.md) を参照してください。
 
 ER フレームワークのアプリケーション・プログラミング・インターフェース (API) では、ER フォーマットでデータ インポート用に [解析](er-parse-incoming-documents.md) される受信ドキュメントにアクセスするための ER ソースのリストを [拡張](er-apis-app10-0-23.md#er-api-extend-file-source) できるようになりました。 したがって、ER の構成を使用して、カスタム ソースに保存されているドキュメントからデータのインポートを実行できます。
 
