@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc8e8ec224208990563e7c0f5d354bb13bb45fbcd35821e7f980b6cfb2c5a379
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a4768ee6ddbaba8ae5bab5e2f9f7df9239efeb90
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777267"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358292"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>請求管理グループを使用した AP システムへの請求書データの入力
 
@@ -58,7 +58,7 @@ ms.locfileid: "6777267"
 6. **ビューの変更** を選択します。
 7. **グリッド ビュー** を選択します。
 8. **投稿** を選択します。
-9. フォームを閉じます。
+9. ページを閉じます。
 10. ナビゲーション ウィンドウで、**モジュール > 買掛金勘定 > 仕入先 > 仕入先** の順に移動します。
 11. 発注書に記載されていた仕入先を選択します。 たとえば、仕入先 **1001** を選択します。
 12. アクション ウィンドウで、**仕入先** を選択します。

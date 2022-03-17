@@ -2,18 +2,18 @@
 title: Commerce 分析 (プレビュー)
 description: このトピックでは、Microsoft Dynamics 365 Commerce で分析機能をインストールして使用する方法について説明します。
 author: AamirAllaq
-ms.date: 11/23/2021
+ms.date: 02/24/2022
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 8cfe2af756315b5be3eb22d99376a96166fffc52
-ms.sourcegitcommit: f9fca3d55b47e615e5ef64669dab184e057ec234
+ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7862776"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349746"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce 分析 (プレビュー)
 
@@ -29,7 +29,6 @@ ms.locfileid: "7862776"
 ![Commerce 分析 (プレビュー) Payments](media/CommerceAnalytics_Payments.png)
 ![Commerce 分析 (プレビュー) Web アクティビティ](media/CommerceAnalytics_WebActivity.png)
 
-
 ## <a name="commerce-analytics-preview-system-architecture"></a>Commerce 分析 (プレビュー) システム アーキテクチャ
 
 ### <a name="key-components"></a>主要コンポーネント
@@ -37,7 +36,7 @@ ms.locfileid: "7862776"
 Commerce 分析 (プレビュー) は、次の主要なコンポーネントで構成されています:
 
 - すぐに使用できる対話型 Power BI レポート
-- Azure Synapse 分析の SQL ビュー
+- Azure Synapse Analytics の SQL ビュー
 - Azure Data Lake 内のエンティティとオントロジー データ
 - Data Lake の生データ
 
@@ -70,11 +69,11 @@ eコマースのWeb 活動のデータは、データ レイクに直接送信�
 
 #### <a name="step-4-querying"></a>手順4: クエリ
 
-Azure Synapse 分析は、Transact-SQL (T-SQL) インターフェースを介してデータ レイクのデータを照会するために使用します。 このインターフェイスには SQL ビューが含まれます。 SQL ビューを使用すると、T-SQL クライアント (アドホック分析用) を介して直接、または Power BI などの可視化ツールを介して、データ レイク内のデータを連携して照会することができます。
+Azure Synapse Analytics は、Transact-SQL (T-SQL) インターフェースを介して Data Lake のデータを照会するために使用します。 このインターフェイスには SQL ビューが含まれます。 SQL ビューを使用すると、T-SQL クライアント (アドホック分析用) を介して直接、または Power BI などの可視化ツールを介して、データ レイク内のデータを連携して照会することができます。
 
 #### <a name="step-5-modeling-and-serving"></a>手順 5: モデリングとサービス
 
-Azure Synapse 分析で照会されたデータは、Power BI のセマンティック モデルに転送されます。 データの種類に応じて、定期的にメモリ内 Power BI にインポートするか、実行時に直接クエリするかを選択します。
+Azure Synapse Analytics で照会されたデータは、Power BI のセマンティック モデルに転送されます。 データの種類に応じて、定期的にメモリ内 Power BI にインポートするか、実行時に直接クエリするかを選択します。
 
 最後に、データは Power BI のビジュアルで表示され、ユーザーはそれを確認したり、操作したりすることができます。
 
@@ -98,7 +97,7 @@ Commerce 分析のテンプレート アプリには、以下の主要なレポ�
 12. [Web 活動](#WebActivityPage)
 13. [Web アクティビティ - トップ レベル のフィルター](#WebActivityTopLevelFilters)
 
-####  <a name="top-level-filters"></a><a name="TopLevelFilters"></a> トップ レベル フィルター
+#### <a name="top-level-filters"></a><a name="TopLevelFilters"></a> トップ レベル フィルター
 
 - 日付の設定
 
@@ -122,13 +121,13 @@ Commerce 分析のテンプレート アプリには、以下の主要なレポ�
     - カテゴリ階層
     - カテゴリ
 
-####  <a name="products"></a><a name="ProductsPage"></a> 製品
+#### <a name="products"></a><a name="ProductsPage"></a> 製品
 
 - 営業
 - Margin
 - 返品
 
-####  <a name="customers"></a><a name="CustomersPage"></a>顧客
+#### <a name="customers"></a><a name="CustomersPage"></a>顧客
 
 - 営業
 - Margin
@@ -313,7 +312,7 @@ eコマース サイトの匿名の訪問者は、ユーザーが使用してい
 
 #### <a name="impressions"></a>インプレッション
 
-インプレッションとは、eコマースの訪問者が商品のビジュアルを一度だけ表示することです。 たとえば、eコマースの訪問者がeコマース サイトのホームページに移動し、**売上げ上位** のリスト モジュールでヨガマットの商品を見たとします。 その後、訪問者は同じヨガマット製品を **あなたへのおすすめ** のリストモジュールで閲覧します。 この例には、2つの製品の変更方法を含みます。 
+インプレッションとは、eコマースの訪問者が商品のビジュアルを一度だけ表示することです。 たとえば、eコマースの訪問者がeコマース サイトのホームページに移動し、**売上げ上位** のリスト モジュールでヨガマットの商品を見たとします。 その後、訪問者は同じヨガマット製品を **あなたへのおすすめ** のリストモジュールで閲覧します。 この例には、2つの製品の変更方法を含みます。
 
 現在、インプレッションは以下のサーフェスで追跡されます:
 
@@ -353,28 +352,56 @@ eコマース サイトの匿名の訪問者は、ユーザーが使用してい
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a>Commerce分析の有効化と構成 (プレビュー)
 
-Commerce分析 (プレビュー) をインストールするには、Azure サブスクリプションのリソースを作成するアクセス許可が必要です。 LCSに にアドインをインストールする権限も必要となります。 次に手順の概要を以下に示します:
+Commerce分析 (プレビュー) をインストールするには、Azure サブスクリプションのリソースを作成するアクセス許可が必要です。 LCSに にアドインをインストールする権限も必要となります。 
 
-1. [Commerce 分析 (プレビュー) のプレビュー サブリンク フォームを送信する](#joinPreview)。
-2. [Data Lake へのエクスポートの有効化と構成をします](#enableExportToDataLake)。
-3. [Commerce analytics (プレビュー) の有効化と構成をします](#enableCommerceAnalyticsAddin)。
-4. [ストレージ アカウント で使用する Shared Access Signature (SAS) トークンを生成します](#getSASToken)。
-5. [Azure Synapse ビュー用の展開クリプトをダウンロードします](#downloadSynapseDeploymentScripts)。
-6. [Azure Synapse workspace をインストールして構成します](#configureAzureSynapse)。
-7. [Power BI テンプレート アプリをインストールします](#powerbi).
+Commerce 分析 (プレビュー) を有効にして設定するには、次の手順に従います。
 
-### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a>Commerce 分析 (プレビュー) 用の取り込みフォームを送信する
+1. [Data Lake へのエクスポート アドインの有効化と構成](#enableExportToDataLake)。
+1. [Azure Synapse workspace をインストールして構成します](#configureAzureSynapse)。
+1. [キー コンテナーにシークレットを追加する](#addSecrets)。
+1. [Commerce analytics (プレビュー) の有効化と構成をします](#enableCommerceAnalyticsAddin)。
+1. [Power BI テンプレート アプリをインストールします](#powerbi).
 
-[Commerce 分析 (プレビュー) のプレビュー サブリンク フォーム](https://forms.office.com/r/vW5VLJGXZ2)を送信します。 フォームが処理されるまでに 3 営業日ほど要する場合があります。 処理の完了後は、フォームに入力されたメールアドレスに確認メールが送信されます。
+### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a>Data Lake へのエクスポート アドインの有効化と構成
 
-### <a name="enable-and-configure-export-to-data-lake"></a><a name="enableExportToDataLake"></a>Data Lake へのエクスポートの有効化と構成
+> [!IMPORTANT]
+> Data Lake アドインにエクスポートを設定する場合は、Data Lake アドインにエクスポート設定ページの **リアルタイム データの変更** チェック ボックスをオフにして、リアルタイムのデータ変更を選択解除します。 **リアルタイム データ変更** 機能はプレビュー 機能であり、現在 Commerce 分析でサポートされていない機能です。 この機能を有効にすると、Commerce 分析は Data Lake にあるデータを処理できなくなり、Power BI レポートのほとんどにデータが表示されなくなります。
 
-Commerce分析 (プレビュー) は、[データ入力にエクスポート] 機能に依存し、Commerce HQ のデータを Data Lake にエクスポートして、データの鮮度を保ちます。 Commerce 分析 (プレビュー) を構成する前に、[Azure Data へのエクスポートを構成する](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) に記載手順に従って Data Lake へのエクスポートの有効化と構成をします。
+Commerce 分析 (プレビュー) は、データ入力にエクスポート機能に依存し、Commerce 本部のデータを Data Lake にエクスポートして、データの鮮度を保ちます。 Commerce 分析 (プレビュー) を構成する前に、[Azure Data へのエクスポートを構成する](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) に記載手順に従って Data Lake へのエクスポートの有効化と構成をします。
 
-Data Lake へのエクスポートを設定している間に、以下の情報を後で入力する必要があるので、メモしておいてください:
+Data Lake アドインへのエクスポートを設定している間に、以下の情報を後で入力する必要があるので、メモしておいてください:
 
-- <a name="keyVault"></a>キー コンテナーのドメイン ネーム システム (DNS) の名前、アプリケーション ID とアプリケーション シークレットを格納するシークレット名。 詳細については、[キー コンテナーにシークレットを追加する](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#addsecrets) を参照してください。
-- <a name="storageAccount"></a>Data Lake インスタンスのストレージ アカウントの名前。 詳細については、[サブスクリプションに Data Lake ストレージ (Gen2) アカウントを作成する](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createsubscription)を参照してください。
+- <a name="keyVault"></a>提供した鍵保管庫のドメイン ネーム システム (DNS) 名。
+- 指定した シークレット名で、アプリケーション ID とアプリケーション シークレットを含むもの。 詳細については、[キー コンテナーにシークレットを追加する](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#addsecrets) を参照してください。
+
+### <a name="install-and-configure-an-azure-synapse-workspace"></a><a name="configureAzureSynapse"></a>Azure Synapse workspace のインストールと構成
+
+Commerce 分析 (プレビュー) では、Azure Synapse workspace に Synapse SQL on-demand をプロビジョニングする必要があります。 Azure Synapse workspace のインストールと構成は、以下の手順で行います。
+
+1. Azure サブスクリプションに Azure Synapse workspace をインストールします。 詳細については、[クイックスタート: シナプス ワークスペースを作成する](/azure/synapse-analytics/quickstart-create-workspace)を参照してください。
+1. <a name="serverlessep"></a>ワークスペースのプロビジョニングが完了した後は、リソースの概要ページを開き、**Serverless SQL エンドポイント** の値をメモしておきます。 次のセクションで、この値をキー コンテナーに格納する必要があります。
+1. 概要ページで、**オープンな構文スタジオ** のリンクを選択 して、ワークスペースの Azure Synapse Studio を開きます。
+1. 左側のメニューで、**管理** を選択します。 メニュー名を確認するには、左メニューの展開リンクを選択する必要がある場合があります。
+1. **セキュリティ グループ** で、**アクセス制御** を選択します。 
+1. **追加** を選択します。
+1. **ロールの 割り当ての追加** ウィンドウで、次の表に示すオプションを設定します。
+
+    | オプション | 値 |
+    |--------|-------|
+    | スコープ | **ワークスペース** を選択します。 |
+    | ロール | **Synapse SQL の管理** を選択します。|
+    | ユーザーの選択 | [Data Lake にエクスポート アドインのインストール時に作成した](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createapplication)アプリケーションの名前を検索します。 アプリケーションが検索結果として表示されたら、それを選択します。 **選択されたユーザー、グループ、またはサービスプリンシパル** のセクションにアプリケーションが表示されます。 |
+
+1. **適用** を選択し、ロールの割り当てを完了します。 アプリケーションには、Synapse SQL 管理者特権が付与されます。 したがって、Commerce 分析 (プレビュー) LCS アドインの構成中に必要なビューが作成される可能性があります。
+
+### <a name="add-secrets-to-the-key-vault"></a><a name="addSecrets"></a>キー コンテナーにシークレットを追加する
+
+Data Lake へのエクスポート アドインの構成時に使用したのと同じ [キー コンテナー](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createkeyvault) に、次の表に示すシークレットを追加する必要があります。 各シークレットには、シークレット名と指定された値を指定する必要があります。
+
+|  推奨されたシークレット名 | シークレットの値 | シークレット値の例 |
+|---------|---------|---------|
+| synapse-sql-server | [Azure Synapse workspace を構成する](#serverlessep)際に注目したサーバーレス SQL エンドポイントの値です。 | `test-ondemand.sql.azuresynapse.net` |
+| <a name="roUser"></a>readonly-sql-pwd | SQL 読み取り専用ユーザーに設定するパスワードです。 Power BI レポートは、このパスワードを使用してサーバーレス SQL に接続します。 パスワードを設定するには、組織のパスワード ポリシーに従います。 | |
 
 ### <a name="enable-and-configure-the-commerce-analytics-preview-add-in"></a><a name="enableCommerceAnalyticsAddin"></a>Commerce 分析 (プレビュー) アドインの有効化と構成
 
@@ -385,147 +412,55 @@ Commerce 分析 (プレビュー) アドインをインストールして構成�
 1. [LCS](https://lcs.dynamics.com/) にログインし、ご利用の環境に移動します。
 2. **環境アドイン** タブの、**環境** ページで、**新しいアドインのインストール** を選択します。
 3. ダイアログ ボックスで、**Commerce 分析 (プレビュー)** を選択します。
-
-    **Commerce分析 (プレビュー)**  が表示されていない場合は、インサイダープログラムに参加していることを確認してください。
-
 4. **アドインの設定** ダイアログ ボックスで、次の情報を入力します。
 
     | 情報 | ソース | サンプル値 |
     |---|---|---|
-    | ご利用の環境の Azure AD テナント ID | [Azure ポータル](https://portal.azure.com/) にログインし、**Azure Active Directory** サービスを開きます。 続いて **プロパティ** ページを開き、**ディレクトリ ID** フィールドの値をコピーします。 | 72f988bf-0000-0000-00000-2d7cd011db47 |
-    | キー コンテナーの DNS 名 | キー コンテナーの [DNS 名](#keyVault) を入力します。 この値は、前述のセクションでメモするようにご案内したものです。 | `https://contosod365datafeedpoc.vault.azure.net/` |
-    | アプリケーション ID を含むシークレット | [アプリケーション ID を格納するシークレット名](#keyVault)を入力します。 この値は、前述のセクションでメモするようにご案内したものです。 | アプリ ID |
-    | アプリケーションのシークレットを含むシークレット | [アプリケーションのシークレットを格納するシークレット名](#keyVault)を入力します。 この値は、前述のセクションでメモするようにご案内したものです。 | アプリのシークレット |
+    | Azure Active Directory (Azure AD) テナント ID | [Azure ポータル](https://portal.azure.com/) にログインし、**Azure Active Directory** サービスを開きます。 続いて **プロパティ** ページを開き、**テナント ID** フィールドの値をコピーします。 | `72f988bf-0000-0000-00000-2d7cd011db47` |
+    | Azure キー コンテナーの DNS 名 | キー コンテナーの DNS 名 を入力します。 この値は、[Data Lake へのエクスポート アドイン](#keyVault)を設定する際にメモしておく必要があります。 | `https://contosod365datafeedpoc.vault.azure.net/` |
+    | アプリケーション ID を含むシークレット名 | アプリケーション ID を格納するシークレット名を入力します。 この値は、[Data Lake へのエクスポート アドイン](#keyVault)を設定する際にメモしておく必要があります。 | `app-id` |
+    | アプリケーションのシークレットを含むシークレット名 | アプリケーションのシークレットを格納するシークレット名を入力します。 この値は、[Data Lake へのエクスポート アドイン](#keyVault)を設定する際にメモしておく必要があります。 | `app-secret` |
+    | Azure Synapse のサーバーレス SQL エンドポイントを含むシークレット名 | サーバーレス SQL のエンド ポイントを格納するシークレット名を入力します。 [キー値ーにシークレットを追加](#addSecrets)している間に、シークレットを作成する必要があります。 | `synapse-sql-server` |
+    | Azure Synapse の SQL 読み取り専用ユーザーに設定するパスワードが含まれるシークレット名 | サーバーレス SQL 読み取り専用ユーザーに設定するパスワードを格納するファイル名を入力します。 このユーザーはユーザー用に作成され、Power BI レポートではサーバーレス SQL サーバーに接続するために使用される必要があります。 [キー値ーにシークレットを追加](#addSecrets)している間に、シークレットを作成する必要があります。 | `readonly-sql-pwd` |
 
-5. チェック ボックスをオンにしてサービス条件を承認し、**インストール** を選択します。
+1. チェック ボックスをオンにしてサービス条件を承認し、**インストール** を選択します。
 
     システムは、Commerce 分析 (プレビュー) アドインを環境に合わせてインストールし、構成します。 このプロセスには数分かかる場合があります。 完了後は、 **Commerce 分析 (プレビュー)** が、**環境** ページに表示され、状態が **インストール済** に変化します。
-
-### <a name="generate-a-sas-token-for-your-storage-account"></a><a name="getSASToken"></a>ストレージ アカウントの SAS トークンを生成する
-
-SAS トークンは、外部のエンティティがストレージ アカウントにアクセスし、有限の期間、特定の権限を持つことを可能にします。 Azure Synapse は、SAS トークンを使用して Data Lake の基礎データにアクセスします。
-
-> [!NOTE]
-> Commerce分析 (プレビュー) には既知の制限があるため、SAS トークンの期限が切れると、Azure Synapse インスタンスはデータ レイクへのアクセスを失います。 そのため、SAS トークンを生成する際には、組織のセキュリティ ポリシーで許容される最大の有効期限を設定する必要があります。
-
-SAS トークンを生成する手順は、次の手順に従います。
-
-1. Azure ポータルで、Data Lake へのエクスポートの設定時に作成した[ストレージ アカウント](#storageAccount)にアクセスします。
-2. 左側のペインで、ストレージ アカウント配下の **共有アクセス署名** を選択します。
-3. **SAS オプション** ページで、次のフィールドを設定します:
-
-    | フィールド | 値 |
-    |---|---|
-    | 許可されるサービス | **ブロブ** を選択します。 |
-    | 許可されたリソースの種類 | **サービス**、**コンテナー**、**オブジェクト** を選択します。 |
-    | 許可されるアクセス権 | **読み取り**、**書き込み**、**削除**、**リスト**、**追加**、**作成** を選択します。 |
-    | ブログのバージョン管理へのアクセス許可 | **バージョンの削除を有効にする** を選択します。 |
-    | 開始日時と有効期限日時 | SAS トークンの開始日、終了日、時間を必要に応じて設定します。 |
-    | 許可される IP アドレス | このフィールドは空白のままにします。 |
-    | 許可されるプロトコル | **HTTPS のみ** を選択します。 |
-    | 優先されるルーティング層 | **基本 (既定)** を選択します。 |
-    | 署名キー | 必要に応じて、**key1** または **key2** を選択します。 |
-
-4. **SAS と接続文字列の生成** を選択します 。
-5. **SAS トークン** フィールドの値をコピーして、メモ帳などのテキスト エディターに貼り付けます。
-
-### <a name="download-the-deployment-scripts-for-azure-synapse-views"></a><a name="downloadSynapseDeploymentScripts"></a>Azure Synapse ビューで使用する展開クリプトのダウンロード
-
-Azure Synapse workspace に必要なビューを作成して公開するには、一連のスクリプトを実行する必要があります。 以下の手順でスクリプトをダウンロードしてください。
-
-1. GitHub の、[microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) リポジトリ (repo) にアクセスします。
-2. スクリプトをローカル コンピュータにダウンロードするには、リポジトリを複製するか、zip ファイルとしてダウンロードします。
-
-### <a name="install-and-configure-an-azure-synapse-workspace"></a><a name="configureAzureSynapse"></a>Azure Synapse workspace のインストールと構成
-
-Azure Synapse workspace のインストールと構成は、以下の手順で行います。
-
-1. Azure サブスクリプションに Azure Synapse workspace をインストールします。 詳細については、[クイックスタート: シナプス ワークスペースを作成する](/azure/synapse-analytics/quickstart-create-workspace)を参照してください。
-2. メモ帳などのテキスト エディタで、Dynamics365Commerce.Solutions リポジトリを複製、またはダウンロードしたローカルコンピュータのフォルダにある **SetupSynapse.sql** スクリプト ファイルを開きます。 このスクリプトは、/Pipeline/CommerceAnalyticsSynapse/ フォルダにあります。 このスクリプトの内容を、プレースホルダーのテキストを次の表の値に置き換えます。
-
-    | プレースホルダー テキスト | 置き換え値 |
-    |---|---|
-    | placeholder_storageaccount | Data Lake へのエクスポートを設定した際に作成した[ストレージ アカウント](#storageAccount)の名前です。 |
-    | <a name="phContainer"></a>プレースホルダーのコンテナー | LCS に 「Data Lake にエクスポートするアドイン」を正常にインストールした後に、Data Lake インスタンスに作成されるストレージコンテナの名前です。 コンテナ名を取得するには、Azure ポータルの Storage Explorer を使って、ストレージ アカウントを参照する必要があります。 |
-    | placeholder_sastoken | 生成した[SAS トークン](#getSASToken)です。 SAS トークンの値の先頭にあるクエスチョン マーク (**?**) は必ず削除してください。 |
-    | <a name="phUserPwd"></a>placeholder_password | 強力なパスワードです。 このパスワードはをメモしておいてください。 このパスワードは、スクリプトが作成する新しい **reportreadonlyuser** アカウントのパスワードとして設定されます。 **sqladminuser** のアカウントと同じパスワードを入力 **しないでください**。 |
-
-3. スクリプト ファイルの更新内容をコピーします。
-4. Azure ポータルで、新しい Azure Synapse workspace に移動します。 **概要** ページで、**Synapse Studio を開く** を選択します。
-5. Synapse Studioで **新規 \> SQL クリプト** を選択し、スクリプトファイルの内容を SQL スクリプト エディタに貼り付けます。
-6. **データベースを使用する** フィールドが **マスター** に設定されていることを確認してください。
-7. **実行** を選択し、スクリプトの実行終了を待機します。 スクリプトの実行に成功すると、Commerce分析用のデータベース、データ レイクにアクセスするための認証情報、および Power BI が Azure Synapse インスタンスへの接続に使用する読み取り専用のユーザーアカウントが作成されます。
-8. ローカルコンピュータで Windows PowerShell を管理者モードで開き、Dynamics365Commerce.Solutions のリポジトリを複製、またはダウンロードしたフォルダの配下にある /Pipeline/CommerceAnalyticsSynapse/ フォルダに移動します。
-9. 次のコマンドを実行して、Windows PowerShell の実行ポリシーを設定します。
-
-    ```powershell
-    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-    ```
-
-10. SQL Server PowerShell モジュールがまだインストールされていない場合は、以下のコマンドを実行してインストールしてください。
-
-    ```powershell
-    Install-Module sqlserver
-    ```
-
-    > [!NOTE]
-    > モジュールのインストール時に、NuGet プロバイダのインストールを促される場合があります。 この場合、**Y** を選択すると、NuGet のプロバイダーがインストールされます。 また、信頼されていないリポジトリからモジュールをインストールしていることを確認するプロンプトが表示される場合もあります。 この場合、**Y** を選択してインストールを続行します。 あるいは、 **Set-PSRepository** コマンドレットを実行して **PSGallery** リポジトリを信頼することもできます。
-
-11. 次のコマンドを実行して、Azure Synapse ビューを公開します。
-
-    ```powershell
-    .\PublishSynapseViews.ps1 -serverName SERVER_NAME -password PASSWORD -storageAccount STORAGE_ACCOUNT -containerName CONTAINER_NAME -datarootpath DATA_ROOT_PATH
-    ```
-
-    このコマンドを実行すると、次の表のようにプレースホルダーの値が置き換えられます
-
-    | プレースホルダー値 | 置き換え値 |
-    |---|---|
-    | SERVER_NAME | Azure Synapse サーバーレス SQL エンドポイントの名前です。 この値は、Azure ポータルの Azure Synapse workspace の **概要** ページから取得できます。 |
-    | PASSWORD | **sqladminuser** アカウントのパスワードです。 |
-    | STORAGE_ACCOUNT | Data Lake のストレージ アカウントの名前です。 |
-    | CONTAINER_NAME | Data Lake へのエクスポート機能で作成されたコンテナの名前です。 このコンテナは、手順 2 で [placeholder_container](#phContainer) 値として指定したコンテナと同じものです。 |
-    | DATA_ROOT_PATH | すべてのデータを含むコンテナ配下のフォルダ名です。 |
-
-    > [!NOTE]
-    > ストレージアカウント名、コンテナ名、データのルート パスは、Azure Storage ブラウザと Azure portal の Data Lake ストレージ アカウントを使って確認できます。
-
-12. スクリプトの実行終了を待機します。 スクリプトが正常に実行されると、Azure Synapse サーバーレス SQL インスタンスに SQL ビューが作成されます。
 
 ### <a name="install-the-power-bi-template-app"></a><a name="powerbi"></a>Power BI テンプレート アプリをインストールします
 
 Commerce 分析 (プレビュー) の Power BI テンプレート アプリのインストールには、以下の手順で行います:
 
 1. 組織のアカウント ID を使用して [Power BI ポータル](https://powerbi.microsoft.com/) にサインインします。
-2. [https://aka.ms/cdireport-installapp](https://aka.ms/cdireport-installapp) にアクセスして、Commerce 分析 (プレビュー) Power BI のテンプレート アプリをインストールします。 AppSource にリストされていない旨の警告が表示される場合があります。 **インストール** を選択します。
-3. 初めてこのアプリをインストールする場合は、手順 5 に進んでください。 以前にこのアプリをインストールしたことがある場合は、アプリをアップデートする以下のオプションが表示されます:
+1. [https://aka.ms/cdireport-installapp](https://aka.ms/cdireport-installapp) にアクセスして、Commerce 分析 (プレビュー) Power BI のテンプレート アプリをインストールします。 または、[Dynamics 365 Commerce 分析の AppSource ページ](https://appsource.microsoft.com/product/power-bi/dynamics-365-commerce.dydnamics-365-commerce-analytics) にアクセスし、**今すぐ取得** を選択します。
+1. 初めてこのアプリをインストールする場合は、手順 5 に進んでください。 以前にインストールしたことがある場合、アプリのアップデートには以下のオプションが適用されます:
 
     - **ワークスペースとアプリの更新** – 既存のテンプレート アプリを更新し、アプリのインスタンス名やアクセス許可の構成など、既存のアプリの設定を上書きします。
     - **アプリを更新せずにワークスペースのコンテンツのみを更新する** – 既存のテンプレート アプリをアップデートしても、既存のアプリの設定は保持されます。 *このオプションは、アプリのアップデートに推奨されるオプションです。*
     - **アプリの別のコピーを新しいワークスペースにインストールする** – 新しいワークスペースを作成し、その中に既存のテンプレート アプリのコピーを作成します。 既存のワークスペースはそのまま残します。
 
-4. アップデート方法を選択して、**インストール** を選択します。
-5. 左のペインで **Apps** を選択して、インストールしたアプリを開きます。
-6. **接続** を選択して、アプリとデータソースを接続します。 以前にアプリをインストールしたことがある場合は、黄色いメッセージ バーにある **データを接続する** リンクを選択します。
-7. 次のフィールドを設定します。
+1. アップデート方法を選択して、**インストール** を選択します。
+1. 左のペインで **Apps** を選択して、インストールしたアプリを開きます。
+1. **接続** を選択して、アプリとデータソースを接続します。 以前にアプリをインストールしたことがある場合は、黄色いメッセージ バーにある **データを接続する** リンクを選択します。
+1. 次のフィールドを設定します。
 
     | フィールド | 値 |
     |---|---|
-    | サーバー | 上記のセクションで作成した Azure Synapse サーバーレス SQL エンドポイントの名前を入力します。 この値は、Azure ポータルの Azure Synapse workspace の **概要** ページから取得できます。 |
+    | サーバー | [Azure Synapse workspace を作成した](#serverlessep)後にメモしておいたサーバーレス SQL のエンドポイントを入力します。 |
     | データベース | **CommerceAnalytics** と入力します。 |
     | 言語 | リストから値を選択します。 このフィールドは、ローカライズされた商品名やカテゴリー名に使用されます。 値は大文字と小文字を区別します。 |
     | 期間の設定 | リストから値を選択します。 選択された月数のデータが Power BI データセットに取り込まれます。 選択した値は、データセットのサイズとの同期に必要となる時間に影響します。 |
 
-8. **次へ** を選択します。 Azure Synapse SQL データベースに接続するための認証情報の入力が求められます。 次の表のようにフィールドを設定します。
+1. **次へ** を選択します。 Azure Synapse SQL データベースに接続するための認証情報の入力を求められたら、次の表に示すようにフィールドの値を設定します。
 
     | フィールド | 値 |
     |---|---|
     | 認証メソッド | **Basic** を選択します。 |
     | ユーザー名 | **reportreadonlyuser** を入力します。 |
-    | パスワード | SetupSynapse.sql スクリプトで [placeholder_password](#phUserPwd) プレースホルダーを置き換えた値を入力します。 このパスワードは、**reportreadonlyuser** アカウントのパスワードです。 |
+    | パスワード | [SQL 読み取り専用ユーザー用にキー コンテナーに保存した](#roUser)パスワードを入力します。 |
 
-9. **サインインしてスツ属する** を選択します。
-10. データセットの更新が完了するまで待機します。 続いて **アプリの編集** ボタンを選択してアプリのワークスペースを開き、データセットの更新状況を確認することができます。 アプリのワークスペースでは、オプションとして、データセットの自動更新スケジュールの設定、アクセス許可の管理、アプリのインスタンス名の変更も可能です。
+1. **サインインしてスツ属する** を選択します。
+1. データセットの更新が完了するまで待機します。 続いて **アプリの編集** を選択してアプリのワークスペースを開き、データセットの更新状況を確認することができます。 アプリのワークスペースでは、オプションとして、データセットの自動更新スケジュールの設定、アクセス許可の管理、アプリのインスタンス名の変更も可能です。
 
 ### <a name="privacy"></a><a name="privacy"></a>プライバシー
 

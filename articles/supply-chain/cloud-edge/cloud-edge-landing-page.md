@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ef81ef7ad726ebe0cc6a0acd58cb68d07e222a42
-ms.sourcegitcommit: 0d14c4a1e6cf533dd20463f1a84eae8f6d88f71b
+ms.openlocfilehash: 30f455f37b5161878cf9c864b92966aa74da051f
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119190"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376185"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>分散ハイブリッド トポロジのスケール ユニット
 
@@ -40,7 +40,7 @@ ms.locfileid: "8119190"
 
 ## <a name="scale-units-and-dedicated-workloads"></a>スケール ユニットと専用ワークロード
 
-スケール ユニットは、専用の処理能力を追加することによって、Supply Chain Management の中央ハブ環境を拡張します。 スケール ユニットはクラウドで実行できます。 また、ローカル施設のオンプレミスで、エッジで動作させることもできます。
+スケール ユニットは、専用の処理能力を追加することによって、Supply Chain Management の中央ハブ環境を拡張します。 スケール ユニットはクラウドで実行できます。 また、ローカル施設のオンプレミスで、[エッジ](cloud-edge-edge-scale-units-lbd.md)で動作させることもできます。
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text=" スケール ユニット付き Dynamics 365。":::
 
@@ -65,7 +65,7 @@ Warehouse Management ワークロードは、独立したメンテナンス期�
 
 詳細については、[クラウドおよびエッジのスケール ユニットの製造実行ワークロード](cloud-edge-workload-manufacturing.md) を参照してください。
 
-## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Supply Chain Management の分散されたハイブリッドのトポロジを有効にする前の考慮事項
+## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Supply Chain Management の分散されたハイブリッド トポロジを有効にする前の考慮事項
 
 分散ハイブリッド トポロジを有効にすることで、Supply Chain Management クラウド環境がハブとして機能するように移行します。 また、クラウドまたはエッジでスケール ユニットとして構成された追加の環境を関連付けることもできます。
 
@@ -116,7 +116,7 @@ Microsoft では、Supply Chain Management のすべてのクラウド環境を 
 
 ### <a name="data-processing-during-management-of-scale-units"></a><a name="data-processing-management"></a>スケール ユニットの管理中のデータ処理
 
-Dynamics 365 環境を有効にして、クラウドおよびエッジ スケール ユニットの分散ハイブリッド トポロジをサポートすると、一部の管理サービスは LCS のように米国でのみホストされます。 この動作は、[スケール ユニット マネージャー ポータル](https://sum.dynamics.com) で使用される一部の管理情報および構成情報の転送と保存に影響します。 次にいくつか例を挙げます。
+Dynamics 365 環境を有効にして、クラウドとエッジ スケール ユニットの分散ハイブリッド トポロジをサポートすると、一部の管理サービスは LCS のように米国でのみホストされます。 この動作は、[スケール ユニット マネージャー ポータル](https://sum.dynamics.com) で使用される一部の管理情報および構成情報の転送と保存に影響します。 次にいくつか例を挙げます。
 
 - テナント名と ID
 - 自分の LCS プロジェクト ID
@@ -125,33 +125,27 @@ Dynamics 365 環境を有効にして、クラウドおよびエッジ スケー
 - トポロジを地理的な地図上に表示するための、法人や施設の名前と物理的な住所を含むワークロードの構成
 - マップ分析ページに表示される、スケール ユニットの最も有益な使用を選択するのに役立つ収集されたメトリック (待機時間やスループットなど)
 
-転送され、米国のデータ センターに保存されているデータは、Microsoft データ保持ポリシーに従って削除されます。 Microsoft にとってお客様のプライバシーは重要です。 詳細については、Microsoft の [プライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839) をお読みください。
+転送され、米国のデータ センターに保存されているデータは、Microsoft データ保持ポリシーに従って削除されます。 Microsoft にとってお客様のプライバシーは重要です。 詳細については、Microsoft [プライバシー ステートメント](https://go.microsoft.com/fwlink/?LinkId=521839)をお読みください。
 
-## <a name="onboarding-in-two-stages"></a>2 つのステージでのオンボード
+## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Supply Chain Management のための分散型ハイブリッド トポロジーへのオンボード
 
-分散ハイブリッド トポロジにオンボードするプロセスには 2 つのステージがあります。 最初のステージでは、カスタマイズを検証して、スケール ユニットを含む分散トポロジで機能することを確認する必要があります。 サンドボックス環境及び運用環境は、2 つ目のステージでのみ移動されます。
+### <a name="try-out-the-distributed-hybrid-topology"></a>分散型ハイブリッド トポロジーを試す
 
-### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>ステージ 1: 1 ボックス開発環境でのカスタマイズを評価する
+分散ハイブリッド トポロジにオンボードするプロセスには 2 つのステージがあります。 最初の段階では、ソリューションを試し、カスタマイズした内容がスケール ユニットを含む分散トポロジーで動作することを [試してみる](cloud-edge-try-out.md)必要があります。 (既存の開発環境を使用して検証を行えます。) 続いて第 2 ステージに進み、そこで実稼働環境を取得できます。
 
-サンドボックス環境や運用環境のオンボードを開始する前に、1 ボックス環境 (第 1 層環境とも呼ばれる) などの開発環境でスケール ユニットを検討し、プロセス、カスタマイズ、ソリューションを検証することをお勧めします。 このステージでは、データとカスタマイズが 1 ボックス環境に適用されます。 1 つの環境はハブのロールを持ち、もう一方の環境はスケール ユニットのロールを持ちます。 この設定によって、問題を特定して修正する最善の方法を提供します。 このステージを完了するために、最新の早期アクセス (PEAP) ビルドも使用できます。
-
-ステージ 1 の場合は、[1 ボックス開発環境用のスケール ユニット配置ツール](https://github.com/microsoft/SCMScaleUnitDevTools) を使用する必要があります。 これらのツールを使用すると、1 つまたは 2 つの 1 ボックス環境で、ハブとスケール　ユニットを構成できます。 このツールは、GitHub 上でバイナリ リリースとしてソース コードで提供されています。 ツールの使用方法を説明した[ステップ バイ ステップの使用ガイド](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) が掲載されているプロジェクト Wiki をご覧ください。
-
-### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>ステージ 2: アドインを入手し、サンドボックス環境と運用環境に配置する
-
-サンドボックス環境または運用環境の 1 つを新しいトポロジにオンボードするには、1 つ以上のクラウド スケール ユニット (将来的にはエッジ スケール ユニット) のアドインを入手する必要があります。 このアドインにより、[LCS](https://lcs.dynamics.com/) の対応するプロジェクトおよび環境のスロットが付与され、スケール ユニット環境を配置できるようになります。
-
-> [!NOTE]
-> スケール ユニットのアドインは、限定されたユーザーに結合されているわけではなく、管理者が割り当てたロールに基づいて、既存のサブスクリプションのすべてのユーザーが使用することができます。
+## <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>LCS プロジェクト テナントと詳細オンボード プロセスの選択
 
 スケール ユニットは、複数の最小在庫管理単位 (SKU) および価格決定オプションで提供されます。 したがって、計画されている月々のトランザクションの量およびパフォーマンス要件を最も満たすオプションを選択できます。
+
+> [!TIP]
+> ニーズに最適なサイズを特定するために、実装のパートナーおよびマイクロソフトと連携して、必要とする月次トランザクションサイズを把握する必要があります。
 
 エントリ レベルの SKUは *Basic*、より高いパフォーマンスの SKU は *Standard* と呼ばれています。 各 SKU には、特定の数の月々のトランザクションが事前に読み込まれます。 ただし、各 SKU に対して超過分のアドインを追加すると、月々のトランザクション予算を増やすことができます。
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text=" クラウド スケール ユニットのアドイン。":::
 
-> [!TIP]
-> ニーズを最も満たすサイズ変更を見極めるためには、パートナーや Microsoft と連携して、必要な月々のトランザクション サイズについて把握する必要があります。
+> [!NOTE]
+> スケールユニットのアドインは、限られたユーザー数に縛られるものではありません。 既存のサブスクリプションのどのユーザーでも利用可能です (必要なユーザー ロールが管理者に割り当てられている場合)。
 
 各スケール ユニットのアドインを購入すると、月々のトランザクションの量が増えるだけでなく、LCS で特定の数の環境スロットを利用する権利を得ることができます。 各クラウド スケール ユニットのアドインに対して、新しい運用スロットと新しいサンドボックス スロットを利用できます。 オンボード プロセスでは、これらのスロットを持つ新しい LCS プロジェクトが追加されます。 スロットの使用権は、クラウド ハブを持つスケール ユニットとして使用されなければならないように制限されています。
 
@@ -159,9 +153,6 @@ Dynamics 365 環境を有効にして、クラウドおよびエッジ スケー
 
 より多くのサンドボックス環境を取得する場合は、通常のサンドボックス スロットを追加で購入できます。 その後、Microsoft がこれらのスロットをハイブリッド トポロジのサンドボックス スケール ユニットとして有効にするようお手伝いします。
 
-## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>分散ハイブリッド トポロジにオンボードするには、Supply Chain Management のライセンスが必要
-
-### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>LCS プロジェクト テナントと詳細オンボード プロセスの選択
 
 Supply Chain Management の分散ハイブリッド トポロジへのオンボード方法の計画が完了したら、[スケール ユニット マネージャー ポータル](https://aka.ms/SCMSUM) を使用してオンボード プロセスを開始します。 ポータルでは、**Dynamics 365 テナント** タブを選択します。このタブには、自分のアカウントが含まれている、自分が LCS プロジェクトの所有者または環境管理者であるテナントの一覧が表示されます。
 

@@ -2,23 +2,24 @@
 title: チェコ共和国向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
 description: このトピックでは、Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) による、チェコ共和国向け会計統合サンプルの展開ガイドラインを提供します。
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: adafde2123afdc793a6ef4edf8fa16b857c55bf8
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 80778547b99af5a7a9717146850d8161f2e8f686
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076939"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388341"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>チェコ共和国向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) を利用した Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) による、チェコ共和国向け会計登録サービス統合サンプルの展開ガイドラインを提供します。 この会計統合サンプルの詳細については、[チェコ共和国向け会計登録サービス統合サンプル](emea-cze-fi-sample.md) を参照してください。 
 
@@ -85,6 +86,10 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsCzechia" />
     ```
 
+### <a name="enable-fiscal-connector-extensions"></a>会計コネクタ拡張機能の有効化
+
+[ハードウェア ステーション](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) または [POS レジスター](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network) で会計コネクタ拡張機能を有効にできます。
+
 ### <a name="enable-hardware-station-extensions"></a>ハードウェア ステーション拡張機能を有効化する
 
 ハードウェア ステーション拡張コンポーネントは、ハードウェア ステーション サンプルに含まれています。 次の手順を完了するには、**RetailSdk\\SampleExtensions\\HardwareStation** 配下の **HardwareStationSamples.sln** ソリューションを開きます。
@@ -112,6 +117,30 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
     ```
+
+#### <a name="enable-pos-extensions"></a>拡張機能を有効化する
+
+POS 拡張機能サンプルは [Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\PosFiscalConnectorSample** フォルダーにあります。
+
+レガシ SDK で POS 拡張機能サンプルを読み取るには、次の手順に従います。
+
+1. **Pos.Extension** フォルダをレガシ SDK の POS **拡張機能** フォルダー (たとえば `C:\RetailSDK\src\POS\Extensions`) にコピーします。
+1. **Pos.Extension** フォルダーのコピーの名前を **PosFiscalConnector** に変更します。
+1. **PosFiscalConnector** フォルダから次のフォルダーとファイルを削除します。
+
+    - bin
+    - DataService
+    - devDependencies
+    - ライブラリ
+    - obj
+    - Contoso.PosFiscalConnectorSample.Pos.csproj
+    - RetailServerEdtmModel.g.xml
+    - tsconfig.json
+
+1. **CloudPos.sln**、または **ModernPos.sln** を開きます。
+1. **Pos.Extensions** プロジェクトで、**PosFiscalConnector** フォルダーを含めます。
+1. **extensions.json** ファイルを開いて、**PosFiscalConnector** 拡張機能を追加します。
+1. SDK を構築します。
 
 ### <a name="production-environment"></a>実稼働環境
 
@@ -187,7 +216,7 @@ CRT 拡張機能は **Runtime.Extensions.DocumentProvider.EFRSample** です。
 
 会計コネクタである拡張機能によって、会計登録サービスと通信できます。
 
-ハードウェア ステーション拡張機能は **HardwareStation.Extension.EFRSample** です。 ハードウェア ステーション拡張機能は HTTP プロトコルを使用し、CRT 拡張機能が生成するドキュメントを会計登録サービスに送信します。 また、会計登録サービスから受信した応答も処理します。
+ハードウェア ステーション拡張機能は **HardwareStation.Extension.EFRSample** という名前です。 これは HTTP または HTTPS プロトコルを使用し、CRT 拡張機能が生成するドキュメントを会計登録サービスに送信します。 また、会計登録サービスから受信した応答も処理します。
 
 #### <a name="request-handler"></a>要求ハンドラー
 
@@ -206,4 +235,27 @@ CRT 拡張機能は **Runtime.Extensions.DocumentProvider.EFRSample** です。
 構成ファイルは、拡張機能プロジェクトの **構成** フォルダーに存在します。 このファイルによって、Commerce Headquarters から会計コネクタの設定を構成できるようになります。 ファイル形式は会計統合構成の要件に従います。 以下の設定を追加します:
 
 - **エンドポイント アドレス** – 会計登録サービスの URL。
-- **タイムアウト** – ミリ秒単位で表した時間。ドライバーは会計登録サービスからの応答を待機します。
+- **タイムアウト** – ミリ秒単位 (ms) で表した時間。このコネクタは会計登録サービスからの応答を待機します。
+
+### <a name="pos-fiscal-connector-extension-design"></a>POS 会計コネクタ拡張機能の設計
+
+POS 会計コネクタ拡張機能の目的は、POS からの会計登録サービスと通信することです。 これは通信に HTTPS プロトコルを使用します。
+
+#### <a name="fiscal-connector-factory"></a>会計コネクタ ファクトリー
+
+会計コネクタ ファクトリーは、コネクタ名を会計コネクタの実装にマップし、これは  **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts** ファイルにあります。 このコネクタ名は、Commerce 本部で指定した会計コネクタの名前と一致する必要があります。
+
+#### <a name="efr-fiscal-connector"></a>EFR 会計コネクタ
+
+EFR 会計コネクタは **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts** ファイルにあります。 これは、次の要求をサポートする **IFiscalConnector** インターフェイスを実装します。
+
+- **FiscalRegisterSubmitDocumentClientRequest** – この要求はドキュメントを会計登録サービスに送信し、その応答を返します。
+- **FiscalRegisterIsReadyClientRequest** – この要求は会計登録サービスの正常性確認に使用します。
+- **FiscalRegisterInitializeClientRequest** – この要求は会計登録サービスの初期化に使用します。
+
+#### <a name="configuration"></a>構成
+
+この構成ファイルは、[Dynamics 365 Commerce ソリュション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** フォルダーにあります。 このファイルによって、Commerce Headquarters から会計コネクタの設定を構成できるようになります。 ファイル形式は会計統合構成の要件に従います。 以下の設定を追加します:
+
+- **エンドポイント アドレス** – 会計登録サービスの URL。
+- **タイムアウト** – ミリ秒単位 (ms) で表した時間。このコネクタは会計登録サービスからの応答を待機します。

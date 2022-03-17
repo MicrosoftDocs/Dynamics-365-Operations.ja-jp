@@ -2,7 +2,7 @@
 title: TRIM ER 関数
 description: このトピックでは、TRIM 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 02/28/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba47df2b5f06b979436339e414e9e0cf7d9fd0358d8c9055c1591923b5d9c517
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 816f6d6623bb778c9186d294c9b67db7edddd671
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734747"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367795"
 ---
 # <a name="trim-er-function"></a>TRIM ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`TRIM` 関数は、先頭と末尾のスペースを切り捨ててから *文字列* 値として指定されたテキスト文字列を返し、その後単語間の複数のスペースが削除されます。
+`TRIM`関数は、タブ、改行、改行、フォーム フィードの文字が単一スペース文字で置き換えられた後、先行するスペースと末尾のスペースが切り詰められて、語間の複数のスペースが削除された後で、*文字列* の値として指定した文字列を返します。
 
 ## <a name="syntax"></a>構文
 
 ```vb
-TRIM (text )
+TRIM (text)
 ```
 
 ## <a name="arguments"></a>引数
@@ -45,13 +45,22 @@ TRIM (text )
 
 結果テキスト値。
 
-## <a name="example"></a>例
+## <a name="usage-notes"></a>使用上の注意
+
+場合によっては、先頭のスペースと末尾のスペースを切り詰め、指定したテキストの書式設定を維持する方が望ましい場合があります。 たとえば、このテキストが複数行のテキスト ボックスに入力できる住所を表し、改行と改行形式を含む場合があります。 この場合、次の式: `REPLACE(text,"^[ \t]+|[ \t]+$","", true)` を使用し、`text` は、指定したテキスト文字列を参照 する引数です。
+
+## <a name="example-1"></a>例 1
 
 `TRIM ("`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Sample`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`text`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`")` は、**"Sample text"** を返します。
+
+## <a name="example-2"></a>例 2
+
+`TRIM (CONCATENATE (CHAR(10), "`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Sample`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`", CHAR(9),"`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`text`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`", CHAR(13)))` は、**"サンプル テキスト"** を返します。
 
 ## <a name="additional-resources"></a>追加リソース
 
 [テキスト関数](er-functions-category-text.md)
 
+[REPLACE ER 関数](er-functions-text-replace.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

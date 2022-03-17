@@ -2,7 +2,7 @@
 title: 一般仕訳帳の処理
 description: このトピックでは、一般仕訳帳の処理を容易にすることができ、正確なデータがキャプチャされ内部コントロールが悪影響を受けていないことを確認する手助けとなる Microsoft  Dynamics 365 Finance の機能について説明します。
 author: kweekley
-ms.date: 08/09/2019
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 7096d8576cf124e5e1d814c360d96639f66a742a
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726780"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367883"
 ---
 # <a name="general-journal-processing"></a>一般仕訳帳の処理
 
@@ -101,7 +101,7 @@ ms.locfileid: "7726780"
 仕訳帳で **ワークフロー** ボタンと **ワークフロー履歴** ページを使用することによって、「修復不可能」状態になっているワーク フローの仕訳帳を取り消すことができます。 **機能管理** ページで **、仕訳帳のワーク フロー ステータスをリセットする** という機能によって有効になります。
 
 ## <a name="delete-journal-lines"></a>仕訳帳明細行の削除
-すべての仕訳帳明細行をすぐに削除する機能は、仕訳帳の **機能** > **仕訳帳明細行の削除** を使用します。 この機能を有効にするには、**機能管理** で **仕訳帳パフォーマンスの最適化の削除** を選択します。
+すべての仕訳帳明細行をすぐに削除する機能は、仕訳帳の **機能** > **仕訳帳明細行の削除** を使用します。 この機能を有効にするには、**機能管理** で **仕訳帳パフォーマンスの最適化の削除** を選択します。 この機能は、各行の **Delete** メソッドを呼び出さずに一連の行が削除されるため、**LedgerJournalTrans** テーブルの拡張子と **Delete** メソッドに影響します。 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

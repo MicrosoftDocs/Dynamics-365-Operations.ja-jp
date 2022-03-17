@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982097"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367888"
 ---
 # <a name="europe-overview"></a>欧州の概要
 
@@ -36,13 +36,13 @@ ms.locfileid: "7982097"
 - [東ヨーロッパの販売注文の請求書 ID の編集](emea-edit-invoice-id-sales-orders.md)
 - [EU 登録証明書](emea-entry-certificates.md)
 - [EU 販売リストのレポート](emea-eu-sales-list.md)
+  - [一般的な EU 販売リストの例](emea-eu-sales-list-example.md)
 - [為替レート調整](emea-exchange-rate-adjustments.md)
 - [支払方法のファイル形式](emea-select-file-formats-for-the-method-of-payments.md)
 - [Brexit が与える影響に関する財務 (グローバリゼーション) ガイダンス](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [会計サービス (ESR) の統合](emea-fiscal-service-integration.md)
 - [エストニアおよびリトアニアの固定資産の処分](emea-credit-note-reverse-fixed-asset-sale.md)
 - [内部在庫移動の移動文書の生成](tasks/transfer-document-internal-inventory-transfer.md)
-- [EU 販売リスト レポートの生成](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022 ファイル
   - [ISO20022 ファイルのインポート](emea-ISO20022-file-formats.md)
   - [ISO20022 口座引落コンフィギュレーションのインポート](tasks/import-iso20022-direct-debit-configuration.md)
@@ -77,7 +77,6 @@ ms.locfileid: "7982097"
 - [SEPA 口座振替の概要](../accounts-payable/sepa-credit-transfer.md)
 - [単一ユーロ支払地域 (SEPA) 口座引落の概要](../accounts-receivable/sepa-direct-debit-overview.md)
 - [顧客および仕入先補償の設定](emea-compensation-customer-vendor-transactions.md)
-- [EU 販売リストのレポートの設定](tasks/eur-00011-eu-sales-list-reporting.md)
 - [プロジェクト請求書の支払伝票形式の設定](tasks/set-up-payment-slip-format-project-invoices.md)
 - [印刷フォームの署名者の設定](emea-set-up-signers-for-printing-forms.md)
 - [逆仕訳会計](emea-storno.md)

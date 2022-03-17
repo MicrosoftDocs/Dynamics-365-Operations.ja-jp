@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 author: josaw
-ms.date: 09/27/2021
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
-ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
+ms.openlocfilehash: 7b06f8ca65e4fac13f322f8d72b8ad4f9db8ccd7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "7559562"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384612"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
@@ -31,7 +31,7 @@ ms.locfileid: "7559562"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 > [!NOTE]
-> Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+> 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Commerce 10.0.21 リリースの削除済みまたは非推奨の機能
 
@@ -59,7 +59,7 @@ Retail SDKはLifecycle Services (LCS) に出荷されます。 この配布モ�
 | **別の機能で置き換えられているか?**   |  [GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) |
 | **影響を受ける製品領域**         | Retail SDK |
 | **配置オプション**              | All |
-| **状態**                         | 非推奨: 現在のリリース 10.0.21で、LCS VM を介して出荷された SDK は、2022 年 10 月に削除されます。 |
+| **状態**                         | 非推奨: 現在のリリース 10.0.21で、LCS VM を介して出荷された SDK は、2023 年 4 月に削除されます。 |
 
 ### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>小売展開可能パッケージと、結合された POS、ハードウェア ステーション、および Cloud スケール ユニット インストーラー
 
@@ -82,9 +82,9 @@ Retail SDK MSBuild を使用して生成された小売展開可能パッケー�
     + [Commerce Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
     + [POS、CSU およびハードウェア ステーション](https://github.com/microsoft/Dynamics365Commerce.InStore)
 
-### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>Retail SDK の ModernPOS.Sln と CloudPos.sln
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>Retail SDK の ModernPos.Sln と CloudPos.sln
 
-ModernPos.sln、CloudPOs.sln、POS.Extension.csproj、および POS フォルダーを使用した POS 拡張機能開発は、リリース 10.0.21 では非推奨になりました。 今後は、POS の独立したパッケージ SDK を POS 拡張機能として使用します。
+ModernPos.sln、CloudPos.sln、POS.Extension.csproj、および POS フォルダーを使用した POS 拡張機能開発は、リリース 10.0.21 では非推奨になりました。 今後は、POS の独立したパッケージ SDK を POS 拡張機能として使用します。
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -92,7 +92,7 @@ ModernPos.sln、CloudPOs.sln、POS.Extension.csproj、および POS フォルダ
 | **別の機能で置き換えられているか?**   | [POS の独立したパッケージ SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **影響を受ける製品領域**         | Dynamics 365 Commerce POS 拡張機能と展開 |
 | **配置オプション**              | All |
-| **状態**                         | 非推奨: リリース 10.0.21 で、Retail SDKの ModernPos.Sln、CloudPOs.sln、および POS.Extensons.csproj を使用する結合 POS パッケージと拡張モデルのサポートは、2022 年 10 月に削除される予定です。 |
+| **状態**                         | 非推奨: リリース 10.0.21 で、Retail SDKの ModernPos.Sln、CloudPOs.sln、および POS.Extensons.csproj を使用する結合 POS パッケージと拡張モデルのサポートは、2023 年 4 月に削除される予定です。 |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Commerce 10.0.17 リリースの削除済みまたは非推奨の機能
 

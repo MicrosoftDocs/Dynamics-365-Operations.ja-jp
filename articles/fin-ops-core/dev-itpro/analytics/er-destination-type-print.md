@@ -2,7 +2,7 @@
 title: ER プリンター送信先のタイプ
 description: このトピックでは、電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対してプリンター出力先を構成する方法について説明します。
 author: NickSelin
-ms.date: 02/24/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712715"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388291"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>プリンター出力先
 
@@ -43,7 +43,24 @@ Microsoft Dynamics 365 Finance の現在のインスタンスで **プリンタ�
 
 ### <a name="applicability"></a>適用性
 
-**プリンター** 送信先は、印刷可能な PDF 形式 (PDF 合併または PDF ファイル形式の要素) または Microsoft Office Excel/Word 形式 (Excel ファイル) のいずれかで出力を生成するために使用されるファイル コンポーネントに対してのみコンフィギュレーションできます。 出力が PDF 形式で生成された場合、プリンターに送信されます。 出力が Microsoft Office 形式で生成された場合、自動的に PDF 形式に変換され、プリンターに送信されます。
+#### <a name="pdf-printing"></a>PDF の印刷
+
+財務のバージョン10.0.18 以前では、**プリンター** 送信先は、印刷可能な PDF 形式 (**PDF 合併** または **PDF ファイル** 形式の要素) または Microsoft Office Excel と Word 形式 (**Excel ファイル**) のいずれかで出力を生成するために使用されるファイル コンポーネントに対してのみ構成できます。 出力が PDF 形式で生成された場合、プリンターに送信されます。 出力が **Excel ファイル** を使用した Office 形式要素で生成された場合、自動的に PDF 形式に変換され、プリンターに送信されます。
+
+ただし、バージョン10.0.18 では、**共通ファイル** 形式要素用に **プリンター** 出力先を構成できます。 ほとんどの場合、この形式要素は、TXT 形式または XML 形式で出力を生成するために使用されます。 ルート形式要素として **共通ファイル** 形式要素を含む ER 形式を、その下に入れ子になった唯一の要素として **バイナリ コンテンツ** 形式要素を構成できます。 この場合、**共通ファイル** のファイル形式の要素により、**バイナリ コンテンツ** 形式要素に対して構成するバインドで指定された形式で出力が生成されます。 たとえば、PDF または Office (Excel または Word) 形式の [ドキュメント管理](../../fin-ops/organization-administration/configure-document-management.md) の添付ファイルの内容をこの要素に [含める](tasks/er-document-management-files-5.md#modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format) 場合、このバインドを構成できます。 出力は、構成されている [プリンタ] 出力先を使用して **出力** できます。 
+
+> [!NOTE]
+> **プリンター** の出力先を構成するために **共通\\ファイル** 形式要素を選択した場合、選択した要素によって PDF 形式に変換可能な PDF 形式またはプリンター 出力が生成さることが設計時に保証する方法がありません。 したがって、次の警告メッセージが表示されます: "選択した形式のコンポーネントによって生成された出力が PDF に変換可能であることを確認してください。 オフの場合は、'PDFに変換' オプションをオフにします。 実行時に印刷するために PDF 以外の出力または PDF 以外の出力が提供される場合は、実行時の問題を回避するための対策をとる必要があります。 Office (ExcelまたはWord) 形式の出力を受け取る場合は **PDF に変換** オプションを選択する必要があります。
+>
+> バージョン 10.0.26 以降で **PDF に変換** オプションを使用するには、構成されている **プリンター** 出力先の **ドキュメント ルート設定タイプ** パラメータに **PDF** を選択する必要があります。
+
+#### <a name="zpl-printing"></a>ZPL の印刷
+
+バージョン 10.0.26 以降では、**ドキュメント ルート設定タイプ** パラメータに **ZPL** を選択することで、**共通\\ファイル** フォーマット要素の **プリンター** 送信先を構成できます。 この場合、**PDF に変換** オプションは実行時に無視され、TXT または XML の出力は、[ドキュメント ルート設定 エージェント (DRA)](install-document-routing-agent.md) の  Zebra プログラム言語 (ZPL) 契約を使用して、選択したプリンタに直接送信されます。 この機能は、ZPL II ラベル レイアウトを表す ER 形式で、さまざまなラベルを印刷するために使用します。
+
+[!["宛先の設定" ダイアログ ボックスでドキュメントのルーティング タイプ のパラメータを設定する。](./media/ER_Destinations-SetDocumentRoutingType.png)](./media/ER_Destinations-SetDocumentRoutingType.png)
+
+この機能の詳細については、[ZPL ラベルを印刷する新しい ER ソリューションのデザイン](er-design-zpl-labels.md) を参照してください。
 
 ### <a name="limitations"></a>制限
 

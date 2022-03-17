@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ea39a1fc9092aaa4622c7193f7538acc85aa0f46
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 8917c9b265bc3df19517f052e28fb7644057cb46
+ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952680"
+ms.lasthandoff: 02/22/2022
+ms.locfileid: "8330704"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>サード パーティ製造システムとの統合
 
@@ -183,6 +183,7 @@ MES 統合 API を呼び出す場合は、次のエンドポイント URL に `P
 | `PositionNumber` | オプション | 文字列 |
 | `IsConsumptionEnded` | オプション | ブール値 |
 | `ErrorCause` | オプション | 列挙 (None \| Material \| Machine \| OperatingStaff)、拡張可能 |
+| `InventoryLotId` | オプション | 文字列 |
 
 ### <a name="time-used-for-operation-route-card-message"></a>工程に使用される時間 (ルート カード) メッセージ
 

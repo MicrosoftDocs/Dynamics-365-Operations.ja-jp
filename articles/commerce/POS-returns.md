@@ -2,7 +2,7 @@
 title: POS での返品の作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) アプリケーションで、現金払いトランザクションまたは顧客注文に対して返品を開始する方法について説明します。
 author: hhainesms
-ms.date: 06/01/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 4a0d5efe043d72f936a15ec9a8ead9987fdb22b891a5a3ae94f95aa5ea7a6e67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715533"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349694"
 ---
 # <a name="create-returns-in-pos"></a>POS での返品の作成
 
@@ -96,6 +96,13 @@ RTS 呼び出しが実行できず、POS が返品検証にチャネル側のデ
 
 > [!NOTE]
 > **POS での統合返品処理エクスペリエンス** 機能が有効になると、シリアル化された製品の返品検証をサポートする新しいオプション機能が使用可能になります。 詳細については、[販売時点管理 (POS) でシリアル番号管理された製品の返品](POS-serial-returns.md) を参照してください。
+
+## <a name="version-details"></a>バージョンの詳細
+
+次の一覧は、さまざまなコンポーネントの最小バージョン要件を示しています。
+- コマースの本部および アプリ: バージョン 10.0.20
+- Commerce Scale Unit (CSU): バージョン 9.30
+- 販売時点管理 (POS): バージョン 9.30
 
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>一部の数量を使用して、返品の適切な税計算を有効にします
 

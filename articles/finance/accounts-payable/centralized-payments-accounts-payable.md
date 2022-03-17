@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3030bc7d2501e2162758c94c0dc1a073655c9c0f
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: df0d2178d1ebd3dcb154e2c4f7821a4007da55d4
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182521"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8331745"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>買掛金勘定の集中支払
 
 [!include [banner](../includes/banner.md)]
 
 複数の法人を含む組織では、すべての支払を処理する単一の法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 このトピックでは、集中支払に対する転記がさまざまなシナリオで処理される方法の例を示します。
-
-複数の法人を含む組織では、すべての支払を処理する法人を使用して支払を作成および管理できます。 したがって、同じ支払を複数の法人に入力する必要はありません。 また、組織では、支払プロセスが合理化されるため、時間を節約できます。
 
 集中支払組織では、事業を行うために多くの法人があり、事業を行っている各法人がそれぞれの仕入先請求書を管理します。 事業を行っているすべての法人の支払は、支払の法人として知られている 1 つの法人から行われます。 決済プロセス中に、適切な借りトランザクションと貸しトランザクションが生成されます。 組織内のどの法人が実利益トランザクションと実損失トランザクションを受け取るか、また、会社間支払に関連する現金割引トランザクションの処理方法を指定できます。 集中支払仕訳帳明細行で、**勘定タイプ** は仕入先に設定する必要があります。 **相手勘定タイプ** は銀行または元帳に設定する必要があります。 銀行口座は現在の会社にあるはずです。 
 

@@ -2,7 +2,7 @@
 title: キーボード ショートカット
 description: このトピックでは、財務と運用アプリを操作するときに使用できるショートカット キーの概要を示し ます。
 author: jasongre
-ms.date: 02/11/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: 7d66c1fd08c29b85ca14bf1ae5d08c603e4a1945
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119555"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384566"
 ---
 # <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -199,9 +199,12 @@ ms.locfileid: "8119555"
 | メインのページの内容に移動する (別のウィンドウにフォーカスがある場合)                    | Alt+M、M                    |
 | 情報ボックス ウィンドウに移動する (開くことも含まれます)                       | Alt+M、B または Ctrl+F2         |
 
+> [!NOTE]
+> フル ページ フォーム機能 (バージョン 10.0.26) の **フルページ フォームでのタビング動作を合理化する** 機能を使用すると、マウスの使用や、領域間を移動する専用のキーボード ショートカットを必要とせずに、ページのすべての領域をタブ移動できます。 ページ上の領域間をすばやく移動する手段として、既存のキーボード ショートカット (Alt+M キー コードのショートカットなど) はそのまま機能します。
+
 ## <a name="personalization-shortcuts"></a>[個人用設定](personalize-user-experience.md) ショートカット 
 
-| 目的                                                                                                             | キー                               |
+| 目的                                                                                                             |  を押します                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | 個人用設定モードへのページの移行                                                                          | Ctrl+Shift+P                        |
 | 選択ツールを使用する(個人用設定モードの場合)                                                                     | S                                   |

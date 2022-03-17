@@ -2,7 +2,7 @@
 title: 配送オプション モジュール
 description: このトピックでは、配送オプション モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 69d3da5cbee5d7b921b0b0b422d838b9821e9c877d6f1951e85aeb49474bd4bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9b9a7ad05974b98511cfc582af62c19c5fb4dbf5
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760903"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349797"
 ---
 # <a name="delivery-options-module"></a>配送オプション モジュール
 
@@ -56,9 +56,12 @@ Fabrikam のテーマは、一部の品目が配送用に選択されていて�
 
 配送オプション モジュールは、チェックアウト モジュールにのみ追加できます。 配送オプション モジュールをコンフィギュレーションしてチェックアウト ページに追加する方法の詳細については、[チェックアウト モジュール](add-checkout-module.md) を参照してください。
 
+> [!NOTE]
+> 配送処理に一貫性がなかったり、eコマース チャネルで比例しないヘッダー レベルの料金が表示されない場合があります。 これらの問題を解決するガイダンスについては、[e コマース チャネルにおける一貫した配信モードの取り扱いを可能にする](consistent-delivery-mode-handling.md) を参照してください。
+
 ## <a name="additional-resources"></a>追加リソース
 
-[カート モジュール](add-cart-module.md)
+[買い物カゴ モジュール](add-cart-module.md)
 
 [チェックアウト モジュール](add-checkout-module.md)
 

@@ -2,27 +2,22 @@
 title: 周辺機器
 description: このトピックでは、コマース周辺機器に関連する概念を説明します。
 author: BrianShook
-ms.date: 02/04/2022
-ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
+ms.date: 03/01/2022
+ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.custom:
 - "268444"
 - intro-internal
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e60b369feff5bf17f58d6a3b4c9e9b290343b1ae
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.openlocfilehash: fa9b8c79d1b3b5ed04a7d277bf09cd05dbd332d2
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092487"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370979"
 ---
 # <a name="peripherals"></a>周辺機器
 
@@ -45,7 +40,7 @@ ms.locfileid: "8092487"
 
 ### <a name="modern-pos"></a>Modern POS
 
-Modern POS は、Microsoft Windows の POS プログラムです。 これは、Windows 10 オペレーティング システム (OS) に配置できます。
+Modern POS は、Microsoft Windows の POS プログラムです。 これは、Windows 10 および Windows 11 オペレーティング システム (OS) に配置できます。
 
 ### <a name="cloud-pos"></a>クラウド POS
 
@@ -108,7 +103,7 @@ OPOS ドライバを使用して、1 つの USB 磁気ストライプ リーダ�
 
 ### <a name="secondary-display"></a>二次表示
 
-二次表示が設定された場合、基本情報は 2 番目の Windows ディスプレイに表示されます。 二次表示の目的は、独立系ソフトウェア ベンダー (ISV) による拡張をサポートすることです。追加設定なしの場合、二次表示はコンフィギュレーション不可能で、限定的な内容しか表示しません。
+二次表示が設定された場合、基本情報は 2 番目の Windows ディスプレイに表示されます。 既定では、二次ディスプレイは構成できず、表示されるコンテンツは制限されます。 二次ディスプレイの目的は、独立したソフトウェア ベンダー (ISV) 拡張子をサポートすることです。 
 
 ### <a name="payment-device"></a>支払デバイス
 
@@ -132,7 +127,7 @@ OPOS ドライバを使用して、1 つの USB 磁気ストライプ リーダ�
 POS レシートの印刷は、OPOS に最適化されています。 一般に、OPOS による印刷は Windows による印刷より高速です。 したがって、40 列のレシートを高速のトランザクション タイムで印刷する必要のある環境では、OPOS を使用することが最善です。 ほとんどのデバイスについては、OPOS コントロールを使用します。 ただし、一部の OPOS レシート プリンターは Windows ドライバもサポートします。 Windows ドライバを使用する場合、最新のフォントにアクセス可能で、複数のレジスターと 1 つのプリンターをネットワーク化できます。 ただし、Windows ドライバーの使用には短所があります。 短所の例を次に示します。
 
 -   Windows ドライバを使用する場会、画像は印刷開始前にレンダリングされます。 したがって、印刷は OPOS コントロールを使用するプリンタより遅くなる傾向があります。
--   プリンターを通して接続されているデバイス (「デイジー チェーン」) は 、Windows ドライバーを使用している間、正しく動作しないかもしれません。 たとえば、キャッシュ ドロワーが開かないかもしれず、伝票プリンタが指示通り動かないかもしれません。
+-   プリンターを通して接続されているデバイス (「デイジー チェーン」) は 、Windows ドライバーを使用している間、正しく動作しないかもしれません。 たとえば、キャッシュ ドロワーが開かないかもしれず、領収書プリンタが指示通り動かないかもしれません。
 -   OPOS は、紙切断または伝票印刷などレシート プリンターに特有の広範な変数をサポートします。
 -   Windows プリンターは、IIS ハードウェア ステーションではサポートされません。 
 
@@ -176,7 +171,7 @@ Windows 用 および Android 用 Modern POS クライアントには、**専用
 1. Modern POSを非ドロワー モードで開き、**ハードウェア ステーションを管理する** 操作を使用して、ハードウェアを操作する機能をオンにします。 専用のハードウェア ステーションは既定で有効になります。 
 1. Modern POS からサインアウトします。 その後、再度サインインしてシフトを開きます。 ハードウェア プロファイルで構成された周辺機器が使用できるようになりました。 
 
-### <a name="shared"></a>共有済み 
+### <a name="shared"></a>共有済み
 
 "IIS" ハードウェア ステーションと呼ばれることもありますが、“IIS” とは POS アプリケーションが Microsoft インターネット インフォメーション サービス経由でハードウェア ステーションに接続することを意味します。 POS アプリケーションは、デバイスが接続されているコンピュータで実行される Web サービスを介して IIS ハードウェア ステーションに接続します。 ハードウェア ステーションが使用されると、ハードウェア ステーションに接続されている周辺機器は、IIS ハードウェア ステーションと同じネットワークにつながるどの POS レジスターでも使用できます。 Windows および Android 用 Modern POS のみに周辺機器サポートが組み込まれているため、他のすべての Modern POS アプリケーションは、ハードウェア プロファイルでコンフィギュレーションされた POS 周辺機器と通信するために IIS ハードウェア ステーションを使用する必要があります。 したがって、IIS ハードウェア ステーションの各インスタンスは、Web サービスおよびデバイスと通信するアプリケーションを実行するコンピュータが必要です。 
 
@@ -184,7 +179,7 @@ Windows 用 および Android 用 Modern POS クライアントには、**専用
 
 ハードウェア ステーションを使用して複数の POS クライアント間で周辺機器の共有をサポートする場合は、キャッシュ ドロワー、レシート プリンター、および支払ターミナルのみを使用する必要があります。 スタンドアロンのバーコード スキャナー、MSR、ライン ディスプレイ、スケール、その他のデバイスを直接接続することはできません。 接続すると、複数の POS デバイスがそれらの周辺機器を同時に使用しようとして競合が生じます。 サポートされているデバイス用の競合は、以下のように管理されています:
 
--   **キャッシュ ドロワー** – キャッシュ ドロワーはデバイスに送信されるイベントによって開きます。 キャッシュ ドロワーが呼び出されたときに発生する唯一の問題は、キャッシュ ドロワーがすでに開いている場合です。 共有ハードウェア ステーションの場合、キャッシュ ドロワーはハードウェア プロファイルで **共有** と設定されている必要があります。 この設定は、POS が [open] コマンドを送信する時に、キャッシュ ドロワーがすでに開いているかどうかの確認をすることを防ぎます。
+-   **キャッシュ ドロワー** – キャッシュ ドロワーはデバイスに送信されるイベントによって開きます。 キャッシュ ドロワーがキャッシュ ドロワーがすでに開いている状態で呼び出された場合、問題が発生します。 共有ハードウェア ステーション構成で使用されているキャッシュ ドロワーの場合、ハードウェア プロファイルで **共有** と設定されている必要があります。 この設定は、POS が [open] コマンドを送信する時に、キャッシュ ドロワーがすでに開いているかどうかの確認をすることを防ぎます。
 -   **レシート プリンター** – 2つのレシート印刷コマンドがハードウェア ステーションに同時に送信されると、デバイスによってはどちらかのコマンドが失われてしまうことがあります。 デバイスによっては、この問題を防ぐための内部メモリまたはプールがあります。 印刷コマンドが正常に終了しない場合、レジ担当者はエラー メッセージを受信し、POS から印刷コマンドを再試行できます。
 -   **支払ターミナル** – レジ担当者が既に使用中の支払ターミナルに支払/入金のトランザクションを送信しようとした場合、ターミナルが使用中であり後でもう一度試すようにレジ担当者に求めるメッセージがレジ担当者に通知されます。 通常、レジ担当者はターミナルが既に使用中であることがわかり、他のトランザクションが完了するまで待機してから、支払/入金を再度送信します。
 
@@ -205,7 +200,7 @@ Windows 用 および Android 用 Modern POS クライアントには、**専用
 ## <a name="setup-and-configuration"></a>設定およびコンフィギュレーション
 ### <a name="hardware-station-installation"></a>ハードウェア ステーションのインストール
 
-詳細については、[ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
+IIS ハードウェア ステーションをインストールする方法のガイダンスについては、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Windows 用 Modern POS の設定とコンフィギュレーション
 
@@ -431,7 +426,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-shared-an-iis-hardware-station"></a>IIS ハードウェア ステーションが共有されるすべての Modern POS クライアント
+### <a name="all-modern-pos-clients-that-share-an-iis-hardware-station"></a>IIS ハードウェア ステーションを共有するすべての Modern POS クライアント
 
 > [!NOTE]
 > IIS ハードウェア ステーションが「共有」の場合、複数のデバイスがハードウェア ステーションを同時に使用できます。 このシナリオでは、次の表に示すデバイスのみを使用する必要があります。 バーコード スキャナーや MSR など、この表にないデバイスを共有しようとする場合、複数のデバイスが同じ周辺機器を要求しようとするとエラーが発生します。 将来、そのようなコンフィギュレーションは明示的に禁止されます。
@@ -487,7 +482,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 </table>
 
 ## <a name="configuration-for-supported-scenarios"></a>サポートされるシナリオのコンフィギュレーション
-ハードウェア プロファイルの作成方法の詳細については、[レジスターとハードウェア ステーションを含むチャネル クライアントの定義と管理](define-maintain-channel-clients-registers-hw-stations.md)を参照してください。 
+ハードウェア プロファイルの作成方法の詳細については、[販売時点管理 (POS) への周辺機器の接続](define-maintain-channel-clients-registers-hw-stations.md) を参照してください。 
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>IPC (組み込み) ハードウェア ステーションを含む Windows 用 Modern POS
 
@@ -623,9 +618,8 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 | メーカー | モデル    | インターフェイス | コメント                |
 | ------------ | -------- | --------- | ----------------------- |
 | Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88VI | OPOS      |                         |
-| Epson        | TM-T88   | カスタム    | ネットワーク経由で接続   |
-| HP           | F7M67AA  | OPOS      | Powered USB             |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Powered USB             |
 | Star         | TSP650II | カスタム    | ネットワーク経由で接続   |
 | Star         | mPOP     | OPOS      | Bluetooth 経由で接続 |
 | 東芝      | HSP100   | OPOS      |                         |
@@ -636,27 +630,18 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 
 #### <a name="bar-code-scanner"></a>バーコード スキャナー
 
-| メーカー  | モデル         | インターフェイス | 備考 |
-|---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| ハネウェル     | 1900          | UWP       |          |
-| 記号        | LS2208        | OPOS      |          |
-| HP 統合済 | E1L07AA       | OPOS      |          |
+| メーカー  | モデル         | インターフェイス | コメント |
+| ------------- | ------------- | --------- | -------- |
 | Datalogic     | Magellan 8400 | OPOS      |          |
+| ハネウェル     | 1900          | UWP       |          |
+| HP 統合済 | E1L07AA       | OPOS      |          |
+| 記号        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>PIN パッド
+#### <a name="payment-terminals-and-pin-pads"></a>支払端末および PIN パッド
 
-| メーカー | モデル  | インターフェイス | コメント                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | 支払コネクターのカスタマイズが必要 |
+Dynamics 365 Commerce は、支払サービス用に Adyen と統合する既成のソリューションを提供します。 Adyen 用 [Dynamics 365 Payment Connector](dev-itpro/adyen-connector.md) は、デバイスに依存しない [Adyen Payment Terminal アプリケーション プログラミング インターフェイス (API)](https://www.adyen.com/blog/introducing-the-terminal-api) を使用し、この API がサポートしているすべての支払ターミナルに対応できます。 サポート対象の支払端末の完全な一覧については、[Adyen POS 端末](https://www.adyen.com/pos-payments/terminals)を参照してください。
 
-#### <a name="payment-terminal"></a>支払ターミナル
-
-| メーカー | モデル | インターフェイス | コメント                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | ユーザー設定    | 支払コネクターのカスタマイズが必要                                |
-| VeriFone     | MX925 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
-| VeriFone     | MX915 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
+カスタム コネクタを作成することにより、他の支払プロバイダーを Dynamics 365 Commerce と併用することもできます。 支払プロバイダーがサポートしているすべての支払ターミナルは、Dynamics 365 Commerce と使用できます 。 同様に Dynamics 365 Commerce は、POS に対するローカル IP、クラウド API、直接接続 (たとえば、KM 経由) など、支払プロバイダーによってサポートされている支払デバイスの統合モデルを許可します。 詳細については、[支払ターミナルのためのエンド・ツー・エンドの支払統合を作成する](dev-itpro/end-to-end-payment-extension.md) を参照してください。
 
 #### <a name="cash-drawer"></a>キャッシュ ドロワー
 
@@ -670,10 +655,10 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 
 #### <a name="line-display"></a>ライン ディスプレイ
 
-| メーカー  | モデル   | インターフェイス | 備考 |
-|---------------|---------|-----------|----------|
-| HP 統合済 | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| メーカー | モデル    | インターフェイス | コメント |
+| ------------ | -------- | --------- | -------- |
+| Epson        | DM-D110  | OPOS      |          |
+| HP           | T シリーズ | OPOS      |          |
 
 #### <a name="signature-capture"></a>署名キャプチャ
 
@@ -701,39 +686,29 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 
 #### <a name="printer"></a>プリンター
 
-| メーカー | モデル    | インターフェイス | コメント              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88V  | カスタム    | ネットワーク経由で接続 |
-| HP           | F7M67AA  | OPOS      | Powered USB           |
-| Star         | TSP650II | カスタム    | ネットワーク経由で接続 |
-| 東芝      | HSP100   | OPOS      |                       |
-| 東芝      | HSP150   | OPOS      |                       |
-
-
+| メーカー | モデル    | インターフェイス | コメント                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Powered USB             |
+| Star         | TSP650II | カスタム    | ネットワーク経由で接続   |
+| Star         | mPOP     | OPOS      | Bluetooth 経由で接続 |
+| 東芝      | HSP100   | OPOS      |                         |
+| 東芝      | HSP150   | OPOS      |                         |
 
 #### <a name="bar-code-scanner"></a>バーコード スキャナー
 
-| メーカー  | モデル   | インターフェイス | コメント |
-|---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| 記号        | LS2208  | OPOS      |          |
-| HP 統合済 | E1L07AA | OPOS      |          |
+| メーカー  | モデル         | インターフェイス | コメント |
+| ------------- | ------------- | --------- | -------- |
+| Datalogic     | Magellan 8400 | OPOS      |          |
+| HP 統合済 | E1L07AA       | OPOS      |          |
+| 記号        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>PIN パッド
+#### <a name="payment-terminals-and-pin-pads"></a>支払端末および PIN パッド
 
-| メーカー | モデル  | インターフェイス | コメント                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | 支払コネクターのカスタマイズが必要 |
+Dynamics 365 Commerce は、支払サービス用に Adyen と統合する既成のソリューションを提供します。 Adyen 用 [Dynamics 365 Payment Connector](dev-itpro/adyen-connector.md) は、デバイスに依存しない [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) を使用し、この API がサポートしているすべての支払ターミナルに対応できます。 サポート対象の支払端末の完全な一覧については、[Adyen POS 端末](https://www.adyen.com/pos-payments/terminals)を参照してください。
 
-#### <a name="payment-terminal"></a>支払ターミナル
-
-| メーカー | モデル | インターフェイス | コメント                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | ユーザー設定    | 支払コネクターのカスタマイズが必要                                |
-| VeriFone     | MX925 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
-| VeriFone     | MX915 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
+カスタム コネクタを作成することにより、他の支払プロバイダーを Dynamics 365 Commerce と併用することもできます。 支払プロバイダーがサポートしているすべての支払ターミナルは、Dynamics 365 Commerce と使用できます 。 同様に Dynamics 365 Commerce は、POS に対するローカル IP、クラウド API、直接接続 (たとえば、KM 経由) など、支払プロバイダーによってサポートされている支払デバイスの統合モデルを許可します。 詳細については、[支払ターミナルのためのエンド・ツー・エンドの支払統合を作成する](dev-itpro/end-to-end-payment-extension.md) を参照してください。
 
 #### <a name="cash-drawer"></a>キャッシュ ドロワー
 
@@ -780,22 +755,20 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 
 #### <a name="printer"></a>プリンター
 
-| メーカー | モデル    | インターフェイス | コメント              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88   | カスタム    | ネットワーク経由で接続 |
-| HP           | F7M67AA  | OPOS      | Powered USB           |
-| Star         | TSP650II | カスタム    | ネットワーク経由で接続 |
-| 東芝      | HSP100   | OPOS      |                       |
-| 東芝      | HSP150   | OPOS      |                       |
+| メーカー | モデル    | インターフェイス | コメント                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Powered USB             |
+| Star         | mPOP     | OPOS      | Bluetooth 経由で接続 |
+| 東芝      | HSP100   | OPOS      |                         |
+| 東芝      | HSP150   | OPOS      |                         |
 
 #### <a name="payment-terminal"></a>支払ターミナル
 
-| メーカー | モデル | インターフェイス | コメント                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
-| VeriFone     | MX915 | ユーザー設定    | 支払コネクターのカスタマイズが必要。ネットワークおよびUSB接続 |
+Dynamics 365 Commerce は、支払サービス用に Adyen と統合する既成のソリューションを提供します。 Adyen 用 [Dynamics 365 Payment Connector](dev-itpro/adyen-connector.md) は、デバイスに依存しない [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) を使用し、この API がサポートしているすべての支払ターミナルに対応できます。 サポート対象の支払端末の完全な一覧については、[Adyen POS 端末](https://www.adyen.com/pos-payments/terminals)を参照してください。
+
+カスタム コネクタを作成することにより、他の支払プロバイダーを Dynamics 365 Commerce と併用することもできます。 支払プロバイダーがサポートしているすべての支払ターミナルは、Dynamics 365 Commerce と使用できます 。 同様に Dynamics 365 Commerce は、POS に対するローカル IP、クラウド API、直接接続 (たとえば、KM 経由) など、支払プロバイダーによってサポートされている支払デバイスの統合モデルを許可します。 詳細については、[支払ターミナルのためのエンド・ツー・エンドの支払統合を作成する](dev-itpro/end-to-end-payment-extension.md) を参照してください。
 
 #### <a name="cash-drawer"></a>キャッシュ ドロワー
 
@@ -822,7 +795,7 @@ ServiceOPOS レジストリ内では、設定されているデバイスは OPOS
 
 **ソリューション:** 次の要素のいずれかによりこの問題が生じることがあります:
 
--   ハードウェア ステーションが本社に正しく設定されていない。 このトピックで説明した手順を使用して、ハードウェア ステーションのプロファイルとハードウェア ステーションが正しく入力されていることを確認します。
+-   ハードウェア ステーションが本社で正しく設定されていません。 詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md#troubleshooting)を参照してください。 
 -   チャンネル構成を更新するジョブが実行されていません。 この場合、チャンネル構成用に 1070 のジョブを実行します。
 
 ### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>Modern POS が新しいキャッシュ ドロワーの設定を反映していない

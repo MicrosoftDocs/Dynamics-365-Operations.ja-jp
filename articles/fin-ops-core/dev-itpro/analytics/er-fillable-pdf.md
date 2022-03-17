@@ -2,7 +2,7 @@
 title: PDF テンプレートに入力する ER コンフィギュレーションのデザイン
 description: このトピックでは、PDF テンプレートに入力する電子レポート (ER) 形式をデザインする方法について説明します。
 author: NickSelin
-ms.date: 03/24/2021
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758291"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367859"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>PDF テンプレートに入力する ER コンフィギュレーションのデザイン
 
@@ -294,6 +294,20 @@ ms.locfileid: "6758291"
 次の図で、生成されるレポートの別のページの例を示します。
 
 ![生成されたレポートの別のページ。](media/rcs-ger-filloutpdf-generatedreport2.png)
+
+## <a name="limitations"></a>制限
+
+入力可能なフィールドの名前は、レポート テンプレートとして使用する予定の PDF フォームで一意である必要があります。 そのようなフィールドごとに、対応する名前を持つ個々の形式要素が編集可能な ER 形式で PDF フォームをインポートするときに作成されます。 PDF フォームに同じ名前のフィールドが複数含まれている場合、実行時に個別に入力できないフィールドに対して 1 つの形式要素が作成されます。
+
+## <a name="frequently-asked-questions"></a>よく寄せられる質問
+
+### <a name="when-i-run-the-er-format-to-generate-a-report-in-pdf-format-why-do-i-get-the-following-errors--cannot-handle-iref-streams-the-current-implementation-of-pdfsharp-cannot-handle-this-pdf-feature-introduced-with-acrobat-6-and-a-pdf-name-must-start-with-a-slash-"></a>ER 形式を実行して PDF 形式のレポートを生成すると、次のエラーが発生します: **iref ストリームを処理できません。PDFSharp の現在の実装では、Acrobat 6 を使用して導入された PDF 機能は処理できません。** および **PDF 名はスラッシュ (/) で始まる必要があります。**
+
+ER フレームワークでは、PDFSharp ライブラリのバージョン 1.5 を使用してこれらの PDF レポートを生成します。 PDF 1.5 (Adobe Reader 6.0) の一部の機能はまだこのライブラリに実装されていません。 そのため、PDFSharp が **PDF 1.5 以上** のファイルをまだ開いていないため、エラーが発生する場合があります。 次のいずれかのソリューションを使用して、この問題を解決します。
+
+-   独自の PDF テンプレートを使用する場合: テンプレートを Adobeの以前のバージョンにダウングレードし、ER 形式で新しいテンプレートの使用を開始します。
+-   ER ソリューションの一部として別の構成プロバイダーが共有した ER 形式テンプレートを使用する場合: この ER ソリューションの所有者に連絡し、問題の説明を入力してください。
+-   以前のバージョンの PDFSharp ライブラリを含む ISV ソリューションを使用する場合: ソリューションの所有者に問い合わせ、新しい PDFSharp バージョンへのアップグレードを提案してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

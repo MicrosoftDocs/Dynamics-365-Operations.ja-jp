@@ -2,7 +2,7 @@
 title: フッター モジュール
 description: このトピックでは、フッター モジュール、および Dynamics 365 Commerce での作成方法について説明します。
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81db5cf32f23b7ee1ca8325eeec2e6ceafda55e0
+ms.sourcegitcommit: 90a553e271e7cd471fed2e4f006d753fdb67b47d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719989"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8374834"
 ---
 # <a name="footer-module"></a>フッター モジュール  
 
@@ -39,7 +39,7 @@ ms.locfileid: "6719989"
 
 ## <a name="modules-available-in-a-footer-module"></a>フッター モジュールで使用できるモジュール
 
-**フッター項目** – フッター項目モジュールには、見出し、画像、およびリンクを含めることができます。 見出しは、単独で、または画像およびリンクと組み合わせて使用できます。 フッター内のすべてのリンクは、テキストのみ (「お問い合わせ」や「プライバシー」リンクなど)、またはテキストと画像 (ソーシャル メディア リンクなど) の両方を持つようにコンフィギュレーションできます。
+**フッター項目** – フッター項目モジュールには、ヘッダー、画像、およびリンクを含めることができます。 通常、ヘッダーはフッター セクションのタイトルとして使用されます。  フッター内のすべてのリンクは、テキストのみ (「お問い合わせ」や「プライバシー」リンクなど)、またはテキストと画像 (ソーシャル メディア リンクなど) の両方を持つようにコンフィギュレーションできます。 ヘッダーとリンクの両方が指定されている場合、ヘッダー プロパティはリンクに優先されます。 
 
 **トップに戻る** – トップに戻るモジュールは、ページの上部にすばやく移動するためのリンクを提供します。 行先が必要です。 既定値は \# です。この値はユーザーをページの先頭に移動します。
 

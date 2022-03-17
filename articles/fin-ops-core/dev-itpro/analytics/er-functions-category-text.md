@@ -2,7 +2,7 @@
 title: テキスト カテゴリ内の ER 関数のリスト
 description: このトピックでは、電子申告 (ER) でサポートされるテキスト関数について説明します。
 author: NickSelin
-ms.date: 09/09/2021
+ms.date: 02/28/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 5d185c128de1120e93d1779db04a7666ba557707
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075503"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367770"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>テキスト カテゴリ内の ER 関数のリスト
 
@@ -51,7 +51,7 @@ ms.locfileid: "8075503"
 | [右](er-functions-text-right.md) | この関数は、指定された文字列の末尾から指定された数の文字を表す *文字列* 値を返します。 |
 | [テキスト](er-functions-text-text.md) | この関数は、現在のアプリケーション インスタンス のサーバー ロケール設定に従って書式設定されるテキスト文字列に変換した後に、*文字列* 値として指定された数を返します。 |
 | [翻訳](er-functions-text-translate.md) | この関数は、指定したテキストを別の提供された文字セットに置換した結果を含む *文字列* 値を返します。 |
-| [Trim](er-functions-text-trim.md) | この関数は、先頭と末尾のスペースを切り捨ててから *文字列* 値として指定されたテキスト文字列を返し、その後単語間の複数のスペースが削除されます。 |
+| [Trim](er-functions-text-trim.md) | この関数は、タブ、改行、改行、フォーム フィードの文字が単一スペース文字で置き換えられた後、先行するスペースと末尾のスペースが切り詰められて、語間の複数のスペースが削除された後で、*文字列* の値として指定した文字列を返します。 |
 | [Upper](er-functions-text-upper.md) | この関数は、大文字に変換した後の *文字列* 値として指定されたテキスト返します。 |
 
 ## <a name="additional-resources"></a>追加リソース

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 30f36ccf967c47d6a034c00544d45cdfdc3d1907
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103391"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384750"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを構成する
 
@@ -78,6 +78,38 @@ Supply Chain Management のバージョン 10.0.21 では、この機能は既�
 この機能により、作業者は生産現場の実行インターフェイスを使用して、バッチ オーダーの進捗状況を報告できます。 このレポートには、連産物および副産物に関するレポートが含まれます。 この機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします:
 
 - *生産現場の実行インターフェースの連産品と副産物に関するレポート*
+
+### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>完全なシリアル番号、バッチ番号、およびライセンス認証番号の表示を可能にする
+
+この機能により、生産現場の実行インターフェイスでシリアル番号、バッチ番号、およびライセンス プレート番号のリストを表示し、さらに効率が向上します。 表示は、限られた文字数のカード ビューから、完全な値を表示するのに十分なスペースを提供するリスト ビューに変わります。 このリストは、特定の番号を検索する機能も提供します。
+
+Supply Chain Management のバージョン 10.0.25 では、この機能は既定で有効になっています。 管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *生産フロア実行インターフェイスの完全なシリアル番号、バッチ番号、ライセンス プレート番号を表示する* 機能を検索して、この機能をオンまたはオフにすることができます。
+
+### <a name="enable-registering-of-material-consumption"></a>材料消費の登録を有効にする
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+この機能により、作業員は生産フロア実行インターフェイスを使用して材料消費、バッチ番号、およびシリアル番号を登録できます。 一部のメーカー、特にプロセス業界のメーカーでは、各バッチまたは製造オーダーで消費される材料の量を明示的に登録する必要があります。 たとえば、作業者はスケールを使用して、作業時に消費される材料の量を計量できます。 完全な材料トレーサビリティを確保するために、これらの組織は各製品の生産時に消費されたバッチ番号も登録する必要があります。
+
+この機能には次の 2 つのバージョンがあります。 1 つは、高度な倉庫プロセス (WMS) を使用 *できない* 品目のみをサポートします。 もう 1 つは、WMSを使用するために有効に *なっている* 品目をサポートしています。 この機能を使用するには、WMSに対して有効になっている品目があるかどうかに応じて、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の機能の 1 つまたは両方を (この順序で) 有効にします。
+
+- *(プレビュー) 生産現場の実行インターフェースで材料消費を登録する (WMS 非対応)*
+- *(プレビュー) 生産現場の実行インターフェイス (WMS 対応) で材料消費を登録*
+
+> [!IMPORTANT]
+> WMS 以外の機能は単独で使用できます。 ただし、WMS を使用する場合は、両方の機能を有効にする必要があります。
+
+### <a name="enable-reporting-on-catch-weight-items"></a>CW 品目のレポートを有効にする
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+作業者は生産現場の実行インターフェースを使用して、CW 品目のバッチ オーダーの進捗状況を報告できます。 バッチ オーダーはフォーミュラから作成されますが、それらのフォーミュラはフォーミュラ品目、連産品、副産物としての CW 品目を含むように定義できます。 フォーミュラは、CW に定義される材料のフォーミュラ明細行を持つ場合も定義できます。 CW 品目では、在庫を追跡する 2 つの測定単位 (CW 数量と在庫数量) を使用します。 たとえば、食品業界では、箱入り肉は CW 品目として定義できます。この場合、CW 数量は箱数の追跡に使用され、在庫数量は箱の重量の追跡に使用されます。
+
+この機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします:
+
+- *(プレビュー) 生産現場の実行インターフェイスからの CW 品目に関するレポート*
 
 ## <a name="work-with-production-floor-execution-configurations"></a>生産現場の実行構成を使って作業する
 

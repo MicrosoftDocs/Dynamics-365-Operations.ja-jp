@@ -2,7 +2,7 @@
 title: e コマース サイトの作成
 description: このトピックでは、Dynamics 365 Commerce サイト ビルダーで新しい e コマース サイトを作成するために必要な手順と情報について説明します。
 author: bicyclingfool
-ms.date: 02/03/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090772"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388214"
 ---
 # <a name="create-an-e-commerce-site"></a>e コマース サイトの作成
 
@@ -30,6 +30,19 @@ ms.locfileid: "8090772"
 このトピックでは、Dynamics 365 Commerce サイト ビルダーで新しい e コマース サイトを作成するために必要な手順と情報について説明します。
 
 Dynamics 365 Commerce 機能のライセンスを取得すると、サイト ビルダーには、独自のサイトの基礎として使用できるスターター サイトがプロビジョニングされます。 ただし、最初から開始する場合、または 2 つめのサイトを作成する場合は、サイト作成環境で新しいサイトを作成する必要があります。 
+
+## <a name="site-creation-prerequisites"></a>サイト作成の前提条件
+
+サイトビルダーのユーザーは、eコマース システム管理者用に割り当てられた Azure AD セキュリティ グループに含まれる Microsoft Azure Active Directory (Azure AD) ユーザー アカウントを持っている必要があります。 詳細については、[新規 eコマース テナントのデプロイ](deploy-ecommerce-site.md) を参照してください。
+
+> [!NOTE]
+> Azure AD のゲスト ユーザーは、Azure AD テナントで異なるアクセス権を持っている可能性があります。 eコマース システム管理者に割り当てられた Azure AD セキュリティ グループに含まれていても、ゲストユーザーがCommerceでeコマースサイトを作成するには、Azure AD **外部ユーザー** の権限設定を調整する必要がある場合があります。 
+
+Azure AD **外部ユーザー** の設定を調整する場合は、以下の手順で行います。
+
+1. Azure ポータルで、Azure AD テナントに移動します。
+1. **ユーザー設定 \> 外部ユーザー** で **外部コラボレーション設定の管理** リンクを選択します。 **外部連携設定** ページを開き、ゲスト ユーザーのアクセス権、ゲストの招待設定、連携制限を設定することができます。 
+1. 社内のセキュリティ ポリシーに従って、外部連携設定を調整します。 
 
 ## <a name="set-up-your-site"></a>サイトの設定
 

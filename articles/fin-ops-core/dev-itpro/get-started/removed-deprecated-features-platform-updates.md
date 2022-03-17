@@ -1,8 +1,8 @@
 ---
 title: 削除済みまたは非推奨のプラットフォーム機能
-description: このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
+description: このトピックでは、財務と運用アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
-ms.date: 12/16/2021
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4ac68cfdd8f8b2c65993fbd91587e52cce56a437
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927482"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384723"
 ---
-# <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォーム機能
+# <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォームの機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
+このトピックでは、財務と運用アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
-Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 ## <a name="feature-removal-effective-october-2021"></a>2021 年 10 月に機能削除
 
@@ -67,7 +67,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **配置オプション**              | すべて |
 | **状態**                         | 非推奨  |
 
-## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.23 に対する Platform update
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>財務と運用アプリのバージョン 10.0.23 のプラットフォーム更新プログラム
 
 ### <a name="ondbsynchronize-event"></a>OnDBSynchronize イベント
 
@@ -90,7 +90,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **配置オプション**              | すべて |
 | **状態**                         | 非推奨。 削除予定日は 2023 年 4 月です。 |
 
-## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.21 に対する Platform update
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>財務と運用アプリのバージョン 10.0.21 のプラットフォーム更新プログラム
 
 ### <a name="skype-for-business-online-support"></a>Skype for Business Online のサポート
 
@@ -145,12 +145,12 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 |------------|--------------------|
 | **廃止 / 削除の理由** | 顧客によるインデックス管理の運用、監視、および管理の間接費を削減するために、この機能は削除されました。 |
 | **別の機能で置き換えられているか?**   | 今後、インデックスのメンテナンスは Microsoft サービスによって実行されます。 これは、ユーザーのワークロードに影響を与えずに連続して発生します。 |
-| **影響を受ける製品領域**         | Finance and Operations アプリ|
+| **影響を受ける製品領域**         | 財務と運用アプリ|
 | **配置オプション**              | クラウドの配置: Microsoftによって管理される実稼働環境および Tier 2 から Tier 5 の環境に影響します。 |
 | **状態**                         | この機能は削除されました。 |
 
 
-## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.17 に対する Platform update
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>財務と運用アプリのバージョン 10.0.17 のプラットフォーム更新プログラム
 
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
@@ -177,24 +177,25 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | Dynamics AX 2012 エンタープライズ ポータル (EP) に関連付けられたメタデータ コンポーネントは、Finance and Operations アプリケーションでサポートされたことがないので廃止されました。 |
-| **別の機能で置き換えられているか?**   | なし |
+| **廃止 / 削除の理由** | Dynamics AX 2012 エンタープライズ ポータル (EP) に関連付けられたメタデータ コンポーネントは、財務と運用アプリでサポートされたことがないので廃止されました。 |
+| **別の機能で置き換えられているか?**   | 無効 |
 | **影響を受ける製品領域**         | Web クライアント |
 | **配置オプション**              | All |
 | **状態**                         | 非推奨: すべての EP コードは、2021 年 10 月リリース版で削除される予定です。 |
 
-## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.15 に対する Platform update
+## <a name="deprecation-effective-december-2020"></a>2020 年 12 月に廃止される機能
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Dynamics 365 における Internet Explorer 11 のサポートの非推奨
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月以降、Internet Explorer 11 はサポートされなくなります。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品では Internet Explorer 11 はサポートされません。 |
+| **廃止 / 削除の理由** | 2020 年 12 月より、すべての Dynamics 365 製品と Dynamics Lifecycle Services (LCS) における Microsoft Internet Explorer 11 のサポートは非推奨になり、2021 年 8 月を過ぎると、Internet Explorer 11 はサポートされません。<br><br>これは、Internet Explorer 11 のインターフェイスを通じて使用されるように設計された Dynamics 365 製品と LCS を使用しているユーザーに影響します。 2021 年 8 月以降、そのような Dynamics 365 製品と LCS では Internet Explorer 11 はサポートされません。 |
 | **別の機能で置き換えられているか?**   | Microsoft Edge に移行することをお勧めします。|
-| **影響を受ける製品領域**         | すべての Dynamics 365 製品 |
-| **配置オプション**              | All|
+| **影響を受ける製品領域**         | すべての Dynamics 365 製品と LCS |
+| **配置オプション**              | すべて|
 | **状態**                         | 非推奨: 2021 年 8 月を過ぎると、Internet Explorer 11 はサポートされなくなります。|
 
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>財務と運用アプリのバージョン 10.0.15 のプラットフォーム更新プログラム
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>メタデータ修正プログラムを適用するための Visual Studio アドイン
 
@@ -207,7 +208,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **ステータス**                         | バージョン 10.0.15 では、アドインが Visual Studio ツールに含まれなくなりました。 |
 
 
-## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.14 に対する Platform update
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>財務と運用アプリのバージョン 10.0.14 のプラットフォーム更新プログラム
 
 ### <a name="online-users-page"></a>オンライン ユーザー ページ 
 
@@ -220,7 +221,7 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **ステータス**                         | 2021 年 10 月までに、このフォームは削除されます。   |
 
 
-## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.13 に対する Platform update
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>財務と運用アプリのバージョン 10.0.13 のプラットフォーム更新プログラム
 
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>SSRS レポート プロパティで定義されたカスタム コード 
@@ -264,19 +265,19 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 | **ステータス**                         | バージョン 10.0.13/プラットフォーム更新プログラム 37では、ビューの保存機能は一般に使用可能であり、ユーザーは必要に応じてこの機能を有効にすることができます。 この保存されたビュー機能は、2021 年 10 月リリースで必須になります。 |
 
 
-## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.12 に対する Platform update
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>財務と運用アプリのバージョン 10.0.12 のプラットフォーム更新プログラム
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>無効なフィールド参照を含むグリッドまたはグループ コントロール フォームの拡張機能
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | グリッド コントロールまたはグループ コントロールのデータ グループ プロパティは、フィールド グループのすべてのフィールドを自動的に表示するために使用されます。 拡張機能によって追加されたグリッドまたはグループ コントロールには、そのフィールド グループで既に定義されていないフィールドが含まれているか、そのフィールド グループで定義されているフィールドが欠落している可能性があります。 これにより、ランタイムで動作が一貫しなくなる場合があります。 Finance and Operations アプリのバージョン 10.0.12 に対するプラットフォームのアップデートは、この問題をコンパイラ *警告* として分類できるようになりました。 この問題を解決するには、フォームの拡張機能を開いて保存します。
+| **廃止 / 削除の理由** | グリッド コントロールまたはグループ コントロールのデータ グループ プロパティは、フィールド グループのすべてのフィールドを自動的に表示するために使用されます。 拡張機能によって追加されたグリッドまたはグループ コントロールには、そのフィールド グループで既に定義されていないフィールドが含まれているか、そのフィールド グループで定義されているフィールドが欠落している可能性があります。 これにより、ランタイムで動作が一貫しなくなる場合があります。 財務と運用アプリのバージョン 10.0.12 に対するプラットフォームのアップデートは、この問題をコンパイラ *警告* として分類できるようになりました。 この問題を解決するには、フォームの拡張機能を開いて保存します。
 | **別の機能で置き換えられているか?**   | このコンパイラの警告は、将来の更新でコンパイラ エラーに置換されます。 |
 | **影響を受ける製品領域**         | Visual Studio 開発ツール |
 | **配置オプション**              | すべて |
-| **ステータス**                         | Finance and Operations アプリのバージョン 10.0.12 のプラットフォーム更新でコンパイラの警告が出て、コンパイラのエラーになりました。 |
+| **ステータス**                         | 財務と運用アプリのバージョン 10.0.12 のプラットフォーム更新でコンパイラの警告が出て、コンパイラのエラーになりました。 |
 
-## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Finance and Operations アプリのバージョン 10.0.11 に対する Platform update
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>財務と運用アプリのバージョン 10.0.11 のプラットフォーム更新プログラム
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>セルフ サービス環境のための明示的なセーフ リスト
 
@@ -302,11 +303,11 @@ Finance and Operations アプリ内のオブジェクトに関する詳細情報
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | テーブル メタデータ定義のフィールド グループには、無効なフィールド参照を含めることができます。 これらのフィールド グループを展開すると、Financial Reporting と Microsoft SQL Server Reporting Services (SSRS) でランタイム エラーが発生する可能性があります。 Platform update 23 では、このメタデータの問題に対応するコンパイラの *警告* が導入されました。 Finance and Operations アプリのバージョン 10.0.11 に対する Platform update は、この問題をコンパイラ *エラー* として分類します。<p>この問題を解決するには、次の手順に従います。</p><ol><li>テーブルのフィールド グループの定義から無効なフィールド参照を削除します。</li><li>再コンパイル。</li><li>すべてのエラーが対処されていることを確認します。</li></ol> |
+| **廃止 / 削除の理由** | テーブル メタデータ定義のフィールド グループには、無効なフィールド参照を含めることができます。 これらのフィールド グループを展開すると、Financial Reporting と Microsoft SQL Server Reporting Services (SSRS) でランタイム エラーが発生する可能性があります。 Platform update 23 では、このメタデータの問題に対応するコンパイラの *警告* が導入されました。 財務と運用アプリのバージョン 10.0.11 に対するプラットフォームのアップデートは、この問題をコンパイラ *エラー* として分類できるようになりました。<p>この問題を解決するには、次の手順に従います。</p><ol><li>テーブルのフィールド グループの定義から無効なフィールド参照を削除します。</li><li>再コンパイル。</li><li>すべてのエラーが対処されていることを確認します。</li></ol> |
 | **別の機能で置き換えられているか?**   | コンパイラ エラーは、コンパイラの警告を完全に置換します。  |
 | **影響を受ける製品領域**         | Visual Studio 開発ツール |
 | **配置オプション**              | すべて |
-| **ステータス**                         | 非推奨: コンパイラの警告は、Finance and Operations アプリのバージョン 10.0.11 に対するプラットフォーム更新でのコンパイラ エラーです。 |
+| **ステータス**                         | 非推奨: コンパイラ警告は、財務と運用アプリのバージョン 10.0.11 のプラットフォーム アップデートで発生するコンパイラ エラーです。 |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>SHA1 ハッシュ アルゴリズムを使用して作成された ISV ライセンス
 

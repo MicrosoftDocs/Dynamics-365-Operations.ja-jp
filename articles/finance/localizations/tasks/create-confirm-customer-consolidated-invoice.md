@@ -1,7 +1,7 @@
 ---
 title: 顧客月次締め請求書の作成および確認
 description: このトピックでは、毎月の顧客の請求書を集約して支払額を算出する方法を説明しています。
-author: ShylaThompson
+author: kfend
 ms.date: 10/04/2021
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: CustConsInvoice_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: be71de40b21f6c170694ba2212793232a1102396
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 3ea144ab88a77611cc22c3750c8897def260afad
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601522"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358151"
 ---
 # <a name="create-and-confirm-a-customer-consolidated-invoice"></a>顧客月次締め請求書の作成および確認
 

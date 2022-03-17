@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9af5184da4f9507e3c06464a223f0debaea4430e
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102916"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384671"
 ---
 # <a name="manage-changes-to-engineering-products"></a>エンジニアリング製品に対する変更の管理
 
@@ -217,5 +217,15 @@ ms.locfileid: "8102916"
 
 **変更情報の保持/コピー** ボタンを使用すると、影響を受ける製品間で変更情報をコピーできます。
 
+## <a name="use-electronic-signatures-to-approve-and-active-boms-and-routes"></a>電子署名を使用した承認と有効な BOM とルートの使用
+
+電子署名を使用して部品表 (BOM) の変更や、ルート変更の承認や有効化を行うには、**組織管理 \> 設定 \> 電子署名 \> 電子署名要件** に移動します。 その後、次の各品目の **署名必須** が *はい* に設定されていることを確認します。
+
+- エンジニアリング変更命令の製品部品表を有効化する
+- エンジニアリング変更命令の製品工順を有効化する
+- エンジニアリング変更命令の製品部品表を承認する
+- エンジニアリング変更命令の製品工順を承認する
+- エンジニアリング バージョン BOM および BOM バージョンを承認する
+- エンジニアリング バージョンおよび工順バージョンを承認する
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

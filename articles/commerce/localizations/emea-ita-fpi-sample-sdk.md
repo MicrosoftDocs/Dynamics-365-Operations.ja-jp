@@ -2,23 +2,24 @@
 title: イタリア向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)
 description: このトピックでは、Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) による、イタリア向け会計プリンターの統合サンプルの展開ガイドラインを提供します。
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 93aca34239affb41998f4309d7c03f29f7b5f003
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c820c320410c43cafaae43c59cad04efdee24ab2
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076889"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388447"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>イタリア向け会計年度プリンター統合サンプルの配置ガイドライン (レガシ)
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) を利用した Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) による、イタリア向け会計プリンター統合サンプルの展開ガイドラインを提供します。 この会計統合サンプルの詳細については、[イタリア向け会計プリンター統合サンプル](emea-ita-fpi-sample.md) を参照してください。 
 
@@ -89,13 +90,13 @@ Commerce コンポーネントを含む配置可能パッケージを作成し�
 1. このトピックの前半にある [開発環境](#development-environment) セクションで説明した手順を完了します。
 2. **RetailSdk\\Assets** folder フォルダーの下にあるパッケージ コンフィギュレーション ファイルに、次の変更を加えます。
 
-    - **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの **構成** セクションに、次の行を追加します。
+    1. **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルの **構成** セクションに、次の行を追加します。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
         ```
 
-    - **HardwareStation.Extension.config** 構成ファイルで、**合成** セクションに追加の行を追加します。
+    1. **HardwareStation.Extension.config** 構成ファイルで、**合成** セクションに追加の行を追加します。
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
@@ -103,20 +104,56 @@ Commerce コンポーネントを含む配置可能パッケージを作成し�
 
 3. **BuildTools** フォルダー配下の **Customization.settings** パッケージ カスタマイズ構成ファイルに、次の変更を加えます。
 
-    - 展開可能なパッケージに CRT 拡張機能を含めるために、次の行を追加します。
+    1. 展開可能なパッケージに CRT 拡張機能を含めるために、次の行を追加します。
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
         ```
 
-    - 展開可能なパッケージにハードウェア ステーション拡張機能を含めるために、次の行を追加します。
+    1. 展開可能なパッケージにハードウェア ステーション拡張機能を含めるために、次の行を追加します。
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 
-4. Visual Studio ユーティリティを MSBuild コマンド プロンプトで起動してから、Retail SDK フォルダー配下で **msbuild** を実行し、展開可能なパッケージを作成します。
-5. LCS 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
+4. **Packages\_SharedPackagingProjectComponents** フォルダの下にある  **Sdk.ModernPos.Shared.csproj** ファイルで次の変更をおこない、イタリアのリソース ファイルを配置可能パッケージに含めます。
+
+    1. 目的の翻訳用のリソース ファイルをポイントするノードを含む **ItemGroup** セクションを追加します。 適切な名前空間とサンプル名を指定してください。 次の例では、**it** と **it-CH** のローカルのリソース ノードを追加します。
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. 次の例に示すように、**Target Name="CopyPackageFiles"** セクションで、ロケールごとに 1 行を追加します。
+
+        ```xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+5. **Packages\_SharedPackagingProjectComponents** フォルダの下にある **Sdk.RetailServerSetup.proj** ファイルで次の変更をおこない、イタリアのリソース ファイルを配置可能パッケージに含めます。
+
+    1. 目的の翻訳用のリソース ファイルをポイントするノードを含む **ItemGroup** セクションを追加します。 適切な名前空間とサンプル名を指定してください。 次の例では、**it** と **it-CH** のローカルのリソース ノードを追加します。
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. 次の例に示すように、**Target Name="CopyPackageFiles"** セクションで、ロケールごとに 1 行を追加します。
+
+        ``` xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+6. Visual Studio ユーティリティを MSBuild コマンド プロンプトで起動してから、Retail SDK フォルダー配下で **msbuild** を実行し、展開可能なパッケージを作成します。
+7. LCS 経由または手動でパッケージを適用します。 詳細については、[配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md) を参照してください。
 
 ## <a name="design-of-extensions"></a>拡張機能の設計
 

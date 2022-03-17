@@ -2,7 +2,7 @@
 title: ワークフローに関するよく寄せられる質問
 description: このトピックでは、ワークフロー システムについてよく寄せられる質問に回答します。
 author: ChrisGarty
-ms.date: 09/21/2020
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe11942ca41dd8c0ca23d94006569c50a4501a52
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0e9e2000684081035f35ea55e1c773a4f6976d74
+ms.sourcegitcommit: 967b93bb42413b5b38b817f924015468312a93a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065583"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370883"
 ---
 # <a name="workflow-faq"></a>ワークフローに関するよく寄せられる質問
 
@@ -34,7 +34,7 @@ ms.locfileid: "8065583"
 各通知は異なる作業項目に対するものですが、類似性により混乱が生じる可能性があります。 将来のリリースでこれを改善する方法を検討しています。
 
 ## <a name="why-are-my-workflow-exports-failing"></a>ワークフローのエクスポートが失敗するのはなぜですか。
-現在、ワークフローのエクスポート機能には、ワークフロー名が 48 文字を超えないようにする制限があります。 48 文字を超える名前を使用すると、「サーバーは要求の認証に失敗しました」というエラーが発生するか、またはファイルがファイル タイプなしでエクスポートされるのを防ぐことができます。 詳細については、次のブログ記事を参照してください [ワークフローのエクスポートに関するトラブルシューティング](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting)。
+現在、ワークフローのエクスポート機能には、ワークフロー名が 48 文字を超えないようにする制限があります。 48 文字を超える名前を使用すると、「サーバーは要求の認証に失敗しました」というエラーが発生するか、またはファイルがファイル タイプなしでエクスポートされるのを防ぐことができます。 詳細については、次のブログ記事を参照してください [ワークフローのエクスポートに関するトラブルシューティング](https://community.dynamics.com/365/financeandoperations/b/elandaxdynamicsaxupgradesanddevelopment/posts/workflow-export-troubleshooting)。
 
 ## <a name="can-the-submitter-of-a-workflow-also-approve-the-workflow"></a>ワークフローの送信者はワークフローを承認することもできますか。
 はい、そのように構成されている場合、ワークフローの送信者は、ワークフローを承認することもできます。 この動作を回避するには、**システム管理 > ワークフロー > ワークフロー パラメーター > 一般 > 承認者 > 送信者による承認を許可しない** を **はい** に設定します。

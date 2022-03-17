@@ -18,11 +18,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473379"
+ms.lasthandoff: 02/22/2022
+ms.locfileid: "7983826"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>電子請求サービスを使用した仕入先請求書のインポート
 

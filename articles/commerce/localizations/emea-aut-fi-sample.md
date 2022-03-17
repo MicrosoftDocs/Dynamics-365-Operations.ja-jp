@@ -2,23 +2,24 @@
 title: オーストリア向け会計登録サービス統合のサンプル
 description: このトピックでは、Microsoft Dynamics 365 Commerce のオーストリア向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: d720bffb98965bdc0276660d2a2e50d2bf155e74
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: b41ff8a112f801cd9bf5ebad3aed588ccb40e1f8
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077168"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388366"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>オーストリア向け会計登録サービス統合のサンプル
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Commerce のオーストリア向け会計統合サンプルの概要について説明します。
 
@@ -301,14 +302,28 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. ハードウェア ステーション拡張機能をインストールする。
+1. 会計コネクタ拡張機能のインストール:
 
-    1. **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** フォルダーで **HardwareStation.EFR.Installer** インストーラーを見つけます。
-    1. コマンド ラインから拡張機能インストーラーを起動します。
+    [ハードウェア ステーション](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) または [POS レジスター](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network) で会計コネクタ拡張機能をインストールにできます。
 
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+    1. ハードウェア ステーション拡張機能をインストールする。
+
+        1. **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** フォルダーで **HardwareStation.EFR.Installer** インストーラーを見つけます。
+        1. 次のコマンドを実行してるコマンド ラインから拡張機能インストーラーを起動します。
+
+            ```Console
+            HardwareStation.EFR.Installer.exe install --verbosity 0
+            ```
+
+    1. POS 拡張機能をインストールします:
+
+        1. **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln** でPOS 会計コネクタ サンプル ソリューションを開き、それを構築します。
+        1. **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461** フォルダで、**Contoso.PosFiscalConnectorSample.StoreCommerce.Installer** インストーラーを探します。
+        1. 次のコマンドを実行してるコマンド ラインから拡張機能インストーラーを起動します。
+
+            ```Console
+            Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
+            ```
 
 #### <a name="production-environment"></a>実稼働環境
 
@@ -321,7 +336,7 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
 > [!WARNING]
 > [新しい独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、この会計統合サンプルでは使用できません。 LCS の開発者 VM では以前のバージョンの Retail SDK を使用する必要があります。 詳細については、[オーストリア向け会計統合サンプルの展開ガイドライン (レガシ)](emea-aut-fi-sample-sdk.md) を参照してください。 今後のバージョンで、会計統合サンプルの新しい独立したパッケージと拡張モデルのサポートを計画しています。
 
-### <a name="commerce-runtime-extension-design"></a>Commerce Runtime 拡張機能の設計
+### <a name="commerce-runtime-extension-design"></a>Commerce Runtime 拡張機能の設計 
 
 会計ドキュメント プロバイダーである拡張機能の目的は、サービスに特化したドキュメントを生成して会計登録サービスからの応答を処理することです。
 
@@ -352,7 +367,7 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
 
 ### <a name="hardware-station-extension-design"></a>ハードウェア ステーション拡張機能の設計
 
-会計コネクタである拡張機能によって、会計登録サービスと通信できます。 ハードウェア ステーション拡張機能は HTTP プロトコルを使用し、CRT 拡張機能が生成するドキュメントを会計登録サービスに送信します。 また、会計登録サービスから受信した応答も処理します。
+会計コネクタ拡張機能の目的は、会計登録サービスと通信することです。 ハードウェア ステーション拡張機能は HTTP プロトコルを使用し、CRT 拡張機能が生成するドキュメントを会計登録サービスに送信します。 また、会計登録サービスから受信した応答も処理します。
 
 #### <a name="request-handler"></a>要求ハンドラー
 
@@ -369,5 +384,28 @@ POS 領収書形式で使用される言語テキストおよびカスタム フ
 #### <a name="configuration"></a>構成
 
 会計コネクタの構成ファイルは、[Dynamics 365 Commerce ソリューション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** に存在します。 このファイルによって、Commerce Headquarters から会計コネクタの設定を構成できるようになります。 ファイル形式は会計統合構成の要件に従います。
+
+### <a name="pos-fiscal-connector-extension-design"></a>POS 会計コネクタ拡張機能の設計
+
+POS 会計コネクタ拡張機能の目的は、POS からの会計登録サービスと通信することです。 これは通信に HTTPS プロトコルを使用します。
+
+#### <a name="fiscal-connector-factory"></a>会計コネクタ ファクトリー
+
+会計コネクタ ファクトリーは、コネクタ名を会計コネクタの実装にマップし、これは  **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts** ファイルにあります。 このコネクタ名は、Commerce 本部で指定した会計コネクタの名前と一致する必要があります。
+
+#### <a name="efr-fiscal-connector"></a>EFR 会計コネクタ
+
+EFR 会計コネクタは **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts** ファイルにあります。 これは、次の要求をサポートする **IFiscalConnector** インターフェイスを実装します。
+
+- **FiscalRegisterSubmitDocumentClientRequest** – この要求はドキュメントを会計登録サービスに送信し、その応答を返します。
+- **FiscalRegisterIsReadyClientRequest** – この要求は会計登録サービスの正常性確認に使用します。
+- **FiscalRegisterInitializeClientRequest** – この要求は会計登録サービスの初期化に使用します。
+
+#### <a name="configuration"></a>構成
+
+この構成ファイルは、[Dynamics 365 Commerce ソリュション](https://github.com/microsoft/Dynamics365Commerce.Solutions/) リポジトリの **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** フォルダーにあります。 このファイルによって、Commerce Headquarters から会計コネクタの設定を構成できるようになります。 ファイル形式は会計統合構成の要件に従います。 以下の設定を追加します:
+
+- **エンドポイント アドレス** – 会計登録サービスの URL。
+- **タイムアウト** – ミリ秒単位 (ms) で表した時間。このコネクタは会計登録サービスからの応答を待機します。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
