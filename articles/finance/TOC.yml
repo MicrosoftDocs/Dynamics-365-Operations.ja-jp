@@ -1528,6 +1528,10 @@
                           items:
                             - name: VAT 申告
                               href: localizations/emea-aut-vat-declaration-austria.md
+                        - name: デンマークの申告
+                          items:
+                            - name: VAT 申告
+                              href: localizations/emea-dnk-vat-declaration-denmark.md
                         - name: フランスの申告
                           items:
                             - name: VAT 申告
@@ -2344,6 +2348,8 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: EU 販売リスト
                   href: localizations/emea-deu-eu-sales-list.md
+                - name: VAT 申告
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: ハンガリー
               items:
                 - name: ハンガリーの概要
@@ -3566,7 +3572,7 @@
                   href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: 納税支店分析コード
                   href: localizations/apac-tha-tax-branch-dimensions.md
-                - name: 売上 VAT レポート
+                - name: VAT 報告書
                   href: localizations/apac-tha-sales-vat-report.md
                 - name: 源泉徴収税
                   href: localizations/apac-tha-withholding-tax.md
@@ -4285,6 +4291,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: データ ソースのデバッグ
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
+                - name: データ モデルの構成
+                  items:
+                    - name: ER データ モデルのパラメータ化された呼び出しをサポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/finance/toc.json
                 - name: モデル マッピングを構成する
                   items:
                     - name: 国のコンテキストに依存する ER モデル マッピングを構成する
@@ -4353,8 +4363,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: アクションに依存する送信先を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
-                    - name: 印刷管理レコード固有の ER 送信先を構成する
+                    - name: 印刷管理レコード固有の送信先を構成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
+                    - name: 新しい ER ソリューションを設計して ZPL ラベルを印刷する
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?toc=/dynamics365/finance/toc.json
                 - name: ER 形式への参照を設定する
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: 生成されたレポートの自動検証

@@ -747,8 +747,32 @@
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
                 - name: 品目価格の保管レポートの比較
                   href: cost-management/compare-item-price.md
+            - name: 原価計算方法
+              items:
+                - name: 移動平均原価価格
+                  href: cost-management/running-average-cost-price.md
+                - name: 在庫分析コード当たりの移動平均原価の追跡
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: 現物価格とマーキングを使用した先入れ先出し (FIFO)
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: 現物価格とマーキングを使用した後入れ先出し (LIFO) 日付
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: 現物価格とマーキングを使用した後入れ先出し (LIFO)
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: 現物価格とマーキングを使用した加重平均
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: 現物価格とマーキングを使用した加重平均日付
+                  href: cost-management/weighted-average-date.md
+                - name: 移動平均
+                  href: cost-management/moving-average.md
+                - name: 移動平均、代替原価の順序
+                  href: cost-management/moving-average-fallback.md
             - name: 在庫会計
               items:
+                - name: 現物更新と財務更新
+                  href: cost-management/physical-financial-updates.md
+                - name: 現物価格を含める
+                  href: cost-management/include-physical-value.md
                 - name: 原価オブジェクト
                   href: cost-management/cost-object.md
                 - name: 原価オブジェクト残高の表示
@@ -761,30 +785,8 @@
                   href: cost-management/tasks/view-cost-entries-cost-object.md
                 - name: 原価グループ
                   href: cost-management/cost-groups.md
-                - name: 現物価格とマーキングを使用した先入れ先出し (FIFO)
-                  href: cost-management/fifo-physical-value-marking.md
-                - name: 現物価格を含める
-                  href: cost-management/include-physical-value.md
                 - name: 在庫オブジェクト価値
                   href: cost-management/physical-quantity.md
-                - name: 現物価格とマーキングを使用した後入れ先出し (LIFO) 日付
-                  href: cost-management/lifo-date-physical-value-marking.md
-                - name: 現物価格とマーキングを使用した後入れ先出し (LIFO)
-                  href: cost-management/lifo-physical-value-marking.md
-                - name: 移動平均
-                  href: cost-management/moving-average.md
-                - name: 移動平均、代替原価の順序
-                  href: cost-management/moving-average-fallback.md
-                - name: 現物更新と財務更新
-                  href: cost-management/physical-financial-updates.md
-                - name: 移動平均原価価格
-                  href: cost-management/running-average-cost-price.md
-                - name: 在庫分析コード当たりの移動平均原価の追跡
-                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
-                - name: 加重平均日付
-                  href: cost-management/weighted-average-date.md
-                - name: 現物価格とマーキングを使用した加重平均
-                  href: cost-management/weighted-average-physical-value-marking.md
                 - name: 在庫決算
                   href: cost-management/inventory-close.md
                 - name: 手持在庫原価価値の調整
@@ -1431,6 +1433,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: データ ソースのデバッグ
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: データ モデルの構成
+                  items:
+                    - name: ER データ モデルのパラメータ化された呼び出しをサポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: モデル マッピングを構成する
                   items:
                     - name: 国のコンテキストに依存する ER モデル マッピングを構成する
@@ -3855,6 +3861,8 @@
               items:
                 - name: Warehouse mobile app
                   items:
+                    - name: テスト中の要求データとセッション データの予期しない違い
+                      href: troubleshooting/warehousing/request-session-data-difference.md
                     - name: アプリの接続設定時に、証明書パスのトラスト アンカーが見つからない
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: WMS の更新や WMS への移行時に、証明書パスのトラスト アンカーが見つからない

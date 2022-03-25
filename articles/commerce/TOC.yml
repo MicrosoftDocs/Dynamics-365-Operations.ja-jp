@@ -1020,6 +1020,8 @@
                   href: unit-of-measure.md
                 - name: 製品分析コードの表示設定の適用
                   href: dimension-settings.md
+                - name: 電子商取引のメンテナンス モードの有効化とアクティブ化
+                  href: enable-maintenance-mode.md
             - name: サイト コンテンツの管理
               items:
                 - name: コンテンツを追加する方法
@@ -2100,6 +2102,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: データ ソースのデバッグ
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: データ モデルの構成
+                  items:
+                    - name: ER データ モデルのパラメータ化された呼び出しをサポートする
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
                 - name: モデル マッピングを構成する
                   items:
                     - name: 国のコンテキストに依存する ER モデル マッピングを構成する
@@ -2760,6 +2766,8 @@
                           href: e-commerce-extensibility/clone-starter-module.md
                         - name: モジュール定義の拡張
                           href: e-commerce-extensibility/extend-module-definition.md
+                        - name: モジュール ライブラリの静的文字列の変更
+                          href: e-commerce-extensibility/change-module-library-strings.md
                     - name: データ アクション
                       items:
                         - name: データ アクションの上書き
@@ -2774,6 +2782,8 @@
                           href: e-commerce-extensibility/override-theme-component.md
                         - name: 基準テーマからテーマを拡張する
                           href: e-commerce-extensibility/extend-theme.md
+                        - name: テーマのモジュールの文字列を変更する
+                          href: e-commerce-extensibility/change-theme-module-strings.md
                 - name: パッケージと展開
                   items:
                     - name: パッケージ コンフィギュレーションとオンライン環境へのその配置
@@ -2798,6 +2808,8 @@
                           href: e-commerce-extensibility/page-caching.md
                         - name: データ アクション インスタンス キャッシュ
                           href: e-commerce-extensibility/instance-cache.md
+                        - name: モジュールの CSS 最適化
+                          href: e-commerce-extensibility/module-css-optimization.md
                     - name: テレメトリと分析
                       items:
                         - name: テレメトリ ロガー
