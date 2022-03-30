@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86322fdf14bdefb5c9d4793a69e95ca913843e53
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: d8f0d91667d22ddd1dd7131ca3d03bb2fa70659c
+ms.sourcegitcommit: 1819a11ae22019f1de6991d233c1c51e9950d7a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087527"
+ms.lasthandoff: 03/18/2022
+ms.locfileid: "8457454"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resources の新機能および変更された機能
 
@@ -29,7 +29,6 @@ ms.locfileid: "8087527"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-2 週間ごとに、Microsoft Dynamics 365 Human Resources の新しいリリースを提供します。 ここに記載されているトピックでは、各リリースで行われた変更について詳しく説明します。
 
 予定されている機能または Human Resources の更新プロセスの詳細については、次の記事を参照してください。 
 

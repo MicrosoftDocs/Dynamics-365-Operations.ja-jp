@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 01edccbf1a50264b3867e303cbca44eb1b1d7dd9
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087502"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408233"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>計画最適化で使用されないパラメーター
 
@@ -194,12 +194,6 @@ ms.locfileid: "8087502"
   - **配送日管理** – 計画最適化では、*CTP* オプションはサポートされていません。*CTP* のサポートは保留中です。
   - **在庫のリード タイム** – 2021 年 8 月 6 日リリースよりも古い計画の最適化サービスのバージョンでは、計画の最適化はこのパラメーターを使用して正しい注文日と配送日を計算しますが、計算されたリード タイム自体は計画オーダーに保存されません。 それ以降のバージョンでは、計算されたリード タイムも使用して、関連する計画オーダーに必要に応じて **リード タイム** フィールドと **作業日** オプションを設定します。
   - **作業日** – 2021 年 8 月 6 日リリースよりも古い計画の最適化サービスのバージョンでは、計画の最適化はこのパラメーターを使用して正しい注文日と配送日を計算しますが、計算されたリード タイム自体は計画オーダーに保存されません。 それ以降のバージョンでは、計算されたリード タイムも使用して、関連する計画オーダーに必要に応じて **リード タイム** フィールドと **作業日** オプションを設定します。
-
-## <a name="working-time-calendars-page"></a>作業時間カレンダー ページ
-
-計画最適化で、**作業時間カレンダー** ページの次のパラメーターは使用されません。
-
-- **基準カレンダー** – *基準カレンダー* のサポートは保留中です。
 
 ## <a name="batch-disposition-master-page"></a>バッチ廃棄マスター ページ
 

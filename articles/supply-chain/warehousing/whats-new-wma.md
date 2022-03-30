@@ -2,7 +2,7 @@
 title: Warehouse Management モバイル アプリの新機能または変更された機能
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能および変更された機能を一覧表示します。
 author: Mirzaab
-ms.date: 02/21/2022
+ms.date: 03/11/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384374"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418643"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20190"></a>Version 2.0.19.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- 一般的なデータ照会フローを改善しました。
+- **作業一覧** ページと **品目照会** ページの問題が修正されました。
+- 電池消費を削減しました。
+- 作業カードのフィールド数の制限を削除しました。
+- それぞれのフィールドの数にかかわらず、すべてのワーク カードのサイズが同じ高さに調整されます。
+- バーコードのスペース文字が修正される問題を修正しました。
+- すべてのタイプのデバイスでスライダー ビューとボタン ビューの間を移動できる **ボタン スタイル** の設定を追加しました。
+- アプリがクラッシュする原因となり得るさまざまな問題を修正しました。
+- カスタム ページの最初のテキスト ボックスにフォーカスを自動的に設定する。
+- 調整、調整、および欠落しているプレースホルダ テキストに関連するユーザー補助機能の改善。
 
 ## <a name="version-20170"></a>Version 2.0.17.0
 

@@ -2,7 +2,7 @@
 title: Dynamics 365 Supply Chain Management 10.0.25 (2022 年 4 月) のプレビュー
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.25 の新機能または変更された機能について説明します。
 author: kamaybac
-ms.date: 02/01/2022
+ms.date: 03/14/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 068e65d0bd76d7a9af36c6c3539d0c813efd528a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 26f67be72948e33738cf805b541d3c7e701f8dba
+ms.sourcegitcommit: a8f4d7d21d9af17d80b1213e5e1a81f42fb8b928
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384541"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "8414123"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Dynamics 365 Supply Chain Management 10.0.25 (2022 年 4 月) のプレビュー
 
@@ -39,6 +39,7 @@ ms.locfileid: "8384541"
 | 在庫&nbsp;および&nbsp;物流 | [GS1 形式標準を使用した倉庫内のバーコードのスキャン](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 バーコードと QR コード](../warehousing/gs1-barcodes.md) | 機能管理:<br>*GS1 バーコードのスキャン* |
 | 製造 | [生産現場の実行インターフェースで材料消費と予約する](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*(プレビュー) 生産現場の実行インターフェースで材料消費を登録する (WMS 非対応)*<br><br>かつ/または:<br><br>機能管理:<br>*(プレビュー) 生産現場の実行インターフェイス (WMS 対応) で材料消費を登録* |
 | 製造 | [スケール ユニットで材料消費を登録する](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード](../cloud-edge/cloud-edge-workload-manufacturing.md) | 機能管理:<br>*モバイル アプリにスケール ユニットで材料消費を登録* |
+| 計画 | [計画の最適化集中カレンダーのメンテナンス](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [カレンダーおよびマスター プラン](../master-planning/supply-chain-calendars-master-planning.md) | 既定で有効 |
 | 計画 | [既存の供給を最適化するための計画の最適化に関する提案](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [アクション メッセージ](../master-planning/action-messages.md) | 既定で有効 |
 | 計画 | 簡易計画オーダー | [簡易計画オーダー](../master-planning/planning-optimization/planned-orders-simplified.md ) | 機能管理:<br>*簡易計画オーダー* |
 

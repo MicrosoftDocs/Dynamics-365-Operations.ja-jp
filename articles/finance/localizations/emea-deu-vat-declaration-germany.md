@@ -2,19 +2,19 @@
 title: VAT 申告 (ドイツ)
 description: このトピックでは、公式の XML 形式でドイツの付加価値税 (VAT) 事前申告を設定して生成する方法について説明します。
 author: anasyash
-ms.date: 11/22/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 29c04e1034c05b4672f3657ce0b7bc9d5f6d7c9c
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860883"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402806"
 ---
 # <a name="vat-declaration-germany"></a>VAT 申告 (ドイツ)
 
@@ -163,6 +163,9 @@ VAT 申告を生成するには、組織の税番号 (Steuernummer) を構成す
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a><a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a>VAT 申告フィールドに対するアプリケーション固有パラメーターの設定
 
 VAT 申告を自動的に生成するには、アプリケーションで売上税コードを関連付け、ER 構成で結果を検索します。
+
+> [!NOTE]
+> **機能管理** ワークスペースで、**旧バージョンのERフォーマットからアプリケーション固有のパラメータを使用する** を有効にすることをお勧めします。 この機能を有効にすると、旧バージョンの ER 形式で設定されたパラメーターは、同じ形式の新バージョンでも自動的に適用されるようになります。 この機能が有効でない場合、アプリケーション固有のパラメータを各形式のバージョンに明示的に設定する必要があります。 **旧バージョンの ER 形式からアプリケーション固有のパラメータを使用する** 機能は、Finance バージョン 10.0.23 から **機能管理** ワークスペースで使用できるようになりました。 法人ごとの ER 形式のパラメーターを設定する方法については、[法人ごとの ER 形式のパラメータを設定する](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md)を参照してください。
 
 VAT 申告のボックスを生成する売上税コードを定義するには、次の手順に従います。
 

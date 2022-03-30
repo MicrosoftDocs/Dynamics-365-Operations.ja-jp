@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: f9674bb68d7f577a6efdef3416d1731d743d0555
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: fd6ecb0b7bc1fcf85feab2588622a96cf43b6155
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087169"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407848"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>計画最適化リリース プロセスおよびリリース履歴
 
@@ -33,6 +33,7 @@ Microsoft は、計画最適化を月ごとに更新します。 ただし、業
 
 | 変更 | 機能管理の詳細 | リリース日 |
 |---|---|---|
+| <p>一般的なパフォーマンス、品質、および安定性の向上。<p>計画の最適化集中カレンダーのメンテナンス<p>既存の供給を最適化するための計画の最適化に関する提案 | 機能管理は必要ありません。 | 2022 年 3 月 7 日～ 11 日 |
 | <p>製造オーダーに対する計画の優先順位のサポートを追加しました。 | *計画の最適化の優先順位の高い MRP サポート* という名前の機能の一部としてバージョン 10.0.25 で利用可能です。 | 2021 年 11 月 12～18 日 |
 | <p>一般的なパフォーマンス、品質、および安定性の向上。 | 機能管理は必要ありません。 | 2021 年 11 月 12～18 日 |
 | <p>要求トランザクションでの処理時間計算式、重複のある生産工順、生産工順番号のサポートが追加されました。</p><p>タイムアウト、キャパシティが見つからなかった、スケジューリングのルートに関連する生産スケジュールのエラー メッセージが強化されました。</p><p>計画オーダーと固定オーダーの両方について、入荷日と発行日を計算する際の整合性が改善されました。</p><p>一般的なパフォーマンス、品質、および安定性の向上。 | 機能名: *計画最適化の無限能力のスケジューリング* | 2021 年 10 月 22-27 日 |

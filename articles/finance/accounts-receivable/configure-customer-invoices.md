@@ -2,7 +2,7 @@
 title: 顧客請求書の作成
 description: 販売注文の顧客請求書は、売上に関連し、組織が顧客に提供する請求書です。
 author: ShivamPandey-msft
-ms.date: 02/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087426"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392914"
 ---
 # <a name="create-a-customer-invoice"></a>顧客請求書の作成
 
@@ -82,6 +82,9 @@ ms.locfileid: "8087426"
 1 つ以上の販売注文の請求の準備が整っていて、1 つの請求書に連結する場合に、このプロセスを使用します。 
 
 **販売注文** リスト ページの複数の請求書を選択し、**請求書の生成** を使用して連結します。 **請求の転記** ページで、**注文集計表** 設定を変更して、注文番号 (1 つの販売注文に対して複数の梱包明細がある場合) や請求先 (1 つの請求先/元 ID に対して複数の販売注文がある場合) で集計できます。 **調整** ボタンを使用すると、**注文集計表** に基づいて販売注文を 1 つの請求書に連結します。
+
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>価格のない販売注文の明細行に対して収益勘定に転記する
+価格のない販売注文明細行について、**一般会計** の **収益** 勘定を更新するオプションがあります。 この情報を設定、または表示するには、**売掛金勘定パラメーター** ページの **元帳と売上税** タブにある、**ゼロ価格の販売注文請求書明細行に対して収益勘定に転記** パラメーターに移動します。 (**売掛金勘定 > 設定 > 売掛金勘定パラメーター**)。 **はい** を選択すると、価格のない売上注文の請求書行の **収益** 勘定が更新されます。 収益勘定は、**在庫転記** パラメータ ページの **販売注文** 勘定定義タブで定義します。このオプションを選択しない場合、価格情報がない行は **収益** 勘定に転記されません。
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>転記動作を変更する追加設定
 次のフィールドで転記プロセスの動作を変更します。

@@ -2,7 +2,7 @@
 title: e コマース サイトの作成
 description: このトピックでは、Dynamics 365 Commerce サイト ビルダーで新しい e コマース サイトを作成するために必要な手順と情報について説明します。
 author: bicyclingfool
-ms.date: 03/04/2022
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388214"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402778"
 ---
 # <a name="create-an-e-commerce-site"></a>e コマース サイトの作成
 
@@ -70,6 +70,14 @@ Azure AD **外部ユーザー** の設定を調整する場合は、以下の手
 1. サイトのリスト ビューを開く場合は、右上隅の **サイトの切り替え** を選択し、**サイトの管理** を選択します。 
 1. 名前を変更するサイトの横のチェックボックスをオンにし、コマンド バーの **名前の変更** を選択します。
 1. テンプレート名 配下の  **新規サイト名** ダイアログ ボックスに、新しいサイトの名称を入力し、**OK** を選択します。 サイトの一覧が更新され、サイトの新しい名前が表示されます。
+
+## <a name="delete-a-site"></a>サイトの削除
+
+サイト ビルダーでサイトを削除するには、以下の手順で行います。
+
+1. サイトのリスト ビューを開く場合は、右上隅の **サイトの切り替え** を選択し、**サイトの管理** を選択します。
+1. 削除したいサイトを選択し、コマンド バーから **削除** を選択します。
+1. **\<site name\> を削除する** ダイアログ ボックスに、新しいサイトの名称を入力し、**削除** を選択します。
 
 ## <a name="additional-resources"></a>追加リソース
 

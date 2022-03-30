@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e271ddd3331d7b5de78f00a02b60a0479879c172
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 575aef709a0ac3b0cf8150f1e816dac04c069814
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700008"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396502"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>組み込みマスター計画と計画最適化の違い
 
@@ -36,6 +36,7 @@ ms.locfileid: "7700008"
 | 安全在庫フルフィルメント | 計画の最適化では、**品目補充** ページの **実行最小** フィールドに、常に *今日の日付＋調達時間* のオプションが使用されます。 これは、安全在庫に調達時間が含まれてい場合、手持ち在庫が少ない場合に作成された計画的な注文が、このリードタイムが原因で常に遅延するため、不要な計画的注文などを防ぐことができます。 |
 | 安全在庫のペギングと正味必要量 | *安全在庫* の必要量は含まれておらず、**正味必要量** ページにも表示されません。 安全在庫は需要を表すものではなく、要求日も関連付けられていません。 その代わりに、常にどれだけの在庫を保持していなければならないかという制約を設けます。 ただし、**最小** のフィールド値は、マスタープランで計画された注文を計算する際にも考慮されます。 **正味必要量** ページの **累計数量** 列を検査し、この値が考慮されていることを確認してください。 |
 | 配送カレンダー | **出荷のモード** ページで **配送カレンダー** 列の値は無視されます。 |
+| 値を持たない最小/最大補充コード| 組み込み計画エンジンを使用する場合、最小値または最大値が設定されなっている最小/最大補充コードを使用すると、計画エンジンは補充コードを要求として処理し、要求ごとに 1 つの注文を作成します。 計画の最適化を使用すると、システムは 1 日に 1 つの注文を作成してその日の全額を処理します。  |
 
 ## <a name="additional-resources"></a>追加リソース
 

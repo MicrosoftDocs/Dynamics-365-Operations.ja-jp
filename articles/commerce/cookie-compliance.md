@@ -2,7 +2,7 @@
 title: Cookie のコンプライアンス
 description: このトピックでは、Cookie のコンプライアンスおよび Microsoft Dynamics 365 Commerce に含まれる既定のポリシーに関する考慮事項について説明します。
 author: BrianShook
-ms.date: 07/30/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
+ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747700"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "8403150"
 ---
 # <a name="cookie-compliance"></a>Cookie のコンプライアンス
 
@@ -58,6 +58,7 @@ Microsoft が Cookie のコンプライアンスに使用する基本原則の�
 | \_msdyn365___aud_0                          | ターゲティングで使用されるセグメント値を格納し、サイト ユーザーが要求したページまたはフラグメントでターゲティングが構成されている場合にのみ使用されます。 Cookie は、セグメント値がサードパーティのセグメンテーション プロバイダーからのものである場合にのみ配置されます。      | 7 日間 |
 | \_msdyn365___aud_1                           | ターゲティングで使用されるセグメント値を格納し、サイト ユーザーが要求したページまたはフラグメントでターゲティングが構成されている場合にのみ使用されます。 Cookie は、セグメント値がサードパーティのセグメンテーション プロバイダーからのものである場合にのみ配置されます。      | 7 日間 |
 | \_msdyn365___aud_2                           | ターゲティングで使用されるセグメント値を格納し、サイト ユーザーが要求したページまたはフラグメントでターゲティングが構成されている場合にのみ使用されます。 Cookie は、セグメント値がサードパーティのセグメンテーション プロバイダーからのものである場合にのみ配置されます。      | 7 日間 |
+| d365gi                                       | このクッキーは、サードパーティの位置情報サービスを使用する場合に、地理的な位置情報を保存します。      | 1 日間 |
 
 サイト ユーザーがサイト内のソーシャル メディア リンクを選択した場合、次の表の Cookie もユーザーのブラウザーで追跡されます。
 
@@ -65,17 +66,17 @@ Microsoft が Cookie のコンプライアンスに使用する基本原則の�
 | ドメイン                      | Cookie               | 説明                                                  | 配賦元                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | LinkedIn 広告 ID の同期                                      | LinkedIn フィードと分析情報タグ                                |
-| .linkedin.com               | li_sugr                  | ブラウザーの識別子                                           | 指定した国に IP アドレスがない場合の LinkedIn 分析情報タグ |
+| .linkedin.com               | li_sugr                  | ブラウザーの識別子                                           | 指定した国に IP アドレスがない場合の LinkedIn Insight tag |
 | .linkedin.com               | BizographicsOptOut       | サード パーティの追跡のオプトアウト ステータスを決定します。              | LinkedIn ゲスト コントロールと業界のオプトアウト ページ           |
 | .linkedin.com               | \_guid                    | Google 広告のブラウザーの識別子。                            | LinkedIn フィード                                                |
 | .linkedin.com               | li_oatml                 | 変換の追跡、リターゲット、および分析のメンバーの間接識別子。 | LinkedIn 広告と分析情報タグ                                |
 | 各種ファースト パーティのドメイン | li_fat_id                | 変換の追跡、リターゲット、および分析のメンバーの間接識別子。 | LinkedIn 広告と分析情報タグ                                |
-| .adsymptotic.com            | U                        | ブラウザーの識別子                                           | 指定した国に IP アドレスがない場合の LinkedIn 分析情報タグ |
+| .adsymptotic.com            | U                        | ブラウザーの識別子                                           | IP アドレスが指定した国にない場合の LinkedIn Insight tag |
 | .linkedin.com                | bcookie                  | ブラウザ ID Cookie                                            | LinkedIn への要求                                         |
 | .linkedin.com                | bscookie                 | セキュア ブラウザ Cookie                                        | LinkedIn への要求                                         |
 | .linkedin.com               | lang                     | 既定のロケールと言語を設定します。                                 | LinkedIn への要求                                         |
 | .linkedin.com                | lidc                     | ルート指定に使用されます。                                             | LinkedIn への要求                                         |
-| .linkedin.com               | aam_uuid                 | Adobe オーディエンス マネージャー Cookie                                                     | ID 同期の設定                                              |
+| .linkedin.com               | aam_uuid                 | Adobe Audience Manager Cookie                                                     | ID 同期の設定                                              |
 | .linkedin.com               | \_ga                      | Google アナリティクス Cookie                                            | Google アナリティクス                                             |
 | .linkedin.com               | \_gat                     | Google アナリティクス Cookie                                             | Google アナリティクス                                             |
 | .linkedin.com               | liap                     | Google アナリティクス Cookie                                             | Google アナリティクス                                             |

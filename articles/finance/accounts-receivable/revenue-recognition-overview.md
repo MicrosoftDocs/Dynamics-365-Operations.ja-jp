@@ -2,7 +2,7 @@
 title: 売上認識の概要 (ビデオを含む)
 description: このトピックでは、売上認識機能に関する情報を提供します。 この機能により、複数要素注文の収益価格と収益スケジュールの両方を認識するための会社固有のルールを定義できる、柔軟なフレームワークが提供されます。
 author: kweekley
-ms.date: 11/11/2019
+ms.date: 03/15/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: a5e7b6407fe72c56ea04920532d4327d2b89f8d1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: aae46fa90d306355608200f96ae5cf10793c8464
+ms.sourcegitcommit: 0925b9ee0cb0df93047681a243aacc2abd404dea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982590"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "8446181"
 ---
 # <a name="revenue-recognition-overview"></a>収益認識の概要
 
@@ -26,10 +26,7 @@ ms.locfileid: "7982590"
 
 製品、サービス、サブスクリプションなどの複数の要素を販売する業界の会社では、一連の会社固有および業界固有のガイドラインに基づいて収益を認識できるように、複数要素注文を細分化できる能力が求められます。
 
-> [!NOTE]
-> 収益認識機能は、機能管理を使用して有効にすることはできません。 現時点では、コンフィギュレーション キーを使用して有効にする必要があります。
-
-> バンドル機能を含む収益認識は、Commerce チャネル (eコマース、POS、コール センター) での使用はサポートされません。 収益認識で構成された品目は、Commerce チャネルで作成された注文やトランザクションに追加できません。
+バンドル機能を含む収益認識は、Commerce チャネル (eコマース、POS、コール センター) での使用はサポートされません。 収益認識で構成された品目は、Commerce チャネルで作成された注文やトランザクションに追加できません。
 
 一般に、収益認識プロセスは、次のタスクを実行するために使用できます。
 

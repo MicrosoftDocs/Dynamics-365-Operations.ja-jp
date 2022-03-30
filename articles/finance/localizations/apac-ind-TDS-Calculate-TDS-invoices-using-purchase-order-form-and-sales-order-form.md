@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d0e6cce8f7a90cd1624e64023a1b51fd02d12152f874e13ce2e5d22af16fe173
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28f83b3d5aa028d819b837350fe69c2a9c9833ea
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782846"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407872"
 ---
 # <a name="calculate-tds-invoices-using-purchase-order-form-and-sales-order-form"></a>発注書フォームと販売注文フォームを使用した TDS 請求書の計算
 
@@ -48,7 +47,7 @@ ms.locfileid: "6782846"
 
 7. **源泉徴収税** を選択し、**一時源泉徴収税トランザクション** ページを開きます。 **一時源泉徴収票** ページの上部ペインで、以下のフィールドで確認できます。
 
-   - **合計** **源泉徴収** **税** **額** – TDS グループのトランザクションに対して計算された TDS の合計です。
+   - **合計****源泉徴収****税****額** - TDS グループのトランザクションに対して計算された TDS の合計です。
 
    - **値** – トランザクションの TDS の計算に使用された合計割合です。 合計割合は、TDS 税コードに対して定義され、TDS グループに関連付けられた式に基づきます。
 

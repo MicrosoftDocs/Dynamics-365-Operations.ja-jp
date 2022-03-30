@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 43e57b75933a67c1ee3fb0a59400b0d1bdab931cec5826346247cc361a0206df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7350e697beec42b349082df06b77a89d526c27c
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720423"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396527"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 
@@ -31,7 +31,7 @@ ms.locfileid: "6720423"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。
 
 > [!NOTE]
-> Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+> 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
 
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Supply Chain Management 10.0.19 リリースの削除済みまたは非推奨の機能
@@ -52,7 +52,7 @@ ms.locfileid: "6720423"
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **廃止 / 削除の理由** | 2021 年 4 月付で、*Dynamics 365 for Finance and Operations - 倉庫管理* (倉庫アプリ) は廃止され、2022 年 4 月以降はサポートされません。 これで、Supply Chain Management のバージョン 10.0.17 にリリースされた *Warehouse Mobile モバイル アプリ* によって置き換えられたのです。 この新しいアプリは完全に交換するものですが、移行を容易にする基になる同じフレームワークを使用します。 必要に応じて、2 つのアプリケーションを並べて、新しいアプリの使い方をユーザーが徐々に調整できるよう支援することができます。<br><br>新しい Warehouse Management モバイル アプリについての詳細は、[Warehouse Management モバイル アプリケーション](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) と [Warehouse Management モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md) をご覧ください。 |
+| **廃止 / 削除の理由** | 2021 年 4 月付で、*Dynamics  365 for Finance and Operations - 倉庫管理* (倉庫アプリ) は非推奨となり、2022 年 4 月以降はサポートされなくなります。 これで、Supply Chain Management のバージョン 10.0.17 にリリースされた *Warehouse Mobile モバイル アプリ* によって置き換えられたのです。 この新しいアプリは完全に交換するものですが、移行を容易にする基になる同じフレームワークを使用します。 必要に応じて、2 つのアプリケーションを並べて、新しいアプリの使い方をユーザーが徐々に調整できるよう支援することができます。<br><br>新しい Warehouse Management モバイル アプリについての詳細は、[Warehouse Management モバイル アプリケーション](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) と [Warehouse Management モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md) をご覧ください。 |
 | **別の機能で置き換えられているか?**   | はい、新しい Warehouse Mobile モバイル アプリによって置き換えられる必要があります。 |
 | **影響を受ける製品領域**         | Supply Chain Management - 倉庫アプリ |
 | **配置オプション**              | クラウドとオンプレミス |
@@ -78,7 +78,7 @@ ms.locfileid: "6720423"
 | **別の機能で置き換えられているか?**   | 既存の組み込み Supply Chain Management 計画エンジンは、マスター計画の最適化によって置き換えられます。 |
 | **影響を受ける製品領域**         | Supply Chain Management -マスター プラン |
 | **配置オプション**              | クラウドのみ。 プランの最適化では、オンプレミス展開に対応していません。 |
-| **状態**                         | 非推奨。 2022 年の 4 月 1 日までに、製造シナリオは組込型の Dynamics 365 Supply Chain Management マスター プラン エンジンではサポートされなくなります。 製造シナリオでは、顧客はマスター プランの計画にプラン最適化を使用する必要があります。 詳細については、[プランの最適化ドキュメント](../master-planning/planning-optimization/planning-optimization-overview.md) を参照してください。 Dynamics 365 Supply Chain Management のオンプレミスの配置の顧客は、2022 年 4 月以降の製造シナリオでは引き続き Supply Chain Management のマスター プラン エンジンを使用することができます。 ただし、今後の機能拡張は提供されません。 |
+| **状態**                         | 非推奨。 2022 年の 4 月 1 日までに、製造シナリオは組込型の Supply Chain Management マスター プラン エンジンに対してはサポートされなくなります。 その日付を以て、組み込み型計画エンジンの製造シナリオにおける有効な開発はすべて中止され、新しい機能はリリースされなくなり、重要なバグ修正のみがリリースされます。 この日付以降は、製造シナリオのサポートを必要となすべての会社がマスター プランの計算に計画の最適化を使用する必要があります。 計画の最適化では、2022 年 10 月までに製造シナリオが完全サポートされる予定です。 詳細については、[計画の最適化に関するドキュメント](../master-planning/planning-optimization/planning-optimization-overview.md) を参照してください。<br><br>Supply Chain Management のオンプレミスをデプロイしている顧客は、2022 年 4 月以降の製造シナリオでは引き続き組み込み型のマスター プラン エンジンを使用することができます。 ただし、今後の機能拡張は提供されません。 |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Supply Chain Management 10.0.11 リリースの削除済みまたは非推奨の機能
 

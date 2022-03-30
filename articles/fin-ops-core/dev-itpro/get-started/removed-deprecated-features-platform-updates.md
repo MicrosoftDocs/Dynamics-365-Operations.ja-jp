@@ -2,7 +2,7 @@
 title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、財務と運用アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384723"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396552"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォームの機能
 
@@ -31,6 +31,18 @@ ms.locfileid: "8384723"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="feature-removal-effective-march-14-2022"></a>2022 年 3 月 14 日付け機能削除
+
+### <a name="xslt-scripting-in-data-management"></a>データ管理の XSLT スクリプト
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | データ管理での XSLT スクリプトのサポートは、財務および運用アプリ内でセキュリティとデータ保護の改善のためには推奨されません。  |
+| **別の機能で置き換えられているか?**   | いいえ。 顧客と ISV は、XSLT スクリプトの代わりとして、X++ 言語に基づいてソリューションの再実装を検討する必要があります。 |
+| **影響を受ける製品領域**         | 財務と運用アプリ。 |
+| **配置オプション**              | すべてです。 |
+| **状態**                         | 非推奨 - 削除予定日は 2022 年 3 月 14 日です。<br><br>例外: 現在 XLST スクリプトを使用している顧客 バージョン 10.0.30 以降に更新するまで、このファイルは引き続き使用できます。 この例外を含む顧客は、Microsoft 365 管理センターで使用できるメッセージ センターで通知を受け取っています。 |
 
 ## <a name="feature-removal-effective-october-2021"></a>2021 年 10 月に機能削除
 

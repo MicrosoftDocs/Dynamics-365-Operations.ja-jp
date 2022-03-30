@@ -2,7 +2,7 @@
 title: 財務分析コード セット
 description: このトピックでは、財務分析コード セットについて説明し、その使用を最適化するためのヒントを提供します。
 author: yukonpeegs
-ms.date: 03/23/2021
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 415a41100cc5be740f064d52598cd256c0aa2ae1d45473c8039bdc6e22381b3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9274e7f85005ab27d9f2b35fbb0be42e216941c9
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739981"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392939"
 ---
 # <a name="financial-dimension-sets"></a>財務分析コード セット
 
@@ -61,6 +61,11 @@ ms.locfileid: "6739981"
 ## <a name="clear-balances"></a>残高のクリア
 
 **残高のクリア** ボタンを使用して残高を削除し、それ以上の更新を停止します。 分析コード セットによる一般会計の転記活動への影響はなくなりました。
+
+## <a name="delete-a-dimension-set"></a>分析コードセットの削除
+
+特定の分析コード **セットの残高データに** 関する潜在的な問題を解決するために、分析コード セットを任意の形式で削除および再作成しません。 分析コード セットを再作成すると、原価が計算されます。 問題に関する詳細については、カスタマ サポートに問い合わせてください。 
+
 
 詳細については、「[財務分析コード](financial-dimensions.md)」を参照してください。
 
