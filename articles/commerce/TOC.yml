@@ -390,7 +390,7 @@
                   href: tasks/worker.md
                 - name: Modern Point of Sale (MPOS)、Cloud POS、Store Commerce
                   items:
-                    - name: Microsoft Dynamics 365 Commerce の Store Commerce アプリ (プレビュー)
+                    - name: Store Commerce アプリ
                       href: dev-itpro/store-commerce.md
                     - name: デバイス管理実装ガイダンス
                       href: implementation-considerations-devices.md
@@ -2870,8 +2870,10 @@
                   href: troubleshoot/synchronization-error.md
             - name: 支払処理
               items:
-                - name: 返品注文の払戻が拒否されている
+                - name: 返品注文の払戻が拒否されます
                   href: troubleshoot/refund-declined.md
+                - name: 返金可能な請求金額が、返品した数量に基づいて誤って計算されます
+                  href: troubleshoot/refund-miscalculated-partial-return.md
                 - name: Adyen 向け Dynamics 365 Payment Connector
                   items:
                     - name: Adyen 向け Dynamics 365 Payment Connector に関する問題のトラブルシューティング

@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-25.md
                 - name: Finance 10.0.24 (2 月)
                   href: get-started/whats-new-changed-10-0-24.md
-                - name: Finance 10.0.23 (1 月)
-                  href: get-started/whats-new-changed-10-0-23.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -408,14 +406,26 @@
                   href: accounts-receivable/rev-rec-reallocation-scenario-2.md
                 - name: 売上認識の再配賦 – シナリオ 3
                   href: accounts-receivable/rev-rec-reallocation-scenario-3.md
-                - name: 売上認識の再配賦 – シナリオ 4
+                - name: 収益認識の再配賦 – シナリオ 4
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
             - name: サブスクリプション請求管理
               items:
                 - name: サブスクリプション請求管理の概要
                   href: accounts-receivable/subscription-billing-summary.md
-                - name: 請求スケジュールの設定
-                  href: accounts-receivable/sb-billing-schedules.md
+                - name: 定期契約請求
+                  items:
+                    - name: 請求スケジュールの作成
+                      href: accounts-receivable/sb-billing-schedules.md
+                    - name: 請求スケジュールのコピー
+                      href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: マイルストーン請求
+                      href: accounts-receivable/sb-milestonebilling.md
+                    - name: 請求スケジュールの終了
+                      href: accounts-receivable/terminate-billing-schedule.md
+                - name: 収益および経費の繰延
+                  items: null
+                - name: 複数要素収益配賦
+                  items: null
             - name: 支払と決済
               items:
                 - name: 顧客支払の概要
@@ -1443,11 +1453,11 @@
                             - name: SharePoint チャネルの構成
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
                         - name: Finance および Supply Chain Management での電子請求の設定と使用
-                          items: null
-                        - name: 電子請求との統合のアクティブ化と設定
-                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                        - name: 電子請求パラメーターの設定
-                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                          items:
+                            - name: 電子請求との統合のアクティブ化と設定
+                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                            - name: 電子請求パラメーターの設定
+                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: 電子請求の使用
                           items:
                             - name: 電子請求への電子ドキュメントの送信
@@ -1532,6 +1542,10 @@
                           items:
                             - name: VAT 申告
                               href: localizations/emea-dnk-vat-declaration-denmark.md
+                        - name: フィンランドの申告
+                          items:
+                            - name: VAT 申告
+                              href: localizations/emea-fin-vat-declaration-mult-tax-id.md
                         - name: フランスの申告
                           items:
                             - name: VAT 申告
@@ -1546,6 +1560,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU 販売リスト
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: ノルウェーの申告
+                          items:
+                            - name: VAT 申告
+                              href: localizations/emea-nor-vat-declaration.md
                         - name: スペインの申告
                           items:
                             - name: VAT に関する情報の即時提供 (Suministro Inmediato de Información del IVA、SII)
@@ -1564,10 +1582,6 @@
                           items:
                             - name: VAT 申告
                               href: localizations/emea-gbr-vat-declaration.md
-                        - name: ノルウェーの申告
-                          items:
-                            - name: VAT 申告
-                              href: localizations/emea-nor-vat-declaration.md
                     - name: 移動オーダーに対する税計算の有効化
                       items:
                         - name: 移動オーダーに対する税金機能のサポート
@@ -1694,9 +1708,7 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: 梱包材費用
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: VAT 明細書
-                  href: localizations/emea-aut-vat-statement-details.md
-                - name: 国境を越えたサービスのレポート
+                - name: 国境を越えたサービスの申告
                   href: localizations/emea-aut-cross-border-services-report.md
                 - name: オーストリアのイントラスタット
                   href: localizations/emea-aut-intrastat.md
@@ -2020,9 +2032,7 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: レポートおよびドキュメントの金額表示方法の更新
                   href: localizations/emea-amount-printing-forms.md
-                - name: VAT 明細書
-                  href: localizations/emea-cze-vat-statement-details.md
-                - name: VAT 申告 (チェコ共和国)
+                - name: VAT 申告
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: チェコのイントラスタット
                   href: localizations/emea-cze-intrastat.md
@@ -2060,6 +2070,8 @@
                   href: localizations/tasks/set-up-payment-slip-format.md
                 - name: デンマークのイントラスタット
                   href: localizations/emea-dnk-intrastat.md
+                - name: VAT 申告
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: エジプト
               items:
                 - name: エジプトの概要
@@ -2242,6 +2254,8 @@
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
                 - name: フィンランドのイントラスタット
                   href: localizations/emea-fin-intrastat.md
+                - name: VAT 申告
+                  href: localizations/emea-fin-vat-declaration.md
             - name: フランス
               items:
                 - name: フランスの概要
@@ -2332,12 +2346,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: VAT 申告
                   href: localizations/emea-deu-vat-declaration-germany.md
-                - name: VAT 申告電子送信 (ELSTER)
-                  href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: ドイツのイントラスタット
                   href: localizations/emea-deu-intrastat.md
-                - name: VAT 明細書
-                  href: localizations/emea-de-vat-declaration.md
                 - name: 顧客電子請求書レポート
                   href: localizations/emea-deu-e-invoices.md
                 - name: 仕訳リスト レポート
@@ -2348,8 +2358,6 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: EU 販売リスト
                   href: localizations/emea-deu-eu-sales-list.md
-                - name: VAT 申告
-                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: ハンガリー
               items:
                 - name: ハンガリーの概要
@@ -2558,13 +2566,15 @@
                                   href: localizations/apac-ind-GST-return-order-form.md
                             - name: 外部トランザクション
                               items:
-                                - name: 商品及びサービス税がある商品のインポート
+                                - name: 販売税の対象である商品の輸入
                                   href: localizations/apac-ind-GST-import-goods-gst.md
-                                - name: 商品及びサービス税があるサービスのインポート
+                                - name: 販売税の対象であるサービスの輸入
                                   href: localizations/apac-ind-import-services-gst.md
-                                - name: 税率 0 の商品のエクスポート
+                                - name: 輸入注文を入力するページでの請求書の請求金額配賦
+                                  href: localizations/apac-ind-charge-allocation-boe-page-import-orders.md
+                                - name: 税率 0 の商品の輸出
                                   href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
-                                - name: 税率 0 のサービスのエクスポート
+                                - name: 税率 0 のサービスの輸出
                                   href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                                 - name: エクスポート注文に対する貸方票または借方票
                                   href: localizations/apac-ind-GST-credit-debit-note-against-export-order.md
@@ -3116,17 +3126,13 @@
               items:
                 - name: オランダの概要
                   href: localizations/netherlands.md
-                - name: VAT 申告
-                  href: localizations/emea-nl-VAT-declaration.md
-                - name: 電子税申告 (EVAT)
-                  href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL 統合
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: 監査ファイル (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
                 - name: VAT 申告 (オランダ)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
-                - name: オランダのイントラスタット
+                - name: イントラスタット
                   href: localizations/emea-nl-intrastat.md
                 - name: EU 販売リスト
                   href: localizations/emea-nl-EU-sales-list.md
@@ -3540,7 +3546,7 @@
                   href: localizations/emea-swe-payment-formats-import.md
                 - name: スウェーデンの消費税支払申告
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
-                - name: スウェーデンの VAT 申告
+                - name: VAT 申告
                   href: localizations/emea-swe-VAT-declaration-Sweden.md
                 - name: スウェーデンのイントラスタット
                   href: localizations/emea-swe-intrastat.md

@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.24 (2022 年 2 月)
                   href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.23 (2022 年 1 月)
-                  href: get-started/whats-new-platform-updates-10-0-23.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -240,6 +238,8 @@
               href: data-entities/configure-export-data-lake.md
             - name: Azure Data Lake の財務と運用アプリ
               href: data-entities/finance-data-azure-data-lake.md
+            - name: Azure Data Lake のデータと格納メタデータ
+              href: data-entities/Azure-Data-Lake-Enhanced-Metadata.md
             - name: エンティティ格納を Data Lake として使用可能にする
               href: data-entities/entity-store-data-lake.md
             - name: Azure Data Lake service (プレビュー) へのエクスポートによって生成されるビジネス イベント
@@ -410,7 +410,9 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: 複数の環境への同じ AD FS インスタンスの再利用
                       href: deployment/onprem-reuseadfs.md
-                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の SQL Serverインスタンスのアップグレード
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の Windows Server をアップグレードする
+                      href: deployment/onprem-upgrade-os.md
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の SQL Server インスタンスのアップグレード
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: ローカル エージェント
                   items:
@@ -932,6 +934,8 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: パートナー向け LCS
                   href: lifecycle-services/getting-started-lcs.md
+                - name: サポートされている Web ブラウザー
+                  href: lifecycle-services/web-browsers.md
                 - name: RESTful API
                   items:
                     - name: 環境の開始と停止
@@ -1490,6 +1494,8 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: パラメーター ファイルのアップグレード
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
+            - name: Azure DevOps を利用しない試用版モード
+              href: perf-test/rsat/rsat-trial-without-devops.md
             - name: Regression Suite Automation Tool チュートリアル
               href: perf-test/rsat/rsat-tutorial.md
             - name: 管理者以外のユーザーのコンフィギュレーション
