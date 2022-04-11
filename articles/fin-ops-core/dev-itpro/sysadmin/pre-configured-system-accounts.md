@@ -1,8 +1,8 @@
 ---
 title: コンフィギュレーション済みのシステム アカウント
 description: このトピックでは、Finance and Operations 環境で事前設定されているシステム アカウントについて説明します。
-author: laneswenka
-ms.date: 06/04/2021
+author: jaredha
+ms.date: 03/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: sericks
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: laswenka
+ms.author: jaredha
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 5400cff43aa11729f46fb31e2795af9c0fa75d9895e3cf6b2b83b6c88f4ac96d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eba82f412793f2a670834445a4c7150f76188ebc
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737829"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408164"
 ---
 # <a name="preconfigured-system-accounts"></a>コンフィギュレーション済みのシステム アカウント
 
@@ -31,12 +31,14 @@ ms.locfileid: "6737829"
 > [!IMPORTANT] 
 > システム アカウントを削除しないでください。 これらの勘定を削除すると、Microsoft が提供する主要な機能が中断されます。
 
-| 口座の詳細 | アカウントの目的/ユース ケース|
+| 取引先企業 | 目的/ユース ケース |
 |---|---|
-| `Axrunner` | このアカウントは、環境の稼働状態を監視し、必要に応じて警告を提供するために使用されます。<br><br>**注**: このアカウントは、セルフサービス環境で非推奨になり、使用されなくなりました。 |
-| `FRServiceUser` | このアカウントは Financial Reporting のユーザー アカウントで、Management Reporter アプリケーションが  Finance and Operations と統合するために使用します。 |
-| `RetailServiceAccount` | このアカウントは、Retail サービスで Finance and Operations 環境に接続するために使用されます。 |
-| `SysHealthServiceUser` または `Axping` (展開された製品バージョンによって異なる) | このアカウントは、環境の可用性と稼働状態を監視し、必要に応じて警告を提供するために使用されます。 |
-
+| Axrunner | <p>環境の状態を監視し、必要に応じて警告を提供します。</p><p>**注**: このアカウントは、セルフサービス環境で非推奨になり、使用されなくなりました。</p> |
+| FRServiceUser | Financial Reporting サービスのユーザー アカウント。 Management Reporter アプリケーションでは、財務と運用アプリとの統合にこのアカウントを使用します。 |
+| PowerPlatformS2S | 財務と運用アプリの二重書き込みテーブルと仮想テーブルを Microsoft Dataverse に接続します。|
+| RetailServiceAccount | Retail サービスを財務と運用環境に接続します。 |
+| ScaleUnitManagement | スケール ユニット マネージャー ポータルと通信します。 このアカウントは、バージョン 10.0.23 にアップグレードすると自動的に追加されます。 |
+| ScaleUnitPipeline | スケール ユニット間の通信を管理および追跡します。 このアカウントは、バージョン 10.0.19 にアップグレードすると自動的に追加されます。 |
+| SysHealthServiceUser または Axping (展開された製品バージョンによって異なる) | 環境の可用性と状態を監視し、必要に応じて警告を提供します。 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

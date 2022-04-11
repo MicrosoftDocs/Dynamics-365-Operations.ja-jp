@@ -12,17 +12,16 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30
-ms.openlocfilehash: d373639db359b7dca5b18393151a93846c90a660
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 3908da96fa28f060e07afc546784c5c436f0c78e
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077179"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462537"
 ---
 # <a name="commerce-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できるコマースの機能
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、オンプレミス配置で使用できるコマースの機能を一覧表示します。
 

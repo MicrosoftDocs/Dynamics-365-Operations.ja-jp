@@ -2,7 +2,7 @@
 title: Adyen 向け Dynamics 365 Payment Connector に関するよく寄せられる質問
 description: このトピックでは、Adyen 向けの Microsoft Dynamics 365 Payment Connector に関するよく寄せられる質問への回答を提供します。
 author: rassadi
-ms.date: 09/30/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 63aa76116a30431e836cbe836679310969bff542
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 76b175c52bc2a175332d6cb6b897d4e147c01a1d
+ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592474"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "8403134"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-faq"></a>Adyen 向け Dynamics 365 Payment Connector に関するよく寄せられる質問
 
@@ -83,6 +83,10 @@ Adyen は、カードの最初の 6 桁を照合のために返します。 Adye
 Adyen が決済済の状態で支払の発生元のサービスを処理している場合でも、コール センターおよびオンライン店舗では支払が成功したと見なされます。
 
 Adyen 支払ステータス コードの完全な一覧については、[支払のライフサイクル](https://docs.adyen.com/account/payments-lifecycle) を参照してください。
+
+### <a name="can-i-cancel-a-refund-action"></a>払戻アクションをキャンセルできますか?
+
+Adyen は、参照型と非参照型の 2 種類の払戻に対応しています。 参照型払戻はキャンセルできません。 未参照型の払戻の場合、キャンセルが試みられても、キャンセルが成功するかどうかは、支払発行者と、Adyen による処理に対して設定されている遅延の可能性に依存します。 POS でローカル払戻キャンセルを強制するときにエラーが発生した場合、POS ではクレジットが使用できます。 ただし、リンクされていない払戻のキャンセルが支払ゲートウェイで受け付けられない場合、Dynamics 365 レポートと Adyen レポートの間に不一致が発生する場合があります。 Adyen による未参照型払戻のキャンセルの詳細については、[未参照型の払戻のキャンセル](https://docs.adyen.com/point-of-sale/refund-payment/cancel-unreferenced)を参照してください。 
 
 ## <a name="next-steps"></a>次のステップ
 

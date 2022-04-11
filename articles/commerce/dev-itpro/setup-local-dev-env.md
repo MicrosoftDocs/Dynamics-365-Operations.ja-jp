@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 09/16/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2021
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: 1e8d6d1777c692f513edfd71fe36e4dc94dab609
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 3d6787770beda73e37657f7b2181e895d6d9172a
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7582279"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487820"
 ---
 # <a name="set-up-a-local-development-environment"></a>ローカル開発環境の設定
 
@@ -35,6 +35,10 @@ Commerce は、クラウドベース環境とローカル環境の両方をサ�
 
     - **自己ホスト CSU** – この環境タイプは、CSU をローカルに展開します (実行可能ファイルとしての自己ホスト)。 リアルタイムの呼び出しに対応するインターネット インフォメーション サービス (IIS)、Commerce データ同期、または Commerce Headquarters 接続はありません。 このオプションを使用した場合、Commerce Headquarters と CSU チャネルのデータベース間でデータの同期は行われません。 チャネル データベースには、開発目的で使用される既定のデモ データが入力されています。 ギフト カードを発行するための呼び出しなど、Commerce Headquarters へのすべての要求および呼び出しは、ローカル CSU によって阻止されます。
     - **IIS ホスト CSU:** – この環境タイプは、IIS に CSU を展開し、Commerce Headquarters と CSU チャネル データベースの間でデータを同期する Async Client を設定します。 また、Commerce Headquarters とのリアルタイム接続のサポートも設定します。 この設定には、追加のコンフィギュレーションがいくつか必要です。 たとえば、Azure Active Directory (Azure AD) アプリを設定し、証明書を展開する必要があります。 IIS ホスト CSU をインストールする方法の詳細については、[IIS ホストされた Commerce Scale Unit ドキュメントの構成およびインストール](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit)を参照してください。
+
+## <a name="hardware-requirements"></a>ハードウェア要件
+
+16 GB の RAM と少なくとも 2 つの CPU コアを持つ Windows コンピューターを使用することをお勧めします。 財務と運用アプリ、Retail Server、eコマース開発、その他の同時プロセスを実行している場合は、24 GB のRAM と 4 つの CPU コアをお勧めします。
 
 ## <a name="local-self-hosted-csu"></a>ローカルの自己ホスト CSU
 
@@ -74,7 +78,7 @@ IIS モードは完全なオンプレミスの Scale Unit であり、すべて�
 自己ホスト環境または IIS ホスト環境を設定する前に、次の前提条件をこの順序で完了します:
 
 1. Windows x64 用 .NET Core SDK 3.1 を [.NET Core 3.1 をダウンロードする](https://dotnet.microsoft.com/download/dotnet/3.1)からインストールします。
-2. [SQL Server](/sql-server/sql-server-downloads) の任意のエディションをインストールし、全文検索を有効にします。 詳細については、[SQL Server (セットアップ) のインスタンスへの追加機能](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup)を参照してください。 サポートされる最小バージョンは、13.0.5026.0 SqlServer 2016 SP2 です。
+2. [SQL Server](/sql/database-engine/install-windows/install-sql-server) の任意のエディションをインストールし、全文検索を有効にします。 詳細については、[SQL Server (セットアップ) のインスタンスへの追加機能](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup)を参照してください。 サポートされる最小バージョンは、13.0.5026.0 SqlServer 2016 SP2 です。
 
     + 複合の (SQL + Windows/Integrated) 認証を有効にします。
     + SQL Server の既定のインスタンスがインストールされていない場合、CSU の展開は失敗します。 エラー メッセージは、インスタンスが見つからなかったことを示します。 代わりに名前付きインスタンスを使用する場合は、行 78 の後に次の行を挿入して **Install.ps1** ファイルを編集します。 (このスクリプトは、**Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Scripts** フォルダーで検索できます。)
@@ -97,7 +101,7 @@ IIS モードは完全なオンプレミスの Scale Unit であり、すべて�
 7. Windows 用 Visual Studio Code の 64-ビット バージョンを [Visual Studio Code をダウンロードする](https://code.visualstudio.com/download)からインストールします。
 8. [拡張機能マーケットプレース](https://code.visualstudio.com/docs/editor/extension-marketplace)の手順に従って、Visual Studio Code の  Visual Studio Code 用 C# (OmniSharp を利用) 拡張機能をインストールします。
 9. [Scale Unit GitHub リポジトリ (リポジトリ)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit) を複製またはダウンロードします。
-10. LCS で、[共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary)に移動し、**Retail セルフサービス パッケージ** をアセット タイプとして選択し、**Commerce Scale Unit (PREVIEW)** で終わるファイルを検索します。 必要なリリースのバージョン (バージョン 10.0.22 または 10.0.23 など) を選択してください。 ファイルをダウンロードし、前の手順で複製またはダウンロードした Scale Unit GitHub リポジトリで、**ダウンロード** フォルダーに保存します (**Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Download/**)。
+10. LCS で、[共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary)に移動し、**Retail セルフサービス パッケージ** をアセット タイプとして選択し、**Commerce Scale Unit (SEALED)** で終わるファイルを検索します。 必要なリリースのバージョン (バージョン 10.0.22 または 10.0.23 など) を選択してください。 ファイルをダウンロードし、前の手順で複製またはダウンロードした Scale Unit GitHub リポジトリで、**ダウンロード** フォルダーに保存します (**Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Download/**)。
 
 ## <a name="additional-prerequisites-for-iis-hosted-csu"></a>IIS ホスト CSU におけるその他の前提条件
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 590821aeb05f725470a364621c20e744d351d0c9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3aca0a703f6db45d97d152e9efdd51dd8b0d5fee
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783257"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489074"
 ---
 # <a name="x-loop-statements"></a>X++ ループ ステートメント
 
@@ -131,7 +131,7 @@ for (int i = 0; i < 100; i++)
 
 ### <a name="example-of-a-break-statement"></a>break ステートメントの例
 
-**while** ループにおける **break** ステートメントの例 ループ内で使用すると、ループは終了し、ループに続くステートメントから実行が継続します。 これは、 **do... while** と **for** ループでも機能します。 
+この例は、**while** ループにおいて **break** ステートメントを使用しています。 ループ内で使用すると、ループは終了し、ループに続くステートメントから実行が継続します。 これは、 **do... while** と **for** ループでも機能します。 
 
 ```xpp
 var mainMenu = SysDictMenu::newMainMenu();

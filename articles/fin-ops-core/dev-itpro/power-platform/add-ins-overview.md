@@ -5,7 +5,6 @@ author: ankugo
 ms.date: 02/11/2022
 ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: ankugo
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a1fdc390573f991186d13e4f75143d306638d4be
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 59de6c63daa023cd9dee655e716483feccf69ef4
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109618"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408108"
 ---
 # <a name="add-ins-overview"></a>アドインの概要
 

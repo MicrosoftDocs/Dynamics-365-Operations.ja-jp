@@ -5,7 +5,6 @@ author: BrianShook
 ms.date: 6/09/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b7768365d2e54b89a67a3c1684685f33391bc7a0
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: f993a065636732977051a9c45581ca06d2f2281a
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779506"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407422"
 ---
 # <a name="enhanced-payments-in-storefront-checkout"></a>店頭会計の支払を強化
 

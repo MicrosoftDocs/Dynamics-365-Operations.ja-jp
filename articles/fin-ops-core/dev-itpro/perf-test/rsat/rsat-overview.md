@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4d4ed110821f4f5631625b592f41a1b4e79044c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e025ca7ce6a912416a7f55231ec57c513ba256a1
+ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985376"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8492936"
 ---
 # <a name="regression-suite-automation-tool-rsat"></a>Regression suite automation tool (RSAT)
 
@@ -33,6 +33,7 @@ RSATは、テストの実行、報告、および調査のために Microsoft Az
 + [Regression Suite Automation Tool (RSAT) テスト ケースの実行](rsat-run.md)
 + [Regression Suite Automation Tool (RSAT) の並列実行の実行](rsat-parallel-execution.md)
 + [Regression Suite Automation Tool (RSAT) でのテスト ケースの管理](rsat-maintain-test-cases.md)
++ [Azure DevOps を使用しないトライアル モード](rsat-trial-without-devops.md)
 + [予測値の検証](rsat-validate-expected.md)
 + [チェーン テスト ケース](rsat-chain-test-cases.md)
 + [派生テスト ケース](rsat-derived-test-cases.md)

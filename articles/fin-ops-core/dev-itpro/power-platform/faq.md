@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: a3fc5746f538ea6a74fb16e7d659902c02369bb9
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 247c8df100cfe9788199d09109242c3b0631b912
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063045"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464893"
 ---
 # <a name="finance-and-operations-virtual-entities-faq"></a>Finance and Operations 仮想エンティティに関するよくあるご質問
 
@@ -132,7 +132,7 @@ Microsoft Power Platform 統合が有効になっている場合、Finance and O
 
 ### <a name="can-i-use-dataverse-virtual-entities-as-a-data-source-with-the-data-integrator"></a>Dataverse 仮想エンティティを、データ統合のデータ ソースとして使用できますか?
 
-いいえ。 仮想エンティティは、[データ統合](/power-platform/admin/data-integrator.md)とのデータ統合のソースとしてはサポートされていません。 技術的な制限により、データ インテグレーターはソース データのデルタを取得して、データを移行先環境にプッシュすることができません。
+いいえ。 仮想エンティティは、[データ統合](/power-platform/admin/data-integrator)とのデータ統合のソースとしてはサポートされていません。 技術的な制限により、データ インテグレーターはソース データのデルタを取得して、データを移行先環境にプッシュすることができません。
 
 ### <a name="im-getting-an-error-that-paging-is-not-supported-how-do-i-work-around-this"></a>ページングがサポートされていないというエラーが表示されます。 回避するにはどうすればよいですか。
 

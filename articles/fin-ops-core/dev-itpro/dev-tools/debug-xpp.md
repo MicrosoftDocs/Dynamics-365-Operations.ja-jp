@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59fdf2f90e7226c6bbb19e9631ab55bb6d3d3621
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 47a6468e03fee9088c4e1547006755c3898207cd
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781086"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487816"
 ---
 # <a name="debug-x-code-by-using-the-debugger-in-visual-studio"></a>Visual Studio で、デバッガーを使用して X++ コードをデバッグする
 
@@ -49,7 +49,7 @@ X++ コードをデバッグするには、次の手順を実行します。
 
    [![ホバー。](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)
 
-   Finance and Operations アプリケーションに固有である別のツールは情報ログです。 多くの場合、**info()** ステートメントは、アプリケーションの実行中に、ログ ステータス メッセージのコードに追加されます。 これらの情報ログ メッセージは、Visual Studio で直接表示できます。 **表示** メニューで、**情報ログ** をクリックします。
+   Finance and Operations アプリケーションに固有の、もう 1 つのツールは情報ログです。 多くの場合、**info()** ステートメントは、アプリケーションの実行中に、ログ ステータス メッセージのコードに追加されます。 これらの情報ログ メッセージは、Visual Studio で直接表示できます。 **表示** メニューで、**情報ログ** をクリックします。
 
    [![情報ログ。](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)
 

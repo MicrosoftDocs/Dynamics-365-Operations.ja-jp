@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d5d68a4723472d34f0056703ae43d734efe4f660
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 16b2990cb335f80d29c97c1493d2d21066a9e9aa
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783245"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462573"
 ---
 # <a name="commerce-for-it-pros-and-developers"></a>IT プロおよび開発者向けコマース
 
@@ -30,7 +30,7 @@ ms.locfileid: "7783245"
 
 ## <a name="components-and-architecture"></a>コンポーネントとアーキテクチャ
 
-- [Commerce コンポーネント](/dynamics365/commerce/dev-itpro/commerce-architecture)
+- [Commerce コンポーネント](/dynamics365/commerce/commerce-architecture)
 - [Modern POS (MPOS) アーキテクチャ](retail-modern-pos-architecture.md)
 - [ヘッドレス コマース エンジンのアーキテクチャ](retail-server-architecture.md)
 - [オンライン ストア チャネルの公開](retail-online-store-publishing-architecture.md)
@@ -166,6 +166,6 @@ ms.locfileid: "7783245"
 - [支払コネクタと支払デバイスの実装 (ホワイト ペーパー)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [支払コネクタ用の Windows インストーラーの作成](create-windows-installer-payment-connector.md)
 - [支払コネクタの配置](deploy-payment-connector.md)
-- [Finance and Operations 配置用コマース支払パッケージの作成](payment-connector-package.md)
+- [財務と運用の展開のための Commerce 支払パッケージの作成](payment-connector-package.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

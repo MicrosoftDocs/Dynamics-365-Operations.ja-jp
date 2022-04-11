@@ -2,7 +2,7 @@
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) でサポートされるソフトウェア
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) と互換性のあるソフトウェア コンポーネントのバージョンについて説明します。
 author: faix
-ms.date: 01/24/2022
+ms.date: 03/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Platform update 44
-ms.openlocfilehash: e5aa19953d07cd7132346079c18cd5d640365160
-ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.openlocfilehash: d037bc342f7aa6d599f70744383f3596955bf2f3
+ms.sourcegitcommit: 0d5ee97670bdeb1986aaea880f32962b5e374751
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8024527"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468035"
 ---
 # <a name="microsoft-dynamics-365-finance--operations-on-premises-supported-software"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) でサポートされるソフトウェア
 
@@ -76,7 +76,7 @@ Service Fabric Cluster は、公式ドキュメント [Service Fabric のサポ�
 
 | 最小バージョン            | 以降で必要 |
 |----------------------------|----------------|
-| Service Fabric ランタイム 8.0 | 10.0.26        |
+| Service Fabric ランタイム 8.0 | 10.0.24        |
 | Service Fabric ランタイム 7.2 | 10.0.17        |
 | Service Fabric ランタイム 7.1 | 10.0.14        |
 

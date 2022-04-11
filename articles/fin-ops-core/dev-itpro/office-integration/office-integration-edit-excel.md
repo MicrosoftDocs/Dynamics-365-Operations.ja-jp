@@ -2,7 +2,7 @@
 title: Excel エクスペリエンスで開くに関する FAQ
 description: Excel と Word を Office エクスペリエンスで開く機能について学んで作成します。
 author: jasongre
-ms.date: 11/17/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23d552afe8cb6ce2a6f2c7e42167e1940aca1e1e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2a306917c2887518f67efe29001dda8d825b8afb
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069366"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462485"
 ---
 # <a name="open-in-excel-experiences-faq"></a>Excel エクスペリエンスで開くに関する FAQ
 
@@ -395,6 +395,14 @@ Excel データ コネクタでリレーションシップ ルックアップを
 テーブルに式が必要な場合は、式の列を追加します。 テーブル バインドのフィールド選択ページで、[選択済のフィールド] リストの上にある **式** ボタンをクリックして、新しい式列を追加します。 式のラベルと値は、選択したフィールド リストのすぐ下のフィールドに入力されます。 新しい式の列を追加すると、値を空白のままにして、**更新** をクリックします。 フィールドがテーブルに追加されると、Excel の標準機能を使用して数式を作成し、数式をコピーして数式列の値フィールドに貼り付けます。 式を定義するときは、テーブルに複数の行が存在することを確認してください。そうでない場合、Excel が提供する式は、該当する行ではなく、すべての行を対象としている場合があります。 現在の行だけを指定するには、アット マーク (@) が必要です。 たとえば、すべての行に対する 4 つの列の合計「=SUM(Table1\[\[ColumnA\]:\[ColumnD\]\])」と現在の行の 4 つの列の合計「=SUM (Table1\[@\[ColumnA\]:\[ColumnD\]\])」。
 
 ## <a name="known-issues"></a>既知の問題
+### <a name="error-triggered-when-selecting-custom-excel-templates"></a>カスタム Excel テンプレートを選択した場合に発生するエラー
+
+この問題は、ユーザーが **Excel で開く** ボタンから Excel テンプレートを選択し、`Record for Id {guid} not found` というエラーが表示される場合に発生します。
+
+カスタム Excel テンプレートが見つからない場合、エラーが発生します。 このエラーを引き起こす 1 つのシナリオは、環境間に財務と運用データベースを動かし、Excel テンプレートをコピーしないというものです。  
+
+この問題を解決するために、**ドキュメント テンプレート** ページ (**一般 > 一般 > Office 統合 > ドキュメント テンプレート**) からテンプレート用のデータベース エントリを削除します。 
+
 ### <a name="refresh-doesnt-automatically-occur-in-old-templates"></a>更新は、以前のテンプレートでは自動的に行われません
 
 「開くときの更新」を制御する機能が設定として追加されました。 これをデフォルトの動作に追加するには、既存のテンプレートとブックで、**Options** &gt; **Data Connector** &gt; **Refresh Options** にある **Refresh on open** チェック ボックスをオンにする必要があります。

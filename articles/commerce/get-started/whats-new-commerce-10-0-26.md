@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 10.0.26 (2022 年 5 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.26 の新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 03/04/2022
+ms.date: 03/22/2022
 ms.topic: article
 ms.technology: ''
 audience: Developer, IT Pro
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-03-31
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: c6f6a73530f62a58bc4967bf5b0eb3b6754e1627
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 77493fa0c761ab3d1565490c37e02b4c5c0c0bdc
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8389145"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464861"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10026-may-2022"></a>Dynamics 365 Commerce 10.0.26 (2022 年 5 月) の新機能および変更された機能
 
@@ -37,7 +37,6 @@ ms.locfileid: "8389145"
 
 | 機能領域   | フィーチャー                                                  | 詳細                                          |   に  によって有効化             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-| eコマース | [e コマースチャネルのカタログのサポート](/dynamics365-commerce/support-catalogs-e-commerce-channel) |  これで、B2B ビジネス パートナー用にパートナー固有の製品カタログを定義できるようになります。 これにより、パートナー単位で特別価格が含まれる可能性のある製品のサブセットを提供できます。 | 機能管理<p>*複数チャネルでカタログの使用が有効化*|
 |   グローバリゼーション      |    [ブラジル向け Adyen に対応した Dynamics 365 Payment Connector を使用した分割払い](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/payments-installments-dynamics-365-payment-connector-adyen-brazil)    |   この機能は、Adyen に対応した Dynamics 365 Payment Connector の機能を拡張し、ブラジルへの分割払いをサポートします。 詳細については、[ブラジル向け Commerce POS の Adyen に対応した Dynamics 365 Payment Connector](../localizations/latam-bra-adyen.md) を参照してください。       | 詳細については、[Dynamics 365 の Adyen 支払コネクタの設定](https://docs.adyen.com/plugins/microsoft-dynamics)を参照してください。 |
 |   グローバリゼーション      |    [POS からの直接会計統合](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos)    |     この機能では、POS で実行される会計コネクタを作成する機能を追加することで、会計統合フレームワークを拡張します。 このタイプのコネクタは、HTTP API を提供する会計デバイスまたはサービスと通信し、店舗内でプラグインやデプロイされる専用の物理マシンが不要になります。 このリリースでは、オーストリア、チェコ共和国、およびドイツの POS からの直接会計統合のサンプルが提供されます。   | 機能管理<p>*POS レジスターからの直接会計統合* |
 |   グローバリゼーション      |    [拡張会計コネクタ構成](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration)    |   会計登録が可能な店舗で選択した POS レジスターの会計登録を無効にするオプション。 店舗関係者は、非販売操作 (在庫管理操作など) にレジスターを利用したり、売上を作成し、その売上を会計登録が可能なレジスターに反映させたりできるようになります。 詳細情報については、[コマース チャネルの会計統合の設定](../localizations/setting-up-fiscal-integration-for-retail-channel.md)を参照してください          | 機能管理<p>*POS レジスターの会計登録状態* |

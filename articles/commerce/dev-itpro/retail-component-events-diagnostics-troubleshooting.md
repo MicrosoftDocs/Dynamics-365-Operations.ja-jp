@@ -2,7 +2,7 @@
 title: 診断とトラブルシューティングの Commerce コンポーネント イベント
 description: このトピックでは、Commerce 固有のコンポーネントからイベントを検索する場所について説明します。
 author: aamirallaqaband
-ms.date: 08/19/2020
+ms.date: 03/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1bd23f2cbdeec2ae4f06c9a0fa85d2b382f645b8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9f259fb23ddc1dd09f8f7ee70f0255793b1eeb63
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781707"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8533699"
 ---
 # <a name="commerce-component-events-for-diagnostics-and-troubleshooting"></a>診断とトラブルシューティングの Commerce コンポーネント イベント
 
@@ -87,7 +87,7 @@ Retail Cloud POS と e コマース モジュールはブラウザー ベース�
 
 #### <a name="user-sign-in"></a>ユーザー サインイン
 
-ユーザーが POS クライアントにサインインすると、新しい UserSessionID が生成されます。 UserSessionID は、POS クライアントで計測されるすべてのイベントのログを作成するために使用されます。 イベント ビューアーに記録されたすべてのユーザー イベントはこの ID を持ちます。 この ID は、ユーザーがログインしている間維持されます。 現在のユーザーがサインアウトして、新しいユーザーがログインすると、新しい UserSessionID が生成されます。
+ユーザーが POS クライアントにサインインすると、新しい UserSessionID が生成されます。 UserSessionID は、POS クライアントで計測されるすべてのイベントのログを作成するために使用されます。 イベント ビューアーに記録されたすべてのユーザー イベントはこの ID を持ちます。 この ID は、ユーザーがログインしている間維持されます。 現在のユーザーがサインアウトして、新しいユーザーがサインインすると、新しい UserSessionID が生成されます。
 
 #### <a name="pos-client-calls-to-commerce-scale-unit"></a>POS クライアントによる Commerce Scale Unit への呼び出し
 
@@ -163,144 +163,56 @@ LCS ログ検索にアクセスするには、次の手順を実行します。
 - POS ユーザー セッション ID
 - 重大度
 
+
 ![環境監視ページの検索結果。](./media/log-search-results.png)
 
-### <a name="e-commerce-events"></a>E コマース イベント
+### <a name="access-logs-in-application-insights"></a>Application Insights のログへのアクセス
 
-次のイベントは、e コマース Web サイトによって記録され、トラブルシューティングに直接ブラウザーで、または分析、実験、またはその他の目的でパートナー拡張機能を使用してプログラムで処理できます。
+Commerce コンポーネントの診断イベントは、Application Insights からアクセスすることもできます。
 
-### <a name="button-and-link-clicks"></a>ボタンとリンクのクリック
+#### <a name="commerce-scale-unit-minimum-version-requirements"></a>Commerce Scale Unit 最小バージョン要件
 
-ボタンとリンクのクリックにより、E コマース Web サイト上の次のタイプの要素がテレメトリイベントとして記録されます。
+Commerce Scale Unit には、次の最小バージョン要件があります。
 
-- 表題
-  - ナビゲーション階層
-  - カート アイコン
-  - サインイン
-  - 検索アイコン
-  - Wishlist アイコン
-- コンテンツ ブロック アクション リンク (これは、マーケティング コンテンツ用のヒーロー、タイル、およびフィーチャー の内容を表します)
-- ビデオ プレーヤー
-- 製品カード
-- フッター リンク
-- 階層リンク
-- 広告バナー
-- カートに追加ボタン
-- チェックアウト ボタン
-- 注文する ボタン
+- 10.0.23 (Retail Server バージョン 9.33.22062.15 およびそれ以降)
+- 10.0.24 (Retail Server バージョン 9.34.22062.14 およびそれ以降)
+- 10.0.25 (Retail Server バージョン 9.35.22062.13 およびそれ以降)
+- 10.0.26 およびそれ以降 (すべてのバージョン)
 
-**クリック** アクションのスキーマは次のとおりです。
+#### <a name="enable-diagnostic-events-in-application-insights"></a>Application Insights の診断イベントを有効にする
 
-```json
-Click
-IPayLoad = {
-        contentCategory: Name of element clicked on,
-        contentAction:  {
-            pgname: Name of page,
-            mname: name of module,
-            etext: Text of element clicked on,
-            recid: Product ID if a product was clicked on,
-            etype: ‘click’,
-        }
-    };
-```
+> [!IMPORTANT]
+> システム オペレーション インサイト プレビューを使用した場合、次の手順を実行してシステム オペレーション インサイトを有効にする必要があります。 このようにして、イベントに対し信頼性があり安全なアクセスを継続することができます。
 
-### <a name="page-views"></a>ページ ビュー
+Commerce コンポーネントの診断イベントを有効にするには、Application Insights アカウントが必要です。 既存のアカウントを使用するか、または[新しいアカウントを作成](/azure/azure-monitor/app/create-workspace-resource#create-workspace-based-resource)できます。 データ プライバシーの理由から、運用、サンドボックス、および開発環境とで個別の Application Insights アカウントを使用することをお勧めします。 アカウントを作成した後、Commerce 本部で **オペレーション インサイト** 機能を有効にする必要があります。
 
-ページ ビューの各操作について、ページ ビュー イベントがログに記録されます。
+Commerce 本部で Application Insights の診断イベントを有効にするには、以下の手順に従います。
 
-**PageView** アクションのスキーマは次のとおりです。
+1. **機能管理** ワークスペースで、**オペレーション インサイト** 機能を有効にします。
+1. **システム管理 \> オペレーション インサイト** に移動します。
+1. **構成** タブで、**Commerce チャネル イベント** オプション を **はい** に設定します。
+1. **環境** タブで、Application Insights を使用する計画があるすべての環境に対して **LCS 環境 ID** と **環境モード** の値を入力します。 各環境の LCS 環境 ID は、LCS の環境の **環境の詳細** ページで見つけることができます。 データベースのコピー操作が実行されるときに診断イベントが正しくない環境に誤って送信されるのを防ぐために、この手順が必要です。
+1. **Application Insights レジストリ** タブで、各 Application Insights アカウントを使用する環境の Application Insights インストルメンテーション キーおよび対応する環境モードを指定します。
+1. 前の構成が完了した後、**CDX ジョブ 1110** ジョブを実行する必要があります。 このジョブが独自のスケジュールで実行されるのを待つか、手動で実行することができます。
+1. 各 Commerce Scale Unit を再起動します。 LCS で、**環境の詳細 \> Commerce \> 管理** に移動して Commerce Scale Unit のインスタンスを選択し、**再起動** を選択します。
+1. Application Insights を使用にする環境ごとに前の手順を繰り返します。
 
-```json
-PageView
-IPageViewInfo = {
-    title;
-}
-```
+#### <a name="disable-diagnostic-events-in-application-insights"></a>Application Insights の診断イベントを無効にする
 
-### <a name="cart-operations"></a>カートの操作
+Application Insights へ診断イベントを送信する必要がなくなった場合は、機能を無効にする必要があります。
 
-次の **カート** 関連のイベントがログに記録されます。
+> [!IMPORTANT]
+> 診断イベントを無効にする場合、**機能管理** で機能を無効にするだけでは不十分です。
 
-- カートに品目を追加する。
-- カートの品目を更新する。
-- カートから品目を削除する。
-- 清算する。
-- 製品ページ ビュー。
+Commerce 本部で Application Insights の診断イベントを無効にするには、以下の手順に従います。
 
-**カート** イベントのスキーマは次のとおりです。
+1. **システム管理 \> オペレーション インサイト** に移動します。
+1. **構成** タブで、**Commerce チャネル イベント** オプション を **いいえ** に設定します。
+1. 前の構成が完了した後、**CDX ジョブ 1110** ジョブを実行する必要があります。 このジョブが独自のスケジュールで実行されるのを待つか、手動で実行することができます。
+1. 各 Commerce Scale Unit を再起動します。 LCS で、**環境の詳細 \> Commerce \> 管理** に移動して Commerce Scale Unit のインスタンスを選択し、**再起動** を選択します。
+1. Application Insights を無効にする環境ごとに前の手順を繰り返します。
 
-```json
-/***
- * Defines the telemetry properties to track for a Cart object
- * @property products       {IProductInfo[]}    - Array of product information
- * @property orderId        {string}            - ID for the order
- * @property cartId         {string}            - ID for the current cart object
- * @property cartVersion    {string}            - Version number for the current cart object
- */
-export interface ICartInfo {
-    products: IProductInfo[];
-    orderId: string;
-    cartId: string;
-    cartVersion: string;
-}
-```
-
-### <a name="purchase"></a>購買
-
-注文が送信されると、購入イベントがログに記録されます。 **購買** イベントのスキーマは次のとおりです。
-
-```json
-/***
- * Defines the telemetry properties to track for a Purchase event
- * @property id            {string}         - Transaction ID
- * @property affiliation   {string}         - Origin of this transaction (e.g. Online Store)
- * @property revenue       {number}         - Revenue from this transaction
- * @property tax           {number}         - Tax amount
- * @property shippingCost  {number}         - Shipping cost
- * @property products      {IProductInfo[]} - List of products in this transaction
- */
-export interface IProductTransaction {
-    id: string;
-    affiliation?: string;
-    revenue?: number;
-    tax?: number;
-    shippingCost?: number;
-    products?: IProductInfo[];
-}
-```
-
-### <a name="product-details"></a>製品の詳細
-
-製品の詳細は、**カート** および **購買** 操作に記録されます。 **製品** の詳細に関するスキーマは次のとおりです。
-
-```json
-/***
- * Defines the telemetry properties to track for a Product object
- * @property productChannelId       {string}   - Product channel ID
- * @property productChannelName     {string}   - Product channel name
- * @property productCategoryId      {string}   - Product category ID
- * @property productCategoryName    {string}   - Product category name
- * @property productId              {string}   - Product ID
- * @property productName            {string}   - Product name
- * @property productSku             {string}   - Product SKU
- * @property productPrice           {string}   - Product price
- * @property productQuantity        {string}   - Product quantity
- * @property productCurrency        {string}   - Product currency code
- */
-export interface IProductInfo {
-    productChannelId: string;
-    productChannelName: string;
-    productCategoryId: string;
-    productCategoryName: string;
-    productId: string;
-    productName: string;
-    productSku: string;
-    productPrice: string;
-    productQuantity: string;
-    productCurrency: string;
-}
-```
+単一の環境に対して診断イベントを無効にするには、**オペレーション インサイト** ページの **Application Insights レジストリ** タブにあるインストルメンテーション キーを削除します。 前の手順の手順 3 と 4 を実行します。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -6,7 +6,6 @@ manager: tonyafehr
 ms.date: 07/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2020-07-13
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 50ad142acf1ff67704741b3a2bf3bc75cfa2597d68413d76aea43a1ae9816f15
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf0531e13b105c4a7c23008307874475a0ba9799
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725124"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407420"
 ---
 # <a name="auto-update-for-commerce-scale-unit-cloud"></a>Commerce Scale Unit の自動更新 (クラウド)
 [!include[banner](../includes/banner.md)]

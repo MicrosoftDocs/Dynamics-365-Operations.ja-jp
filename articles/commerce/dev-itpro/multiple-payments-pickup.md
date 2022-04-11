@@ -5,7 +5,6 @@ author: BrianShook
 ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5bd63cec642393eed05ed97be05d0de134235f24
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b7dcccf8c01f8edfac535b860bc41bfd002c932c
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986422"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408104"
 ---
 # <a name="multiple-available-payment-methods-for-in-store-pickup"></a>店舗内での受取に使用できる複数の支払方法
 

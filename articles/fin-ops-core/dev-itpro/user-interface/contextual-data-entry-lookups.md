@@ -2,7 +2,7 @@
 title: ルックアップのコンテキスト データ入力
 description: このトピックでは、コンテキスト データ入力の仕組みについて説明し、ルックアップにこの動作が必要な開発者向けの実装の詳細とヒントを提供します。
 author: jasongre
-ms.date: 06/20/2017
+ms.date: 03/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7853e04af21dde1ad7d6b2595a64973252b0e65b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 8b5782f58fad04fd3565d56769e662b9636cfb40
+ms.sourcegitcommit: 46d8ed81901796262805c2963eea4c58589d2f35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783136"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392087"
 ---
 # <a name="contextual-data-entry-for-lookups"></a>ルックアップのコンテキスト データ入力
 
@@ -89,7 +89,7 @@ NAME が入力された場合は、次のルックアップが表示されます
 ```xpp
 public str resolveAmbiguousReference()
 {
-    FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
+    return FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
 }
 ```
 

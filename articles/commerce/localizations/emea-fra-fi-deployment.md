@@ -6,7 +6,6 @@ manager: annbe
 ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
@@ -15,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2021-4-30
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 89dacfe4df33915c7c9e15a50e0395072470808d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a0dbeefbc463d92d4058632a0e885438c2b9f07c
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343417"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407966"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-france"></a>フランスのキャッシュ レジスターの配置ガイドライン
 

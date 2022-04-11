@@ -2,7 +2,7 @@
 title: Lifecycle Services (LCS) のセキュリティの構成
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) のセキュリティが、組織レベルとプロジェクト レベルの両方で制御される方法について説明します。
 author: AngelMarshall
-ms.date: 04/13/2021
+ms.date: 03/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22bb07b235ff9bbed40eb144683e3e397b1cd7c4070c022c6729355f50583a7d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f4a80937d8c4f4d840fa78737b8773cc5f472d5a
+ms.sourcegitcommit: abfaef124c8747827d6f297821f01f1f6fbca6b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754316"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455277"
 ---
 # <a name="configure-lifecycle-services-lcs-security"></a>Lifecycle Services (LCS) のセキュリティの構成
 
@@ -27,12 +27,32 @@ ms.locfileid: "6754316"
 
 Microsoft Dynamics Lifecycle Services (LCS) のセキュリティは、組織レベルとプロジェクト レベルの両方で制御されます。 組織のすべてのメンバーが、すべてのプロジェクトへのアクセス権を持っているわけではありません。 また、プロジェクトのメンバーは、すべて同じ組織のメンバーではない可能性があります。 <br>
 
-現在、サインアップ時に Microsoft 365 ポータルで作成した Microsoft Azure Active Directory (Azure AD) 資格情報を使用してサインインすることができます。 Azure AD の組織の管理者になっているユーザーは、Lifecycle Services (LCS) の管理者になります。 
+現在、サイン アップ時に Microsoft 365 ポータルを作成した Microsoft Azure Active Directory (Azure AD) の資格情報を使いサイン インできます。 Azure AD の組織の管理者になっているユーザーは、Lifecycle Services (LCS) の管理者になります。 
 
 LCS へのプロジェクト レベル アクセスは、招待によって行われます。 プロジェクトの所有者およびチーム メンバーとして組織のメンバーを招待することができます。 また、組織のメンバーではなく、Azure AD のアカンウントを持たないユーザーをチーム メンバーに招待できます。
 
 > [!IMPORTANT]
 > 会社内のすべてのユーザーを組織レベルで管理することを強くお勧めします。 また、ユーザーが組織で利用できる福利厚生にアクセスできることを確認します。
+
+## <a name="organizational-roles"></a>組織ロール
+LCS には次の 3 種類の組織ロールがあります。
+
+- 管理者
+- 寄稿者
+- 代理管理者
+
+### <a name="organization-admin"></a>組織の管理者
+組織またはテナント レベルでは、LCS にサイン インすると、Azure AD のグローバル管理者ロールを持つすべてのユーザーは自動的に組織管理者になります。 その後、管理者は現在管理者に貢献している他のユーザーを昇格できます。 管理者には固有の機能があります。 たとえば、以前にプロジェクトに参加していなくても、テナントが所有する任意のプロジェクトにプロジェクトの所有者として自分自身を追加できます。
+
+![組織管理者はすべてのプロジェクトに自身を追加できると言う LCS のメッセージ。](media/OrgAdminProjectInject.png "組織管理者はすべてのプロジェクトに自身を追加できると言う LCS のメッセージ")
+
+さらに、管理者は[複数の LCS プロジェクトを作成](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#create-multiple-lcs-projects) の手順に従い、追加の LCS 実装プロジェクトを作成できます。
+
+### <a name="organization-contributor"></a>組織の共同作成者
+共同作成者は Azure AD テナントからの他のユーザーですが、管理者機能を持たないユーザーです。 共同作成者はプロジェクトを作成できます。 また、サイン インするテナントの最初のユーザーである場合、および該当する財務と運用アプリのライセンスを購入した後に最初に実装プロジェクトを作成することもできます。
+
+### <a name="delegated-admin"></a>代理管理者
+ユーザーが Microsoft パートナー テナントからで、顧客組織と確立された関係を持つ場合を除いて、委任された管理者ロールは管理者ロールと同じです。 委任された管理者は顧客の代わりにサイン インし、必要な操作を実行して必要なサポートを提供できます。
 
 ## <a name="manage-lcs-organization-users"></a>LCS 組織のユーザーの管理
 管理者のみユーザーを管理できます。 以下の手順を実行します。
@@ -100,8 +120,6 @@ LCS へのプロジェクト レベル アクセスは、招待によって行�
 
 ## <a name="configure-implementation-roles"></a>実装ロールのコンフィギュレーション 
 実装プロジェクトがある場合、プロジェクト ユーザーの実装ロールを指定するためのオプションが表示されます。 詳細については、[Dynamics 365 実装のロール](/learn/modules/get-started-implementation-project/01-2-roles) を参照してください。
-
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

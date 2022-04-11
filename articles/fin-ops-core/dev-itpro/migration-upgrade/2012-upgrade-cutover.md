@@ -1,8 +1,8 @@
 ---
 title: AX 2012 からのアップグレード - Go live (切替)
-description: このトピックでは、コードとデータベースのアップグレード バージョンの実行している Dynamics AX 2012 から Finance and Operations アプリの最終的な切替えプロセスについて説明します。
+description: このトピックでは、コードとデータベースのアップグレード バージョンの実行している Dynamics AX 2012 から財務と運用アプリの最終的な切替えプロセスについて説明します。
 author: jorisdg
-ms.date: 08/27/2021
+ms.date: 03/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2018-03-31
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 21f7da26a911417ba6f67e471050e25862b3a3ad
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 1b661ffb5cf12261fa2d36848c587b4efac360c1
+ms.sourcegitcommit: 9771d77f0c4f6968df2194731dd1b118f676e515
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441329"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418019"
 ---
 # <a name="upgrade-from-ax-2012---go-live-cutover"></a>AX 2012 からのアップグレード - Go live (切替)
 
@@ -27,7 +27,10 @@ ms.locfileid: "7441329"
 
 標準またはプレミア承認テスト環境 (サンドボックス レベル 2 またはそれ以上) でアップグレード テストを正常に完了し、正常にテスト切替を完了した後が、実稼働環境をアップグレードして稼働させる時になります。
 
-*切替* という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後かつ Finance and Operations をオンにする前に発生するタスクで構成されます。 最終的な切替を計画する前に、[切替テスト](./upgrade-cutover-testing.md) で説明されているように、成功した切替モックを正常に完了する必要があります。
+> [!NOTE]
+> AX 2012 アップグレード プロセスは、実稼働環境ではなくサンドボックス環境で実行する必要があります。
+
+*切替* という用語は、新しいシステムを稼働させる最後のプロセスに使用します。 この切替プロセスは、Microsoft Dynamics AX 2012 をオフにした後、Finance and Operations をオンにする前に発生するタスクで構成されます。 最終的な切替を計画する前に、[切替テスト](./upgrade-cutover-testing.md) で説明されているように、成功した切替モックを正常に完了する必要があります。
 
 次の図は、実稼動環境で発生するような、切替中の全体的なプロセスを示しています。
 
@@ -50,7 +53,7 @@ ms.locfileid: "7441329"
 7. ツールキットを使用してデータ アップグレードをトリガーし、データ アップグレードを完了します。
 8. [セルフサービス データベースのプロセスを最新情報に更新](../database/database-refresh.md#self-service-database-refresh) を使用し、更新されたデータベースをサンドボックス環境から運用環境にコピーします。 
 9. アプリケーションの構成を完了し、変更前のテストを完了します。
-10. ユーザーが再度 Finance and Operations アプリにアクセスするようにします。
+10. ユーザーが財務と運用アプリに再度アクセスするようにします。
 
 
 ## <a name="prerequisites"></a>必要条件 

@@ -2,7 +2,7 @@
 title: 開発環境の配置とアクセス
 description: このトピックでは、開発インスタンスへのアクセス、ローカル開発 VM の構成、および開発者と管理者のための構成設定を見つける方法について説明します。
 author: laneswenka
-ms.date: 09/08/2021
+ms.date: 03/15/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2eb0e26cee0d8ce2c2d1acfd779788fca20897e6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 084fffa3e33ace57040910701a9e7c43e779f2c2
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781775"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418626"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -86,6 +86,30 @@ LCS プロジェクトにクラウドの開発環境を配置する:
 
 リモート デスクトップを通じて環境にサインインした後、ブラウザーからローカル アプリケーションにアクセスできるようにする場合、リモート コンピューターからアプリケーションにアクセスするために使用するのと同じベース URL を使用します。 上記のセクションは、このベース URL を LCS から取得する方法について説明します。
 
+### <a name="deleting-cloud-hosted-developer-environments"></a>クラウド ホスト開発環境の削除
+
+開発者環境の利用が終わった場合、またはインフラストラクチャ問題のトラブルシューティングに時間がかかる場合は、いつでも LCS から環境を削除し、後から新しい環境を作成できます。  クラウド ホスト環境を LCS から削除するには、次の手順に従います:
+
+1. LCS プロジェクトのナビゲーション メニューに移動し、**クラウドホスト環境** を選択します。
+2. 削除する環境を強調表示し、**割り当て解除** を選択します。  これにより、Azure サブスクリプションのマシンがシャット ダウンします。
+3. 割り当て解除が正常に行われた後、環境は *割り当て解除済* の状態になります。  **削除** ボタンを使用して削除プロセスを開始できるようになります。
+
+クラウド ホスト環境で作成された仮想ネットワーク (VNET) が他のクラウド ホスト環境でも使用されている場合は、クラウド ホスト環境を削除できません。  これは一般的ではありませんが、お客様の中には、開発環境間でより簡単にファイルを共有するため、開発環境はすべて既存の VNET を再利用してほしいというケースもあります。  このような場合、元の VNET を作成した基本環境を削除する前に、他の環境も削除する必要があります。
+
+削除操作が失敗した場合、次のいずれかが発生した可能性を確認します:
+
+- Azure コネクタの管理証明書が期限切れです。
+- Azure サブスクリプションが、元のテナントから別のテナントに移動されました。
+- Azure サブスクリプションが無効になっています。
+- サブスクリプションには Azure ポリシーがあり、環境のリソース グループ内の 1 つ以上のリソースを削除できないようになっています。
+
+LCS で削除操作を正常に完了できなかった場合、その操作は *未完了* とマークされます。 **LCS メタデータの削除** ボタンを使用して、LCS バックエンド システムからこの環境のメタデータをクリーンアップします。 
+
+> [!NOTE]
+> この操作では、Azure サブスクリプション内のリソースの削除を試みません。 環境のリソース グループがまだ存在する場合は、お客様の責任で手動で削除してください。 
+
+環境のリソース グループは、LCS の環境と同じ名前で、Azure サブスクリプションで容易に識別できます。
+
 ## <a name="vm-that-is-running-locally"></a>ローカルで実行されている VM
 仮想ハード ディスク (VHD) は LCS からダウンロードができるようになり、ローカル コンピューター上に設定可能です。 このシステムは、開発者によるアクセスを目的としており、Finance and Operations アプリの事前構成済みワンボックス開発環境です。 VHD は、資産タイプの **ダウンロード可能な VHD** の下で、LCS の共有アセットライブラリで使用可能です。
 
@@ -150,69 +174,6 @@ POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要
 
 コマースもコンフィギュレーションしている場合は、このセクションの手順に従います。
 
-#### <a name="for-dynamics-365-for-operations-version-1611"></a>Dynamics 365 for Operations の場合、バージョン 1611
-
-1. RetailTenantUpdateTool を実行します。
-
-    - このツールのアイコンは、デスクトップ上で使用できます。
-    - このツールは、次の場所から使用することもできます: C:\windows\System32\WindowsPowerShell\v1.0\PowerShell.exe -File C:\RetailSDK\Tools\RetailTenantUpdateTool.ps1
-
-2. このツールを開始するには、アイコンをダブルクリックします。 自身の Azure AD 資格情報を求められます。 管理者ユーザーのプロビジョニング ツールで以前使用したものと同じ資格情報を使用する必要があります。
-
-#### <a name="for-dynamics-365-for-operations-70"></a>Dynamics 365 for Operations 7.0 の場合
-
-1. [IT プロフェッショナル用 Microsoft Online Services サインイン アシスタント RTW](https://go.microsoft.com/fwlink/?LinkID=286152) をインストールします。
-2. [Windows PowerShell (64-ビット バージョン) 用 Azure Active Directory モジュール](/collaborate/connect-redirect?DownloadID=59185) をインストールします。
-3. テナントとユーザー ID の Azure AD を照会します。 Windows PowerShell 統合スクリプト環境 (ISE) ウィンドウを管理者権限で開き、次のコマンドを実行します。 Azure AD 資格情報を求められます。 以前に管理者プロビジョニング ツールで使用したのと同じユーザー アカウントを使用します。
-
-    ```powershell
-    $msocred = Get-Credential 
-    Connect-MsolService -Credential $msocred 
-    $company = Get-MsolCompanyInformation 
-    Write-Host "TenantID: $($company.ObjectId)" 
-    $msocred.UserName 
-    $users = Get-MsolUser -SearchString "$($msocred.username)" 
-    foreach($u in $users) 
-    { 
-        if($u.SignInName -eq $msocred.UserName) 
-        { 
-            Write-Host "SignInName:$($u.SignInName) UserId: $($u.ObjectId)" 
-        } 
-    }
-    ```
-
-    [![Windows PowerShell ISE ウィンドウのコマンド。](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
-
-4. 次の SQL スクリプトを更新し、その環境の AXDB で実行します。 上記の Windows PowerShell スクリプト出力から次のパラメーターの値を指定します。
-
-    - **TenantID** – たとえば、c83429a6-782b-4275-85cf-60ebe81250ee
-    - **UserId** – たとえば、a036b5d8-bc8c-4abe-8eec-17516ea913ec
-
-    <!-- -->
-    ```sql
-    DECLARE @TenantId NVARCHAR(1024)         DECLARE @UserId NVARCHAR(1024) 
-    SET @TenantId = '' 
-    SET @UserId = '' 
-    IF(LEN(@TenantId) > 0 AND LEN(@UserId) > 0) 
-        BEGIN 
-        UPDATE AxDBRAIN.dbo.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = 'TENANTID' 
-        UPDATE RetailHoustonStore.ax.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = 'TENANTID' 
-        UPDATE AxDBRAIN.dbo.RETAILSTAFFTABLE SET EXTERNALIDENTITYID = @TenantId, EXTERNALIDENTITYSUBID = @UserId WHERE STAFFID = '000160'
-        END 
-    ELSE 
-        BEGIN 
-        RAISERROR (15600, -1, -1, 'TenantId and UserId must be set before running this script') 
-        END
-    ```
-
-5. 管理者特権の **コマンド プロンプト** ウィンドウで **IISRESET** を実行することにより、インターネット インフォメーション サービス (IIS) をリセットします。
-6. 新しい管理者ユーザーを使用するようにリアルタイム サービス プロファイルを更新します。
-
-    1. **小売とコマース** &gt; **本社の設定** &gt; **コマース スケジューラ** &gt; **リアルタイム サービス プロファイル** の順に移動します。
-    2. 以前に使用したユーザーを使用するように JBB レコードを編集します (たとえば、`administrator@contosoax7.onmicrosoft.com`)。
-    3. 既定のチャネル データベースの CDX ジョブ 1070 (スタッフ) を実行します。
-    4. クライアント上の **ダウンロード セッション** ページを表示して、ジョブが成功したことを確認します。
-
 ### <a name="base-url-of-the-local-application"></a>ローカル アプリケーションの基本 URL
 
 ユーザーが管理者としてプロビジョニングされた後、ユーザーは次のベース URL に移動してコンピュータ上のインスタンスにアクセスできます: `https://usnconeboxax1aos.cloud.onebox.dynamics.com`。 バージョン管理を使用しており、複数の開発 VMs を同じ Azure DevOps プロジェクトに接続する予定がある場合は、ローカル VM 名を変更してください。 手順については、[ローカル開発 (VHD) 環境の名前変更](../migration-upgrade/vso-machine-renaming.md) を参照してください。
@@ -255,6 +216,15 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 このプロセス時間がかかる場合があります。 cmd.exe ウィンドウが終了すると、プロセスが完了します。 ランタイムを再配置せずに AOS を再起動するのみの場合は、管理者の **Command Prompt** ウィンドウから **iisreset** を実行するか、IIS から AOSWebApplication を再起動します。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
+
+### <a name="can-we-join-cloud-hosted-environments-to-our-azure-ad-domain-as-it-is-currently-deployed-in-a-workgroup"></a>現在、ワークグループで展開している Azure AD ドメインに、クラウドホスト環境を参加させることは可能ですか?
+これらの環境は自己完結型でテストは行われていません。Azure を介して展開すると Azure AD ドメインに参加した場合にもサポートされていません。  
+
+### <a name="is-there-a-way-to-hide-the-local-account-passwords-in-lcs"></a>LCS でローカルアカウントのパスワードを非表示にする方法はありますか?
+これは、プロジェクトにおけるユーザーのセキュリティ ロールを *プロジェクト チーム メンバー* ロールに下げた場合のみ可能であり、*環境マネージャー*、または *プロジェクト所有者* ロールのローカル アカウント パスワードを非表示にすることはできません。
+
+### <a name="are-cloud-hosted-environments-supported-with-azure-bastion"></a>クラウド ホスト環境は Azure Bastion でサポートされていますか?
+これらの環境はテストされておらず、Azure Bastion でサポートされてもいません。  
 
 ### <a name="environment-is-in-a-failed-state-and-the-error-message-is-updated-aad-tenant-is-missing-reply-url-configuration"></a>環境が失敗の状態で、「更新された AAD テナントには返信 URL コンフィギュレーションがありません」というエラー メッセージが表示される
 このメッセージは、レベル 1/顧客管理環境が、配置時に使用するテナントとは異なる Azure AD テナントを使用して構成されていることを示します。 (管理者ユーザーのプロビジョニング ツールを使用して更新が行われたとします)。現在使用されている更新されたテナントに、環境への正常なログインに必要な返信 URL コンフィギュレーションがありません。 コンフィギュレーションが欠落している場合、エラーが発生します。 環境が使用されるテナントからユーザーで環境を削除し、再配置する必要があります。

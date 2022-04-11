@@ -1,8 +1,8 @@
 ---
 title: 拡張可能なデータ セキュリティ ポリシー
-description: このトピックでは、Finance and Operations アプリにおける拡張可能なデータ セキュリティ (XDS) ポリシーの概要を提供します。
+description: このトピックでは、 財務と運用アプリにおける拡張可能なデータ セキュリティ (XDS) ポリシーの概要を提供します。
 author: Peakerbl
-ms.date: 04/26/2021
+ms.date: 03/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9731007ae0b6d88cf192c5895a2923642af27ffb3daf025bf2ad743143ad3753
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 534ea5bd5526edcd65d9805275b81efda0797f6f
+ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714537"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8492906"
 ---
 # <a name="extensible-data-security-policies"></a>拡張可能なデータ セキュリティ ポリシー 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance and Operations アプリにおける拡張可能なデータ セキュリティ (XDS) ポリシーの概要を提供します。 XDS を使用すると、開発者は、セキュリティ ポリシーに基づいてテーブル レコードへのアクセスを制限することにより、ロールベースのセキュリティを補うことができます。 ポリシー内のクエリにはフィルターが適用されます。また、そのフィルターの条件を満たすレコードだけが、制限されたテーブルからアクセスできるようになります。
+このトピックでは、 財務と運用アプリにおける拡張可能なデータ セキュリティ (XDS) ポリシーの概要を提供します。 XDS を使用すると、開発者は、セキュリティ ポリシーに基づいてテーブル レコードへのアクセスを制限することにより、ロールベースのセキュリティを補うことができます。 ポリシー内のクエリにはフィルターが適用されます。また、そのフィルターの条件を満たすレコードだけが、制限されたテーブルからアクセスできるようになります。
 
 ## <a name="data-security-policy-components"></a>データ セキュリティ ポリシー コンポーネント
 
@@ -56,6 +56,8 @@ ms.locfileid: "6714537"
 
 2 つ以上のセキュリティ ポリシーが適用されている場合は、各ポリシーに含まれるレコードの交差 (和集合ではない) のみが、アクセス可能なレコードとなります。 つまり、レコードへのアクセスを許可する前に、レコードが適用可能なすべてのセキュリティ ポリシーを満たす必要があります。
 
+XDS は財務分析コードには対応しておらず、財務分析コード データで XDS を使用すると、データが破損する可能性があります。
+
 ## <a name="additional-resources"></a>追加リソース
 
 ポリシーをデバッグする方法の詳細については、制限されたテーブルのチェーン、式に基づくテーブルの関係を含むより詳細なポリシーを作成し、これらのリソースを参照してください。
@@ -63,8 +65,6 @@ ms.locfileid: "6714537"
 - [単純なセキュリティ ポリシーを作成する](create-simple-security-policy.md)
 
 - [拡張可能なデータ セキュリティ ポリシーの開発 (ホワイト ペーパー) [AX 2012]](/dynamicsax-2012/appuser-itpro/developing-extensible-data-security-policies-white-paper)
-
-- [拡張可能なデータ セキュリティを使用して分析コード値ごとのデータの保護 (ホワイト ペーパー) [AX 2012]](/dynamicsax-2012/appuser-itpro/securing-data-by-dimension-value-by-using-extensible-data-security-white-paper)
 
 - [拡張可能なデータ セキュリティの例 – Andre Arnaud De Calavon [ブログ]](https://dynamicspedia.com/tag/xds/)
 

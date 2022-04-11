@@ -2,7 +2,7 @@
 title: Microsoft Power Platform 統合を有効にする
 description: このトピックでは財務と運用アプリと Dataverse を Microsoft Dynamics Lifecycle Services (LCS) に使用して Microsoft Power Platform 統合を有効にする方法について説明します。
 author: jaredha
-ms.date: 02/15/2022
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-13
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6adeb4c44c5e883b47e61bfcfeedaa90f3a4e676
-ms.sourcegitcommit: 3e78d9af127ba205c562612bb587aa19145605d0
+ms.openlocfilehash: 8fd48f15d0a0d9ea14e8f76a01961c6b2c9ff1d3
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8336964"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418657"
 ---
 # <a name="enable-the-microsoft-power-platform-integration"></a>Microsoft Power Platform 統合を有効にする
 
@@ -30,13 +30,13 @@ ms.locfileid: "8336964"
 
 ## <a name="environment-lifecycle-considerations"></a>環境ライフサイクルの考慮次項
 
-既定では、LCS によって管理されるすべての財務と運用の環境は、リンクされた Power Platform 環境を Dataverse なしで受け取ります。 これは 1 対 1 の関係で、財務と運用アプリが移行する場所になります。 LCS の環境にリンクされている環境では、Power Platform 管理センターの環境詳細ページで、財務と運用アプリの URL が表示されます。
+既定では、LCS によって管理されるすべての財務と運用アプリの環境は、リンクされた Power Platform 環境を Dataverse なしで受け取ります。 リレーションシップは一対一です。 時間の経過とともに、財務および運用アプリはこの場所に移行されます。 Power Platform 管理センターの環境詳細ページにある財務と運用アプリの URL を参照して、環境を LCS の環境にリンクするかどうかを決定できます。
 
 :::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="リンクされた Power Platform 環境":::
 
-この環境は、削除したりリセットしたりすることはできず、Dataverse データベースを手動で追加することもできません。 Dataverse を追加するには、全体的に Power Platform 統合を設定し、次の手順を実行します。 
+この環境は、削除またはリセットすることはできず、Dataverse データベースを手動で追加することもできません。 Dataverse を追加し、全体的に Microsoft Power Platform 統合を設定するには、このトピックで後述する手順を実行します。
 
-また、仮想エンティティ、アドイン、デュアル書き込みなど、Power Platform 統合シナリオの既存の Dataverse 環境を再利用する場合は、[既存 Dataverse 環境のデュアル書き込みを設定](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment) に関する推奨事項に従います。
+Microsoft Power Platform 統合シナリオ (仮想エンティティ、アドイン、二重書き込み機能など) の既存の Dataverse 環境を再利用する場合は、[既存 Dataverse 環境の二重書き込みの設定](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment) に関する手順に従います。
 
 ## <a name="prerequisites-for-setting-up-the-microsoft-power-platform-integration"></a>Microsoft Power Platform 統合を設定するための前提条件
 
@@ -122,16 +122,16 @@ LCS に新しい財務と運用アプリ環境を設定する際、配置ウィ�
 >
 > 既定値とは異なる値が必要な場合、Microsoft サポートに問い合わせください。 手動でプロビジョニングした既存の Dataverse 環境を財務と運用アプリ環境にリンクするサポートを提供できます。 最終的に、設定オプションとして言語と通貨のフィールドが追加され、手動で設定したり、既定値を受け入れることができるようになります。
 
-## <a name="enable-integration-with-an-existing-microsoft-power-platform-environment"></a>既存の Microsoft Power Platform 環境との統合を有効にする
+## <a name="enable-integration-with-an-existing-power-platform-environment"></a>既存の Power Platform 環境との統合を有効にする
 
-LCS で財務と運用アプリ環境の Microsoft Power Platform 統合を有効にすると、配置中または配置後に、プロセスによって Dataverse 対応の新しい Power Platform 環境が作成され、財務と運用アプリ環境が新しい Power Platform 環境にリンクされます。 しかし、財務と運用アプリ環境を、配置中に自動的に作成された環境ではなく、既存の Power Platform 環境にリンクさせて統合を有効化したい場合もあります。 Power Platform 統合を有効にする既存の Power Platform 環境を選択するオプションは、現在 LCS では利用できませんが、直ちに利用可能になります。
+LCS で財務と運用アプリ環境の Microsoft Power Platform 統合を有効にすると、展開中または展開後に、プロセスによって Dataverse 対応の新しい Power Platform 環境が作成され、財務と運用アプリ環境がそこにリンクされます。 ただし、財務と運用アプリ環境を、展開中に自動的に作成された環境ではなく、既存の Power Platform 環境にリンクさせて統合を有効化する場合もあります。 現在、LCS では Microsoft Power Platform との統合を有効にするため使用できる既存の Power Platform 環境を選択することはできません。 ただし、このオプションは近日中に利用可能になる予定です。
 
-Dataverse と財務と運用環境に接続する方法は他に種類があります。 次の一覧に示す情報は、Power Platform 統合とは見なされません。
+次の方法で Dataverse と財務と運用アプリ環境に接続することもできます。 これらのオプションは Microsoft Power Platform との統合とは見なされません。
 
-- **二重書き込み**: このオプションは、二重書き込み構成で、テナント上の任意の Power Platform 環境で Dataverse 環境へのリンクを作成できます。  Power Platform 統合環境とは異なる環境にはデュアル書き込みを接続することをお勧めします。
-- **仮想エンティティ**: Power Platform 環境の仮想エンティティ構成では、Finance and Operations 環境を選択することができます。  Power Platform 統合環境とは異なる環境には仮想エンティティを接続しないことをお勧めします。
+- **二重書き込み** – 二重書き込み構成により、テナント上の任意の Power Platform 環境で Dataverse 環境へのリンクを作成できます。 Microsoft Power Platform 統合環境以外の環境には、デュアル書き込みを接続することをお勧めしません。
+- **仮想エンティティ** – Power Platform 環境の仮想エンティティ構成により、財務と運用アプリ環境を選択することができます。 Microsoft Power Platform 統合環境以外の環境には、仮想エンティティを接続することをお勧めしません。
 
-Lifecycle Services が、デュアル書き込みなど他のテクノロジの 1 つが別のインスタンスに接続されているが、不一致を検出している、つまり LCS に Power Platform 統合環境の設定を所有している場合、推奨されないという警告が LCS に表示されます。  LCS から Power Platform 統合をまだ設定しておらず、既存の Dataverse ベース Power Platform 環境に接続したい場合は、[既存の Dataverse 環境のデュアル書き込みを設定](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment) を参照してください。
+Microsoft Power Platform 統合環境が LCS で設定されている一方で、他のテクノロジー (デュアル書き込みなど) が別のインスタンスに接続されている場合、LCS は不一致を検出します。 次に、この方法が推奨されないことを示す警告メッセージが表示されます。 LCS から Microsoft Power Platform 統合をまだ設定しておらず、既存の Dataverse ベース Power Platform 環境に接続したい場合は、[既存の Dataverse 環境のデュアル書き込みの設定](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment)にある指示に従ってください。
 
 ### <a name="finance-and-operations-apps-connected-to-a-single-microsoft-power-platform-environment"></a>単一の Microsoft Power Platform 環境に接続された財務と運用アプリ
 

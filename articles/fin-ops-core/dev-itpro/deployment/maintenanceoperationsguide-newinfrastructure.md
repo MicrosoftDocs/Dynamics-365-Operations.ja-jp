@@ -2,7 +2,7 @@
 title: 配置の保守操作
 description: このトピックでは、セルフ サービス配置エクスペリエンスを使用して配置された環境の保守操作を実行する方法について説明します。
 author: laneswenka
-ms.date: 12/02/2020
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 9be7005d4809ba482675c7491ac798b3063819e8c611e76eb0472c1eafb49f53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c90c88fc35e36904b97fa5eb60bf6bfef4f6475a
+ms.sourcegitcommit: 6fd739976b46122f9a9002309aba60edb89e5468
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720676"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "8453498"
 ---
 # <a name="maintenance-operations-for-deployments"></a>配置の保守操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "6720676"
 
 ## <a name="restart-services"></a>サービスをリセット
 
-サービスの再開機能を使用すると、Microsoft サブスクリプションで展開された階層 2、階層 3、階層 4、または階層 5 の標準承認テスト (サンドボックス) 環境に関連付けられた個々のサービスを再開することができます。 再起動できるサービスは、**AOS サービス**、**DIXF (データ インポート エキスポート フレームワーク サービス)**、および **MR (Management Reporter サービス)** です。
+サービスの再開機能を使用すると、Microsoft サブスクリプションで展開された階層 2、階層 3、階層 4、または階層 5 の標準承認テスト (サンドボックス) 環境に関連付けられた個々のサービスを再開することができます。 再起動できるサービスは、**財務と運用アプリ サービス**、**データ管理ワークスペース**、および **Financial Reporting サービス** です。
 
 サービスを再起動するには、以下の手順を実行します。
 

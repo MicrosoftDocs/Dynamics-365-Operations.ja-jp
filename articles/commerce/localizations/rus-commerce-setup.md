@@ -5,7 +5,6 @@ author: akviklis
 ms.date: 09/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
@@ -14,12 +13,12 @@ ms.search.industry: Retail
 ms.author: akviklis
 ms.search.validFrom: 07/01/2021
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0f8df17f5927a6d35ea3332b1bd4824bd46aa0da
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: 46605fdd0e9475a886fa560f9540382710f9b089
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512518"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407779"
 ---
 # <a name="set-up-the-dynamics-365-commerce-localization-for-russia"></a>ロシア向け Dynamics 365 Commerce ローカライズの設定
 

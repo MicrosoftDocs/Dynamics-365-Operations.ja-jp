@@ -2,19 +2,19 @@
 title: AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 description: このトピックでは、セルフサービス環境で Microsoft Dynamics AX 2012 からデータ アップグレードを行う方法について説明します。
 author: veeravendhan-s
-ms.date: 11/29/2021
+ms.date: 03/21/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: vesakkar
 ms.search.validFrom: 2021-06-30
-ms.openlocfilehash: 24414ebb6bd89c58c5c680fc1efb28069ba4ca6f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: e6be84e36a02acffd08085db3b3894b3c4c564b6
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867370"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462143"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-self-service-environments"></a>AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 
@@ -30,10 +30,18 @@ ms.locfileid: "7867370"
 
 ## <a name="prerequisites"></a>必要条件
 
-1. Microsoft Dynamics Lifecycle Services (LCS) から、AX 2012 Database Upgrade Toolkit for Dynamics 365 フォームをダウンロードします。 共有資産ライブラリで、資産タイプとして **モデル** を選び、モデル ファイルを選択します。
+1. Microsoft Dynamics Lifecycle Services (LCS) から、**AX 2012 Database Upgrade Toolkit for Dynamics 365** をダウンロードします。 共有資産ライブラリで、資産タイプとして **モデル** を選び、モデル ファイルを選択します。
 2. LCS のセルフ サービス環境を作成します。 この環境は、**配置済み** 状態である必要があります。 Microsoft が管理する環境である必要があります。 クラウド ホスト型開発環境は、[AX 2012 年からのアップグレード - 開発環境でのデータ アップグレード](data-upgrade-2012.md)としてのみ使用できます。
-3. まだインストールされていない場合は、[.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) をダウンロードし、インストールします。
-4. レプリケーション機能がインストールされ、ソース SQL Server インスタンスに対して有効になっていることを確認します。 レプリケーションが有効かどうかを確認するには、次の SQL スクリプトを実行します。
+
+> [!NOTE]
+> 次の点に注意してください:
+> 
+> - AX 2012 アップグレード プロセスは、実稼働環境ではなくサンドボックス環境で実行する必要があります。
+> - **AX 2012 Database Upgrade Toolkit for Dynamics 365** の最新バージョンを LCS からダウンロードしてください。
+> - AX 2012 データ更新用にリンクされた Power Platform を配置または使用しないでください。 Power Platform 環境は、データ アップグレードの完了後に配置して使用できます。
+
+4. まだインストールされていない場合は、[.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) をダウンロードし、インストールします。
+5. レプリケーション機能がインストールされ、ソース SQL Server インスタンスに対して有効になっていることを確認します。 レプリケーションが有効かどうかを確認するには、次の SQL スクリプトを実行します。
 
     ```sql
     -- If @installed is 0, replication must be added to the SQL Server installation.
@@ -232,7 +240,7 @@ ms.locfileid: "7867370"
 
     データのアップグレードに成功すると、**'ds'** オプションは **AX 2012 アップグレード トポロジ (LCS) ステータス: 配置済み** として示され、アップグレード ステップは **完了** 状態になります。
 
-    データのアップグレードに失敗すると、**'ds'** オプションは **AX 2012 アップグレード トポロジ (LCS) ステータス: 失敗** として示され、ひとつ以上のアップグレード ステップは **失敗** 状態になります。 **メニュー オプション (12)** ツールには、**再開** ステータスが表示されます。
+    データのアップグレードに失敗すると、**'ds'** オプションは **AX 2012 アップグレード トポロジ (LCS) ステータス: 失敗** として示され、ひとつ以上のアップグレード ステップは **失敗** 状態になります。 **メニュー オプション (10)** ツールには、**再開** ステータスが表示されます。
 
     失敗の理由を解決して修正した後、**再開** 操作を実行できます。 アクションが成功した際、LCS 環境の状態を **失敗** から **データ アップグレードの処理中** に変更します。
 
@@ -282,6 +290,7 @@ ms.locfileid: "7867370"
 - **クリア:** 環境設定の活動をクリアします。 **プロジェクト ID** の値、**環境 ID** の値、ソース データベースの詳細など、すべての情報がキャッシュからクリアされます。
 - **ヘルプ:** 更新されたステータスでデータ アップグレード移行オプションを表示します。
 - **終了:** アプリケーションを閉じます。
+- **Set-failed:** 環境を削除したい場合—および環境が **PreparingForReplication**、**ReadyForReplication** または **Replicating & Replicated)** の状態にある場合—このオプションを使い **失敗** に環境状態を設定し、その後環境は LCS から削除されます。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -390,6 +399,9 @@ ms.locfileid: "7867370"
     ```
     **ソリューション:** レプリケーション モニターで、失敗したパブリケーションを選択または右クリックして、**スナップショットの生成** を選択します。
 
+- **シナリオ 12:** データ アップグレード **同期前と同期後のプロセス、時間が必要です。** どちらの特定プロセスまたはジョブが時間がかかっているかを、どのようにトラブルシューティングできますか?
+
+    **解決策:****ReleaseUpgradeDB*** フレームワークでは、各スクリプトの実行が ReleaseUpdateScriptsLog テーブルにログされます。 テーブルで実行されるスクリプトの存続期間を監視できます。 データ アップグレード プロセスのパフォーマンスを調整しようとしているときに、最も実行時間が長いプロセスまたはジョブを簡単に識別できます。
 
 ## <a name="learn-about-the-replication-configuration-and-status-via-sql-server-management-studio"></a>SQL Server Management Studio 経由でのレプリケーションの構成とステータスについて
 

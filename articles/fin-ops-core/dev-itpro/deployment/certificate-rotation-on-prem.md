@@ -2,7 +2,7 @@
 title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
-ms.date: 02/02/2022
+ms.date: 03/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 9929e83dfd7f229063f6910c1f4d219369706cbe
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 4f2000597d92b28002e47ecea6dc1745a1ac6f30
+ms.sourcegitcommit: 0d5ee97670bdeb1986aaea880f32962b5e374751
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087647"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468033"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -30,19 +30,20 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 > 
 > 古い証明書は、証明書ローテーションプロセスが完了するまでそのままにしておく必要があり、事前に削除すると回転プロセスが失敗します。
 
+> [!WARNING]
 > この証明書ローテーション プロセスは、7.0.x および 7.1. x を実行する Service Fabric クラスターでは行わないでください。 
 >
 > 証明書ローテーションをする前に Service Fabric Cluster を 7.2.x 以降にアップグレードします。
 
 ## <a name="preparation-steps"></a>準備段階 
 
-1. プロセス中に作成した元の **インフラストラクチャ** フォルダーの名前を変更して、[LCS からのセットアップスクリプトをダウンロード](setup-deploy-on-premises-pu12.md#downloadscripts)するようにします。 フォルダーの名前を **InfrastructureOld** に変更します。
+1. プロセス中に作成した元の **インフラストラクチャ** フォルダーの名前を変更して、[LCS からのセットアップスクリプトをダウンロード](setup-deploy-on-premises-pu41.md#downloadscripts)するようにします。 フォルダーの名前を **InfrastructureOld** に変更します。
 
-2. [LCS のダウンロード セットアップ スクリプト](setup-deploy-on-premises-pu12.md#downloadscripts)から最新のセットアップスクリプトをダウンロードします。 **infrastructure** という名前のフォルダーにファイルを解凍します。
+2. [LCS のダウンロード セットアップ スクリプト](setup-deploy-on-premises-pu41.md#downloadscripts)から最新のセットアップスクリプトをダウンロードします。 **infrastructure** という名前のフォルダーにファイルを解凍します。
 
 3. **Configtemplate .Xml** および **clusterconfig. json** を **InfrastructureOld** から **インフラストラクチャ** にコピーします。
 
-4. 必要に応じて、**configtemplate.xml** で証明書をコンフィギュレーションします。 [証明書のコンフィギュレーション](setup-deploy-on-premises-pu12.md#configurecert) の手順に従って、特に、次の手順を実行します。
+4. 必要に応じて、**configtemplate.xml** で証明書をコンフィギュレーションします。 [証明書のコンフィギュレーション](setup-deploy-on-premises-pu41.md#configurecert) の手順に従って、特に、次の手順を実行します。
 
     ```powershell
     # Create self-signed certs
@@ -64,16 +65,16 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
     > 自己署名証明書は、実稼働環境では使用しないでください。 公開されている信頼できる証明書を使用している場合は、ConfigTemplate.xml ファイル内のこれらの証明書の値を手動で更新します。
 
     ```powershell
-    # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder
+    # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-5. [VM の設定](setup-deploy-on-premises-pu12.md#setupvms)に進みます。 このプロセスに必要な具体的な手順は次のとおりです。
+5. [VM の設定](setup-deploy-on-premises-pu41.md#setupvms)に進みます。 このプロセスに必要な具体的な手順は次のとおりです。
 
     1. 各 VM で実行する必要があるスクリプトをエクスポートします。
     
         ```powershell
-        # Export the script files to be executed on each VM into a directory VMs\<VMName>
+        # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
         .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
@@ -92,8 +93,7 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
         # If remoting, only execute
         # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml 
 
-        .\Import-PfxFiles.ps1
-        .\Set-CertificateAcls.ps1
+        .\Complete-PreReqs.ps1
         ```       
     
     4. 次のスクリプトを実行して VM のセットアップを検証します。
@@ -104,9 +104,9 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
         .\Test-D365FOConfiguration.ps1
         ```
 
-6. Axdataenciphermentcert 証明書がローテーションされている場合は、資格情報の .json ファイルを再生成する必要があります。 詳細については、「[資格情報の暗号化](setup-deploy-on-premises-pu12.md#encryptcred)」を参照してください。
+6. Axdataenciphermentcert 証明書がローテーションされている場合は、資格情報の .json ファイルを再生成する必要があります。 詳細については、「[資格情報の暗号化](setup-deploy-on-premises-pu41.md#encryptcred)」を参照してください。
 
-7. 後で LCS で使用できる値を保持するには、次の PowerShell コマンドを実行します。 詳細については、[LCS からのオンプレミス環境の配置](setup-deploy-on-premises-pu12.md#deploy) を参照してください。
+7. 後で LCS で使用できる値を保持するには、次の PowerShell コマンドを実行します。 詳細については、[LCS からのオンプレミス環境の配置](setup-deploy-on-premises-pu41.md#deploy) を参照してください。
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -266,12 +266,12 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. 「[テナント向けの LCS 接続コンフィギュレーション](setup-deploy-on-premises-pu12.md#configurelcs)」の手順に従ってください。
+1. 「[テナント向けの LCS 接続コンフィギュレーション](setup-deploy-on-premises-pu41.md#configurelcs)」の手順に従ってください。
 
     > [!NOTE] 
     > **KeyId \<key\> による既存の資格情報の更新は許可されていません** というエラー メッセージを受信した場合は、[エラー メッセージ: 「KeyId \<key\> による既存の資格情報の更新は許可されていません」](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed) の手順に従ってください。
 
-1. [コネクタのコンフィギュレーションを続行し、オンプレミスのローカルエージェントをインストールします。](setup-deploy-on-premises-pu12.md#configureconnector)具体的には、次の変更があります。
+1. [コネクタのコンフィギュレーションを続行し、オンプレミスのローカルエージェントをインストールします。](setup-deploy-on-premises-pu41.md#configureconnector)具体的には、次の変更があります。
 
     - クライアント証明書の拇印
     - サーバー証明書の拇印

@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c928ec19eab63db644900d5338d31c8f3b813dc
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 85093d9665daf8ce8adb87cc0d28bc9ed6af8d02
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8110007"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462564"
 ---
 # <a name="build-operational-workspaces"></a>運用ワークスペースの構築
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、ワークスペースと、運用ワークスペースを構築するために使用されるパターンとサブパターンの詳細について説明します。 
 

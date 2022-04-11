@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c600afd59893933dc83cfca7f613ad731a67a55a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 13fcc50104bbdf3d2910da6339ee0efe83bf77f1
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783052"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489015"
 ---
 # <a name="classes-and-methods"></a>クラスおよびメソッド
 
@@ -546,7 +546,7 @@ info(any2Str(myPoint.getX()));
 メソッド内部のローカル関数を宣言することができます。 これは、ローカル関数と呼ばれます。 可能ではあるものの、ベスト プラクティスではありません。 代わりに、プライベート メソッドをクラスに追加する必要があります。
 
 + ローカル関数の宣言は、メソッド内の宣言されていないステートメントの前に物理的に先行する必要があります。
-+ メソッド内で 1 つ以上のローカル関数を宣言することができます。 ただし、すべてのローカル関数は中断のないシリーズで宣言され、セットは 1 つのセミコロン (;) で終了する必要があります。
++ メソッド内で 1 つ以上のローカル関数を宣言することができます。 ただし、ローカル関数はすべて、中断のないシリーズで宣言する必要があります。
 + ローカル関数内にあるコードは、ローカル関数を含むメソッドで宣言されている変数にアクセスできます。
 + ローカル関数の外にあるコードは、ローカル関数で宣言された変数にアクセスすることはできません。
 + ローカル関数は、ローカル関数が宣言されているのと同じメソッド内のコードによってのみ呼び出すことができます。

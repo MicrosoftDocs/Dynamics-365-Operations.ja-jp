@@ -1,5 +1,5 @@
 ---
-title: X++ 静的クラス
+title: X++ 静的クラス メンバー
 description: このトピックでは、 X++ の静的クラスについて説明します。
 author: RobinARH
 ms.date: 12/02/2019
@@ -9,14 +9,14 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bb4d3539c09a5320a4c7fb06f35624d08bc2296
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bfd118c03db45eb7958f4b7e3c38aa2366a5c16c
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781302"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489014"
 ---
-# <a name="x-static-classes"></a>X++ 静的クラス
+# <a name="x-static-class-members"></a>X++ 静的クラス メンバー
 
 [!include [banner](../includes/banner.md)]
 

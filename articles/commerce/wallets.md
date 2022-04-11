@@ -2,7 +2,7 @@
 title: ウォレット支払のサポート
 description: このトピックでは、Microsoft Dynamics 365 Commerce のウォレット支払のサポートの概要を説明します。
 author: BrianShook
-ms.date: 05/18/2021
+ms.date: 03/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: d8177dea3c295dc7c4a07bfcb496419d8a24bd09
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 1787f370e54a9cb7560bbbaab565f9b75d8eba25
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779473"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407883"
 ---
 # <a name="wallet-payment-support"></a>Wallet 支払サポート
 
@@ -54,7 +54,10 @@ Commerce 本店でウォレット支払サポートを有効にするには、**
 
 コール センターでは、ウォレット支払サポート機能により、既定のビューに対して支払詳細承認用に 2 つのフィールドが追加されます。 最初に、既存の **プロセッサの参照** 列に、Adyen によって提供される PSP 参照が入力されます。 PSP 参照は、Adyen が支払を検索するために使用するキーです。 2つ目として、既存の **承認コード** 列に、Adyen からの承認で提供された承認コード値が入力されます。 
 
-小売用店舗トランザクションでは、Adyen コネクタを使用して作成された支払に対する支払トランザクション ビューに、追加の機能拡張が追加されています。 **承認コード** フィールドにはプロセッサからの承認コードが、**プロセッサ支払方法** フィールドにはプロセッサの支払方法が、**プロセッサの参照** フィールドには Adyen からの PSP 参照がそれぞれ表示されます。 これら 3 つのフィールドは、データベース内の個別のフィールドではありません。 これらは、特定の支払が表示されている場合にのみユーザー インターフェイスに表示されます。 フィールドを表示する前に、販売時点管理 (POS) クライアントを Commerce バージョン 10.0.20 以降で更新する必要があり、また **拡張ウォレット サポートおよび支払改善** 機能の **有効な** ステータスをチャネルに同期する必要があります。 
+小売店舗トランザクションでは、Adyen コネクタを使用して作成された支払に対する支払トランザクション ビューに、追加の機能拡張が追加されています。 **承認コード** フィールドにはプロセッサからの承認コードが、**プロセッサ支払方法** フィールドにはプロセッサの支払方法が、**プロセッサの参照** フィールドには Adyen からの PSP 参照がそれぞれ表示されます。 これら 3 つのフィールドは、データベース内の個別のフィールドではなく、特定の支払が表示される場合にのみユーザー インターフェイスに表示されます。 PayPal 向け Dynamics 365 Payment Connector を使用して処理された支払は、**承認コード**、**プロセッサの支払**、および **プロセッサの参照** フィールドの値も提供します。 フィールドを表示する前に、販売時点管理 (POS) クライアントを Commerce バージョン 10.0.20 以降で更新する必要があり、また **拡張ウォレット サポートおよび支払改善** 機能の **有効な** ステータスをチャネルに同期する必要があります。
+
+> [!NOTE]
+> PayPal 向け Dynamics 365 Payment Connector は、PayPal [API](https://developer.paypal.com/api/payments/v2/#authorizations_void) の制限により、支払無効化要求の 3 つのフィールド値 (**承認コード**、**プロセッサの支払**、**プロセッサの参照**) を提供しません。 ユーザー インターフェイスでは、3 つのフィールドが空白になります。 
 
 ## <a name="wallet-payment-method-support-and-processor-payment-methods"></a>ウォレット支払方法のサポートとプロセッサ支払方法
 

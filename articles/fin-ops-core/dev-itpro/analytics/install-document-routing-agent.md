@@ -2,7 +2,7 @@
 title: ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 description: このトピックでは、Microsoft Dynamics 365 Finance の配置用にドキュメント回覧エージェントをインストールして構成する方法について説明します。
 author: RichdiMSFT
-ms.date: 09/06/2019
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,26 +15,26 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e28fbd4fe0be7b031c3f777d6d39a20c5691746c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 350a9af981008a31af89df4380d3fe33475a2d42
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345675"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462923"
 ---
 # <a name="install-the-document-routing-agent-to-enable-network-printing"></a>ネットワーク印刷を有効にするためにドキュメント回覧エージェントをインストールする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ドキュメント回覧エージェント (DRA) をインストールして構成する方法について説明します。  DRA は、ネットワーク印刷シナリオを有効にするのに使用できる、ダウンロード可能なアプリケーションを提供します。 クライアント内管理ページを使用して、特定の会社のためにネットワーク プリンターを有効にすることができます。
+このトピックでは、ドキュメント回覧エージェントをインストールして構成する方法について説明します。  ドキュメント回覧エージェントは、ネットワーク印刷シナリオを有効にするのに使用できる、ダウンロード可能なアプリケーションを提供します。 クライアント内管理ページを使用して、特定の会社のためにネットワーク プリンターを有効にすることができます。
 
 ## <a name="preparing-to-install-the-document-routing-agent"></a>ドキュメント回覧エージェントのインストールを準備
 
 - Windows 8.1、Windows 10、Microsoft Windows Server 2012 R2、または Microsoft Windows Server 2016 でサポートされています。
 - ネットワーク印刷リソースへのアクセスには、Active Directory Domain Services (AD DS) 認証が必要です。
-- DRA をインストールする場合は、管理者ユーザーとしてログインしていることを確認してください。
-- DRA を構成するために使用される Microsoft Azure Active Directory (Azure AD) アカウントには、Azure テナントと同じドメインを共有する必要があります。
-- DRA には、クライアント上に .NET 4.62 以降と Adobe Acrobat Reader が必要です。
+- ドキュメント回覧エージェントをインストールする場合は、管理者ユーザーとしてログインしていることを確認します。
+- ドキュメント回覧エージェントの設定に使用する Microsoft Azure Active Directory (Azure AD) アカウントは、Azure テナントと同じドメインを共有している必要があります。
+- ドキュメント回覧エージェントには、クライアント上で NET 4.62 またはそれ以降の 32 ビットの Adobe Acrobat Reader が必要です。
 - ドキュメントの拡大縮小を防止するために、Adobe クライアントの印刷設定をコンフィギュレーションします。
 
 アプリケーションに登録されているネットワーク プリンターは、環境で定義されているすべての法人 (会社とも呼ばれます) で使用できます。 ネットワーク プリンター設定は会社固有です。 したがって、管理者はユーザーのアクティブな会社に基づいてアクセスを制限できます。 たとえば、有効な会社内のユーザーは、ドキュメント回覧エージェントによって登録されるすべてのネットワーク プリンターへアクセスできる可能性があります。 ただし、別の会社内のユーザーは、アクセスがその会社に対して明示的に有効になるまで、それらのプリンターへアクセスできません。
@@ -72,7 +72,7 @@ ms.locfileid: "6345675"
 4. 次の設定を追加します。
 
     - **アプリケーション ID** - アプリケーション固有の ID で、自動的に入力されます。
-    - **Finance and Operations URL** – アプリケーションのベース URL。
+    - **財務と運用 URL**- アプリケーションのベース URL です。
     - **Azure AD テナント** – Azure AD のドメイン名。
 
 5. **OK** をクリックします。
@@ -108,6 +108,14 @@ ms.locfileid: "6345675"
 
 ネットワーク プリンターは、アプリケーションで使用できるようになりました。
 
+> [!NOTE]
+> ネットワーク プリンター の接続先を最新に保ち、ドキュメント回覧エージェントに対して登録されているプリンターでドキュメント回覧が正しく構成されていることを確認します。 ドキュメントが存在していないプリンターに送信される場合、印刷キューは増え続け、印刷キューをポーリングするクエリは減速します。
+    
+## <a name="adjust-the-document-routing-history-cleanup-batch-job"></a>ドキュメント回覧履歴のクリーンアップ バッチ ジョブの調整
+既定で有効で、毎日実行するドキュメント回覧履歴のためのクリーンアップ バッチ ジョブがあります。 このバッチ ジョブによって、7 日を経過したドキュメント回覧履歴は削除されます。 この履歴は、印刷で問題があった場合のトラブルシューティングまたは追跡のための顧客による使用を目的としています。 この履歴データへのアクセス方法に応じて、上限と見なされる 7 日間の既定値から保持期間を削減することができます。 このテーブルのレコード数を少なくすると、印刷の最適なパフォーマンスが確保されます。 この設定は、`https://[host_adress]/?mi=DocumentRoutingHistoryCleanupConfig` で構成できます。 **JobHistoryHours** (履歴を保持する時間数) の値を構成します。 
+
+ドキュメント回覧エージェントのポーリングの一環として、このテーブルに対してクエリが実行されます。 このクエリは迅速に実行する必要がありますが、このテーブルにレコードが多い場合、大量の印刷ジョブの場合、速度が非常に遅くなる可能性があります。 このバッチ ジョブが毎日実行されていることを確認し、これを構成して印刷履歴の保持量を削減します。 
+
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="does-the-document-routing-agent-have-to-be-installed-on-each-computer-where-a-user-connects-by-using-a-browser"></a>ドキュメント回覧エージェントは、ユーザーがブラウザーを使い接続する各コンピューターにインストールする必要がありますか。
 
@@ -119,7 +127,7 @@ ms.locfileid: "6345675"
 
 ### <a name="do-i-need-to-update-credentials-or-refresh-azure-authentication-tokens-on-a-recurring-basis"></a>定期的に資格情報を更新するか、Azure 認証トークンを更新する必要がありますか。
 
-はい。 Azure Active Directory トークンは 90 日おきに更新する必要があります。 更新しなかった場合、DRA は認証できなくなり、印刷する指示のアプリケーションを取得できなくなります。
+はい。 Azure Active Directory トークンは 90 日おきに更新する必要があります。 更新しなかった場合、ドキュメント回覧エージェントは認証できなくなり、 アプリケーションから印刷の指示を取得できなくなります。
 
 ### <a name="is-the-document-routing-agent-supported-on-microsoft-windows-server-2019"></a>ドキュメント回覧エージェントは Microsoft Windows Server 2019 でサポートされていますか?
 
@@ -132,13 +140,17 @@ ms.locfileid: "6345675"
 
 いいえ、この時点ではありません。 Azure の機能には、Microsoft Windows Server 2012 R2 および Microsoft Windows Server 2016 でのみ使用可能ないくつかの依存関係があります。
 
-### <a name="does-the-user-who-installs-the-document-routing-agent-have-to-be-part-of-a-finance-and-operations-apps-security-group"></a>ドキュメント回覧エージェントをインストールするユーザーは、Finance and Operations アプリ セキュリティ グループの一部である必要がありますか?
+### <a name="does-the-user-who-installs-the-document-routing-agent-have-to-be-part-of-a-finance-and-operations-apps-security-group"></a>ドキュメント回覧エージェントをインストールするユーザーは、財務と運用アプリ セキュリティ グループの一部である必要がありますか。
 
 はい。 エージェントのインストール リンクにアクセスするには、ユーザーは **ドキュメント ルート指定クライアント** のセキュリティ ロールの一部でなければなりません。
 
 ### <a name="how-many-network-printers-can-the-document-routing-agent-support"></a>ドキュメント回覧エージェントはいくつのネットワーク プリンターをサポートできますか。
 
 サポートされているネットワーク プリンターの数は、法人の数と配置されたネットワーク プリンターの数によって異なります。 50 台のプリンタと 1 つの法人組織がある場合は、単一のドキュメント ルーティング エージェントが負荷を処理できます (高可用性を確保するために複数のドキュメント ルーティング エージェントが必要になります)。 プリンタおよび法人の数が多い場合は、必要となるドキュメント回覧エージェントの数を決定するいくつかのパフォーマンス テストを実行することをお勧めします。
+
+### <a name="how-many-document-routing-agents-should-be-configured-per-printer"></a>1 つのプリンターに対してドキュメント回覧エージェントをいくつ構成する必要がありますか。
+
+高い可用性を確保するために、複数のドキュメント回覧エージェントをプリンター用に構成する必要があります。 ただし、プリンターあたりのエージェントの数は、3 つ以下に制限する必要があります。 ドキュメント回覧エージェントの各ポーリングでは、キューを照会して、そのドキュメント回覧エージェント クライアントに登録されているプリンターに送信されたドキュメントを取得する必要があります。 ドキュメント回覧エージェントに関連付けられているプリンターの数が多い場合、クエリの速度が低下します。 これは特に、キューに多数の保留中ジョブがある場合に当てはまります。 3 つ以上のドキュメント回覧エージェントで大量のプリンターを使用するよりも、2-3 つのドキュメント回覧エージェントで少数のプリンターを使用することをお勧めします。
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: ビジネス ロジックで非同期コマース (CRT) API を作成する
 description: このトピックでは、非同期で実行される コマース (CRT) アプリケーション プログラミング インターフェイス (API) (つまり、要求) の作成方法について説明します。
 author: mugunthanm
-ms.date: 02/13/2020
+ms.date: 03/16/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 1914c1bee8fba1703fd25dc5dc4d6e5ce90a27eb
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3b6880ed98214d229d8501fa30b7477fa6544485
+ms.sourcegitcommit: 6fd739976b46122f9a9002309aba60edb89e5468
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782988"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "8453500"
 ---
 # <a name="create-asynchronous-commerce-crt-apis-in-your-business-logic"></a>ビジネス ロジックで非同期コマース (CRT) API を作成する
 
@@ -80,6 +80,9 @@ ms.locfileid: "7782988"
 
 + 実行中のコマース API ハンドラーの上書き
 + プレトリガーとポストトリガー
+
+> [!NOTE]
+> 拡張機能コードに対して、要求の実行時に ConfigureAwait (いいえ) を使用することをお勧めします。
 
 ## <a name="create-a-new-asynchronous-commerce-runtime-api"></a>新しい非同期 Commerce Runtime API の作成
 

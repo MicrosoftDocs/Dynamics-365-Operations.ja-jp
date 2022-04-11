@@ -2,7 +2,7 @@
 title: Microsoft Power Platform と財務と運用アプリの統合
 description: このトピックでは、財務と運用アプリ用 Microsoft Dynamics Lifecycle Services と Microsoft Dataverse を介した Microsoft Power Platform 統合の概要について説明します。
 author: Sunil-Garg
-ms.date: 02/15/2022
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6bb90b2c8020b926f98951f5c680417ecdebc699
-ms.sourcegitcommit: 3e78d9af127ba205c562612bb587aa19145605d0
+ms.openlocfilehash: 315814f3fe557bf9f2ae6ca33c9b70d627853444
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8336966"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418660"
 ---
 # <a name="microsoft-power-platform-integration-with-finance-and-operations-apps"></a>Microsoft Power Platform と財務と運用アプリの統合
 
@@ -29,13 +29,13 @@ Microsoft Power Platform は、Power Platform 管理者センターを介した 
 
 ## <a name="environment-lifecycle-considerations"></a>環境ライフサイクルの考慮次項
 
-既定では、LCS によって管理されるすべての財務と運用の環境は、リンクされた Power Platform 環境を Dataverse なしで受け取ります。 これは 1 対 1 の関係で、財務と運用アプリが移行する場所になります。 LCS の環境にリンクされている環境では、Power Platform 管理センターの環境詳細ページで、財務と運用アプリの URL が表示されます。
+既定では、LCS によって管理されるすべての財務と運用アプリの環境は、リンクされた Power Platform 環境を Dataverse なしで受け取ります。 リレーションシップは一対一です。 時間の経過とともに、財務および運用アプリはこの場所に移行されます。 Power Platform 管理センターの環境詳細ページにある財務と運用アプリの URL を参照して、環境を LCS の環境にリンクするかどうかを決定できます。
 
 :::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="リンクされた Power Platform 環境":::
 
-この環境は、削除したりリセットしたりすることはできず、Dataverse データベースを手動で追加することもできません。 Dataverse を追加するには、全体的に Power Platform 統合を設定し、次の手順を実行します。 
+この環境は、削除またはリセットすることはできず、Dataverse データベースを手動で追加することもできません。 Dataverse を追加し、全体的に Microsoft Power Platform 統合を設定するには、[Microsoft Power Platform 統合を有効にする](enable-power-platform-integration.md) の手順を実行します。
 
-また、仮想エンティティ、アドイン、デュアル書き込みなど、Power Platform 統合シナリオの既存の Dataverse 環境を再利用する場合は、[既存 Dataverse 環境のデュアル書き込みを設定](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment) に関する推奨事項に従います。
+Microsoft Power Platform 統合シナリオ (仮想エンティティ、アドイン、二重書き込み機能など) の既存の Dataverse 環境を再利用する場合は、[既存 Dataverse 環境の二重書き込みの設定](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment) に関する手順に従います。
 
 ## <a name="prerequisite-reading"></a>前提条件の参照先
 

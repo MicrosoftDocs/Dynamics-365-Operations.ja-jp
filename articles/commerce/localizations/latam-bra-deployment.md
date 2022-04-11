@@ -5,7 +5,6 @@ author: akviklis
 ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
@@ -14,12 +13,12 @@ ms.search.industry: Retail
 ms.author: akviklis
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9efc1f9fa32419c317ac82c853e64e0514258d63
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 7176ab1a273c9f766bc9242f105c1053499369bf
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388250"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407974"
 ---
 # <a name="set-up-and-deploy-the-dynamics-365-commerce-localization-for-brazil"></a>ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 

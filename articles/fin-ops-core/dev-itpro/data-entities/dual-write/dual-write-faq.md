@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53621c5723ef49e285054ab6dbfbda7f027b726f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 92b4ef2a38059c8fa643e30dd02008edadce813a
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061591"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464953"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 
@@ -121,7 +121,7 @@ Prospect to Cash を二重書き込みに移行する方法の詳細について
 + 財務と運用アプリで、**F0001、F0002、F0003** を使用します。 Customer Engagement アプリでは、**C0001、C0002、C0003** を使用します。
 + 財務と運用アプリで、**US0001 から US4999** を使用します。 Customer Engagement アプリでは、**US5000 から US9999 まで** を使用します。
 
-テーブルが単一のシステムで作成された場合は、ソース アプリに対してのみ番号順序を設定します。 詳細については、[自動付番列](/powerapps/maker/common-data-service/autonumber-columns)を参照してください。
+テーブルが単一のシステムで作成された場合は、ソース アプリに対してのみ番号順序を設定します。 詳細については、[自動付番列](/powerapps/maker/data-platform/autonumber-fields)を参照してください。
 
 ### <a name="can-i-map-a-company-specific-table-in-a-customer-engagement-app-with-a-global-table-in-a-finance-and-operations-app-or-a-global-table-in-a-customer-engagement-app-with-a-company-specific-table-in-a-finance-and-operations-app"></a>Customer Engagement アプリの会社固有のテーブルを財務と運用アプリのグローバル テーブルに、または Customer Engagement アプリのグローバル テーブルを財務と運用アプリの会社固有のテーブルにマップすることはできますか?
 

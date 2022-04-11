@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Platform Update31
-ms.openlocfilehash: 3b3500f11714899ecdd5aafe5d60f26ff3069a58
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 81347e26352ba4d1fae5029a8bd6f9476d3ccf3a
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349707"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462566"
 ---
 # <a name="priority-based-batch-scheduling"></a>優先順位に基づくバッチスケジューリング 
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 プラットフォーム アップデート 31 では、[機能管理](../../fin-ops/get-started/feature-management/feature-management-overview.md) の **バッチ優先順位に基づくスケジューリング** 機能を有効にすることができます。 優先順位に基づくスケジューリングではバッチ グループをバッチ サーバーから切り離し、バッチ グループの優先順位を定義できます。 バッチ ジョブをバッチ サーバーに割り当てる必要はなくなりました。 代わりに、使用可能なバッチサーバー間でタスクが実行される順序を決定するために、業務要件に基づく相対的なスケジューリング優先順位が使用されます。
 

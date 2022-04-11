@@ -2,7 +2,7 @@
 title: データベースの更新
 description: このトピックでは、Microsoft Dynamics 365 Finance のデータベースの更新を実行する方法について説明します。
 author: LaneSwenka
-ms.date: 11/01/2021
+ms.date: 03/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 529ccb8d6082cd810b2222a0ca67aaf88ec3b103
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 5e0eececab7556c5388d3815374c3decf3c4b379
+ms.sourcegitcommit: a8f4d7d21d9af17d80b1213e5e1a81f42fb8b928
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777654"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "8414107"
 ---
 # <a name="refresh-database"></a>データベースの更新
 
@@ -68,6 +68,7 @@ ms.locfileid: "7777654"
 * 別のデータベースサーバーでは解読できないため、すべての Microsoft 暗号化フィールドはクリアされます。 次の例は、sysemailsmtppasswordテーブルの **パスワード** フィールドです。
 * [メンテナンス モード](../sysadmin/maintenance-mode.md) 設定は、ソースで有効になっていた場合でも無効になります。
 * 二重書き込みの構成。  この操作に成功した後にターゲット環境に新しいリンクを設定するには、[二重書き込み環境リンク](../data-entities/dual-write/link-your-environment.md)を参照してください。
+* いくつかの[エンティティの変更追跡](../data-entities/entity-change-track.md) は無効になります。
 
 これらの要素は、環境固有のものであるためコピーされません。 この例には、BatchServerConfigおよびSysCorpNetPrintersの各レコードが含まれます。 その他の要素は、サポート チケットのデータ量が多くなる懸念があるためコピーされません。 たとえば、簡易メール転送プロトコル (SMTP) はUAT環境でも有効になっているため、重複する電子メールが送信されてしまう可能性があります。また、バッチジョブも有効になっているため、無効な統合メッセージが送信されてしまう可能性もあるため、管理者がポストリフレッシュクリーンアップを行う前にユーザーが有効化されてしまう可能性があります。
 

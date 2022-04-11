@@ -2,7 +2,7 @@
 title: 環境サービスの再開
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) を通じて展開される環境で個々のサービスを再起動する方法について説明します。こ
 author: laneswenka
-ms.date: 11/01/2021
+ms.date: 03/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-03-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2be84183e8e466623f141478df91f4c49e102089
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 15506e07221f33f96a93f4c322f62df1fd8003e7
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777554"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418655"
 ---
 # <a name="restart-environment-services"></a>環境サービスの再開
 
@@ -25,9 +25,9 @@ ms.locfileid: "7777554"
 
 Microsoft Dynamics Lifecycle Services (LCS) のサービスの再開機能を使用すると、**セルフサービス** タイプの階層 2、階層 3、階層 4、または階層 5 の標準承認テスト (サンドボックス) 環境に関連付けられた個々のサービスを再開することができます。 この機能を使用すると、次のサービスを再起動することができます。
 
-- AX (ランタイム全体)
-- DIXF (データのインポート/エクスポート フレームワーク サービス)
-- MR (Financial Reporting サービス)
+- **財務と運用アプリ**- これには X++ ランタイム関数およびバッチ関数が含まれます。
+- **データ管理サービス**- このサービスは、データ インポート/エクスポート サービスとも呼ばれます。
+- **Financial Preporting サービス**- このサービスを使用して財務諸表を生成します。 
 
 プロジェクト所有者、組織管理者、または環境マネージャーとして LCS プロジェクトに追加されたすべてのユーザーは、この機能を使用するアクセス許可を持っています。
 

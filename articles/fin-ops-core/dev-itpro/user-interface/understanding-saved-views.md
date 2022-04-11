@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: ff0f6c2bfbd5b6be974231f9c735f9ade12e51a7
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: b3aa8e43499aca1ae2896c5319285f1247aecfb7
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109905"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462313"
 ---
 # <a name="build-forms-that-fully-utilize-saved-views"></a>保存されたビューを十分に活用するフォームの作成
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 保存されたビューは、財務と運用アプリケーションにおけるパーソナライズ機能の中でも重要な拡張機能です。 [保存されたビュー](../../fin-ops/get-started/saved-views.md) のトピックでは、この機能の総合的な詳細情報を提供します。ここでは、保存されているビューの技術的な要素のみでなく、ビューの影響を受ける可能性のあるフォーム開発の側面も対象とします。 
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: bd44ee78751cabf5bbde1f0831c3829e2e6ad315
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 890a41673ed4f7f38eea5b37ed86a09fd444e82c
+ms.sourcegitcommit: 293df12697166556b1da0c9a34d2d8679dc8c0a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782920"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8397605"
 ---
 # <a name="code-signing-a-modern-pos-msix-extension-package"></a>Modern POS (MSIX) 拡張機能パッケージへのコード署名
 
@@ -30,6 +30,8 @@ Modern Pos JavaScript プロジェクト ファイルにコード署名証明書
 ```XML
 <PackageCertificateKeyFile Condition="Exists('.\MPOS_Extension_Certificate.pfx')">MPOS_Extension_Certificate.pfx</PackageCertificateKeyFile>
 ```
+> [!WARNING]
+> パスワードで保護された証明書は、Visual Studio 2017 ではサポートされていませんが、Azure 署名ツールを使用してビルド パイプラインでパスワードで保護された証明書を使用できます。 
 
 開発目的用の自己署名証明書を使用する場合、証明書を信頼できるルート フォルダーに追加して、コンピュータで手動で信頼済にする必要があります。
 

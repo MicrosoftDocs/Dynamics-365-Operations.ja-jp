@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fc9e8d32edd348e92f23c873b2baf7f42eb909e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c292cfcd2e71667367eff41129431f29bece390b
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781306"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489013"
 ---
 # <a name="x-conditional-statements"></a>X++ 条件付きステートメント
 
@@ -91,7 +91,7 @@ switch (Debtor.AccountNo)
 }
 ```
 
-次のコード例では、breakステートメントを省略して最初のcase 分岐から実行をドロップします。 Xが10の場合、bはaに割り当てられ、dはcに割り当てられます。 Xが11の場合、dはcに割り当てられます。 Xが12の場合、fはeに割り当てられます。
+次のコード例では、break ステートメントを省略して最初の case 分岐から実行をドロップします。 Xが10の場合、bはaに割り当てられ、dはcに割り当てられます。 Xが11の場合、dはcに割り当てられます。 Xが12の場合、fはeに割り当てられます。
 
 ```xpp
  switch (x)

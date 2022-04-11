@@ -2,19 +2,19 @@
 title: Azure Data Lake へのエクスポートの概要
 description: このトピックでは、Finance and Operations 環境を Data Lake に接続してデータで非表示にされているインサイトのロック解除をする方法について説明します。
 author: MilindaV2
-ms.date: 02/09/2022
+ms.date: 03/23/2022
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2021-11-30
-ms.openlocfilehash: 4a54d26e96365b6ea5d409b77d5dfb3e0fc2dfe3
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: c7010fb9a89bca75f202b481d1e9ee7b89ffaf85
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105416"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469044"
 ---
 # <a name="export-to-azure-data-lake-overview"></a>Azure Data Lake へのエクスポートの概要
 
@@ -32,7 +32,7 @@ Data Lake に保存されたデータは、[Common Data Model](https://powerplat
 
 Azure Data Lake へのエクスポートは、Microsoft が完全に管理する、スケーラブルで可用性の高いサービスです。 組み込みのディザスター リカバリーが含まれます。 サポートされる機能の一部を次に示します。
 
-- 最大 200 テーブル選択できます。 データに対するすべての変更は、Data Lake 内で継続的に更新されます。 これらの変更には、挿入、更新、および削除の操作が含まれます。
+- 最大 350 テーブル選択できます。 データに対するすべての変更は、Data Lake 内で継続的に更新されます。 これらの変更には、挿入、更新、および削除の操作が含まれます。
 - テーブルまたはエンティティを使用してデータを選択できます。 エンティティを使用する場合、基本テーブルはサービスにより選択されます。
 - 標準エンティティとカスタム エンティティおよびテーブルの両方を選択できます。
 - Microsoft Azure Synapse Analytics または他の多くのサード パーティ ツールを使用して、Data Lake でデータを処理することができます。
@@ -56,6 +56,15 @@ Azure Data Lake へのエクスポートは、Microsoft が完全に管理する
 
 ほぼリアルタイムの変更フィードの詳細については、[Azure Data Lake の変更データ](azure-data-lake-change-feeds.md)を参照してください。
 
+## <a name="business-events-preview"></a>ビジネス イベント (プレビュー)
+
+このプレビュー機能を有効にすると、Data Lake の何か重要な問題が発生した場合に警告を発生することができます (たとえば、データで初期化されます)。 データの最初のコピーが完了すると、システムによってビジネス イベントが生成されます。 [ビジネス イベント](/powerapps/developer/data-platform/business-events) は、Dynamics 365 と Dataverse のフレームワークであり、簡単にインテリジェント アクションと自動化を作成できます。 たとえば、Power Platform に統合されているツールである [Power Automate](https://powerautomate.microsoft.com/) を使用して、自動化されたワークフローを構築し、ダウンストリームのデータ パイプラインを自動的にトリガするなどのアクションを実行できます。
+
+Microsoft は、今後数か月の間に、サービスにさらにビジネス イベントを追加する予定です。 エクスポートから Data Lake サービスによって生成されたビジネス イベントの詳細については、[エクスポートから Azure Data Lake サービスによって生成されたビジネス イベント](Azure-Data-Lake-Generates-Biz-events.md) を参照してください。
+
+## <a name="enhanced-metadata-preview"></a>拡張メタデータ (プレビュー)
+
+データに加え、Data Lake には、データの名前、データ型、およびサイズを記述したメタデータが含まれています。 レイクでは、データ ファイルに加え、データ ファイルに対応するフォルダー レベルでメタデータ ファイルが表示されます。 Data Lake 機能にエクスポートをインストールし、データ レイクに追加するデータを選択すると、システムはデータに加えてメタデータ ファイルを書き込みます。 Data Lake へのエクスポートをインストールする際 **拡張メタデータ (プレビュー)** オプションを選択する場合、システムによって更に多くのメタデータが追加されます。 メタデータと拡張メタデータ (プレビュー) 機能については、[Azure Data Lake のデータと格納メタデータ](Azure-Data-Lake-Enhanced-Metadata.md) を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -101,9 +110,9 @@ Data Lake 内のデータは、システムによって管理されるフォル�
 ### <a name="how-can-i-consume-data-in-the-lake"></a>Data Lake のデータをどのように消費できますか?
 Microsoft およびサード パーティの各種のツールを使用して、Data Lake のデータを管理することができます。 ほとんどのツールでは、CSV ファイルとして Data Lake 内に保存されているデータを消費できます。  
 
-Azure Synapse Analytics サーバーレス SQL プールを使用すると、Transact-SQL 言語 (T-SQL) を使用して、同じ言語のデータを消費することができます。 T-SQL 言語は、多くのツールによって広くサポートされています。 データベースからデータを消費する場合と同様に、Synapse ワークスペースを Data Lake のデータ上で定義し、T-SQL、Spark または Syapse Pipelines を使用することができます。 Data Lake のデータ上に Synapse ワークスペースを作成するには [FastTrack for Dynamics 365- CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution) を使用します。
+Azure Synapse Analytics サーバーレス SQL プールを使用すると、Transact-SQL 言語 (T-SQL) を使用して、同じ言語のデータを消費することができます。 T-SQL 言語は、多くのツールによって広くサポートされています。 データベースからデータを消費する場合と同様に、Synapse ワークスペースを Data Lake のデータ上で定義し、T-SQL、Spark または Syapse Pipelines を使用することができます。 レイクのデータに Synapse ワークスペースを作成するには、[FastTrack Solutions for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution) を使用します。
 
-既製のソリューション テンプレートを使用して、Data Lake から SQL Server データ ウェアハウスまたは別の接続先にデータをコピーすることもできます。 詳細については、[FastTrack for Dynamics 365- SynapseToSQL_ADF](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF) を参照してください。
+既製のソリューション テンプレートを使用して、Data Lake から SQL Server データ ウェアハウスまたは別の接続先にデータをコピーすることもできます。 詳細については、[FastTrack Solutions for Dynamics 365 - SynapseToSQL_ADF](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF) を参照してください。
 
 ### <a name="how-often-is-data-in-the-data-lake-updated"></a>Data Lake のデータはどのくらいの頻度で更新されますか?
 

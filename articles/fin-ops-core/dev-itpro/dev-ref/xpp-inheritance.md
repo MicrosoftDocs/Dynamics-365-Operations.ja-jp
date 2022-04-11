@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df7cbb315fb5c4ad0a0a73d44fd7d642711dcc3e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b6ff9e5909dcfe6f5ec0125a5fbb2e3a73db8d23
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781304"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489072"
 ---
 # <a name="x-inheritance"></a>X++ 継承
 
@@ -71,7 +71,7 @@ public final class Attribute
 ```
 
 ## <a name="overriding-a-method"></a>メソッドのオーバーライド
-クラス内のメソッドは、そのクラスを拡張するクラスによって継承されます。 継承されたメソッドの機能を変更するには、サブクラスでメソッドを作成し、そのメソッドにスーパークラスのメソッドと同じ名前およびパラメーターを指定します。 このプロセスは、メソッドを *オーバーライドする* として知られています。 次の例では、**ColorAttribute** は **属性** のサブクラスであるため、**methodAttr** メソッドを継承します。 ただし、**ColorAttribute** は同じ名前および同じ数の引数を持つメソッドを定義するため、スーパークラスのメソッドは上書きされます。
+クラス内のメソッドは、そのクラスを拡張するクラスによって継承されます。 継承されたメソッドの機能を変更するには、サブクラスでメソッドを作成し、そのメソッドにスーパークラスのメソッドと同じ名前およびパラメーターを指定します。 このプロセスは、メソッドを *オーバーライドする* として知られています。 
 
 サブクラスのインスタンスを作成するとき、スーパークラスの型の変数またはサブクラスの型の変数のいずれかに照会を割り当てることができます。 変数の型に関係なく、上書きされたメソッドが呼び出されます。 
 

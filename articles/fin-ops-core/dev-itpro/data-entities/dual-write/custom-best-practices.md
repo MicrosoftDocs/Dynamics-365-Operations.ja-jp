@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b09b8cd89298bee689100baa3b4535db7255ad
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 83a65b957244ad3bd524f2557e33ecb86013a2ae
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060607"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487597"
 ---
 # <a name="customization-guidance-for-dual-write"></a>二重書き込みのカスタマイズに関するガイダンス
 
@@ -64,7 +64,7 @@ ms.locfileid: "8060607"
 
 エンティティがどちらの環境にも存在しない場合は、両方の環境でテーブルを作成し、次の手順に従ってアプリを作成できます。
 
-1. Dataverse で、必要なすべてのフィールドを含む新しいテーブルを作成します。 [カスタム テーブルの作成](/modules/create-manage-entities/2-custom-entity) の手順に従います。 テーブルに法人固有のデータを格納する場合、 Dataverse テーブルの **cdm \_companies** にルックアップ フィールドを必ず追加してください。 テーブルがグローバル データを格納する場合、会社のフィールドは Dataverse テーブルには必須ではありません。
+1. Dataverse で、必要なすべてのフィールドを含む新しいテーブルを作成します。 [カスタム テーブルの作成](/powerapps/maker/data-platform/data-platform-create-entity) の手順に従います。 テーブルに法人固有のデータを格納する場合、 Dataverse テーブルの **cdm \_companies** にルックアップ フィールドを必ず追加してください。 テーブルがグローバル データを格納する場合、会社のフィールドは Dataverse テーブルには必須ではありません。
 2. 財務と運用アプリで、必要なすべてのフィールドを含む新しいエンティティを作成します。 エンティティがデータ管理に対して有効であり、OData によって使用できることを確認します。 新しいエンティティの作成方法の詳細については、[データ エンティティの構築と使用](../build-consuming-data-entities.md) を参照してください。
 3. テーブル マップの二重書き込みを有効にするには、Dataverse デーブルで代替キーを定義する必要があります。 Dataverse の代替キーの値は、財務と運用アプリで定義されているキーと一致する必要があります。 たとえば、財務と運用アプリでは、次の図で示すように **CustomerAccount** が **アカウント** テーブルのキーになります。
 

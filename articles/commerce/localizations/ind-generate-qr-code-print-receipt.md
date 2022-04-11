@@ -13,17 +13,16 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e2b9d755e889ba295b3d343cc8b0aa3291a9ac27
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 06224c265c2a1792f884874e1b39fae3cfd655a1
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087410"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462568"
 ---
 # <a name="generate-qr-codes-and-print-them-on-receipts-for-india"></a>インド向け QR コードの生成とレシートへの印刷
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、カスタマイズのガイドラインを示し、インド向けに、統一支払インターフェイス (UPI) クイック応答 (QR) コードを生成してレシートに印刷する方法について説明します。
 
