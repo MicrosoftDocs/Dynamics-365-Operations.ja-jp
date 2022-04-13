@@ -10,18 +10,27 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8418643"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487839"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20200"></a>Version 2.0.20.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- 複数のクラッシュ問題を修正しました。
+- **作業一覧** ページのカードに誤った値が表示される問題を修正しました。
+- スクロール エクスペリエンスを改善し、Android の **作業一覧** および **品目の照会** ページで起こるスクロールの不具合を解消しました。
+- サインイン ページに、アプリケーションを終了する終了ボタンを追加しました。
 
 ## <a name="version-20190"></a>Version 2.0.19.0
 

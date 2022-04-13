@@ -1,7 +1,7 @@
 ---
 title: マスター プランの概要
 description: 会社の日常業務のサポート、監視を要する多様な計画戦略のシミュレーション、社内の業績や顧客満足に関するポリシーの実装など、さまざまな目的のマスター プランを使用します。
-author: ChristianRytt
+author: t-benebo
 ms.date: 05/28/2020
 ms.topic: overview
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.custom:
 ms.assetid: a116b7de-3d6d-4321-87ba-5a5d99c2f64e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03467778025287f3692e171bea37b1bfb2ca1646
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1b3d30d9ef2f08c2cb7b2ca022ff1a816567a247
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982357"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468758"
 ---
 # <a name="master-plans-overview"></a>マスター プランの概要
 

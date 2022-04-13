@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f74bb4bd4ed66520c04261bd9f82faad7775817e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062114"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524468"
 ---
 # <a name="inventory-visibility-public-apis"></a>在庫の可視化パブリック API
 
@@ -41,15 +41,17 @@ ms.locfileid: "8062114"
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | 転記 | [手持在庫数量の設定/上書き](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | 転記 | [1 つの予約イベントの作成](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | 転記 | [複数の予約イベントの作成](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/on-hand/changeschedule | 転記 | [1 つのスケジュール済み手持在庫変更の作成](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/on-hand/changeschedule/bulk | 転記 | [複数のスケジュール済み手持在庫変更の作成](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | 転記 | [転記メソッドを使用したクエリ](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | 取得 | [取得メソッドを使用したクエリ](#query-with-get-method) |
-
-Microsoft では、すぐに利用できる *Postman* 要求コレクションを提供しています。 次の共有リンクを使用して、*Postman* ソフトウェアにこのコレクションをインポートできます: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>。
 
 > [!NOTE]
 > パスの {environmentId} 部分は Microsoft Dynamics Lifecycle Services (LCS) の環境 ID です。
 > 
 > バルク API では、要求ごとに最大 512 件のレコードを返します。
+
+Microsoft では、すぐに利用できる *Postman* 要求コレクションを提供しています。 次の共有リンクを使用して、*Postman* ソフトウェアにこのコレクションをインポートできます: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>。
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Lifecycle Services 環境に従ってエンドポイントを検索する
 
@@ -517,6 +519,9 @@ Body:
 
 `returnNegative` パラメーターは、結果に負のエントリが含まれるかどうかを制御します。
 
+> [!NOTE]
+> 手持在庫変更スケジュールおよび納期回答可能在庫 (ATP) 機能を有効にした場合は、クエリ結果に ATP 情報を含めるかどうかを制御する `QueryATP` ブール値パラメーターをクエリに含めることもできます。 詳細と例については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。
+
 次の例は、サンプル本文コンテンツを示しています。
 
 ```json
@@ -572,5 +577,9 @@ Query(Url Parameters):
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
+
+## <a name="available-to-promise"></a>納期回答可能在庫
+
+Inventory Visibility を設定すると、今後の手持在庫変更をスケジュールし、ATP 数量を計算できます。 ATP は、使用可能な品目の数量で、次の期間に顧客に約束できます。 ATP 計算を使用すると、注文のフルフィルメント機能を大幅に強化できます。 この機能を有効にする方法、および機能が有効化された後に API で Inventory Visibility と対話する方法については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

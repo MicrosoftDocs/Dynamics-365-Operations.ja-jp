@@ -1,32 +1,33 @@
 ---
 title: 休暇計画の見越計上
 description: Dynamics 365 Human Resources において、複数の従業員または個々の従業員の休暇を累計することができます。
-author: andreabichsel
+author: twheeloc
 ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a5f3ae95d0670369ac63e5a5d521885fe55ce8af
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 7f765e7cfd97170bd144dfff12c18ced96e3332a
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070669"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8533715"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>休暇計画の見越計上
 
+>[!Important]
+>このトピックで説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

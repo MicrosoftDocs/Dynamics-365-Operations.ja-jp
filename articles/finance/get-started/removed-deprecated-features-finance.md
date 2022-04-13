@@ -1,23 +1,23 @@
 ---
 title: Dynamics 365 Finance の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
-author: roschlom
-ms.date: 12/03/2021
+author: kfend
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 6df84e5c2d530e708560495bceaeb23e2ee0dd4b
+ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890956"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8466837"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは推奨されない機能
 
@@ -31,7 +31,21 @@ ms.locfileid: "7890956"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 > [!NOTE]
-> Finance and Operations アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61)を参照してください。 これら異なるバージョンのレポートを比較し、Finance and Operations アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+> 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Finance 10.0.26 リリースの削除済みまたは非推奨の機能
+
+### <a name="sales-tax-report-for-finland-design-based-on-reporting-codes"></a>フィンランドの消費税レポート (レポート コードに基づくデザイン)
+
+[フィンランドの消費税レポート](../localizations/emea-fin-sales-tax-payment-report-finland.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 新しい VAT 申告書のデザインに差し替えられた、[フィンランドの VAT 申告書](../localizations/emea-fin-vat-declaration.md) |
+| **別の機能で置き換えられているか?**   | 有効 |
+| **影響を受ける製品領域**         | アプリケーション |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨: 2023 年 3 月 1 日までに、フィンランドの消費税レポート (フィンランドのレポート レイアウト) がサポートされなくなります。 新しい **VAT 申告 TXT (FI**)、**VAT 申告 Excel (FI)** 電子報告書 (ER) 形式は、**税申告** モデル配下に導入されています。 |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Finance 10.0.24 リリースの削除済みまたは非推奨の機能
 

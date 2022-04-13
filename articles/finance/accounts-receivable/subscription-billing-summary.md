@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b94ac36e49d55ad42909877d77903cd40cb22cbe
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182687"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462472"
 ---
 # <a name="subscription-billing-overview"></a>サブスクリプション請求の概要
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 サブスクリプション請求管理を使用すると、組織がサブスクリプション収益機会と、請求スケジュールを使用した繰り返し請求を管理できます。 複雑な価格決定モデルおよび請求モデルと収益配賦を簡単に管理し、明細行レベルで請求および認識されます。 多要素収益配賦を使用すると、国際会計基準 (国際財務報告標準 15 \[IFRS 15\]) および米国 GAAP (Accounting Standards Codification Topic 606 \[ASC 606\]) に準拠して収益を配賦できます。
 

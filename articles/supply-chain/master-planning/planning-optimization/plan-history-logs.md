@@ -1,7 +1,7 @@
 ---
 title: 計画の履歴と計画ログの表示
 description: このトピックでは、計画の最適化機能によってトリガーされる計画ジョブの履歴を表示する方法について説明します。
-author: ChristianRytt
+author: t-benebo
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 757d2103bd629c0107a3f29599196a56ea56d431a66cf1e69c7b3cf3d817c087
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9b4cba4dd94eb198e770d152d4f759a706065dee
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724823"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469760"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>計画の履歴と計画ログの表示
 

@@ -1,26 +1,26 @@
 ---
 title: 職位
 description: このトピックでは、職位に含める概念要素について説明します。 また、組織でこれらの要素を使用する方法を示す例も提供します。
-author: andreabichsel
+author: twheeloc
 ms.date: 06/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.author: anbichse
-ms.reviewer: anbichse
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 95abd7548d23ef1b4f5fc31ebaa818e06e179d60
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b0b11458ac5d41d08a245a1f5aa48fb4633ae075
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068822"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8534304"
 ---
 # <a name="positions"></a>職位
 

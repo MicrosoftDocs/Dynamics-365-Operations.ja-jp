@@ -1,7 +1,7 @@
 ---
 title: 医療費負担適正化法 (Affordable Care Act) 報告の生成
 description: アフォーダブルケア法 (ACA) の報告書は、アフォーダブルケア法 の **雇用主の責任** で定められた部分に対応するフォーム 1095-B および 1095-C を生成します。
-author: andreabichsel
+author: twheeloc
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c8f336e31e77391ef7e2bc2dca901e6a78fbb914
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6682a98bb7241060b035e7da1396ec8f8973bf09
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067004"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8534156"
 ---
 # <a name="generate-aca-reports"></a>ACA レポートの生成
 

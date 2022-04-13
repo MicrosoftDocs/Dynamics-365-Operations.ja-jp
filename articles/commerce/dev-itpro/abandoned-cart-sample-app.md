@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82848f1ff068cea0adfc6ec1b33fc4bb035f78dc
-ms.sourcegitcommit: 374bbdde90fc9a68c0799158a50409bfbe8ca64e
+ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353363"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8489033"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>破棄されたカートの検出と顧客への通知の送信
 
@@ -127,7 +127,7 @@ Azure Active Directory (AD) テナント用の放棄カートコネクタ サン
 
 ### <a name="azurecosmosoptions"></a>AzureCosmosOptions
 
-放棄されたカートの検索ジョブ ステータス、カート ID、および変更のタイムスタンプは、Azure Cosmos DB に格納されます。 既定では、構成ファイルの設定は、Azure Cosmos DB のローカル エミュレータのインスタンスを指します。 コネクタを本番環境に配置する際には、これらの設定を更新して、Azure サブスクリプション内の Azure Cosmos DB インスタンスを指す必要があります。 ローカルやサンドボックスでのテストには、[Azure Cosmos Emulator](/azure/cosmos-db/local-emulator) を使用できます。
+放棄されたカートの検索ジョブ ステータス、カート ID、および変更のタイムスタンプは、Azure Cosmos DB に格納されます。 既定では、構成ファイルの設定は、Azure Cosmos DB のローカル エミュレータのインスタンスを指します。 コネクタを本番環境に配置する際には、これらの設定を更新して、Azure サブスクリプション内の Azure Cosmos DB インスタンスを指す必要があります。 ローカルやサンドボックスでのテストには、[Azure Cosmos DB エミュレーター](/azure/cosmos-db/local-emulator) を使用できます。
 
 | プロパティ    | Description |
 | ----------- | ----------- |

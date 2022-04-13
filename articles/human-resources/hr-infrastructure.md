@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
-ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.openlocfilehash: 9d574f760960241e4d79a988b1b671f224cb345f
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8024570"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487797"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Dynamics 365 Human Resources インフラストラクチャ マージ - リリース 10.0.25 更新
 
@@ -34,7 +34,7 @@ ms.locfileid: "8024570"
     - 1 つのコード ベースがあり、定期的な One Version アップデート プロセスの一環として、Human Resources の新機能がリリースされます。
     - アップグレード、更新、修正プログラムの環境への適用方法は一貫しています。
 
-- [機能拡張オプションが強化されました。](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options.md)
+- [機能拡張オプションが強化されました。](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options)
 
     - Microsoft Power Platform tools は引き続き使用でき、必要に応じて拡張できます。
     - フォーム、テーブル、メソッド、アプリケーション プログラミング インターフェース (API) などで機能を拡張することができます。
@@ -42,7 +42,7 @@ ms.locfileid: "8024570"
 
     使用できる拡張機能オプションの詳細については、[Dynamics 365 の拡張機能の概要](../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md)を参照してください。
 
-- [Dynamics 365 で 1 セットの人事管理機能を作成します。](/dynamics365-release-plan/2021wave2/human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
+- [Dynamics 365 で 1 セットの人事管理機能を作成します。](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/create-one-set-human-resources-capabilities-within-dynamics-365)
 
     10.0.25 のリリースでは、Human Resources のみに存在していた機能が Finance and Operations のインフラストラクチャで利用できるようになりました。 顧客が Finance and Operations の環境でこれらの機能を利用するには、機能管理で次の Human Resources 機能を有効にする必要があります。
 

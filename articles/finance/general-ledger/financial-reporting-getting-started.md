@@ -2,25 +2,27 @@
 title: 財務諸表の概要
 description: このトピックでは、Microsoft Dynamics 365 Finance で財務報告にアクセスする場所、および財務報告機能の使用方法について説明します。
 author: aprilolson
-ms.date: 07/27/2021
+ms.date: 03/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.custom:
+- "10444"
+- intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
+ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983980"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8527316"
 ---
 # <a name="get-started-with-financial-reporting"></a>財務諸表の使用を開始する 
 
@@ -174,7 +176,7 @@ Finance and Operations アプリは毎月更新されます。 ただし、Finan
 * Internet Explorer で、**設定** を選択し、**インターネット オプション** を選択します。 **セキュリティ** タブを選択し、[ 信頼済みサイト] を選択し、続いて **サイト** を選択します。 **この Web サイトをゾーンに追加する** で、 \*\.dynamics.com" (引用符は不要) を入力し、**追加** を選択します。 
 * Internet Explorer で、**設定** を選択し、**インターネット オプション** を選択します。 **セキュリティ** タブを選択し、信頼済みサイトを選択します。 [このゾーンのセキュリティ レベル] というラベルの付いた領域で、オプションを **中低** に変更します。
 * ブラウザーでポップアップ ブロッカーを無効にします。
-* ワークステーションには、Microsoft .NET Framework 4.6.2 以降をインストールする必要があります。 このバージョンの Microsoft .NET Framework は、[Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=53345) からダウンロードしてインストールできます。
+* ワークステーションには、Microsoft .NET Framework 4.7.2 以降をインストールする必要があります。 このバージョンの Microsoft .NET Framework は、[Microsoft ダウンロード センター](https://dotnet.microsoft.com/download/dotnet-framework/net472) からダウンロードしてインストールできます。
 * Chrome ブラウザを使用している場合、レポート デザイナー クライアントをダウンロードするには、ClickOnce 拡張機能をインストールする必要があります。 Chrome を匿名モードで起動している場合、ClickOnce の拡張機能が匿名モードに対して有効化されていることを確認します。 Chrome ClickOnce 拡張子に関する詳細については、[クラウド配置のシステム要件](../../fin-ops-core/fin-ops/get-started/system-requirements.md) を参照してください。
 * Chrome ブラウザーで Microsoft Edge を使用している場合は、Microsoft Edge Chromium の ClickOnce 拡張機能をインストールする必要はありません。 ただし、レポート デザイナー クライアントをダウンロードするには、ClickOnce オプションを有効にする必要があります。 シークレットモードで起動している場合、ClickOnce の拡張機能がシークレットモードで有効化されていることを確認してください。
 

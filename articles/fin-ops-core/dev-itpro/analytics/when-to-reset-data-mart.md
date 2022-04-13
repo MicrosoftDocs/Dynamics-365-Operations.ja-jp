@@ -2,7 +2,7 @@
 title: データ マートのリセットに関する FAQ
 description: このトピックでは、データ マートのリセットに関してよくある質問に対する回答を示します。
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: ab6417a739e9a7b67b9e67d93f3bef654e55e5e4
+ms.sourcegitcommit: 2c2ef3e312e7221006a9e230c9378bb4c1b4cd33
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119515"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8466414"
 ---
 # <a name="data-mart-resets-faq"></a>データ マートのリセットに関する FAQ
 
@@ -47,10 +47,14 @@ ms.locfileid: "8119515"
 データ マートのリセットをお勧めできないいくつかの状況があります:
 
 - データ統合のパフォーマンスに関する問題が経験をする必要があります。
+- Financial Reporter 統合が有効になっていない。 
+
+    - これは、一般会計データが Financial Reporting データマートと同期されなくなった状態を示します。 Financial Reporter が財務諸表の最新の数値を取得していない可能性があります。 これは通常、Financial Reporter を長く使用していない場合に発生します。
+    - データ マートをリセットして統合を有効にするように求めるメッセージが表示されます。 続行するには、**はい** を選択します。 後でデータ マートをリセットすることもできます。 統合が有効になると、一般会計データが再度 Financial Reporter で同期されます。 
 - 次のいずれかの理由により、リセット パターンが繰り返し発生します:
 
     - **レポートで欠落しているまたは予想外のデータ** ― データが欠落している場合は、Microsoft のサポート チケットを開き、レポート形式と可能なデータ同期の問題を確認します。
-    - **統合の行き詰まり状態**
+    - **統合の行き詰まり状態** - 統合ステータスが実行中に行き詰った場合は、システム内のトランザクションが大量に発生している可能性があります。 この状態は勝手に解決します。 ただし、登録外のステータスが 4 時間以上続いているのに気付いた場合は、Microsoft でサポート チケットを開きます。 
    
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>データ マートをリセットすると、デザインしたレポートが失われますか。
 

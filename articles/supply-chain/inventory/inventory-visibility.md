@@ -2,52 +2,74 @@
 title: 在庫の可視化アドイン概要
 description: このトピックでは、在庫の可視化とその機能について説明します。
 author: yufeihuang
-ms.date: 10/26/2020
+ms.date: 03/18/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 8871d10dac9103f17780989bc547b6c20ba79b76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9ee6229937ea27adf231dcd1c9921878e53bd981
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985549"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524496"
 ---
-# <a name="inventory-visibility-add-in-overview"></a>在庫の可視化アドイン概要
+# <a name="inventory-visibility-add-in-overview"></a>在庫可視化アドインの概要
 
 [!include [banner](../includes/banner.md)]
 
-在庫の可視化アドイン (*在庫の可視化* とも呼ばれる) は、リアルタイムで手持在庫の追跡を可能にする独立したスケーラブルなマイクロサービスです。 そのため、在庫をグローバルに表示できます。
+Inventory Visibility Add-in (*Inventory Visibility サービス* とも呼ばれる) は、すべてのデータ ソースとチャネルでリアルタイムの手持在庫変更の転記と可視性の追跡を可能にする、独立した高度にスケーラブルなマイクロサービスを提供します。 次のリストを含む (ただし、限定はされない) 機能を使用して、グローバル在庫を管理できるプラットフォームを提供します:
 
-外部システムは、RESTful API を使用してサービスにアクセスします。 この方法で、特定の分析コード セットに関する手持在庫情報を入手するか、カスタマイズされた別のデータ ソースで在庫を変更することができます。
+- Supply Chain Management またはサード パーティー ロジスティクス データ ソース (注文管理システム、サード パーティ エンタープライズ リソース プランニング \[ERP\] システム、販売時点管理 \[POS\] システム、倉庫管理システムなど) を Inventory Visibility サービスに接続することで、すべてのデータ ソース、倉庫、および場所で最新の在庫ステータス (手持、注文済、購買済、輸送中、返品済、検査済など) を一元的に追跡します。
+- 手持在庫の有無や不足を照会し、Inventory Visibility サービスを直接呼び出すことによって即時応答を取得します。
+- 特に需要が異なるチャネルから来ている場合は、Inventory Visibility サービスでリアルタイムの仮引当を行うことで、過剰販売を回避します。
+- 現在または次の入荷予定日を正確に提供することで、確約された注文と顧客の期待をより適切に管理し、オムニチャネルの納期回答可能在庫 (ATP) 機能で予想される注文の履行日を計算できるようにします。
 
-Microsoft Dataverse に構築されるマイクロサービスとして、在庫の可視化は拡張性を提供します。 Power Apps を使用してアプリを作成できます。 Power BI を適用して、業務要件を満たすカスタマイズされた機能を提供することもできます。
+## <a name="extensibility"></a>拡張性
 
-標準化された在庫分析コードの構成オプションを設定し、トランザクション タイプを設定することにより、在庫の可視化を複数のサードパーティ システムと統合できます。 在庫の可視化では、構成できる計算済の数量によってカスタマイズされた拡張性もサポートされます。
+データの入力および出力が Microsoft アプリケーションに限定されないので、Inventory Visibility サービスは高度な拡張性があります。 外部システムは、RESTful アプリケーション プログラミング インターフェイス (API) を使用してサービスにアクセスできます。 Supply Chain Management データ ソースおよび分析コードに対して用意されている既成のマッピングを使用する他に、構成アプリを使用して追加のデータ ソース、在庫ステータス メジャー (Inventory Visibility サービスでは *物理的測定* と呼ばれる)、および在庫分析コードを設定することで、Inventory Visibility を複数のサード パーティ システムと統合できます。 これにより、柔軟にクエリを実行し、複数のデータ ソースおよび定義済の在庫分析コードを変更できます。
 
-## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management を使用した在庫の可視化統合
+また、Inventory Visibility は Microsoft Dataverse に基づいて構築されているため、そのデータを使用して Power Apps を作成および統合できます。 Power BI を使用して、業務要件に合うカスタマイズされたダッシュボードを作成することもできます。
 
-統合ソリューションは、Dynamics 365 Supply Chain Management から在庫データを取得し、在庫変更を継続的に追跡します。 詳細については、[在庫視覚化統合のインストールと設定](inventory-visibility-setup.md)および[在庫視覚化のコンフィギュレーション](inventory-visibility-configuration.md)を参照してください。
+## <a name="scalability"></a>スケーラビリティ
 
-## <a name="get-a-global-view-of-inventory"></a>在庫のグローバル表示の取得
+Inventory Visibility サービスは、データ量に応じて拡張または縮小できます。 スケーラビリティ エクスペリエンスは、ほとんどシームレスであり、トランザクション データ量の自動検出と評価に基づいて Microsoft プラットフォーム チームによって実行されます。
 
-統合ソリューションを使用すると、独自のデータ ソースを定義し、在庫データを集中管理できます。 詳細については、[在庫視覚化のコンフィギュレーション](inventory-visibility-configuration.md)を参照してください。
+## <a name="feature-highlights"></a>機能の特徴
 
-在庫を表示するには 2 つの方法があります。
+### <a name="get-a-global-view-of-real-time-inventory"></a>リアルタイム在庫のグローバル表示の取得
 
-- 高性能な API を使用してクエリを送信します。 この API は、凖リアルタイムの在庫データをキャッシュされたインスタンスから直接返します。 契約およびサンプルは、[在庫の可視化のパブリック API](inventory-visibility-api.md) で確認できます。
-- 手持在庫リストを表示します。 このリストは、定期的にキャッシュされたインスタンスと同期され、Dataverse で表示されます。 詳細については、[在庫の可視化アプリ](inventory-visibility-power-platform.md) を参照してください。
+Inventory Visibility により、すべてのチャネル、場所、倉庫で、常に最新の在庫数量にアクセスすることができます。 在庫レコードを取得する必要がある場合、日々の運用業務をサポートするために使用すると非常に効果的です。 現物手持在庫、販売数量、および購入数量は、すべてすぐに使用できます。 必要に合じて他の現物在庫メジャー (返品済、検査済、転記済データなど) を構成して、その詳細をリアル タイムで取得することもできます。 Inventory Visibility により、何百万もの在庫変更の転記を効率的に処理できます。 このデータは、データが転記される間隔に応じて、サービス内の最新の在庫数量を即座に、1 秒または 1 分あたりに集計および反映できます。 詳細については、[Inventory Visibility のパブリック API](inventory-visibility-api.md) を参照してください。
 
-## <a name="soft-reservations"></a>仮引当
+### <a name="soft-reservation-to-avoid-overselling-across-all-order-channels"></a>すべての注文チャネルで過剰販売を回避するための仮引当
 
-仮引当は、過剰販売を回避する販売注文のフルフィルメントなど、サポートする特定の数量の製品をビジネスが引当する必要がある場合に適用されます。 Supply Chain Management または他の注文管理システムで販売注文が作成および確認されると、数量を引当する要求が在庫の可視化に送信されます。 在庫の可視化により、分析コードの詳細および特定の在庫トランザクション タイプを持つ製品の引当を行うことができます。 (詳細については、[在庫の可視化アプリ](inventory-visibility-power-platform.md) を参照してください。) 数量が正常に引当されると、引当 ID が返されます。 この引当 ID を使用して、Supply Chain Management または他の注文管理システムの元の注文にリンクすることができます。
+*仮引当* を使用すると、注文または需要を満たすために特定の数量を割り当てるか、フラグを設定できます。 仮引当は現物在庫には影響しませんが、*引当可能* 在庫数量から差し引かれ、今後の注文履行のために更新された数量を提供します。 この機能は、Systems of Record エンタープライズ リソース プランニング (ERP) システムの外部にある 1 つ以上のチャネルまたはデータ ソースから販売リクエストや注文がビジネスに入る場合に役立ちます。
 
-この機能は、在庫の可視化の引当によって合計数量が変わらないように設計されています。 代わりに、引当済数量にフラグするのみです。 (この理由から、*仮引当* と呼ばれます。) 製品が Supply Chain Management またはサード パーティのシステムで消費される場合、数量控除を行い、在庫の可視化で合計数量を更新するため API を再び呼び出すことによって、仮引当済の数量をオフセットできます。 詳細については、[在庫の視覚化引当](inventory-visibility-reservations.md) を参照してください。
+Inventory Visibility サービスで仮引当を使用しない場合は、注文が ERP システムに同期されて処理されるまで待機して、現物在庫数量の更新を取得する必要があります。 通常、このプロセスには膨大な待ち時間があります。 ただし、販売チャネルで販売リクエストまたは注文が生成されるたびに仮引当は即座に有効になります。 そのため、オムニチャネル注文が最終的に ERP システムに到達したときに相互に干渉しないようにすることで、過剰販売の状況を回避できます。 仮引当では、確約したすべての注文を確実に履行することもできます。 したがって、顧客の期待に応え、顧客のロイヤリティを維持することができます。 詳細については、[在庫の視覚化引当](inventory-visibility-reservations.md) を参照してください。
+
+### <a name="immediate-response-of-atp-dates-confirmation"></a>ATP 日付確認の即時応答
+
+企業が次の目標を達成するのに役立つため、近い将来の予測在庫 (供給、需要、および予測される手持の詳細を含む) の可視化が重要です。
+
+- 在庫レベルを最小化して、在庫管理コストを削減します。
+- 社内での注文処理を容易にし、販売担当者が発注された製品の在庫状況に基づいて、出荷日と配送日を計算できるようにします。
+- 次の入荷予定日を提示することで、顧客が在庫切れの品目をいつ入手できるようになるかについての透明性を提供します。
+
+ATP 機能は、日々の注文フルフィルメント プロセスに簡単に導入できます。 最も重要なのは、他の Inventory Visibility の提供と同様に、ATP 機能が *グローバルでリアルタイム* であることです。 したがって、すべてのビジネス チャネルとデータ ソースをカバーする完全な在庫状況クエリを含む複数の ATP 計算式を設定できます。 詳細については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。
+
+### <a name="compatibility-with-advanced-warehouse-management-items"></a>高度な倉庫管理品目との互換性
+
+Microsoft は、高度な倉庫管理 (WHS) とのすぐに利用できる統合を提供することを目指しており、WHS の顧客も Inventory Visibility サービスのメリットを受けることができます。 2022 ウェーブ 1 リリース (3 月のパブリック プレビュー) により、在庫サービスは WHS 品目の手持クエリと ATP をサポートします。 仮引当と配賦機能は、WHS の顧客に対して次のウェーブでサポートされます。 <!-- KFM: Add this link when target is published: For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). -->
+
+## <a name="licensing"></a>ライセンス
+
+Inventory Visibility サービスは次のバージョンで使用できます:
+
+- **Microsoft Dynamics 365 Supply Chain Management 向け Inventory Visibility Add-in** – 有効な Supply Chain Management ライセンスを持つ企業の場合、追加のライセンス コストなしで Inventory Visibility を利用できます。 今日からお試しいただけます。 インストールの詳細については、[Inventory Visibility のインストールと設定](inventory-visibility-setup.md) を参照してください。
+- **IOM のコンポーネントとしての Inventory Visibility サービス** – このバージョンは、Supply Chain Management を ERP システムとして使用していない Intelligent Order Management (IOM) の顧客または企業向けです。 ライセンスは IOM バンドルに含まれています。 詳細については、[Intelligent Order Management の概要](/dynamics365/intelligent-order-management/overview) を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

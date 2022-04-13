@@ -1,22 +1,22 @@
 ---
 title: 組み込みのマスタ プランを使用した正味必要量およびペギング情報
 description: このトピックでは、組み込みのマスタ プランで計算された正味必要量とペギング情報に関する情報を提供します。
-author: ChristianRytt
+author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
 ms.search.form: ReqTransOverview
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 87ef928fddbc762e6090fee88c81818d07681790
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 19c64d62386a94494b729aa05b0612609812a418
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568666"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470432"
 ---
 # <a name="net-requirements-and-pegging-information-with-built-in-master-planning"></a>組み込みのマスタ プランを使用した正味必要量およびペギング情報
 

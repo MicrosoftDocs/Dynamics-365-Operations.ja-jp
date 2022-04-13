@@ -2,7 +2,7 @@
 title: 勘定科目表の区切り記号を一意にする
 description: このトピックでは、勘定科目表と分析コード値に同じ区切り記号を所有できない方法について説明します。 アップグレード後に区切り記号値を変更する必要があります。
 author: panolte
-ms.date: 09/17/2021
+ms.date: 03/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: a19dc8926df0efeac242e2e42ac37fdad91df9f8
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 433e9f8a7b0a9f476c74096a4bd7fef03c87dee1
+ms.sourcegitcommit: 0d5ee97670bdeb1986aaea880f32962b5e374751
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500506"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468051"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>勘定科目表の区切り記号を一意にする
 
@@ -32,8 +32,10 @@ Microsoft Dynamics AX 2012 では、勘定科目表および分析コード値�
 - **一般会計パラメーター** > **勘定科目表および分析コード** > **区切り記号を変更** で、アップグレード後、勘定科目表の区切り記号を変更することができます。 
 - 競合が、プロジェクト/下位プロジェクト ID の形式にのみ発生している場合、**プロジェクト管理および会計パラメーター** > **一般** > **下位プロジェクト形式を変更する** の値を変更することができます。 
 
+### <a name="other-considerations"></a>その他の考慮事項
+プロジェクト/サブプロジェクト ID と同様に、仕入先や顧客などの財務分析コードとして使用される他のマスタ データ レコードには、勘定科目表の区切り記号と同じ文字を使用する勘定科目 ID 値を設定できません。 
+
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>更新された区切り記号が環境で必要かどうかを判断する方法 
 アップグレードされた環境の区切り記号が競合している場合、セグメント化エントリ コントロールまたは分析コード エントリ コントロールに値を入力する際に動作が不安定になることがあります つまり、勘定と分析コードの組み合わせを入力するときは、ルックアップまたはポップ アップ メニューを常に使用する必要があります。
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

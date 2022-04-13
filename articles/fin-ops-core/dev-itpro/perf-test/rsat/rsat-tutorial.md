@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e2273aefb98880a1ae746ef7ec65b4f2262f3560
+ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781966"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8492923"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool のチュートリアル
 
@@ -43,7 +43,7 @@ RSAT を使用すると、予測値を検証するためにテスト ケース�
     5. 一覧で、選択された行をマークします。
     6. **引当可能合計数** フィールドの値が、**411.0000000000000000** であることを検証します。
 
-2. タスク記録を **開発者記録** として保存し、Azure Devops のテスト ケースに関連付けます。
+2. タスク記録を **開発者の記録** として保存し、Azure DevOps のテスト ケースに関連付けます。
 3. テスト ケースをテスト計画に追加し、テスト ケースを RSAT に読み込みます。
 4. Excel パラメータ ファイルを開き、**TestCaseSteps** タブに移動します。
 5. 常に **0** を超える在庫が存在するかどうかを検証するには、**利用できる合計の検証** ステップに移動し、その値を **411** から **0** に変更します。 **演算子** フィールドの値を、(**\>**) よりも大きい等号 (**=** ) に変更します。
@@ -172,6 +172,7 @@ RSAT は、**コマンド プロンプト** または **PowerShell** ウィン�
         about
         cls
         download
+        downloadsuite
         edit
         generate
         generatederived
@@ -181,11 +182,13 @@ RSAT は、**コマンド プロンプト** または **PowerShell** ウィン�
         list
         listtestplans
         listtestsuite
+        listtestsuitebyid
         listtestsuitenames
         playback
         playbackbyid
         playbackmany
         playbacksuite
+        playbacksuitebyid
         quit
         upload
         uploadrecording
@@ -194,17 +197,17 @@ RSAT は、**コマンド プロンプト** または **PowerShell** ウィン�
 
 #### <a name=""></a>?
 
-使用可能なすべてのコマンドとそのパラメーターに関するヘルプを表示します。
+すべてのコマンドを一覧表示するか、特定のコマンドのヘルプを使用可能なパラメーターと共に表示します。
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
 
 ##### <a name="-optional-parameters"></a>?: オプションのパラメーター
 
-`command`: ここでは、``[command]`` は以下で指定されたコマンドの 1 つです。
+`command`: ``[command]`` は上記の一覧のコマンドの 1 つです。
 
 #### <a name="about"></a>情報:
 
-現在のバージョンを表示します。
+インストールされている RSAT のバージョンを表示します。
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
 
@@ -216,21 +219,57 @@ RSAT は、**コマンド プロンプト** または **PowerShell** ウィン�
 
 #### <a name="download"></a>ダウンロード
 
-指定したテスト ケースの添付ファイルを出力ディレクトリにダウンロードします。
-``list`` コマンドを使用すると、使用可能なすべてのテスト ケースを取得できます。 最初の列の値を **test_case_id** パラメーターとして使用します。
+指定したテスト ケースの添付ファイル (レコード、実行、パラメーター ファイル) を Azure DevOps から出力ディレクトリにダウンロードします。 ``list`` コマンドを使用して、使用可能なすべてのテスト ケースを取得し、最初の列の任意の値を **test_case_id** パラメーターとして使用できます。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="download-optional-switches"></a>download: オプション スイッチ
+
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、ダウンロード プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
 
 ##### <a name="download-required-parameters"></a>ダウンロード: 必須パラメータ
 
 + `test_case_id`: テスト ケース ID を表します。
-+ `output_dir`: 出力ディレクトリを表します。 このディレクトリが存在している必要があります。
+
+##### <a name="download-optional-parameters"></a>download: オプション パラメーター
+
++ `output_dir`: 出力作業ディレクトリを表します。 このディレクトリが存在している必要があります。 このパラメーターが指定されていない場合は、設定の作業ディレクトリが使用されます。
 
 ##### <a name="download-examples"></a>ダウンロード: 例
 
 `download 123 c:\temp\rsat`
 
-`download 765 c:\rsat\last`
+`download /retry=240 765`
+
+#### <a name="downloadsuite"></a>downloadsuite
+
+指定したテスト スイートにあるすべてのテスト ケースの添付ファイル (レコード、実行、パラメーター ファイル) を Azure DevOps から出力ディレクトリにダウンロードします。 ``listtestsuitenames`` コマンドを使用して、使用可能なすべてのテスト スイートを取得し、任意の値を **test_suite_name** パラメーターとして使用できます。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``downloadsuite``**``[/retry[=<seconds>]] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="downloadsuite-optional-switches"></a>downloadsuite: オプション スイッチ
+
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、ダウンロード プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
++ `/byid`: このスイッチは、目的のテスト スイートが、テスト スイート名ではなく Azure DevOps IDで識別されることを示します。
+
+##### <a name="downloadsuite-required-parameters"></a>downloadsuite: 必須パラメーター
+
++ `test_suite_name`: テスト スイートの名前を表します。 /byid スイッチが指定されて **いない** 場合、このパラメーターは必須です。 この名前は Azure DevOps テスト スイート名です。
++ `test_suite_id`: テスト スイート ID を表します。 /byid スイッチが指定されて **いる** 場合、このパラメーターは必須です。 この ID はテスト スイート Azure DevOps ID です。
+
+##### <a name="downloadsuite-optional-parameters"></a>downloadsuite: オプション パラメーター
+
++ `output_dir`: 出力作業ディレクトリを表します。 このディレクトリが存在している必要があります。 このパラメーターが指定されていない場合は、設定の作業ディレクトリが使用されます。
+
+##### <a name="downloadsuite-examples"></a>downloadsuite: 例
+
+`downloadsuite NameOfTheSuite c:\temp\rsat`
+
+`downloadsuite /byid 123 c:\temp\rsat`
+
+`downloadsuite /retry=240 /byid 765`
+
+`downloadsuite /retry=240 /byid 765 c:\temp\rsat`
 
 #### <a name="edit"></a>編集
 
@@ -244,7 +283,7 @@ Excel プログラムでパラメーター ファイルを開いて編集でき�
 
 ##### <a name="edit-examples"></a>編集: 例
 
-`edit c:\RSAT\TestCase_123_Base.xlsx`
+`edit c:\RSAT\123\TestCase_123_Base.xlsx`
 
 `edit e:\temp\TestCase_456_Base.xlsx`
 
@@ -252,24 +291,41 @@ Excel プログラムでパラメーター ファイルを開いて編集でき�
 
 指定されたテスト ケースのテスト実行およびパラメーター ファイルを出力ディレクトリに生成します。 ``list`` コマンドを使用すると、使用可能なすべてのテスト ケースを取得できます。 最初の列の値を **test_case_id** パラメーターとして使用します。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] [test_case_id] [output_dir]``
+
+##### <a name="generate-optional-switches"></a>generate: オプション スイッチ
+
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、生成プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
++ `/dllonly`: テスト実行ファイルのみ生成します。 Excel パラメーター ファイルを再生成しないでください。
++ `/keepcustomexcel`: 既存のパラメーター ファイルをアップグレードします。 実行ファイルも再生成します。
 
 ##### <a name="generate-required-parameters"></a>Generate : 必須パラメータ
 
 + `test_case_id`: テスト ケース ID を表します。
-+ `output_dir`: 出力ディレクトリを表します。 このディレクトリが存在している必要があります。
+
+##### <a name="generate-optional-parameters"></a>generate: オプション パラメーター
+
++ `output_dir`: 出力作業ディレクトリを表します。 このディレクトリが存在している必要があります。 このパラメーターが指定されていない場合は、設定の作業ディレクトリが使用されます。
 
 ##### <a name="generate-examples"></a>generate: 例
 
 `generate 123 c:\temp\rsat`
 
-`generate 765 c:\rsat\last`
+`generate /retry=240 765 c:\rsat\last`
+
+`generate /retry=240 /dllonly 765`
+
+`generate /retry=240 /keepcustomexcel 765`
 
 #### <a name="generatederived"></a>generatederived
 
-指定されたテスト ケースから派生する新しいテスト ケースを生成します。 ``list`` コマンドを使用すると、使用可能なすべてのテスト ケースを取得できます。 最初の列の値を **test_case_id** パラメーターとして使用します。
+指定したテスト ケースの新しい派生テスト ケース (子テスト ケース) を生成します。 新しいテスト ケースは、指定したテスト スイートにも追加されます。 ``list`` コマンドを使用して、使用可能なすべてのテスト ケースを取得し、最初の列の任意の値を **test_case_id** パラメーターとして使用できます。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[/retry[=<seconds>]] [parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="generatederived-optional-switches"></a>generatederived: オプション スイッチ
+
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、生成プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
 
 ##### <a name="generatederived-required-parameters"></a>generatederived: 必須パラメータ
 
@@ -281,39 +337,63 @@ Excel プログラムでパラメーター ファイルを開いて編集でき�
 
 `generatederived 123 8901 678`
 
+`generatederived /retry 123 8901 678`
+
 #### <a name="generatetestonly"></a>generatetestonly
 
-指定されたテスト ケースのテスト実行ファイルのみを出力ディレクトリに生成します。 ``list`` コマンドを使用すると、使用可能なすべてのテスト ケースを取得できます。 最初の列の値を **test_case_id** パラメーターとして使用します。
+指定したテスト ケースのテスト実行ファイルのみを生成します。 Excel パラメーター ファイルは生成されません。 ファイルは、指定した出力ディレクトリに生成されます。 ``list`` コマンドを使用して、使用可能なすべてのテスト ケースを取得し、最初の列の任意の値を **test_case_id** パラメーターとして使用できます。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="generatetestonly-optional-switches"></a>generatetestonly: オプション スイッチ
+
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、生成プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
 
 ##### <a name="generatetestonly-required-parameters"></a>generatetestonly: 必須パラメータ
 
 + `test_case_id`: テスト ケース ID を表します。
-+ `output_dir`: 出力ディレクトリを表します。 このディレクトリが存在している必要があります。
+
+##### <a name="generatetestonly-optional-parameters"></a>generatetestonly: オプション パラメーター
+
++ `output_dir`: 出力作業ディレクトリを表します。 このディレクトリが存在している必要があります。 このパラメーターが指定されていない場合は、設定の作業ディレクトリが使用されます。
 
 ##### <a name="generatetestonly-examples"></a>generatetestonly: 例
 
 `generatetestonly 123 c:\temp\rsat`
 
-`generatetestonly 765 c:\rsat\last`
+`generatetestonly /retry=240 765`
 
 #### <a name="generatetestsuite"></a>generatetestsuite
 
-指定されたスイートのすべてのテスト ケースを出力ディレクトリに生成します。 ``listtestsuitenames`` コマンドを使用すると、使用可能なすべてのテスト スイートを取得できます。 最初の列の値を **test_suite_name** パラメーターとして使用します。
+指定したテスト スイートにあるすべてのテスト ケースのテスト自動化ファイルを生成します。 ``listtestsuitenames`` コマンドを使用して、使用可能なすべてのテスト スイートを取得し、任意の値を **test_suite_name** パラメーターとして使用できます。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="generatetestsuite-optional-switches"></a>generatetestsuite: オプション スイッチ
+
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、生成プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
++ `/dllonly`: テスト実行ファイルのみ生成します。 Excel パラメーター ファイルを再生成しないでください。
++ `/keepcustomexcel`: 既存のパラメーター ファイルをアップグレードします。 実行ファイルも再生成します。
++ `/byid`: このスイッチは、目的のテスト スイートが、テスト スイート名ではなく Azure DevOps IDで識別されることを示します。
 
 ##### <a name="generatetestsuite-required-parameters"></a>generatetestsuite: 必須パラメータ
 
-+ `test_suite_name`: テスト スイートの名前を表します。
-+ `output_dir`: 出力ディレクトリを表します。 このディレクトリが存在している必要があります。
++ `test_suite_name`: テスト スイートの名前を表します。 /byid スイッチが指定されて **いない** 場合、このパラメーターは必須です。 この名前は Azure DevOps テスト スイート名です。
++ `test_suite_id`: テスト スイート ID を表します。 /byid スイッチが指定されて **いる** 場合、このパラメーターは必須です。 この ID はテスト スイート Azure DevOps ID です。
+
+##### <a name="generatetestsuite-optional-parameters"></a>generatetestsuite: オプション パラメーター
+
++ `output_dir`: 出力作業ディレクトリを表します。 このディレクトリが存在している必要があります。 このパラメーターが指定されていない場合は、設定の作業ディレクトリが使用されます。
 
 ##### <a name="generatetestsuite-examples"></a>generatetestsuite: 例
 
 `generatetestsuite Tests c:\temp\rsat`
 
-`generatetestsuite Purchase c:\rsat\last`
+`generatetestsuite /retry Purchase c:\rsat\last`
+
+`generatetestsuite /dllonly /byid 121`
+
+`generatetestsuite /keepcustomexcel /byid 121`
 
 #### <a name="help"></a>ヘルプ
 
@@ -321,7 +401,7 @@ Excel プログラムでパラメーター ファイルを開いて編集でき�
 
 #### <a name="list"></a>リスト
 
-使用可能なすべてのテスト ケースを一覧表示します。
+現在のテスト計画で使用可能なすべてのテスト ケースを一覧表示します。
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
 
@@ -333,13 +413,13 @@ Excel プログラムでパラメーター ファイルを開いて編集でき�
 
 #### <a name="listtestsuite"></a>listtestsuite
 
-指定されたテスト スイートのテスト ケースを一覧表示します。 ``listtestsuitenames`` コマンドを使用すると、使用可能なすべてのテスト スイートを取得できます。 最初の列の値を **suite_name** パラメーターとして使用します。
+指定されたテスト スイートのテスト ケースを一覧表示します。 ``listtestsuitenames`` コマンドを使用して、使用可能なすべてのテスト スイートを取得し、リストの任意の値を **suite_name** パラメーターとして使用できます。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[test_suite_name]``
 
 ##### <a name="listtestsuite-required-parameters"></a>listtestsuite: 必須パラメータ
 
-+ `suite_name`: 目的のスイートの名前。
++ `test_suite_name`: 目的のスイートの名前。
 
 ##### <a name="listtestsuite-examples"></a>listtestsuite: 例
 
@@ -347,33 +427,61 @@ Excel プログラムでパラメーター ファイルを開いて編集でき�
 
 `listtestsuite NameOfTheSuite`
 
+#### <a name="listtestsuitebyid"></a>listtestsuitebyid
+
+指定されたテスト スイートのテスト ケースを一覧表示します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitebyid``**``[test_suite_id]``
+
+##### <a name="listtestsuitebyid-required-parameters"></a>listtestsuitebyid: 必須パラメーター
+
++ `test_suite_id`: 目的のスイートの ID。
+
+##### <a name="listtestsuitebyid-examples"></a>listtestsuitebyid: 例
+
+`listtestsuitebyid 12345`
+
 #### <a name="listtestsuitenames"></a>listtestsuitenames
 
-使用可能なすべてのテスト スイートを一覧表示します。
+現在のテスト計画で使用可能なすべてのテスト スイートを一覧表示します。
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
 
 #### <a name="playback"></a>playback
 
-Excel ファイルを使用してテスト ケースを再生します。
+指定した Excel パラメーター ファイルに関連付けられたテスト ケースを再生します。 このコマンドは既存のローカル自動化ファイルを使用し、Azure DevOps からファイルをダウンロードしません。 このコマンドは POS コマース テスト ケースではサポートされていません。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file]``
+
+##### <a name="playback-optional-switches"></a>playback: オプション スイッチ
+
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、再生プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
++ `/comments[="comment"]`: Azure DevOps テスト ケースを実行するための概要ページおよびテスト結果ページの **コメント** フィールドに含めるカスタム情報文字列を指定します。
 
 ##### <a name="playback-required-parameters"></a>playback: 必須パラメータ
 
-+ `excel_file`: Excel ファイルへの完全なパス。 ファイルが存在する必要があります。
++ `excel_parameter_file`: Excel パラメーター ファイルの完全なパス。 ファイルが存在する必要があります。
 
 ##### <a name="playback-examples"></a>playback: 例
 
-`playback c:\RSAT\TestCaseParameters\sample1.xlsx`
+`playback c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playback e:\temp\test.xlsx`
+`playback /retry e:\temp\test.xlsx`
+
+`playback /retry=300 e:\temp\test.xlsx`
+
+`playback /comments="Payroll solution 10.0.0" e:\temp\test.xlsx`
 
 #### <a name="playbackbyid"></a>playbackbyid
 
-同時に複数のテスト ケースを再生します。 ``list`` コマンドを使用すると、使用可能なすべてのテスト ケースを取得できます。 最初の列の値を **test_case_id** パラメーターとして使用します。
+同時に複数のテスト ケースを再生します。 テスト ケースは ID で識別されます。 このコマンドは、ファイルを Azure DevOps からダウンロードします。 ``list`` コマンドを使用して、使用可能なすべてのテスト ケースを取得し、最初の列の任意の値を **test_case_id** パラメーターとして使用できます。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[/retry[=<seconds>]] [/comments[="comment"]] [test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="playbackbyid-optional-switches"></a>playbackbyid: オプション スイッチ
+
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、再生プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
++ `/comments[="comment"]`: Azure DevOps テスト ケースを実行するための概要ページおよびテスト結果ページの **コメント** フィールドに含めるカスタム情報文字列を指定します。
 
 ##### <a name="playbackbyid-required-parameters"></a>playbackbyid: 必須パラメータ
 
@@ -387,75 +495,132 @@ Excel ファイルを使用してテスト ケースを再生します。
 
 `playbackbyid 2345 667 135`
 
+`playbackbyid /comments="Payroll solution 10.0.0" 2345 667 135`
+
+`playbackbyid /retry /comments="Payroll solution 10.0.0" 2345 667 135`
+
 #### <a name="playbackmany"></a>playbackmany
 
-Excel ファイルを使用して、同時に多数のテスト ケースを再生します。
+同時に多数のテスト ケースを再生します。 テスト ケースは Excel パラメーター ファイルで識別されます。 このコマンドは既存のローカル自動化ファイルを使用し、Azure DevOps からファイルをダウンロードしません。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file1] [excel_parameter_file2] ... [excel_parameter_fileN]``
+
+##### <a name="playbackmany-optional-switches"></a>playbackmany: オプション スイッチ
+
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、再生プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
++ `/comments[="comment"]`: Azure DevOps テスト ケースを実行するための概要ページおよびテスト結果ページの **コメント** フィールドに含めるカスタム情報文字列を指定します。
 
 ##### <a name="playbackmany-required-parameters"></a>playbackmany: 必須パラメータ
 
-+ `excel_file1`: Excel ファイルへの完全なパス。 ファイルが存在する必要があります。
-+ `excel_file2`: Excel ファイルへの完全なパス。 ファイルが存在する必要があります。
-+ `excel_fileN`: Excel ファイルへの完全なパス。 ファイルが存在する必要があります。
++ `excel_parameter_file1`: Excel パラメーター ファイルの完全なパス。 ファイルが存在する必要があります。
++ `excel_parameter_file2`: Excel パラメーター ファイルの完全なパス。 ファイルが存在する必要があります。
++ `excel_parameter_fileN`: Excel パラメーター ファイルの完全なパス。 ファイルが存在する必要があります。
 
 ##### <a name="playbackmany-examples"></a>playbackmany: 例
 
-`playbackmany c:\RSAT\TestCaseParameters\param1.xlsx`
+`playbackmany c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
+`playbackmany e:\temp\test.xlsx f:\RSAT\sample1.xlsx c:\RSAT\sample2.xlsx`
+
+`playbackmany /retry=180 /comments="Payroll solution 10.0.0" e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
 
 #### <a name="playbacksuite"></a>playbacksuite
 
-指定されたテスト スイートからすべてのテスト ケースを再生します。
-``listtestsuitenames`` コマンドを使用すると、使用可能なすべてのテスト スイートを取得できます。 最初の列の値を **suite_name** パラメーターとして使用します。
+1 つ以上の指定したテスト スイートからすべてのテスト ケースを再生します。 /local スイッチが指定されている場合、ローカルの添付ファイルが再生に使用されます。 それ以外の場合、添付ファイルは Azure DevOps からダウンロードされます。 ``listtestsuitenames`` コマンドを使用して、使用可能なすべてのテスト スイートを取得し、最初の列の任意の値を **suite_name** パラメーターとして使用できます。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] ([test_suite_name1] .. [test_suite_nameN] | [/byid] [test_suite_id1] .. [test_suite_idN])``
+
+##### <a name="playbacksuite-optional-switches"></a>playbacksuite: オプション スイッチ
+
++ `/updatedriver`: このスイッチが指定されている場合は、再生プロセスが実行される前に、インターネット ブラウザーの webdriver が必要に応じて更新されます。
++ `/local`: このスイッチは、Azure DevOps からファイルをダウンロードする代わりに、ローカル添付ファイルを再生に使用する必要があることを示します。
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、再生プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
++ `/comments[="comment"]`: Azure DevOps テスト ケースを実行するための概要ページおよびテスト結果ページの **コメント** フィールドに含めるカスタム情報文字列を指定します。
++ `/byid`: このスイッチは、目的のテスト スイートが、テスト スイート名ではなく Azure DevOps IDで識別されることを示します。
 
 ##### <a name="playbacksuite-required-parameters"></a>playbacksuite: 必須パラメータ
 
-+ `suite_name`: 目的のスイートの名前。
++ `test_suite_name1`: テスト スイートの名前を表します。 /byid スイッチが指定されて **いない** 場合、このパラメーターは必須です。 この名前は Azure DevOps テスト スイート名です。
++ `test_suite_nameN`: テスト スイートの名前を表します。 /byid スイッチが指定されて **いない** 場合、このパラメーターは必須です。 この名前は Azure DevOps テスト スイート名です。
++ `test_suite_id1`: テスト スイート ID を表します。 /byid スイッチが指定されて **いる** 場合、このパラメーターは必須です。 この ID はテスト スイート Azure DevOps ID です。
++ `test_suite_idN`: テスト スイート ID を表します。 /byid スイッチが指定されて **いる** 場合、このパラメーターは必須です。 この ID はテスト スイート Azure DevOps ID です。
 
 ##### <a name="playbacksuite-examples"></a>playbacksuite: 例
 
 `playbacksuite suiteName`
 
-`playbacksuite sample_suite`
+`playbacksuite suiteName suiteNameToo`
+
+`playbacksuite /updatedriver /local /retry=180 /byid 151 156`
+
+`playbacksuite /updatedriver /local /comments="Payroll solution 10.0.0" /byid 150`
+
+#### <a name="playbacksuitebyid"></a>playbacksuitebyid
+
+指定した Azure DevOps テスト スイートですべてのテスト ケースを実行します。
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuitebyid``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] [test_suite_id]``
+
+##### <a name="playbacksuitebyid-optional-switches"></a>playbacksuitebyid: オプション スイッチ
+
++ `/retry[=seconds]`: このスイッチが指定され、ケースのテスト ケースが他の RSAT インスタンスによってブロックされている場合、再生プロセスは指定した秒数待機してから、もう 1 度試行します。 \[seconds\] の既定値は 120 秒です。 このスイッチがないと、テスト ケースがブロックされた場合、プロセスは直ちにキャンセルされます。
++ `/comments[="comment"]`: Azure DevOps テスト ケースを実行するための概要ページおよびテスト結果ページの **コメント** フィールドに含めるカスタム情報文字列を指定します。
++ `/byid`: このスイッチは、目的のテスト スイートが、テスト スイート名ではなく Azure DevOps IDで識別されることを示します。
+
+##### <a name="playbacksuitebyid-required-parameters"></a>playbacksuitebyid: 必須パラメーター
+
++ `test_suite_id`: Azure DevOps に存在する テスト スイート IDを表します。
+
+##### <a name="playbacksuitebyid-examples"></a>playbacksuitebyid: 例
+
+`playbacksuitebyid 2900`
+
+`playbacksuitebyid /retry 2099`
+
+`playbacksuitebyid /retry=200 2099`
+
+`playbacksuitebyid /retry=200 /comments="some comment" 2099`
 
 #### <a name="quit"></a>quit
 
-アプリケーションを閉じます。
+アプリケーションを閉じます。 このコマンドは、アプリケーションが対話モードで実行されている場合にのみ役立ちます。
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
 
+##### <a name="quit-examples"></a>quit: 例
+
+`quit`
+
 #### <a name="upload"></a>アップロード
 
-指定されたテスト スイートまたはテスト ケースに属するすべてのファイルをアップロードします。
+指定したテスト スイートまたはテスト ケースに属する添付ファイル (記録、実行、およびパラメーター ファイル) を Azure DevOps にアップロードします。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``([test_suite_name] | [test_case_id1] .. [test_case_idN])``
 
-#### <a name="upload-required-parameters"></a>upload: 必須パラメータ
+##### <a name="upload-required-parameters"></a>upload: 必須パラメータ
 
-+ `suite_name`: 指定されたテスト スイートに属するすべてのファイルがアップロードされます。
-+ `testcase_id`: 指定されたテスト ケースに属するすべてのファイルがアップロードされます。
++ `test_suite_name`: 指定したテスト スイートに属するすべてのファイルがアップロードされます。
++ `test_case_id1`: アップロードする最初のテスト ケース ID を表します。 このパラメーターは、テスト スイート名が指定されていない場合にのみ使用します。
++ `test_case_idN`: アップロードする最後のテスト ケース ID を表します。 このパラメーターは、テスト スイート名が指定されていない場合にのみ使用します。
 
 ##### <a name="upload-examples"></a>upload: 例
 
 `upload sample_suite`
 
-`upload 123`
+`upload 2900`
 
 `upload 123 456`
 
 #### <a name="uploadrecording"></a>uploadrecording
 
-指定されたテスト ケースに属する記録ファイルのみをアップロードします。
+1 つ以上の指定したテスト ケースに属する記録ファイルのみを Azure DevOps にアップロードします。
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[test_case_id1] .. [test_case_idN]``
 
 ##### <a name="uploadrecording-required-parameters"></a>uploadrecording: 必須パラメータ
 
-+ `testcase_id`: 指定されたテスト ケースに属する記録ファイルがアップロードされます。
++ `test_case_id1` : Azure DevOps にアップロードする記録の最初のテスト ケース ID を表します。
++ `test_case_idN` : Azure DevOps にアップロードする記録の最後のテスト ケース ID を表します。
 
 ##### <a name="uploadrecording-examples"></a>uploadrecording: 例
 
@@ -465,9 +630,21 @@ Excel ファイルを使用して、同時に多数のテスト ケースを再�
 
 #### <a name="usage"></a>使用
 
-このアプリケーションを呼び出す 2 つの方法を示します。1 つは既定の設定ファイルを使用する方法、もう 1 つは設定ファイルを提供する方法です。
+このアプリケーションの 3 つの使用モードを表示します。
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
+アプリケーションの対話的な実行:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``
+
+コマンドを指定してアプリケーションを実行:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp ``**``[command]``**
+
+設定ファイルを指定してアプリケーションを実行:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``/settings [drive:\Path to\file.settings] [command]``**
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell の例
 

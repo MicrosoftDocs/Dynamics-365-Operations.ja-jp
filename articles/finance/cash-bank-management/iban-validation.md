@@ -1,23 +1,23 @@
 ---
 title: 国際銀行番号 (IBAN) 口座の検証を管理
 description: このトピックでは、国際銀行番号 (IBAN) 口座の検証を管理する方法を説明します。
-author: roschlom
+author: twheeloc
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 210d2f57e21ec5ac38ba8ca07195e40ff507e2b9
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 89d6c38088e43f0f24fa41accecaa262a64006cf
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860822"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462767"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>国際銀行番号 (IBAN) 口座の検証を管理
 
@@ -25,13 +25,13 @@ ms.locfileid: "7860822"
 
 国際銀行番号 (IBAN) の検証により、銀行口座に IBAN を追加するときに行われる検証の量が増加します。
 
-IBAN の構造についての情報は、Microsoft Dynamics 365 Finance に格納されています。 銀行口座で IBAN を最初に使用するとき、その情報が自動的に読み込まれます。 これには、IBAN の長さ、銀行口座番号と銀行支店コードの開始位置、銀行口座番号と銀行支店コードの長さが含まれています。
+IBAN の構造に関する情報は Microsoft Dynamics 365 Finance に保存され、銀行口座で IBAN を初めて使用するときに自動的に読み込まれます。 これには、IBAN の長さ、銀行口座番号と銀行支店コードの開始位置、銀行口座番号と銀行支店コードの長さが含まれています。
 
 ## <a name="set-up-iban-structures"></a>IBAN 構造の設定
 
 1. **現金および銀行管理\>設定\> IBAN 構造** に移動します。
 2. 国や地域ごとの IBAN 構造は、自動的に設定されていることに注意してください。
-3. 特定の国または地域の構造をカスタマイズする場合は、それらを編集できます。
+3. 特定の国または地域で構造を更新する必要がある場合は、**編集** ボタンを選択します。
 4. 構造定義は、それぞれの新しいリリースの一部になります。 **構造をリセットする** メニューを使用して、各更新後に最新の定義を読み込むことができます。
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>銀行口座の IBAN 構造を検証

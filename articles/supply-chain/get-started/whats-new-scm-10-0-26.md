@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: fae25eb1cb9dd4059b9d49e47cbb0060e717c9bc
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 2b39eef816aaa383f0f8cbf1b2c308a6eafebd8f
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8386999"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524440"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Management 10.0.26 のプレビュー (2022 年 5 月)
 
@@ -35,7 +35,7 @@ ms.locfileid: "8386999"
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |---|---|---|---|
 | 在庫および物流 | [高度な倉庫管理品目をサポートする在庫可視性の手持在庫に対するクエリ](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | 間もなく公開 | 機能管理:<br>*在庫可視化で在庫品目を有効化* |
-| 在庫および物流 | [在庫の可視化アドインの納期回答可能在庫](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | 間もなく公開 | サービス コンフィギュレーションによって有効 |
+| 在庫および物流 | [在庫の可視化アドインの納期回答可能在庫](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Inventory Visibility の手持変更スケジュールと納期回答可能在庫](../inventory/inventory-visibility-available-to-promise.md) | サービス コンフィギュレーションによって有効 |
 | 製造 | [生産現場の実行インターフェイスの CW 品目](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*(プレビュー) 生産現場の実行インターフェイスからの CW 品目に関するレポート* |
 | 製造 | 生産現場の実行インターフェース上の [自分の職務] タブ <!-- KFM: Add link to release plan when available --> | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*生産現場の実行インターフェース上の [自分の職務] タブ* |
 

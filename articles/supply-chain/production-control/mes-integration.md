@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8917c9b265bc3df19517f052e28fb7644057cb46
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 9ec0bedcf1a3a2888a91158ea0353283660d3266
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "8330704"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487584"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>サード パーティ製造システムとの統合
 
@@ -65,6 +65,8 @@ Supply Chain Management のユーザーは、このソリューションをよ�
 ## <a name="monitor-incoming-messages"></a>受信メッセージの監視
 
 システムへの着信メッセージを監視するには、**製造実行システム統合** ページを開きます。 このページでは、問題を表示、処理、およびトラブルシューティングできます。
+
+特定の製造オーダーのすべてのメッセージは、受信した順番に処理されます。 ただし、バッチ ジョブが並行して処理されるため、他の製造オーダーに対するメッセージは、受信した順番に処理されない場合があります。 エラーが発生した場合、状態を *失敗* に設定する前に、バッチ ジョブは各メッセージの処理を 3 回試みます。
 
 ## <a name="call-the-api"></a>API の呼び出し
 
@@ -119,13 +121,13 @@ MES 統合 API を呼び出す場合は、次のエンドポイント URL に `P
 | `ReportedGoodQuantity` | オプション | 実績|
 | `ReportedErrorCatchWeightQuantity` | オプション | 実績 |
 | `ReportedGoodCatchWeightQuantity` | オプション | 実績 |
-| `AcceptError` | オプション |ブール値 |
+| `AcceptError` | オプション | 列挙 (はい \| いいえ) |
 | `ErrorCause` | オプション | 列挙 (None \| Material \| Machine \| OperatingStaff)、拡張可能 |
 | `ExecutedDateTime` | オプション | DateTime |
 | `ReportAsFinishedDate` | オプション | 日付 |
 | `AutomaticBOMConsumptionRule` | オプション | 列挙 (FlushingPrincip \| Always \| Never) |
 | `AutomaticRouteConsumptionRule` | オプション |列挙 (RouteDependent \| Always \| Never) |
-| `RespectFlushingPrincipleDuringOverproduction` | オプション | ブール値 |
+| `RespectFlushingPrincipleDuringOverproduction` | オプション | 列挙 (はい \| いいえ) |
 | `ProductionJournalNameId` | オプション | 文字列 |
 | `PickingListProductionJournalNameId` | オプション | 文字列|
 | `RouteCardProductionJournalNameId` | オプション | 文字列 |
@@ -133,11 +135,11 @@ MES 統合 API を呼び出す場合は、次のエンドポイント URL に `P
 | `ToOperationNumber` | オプション | 整数|
 | `InventoryLotId` | オプション | 文字列 |
 | `BaseValue` | オプション | 文字列 |
-| `EndJob` | オプション | ブール値 |
-| `EndPickingList` | オプション | ブール値 |
-| `EndRouteCard` | オプション | ブール値 |
-| `PostNow` | オプション | ブール値 |
-| `AutoUpdate` | オプション | ブール値 |
+| `EndJob` | オプション | 列挙 (はい \| いいえ) |
+| `EndPickingList` | オプション | 列挙 (はい \| いいえ) |
+| `EndRouteCard` | オプション | 列挙 (はい \| いいえ) |
+| `PostNow` | オプション | 列挙 (はい \| いいえ) |
+| `AutoUpdate` | オプション | 列挙 (はい \| いいえ) |
 | `ProductColorId` | オプション | 文字列|
 | `ProductConfigurationId` | オプション | 文字列 |
 | `ProductSizeId` | オプション | 文字列 |
@@ -181,7 +183,7 @@ MES 統合 API を呼び出す場合は、次のエンドポイント URL に `P
 | `OperationNumber` | オプション | 整数 |
 | `LineNumber` | オプション | 実績 |
 | `PositionNumber` | オプション | 文字列 |
-| `IsConsumptionEnded` | オプション | ブール値 |
+| `IsConsumptionEnded` | オプション | 列挙 (はい \| いいえ) |
 | `ErrorCause` | オプション | 列挙 (None \| Material \| Machine \| OperatingStaff)、拡張可能 |
 | `InventoryLotId` | オプション | 文字列 |
 
@@ -217,9 +219,9 @@ MES 統合 API を呼び出す場合は、次のエンドポイント URL に `P
 | `ConsumptionDate` | オプション | 日付 |
 | `TaskType` | オプション | 列挙 (QueueBefore \| Setup \| Process \| Overlap \| Transport \| QueueAfter \| Burden) |
 | `ErrorCause` | オプション | 列挙 (None \| Material \| Machine \| OperatingStaff)、拡張可能 |
-| `OperationCompleted` | オプション | ブール値 |
-| `BOMConsumption` | オプション | ブール値 |
-| `ReportAsFinished` | オプション | ブール値 |
+| `OperationCompleted` | オプション | 列挙 (はい \| いいえ) |
+| `BOMConsumption` | オプション | 列挙 (はい \| いいえ) |
+| `ReportAsFinished` | オプション | 列挙 (はい \| いいえ) |
 
 ### <a name="end-production-order-message"></a>製造オーダー メッセージの終了
 
@@ -230,9 +232,13 @@ MES 統合 API を呼び出す場合は、次のエンドポイント URL に `P
 | `ProductionOrderNumber` | 必須 | 文字列 |
 | `ExecutedDateTime` | オプション | DateTime |
 | `EndedDate` | オプション | 日付 |
-| `UseTimeAndAttendanceCost` | オプション | ブール値 |
-| `AutoReportAsFinished` | オプション | ブール値 |
-| `AutoUpdate` | オプション | ブール値 |
+| `UseTimeAndAttendanceCost` | オプション | 列挙 (はい \| いいえ) |
+| `AutoReportAsFinished` | オプション | 列挙 (はい \| いいえ) |
+| `AutoUpdate` | オプション | 列挙 (はい \| いいえ) |
+
+## <a name="other-production-information"></a>その他の製造情報
+
+メッセージは、作業現場で発生するアクションやイベントをサポートします。 メッセージは、このトピックで説明する MES 統合フレームワークを使用して処理されます。 この設計では、MES と共有する他の参照情報 (製品関連情報や、特定の製造オーダーで使用され、特定の設定および構成時間を含む部品表またはルートなど) は、ファイル転送または OData で [データ エンティティ](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) を使用してシステムから取得されます。
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>メッセージの状態に関するフィードバックの受信
 

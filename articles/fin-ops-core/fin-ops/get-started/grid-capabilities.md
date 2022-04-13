@@ -2,7 +2,7 @@
 title: グリッド機能
 description: このトピックでは、グリッド コントロールのいくつかの強力な機能について説明します。 これらの機能にアクセスするには、新しいグリッド機能を有効にする必要があります。
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 81577f54bd7fdc7d683c760dd4410f27da8ee1f0
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384443"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462795"
 ---
 # <a name="grid-capabilities"></a>グリッド機能
 
@@ -151,7 +151,7 @@ Excel と同様に、現在表示されているコンテンツに基づいて�
 
 **新しいグリッド コントロール** 機能は、任意の環境の機能管理で直接使用できます。 機能管理でこの機能を有効にすると、その後のすべてのユーザー セッションで新しいグリッド コントロールを使用します。 
 
-この機能は、バージョン 10.0.21 から既定で有効になり、バージョン 10.0.25 からは必須になる予定です。 
+この機能は、バージョン 10.0.21 から既定で有効になり、2022 年 10 月に必須になる予定です。  
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[開発者] 新しいグリッドの使用を個々のページからオプトアウトする 
 新しいグリッドの利用に問題のあるページを発見した場合、API を使用することで、個々のフォームがレガシー グリッド コントロールを使用しつつも、システムの残りの部分が新しいグリッド コントロールを使用できるようになります。 新しいグリッドから個々のページを除外するには、フォームの `run()` メソッドに次の呼び出しポスト `super()` を追加します。

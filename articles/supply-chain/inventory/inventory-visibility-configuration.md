@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061004"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524524"
 ---
 # <a name="configure-inventory-visibility"></a>在庫の視覚化のコンフィギュレーション
 
@@ -39,22 +39,25 @@ ms.locfileid: "8061004"
 
 開始する前に、[在庫視覚化のインストールと設定](inventory-visibility-setup.md)で示されているように、在庫視覚化アドインのインストールと設定を行います。
 
-## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Power Apps の機能管理で在庫視覚化機能を有効にする
-
-在庫視覚化アドインは、Power Apps のインストールにいくつかの新機能を追加します。 既定では、これらの機能は無効になっています。 これらを使用するには、Power Apps の **構成** ページを開き、**機能管理** タブで以下の機能を有効にします。
-
-- *OnHandReservation*
-- *OnHandMostSpecificBackgroundService*
-
-## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>サービス エンドポイントを検索する
-
-在庫視覚化サービスの正しいエンドポイントが分からない場合、Power Apps の **構成** ページを開き、右上隅の **サービス エンドポイントの表示** を選択します。 ページに正しいサービス エンドポイントが表示されます。
-
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>在庫視覚化アプリの構成ページ
 
 Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.md) の **構成** ぺージで手持構成および仮引当構成の設定をサポートします。 アドインをインストールすると、既定の構成に Microsoft Dynamics 365 Supply Chain Management (`fno` データ ソース) からの値が含まれます。 既定の設定を確認できます。 また、業務要件や外部システムの在庫転記要件に基づき、複数のシステム間で在庫変更を転記、整理、およびクエリする方法を標準化するように構成を変更することができます。 このトピックの残りのセクションでは、**構成** ページの各部分の使い方について説明します。
 
 構成の完了後、必ずアプリ内の **構成の更新** を選択してください。
+
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Power Apps の機能管理で在庫視覚化機能を有効にする
+
+在庫視覚化アドインは、Power Apps のインストールにいくつかの新機能を追加します。 既定では、これらの機能は無効になっています。 これらを使用するには、**構成** ページを開き、**機能管理** タブで必要に応じて以下の機能を有効にします。
+
+| 機能管理名 | Description |
+|---|---|
+| OnHandReservation | この機能では、在庫可視化を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除することができます。 詳細については、[在庫の視覚化引当](inventory-visibility-reservations.md) を参照してください。 |
+| OnHandMostSpecificBackgroundService | この機能は、すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、在庫視覚化から定期的に同期されます。 詳細については、[在庫概要](inventory-visibility-power-platform.md#inventory-summary) を参照してください。 |
+| OnhandChangeSchedule | この機能により、手持在庫変更スケジュールと、納期回答可能在庫 (ATP) 機能が有効になります (オプション)。 詳細については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。 |
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>サービス エンドポイントを検索する
+
+在庫視覚化サービスの正しいエンドポイントが分からない場合、Power Apps の **構成** ページを開き、右上隅の **サービス エンドポイントの表示** を選択します。 ページに正しいサービス エンドポイントが表示されます。
 
 ## <a name="data-source-configuration"></a>データ ソースの構成
 
@@ -178,15 +181,21 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 1. Power Apps 環境にサインインし、**在庫視覚化** を開きます。
 1. **構成** ページを開きます。
-1. **計算測定** タブで **新しい計測** を選択し、計算された測定を追加します。 その後、次の表の説明に従ってフィールドを設定します。
+1. **計算測定** タブで **新しい計測** を選択し、計算された測定を追加します。
+1. 新しい計算メジャーについて、次のフィールドを設定します。
 
-    | フィールド | 先頭値 |
-    |---|---|
-    | 新しい計算測定の名前 | 計算測定の名前を入力します。 |
-    | データ ソース | 照会しているシステムはデータ ソースです。 |
-    | モディファイアーのデータ ソース | モディファイアーのデータ ソースを入力します。 |
-    | モディファイアー | モディファイアーの名前を入力します。 |
-    | モディファイアー タイプ | モディファイアー タイプ (*加算* または *減算*) を選択します。 |
+    - **新しい計算メジャー名** – 計算メジャーの名前を入力します。
+    - **データ ソース** – 新しいモディファイアーに関連付けられているデータ ソースを選択します。 照会しているシステムはデータ ソースです。
+
+1. **追加** を選択して、モディファイアーを新しい計算メジャーに追加します。
+1. 新しいモディファイアー用に次のフィールドを設定します。
+
+    - **モディファイアー** – モディファイアー タイプ (*加算* または *減算*) を選択します。
+    - **データ ソース** – モディファイアー値を提供するメジャーが含まれるデータ ソースを選択します。
+    - **メジャー** – モディファイア―の値を提供するメジャーの名前 (選択したデータ ソースから) を選択します。
+
+1. 必要なすべてのモディファイアーを追加するまで、手順 5 から 6 を繰り返します。
+1. **保存** を選択します。
 
 例えば、次のようなクエリ結果があるとします。
 
@@ -465,6 +474,10 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 - `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
 有効な分析コード順序は、分析コードごとに引当階層に厳密に従う必要があります。 たとえば、階層順序 `(SiteId, LocationId, SizeId)` は `ColorId` が欠落しているため無効です。
+
+## <a name="available-to-promise-configuration-optional"></a>納期回答可能在庫の構成 (オプション)
+
+在庫可視性を設定すると、今後の手持在庫変更をスケジュールし、納期回答可能在庫 (ATP) 数量を計算できます。 ATP は、使用可能な品目の数量で、次の期間に顧客に約束できます。 この計算を使用すると、注文のフルフィルメント機能を大幅に強化できます。 この機能を使用するには、**機能管理** タブでこの機能を有効にして、**ATP 設定** タブで設定する必要があります。詳細については、[在庫可視性の手持在庫変更スケジュールおよび納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。
 
 ## <a name="complete-and-update-the-configuration"></a>構成の完了と更新
 

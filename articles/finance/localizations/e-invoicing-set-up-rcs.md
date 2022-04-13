@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 33aab6f0a482ce3d90a7e9828015a8e7bebb7827
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 6aed74656ceb8edd0e88adf53b61fcae81241f54
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371713"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470180"
 ---
 # <a name="set-up-regulatory-configuration-service-rcs"></a>Regulatory Configuration Service (RCS) を設定する
 
@@ -50,6 +50,13 @@ ms.locfileid: "8371713"
     | イギリス             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | アジア                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | 日本                      | <p>`https://gw.jp-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | スイス                | <p>`https://gw.ch-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | ブラジル                     | <p>`https://gw.br-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.br-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | アラブ首長国連邦       | <p>`https://gw.ae-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | オーストラリア                  | <p>`https://gw.au-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.au-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | カナダ                     | <p>`https://gw.ca-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.ca-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | フランス                     | <p>`https://gw.fr-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | インド                      | <p>`https://gw.in-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 3. **アプリケーション ID** フィールドが、**0cdb527f-a8d1-4bf8-9436-b352c68682b2** に設定されていることを確認します。 この値は固定値です。 グローバル一意識別子 (GUID) のみを入力し、値にスペース、コンマ、期間、引用符などの他の記号が含まれるのを確認します。
 4. **LCS 環境 ID** フィールドに、Microsoft Dynamics Lifecycle Services (LCS) 環境の ID を入力してください。 この値は、電子請求サービスで使用する財務または  Supply Chain Management 環境への参照です。 ID を取得するには、[LCS](https://lcs.dynamics.com/) にサインインして、自分のプロジェクトを開き、**環境の管理** タブの **環境の詳細** セクションで **環境ID** フィールドを参照します。

@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c15104e0f34c1f6cb6a599d506dad741be3e5e9e
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: e4b0b9f7eb4fb0ffab3237459d85ea92c83dd206
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388393"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462169"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>コマース チャネルの会計統合の設定
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、コマース チャネルの会計統合機能を設定するためのガイドラインを提供します。 会計統合の詳細については、[コマースチャネルの会計統合の概要](fiscal-integration-for-retail-channel.md) を参照してください。
 

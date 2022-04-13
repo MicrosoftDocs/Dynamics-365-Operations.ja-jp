@@ -1,7 +1,7 @@
 ---
 title: 計画の最適化の概要
 description: このトピックでは、計画の最適化機能の概要を示します。
-author: ChristianRytt
+author: t-benebo
 ms.date: 10/31/2019
 ms.topic: overview
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 49da88be9faff8f327f8079245b3c07db79308e6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7a44de70eeed4a32af47cd5ab636cac74400a2ac
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983445"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469089"
 ---
 # <a name="planning-optimization-overview"></a>計画の最適化の概要
 

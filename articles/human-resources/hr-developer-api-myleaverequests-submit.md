@@ -1,7 +1,7 @@
 ---
 title: 休暇申請をワークフローに送信する
 description: Microsoft Dynamics 365 Human Resources では、MyLeaveRequests submit () アプリケーション プログラミング インターフェイス (API) を使用して、休暇要求をワークフローに送信できます。
-author: andreabichsel
+author: twheeloc
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f9ca716f37b90e22983b2dddc2c426a2b4e251ec
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: caea924a2bab9439374ea933d4a0886059e5fe53
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067507"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8534139"
 ---
 # <a name="submit-a-leave-request-to-workflow"></a>休暇申請をワークフローに送信する
 

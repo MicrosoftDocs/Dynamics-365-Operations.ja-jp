@@ -1,7 +1,7 @@
 ---
 title: 会社間計画
 description: このトピックでは、会社間計画について説明し、Microsoft Dynamics 365 Supply Chain Management で計画の最適化を使用して会社間計画を構成する方法を説明します。
-author: ChristianRytt
+author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2bf69a5d0d6e070374277e2d82d5fbf6eb4b8704895ffe31aa7e2d2d3546bb16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de9f9679bfaf9491c6b69c11448306627c8a42f9
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777914"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468499"
 ---
 # <a name="intercompany-planning"></a>会社間計画
 

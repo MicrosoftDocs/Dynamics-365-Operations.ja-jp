@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c7f679e8d11b0ec01e912a4ad64f02e50b20f299
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984572"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487771"
 ---
 # <a name="e-commerce-site-overview"></a>eコマース サイトの概要
 
@@ -86,7 +86,7 @@ Dynamics 365 Commerce は Azure Active Directory (Azure AD) 企業と顧客間 (
 サイト設定を管理する方法については、次のトピックを参照してください。
 
 - [E コマース ユーザーとロールの管理](manage-ecommerce-users-roles.md)
-- [サイトにおける検索エンジンの最適化 (SEO) の考慮事項](/search-engine-optimization-considerations.md)
+- [サイトにおける検索エンジンの最適化 (SEO) の考慮事項](search-engine-optimization-considerations.md)
 - [コンテンツ セキュリティ ポリシー (CSP) の管理](manage-csp.md)
 - [サイト テーマの選択](select-site-theme.md)
 

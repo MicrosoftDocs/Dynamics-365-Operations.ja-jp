@@ -1,7 +1,7 @@
 ---
 title: 給与作業者の福利厚生計画
 description: このトピックでは、Dynamics 365 Human Resources における給与労働者福利厚生計画エンティティに対するクエリの詳細および例を示します。
-author: marcelbf
+author: twheeloc
 ms.date: 07/28/2021
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ audience: Application User
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: marcelbf
+ms.author: twheeloc
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1805f7efaf2efc48d5996776f3aa27d75606886f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ade1c789716ea5f559a73c8551b7c1adf030b806
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068437"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8533799"
 ---
 # <a name="payroll-worker-benefit-plan"></a>給与作業者の福利厚生計画
 

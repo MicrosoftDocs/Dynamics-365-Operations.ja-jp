@@ -1,7 +1,7 @@
 ---
 title: 需要予測を伴うマスター プラン
 description: このトピックでは、計画の最適化を使用したマスター プラン中の需要予測を含める方法について説明します。
-author: ChristianRytt
+author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: ec5150186e190e67913409b9cac107ff2bd55001
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867250"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468444"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>需要予測を伴うマスター プラン
 

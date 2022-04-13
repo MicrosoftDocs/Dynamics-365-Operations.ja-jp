@@ -2,7 +2,7 @@
 title: GETLABELTEXT ER 関数
 description: このトピックでは、GETLABELTEXT 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
-ms.date: 01/04/2022
+ms.date: 03/18/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,18 +14,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-01-01
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 911567a94b80c2b762a37e83d37fc500132edb18
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 2ce66c9410abeee16bbd074204262edf79bf6d68
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075639"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462414"
 ---
 # <a name="getlabeltext-er-function"></a>GETLABELTEXT ER 関数
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 `GETLABELTEXT` 関数は、特定のラベルを検索して、指定したラベルの翻訳を表す *[文字列](er-formula-supported-data-types-primitive.md#string)* 値を指定した言語で返します。
 

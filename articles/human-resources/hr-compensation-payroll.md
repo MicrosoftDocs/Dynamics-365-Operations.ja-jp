@@ -1,7 +1,7 @@
 ---
 title: 支払準備完了
 description: このトピックでは、Dynamics 365 Human Resources で従業員に支払準備完了をマークする方法を説明します。
-author: marcelbf
+author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: marcelbf
+ms.author: twheeloc
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 825aa327cc1530675fad57be6fc1b4313f0cf998
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a5a6fc613065dbba2d70a4b73974337b87782aae
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068973"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8533743"
 ---
 # <a name="ready-to-pay"></a>支払準備完了
 

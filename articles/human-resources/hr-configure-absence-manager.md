@@ -1,7 +1,7 @@
 ---
 title: 休暇マネージャー ロールの構成
 description: このトピックでは、従業員の休暇を管理するための休暇マネージャー ロールを設定する方法について説明します。
-author: hasrivas
+author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
@@ -12,20 +12,20 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: hasrivas
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9f1c699358c9cc8de9e975886cfb72edfb0d3f31
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 69a9bfe47c342f2efdae51bd62a317b4b0ab7ff5
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065229"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8534111"
 ---
 # <a name="configure-the-absence-manager-role"></a>休暇マネージャー ロールの構成
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+>[!Important]
+>このトピックで説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

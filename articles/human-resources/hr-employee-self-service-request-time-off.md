@@ -1,5 +1,5 @@
 ---
-title: 休暇の申請
+title: 休暇申請
 description: Dynamics 365 Human Resources で休暇を申請します。
 author: twheeloc
 ms.date: 11/03/2021
@@ -12,20 +12,20 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7ca3fd03cda720187cb9c21b7f3ef3545c8901e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 92e9f6cc04a2dae49267cf92bdd309e82ee6561a
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066778"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509643"
 ---
-# <a name="request-time-off"></a>休暇の申請
+# <a name="request-time-off"></a>休暇申請
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+>[!Important]
+>このトピックで説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

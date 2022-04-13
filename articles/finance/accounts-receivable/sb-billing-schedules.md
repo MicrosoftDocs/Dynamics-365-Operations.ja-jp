@@ -1,5 +1,5 @@
 ---
-title: 請求スケジュールの概要
+title: 請求スケジュールの作成
 description: このトピックでは、請求スケジュールの作成、削除、編集方法について説明します。
 author: JodiChristiansen
 ms.date: 02/09/2022
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: e42be3f359e96f0861354ebc8e1e9c87478a5d89
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2c4e3c0edadd00fd3a3f2ae9968248a226147996
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182696"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462590"
 ---
-# <a name="billing-schedule-overview"></a>請求スケジュールの概要
+# <a name="create-billing-schedules"></a>請求スケジュールの作成
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 **請求スケジュール** ページでは、請求スケジュールを作成、削除、または編集できます。 また、請求スケジュールの一覧を確認できます。 請求スケジュールを作成する際の既定値は、請求書作成スケジュールに関連付けられている請求グループによって決まります。 追加情報は、**経常契約の請求書作成** パラメータ ページで設定します。
 

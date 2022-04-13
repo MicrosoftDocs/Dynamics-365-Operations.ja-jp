@@ -15,17 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8b11b75e2cc53482f3fccf8fdd0aa4f1af3453d9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: be18ace185b73c9f032f9303c0bb62c6a80487c0
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069482"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509088"
 ---
 # <a name="suspend-leave"></a>休暇の中断
 
+>[!Important]
+>このトピックで説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

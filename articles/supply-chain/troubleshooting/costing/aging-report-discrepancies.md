@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 27f01858bbd40a92daa9c6183fd41fe13410dc6c
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: cf3f27cb4bc1ba288f3229c0784edb6694ff94e6
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7476839"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8488998"
 ---
 # <a name="inventory-aging-report-discrepancies"></a>在庫エイジング レポートの差異
 
@@ -26,4 +26,4 @@ ms.locfileid: "7476839"
 
 ## <a name="resolution"></a>解決策
 
-レポート ロジックの詳細については、[在庫エイジング レポートの例とロジック](/dynamics365/supply-chain/cost-management/inventory-aging-report.md)を参照してください。
+レポート ロジックの詳細については、[在庫エイジング レポートの例とロジック](../../cost-management/inventory-aging-report.md)を参照してください。

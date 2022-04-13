@@ -1,7 +1,7 @@
 ---
 title: 会社間計画の作成
 description: この手順では、会社間計画を作成する方法を示します。
-author: ChristianRytt
+author: t-benebo
 ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: ReqIntercompanyPlanningGroupSetup,  ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ef1484e6925427454f819a5effdc911f762b48b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c2486ce6f03d03982a7ae9c43af447923aabfed2
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578275"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469564"
 ---
 # <a name="create-an-intercompany-plan"></a>会社間計画の作成
 

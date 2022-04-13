@@ -1,22 +1,22 @@
 ---
 title: 計画最適化で使用されないパラメーター
 description: このトピックでは、計画最適化で現在考慮されないパラメーターを一覧表示します。
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408233"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469117"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>計画最適化で使用されないパラメーター
 
@@ -65,18 +65,6 @@ ms.locfileid: "8408233"
   - **特定の BOM またはフォーミュラ バージョンの使用** – *連産品/副産物を含むフォーミュラ バージョン* のサポートは保留中です。
   - **指定された工順バージョンの使用** – *特定の BOM またはルート要件が定義されている需要* のサポートは保留中です。
 
-- **アクション** クイック タブ:
-
-  - **アクション メッセージ** – *アクション* のサポートは保留中です。
-  - **アクション タイム フェンス** – *アクション* のサポートは保留中です。
-  - **延期日数** – *アクション* のサポートは保留中です。
-  - **要求日前受入許容日数** – *アクション* のサポートは保留中です。
-  - **基準日** – *アクション* のサポートは保留中です。
-  - **繰り上げ** – *アクション* のサポートは保留中です。
-  - **延期** – *アクション* のサポートは保留中です。
-  - **減少** – *アクション* のサポートは保留中です。
-  - **増加** – *アクション* のサポートは保留中です。
-  - **派生アクション** – *アクション* のサポートは保留中です。
 
 - **その他** クイック タブ:
 
@@ -149,7 +137,6 @@ ms.locfileid: "8408233"
   - **予測計画タイム フェンス** – 追加の *予測* のサポートは保留中です。
   - **能力** – *スケジューリング* のサポートは保留中です。
   - **連続計画** – *連続スケジューリング* のサポートは保留中です。
-  - **アクション メッセージ** – *アクション* のサポートは保留中です。
   - **計算済遅延** – 追加の *計算済遅延* のサポートは保留中です。
   - **優先順位** – *生産* のサポートは保留中です。
 

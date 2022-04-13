@@ -14,17 +14,20 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 344b4bba144a311530ce7be3b4bc230ce9cf8d1a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9f5706d91f36817011ba26235b91731b0501f6bf
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069024"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509229"
 ---
 # <a name="leave-and-absence-overview"></a>休暇の概要
 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+>[!Important]
+>このトピックで説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
+
+
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

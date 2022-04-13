@@ -1,7 +1,7 @@
 ---
 title: 需要予測の履歴データのインポート
 description: 正確な需要予測を取得するには、品目または品目配賦キーごとの履歴需要データが必要です。 このトピックでは、需要予測データの長期的な履歴が残るよう、任意のシステムから履歴需要データをインポートするためにデータ エンティティを使用する方法について説明します。
-author: ChristianRytt
+author: t-benebo
 ms.date: 05/10/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dba31279541c20949dd1e86236103045c48b701
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c52d27d6e3aa8a20d6cc1dc81e4ade981c6a8091
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579667"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470404"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>需要予測の履歴データのインポート
 

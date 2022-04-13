@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416308"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464912"
 ---
 # <a name="financial-analysis"></a>財務分析
 
@@ -38,7 +38,7 @@ ms.locfileid: "7416308"
 
 **財務分析** ワークスペースは、既存のレポートのデータを表示およびフィルター処理することに焦点を合わせています。 **財務分析** ワークスペースに新しいビジュアルを追加することができます。 **財務分析** ワークスペースは、現在の会社の他にすべての会社で利用でき、ロールがアクセスできる法人かどうかにかかわらずすべての法人のデータを表示します。
 
-- [ダッシュボードでの Power BI ビジュアル化の追加または編集](/powerapps-docs/user/add-powerbi-dashboards.md)
+- [ダッシュボードでの Power BI ビジュアル化の追加または編集](/powerapps/user/add-powerbi-dashboards)
 
 ## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance の設定
 **一般会計**
@@ -96,7 +96,7 @@ ms.locfileid: "7416308"
 | **レポートの階層/組織階層のサポート**   | 有                                                               | 無 |
 | **補助元帳データでレポート**                             | はい 仕入先、顧客のみに限定                              | はい 仕入先、顧客、仕入先/顧客グループ、仕入先/顧客の住所など |
 | **レポート通貨**                                   | はい 会計通貨およびレポート通貨に換算       | いいえ 会計通貨のみ |
-| **セキュリティ**                                             | はい 財務のレポート ツリー セキュリティに準拠 | すべての会社 (Finance and Operations セキュリティに関係なく) または有効な会社のみに対する制限付きレポートの表示 |
+| **セキュリティ**                                             | はい 財務のレポート ツリー セキュリティに準拠 | すべての会社に対して制限付きレポートの表示 (Finance and Operations セキュリティに関係なく) または有効な会社のみ |
 | **勘定科目表および会計年度の違いのサポート** | 有                                                               | 無 |
 | **外部データでレポート**                              | 無                                                                | 無 |
 | **連結サポート**                               | 有                                                               | 複数の会社でレポートの制限が可能、ただし会計通貨のみ使用 |

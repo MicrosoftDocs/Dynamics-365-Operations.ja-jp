@@ -1,14 +1,14 @@
 ---
 title: 顧客の前払
 description: このトピックでは、顧客の前払 (顧客預金とも呼ばれる) の設定および処理方法について説明します。
-author: roschlom
+author: twheeloc
 ms.date: 04/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustPosting, LedgerJournalTransCustPaym, CustParameters
 audience: Application User
-ms.reviewer: ''
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e83c8be1b397f90445230835e415ea4fcea5a8d0bf695e6cc5eadc55275ded7f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7ba462dc2b5fe326db14dfb3c92f986478d31791
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768966"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464879"
 ---
 # <a name="customer-prepayments"></a>顧客の前払
 
@@ -86,4 +86,4 @@ ms.locfileid: "6768966"
 4. 請求書および決済される支払の **マーク** チェック ボックスをオンにします。
 5. **投稿** を選択します。
 
-オープン トランザクションの決済方法の詳細については、[決済の概要](/cash-bank-management/settlement-overview.md) を参照してください。
+オープン トランザクションの決済方法の詳細については、[決済の概要](/dynamics365/finance/cash-bank-management/settlement-overview) を参照してください。

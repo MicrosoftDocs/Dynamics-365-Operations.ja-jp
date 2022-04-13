@@ -2,7 +2,7 @@
 title: 元帳決済から年度末決算までの認識
 description: このトピックでは、元帳決済と一般会計の年度末決算に影響する拡張に関する情報を提供します。
 author: kweekley
-ms.date: 01/31/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,18 +13,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: acfbcf1467363262769884063efbc1a6d6e21eb1
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: e18f77d73239de23000b5310d9342c6db95bc524
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075574"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462355"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>元帳決済から年度末決算までの認識
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Finance バージョン 10.0.25 では、**機能管理** ワークスペースで **元帳の決済と年末の決算を意識する** 機能が利用できます。 この機能により、元帳決済および一般会計年度末の決算に影響する 2 つの主要な機能拡張が追加されます。
 

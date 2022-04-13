@@ -1,7 +1,7 @@
 ---
 title: 休暇の売買申請ワークフローの作成
 description: 休暇の売買申請ワークフローを作成して、Dynamics 365 Human Resources で休暇申請の売買を一貫して管理します。
-author: andreabichsel
+author: twheeloc
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
@@ -12,20 +12,22 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b9e56c130cd831e6a1ad258c679562cb6de57d9b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3f200fec48dc6bff2702b962c47cbd6951c5921c
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070680"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509419"
 ---
 # <a name="create-a-buy-and-sell-leave-request-workflow"></a>休暇の売買申請ワークフローの作成
 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+>[!Important]
+>このトピックで説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
+
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
