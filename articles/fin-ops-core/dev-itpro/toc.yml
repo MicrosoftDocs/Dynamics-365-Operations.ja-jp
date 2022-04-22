@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.25 (2022 年 4 月)
                   href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.24 (2022 年 2 月)
-                  href: get-started/whats-new-platform-updates-10-0-24.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -394,8 +392,10 @@
                       href: deployment/onprem-batchonly.md
                     - name: SQL Server Reporting Services (SSRS) ノードの高可用性のコンフィギュレーション
                       href: deployment/onprem-SSRSHA.md
-                    - name: オンプレミス環境用プロキシのコンフィギュレーション
+                    - name: オンプレミス環境のプロキシを構成する
                       href: deployment/onprem-reverseproxy.md
+                    - name: オンプレミス環境でのネットワーク プリンター デバイスのインストール
+                      href: analytics/install-network-printer-onprem.md
                     - name: オンプレミス診断
                       href: deployment/on-premises-diagnostics.md
                     - name: オンプレミス障害復旧コンフィギュレーション
@@ -496,6 +496,8 @@
                   href: dev-tools/configure-developer-vm.md
                 - name: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
                   href: sysadmin/VMs-no-admin-access.md
+                - name: 最初に使用する際にダウンロードできる VHD を設定する
+                  href: dev-tools/vhd-setup.md
                 - name: Azure DevOps にアクセスするためのローカル環境の名前変更
                   href: migration-upgrade/vso-machine-renaming.md
                 - name: 開発システム要件
@@ -1028,6 +1030,8 @@
                   href: lifecycle-services/use-translation-service-tm.md
                 - name: Azure DevOps 拡張機能 (パブリック プレビュー)
                   href: lifecycle-services/dts-devops-extension.md
+                - name: Azure DevOps 拡張機能のチュートリアル (パブリック プレビュー)
+                  href: lifecycle-services/dts-ado-tutorial.md
         - name: Microsoft Power Platform 統合
           items:
             - name: 概要
@@ -1506,6 +1510,8 @@
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Regression Suite Automation Tool (RSAT) を並列実行する
               href: perf-test/rsat/rsat-parallel-execution.md
+            - name: Azure DevOps パイプラインと RSAT を統合する
+              href: perf-test/rsat/rsat-devops-extension.md
             - name: トラブルシューティング
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Lifecycle Services を使用したリリースのソリューション
@@ -1986,7 +1992,7 @@
                   href: user-interface/task-recorder.md
                 - name: タスク レコーダーのクイック リファレンス
                   href: user-interface/task-recorder-quick-reference.md
-                - name: タスク レコーダーによるドキュメントやトレーニングの作成
+                - name: タスク記録によるドキュメントやトレーニングの作成
                   href: user-interface/task-recorder-training-docs.md
     - name: Dynamics 365 Supply Chain Management
       href: ../../supply-chain/index.md

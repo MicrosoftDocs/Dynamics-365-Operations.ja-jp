@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Finance
       items:
-        - name: Dynamics 365 Finance ホーム ページ
+        - name: Dynamics 365 Finance のホーム ページ
           href: index.md
         - name: 新機能および変更された機能
           items:
@@ -16,8 +16,6 @@
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: Finance 10.0.25 (4 月)
                   href: get-started/whats-new-changed-10-0-25.md
-                - name: Finance 10.0.24 (2 月)
-                  href: get-started/whats-new-changed-10-0-24.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -418,14 +416,30 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: 請求スケジュールのコピー
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: 請求スケジュール機能
+                      href: accounts-receivable/sb-schedule-billing-features.md
                     - name: マイルストーン請求
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: サポートおよび更新プロセス
+                      href: accounts-receivable/sb-support-renewals.md
+                    - name: 消費価格指数のスケジュール
+                      href: accounts-receivable/cpischedules.md
                     - name: 請求スケジュールの終了
                       href: accounts-receivable/terminate-billing-schedule.md
-                - name: 収益および経費の繰延
-                  items: null
-                - name: 複数要素収益配賦
-                  items: null
+                - name: 売上および経費の繰延
+                  items:
+                    - name: 売上および経費の繰延の設定
+                      href: accounts-receivable/sb-deferrals.md
+                    - name: 繰延スケジュール
+                      items:
+                        - name: 繰延スケジュールの作成
+                          href: accounts-receivable/sb-deferrals-schedules.md
+                        - name: 繰延の既定トランザクション
+                          href: accounts-receivable/sb-deferral-transactions.md
+                - name: 複数要素売上配賦
+                  items:
+                    - name: 複数要素売上配賦を設定する
+                      href: accounts-receivable/sb-rev-alloc-setup.md
             - name: 支払と決済
               items:
                 - name: 顧客支払の概要
@@ -922,6 +936,8 @@
               items:
                 - name: 勘定科目表の計画
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: ローカル勘定科目表の計画
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: 主勘定
                   items:
                     - name: 主勘定タイプ
@@ -2288,7 +2304,7 @@
                       href: localizations/emea-fra-fec-audit-file-structure.md
                     - name: FEC を生成するための環境の準備
                       href: localizations/emea-fra-fec-audit-file-setup.md
-                    - name: Dynamics 365 Finance での FEC の生成
+                    - name: Dynamics 365 Finance で FEC を生成する
                       href: localizations/emea-fra-fec-audit-file-generation.md
                 - name: 顧客および仕入先の勘定明細書
                   href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
@@ -3092,6 +3108,8 @@
                   href: localizations/tasks/mx-00010-cancel-electronic-invoice.md
                 - name: CFDI バージョン 3.3
                   href: localizations/latam-mex-cfdi-3-3.md
+                - name: CFDI バージョン 4.0
+                  href: localizations/latam-mex-cfdi-4-0.md
                 - name: 顧客登録 ID などの情報
                   href: localizations/tasks/mx-00007-customer-registration-ids-other-information.md
                 - name: DIOT 申告ステータス
