@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 43a53d5940b2595abb305a08e6f52661bee8ca62
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752811"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548083"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operations バージョン 1611 (2016 年 11 月) の新機能および変更された機能
 
@@ -816,7 +816,7 @@ ms.locfileid: "7752811"
 | 仕入先として、顧客に転送する委託販売在庫量に関する情報を取得します。 | 顧客に請求するには、仕入先は委託販売在庫から購入された原材料と購入日に関する情報を要求します。 また、仕入先は、仕入先コラボレーション インターフェイスを使用して、顧客サイトの手持在庫を監視できます。 |
 | 移動仕訳帳を使用して仕入先所有の在庫を移動します。 | 仕入先所有の在庫の物理的な位置を追跡するには、システム上の位置を記録する必要があります。 移動仕訳帳を使用して、倉庫内のある場所から別の場所へ移動するなどの在庫の物理移動を記録できます。 |
 | 棚卸仕訳帳を使用して仕入先所有の在庫を調整します。 | システム手持在庫を実際の現物在庫に同期化させることが重要です。 数量の調整および棚卸仕訳帳プロセスなどの棚卸プロセスを使用して、仕入先所有の在庫は調整できます。 |
-| Dynamics 365 for Operations の委託サポートの詳細を表示します。 | 委託販売プロセスのサポートに関する詳細については、[委託販売](../../../supply-chain/inventory/consignment.md)、[委託販売の設定](../../../supply-chain/inventory/set-up-consignment.md)、[委託販売補充注文の作成 (タスク ガイド)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md)、そして [生産の需要に基づく委託販売在庫の所有権の変更 (タスク ガイド)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md) を参照して下さい。 |
+| Dynamics 365 for Operations の委託サポートの詳細を表示します。 | 委託販売プロセスのサポートに関する詳細については、[委託販売](../../../supply-chain/inventory/consignment.md)、[委託販売の設定](/d365F-O/fin-ops-core/fin-ops/get-started/consignment)、[委託販売補充注文の作成 (タスク ガイド)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md)、そして [生産の需要に基づく委託販売在庫の所有権の変更 (タスク ガイド)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md) を参照して下さい。 |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>仕入先の共同作業 (以前は仕入先ポータルと呼ばれていた)
 

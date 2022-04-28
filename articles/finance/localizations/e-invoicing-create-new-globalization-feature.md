@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 197a5b983b307758425b1acc1f354d0a8bfbf8a1
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 94038b0eb412632c348081bbf467f44310d9e955
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371698"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603028"
 ---
 # <a name="create-a-globalization-feature"></a>グローバリゼーション機能の作成
 
@@ -47,7 +47,7 @@ ms.locfileid: "8371698"
 8. **構成** グリッドで、処理パイプラインに必要な形式の構成を参照して選択します (電子請求書ファイルの生成、外部 Web サービスからの応答の処理など)。
 9.  **OK** を選択します。 これで、処理パイプラインのアクションで構成を使用できます。 詳細については、[構成との連携](e-invoicing-work-configurations.md) を参照してください。
 10. 電子請求機能の設定を追加するには、**新しい機能** ページの **設定** タブで作成します。 詳細については、[機能設定との連携](e-invoicing-feature-setup.md) を参照してください。
-11. 設定を完了し、電子請求機能をサービス環境に展開します。 詳細については、[グローバリゼーション機能の完了、公開、展開](e-invoicing-complete-publish-deploy-globalization-feature) を参照してください。
+11. 設定を完了し、電子請求機能をサービス環境に展開します。 詳細については、[グローバリゼーション機能の完了、公開、展開](e-invoicing-complete-publish-deploy-globalization-feature.md) を参照してください。
 
 ### <a name="create-file-format-configurations-that-are-derived-from-the-existing-invoice-model"></a>既存の請求書モデルから派生したファイル形式の構成を作成する
 
@@ -91,4 +91,4 @@ ER 構成を作成する必要がなく、既存のバージョンをベース�
     - ER 形式と、その機能バージョンの形式マッピングを使用してバインドをカスタマイズする必要がある場合に備えて、構成を確認します。
     - 機能バージョンの **アクション** タブ、**適用ルール** タブ、または **変数** タブをカスタマイズする必要がある場合に備えて、設定を確認します。
 
-9. 設定を完了し、電子請求機能をサービス環境に展開します。 詳細については、[グローバリゼーション機能の完了、公開、展開](e-invoicing-complete-publish-deploy-globalization-feature) を参照してください。
+9. 設定を完了し、電子請求機能をサービス環境に展開します。 詳細については、[グローバリゼーション機能の完了、公開、展開](e-invoicing-complete-publish-deploy-globalization-feature.md) を参照してください。

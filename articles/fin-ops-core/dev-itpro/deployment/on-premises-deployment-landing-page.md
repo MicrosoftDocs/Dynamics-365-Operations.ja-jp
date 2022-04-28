@@ -4,7 +4,8 @@ description: このトピックでは、オンプレミス配置に関するコ�
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,24 +17,24 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 93ed4e81db18cd02c097ff188003569e7bb391c511fd93fcab0961c14029dc96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712571"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566042"
 ---
 # <a name="on-premises-deployment-home-page"></a>オンプレミス配置のホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance + Operations (オンプレミス) を配置できます。 オンプレミスの配置タイプを選択すると、システム要件、ハードウェアのサイジング、および機能がクラウド展開と異なります。 このトピックでは、オンプレミス展開に固有の情報を含むコンテンツへのリンクを提供します。
+Dynamics 365 Finance + Operations (on-premises) を展開できます。 オンプレミスの配置タイプを選択すると、システム要件、ハードウェアのサイジング、および機能がクラウド展開と異なります。 このトピックでは、オンプレミス展開に固有の情報を含むコンテンツへのリンクを提供します。
 
 ## <a name="get-started"></a>はじめに
 - [オンプレミス配置の概要](on-premises-overview.md)
 - [オンプレミス配置の計画および準備](plan-onprem-deployment.md)
 - [オンプレミス配置のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされるソフトウェア](onprem-compatibility.md)
+- [Microsoft Dynamics 365 Finance + Operations (on-premises) でサポートされるソフトウェア](onprem-compatibility.md)
 - [オンプレミス環境のハードウェアのサイズ設定要件](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Finance + Operations (on-premises) の購入](../../fin-ops/get-started/purchase-on-premises.md)
 - [クラウドとオンプレミスの機能比較](../../fin-ops/get-started/cloud-prem-comparison.md)
@@ -51,8 +52,8 @@ Dynamics 365 Finance + Operations (オンプレミス) を配置できます。 
 - [ドキュメント管理のコンフィギュレーション](../../fin-ops/organization-administration/configure-document-management.md)
 - [電子申告 (ER) コンフィギュレーションのインポート](../analytics/electronic-reporting-import-ger-configurations.md)
 - [オンプレミス配置でのドキュメントの生成、発行、印刷](../analytics/printing-capabilities-on-premises.md)
-- [オンプレミス環境用プロキシの構成](onprem-reverseproxy.md)
-- [Finance and Operations アプリのテクニカル サポートの設定](../lifecycle-services/support-experience.md)
+- [オンプレミス環境でのプロキシのコンフィギュレーション](onprem-reverseproxy.md)
+- [Finance and Operations アプリの技術サポートの設定](../lifecycle-services/support-experience.md)
 - [クライアントのインターネット接続](../user-interface/client-disconnected.md)
 - [オンプレミス配置への更新プログラムの適用](apply-updates-on-premises.md)
 - [オンプレミス環境の再配置](redeploy-on-prem.md)
@@ -72,7 +73,7 @@ Dynamics 365 Finance + Operations (オンプレミス) を配置できます。 
 - [オンプレミス環境の問題を解決するスクリプト](onprem-tsg-implementations.md)
 - [証明書のローテーション](certificate-rotation-on-prem.md)
 - [オンプレミス診断](on-premises-diagnostics.md)
-- [Finance and Operations の削除済みまたは非推奨の機能](../migration-upgrade/deprecated-features.md)
+- [Finance and Operations の削除済みまたは推奨されない機能](../migration-upgrade/deprecated-features.md)
 - [ソフトウェアのライフサイクル ポリシーおよびオンプレミス リリース](../migration-upgrade/on-prem-version-update-policy.md)
  
 

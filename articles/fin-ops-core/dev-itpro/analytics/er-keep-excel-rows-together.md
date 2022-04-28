@@ -15,18 +15,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 711681ab38fb24b57a83f008f86a8261176aa5a5
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388594"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612373"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>同じ Excel ページに行をまとめる ER 形式を設計する
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、システム管理者または電子報告書業務コンサルタントの役割を持つユーザーが、[電子レポート (ER)](general-electronic-reporting.md)[形式](er-overview-components.md#format-component) を構成して、Microsoft Excel で送信文書を生成し、文書のページ設定を管理する方法について説明します。
 
@@ -55,7 +54,7 @@ ms.locfileid: "8388594"
 
 ## <a name="import-the-standard-er-format-configuration"></a>標準 ER フォーマットの構成をインポートする
 
-[標準的な ER フォーマットの構成をインポートする](er-quick-start2-customize-report.md#ImportERSolution1)に記載の手順に従って、標準的な ER の構成を現在の Dynamics 365 Finance のインスタンスに追加します。 例えば、**自由書式の請求書 (Excel)** 形式構成のバージョン **252.116** をインポートします。 基本の **請求書モデル** 構成のの基本バージョン **252** が、必要な **請求書モデル マッピング** 構成と共に、リポジトリから自動的にインポートされます。
+[標準的な ER フォーマットの構成をインポートする](er-quick-start2-customize-report.md#ImportERSolution1) に記載の手順に従って、標準的な ER の構成を現在の Dynamics 365 Finance のインスタンスに追加します。 例えば、**自由書式の請求書 (Excel)** 形式構成のバージョン **252.116** をインポートします。 基本の **請求書モデル** 構成のの基本バージョン **252** が、必要な **請求書モデル マッピング** 構成と共に、リポジトリから自動的にインポートされます。
 
 ## <a name="set-up-print-management-to-use-the-standard-er-format"></a>標準 ER 形式を使用するための印刷管理の設定
 

@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5b84237844ec1d8f6c0716a0a13b05c83b358901
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d414ed7ac55afbbc58b8f5542c713f56392f9bc7
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575779"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570453"
 ---
 # <a name="manage-folios"></a>フォリオの管理
 
 [!include [banner](../../includes/banner.md)]
 
-多くの場合、フォリオは税関の法規によって決定されます。 出荷ごとの 1 つのエンティティまたは会社に対する 1 つの仕入先の商品により構成されます。 1 つのフォリオにある商品は、1 つのコンテナに入るか、または複数のコンテナに分散されることがあります。
+多くの場合、フォリオは税関の法規によって決定されます。 出荷ごとの 1 つのエンティティまたは会社に対する 1 つの仕入先の商品により構成されます。 1 つのフォリオにある商品は、1 つのコンテナーで管理されます。
 
 **すべてのフォリオ** ページを開くには、**荷揚原価 \> フォリオ \> すべてのフォリオ** に移動します。 このページには、現在のすべてのフォリオの一覧が表示されます。 アクション ウィンドウのボタンを使用して、フォリオの作成、削除、および操作を行うことができます。 一覧でフォリオを選択すると、**フォリオ** ページにその詳細が表示されます。
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e4861c0e8b3680f3cd3229facf059b671a4fc765
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90410585f314aa9f17f2c132afb6568307fb28ab
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983420"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570384"
 ---
 # <a name="landed-cost-module"></a>陸揚原価モジュール
 
@@ -39,7 +39,7 @@ ms.locfileid: "7983420"
 
 ### <a name="voyages"></a>航海
 
-陸揚原価では、航海とは、出庫場所から指定された期間に特定の一連の目的地を経由して、指定された入庫倉庫ロケーションへの別個の移動を示します。 航海の 1 つのコンテナーまたは複数のコンテナーのいずれかに発注書および注文明細行が追加でき、原価は品目明細行に正しく割り当てられます。 注文および注文明細行は、1 回の航海で法人全体に追加することもできます。
+陸揚原価では、航海とは、出庫場所から指定された期間に特定の一連の目的地を経由して、指定された入庫倉庫ロケーションへの別個の移動を示します。 航海の 1 つのコンテナーまたは複数のコンテナーのいずれかに発注書および注文明細行が追加でき、原価は品目明細行に正しく割り当てられます。 
 
 ### <a name="item-ownership"></a>品目の所有権
 

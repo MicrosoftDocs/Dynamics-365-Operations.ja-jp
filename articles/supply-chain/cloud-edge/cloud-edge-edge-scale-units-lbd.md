@@ -4,18 +4,20 @@ description: このトピックでは、カスタム ハードウェアとロー
 author: cabeln
 ms.date: 01/24/2022
 ms.topic: article
+ms.prod: dynamics-365
+ms.service: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1204b65e76c107c29a94a61c321064a87c7571fb
-ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.openlocfilehash: 37bc8678d4e04afebbebaaa893a484866a8643ce
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8024545"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565550"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>LBD を使用したカスタム ハードウェアへのエッジのスケール ユニットの展開
 

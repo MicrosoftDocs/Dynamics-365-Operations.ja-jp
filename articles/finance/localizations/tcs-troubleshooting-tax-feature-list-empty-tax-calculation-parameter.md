@@ -13,22 +13,21 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 5b87499042c9c4bfe76e182b170adf4f1cfeac4b
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ef8158c2ada18e7d132eebbedef559b3f80ab19f
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388567"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612292"
 ---
 # <a name="empty-tax-feature-list-in-tax-calculation-parameters"></a>税計算パラメーター内の空の税機能リスト
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 ## <a name="symptom"></a>現象
 
-Regulatory Configuration Service (RCS) に機能が公開されているので、Microsoft Dynamics 365 Finance で使用することができます 。 ただし、財務を開いて、**税金** \> **設定** \> **税コンフィギュレーション** \> **税計算パラメーター** に移動し、**機能の設定名** フィールドで値を選択しようとする場合、値の一覧は空です。
+Regulatory Configuration Service (RCS) に機能が公開されているので、Microsoft Dynamics 365 Finance で使用することができます。 ただし、財務を開いて、**税金** \> **設定** \> **税コンフィギュレーション** \> **税計算パラメーター** に移動し、**機能の設定名** フィールドで値を選択しようとする場合、値の一覧は空です。
 
 ## <a name="reason"></a>理由
 

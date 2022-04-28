@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 83d19f92984c9f67242946aa8faf445d9d2bd881
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 876f5a5f8ebf77a65ba3aa6271a2957b7dc2cb96
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920203"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570481"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Dynamics 365 Supply Chain Management 10.0.23 (2022 年 1 月) の新機能と変更された機能
 
@@ -57,7 +57,7 @@ ms.locfileid: "7920203"
 | 調達 | 発注書更新履歴をクリーンアップする | この機能を使用すると、発注書の更新に関連する一時的な履歴レコードをクリーンアップできます。 **すべての発注書** ページのアクション ウィンドウに、**購買更新履歴のクリーンアップ** と呼ばれる 新しいボタンが追加されます。 この機能は、既定で有効になっています。 |
 | 生産管理 | (プレビュー) 自動転記されたピッキング リストの倉庫対応材料の自動ピッキング | この機能を使用して、自動転記、派生/一括引き落とし済みピッキング リスト仕訳帳の、在庫分析コードの自動ピッキングと解決ができます |
 | 生産管理 | 予定消費日と対する原材料の有効期限の検証 | この機能により、生産中に使用される原材料のバッチを引当する際に、バッチの有効期限が検証される方法が変更されます。 この機能を有効にすると、バッチ有効期限は、生産 BOM 明細行またはバッチ オーダーのフォーミュラ明細行で設定された予定消費日 (原材料の日付) に対して検証されます。 この機能を無効にすると、バッチ有効期限が、製造オーダーまたはバッチ オーダーの予定出荷日と対して検証されます (以前の日付)。 |
-| 販売とマーケティング | 経過日数に基づいて販売更新履歴をクリーンアップする | この機能を使用すると、**販売更新履歴クリーンアップ** 定期処理タスクの実行時に保持するレコードの最大期間を設定できます。 古いレコードは削除されます。 これは、タスクが実行される日付を基準として常に年数が計算されるので、タスクを定期的に実行するために設定する場合に役立ちます。 この機能を使用しない場合、保持できる最も古いレコードに対する特定の日付だけを設定できます。 |
+| 販売とマーケティング | 経過日数に基づいて販売更新履歴をクリーンアップする | この機能を使用すると、**販売更新履歴クリーンアップ** 定期処理タスクの実行時に保持するレコードの最大期間を設定できます。 古いレコードは削除されます。 これは、タスクが実行される日付を基準として常に年数が計算されるので、タスクを定期的に実行するために設定する場合に役立ちます。 この機能を使用しない場合、保持できる最も古いレコードに対する特定の日付だけを設定できます。 詳細については、[販売履歴データのクリーンアップをスケジュールする](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) を参照してください。 |
 | 販売とマーケティング | "上位 100" の顧客レポートのパフォーマンスを向上する | この機能により、カスタム クエリを許可するのではなく、常にすべての顧客 (その用途) にわたってレポートを実行することで、**上位 100 人** の顧客レポートのパフォーマンスが向上します。 この機能を有効にすると、すべての **含めるレコード** 設定が **上位 100** レポート ダイアログで無効になります。 |
 | 倉庫管理 | 出荷注文の倉庫へのリリースのスケール ユニットのサポート | この機能が有効な場合、出荷注文は、注文を履行するスケール ユニットにハブから直接リリースできます。 |
 
@@ -79,9 +79,9 @@ ms.locfileid: "7920203"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.22 (2021 年 11 月) のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.23 のプラットフォーム更新プログラム (2021 年 11 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

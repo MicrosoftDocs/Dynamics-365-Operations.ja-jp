@@ -10,15 +10,15 @@ ms.search.form: AssetImpairmentCashGenUnitGroup_JP, SysQueryForm, AssetImpairmen
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1dfa8bdb3407c5a8b625a636f52608c4c2eca0633a32b7a076277820c006e827
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44d6ebe7f324b4a5dc6a04c6c6a814ce9f48d622
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761206"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565985"
 ---
 # <a name="create-cgu-group-and-cash-generating-units"></a>CGU グループおよび資産グループの作成
 

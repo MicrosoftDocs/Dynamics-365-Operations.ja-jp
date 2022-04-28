@@ -10,15 +10,15 @@ ms.search.form: AssetTable, AssetComponentList_JP, LedgerJournalTable, LedgerJou
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 03e0a96ac7d891af81c53e6b088d59058fd958e151e05625c2a1a4768219636e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 42b95e71c3174a9d882db340a10d328c06842a75
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743739"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566152"
 ---
 # <a name="use-assemble-list-of-a-fixed-asset"></a>固定資産の組み立て一覧の使用
 

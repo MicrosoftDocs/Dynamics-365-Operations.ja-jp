@@ -10,15 +10,15 @@ ms.search.form: AssetParameters, AssetIdlePeriodAssign_JP, AssetTable, AssetBook
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d6f9974e4112dfff4d38691a1454d5ee9530b3bbcc9ed3e0c17ed244c1f795dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8afa9d0fdbfa699451c3b273f132efbcfc8b6650
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772705"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565614"
 ---
 # <a name="define-asset-idle-period-and-validate-depreciation-process"></a>資産のアイドル期間の定義および減価償却プロセスの検証
 

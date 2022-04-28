@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1e06fafe8d8bbe92ddf4fcd94d7271a1fbb6362a
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 4cd99b1d2c0dbbf48e7eee7e1233e3b078d14ba3
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413603"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603057"
 ---
 # <a name="configure-print-management-record-specific-er-destinations"></a>印刷管理レコード固有の ER 送信先の構成
 
@@ -35,7 +35,7 @@ USMF 社を例に使用して、これらの手順について解説します。
 
 ## <a name="introduction"></a>概要
 
-送信ドキュメントを生成するために使用する ER [形式](general-electronic-reporting.md#FormatComponentOutbound) [構成](general-electronic-reporting.md#Configuration) のファイル出力コンポーネントの各フォルダーに対して、[送信先](electronic-reporting-destinations.md) を構成できます。 このタイプの ER 形式を実行し、適切なアクセス権を持つ場合、実行時に構成した送信先設定を変更することもできます。
+送信ドキュメントを生成するために使用する ER [形式](general-electronic-reporting.md) [構成](general-electronic-reporting.md#Configuration) のファイル出力コンポーネントの各フォルダーに対して、[送信先](electronic-reporting-destinations.md) を構成できます。 このタイプの ER 形式を実行し、適切なアクセス権を持つ場合、実行時に構成した送信先設定を変更することもできます。
 
 Microsoft Dynamics 365 Finance **バージョン 10.0.17 以降** では、ER 形式に対してアクション コードを[設定](er-apis-app10-0-17.md) してユーザーがその ER 形式を実行する際に行うアクションを指定することができます。 たとえば、**売掛金勘定** モジュールでは、印刷管理の設定で、自由書式の請求書などの特定のビジネス ドキュメントを生成する ER 形式を選択できます。 **表示** を選択して請求書をプレビューするか、**印刷** を選択してプリンタに送信できます。 実行時に実行中の ER 形式に対してアクションが渡される場合、[ユーザー アクションごとに異なる ER 送信先を構成](er-action-dependent-destinations.md) できます。
 

@@ -10,15 +10,15 @@ ms.search.form: LedgerConsumptionTaxCalcTrans_JP, LedgerConsumptionTaxReportTran
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bbfce615531315a65bb2a4992ba1e8c64eed90139ce781e6e211829367bac453
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e92c04c5ebbd36eb7aba57ba68e438597ed45c8
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740857"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565499"
 ---
 # <a name="generate-japan-consumption-tax-report"></a>日本消費税レポートの生成
 

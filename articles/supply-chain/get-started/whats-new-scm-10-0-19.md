@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 03ed2d52f44bd38910b01ffbd3767f750da2cbf8
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: f0f1830c9f667d617b8aae28e61a8e541b17c77f
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920576"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570328"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Management バージョン 10.0.19 (2021 年 6 月) の新機能および変更された機能
 
@@ -50,7 +50,7 @@ ms.locfileid: "7920576"
 
 | モジュール | 機能&nbsp;管理の機能&nbsp;名&nbsp; | 詳細 |
 |---|---|---|
-| 販売とマーケティング | 販売履歴クリーンアップ パフォーマンスの向上 | 販売履歴のクリーンアップは、大量の販売更新がある環境で頻繁に実行されない場合、時間がかかることがあります。 時間を短縮し、信頼性を向上させるために、この機能では、限られた期間で実行されるバッチにクリーンアップを分割します。 可能であれば、データベース機能を活用して、ロックを最小限にし、クリーンアップ中にトランザクション テーブルが結合しないようにします。 詳細については、[Sales の履歴クリーンアップ パフォーマンスの改善](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) を参照してください。 |
+| 販売とマーケティング | 販売履歴クリーンアップ パフォーマンスの向上 | 販売履歴のクリーンアップは、大量の販売更新がある環境で頻繁に実行されない場合、時間がかかることがあります。 時間を短縮し、信頼性を向上させるために、この機能では、限られた期間で実行されるバッチにクリーンアップを分割します。 可能であれば、データベース機能を活用して、ロックを最小限にし、クリーンアップ中にトランザクション テーブルが結合しないようにします。 詳細については、[販売履歴データのクリーンアップをスケジュールする](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) を参照してください。 |
 | 販売とマーケティング | 入荷希望日を会社間注文の確認日で更新する | この機能により、会社間直納を使用する場合に、販売日フィールドおよび購入日フィールドの値に何が起こるかを管理できます。 システムが要求日を更新するか、更新をスキップするかを選択できます。 更新をスキップした場合、要求日は顧客が要求したものを表します。 更新を有効にした場合、(配送日管理を使用している場合) 要求日は、最初に顧客が要求したものだけを表します。 配送日管理は、*なし* 以外の場合、最初に要求されたものを変更します。 このオプションは、会社間仕入先または顧客設定で新しい **入荷希望日を確定日で更新** 設定を使用して設定できます。<br><br>この機能が無効の場合、システムは元の販売注文で入荷希望日を配送日管理ルールに基づいて上書きしますが、要求出荷日はそのままです。 |
 | 倉庫管理 | 倉庫へのリリース時に数量を最も近い販売単位に切り捨てる | この機能により、倉庫へのリリース時に注文数量を制限できるオプションが追加されます。 有効にすると、注文数量は最も近い整数の販売単位に切り捨てされ、1 販売単位未満の注文はリリースを拒否されます。 |
 | 倉庫管理 | 組織全体の "作業作成のスケジュール" ウェーブ メソッド | この機能を有効にすると、*作業作成のスケジュール* ウェーブ メソッドは、すべての法人に並行して実行されるように設定されます。 いくつかの追加設定も影響を受けます。 詳細については、[ウェーブ中の作業作成のスケジュール](../warehousing/configure-wave-schedule-work-creation.md) を参照してください。 |
@@ -70,9 +70,9 @@ ms.locfileid: "7920576"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.19 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリ バージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.19 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

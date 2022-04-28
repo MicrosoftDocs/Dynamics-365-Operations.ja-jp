@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
-ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
+ms.openlocfilehash: fcdb5a934818468e00be960f9afe541966e5eabf
+ms.sourcegitcommit: e8a2a1e34fa48a42afac9724828f4ec72b6d7085
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8527316"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8573653"
 ---
 # <a name="get-started-with-financial-reporting"></a>財務諸表の使用を開始する 
 
@@ -138,7 +138,7 @@ ms.locfileid: "8527316"
 
 ## <a name="creating-and-modifying-financial-reports"></a>財務レポートの作成および変更
 
-財務報告リストから、新しいレポートを作成するか、既存のレポートを変更できます。 適切なアクセス許可が付与されると、[アクション] ウィンドウの **新規** を選択して新しい財務諸表を作成できます。 レポート デザイナー プログラムがデバイスにダウンロードされます。 レポート デザイナー プログラムを起動すると、新しいレポートを作成できます。 新しいレポートは保存した後、財務報告リストに表示されます。 このリストには、Dynamics 365 Finance で使用している会社に対して作成されているレポートのみが表示されます。 
+財務報告リストから、新しいレポートを作成するか、既存のレポートを変更できます。 適切なアクセス許可が付与されると、[アクション] ウィンドウの **新規** を選択して新しい財務諸表を作成できます。 レポート デザイナー プログラムがデバイスにダウンロードされます。 レポート デザイナー プログラムを起動すると、新しいレポートを作成できます。 新しいレポートは保存した後、財務報告リストに表示されます。 このリストには、Dynamics 365 Finance で使用している会社に対して作成されているレポートだけが表示されます。 
 
 ## <a name="reporting-tree-definitions"></a>レポート ツリー定義
 
@@ -150,7 +150,7 @@ ms.locfileid: "8527316"
 
 Finance and Operations アプリは毎月更新されます。 ただし、Financial Reporting は、必ずしもその頻度で更新されるわけではありません。 さらに、Finance and Operations アプリの更新を実施する時期については、さまざまな選択肢があります。 Financial Reporting の更新は自動的にインストールされます。 Financial Reporting には、サービス アップデートの実施時、ダウンタイムの開始時に顧客の環境がメンテナンス モードになった時に、顧客の環境で消費されるバージョンが指定されています。 このプロセスは *スリップストリーム* または *トゥルーアップ* と呼ばれるもので、すべての顧客の実装が同じバージョンの Financial Reporting に設定されます。
 
-各バージョンでリリースされる変更は、[Dynamics 365 Finance の新機能、または更新](../../finance/get-started/whats-new-home-page.md)で確認できます。 プラットフォームの更新やバグ修正は、各リリースのページ下部にある 「追加リソース」 セクションで確認できます。
+各バージョンでリリースされる変更は、[Dynamics 365 Finance の新機能、または更新](../../finance/get-started/whats-new-home-page.md) で確認できます。 プラットフォームの更新やバグ修正は、各リリースのページ下部にある 「追加リソース」 セクションで確認できます。
 
 選択されたスリップストリームのバージョンは、レビューと検証が実施済みの Financial Reporting バージョンであり、本番環境に対応しています。 これは、以前または将来のバージョンの Dynamics 365 Finance との互換性があります。 たとえば、顧客がアプリケーションのバージョン 10.0.16 を使用している場合、Financial Reporting の最新の 10.0.19 をビルドできます。
 
@@ -212,7 +212,7 @@ Microsoft サポートとの会話をより効果的にし、より迅速な解�
 次の手順では、Financial Reporting 用にイベント ビューアー メッセージをオンにするプロセスについて説明します。 イベント ビューアが生成するログは、サポート エンジニアが接続の問題の原因をすばやく特定するのに役立ちます。 サポートに連絡するときは、これらのログのコピーをチケットと一緒に提出してください。
 
 
-1. RegisterETW.zip ファイルをクライアント ワークステーション (できればデスクトップ) にコピーし、[RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster) を抽出します。
+1. RegisterETW.zip ファイルをクライアント ワークステーション (できればデスクトップ) にコピーし、[RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122) を抽出します。
 2. Windows イベント ビューアが閉じていることを確認してください。
 3. 管理者 PowerShell コマンドプロンプトを開き、RegisterETW.ps1 が配置されているディレクトリに移動します。
 4. 次のコマンドを実行します : .\RegisterETW.ps1

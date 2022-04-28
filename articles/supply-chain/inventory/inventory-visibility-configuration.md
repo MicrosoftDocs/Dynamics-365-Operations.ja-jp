@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524524"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547791"
 ---
 # <a name="configure-inventory-visibility"></a>在庫の視覚化のコンフィギュレーション
 
@@ -51,9 +51,10 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 | 機能管理名 | Description |
 |---|---|
-| OnHandReservation | この機能では、在庫可視化を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除することができます。 詳細については、[在庫の視覚化引当](inventory-visibility-reservations.md) を参照してください。 |
-| OnHandMostSpecificBackgroundService | この機能は、すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、在庫視覚化から定期的に同期されます。 詳細については、[在庫概要](inventory-visibility-power-platform.md#inventory-summary) を参照してください。 |
-| OnhandChangeSchedule | この機能により、手持在庫変更スケジュールと、納期回答可能在庫 (ATP) 機能が有効になります (オプション)。 詳細については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。 |
+| *OnHandReservation* | この機能では、在庫可視化を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除することができます。 詳細については、[在庫の視覚化引当](inventory-visibility-reservations.md) を参照してください。 |
+| *OnHandMostSpecificBackgroundService* | この機能は、すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、在庫視覚化から定期的に同期されます。 詳細については、[在庫概要](inventory-visibility-power-platform.md#inventory-summary) を参照してください。 |
+| *OnhandChangeSchedule* | このオプション機能により、手持在庫変更スケジュールと、納期回答可能在庫 (ATP) 機能が有効になります。 詳細については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。 |
+| *在庫可視化で在庫品目を有効化* | このオプション機能によって、在庫品目一覧が有効になり、高度な倉庫プロセス (WHS 品目) が有効な品目がサポートされます。 詳細については、[WHS 品目に対応した Inventory Visibility](inventory-visibility-whs-support.md) を参照してください。 |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>サービス エンドポイントを検索する
 
@@ -61,7 +62,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 ## <a name="data-source-configuration"></a>データ ソースの構成
 
-各データ ソースは、データの取得元のシステムを表しています。 データ ソース名の例には、`fno` ("Dynamics 365 Finance and Operations アプリ" の略) および `pos` ("販売時点管理" の略) が含まれます。 既定では、Supply Chain Management が在庫視覚化の既定のデータ ソース (`fno`) として設定されます。
+各データ ソースは、データの取得元のシステムを表しています。 データ ソース名の例には、`fno` ("Dynamics 365 財務と運用アプリ" の略) および `pos` ("販売時点管理" の略) が含まれます。 既定では、Supply Chain Management が在庫視覚化の既定のデータ ソース (`fno`) として設定されます。
 
 > [!NOTE]
 > `fno` データ ソースは Supply Chain Management 用に予約されています。 在庫の可視性アドインが Supply Chain Management 環境と統合されている場合は、データソースの `fno` に関連する設定を削除しないことをお勧めします。

@@ -10,15 +10,15 @@ ms.search.form: AssetRetirementObligationDocument_JP, AssetTable, AssetRetiremen
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 948a48ebbd22b25ed6a626ddef5ba4fe013eaa2bf8dc8727b6b8a6aaa8216a8a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9c690967f8eb33deeee192e103b5f8cb811f255
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729526"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565501"
 ---
 # <a name="set-up-asset-retirement-obligation-documents-and-enter-aro-amount-on-a-fixed-asset"></a>資産除去責務ドキュメントの設定と固定資産の ARO 金額の入力
 

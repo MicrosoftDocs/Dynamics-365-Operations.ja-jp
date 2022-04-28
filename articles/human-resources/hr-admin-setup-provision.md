@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c856bca32c3dee44469c098961d85b4d8cb70a6
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060427"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565631"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -40,6 +40,10 @@ ms.locfileid: "8060427"
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Human Resources 試用環境のプロビジョニング
 
+>[!NOTE]
+> 2022 年 4 月から、Human Resources 試用環境は、スタンドアロン アプリケーションでは使用できません。 財務と運用アプリ内の Human Resources 機能の評価に関心を持つ潜在顧客は、30 日間の無料試用版をデモ データと共に使用できます。 Dynamics 365 Finance には、スタンドアロン アプリケーションのマージを通じて Finance インフラストラクチャに提供される Human Resources 機能が含められます。 詳細については、[HR 製品のマージによる顧客向け機能の統合](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) を参照してください。Dynamics 365 Finance の試用の詳細については、ステップ バイ ステップ [ガイド](/fin-ops/get-started/before-you-buy) を参照してください。 
+
+
 最初のサンドボックス環境または運用環境をプロビジョニングする前に、[Human Resources 試用環境](https://go.microsoft.com/fwlink/p/?LinkId=2115962)をプロビジョニングして、Human Resources の機能を検証することができます。 試用環境には、安全にプログラムを活用するために使用する架空のデータが含まれます。 試用環境は要求したユーザーにより所有されていますが、人事管理のシステム管理経験を通じて他のユーザーも招待できます。 
 
 試用版環境では、人事管理環境へのアクセス権がまだないユーザーの人事管理機能を評価できます。 試用環境をプロビジョニングする際に、認証されたユーザーが既に 1 つ以上の既存の人事管理環境へのアクセス権がある場合、ユーザーは既存の環境または環境のリストにリダイレクトされます。
@@ -58,7 +62,7 @@ Human Resources 試用環境を作成すると、テナントに Power Apps 試�
 追加環境に関する考慮事項:
 
 - **データ移行** : サンドボックス環境をプロジェクト全体でテストに使用できるようにするために、データ移行活動に使用する追加環境が必要となる場合があります。 環境を追加することにより、テストと構成の活動が別の環境で同時に行われている間も、データ移行活動を継続することができます。
-- **統合** : 統合を構成してテストする際に、追加の環境が必要となる可能性があります。 これには、Ceridian Dayforce LinkedIn Talent Integrations などのネイティブ統合や、給与、申請者追跡システム、福利厚生システムやプロバイダなどのカスタム統合が含まれます。
+- **統合** : 統合を構成してテストする際に、追加の環境が必要となる可能性があります。 これには、Ceridian Dayforce または LinkedIn Talent Integrations などのネイティブ統合や、給与、申請者追跡システム、福利厚生システムやプロバイダなどのカスタム統合が含まれます。
 - **トレーニング** : 新しいシステムを使用して従業員をトレーニングする際に、一連のトレーニング データを使用して別の環境が必要となる場合があります。 
 - **複数フェーズのプロジェクト** : プロジェクトの最初の移動後に計画されているプロジェクト フェーズで構成、データ移行、テスト、その他の活動に対応するにあたって、追加の環境が必要となる場合があります。
 

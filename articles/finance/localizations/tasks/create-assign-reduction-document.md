@@ -10,15 +10,15 @@ ms.search.form: AssetReductionEntryProfile_JP, AssetTable, AssetBook
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bf2d78b31f0bbd1afe678e85a683c53fa940a9b6516660eefe34e17aa94287e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec1527bfa35d05b977b8678706606f64bf75f2dc
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779780"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565644"
 ---
 # <a name="create-and-assign-a-reduction-entry-document-for-a-government-grant-subsidy"></a>政府助成金の圧縮記帳ドキュメントの作成および割り当て
 

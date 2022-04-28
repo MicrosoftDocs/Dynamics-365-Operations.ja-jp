@@ -10,15 +10,15 @@ ms.search.form: LedgerParameters, LedgerBadDebtAccounts_JP, OMLegalEntity, TaxTa
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ca11ac64fcb83ec6f5659fd43f37505298ea3af10243b5c4c7ec071387854e7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1974b172d0b644980d252b4c4f9e70770924fdaf
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782182"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566072"
 ---
 # <a name="setup-japan-consumption-tax-report"></a>日本の消費税レポートの設定
 

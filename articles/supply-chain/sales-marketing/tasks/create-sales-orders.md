@@ -2,7 +2,7 @@
 title: 販売注文を作成する。
 description: この手順では、販売注文を作成する方法を示します。
 author: Henrikan
-ms.date: 06/25/2019
+ms.date: 04/06/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5746fa0ab9fd7ef3e288adc88a755324309a27c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 462f47ab5d85665ed8132e5bfb6dd945c537c1ef
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566314"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551727"
 ---
 # <a name="create-sales-orders"></a>販売注文を作成する。
 
@@ -64,7 +64,9 @@ ms.locfileid: "7566314"
     
     **合計** ページは、注文全体に関する詳細を表示します。 これには、小計金額が含まれます。小計金額は、明細行割引を加味して調整された明細行の正味金額、注文レベルの割引を加味して調整済の合計請求金額、手数料、売上税、顧客の与信限度額の条件、およびその他の金額の合計です。 請求金額は、顧客の請求書に表示される金額です。  
     
-3. **OK** を選択します。
+3.  **OK** を選択します。
 
+## <a name="sales-order-creation-performance-enhancement"></a>販売注文の作成パフォーマンスの向上
+アプリケーション 10.0.26 バージョンで導入された新しい機能により、**SourceDocumentHeader** および **SourceDocumentLine** の各テーブルに対する余分なレコードの作成が減少します。 レコードが作成されないので、パフォーマンスが向上し、記憶域のサイズが小さくなります。 これらの基になるソース ドキュメント フレームワーク テーブルは、現時点では製品の販売注文に使用されません。利用される予定もありません。 この機能の有効化は、パフォーマンス向上のための安全な変更と見なすことができます。 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

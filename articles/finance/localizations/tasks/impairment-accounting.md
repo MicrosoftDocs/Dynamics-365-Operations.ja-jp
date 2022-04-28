@@ -10,15 +10,15 @@ ms.search.form: AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 25368e679cf12aa3eceffde0f97d8bea8672f8f9a50c413b2bbadc795fc7c34f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 345d84dd9dd1688030f8cc0b530f82e59e09fd66
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782796"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565901"
 ---
 # <a name="setup-impairment-accounting-common-parameters-and-posting-profile"></a>減損会計の共通パラメーターおよび転記プロファイルの設定
 

@@ -2,19 +2,19 @@
 title: 一般的なトラブルシューティング
 description: このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062341"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554602"
 ---
 # <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
@@ -29,20 +29,31 @@ ms.locfileid: "8062341"
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Dataverse のプラグイン トレース ログを有効にして確認し、エラーの詳細を表示します
 
+追跡ログは、Finance + Operations と Dataverse の間のデュアル書き込みライブ同期の問題をトラブルシューティングする場合に便利です 。 ログは、Dynamics 365 の技術およびエンジニアリング サポートを提供するチームに具体的な詳細を提供できます。 この記事では、追跡ログを有効にする方法と、追跡ログを表示する方法について説明します。 追跡ログは、Dynamics 365 設定ページで管理され、変更および表示するには管理者レベルの特権が必要です。 
+
 **トレース ログを有効にするために必要な役割とエラーの表示:** システム管理者
 
+### <a name="turn-on-the-trace-log"></a>追跡ログを有効にする
 トレース ログを有効にするには、次の手順に従います。
 
-1. Customer Engagement アプリにログインし、**設定** ページを開いてから、**システム** で **管理者** を選択します。
-2. **管理者** ページで、**システム管理** を選択します。
-3. **カスタマイズ** タブの **プラグインおよびユーザー定義ワークフロー活動の追跡** 列で、**すべて** を選択してプラグインのトレース ログを有効にします。 例外が発生したときにのみトレースログを記録する場合は **例外** を選択します。
+1.  Dynamics 365 にログオンし、トップ ナビゲーションバーで **設定** を選択します。 システム ページで、**管理** をクリックします。
+2.  管理ページで、**システム設定** をクリックします。
+3.  **カスタマイズ** タブとプラグインを選択し、カスタム作業フロー活動追跡セクションで、ドロップダウンを **すべて** に変更します。 これにより、すべての活動が追跡され、潜在的な問題を確認する必要があるチームに包括的なデータ セットが提供されます。
 
+> [!NOTE]
+> ドロップダウンを **例外** に設定すると、例外 (エラー) が発生したときにのみ追跡情報が提供されます。
 
+有効にすると、この場所に戻って **オフ** を選択することにより手動でオフにするまで、プラグイン追跡ログが収集され続けます。
+
+### <a name="view-the-trace-log"></a>トレース ログの表示
 トレースログを確認にするには、次の手順に従います。
 
-1. Customer Engagement アプリにログインし **設定** ページを開いてから、**カスタマイズ** で **プラグイン トレース ログ** を選択します。
-2. **タイプ名** 列が **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin** に設定されているトレース ログを検索します。
-3. 完全なログを表示するには、項目をダブルクリックし、**実行** ファストタブで **メッセージ ブロック** のテキストを確認します。
+1. Dynamics 365 設定ページのトップ ナビゲーションバーで **設定** を選択します。 
+2. ページの **カスタマイズ** セクションで **プラグイン トレース ログ** を選択します。
+3. 追跡ログの一覧には、名前のタイプやメッセージ名に基づくエントリが表示されます。
+4. 目的のエントリを開き、ログ全体を表示します。 実行セクションのメッセージ ブロックには、プラグインに関する情報が表示されます。 可能な場合は、例外の詳細も提供されます。 
+
+追跡ログの内容をコピーしてメモ帳などの別のアプリケーションに貼り付け、ログやテキスト ファイルを表示すると、すべてのコンテンツを簡単に把握できます。 
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>デバッグ モードを有効にして、財務と運用アプリでのライブ同期に関する問題のトラブルシューティングを行います
 
@@ -69,6 +80,34 @@ Dataverse で発生するデュアル書き込みエラーは、財務と運用�
 5. イベント ビューアーを開きます。
 6. **アプリケーションとサービス ログ \> Microsoft \> Dynamics \> AX-DualWriteSync \> オペレーション** を選択します。
 7. 最近発生したエラーの一覧を確認します。
+
+## <a name="dual-write-ui-landing-page-showing-blank"></a>空白が表示されたデュアル書き込み UI ランディング ページ
+Microsoft Edge または Google Chrome ブラウザーでデュアル 書き込みページを開くと、ホーム ページが読み込まれず、空白のページや "問題が発生しました" などのエラーが表示されます。
+開発者ツールのコンソール ログにエラーが表示されます。
+
+>bundle.eed39124e62c58ef34d2.js:37 DOMException: 'Window' から 'sessionStorage' プロパティを読み取れません: このドキュメントへのアクセスが拒否されました。 at t.storeInSessionStorage (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:16:136860 ) at new t (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:69:20103 ) at ci (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:44115 ) at Eo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:58728 ) at jo (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:65191 ) at Nr (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:84692 ) at Or (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:85076 ) at Ss (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91750 ) at vs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130 ) at hs (https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151 )
+
+UI では、ブラウザーのセッション記憶域を使用して、ホーム ページを読み込む一部のプロパティ値が格納されます。 これが機能するには、サイトのブラウザーでサード パーティの Cookie を許可する必要があります。 このエラーは、UI がセッション記憶域にアクセスできないことを示しています。 この問題が発生するシナリオは次の 2 つです。
+
+1.  Edge/Chrome の Incognito モードで UI を開いており、Incognito でサード パーティ Cookie がブロックされている。
+2.  Edge/Chromeでサード パーティの Cookie を完全にブロックしている。
+
+### <a name="mitigation"></a>軽減策
+ブラウザーの設定で、サード パーティ Cookie を許可する必要があります。
+
+### <a name="google-chrome-browser"></a>Google Chrome ブラウザー
+1 つ目のオプション:
+1.  アドレス バーに chrome://settings/ と入力することで設定に移動し、[プライバシーとセキュリティ] -> [Cookie と他のサイトのデータ] に移動します。
+2.  [すべての Cookie を許可する] を選択します。 この操作を実行しない場合、2 つ目のオプションに進みます。
+
+2 つ目のオプション:
+1.  アドレス バーに chrome://settings/ と入力することで設定に移動し、[プライバシーとセキュリティ] -> [Cookie と他のサイトのデータ] に移動します。
+2.  [Incognito でサード パーティの Cookie をブロックする] または [サード パーティの Cookie をブロックする] を選択した場合、[Cookie を常に使用するサイト] に移動し、**追加** をクリックします。 
+3.  財務と運用アプリのサイト名 (https://<your_FinOp_instance>.cloudax.dynamics.com) を追加します。 必ず、[すべての Cookie。このサイトでのみ] チェック ボックスをオンにしてください。 
+
+### <a name="microsoft-edge-browser"></a>Microsoft Edge ブラウザー
+1.  [設定] -> [サイトのアクセス許可] -> [Cookie とサイトのデータ] に移動します。
+2.  [サード パーティの Cookie をブロックする] をオフにします。  
 
 ## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>財務と運用アプリから、別の Dataverse 環境をリンク/リンク解除する方法
 
@@ -97,14 +136,14 @@ Dynamics 365 Sales で販売注文を作成する際に、**+ 製品の追加** 
 
 サポート チームは、いくつかの問題をトラブルシューティングするために、ネットワーク トレースを確認する必要がある場合があります。 ネットワーク トラックを作成するには、次の手順を実行します。
 
-### <a name="chrome"></a>Chrome
+### <a name="google-chrome-browser"></a>Google Chrome ブラウザー
 
 1. 開いたタブで **F12 キー** を押すか **開発者ツール** を選択して開発者ツールを開きます。
 2. **ネットワーク** タブを開き、フィルターのテキスト ボックスに **integ** と入力します。
 3. シナリオを実行し、ログに記録されている要求を遵守します。
 4. エントリを右クリックし、**すべてをコンテンツ付きの HAR として保存** を選択します。
 
-### <a name="microsoft-edge"></a>Microsoft Edge
+### <a name="microsoft-edge-browser"></a>Microsoft Edge ブラウザー
 
 1. 開いたタブで **F12 キー** を押すか **開発者ツール** を選択して開発者ツールを開きます。
 2. **ネットワーク** タブを開きます。

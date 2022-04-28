@@ -10,15 +10,15 @@ ms.search.form: AssetDepreciationProfile,  AssetPosting
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de8d067f993da08085104cdc10696e3d84180096626aff0fe072dae52fcaf4ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21df806e9abc0612d4146c98aa37049123f60cab
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764202"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565514"
 ---
 # <a name="configure-depreciation-profile-and-posting-profile-for-additional-depreciation"></a>割増償却に対する減価償却プロファイルおよび転記プロファイルのコンフィギュレーション
 

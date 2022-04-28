@@ -10,15 +10,15 @@ ms.search.form: AssetImpairmentRecognitionTest_JP, SysQueryForm, AssetImpairment
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8b5fb158d8e56f7263be9892c079d025fe763a7c707f285762286d66ed8f6f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b53f53ff19c0ae79e976b8d96a08dd46bca9ac4
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742842"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565570"
 ---
 # <a name="run-the-recognition-test-and-calculate-the-impairment-amount-on-individual-assets"></a>認識テストの実行と個別資産の減損損失の計算
 

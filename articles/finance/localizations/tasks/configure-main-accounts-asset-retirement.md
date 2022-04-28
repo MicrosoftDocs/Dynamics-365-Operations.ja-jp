@@ -10,15 +10,15 @@ ms.search.form: AssetPosting, AssetDiscountRateSchedule_JP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cd85a8edd539a8158457a09bca49bd1718bb074396d2d0a1dbd970f6a81090be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 333f8528f4ff0a0f29511f6430613f36c8e3f5a0
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756214"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565610"
 ---
 # <a name="configure-main-accounts-for-asset-retirement-obligation-posting-and-market-discount-rates"></a>資産除去責務の転記および市場割引率のための主勘定のコンフィギュレーション
 

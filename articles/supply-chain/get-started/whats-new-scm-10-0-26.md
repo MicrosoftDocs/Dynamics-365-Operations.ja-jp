@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 2b39eef816aaa383f0f8cbf1b2c308a6eafebd8f
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 996988b1a4d59ae9ad7b4031e492824c0a6abc95
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524440"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547876"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Management 10.0.26 のプレビュー (2022 年 5 月)
 
@@ -34,7 +34,7 @@ ms.locfileid: "8524440"
 
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |---|---|---|---|
-| 在庫および物流 | [高度な倉庫管理品目をサポートする在庫可視性の手持在庫に対するクエリ](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | 間もなく公開 | 機能管理:<br>*在庫可視化で在庫品目を有効化* |
+| 在庫および物流 | [高度な倉庫管理品目をサポートする在庫可視性の手持在庫に対するクエリ](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [WHS 品目に対応した在庫可視化](../inventory/inventory-visibility-whs-support.md) | 機能管理:<br>*在庫可視化で在庫品目を有効化* |
 | 在庫および物流 | [在庫の可視化アドインの納期回答可能在庫](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Inventory Visibility の手持変更スケジュールと納期回答可能在庫](../inventory/inventory-visibility-available-to-promise.md) | サービス コンフィギュレーションによって有効 |
 | 製造 | [生産現場の実行インターフェイスの CW 品目](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*(プレビュー) 生産現場の実行インターフェイスからの CW 品目に関するレポート* |
 | 製造 | 生産現場の実行インターフェース上の [自分の職務] タブ <!-- KFM: Add link to release plan when available --> | [生産現場の実行インターフェイスを作業者が使用する方法](../production-control/production-floor-execution-use.md) | 機能管理:<br>*生産現場の実行インターフェース上の [自分の職務] タブ* |
@@ -51,7 +51,7 @@ ms.locfileid: "8524440"
 | 調達 | 会社間販売および発注書明細行の追跡用分析コードを同期化する | この機能により、シリアル番号とバッチ番号の追跡分析コードを、会社間販売注文書明細行と会社間購買注文明細行間で同期するかどうかを制御できます。 また、顧客および仕入先の **会社間** 設定ページの **発注書ポリシー** タブと **販売注文ポリシー** タブに新しい設定が追加されます。 また、関連する多くの関連設定や関連する設定の名前が更新されます。<br><br>高度な倉庫管理 (WMS) を使用している場合は、この機能ではバッチとシリアル番号が対象宛先予約階層の場所より上にある場合にのみ、同期されることに注意してください。 |
 | 製品情報管理 | 製品属性値のクリーンアップ | この機能により、**製品属性値のクリーンアップ** という定期的なタスクが追加され、製品カテゴリを介して製品に関連付けられなくなった製品属性値レコードがクリーンアップされます。 |
 | 在庫および倉庫管理 | (ロシア) WMS 対応品目を含む発注書に対して GTD を発行する際に不一致を回避する | この機能はロシアのローカライズ専用です。 この機能は、高度な倉庫管理 (WMS) が有効になっている品目を含む輸入発注書に対してロシア関税申告番号 (GTD) を発行するときに発生する不一致を回避します。 GTD 発行プロセスでは、カスタム仕訳帳に含まれる請求書に関連する在庫トランザクションの一部の在庫分析コード値を変更します。その結果、発注書の作業レコードと購買の在庫トランザクション間に不一致が生じます。 この機能が有効な場合、GTD 発行プロセスではそのような不一致を解消する調整作業を生成します。 |
-| 倉庫管理 | GS1 バーコードの拡張パーサー | この機能により、GS1 記号データ用拡張パーサーの使用を有効にします。 新しいパーサーは、GS1 記号を解析するための GS1 一般仕様アルゴリズムを実装し、データの正確性を確認するためのより強力な検証機能を備えています。 |
+| 倉庫管理 | GS1 バーコードの拡張パーサー | この機能により、GS1 記号データ用拡張パーサーの使用を有効にします。 新しいパーサーは、GS1 記号を解析するための GS1 一般仕様アルゴリズムを実装し、データの正確性を確認するためのより強力な検証機能を備えています。 詳細については、[GS1 バーコード スキャニング](../warehousing/gs1-barcodes.md) をご覧ください。 |
 | 倉庫管理 | 新しい積荷計画ワークベンチ ページ | 2 つの新しい積荷計画ワークベンチ ページを追加しました: **入庫積荷計画ワークベンチ** と **出庫積荷計画ワークベンチ**。 |
 | 倉庫管理 | 倉庫管理アプリケーション - 空白の GTD | この機能はロシアのローカライズ専用です。 このオプションを使用すると、Warehouse Management モバイル アプリを使用する作業者は、必要に応じて [ロシア関税申告番号] 番号 (GTD) を空白のままにできます。 GTD 追跡用分析コードで空白の値を許可設定している場合、手持ち在庫がある場合に在庫操作の GTD の在庫操作に空白の値を使用できるようになります。 |
 
@@ -68,7 +68,7 @@ ms.locfileid: "8524440"
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.26 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.26 (2022 年 5 月) のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md)を参照してください。<!-- KFM Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.26 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.26 (2022 年 5 月) のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md)を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

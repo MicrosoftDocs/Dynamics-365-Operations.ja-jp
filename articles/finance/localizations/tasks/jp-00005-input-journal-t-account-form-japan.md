@@ -10,15 +10,15 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransD
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e08bb8f0a8b802af79d23a7eaa8f1ae1e6179ea9bfce321966ba41c4ef6bde7a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f020b4c3f2bdd2bf3b657a242eead827e1bb733b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775055"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565982"
 ---
 # <a name="jp-00005-input-journal-in-t-account-form-japan"></a>JP-00005 T 勘定フォームでの仕訳帳入力 (日本)
 

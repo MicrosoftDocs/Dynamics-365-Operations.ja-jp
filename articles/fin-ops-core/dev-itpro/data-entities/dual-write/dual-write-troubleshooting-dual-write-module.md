@@ -2,19 +2,19 @@
 title: 財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング
 description: このトピックでは、財務と運用アプリのデュアル書き込みモジュールの問題修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061811"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565969"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング
 
@@ -70,6 +70,21 @@ Root activity ID: \<your root activity\> id
 このエラーは、リンクされた Dataverse 環境が使用できない場合に発生します。
 
 この問題を修正するには、チケットを作成してデータ統合チームに問い合わせてください。 データ統合チームがマッピンがバックエンドで **実行されていない** ことを識別できるように、ネットワークのトレースを添付してください。
+
+## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>パフォーマンスを向上させるために財務と運用アプリでの並列処理を有効にする
+
+並行処理を有効にすると、財務と運用アプリから Customer Engagement アプリおよび Microsoft Dataverse にデータをインポートする時間が短縮されます。 
+
+財務と運用アプリでの並列処理を有効にするには、次の手順に従います。
+
+1. 財務と運用環境にログインします。
+2. **データ管理 > フレームワーク パラメーター** の順に移動します。
+3. **エンティティ設定** を選択し、**エンティティ実行パラメーターの構成** を選択します。
+4. 並行処理用のパラメーターを追加します。
+    - **インポートしきい値レコード数** – 並列処理が有効になる前に満たされている必要があるレコードの数。
+    - **インポート タスク数** – 並列で実行するスレッド (タスク) の数です。
+5. **保存** を選択します。
+
 
 ## <a name="errors-while-trying-to-start-a-table-mapping"></a>テーブル マッピングの開始中に発生するエラー
 

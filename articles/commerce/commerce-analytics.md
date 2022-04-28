@@ -8,12 +8,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349746"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550010"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce 分析 (プレビュー)
 
@@ -352,15 +352,20 @@ eコマース サイトの匿名の訪問者は、ユーザーが使用してい
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a>Commerce分析の有効化と構成 (プレビュー)
 
-Commerce分析 (プレビュー) をインストールするには、Azure サブスクリプションのリソースを作成するアクセス許可が必要です。 LCSに にアドインをインストールする権限も必要となります。 
+Commerce分析 (プレビュー) をインストールするには、Azure サブスクリプションのリソースを作成するアクセス許可が必要です。 LCSに にアドインをインストールする権限も必要となります。
 
 Commerce 分析 (プレビュー) を有効にして設定するには、次の手順に従います。
 
-1. [Data Lake へのエクスポート アドインの有効化と構成](#enableExportToDataLake)。
-1. [Azure Synapse workspace をインストールして構成します](#configureAzureSynapse)。
-1. [キー コンテナーにシークレットを追加する](#addSecrets)。
-1. [Commerce analytics (プレビュー) の有効化と構成をします](#enableCommerceAnalyticsAddin)。
-1. [Power BI テンプレート アプリをインストールします](#powerbi).
+1. [Commerce 分析 (プレビュー) のプレビュー サブリンク フォームを送信する](#joinPreview)
+2. [Data Lake へのエクスポート アドインの有効化と構成](#enableExportToDataLake)。
+3. [Azure Synapse workspace をインストールして構成します](#configureAzureSynapse)。
+4. [キー コンテナーにシークレットを追加する](#addSecrets)。
+5. [Commerce analytics (プレビュー) の有効化と構成をします](#enableCommerceAnalyticsAddin)。
+6. [Power BI テンプレート アプリをインストールします](#powerbi).
+
+### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a>Commerce 分析 (プレビュー) 用の取り込みフォームを送信する
+
+[Commerce 分析 (プレビュー) のプレビュー サブリンク フォーム](https://forms.office.com/r/vW5VLJGXZ2)を送信します。 要求の処理後は、フォームに入力されたメールアドレスに確認メールが送信されます。
 
 ### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a>Data Lake へのエクスポート アドインの有効化と構成
 

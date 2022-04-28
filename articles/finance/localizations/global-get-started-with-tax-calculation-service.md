@@ -2,7 +2,7 @@
 title: 税の計算の使用を開始する
 description: このトピックでは、税の計算を設定する方法について説明します。
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 61ee15901a091ee733b83c8cbaa5b84801fa8e5d
+ms.sourcegitcommit: 4afd1e0b325d27cd7c4e0d9a198400b038262ac7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952524"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "8558316"
 ---
 # <a name="get-started-with-tax-calculation"></a>税の計算の使用を開始する
 
@@ -36,7 +36,7 @@ ms.locfileid: "7952524"
 
 ## <a name="high-level-design"></a>高レベル設計
 
-### <a name="runtime-design"></a>ランタイム デザイン
+### <a name="runtime-design"></a><a name="runtime"></a> ランタイム デザイン
 
 次の図は、税金計算の高いレベルのランタイム デザインを示しています。 税金計算は複数の Dynamics 365 アプリと統合可能なので、この図では財務との統合を例に示しています。
 
@@ -95,6 +95,14 @@ ms.locfileid: "7952524"
 - 次の機能は、展開された RCS 環境の **機能管理** ワークスペースで有効になっている必要があります。
 
     - グローバリゼーション機能
+
+- 必要に応じて、次のロールが RCS 環境のユーザーに割り当てられる必要があります。
+
+    - 電子申告開発者
+    - グローバリゼーション機能の開発者
+    - 税エンジン開発者
+    - 税エンジン機能コンサルタント
+    - 税サービスの開発者
 
 ## <a name="set-up-tax-calculation-in-lcs"></a>LCS で、税計算を設定します
 
@@ -201,8 +209,11 @@ ms.locfileid: "7952524"
     | ---------------- | --------- | ------- | ------------ |
     | 販売注文            | DEU       | DEU     | DEU_Domestic |
     | 販売注文            | DEU       | FRA     | DEU_EU       |
-    | 販売注文            | BEL       | BEL     | BEL_Domestic |
-    | 販売注文            | BEL       | FRA     | BEL_EU       |
+    | 営業            | BEL       | BEL     | BEL_Domestic |
+    | 営業            | BEL       | FRA     | BEL_EU       |
+    
+    > [!NOTE]
+    > 課税対象ドキュメント明細行の既定の消費税グループが正しい場合、このマトリックスを空白のままにします。 詳細については、このトピックにある [ランタイム デザイン](#runtime) セクションを参照してください。
 
 22. **品目別税グループの適用性** タブで、正しい税コードを決定するために必要な列を選択し、**追加** を選択します。 各列の値を入力または選択します。 **品目別税グループ** フィールドはこのマトリックスの出力です。 このタブに何も設定されていない場合は、トランザクション行の品目別売上税グループが使用されます。
 
@@ -210,8 +221,11 @@ ms.locfileid: "7952524"
 
     | 品目コード | 品目別税グループ |
     | --------- | -------------- |
-    | D0001     | 満載           |
+    | D0001     | 全           |
     | D0003     | 減額率        |
+
+    > [!NOTE]
+    > 課税対象ドキュメント明細行の既定の品目消費税グループが正しい場合、このマトリックスを空白のままにします。 詳細については、このトピックにある [ランタイム デザイン](#runtime) セクションを参照してください。
 
     税計算で税コードを決定する方法の詳細については、[売上税グループと品目別売上税グループ決定のロジック](global-sales-tax-group-determination.md) を参照してください。
 

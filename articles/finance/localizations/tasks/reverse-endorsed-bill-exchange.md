@@ -10,15 +10,15 @@ ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseReve
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b09bfd8c353942536c57df8557149a86dcc17bc93fc789fb0f18f7a04f221f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b89bf34d70863bdcade50331c6fced971236505
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719663"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565604"
 ---
 # <a name="reverse-an-endorsed-bill-of-exchange"></a>裏書済受取手形の取消
 

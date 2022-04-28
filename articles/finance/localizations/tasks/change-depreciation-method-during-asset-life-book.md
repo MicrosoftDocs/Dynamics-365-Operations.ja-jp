@@ -10,15 +10,15 @@ ms.search.form: AssetBookTable, AssetGroupBookSetup, AssetDepProfileChangeApply_
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e86eeb121e33856397c95e10b08b67be1bfef2821336893e5c16b053ebc6d6dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 640e381358c63dc0bda8e6dd60bf4e0f298c647b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782798"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565566"
 ---
 # <a name="change-the-depreciation-method-during-the-asset-life-for-book"></a>帳簿の資産耐用年数期間中の減価償却方法の変更
 

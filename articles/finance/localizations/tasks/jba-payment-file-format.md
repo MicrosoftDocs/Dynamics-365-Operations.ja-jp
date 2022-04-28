@@ -10,15 +10,15 @@ ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport,  VendP
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0a14f23ada0aa320493085be60f126eb3d071532ee73d27caebd2070a8cab72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6500f14ac2028a1a01a271bb91f14e48d1667fce
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764999"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565529"
 ---
 # <a name="enable-the-jba-payment-file-format"></a>JBA 支払ファイル形式の有効化
 

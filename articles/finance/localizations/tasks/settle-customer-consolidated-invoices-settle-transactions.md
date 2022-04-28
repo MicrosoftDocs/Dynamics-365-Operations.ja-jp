@@ -10,15 +10,15 @@ ms.search.form: CustConsInvoice_JP, CustTable, CustOpenTrans
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Japan
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b0f631e7c031af16e49fd48075febae4c2b37430036154c5861c4f0fa14d398f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a902096ac67163ce34f58edc3dc146a7e93907fd
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735413"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565839"
 ---
 # <a name="settle-customer-consolidated-invoices-by-using-settle-transactions"></a>決済トランザクションを使用した顧客月次締め請求書の決済
 

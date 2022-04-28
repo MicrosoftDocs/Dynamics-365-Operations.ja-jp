@@ -2,7 +2,7 @@
 title: 支払いモジュール
 description: このトピックでは、支払いモジュールについて取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
-ms.date: 01/07/2022
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952472"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565732"
 ---
 # <a name="payment-module"></a>支払モジュール
 
@@ -74,6 +74,8 @@ PayPal 支払コネクタは、すべての請求書関連情報が、その iFr
 | 支払スタイルの上書き | カスケード スタイル シート (CSS) コード | 支払モジュールは iframe でホストされるため、スタイル機能が制限されます。 このプロパティを使用すると、何らかのスタイルを実現できます。 サイト スタイルをオーバーライドするには、CSS コードをこのプロパティの値として貼り付ける必要があります。 サイト ビルダー CSS が上書きし、スタイルはこのモジュールには適用されません。 |
 |サポートされている支払/入金タイプ| 文字列| 複数の支払コネクタが構成されている場合は、サポートされている支払/入金タイプ文字列を Commerce 本社支払コネクタ コンフィギュレーションで定義されているとおりに提供する必要があります (次の画像を参照)。 空白の場合、既定では Adyen 支払コネクタになります。 Commerce リリース 10.0.14 に追加されました。|
 |基本支払|  **True** または **False** | **True** の場合、すべてのエラー メッセージは、チェックアウト ページの基本支払コネクタから生成されます。 Adyen と PayPal の両方の支払コネクタがコンフィギュレーションされている場合は、Commerce リリース 10.0.14 で追加された Adyen を **True** に設定します。|
+|コネクタ ID を使用する| **True** または **False** | サイトに複数の支払コネクタが構成されている場合、このプロパティを使用します。 **True** の場合、コネクタはコネクタ ID を支払相関関係に使用する必要があります。|
+|iFrame のブラウザー セット言語コードの使用|  **True** または **False** | (Adyen のみ) **True** の場合、Adyen iFrame はサイトに対して構成された Commerce チャンネルの言語コードを使用するのではなく、サイト ユーザーのブラウザー コンテキストに基づいて言語を表示します。 Commerce リリース 10.0.27 に追加されました。|
 
 次の図は、Commerce 本社の支払コネクタのコンフィギュレーションで "PayPal" に設定されている、**サポートされている支払/入金タイプ** の値の例を示しています。
 ![Commerce 本社でサポートされている支払/入金タイプの例。](./media/ecommerce-paymenttendertypes.png)
