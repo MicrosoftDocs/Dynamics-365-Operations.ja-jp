@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 70fb8448241eff111d38e65e675eb04b96619a168699ebfa6cd90a83ed4a1b7b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 41fb8062e5085c0de0da322e69b139dea1e8564f
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745850"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547956"
 ---
 # <a name="set-up-configuration-manager"></a>構成マネージャーの設定
 
@@ -85,7 +85,7 @@ ms.locfileid: "6745850"
 > [!IMPORTANT]
 > プロジェクトおよび環境のシステム診断のローカル コンポーネントを既にインストールしている場合、**プログラムの追加と削除** を使用し、アンインストールする必要があります。 検出されたインスタンスの数にかかわらず、環境ごとに 1 つの Microsoft Dynamics AX Application Object Server (AOS) だけが、コンフィギュレーションの管理と共に使用されます。
 
-1.  システム診断のローカル コンポーネントをインストールします。 詳細については、[システム診断のインストールと実行](./ax-2012/install-run-system-diagnostics-lcs.md) を参照してください。 重要: この beta リリースでは、システム診断のサービス アカウントを AX 2012 R3 の sysadmin ロールに追加する必要があります。
+1.  システム診断のローカル コンポーネントをインストールします。 詳細については、[システム診断のインストールと実行](/dynamicsax-2012/appuser-itpro/install-run-system-diagnostics) を参照してください。 重要: この beta リリースでは、システム診断のサービス アカウントを AX 2012 R3 の sysadmin ロールに追加する必要があります。
 2.  **開始** &gt; **Microsoft Dynamics AX Lifecycle Services 診断サービス検索の順にクリックします**。
 3.  **環境の検出** ウィンドウに、環境の名前と Microsoft SQL Server のインスタンスとデータベースの完全修飾名を入力します。 その後、[環境を検出] をクリックします。
 4.  探索を完了した後、**コンフィギュレーション管理 (ベータ)** セクションに値を入力し、**保存** をクリックして、**アップロード環境** をクリックします。

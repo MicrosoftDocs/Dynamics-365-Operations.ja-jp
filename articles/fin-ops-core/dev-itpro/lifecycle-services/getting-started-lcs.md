@@ -8,17 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: intro-internal
+ms.custom:
+- "84681"
+- intro-internal
 ms.assetid: 6d2dff1d-fc7c-4e91-b6e5-dc38853e6d82
 ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d82193e1a69e7abf8194a1a86c32b38da7331913
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: fbd46c5894d382dd79780c9d8cc4d9b9fcbd50fe
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
+ms.lasthandoff: 04/29/2022
 ms.locfileid: "7984982"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-apps-partners"></a>Lifecycle Services (LCS) for Finance and Operations アプリのパートナー

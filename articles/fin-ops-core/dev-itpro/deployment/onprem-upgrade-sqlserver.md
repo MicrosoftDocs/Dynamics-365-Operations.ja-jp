@@ -2,19 +2,21 @@
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の SQL Server インスタンスのアップグレードまたは置換
 description: このトピックでは、環境で使用している Microsoft SQL Server インスタンスまたはクラスターをアップグレードする方法について説明します。
 author: faix
-ms.date: 12/14/2021
+ms.date: 04/05/2022
 ms.topic: article
+ms.prod: dynamics-365
+ms.service: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 3123d5fdc61fb3f5561b6ff7b7f38670295db570
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 9f5c448a71f8fc6e908b431e8e859f28dc99d34e
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464859"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565521"
 ---
 # <a name="upgrade-or-replace-the-sql-server-instance-of-microsoft-dynamics-365-finance--operations-on-premises-environments"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の SQL Server インスタンスのアップグレードまたは置換
 
@@ -46,6 +48,9 @@ ms.locfileid: "8464859"
 
 1. AOS ノードで、SSIS コンポーネントをアップグレードします。
 1. Business Intelligence (BI) ノードで、SSRS とデータベース エンジン コンポーネントをアップグレードします。
+
+> [!IMPORTANT]
+> BI ノードのデータベース エンジン コンポーネントを SQL Server 2016 から SQL Server 2019 へのアップグレードすると、SSRS コンポーネントが削除されます。 SQL Server 2019 は、SSRS に独自のインストーラーがあります。
 
 ## <a name="update-the-local-agent"></a>ローカル エージェントの更新
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7b271dd2b52ce1f490cdc6f92d9d98c06eb3c08e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 55126270b3d55d7065d9120b7a0c81ea77f16dcf
+ms.sourcegitcommit: d0e99545d722c924db57ae2bd06f72154a1f1f97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782891"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "8557864"
 ---
 # <a name="financial-dimension-configuration"></a>財務分析コードのコンフィギュレーション
 
@@ -38,6 +38,8 @@ ms.locfileid: "7782891"
 
 - **分析コード** タブ - 異なる会社がさまざまな分析コードや勘定構造を使用するため、レポートでユーザーがすべての財務分析コードを表示する順序を特定する方法はありません。 このページでは、財務分析コードを財務諸表でレポートを作成および表示する際に表示する順序を設定することができます。 
 - **属性** タブ - **仕入先** および **顧客** をフィルタリングおよびレポート デザインの属性として使用するかどうかを選択できるタブです。 トランザクションを転記する際に、複数の仕入先または顧客を単一伝票に入力しない場合、仕入先および顧客に関するレポートのみが役立ちます。 仕入先または顧客を選択すると、統合にさらに時間が追加されます。  
+>[!NOTE]
+>この設定を変更するには、財務諸表の変更を確認するためにデータ マートへのリセットが必要です。 
 
 ## <a name="data-entities"></a>データ エンティティ
 

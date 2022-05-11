@@ -4,7 +4,8 @@ description: このトピックでは、Microsoft Dynamics Lifecycle Services (L
 author: PeterRFriis
 ms.date: 10/02/2019
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,18 +15,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da38f02999c87110ced3df4d88ee4d0d543736b75212b9748333772a5ada5218
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c946342a4bfc3c593de8052e95a260a3a9bf8e52
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740924"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565506"
 ---
 # <a name="set-up-on-premises-projects-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) でのオンプレミス プロジェクトの設定
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics 365 Finance + Operations (オンプレミス) のインスタンスを配置し更新する必要があります。 ボリューム ライセンス フローまたは Dynamics 価格リスト フローを通じてサーバーとユーザーのライセンスを購入した後は、 [Finance + Operations (オンプレミス) の購入](../../fin-ops/get-started/purchase-on-premises.md) を参照して、 Azure AD アカウントを作成、または既存の Azure AD アカウントを使用して、すべてのサインアップ手順を完了します。 ユーザーは LCS へリダイレクトされ、そこでオンプレミス実装プロジェクトがプロビジョニングされます。
+Microsoft Dynamics Lifecycle Services (LCS) を使用して、Dynamics 365 Finance + Operations (on-premises) のインスタンスを配置し更新する必要があります。 ボリューム ライセンス フローまたは Dynamics 価格リスト フローを通じてサーバーとユーザーのライセンスを購入した後は、 [Finance + Operations (オンプレミス) の購入](../../fin-ops/get-started/purchase-on-premises.md) を参照して、 Azure AD アカウントを作成、または既存の Azure AD アカウントを使用して、すべてのサインアップ手順を完了します。 ユーザーは LCS へリダイレクトされ、そこでオンプレミス実装プロジェクトがプロビジョニングされます。
 
  [![オンプレミス実装プロジェクト。](./media/lbd-proejcts-01.png)](./media/lbd-proejcts-01.png)
 

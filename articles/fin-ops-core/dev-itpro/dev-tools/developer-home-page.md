@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba0e0b27228f9433c58005955a72dea81ad00377
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d658eafe697ab4f103ed828ee0455e3dffef1deb
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781650"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547950"
 ---
 # <a name="develop-and-customize-home-page"></a>ホームページの開発とカスタマイズ
 
@@ -26,7 +26,7 @@ ms.locfileid: "7781650"
 
 ## <a name="overview"></a>概要
 
-Finance and Operations アプリは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体のエンタープライズ リソース プランニング (ERP) アプリケーション スイートを有効にします。 このアプリは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 開発経験には次のものが含まれます。
+財務と運用アプリは、パブリック クラウドとプライベート クラウド両方のクラウド ベースのソリューションおよびオンプレミスとして、全体のエンタープライズ リソース プランニング (ERP) アプリケーション スイートを有効にします。 このアプリは、Microsoft からの最新テクノロジーで構築時に、クラウドでの操作の速度、わかりやすさ、およびコスト効率性を利用します。 開発経験には次のものが含まれます。
 
 - 実行環境から切り離された開発ツール。 オンライン データベースではなく、ローカルの XML ベースのファイルに対して作成します。
 - Microsoft Visual Studio が開発環境です。 Visual Studio 環境は、円滑で慣れ親しんだエクスペリエンスを提供するようにカスタマイズされています。
@@ -67,7 +67,7 @@ Finance and Operations アプリは、パブリック クラウドとプライ�
 
 - [Visual Studioの開発ツール](development-tools-overview.md)
 - [アプリケーション エクスプローラー](application-explorer.md)
-- [Visual Studio における Finance and Operations のプロジェクト タイプ](projects.md)
+- [Visual Studioの Finance and Operations の プロジェクト タイプ](projects.md)
 - [要素デザイナー](element-designers.md)
 - [要素の使用方法を決定するためのコマンド](element-usage.md)
 - [モデルとパッケージ](models.md)
@@ -76,7 +76,7 @@ Finance and Operations アプリは、パブリック クラウドとプライ�
 - [Visual Studioのツールアドイン](developer-tools-add-ins.md)
 - [モデルのエクスポートとインポート](models-export-import.md)
 - [Visual Studio でのメタデータの検索](metadata-search-visual-studio.md)
-- [開発マシンでの新しいユーザーの作成](enable-development-machine.md)
+- [開発マシンでの新しいユーザーの作成](/d365F-O/fin-ops-core/dev-itpro/dev-tools/access-instances)
 - [ Visual Studio の開発ツールを更新する](update-development-tools.md)
 - [管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問](../sysadmin/VMs-no-admin-access.md)
 

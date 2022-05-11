@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: matgupta
 ms.search.validFrom: 2021-05-31
-ms.openlocfilehash: 45ec95a70e9dc5bbde07d05f4601d7327a811276
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 175b111bf7f6728ad7b16ec72579c408093ecd1a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964842"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645035"
 ---
 # <a name="enable-batch-retries"></a>バッチ再試行の有効化
 
@@ -46,6 +46,9 @@ ms.locfileid: "7964842"
 3. もし **isIdempotent** フラグが **False** でバッチ クラスの上書きコンフィギュレーションが実装されていない場合、**isRetryable** フラグが評価されます。 値が **True** の場合、タスクは再試行されます。 **False** の場合、タスクは再試行されません。
 
 再試行の最大数と再試行間隔は、バッチ プラットフォームによって制御されます。 **BatchRetryable** インターフェイスは 5 秒後に開始し、間隔の時間が 5 分に達した後、再試行を停止します。 (間隔の時間は次のように増加します: 5、8、16、32 など。)
+
+> [!NOTE]
+> SQL の一時的エラーの場合、バッチ プラットフォームは、顧客クラスからスローされた例外が **TransientSqlConnectionError** タイプの例外であるか、**TransientSqlConnectionError** がカスタム例外内で入れ子になった例外として折り返されスローできる場合にタスクを再試行します。
 
 ## <a name="batch-odata-action-capability"></a>バッチ OData アクション機能
 

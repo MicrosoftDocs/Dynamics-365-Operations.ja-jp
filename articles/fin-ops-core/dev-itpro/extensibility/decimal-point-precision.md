@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mfp
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
-ms.openlocfilehash: 019d07b121f0aef67b0140a67c8f882027dce9e6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2503bb0afb6280a648b2585af0302f1157238aa4
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782023"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661640"
 ---
 # <a name="extending-number-of-decimals-for-selected-data-types"></a>選択したデータ型の小数点以下桁数の拡張
 

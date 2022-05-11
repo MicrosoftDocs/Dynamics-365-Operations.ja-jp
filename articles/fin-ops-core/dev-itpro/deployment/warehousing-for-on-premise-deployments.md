@@ -1,25 +1,26 @@
 ---
 title: オンプレミス配置の倉庫管理アプリを構成
 description: このトピックでは、オンプレミス展開でのウェアハウス アプリの前提条件について説明します。
-author: MarkusFogelberg
-ms.date: 02/03/2021
+author: faix
+ms.date: 04/05/2022
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
 ms.custom: 24861
 ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
 ms.search.region: Global
-ms.author: mafoge
+ms.author: osfaixat
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3b121759d831dfa5daca63dd4e3d823a0e64f0129338f4747ddd11da9e40a514
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b008e17cee61b806d069bf5a4c119d74cd93bfd
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763500"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565706"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 
@@ -28,14 +29,14 @@ ms.locfileid: "6763500"
 このトピックでは、オンプレミス配置の Dynamics 365 for Finance and Operations – Warehousing アプリの構成方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
-倉庫管理アプリは Android および Windows オペレーティング システムで使用できます。 オンプレミスの展開にこのアプリを使用するには、少なくともバージョン 1.1.1.0 である必要があります。 Dynamics 365 Finance + Operations (オンプレミス) が次のサポートされているバージョンの 1 つである必要があります。 ハードウェアおよびソフトウェア環境で構成がサポートされているかどうかを評価するには、次の表の情報を使用します。
+倉庫管理アプリは Android および Windows オペレーティング システムで使用できます。 オンプレミスの展開にこのアプリを使用するには、少なくともバージョン 1.1.1.0 である必要があります。 Dynamics 365 Finance + Operations (on-premises) が次のサポートされているバージョンの 1 つである必要もあります。 ハードウェアおよびソフトウェア環境で構成がサポートされているかどうかを評価するには、次の表の情報を使用します。
 
 | プラットフォーム               | バージョン                                                                            |
 |------------------------|------------------------------------------------------------------------------------|
 | Android                | 4.4 以上                                                                         |
 | Windows (UWP)          | Windows 10 (すべてのバージョン)                                                          |
 | アプリのバージョン            | 1.1.1.0 以上                                                                  |
-| Dynamics 365 | Dynamics 365 Finance + Operations (オンプレミス) プラットフォーム更新プログラム 11 |
+| Dynamics 365 | Dynamics 365 Finance + Operations (on-premises) およびプラットフォーム更新プログラム 11 |
 
 アプリでオンプレミス リソースにアクセスできるようにするには、AOS および Active Directory フェデレーション サービス（AD FS）の DNS レコードを作成する必要があります。 ガイダンスについては、[DNS ゾーンの作成とレコードの追加](setup-deploy-on-premises-pu12.md#setup) を参照してください。
 
@@ -65,21 +66,21 @@ Finance + Operations で AD FS アプリケーションを使用できるよう�
 
 1.  Finance + Operations でユーザーを作成し、倉庫管理モバイル デバイス ユーザー ロールをユーザーに割り当てます。
 
-    a.  **システム管理** \> **共通** \> **ユーザー** の順に移動します。
+    1.  **システム管理** \> **共通** \> **ユーザー** の順に移動します。
     
-    b.  新規ユーザーを作成します。
+    2.  新規ユーザーを作成します。
     
-    c.  例のスクリーンショットに示されているように、倉庫モバイル デバイス ユーザー ロールを割り当てます。
+    3.  例のスクリーンショットに示されているように、倉庫モバイル デバイス ユーザー ロールを割り当てます。
 
     ![ユーザーを作成およびコンフィギュレーションします。](media/wmapp-users.png)
 
 2.  AD FS アプリケーションと倉庫保管アプリ ユーザーを関連付けます。
 
-    a.  Finance + Operations で、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション** をクリックします。
+    1.  Finance + Operations で、**システム管理** \> **設定** \> **Azure Active Directory アプリケーション** をクリックします。
     
-    b.  新しい行を作成します。
+    2.  新しい行を作成します。
     
-    c.  AD FS でアプリケーション エントリを作成したときに取得したクライアント ID を入力します (「AD FS でのアプリケーション エントリの作成」の手順 2)。 名前を入力し、倉庫管理アプリ ユーザーを選択します。
+    3.  AD FS でアプリケーション エントリを作成したときに取得したクライアント ID を入力します (「AD FS でのアプリケーション エントリの作成」の手順 2)。 名前を入力し、倉庫管理アプリ ユーザーを選択します。
 
     ![Azure Active Drectory アプリケーション。](media/azure-active-directory.png)
 
@@ -97,14 +98,14 @@ AD FS アプリケーションを使用してサーバーに接続するには�
 1.  アプリで **接続設定** を開きます。
 2.  次の情報を入力します。
 
-    a.  **Active Directory クライアント ID** - AD FS でアプリケーション エントリを作成したときに取得したクライアント ID (「AD FS でのアプリケーション エントリの作成」の手順 2)。
+    1.  **Active Directory クライアント ID** - AD FS でアプリケーション エントリを作成したときに取得したクライアント ID (「AD FS でのアプリケーション エントリの作成」の手順 2)。
 
-    b.  **Active Directory クライアント シークレット** - AD FS でアプリケーション エントリを作成したときに取得したクライアント シークレット。
+    2.  **Active Directory クライアント シークレット** - AD FS でアプリケーション エントリを作成したときに取得したクライアント シークレット。
 
-    c.  **Active Directory リソース** - AOS の DNS URL。 URL に「/namespaces/AXSF」を追加します。 
+    3.  **Active Directory リソース** - AOS の DNS URL。 URL に「/namespaces/AXSF」を追加します。 
         例: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF`
 
-    d.  **Active Directory テナント** - AD FS マシンの DNS URL。 URL に「/adfs/oauth2」を追加します。 
+    4.  **Active Directory テナント** - AD FS マシンの DNS URL。 URL に「/adfs/oauth2」を追加します。 
         例: `https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2` ADFS マシン (例では CNAME は `https://adfs.d365ffo.onprem.contoso.com` です) の CNAME を使用していることを確認します
 
 3.  **会社** - アプリケーションが接続する法的エンティティを入力します。

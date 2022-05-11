@@ -2,7 +2,7 @@
 title: Commerce runtime (CRT) の拡張機能
 description: このトピックでは、Commerce Runtime (CRT) と Retail サーバーを拡張するさまざまな方法について説明します。
 author: mugunthanm
-ms.date: 03/16/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 473f7447b7118005f4f6b1d51b01675fa2aca413
-ms.sourcegitcommit: 6fd739976b46122f9a9002309aba60edb89e5468
+ms.openlocfilehash: 8ffa9599a472cd945b99ba1a5fb128bc87305f94
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "8453502"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649006"
 ---
 # <a name="commerce-runtime-crt-extensibility"></a>Commerce runtime (CRT) の拡張機能
 
@@ -31,7 +31,7 @@ CRT にはコア ビジネス ロジックが含まれています。 ビジネ�
 
 すべての CRT サービスは、1 つ以上の要求と応答のグループで構成されます。 POS が、Retail Server に要求を送信し、Retail Server は CRT を呼び出します。 続いて CRT は要求を処理し、応答を送り返します。
 
-たとえば、CRT の製品サービスには、製品関連のすべての要求と応答が含まれており、それぞれは異なるフローで実行されています。 同様に、CRT の顧客サービスには、顧客関連のすべての要求/応答が含まれています。 次の表に、顧客サービスの要求を示します。
+たとえば、CRT の製品サービスには、製品関連のすべての要求と応答が含まれており、それぞれは異なるフローで実行されています。 同様に、CRT の顧客サービスには、顧客関連のすべての要求と応答が含まれています。 次の表に、顧客サービスの要求を示します。
 
 | 要求                                      | 目的                                                                          |
 |----------------------------------------------|----------------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ CRT にはコア ビジネス ロジックが含まれています。 ビジネ�
 CRT 拡張パターンについて学習する前に、CRT 拡張の作成方法を理解する必要があります。 CRT は単に、C# クラス ライブラリ (.NETアセンブリ) のコレクションです。 C# でクラス ライブラリ プロジェクトを作成し、次のサブセクションに示すパターンを使用してすべての CRT 拡張を実行できます。 これらのサンプルには、適切なアセンブリ参照、Microsoft .NET Framework バージョン、アウトプット タイプ、およびビルド パラメーターが含まれているので、Microsoft が拡張のためのテンプレートとして提供するサンプルを常に使用します。 また、他のすべての必須パラメーターがコンフィギュレーション済みです。 同様のサンプルコードは、R\\RetailSDK\\SampleExtensions\\CommerceRuntime の Retail ソフトウェア開発キット (CRT) で見つけることができます。
 
 > [!NOTE]
-> 財務と運用アプリのバージョン 10.0.16 の場合は、CRT 拡張プロジェクトのすべてのクラス ライブラリで .NET Standard 2.0 を使用する必要があります。
+> バージョン 10.0.19 の場合は、CRT 拡張プロジェクトのすべてのクラス ライブラリで .NET Standard 2.0 をターゲット フレームワークとして使用する必要があります。
 
 ### <a name="create-a-new-crt-service"></a>新しい CRT サービスの作成
 
@@ -83,7 +83,7 @@ CRT 拡張パターンについて学習する前に、CRT 拡張の作成方法
 
 ### <a name="nothandledresponse"></a>NotHandledResponse
 
-上書きされたハンドラーで、基本ハンドラーを実行し、カスタム ロジックの代わりに基本応答を返す場合は、**Not DragdResponse()** を返します。 **Not HandlerdResponse** が返された場合、CRT フレームワークはすぐに使えるハンドラーを実行します。 **NotHandlerdResponse** は、特定の条件でのみカスタム ロジックを実行するシナリオで使用できます (そうではない場合は、基本ハンドラー ロジックを実行します)。
+上書きされたハンドラーで、基本ハンドラーを実行し、カスタム ロジックの代わりに基本応答を返す場合は、**NotHandledResponse()** を返します。 **Not HandlerdResponse** が返された場合、CRT フレームワークはすぐに使えるハンドラーを実行します。 **NotHandlerdResponse** は、特定の条件でのみカスタム ロジックを実行するシナリオで使用できます (そうではない場合は、基本ハンドラー ロジックを実行します)。
 
 ### <a name="crt-data-service-and-data-service-with-entities"></a>CRT データ サービス、およびエンティティ付きデータ サービス
 

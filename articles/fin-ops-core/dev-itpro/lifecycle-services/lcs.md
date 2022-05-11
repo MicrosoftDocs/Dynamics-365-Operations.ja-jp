@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e50f116f5e5a62a08039477d64d19504ba55c8ed
-ms.sourcegitcommit: 0925b9ee0cb0df93047681a243aacc2abd404dea
+ms.openlocfilehash: ef24dd39080a5165112fa164d06d9f7ac012e3cb
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "8446165"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547963"
 ---
 # <a name="lifecycle-services-resources"></a>Lifecycle Services のリソース
 
@@ -29,22 +29,22 @@ Microsoft Dynamics 用 Lifecycle Services (LCS) はコラボレーション ポ�
 
 -   [Lifecycle Services (LCS) の新機能](whats-new-lcs.md)
 -   [Lifecycle Services (LCS) ユーザー ガイド](lcs-user-guide.md)
--   [Lifecycle Services (LCS) のプロジェクト](./ax-2012/projects-lcs.md)
+-   [Lifecycle Services (LCS) のプロジェクト](/dynamicsax-2012/appuser-itpro/projects-lifecycle-services-lcs)
 -   [プロジェクトの研修](project-onboarding.md)
--   [Lifecycle Services (LCS) での方法](./ax-2012/methodologies-lcs.md)
+-   [Lifecycle Services (LCS) での方法](/dynamicsax-2012/appuser-itpro/methodologies-lifecycle-services-lcs)
 -   [Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)](bpm-overview.md)
--   [Lifecycle Services (LCS) のクラウド ホスト環境](./ax-2012/cloud-hosted-environments-lcs.md)
+-   [Lifecycle Services (LCS) のクラウド ホスト環境](/dynamicsax-2012/appuser-itpro/cloud-hosted-environments-lifecycle-services-lcs)
 -   [Finance and Operations アプリのサポート エクスペリエンスの管理](cloud-powered-support-lcs.md)
 -   [Lifecycle Services の設定の概要](configuration-manager-lcs.md)
--   [Lifecycle Services (LCS) 内のカスタマイズ分析](./ax-2012/customization-analysis-lcs.md)
--   [Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール](./ax-2012/infrastructure-estimator-lcs.md)
+-   [Lifecycle Services (LCS) 内のカスタマイズ分析](/dynamicsax-2012/appuser-itpro/customization-analysis-lcs)
+-   [Lifecycle Services (LCS) でのインフラストラクチャ見積もりツール](/dynamicsax-2012/appuser-itpro/infrastructure-estimator-lcs)
 -   [Lifecycle Services (LCS) での問題検索](issue-search-lcs.md)
 -   [Lifecycle Services (LCS) のライセンス数見積もりツール](/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs)
--   [提案依頼 (RFP) の応答](./ax-2012/rfp-responses-lcs.md)
--   [Lifecycle Services (LCS) のシステム診断](./ax-2012/system-diagnostics-lcs.md)
--   [Lifecycle Services (LCS) におけるアップグレード分析](./ax-2012/upgrade-analysis-lcs.md)
--   [Lifecycle Services (LCS) の使用状況プロファイル](./ax-2012/usage-profiler-lcs.md)
--   [Lifecycle Services (LCS) のダウンロード可能ツール](./ax-2012/lcs-downloadable-tools-formerly-informationsource.md)
+-   [提案依頼 (RFP) の応答](/dynamicsax-2012/appuser-itpro/rfp-responses-lcs)
+-   [Lifecycle Services (LCS) のシステム診断](/dynamicsax-2012/appuser-itpro/system-diagnostics-lifecycle-services-lcs)
+-   [Lifecycle Services (LCS) におけるアップグレード分析](/dynamicsax-2012/appuser-itpro/upgrade-analysis-lifecycle-services-lcs)
+-   [Lifecycle Services (LCS) の使用状況プロファイル](/dynamicsax-2012/appuser-itpro/usage-profiler-lifecycle-services-lcs)
+-   [Lifecycle Services (LCS) のダウンロード可能ツール](/dynamicsax-2012/appuser-itpro/lifecycle-services-downloadable-tools-formerly-on-informationsource)
 
 ### <a name="additional-resources"></a>追加リソース
 

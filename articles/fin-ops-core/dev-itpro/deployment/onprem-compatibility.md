@@ -4,7 +4,8 @@ description: このトピックでは、Microsoft Dynamics 365 Finance + Operati
 author: faix
 ms.date: 03/23/2022
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Platform update 44
-ms.openlocfilehash: d037bc342f7aa6d599f70744383f3596955bf2f3
-ms.sourcegitcommit: 0d5ee97670bdeb1986aaea880f32962b5e374751
+ms.openlocfilehash: 2e039e8f7fc36e020769c2656a74725e84bb33c7
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468035"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566021"
 ---
 # <a name="microsoft-dynamics-365-finance--operations-on-premises-supported-software"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) でサポートされるソフトウェア
 

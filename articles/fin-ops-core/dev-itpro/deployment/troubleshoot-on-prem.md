@@ -2,9 +2,10 @@
 title: オンプレミス配置のトラブルシューティング
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) の展開のトラブルシューティング情報を提供します。
 author: PeterRFriis
-ms.date: 01/27/2022
+ms.date: 04/05/2022
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +15,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: edb05914acab140905ce52b2f63d390e439f913a
-ms.sourcegitcommit: eb236eec9eacb507433206fccce585b25980bedd
+ms.openlocfilehash: d04522c972ed41d8c13a6db9fb83d0b69ce02784
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8045791"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565708"
 ---
 # <a name="troubleshoot-on-premises-deployments"></a>オンプレミス配置のトラブルシューティング
 
@@ -1609,7 +1610,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     ```
 
 > [!IMPORTANT]
-> リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[手順 20. リモート処理が使用された場合、CredSSP を終了処理する](./setup-deploy-on-premises-pu41.md#teardowncredssp) を参照してください。
+> リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[リモート処理が使用された場合、CredSSP を終了処理する](./setup-deploy-on-premises-pu41.md#teardowncredssp) を参照してください。
 
 #### <a name="manually-add-these-permissions"></a>次のアクセス許可を手動で追加します。
 1. BI ノードに移動します。

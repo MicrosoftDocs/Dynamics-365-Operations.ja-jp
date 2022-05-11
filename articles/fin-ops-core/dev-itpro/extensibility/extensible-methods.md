@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
-ms.openlocfilehash: 4920733d601200cdc916e78716e97a0e257c0381
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b12b4c0d8cebe488253924de92b8bef6a48daf29
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782451"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661674"
 ---
 # <a name="write-extensible-methods"></a>拡張可能なメソッドの書き込み
 
@@ -46,7 +46,7 @@ ms.locfileid: "7782451"
     - 切り替えステートメントでは **既定のブロック** を回避してください。切り替えブロックを拡張不能にするメソッドを作成するためです。
     - 切り替えステートメントの **既定のブロックでスロー ステートメント** を回避してください。切り替えステートメントを拡張不能にするスイッチを作成するためです。 既定のケースでのスローを処理する 1 つの方法は、拡張可能な個別のメソッドに切り替えブロックをリファクタリングすることです。 または、メソッド全体を交換可能にすることができます。
             
-        次の例では、**findOrderHeader** が交換可能です。
+        次の例では、**findOrderHeaderDefault** が交換可能です。
 
         ```xpp
         private Common findOrderHeader(boolean _forUpdate)

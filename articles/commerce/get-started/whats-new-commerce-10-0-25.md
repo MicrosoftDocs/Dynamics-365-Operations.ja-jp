@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 10.0.25 (2022 年 4 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.25 の新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 02/08/2021
+ms.date: 04/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: c9de07ef4ea906009fcce092b4848b15bb193cb0
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: b2022c77f44444af47f4b4de00a682c9d7c5d869
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388430"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644976"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10025-april-2022"></a>Dynamics 365 Commerce 10.0.25 (2022 年 4 月) の新機能および変更された機能
 
@@ -39,14 +39,15 @@ ms.locfileid: "8388430"
 
 | 機能領域   | フィーチャー                                                  | 詳細                                          |   に  によって有効化             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
+| POS | [Store Commerce アプリ](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/store-commerce-app-chromium-rendering-engine-integrated-hardware-support) | Commerce での Store Commerce アプリは、物理店舗に対する次世代の提供です。 Modern 販売時点管理 (MPOS) とクラウド販売時点管理 (CPOS) を 1 つのアプリケーションに統合して小売業者の配置の選択肢を提供し、パフォーマンスを向上させ、より優れたアプリケーション ライフサイクル管理 (ALM) を提供します。 また、拡張機能を含め、MPOS および CPOS のすべての機能が保持されます。 [Store Commerce アプリ](../dev-itpro/store-commerce.md) を参照してください。 |オプトイン | 
+| POS  | [POS 在庫操作での追加フィルター オプションのサポート](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/additional-filter-options-pos-inventory-operations) |  この機能により、POS 在庫操作間で一般に要求される追加フィルター オプションがサポートされます。これにより、不必要な拡張機能が削除され、店舗在庫操作の効率が大幅に向上します。 | 機能管理<p>*POS 在庫操作の追加のフィルター オプション* |
 | B2B | サインインした B2B ユーザーをモックする | [ローカル開発中にサインイン状態をモックする](../e-commerce-extensibility/mock-sign-in.md) | 開発者のオプトイン | 
 | E コマース | [サイトコア コンテンツ ハブとの統合](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/integration-sitecore-content-hub) | データ コネクタは、Dynamics 365 Commerce の製品とカテゴリのデータをサイトコア コンテンツ ハブ インスタンスに自動的にプッシュし、Commerce チャネルの追加のデジタル資産管理と製品強化オプションを可能にします。 | サイト ビルダー |
 | E コマース | [eコマースでの PayPal カート チェックアウト サポート](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/paypal-cart-checkout-support-e-commerce) | [PayPal 向け Dynamics 365 Payment Connector](../paypal.md)| 開発者のオプトイン |
 | E コマース | [価格に売上税が含まれる場合の eコマースの税内訳の表示/非表示](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/show-or-hide-tax-breakdown-e-commerce-when-prices-include-sales-tax) |  企業では、eコマース チャネルのカート、チェックアウト、確認、および注文の詳細ページの注文集計で、税金情報を明示的に表示または非表示にできます。 | サイト ビルダー |
-| グローバリゼーション | [POS からの直接会計統合](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos) | [コマース チャネルの会計統合の概要](../localizations/fiscal-integration-for-retail-channel.md) | 開発者のオプトイン| 
-| グローバリゼーション | [拡張会計コネクタ構成](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration) | [コマース チャネルの会計統合の概要](../localizations/fiscal-integration-for-retail-channel.md) | 開発者のオプトイン| 
-| グローバリゼーション | インドの QR コードの参照を更新 | [インド向け QR コードの生成とレシートへの印刷](../localizations/ind-generate-qr-code-print-receipt.md) | 開発者のオプトイン|
-| POS  | [POS 在庫操作での追加フィルター オプションのサポート](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/additional-filter-options-pos-inventory-operations) |  この機能により、POS 在庫操作間で一般に要求される追加フィルター オプションがサポートされます。これにより、不必要な拡張機能が削除され、店舗在庫操作の効率が大幅に向上します。 | 機能管理<p>*POS 在庫操作の追加のフィルター オプション* |
+| eコマース    | 複数のコンテンツ項目タイプの名前変更 | サイト ビルダーでは、サイト、テンプレート、フラグメント、レイアウトなど、複数のコンテンツ項目タイプの名前の変更がサポートされます。 詳細については、[サイトの名前変更](../create-ecommerce-site.md#rename-your-site)[テンプレートの名前変更](../work-with-templates.md#rename-a-template)[フラグメントの名前変更](../work-with-fragments.md#rename-a-fragment)[ページの名前変更](../add-new-page.md#specify-the-page-name)[レイアウトの名前変更](../work-with-layouts.md#rename-a-preset-layout)[オーディエンスの名前変更](../targeting-overview.md#rename-an-audience-in-site-builder) を参照してください。  |  サイト ビルダー   |
+| グローバリゼーション | [POS からの直接会計統合](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos) | この機能では、POS で実行される会計コネクタを作成する機能を追加することで、会計統合フレームワークを拡張します。 このタイプのコネクタは、HTTP API を提供する会計デバイスまたはサービスと通信し、店舗内でプラグインやデプロイされる専用の物理マシンが不要になります。 詳細については、[コマース チャネルの会計統合の概要](../localizations/fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network) および [コネクタ技術プロファイルを作成する ](../localizations/setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles) を参照してください。 | 機能管理<p>*POS レジスターからの直接会計統合*| 
+| グローバリゼーション | [拡張会計コネクタ構成](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration) | この機能は、ハードウェア プロファイル レベルに加えて、個々の POS レジスター レベルでの会計コネクタの接続設定を定義するオプションを追加することにより、会計統合フレームワークを拡張します。 これにより、店舗内の異なる POS レジスターで使用される個々の会計デバイスまたはサービス インスタンスに対して、異なる接続設定を構成することができます。 詳細については、[コネクタ技術プロファイルを作成する](../localizations/setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles) を参照してください。 |  機能管理<p>*会計統合技術プロファイルの上書き* | 
 |明細書 |  明細書転記機能の改良  | [明細書転記機能の改良](../statement-posting-EOD.md) | コマース パラメーター |
 
 

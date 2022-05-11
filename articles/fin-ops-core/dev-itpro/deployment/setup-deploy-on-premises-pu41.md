@@ -2,9 +2,10 @@
 title: オンプレミス環境の設定と配置 (Platform update 41 以降)
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 01/27/2022
+ms.date: 04/22/2022
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 78fe0ca4b1697a36519259061f9ec70402708893
-ms.sourcegitcommit: eb236eec9eacb507433206fccce585b25980bedd
+ms.openlocfilehash: 9f0a8ee35a96c99d3731d1642401cb8ff4728fd9
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8045511"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644686"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 
@@ -177,13 +178,14 @@ Finance + Operations のインフラストラクチャを設定するには、�
 1. [LCS からセットアップ スクリプトのダウンロード](#downloadscripts)
 1. [コンフィギュレーションの記述](#describeconfig)
 1. [ファイル ストレージの設定](#setupfile)
+1. [SQL Server の設定](#setupsql)
 1. [証明書の構成](#configurecert)
 1. [SSIS を設定する](#setupssis)
 1. [SSRS を設定する](#setupssrs)
 1. [VMs を設定する](#setupvms)
 1. [スタンドアロン Service Fabric クラスターの設定](#setupsfcluster)
 1. [テナント用 LCS 接続の構成](#configurelcs)
-1. [SQL Server の設定](#setupsql)
+1. [SQL Server 証明書をコンフィギュレーションする](#configuresqlcert)
 1. [データベースを構成する](#configuredb)
 1. [資格情報の暗号化](#encryptcred)
 1. [AD FS のコンフィギュレーション](#configureadfs)
@@ -212,7 +214,7 @@ Finance + Operations のインフラストラクチャを設定するには、�
 | AOS       | SNAC – ODBC ドライバー 17.5.x | [ODBC ドライバー 17.5.2](/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#1752) |
 | AOS       | Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | AOS       | Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
-| AOS       | Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
+| AOS       | Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
 | AOS       | Microsoft Internet Information Services (IIS) | **Windows の機能:** WAS、WAS-Process-Model、WAS-NET-Environment、WAS-Config-APIs、Web-Server、Web-WebServer、Web-Security、Web-Filtering、Web-App-Dev、Web-Net-Ext、Web-Mgmt-Tools、Web-Mgmt-Console |
 | AOS       | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) |
 | AOS       | Microsoft Visual Studio 2013 用 Microsoft Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> |
@@ -220,13 +222,13 @@ Finance + Operations のインフラストラクチャを設定するには、�
 | AOS       | Microsoft Access データベース エンジン 2010 再頒布可能パッケージ | <https://www.microsoft.com/download/details.aspx?id=13255> |
 | BI        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | BI        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
-| BI        | .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
+| BI        | .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
 | BI        | SQL Server Management Studio 17.9.1 | [SSMS 17.9.1](/sql/ssms/release-notes-ssms#1791) |
 | MR        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows の機能:** NET-Framework-Features、NET-Framework-Core、NET-HTTP-Activation、NET-Non-HTTP-Activ |
 | MR        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows の機能:** NET-Framework-45-Features、NET-Framework-45-Core、NET-Framework-45-ASPNET、NET-WCF-Services45、NET-WCF-TCP-PortSharing45 |
-| MR        | .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
+| MR        | .NET Framework version 4.7.2 (CLR 4.0) | https://go.microsoft.com/fwlink/?LinkID=863265 |
 | MR        | Visual Studio 2013 用 Visual C++ 再頒布可能パッケージ | <https://support.microsoft.com/help/3179560> |
-| ORCH      | Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> |
+| ORCH      | Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | https://go.microsoft.com/fwlink/?linkid=2088631 |
 
 ### <a name="step-1-plan-your-domain-name-and-dns-zones"></a><a name="plandomain"></a>手順 1、 ドメイン名と DNS ゾーンの計画
 
@@ -372,11 +374,11 @@ Microsoft ではセットアップ エクスペリエンスを向上させるた
 3. **モデル** を資産タイプとして選択してから、グリッドで、**Microsoft Dynamics 365 Finance + Operations (on-premises) 展開スクリプト** の行を選択します。
 4. **バージョン** を選択し、スクリプトの zip ファイルの最新版をダウンロードします。
 5. zip ファイルをダウンロードした後、ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
-6. zip ファイルをスクリプトの実行に使用するコンピューターにコピーします。
+6. ファイル共有を作成し、そこに zip ファイルをコピーします。
 7. **infrastructure** という名前のフォルダーにファイルを解凍します。
 
 > [!IMPORTANT]
-> このフォルダーの ConfigTemplate.xml ファイルにすべての編集を加えるよう確認します。
+> **インフラストラクチャ** フォルダーをファイル共有に格納することが重要です。 これにより、各マシンにフォルダーをコピーすることなく、任意のマシンでスクリプトを実行できます。 このフォルダーの ConfigTemplate.xml ファイルにすべての編集を加えるよう確認します。
 
 ### <a name="step-7-describe-your-configuration"></a><a name="describeconfig"></a>手順 7、 コンフィギュレーションの記述
 
@@ -396,6 +398,7 @@ infrastructure\\ConfigTemplate.xml コンフィギュレーション ファイ�
 - データベース コンフィギュレーション
 - Service Fabric Cluster コンフィギュレーション
 - アプリケーションが機能するために必要なファイル共有
+- SQL クラスター情報 
 
     > [!IMPORTANT]
     > Service Fabric cluster をコンフィギュレーションする際に、主要なノード タイプ (**OrchestratorType**) の 3 つのフォールト ドメインがあることを確認します。 また、1 台のコンピューターに展開できるノードのタイプは 1 つだけになるようにします。
@@ -418,22 +421,19 @@ Service Fabric ノード タイプごとに、infrastructure\\D365FO-OP\\NodeTop
 
 #### <a name="create-gmsa-and-domain-user-accounts"></a>gMSA およびドメイン ユーザー アカウントを作成する
 
-1. **インフラストラクチャ** フォルダーに展開したインフラストラクチャ スクリプトがあるコンピューターに移動します。
-1. **インフラストラクチャ** フォルダーをドメイン コントローラー マシンにコピーします。
-1. 管理者特権モードで Windows PowerShell を開き、ディレクトリを **infrastructure** フォルダーに変更して、次のコマンドを実行します。
+1. 管理者特権モードで Windows PowerShell を開き、ディレクトリをファイル共有の **インフラストラクチャ** フォルダーに変更して、次のコマンドを実行します。
 
     > [!IMPORTANT]
     > これらのコマンドでは、AxServiceUser ドメイン ユーザーを作成しません。 ユーザーが作成する必要があります。
 
     ```powershell
-    Import-Module .\D365FO-OP\D365FO-OP.psd1
-    New-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. アカウントまたはコンピューターを変更する必要がある場合は、元の **インフラストラクチャ** フォルダーの **ConfigTemplate.xml** ファイルを更新し、このコンピューターにコピーしてから次のコマンドを実行します。
+1. アカウントまたはコンピューターを変更する必要がある場合は、ファイル共有の **インフラストラクチャ** フォルダーの **ConfigTemplate.xml** ファイルを更新してから、次のコマンドを実行します。
 
     ```powershell
-    Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Update
     ```
 
 ### <a name="step-8-set-up-file-storage"></a><a name="setupfile"></a>手順 8、 ファイル ストレージの設定
@@ -483,12 +483,28 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     1. **タスク** \> **新しい共有** を選択し、共有を作成します。 新しい共有に **DiagnosticsStore** と名前を付けます。
     1. Service Fabric Cluster内のすべてのマシンに対して **変更** 許可を与えます。
 
-### <a name="step-9-configure-certificates"></a><a name="configurecert"></a>手順 9、 証明書の構成
+### <a name="step-9-set-up-sql-server"></a><a name="setupsql"></a>手順 9、 SQL Server の設定
 
-1. 最初に **インフラストラクチャ** フォルダーを展開したコンピューターに移動します。
-2. 証明書を生成します。
+1. SQL Server のインスタンスが 1 つでも十分なサンドボックス環境に展開する場合を除いて、高可用性を備えた SQL Server をインストールします。 (ただし、高可用性シナリオをテストするため、サンドボックス環境に高可用性を備えた SQL Server をインストールすることもできます。)
 
-    1. 証明書を生成する必要がある場合は、次のコマンドを実行します。 これらのコマンドは AD CS で証明書テンプレートを作成し、テンプレートから証明書を生成して、コンピューターの **CurrentUser\\My** 証明書ストアに格納してから、XML ファイルのサムプリントを更新します。
+    > [!IMPORTANT]
+    > [SQL Server および Windows 認証モード](/sql/database-engine/configure-windows/change-server-authentication-mode) を有効にする必要があります。
+
+    高可用性を備えた SQL Server を、SAN (ストレージ エリア ネットワーク) を含む SQL クラスターまたは Always-On 構成のいずれかとしてインストールすることができます。 データベース エンジン、SSRS、フルテキスト検索、および SQL Server 管理ツールがインストール済みであることを確認します。
+
+    > [!NOTE]
+    > Always-On が [初期データ同期ページの選択 (可用性グループ ウィザードで常に使用する)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards) で説明されているとおりに設定され、[セカンダリ データベースを手動で準備する](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs) の指示に従っていることを確認します。
+
+2. ドメイン ユーザーまたは gMSA のいずれかとして SQL サービスを実行します。
+3. **ConfigTemplate.xml** ファイルで、SQLクラスター コンフィギュレーションを入力します。 SQL クラスターを作成している場合、各マシンの名前と、可用性グループのリスナー名を一緒に指定します。 クラスターの代わりに 1 つのインスタンスを作成している場合、マシンの名前は指定しますが、リスナー名は空白のままにします。 SQL クラスター/インスタンスの証明書をスクリプトで生成したくない場合は、**SQLCert** タイプの証明書に関して **disabled** プロパティを **true** に設定します。
+
+### <a name="step-10-configure-certificates"></a><a name="configurecert"></a>手順 10、 証明書の構成
+
+1. リモート サーバー管理ツールがインストールされているマシンに移動するか、ドメイン コントローラーに移動します。
+1. PowerShell を開き、**インフラストラクチャ** フォルダーを含むファイル共有に移動します。  
+1. 証明書を生成します。
+
+    1. 証明書を生成する必要がある場合は、次のコマンドを実行します。 これらのコマンドは AD CS で証明書テンプレートを作成し、テンプレートから証明書を生成して、マシンの **LocalMachine\\My** 証明書ストアに格納してから、XML ファイルのサムプリントを更新します。
 
         ```powershell
         # If you must create self-signed certs, set the generateSelfSignedCert attribute to true.
@@ -498,15 +514,12 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
         .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
-        > [!NOTE]
-        > これらのコマンドは、ドメイン コントローラー コンピューター、または Windows Server を実行していてリモート サーバー管理ツール (KMT) がインストールされているコンピューターで実行する必要があります。
+    1. 証明書を再利用する必要があるため、証明書を生成する必要がない場合は、**ConfigTemplate.xml** ファイルで **generateADCSCert** タグを **false** に設定します。
 
-    1. 証明書を再利用する必要があるため、証明書を生成する必要がない場合は、**generateADCSCert** タグを **false** に設定します。
-
-3. 以前に生成されている SSL 証明書を使用している場合は、証明書生成をスキップし、**ConfigTemplate.xml** ファイルのサムプリントを更新します。 証明書は **CurrentUser\\My** 証明書ストアにインストールする必要があり、その秘密キーはエクスポート可能でなければなりません。
+3. 以前に生成されている SSL 証明書を使用している場合は、証明書生成をスキップし、**ConfigTemplate.xml** ファイルのサムプリントを更新します。 証明書は、**CurrentUser\\My** または **LocalMachine\\My** 証明書店舗でインストールできます。 また、プライベート キーはエクスポート可能でなければなりません。
 
     > [!WARNING]
-    > 特定するのが難しい先頭の印刷不可能な特殊文字があるため、証明書管理ツール (certlm.msc) を使用してサムプリントをコピーしないでください。 印刷できない特殊文字がある場合、次のエラー メッセージが表示されます: 「X509 証明書が無効です」 サムプリントを取得するには、Windows PowerShell コマンドの結果を参照するか、Windows PowerShell で次のコマンドを実行します。
+    > Windows Server 2016 では、特定するのが難しい先頭の印刷不可能な特殊文字があるため、証明書管理ツール (certlm.msc) を使用してサムプリントをコピーしないでください。 印刷できない特殊文字がある場合、次のエラー メッセージが表示されます: 「X509 証明書が無効です」 サムプリントを取得するには、Windows PowerShell コマンドの結果を参照するか、Windows PowerShell で次のコマンドを実行します。
     >
     > ```powershell
     > dir cert:\CurrentUser\My
@@ -522,7 +535,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="step-10-set-up-ssis"></a><a name="setupssis"></a>手順 10、 SSIS の設定
+### <a name="step-11-set-up-ssis"></a><a name="setupssis"></a>手順 11、 SSIS の設定
 
 データ管理と SSIS ワークロードを有効にするには、各 AOS VM に SSIS をインストールする必要があります。 各 AOS VM で、次の手順に従います。
 
@@ -532,7 +545,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 詳細については、[統合サービス (SSIS) のインストール](/sql/integration-services/install-windows/install-integration-services)を参照してください。
 
-### <a name="step-11-set-up-ssrs"></a><a name="setupssrs"></a>手順 11、 SSRS の設定
+### <a name="step-12-set-up-ssrs"></a><a name="setupssrs"></a>手順 12、 SSRS の設定
 
 複数の SSRS ノードを構成できます。 詳細については、[SSRS ノードの高可用性の構成](./onprem-SSRSHA.md)を参照してください。
 
@@ -545,7 +558,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 1. 各 BI ノードについては、次の手順を実行します。
 
-    1. **インフラストラクチャ** フォルダーをコピーします。 次に、管理者特権モードで Windows PowerShell を開き、フォルダーに移動します。
+    1. 管理者特権モードで Windows PowerShell を開き、ファイル共有の **インフラストラクチャ** フォルダーに移動します。
     1. 次のコマンドを実行します。
 
         ```powershell
@@ -569,16 +582,16 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     > 
     > 代わりに、これらのスクリプトは、Service Fabric サービス (ReportingService) が必要なコンフィギュレーションを実行するために必要なアクセス許可を付与します。
 
-### <a name="step-12-set-up-vms"></a><a name="setupvms"></a>手順 12、 VMs の設定
+### <a name="step-13-set-up-vms"></a><a name="setupvms"></a>手順 13、 VMs の設定
 
-1. 次のコマンドを実行して、各 VM で実行する必要があるスクリプトをエクスポートします。
+1.  管理者特権モードで Windows PowerShell を開き、ファイル共有の **インフラストラクチャ** フォルダーに移動します。
 
     ```powershell
     # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-2. 次の Microsoft Windows Installers (MSI) を全ての VM でアクセス可能なファイル共有にダウンロードします。
+2. 次の Microsoft Windows インストーラー (MSI) を全ての VM によりアクセスできるファイル共有にダウンロードします。 たとえば、**インフラストラクチャ** フォルダーを格納する場所と同じファイル共有を使用します。
 
     | コンポーネント | リンクのダウンロード | 必要なファイル名 |
     |-----------|---------------|--------------------|
@@ -600,7 +613,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
 
 > [!NOTE]
 > - 次の手順では、複数の VM での実行が必要です。 ただし、プロセスを簡略化するために、提供されるリモート処理スクリプトを使用できます。 これらのスクリプトを使用すると、**.\\Export-Scripts.ps1** コマンドの実行に使用されるのと同じコンピューターなど、単一のコンピューターから必要なスクリプトを実行できます。 リモート処理スクリプトが利用可能な場合、Windows PowerShell セクションの **\# If Remoting** コメントの後に宣言されます。 リモート処理スクリプトを使用する場合、セクション内の残りのスクリプトを実行する必要がない可能性があります。 この場合は、セクション テキストを参照してください。
-> - リモート処理では [WinRM](/windows/win32/winrm/portal) を使用します。 場合によっては、[CredSSP](/windows/win32/secauthn/credential-security-support-provider) を有効にする必要があります。 リモート処理モジュールでは、実行ごとに CredSSP を有効または無効にします。 使用しない場合は、CredSSP を無効にすることをお勧めします。 そうしないと、資格情報の盗難リスクが伴います。 設定が完了したら、このトピック後半の[手順 20、リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)セクションを参照してください。
+> - リモート処理では [WinRM](/windows/win32/winrm/portal) を使用します。 場合によっては、[CredSSP](/windows/win32/secauthn/credential-security-support-provider) を有効にする必要があります。 リモート処理モジュールでは、実行ごとに CredSSP を有効または無効にします。 使用しない場合は、CredSSP を無効にすることをお勧めします。 そうしないと、資格情報の盗難リスクが伴います。 設定が完了したら、このトピック後半の[リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)セクションを参照してください。
 
 1. 各 **infrastructure\\VMs\\\<VMName\>** フォルダーの内容を、対応する VM にコピーします。 (リモート処理スクリプトを使用している場合は、コンテンツが自動的に対象の VM にコピーされます。) 続いて、次のコマンドを管理者として実行します。
 
@@ -636,9 +649,9 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     ```
 
 > [!IMPORTANT]
-> リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[手順 20、リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)セクションを参照してください。
+> リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)セクションを参照してください。
 
-### <a name="step-13-set-up-a-standalone-service-fabric-cluster"></a><a name="setupsfcluster"></a>手順 13、 スタンドアロン Service Fabric クラスターの設定
+### <a name="step-14-set-up-a-standalone-service-fabric-cluster"></a><a name="setupsfcluster"></a>手順 14、 スタンドアロン Service Fabric クラスターの設定
 
 1. [Service Fabric スタンドアロン インストール パッケージ](https://go.microsoft.com/fwlink/?LinkId=730690) を Service Fabric ノードのいずれかにダウンロードします。
 2. zip ファイルをダウンロードした後、ファイルを選択したまま (または右クリック) にしてから、**プロパティ** を選択します。 **プロパティ** ダイアログ ボックスで、**ブロック解除** チェックボックスを選択します。
@@ -678,7 +691,7 @@ SMB 3.0 を有効にする方法については、[SMB セキュリティの強�
     > - クライアント コンピューターがサーバー コンピューター (たとえば、Windows Server 2019 を実行しているコンピューター) である場合は、**Service Fabric Explorer** ページにアクセスするときに Internet Explorer のセキュリティ強化の構成をオフにする必要があります。
     > - 任意のウィルス対策ソフトウェアをインストールする場合は、除外を設定してください。 [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) ドキュメントのガイダンスに従ってください。
 
-### <a name="step-14-configure-lcs-connectivity-for-the-tenant"></a><a name="configurelcs"></a>手順 14、 テナント用 LCS 接続の構成
+### <a name="step-15-configure-lcs-connectivity-for-the-tenant"></a><a name="configurelcs"></a>手順 15、 テナント用 LCS 接続の構成
 
 オンプレミスのローカル エージェントは、LCS を通じて Finance + Operations の展開とサービスを調整するために使用されます。 LCS から Finance + Operations テナントへの接続を確立するには、Azure AD テナント (たとえば、contoso.onmicrosoft.com) の代わりに動作するローカル エージェントを可能にする証明書をコンフィギュレーションする必要があります。
 
@@ -697,8 +710,7 @@ CA から取得したオンプレミス エージェントの証明書または�
     # If you have issues downloading the Azure PowerShell Az module, run the following:
     # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-    Install-Module Az -RequiredVersion 6.6.0
-    Import-Module Az
+    Install-Module Az -RequiredVersion 7.2.0
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
 
@@ -718,77 +730,65 @@ CA から取得したオンプレミス エージェントの証明書または�
 > .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
 > ```
 
-### <a name="step-15-set-up-sql-server"></a><a name="setupsql"></a>手順 15、 SQL Server の設定
+### <a name="step-16-configure-the-sql-server-certificate"></a><a name="configuresqlcert"></a>手順 16、 SQL Server 証明書をコンフィギュレーションする
 
-1. SQL Server のインスタンスが 1 つでも十分なサンドボックス環境に展開する場合を除いて、高可用性を備えた SQL Server をインストールします。 (ただし、高可用性シナリオをテストするため、サンドボックス環境に高可用性を備えた SQL Server をインストールすることもできます。)
+Finance + Operations 向けに SQL Server を構成するために CA から SSL 証明書を取得します。 既定では、前の手順で AD CS または自己署名証明書が生成されました。
 
-    > [!IMPORTANT]
-    > [SQL Server および Windows 認証モード](/sql/database-engine/configure-windows/change-server-authentication-mode) を有効にする必要があります。
+> [!NOTE]
+> パブリック CA に証明書を発注する場合、証明書のサブジェクト代替名が SQL 可用性グループの各ノード/インスタンスの FQDN と一致している必要があります。
 
-    高可用性を備えた SQL Server を、SAN (ストレージ エリア ネットワーク) を含む SQL クラスターまたは Always-On 構成のいずれかとしてインストールすることができます。 データベース エンジン、SSRS、フルテキスト検索、および SQL Server 管理ツールがインストール済みであることを確認します。
+#### <a name="use-a-script-to-deploy-certificates-for-an-always-on-sql-availability-group-or-instance"></a>スクリプトを使用して、常時稼働の SQL 可用性グループまたはインスタンスに証明書を展開する
 
-    > [!NOTE]
-    > Always-On が [初期データ同期ページの選択 (可用性グループ ウィザードで常に使用する)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards) で説明されているとおりに設定され、[セカンダリ データベースを手動で準備する](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs) の指示に従っていることを確認します。
+次のスクリプトは、次のセクションで説明する手動プロセスの手順を自動化するものです。 リモートを使用してしない場合は、SQL マシンに接続し、管理者特権で PowerShell を開きます。 その後、ファイル共有の **インフラストラクチャ** フォルダーに移動し、次のコマンドを実行します。 各ノードに関する、これらの手順を完了します。
 
-2. ドメイン ユーザーまたは gMSA のいずれかとして SQL サービスを実行します。
-3. Finance + Operations 向けに SQL Server を構成するために CA から SSL 証明書を取得します。 テストの目的で、AD CS を通じて生成された証明書を作成して使用することができます。 次の例にあるコンピューター名とドメイン名を置き換える必要があります。
+```powershell
+# If Remoting, execute
+#.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-    **Always-On SQL 可用性グループの AD CS 証明書**
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com"
+```
 
-    Always-On 用の証明書のテストを設定する場合は、次のリモート処理スクリプトを使用します。 このスクリプトは、次に示す手動スクリプトと同じように機能します。
+次のコマンドを実行することで、すべてが正しく構成されていることを確認できます。
 
-    ```powershell
-    #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
+```powershell
+# If Remoting, execute
+#.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Test
 
-    .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
-    ```
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com" -Test
+```
 
-    **単一の SQL 可用性グループの AD CS 証明書**
+#### <a name="manually-configure-the-certificate-for-an-always-on-sql-availability-group-or-instance"></a>常時稼働の SQL 可用性グループまたはインスタンスの証明書を手動で構成する
 
-    ```powershell
-    #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
+1. **インフラストラクチャ** フォルダーには、**Certs** という名前のフォルダーを含める必要があります。 このフォルダーで、自身の証明書がある .pfx ファイルを検索します。
 
-    .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser
-    ```
+1. SQL クラスターの各ノードに対して、次の手順を実行します:
 
-    **SQL Server を使用した Always-On SQL 可用性グループまたは Windows Server フェールオーバー クラスタリングの手動 AD CS 手順** 
+    1. 生成した .pfx fファイルをノードにコピーし、**LocalMachine** 店舗に証明書をインポートします。
 
-    SQL クラスターの各ノードに対して、次の手順を実行します。 
-
-    1. 次の Windows PowerShell コマンドを、SQL Server Always-On レプリカごとに実行します。
-
-        ```powershell
-        #If you need to create self-signed certs
-        #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -GenerateCertOnly
-
-        .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -GenerateCertOnly
-        ```
-
-    2. SQL サービスを実行するために使用されるアカウントに証明書のアクセス許可を付与します。
+    1. SQL サービスを実行するために使用されるアカウントに証明書のアクセス許可を付与します。
 
         1. 証明書管理ツール (**certlm.msc**) を開きます。
         2. 作成した証明書を選択したまま (または右クリック) してから、**タスク** \> **秘密キーの管理** をクリックします。
         3. SQL Server サービス アカウントを追加し、**読み取り** アクセスを許可します。
 
-    3. SQL Server 構成マネージャーで **ForceEncryption** と新しい証明書を有効にします。
+    1. SQL Server 構成マネージャーで **ForceEncryption** と新しい証明書を有効にします。
 
         1. SQL Server 構成マネージャーを開き、**SQL Server ネットワーク構成** を展開し、**\[サーバー インスタンス\] 用プロトコル** を選択したまま (または右クリック) にしてから、**プロパティ** を選択します。
         2. **プロトコル** ダイアログ ボックスの、**証明書** タブの、**証明書** フィールドで、目的の証明書を選択します。
         3. **フラグ** タブの **ForceEncryption** ボックスで、**はい** を選択します。
         4. **OK** を選択して変更を保存します。
 
-    4. 各 SQL クラスター ノードから証明書 (.cer ファイル) をエクスポートし、各 Service Fabric ノードの信頼できるルートにインストールします。 Always-On クラスターには少なくとも 2 つの証明書があります。 ただし、追加レプリカがある場合はそれ以上の証明書が必要になる場合があります。 
-    5. SQL サービスを再起動します。
+    1. SQL サービスを再起動します。
 
-    > [!NOTE] 
-    > 詳細は、[Microsoft 管理コンソールを使用して SQL Server のインスタンスに対する SSL 暗号化を有効にする方法](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console)を参照してください。
+1. 自己署名証明書を使用した場合、証明書 (.cer ファイル) をエクスポートし、各 Service Fabric ノードの信頼されたルートにインストールします。 SQL クラスター内の全ノードに対して、証明書は 1 つのみです。
+
+> [!NOTE] 
+> 詳細は、[Microsoft 管理コンソールを使用して SQL Server のインスタンスに対する SSL 暗号化を有効にする方法](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console)を参照してください。
 
 > [!IMPORTANT]
-> リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[手順 20、リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)セクションを参照してください。
+> リモート処理を使用していた場合は、設定の完了後にクリーンアップ手順を実行します。 手順については、[リモート処理が使用されたら、CredSSP を終了処理する](#teardowncredssp)セクションを参照してください。
 
-### <a name="step-16-configure-the-databases"></a><a name="configuredb"></a>手順 16、 データベースを構成する
+### <a name="step-17-configure-the-databases"></a><a name="configuredb"></a>手順 17、 データベースを構成する
 
 1. [LCS](https://lcs.dynamics.com/v2) にサインインします。
 1. ダッシュボードで、**共有アセット ライブラリ** タイルを選択します。
@@ -815,7 +815,7 @@ CA から取得したオンプレミス エージェントの証明書または�
     > - SQL サービスを実行しているユーザーとスクリプトを実行しているユーザーは、バックアップ ファイルが格納されているフォルダーまたは共有に対して **読み取り** アクセス権を持っている必要があります。
     > - 既に既存のデータベースの名前が同じである場合は、上書きされません。
 
-1. **インフラストラクチャ** フォルダーを SQL Server コンピューターにコピーします。 次に、管理者特権モードで Windows PowerShell を開き、フォルダーに移動します。
+1. SQL クラスター内のマシンに接続します。 次に、管理者特権モードで Windows PowerShell を開き、ファイル共有の **インフラストラクチャ** フォルダーに移動します。
 
 #### <a name="configure-the-orchestratordata-database"></a>OrchestratorData データベースのコンフィギュレーション
 
@@ -895,7 +895,7 @@ CA から取得したオンプレミス エージェントの証明書または�
         | svc-FRPS$       | gMSA | db\_owner     |
         | svc-FRAS$       | gMSA | db\_owner     |
 
-### <a name="step-17-encrypt-credentials"></a><a name="encryptcred"></a>手順 17、 資格情報の暗号化
+### <a name="step-18-encrypt-credentials"></a><a name="encryptcred"></a>手順 18、 資格情報の暗号化
 
 1. インフラストラクチャ フォルダーを AOS ノードにコピーします。
 2. 次のコマンドを実行して、**Credentials.json** ファイルを作成します。
@@ -915,7 +915,7 @@ CA から取得したオンプレミス エージェントの証明書または�
     >
     > スクリプトは、エンティティ格納機能に必要な資格情報を要求しますが、この要求はスキップできます。 詳細については、[オンプレミス環境との PowerBI.com の統合](../analytics/entity-store-on-prem.md) を参照してください。
 
-### <a name="step-18-configure-ad-fs"></a><a name="configureadfs"></a>手順 18、 AD FS のコンフィギュレーション
+### <a name="step-19-configure-ad-fs"></a><a name="configureadfs"></a>手順 19、 AD FS のコンフィギュレーション
 
 この手順を完了する前に、AD FS を Windows Server に展開する必要があります。 AD FS を展開する方法については、[Windows Server 2016 配置ガイドおよび 2012 R2 AD FS 配置ガイド](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide) を参照してください。
 
@@ -961,6 +961,8 @@ AD FS が認証を交換するために Finance + Operations を信頼できる�
 > [!NOTE]
 > 以前に構成した AD FS サーバーを別の環境で再利用する方法については、[複数の環境に同じ AD FS インスタンスを再使用する](./onprem-reuseadfs.md) を参照してください。
 
+AD FS インスタンス/ファームをホストしているサーバーに接続し、管理者特権で PowerShell を開き、ファイル共有内の **インフラストラクチャ** フォルダーに移動します。 次に、次のコマンドを実行します。
+
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
 .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
@@ -979,7 +981,7 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
 
 これで、インフラストラクチャの設定を完了しました。 次のセクションでは、コネクタを設定して LCS に Finance + Operations 環境を展開する方法について説明します。
 
-### <a name="step-19-configure-a-connector-and-install-an-on-premises-local-agent"></a><a name="configureconnector"></a>手順 19、 コネクタを構成し、オンプレミスのローカル エージェントをインストールする
+### <a name="step-20-configure-a-connector-and-install-an-on-premises-local-agent"></a><a name="configureconnector"></a>手順 20、 コネクタを構成し、オンプレミスのローカル エージェントをインストールする
 
 1. [LCS](https://lcs.dynamics.com/) にサインインし、オンプレミスの実装プロジェクトを開きます。
 2. メニュー ボタン (ハンバーガーまたはハンバーガー ボタンと呼ばれる場合もあります) を選択してから、**プロジェクト設定** を選択します。
@@ -1010,7 +1012,7 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
 14. ローカル エージェントが正常にインストールされてから、LCS のオンプレミス コネクタに戻るようにします。
 15. **3: 設定の検証** タブで、**メッセージ エージェント** を選択して、ローカル エージェントへの LCS 接続をテストします。 接続が正常に確立されると、下のメッセージが表示されます: 「検証が完了しました。 エージェントへの接続が確立されました。」
 
-### <a name="step-20-tear-down-credssp-if-remoting-was-used"></a><a name="teardowncredssp"></a>手順 20、 リモート処理が使用されたら、CredSSP を終了処理する
+### <a name="step-21-tear-down-credssp-if-remoting-was-used"></a><a name="teardowncredssp"></a>手順 21、 リモート処理が使用されたら、CredSSP を終了処理する
 
 セットアップ中にリモート処理スクリプトのいずれかが使用された場合は、セットアップ プロセスの中断時または完了後に、次のコマンドを実行してください。
 
@@ -1020,7 +1022,7 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
 
 以前のリモート処理 Windows PowerShell ウィンドウが誤って終了し、CredSSP が有効になったままである場合、このコマンドにより、コンフィギュレーション ファイルで指定されたすべてのコンピューター上で無効にされます。
 
-### <a name="step-21-deploy-your-finance--operations-environment-from-lcs"></a><a name="deploy"></a>手順 21、 LCS から Finance + Operations 環境を配置する
+### <a name="step-22-deploy-your-finance--operations-environment-from-lcs"></a><a name="deploy"></a>手順 22、 LCS から Finance + Operations 環境を配置する
 
 1. LCS で、オンプレミスの実装プロジェクトを開きます。
 2. **環境** \> **サンドボックス** に移動し、**コンフィギュレーション** を選択します。 必要な値を取得するには、プライマリ ドメイン コントローラ VM で次のコマンドを実行します。 その VM には、ADFS および DNS サーバー設定へのアクセス許可が必要です。
@@ -1057,13 +1059,13 @@ URL にアクセスできる場合、JavaScript Object Notation (JSON) ファイ
 
 ![正常に展開された環境。](./media/Deployed2021.png)
 
-### <a name="step-22-connect-to-your-finance--operations-environment"></a><a name="connect"></a>手順 22、 Finance + Operations 環境への接続
+### <a name="step-23-connect-to-your-finance--operations-environment"></a><a name="connect"></a>手順 23、 Finance + Operations 環境への接続
 
 - Web ブラウザーで、`https://[yourD365FOdomain]/namespaces/AXSF` に移動します。そこでは **yourD365FOdomain** がこのトピック前半の [手順 1. ドメイン名と DNS ゾーンの計画](#plandomain)セクションで定義したドメイン名です。
 
 ## <a name="known-issues"></a>既知の問題
 
-### <a name="when-you-run-the-new-d365fogmsaaccounts-cmdlet-you-receive-the-following-error-message-key-does-not-exist"></a>New-D365FOFOSAAccounts cmdlet を実行すると、次のエラー メッセージが表示されます: 「キーが存在しません」 
+### <a name="when-you-run-the-create-gmsaaccountsps1-script-you-receive-the-following-error-message-key-does-not-exist"></a>.\Create-GMSAAccounts.ps1 スクリプトを実行すると、次のエラー メッセージが表示されます: 「キーが存在しません」 
 
 ドメインで gMSA パスワードを初めて作成し生成する場合は、最初にキー配分サービス KDS ルート キーを作成する必要があります。 詳細については、[キー配分サービス KDS ルート キーの作成](/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key)を参照してください。
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: b8054e05ec8df53a8ca11c81cc073f31fe066b43
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: aa01c6325a14f9ee84db264e3a37ebf072077bdd
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781773"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548056"
 ---
 # <a name="development-and-continuous-delivery-faq"></a>開発と継続的な配信のよく寄せられる質問
 
@@ -131,7 +131,7 @@ VM ごとに毎月平均 15 USD のストレージ (非プレミアム) を追�
 
 ### <a name="can-more-than-one-developer-develop-concurrently-on-the-same-vm"></a>複数の開発者が同じ VM 上で同時に開発できますか。
 
-これはサポートされていません。 ただし、同じ VM の 1 つ以上の開発者アカウントをプロビジョニングできますが、同時に開発することはできません。 詳細については、 [開発マシンでの新しいユーザーの作成](enable-development-machine.md) を参照してください。
+これはサポートされていません。 ただし、同じ VM の 1 つ以上の開発者アカウントをプロビジョニングできますが、同時に開発することはできません。 詳細については、 [開発マシンでの新しいユーザーの作成](/d365F-O/fin-ops-core/dev-itpro/dev-tools/access-instances) を参照してください。
 
 Microsoft パートナーが 1 つ以上の顧客のコードを作成する場合は、顧客ごとに少なくとも 1 つの開発 VM を持つことをお勧めします。 顧客プロジェクトに従事している追加の開発者ごとに、1 つの追加の VM が必要です。 開発 VM は、ソース コードがバージョン コントロール (Azure DevOps) にチェックインされ、テスト データベースのバックアップを保持している限り、使い捨て資産と考えることができます。
 

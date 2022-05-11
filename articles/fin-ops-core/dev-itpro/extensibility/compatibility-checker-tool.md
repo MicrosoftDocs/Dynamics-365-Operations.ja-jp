@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: smnatara
 ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: da95f351797ad04eb131c4fbfa149db15a6029fc
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b35fb873f872bfe3a0469e43ae9f94c0ef53c52c
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781648"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661678"
 ---
 # <a name="compatibility-checker-tool"></a>互換性チェック ツール
 
@@ -113,7 +113,7 @@ CompatibilityChecker.exe -BaselineDirectory="\\servername\archive\Build1\Baselin
 次のいずれかの変更を行うと、テーブルの拡張子とテーブルのフィールドに対するテーブル参照が壊れることになります。
 
 + テーブル フィールド、フィールド グループ、インデックス、テーブルのマッピング、テーブルの関連付けを削除または名前変更する
-+ これらテーブルのプロパティ変更: **Extends**、**suportinheritance**、**TableType**、**SaveDataPerCompany**、**SaveDataPerPartition**
++ これらテーブルのプロパティ変更: **Extends**、**SupportInheritance**、**TableType**、**SaveDataPerCompany.Yes**、**SaveDataPerPartition**
 + これらのテーブル フィールドのプロパティの変更: **ExtendedDataType**、**Scale**、**文字列サイズ**
 + 次のテーブル インデックス プロパティを変更する：**AllowDuplicates.No** または **indextype**
 

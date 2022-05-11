@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 10.0.23 (2022 年 1 月) の新機能と変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.23 のプレビュー リリースの新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 12/13/2021
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 3abd689c0057b22ac3c0aa9ab40dd314ce811593
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: c8f2bb70a03e7c6596bb8e3a72a2f455cb53c9d7
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919488"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8613975"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10023-january-2022"></a>Dynamics 365 Commerce 10.0.23 (2022 年 1 月) の新機能と変更された機能
 
@@ -37,6 +37,7 @@ ms.locfileid: "7919488"
 
 | 機能領域   | フィーチャー                                                  | 詳細                                          |   に  によって有効化             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
+| Dynamics 365 Sales の統合 |   Dynamics 365 Sales を活用して、Commerce の企業間 (B2B) サイトから生成された見込み客を管理します。  | Commerce B2B Webサイトに対するビジネス パートナーの承認を管理するには、Sales を使用します。 Sales ソリューションに既に投資している組織は、B2B の e コマースのビジネス パートナー承認プロセスに対して、その潜在顧客と営業案件の概念を使用できます。 [Dynamics 365 Sales を使った B2B e コマース Web サイトでビジネス パートナー ユーザーを管理する](../b2b/prospect-management-sales.md) を参照してください。 | アプリのソースを使用する  |
 |  グローバル アドレス帳| 住所の設定で国/地域ごとに既定の都道府県を定義する | グローバル アドレス帳の住所設定で国/地域ごとに既定の都道府県を定義できるようになりました。 既定の都道府県が設定されている場合は、その国/地域に新しい郡または市のレコードが作成される際、それが都道府県フィールドに入力された規定値になります。 詳細については、[住所の設定](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md)を参照してください。 | 既定で有効 |
 |   グローバリゼーション |  [(インド) e コマースの GST](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/gst-e-commerce-india)    |  この機能により、インドの Dynamics 365 Commerce 顧客は、商品及びサービス税 (GST) が e コマース注文で計算されるよう確認することで、e コマース機能を実装できます。 詳細については、[インド向け e コマース サイトの商品及びサービス税 (GST) 統合](../localizations/apac-ind-e-commerce.md)を参照してください。  |  機能管理  |
 |   グローバリゼーション |   (東ヨーロッパ) 小売明細書に対する売上請求書および支払の決済の改善   |  この機能により、小売明細書から生成された売上請求書および支払の自動決済を正常に行います。 この機能は、チェコ共和国、エストニア、ハンガリー、ラトビア、リトアニア、ポーランド、ロシアに適用されます。   |  既定で有効  |
@@ -45,9 +46,9 @@ ms.locfileid: "7919488"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Dynamics 365 Commerce 10.0.23 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.23 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md) を参照してください。
+Dynamics 365 Commerce 10.0.23 には、プラットフォーム更新プログラムが含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.23 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグ修正については、Lifecycle Services (LCS) にサインインし、[KB 記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=627874) を参照してください。

@@ -2,7 +2,7 @@
 title: Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 description: このトピックでは、POS テスト レコーダーと Regression Suite Automation Tool (RSAT) を使用して、ユーザー受け入れテスト (UAT) を自動化する方法について説明します。
 author: mugunthanm
-ms.date: 08/10/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 098f783b9a626ec03255806a96291f13527500cc
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 1d99d36c9d9c86630dac9b78aad68906a682560a
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367906"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629309"
 ---
 # <a name="test-recorder-and-regression-suite-automation-tool-for-cloud-pos"></a>Cloud POS 用のレコーダーおよび Regression Suite Automation Tool のテスト
 
@@ -28,7 +28,7 @@ ms.locfileid: "8367906"
 
 このトピックでは、Cloud POS の新しいテスト レコーダー ツールを使用して、ユーザー受け入れテスト (UAT) とユーザー インターフェイス (UI) テストのビジネス シナリオを記録する方法について説明します。 また、Regression Suite Automation Tool (RSAT) を使用してテストの検証を自動化する方法についても説明します。 RSAT では、Microsoft Azure DevOps のテスト スイートを使用してテスト ケースをダウンロードします。 次に、テストの実行ステータスと共に、結果が Azure DevOps に報告されます。 テスト ケースは、Azure DevOps で手動で作成するか、または Microsoft Dynamics Lifecycle Services (LCS) の ビジネス プロセス モデラー (BPM) ツール から Azure DevOps に同期してから、RSAT に同期することができます。
 
-このトピックは、Dynamics 365 Retail および Dynamics 365 Finance バージョン 10.0.5 (2019 年 10 月) 以降に適用されます。
+このトピックは、Dynamics 365 Retail および Dynamics 365 Finance Version 10.0.5 (2019 年 10 月) およびそれ以降に適用されます。
 
 > [!NOTE]
 > テスト レコーダーは、Google Chrome または Microsoft Edge Web ブラウザーの Cloud POS でのみ使用されます。
@@ -164,7 +164,7 @@ POS で記録のテスト機能を有効にするには、バックオフィス�
 ### <a name="create-a-recording"></a>記録の作成
 
 > [!IMPORTANT]
-> レコーディングまたはテストの実行/再生を作成する前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (Dynamics 365 Commerce デモ データが使用されている場合にのみ適用) に移動します。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
+> レコーディングまたはテストの実行/再生を作成する前に、アプリ ツアーの表示およびサインイン後にアプリの紹介の表示をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (Dynamics 365 Commerce デモ データが使用されている場合にのみ適用) に移動します。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
 
 次の手順に従い、テスト レコーダーを使用して新しい記録を作成します。
 
@@ -275,7 +275,7 @@ RSAT の Microsoft Windows インストーラー (MSI) パッケージ ファイ
 このセクションでは、Azure DevOps からのテスト ケースの読み込み、自動化ファイルの生成、テスト パラメーターの変更、テストの実行、結果の調査、Azure DevOps への作業の保存方法について説明します。
 
 > [!NOTE]
-> Azure DevOps およびテスト ケースの設定の詳細については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。 テストの実行を開始する前に、この設定を完了する必要があります。 テストの実行/再生の前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
+> Azure DevOps およびテスト ケースの設定の詳細については、[Regression Suite Automation Tool のインストールおよびコンフィギュレーション](../../fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview.md)を参照してください。 テストの実行を開始する前に、この設定を完了する必要があります。 テストの実行/再生の前に、アプリ ツアーの表示およびサインイン後にアプリ紹介の表示をオフにします。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
 
 ### <a name="load-test-cases-and-create-parameter-files"></a>テスト ケースの読み込みとパラメーター ファイルの作成
 
@@ -308,7 +308,11 @@ RSAT で、変更する 1 つ以上のテスト ケースを選択してから�
 
 Excel ファイルには、**概要** タブに加えて、生成されたすべての変数の詳細を示す **変数** タブが含まれています。 POS は、記録セッション中に入力されたすべての入力値に対して、変数を自動的に生成します。 変数を個別に生成する必要はありません。 各変数には、一意の変数 ID があります。この ID は、テスト実行の 1 つのインスタンスで別のテスト ケースに順番に渡すことができます。 **変数** タブのすべての変数は、記録セッション中に入力された順序で表示されます。
 
-POS のテストケース間で変数または値を渡すには、RSAT ツールでテスト ケースを選択し、ツールの [Excel] アイコンを選択して、Variables.xlsx ファイルを開きます。 変数 ID (列C) 値をコピーして、[変数値] フィールド (列D) に貼り付けます。 たとえば、**テストケース 1 - variable.Xlsx** から **テストケース 2 - variable.Xlsx** へのレシート ID を渡すには、列C: c8cc0571-9a27-b3c5-0749-c26c3cca6afe から変数 ID 値をコピーします。 変数値列 D の値を、テストケース2 - variable.xlsx ファイルに、次のように中括弧を使用して貼り付けます：**{{ c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}**
+### <a name="pass-variables-between-test-cases"></a>テスト ケース間で変数を渡す
+
+POS のテストケース間で、または POS と本部テスト ケース間 (どちらかの方向) で変数または値を渡すには、RSAT でテスト ケースを選択してから、ツールの Excel 記号を選択して Variables.xlsx ファイルを開きます。 **変数 ID** フィールド (列 C) で値をコピーして、**変数値** フィールド (列 D) に貼り付けます。 
+
+たとえば、次の表からテスト ケースを使用しており、レシート ID を **テスト ケース 1 - variable.xlsx** ファイルから **テスト ケース 2 - variable.xlsx** ファイルに渡したいとします。 この場合、**テスト ケース 1 - variable.xlsx** ファイル (**c8cc0571-9a27-b3c5-0749-c26c3cca6afe**) の **変数 ID** フィールド (列 C) の値をコピーします。 次に **テスト ケース 2 - variable.xlsx** ファイルの **変数値** フィールド (列 D) に中括弧を使用して貼り付けます: **{{c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}**。 テストケースは、変数値を渡すために正しい順序で配列されなければならず、すべてのテスト ケースは同じインスタンスで実行される必要があります。
 
 ### <a name="test-case-1--variablexlsx"></a>テストケース 1 – Variable.xlsx
 
@@ -362,7 +366,7 @@ RSAT で、**実行** を選択して、選択したテスト ケースを実行
 
 ### <a name="creating-test-cases-by-using-the-test-recorder"></a>テスト レコーダーを使用したテスト ケースの作成
 
-+ レコーディングまたはテストの実行/再生を作成する前に、[アプリ ツアーの表示] と [ログイン後にアプリの紹介を表示] をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (Dynamics 365 Commerce デモ データが使用されている場合にのみ適用) に移動します。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
++ レコーディングまたはテストの実行/再生を作成する前に、アプリ ツアーの表示およびサインイン後にアプリの紹介の表示をオフにします。 これを行うには、**CPOS 設定 > アプリケーションのヘルプ** セクション (Dynamics 365 Commerce デモ データが使用されている場合にのみ適用) に移動します。 チャンネル データベースで次のスクリプトを実行して、デモ データでこれをオフにします: Update [ax].[SYSSERVICECONFIGURATIONSETTING] SET VALUE = '0' WHERE NAME = 'APPTOUR'。
 + Chrome 拡張機能を無効にする - 可能な場合は、記録して再生するのに使用した Chrome ブラウザーで Chrome 拡張機能を無効にします。 Chrome 拡張機能は DOM 要素の xpath を変更する場合があります。手順実行中に要素が見つからないため、テスト ケースが失敗になる可能性があるからです (xpath は記録とは異なります)。
 + 個々の記録を簡潔にし、1 人のユーザーが実行するビジネス タスク (販売トランザクションの作成など) に注目します。 この方法を使用すると、テスト ケースの管理と再利用が容易になります。
 + 機密情報を含むシナリオは記録しないでください。

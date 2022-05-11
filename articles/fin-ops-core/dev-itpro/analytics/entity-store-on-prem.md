@@ -4,7 +4,8 @@ description: このトピックでは、 オンプレミス配置にてエンテ
 author: MilindaV
 ms.date: 05/27/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 ms.search.form: EntityStoreOnPrem
 audience: IT Pro
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3814dfe2ec5d749ffbea3592c3f1f203aadedb50b72dc904ff0a9e4cbc2ac6da
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 491e52e25f28257777ce19d69ad032c6b42a993d
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755840"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566059"
 ---
 # <a name="powerbicom-integration-with-on-premises-environments"></a>オンプレミス環境との PowerBI.com の統合
 

@@ -4,7 +4,8 @@ description: このトピックでは、オンプレミス環境でのコマー�
 author: jashanno
 ms.date: 11/22/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +13,12 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 37f95ffb3a9049a36991d2b45dda7d4cc0f704d1
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: fc79c17512500f8955831b6b191ca284248cfc6a
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860833"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565899"
 ---
 # <a name="installation-steps-for-retail-channel-components-in-an-on-premises-environment"></a>オンプレミス環境での小売チャネルのコンポーネントのインストール手順
 

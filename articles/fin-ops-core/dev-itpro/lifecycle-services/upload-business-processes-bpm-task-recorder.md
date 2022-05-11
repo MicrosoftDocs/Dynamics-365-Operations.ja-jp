@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e340e7ab7515f5d56ac223b275b9e841ec2efd9bc14c07b81b8f7964f700d3b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9c80eaf24a40ebbacc43fc031cde442f66a9cbc
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747223"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547954"
 ---
 # <a name="upload-custom-business-processes-to-business-process-modeler-bpm"></a>独自の業務プロセスからビジネス プロセス モデラー (BPM) へのアップロード
 
@@ -45,7 +45,7 @@ Microsoft Dynamics Lifecycle Services では、タスク レコーダーの更�
 
 ## <a name="additional-resources"></a>追加リソース
 
-[Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)](./ax-2012/business-process-modeler-lcs.md)
+[Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)](/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs)
 
 [ビジネス プロセス モデラー (BPM) ビジネス プロセス ライブラリ](business-process-libraries-business-process-modeler.md)
 

@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-ms.openlocfilehash: e9893a994dd86d8e70899f52758daec4c7ee7538
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3a7b3784107d02eb7e1043f1a1673015f2eda8de
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782395"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656707"
 ---
 # <a name="update-code-and-environments-for-commerce-projects"></a>Commerce プロジェクトのコードと環境の更新
 
@@ -27,7 +27,7 @@ ms.locfileid: "7782395"
 
 データまたはコードのいずれかを更新することにより、環境を更新できます。
 
-データを更新する複数の方法があります。 環境にデータを取得する方法を示す例については、[Finance and Operations アプリとサード パーティ サービス間の統合](../../dev-itpro/data-entities/integration-overview.md) を参照してください。
+データを更新する複数の方法があります。 環境にデータを取得する方法を示す例については、[財務と運用アプリとサードパーティ サービス間の統合](/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview) を参照してください。
 
 環境を更新するときは、データベース全体の移動も考慮する必要があります。 このアプローチにより、データをある環境から別の環境に素早く簡単に複製できます。
 
@@ -51,7 +51,7 @@ ms.locfileid: "7782395"
 
 便利で一般的な操作の 1 つでは、データベース全体が 1 つの環境から別の環境に移動されます。 たとえば、追加機能を開発する準備をしているときに、生産データベースを開発環境に移動することがあります。 また、運用プロセスの一部として、ゴールデン セットアップ データベースを生産データベースに移動することもできます。
 
-詳細については、[Azure SQL から SQL Server へのデータベースのコピー](/dynamics365/commerce/dev-itpro/dbmovement-operations)を参照してください。 ソースおよび宛先の環境に同じ binary バージョンがない場合、ビルドおよびデータベースの同期 (開発環境の) または配置 (サンドボックスまたは実稼働環境の) のいずれかを行う必要があります。
+詳細については、[Azure SQL から SQL Server へのデータベースのコピー](/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations)を参照してください。 ソースおよび宛先の環境に同じ binary バージョンがない場合、ビルドおよびデータベースの同期 (開発環境の) または配置 (サンドボックスまたは実稼働環境の) のいずれかを行う必要があります。
 
 別の環境から移動されたデータベースを復元するたびに、データベース内の特定のリンクは、中断することができます。 環境再プロビジョニング ツールでは、使用されている環境タイプに関係なく、既定データベース グループのすべての壊れたリンクを修正します。 一般的なガイドラインでは、データベースが別の環境から来る場合、環境再プロビジョニング ツールを実行する必要があります。
 

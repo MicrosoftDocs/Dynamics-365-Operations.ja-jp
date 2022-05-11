@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f62e00b98651d2a7324c0592222a2a689ba8c84
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 8902e172b5a766c6bbd5a4c86e6cccdcb279292d
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105428"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554577"
 ---
 # <a name="system-requirements-and-prerequisites"></a>システム要件と前提条件
 
@@ -29,14 +29,18 @@ ms.locfileid: "8105428"
 
 + アジア
 + オーストラリア
++ ブラジル
 + カナダ
 + ヨーロッパ
++ フランス
 + インド
 + 日本
 + 南アフリカ
++ スイス
 + アラブ首長国連邦
 + イギリス
 + 米国
+
 
 > [!NOTE]
 > 現在、追加の地域をサポートする計画はありません。

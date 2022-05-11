@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 52a90628d6a72d769a69a6969633997cf6c48e94
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6e055a90965147709fa4a9b5fb5f6336de689df7
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781947"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661636"
 ---
 # <a name="single-user-testing-using-performance-sdk-and-task-recorder"></a>パフォーマンス SDK とタスク レコーダーによるシングルユーザー テスト
 
@@ -74,7 +74,7 @@ Visual Studio および パフォーマンス ソフトウェア デベロップ
 エンドツーエンドのシナリオの記録が完了後、タスクレコーディングをもとに C\# パフォーマンス テスト スクリプトを生成する必要があります。 
 
 1. 開発環境では、Microsoft Visual Studio を管理者権限で開きます。
-2. **PerfSDK** フォルダから、 **PerfSDKSample** ソリューションを開きます。 Tier1 サンドボックス、またはクラウドホスト環境では、PerfSDKフォルダは一般的に \<Service volumne\>:\\PerfSDK\\PerfSDKLocalDirectory にあります。
+2. **PerfSDK** フォルダから、 **PerfSDKSample** ソリューションを開きます。 Tier1 サンドボックス、またはクラウドホスト環境では、PerfSDKフォルダは一般的に \<Service volume\>:\\PerfSDK\\PerfSDKLocalDirectory にあります。
 
     [![PerfSDK ディレクトリ。](./media/single-user-test-05.png)](./media/single-user-test-05.png)
 

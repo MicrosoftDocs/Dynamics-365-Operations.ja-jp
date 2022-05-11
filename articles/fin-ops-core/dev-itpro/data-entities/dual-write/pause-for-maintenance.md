@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af0b4812a7c4e18e9b6e4bb706c1b34fa305331f
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 56aa76798f8b3d66448d6192d5b03b5d7823181a
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105421"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554579"
 ---
 # <a name="pause-dual-write-for-maintenance"></a>メンテナンス時に二重書き込みを一時停止する
 
@@ -31,7 +31,8 @@ ms.locfileid: "8105421"
 > テーブル マップが **一時停止** の状態中に、次の制限が適用されます。 
 > - 一時停止を有効にできるのは、最大 7 日間です。
 > - キューに入れることができるレコードの最大サイズは 1 GB です。 
-> 
+>
+> 一時停止したマップは、一時停止の開始日から 7 日以内に再度有効化する必要があります。さもなければ保留中の変更が失われ、データの整合性に影響を及ぼす可能性があります。 
 > 制限のいずれか 1 つに到達すると、同期が再開され、キューに入れられたレコードが追いつかれるまで、結果として全ての追加レコードがブロックされます。 キャッチ アップを完了するために、ユーザーがジョブを手動で再開する必要があります。
 
 

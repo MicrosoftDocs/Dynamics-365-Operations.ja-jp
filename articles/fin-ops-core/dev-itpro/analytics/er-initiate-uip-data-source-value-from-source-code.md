@@ -2,7 +2,7 @@
 title: ソース コードからユーザー入力パラメーターのデータ ソース値を開始する
 description: このトピックでは、ソース コードからユーザー入力パラメーター タイプのデータ ソース値を開始する方法について説明します。
 author: NickSelin
-ms.date: 12/01/2020
+ms.date: 04/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 85280cb2c5b12ae21b8720a663ae551d66065877
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 9702e8482f68652aca828534a3eae94f9a8adc28
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323858"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644913"
 ---
 # <a name="initiate-data-source-values-of-the-user-input-parameter-type-from-source-code"></a>ソース コードからユーザー入力パラメーターのデータ ソース値を開始する
 
@@ -107,7 +107,7 @@ ERObjectsFactory::createFormatMappingRunByFormatMappingId(formatMappingID, fileN
             var traverser = new ERModelDefinitionParametersTraverser(parameters);
             while (traverser.moveNext())
             {
-                ERIImportFormatDataSourceContract current = ERCast::asObject(traverser.current()) as ERImportFormatDataSourceContract;
+                ERIImportFormatDataSourceContract current = ERCast::asObject(traverser.current()) as ERIImportFormatDataSourceContract;
                 if (current)
                 {
                     current.parmInputDataStream(File::UseFileFromURL(DMFStagingWriter::getDownloadURLFromFileId(_uploadedStatement)));

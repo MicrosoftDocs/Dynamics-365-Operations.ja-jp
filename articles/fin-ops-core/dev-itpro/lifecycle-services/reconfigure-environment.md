@@ -4,7 +4,8 @@ description: このトピックでは、新しいプラットフォームまた�
 author: PeterRFriis
 ms.date: 12/05/2017
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +15,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 54acc151a3125724ec4227563d8997ad90a9066fd5eff284b9957f712f1909dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5de3e91da96e03e6e6764951e998fed47352b550
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739447"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566063"
 ---
 # <a name="reconfigure-environments-to-take-a-new-platform-or-topology"></a>新しいプラットフォームまたはトポロジを使用するために環境を再構成
 

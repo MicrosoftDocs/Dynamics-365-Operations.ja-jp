@@ -4,7 +4,8 @@ description: Dynamics 365 Finance + Operations (on-premises) は、顧客デー�
 author: cabeln
 ms.date: 11/30/2021
 ms.topic: overview
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +17,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 72207868b5e0e43e2668e3b63a0f5c45fa649957
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e6c76500f850b3c7042d5a96f1802d666481c5bb
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984120"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566023"
 ---
 # <a name="on-premises-deployment-overview"></a>オンプレミス配置の概要
 

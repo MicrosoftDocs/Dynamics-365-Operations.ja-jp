@@ -2,7 +2,7 @@
 title: Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了
 description: このトピックでは、Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了に関する詳細情報を提供します。
 author: ShellyBakke
-ms.date: 10/29/2021
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 035bb1545a331414193ea628094e001121a8f036
-ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
+ms.openlocfilehash: 1b4b12a2950159560a4836a18af1936a5c6ca4a7
+ms.sourcegitcommit: 724c976d080fd28d797f2406c6a6e635ca79a441
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7725063"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8615675"
 ---
 # <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-dynamics-ax-2012-r2-and-dynamics-ax-2012-r3"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了
 
 [!include[banner](../includes/banner.md)]
 
-Dynamics AX 2009 Service Pack 1 (SP1)、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートは、2018 年 10 月 9 日に終了します。 その日より後は、2022 年 4 月 12 日まで続く延長サポート期間の終わりまで、これら 3 つのバージョンのセキュリティ修正プログラムのみ提供され続けます。 詳細については、[support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX) を参照してください。
+Dynamics AX 2009 Service Pack 1 (SP1)、Dynamics AX 2012、Dynamics AX 2012 R2 のメインストリーム サポートは、2018 年 10 月 9 日に終了します。 セキュリティ修正プログラムは、2022 年 4 月 12 日に終了した延長サポート期間の終わりまで、これら 3 つのバージョンに対して提供されました。 詳細については、[Microsoft ライフサイクル ポリシー](/lifecycle/products/?terms=Dynamics%20AX)を参照してください。
 
-Dynamics AX 2012 R3 のメインストリーム サポートは、2021 年 10 月 12 日で終了します。  その日より後は、2023 年 1 月 10 日まで続く延長サポート期間の終わりまで、セキュリティ修正プログラムのみ提供され続けます。  詳細については、[support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX) を参照してください。
+Dynamics AX 2012 R3 のメインストリーム サポートは、2021 年 10 月 12 日で終了します。  その日以降、2023 年 1 月 10 日まで続く延長サポート期間の終わりまで、セキュリティ修正プログラムのみ提供され続けます。  詳細については、[Microsoft ライフサイクル ポリシー](/lifecycle/products/?terms=Dynamics%20AX)を参照してください。
 
-Dynamics 365 Finance、Supply Chain Management、Commerce および Project Operations などの Finance and Operations アプリを最新バージョンにアップグレードすることを推奨します。
+Dynamics 365 Finance、Supply Chain Management、Commerce、および Project Operations などの財務と運用アプリを最新バージョンのにアップグレードすることをお勧めします。
 
 - Dynamics AX 2009 Service Pack 1 ユーザーは、入手可能な「[移行ツール](../../dev-itpro/migration-upgrade/upgrade-home-page.md)」を使用してください。
-- Dynamics AX 2012 および Dynamics AX 2012 R2 ユーザーは、入手可能なアップグレード ツールを使って Dynamics AX 2012 R3 を通じて Finance and Operations アプリにアップグレードする必要があります。 アップグレードに関する追加情報は、[AX 2012 から Finance and Operations アプリへのアップグレード](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md) を参照してください。
+- Dynamics AX 2012 および Dynamics AX 2012 R2 の顧客は、利用可能な更新プログラムを使い、Dynamics AX 2012 R3 で Finance and Operations アプリを更新する必要があります。 アップグレードに関する追加情報は、[AX 2012 から財務と運用アプリへのアップグレード](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)を参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -75,7 +75,7 @@ LCS 警告プロジェクトには、識別または報告された法律上の�
 
 ### <a name="can-i-get-visibility-into-microsoft-plans-for-releases-of-new-regulatory-features"></a>Microsoft の新しい規制機能のリリースに関する計画について可視性を利用できますか ?
 
-はい、LCS 発行検索では、Dynamics 365 Finance Supply Chain Management、Commerce、および Project Operationsに関する最新の規制更新に関する情報が公開されます。  
+はい、LCS 発行検索では、Dynamics 365 Finance、Supply Chain Management、Commerce、および Project Operations に関する最新の規制更新に関する情報が公開されます。  
 
 #### <a name="are-details-about-released-regulatory-features-available"></a>リリースされた規制に関する機能の詳細を利用できますか ?
 
@@ -85,7 +85,7 @@ LCS 警告プロジェクトには、識別または報告された法律上の�
 はい、Dynamics 365 用のクラウド ライセンスを購入している場合、およびプレビュー早期アクセス プログラム (PEAP) にアクセスできる場合は、この操作を実行できます。 当局によって早期に指定された規制上の変更の場合は、この機能を法適用日前日 (または最初の提出日の最新の日付) に PEAP で利用可能になります。
 
 ### <a name="can-i-access-the-code-and-configurations-for-regulatory-features-prior-to-a-release"></a>リリース前に、規制の機能のコードとコンフィギュレーションにアクセスできますか ?
-はい、コードは **ソフトウェア配置可能パッケージ** にある共有資産ライブラリの LCS プロジェクト **PEAP 資産** で利用可能です。  PEAP プログラムにログインするには、[Finance and Operations アプリケーションの早期アクセスプログラムのプレビュー](https://aka.ms/peap) を完了します。 
+はい、コードは **ソフトウェア配置可能パッケージ** にある共有資産ライブラリの LCS プロジェクト **PEAP 資産** で利用可能です。  PEAP プログラムにサインアップするには、[財務と運用アプリケーションのプレビュー アーリー アクセス プログラム](https://aka.ms/peap)アンケートを完了します。 
 
 構成はグローバル リポジトリで利用可能です。 詳細については、[ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする](../../dev-itpro/analytics/er-download-configurations-global-repo.md)を参照してください。
 

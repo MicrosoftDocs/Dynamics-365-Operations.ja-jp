@@ -2,19 +2,19 @@
 title: Dynamics 365 Translation Service Azure DevOps の拡張機能
 description: このトピックでは、Dynamics 365 Translation Service DevOps 拡張機能を Azure DevOps ワークフローに統合する方法を説明します。
 author: joshsantana
-ms.date: 02/09/2022
+ms.date: 04/14/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: joshsantana
 ms.search.validFrom: 2021-11-19
-ms.openlocfilehash: 5f5b561b3d10661cb7d9eea2b978911391a5da2e
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 88e285d4933549759ed45bc898114f8c6c30c565
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109847"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603042"
 ---
 # <a name="dynamics-365-translation-service-azure-devops-extension-public-preview"></a>Dynamics 365 Translation Service Azure DevOps 拡張機能 (パブリック プレビュー)
 
@@ -25,9 +25,6 @@ Azure DevOps の Microsoft Dynamics 365 Translation Service (DTS) 拡張機能�
 DTS パイプライン タスクの使用を開始するには、組織に拡張機能をインストールし、Translation Service に接続する必要があります。 詳細については、このトピックで後述する[拡張機能の設定](#setting-up-the-extension) セクションを参照してください。
 
 このトピックは、[Azure Pipelines](/azure/devops/pipelines/create-first-pipeline) の実用的な知識を持っていることを前提としています。
-
-> [!NOTE]
-> Azure DevOps の DTS 拡張機能は、パブリック プレビューとしてのみ使用できます。 DTS は現在米国でのみ展開されているため、データは地域の境界外で処理および保管されることがあります。
 
 ## <a name="running-a-task"></a>タスクの実行
 

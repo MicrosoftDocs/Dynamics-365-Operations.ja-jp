@@ -2,7 +2,7 @@
 title: データ センター間で環境を移動する
 description: このトピックでは、Microsoft によって管理されている環境を別の Microsoft Azure データ センターに移動する方法について説明します。
 author: ClaudiaBetz-Haubold
-ms.date: 06/04/2018
+ms.date: 04/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chaubold
 ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
-ms.openlocfilehash: efd10b0435158bfd906009235e83dd0c96400fe1572438f7fe61a942bb4c8500
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b9d0ec9390ea39c369ce117c195255cb8f1dd14
+ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754973"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8660396"
 ---
 # <a name="move-environments-between-data-centers"></a>データ センター間で環境を移動する
 
@@ -75,5 +75,7 @@ Microsoft により同じデータ センターですべての環境を維持す
 
 実稼働環境を既に配置している場合は、すべてのサンドボックス環境の移動が完了した後に、実稼働環境を別のデータセンターに移動するためのサポート要求を開く必要があります。 このシナリオはまれであり、移動を完了するための自動/セルフサービス アクションはありません。 このシナリオでは、Azure BLOB ストレージに格納されているファイルも移動されます。 実稼働環境を別のデータ センターに移動するために必要な保守ウィンドウとダウンタイムの詳細については、次を参照してください。[サービスの説明](https://go.microsoft.com/fwlink/?LinkId=867755&clcid=0x409)と関連するサービス レベル契約 (SLA) のドキュメント。
 
-
+> [!NOTE]
+> [主権クラウドとローカル クラウド展開オプション](../../dev-itpro/deployment/deployment-options-geo.md)を有効にするために使用できる複数の LCS インスタンスがあります。 これらの異なる LCS インスタンス間の運用環境の移動はサポートされていません。 
+ 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

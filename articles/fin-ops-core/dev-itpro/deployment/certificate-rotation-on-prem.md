@@ -2,9 +2,10 @@
 title: 証明書のローテーション
 description: このトピックでは、既存の証明書を置く方法と、新しい証明書を使用するために環境内の参照を更新する方法について説明します。
 author: PeterRFriis
-ms.date: 03/23/2022
+ms.date: 04/07/2022
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +13,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25
-ms.openlocfilehash: 4f2000597d92b28002e47ecea6dc1745a1ac6f30
-ms.sourcegitcommit: 0d5ee97670bdeb1986aaea880f32962b5e374751
+ms.openlocfilehash: 3fd32c932f9d5d44279c4919802b03b43f3a8657
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468033"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565533"
 ---
 # <a name="certificate-rotation"></a>証明書のローテーション
 
@@ -35,22 +36,35 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 >
 > 証明書ローテーションをする前に Service Fabric Cluster を 7.2.x 以降にアップグレードします。
 
-## <a name="preparation-steps"></a>準備段階 
+## <a name="update-your-infrastructure-scripts"></a>インフラストラクチャ スクリプトの更新 
 
 1. プロセス中に作成した元の **インフラストラクチャ** フォルダーの名前を変更して、[LCS からのセットアップスクリプトをダウンロード](setup-deploy-on-premises-pu41.md#downloadscripts)するようにします。 フォルダーの名前を **InfrastructureOld** に変更します。
 
-2. [LCS のダウンロード セットアップ スクリプト](setup-deploy-on-premises-pu41.md#downloadscripts)から最新のセットアップスクリプトをダウンロードします。 **infrastructure** という名前のフォルダーにファイルを解凍します。
+2. [LCS のダウンロード セットアップ スクリプト](setup-deploy-on-premises-pu41.md#downloadscripts)から最新のセットアップスクリプトをダウンロードします。 クラスター内のすべてのコンピュータがアクセス可能なファイル共有にファイルを解凍します。 フォルダーの名前を **インフラストラクチャ** にします。
 
-3. **Configtemplate .Xml** および **clusterconfig. json** を **InfrastructureOld** から **インフラストラクチャ** にコピーします。
+    > [!NOTE]
+    > バージョン 2.14.0 では、スクリプトの各バージョンは共有アセット ライブラリ内に独自のエントリを持ちます。
 
-4. 必要に応じて、**configtemplate.xml** で証明書をコンフィギュレーションします。 [証明書のコンフィギュレーション](setup-deploy-on-premises-pu41.md#configurecert) の手順に従って、特に、次の手順を実行します。
+3. **InfrastructureOld** フォルダー内の **ConfigTemplate.xml** ファイルとのスキーマ バージョンを **インフラストラクチャ** フォルダー内の **ConfigTemplate.xml** ファイルのスキーマ バージョンと比較します。
 
-    ```powershell
-    # Create self-signed certs
-    .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    ```
+    - スキーマ バージョンを変更されていない場合は、**InfrastructureOld** フォルダーから **ConfigTemplate.xml** ファイルを **インフラストラクチャ** フォルダーにコピーします。
+    - スキーマ バージョンが変更されている場合は、以下の手順に従います。
 
-    または、Active Directory 証明書サービス (AD CS) 証明書に切り替える場合は、この情報を使用します。
+        1. **InfrastructureOld** フォルダーから **ConfigTemplate.xml** ファイルを **インフラストラクチャ** フォルダーにコピーします。
+        2. 次のコマンドを実行します。
+        
+            ```powershell
+            .\Update-ConfigTemplate.ps1 -OldConfigTemplate .\ConfigTemplateOld.xml -NewConfigTemplate .\ConfigTemplate.xml
+            ```
+
+        > [!NOTE]
+        > コンフィギュレーション ファイルのスキーマの変更を導入する新しいバージョンのスクリプト (バージョン 2.14.0 以降) は、コンフィギュレーション ファイルを新しいスキーマに移行するロジックが含みます。
+        > 
+        > スクリプトには現在、バージョン 1.5 以前のスキーマから更新するロジックはありません。 そのような場合は、古い **ConfigTemplate.xml** ファイルを新しい **ConfigTemplate.xml** ファイルと比較して手動で移行する必要があります。
+
+## <a name="preparation-steps"></a>準備段階 
+
+1. **ConfigTemplate.xml** ファイルで、必要に応じて証明書をコンフィギュレーションします。 [証明書のコンフィギュレーション](setup-deploy-on-premises-pu41.md#configurecert)の手順に従います。 具体的には、以下の手順に従います。
 
     ```powershell
     # Only run the first command if you have not generated the templates yet.
@@ -61,15 +75,25 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
     > [!NOTE]
     > AD CS スクリプトは、ドメイン コントローラー、またはリモート サーバー管理ツールがインストールされている Windows Server コンピューターで実行する必要があります。
     > AD CS 機能は、インフラストラクチャ スクリプトのリリースが 2.7.0 以降である場合にのみ使用できます。 
-    >
+
+    または、自己署名証明書を引き続き使用する場合は、次のコマンドを実行します。
+
+    ```powershell
+    # Create self-signed certs
+    .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+
+    > [!WARNING]
     > 自己署名証明書は、実稼働環境では使用しないでください。 公開されている信頼できる証明書を使用している場合は、ConfigTemplate.xml ファイル内のこれらの証明書の値を手動で更新します。
+
+    証明書を生成したら、次のコマンドを実行します。
 
     ```powershell
     # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-5. [VM の設定](setup-deploy-on-premises-pu41.md#setupvms)に進みます。 このプロセスに必要な具体的な手順は次のとおりです。
+1. [VM の設定](setup-deploy-on-premises-pu41.md#setupvms)に進みます。 このプロセスに必要な具体的な手順は次のとおりです。
 
     1. 各 VM で実行する必要があるスクリプトをエクスポートします。
     
@@ -79,23 +103,23 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
         ```
 
     2. 各 `infrastructure\VMs<VMName>` フォルダーのコンテンツを対応する VM にコピーし (リモート処理スクリプトが使用されている場合は、コンテンツをターゲット VM に自動的にコピーする)、存在する場合は次のスクリプトを実行します。 これらの手順を管理者として実行します。
-    
+
         ```powershell
         # If remoting, only execute
         # .\Configure-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
 
         .\Configure-PreReqs.ps1
         ```
-    
-     3. 次のスクリプトが存在する場合は、実行します。 これらの手順を管理者として実行します。
-    
+
+    3. 次のスクリプトが存在する場合は、実行します。 これらの手順を管理者として実行します。
+
         ```powershell
         # If remoting, only execute
         # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml 
 
         .\Complete-PreReqs.ps1
         ```       
-    
+
     4. 次のスクリプトを実行して VM のセットアップを検証します。
     
         ```powershell
@@ -104,14 +128,11 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
         .\Test-D365FOConfiguration.ps1
         ```
 
-6. Axdataenciphermentcert 証明書がローテーションされている場合は、資格情報の .json ファイルを再生成する必要があります。 詳細については、「[資格情報の暗号化](setup-deploy-on-premises-pu41.md#encryptcred)」を参照してください。
-
-7. 後で LCS で使用できる値を保持するには、次の PowerShell コマンドを実行します。 詳細については、[LCS からのオンプレミス環境の配置](setup-deploy-on-premises-pu41.md#deploy) を参照してください。
+1. 後で LCS で使用できる値を取得するには、次の PowerShell コマンドを実行します。 詳細については、[LCS からのオンプレミス環境の配置](setup-deploy-on-premises-pu41.md#deploy) を参照してください。
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-
 
 ## <a name="activate-new-certificates-within-service-fabric-cluster"></a>Service Fabric cluster 内での新しい証明書のアクティブ化
 
@@ -129,7 +150,8 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 
     ```powershell
     Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
-    ``` 
+    ```
+
 4. 編集するために **Clusterconfig.json** ファイルを開き、次のセクションを検索します。 セカンダリ サムプリントが定義されている場合は、続行する前に、[古い Service Fabric 証明書をクリーンアップ](#cleanupoldsfcerts) に移動します。
 
     ```json
@@ -200,7 +222,7 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
     "clusterConfigurationVersion": "2.0.0",
     "apiVersion": "10-2017",
     ```
-    
+
 8. Clusterconfig.json ファイルを保存します。
 
 9. 次の PowerShell コマンドを実行します。
@@ -226,8 +248,7 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
     ```
 
     > [!NOTE] 
-    > 「2 つの異なる証明書から 2 つの異なる証明書へのアップグレードは許可されていません」というエラーが表示された場合は、以前の証明書ローテーション プロセスで古い Service Fabric 証明書をクリーンアップしなかったことを意味します。 このドキュメントの最後にある[古い Service Fabric 証明書のクリーンアップ](certificate-rotation-on-prem.md#cleanupoldsfcerts) セクションを参照し、このセクションの手順を繰り返します。  
-
+    > 「2 つの異なる証明書から 2 つの異なる証明書へのアップグレードは許可されていません」というエラー メッセージが表示される場合があります。 このメッセージは、以前の証明書ローテーション プロセスで古い Service Fabric 証明書をクリーンアップしなかったことを示しています。 そのような場合、このトピックの後半にある[古い Service Fabric 証明書のクリーンアップ](certificate-rotation-on-prem.md#cleanupoldsfcerts) セクションを参照し、このセクションの手順を繰り返します。  
 
 ### <a name="service-fabric-with-or-without-expired-certificates-cluster-not-accessible"></a>期限が切れた証明書 (クラスターにアクセスできない)を含むまたは含まないサービスファブリック
 
@@ -235,13 +256,13 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
 
 ## <a name="update-the-localagent-certificate"></a>LocalAgent 証明書を更新する
 
-次の場合は、LocalAgent を再インストールする必要があります:
+次のような場合は、LocalAgent を再インストールする必要があります。
 
-- Service Fabric Cluster/サーバー証明書を変更しました。
+- Service Fabric Cluster/ サーバー証明書を変更しました。
 - Service Fabric クライアント証明書を変更しました。
 - LocalAgent 証明書を更新しました。
 
-1. **serverCertThumprint** および **clientCertThumbprint** の値を新しいサムプリントで置き換えて、現在の localagent-config.json を更新します。
+1. **serverCertThumbprint** および **clientCertThumbprint** の値を新しいサムプリントで置き換えて、現在の **current localagent-config.json** ファイルを更新します。
 
     ```json
     {
@@ -254,6 +275,7 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
         }
     },
     ```
+
 1. いずれかの Orchestrator ノードに対して次の PowerShell コマンドを実行します。
 
     ```powershell
@@ -348,7 +370,7 @@ Dynamics 365 Finance + Operations (on-premises) 環境で使用される証明�
     ```
 
 > [!NOTE]
-> インフラストラクチャ フォルダーを Application Object Server (AOS) ノードにコピーするか、AOS ノードからスクリプトを実行してください。
+> Application Object Server (AOS) ノードからスクリプトを実行するよう確認してください。
 
 ## <a name="update-deployment-settings-in-lcs"></a>LCS の展開設定の更新
 

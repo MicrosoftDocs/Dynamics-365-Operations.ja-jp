@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 10.0.26 (2022 年 5 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Commerce 10.0.26 の新機能または変更された機能について説明します。
 author: josaw1
-ms.date: 03/22/2022
+ms.date: 04/22/2022
 ms.topic: article
 ms.technology: ''
 audience: Developer, IT Pro
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-03-31
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 77493fa0c761ab3d1565490c37e02b4c5c0c0bdc
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 8cdaa361511d8110d8fd1264d2e2025f9ede4fe7
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464861"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644485"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10026-may-2022"></a>Dynamics 365 Commerce 10.0.26 (2022 年 5 月) の新機能および変更された機能
 
@@ -38,9 +38,10 @@ ms.locfileid: "8464861"
 | 機能領域   | フィーチャー                                                  | 詳細                                          |   に  によって有効化             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
 |   グローバリゼーション      |    [ブラジル向け Adyen に対応した Dynamics 365 Payment Connector を使用した分割払い](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/payments-installments-dynamics-365-payment-connector-adyen-brazil)    |   この機能は、Adyen に対応した Dynamics 365 Payment Connector の機能を拡張し、ブラジルへの分割払いをサポートします。 詳細については、[ブラジル向け Commerce POS の Adyen に対応した Dynamics 365 Payment Connector](../localizations/latam-bra-adyen.md) を参照してください。       | 詳細については、[Dynamics 365 の Adyen 支払コネクタの設定](https://docs.adyen.com/plugins/microsoft-dynamics)を参照してください。 |
-|   グローバリゼーション      |    [POS からの直接会計統合](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos)    |     この機能では、POS で実行される会計コネクタを作成する機能を追加することで、会計統合フレームワークを拡張します。 このタイプのコネクタは、HTTP API を提供する会計デバイスまたはサービスと通信し、店舗内でプラグインやデプロイされる専用の物理マシンが不要になります。 このリリースでは、オーストリア、チェコ共和国、およびドイツの POS からの直接会計統合のサンプルが提供されます。   | 機能管理<p>*POS レジスターからの直接会計統合* |
-|   グローバリゼーション      |    [拡張会計コネクタ構成](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration)    |   会計登録が可能な店舗で選択した POS レジスターの会計登録を無効にするオプション。 店舗関係者は、非販売操作 (在庫管理操作など) にレジスターを利用したり、売上を作成し、その売上を会計登録が可能なレジスターに反映させたりできるようになります。 詳細情報については、[コマース チャネルの会計統合の設定](../localizations/setting-up-fiscal-integration-for-retail-channel.md)を参照してください          | 機能管理<p>*POS レジスターの会計登録状態* |
+|   グローバリゼーション      |    [POS と EFR との直接会計統合のサンプル](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos)    |     この機能では、POS で実行される会計コネクタを作成する機能を追加することで、会計統合フレームワークを拡張します。 このタイプのコネクタは、HTTP API を提供する会計デバイスまたはサービスと通信し、店舗内でプラグインやデプロイされる専用の物理マシンが不要になります。 このリリースでは、[オーストリア](../localizations/emea-aut-fi-sample.md)、[チェコ共和国](../localizations/emea-cze-fi-sample.md)、および[ドイツ](../localizations/emea-deu-fi-sample.md) の POS からの直接会計統合のサンプルが提供されます。   | 機能管理<p>*POS レジスターからの直接会計統合*<p>会計登録プロセスの構成 |
+|   グローバリゼーション      |    [選択した POS レジスターの会計登録の無効化](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration)    |   この機能は、会計登録が有効な店舗で選択した POS レジスターの会計登録を無効にするオプションを追加して、会計年度統合フレームワークを拡張します。 店舗関係者は、非販売操作 (在庫管理操作など) にレジスターを利用したり、売上を作成し、その売上を会計登録が可能なレジスターに反映させたりできるようになります。 詳細については、[会計登録制限を使用したレジスターの設定](../localizations/setting-up-fiscal-integration-for-retail-channel.md#set-up-registers-with-fiscal-registration-restrictions)を参照してください。 | 機能管理<p>*POS レジスターの会計登録状態* |
 |  支払  |   [eコマースでの PayPal カート チェックアウト サポート](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/paypal-cart-checkout-support-e-commerce) | [PayPal 向け Dynamics 365 Payment Connector](../paypal.md)| 開発者のオプトイン |
+| Store Commerce |  [Store Commerce は、デュアル ディスプレイをサポートして、カート関連の情報を表示する](../retail-peripherals-overview.md) | デュアル ディスプレイでは顧客向けディスプレイにカート関連の情報が表示され、 [デュアル ディスプレイはカスタム情報を表示するために拡張できます](../dev-itpro/pos-dual-display-extension.md)。| オプトイン |
 
 
 

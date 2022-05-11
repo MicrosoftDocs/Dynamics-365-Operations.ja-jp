@@ -5,6 +5,8 @@ author: jorisdg
 ms.date: 11/29/2021
 ms.topic: article
 audience: Developer
+ms.prod: dynamics-365
+ms.service: ''
 ms.reviewer: tfehr
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 2c218395e764e6c55fac10cd51960991908813d6
-ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
+ms.openlocfilehash: 64b47403cc770489afc588fac82f6254aa987ade
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7894732"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565897"
 ---
 # <a name="independent-software-vendor-isv-licensing-on-premises"></a>独立系ソフトウェア ベンダー (ISV) ライセンス (オンプレミス)
 
@@ -70,7 +72,7 @@ ISV ライセンスの福利厚生についての一般情報、ソリューシ�
     ```
 
 3. 生成されたライセンスを fabric:/AXSF を実行しているマシンの 1 つのフォルダーにコピーし、fabric:/AXSF が正常であることを確認します。
-4. AOS コンピューターのいずれかから **Import-LicensePackage.ps1** スクリプトを実行します。 このスクリプトは、LCS 共有アセット ライブラリの **モデル** タブにある最新の **Microsoft Dynamics 365 Finance + Operations (オンプレミス)、配置スクリプト** フォルダーにあります。 スクリプトに渡す必要があるパラメータの一覧を次に示します。
+4. AOS コンピューターのいずれかから **Import-LicensePackage.ps1** スクリプトを実行します。 このスクリプトは、LCS 共有アセット ライブラリの **モデル** タブにある最新の **Microsoft Dynamics 365 Finance + Operations (on-premises)、配置スクリプト** フォルダーにあります。 スクリプトに渡す必要があるパラメータの一覧を次に示します。
 
    - **LicenseFilesPath** – インポートする必要があるライセンス ファイルを含むフォルダーのパス。 
    - **SqlUser** – AOS を実行する credentials.json ファイルに指定されている同じユーザー。

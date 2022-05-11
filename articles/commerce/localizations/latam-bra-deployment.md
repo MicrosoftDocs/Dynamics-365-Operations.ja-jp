@@ -13,23 +13,22 @@ ms.search.industry: Retail
 ms.author: akviklis
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7176ab1a273c9f766bc9242f105c1053499369bf
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 3bfa337a3d0589cb470262300191b7a4074685d4
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407974"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614111"
 ---
 # <a name="set-up-and-deploy-the-dynamics-365-commerce-localization-for-brazil"></a>ブラジル向け Dynamics 365 Commerce ローカライズの設定と展開
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、ブラジル向け Microsoft Dynamics 365 Commerce ローカライズの設定と展開の方法について説明します。
 
 ブラジル向け Dynamics 365 Commerce ローカライズには、次の Commerce コンポーネントが含まれます: Commerce Runtime (CRT)、Retail Server、および販売時点管理 (POS)。 これらの拡張機能を使用すると、電子会計書類の登録が延期される場合、ブラジル固有の税金の計算、小売販売用の電子会計ドキュメントの生成、カスタムフィールドを持つ DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) および CF-e-SAT (Cupom Fiscal Eletrônico - Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) の会計レシートの印刷、ブラジル固有の顧客情報の管理、オフライン代替モードでの販売の発行が可能になります。 ブラジル向け Commerce ローカライズの詳細については、[ブラジルのローカライズ スコープ](../../finance/localizations/latam-bra-scope.md) および[ブラジル向け Commerce ローカライズ](latam-bra-commerce-localization.md) を参照してください。
 
-このトピックで説明する拡張機能は、会計統合のフレームワークに基づいて開発されました。 会計統合機能の詳細については、[Commerce チャネルの会計統合の概要](fiscal-integration-for-retail-channel.md) を参照してください。 [電子申告 (ER) は ](../../dev-itpro/analytics/general-electronic-reporting.md)、電子会計ドキュメントの電子化の形式を実装するために使用されます。
+このトピックで説明する拡張機能は、会計統合のフレームワークに基づいて開発されました。 会計統合機能の詳細については、[Commerce チャネルの会計統合の概要](fiscal-integration-for-retail-channel.md) を参照してください。 [電子申告 (ER) は ](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting)、電子会計ドキュメントの電子化の形式を実装するために使用されます。
 
 ## <a name="enable-brazil-specific-commerce-functionality"></a>ブラジル固有の Commerce 機能の有効化
 
@@ -47,7 +46,7 @@ ms.locfileid: "8407974"
 
 ## <a name="set-up-electronic-reporting"></a>電子申告の設定
 
-Microsoft Dynamics Lifecycle Services (LCS) から電子会計ドキュメント用の ER コンフィギュレーションをダウンロードできます。 詳細については、[電子申告 (ER) コンフィギュレーションのインポート](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md) を参照してください。 次の手順に示すコンフィギュレーションの最新バージョンをダウンロードする必要があります。
+Microsoft Dynamics Lifecycle Services (LCS) から電子会計ドキュメント用の ER コンフィギュレーションをダウンロードできます。 詳細については、[電子申告 (ER) コンフィギュレーションのインポート](/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations) を参照してください。 次の手順に示すコンフィギュレーションの最新バージョンをダウンロードする必要があります。
 
 Commerce 本社で電子申告を設定するには、次の手順を実行します。
 

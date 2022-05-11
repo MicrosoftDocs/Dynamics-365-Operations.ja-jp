@@ -4,7 +4,8 @@ description: このトピックでは、カスタマイズと拡張機能を開�
 author: kfend
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +15,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: ef7c9efc8441025185a58b69e0f150da03a771d49967f0b4b7d0479e6b0bc7d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5b85ea3c9d234129ad2171981a5ebe50b76d0a4
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748360"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566025"
 ---
 # <a name="develop-and-deploy-custom-models-to-on-premises-environments"></a>カスタム モデルの開発とオンプレミス環境への配置
 

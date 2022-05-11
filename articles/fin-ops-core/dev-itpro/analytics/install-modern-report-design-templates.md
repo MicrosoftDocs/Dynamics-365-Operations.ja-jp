@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 970d1a56749ac573b0da0095738cd11b0996cd25
-ms.sourcegitcommit: 2949636d2fd6aea8507e102379cf9b1a188e4529
+ms.openlocfilehash: 737309761d869fa4144594ca5004fa12db5e3cd8
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7650937"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565600"
 ---
 # <a name="install-modern-report-design-templates"></a>現代レポートのデザイン テンプレートのインストール
 
@@ -63,7 +63,7 @@ ms.locfileid: "7650937"
     ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
     ```
 
-3. **<AOSservicedrive>:\\AOSService\\PackagesLocalDirectory\\bin** フォルダーに移動します。
+3. **\<AOSServiceDrive\>:\\AOSService\\PackagesLocalDirectory\\bin** フォルダーに移動します。
 4. 次のコマンドを実行します。
 
     ```Console

@@ -1,5 +1,5 @@
 ---
-title: Typescript および小売販売時点管理 (POS) の C# プロキシ
+title: TypeScript および小売販売時点管理 (POS) の C# プロキシ
 description: このトピックでは、コマース プロキシに関する情報と、その生成方法について説明します。
 author: mugunthanm
 ms.date: 08/26/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-ms.openlocfilehash: 9934f7aa04a596c9f86759c01c483fe05e30aee5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 11d286973f2c5765caa233d16c1cbdaa5d3f500c
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782821"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661708"
 ---
-# <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>Typescript および小売販売時点管理 (POS) の C# プロキシ
+# <a name="typescript-and-c-proxies-for-retail-point-of-sale-pos"></a>TypeScript および小売販売時点管理 (POS) の C# プロキシ
 
 [!include [banner](../../includes/banner.md)]
 
@@ -36,12 +36,12 @@ Commerce プロキシは、Retail Server に追加されたすべてのユーザ
 
 クロス プラットフォーム シナリオをサポートするプロキシのタイプには 2 つあります。
 
-- **Typescript プロキシ** – POS は、Typescript プロキシを使用して Retail サーバー API および CRT エンティティにアクセスします。 POS が Retail サーバーを使用する場合は、Typescript プロキシが必要です。 それ以外の場合、POS はオペレーションまたはワークフローのために Retail サーバーと通信することができません。
+- **TypeScript プロキシ**- POS は、TypeScript プロキシを使用して Retail Server API および CRT エンティティにアクセスします。 POS が Retail Server を使用する場合は、TypeScript プロキシが必要です。 それ以外の場合、POS はオペレーションまたはワークフローのために Retail サーバーと通信することができません。
 - **C# プロキシ** - POS はオフラインのときに C# プロキシを使用します。 (POS がオフラインの場合、Retail サーバーを使用せずに CRT と直接通信します)。POS は、Dynamics 電子商取引プラットフォームにもこのプロキシを使用します。 カスタマイゼーションを POS がオフラインのときに動作させ、電子商取引クライアントを Retail Server API にアクセスするようにするには、C＃ プロキシを生成する必要があります。
 
-Typescript プロキシを生成する手順と C# プロキシを生成する手順は異なります。 このトピックの後半では、各タイプのプロキシを生成する方法について説明します。
+TypeScript プロキシを生成する手順と C# プロキシを生成する手順は異なります。 このトピックの後半では、各タイプのプロキシを生成する方法について説明します。
 
-## <a name="generate-the-typescript-proxy-10011-or-lower-retail-server"></a>Typescript プロキシ (10.0.11 以前) Retail サーバーの生成
+## <a name="generate-the-typescript-proxy-10011-or-lower-retail-server"></a>TypeScript プロキシ (10.0.11 以前) Retail Server の生成
 
 Microsoft Dynamics Commerce バージョン 10.0.12 以降を使用している場合は、[新しい Ratail サーバー拡張機能 API を作成する](retail-server-icontroller-extension.md) で説明している手順に従ってください。
 
@@ -54,11 +54,11 @@ Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator.<ver
 2. 管理者としてコマンド プロンプト ウィンドウを開き、**...\\Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator\<version_number>\tools** フォルダーへ移動します。 次のコマンドを実行してプロキシを生成します。 プロキシ ファイルは同じフォルダーに生成されます。
 
   
-  POS Typescript プロキシ
+  POS TypeScript プロキシ
 ```Console 
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
 ```
- 電子商取引の Typescript プロキシ
+ E コマース TypeScript プロキシ
  ```Console 
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptmoduleextensions
 ```

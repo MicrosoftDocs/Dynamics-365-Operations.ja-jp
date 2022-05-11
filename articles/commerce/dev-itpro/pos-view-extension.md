@@ -2,7 +2,7 @@
 title: POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 description: このトピックでは、[顧客の追加/編集] 画面などの既存の POS ビューを拡張する方法について説明します。
 author: mugunthanm
-ms.date: 03/24/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 63827793cf72ac44a40157363f159ed481f9c34b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6998c379bf927361d9f9a24c76e7d221a8ade85b
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781709"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629375"
 ---
 # <a name="extend-pos-views-to-add-custom-columns-and-app-bar-buttons"></a>POS ビューの拡張によるカスタム列およびアプリ バー ボタンの追加
 
@@ -33,6 +33,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 - **カスタム アプリケーション バーのボタン** - 選択したページのアプリケーション バーにカスタム ボタンを追加します。
 - **カスタム列セット** - 選択したページのグリッド列をカスタム列に置き換えます。
 - **カスタム コントロール** - 選択したページに、新しいコントロールを追加します。
+- **カスタム フィルター** – 選択したページにカスタム フィルターを追加します。
 
 ## <a name="pos-views-that-currently-support-extensions"></a>現在拡張機能をサポートする POS ビュー
 
@@ -51,7 +52,7 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 | InventoryLookupView             | 無                            | 有                          | 有                                  |
 | ShowJournalView                 | 無                            | 有                          | 有                                  |
 | SimpleProductDetailsView        | はい                           | いいえ                           | はい                                  |
-| AddressAddEditView              | はい                           | いいえ                           | はい                                    |
+| AddressAddEditView              | はい                           | いいえ                           | はい                                  |
 | PaymentView                     | いいえ                            | いいえ                           | はい                                  |
 | PriceCheckView                  | はい                           | いいえ                           | はい                                   |
 | PriceCheckViewPhone             | いいえ                            | いいえ                           | はい                                   |
@@ -80,12 +81,24 @@ POS ビューでは、次の拡張ポイントとパターンがサポートさ�
 
 > [!NOTE]
 > 上記に表示される表は、リリースされた最新バージョンおよび修正プログラムに基づいて更新されています。 旧バージョンでは、これらの拡張ポイントの一部は使用できません。
-
+>
 > 仕訳帳の表示 (行グリッド) と 返品トランザクション ビューでは、行サブ フィールドを使用してカスタム列をサポートしています。 これらのサブ フィールドは、情報コード メッセージ、シリアル番号、割引の値などのように、列ではなく行として表示されます。
 
 ## <a name="custom-filter-extension"></a>カスタム フィルターの拡張機能
 
-カスタム フィルターの拡張機能は **仕訳帳表示ビュー**、**注文検索ビュー**、**FulfillmentLine ビュー**、および **在庫ドキュメント出荷および入荷ビュー** でサポートされます。 **注文検索ビュー** は拡張機能を使用してユーザー インターフェイス (UI) に検索用の既定パラメーターを設定することもサポートしています。 たとえば、店舗検索において既定のパラメーターを追加する場合は、拡張機能を使用して UI に表示することでそれを実行できます。 
+次の表の POS ビューでは、カスタム フィルター拡張機能がサポートされています。 **注文検索ビュー** は拡張機能を使用してユーザー インターフェイス (UI) に検索用の既定パラメーターを設定することもサポートしています。 たとえば、店舗検索において既定のパラメーターを追加する場合は、拡張機能を使用して UI にそのパラメーターを表示することができます。 
+
+| POS ビュー                                   | カスタム フィルターはサポートされていますか?  | 既定のフィルター パラメーター?    | リリース |
+|--------------------------------------------|-------------------------------|-----------------------------|--------------------------------|
+| ShowJournalView                            | 有効                           | 無効                          |                                |
+| SearchOrdersView                           | 有効                           | 有効                         |                                |
+| FulfillmentLineView                        | 有効                           | 無効                          |                                |
+| InventoryDocumentListView                  | 有効                           | 無効                          | 10.0.23                        |
+| InventoryDocumentShippingAndReceivingView  | 有効                           | 無効                          | 10.0.25                        |
+| InventoryAdjustmentDocumentListView        | 有効                           | 無効                          | 10.0.25                        |
+| InventoryAdjustmentDocumentWorkingView     | 有効                           | 無効                          | 10.0.25                        |
+| InventoryDocumentStockCountingListView     | 有効                           | 無効                          | 10.0.25                        |
+| InventoryDocumentStockCountingWorkingView  | 有効                           | 無効                          | 10.0.25                        |
 
 カスタム フィルターの拡張機能のサンプル コードは、Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts) で使用可能です。
 

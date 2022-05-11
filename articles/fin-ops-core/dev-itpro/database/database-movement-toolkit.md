@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 9c4923a748996ce4c69aada3a7b9e86031d02087
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 93e468211c9decb995955ca1ca252b1bbb1ef03d
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986075"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548066"
 ---
 # <a name="database-movement-toolkit"></a>データベース移動ツールキット
 
@@ -39,7 +39,7 @@ ms.locfileid: "7986075"
 
 現在、このツールキットは次のシナリオをサポートしています。 今後、さらに追加される予定です。  
 
-* [AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード](../migration-upgrade/upgrade-data-sandbox-dacpac.md)
+* [AX 2012 からのアップグレード - サンドボックス環境でのデータ アップグレード](/d365F-O/fin-ops-core/dev-itpro/database/data-upgrade-self-service)
 
 ## <a name="versions"></a>バージョン
 

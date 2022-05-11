@@ -2,7 +2,7 @@
 title: インドのキャッシュ レジスターの配置ガイドライン
 description: このトピックは、インドのローカライズ用配置ガイドです。
 author: AlexChern0v
-ms.date: 09/16/2019
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,217 +13,42 @@ ms.search.industry: Retail
 ms.author: jiaqia
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
-ms.openlocfilehash: 5611043573aaf6f3deede451c3503a99b752c5b5ad8c1c6e0671c0799d154473
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 541b26531b1f5a28c44316be47f63cd9ee443d49
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730961"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644716"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-india"></a>インドのキャッシュ レジスターの配置ガイドライン
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 このトピックは、インドの Dynamics 365 Commerce アプリのローカライズで商品及びサービス税 (GST) の要件を有効にする方法を示す配置ガイドです。 インドのローカライズの詳細については、[インド向けのキャッシュ レジスターの商品及びサービス税 (GST) 統合](./apac-ind-cash-registers.md) を参照してください。
 
-このサンプルは、小売ソフトウェア開発キット (SDK) の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
+> [!WARNING]
+> - [新たに独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、インド向けの GST 統合には使用できません。 Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で、Retailソフトウェア開発キット (SDK) の以前のバージョンを使用する必要があります。 今後のバージョンで、コマース ローカライズの新しい独立したパッケージと拡張モデルのサポートを計画しています。
+> - 小売 SDK のダウンロードと使用方法については、 [小売 ソフトウェアの開発キット(SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。
 
-このサンプルは Commerce runtime (CRT) の拡張機能で構成されます。 このサンプルを実行するには、CRT プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 ファイルの更新がされていない場合は、Microsoft Visual Studio Online (VSO)のようなソース管理システムを利用することを推奨します。
-
-> [!NOTE]
-> 使用しているアプリのバージョンによって、このトピックの手順の一部が異なります。 詳細については、 [Dynamics 365 Retail の新機能および変更された機能](../get-started/whats-new.md) を参照してください。
+この機能は、Commerce Runtime (CRT)、ハードウェア ステーション、販売時点管理 (POS) で構成されます。 この機能を使用するには、CRT 拡張機能の構成を変更する必要があります。 POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 どのファイルも変更されていない場合は、Microsoft Visual Studio Online (VSO) のようなソース管理システムを利用することを推奨します。
 
 ## <a name="prerequisites"></a>必要条件
 
-Visual C++ 再頒布可能パッケージが商品及びサービス税 (GST) 計算を実行するマシン上にあることを確認します。 クラウド POS、およびオンライン モードの Modern POS の場合は、このマシンは小売サーバーとなります (小売サーバーは、コマース 10.0.8 とそれ以降で Commerce Scale Unit と呼ばれます)。 オフライン モードの Modern POS の場合、それは Modern POS マシン自身です。 パッケージを取得するには、[Visual C++ 再頒布可能パッケージをダウンロード](https://www.microsoft.com/download/details.aspx?id=48145)を参照してください。
+Visual C++ 再頒布可能パッケージが GST 計算を実行するマシン上にあることを確認します。 クラウド POS、およびオンライン モードの Modern POS の場合、このマシンは Commerce Scale Unit です。 オフライン モードの Modern POS の場合、それは Modern POS マシン自身です。 パッケージをダウンロードする方法については、[Visual C++ 再頒布可能パッケージをダウンロード](https://www.microsoft.com/download/details.aspx?id=48145)を参照してください。
 
 ## <a name="development-environment"></a>開発環境
 
-サンプルをテストして拡張できるように開発環境を設定するには、次の手順に従います。
+機能をテストして拡張できるように開発環境を設定するには、次の手順を実行します。
 
 ### <a name="the-crt-extension-components"></a>CRT 拡張コンポーネント
 
-CRT サンプルには、CRT 拡張コンポーネントが含まれます。 次の手順を完了するには、CRT ソリューション **CommerceRuntimeSamples.sln** を開きます。 このソリューションは **RetailSdk\\SampleExtensions\\CommerceRuntime** の下にあります。
+1. CRT 用拡張コンフィギュレーション ファイルを検索します。
 
-# <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-1. **Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。
-2. 以下のファイルを検索します:
-
-    - **Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:
-
-        - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
-
-    - **Reference\\Newtonsoft.Json\\9.0.0.0** フォルダー内:
-
-        - Newtonsoft.Json.dll
-
-    - **Reference\\TaxEngine** フォルダー内:
-
-        - Microsoft.Dynamics365.Tax.Core.dll
-        - Microsoft.Dynamics365.Tax.DataAccessor.dll
-        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-        - Microsoft.Dynamics365.Tax.DataModel.dll
-        - Microsoft.Dynamics365.Tax.Metadata.dll
-        - Microsoft.Dynamics365.LocalizationFramework.dll
-        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-        - Microsoft.Dynamics365.XppSupportLayer.dll
-
-    - 以下のフォルダーを **Reference\\Z3** フォルダー内で見つけます:
-
-        - x86
-        - x64
-
-3. 11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:
-
-    - **小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。
-    - **Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。
-
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
-
-    - **小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。
+    - **Commerce Scale Unit:** ファイル名は **Commerceruntime.ext.config** で、Microsoft インターネット インフォメーション サービス (IIS) Commerce Scale Unit サイト下の **bin\\ext** フォルダーにあります。
     - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
 
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
-    ```
-
-    > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
-
-# <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-1. **Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。
-2. 以下のファイルを検索します:
-
-    - **Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:
-
-        - Contoso.Commerce.Runtime.GenericTaxEngine.dll
-
-    - **References\\Newtonsoft.Json.9.0.1\\lib\\net45** フォルダー内:
-
-        - Newtonsoft.Json.dll
-
-    - **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** フォルダー内:
-
-        - Microsoft.Dynamics365.LocalizationFramework.dll
-        - Microsoft.Dynamics365.Tax.Core.dll
-        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-        - Microsoft.Dynamics365.Tax.DataAccessor.dll
-        - Microsoft.Dynamics365.Tax.DataModel.dll
-        - Microsoft.Dynamics365.Tax.Metadata.dll
-
-    - **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** フォルダー内:
-
-        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-        - Microsoft.Dynamics365.XppSupportLayer.dll
-
-    - 以下のフォルダーを **References\\Z3.4.5.0\\lib\\net40** フォルダーで探します:
-
-        - x86
-        - x64
-
-3. 11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:
-
-    - **小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。
-    - **Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。
-
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
-
-    - **小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。
-    - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
-
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
-    ```
-
-    > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
-
-# <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-1. **Runtime.Extensions.GenericTaxEngine** プロジェクトを探して、構築します。
-2. 以下のファイルを検索します:
-
-    - **Extensions.GenericTaxEngine\\bin\\Debug** フォルダー内:
-
-        - Contoso.Commerce.Runtime.GenericTaxEngine.dll
-
-    - **References\\Newtonsoft.Json.9.0.1\\lib\\net45** フォルダー内:
-
-        - Newtonsoft.Json.dll
-
-    - **References\\Microsoft.Dynamics.AX.TaxEngine.8.0.26\\XppModule\\TaxEngine\\bin** フォルダー内:
-
-        - Microsoft.Dynamics365.LocalizationFramework.dll
-        - Microsoft.Dynamics365.Tax.Core.dll
-        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-        - Microsoft.Dynamics365.Tax.DataAccessor.dll
-        - Microsoft.Dynamics365.Tax.DataModel.dll
-        - Microsoft.Dynamics365.Tax.Metadata.dll
-
-    - **References\\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\\XppModule\\ElectronicReporting\\bin** フォルダー内:
-
-        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-        - Microsoft.Dynamics365.XppSupportLayer.dll
-
-    - 以下のフォルダーを **References\\Z3.4.5.0\\lib\\net40** フォルダーで探します:
-
-        - x86
-        - x64
-
-3. 11 のアセンブリ ファイル、および x64 と x86 フォルダーを CRT 拡張機能フォルダーにコピーします:
-
-    - **小売サーバー:** アセンブルを Microsoft インターネット インフォメーション サービス (IIS) 小売サーバーのサイト場所の下の **\\bin\\ext** フォルダーにコピーします。
-    - **Modern POS 上のローカル CRT:** アセンブリをローカル CRT クライアント ブローカーの場所の下の **\\ext** フォルダーにコピーします。
-
-4. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
-
-    - **小売サーバー:** ファイルは **commerceruntime.ext.config** で、IIS 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。
-    - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
-
-5. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
-    ```
-
-    > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
-
-# <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-汎用税エンジン コンポーネントはシールド拡張機能の一部です。
-
-1. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
-
-    - **小売サーバー:** ファイルは **commerceruntime.ext.config** で、Microsoft インターネット インフォメーション サービス (IIS) 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。
-    - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
-
-2. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
-
-    ``` xml
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
-    ```
-
-    > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては *いけません*。 これらのファイルはカスタマイズのためのものではありません。
-
-# <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
-
-1. CRT の拡張機能のコンフィギュレーション ファイルを検索します。
-
-    - **小売サーバー:** ファイルは **commerceruntime.ext.config** で、Microsoft インターネット インフォメーション サービス (IIS) 小売サーバー サイトの場所の下の **bin\\ext** フォルダーにあります。
-    - **Local CRT on Modern POS:** ファイル名は **CommerceRuntime.MPOSOffline.Ext.config** で、ローカル CRT クライアント ブローカーがある場所の下にあります。
-
-2. 拡張機能コンフィギュレーション ファイルで CRT の変更を登録します。
+2. 次の例に示すように、拡張コンフィギュレーション ファイルに CRT 変更を登録します。
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia" />
@@ -234,155 +59,57 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     > 上に示すように、拡張機能の順序を保持します。
 
     > [!WARNING]
-    > commerceruntime.config および CommerceRuntime.MPOSOffline.config ファイルを編集しては **いけません**。 これらのファイルはカスタマイズのためのものではありません。
+    > **commerceruntime.config** および **CommerceRuntime.MPOSOffline.config** ファイルを編集してはいけません。 これらのファイルはカスタマイズのためのものではありません。
 
----
+### <a name="the-commerce-scale-unit-extension-components"></a>Commerce Scale Unit の拡張コンポーネント
 
-### <a name="the-extension-components"></a>拡張コンポーネント
-
-1. IIS Retail Server サイトがある場所の下にあるルート フォルダーの **web.config** を開きます。 Retail Server はコマース 10.0.8 およびそれ以降では Commerce Scale Unit と呼ばれます。
+1. Commerce Scale Unit サイトがある場所の下にあるルート フォルダーの **web.config** ファイルを開きます。
 2. コンフィギュレーション ファイルの **extensionComposition** セクションで拡張機能を登録します。
-
-# <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
 
 ``` xml
 <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.TaxRegistrationIdIndia" />
 ```
 
----
 ### <a name="the-clientbroker-extension-components"></a>ClientBroker 拡張コンポーネント
 
 1. ローカル CRT クライアント ブローカーの場所の下にある **RetailProxy.MPOSOffline.ext.config** を開きます。
 2. コンフィギュレーション ファイルの **extensionComposition** セクションで、プロキシ拡張機能を登録します。
 
-# <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
-
 ``` xml
 <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.TaxRegistrationIdIndia" />
 ```
 
----
-
 ### <a name="the-modern-pos-extension-components"></a>Modern POS 拡張コンポーネント
 
-税登録の ID 拡張機能を有効にします。
-
-# <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
+税登録の ID 拡張機能を有効にするには、次の手順に従います。
 
 1. **RetailSdk\POS\ModernPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。 また、Modern POS が Run コマンドを使用して、Microsoft Visual Studio から実行できることを確認します。 (Modern POS をカスタマイズしないでください。 ユーザー アカウント制御 [UAC] を有効にして、以前にインストールした Modern POS のインスタンスをアンインストールする必要があります。)
-
-2. **POS.Extensions\extensions.json** で、次の行を追加することによって拡張機能を有効にします。
+2. **POS.Extensions\extensions.json** ファイルで、次の行を追加することによって拡張機能を有効にします:
 
     ``` xml
     {
-      "baseUrl": "Microsoft/TaxRegistrationId.IN"
+        "baseUrl": "Microsoft/TaxRegistrationId.IN"
     }
     ```
 
 3. ソリューションをビルドします。
 4. Modern POS を実行し、機能をテストします。
 
----
-
 ### <a name="the-cloud-pos-extension-components"></a>クラウド POS 拡張コンポーネント
 
-税登録の ID 拡張機能を有効にします。
-
-# <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-> [!NOTE]
-> このバージョンには、この手順は適用されません。
-
-# <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
+税登録の ID 拡張機能を有効にするには、次の手順に従います。
 
 1. **RetailSdk\POS\CloudPOS.sln** でソリューションを開き、エラーなくコンパイルできるかどうかを確認します。
 2. **POS.Extensions\extensions.json** で、次の行を追加することによって拡張機能を有効にします。
 
     ``` xml
     {
-      "baseUrl": "Microsoft/TaxRegistrationId.IN"
+        "baseUrl": "Microsoft/TaxRegistrationId.IN"
     }
     ```
 
 3. ソリューションをビルドします。
 4. クラウド POS を実行し、機能をテストします。
-
----
 
 ### <a name="set-up-required-parameters-in-headquarters"></a>バックオフィスで要求されるパラメーターを設定します
 
@@ -394,32 +121,6 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
 
 1. **RetailSdk\\Assets** フォルダーの下の **commerceruntime.ext.config** および **CommerceRuntime.MPOSOffline.Ext.config** コンフィギュレーション ファイルで、以下の行を **合成** セクションに追加します。
 
-    # <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
-    ```
-
-    # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
-    ```
-
-    # <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.GenericTaxEngine" />
-    ```
-
-    # <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-    ``` xml
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
-    ```
-
-    # <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
-
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
@@ -428,257 +129,27 @@ CRT サンプルには、CRT 拡張コンポーネントが含まれます。 �
     > [!IMPORTANT]
     > 上に示すように、拡張機能の順序を保持します。
 
-    ---
-
 2. **RetailSdk\\Assets** フォルダーの下の **RetailProxy.MPOSOffline.ext.config** コンフィギュレーション ファイルで、以下の行を **合成** セクションに追加します。
-
-    # <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.TaxRegistrationIdIndia" />
     ```
 
-    ---
-
 3. Web のコンフィギュレーション ファイルを更新します。 **RetailSDK\Packages\RetailServer\Code\web.config** ファイルの **extensionComposition** セクションに次の行を追加します。
-
-    # <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.TaxRegistrationIdIndia" />
     ```
 
-    ---
-
-4. **RetailSdk\\BuildTools** フォルダーの下の **Customization.settings** パッケージ カスタマイズ構成ファイルで、以下の行を **ItemGroup** セクションに追加して、配置可能パッケージ内の CRT 拡張機能を含めます。
-
-    # <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-    ``` xml
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.Tax.Core.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.Tax.Metadata.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.Tax.DataAccessor.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.Tax.DataAccessFramework.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.Tax.DataModel.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.LocalizationFramework.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.LocalizationFrameworkCore.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.ElectronicReportingMapping.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\TaxEngine\Microsoft.Dynamics365.XppSupportLayer.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json\9.0.0.0\Newtonsoft.Json.dll" />
-    ```
-
-    # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-    ``` xml
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.GenericTaxEngine.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.Core.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.Metadata.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataAccessor.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataAccessFramework.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataModel.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.7.3.42\XppModule\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFramework.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.XppSupportLayer.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" />
-    ```
-
-    # <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-    ``` xml
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.GenericTaxEngine.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.Core.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.Metadata.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataAccessor.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataAccessFramework.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.Tax.DataModel.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.TaxEngine.8.0.26\XppModule\TaxEngine\bin\Microsoft.Dynamics365.LocalizationFramework.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.LocalizationFrameworkCore.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.ElectronicReportingMapping.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Microsoft.Dynamics.AX.ElectronicReporting.8.0.26\XppModule\ElectronicReporting\bin\Microsoft.Dynamics365.XppSupportLayer.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" />
-    ```
-
-    # <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    ---
-
-5. 以下のファイルを修正して、配置可能パッケージに Z3 ライブラリを含めます。
-
-    # <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-    - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
-    - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
-    - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
-
-    以下の行を **ItemGroup** セクションに追加します。
-
-    ```xml
-    <_bin_ext_Z3_x86_File Include="..\..\References\Z3\x86\*.*" />
-    <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
-    ```
-
-    **Sdk.ModernPOSSetup.csproj** および **Sdk.ModernPOSSetupOffline.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
-
-    ```xml
-    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
-    ```
-
-    **Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
-    ```xml
-    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
-    ```
-
-    # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-    - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
-    - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
-    - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
-
-    以下の行を **ItemGroup** セクションに追加します。
-
-    ```xml
-    <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
-    <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
-    ```
-
-    **Sdk.ModernPOSSetup.csproj** および **Sdk.ModernPOSSetupOffline.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
-
-    ```xml
-    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
-    ```
-
-    **Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
-
-    ```xml
-    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
-    ```
-
-    # <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-    - Packages\\\_SharedPackagingProjectComponents\\Sdk.ModernPos.Shared.csproj
-    - Packages\\RetailServer\\Sdk.RetailServerSetup.proj
-
-    以下の行を **ItemGroup** セクションに追加します。
-
-     ```xml
-    <_bin_ext_Z3_x86_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x86\*.*" />
-    <_bin_ext_Z3_x64_File Include="$(SdkReferencesPath)\Z3.4.5.0\lib\net40\x64\*.*" />
-     ```
-
-    **Sdk.ModernPos.Shared.csproj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
-
-    ```xml
-    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
-    ```
-
-    **Sdk.RetailServerSetup.proj** では、以下の行も **\<Target Name="CopyPackageFiles"\>** セクションに追加します。
-
-    ```xml
-    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
-    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
-    ```
-
-    # <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    ---
-
-6. 税登録の ID POS 拡張機能を有効にします。
-
-    # <a name="retail-731"></a>[Retail 7.3.1](#tab/retail-7-3-1)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-732-and-later"></a>[Retail 7.3.2 およびそれ以降](#tab/retail-7-3-2)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-813-and-later"></a>[Retail 8.1.3 およびそれ以降](#tab/retail-8-1-3)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-100-and-later"></a>[Retail 10.0 およびそれ以降](#tab/retail-10-0)
-
-    > [!NOTE]
-    > このバージョンには、この手順は適用されません。
-
-    # <a name="retail-1006-and-later"></a>[Retail 10.0.6 およびそれ以降](#tab/retail-10-0-6)
-
-    **RetailSDK\POS\Extensions\extensions.json** を開いて、次の行を追加します。
+4. **RetailSDK\POS\Extensions\extensions.json** ファイルで、以下の行を追加して税登録の ID POS 拡張機能を有効にします:
 
     ``` xml
     {
-      "baseUrl": "Microsoft/TaxRegistrationId.IN"
+        "baseUrl": "Microsoft/TaxRegistrationId.IN"
     }
     ```
 
-7. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
-8. Microsoft Dynamics Lifecycle Services (LCS) 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。
-
+5. Retail SDK 全体で **msbuild** を実行し、配置可能なパッケージを作成します。
+6. LCS 経由または手動でパッケージを適用します。 詳細については、 [小売の配置可能なパッケージの作成](../dev-itpro/retail-sdk/retail-sdk-packaging.md)を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

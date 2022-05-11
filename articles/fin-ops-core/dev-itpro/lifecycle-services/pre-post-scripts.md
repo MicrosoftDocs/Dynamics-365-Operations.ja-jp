@@ -4,7 +4,8 @@ description: このトピックでは、ローカル エージェントの配置
 author: faix
 ms.date: 08/07/2019
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: dc54f99dd54ed4f01667456217758029c556fd008a3ac9289a589610dc507613
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b54005e0f6f88922f2bba7621c3ea22ccf4588aa
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739453"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566191"
 ---
 # <a name="local-agent-pre-deployment-and-post-deployment-scripts"></a>ローカル エージェントの配置前スクリプトおよび配置後スクリプト
 

@@ -1,10 +1,11 @@
 ---
-title: Dynamics 365 Finance + Operations (オンプレミス) への AX 2012 のデータ アップグレード プロセス
-description: このトピックでは、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance  + Operations (オンプレミス) 10.0.X にアップグレードするプロセスについて説明します。
+title: Dynamics 365 Finance + Operations (on-premises) への AX 2012 のデータ アップグレード プロセス
+description: このトピックでは、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance + Operations (on-premises) 10.0.X にアップグレードするプロセスについて説明します。
 author: faix
 ms.date: 12/16/2020
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,23 +13,23 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 37ad4788226c1fa9d9c62c72780e30501699448b
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: df2a7ceb42d43962e28279e6b89cee2899f6f8df
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595502"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565935"
 ---
-# <a name="data-upgrade-process-for-ax-2012-to-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (オンプレミス) への AX 2012 のデータ アップグレード プロセス
+# <a name="data-upgrade-process-for-ax-2012-to-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (on-premises) への AX 2012 のデータ アップグレード プロセス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance  + Operations (オンプレミス) 10.0.X にアップグレードするプロセスについて説明します。 現在、Dynamics AX 2012 R2 または Dynamics AX 2012 R3 のいずれかからのアップグレードのみ、サポートされています。 
+このトピックでは、Microsoft Dynamics AX 2012 データベースを Dynamics 365 Finance + Operations (on-premises) 10.0.X にアップグレードするプロセスについて説明します。 現在、Dynamics AX 2012 R2 または Dynamics AX 2012 R3 のいずれかからのアップグレードのみ、サポートされています。 
 
 > [!IMPORTANT]
 > このトピックでは、データ アップグレードを行う手順についてのみ説明します。 コード アップグレードを実行する方法の詳細については、クラウド バージョンで使用可能なアップグレード ガイドを参照してください。 コード アップグレード ツールは、Microsoft Dynamics Lifecycle Services (LCS) を介してのみ使用可能です。
 
-## <a name="ax-2012-upgrade-to-dynamics-365-finance--operations-on-premises"></a>AX 2012 を Dynamics 365 Finance + Operations (オンプレミス) にアップグレードする
+## <a name="ax-2012-upgrade-to-dynamics-365-finance--operations-on-premises"></a>AX 2012 の Dynamics 365 Finance + Operations (on-premises) へのアップグレード
 
 現在、サポートされているアップグレード方法は 2 つあります。
 
@@ -80,12 +81,12 @@ ms.locfileid: "7595502"
 
 1. アップグレード プロセスが正常に完了した後、新たにアップグレードしたデータベースをバックアップします。 ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
 1. データベースをオンプレミス環境の SQL Server に復元し、AX 2012 データベースの名前とは異なる名前 (**AXDBupgraded** など) を付けます。 復元したデータベースはコンフィギュレーションする必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
-1. 新しい Dynamics 365 Finance + Operations (オンプレミス) 環境を配置します。
+1. 新しい Dynamics 365 Finance + Operations (on-premises) 環境の配置。
 
     - カスタマイズがある場合、次の手順に従います。
 
         1. LCS では、共有アセット ライブラリに移動します。
-        1. **資産タイプの選択** の下で、**モデル** を選択し、**Dynamics 365 Finance + Operations オンプレミスのバージョン 10.0.x デモ データ** をダウンロードします。 オンプレミスのベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
+        1. **資産タイプの選択** の下で、**モデル** を選択し、**Dynamics 365 Finance + Operations on-premises のバージョン 10.0.x デモ データ** をダウンロードします。 オンプレミスのベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
         1. このファイルから新しいデータベースを作成するのには、SQL Server に対して復元バックアップ オプションを使用します。 (通常、このデータベースには **AXDB** という名前が付けられます。) 詳細については、[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms) を参照してください。
         1. デモ データベースはコンフィギュレーションする必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
         1. LCS で新しい環境を設定し、バージョン 10.0.x で配置します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 環境を配置する場合、事前に作成したデータベースの名前 (通常は **AXDB**) を指定する必要があります。
@@ -131,12 +132,12 @@ ms.locfileid: "7595502"
 1. ISV または VAR からカスタマイズする場合は、いくつかの投稿データのアップグレード スクリプトを実行する必要があるかどうかを確認します。
 1. このトピックの後半にある [VHD データベースのリセット (オプション)](#resetting-the-vhd-database-optional) セクションで記述されている値を使用して **Configure-OnpremUpgrade.ps1** スクリプトを実行します。
 1. [Finance + Operations データベースのコンフィギュレーション](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database) の手順に従って、Finance + Operations に対してアップグレードしたデータベースをコンフィギュレーションします。
-1. 新しい Dynamics 365 Finance + Operations (オンプレミス) 環境を配置します。
+1. 新しい Dynamics 365 Finance + Operations (on-premises) 環境の配置。
 
     - カスタマイズがある場合、次の手順に従います。
 
         1. LCS では、共有アセット ライブラリに移動します。
-        1. **資産タイプの選択** の下で、**モデル** を選択し、**Dynamics 365 Finance + Operations オンプレミスのバージョン 10.0.x デモ データ** をダウンロードします。 オンプレミスのベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
+        1. **資産タイプの選択** の下で、**モデル** を選択し、**Dynamics 365 Finance + Operations on-premises のバージョン 10.0.x デモ データ** をダウンロードします。 オンプレミスのベースラインとして展開する 10.0.x 環境に最も近いバージョンを選択します。
         1. SQL Server に対して復元バックアップ オプションを使用して、このファイルから新しいデータベース (通常は **AXDB**) を作成します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
         1. デモ データベースはコンフィギュレーションする必要があります。 [Finance + Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
         1. LCS にて、新たな環境を設定し、バージョン 10.0.x (再展開) を展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 環境を配置する場合、事前にコンフィギュレーションしたデータベースの名前 (通常は **AXDB**) を指定する必要があります。

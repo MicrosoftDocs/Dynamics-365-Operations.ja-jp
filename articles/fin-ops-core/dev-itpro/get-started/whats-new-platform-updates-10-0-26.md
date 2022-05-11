@@ -9,21 +9,20 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2022-03-04
-ms.openlocfilehash: c6f8dbe3fb271d5fd6290121939daceded5c048a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 876feb97ae8776b8f195455bd95a1b8b4f7c823b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8386921"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644656"
 ---
 # <a name="platform-updates-for-version-10026-of-finance-and-operations-apps-may-2022"></a>財務と運用アプリのバージョン 10.0.26 (2022 年 5 月) のプラットフォーム更新プログラム
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラムに含まれる機能の一覧を表示します。 このバージョンのビルド番号は 7.0.6354 で、次のスケジュールで使用できます。
 
-- **リリースのプレビュー:** 2021 年 3 月
+- **リリースのプレビュー:** 2022 年 3 月
 - **リリースの一般提供 (自己更新):** 2022 年 4 月
 - **リリースの一般提供 (自動更新):** 2022 年 5 月
 

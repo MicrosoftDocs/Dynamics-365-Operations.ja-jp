@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7
-ms.openlocfilehash: c656e52442a3f615f84da23cc730539b01ab60b7dbfdad8db9a4a7cb3e6326d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 825a65c128b2754795e5ad112c9807ebc84de5fc
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772893"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547965"
 ---
 # <a name="flowcharts-in-business-process-modeler-bpm"></a>ビジネス プロセス モデラー (BPM) のフローチャート
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> ビジネス プロセス モデラーのフローチャート図は、非推奨になりました。 非推奨の詳細については、[ビジネス プロセス モデラーのフローチャートの図](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler) を参照してください。
+> ビジネス プロセス モデラーのフローチャート図は、非推奨になりました。 非推奨の詳細については、[ビジネス プロセス モデラーのフローチャートの図](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features#flowchart-diagrams-in-business-process-modeler) を参照してください。
 
 Microsoft Dynamics Lifecycle Services (LCS) でビジネス プロセス モデラーを使用して、組織のためにビジネス プロセス フローチャートを定義および格納することができます。 このトピックでは、既定の接続フローチャートを表示する方法、接続したフローチャートを Visio ファイルの形式でエクスポートする方法、および未接続のフローチャートをアップロードして表示する方法について説明します。
 
@@ -129,7 +129,7 @@ To generate a gap analysis and export it, follow these steps:
 -->
 
 ## <a name="unconnected-flowcharts"></a>未接続のフローチャート
-Visio のダイアグラムなどの未接続のフローチャートは、Finance and Operations アプリの外部で実行される高度な業務プロセスの記述に非常に役立ちます。
+Visio ダイアグラムなどの未接続のフローチャートは、財務と運用アプリの外部で実行される高度な業務プロセスの記述に非常に役立ちます。
 
 ### <a name="upload-an-unconnected-flowchart"></a>未接続のフローチャートをアップロード
 

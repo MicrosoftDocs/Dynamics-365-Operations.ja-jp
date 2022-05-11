@@ -2,7 +2,7 @@
 title: クラウドの工程とサービス
 description: このトピックでは、クラウドの工程とサービスについて説明します。
 author: laneswenka
-ms.date: 10/03/2019
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 441d1d15bfb34dcb16d3543d6e7e791dba5fa2a613c1f152b92e4fc10e228d0c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef7c95c5fb7630943b799bca2bbd524beeda854e
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773772"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649004"
 ---
 # <a name="cloud-operations-and-servicing"></a>クラウドの工程とサービス
 
@@ -27,10 +27,10 @@ ms.locfileid: "6773772"
 
 この試みで顧客、パートナー、および Microsoft が成功するには、例外を管理する Microsoft Dynamics サービス エンジニアリング (DSE) チームに対して、アクションのほとんどが確実にセルフ サービスとなるようにする必要があります。 このセルフサービス モードを実現するために、マイクロソフト製品チームは、環境の運用に必要なさまざまな機能の自動化を推し進めています。
 
-Finance and Operations アプリはマネージド サービスです。 つまり、Microsoft は実稼働環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
+Finance and Operations アプリは、管理サービスです。 つまり、Microsoft は実稼働環境の管理と運用を担当します。 Microsoft の Dynamics サービス エンジニアリング チームは、24 時間、週 7 日、年間 365 日お客様の生産システムを運用および管理します。
 
 ## <a name="monitor-and-troubleshoot-the-health-of-your-environment"></a>環境の正常性の監視およびトラブルシューティング
-クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理センターである Lifecycle Services (LCS) には、管理している環境を正確に表示することを保証する一連の監視ツールと診断ツールが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](monitoring-diagnostics.md)を参照してください。
+クラウド サービスに対する正常なオンボード体験で重要なことは、常に環境の正常性を把握して、必要に応じて正常性の問題をトラブルシューティングできることです。 Finance and Operations の管理者センターである Lifecycle Services (LCS) には、管理している環境を正確に表示できることを保証する監視および診断ツールのコレクションが含まれています。 詳細については、 [Lifecycle Services (LCS) の監視および診断ツール](monitoring-diagnostics.md)を参照してください。
 
 ## <a name="update-your-environment"></a>環境の更新
 Go-Live の後、実稼働環境は定期的に更新する必要があります。 Lifecycle Services (LCS) では、環境を継続的に更新するセルフ サービス エクスペリエンスが提供されます。
@@ -57,7 +57,8 @@ Microsoft は環境のインフラストラクチャの管理について責任�
 - **顧客が開始するメンテナンス ウィンドウ** - 顧客は、パッケージ アプリケーション フローの一部として LCS を介してメンテナンス ウィンドウを選択します。 更新は、このメンテナンス ウィンドウで行われます。
 
 ### <a name="search-for-and-apply-an-update-in-lifecycle-services"></a>Lifecycle Services で更新プログラムを検索して適用
-更新は、配置可能パッケージとして環境に適用されます。 デプロイ可能なパッケージは、プロジェクトのすべての環境への更新を適用するために使用される形式です。 実稼動環境で問題が発生したときは、修正プログラムをすばやく検索して、すべての環境 (開発/サンド ボックス、および実稼働) にそれを適用できます。
+更新は、配置可能パッケージとして環境に適用されます。 デプロイ可能なパッケージは、プロジェクトのすべての環境への更新を適用するために使用される形式です。 実稼動環境で問題が発生したときは、修正プログラムをすばやく検索して、すべての環境にそれを適用できます。
+
 - LCSで **更新プログラムを検索してダウンロードする** には、 [Lifecycle Services (LCS) の問題を検索する](issue-search-lcs.md) 、または [Lifecycle Services (LCS) からダウンロードした更新プログラムを使用します](../migration-upgrade/download-hotfix-lcs.md) を使用して更新プログラムを検索してください。 更新プログラムを準備する手順は更新タイプによって異なるため、更新プログラムがダウンロードされた後、次のリストを使用して準備を続行する方法を決定してください。
   - プラットフォーム更新プログラム: プラットフォーム更新プログラムは累積的かつバイナリです。 つまり、環境に直接適用できるということです。 更新プログラムがダウンロードされた後、アセット ライブラリを自動的に環境に適用させアップロードすることができます。
   - アプリケーションの修正プログラム: アプリケーションの修正プログラムはコードの変更です。 アプリケーションの修正プログラムをダウンロードした後、開発環境に適用して、配置可能なパッケージを生成する必要があります。 詳細については、 [モデルの配備可能なパッケージを作成する](../deployment/create-apply-deployable-package.md) および [開発環境でメタデータ修正をインストールする](../migration-upgrade/install-metadata-hotfix-package.md) を参照してください。
@@ -70,8 +71,15 @@ Microsoft は環境のインフラストラクチャの管理について責任�
     - プラットフォーム更新プログラムで、AOS サービス モデルのバージョンが Microsoft の下で更新されることを確認します。
     - アプリケーションの更新プログラムで、修正プログラムを含むモデルのバージョンを確認します。 たとえば、アプリケーション スイートで修正があった場合、アプリケーション スイートのバージョンが更新されます。
 
+## <a name="servicing-changes"></a>サービスの変更
+Microsoft は、オンライン モードでインデックス作成を行いサービスの全体的なダウンタイムを削減できる、新しい事後サービス ステップを導入しました。 後処理のステップが行われている間、オフライン サービスの完了後に LCS ダッシュボードに **事後サービス** と表示されます。 この間、インデックス作成と変更はオンライン モードで行われます。 環境はユーザーが通常の活動を実行できるようアクセス可能ですが、関連するパッケージ変更のパフォーマンスが低下する可能性があります。 事後サービスの間、ユーザーは新しいサービス要求をキャンセルしたりトリガーしたりできません。
+
+![進行中の後処理のステップを示す LCS ダッシュボード。](https://user-images.githubusercontent.com/90061039/164792400-d8ca418c-6a5e-468c-a965-eae597bfb737.png)
+
+後処理のステップでエラーが発生した場合、LCS ダッシュボートに **事後サービスに失敗しました** と表示されます。 環境はユーザーが通常の活動を実行できるよう引き続きアクセス可能ですが、関連するパッケージ変更のパフォーマンスが低下する可能性があります。 24 時間以内に問題が解決されない場合は、Microsoft サポートに問い合わせてください。 
+
 ## <a name="upgrade-your-environment"></a>環境のアップグレード
-最新バージョンにアップグレードする方法の詳細については、[Finance and Operations の最新版への移行概要](../migration-upgrade/upgrade-latest-update.md) と [Finance and Operations ホームページの新機能と変更された機能](../../fin-ops/get-started/whats-new-changed.md) を参照してください。
+最新バージョンにアップグレードする方法の詳細については、 [Finance and Operations の最新版への移行概要](../migration-upgrade/upgrade-latest-update.md) および [新機能と変更された機能](../../fin-ops/get-started/whats-new-changed.md) を参照してください。
 
 ## <a name="environment-data-management"></a>環境データ管理
 これらは、ある環境から別の環境にデータベースをコピーする機能や、データベースを以前の状態に復元する機能など、データベースを管理するためのオプションです。 詳細については、[データベース移動操作ホーム ページ](../database/dbmovement-operations.md) を参照してください。

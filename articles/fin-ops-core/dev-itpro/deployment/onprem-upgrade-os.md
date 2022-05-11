@@ -2,25 +2,25 @@
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境での Windows Server のアップグレード
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) 環境が使用している  Windows Server バージョンをアップグレードする方法について説明します。
 author: faix
-ms.date: 03/29/2022
+ms.date: 04/05/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 3981dded237d21190dc2d7a952442b2c8dbd56b4
-ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
+ms.openlocfilehash: 07de28289541ad210ae3b0fce3a6d82fc6f92836
+ms.sourcegitcommit: d88b27e9e0d2e9e54e27118002a6404691d302fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8509684"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8559316"
 ---
 # <a name="upgrade-windows-server-in-microsoft-dynamics-365-finance--operations-on-premises-environments"></a>Microsoft Dynamics 365 Finance + Operations (on-premises) 環境での Windows Server のアップグレード
 
 このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) 環境で Windows Server バージョンをアップグレードする方法について説明します。
 
-## <a name="prerequisites-for-upgrading-the-sql-server-version"></a>SQL Server バージョンをアップグレードするための前提条件
+## <a name="prerequisites-for-upgrading-windows-server"></a>Windows Server をアップグレードするための前提条件
 
 ### <a name="upgrade-from-windows-server-2016-to-windows-server-2019"></a>Windows Server 2016 から Windows Server 2019 へのアップグレード
 

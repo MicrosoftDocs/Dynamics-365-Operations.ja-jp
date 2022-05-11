@@ -4,7 +4,8 @@ description: このトピックは、オンプレミス環境の問題を修正�
 author: faix
 ms.date: 07/01/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -12,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-11-30]
 ms.dyn365.ops.version: Platform update 30
-ms.openlocfilehash: 43f0902a733168a45bb24390c713eae6b722093ef9707b27fc571d737cd2b812
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bab83919ef421db77b457f7ad3d2b243b60c99f
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765086"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565646"
 ---
 # <a name="scripts-for-resolving-issues-in-on-premises-environments"></a>オンプレミス環境の問題を解決するためのスクリプト
 [!include [banner](../includes/banner.md)]

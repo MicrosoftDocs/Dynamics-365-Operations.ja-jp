@@ -1,10 +1,11 @@
 ---
-title: AD FS Microsoft 365 の互換性
-description: このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) 環境と Microsoft 365 で Active Directory フェデレーション サービス (AD FS) の同じインスタンスを使用する方法について説明します。
+title: AD FS Microsoft 365の互換性
+description: このトピックでは、Dynamics 365 Finance + Operations (on-premises) 環境と Microsoft 365 で Active Directory フェデレーション サービス (AD FS) の同じインスタンスを使用する方法について説明します。
 author: faix
 ms.date: 01/13/2020
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 5544b373ee2bc51903757ba451a40d3955d3f08bfa5b8061d7e351378cee13c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f2b80db435310181604628d4bfa16fca849a8cda
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765790"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566017"
 ---
 # <a name="ad-fs-microsoft-365-compatibility"></a>AD FS Microsoft 365 の互換性
 
@@ -26,7 +27,7 @@ ms.locfileid: "6765790"
 > [!IMPORTANT]
 > この機能は、アプリケーション更新プログラム 10.0.8、プラットフォーム更新プログラム 32、および LocalAgent 2.2.0 でのみ完全にサポートされます。 詳細については、[部分的サポート](#partialsupport) を参照してください。 
 
-このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) 環境と Microsoft 365 で Active Directory フェデレーション サービス (AD FS) の同じインスタンスを使用する方法について説明します。
+このトピックでは、Dynamics 365 Finance + Operations (on-premises) 環境と Microsoft 365 で Active Directory フェデレーション サービス (AD FS) の同じインスタンスを使用する方法について説明します。
 
 ## <a name="existing-deployments"></a>既存の配置
 

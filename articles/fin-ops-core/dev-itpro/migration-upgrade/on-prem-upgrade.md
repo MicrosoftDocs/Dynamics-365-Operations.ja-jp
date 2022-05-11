@@ -4,7 +4,8 @@ description: このトピックでは、 バージョン 7.x のオンプレミ�
 author: laneswenka
 ms.date: 01/14/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,18 +13,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 10.0.x
-ms.openlocfilehash: 3331f41dde31ebe6dbb9403bcf06aa2756d3993f
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 69230caa1330c203c334f6e745776480de57ec3c
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594679"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565516"
 ---
 # <a name="in-place-upgrade-process-for-on-premises-environments"></a>オンプレミス環境のインプレース アップグレード プロセス
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、 Finance and Operations のオンプレミス環境をバージョン 7.x から 10.0.x にアップグレードする詳細なプロセスを説明します。  
+このトピックでは、財務と運用バージョン 7.x のオンプレミス環境を 10.0.x にアップグレードする詳細プロセスを説明します。  
 
 > [!NOTE]
 > 実稼働環境のアップグレードを実行する前に、サンドボックス環境のアップグレードを実行してください。
@@ -116,7 +117,7 @@ ms.locfileid: "7594679"
 
     c.  SQL serverから復元バックアップ オプションを使用して、新しいデータベース (通常はAXDB) を作成するのにには、このファイルを使用します。 詳細については、「[SSMS を使用したデータベース バックアップの復元](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms)」を参照してください。
      
-    d.  データベースを構成する必要があります。 [Finance and Operations データベースのコンフィギュレーション](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database) の手順に従います。
+    d.  データベースを構成する必要があります。 [Finance and Operations データベースを構成](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database)の手順に従います。
 
     e.  LCS にて、新たな環境を設定し、バージョン 10.0.x (再展開) を展開します。 詳細については、 [オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 以降)](../deployment/setup-deploy-on-premises-pu12.md) を参照してください。 配置する場合、指定するデータベースは手順 13 c (通常は AXDB) で作成したものにする必要があります。
 
@@ -239,7 +240,7 @@ DatabaseServer または DatabaseUser のような追加のパラメーターを
 
 -   **-DatabaseName** - アップグレードするデータベースの名前です。
 
--   **-DatabaseServer** - Finance and Operations (オンプレミス) データベースが含まれているデータベース サーバーです。
+-   **-DatabaseServer** - Finance and Operations (オンプレミス) データベースが含まれているデータベース サーバー。
 
 -   **-DatabaseUser** - SQL 認証のユーザー名です。
 

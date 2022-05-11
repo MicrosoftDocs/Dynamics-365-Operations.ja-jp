@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 2012
-ms.openlocfilehash: 6e73ce8d6b66252cad127a48c75c63a1fb1a4d0b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9a240dc2d5a86ff51531edb2e486ec3ae7ab5ac7
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985380"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548054"
 ---
 # <a name="business-process-modeler-bpm-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) のビジネス プロセス モデラー (BPM)
 
@@ -35,7 +35,7 @@ BPM は次の製品と互換性があります。
 - **Microsoft Visio** – 業務プロセスのマップを Visio ファイルにエクスポートできます。
 
 > [!NOTE]
-> このトピックに記載されている情報は、財務と運用アプリにのみ適用されます。 ビジネス プロセス モデラーおよび Microsoft Dynamics AX 2012 の詳細については、 [Lifecycle Services (LCS) における ビジネス プロセス モデラー (BPM)](ax-2012/business-process-modeler-lcs.md)を参照してください。 
+> このトピックに記載されている情報は、財務と運用アプリにのみ適用されます。 ビジネス プロセス モデラーおよび Microsoft Dynamics AX 2012 の詳細については、 [Lifecycle Services (LCS) における ビジネス プロセス モデラー (BPM)](/dynamicsax-2012/appuser-itpro/business-process-modeler-lcs)を参照してください。 
 
 ## <a name="prerequisites"></a>必要条件
 

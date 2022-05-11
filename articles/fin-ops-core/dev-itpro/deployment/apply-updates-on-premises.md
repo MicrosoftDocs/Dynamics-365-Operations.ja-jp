@@ -1,11 +1,12 @@
 ---
-title: オンプレミス配置への更新プログラムの適用
-description: このトピックは、Dynamics 365 Finance + Operations (オンプレミス) 用にサポートされる更新を適用する方法を説明します。
+title: オンプレミス配置へ更新プログラムを適用
+description: このトピックでは、Dynamics 365 Finance + Operations (on-premises) にサポートされている更新プログラムを適用する方法について説明します。
 author: PeterRFriis
 ms.date: 03/05/2020
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
 ms.technology: ''
+ms.service: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: ''
@@ -14,18 +15,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-ms.openlocfilehash: 43912155ee45d36df7378708a5643e8e74088aab234db7088bc4f9884b100b88
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 89f37aab100c1e3dd77004f3c069fcc422bb28de
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750536"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566065"
 ---
-# <a name="apply-updates-to-on-premises-deployments"></a>オンプレミス配置への更新プログラムの適用
+# <a name="apply-updates-to-on-premises-deployments"></a>オンプレミス配置へ更新プログラムを適用
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Dynamics 365 Finance + Operations (オンプレミス) 用にサポートされる更新を適用する方法を説明します。 設置型環境でのすべての更新は Microsoft Dynamics Lifecycle Services (LCS) を通じて行われます。
+このトピックでは、Dynamics 365 Finance + Operations (on-premises) にサポートされている更新プログラムを適用する方法について説明します。 設置型環境でのすべての更新は Microsoft Dynamics Lifecycle Services (LCS) を通じて行われます。
 
 ## <a name="search-for-and-download-updates"></a>更新プログラムの検索とダウンロード
 オンプレミス環境に適用できる更新プログラムを検索する方法の詳細については、[Lifecycle Services (LCS) での問題検索](../lifecycle-services/issue-search-lcs.md) を参照してください。 LCS の **環境の詳細** ページの **更新** セクションで、タイルから更新プログラムをダウンロードする方法の詳細については、[Lifecycle Services (LCS) から更新プログラムをダウンロード](../migration-upgrade/download-hotfix-lcs.md) を参照してください。
@@ -41,7 +42,7 @@ ms.locfileid: "6750536"
 オンプレミス環境の展開後にオンプレミス環境に更新を適用するには、環境の **環境の詳細** ページにある **管理** で **更新プログラムを適用** を選択します。
 
 > [!NOTE]
-> Finance and Operations のプラットフォーム更新プログラム 12 またはそれ以降の環境でのみ、展開後に更新プログラムを適用することができます。 環境には、LCS で使用可能なローカル エージェントの最新バージョンも必要です。 詳細については、「[ローカル エージェントの更新](../lifecycle-services/update-local-agent.md)」を参照してください。 プラットフォーム更新プログラム 12 よりも古いプラットフォームのバージョンを使用している場合は、すでに展開されている環境を再構成して、カスタマイズを更新したり、最新のプラットフォーム リリースに更新したりすることができます。 環境を再配置する方法の詳細については、 [オンプレミス環境の再配置](redeploy-on-prem.md) を参照してください。
+> Finance and Operations 用プラットフォーム更新プログラム 12 以降の環境でのみ、展開後に更新プログラムを適用することができます。 環境には、LCS で使用可能なローカル エージェントの最新バージョンも必要です。 詳細については、「[ローカル エージェントの更新](../lifecycle-services/update-local-agent.md)」を参照してください。 プラットフォーム更新プログラム 12 よりも古いプラットフォームのバージョンを使用している場合は、すでに展開されている環境を再構成して、カスタマイズを更新したり、最新のプラットフォーム リリースに更新したりすることができます。 環境を再配置する方法の詳細については、 [オンプレミス環境の再配置](redeploy-on-prem.md) を参照してください。
 
 ## <a name="apply-application-or-binary-updates-through-lcs"></a>アプリケーションまたは LCS を通じてバイナリ更新プログラムを適用します
 次の手順を使用すると、X++、すべてのバイナリ、またはプラットフォーム バイナリの更新プログラムを適用できます。 

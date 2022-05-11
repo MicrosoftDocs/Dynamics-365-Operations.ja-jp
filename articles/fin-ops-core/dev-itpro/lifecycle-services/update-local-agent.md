@@ -4,7 +4,8 @@ description: このトピックでは、ローカル エージェントを更新
 author: faix
 ms.date: 02/22/2022
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8432aefdaadb30a209d62a719b1f0a5dc0006ec6
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 2343af4bc5e7ce7f9b01f0732b6304183148d124
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8331728"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566182"
 ---
 # <a name="update-the-local-agent"></a>ローカル エージェントの更新
 

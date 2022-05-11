@@ -1,10 +1,11 @@
 ---
 title: オンプレミス障害復旧コンフィギュレーション
-description: このトピックでは、ディザスター リカバリー用に Dynamics 365 Finance + Operations (オンプレミス) を構成する方法について説明します。
+description: このトピックでは、ディザスター リカバリー用に Dynamics 365 Finance + Operations (on-premises) を構成する方法について説明します。
 author: faix
 ms.date: 09/11/2020
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,15 +13,15 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 5de9376a989a9e7c9dd99290733a3d6a36457d08
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 623347a984e87706d23a3ebdde1d835a0f40fd85
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594705"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566019"
 ---
 # <a name="on-premises-disaster-recovery-configuration"></a>オンプレミス障害復旧コンフィギュレーション
-ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + 操作 (オンプレミス) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
+ディザスター リカバリーは、組織のオペレーションを危険にさらす可能性のあるイベントから保護するために、Dynamics 365 Finance + Operations (on-premises) をオンプレミスで導入する際に重要となる考慮事項です。 このようなイベントの例としては、機材の故障、サイバー攻撃、電気的、物理的なデータの破損などによるデータセンターの停止が含まれます。
 
 ディザスター リカバリーの中心となる概念は、データ復元環境を含む2番目のデータセンターを使用することです。 ディザスター リカバリーの計画、文書化、テストは、運用環境の設定と同様に慎重に行うことを推奨します。
 
@@ -54,7 +55,7 @@ Microsoft が指定した新しい前提条件を適用していることを確�
 
 Lifecycle Services (LCS) では、運用環境は、**運用** と名付けた環境のスロットを使用して配置する必要があります。 ディザスター リカバリー環境では、LCS の追加の環境スロットが使用されません。 その代わりに、運用環境でスロットを再利用します。 
 
-Finance and Operations AOS ノードと SQL Server は、同じデータセンター内に共存している必要があります。 詳細については、[オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements)を参照してください。
+財務と運用 AOS ノードと SQL Server は、同じデータセンター内に共存している必要があります。 詳細については、[オンプレミス展開のシステム要件](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements)を参照してください。
 
 ## <a name="deploying-code-packages-to-production"></a>運用環境にコード パッケージを配置する
 

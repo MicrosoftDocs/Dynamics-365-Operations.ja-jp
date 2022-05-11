@@ -2,9 +2,10 @@
 title: オンプレミス環境でのプロキシのコンフィギュレーション
 description: このトピックでは、プロキシ環境下にあるオンプレミス環境を保護する方法について説明します。
 author: faix
-ms.date: 06/15/2020
+ms.date: 04/05/2022
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,18 +13,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: fc0febb59368096d8fdf7561f2a501189ca7edc953bdd13dc2c240d0a237e3ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53bf045e0dc47a4d8516548d4880c5ef02674e08
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712554"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566015"
 ---
-# <a name="configure-proxies-for-on-premises-environments"></a>オンプレミス環境でのプロキシのコンフィギュレーション
+# <a name="configure-proxies-for-on-premises-environments"></a>オンプレミス環境のプロキシを構成する
 
 [!include [banner](../includes/banner.md)]
 
-プロキシの背後にある Dynamics 365 Finance + Operations (オンプレミス) 環境を保護することができます。 プロキシは、クライアントからのトラフィックを処理している実際のサーバーを隠すサーバーです。 プロキシ サーバーは、環境に代わってクライアントからの要求を受理し、そのトラフィックを転送します。 クライアントは、環境を構成する実際のサーバーを認識していません。 これにより、別のセキュリティ対策が追加され、負荷分散が可能になります。 
+プロキシの背後にある Dynamics 365 Finance + Operations (on-premises) 環境を保護することができます。 プロキシは、クライアントからのトラフィックを処理している実際のサーバーを隠すサーバーです。 プロキシ サーバーは、環境に代わってクライアントからの要求を受理し、そのトラフィックを転送します。 クライアントは、環境を構成する実際のサーバーを認識していません。 これにより、別のセキュリティ対策が追加され、負荷分散が可能になります。 
 
 ## <a name="configure-the-proxy"></a>プロキシの設定
 
@@ -40,8 +41,8 @@ Microsoft Azure Service Fabric cluster の **OrchestratorType** の **各** ノ�
 
     ```xml
     <system.net>
-        <defaultProxy enabled="true" >
-            <proxy <<<SET YOUR PROXY SETTINGS>> />
+        <defaultProxy>
+            <proxy usesystemdefault="true" proxyaddress="http://<PROXYADDRESS>:<PROXYPORT>" bypassonlocal="true" />
         </defaultProxy>
     </system.net>
     ```

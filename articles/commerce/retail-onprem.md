@@ -4,7 +4,8 @@ description: このトピックでは、オンプレミス配置で使用でき�
 author: aamirallaqaband
 ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: josaw
@@ -12,12 +13,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30
-ms.openlocfilehash: 3908da96fa28f060e07afc546784c5c436f0c78e
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: d16ba2a5aad700f28a6317f6f74d3eb1ee1c648b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462537"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566061"
 ---
 # <a name="commerce-capabilities-that-are-available-in-on-premises-deployments"></a>オンプレミス配置で使用できるコマースの機能
 

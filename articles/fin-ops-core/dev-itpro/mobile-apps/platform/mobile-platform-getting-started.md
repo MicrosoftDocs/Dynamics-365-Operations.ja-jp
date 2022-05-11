@@ -8,17 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.custom:
+- "255544"
+- intro-internal
 ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 58d754c234a642cb39e91e751ba06164f7fdde6a
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 202ed2b7ef86b59aeace84ef72657f8ac966c901
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
+ms.lasthandoff: 04/29/2022
 ms.locfileid: "7985378"
 ---
 # <a name="get-started-with-the-mobile-platform"></a>モバイル プラットフォームを使い始める

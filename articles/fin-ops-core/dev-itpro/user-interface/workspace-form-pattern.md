@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: def439852d27f2dad9b8b27dd3158e0694a7359d
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: bb39cc5625048fc7714041755c4eea28a8647d30
+ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384682"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "8603006"
 ---
 # <a name="workspace-form-pattern"></a>ワークスペースのフォーム パターン
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 このトピックでは、ワークスペース フォーム パターンについて説明します。 ワークスペースはユーザーがタスクと特定のページに移動する主な方法です。 ワークスペースは、サポートされている重要な事業活動ごとに作成する必要があります。  
 

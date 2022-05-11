@@ -4,7 +4,8 @@ description: このトピックでは、オンプレミス配置のシステム�
 author: PeterRFriis
 ms.date: 02/08/2022
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +15,12 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 3e866caf8818d2e04088a19ea53a85263bd69f7a
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 733529157f34e779ca4e985796567a84c720e4fc
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462745"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565608"
 ---
 # <a name="system-requirements-for-on-premises-deployments"></a>オンプレミス配置のシステム要件
 

@@ -4,7 +4,8 @@ description: このトピックでは、認証プロセスの仕組みに関す�
 author: faix
 ms.date: 11/18/2020
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,18 +13,18 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 241f9a9064cc0839e401a948ea4201d6b3898b42206b75f9ad3b919b55aa1609
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 651f89ae12909f445ea2940d676c6215bf5c4528
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716745"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566057"
 ---
 # <a name="authentication-in-dynamics-365-finance--operations-on-premises"></a>Dynamics 365 Finance + Operations (on-premises) での認証
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Finance + Operations (オンプレミス) の認証について説明します。 このトピックでは、プロセスが機能する方法に関する背景情報も提供して、認証に関する問題が発生する場合に解決できるようにします。
+このトピックでは、Dynamics 365 Finance + Operations (on-premises) の認証について説明します。 このトピックでは、プロセスが機能する方法に関する背景情報も提供して、認証に関する問題が発生する場合に解決できるようにします。
 
 ## <a name="the-url-for-active-directory-federation-services-ad-fs"></a>フェデレーション サービス (AD FS) の URL
 
@@ -34,7 +35,7 @@ ms.locfileid: "6716745"
 C:\\ProgramData\\SF\\AOS_10\\Fabric\\work\\Applications\\AXSFType_App218\\AXSF.Package.1.0.xml
 
 ## <a name="xml-configuration-file"></a>XML 構成ファイル
-AXSF.Package.Current.xml と呼ばれるファイルがあります。 このファイルは、Finance and Operations デプロイの AXSF.Package.1.0.xml のコピーです。 AXSF.Package.Current.xml ファイルは、現在実行中の AOS インスタンス (AxService.exe) を初期化するために使用された変数を表します。
+AXSF.Package.Current.xml と呼ばれるファイルがあります。 このファイルは、財務と運用デプロイの AXSF.Package.1.0.xml のコピーです。 AXSF.Package.Current.xml ファイルは、現在実行中の AOS インスタンス (AxService.exe) を初期化するために使用された変数を表します。
 
 この構成ファイル (各 AOS マシン上にある) 内には、AD FS の Lifecycle Services (LCS) のデプロイ設定から設定されているセクションのいくつかが表示されます。
 
@@ -73,7 +74,7 @@ AXSF.Package.Current.xml と呼ばれるファイルがあります。 このフ
 ```
 
 > [!NOTE]
-> 上記の設定は、Microsoft 365 の互換性で構成されているデプロイを示します。 詳細については、[AD FS Microsoft 365 の互換性](./onprem-adfscompatibility.md) を参照してください。
+> 上記の設定は、Microsoft 365 の互換性で構成されているデプロイを示します。 詳細については、[AD FS Microsoft 365 互換性](./onprem-adfscompatibility.md) を参照してください。
 
 ## <a name="configuration-values-used-by-the-aos"></a>AOS によって使用される構成値
 AOSでは、上記の構成値が使用され、ユーザーが要求をアプリケーション URL に送信するときに、認証されていない要求をリダイレクトする場所を決定します。

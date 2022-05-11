@@ -4,7 +4,8 @@ description: このトピックでは、オンプレミス環境の アプリケ
 author: ttreen
 ms.date: 07/28/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +13,12 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
-ms.openlocfilehash: b4e6cce7c46d1d7bc676fc70f86d69d58ed6531279ab57d17d0bc411e0807743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6c80faa04dabaae262c60eaaed99c8cb56c0470
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712556"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565946"
 ---
 # <a name="remove-and-reinstall-or-add-an-aos-node"></a>AOS ノードの削除と再インストール、または追加
 

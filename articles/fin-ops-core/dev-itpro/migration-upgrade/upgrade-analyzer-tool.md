@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d665bf4ca5977829224d45305799d09756f8591ffc3843a9533d0f35edc6f044
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 78e283afb6436e1707fcb0241e6220c4ba01e4e4
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771968"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547960"
 ---
 # <a name="upgrade-from-ax-2012---plan-by-using-the-upgrade-analyzer-tool"></a>AX 2012 からのアップグレード - アップグレード アナライザー ツールを使用した計画
 
@@ -27,9 +27,9 @@ ms.locfileid: "6771968"
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-このトピックでは、アップグレード アナライザー ツールを使用して、Microsoft Dynamics AX 2012 からアップグレードを計画する方法について説明します。 このツールは、AX 2012 環境に対して実行され、AX 2012 でクリーンアップの必要があるデータを特定し、Finance and Operations のサブスクリプション コストを削減する助けになります。 このツールは、アップグレード プロセスのスピードアップに役立つ SQL 構成の最適化を提案します。 また、AX 2012 で使用する機能が現在のバージョンで廃止されている場合は、このツールが警告します。 したがって、これらの機能を置き換える方法や回避する方法を計画できます。
+このトピックでは、アップグレード アナライザー ツールを使用して、Microsoft Dynamics AX 2012 からアップグレードを計画する方法について説明します。 このツールは、AX 2012 環境に対して実行され、 Finance and Operations サブスクリプション コストの削減を助けるために、AX 2012 内でクリーンアップする必要のあるデータを識別します。 このツールは、アップグレード プロセスのスピードアップに役立つ SQL 構成の最適化を提案します。 また、AX 2012 で使用する機能が現在のバージョンで廃止されている場合は、このツールが警告します。 したがって、これらの機能を置き換える方法や回避する方法を計画できます。
 
-アップグレード アナライザーは、Dynamics Lifecycle Services (LCS) の通常のシステム診断サービスの一部として、AX 2012 環境からデータを収集します。 システム診断サービスの概要、および LCS を通じて使用できるようにデータを収集しクラウドに押し戻す方法に関する情報については、[Lifecycle Services (LCS) のシステム診断](../lifecycle-services/ax-2012/system-diagnostics-lcs.md)を参照してください。
+アップグレード アナライザーは、Dynamics Lifecycle Services (LCS) の通常のシステム診断サービスの一部として、AX 2012 環境からデータを収集します。 システム診断サービスの概要、および LCS を通じて使用できるようにデータを収集しクラウドに押し戻す方法に関する情報については、[Lifecycle Services (LCS) のシステム診断](/dynamicsax-2012/appuser-itpro/system-diagnostics-lifecycle-services-lcs)を参照してください。
 
 LCS の Microsoft Power BI レポートでは、システム診断サービスの結果を表示できます。 レポートには、AX 2012 環境で完了する必要のあるタスクのリストが表示されます。
 
@@ -41,7 +41,7 @@ LCS の Microsoft Power BI レポートでは、システム診断サービス�
 
 AX 2012 環境内のシステム診断サービスを既に使用している場合は、既存のコンピューターとは異なるコンピューターで、サービスの新しいインスタンスをコンフィギュレーションする必要があります。
 
-AX 2012 環境内のシステム診断サービスをコンフィギュレーションする方法の詳細については、[システム診断のインストールと実行](../lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md)を参照してください。
+AX 2012 環境内のシステム診断サービスをコンフィギュレーションする方法の詳細については、[システム診断のインストールと実行](/dynamicsax-2012/appuser-itpro/install-run-system-diagnostics)を参照してください。
 
 システム診断サービスを構成してから数分で、AX 2012 環境が LCS プロジェクトに表示されます。
 

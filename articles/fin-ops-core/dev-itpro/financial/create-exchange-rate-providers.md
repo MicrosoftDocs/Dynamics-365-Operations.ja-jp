@@ -2,24 +2,24 @@
 title: 為替レート プロバイダーの作成
 description: このトピックでは、為替レート プロバイダーの設定方法について説明します。
 author: RyanCCarlson2
-ms.date: 05/15/2020
+ms.date: 03/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: kfend
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5d26272d406ed8230b77d522c06fdb328900898
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 250edf530ef66a4e93b776b3015b68dc0bcd37a1
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105417"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551710"
 ---
 # <a name="create-exchange-rate-providers"></a>為替レート プロバイダーの作成
 
@@ -79,7 +79,7 @@ ms.locfileid: "8105417"
 2.  クラスに、次の定数と変数宣言を追加します。
 
     ```xpp
-    private const ExchangeRateProviderPropertyKey ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
+    private const URL ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
     private const ExchangeRateProviderId ProviderId = '795500B1-4258-4343-868C-433CE390848C';
     private const str OANDADateFormat = 'yyyy-MM-dd';
     private const str HttpWebRequestMethod = 'GET';
@@ -160,6 +160,7 @@ ms.locfileid: "8105417"
         configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_OandaAPIKey", '');
         configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_DecimalPlaces", '5');
         configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_QuoteType", '1');
+        configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_QuoteTypeLocked", '1');
         return configurationDefaults;
     }
     ```

@@ -2,7 +2,7 @@
 title: 小売チャンネルのシークレットを管理
 description: このトピックでは、シークレットへのアクセスを必要とするチャンネルで拡張機能を使用している際のシークレット管理方法について説明します。
 author: AamirAllaq
-ms.date: 08/06/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: ddc85dad78c86cef0a22067953084afda2cb7ed2
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ed94aa4b35d2c0b4bbc4cf514a0df254464592da
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783392"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629344"
 ---
 # <a name="manage-secrets-for-retail-channels"></a>小売チャンネルのシークレットを管理
 
@@ -53,6 +53,10 @@ ms.locfileid: "7783392"
 | GetUserDefinedSecretStringValueServiceResponse | 文字列 **SecretStringValue** | 応答クラスは、バックオフィスからユーザー定義のシークレットを取得するために使用されます。 この応答は、**SecretStringValue** 値を返すため、拡張機能はこの値を **X509Certificate2** に入力キャストするか、または文字列値として使用することが可能です。 |
 
 CRT 拡張機能のシークレットを読み取るには、次の手順を実行します。
+
+### <a name="cache-the-key-vault-in-memory-in-crtretail-server"></a>CRT/Retail Server のメモリに Key Vault をキャッシュする
+
+CRT のKey Vault シークレット値を読み取るために呼び出しが行われるたびに、CRT はリアルタイムで本社に呼び出して値を取得します。 その後本社は Key Vault を呼び出して値を取得します。 値の読み取りには複数のホップが関係するため、呼び出しの待ち時間が長くなります。 したがって、パフォーマンスを向上させるために、CRT/Retail Server 側のメモリに Key Vault の値をキャッシュすることをお勧めします。 Key Vault で値が頻繁に変更される場合は、シナリオに基づいて、キャッシュの有効期限の正しい戦略を決定する必要があります。
 
 1. 新しい CRT 拡張機能プロジェクトを作成します (C\# クラス ライブラリ プロジェクト タイプ)。 Retail ソフトウェア開発キット (SDK) からサンプル テンプレートを使用します (**RetailSDK\\SampleExtensions\\CommerceRuntime**)。
 2. CRT 拡張機能では、新しい要求 / 応答を作成することも、既存 CRT の要求に対してプレトリガーまたはポストトリガーを追加して呼び出すこともできます。 次の例では、トリガーは **SaveCartRequest** に追加されました。 **GetUserDefinedSecretStringValueServiceRequest** を呼び出し、バックオフィスにコンフィギュレーションされたシークレット キーを渡してシークレットを読み取ります。 バックオフィスからシークレットを読み取るために、カスタム コードを書き込む必要はありません。 要求および応答を使用して、値を読み取ることができます。
@@ -120,7 +124,7 @@ CRT 拡張機能のシークレットを読み取るには、次の手順を実�
 
 ## <a name="credential-rotation"></a>資格情報のローテーション
 
-この方法を資格情報管理に使用する際、資格情報のローテーションがより効率的になります。 シークレットを更新するには、IT 管理者が Key Vault のシークレットを更新するだけで済みます。 拡張機能を変更する必要はありません。 シークレットを更新した後は、キャッシュの期限が切れると、新しい値が使用され始めます。
+この方法を資格情報管理に使用する際、資格情報のローテーションがより効率的になります。 シークレットを更新するには、IT 管理者が Key Vault でシークレットを更新するだけです。 拡張機能を変更する必要はありません。 
 
 ## <a name="offline-support"></a>オフライン サポート
 

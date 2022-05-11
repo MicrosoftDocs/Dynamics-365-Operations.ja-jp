@@ -4,17 +4,19 @@ description: このトピックでは、ローカル エージェントを配置
 author: faix
 ms.date: 10/06/2021
 ms.topic: article
+ms.prod: dynamics-365
+ms.service: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-08-03
-ms.openlocfilehash: 847c6d093e43a5cc9fac0b17e07270957b9f418a
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: 1b2da5b4879a2e6e9bc23b9a915c5729aa49a1d8
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612352"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565531"
 ---
 # <a name="deployment-configurations-for-the-local-agent"></a>ローカル エージェントの配置コンフィギュレーション
 
@@ -45,13 +47,13 @@ deploymentOptions のラベルがついた localagent-config.json ファイル�
 
 環境のさまざまなコンポーネント全体に Microsoft SQL Server 2019 がインストールされている場合は、**sqlServerVersion** を規定値の 2016 から 2019 に変更します。
 
-互換性のある SQL Server のバージョンの一覧については、[Microsoft Dynamics 365 Finance + Operations (オンプレミス) でサポートされているソフトウェア](./onprem-compatibility.md)を参照してください。
+互換性のある SQL Server のバージョンの一覧については、[Microsoft Dynamics 365 Finance + Operations (on-premises) でサポートされているソフトウェア](./onprem-compatibility.md)を参照してください。
 
 ## <a name="specify-that-ad-fs-is-deployed-with-microsoft-365-compatibility"></a>AD FS に Microsoft 365 と互換性のある配置を指定する
 
 Microsoft 365 と互換性のある Active Directory フェデレーション サービス (AD FS) の配置を指定するには、**office365AdfsCompatibility** を **false** から **true** に変更します。
 
-詳細については、[AD FS Microsoft 365 の互換性](./onprem-adfscompatibility.md) を参照してください。
+詳細については、[AD FS Microsoft 365 互換性](./onprem-adfscompatibility.md) を参照してください。
 
 ## <a name="specify-that-the-sql-server-cluster-is-deployed-in-multiple-subnets"></a>SQL Server クラスターを複数のサブネットに配置するように指定する
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 084fffa3e33ace57040910701a9e7c43e779f2c2
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: f37c9bc620ca8bae6a400495172e9c1fc38373d5
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8418626"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661638"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -170,6 +170,9 @@ POS カスタマイズで、ゲスト VM でもこれらの手順に従う必要
 > [!NOTE]
 > 管理者ユーザー プロビジョニング ツールは、LCS を通じて提供される環境ではサポートされていません。 ローカル VM でのみ使用する必要があります。
 
+> [!NOTE]
+> バージョン 10.0.24 以降ににリリースされた仮想ハード ドライブ (VHD) を使用するローカル VM については、代わりに[最初に使用する際にダウンロードできる VHD を設定する](vhd-setup.md)の手順を使用する必要があります。
+
 ### <a name="commerce-configuration"></a>コマースのコンフィギュレーション
 
 コマースもコンフィギュレーションしている場合は、このセクションの手順に従います。
@@ -276,3 +279,6 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
     ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
+### <a name="while-running-the-admin-user-provisioning-tool-on-my-local-development-environment-i-get-the-error-the-values-length-for-key-password-exceeds-its-limit-of-128"></a>ローカル開発環境で管理者ユーザー プロビジョニング ツールを実行中に、「キーのパスワードの値の長さが '128' の上限を超えています」というエラーが表示されます。
+バージョン 10.0.24 以降にリリースされた仮想ハード ドライブ (VHD) を使用している場合は、管理者ユーザー プロビジョニング ツールの前に自己署名証明書生成ツールを実行する必要があります。 詳細情報については、[最初に使用する際にダウンロードできる VHD を設定する](vhd-setup.md)を参照してください。

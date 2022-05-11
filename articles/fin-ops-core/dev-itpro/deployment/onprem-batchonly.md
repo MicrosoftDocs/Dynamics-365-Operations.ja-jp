@@ -4,7 +4,8 @@ description: このトピックでは、環境をコンフィギュレーショ�
 author: faix
 ms.date: 07/08/2020
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: bc0d39411187414bb9cea73be1ca16596d5b6bb19981bbc9aaddd823994707b4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30397762783b167706a83b2347825c45e3210e71
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724327"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565648"
 ---
 # <a name="configure-batch-only-and-interactive-only-aos-nodes-in-on-premises-deployments"></a>オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
 

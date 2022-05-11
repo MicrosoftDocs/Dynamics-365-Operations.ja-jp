@@ -2,7 +2,7 @@
 title: Microsoft Power Platform 統合を有効にする
 description: このトピックでは財務と運用アプリと Dataverse を Microsoft Dynamics Lifecycle Services (LCS) に使用して Microsoft Power Platform 統合を有効にする方法について説明します。
 author: jaredha
-ms.date: 03/02/2022
+ms.date: 04/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-13
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 8fd48f15d0a0d9ea14e8f76a01961c6b2c9ff1d3
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 1eea497e852f9c03bb4108a96645a0c838019625
+ms.sourcegitcommit: d88b27e9e0d2e9e54e27118002a6404691d302fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8418657"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8559324"
 ---
 # <a name="enable-the-microsoft-power-platform-integration"></a>Microsoft Power Platform 統合を有効にする
 
@@ -64,7 +64,7 @@ Microsoft Power Platform 統合シナリオ (仮想エンティティ、アド�
     > [!NOTE]
     > 上記のロールは、財務と運用アプリ環境管理者アカウントに必要なものより多くのアクセス許可を提供する場合があります。 したがって、この統合にさらに制限されたロールが最終的に Azure Active Directory (Azure AD) に追加されます。 新しいロールに上記のロールは必要ではありません。 最小限の特権の管理者を維持する場合、一時的に上記のロールの 1 つを付与できます。 Microsoft Power Platform 統合が設定された後、そのロールを削除します。
 
-- Microsoft Power Platform 環境を作成するすべてのユーザーはライセンスが必要です。 Microsoft 365 管理センターを使用して **Dynamics 365 Unified Operations プラン** ライセンス、または **AX エンタープライズ** ライセンス、または **Dynamics 365 Finance** などのアプリケーション固有のライセンスを財務と運用アプリ環境の管理者アカウントに適用する必要があります。
+- Microsoft Power Platform 環境を作成するすべてのユーザーはライセンスが必要です。 Microsoft 365 管理センターを使用して **Dynamics 365 Unified Operations Plan** ライセンス、または **AX エンタープライズ** ライセンス、または **Dynamics 365 Finance** などのアプリケーション固有のライセンスを財務と運用アプリ環境の管理者アカウントに適用する必要があります。
 
 ## <a name="enable-integration-during-environment-deployment"></a><a name="enable-during-deploy"></a> 環境の配置中に統合を有効にする
 
@@ -419,7 +419,7 @@ Dataverse は、財務と運用アプリを呼び出すために作成した Azu
 
     function Test-Settings()
     {
-        $cdsApiPath = "accounts";
+        $cdsApiPath = "sdkmessages";
         Write-Host "Testing setup by calling API '$($cdsApiPath)'..."
         $webroot = Get-AosWebSitePhysicalPath -ErrorAction stop
         $webrootBinPath = Join-Path $webroot "bin"
@@ -440,8 +440,8 @@ Dataverse は、財務と運用アプリを呼び出すために作成した Azu
             $task = $method.Invoke($cdsWebApiClient, @($cdsApiPath))
             $response = $task.GetAwaiter().GetResult()
 
-            $logger.WriteInfo("Received response with length: $($response.Length)")
-            Write-Verbose $logger.LogContent.ToString()
+            Write-Host $logger.LogContent.ToString()
+            Write-Host "Received response with length: $($response.Length)" 
             Write-Host "Test complete."
         }
         catch
@@ -489,5 +489,38 @@ Dataverse は、財務と運用アプリを呼び出すために作成した Azu
     - **Dataverse AAD アプリ ID** – 既に作成した Azure AD アプリケーションの **アプリケーション (クライアント) ID** の値を入力します。
     - **Dataverse AAD アプリ シークレット** – Azure AD アプリのために既に作成したシークレット キーの値を入力します。
 
+## <a name="verifying-power-platform-integration-status"></a>Power Platform の統合ステータスを検証する
+
+```RetrieveFinanceAndOperationsIntegrationDetails``` API は、Power Platform 環境の Power Platform 統合のステータスを検証するために使用できます。 Power Platform 環境が Power Platform 統合を介して財務と運用アプリ環境にリンクされている場合、API は財務と運用アプリ環境の AAD テナントと環境の詳細を返します。
+
+API をトラブルシューティングに使用して、Power Platform 統合が環境で有効になっていることを確認できます。 また、プラグイン、クライアント フォーム、または Power Platform 環境にリンクされた財務と運用アプリ環境を認識する必要があるその他のアプリケーションのコーディングに API を使用することをお勧めします。
+
+**申請**
+```http
+GET [Organization URI]/api/data/v9.1/RetrieveFinanceAndOperationsIntegrationDetails
+```
+
+**応答**
+```json
+{
+    "Url": "https://contoso.operations.dynamics.com",
+    "TenantId": "72ad15fq-3m88-4e15-be25-8751c9bd0764",
+    "Id": "b2106f5c-e218-4aac-841a-a59da4738eb4"
+}
+```
+
+**プロパティ**
+
+| プロパティ<br>**現物名**<br>**_種類_** | 使用 | Description |
+| --- | --- | --- |
+| 環境 URL<br>**URL**<br>**_文字列_** | 読み取り専用<br>必須 | Power Platform 統合を介して Power Platform 環境にリンクされた財務と運用アプリ環境の URL。 |
+| テナント ID<br>**TenantId**<br>**_GUID_** | 読み取り専用<br>必須 | 財務と運用アプリ環境と Power Platform 環境の両方が配置されている Azure Active Directory (AAD) テナントの ID。 |
+| 環境 ID<br>**ID**<br>**_GUID_** | 読み取り専用<br>必須 | Power Platform 統合を介して Power Platform 環境にリンクされた財務と運用アプリ環境の ID。 |
+
+環境が Power Platform 統合を介して財務と運用アプリ環境にリンクされていない場合、API 応答で次のエラーが返されます:
+
+| エラー コード | メッセージ |
+| --- | --- |
+| 0x80048d0b | Dataverse 環境は財務と運用と統合されていません。 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

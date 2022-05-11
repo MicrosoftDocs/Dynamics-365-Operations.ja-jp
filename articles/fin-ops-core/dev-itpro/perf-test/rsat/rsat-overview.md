@@ -2,7 +2,7 @@
 title: Regression suite automation tool (RSAT)
 description: Regression Suite Automation Tool (RSAT) により、タスク レコーダーを使用してビジネス タスクを記録し、コードを記述することなく自動テストに変換することができます。
 author: FrankDahl
-ms.date: 12/07/2021
+ms.date: 03/29/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e025ca7ce6a912416a7f55231ec57c513ba256a1
-ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
+ms.openlocfilehash: 6cc2922002e40cfa0b1e1887c8f3e5fb642b82a5
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "8492936"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547832"
 ---
 # <a name="regression-suite-automation-tool-rsat"></a>Regression suite automation tool (RSAT)
 
@@ -41,6 +41,7 @@ RSATは、テストの実行、報告、および調査のために Microsoft Az
 + [パラメーター ファイルのアップグレード](rsat-upgrade-parameter-files.md)
 + [Regression Suite Automation Tool (RSAT) のベスト プラクティス](rsat-best-practices.md)
 + [Regression Suite Automation Tool (RSAT) のトラブルシューティング](rsat-troubleshooting.md)
++ [Azure DevOps パイプラインと RSAT を統合する](rsat-devops-extension.md)
 
 ## <a name="getting-started-videos"></a>使用開始のビデオ
 

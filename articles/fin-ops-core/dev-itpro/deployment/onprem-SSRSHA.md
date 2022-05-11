@@ -4,7 +4,8 @@ description: このトピックでは、Dynamics 365 Finance + Operations (on-pr
 author: faix
 ms.date: 02/22/2022
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
@@ -12,12 +13,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a2abdabf75d612ab9b5659c743e97edcdaca0409
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 0cdedfa3c904ed2719af738d54211b96080c72ab
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8331730"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565948"
 ---
 # <a name="configure-high-availability-for-sql-server-reporting-services-ssrs-nodes"></a>SQL Server Reporting Services (SSRS) ノードの高可用性を構成する
 

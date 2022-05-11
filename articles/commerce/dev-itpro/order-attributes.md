@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-ms.openlocfilehash: a780f105eea8514a0ac316aab156b0a46f5f05c9
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 298d98d052c942ddf7fc888ef0e363ca51e9bfc7
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783390"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661676"
 ---
 # <a name="define-and-set-order-attributes"></a>注文属性の定義および設定
 
@@ -28,7 +28,7 @@ ms.locfileid: "7783390"
 
 本社には、属性値を編集したり更新したりするためのページが含まれます。これは、本社のコール センターの注文の値を設定できることを意味します。 POS では、属性パネルを使用して、POS で属性の値を設定または更新できます。 ユーザー インターフェイスを必要とせず、ビジネス ロジックを追加するだけの場合、ビジネス ロジックを CRT に直接追加できます。 バックオフィス コンフィギュレーションを使用することにより、新しい属性を作成することができます。 データベースの変更は必要ありません。 以前は、バックオフィスとチャンネル データベースで新しいテーブルを作成するには、それらのテーブルを変更する必要がありました。
 
-## <a name="why-and-when-you-should-order-attributes"></a>注文属性が必要な理由および場合
+## <a name="why-and-when-you-should-add-order-attributes"></a>注文属性の追加が必要な理由および場合
 
 現金売りトランザクション、顧客注文、またはコールセンターの注文に新しいフィールドを追加し、POS またはバックオフィスで情報をキャプチャする場合は、注文属性を使用します。 以前は、現金売りトランザクション (トランザクション ヘッダーまたは行) または POS の顧客注文に新しいフィールドを追加するには、バックオフィスとチャネル データベースで新しい拡張テーブルを作成し、CRT および POS コードにインライン変更を加えて各種画面および操作を処理する必要がありました。 また、チャネル データベースとバックオフィス間でデータを同期するように Commerce Data Exchange を構成する必要がありました。 ただし、注文属性はコンフィギュレーションを通してこれらすべてのアクションを完了できます。 コードを記述またはカスタム拡張機能テーブルを作成する必要はありませんが、主要なビジネス ロジックおよび POS UI を作成する必要があります。
 

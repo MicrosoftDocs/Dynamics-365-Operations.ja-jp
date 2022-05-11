@@ -2,7 +2,7 @@
 title: Store Commerce アプリ
 description: このトピックでは、Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明します。
 author: mugunthanm
-ms.date: 03/10/2022
+ms.date: 04/21/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 03-01-2022
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 22f101530be9770bcf1453055a69209a1ea99579
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: d131a5f25bc1a986808a4a8c6fa1f9ec35b509cb
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489011"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629365"
 ---
 # <a name="store-commerce-app"></a>Store Commerce アプリ
 
@@ -47,35 +47,35 @@ Store Commerce はローカル ハードウェア ステーションおよびオ
 
 Store Commerce アプリは Windows デバイスで実行され、[Microsoft Lifecycle Services (LCS) の共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary)からダウンロードできます。 **共有アセット ライブラリ** ページで、**Retail セルフサービス パッケージ** をアセット タイプとして選択し、「Store Commerce」で終わるファイルを検索します。 使用している Commerce リリースのバージョン (10.0.25 または 10.0.26 など) を選択してください。
 
-### <a name="store-commerce-deployment-topology"></a>Store Commerce の配置トポロジ
+### <a name="store-commerce-deployment-options"></a>Store Commerce の配置オプション
 
 Store Commerce は、2 つのタイプの配置トポロジをサポートしています。
 
-- **オンライン** – Cloud Scale Unit (CSU) に接続されています。
-- **オフライン** – コマースの本部への接続なしに、ローカルに配置された Commerce Runtime (CRT) に接続されています。
+- **アプリ内**- Modern 販売時点管理 (MPOS) などのすべてのコンポーネントがローカルに配置されます。 オフラインおよびローカルのハードウェア ステーション (HWS) がサポートされます。
+- **ハイブリッド**- Store Commerce は、Commerce Scale Unit (CSU) に配置された Cloud POS を表示し、ローカルのハードウェア ステーションをサポートします。 ただし、オフラインではサポートされていません。
 
-### <a name="online-deployment"></a>オンラインでの配置
+ハイブリッド トポロジおよびアプリ内トポロジ用に独立したインストーラーはありません。 配置オプションは、インストール中に渡されるパラメーターによって決まります。
 
-Store Commerce は、CPOS を表示し、CSU をオンライン モードで使用して Headless Commerce および Commerce 本部に接続するシェルです。 オンライン モードで Store Commerce にアプリケーションを表示するには、2 つのオプションがあります。
+![Store Commerce の配置オプション。](../media/SC-Deployment.png)
 
-- **リモート アプリ コンテンツ** – Store Commerce アプリのコンテンツは、CSU でホストされている CPOS から表示されます。
-- **ローカル配置** – Store Commerce アプリのコンテンツは、MPOS のように、Store Commerce アプリ内でローカルに配置されます。 このオプションは、既定で使用されています。
+### <a name="in-app-deployment"></a>アプリ内配置
 
-#### <a name="store-commerce-app-content-rendered-from-cpos-hosted-in-csu-remote-app-content"></a>CSU でホストされている CPOS から表示された Store Commerce アプリのコンテンツ (リモート アプリ コンテンツ)
-
-リモート アプリ コンテンツのオプションの場合、Store Commerce は CSU でホストされている CPOS からアプリケーション コンテンツをダウンロードして表示します。 Store Commerce を更新するには、CSU を更新します。 Store Commerce は更新を自動的に受信します。 更新は CSU で集中管理されるので、個々のレジスターで管理する必要はありません。 Store Commerce アプリケーションのシェルは、インストーラを使用して個別に更新する必要があります。 CSU の更新方法の詳細については、[Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md) を参照してください。 
-
-#### <a name="store-commerce-app-content-rendered-from-local-deployment"></a>ローカル配置から表示された Store Commerce アプリのコンテンツ
-
-ローカル配置のオプションの場合、アプリケーション コンテンツは Store Commerce にローカルで配置されます。 Store Commerce はローカル配置からアプリケーション コンテンツを表示します。 アプリケーション コンテンツを取得するのに CSU でホストされている CPOS には接続しません。
+アプリ内配置のオプションの場合、アプリケーション コンテンツは MPOS の場合と同様に Store Commerce にローカルで配置されます。 Store Commerce はローカル配置からアプリケーション コンテンツを表示します。 アプリケーション コンテンツを取得するのに CSU でホストされている CPOS には接続しません。
 
 アプリケーション コンテンツを更新するには、最新バージョンの Store Commerce インストーラを実行します。 CSU を更新するとき、アプリケーション コンテンツは更新されません。 したがって、更新は個々のレジスターで管理することができます。
 
-Store Commerce のインストール中に、ユーザーはパラメーターを渡して、リモート アプリ コンテンツのオプションまたはローカル配置のオプションのいずれかを選択できます。 既定では、Store Commerce はローカル配置を使用します。
+アプリ内モードはオフラインをサポートします。 そのため、インストール中に **--installoffline** パラメーターを渡して、オフラインのデータベースを配置します。 オフラインの間 (つまり、接続がない場合)、アプリケーションは CSU または Commerce 本部に接続することはできず、 ローカルに配置された CRT を使用します。
 
-### <a name="offline-deployment"></a>オフラインでの配置
+> [!NOTE]
+> Store Commerce のインストール中に、ユーザーはパラメーターを渡して、ハイブリッド オプションまたはアプリ内オプションのいずれかを選択できます。 既定のオプションは、アプリ内配置です。
 
-オフラインで配置する場合は、Store Commerceのインストール中に **--installoffline** パラメーターを渡して、オフラインのデータベースを配置します。 オフラインでの配置中は、アプリケーションを CSU または Commerce 本部に接続することはできません。 代わりに、ローカルに配置された CRT を使用します。
+### <a name="hybrid-deployment"></a>ハイブリッド配置
+
+Store Commerce は、CPOS を表示し、CSU をオンライン モードで使用して Headless Commerce および Commerce 本部に接続するシェルです。 ハイブリッド モードでは、Store Commerce アプリのコンテンツは、CSU でホストされている CPOS から表示されます。 Store Commerce アプリを開くと、CPOS URL の入力を求めるメッセージが表示されます。
+
+![Cloud POS の URL の入力を求めるメッセージが表示される Store Commerce ダイアログ ボックスを有効化します。](../media/SC-Hybrid.png)
+
+Store Commerce を更新するには、CSU を更新します。 その後、Store Commerce は更新を自動的に受信します。 更新は CSU で集中管理されるので、個々のレジスターで管理する必要はありません。 Store Commerce アプリケーションのシェルは、別途インストーラーを使用して個別に更新する必要があります。 CSU の更新方法の詳細については、[Commerce Scale Unit (クラウド) への更新プログラムと拡張機能の適用](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md) を参照してください。 
 
 ## <a name="store-commerce-and-mpos-parity"></a>Store Commerce と MPOS の機能
 
@@ -138,8 +138,9 @@ Store Commerce には CPOS と完全に同等の機能があります。 さら�
 ### <a name="prerequisites"></a>必要条件
 
 - Windows 10 のバージョン 17763.0 以降、Windows 11、または Windows Server 2019
-- Microsoft Edge、アプリケーションが Microsoft Edge WebView2 コントロールを使用するため
-- Dynamics 365 Commerce (コマース本部および CPOS)
+- [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) (Evergreen スタンドアロン インストーラーを使用します)。
+- SQL Server (オフラインの場合のみ必須)
+- Dynamics 365 Commerce (Commerce 本部と Cloud Scale Unit)
 
 ### <a name="device-setup-in-commerce-headquarters"></a>Commerce 本社でのデバイスの設定
 
@@ -154,7 +155,7 @@ Store Commerce のために[登録](../tasks/create-associate-registers.md) と[
 Store Commerce は、[LCS 共有アセット ライブラリ](https://lcs.dynamics.com/V2/SharedAssetLibrary)からダウンロードできます。 **共有アセット ライブラリ** ページで、**Retail セルフサービス パッケージ** をアセット タイプとして選択し、**Store Commerce** で終わるファイルを検索します。 ファイルをダウンロードした後、以下の手順を実行してアプリをインストールします。
 
 1. Store Commerce をダウンロードしたフォルダーに移動し、管理者モードで PowerShell を開きます。
-1. PowerShell で Store Commerce のインストーラを検索し、**install** パラメーターを渡してアプリをインストールします。 オフライン コンポーネントをインストールするには、**--installoffline** パラメーターを渡します。 (たとえば、`Store_Commerce Installer_exe_name install --installoffline` と入力します。) インストール中にデバッグ モードを有効にする場合は、**--enablewebviewdevtools** パラメーターを渡します。 
+1. PowerShell で Store Commerce のインストーラーを検索し、**install** パラメーターを渡してアプリをインストールします。 オフライン コンポーネントをインストールするには、**--installoffline** パラメーターを渡します。 (たとえば、`Store_Commerce Installer_exe_name install --installoffline` と入力します。) インストール中にデバッグ モードを有効にする場合は、**--enablewebviewdevtools** パラメーターを渡します。 
 
 ### <a name="store-commerce-installation-parameters"></a>Store Commerce のインストール パラメーター
 
@@ -188,15 +189,31 @@ PowerShell で **help** コマンドを使用して、すべてのパラメー�
 
 ### <a name="troubleshooting-setup-issues"></a> 設定の問題に関するトラブルシューティング
 
-#### <a name="reset-the-app"></a>アプリのリセット
+#### <a name="i-cant-activate-the-app-and-get-a-connectivity-error-message"></a>アプリを有効にできず、接続エラー メッセージが表示される
 
-入力した CPOS URL が無効で、変更したい場合、または、有効化の際にアプリがエラー状態にある場合は、アプリをリセットしてプロセスを再開できます。
+有効な CPOS URL を入力すると、次の接続エラーが発生する場合があります。「接続エラーが発生したため、デバイスが Cloud POS に接続できません。 入力した Cloud POS URL にいくつかの問題がある場合があります。」 この場合、URL に誤字がないか確認するか、Cloud POS がオフラインのため到達できないかどうかを判断します。
+
+また、CSU バージョンが 10.0.25 (9.35.\*.\*) 以降であることを確認します。 Store Commerce を使用するには、CPOS バージョン 10.0.25 以降が必要です。
+
+#### <a name="installation-issues"></a>インストールの問題
+
+インストール中に、「この製品 (Modern POS) のバージョン (9.\*.\*.\*) は、レガシ インストーラーで以前にインストールされています」というエラーが表示される場合があります。 エラーを修正するには、コンピューターのすべてのユーザーの MPOS アプリをアンインストールしてからやり直す必要があります。 次の PowerShell コマンドを実行することで、すべてのユーザーの MPOS が削除されたかどうかを確認できます。
+
+```PowerShell
+Get-AppxPackage | Where-Object {$_.PackageFullName -like "Microsoft.Dynamics.*.Pos"} | Remove-AppxPackage -Allusers
+```
+
+#### <a name="i-cant-activate-the-app-due-to-an-invalid-url-or-error-state"></a>無効な URL またはエラー状態によりアプリを有効にできない
+
+入力した CPOS URL が無効で、変更したい場合、または、有効化の際にアプリがエラー状態にある場合は、アプリをリセットしてプロセスを再開できます。 Store Commerce アプリでは、有効な CPOS URL のみ保存されることに注意してください。
+
+アプリをリセットするには、次の手順に従います。
 
 1. Windowsvの **スタート** メニューで、アプリを選択したまま (あるいは右クリックして) 、それから **詳細 \>アプリの設定** を選択します。
 2. アプリ設定ページを **リセット** ボタンが見つかるまで下にスクロールします。
 3. **リセット** を選択し、表示されたらアプリのリセットを確認します。
 
-## <a name="customizing-the-app"></a>アプリのカスタマイズ
+## <a name="customize-the-app"></a>アプリのカスタマイズ
 
 Store Commerce は、Commerce SDK を使用してカスタマイズできます。 POS のユーザー エクスペリエンスの変更と作成、標準の機能拡張または変更、検証の追加、カスタム機能の追加を行うことができます。 詳細については、[販売時点管理 (POS) 拡張機能の概要](pos-extension/pos-extension-overview.md)を参照するか、または [GitHub](https://github.com/microsoft/Dynamics365Commerce.InStore) のサンプルを確認してください。
 

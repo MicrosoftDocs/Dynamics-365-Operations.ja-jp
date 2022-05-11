@@ -1,23 +1,23 @@
 ---
 title: 実装プロジェクト FAQ の Go-live
 description: このトピックでは、実装プロジェクトの運用についてよく寄せられる質問を一覧表示します。
-author: sshashi7
-ms.date: 02/09/2022
+author: OlgaPetrovaFT
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sshashi
+ms.author: olpetrov
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d993168feebd98f4c4a90b692d64186ed53df20e
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 65e2b84c97aeabc7670361028102863575562cd9
+ms.sourcegitcommit: 724c976d080fd28d797f2406c6a6e635ca79a441
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103877"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8615671"
 ---
 # <a name="go-live-for-implementation-projects-faq"></a>実装プロジェクト FAQ の Go-live
 
@@ -27,27 +27,28 @@ ms.locfileid: "8103877"
 
 ## <a name="when-can-i-configure-and-request-my-production-environment"></a>実稼働環境をいつ構成および要求できますか ?
 
-通常、すべてのカスタマイズのコードが完了し、ユーザー受け入れテスト (UAT) が完了し、顧客がソリューションからサインオフし、稼働中にブロッキングの問題がない場合、実稼働環境が展開されます。
+通常、実稼働環境は、すべてのカスタマイズのコードが完了し、ユーザー受け入れテスト (UAT) が完了し、顧客がソリューションからサインオフし、稼働中にブロッキングの問題がなく、Microsoft で **Go-live 準備完了レビュー** が正常に完了した後に展開されます。 このプロセスを理解するには、[Go-Live の準備](prepare-go-live.md)を参照してください。 
 
-お客様がこの段階にいるとき、Microsoft FastTrack チームはプロジェクトチームと連携して、Go-live 評価/レビューを行ういます。
+運用環境は、業務運営の実行のためにのみ使用し、テストまたはトレーニング目的で使用しないでください。 切替を実行し、計画した場合は、運用の切替を無視することができます。 ソリューションをテストするには、テストに必要な要素とサービスを使用して設計されたサンドボックス環境を使用する必要があります。
 
 ## <a name="what-are-the-prerequisites-to-deploy-a-production-environment"></a>実稼働環境を配置するための前提条件
 
 前提条件の一覧については、 [Go-Live の準備](prepare-go-live.md) を参照してください。
 
-## <a name="what-is-a-go-live-assessmentreview-and-why-is-it-required"></a>起動の評価/レビューとは何ですか、またそれがなぜ必要ですか ?
+## <a name="what-is-a-go-live-readiness-review-and-why-is-it-required"></a>Go-live 準備完了レビューとは何ですか、またそれがなぜ必要ですか?
 
-Go-live 評価/レビューは、[Microsoft FastTrack プログラム](/dynamics365/fasttrack/)の一部です。 レビュー中に、ソリューション アーキテクトは、実装プロジェクトが成功した切替および Go-live の準備が整っているかどうかを評価します。 このレビューは、実稼働環境で準備を開始する前に、すべての実装プロジェクトで必須です。
+Go-live 準備完了レビューは、プロジェクトの準備完了を評価し、円滑で正常な稼働を支援することを目的にしています。 このプロセスを理解するには、[Go-Live の準備](prepare-go-live.md)を参照してください。 
 
-## <a name="i-want-to-request-my-production-environment-who-do-i-contact-for-a-go-live-assessmentreview"></a>実稼働環境を要求します。 Go-live アセスメント/レビューのために誰に連絡しますか。
-FastTrack ソリューション アーキテクトがプロジェクトに割り当てられている場合は、担当者に直接問い合わせます。 それ以外の場合、Microsoft Dynamics Lifecycle Services (LCS) に指定されている運用日付に基づいて、運用前チェックリストに記入し、運用日の数週間前に <d365fogl@microsoft.com> に送信するように指示する電子メールを受信します。 電子メールを受信しておらず Go-Live の準備ができている場合は、[Go-live 計画 TechTalk](https://aka.ms/FastTrackPreGoLiveChecklist) ページの **Dynamics 365 コミュニティ** からチェックリストをダウンロードし、記入して d365fogl@microsoft.com に送信できます。
+このレビューは、運用環境を展開する前にすべての実装プロジェクトで必須です。
+
+## <a name="i-want-to-request-my-production-environment-who-do-i-contact-for-a-go-live-readiness-review"></a>実稼働環境を要求します。 Go-live 準備完了レビューのために誰に連絡しますか?
+この記事のガイダンスに従って、Go-live 準備完了レビューを開始する方法について理解してください。  詳細については、「[Go-Live の準備](prepare-go-live.md)」を参照してください。
 
 ## <a name="the-production-button-isnt-available-in-lcs-how-do-i-request-my-production-environment"></a>生産ボタンは、LCS では使用できません。 実稼働環境を要求するにはどうすればよいですか。
 
-LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイン & 開発**、および **テスト** フェースを完了した後にのみ使用可能です。 これらのフェーズを完了する方法の詳細については、 [Finance and Operations アプリの顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。
+LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイン & 開発**、および **テスト** フェーズが完了し、Microsoft で **Go-live 準備完了レビュー** が完了した後にのみ使用できます。 詳細については、「[Go-Live の準備](prepare-go-live.md)」を参照してください。
 
-> [!NOTE]
-> 実稼働環境は、運用の評価/レビューが完了するまで配置されません。
+LCS で方法フェーズを完了する方法の詳細については、[財務と運用アプリ顧客用の Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs-works-lcs.md) を参照してください。
 
 ## <a name="my-sandbox-environment-is-currently-on-an-update-that-is-set-to-expire-in-two-months-can-i-request-a-production-environment-that-has-the-latest-update"></a>自分のサンドボックス環境は、現在有効期限が 2 か月に設定されている更新プログラムにあります。 最新の更新プログラムを含む実稼動環境を要求できますか。
 
@@ -70,11 +71,11 @@ LCS の **生産** ボタンは、LCS 実装方法の **分析**、**デザイ�
 
 ## <a name="i-submitted-the-request-for-a-production-environment-but-i-made-a-mistake-can-i-still-change-it"></a>実稼働環境の要求を送信しましたが、間違いが発生しました。 いまでも変更できますか。
 
-はい。 実稼働環境のステータスが **キュー** に設定されている限り、サインオフ フラグをクリアし、変更、および再度サイン オフにすることができます。
+問題に対処するには、サポート チケットにログしてください。
 
 ## <a name="how-long-does-it-take-to-deploy-my-production-environment"></a>実稼働環境を配置するにはどのくらい時間がかかりますか。
 
-Microsoft FastTrack チームによる Go-live アセスメントが完了し、生産要求が送信された後、48 時間内で実稼働環境の配置を完了する必要があります。
+Microsoft の Go-live 準備完了レビューが完了すると、LCS の実稼働環境スロットが有効になり、プロジェクト チーム (顧客/パートナー) が環境の配置をトリガーできます。 配置プロセスには約 30 分かかります。
 
 ## <a name="what-level-of-access-do-i-have-in-my-production-environment-can-i-sign-in-to-the-vm"></a>自分の実稼動環境にて、どのレベルのアクセスが可能ですか。 VM にログインできますか。
 

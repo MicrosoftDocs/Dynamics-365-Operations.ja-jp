@@ -4,7 +4,8 @@ description: このトピックは、オンプレミス配置で、クライア�
 author: jasongre
 ms.date: 05/05/2020
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: tfehr
@@ -14,19 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.openlocfilehash: 6e37db45dcfc2d03081aed1548cb647711263090
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bba5c1df0b21e9a25dbc56d8d66fba441b85db2b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783140"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565568"
 ---
-# <a name="client-internet-connectivity"></a>クライアントのインターネット接続
+# <a name="client-internet-connectivity"></a>クライアント インターネット接続
 
 [!include [banner](../includes/banner.md)]
 
 
-Dynamics 365 Finance + Operations (オンプレミス) 展開用のローカル ネットワークの構成は、Web クライアントで利用可能な機能に影響を与える可能性があります。 特に、ネットワーク構成がインターネットにアクセスするクライアント マシンを許可していない場合、Web クライアントで複数のパフォーマンス低下が発生します。 コピーされるフィールドは次のとおりです。    
+Dynamics 365 Finance + Operations (on-premises) の配置用のローカル ネットワークの構成は、Web クライアントで利用可能な機能に影響を与える可能性があります。 特に、ネットワーク構成がインターネットにアクセスするクライアント マシンを許可していない場合、Web クライアントで複数のパフォーマンス低下が発生します。 コピーされるフィールドは次のとおりです。    
 
 + ナビゲーション バーにおける Office アプリ ランチャおよび Dynamics 365 領域はクリック可能でなくなりました。
 + ヘルプ ウィンドウにはアクセスできません。  

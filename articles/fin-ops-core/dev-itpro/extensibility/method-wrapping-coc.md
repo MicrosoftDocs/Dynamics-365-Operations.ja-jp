@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jorisde
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9433e1c5cb51f2016a4ac38c86164ae1083c6190
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2aa53368539f301216f12d89a4e7bba074596776
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781891"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661641"
 ---
 # <a name="class-extension---method-wrapping-and-chain-of-command"></a>クラスの拡張機能 - メソッドのラッピングとコマンド チェーン
 
@@ -67,7 +67,7 @@ info(object.doSomething(33));
 
 ## <a name="supported-versions"></a>サポートされているバージョン
 > [!IMPORTANT]
-> このトピックで説明する機能 (CoC および保護されたメソッドと変数へのアクセス) は、Platform update 9 で利用できます。 ただし、強化されているクラスは、プラットフォーム更新プログラム 9 またはそれ以降でコンパイルされる必要があります。 2017 年 8 月現在、Finance and Operations のアプリケーションの現在のリリースはすべてプラットフォーム更新プログラム 8 またはそれ以前でコンパイルされています。 したがって、基本パッケージ (Application Suite など) で定義されているメソッドをラップするには、プラットフォーム更新 9 以降でその基本パッケージを再コンパイルする必要があります。
+> このトピックで説明する機能 (CoC および保護されたメソッドと変数へのアクセス) は、Platform update 9 で利用できます。 ただし、強化されているクラスは、プラットフォーム更新プログラム 9 またはそれ以降でコンパイルされる必要があります。 2017 年 8 月現在、Finance and Operations のアプリケーションの現在のリリースはすべて Platform Update 8 またはそれ以前でコンパイルされています。 したがって、基本パッケージ (Application Suite など) で定義されているメソッドをラップするには、プラットフォーム更新 9 以降でその基本パッケージを再コンパイルする必要があります。
 例: アプリケーション スイート モデルに存在するクラスを増補する独自の拡張モデルを作成し、CoC を使用している場合や保護されたメソッド/変数にアクセスする場合は、アプリケーション スイートと拡張モデルの両方を構築する必要があります。 ランタイム環境でこの機能を配置するには、両方のモデルを含む配置可能なパッケージを作成する必要があります。
 
 ## <a name="capabilities"></a>処理能力
@@ -417,7 +417,7 @@ CoC 拡張メソッドでは、次の呼び出しを条件付きで呼び出し�
         try
         {
             //...
-            next updateBalances();
+            next someMethod();
             //...
         }
         catch(Exception::Error)
