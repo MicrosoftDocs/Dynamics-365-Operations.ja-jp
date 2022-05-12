@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c022bb15975a1411230d28067a2225c95c0573bf
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e43aaad2f5b80996eb0fc10f550f073aec67fe5d
+ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062728"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661461"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Dynamics 365 Human Resources インフラストラクチャ統合 FAQ
 
@@ -231,6 +231,3 @@ Dynamics 365 アプリの既存のユーザーとスタンド アロンの Dynam
 
 インフラストラクチャの変更をサポートするために、追加の環境は必要ありません。
 
-### <a name="where-should-i-go-if-i-have-additional-questions-about-product-licensing"></a>製品のライセンスについてさらに質問がある場合は、どこから行う必要がありますか ?
-
-ライセンスに関する質問がある場合は、[Biz Apps Hub – D365 の価格とライセンス](https://businessapplications.transform.microsoft.com/resources/pricing-and-licensing?tab=grandfathering)を参照してください。 その情報が問題の解決しない場合は、LicenseQ でリクエストを開いてください。

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7f765e7cfd97170bd144dfff12c18ced96e3332a
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 3c9b9602e5c219be5756f5987b0497f2ce5c269d
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533715"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644305"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>休暇計画の見越計上
 
@@ -105,8 +105,10 @@ Dynamics 365 Human Resources において、複数の従業員または個々の
 **休暇発生の監査** は、1 人またはすべての従業員の発生を実行または削除するたびに表示されます。 アクションを実行した日付と担当者も表示されます。
 
 1. **休暇および欠勤** のページで、**リンク** タブを選択します。
-
 2. **休暇の管理** で、**休暇発生の監査の削除** を選択します。
+
+## <a name="leave-accrual-rounding"></a>休暇の見越計上の丸め
+従業員が登録または未登録の場合、休暇の見越計上の丸めが分割されます。 以前は、休暇計画を分割するように設定されていて、期間中に従業員が登録/非登録の場合にのみ丸めが許可されていました。 休暇の見越計上は、期間中または期間の最初の日に登録/未登録であるかに関わらず、丸められます。
 
 ## <a name="leave-accrual-transaction-auditing"></a>休暇見越計上のトランザクション監査
 

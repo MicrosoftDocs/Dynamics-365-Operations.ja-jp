@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 083748d4aecf551fd326b6c3cbf6d92cf3daf717
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547819"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625281"
 ---
 # <a name="gs1-bar-codes"></a>GS1 バーコード
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- Preview until 10.0.25 GA -->
 
 倉庫作業者は、モバイル デバイス スキャナーを使用して品目、パレット、またはコンテナーの移動を登録する際に、いくつかのタスクを完了する必要があります。 これらのタスクには、バーコードのスキャンと、モバイル デバイスへの情報の手動入力の両方が含まれます。 バーコードは、Microsoft Dynamics 365 Supply Chain Management を使用して定義および管理する会社固有の形式を使用します。
 

@@ -1,8 +1,8 @@
 ---
-title: Modern POS (MPOS) か Cloud POS かの選択
-description: このトピックでは、Modern POS および Cloud POS の主な違いについて説明します。 Dynamics 365 Commerce を実装する小売業者が、要件に対して最適な選択ができるよう考慮すべきさまざまな要因についても説明します。
+title: Store Commerce か クラウド POS かの選択
+description: このトピックでは、Store Commerce とクラウド POS の主な違いについて説明し、Dynamics 365 Commerce を実装する小売業者が要件を最適な方法で選択するために考慮すべきさまざまな要因について説明します。
 author: jblucher
-ms.date: 10/13/2017
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e2987351e327b5cca27a6ea992a0550cc21d028cecf4330d374768f13711829
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b62e1737bc9e3b9d9e25a7a88e693a9aece80776
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714762"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629293"
 ---
-# <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Modern POS (MPOS) か Cloud POS かの選択
+# <a name="choose-between-store-commerce-and-cloud-pos"></a>Store Commerce か クラウド POS かの選択
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 Commerce を配置する際に考慮すべき要因に対する追加のバックグラウンド、ヒント、およびガイダンスを実装者に与えます。 配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。
+このトピックでは、Store Commerce とクラウド POS の主な違いについて説明し、Dynamics 365 Commerce を実装する小売業者が要件を最適な方法で選択するために考慮すべきさまざまな要因について説明します。 このトピックでは、Dynamics 365 Commerce を配置する際に考慮すべき要因に対する追加のバックグラウンド、ヒント、およびガイダンスについても実装者に提供されます。 配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。
 
 ## <a name="insights"></a>インサイト
 
@@ -36,28 +36,28 @@ Commerce は、幅広い配置とトポロジ オプションを提供します�
 
 Commerce は、次の POS オプションをサポートします。
 
-- Microsoft Windows 用 Modern POS (MPOS)
-- Microsoft Windows Phone の MPOS
-- Apple iPad または Google Android タブレットの MPOS
-- Microsoft Edge、Internet Explorer と Google Chrome ブラウザーに対応しているクラウド POS (CPOS)
+- Microsoft Windows の Store Commerce
+- iOS および Android の Store Commerce
+- Microsoft Edge および Google Chrome ブラウザーに対応しているクラウド POS (CPOS)
+- Microsoft Windows の Modern POS (MPOS) (MPOSは 2023 年 10 月に非推奨になる予定です)。 
 
-いずれにしても、POS (MPOS および CPOS) は同じコア アプリケーション コードを共有します。 この点が重要なのは、以下の理由によります。
+いずれにしても、POS (Store Commerce および CPOS) は同じコア アプリケーション コードを共有します。 この点が重要なのは、以下の理由によります。
 
 - ユーザー インターフェイス (UI) は、プラットフォームまたはフォーム ファクターに関係なく一貫しています。
 - ほとんどの機能能力は、プラットフォームまたはフォーム ファクターに関係なく同じです。 ただし、重要な違いがいくつかあります。 これらの違いは、このトピックに記載されています。
-- 特定の店舗では、POS バリエーションを組み合わせることができ、同時に実行できます。 たとえば、主要レジスターでは、小売業者は Windows を実行しているコンピューターで MPOS を使用できます。 ただし、小売業者は、ブラウザー ベースのターミナルまたはモバイル デバイスを持つレジスターを補うことができます。
+- 各店舗では、POS バリエーションを組み合わせることができ、同時に実行できます。 たとえば、主要レジスターでは、小売業者は Windows を実行しているコンピューターで Store Commerce を使用できます。 ただし、小売業者は、ブラウザー ベースのターミナルまたはモバイル デバイスを持つレジスターを補うことができます。
 - カスタマイズおよび拡張機能は、プラットフォームやフォーム ファクター間で容易に使用できます。 コア アプリケーション コードが共有されているため、ほとんどのカスタマイズが複数回ではなく 1 回で実装することができます。
 
-### <a name="mpos-vs-cpos"></a>MPOS 対 CPOS
+### <a name="store-commerce-vs-cpos"></a>Store Commerce 対 CPOS
 
-MPOS および CPOS は大部分は同じですが、理解しておくべき重要な違いがあります。
+Store Commerce および CPOS は大部分は同じですが、理解しておくべき重要な違いがあります。
 
-#### <a name="mpos"></a>MPOS
+#### <a name="store-commerce"></a>Store Commerce
 
-Windows、iOS、または Android デバイスの MPOS は、デバイスでパッケージ化され、インストールされ、およびサービス対象となるアプリケーションです。
+Store Commerce は、デバイスにインストールしてサービスを提供するデスクトップ アプリケーションです。
 
-- **Windows** – Windows アプリケーションの MPOS には、すべてのアプリケーション コードおよび埋め込み型 Commerce Runtime (CRT) が含まれています。 
-- **iOS/Android** – これらのプラットフォームでは、アプリケーションが CPOS アプリケーション コードのホストとして機能します。 つまり、アプリケーション コードは Microsoft Azure または Commerce Scale Unit の CPOS サーバーから取得されます。 詳細については、[Commerce Scale Unit の概要](dev-itpro/retail-store-system-begin.md) を参照してください。
+- **Windows** – Windows の Store Commerce アプリケーションには、すべてのアプリケーション コード、Commerce Runtime (CRT)、および ハードウェア ステーション (HWS) が含まれています。
+- **iOS/Android** – これらのプラットフォームでは、アプリケーションが CPOS アプリケーション コードのホストとして機能します。 つまり、アプリケーション コードは Commerce Scale Unit でホストされている CPOS サーバーから取得されます。 詳細については、[Commerce Scale Unit の概要](dev-itpro/retail-store-system-begin.md) を参照してください。
 
 #### <a name="cpos"></a>CPOS
 
@@ -67,23 +67,33 @@ Windows、iOS、または Android デバイスの MPOS は、デバイスでパ�
 
 プラットフォームおよびフォーム ファクターに加えて、小売業者は、店舗での配置オプションを選択する必要もあります。 次の表に、各 POS オプションで使用可能なコンフィギュレーションを示します。
 
-| POS アプリケーション         | コマース スケール ユニット | オフラインで使用可 |
-|-------------------------|---------------|-------------------|
-| Windows 用 MPOS        | クラウドまたは RSSU | はい               |
-| iOS または Android 用 MPOS | クラウドまたは RSSU | いいえ                |
-| クラウド POS               | クラウドまたは RSSU | いいえ                |
+| POS アプリケーション            | Commerce Scale Unit | オフラインで使用可 | ローカル HWS サポート |
+|----------------------------|---------------------|-------------------|-------------------|
+| Windows の Store Commerce | クラウドまたは RSSU       | 有効               | 有効               |
+| Android の Store Commerce | クラウドまたは RSSU       | 無効                | 有効               |
+| iOS の Store Commerce     | クラウドまたは RSSU       | 無効                | 無効                |
+| クラウド POS                  | クラウドまたは RSSU       | 無効                | 無効                |
 
-#### <a name="commerce-scale-unit"></a>コマース スケール ユニット
+#### <a name="commerce-scale-unit"></a>Commerce Scale Unit
 
 Commerce Scale Unit は、CRT をホストするコンポーネントです。 CRT は、POS が使用するすべてのビジネス ロジックを含み、チャネル データベースへのアクセスを提供します。 オンライン中、店舗内のすべての POS クライアントは Commerce Scale Unit を使用します。 クラウドまたは店舗内のいずれかで、Commerce Scale Unit を展開することができます。
 
 #### <a name="offline-mode"></a>オフライン モード
 
-Windows 用 MPOS は、オフライン モードをサポートします。 オフライン モードでは、Commerce Scale Unit から非接続の状態でも、POS は処理中の販売を続行できます。 接続が復旧すると、チャネル データベースで同期できます。 MPOS は、独自の CRT の埋め込み型インスタンスを使用し、一時的に独自のローカル データ ソース (オフライン SQL Server データベース) を使用します。 オフライン機能の詳細については、「[POS オフライン機能](pos-offline-functionality.md)」を参照してください。
+Windows の Store Commerce はオフライン モードでサポートされています。 オフライン モードでは、Commerce Scale Unit から非接続の状態でも、POS は処理中の販売を続行できます。 接続が復旧すると、チャネル データベースで同期できます。 Store Commerce は、独自の CRT の埋め込み型インスタンスを使用し、一時的に独自のローカル データ ソース (オフライン SQL Server データベース) を使用します。 オフライン機能の詳細については、「[POS オフライン機能](pos-offline-functionality.md)」を参照してください。
 
 ### <a name="pos-peripheralhardware-considerations"></a>POS 周辺機器/ハードウェアの考慮事項
 
-小売業者は、POS がプリンター、キャッシュ ドロワー、および支払ターミナルなどのデバイスや周辺機器にどのようにアクセスするかを検討する必要もあります。 Windows 用 MPOS のみ、これらのデバイスでの直接通信をサポートしています。 Windows Phone、iOS、または Android 用の MPOS、およびクラウド POS は、これらのデバイスにアクセスするためハードウェア ステーションを必要とします。 ハードウェア ステーションは POS レジスター専用で、または店舗のレジスター間で共有できます。 ハードウェア ステーションの詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
+小売業者は、POS がプリンター、キャッシュ ドロワー、および支払ターミナルなどのデバイスや周辺機器にどのようにアクセスするかを検討する必要もあります。 ハードウェア ステーションは POS レジスター専用で、または店舗のレジスター間で共有できます。
+
+| POS アプリケーション            | ローカル HWS OPOS | ネットワーク周辺機器 | 共有済み HWS サポート |
+|----------------------------|----------------|---------------------|--------------------|
+| Windows の Store Commerce | 有効            | 有効                 | 有効                |
+| Android の Store Commerce | 無効             | 有効                 | 有効                |
+| iOS の Store Commerce     | 無効             | 無効                  | 有効                |
+| クラウド POS                  | 無効             | 無効                  | 有効                |
+
+ハードウェア ステーションの詳細については、[Retail ハードウェア ステーションのコンフィギュレーションとインストール](retail-hardware-station-configuration-installation.md) を参照してください。
 
 ## <a name="implementation-considerations"></a>実装の考慮事項
 
@@ -94,14 +104,14 @@ Windows 用 MPOS は、オフライン モードをサポートします。 オ�
 
     特定のデバイスの接続の信頼性および弾力性が非常に高くない限り、または一定のダウンタイムの量が小売業者に許容可能でない限り、次のオプションのいずれかをお勧めします。
 
-    - Windows で MPOS を使用し、オフライン モードを有効にします。
+    - Windows で Store Commerce を使用し、オフライン モードを有効にします。
     - オンプレミスの Commerce Scale Unit を配置します。
 
     これら 2 つのオプションは、相互に排他的ではありません。 最も信頼できるトポロジでは、小売業者はインターネット接続または Azure の可用性での依存関係を減らすためにローカル RSSU を配置でき、ローカル サーバーまたはネットワークに問題がある場合、オフライン モードが有効になっている POS レジスターを展開することもできます。
 
-- **ハードウェア デバイス/周辺機器** – Retail POS システムの 1 つの重要な側面は、プリンター、キャッシュ ドロワー、および支払ターミナルなどの POS 周辺機器を使用する能力です。 使用可能なすべての POS オプションは周辺機器を使用できますが、Windows 用 MPOS のみそれらを直接サポートします。 その他のすべてのアプリケーションには、1 つまたは複数のハードウェア ステーションが必要です。 この方法により柔軟性が増しますが、追加コンポーネントは配置、コンフィギュレーション、およびサービスの対象となる必要があります。
+- **ハードウェア デバイス/周辺機器** – Retail POS システムの 1 つの重要な側面は、プリンター、キャッシュ ドロワー、および支払ターミナルなどの POS 周辺機器を使用する能力です。 使用可能なすべての POS オプションは周辺機器を使用できますが、Windows の Store Commerce のみがそれらを直接サポートします。 その他のすべてのアプリケーションには、1 つまたは複数のハードウェア ステーションが必要です。 この方法により柔軟性が増しますが、追加コンポーネントは配置、コンフィギュレーション、およびサービスの対象となる必要があります。
 - **システム要件** – POS アプリケーションのシステム要件が異なります。 選択を行う前に、最新の情報を確認してください。 たとえば、ブラウザーで CPOS が実行されるため、より広範囲のオペレーティング システムをサポートします。 システム要件に関する詳細については、「[クラウド配置のシステム要件](../fin-ops-core/fin-ops/get-started/system-requirements.md)」を参照してください。
-- **配置およびサービス** – アプリケーションおよび配置の選択に応じて、配置とサービス要件の複雑度が異なります。 たとえば、クラウド ホスト環境の CPOS 展開では、すべてのデバイスにインストールおよび更新は必要ありません。 したがって、この方法は、複雑度および原価を大幅に減少します。 ただし、オフライン モードを有効にしてすべてのレジスターに MPOS を配置する場合、共有ハードウェア ステーションも配置し、管理する必要があるエンドポイントの数が大幅に増加します。
+- **配置およびサービス** – アプリケーションおよび配置の選択に応じて、配置とサービス要件の複雑度が異なります。 たとえば、クラウド ホスト環境の CPOS 展開では、すべてのデバイスにインストールおよび更新は必要ありません。 したがって、この方法は、複雑度および原価を大幅に減少します。 ただし、オフライン モードを有効にしてすべてのレジスターに Store Commerce を配置し、共有ハードウェア ステーションも配置すると、管理する必要があるエンドポイントの数が大幅に増加します。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

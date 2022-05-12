@@ -14,18 +14,27 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ebf11b55f1034b9a84dda9ada77c2f1b7f587a58
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 89d2f53a761085949885c987d664654c3423524b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781592"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645080"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>LCS で IoT インテリジェンスをインストールする
 
 [!include [banner](../../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) に、IoT インテリジェンスをインストールする手順を説明します。 アドインはデモ/試用環境にはインストールできないことに注意してください。 アドインをインストールするには、事前に[Azure リソースを作成する ](iot-azure-setup.md)必要があります。
+
+コードを記述することなく、IoT インテリジェンスを設定およびコンフィギュレーションすることができます。 基本的な手順は次のとおりです。
+
+1. [Azure リソースの設定](iot-azure-setup.md) – Supply Chain Management からアクセスできる IoT ハブ、Redis キャッシュ、Key Vault を作成します。
+2. [IoT Hub のメッセージ スキーマ 形式 ](iot-schema-format.md) – メッセージを IoT Hub に送信するようにデバイスをコンフィギュレーションして、JavaScript Object Notation (JSON) メッセージ形式を定義します。
+3. 機能管理で、IoT インテリジェンス機能のフラグを有効にします。
+4. IoT インテリジェンス アドインを Microsoft Dynamics Lifecycle Services (LCS) にインストールする – LCS にアドインをインストールし、Azure シークレットをコンフィギュレーションします (このトピックで説明)。
+5. [指標の設定](iot-metrics-setup.md) – Supply Chain Management の指標を設定します。
+6. [シナリオ設定](iot-scenario-setup.md) – Supply Chain Management でシナリオを設定します。
 
 ## <a name="set-up-the-lcs-environment"></a>LCS 環境の設定
 

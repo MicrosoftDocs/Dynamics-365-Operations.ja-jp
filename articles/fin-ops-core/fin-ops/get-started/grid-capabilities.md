@@ -2,7 +2,7 @@
 title: グリッド機能
 description: このトピックでは、グリッド コントロールのいくつかの強力な機能について説明します。 これらの機能にアクセスするには、新しいグリッド機能を有効にする必要があります。
 author: jasongre
-ms.date: 03/21/2022
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 08348185a424d20b6da1563189496b7dd51944d9
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: 57133a853d1700b2d8ebb938f93af475410b82cb
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602965"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644416"
 ---
 # <a name="grid-capabilities"></a>グリッド機能
 
@@ -106,7 +106,7 @@ ms.locfileid: "8602965"
 - このグループのデータ行の数
 - 合計を表示するように構成された列の小計
 
-[保存されているビュー](saved-views.md) を有効にすると、このグループ化をビューの一部としてパーソナル化によって保存し、次回ページにアクセスするときに素早くアクセスできます。
+[保存されているビュー](saved-views.md)を有効にすると、クエリをビューに保存できるページのビューの一部としてグループ化を保存できます。 たとえば、大きなビュー セレクターを持つものがあります。 詳細については、[ビューの切り替え](saved-views.md#switching-between-views)セクションを参照してください。 
 
 ### <a name="multiple-levels-of-grouping"></a>複数のグループレベル
 1 つの列を使用してデータをグループ化した後で、目的の列の **この列でグループ化する** を選択することにより、別の列に基づいてデータをグループ化することができます。 このプロセスは、入れ子になったグループのレベルが 5 つになるまで繰り返すことができ、これは、サポートされる最大の深さです。 この時点で、追加の列を使用してグループ化することはできなくなります。

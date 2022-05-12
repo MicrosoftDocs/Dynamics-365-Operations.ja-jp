@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fe1dd4254db8b390c17558320a6eaff2b0dcd19
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371359"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661725"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>エジプト向けの電子請求
 
@@ -41,8 +41,8 @@ ms.locfileid: "8371359"
     - [電子請求のための Azure リソースの設定](e-invoicing-set-up-azure-resources.md)
     - [Lifecycle Services にマイクロサービス向けのアドインをインストールします](e-invoicing-install-add-in-microservices-lcs.md)
     
-- [電子請求との統合の有効化と設定](e-invoicing-activate-setup-integration.md) の説明に従って、Microsoft Dynamics 365 Finance または Dynamics 365 Supply Chain Management アプリケーションと電子請求サービスの間の統合を有効にします。
-- Azure Key Vault にデジタル証明書シークレットを作成し、[顧客の証明書とシークレット](e-invoicing-customer-certificates-secrets.md) の説明に従って設定します。 テストの目的で、エジプトの税務当局は、テストおよびソリューション検証フェーズでのみ使用する必要がある特定のテスト デジタル証明書を提供しています。 詳細については、[エジプト電子請求 SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/) で提供されているリンクを使用して、エジプト税務当局 Web サイトを参照してください。
+- [電子請求との統合の有効化と設定](e-invoicing-activate-setup-integration.md)の説明に従って、Microsoft Dynamics 365 Finance または Dynamics 365 Supply Chain Management アプリケーションと電子請求サービスの間の統合を有効にします。
+- Azure Key Vault にデジタル証明書シークレットを作成し、[顧客の証明書とシークレット](e-invoicing-customer-certificates-secrets.md) の説明に従って設定します。 テストの目的で、エジプトの税務当局は、テストおよびソリューション検証フェーズでのみ使用する必要がある特定のテスト デジタル証明書を提供しています。 詳細については、[エジプト電子請求 SDK](https://sdk.invoicing.eta.gov.eg/faq/) で提供されているリンクを使用して、エジプト税務当局 Web サイトを参照してください。
 
 ## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-feature"></a>エジプトの電子請求書 (EG) 機能の国固有の構成
 
@@ -56,7 +56,7 @@ ms.locfileid: "8371359"
 6. **処理パイプライン** タブの **処理パイプライン** セクションで、**エジプト税務当局の JSON ドキュメントに署名する** を選択します。
 7. **パラメーター** セクションで、**証明書名** を選択し、作成したデジタル証明書の名前を選択します。
 8. **処理パイプライン** セクションで、**エジプト ETA サービスとの統合** を選択します。 このアクションが 2 回発生した場合は、この手順を繰り返します。
-9. **パラメーター** セクションで、**Web サービス URL** および **ログイン サービス URL** を選択します。 次に、URL パラメーターを確認します。 テストおよび運用の URL を取得するには、[エジプト電子請求 SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/) で提供されているリンクを使用して、エジプト税務当局の Web サイトにアクセスします。
+9. **パラメーター** セクションで、**Web サービス URL** および **ログイン サービス URL** を選択します。 次に、URL パラメーターを確認します。 テストおよび運用の URL を取得するには、[エジプト電子請求 SDK](https://sdk.invoicing.eta.gov.eg/faq/) で提供されているリンクを使用して、エジプト税務当局の Web サイトにアクセスします。
 10. **保存** を選択して、ページを閉じます。
 11. **プロジェクト請求書派生** 機能の設定について、ステップ 4 - 10 を繰り返します。
 

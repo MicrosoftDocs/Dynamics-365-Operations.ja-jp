@@ -2,7 +2,7 @@
 title: 拡張機能を使用した税統合のデータ フィールドの追加
 description: このトピックでは、X++ 拡張機能を使用して税統合のデータ フィールドを追加する方法について説明します。
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323523"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649104"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>拡張機能を使用した税統合のデータ フィールドの追加
 
@@ -334,9 +334,10 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
+    // private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
@@ -349,20 +350,24 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
+
+        // If the field to be extended is an enum type, use enum2Symbol to convert an enum variable exampleEnum of ExampleEnumType to a string
+        // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
 
-このコードでは `_destination` が転記要求の生成に使用されるラッパー オブジェクトであり、`_source` が `TaxIntegrationLineObject` オブジェクトになります。
+このコードでは `_destination` が要求の生成に使用されるラッパー オブジェクトであり、`_source` が `TaxIntegrationLineObject` オブジェクトになります。
 
 > [!NOTE]
-> 要求フォームで **private const str** と使用されるキーは次のように定義します 。 文字列は、トピック[税コンフィギュレーションへのデータ フィールドの追加](tax-service-add-data-fields-tax-configurations.md)で追加したメジャー名と同じである必要があります。
-> **SetField** メソッドを使用して、**copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** メソッドのフィールドを設定します。 2 番目のパラメータのデータ型は、**文字列** である必要があります。 データ型が **文字列** でない場合、変換します。
-> X++ **列挙型** が拡張 されている場合は、値、ラベル、および名前の違いを確認してください。
+> 要求内で **private const str** として使用されるフィールド名を定義します。 文字列は、[税コンフィギュレーションへのデータ フィールドの追加](tax-service-add-data-fields-tax-configurations.md)のトピックで追加したノード名 (ラベルではない) と同じである必要があります。
 > 
+> **SetField** メソッドを使用して、**copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** メソッドのフィールドを設定します。 2 番目のパラメータのデータ型は、**文字列** である必要があります。 データ型が **文字列** でない場合、文字列に変換します。
+> データ型が X++ **列挙型** の場合、**enum2Symbol** メソッドを使用して列挙値を文字列に変換することをお勧めします。 税コンフィギュレーションで追加する列挙値は、列挙名と完全に同じにしてください。 次に、列挙値、ラベル、および名前の違いのリストを示します。
+> 
+>   - 列挙型の名前は、コード内のシンボル名です。 **enum2Symbol()** は、列挙値を名前に変換することができます。
 >   - 列挙値は整数です。
->   - 列挙のラベルは、優先する言語で異なる場合があります。 列挙型タイプを文字列に変換するのに **enum2Str** は使用しないでください。
->   - 列挙型の名前は固定なので推奨されています。 **enum2Symbol** は、列挙型を名前に変換する場合に使用できます。 税コンフィギュレーションに追加する変更要素の値は、列挙名と完全に同じにしてください。
+>   - 列挙のラベルは、優先する言語で異なる場合があります。 **enum2Str()** は、列挙値をラベルに変換することができます。
 
 ## <a name="model-dependency"></a>モデルの依存関係
 
@@ -526,7 +531,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 

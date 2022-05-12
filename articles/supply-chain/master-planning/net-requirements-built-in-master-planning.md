@@ -2,7 +2,7 @@
 title: 組み込みのマスタ プランを使用した正味必要量およびペギング情報
 description: このトピックでは、組み込みのマスタ プランで計算された正味必要量とペギング情報に関する情報を提供します。
 author: t-benebo
-ms.date: 7/28/2021
+ms.date: 04/20/2022
 ms.topic: article
 ms.search.form: ReqTransOverview
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 19c64d62386a94494b729aa05b0612609812a418
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 98da80c73eec58c08d1043e48deb14ca828c34eb
+ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470432"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8618291"
 ---
 # <a name="net-requirements-and-pegging-information-with-built-in-master-planning"></a>組み込みのマスタ プランを使用した正味必要量およびペギング情報
 
@@ -26,6 +26,8 @@ ms.locfileid: "8470432"
 
 **正味必要量** ページは、マスター プラン時に製品に対して計算される正味必要量を表示します。 また、マスター プランの実行時に適用された補充設定、トランザクション タイプ別の要求合計の内訳、およびペギング情報も示します。
 
-**正味必要量** ページは、計画最適化を使用しているか、組み込みのマスター プラン エンジンを使用しているかに関係なく、同じ方法で動作します。 このページの扱い方法の詳細については、[計画最適化を使用した正味必要量およびペギング情報](planning-optimization/net-requirements.md) を参照してください。
+**正味必要量** ページは、計画最適化を使用しているか、組み込みのマスター プラン エンジンを使用しているかによって、動作が若干異なります。 この違いの詳細については、[組み込みマスター プランと計画最適化の違い](planning-optimization/planning-optimization-differences-with-built-in.md)を参照してください
+
+このページの扱い方法の詳細については、[計画最適化を使用した正味必要量およびペギング情報](planning-optimization/net-requirements.md) を参照してください。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565631"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625362"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -41,7 +41,7 @@ ms.locfileid: "8565631"
 ## <a name="provision-a-human-resources-trial-environment"></a>Human Resources 試用環境のプロビジョニング
 
 >[!NOTE]
-> 2022 年 4 月から、Human Resources 試用環境は、スタンドアロン アプリケーションでは使用できません。 財務と運用アプリ内の Human Resources 機能の評価に関心を持つ潜在顧客は、30 日間の無料試用版をデモ データと共に使用できます。 Dynamics 365 Finance には、スタンドアロン アプリケーションのマージを通じて Finance インフラストラクチャに提供される Human Resources 機能が含められます。 詳細については、[HR 製品のマージによる顧客向け機能の統合](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) を参照してください。Dynamics 365 Finance の試用の詳細については、ステップ バイ ステップ [ガイド](/fin-ops/get-started/before-you-buy) を参照してください。 
+> 2022 年 4 月から、Human Resources 試用環境は、スタンドアロン アプリケーションでは使用できません。 財務と運用アプリ内の Human Resources 機能の評価に関心を持つ潜在顧客は、30 日間の無料試用版をデモ データと共に使用できます。 Dynamics 365 Finance には、スタンドアロン アプリケーションのマージを通じて Finance インフラストラクチャに提供される Human Resources 機能が含められます。 詳細については、[HR 製品のマージによる顧客向け機能の統合](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) を参照してください。Dynamics 365 Finance の試用の詳細については、ステップ バイ ステップ [ガイド](../fin-ops-core/fin-ops/get-started/before-you-buy.md) を参照してください。 
 
 
 最初のサンドボックス環境または運用環境をプロビジョニングする前に、[Human Resources 試用環境](https://go.microsoft.com/fwlink/p/?LinkId=2115962)をプロビジョニングして、Human Resources の機能を検証することができます。 試用環境には、安全にプログラムを活用するために使用する架空のデータが含まれます。 試用環境は要求したユーザーにより所有されていますが、人事管理のシステム管理経験を通じて他のユーザーも招待できます。 

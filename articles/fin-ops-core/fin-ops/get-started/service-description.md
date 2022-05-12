@@ -1,26 +1,26 @@
 ---
-title: Finance and Operations アプリのサービス説明
-description: このトピックでは、Finance and Operations アプリのサービス説明を示します。
+title: 財務と運用アプリのサービスの説明
+description: このトピックでは、財務と運用アプリのサービス説明を示します。
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952369"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656806"
 ---
-# <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations アプリのサービス説明
+# <a name="service-description-for-finance-and-operations-apps"></a>財務と運用アプリのサービスの説明
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations アプリは、[Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/) をベースにして構築されたエンタープライズ リソース プランニング (ERP) のサービスとしてのソフトウェア (SaaS) の提供です。 Finance and Operations サービスは、組織固有の要件をサポートする ERP 機能を提供し、インフラストラクチャの管理を必要とせずに、絶えず変化するビジネス環境に適応するのに役立ちます。 Finance and Operations アプリケーションは、次のソリューション領域の 1 つ以上を含めることができます。
+財務と運用アプリは、[Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/) をベースにして構築されたエンタープライズ リソース プランニング (ERP) のサービスとしてのソフトウェア (SaaS) の提供です。 財務と運用のサービスは、組織固有の要件をサポートする ERP 機能を提供し、インフラストラクチャの管理を必要とせずに、絶えず変化するビジネス環境に適応するのに役立ちます。 財務と運用アプリは、次のソリューション領域の 1 つ以上を含めることができます。
 
 - [Dynamics 365 Finance](/dynamics365/finance/)
 - [Dynamics 365 Human Resources](/dynamics365/human-resources/)
@@ -32,21 +32,21 @@ Finance and Operations アプリは、[Microsoft Azure](https://azure.microsoft.
 
 - 組み込みの [個人用設定のエクスペリエンス](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) ツール
-- [Visual Studio](https://visualstudio.microsoft.com) ベースの [Finance and Operations ソフトウェア開発キット (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) と [Azure DevOps ビルドの自動化](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
+- [Visual Studio](https://visualstudio.microsoft.com) ベースの[財務と運用ソフトウェア開発キット (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) と [Azure DevOps ビルドの自動化](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - [AppSource](https://appsource.microsoft.com/partners) の独立系ソフトウェア ベンダー (ISV) ソリューション
 
 要件に基づいて、顧客はソリューションのアプローチを選択します。 実装パートナーと協力して、[Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md) で提供されるツールとベスト プラクティスを利用して、ソリューションの定義、開発、およびテストを行います。 一般的なシナリオは 4 つあります。
 
-- 標準の Finance and Operations アプリの「すぐに利用できる」コンフィギュレーション (拡張機能なし)
-- 1 つ以上の ISV ソリューションを含む Finance and Operations アプリのコンフィギュレーション
-- 1 つ以上の顧客固有の拡張機能を含む Finance and Operations アプリのコンフィギュレーション
-- 顧客固有の拡張機能と 1 つ以上の ISV ソリューションの組み合わせを含む Finance and Operations アプリのコンフィギュレーション
+- 標準の財務と運用アプリの「すぐに利用できる」コンフィギュレーション (拡張機能なし)
+- 1 つ以上の ISV ソリューションを含む財務と運用アプリのコンフィギュレーション
+- 1 つ以上の顧客固有の拡張機能を含む財務と運用アプリのコンフィギュレーション
+- 顧客固有の拡張機能と 1 つ以上の ISV ソリューションの組み合わせを含む財務と運用アプリのコンフィギュレーション
 
 組織は、単純で透過的なサブスクリプション モデルを使用して、ユーザーと業務プロセスを簡単に追加することで、ビジネスの成長に合わせることができます。 詳細については、[Dynamics 365 ライセンス ガイド](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365) を参照してください。
 
 ## <a name="operating-model"></a>運用モデル
 
-Finance and Operations アプリの運用モデルでは、サービスの有効期間中の顧客、実装パートナー、Microsoft に対する特定のロールと職責を定義しています。 詳細については、[クラウドの工程とサービス](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md) を参照してください。
+財務と運用アプリの運用モデルでは、サービスの有効期間中の顧客、実装パートナー、Microsoft に対する特定のロールと職責を定義しています。 詳細については、[クラウドの工程とサービス](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md) を参照してください。
 
 ### <a name="customer-activities"></a>顧客活動
 
@@ -61,7 +61,7 @@ Finance and Operations アプリの運用モデルでは、サービスの有効
 
 ### <a name="microsoft-responsibilities"></a>Microsoft の責任
 
-Microsoft は、Microsoft SaaS サブスクリプションで顧客のサンドボックスと実稼働環境を展開し、アクティブに監視し、サービスを提供することにより Finance and Operations サービスを管理します。 この管理には、サービスを実行し、サービスの正常性について顧客と事前通信するために必要なシステム インフラストラクチャを割り当てることが含まれます。 責任には次のものが含まれます。
+Microsoft は、Microsoft SaaS サブスクリプションで顧客のサンドボックスと実稼働環境を展開し、アクティブに監視し、サービスを提供することにより財務と運用のサービスを管理します。 この管理には、サービスを実行し、サービスの正常性について顧客と事前通信するために必要なシステム インフラストラクチャを割り当てることが含まれます。 責任には次のものが含まれます。
 
 **インフラストラクチャ管理**
 - セキュリティと分離
@@ -79,7 +79,7 @@ Microsoft は、Microsoft SaaS サブスクリプションで顧客のサンド�
 
 ## <a name="system-configuration"></a>システム コンフィギュレーション
 
-Finance and Operations アプリケーションは、トランザクションの量とユーザー負荷に応じてスケールします。 顧客の実装ごとに、次の要素で構成される固有のソリューションが生成されます。
+財務と運用アプリは、トランザクションの量とユーザー負荷に応じてスケールします。 顧客の実装ごとに、次の要素で構成される固有のソリューションが生成されます。
 
 - **データ構成** – 動作、組織のレイアウト、マスター データの構造 (財務分析コードや在庫分析コードなど)、トランザクション追跡の精度を制御する一意のパラメーター セット。
 - **拡張機能とコンフィギュレーション** – コード拡張機能、ISV ソリューション、およびワークフロー、統合、レポート コンフィギュレーションを含む固有のコンフィギュレーションを使用する拡張機能メカニズム。
@@ -89,11 +89,11 @@ Microsoft は、トランザクション量とユーザーの同時実行を処�
 
 - [LCS のサブスクリプション見積もりツール](../../dev-itpro/lifecycle-services/subscription-estimator.md) の顧客のプロファイル情報に基づいて、実稼働環境のリソースを正しく割り当てる
 - 実稼働環境におけるサービスの可用性を継続的に監視および診断する
-- Finance and Operations アプリでのシステム パフォーマンスの問題の分析とトラブルシューティング
+- 財務と運用アプリでのシステム パフォーマンスの問題の分析とトラブルシューティング
 
 実装がハイ パフォーマンスになるように構成されていることを確認するには、顧客は次のタスクを完了する必要があります。
 
-- [LCS サブスクリプション見積ツール](../../dev-itpro/lifecycle-services/subscription-estimator.md) で Finance and Operations 実装に関する正確な使用状況情報を提供します。
+- [LCS サブスクリプション見積ツール](../../dev-itpro/lifecycle-services/subscription-estimator.md)で、財務と運用の実装に関する正確な使用状況情報を提供します。
 - パフォーマンスとスケールの拡張機能を構築およびテストします。
 - パフォーマンスのデータ構成を適切にテストします。
 - 運用前に [パフォーマンス テスト](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) を実行して、スケーラビリティを確認します。
@@ -112,17 +112,17 @@ Microsoft は、トランザクション量とユーザーの同時実行を処�
 
 ## <a name="globalization"></a>グローバリゼーション
 
-Finance and Operations アプリは、世界中の複数の Azure リージョンで提供されます。 Finance and Operations アプリは、さまざまな国/地域および母国語をサポートする機能を提供します。 詳細については、[ローカライズと規制の機能](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features) を参照してください。
+財務と運用アプリは、世界中の複数の Azure リージョンで提供されています。 財務と運用アプリは、さまざまな国/地域および母国語をサポートする機能を提供します。 詳細については、[ローカライズと規制の機能](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features) を参照してください。
 
 ### <a name="countryregion-specific-considerations"></a>国/地域固有の考慮事項
 
-- 現地のデータ所在地を必要とするフランスの法人とビジネスを行う規制対象の業界または商業組織の顧客は、[フランスの Finance and Operations](../../dev-itpro/deployment/france-local-deployment.md) を確認する必要があります。
-- 中国で事業を行っている顧客は、[Azure China プレイブック](/azure/china/) と [中国の 21Vianet で運用されている Finance and Operations](../../dev-itpro/deployment/china-local-deployment.md) を確認する必要があります。
+- 現地のデータ所在地を必要とするフランスの法人とビジネスを行う規制対象の業界または商業組織の顧客は、[フランスの財務と運用](../../dev-itpro/deployment/france-local-deployment.md)を確認する必要があります。
+- 中国で事業を行っている顧客は、[Azure China プレイブック](/azure/china/)と[中国の 21Vianet で運用されている財務と運用](../../dev-itpro/deployment/china-local-deployment.md)を確認する必要があります。
 - ロシアで事業を行っている顧客は、[ロシアの個人データローカリゼーション法](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia) を確認する必要があります。
 
 ### <a name="general-data-protection-regulation-gdpr"></a>一般データ保護規則 (GDPR)
 
-Finance and Operations アプリでは、Microsoft はプロセッサとして動作します。 データ プロセッサとして、Finance and Operations は、顧客がデータ コントローラーとしての GDPR 責務に適応するのに役立つプロセスと機能を提供します。 詳細については、[GDPR の概要](../../dev-itpro/gdpr/gdpr-guide.md) を参照してください。
+財務と運用アプリでは、Microsoft はプロセッサとして機能します。 データ プロセッサとして、財務と運用はデータ コントローラとして GDPR 責務に適応するのに役立つプロセスと機能を顧客に提供します。 詳細については、[GDPR の概要](../../dev-itpro/gdpr/gdpr-guide.md) を参照してください。
 
 ## <a name="environment-and-data-management"></a>環境とデータ管理
 
@@ -182,7 +182,7 @@ LCS は、環境およびデータ管理タスクの実行に使用される [�
 
 ## <a name="data-backup-and-retention"></a>データのバックアップと保持
 
-SaaS サブスクリプションの Finance and Operations 環境のデーターベースは、自動バックアップによって保護されています。 実稼働環境では、Microsoft がロールバックしない限り、自動バックアップは 28 日間保持されます。 サンドボックス (レベル 2+) 環境では、それらは 7 日間保持されます。 計画されたメンテナンス更新中に障害が発生した場合、実稼働環境のロールバックを実行できます。
+SaaS サブスクリプションの財務と運用の環境のデーターベースは、自動バックアップによって保護されています。 実稼働環境では、Microsoft がロールバックしない限り、自動バックアップは 28 日間保持されます。 サンドボックス (レベル 2+) 環境では、それらは 7 日間保持されます。 計画されたメンテナンス更新中に障害が発生した場合、実稼働環境のロールバックを実行できます。
 
 自動バックアップの詳細については、[自動バックアップ - Azure SQL Database および Azure SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview?tabs=single-database) を参照してください。
 
@@ -228,9 +228,9 @@ SaaS サブスクリプションの Finance and Operations 環境のデーター
 
 ## <a name="service-update-strategy"></a>サービス更新の戦略
 
-[ソフトウェアのライフサイクル ポリシー](../../dev-itpro/migration-upgrade/versions-update-policy.md) に従って、Finance and Operations アプリは継続的にサービスおよびサポートされる製品を対象とする [Microsoft Modern Lifecycle ポリシー](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy) に従います。 
+[ソフトウェアのライフサイクル ポリシー](../../dev-itpro/migration-upgrade/versions-update-policy.md)に従って、財務と運用アプリは継続的にサービスおよびサポートされる製品を対象とする Microsoft [Modern Lifecycle ポリシー](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy)に従います。 
 
-Microsoft は、次の月に毎年 8 つの Finance and Operations アプリのサービス更新をリリースします。
+Microsoft は、以下の月に財務と運用アプリのサービス更新を毎年 8 つリリースします。
 
 - 1 月
 - 2 月
@@ -255,7 +255,7 @@ Microsoft は、次の月に毎年 8 つの Finance and Operations アプリの�
 
 ## <a name="security-and-administrative-access"></a>セキュリティと管理アクセス権
 
-Finance and Operations の実稼働環境への管理アクセス権は、厳密に制御され、ログに記録されます。 顧客データは、[Microsoft オンライン サービスの使用条件](https://www.microsoft.com/licensing/terms/productoffering) に従って処理されます。 
+財務と運用の実稼働環境への管理アクセス権は、厳密に制御され、ログに記録されます。 顧客データは、[Microsoft オンライン サービスの使用条件](https://www.microsoft.com/licensing/terms/productoffering) に従って処理されます。 
 
 ### <a name="customer-administrative-access"></a>顧客管理アクセス権
 
@@ -264,7 +264,7 @@ Finance and Operations の実稼働環境への管理アクセス権は、厳密
 | 環境タイプ | 使用方法 | 顧客のアクセスのレベル |
 |---|---|---|
 | **非実稼働**<br>階層 1 のサンドボックス | 顧客が開発、デモ、またはトレーニング目的で顧客が配置する非実稼働環境。 | レベル 1 のサンドボックス (クラウド ホスト環境とも呼ばれます) は、LCS から顧客の Azure サブスクリプションに配置される顧客管理 VM です。 これは顧客の Azure サブスクリプションの VM なので、顧客はリモート デスクトップを介してこの環境への完全な管理アクセス権を持っています。 |
-| **非実稼働**<br>レベル 2 (またはそれ以上) のサンドボックス | ユーザー受入テスト、統合テスト、トレーニング、ステージング、またはその他の実稼働前のシナリオに対して顧客が配置する非実稼働環境。 | レベル 2 以上のサンドボックスは、Finance and Operations SaaS サブスクリプションに配置されます。 非実稼働環境に関連付けられている Azure SQL データベースへのアクセスは、[ジャストインタイム アクセス](../../dev-itpro/database/database-just-in-time-jit-access.md) を介して許可されます。 リモート デスクトップ アクセスは使用できません。 |
+| **非実稼働**<br>レベル 2 (またはそれ以上) のサンドボックス | ユーザー受入テスト、統合テスト、トレーニング、ステージング、またはその他の実稼働前のシナリオに対して顧客が配置する非実稼働環境。 | レベル 2 以上のサンドボックスは、財務と運用 SaaS サブスクリプションに配置されます。 非実稼働環境に関連付けられている Azure SQL データベースへのアクセスは、[ジャストインタイム アクセス](../../dev-itpro/database/database-just-in-time-jit-access.md) を介して許可されます。 リモート デスクトップ アクセスは使用できません。 |
 | **実稼働** | プロジェクトで [初回 Go-Live の準備](/imp-lifecycle/environment-planning.md#production-system-readiness) ができたら、実稼働環境を配置することができます。 | 実稼働環境は、SaaS サブスクリプションに配置されます。 すべてのアクセスは、ブラウザ、サービス エンドポイント、または LCS を介して行われます。 |
 
 ### <a name="microsoft-administrative-access"></a>Microsoft の管理アクセス権
@@ -296,7 +296,7 @@ Microsoft は重要度レベルに基づいてインシデントに対応し、�
 
 ## <a name="business-continuity-through-high-availability-and-disaster-recovery"></a>高い可用性と障害復旧による事業の継続性 
 
-Microsoft は、Azure リージョンの広範囲で稼働停止が発生した場合は、Finance and Operations アプリの実稼働インスタンスの事業の継続性と障害復旧を提供します。 詳細については、[事業の継続性と障害復旧](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md) を参照してください。
+Microsoft は、Azure リージョンの広範囲で稼働停止が発生した場合は、財務と運用アプリの実稼働インスタンスの事業の継続性と障害復旧を提供します。 復旧時間目標 (RTO) および復旧ポイント目標 (RPO) を含め、詳細については、[事業継続とディザスター リカバリー](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md)を参照してください。
 
 - **高可用性** – HA 機能は、Azure データセンター内の単一のノードの失敗により引き起こされるダウンタイムを防ぐ方法を提供します。 各サービスのクラウド アーキテクチャは、計算層に Azure 可用性セットを使用して、単一障害点イベントを防止します。 データベースの HA は、[Azure SQL HA 機能](/azure/azure-sql/database/high-availability-sla) 通じて提供されます。
 - **障害復旧** – [Azure の障害復旧機能](/azure/best-practices-availability-paired-regions) は、Azure データセンター全体に大きな影響を与える障害から各サービスを保護します。 これらの機能例を次に示します。
@@ -305,28 +305,19 @@ Microsoft は、Azure リージョンの広範囲で稼働停止が発生した�
     - 他の Azure リージョンでの Azure Blob Storage (ドキュメントの添付ファイルを含む) のジオ重複コピー。
     - Azure SQL および Azure Blob Storage レプリケーションのセカンダリ地域。
 
-プライマリのデータ格納場所は、レプリケーションでサポートされています。 したがって、Management Reporter やエンティティ格納などの各サービスのコンポーネントは、プライマリ データベースから変換されたデータを使用します。 このデータは、リカバリ サイトの設定およびサービスの開始後に生成する必要があります。 顧客コード コンポーネントと回復されたデータの格納場所は、サイトを再配置するために使用されます。 この再配置により、ネットワークやその他のコンポーネントとともに計算ノードのレプリケーションを指定し、回復されたデータ格納を使用してセカンダリ サイトを設定できます。 障害復旧を使用して顧客の実稼働インスタンスを復旧する場合、Microsoft と顧客は [インシデント管理](service-description.md#incident-management) の責任を満たします。
+障害復旧を使用して顧客の実稼働インスタンスを復旧する場合、Microsoft と顧客は [インシデント管理](service-description.md#incident-management) の責任を満たします。
 
-Microsoft の障害復旧の計画と手順は、System and Organization Controls (SOC) の監査を通じて定期的に検証されます。 これらのコンプライアンス監査では、Dynamics 365 Finance and Operations アプリを含む、Microsoft の DR の技術的および手順のプロセスが証明されます。 [SOC コンプライアンス](/compliance/regulatory/offering-soc-2) 監査レポートおよびその他のすべてのコンプライアンス レポートは、[Microsoft Trust Center コンプライアンスのサービス](/compliance/regulatory/offering-home) で利用できます。
+Microsoft の障害復旧の計画と手順は、System and Organization Controls (SOC) の監査を通じて定期的に検証されます。 これらのコンプライアンス監査により、Dynamics 365 財務と運用アプリを含む、Microsoft の DR の技術的および手順のプロセスが証明されます。 [SOC コンプライアンス](/compliance/regulatory/offering-soc-2) 監査レポートおよびその他のすべてのコンプライアンス レポートは、[Microsoft Trust Center コンプライアンスのサービス](/compliance/regulatory/offering-home) で利用できます。
 
-| Microsoft の責任 | 顧客の責任 |
-|---|---|
-| Microsoft は、プライマリ実稼働インスタンスが配置されると、Azure ペア データセンターにセカンダリ環境をプロビジョニングします。 詳細については、[事業の継続性と障害復旧 (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions) を参照してください。 | None |
-| Microsoft は、プライマリ実稼働インスタンスを配置すると、Azure SQL と Azure Blob Storage のジオ重複が有効します。 | None |
-| Microsoft は、Azure SQL データベースの自動バックアップを有効にします。 | None |
-| <p>障害が発生した場合、Microsoft は、顧客に対してフェールオーバーを実行する必要があるかどうか、およびデータが失われるかどうかを判断します。 稼働停止の性質とタイミングによっては、最大 15 分間、顧客データの損失が発生する場合があります。 | データが失われた場合、フェールオーバーをトリガーするために、顧客は書面によるサインオフの提供が必要となる場合があります。 |
-| フェールオーバーが発生した場合、該当するサービスは限定モードで機能します。 フェールオーバー モードでは、更新のメンテナンスは、トリガーできません。 | 顧客は、フェールオーバー モードでパッケージの配置、またはその他の定期的なメンテナンス要求を要求できません。 |
-| データセンターが運用可能になると、Microsoft はプライマリの Azure 地域の実稼働インスタンスにフェール バックします。 通常の運用を再開します。 | 顧客は、プライマリの Azure 地域の運用インスタンスに対するフェールバックでサインオフが必要となる場合があります。 |
+## <a name="finance-and-operations-support-offerings"></a>財務と運用のサポートの提供
 
-## <a name="finance-and-operations-support-offerings"></a>Finance and Operations サポートの提供
-
-技術サポートは、Finance and Operations サービスが提供されるマーケットで提供されます。 [サポート エクスペリエンス](../../dev-itpro/lifecycle-services/lcs-support.md) は、LCS または Finance and Operations アプリで提供されます。 次にいくつか例を挙げます。
+技術サポートは、財務と運用のサービスが提供されるマーケットで提供されます。 [サポート エクスペリエンス](../../dev-itpro/lifecycle-services/lcs-support.md)は、LCS または財務と運用アプリで提供されます。 次にいくつか例を挙げます。
 
 - LCS の [問題検索](../../dev-itpro/lifecycle-services/issue-search-lcs.md)
-- Finance and Operations アプリの [統合された技術サポート](../../dev-itpro/lifecycle-services/support-experience.md)
+- 財務と運用アプリの[統合された技術サポート](../../dev-itpro/lifecycle-services/support-experience.md)
 - LCS の [クラウドを利用したサポート](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md)
 
-Microsoft では、Finance and Operations のお客様に 3 つのサポートプラン (プレミア、Professional Direct、およびサブスクリプションに含まれるサポート) を提供しています。 サポート レベルはプランごとに異なります。 次の表に、3 つのプランの比較を示します。
+Microsoft では、財務と運用のお客様に 3 つのサポートプラン (プレミア、Professional Direct、およびサブスクリプションに含まれるサポート) を提供しています。 サポート レベルはプランごとに異なります。 次の表に、3 つのプランの比較を示します。
 
 | サポート機能 | プレミア | Professional Direct | サブスクリプション |
 |---|---|---|---|
@@ -341,7 +332,7 @@ Microsoft では、Finance and Operations のお客様に 3 つのサポート�
 
 ### <a name="process-to-engage-support"></a>サポートを受けるためのプロセス
 
-Finance and Operations アプリが関係するインシデントが発生した場合、顧客は LCS を通じて Microsoft にサポート チケットを送信します。 CSS は、顧客のサポート プランと、CSS で指定されたインシデントの重要度に基づいて、インシデントを処理します。
+財務と運用アプリが関係するインシデントが発生した場合、顧客は LCS を通じて Microsoft にサポート チケットを送信します。 CSS は、顧客のサポート プランと、CSS で指定されたインシデントの重要度に基づいて、インシデントを処理します。
 
 ### <a name="service-level-agreement"></a>サービス レベル アグリーメント
 
@@ -349,7 +340,7 @@ Microsoft は、サービスの月あたり 99.9% の可用性レートを約束
 
 ## <a name="important-resources"></a>重要なリソース
 
-- **[トラスト センター](https://www.microsoft.com/trust-center)** – Finance and Operations データが保管されている場所に関する情報に加え、プライバシー、コンプライアンス、およびセキュリティ手順に関する追加情報を取得します。
+- **[トラスト センター](https://www.microsoft.com/trust-center)** – 財務と運用のデータが保管されている場所に関する情報に加え、プライバシー、コンプライアンス、およびセキュリティ手順に関する追加情報を取得します。
 - **[ライセンス条件とドキュメント](https://www.microsoftvolumelicensing.com/)** – Microsoft ボリューム ライセンス プログラムを通じてライセンスされている製品およびサービスの使用に関連するライセンス条件、条件、補足情報にすばやくアクセスできます。
 - **[ライセンス条件](https://www.microsoft.com/licensing/product-licensing/)** – このページのリソースでは、Microsoft の商用ライセンス プログラムを通じて購入するソフトウェアおよびオンライン サービス製品の契約条件を定義しています。
 - **[Microsoft Lifecycle ポリシー](/lifecycle/)** – このページでは、製品のライフを通してサポートを受けるための一貫した予測可能なガイドラインを示します。
@@ -366,7 +357,7 @@ Microsoft は、サービスの月あたり 99.9% の可用性レートを約束
 
 ### <a name="business-process-modeler-bpm"></a>[ビジネス プロセス モデラー (BPM)](../../dev-itpro/lifecycle-services/bpm-overview.md)
 
-Finance and Operations アプリでサポートされているアメリカ生産性品質センター (APQC) の業務プロセス定義を使用して、指定された実装のフィットギャップ分析を完了するのに役立つ LCS のツール。
+財務と運用アプリでサポートされているアメリカ生産性品質センター (APQC) の業務プロセス定義を使用して、指定された実装のフィットギャップ分析を完了するのに役立つ LCS のツール。
 
 ### <a name="cloud-solution-provider"></a>クラウド ソリューション プロバイダー
 
@@ -374,7 +365,7 @@ Microsoft クラウド ソリューション プロバイダー (CSP) プログ�
 
 ### <a name="customer"></a>顧客
 
-Finance and Operations アプリを使用し、Office 365 のテナントによって表されるビジネス エンティティ。
+財務と運用アプリを使用し、Office 365 のテナントによって表されるビジネス エンティティ。
 
 ### <a name="development-environment"></a>開発環境
 
@@ -386,19 +377,19 @@ Microsoft が自動正常性監視およびシステム ログから判断した
 
 ### <a name="implementation-partner"></a>実装パートナー
 
-顧客が Finance and Operations ソリューションをカスタマイズ、構成、実装、および管理するために選択したパートナー。
+顧客が、財務と運用のソリューションのカスタマイズ、構成、実装、および管理を行うために選択したパートナー。
 
 ### <a name="incident"></a>インシデント
 
-顧客が Finance and Operations サービスを使用している間に発生し、LCS 経由でチケットを送信する際に発生する場合。
+顧客が財務と運用のサービスを使用している間に発生し、LCS 経由でチケットを送信する際に発生する場合。
 
 ### <a name="microsoft-customer-support-services-css"></a>Microsoft 顧客サポート サービス (CSS)
 
-Finance and Operations アプリの品質サービスを提供することに専念する Microsoft のグローバル サポート チーム。
+財務と運用アプリの品質サービスを提供することに専念する Microsoft のグローバル サポート チーム。
 
 ### <a name="microsoft-dynamics-lifecycle-services-lcs"></a>Microsoft Dynamics Lifecycle Services (LCS)
 
-トライアルから実装、実稼働後の管理とサポートまで、Finance and Operations アプリのライフサイクル管理のための管理ポータル。 詳細については、[Lifecycle Services のリソース](../../dev-itpro/lifecycle-services/lcs.md) を参照してください。
+トライアルから実装、実稼働後の管理とサポートまで、財務と運用アプリのライフサイクル管理のための管理ポータル。 詳細については、[Lifecycle Services のリソース](../../dev-itpro/lifecycle-services/lcs.md) を参照してください。
 
 ### <a name="non-production-instance"></a>非実稼働インスタンス
 
@@ -412,7 +403,7 @@ Finance and Operations アプリの品質サービスを提供することに専
 
 ### <a name="production-instance"></a>実稼働インスタンス
 
-顧客が日常の「ライブ」のトランザクションや業務プロセスを管理するために使用する Finance and Operations 環境。
+顧客が日常の「ライブ」のトランザクションや業務プロセスを管理するために使用する財務と運用の環境。
 
 ### <a name="sandbox-environment"></a>サンドボックス環境
 
@@ -420,7 +411,7 @@ Finance and Operations アプリの品質サービスを提供することに専
 
 ### <a name="service"></a>サービス
 
-Finance and Operations アプリに含まれるいずれかのコア サービス。
+財務と運用アプリに含まれるいずれかのコア サービス。
 
 ### <a name="service-level-agreement-sla-for-microsoft-online-services"></a>Microsoft オンライン サービスのサービス レベル契約 (SLA)
 
@@ -428,7 +419,7 @@ SLA は Microsoft オンライン サービスに適用されます。 詳細に
 
 ### <a name="service-update"></a>サービスの更新
 
-Microsoft は、サービスの更新を通じて、一貫した基準で Finance and Operations 環境を提供しています。 顧客は、業務ニーズに基づいて、独自のサービス更新カレンダーを設定します。 詳細については、[1 つのバージョンのサービス更新](../../dev-itpro/lifecycle-services/oneversion-overview.md) を参照してください。
+Microsoft は、サービスの更新を通じて、一貫した基準で財務と運用の環境を提供しています。 顧客は、業務ニーズに基づいて、独自のサービス更新カレンダーを設定します。 詳細については、[1 つのバージョンのサービス更新](../../dev-itpro/lifecycle-services/oneversion-overview.md) を参照してください。
 
 ### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
 
@@ -436,4 +427,4 @@ Dynamics 365 ソリューションのアーキテクチャ、セキュリティ�
 
 ### <a name="user"></a>ユーザー
 
-Finance and Operations 環境を使用し、顧客のテナントに関連付けられている 1 人のユーザー。
+財務と運用の環境を使用し、顧客のテナントに関連付けられている 1 人のユーザー。

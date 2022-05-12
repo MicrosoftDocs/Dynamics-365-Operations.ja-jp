@@ -2,7 +2,7 @@
 title: サブスクリプション請求の概要
 description: このトピックでは、Microsoft Dynamics 365 Finance でのサブスクリプション請求管理について説明します。
 author: JodiChristiansen
-ms.date: 02/09/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 9d46492cca3cc435048fa497f6b1f3a28b77140a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462472"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644530"
 ---
 # <a name="subscription-billing-overview"></a>サブスクリプション請求の概要
 
@@ -33,6 +33,8 @@ ms.locfileid: "8462472"
 - **定期契約請求** ― このモジュールを使用すると、定期請求管理および価格管理で、価格決定パラメーターと請求書作成パラメーター、契約の適用方法、および月次締め請求書を制御できます。
 - **収益および経費の繰延** ― このモジュールは、収益を管理し、毎月の経常収益に関するリアルタイムの情報を可能にすることで、手動のプロセスと外部システムへの依存を排除します。
 - **多要素収益配賦** ― このモジュールは、複数の品目にわたる価格決定および収益配賦を処理することで、収益への準拠に役立ちます。
+
+サブスクリプション請求管理の詳細については、[サブスクリプション請求管理 Power BI コンテンツ](sub-bill-power-bi.md)を参照してください。
 
 **機能管理** を使用してサブスクリプションの請求書作成を有効にします。 ただし、**収益認識** 機能では使用できません。 したがって、定期購読の請求を有効にする前に、その機能を無効にする必要があります。
 

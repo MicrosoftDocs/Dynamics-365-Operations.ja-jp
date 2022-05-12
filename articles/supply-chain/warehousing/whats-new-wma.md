@@ -2,7 +2,7 @@
 title: Warehouse Management モバイル アプリの新機能または変更された機能
 description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能および変更された機能を一覧表示します。
 author: Mirzaab
-ms.date: 03/11/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487839"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644735"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
 このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20210"></a>Version 2.0.21.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- 複数のクラッシュ問題を修正しました。
+- 既定のページでスキャンまたは入力する時、一部の文字が認識されない問題を修正しました。
+- 既定のページで BackSpace を入力すると、一度に 2 文字削除される問題を修正しました。
+- **作業一覧** ページの **並べ替え** フィールドに、カードの実際の並べ替え順に対応しない誤った値が表示される問題を修正しました。
+- Microsoft Windows で実行中にアプリ ウィンドウのサイズを変更すると、間違ったレイアウトが表示される問題を修正しました 。
+- ポップアップ リスト内でスクロールすると、一部のリスト項目が非表示のままになったり正しく表示されない問題を修正しました。
+- 大型ディスプレイで実行する場合に、ユーザー名とパスワードのフィールドが同じページに表示されるように、サインイン ページを再設計しました。
+- クイック タップにコントロールが反応する方法を改善しました。
+- アプリ内のエラー ログの表示を追加しました。
+- いくつかのユーザー補助機能を追加しました (ナレーションの向上、Android の欠落しているプレースホルダーの修正、スライダー コントロールに対するキーボード入力の有効化など)。
 
 ## <a name="version-20200"></a>Version 2.0.20.0
 

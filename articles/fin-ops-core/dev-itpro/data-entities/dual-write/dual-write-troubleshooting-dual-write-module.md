@@ -2,19 +2,19 @@
 title: 財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング
 description: このトピックでは、財務と運用アプリのデュアル書き込みモジュールの問題修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 0696d525e985f1cfcac1998d4c0bd8a380ca9551
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565969"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8613885"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング
 
@@ -73,7 +73,7 @@ Root activity ID: \<your root activity\> id
 
 ## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>パフォーマンスを向上させるために財務と運用アプリでの並列処理を有効にする
 
-並行処理を有効にすると、財務と運用アプリから Customer Engagement アプリおよび Microsoft Dataverse にデータをインポートする時間が短縮されます。 
+並列処理を有効にすると、Dynamics 365 Customer Engagement アプリと Microsoft Dataverse から 財務と運用アプリにデータをインポートするために必要な時間が短縮されます。 
 
 財務と運用アプリでの並列処理を有効にするには、次の手順に従います。
 

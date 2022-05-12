@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a02767e4a90fa6b7414c796d66e758afe0501cf5
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: d2fcc883cc87f785cad2e5f7efbf67888ca38d10
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388498"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644673"
 ---
 # <a name="tax-calculation-overview"></a>税の計算の概要
 
@@ -79,6 +79,7 @@ ms.locfileid: "8388498"
 | 10.0.24         | 税計算コンフィギュレーション 40.50.225 |
 | 10.0.25         | 税計算コンフィギュレーション 40.50.225 |
 | 10.0.26         | 税計算コンフィギュレーション 40.54.234 |
+| 10.0.27         | 税計算コンフィギュレーション 40.54.234 |
 
 
 ## <a name="data-flow"></a>データ フロー

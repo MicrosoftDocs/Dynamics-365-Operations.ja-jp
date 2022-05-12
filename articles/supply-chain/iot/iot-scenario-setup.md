@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b8e8c65cebe64f86dcf158668e8a4f5600c158a1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2956a9e18e24532c5a26bbbaf61438c9b7550a1a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782430"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644703"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>IoT インテリジェンスのシナリオ設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、IoT インテリジェンスのシナリオを Microsoft Dynamics 365 Supply Chain Management でコンフィギュレーションする方法について説明します。 シナリオを設定する前に、[Microsoft Dynamics Lifecycle Services (LCS) の設定](iot-lcs-setup.md) おこなう必要があります。
+このトピックでは、IoT インテリジェンスのシナリオを Microsoft Dynamics 365 Supply Chain Management でコンフィギュレーションする方法について説明します。 <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
 
 このトピックでは、マシンが停止した際に Supply Chain Management で通知を生成するように、**装置のダウンタイム** のシナリオを構成します。 このトピックでは、品目の属性が指定された範囲外である場合に通知が生成されるように、**製品品質** シナリオをコンフィギュレーションする方法、および生産スループットがしきい値を下回った場合に通知を生成するように **生産遅延** シナリオをコンフィギュレーションする方法についても説明します。
 

@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce の削除済みまたは推奨されない機能
 description: このトピックでは、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 author: josaw
-ms.date: 03/04/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7b06f8ca65e4fac13f322f8d72b8ad4f9db8ccd7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 213ed2091b1f2359f2481b162cba07812b3ffe90
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384612"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649078"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
@@ -32,6 +32,20 @@ ms.locfileid: "8384612"
 
 > [!NOTE]
 > 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Commerce 10.0.25 リリースの削除済みまたは非推奨の機能
+
+### <a name="modern-point-of-sale-mpos"></a>Modern 販売時点管理 (MPOS)
+
+モダン販売時点管理 (MPOS) アプリケーションは、Commerce バージョン 10.0.25 のリリースで非推奨となり、Store Commerce アプリに置き換えらます。
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 店舗内のアプリは、Dynamics 365 Commerce オムニチャネル オファリングの基礎です。 モダンでインテリジェントなストア エクスペリエンスを提供するために継続的に革新し、Windows で既存の店舗内アプリケーションを使用し IT オペレーションとユーザー エクスペリエンスを大幅に改善する新しい一連の変更を展開するソリューションをさらにモダンにします。 新しい Store Commerce アプリケーションは、既存の MPOS のテクノロジ アップグレードです。 Windows プラットフォームでのパフォーマンス、信頼性、および長期のサポートを強化し、更新を行うごとにアプリを再梱包する必要がなされます。 |
+| **別の機能で置き換えられているか?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
+| **影響を受ける製品領域**         | Modern 販売時点管理 |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨: Commerce バージョン 10.0.25 のリリース時に、LCS 仮想マシン (VMs) を介して出荷された MPOS インストーラーは、2023 年 10 月に削除されます。 |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Commerce 10.0.21 リリースの削除済みまたは非推奨の機能
 
@@ -59,7 +73,7 @@ Retail SDKはLifecycle Services (LCS) に出荷されます。 この配布モ�
 | **別の機能で置き換えられているか?**   |  [GitHub と NuGet から Retail SDK サンプルと参照パッケージをダウンロードする](../dev-itpro/retail-sdk/sdk-github.md) |
 | **影響を受ける製品領域**         | Retail SDK |
 | **配置オプション**              | All |
-| **状態**                         | 非推奨: 現在のリリース 10.0.21で、LCS VM を介して出荷された SDK は、2023 年 4 月に削除されます。 |
+| **状態**                         | 非推奨: 10.0.21 のリリース現在、LCS VMs を介して出荷された SDK は、2023 年 10 月に削除されます。 |
 
 ### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>小売展開可能パッケージと、結合された POS、ハードウェア ステーション、および Cloud スケール ユニット インストーラー
 
@@ -92,7 +106,7 @@ ModernPos.sln、CloudPos.sln、POS.Extension.csproj、および POS フォルダ
 | **別の機能で置き換えられているか?**   | [POS の独立したパッケージ SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **影響を受ける製品領域**         | Dynamics 365 Commerce POS 拡張機能と展開 |
 | **配置オプション**              | All |
-| **状態**                         | 非推奨: リリース 10.0.21 で、Retail SDKの ModernPos.Sln、CloudPOs.sln、および POS.Extensons.csproj を使用する結合 POS パッケージと拡張モデルのサポートは、2023 年 4 月に削除される予定です。 |
+| **状態**                         | 非推奨: リリース 10.0.21 の時点で、Retail SDK の ModernPos.Sln、CloudPOs.sln、および POS.Extensons.csproj を使用する結合 POS パッケージと拡張モデルのサポートは、2023 年 10 月に削除される予定です。 |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Commerce 10.0.17 リリースの削除済みまたは非推奨の機能
 

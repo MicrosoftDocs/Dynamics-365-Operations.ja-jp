@@ -2,19 +2,19 @@
 title: 一般的なトラブルシューティング
 description: このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
 author: RamaKrishnamoorthy
-ms.date: 04/07/2020
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 5896b031229c7fe7e02c8ccf038dd2b1a4f2de05
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554602"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614098"
 ---
 # <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
@@ -131,6 +131,29 @@ Dynamics 365 Sales で販売注文を作成する際に、**+ 製品の追加** 
 2. フォーム ノード配下の **情報** フォームを確認します。
 3. **情報** フォームを選択し、**セキュリティロールの有効化** をクリックします。
 4. **すべてのユーザーに表示** されるようにセキュリティ設定を変更します。
+
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>データ統合が最新の財務と運用スキーマを使用していることを確認する方法
+
+最新のスキーマが使用されていない場合、データ統合でデータの問題が発生する可能性があります。 次の手順は、財務と運用アプリのエンティティ リストと、データ インテグレーターのエンティティを更新するのに役立ちます。
+
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>財務と運用環境のエンティティ リストの更新
+1.  財務と運用環境にログオンします。
+2.  **データ管理** を選択します。
+3.  データ管理内で、**フレームワーク パラメータ** を選択します。
+4.  **データのインポート/エクスポート フレームワークのパラメータ** ページで、**エンティティ設定** タブを選択し、**エンティティ リストの更新** を選択します。 関連するエンティティの数によっては、更新に 30 分以上かかる場合があります。
+5.  **データ管理** に移動し、**データ エンティティ** を選択して、予期されるエンティティが一覧表示されていることを検証します。 予想されるエンティティが表示されない場合は、エンティティが財務と運用環境に表示されていることを確認し、必要に応じて欠落しているエンティティを復元します。
+
+#### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>更新で問題が解決しない場合は、エンティティを削除して再追加する
+
+> [!NOTE]
+> 削除する前に、エンティティを有効に使用している処理グループを停止する必要がある場合があります。
+
+1.  財務と運用環境で **データ管理** を選択し、**データ エンティティ** を選択します。
+2.  問題のあるエンティティを検索し、対象のエンティティ、ステージング テーブル、エンティティ名、およびその他の設定をメモします。 一覧から 1 つまたは複数のエンティティを削除します。
+3.  **新規** を選択し、手順 2 のデータを使用して 1 つまたは複数のエンティティを再追加します。 
+
+#### <a name="refresh-entities-in-data-integrator"></a>データ インテグレーターでエンティティの更新
+Power Platform 管理センターにログオン し、**データ統合を** を選択します。 問題が発生しているプロジェクトを開き、**エンティティの更新** を選択します。
 
 ## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>ネットワーク トレースを有効にして保存し、サポート チケットにトレースを関連付けできるようにする方法
 
