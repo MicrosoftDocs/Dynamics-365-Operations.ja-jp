@@ -12,14 +12,12 @@
               items:
                 - name: Supply Chain Management の新機能または変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.27 (2022 年 7 月)
+                  href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (2022 年 5 月)
                   href: get-started/whats-new-scm-10-0-26.md
                 - name: Supply Chain Management 10.0.25 (2022 年 4 月)
                   href: get-started/whats-new-scm-10-0-25.md
-                - name: Supply Chain Management 10.0.24 (2022 年 2 月)
-                  href: get-started/whats-new-scm-10-0-24.md
-                - name: Supply Chain Management 10.0.23 (2022 年 1 月)
-                  href: get-started/whats-new-scm-10-0-23.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -1725,8 +1723,6 @@
               href: iot/iot-azure-setup.md
             - name: IoT ハブのメッセージ スキーマの形式
               href: iot/iot-schema-format.md
-            - name: LCS でアドインのインストール
-              href: iot/iot-lcs-setup.md
             - name: メトリックスの設定
               href: iot/iot-metrics-setup.md
             - name: シナリオの設定
@@ -2757,6 +2753,8 @@
                   href: production-control/production-floor-execution-setup.md
                 - name: 生産現場の実行インターフェイスを作業者が使用する方法
                   href: production-control/production-floor-execution-use.md
+                - name: 生産現場の実行インターフェイスに休暇の残高を表示する
+                  href: production-control/production-floor-execution-payroll-stats.md
                 - name: 生産現場の実行インターフェースのスタイルを作成する
                   href: production-control/production-floor-execution-styles.md
                 - name: 生産現場の実行インターフェースをカスタマイズする

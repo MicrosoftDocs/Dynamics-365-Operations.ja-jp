@@ -12,6 +12,8 @@
               items:
                 - name: Finance の新機能および変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.27 (7 月)
+                  href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (5 月)
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: Finance 10.0.25 (4 月)
@@ -404,7 +406,7 @@
                   href: accounts-receivable/rev-rec-reallocation-scenario-2.md
                 - name: 売上認識の再配賦 – シナリオ 3
                   href: accounts-receivable/rev-rec-reallocation-scenario-3.md
-                - name: 収益認識の再配賦 – シナリオ 4
+                - name: 売上認識の再配賦 – シナリオ 4
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
             - name: サブスクリプション請求管理
               items:
@@ -412,6 +414,8 @@
                   href: accounts-receivable/subscription-billing-summary.md
                 - name: 定期契約請求
                   items:
+                    - name: 定期契約請求の設定
+                      href: accounts-receivable/sb-recur-bill-parameters.md
                     - name: 請求スケジュールの作成
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: 請求スケジュールのコピー
@@ -420,22 +424,26 @@
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: マイルストーン請求
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: 売上配賦
+                      href: accounts-receivable/sb-rev-allocation.md
                     - name: サポートおよび更新プロセス
                       href: accounts-receivable/sb-support-renewals.md
+                    - name: 未請求売上
+                      href: accounts-receivable/sb-unbilled-revenue.md
                     - name: 消費価格指数のスケジュール
                       href: accounts-receivable/cpischedules.md
                     - name: 請求スケジュールの終了
                       href: accounts-receivable/terminate-billing-schedule.md
+                    - name: 調整日のシナリオ
+                      href: accounts-receivable/sb-alignment-date-examples.md
                 - name: 売上および経費の繰延
                   items:
-                    - name: 売上および経費の繰延の設定
+                    - name: 売上および経費の繰延を設定する
                       href: accounts-receivable/sb-deferrals.md
-                    - name: 繰延スケジュール
-                      items:
-                        - name: 繰延スケジュールの作成
-                          href: accounts-receivable/sb-deferrals-schedules.md
-                        - name: 繰延の既定トランザクション
-                          href: accounts-receivable/sb-deferral-transactions.md
+                    - name: 繰延スケジュールの作成
+                      href: accounts-receivable/sb-deferrals-schedules.md
+                    - name: 繰延の既定トランザクション
+                      href: accounts-receivable/sb-deferral-transactions.md
                 - name: 複数要素売上配賦
                   items:
                     - name: 複数要素売上配賦を設定する
@@ -1429,7 +1437,7 @@
                             - name: 電子請求用 Azure リソースの設定
                               href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
                             - name: Azure portal での Azure Key Vault の作成
-                              href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-create-azure-key-vault-azure-portal.md?toc=/dynamics365/finance/toc.json
                             - name: Azure portal での Azure ストレージ アカウントの作成
                               href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
                             - name: SharePoint 接続の構成
@@ -1460,6 +1468,8 @@
                           href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
                         - name: 他の組織との共有
                           href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+                        - name: 使用状況管理ダッシュボード
+                          href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                         - name: 受信した電子ドキュメントの処理
                           items:
                             - name: 受信した電子ドキュメントの処理
@@ -1468,12 +1478,12 @@
                               href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
                             - name: SharePoint チャネルの構成
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
-                        - name: Finance および Supply Chain Management での電子請求の設定と使用
-                          items:
-                            - name: 電子請求との統合のアクティブ化と設定
-                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                            - name: 電子請求パラメーターの設定
-                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                    - name: Finance および Supply Chain Management での電子請求の設定と使用
+                      items:
+                        - name: 電子請求との統合のアクティブ化と設定
+                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                        - name: 電子請求パラメーターの設定
+                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: 電子請求の使用
                           items:
                             - name: 電子請求への電子ドキュメントの送信
@@ -1486,12 +1496,6 @@
                       items:
                         - name: 電子請求機能の可用性
                           href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
-                        - name: 電子請求サービス管理の使用を開始する
-                          href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
-                        - name: 電子請求の使用を開始する
-                          href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: 新しい電子請求機能を作成する
-                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
                         - name: ブラジル用電子請求の使用を開始する
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: エジプト用電子請求の使用を開始する
@@ -1504,10 +1508,6 @@
                           href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: 電子請求サービスを使用して仕入先請求書をインポートする
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
-                        - name: 電子請求の設定
-                          href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
-                        - name: Power Platform プラグイン管理リファレンス
-                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: 電子請求に関するよく寄せられる質問
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: 税計算
@@ -1618,6 +1618,12 @@
                           href: localizations/tcs-troubleshooting-failed-access-tax-service.md
                         - name: 税計算パラメーター内の空の税機能リスト
                           href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
+                        - name: 税コードを特定できません
+                          href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
+                        - name: 一致する結果が見つかりません
+                          href: localizations/tcs-troubleshooting-no-matching-result.md
+                        - name: 税計算サービスでデバッグ モードを有効化する
+                          href: localizations/tcs-troubleshooting-enable-debug-mode.md
                     - name: 税計算に関するよくあるご質問
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: 税
@@ -1626,7 +1632,7 @@
                   items:
                     - name: 消費税の概要
                       href: general-ledger/indirect-taxes-overview.md
-                    - name: 基準金額に基づく消費税率と計算方法
+                    - name: 基準金額に基づく消費税率と算出方法
                       href: general-ledger/marginal-base-field.md
                     - name: 消費税支払と丸めルール
                       href: general-ledger/round-sales-tax-payments.md
@@ -3725,6 +3731,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: 販売と売上性のパフォーマンス
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
+                - name: サブスクリプション請求管理の Power BI コンテンツ
+                  href: accounts-receivable/sub-bill-power-bi.md
                 - name: 仕入先支払
                   href: accounts-payable/Vendor-payments-workspace.md
                 - name: 要員指標

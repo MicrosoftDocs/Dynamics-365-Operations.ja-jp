@@ -12,14 +12,12 @@
               items:
                 - name: Commerce の新機能および変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.27 (2022 年 7 月)
+                  href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (2022 年 5 月)
                   href: get-started/whats-new-commerce-10-0-26.md
                 - name: Commerce 10.0.25 (2022 年 4 月)
                   href: get-started/whats-new-commerce-10-0-25.md
-                - name: Commerce 10.0.24 (2022 年 2 月)
-                  href: get-started/whats-new-commerce-10-0-24.md
-                - name: Commerce 10.0.23 (2022 年 1 月)
-                  href: get-started/whats-new-commerce-10-0-23.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -356,6 +354,8 @@
                           href: tax-exempt-price-inclusive.md
                         - name: オンライン注文用の消費税のコンフィギュレーション
                           href: sales-tax-config.md
+                        - name: 注文概要で税の分割情報を非表示にする
+                          href: hide-taxes-breakup.md
                     - name: 電子メール通知プロファイルの設定
                       href: email-notification-profiles.md
                     - name: 番号順序
@@ -394,7 +394,7 @@
                       href: dev-itpro/store-commerce.md
                     - name: デバイス管理実装ガイダンス
                       href: implementation-considerations-devices.md
-                    - name: MPOS か Cloud POS かの選択
+                    - name: Store Commerce または Cloud POS を選択する
                       href: MPOS-or-CPOS.md
                     - name: オンラインおよびオフラインの POS 操作
                       href: pos-operations.md
@@ -496,6 +496,8 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: 小売チャネルの財務分析コードの作成と店舗の値の構成
                   href: tasks/create-financial-dimensions-retail-channels.md
+                - name: 小売明細書の番号順序を設定する
+                  href: retail-statements-number-sequences.md
                 - name: eコマース チャネルで一貫した配送モードの処理を有効にする
                   href: consistent-delivery-mode-handling.md
             - name: オンライン チャネルの設定
@@ -878,12 +880,14 @@
                   href: tasks/define-loyalty-reward-points.md
                 - name: ロイヤルティ スキーマの定義
                   href: tasks/define-loyalty-schemes.md
-                - name: ロイヤルティ報酬ポイントのプロセスの調整
+                - name: ロイヤルティ報酬ポイントの調整を処理する
                   href: tasks/process-loyalty-reward-point-adjustments.md
         - name: 財務の管理
           items:
             - name: 明細書の概要
               href: retail-statements.md
+            - name: Commerce 転記パラメーター
+              href: commerce-posting-parameters.md
             - name: 明細書の算定のための店舗トランザクションの検証
               href: valid-checker.md
             - name: 小売トランザクションの整合性チェックのルールを無効にする
@@ -1100,6 +1104,8 @@
                       href: adventure-works-theme.md
                     - name: Adventure Works のテーマのインストール
                       href: install-adventure-works.md
+                - name: Commerce ローカライズ ガイド
+                  href: e-commerce-localization-guide.md
             - name: デジタル資産の管理
               items:
                 - name: デジタル資産管理の概要
@@ -1312,6 +1318,14 @@
               href: b2b/payment-method.md
             - name: B2B eコマース サイトの製品数量制限の設定
               href: b2b/quantity-limits.md
+            - name: B2B サイトの Commerce カタログ
+              items:
+                - name: B2B サイトの Commerce カタログを作成する
+                  href: catalogs-b2b-sites.md
+                - name: B2B カスタマイズの Commerce カタログの拡張性に対する影響
+                  href: catalogs-b2b-sites-dev.md
+                - name: B2B のよくあるご質問の Commerce カタログ
+                  href: catalogs-b2b-sites-FAQ.md
         - name: 監視と分析
           items:
             - name: 販売と利益幅のパフォーマンスの監視
@@ -2474,13 +2488,17 @@
                       href: dev-itpro/extension-resource-localization.md
             - name: ヘッドレス コマース
               items:
+                - name: 概要
+                  items:
+                    - name: Commerce Scale Unit (CSU) コアの概要
+                      href: dev-itpro/CSU-core.md
                 - name: API と参照
                   items:
                     - name: Commerce Scale Unit の顧客およびコンシューマー API
                       href: dev-itpro/retail-server-customer-consumer-api.md
                     - name: 外部アプリケーションでの Retail Server API の使用
                       href: dev-itpro/consume-retail-server-api.md
-                    - name: Retail POS 向け Typescript および C# プロキシ
+                    - name: Retail POS 向け TypeScript および C# プロキシ
                       href: dev-itpro/typescript-proxy-retail-pos.md
                     - name: Commerce Runtime (CRT) のアーキテクチャとコンフィギュレーション
                       href: dev-itpro/commerce-runtime-overview.md
@@ -2528,6 +2546,8 @@
                       href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: パッケージと展開
                   items:
+                    - name: Cloud Scale Unit 拡張機能パッケージの作成
+                      href: dev-itpro/CSU-packaging.md
                     - name: Cloud Scale Unit 拡張機能の削除
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2540,6 +2560,8 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Commerce SDK への POS 拡張機能の移行
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: VS Code を使用して Store Commerce 拡張機能をデバッグする
+                      href: dev-itpro/sc-debug.md
                 - name: 環境設定
                   items:
                     - name: ローカル開発環境
@@ -2614,6 +2636,8 @@
                       href: dev-itpro/pos-extension/mpos-extension-signing.md
                     - name: Cloud POS 拡張機能パッケージの作成
                       href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Store Commerce 拡張機能インストーラー パッケージの作成
+                      href: dev-itpro/store-comm-extension-installer.md
             - name: eコマース
               items:
                 - name: 概要
@@ -2814,8 +2838,12 @@
                       items:
                         - name: テレメトリ ロガー
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce HQ
+            - name: Commerce Headquarters
               items:
+                - name: CDX パッケージ拡張機能
+                  items:
+                    - name: 顧客の CDX パッケージを拡張してカスタム データを追加する
+                      href: dev-itpro/extend-customer-CDX-package.md
                 - name: パッケージと展開
                   items:
                     - name: 財務と運用の展開のための Commerce 支払パッケージの作成
