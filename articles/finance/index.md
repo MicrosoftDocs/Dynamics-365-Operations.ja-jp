@@ -1,27 +1,27 @@
 ---
 title: Finance ホーム ページ
 description: このトピックでは、Microsoft Dynamics 365 Finance の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。
-author: roschlom
+author: kfend
 ms.date: 11/04/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "206434"
 - intro-internal
 ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13a5e12c7ea45ff343a5c7ae14b8ed5a030aabf5
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 1018cb8c3279a27a55a415c23405571e23ab40e1
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753724"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713701"
 ---
 # <a name="finance-home-page"></a>Finance ホーム ページ
 
@@ -80,6 +80,6 @@ Supply Chain Management 機能は調達から支払いまでのプロセスの�
 
 ## <a name="elearning-courses"></a>eラーニング コース
 
-オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Finance](/learn/browse/?products=dynamics-finance&resource_type=learning+path) をご確認ください。
+オンライン コースおよびトレーニングについては、[Microsoft Learn の Dynamics 365 Finance](/learn/browse/?products=dynamics-finance&resource_type=learning+path) をチェックアウトしてください。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

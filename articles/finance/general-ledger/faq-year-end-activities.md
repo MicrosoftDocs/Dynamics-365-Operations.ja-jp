@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: kweekley
+ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b0560024d87ad72c7ab77eaff52a305a4ab5a089
-ms.sourcegitcommit: cd0ba5f0ac7c44d36559a3e6e0fffb6ed18f9a20
+ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/28/2021
-ms.locfileid: "7947265"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725603"
 ---
 # <a name="year-end-activities-faq"></a>年度末の活動に関するよく寄せられる質問 
 
@@ -175,7 +175,7 @@ ms.locfileid: "7947265"
 Dynamics 365 Finance では、1096 Annual Summary and Transmission of US Information Returns フォームの印刷を行いません。
 
 ## <a name="accounts-payable-1099--are-there-any-new-features-that-support-1099-reporting-for-public-sector"></a>買掛金勘定: 1099 – 公的機関の 1099 レポートをサポートする新機能はありますか。 
-公的機関の新機能として、**主勘定ごとの 1099 情報の更新** が追加されました。これは **機能管理** ワークスペースで有効にできます。 この機能を使用すると、仕入先レコードの既定の勘定ではなく、勘定配布の主勘定によって、仕入先の 1099 値を関連付けることができます。
+公的機関の新機能として、**主勘定ごとの 1099 情報の更新** が追加されました。これは **機能管理** ワークスペースで有効にできます。 この機能を使用すると、仕入先レコードの既定の勘定ではなく、勘定配賦の主勘定によって、仕入先の 1099 値を関連付けることができます。
 
 詳細については、[1099 レポートの仕入先の設定](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md)を参照してください。
 

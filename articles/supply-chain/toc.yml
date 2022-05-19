@@ -86,13 +86,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance + Operations (on-premises) の購入
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: オンプレミス展開の倉庫管理を構成する
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
             - name: ドキュメント リソース
               items:
                 - name: ヘルプ システム
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: ヘルプ システムに接続する
+                - name: ヘルプ システムへの接続
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
                 - name: カスタム ヘルプの概要
                   href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json
@@ -3157,7 +3155,7 @@
                           href: service-management/cancel-service-orders.md
                         - name: サービス注文の手動作成
                           href: service-management/create-service-orders-manually.md
-                        - name: 未収のサブスクリプション売上
+                        - name: 未収のサブスクリプション収益
                           href: service-management/accrue-subscription-revenue.md
                         - name: サービス注文の削除
                           href: service-management/delete-service-orders.md
@@ -3299,8 +3297,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: 品目の着荷仕訳帳を使用した基本倉庫管理に対応した品目の登録
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: V2 データ エンティティによる入庫 ASN のインポート
-                  href: warehousing/import-asn-v2-data-entity.md
+                - name: V3 データ エンティティによる入庫 ASN のインポート
+                  href: warehousing/import-asn-data-entity.md
                 - name: 受入倉庫から店舗までのクロスドッキング製品
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: 発注書のプット アウェイ場所のディレクティブの設定
@@ -3749,7 +3747,7 @@
                   href: troubleshooting/procurement/max-limit-on-requisition.md
                 - name: 発注書の確認時に「オブジェクト参照が設定されていない」というエラーが発生する
                   href: troubleshooting/procurement/object-reference-not-set.md
-                - name: 勘定配布が過剰配布または過小配布になっている
+                - name: 勘定配賦が勘定配賦または過小配布になっている
                   href: troubleshooting/procurement/over-under-distribution.md
                 - name: '購買契約のページに [価格単位] フィールドを追加できない'
                   href: troubleshooting/procurement/personalize-purchase-agreement-price.md

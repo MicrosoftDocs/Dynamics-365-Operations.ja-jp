@@ -86,13 +86,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: Finance + Operations (on-premises) の購入
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: オンプレミス展開の倉庫管理を構成する
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
             - name: ドキュメント リソース
               items:
                 - name: ヘルプ システム
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
-                - name: ヘルプ システムに接続する
+                - name: ヘルプ システムへの接続
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/finance/toc.json
                 - name: カスタム ヘルプの概要
                   href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/finance/toc.json
@@ -246,7 +244,7 @@
                   href: accounts-payable/view-automated-vendor-invoice.md
                 - name: 仕入先請求書入力ワークスペース
                   href: accounts-payable/vendor-invoices-workspace.md
-            - name: 仕入先請求書の勘定配布と補助元帳仕訳入力
+            - name: 仕入先請求書の勘定配賦と補助元帳仕訳入力
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: 請求書照合と会社間発注書
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
@@ -272,6 +270,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: 仕入先転記プロファイル
               href: accounts-payable/vendor-posting-profiles.md
+            - name: 諸費用コードの作成
+              href: accounts-receivable/create-charges-codes.md
             - name: 仕入先請求書の日付
               href: accounts-payable/vendor-invoice-dates.md
             - name: 買掛金勘定と売掛金勘定の外貨再評価
@@ -292,6 +292,8 @@
               items:
                 - name: 買掛金勘定の集中支払
                   href: accounts-payable/centralized-payments-accounts-payable.md
+                - name: つなぎ支払の設定および処理
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: 決済のコンフィギュレーション
                   href: cash-bank-management/configure-settlement.md
                 - name: 残余決済
@@ -352,19 +354,23 @@
               href: accounts-receivable/customer-workflow.md
             - name: 定期請求書の設定と処理
               href: accounts-receivable/set-up-process-recurring-invoices.md
-            - name: 自由書式の請求書の勘定配布と補助元帳仕訳
+            - name: 自由書式の請求書の勘定配賦と補助元帳仕訳
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
+            - name: 売掛金勘定の転記
+              href: general-ledger/accts-recvble-posting.md
             - name: 顧客転記プロファイル
               href: accounts-receivable/customer-posting-profiles.md
+            - name: 諸費用コードの作成
+              href: accounts-receivable/create-charges-codes.md
             - name: 単一ユーロ支払地域 (SEPA) 口座引落の概要
               href: accounts-receivable/sepa-direct-debit-overview.md
-            - name: SEPA 口座引落の委任状の設定
+            - name: SEPA 口座引落の委託の設定
               href: accounts-receivable/sepa-direct-debit-mandate.md
             - name: クレジット カードの設定、認証、および取得
               href: accounts-receivable/credit-card-authorizations.md
             - name: 自由書式の請求書の作成
               href: accounts-receivable/create-free-text-invoice-new.md
-            - name: 自由書式の請求書の勘定配布と補助元帳仕訳
+            - name: 自由書式の請求書の勘定配賦と補助元帳仕訳
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
             - name: 自由書式の請求書テンプレートの作成
               href: accounts-receivable/create-free-text-invoice-template-new.md
@@ -386,27 +392,27 @@
               href: accounts-receivable/set-up-bills-exchange.md
             - name: 売掛金勘定の決算
               href: accounts-receivable/close-accounts-receivable.md
-            - name: 売上認識基準
+            - name: 収益認識
               items:
-                - name: 売上認識の概要
+                - name: 収益認識の概要
                   href: accounts-receivable/revenue-recognition-overview.md
-                - name: 売上認識の設定
+                - name: 収益認識の設定
                   href: accounts-receivable/revenue-recognition-setup.md
-                - name: 繰延売上の認識
+                - name: 繰延収益の認識
                   href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
-                - name: 販売注文の売上認識
+                - name: 販売注文の収益認識
                   href: accounts-receivable/revenue-recognition-so-basics.md
-                - name: 売上認識のバンドル
+                - name: 収益認識のバンドル
                   href: accounts-receivable/rev-rec-bundles.md
-                - name: 売上認識の再配賦
+                - name: 収益認識の再配賦
                   href: accounts-receivable/rev-rec-reallocation.md
-                - name: 売上認識の再配賦 – シナリオ 1
+                - name: 収益認識の再配賦 – シナリオ 1
                   href: accounts-receivable/rev-rec-reallocation-scenario-1.md
-                - name: 売上認識の再配賦 – シナリオ 2
+                - name: 収益認識の再配賦 – シナリオ 2
                   href: accounts-receivable/rev-rec-reallocation-scenario-2.md
-                - name: 売上認識の再配賦 – シナリオ 3
+                - name: 収益認識の再配賦 – シナリオ 3
                   href: accounts-receivable/rev-rec-reallocation-scenario-3.md
-                - name: 売上認識の再配賦 – シナリオ 4
+                - name: 収益認識の再配賦 – シナリオ 4
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
             - name: サブスクリプション請求管理
               items:
@@ -424,11 +430,11 @@
                       href: accounts-receivable/sb-schedule-billing-features.md
                     - name: マイルストーン請求
                       href: accounts-receivable/sb-milestonebilling.md
-                    - name: 売上配賦
+                    - name: 収益の配賦
                       href: accounts-receivable/sb-rev-allocation.md
                     - name: サポートおよび更新プロセス
                       href: accounts-receivable/sb-support-renewals.md
-                    - name: 未請求売上
+                    - name: 未請求の収益
                       href: accounts-receivable/sb-unbilled-revenue.md
                     - name: 消費価格指数のスケジュール
                       href: accounts-receivable/cpischedules.md
@@ -436,22 +442,26 @@
                       href: accounts-receivable/terminate-billing-schedule.md
                     - name: 調整日のシナリオ
                       href: accounts-receivable/sb-alignment-date-examples.md
-                - name: 売上および経費の繰延
+                    - name: 収益の分割
+                      href: accounts-receivable/sb-revenue-split.md
+                - name: 収益および経費の繰延
                   items:
-                    - name: 売上および経費の繰延を設定する
+                    - name: 収益および経費の繰延を設定する
                       href: accounts-receivable/sb-deferrals.md
                     - name: 繰延スケジュールの作成
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: 繰延の既定トランザクション
                       href: accounts-receivable/sb-deferral-transactions.md
-                - name: 複数要素売上配賦
+                - name: 複数要素収益配賦
                   items:
-                    - name: 複数要素売上配賦を設定する
+                    - name: 複数要素収益配賦を設定する
                       href: accounts-receivable/sb-rev-alloc-setup.md
             - name: 支払と決済
               items:
                 - name: 顧客支払の概要
                   href: cash-bank-management/tasks/customer-payment-overview.md
+                - name: つなぎ支払の設定および処理
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: 売掛金勘定の集中支払
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: 顧客支払の預金
@@ -1022,10 +1032,18 @@
                       href: general-ledger/example-posting-definitions.md
                 - name: 通貨
                   items:
-                    - name: 現在の通貨為替レートをインポート
+                    - name: 通貨為替レートのインポート
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: 二重通貨
                       href: general-ledger/dual-currency.md
+                - name: 転記プロファイル
+                  items:
+                    - name: 転記プロファイルの概要
+                      href: general-ledger/pstg-prfles-ovrvw.md
+                    - name: 転記プロファイルに関する推奨事項
+                      href: general-ledger/recommended-practices-pstg-prfles.md
+                    - name: 自動トランザクションの勘定
+                      href: general-ledger/accounts-for-auto-transactions.md
                 - name: 配賦ルール
                   items:
                     - name: 元帳配賦ルール
@@ -1286,7 +1304,7 @@
                   href: public-sector/tasks/create-vendor-certification-type-public-sector.md
                 - name: 公的機関の複数の一時仕入先と請求書のインポートおよび作成
                   href: public-sector/tasks/import-multiple-one-time-vendors.md
-                - name: 請求書の勘定配布の編集の制限
+                - name: 請求書の勘定配賦の編集の制限
                   href: public-sector/restrict-edit-accounting-distributions.md
                 - name: 公的機関での一時仕入先の計画
                   href: public-sector/plan-one-time-vendors-public-sector.md

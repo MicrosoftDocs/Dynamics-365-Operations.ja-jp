@@ -114,7 +114,7 @@
               items:
                 - name: ヘルプ システム
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: ヘルプ システムに接続する
+                - name: ヘルプ システムへの接続
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
                 - name: カスタム ヘルプの概要
                   href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json
@@ -600,7 +600,9 @@
                       href: wallets.md
                     - name: 店頭会計の支払を強化
                       href: dev-itpro/enhanced-sca.md
-                    - name: 支払に関する FAQ
+                    - name: PayPal の簡易支払の構成
+                      href: dev-itpro/express-payments-paypal.md
+                    - name: 支払いに関するよくあるご質問
                       href: dev-itpro/payments-retail.md
                 - name: メールと通知
                   items:
@@ -958,6 +960,8 @@
               href: online-store-overview.md
             - name: eコマース サイトの作成
               items:
+                - name: eコマース サイトへのチャネルのマップ
+                  href: map-channels-sites.md
                 - name: ドメイン名の構成
                   href: configure-your-domain-name.md
                 - name: 新しい eコマース テナントの配置
@@ -2560,21 +2564,23 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Commerce SDK への POS 拡張機能の移行
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: POS 拡張機能パッケージ プロジェクトの作成
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
                     - name: VS Code を使用して Store Commerce 拡張機能をデバッグする
                       href: dev-itpro/sc-debug.md
+                    - name: シールされた MPOS と CPOS の拡張機能
+                      items:
+                        - name: Modern POS 拡張機能パッケージの .appx ファイルの作成
+                          href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                        - name: (シールされた) MPOS と CPOS の拡張機能のデバッグ
+                          href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: 環境設定
                   items:
                     - name: ローカル開発環境
                       href: dev-itpro/setup-local-dev-env.md
-                    - name: POS 拡張機能パッケージ プロジェクトの作成
-                      href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Modern POS 拡張パッケージの .appx ファイルの作成
-                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: POS 拡張機能のデバッグ
-                      href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: API と参照
                   items:
-                    - name: POS 拡張パッケージ情報の表示
+                    - name: POS 拡張機能パッケージ情報の表示
                       href: dev-itpro/view-pos-extension-package-details.md
                     - name: POS API
                       href: dev-itpro/pos-apis.md
@@ -2834,11 +2840,15 @@
                           href: e-commerce-extensibility/instance-cache.md
                         - name: モジュールの CSS 最適化
                           href: e-commerce-extensibility/module-css-optimization.md
+                        - name: 製品詳細ページの画像の最適化
+                          href: e-commerce-extensibility/optimize-images-pdp.md
+                        - name: 検索ページとカテゴリ ページの画像の最適化
+                          href: e-commerce-extensibility/optimize-images-search-cat.md
                     - name: テレメトリと分析
                       items:
                         - name: テレメトリ ロガー
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce Headquarters
+            - name: Commerce headquarters
               items:
                 - name: CDX パッケージ拡張機能
                   items:

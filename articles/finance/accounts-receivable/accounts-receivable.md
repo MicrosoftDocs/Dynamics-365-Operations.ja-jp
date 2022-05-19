@@ -1,28 +1,28 @@
 ---
 title: 売掛金勘定ホーム ページ
 description: 顧客請求書および入金される支払を追跡するには、売掛金勘定を使用します。
-author: roschlom
+author: kfend
 ms.date: 08/18/2017
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "20671"
 - intro-internal
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 946a4e3cab6549af8b6c07248b6889e3b610f27f
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 412b900b5eb9a3a01feb5f4dd67529a5128e52b7
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726945"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711857"
 ---
 # <a name="accounts-receivable-home-page"></a>売掛金勘定ホーム ページ
 
@@ -41,7 +41,7 @@ ms.locfileid: "7726945"
 
 顧客請求書および顧客から受け取る支払を追跡するには、売掛金勘定を使用します。 顧客グループ、顧客、転記プロファイル、利子計算書、督促状、コミッションのほか、顧客、請求金額、出荷と出荷先、受取手形、および他のタイプの売掛金勘定情報に関するパラメーターを設定できます。 
 
-- [自由書式の請求書の勘定配布と補助元帳仕訳](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+- [自由書式の請求書の勘定配賦と補助元帳仕訳](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
 - [顧客転記プロファイル](customer-posting-profiles.md)
 - [クレジット カードの設定、認証、および取得](credit-card-authorizations.md)
 - [顧客請求書の作成](configure-customer-invoices.md)
@@ -83,9 +83,9 @@ ms.locfileid: "7726945"
 
 #### <a name="blogs"></a>ブログ
 
-買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) および [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
+売掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
 
-[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog)では、Dynamics 365 に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
 
 #### <a name="task-guides"></a>タスク ガイド
 アプリケーションには、タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。

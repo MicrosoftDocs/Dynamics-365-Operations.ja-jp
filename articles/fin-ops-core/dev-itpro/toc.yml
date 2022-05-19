@@ -48,12 +48,8 @@
               href: dev-tools/version-models-build.md
         - name: データ統合
           items:
-            - name: 財務と運用アプリとサード パーティ サービス間の統合
+            - name: 財務と運用アプリと、サード パーティ サービス間の統合
               href: data-entities/integration-overview.md
-            - name: 優先順位に基づく調整
-              hreF: data-entities/priority-based-throttling.md
-            - name: 優先順位に基づく調整に関する FAQ
-              href: data-entities/throttling-faq.md
             - name: データ統合 API
               items:
                 - name: データ管理パッケージ REST API
@@ -74,7 +70,19 @@
                   href: data-entities/recurring-integrations.md
                 - name: サード パーティ ユーティリティを使用したテスト サービス
                   href: data-entities/third-party-service-test.md
-            - name: Finance and Operations コネクタ
+            - name: サービス保護制限
+              items:
+                - name: サービス保護 API 制限
+                  href: data-entities/service-protection-api-limits.md
+                - name: スロットリング優先度
+                  href: data-entities/priority-based-throttling.md
+                - name: 再試行操作
+                  href: data-entities/service-protection-retry-operations.md
+                - name: API スロットリングの監視
+                  href: data-entities/service-protection-monitoring.md
+                - name: API スループットの最大化
+                  href: data-entities/service-protection-maximizing-api-throughput.md
+            - name: 財務と運用コネクタ
               href: data-entities/fin-ops-connector.md
             - name: 統合のための開発
               items:
@@ -396,8 +404,10 @@
                       href: deployment/onprem-batchonly.md
                     - name: SQL Server Reporting Services (SSRS) ノードの高可用性のコンフィギュレーション
                       href: deployment/onprem-SSRSHA.md
-                    - name: オンプレミス環境のプロキシを構成する
+                    - name: オンプレミス環境のプロキシの構成
                       href: deployment/onprem-reverseproxy.md
+                    - name: オンプレミス展開の倉庫管理アプリの構成
+                      href: deployment/warehousing-for-on-premise-deployments.md
                     - name: オンプレミス環境でのネットワーク プリンター デバイスのインストール
                       href: analytics/install-network-printer-onprem.md
                     - name: オンプレミス診断
@@ -472,19 +482,17 @@
                   href: help/language-locale.md
                 - name: ヘルプでの拡張、カスタマイズ、および共同作業
                   href: help/contributor-guide.md
-            - name: 展開に関する考慮事項
+            - name: 財務と運用アプリでの地域サービス
               items:
-                - name: Dynamics 365 Finance と Dynamics 365 Supply Chain Management の主権クラウドとローカル クラウド展開オプション
+                - name: ローカル地域
                   href: deployment/deployment-options-geo.md
-                - name: US Government Community Cloud (GCC) の Finance と Supply Chain Management
+                - name: 米国政府機関向けコミュニティ クラウド (GCC)
                   href: deployment/us-gcc-deployment.md
-                - name: 中国で 21Vianet が運用する Finance と Supply Chain Management
+                - name: 中国 21Vianet による運用
                   href: deployment/china-local-deployment.md
-                - name: フランスの財務と運用アプリ
-                  href: deployment/france-local-deployment.md
         - name: 開発およびカスタマイズ
           items:
-            - name: 開発およびカスタマイズのホーム ページ
+            - name: ホーム ページの開発とカスタマイズ
               href: dev-tools/developer-home-page.md
             - name: アプリケーション スタックおよびサーバーのアーキテクチャ
               href: dev-tools/application-stack-server-architecture.md
@@ -559,7 +567,7 @@
                     - name: モデルとデータ モデル要素の作成の概要
                       href: dev-tools/create-data-model-elements.md
                     - name: 拡張機能の名前付けガイドライン
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
                     - name: カスタマイズをオフにして機能を廃止
                       href: dev-tools/lock-models.md
                 - name: カスタマイズ分析のレポート

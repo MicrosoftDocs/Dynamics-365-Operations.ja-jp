@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 272261f9ba189bec55e856aa617bf5716e3f4fa261ef7bfd7269184a09a51a2b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 62a4d7f36ad0b36edeaec75e9b670e2aad143703
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770740"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725822"
 ---
 # <a name="revenue-recognition-bundles"></a>収益認識のバンドル
 
@@ -29,7 +29,7 @@ ms.locfileid: "6770740"
 > [!NOTE]
 > オンライン、販売時点管理 (POS)、コール センターなどの Microsoft Dynamics 365 Commerce チャネルでは、収益認識 (バンドル機能を含む) はサポートされていません。 これには、Dynamics 365 Supply Chain Management および Dynamics 365 Sales の見込顧客を現金化のソリューションも含まれます。 収益認識を使用するように構成された品目は、Commerce チャネルまたは見込顧客を現金化のソリューションで作成された注文またはトランザクションに追加しないでください。
 
-バンドルを設定するには、収益認識用のコンフィギュレーション キーを入力する必要があります。 ただし、収益認識が設定されていない場合でも、バンドルを使用できます。 同様に、バンドルが設定されていない場合でも、収益認識を使用できます。 収益認識が設定されている場合、コンポーネント品目は、販売注文が請求されるときに、収益認識または繰延に使用される収益価格および収益スケジュールを決定します。
+バンドルを設定するには、収益認識用のコンフィギュレーション キーを入力する必要があります。 ただし、収益認識が設定されていない場合でも、バンドルを使用できます。 同様に、バンドルが設定されていない場合でも、収益認識を使用できます。 収益認識が設定されている場合、コンポーネント品目は、販売注文が請求されるときに、収益認識または繰延に使用される収益額および収益スケジュールを決定します。
 
 バンドルの設定では、部品表 (BOM) 機能を使用します。 バンドル品目の設定方法については、[収益認識の設定](revenue-recognition-setup.md)を参照してください。 親品目にバンドルのフラグが設定されている場合、他の BOM 品目とは異なる方法で処理されます。 その違いの一覧を次に示します。
 
