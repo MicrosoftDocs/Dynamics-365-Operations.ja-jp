@@ -97,7 +97,7 @@ IIS モードは完全なオンプレミスの Scale Unit であり、すべて�
     + **PATH** 変数が正しく設定されていることを確認するには、通常のコマンド プロンプトからコマンド `msbuild/version` を実行します。 開発者コマンド プロンプトは使用しないでください。 コマンドでは、少なくとも 15 のバージョン番号を出力する必要があります。 MSBuild の設定が完了したら、Visual Studio Code を再起動します。
 
 5. 以前にダウンロードした Visual Studio ツールを使用して Microsoft.NET.Sdk をインストールします。 **個々のコンポーネント** に移動し、**.NET SDK** を入力し、.NET SDK のチェック ボックスをオンにしてから、**インストール** を選択します。
-6. [ノードをダウンロードしてインストールする](https://nodejs.org/en/download/)から、Node.JS の 64-ビット バージョンをインストールします。 **PATH** 環境変数がその場所を指していることを確認します。 メッセージが表示されたら、**必要なツールの自動インストール** チェック ボックスをオンにします。
+6. [Node をダウンロードしてインストールする](https://nodejs.org/en/download/)から、Node.JS の 64-ビット バージョンをインストールします。 **PATH** 環境変数がその場所を指していることを確認します。 メッセージが表示されたら、**必要なツールの自動インストール** チェック ボックスをオンにします。
 7. Windows 用 Visual Studio Code の 64-ビット バージョンを [Visual Studio Code をダウンロードする](https://code.visualstudio.com/download)からインストールします。
 8. [拡張機能マーケットプレース](https://code.visualstudio.com/docs/editor/extension-marketplace)の手順に従って、Visual Studio Code の  Visual Studio Code 用 C# (OmniSharp を利用) 拡張機能をインストールします。
 9. [Scale Unit GitHub リポジトリ (リポジトリ)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit) を複製またはダウンロードします。
