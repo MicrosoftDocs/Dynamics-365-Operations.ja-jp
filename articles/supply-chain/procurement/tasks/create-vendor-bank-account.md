@@ -1,7 +1,7 @@
 ---
 title: 仕入先銀行口座の作成
 description: この手順では、仕入先用の銀行口座の作成方法を説明します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: VendTable, VendBankAccounts, LogisticsPostalAddressSingle
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d24535035d26ca1313e293f9958b1b5000bb845
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0b201f5eb2bf8eb496a761b6fc6ca729a46a85ce
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575414"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677845"
 ---
 # <a name="create-a-vendor-bank-account"></a>仕入先銀行口座の作成
 

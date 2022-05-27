@@ -1,7 +1,7 @@
 ---
 title: 販売注文モバイル ワークスペース
 description: このトピックでは、販売注文モバイル ワークスペースについての情報を提供します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。
-author: Mirzaab
+author: Henrikan
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.custom: 267134
 ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
+ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 712b45cf1fd35de9f823af1bf89db9c4a572d61ebf7aa3e1fded16902c09557a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a746ae5d7f0c6ca2fd8e69a23114cfcaa24b16b
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767367"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675012"
 ---
 # <a name="sales-orders-mobile-workspace"></a>販売注文モバイル ワークスペース
 
@@ -117,7 +117,7 @@ Dynamics 365 for Operations バージョン 1611 およびプラットフォー�
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
-Finance and Operations モバイル アプリのダウンロードとインストール。
+Finance and Operations モバイル アプリをダウンロードしてインストールします。
 
 -   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)

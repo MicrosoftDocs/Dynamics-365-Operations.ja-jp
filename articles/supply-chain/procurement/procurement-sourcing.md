@@ -1,7 +1,7 @@
 ---
 title: 調達ホーム ページ
 description: このトピックでは、調達に使用できるヘルプ トピックとその他のリソースの一覧を示します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54ddaee1fd820435c245f3946ae1cc91209b12d4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fdf56084147edcdf8951d4a267611c10dc7eb6dd
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565498"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673021"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>調達ホーム ページ
 
@@ -57,7 +57,7 @@ ms.locfileid: "7565498"
 -   [委託販売在庫デモ スクリプトの (受信) Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(ホワイト ペーパー)
 -   [仕入先コラボレーションを使用した委託販売在庫の監視](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [仕入先ポータルを使用して、仕入先と連携する](collaborate-vendors-vendor-portal.md)  (Dynamics AX の 2016 年 2 月と 2016 年 ５ 月バージョンのみ)
--   [仕入先ポータルのユーザー セキュリティ](configure-security-vendor-portal-users.md) (Finance and Operations の 2016 年および 2016 年 5 月バージョンのみ)
+-   [ 仕入先ポータルのユーザー セキュリティ](configure-security-vendor-portal-users.md) (Finance and Operations の 2016 年および 2016 年 5 月バージョンのみ)
 -   [仕入先コラボレーションのモバイル ワークスペース](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>調達製品管理

@@ -1,7 +1,7 @@
 ---
 title: 外部仕入先との仕入先コラボレーション
 description: このトピックでは、購買担当者が外部仕入先とコラボレーションして、発注書および委託販売在庫に関する情報を交換する方法について説明します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3b679f8daed1e09c832a5d138473cccba03552f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 05a2ecc82306c013912b3ee824d63d7d39c4258f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576979"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676890"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>外部仕入先との仕入先コラボレーション
 
@@ -90,19 +90,19 @@ ms.locfileid: "7576979"
 <tbody>
 <tr class="even">
 <td>仕入先が注文を <strong>受理</strong>し、仕入先が受理する発注書を自動的に確認するよう Supply Chain Management がコンフィギュレーションされます。</td>
-<td>注文のステータスが <strong>確認済</strong> に更新されます。 何らかの理由で注文が更新できない場合、仕入先の応答は、<strong>受理済</strong>として記録されますが、発注書のステータスは<strong>外部で確認中</strong>のままです。 
+<td>注文のステータスが <strong>確認済</strong> に更新されます。 何らかの理由で注文が更新できない&#39;場合、仕入先の応答は、<strong>受理済</strong>として記録されますが、発注書のステータスは<strong>外部で確認中</strong>のままです。 
 
 発注書が仕入先に送信され、その <strong>外部で確認中</strong> のステータスが明細行の確定配送日で更新されます。 この更新によって開始する新しいバージョンは、自動的に <strong>確認済</strong> ステータスに設定されます。 発注書が確定されると、仕入先コラボレーション インターフェイスに表示されます。</td>
 </tr>
 <tr class="odd">
-<td>仕入先は注文を<strong>受理</strong>しますが、Supply Chain Management は仕入先が受理する発注書を自動的に確認するようにはコンフィギュレーションされません。</td>
+<td>仕入先は注文を<strong>受理</strong>しますが、Supply Chain Management は仕入先が受理する発注書を自動的に確認するようにはコンフィギュレーション&#39;されません。</td>
 <td>仕入先の応答は <strong>受理済</strong> として記録されますが、発注書のステータスは <strong>外部で確認中</strong> のままになります。
 
 発注書が仕入先に送信され、その <strong>外部で確認中</strong> のステータスが明細行の確定配送日で更新されます。 この更新によって開始する新しいバージョンは、自動的に <strong>外部で確認中</strong> ステータスに設定されます。 発注書を手動で確認できます。</td>
 </tr>
 <tr class="even">
 <td>仕入先は注文を<strong>否認</strong>します。</td>
-<td>仕入先の応答は <strong>否認</strong> として記録され、発注書のステータスは <strong>外部で確認中</strong> のままになります。 否認は仕入先メモとともに受信されます。</td>
+<td>仕入先の応答は <strong>否認</strong> として記録され、発注書のステータスは <strong>外部で確認中</strong> のままになります。 否認は仕入先&#39;メモとともに受信されます。</td>
 </tr>
 <tr class="odd">
 <td>仕入先は <strong>変更内容</strong> で注文を <strong>受理</strong> します。 変更は明細行レベルで表示されます。 仕入先は、個々の明細行を承認したり、否認することができます。 仕入先が提案できる、その他のいくつかの変更を次に示します。
@@ -111,7 +111,7 @@ ms.locfileid: "7576979"
 <li>異なる配送日または数量の分割明細行。</li>
 <li>品目を代用する。</li>
 </ul>
-仕入先は価格情報および請求金額を変更することはできません。 ただし、仕入先は、メモを使用してこれらの変更を提案することができます。</td>
+仕入先は価格情報および請求金額を変更することは&#39;できません。 ただし、仕入先は、メモを使用してこれらの変更を提案することができます。</td>
 <td>仕入先の応答は <strong>変更内容承認済</strong>、および発注書のステータスは <strong>外部で確認中</strong> のままとして記録されます。 ステータスは、仕入先が提案した変更の種類を表示します。 変更の自動消費についての詳細は、このトピックの &quot;仕入先が変更提案時に発注書を更新する&quot; セクションの後半を参照してください。 </td>
 </tr>
 </tbody>

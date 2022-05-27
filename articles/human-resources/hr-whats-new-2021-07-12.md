@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4ebe5a6ae19d00b94247381c700ff21d31910fcac1968ab4f8a673f89ddd2f0f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c01d00e7ede44c20e64fc4a8cd8646201caa3992
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782638"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686802"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2021 年 7 月 12 日)
 
@@ -81,7 +80,7 @@ ms.locfileid: "6782638"
 
 | 機能 | 細目 |
 | --- | --- |
-| プラットフォーム 更新プログラム 10.0.20 (44) | プラットフォーム更新プログラム 10.0.20 は、2021 年 7 月 26 日のサービス リリースで、展開を開始する予定です。 詳細については、[Finance and Operations アプリのバージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 8 月)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) を参照してください。 |
+| プラットフォーム 更新プログラム 10.0.20 (44) | プラットフォーム更新プログラム 10.0.20 は、2021 年 7 月 26 日のサービス リリースで、展開を開始する予定です。 詳細については、[財務と運用アプリのバージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 8 月)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) を参照してください。 |
 
 予定されている機能とリリースの完全な一覧については、[Dynamics 365 Human Resources 2021 のリリース ウェーブ 1 の概要](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/) を参照してください。
 

@@ -1,22 +1,22 @@
 ---
 title: 会社間注文の諸費用を設定する
 description: このトピックでは、会社間注文の諸費用を設定する方法について説明します
-author: GalynaFedorova
+author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
 ms.search.form: CustTable, VendTable, EcoResProductListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-gfedorova
+ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3786df5ce185fa8433d7c69bed5bef09b4983b8b
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 27633e09bfcf41fbbe5449b0d3b5f283eaf7ee13
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548383"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673665"
 ---
 # <a name="set-up-charges-on-intercompany-orders"></a>会社間注文の諸費用を設定する
 

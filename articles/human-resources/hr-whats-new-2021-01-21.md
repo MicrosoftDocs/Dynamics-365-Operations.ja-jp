@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02f0b0664dcb78d20c2719b4377dcc6047f2bf3392225f1cf9c166a1073ecd59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: be50596cd64839ba82b847b2fabb0f46dc749a3f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772619"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686858"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Dynamics 365 Human Resources 2021 年 1 月 21 日の新機能および変更された機能
 
@@ -43,7 +42,7 @@ ms.locfileid: "6772619"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| プラットフォーム更新プログラム 10.0.16(40) | -- | [Finance and Operations アプリのバージョン 10.0.16 のプラットフォーム更新プログラム (2021 年 2 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
+| プラットフォーム更新プログラム 10.0.16(40) | -- | [財務と運用アプリのバージョン 10.0.16 (2021 年 2 月) のプラットフォーム更新プログラム](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
 | ワークフローの申請と承認の強化 | [組織および人事管理ワークフロー エクスペリエンスの強化](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [自分のリストに割り当てられた作業項目を配置するコンフィギュレーション オプション](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | フォーム1095-C、フォーム1095-B、レガシ-の福利厚生に関する電子報告に対する、アフォーダブルケア法 (ACA) 準拠の更新 | -- | -- | 
 | 福利厚生管理では、米国に拠点を置く法人に対する ACA に準拠するレポートに対応します | -- | [福利厚生管理での ACA レポートの生成](hr-benefits-management-aca-reports.md) |

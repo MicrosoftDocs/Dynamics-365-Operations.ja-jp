@@ -1,7 +1,7 @@
 ---
 title: 場所の能力を超える補充
 description: このトピックでは、場所の能力を超える補充機能に関する情報を提供します。 この機能によって、その日の作成に必要な補充作業がすべて有効になり、ピッキング場所の在庫がなくなったり、容量を超えたりしないことを保証するためにその補充作業の利用可能性を管理できるようになります。
-author: mirzaab
+author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6ff9f133010ec4370a99c585259aece4e279f801
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 0c3dedc47558e98f63fb5883e4731bf021b9602b
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778210"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677929"
 ---
 # <a name="replenishment-over-location-capacity"></a>場所の能力を超える補充
 

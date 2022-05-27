@@ -1,7 +1,7 @@
 ---
 title: 調達カタログの作成
 description: このトピックでは、調達カタログの作成方法を説明します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: ProcCategoryHierarchyManagement, CatProcureCatalogListPage, CatP
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef3747874d43143925bd08dbecc2d60f4e38701a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e94f2ef23a3c4020f46138a10fcdf84552451515
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565426"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673869"
 ---
 # <a name="create-a-procurement-catalog"></a>調達カタログの作成
 

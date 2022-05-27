@@ -1,7 +1,7 @@
 ---
 title: サービス注文ステージ
 description: サービス注文のステージを定義し、作業者に割り当てると、サービス組織内のさまざまな従業員が実行するタスクでのサービス注文の流れを管理します。
-author: kamaybac
+author: sorenva
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a43cbe0cf5993a305ff500f34f0da5d3763084c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3e748afbd159d7a8fca1372676872cc02dd7ea57
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576331"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671733"
 ---
 # <a name="service-order-stages"></a>サービス注文ステージ   
 

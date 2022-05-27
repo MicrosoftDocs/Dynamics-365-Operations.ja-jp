@@ -1,7 +1,7 @@
 ---
 title: BOM 計算グループ
 description: この資料では、部品表 (BOM) の計算のグループについての情報とそれらを設定する方法を提供します。 BOM 計算を実行するには、計算グループを設定し個々の品目に割り当てるか、既定の計算グループを設定する必要があります。 計算グループからの計算設定が、[BOM 計算] ページで BOM の計算時の既定値として使われます。
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 94063
 ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 098a2fc065f6ace992dba1b1ae78756d456eb73a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2581d35fa02d800b07fcb40efb9d238685233898
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579859"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8669827"
 ---
 # <a name="bom-calculations-groups"></a>BOM 計算グループ
 

@@ -1,7 +1,7 @@
 ---
 title: サービス レベル契約の概要
 description: サービス レベル アグリーメントにおいて、顧客はサービス会社が案件を記録し、案件が解決される時に基づく最低限の応答時間に合意します。
-author: kamaybac
+author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a36b1c0e18201ae04a9fe13cb4f9524a19655c92
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1db12600aa47f537da6918c82ef3164c2123a8ac
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985839"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8670807"
 ---
 # <a name="service-level-agreements-overview"></a>サービス レベル契約の概要       
 

@@ -1,7 +1,7 @@
 ---
 title: サービス活動
 description: サービス注文の作業を定義および管理するには、サービス活動を作成します。
-author: kamaybac
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 656c16f812afccd58ea9031fd83a4b09a4c44957
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: aed942a0493e60e07175ffd2eb33dd96f6baa7f1
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566146"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673497"
 ---
 # <a name="service-activities"></a>サービス活動        
 

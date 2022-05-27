@@ -1,7 +1,7 @@
 ---
 title: サービス期間の設定
 description: このトピックでは、サービス期間の設定方法について説明します。 サービス間隔は、サービス注文を作成する場合に、サービス契約項目に対してサービス注文明細行が作成される頻度を表します。
-author: kamaybac
+author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0aeaef9fcf0c909638a9452633a321121e20814
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 943ed0b8f329b45225b61247998e15a1d82356aa
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567850"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673441"
 ---
 # <a name="set-up-service-intervals"></a>サービス期間の設定  
 

@@ -1,7 +1,7 @@
 ---
 title: 廃棄コードを設定します
 description: 顧客が返品した品目のプロセス方法を指定する廃棄コードを設定できます。
-author: kamaybac
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 973d270d186244904a8390b700aa2ee1fc84cbbc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8579190082d35424a5a87f6b5e2b34a79db71014
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576283"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8670023"
 ---
 # <a name="set-up-disposition-codes"></a>廃棄コードを設定します 
 

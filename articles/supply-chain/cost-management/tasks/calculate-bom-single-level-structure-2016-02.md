@@ -1,7 +1,7 @@
 ---
 title: 単一レベル構造を使用した BOM の計算 (2016 年 2 月)
 description: この手順は、原価表に基づく単一レベル展開を使用して、完成品のコストを計算する方法を示します。
-author: AndersGirke
+author: JennySong-SH
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5968631f5fed8a43cd63165a4ddff86e8cb4b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a52542f6c93897519187313c026a4598e41cc362
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572100"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673245"
 ---
 # <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a>単一レベル構造を使用した BOM の計算 (2016 年 2 月)
 

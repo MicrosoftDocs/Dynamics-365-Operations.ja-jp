@@ -1,7 +1,7 @@
 ---
 title: 仕入先コラボレーションのモバイル ワークスペース
 description: このトピックでは、[仕入先コラボレーション] モバイル ワークスペースに関する情報を提供します。 このワークスペースでは、仕入先が、承認のために送信された発注書に関する最新の状態を保つことができるようにします。 新規または更新された発注書および連絡先に関する情報を閲覧することもできます。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: kamaybac
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: henrikan
+ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: efbd0afb0d84f76058b75126af200a9b10197559
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c1e8a6589b16c4a24b151980d01929ed154bbb7b
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577027"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8670107"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>仕入先コラボレーションのモバイル ワークスペース
 
@@ -72,9 +72,9 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 </thead>
 <tbody>
 <tr class="odd">
-<td>プラットフォーム更新プログラム 3 を使用している場合は、KB 3216943 を実装する必要があります。</td>
+<td>プラットフォーム更新プログラム 3 を使用している&#39;場合は、KB 3216943 を実装する必要があります。</td>
 <td>システム管理者</td>
-<td>プラットフォーム更新プログラム 3 を使用している場合、KB 3216943 はバイナリ更新プログラムです。 この KB を実装するには、システム管理者は次の手順に従う必要があります。
+<td>プラットフォーム更新プログラム 3 を使用している&#39;場合、KB 3216943 はバイナリ更新プログラムです。 この KB を実装するには、システム管理者は次の手順に従う必要があります。
 <ol>
 <li>Microsoft Dynamics Lifecycle Services (LCS) からの KB 3216943 のダウンロード</li>
 <li>配置可能パッケージとして配信される、バイナリ更新プログラムをインストールします。 配置可能パッケージを適用する方法についての詳しい情報は、<a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">適用可能パッケージ</a>を参照してください。</li>
@@ -109,7 +109,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
 
-Finance and Operations モバイル アプリのダウンロードとインストール。
+Finance and Operations モバイル アプリをダウンロードしてインストールします。
 
 -   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)

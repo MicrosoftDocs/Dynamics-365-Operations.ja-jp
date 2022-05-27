@@ -1,7 +1,7 @@
 ---
 title: 仕入先の検索
 description: 特定の基準に基づく仕入先の検索方法を習得します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: VendSearchCriterion, VendSearchAddCategory, VendSearchAddReviewC
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9fd2b300586e5a4880a21fa2251342f37726ad0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8a4c58c1b57eac6844cb1ba27befc0d81f289ddb
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577147"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671079"
 ---
 # <a name="search-for-vendors"></a>仕入先の検索
 

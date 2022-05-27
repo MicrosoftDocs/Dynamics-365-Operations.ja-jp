@@ -1,7 +1,7 @@
 ---
 title: 標準原価換算の前提条件
 description: このトピックでは、標準コスト換算を実行する前に実行するタスクについて説明します。
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 50891
 ms.assetid: 73af66cf-c924-45be-837a-a648dbd05a31
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: mguada
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2eefb305f12996eb8fe1b72715f7e8e2509c551ff1e6abb3656221a8dbc76461
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1fa43c8e32c4af8fc7e3ad5f3eb457dbdae1d39e
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734310"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675285"
 ---
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>標準原価換算の前提条件
 

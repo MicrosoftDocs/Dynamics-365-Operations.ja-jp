@@ -1,7 +1,7 @@
 ---
 title: 仕入先ポータル ユーザー セキュリティ
 description: この記事では、仕入先ポータルを使用する外部仕入先のセキュリティを設定する方法を説明します。 この情報は、2016 年 2 月 &amp; 2016 年 5 月バージョン Dynamics AX にのみ適用されます。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30231
 ms.assetid: 3574db17-81c7-4c5a-999b-0098aa0b9cda
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e73e9e874fbb8df029e4eccce922a660513c1bf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 85a9e41cbc1f1b8cea47229ec03c07b553cf6974
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568090"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677033"
 ---
 # <a name="vendor-portal-user-security"></a>仕入先ポータルのユーザー セキュリティ
 

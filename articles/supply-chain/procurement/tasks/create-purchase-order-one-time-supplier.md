@@ -1,7 +1,7 @@
 ---
 title: 一時仕入先に対する発注書の作成
 description: この手順では、一時仕入先向けの発注書の作成方法を説明します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e89a9d1b382efa3b90b8d70e84777321e9595f4a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ffb6515d8f24df68efbce265d98ed4e64e8d6b07
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579547"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677425"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>一時仕入先に対する発注書の作成
 

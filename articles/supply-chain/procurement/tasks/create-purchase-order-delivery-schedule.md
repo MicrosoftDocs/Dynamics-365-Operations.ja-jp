@@ -1,7 +1,7 @@
 ---
 title: 配送スケジュールと発注書の作成
 description: このトピックでは、発注書の配送スケジュールを作成する方法を示します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670870df1b0fcd86a0f04ce454e6ef84187187b8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d1475115b5c1a475f9a56f0f3eb8bb47267d2b91
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566938"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677453"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>配送スケジュールと発注書の作成
 

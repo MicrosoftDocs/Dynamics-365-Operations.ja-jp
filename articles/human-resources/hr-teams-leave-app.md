@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d004e33d01dbd171626d7e23f93df081bc0210a9
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: 3ba1ecc97183c147b46ea2396df78fcdce07c27e
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924750"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687983"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 
@@ -186,7 +185,7 @@ Human Resources で、**設定** を選択してから、**ユーザー オプ�
 
 ![Human Resources ユーザー オプション。](./media/hr-teams-leave-app-user-options.png)
 
-それでも翻訳の問題が発生する場合は、お知らせください。 詳細については、[Finance and Operations アプリまたは Lifecycle Services (LCS) のサポートを得る](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)を参照してください。
+それでも翻訳の問題が発生する場合は、お知らせください。 詳細については、[財務と運用アプリまたは Lifecycle Services (LCS) に関するサポートの利用](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json) を参照してください。
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Teams の Human Resources アプリで休暇申請を承認する際のエラー
 

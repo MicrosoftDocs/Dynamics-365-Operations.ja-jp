@@ -1,7 +1,7 @@
 ---
 title: 在庫エイジング レポートの例とロジック
 description: このトピックでは、在庫のエイジング レポートの結果を解釈する方法を示すいくつかの例を示します。
-author: AndersGirke
+author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59c1740f6e07be08ad9379d4ccb6aeca29220d557aceb38bf6faef946e16fee7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4cfffa49f802c601da391617b123134c435fba92
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752781"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672349"
 ---
 # <a name="inventory-aging-report-examples-and-logic"></a>在庫エイジング レポートの例とロジック
 

@@ -8,23 +8,22 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d574f760960241e4d79a988b1b671f224cb345f
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: bf7ce43785e3ef485074f2b0294caea381f8f726
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487797"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688095"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Dynamics 365 Human Resources インフラストラクチャ マージ - リリース 10.0.25 更新
 
-10.0.25 リリースでは、インフラストラクチャ マージの最初のサイクルが搭載されています。 インフラストラクチャの統合では、Microsoft Dynamics 365 Human Resources は Finance and Operations のインフラストラクチャに統合されます。 しかし、 Dynamics 365 Finance や Dynamics 365 Supply Chain Management のように、独立したアプリケーションとしてのライセンスは継続されます。 インフラストラクチャ マージの詳細については、 [Dynamics 365 Human Resources インフラストラクチャ マージ FAQ](../human-resources/hr-infrastructure-merge-faq.md) を参照してください。
+10.0.25 リリースでは、インフラストラクチャ マージの最初のサイクルが搭載されています。 インフラストラクチャの統合では、Microsoft Dynamics 365 Human Resources は Finance and Operations のインフラストラクチャに統合されます。 しかし、Dynamics 365 Finance や Dynamics 365 Supply Chain Management のように、独立したアプリケーションとしてのライセンスは継続されます。 インフラストラクチャ マージの詳細については、 [Dynamics 365 Human Resources インフラストラクチャ マージ FAQ](../human-resources/hr-infrastructure-merge-faq.md) を参照してください。
 
 この統合により、次の方法で Human Resources ユーザーに整合性が確保されます。
 

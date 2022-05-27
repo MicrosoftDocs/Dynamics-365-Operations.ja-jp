@@ -1,7 +1,7 @@
 ---
 title: 特定の製品の仕入先の承認
 description: この手順では、特定の製品に対する仕入先の承認方法を示します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: EcoResProductDetailsExtended, PdsApprovedVendorList, VendTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4c48bfbcc3fb64bae66fe3cfef1d55d15049bb9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5092012f27dd03343410d30d15cae11ad20ce052
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575438"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8670156"
 ---
 # <a name="approve-vendors-for-specific-products"></a>特定の製品の仕入先の承認
 

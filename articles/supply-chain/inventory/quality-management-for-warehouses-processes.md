@@ -1,7 +1,7 @@
 ---
 title: 倉庫プロセスに対する品質管理
 description: このトピックでは、倉庫プロセスの品質管理の機能に関する情報を提供します。 この機能は、品質管理の機能を拡張し、高度な倉庫管理を使用して、品目サンプリングの管理を倉庫の入荷プロセスに統合できるようにします。
-author: Henrikan
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d81441fcc8cb86927923e76bd1a4d16a141ddc75
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a8a7ac8266c14791137f9eda51b5abb5a59e5961
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571884"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8679054"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>倉庫プロセスに対する品質管理
 

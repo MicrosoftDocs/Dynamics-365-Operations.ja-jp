@@ -1,7 +1,7 @@
 ---
 title: 調達カタログの概要
 description: この記事は、購買担当者が調達カタログを設定および管理する方法について高レベルで説明します。 調達カタログは、会社の従業員が内部で使用するために注文する品目およびサービスを定義します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efe0541859822b4c6404f2833ae38e07b79dd634
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: bd267cbbe7767faab538cacad26636ff1f37a551
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984298"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672013"
 ---
 # <a name="procurement-catalogs-overview"></a>調達カタログの概要
 

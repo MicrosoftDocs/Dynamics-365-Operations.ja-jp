@@ -1,7 +1,7 @@
 ---
 title: 運賃の手動調整
 description: この手順では、運賃を手動で調整する方法を示します。
-author: Henrikan
+author: Weijiesa
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1342f8b26d3f629c9fe4439761ffc26372dce061
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8afec41cdb10185077d39a665d0153df1c9bdb9f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573108"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672741"
 ---
 # <a name="reconcile-freight-manually"></a>運賃の手動調整
 
