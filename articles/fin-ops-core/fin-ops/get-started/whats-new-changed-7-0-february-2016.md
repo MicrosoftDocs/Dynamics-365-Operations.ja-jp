@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcc69cbf418131d0b1747f1c904de3188d7ba84216cb3145607b45553263244c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757222"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711323"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機能
 
@@ -869,7 +869,7 @@ Retail では、場所、時間、デバイスを問わず、没入型のモバ�
 
 ### <a name="commerce-essentials"></a>Commerce エッセンシャル
 
-小売と商取引中心のコンフィギュレーション オプションは、小売固有の配置を効率化するために役立ちます。
+小売とコマース中心のコンフィギュレーション オプションは、小売固有の配置を効率化するために役立ちます。
 
 | 何ができますか。 | Dynamics AX 2012 | Dynamics AX 7.0 | これは、なぜ重要ですか。 |
 |------------------|------------------|-----------------|------------------------|
@@ -969,7 +969,7 @@ Lifecycle Services (LCS) は、サインアップから日常業務までのシ�
 </tr>
 <tr>
 <td>システムの健全性を監視し、エラーおよび問題を診断します。</td>
-<td>この機能には、<a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a> が必要です。</td>
+<td>この機能には、<a href="https://www.microsoft.com/en-us/download/details.aspx?id=58205">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retail</a> が必要です。</td>
 <td>Retail コンポーネントの監視および診断を、LCS の<strong>オペレーション インサイト</strong> ダッシュボードから実施できるようになりました。</td>
 <td><strong>オペレーション インサイト</strong> ダッシュボードは、System Center Operations Manager (SCOM) インフラストラクチャをインストールする手間を置き換えるクラウドベースの監視ポータルです。</td>
 </tr>

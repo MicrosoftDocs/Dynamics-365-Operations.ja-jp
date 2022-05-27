@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0420887c35bbb07aaf8cce05a68173ab6c534f92
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 65ebfddb1baf39e20c22d3ed9bb26dbb33765e20
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595337"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712007"
 ---
 # <a name="budget-planning"></a>予算計画
 
@@ -36,7 +36,7 @@ ms.locfileid: "7595337"
 
 ## <a name="prerequisites"></a>必要条件 
 
-このチュートリアルでは、Contoso のデモ データ環境を使用する Microsoft Dynamics 365 Finance にアクセスする必要があり、インスタンスの管理者としてプロビジョニングされます。 このラボにおいてプライベート ブラウザー モードを使用しないでください - 必要に応じてブラウザーの他のどのアカウントからもサインアウトし、管理者認証情報を使用してサインインしてください。 サインインする時には、「サインインしたままにする」チェック ボックスをオンにする **必要** があります。 これは、Excel のアプリが現在必要な永続する Cookie を作成します。 IE 以外のブラウザーを使用してアプリケーションにサインインする場合、Excel のアプリでサインインするように求めるメッセージが表示されます。 Excel のアプリで「サインイン」をクリックすると、IE のポップアップ ウィンドウが開きます。「サインインしたままにする」チェック ボックスをオンにする **必要** があります。 Excel のアプリで「サインイン」をクリックしても何も表示されない場合、IE の Cookie キャッシュを削除する必要があります。
+このチュートリアルでは、Contoso のデモ データを使用して Microsoft Dynamics 365 Finance 環境にアクセスし、インスタンスの管理者としてプロビジョニングされる必要があります。 このラボにおいてプライベート ブラウザー モードを使用しないでください - 必要に応じてブラウザーの他のどのアカウントからもサインアウトし、管理者認証情報を使用してサインインしてください。 サインインする時には、「サインインしたままにする」チェック ボックスをオンにする **必要** があります。 これは、Excel のアプリが現在必要な永続する Cookie を作成します。 IE 以外のブラウザーを使用してアプリケーションにサインインする場合、Excel のアプリでサインインするように求めるメッセージが表示されます。 Excel のアプリで「サインイン」をクリックすると、IE のポップアップ ウィンドウが開きます。「サインインしたままにする」チェック ボックスをオンにする **必要** があります。 Excel のアプリで「サインイン」をクリックしても何も表示されない場合、IE の Cookie キャッシュを削除する必要があります。
 
 ## <a name="scenario-overview"></a>**シナリオの概要**
 ジュリアは、ドイツ (DEMF) の Contoso Entertainment Systems の財務マネージャーとして勤務しています。 FY2016 が近づき、翌年の会社の予算を設定する業務を行う必要があります。 予算の設定は次のようになります。

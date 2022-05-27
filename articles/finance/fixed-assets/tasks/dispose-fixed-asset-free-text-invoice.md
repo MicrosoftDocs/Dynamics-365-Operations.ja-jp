@@ -1,24 +1,24 @@
 ---
 title: 自由書式の請求書を使用した固定資産の処分
 description: このトピックでは、固定資産仕訳帳の取得提案を使用して固定資産を取得する方法について説明します。
-author: saraschi2
+author: moaamer
 ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0466ef3e3077b194cb2855153192567b0f1b94a930d7744d966f633d66c5bb09
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 711ab4b4798127ca54d7138b0aae02d71fe8bec3
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742980"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713569"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>自由書式の請求書を使用した固定資産の処分
 

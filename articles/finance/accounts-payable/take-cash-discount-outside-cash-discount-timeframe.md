@@ -1,6 +1,6 @@
 ---
 title: 現金割引期間外の現金割引の適用
-description: この記事は、支払が現金割引期間外に作成されている場合でも現金割引を行う方法を示す 2 つのシナリオを提供します。
+description: このトピックでは、支払が現金割引期間外に作成されている場合でも現金割引を行う 2 つのシナリオについて説明します。
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14301
 ms.assetid: bad10b7f-e550-4742-9261-8a094c9c624d
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9ba9c8176571a8b97b43565c89f8614bd828b3d9e1498a248fd896069d5d5c2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: daafa71dcbe46302fd7b9e8ab068d98e4925fc04
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736995"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716582"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>現金割引期間外の現金割引の適用
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、支払が現金割引期間外に作成されている場合でも現金割引を行う方法を示す 2 つのシナリオを提供します。
+このトピックでは、支払が現金割引期間外に作成されている場合でも現金割引を行う 2 つのシナリオについて説明します。
 
 6 月 28 日に、April は、仕入先 3052 の 2,000.00 ドルの請求書を作成します。 請求金額が 14 日以内に支払われた場合に、1 パーセントの現金割引があります。
 

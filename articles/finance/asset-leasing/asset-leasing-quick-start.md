@@ -8,19 +8,21 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
-ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.reviewer: kfend
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 72c362e651787d2ff120944925e3bc35523f0059
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 991685f50a00e60026331bf573561be904c7f9ab
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982012"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710332"
 ---
 # <a name="asset-leasing-get-started"></a>資産リースを開始する
 
@@ -58,7 +60,7 @@ ms.locfileid: "7982012"
 
 - **リース帳簿** - リース帳簿にはリース期間、公正価額、リース料などリース契約のすべての情報が含まれます。 また、従う会計基準、リースの種類、およびリース分類テストで考慮されるリースの種類としきい値も含まれます。 また、このリース帳簿には総勘定元帳に転記されたリース取引も含まれます。 
   
-- **リース** - リースには資産リースの基礎を表す資産リース情報が含まれます。リース情報ソースは Dynamics 365 Finance の外部で行われるリース契約と管理上の決定です 。 資産の公正価額とは、測定日にトランザクションで資産に対して支払われる価格です。 この値は、資産の種類、市場状況、および評価で考慮できるその他の基準によって異なる場合があります。 資産の公正価額は分類テストの方程式で考慮されます。
+- **リース** - リースには資産リースの基礎を表す資産リース情報が含まれ、リース情報ソースは Dynamics 365 Finance の外部で行われるリース契約と管理上の決定です。 資産の公正価額とは、測定日にトランザクションで資産に対して支払われる価格です。 この値は、資産の種類、市場状況、および評価で考慮できるその他の基準によって異なる場合があります。 資産の公正価額は分類テストの方程式で考慮されます。
 
 - **資産の耐用年数** - これはリース開始日からの、資産の耐用年数の残存期間を表します。 資産の耐用年数は分類テストの方程式で考慮されます。 固定資産で定義された耐用年数とは異なります。
 

@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 715b18acb10edebafe60805393cbc16c5be513ef3605cf7a575ff98362443bb6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 54c85d1b6b51b7b2608200a7fa8e343ac6d008d0
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766436"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8690503"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Dynamics 365 Commerce から Microsoft Teams へのプロビジョニング
 
@@ -42,7 +41,7 @@ Microsoft Teams のプロビジョニングを行う前に、次の作業を行�
 
 Commerce 本部で Teams をプロビジョニングするには、次の手順に従います。
 
-1. **Retail と Commerce \> チャネル設定 \> Microsoft Teams 統合の構成** に移動します。
+1. **小売とコマース \> チャネル設定 \> Microsoft Teams 統合の構成** に移動します。
 1. アクション ペインで、**チームのプロビジョニング** を選択します。 **チームの準備** という名前のバッチ ジョブが作成されます。
 1. **システム管理 \> 照会 \> バッチジョブ** に移動し、**Teams のプロビジョニング** の説明がある最新のジョブを検索します。 このジョブの実行が終了するまで待ちます。
 
@@ -71,7 +70,7 @@ Commerce の組織階層を Microsoft Teams で使用すると、同じ階層構
 
 Commerce の組織階層を Teams にアップロードするには、以下の手順で行います。
     
-1. Commerce 本部で、**Retail と Commerce \> チャネルの設定 \> Microsoft Teams 統合の構成** の順に移動します。
+1. Commerce 本部で、**小売とコマース \> チャネルの設定 \> Microsoft Teams 統合の構成** の順に移動します。
 1. **対象の階層をダウンロード** を選択し、**地域別の小売店舗** を選択して組織階層のコンマ区切り値 (CSV) ファイルをダウンロードします。
 1. [Microsoft Teams PowerShell のインストール](/microsoftteams/teams-powershell-install)に記載の手順に従って、Microsoft Teams PowerShell モジュールをインストールします。
 1. Teams の PowerShell ウィンドウでプロンプト ウィンドウが表示された場合は、ご利用の Azure AD テナントの管理者アカウントを使用してサインインします。

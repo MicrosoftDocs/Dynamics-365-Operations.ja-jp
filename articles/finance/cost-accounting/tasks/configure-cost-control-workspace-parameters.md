@@ -1,24 +1,24 @@
 ---
 title: 原価管理ワークスペース パラメーターのコンフィギュレーション
 description: '[原価管理ワークスペース] を構成するためにこの手順を使えば、コスト センターや製品グループのような組織内のさまざまなレベルのマネージャーが、原価オブジェクトを見抜くことができます。'
-author: ShylaThompson
+author: kfend
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ecc775019445bbe97dd5a0e9198b9c605b1c65322006d912a95a5bb1fbdf879
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c38b6f2664426513ea46b16b4cd54d69d71d1399
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766938"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710560"
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>原価管理ワークスペース パラメーターのコンフィギュレーション
 

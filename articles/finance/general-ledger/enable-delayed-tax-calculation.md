@@ -1,26 +1,26 @@
 ---
 title: 仕訳帳の税金計算遅延の有効化
 description: このトピックでは、仕訳帳明細行の数が非常に大きい場合に、税金計算遅延の機能をオンにして、税額計算のパフォーマンスを向上させる方法について説明します。
-author: ericwang
+author: EricWang
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: wangchen
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8394c83245865fd7fa02ddf80ada0532d1d4368e10e0a3248d0f8163f8e2224d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fddb6d3a9850b8f2f88f813f9591006637c7e535
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742908"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713137"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>仕訳帳の税金計算遅延の有効化
 [!include [banner](../includes/banner.md)]

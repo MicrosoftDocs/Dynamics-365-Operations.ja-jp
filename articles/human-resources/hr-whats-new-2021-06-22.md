@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 897c25df96017c5be1ae789027d178ca6b3ccc0410b4f65c7d2557b39e840134
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1d2ccf1083f34aefbe87354f03dbebd6cb5be7e
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735354"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694427"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Dynamics 365 Human Resources (2021 年 6 月 22 日) の新機能または変更された機能
 
@@ -83,7 +82,7 @@ ms.locfileid: "6735354"
 
 | 機能 | 細目 |
 | --- | --- |
-| プラットフォーム 更新プログラム 10.0.19 (43) | プラットフォーム更新プログラム10.0.19 は、2021 年 6 月 28 日のサービス リリースで、展開を開始する予定です。 詳細については、[Finance and Operations アプリのバージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19) を参照してください。 |
+| プラットフォーム 更新プログラム 10.0.19 (43) | プラットフォーム更新プログラム10.0.19 は、2021 年 6 月 28 日のサービス リリースで、展開を開始する予定です。 詳細については、[財務と運用アプリのバージョン 10.0.19 のプラットフォーム更新プログラム (2021 年 6 月)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19) を参照してください。 |
 |  勤続年数表示の切り替え | この機能は、異なる日付を使用して、**合理化された従業員の入力** フォームと **ユーザー** フォームに表示される金属年数を計算するオプションを提供します。  これは、Human Resources パラメーターで使用可能になります。 |
 |  休暇マネージャの休暇管理の有効化 | [休暇マネージャの休暇管理の有効化](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 |  特定の休暇タイプに対して添付ファイルを必須にする | この機能を管理者が使用すると、特定の休暇タイプで休暇申請を送信する際に、添付ファイルの追加を必須に設定できます。 |

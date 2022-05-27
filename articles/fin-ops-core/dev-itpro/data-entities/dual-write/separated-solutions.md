@@ -2,20 +2,20 @@
 title: 分離型二重書き込みアプリケーション オーケストレーション ソリューションの適用
 description: 二重書き込みアプリケーション オーケストレーション パッケージは、単一のパッケージではなく、小さいパッケージに分離されています。 このトピックでは、各パッケージに含まれるソリューションとマップ、および他のパッケージへの依存関係について説明します。
 author: RamaKrishnamoorthy
-ms.date: 11/29/2021
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063265"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716555"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>分離型二重書き込みアプリケーション オーケストレーション ソリューションの適用
 
@@ -26,14 +26,14 @@ ms.locfileid: "8063265"
 以前は、二重書き込みアプリケーション オーケストレーション パッケージは、次のソリューションを含む 1 つのパッケージでした:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance および Operations 共通アンカー
-- Dynamics 365 Finance および Operations デュアル書き込みエンティティ マップ
+- Dynamics 365 Finance and Operations 共通アンカー
+- Dynamics 365 Finance and Operations 二重書き込みエンティティ マップ
 - Dynamics 365 アセット マネジメント アプリ
 - Dynamics 365 アセット マネジメント
 - HCM 共通
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance および Operations 共通アンカー
+- Dynamics 365 Finance and Operations Common
 - Dynamics 365 Company
 - Currency Exchange Rates
 - Field Service Common
@@ -51,7 +51,7 @@ ms.locfileid: "8063265"
 | 固有の名前                           | 表示名                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance および Operations 共通アンカー |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common |
 | CurrencyExchangeRates                 | Currency Exchange Rates                    |
 | msdyn_DualWriteAppCoreMaps            | 二重書き込みアプリケーション コア エンティティのマップ   |
 | msdyn_DualWriteAppCoreAnchor          | 二重書き込みアプリケーション コア アンカー        |
@@ -186,7 +186,7 @@ Dual-write Supply Chain パッケージは、次の 3 つのパッケージに�
 
 ## <a name="dual-write-finance"></a>Dual-write Finance
 
-Dual-write Finance パッケージには、Dynamics 365 Finance の同期に必要なソリューションとマップが含まれています。 次の 4 つのソリューションが含まれています。
+二重書き込み Finance パッケージには、Dynamics 365 Finance データの同期に必要なソリューションとマップが含まれています。 次の 4 つのソリューションが含まれています。
 
 | 固有の名前                            | 表示名                               |
 |----------------------------------------|-------------------------------------------|
@@ -300,3 +300,47 @@ Project Operations は、次のパッケージに依存します。 したがっ
 - Dual-write Supply Chain パッケージ
 - Dual-write アセット マネジメント パッケージ
 - Dual-write Human Resources パッケージ
+
+## <a name="dual-write-party-and-global-address-book-solutions"></a>二重書き込み当事者およびグローバル アドレス帳ソリューション
+
+二重書き込み当事者パッケージおよびグローバル アドレス帳パッケージには、当事者データとグローバル アドレス帳データを同期するために必要な次のソリューションとマップが含まれています。 
+
+| 固有の名前                       | 表示名                            |
+|-----------------------------------|-----------------------------------------|
+| 関係者                             | 関係者                                   |
+| Dynamics365GABExtended            | Dynamics 365 GAB 拡張版               |
+| Dynamics365GABDualWriteEntityMaps | Dynamics 365 GAB 二重書き込みエンティティ マップ |
+| Dynamics365GABParty_Anchor        | Dynamics 365 GAB と当事者              |
+
+このパッケージでは、以下のマップが利用可能です。
+
+| 財務と運用アプリ | Customer Engagement アプリ | 
+|-----------------------------|--------------------------|
+| CDS 関係者 | msdyn_parties | 
+| CDS の配送先の場所 | msdyn_postaladdresscollections | 
+| CDS 住所履歴 V2 | msdyn_postaladdresses | 
+| CDS 関係者の配送先の場所 | msdyn_partypostaladdresses | 
+| 関係者の連絡先 V3 | msdyn_partyelectronicaddresses | 
+| 顧客 V3 | 勘定 | 
+| 顧客 V3 | 連絡先 | 
+| 仕入先 V2 | msdyn_vendors | 
+| 連絡担当者の肩書き | msdyn_salescontactpersontitles | 
+| 結句 | msdyn_complimentaryclosings | 
+| あいさつ文 | msdyn_salutations | 
+| 意思決定ロール | msdyn_decisionmakingroles | 
+| 雇用職務権限 | msdyn_employmentjobfunctions | 
+| ロイヤルティ レベル | msdyn_loyaltylevels | 
+| 個人の特徴タイプ | msdyn_personalcharactertypes | 
+| 連絡先 V2 | msdyn_contactforparties | 
+| CDS 販売見積ヘッダー | 見積 | 
+| CDS 販売注文ヘッダー | 販売注文 | 
+| 売上請求書ヘッダー V2 | 請求書 | 
+| CDS 住所ロール | msdyn_addressroles |
+
+**依存関係情報**
+
+二重書き込み当事者およびグローバル アドレス帳ソリューションは、次の 3 つのパッケージに依存します。 したがって、このパッケージは、二重書き込み当事者パッケージおよびグローバル アドレス帳ソリューション パッケージをインストールする前にインストールしておく必要があります。
+
+- 二重書き込みアプリケーション コア パッケージ
+- 二重書き込み Finance パッケージ
+- Dual-write Supply Chain パッケージ

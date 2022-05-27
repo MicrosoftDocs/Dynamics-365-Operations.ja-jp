@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e810badf9b43a3b0e57390b05247113021e26b6a0242cf29022274307c5fd56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7da01759fe4aaa7beb1719ede51ac0abfc3b404c
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771803"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713674"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>顧客の損金処理仕訳帳の作成
 
@@ -75,7 +75,7 @@ ms.locfileid: "6771803"
 
 ## <a name="write-off-a-customer-balance-from-the-customer-page"></a>[顧客] ページの顧客残高の損金処理
 1. **売掛金勘定 > 顧客 > すべての顧客** の順に移動します。
-2. 顧客 ID を選択します。 たとえば、US-001 (Contoso Retail San Diego) を選択します。
+2. 顧客 ID を選択します。 たとえば、「US-001 (Contoso Retail San Diego)」を選択します。
 3. **アクション ウィンドウ** で、**回収** をクリックします。
 4. **損金処理** をクリックします。
 5. **OK** をクリックします。

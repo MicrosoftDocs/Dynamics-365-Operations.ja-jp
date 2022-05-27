@@ -1,24 +1,24 @@
 ---
 title: 銀行管理ワークスペース
 description: このトピックでは、銀行管理ワークスペースに関する情報を示します。 このワークスペースは、会社の銀行口座に関連する情報を表示します。
-author: roschlom
+author: kweekley
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f12f907e6135af60e092a2c20ebfd4d196b2d861
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 9c0642664cbae84c966f2cd514a176e1412c80d5
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883340"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711467"
 ---
 # <a name="bank-management-workspace"></a>銀行管理ワークスペース
 

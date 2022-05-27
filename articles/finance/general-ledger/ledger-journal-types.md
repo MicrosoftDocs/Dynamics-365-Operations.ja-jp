@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 253da3d5cf894820e516b6b4f8d2a4fce40c92db
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 3e49d101bbbe576e0fcf2e9b243f4f29124fbd85
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7727020"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722272"
 ---
 # <a name="ledger-journal-types"></a>仕訳元帳タイプ
 
@@ -28,7 +28,7 @@ ms.locfileid: "7727020"
 
 このトピックでは、財務仕訳帳に設定できる仕訳帳タイプについて説明します。 Dynamics 365 Finance 全体で使用できる仕訳帳を設定するには、**仕訳帳名** ページを使用します。
 
-| 仕訳帳タイプ                      | 目的                       | このページにトランザクションを入力                                |
+| 仕訳タイプ                      | 使用方法                       | このページにトランザクションを入力                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
 | 割り当て                        | 配賦仕訳帳の配賦トランザクションを作成します。 Before you can create 配賦仕訳帳を作成する前に、**元帳配賦ルール** ページで配賦ルールを作成する必要があります。      | 配賦要求の処理             |
 | 承認                          | 適切な勘定科目で承認された仕入先請求書を転記します。  | 請求書承認仕訳帳                                       |

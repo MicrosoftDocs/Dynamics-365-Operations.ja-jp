@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a8fdeb109204557f0e44457e23a60224e662474f
-ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
+ms.openlocfilehash: a55a5d4c9dbf7909af5219843fc4310b6cdd4ed7
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "8616835"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689640"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>B2B eコマース サイト用の顧客アカウントの支払方法の構成
 
@@ -33,7 +33,7 @@ ms.locfileid: "8616835"
 
 1. Commerce 本部の顧客勘定の支払い方法を追加します。
 2. 顧客勘定の支払方法を eコマースチャネルに関連付けます。
-3. Commerce 本部の **Retail と Commerce \> 顧客 \> すべての顧客 \> 既定の支払** で顧客に対して **Allow on account** プロパティが有効になっている必要があります。
+3. Commerce 本部の **小売とコマース \> 顧客 \> すべての顧客 \> 既定の支払** で顧客に対して **Allow on account** プロパティが有効になっている必要があります。
 
     > [!NOTE]
     > すべての顧客に対して、分割払い支払方法の有効化を許可する必要がある場合、B2B サイトに関連付けられているチャンネルの既定の顧客に対して **Allow on account** プロパティを **はい** に設定できます。 
@@ -88,7 +88,7 @@ B2B Webサイトに表示される与信限度額の計算と残高は、Commerc
 
 **クレジット管理** 機能が有効になっているかどうかに関係なく、注文履行の際に顧客残高が与信限度額を超え終わった場合、販売注文は保留にされません。 代わりに、Commerce は、**与信限度額** クイック タブの **与信限度額を超えた場合のメッセージ** フィールドの値に応じて、警告メッセージまたはエラー メッセージが生成されます。
 
-Commerce の販売注文の保留を妨げる **Exclude from credit management** プロパティは、販売注文ヘッダー (**Retail と Commerce \> 顧客 \> すべての販売注文**) にあります。 このプロパティが Commerce 販売注文に対して **はい** (既定値) に設定されている場合、注文はクレジット管理の保留ワークフローから除外されます。 ただし、このプロパティに **与信管理から除外** という名前が付いた場合でも、注文のフルフィルメントの際には定義された与信限度額が使用されます。 この注文は保留にはなりません。
+Commerce の販売注文の保留を妨げる **Exclude from credit management** プロパティは、販売注文ヘッダー (**小売とコマース \> 顧客 \> すべての販売注文**) にあります。 このプロパティが Commerce 販売注文に対して **はい** (既定値) に設定されている場合、注文はクレジット管理の保留ワークフローから除外されます。 ただし、このプロパティに **与信管理から除外** という名前が付いた場合でも、注文のフルフィルメントの際には定義された与信限度額が使用されます。 この注文は保留にはなりません。
 
 ブロック ルールに基づいてCommerce 販売注文を保留にできる機能は、将来の Commerce リリースで計画されています。 これがサポートされるまで、Commerce 販売注文に新しいクレジット管理フローを強制的に実行する必要がある場合は、Visual Studio ソリューション内の次の XML ファイルをカスタマイズできます。 ファイルで、ロジックを変更して、**CredManExcludeSalesOrder** フラグが **いいえ** に設定されます。 これにより、既定で Commerce 販売注文の **Exclude from credit management** プロパティが **いいえ** に設定されます。
 

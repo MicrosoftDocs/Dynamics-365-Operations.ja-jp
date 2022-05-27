@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722770"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716412"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>スキャン済みドキュメントの請求書の自動化
 
@@ -32,7 +32,7 @@ ms.locfileid: "6722770"
 
 請求書自動化ソリューションでは、請求書ヘッダーと請求明細行の請求書メタデータおよび請求書に適用される添付ファイルを受け取ることができる標準インターフェイスを実現します。 このインターフェイスに準拠しているコンポーネントを生成する外部のシステムは、請求書および添付ファイルの自動処理のためのフィードを送信することができます。
 
-次の図は、Contoso が仕入先請求書の処理のために OCR サービス プロバイダーと統合する場合のシナリオの例を示します。 Contoso 社の仕入先は、請求書をサービス プロバイダーへ電子メールで送信します。 OCR 処理によっては、サービス プロバイダーは請求書メタデータ (ヘッダーまたは明細行) および請求書のスキャン イメージを生成します。 使用できるよう統合レイヤーでこれらのコンポーネントを変換します。
+次の図は、Contoso が仕入先請求書の処理のために OCR サービス プロバイダと統合する場合のシナリオの例を示します。 Contoso 社の仕入先は、請求書をサービス プロバイダーへ電子メールで送信します。 OCR 処理によっては、サービス プロバイダーは請求書メタデータ (ヘッダーまたは明細行) および請求書のスキャン イメージを生成します。 使用できるよう統合レイヤーでこれらのコンポーネントを変換します。
 
 ![統合シナリオ例。](media/vendor_invoice_automation_01.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "6722770"
 
 仕入先請求書ドキュメントの添付ファイルは、この機能の一部として導入される新しいデータ エンティティです。 添付ファイルをサポートできるように、仕入先請求書ヘッダーのエンティティが変更されました。 この機能に関して、仕入先請求書の明細行のエンティティは変更されていません。
 
-データパッケージの詳細については、[データ管理の概要](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。 データ管理ワークスペースを使用したデータ パッケージの作成方法については、[Dynamics 365 Finance and Operations アプリ ソリューションにおけるデータパッケージの処理と消費](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md)を参照してください 。
+データパッケージの詳細については、[データ管理の概要](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)を参照してください。 データ管理ワークスペースを使用したデータ パッケージの作成方法については、[Dynamics 365 財務と運用アプリ ソリューションにおけるデータ パッケージの処理と消費](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md) を参照してください 。
 
 請求書および添付ファイルを含むテスト データを簡単に生成するには、以下の手順を実行します。
 
@@ -86,7 +86,7 @@ ms.locfileid: "6722770"
 
 ## <a name="exception-processing"></a>例外処理
 
-仕入先の請求書が統合されて Finance and Operations に渡される場合、買掛金勘定チームのメンバーが例外処理や障害が発生した請求書を簡単に処理したり、障害が発生した請求書から保留中の請求書を作成する方法が必要になります。 この仕入先請求書の例外処理は、現在 Finance and Operations の一部として提供されています。
+統合により仕入先請求書が Finance and Operations に渡されるシナリオの場合、買掛金勘定のチーム メンバーが例外処理や障害が発生した請求書を扱い、障害が発生した請求書から保留中の請求書を作成する簡単な方法が存在する必要があります。 この仕入先請求書の例外処理は、Finance and Operations の一部として提供されています。
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>リストのインポートに失敗した仕入先請求書ページ
 

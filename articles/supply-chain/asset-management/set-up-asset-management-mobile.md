@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5d628f99d4fc6788ddb38590c65decb871d49f93
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a056be417d266fd400ce1572312f327dc070cb6a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572196"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693503"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>資産管理モバイル ワークスペースの設定
 
@@ -51,7 +50,7 @@ Finance and Operations (Dynamics 365) モバイル アプリで資産管理機�
 
 1. **資産管理** タイルを選択し、ツール バーの **発行** を選択します。 しばらくすると、ワークスペースが正常に発行されたことを示す通知が表示されます。 また、タイル上のテキストは "メタデータ内 - 公開済" に変更する必要があります。
 
-## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Finance and Operations (Dynamics 365) モバイル アプリのインストールと設定
+## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Finance and Operations (Dynamics 365) モバイル アプリをインストールして設定する
 
 1. 次のいずれかのアプリケーション店舗に移動して **Microsoft Finance and Operations (Dynamics 365)** アプリをモバイル デバイスにインストールします。
 
@@ -81,7 +80,7 @@ Finance and Operations (Dynamics 365) モバイル アプリで資産管理機�
 
 **資産管理** モバイル ワークスペースの使用方法の詳細については、[資産管理モバイル ワークスペースの使用](asset-management-mobile-workspace.md) を参照してください。
 
-Finance and Operations (Dynamics 365) モバイル アプリの詳細については、[モバイル アプリのホーム ページ](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md) を参照してください。
+Finance and Operations (Dynamics 365) モバイル アプリの詳細については、[モバイル アプリ ホーム ページ](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md) を参照してください。
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

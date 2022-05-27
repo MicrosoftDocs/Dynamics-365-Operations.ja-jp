@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9552e518855711781c905514cae1cc25d33718c6
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 1b9ab27b443e5ec675ea03e13aa7be4ea84bfb45
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533573"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722244"
 ---
 # <a name="update-process"></a>更新プロセス
 
@@ -38,7 +37,7 @@ Microsoft Dynamics 365 Human Resources は、継続的な自動サービス更�
 
 人事管理の更新は、すべての環境に自動的に適用されます。 人事管理には次の 2 つの種類のリリースがあります:
 
-- **サービスの更新**: バグ修正および新機能を含む、隔週でリリースされる更新プログラム。 サービス更新には、リリース時に該当するプラットの更新も含まれます。 プラットフォーム更新がリリースされた時期を把握するには、[表 3: Platform リリース](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases) を参照してください。 隔週の更新では、地域全体に段階的に展開されます。 隔週の更新についての詳細は、[Dynamics 365 Human Resources の新機能および変更された機能](hr-admin-whats-new.md) を参照してください。
+- **サービスの更新**: バグ修正および新機能を含む、隔週でリリースされる更新プログラム。 サービス更新には、リリース時に該当するプラットフォームの更新も含まれます。 プラットフォーム リリースの詳細については、[プラットフォーム更新プログラムの新機能および変更された機能](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md) を参照してください。 隔週の更新では、地域全体に段階的に展開されます。 隔週の更新についての詳細は、[Dynamics 365 Human Resources の新機能および変更された機能](hr-admin-whats-new.md) を参照してください。
 
     特に断りのない限り、サポートされているすべてのデータ センターが隔週で更新されます。 米国、オーストラリア、ヨーロッパ、英国、アジア、カナダが隔週の更新プログラムに含まれています。 
 

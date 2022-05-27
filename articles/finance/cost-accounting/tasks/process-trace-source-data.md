@@ -1,23 +1,23 @@
 ---
 title: ソース データの処理および追跡
 description: すべてのデータ処理は、ジョブによって実行されます。
-author: ShylaThompson
+author: kfend
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa4daff2d35ecfc9d2be171167683679b1e6db5698f9d04c13edf773253590d2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2847eff033bdb61a2880eb0599af48ee623d2812
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775893"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722719"
 ---
 # <a name="process-and-trace-source-data"></a>ソース データの処理および追跡
 

@@ -1,7 +1,7 @@
 ---
 title: 陸揚原価の見積および管理
 description: システムでは自動原価設定を使用して、陸揚原価の見積が決定されます。 このトピックでは、より正確な見積を配信するさまざまなシナリオを定義する方法について説明します。
-author: sherry-zheng
+author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,16 @@ ms.technology: ''
 ms.search.form: ITMCostTemplateTable, ITM CostEstimateDialog, ITMCostEstimateTable, SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5a8df57eaa779fe7b1f709a59372d9c634447c4a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 630fb9dc8e7954fcbc4f54941d81de1caa657676
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565810"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8696210"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>陸揚原価の見積および管理
 

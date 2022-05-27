@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a1ffbf79cdccab457b1aee1bc0f1d963bca49b3e390187c6be5da475f278a3d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0ef6736046748b92357c41d27eeedfc88c610d33
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720505"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722041"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>連結プロセスで使用する法人を準備する
 
@@ -27,7 +27,7 @@ ms.locfileid: "6720505"
 連結の過程では、複数の法人勘定セットのトランザクションを 1 つの法人勘定セットにまとめます。 このトピックでは、連結に向けて法人を準備する方法について説明します。
 
 > [!NOTE]
-> 複数の法人の決算を連結形式でまとめるには、Management Reporter for Microsoft Dynamics 365 Finance を使用することをお勧めします。 Management Reporter を使用すると、法人間の連結財務レポートを作成したり、Excel を使用して他のソースから連結データをインポートしたり、Dynamics 365 Finance で連結処理を実行しなくても、金額を任意の数の報告通貨に変換したりすることができます。
+> 複数の法人の決算を連結形式でまとめるには、Management Reporter for Microsoft Microsoft Dynamics 365 Finance を使用することをお勧めします。 Management Reporter を使用すると、法人間の連結財務レポートを作成したり、Excel を使用して他のソースから連結データをインポートしたり、Dynamics 365 Finance で連結処理を実行しなくても、金額を任意の数の報告通貨に変換したりすることができます。
 
 連結法人からは、財務諸表などのレポートを印刷できます。 ただし、毎日のトランザクションで連結法人を使用することはできません。
 

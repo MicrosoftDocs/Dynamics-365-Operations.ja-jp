@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 222564
 ms.assetid: ''
 ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 89ea19753abdc4e5d4219a123a832bb3606515a43b439d5f94a9619857b6c7d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 772c754e9980e693daf7542de273cbe278ca7038
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722698"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722439"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>自動転記の既定の説明を設定する
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722698"
 このトピックは、一般会計に自動的に転記される、会計項目の説明に使用される既定のテキストの設定方法を説明します。 自由書式のテキストを使用するか、固定変数を選択することによって、既定の説明テキストを設定することができます。
 
 > [!NOTE]
-> 一部のトランザクション タイプに対し、一部の国または地域では、これらのトランザクション タイプに関連する、Microsoft Dynamics AX データベースのフィールドからのテキストを含めることもできます。 トランザクション タイプ、および国と地域のリストについては、このトピックで後述する [オプション: 既定の説明に他のテキストを追加する](#optional-add-other-text-to-default-descriptions) を参照してください。
+> 一部のトランザクション タイプに対し、一部の国または地域では、これらのトランザクション タイプに関連するフィールドからのテキストを含めることもできます。 トランザクション タイプ、および国と地域のリストについては、このトピックで後述する [オプション: 既定の説明に他のテキストを追加する](#optional-add-other-text-to-default-descriptions) を参照してください。
 
 ## <a name="set-up-default-descriptions"></a>既定の説明を設定
 

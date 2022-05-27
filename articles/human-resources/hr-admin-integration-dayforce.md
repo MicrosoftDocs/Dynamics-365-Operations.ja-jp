@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PersonnelIntegrationConfiguration
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7e2043e75aa647e21f3e0816247dcf651be64730
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a4e95a78364fcee2c03614e110f9b5983abfde37
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067079"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691335"
 ---
 # <a name="configure-integration-with-dayforce"></a>Dayforce との統合のコンフィギュレーション
 
@@ -42,7 +41,7 @@ Microsoft Dynamics 365 Human Resources および Ceridian Dayforce 間での統�
 
 ## <a name="enable-the-integration"></a>統合の有効化
 
-Human Resources 内で統合を有効にし、Dayforce に接続する構成情報を入力する必要があります。 生成される一般会計トランザクションを Microsoft Dynamics 365 Finance にインポートしたい場合、Microsoft Azure ストレージ アカウントを設定し、Finance 内で、Azure Storage の接続文字列を入力する必要もあります。
+Human Resources 内で統合を有効にし、Dayforce に接続する構成情報を入力する必要があります。 生成される一般会計トランザクションを Microsoft Dynamics 365 Finance にインポートする場合、Microsoft Azure ストレージ アカウントを設定し、Finance 内で、Azure Storage の接続文字列を入力する必要もあります。
 
 Human Resources 内で統合を有効にするには、次の手順に従います。
 

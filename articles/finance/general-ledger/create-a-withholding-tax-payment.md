@@ -1,26 +1,26 @@
 ---
 title: 源泉徴収税の支払を作成する
 description: 源泉所得税の支払と転記のジョブの手順では、源泉所得税口座の未払金から源泉所得税の残高を精算し、所定の期間の源泉所得税精算口座に相殺します。 このトピックでは、源泉徴収税の支払を設定する手順を示します。
-author: roschlom
+author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 226e60d5e374f16d27185ebda512769d36650d24e90ae279d22761d54e238a64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2b374d7aeab4d066b0894dde8f542c2f807d1ef9
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744968"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713335"
 ---
 # <a name="create-a-withholding-tax-payment"></a>源泉徴収税の支払を作成する
 

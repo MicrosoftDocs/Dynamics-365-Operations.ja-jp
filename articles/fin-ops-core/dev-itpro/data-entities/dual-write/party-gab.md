@@ -2,19 +2,19 @@
 title: 当事者およびグローバル アドレス帳
 description: このトピックでは、二重書き込みの当事者およびグローバル アドレス帳の機能について説明します。
 author: RamaKrishnamoorthy
-ms.date: 03/10/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407768"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717449"
 ---
 # <a name="party-and-global-address-book"></a>当事者およびグローバル アドレス帳
 
@@ -139,7 +139,7 @@ Customer Engagement アプリでは、連絡先は個人です。 ただし、**
 
 グリッドの上にある **新しい電子アドレス** ボタンを使用して、必要な数の住所を作成できます。
 
-電子アドレスは、このグリッドでのみ使用できます。 将来のリリースでは他のタブ、例えば **集計** タブや **詳細** タブなどから、すべての住所フィールドと電子アドレス フィールドが削除されます。 **詳細** タブに表示される連絡先の詳細は、基本電話、基本メール、基本FAX、および基本 Twitter ID などの基本電子住所の読み取り専用コピーです。 潜在顧客の資格プロセス中は、ビジネスの電話番号と携帯電話番号の両方を指定できます。 ビジネス電話番号は **IsMobile=No** の場合、基本電話と見なされ、携帯電話番号は **IsMobile=Yes** の場合、2 番目の電話と見なされます。
+潜在顧客の資格プロセス中は、ビジネスの電話番号と携帯電話番号の両方を指定できます。 ビジネス電話番号は **IsMobile=No** の場合、基本電話番号と見なされ、携帯電話番号は **IsMobile=Yes** の場合、2 番目の電話番号と見なされます。
 
 > [!TIP]
 > **アカウント** と **コンタクト** フォームで、**アドレス** と **電子アドレス** タブを使い、郵便番号と電子アドレスを管理します。 これにより、アドレス データは財務と運用アプリに確実に同期化されます。
@@ -148,7 +148,7 @@ Customer Engagement アプリでは、連絡先は個人です。 ただし、**
 
 1. Customer Engagement アプリ環境を開きます。
 
-2. [二重書き込みアプリケーション オーケストレーション ソリューション](https://aka.ms/dual-write-app)の最新バージョン (2.2.2.60 以降) をインストールします。
+2. [Separated Dual-write Application オーケストレーション パッケージ](separated-solutions.md)の説明に従って、必要なすべてのソリューションをインストールします。
 
 3. [二重書き込み当事者およびグローバル アドレス帳ソリューション](https://aka.ms/dual-write-gab)をインストールします。
 
@@ -165,8 +165,8 @@ Customer Engagement アプリでは、連絡先は個人です。 ただし、**
 
     マップ | このバージョンに更新 | 変更
     ---|---|---
-    `CDS Parties (msdyn_parties)`| 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
-    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.5 | これは、今回のリリースの一部として追加された新しいマップです。
+    `CDS Parties (msdyn_parties)`| 1.0.0.2 | これは、今回のリリースの一部として追加された新しいマップです。
+    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.6 | これは、今回のリリースの一部として追加された新しいマップです。
     `Customers V3 (accounts)` | 1.0.0.5 |`PartyNumber` など他の当事者関連フィールド (名前、個人情報、住所フィールド、電子連絡先住所など) を削除しました。
     `Customer V3 (contacts)` | 1.0.0.5 | `PartyNumber` など他の当事者関連フィールド (名前、個人情報、住所フィールド、電子連絡先住所など) を削除しました。
     `Vendors V2 (msdyn_vendors)` | 1.0.0.6 | `PartyNumber` など他の当事者関連フィールド (名前、個人情報、住所フィールド、電子連絡先住所など) を削除しました。
@@ -174,16 +174,17 @@ Customer Engagement アプリでは、連絡先は個人です。 ただし、**
     `Sales invoice headers V2 (invoices)` | 1.0.0.4 | 連絡担当者を `ContactforParty` 参照に置き換えました。
     `CDS Sales order headers (salesorders)` | 1.0.0.5 | 連絡担当者を `ContactforParty` 参照に置き換えました。
     `CDS Party postal address locations (msdyn_partypostaladdresses)` | 1.0.0.1  | これは、今回のリリースの一部として追加された新しいマップです。
-    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | これは、今回のリリースの一部として追加された新しいマップです。
+    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.2 | これは、今回のリリースの一部として追加された新しいマップです。
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
-    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
+    `Complimentary Closings (msdyn_compliemntaryclosings)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
     `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
     `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
     `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
     `Salutations (msdyn_salutations)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
+    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | これは、今回のリリースの一部として追加された新しいマップです。
 
 8. 上記のマップを実行する前に、次の手順の説明に従って統合キーを手動で更新する必要があります。 その後、**保存** を選択します。
 
@@ -251,6 +252,7 @@ Customer Engagement アプリでは、連絡先は個人です。 ただし、**
     [CDS 販売見積ヘッダー](mapping-reference.md#215) | 見積
     [CDS 販売注文ヘッダー](mapping-reference.md#217) | 販売注文
     [売上請求書ヘッダー V2](mapping-reference.md#118) | 請求書
+    [CDS 住所ロール](mapping-reference.md#301) | msdyn_addressroles
 
 > [!NOTE]
 > `CDS Contacts V2 (contacts)` マップは手順 1 で停止したマップです。 他のマップを実行しようとする場合、これら 2 つのマップが依存関係の一覧に表示される場合があります。 これらのマップを実行しないでください。
@@ -258,7 +260,7 @@ Customer Engagement アプリでは、連絡先は個人です。 ただし、**
 > 当事者およびグローバル アドレス帳ソリューションがインストールされたら、 `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead` という名前のプラグインを無効にする必要があります。 当事者およびグローバル アドレス帳ソリューションをアンインストールしたら、プラグインを再び有効にする必要があります。
 >
 > **口座**、**連絡先** および **仕入先** テーブルに含まれる `msdyn_*partynumber` フィールド (単一行のテキスト フィールド) は、今後使用しないでください。 ラベル名には、わかりやすくするための接頭語 **(非推奨)** が付いています。 代わりに、**msdyn_partyid** フィールドを使用します。 このフィールドは **msdyn_party** テーブルへのルックアップです。
-
+>
 > テーブル名 | 古いフィールド | 新しいフィールド
 > --------|-------|--------
 > 口座 | `msdyn_partynumber` | `msdyn_partyid`
@@ -290,21 +292,22 @@ Customer Engagement アプリでは、連絡先は個人です。 ただし、**
 | [売上請求書ヘッダー V2](mapping-reference.md#118) | 請求書 |
 | [あいさつ文](mapping-reference.md#228) | msdyn\_salutations |
 | [仕入先 V2](mapping-reference.md#202) | msdyn\_vendors |
+| [CDS 住所ロール](mapping-reference.md#301) |msdyn\_addressroles|
 
 詳細については、[二重書き込みマッピングのリファレンス](mapping-reference.md) を参照してください。
+
+## <a name="address-roles-as-a-multi-select-drop-down-list"></a>複数選択ドロップダウン リストとしてのアドレス ロール
+住所または電子住所は複数の目的に使用できます。 たとえば、1 つの郵便番号を、請求先住所と配送先住所の両方に使用できます。 そのような場合、ユーザーは、次の図に示すように、ドロップダウン リストで **請求** と **出荷** の両方を選択できます。 
+
+![[目的/役割] ドロップダウン リスト。](media/purpose.png)
 
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
 + 財務と運用アプリでは、顧客を住所と共に作成して保存すると、住所が **住所** テーブルに同期しない可能性があります。 これは、二重書き込みプラットフォームの順序付けの問題が原因です。 回避策として、最初に顧客を作成して保存します。 次に、住所を追加します。
 + 財務と運用アプリでは、顧客レコードに基本住所があり、その顧客に対して新しい連絡先を作成すると、連絡先レコードは顧客レコードからの基本住所を継承します。 これは仕入先の連絡先に関しても発生します。 Dataverse は現在、この動作をサポートしていません。 二重書き込みが有効である場合、財務と運用アプリからの基本住所と共に継承された顧客の連絡先は、その住所と共に Dataverse に同期されます。
-+ **口座**、**連絡先**、および **仕入先** フォームの電子アドレス タブで設定された電子アドレスは、`msdyn_partyelectronicaddress` テーブルから取得されます。 この情報は販売注文、見積、発注書など、関連付けられたトランザクションにはフローされません。 この問題は、段階的なリリースで修正される予定です。 口座および連絡先レコードの電子アドレス フィールドの既存データは、販売注文、見積、発注書など、トランザクションで引き続き機能します。
 + 財務と運用アプリでは、**連絡先の追加** フォームから連絡先レコードを追加できます。 **連絡先の表示** フォームから新しい連絡先を作成 しようとする場合、アクションは失敗します。 これは、既知の問題です。
 
     ![連絡先の追加に関する既知の問題。](media/party-gab-contact-issue.png)
 
-+ **初期同期** では **ContactForParty** の **開始** および **終了** 日時フィールドをサポートしませんが、これは DIXF が値を整数ではなく文字列に変換するためです。 この変換によりエラー `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32` が発生します。
-+ 1 つの住所が複数の理由 (業務連絡先住所や請求先住所など) で使用される場合、次の画像に示すように `Business;Invoice` として表示されます。 値の間にスペースを追加すると、エラーが発生します。
-
-    ![住所に関する既知の問題。](media/party-gab-address-issue.png)
-
++ **初期同期** では **ContactForParty** の **開始** および **終了** 日時フィールドをサポートしませんが、これは DIXF が値を整数ではなく文字列に変換するためです。 この変換によりエラー `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32` が発生します。
 + 二重書き込み機能を持つ財務と運用アプリを使用すると、先日付の郵便住所を入力できません。これは Dataverse が日付の有効性をサポートしないためです。 財務と運用アプリを使用して将来日付の住所を入力すると、その住所が Dataverse に完全同期され、ユーザー インターフェイスにすぐに住所が表示されます。 このレコードを更新すると、財務と運用アプリで将来の日付が付けられ、現在ではないため、エラーが発生します。

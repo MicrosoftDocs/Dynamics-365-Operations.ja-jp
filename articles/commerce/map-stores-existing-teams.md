@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 6faba58304e1fe9e9ba2ce1a76fbf1cc783466bf01b0d4e3774e8ed090485bb1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aafeaa1da3c3dab5d76a6bfcee06db34a6afba91
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757372"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691108"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Microsoft Teams に既存のチームがある場合は、店舗とチームをマッピングします
 
@@ -44,7 +43,7 @@ Commerce 本部で店舗と対応するチームをマッピングするには�
 1. **エンティティ 処理ステータス** で、**ファイルのダウンロード** を選択します。
 1. エクスポートされた CSV ファイルで、 **SOURCETYPE**、**SOURCEID**、**TEAMID** の値を次のように入力します :
     - **SOURCETYPE** には、「RetailStore」と入力します。 
-    - **SOURCEID** には、店舗番号を入力します (サンフランシスコ店舗の場合は  "000135" など)。 店舗番号は、**Retail と Commerce \> Channels \> Stores** で検索できます。
+    - **SOURCEID** には、店舗番号を入力します (サンフランシスコ店舗の場合は  "000135" など)。 店舗番号は、**小売とコマース \> Channels \> Stores** で検索できます。
     - **TEAMID** には、Microsoft Teams から該当するチーム ID を入力してください (例 : "5f8bc92b-6aa8-451e-85d1-3949c01ddc6c")。 チーム ID の情報は、[admin.teams.microsoft.com](https://admin.teams.microsoft.com) で確認できます。
 1. CSV ファイルをローカル コンピューターに保存します。
 1. **システム管理 \> ワークスペース \> データ管理** にアクセスし、**インポート** を選択します。

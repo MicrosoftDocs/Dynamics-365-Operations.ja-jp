@@ -2,7 +2,7 @@
 title: データ統合プロジェクトの作成
 description: このトピックでは、データ統合プロジェクトの作成方法について説明します。
 author: ShivamPandey-msft
-ms.date: 02/09/2022
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 50f435f9d461667a1908baa529d73766085c183a
-ms.sourcegitcommit: 6526acd0300d9c5800d3d7675d54e23090d031df
+ms.openlocfilehash: 4d69ffcb6ccfcc7bae2891f2539941f7b6bbf86e
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "8107290"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722887"
 ---
 # <a name="create-a-data-integration-project"></a>データ統合プロジェクトの作成
 
@@ -55,11 +55,14 @@ ms.locfileid: "8107290"
 
 5. [Power Apps 環境](https://admin.powerapps.com/environments)を開き、次の手順を実行します。  
 
-    1. 作成した接続セットを使用して、次のテンプレートのデータ統合プロジェクトを作成します。
+    1. 作成した接続セットを使用して、次のテンプレートごとに 1 つのデータ統合プロジェクトを作成します。
 
         - 顧客支払分析情報の結果 (CDS から Finance and Operations 10.0.17 以上)
         - キャッシュ フロー時系列の結果 (CD から Fin と Ops)
         - 予算時系列の結果 (CD から Fin と Ops)
+
+      > [!NOTE]
+      > 各テンプレートに対して複数のデータ統合プロジェクトを作成すると、更新をブロックするエラーが発生する可能性があります。
 
     2. プロジェクトごとに適切なスケジューリングを設定します。
 

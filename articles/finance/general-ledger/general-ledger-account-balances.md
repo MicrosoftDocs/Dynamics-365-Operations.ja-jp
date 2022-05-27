@@ -1,6 +1,6 @@
 ---
-title: 総勘定元帳残高
-description: この記事は、試算表のリスト ページと財務レポートという、総勘定元帳勘定の残高を表示する 2 つの方法を説明します。 また、分析コード セットの残高を更新する方法について説明します。
+title: 一般会計残高
+description: このトピックは、試算表のリスト ページと財務レポートという、一般会計残高を表示する 2 つの方法を説明します。
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 13191
 ms.assetid: ea3650ac-34a0-4516-b75b-801c2164107d
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3c1f3832d5e50a709b3032c379298eb32b81649c1c15b5cc426aa5d3afb2ac6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8470929b6805ddf9b85bd03e3043c2953d5fcfd1
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748189"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716440"
 ---
-# <a name="general-ledger-account-balances"></a>総勘定元帳残高
+# <a name="general-ledger-account-balances"></a>一般会計残高
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、試算表のリスト ページと財務レポートという、総勘定元帳勘定の残高を表示する 2 つの方法を説明します。 また、分析コード セットの残高を更新する方法について説明します。
+このトピックは、試算表のリスト ページと財務レポートという、一般会計残高を表示する 2 つの方法を説明します。 また、分析コード セットの残高を更新する方法について説明します。
 
 ユーザーが総勘定元帳の残高を表示できるさまざまな方法があります。 最も一般的なオプションは、次のとおりです。
 
