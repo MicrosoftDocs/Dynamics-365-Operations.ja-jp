@@ -1,6 +1,6 @@
 ---
 title: 一部の仕入先支払の決済、および割引日より前の全額最終支払
-description: この記事は、仕入先請求書に対して一部支払が作成され、現金割引が提供されるシナリオについて説明します。
+description: このトピックでは、仕入先請求書に対して一部支払が作成され、現金割引が提供されるシナリオについて説明します。
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14431
 ms.assetid: 6b8e3420-b4c9-4e02-9588-598fe6d3df0d
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46d5025af229c9002967973a0d897708cd3d67dd7d22d887cc611c5c8213d2bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04b00c8407ea2fd7d1e4b58db47c392989a20577
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737068"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716246"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>一部の仕入先支払の決済、および割引日より前の全額最終支払
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、仕入先請求書に対して一部支払が作成され、現金割引が提供されるシナリオについて説明します。
+このトピックでは、仕入先請求書に対して一部支払が作成され、現金割引が提供されるシナリオについて説明します。
 
 Fabrikam は、仕入先 3064 からの商品を購入します。 請求書が 14 日以内に支払われた場合に、仕入先は Fabrikam に 1 パーセントの現金割引を提供します。 請求書は 30 日以内に支払う必要があります。 仕入先は、Fabrikam が一部支払に対する現金割引を選べるようにすることもできます。 決済のパラメーターは **買掛金勘定パラメーター** ページにあります。 6 月 25 日に、April は、仕入先 3064 に対して 1,000.00 ドルの請求書を入力します。
 

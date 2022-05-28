@@ -8,21 +8,21 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "14151"
 - intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
-ms.author: shpandey
+ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 5669b414283013ae1de095de2201df066ab588dd
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109863"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725908"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insights の設定に関する問題のトラブルシューティング
 
@@ -34,7 +34,7 @@ ms.locfileid: "8109863"
 
 ### <a name="resolution"></a>解決策
 
-以前のバージョンのテンプレートを使用している可能性があります。 バージョン 10.0.17 のリリース前に、**顧客が支払予測結果 (プレビュー)** エンティティを使用して **顧客支払情報の結果 (CDS to Fin and Ops)** データ統合 (DI) テンプレートを構成してプレビューを表示しました。 10.0.17 以降にアップグレードした後、**顧客支払情報の結果 (CDS to Fin and Ops 10.0.17 以降)** を使用してマッピングを完了する必要があります。 データ管理エンティティの一覧が更新され、 **支払予測結果** エンティティが表示されるまでは、DI テンプレートの宛先列をマッピングできない場合があります。 エンティティ リストを更新し、支払い予測結果を表示するには、Microsoft Dynamics 365 Finance と Dataverse (旧名: Common Data Service \[CDS\] 管理者ポータル) の両方の手順を完了します。
+以前のバージョンのテンプレートを使用している可能性があります。 バージョン 10.0.17 のリリース前に、**顧客が支払予測結果 (プレビュー)** エンティティを使用して **顧客支払情報の結果 (CDS to Fin and Ops)** データ統合 (DI) テンプレートを構成してプレビューを表示しました。 10.0.17 以降にアップグレードした後、**顧客支払情報の結果 (CDS to Fin and Ops 10.0.17 以降)** を使用してマッピングを完了する必要があります。 データ管理エンティティの一覧が更新され、 **支払予測結果** エンティティが表示されるまでは、DI テンプレートの宛先列をマッピングできない場合があります。 エンティティ リストを更新し、支払い予測結果を表示するには、Microsoft Dynamics 365 Finance と Dataverse (旧名: Common Data Service \[CDS\] 管理者ポータル) の両方で手順を完了します。
 
 ### <a name="in-finance"></a>Finance
 

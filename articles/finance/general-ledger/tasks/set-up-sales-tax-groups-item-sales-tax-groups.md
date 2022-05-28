@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7c3bf881f0f11d6d21d5f2e9d3132c2bea00b982411c9c5d76ae617b00a69fda
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c461c3d3e9b073b186e68ff1b0453fafe5da80e7
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739338"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734870"
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>売上税グループと品目売上税グループの設定
 
 [!include [banner](../../includes/banner.md)]
 
-このタスクの記録では、売上税および品目売上税のグループ設定について説明します。 売上税グループは、顧客と仕入先に関連付けられた売上税コードのグループです。 また、特定の仕入先や顧客には転記されないトランザクションの勘定科目にも関連付けられます。  品目売上税グループは、製品などのリソースに関連付けられた売上税コードのグループです。  特定のトランザクションに適用される売上税は、トランザクションの売上税グループと品目売上税グループの両方に含まれる売上税コードによって決定されます。  売上税の計算が可能なのは、売上税の計算または記録が必要な各トランザクションに対して、売上税グループと品目売上税グループが選択されている場合のみです。  
+このタスクの記録では、売上税および品目売上税のグループ設定について説明します。 売上税グループは、顧客と仕入先に関連付けられた売上税コードのグループです。 また、特定の仕入先や顧客には転記されないトランザクションの勘定科目にも関連付けられます。 品目売上税グループは、製品などのリソースに関連付けられた売上税コードのグループです。 特定のトランザクションに適用される売上税は、トランザクションの売上税グループと品目売上税グループの両方に含まれる売上税コードによって決定されます。 売上税の計算が可能なのは、売上税の計算または記録が必要な各トランザクションに対して、売上税グループと品目売上税グループが選択されている場合のみです。  
 
 1. **ナビゲーション ウィンドウ > モジュール > 税 > 間接税 > 売上税 > 売上税グループ** の順に移動します。
 2. **新規** をクリックします。

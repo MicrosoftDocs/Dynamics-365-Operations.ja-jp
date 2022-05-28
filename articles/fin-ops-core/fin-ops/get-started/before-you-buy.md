@@ -1,7 +1,7 @@
 ---
 title: 購入する前に
 description: Dynamics 365 Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce の購買を検討しているときに使用するステップ バイ ステップのガイドです。
-author: ShellyBakke
+author: sericks007
 ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
@@ -10,21 +10,21 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 21761
 ms.search.region: Global
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874587"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713279"
 ---
 # <a name="before-you-buy"></a>購入する前に
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance、Dynamics 365 Supply Chain Management、または Dynamics 365 Commerce を体験するのは初めてですか。 お客様が購入を検討されているか、または購入の準備が整っているかにかかわらず、お客様の役に立つステップ バイ ステップ ガイダンスを作成しました。
+Dynamics 365 Finance、Dynamics 365 Supply Chain Management あるいは Dynamics 365 Commerce を体験するのは初めてですか? お客様が購入を検討されているか、または購入の準備が整っているかにかかわらず、お客様の役に立つステップ バイ ステップ ガイダンスを作成しました。
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>手順 1: Finance and Operations を 30 日間無料で試す
 

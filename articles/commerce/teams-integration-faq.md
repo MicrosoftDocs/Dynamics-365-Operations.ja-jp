@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae4a7f9d9576c9d0408f562eb05bc309d0fbca0ecb8530e8c032b2bb80f12ff4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16ad6cec0fb852d863039740e9f2c3406467e899
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773817"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692512"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Dynamics 365 Commerce と Microsoft Teams の統合に関するよくあるご質問
 
@@ -36,7 +35,7 @@ Microsoft Teams の通信マネージャは、タスク リストを作成およ
 
 Commerce Headquarters の従業員に小売作業マネージャ ロールを割り当てるには、次の手順に従います。
 
-1. **Retail と Commerce \> 従業員 \> ユーザー** へ移動します。
+1. **小売とコマース \> 従業員 \> ユーザー** へ移動します。
 1. 従業員を選択します。
 1. **ユーザーのロール** クイック タブで、**ロールの割り当て** をクリックします。
 1. **ユーザーへのロールの割り当て** ダイアログ ボックスで **Retail タスク マネージャー** ロールを選択し、**OK** を選択します。

@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-10-12
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 174cbd85139db5cee75481041fb721dc7646ab66
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: e74336270ab46fc19adb4c797745c9582028391a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913605"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687474"
 ---
 # <a name="print-tax-information-on-transfer-order-documents"></a>移動オーダー ドキュメントへの税金情報の印刷
 
@@ -39,7 +38,7 @@ ms.locfileid: "7913605"
 
 1. [移動オーダーの税務機能を有効にして設定します ](tasks/Tax-feature-support-for-transfer-order.md)。
 2. [法人に対して複数の税登録番号を作成および設定します ](emea-multiple-vat-registration-numbers.md)。
-3. 課税控除コード、説明、税指令、税コードの印刷コードを設定します。 この例では 、Microsoft Dynamics 365 Finance で次の 3 つの税コードが作成および同期されます: **NL-Exempt**, **BE-RC-21**, and **BE-RC+21**。
+3. 課税控除コード、説明、税指令、税コードの印刷コードを設定します。 この例では、Microsoft Dynamics 365 Finance で次の 3 つの税コードを作成、同期します: **NL-Exempt**,**BE-RC-21**、**BE-RC+21**。
 
     1. Finance で、**税** \> **設定** \> **消費税** \> **消費税の課税控除コード** の順に移動します。
     2. **編集** を選択し、**EC** 非課税コードの説明を入力します。 たとえば、**税金登録番号で課税控除 EC の出荷** と入力します 。

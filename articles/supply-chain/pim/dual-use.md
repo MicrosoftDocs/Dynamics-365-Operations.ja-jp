@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570756"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736036"
 ---
 # <a name="dual-use-goods"></a>デュアルユース商品
 
@@ -34,7 +34,7 @@ ms.locfileid: "7570756"
 2. 商品 X-100 の **リリース済製品の詳細** ページには、これがデュアルユース商品であることが示されています。 コード、カテゴリー、グループ、政府を組み合わせにより、製品が属する輸出管理の分類を示します。
 3. **デュアルユース証明書** ページには、フランスに出荷される際の、製品 X-100 の証明書が含まれています。 この証明書は 2020年1月1日 に期限が切れます。
 4. 2020年6月17日に、フランスに拠点を置く顧客企業のに向けて販売注文を作成し、その注文には製品X-100が含まれています。
-5. 販売注文を保存すると、システムによって次の情報が決定されます :
+5. 販売注文を確認すると、システムによって次の情報が決定されます:
 
     1. この注文には、デュアルユースの商品が使用されている商品が含まれていますか？
     2. 注文にデュアルユース商品が含まれている場合、送信先の国ではデュアル使用の証明書を必要としていますか？

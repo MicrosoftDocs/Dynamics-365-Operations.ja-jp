@@ -1,7 +1,7 @@
 ---
 title: 調達に関するよく寄せられる質問
 description: このトピックでは、Supply Chain Management の調達機能に関するよく寄せられる質問 (FAQ) への回答を提供します
-author: Henrikan
+author: GalynaFedorova
 ms.date: 05/31/2021
 ms.topic: article
 ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 99d44f2409d8207ed7a0fb1fc92a99de42240e86
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 718108447dcb5cec488b7fa626feb551808e8dd8
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577195"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8669351"
 ---
 # <a name="procurement-faq"></a>調達に関するよく寄せられる質問
 

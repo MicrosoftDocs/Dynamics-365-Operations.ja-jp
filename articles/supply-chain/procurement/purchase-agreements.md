@@ -1,7 +1,7 @@
 ---
 title: 購買契約
 description: この記事は、購買契約書に関する情報を提供します。 購買契約とは、長期にわたって複数の発注書を使用して指定された数量または金額を購入することを組織に確約する契約です。 この確約と引き換えに、購買担当者は特別価格と割引を受けます。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0a8e2c4fdf640f1a9a64c60afc978a4d5812182a
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103741"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8669575"
 ---
 # <a name="purchase-agreements"></a>購買契約
 

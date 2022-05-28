@@ -1,28 +1,28 @@
 ---
 title: 一般会計と財務諸表の概要
 description: 法人の財務レコードを定義および管理するには、一般会計を使用します。
-author: ShylaThompson
+author: kfend
 ms.date: 08/14/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "65431"
 - intro-internal
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 639d77e43fc9a55e43ebb030f8fc292ce8fb7fce
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: bd832c32655aa52fec16852ec5550a34d06f00f4
+ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985241"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8719922"
 ---
 # <a name="general-ledger-home-page"></a>一般会計のホーム ページ
 
@@ -61,7 +61,7 @@ ms.locfileid: "7985241"
 
 #### <a name="blogs"></a>ブログ
 
-意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials) を参照してください。
+意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
 
 [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Microsoft Dynamics パートナーが Dynamics 365 の最新情報とトレンドを知ることができる単一のリソースを提供しています。
 

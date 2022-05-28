@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-07-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 869832f085ee91f6c1fee53dad508cf5e54535627dadd6fb59a7586b03c8ec3b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e18caf1dbdf8191713c17b1793f5da44cf2f182b
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719737"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8724532"
 ---
 # <a name="why-cant-i-reverse-this-transaction"></a>なぜこのトランザクションを取り消しできないのか ?
 
@@ -35,7 +35,7 @@ ms.locfileid: "6719737"
 
 ## <a name="resolution"></a>解決策
 
-トランザクションを取り消す前に、特定の基準を満たしている必要があります。 このトピックの残りのセクションでは、各モジュールの検証を行います。 このトピックでは Microsoft Dynamics 365 Finance のトランザクションに焦点を当てていますが、いくつかの概念および検証は Dynamics 365 Supply Chain Management などの他のアプリケーションに適用できます。
+トランザクションを取り消す前に、特定の基準を満たしている必要があります。 このトピックの残りのセクションでは、各モジュールの検証を行います。 このトピックでは Microsoft Dynamics 365 Finance のトランザクションに焦点を当てていますが、いくつかの概念および検証は Dynamics 365 Supply Chain Management などの他のアプリに適用できます。
 
 また、トランザクションが取り消される場所は、取り消しできるかどうかに影響する場合があります。 たとえば、小切手として転記された仕入先支払は、銀行口座のトランザクション ページの **小切手** セクションでのみ取り消しされます。 一般会計の **伝票トランザクション** ページから取り消す必要があります。
 

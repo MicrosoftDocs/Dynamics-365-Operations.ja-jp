@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
-ms.author: aolson
+ms.author: jiwo
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 92da476f64b937d339b5f0c6088b8ce722a0584938ccf2a6c6cbd39fdc15544d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf5062cfc7ce47a2356c72462da805e8d0d6a756
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714638"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727793"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>財務諸表のレポート ツリー定義
 
@@ -101,7 +101,7 @@ ms.locfileid: "6714638"
     > 子単位および親単位の両方に分析コードを指定すると、レポートのデータの重複が発生する場合があります。
 
 - レポート ツリーで分析コードを含むレポート単位は、行および列の定義に使用される分析コードに対応します。 分析コードの組み合わせが、その単位に返される金額を決定します。 たとえば、この記事で後述する例 2 では、行 6 および 7 はそれぞれ、部門 00 と 01 にのみ値を返します。
-- レポート ツリーで分析コードを含まない親レポート単位の金額は、子単位のレポートから決定され、特定の親単位に金額をロールアップします。 例えば、親単位 (データ ロールアップの例の例 2 の Contoso USA を参照) に、2 つの子単位 (022 と 023) があり、分析コードが含まれていない場合、子および親それぞれに対してレポートが生成されます。 親の合計は、2 つの子の合計金額です。
+- レポート ツリーで分析コードを含まない親レポート単位の金額は、子単位のレポートから決定され、特定の親単位に金額をロールアップします。 例えば、親単位 (データ ロールアップの例の例 2 の [Contoso USA] を参照) に、2 つの子単位 (022 と 023) があり、分析コードが含まれていない場合、子および親それぞれに対してレポートが生成されます。 親の合計は、2 つの子の合計金額です。
 
 ### <a name="manage-reporting-units"></a>[レポート単位の管理]
 

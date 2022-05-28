@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2c8adaad2afee3b735c69a501d7949a807f4e770
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 18dc138693dc9fb0e8cf8727de77b5f8584cde79
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323383"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8690199"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>B2B eコマース サイトの製品数量制限の設定
 
@@ -53,7 +53,7 @@ ms.locfileid: "8323383"
 
 数量設定を定義するには、次の手順に従います。 
 
-1. 製品 **小売りとコマース \> 製品とカテゴリー \> カテゴリー別に製品を販売する** に移動します。
+1. 製品 **小売とコマース \> 製品とカテゴリー \> カテゴリー別に製品を販売する** に移動します。
 1. リリース済製品を選択します。
 1. アクション ペインで、**在庫の管理** タブの **注文設定** グループで、**既定の注文設定** を選択します。 
 1. **既定の注文設定** ページの **販売注文** クイック タブの **販売数量**  セクションで、製品の販売数量を設定します。

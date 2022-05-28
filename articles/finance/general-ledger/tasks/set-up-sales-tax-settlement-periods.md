@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f57cd2b5b0f8f86d67500086403c5f484a263f76601453c00f59ede901b01a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732960"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735817"
 ---
-# <a name="set-up-sales-tax-settlement-periods"></a>売上税精算期間の設定
+# <a name="set-up-sales-tax-settlement-periods"></a>消費税精算期間を設定します
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "6732960"
 
 このタスクでは、USMF というデモ会社を使用します。
 
-1. ナビゲーション ウィンドウで、**モジュール > 税 > 間接税 > 売上税 > 売上税決済期間** の順に移動します。
+1. **税 > 間接税 > 売上税 > 売上税決済期間** の順に移動します。
 2. **新規** を選択します。
 3. **決済期間** フィールドに値を入力します。
 4. **説明** フィールドで、値を入力します。

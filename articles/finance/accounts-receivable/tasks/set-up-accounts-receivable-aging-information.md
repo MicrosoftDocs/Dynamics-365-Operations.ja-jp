@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 996fb289c32a1819103fd67ffddc940dfd2870fb
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 5b67c33f73a33721167cedde1a8d83a81aa77db3
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753563"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735405"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>売掛金勘定のエイジング情報の設定および生成
 
 [!include [banner](../../includes/banner.md)]
 
-このガイドでは、エイジング期間の定義、顧客残高のエイジング、および [指定の期間に達している残高] リストと [回収] ページでの残高表示の設定方法を説明します。 このレコードでは、USMF デモ会社を使用します。
+このガイドでは、エイジング期間の定義、顧客残高のエイジング、および **指定の期間に達している残高** リストと **回収** ページでの残高表示の設定方法を説明します。 このレコードでは、USMF デモ会社を使用します。
 
 
 ## <a name="create-an-aging-period-definition"></a>エイジング期間の定義の作成

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: cf38717ab3768249e3c9b988ee3893c5e539bcd0
+ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075302"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739390"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Management 10.0.21 (2021 年 10 月) の新機能または変更された機能
 
@@ -130,7 +130,7 @@ ms.locfileid: "8075302"
 | マスター プラン | [計画履歴と計画ログの表示](../master-planning/planning-optimization/plan-history-logs.md) |
 | 倉庫管理 | [コンテナー梱包戦略](../warehousing/container-packing-strategy-overview.md) |
 | 倉庫管理 | [循環棚卸のシナリオ例](../warehousing/cycle-counting-scenarios.md) |
-| 倉庫管理 | [V2 データ エンティティによる入庫 ASN のインポート](../warehousing/import-asn-v2-data-entity.md) |
+| 倉庫管理 | [V3 データ エンティティによる入庫 ASN のインポート](../warehousing/import-asn-data-entity.md) |
 | 倉庫管理 | [販売注文および移動オーダーの超過ピッキング](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | 倉庫管理 | [ウェーブ中のウェーブ ラベル印刷をスケジュールする](../warehousing/configure-task-based-wave-label-printing.md) |
 | 倉庫管理 | [Warehouse Management モバイル アプリの新機能または変更された機能](../warehousing/whats-new-wma.md) |

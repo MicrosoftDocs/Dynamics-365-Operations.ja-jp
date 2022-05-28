@@ -1,7 +1,7 @@
 ---
 title: 出荷連結ポリシー
 description: このトピックでは、出荷連結ポリシーの柔軟な構成を実現する機能の概要について説明します。
-author: GarmMSFT
+author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 11ee4beefed02425d4650de3e896e608d3d00ef5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 51235a21955ed4528233babd4c767112998f9d6b
+ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577963"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8747694"
 ---
 # <a name="shipment-consolidation-policies"></a>出荷連結ポリシー
 
@@ -123,8 +123,8 @@ ms.locfileid: "7577963"
 | 該当なし | 連結対象として選択されている販売注文または在庫移動指示の出荷は、作成される出荷と同一の連結ポリシーを使用するか、または、オープン出荷に割り当てられている必要があります(**既存の出荷と連結** オプションがオンになっている場合)。 |
 | *倉庫へのリリース* の手順では、既存の出荷を検索して連結の対象とする出荷を検索することはできません。 *倉庫へのリリース* の手順では、現行のインスタンスが作成した出荷のみが、連結に使用する出荷の検索に使用することができます。 | 現在使用されている連結ポリシーで **既存の出荷と連結** オプションがオンになっている場合、*倉庫へのリリース* の手順では、同じ連結ポリシーに基づいて作成された既存の出荷の中から連結対象の出荷を検索して、連結対象の出荷を検出します。 そのため、2つのポリシーが存在する場合、ポリシー 2 に基づいて作成された出荷は、ポリシー 1 に基づいて作成された出荷とは連結されません。 |
 | 該当なし | 連結ポリシー フィールドの一覧が空の場合、またはポリシーが見つからない場合は、販売注文または在庫移動指示明細ごとに新たな出荷が作成されます。 |
-| 以下の連結フィールドは、 *在庫移動明細* の出荷の連結に使用される固有の値の組み合わせを定義しています。 (ここに記載されていないすべてのフィールドは無視されます)<ul><li>注文番号 (OrderNum)</li></ul> | 以下の連結フィールドは、 *在庫移動明細* の出荷の連結に使用される固有の値の組み合わせを定義しています。 (ここに記載されていないすべてのフィールドは無視されます)<ul><li>注文番号 (OrderNum)</li><li>配送先の受取人 (DeliveryName)</li><li>配送先住所 (DeliveryPostalAddress)</li><li>ISO 国 コード (CountryRegionISOCode)</li><li>住所 (Address)</li><li>サイト (InventSiteId)</li><li>倉庫 (InventLocationId)</li><li>配送業者 (CarrierCode)</li><li>配送業者サービス (CarrierServiceCode)</li><li>配送方法 (ModeCode)</li><li>配送業者グループ (CarrierGroupCode)</li><li>配送条件 (DlvTermId)</li></ul>これらのフィールドは、新たな出荷を作成する際に使用可能となり、初期化される唯一のフィールドです。 |
-| 以下の連結フィールドは、 *販売明細* の出荷の連結に使用される固有の値の組み合わせを定義しています。 (ここに記載されていないすべてのフィールドは無視されます)<ul><li>注文番号 (OrderNum)</li><li>顧客の参照情報 (CustomerRef)</li><li>顧客要件 (CustomerReq)</li><li>配送条件 (DlvTermId)</li></ul> | 以下の連結フィールドは、 *販売明細* の出荷の連結に使用される固有の値の組み合わせを定義しています。 (ここに記載されていないすべてのフィールドは無視されます)<ul><li>注文番号 (OrderNum)</li><li>アカウント番号 (AccountNum)</li><li>配送先の受取人 (DeliveryName)</li><li>配送先住所 (DeliveryPostalAddress)</li><li>ISO 国 コード (CountryRegionISOCode)</li><li>住所 (Address)</li><li>サイト (InventSiteId)</li><li>倉庫 (InventLocationId)</li><li>配送業者 (CarrierCode)</li><li>配送業者サービス (CarrierServiceCode)</li><li>配送方法 (ModeCode)</li><li>配送業者グループ (CarrierGroupCode)</li><li>ブローカー ID (BrokerCode)</li><li>指示 (LoadDirection)</li><li>配送条件 (DlvTermId)</li><li>顧客の参照情報 (CustomerRef)</li><li>顧客要件 (CustomerReq)</li></ul>これらのフィールドは、新たな出荷を作成する際に使用可能となり、初期化される唯一のフィールドです。 |
+| 以下の連結フィールドは、 *在庫移動明細* の出荷の連結に使用される固有の値の組み合わせを定義しています。 (ここに記載されていないすべてのフィールドは無視されます)<ul><li>注文番号 (OrderNum)</li></ul> | 以下の連結フィールドは、 *在庫移動明細* の出荷の連結に使用される固有の値の組み合わせを定義しています。 (ここに記載されていないすべてのフィールドは無視されます)<ul><li>注文番号 (OrderNum)</li><li>配送先の受取人 (DeliveryName)</li><li>配送先住所 (DeliveryPostalAddress)</li><li>ISO 国 コード (CountryRegionISOCode)</li><li>住所 (Address)</li><li>サイト (InventSiteId)</li><li>倉庫 (InventLocationId)</li><li>配送業者 (CarrierCode)</li><li>配送業者サービス (CarrierServiceCode)</li><li>配送方法 (ModeCode) \*</li><li>配送業者グループ (CarrierGroupCode)</li><li>配送条件 (DlvTermId)</li></ul><p>これらのフィールドは、新たな出荷を作成する際に使用可能となり、初期化される唯一のフィールドです。</p><p>\* 注: *ModeCode* は、移動明細行に対して選択された **出荷の配送業者** に割り当てられた **モード** です (移動明細行に対して選択された **配送方法** ではありません)。 連結基準の中に *配送方法 (ModeCode)* を含めるように選択した場合、**出荷の配送業者**、**配送サービス**、および **配送方法** が (値に関係なく) すべて明細行に定義されていれば、同じ **モード** 値を持つ移動明細行のみが連結されます。 さらに、システムは **モード** が空白であるすべての移動明細行も連結します。</p> |
+| 以下の連結フィールドは、 *販売明細* の出荷の連結に使用される固有の値の組み合わせを定義しています。 (ここに記載されていないすべてのフィールドは無視されます)<ul><li>注文番号 (OrderNum)</li><li>顧客の参照情報 (CustomerRef)</li><li>顧客要件 (CustomerReq)</li><li>配送条件 (DlvTermId)</li></ul> | 以下の連結フィールドは、 *販売明細* の出荷の連結に使用される固有の値の組み合わせを定義しています。 (ここに記載されていないすべてのフィールドは無視されます)<ul><li>注文番号 (OrderNum)</li><li>アカウント番号 (AccountNum)</li><li>配送先の受取人 (DeliveryName)</li><li>配送先住所 (DeliveryPostalAddress)</li><li>ISO 国 コード (CountryRegionISOCode)</li><li>住所 (Address)</li><li>サイト (InventSiteId)</li><li>倉庫 (InventLocationId)</li><li>配送業者 (CarrierCode)</li><li>配送業者サービス (CarrierServiceCode)</li><li>配送方法 (ModeCode) \*</li><li>配送業者グループ (CarrierGroupCode)</li><li>ブローカー ID (BrokerCode)</li><li>指示 (LoadDirection)</li><li>配送条件 (DlvTermId)</li><li>顧客の参照情報 (CustomerRef)</li><li>顧客要件 (CustomerReq)</li></ul><p>これらのフィールドは、新たな出荷を作成する際に使用可能となり、初期化される唯一のフィールドです。</p><p>\* 注: *ModeCode* は、販売明細行に対して選択された **出荷の配送業者** に割り当てられた **モード** です (販売明細行に対して選択された **配送方法** ではありません)。 連結基準の中に *配送方法 (ModeCode)* を含めるように選択した場合、**出荷の配送業者**、**配送サービス**、および **配送方法** が (値に関係なく) すべて明細行に定義されていれば、同じ **モード** 値を持つ販売明細行のみが連結されます。 さらに、システムは **モード** が空白であるすべての販売明細行も連結します。</p> |
 | 該当なし | *販売明細* では次の連結フィールドが必須となっており、削除することはできません。<ul><li>アカウント番号 (AccountNum)</li><li>配送先の受取人 (DeliveryName)</li><li>配送先住所 (DeliveryPostalAddress)</li><li>倉庫 (InventLocationId)</li></ul>既定では、これらのフィールドは、新しいポリシーが作成される際に割り当てられます。 これらを削除することはできません。 |
 | **積荷計画ワークベンチ** ページの *倉庫の積荷のリリース* を使用すると、出荷とウェーブを作成する独立したコードが使用されます。 | 連結の評価がされるフィールドの決定には、出荷連結ポリシーが適用されます。 出荷は1つの積荷内でのみ連結されます。 |
 | **すべての出荷** ページで **出荷の連結** を手動で選択し、続いて対象の "基本" の出荷を選択します。 複数のキー フィールドに一致する値を持つ既存の出荷がすべて提案されます。 | **すべての出荷** ページで **出荷の連結** を手動で選択し、続いて対象の "基本" の出荷を選択します。 システムでは、関連する出荷連結ポリシーに対して構成されているいくつかの主要なフィールドの値を照合することで、既存の出荷を提案します。 |

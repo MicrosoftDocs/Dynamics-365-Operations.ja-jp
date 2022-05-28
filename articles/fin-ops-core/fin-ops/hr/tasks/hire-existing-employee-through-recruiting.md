@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e7343a485ae4779b075eeb48dabc39467e1a176
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 07dae424f32281a39c3887437ac7976fb3beb8d3
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074916"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734926"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>採用による既存の従業員の雇用
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> このトピックで説明した機能は、現在 Finance インフラストラクチャの Human Resources の顧客が利用できます。  
+> このトピックの採用機能は採用プロジェクトと呼ばれ、応募者、応募、採用プロジェクトに焦点を当てます。  
 
 
 場合によっては、募集中の職位が既に組織内の従業員の候補者で埋まっていることがあります。 この手順は、採用プロセスを使用して既存の従業員を採用する手順を説明しています。 この手順では、採用プロジェクトは既に設定され、既存の従業員は既に採用プロジェクトの申請を送信しています。 この手順の作成に使用するデモ データの会社は **USMF** です。

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656806"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740655"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>財務と運用アプリのサービスの説明
 
@@ -265,7 +265,7 @@ Microsoft は、以下の月に財務と運用アプリのサービス更新を�
 |---|---|---|
 | **非実稼働**<br>階層 1 のサンドボックス | 顧客が開発、デモ、またはトレーニング目的で顧客が配置する非実稼働環境。 | レベル 1 のサンドボックス (クラウド ホスト環境とも呼ばれます) は、LCS から顧客の Azure サブスクリプションに配置される顧客管理 VM です。 これは顧客の Azure サブスクリプションの VM なので、顧客はリモート デスクトップを介してこの環境への完全な管理アクセス権を持っています。 |
 | **非実稼働**<br>レベル 2 (またはそれ以上) のサンドボックス | ユーザー受入テスト、統合テスト、トレーニング、ステージング、またはその他の実稼働前のシナリオに対して顧客が配置する非実稼働環境。 | レベル 2 以上のサンドボックスは、財務と運用 SaaS サブスクリプションに配置されます。 非実稼働環境に関連付けられている Azure SQL データベースへのアクセスは、[ジャストインタイム アクセス](../../dev-itpro/database/database-just-in-time-jit-access.md) を介して許可されます。 リモート デスクトップ アクセスは使用できません。 |
-| **実稼働** | プロジェクトで [初回 Go-Live の準備](/imp-lifecycle/environment-planning.md#production-system-readiness) ができたら、実稼働環境を配置することができます。 | 実稼働環境は、SaaS サブスクリプションに配置されます。 すべてのアクセスは、ブラウザ、サービス エンドポイント、または LCS を介して行われます。 |
+| **実稼働** | プロジェクトで [初回 Go-Live の準備](../imp-lifecycle/environment-planning.md#production-system-readiness) ができたら、実稼働環境を配置することができます。 | 実稼働環境は、SaaS サブスクリプションに配置されます。 すべてのアクセスは、ブラウザ、サービス エンドポイント、または LCS を介して行われます。 |
 
 ### <a name="microsoft-administrative-access"></a>Microsoft の管理アクセス権
 
@@ -286,7 +286,7 @@ Microsoft は、顧客の実稼働インスタンスを監視および診断す�
 |---|---|
 | <ul><li>サービスの利用可能性を監視します。</li><li>Application Object Server (AOS)、バッチ、データのインポート/エクスポート フレームワーク (DIXF)、Commerce、Management Reporter などの重要なコンポーネントの正常性指標とウォッチドッグを介して、継続的に監視および警告します。</li><li>インフラストラクチャ サービス (Azure Active Directory\[Azure AD\] や Azure SQL など) によって発生するパフォーマンスの低下を監視します。</li><li>単一のプロセスまたはバッチ ジョブが異常を引き起こしていると Microsoft が判断した場合、そのプロセスまたはジョブは顧客との通信後に終了します。</li></ul> | <ul><li>機能およびパフォーマンスの問題が発生する可能性があるアプリケーション構成および拡張機能の変更を監視します。</li><li>アプリケーション エラーは、監視ツールを使用して診断する必要があります。 これらのツールを使用して、ユーザーによって報告されたパフォーマンスの異常を診断します。</li><li>システムに予想されるピーク時の使用量を超える負荷が予想される場合は、Microsoft に通知してください。</li><li>該当するサービスが実稼働インスタンスで使用できない場合、顧客は LCS を使用して [稼働停止](../../dev-itpro/lifecycle-services/report-production-outage.md) を報告できます。</li></ul> |
 
-顧客は、オンラインで LCS を介してサポート要求を送信することにより、Microsoft が最も効果的かつ効率的な方法で、迅速かつ深い技術的な専門知識を提供することができます。 電話のオプションを利用することもできますが、オンライン オプションが利用できない場合にのみ使用してください。 詳細については、[電話サポート オプション](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support) を参照してください。
+顧客は、オンラインで LCS を介してサポート要求を送信することにより、Microsoft が最も効果的かつ効率的な方法で、迅速かつ深い技術的な専門知識を提供することができます。 電話のオプションを利用することもできますが、オンライン オプションが利用できない場合にのみ使用してください。 詳細については、[電話サポート オプション](/power-platform/admin/support-overview?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json#is-there-a-phone-number-i-can-call-to-contact-support) を参照してください。
 
 ## <a name="incident-management"></a>インシデント管理
 

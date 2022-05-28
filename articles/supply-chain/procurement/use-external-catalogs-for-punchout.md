@@ -1,7 +1,7 @@
 ---
 title: パンチアウト e-procurement の外部カタログの使用
 description: このトピックでは、外部カタログを使用して要求を作成し送信する方法について説明します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b236a17a7f93bfeb60d64fa25745bd1b4cb1b34b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 17c473a93b7451879f1478a8c0c46fe9d8351fc4
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578035"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8679278"
 ---
 # <a name="use-external-catalogs-for-punchout-e-procurement"></a>パンチアウト e-procurement の外部カタログの使用
 

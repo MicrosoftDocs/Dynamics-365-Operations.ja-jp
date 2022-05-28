@@ -8,26 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497d49da84f4df90877908bef3031e079bc36066
-ms.sourcegitcommit: d0e99545d722c924db57ae2bd06f72154a1f1f97
+ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "8557881"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735524"
 ---
 # <a name="customer-aging-data-storage"></a>顧客エイジング データ ストレージ
 
 [!include [banner](../includes/banner.md)]
 
-
-このトピックでは、顧客エイジング データに外部ストレージを使用するプロセスについて説明します。 Microsoft Dynamics 365 Finance では、顧客エイジング データのストレージ プロセスを実行して、出力を外部システムにエクスポート可能にできます。 プロセスを実行すると、システムで使用できるのと同じエイジング レポート オプションが外部システムでも使用できます。 詳細は、常にエクスポートしたデータに含まれます。
+このトピックでは、顧客エイジング データに外部ストレージを使用するプロセスについて説明します。 Microsoft Dynamics 365 Finance では、**顧客エイジング データ ストレージ** プロセスを実行して、出力を外部システムにエクスポート可能にできます。 プロセスを実行すると、システムで使用できるのと同じエイジング レポート オプションが外部システムでも使用できます。 詳細は、常にエクスポートしたデータに含まれます。
 
 出力に多くの顧客や多くのトランザクション、あるいはその両方が含まれている場合に、顧客エイジング データをストレージ用の外部システムで使用できると便利です。 既存の **顧客エイジング** レポートが、印刷するデータが多すぎるためにタイム アウトした場合、この機能は同じデータを取得する別の方法を提供します。
 

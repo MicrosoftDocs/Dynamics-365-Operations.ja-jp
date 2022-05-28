@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e94ff2cd499a827c631d6836a6c976af53dfa1
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763193"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734607"
 ---
 # <a name="cost-control-workspace"></a>原価管理ワークスペース 
 
@@ -54,7 +54,7 @@ ms.locfileid: "6763193"
 | 原価会計元帳                                            | レポートの基になる **原価会計元帳** です。 値は **コスト制御ユニット** フィールドから派生しています。 |
 | 原価管理単位                                                 | 選択した値は、このレポートの基になる原価会計元帳とコスト オブジェクトを決定します。 |
 | 統計分析コード階層、コスト要素分析コード階層 | **原価管理** ワークスペースのコンフィギュレーション レコードは、非貨幣形式または金額のいずれの値もレポートできますが、同じレイアウトではありません。 **コスト要素分析コード階層** フィールドで値を選択して金額の値をレポートします。 **統計分析コード階層** フィールドで値を選択して非貨幣形式の値をレポートします。 選択した分析コード階層のレコードは、報告と集約のレベル構造を決定します。<blockquote>[!NOTE]<br>非通貨形式の値と金額の値を並べて表示するには、Microsoft Power BI コンテンツ パックの Microsoft Excel にデータをエクスポートします。</blockquote> |
-| 原価オブジェクト分析コード階層                                   | 定義しているレポートの目的に合った、コスト オブジェクト分析コードの分析コード階層を選択します。 |
+| 原価オブジェクト分析コード階層      | 定義しているレポートの目的に合った、コスト オブジェクト分析コードの分析コード階層を選択します。 |
 | 予算の元のバージョン                                           | このレポートのコンテキストで元の予算として機能する予算バージョン ID を選択します。 |
 | 予算の修正バージョン                                            | このレポートのコンテキストで修正予算として機能する予算バージョン ID を選択します。 |
 

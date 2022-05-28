@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d221e1a47dca85880fd683177ca95dd1b7766fb9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064925"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743544"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>ATS 統合 API のサーバー間認証
 
@@ -89,7 +89,7 @@ Power Platform で Dataverse 仮想テーブルへのアクセスを有効にす
 
 次に、Human Resources アプリケーションのユーザーにリンクすることで、アプリケーションに Human Resources データへの適切なアクセス許可が付与されます。 アプリケーション ユーザーの場合、Dataverse 仮想テーブルを介したサーバー間の呼び出しは、アクションを開始する Dataverse のユーザー (アプリ) の ID に関連して実行されます。 仮想テーブル アダプター サービスは、Human Resources で関連したユーザーを検索し、そのユーザーのコンテキストでクエリを実行します。 つまり、統合アプリケーションに必要なデータへのアクセス許可を提供するために、適切なロールが割り当てられた Human Resources でユーザーを作成する必要があります。
 
-Human Resources ユーザーには、Human Resources データに対する適切なアクセス許可を割り当てる必要があります。 **採用アプリケーション** (HcmRecruitingIntegrator) ロールは、採用データと統合するために必要な主なエンティティの権限で利用できます。 このロールを **ユーザー** ページのアプリケーション ユーザーに割り当て、データへの適切なアクセス権を付与できます。 Human Resources セキュリティ ロールの詳細については、[ロールベース セキュリティ](/fin-ops-core/dev-itpro/sysadmin/role-based-security)を参照してください。
+Human Resources ユーザーには、Human Resources データに対する適切なアクセス許可を割り当てる必要があります。 **採用アプリケーション** (HcmRecruitingIntegrator) ロールは、採用データと統合するために必要な主なエンティティの権限で利用できます。 このロールを **ユーザー** ページのアプリケーション ユーザーに割り当て、データへの適切なアクセス権を付与できます。 Human Resources セキュリティ ロールの詳細については、[ロールベース セキュリティ](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security)を参照してください。
 
 ### <a name="set-up-the-new-user-with-appropriate-permissions"></a>適切なアクセス許可を持つ新しいユーザーの設定
 

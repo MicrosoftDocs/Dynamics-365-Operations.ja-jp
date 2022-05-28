@@ -1,7 +1,7 @@
 ---
 title: 予定原価に対する原価バージョンを使用した原価変更のシミュレーション
 description: この記事では、製造品目の算出原価に対する原価変更の影響を、予定原価の個別の原価バージョンを使用してシミュレーションする方法を説明します。
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 78183
 ms.assetid: 1e41953f-cdb9-4598-b776-46e49383a773
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: mguada
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e288a5f00e43901ba1bf6ec50f460be4b62ea2db73adbaf0f9204c988e812f58
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ad3d6bd41e090b13f48ecc7bb19faae5dbc8502
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781564"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676181"
 ---
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>予定原価に対する原価バージョンを使用した原価変更のシミュレーション
 

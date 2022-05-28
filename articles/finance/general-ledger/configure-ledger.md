@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3e6c4d966f2720339941fb848ff9ac79e4593868ce10d3712efbb1ad18a9ceea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38c4364c47915cc0019cb6b3d471d3e60d413bf0
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712222"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711551"
 ---
 # <a name="configure-ledgers"></a>元帳を構成する
 
@@ -38,7 +38,7 @@ Microsoft Dynamics 365 Finance の各法人に対して、元帳の詳細を構�
 
 ## <a name="selecting-account-structures"></a>勘定構造を選択する
 
-Dynamics 365 Finance の各法人は、ひとつつ以上の勘定構造を使用するように構成することができます。 それぞれの勘定構造では、トランザクションが転記される際に許可される財務分析コード、および主要勘定と財務分析コードの組み合わせを定義します。 複数の法人で同じ勘定構造を使用できます。
+Dynamics 365 Finance の各法人は、1 つ以上の勘定構造を使用するように構成することができます。 それぞれの勘定構造では、トランザクションが転記される際に許可される財務分析コード、および主要勘定と財務分析コードの組み合わせを定義します。 複数の法人で同じ勘定構造を使用できます。
 
 複数の勘定構造を使用している場合は、主勘定と財務分析コードの組み合わせが重複しない勘定構造のみを選択できます。 たとえば、勘定構造のいずれかが、1000 ~ 1999 の主勘定の部署を追加するように構成されているとします。 別の勘定構造では、1 で始まる主勘定に対して部署の財務分析コードが追加されています。 この場合、同じ法人にひとつの勘定構造のみを追加できます。
 

@@ -1,26 +1,26 @@
 ---
 title: 総勘定元帳への補助元帳の転送
 description: このトピックでは、総勘定元帳の補助元帳の転送プロセスに関する機能について説明します。
-author: rcarlson
+author: RyanCCarlson2
 ms.date: 12/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 213bbc2541c614aa26b0c830431818fb99c7682d
-ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
+ms.openlocfilehash: 70a34fa1f4ee540d89ec05816e4065fb3e1df9ef
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900733"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727317"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>総勘定元帳への補助元帳の転送
 

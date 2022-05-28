@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce のドメイン
 description: このトピックでは、Microsoft Dynamics 365 Commerce でのドメインの処理方法について説明します。
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
+ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733994"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8737349"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のドメイン
 
@@ -28,6 +28,9 @@ ms.locfileid: "6733994"
 このトピックでは、Microsoft Dynamics 365 Commerce でのドメインの処理方法について説明します。
 
 ドメインは Web ブラウザーで Dynamics 365 Commerce サイトに移動するために使用される Web アドレスです。 選択したドメイン ネーム サーバー (DNS) プロバイダーを使用して、ドメインの管理を制御します。 ドメインは、Dynamics 365 Commerce サイト ビルダー全体で参照され、公開時のサイトへのアクセス方法を調整します。 このトピックでは、Commerce サイトの開発と立ち上げのライフサイクルを通じてドメインがどのように処理および参照されるかを確認します。
+
+> [!NOTE]
+> 2022 年 5 月 6 日現在、Dynamics 365 Commerce で作成されたすべての環境は、以前の `.commerce.dynamics.com` のパターンに代わり、`.dynamics365commerce.ms` ドメインでプロビジョニングされます。 `.commerce.dynamics.com` ドメインでプロビジョニングされた既存の環境は引き続き機能します。
 
 ## <a name="provisioning-and-supported-host-names"></a>プロビジョニングおよびサポートされているホスト名
 
@@ -44,7 +47,7 @@ ms.locfileid: "6733994"
 
 ## <a name="commerce-generated-urls"></a>Commerce 生成の URL
 
-Dynamics 365 Commerce e コマース環境をプロビジョニングする際、Commerce は環境の作業用アドレスとなる URL を生成します。 この URL は、環境のプロビジョニング後に、LCS に表示されている e コマース サイトのリンクで参照されます。 Commerce 生成の URL は、`https://<e-commerce tenant name>.commerce.dynamics.com` の形式で、e コマース テナント名は、Commerce 環境に対して LCS に入力された名前です。
+Dynamics 365 Commerce e コマース環境をプロビジョニングする際、Commerce は環境の作業用アドレスとなる URL を生成します。 この URL は、環境のプロビジョニング後に、LCS に表示されている e コマース サイトのリンクで参照されます。 Commerce 生成の URL は、`https://<e-commerce tenant name>.dynamics365commerce.ms` の形式で、e コマース テナント名は、Commerce 環境に対して LCS に入力された名前です。
 
 サンドボックス環境では、実稼働環境サイトのホスト名を使用することもできます。 このオプションは、サンドボックス環境から実稼働環境にサイトをコピーする場合に最も適しています。
 
@@ -67,11 +70,11 @@ e コマース環境のプロビジョニング後、サイトを作業用 URL �
 
 たとえば、"xyz" という名前の e コマース テナントでサイト ビルダーに "fabrikam" というサイトがあり、空白のパスでサイトを設定した場合、次の Commerce 生成のベース URL に直接アクセスすることによって、Web ブラウザーで公開サイトのコンテンツにアクセスします:
 
-`https://xyz.commerce.dynamics.com`
+`https://xyz.dynamics365commerce.ms`
 
 また、この同じサイトのセットアップ時に "fabrikam" のパスを追加した場合は、次の URL を使用して、Web ブラウザーで公開サイトのコンテンツにアクセスします:
 
-`https://xyz.commerce.dynamics.com/fabrikam`
+`https://xyz.dynamics365commerce.ms/fabrikam`
 
 ## <a name="pages-and-urls"></a>ページと URL
 
@@ -92,16 +95,16 @@ e コマース環境のプロビジョニング後、サイトを作業用 URL �
 サイト ビルダーでサイトを操作するときに、2 つの異なるドメインで 2 つのサイトを設定している場合、**?domain=** 属性を作業 URL に追加して、ブラウザーで公開サイトのコンテンツにアクセスできます。
 
 たとえば、環境 "xyz" がプロビジョニングされ、サイト ビルダーに 2 つのサイトが作成されて、1 つはドメイン `www.fabrikam.com` で、もう 1 つはドメイン `www.constoso.com` に関連付けられています。 各サイトは空白のパスを使用して設定されました。 この 2 つのサイトは、**?domain=** 属性を使用して、次のように Web ブラウザーでアクセスできます:
-- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
-- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-複数のドメインが提供されている環境でドメインのクエリ文字列が指定されていない場合、Commerce は提供された最初のドメインを使用します。 たとえば、サイトの設定中に最初にパス "fabrikam" が提供された場合、その URL `https://xyz.commerce.dynamics.com` を使用して、`www.fabrikam.com` の公開サイトのコンテンツ サイトにアクセスできます。
+複数のドメインが提供されている環境でドメインのクエリ文字列が指定されていない場合、Commerce は提供された最初のドメインを使用します。 たとえば、サイトの設定中に最初にパス "fabrikam" が提供された場合、その URL `https://xyz.dynamics365commerce.ms` を使用して、`www.fabrikam.com` の公開サイトのコンテンツ サイトにアクセスできます。
 
 ## <a name="traffic-forwarding-in-production"></a>実稼働環境でのトラフィックの転送
 
-Commerce.dynamics.com エンドポイント自体でドメインのクエリ文字列パラメータを使用して、複数のドメインをシミュレートできます。 ただし、実稼働環境で稼働させる必要がある場合は、カスタム ドメインのトラフィックを `<e-commerce tenant name>.commerce.dynamics.com` エンドポイントに転送する必要があります。
+Commerce.dynamics.com エンドポイント自体でドメインのクエリ文字列パラメータを使用して、複数のドメインをシミュレートできます。 ただし、実稼働環境で稼働させる必要がある場合は、カスタム ドメインのトラフィックを `<e-commerce tenant name>.dynamics365commerce.ms` エンドポイントに転送する必要があります。
 
-`<e-commerce tenant name>.commerce.dynamics.com` エンドポイントは、カスタム ドメイン Secure Sockets Layer (SSL) をサポートしていないため、フロント ドア サービスまたはコンテンツ配信ネットワーク (CDN) を使用してカスタム ドメインを設定する必要があります。 
+`<e-commerce tenant name>.dynamics365commerce.ms` エンドポイントは、カスタム ドメイン Secure Sockets Layer (SSL) をサポートしていないため、フロント ドア サービスまたはコンテンツ配信ネットワーク (CDN) を使用してカスタム ドメインを設定する必要があります。 
 
 フロント ドア サービスまたは CDN を使用してカスタム ドメインを設定するには、次の 2 つのオプションがあります:
 

@@ -1,7 +1,7 @@
 ---
 title: 手持在庫原価価値の調整
 description: '[手持在庫の調整] ページを使用して、在庫決算プロセスの実行後に、手持在庫数量の原価価格を調整します。'
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 53231
 ms.assetid: bc1fde9f-5ad9-4339-8ae8-e2839b792eb2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe79369fe4a85f34f7648699e90b726356ce6122594e60f21b27180982b7b149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 62122454b2fe0f6a9f04f073057156603e66bb22
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770315"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673301"
 ---
 # <a name="adjust-on-hand-inventory-cost-values"></a>手持在庫原価価値の調整
 

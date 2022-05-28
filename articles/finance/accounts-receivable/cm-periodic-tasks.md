@@ -1,29 +1,29 @@
 ---
-title: 定期的な与信管理タスク
-description: このトピックでは、顧客の与信限度額を管理するために必要なプロセスの一部である定期処理タスクについて説明します。
+title: 定期与信管理タスク
+description: このトピックでは、顧客の与信限度額を管理するためにプロセスの一部である定期処理タスクについて説明します。
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 398fcd9d45ce0ddfb1f7189e0712f9dac2db012f
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 53b7cd00b3287f18ba65391842ac259ab2434b86
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753510"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735439"
 ---
 # <a name="periodic-credit-management-tasks"></a>定期与信管理タスク
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、顧客の与信限度額を管理するために必要なプロセスの一部である定期処理タスクについて説明します。
+このトピックでは、顧客の与信限度額を管理するためにプロセスの一部である定期処理タスクについて説明します。
 
 ## <a name="update-risk-scores"></a>リスク スコアの更新
 

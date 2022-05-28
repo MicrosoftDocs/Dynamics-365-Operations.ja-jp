@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 190eb7e437af7edd8eee97b8f2b7601254cbd240
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 68aa401487a74b9fcd186ec6cbdb268cdb41168c
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066421"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743489"
 ---
 # <a name="employees-select-plans-by-using-employee-self-service-optional"></a>従業員は、従業員セルフサービスを使用して計画を選択します (オプション)
 
@@ -35,11 +34,11 @@ ms.locfileid: "8066421"
 **給付金セルフサービス** ページでは、給付金プランがプランがタイプ別にグループ化されます。 給付金プランをプラン タイプで表示するには、**従業員の給付金** ページで、従業員が選択したタブを使用します。 従業員には、対象となる給付金だけが表示されます。
 
 > [!IMPORTANT]
-> **従業員セルフサービス** に計画タイプを表示するには、そのタイプを構成する必要があります。 詳細については、[従業員セルフ サービスの構成](/hr-benefits-setup-employee-self-service.md)を参照してください。
+> **従業員セルフサービス** に計画タイプを表示するには、そのタイプを構成する必要があります。 詳細については、[従業員セルフ サービスの構成](/dynamics365/human-resources/hr-benefits-setup-employee-self-service)を参照してください。
 
 プランの種類に応じて、1 つまたは複数の給付金を選択して登録することができます。 たとえば、医療プランの種類は、従業員を 1 つの医療プランに限定するように構成している場合があります。 生命保険プランのタイプでは、従業員が複数の生命保険プランを選択できる場合があります。
 
-加入するプランを決めた後は、扶養家族の選択を求められることがあります。 従業員が **従業員 + 1**、**従業員 + 子**、または **家族** の補償オプションを選択した場合は、依存を選択する必要があります。 補償オプションの詳細については、[補償オプションの作成](/hr-benefits-setup-coverage-options.md) を参照してください。
+加入するプランを決めた後は、扶養家族の選択を求められることがあります。 従業員が **従業員 + 1**、**従業員 + 子**、または **家族** の補償オプションを選択した場合は、依存を選択する必要があります。 補償オプションの詳細については、[補償オプションの作成](/dynamics365/human-resources/hr-benefits-setup-coverage-options) を参照してください。
 
 給付金プランを選択するには、従業員が省略ボタン (**...**) または **カートに追加** を選択します。 従業員がすべての給付金をカートに入れ終わった後、**カートを見る** を選択します。 その後、従業員は **計画** ページに移動され、選択した給付金計画および無料の給付金プランを表示できます。
 

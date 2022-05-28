@@ -1,7 +1,7 @@
 ---
 title: 配送業者の燃料インデックスの設定
 description: このガイドでは、燃料インデックス領域、燃料インデックス、および輸送業者の燃料インデックスを作成する方法を説明します。
-author: Henrikan
+author: Weijiesa
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b67219a6cb19b393dce25f77febc194c5ea2a16
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: cb976369f9e8254f76a4de18df619d4420cf0538
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576259"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672685"
 ---
 # <a name="set-up-a-carrier-fuel-index"></a>配送業者の燃料インデックスの設定
 

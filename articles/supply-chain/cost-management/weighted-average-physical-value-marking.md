@@ -1,7 +1,7 @@
 ---
 title: 現物価格とマーキングを使用した加重平均
 description: 加重平均は加重平均原則に基づく在庫モデルであり、在庫原価計算期間中に受け入れて在庫となった品目の平均価値に、前の期間からの手持在庫を加えて、在庫からの払出の価値を決めます。
-author: AndersGirke
+author: JennySong-SH
 ms.date: 02/21/2022
 ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 65501
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c124716b70be837573506a738ef2034397f2bda
-ms.sourcegitcommit: addae271ddfc5a8b0721c23337f69916153db4cd
+ms.openlocfilehash: 41c80dcdc08432bb68478827c8763735e644aa4a
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2022
-ms.locfileid: "8330229"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675266"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>現物価格とマーキングを使用した加重平均
 

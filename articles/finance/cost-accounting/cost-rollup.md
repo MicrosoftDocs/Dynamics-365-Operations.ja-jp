@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779959"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734432"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>原価ロールアップ ポリシーおよび間接費の計算 
 
@@ -30,9 +30,7 @@ ms.locfileid: "6779959"
 原価会計では、コスト フローが組織内で提供される製品とサービスに関連する方法について洞察を得ることができます。 コストの透明性を確認するには、適切な配賦基準に基づいたコスト オブジェクト間のコスト配賦を達成することが重要です。 既定では、特定の状況で必要なため、主要コスト要素に対してコスト配賦が達成されますが、いくつかの考慮すべき影響があります。
 
 -   補助コスト オブジェクトは、間接費計算後に主要コスト要素の残高ゼロで終了します。
-
 -   間接費計算によって生成されたコスト エントリは非常に大量になることがあります。
-
 -   コスト オブジェクト間でコスト フローを追跡することはできません。
 
 これらの影響を避けるため、原価会計では組織管理レポートの要件に合わせてコスト配賦をコンフィギュレーションできます。 このトピックでは、適切なレベルの二次コスト要素を決定し、組織のレポートまたコスト トレーサビリティに適合するコスト ロールアップ ルールを作成する方法について説明します。

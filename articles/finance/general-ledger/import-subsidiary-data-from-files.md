@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 4be1e748724331c4e2089da8a08a9ac7e5cf88a2ac6d3d89b37b9fcd4480f516
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 045ecd6dfb95ccf38773293d44834531668ac1ff
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727303"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733822"
 ---
 # <a name="import-subsidiary-data-from-files"></a>関連会社のデータをファイルからインポートする
 
@@ -29,7 +29,7 @@ ms.locfileid: "6727303"
 1. 連結する子会社の法人を作成します。 法人の作成方法の詳細については、[法人の作成](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md)を参照してください。 詳細については、[連結プロセスに使用する法人の準備](prepare-company-for-consolidation.md) と [連結用の子会社の設定](set-up-subsidiary-company-for-consolidation.md)を参照してください 。
 
 2. インポートするデータを含むファイルを準備します。 インポートとエクスポートのプロセスに関する詳細情報は、[データのインポートとジョブのエクスポートの概要](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) を参照してください。
-3. [データのインポート/エクスポート ジョブの概要](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)に関するデータのインポート/エクスポート プロセスに記載の手順に従って、データをファイルにエクスポートします。 このプロシージャを使用して、Dynamics 365 Finance の別のインスタンスから、または Dynamics 365 Business Central のインスタンスからデータを統合することができます。 外部システムからデータをインポートする場合は、[子会社のデータをファイルにエクスポート](export-subsidiary-data-to-file.md)で説明されている形式でデータをインポートする必要があります。
+3. [データのインポート/エクスポート ジョブの概要](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)に関するデータのインポート/エクスポート プロセスに記載の手順に従って、データをファイルにエクスポートします。 このプロシージャを使用して、Dynamics 365 Finance の別のインスタンスまたは Dynamics 365 Business Central のどちらかからデータを統合することができます。 外部システムからデータをインポートする場合は、[子会社のデータをファイルにエクスポート](export-subsidiary-data-to-file.md)で説明されている形式でデータをインポートする必要があります。
 4. **連結 \> オンラインで連結** に移動します。 **インポートで連結** ページの **基準** タブで、次のフィールドを設定してレポートやインポートの詳細を指定します。
 
     | フィールド                                 | レポートの値 | インポートの値 |

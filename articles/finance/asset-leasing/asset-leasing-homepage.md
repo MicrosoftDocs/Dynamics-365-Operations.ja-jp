@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "4464"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d187f094a7d13e26a6121a2115c146c1372dba46bcafd423a3683d73a1e779f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c82c54b08a7d4c603d1246c598abacc51eb88839
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775221"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710388"
 ---
 # <a name="asset-leasing-home-page"></a>資産リースのホームページ
 
@@ -90,7 +90,7 @@ ms.locfileid: "6775221"
 
 ### <a name="blogs"></a>ブログ
 
-Retail およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
+意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
 
 [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Microsoft Dynamics パートナーが Dynamics 365 の最新情報とトレンドを知ることができる単一のリソースを提供しています。
 

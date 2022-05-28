@@ -1,22 +1,22 @@
 ---
 title: 品目に対する安全在庫フルフィルメント
 description: このトピックでは、安全在庫フルフィルメント、および品目に対して安全在庫数量を設定する方法について説明します。
-author: thethehelga
+author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-oldolg
+ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 937341e17688959e5721153c61af904a88608b17
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: c539b804198ddc5d5dac52c958a851ee55116711
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790941"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672069"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>品目に対する安全在庫フルフィルメント
 

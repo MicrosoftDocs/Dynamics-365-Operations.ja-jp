@@ -2,7 +2,7 @@
 title: 在庫トランザクションをアーカイブする
 description: このトピックでは、システムのパフォーマンスを向上させるために在庫トランザクション データをアーカイブする方法について説明します。
 author: yufeihuang
-ms.date: 03/01/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 99a7b61d9bd5e1e2bd8d2c7df34882646bb51270
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567466"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736064"
 ---
 # <a name="archive-inventory-transactions"></a>在庫トランザクションをアーカイブする
 
@@ -116,3 +116,110 @@ ms.locfileid: "7567466"
 - **アーカイブの一時停止** – 現在処理されている選択したアーカイブを一時停止します。 一時停止は、アーカイブ タスクが生成された後にのみ有効になります。 そのため、一時停止が有効になる前に、短い遅延が発生する場合があります。 アーカイブが一時停止されている場合は、**現在の更新の停止** フィールドにチェック マークが表示されます。
 - **アーカイブの再開** – 現在一時停止されている選択したアーカイブを再開します。
 - **取り消し** – 選択したアーカイブを取り消します。 アーカイブを取り消しできるのは、アーカイブの **状態** フィールドが *完了* に設定されている場合のみです。 アーカイブが取り消されている場合は、**取り消し** フィールドにチェック マークが表示されます。
+
+## <a name="extend-your-code-to-support-custom-fields"></a>カスタム フィールドをサポートするためにコードを拡張する
+
+`InventTrans` テーブルに 1 つ以上のカスタム フィールドが含まれている場合は、名前の付け方に応じて、サポートするようにコードを拡張する必要がある場合があります。
+
+- `InventTrans` テーブルのカスタム フィールドが `InventtransArchive` テーブルと同じフィールド名である場合は、1:1 でマップされていることを意味します。 したがって、カスタム フィールドを `inventTrans` テーブルの `InventoryArchiveFields` フィールド グループに入力するだけで済みます。
+- `InventTrans` テーブルのカスタム フィールド名が `InventtransArchive` テーブルのフィールド名と一致しない場合は、マップするコードを追加する必要があります。 たとえば、`InventTrans.CreatedDateTime` というシステム フィールドがある場合、次のサンプル コードに示すように、別の名前 (`InventtransArchive.InventTransCreatedDateTime` など) で `InventTransArchive` テーブルのフィールドを作成し、`InventTransArchiveProcessTask` と `InventTransArchiveSqlStatementHelper` のクラスに拡張子を追加する必要があります。
+
+次のサンプル コードは、必要な拡張機能を `InventTransArchiveProcessTask` に追加する方法の例を示しています。
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveProcessTask))]
+Final class InventTransArchiveProcessTask_Extension
+{
+
+    protected void addInventTransFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTrans, ModifiedBy))
+            .add(fieldStr(InventTrans, CreatedBy)).add(fieldStr(InventTrans, CreatedDateTime));
+
+        next addInventTransFields(_selectionObject);
+    }
+
+
+    protected void addInventTransArchiveFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTransArchive, InventTransModifiedBy))
+            .add(fieldStr(InventTransArchive, InventTransCreatedBy)).add(fieldStr(InventTransArchive, InventTransCreatedDateTime));
+
+        next addInventTransArchiveFields(_selectionObject);
+    }
+}
+```
+
+次のサンプル コードは、必要な拡張機能を `InventTransArchiveSqlStatementHelper` に追加する方法の例を示しています。
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveSqlStatementHelper))]
+final class InventTransArchiveSqlStatementHelper_Extension
+{
+    private str     inventTransModifiedBy;  
+    private str     inventTransCreatedBy;
+    private str     inventTransCreatedDateTime;
+
+    protected void initialize()
+    {
+        next initialize();
+        inventTransModifiedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, ModifiedBy)).name(DbBackend::Sql);
+        inventTransCreatedDateTime = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedDateTime)).name(DbBackend::Sql);
+        inventTransCreatedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedBy)).name(DbBackend::Sql);
+    }
+
+    protected str buildInventTransArchiveSelectionFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransArchiveSelectionFieldsStatement();
+        
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransModifiedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedDateTime)).name(DbBackend::Sql));
+        }
+
+        return ret;
+    }
+
+    protected str buildInventTransTargetFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransTargetFieldsStatement();
+
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransModifiedBy);
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedBy);
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedDateTime);
+        }
+
+        return ret;
+    }
+}
+```

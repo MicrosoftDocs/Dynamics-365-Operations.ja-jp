@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ad5f3572e7b4b0594ffce6abaddceac955d1c678
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: efe0ac953e5c1cb04044256e799ecfc07cf3eebe
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069507"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8690753"
 ---
 # <a name="questionnaires"></a>アンケート
 
@@ -31,7 +30,7 @@ ms.locfileid: "8069507"
 
 このトピックは、アンケートに関する一般情報、およびより詳しい情報へのリンクを提供します。 アンケートとは、多様な目的の情報を収集するために使用される一連の質問です。 アンケートのデザイン、作成、配布、および回答の完了を行い、結果を分析することができます。 
 
-Microsoft Dynamics 365 Finance で使用できるさまざまな機能の組み合わせを使用して、特定の要件に合わせたアンケートをカスタマイズできます。 アンケートの使用方法の例を挙げます。
+Microsoft Dynamics 365 Finance で使用できるさまざまな機能を使用して、特定の要件に合わせたアンケートをカスタマイズできます。 アンケートの使用方法の例を挙げます。
 
 -   従業員や申請者の専門的なスキルをテストする。
 -   コースの参加者がコースの教材を学んだかどうかを評価します。

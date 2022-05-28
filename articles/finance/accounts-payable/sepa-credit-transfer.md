@@ -1,6 +1,6 @@
 ---
 title: SEPA 口座振替の概要
-description: この記事では、ISO 20022 口座振替に関する一般情報を提供します。これは単一ユーロ支払地域 (SEPA) 口座振替および仕入先に対するそのほかの電子支払を含みます。 SEPA 口座振替は、1 つの会社または個人から別の会社または個人に対する、ユーロでの特定のタイプの支払です。 このトピックは、口座振替の支払ファイルを設定して送信する方法も説明します。
+description: このトピックでは、ISO 20022 口座振替に関する一般情報を提供します。これは単一ユーロ支払地域 (SEPA) 口座振替および仕入先に対するそのほかの電子支払を含みます。
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "11124"
 - intro-internal
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc37dde8829abdd26a224adbd788538834f4d320
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f43c45aa4f22f5044e7c10329dafa76226970b3d
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984030"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734519"
 ---
 # <a name="sepa-credit-transfer-overview"></a>SEPA 口座振替の概要
 
 [!include [banner](../includes/banner.md)]
 
-この記事では、ISO 20022 口座振替に関する一般情報を提供します。これは単一ユーロ支払地域 (SEPA) 口座振替および仕入先に対するそのほかの電子支払を含みます。 SEPA 口座振替は、1 つの会社または個人から別の会社または個人に対する、ユーロでの特定のタイプの支払です。 このトピックは、口座振替の支払ファイルを設定して送信する方法も説明します。
+このトピックでは、ISO 20022 口座振替に関する一般情報を提供します。これは単一ユーロ支払地域 (SEPA) 口座振替および仕入先に対するそのほかの電子支払を含みます。 SEPA 口座振替は、1 つの会社または個人から別の会社または個人に対する、ユーロでの特定のタイプの支払です。 このトピックは、口座振替の支払ファイルを設定して送信する方法も説明します。
 
 ## <a name="what-is-a-credit-transfer-message"></a>口座振替メッセージとは何ですか。
 口座振替メッセージとは、開始側 (会社) が自身の口座から債権者に資金移動を送信する要求です。 口座振替メッセージの国/地域固有のおよび銀行固有の実装が数多くあります。 そのいくつかは 1 つの国/地域内で使用され、いくつかは標準となります。 1 つの確立されているグローバル基準は、口座振替などの ISO 20022 およびその起動開始メッセージです。 次の図は、選択された口座振替メッセージの関係と補償を示します。 
@@ -90,7 +90,7 @@ SEPA 口座振替は、個人または 1 つの会社から別の会社または
 <td>書式設定</td>
 <td>国/地域または銀行の条件に応じて送金情報の形式を選択します。
 <ul>
-<li><strong>Strd</strong> – 1 つの支払明細行が 1 つの請求書に対して決済されるときに構造化された形式を使用する場合は、このオプションを選択します。 このオプションは、フランス、ドイツ、またはオランダの国/地域固有のエクスポート形式では使用できません。</li>
+<li><strong>Strd</strong> – 1 つの支払明細行が 1 つの請求書に対して決済されるときに構造化された形式を使用する場合は、このオプションを選択します。 このオプションは、フランス、ドイツ、またはオランダの国/地域固有のエクスポート形式では&#39;使用できません。</li>
 <li><strong>Ustrd</strong> – 支払が複数の請求書に対して決済されるときに構造化されていない形式を使用する場合は、このオプションを選択します。 決済された請求書の請求書番号が送金情報として連結して使用されます。 ISO 20022 のガイドラインに準拠するために、構造化されていない送金情報は 140 文字に限定されます。</li>
 </ul></td>
 </tr>

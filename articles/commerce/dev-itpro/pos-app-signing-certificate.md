@@ -2,24 +2,20 @@
 title: コード署名証明書を使用して MPOS に署名する
 description: このトピックでは、コード署名証明書を使用して MPOS に署名する方法について説明します。
 author: mugunthanm
-ms.date: 10/21/2021
+ms.date: 05/11/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
 ms.custom: 28021
-ms.assetid: ''
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
-ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0bf4454029029438bf51d76e0edc6d64399083ae
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e45961cf1ddb385d914b700d03bc95d07de47b68
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782980"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740698"
 ---
 # <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>コード署名証明書を使用した MPOS appx の署名
 
@@ -135,7 +131,7 @@ Modern POS (MPOS) をインストールするには、信頼されたプロバ�
  
 - **優先** - 信頼される証明機関からコード署名証明書を取得します。
 
-- **優先** - 使用する自己署名のコード署名証明書を生成します。 通常、これはドメイン内で使用されます。
+- **非優先** - 使用する自己署名のコード署名証明書を生成します。 これは通常、ドメイン内の開発目的でのみ使用され、本番に対して推奨されません。 
 
 - **一時的なソリューションとして利用可能** - 更新された Contoso のコード署名証明書を使用します。 通常、これはテスト目的で使用されるため、運用環境に配置することはお勧めできません。
  

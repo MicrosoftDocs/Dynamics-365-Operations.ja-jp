@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 52b1a889a15cfe2e6e104e38b7d257f80762954f
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: dfada577ab97fdb9912c22d2399529f934b25d54
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323433"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695737"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Dynamics 365 Commerce と Microsoft Teams の統合を有効化する
 
@@ -50,7 +49,7 @@ Azure ポータルで Teams アプリケーションをテナントに登録す�
 
 Commerce 本部で Teams の統合を有効にするには、以下の手順に従います。
 
-1. **Retail と Commerce \> チャネル設定 \> Microsoft Teams 統合の構成** に移動します。
+1. **小売とコマース \> チャネル設定 \> Microsoft Teams 統合の構成** に移動します。
 1. アクション ウィンドウで、**編集** を選択します。
 1. **有効化 Microsoft Teams 統合** オプションを **はい** に設定します。
 1. **アプリケーション ID** フィールドで、Azure ポータルで Teams アプリケーションを登録した際に取得した **アプリケーション (クライアント) ID** 値を入力します。
@@ -65,7 +64,7 @@ Commerce 本部で Teams の統合を有効にするには、以下の手順に�
 
 Commerce 本部で Microsoft Teams の統合を無効にするには、以下の手順に従います。
 
-1. **Retail と Commerce \> チャネル設定 \> Microsoft Teams 統合の構成** に移動します。
+1. **小売とコマース \> チャネル設定 \> Microsoft Teams 統合の構成** に移動します。
 1. アクション ウィンドウで、**編集** を選択します。
 3. **有効化 Microsoft Teams 統合** オプションを **いいえ** に設定します。
 4. **アプリケーションID** フィールドと **アプリケーション キー** フィールドから値をクリアします。

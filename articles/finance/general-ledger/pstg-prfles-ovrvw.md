@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerSystemSetup, CustPosting, VendPosting, InventPosting, AssetPosting, ProjPosting, AssetLeasePostingAccounts, ProjCategory, ITMCostTypeTable, ProdGroup, WrkCtrTable, WrkCtrResourceGroup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9ad33d9a34bc449b81ec6d02a78b9ca1653aca5
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: 4c29597155e525638e7c2ded7d641017f2189c49
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018382"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734579"
 ---
 # <a name="posting-profiles-overview"></a>転記プロファイルの概要
 
-Finance and Operations のアプリでは、*転記プロファイル* という用語は、補助元帳勘定を主勘定に変換する方法を制御する構成を記述するために使用され、転記プロファイルは一般会計に転記されるトランザクションで使用できます。 たとえば、転記プロファイルは請求書の転記時に顧客がどのように売掛金勘定の主勘定に変換するかを制御します。
+財務と運用アプリでは、*転記プロファイル* という用語は、補助元帳勘定を主勘定に変換する方法を制御する構成を記述するために使用され、転記プロファイルは一般会計に転記されるトランザクションで使用できます。 たとえば、転記プロファイルは請求書の転記時に顧客がどのように売掛金勘定の主勘定に変換するかを制御します。
 
 一部のモジュールと機能には、名前に "転記プロファイル" という語を含むページがあります (**顧客転記プロファイル** や **仕入先転記プロファイル** など)。 また、一部のモジュールには、補助元帳から生成されるトランザクションの元帳転記を構成する複数のオプションがあります。 たとえば、**生産管理** モジュールでは、生産グループ、リソース、またはリソース グループ別に転記を設定できます。
 
@@ -34,7 +34,7 @@ Finance and Operations のアプリでは、*転記プロファイル* という
 
 ## <a name="posting-types"></a>転記タイプ
 
-Finance and Operations アプリでは、転記タイプを使用して、借方または貸方の一般カテゴリーを定義します。 このカテゴリーは、一般会計の主勘定からは独立しています。 一般会計の借方または貸方にはいくつかの転記タイプがあります。
+財務と運用アプリでは、転記タイプを使用して、借方または貸方の一般カテゴリーを定義します。 このカテゴリーは、一般会計の主勘定からは独立しています。 一般会計の借方または貸方にはいくつかの転記タイプがあります。
 
 1 つの伝票には 1 つ以上の転記タイプを設定できます。 たとえば、勘定および相手勘定が **元帳** に設定されている一般仕訳帳を介して転記されるトランザクションは、借方と貸方の両方に対して **仕訳元帳** の転記タイプがあります 。 一方、仕入先請求書には複数の転記タイプがあります。 これらの転記タイプには、仕入先残高の 1 行と相殺項目の追加の明細行 (**仕訳元帳** など) が含まれます。
 

@@ -1,26 +1,26 @@
 ---
 title: グローバル源泉徴収税の設定
 description: このトピックでは、販売や購入に向けたグローバル源泉徴収税を設定する手順を説明します。
-author: roschlom
+author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d68722d7e045f407ed20ae0728734cc70119a67d5d1b644155123219a8af14fd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c7e9e94df4c5c6a4c292064f2f8e8e4f9e635ba7
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761257"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727233"
 ---
 # <a name="set-up-global-withholding-tax"></a>グローバル源泉徴収税の設定
 

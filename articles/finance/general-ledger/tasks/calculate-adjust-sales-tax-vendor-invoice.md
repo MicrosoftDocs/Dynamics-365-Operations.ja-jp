@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, VendTableLookup, TaxTmpWorkTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 648d94e895a4941f5f3148134130b3ffa693a9d57e0bb4e236f5d5fb33aca48f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d4d6a23f6f58906730c5ce00c5fe06885aaa6da
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779815"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734692"
 ---
-# <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>仕入先請求書の売上税の計算と調整
+# <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>仕入先請求書の消費税の計算と調整
 
 [!include [banner](../../includes/banner.md)]
 
 このトピックでは、仕入先請求書の売上税を調整する方法について説明します。 オリジナルの元伝票が計算と異なる税額を表示している場合、転記前にこれらの金額を調整できます。 このタスクでは、USMF というデモ会社を使用します。
 
-1. ナビゲーション ウィンドウで、**モジュール > 買掛金勘定 > 請求書 > 請求書仕訳帳** の順に移動します。
+1. **買掛金勘定 > 請求書 > 請求仕訳帳** の順に移動します。
 2. **新規** を選択します。
 3. 新しい行の **名前** フィールドで、ドロップダウン メニューのオプションを選択します。
 4. アクション ウィンドウで、**明細行** を選択します。

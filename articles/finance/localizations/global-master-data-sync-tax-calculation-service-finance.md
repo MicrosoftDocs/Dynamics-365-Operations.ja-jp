@@ -1,6 +1,6 @@
 ---
-title: 税計算サービスから Dynamics 365 Finance に税務設定を同期する
-description: このトピックでは、税計算サービスからMicrosoft Dynamics 365 Finance に税設定マスターデータを同期する方法について説明します。
+title: 税計算サービスから Dynamics 365 Finance への税設定の同期
+description: このトピックでは、税計算サービスから Microsoft Dynamics 365 Finance に税設定マスター データを同期する方法について説明します。
 author: wangchen
 ms.date: 01/05/2022
 ms.topic: article
@@ -9,24 +9,23 @@ ms.technology: ''
 ms.search.form: TaxIntegration, TaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: intro-internal
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d5d994934014a146f825431cb53dfbef8fe20bc8
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 3a9c11a6f5946d56b9e58a02c37f18adec155661
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7965142"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687789"
 ---
-# <a name="sync-the-tax-setup-from-the-tax-calculation-service-to-dynamics-365-finance"></a>税計算サービスから Dynamics 365 Finance に税務設定を同期する
+# <a name="sync-the-tax-setup-from-the-tax-calculation-service-to-dynamics-365-finance"></a>税計算サービスから Dynamics 365 Finance への税設定の同期
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、税計算サービスからMicrosoft Dynamics 365 Finance に税設定マスターデータを同期する方法について説明します。
+このトピックでは、税計算サービスから Microsoft Dynamics 365 Finance に税設定マスター データを同期する方法について説明します。
 
 [税の計算を始める](global-get-started-with-tax-calculation-service.md) で必要な設定手順を完了すると、以下の税設定データが税計算サービスから Finance に自動的に同期されます。
 
