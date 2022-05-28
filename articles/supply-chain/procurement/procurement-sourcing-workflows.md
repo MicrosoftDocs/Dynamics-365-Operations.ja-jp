@@ -1,7 +1,7 @@
 ---
 title: 調達ワークフロー
 description: 組織によっては、取引を入力した個人以外のユーザーが購買要求と発注書を承認することを要求している場合があります。 承認プロセスを設定するには、ワークフローを作成できます。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2074
 ms.assetid: e54a1d59-b9fb-421b-821d-01f32878aa9b
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a819093d9ee6f999e637281e54905968fe361566
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ebfd96690eea762d0797db1b485544d957d17ce0
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575539"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671929"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>調達ワークフロー
 

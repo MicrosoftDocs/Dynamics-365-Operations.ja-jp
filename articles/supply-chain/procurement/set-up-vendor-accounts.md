@@ -1,7 +1,7 @@
 ---
 title: 仕入れ先の設定
 description: このトピックでは、新しい仕入先を作成する際に指定する必要がある情報のタイプを説明します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9cbfd3a3c1afd794814bbbae07e1dc31eb9f181
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565474"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676977"
 ---
 # <a name="set-up-vendor-accounts"></a>仕入れ先の設定
 
@@ -63,7 +63,7 @@ ms.locfileid: "7565474"
 
 連絡先がドキュメントで参照される連絡担当者レコードは削除できません。 代わりに、連絡先を無効にできます。  
 
-Microsoft 365 の個人連絡先に仕入先の連絡先を追加できます。 ただし、最初に Microsoft Exchange Server の同期と Microsoft Outlook の設定ウィザードの両方で、Supply Chain Management と Microsoft 365 間の同期を設定する必要があります。
+Microsoft 365 の個人連絡先に仕入先の連絡先を追加できます。 ただし、最初に Microsoft Exchange Server の同期と Microsoft Outlook セットアップ ウィザードの両方で、Supply Chain Management と Microsoft 365 間の同期を設定する必要があります。
 
 ## <a name="vendors-in-different-legal-entities"></a>異なる法人の仕入先
 仕入先が組織の一つの法人として登録される場合、他の法人は同じ仕入先を登録する必要があります。**別の法人の仕入先の追加** ページを使用して、別の法人と取引がある仕入先をコンフィギュレーションします。 仕入先グループ、通貨、および選択された法人に対する仕入先の保留状態を選択する必要があります。  

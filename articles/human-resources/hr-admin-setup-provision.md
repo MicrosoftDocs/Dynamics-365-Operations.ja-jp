@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625362"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710866"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -144,7 +143,7 @@ Human Resources を配置する Power Apps 環境を決定する際には、次�
 6. 人事データを Power Apps 環境に統合するデュアル書き込み機能は、その環境で **Dynamics 365 アプリを有効にする** オプションが選択されている場合にのみ使用できます。 デュアル書き込みの詳細については、[デュアル書き込みのホームページ](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)を参照してください。
 
     > [!NOTE]
-    > **Dynamics 365アプリケーションを有効にする** オプションは、Power Apps 環境の作成時に選択する必要があります。 プロビジョニング時にこのオプションが選択されていない場合、デュアル書き込みを使用して Dynamics 365 Human Resources 環境と Power Apps 環境の間でデータを統合したり、Dynamics 365 Sales や Field Service などのDynamics 365 アプリを環境にインストールしたりすることができません。 このオプションは、元に戻すことはできません。 詳細については、Power Platform のドキュメント サイト、 [新しい環境を構築する際の重要な注意点](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment)を参照してください。
+    > **Dynamics 365アプリケーションを有効にする** オプションは、Power Apps 環境の作成時に選択する必要があります。 プロビジョニング時にこのオプションが選択されていない場合、デュアル書き込みを使用して Dynamics 365 Human Resources 環境と Power Apps 環境の間でデータを統合したり、Dynamics 365 Sales や Field Service などのDynamics 365 アプリを環境にインストールしたりすることができません。 このオプションは、元に戻すことはできません。 詳細については、Power Platform のドキュメント サイト、 [新しい環境を構築する際の重要な注意点](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment)を参照してください。
 
 7. 使用する正しい環境の決定後、プロビジョニング プロセスを続行できます。 
 

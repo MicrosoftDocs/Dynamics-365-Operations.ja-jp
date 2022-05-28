@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649104"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695391"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>拡張機能を使用した税統合のデータ フィールドの追加
 
@@ -383,7 +382,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 
 前の手順を完了したら、プロジェクトをビルドして変更を検証できます。
 
-1. 財務で、**買掛金管理** に移動し、**&debug=vs%2CconfirmExit&** を URL に追加します。 たとえば、https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&。 最後の **&** は必須です。
+1. 財務で、**買掛金管理** に移動し、**&debug=vs%2CconfirmExit&** を URL に追加します。 たとえば、`https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`。 最後の **&** は必須です。
 2. **発注書** ページを開いて、**新規** を選択して発注書を作成します。
 3. カスタマイズされたフィールドの値を設定し、**売上税** を選択します。 接頭語が付けられているトラブルシューティング ファイルである **TaxServiceTroubleshootingLog** は自動的にダウンロードされます。 このファイルには、税務計算サービスに転記されたトランザクション情報が含まれます。 
 4. カスタマイズされた追加フィールドが **税計算入力 JSON** セクションに存在し、値が正しいことを確認します。 値の変更が修正しない場合は、このドキュメントの手順をダブルクリックします。

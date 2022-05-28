@@ -1,7 +1,7 @@
 ---
 title: 梱包とストレージへのさまざまな分析コードの設定
 description: このトピックでは、指定した各分析コードを使用するプロセス (梱包、ストレージ、または入れ子になった梱包) を指定する方法を示します。
-author: mirzaab
+author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,16 @@ ms.technology: ''
 ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0e8ce576f21f1f5ea5f3acb7d43bbe68826e6f39
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 090a6f653b50d8f22a2f34354172f129624813f1
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580075"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687648"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>梱包とストレージへのさまざまな分析コードの設定
 

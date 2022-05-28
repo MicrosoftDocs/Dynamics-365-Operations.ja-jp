@@ -2,7 +2,7 @@
 title: 生産現場の実行インターフェイスのカスタマイズ
 description: このトピックでは、現在のフォームを拡張する方法、または生産現場実行インターフェイス用の新しいフォームおよびボタンを作成する方法について説明します。
 author: johanhoffmann
-ms.date: 11/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.search.form: ''
 ms.technology: ''
@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
-ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 67fb381cbef6f1673afcaa834666b4a859bdf4e6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.dyn365.ops.version: 10.0.25
+ms.openlocfilehash: ad5037442f27a5068b38613655591f1298808eac
+ms.sourcegitcommit: 28537b32dbcdefb1359a90adc6781b73a2fd195e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066549"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712946"
 ---
 # <a name="customize-the-production-floor-execution-interface"></a>生産現場の実行インターフェイスのカスタマイズ
 
@@ -60,7 +60,7 @@ ms.locfileid: "8066549"
 1. 新しいメニュー項目をリストに追加して `getMainMenuItemsList` メソッドを拡張する `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension` という名前の拡張機能を作成します。 次のコードは、例を示しています。
 
     ```xpp
-    [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
+    [ExtensionOf(classStr(JmgProductionFloorExecutionMenuItemProvider))]
     public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
         static public List getMainMenuItemsList()
         {
@@ -142,6 +142,79 @@ formRun.setNumpadController(numpadController);
 numpadController.setValueToNumpad(333.56);
 formRun.run();
 ```
+
+## <a name="add-a-date-and-time-controls-to-a-form-or-dialog"></a>フォームまたはダイアログへの日時のコントロールの追加
+
+ここでは、フォームまたはダイアログに日時のコントロールを追加する方法を説明します。 作業員は、タッチ対応の日時のコントロールを使用して日時を指定できます。 次のスクリーンショットは、コントロールが通常どのようにページに表示されるかを示しています。 時間コントロールでは、12 時間バージョンと 24 時間バージョンの両方が使用されます。表示されるバージョンは、インターフェイスの実行に使用するユーザー アカウントの基本設定に従います。
+
+![日付コントロールの例です。](media/pfe-customize-date-control.png "日付コントロールの例")
+
+![12 時制を使用した時間コントロールの例です。](media/pfe-customize-time-control-12h.png "12 時制を使用した時間コントロールの例")
+
+![24 時制を使用した時間コントロールの例です。](media/pfe-customize-time-control-24h.png "24 時制を使用した時間コントロールの例")
+
+次の手順では、日時のコントロールをフォームに追加する方法の例を説明します。
+
+1. フォームに含まれる必要がある日時コントロールごとに、フォームにコントローラを追加します。 (コントローラー数は、フォーム内の日時コントロールの数と同じである必要があります。)
+
+    ```xpp
+    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
+    private JmgProductionFloorExecutionDateTimeController  dateToController; 
+    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
+    private JmgProductionFloorExecutionDateTimeController  timeToController;
+    ```
+
+1. 必要な変数 (タイプ `utcdatetime`) を宣言します。
+
+    ```xpp
+    private utcdatetime fromDateTime;
+    private utcdatetime toDateTime;
+    ```
+
+1. 日時コントローラーで datetime を更新するメソッドを作成します。 次の例では、その作成したメソッドを 1 つ表示しています。
+
+    ```xpp
+    private void setFromDateTime(utcdatetime _value)
+        {
+            fromDateTime = _value;
+        }
+    ```
+
+1. 各 datetime コントローラーの動作を設定し、各コントローラーをフォーム パーツに接続します。 次の例では、開始日および開始時刻のコントロールに対してデータを設定する方法について説明しています。 日時のコントロールに対する同様のコードを追加できます (表示されていません)。
+
+    ```xpp
+    /// <summary>
+    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
+    /// </summary>
+    private void initializeDateControlControllers()
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        timeFromController = new JmgProductionFloorExecutionDateTimeController();
+        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        timeFromController.parmDateTimeValue(fromDateTime);
+        
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
+        TimeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
+        
+        ...
+
+    }
+    ```
+
+    日付コントロールが必要な場合は、時間コントロールの設定を省略し、次の例で示すように日付コントロールを設定する必要があります。
+
+    ```xpp
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    }
+    ```
 
 ## <a name="additional-resources"></a>追加リソース
 

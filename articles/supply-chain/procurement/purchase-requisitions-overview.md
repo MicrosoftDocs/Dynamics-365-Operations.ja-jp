@@ -1,7 +1,7 @@
 ---
 title: 購買要求の概要
 description: このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: overview
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acd0deebe79e29bd1beb32ea21cd179f5bf12c43
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e6524229800233d1bfdf54a11afc122990eed9d3
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982905"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671171"
 ---
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
@@ -67,7 +67,7 @@ ms.locfileid: "7982905"
 <tr class="odd">
 <td>ドラフト</td>
 <td>ドラフト</td>
-<td>購買要求と購買要求明細行は作成済ですが、確認を受けるための送信は行われていません。 <strong>ドラフト</strong> のステータスを持つ購買依頼と購買依頼行は変更することができます。 購買依頼または購買依頼行は、リコールされたがレビュー用に再送信されていない場合は、<strong>ドラフト</strong>のステータスも持っています。 <strong>注意:</strong> 伝票レベルで購買要求を送信または呼び出すことができます。 ただし、購買要求明細行を一行のみ送信または取り消すことはできません。</td>
+<td>購買要求と購買要求明細行は作成済ですが、確認を受けるための送信は&#39;行われていません。 <strong>ドラフト</strong> のステータスを持つ購買依頼と購買依頼行は変更することができます。 購買依頼または購買依頼行は、リコールされたがレビュー用に再送信&#39;されていない場合は、<strong>ドラフト</strong>のステータスも持っています。 <strong>注意:</strong> 伝票レベルで購買要求を送信または呼び出すことができます。 ただし、購買要求明細行を一行のみ送信または取り消すことは&#39;できません。</td>
 </tr>
 <tr class="even">
 <td>確認中</td>
@@ -97,7 +97,7 @@ ms.locfileid: "7982905"
 <td>すべての購買要求明細行で確認プロセスが完了しており、購買要求の確認ステップはこれ以上ありません。
 <ul>
 <li><strong>承認済</strong> – 購買要求明細行は確認プロセスを完了し、承認済です。</li>
-<li><strong>取消済</strong> – 購買要求明細行は承認されましたが、不要になったためキャンセルされました。 承認済の購買要求のみをキャンセルできます。</li>
+<li><strong>取消済</strong> – 購買要求明細行は承認されましたが、不要になった&#39;ためキャンセルされました。 承認済の購買要求のみをキャンセルできます。</li>
 <li><strong>クローズ</strong> – 購買要求明細行が承認され、要求目的に応じてドキュメントが生成されました。
 <ul>
 <li>要求目的が消費の場合、発注書が購買要求明細行に対して生成されました。</li>
@@ -123,7 +123,7 @@ ms.locfileid: "7982905"
 <li>要求目的が消費の場合、発注書が購買要求明細行に対して生成されました。</li>
 <li>要求目的が補充の場合、1 つ以上の処理のドキュメントが生成されました。</li>
 </ul></li>
-<li><strong>取消済</strong> – 購買要求明細行は承認されましたが、不要になったためキャンセルされました。 承認済の購買要求のみをキャンセルできます。</li>
+<li><strong>取消済</strong> – 購買要求明細行は承認されましたが、不要になったため&#39;キャンセルされました。 承認済の購買要求のみをキャンセルできます。</li>
 </ul>
 <strong>注記:</strong> 終了済の購買要求明細行の品目が不要になった場合は、その購買要求明細行に対して生成された処理のドキュメントの明細行をキャンセルする必要があります。</td>
 </tr>

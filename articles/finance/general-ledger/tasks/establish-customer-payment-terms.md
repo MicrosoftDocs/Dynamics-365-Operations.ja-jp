@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 12c26cfedca3f3b0eec1a3b068184522f87ff8d103a41b81a0775bf5a35d0e03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766964"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716974"
 ---
 # <a name="establish-customer-payment-terms"></a>顧客支払条件の設定
 
@@ -26,7 +26,7 @@ ms.locfileid: "6766964"
 
 この手順では、現金割引と期日の設定を定義します。 このタスク ガイドでは、デモ会社 USMF を使用します。
 
-1. **ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 支払設定 > 支払期日** の順に移動します。 **支払条件** の設定は、**売掛金勘定** または **買掛金勘定** で共有されます。 モジュールでそれを定義した場合、他のモジュールでも使用できます。 このタスク ガイドでは、**売掛金勘定** に基づいてすべての支払条件を設定します。
+1. **ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 支払設定 > 支払期日** の順に移動します。 **支払条件** の設定は、**売掛金勘定** または **買掛金勘定** で共有されます。 モジュールでそれを定義した場合、他のモジュールでも使用できます。 このタスク ガイドでは、**売掛金勘定** のすべての支払条件を設定します。
 2. **新規** をクリックします。 支払条件が、特定の曜日 (火曜日、月曜日など) または月の特定の日付 (5 日目、10 日目など) と規定されている場合、支払期日を作成します。 
 3. **支払期日** フィールドに ID を入力します。
 4. **説明** フィールドに、支払期日の説明を入力します。

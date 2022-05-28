@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c07ca28b45335de5e327305b7426d1b6de8ce5c7
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: b7bb38a415524290d1636eda1f379f3cdcf7e593
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323500"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688914"
 ---
 # <a name="synchronize-task-management-between-microsoft-teams-and-dynamics-365-commerce-pos"></a>Microsoft Teams と Dynamics 365 Commerce POS 間でタスク管理を同期させる
 
@@ -58,7 +57,7 @@ Commerce Headquarters でタスク管理用の POS と Microsoft Teams アプリ
 > [!NOTE]
 > タスク管理を Microsoft Teams に統合する前に、[Dynamics 365 Commerce および Microsoft Teams 統合](enable-teams-integration.md)が有効になっている必要があります。 
 
-1. **Commerce \> タスク管理 \> Microsoft Teams とのタスク統合** に移動します。
+1. **小売とコマース \> タスク管理 \> Microsoft Teams とのタスク統合** に移動します。
 1. アクション ウィンドウで、**編集** を選択します。
 1. **タスク管理統合の有効化** オプションを **はい** に設定します。
 1. アクション ウィンドウで、**保存** を選択します。

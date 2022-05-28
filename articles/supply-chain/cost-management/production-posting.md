@@ -1,7 +1,7 @@
 ---
 title: 生産の転記
 description: この記事は、生産プロセスの、異なるタイプの転記について説明します。
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 54591
 ms.assetid: 0917fe64-f643-46ae-98ff-5013b266a067
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee3eaf11f5d77861e7abd29bb428f67b57a3e0e3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 41c5026f862f64fb0de86dbae23316593d058be9
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565954"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672237"
 ---
 # <a name="production-posting"></a>生産の転記
 

@@ -1,6 +1,6 @@
 ---
 title: Finance との統合のコンフィギュレーション
-description: このトピックでは、Dynamics 365 Human Resources と Dynamics 365 Finance 間の統合について説明します。
+description: このトピックでは、Dynamics 365 Human Resources と Dynamics 365 Finance の統合について説明します。
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a2c5dd0ce97f33f5f8b65c801fbc15dfc65e8d4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3880601b40ce8ec544a1976f7f0ac7391dab32e1
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065019"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687535"
 ---
 # <a name="configure-integration-with-finance"></a>Finance との統合のコンフィギュレーション
 
@@ -31,7 +30,7 @@ ms.locfileid: "8065019"
 
 
 
-Dynamics 365 Human Resources と Dynamics 365 Finance を統合するには、[データ インテグレーター](/powerapps/administrator/data-integrator)の 「Human Resources から Finance へ」 のテンプレートを使用します。 「Human Resources から Finance へ」 のテンプレートでは、職務、職位、および作業者のデータフローを使用できます。 このテンプレートを使用すると、データを Human Resources から Finance に転送できますが、Finance から Human Resources にデータを渡すことはできません。
+Dynamics 365 Human Resources と Dynamics 365 Finance を統合するには、[データ インテグレーター](/powerapps/administrator/data-integrator) の Human Resources から Finance へのテンプレートを使用します。 「Human Resources から Finance へ」 のテンプレートでは、職務、職位、および作業者のデータフローを使用できます。 このテンプレートを使用すると、データを Human Resources から Finance に転送できますが、Finance から Human Resources にデータを渡すことはできません。
 
 ![Human Resources から Finance への統合フロー。](./media/hr-admin-integration-finance-flow.png)
 
@@ -47,7 +46,7 @@ Human Resources から Finance へのソリューションは、次のタイプ�
 統合ソリューションには、次のバージョンの Human Resources および Finance が必要です。 
 
 - Dataverse の Dynamics 365 Human Resources
-- Dynamics 365 Finance バージョン 7.2 およびそれ以降
+- Dynamics 365 Finance バージョン 7.2 以降
 
 ## <a name="template-and-tasks"></a>テンプレートおよびタスク
 

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 206c7f590b495278b7899271db0e83b3a4da3edc
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 3cf83421d5385e3c95dfda6db35edfb8eb4b9336
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641433"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695763"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-5-2021"></a>Dynamics 365 Human Resources の新機能および変更された機能 2021 年 10 月 5 日
 
@@ -42,7 +41,7 @@ ms.locfileid: "7641433"
 
 | フィーチャー | リリース計画 | ドキュメント |
 |---|---|---|
-| プラットフォーム 更新プログラム 10.0.21 (45) | -- | [Finance and Operations アプリのバージョン 10.0.21 のプラットフォーム更新プログラム (2021 年 10 月)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
+| プラットフォーム 更新プログラム 10.0.21 (45) | -- | [財務と運用アプリのバージョン 10.0.21 のプラットフォーム更新プログラム (2021 年 10 月)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
 
 
 ### <a name="bug-fixes"></a>バグ修正
@@ -87,7 +86,7 @@ ms.locfileid: "7641433"
 
 | フィーチャー | 詳細 |
 |---|---|
-| プラットフォーム 更新プログラム 10.0.22 (46) | プラットフォーム更新プログラム 10.0.22 のロールアウトは、2021 年 11 月 1 日のサービス リリースで開始する予定です。 詳細については、[Finance and Operations アプリのバージョン 10.0.22 のプラットフォーム更新プログラム (2021 年 11 月) ](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22) を参照してください。 |
+| プラットフォーム 更新プログラム 10.0.22 (46) | プラットフォーム更新プログラム 10.0.22 のロールアウトは、2021 年 11 月 1 日のサービス リリースで開始する予定です。 詳細については、[財務と運用アプリのバージョン 10.0.22 のプラットフォーム更新プログラム (2021 年 11 月)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22) を参照してください。 |
 
 
 

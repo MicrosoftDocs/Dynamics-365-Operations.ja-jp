@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d37b1a9869cc130786d0e8fde68184e04c881bad1f64c86943174213025db82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1ec3653085aed278eb5d13d47f345c713cd39f1f
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765671"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722155"
 ---
 # <a name="process-ledger-allocation-journal"></a>元帳配賦仕訳帳の処理
 
@@ -26,7 +26,7 @@ ms.locfileid: "6765671"
 
 このトピックでは、配賦要求の処理方法について説明します。 [配賦要求の処理] ページを使用して、[総勘定元帳] に転記する前に確認および承認したり、[総勘定元帳] に直接転記することが可能な配賦仕訳帳を作成します。 配賦仕訳帳を作成するためには、少なくとも 1 つの有効な [元帳配賦ルール] が必要です。 このタスクでは、USMF というデモ会社を使用します。
 
-1. ナビゲーション ウィンドウで、**モジュール > 一般会計 > 配賦 > 配賦要求の処理** の順に移動します。
+1. ナビゲーション ウィンドウで、**一般会計 > 配賦 > 配賦要求の処理** の順に移動します。
 2. **ルール** フィールドで、ドロップダウン メニューから目的のレコードを選択します。
 3. **現在の日付** フィールドに日付を入力します。
 

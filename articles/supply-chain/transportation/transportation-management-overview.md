@@ -1,7 +1,7 @@
 ---
 title: 輸送管理の概要
 description: このトピックでは、Supply Chain Management の配送管理機能の概要が示されます。
-author: Henrikan
+author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: overview
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68082a736fd45c6701324a1492087c1b16bf0566
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6181d63c9ab447c4892948fe1f3ee41d2680b78d
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985448"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671649"
 ---
 # <a name="transportation-management-overview"></a>輸送管理の概要
 
@@ -49,17 +49,17 @@ ms.locfileid: "7985448"
 <td>入庫または出庫輸送に輸送管理を使用します。</td>
 </tr>
 <tr class="even">
-<td>会社の固有フリートを、出荷または集配のために使用でき、配送料が顧客に渡されます。</td>
-<td>出荷プロセスで、配送料を確認し、顧客に渡すために輸送管理を使用できます。 ただし、配送業者の請求書の調整プロセスは必要ではありません。</td>
+<td>会社&#39;の固有フリートを、出荷または集配のために使用でき、配送料が顧客に渡されます。</td>
+<td>出荷プロセスで、配送料を確認し、顧客に渡すために輸送管理を使用できます。 ただし、配送業者の請求書の調整プロセスは必要では&#39;ありません。</td>
 </tr>
 <tr class="odd">
-<td>会社の固有フリートは、出荷または集配のために使用できますが、製品の価格に配送が含まれるため、配送料は顧客には渡されません。</td>
-<td>多くの輸送管理機能は必要ではありません。 ただし、配送率を確認し、それに応じて販売価格を調整する場合、配送管理を使用できます。</td>
+<td>会社&#39;の固有フリートは、出荷または集配のために使用できますが、製品の価格に配送が含まれるため、配送料は顧客には&#39;渡されません。</td>
+<td>多くの輸送管理機能は必要では&#39;ありません。 ただし、配送率を確認し、それに応じて販売価格を調整する場合、配送管理を使用できます。</td>
 </tr>
 <tr class="even">
 <td>同じ会社の別の法人によって物流サービスが提供されます。</td>
 <td><ul>
-<li>その他の配送業者など、他の法人による処理によって輸送管理を使用できます。 法人間の経済取引を自動化することはできません。 そのため、これらのトランザクションを手動で処理する必要があります (発注書の作成など)。</li>
+<li>その他の配送業者など、他の法人による処理によって輸送管理を使用できます。 法人間の経済取引を自動化することは&#39;できません。 そのため、これらのトランザクションを手動で処理する必要があります (発注書の作成など)。</li>
 <li>物流サービスを提供する法人の場合でも、配送率を決定するために輸送管理を使用できます。</li>
 </ul></td>
 </tr>

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14f76e06f7265a4dc1837a66171d3db13bc2e580
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982512"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694371"
 ---
 # <a name="sales-agreements-overview"></a>販売契約書の概要
 
@@ -36,7 +36,8 @@ ms.locfileid: "7982512"
 
 **リリース注文** アクションを使用して、販売契約書の販売注文を直接作成できます。 また、注文を取る場合の有効な販売契約書を選択できます (この項目の「注文プロセスでの販売契約書の適用」セクションを参照)。  
 
-> [注記!] 以前のバージョンでは、販売契約書は販売一括注文と呼ばれていました。
+> [!NOTE] 
+> 以前のバージョンでは、販売契約書は販売一括注文と呼ばれていました。
 
 ## <a name="commitment-types"></a>確約のタイプ
 販売契約書の各行は、物を販売する確約を示します。 一般に、確約には 2 つのカテゴリがあります:

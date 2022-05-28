@@ -1,7 +1,7 @@
 ---
 title: 移動平均原価価格
 description: 在庫原価計算プロセスでは、品目の品目モデル グループで選択した在庫評価方法に基づいて、払出トランザクションを受入トランザクションへと決済します。 ただし、在庫決算を実行する前に、システムは、払出トランザクションの転記時に通常使用される移動平均原価価格を計算します。
-author: AndersGirke
+author: JennySong-SH
 ms.date: 02/02/2022
 ms.topic: article
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 79003
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 871b3ffce45848f95d132eff3fd327295bc5084c
-ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
+ms.openlocfilehash: 3d324324312ce9e47b07de8e3de952b8d7c53647
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092192"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672181"
 ---
 # <a name="running-average-cost-price"></a>移動平均原価価格
 

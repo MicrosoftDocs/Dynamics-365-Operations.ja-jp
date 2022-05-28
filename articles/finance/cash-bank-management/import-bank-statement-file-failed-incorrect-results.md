@@ -1,6 +1,6 @@
 ---
 title: 口座取引明細書ファイルのインポートのトラブルシューティング
-description: 銀行からの口座取引明細書ファイルが、Microsoft Dynamics 365 Finance がサポートするレイアウトと一致することが重要です。 口座取引明細書の基準が厳しいために、ほとんどの統合が正しく動作します。 ただし、明細書ファイルがインポートできない場合または不正確な結果が含まれている場合があります。 通常、これらの問題は口座取引明細書ファイルの小さな差異によって引き起こされます。 この記事は、これらの差異を修正し問題を解決する方法を説明します。
+description: この記事では、口座取引明細書ファイルのわずかな差異によって発生する問題を解決する方法について説明します。
 author: panolte
 ms.date: 03/29/2021
 ms.topic: article
@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BankStatementFormat
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc5b9cf3449b48767a27891a019f8fe8df2a900559898e3cb1849d25bec7c987
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 422b2df6c4de3a948b0e62bfb70f99b12e04a8f9
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757124"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711176"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>口座取引明細書ファイルのインポートのトラブルシューティング
 
@@ -39,7 +39,7 @@ ms.locfileid: "6757124"
 銀行ファイル レイアウト定義を Finance のインポート定義と比較し、フィールドおよび要素の差異を確認します。 口座取引明細書ファイルを関連する Finance ファイルのサンプルと比較します。 ISO20022 ファイルでは、差異が一目で分かります。
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>インポートされた口座取引明細書のタイム ゾーンの違い
-インポート ファイルの日付と時刻の値は、Finance and Operations で表示される日付と時刻の値とは異なる場合があります。 この不一致を回避するには、**データ ソースの構成** ページでタイム ゾーンの設定を入力します。 タイム ゾーン参照の入力方法の詳細については、[詳細な銀行調整のインポート処理の設定](set-up-advanced-bank-reconciliation-import-process.md) を参照してください。
+インポート ファイルの日付と時刻の値は、 Finance and Operations で表示される日付と時刻の値とは異なる場合があります。 この不一致を回避するには、**データ ソースの構成** ページでタイム ゾーンの設定を入力します。 タイム ゾーン参照の入力方法の詳細については、[詳細な銀行調整のインポート処理の設定](set-up-advanced-bank-reconciliation-import-process.md) を参照してください。
 
 ## <a name="transformations"></a>変換
 通常、変更は次の 3 つの変換のいずれかで行われます。 各変換は、指定された標準形式で書き込まれます。

@@ -1,7 +1,7 @@
 ---
 title: RFQ を使用する要求の作成
 description: このトピックでは、価格および仕入先情報を RFQ プロセスから購買要求へ追加する方法について説明します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqLi
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f88d50c24e84b94128aa3fd567562f3240832910
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 78092205c1a1d149b4dc202e085871d1fe46c4ad
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578059"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675124"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>RFQ を使用する要求の作成
 

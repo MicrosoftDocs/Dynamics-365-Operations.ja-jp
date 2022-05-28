@@ -1,6 +1,6 @@
 ---
 title: クロス レートの指定
-description: このトピックでは、Microsoft Dynamics 365 Finance のクロス レートに関する情報を提供します。
+description: このトピックでは、Microsoft Dynamics 365 Finance のクロス レートに関する情報について説明します。
 author: abruer
 ms.date: 05/16/2018
 ms.topic: article
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c46ac3324a985810ede61072190014538d0b7ed36f7eedfc387468619cc88cb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed1db707cf6aed7c9def76ebbbdef7032b8776b6
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737020"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735293"
 ---
 # <a name="specify-the-cross-rate"></a>クロス レートの指定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、クロス レートの目的、および請求書で支払決済するときのクロス レート指定方法について説明します。 次の基準がすべて適用される場合、クロス レートを使用します。 
+このトピックでは、クロス レートの目的、および請求書で支払決済するときのクロス レート指定方法について説明します。 次の基準が適用される場合、クロス レートを使用します。 
 -   請求書で支払を決済する。 
 -   支払の明細行と請求書の明細行が異なる通貨を使用する。 
 -   いずれの通貨も会計通貨ではない。 

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fadad34be31f6522654bc3af47a4f71695dcc5fea7f0b3e760ff26d79d88eb4c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6734069b1448999c62a8c538f97d786fc10995e5
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722514"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8685745"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2021 年 4 月 19 日)
 
@@ -42,7 +41,7 @@ ms.locfileid: "6722514"
 
 | 機能 | リリース計画 | ドキュメント |
 | --- | --- | --- |
-| プラットフォーム 更新プログラム 10.0.17 (41) | -- | [Finance and Operations アプリ バージョン 10.0.17 のプラットフォーム更新プログラム (2021 年 4 月)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| プラットフォーム 更新プログラム 10.0.17 (41) | -- | [財務と運用アプリのバージョン 10.0.17 (2021 年 4 月) のプラットフォーム更新プログラム](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | 給付金管理フォームでのカスタム フィールドのサポート | [給付金管理でのカスタム フィールドのサポート](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [福利厚生の管理の概要](hr-benefits-management-overview.md)|
 
 ### <a name="bug-fixes"></a>バグ修正
@@ -78,7 +77,7 @@ ms.locfileid: "6722514"
 | 機能 | 細目 |
 | --- | --- |
 | マネージャーが従業員に対して入力したスキルは、ワークフローで自動承認できます | 間もなく公開予定。 |
-| プラットフォーム 更新プログラム 10.0.18 (42) | プラットフォーム更新プログラム10.0.18 は、2021 年 5 月 17 日のサービス リリースで、展開を開始する予定です。 詳細については、[Finance and Operations アプリのバージョン 10.0.18 のプラットフォーム更新プログラム (2021 年 5 月)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) を参照してください。 |
+| プラットフォーム 更新プログラム 10.0.18 (42) | プラットフォーム更新プログラム10.0.18 は、2021 年 5 月 17 日のサービス リリースで、展開を開始する予定です。 詳細については、[財務と運用アプリのバージョン 10.0.18 のプラットフォーム更新プログラム (2021 年 5 月)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) を参照してください。 |
 | 給付金管理適格性ルールでのカスタム フィールドのサポート  | [適格性処理のカスタム フィールド サポート](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 予定されている機能とリリースの完全な一覧については、[Dynamics 365 Human Resources 2021 のリリース ウェーブ 1 の概要](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/) を参照してください。

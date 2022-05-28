@@ -1,5 +1,5 @@
 ---
-title: US Government Community Cloud (GCC) における Dynamics 365 Finance と Dynamics 365 Supply Chain Management
+title: US Government Community Cloud (GCC) の Dynamics 365 Finance、Supply Chain Management、Commerce
 description: このトピックでは、資格のある政府機関や民間企業が利用できる Microsoft Dynamics 365 US Government 製品についての情報を提供します。
 author: hasaid
 ms.date: 11/12/2021
@@ -9,14 +9,14 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 0c8b88e5d190f6dc9beb9342909d1e489d4af10b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 204bf1886ff7f7393fba5713a54f305274f540d0
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062289"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693311"
 ---
-# <a name="dynamics-365-finance-and-dynamics-365-supply-chain-management-in-us-government-community-cloud-gcc"></a>US Government Community Cloud (GCC) における Dynamics 365 Finance と Dynamics 365 Supply Chain Management
+# <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-us-government-community-cloud-gcc"></a>US Government Community Cloud (GCC) の Dynamics 365 Finance、Supply Chain Management、Commerce
 
 [!include [banner](../includes/banner.md)]
 
@@ -52,9 +52,9 @@ Microsoft Dynamics Lifecycle Services (LCS) の実装プロジェクトの初期
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="are-dynamics-365-finance-and-dynamics-365-supply-chain-management-supported-in-gcc-high"></a>Dynamics 365 Finance と Dynamics 365 Supply Chain Management は GCC-High に対応していますか？
+### <a name="are-dynamics-365-finance-and-dynamics-365-supply-chain-management-supported-in-gcc-high"></a>Dynamics 365 Finance と Dynamics 365 Supply Chain Management は GCC-High に対応していますか。
 
-いいえ。 Dynamics 365 Finance と Dynamics 365 Supply Chain Management は GCC-High のみに対応しています。
+いいえ。 Dynamics 365 Finance と Dynamics 365 Supply Chain Management は GCC にのみ対応しています。
 
 ### <a name="can-i-use-public-azure-devops-with-finance-and-supply-chain-management-in-gcc"></a>GCC で Finance と Supply Chain Management で公共の Azure DevOps を使うことはできますか？
 

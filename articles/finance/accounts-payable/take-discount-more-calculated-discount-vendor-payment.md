@@ -1,6 +1,6 @@
 ---
 title: 仕入先支払の計算済の割引よりも大幅な割引を行う
-description: この記事は、請求書で最初に使用できた割引を超えた金額の現金割引を行うシナリオについて説明します。 このシナリオは、組織が請求書の減額した金額を支払う契約を仕入先とした場合に発生することがあります。
+description: このトピックでは、請求書で最初に使用できた割引を超えた金額の現金割引を実行するシナリオについて説明します。 このシナリオは、組織が請求書の減額した金額を支払う契約を仕入先とした場合に発生することがあります。
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14281
 ms.assetid: 7f0a4197-95dd-4969-ade9-154815cf659e
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52e18e75cfad34829dc78486d2b78b8e4211bb948bc5ddd0be85552bd914010b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd8fd2fcbc56a91c0bcabfd2fc51e9ff62fe3994
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736948"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716650"
 ---
 # <a name="take-more-than-the-calculated-discount-for-a-vendor-payment"></a>仕入先支払の計算済の割引よりも大幅な割引を行う
 
 [!include [banner](../includes/banner.md)]
 
-この記事は、請求書で最初に使用できた割引を超えた金額の現金割引を行うシナリオについて説明します。 このシナリオは、組織が請求書の減額した金額を支払う契約を仕入先とした場合に発生することがあります。 
+このトピックでは、請求書で最初に使用できた割引を超えた金額の現金割引を実行するシナリオについて説明します。 このシナリオは、組織が請求書の減額した金額を支払う契約を仕入先とした場合に発生することがあります。 
 
 請求書が 7 日以内に支払われた場合に、仕入先 3051 が Fabrikam に 4 パーセントの現金割引を提供します。 6 月 29 日に、April は 1,000.00 ドルの請求書を入力します。 仕入先は、April が請求書に対して既定の 40.00 ドルの割引の代わりに 60.00 ドルの割引を受けるようにします。 April は、買掛金勘定支払仕訳帳を使用して 1 回限りの支払を記録します。 彼女は支払の仕入先を入力し、**トランザクションの決済** ページを開きます。 さらに、請求書にマークしたり、**現金割引金額** フィールドの値を **-60.00** に変更したりします。
 

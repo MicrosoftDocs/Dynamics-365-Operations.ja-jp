@@ -1,7 +1,7 @@
 ---
 title: 購買返品注文の作成
 description: この手順では、仕入先請求書ドキュメントから新しい発注書に明細行をコピーするために、訂正票アクションを使用した購買返品注文の作成方法を示します。
-author: Henrikan
+author: GalynaFedorova
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, Inve
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea0d227966b69063993acf14e68cd069681357f1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 841229434fc278224f85d8d6782f80a31f4e23a9
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569412"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8678718"
 ---
 # <a name="create-a-purchase-return-order"></a>購買返品注文の作成
 

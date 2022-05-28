@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ms.search.region: global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b9ac59f305afd55edfcfb3b47bf38ddd44d92a706904f55a069a6a9fc9050825
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7654f748fb0cfc70d76718f03a235c5d4d13a908
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728034"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735467"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>分析コード メンバーの共通セットに対する原価要素分析コード メンバーのマップ
 
@@ -33,12 +33,12 @@ ms.locfileid: "6728034"
 ## <a name="map-cost-element-dimension-members-to-a-common-format"></a>原価要素分析コード メンバーに共通の形式をマップします
 次の例では、原価コントローラーとして、原価要素分析コード メンバーを米国の勘定科目表の構造やフランスの勘定科目表の構造から原価要素分析コード メンバーの共通のセットにマッピングする原価計算で、新しい原価要素分析コードを作成する方法を示します。 その後、原価要素分析コード メンバーの共通セットを使用して、原価会計元帳の 2 つの法人から原価データを分析することができます。
 
-| ソース: 米国の勘定科目表                                          | ソース: フランスの勘定科目表                                          | 原価要素分析コード メンバーの新しい共通セット                        |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| ソース: 米国の勘定科目表          | ソース: フランスの勘定科目表           | 原価要素分析コード メンバーの新しい共通セット                        |
+|------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|
 | 米国の勘定科目表からインポートされた原価要素分析コード メンバー | フランスの勘定科目表からインポートされた原価要素分析コード メンバー | 米国とフランスの原価要素分析コード メンバーの共通セットへのマッピング |
-| 5001: 販売                                                           | 5001: 販売と広告                                               | 5000: 販売と広告                                             |
-| 5030: 広告                                                     | 6390: 在庫発注\*                                                    | 7000: クリーニング費用                                                 |
-| 7001: クリーニング費用                                               | 7001: 旅費交通費                                                      | 7001: 旅費交通費                                                   |
+| 5001: 販売                   | 5001: 販売と広告                      | 5000: 販売と広告                               |
+| 5030: 広告             | 6390: 在庫発注\*                          | 7000: クリーニング費用                                   |
+| 7001: クリーニング費用              | 7001: 旅費交通費                     | 7001: 旅費交通費                                                   |
 
 \*在庫発注のフランスの原価要素分析コード メンバーは、マッピングされません。
 

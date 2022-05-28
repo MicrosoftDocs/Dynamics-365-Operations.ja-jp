@@ -1,7 +1,7 @@
 ---
 title: サービス注文の理由コード
 description: サービス注文のステージの更新時にサービス注文の状態を分かりやすくするための理由コードを使用します。
-author: kamaybac
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac21174cc0e6319494f2db0530e68229325b07f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4638f9439071ed523d2d1627cc864ac073e1bdaa
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566194"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673553"
 ---
 # <a name="reason-codes-for-service-orders"></a>サービス注文の理由コード   
 

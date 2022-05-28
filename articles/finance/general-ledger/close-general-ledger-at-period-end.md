@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14111
 ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f83ea7a870c52884030125736809ead02b264aef1dcd654f6ff94dab0fbb2004
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 359e177e4ac2218c28ddd7c5ac3b71ee69e652e8
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740005"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717533"
 ---
 # <a name="close-the-general-ledger-at-period-end"></a>期末に一般会計を決算
 
@@ -28,7 +28,7 @@ ms.locfileid: "6740005"
 
 このトピックでは、一般会計の期間締めを実行する場合に通常完了するタスクについて説明します 
 
-一般会計では、期または年度で決算手続きを完了できます。 決算プロセスでは、新しい期間のためのシステムを準備します。 新しい年度のシステムを準備するには、年度末決算処理を実行する必要があります。 各組織には、期末に実行するさまざまなプロセスやステップがあります。 次に、期末のオプションの手順をいくつか示します。
+一般会計では、期または年度で決算手続きを完了できます。 決算プロセスでは、新しい期間のためのシステムを準備します。 新しい年を準備するには、年度末決算処理を実行する必要があります。 各組織には、期末に実行するさまざまなプロセスやステップがあります。 次に、期末のオプションの手順をいくつか示します。
 
 -   売掛金勘定、買掛金勘定、在庫などの、他のすべてのモジュールのためのすべてのタスクを完了します。
 -   すべての仕訳帳が転記されていることを確認します。
@@ -41,7 +41,7 @@ ms.locfileid: "6740005"
 -   財務報告を使用して期末財務諸表を生成します。
 -   他の転記が発生しないように、元帳期間を **保留中** に設定します。 期末の活動の実行中に、使いやすさのため、期を特定のユーザー グループに制限できます。 決算済みの期間を再度開くことはできないため、期間を **完全に閉じる** に設定するのは、よい考えではありません。
 
-財務期間終了ワークスペースを使用して、さまざまな期末処理プロセスに必要なタスクを整理して追跡できます。 
+**財務期間終了** ワークスペースを使用して、さまざまな期末処理プロセスに必要なタスクを整理して追跡できます。 
 
 
 詳細については、次のトピックを参照してください。

@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9b83250bdb54ea6e78709dd3a3ea434a994f6211
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071113"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694007"
 ---
 # <a name="integration-with-finance-faq"></a>Finance FAQ との統合
 
@@ -34,7 +33,7 @@ ms.locfileid: "8071113"
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Power Apps で Dynamics 365 Talent アプリケーションを編集することはできますか。
 
-No. Human Resources アプリケーションのユーザーを編集すると、Human Resources と Dataverse の統合に失敗する可能性があります。 次のテーブルでは、Talent アプリケーション ユーザーに対する既定の設定を表示しています。
+いいえ。 Human Resources アプリケーションのユーザーを編集すると、Human Resources と Dataverse の統合に失敗する可能性があります。 次のテーブルでは、Talent アプリケーション ユーザーに対する既定の設定を表示しています。
 
 | 姓名 | アプリケーション ID | Azure AD オブジェクト ID | アプリケーション ID URI |
 | --- | --- | --- | --- |
@@ -44,7 +43,7 @@ No. Human Resources アプリケーションのユーザーを編集すると、
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>すべてのデータが同期された、または一部のデータ エンティティだけが同期されましたか。
 
-データのサブセットが同期されます。 すべてのエンティティの一覧については、[ Dynamics 365 Finance との統合](hr-admin-integration-finance.md) 参照してください。
+データのサブセットが同期されます。 すべてのエンティティの一覧については、[Dynamics 365 Finance との統合](hr-admin-integration-finance.md) を参照してください。
 
 ## <a name="why-dont-i-see-any-data-synced-to-dataverse"></a>Dataverse に同期されたデータを表示できないのはなぜですか?
 

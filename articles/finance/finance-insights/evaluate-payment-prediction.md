@@ -2,25 +2,25 @@
 title: 初期顧客支払予測モデルの評価
 description: このトピックでは、顧客支払予測モデルを理解し、その有効性を評価するために実行できる手順について説明します。
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969115"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677957"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>初期顧客支払予測モデルの評価
 
@@ -30,7 +30,7 @@ ms.locfileid: "7969115"
 
 ## <a name="getting-details-about-the-model"></a>モデルに関する詳細の取得
 
-Microsoft Dynamics 365 Finance の **財務インサイト パラメーター** ページで、**モデル精度の改善** リンクが精度スコアの横に表示されます。
+Microsoft Dynamics 365 Finance の **Finance Insights パラメーター** ページで、**モデル精度の改善** リンクが精度スコアの横に表示されます。
 
 [![モデル精度の改善リンク。](./media/prediction-model.png)](./media/prediction-model.png)
 
@@ -89,10 +89,10 @@ Microsoft Dynamics 365 Finance の **財務インサイト パラメーター** 
 
 ## <a name="improving-the-model"></a>モデルの改善
 
-最初のモデルの結果をよく理解した後、機能列を追加または削除したり、正確な予測をサポートしていないデータセットの一部をフィルタリングしたりすることにより、モデルを改善することができます。 AI Builder を閉じ、続いて Dynamics 365 Finance の **モデルの改善** のリンクを使って AI Builder のプロセスを再開します。 公開されたモデルに影響を与えずに、さまざまな特性を試すことができます。 公開されたモデルは、**公開** を選択した場合にのみ影響を受けます。 Dynamics 365 Finance のインスタンスには、1 つのモデルが使用されることに注意してください。 そのため、新しいモデルを公開する前に、そのモデルを慎重に確認する必要があります。
+最初のモデルの結果をよく理解した後、機能列を追加または削除したり、正確な予測をサポートしていないデータセットの一部をフィルタリングしたりすることにより、モデルを改善することができます。 AI Builder を閉じ、続いて Dynamics 365 Finance の **モデルの改善** リンクを使用して AI Builder プロセスを再起動します。 公開されたモデルに影響を与えずに、さまざまな特性を試すことができます。 公開されたモデルは、**公開** を選択した場合にのみ影響を受けます。 Dynamics 365 Finance のインスタンスには、1 つのモデルが使用されることに注意してください。 そのため、新しいモデルを公開する前に、そのモデルを慎重に確認する必要があります。
 
 ## <a name="for-more-information"></a>詳細情報
 
-予測モデルの評価方法の詳細については、[機械学習モデルの結果](/confusion-matrix.md)
+予測モデルの評価方法の詳細については、[機械学習モデルの結果](confusion-matrix.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

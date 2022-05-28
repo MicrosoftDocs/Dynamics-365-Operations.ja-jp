@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d6e594cbb824a8b823912118e99b819585adc45e
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: 70acdf469be2fcddd9e2bf755e958c1b20ee2fcf
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313833"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686574"
 ---
 # <a name="manage-b2b-business-partners-using-customer-hierarchies"></a>顧客階層を使用した B2B ビジネス パートナーの管理
 
@@ -34,7 +34,7 @@ Commerce 本部では、B2B e コマース サイトを使用するビジネス 
 B2B e コマース機能を使用するには、最初に Commerce 本部 で **B2B eその他の機能の使用を有効にする** を有効にする必要があります。
 
 1. **ワークスペース \> 機能管理** に移動します。
-1. **すべて** タブで、フィルター ボックスを使用して **モジュール : Retail と Commerce** を検索します。
+1. **すべて** タブで、フィルター ボックスを使用して **モジュール : 小売とコマース** を検索します。
 1. **B2B e コマース機能の使用を有効にする** 機能を検索してそれを選択し、右下隅で **今すぐ有効にする** を選択します。
 
 ## <a name="define-a-number-sequence-for-the-customer-hierarchy"></a>顧客階層の番号順序の定義
@@ -43,9 +43,9 @@ B2B e コマース機能を使用するには、最初に Commerce 本部 で **
 
 Commerce 本部で顧客階層の番号シーケンスを定義するには、次の手順を実行します。
 
-1. **Retail と Commerce \> Headquarters の設定 \> 番号シーケンス \> 番号シーケンス** に移動して、番号シーケンスを作成します。
+1. **小売とコマース \> Headquarters の設定 \> 番号シーケンス \> 番号シーケンス** に移動して、番号シーケンスを作成します。
 1. 新しい番号シーケンスを作成するか、既存の番号シーケンスを選択して再利用します。
-1. **Retail とコマース \> 本社の設定 \> パラメーター \> コマース共有パラメーター** の順に移動します。
+1. **小売とコマース \> 本社の設定 \> パラメーター \> コマース共有パラメーター** の順に移動します。
 1. **番号シーケンス** タブ で、**顧客階層 ID** 参照に先に作成または選択した番号シーケンスを追加します。
 
 ![顧客階層 ID 参照に追加された番号シーケンス。](../media/NumberSequenceCustHierarchy.png)
@@ -59,7 +59,7 @@ Commerce 本部で顧客階層の番号シーケンスを定義するには、�
 - **組織タイプ** の顧客レコードは、ビジネス パートナーへの指定を要求している組織を表します。
 - **人** タイプの顧客レコードは、要求を送信した人物を表します。
 
-さらに、**Retail と Commerce \> 顧客 \> 顧客階層** で新しい顧客階層レコードが作成されます。 この顧客階層レコードには、次のプロパティがあります。
+さらに、**小売とコマース \> 顧客 \> 顧客階層** で新しい顧客階層レコードが作成されます。 この顧客階層レコードには、次のプロパティがあります。
 
 - **Customer hierarchy ID** – 顧客階層固有の ID。 この ID では、Commerce 共有パラメータで定義した番号シーケンスが使用されます。
 - **名前** - オンボード リクエストで指定した取引先組織の名称です。 このフィールドは編集可能です。

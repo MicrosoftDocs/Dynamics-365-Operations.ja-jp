@@ -1,7 +1,7 @@
 ---
 title: 標準原価の更新の管理
 description: 標準原価データの更新は、1 バージョン アプローチまたは 2 バージョン アプローチという 2 つの異なるアプローチを使用して管理できます。
-author: AndersGirke
+author: JennySong-SH
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 69992
 ms.assetid: 468de7af-c7b5-4345-bd5a-ba3aa5a900cc
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: mguada
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3485f0722b8b99d7dc2d6dab470fdcc465b1da3d
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: a6d693b58e7fbbd8e082d68d124eae52fb840b02
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678668"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8674536"
 ---
 # <a name="manage-standard-cost-updates"></a>標準原価の更新の管理
 

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: fbec5ad8fa5e17b75859c07ee64a66c9568c97d3d18b6a7616a64303d3a33f10
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bfa913ca1778391ce0f5a1b2fdf6e5828b30cb66
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727962"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8724476"
 ---
 # <a name="set-up-a-subsidiary-legal-entity-for-consolidation"></a>連結のための関連法人の設定
 
@@ -29,7 +29,7 @@ ms.locfileid: "6727962"
 期末決算の一環として連結を開始する前に、期末決算の準備作業を完了させておきますが、連結が完了するまでは関連会社の決算は行わないようにしてください。 期末決算の詳細については、[期末に一般会計を決算する](close-general-ledger-at-period-end.md) と [会計年度期間を決算する](tasks/close-fiscal-year.md) を参照してください。
 
 > [!NOTE]
->  複数の法人の決算を連結形式でまとめるには、Management Reporter for Microsoft Dynamics 365 Finance を使用することをお勧めします。 Management Reporter を使用すると、法人間の連結財務レポートを作成したり、Excel を使用して他のソースから連結データをインポートしたり、Dynamics 365 Finance で連結処理を実行しなくても、金額を任意の数の報告通貨に変換したりすることができます。
+>  複数の法人の決算を連結形式でまとめるには、Management Reporter for Microsoft Microsoft Dynamics 365 Finance を使用することをお勧めします。 Management Reporter を使用すると、法人間の連結財務レポートを作成したり、Excel を使用して他のソースから連結データをインポートしたり、Dynamics 365 Finance で連結処理を実行しなくても、金額を任意の数の報告通貨に変換したりすることができます。
 
 ## <a name="map-subsidiary-main-accounts-to-consolidated-main-accounts"></a>関連会社の主勘定と連結の主勘定をマッピングする
 
