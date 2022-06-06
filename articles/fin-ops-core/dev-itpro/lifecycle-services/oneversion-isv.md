@@ -2,7 +2,7 @@
 title: 1 つのバージョンを使用した ISV ソリューションの提供
 description: このトピックでは、独立系ソフトウェア ベンダー (ISV) が 1 つのバージョンを使用して、ソリューションを 渡す方法について説明します。
 author: FrankDahl
-ms.date: 04/12/2019
+ms.date: 05/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-4-12
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 164f71d9bda743685ff832acc98ed3c02bf0d0f5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 26176f1c7ad92e1067144e5548b2f24ea557530b
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782936"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710600"
 ---
 # <a name="delivering-isv-solutions-using-one-version"></a>1 つのバージョンを使用した ISV ソリューションの提供
 
@@ -61,7 +61,7 @@ ms.locfileid: "7782936"
 
 ## <a name="servicing-customers"></a>顧客サービス
 
-Dynamics 365 Finance and Operations アプリは、Microsoft Azure で実行されます。 したがって、それはサービスとして実行されるソリューションです。 Microsoft は企業に対して、異常動作をレポートする警告から、顧客やそのパートナーによって送信されたサポート チケットまで、積極的に年中無休で対応しています。 Microsoft は稼働中のサービスをサポートする幅広いツールを持っています。 これらのツールには、サービスから収集される使用状況のデータが含まれます。 顧客データを保護するために、Microsoft は顧客システムにアクセスできる人物に注意を払っています。
+Dynamics 365 財務と運用アプリは、Microsoft Azure で実行されます。 したがって、それはサービスとして実行されるソリューションです。 Microsoft は企業に対して、異常動作をレポートする警告から、顧客やそのパートナーによって送信されたサポート チケットまで、積極的に年中無休で対応しています。 Microsoft は稼働中のサービスをサポートする幅広いツールを持っています。 これらのツールには、サービスから収集される使用状況のデータが含まれます。 顧客データを保護するために、Microsoft は顧客システムにアクセスできる人物に注意を払っています。
 
 マイクロソフトが問題を分析するときは、問題がお客様の ISV ソリューションに関連すると判断する場合があります。 Microsoft はこの種類の問題をお客様にレポートし、オフラインでフォローアップできるようにします。
 
@@ -169,7 +169,7 @@ ISV ソリューションを構築するために使用する基準の Microsoft
 
 ## <a name="testing"></a>テスト
 
-Microsoft は機能とバイナリ互換性を保証するために、開発プロセスにいくつかの確認と調整をします。 この互換性を保証するために、ISV ソリューションを Microsoft の各リリースで検証する必要があります。 各リリースのパートナー早期アクセス プログラム (PEAP) の期間中にこの検証を行うことが期待されます。
+Microsoft は機能とバイナリ互換性を保証するために、開発プロセスにいくつかの確認と調整をします。 この互換性を保証するために、ISV ソリューションを Microsoft の各リリースで検証する必要があります。 各リリースのプレビュー フェーズ中にこの検証を行うことが期待されます。
 
 月例更新プログラムが顧客環境に配置される前に、問題を解決する時間を取れるよう、フィードバックに対して迅速に対応を提供することが非常に重要です。
 
@@ -187,7 +187,7 @@ Microsoft には検証をサポートする広範なテスト スイートがあ
 
 テストが成功した場合、このステップは Microsoft が新しいリリースを顧客に配信するときに、現在のバージョンの ISV ソリューションの顧客インストールを更新する必要がないことを検証します。
 
-テストに成功しなかった場合、ISV として [PEAP コミュニケーション プロセス](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates) を通じて Microsoft に直ちに通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。 この問題には Microsoft による修正か、または独自の ISV ソリューションの修正が必要です。 ソリューションの修正は顧客をサービス分枝から順番に更新する必要があります。 どちらの場合も、Microsoft は問題について知る必要があります。そのため今後のリリースに向けて、より積極的なプロセスをとる場合があります。
+テストに成功しなかった場合、ISV として[プレビュー コミュニケーション プロセス](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates)を通じて Microsoft に直ちに通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。 この問題には Microsoft による修正か、または独自の ISV ソリューションの修正が必要です。 ソリューションの修正は顧客をサービス分枝から順番に更新する必要があります。 どちらの場合も、Microsoft は問題について知る必要があります。そのため今後のリリースに向けて、より積極的なプロセスをとる場合があります。
 
 ### <a name="currently-released-products--testing-design-time-compatibility"></a>現在リリースされている製品 - デザイン時の互換性のテスト
 
@@ -197,7 +197,7 @@ ISV ソリューションに対する一連の自動化開発者テスト、自�
 
 テストが成功した場合、ソースコードが顧客に提供され、顧客が ISV ソリューションを再コンパイルしても、このステップは ISVソリューションを更新する必要がないことを検証します。
 
-テストが成功せず、その問題が [重大な変更](../extensibility/breaking-changes.md) に記載されているカテゴリに該当しない場合、ISV として直ちに [PEAP コミュニケーション プロセス](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates) を通じて Microsoft に通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。 この問題には Microsoft による修正か、または独自の ISV ソリューションの修正が必要です。 ソリューションの修正は顧客をサービス分枝から順番に更新する必要があります。 どちらの場合も、Microsoft は問題について知る必要があります。そのため今後のリリースに向けて、より積極的なプロセスをとる場合があります。
+テストが成功せず、その問題が[重大な変更](../extensibility/breaking-changes.md)に記載されているカテゴリに該当しない場合、ISV として直ちに[プレビュー コミュニケーション プロセス](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates)を通じて Microsoft に通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。 この問題には Microsoft による修正か、または独自の ISV ソリューションの修正が必要です。 ソリューションの修正は顧客をサービス分枝から順番に更新する必要があります。 どちらの場合も、Microsoft は問題について知る必要があります。そのため今後のリリースに向けて、より積極的なプロセスをとる場合があります。
 
 ### <a name="currently-released-products--updating-the-base-build"></a>現在リリースされている製品 - 基本ビルドの更新
 
@@ -207,7 +207,7 @@ Microsoft が顧客を新しいリリースに更新するときは、ISV ソリ
 
 最新のリリース バージョン、または新しいリリースが終了したときにサービスに使用する予定のリリース バージョンで、新しいソリューション開発を検証します。ただし、どちらの場合にも最新バージョンでの検証をご検討ください。 この検証は問題の早期発見や必須の作業を理解するのに役立ちます。
 
-予期せぬ中断が発生した場合は、ISV として [PEAP コミュニケーション プロセス](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates) を通じて Microsoft に直ちに通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。
+予期せぬ中断が発生した場合は、ISV として[プレビュー コミュニケーション プロセス](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates)を通じて Microsoft に直ちに通知する必要があります。 このプロセスでは Yammer と問題通知プロセスを使用します。
 
 ## <a name="deploying-updates"></a>更新の展開
 

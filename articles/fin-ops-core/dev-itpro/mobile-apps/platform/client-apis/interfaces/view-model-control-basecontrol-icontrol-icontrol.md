@@ -2,21 +2,22 @@
 title: コントロール タイプ
 description: すべてのコントロールの基準メソッドと属性を持つコントロール インターフェイス。 これは、コントロールのランタイムのインスタンスを表します。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 882c69fd8077dfd8ceab12c5ff90cf140d3be852
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c8c501a0e62a6b2cf11948f195dc8245637579bb
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781550"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811446"
 ---
 # <a name="control-type"></a>コントロール タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 すべてのコントロールの基準メソッドと属性を持つコントロール インターフェイス。
 これは、コントロールのランタイムのインスタンスを表します。 プロパティの変更は、UI にすぐに反映されます。

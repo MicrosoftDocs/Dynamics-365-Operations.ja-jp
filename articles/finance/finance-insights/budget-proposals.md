@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region:
 - Global for most topics. Set Country/Region name for localizations
 ms.author: panolte
 ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.4
-ms.openlocfilehash: 572372e654d64998667a0c4b46ae728bf4c9c74a
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: f2869dd127f1b0d48c86d7785aec82dd8b09b653
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386725"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711189"
 ---
 # <a name="budget-proposals"></a>予算案
 
@@ -27,7 +27,7 @@ ms.locfileid: "7386725"
 組織では、予算の準備にかなりの時間とリソースを費やします。 この作業の多くは、予算作成プロセスで使用されるデータの収集など、反復的な付加価値の低い作業です。 部署ごとの明細行ごとの予算を準備するには、追加の作業が必要です。 
 
 予算案には、次の利点があります。
-* Dynamics 365 Finance 内で予算作成に使用する実績または予算から履歴データを収集することができます。 
+* Dynamics 365 Finance 内で、予算作成に使用する実績または予算から履歴データを収集することができます。 
 * さまざまなタイムフレームまたは予算と履歴の実績の組み合わせを使用して、予算の改訂を行うことができます。 
 * 履歴データに含まれていない可能性がある知識と洞察を適用するために、価値が高い注意を払ってさらに絞り込んで反復処理できる新しい予算を生成します。
 * 予算案の出力を予算登録ドキュメントとして提供します。これにより Dynamics 365 Finance 全体で標準レポートを簡単に変更、インポート、エクスポート、および使用することができます。
@@ -55,7 +55,7 @@ ms.locfileid: "7386725"
    - 出力に使用する予算モデルおよび予算コードの出力基準。
    - 入力条件では、生の入力データが生成され、現在の予算分析コードのセットに対する分析コードの組み合わせによって月次データ セットに集計され、**予算作成 > 設定 > 基本予算作成 > 予算作成用の分析コード** で定義されます。
    - 入力データが AI Builder に送信され、機械の学習を適用して予測を生成します。
-   - AI Builder は Dynamics 365 Finance に予測データを返します。
+   - AI Builder は、Dynamics 365 Finance に予測データを返します。
    - その後、プロセスを完了して、ドラフト予算登録エントリとして予測を生成できます。
    - ドラフト予算は、予算登録エントリ内または使用可能ないずれかのレポート オプション内で表示および変更できます。
 

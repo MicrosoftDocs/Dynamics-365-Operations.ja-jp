@@ -2,21 +2,22 @@
 title: GenericValue タイプ
 description: コントロール タイプの一般的な値。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 06dc19d63947b868f05aba3c2e0bbff9875c2915
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: b1b1bfcab815b20ab8d4b88b1ce54d6e47f55d9b
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781526"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811288"
 ---
 # <a name="genericvalue-type"></a>GenericValue タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 コントロール タイプの一般的な値。
 

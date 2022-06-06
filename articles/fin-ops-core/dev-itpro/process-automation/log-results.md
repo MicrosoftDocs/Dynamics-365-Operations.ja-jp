@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: kfend
 ms.custom: ''
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 75bd876e8025bdda19d334c56d458c0564a9e6f1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a6ea0ffbcc639b361ff6ea2bac5e559143c46766
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781142"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735128"
 ---
 # <a name="log-results-and-messages"></a>結果とメッセージを記録する
 

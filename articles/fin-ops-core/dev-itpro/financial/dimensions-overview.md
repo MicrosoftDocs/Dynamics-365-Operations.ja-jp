@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: kfend
 ms.custom:
 - "11314"
 - intro-internal
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6d5ab513a4451f4c5a810393e056131ab4549a7
-ms.sourcegitcommit: abfaef124c8747827d6f297821f01f1f6fbca6b7
+ms.openlocfilehash: 5192157c7f1d664937191d31cbe55e3ef3010b0a
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455275"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734415"
 ---
 # <a name="add-dimensions-to-excel-templates"></a>Excel テンプレートへの分析コードの追加
 
@@ -41,7 +41,7 @@ ms.locfileid: "8455275"
 > [!NOTE]
 > この情報は、リリースごとに変更されることがあります。 したがって、頻繁に最新の情報を確認してください。
 
-## <a name="add-dimensions-to-dynamics-365-finance"></a>Dynamics 365 Finance への分析コードの追加
+## <a name="add-dimensions-to-dynamics-365-finance"></a>分析コードを Dynamics 365 Finance に追加
 
 Visual Studio で OData アドイン用の財務分析コードを追加がリリースされ、**DimensionCombinationEntity** の変更が大幅に簡素化されています。
 

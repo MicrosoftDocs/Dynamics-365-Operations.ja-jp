@@ -2,7 +2,7 @@
 title: フィールドに数を表示
 description: このトピックでは、正確で、迅速に表示される数を計算する方法について説明します。
 author: tonyafehr
-ms.date: 07/01/2017
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 364b02be7bbb70a9813ea2949c8f37f72cd48862
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: eb002661ad104f6c6a08eb78dfe653b904bfcc70
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781508"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811625"
 ---
 # <a name="show-counts-in-fields"></a>フィールドに数を表示
 
 [!include [banner](../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 **pageLink** コントロールを使用してカウント (合計) を表示することができますが、行数をカウントする前にターゲット ページが読み込まれるため遅くなることがあります。 また、取得される行の数に制限があるため、計算される数は正しくない可能性があります。
 

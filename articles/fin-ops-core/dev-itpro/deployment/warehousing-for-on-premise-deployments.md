@@ -4,8 +4,7 @@ description: このトピックでは、オンプレミス展開でのウェア�
 author: faix
 ms.date: 04/05/2022
 ms.topic: article
-ms.prod: dynamics-365
-ms.service: ''
+ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: sericks
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4b008e17cee61b806d069bf5a4c119d74cd93bfd
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: dbcc190a7926162f48a2229ac1a69ada2c54acca
+ms.sourcegitcommit: dc3053625dfe24aef64399dd1d002214e7f7619f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565706"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755861"
 ---
 # <a name="configure-the-warehousing-app-for-on-premises-deployments"></a>オンプレミス配置の倉庫管理アプリを構成
 
@@ -86,34 +85,98 @@ Finance + Operations で AD FS アプリケーションを使用できるよう�
 
 ## <a name="certificates"></a>証明書 
 
-アプリがインストールされているデバイスに、リソースにアクセスする適切な証明書があることを確認します。 自己署名証明書を使用している場合、コンピューター アカウント/ユーザー アカウントの信頼されているルートに star(AX) と AD FS をインポートすることで、これらが各デバイスにインストールされている必要があります。 詳細については、[自己署名証明書の作成およびエクスポート](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)) を参照してください。
+アプリがインストールされているデバイスに、リソースにアクセスする適切な証明書があることを確認します。 自己署名証明書を使用している場合、コンピューター アカウント/ユーザー アカウントの信頼されているルートにスター証明書と AD FS証明書をインポートすることで、これらが各デバイスにインストールされている必要があります。 詳細については、[自己署名証明書の作成およびエクスポート](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff710475(v=ws.10)) を参照してください。
 
 > [!IMPORTANT]
 > 自己署名証明書のある環境には、Android デバイスからアクセスできません。 Android デバイスから環境にアクセスする必要がある場合は、AD FS および Finance + Operations に対して公開されている信頼できる証明書を使用します。 また、AD CS を使用して AD FS および Finance + Operations の証明書を生成できます。 ただし、その場合は、Android デバイスに手動で証明機関の証明書をインポートする必要があります。   
 
 ## <a name="configure-the-application"></a>アプリケーションのコンフィギュレーション
 
-AD FS アプリケーションを使用してサーバーに接続するには、デバイス上で倉庫管理アプリを設定する必要があります。
+接続を設定して、AD FS アプリケーションを使用してサーバーに接続するには、デバイス上で倉庫管理アプリを設定する必要があります。 新しい接続を設定する複数の方法があります。
 
-1.  アプリで **接続設定** を開きます。
-2.  次の情報を入力します。
+- ファイルから接続を追加します。
+- QR コードから接続を追加します。
+- 接続を手動で追加します。
 
-    1.  **Active Directory クライアント ID** - AD FS でアプリケーション エントリを作成したときに取得したクライアント ID (「AD FS でのアプリケーション エントリの作成」の手順 2)。
+### <a name="create-a-connection-settings-file-or-qr-code"></a>接続設定ファイル、またはQRコードを作成する
 
-    2.  **Active Directory クライアント シークレット** - AD FS でアプリケーション エントリを作成したときに取得したクライアント シークレット。
+接続設定は、ファイルまたは QR コードからインポートできます。 いずれの方法でも、最初に JavaScript Object Notation (JSON) 形式と構文を使用した設定ファイルを作成する必要があります。 ファイルには、追加する必要のある個々の接続を含む接続のリストを含める必要があります。 次の表には、接続設定ファイルで指定する必要のあるパラメータをまとめています。
 
-    3.  **Active Directory リソース** - AOS の DNS URL。 URL に「/namespaces/AXSF」を追加します。 
-        例: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF`
+| パラメーター                  | 説明 | 
+|----------------------------|-------------|
+| ConnectionName             | 接続設定の名前を入力します。 最大 20 文字まで指定できます。 この値は、接続設定の固有の ID てあるため、リスト内で一意となっていることを確認してください。 デバイスに同じ名前の接続が既に存在する場合、インポートされたファイル設定によって上書きされます。 |
+| ActiveDirectoryClientAppId | AD FS アプリケーションの設定時にメモしたクライアント ID を指定します。 |
+| ActiveDirectoryResource    | <p>Finance + Operation (設置型) のルート URL を指定します。</p><p>**注記:**  **/namespaces/AXSF** を必ず含めてください。</p> | 
+| ActiveDirectoryTenant      | AD FS サーバーの Open Authorization (OAuth) 2.0 エンドポイントを指定します。 この値は次のような形式です: `https://your-adfs-server/adfs/oauth2` 次の例を示します: `https://adfs.contoso.com/adfs/oauth2.` | 
+| 会社                    | アプリケーションが接続する Finance + Operation (設置型) の法人を入力します。 | 
+| ConnectionType             | <p>(オプション) 接続設定で、環境に接続する際に証明書を使用するか、クライアント シークレットを使用するかを指定します。 有効な値は、**certificate** および **clientsecret** です。 既定値は **certificate** です。</p><p>**注意 :** クライアント シークレットはインポートできません。</p> |
+| IsEditable                 | (オプション) アプリのユーザーが接続設定を編集できるようにするかどうかを指定します。 有効な値は、**true** および **false** です。 既定値は **true** です。 | 
+| IsDefault                  | (オプション) 接続が既定の接続であるかどうかを指定します。 既定の接続として設定されている接続は、アプリが開かれた際に自動的に設定が選択されます。 既定の接続にはひとつの接続のみを設定できます。 有効な値は、**true** および **false** です。 既定値は **false** です。 | 
+| CertificateThumbprint      | (オプション) Windows デバイスでは、接続に使用する拇印の証明書を指定できます。 Android デバイスの場合、アプリのユーザーは初回の接続時に証明書を選択する必要があります。 | 
 
-    4.  **Active Directory テナント** - AD FS マシンの DNS URL。 URL に「/adfs/oauth2」を追加します。 
-        例: `https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2` ADFS マシン (例では CNAME は `https://adfs.d365ffo.onprem.contoso.com` です) の CNAME を使用していることを確認します
+次の例では、2 つの接続を含む有効な接続設定ファイルを示しています。 こように、接続リスト (ファイル内の  connectionlist と呼ばれます) は、各接続をオブジェクトとして格納する配列を持つオブジェクトです。 各オブジェクトは、かっこ ({}) で囲み、コンマで区切る必要があります。また、配列は角かっこ ([]) で囲む必要があります。
 
-3.  **会社** - アプリケーションが接続する法的エンティティを入力します。
-4.  アプリケーションの左上隅にある **戻る** ボタンを選択します。
+```json
+{
+    "ConnectionList": [
+        {
+            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
+            "ConnectionName": "Connection1",
+            "ActiveDirectoryResource": "https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF",
+            "ActiveDirectoryTenant": "https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2",
+            "Company": "USMF",
+            "IsEditable": false,
+            "IsDefaultConnection": true,
+            "CertificateThumbprint": "aaaabbbbcccccdddddeeeeefffffggggghhhhiiiii",
+            "ConnectionType": "certificate"
+        },
+        {
+            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
+            "ConnectionName": "Connection2",
+            "ActiveDirectoryResource": "https://ax2.d365ffo.onprem.contoso.com/namespaces/AXSF",
+            "ActiveDirectoryTenant": "https://adfs2.d365ffo.onprem.contoso.com/adfs/oauth2",
+            "Company": "USMF",
+            "IsEditable": true,
+            "IsDefaultConnection": false,
+            "ConnectionType": "clientsecret"
+        }
+    ]
+}
+```
 
-    アプリケーションはサーバーに接続し、倉庫ワーカーのログイン画面が表示されます。
-    
-5. 倉庫アプリのテレメトリ ID がない場合、いくつかエラーが発生する可能性があります。 これは、既知の問題です。 回避策は既存のクライアントにサインインしてテレメトリ ID を取得することです。 この問題は、将来のリリースで修正されます。
+JSON ファイルの保存方法については、[接続設定のファイルを各デバイスに保存する](../../../supply-chain/warehousing/install-configure-warehousing-app.md#save-the-connection-settings-file-on-each-device) を参照してください。
 
+ファイルを作成した後、インポートする必要があります。 詳細については、[接続設定をインポートする](../../../supply-chain/warehousing/install-configure-warehousing-app.md#import-the-connection-settings) を参照してください。
+
+### <a name="manually-configure-the-application"></a>アプリケーションを手動で構成する
+
+1. モバイル デバイスで倉庫管理アプリを起動します。
+1. **接続設定** に移動します。
+1. **デモ モードを使用する** オプションを **いいえ** に設定します。
+1. **接続の選択** ドロップダウン コントロールをタップして、接続の詳細を手動で入力するために必要な設定を展開します。
+
+    - **クライアント シークレットを使用する** – このオプションを **はい** に設定すると、クライアント シークレットを使用して Dynamics 365 Supply Chain Management の認証ができます。 認証に証明書を使用するには、**いいえ** に設定します。
+    - **接続名称** – 新しい接続の名前を入力します。 この名前は、次に接続設定を開いたときに **接続の選択** フィールドに表示されます。 入力する名称は一意である必要があります。 (この名称は、デバイスに保存されている他のすべての接続名とは異なるものでなければなりません。)
+    - **Active Directory クライアント ID** – AD FS でアプリケーション エントリを作成したときに取得したクライアント ID ([AD FS でのアプリケーション エントリの作成](#create-an-application-entry-in-ad-fs) セクションの手順 2)。
+    - **Active Directory クライアント シークレット** – AD FS でアプリケーション エントリを作成したときに取得したクライアント シークレット。
+    - **Active Directory リソース** – AOS インスタンスの DNS URL。 URL の末尾に **/namespaces/AXSF** を追加します。
+
+        > [!NOTE]
+        > 値の末尾には、スラッシュ (/) を入力しないでください。 たとえば、「`https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF`」を入力します。
+
+    - **Active Directory テナント** – AD FS マシンの DNS URL。 URL の末尾に **/adfs/oauth2** を追加します。 
+
+        > [!NOTE]
+        > 値の末尾には、スラッシュ (/) を入力しないでください。 たとえば、「`https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2`」を入力します。
+
+    - **会社** – アプリケーションが接続する法人を入力します。
+
+1. アプリケーションの右上隅にある **保存** ボタンを選択します。
+1. Android デバイスを使用していて、かつ認証に証明書を使用している場合は、デバイスにで証明書の選択を促す画面が表示されます。
+
+アプリケーションが Finance + Operations (on-premises) に接続し、倉庫作業者用のサインイン ページが表示されます。
+
+> [!NOTE]
+> 以前のリリースでは、倉庫アプリ ユーザーのテレメトリ ID がない場合、いくつかエラーが発生する可能性があります。 回避策は、Web クライアントを介して Finance + Operations (on-premises) にサインインし、テレメトリ ID を取得することです。
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

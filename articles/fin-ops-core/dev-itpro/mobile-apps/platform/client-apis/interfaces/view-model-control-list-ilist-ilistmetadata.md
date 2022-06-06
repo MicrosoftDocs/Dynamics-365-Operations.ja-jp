@@ -2,21 +2,22 @@
 title: ListMetadata タイプ
 description: リスト コントロールのメタデータ。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 93f0b08e086a0a2b7200b1d8826803899c3e0628
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: de4854ec4204ed0453e68ff08d83a3c749645c9e
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781861"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811220"
 ---
 # <a name="listmetadata-type"></a>ListMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 リスト コントロールのメタデータ。
 

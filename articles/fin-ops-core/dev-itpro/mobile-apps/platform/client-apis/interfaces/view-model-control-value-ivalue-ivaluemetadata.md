@@ -2,21 +2,22 @@
 title: ValueMetadata タイプ
 description: 値 メタデータ タイプ
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 0eebd5b6c598414a56e4fc159f1ec27862c26a3f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f4d128b09f8620487e9d09064555b31b916ab24b
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781524"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811286"
 ---
 # <a name="valuemetadata-type"></a>ValueMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 値 メタデータ タイプ
 

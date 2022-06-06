@@ -2,21 +2,22 @@
 title: ApplicationMetadata タイプ
 description: アプリケーションの宣言メタデータを表します
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 2c4f8bba02eed04075b1d9d4b129370569818f2a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1c3baf3c1df8bc761195c69f13f8a2e0cd48506f
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781154"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811791"
 ---
 # <a name="applicationmetadata-type"></a>ApplicationMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 アプリケーションの宣言メタデータを表します
 

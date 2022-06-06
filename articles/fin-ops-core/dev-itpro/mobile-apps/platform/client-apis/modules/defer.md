@@ -2,21 +2,22 @@
 title: 延期モジュール
 description: 延期タイプ
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 1e3f2a8316bfe618fbc7ff9581928556b928b2f7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e10bc8a9c1c8f2c5de99c9b6ab30d93e4d0383f2
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783366"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811262"
 ---
 # <a name="defer-module"></a>延期モジュール
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ## <a name="index"></a>指数
 

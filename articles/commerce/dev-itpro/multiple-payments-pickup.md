@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgriffin
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7dcccf8c01f8edfac535b860bc41bfd002c932c
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 2cd8111ebfd3034ccef57bf348f7f59f6a9da2fd
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408104"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692525"
 ---
 # <a name="multiple-available-payment-methods-for-in-store-pickup"></a>店舗内での受取に使用できる複数の支払方法
 

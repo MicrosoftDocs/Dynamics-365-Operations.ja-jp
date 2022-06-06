@@ -3,23 +3,22 @@ title: Commerce Scale Unit の自動更新 (クラウド)
 description: このトピックでは、Commerce Scale Unit (クラウド) の自動更新について説明します。
 author: AamirAllaq
 manager: tonyafehr
-ms.date: 07/19/2021
+ms.date: 05/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2020-07-13
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: cf0531e13b105c4a7c23008307874475a0ba9799
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 1784412c92ad4f9146a2f863c2f2c87d7ba164cc
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407420"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711219"
 ---
 # <a name="auto-update-for-commerce-scale-unit-cloud"></a>Commerce Scale Unit の自動更新 (クラウド)
 [!include[banner](../includes/banner.md)]
@@ -38,7 +37,7 @@ Commerce Scale Unit の自動更新は、[1 つのバージョン](../lifecycle-
 
 - アプリ内通知は使用できません。
 - サンドボックス UAT 環境に複数の Commerce Scale Unit がある場合、その環境の最初の Commerce Scale Unit (アルファベット順) のみに基づいて Commerce Scale Unit の自動更新が行われます。 各サンドボックス UAT 環境の残りの Commerce Scale Unit は、自分で更新する必要があります。
-- 現在、Commerce Scale Unit の自動更新は、初回リリースのお客様は利用できないため、プレビュー アーリー アクセス プログラム (PEAP) には適用できません。
+- 現在、Commerce Scale Unit の自動更新は、初回リリースのお客様は利用できないため、プレビュー ビルドには適用できません。
 
 ## <a name="downtime-duration-and-impact"></a>ダウンタイム期間と影響
 

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-01-25
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a35c7cc064154ecd3ef62f17ae3592b4473f5e35
-ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
+ms.openlocfilehash: f7278570ea2787d2dd2d4da8ebe4bc70d416abe4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8051384"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691932"
 ---
 # <a name="set-up-microsoft-clarity-in-dynamics-365-commerce"></a>Dynamics 365 Commerce での Microsoft Clarity の設定
 

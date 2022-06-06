@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: kfend
 ms.custom: 11314
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2019-01-16
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cada442d3039b6165aed125b00b7395cbf43974b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2659c97e906c4bf33081e9b76395fa9e831eb183
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783016"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734089"
 ---
 # <a name="ledger-account-combinations"></a>勘定科目の組み合せ
 
@@ -27,7 +27,7 @@ ms.locfileid: "7783016"
 
 ## <a name="introduction"></a>はじめに
 
-Microsoft Dynamics AX 2009では、分析コードの数が最小で3、最大10に制限されていました。 また、分析コードは固定された順序で入力されていました。 そのため、コードのカスタマイズとデータベースの同期は、追加されたすべての分析コードに対して必要でした。 その後、Microsoft Dynamics AX 2012 では、分析コードのフレームワークが拡張され、最大 50 まで分析コード数を増やすことができるようになりました (テーブルの合計列数の SQL データベース制限による)。 ユーザーは動的に分析コードを作成し、任意の順序で入力することもできます。 Finance and Operations は AX 2012の動作を引き継いでいます。 当モデルでは制限が取り払われており、リレーショナルデータベースの設計によるメリットと、パフォーマンス要件の最適化によって、従来と比べて複雑なデータモデルを構成することができます。
+Microsoft Dynamics AX 2009では、分析コードの数が最小で3、最大10に制限されていました。 また、分析コードは固定された順序で入力されていました。 そのため、コードのカスタマイズとデータベースの同期は、追加されたすべての分析コードに対して必要でした。 その後、Microsoft Dynamics AX 2012 では、分析コードのフレームワークが拡張され、最大 50 まで分析コード数を増やすことができるようになりました (テーブルの合計列数の SQL データベース制限による)。 ユーザーは動的に分析コードを作成し、任意の順序で入力することもできます。 Finance and Operations では、AX 2012 から動作が維持されます。 当モデルでは制限が取り払われており、リレーショナルデータベースの設計によるメリットと、パフォーマンス要件の最適化によって、従来と比べて複雑なデータモデルを構成することができます。
 
 ## <a name="part-1-what-happens-when-i-create-a-ledger-account-combination"></a>第1部:勘定科目の組み合わせを作成することで何が起こるか
 

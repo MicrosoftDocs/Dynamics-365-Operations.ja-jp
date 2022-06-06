@@ -2,7 +2,7 @@
 title: Platform update における新機能および変更された機能
 description: このトピックでは、財務と運用アプリのプラットフォーム更新における新しい機能と変更された機能について説明するトピックを示します。
 author: sericks007
-ms.date: 04/22/2022
+ms.date: 05/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2ca1f1b6dc4bc12d82cd27372ca327b18cb9296c
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 14b6951c014e60c0b7394028a978b8e763e919e2
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645151"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811104"
 ---
 # <a name="whats-new-or-changed-in-platform-updates"></a>プラットフォーム更新プログラムの新機能および変更された機能
 
@@ -29,6 +29,7 @@ ms.locfileid: "8645151"
 
 | **バージョン**        | **ビルド番号** | **自動更新の可用性** | **詳細はこちら**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| プラットフォーム更新プログラム 10.0.28 | 7.0.XXXX | 2022 年 8 月    | [財務と運用アプリのバージョン 10.0.28 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-28.md)  |
 | プラットフォーム更新プログラム 10.0.27 | 7.0.6395 | 2022 年 7 月    | [財務と運用アプリのバージョン 10.0.27 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-27.md)  |
 | プラットフォーム更新プログラム 10.0.26 | 7.0.6354 | 2022 年 5 月    | [財務と運用アプリのバージョン 10.0.26 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-26.md)  |
 | プラットフォーム更新プログラム 10.0.25 | 7.0.6316 | 2022 年 4 月    | [財務と運用アプリのバージョン 10.0.25 のプラットフォーム更新プログラム](whats-new-platform-updates-10-0-25.md)  |

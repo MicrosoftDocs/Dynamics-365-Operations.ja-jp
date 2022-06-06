@@ -2,21 +2,22 @@
 title: CompleteEventArgs タイプ
 description: CompleteEventArgs タイプ
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 9c29896bcd1e202d9a302487deae8138d6d9b734
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c910d80a615bbe23d9838578206600ee70cf7556
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782863"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811280"
 ---
 # <a name="completeeventargs-type"></a>CompleteEventArgs タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ### <a name="hierarchy"></a>階層
 

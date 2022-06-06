@@ -2,21 +2,22 @@
 title: 行タイプ
 description: 行コントロールは、一覧を構成しています。 リストには、任意の数の行のコントロールが含まれています。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: c8dc30e44814afe294ea0b9a910c6df20ae32569
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c1d7f3a32b764860455782c76bfb7c17e0977f40
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782867"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811218"
 ---
 # <a name="row-type"></a>行タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 行コントロールは、一覧を構成しています。 リストには、任意の数の行のコントロールが含まれています。
 

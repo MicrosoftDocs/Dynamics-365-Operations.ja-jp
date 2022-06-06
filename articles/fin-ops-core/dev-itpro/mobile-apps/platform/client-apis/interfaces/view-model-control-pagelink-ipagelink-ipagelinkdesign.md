@@ -2,21 +2,22 @@
 title: PageLinkDesign タイプ
 description: Pagelink デザイン オブジェクトの種類。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 7494faf0841109c38da2301dcc850249d28ea783
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1bdeb41832bb87a6e38607aa81b8812a324d3836
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782865"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811298"
 ---
 # <a name="pagelinkdesign-type"></a>PageLinkDesign タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Pagelink デザイン オブジェクトの種類。
 

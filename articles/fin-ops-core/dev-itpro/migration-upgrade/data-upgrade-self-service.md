@@ -2,19 +2,19 @@
 title: AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 description: このトピックでは、セルフサービス環境で Microsoft Dynamics AX 2012 からデータ アップグレードを行う方法について説明します。
 author: veeravendhan-s
-ms.date: 03/21/2022
+ms.date: 05/05/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: vesakkar
 ms.search.validFrom: 2021-06-30
-ms.openlocfilehash: e6be84e36a02acffd08085db3b3894b3c4c564b6
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 2ead3063cd61ea8c66f1364d3fc2a860185133aa
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462143"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713854"
 ---
 # <a name="upgrade-from-ax-2012---data-upgrade-in-self-service-environments"></a>AX 2012 からのアップグレード - セルフサービス環境のデータ アップグレード
 
@@ -26,7 +26,6 @@ ms.locfileid: "8462143"
 2. **[データ アップグレード プロセス](data-upgrade-self-service.md#data-upgrade-process)** – AX2012DataUpgradeToolKit.exe アプリケーションを実行し、更新プロセスを完了します。
 3. **[アプリケーションのレポート セクション](data-upgrade-self-service.md#reporting-section-of-the-application)** – レプリケーションの検証、レプリケーション ステータス、データ アップグレード ステータス、およびデータ アップグレード ステータスのロールバックに関するレポートをレビューします。
 4. **[アプリケーションのツール セクション](data-upgrade-self-service.md#tooling-section-of-the-application)**  – このセクションでは、プロセス パラメータをリセットし、いずれかのプロセスを再起動します。
-5. **[トラブルシューティング](data-upgrade-self-service.md#troubleshooting)**
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -36,7 +35,7 @@ ms.locfileid: "8462143"
 > [!NOTE]
 > 次の点に注意してください:
 > 
-> - AX 2012 アップグレード プロセスは、実稼働環境ではなくサンドボックス環境で実行する必要があります。
+> - Microsoft Dynamics AX 2012 データのアップグレード プロセスは、財務と運用のセルフ サービス、サンドボックス (UAT) 環境専用のためです。 運用環境に対して実行することは出来ません。
 > - **AX 2012 Database Upgrade Toolkit for Dynamics 365** の最新バージョンを LCS からダウンロードしてください。
 > - AX 2012 データ更新用にリンクされた Power Platform を配置または使用しないでください。 Power Platform 環境は、データ アップグレードの完了後に配置して使用できます。
 
@@ -145,7 +144,7 @@ ms.locfileid: "8462143"
     - レプリケーション スナップショット パス **(D:\\SQLServer\\Snapshot** など)
 
     > [!IMPORTANT]
-    > 指定した配布データベースとレプリケーション スナップショット パスには、十分な容量が必要です。 容量は、少なくともソース データベースのサイズにすることをお勧めします。 パスは、コンピューターのローカル ディスクに含まれる必要があります。 共有パスの使用を避けます。
+    > 指定した配布データベースとレプリケーション スナップショット パスには、十分な容量が必要です。 容量は、少なくともソース データベースのサイズにすることをお勧めします。 AX 2012 データベースで圧縮を使用した場合、スナップショットが圧縮されていないと必要容量が大きくなります。 パスは、コンピューターのローカル ディスクに含まれる必要があります。 共有パスの使用を避けます。
     > 
     > 仮想コンピューター (VM) またはコンピューター (手順 1. の許可リストのため) に対して静的 IP アドレスを設定することをお勧めします。 これにより、ターゲット データベースに関する接続の問題を防ぐのに役立ちます。
 
@@ -294,114 +293,7 @@ ms.locfileid: "8462143"
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-- **シナリオ 1:** 移行アプリで **プロジェクト ID** と **環境 ID** を入力するよう求めるメッセージが表示されます。
-
-    **ソリューション:** ユーザーはプロジェクトに参加し、**ProjectOwner**、**EnvironmentAdmin**、または **OperationsAdmin** のいずれかのロールを割り当てられる必要があります。
-
-- **シナリオ 2:** ソース データベース サーバーまたはターゲット データベース サーバーに対するアプリのデータベース接続の移行が失敗しました。
-
-    **ソリューション:** 移行アプリで、手順 1 [ データ更新の準備: 環境の設定活動](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) を完了します。
-
-- **シナリオ 3:** いずれかのパブリケーションのスナップショットが失敗しました。 この障害はレプリケーション モニターで追跡できます。
-
-    **ソリューション:** レプリケーション モニターの **エージェント** タブで、失敗したパブリケーションを選択し、スナップショット エージェントを選択したまま (または右クリックして)、それから **エージェントの開始** を選択してスナップショットを生成します。
-
-- **シナリオ 4:** 移行アプリでステップの 1 つが失敗し、その手順を再実行する必要がある場合、次の手順に従います。
-
-    1. 移行アプリを閉じます。
-    2. 移行アプリ フォルダーで、**データ** フォルダーを探します。
-    3. **データ** フォルダーで、**ReplicationMenu.Json** ファイルを開きます。
-    4. このファイルでは、ID 順序が同じすべてのメニュー オプションが表示されます。 再実行するステップを見つけ、**ステータス** の値を **0** に更新します。
-
-        > [!IMPORTANT] 
-        > このファイルで何も変更しないでください。 ファイルを更新する場合は、移行アプリの変更が実行状態ではないことを確認します。
-
-    5. 移行アプリを開き、手順を実行します。
-
-- **シナリオ 5:** パブリケーション作成後、レプリケーション ジョブが失敗し、次の例外が発生します。
-
-    - **例外 1:**
-
-        > プリンシパル 「dbo」 は存在しておらず、このタイプのプリンシパルはアクセス許可を借用できないかまたはアクセス許可がないために、データベース プリンシパルとして実行することができません。 (Source: MSSQLServer, Error number: 15517)  
-        ヘルプの取得: `http://help/15517`
-
-    - **例外 2:**
-
-        > このプロセスでは、「replicationsrv\\MSSQLSERVER2016」に対して「sp_replcmds」が実行できませんでした。 (Source: MSSQL_REPL, Error number: MSSQL_REPL20011)  
-        ヘルプの取得: `http://help/MSSQL_REPL20011`
-        >
-        > プリンシパル 「dbo」 は存在しておらず、このタイプのプリンシパルはアクセス許可を借用できないかまたはアクセス許可がないために、データベース プリンシパルとして実行することができません。 (Source: MSSQLServer, Error number: 15517)  
-        ヘルプの取得: `http://help/15517`
-
-    **ソリューション:** SQL Server Management Studio (SSMS) で、クエリ ウィンドウを開き、ソース データベースに接続して、次のコマンドを実行します。
-
-    ```sql
-    EXEC sp_changedbowner 'sa'
-    ```
-
-- **シナリオ 6 :** LCS ステータスが **失敗** です。 ただし、移行アプリでは、データ アップグレード トリガーは正常に実行されます。
-
-    **ソリューション:** 移行アプリで **'ds'** オプションを実行します。 このオプションは、すべてのステップおよびサブステップの LCS 環境の状態およびデータ アップグレード ステータスを読み取ります。
-
-    > [!NOTE] 
-    > データ アップグレード ステータスと LCS 環境のステータスが **失敗** の場合、[データ レプリケーションおよびアップグレードの実施](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) の手順のステップ 10 の状態は **再開** に更新されます。 その後、ユーザーはアップグレード プロセスが失敗した時点から操作を再開できます。
-
-- **シナリオ 7:** 失敗したステップをスキップしてさらにステップを続行する場合は、次のステップを実行します。
-
-    1. 移行アプリを閉じます。 
-    2. 移行アプリ フォルダーで、**データ** フォルダーを探します。
-    3. **データ** フォルダーで、**ReplicationMenu.Json** ファイルを開きます。
-    4. このファイルでは、ID 順序が同じすべてのメニュー オプションが表示されます。 再実行するステップを見つけ、**ステータス** の値を **1** に更新します。 ステータスを **1** に変更すると、ステップは完了としてマークされます。
-
-        > [!IMPORTANT] 
-        > このファイルで何も変更しないでください。 ファイルを更新する場合は、移行アプリの変更が実行状態ではないことを確認します。
-
-- **シナリオ 8:** コンソール アプリの古いバージョンから新しいバージョンに移行するには、次のステップを実行します。
-
-    1. コンソール アプリの最新バージョンを LCS からダウンロードします。
-    2. コンソール アプリの古いバージョンから **paramsdata.txt** (**/paramsdata.txt**) および **ReplicationMenu.json** (**Data/ReplicationMenu.json**) ファイルを取得し、新しいバージョンのコンソール アプリで同じパスに設定します。
-    3. アプリを再実行します。
-
-- **シナリオ 9:** すべてのパブリケーションのレプリケーション ステータスが 2 時間以上も **スナップショットの終了の待機** と表示されています。
-
-    **ソリューション:** レプリケーション モニターで、パブリケーションを選択したまま (または右クリックして)、**サブスクリプションの再初期化** を選択します。
-
-- **シナリオ 10:** データ アップグレードを再開する必要があります。
-
-    **ソリューション:** コンソール アプリでデータ アップグレード ステータスが更新されていない可能性があります。 データ アップグレードを再開するには、これらのステップに従います。
-
-    1. コンソール アプリのステータスを確認するには、**ヘルプ** オプションを実行してください。 このオプションには、すべてのメニュー オプションが一覧表示され、現在の状態が表示されます。
-    2. [データ レプリケーションおよびアップグレードの実施](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) の手順で、ステップ 10 のステータスが **成功** の場合、移行アプリで **'ds'** オプションを実行します。 このオプションにより、データ アップグレード ステータスが更新されます。
-
-    **'ds'** オプションの実行後、LCS 環境の状態とデータ アップグレード ステータスの 2 つのステータスが一覧表示されます。
-
-    - **ケース 1:** LCS 環境の状態が **失敗** で、データ アップグレードの最後のステップが **失敗** の場合、ステップ 10 に **再開** オプションが表示されます。
-    - **ケース 2:** LCS 環境の状態が **失敗** で、データ アップグレードの最後のステップが **完了** の場合、ステップ 10 に **再開** オプションが表示されます。
-    - **ケース 3:** LCS 環境の状態が **配置済み** で、データ アップグレードの最後のステップが **完了** の場合、ステップ 10 には **成功** と表示されます。
-    - **ケース 4:** LCS 環境ステータスが **配置済** で、データ アップグレードの最後のステップが **処理中** の場合、データ アップグレード ジョブはバックグラウンドで実行されるので、ステップ 10 は **成功** と表示されます。
-
-- **シナリオ 11:** パブリケーションの作成後にスナップショットの作成に失敗し、次のエラーが発生した場合。
-
-    ```
-        Error messages:
-        Source: Microsoft.SqlServer.Smo
-        Target Site: Void PrefetchObjectsImpl(System.Type, Microsoft.SqlServer.Management.Smo.ScriptingPreferences)
-        Message: Prefetch objects failed for Database 'AxDB_ASIA'.
-        Stack:    at Microsoft.SqlServer.Management.Smo.Database.PrefetchObjectsImpl(Type objectType, ScriptingPreferences scriptingPreferences)
-           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.ObjectPrefetchControl.DoPrefetch(Database database)
-           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.PrefetchObjects(ObjectPrefetchControl[] objectPrefetchControls)
-           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.DoPrefetchWithRetry()
-           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.DoScripting()
-           at Microsoft.SqlServer.Replication.Snapshot.SqlServerSnapshotProvider.DoScripting()
-           at Microsoft.SqlServer.Replication.Snapshot.SqlServerSnapshotProvider.GenerateSnapshot()
-           at Microsoft.SqlServer.Replication.SnapshotGenerationAgent.InternalRun()
-           at Microsoft.SqlServer.Replication.AgentCore.Run() (Source: Microsoft.SqlServer.Smo, Error number: 0)
-    ```
-    **ソリューション:** レプリケーション モニターで、失敗したパブリケーションを選択または右クリックして、**スナップショットの生成** を選択します。
-
-- **シナリオ 12:** データ アップグレード **同期前と同期後のプロセス、時間が必要です。** どちらの特定プロセスまたはジョブが時間がかかっているかを、どのようにトラブルシューティングできますか?
-
-    **解決策:****ReleaseUpgradeDB*** フレームワークでは、各スクリプトの実行が ReleaseUpdateScriptsLog テーブルにログされます。 テーブルで実行されるスクリプトの存続期間を監視できます。 データ アップグレード プロセスのパフォーマンスを調整しようとしているときに、最も実行時間が長いプロセスまたはジョブを簡単に識別できます。
+問題解決の情報については、[Dynamics 365 Finance + Operations セルフ サービス環境への問題解決アップグレード](troubleshoot-self-service-env.md) を参照してください。
 
 ## <a name="learn-about-the-replication-configuration-and-status-via-sql-server-management-studio"></a>SQL Server Management Studio 経由でのレプリケーションの構成とステータスについて
 

@@ -2,21 +2,22 @@
 title: ContainerControl タイプ
 description: すべてのコンテナー コントロールのメソッドと属性を持つコンテナー コントロール インターフェイス。 コンテナー コントロールは、コントロールの任意の数を含めることができます。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: c22a3431ee2db871336b08e42790147d565f2b7e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e5d9de294c29cbf8de24c94e3d9232cb19af968a
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781875"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811789"
 ---
 # <a name="containercontrol-type"></a>ContainerControl タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 すべてのコンテナー コントロールのメソッドと属性を持つコンテナー コントロール インターフェイス。
 コンテナー コントロールは、コントロールの任意の数を含めることができます。

@@ -2,7 +2,7 @@
 title: データ イベント
 description: このトピックでは、データ イベントの概要を説明します。
 author: jaredha
-ms.date: 03/16/2022
+ms.date: 05/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: b037b522142c159284cf4db089e4648e3d1b70ce
-ms.sourcegitcommit: 6fd739976b46122f9a9002309aba60edb89e5468
+ms.openlocfilehash: ead9702008f267d9361348a84ac5e4bfa8d01137
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "8453558"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691431"
 ---
 # <a name="data-events"></a>データ イベント
 [!include[banner](../includes/banner.md)]
@@ -57,9 +57,11 @@ Open Data Protocol (OData) が有効になっている財務と運用アプリ�
 
 業務要件を満たすためにデータ イベントが不要になった場合は、**有効なデータ イベント** または **無効なデータ イベント** タブの一覧からデータ イベントを削除できます。この場合、データ イベントは一覧から削除され、すべてのエラー履歴は削除されます。 データ イベントのエラーの履歴を必要がある場合、データ イベントを削除する代わりに無効化できます。 ビジネス イベントおよびデータ イベントのエラー ログの詳細については、[エラー](home-page.md#errors)を参照してください。
 
-## <a name="download-the-data-event-schema"></a>データ イベント スキーマをダウンロードする
+## <a name="data-event-schema"></a>データ イベント スキーマ
 
-**ビジネス イベント** ページの **データ イベント カタログ** タブは、データ イベントに渡され、イベント スキーマを構成するフィールドも表示されます。 表示される情報には、フィールド名とラベルが含まれます。 **スキーマのダウンロード** を選択して、イベントの JavaScript Object Notation (JSON) スキーマをダウンロードすることができます。 この機能は、外部の統合システムが開発中にビジネス イベントのペイロードのスキーマを必要とする場合に役立ちます。
+**ビジネス イベント** ページの **データ イベント カタログ** タブで、イベント スキーマに含まれるエンティティ プロパティが表示されます。 これらのフィールドは、データ イベントの基づく仮想テーブルを構成するプロパティです。 表示される情報には、フィールド名とラベルが含まれます。
+
+**データ イベント カタログ** では、ページの **ビジネス イベント カタログ** タブでビジネス イベントが利用可能なイベント スキーマをダウンロードするための同じ機能を提供していません。 イベント用の JavaScript Object Notation (JSON) スキーマが必要な場合は、例えば開発中に統合システムがビジネス イベントのペイロードのスキーマを必要とする際、提供されるフィールド情報を使用しスキーマを作成できます。 [RemoteExecutionContext クラス](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext?view=dataverse-sdk-latest&viewFallbackFrom=dynamics-general-ce-9) では、コンテキスト情報が実行時に構成されたサービス エンドポイントに送信されたことを定義します。 エンティティ フィールドは、[InputParameters](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext.inputparameters?view=dataverse-sdk-latest#microsoft-xrm-sdk-remoteexecutioncontext-inputparameters) の **Target** と **PreImage** プロパティのスキーマに含まれます。
 
 ## <a name="performance-benchmarks"></a>パフォーマンスのベンチマーク測定
 

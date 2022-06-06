@@ -2,21 +2,22 @@
 title: GroupMetadata タイプ
 description: グループ メタデータ タイプ。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 03895d0c3ec38d088012d8c8ed37c44215a8387d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2acd4077dff939b64667b6b143eb3b7423bee506
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781542"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811444"
 ---
 # <a name="groupmetadata-type"></a>GroupMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 グループ メタデータ タイプ。
 

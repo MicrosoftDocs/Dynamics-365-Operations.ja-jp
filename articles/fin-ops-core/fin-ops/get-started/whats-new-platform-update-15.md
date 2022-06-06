@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 15
-ms.openlocfilehash: a55bfa76011ebc13ed5193cfea0796f3ccc68f7f48303496be18e4b70ba5103a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 14fee04401769201c35e14201ef8fd4909907650
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715184"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711870"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-finance-and-operations-platform-update-15-march-2018"></a>Dynamics 365 for Finance and Operations プラットフォーム更新プログラム 15 (2018 年 3 月) の新機能および変更された機能
 
@@ -58,7 +58,7 @@ Dynamics 365 for Finance and Operations の重大なイベントの通知シス�
 
 ## <a name="data-entity-behavior-with-configuration-keys"></a>コンフィギュレーション キーを持つデータ エンティティの動作
 
-データ管理では、データ エンティティ、テーブル、およびフィールドで設定されている構成キーに従います。 これらのコンポーネントの階層構造のため、データ管理では、それ自体およびその親コンフィグレーション キーが使用可能になっている場合、階層内の子を使用することができます。 親コンフィギュレーション キーが無効の場合、どの子もインポートおよびエクスポートに使用できなくなります。 この動作の詳細については、[コンフィギュレーション キーおよびデータ エンティティ](../../dev-itpro/data-entities/config-key-entities.md)を参照してください。
+データ管理では、データ エンティティ、テーブル、およびフィールドで設定されている構成キーに従います。 これらのコンポーネントの階層構造のため、データ管理では、それ自体およびその親コンフィグレーション キーが使用可能になっている場合、階層内の子を使用することができます。 親コンフィギュレーション キーが無効の場合、どの子もインポートおよびエクスポートに使用できなくなります。 この動作の詳細については、[コンフィギュレーション キーおよびデータ エンティティ](../../dev-itpro/data-entities/config-key-entities.md) を参照
 
 ## <a name="embed-power-apps"></a>埋め込み Power Apps
 
@@ -83,7 +83,7 @@ Microsoft Power Appsは、開発者や技術者以外のユーザーがコード
 
 Dynamics 365 Talent では、「はじめに」のワークブックが提供され、ユーザーが Excel を使用して対話形式でデータを表示、編集、作成できます。 Excel アドインを使用するこれらのワークブックは、生産的な環境設定操作を実現します。 この拡張機能では、ある環境から Excel にデータを読み込み、環境アドレスを変更してから、そのデータを新しい環境に公開することにより、データをある環境から別の環境に移動することができます。
 
-詳細については、「[環境データのコピー](/../../dev-itpro/office-integration/use-excel-add-in.md#copy-environment-data)」を参照してください。
+詳細については、「[環境データのコピー](../../dev-itpro/office-integration/use-excel-add-in.md#copy-environment-data)」を参照してください。
 
 ## <a name="power-users-can-add-custom-fields-to-forms-without-developer-customization"></a>Power User は、開発者カスタマイズなしのフォームにカスタム フィールドを追加することができます。
 
@@ -97,9 +97,9 @@ Dynamics 365 for Finance and Operations ではカスタム フィールドへの
 
 **ISO 27001(Secure)** – ISO 27001 認証は、サービスが情報セキュリティ管理システム (ISMS) で概説されているコントロールおよび仕様に準拠していることを確認します。 ISO 27001 を達成することにより、お客様のビジネスを実行するために当社のサービスが安全であることが保証されます。 これを選択した場合は、ISO27001 認定サービスでビジネスを実行していることを監査人に安心させることで、自分のビジネスを証明するサポートにも役立ちます。
 
-**ISO 27018 (個人データの保護)** – ISO 27018 は、クラウド内の個人情報の保護を対象としています。 Dynamics 365 for Finance and Operations は ISO 27018 認証を取得しています。 マイクロソフトのサービスを使用して業務を管理するとき、個人の機密データはクラウドで安全かつ保護されることを理解していただくことを望みます。 また、業務に独自の ISO 27018 認証の取得を選択した場合、監査担当者は Finance and Operations に ISO 27108 認証があることを評価します。 
+**ISO 27018 (個人データの保護)** – ISO 27018 は、クラウド内の個人情報の保護を対象としています。 Dynamics 365 for Finance and Operations は ISO 27018 認証を取得しています。 マイクロソフトのサービスを使用して業務を管理するとき、個人の機密データはクラウドで安全かつ保護されることを理解していただくことを望みます。 また、業務に独自の ISO 27018 認証の取得を選択した場合、監査担当者は財務と運用に ISO 27108 認証があることを評価します。 
 
-**SOC-1/Type-2 および SOC-2/Type-2** – サービス組織制御レポート (SOC) は、クラウド サービスに財務データが安全かつ保護されていることを保証するためのコントロールの設定があることを確認するのに役立ちます。 Finance and Operations は、SOC-1/Type-2 および SOC-2/Type-2 の認証を取得しています。
+**SOC-1/Type-2 および SOC-2/Type-2** – サービス組織制御レポート (SOC) は、クラウド サービスに財務データが安全かつ保護されていることを保証するためのコントロールの設定があることを確認するのに役立ちます。 Finance and Operations は SOC-1/Type-2 および SOC-2/Type-2 認証を獲得しました。
 
 ## <a name="support-for-display-and-edit-methods-on-form-data-sources-using-augmentation-classes-extensionof"></a>拡張クラス (ExtensionOf) を使用したフォーム データ ソースの表示および編集メソッドのサポート
 

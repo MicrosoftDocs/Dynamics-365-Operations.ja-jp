@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fe69156023ec55a0c658576332be6a6739efff5d885812c8062bf4ead7796997
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9c67a76ba26671c80f854ac372f3aee2ae23542
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751585"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695493"
 ---
 # <a name="identity-management-pages-and-modules"></a>ID 管理ページとモジュール
 

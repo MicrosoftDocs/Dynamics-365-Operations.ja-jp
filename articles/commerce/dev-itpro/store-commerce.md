@@ -2,7 +2,7 @@
 title: Store Commerce アプリ
 description: このトピックでは、Microsoft Dynamics 365 Commerce Store Commerce アプリの設定および構成方法について説明します。
 author: mugunthanm
-ms.date: 04/21/2022
+ms.date: 05/11/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 03-01-2022
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: d131a5f25bc1a986808a4a8c6fa1f9ec35b509cb
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 54547ffc63075799a316d1f1f0cc75f517a7a213
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629365"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740693"
 ---
 # <a name="store-commerce-app"></a>Store Commerce アプリ
 
@@ -139,7 +139,7 @@ Store Commerce には CPOS と完全に同等の機能があります。 さら�
 
 - Windows 10 のバージョン 17763.0 以降、Windows 11、または Windows Server 2019
 - [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) (Evergreen スタンドアロン インストーラーを使用します)。
-- SQL Server (オフラインの場合のみ必須)
+- SQL Server Express、SQL Server Standard、または SQL Server Enterprise (オフラインの場合のみ必須)。 使用する SQL Server エディションの詳細については、[Commerce のオフライン実装およびトラブルシューティング](implementation-considerations-offline.md) を参照してください。
 - Dynamics 365 Commerce (Commerce 本部と Cloud Scale Unit)
 
 ### <a name="device-setup-in-commerce-headquarters"></a>Commerce 本社でのデバイスの設定

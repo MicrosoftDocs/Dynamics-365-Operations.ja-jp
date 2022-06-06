@@ -1,31 +1,31 @@
 ---
-title: Dynamics 365 Finance バージョン 10.0.7 (2020 年 1 月) の新機能と変更点
+title: Dynamics 365 Finance バージョン 10.0.7 (2020 年 1 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.7 の新機能または変更された機能について説明します。
-author: roschlom
+author: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 1ec23cb77904685efa38ad7e564c7622ef706b987750c8e2b06f526cda87979e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 450515c032aad6bfc36dd6d10107c747ae184d92
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765630"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8724685"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-finance-version-1007-january-2020"></a>Dynamics 365 Finance バージョン 10.0.7 (2020 年 1 月) の新機能と変更点
+# <a name="whats-new-or-changed-in-dynamics-365-finance-version-1007-january-2020"></a>Dynamics 365 Finance バージョン 10.0.7 (2020 年 1 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance バージョン 10.0.7 の新機能または変更された機能について説明します。 このバージョンには 10.0.283 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Finance、バージョン 10.0.7 の新機能または変更された機能について説明します。 このバージョンには 10.0.283 のビルド番号が含まれており、次のように使用できます。
 
 - プレビューリリースは 2019 年 10 月です。
 - Ga (自動更新) は 2019 年 11 月です。

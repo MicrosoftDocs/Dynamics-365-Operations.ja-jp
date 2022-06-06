@@ -2,21 +2,22 @@
 title: ページのタイプ
 description: ページ オブジェクト タイプ。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 81ff7206013733be42fa41d511454926cc7e182e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f252b7cdc2ed213050071141ece0d985f4419052
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783208"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811274"
 ---
 # <a name="page-type"></a>ページのタイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ページ オブジェクト タイプ。
 

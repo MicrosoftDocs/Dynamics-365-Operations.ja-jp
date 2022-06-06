@@ -2,21 +2,22 @@
 title: PageState 列挙
 description: ページを配置できるさまざまな高レベルの状態を表します。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: ccda7e1d5a2baf6ca47b97b7349d5cd83d87e51c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: d34f1689a7fcbd297b43cc6023a7cd234f0cfdd4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781731"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811153"
 ---
 # <a name="pagestate-enumeration"></a>PageState 列挙
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ページを配置できるさまざまな高レベルの状態を表します。
 

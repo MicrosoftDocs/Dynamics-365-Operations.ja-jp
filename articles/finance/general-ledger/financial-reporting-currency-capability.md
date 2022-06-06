@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: IT Pro, Developer
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 261824
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Version 10.0.8
-ms.openlocfilehash: 860215230427763698e2239490296eeeec31f199eb07480086afa1131a8b61d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 57c842967d691cc15958f92e5061e5b0f689bbf7
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748968"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713007"
 ---
 # <a name="currency-capabilities-in-financial-reporting"></a>Financial Reporting の通貨の機能
 

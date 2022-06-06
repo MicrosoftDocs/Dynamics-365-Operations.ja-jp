@@ -2,21 +2,22 @@
 title: アプリケーション タイプ
 description: アプリケーションの実行時のインスタンスを表します。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 114969807d94f5447180348cb6cdf5ddd0993b83
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c8dc841a586bd8df8c523fc974f4ecda17eeaba4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782715"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811228"
 ---
 # <a name="application-type"></a>アプリケーション タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 アプリケーションの実行時のインスタンスを表します。
 

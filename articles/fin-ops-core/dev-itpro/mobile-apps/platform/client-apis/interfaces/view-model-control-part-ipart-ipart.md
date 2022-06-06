@@ -2,21 +2,22 @@
 title: Part タイプ
 description: パーツ コントロール タイプ。 パーツは、ページのみを含むコンテナー コントロールで、ページがページ内に埋め込まれるのを許可します。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: d824f92f89da531f561b51dd10dbca1a9952cc38
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 15f5dcab58a6e13f5bc6cbc62aba8dee63c0536f
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781530"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811294"
 ---
 # <a name="part-type"></a>Part タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 パーツ コントロール タイプ。 パーツは、ページのみを含むコンテナー コントロールで、ページがページ内に埋め込まれるのを許可します。
 

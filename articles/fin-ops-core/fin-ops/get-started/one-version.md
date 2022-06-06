@@ -2,7 +2,7 @@
 title: 1 つのバージョンのサービス更新に関するよく寄せられる質問
 description: このトピックでは、一貫性があり、予測可能でシームレスな方法で最新の状態に保つために使用できるサービスの更新、プロセス、ツールについて明確に説明します。
 author: laneswenka
-ms.date: 04/21/2022
+ms.date: 05/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 832a91deb0e216606fc7d8dbb0e90bfe25b577cf
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 5f5b65dc05e0269fd7af9b0eb95dc35fc62d595e
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644974"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770127"
 ---
 # <a name="one-version-service-updates-faq"></a>1 つのバージョンのサービス更新に関するよく寄せられる質問
 
 [!include[banner](../includes/banner.md)]
 
-2018 年 7 月、Microsoft は[一貫性があり、予測可能でシームレスな方法で最新の状態に保つのに役立つ Dynamics 365 の更新の提供方法の変更](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/)を発表しました。 2019 年 6 月、顧客からのフィードバックに基づき、[利用可能な新しい柔軟なサービスの更新](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)を発表しました。 このよく寄せられる質問は、変更の準備のために使用できるサービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。 必要に応じて、このトピックに追加情報を追加し続けします。
+このよく寄せられる質問は、変更の準備のために使用できるサービスの更新プログラム、プロセス、ツールを明確にすることを目的としています。 必要に応じて、このトピックに追加情報を追加し続けします。
 
 1 つのバージョンのサービス更新の詳細については、[1 つのバージョンのサービス更新の概要](../../dev-itpro/lifecycle-services/oneversion-overview.md)を参照してください。
 
@@ -39,9 +39,9 @@ ms.locfileid: "8644974"
 
 ### <a name="if-the-release-date-is-in-early-april-when-will-the-general-availability-package-become-available"></a>4 月の始めのリリースで、一般提供パッケージはいつ使用可能になりますか?
 
-月次リリースの製品更新プログラムは、月の 1、2、3 週間目に予定されています。 LCS でセットアップした構成により、その特定の週に更新プログラムを受け取ります。
- 
-4 月 10.0 リリースの場合、Microsoft は LCS でセットアップした構成によって 4 月 6 日、4 月 13 日、または 4 月 20 日の週末に更新プログラムを実行します。 サンドボックスの更新プログラムは、常にその更新の 1 週間前にスケジュールされます。 コンフィギュレーション設定は LCS で利用できます。
+リリースの製品更新プログラムは、月の 1、2、3 週間目に予定されています。 LCS でセットアップした構成により、その特定の週に更新プログラムを受け取ります。 サンドボックスの更新プログラムは、常に実稼働更新の 1 週間前にスケジュールされます。 コンフィギュレーション設定は LCS で利用できます。
+
+たとえば、4 月の 10.0.25 リリースの場合、Microsoft は LCS でセットアップした構成によって 4 月 1 日、4 月 8 日、または 4 月 15 日の週末に更新プログラムを実行しました。 サンドボックスの更新プログラムは、常にその更新の 1 週間前にスケジュールされます。
 
 顧客は、LCS で提示されているよりも早い時期、またはより都合のいい時間に更新プログラムを適用することを選択できます。 顧客が最新バージョンを使用している場合、自動更新がキャンセルされます。
 
@@ -63,7 +63,7 @@ ms.locfileid: "8644974"
 
 ### <a name="what-is-the-upcoming-schedule-of-updates"></a>今後の更新スケジュールは?
 
-サービスの更新プログラムが利用可能です。 都合の良いときに更新プログラムを適用したり、選択されたメンテナンス期間に基づいて Microsoft が自動更新を適用するようにしたりするオプションがあります。 現在の更新プログラムから 3 つ以内の更新プログラムを使用している必要があります。
+毎年、7 つのサービス更新がリリースされました。 都合の良いときに更新プログラムを適用したり、選択されたメンテナンス期間に基づいて Microsoft が自動更新を適用するようにしたりするオプションがあります。 現在の更新プログラムから 3 つ以内の更新プログラムを使用している必要があります。
 
 対象となるリリースのスケジュールについては、[サービス更新プログラムの使用可能性](public-preview-releases.md)を参照してください。
 
@@ -150,7 +150,7 @@ Microsoft がサンドボックス環境を更新すると、更新に使用さ�
 > - バージョン N-1 は N よりも 1 つ古いバージョン (たとえば、10.0.24)
 > - バージョン N-2 は N よりも 2 つ古いバージョン (たとえば、10.0.23)
 > - バージョン N-3 は N よりも 3 つ古いバージョン (たとえば、10.0.22)
-> - バージョン N-4 は N よりも 4 つ古いバージョン (たとえば、10.0.22) (この例では、バージョン 10.0.22 の顧客は更新を一時停止 **できません**。)
+> - バージョン N-4 は N よりも 4 つ古いバージョン (たとえば、10.0.22) (この例では、バージョン 10.0.21 の顧客は更新を一時停止 **できません**。)
 
 ### <a name="how-do-the-automatic-updates-affect-my-microsoft-managed-additional-sandbox-environments-in-my-lcs-implementation-project"></a>自動更新によって、LCS 実装プロジェクトで Microsoft が管理する追加のオブジェクト環境はどのような影響を受けますか? 
 
@@ -221,12 +221,13 @@ Microsoft がサンドボックス環境を更新すると、更新に使用さ�
 
 ### <a name="how-can-i-get-early-access-to-non-released-platform-updates"></a>非リリースのプラットフォーム更新プログラムへの早期アクセスをどのように取得できますか。
 
-[初回リリース プログラム](https://experience.dynamics.com/insider/)に参加できます。 その後、Microsoft は常に最新の更新プログラムによってシステムを最新の状態に保ちます。 まだ Dynamics 365 Insider プログラムのメンバーとなっていない場合、次の手順に従う必要があります。
+はい、バージョン 10.0.26 から、すべてのサービス更新のプレビュー パッケージが、**ソフトウェア配置可能パッケージ** の下にある LCS の共有アセット ライブラリを通じてすべてのお客様が利用できるようになります。 プレビュー パッケージは、開発環境またはテスト環境に配置することができます。 これらは、運用環境では使用できません。 インストール時にプログラム規約に同意したものとします。 プレビュー パッケージ (旧プレビュー アーリー アクセス プログラム (PEAP)) へのアクセス登録は不要になりました。
 
-1. <https://experience.dynamics.com> で Insider プログラムにサインアップする。
-2. Dynamics 365 Insider になるための使用条件に同意します。
-3. 申請が承認されたら (約 24 時間後)、Insider Portal にサインインして、参加できるさまざまなプレビュー プログラムを検索することができます。 
-4. プレビュー アーリー アクセス プログラム (PEAP) と初回リリース: プログラムに参加するには追加の使用条件に同意する必要があります。 ノミネートが受け入られた後、Dynamics 365 Insider プログラム内でこれらのプログラムを参照してください。
+[初回リリース プログラム](https://experience.dynamics.com/insider/)に参加できます。Microsoft は、常に最新の更新プログラムによってシステムを最新の状態に保ちます。 まだ Dynamics 365 Insider プログラムのメンバーとなっていない場合、次の作業が必要です。
+
+1. この URL を使用してインサイダー プログラムにサインアップする: https://experience.dynamics.com
+2. Dynamics 365 Insider になるための条件に同意します。
+3. 申請が承認された後 (約 24 時間)、Insider Portal にサインインして、参加できるさまざまなプレビュー プログラムを検索することができます。
 
 ### <a name="is-any-tooling-available-to-support-testing-of-the-latest-release"></a>最新のリリースのテストをサポートするために使用可能なツールはありますか?
 

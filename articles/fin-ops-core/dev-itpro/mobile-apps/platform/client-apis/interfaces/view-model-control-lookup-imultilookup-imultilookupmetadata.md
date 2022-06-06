@@ -2,21 +2,22 @@
 title: MultiLookupMetadata タイプ
 description: 複数ルックアップ メタデータの種類。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: f08eabd63b13a167b55e6ac9d7bd7d892dfc2845
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: dd95799b73d3dcc93955e1055fd7fb9527ef52a4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782869"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811302"
 ---
 # <a name="multilookupmetadata-type"></a>MultiLookupMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 複数ルックアップ メタデータの種類。
 

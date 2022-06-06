@@ -2,21 +2,22 @@
 title: サービス モジュール
 description: クライアントの実行時に、アプリケーションで使用できるさまざまなサービス。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 8067dc3f5fb9c8b69a7036fc8819e88a3bdeb00f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 01aa29dab910a269e0c5f9dda7b9f880cc7cc019
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781522"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811073"
 ---
 # <a name="services-module"></a>サービス モジュール
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 クライアントの実行時に、アプリケーションで使用できるさまざまなサービス。
 

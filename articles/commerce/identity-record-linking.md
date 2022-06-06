@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Developer
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 068f9cd8d59c13c14990e9eb76040df3d30464be4a7b01d59e70a164bf2532b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 574d6d3488177a4b202ae8a139e8baa6cbb26043
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738037"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686785"
 ---
 # <a name="enable-automatic-linking-of-identity-records-to-customer-accounts"></a>ID レコードの顧客 ID への自動リンクを有効にする 
 

@@ -2,21 +2,22 @@
 title: 値モジュール
 description: これは、単一の値のコントロールの基本クラスです。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 76429a3df169d30ef907083b17dc8c1dbf46e576
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a46c75774ac5e47d20081e9046aa16f135173abd
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782930"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811216"
 ---
 # <a name="value-module"></a>値モジュール
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 これは、単一の値のコントロールの基本クラスです。
 

@@ -2,7 +2,7 @@
 title: 開発環境の配置とアクセス
 description: このトピックでは、開発インスタンスへのアクセス、ローカル開発 VM の構成、および開発者と管理者のための構成設定を見つける方法について説明します。
 author: laneswenka
-ms.date: 03/15/2022
+ms.date: 05/24/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -11,13 +11,12 @@ ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f37c9bc620ca8bae6a400495172e9c1fc38373d5
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: ff8f2368146511f00dfb9389f3301c97bf32c64b
+ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661638"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8802851"
 ---
 # <a name="deploy-and-access-development-environments"></a>開発環境の配置とアクセス
 
@@ -29,6 +28,7 @@ ms.locfileid: "8661638"
 > - Microsoft サポートでは、レベル 1 の開発環境でのトラブルシューティングが制限される場合があります。
 > - 特定の状況では、問題を解決するために、Microsoft サポートからレベル 1 環境の新規展開が要求される場合があります。
 > - 開発環境にはビジネス クリティカルなデータを含めるべきではなく、破棄可能と見なされます。
+> - 120 の環境だけがテナントごとのサポートです。 特定のテナント下のクラウド ホスト環境数を制限して、サンドボックスおよび運用環境を配置できる十分なキャパシティを許可することをお勧めします。
  
 
 ## <a name="definitions"></a>定義
@@ -229,8 +229,11 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 ### <a name="are-cloud-hosted-environments-supported-with-azure-bastion"></a>クラウド ホスト環境は Azure Bastion でサポートされていますか?
 これらの環境はテストされておらず、Azure Bastion でサポートされてもいません。  
 
-### <a name="environment-is-in-a-failed-state-and-the-error-message-is-updated-aad-tenant-is-missing-reply-url-configuration"></a>環境が失敗の状態で、「更新された AAD テナントには返信 URL コンフィギュレーションがありません」というエラー メッセージが表示される
-このメッセージは、レベル 1/顧客管理環境が、配置時に使用するテナントとは異なる Azure AD テナントを使用して構成されていることを示します。 (管理者ユーザーのプロビジョニング ツールを使用して更新が行われたとします)。現在使用されている更新されたテナントに、環境への正常なログインに必要な返信 URL コンフィギュレーションがありません。 コンフィギュレーションが欠落している場合、エラーが発生します。 環境が使用されるテナントからユーザーで環境を削除し、再配置する必要があります。
+### <a name="environment-is-in-a-failed-state-with-the-error-message-updated-aad-tenant-is-missing-reply-url-configuration-how-do-i-resolve-this"></a>環境に、「更新された AAD テナントに、返信 URL コンフィギュレーションがありません」というエラー メッセージが表示され、失敗の状態です。 これをどのように解決しますか。
+このメッセージは、レベル 1/顧客管理環境が、配置時に使用するテナントとは異なる Azure AD テナントを使用して構成されていることを示します。 この問題の解決に役立つさまざまなオプションがあります:
+1. (推奨) 環境を削除し、環境が使用されるテナントで再配置します。 
+2. 設定を配置時に使用したテナント のコンフィギュレーションに戻します。
+3. [環境の状態が失敗した場合、またはサイン イン エラーが発生している場合に、既存の環境を修正する方法](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) の手順に従い、ターゲット テナントの返信 URL を更新します。  
 
 ### <a name="as-a-partnerisv-how-can-i-facilitate-cloud-hosted-deployments-for-customers-that-i-work-with"></a>パートナーまたは ISV として、作業する顧客向けクラウド ホスト型の配置を円滑化するにはどのようにしますか?
 特定の環境に対して、すべてのコンフィギュレーションおよび統合が正しく準備されるように、レベル 1 または顧客管理環境を顧客の Azure AD テナントの下に配置する必要があります。 テナントと環境の関連付けは、環境を配置したユーザーに基づいて決定されます。
@@ -249,7 +252,10 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
 
 以前に、管理者ユーザーのプロビジョニング ツールを使用してテナントの設定を更新した環境がある場合は、それらの環境を削除した後、正しい Azure AD テナント下に再配置することをお勧めします。
 
-既存の環境を削除して再配置できない場合は、URL を構成済 Azure AD テナントに追加する必要があります。 テナント管理者は、次のコマンドを実行できます。
+既存の環境を削除して再配置できない場合は、URL を構成済 Azure AD テナントに追加する必要があります。 テナント管理者は、次のコマンドを実行できます。 
+
+> [!Note]
+> URL は手動で追加されるので、環境を削除する場合は URL のクリーンアップも手動で行う必要があります。
 
 1. web.config ファイルから次の値を取得します。
 
@@ -278,7 +284,10 @@ VM で、AOSWebApplication の web.config file を開くことによって、ほ
     Set-AzureADServicePrincipal -ObjectId $SP.ObjectId -ReplyUrls $SP.ReplyUrls
     ```
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+### <a name="i-have-fixed-my-environment-but-it-is-still-in-a-failed-state-how-do-i-resolve-this"></a>環境は修正されましたが、まだエラー状態です。 これをどのように解決しますか。
+環境に対して最初に **停止** から **開始** 操作を実行し、URL から環境を再起動します。 環境コンフィギュレーションが正しいと検出された場合、環境 URL は自動的に **開始** 操作の **2 時間以内** に再起動します。
 
 ### <a name="while-running-the-admin-user-provisioning-tool-on-my-local-development-environment-i-get-the-error-the-values-length-for-key-password-exceeds-its-limit-of-128"></a>ローカル開発環境で管理者ユーザー プロビジョニング ツールを実行中に、「キーのパスワードの値の長さが '128' の上限を超えています」というエラーが表示されます。
 バージョン 10.0.24 以降にリリースされた仮想ハード ドライブ (VHD) を使用している場合は、管理者ユーザー プロビジョニング ツールの前に自己署名証明書生成ツールを実行する必要があります。 詳細情報については、[最初に使用する際にダウンロードできる VHD を設定する](vhd-setup.md)を参照してください。
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

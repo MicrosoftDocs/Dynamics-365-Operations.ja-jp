@@ -2,21 +2,22 @@
 title: MultiLookupDesign タイプ
 description: 複数ルックアップ デザイン オブジェクトの種類。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 4a18f5356647e8f9c57175326434a553e38b42ad
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a4e7fccbedcef6f20cafdc0b433f1f44e56802d0
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781865"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811304"
 ---
 # <a name="multilookupdesign-type"></a>MultiLookupDesign タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 複数ルックアップ デザイン オブジェクトの種類。
 

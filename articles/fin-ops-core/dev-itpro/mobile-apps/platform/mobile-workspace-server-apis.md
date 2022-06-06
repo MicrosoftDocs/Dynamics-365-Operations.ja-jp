@@ -2,7 +2,7 @@
 title: サーバー側の開発 (ワークスペース X++ API)
 description: このトピックでは、携帯電話アプリをサポートするプラットフォームについて説明します。このプラットフォームは、充実したオフラインおよびモバイルの相互関係、および使いやすいデザイナー エクスペリエンスを提供します。
 author: tonyafehr
-ms.date: 11/10/2017
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 4305eaa8d1b5a0587f8a9b3ab5935e42550932a5
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 08fd54e04d595f48b52fcc9bed9738db13340898
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782166"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811388"
 ---
 # <a name="server-side-development-workspace-x-apis"></a>サーバー側の開発 (ワークスペース X++ API)
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 ## <a name="class-sysappactionattribute"></a>クラス SysAppActionAttribute
 

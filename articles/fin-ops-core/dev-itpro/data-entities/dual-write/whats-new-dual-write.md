@@ -1,21 +1,21 @@
 ---
 title: 二重書き込みの新機能および変更された機能
 description: このトピックでは、リリース計画、主要な発表、二重書き込みのドキュメントなどへのリンクを提供します。
-author: NHelgren
-ms.date: 04/19/2022
+author: RamaKrishnamoorthy
+ms.date: 05/05/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: nhelgren
+ms.author: sericks
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: ea34c8334427ec534e1d24563956e9c53f3c55bd
-ms.sourcegitcommit: 724c976d080fd28d797f2406c6a6e635ca79a441
+ms.openlocfilehash: f80f02305e6fca10c80b69e1b4d7601d58508808
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8615673"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716453"
 ---
 # <a name="whats-new-or-changed-in-dual-write"></a>二重書き込みの新機能および変更された機能
 
@@ -25,35 +25,36 @@ ms.locfileid: "8615673"
 
 ## <a name="april-2022-release"></a>2022 年 4 月リリース
 
-[二重書き込みコア バージョン 1.0.34.0](https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.msft-d365-dual-write) の 2022 年 4 月リリース版には次の変更が含まれます。
+4 月リリースの二重書き込み関係者およびグローバル アドレス帳ソリューション 3.5.0.1 には、次の機能とバグ修正が含まれています。
 
 | フィーチャー | Description | Status |
 |---|---|---|
-| セキュリティ コンプライアンス | 署名済バージョンを使用するために依存関係パッケージを更新します。 | 一般提供 |
-| 警告 | 警告の例外処理を簡略化します。 | 一般提供 |
-| バグ修正 | 二重書き込みランタイム コンフィギュレーションが欠落しているまれなシナリオに対して適切な処理を提供します。 |  一般提供 |
-
-[二重書き込み Supply Chain ソリューション](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwscm) の 2022 年 4 月リリース版には次の変更が含まれます。
-
-| フィーチャー | Description | Status |
-|---|---|---|
-| バグ修正 | Customer Engagement アプリでは、販売製品カテゴリがマップされていないので、書き込み製品明細行を含む営業案件では販売見積を生成できません。 | 一般提供 |
-| バグ修正 | 財務と業務アプリでは、配達先住所が Dataverse サイドから渡されない場合、または住所が当事者/顧客に割り当てられていない場合、`SalesOrderHeaderCDSEntity` エンティティは 1 つを作成して自動的に販売注文に割り当てます。 これは標準の動作ではなく、不要な住所を作成します。 | 一般提供 |
+| 住所ロール ドロップダウン | 住所は、住所の目的やロールを通じて、請求先住所、業務住所、自宅住所などの分類が可能です。 このリリースでは、アドレス ロールのテキス トフィールドを、複数選択オプション セットである Power Apps Component Framework (PCF) コントロールに置き換えています。 この新しいコントロールを使用すると、1 つ以上のアドレス ロールを選択して、特定の住所に割り当てることができます。 ドロップダウン リストは、郵送先住所と電子住所の両方で使用できます。 | 一般提供 |
+| バグ修正 | アカウント テーブル (電子メール、電話、FAX) の電子アドレス フィールドを更新すると、msdyn_partyelectronicaddress テーブルの基本電子アドレスが更新されます。 | 一般提供 |
+| バグ修正 | 連絡先テーブル (電子メール、電話、FAX) の電子アドレス フィールドを更新すると、msdyn_partyelectronicaddress テーブルの基本電子アドレスが更新されます。 | 一般提供 |
+| バグ修正 | アカウント、連絡先、ベンダーのページの **関連付けられた連絡先** タブで選択されている基本連絡先の基本連絡先の名前を表示します。 | 一般提供 |
+| バグ修正 | アカウント/連絡先の初期同期では、**電子アドレス** タブ (msdyn_partyelectronicaddress テーブル) で電子アドレスが作成されますが、アカウント/連絡先テーブルに電子アドレスは作成されません。 | 一般提供 |
+| バグ修正 | アカウントの住所は、財務と運用アプリでアカウントの住所が更新された後、見積ページの **出荷先/請求先住所** では使用できません。 | 一般提供 |
+| バグ修正 | Dataverse の顧客の住所テーブルに新しい住所が作成されているときに発生する重複住所レコードエラーを修正します。 | 一般提供 |
+| バグ修正 | Dataverse で **en-us** 言語が選択されている場合に関係者レコードで発生する言語変換の問題を修正します。 | 一般提供 |
+| バグ修正 | アカウントと msdyn_vendor テーブル間のデータ同期のワークフローがアクティブ化されている場合に、アカウント レコードの更新中に発生したエラー (「msdyn_vendor' エンティティの 'msdyn_firstname' 属性の長さが許可された最大値を超えました」) を修正しました。 | 一般提供 |
+| バグ修正 | アカウントのアドレスが CRM ポータルから作成されたときに発生したエラー (「'customeraddress' エンティティは既定 (null) または変更されていない状態である必要があります」) を修正しました。 | 一般提供 |
 
 ### <a name="solution-details"></a>ソリューションの詳細
 
-|ソリューション名 | 新たな変更がありますか? | 以前のバージョン | 新しいバージョン |
+| ソリューション名 | 新たな変更がありますか? | 以前のバージョン | 新しいバージョン |
 |---|---|---|---|
-| CurrencyExchangeRates | 番号 | 2.2.2.5 | 2.2.2.5 |
-| Dynamics365Company | 番号 | 2.2.2.5 | 2.2.2.5 |
-| Dynamics365FinanceAndOperationsCommon | 番号 | 2.2.2.50 | 2.2.2.50 |
-| Dynamics365FinanceExtended | 番号 | 2.3.1.15 | 2.3.1.15 |
-| Dynamics365SupplyChainExtended | 有効 | 2.3.4.3 | 2.3.4.11 |
-| Dynamics365AssetManagement | 無効 | 2.0.777.68 | 2.0.777.68 |
-| Dynamics365AssetManagementApp | 番号 | 2.2.1.23 | 2.2.1.23 |
-| Dynamics365Notes | 番号 | 2.2.2.23 | 2.2.2.23 |
-| Dynamics365FinanceAndOperationsDualWriteMaps | 有効 | 2.3.0.36 | 2.3.4.11 |
-| Dynamics365FinanceAndOperationsAnchor | いいえ (バージョン番号のみ) | 2.3.4.3 | 2.3.4.11 |
+| 関係者 | 有効 | 3.3.0.5 | 3.5.0.1 |
+| Dynamics365GABExtended | 有効 | 3.3.0.5 | 3.5.0.1 |
+| Dynamics365GABDualWriteEntityMaps | 有効 | 3.3.0.5 | 3.5.0.1 |
+| Dynamics365GABPartyAnchor | 有効 | 3.3.0.5 | 3.5.0.1 |
+| Dynamics365GABPartyCommon | 有効 | 3.3.0.5 | 3.5.0.1 |
+
+このリリースには、次のマップ変更が含まれます。
+
++ CDS 関係者に最新のマップ バージョン 1.0.0.2 を適用します - msdyn_parties マップ。
++ CDS 住所ロールの初期同期を実行します - msdyn_addressrolesmap を使用して、すべての住所ロール情報が財務と運用アプリから Dataverse に同期されるようにします。 このマップは、このリリースの一部として追加された新しい二重書き込みマップです。 住所ロールの財務と運用エンティティは読み取り専用であるため、このマップでは後続の更新/追加は許可されないことに注意してください。
+
 
 ## <a name="march-2022-release"></a>2022 年 3 月リリース
 

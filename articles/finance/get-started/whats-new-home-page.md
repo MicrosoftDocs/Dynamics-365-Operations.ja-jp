@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1eee5b6a367e69daa543e7c118875269e60424c2
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: e214cdf25070bd38dd391233c1eeaee4ded14409
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644654"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811308"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-finance"></a>Dynamics 365 Finance の新機能および変更された機能 
 
@@ -29,6 +29,7 @@ Dynamics 365 Finance の各リリースでの新機能や変更事項を確認�
 
 | バージョン | ビルド番号 | 自動更新の可用性 | 詳細 |
 |---------|--------------|---------------|-------------|
+| 10.0.28 |  10.0.1264   | 2022 年 7 月     | [Dynamics 365 Finance バージョン 10.0.28 の新機能および変更された機能](whats-new-changed-10-0-28.md) |
 | 10.0.27 |  10.0.1227   | 2022 年 7 月     | [Dynamics 365 Finance バージョン 10.0.27 の新機能および変更された機能](whats-new-changed-10-0-27.md) |
 | 10.0.26 |  10.0.1192   | 2022 年 5 月      | [Dynamics 365 Finance バージョン 10.0.26 の新機能および変更された機能](whats-new-changed-10-0-26.md) |
 | 10.0.25 |  10.0.1149   | 2022 年 4 月    | [Dynamics 365 Finance バージョン 10.0.25 の新機能および変更された機能](whats-new-changed-10-0-25.md) |

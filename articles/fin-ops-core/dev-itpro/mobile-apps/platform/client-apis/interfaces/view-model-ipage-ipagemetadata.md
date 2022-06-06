@@ -2,21 +2,22 @@
 title: PageMetadata タイプ
 description: PageMetadata タイプ
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 098aece41e87e277f9401101f4ffef15c3cf4f6d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bf70cfb1cb03ee45acee324a9d3315895444e79e
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782172"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811272"
 ---
 # <a name="pagemetadata-type"></a>PageMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ### <a name="hierarchy"></a>階層
 

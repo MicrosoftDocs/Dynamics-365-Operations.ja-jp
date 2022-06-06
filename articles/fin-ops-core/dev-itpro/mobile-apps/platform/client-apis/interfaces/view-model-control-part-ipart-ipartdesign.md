@@ -2,21 +2,22 @@
 title: PartDesign タイプ
 description: パーツ デザイン オブジェクトの種類。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 6a9bca8f1c105e3e1f98c3e11f0b0cfd3c6fa782
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f6173b0ddb2eae375eb0a85aa42fe62da8c65399
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781528"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811292"
 ---
 # <a name="partdesign-type"></a>PartDesign タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 パーツ デザイン オブジェクトの種類。
 

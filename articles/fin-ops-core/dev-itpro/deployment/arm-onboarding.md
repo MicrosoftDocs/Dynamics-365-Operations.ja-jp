@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sasurana
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: b244cba27848244f80d5145a277fae98696db847
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 07265d61a113ddfc014e074fe01536adab1944db
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8418654"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692523"
 ---
 # <a name="complete-the-azure-resource-manager-onboarding-process"></a>Azure Resource Manager (ARM) のオンボード プロセスの実施
 
@@ -106,7 +106,7 @@ Azure コネクタを有効にし、必要に応じて LCS ユーザーを追加
 前の手順「Azure コネクタを有効にし LCS ユーザーを追加する」の手順 6 から 8 を完了していない場合にのみ、この手順を実行します。 
 
 1.  LCS では、**Microsoft Azure 設定** ページで、**ダウンロード** を選択します。 証明書ファイルをダウンロードした場所をメモしておきます。 この情報を使用して、証明書を Azure サブスクリプションにアップロードします。
-2.  [Azure クラシック ポータル](https://manage.windowsazure.com/)の左ウィンドウで、**設定** を選択します。
+2.  [Azure クラシック ポータル](https://ms.portal.azure.com)の左ウィンドウで、**設定** を選択します。
 3.  使用する Azure サブスクリプションへフィルター処理をし、次に、**管理証明書** タブで、**アップロード** を選択します。
 4.  手順 1 でダウンロードした管理証明書を選択してから、**OK** を選択します。
 

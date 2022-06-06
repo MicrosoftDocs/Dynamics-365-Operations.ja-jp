@@ -2,7 +2,7 @@
 title: モバイル プラットフォーム
 description: このトピックでは、モバイル フォン アプリのプラットフォームについて説明します。これにより、オフラインおよびモバイルの相互関係が充実し、使いやすいデザイナー エクスペリエンスを実現できます。
 author: tonyafehr
-ms.date: 06/20/2017
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 171d523fa450e563eda943356296b297a4f44fdd
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ad553c28046d5bb0ffcd621995ca8e98efd0ef6d
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781294"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811798"
 ---
 # <a name="mobile-platform"></a>モバイル プラットフォーム
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 このトピックは、 [モバイル プラットフォームを使い始める](mobile-platform-getting-started.md) および [モバイル プラットフォームのアーキテクチャと設計の考慮事項](mobile-platform-architecture.md) のトピックに置き換えられました。
 

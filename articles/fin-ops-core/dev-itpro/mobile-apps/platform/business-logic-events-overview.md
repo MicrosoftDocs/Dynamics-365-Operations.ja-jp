@@ -2,7 +2,7 @@
 title: ビジネス ロジック イベント
 description: ビジネス ロジックで実行されるコードは、ページ、アクション、およびコントロールのメタデータにランタイム変更を加えることができます。
 author: tonyafehr
-ms.date: 08/14/2017
+ms.date: 05/24/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -16,16 +16,17 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: 1e8c6e145954eb9040e1002ca27c441058cbd5cd
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 16065f4a5d6c2d937ebfaa8b0d6e66164d63acc7
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983253"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811589"
 ---
 # <a name="business-logic-events"></a>ビジネス ロジック イベント
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 モバイル ワークスペースのビジネス ロジック イベントは、開発者が能力を高めるためにワークスペースの構成を指定する場所を提供し、業務シナリオ固有の動作を実装します。 モバイル アプリのプロセスで、すべてのモバイル ビジネス ロジックを実行した場合、ビジネス ロジック実行フローは Operations モバイル アプリ フレームワークによって制御されます。 
 

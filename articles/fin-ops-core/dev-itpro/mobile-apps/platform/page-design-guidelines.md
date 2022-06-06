@@ -2,7 +2,7 @@
 title: ページ デザインのガイドライン
 description: このトピックでは、モバイル アプリのページ デザインのガイドラインを提供します。
 author: tonyafehr
-ms.date: 04/23/2018
+ms.date: 05/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -11,16 +11,17 @@ ms.custom: intro-internal
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: da2ab897efb1d80263d569409b29805c8a7ab89b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b1919bc0122d7cdc79baf1ffb386bb70c073216a
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982955"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811658"
 ---
 # <a name="page-design-guidelines"></a>ページ デザインのガイドライン
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 デザイナーを使用してページとアクションを構築する前に、構築するモバイル ワークスペースの全体的なデザインを計画することが重要です。 モバイル ワークスペースでの使用を予定しているエンティティを中心にして設計の方向を正しく位置付けることをお勧めします。 初めに使用希望のフォームを検討しないでください。 モバイル アプリの観点からは、フォームは単なるデータを取得するためのメカニズムであり、フォームのランタイム UI 動作はモバイル アプリに適用できません。 したがって、エンティティとエンティティ間のリレーションシップを最初に特定する必要があります。 各エンティティについて、以下の質問はフォームやページをどうデザインすべきかを決定するのに役立ちます。
 

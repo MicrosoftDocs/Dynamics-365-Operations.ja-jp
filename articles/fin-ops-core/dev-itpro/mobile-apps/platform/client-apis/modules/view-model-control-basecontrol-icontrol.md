@@ -2,21 +2,22 @@
 title: 管理モジュール
 description: コントロールは、ページのコンテンツを構成するものです。
 author: tonyafehr
-ms.date: 11/10/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 5efbed21381f4295f76f13bec9f2f6206bef5132
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6404d33e7a4cdeea40111f47fcf49b2a0d25cce5
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781520"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811486"
 ---
 # <a name="control-module"></a>管理モジュール
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 コントロールは、ページのコンテンツを構成するものです。
 

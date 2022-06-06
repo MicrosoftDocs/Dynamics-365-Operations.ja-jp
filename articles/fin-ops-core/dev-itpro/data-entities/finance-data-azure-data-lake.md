@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Platform Update 34
-ms.openlocfilehash: fc5a4e9b3def0636f0a38a4903c4166d0a2b28b3
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 92a6b0db5e1a9a250510543b57a8f3961cd47bbe
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656789"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688951"
 ---
 # <a name="export-to-data-lake-in-finance-and-operations-apps"></a>財務と運用アプリの Data Lake にエクスポートする 
 
@@ -36,7 +36,7 @@ ms.locfileid: "8656789"
 ## <a name="select-data"></a>データの選択
 
 > [!NOTE]
-> この機能 **Azure Data Lake へのエクスポート** がご利用中の環境内の **機能管理** モジュールで使用できない場合、環境にサインインし、ブラウザのアドレスに以下の URL を追加してください: &mi=DataFeedsDefinitionWorkspace たとえば、https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=DataFeedsDefinitionWorkspace。
+> この機能 **Azure Data Lake へのエクスポート** がご利用中の環境内の **機能管理** モジュールで使用できない場合、環境にサインインし、ブラウザのアドレスに以下の URL を追加してください: &mi=DataFeedsDefinitionWorkspace たとえば、`https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=DataFeedsDefinitionWorkspace`。
 
 Data Lake にステージングする必要のあるテーブルとエンティティを選択することができます。
 

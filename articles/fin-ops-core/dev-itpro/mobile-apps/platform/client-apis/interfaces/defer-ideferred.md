@@ -2,21 +2,22 @@
 title: 繰延タイプ<T>
 description: 繰延タイプ
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 16135e7a11941d54b7c4c8def7dc45d7f72033fb
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 6b6339f8467a97ae91e132b433eadacfb32f988e
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782877"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811189"
 ---
 # <a name="deferred-typelttgt"></a>延期されたタイプ&lt;T&gt;
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ### <a name="hierarchy"></a>階層
 

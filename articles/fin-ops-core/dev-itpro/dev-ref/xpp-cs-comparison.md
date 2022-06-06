@@ -9,12 +9,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d0309ab6a37965f65330dc87eaacb705e52fa90
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: a5c9be1e4ee9fcc8230d443a7860ef6271fb3de4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898427"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693349"
 ---
 # <a name="x-and-c-comparison"></a>X++ と C# の比較
 
@@ -1480,7 +1480,7 @@ X++ では、`TreeNode` クラスがアプリケーション オブジェクト 
 | WINAPI::createDirectory WINAPI::folderExists WINAPI::removeDirectory| `Directory` `DirectoryInfo` `Path`| X++ はディレクトリを含む多くの基本オペレーティング システム関数の `WINAPI` クラス内で静的メソッドを使用することができます。|
 | WINAPI::getDriveType| `DriveInfo` `DriveType`| これらのクラスとメソッドは、ドライブ関連の情報を取得するために使用されます。|
 | WINAPI::copyFile WINAPI::createFile WINAPI::deleteFile WINAPI::fileExists| `File` `FileAttributes` `FileInfo`| X++ はファイルを含む多くの基本オペレーティング システム関数の `WINAPI` クラスで内で静的メソッドを使用することができます。|
-| `CommaIo` `Comma7Io`| (対応するクラスはありません。)| これらの X++ クラスは、Microsoft Excel がインポートできるファイルを生成できます。 X++ で、Excel との追加のインタラクションに <a href="https://epplus.codeplex.com/">EPPlus</a>ライブラリ リファレンスを使用できます。|
+| `CommaIo` `Comma7Io`| (対応するクラスはありません。)| これらの X++ クラスは、Microsoft Excel がインポートできるファイルを生成できます。 X++ で、Excel との追加のインタラクションに <a href="">EPPlus</a>ライブラリ リファレンスを使用できます。|
 | `AsciiIo` `TextIo`| `FileStream` `TextReader` `TextWriter`| これらのクラスはさまざまなコード ページを使用します。|
 | `Io`| `Stream` `StreamReader` `StreamWriter` `FileStream`| これらは、他のクラスが拡張する基本クラスとしてよく使用されます。|
 | `CodeAccessPermission` `FileIoPermission`| `System.Security` `.CodeAccessPermission` 名前空間 `System.Security.Permissions` には、次のクラスが含まれます。<ul><li>`CodeAccessSecurityAttribute`</li><li>`FileIOPermissionAttribute`</li><li>`FileIOPermission`</li><li>`FileIOPermissionAccess`</li></ul>| `assert`、`demand`、および `revertAssert` の概念とメソッドは両方の言語に適用されます。 ただし、C# で利用可能な `deny` および `revertDeny` メソッドは、X++ では使用できません。|

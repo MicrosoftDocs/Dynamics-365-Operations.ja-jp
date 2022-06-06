@@ -2,21 +2,22 @@
 title: HyperLinkMetadata タイプ
 description: HyperLink メタデータ タイプ。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 65f11663ee8fe625b3ed620d9c7cd9edbe857f43
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0da2fa27b4f11145f3602d697f4bdf3fcf849d76
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781062"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811700"
 ---
 # <a name="hyperlinkmetadata-type"></a>HyperLinkMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 HyperLink メタデータ タイプ。
 

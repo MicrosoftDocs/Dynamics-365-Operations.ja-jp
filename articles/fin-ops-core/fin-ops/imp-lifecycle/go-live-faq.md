@@ -2,7 +2,7 @@
 title: 実装プロジェクト FAQ の Go-live
 description: このトピックでは、実装プロジェクトの運用についてよく寄せられる質問を一覧表示します。
 author: OlgaPetrovaFT
-ms.date: 04/19/2022
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: olpetrov
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 65e2b84c97aeabc7670361028102863575562cd9
-ms.sourcegitcommit: 724c976d080fd28d797f2406c6a6e635ca79a441
+ms.openlocfilehash: 6d133ec54958bc78e6d725ecabbd51a2249d683c
+ms.sourcegitcommit: 9193fce96cecf12c92ba3fbc6a28d584f805cd0a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8615671"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8738576"
 ---
 # <a name="go-live-for-implementation-projects-faq"></a>実装プロジェクト FAQ の Go-live
 
@@ -67,7 +67,7 @@ LCS で方法フェーズを完了する方法の詳細については、[財務
 実稼働環境のサイズは、現在のユーザー ライセンス数と、実稼働環境を要求するときに有効なサブスクリプションの推定の情報に基づいて決まります。
 
 > [!NOTE]
-> 追加のユーザーを後で追加する場合は、新しいサブスクリプション推定をアクティブ化するためのサポート チケットを作成する必要があります。 実稼働環境のサイズは、ユーザー数、ユーザーのライセンスの種類、および予想されるピーク時のトランザクション量に応じて変更する必要があります。 ダウンタイムは、実稼働環境のサイズを変更するために必要です。
+> 新しいサブスクリプション見積を送信する場合、実稼働環境のサイズは、ユーザー数、ユーザーのライセンスの種類、および予想されるピーク時のトランザクション量に応じて変更する必要があります。 新しい見積が処理された後、3日以内に、環境の次のサービス工程により、更新が自動的に適用されます。 または、サポート チケットを作成して、変更を適用する特定の時間を要求することもできます。
 
 ## <a name="i-submitted-the-request-for-a-production-environment-but-i-made-a-mistake-can-i-still-change-it"></a>実稼働環境の要求を送信しましたが、間違いが発生しました。 いまでも変更できますか。
 

@@ -2,21 +2,22 @@
 title: LookupMetadata タイプ
 description: ルックアップ メタデータの種類。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: f4b1d4d56aea0bdd9f0697538ada763c195a652e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: fba785ce8d9ada9ee48bf4949d3df4280b5eb519
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781534"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811133"
 ---
 # <a name="lookupmetadata-type"></a>LookupMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ルックアップ メタデータの種類。
 

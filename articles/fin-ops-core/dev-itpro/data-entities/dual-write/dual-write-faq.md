@@ -2,7 +2,7 @@
 title: 二重書き込み FAQ
 description: このトピックでは、二重書き込みについてよく寄せられる質問に回答します。
 author: tonyafehr
-ms.date: 07/21/2020
+ms.date: 05/20/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92b4ef2a38059c8fa643e30dd02008edadce813a
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 19cf01273675e4eb73ca880798643f8778f8def2
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464953"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786937"
 ---
 # <a name="dual-write-faq"></a>二重書き込み FAQ
 
@@ -29,7 +29,7 @@ ms.locfileid: "8464953"
 
 ### <a name="do-you-plan-to-enable-dual-write-to-use-dataverse-as-a-hub-between-multiple-finance-and-operations-environments-if-dataverse-is-used-as-a-hub-data-can-be-synced-between-two-or-more-finance-and-operations-environments"></a>Dataverse を、複数の Finance and Operations 環境間でハブとして使用できるように二重書き込みを有効にする予定はありますか? Dataverse をハブとして使用すれば、2 つ以上の Finance and Operations 環境間でデータを同期することができます。
 
-行の扱いに関する現在のプランでは、二重書き込みを単一の Finance and Operations 環境と、単一の Dataverse 環境との間の 1 対 1 (1:1) のマッピングに制限しています。
+レコードの扱いに関する現在のプランでは、二重書き込みを単一の財務と運用環境と、単一の Dataverse 環境との間の 1 対 1 (1:1) のマッピングに制限しています。
 
 ### <a name="can-i-control-the-sequencing-of-maps-in-dual-write-as-i-can-in-data-integrator"></a>データ インテグレーターのように、二重書き込みでマッピングの順序をコントロールすることはできますか?
 

@@ -2,21 +2,22 @@
 title: NavigationArgs タイプ
 description: NavigationArgs タイプ
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 07b11d57bc2b85a3e52f7c5e95949e36beececa1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 4148524bdc3c3262c8771934e06e81120e237b1d
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783172"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811276"
 ---
 # <a name="navigationargs-type"></a>NavigationArgs タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ### <a name="hierarchy"></a>階層
 

@@ -2,21 +2,22 @@
 title: PageLink タイプ
 description: Pagelink コントロール タイプ。 ページリンクは、別のページに移動するコントロールです。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 2ec13f9778cee631d6fe5d2f678533688f8ab081
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 2df2ea5449cacd5465d0a2cc3417a1868f29f139
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781152"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811300"
 ---
 # <a name="pagelink-type"></a>PageLink タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Pagelink コントロール タイプ。 ページリンクは、別のページに移動するコントロールです。
 

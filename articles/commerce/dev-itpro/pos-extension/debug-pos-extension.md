@@ -1,34 +1,37 @@
 ---
-title: POS 拡張機能のデバッグ
-description: このトピックでは、販売時点管理 (POS) 拡張機能のデバッグ方法について説明します。
+title: MPOS (シールド) と CPOS 拡張機能のデバッグ
+description: このトピックでは、モダン販売時点管理 (シールド) と Cloud POS 拡張機能のデバッグ方法について説明します。
 author: mugunthanm
-ms.date: 04/13/2021
+ms.date: 05/05/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: 1cf87f4984e95aae23a321567a96f695d193e05453e9e725bf1838d4a8f7477b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 85efacd1cdd86436d227f380fc3b0a104ae93fa9
+ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746675"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8720914"
 ---
-# <a name="debug-pos-extensions"></a>POS 拡張機能のデバッグ
+# <a name="debug-mpos-sealed-and-cpos-extensions"></a>MPOS (シールド) と CPOS 拡張機能のデバッグ
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) 拡張機能のデバッグ方法について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。
+このトピックでは、**シールド** の Modern 販売時点管理 (MPOS) と Cloud POS 拡張機能のデバッグ方法について説明します。 Retail ソフトウェア開発キット (SDK) バージョン 10.0.18 以降に適用されます。 
 
-## <a name="debug-modern-pos-by-using-visual-studio-2017"></a>Visual Studio 2017 を使用した Modern POS のデバッグ
+ > [!NOTE]
+ > Store Commerce アプリのデバッグについては、[Visual Studio Code を使用し Store Commerce 拡張機能のデバッグ](../sc-debug.md) を参照してください
+
+## <a name="debug-sealed-modern-pos-by-using-visual-studio-2017"></a>Visual Studio 2017 を使用したシールド Modern POS のデバッグ
 
 次の手順に従って拡張機能をデバッグします。
 
-1. シールドされた MPOS インストーラーを使用して、開発マシンでシールドされた Modern POS をインストールします。
-2. デスクトップ上のショートカットをクリックして Universal Windows Platform (UWP) アプリをインストールします。
+1. シールドされた MPOS インストーラーを使用して、開発マシンでシールドされた Modern POS をインストールします。 **Modern POS (SEALED)** インストーラは、https://lcs.dynamics.com/V2/SharedAssetLibrary > Retail セルフ サービス パッケージ セクションからダウンロードが可能です。
+2. **Modern POS (SEALED)** インストーラのインストール後に、デスクトップ ショートカット アイコンは POS Universal Windows Platform (UWP) アプリをインストールまたは更新するために作成されます。 デスクトップ上で **Retail Modern POS のインストールまたは更新** アイコンをダブル クリックし、UWP アプリをインストールします。 この前に必要なバックエンド コンポーネントを配置し、UWP アプリをインストールします。
 3. Microsoft Visual Studio で、MPOS 拡張機能パッケージ プロジェクト (JavaScript プロジェクト ファイル \[.jsproj file\]) を構築します。
 4. MPOS 拡張機能パッケージを配置します。 ソリューション エクスプローラーで、MPOS .jsproj ファイルを選択したまま (または右クリック) にして、**配置** を選択します。
 5. デバッガーが関連付けられるように POS を開きます。

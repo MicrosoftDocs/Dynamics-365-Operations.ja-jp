@@ -2,21 +2,22 @@
 title: 参照タイプ
 description: ルックアップ コントロールの種類。 ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 9247c26916e5d48bf0d49840d4891fe6d4c31d8a
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 90df1085b8a22cbf079643bd80814f5896872f1c
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781536"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811139"
 ---
 # <a name="lookup-type"></a>参照タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ルックアップ コントロールの種類。 ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。
 たとえば、ルックアップは、新しい販売注文に顧客をリンクするときに、顧客を調べるために使用できます。

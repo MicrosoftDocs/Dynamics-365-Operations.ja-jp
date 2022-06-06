@@ -2,21 +2,22 @@
 title: DataService タイプ
 description: アプリケーション ワークスペースの下でデータ アクセス機能を提供します。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 497236314136cdd842917869250e76fc8ba525a7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: a4c24511ace4c678d81bb4993a0a1337cc8ef95e
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781068"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811224"
 ---
 # <a name="dataservice-type"></a>DataService タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 アプリケーション ワークスペースの下でデータ アクセス機能を提供します。
 

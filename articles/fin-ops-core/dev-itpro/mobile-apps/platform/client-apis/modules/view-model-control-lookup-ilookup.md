@@ -2,21 +2,22 @@
 title: 参照モジュール
 description: ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: eed552d5d8227d3bf12a879955e77e73640bc75b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e4fe0f3f72238b6db296fd443e5c1e575b4fd583
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781066"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811523"
 ---
 # <a name="lookup-module"></a>参照モジュール
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ルックアップは、オプションの一覧からの入力を選択するために使用する入力コントロールです。
 たとえば、ルックアップは、新しい販売注文に顧客をリンクするときに、顧客を調べるために使用できます。

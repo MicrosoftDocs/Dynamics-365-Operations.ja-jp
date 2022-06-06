@@ -9,17 +9,16 @@ ms.technology: ''
 audience: IT Pro
 ROBOTS: NOINDEX, NOFOLLOW
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9499e71b6b1c36116be8fde8badb9185edb0d9cb8266b22640a037ff9bec400e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af7214e301ca819d35622427b51ccbfaf5df8374
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712285"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694613"
 ---
 # <a name="microsoft-preview-software-license-terms"></a>MICROSOFT プレビュー ソフトウェア ライセンス条件
 [!include [banner](../includes/banner.md)] 

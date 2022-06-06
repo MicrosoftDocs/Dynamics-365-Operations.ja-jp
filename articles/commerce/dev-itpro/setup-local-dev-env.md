@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2021
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: 3d6787770beda73e37657f7b2181e895d6d9172a
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 91a332fd6de94d6fec3c59cab77646360e905923
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487820"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711872"
 ---
 # <a name="set-up-a-local-development-environment"></a>ローカル開発環境の設定
 
@@ -97,7 +97,7 @@ IIS モードは完全なオンプレミスの Scale Unit であり、すべて�
     + **PATH** 変数が正しく設定されていることを確認するには、通常のコマンド プロンプトからコマンド `msbuild/version` を実行します。 開発者コマンド プロンプトは使用しないでください。 コマンドでは、少なくとも 15 のバージョン番号を出力する必要があります。 MSBuild の設定が完了したら、Visual Studio Code を再起動します。
 
 5. 以前にダウンロードした Visual Studio ツールを使用して Microsoft.NET.Sdk をインストールします。 **個々のコンポーネント** に移動し、**.NET SDK** を入力し、.NET SDK のチェック ボックスをオンにしてから、**インストール** を選択します。
-6. [Node をダウンロードしてインストールする](https://nodejs.org/en/download/)から、Node.JS の 64-ビット バージョンをインストールします。 **PATH** 環境変数がその場所を指していることを確認します。 メッセージが表示されたら、**必要なツールの自動インストール** チェック ボックスをオンにします。
+6. [Node をダウンロードしてインストールする](https://nodejs.org/en/download/) から、Node.JS の 64-ビット バージョンをインストールします。 **PATH** 環境変数がその場所を指していることを確認します。 メッセージが表示されたら、**必要なツールの自動インストール** チェック ボックスをオンにします。
 7. Windows 用 Visual Studio Code の 64-ビット バージョンを [Visual Studio Code をダウンロードする](https://code.visualstudio.com/download)からインストールします。
 8. [拡張機能マーケットプレース](https://code.visualstudio.com/docs/editor/extension-marketplace)の手順に従って、Visual Studio Code の  Visual Studio Code 用 C# (OmniSharp を利用) 拡張機能をインストールします。
 9. [Scale Unit GitHub リポジトリ (リポジトリ)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit) を複製またはダウンロードします。

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment
 audience: IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e7f68ac66f878ed1964d7d1f19b56899513473040a0cb4de63665aaa1d81f975
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2123c15d882765bc245e4db3d0882ec0be1f21cc
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737223"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722732"
 ---
 # <a name="royalty-contract-management"></a>ロイヤルティ契約管理
 
@@ -26,7 +26,7 @@ ms.locfileid: "6737223"
 
 ロイヤルティ契約管理は、サード パーティの資産や知的財産権を使用する権利を行使する会社を対象としています。 会社がロイヤリティの支払の管理、追跡、実行に関連するタスクを自動化することにより、ロイヤルティ契約を効率的に管理するのに役立ちます。
 
-ここでは、ロイヤルティ手数料を処理するための標準的なプロセスの概要を説明します。
+このトピックでは、ロイヤルティ手数料を処理するための標準的なプロセスの概要を説明します。
 
 - 取り決めロイヤルティ契約の詳細を登録します。
 - 継続的な販売を通して交渉された契約を実行し、ロイヤルティ請求を生成します。

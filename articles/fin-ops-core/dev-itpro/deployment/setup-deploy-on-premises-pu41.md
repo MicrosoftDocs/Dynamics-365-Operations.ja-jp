@@ -2,7 +2,7 @@
 title: オンプレミス環境の設定と配置 (Platform update 41 以降)
 description: このトピックでは、Microsoft Dynamics 365 Finance + Operations (on-premises) プラットフォーム更新プログラム 41 以降を計画、設定、展開する方法について説明します。
 author: faix
-ms.date: 04/22/2022
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: Platform update 41
-ms.openlocfilehash: 9f0a8ee35a96c99d3731d1642401cb8ff4728fd9
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: c4d5ca0c67fce3899415d7111dbf7aea858f8aaa
+ms.sourcegitcommit: 69999f3563cc6bc1227e34c74aeb5e57dc821b8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644686"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "8804796"
 ---
 # <a name="set-up-and-deploy-on-premises-environments-platform-update-41-and-later"></a>オンプレミス環境の設定と配置 (Platform update 41 以降)
 
@@ -710,7 +710,7 @@ CA から取得したオンプレミス エージェントの証明書または�
     # If you have issues downloading the Azure PowerShell Az module, run the following:
     # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-    Install-Module Az -RequiredVersion 7.2.0
+    Install-Module Az -RequiredVersion 7.4.0
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
 
@@ -954,7 +954,17 @@ Finance + Operations では、既定で標準のコンフィギュレーショ�
     Set-AdfsClaimsProviderTrust -TargetIdentifier 'AD AUTHORITY' -AlternateLoginID mail -LookupForests $domainName
     ```
 
-AD FS が認証を交換するために Finance + Operations を信頼できるようにするには、AD FS で AD FS アプリケーション グループの下にさまざまなアプリケーション エントリを登録する必要があります。 設定プロセスをスピードアップしてエラーを減らすために、Publish-ADFSApplicationGroup.ps1 スクリプトを使用して登録します。 このスクリプトと D365FO-OP ディレクトリを、AD FS ロール サービスがインストールされているコンピューターにコピーします。 次に、AD FS を管理するための十分なアクセス許可を持つユーザー アカウントを使用してスクリプトを実行します。 (たとえば、管理者アカウントを使用します。)
+4. Office アドインを使用してサインインするには、クロス オリジン リソース共有 (CORS) ヘッダーを有効にする必要があります。
+
+    ```powershell
+    Set-AdfsResponseHeaders -EnableCORS $true
+    Set-AdfsResponseHeaders -CORSTrustedOrigins https://az689774.vo.msecnd.net
+    ```
+
+    > [!NOTE]
+    > これらのコマンドは、Windows Server 2019 以降が稼働する AD FS サーバーでのみ実行できます。 Windows Server 2016 の AD FS は廃止されました。 詳細については、[Microsoft Dynamics 365 Finance + Operations (on-premises) サポート ソフトウェア](onprem-compatibility.md#active-directory-federation-services-ad-fs) を参照してください。
+
+AD FS が認証を交換するために Finance + Operations を信頼できるようにするには、AD FS で AD FS アプリケーション グループの下にさまざまなアプリケーション エントリを登録する必要があります。 設定プロセスをスピードアップしてエラーを減らすために、Publish-ADFSApplicationGroup.ps1 スクリプトを使用して登録します。 AD FS を管理するための十分なアクセス許可を持つユーザー アカウントを使用してスクリプトを実行します。 (たとえば、管理者アカウントを使用します。)
 
 スクリプトの使用方法の詳細については、スクリプトに記載されているドキュメントを参照してください。 後に LCS でこの情報が必要となるため、出力に指定されているクライアント ID を書き留めておいてください。 クライアント ID を失った場合は、AD FS がインストールされているコンピューターにサインインし、サーバー マネージャーを開き、**ツール** \> **AD FS 管理** \> **アプリケーション グループ** \> **Microsoft Dynamics 365 for Operations オンプレミス** の順に移動します。 ネイティブ アプリケーションでクライアント ID を検索できます。
 

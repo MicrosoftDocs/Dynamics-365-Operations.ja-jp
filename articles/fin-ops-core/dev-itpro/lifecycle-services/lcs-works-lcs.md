@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b6656a8460feb5a5b6560150cdc2ad298c1a0c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d469d623bfa46a7f74633ba1d0b5deb8e2e2cc71
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065084"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711930"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-apps-customers"></a>財務と運用アプリの顧客用の Lifecycle Services (LCS)
 
@@ -74,7 +74,7 @@ ms.locfileid: "8065084"
 ## <a name="new-deployment-experience"></a>新しい配置エクスペリエンス
 環境をプロビジョニングするには、構成チェックリストを完了する必要があります。 方法論を通じて進歩するにつれて、環境は利用可能になります。 展開情報を追加するには、**構成** をクリックします。 
 
-![コンフィギュレーション チェックリスト。](https://msdnshared.blob.core.windows.net/media/2016/02/Capture1.jpg)]
+
 
 入力する情報により操作性が決まるため、入力を十分に確認してください。 必要な情報をすべて入力後、配置要求にはサインオフが必要です。 サインオフを完了したユーザーは、インスタンスのシステム管理者になります。 適切なユーザーが配置の承認を完了したことを確認します。 サインオフが完了した後、Microsoft サイトの信頼性エンゲージメント チームがリクエストを確認します。 入力した情報をチームが確認した後、プロビジョニングを始めます。 情報が正しくない場合、チームよりユーザーに連絡します。 プロビジョニングが完了した後、次のスクリーン ショットに示すように、ステータスが更新され、環境が展開されたことを示します。 プロビジョニング時間が予想よりもかかる場合、 Microsoft サイト信頼性エンジニアリング チームはステータスを確認し、適切なアクションを実行します。 これらのアクションは、連絡を含む場合もあります。 環境がプロビジョニングされたら、**完全な詳細** をクリックして **詳細環境** ページを開き、システムにサインインしたり、監視状況を表示したり、関連する更新を表示したりできます。 
 

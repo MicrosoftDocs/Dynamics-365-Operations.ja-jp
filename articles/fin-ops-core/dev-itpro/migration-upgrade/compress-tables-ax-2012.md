@@ -2,7 +2,7 @@
 title: Dynamics AX 2012 環境でテーブルを圧縮する
 description: このトピックでは、Microsoft Dynamics AX 2012 環境でテーブルを圧縮する方法について説明します。
 author: ttreen
-ms.date: 04/26/2022
+ms.date: 05/23/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: ''
 ms.search.form: 2022-04-08
-ms.openlocfilehash: 1e9f8dc3656e12cad0b8997bc5c5bf976e3f9e9c
-ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
+ms.openlocfilehash: 78dac5b34461998dff886b2613a7a1e18ec36ac7
+ms.sourcegitcommit: 771465b63c9d919f043316a54b8e2b9b2e0605cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648753"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8794525"
 ---
 # <a name="compress-tables-in-microsoft-dynamics-ax-2012-environments"></a>Microsoft Dynamics AX 2012 環境でテーブルを圧縮する
 
@@ -198,6 +198,7 @@ BEGIN
                     INNER JOIN sys.tables AS T2 ON T2.object_id = T1.object_id
                     INNER JOIN sys.indexes AS T3 ON T3.object_id = T1.object_id AND T3.index_id = T1.index_id
                     WHERE T1.index_id > 1
+                    AND T2.schema_id = (select schema_id from sys.schemas where name = 'DBO')
                     AND T2.name = @tablename;
                 OPEN indexCursor;
                 FETCH NEXT FROM indexCursor INTO @indexName, @dataCompression;

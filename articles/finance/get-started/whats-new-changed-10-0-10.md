@@ -1,31 +1,31 @@
 ---
-title: " Dynamics 365 Finance 10.0.10 (2020 年 5 月) の新機能および変更された機能"
+title: Dynamics 365 Finance 10.0.10 (2020 年 5 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Finance 10.0.10 の新機能または変更された機能について説明します。
-author: roschlom
+author: kfend
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 17e0094bf4c8974ae5079b2fb2ca8ef74d272b64d9405e3971d39ce6802d8305
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88b9cb9996ce4b49265f0f8d2665428f5242970b
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781722"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8724827"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-finance-10010-may-2020"></a> Dynamics 365 Finance 10.0.10 (2020 年 5 月) の新機能および変更された機能
+# <a name="whats-new-or-changed-in-dynamics-365-finance-10010-may-2020"></a>Dynamics 365 Finance 10.0.10 (2020 年 5 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance 10.0.10 の新機能または変更された機能について列挙します。 このバージョンには 10.0.420 のビルド番号が含まれており、次のように使用できます。
+このトピックでは、Microsoft Dynamics 365 Finance 10.0.10 の新機能または変更された機能について説明します。 このバージョンには 10.0.420 のビルド番号が含まれており、次のように使用できます。
 
 - **プレビュー リリース :** 2020 年 3 月
 - **一般提供 (自己更新) :**  2020 年 4 月
@@ -62,14 +62,14 @@ ms.locfileid: "6781722"
  
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
-Dynamics 365 Finance 10.0.10 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.10 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md) を参照してください。
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
+Dynamics 365 Finance 10.0.10 には、プラットフォーム更新プログラムが含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.10 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb) を参照してください。
 
 ### <a name="regulatory-updates"></a>規制の更新
-Dynamics 365 Finance and Operations アプリの規制の更新については、[規制の更新](../localizations/regulatory-updates.md)を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
+Dynamics 365 財務と運用アプリの規制の更新については、[規制の更新](../localizations/regulatory-updates.md) を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
 
 ### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: 2020 リリースのウェーブ 1 プラン
 
@@ -79,12 +79,12 @@ Dynamics 365 Finance and Operations アプリの規制の更新については�
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[Dynamics 365 Finance で削除または廃止された機能](removed-deprecated-features-finance.md) トピックでは、Dynamics 365 for Finance and Operations で削除または廃止された機能について説明します。
+[Dynamics 365 Finance の削除済みまたは推奨されない機能](removed-deprecated-features-finance.md) のトピックでは、Dynamics 365 for Finance and Operations の削除済みまたは非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

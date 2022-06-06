@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce のクラウド配置のシステム要件
 description: このトピックでは、現在のバージョンの Dynamics 365 Commerce におけるクラウド配置のシステム要件を一覧表示します。
 author: jashanno
-ms.date: 03/01/2022
+ms.date: 05/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: retail
 ms.author: jashanno
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a8a20841a39568684f8f13f397a0d5dc5e626a28
-ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
+ms.openlocfilehash: 6666f41d052ce12b9de90e9580965769b48c3757
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370938"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713630"
 ---
 # <a name="system-requirements-for-cloud-deployments-of-dynamics-365-commerce"></a>Dynamics 365 Commerce のクラウド配置のシステム要件
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 このトピックでは、現在のバージョンの Dynamics 365 Commerce のクラウド配置のシステム要件を一覧表示します。 このステップが適切な場合は、コマースをインストールする前に、作業しているシステムがネットワーク、ハードウェア、およびソフトウェアの最小要件を満たしているか、または超えているかを検証する必要があります。
 
@@ -31,7 +32,7 @@ ms.locfileid: "8370938"
 
 Web アプリケーションは、指定されたオペレーティング システムで実行される次のすべての Web ブラウザで実行できます。
 
-- Windows 10 の Microsoft Edge (公開されている最新のバージョン)
+- Windows 11、Windows 10 の Microsoft Edge (公開されている最新のバージョン)
 - Google Chrome (公開されている最新バージョン) 
 - Apple Safari (公開されている最新バージョン)
 
@@ -45,14 +46,14 @@ Web アプリケーションは、指定されたオペレーティング シス
 > [!NOTE]
 > - タスク レコーダーがスクリーンショットをキャプチャし、生成された Microsoft Word ドキュメントにそれらを含めるには、プレリリース版の Chrome 拡張機能をインストールする必要があります。 <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
 > - 財務報告のワークフロー エディターおよびレポート デザイナーは、ClickOnce アプリケーションとして起動されます。 それには 64 ビットの互換性のあるオペレーティング システムが必要です。 Microsoft Edge と Internet Explorer (Microsoft Windows のサポートされているバージョン) のみが、ClickOnce アプリケーションをそのままの状態でサポートします。 Chrom を使用している場合、ClickOnce アプリケーションを使用するには、[Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) などの ClickOnce 拡張をインストールする必要があります。 匿名モードで Chrome を使用する場合、ClickOnce の拡張機能が匿名モードに対しても有効化されていることを確認します。
-> - PDF ファイルをプレビューするには、Windows 10 の Microsoft Edge (公開されている最新のバージョン)、もしくは Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン) などの最新のブラウザを使用することをお勧めします。
+> - PDF ファイルをプレビューするには、Windows 11 または Windows 10 の Microsoft Edge (公開されている最新のバージョン)、もしくは Windows 11、Windows 10、Windows 8.1、Windows 8、Windows 7、または Google Nexus 10 タブレットの Google Chrome (公開されている最新のバージョン) などの最新のブラウザーを使用することをお勧めします。
 
 ### <a name="supported-web-browsers-for-cloud-pos"></a>クラウド POS でサポートされている Web ブラウザー
 
 クラウド販売時点管理 (POS) は、指定されたオペレーティング システムで実行される次のすべての Web ブラウザーで実行できます。
 
-- Windows 10 の Microsoft Edge (公開されている最新のバージョン)
-- Windows 10、Windows 8.1、または Windows 7 の Chrome (公開されている最新のバージョン)
+- Windows 11、Windows 10 の Microsoft Edge (公開されている最新のバージョン)
+- Windows 11、Windows 10、Windows 8.1、Windows 7 の Chrome (公開されている最新のバージョン)
 
 ## <a name="network-requirements"></a>ネットワーク要件
 
@@ -77,9 +78,9 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 ## <a name="system-requirements-for-commerce-client-components"></a>コマース クライアント コンポーネントのシステム要件
 
-実稼働に移行する前に適切なパフォーマンステストを実行することが重要です。 次に示すのは、アプリケーションが機能するための最小システム要件であると考えられます。 目的のパフォーマンスを達成するには、データ量、時間あたりのトランザクション負荷、カスタマイズの影響などの概念を考慮します。 実装の初期段階と最終テストの前に再度、適切なパフォーマンステストを実施することで、必要なパフォーマンスを向上させることができます。また、基本ソリューションが必要な運用時間を満たしているかどうかを検証できます。
+実稼働に移行する前に適切なパフォーマンス テストを実行することが重要です。 次に示すのは、アプリケーションが機能するための最小システム要件であると考えられます。 目的のパフォーマンスを達成するには、データ量、時間あたりのトランザクション負荷、カスタマイズの影響などの概念を考慮します。 実装の初期段階と最終テストの前に再度、適切なパフォーマンス テストを実施することで、必要なパフォーマンスを向上させることができます。また、基本ソリューションが必要な運用時間を満たしているかどうかを検証できます。
 
-セルフサービス コンポーネントが SQL データベースを使用する場合は、[SQL サーバーのバージョンとライセンス](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) を確認することを強くお勧めします。 現在メインストリーム サポートの期間内にある SQL Server のバージョンの使用をお勧めします。 [製品とサービス ライフサイクル情報](/lifecycle/products/) という記事でサポート日を製品ごとに検索できます。 セルフサービス コンポーネント用の SQL データベースには、SQL Server 2017 以降が必要です。 使用されている SQL Server のバージョンには、フルテキスト検索機能がインストールされている必要があります。 常に利用可能な最新のバージョンを使用し、すべての最新サービス パックをインストールすることをお勧めします。 これらの推奨事項に従うことで、互換性とセキュリティの両方を確保できます。 レガシ セルフサービス インストーラーは、Service Pack 2 以降の SQL Server 2016 もサポートしています。
+セルフサービス コンポーネントが SQL データベースを使用する場合は、[SQL Server のバージョンとライセンス](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) を確認することを強くお勧めします。 現在メインストリーム サポートの期間内にある SQL Server のバージョンの使用をお勧めします。 [製品とサービス ライフサイクル情報](/lifecycle/products/) という記事でサポート日を製品ごとに検索できます。 セルフサービス コンポーネント用の SQL データベースには、SQL Server 2017 以降が必要です。 使用されている SQL Server のバージョンには、フルテキスト検索機能がインストールされている必要があります。 常に利用可能な最新のバージョンを使用し、すべての最新サービス パックをインストールすることをお勧めします。 これらの推奨事項に従うことで、互換性とセキュリティの両方を確保できます。 レガシ セルフサービス インストーラーは、Service Pack 2 以降の SQL Server 2016 もサポートしています。
 
 セルフサービス コンポーネントがサーバー証明書を使用する場合、証明書の有効期限を管理することが重要です。 既定では、証明書は 1 つの暦年 (365 日) 後に期限切れになります。 サーバー証明書を使用するセルフサービス コンポーネントには、ハードウェア ステーション、または Commerce Scale Unit (自己ホスト) が含まれます。
 
@@ -97,14 +98,13 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 #### <a name="modern-pos"></a>Modern POS
 
-- 使用可能な最新の更新プログラムを含む Windows 10 (Pro、Enterprise、LTSC、および IOT エンタープライズ エディション) がサポートされます。
+- 使用可能な最新の更新プログラムを含む Windows 11、Windows 10 (Pro、Enterprise、LTSC、および IOT エンタープライズ エディション) がサポートされます。
 
     > [!NOTE]
-    > Windows 更新プログラムを適切にスケジュール設定できるよう、Windows 10 Pro はドメインの一部を除いてお勧めしません。
+    > Windows 更新プログラムを適切にスケジュール設定できるよう、Windows 11 Pro と Windows 10 Pro はドメインの一部を除いてお勧めしません。
 
 - Windows Server 2019 はサポートされます。
 - 別のセルフサービス コンポーネント (たとえば、ハードウェア ステーションまたは Commerce Scale Unit \[自己ホスト\]) と同じコンピューターの Modern POS を使用することはお勧めしません。
-- レガシ セルフサービス インストーラーは、利用可能な最新の更新プログラムを使用して Windows Server 2016 および Windows 10 LTSB もサポートします。
 - Modern POS for iOSは、iOS バージョン 11 以降をサポートしています。
 - Modern POS for Android は、Android バージョン 6.0 以降をサポートしています。
 
@@ -113,10 +113,10 @@ Web アプリケーションは、指定されたオペレーティング シス
 
 #### <a name="hardware-station-and-commerce-scale-unit-self-hosted"></a>ハードウェア ステーションと Commerce Scale Unit (自己ホスト)
 
-- 使用可能な最新の更新プログラムを含む Windows 10 (Pro、Enterprise、LTSC、および IOT エンタープライズ エディション) がサポートされます。
+- 使用可能な最新の更新プログラムを含む Windows 11、10 (Pro、Enterprise、LTSC、および IOT エンタープライズ エディション) がサポートされます。
 
     > [!NOTE]
-    > Windows 更新プログラムを適切にスケジュール設定できるよう、Windows 10 Pro はドメインの一部を除いてお勧めしません。
+    > Windows 更新プログラムを適切にスケジュール設定できるよう、Windows 11 Pro と Windows 10 Pro はドメインの一部を除いてお勧めしません。
 
 - Windows Server 2019 はサポートされます。
 - 別のセルフサービス コンポーネント (たとえば、Modern POS) と同じコンピューターの セルフサービス コンポーネントを使用することはお勧めしません。
@@ -179,7 +179,7 @@ Connector for Microsoft Dynamics AX 2012 R3 には、Async Server Connector serv
 - どちらのコンポーネントも 32 ビット アプリケーションですが、x86 と x64 アーキテクチャの両方で動作します。
 - 次のオペレーティング システムでは、両方のコンポーネントがサポートされています。
 
-    - Windows 10 Pro、Enterprise、および Enterprise LTSB エディション
+    - Windows 11、Windows 10 Pro、Windows Enterprise、および Windows Enterprise LTSB エディション
 
         > [!NOTE]
         > Windows 更新プログラムを適切にスケジュール設定できるよう、Windows 10 Pro はドメインの一部を除いてお勧めしません。

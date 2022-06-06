@@ -2,21 +2,22 @@
 title: PageSubmitArgs タイプ
 description: ページの OnSubmit イベントに指定された引数。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: d556304d5c66a2f8f68a80e501a38c048b7693c7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ec1ed23f5869bc0794930acd403a09c41b8711e3
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783170"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811268"
 ---
 # <a name="pagesubmitargs-type"></a>PageSubmitArgs タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ページの OnSubmit イベントに指定された引数。
 

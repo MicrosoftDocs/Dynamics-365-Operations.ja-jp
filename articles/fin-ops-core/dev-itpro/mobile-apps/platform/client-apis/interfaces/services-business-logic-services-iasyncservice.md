@@ -2,21 +2,22 @@
 title: AsyncService タイプ
 description: ビジネス ロジック コードから非同期操作を実行する機能を提供します。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 6ee86278c3827e5f3a06e7f6b1a36bddec206858
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 733ab5c37f851cd1b041d281e13d3f53294502dc
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781552"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811143"
 ---
 # <a name="asyncservice-type"></a>AsyncService タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ビジネス ロジック コードから非同期操作を実行する機能を提供します。
 

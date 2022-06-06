@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: kfend
 ms.custom: 25531
 ms.assetid: 05e85771-44e1-4b0a-8dd2-a878be5a3309
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2f3ecb82eb6f30bcfacf0a64c335880bf3a8426
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ee05d1999f3d65bb90e2212c3a71de2e4aa850e4
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782903"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734977"
 ---
 # <a name="migrate-default-dimensions-controls-to-dimension-entry-controls"></a>既定の分析コード コントロールの分析コード エントリ コントロールへの移行
 

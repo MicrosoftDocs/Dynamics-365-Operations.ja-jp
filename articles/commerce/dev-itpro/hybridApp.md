@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-ms.openlocfilehash: bd06f17e7515ef81fa41e6f487f984a51776f586
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 95d4855f12a39ac6496a9c7ec0fcac84bb9bc6a8
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384577"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711934"
 ---
 # <a name="set-up-pos-hybrid-app-on-android-and-ios"></a>Android および iOS での POS ハイブリッド アプリのセットアップ
 [!include [banner](../includes/banner.md)]
@@ -81,7 +81,7 @@ iOS で Xamarin をインストールに関する詳しい手順については�
   
   ### <a name="build-the-ios-retail-hybrid-app"></a>iOS Retail ハイブリッド アプリの構築
   
-  1.  [Retail SDK フォルダー](/retail-sdk/retail-sdk-overview#download-the-retail-sdk) で、SampleExtensions\HybridApp\iOS\solution を開きます。
+  1.  [Retail SDK フォルダー](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk) で、SampleExtensions\HybridApp\iOS\solution を開きます。
       Mac に接続して Visual Studio でアプリケーションを構築したら、iOS デバイスの種類を選択し、選択したデバイス上にアプリケーションを展開します。
       
        ![展開用 POS iOS アプリ VS 設定。](./media/iOSSetting.png)

@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Finance 10.0.21 (2021 年 10 月) の新機能または変更された機能
+title: Dynamics 365 Finance 10.0.21 (2021 年 10 月) の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.21 プレビュー リリースの新機能または変更された機能について説明します。
 author: kfend
 ms.date: 10/28/2021
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1ed951de1789cb7d5eb8819ca69ad046cfbf3d56
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: e3635baf8aa95ca8ecea598ec3bbc25369361fb0
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715218"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762611"
 ---
-# <a name="preview-features-in-dynamics-365-finance-10021-october-2021"></a>Dynamics 365 Finance 10.0.21 の機能のプレビュー (2021 年 10 月)
+# <a name="preview-features-in-dynamics-365-finance-10021-october-2021"></a>Dynamics 365 Finance 10.0.21 (2021 年 10 月) のプレビュー機能
 
 [!include [banner](../includes/banner.md)]
 
@@ -169,29 +169,29 @@ ms.locfileid: "7715218"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
-Dynamics 365 Finance 10.0.21 には、プラットフォーム更新プログラムが含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.21 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md) を参照してください。 
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
+Dynamics 365 Finance 10.0.21 には、プラットフォーム更新プログラムが含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.21 のプラットフォーム更新プログラム](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md) を参照してください。 
 
 ### <a name="bug-fixes"></a>バグ修正 
 この更新プログラムに含まれるバグの修正については、Lifecycle Services (LCS) にサインインし、[サポート技術情報の記事](https://fix.lcs.dynamics.com/Issue/Details?bugId=605166) を参照してください。
 
 ### <a name="regulatory-updates"></a>規制の更新
-Finance and Operations アプリの規制の更新については、[規制の更新](../localizations/regulatory-updates.md)を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
+財務と運用アプリの規制の更新については、[規制の更新](../localizations/regulatory-updates.md) を参照してください。 規制の更新を調べるもう 1 つの方法は、LCS にログインして、問題検索ツールを使用して予定されている規制更新を表示することです。 問題検索では、国、機能の種類、およびリリースを使用して検索を実行できます。 
 
 ### <a name="dynamics-365-2021-release-wave-plans"></a>Dynamics 365: 2021 リリース ウェーブ プラン
 
 当社のビジネス アプリやプラットフォームの次回および最近リリースされた機能について検討中ですか?
 
-[Dynamics 365 Finance 2021 リリース ウェーブ 1](/dynamics365/release-plan/2021wave1/finance-operations/dynamics365-finance) および [Dynamics 365 Finance 2021 リリース ウェーブ 2](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際にそれらの情報を参照できます。
+[Dynamics 365 Finance 2021 リリース ウェーブ 1](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance) および [Dynamics 365 Finance 2021 リリース ウェーブ](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance) をご確認ください。 あらゆる詳細情報を端から端まで徹底的に捕捉して一元化しました。計画を策定する際にそれらの情報を参照できます。
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[Dynamics 365 Finance で削除または廃止された機能](removed-deprecated-features-finance.md) トピックでは、Dynamics 365 Finance で削除または廃止された機能について説明します。
+[Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックでは、Dynamics 365 Finance の削除または非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

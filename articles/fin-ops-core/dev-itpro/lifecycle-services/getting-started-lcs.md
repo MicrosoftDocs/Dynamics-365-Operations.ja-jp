@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbd46c5894d382dd79780c9d8cc4d9b9fcbd50fe
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: d1eddb675fbfbb3f9428b187be3d58db20c3a6a4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "7984982"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689174"
 ---
 # <a name="lifecycle-services-lcs-for-finance-and-operations-apps-partners"></a>Lifecycle Services (LCS) for Finance and Operations アプリのパートナー
 
@@ -42,7 +42,6 @@ Finance and Operations パートナーとして、 [プレビュー サブスク
 
 利用可能なビジネス プロセスの理解を助け、自分のサブスクリプションの必要に関する評価を助ける新しいプロセスで作業します。 パートナーだけが新しいクラウド環境をプロビジョニングできることに注意してください。 
 
-![見込みプリセールス プロジェクト。](https://msdnshared.blob.core.windows.net/media/2016/05/27-1024x514.png)
 
 #### <a name="migrate-create-solutions-and-learn-the-project-for-finance-and-operations-apps"></a>ソリューションを移行および作成し、財務と運用アプリのプロジェクトについて学ぶ 
 

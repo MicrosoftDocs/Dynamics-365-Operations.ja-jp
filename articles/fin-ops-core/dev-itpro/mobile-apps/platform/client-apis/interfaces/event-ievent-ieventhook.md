@@ -2,21 +2,22 @@
 title: EventHook タイプ<T>
 description: EventHook タイプ
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 9edbce8c112aeed8d70104eca3a40eb5aa9814e6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7b641e164eab9b22c9fa96f743d3a7e63e7ad76a
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781729"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811448"
 ---
 # <a name="eventhook-typelttgt"></a>EventHook タイプ&lt;T&gt;
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ### <a name="hierarchy"></a>階層
 

@@ -2,7 +2,7 @@
 title: Microsoft Dataverse 仮想エンティティを有効化する
 description: このトピックでは、Microsoft Dataverse で財務と運用アプリの仮想エンティティを有効にする方法について説明します。
 author: jaredha
-ms.date: 10/18/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-10-14
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: ffa193fa56b52c66cc892f9893d5a25be2afed71
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: bdc42311c146ffdecafc9008c9c3a25df4b25ae7
+ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061768"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8747595"
 ---
 # <a name="enable-microsoft-dataverse-virtual-entities"></a>Microsoft Dataverse 仮想エンティティを有効化する
 
@@ -32,13 +32,18 @@ ms.locfileid: "8061768"
 
 ## <a name="generate-virtual-entities"></a>仮想エンティティの生成
 
-1. Dataverse で、**高度な検索** フィルタ― ボタンを選択します。
-2. **利用可能な Finance and Operations エンティティ** を検索し、**結果** を選択します。
+1. [Power Platform 管理センター](https://admin.powerplatform.microsoft.com)を開き、**環境** タブを選択します。
+2. **環境** の一覧で、財務と運用アプリ環境に関連付けられている Power Platform 環境を選択します。
+3. 環境ページの **詳細** セクションで **環境 URL** リンクを選択して Power Platform 環境を開きます。
+4. ページの右上で、**設定** のギア アイコンを開き、**詳細設定** を選択します。
+5. ページの右上で、**設定** ページを開き、**高度な検索** フィルター アイコンを選択します。
+6. **高度な検索** ページの **検索対象** ドロップダウン リストで、**利用可能な財務と運用エンティティ** を選択します。 
+7. 結果を特定のエンティティに制限する追加のフィルター条件を入力し、**結果** を選択します。
 
     ![エンティティのカタログ。](../media/fovecatalog.png)
 
-3. 有効にするエンティティを検索して開きます。
-4. **表示** チェックボックスを選択して、変更を保存します。
+8. 有効にするエンティティを検索して開きます。
+9. **表示** チェック ボックスを選択して、変更を保存します。
 
     ![エンティティに選択された表示チェックボックス。](../media/foveenable.png)
 

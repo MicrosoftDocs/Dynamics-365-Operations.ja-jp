@@ -1,25 +1,25 @@
 ---
 title: 財務諸表での利益剰余金計算
 description: このトピックでは、財務諸表 **利益剰余金計算** の拡張機能の使用方法について説明します。 この拡張機能は、為替換算を使用する組織に影響します。
-author: jiwo
+author: jinniew
 ms.date: 09/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: IT Pro, Developer
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 261824
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Version 10.0.8
-ms.openlocfilehash: e3aefd4e3d2ba14021bcb88431abd5da3f980b42
-ms.sourcegitcommit: f76fecbc28c9a6048366e8ead70060b1f5d21a97
+ms.openlocfilehash: 71e9c5663f226417e0ecc71a55d60050c0de98b1
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7616068"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725835"
 ---
 # <a name="retained-earnings-calculation-in-financial-reporting"></a>財務諸表での利益剰余金計算
 

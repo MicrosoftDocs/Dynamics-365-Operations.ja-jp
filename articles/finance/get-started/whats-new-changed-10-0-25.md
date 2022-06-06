@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Finance 10.0.25 の新機能または変更された機能
+title: Dynamics 365 Finance 10.0.25 の新機能および変更された機能
 description: このトピックでは、Dynamics 365 Finance バージョン 10.0.25 プレビュー リリースの新機能または変更された機能について説明します。
 author: kfend
 ms.date: 01/31/2022
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 38f62b6d79fa301a234c2a47a0fddb2977f9772e
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 81d681091f19e6bf47db19a1f1286a37f1a1f11f
+ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075764"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8737333"
 ---
 # <a name="preview-of-dynamics-365-finance-10025-april-2022"></a>Dynamics 365 Finance 10.0.25 (2022 年 4 月) のプレビュー
 
@@ -52,6 +52,7 @@ ms.locfileid: "8075764"
 | 買掛金  | 請求仕訳帳に支払スケジュールを適用する  | この機能により、仕入先請求仕訳帳の支払スケジュールが有効となります。 新しい請求仕訳帳を作成するときに、支払条件が仕入先マスタ データで管理され、支払スケジュールがその支払条件に対して構成されている場合、支払スケジュールは **請求仕訳帳** ページの新しいフィールド **支払スケジュール** に自動的に設定されます。 必要に応じて、ビジネス ニーズに応じて既定の支払スケジュールを手動で変更できます。 仕入先請求仕訳帳の転記時に、支払スケジュールに従って複数の仕入先支払明細行が自動的に生成されます。  | 機能管理   |
 | 買掛金  | 会社間仕入先請求書パラメーターで仕入先請求書ワークフローをバイパスする   | この機能により、[会社間の内部販売プロセス](/dynamicsax-2012/appuser-itpro/create-and-invoice-an-intercompany-sales-order-for-an-external-customer) の古い制限が削除されます。 過去に、会社間販売会社で仕入先請求書ワークフローが構成されている場合は、会社間販売注文に請求することはできません。    | パラメーター  |
 | 予算作成   | Excel テンプレートのアップロードを使用した予算残高の更新  | 有効にした場合に使用されるデータ管理フレームワーク (DMF) アップロード アプローチを使用するパラメーターが各予算計画レイアウトに追加されました。 このパラメータは DMF プロジェクトを作成し、予算計画にある予算計画明細行の一括更新メニュー項目を有効にします。 ワークシートを開いて Microsoft Excel アドイン ツールで 公開したり、一括更新ツールを使用してアップロードするワークシートを保存することができます。   |  パラメーター  |
+| 一般会計 | 元帳決済から年度末決算までの認識 | この機能により、一般会計内で決済される情報を確認するために、元帳決済と年度末決算の両方が強化されます。 年度末決済を実行すると、未決済元帳トランザクションだけが期首残高に含まれます。 新しいオプションも追加され、組織が期首残高としてランザクションの詳細を前倒しできるようになり、次の会計年度の元帳トランザクションの決済が容易になります。 この機能を有効にする前に、元帳が会計年度全体に到達する場合、元帳決済内でいくつかのクリーンアップが必要になる場合があります。 詳細情報については、[元帳決済から年度末決算までの認識](../general-ledger/awareness-between-ledger-settlement-year-end-close.md) を参照してください。 | 機能管理|
 
 
 ## <a name="feature-enhancements-included-in-this-release"></a>このリリースに含まれる機能拡張
@@ -84,12 +85,12 @@ Dynamics 365 Finance 10.0.25 には、プラットフォーム更新プログラ
 
 ### <a name="removed-and-deprecated-features"></a>削除済みおよび非推奨の機能
 
-[Dynamics 365 Finance で削除または廃止された機能](removed-deprecated-features-finance.md) トピックでは、Dynamics 365 Finance で削除または廃止された機能について説明します。
+[Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックでは、Dynamics 365 Finance の削除または非推奨の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Finance の削除済みまたは非推奨の機能](removed-deprecated-features-finance.md) のトピックに発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

@@ -2,21 +2,22 @@
 title: リスト タイプ
 description: リスト コントロール タイプ。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: d3dbe84a2a2f0dddddc6ee73366fc4721b110c9b
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ca79ceab0580132d975c5ce975572db1dfb39712
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781538"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811593"
 ---
 # <a name="list-type"></a>リスト タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 リスト コントロール タイプ。
 リストは、任意の数の行を含むコントロールです。

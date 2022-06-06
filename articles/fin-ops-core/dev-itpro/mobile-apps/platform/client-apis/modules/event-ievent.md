@@ -2,21 +2,22 @@
 title: イベント モジュール
 description: イベント モジュール
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 4159bbeb13a649cd4d92ce9edae134f208f976d2
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 175c96b0e397f833e20345d0b154e5a0cec9a583
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781726"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811264"
 ---
 # <a name="event-module"></a>イベント モジュール
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ## <a name="index"></a>指数
 

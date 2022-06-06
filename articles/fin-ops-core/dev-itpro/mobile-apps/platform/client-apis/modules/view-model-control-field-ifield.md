@@ -2,21 +2,22 @@
 title: フィールド モジュール
 description: フィールドのランタイムのインスタンスを表します。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: f287977a8f0942309ba21bf15233645a2e679101
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7700f8c0c78559afffc3e167b3bda56586191123
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782168"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811442"
 ---
 # <a name="field-module"></a>フィールド モジュール
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 フィールドのランタイムのインスタンスを表します。
 

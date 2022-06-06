@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerceコンポーネント バージョンの管理要件
 description: このトピックでは、Microsoft Dynamics 365 Commerce エコシステムのすべてのコンポーネントに対する、コンポーネント バージョン要件および依存関係の概要について説明します。
 author: rezaassadi
-ms.date: 04/13/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 0b60fd168670ffe6dd45275edd2e93aa0c4bc8de
-ms.sourcegitcommit: e8a2a1e34fa48a42afac9724828f4ec72b6d7085
+ms.openlocfilehash: 746a1c34d54a0ff9deca21509399632cfa0459e3
+ms.sourcegitcommit: 4caec3a2be00f2e4e17c02c7f2e9597602b456b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8573634"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8783382"
 ---
 # <a name="dynamics-365-commerce-component-versioning-requirements"></a>Dynamics 365 Commerceコンポーネント バージョンの管理要件
 
@@ -70,7 +70,7 @@ ms.locfileid: "8573634"
 
 ## <a name="one-version-requirements"></a>1 つのバージョン要求
 
-コマース コンポーネントは、2018 年 1 月に発表された同じ [1 つのバージョンのサービス更新](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/)、およびその後 2019 年 6 月に発表され公開された[財務と運用アプリの柔軟なサービスの更新](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)に従います。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](../fin-ops-core/fin-ops/get-started/one-version.md)を参照してください。
+Commerce コンポーネントは、1 つのバージョン サービスの更新をフォローします。 詳細については、[1 つのバージョン サービスに関してよく寄せられる質問](../fin-ops-core/fin-ops/get-started/one-version.md)を参照してください。
 
 ### <a name="cloud-components"></a>クラウド コンポーネント
 
@@ -80,27 +80,18 @@ ms.locfileid: "8573634"
 - Commerce Scale Unit (クラウド自己ホスト)
 - Commerce SDK および関連するローカル サイト コンフィギュレーション (モジュール、データア クション、テーマなど)
 
-たとえば、現在バージョン 10.0.23 を使用している顧客は、バージョン 10.0.24、10.0.24、および 10.0.26 に対する更新を一時停止できます。 ただし、バージョン 10.0.27 に更新する必要があります。 このシナリオでは、バージョン 10.0.28 が使用可能になると、バージョン 10.0.23 はサポートされなくなります。
+たとえば、現在バージョン 10.0.23 を使用している顧客は、バージョン 10.0.24、10.0.25、および 10.0.26 に対する更新を一時停止できます。 ただし、バージョン 10.0.27 に更新する必要があります。 このシナリオでは、バージョン 10.0.28 が使用可能になると、バージョン 10.0.23 はサポートされなくなります。
 
 ### <a name="in-store-components"></a>ストア内のコンポーネント
 
-顧客は、次のコンポーネントに対して最大で 7 回連続して更新の一時停止が可能です。 (7 回の更新は、約 12 磨月に対応しています。)
-
-- Commerce Scale Unit (ストア内でホスト)
-- Modern POS
+顧客は、次のコンポーネントに対して最大で 7 回連続して更新の一時停止が可能です:
+- Commerce Scale Unit (自己ホスト)
+- Modern POS または Store Commerce
 - ハードウェア ステーション
 
-たとえば、現在バージョン 10.0.23 を使用している顧客は、バージョン 10.0.24、10.0.24、および 10.0.26 に対する更新を一時停止できます。 ただし、バージョン 10.0.27 に更新する必要があります。 このシナリオでは、バージョン 10.0.28 が使用可能になると、バージョン 10.0.23 はサポートされなくなります。
+たとえば、現在バージョン 10.0.23 を使用している顧客は、リリースされたバージョン10.0.24、10.0.25、10.0.26、10.0.27、10.0.28、10.0.29 および 10.0.30 に対する更新を一時停止できます。 ただし、バージョン 10.0.31 に更新する必要があります。 このシナリオでは、バージョン 10.0.31 が使用可能になると、バージョン 10.0.23 はサポートされなくなります。
 
 ## <a name="additional-resources"></a>追加リソース
-
-### <a name="one-version-service-updates"></a>1 つのバージョンのサービス更新
-
-1 つのバージョン サービスの更新詳細は、次のリソースをご覧ください。
-
-- [1 つのバージョンのサービス更新に関するよく寄せられる質問](../fin-ops-core/fin-ops/get-started/one-version.md)
-- [Dynamics 365 の更新方法を近代化](https://cloudblogs.microsoft.com/dynamics365/bdm/2018/07/06/modernizing-the-way-we-update-dynamics-365/)
-- [財務と運用アプリの新しい柔軟なサービスの更新](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/)
 
 ### <a name="component-selection"></a>コンポーネントの選択
 

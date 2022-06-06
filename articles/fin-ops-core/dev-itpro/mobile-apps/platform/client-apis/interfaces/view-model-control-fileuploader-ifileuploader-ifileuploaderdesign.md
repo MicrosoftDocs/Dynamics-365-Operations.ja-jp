@@ -2,21 +2,22 @@
 title: FileUploaderDesign タイプ
 description: ファイル アップローダー デザイン オブジェクトのタイプ。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 3e07535cd0a269034f3455be6badf2bd36134c22
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 10a66abf0f2f30c7b847916f4e4db518363b4360
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782711"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811310"
 ---
 # <a name="fileuploaderdesign-type"></a>FileUploaderDesign タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ファイル アップローダー デザイン オブジェクトのタイプ。
 

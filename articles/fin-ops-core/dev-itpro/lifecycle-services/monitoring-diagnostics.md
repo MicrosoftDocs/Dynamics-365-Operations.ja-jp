@@ -2,7 +2,7 @@
 title: Lifecycle Services (LCS) の監視および診断ツール
 description: このトピックでは、環境の状態を監視、診断、分析するために、Microsoft Dynamics Lifecycle Services が提供するツールについて説明します。
 author: angelmarshall
-ms.date: 08/23/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fdc800bef61ad74eb3958038a052d513b289c26a
-ms.sourcegitcommit: 59d507c0dd6f0bec3ab72034e12d582133ab2a52
+ms.openlocfilehash: 8cdeab12b2ed15d059626da807c47d48087a75f9
+ms.sourcegitcommit: 00b39900d3cbdbc9ca1ab3145265007f5dc98a3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "7496588"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "8806333"
 ---
 # <a name="monitoring-and-diagnostics-tools-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) の監視および診断ツール
 
@@ -141,7 +141,7 @@ Finance and Operations などの管理されたクラウド サービスにつ�
 
 高度なトラブルシューティングでは、原情報ログを表示できます。 一連の定義済クエリを使用して、問題の未加工ログを取得することができます。 さらに高度な分析を行うためにログをエクスポートすることができます。 以下のタイプのクエリを使用できます。
 
-- 速度の遅いクエリ
+- 長いクエリ
 - デッドロック
 - クラッシュ
 - 財務諸表の問題

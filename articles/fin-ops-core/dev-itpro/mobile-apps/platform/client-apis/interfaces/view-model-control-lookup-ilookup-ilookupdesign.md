@@ -2,21 +2,22 @@
 title: LookupDesign タイプ
 description: ルックアップ デザイン オブジェクトの種類。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: b49b263ece7c2ea8be28c68503669e9d2c6ad3a2
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 13f23bf94a4b5cf29ededfa3c6225cb6b786cd27
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782703"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811135"
 ---
 # <a name="lookupdesign-type"></a>LookupDesign タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ルックアップ デザイン オブジェクトの種類。
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cd9f9a576704c9423376f2ff0e8ab3600745eba
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 4fb765db8dd64c8e75432d4a2b1b70b5187f8dff
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782881"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712077"
 ---
 # <a name="respond-to-requests-for-personal-data-in-human-resources"></a>人事管理の個人データ要求への対応
 
@@ -101,7 +101,6 @@ ms.locfileid: "7782881"
 
 補償は契約者に割り当てられません。 したがって、これらのステップは、前のプロセスでスキップすることができます。
 
-管理者は、<https://attract.talent.dynamics.com/personreport> を使用して、Microsoft Dynamics 365 Talent: Attract および Microsoft Dynamics 365 Talent: Onboard の個人データを検索し、エクスポートできます。
 
 ## <a name="additional-resources"></a>追加リソース
 GDPR の詳細については、[欧州連合の Web サイト](https://europa.eu/) および [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) を参照してください。

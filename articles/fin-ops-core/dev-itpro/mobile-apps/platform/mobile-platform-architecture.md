@@ -2,7 +2,7 @@
 title: モバイル プラットフォームのアーキテクチャと設計の考慮事項
 description: このトピックでは、モバイル プラットフォームのアーキテクチャと設計の考慮事項を提供します。
 author: tonyafehr
-ms.date: 09/17/2019
+ms.date: 05/26/2022
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -10,16 +10,17 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.openlocfilehash: ae854e156d6e0f386ac357b46ecc7dc25f734519
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 653292620ea0a4442d8685cc11a19ed41a8b3a8c
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986073"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8810990"
 ---
 # <a name="architecture-and-design-considerations-for-the-mobile-platform"></a>モバイル プラットフォームのアーキテクチャと設計の考慮事項
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 モバイル アプリは、モバイル ワークスペース (およびページに表示されるページとフィールド) のメタデータを取得し、ページのフィールドのデータを取得するために Application Object Server (AOS) と通信します。 モバイル アプリがページのデータを要求するたびに、AOS では、モバイル アプリを使うユーザーのコンテキストで使用している新しいセッションを作成します。 AOSは、次にユーザーのコンテキストを使用して、対応するフォーム (対応するメニュー項目を使用) を開きます。 AOS は、すばやく連続して複数のフォームを開くことができ、それらのフォーム (フィルター処理、情報ボックスを開く、タブ ページの変更、ボタンのクリック) に対してアクションを実行できます。 フォーム上のビジネス ロジックも通常どおり実行されます。 そのプロセスを通じて AOS は要求されたフィールドからデータ値を収集し、そのデータをモバイル アプリに送り返します。 
 

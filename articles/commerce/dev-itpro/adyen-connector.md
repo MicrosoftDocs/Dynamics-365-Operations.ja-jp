@@ -2,7 +2,7 @@
 title: Adyen 向け Dynamics 365 Payment Connector の概要
 description: このトピックでは、Adyen 向け Microsoft Dynamics 365 Payment Connector の概要について説明します。
 author: rassadi
-ms.date: 03/08/2022
+ms.date: 05/06/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7f7adc65e7d0be226af541d28b5fa00e046c1b86
-ms.sourcegitcommit: 293df12697166556b1da0c9a34d2d8679dc8c0a9
+ms.openlocfilehash: 0d67e8bcec4d78b9f321c5c46eecd076cf5db1a6
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8397633"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722110"
 ---
 # <a name="dynamics-365-payment-connector-for-adyen-overview"></a>Adyen 向け Dynamics 365 Payment Connector の概要
 
@@ -50,20 +50,6 @@ ms.locfileid: "8397633"
 
 ---
 
-# <a name="10020"></a>[10.0.20](#tab/10-0-20)
-### <a name="dynamics-365-retail-pos-version-10020"></a>Dynamics 365 Retail POS バージョン 10.0.20
-| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
-| --- | --- |
-| adyen_v1_62p9 | adyen_v1_64p7 |
-| | *注: ギフト カードのキャッシュ アウトに関する詳細については、以下を参照してください* |
-
-# <a name="10021"></a>[10.0.21](#tab/10-0-21)
-### <a name="dynamics-365-retail-pos-version-10021"></a>Dynamics 365 Retail POS バージョン 10.0.21
-| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
-| --- | --- |
-| adyen_v1_64p7 | adyen_v1_65p8 |
-| | *注: ギフト カードのキャッシュ アウトに関する詳細については、以下を参照してください* |
-
 # <a name="10022"></a>[10.0.22](#tab/10-0-22)
 ### <a name="dynamics-365-retail-pos-version-10022"></a>Dynamics 365 Retail POS バージョン 10.0.22
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
@@ -87,6 +73,18 @@ ms.locfileid: "8397633"
 | 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
 | --- | --- |
 | adyen_v1_71p16 | adyen_v1_73p6 |
+
+# <a name="10026"></a>[10.0.26](#tab/10-0-26)
+### <a name="dynamics-365-retail-pos-version-10026"></a>Dynamics 365 Retail POS バージョン 10.0.26
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_73p6 | adyen_v1_75p13 |
+
+# <a name="10027"></a>[10.0.27](#tab/10-0-27)
+### <a name="dynamics-365-retail-pos-version-10027"></a>Dynamics 365 Retail POS バージョン 10.0.27
+| 最小 Adyen ファームウェア バージョン | 最大 Adyen ファームウェア バージョン |
+| --- | --- |
+| adyen_v1_73p6 | adyen_v1_75p13 |
 
 ---
 

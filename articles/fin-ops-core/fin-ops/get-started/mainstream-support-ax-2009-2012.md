@@ -1,23 +1,23 @@
 ---
 title: Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了
 description: このトピックでは、Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了に関する詳細情報を提供します。
-author: ShellyBakke
-ms.date: 04/19/2022
+author: sericks007
+ms.date: 05/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1b4b12a2950159560a4836a18af1936a5c6ca4a7
-ms.sourcegitcommit: 724c976d080fd28d797f2406c6a6e635ca79a441
+ms.openlocfilehash: c2efef453a47906eef812f55a4323311eccbb986
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8615675"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713247"
 ---
 # <a name="end-of-mainstream-support-for-microsoft-dynamics-ax-2009-dynamics-ax-2012-dynamics-ax-2012-r2-and-dynamics-ax-2012-r3"></a>Microsoft Dynamics AX 2009、Dynamics AX 2012、Dynamics AX 2012 R2 および Dynamics AX 2012 R3 のメインストリーム サポートの終了
 
@@ -82,10 +82,10 @@ LCS 警告プロジェクトには、識別または報告された法律上の�
 はい、より大きな機能については、[グローバリゼーション リソース](../../dev-itpro/lcs-solutions/country-region.md) にて公開しています。
 
 ### <a name="can-i-view-and-try-actual-regulatory-features-in-dynamics-365-prior-to-a-release"></a>リリースの前に Dynamics 365 で実際の規制に関する機能を確認および試すことはできますか ?
-はい、Dynamics 365 用のクラウド ライセンスを購入している場合、およびプレビュー早期アクセス プログラム (PEAP) にアクセスできる場合は、この操作を実行できます。 当局によって早期に指定された規制上の変更の場合は、この機能を法適用日前日 (または最初の提出日の最新の日付) に PEAP で利用可能になります。
+はい、Dynamics 365 用のクラウド ライセンスを購入している場合はこの操作を実行できます。 すべてのサービス更新は、Lifecycle Services の共有アセット ライブラリを介して、プレビューできるようになります。 当局によって早期に指定された規制上の変更の場合は、この機能を法適用日前日 (または最初の提出日の最新の日付) にプレビューで利用可能になります。
 
 ### <a name="can-i-access-the-code-and-configurations-for-regulatory-features-prior-to-a-release"></a>リリース前に、規制の機能のコードとコンフィギュレーションにアクセスできますか ?
-はい、コードは **ソフトウェア配置可能パッケージ** にある共有資産ライブラリの LCS プロジェクト **PEAP 資産** で利用可能です。  PEAP プログラムにサインアップするには、[財務と運用アプリケーションのプレビュー アーリー アクセス プログラム](https://aka.ms/peap)アンケートを完了します。 
+はい、10.0.26 から、すべてのサービス更新のプレビュー パッケージが、**ソフトウェア配置可能パッケージ** の下にある LCS の共有アセット ライブラリを通じてすべてのお客様が利用できるようになります。 
 
 構成はグローバル リポジトリで利用可能です。 詳細については、[ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする](../../dev-itpro/analytics/er-download-configurations-global-repo.md)を参照してください。
 

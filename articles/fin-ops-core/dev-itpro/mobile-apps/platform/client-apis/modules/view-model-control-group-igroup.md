@@ -2,21 +2,22 @@
 title: グループ モジュール
 description: グループ コントロールは、任意の数のコントロールを子として持つコンテナー コントロールです。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: f955b4d4202f914c0e565b1ba7234467d7e73ab1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 4cb21f10c89d91780d288c5c76e956082f6cfdf8
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781518"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811147"
 ---
 # <a name="group-module"></a>グループ モジュール
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 グループ コントロールは、任意の数のコントロールを子として持つコンテナー コントロールです。
 

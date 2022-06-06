@@ -5,17 +5,17 @@ author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: f93b17a530dae3ea8a9f2feb2ea1c4ce9ad76ef2a31d0830c798c68a9cbfd17a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c926a89a8eec8c74e8e4ad262b437b3c59a78804
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741800"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809760"
 ---
 # <a name="create-a-modern-pos-extension-package"></a>Modern POS 拡張機能パッケージの作成
 
@@ -43,10 +43,11 @@ Modern POS 拡張機能用の拡張機能インストーラーを作成するに
     3. パッケージを選択し、**インストール** を選択します。
     4. Go-Live バージョンと一致するバージョンを選択します。
 
-5. Modern POS プロジェクトから、既に作成した **ModernPos.Installer** プロジェクトへの参照を追加します。
+5. 以前作成した **Modern POS** プロジェクトへの参照を追加します。
 
-    1. ソリューション エクスプローラーで、Modern POS を選択したまま (または右クリック) にして、**参照&gt;追加** を選択します。
-    2. 参照マネージャーの左側の **プロジェクト** タブで、以前作成した **ModernPos.Installer** プロジェクトを選択します。
+    1. ソリューション エクスプローラーで、プロジェクトを選択したまま (または右クリックして) 、**追加&gt;参照** を選択します。
+    2. 参照マネージャーの左側の **プロジェクト** タブで、以前作成した **Modern POS** プロジェクトを選択します。
+    3. プロジェクトを参照として追加した後、csproj ファイルを編集し、追加された参照に <ReferenceOutputAssembly>false</ReferenceOutputAssembly> を追加します
 
 6. **オフライン チャネル データベースの拡張スクリプト プロジェクトのみ:** Modern POS プロジェクトからの参照をチャネル データベース プロジェクトに追加します。
 

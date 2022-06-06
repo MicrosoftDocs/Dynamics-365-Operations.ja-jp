@@ -1,24 +1,24 @@
 ---
 title: 税エンジンの適用性
 description: このトピックでは、税エンジンの適用性について説明します。
-author: yijialuan
+author: EricWangChen
 ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE, Applicability
 audience: IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: India
-ms.author: pacheren
+ms.author: wangchen
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c9b2872d6edca895c668a1eebda02cd11956951959aa9202f6cf3c05743107c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 222da2e70e22cf390caecc39f92d2b58684dab34
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766277"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725583"
 ---
 # <a name="tax-engine-applicability"></a>税エンジンの適用性
 

@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 audience: IT Pro
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 05321aea64327ed1965f1d3183dd800832bd86b7
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: b185939ba9761e259bddc6866b4416596fd68366
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779469"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688419"
 ---
 # <a name="archive-credit-card-transaction-data"></a>クレジット カード トランザクション データのアーカイブ
 

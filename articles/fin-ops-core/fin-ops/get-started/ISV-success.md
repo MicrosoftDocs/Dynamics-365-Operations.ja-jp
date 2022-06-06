@@ -9,17 +9,16 @@ ms.technology: ''
 audience: IT Pro
 ROBOTS: NOINDEX, NOFOLLOW
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2019-4-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: ce2add393bcd3adc50d023e9874fff58252d5429f609908abd1ee7fff9f5bf70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a76a0af867c93db9db6965540b087490ea06d1b8
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741622"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694354"
 ---
 # <a name="microsoft-dynamics-insider-program"></a>Microsoft Dynamics Insider Program
 [!include [banner](../includes/banner.md)] 
@@ -32,7 +31,7 @@ ms.locfileid: "6741622"
 
 **"DRI"** とは、特定の担当者を意味します。
 
- **"Dynamics Online サービス"** とは、Dynamics 365 Finance、Supply Chain Management またはコマースという意味です。
+ **“Dynamics Online サービス”** とは、Dynamics 365 Finance、Supply Chain Management、または Commerce を意味します。
  
 **Solution Package** とは、 Dynamics Online サービスに対して本プログラムの参加者が開発したソフトウェア、データ、メディア、サービス、またはその他の素材を指します。
 

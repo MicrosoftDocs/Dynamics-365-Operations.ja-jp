@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 47f928b2c415f4ddd5462a7952d5b196bf1efd8c
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: 32bf0254a9360bd902c09214f89e89fd8602c641
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313806"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711932"
 ---
 # <a name="cross-company-data-sharing-overview"></a>会社間データ共有の概要
 
@@ -78,7 +78,7 @@ ms.locfileid: "8313806"
 | どのようなテーブル データ共有タイプがサポートされていますか? | 複写   | 重複および単一   |
 | 共有を有効にする前に、会社はテーブルに既存のレコードを含めることができますか? | 有効   | マスター会社のみ   |
 | ポリシーを有効化または更新した後で、コピー データを選択し、共有に関する問題を検証する必要がありますか? |  有効  |  無効  |
-| 正式にサポートされているテーブルの一覧 |  [サポートされているテーブル](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SRS-27Jan2022/articles/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables.md#tables-officially-supported-for-duplicate-record-data-sharing)  | [サポートされているテーブル](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/SRS-27Jan2022/articles/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables.md#tables-officially-supported-for-master-company-data-sharing)   |
+| 正式にサポートされているテーブルの一覧 |  [サポートされているテーブル](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables)  | [サポートされているテーブル](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables#tables-supported-for-master-company-data-sharing)   |
 | Microsoft が提供するポリシー テンプレートは利用できますか?  |  有効  |  無効  |
 
 異なるポリシーを使用することにより、同じ会社のセットに対して重複レコード共有とマスター会社の共有を組み合わせることができます。 重複レコード ポリシーで該当するすべてのテーブルとオプションの外部キーフィールドを常に選択し、マスター会社の共有ポリシーを有効にする前にポリシーを有効にすることが重要です。 これにより、たとえば、顧客グループや支払条件テーブルを共有できます。制限を超えるのは顧客レコード数のみであり、会社数が 300 を超えないシナリオでは、重複レコード共有と会社共有を使用する顧客テーブルを使用します。

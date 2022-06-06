@@ -2,21 +2,22 @@
 title: InputControlMetadata タイプ
 description: 入力コントロールのメタデータ。
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: tfehr
-ms.openlocfilehash: 88914decc80f59f774d96d9fac3ec35f90e450d1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 88f159742685f24485d663cff94e952ed5f1708e
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781548"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811488"
 ---
 # <a name="inputcontrolmetadata-type"></a>InputControlMetadata タイプ
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 入力コントロールのメタデータ。
 
