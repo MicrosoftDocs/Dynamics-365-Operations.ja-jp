@@ -1,6 +1,6 @@
 ---
 title: 電子申告を使用した詳細な口座調整インポートの設定
-description: このトピックでは、電子申告を使用して、BAI2 取引明細書の詳細な口座調整インポート プロセスを設定する方法について説明します。
+description: このトピックでは、電子申告を使用して、詳細な口座調整インポート プロセスを設定する方法について説明します。
 author: panolte
 ms.date: 03/30/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 39f1d8ba561ab0e36346f1dfb4f70df318c92a37
-ms.sourcegitcommit: cf7d4af11bf85638ee831a28ea5ee1a1e041a675
+ms.openlocfilehash: 30530a9870ba2ff0546237d2698d1675afa78104
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "8544503"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770197"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>電子申告を使用した詳細な口座調整インポートの設定
 
 [!include [banner](../includes/banner.md)]
 
-詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 Finance での銀行トランザクションに合わせて自動的に調整することができます。 このトピックでは、BAI2 口座取引明細書のインポート機能を設定する方法について説明します。
+詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 Finance での銀行トランザクションに合わせて自動的に調整することができます。 このトピックでは、口座取引明細書のインポート機能を設定する方法について説明します。 口座取引明細書のインポートの設定は、電子口座取引明細書の形式によって異なります。 Microsoft Dynamics 365 Finance は、ISO20022、MT940、BAI2 の 3 つの口座取引明細書の形式を包括的にサポートしています。 
 
 ## <a name="set-up-the-electronic-reporting-configuration"></a>電子レポート構成の設定
 
@@ -62,3 +62,14 @@ ms.locfileid: "8544503"
 5. **参照** を選択し、**BAI** ファイルを選択します。
 6. **アップロード** を選択します。
 7. **OK** を選択し、選択したファイルをインポートします。
+
+
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>口座取引明細書の形式と技術的な配置の例
+詳細な口座調整のインポート ファイルの技術的な配置の定義、および 3 つの関連する口座取引明細書のサンプル ファイルの例を以下に示します。[インポート ファイルの例](//download.microsoft.com/download/8/e/c/8ec8d2d0-eb8c-41fb-ad8c-f01a4d670a44/Dynamics365FinanceAdvancedBankStatementLayouts.xlsx)  
+
+| 技術的なレイアウトの定義                             | 口座取引明細書のサンプル ファイル          |
+|---------------------------------------------------------|--------------------------------------|
+| DynamicsAXMT940Layout | [MT940StatementExample](//download.microsoft.com/download/2/d/c/2dcc4e55-ddc8-4a74-b79c-250fae201c3c/mt940StatementExample.txt)     |
+| DynamicsAXISO20022Layout | [ISO20022StatementExample](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2F1%2F5%2F5%2F155d84ed-c250-48f3-b0b1-c5a431e7855b%2FISO20022-MultipleStatements.xml&data=04%7C01%7CRobert.Schlomann%40microsoft.com%7C30d0c233cb6546547d0a08d8f4965edc%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637528273956712775%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=3VzvLZK%2BO8PjuI7XVdC6rD2j3nUJfteo7zFp%2B1s9BwM%3D&reserved=0)             |
+| DynamicsAXBAI2Layout    | [BAI2StatementExample](//download.microsoft.com/download/1/1/6/11693f57-bfc1-4993-a274-5fb978be70fa/BAI2StatementExample.txt)     |
+

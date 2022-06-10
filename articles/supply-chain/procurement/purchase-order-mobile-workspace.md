@@ -2,7 +2,7 @@
 title: 発注書の承認モバイル ワークスペース
 description: このトピックでは、発注書を表示したり、アクションを通じて対応したりできる発注書の承認モバイル ワークスペースに関する情報を提供します。 たとえば、発注書を承認または拒否できます。
 author: GalynaFedorova
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 32c22d582c0af03482767d335b824ccbe81ee607
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b0bdcb2f6db95ae061e786365d22cdf74643d09e
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674312"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811815"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>発注書の承認モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 このトピックでは、**発注書の承認** モバイル ワークスペースに関する情報を提供します。 このワークスペースでは、発注書を表示したり、アクションを通じて対応したりできます。 たとえば、発注書を承認または拒否できます。
  

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 20e48fee237615c7b1acdb564e5e524d393f8eba
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
+ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469900"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809098"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>マスター プランの計画最適化への移行
 
@@ -63,7 +63,7 @@ Microsoft は、現在組み込みの計画エンジンを計画の最適化に�
 
 必要な機能が使用可能になった後、例外の期限が切れるまで猶予期間が提供されます。 必要な機能が使用可能になり、猶予期間が開始されると、環境管理者に通知されます。
 
-次のフローチャートは、このトピックで提供される情報を要約しているため、例外を要求する必要があるかどうかをすばやく判断できます。 例外を要求する必要がある場合は、[計画の最適化の移行と例外に関するアンケート](https://go.microsoft.com/fwlink/?linkid=2144962) に記入して送信してください。
+次のフローチャートは、このトピックで提供される情報を要約しているため、例外を要求する必要があるかどうかをすばやく判断できます。 例外を要求する必要がある場合は、[計画の最適化の移行と例外に関するアンケート](https://go.microsoft.com/fwlink/?linkid=2144962) に記入して送信してください。 製品グループは、各例外要求を評価および承認する責任があります。そのため、提供されたリンクを使用して製品グループに要求を直接送信します。また、サポート チケットは作成しないでください。 要求が却下された場合も、Microsoft サポートは例外の承認や再評価を行わないため、サポート チケットを作成しないでください。
 
 ![例外フローチャート。](media/exception-diagram.png "例外フローチャート")
 

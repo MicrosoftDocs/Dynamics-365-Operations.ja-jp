@@ -2,7 +2,7 @@
 title: 販売時点管理 (POS) での製品検索および顧客検索
 description: このトピックでは、Dynamics 365 Commerce の製品および顧客検索機能に加えられた改良の概要を示します。
 author: ShalabhjainMSFT
-ms.date: 10/26/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 460c7d3b00421ba43414f7343887edf9b8adad9c
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700092"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806431"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>販売時点管理 (POS) での製品検索および顧客検索
 
@@ -106,6 +106,8 @@ Modern 販売時点管理 (MPOS) およびクラウド販売時点管理 (CPOS) 
 > あまりに多くのショートカットを追加する場合は、POS の検索バーで、ドロップダウン メニューが雑然として、従業員の検索体験に影響する可能性があります。 必要な数のショートカットだけを追加するようお勧めします。
 
 **表示順序** フィールドでは、POS で表示されるショートカットの順序を決定します。 表示される基準は、顧客を検索するのに顧客検索アルゴリズムが使用する、最初から用意されているプロパティです。 ただし、パートナーは、検索ショートカットとしてカスタム プロパティを追加することができます。 検索ショートカットとしてカスタム プロパティを追加するには、システム管理者は顧客の検索条件として使用する拡張可能列挙 (列挙) を拡張し、ショートカットとしてパートナーのカスタム プロパティをマークする必要があります。 パートナーは、そのカスタム ショートカットが検索に使用されるときに、結果を検索するコードを記述します。
+
+ショートカットを POS に表示する場合は、ショートカットの変換が必要です。 チャネル言語がシステムの既定言語と異なる場合は、必要な言語で各ショートカットの翻訳を定義する必要があります。 ショートカットごとに **翻訳** を選択して、変換を定義できます。 
 
 > [!NOTE]
 > 列挙に追加されるカスタム プロパティは、標準的な顧客検索アルゴリズムに影響しません。 つまり、顧客検索アルゴリズムは、カスタム プロパティでは検索しません。 ユーザーは、ショートカットとしてカスタム プロパティが追加された場合、または既定の検索アルゴリズムが上書きされる場合にのみ、検索用にカスタム プロパティを使用できます。

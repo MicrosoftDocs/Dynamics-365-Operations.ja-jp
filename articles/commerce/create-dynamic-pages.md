@@ -2,35 +2,32 @@
 title: URL パラメーターに基づく動的な eコマース ページの作成
 description: このトピックでは、URL のパラメーターに基づいて動的なコンテンツを提供できる Microsoft Dynamics 365 Commerce の電子商取引ページの設定方法について説明します。
 author: StuHarg
-ms.date: 01/28/2021
+ms.date: 05/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ROBOTS: ''
-audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 348fdb30f4d0104e80bea5235c1e337b9f977311
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694343"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811034"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>URL パラメーターに基づく動的な eコマース ページの作成
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 このトピックでは、URL のパラメーターに基づいて動的なコンテンツを提供できる Microsoft Dynamics 365 Commerce の電子商取引ページの設定方法について説明します。
 
-電子商取引のページは、URL パスのセグメントに基づいて、異なるコンテンツを提供するよう構成できます。 したがって、このページは動的ページと呼ばれます。 セグメントは、ページ内容を取得するパラメーターとして使用されます。 たとえば、**ブログ\_ビューアー** という名前のページが作成され、次の URL (`https://fabrikam.com/blog`) に関連付けられるとします。 このページを使用すると、URL パスの最後のセグメントに基づいた異なるコンテンツを表示できます。 たとえば、URL (`https://fabrikam.com/blog/article-1`) の最後のセグメントは **article-1** です。
+電子商取引のページは、URL パスのセグメントに基づいて、異なるコンテンツを提供するよう構成できます。 したがって、このページは動的ページと呼ばれます。 セグメントは、ページ内容を取得するパラメーターとして使用されます。 たとえば、サイト ビルダーで作成され **ブログ\_ビューアー** という名前のページは、URL (`https://fabrikam.com/blog`) にマッピングされます。 このページを使用すると、URL パスの最後のセグメントに基づいた異なるコンテンツを表示できます。 たとえば、URL (`https://fabrikam.com/blog/article-1`) の最後のセグメントは **article-1** です。
 
-URL パスのセグメントには、動的なページを上書きするカスタム ページを関連付けすることもできます。 たとえば、**ブログ\_概要** という名前のページが作成され、次の URL (`https://fabrikam.com/blog/about-this-blog`) に関連付けられるとします。 このURLが要求されている場合、**ブログ\_ビューワー** ページではなく、**/about-this-blog** パラメーターに関連付けられている、**ブログ\_概要** ページが返されます。
+パラメータ化された URL セグメントは、サイト ビルダ ページで上書きすることもできます。 たとえば、サイト ビルダーで作成され **ブログ\_概要** という名前のページは、URL (`https://fabrikam.com/blog/about-this-blog`) にマッピングできます。 末尾の  `/about-this-blog`セグメントで `https://fabrikam.com/blog` URL が要求された場合、その `https://fabrikam.com/blog` ページで使用される `/about-this-blog` パラメータとして解釈される区分ではなく、**ブログ\_概要** ページのコンテンツが返されます。 
+
+動的ページに渡すパラメータの名前を選択した場合、URL に表示される動的ページの名前 (`/blog` 前の例の) は、パラメータ名またはパラメータ名のサブサイトとして使用できません。 
 
 > [!NOTE]
 > 動的なページ コンテンツをホスト、取得、表示する機能は、カスタム モジュールを使用して実装されます。 詳細については、[オンライン チャンネルの拡張性](e-commerce-extensibility/overview.md)を参照してください。
@@ -60,7 +57,7 @@ Commerce サイト ビルダーで動的ページへの経路を構成するに�
 1. **パラメーター化された URL パス** で、**追加** を選択し、URL の作成時に入力した URL パス (この例では **/blog**) を入力します。
 1. **保存と公開** を選択します。
 
-経路を構成した後は、パラメーター化した URL パスへのすべてのリクエストは、その URL に関連付けられているページが返されます。 追加のセグメントが含まれるリクエストがある場合は、関連するページが返され、その区分をパラメータとして使用してページのコンテンツが取得されます。 たとえば、`https://fabrikam.com/blog/article-1` では **ブログ\_概要** ページが返され、ページのコンテンツは **/article-1** パラメーターを使用して取得されます。
+経路を構成した後は、パラメーター化した URL パスへのすべてのリクエストは、その URL に関連付けられているページが返されます。 追加のセグメントが含まれるリクエストがある場合は、関連するページが返され、その区分をパラメータとして使用してページのコンテンツが取得されます。 たとえば、`https://fabrikam.com/blog/article-1` は、**/article-1** パラメーターを使用して取得されるるコンテンツを表示する `https://fabrikam.com/blog` ページが返されます。
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>パラメーター化された URL をカスタム ページで上書きする
 

@@ -2,7 +2,7 @@
 title: Excel でのエンティティ データの表示および更新
 description: このトピックでは、Microsoft Excel でエンティティ データを開き、Excel 用の Microsoft Dynamics Excel アドインを使用してそのデータを表示、更新、また編集する方法を説明します。
 author: jasongre
-ms.date: 10/01/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464940"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762656"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Excel でのエンティティ データの表示および更新 
 
@@ -110,7 +110,7 @@ Excel アドインで **公開** を選択することにより、必要に応�
 5. フィールド (列) を追加した場合、**更新** を選択して更新されたデータを取得します。
 
 ## <a name="change-the-publish-batch-size"></a>バッチ サイズの発行の変更
-ユーザーが Excel アドインを使用してデータ レコードに対する変更を公開すると、更新はバッチで送信されます。 既定の公開バッチ サイズは 100 行です。 バージョン 10.0.17 以降では、**Excel アドイン機能での発行バッチ サイズの構成を許可** により、発行バッチ サイズを柔軟に制御できます。
+ユーザーが Excel アドインを使用してデータ レコードに対する変更を公開すると、更新はバッチで送信されます。 既定 (かつ最大) の公開バッチ サイズは 100 行です。ただし、Excel から更新を公開しようとするとタイムアウトが発生する場合は特に、**Excel アドインで公開するバッチ サイズの構成を許可する** 機能を使用して公開バッチ サイズを下げ、柔軟に対処することができます。
 
 システム管理者は 、**Office アプリケーション パラメーター** ページの **アプリケーション パラメーター** セクションの **バッチ制限の公開** フィールドを設定することにより、"Excelで開く" ブックの発行バッチ サイズに対するシステム全体の制限を指定できます。
 

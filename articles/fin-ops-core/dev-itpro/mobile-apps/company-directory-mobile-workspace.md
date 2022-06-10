@@ -2,7 +2,7 @@
 title: 会社のディレクトリ モバイル ワークスペース
 description: このトピックでは、ユーザーが閲覧し、組織内の他の従業員と連絡が取れるようにする、会社のディレクトリ モバイル ワークスペースに関する情報を提供します。
 author: jcart1106
-ms.date: 09/17/2019
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,16 +12,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2152d89e7d60a74e8d7561ea888e60cff42dd1ffd0ec697fac371aad9b85383c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b754e46f194f60cc70d02367d4cca2a382821191
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720651"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811542"
 ---
 # <a name="company-directory-mobile-workspace"></a>会社のディレクトリ モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 このトピックでは、**会社のディレクトリ** モバイル ワークスペースに関する情報を提供します。 このワークスペースで、ユーザーは閲覧して組織内の他の従業員と連絡を取ることができます。
 
@@ -54,7 +55,7 @@ ms.locfileid: "6720651"
 </ul>
 </td>
 <td>システム管理者</td>
-<td>組織にまだ Finance and Operations アプリが配置されていない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ人事管理が配置されていない場合、システム管理者は<a href="https://dynamics.microsoft.com/human-resources/overview/">人事管理ウェブページ</a>から評価版バージョンにアクセスできます。
+<td>組織にまだ Finance and Operations アプリが配置されない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ人事管理が配置されていない&#39;場合、システム管理者は<a href="https://dynamics.microsoft.com/human-resources/overview/">人事管理ウェブページ</a>から評価版バージョンにアクセスできます。
 </td>
 </tr>
 <tr class="even">
@@ -66,7 +67,7 @@ ms.locfileid: "6720651"
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
-Finance and Operations モバイル アプリのダウンロードとインストール。
+Finance and Operations モバイル アプリをダウンロードしてインストールします。
 
 -   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)

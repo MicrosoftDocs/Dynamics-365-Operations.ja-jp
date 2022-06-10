@@ -2,7 +2,7 @@
 title: 削除済みまたは非推奨のプラットフォーム機能
 description: このトピックでは、財務と運用アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644610"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811249"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォームの機能
 
@@ -31,6 +31,33 @@ ms.locfileid: "8644610"
 このリストは、これらの削除および削除予定に対して、自身の計画を検討するために役立ちます。 
 
 財務と運用アプリ内のオブジェクトに関する詳細情報については、[技術参照レポート](/dynamics/s-e/global/axtechrefrep_61) を参照してください。 これら異なるバージョンのレポートを比較し、財務と運用アプリの各バージョンで変更または削除されたオブジェクトについて確認することができます。
+
+
+## <a name="feature-deprecation-effective-june-2022"></a>2022 年 6 月に廃止される機能
+
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Finance and Operations (Dynamics 365) モバイル アプリケーションとモバイル プラットフォーム 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | Finance and Operations (Dynamics 365) モバイル アプリケーションおよびプラットフォームを廃止して、単一のモバイル プラットフォーム (Power Apps) に統合する予定です。 |
+| **別の機能で置き換えられているか?**   | はい、財務と運用アプリ データ上のモバイル エクスペリエンスは、Power Platform 統合により構築できます。 詳細については、[モバイル エクスペリエンスを構築する](../power-platform/build-mobile-experiences.md) を参照してください。 |
+| **影響を受ける製品領域**         | 財務と運用アプリ |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨。 サポート終了日は 2024 年 10 月を目標としています。 |
+
+
+## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>財務と運用アプリのバージョン 10.0.29 のプラットフォーム更新プログラム
+
+### <a name="panorama-tab-style"></a>パノラマ タブ スタイル
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **廃止 / 削除の理由** | 水平にスクロールするページは、使いやすさとアクセシビリティに関する問題がある古いレイアウト パターンを使用します。  |
+| **別の機能で置き換えられているか?**   | いいえ。しかし、他のタブ スタイルは引き続き使用できます。 |
+| **影響を受ける製品領域**         | Web クライアント |
+| **配置オプション**              | すべて |
+| **状態**                         | 非推奨。 |
+
 
 ## <a name="feature-deprecation-effective-april-2022"></a>2022 年 4 月に廃止される機能
 

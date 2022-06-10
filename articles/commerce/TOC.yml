@@ -12,6 +12,8 @@
               items:
                 - name: Commerce の新機能および変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.28 (2022 年 7 月)
+                  href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (2022 年 7 月)
                   href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (2022 年 5 月)
@@ -1300,7 +1302,11 @@
               items:
                 - name: 4xx/5xx ステータス コード エラーに対するカスタム応答ページの作成
                   href: build-pages-400-500-errors.md
-        - name: Fraud Protection
+            - name: サービス統合
+              items:
+                - name: Customer Voice を eコマース サイト ページに統合する
+                  href: customer-voice-integration.md
+        - name: 不正保護
           items:
             - name: Dynamics 365 Commerce と Dynamics 365 Fraud Protection の統合
               href: dev-itpro/DFP.md
@@ -2114,10 +2120,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
                     - name: バーコードを使用してバーコード イメージを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: ER アプリケーション固有のパラメータを使用するルックアップ データ ソースを構成する
+                    - name: ER アプリケーション固有のパラメータを使用する検索データ ソースを構成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: ER 形式でデータ収集データ ソースを使用する
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: USER INPUT PARAMETER データ ソースを使用して、生成するレポートのパラメータを指定します
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: データ ソースのデバッグ
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: データ モデルの構成
@@ -2728,6 +2736,8 @@
                               href: e-commerce-extensibility/interactive-components.md
                             - name: ローカル開発中にサインイン状態をモックする
                               href: e-commerce-extensibility/mock-sign-in.md
+                            - name: Azure Active Directory B2C を使用した Web API 認証転送の設定
+                              href: e-commerce-extensibility/web-api-auth-trans-aad-b2c.md
                             - name: コンテキストに基づいて表示されるモジュール プロパティの構成
                               href: e-commerce-extensibility/configure-properties-context.md
                             - name: CultureInfoFormatter クラスを使用したグローバライズ モジュール
@@ -2944,6 +2954,8 @@
                   href: troubleshoot/items-without-inventory-checked-out.md
                 - name: 評価とレビューのソリューションが有効になっていないと、検索結果とカテゴリ ページに評価の絞り込み機能が表示される
                   href: troubleshoot/hide-ratings-refiner.md
+                - name: カスタマイズした注文集計モジュールを使用すると、注文集計の小計に請求金額に対する税金が含まれない
+                  href: troubleshoot/summary-taxes-custom-modules-10.0.27.md
             - name: 顧客管理
               items:
                 - name: 新規顧客の作成時にようこそメールが送信されない

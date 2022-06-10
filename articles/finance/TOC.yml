@@ -12,6 +12,8 @@
               items:
                 - name: Finance の新機能および変更された機能に関するホーム ページ
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.28 (8 月)
+                  href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (7 月)
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (5 月)
@@ -258,6 +260,8 @@
               href: accounts-payable/positive-pay-overview.md
             - name: 確認後支払ファイルの設定と生成
               href: accounts-payable/set-up-generate-positive-pay-files.md
+            - name: 電子申告を使用した確認後支払ファイルの設定および生成
+              href: accounts-payable/set-up-positive-pay-ER.md
             - name: 仕入先請求仕訳帳および請求書承認仕訳帳の既定の相手勘定
               href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
             - name: 仕入先のワークフロー
@@ -268,6 +272,8 @@
                   href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
                 - name: 例外の調査または解決
                   href: accounts-payable/tasks/research-resolve-exceptions.md
+            - name: 買掛金勘定の転記
+              href: general-ledger/accts-payble-posting.md
             - name: 仕入先転記プロファイル
               href: accounts-payable/vendor-posting-profiles.md
             - name: 諸費用コードの作成
@@ -346,8 +352,12 @@
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
             - name: 顧客支払に関するインサイト (プレビュー)
               href: accounts-receivable/payment-insights-overview.md
+            - name: 売掛金勘定の転記
+              href: general-ledger/accts-recvble-posting.md
             - name: 顧客転記プロファイル
               href: accounts-receivable/customer-posting-profiles.md
+            - name: 諸費用コードの作成
+              href: accounts-receivable/create-charges-codes.md
             - name: 共有番号順序を使用して顧客をコピーする
               href: accounts-receivable/copy-customer.md
             - name: 顧客ワークフロー
@@ -444,9 +454,11 @@
                       href: accounts-receivable/sb-alignment-date-examples.md
                     - name: 収益の分割
                       href: accounts-receivable/sb-revenue-split.md
-                - name: 収益および経費の繰延
+                    - name: 定期処理のタスク
+                      href: accounts-receivable/sb-periodic-tasks.md
+                - name: 売上および経費の繰延
                   items:
-                    - name: 収益および経費の繰延を設定する
+                    - name: 売上および経費の繰延を設定する
                       href: accounts-receivable/sb-deferrals.md
                     - name: 繰延スケジュールの作成
                       href: accounts-receivable/sb-deferrals-schedules.md
@@ -466,6 +478,8 @@
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: 顧客支払の預金
                   href: accounts-receivable/tasks/deposit-customer-payments.md
+                - name: つなぎ支払の設定および処理
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: 単一ユーロ支払地域 (SEPA) 口座引落の概要
                   href: accounts-receivable/sepa-direct-debit-overview.md
                 - name: SEPA 口座引落の委任状
@@ -662,6 +676,8 @@
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
                 - name: 詳細な口座調整のインポート処理の設定
                   href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
+                - name: 電子申告を使用した詳細な口座調整のインポート処理の設定
+                  href: accounts-payable/import-bai2-er.md
                 - name: 口座調整照合ルールの設定
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: 詳細な口座調整を使用した口座取引明細書の調整
@@ -1044,6 +1060,14 @@
                       href: general-ledger/recommended-practices-pstg-prfles.md
                     - name: 自動トランザクションの勘定
                       href: general-ledger/accounts-for-auto-transactions.md
+                    - name: 買掛金勘定の転記
+                      href: general-ledger/accts-payble-posting.md
+                    - name: 売掛金勘定の転記
+                      href: general-ledger/accts-recvble-posting.md
+                    - name: 資産リースの転記
+                      href: asset-leasing/set-up-lease-posting-accts.md
+                    - name: 固定資産の転記
+                      href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
                 - name: 配賦ルール
                   items:
                     - name: 元帳配賦ルール
@@ -1292,6 +1316,8 @@
                   href: public-sector/accounts-payable-public-sector.md
                 - name: 公的機関での発注書コード
                   href: public-sector/purchase-order-codes-public-sector.md
+                - name: 発注書と繰越予算
+                  href: public-sector/determine-carry-forward-budget.md
                 - name: 公的機関の取引相手コードの作成および割り当て
                   href: public-sector/tasks/create-assign-trading-partner-code-public-sector.md
                 - name: 公的機関での転記の定義
@@ -1778,6 +1804,8 @@
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
                 - name: 元帳トランザクションのエクスポート
                   href: localizations/emea-bel-export-ledger-transactions.md
+                - name: EU 販売リスト
+                  href: localizations/emea-bel-eu-sales-list.md
                 - name: INTERVAT 税申告
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: 調整レポート
@@ -1792,6 +1820,8 @@
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
                 - name: ベルギーのイントラスタット
                   href: localizations/emea-bel-intrastat.md
+                - name: VAT 申告
+                  href: localizations/emea-bel-vat-declaration-belgium.md
             - name: ブラジル
               items:
                 - name: ブラジルの概要
@@ -2094,6 +2124,8 @@
                   href: localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
                 - name: 公的機関顧客のプロジェクト請求書の作成および転記
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
+                - name: EU 販売リスト
+                  href: localizations/emea-dnk-eu-sales-list.md
                 - name: OIOUBL 電子請求のコンフィギュレーションのインポート
                   href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
                 - name: 支払伝票がある自由書式の請求書を転記
@@ -2296,6 +2328,8 @@
                   href: localizations/emea-fin-intrastat.md
                 - name: VAT 申告
                   href: localizations/emea-fin-vat-declaration.md
+                - name: EU 販売リスト
+                  href: localizations/emea-fin-eu-sales-list.md
             - name: フランス
               items:
                 - name: フランスの概要
@@ -3088,6 +3122,8 @@
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
                 - name: VAT 明細書の詳細
                   href: localizations/emea-ltu-vat-statement-details.md
+                - name: リトアニアのイントラスタット
+                  href: localizations/emea-ltu-intrastat.md
                 - name: リトアニアの i.SAF レポート
                   href: localizations/emea-ltu-isaf.md
                 - name: リトアニアの税の標準監査ファイル (SAF-T)
@@ -3230,6 +3266,8 @@
                   href: localizations/emea-pol-correction-notes.md
                 - name: 売上請求書の番号付けの複製
                   href: localizations/emea-pol-sales-invoice-duplicates-numbering.md
+                - name: EU 販売リスト
+                  href: localizations/emea-pol-eu-sales-list.md
                 - name: 固定資産の減価償却
                   href: localizations/emea-pol-fixed-assets-depreciation.md
                 - name: 固定資産の処分機能の拡張
@@ -3552,6 +3590,8 @@
                   href: localizations/emea-esp-conditional-sales-tax.md
                 - name: 請求の貸方記入
                   href: localizations/tasks/emea-esp-credit-invoicing.md
+                - name: EU 販売リスト
+                  href: localizations/emea-esp-sales-list.md
                 - name: 請求先/元 ID の会計データ
                   href: localizations/emea-esp-fiscal-data-invoice-account.md
                 - name: 固定資産グループの再評価
@@ -3670,6 +3710,8 @@
                       href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: 支払プラクティス レポートの統計
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
+                - name: EU 販売リスト
+                  href: localizations/emea-uk-eu-sales-list.md
             - name: 米国
               items:
                 - name: 米国の概要
@@ -4335,10 +4377,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
                     - name: バーコードを使用してバーコード イメージを生成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
-                    - name: ER アプリケーション固有のパラメータを使用するルックアップ データ ソースを構成する
+                    - name: ER アプリケーション固有のパラメータを使用する検索データ ソースを構成する
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: ER 形式でデータ収集データ ソースを使用する
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: USER INPUT PARAMETER データ ソースを使用して、生成するレポートのパラメータを指定します
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: データ ソースのデバッグ
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: データ モデルの構成

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547791"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786841"
 ---
 # <a name="configure-inventory-visibility"></a>在庫の視覚化のコンフィギュレーション
 
@@ -60,7 +60,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 在庫視覚化サービスの正しいエンドポイントが分からない場合、Power Apps の **構成** ページを開き、右上隅の **サービス エンドポイントの表示** を選択します。 ページに正しいサービス エンドポイントが表示されます。
 
-## <a name="data-source-configuration"></a>データ ソースの構成
+## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>データ ソースの構成
 
 各データ ソースは、データの取得元のシステムを表しています。 データ ソース名の例には、`fno` ("Dynamics 365 財務と運用アプリ" の略) および `pos` ("販売時点管理" の略) が含まれます。 既定では、Supply Chain Management が在庫視覚化の既定のデータ ソース (`fno`) として設定されます。
 
@@ -141,7 +141,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 たとえば、データ ソースに製品のカラー分析コードが含まれる場合、`exterchannel` データ ソースで `ProductColor` カスタム分析コードを追加して、`ColorId` ベース分析コードにマップすることができます。 `ColorId` ベース分析コードにマップされます。
 
-### <a name="physical-measures"></a>物理的測定
+### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>物理的測定
 
 データ ソースが在庫の変更を在庫視覚化に転記する場合、*物理的測定* を使用してその変更を転記します。 物理的測定は数量を変更し、在庫状態を反映します。 必要に応じて、独自の物理的測定を定義することができます。 クエリは、物理的測定に基づくことがあります。
 
@@ -175,6 +175,9 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 ### <a name="calculated-measures"></a>計算メジャー
 
 在庫視覚化を使用して、在庫の物理的測定と *カスタム計算測定* の両方を照会できます。 計算メジャーは、物理的測定の組み合わせで構成されるカスタマイズされた計算式を提供します。 この機能により、追加または削除される一連の物理的測定を定義して、カスタマイズされた測定を作成できるようになります。
+
+> [!IMPORTANT]
+> 計算メジャーは、現物メジャーの構成です。 その式には、計算メジャーではなく、重複しない現物メジャーのみを含めることができます。
 
 構成により、合計集計された出来高数量を取得するために加算または減算する一連のモディファイアーを定義できます。
 

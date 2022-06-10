@@ -2,7 +2,7 @@
 title: コスト管理モバイル ワークスペース
 description: このトピックでは、原価管理モバイル ワークスペースについての情報を提供します。 このワークスペースにより、コスト センターの管理者は時間や場所に関わらず、コスト センターのパフォーマンスに関する情報を表示できます。
 author: AndersGirke
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,21 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 1f5e0314678758849a787e6b3f7a67391c701046
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 75d8abaeec85b46f0fd0e430040bc7e3a8fd3042
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734076"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811327"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>コスト管理モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 このトピックでは、**原価管理** モバイル ワークスペースについての情報を提供します。 このワークスペースにより、コスト センターの管理者は時間や場所に関わらず、コスト センターのパフォーマンスに関する情報を表示できます。
 
-このモバイル ワークスペースは、Finance and Operations モバイル アプリで使用するためのものです。
+このモバイル ワークスペースは、財務と運用 (Dynamics 365) モバイル アプリで使用するためのものです。
 
 ## <a name="overview"></a>概要
 **原価管理** モバイル ワークスペースは、予算原価に対する実際原価を比較して、原価部門の現在のパフォーマンスのインスタント ビューを提供します。 個々のコスト要素のステータスにドリル ダウンすることができます。
@@ -113,7 +114,7 @@ Finance を組織に配置している場合、システム管理者は **原価
 
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
-Finance and Operations モバイル アプリをダウンロードしてインストールします。
+財務と運用 (Dynamics 365) モバイル アプリをダウンロードしてインストールする
 
 -   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)

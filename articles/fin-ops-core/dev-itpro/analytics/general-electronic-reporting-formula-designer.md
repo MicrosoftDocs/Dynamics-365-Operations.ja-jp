@@ -2,7 +2,7 @@
 title: 電子申告 (ER) のフォーミュラ デザイナー
 description: このトピックでは、電子申告 (ER) でフォーミュラ デザイナーを使用する方法を説明します。
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 04/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eec63fb1782c5afed0320eb841b6bfc92af31a691731ef6bac5d00ed442c0dcd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 606532411aa8297654d8d20a9061472597e773da
+ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777407"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782207"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>電子申告 (ER) のフォーミュラ デザイナー
 
@@ -41,7 +41,8 @@ ER はフォーミュラ デザイナーをサポートします。 したがっ
 - データ モデルのコンポーネントへのデータ ソース項目のバインド。
 - 形式コンポーネントへのデータ ソース項目のバインド。
 - データ ソースの一部である計算済フィールドのメンテナンス完了。
-- ユーザー入力パラメーターの表示条件の定義。
+- ユーザー入力パラメーターの可視性条件と編集可能条件を定義します。
+- ユーザー入力パラメーターの規定値を定義します。
 - 形式の変換の設計。
 - 形式のコンポーネントに有効にする条件の定義。
 - 形式のファイル コンポーネントに対するファイル名の定義。

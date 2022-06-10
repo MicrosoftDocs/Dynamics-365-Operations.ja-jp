@@ -2,7 +2,7 @@
 title: 電子商取引のデジタル ギフト カード
 description: Microsoft Dynamics 365 Commerce の電子商取引の実装におけるデジタル ギフト カードの機能について説明します。 重要な構成の手順の概要についても説明しています。
 author: anupamar-ms
-ms.date: 12/15/2020
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e0cbab05cfd9dcde8ec5caf802d13cd10bc9123716b46307616b0e3e66f0f061
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727560"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809590"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>電子商取引のデジタル ギフト カード
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Commerce の電子商取引の実装におけるデジタル ギフト カードの機能について説明します。 重要な構成の手順の概要についても説明しています。
 
@@ -51,15 +50,18 @@ Dynamics 365 Commerce では、デジタル ギフト カードの購入は、�
 
     ![Commerce 本部のギフト カード製品フィールド。](./media/PostGiftcard.png)
 
-- ギフト カードで、定義済の複数の金額 ($25、$50、$100 など) に対応する必要がある場合は、**サイズ** 分析コードを使用して、定義済金額を設定する必要があります。 定義済の各金額はバリアント型です。 詳細については、[製品分析コード](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json)を参照してください。
-- 顧客がギフト カードのカスタム金額を指定できるようにする必要がある場合は、最初にカスタム金額を許可するバリアントを設定します。 次に、**カテゴリ内のリリース済み製品** ページで製品を開き、 **Commerce** クイックタブで、**価格のキー** フィールドを、次の図に示すように **新しい価格内の必須キー** に設定します。 この設定により、顧客が PDP で製品を参照する際に価格を入力できます。
+- ギフト カードで、定義済の複数の金額 ($25、$50、$100 など) に対応する必要がある場合は、**サイズ** 分析コードを使用して、定義済金額を設定する必要があります。 各事前定義金額は製品バリアントです。 詳細については、[製品分析コード](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json)を参照してください。
+- 顧客が事前定義されている金額に加えてギフト カードのカスタム金額を指定できるようにする必要がある場合は、最初にカスタム金額を許可するバリアントを設定します。 **サイズ** 属性 は、カスタム金額バリアントをサポートします。 次に、**カテゴリ内のリリース済み製品** ページで製品を開き、**Commerce** クイックタブで、**価格のキー** フィールドを、次の図の例で示すように **新しい価格内の必須キー** に設定します。 この設定により、顧客が PDP で製品を参照する際に価格を入力できます。
 
     ![Commerce 本部の価格フィールドのキー。](./media/KeyInPrice.png)
+    
+    次の例は、Commerce Headquarters のデジタル ギフト カード製品バリアントの一覧を示しています。カスタム価格バリアントも 2 つ含まれています。
+    ![カスタム価格バリアントを使用したデジタル ギフト カード製品バリアントの例](./media/DigitalGiftCards_ProductVariantsWithCustom.png)
 
 - デジタル ギフト カードの配信モードを **電子** に設定する 必要があります。 **配送方法** ページ (**小売およびコマース  \> チャネルの設定 \> 配送方法**) で、一覧ペインで配送方法に **電子** を選択し、 次の図に示すように、**製品** クイックタブでグリッドにデジタル ギフト カード製品を追加します。 詳細については、[配送方法の設定](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery) を参照してください。
 
     ![Commerce 本部の配信モードページのデジタル ギフトカード商品。](./media/ElectronicMode.PNG)
-
+    
 - オンライン機能プロファイルが作成され、Commerce 本部のオンライン ストアに関連付けられている必要があります。 機能プロファイルで、**製品の集計** オプションを **はい** に設定します。 この設定により、ギフト カードを除くすべての品目が集計されます。 詳細については、[オンライン機能プロファイルの作成](online-functionality-profile.md)を参照してください。
 - ギフト カードの請求後に顧客にメールが届くようにするには、**電子メール通知プロファイル** ページに新しいメール通知タイプを作成し、**電子メール通知タイプ** フィールドを **ギフト カードの発行** に設定します。 詳細については、[電子メールの通知プロファイルの設定](email-notification-profiles.md) を参照してください。
 

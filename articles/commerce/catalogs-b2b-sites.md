@@ -2,19 +2,19 @@
 title: B2B サイトのコマース カタログの作成
 description: このトピックでは、Microsoft Dynamics 365 Commerce 企業間 (B2B) サイトのコマース カタログを作成する方法について説明します。
 author: ashishmsft
-ms.date: 04/28/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 868f6bbeefeb1698bb136d52c09cebf293c95731
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
+ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656867"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782840"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>B2B サイトのコマース カタログの作成
 
@@ -24,7 +24,7 @@ ms.locfileid: "8656867"
 このトピックでは、Microsoft Dynamics 365 Commerce 企業間 (B2B) サイトのコマース製品カタログを作成する方法について説明します。 B2B サイトのコマース カタログに関するよくある質問への回答については、[B2B のコマース カタログに関するよく寄せられる質問](catalogs-b2b-sites-FAQ.md) を参照してください。
 
 > [!NOTE]
-> このトピックは、Dynamics 365 Commerce バージョン 10.0.26 およびそれ以降のリリースに適用されます。
+> このトピックは、Dynamics 365 Commerce バージョン 10.0.27 およびそれ以降のリリースに適用されます。
 
 B2B オンライン ストアで提供する製品を識別するためにコマース カタログを使用できます。 カタログを作成すると、製品が提供されるオンライン ストアを識別し、含める製品を追加し、また販売促進詳細を追加して提供製品を強化します。 各 B2B のオンライン ストアに複数のカタログを作成できます。
 
@@ -42,7 +42,7 @@ B2B オンライン ストアで提供する製品を識別するためにコマ
 - **価格グループ** – 特定のカタログに固有の価格およびプロモーションを構成できます。 この機能は、B2B チャネルのカタログを定義するコアな理由です。 カタログの価格グループにより、組織は目的の B2B 組織が製品を使用できるようにし、希望する価格と割引を適用できます。 構成済カタログから注文する B2B 顧客は、コマース B2B サイトにサインインした後で特別な価格とプロモーションを利用できます。 カタログ特定の価格を構成するには、**カタログ** タブの **グループ価格** を選択し、カタログに 1 つまたは複数の価格グループをリンクします。 同じ価格グループにリンクされているすべての取引契約、価格調整仕訳帳、および詳細割引は、顧客がそのカタログから注文する際に適用されます。 (詳細割引には、しきい値、数量、組み合わせ割引が含まれます)。価格グループの詳細については、[価格グループ](price-management.md#price-groups) を参照してください。
 
 > [!NOTE]
-> この機能は、Dynamics 365 Commerce バージョン 10.0.26 リリース以降で使用できます。 ナビゲーション階層や顧客階層などのカタログ固有の構成を構成するには、コマース本社で **機能管理** ワークスペース (**システム管理 \> ワークスペース \> 機能管理**) を開き、**小売チャネルで複数カタログの使用を有効にする** 機能を有効にし、**1110 CDX** ジョブを実行します。
+> この機能は、Dynamics 365 Commerce バージョン 10.0.27 リリース以降で使用できます。 ナビゲーション階層や顧客階層などのカタログ固有の構成を構成するには、コマース本社で **機能管理** ワークスペース (**システム管理 \> ワークスペース \> 機能管理**) を開き、**小売チャネルで複数カタログの使用を有効にする** 機能を有効にし、**1110 CDX** ジョブを実行します。
 
 ## <a name="catalog-process-flow"></a>カタログ プロセス フロー
 

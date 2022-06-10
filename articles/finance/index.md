@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1018cb8c3279a27a55a415c23405571e23ab40e1
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: a442256797cb64d30a18268232a07b463bc0db36
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713701"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762598"
 ---
 # <a name="finance-home-page"></a>Finance ホーム ページ
 
@@ -76,7 +76,7 @@ Supply Chain Management 機能は調達から支払いまでのプロセスの�
    - 請求
    - 組織が購入した商品やサービスに対する支払い 
     
-購買、在庫、製造の管理機能に関する情報は、[Supply Chain Management のホーム ページ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) を参照してください。
+購買、在庫、製造の管理機能に関する情報は、[Supply Chain Management のホーム ページ](../supply-chain/index.md) を参照してください。
 
 ## <a name="elearning-courses"></a>eラーニング コース
 

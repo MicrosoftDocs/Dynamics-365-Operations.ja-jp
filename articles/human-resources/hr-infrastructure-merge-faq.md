@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a905d752af2cf8397acb4927aa99edb4c23bfa6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 766ee49c17749841d8acac6637a0262e87e52e92
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688123"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809616"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Dynamics 365 Human Resources インフラストラクチャ統合 FAQ
 
@@ -131,6 +131,9 @@ HR データは、新しいインフラストラクチャ上の環境の財務�
 新しいインフラストラクチャ上の環境に参加する Dynamics 365 Human Resources と Finance and Operations 環境が同じ Dataverse 環境に接続されている場合、2 つのアプリは移行後も同じ Dataverse 環境に接続されたままになります。 Dataverse 拡張機能に対する移行は必要ありません。
 
 ただし、Dynamics 365 Human Resources および Finance and Operations 環境が現在別々の Dataverse 環境に接続されている場合は、2 つの Dataverse 環境を組み合わせて、新しいインフラストラクチャ上の単一の環境に接続する必要があります。 この Dataverse 移行では、Human Resources ソリューションの標準である Dataverse テーブルを、新しい Dataverse 環境に接続して再同期することができます。 Dataverse 環境に対する拡張機能は自動的に移行しませんが、新しい環境に再配置する必要があります。 Dataverse 拡張機能を管理するには、管理ソリューションを使用することをお勧めします。 詳細については、[ソリューションの概要](/powerapps/developer/data-platform/introduction-solutions)を参照してください。
+
+### <a name="we-have-utilized-the-custom-field-functionality-within-dynamics-365-human-resources-will-those-custom-fields-migrate-automatically"></a>Dynamics 365 Human Resources 内のカスタム フィールド機能は利用しました。カスタム フィールド イメージは自動的に移行しますか ?
+はい、追加されたカスタム フィールドは新しいインフラストラクチャに移行します。
 
 ### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Dynamics 365 Human Resources と連携するように Microsoft Power Automate フローや Microsoft Power Apps を構成しました。 これらの Microsoft Power Platform コンポーネントは移行され、インフラストラクチャの変更が完了した後に自動的に機能しますか ?
 

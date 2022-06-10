@@ -2,7 +2,7 @@
 title: 小売チャネルの設定
 description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいチャネルを作成する方法について説明します。
 author: samjarawan
-ms.date: 04/23/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6a8db8bb4b42c7ad6c0c0e0c257bc03e356de7d525f524c22eab46e38c018d49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74a4f0f61e0bbfd73d0006d3cf45863af6fef18f
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745409"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770224"
 ---
 # <a name="set-up-a-retail-channel"></a>小売チャネルの設定
 
@@ -90,6 +90,13 @@ Dynamics 365 Commerce は複数の小売チャンネルをサポートします�
 次の図は、現金支払い方法の例を示しています。
 
 ![支払方法の例。](media/channel-setup-retail-5.png)
+
+次の図に、現金支払方法の例と **金額** タブの構成を示します。
+
+![金額の支払方法設定の例。](media/payment-methods-recount.png)
+
+> [!NOTE]
+> **金額** タブの値は Retail Server にキャッシュされ、配送スケジュール ジョブを実行した後は直ちに有効にはなされません。 テスト用にこれらの値を直ちに適用するには、クラウド スケール ユニットを再起動する必要があります。
 
 ### <a name="set-up-cash-declaration"></a>現金申告の設定
 

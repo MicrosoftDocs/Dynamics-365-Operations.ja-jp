@@ -2,19 +2,19 @@
 title: Lifecycle Services からの二重書き込みの設定
 description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS). からデュアル書き込み接続を設定する方法について説明します。
 author: laneswenka
-ms.date: 08/03/2021
+ms.date: 05/16/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 53e82fbf8cff834c9eb0d14a0597561158b85fa1
+ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063675"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8783204"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Lifecycle Services からの二重書き込みの設定
 
@@ -26,12 +26,12 @@ ms.locfileid: "8063675"
 
 ## <a name="prerequisites"></a>必要条件
 
-Power Platform の統合を完了する必要があります。次のトピックを参照ください:
+次のトピックで説明するように、顧客は Power Platform の統合を完了する必要があります。
 
-+ [Power Platform 統合: 環境のデプロイ中に有効にします](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
-+ [Power Platform 統合 - 環境のデプロイ後に有効化します](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
+- まだ Microsoft Power Platform を使用しておらず、プラットフォーム機能を追加して財務および運用の環境を拡張する場合は、[Power Platform 統合 - 環境の展開中に有効化する](../../power-platform/enable-power-platform-integration.md#enable-during-deploy) を参照してください。
+- すでに Dataverse と Power Platform 環境が存在し、それらを財務および運用の環境に接続する場合は、[Power Platform 統合 - 環境の展開後に有効化する](../../power-platform/enable-power-platform-integration.md#enable-after-deploy) を参照してください。
 
-## <a name="set-up-dual-write-for-new-dataverse-environments"></a>新しい Dataverse 環境で使用する二重書き込みの設定
+## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>新規または既存の Dataverse 環境で二重書き込みを設定する
 
 以下の手順で、LCS  **環境の詳細** ページから二重書き込みを設定します:
 
@@ -55,28 +55,19 @@ Power Platform の統合を完了する必要があります。次のトピッ�
 
 8. リンクが完了すると、ハイパーリンクが表示されます。 このリンクを使用して、Finance and Operations 環境内の二重書き込み管理領域にログインします。 そこから、エンティティ マッピングを設定します。
 
-## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>既存の Dataverse 環境で使用する二重書き込みの設定
-
-既存の Dataverse 環境に対して二重書き込みを設定するには、Microsoft の [サポート チケット](../../lifecycle-services/lcs-support.md) を作成する必要があります。 このチケットには次の情報が必要となります:
-
-+ Finance and Operations 環境 ID。
-+ Lifecycle Services から環境名を入力します。
-+ Dataverse 管理センターの組織 ID、または Power Platform 管理センターの Power Platform環境 ID。 チケットの中で、ID が Power Platform 統合で使用するインスタンスであることを要求してください。
-
-> [!NOTE]
-> LCS を使用して環境のリンクを解除することはできません。 環境のリンクを解除するには、Finance and Operations 環境の **データ統合** ワークスペースを開き、**リンク解除** を選択します。
-
 ## <a name="linking-mismatch"></a>リンクの不一致
 
-LCS 環境を 1 つの Dataverse インスタンスにリンクする一方で、二重書き込み環境を別の Dataverse インスタンスにリンクすることができます。 このリンクの不一致により予期しない動作が発生し、最終的に誤った環境にデータが送信される場合があります。 二重書き込みに使用される推奨環境は、Power Platform 統合の一部として作成されたもので、長期的には、環境間のリンクを確立する唯一の方法となります。
+LCS を Power Platform 統合に設定していない場合は、二重書き込み環境を Dataverse インスタンスにリンクしている可能性があります。 このリンクの不一致は予期しない動作の原因になる可能性があります。 ビジネス イベント、仮想テーブル、アドインで同じ接続を使用できるように、LCS 環境の詳細を二重書き込みの接続先と一致させることを推奨します。
 
-お使いの環境にリンクの不一致がある場合、LCS は環境の詳細ページに「Microsoft は環境が二重書き込みを介して Power Platform 統合で指定されているのとは異なる行先にリンクされているのを検出しましたが、これは推奨されていません」のような警告を表示します。
+現在の環境にリンクの不一致がある場合、LCS は、環境の詳細ページに次の例のような警告を表示します: "Microsoft は、Power Platform 統合で指定した宛先に、環境を二重書き込みを介してリンクしていることを検出しました。これは非推奨です。"
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform 統合のリンクの不一致。":::
 
-このエラーが表示される場合、ニーズに応じて次の 2 つのオプションがあります。
+この警告が表示される場合は、次のいずれかの解決策を試してください。
 
-+ LCS 環境の詳細ページに指定されているように[二重書き込み環境のリンク解除および再リンクを行います (リンクのリセットまたは変更)](relink-environments.md#scenario-reset-or-change-linking)。 これは、Microsoft サポートなしで実行できるので、理想的なオプションです。  
-+ リンクを二重書き込みで維持する場合は、前のセクションに記載されているように Power Platform 統合を変更して既存の Dataverse 環境を使用するために Microsoft サポートに相談することができます。  
+- これまで LCS 環境を Power Platform 統合に一度も設定していない場合は、この記事の手順に従って二重書き込みで設定した Dataverse インスタンスに接続できます。
+- LCS 環境をすでに Power Platform 統合に設定している場合は、二重書き込みのリンクを解除し、[シナリオ: リンクのリセットまたは変更](relink-environments.md#scenario-reset-or-change-linking) によって LCS で指定した宛先に再接続する必要があります。
+
+以前はサポート チケットの手動オプションを利用できましたが、それは上記のオプション 1 が存在する前でした。  Microsoft は現在、サポート チケットによる手動再リンク要求に対応していません。
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

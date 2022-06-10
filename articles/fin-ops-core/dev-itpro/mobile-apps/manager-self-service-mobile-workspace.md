@@ -2,7 +2,7 @@
 title: 自分のチーム モバイル ワークスペース
 description: このトピックでは、管理者が直属の部下と拡張スタッフを表示できる自分のチーム モバイル ワークスペースについて、情報を提供します。
 author: ShielaSogge
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,16 +12,17 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7793bd6bb1c2dfb5f6840430914393e837242fb5
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767115"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811060"
 ---
 # <a name="my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 このトピックでは、**自分のチーム** モバイル ワークスペースについての情報を提供します。 このワークスペースでは、管理者が直属の部下および拡張スタッフを表示することができます。 また、レポート チェーン内の各個人に称賛を送信することもできます。
 
@@ -54,7 +55,7 @@ ms.locfileid: "6767115"
 </ul>
 </td>
 <td>システム管理者</td>
-<td>組織にまだ Finance and Operations アプリが配置されていない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ人事管理が配置されていない場合、システム管理者は<a href="https://dynamics.microsoft.com/human-resources/overview/">人事管理ウェブページ</a>から評価版バージョンにアクセスできます。
+<td>組織にまだ Finance and Operations アプリが配置されない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ人事管理が配置されていない場合、システム管理者は<a href="https://dynamics.microsoft.com/human-resources/overview/">人事管理ウェブページ</a>から評価版バージョンにアクセスできます。
 </td>
 </tr>
 <tr class="even">
@@ -67,7 +68,7 @@ ms.locfileid: "6767115"
 
 ## <a name="download-and-install-the-mobile-app"></a>モバイル アプリのダウンロードとインストール
 
-Finance and Operations モバイル アプリのダウンロードとインストール。
+Finance and Operations モバイル アプリをダウンロードしてインストールします。
 
 -   [Android フォン用](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone 用](https://go.microsoft.com/fwlink/?linkid=850663)

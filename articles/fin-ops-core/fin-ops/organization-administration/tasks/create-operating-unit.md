@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dcfcd64ae24297c8e11f36629490ebe7cd063de53c717559e1b73743ccc61664
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc0020a7f7aa60305bfc7c66474e0bbc26f27bef
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758996"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809561"
 ---
 # <a name="create-an-operating-unit"></a>作業単位の作成
 
@@ -37,7 +37,7 @@ ms.locfileid: "6758996"
     + 番地、郵便番号、市町村などの住所情報を入力します。 **追加** をクリックして新しい住所レコードを入力するか、編集をクリックして既存の住所レコードを変更します。   
     + 必要に応じて、**連絡先情報** セクションを展開します。  
     + 電子メール アドレス、URL と電話番号など通信方法に関する情報を入力します。 新しい通信記録を入力するには、[新規] をクリックします。 既存の通信記録を変更するには、**詳細オプション > 詳細** の順にクリックします。   
-6. 必要に応じて **作業単位数** を変更します。 この番号は、対応する **関係者** レコードに固有の ID であり、他の作業単位と同じではありません。
+6. 必要に応じて **作業単位数** を変更します。 この番号は、対応する **関係者** レコードに固有の ID であり、その他の作業単位と同じではありません。
 7. **保存** を選択します。
 
 

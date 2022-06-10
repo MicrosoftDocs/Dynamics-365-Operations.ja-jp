@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524468"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786869"
 ---
 # <a name="inventory-visibility-public-apis"></a>在庫の可視化パブリック API
 
@@ -41,17 +41,22 @@ ms.locfileid: "8524468"
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | 転記 | [手持在庫数量の設定/上書き](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | 転記 | [1 つの予約イベントの作成](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | 転記 | [複数の予約イベントの作成](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/on-hand/changeschedule | 転記 | [1 つのスケジュール済み手持在庫変更の作成](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/on-hand/changeschedule/bulk | 転記 | [複数のスケジュール済み手持在庫変更の作成](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule | 転記 | [1 つのスケジュール済み手持在庫変更の作成](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | 転記 | [複数のスケジュール済み手持在庫変更の作成](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | 転記 | [転記メソッドを使用したクエリ](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | 取得 | [取得メソッドを使用したクエリ](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation/allocate | 転記 | [1 つの配賦イベントの作成](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/unallocate | 転記 | [1 つの未配賦イベントの作成](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/reallocate | 転記 | [1 つの再配賦イベントの作成](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/consume | 転記 | [1 つの消費イベントの作成](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/query | 転記 | [クエリの配賦結果](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > パスの {environmentId} 部分は Microsoft Dynamics Lifecycle Services (LCS) の環境 ID です。
 > 
 > バルク API では、要求ごとに最大 512 件のレコードを返します。
 
-Microsoft では、すぐに利用できる *Postman* 要求コレクションを提供しています。 次の共有リンクを使用して、*Postman* ソフトウェアにこのコレクションをインポートできます: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>。
+Microsoft では、すぐに利用できる *Postman* 要求コレクションを提供しています。 次の共有リンクを使用して、*Postman* ソフトウェアにこのコレクションをインポートできます: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>。
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Lifecycle Services 環境に従ってエンドポイントを検索する
 
@@ -580,6 +585,10 @@ Query(Url Parameters):
 
 ## <a name="available-to-promise"></a>納期回答可能在庫
 
-Inventory Visibility を設定すると、今後の手持在庫変更をスケジュールし、ATP 数量を計算できます。 ATP は、使用可能な品目の数量で、次の期間に顧客に約束できます。 ATP 計算を使用すると、注文のフルフィルメント機能を大幅に強化できます。 この機能を有効にする方法、および機能が有効化された後に API で Inventory Visibility と対話する方法については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。
+Inventory Visibility を設定すると、今後の手持在庫変更をスケジュールし、ATP 数量を計算できます。 ATP は、使用可能な品目の数量で、次の期間に顧客に約束できます。 ATP 計算を使用すると、注文のフルフィルメント機能を大幅に強化できます。 この機能を有効にする方法、および機能が有効化された後に API で Inventory Visibility と対話する方法については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md#api-urls) を参照してください。
+
+## <a name="allocation"></a>割り当て
+
+配賦関連 API は、[Inventory Visibility の配賦](inventory-visibility-allocation.md#using-allocation-api) に配置されます。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: クイック ビュー モジュール
 description: このトピックでは、クイック ビュー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 68808da1ad2b3474852b3544df55db948f8758cd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5ba42806d8f77f41ab9c5cf5e26b20ecb647aadf
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692703"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780821"
 ---
 # <a name="quick-view-module"></a>クイック ビュー モジュール
 
@@ -60,8 +60,8 @@ ms.locfileid: "8692703"
 Commerce サイト ビルダーの商品コレクション モジュールにクイック ビュー モジュールを追加するには、以下の手順に従います。
 
 1. **ページ** に移動し、Fabrikamサイトのホーム ページを選択します。
-1. ホームページの任意の **製品コレクション**  モジュールに移動し、省略記号 **...** を選択して、**モジュールの追加** を選択します。
-1. **モジュールの追加** ダイアログ ボックスで、**クイック ビュー** モジュールを選択して、**OK** を選択します。
+1. ホームページの **製品コレクション** モジュールに移動し、省略記号 (**...**) を選択して、**モジュールの追加** を選択します。
+1. **モジュールの選択** ダイアログ ボックスで、**クイック ビュー** モジュールを選択して、**OK** を選択します。
 1. **クイック ビュー** モジュールのプロパティ ウィンドウで、**見出し** を選択します。 **見出し** ダイアログ ボックスで、**ヘッダーレベル** フィールドを **H2** に設定し **OK** を選択します。
 1. **保存** を選択し、 **編集の完了** を選択してページにチェックインし、**発行** を選択して公開します。
 

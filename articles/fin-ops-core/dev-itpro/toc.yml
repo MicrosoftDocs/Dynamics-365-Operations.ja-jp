@@ -14,11 +14,13 @@
               items:
                 - name: プラットフォーム更新プログラムの新機能および変更された機能に関するホームページ
                   href: get-started/whats-new-home-page.md
-                - name: プラットフォーム更新プログラムのバージョン 10.0.27 (2022 年 7 月)
+                - name: プラットフォーム更新プログラム バージョン 10.0.28 (2022 年 8 月)
+                  href: get-started/whats-new-platform-updates-10-0-28.md
+                - name: プラットフォーム更新プログラム バージョン 10.0.27 (2022 年 7 月)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: プラットフォーム更新プログラムのバージョン 10.0.26 (2022 年 5 月)
+                - name: プラットフォーム更新プログラム バージョン 10.0.26 (2022 年 5 月)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: プラットフォーム更新プログラムのバージョン 10.0.25 (2022 年 4 月)
+                - name: プラットフォーム更新プログラム バージョン 10.0.25 (2022 年 4 月)
                   href: get-started/whats-new-platform-updates-10-0-25.md
             - name: 削除済みまたは非推奨の機能
               items:
@@ -124,7 +126,7 @@
                           href: ../../supply-chain/sales-marketing/field-service.md
                         - name: Finance and Operations の製品と Field Service の製品との同期
                           href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: Field Service のワーク オーダーと Finance and Operations の販売注文との同期
+                        - name: Field Service の作業指示書と Finance and Operations の販売注文との同期
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
                         - name: Field Service の契約の請求書と Finance and Operations の自由書式の請求書との同期
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
@@ -138,7 +140,7 @@
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
                         - name: Finance and Operations から Field Service への倉庫の同期
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Field Service から Finance and Operations へのプロジェクトのワーク オーダーの同期
+                        - name: Field Service から Finance and Operations へのプロジェクトの作業指示書の同期
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                     - name: Project Service Automation 統合のコンフィギュレーション
                       items:
@@ -384,9 +386,9 @@
                   items:
                     - name: LCS での設置プロジェクトの設定
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: オンプレミス環境の設定と配置 (Platform update 41 以降)
+                    - name: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
                       href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: オンプレミス環境の設定と配置 (Platform update 12 ～ 40)
+                    - name: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 12 ～ 40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: オンプレミス環境での Retail チャネル コンポーネントのインストール手順
                       href: deployment/deploy-retail-onprem.md
@@ -1018,6 +1020,8 @@
                   href: lifecycle-services/azure-data-explorer.md
             - name: 環境サービスを再開する
               href: lifecycle-services/restart-environment-services.md
+            - name: 環境管理者の更新
+              href: lifecycle-services/update-environment-admin.md
             - name: 稼働停止をレポートする
               href: lifecycle-services/report-production-outage.md
             - name: ユーザー サインインの追跡
@@ -1266,6 +1270,8 @@
               items:
                 - name: アドインの概要
                   href: power-platform/add-ins-overview.md
+            - name: モバイル エクスペリエンスの構築
+              href: power-platform/build-mobile-experiences.md
             - name: ポリシーおよび通信
               href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: モバイル プラットフォーム

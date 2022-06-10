@@ -2,7 +2,7 @@
 title: ER 構成で起こるトラブルシューティング パフォーマンスの問題
 description: このトピックでは、電子申告 (ER) 構成で起こるパフォーマンスの問題を検索して修正する方法について説明します。
 author: NickSelin
-ms.date: 06/08/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: maximbel
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b5f5308f171b6cd4224debec897dbde133e6d8424673aabfab51e6b83b9014e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e727e06c73ff445bf4219ac5a9eee7bec25740d9
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744389"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811683"
 ---
 # <a name="troubleshooting-performance-issues-in-er-configurations"></a>ER 構成で起こるトラブルシューティング パフォーマンスの問題
 
@@ -55,7 +55,7 @@ ms.locfileid: "6744389"
 
 小規模な例を準備するか、またはレポート生成時に複数のトレースをランダムに収集します。
 
-次に、[Trace Parser](#trace-parser) で標準のボトムツーアップ分析を行い、次の質問に答えます。
+次に、[Trace Parser](#trace-parser) で標準のボトムアップ分析を行い、次の質問に答えます。
 
 - 時間消費に関して優れたメソッドは何ですか。
 - これらのメソッドに必要な時間は、全体のどの時間ですか。
@@ -82,7 +82,7 @@ ms.locfileid: "6744389"
 
 - クエリおよびフェッチされたレコードの数は、データの合計数と一致しますか。 たとえば、ドキュメントに明細行が 10 ある場合、レポートが 10 または 1,000 の明細行を抽出したと統計に表示されていますか。 フェッチされるレコードが多数ある場合は、次のいずれかの方法で修正を考慮してください。
 
-    - [**場所** 機能の代わりに **フィルター** 機能を使用して](#filter) SQL サーバー側のデータを処理します。
+    - Microsoft SQL Server サイドでデータを処理するには、[ **WHERE** 機能](#filter) の代わりに **FILTER** 機能を使用します。
     - キャッシュを使用して、同じデータをフェッチするのを防ぎます。
     - [収集したデータ機能を使用して](#collected-data)、要約処理に必要な同じデータをフェッチするのを防ぎます。
 
@@ -191,6 +191,10 @@ c:\programs\PerfView collect "e:\traces\$(date -format "ddMMyyyy_hhmm").etl" `
 
 キャッシュによってデータの再フェッチに必要な時間が短縮されますが、メモリが必要です。 フェッチされたデータの量が大きくない場合は、キャッシュを使用します。 キャッシュの使用方法の詳細と例については、[実行トレースの情報に基づいてモデル マッピングを改善する](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace) を参照してください。
 
+#### <a name="reduce-volume-of-data-fetched"></a><a name="reduce-fetched-data"></a>フェッチされるデータの量の削減
+
+実行時にフェッチするアプリケーション テーブルのレコードのフィールド数を制限することで、キャッシュのメモリ消費量を削減できます。 この場合、ER モデル マッピングで必要なアプリケーション テーブルのフィールド値だけをフェッチします。 そのテーブルの他のフィールドはフェッチされません。 したがって、フェッチされたレコードのキャッシュに必要なメモリの量が少なくなります。 詳細については、[I実行時にフェッチされたテーブル フィール尾の数を削減することで ER ソリューションのパフォーマンスを改善する](er-reduce-fetched-fields-number.md) をご覧ください。
+
 #### <a name="use-a-cached-parameterized-calculated-field"></a><a name="cached-parameterized"></a>キャッシュされパラメーター化された計算済フィールドの使用
 
 値を繰り返し検索する必要がある場合があります。 例には、アカウント名やアカウント番号が含まれます。 時間を節約するために、トップ レベルのパラメーターを含む計算済フィールドを作成し、そのフィールドをキャッシュに追加します。
@@ -218,4 +222,4 @@ ER は次のソースからデータを消費できます。
 - クラス (**オブジェクト** および **クラス** データ ソース)
 - テーブル (**テーブル** および **テーブル レコード** のデータ ソース)
 
-[ER API](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) は、呼び出しコードから事前に計算されたデータを送信することもできます。 アプリケーション スイートには、このアプローチの例が多数あります。
+[ER アプリケーション プログラミング インターフェイス (API)](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) は、呼び出しコードから計算済データを送信する方法も提供します。 アプリケーション スイートには、このアプローチの例が多数あります。

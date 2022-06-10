@@ -2,7 +2,7 @@
 title: ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
 description: このトピックでは、Excel テンプレートに入力する電子レポート (ER) のフォーマットを設計し、Excel 形式の出力ドキュメントを生成する方法について説明します。
 author: NickSelin
-ms.date: 03/25/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645138"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811423"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel 形式でドキュメントを生成する構成を設計する
 
@@ -288,6 +288,16 @@ Dynamics 365 Finance のバージョン 10.0.22 では、編集可能な形式�
 
 ![Excel から更新ダイアログ ボックスの Excel シート形式の要素オプションの作成。](./media/er-excel-format-update-template.png)
 
+バージョン 10.0.28 以降では、**Excel ヘッダーおよび Excel フッターの書式設定要素の更新** オプションを使用できます。
+
+- このオプションを **いいえ** に設定すると、Excel ブック形式でインポートされたテンプレートのワークシートで対応するヘッダーまたはフッターが更新されている場合でも、Excel ヘッダーおよび Excel フッターの書式設定要素は変更されません。
+- このオプションを **はい** に設定すると、Excel ワークブック形式でインポートされたテンプレートのワークシートで対応するヘッダーまたはフッターが更新されている場合に、Excel  ヘッダーおよび Excel フッターの書式設定要素は変更されます。
+
+    - ワークシートのヘッダーまたはフッターの構造が変更されていない場合、または追加されていない場合、対応する Excel ヘッダーまたは Excel フッターの書式要素の構造が更新されます。 この Excel ヘッダーまたは Excel フッターの書式要素の下に入れ子になった形式要素のバインドは維持されます。
+    - ワークシートのヘッダーまたはフッターの構造が変更されていない場合、または追加されていない場合、対応する Excel ヘッダーまたは Excel フッターの書式要素は再度作成されます。 この Excel ヘッダーまたは Excel フッターの書式要素の下に入れ子になった形式要素のバインドは削除されます。
+
+![[Excel から更新] ダイアログ ボックスの Excel ヘッダーと Excel フッター形式要素オプションの更新。](./media/er-excel-format-update-template2.png)
+
 この機能の詳細については、[Excel のテンプレートを再適用することで、電子レポートの形式を変更する](modify-electronic-reporting-format-reapply-excel-template.md) に記載の手順に従っ てください。
 
 ## <a name="validate-an-er-format"></a>ER 形式の検証
@@ -355,7 +365,7 @@ Microsoft Excel ブック形式の送信ドキュメントが生成された場�
 
 ## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>例 2: EPPlus のマージされたセルの問題を修正する
 
-ER 形式を実行して、Excel ワークブック形式の送信ドキュメントを生成することができます。 **機能管理** ワークスペースで、**電子レポート フレームワークで EPPlus ライブラリを使用する** 機能を有効にすると、[EPPlus ライブラリ](https://www.nuget.org/packages/epplus/4.5.2.1)を使用して Excel 出力が行われます。 しかし、[Excel の既知の動作](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9)と EPPlus ライブラリの制限により、次の例外が発生する場合があります: 「マージされたセルを削除/上書きできません。 この範囲は、部分的に他のマージされた範囲とマージされます。」 どのような Excel テンプレートがこの例外を引き起こすか、またどのようにして問題を解決するかについては、次の例を参考にしてください。
+ER 形式を実行して、Excel ワークブック形式の送信ドキュメントを生成することができます。 **機能管理** ワークスペースで、**電子レポート フレームワークで EPPlus ライブラリを使用する** 機能を有効にすると、[EPPlus ライブラリ](https://www.nuget.org/packages/epplus/4.5.2.1)を使用して Excel 出力が行われます。 しかし、[Excel の既知の動作](https://answers.microsoft.com/en-us/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9)と EPPlus ライブラリの制限により、次の例外が発生する場合があります: 「マージされたセルを削除/上書きできません。 この範囲は、部分的に他のマージされた範囲とマージされます。」 どのような Excel テンプレートがこの例外を引き起こすか、またどのようにして問題を解決するかについては、次の例を参考にしてください。
 
 1. Excel デスクトップ アプリケーションで、新しい Excel ブックを作成します。
 2. ワークシート **Sheet1** で、セル **A2** の **ReportTitle** を追加します。

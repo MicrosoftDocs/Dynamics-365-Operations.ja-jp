@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: f8e74902e939355aba9bbadd8e7f8f8aa46fe5c5
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 2c2d79c9ea36c42cfc0f6ba0d3c81d063d8d9446
+ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323928"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782179"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>生成されたレポートの Word コンテンツ コントロールを非表示にする
 
@@ -26,7 +26,7 @@ ms.locfileid: "8323928"
 
 Microsoft Word ドキュメントとしてレポートを生成するには、レポートのテンプレートを Word ドキュメントとしてデザインする必要があります。 このテンプレートには、ランタイムに入力されるデータのプレースホルダーとして Word コンテンツ コントロールを含む必要があります。 レポートのテンプレートとして作成された Word ドキュメントを使用するには、新しい[電子申告 (ER)](general-electronic-reporting.md) [ソリューション](er-quick-start1-new-solution.md) を[構成](er-design-configuration-word.md) できます。 このソリューションには、ER 形式 コンポーネントを含む ER [構成](general-electronic-reporting.md#Configuration) を含める必要があります。 この ER 形式は、レポート生成用に設計されたテンプレートを使用するように構成する必要があります。
 
-Dynamics 365 Finance のバージョン 10.0.6 以降のバージョンでは、ER 形式のフォーミュラを構成して生成されるドキュメントで一部の Word コンテンツ コントロールを非表示にできます。
+Dynamics 365 Finance のバージョン 10.0.6 以降では、ER 形式のフォーミュラを構成して生成されるドキュメントで一部の Word コンテンツ コントロールを非表示にできます。
 
 次の手順では、システム管理者または電子申告機能コンサルタントのロールに割り当てられたユーザーが、レポートを Word ファイルとして生成し、Word テンプレートを使用して構成されている生成されたレポートの一部のコンテンツ コントロールを非表示にする ER 形式を構成する方法について説明します。
 
@@ -47,7 +47,7 @@ Dynamics 365 Finance のバージョン 10.0.6 以降のバージョンでは、
 
 また、サンプル レポート用に次のテンプレートをダウンロードして保存する必要があります。
 
-- [支払レポートのバインドされたテンプレート 2 (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded2.docx)
+- [支払レポートのバインドされたテンプレート 2 (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/1/9/b/19b36e39-861a-414e-9150-9880d9d2487c/SampleVendPaymDocReportBounded2.docx)
 
 ## <a name="review-the-downloaded-word-template"></a><a id="tag-control"></a>ダウンロードした Word テンプレートの確認
 

@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 3385edf8961d04cf8bfc4ca06299f1911b76a4f5
+ms.sourcegitcommit: 2b119aec0e6f49bfd36125d9660f49cde5394446
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740655"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8758772"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>財務と運用アプリのサービスの説明
 
@@ -132,9 +132,9 @@ Microsoft は、トランザクション量とユーザーの同時実行を処�
 
 LCS は、環境およびデータ管理タスクの実行に使用される [セルフサービス ツール](../../dev-itpro/deployment/infrastructure-stack.md) および [データベース移動操作](../../dev-itpro/database/dbmovement-operations.md) を提供します。 次にいくつか例を挙げます。
 
-**イベント:** [実稼働インスタンスの要求](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
+**イベント:** [実稼働インスタンスの要求](../imp-lifecycle/go-live-faq.md#when-can-i-configure-and-request-my-production-environment)
 
-- [Go-Live チェックリスト](../imp-lifecycle/prepare-go-live.md) に入力し、[Microsoft FastTrack](/dynamics365/fasttrack/) チームに送信します。
+- [Go-live 準備完了レビュー](../imp-lifecycle/prepare-go-live.md) を完了して [Microsoft FastTrack](/dynamics365/fasttrack/) チームに送信します。
 - 実稼働インスタンスを要求する前に、[LCS サブスクリプション見積ツール](../../dev-itpro/lifecycle-services/subscription-estimator.md) を完了してください。
 - [LCS 手法](../../dev-itpro/lifecycle-services/create-methodology.md) で指定されているすべての実装タスクを完了します。
 

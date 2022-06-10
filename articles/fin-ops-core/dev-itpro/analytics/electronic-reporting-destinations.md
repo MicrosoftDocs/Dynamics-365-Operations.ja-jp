@@ -2,7 +2,7 @@
 title: 電子申告 (ER) の送信先
 description: このトピックでは、電子申告の送信先の管理、サポートされている送信先のタイプ、およびセキュリティ上の注意事項について説明します。
 author: nselin
-ms.date: 09/16/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: e3154cb62531bf956365b420b454c98ead7f7335
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647096"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780463"
 ---
 # <a name="electronic-reporting-er-destinations"></a>電子申告 (ER) の送信先
 
@@ -173,11 +173,11 @@ PDF への変換オプションを使用して、Microsoft Office (Excel また�
 
 ### <a name="limitations"></a>制限
 
-PDF への変換オプションは、クラウド展開に対してのみ使用可能です。
+Finance **バージョン 10.0.9** からは、PDF 変換のオプションはクラウド展開のみで利用可能です。 Finance バージョン **10.0.27** から、[インターネット接続](../user-interface/client-disconnected.md) が有効になっているすべての導入環境で PDF 変換オプションを使用できます。
 
 生成される PDF ドキュメントは最大長 300 ページに制限されます。
 
-Finance **バージョン 10.0.9** では、Excel 出力から生成される PDF ドキュメントでは、横方向のみがサポートされます。 Finance **バージョン 10.0.10 (2020 年 5 月) 以降** では、ER 送信先を構成する際に、Excel 出力から生成される PDF ドキュメントの [印刷の向きを指定](#SelectPdfPageOrientation) することができます。
+Finance **バージョン 10.0.9** では、Excel 出力から生成される PDF ドキュメントでは、横方向のみがサポートされます。 Finance **バージョン 10.0.10** 以降では、ER 送信先を構成する際に、Excel 出力から生成される PDF ドキュメントの [印刷の向きを指定](#SelectPdfPageOrientation) することができます。
 
 埋め込みフォントを含まない出力の変換には、Windows オペレーティング システム共通のシステム フォントのみが使用されます。
 

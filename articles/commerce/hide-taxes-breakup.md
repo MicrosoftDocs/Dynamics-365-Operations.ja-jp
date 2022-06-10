@@ -2,19 +2,19 @@
 title: 税内訳情報を注文集計で非表示にする
 description: このトピックでは、Microsoft Dynamics 365 Commerce のカートの注文集計、チェックアウト、注文確認、および注文の詳細ページで税内訳情報を非表示にする方法について説明します。
 author: gvrmohanreddy
-ms.date: 04/21/2022
+ms.date: 05/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-03-28
-ms.openlocfilehash: 9890b5cd92f8c07e6feabb26f4fdd076cb7a02bc
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9a0bff7afaa10e49ec05f18e2b0fae7a19b5e8af
+ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645220"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8767817"
 ---
 # <a name="hide-tax-breakup-information-in-order-summaries"></a>税内訳情報を注文集計で非表示にする
 
@@ -46,6 +46,9 @@ ms.locfileid: "8645220"
 次の図は、サイト ビルダーで強調表示および選択された **税内訳を注文集計で表示** のチェックボックスを示しています。
 
 ![税内訳を注文集計で表示するオプションを、サイト ビルダーに表示します。](media/prices-include-sales-tax-e-Commerce-site-settings.png)
+
+> [!NOTE]
+> 注文の概要モジュールをカスタマイズし、Commerce Version 10.0.27 以降の "注文集計で租税の集計情報を非表示にする" 機能を継承しない場合は、[注文の集計モジュールをカスタマイズした場合に、注文の概要の小計に請求金額に税金が含まない](troubleshoot/summary-taxes-custom-modules-10.0.27.md#resolution) を参照してください。
 
 ## <a name="additional-resources"></a>追加リソース
 

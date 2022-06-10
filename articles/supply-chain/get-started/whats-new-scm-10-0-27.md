@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: e8ec20c361f76a6012a7c8e1f03296007f5a05aa
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 77c79c88b08844bf7e399a762bb9eb9746ffb71a
+ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645355"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8812947"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10027-july-2022"></a>Dynamics 365 Supply Chain Management 10.0.27 のプレビュー (2022 年 7 月)
 
@@ -34,7 +34,7 @@ ms.locfileid: "8645355"
 
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |---|---|---|---|
-| 在庫および物流 | [在庫の可視化アドインの在庫配賦](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | 間もなく公開 | 既定で有効 |
+| 在庫および物流 | [在庫の可視化アドインの在庫配賦](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | [在庫の可視化の在庫配賦](../inventory/inventory-visibility-allocation.md) | 既定で有効 |
 | 製造 | 生産現場の実行インターフェイスの [自分の 1 日の職務] ビュー | [作業者が生産フロア実行インターフェイスを使用する方法](../production-control/production-floor-execution-use.md)および[生産フロア実行インターフェイスで休暇残高を表示する](../production-control/production-floor-execution-payroll-stats.md) | 機能管理:<br>*生産現場の実行インターフェイスの [自分の 1 日の職務] ビュー* |
 | 計画 | [外注の最適化サポートの計画](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-subcontracting) | [生産における外注作業の管理](../production-control/manage-subcontract-work-production.md) | 既定で有効 |
 
@@ -69,7 +69,7 @@ ms.locfileid: "8645355"
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.27 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.27 のプラットフォーム更新プログラム (2022 年 6 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md) を参照してください。<!-- KFM Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.27 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.27 のプラットフォーム更新プログラム (2022 年 6 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 

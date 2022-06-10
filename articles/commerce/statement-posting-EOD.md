@@ -2,19 +2,19 @@
 title: 明細書転記機能の改良
 description: このトピックでは、明細書転記の機能に加えられた機能強化事項について説明します。
 author: analpert
-ms.date: 04/27/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: be9aa68aec1fd7deff315234a6dbf41edc3d6819
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: f3937ee7b34b7204c31d922900029ae3a2c59e18
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649022"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770172"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>明細書転記機能の改良
 
@@ -151,6 +151,9 @@ ms.locfileid: "8649022"
 - ユーザーには、トランザクションの集計方法への可視性があります。
 - ユーザーには、トランザクションから販売注文、売上請求書への完全な監査証跡があります。 この監査証跡は、従来の明細書転記機能では使用できませんでした。
 - 集計された XML ファイルは、販売注文の作成および請求時に問題を識別しやすくします。
+
+> [!NOTE]
+> トランザクションを集計する際、トランザクションに割り当てられたスタッフ メンバーは、**上位のスタッフ売上レポート** を使用できなくなりました。つまり、**上位のスタッフ売上レポート** にすべてのトランザクションは表示されなくなります。 トランザクションの集計では **上位のスタッフ売上レポート** を使用しないことをお勧めします。
 
 ### <a name="journal-vouchers"></a>仕訳伝票
 
