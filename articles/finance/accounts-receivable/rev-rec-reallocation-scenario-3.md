@@ -1,6 +1,6 @@
 ---
 title: 収益認識の再配賦 - シナリオ 3
-description: このトピックでは、既存の請求済販売注文に、新しい明細行が追加された、再配賦シナリオについて説明します。 新しい品目が契約に追加されると、新しい販売注文または既存の販売注文のいずれかに追加できます。
+description: この記事では、既存の請求済販売注文に、新しい明細行が追加された、再配賦シナリオについて説明します。 新しい品目が契約に追加されると、新しい販売注文または既存の販売注文のいずれかに追加できます。
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3b3b41b09cc9f4c56fdb04f6a2c4156bc1637699
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7aa62406a80eb3381206172caaae457ec71b7bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726580"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904819"
 ---
 # <a name="revenue-recognition-reallocation--scenario-3"></a>収益認識の再配賦 – シナリオ 3
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、既存の請求済販売注文に、新しい明細行が追加された、再配賦シナリオについて説明します。 新しい品目が契約に追加されると、新しい販売注文または既存の販売注文のいずれかに追加できます。 また、このシナリオは、再配賦のために売掛金勘定が更新された場合の状況も示します。
+この記事では、既存の請求済販売注文に、新しい明細行が追加された、再配賦シナリオについて説明します。 新しい品目が契約に追加されると、新しい販売注文または既存の販売注文のいずれかに追加できます。 また、このシナリオは、再配賦のために売掛金勘定が更新された場合の状況も示します。
 
 このシナリオでは、**一般会計パラメーター** ページの **収益認識** タブの **請求書の修正を売掛金勘定に転記** オプション (**収益認識 \> 設定 \> 一般会計パラメーター**) を **はい** に設定します。
 

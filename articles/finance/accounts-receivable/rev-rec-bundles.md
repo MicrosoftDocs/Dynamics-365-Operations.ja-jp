@@ -1,6 +1,6 @@
 ---
 title: 収益認識のバンドル
-description: このトピックでは、売掛金勘定の収益認識機能に含まれるバンドル機能について説明します。 バンドルは、親品目と複数のコンポーネント品目で構成されます。
+description: この記事では、売掛金勘定の収益認識機能に含まれるバンドル機能について説明します。 バンドルは、親品目と複数のコンポーネント品目で構成されます。
 author: kweekley
 ms.date: 01/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 62a4d7f36ad0b36edeaec75e9b670e2aad143703
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 478fdfc69514fba829deb63b4e2904ff3fe1e199
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725822"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876299"
 ---
 # <a name="revenue-recognition-bundles"></a>収益認識のバンドル
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、売掛金勘定の収益認識機能に含まれるバンドル機能について説明します。 バンドルは、親品目と複数のコンポーネント品目で構成されます。 親品目は販売注文で入力されるため、注文入力がより効率的になります。 ただし、その後、コンポーネント品目に展開されます。 梱包明細などの内部ドキュメントには、コンポーネント品目が一覧表示されます。 ただし、外部ドキュメントには親品目のみが表示されます。
+この記事では、売掛金勘定の収益認識機能に含まれるバンドル機能について説明します。 バンドルは、親品目と複数のコンポーネント品目で構成されます。 親品目は販売注文で入力されるため、注文入力がより効率的になります。 ただし、その後、コンポーネント品目に展開されます。 梱包明細などの内部ドキュメントには、コンポーネント品目が一覧表示されます。 ただし、外部ドキュメントには親品目のみが表示されます。
 
 > [!NOTE]
 > オンライン、販売時点管理 (POS)、コール センターなどの Microsoft Dynamics 365 Commerce チャネルでは、収益認識 (バンドル機能を含む) はサポートされていません。 これには、Dynamics 365 Supply Chain Management および Dynamics 365 Sales の見込顧客を現金化のソリューションも含まれます。 収益認識を使用するように構成された品目は、Commerce チャネルまたは見込顧客を現金化のソリューションで作成された注文またはトランザクションに追加しないでください。

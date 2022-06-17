@@ -1,6 +1,6 @@
 ---
 title: 分散型注文管理 (DOM)
-description: このトピックでは、Dynamics 365 Commerce の分散型注文管理 (DOM) の機能について説明します。
+description: この記事では、Dynamics 365 Commerce の分散型注文管理 (DOM) の機能について説明します。
 author: josaw1
 ms.date: 02/08/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f19fbe2a9f768a91c495a6a4bcb0e475adb867ae
-ms.sourcegitcommit: 8bea5a0c232ac31dcafddfcc0d715c496d8dd445
+ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102012"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878515"
 ---
 # <a name="distributed-order-management-dom"></a>分散型注文管理 (DOM)
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の分散型注文管理 (DOM) の機能について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の分散型注文管理 (DOM) の機能について説明します。
 
 DOM は、サプライ チェーン ネットワークにおける注文フルフィルメントを最大化するためのオムニチャネル注文フルフィルメント最適化ソリューションです。 DOM を使用すると、正しい数量の製品が正しいソースから正しい時期に顧客に確実に配送されます。 DOM は、利益の最大化とコストの最小化を図り、サービスレベルの要件を満たすのにも役立ちます。
 

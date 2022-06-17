@@ -1,6 +1,6 @@
 ---
 title: Finance ホーム ページ
-description: このトピックでは、Microsoft Dynamics 365 Finance の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。
+description: この記事では、Microsoft Dynamics 365 Finance の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。
 author: kfend
 ms.date: 11/04/2021
 ms.topic: index-page
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a442256797cb64d30a18268232a07b463bc0db36
-ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
+ms.openlocfilehash: 9299a0ef4def8a41620ada24e8b13d7b41ed7cb7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2022
-ms.locfileid: "8762598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887893"
 ---
 # <a name="finance-home-page"></a>Finance ホーム ページ
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。 
+この記事では、Microsoft Dynamics 365 Finance の財務管理機能に関するヘルプ トピックとその他のリソースの一覧を示します。 
 
 機能領域を選択すると詳細が表示されます。
 

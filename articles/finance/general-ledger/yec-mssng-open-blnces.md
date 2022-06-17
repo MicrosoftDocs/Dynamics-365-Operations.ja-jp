@@ -1,6 +1,6 @@
 ---
 title: 年度末決算に期首残高が表示されない
-description: このトピックでは、年度末決算時に期首残高が欠落している理由と、欠落している場合に、その残高を再構築する方法について説明します。
+description: この記事では、年度末決算時に期首残高が欠落している理由と、欠落している場合に、その残高を再構築する方法について説明します。
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 582363ba6c5f6e63e695d41e73ee2f0b382cf26e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9b64118fc3ff368e21ea8935c1e706f2161c620f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727175"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894851"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>年度末決算に期首残高が表示されない
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、年度末決算時に期首残高が欠落している理由と、欠落している場合に、その残高を再構築する方法について説明します。
+この記事では、年度末決算時に期首残高が欠落している理由と、欠落している場合に、その残高を再構築する方法について説明します。
 
 ### <a name="symptom"></a>現象
 
@@ -36,7 +36,7 @@ ms.locfileid: "8727175"
 
 **前の決算を元に戻す** フィールドが **はい** に設定されている場合は、同じ会計年度の実行された年度末決算が元に戻されます。 年度末決算を元に戻すプロセスを実行すると、決算残高と期首残高の両方のエントリが削除され、年度末決算が実行されていない状態に戻ります。 伝票も削除されます。 年度末決算プロセスは、自動的には再実行されません。 プロセスを再度開始する必要があります。その場合、**前の決算を元に戻す** オプションを **いいえ** に更新します。
 
-このシナリオについては、年度末決算に関する FAQ トピックで取り上げられています。 詳細については、[年度末の活動に関するよく寄せられる質問](faq-year-end-activities.md)を参照してください。
+このシナリオについては、年度末決算に関する FAQ 記事で取り上げられています。 詳細については、[年度末の活動に関するよく寄せられる質問](faq-year-end-activities.md)を参照してください。
 
 ### <a name="symptom"></a>現象
 

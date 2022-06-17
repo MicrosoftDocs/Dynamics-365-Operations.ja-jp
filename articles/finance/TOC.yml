@@ -56,10 +56,12 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
                 - name: クラウド環境への更新プログラムの適用
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
-                - name: オンプレミス配置への更新プログラムの適用
+                - name: オンプレミス展開への更新プログラムの適用
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: サービス更新の構成
+                - name: サービスの更新の構成
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
+                - name: サービス提供前およびサービス提供後
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/finance/toc.json
                 - name: サービス更新の一時停止
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: サービス更新に関する通知を受け取る
@@ -1684,6 +1686,8 @@
                       href: general-ledger/sales-tax-calculation-methods-origin-field.md
                     - name: 消費税コードの合計額と間隔計算オプション
                       href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: 消費税の計算と丸め
+                      href: general-ledger/sales-tax-calculation-rounding.md
                     - name: 一般仕訳帳明細行での消費税計算
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: 仕入先請求書の消費税の計算と調整
@@ -2168,6 +2172,8 @@
                   href: localizations/emea-est-vat-statement-details.md
                 - name: エストニアのイントラスタット
                   href: localizations/emea-est-intrastat.md
+                - name: EU 販売リスト
+                  href: localizations/emea-est-eu-sales-list.md
             - name: ヨーロッパ
               items:
                 - name: 欧州の概要
@@ -2452,6 +2458,8 @@
                   href: localizations/emea-hun-online-invoicing.md
                 - name: ハンガリーの消費税レポート
                   href: localizations/emea-hun-sales-tax-reports.md
+                - name: ハンガリーのイントラスタット
+                  href: localizations/emea-hun-intrastat.md
                 - name: 繰延消費税計算
                   href: localizations/emea-hun-deferred-vat.md
             - name: アイスランド
@@ -3112,6 +3120,8 @@
                   href: localizations/emea-lva-vat-statement-details.md
                 - name: ラトビアのイントラスタット
                   href: localizations/emea-lva-intrastat.md
+                - name: EU 販売リスト
+                  href: localizations/emea-lva-eu-sales-list.md
             - name: リトアニア
               items:
                 - name: リトアニアの概要
@@ -3130,6 +3140,8 @@
                   href: localizations/emea-ltu-saf-t.md
                 - name: 社内の商品移動の移動文書の設定
                   href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+                - name: EU 販売リスト
+                  href: localizations/emea-ltu-eu-sales-list.md
             - name: マレーシア
               items:
                 - name: マレーシアの概要
@@ -4479,10 +4491,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
                 - name: 効率的な電子申告ソリューションをデザインする
                   items:
-                    - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
+                    - name: ER 形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: ER コンフィギュレーションのパフォーマンスの問題のトラブルシューティング
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+                    - name: 実行時にフェッチするテーブル フィールドの件数を減らす
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
                 - name: ビジネス ドキュメントの管理 (BDM)
                   items:
                     - name: BDM 概要

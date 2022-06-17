@@ -1,6 +1,6 @@
 ---
 title: 共有番号順序を使用して、仕入先をコピーする
-description: このトピックでは、同じ仕入先 ID を維持したまま共有番号順序を使用して仕入先を別の法人にコピーする方法について、説明します。
+description: この記事では、同じ仕入先 ID を維持したまま共有番号順序を使用して仕入先を別の法人にコピーする方法について、説明します。
 author: sunfzam
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4cea8269082b39e2374ffb3c3dc82def8ce35679
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: 7b7285cdf454955656c4fb20c3abf68f3f9c39dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358468"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904904"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>共有番号順序を使用して、仕入先をコピーする
 

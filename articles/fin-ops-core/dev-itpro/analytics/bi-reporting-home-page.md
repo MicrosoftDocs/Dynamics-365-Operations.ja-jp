@@ -1,6 +1,6 @@
 ---
 title: Power BI ホーム ページを使用したレポートと分析
-description: このトピックでは、使用可能なビジネス インテリジェンスおよびレポート ツールの詳細を学ぶためのリソースを紹介します。
+description: この記事では、使用可能なビジネス インテリジェンスおよびレポート ツールの詳細を学ぶためのリソースを紹介します。
 author: sericks007
 ms.date: 10/02/2019
 ms.topic: index-page
@@ -16,23 +16,23 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1c0ee254a5300cfc84eb434e4785b6eceacf0375b983b33991445443957a33
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4be3c576cd0fac1239113efcdd7e97810b193a88
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712739"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906636"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Power BI ホーム ページを使用したレポートと分析
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、使用可能なビジネス インテリジェンス (BI) およびレポート ツールの詳細を学ぶためのリソースを紹介します。
+この記事では、使用可能なビジネス インテリジェンス (BI) とレポート ツールの詳細を学ぶためのリソースを紹介します。
 
 ## <a name="get-started"></a>使用開始
 - [情報へのアクセスとレポート](information-access-reporting.md)
 - [技術解説: レポート オプション](https://www.youtube.com/watch?v=NzZONjKs5xA) (ビデオ)
-- [Finance and Operations: Power BI分析およびレポート サービスのブログ](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (ブログ)
+- [Finance and Operations: Power BI Analytics & Reporting Services ブログ](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (ブログ)
 
 ## <a name="analytical-workspaces"></a>分析ワークスペース
 ワークスペースでは、Microsoft Power BI でサポートされている強力なインフォグラフィックやビジュアルを利用できます。 これらのインフォグラフィックおよびビジュアルの中には、サード パーティが提供しているさまざまなコントロールもあります。 そのため、ワークスペースでは、きわめて視覚的で対話性の高い環境がユーザーに提供されます。

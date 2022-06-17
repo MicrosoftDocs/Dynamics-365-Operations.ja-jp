@@ -1,6 +1,6 @@
 ---
 title: 買掛金勘定ホーム ページ
-description: このトピックでは、買掛金勘定の概要を示します。
+description: この記事では、買掛金勘定の概要を示します。
 author: sunfzam
 ms.date: 02/15/2019
 ms.topic: index-page
@@ -8,27 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "21901"
 - intro-internal
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 5ed6aacb94de14bdb72185cd528f62e74cd3cc15
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595290"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946104"
 ---
 # <a name="accounts-payable-home-page"></a>買掛金勘定ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、買掛金勘定の概要を示します。 
+この記事では、買掛金勘定の概要を示します。 
 
 仕入先請求書を手動で入力するか、またはデータ エンティティによって電子的にそれらを受け取ることができます。 請求書の入力または入庫後、請求書承認仕訳または **仕入先請求書** ページを使用して、請求書を確認および承認できます。 確認プロセスを自動化するために請求書照合、仕入先請求書ポリシー、およびワークフローを使用すると、特定の基準を満たす請求書は自動的に承認され、残りの請求書には承認されたユーザーが確認するようにフラグが設定されます。
 
@@ -126,9 +126,9 @@ ms.locfileid: "7595290"
 
 #### <a name="blogs"></a>ブログ
 
-買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)および [Microsoft Dynamics 365 Finance - Financials のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
+買掛金勘定およびその他のソリューションに関する意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) と [Microsoft Dynamics 365 Finance - 財務のブログ](https://community.dynamics.com/365/financeandoperations/b/financials) を参照してください。
 
-[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+[Microsoft Dynamics 運用パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための一元化したリソースを Microsoft Dynamics パートナー向けに提供しています。
 
 #### <a name="community-blogs"></a>コミュニティのブログ
 

@@ -54,10 +54,12 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
                 - name: クラウド環境への更新プログラムの適用
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
-                - name: オンプレミス配置への更新プログラムの適用
+                - name: オンプレミス展開への更新プログラムの適用
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
-                - name: サービス更新の構成
+                - name: サービスの更新の構成
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
+                - name: サービス提供前およびサービス提供後
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
                 - name: サービス更新の一時停止
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: サービス更新に関する通知を受け取る
@@ -394,6 +396,8 @@
                   items:
                     - name: Store Commerce アプリ
                       href: dev-itpro/store-commerce.md
+                    - name: Modern POS を Store Commerce に移行する
+                      href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: デバイス管理実装ガイダンス
                       href: implementation-considerations-devices.md
                     - name: Store Commerce または Cloud POS を選択する
@@ -2218,10 +2222,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
                 - name: 効率的な電子申告ソリューションをデザインする
                   items:
-                    - name: 電子申告形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
+                    - name: ER 形式の実行をトレースしてパフォーマンスの問題をトラブルシューティング
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
                     - name: ER コンフィギュレーションのパフォーマンスの問題のトラブルシューティング
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: 実行時にフェッチするテーブル フィールドの件数を減らす
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/commerce/toc.json
                 - name: ビジネス ドキュメントの管理 (BDM)
                   items:
                     - name: BDM 概要
@@ -2476,6 +2482,8 @@
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: レガシ Retail SDK の移行
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+                    - name: 廃止または削除された API、クラス、メソッド
+                      href: dev-itpro/obsolete-apis-classes-methods.md
                     - name: Commerce の店舗テクノロジ スタックを最新化する (ホワイト ペーパー)
                       href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: 環境設定
@@ -2560,6 +2568,8 @@
                   items:
                     - name: Cloud Scale Unit 拡張機能パッケージの作成
                       href: dev-itpro/CSU-packaging.md
+                    - name: 展開の Cloud Scale Unit 拡張パッケージのマージ
+                      href: dev-itpro/merge-csu-extensions.md
                     - name: Cloud Scale Unit 拡張機能の削除
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2908,6 +2918,14 @@
                       href: dev-itpro/create-retail-experience-app.md
         - name: トラブルシューティング
           items:
+            - name: Store Commerce
+              items:
+                - name: 設定とインストールにともなう問題
+                  href: troubleshoot/store-commerce-setup-installation.md
+                - name: パフォーマンスの問題
+                  href: troubleshoot/store-commerce-performance.md
+                - name: 拡張機能の問題
+                  href: troubleshoot/store-commerce-extensions.md
             - name: 注文処理
               items:
                 - name: 支払タイプはクレジット カード エラーである必要があります

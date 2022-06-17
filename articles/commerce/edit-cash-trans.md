@@ -1,6 +1,6 @@
 ---
 title: 現金売りトランザクションと現金管理トランザクションの編集と監査
-description: このトピックでは、Microsoft Dynamics 365 Commerce で現金売りトランザクションと現金管理トランザクションを編集および監査する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で現金売りトランザクションと現金管理トランザクションを編集および監査する方法について説明します。
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 85c4bd4c03b6ac09f2226d1767deabde1879f869e4b7c4d45e4d4c2a1d8effb3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cab28dee425110f47a4e2ec5a737778dd567d786
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765341"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873333"
 ---
 # <a name="edit-and-audit-cash-and-carry-and-cash-management-transactions"></a>現金売りトランザクションと現金管理トランザクションの編集と監査
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で現金売りトランザクションと現金管理トランザクションを編集および監査する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce で現金売りトランザクションと現金管理トランザクションを編集および監査する方法について説明します。
 
 ## <a name="overview"></a>概要
 

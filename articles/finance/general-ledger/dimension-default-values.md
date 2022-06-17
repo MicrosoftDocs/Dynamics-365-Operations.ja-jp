@@ -1,6 +1,6 @@
 ---
 title: 財務仕訳帳の既定の財務分析コード
-description: このトピックでは、財務仕訳帳に入力される取引において、財務分析コードの値がどのように設定されるかを定義するルールについて説明します。 また、固定分析コードが使用されるシナリオについても取り上げます。
+description: この記事では、財務仕訳帳に入力される取引において、財務分析コードの値がどのように設定されるかを定義するルールについて説明します。 また、固定分析コードが使用されるシナリオについても取り上げます。
 author: kweekley
 ms.date: 09/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 51235b8a5dac50aad5031456760c970e50506d66
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8d0fcf836e22207baae562801fb082d735df0f96
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713109"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907928"
 ---
 # <a name="default-financial-dimensions-on-financial-journals"></a>財務仕訳帳の既定の財務分析コード
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、財務仕訳帳に入力される取引で、財務分析コードの値がどのように設定されるかを定義するルールについて説明します (在庫仕訳帳とプロジェクト仕訳帳は除きます)。 また、固定分析コードが使用されるシナリオについても取り上げます。
+この記事では、財務仕訳帳に入力される取引で、財務分析コードの値がどのように設定されるかを定義するルールについて説明します (在庫仕訳帳とプロジェクト仕訳帳は除きます)。 また、固定分析コードが使用されるシナリオについても取り上げます。
 
 ## <a name="symptom"></a>現象
 

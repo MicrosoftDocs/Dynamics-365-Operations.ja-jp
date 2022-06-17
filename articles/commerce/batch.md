@@ -1,6 +1,6 @@
 ---
 title: バッチ追跡品目の処理の改善
-description: このトピックでは、Microsoft Dynamics 365 Commerce の明細転記プロセスで使用するバッチ追跡項目の改善された処理について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の明細転記プロセスで使用するバッチ追跡項目の改善された処理について説明します。
 author: josaw1
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 513b6ca84fa71e851a5a3e4275e0b6572789e1eb
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 736ab8dd21f04d7119cca6d53bfeb5e408b8cbd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485786"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881881"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>バッチ追跡品目の処理の改善
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の明細転記プロセスで使用するバッチ追跡項目の改善された処理について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の明細転記プロセスで使用するバッチ追跡項目の改善された処理について説明します。
 
 Dynamics 365 Commerce 販売時点管理 (POS) では、バッチ追跡品目のバッチ番号を販売時に取得することはできません。 ただし、特定の構成では、顧客の注文または明細書の転記を通じて販売が Commerce 本社に転記されるとき、Commerce は、バッチ追跡品目に対して有効なバッチ番号が存在することと、請求プロセスで有効なバッチ番号が使用されることを想定しています。
 

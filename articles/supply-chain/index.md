@@ -1,6 +1,6 @@
 ---
 title: Supply Chain Management ホーム ページ
-description: このページでは、Supply Chain Management 機能に関するヘルプ トピックとその他のリソースの一覧を示します。
+description: このページでは、Supply Chain Management 機能に関するヘルプ記事とその他のリソースの一覧を示します。
 author: kamaybac
 ms.date: 09/15/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789215"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879079"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management ホーム ページ
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 Supply Chain Management に関するヘルプ トピックとその他のリソースの一覧を示します。
+この記事では、Dynamics 365 Supply Chain Management に関するヘルプ記事とその他のリソースの一覧を示します。
 
 ## <a name="whats-new-and-in-development"></a>新機能および開発中の機能
 
@@ -89,11 +89,11 @@ Dynamics 365 Finance の詳細については、[Finance ホーム ページ](..
 - **生産管理ビデオ:**
   - [Subcontracting operations and activities in manufacturing (製造での外注の操作および活動)](https://youtu.be/y1jrd3A_k70)
 - **輸送管理ビデオ:**
-  - [新しいMicrosoft Dynamics AX の輸送管理 (TMS)](https://youtu.be/jgmTgJIgEFQ)
+  - [新しい Microsoft Dynamics AX の輸送管理 (TMS)](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>ブログ
 
-[Dynamics AX 製造研究開発チーム ブログ](/archive/blogs/axmfg/) および [Dynamics AX 研究開発チーム ブログの Supply Chain Management](https://blogs.msdn.microsoft.com/dynamicsaxscm/)には、製造およびサプライ チェーン マネジメントに関する多くのトピックがあります。 これらの投稿のほとんどは、以前のバージョンについて書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
+[Dynamics AX 製造研究開発チーム ブログ](/archive/blogs/axmfg/) および [Dynamics AX 研究開発チーム ブログの Supply Chain Management](https://blogs.msdn.microsoft.com/dynamicsaxscm/)には、製造およびサプライ チェーン マネジメントに関する多くの記事があります。 これらの投稿のほとんどは、以前のバージョンについて書かれていますが、現在のバージョンでも同じ概念を適用でき、手順も類似しています。
 
 ## <a name="white-papers"></a>ホワイト ペーパー
 

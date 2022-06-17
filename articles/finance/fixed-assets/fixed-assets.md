@@ -1,6 +1,6 @@
 ---
 title: 固定資産ホーム ページ
-description: このトピックでは、Microsoft Dynamics 365 Finance で固定資産を扱う際に役立つリソースをご案内します。
+description: この記事では、Microsoft Dynamics 365 Finance で固定資産を扱う際に役立つリソースをご案内します。
 author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cee27143ca005f2fa42899365933ec3014aa13f6
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 57e81aaefd61eb9e695d8fe0d1c7cac4091bece7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720449"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880819"
 ---
 # <a name="fixed-assets-home-page"></a>固定資産ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance で固定資産を扱う際に役立つリソースをご案内します。 固定資産は、個人または組織が所有する、価値のある品目です。 品目には、建物、車両、土地、設備が含まれます。 
+この記事では、Microsoft Dynamics 365 Finance で固定資産を扱う際に役立つリソースをご案内します。 固定資産は、個人または組織が所有する、価値のある品目です。 品目には、建物、車両、土地、設備が含まれます。 
 
 固定資産の取得情報を設定して入力した後、減価償却を行い、減価償却を判断するための資本化のしきい値を設定することによって資産を管理できます。 固定資産の調整を算出し、さらに処分することもできます。 固定資産と一般会計を併せて使用すると、すべての固定資産の現在の価値を表示できます。 固定資産を処理する方法は、国際会計基準およびそれぞれの国や地域の会計法の両方に準拠する必要があります。 要件として、取得と処分のトランザクション、減価償却、有効期間、固定資産の帳簿価格引上と償却の記録方法などがあります。 固定資産の機能は、これらの標準とルールの多くを取り入れています。
 
@@ -46,7 +46,7 @@ ms.locfileid: "8720449"
 
 意見、ニュース、その他の情報については、[Microsoft Dynamics 365 ブログ](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)と [Microsoft Dynamics 365 Finance and Operations - 財務のブログ](https://community.dynamics.com/365/financeandoperations/b/financials)を参照してください。
 
-[Microsoft Dynamics Operations パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog)では、Dynamics 365 に関する最新情報とトレンドを知るための単一のリソースが Microsoft Dynamics パートナー向けに提供されています。
+[Microsoft Dynamics 運用パートナー コミュニティのブログ](https://community.dynamics.com/partner/b/operationspartnercommunityblog) では、Dynamics 365 に関する最新情報とトレンドを知るための一元化したリソースを Microsoft Dynamics パートナー向けに提供しています。
 
 #### <a name="task-guides"></a>タスク ガイド
 タスク ガイドとして使用できる追加のヘルプが用意されています。 タスク ガイドにアクセスするには、ページの [ヘルプ] ボタンをクリックします。

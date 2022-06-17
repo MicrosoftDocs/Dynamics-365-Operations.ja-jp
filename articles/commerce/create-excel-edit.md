@@ -1,6 +1,6 @@
 ---
 title: 小売トランザクションを編集するために Excel ブックを作成する
-description: このトピックでは、Microsoft Dynamics 365 Commerce で小売トランザクションを編集できるように、Excel ブックを作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で小売トランザクションを編集できるように、Excel ブックを作成する方法について説明します。
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bfc3f6898087445e0276994ceeb52c178785bf3604fa163939327e99a0564f64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da3c2eb19491b37decaf29d13f675271ae7a3698
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753111"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873089"
 ---
 # <a name="create-an-excel-workbook-to-edit-retail-transactions"></a>小売トランザクションを編集するために Excel ブックを作成する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で小売トランザクションを編集できるように、Excel ブックを作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce で小売トランザクションを編集できるように、Excel ブックを作成する方法について説明します。
 
 ## <a name="overview"></a>概要
 

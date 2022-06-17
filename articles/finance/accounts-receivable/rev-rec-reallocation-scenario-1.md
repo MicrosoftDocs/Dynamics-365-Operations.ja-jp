@@ -1,6 +1,6 @@
 ---
 title: 収益認識の再配賦 - シナリオ 1
-description: このトピックでは、2 つの販売注文が入力されたが、まだ確認済の状態である、再配賦シナリオについて説明します。 3 つ以上の販売注文が確認済の状態にある場合も、同じシナリオで、同様の結果となります。
+description: この記事では、2 つの販売注文が入力されたが、まだ確認済の状態である、再配賦シナリオについて説明します。 3 つ以上の販売注文が確認済の状態にある場合も、同じシナリオで、同様の結果となります。
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cd094840e16a0ab19e234148e4ef40c454315d96
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 597c83388937cff689748889eff29d6be1b8341a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725795"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876271"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>収益認識の再配賦 – シナリオ 1
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、2 つの販売注文が入力されたが、まだ確認済の状態である、再配賦シナリオについて説明します。 3 つ以上の販売注文が確認済の状態にある場合も、同じシナリオで、同様の結果となります。
+この記事では、2 つの販売注文が入力されたが、まだ確認済の状態である、再配賦シナリオについて説明します。 3 つ以上の販売注文が確認済の状態にある場合も、同じシナリオで、同様の結果となります。
 
 このシナリオでは、**一般会計パラメーター** ページの **収益認識** タブの **請求書の修正を売掛金勘定に転記** オプション (**収益認識 \> 設定 \> 一般会計パラメーター**) は **いいえ** に設定します。
 

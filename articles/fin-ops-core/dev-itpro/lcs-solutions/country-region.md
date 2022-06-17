@@ -1,6 +1,6 @@
 ---
 title: グローバリゼーション リソース
-description: このトピックでは、国/地域固有の機能および提供内容について詳しく説明しているリソースの一覧を示します。
+description: この記事では、国/地域固有の機能および提供内容について詳しく説明しているリソースの一覧を示します。
 author: kfend
 ms.date: 02/19/2021
 ms.topic: index-page
@@ -14,27 +14,27 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866540"
 ---
 # <a name="globalization-resources"></a>グローバリゼーション リソース
 
 ## <a name="local-and-regional-deployments"></a>ローカルおよび地域での展開
 政府規制によって、他の国/地域とは異なる方法で、データを保管またはサービスを提供することが要求される場合は、展開する際に考慮する必要がある国/地域固有の要件が存在する可能性があります。 関連する可能性のある次のリソースを検討してください。
 
-[中国で 21Vianet が運用する Finance and Operations アプリ](../deployment/china-local-deployment.md)
+[中国で 21Vianet が運用する財務と運用アプリ](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>ローカライズと規制の機能
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations アプリには、[製品のローカライズおよび翻訳の対応状況に関するガイド](https://aka.ms/dynamics_365_international_availability_deck)に記載されている国/地域向けの機能が用意されています。 この機能は、現在有効な法人の基本住所に基づいて有効になります。 
+財務と運用アプリには、[製品のローカライズおよび翻訳の対応状況に関するガイド](https://aka.ms/dynamics_365_international_availability_deck) に記載されている国/地域向けの機能が用意されています。 この機能は、現在有効な法人の基本住所に基づいて有効になります。 
 
-このトピックには、次の操作に役立つリソースの一覧が含まれます。 
+この記事には、次の操作に役立つリソースの一覧が含まれます。 
 - 発展途上国/地域固有のソリューションの詳細の確認。
 - 国/地域固有の更新プログラムの取得。
 - 規制に関する警告の送信と確認。
@@ -60,10 +60,10 @@ Finance and Operations アプリには、[製品のローカライズおよび�
 -   [国または地域固有の規制機能に関わる通知を送信](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365 リリース計画
-[Dynamics 365 リリース計画](/business-applications-release-notes/) では、Dynamics 365 のビジネス アプリケーションとアプリケーション プラットフォームに対して予定されている新機能と拡張機能について説明します。 
+[Dynamics 365 リリース プラン](/business-applications-release-notes/) では、Dynamics 365 のビジネス アプリケーションとアプリケーション プラットフォームに対して予定されている新機能と拡張機能について説明します。 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations アプリの新機能
-[Finance and Operations ホームページの新機能と更新](../../fin-ops/get-started/whats-new-changed.md) は Finance and Operations アプリの特定のリリースが含む機能を一覧で示します。
+[Finance and Operations ホーム ページの新機能および変更された機能](../../fin-ops/get-started/whats-new-changed.md) では、Finance and Operations アプリのリリースに含まれる機能を紹介しています。
 
 ### <a name="electronic-reporting"></a>電子申告
 電子申告 (ER) ツールを使用すると、さまざまな国/地域の法的要件に従って電子ドキュメントの形式を構成できます。 ER では、これらの形式をライフ サイクル中に管理できます。 詳細については、次のいずれかのトピックを参照してください。
