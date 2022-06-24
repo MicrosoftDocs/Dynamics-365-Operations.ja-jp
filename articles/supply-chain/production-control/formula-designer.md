@@ -1,6 +1,6 @@
 ---
 title: フォーミュラ デザイナー
-description: このトピックでは、ツリー ビューでフォーミュラ デザイナーを使用して式の分析および管理する方法について説明します。
+description: この記事では、ツリー ビューでフォーミュラ デザイナーを使用して式の分析および管理する方法について説明します。
 author: johanhoffmann
 ms.date: 06/01/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf45fdf44e6d060ee16edf1a6628c5ffd9920dcb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 247f41b43030d392df67275e6e7db1bea5df1847
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566837"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849274"
 ---
 # <a name="formula-designer"></a>フォーミュラ デザイナー
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ツリー ビューでフォーミュラ デザイナーを使用して式の分析および管理する方法について説明します。
+この記事では、ツリー ビューでフォーミュラ デザイナーを使用して式の分析および管理する方法について説明します。
 
 **リリース済製品** ページから **フォーミュラ デザイナー** ページを開くと、左ウィンドウのツリーはリリース済製品に対する連産品および材料の階層の一覧を表示します。 構造は、選択した品目およびその材料、品目の既定の注文サイト、および実際の日付で有効また承認済であるフォーミュラの階層から派生します。
 

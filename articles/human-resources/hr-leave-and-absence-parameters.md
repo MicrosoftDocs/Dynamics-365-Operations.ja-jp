@@ -1,6 +1,6 @@
 ---
-title: 休暇パラメーターのコンフィギュレーション
-description: このトピックでは、Dynamics 365 Human Resources で休暇および欠勤の人事管理パラメーターを定義する方法について説明します。
+title: 休暇と欠勤パラメーターの構成
+description: この記事では、Dynamics 365 Human Resources で休暇および欠勤の人事管理パラメーターを定義する方法について説明します。
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79052c550783dee1ba4091ad10bde4d79d7b905e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3a39c74eef3865c03ccb9dd5aa2fece7f25e639a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690697"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891382"
 ---
-# <a name="configure-leave-and-absence-parameters"></a>休暇パラメーターのコンフィギュレーション
+# <a name="configure-leave-and-absence-parameters"></a>休暇と欠勤パラメーターの構成
 
 >[!Important]
->このトピックで説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
+>この記事で説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

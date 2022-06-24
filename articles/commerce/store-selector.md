@@ -1,6 +1,6 @@
 ---
 title: 店舗セレクター モジュール
-description: このトピックでは、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: この記事では、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 manager: annbe
 ms.date: 05/18/2022
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a91b50d2177483615cf45276cf342be381814717
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881686"
 ---
 # <a name="store-selector-module"></a>店舗セレクター モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+この記事では、店舗セレクター モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
 顧客は、店舗セレクター モジュールを使用して、オンライン購入後に選択した店舗の製品を集荷できます。 Commerce バージョン 10.0.13 では、店舗セレクター モジュールにも、近くにある店舗を表示する **店舗の検索** ページを紹介する機能が追加されています。
 
@@ -132,7 +132,7 @@ Autosuggest REST API の場合は、サイトのコンテンツ セキュリテ�
 - 購入ボックス モジュールに店舗セレクター モジュールを追加する方法の詳細については、[購入ボックス モジュール](add-buy-box.md) を参照してください。 
 - カート モジュールに店舗セレクター モジュールを追加する方法の詳細については、[カート モジュール](add-cart-module.md) を参照してください
 
-店舗の場所ページで利用可能な店舗を表示するように店舗セレクター モジュールをコンフィギュレーションするには、このトピックの前の図に示すように、次の手順を実行します。
+店舗の場所ページで利用可能な店舗を表示するように店舗セレクター モジュールをコンフィギュレーションするには、この記事の前の図に示すように、次の手順を実行します。
 
 1. **テンプレート** に移動し、**新規** を選択して新たなテンプレートを作成します。
 1. **新規テンプレート** ダイアログ ボックスの **テンプレート名** に **マーケティング テンプレート** と入力し、**OK** を選択します。

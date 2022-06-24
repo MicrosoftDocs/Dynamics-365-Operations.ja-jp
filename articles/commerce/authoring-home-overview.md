@@ -1,6 +1,6 @@
 ---
 title: 作成ページの概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce の作成ページの概要を示します。
+description: この記事では、Microsoft Dynamics 365 Commerce の作成ページの概要を示します。
 author: brendans
 ms.date: 10/31/2019
 ms.topic: overview
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: bc8cdbc0a521f3aa444a3af0d0230f8567729694
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855007"
 ---
 # <a name="authoring-page-overview"></a>作成ページの概要
 
   
  [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の作成ページの概要を示します。
+この記事では、Microsoft Dynamics 365 Commerce の作成ページの概要を示します。
 
 さまざまなビジネスのニーズをサポートする Web サイトを作成することができます。 これらは、業務全体を代表して、ビジネスの単一チャネルを提供したり、特定の対象者または対象者のセグメントをターゲットにすることができます。 たとえば、衣料品メーカーは、所有するすべてのブランドを紹介する Web サイトを持っている場合があります。 同じ衣料品メーカーは、これらのブランドごとに個別の Web サイトを持ち、高級ファッション、アウトドアファッション、子供用ファッションを特徴とする一連の Web サイトを持っている場合があります。
 

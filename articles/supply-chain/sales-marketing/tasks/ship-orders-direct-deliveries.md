@@ -1,6 +1,6 @@
 ---
 title: 直納として注文を出荷
-description: このトピックは、販売注文の直納を作成する方法を示します。
+description: この記事では、販売注文の直納を作成する方法について説明します。
 author: Henrikan
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94890b0915a49052c298090f124cf2b91c462de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f5f145bacecc47a782c60335c6ff5b79f978007c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875162"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>直納として注文を出荷
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックは、販売注文の直納を作成する方法を示します。 商品を自社倉庫へまず出荷する代わりに、仕入先から顧客へ直接出荷する場合、直納を使用します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 2 番目のサブタスクの「ワークベンチから直納を作成」を正常に完了するため、販売注文で選択した品目に関して、[リリース済製品マスター] の [購買クイックタブ] で既定の [仕入れ先] が指定されていることを確認してください。
+この記事では、販売注文の直納を作成する方法について説明します。 商品を自社倉庫へまず出荷する代わりに、仕入先から顧客へ直接出荷する場合、直納を使用します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 2 番目のサブタスクの「ワークベンチから直納を作成」を正常に完了するため、販売注文で選択した品目に関して、[リリース済製品マスター] の [購買クイックタブ] で既定の [仕入れ先] が指定されていることを確認してください。
 
 ## <a name="set-an-individual-order-for-direct-delivery"></a>直納のための個々の注文を設定
 1. **ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 注文 > すべての販売注文** の順に移動します。

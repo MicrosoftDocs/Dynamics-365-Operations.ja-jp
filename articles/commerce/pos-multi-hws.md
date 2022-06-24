@@ -1,6 +1,6 @@
 ---
 title: 専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト
-description: このトピックでは、専用の支払ターミナルを持つ機能と、キャッシュ ドロワーやレシート プリンターを選択するようにユーザーに指示するプロンプトに関する情報を提供します。
+description: この記事では、専用の支払ターミナルを持つ機能と、キャッシュ ドロワーやレシート プリンターを選択するようにユーザーに指示するプロンプトに関する情報を提供します。
 author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 7c010448e43bbfb1f949508ce1b62bd07f3107e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779773"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874924"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>専用の支払ターミナルおよびプリンターとキャッシュ ドロワーのプロンプト
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、専用の支払ターミナルを持つ機能と、キャッシュ ドロワーやレシート プリンターを選択するようにユーザーに指示するプロンプトに関する情報を提供します。
+この記事では、専用の支払ターミナルを持つ機能と、キャッシュ ドロワーやレシート プリンターを選択するようにユーザーに指示するプロンプトに関する情報を提供します。
 
 ## <a name="overview"></a>概要
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commerce では、POS デバイスに専用の支払タ�
 
 ## <a name="supported-pos-clients-and-devices"></a>サポートされている POS クライアントとデバイス
 
-このトピックで説明する機能は、Windows 用モダン POS と Android POS クライアント用のモダン POS でサポートされています。
+この記事で説明する機能は、Windows 用モダン POS と Android POS クライアント用のモダン POS でサポートされています。
 
 この機能は、ネットワーク対応型の支払ターミナルとレシート プリンターをサポートしています。 キャッシュ ドロワーのサポートを提供するには、d/k ポートを介して、キャッシュ ドロワーをネットワーク対応型のレシート プリンターに接続します。
 

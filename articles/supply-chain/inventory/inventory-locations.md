@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c202a679e992c562772cbf6da6e17c4b8149760f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bd5ad086cadd2e49585614e7650bb7e30a4e7328
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888589"
 ---
 # <a name="inventory-locations"></a>在庫場所
 
@@ -29,7 +29,7 @@ ms.locfileid: "7573948"
 
 在庫場所は、品目の保存場所、および WMS I 倉庫で品目がピッキングされる場所を特定するために基本倉庫 (WMS I) で使用されます。
 
-このトピックは、在庫管理モジュールの機能に適用されます。 これは、倉庫管理モジュールの機能には適用されません。
+この記事は、在庫管理モジュールの機能に適用されます。 これは、倉庫管理モジュールの機能には適用されません。
 
 場所という用語は、品目が保管され、取得元となる場所を意味します。
 

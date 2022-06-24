@@ -1,6 +1,6 @@
 ---
 title: 仕入先支払を使用して仕入先請求書を作成
-description: このトピックでは、支払提案オプションの概要および支払提案の機能を示す例をいくつか提供します。
+description: この記事では、支払提案オプションの概要および支払提案の機能を示す例をいくつか提供します。
 author: abruer
 ms.date: 04/04/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 64290ebd47295bea5bc4bf843f7a9d9528375ce7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629438"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845377"
 ---
-# <a name="create-vendor-payments-by-using-a-payment-proposal"></a>支払提案を使用した仕入先支払の作成
+# <a name="create-vendor-payments-by-using-a-payment-proposal"></a>仕入先支払を使用して仕入先請求書を作成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、支払提案オプションの概要および支払提案の機能を示す例をいくつか提供します。 多くの場合、支払提案は仕入先支払の作成に使用されます。これは、クエリを使用すると、支払の仕入先請求書を期日および現金割引などの基準に基づいて支払の仕入先請求書を素早く選択することができるためです。 
+この記事では、支払提案オプションの概要および支払提案の機能を示す例をいくつか提供します。 多くの場合、支払提案は仕入先支払の作成に使用されます。これは、クエリを使用すると、支払の仕入先請求書を期日および現金割引などの基準に基づいて支払の仕入先請求書を素早く選択することができるためです。 
 
 多くの組織では、仕入先支払の作成に支払提案を使用します。これは、支払提案のクエリを使用すると、支払の仕入先請求書を期日、現金割引、その他の基準に基づいて素早く選択することができるためです。 
 

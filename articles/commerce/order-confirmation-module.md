@@ -1,6 +1,6 @@
 ---
 title: 注文確認モジュール
-description: このトピックでは、注文確認モジュールおよび Microsoft Dynamics 365 Commerce での使用方法について説明します。
+description: この記事では、注文確認モジュールおよび Microsoft Dynamics 365 Commerce での使用方法について説明します。
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e74ffbdfe57f9220cc9ed85edae4270409165b41
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 994ec92abc53efeb240bca5dc8d67aabb45fbe55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845781"
 ---
 # <a name="order-confirmation-module"></a>注文確認モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、注文確認モジュールおよび Microsoft Dynamics 365 Commerce での使用方法について説明します。
+この記事では、注文確認モジュールおよび Microsoft Dynamics 365 Commerce での使用方法について説明します。
 
 注文確認モジュールを使用して、注文が行われた後、注文確認の詳細を表示します。 注文の確認 ID、注文の連絡先情報、およびその他の注文の詳細 (購入された品目、支払情報、集荷オプション、出荷方法など) が表示されます。
 

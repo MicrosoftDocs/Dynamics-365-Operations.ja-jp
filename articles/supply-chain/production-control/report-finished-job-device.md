@@ -1,6 +1,6 @@
 ---
 title: ジョブ カード デバイスから完了として報告する
-description: このトピックでは、ジョブ カード デバイスのユーザーが製造オーダーから在庫に対して完成品を報告できるようにシステムを構成する方法について説明します。
+description: この記事では、ジョブ カード デバイスのユーザーが製造オーダーから在庫に対して完成品を報告できるようにシステムを構成する方法について説明します。
 author: johanhoffmann
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102829"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857376"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>ジョブ カード デバイスから完了として報告する
 
 [!include [banner](../includes/banner.md)]
 
-作業者は、ジョブ カード デバイス上の **レポートの進捗情報** ページを使って、生産ジョブで完了した数量を報告します。 このトピックでは、このページを使用して作業者が完了したことを報告する方法と、その次の手順を決定するさまざまなオプションを設定する方法について説明します。 次のオプションがあります。
+作業者は、ジョブ カード デバイス上の **レポートの進捗情報** ページを使って、生産ジョブで完了した数量を報告します。 この記事では、このページを使用して作業者が完了したことを報告する方法と、その次の手順を決定するさまざまなオプションを設定する方法について説明します。 次のオプションがあります。
 
 - 完了報告された数量を在庫に追加するかどうかとその方法を制御する。
 - 完了報告時にバッチ番号をどのように生成して適用するかを制御する。

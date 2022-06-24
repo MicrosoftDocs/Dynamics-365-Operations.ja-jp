@@ -1,6 +1,6 @@
 ---
 title: 財務と運用アプリのアップグレードに関する問題のトラブルシューティング
-description: このトピックでは、財務と運用アプリの更新に関する問題の修正に役立つトラブルシューティング情報を提供します。
+description: この記事では、財務と運用アプリの更新に関する問題の修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c7c036ef44b0470c9b3f8087e7b5b1e16dde1b34
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 954268b03be2be90f67dc9b7756f33215856864a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062828"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882145"
 ---
 # <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>財務と運用アプリのアップグレードに関する問題のトラブルシューティング
 
@@ -24,10 +24,10 @@ ms.locfileid: "8062828"
 
 
 
-このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、財務と運用アプリの更新に関する問題の修正に役立つトラブルシューティングに特化した情報を提供します。
+この記事では、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、財務と運用アプリの更新に関する問題の修正に役立つトラブルシューティングに特化した情報を提供します。
 
 > [!IMPORTANT]
-> このトピックで説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
+> この記事で説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
 
 ## <a name="database-synchronization-errors"></a>データベース同期のエラー
 

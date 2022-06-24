@@ -1,6 +1,6 @@
 ---
 title: POS での在庫検索操作
-description: このトピックでは、Dynamics 365 Commerce 販売時点管理 (POS) で在庫検索操作を使用して、店舗および倉庫全体で製品の利用可能な在庫を確認する方法 について説明します。
+description: この記事では、Dynamics 365 Commerce 販売時点管理 (POS) で在庫検索操作を使用して、店舗および倉庫全体で製品の利用可能な在庫を確認する方法 について説明します。
 author: boycezhu
 ms.date: 08/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 01f10c348c61ffbcb30be26a57b3edd436aacc8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850252"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>POS での在庫検索操作
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 Commerce 販売時点管理 (POS) で在庫検索操作を使用して、店舗および倉庫全体で製品の利用可能な在庫を確認する方法 について説明します。
+この記事では、Dynamics 365 Commerce 販売時点管理 (POS) で在庫検索操作を使用して、店舗および倉庫全体で製品の利用可能な在庫を確認する方法 について説明します。
 
 組織間の在庫の正確な表示により、店舗関係者が適切なタイミングで、効果的な顧客サービスを提供できるようにします。 最も重要な時点は、顧客が購入決定をする準備ができている時点です。 製品の出荷や受取を正確に保証できるように、小売り店舗のレジ担当者が、リアルタイムまたは準リアルタイムの在庫情報に精通していることが重要です。
 

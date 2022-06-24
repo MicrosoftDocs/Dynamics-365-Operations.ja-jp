@@ -1,6 +1,6 @@
 ---
 title: 分割後の逓減残高による減価償却
-description: このトピックでは、定率法を使用して資産を分割した後に減価償却を計算する方法 (固定資産で使用) について説明します。
+description: この記事では、定率法を使用して資産を分割した後に減価償却を計算する方法 (固定資産で使用) について説明します。
 author: moaamer
 ms.date: 11/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 35637ac1484121232c3571d1a26132a86d69e366
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 539967a9a73da91f6b49c1bb89f404267ae0a804
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726756"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883303"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>分割後の逓減残高による減価償却
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、定率法を使用して資産を他の資産に分割した後に減価償却を計算する方法 (固定資産で使用) について説明します。 資産帳簿で構成されている減価償却年度は会計年度です。 詳細については、[逓減残高による減価償却](reduce-balance-depreciation.md) および [固定資産の分割](tasks/split-fixed-asset.md) を参照してください。
+この記事では、定率法を使用して資産を他の資産に分割した後に減価償却を計算する方法 (固定資産で使用) について説明します。 資産帳簿で構成されている減価償却年度は会計年度です。 詳細については、[逓減残高による減価償却](reduce-balance-depreciation.md) および [固定資産の分割](tasks/split-fixed-asset.md) を参照してください。
 
 資産の取得時よりも後の会計年度期間中に固定資産を分割した場合、逓減残高による減価償却は、前年度の資産正味簿価額 (NBV) を含みます。 また、資産を分割するトランザクションから生成された取得および減価償却調整トランザクションも含まれます。 この現象は、資産が 1 会計年度に取得され、将来の会計年度に分割されたことを想定しています。 分割後に元の資産に対して減価償却が必要な金額は、資産が分割される前の資産 NBV と、分割に対して転記された取得および減価償却調整トランザクションが反映されます。
 

@@ -1,6 +1,6 @@
 ---
 title: 計画最適化の拡張機能
-description: このトピックでは、計画の最適化でサポートされている機能性のシナリオについて説明します。
+description: この記事では、計画の最適化でサポートされている拡張性のシナリオについて説明します。
 author: t-benebo
 ms.date: 08/05/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d7e39c9ecd1dc1a101e219764e8f4457bb06ff7a
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 7d649110959e6bcfdaeb32dd53c55dbc446ed1be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468891"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857547"
 ---
 # <a name="planning-optimization-extensibility"></a>計画最適化の拡張機能
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、マスター プランに関連し、計画の最適化でサポートされている拡張性のシナリオについて説明します。 これらの機能は、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.13 以降で使用できます。
+この記事では、マスター プランに関連し、計画の最適化でサポートされている拡張性のシナリオについて説明します。 これらの機能は、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.13 以降で使用できます。
 
 ## <a name="custom-processing-when-master-planning-is-completed"></a>マスター プランが完了したときのカスタム処理
 

@@ -1,6 +1,6 @@
 ---
 title: 新しい ER ソリューションを設計して ZPL ラベルを印刷する
-description: このトピックでは、新しい電子レポート (ER) を設計して Zebra プログラミング言語 (ZPL) ラベルを印刷する方法について説明します。
+description: この記事では、新しい電子レポート (ER) を設計して Zebra プログラミング言語 (ZPL) ラベルを印刷する方法について説明します。
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: f861fe63c6d7d00d0a9f84d33c0d1b1b23735b61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612359"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845718"
 ---
 # <a name="design-a-new-er-solution-to-print-zpl-labels"></a>新しい ER ソリューションを設計して ZPL ラベルを印刷する
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、システム管理者、電子レポートの開発者、電子レポート業務コンサルタントの役割にあるユーザーが、[電子レポート (ER)](general-electronic-reporting.md) のフレーム ワークを構成し、求められる新しい ER ソリューションの ER [構成](general-electronic-reporting.md#Configuration)を設計して、倉庫管理システムのデータにアクセスし、Zebra プログラミング言語 (ZPL) II 形式でカスタムレポートを生成する方法について説明します。 これらの設定を **USRT** 社を使用して説明します。
+この記事では、システム管理者、電子レポートの開発者、電子レポート業務コンサルタントの役割にあるユーザーが、[電子レポート (ER)](general-electronic-reporting.md) のフレーム ワークを構成し、求められる新しい ER ソリューションの ER [構成](general-electronic-reporting.md#Configuration)を設計して、倉庫管理システムのデータにアクセスし、Zebra プログラミング言語 (ZPL) II 形式でカスタムレポートを生成する方法について説明します。 これらの設定を **USRT** 社を使用して説明します。
 
 ## <a name="business-scenario"></a>ビジネス シナリオ
 

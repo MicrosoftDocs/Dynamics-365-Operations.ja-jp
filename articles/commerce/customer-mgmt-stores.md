@@ -1,6 +1,6 @@
 ---
 title: 店舗での顧客管理
-description: このトピックでは、小売業者が Microsoft Dynamics 365 Commerce の販売時点管理 (POS) で顧客管理機能を有効にする方法について説明します。
+description: この記事では、小売業者が Microsoft Dynamics 365 Commerce の販売時点管理 (POS) で顧客管理機能を有効にする方法について説明します。
 author: gvrmohanreddy
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5a352ba479ca5e635ef521b99f31bd26d5d837ac
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 805d0b5894b18e2fc34f481bdc32ada7a4b1aee0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687336"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863490"
 ---
 # <a name="customer-management-in-stores"></a>店舗での顧客管理
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、小売業者が Microsoft Dynamics 365 Commerce の販売時点管理 (POS) で顧客管理機能を有効にする方法について説明します。
+この記事では、小売業者が Microsoft Dynamics 365 Commerce の販売時点管理 (POS) で顧客管理機能を有効にする方法について説明します。
 
 店舗の関係者が POS で顧客レコードを作成および編集できることが重要です。 このようにして、電子メール アドレス、電話番号、住所などの顧客情報の更新を取得できます。 これらのシステムの有効性は、顧客データの正確性に依存するため、この情報はマーケティングなどの下流システムで役立ちます。
 

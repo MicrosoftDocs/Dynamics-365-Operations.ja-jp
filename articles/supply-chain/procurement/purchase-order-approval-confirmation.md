@@ -1,6 +1,6 @@
 ---
 title: 発注書の承認と確認
-description: このトピックでは、発注書が作成された後の一連の状態と、PO で変更管理を有効にした場合の影響について説明します。
+description: この記事では、発注書が作成された後の一連の状態と、PO で変更管理を有効にした場合の影響について説明します。
 author: GalynaFedorova
 ms.date: 04/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d38a486c604dc761dcaf12b839d8b9b89b5e0414
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 936fddb73a639564a136002354a4d3dff7798e0b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677005"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907380"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>発注書の承認と確認
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。
+この記事は、発注書 (PO) が作成された後の一連の状態と、変更管理の有効化の効果について説明します。
 
 注文書 (PO) が作成された後は、承認プロセスを経る必要があります。 仕入先が発注書に同意した後、発注書は **確認済** の状態に設定されます。
 

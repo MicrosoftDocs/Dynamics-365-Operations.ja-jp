@@ -1,6 +1,6 @@
 ---
 title: Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期
-description: このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に連絡先 (連絡先) エンティティと連絡先 (顧客) エンティティを同期するために使用されるテンプレートと基本的なタスクについて説明します。
+description: この記事では、Dynamics 365 Sales から Dynamics 365 Supply Chain Managements に連絡先 (連絡先) エンティティと連絡先 (顧客) エンティティを同期するために使用されるテンプレートと基本的なタスクについて説明します。
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4ddb91c34816791d8eca80e4798eb46c1b496439
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857347"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Supply Chain Management の連絡先または顧客への Sales の連絡先の直接同期
 
@@ -32,7 +32,7 @@ ms.locfileid: "8062518"
 > [!NOTE]
 > 見込顧客を現金化するソリューションを使用する前に、[Microsoft Dataverse for Apps へデータを統合](/powerapps/administrator/data-integrator) をよく理解しておく必要があります。
 
-このトピックでは、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に連絡先 (連絡先) テーブルと連絡先 (顧客) テーブルを直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
+この記事では、Dynamics 365 Sales から Dynamics 365 Supply Chain Management に連絡先 (連絡先) テーブルと連絡先 (顧客) テーブルを直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
 ## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
 
@@ -126,7 +126,7 @@ Sales の統合ソリューションが適用されている場合、アップ�
 ![データ インテグレーターの [連絡先から顧客へ] のテンプレート。](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [見込顧客の現金化](prospect-to-cash.md)
 

@@ -1,6 +1,6 @@
 ---
-title: B2B のコマース カタログに関するよく寄せられる質問
-description: このトピックでは、よく寄せられる Microsoft Dynamics 365 Commerce カタログに関する質問に対する回答を提供します。
+title: B2B のよくあるご質問の Commerce カタログ
+description: この記事では、よく寄せられる Microsoft Dynamics 365 Commerce カタログに関する質問に対する回答を提供します。
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 5bdc7dfcb0e48aa85db2db4d178c5bf62ea0411b
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
+ms.openlocfilehash: 0cd11b4469e4dbd1205ace785fe857f6c6001480
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782865"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849044"
 ---
-# <a name="commerce-catalogs-for-b2b-faq"></a>B2B のコマース カタログに関するよく寄せられる質問
+# <a name="commerce-catalogs-for-b2b-faq"></a>B2B のよくあるご質問の Commerce カタログ
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-このトピックでは、よく寄せられる Microsoft Dynamics 365 Commerce [企業間 (B2B) カタログ](catalogs-b2b-sites.md) に関する質問に対する回答を提供します。
+この記事では、よく寄せられる Microsoft Dynamics 365 Commerce [企業間 (B2B) カタログ](catalogs-b2b-sites.md) に関する質問に対する回答を提供します。
 
 ## <a name="why-cant-i-configure-a-catalog-specific-navigation-hierarchy-or-see-an-option-to-associate-a-customer-hierarchy"></a>カタログ固有のナビゲーション階層を構成したり、顧客階層を関連付けるオプションを表示したりできないのはなぜですか?
 

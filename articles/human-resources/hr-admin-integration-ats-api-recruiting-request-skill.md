@@ -1,6 +1,6 @@
 ---
 title: 採用で要求するスキル
-description: このトピックでは、Dynamics 365 Human Resources の人物の採用スキルエンティティについて説明します。
+description: この記事では、Dynamics 365 Human Resources の人物の採用スキルエンティティについて説明します。
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 245b9a1ff4f140b9288b79c70820204f3082568b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b17bbdfbc977112344302deada085681ceca9bb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068612"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856399"
 ---
 # <a name="recruiting-request-skill"></a>採用で要求するスキル
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068612"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の人物の採用スキルエンティティについて説明します。
+この記事では、Dynamics 365 Human Resources の人物の採用スキルエンティティについて説明します。
 
 物理名 : mshr_hcmrecruitingrequestskillentity
 

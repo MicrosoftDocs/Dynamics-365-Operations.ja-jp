@@ -1,6 +1,6 @@
 ---
 title: ウェーブの作成と処理
-description: このトピックでは、ウェーブを作成、処理、リリースして、積荷、出荷、製造オーダー、またはかんばんオーダーのピッキングの作業を作成する方法を説明します。
+description: この記事では、ウェーブを作成、処理、リリースして、積荷、出荷、製造オーダー、またはかんばんオーダーのピッキングの作業を作成する方法を説明します。
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 349285f089ecab00c4c1c0a0315c4223314e3e79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851278"
 ---
 # <a name="wave-creation-and-processing"></a>ウェーブの作成と処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ウェーブを作成、処理、リリースして、積荷、出荷、製造オーダー、またはかんばんオーダーのピッキングの作業を作成する方法を説明します。 次の注文タイプで必要なウェーブを作成できます。
+この記事では、ウェーブを作成、処理、リリースして、積荷、出荷、製造オーダー、またはかんばんオーダーのピッキングの作業を作成する方法を説明します。 次の注文タイプで必要なウェーブを作成できます。
 
 - **販売注文** – 販売注文の明細行を含む出荷ウェーブを使用します。 販売注文が倉庫にリリースされると、販売注文明細行をウェーブに含めることができます。
 - **製造オーダー** – 製品ウェーブを使用して、製品の部品表 (BOM) の明細行を含めます。

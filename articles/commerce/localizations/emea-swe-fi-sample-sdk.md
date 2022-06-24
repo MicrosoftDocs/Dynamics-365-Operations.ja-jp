@@ -1,6 +1,6 @@
 ---
 title: スウェーデン向け制御ユニットプリンター統合サンプルの配置ガイドライン (レガシ)
-description: このトピックでは、 Retail SDK による、スウェーデン向け制御ユニット登録サービス統合サンプルの展開ガイドラインを提供します
+description: この記事では、Retail SDK からスウェーデン向け制御ユニット統合サンプルを展開するためのガイドラインを提供します
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 05a49de43282c449c7b99072d8ac3ac4a5f2a67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077041"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870550"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>スウェーデン向け制御ユニットプリンター統合サンプルの配置ガイドライン (レガシ)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) を利用した  Retail ソフトウェア開発キット (SDK) による、スウェーデン向け制御ユニット統合サンプルの展開ガイドラインを提供します。 この会計統合サンプルの詳細については、[スウェーデン向け制御ユニット統合サンプル](emea-swe-fi-sample.md) を参照してください。 
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) で Retail ソフトウェア開発キット (SDK) からスウェーデン向け制御ユニット統合サンプルを展開するためのガイドラインを提供します。 この会計統合サンプルの詳細については、[スウェーデン向け制御ユニット統合サンプル](emea-swe-fi-sample.md) を参照してください。 
 
-スウェーデン向け会計統合サンプルは、Retail SDK の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。 このサンプルは、Commerce Runtime (CRT)、ハードウェア ステーション、販売時点管理 (POS) で構成されます。 このサンプルを実行するには、CRT、ハードウェア ステーション、および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
+スウェーデン向け会計統合サンプルは、Retail SDK の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。 このサンプルは、Commerce Runtime (CRT)、ハードウェア ステーション、販売時点管理 (POS) で構成されます。 このサンプルを実行するには、CRT、ハードウェア ステーション、および POS プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 
 ## <a name="development-environment"></a>開発環境
 
@@ -257,7 +257,7 @@ CRT 拡張機能は **Runtime.Extensions.DocumentProvider.CleanCashSample** で�
 1. POS とハードウェア ステーションのコンポーネントを更新し、以前のサンプルの一部である拡張機能を無効にし、現在のサンプルの拡張機能を有効にします。
 
     > [!NOTE]
-    > 環境の種類に応じて、このトピックの[開発環境での移行](#migration-in-a-development-environment)または[本番環境での移行](#migration-in-a-production-environment)セクションのいずれかで、移行プロセスに関する技術的な詳細を確認することができます。
+    > 環境の種類に応じて、この記事の [開発環境での移行](#migration-in-a-development-environment) または [本番環境での移行](#migration-in-a-production-environment) セクションのいずれかで、移行プロセスに関する技術的な詳細を確認することができます。
 
 ### <a name="migration-in-a-development-environment"></a>開発環境での移行
 

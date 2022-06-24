@@ -1,6 +1,6 @@
 ---
 title: 仕入先請求書の自動化の設定オプション (プレビュー)
-description: このトピックでは、仕入先請求書の自動化を設定および構成する際に使用できるオプションについて説明します。
+description: この記事では、仕入先請求書の自動化を設定および構成する際に使用できるオプションについて説明します。
 author: sunfzam
 ms.date: 02/14/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c1dc443e4225a3ffc6b88cedf7add396a66ec25d
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86ad68b3dc08bf2c57ab5f9bc6c65bc37c0901e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182446"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874844"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>仕入先請求書の自動化の設定オプション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、仕入先請求書の自動化を設定および構成する際に使用できるオプションについて説明します。 請求書の自動化機能では、次のタイプの設定パラメーターを使用します。
+この記事では、仕入先請求書の自動化を設定および構成する際に使用できるオプションについて説明します。 請求書の自動化機能では、次のタイプの設定パラメーターを使用します。
 
 - インポートされた請求書に前払を自動的に適用するパラメータ。
 - インポートされた仕入先請求書をワークフロー システムに送信し、転記された製品受領書明細行を保留中の仕入先請求書明細行と照合するパラメーター。

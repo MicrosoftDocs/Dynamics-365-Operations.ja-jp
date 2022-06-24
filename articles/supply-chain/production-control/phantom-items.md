@@ -1,6 +1,6 @@
 ---
 title: ファントム品目
-description: このトピックでは、部品表 (BOM) の明細行および Dynamics 365 Supply Chain Management のフォーミュラで、ファントム明細行タイプを使用する方法を説明します。
+description: この記事では、部品表 (BOM) の明細行および Dynamics 365 Supply Chain Management のフォーミュラで、ファントム明細行タイプを使用する方法を説明します。
 author: johanhoffmann
 ms.date: 05/05/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-05-05
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5c9768381d35709611e4bec3d2b7793a4d896b34
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 64139873216decd8ecb2fcaf1f284e726c53c332
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893326"
 ---
 # <a name="phantom-items"></a>ファントム品目
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、部品表 (BOM) の明細行およびフォーミュラで、ファントム明細行タイプを利用する方法を詳細に説明します。
+この記事では、部品表 (BOM) の明細行およびフォーミュラで、ファントム明細行タイプを利用する方法を詳細に説明します。
 
 図 1 で、(a) は製品 H およびパーツ F と G の BOM、(b) は製品 H およびパーツ F の工順シートです。
 

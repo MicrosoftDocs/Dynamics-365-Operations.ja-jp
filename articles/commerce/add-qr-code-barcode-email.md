@@ -1,6 +1,6 @@
 ---
-title: トランザクションと領収書メールに QR コードまたはバーコードを追加
-description: このトピックでは、注文 ID を Microsoft Dynamics 365 Commerce のトランザクションと領収書メールに表す QR コードおよびバーコードの入力方法を説明します。
+title: トランザクションとレシートの電子メールへの QR コードまたはバー コードの追加
+description: この記事では、注文 ID を表す QR コードとバーコードを Microsoft Dynamics 365 Commerce のトランザクションおよび領収書メールに挿入する方法について説明します。
 author: bicyclingfool
 ms.date: 03/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5f7b349700a4b3b43f818b30bb479e630048e8b8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ffa0009c55b5322b209b19692952c2e0704f65c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688968"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872887"
 ---
-# <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>トランザクションと領収書メールに QR コードまたはバーコードを追加
+# <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>トランザクションとレシートの電子メールへの QR コードまたはバー コードの追加
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、注文 ID を Microsoft Dynamics 365 Commerce のトランザクションと領収書メールに表す QR コードおよびバーコードの入力方法を説明します。
+この記事では、注文 ID を表す QR コードとバーコードを Microsoft Dynamics 365 Commerce のトランザクションおよび領収書メールに挿入する方法について説明します。
 
 小売環境での注文ルックアップ プロセスを速くするために、トランザクションの電子メールに簡単に QR コードとバーコードを含めることができます。 電子メールに QR コードとバーコードを挿入するには、生成および表示サービスから QR コードとバーコード イメージを要求する HTM **\<img\>** タグを使用します。 Microsoft は、このサービスを提供しません。 ただし、クエリ文字列に渡された値に基づき、動的に生成される QR コードまたはバーコードを出すたくさんの無料または安いサービスがあります。
 

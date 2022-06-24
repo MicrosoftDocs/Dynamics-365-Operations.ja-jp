@@ -1,6 +1,6 @@
 ---
 title: オプションの属性を使用して XML 形式でファイルをインポートする
-description: このトピックでは、XML 形式で受信する電子ドキュメントを解析するために XML 属性を指定する ER 形式のデザインについて説明します。
+description: この記事では、XML 形式で受信する電子ドキュメントを解析するために XML 属性を指定する ER 形式のデザインについて説明します。
 author: NickSelin
 ms.date: 07/03/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 81156cf13e003a67fde0a73bdcd69b2c997f23a33c464fad82132f7768f8a99f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5b25b51a4f59bf9c308bcaeb140e2737597798e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757300"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873225"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>オプションの属性を使用して XML 形式でファイルをインポートする
 
@@ -26,7 +26,7 @@ ms.locfileid: "6757300"
 
 XML 形式で受信する電子ドキュメントを解析するための電子申告 (ER) 形式をデザインできます。 XML 要素の特定の属性は、デザインされた ER 形式でオプションとして指定することができます。 これにより、該当する XML 属性のある受信ファイルとない受信ファイルを正しく処理することができます。 その後、アプリケーションのデータを更新するのに、これらのファイルからの内容を使用できます。
 
-この機能の詳細を知るには、7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの一部である [(RCS) オプションの属性を使用して XML 形式のファイルをインポートする](tasks/import-files-xml-format-optional-attributes.md) トピックの手順を実行します。 このタスク ガイドおよび関連するサンプル ファイは [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=874684) からダウンロードすることができます。
+この機能の詳細を知るには、7.5.4.3 IT サービス/ソリューション コンポーネントの取得/開発 (10677) 業務プロセスの一部である [(RCS) オプションの属性を使用して XML 形式のファイルをインポートする](tasks/import-files-xml-format-optional-attributes.md) 記事の手順を実行します。 このタスク ガイドおよび関連するサンプル ファイは [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=874684) からダウンロードすることができます。
 
 
 | コンテンツの説明       | ファイル                                                         |
@@ -38,7 +38,7 @@ XML 形式で受信する電子ドキュメントを解析するための電子�
 次のステップでは、システム管理者または電子申告開発者のロールに割り当てられているユーザーが、電子申告 (ER) の形式のコンフィギュレーションをデザインし、オプションの属性を含む XML 形式のファイルをインポートする方法について説明します。 これらの手順を完了するには、まず[コンフィギュレーション プロバイダーを作成し、有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) の手順を完了する必要があります。 始める前に、Microsoft ダウンロード センター (https://go.microsoft.com/fwlink/?linkid=874684) から IncomingDocumentToLearnHowToHandleOptionalAttributes.xml ファイルをダウンロードし、ローカルに保存します。
 
 1. **組織管理** > **ワークスペース** > **電子申告** の順に移動します。
-2. サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、**アクティブ** としてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合、[コンフィギュレーション プロバイダーを作成し、有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) というトピックの手順を完了する必要があります。
+2. サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、**アクティブ** としてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合、[コンフィギュレーション プロバイダーを作成し、有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) という記事の手順を完了する必要があります。
 3. **コンフィギュレーションをレポートする** をクリックします。
 
 ## <a name="create-a-new-data-model-configuration"></a>新しいデータ モデル コンフィギュレーションの作成

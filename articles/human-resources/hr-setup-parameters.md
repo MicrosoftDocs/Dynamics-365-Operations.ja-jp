@@ -1,6 +1,6 @@
 ---
 title: Human Resources パラメーターのコンフィギュレーション
-description: このトピックでは、Dynamics 365 Human Resources で会社固有のパラメーターを設定する方法を説明します。
+description: この記事は、Dynamics 365 Human Resources で会社固有の HR パラメーターを設定する方法を説明します。
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1fc8ba3f69f216d66850485b6ba33cd324a57156
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689413"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856283"
 ---
 # <a name="configure-human-resources-parameters"></a>Human Resources パラメーターのコンフィギュレーション
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-他のパラメーター設定は会社固有ですが、人事管理のパラメーター設定は会社間で共有されます。 このトピックでは、会社固有の人事管理のパラメーターを設定する方法を説明します。
+他のパラメーター設定は会社固有ですが、人事管理のパラメーター設定は会社間で共有されます。 この記事では、会社固有の人事管理のパラメーターを設定する方法について説明します。
 
 2 つのページが人事管理のパラメータの設定に使用されます。 会社間で共有されるパラメータに、**人事管理の共有パラメーター** ページを使用します。 会社固有のパラメータ (つまり、設定を単一の会社に適用する場合) に、**人事管理パラメータ** ページを使用します。
 

@@ -1,6 +1,6 @@
 ---
 title: 積荷テンプレート
-description: このトピックでは、積荷テンプレートの設定方法と、新しい積荷に積荷テンプレートを関連付ける方法について説明します。
+description: この記事では、積荷テンプレートの設定方法と、新しい積荷に積荷テンプレートを関連付ける方法について説明します。
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d33e4c71680947316b540d2aef7a7220305f2054
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 47b4925c528b64b835ce3e88659ee6ab0572eb2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674648"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844183"
 ---
 # <a name="load-templates"></a>積荷テンプレート
 
@@ -27,7 +27,7 @@ ms.locfileid: "8674648"
 
 新しい積荷を作成する場合は、積荷テンプレートを割り当てることができます。 積荷テンプレートには、機器に関する情報、および積荷の高さ、幅、深さ、容積などの測定値に関する情報が含まれています。
 
-このトピックでは、積荷テンプレートの設定方法と、新しい積荷に積荷テンプレートを関連付ける方法について説明します。
+この記事では、積荷テンプレートの設定方法と、新しい積荷に積荷テンプレートを関連付ける方法について説明します。
 
 ## <a name="set-up-a-load-template"></a>積荷テンプレートの設定
 

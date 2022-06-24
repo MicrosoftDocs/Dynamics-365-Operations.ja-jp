@@ -1,6 +1,6 @@
 ---
 title: リベート管理パラメーター
-description: このトピックでは、リベート管理パラメータ ページについて説明します。 このページには、転記、ステータスの更新、番号順序、その他の動作に影響する設定が含まれています。
+description: この記事では、リベート管理パラメータ ページについて説明します。 このページには、転記、ステータスの更新、番号順序、その他の動作に影響する設定が含まれています。
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8f5c9734b2480329eed246bcbbfe3bd6e9991e0b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 218c54d97f3ac204e8613f5efdda0cc9d713ee04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895528"
 ---
 # <a name="rebate-management-parameters"></a>リベート管理パラメーター
 
@@ -45,9 +45,9 @@ ms.locfileid: "8688994"
 
 ## <a name="number-sequences-tab"></a>番号順序タブ
 
-**リベート管理パラメータ** ページの **番号順序** タブを使用して、リベート管理で使用するさまざまな番号順序に番号順序コードを割り当にします。 次の表に、これらの番号順序の目的を示します。 番号順序の詳細については、[番号順序の概要](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) およびその関連トピックを参照してください。
+**リベート管理パラメータ** ページの **番号順序** タブを使用して、リベート管理で使用するさまざまな番号順序に番号順序コードを割り当にします。 次の表に、これらの番号順序の目的を示します。 番号順序の詳細については、[番号順序の概要](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) およびその関連記事を参照してください。
 
-| 参照 | 説明 |
+| 参照 | Description |
 |---|---|
 | リベート管理取引 | 番号順序は、各リベート契約に一意のキー値を割り当てる番号順序です。 このキーは取引が作成される際に使用されます。 |
 | リベート管理番号 | 番号順序は、各リベート契約に一意のキー値を割り当てる番号順序です。 このキーは、リベートの関係を識別するために使用されます。 |

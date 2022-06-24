@@ -1,6 +1,6 @@
 ---
 title: グローバル リポジトリから機能をインポートする
-description: このトピックでは、グローバル リポジトリからグローバリゼーション機能をインポートする方法について説明します。
+description: この記事では、グローバル リポジトリからグローバリゼーション機能をインポートする方法について説明します。
 author: dkalyuzh
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ff3019986d089a286f7aef94346398b3d328ad54
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: bc8f346cdef4aa0b909d75b016b37cbbe3248ebf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371629"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865558"
 ---
 # <a name="import-features-from-the-global-repository"></a>グローバル リポジトリから機能をインポートする
 

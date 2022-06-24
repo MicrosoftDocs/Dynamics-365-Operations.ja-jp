@@ -1,6 +1,6 @@
 ---
-title: 場所の能力を超える補充
-description: このトピックでは、場所の能力を超える補充機能に関する情報を提供します。 この機能によって、その日の作成に必要な補充作業がすべて有効になり、ピッキング場所の在庫がなくなったり、容量を超えたりしないことを保証するためにその補充作業の利用可能性を管理できるようになります。
+title: 保存先の容量を超える補充
+description: この記事では、場所の能力を超える補充機能に関する情報について説明します。 この機能によって、その日の作成に必要な補充作業がすべて有効になり、ピッキング場所の在庫がなくなったり、容量を超えたりしないことを保証するためにその補充作業の利用可能性を管理できるようになります。
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 0c3dedc47558e98f63fb5883e4731bf021b9602b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677929"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899240"
 ---
 # <a name="replenishment-over-location-capacity"></a>場所の能力を超える補充
 
@@ -37,7 +37,7 @@ ms.locfileid: "8677929"
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>シナリオ例の機能の設定
 
-このセクションでは、この機能の設定方法と、本トピックの後で紹介するシナリオ例にサンプル データを準備する方法を示すガイドラインと例を説明します。
+この記事では、この機能の設定方法と、本トピックの後で紹介するシナリオ例にサンプル データを準備する方法を示すガイドラインと例を説明します。
 
 ### <a name="enable-sample-data"></a>サンプルデータの有効化
 
@@ -145,7 +145,7 @@ ms.locfileid: "8677929"
 
 ## <a name="example-scenario"></a>シナリオ例
 
-上記で説明したサンプル データをすべて入手して設定したら、このシナリオを使用して *場所の能力を超える補充* 機能を試すことができます。 このシナリオに示されている値は、標準のデモデータで作業していて、**USMF** 法人を選択し、このトピックで既に説明したサンプル レコードを準備していることを前提としています。 このシナリオは、製品の設定で機能を使用する方法を示す例としても使用されます。
+上記で説明したサンプル データをすべて入手して設定したら、このシナリオを使用して *場所の能力を超える補充* 機能を試すことができます。 このシナリオに示されている値は、標準のデモ データで作業していて、**USMF** 法人を選択し、この記事で既に説明したサンプル レコードを準備していることを前提としています。 このシナリオは、製品の設定で機能を使用する方法を示す例としても使用されます。
 
 ### <a name="create-replenishment-work"></a>補充作業の作成
 

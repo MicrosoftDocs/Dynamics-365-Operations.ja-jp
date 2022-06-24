@@ -1,6 +1,6 @@
 ---
 title: POS ユーザー インターフェイスのビジュアル コンフィギュレーション
-description: このトピックでは、Dynamics 365 Commerce POS (販売時点管理) の画面レイアウトに関する情報を提供します。
+description: この記事では、Dynamics 365 Commerce POS (販売時点管理) の画面レイアウトに関する情報について説明します。
 author: boycezhu
 ms.date: 09/22/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 17379dc97c7a8b22912482a7aeebd0d8ac08dc496fa7b1661952bca10a21c75b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 22a35d69780a48415076dd70c21c33b1024c217d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871636"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>POS ユーザー インターフェイスのビジュアル コンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
 
-Microsoft Dynamics 365 Commerce の販売時点管理 (POS) のユーザー インターフェイス (UI) は、店舗、レジスター、ユーザーに割り当てられた視覚プロファイルと画面レイアウトの組み合わせを使用してコンフィギュレーションできます。 このトピックでは、これらのコンフィギュレーション オプション について説明します。
+Microsoft Dynamics 365 Commerce の販売時点管理 (POS) のユーザー インターフェイス (UI) は、店舗、レジスター、ユーザーに割り当てられた視覚プロファイルと画面レイアウトの組み合わせを使用してコンフィギュレーションできます。 この記事では、コンフィギュレーション オプションに関する情報について説明します。
 
 次の図は、POS UI のコンフィギュレーション可能な側面を構成するさまざまなエンティティ間の関係を示します。
 

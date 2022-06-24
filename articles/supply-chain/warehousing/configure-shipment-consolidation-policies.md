@@ -1,6 +1,6 @@
 ---
-title: 出荷連結ポリシーを構成する
-description: このトピックでは、既定およびユーザー定義の出荷連結ポリシーの設定方法について説明します。
+title: 出荷連結ポリシーのコンフィギュレーション
+description: この記事では、既定およびユーザー定義の出荷連結ポリシーの設定方法について説明します。
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 0a575648c0e6f5d0e3b9fb03ea6f47252837bf9c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672573"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845927"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>出荷連結ポリシーを構成する
 
@@ -26,12 +26,12 @@ ms.locfileid: "8672573"
 
 出荷連結ポリシーを使用した出荷連結のプロセスを使用することで、倉庫への自動リリースと手動リリースの処理にて自動出荷連結が可能となります。 この機能を有効にした後は、初期ポリシーを構成する必要があります。 ポリシーが構成されていない場合は、販売明細行ごとに1つの積荷明細行を持つ個別の出荷が生成されます。
 
-このトピックで説明するシナリオでは、既定およびユーザー定義の出荷連結ポリシーを設定する方法を示します。
+この記事で説明するシナリオでは、既定およびユーザー定義の出荷連結ポリシーを設定する方法を示します。
 
 ## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>出荷連結ポリシーの機能を有効化する
 
 > [!IMPORTANT]
-> このトピックで説明する[最初のシナリオ](#scenario-1)では、まず以前の出荷連結機能を使用するよう、倉庫の設定をします。 続いて、出荷統合ポリシーを使用できるようにします。 このようにして、アップグレード シナリオの機能を体験できます。 デモ データ環境を使用して最初のシナリオを実行する場合は、この機能を有効にしてからシナリオを開始する必要があります。
+> この記事で説明する [最初のシナリオ](#scenario-1) では、まず以前の出荷連結機能を使用するよう、倉庫の設定をします。 続いて、出荷統合ポリシーを使用できるようにします。 このようにして、アップグレード シナリオの機能を体験できます。 デモ データ環境を使用して最初のシナリオを実行する場合は、この機能を有効にしてからシナリオを開始する必要があります。
 
 *出荷連結ポリシー* 機能を使用する前に 、システムでこの機能を有効にしておく必要があります。 管理者は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) 設定を使用して、機能の状態を確認し、有効にすることができます。 **機能管理** ワークスペースで、この機能は次のようにリストされています。
 
@@ -40,7 +40,7 @@ ms.locfileid: "8672573"
 
 ## <a name="make-demo-data-available"></a>デモ データを有効化する
 
-それぞれのトピックのシナリオでは、Microsoft Dynamics 365 Supply Chain Management で利用可能な標準的なデモデータに含まれる値とレコードを参照し ます。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を **usmf** に設定します。
+この記事の各シナリオでは、Microsoft Dynamics 365 Supply Chain Management で利用可能な標準的なデモ データに含まれる値とレコードを参照します。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を **usmf** に設定します。
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>シナリオ1:既定の出荷連結ポリシーを構成する
 
@@ -339,7 +339,7 @@ ms.locfileid: "8672573"
 
 ## <a name="example-scenarios-of-how-to-use-shipment-consolidation-policies"></a><a name="example-scenarios"></a>出荷連結ポリシーの使用方法を示すシナリオ例
 
-次のシナリオでは、このトピックで作成した出荷連結ポリシーの使用例を説明しています。 各シナリオでは、倉庫への自動リリースや手動リリース処理を行う過程で、出荷連結ポリシーを使用した出荷連結処理を行う方法を説明しています。
+次のシナリオでは、この記事を読みながら作成した出荷連結ポリシーの使用方法について説明しています。 各シナリオでは、倉庫への自動リリースや手動リリース処理を行う過程で、出荷連結ポリシーを使用した出荷連結処理を行う方法を説明しています。
 
 - シナリオ 1: [販売注文の自動リリースを使用して、出荷が倉庫にリリースされた場合に出荷を連結する](../warehousing/consolidate-shipments-automatic.md)
 - シナリオ 2: [出荷連結ポリシーが、[倉庫へのリリース] ページで上書きされている場合に出荷を連結する](../warehousing/consolidate-shipments-release-to-warehouse-override.md)

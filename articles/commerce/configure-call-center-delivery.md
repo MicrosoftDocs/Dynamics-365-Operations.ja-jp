@@ -1,6 +1,6 @@
 ---
-title: コール センターの配送モードと費用の構成
-description: このトピックでは、デリバリー モードの設定方法および Dynamics 365 Commerce のコール センターの注文料金を定義します。
+title: コール センターの配送モードと費用のコンフィギュレーション
+description: この記事では、デリバリー モードの設定方法および Dynamics 365 Commerce のコール センターの注文料金を定義します。
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f445e9dabd0210951609170369eae63bcc30ce6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748574"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888301"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>コール センターの配送モードと費用の構成
 
@@ -35,7 +35,7 @@ Dynamics 365 Commerce で販売注文が発注される時、販売注文を入�
 
 コール センターの注文にどの配送モードを使用するか特定し、関連付けられたルールおよび費用を定義する前に、配送モードを定義する必要があります。 **販売とマーケティング \> 設定 \> 配送 \> 配送モード** に移動します。 **新規作成** を選択して、新しい配送モードを作成します。 または、リスト中の既存の配送モードを選択し、**編集** を選択して変更します。
 
-業務の要件に基づいて、**配送モード** フィールドに、任意の組み合わせの英数字を入力することができます。 **説明** フィールドを用いて追加のコンテキストを提供できます。 **費用グループ** および **急送** フィールドはオプションで、このトピックの後半で詳細が説明されます。
+業務の要件に基づいて、**配送モード** フィールドに、任意の組み合わせの英数字を入力することができます。 **説明** フィールドを用いて追加のコンテキストを提供できます。 **費用グループ** および **急送** フィールドはオプションで、この記事の後半で詳細が説明されます。
 
 **コマース チャンネル** クイック タブで、そのチャンネルで販売トランザクションが作成される時に配送モードを使用することが許可されているチャンネルを追加してください。
 

@@ -1,6 +1,6 @@
 ---
-title: B2B カスタマイズ のためのコマース カタログの拡張性への影響
-description: このトピックでは、Microsoft Dynamics 365 Commerce の B2B 機能のコマース カタログの拡張性への影響について説明します。
+title: B2B カスタマイズの Commerce カタログの拡張性に対する影響
+description: この記事では、Microsoft Dynamics 365 Commerce の B2B 機能のコマース カタログの拡張性への影響について説明します。
 author: ashishmsft
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: aff333bfe8003233dd5d8181aa8c5dd7eaeffcd0
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: f21d3375db69dd412325d00261bfc18e26d0c257
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656868"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849018"
 ---
-# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>B2B カスタマイズ のためのコマース カタログの拡張性への影響
+# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>B2B カスタマイズの Commerce カタログの拡張性に対する影響
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の **B2B のコマース カタログ** 機能の拡張性への影響について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の **B2B のコマース カタログ** 機能の拡張性への影響について説明します。
 
 カタログ コンテキストをカスタム シナリオに拡張することに関心を持っている場合は、カスタマイズを更新する必要があります。 この更新は、アップグレードの実行後にカスタマイズが最新の機能を自動的にサポートしない可能性があるため、顧客が従う必要のある標準プロセスに従います。 カスタマイズに新しい機能やバグ修正プログラムが含まれる場合は、それ経験に応じてカスタマイズ コードを更新することをお勧めします。 この更新は、Microsoft がコア コードに対して行った可能性のある変更に似ています。
 

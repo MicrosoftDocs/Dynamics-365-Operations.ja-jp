@@ -1,6 +1,6 @@
 ---
 title: 利息計算期間機能
-description: このトピックでは、利息計算期間の選択にあたり、月単位、四半期単位、半年単位、年間のどれを選択すれば良いかを判断する際に役立つ情報を提供します。
+description: この記事では、利息計算期間の選択にあたり、月単位、四半期単位、半年単位、年間のどれを選択すれば良いかを判断する際に役立つ情報を提供します。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d1b8af3d5f8f6a6812fe309f57f682d0c5023d00
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 2de5f1e9d52de41388298031a03fbc487a1b1cde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886422"
 ---
 # <a name="compounding-interval-functionality"></a>利息計算期間機能
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、利息計算期間の選択にあたり、月単位、四半期単位、半年単位、年間のどれを選択すれば良いかを判断する際に役立つ情報を提供します。 利息計算期間機能を使用して、リースの支払スケジュールに含まれる複利期間の数を年ごとに決定します。 このトピックの 4 つの例では、リースの支払いスケジュールが異なる間隔でどのようなものになるかを示しています。
+この記事では、利息計算期間の選択にあたり、月単位、四半期単位、半年単位、年間のどれを選択すれば良いかを判断する際に役立つ情報を提供します。 利息計算期間機能を使用して、リースの支払スケジュールに含まれる複利期間の数を年ごとに決定します。 この記事の 4 つの例では、リースの支払いスケジュールが異なる間隔でどのようなものになるかを示しています。
 
 リースの支払頻度よりも少ない頻度で、利息計算期間を選択することはできません。 たとえば、四半期ごとの利息計算期間は毎月の支払頻度では使用できませんし、年に一度の利息計算期間は半期ごとの支払頻度では使用できません。 リースの支払頻度よりも少ない利息計算期間を選択しようとすると、エラーメッセージが表示されます。
 
 > [!NOTE]
-> このトピックの 4 つの例では、利息計算期間が支払頻度と一致しています。
+> この記事の 4 つの例では、利息計算期間が支払頻度と一致しています。
 
 ## <a name="examples"></a>例
 

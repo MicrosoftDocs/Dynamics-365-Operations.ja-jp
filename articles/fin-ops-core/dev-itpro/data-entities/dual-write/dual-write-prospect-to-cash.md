@@ -1,6 +1,6 @@
 ---
 title: 二重書き込みの見込顧客を現金化
-description: このトピックでは、二重書き込みの見込顧客を現金化に関する情報を提供します。
+description: この記事では、二重書き込みの見込顧客を現金化に関する情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7c53bcd1084d89b59d0f6b2674a85d7c3481a9bf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860112"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>二重書き込みの見込顧客を現金化
 
@@ -29,7 +29,7 @@ ms.locfileid: "7781794"
 顧客と連絡先の統合については、[統合された顧客マスター](customer-mapping.md) を参照してください。 成果物統合については、[統一された製品経験](product-mapping.md) を参照してください。
 
 > [!NOTE]
-> Dynamics 365 Sales では、見込顧客と顧客の両方が、**RelationshipType** 列が **見込顧客** または **顧客** である **アカウント** テーブル内のレコードを参照します。 ビジネス ロジックに、最初に見込み客として、次に顧客として **アカウント** レコードを作成して承認する **アカウント** 認定プロセスが含まれる場合、そのレコードは顧客 (`RelationshipType=Customer`) の場合にのみ Finance and Operations アプリに同期されます。 **アカウント** 行を見込顧客として同期する場合は、見込顧客データを統合するカスタム マップが必要です。
+> Dynamics 365 Sales では、見込顧客と顧客の両方が、**RelationshipType** 列が **見込顧客** または **顧客** である **アカウント** テーブル内のレコードを参照します。 ビジネス ロジックに、最初に見込み客として、次に顧客として **アカウント** レコードを作成して承認する **アカウント** 認定プロセスが含まれる場合、そのレコードは顧客 (`RelationshipType=Customer`) の場合にのみ財務と運用アプリに同期されます。 **アカウント** 行を見込顧客として同期する場合は、見込顧客データを統合するカスタム マップが必要です。
 
 ## <a name="prerequisites-and-mapping-setup"></a>前提条件およびマッピングの設定
 
@@ -111,7 +111,7 @@ Supply Chain Management から Sales に同期すると、次の結果が得ら�
 
 次の表に示されているように、見込顧客を現金化するには、データ操作中に連携して動作するコア テーブル マップのコレクションが含まれています。
 
-| Finance and Operations アプリ | Customer Engagement アプリ | 説明 |
+| 財務と運用アプリ | Customer Engagement アプリ | Description |
 |-----------------------------|-----------------------------------|-------------|
 [すべての製品](mapping-reference.md#138) | msdyn_globalproducts | |
 [顧客 V3](mapping-reference.md#101) | 勘定 | |
@@ -122,7 +122,7 @@ Supply Chain Management から Sales に同期すると、次の結果が得ら�
 [CDS 販売見積ヘッダー](mapping-reference.md#215) | 見積 | |
 [CDS 販売見積明細行](mapping-reference.md#214) | 見積詳細 | |
 [リリース済製品 V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[売上請求書ヘッダー V2](mapping-reference.md#118) | 請求書 | Finance and Operations アプリの売上請求書ヘッダー V2 テーブルには、販売注文と自由形式の 請求書が含まれています。 Dataverse では、自由形式の請求書ドキュメントを除外するデュアル書き込み用のフィルターが適用されます。 |
+[売上請求書ヘッダー V2](mapping-reference.md#118) | 請求書 | 財務と運用アプリの売上請求書ヘッダー V2 テーブルには、販売注文と自由形式の 請求書が含まれています。 Dataverse では、自由形式の請求書ドキュメントを除外するデュアル書き込み用のフィルターが適用されます。 |
 [売上請求書明細行 V2](mapping-reference.md#117) | invoicedetails | |
 [販売注文元コード](mapping-reference.md#186) | msdyn_salesorderorigins | |
 

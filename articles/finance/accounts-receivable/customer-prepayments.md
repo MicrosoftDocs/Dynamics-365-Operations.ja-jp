@@ -1,6 +1,6 @@
 ---
 title: 顧客の前払
-description: このトピックでは、顧客の前払 (顧客預金とも呼ばれる) の設定および処理方法について説明します。
+description: この記事では、顧客の前払 (顧客預金とも呼ばれる) の設定および処理方法について説明します。
 author: twheeloc
 ms.date: 04/30/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb0f2290a38d89d90ac0d30a59e21fb3e9a6d894
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 88773067c472471fb75167712268d1076c1738a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691894"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861563"
 ---
 # <a name="customer-prepayments"></a>顧客の前払
 

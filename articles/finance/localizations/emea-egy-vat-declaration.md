@@ -1,6 +1,6 @@
 ---
-title: エジプトの VAT 申告
-description: このトピックでは、エジプトの VAT 還付フォームを構成および生成する方法について説明します。
+title: エジプト用 VAT 申告
+description: この記事では、エジプトの VAT 還付フォームを構成および生成する方法について説明します。
 author: sndray
 ms.date: 06/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 1d5788b2328a49f4725a6c689e29a7e784032fae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870038"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>エジプトの VAT 申告 (EG-00002)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403951"
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、エジプトの法人向けの VAT 還付フォーム、売上帳簿、購買帳簿を設定および生成する方法について説明します。
+この記事では、エジプトの法人向けの VAT 還付フォーム、売上帳簿、購買帳簿を設定および生成する方法について説明します。
 
 エジプトの VAT 還付フォームは、仮受 VAT の税額の請求合計、回収可能な仮払 VAT の税額の合計、および関連する VAT の未払税金額を集計した公式ドキュメントです。 フォームは、すべてのタイプの納税者に対して使用され、税務当局ポータルを通じて手動で完了する必要があります。 VAT 還付フォームは、一般に VAT 還付申告と呼ばれます。
 

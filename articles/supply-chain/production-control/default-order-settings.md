@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 106da56ed1de7d9e555cfdd63f19687d7e17599a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102767"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862572"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>分析コードおよび製品バリアントの既定の注文設定
 
@@ -38,7 +38,7 @@ Dynamics 365 Supply Chain Management の既定の注文設定は、品目が供�
     - **計画** タブにある **注文設定** グループで、**既定の注文設定** を選択します。
     - **在庫の管理** タブにある **注文設定** グループで、**既定の注文設定** を選択します。
 
-1. このトピックの残りの部分の記載に従って、設定を構成します。
+1. この記事の残りの部分の記載に従って、設定を構成します。
 
 ## <a name="default-order-settings"></a>既定の注文設定
 

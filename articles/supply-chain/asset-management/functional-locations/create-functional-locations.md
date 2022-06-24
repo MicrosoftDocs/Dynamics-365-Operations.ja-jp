@@ -1,6 +1,6 @@
 ---
 title: 機能的な場所を作成する
-description: このトピックでは、資産管理で機能的な場所を作成する方法について説明します。
+description: この記事では、資産管理で機能的な場所を作成する方法について説明します。
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5dd5ea59b27c594752ff82428723f3afe555b5f2426a812c70e10b968c920a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767536"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869723"
 ---
 # <a name="create-functional-locations"></a>機能的な場所を作成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "6767536"
 
  
 
-このトピックでは、資産管理で機能的な場所を作成する方法について説明します。
+この記事では、資産管理で機能的な場所を作成する方法について説明します。
 
 機能的な場所の構造を作成する場合、一度機能的な場所を作成すると、元の場所から移動できないことに注意してください。 つまり、資産管理で機能的な場所の作成を開始する前に、機能的な場所の構造を慎重に検討する必要があります。 機能的な場所を後悔している場合、まだ使用されていない場合は削除できます。
 

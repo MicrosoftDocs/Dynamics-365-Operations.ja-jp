@@ -1,6 +1,6 @@
 ---
 title: 不均衡による仕訳帳の転記の失敗
-description: このトピックでは、伝票トランザクションで借方と貸方のバランスが取れていないため、トランザクションを転記できない理由を説明します。 このトピックには、その問題を修正するための手順も含まれています。
+description: この記事では、伝票トランザクションで借方と貸方のバランスが取れていないため、トランザクションを転記できない理由を説明します。 この記事には、その問題を修正するための手順も含まれています。
 author: kweekley
 ms.date: 08/03/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 07408e608496dcc19562b866449b3b27f5f80edd
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f5afded3d5c42f8dab465b668e4c1fcdaed8c215
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719935"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861332"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>不均衡による仕訳帳の転記の失敗
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、伝票トランザクションで借方と貸方のバランスが取れていないため、トランザクションを転記できない理由を説明します。 このトピックには、その問題を修正するための手順も含まれています。
+この記事では、伝票トランザクションで借方と貸方のバランスが取れていないため、トランザクションを転記できない理由を説明します。 この記事には、その問題を修正するための手順も含まれています。
 
 ## <a name="symptom"></a>現象
 

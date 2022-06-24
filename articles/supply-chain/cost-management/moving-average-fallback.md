@@ -1,6 +1,6 @@
 ---
-title: 移動平均フォールバック コスト シーケンス
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Managementで移動平均を計算するためのフォールバック コスト シーケンスについて説明します。
+title: 移動平均、代替原価の順序
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management で移動平均を計算するためのフォールバック コスト シーケンスについて説明します。
 author: JennySong-SH
 ms.date: 03/25/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2020-03-25
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 1056ab771c292aebc54e229d1f14f3901f9a5d9c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ad67828e2608f4754a3dffd76c64292f6a91e95f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674480"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868017"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>移動平均フォールバック コスト シーケンス
 

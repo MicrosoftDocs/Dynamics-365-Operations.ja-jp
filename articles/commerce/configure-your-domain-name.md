@@ -1,6 +1,6 @@
 ---
-title: ドメイン名のコンフィギュレーション
-description: このトピックでは、Microsoft Dynamics 365 E コマース サイトのドメイン名をコンフィギュレーションする方法について説明します。
+title: ドメイン名の構成
+description: この記事では、Microsoft Dynamics 365 E コマース サイトのドメイン名をコンフィギュレーションする方法について説明します。
 author: psimolin
 ms.date: 07/02/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9718effc776c64b2912a01972ad986eb332196a4477a952672fb147eaaf400c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 00c75581ba08979dfbc784f949c30b9bf78d44c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892134"
 ---
-# <a name="configure-your-domain-name"></a>ドメイン名のコンフィギュレーション
+# <a name="configure-your-domain-name"></a>ドメイン名の構成
 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 E コマース サイトのドメイン名をコンフィギュレーションする方法について説明します。 
+この記事では、Microsoft Dynamics 365 E コマース サイトのドメイン名をコンフィギュレーションする方法について説明します。 
 
 ## <a name="add-domains-during-e-commerce-initialization"></a>eコマースの初期化中にドメインを追加する
 

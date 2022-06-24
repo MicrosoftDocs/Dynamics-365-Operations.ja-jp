@@ -1,6 +1,6 @@
 ---
 title: ロイヤルティの概要
-description: このトピックでは、Dynamics 365 Commerce 内でのロイヤルティ機能、および小売業者がロイヤルティ プログラムを容易に始めるのに役立つ、対応する設定手順について説明します。
+description: この記事では、Dynamics 365 Commerce 内でのロイヤルティ機能、および小売業者がロイヤルティ プログラムを容易に始めるのに役立つ、対応する設定手順について説明します。
 author: scott-tucker
 ms.date: 07/21/2020
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 57512bbd735e26ba31e00518ca8179f2d9b14bc4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 667c30e52bae34f8ddfdc7b74f271d08612ac594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985165"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883906"
 ---
 # <a name="loyalty-overview"></a>ロイヤルティの概要
 
 [!include [banner](includes/banner.md)]
 
-ロイヤルティ プログラムを使用すると、小売業者のブランドとの相互作用について顧客に報酬を与え、顧客のロイヤルティを高めることができます。 Dynamics 365 Commerce では、すべてのコマース チャネルの法人に適用する、簡単または複雑なロイヤルティ プログラムを設定できます。 このトピックでは、コマース内でのロイヤルティ機能、および小売業者がロイヤルティ プログラムを容易に始めるのに役立つ、対応する設定手順について説明します。
+ロイヤルティ プログラムを使用すると、小売業者のブランドとの相互作用について顧客に報酬を与え、顧客のロイヤルティを高めることができます。 Dynamics 365 Commerce では、すべてのコマース チャネルの法人に適用する、簡単または複雑なロイヤルティ プログラムを設定できます。 この記事では、コマース内でのロイヤルティ機能、および小売業者がロイヤルティ プログラムを容易に始めるのに役立つ、対応する設定手順について説明します。
 
 次のオプションが含まれるように、ロイヤルティー プログラムを設定できます。
 

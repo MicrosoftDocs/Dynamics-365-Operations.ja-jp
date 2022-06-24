@@ -1,6 +1,6 @@
 ---
 title: 固定資産の処分の転記勘定
-description: このトピックは、資産の処分の総勘定元帳の転記勘定を設定する方法について説明します。
+description: この記事は、資産の処分の一般会計の転記勘定を設定する方法を説明します。
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8501bbb0fc47fb52e100d9086054db4831dae178
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1272cdb16396d24b5495f023e7b9fe3dee341507
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720254"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871336"
 ---
 # <a name="fixed-asset-disposal-posting-accounts"></a>固定資産の処分の転記勘定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、資産を処分する際の総勘定元帳の計上科目の設定について説明します。
+この記事では、資産を処分する際の総勘定元帳の計上科目の設定について説明します。
 
 資産を処分する際に使用する一般会計の転記勘定を設定するには、**固定資産転記プロファイル** ページの **元帳勘定** クイックタブで **処分 - 売却** と **処分 - 仕損** を選択します。
 

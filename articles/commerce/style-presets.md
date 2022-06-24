@@ -1,6 +1,6 @@
 ---
 title: スタイル プリセットの作業
-description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーでのサイト スタイル プリセットの作業方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce サイト ビルダーでのサイト スタイル プリセットの作業方法について説明します。
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 0a06052ab29502c57a2ad5a25e5bec870585ef4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964856"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900363"
 ---
 # <a name="work-with-style-presets"></a>スタイル プリセットの作業
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーでのサイト スタイル プリセットの作業方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce サイト ビルダーでのサイト スタイル プリセットの作業方法について説明します。
 
 スタイル プリセットは、サイトのテーマ全体のすべてのカスタム スタイル値の保存されたセットです。 これを使用すると、サイト ビルダーからサイトの外観をすぐに変更できます。 スタイルのプリセットにより、Commerce サイト ビルダーの作成者は、カスケード スタイルシート (CSS) を使用したり、テーマを配置することなく、サイト全体のスタイル値をすばやく変更、プレビュー、およびアクティブにできます。 スタイル変数の一般的な例としては、スタイルのプリセットを使用して管理できるフォント スタイル、ボタン スタイル、サイト カラーなどがあります。
 

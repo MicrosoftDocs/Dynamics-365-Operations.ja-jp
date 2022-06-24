@@ -1,6 +1,6 @@
 ---
-title: 在庫の可視化パブリック API
-description: このトピックでは、在庫の可視化によって提供されるパブリック API について説明します。
+title: Inventory Visibility の公開 API
+description: この記事では、Inventory Visibility によって提供されるパブリック API について説明します。
 author: yufeihuang
 ms.date: 12/09/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786869"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902027"
 ---
-# <a name="inventory-visibility-public-apis"></a>在庫の可視化パブリック API
+# <a name="inventory-visibility-public-apis"></a>Inventory Visibility の公開 API
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、在庫の可視化によって提供されるパブリック API について説明します。
+この記事では、Inventory Visibility によって提供されるパブリック API について説明します。
 
 在庫の視覚化アドインのパブリック REST API は、特定の統合エンドポイントを複数提供します。 次の 4 つの主要な相互作用タイプをサポートします。
 
@@ -160,7 +160,7 @@ Microsoft では、すぐに利用できる *Postman* get トークン コレク
    ```
 
 > [!IMPORTANT]
-> *Postman* 要求コレクションを使用して在庫可視化のパブリック API を呼び出す場合は、各要求に対してベアラー トークンを追加する必要があります。 ベアラー トークンを見つけるには、要求 URL の下の **認証** タブを選択し、**ベアラー トークン** のタイプを選択して、最後の手順で取得したアクセス トークンをコピーします。 このトピックの後半セクションでは、最後の手順で取得したトークンを表すために `$access_token` を使用します。
+> *Postman* 要求コレクションを使用して在庫可視化のパブリック API を呼び出す場合は、各要求に対してベアラー トークンを追加する必要があります。 ベアラー トークンを見つけるには、要求 URL の下の **認証** タブを選択し、**ベアラー トークン** のタイプを選択して、最後の手順で取得したアクセス トークンをコピーします。 この記事の後半セクションでは、最後の手順で取得したトークンを表すために `$access_token` を使用します。
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a> 手持在庫変更のイベントの作成
 
@@ -359,7 +359,7 @@ Body:
     ]
 ```
 
-次の例は、サンプル本文コンテンツを示しています。 この API の動作は、このトピックの前半の[手持在庫変更のイベントの作成](#create-onhand-change-event) セクションで説明されている API の動作とは異なります。 このサンプルでは、*T シャツ* 製品の数量が 1 つに設定されます。
+次の例は、サンプル本文コンテンツを示しています。 この API の動作は、この記事の前半の [手持在庫変更のイベントの作成](#create-onhand-change-event) セクションで説明されている API の動作とは異なります。 このサンプルでは、*T シャツ* 製品の数量が 1 つに設定されます。
 
 ```json
 [

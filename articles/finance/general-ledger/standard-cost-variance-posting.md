@@ -1,6 +1,6 @@
 ---
 title: 標準原価差額転記
-description: このトピックでは、標準原価計算の設定または転記に関する情報を提供します。
+description: この記事では、標準原価計算の設定または転記に関する情報を提供します。
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,16 +10,16 @@ ms.search.form: InventPosting, InventItemGroup
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: bc4f1bd7c1bf7a8f214f20460b10d371d8f3c790
-ms.sourcegitcommit: 1ea145dc606e243c7f51d91a5c0dd9e385bbda4a
+ms.openlocfilehash: e7b2d04f32b75dbd1354b3ef74a41ea1b6469c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8804611"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894880"
 ---
 # <a name="standard-cost-variance-posting"></a>標準原価差額転記
 
-組織内の 1 つ以上の製品に対して標準原価を使用する場合は、[標準原価の前提条件を構成する必要があります](/supply-chain/cost-management/prerequisites-standard-costs.md)。 このトピックでは、前提条件の手順 3 (「勘定科目を、標準原価差異に関連する品目の転記に割り当てます」) に必要な転記勘定について説明します。
+組織内の 1 つ以上の製品に対して標準原価を使用する場合は、[標準原価の前提条件を構成する必要があります](/supply-chain/cost-management/prerequisites-standard-costs.md)。 この記事では、前提条件の手順 3 (「勘定科目を、標準原価差異に関連する品目の転記に割り当てます」) に必要な転記勘定について説明します。
 
 発注書と製造オーダーでは、さまざまなタイプの差異が発生する可能性があります。 製造差異の例については、[製造差異の一般的な発生源](/supply-chain/cost-management/common-sources-of-production-variances.md)を参照してください。 購買品目に対して標準原価を使用すると発注書の価格差異が発生し、発注書での製品の標準原価と請求金額が異なります。
 

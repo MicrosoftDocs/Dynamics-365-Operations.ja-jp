@@ -1,6 +1,6 @@
 ---
 title: ワークフローでの自動化タスクのコンフィギュレーション
-description: このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。
+description: この記事では、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。
 author: ChrisGarty
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7346649108824eb4e7209a2476456a469affa1c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b482338c436ea9226d31f74c823ee1dc141b24cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891756"
 ---
 # <a name="configure-automated-tasks-in-a-workflow"></a>ワークフローでの自動化タスクのコンフィギュレーション
 
@@ -28,7 +28,7 @@ ms.locfileid: "8066521"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。
+この記事では、自動化タスクのプロパティをコンフィギュレーションする方法について説明します。
 
 ワークフロー エディターで自動化タスクをコンフィギュレーションするには、タスクを右クリックし、**プロパティ** をクリックして、**プロパティ** ページを開きます。 それから次の手順に従って、自動化タスクのプロパティをコンフィギュレーションします。
 

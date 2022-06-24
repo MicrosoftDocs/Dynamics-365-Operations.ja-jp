@@ -1,6 +1,6 @@
 ---
 title: 倉庫アプリのインストールと接続
-description: このトピックでは、各モバイル デバイスに倉庫アプリをインストールして、Microsoft Dynamics 365 Supply Chain Management 環境に接続するように構成する方法について説明します。 各デバイスの設定は手動で行うことも可能ですが、接続設定をファイルで取り込む、またはQRコードをスキャンして取り込むことができます。
+description: この記事では、各モバイル デバイスに倉庫アプリをインストールして、Microsoft Dynamics 365 Supply Chain Management 環境に接続するように構成する方法について説明します。 各デバイスの設定は手動で行うことも可能ですが、接続設定をファイルで取り込む、またはQRコードをスキャンして取り込むことができます。
 author: Mirzaab
 ms.date: 05/25/2020
 ms.topic: article
@@ -16,26 +16,26 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f123f217aabcc7500832fafb15199043048b5e5
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 8ed770e45aa7f9909b98a92b493dd2931c6a3981
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902274"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885757"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>倉庫アプリのインストールと接続
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> このトピックでは、古い倉庫アプリ (現在は非推奨) を構成する方法について説明します。 新しい倉庫管理モバイル アプリを構成する方法の詳細については、[倉庫管理モバイル アプリをインストールして接続する](install-configure-warehouse-management-app.md)を参照してください。
+> この記事では、古い倉庫アプリ (現在は非推奨) を構成する方法について説明します。 新しい倉庫管理モバイル アプリを構成する方法の詳細については、[倉庫管理モバイル アプリをインストールして接続する](install-configure-warehouse-management-app.md)を参照してください。
 
 > [!NOTE]
-> このトピックでは、クラウド配置の倉庫管理アプリの構成方法について説明します。 オンプレミス配置の倉庫管理アプリの構成方法については、[オンプレミス配置の倉庫管理](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md) を参照してください。
+> この記事では、クラウド配置の倉庫アプリの構成方法について説明します。 オンプレミス配置の倉庫管理アプリの構成方法については、[オンプレミス配置の倉庫管理](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md) を参照してください。
 
 倉庫アプリは Google Play ストアおよび Microsoft Store で利用可能です。 アプリはスタンドアロンのコンポーネントとして提供されています。 したがって、各デバイスでダウンロードしてから、Microsoft Dynamics 365 Supply Chain Management 環境に接続を構成する必要があります。
 
-このトピックでは、各モバイル デバイスに倉庫アプリをインストールして、Supply Chain Management 環境へ接続するように構成する方法について説明します。 各デバイスの設定は手動で行うことも可能ですが、接続設定をファイルで取り込む、またはQRコードをスキャンして取り込むことができます。
+この記事では、各モバイル デバイスに倉庫アプリをインストールして、Supply Chain Management 環境へ接続するように構成する方法について説明します。 各デバイスの設定は手動で行うことも可能ですが、接続設定をファイルで取り込む、またはQRコードをスキャンして取り込むことができます。
 
 ## <a name="system-requirements"></a>システム要件
 
@@ -76,11 +76,11 @@ ms.locfileid: "7902274"
 
     ![アプリケーション ウィザードを登録する。](media/app-connect-azure-register-wizard.png "アプリケーション ウィザードを登録する")
 
-1. 新しいアプリの登録が開きます。 後の手順で必要となるため、**アプリケーション (クライアント) ID** の値をメモしておきます。 この ID は後の手順で、*クライアント ID* として参照されます。
+1. 新しいアプリの登録が開きます。 後の手順で必要となるため、**アプリケーション (クライアント) ID** の値をメモしておきます。 この ID はこの記事の後半で、*クライアント ID* として参照されます。
 
     ![アプリケーション (クライアント) ID。](media/app-connect-azure-app-id.png "アプリケーション (クライアント) ID")
 
-1. **管理** リストにて、**証明書 & シークレット** を選択します。 続いて、アプリの認証の構成方法に応じて、次のいずれかのボタンを選択します。 (詳細については、本トピックの後半に記載の[証明書またはクライアントシークレットのセクションを使用して認証をする](#authenticate)を参照してください。)
+1. **管理** リストにて、**証明書 & シークレット** を選択します。 続いて、アプリの認証の構成方法に応じて、次のいずれかのボタンを選択します。 (詳細については、この記事の後半の[証明書またはクライアント シークレットを使用した認証](#authenticate) のセクションを参照してください。)
 
     - **証明書のアップロード** – 秘密に使用する証明書をアップロードします。 この方法は安全性が高い上に、より完全な自動化もできるため、この方法を推奨します。 Windows デバイスで倉庫アプリを実行している場合は、証明書をアップロードした後に表示される **サムプリント** 値を書き留めておきます。 この値は、Windows デバイスで証明書を構成する際に必要になります。
     - **新しいクライアント シークレット** – **パスワード** セクションにキーの説明と期間を入力してキーを作成し 、**追加** を選択します。 キーのコピーを作成し、安全に保管します。
@@ -90,7 +90,7 @@ ms.locfileid: "7902274"
 Azure ADでの web サービス アプリケーションの設定方法の詳細については、次のリソースを参照してください:
 
 - Azure AD で、Windows PowerShell を使用した web サービス アプリケーションの設定方法については、[Azure PowerShell を使用して、証明書でサービス プリンシパルを作成する方法](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)を参照してください。
-- Azure AD にて web サービス アプリケーションを手動で作成する方法の詳細については 、次のトピックを参照してください:
+- Azure AD で web サービス アプリケーションを手動で作成する方法の詳細については 、次の記事を参照してください:
 
     - [クイックスタート: Microsoft ID プラットフォームにアプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app)
     - [ポータルを使用して、リソースにアクセスできる Azure AD アプリケーションとサービス プリンシパルを作成する](/azure/active-directory/develop/howto-create-service-principal-portal)
@@ -117,7 +117,7 @@ Supply Chain Management を有効にして Azure AD アプリケーションを�
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>証明書またはクライアント シークレットを使用した認証
 
-Azure AD の認証をすることで、モバイル デバイスを Supply Chain Management に安全に接続することができます。 証明書またはクライアント シークレットを使用して認証できます。 接続の設定をインポートする場合は、クライアント シークレットの代わりに証明書を使用することを推奨します。 このトピックで後述するとおり、クライアント シークレットは常に安全に保管されている必要があるため、接続設定ファイル、または QR コードからインポートすることはできません。
+Azure AD の認証をすることで、モバイル デバイスを Supply Chain Management に安全に接続することができます。 証明書またはクライアント シークレットを使用して認証できます。 接続の設定をインポートする場合は、クライアント シークレットの代わりに証明書を使用することを推奨します。 この記事で後述するとおり、クライアント シークレットは常に安全に保管されている必要があるため、接続設定ファイル、または QR コードからインポートすることはできません。
 
 証明書は、トークンを要求された際に、アプリケーションの ID を証明する秘密として使用することができます。 証明書の公開部分は Azure portal のアプリ登録にアップロードされますが、完全な証明書は倉庫アプリがインストールされている各デバイスに配置する必要があります。 組織では、ローテーションなどの観点から証明書を管理する責任があります。 自己署名付き証明書を使用することはできますが、常にエクスポートされていない証明書を使用する必要があります。
 

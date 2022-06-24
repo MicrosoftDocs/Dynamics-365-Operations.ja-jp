@@ -1,6 +1,6 @@
 ---
 title: 資産サービス レベル
-description: このトピックでは、資産管理の資産サービス レベルについて説明します。
+description: この記事では、資産管理の資産サービス レベルについて説明します。
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4f7daa10931ce406a5d2bdbbc1dced067e3de5065cdb61cce369d617709d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f7429b30253f540925e67ff9239667a0a404f26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723602"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908688"
 ---
 # <a name="asset-service-levels"></a>資産サービス レベル
 
@@ -28,7 +28,7 @@ ms.locfileid: "6723602"
 
  
 
-このトピックでは、資産管理の資産サービス レベルについて説明します。 資産サービス レベルは資産に関連し、メンテナンス要求およびワーク オーダーに転送されます。 これらは、ワーク オーダー スケジューリング中にワーク オーダーの優先順位を計算するために使用されます。 変更が必要な場合、資産サービス レベルを変更できます。
+この記事では、資産管理の資産サービス レベルについて説明します。 資産サービス レベルは資産に関連し、メンテナンス要求およびワーク オーダーに転送されます。 これらは、ワーク オーダー スケジューリング中にワーク オーダーの優先順位を計算するために使用されます。 変更が必要な場合、資産サービス レベルを変更できます。
 
 ワーク オーダー スケジューリングの評価スコアの計算に関連する設定の詳細については、[資産管理パラメーター](../setup-for-objects/enterprise-asset-management-parameters.md) を参照してください。 資産サービス レベルに対して、少なくとも 1 つの既定レコードを設定する必要があります。 この既定のレコードは、ワーク オーダー スケジューリング中に他の一致が見つからない場合に使用されます。
 

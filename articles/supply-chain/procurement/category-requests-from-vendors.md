@@ -1,6 +1,6 @@
 ---
 title: 仕入先からのカテゴリ要求
-description: このトピックでは、仕入先が勘定の調達カテゴリを要求する方法について説明します。 また、調達エージェントが完了する承認プロセスについても説明します。
+description: この記事では、仕入先が勘定の調達カテゴリを要求する方法について説明します。 また、調達エージェントが完了する承認プロセスについても説明します。
 author: GalynaFedorova
 ms.date: 04/19/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 9874151a5d82cc3441741489065877b78bab7bf5
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8deded1b7f908bcadf705cf992b2d97618bc28b6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671213"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863886"
 ---
 # <a name="category-requests-from-vendors"></a>仕入先からのカテゴリ要求
 

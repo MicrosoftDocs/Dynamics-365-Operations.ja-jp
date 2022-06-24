@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce から Microsoft Teams へのプロビジョニング
-description: ここでは、Microsoft Teams の組織データを利用して Dynamics 365 Commerce のプロビジョニングを行う方法について説明します。
+description: この記事では、Microsoft Teams の組織データを利用して Dynamics 365 Commerce のプロビジョニングを行う方法について説明します。
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 54c85d1b6b51b7b2608200a7fa8e343ac6d008d0
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3dc9d0f20ec251f0908dda0017adaaeac1b43856
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868938"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Dynamics 365 Commerce から Microsoft Teams へのプロビジョニング
 
 [!include [banner](includes/banner.md)]
 
-ここでは、Microsoft Teams の組織データを利用して Dynamics 365 Commerce のプロビジョニングを行う方法について説明します。
+この記事では、Microsoft Teams の組織データを利用して Dynamics 365 Commerce のプロビジョニングを行う方法について説明します。
 
 Dynamics 365 Commerce では、まだ小売店舗にチームを設定していない場合に、簡単に Teams をプロビジョニングすることができます。 Commerce から Teams で使用する情報を活用することで、店舗の従業員が Teams を使い始めることができるようになります。 この情報には、組織階層、店舗名、従業員情報、Azure Active Directory (Azure AD) 勘定などが含まれます。 
 

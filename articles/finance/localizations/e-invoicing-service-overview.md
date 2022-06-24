@@ -1,6 +1,6 @@
 ---
 title: 電子請求の概要
-description: このトピックでは、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management における電子請求の概要を示します。
+description: この記事では、Microsoft Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management における電子請求の概要を示します。
 author: gionoder
 ms.date: 01/21/2022
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23a98706bc2ab0abc2c72e9f20d8e8fbff56b2b9
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 4ce5776216855fc664b9beba68036d41920ae602
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371457"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861299"
 ---
 # <a name="electronic-invoicing-overview"></a>電子請求の概要
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management の電子請求は、電子請求書の構成可能な処理と構成可能な電子ドキュメントの交換を可能にする高スケーラブルなマルチ テナントサービスです。 処理と統合のルールは完全に構成をすることが可能で、このロジックは財務と Supply Chain Management の外部で実行されます。 本サービスは、主に企業と政府間のシナリオにおける電子請求書ドキュメントの処理を対象としています。 ただし、さまざまなタイプのドキュメントに対する企業間シナリオなど、他の目的のためにカスタム構成することもできます。
+Microsoft Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management の電子請求は、電子請求書の構成可能な処理と構成可能な電子ドキュメントの交換を可能にする高スケーラブルなマルチ テナントサービスです。 処理と統合のルールは完全に構成をすることが可能で、このロジックは財務と Supply Chain Management の外部で実行されます。 本サービスは、主に企業と政府間のシナリオにおける電子請求書ドキュメントの処理を対象としています。 ただし、さまざまなタイプのドキュメントに対する企業間シナリオなど、他の目的のためにカスタム構成することもできます。
 
 電子請求を使用すると、次のような目標の達成に役立ちます :
 

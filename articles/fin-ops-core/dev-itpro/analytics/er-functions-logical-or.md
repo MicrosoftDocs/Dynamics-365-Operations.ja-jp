@@ -1,6 +1,6 @@
 ---
 title: OR ER 関数
-description: このトピックでは、OR 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
+description: この記事では、OR 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6751c70599b5e3c05b9d1c69a95e82673b230210170cfead1e6a87c57d59c7f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d2783b5aff34e6ab4b5bde5dfe39e92d20892634
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747572"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892954"
 ---
 # <a name="or-er-function"></a>OR ER 関数
 

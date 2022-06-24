@@ -1,6 +1,6 @@
 ---
 title: 対話型フィーチャー モジュール
-description: このトピックでは、対話型フィーチャー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: この記事では、対話型フィーチャー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3ab325189812289390740e31fd673ee9892f9759
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: deee7c35cfc4293480fda74665429121b71bbfab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780742"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898522"
 ---
 # <a name="interactive-feature-module"></a>対話型フィーチャー モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、対話型フィーチャー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+この記事では、対話型フィーチャー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
 対話型フィーチャー モジュールは、画像とテキストの組み合わせを使用して複数の製品カテゴリや製品ブランドのマーケティングを行うために使用できる、モザイク状のモジュールです。 たとえば、小売業者が eコマース サイトのホーム ページに対話型フィーチャー モジュールを追加して、売れ筋のカテゴリを販売促進することができます。 対話型フィーチャー モジュールは、タイル リスト モジュールと似ていますが、レイアウトと対話機能が異なっています。
 

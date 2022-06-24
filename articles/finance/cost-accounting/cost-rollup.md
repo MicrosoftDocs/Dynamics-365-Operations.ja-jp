@@ -1,6 +1,6 @@
 ---
 title: 原価ロールアップ ポリシーおよび間接費の計算
-description: このトピックでは、適切なレベルの二次コスト要素を決定し、組織のレポートまたコスト トレーサビリティに適合するコスト ロールアップ ルールを作成する方法についての情報を提供します。
+description: この記事では、適切なレベルの二次コスト要素を決定し、組織のレポートまたコスト トレーサビリティに適合するコスト ロールアップ ルールを作成する方法についての情報を提供します。
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f35bf3e900b8dd9c1864be8668f7ff7296924c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734432"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874612"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>原価ロールアップ ポリシーおよび間接費の計算 
 
@@ -33,7 +33,7 @@ ms.locfileid: "8734432"
 -   間接費計算によって生成されたコスト エントリは非常に大量になることがあります。
 -   コスト オブジェクト間でコスト フローを追跡することはできません。
 
-これらの影響を避けるため、原価会計では組織管理レポートの要件に合わせてコスト配賦をコンフィギュレーションできます。 このトピックでは、適切なレベルの二次コスト要素を決定し、組織のレポートまたコスト トレーサビリティに適合するコスト ロールアップ ルールを作成する方法について説明します。
+これらの影響を避けるため、原価会計では組織管理レポートの要件に合わせてコスト配賦をコンフィギュレーションできます。 この記事では、適切なレベルの二次コスト要素を決定し、組織のレポートまたコスト トレーサビリティに適合するコスト ロールアップ ルールを作成する方法について説明します。
 
 > [!NOTE]
 > レポート要件が変更される場合は、コンフィギュレーションを変更できます。

@@ -1,6 +1,6 @@
 ---
 title: 発注書および請求書の減額後の繰り越し予算の更新
-description: このトピックでは、発注書がキャンセルまたは減額された場合、および請求書が減額された場合の繰り越し予算に発生したことをどのように管理するかについて説明します。
+description: この記事では、発注書がキャンセルまたは減額された場合、および請求書が減額された場合の繰り越し予算に発生したことをどのように管理するかについて説明します。
 author: TaylorVH
 ms.date: 02/11/2022
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2022-02-01
-ms.openlocfilehash: 3b0f06b8d5a38252fc8ff6662f3d454adffffe60
-ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
+ms.openlocfilehash: 7f0ef0ffdf697609e811f754b4378b1f7a81c494
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8803004"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897961"
 ---
 # <a name="update-the-carry-forward-budget-after-reductions-in-purchase-orders-and-invoices"></a>発注書および請求書の減額後の繰り越し予算の更新
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、発注書がキャンセルまたは減額された場合、および請求書が減額された場合の繰り越し予算に発生したことをどのように管理するかについて説明します。
+この記事では、発注書がキャンセルまたは減額された場合、および請求書が減額された場合の繰り越し予算に発生したことをどのように管理するかについて説明します。
 
 年末に発注書を処理する方法の詳細については、[年末の発注書の処理](/dynamicsax-2012/appuser-itpro/process-purchase-orders-at-year-end) を参照してください。
 

@@ -1,6 +1,6 @@
 ---
 title: RIGHT ER 関数
-description: このトピックでは、RIGHT 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
+description: この記事では、RIGHT 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
 author: NickSelin
 ms.date: 12/10/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45696d0498f712218126af8557521a2317d584eea5059ac3b588d3792d42495c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99e4d3811b1df25a7f6068e0dd31836d1b402952
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740290"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895369"
 ---
 # <a name="right-er-function"></a>RIGHT ER 関数
 

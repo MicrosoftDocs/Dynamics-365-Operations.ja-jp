@@ -1,6 +1,6 @@
 ---
 title: 購買契約書の作成
-description: このトピックでは、購買契約書の作成方法について説明します。
+description: この記事では、購買契約書の作成方法について説明します。
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3456e1c6e2ec65329e0f2e984f99ced0994c240b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 108c3a47132b262ebe2e15f00d26191b75469959
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670135"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877569"
 ---
 # <a name="create-a-purchase-agreement"></a>購買契約書の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、購買契約書の作成方法について説明します。 これは通常、購買マネージャが行います。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。 開始する前に、購買契約書の分類を設定する必要があります。 契約を作成すると、発注書の作成時にそれを使用できます。また、販売契約条件がヘッダーまたは任意の明細行に、その契約によって影響される順でコピーされます。
+この記事では、購買契約書の作成方法について説明します。 これは通常、購買マネージャが行います。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。 開始する前に、購買契約書の分類を設定する必要があります。 契約を作成すると、発注書の作成時にそれを使用できます。また、販売契約条件がヘッダーまたは任意の明細行に、その契約によって影響される順でコピーされます。
 
 
 ## <a name="create-a-new-purchase-agreement"></a>新しい購買契約の作成

@@ -1,6 +1,6 @@
 ---
 title: 財務分析コード用の既定テンプレートの管理
-description: このトピックでは、財務分析コードの既定のテンプレートを設定する方法を示します。
+description: この記事では、財務分析コードの既定のテンプレートを設定する方法を示します。
 author: aprilolson
 ms.date: 07/30/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08e795b44e552dbf049b460811a66741d9b6b96f
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 846347f3a0b5257e88e06ad593ba49160de9458a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722137"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872415"
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>財務分析コード用の既定テンプレートの管理
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、財務分析コードの既定のテンプレートを設定する方法を示します。 このテンプレートは、元伝票の金額をすばやく配分する場合に使用できます。
+この記事では、財務分析コードの既定のテンプレートを設定する方法を示します。 このテンプレートは、元伝票の金額をすばやく配分する場合に使用できます。
 
 1. ナビゲーション ウィンドウで、**モジュール > 一般会計 > 勘定科目表 > 分析コード > 財務分析コード用の既定テンプレート** の順に移動します。
 2. **新規** を選択します。

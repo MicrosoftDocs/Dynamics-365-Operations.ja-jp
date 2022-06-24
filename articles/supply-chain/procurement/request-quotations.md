@@ -1,6 +1,6 @@
 ---
 title: 見積依頼 (RFQ) の概要
-description: このトピックでは、見積依頼 (RFQs) の概要を説明します。 組織は、購入する必要がある品目やサービスに対して、いくつかの仕入先を競合させてより良い条件を得ようとする場合に RFQs を発行します。
+description: この記事では、見積依頼 (RFQ) の概要を説明します。 組織は、購入する必要がある品目やサービスに対して、いくつかの仕入先を競合させてより良い条件を得ようとする場合に RFQs を発行します。
 author: GalynaFedorova
 ms.date: 10/05/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3de48c03ac73ee164dea0c329b2595db21c841cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 89abf82879ab08f2341ce5b14e6af1d5c42140b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671957"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895586"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>見積依頼 (RFQ) の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、見積依頼 (RFQs) の概要を説明します。 組織は、購入する必要がある品目やサービスに対して、いくつかの仕入先を競合させてより良い条件を得ようとする場合に RFQs を発行します。 RFQ で、仕入先に指定した品目の数量の価格や配送時間を提供するように求めます。
+この記事では、見積依頼 (RFQ) の概要を説明します。 組織は、購入する必要がある品目やサービスに対して、いくつかの仕入先を競合させてより良い条件を得ようとする場合に RFQs を発行します。 RFQ で、仕入先に指定した品目の数量の価格や配送時間を提供するように求めます。
 また、仕入先に、送料などの雑費があるか、大型注文や仕入先請求書の早期支払に対して割引を提供するかどうかを問い合わせることもできます。
 
 RFQ プロセスは次のタスクで構成されています。
@@ -45,7 +45,7 @@ RFQ プロセスは次のタスクで構成されています。
 
 RFQケースを準備し、仕入先を追加したら、RFQ ケース上の **送信** (**送信および公開** 公的機関向け) を選択します。 RFQ 仕訳は、RFQ を送った各仕入先ごとに生成されます。 各仕入先のレポートをアーカイブに印刷するか、または各仕入先の電子メール アドレスにレポートを送信するように、送信アクションの印刷オプションを構成できます。 さらに、各仕入先の RFQ 仕訳帳を、後でその仕入先に送信または再送信するレポートを生成することにも使用できます。 また、仕入先で入力できる返信シートを生成するように、送信アクションを構成することもできます。
 
-このトピックでは、仕入先コラボレーションが使用されていない際の RFQs を処理するプロセスを説明します。 システムが仕入先コレボレーションに設定される場合、仕入先は直接 Supply Chain Management に入札できます。 詳細は、[顧客と仕入先の協力](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) および [外部仕入先と仕入先の協力](vendor-collaboration-work-external-vendors.md) をご覧ください。
+この記事では、仕入先コラボレーションが使用されていない際の RFQ を処理するプロセスを説明します。 システムが仕入先コレボレーションに設定される場合、仕入先は直接 Supply Chain Management に入札できます。 詳細は、[顧客と仕入先の協力](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) および [外部仕入先と仕入先の協力](vendor-collaboration-work-external-vendors.md) をご覧ください。
 
 送信後に RFQ を修正する必要がある場合は、作成と確定の 2 つの修正アクションを使い、終了した時に RFQ を仕入先へ再送品することができます。
 
@@ -59,7 +59,7 @@ RFQ ケースにスコア基準を追加した場合、RFQ ケースにはスコ
 
 RFQ ケースは最下位と最上位の 2 つの状態があり、**全ての見積依頼** のリスト ページでその状態を見ることができます。 最下位のステータスは RFQ ケースの任意の明細行の最も前進していないステージで、最上位ステータスは RFQ ケースの任意の明細行の最も前進したステージです。 たとえば、3 つの明細行を持つ RFQ ケースが 2 つのベンダーに送信されると、3 つの明細行をもつ 2 つの RFQ があるということです。 すべての明細行は、**送信済** です。 ベンダーのいずれかから入札が開始されると、RFQ 明細行は **受入済** の状態を取得します。 つまり、RFQ ケースの 3 つの明細行のうち、すべてが 1 つの RFQ の **送信済** で、別の RFQ に対しては **受入済** です。 最下位の状態は **送信済、** となり、最上位の状態は **受信済。** となります。
 
-これらのステータスについては、このトピックの後半で、詳しく説明します。
+これらのステータスについては、この記事の後半で詳しく説明します。
 
 ## <a name="setting-up-rfq-functionality"></a>RFQ 機能の設定
 

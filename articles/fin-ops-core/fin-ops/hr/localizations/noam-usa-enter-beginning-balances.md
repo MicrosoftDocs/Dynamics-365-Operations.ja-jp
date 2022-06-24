@@ -1,6 +1,6 @@
 ---
-title: 給与の期首残高を入力します。
-description: 所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。
+title: 給与の期首残高の入力
+description: この記事では、所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。
 author: andreabichsel
 ms.date: 11/20/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a5529e3268727dce022daebb853e50710e5bde84811014febe30e80afee9ed6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d14e7e0772c5b365818d3a8a230abe9f674a077e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721879"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850021"
 ---
 # <a name="enter-payroll-beginning-balances"></a>給与の期首残高の入力
 
 [!include [banner](../../includes/banner.md)]
 
-所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。 この情報は、パートナーが別のシステムから新しい給与実装のデータを転送する場合に役立ちます。 給与の期首残高を入力を準備する上で、次の情報を確認します。
+この記事では、所得コード、控除、福利厚生、および税額の期首残高を入力するための手順を説明します。 この情報は、パートナーが別のシステムから新しい給与実装のデータを転送する場合に役立ちます。 給与の期首残高を入力を準備する上で、次の情報を確認します。
 
 - 従業員レコードがシステムに入力され、利用可能となっている
 - 次のデータを設定し、従業員に割り当てられている

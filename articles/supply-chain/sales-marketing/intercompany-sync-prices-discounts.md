@@ -1,6 +1,6 @@
 ---
 title: 会社間の価格と割引の同期
-description: このトピックでは、会社間の販売注文書と会社間発注書に対する価格と割引の同期について説明します
+description: この記事では、会社間の販売注文書と会社間発注書に対する価格と割引の同期について説明します
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 90fa2244b5947c37b8498d1c70cddf894979f931
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 64130c400212a819f931cc36459667e4d7c83f32
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673637"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905692"
 ---
 # <a name="synchronize-intercompany-prices-and-discounts"></a>会社間の価格と割引の同期
 

@@ -1,6 +1,6 @@
 ---
 title: 購入ポリシーの作成
-description: このトピックでは、購買の業務プロセスに対応する購入ポリシーを作成する方法を説明します。
+description: この記事では、購買の業務プロセスに対応する購入ポリシーを作成する方法を説明します。
 author: GalynaFedorova
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f51c88506044359787257ba0e0a6668213a170d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 011705723466d746fa5b23c5499d03a548f133f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677873"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878848"
 ---
 # <a name="create-purchasing-policies"></a>購入ポリシーの作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、購買の業務プロセスに対応する購入ポリシーを作成する方法を説明します。 購買ポリシーを作成する前に、購買ポリシー パラメーターを設定する必要があります。 購入ポリシーの作成、変更、無効は可能ですが、購入ポリシーの削除はできません。 通常、このタスクを実施するのは、購買マネージャーです。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。
+この記事では、購買の業務プロセスに対応する購入ポリシーを作成する方法を説明します。 購買ポリシーを作成する前に、購買ポリシー パラメーターを設定する必要があります。 購入ポリシーの作成、変更、無効は可能ですが、購入ポリシーの削除はできません。 通常、このタスクを実施するのは、購買マネージャーです。 デモ データの会社 USMF のこの手順を使うか、または独自のデータを使うことができます。
 
 
 ## <a name="set-up-policy-parameters"></a>ポリシー パラメータの設定

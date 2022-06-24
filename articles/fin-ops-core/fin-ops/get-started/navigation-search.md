@@ -1,6 +1,6 @@
 ---
 title: ナビゲーション検索
-description: このトピックでは、検索機能を使用して他のページに移動する方法を説明します。
+description: この記事では、検索機能を使用して他のページに移動する方法を説明します。
 author: aneesmsft
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d45ad1d2a85efa561380912e82d38689fabbe119
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069987"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872681"
 ---
 # <a name="navigation-search"></a>ナビゲーション検索
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069987"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、検索機能を使用して他のページに移動する方法を説明します。
+この記事では、検索機能を使用して他のページに移動する方法を説明します。
 
 アプリケーションには、さまざまなタスクを実行するのに役立ついくつかの領域とページが含まれています。 タスクを完了するために必要なページをすばやく見つけるには、ナビゲーション検索機能を使用します。
 

@@ -1,6 +1,6 @@
 ---
 title: タイル リスト モジュール
-description: このトピックでは、タイル リスト モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: この記事では、タイル リスト モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dd714f29fe2f9acd459be7bda1c0bfac65b72cb0
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 44eb9b82ef9625734c7fe5ccba85207d9f210a00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780796"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905401"
 ---
 # <a name="tile-list-module"></a>タイル リスト モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、タイル リスト モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+この記事では、タイル リスト モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
 タイル リスト モジュールは、カルーセル内ののタイルのコレクションです。 画像とテキストを使用して、製品カテゴリや製品ブランドのマーケティングを行うために使用されます。 たとえば、小売業者が eコマース サイトのホーム ページにタイル リスト モジュールを追加して、売れ筋のカテゴリをすべて販売促進することができます。
 

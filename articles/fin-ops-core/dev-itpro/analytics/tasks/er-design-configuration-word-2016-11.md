@@ -1,6 +1,6 @@
 ---
 title: Excel テンプレートと ER 構成を再利用して Word 形式でレポートを生成
-description: このトピックでは、Excel ブックとしてレポートを生成するように設計されたレポート形式で、Word ドキュメントとしてレポートを生成するように構成する方法について説明します。
+description: この記事では、Excel ブックとしてレポートを生成するように設計されたレポート形式で、Word ドキュメントとしてレポートを生成するように構成する方法について説明します。
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de8286c7612cd588b28cf4667340374906962dde
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1e0fe9ba55be435fb214c9d0885dd4ef942f5081
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324065"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910389"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Excel テンプレートと ER 構成を再利用して Word 形式でレポートを生成
 
@@ -43,7 +43,7 @@ GBSI 社を例に使用して、これらの手順について解説します。
 
 ## <a name="select-the-existing-er-report-configuration"></a>既存の ER レポート コンフィギュレーションを選択します
 
-1. Dynamics 365 Finance で、**組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
+1. Dynamics 365 Finance で、**組織管理** \> **ワークスペース** \> **電子レポート** に移動します。
 2. **Litware, Inc.** 構成プロバイダーが **有効** として選択されていることを確認します。 有効になっていない場合は、[構成プロバイダーを作成して、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) タスク ガイドにある手順に従います。
 3. **コンフィギュレーションをレポートする** を選択します。 OPENXML 形式でレポート出力を生成するように設計された既存の ER 構成を再利用します。
 4. **構成** ページの左側ペインにある構成ツリーで、**支払モデル** を展開し、**サンプル ワークシート レポート** を選択します。

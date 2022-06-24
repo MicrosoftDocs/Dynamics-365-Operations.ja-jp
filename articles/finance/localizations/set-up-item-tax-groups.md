@@ -1,6 +1,6 @@
 ---
 title: 品目の税グループを設定する
-description: このトピックでは、税計算サービスで品目の税グループを設定する方法について説明します。
+description: この記事では、税計算サービスで品目の税グループを設定する方法について説明します。
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 88dd8e2fd9d4d4e5172dcc7b1bd27a70a2f59f03
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 3bc705bc8173ad2bc8ef883e6dc80b0a187314ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883866"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846466"
 ---
 # <a name="set-up-item-tax-groups"></a>品目の税グループを設定する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、税計算サービスで品目の税グループを設定する方法について説明します。 また、品目の税グループ適用ルール マトリックスを設定し、マトリックスで明細行を構成する方法も説明します。
+この記事では、税計算サービスで品目の税グループを設定する方法について説明します。 また、品目の税グループ適用ルール マトリックスを設定し、マトリックスで明細行を構成する方法も説明します。
 
 税計算サービスの品目の税グループの概念は、Microsoft Dynamics 365 Finance の品目の消費税グループの概念に似ています。 これは、税コードのグループです。 税計算サービスは、税グループと品目税グループの共通部分を使用して税コードを決定します。
 

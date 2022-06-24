@@ -1,6 +1,6 @@
 ---
 title: 条件評価
-description: このトピックでは、資産管理の資産に条件評価テンプレートと登録を作成する方法について説明します。
+description: この記事では、資産管理の資産に条件評価テンプレートと登録を作成する方法について説明します。
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cced322dd2f213d8e6025d853edc8472618989b61de7139b28ba1c6bffd3ad2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa326a01bb63bd0b59c0df7a3c751a5242a3dd37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736067"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872097"
 ---
 # <a name="condition-assessment"></a>条件評価
 
@@ -28,7 +28,7 @@ ms.locfileid: "6736067"
 
  
 
-このトピックでは、資産管理の資産に条件評価テンプレートと登録を作成する方法について説明します。 条件評価は定期的に実行され、主な目的は資産に関する条件データを作成および管理することです。 予防的メンテナンスの観点から見ると、現状や残存寿命などの重要な情報を監視することが重要です。 また、定期的に条件評価を行えば、工場の機械の状態を監視および比較することができます。
+この記事では、資産管理の資産に条件評価テンプレートと登録を作成する方法について説明します。 条件評価は定期的に実行され、主な目的は資産に関する条件データを作成および管理することです。 予防的メンテナンスの観点から見ると、現状や残存寿命などの重要な情報を監視することが重要です。 また、定期的に条件評価を行えば、工場の機械の状態を監視および比較することができます。
 
 条件評価は、設備の多くの状態を測定および監視するために使用できます。 例: 機械の振動を測定できます。 さまざまなタイプの機器で資産管理に振動測定値を登録すると、最新の登録評価を検索し、振動測定値を表示できます。
 

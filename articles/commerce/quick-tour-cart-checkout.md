@@ -1,6 +1,6 @@
 ---
-title: 買い物カゴと清算ページの概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce の買い物カゴとチェックアウト ページの概要を示します。
+title: 買い物カゴとチェック アウト ページの概要
+description: この記事には、Microsoft Dynamics 365 Commerce の買い物カゴとチェックアウト ページの概要が含まれます。
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e911a1be1f06fcb3c2af08bab835a2b1ab5590f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853770"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>買い物カゴとチェック アウト ページの概要
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の買い物カゴとチェックアウト ページの概要を示します。
+この記事には、Microsoft Dynamics 365 Commerce の買い物カゴとチェックアウト ページの概要が含まれます。
 
 E コマース Web サイトの買い物カゴのページには、顧客が買い物カゴに追加したすべての品目が表示されます。 買い物カゴのページは、買い物カゴ モジュールを使用して構築されます。 カート モジュールは、カートにある品目を紹介するのに必要なすべてのモジュールをホストするコンテナーです。 また、買い物カゴ モジュールは他のモジュールを使用して、注文集計および顧客注文に適用されたプロモーション コードも表示します。
 

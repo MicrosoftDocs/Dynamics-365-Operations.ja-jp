@@ -1,6 +1,6 @@
 ---
 title: 自由書式の請求書ページからの請求書の TDS 計算
-description: このトピックでは、自由形式の請求書ページを使用して、請求書の源泉徴収税 (TDS) を計算する方法について説明します。
+description: この記事では、自由形式の請求書ページを使用して、請求書の源泉徴収税 (TDS) を計算する方法について説明します。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5a1960974dff90ef5f0cc8eab018351a9e412858
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: b1cf0f5366315884e75a6fee25b88a3aac7d62de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725180"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856614"
 ---
 # <a name="tds-calculation-on-invoices-from-the-free-text-invoice-page"></a>自由書式の請求書ページからの請求書の TDS 計算
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**自由形式の請求書** ページを使用して、請求書の源泉徴収税 (TDS) を計算する方法について説明します。
+この記事では、**自由形式の請求書** ページを使用して、請求書の源泉徴収税 (TDS) を計算する方法について説明します。
 
 1. **売掛金勘定 \> 請求書 \> すべての自由書式の請求書** の順に移動します。
 

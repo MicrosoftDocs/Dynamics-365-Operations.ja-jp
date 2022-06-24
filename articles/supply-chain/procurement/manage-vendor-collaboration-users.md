@@ -1,6 +1,6 @@
 ---
 title: 仕入先コラボレーション ユーザーの管理
-description: このトピックでは、新しい仕入先コラボレーション ユーザーのプロビジョニングの要求方法、および新しい仕入先コラボレーションの連絡先を追加する方法について説明します。
+description: この記事では、新しい仕入先コラボレーション ユーザーのプロビジョニングの要求方法、および新しい仕入先コラボレーションの連絡先を追加する方法について説明します。
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 515d995641f5bbe976643a38c26a46f7d8a115dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 823e92cadc36659264a70132ed1390c7bcf8bc5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678830"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852305"
 ---
 # <a name="manage-vendor-collaboration-users"></a>仕入先コラボレーション ユーザーの管理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、新しい仕入先コラボレーション ユーザーのプロビジョニングの要求方法、および新しい仕入先コラボレーションの連絡先を追加する方法について説明します。 
+この記事では、新しい仕入先コラボレーション ユーザーのプロビジョニングの要求方法、および新しい仕入先コラボレーションの連絡先を追加する方法について説明します。 
 
-Dynamics 365 Supply Chain Management の仕入先コラボレーション インターフェイスは、発注書、請求書、委託販売在庫に関する情報を外部仕入先に公開します。 **仕入先管理者 (外部)** セキュリティ ロールまたは同様の権限を持つ外部仕入先として作業する場合は、新しい仕入先コラボレーションの連絡先を作成して、新しいユーザーがプロビジョニングされるように要求できます。 調達担当者として作業する場合、これらのタスクを実行することもできます。 このトピックでは、このロールは Supply Chain Management のインスタンスを所有する会社内で作業している調達担当者を指します。 外部仕入先である場合の、仕入先コラボレーションの使用方法の詳細については、[顧客との仕入先コラボレーション](vendor-collaboration-work-customers-dynamics-365-operations.md) を参照してください。  
+Dynamics 365 Supply Chain Management の仕入先コラボレーション インターフェイスは、発注書、請求書、委託販売在庫に関する情報を外部仕入先に公開します。 **仕入先管理者 (外部)** セキュリティ ロールまたは同様の権限を持つ外部仕入先として作業する場合は、新しい仕入先コラボレーションの連絡先を作成して、新しいユーザーがプロビジョニングされるように要求できます。 調達担当者として作業する場合、これらのタスクを実行することもできます。 この記事では、このロールは Supply Chain Management のインスタンスを所有する会社内で作業している調達担当者を指します。 外部仕入先である場合の、仕入先コラボレーションの使用方法の詳細については、[顧客との仕入先コラボレーション](vendor-collaboration-work-customers-dynamics-365-operations.md) を参照してください。  
 
 調達担当者である場合の、仕入先コラボレーションの使用方法の詳細については、[外部仕入先との仕入先コラボレーション](vendor-collaboration-work-external-vendors.md) を参照してください。
 

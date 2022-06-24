@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Finance のラーニング カタログ
-description: Dynamics 365 Finance のすべてのトレーニング オプションを見つけます。
+description: Dynamics 365 Finance に関するすべてのトレーニング オプションを確認します。
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -12,14 +12,14 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4b0a96307109674321ebc81aab7d77502a434dd994163232d012627f52d7b409
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7aca911feab04a3b4203811b5d967bc1db43e992
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903073"
 ---
-# <a name="dynamics-365-finance-learning-catalog"></a>Dynamics 365 Finance ラーニング カタログ
+# <a name="dynamics-365-finance-learning-catalog"></a>Dynamics 365 Finance のラーニング カタログ
 
 Dynamics 365 Finance アプリケーションのユーザーとして、ロールに適したオンライン トレーニング、個人ワークショップ、イベントを見つけることができます。
 

@@ -1,6 +1,6 @@
 ---
 title: 現金管理の改善
-description: このトピックでは、Dynamics 365 Commerce の POS で現金管理の改善について説明します。
+description: この記事では、Dynamics 365 Commerce の POS で現金管理の改善について説明します。
 author: anpurush
 ms.date: 05/21/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f878f39e8e9913edbe1da192e199090139a88adb6b7ed9a1e9b779c5748171b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1719e309183042cd7f56be3df8cbbec31cea7c79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849070"
 ---
 # <a name="cash-management-improvements"></a>現金管理の改善
 

@@ -1,6 +1,6 @@
 ---
 title: オンライン機能プロファイルの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce でオンライン機能プロファイルを作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce でオンライン機能プロファイルを作成する方法について説明します。
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d6dcbb5b9ea01035396e90a6809cb1568c3a4fc86def41cf36732588b5046da7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 686bc6440c31f3a4d729f2d92e3e57a1cc7b641f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716197"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895429"
 ---
 # <a name="create-an-online-functionality-profile"></a>オンライン機能プロファイルの作成
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のオンライン機能プロファイルの設定の概要を示します。
+この記事では、Microsoft Dynamics 365 Commerce のオンライン機能プロファイルの設定の概要を示します。
 
 オンライン機能プロファイルは、オンライン チャネルに使用されるさまざまな設定を提供します。 各オンライン チャネルでは、オンライン機能プロファイルを指定する必要があります。
 

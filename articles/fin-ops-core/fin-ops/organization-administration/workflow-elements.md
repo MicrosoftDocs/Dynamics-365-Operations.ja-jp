@@ -1,6 +1,6 @@
 ---
 title: ワークフロー要素
-description: このトピックは、ワークフローを構成するさまざまな要素について説明します。
+description: この記事は、ワークフローを構成するさまざまな要素について説明します。
 author: ChrisGarty
 ms.date: 11/03/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9491b8ee6da69ba93c830bf0721c1d58fd4385b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e145a8ebb082aa2d59c9a05a0cbbf38e9936bae0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070453"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900103"
 ---
 # <a name="workflow-elements"></a>ワークフロー要素
 
@@ -28,7 +28,7 @@ ms.locfileid: "8070453"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックは、ワークフローを構成するさまざまな要素について説明します。
+この記事は、ワークフローを構成するさまざまな要素について説明します。
 
 ワークフローは "要素" から構成されます。 次のセクションでは、要素の各タイプについて説明します。
 

@@ -1,6 +1,6 @@
 ---
-title: 販売時点管理 (POS) での顧客チェックイン通知を有効にする
-description: このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) で顧客チェックイン通知を有効にする方法について説明します。
+title: 販売時点管理 (POS) での顧客のチェックイン通知の有効化
+description: この記事では、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) で顧客チェックイン通知を有効にする方法について説明します。
 author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 95b4e3a1750cf072db919492f7445e87654701da
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ae53657c95128eae793f670bd9dbc31d9fac0fe4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983164"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885148"
 ---
-# <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>販売時点管理 (POS) での顧客チェックイン通知を有効にする
+# <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>販売時点管理 (POS) での顧客のチェックイン通知の有効化
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) で顧客チェックイン通知を有効にする方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) で顧客チェックイン通知を有効にする方法について説明します。
 
 "ピックアップ可能な注文" のメールには、顧客が店内にいて荷物が運ばれてくるのを待っていることを店舗に通知するリンクやボタンを設けることができます。 顧客はチェックイン確認を受け取り、店舗は POS アプリケーションでタスクとして通知を受け取ります。 このタスクは、販売担当者が顧客の車両に注文を届けるためのプロンプトとして機能します。 したがって、顧客は店舗に入る必要はありません。
 
@@ -70,7 +70,7 @@ eコマース サイトで、チェックイン確認エクスペリエンスと
 1. ページをチェックインしますが、公開はしません。
 1. 配送の集荷モードの梱包完了通知タイプで呼び出されるメールテンプレートに、以下のリンクを追加します。 詳細については、[トランザクション イベント用の電子メール テンプレートの作成](email-templates-transactions.md)を参照してください。
 
-    - **生産前 (UAT) 環境の場合:** このトピックの前の方にある[取引のメールテンプレートを構成する](#configure-the-transactional-email-template)セクションにあるコード スニペットを追加します。
+    - **生産前 (UAT) 環境の場合:** この記事の前の方にある [取引のメールテンプレートを構成する](#configure-the-transactional-email-template) セクションにあるコード スニペットを追加します。
     - **運用環境の場合:** 既存の顧客に影響が出ないように、以下のコメント付きコードを追加します。
 
         `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`

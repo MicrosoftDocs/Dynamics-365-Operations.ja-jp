@@ -1,6 +1,6 @@
 ---
 title: 顧客支払に関するインサイト (プレビュー)
-description: このトピックでは、個々の顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、他の方法よりも早くコレクション プロセスを開始することを正当化する状況を特定するのに役立ちます。
+description: この記事では、個々の顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、他の方法よりも早くコレクション プロセスを開始することを正当化する状況を特定するのに役立ちます。
 author: ShivamPandey-msft
 ms.date: 11/06/2019
 ms.topic: overview
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 59613e41eed95c248595be006f13fb2f32854728
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 54655d2b1cfb4b11f32842d4c3cff2f4d8e97ef5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713221"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856802"
 ---
 # <a name="customer-payment-insights-preview"></a>顧客支払に関するインサイト (プレビュー)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、個々の顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、他の方法よりも早くコレクション プロセスを開始することを正当化する状況を特定するのに役立ちます。 
+この記事では、個々の顧客の一般的な支払方法を理解するために役立つ支払インサイト機能について説明します。 この機能を使用すると、他の方法よりも早くコレクション プロセスを開始することを正当化する状況を特定するのに役立ちます。 
 
 ## <a name="overview"></a>概要
 

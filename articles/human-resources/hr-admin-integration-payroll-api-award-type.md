@@ -1,6 +1,6 @@
 ---
 title: 報奨タイプ
-description: このトピックでは、Dynamics 365 Human Resources における報奨タイプのオプションについて説明します。
+description: この記事では、Dynamics 365 Human Resources における報奨タイプのオプションについて説明します。
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 16890c721b60d86fae8dab300e6b997360e59006
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 86e0cc77655c5444423c71d88568f4c7121dfc42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067029"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853048"
 ---
 # <a name="award-type"></a>報奨タイプ
 
@@ -27,7 +27,7 @@ ms.locfileid: "8067029"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources における報奨タイプのオプションについて説明します。
+この記事では、Dynamics 365 Human Resources における報奨タイプのオプションについて説明します。
 
 ## <a name="option-set-award-type"></a>オプション セット: 報奨タイプ
 

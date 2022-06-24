@@ -1,6 +1,6 @@
 ---
 title: B2B eコマース サイトの設定
-description: このトピックでは、Microsoft Dynamics 365 Commerce の企業間 (B2B) eコマース サイトを設定する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の企業間 (B2B) eコマース サイトを設定する方法について説明します。
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 31266f84270f170e172eadea75a90397c5a6e8e6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0bcd864694ff2ad2aa211c927da4d698c0039715
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691921"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881909"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>B2B eコマース サイトの設定
 
 [!include [banner](../../includes/banner.md)]
 
-企業間 (B2B) eコマース サイトは、B2B ユーザーのワークフローを最適化するいくつかの重要な機能を提供します。 このトピックでは、Microsoft Dynamics 365 Commerce の B2B の eコマース サイトを設定する方法について説明します。 B2B に特化したシナリオを有効にするにあたり、構成する必要があるモジュールとサイト設定が示されています。
+企業間 (B2B) eコマース サイトは、B2B ユーザーのワークフローを最適化するいくつかの重要な機能を提供します。 この記事では、Microsoft Dynamics 365 Commerce の B2B の eコマース サイトを設定する方法について説明します。 B2B に特化したシナリオを有効にするにあたり、構成する必要があるモジュールとサイト設定が示されています。
 
 ## <a name="prerequisites"></a>必要条件
 
-- B2B の eコマース サイトを設定するには、このトピックで説明するように、Commerce 本部の特定の機能を有効にして構成する必要があります。
+- B2B の eコマース サイトを設定するには、この記事で説明するように、Commerce headquarters の特定の機能を有効にして構成する必要があります。
 - 製品を見つける、製品の詳細ページ、カート、チェックアウトなどのコア エクスペリエンスには、企業間 (B2C) の eコマース サイトに使用されているものと同じモジュールが使用されます。 サイト作成者は、Dynamics 365 Commerce が対応するすべてのモジュールについてよく理解している必要があります。 詳細については、[モジュール ライブラリの概要](../starter-kit-overview.md)を参照してください。
-- このトピックでは、サイト作成者が eコマース サイトの B2B 機能を有効にできるように、Commerce のサイトビルダー、テンプレート、フラグメント、ページの基本を理解していることを前提としています。
+- この記事では、サイト作成者が eコマース サイトの B2B 機能を有効にできるように、Commerce のサイト ビルダー、テンプレート、フラグメント、ページの基本を理解していることを前提としています。
 
 ## <a name="site-level-settings"></a>サイト レベルの設定
 

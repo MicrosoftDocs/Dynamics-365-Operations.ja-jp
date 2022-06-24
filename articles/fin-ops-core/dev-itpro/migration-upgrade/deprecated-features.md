@@ -1,6 +1,6 @@
 ---
 title: 以前のリリースの削除済みまたは非推奨の機能
-description: このトピックでは、Dynamics 365 for Finance and Operations と以前のリリースから削除された機能、または削除される予定だった機能について説明します。
+description: この記事では、Dynamics 365 for Finance and Operations と以前のリリースから削除された機能、または削除される予定だった機能について説明します。
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d8c79057c157f9f0244ea11ad5c3563dcdb21a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063240"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866188"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>以前のリリースの削除済みまたは非推奨の機能
 
@@ -28,9 +28,9 @@ ms.locfileid: "8063240"
 
 
 > [!IMPORTANT]
-> このトピックは現在更新されていません。 財務と運用アプリから削除済みまたは非推奨の機能の現在の一覧を表示するには、使用ているアプリに関連する **削除済みまたは非推奨の機能** コンテンツを検索します。
+> この記事は現在更新されていません。 財務と運用アプリから削除済みまたは非推奨の機能の現在の一覧を表示するには、使用ているアプリに関連する **削除済みまたは非推奨の機能** コンテンツを検索します。
 
-このトピックでは、Dynamics 365 for Finance and Operations とその製品の以前のリリースから削除された機能、または推奨されていない機能について説明します。
+この記事では、Dynamics 365 for Finance and Operations とその製品の以前のリリースから削除された機能、または推奨されていない機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

@@ -1,6 +1,6 @@
 ---
 title: 周辺機器
-description: このトピックでは、コマース周辺機器に関連する概念を説明します。
+description: この記事では、コマース周辺機器に関連する概念を説明します。
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 76ce17777a2d13b46e5faed96dbde5e0d93782eb
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462244"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880084"
 ---
 # <a name="peripherals"></a>周辺機器
 
 [!include[banner](includes/banner.md)]
 
-このトピックでは、店舗機器に関連する概念を説明します。 周辺機器を販売時点管理 (POS) と接続するさまざまな方法、および POS との接続の管理を担当するコンポーネントについて説明します。
+この記事では、店舗機器に関連する概念を説明します。 周辺機器を販売時点管理 (POS) と接続するさまざまな方法、および POS との接続の管理を担当するコンポーネントについて説明します。
 
 ## <a name="concepts"></a>概念
 
@@ -55,7 +55,7 @@ Android 用 Modern POS は Android ベース バージョンの Modern POS で�
 
 ### <a name="pos-peripherals"></a>POS 周辺機器
 
-POS 周辺機器は、POS 機能用に明示的にサポートされているデバイスです。 これらの周辺機器は、特定のクラスに分けられます。 これらのクラスに関する詳細については、このトピックの「デバイス クラス」セクションを参照してください。
+POS 周辺機器は、POS 機能用に明示的にサポートされているデバイスです。 これらの周辺機器は、特定のクラスに分けられます。 これらのクラスに関する詳細については、この記事の「デバイス クラス」セクションを参照してください。
 
 ### <a name="hardware-station"></a>ハードウェア ステーション
 

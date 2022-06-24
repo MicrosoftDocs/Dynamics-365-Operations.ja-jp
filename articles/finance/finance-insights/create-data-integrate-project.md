@@ -1,6 +1,6 @@
 ---
 title: データ統合プロジェクトの作成
-description: このトピックでは、データ統合プロジェクトの作成方法について説明します。
+description: この記事では、データ統合プロジェクトの作成方法について説明します。
 author: ShivamPandey-msft
 ms.date: 05/06/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4d69ffcb6ccfcc7bae2891f2539941f7b6bbf86e
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 4ff4f88c6c5d55d853aebd7d437bfb107292fb2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722887"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876243"
 ---
 # <a name="create-a-data-integration-project"></a>データ統合プロジェクトの作成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、データ統合プロジェクトの作成方法について説明します。
+この記事では、データ統合プロジェクトの作成方法について説明します。
 
 1. Microsoft Dynamics 365 Finance にサインインします。
 2. **ワークスペース \> データ管理** に移動し、**データ エンティティ** を選択します。 すべてのデータ エンティティが更新されるまで待機し、次のステップに進みます。

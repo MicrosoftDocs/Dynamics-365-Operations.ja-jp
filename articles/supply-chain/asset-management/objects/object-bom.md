@@ -1,6 +1,6 @@
 ---
 title: 資産 BOM
-description: このトピックでは、資産管理の資産部品表 (BOM) について説明します。
+description: この記事では、資産管理の資産部品表 (BOM) について説明します。
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751988"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882782"
 ---
 # <a name="asset-boms"></a>資産 BOM
 
@@ -28,7 +28,7 @@ ms.locfileid: "6751988"
 
  
 
-このトピックでは、資産管理の資産部品表 (BOM) について説明します。 **資産 BOM** ページは、全有効期間中に使用される資産すべての品目の一覧 (予備部品およびその他の品目) を表示します。 新しい資産を作成するときは、設定手順の一部として資産 BOM の設定を考慮する必要があります。 これにより、作成日から資産の品目履歴を追跡することができます。
+この記事では、資産管理の資産部品表 (BOM) について説明します。 **資産 BOM** ページは、全有効期間中に使用される資産すべての品目の一覧 (予備部品およびその他の品目) を表示します。 新しい資産を作成するときは、設定手順の一部として資産 BOM の設定を考慮する必要があります。 これにより、作成日から資産の品目履歴を追跡することができます。
 
 メンテナンス ジョブが完了し、品目消費がワーク オーダーに登録され、資産で使用される予備部品およびその他の品目の消費を追跡できます。 この機能により、すべての資産の品目消費レコードを完全に保管できます。 たとえば、レコードを使用して、特定の予備部品が頻繁に交換されるかどうかを監視、または資産で現在使用されている予備部品やその他の品目を追跡できます。
 

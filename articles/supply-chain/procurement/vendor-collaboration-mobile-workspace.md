@@ -1,6 +1,6 @@
 ---
 title: 仕入先コラボレーションのモバイル ワークスペース
-description: このトピックでは、[仕入先コラボレーション] モバイル ワークスペースに関する情報を提供します。 このワークスペースでは、仕入先が、承認のために送信された発注書に関する最新の状態を保つことができるようにします。 新規または更新された発注書および連絡先に関する情報を閲覧することもできます。
+description: この記事では、[仕入先コラボレーション] モバイル ワークスペースに関する情報を提供します。 このワークスペースでは、仕入先が、承認のために送信された発注書に関する最新の状態を保つことができるようにします。 新規または更新された発注書および連絡先に関する情報を閲覧することもできます。
 author: GalynaFedorova
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 97352ca89cef77b9320f17af5a1dbe6a00df2dd6
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811717"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851655"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>仕入先コラボレーションのモバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-このトピックでは、**仕入先コラボレーション** モバイル ワークスペースに関する情報を提供します。 このワークスペースでは、仕入先が、承認のために送信された発注書に関する最新の状態を保つことができるようにします。 新規または更新された発注書および連絡先に関する情報を閲覧することもできます。
+この記事では、**仕入先コラボレーション** モバイル ワークスペースに関する情報を提供します。 このワークスペースでは、仕入先が、承認のために送信された発注書に関する最新の状態を保つことができるようにします。 新規または更新された発注書および連絡先に関する情報を閲覧することもできます。
 
 このモバイル ワークスペースは、財務と運用 (Dynamics 365) モバイル アプリで使用するためのものです。
 
@@ -97,7 +97,7 @@ Microsoft Dynamics 365 for Operations バージョン 1611 およびプラット
 </tr>
 <tr class="even">
 <td>仕入先のユーザーは、Web クライアントで仕入先コラボレーション Web インターフェイスにアクセスし、仕入先コラボレーション ユーザーを設定する必要があります。</td><td>購買担当者およびシステム管理者</td>
-<td>仕入先コラボレーション Web インターフェイスの設定および作業では、以下のトピックでの手順に従います。
+<td>仕入先コラボレーション Web インターフェイスの設定および作業では、以下の記事での手順に従います。
 <ul>
 <li><a href="vendor-collaboration-work-external-vendors.md">外部仕入先との作業のために仕入先コラボレーションを使用</a></li>
 <li><a href="manage-vendor-collaboration-users.md">仕入先コラボレーション ユーザーの管理</a></li>

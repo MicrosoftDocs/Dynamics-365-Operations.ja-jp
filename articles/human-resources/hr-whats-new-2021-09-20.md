@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能と変更された機能 2021 年 9 月 20 日
-description: このトピックでは、2021 年 9 月 20 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2021 年 9 月 20 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 09/20/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a3fd8705c7735cb3c0945f71651fafa767a7addf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 47a46b7210b718aea7ec737971cb826eb5d0652d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691585"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858101"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-20-2021"></a>Dynamics 365 Human Resources の新機能と変更された機能 2021 年 9 月 20 日
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Microsoft Dynamics 365 Human Resources の新機能、変更された機能または間もなく公開される機能について説明します。
+この記事では、Microsoft Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -49,9 +49,9 @@ ms.locfileid: "8691585"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新する可能性があります:
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 問題 | 説明 |
+| 問題の番号 | 問題 | Description |
 |---|---|---|
 | 619774 | 住所の説明への編集は、リアルタイムでは Dataverse に同期されません。 | 作業者の住所の説明を編集しても、更新された説明が Dataverse にリアルタイムでは同期されません。 **ロジスティクスの場所** のテーブルのサブスクリプションが更新され、更新が送信されます。 |
 | 614603| **作業者** ページで **作業者の人事アクション** パラメーターが選択されていない場合のエラー。 | 新規の作業者を雇用するとき、または **作業者** ページに移動するとき、**人事アクション** がオフになっていても、「フィールドの **人事アクションタイプ** を入力する必要があります」というエラーが表示されます。 |

@@ -1,6 +1,6 @@
 ---
 title: 在庫金額レポート
-description: このトピックでは、在庫金額レポートを設定、生成、使用する方法を説明します。 これらのレポートは、在庫の物理的数量および金額と財務上の数量および金額に関する詳細を提供します。
+description: この記事では、在庫金額レポートを設定、生成、使用する方法を説明します。 これらのレポートは、在庫の物理的数量および金額と財務上の数量および金額に関する詳細を提供します。
 author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 4f710ff308bac42a284cd506143dd0ae21ff2ec7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3128abb25fdb8f8e01b4d1fe153f5b5fff6cb706
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676162"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854561"
 ---
 # <a name="inventory-value-reports"></a>在庫金額レポート
 

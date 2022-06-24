@@ -1,6 +1,6 @@
 ---
 title: 新しい製品階層の作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce で新しい製品階層を作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で新しい製品階層を作成する方法について説明します。
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 68f6bc5b30cd4d7f7eea05233348b10608a4d6e63d4b8508bdb2088f88c445dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 25cfd81e9163ae2da3cb916c88040204f31dc389
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745995"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887039"
 ---
 # <a name="create-a-new-product-hierarchy"></a>新しい製品階層の作成
 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で新しい製品階層を作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce で新しい製品階層を作成する方法について説明します。
 
 ## <a name="overview"></a>概要
 

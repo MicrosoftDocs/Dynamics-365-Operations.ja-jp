@@ -1,6 +1,6 @@
 ---
 title: POS でシリアル番号管理された製品の返品
-description: このトピックでは、Microsoft Dynamics 365 Commerce POS (POS) アプリケーションの返品プロセスの一部としてシリアル番号が付された品目を検証するための機能について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce POS (POS) アプリケーションの返品プロセスの一部としてシリアル番号が付された品目を検証するための機能について説明します。
 author: hhainesms
 ms.date: 06/01/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 179d66e19c7fa81d587ea920b1c71468ec070177d7e7e68e45c2b58da2f9f5af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2af301180dc2284400b887ce36357660bdd86fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716351"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860324"
 ---
 # <a name="return-serial-numbercontrolled-products-in-pos"></a>POS でシリアル番号管理された製品の返品
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce POS (POS) アプリケーションの返品プロセスの一部としてシリアル番号が付された品目を検証するための機能について説明します。
+この記事では、Microsoft Dynamics 365 Commerce POS (POS) アプリケーションの返品プロセスの一部としてシリアル番号が付された品目を検証するための機能について説明します。
 
 > [!NOTE]
 > Commerce バージョン 10.0.20 リリース以降では、**POS での統合返品処理エクスペリエンス** という新しい機能が利用可能です。 POS での返品注文処理時にシリアル番号の検証を使用するには、この機能を有効にする必要があります。 この機能が有効な場合に提供される他の機能の詳細については、[POS での返品の作成](POS-returns.md)を参照してください。

@@ -1,6 +1,6 @@
 ---
 title: ADDDAYS ER 関数
-description: このトピックでは、ADDDAYS 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、ADDDAYS 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 12/03/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8877bf5a1b6c06e1a25fa9ddaca9c3b039bd2e4d01f39eea9065125977f73e9a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7cf2031c042ae93512cc85afe6a1b51558f6c8f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740338"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858744"
 ---
 # <a name="adddays-er-function"></a>ADDDAYS ER 関数
 

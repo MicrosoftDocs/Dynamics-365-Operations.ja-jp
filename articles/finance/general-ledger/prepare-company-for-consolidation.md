@@ -1,6 +1,6 @@
 ---
 title: 連結プロセスで使用する法人を準備する
-description: 連結の過程では、複数の法人勘定セットのトランザクションを 1 つの法人勘定セットにまとめます。 このトピックでは、連結に向けて法人を準備する方法について説明します。
+description: 連結の過程では、複数の法人勘定セットのトランザクションを 1 つの法人勘定セットにまとめます。 この記事では、連結に向けて法人を準備する方法について説明します。
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0ef6736046748b92357c41d27eeedfc88c610d33
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2a3d4645c79ec30df2bbb7a32a82a59fdb7016e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722041"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894029"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>連結プロセスで使用する法人を準備する
 
 [!include [banner](../includes/banner.md)]
 
-連結の過程では、複数の法人勘定セットのトランザクションを 1 つの法人勘定セットにまとめます。 このトピックでは、連結に向けて法人を準備する方法について説明します。
+連結の過程では、複数の法人勘定セットのトランザクションを 1 つの法人勘定セットにまとめます。 この記事では、連結に向けて法人を準備する方法について説明します。
 
 > [!NOTE]
 > 複数の法人の決算を連結形式でまとめるには、Management Reporter for Microsoft Microsoft Dynamics 365 Finance を使用することをお勧めします。 Management Reporter を使用すると、法人間の連結財務レポートを作成したり、Excel を使用して他のソースから連結データをインポートしたり、Dynamics 365 Finance で連結処理を実行しなくても、金額を任意の数の報告通貨に変換したりすることができます。

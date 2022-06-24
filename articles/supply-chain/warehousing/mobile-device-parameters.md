@@ -1,6 +1,6 @@
 ---
 title: グローバル モバイル デバイス パラメーター
-description: このトピックでは、[倉庫管理パラメーター] ページでモバイル デバイスを設定する方法について説明します。
+description: この記事では、[倉庫管理パラメーター] ページでモバイル デバイスを設定する方法について説明します。
 author: Mirzaab
 ms.date: 08/13/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ae04c86ff1eafb649fcef7c34ace66bdc3e5cb8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6e03414edd9243fcc4156195928455b30a7cee9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679168"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847762"
 ---
 # <a name="global-mobile-device-parameters"></a>グローバル モバイル デバイス パラメーター
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、システムのモバイル デバイスとのやり取りに影響を与えるグローバルな Warehouse Management パラメーターの設定方法について説明します。
+この記事では、システムのモバイル デバイスとのやり取りに影響を与えるグローバルな Warehouse Management パラメーターの設定方法について説明します。
 
 倉庫作業者の設定方法の詳細については、[倉庫作業者の管理](manage-warehouse-workers.md)を参照してください。 モバイル デバイスにおけるライセンス プレートの取扱いについての詳細については、[Warehouse Management App を介したライセンス プレートの受領](warehousing-mobile-device-app-license-plate-receiving.md) を参照してください。 棚卸プロセスの詳細については、[循環棚卸](cycle-counting.md)および[循環棚卸のサンプル例](cycle-counting-scenarios.md)を参照してください。
 
 ## <a name="open-the-warehouse-management-parameters-page"></a>倉庫管理パラメーターのページを開く
 
-**倉庫管理パラメーター** ページを開くには、**倉庫管理 \> 設定 \> 倉庫管理パラメーター** にアクセスします。 このトピックの次のセクションで示されている方法で、モバイルデバイスの作業に関連するフィールドを設定します。
+**倉庫管理パラメーター** ページを開くには、**倉庫管理 \> 設定 \> 倉庫管理パラメーター** にアクセスします。 この記事の次のセクションで示されている方法で、モバイル デバイスの作業に関連するフィールドを設定します。
 
 ## <a name="mobile-device-fasttab-on-the-general-tab"></a>[全般] タブの [モバイル デバイス] クイック タブ
 

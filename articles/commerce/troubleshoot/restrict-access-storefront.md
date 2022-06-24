@@ -1,6 +1,6 @@
 ---
 title: テストまたは開発中の店舗へのアクセスを制限する
-description: このトピックでは、内部のテストまたは開発を行っている間に Microsoft Dynamics 365 Commerce の店舗へのアクセスを制限する方法について説明します。
+description: この記事では、内部のテストまたは開発を行っている間に Microsoft Dynamics 365 Commerce の店舗へのアクセスを制限する方法について説明します。
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: db3317c01cab2e123f3c2927c359f9e00b98bd8a2d5e851c2c20cb4763db1c49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77b652aafa6aea807ab11fe02209bc7de43fa446
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716786"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898887"
 ---
 # <a name="restrict-access-to-a-storefront-during-testing-or-development"></a>テストまたは開発中の店舗へのアクセスを制限する
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、内部のテストまたは開発を行っている間に Microsoft Dynamics 365 Commerce の店舗へのアクセスを制限する方法について説明します。
+この記事では、内部のテストまたは開発を行っている間に Microsoft Dynamics 365 Commerce の店舗へのアクセスを制限する方法について説明します。
 
 ## <a name="description"></a>説明
 

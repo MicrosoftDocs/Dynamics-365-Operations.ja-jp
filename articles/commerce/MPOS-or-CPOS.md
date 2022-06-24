@@ -1,6 +1,6 @@
 ---
-title: Store Commerce か クラウド POS かの選択
-description: このトピックでは、Store Commerce とクラウド POS の主な違いについて説明し、Dynamics 365 Commerce を実装する小売業者が要件を最適な方法で選択するために考慮すべきさまざまな要因について説明します。
+title: Store Commerce または Cloud POS を選択する
+description: この記事では、Store Commerce とクラウド POS の主な違いについて説明し、Dynamics 365 Commerce を実装する小売業者が要件を最適な方法で選択するために考慮すべきさまざまな要因について説明します。
 author: jblucher
 ms.date: 04/21/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b62e1737bc9e3b9d9e25a7a88e693a9aece80776
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 26f6e94b13b3058ac42c4c7b83dcf7179bae18e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629293"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854009"
 ---
-# <a name="choose-between-store-commerce-and-cloud-pos"></a>Store Commerce か クラウド POS かの選択
+# <a name="choose-between-store-commerce-and-cloud-pos"></a>Store Commerce または Cloud POS を選択する
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Store Commerce とクラウド POS の主な違いについて説明し、Dynamics 365 Commerce を実装する小売業者が要件を最適な方法で選択するために考慮すべきさまざまな要因について説明します。 このトピックでは、Dynamics 365 Commerce を配置する際に考慮すべき要因に対する追加のバックグラウンド、ヒント、およびガイダンスについても実装者に提供されます。 配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。
+この記事では、Store Commerce とクラウド POS の主な違いについて説明し、Dynamics 365 Commerce を実装する小売業者が要件を最適な方法で選択するために考慮すべきさまざまな要因について説明します。 このトピックでは、Dynamics 365 Commerce を配置する際に考慮すべき要因に対する追加のバックグラウンド、ヒント、およびガイダンスについても実装者に提供されます。 配置プロセスの一部としてこのガイドを確認し従うことにより、実装者は、ユーザーの満足度またはパフォーマンスに影響を与える可能性がある問題を回避することができます。
 
 ## <a name="insights"></a>インサイト
 
@@ -44,7 +44,7 @@ Commerce は、次の POS オプションをサポートします。
 いずれにしても、POS (Store Commerce および CPOS) は同じコア アプリケーション コードを共有します。 この点が重要なのは、以下の理由によります。
 
 - ユーザー インターフェイス (UI) は、プラットフォームまたはフォーム ファクターに関係なく一貫しています。
-- ほとんどの機能能力は、プラットフォームまたはフォーム ファクターに関係なく同じです。 ただし、重要な違いがいくつかあります。 これらの違いは、このトピックに記載されています。
+- ほとんどの機能能力は、プラットフォームまたはフォーム ファクターに関係なく同じです。 ただし、重要な違いがいくつかあります。 これらの違いは、この記事に記載されています。
 - 各店舗では、POS バリエーションを組み合わせることができ、同時に実行できます。 たとえば、主要レジスターでは、小売業者は Windows を実行しているコンピューターで Store Commerce を使用できます。 ただし、小売業者は、ブラウザー ベースのターミナルまたはモバイル デバイスを持つレジスターを補うことができます。
 - カスタマイズおよび拡張機能は、プラットフォームやフォーム ファクター間で容易に使用できます。 コア アプリケーション コードが共有されているため、ほとんどのカスタマイズが複数回ではなく 1 回で実装することができます。
 

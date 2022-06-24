@@ -1,6 +1,6 @@
 ---
 title: 複数の割引期間を持つ一部の仕入先支払を決済する
-description: このトピックでは、複数の現金割引を提供する仕入先に対して複数の一部支払が作成されるシナリオについて説明します。
+description: この記事は、複数の現金割引を提供する仕入先に対して複数の一部支払が作成されるシナリオについて説明します。
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d805ce2de866d0073b4bb797eb7ddae0736e8948
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f0599c25d1cd5e07ca5a955ecc96fed2e31383ec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861650"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>複数の割引期間を持つ一部の仕入先支払を決済する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、複数の現金割引を提供する仕入先に対して複数の一部支払が作成されるシナリオについて説明します。 
+この記事は、複数の現金割引を提供する仕入先に対して複数の一部支払が作成されるシナリオについて説明します。 
 
 仕入先 3054 は、Fabrikam に対して請求書の支払が 5 日以内に行われた場合には 2% の現金割引を、14 日以内に行われた場合には 1% の現金割引を提供します。
 

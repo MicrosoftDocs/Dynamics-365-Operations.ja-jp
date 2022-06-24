@@ -1,6 +1,6 @@
 ---
 title: 販売時点管理 (POS) への周辺機器の接続
-description: このトピックでは、Retail POS に周辺機器を接続する方法について説明します。
+description: この記事では、Retail POS に周辺機器を接続する方法について説明します。
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f1c53c7215d3a5a182f345d5e040274ae06f9b12
-ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
+ms.openlocfilehash: ffee75e1713c7c9d31b1d023cd055c2f1a3fc43d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897111"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>販売時点管理 (POS) への周辺機器の接続
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Retail POS に周辺機器を接続する方法について説明します。
+この記事では、Retail POS に周辺機器を接続する方法について説明します。
 
 > [!NOTE]
 > 具体的なインストール手順については、[Retail Hardware Station のコンフィギュレーションおよびインストール](retail-hardware-station-configuration-installation.md) および [Modern POS (MPOS) のコンフィギュレーション、インストール、および有効化](retail-modern-pos-device-activation.md) を参照してください。
@@ -157,7 +157,7 @@ POS レジスターは、主にレジスター自体を介して管理され、�
 
 #### <a name="hardware-profiles"></a>ハードウェア プロファイル
 
-ハードウェア プロファイルは、このトピックの前半でクライアント設定のコンポーネントとして説明しています。 ハードウェア プロファイルは、POS レジまたは共有ハードウェア ステーションに直接割り当てられ、特定の POS レジまたはハードウェア ステーションが使用するデバイスの種類を指定する目的で使用されます。 ハードウェア プロファイルは、支払 SDK との通信に使用される EFT 設定にも使用されます。
+ハードウェア プロファイルは、この記事の前半でクライアント設定のコンポーネントとして説明しています。 ハードウェア プロファイルは、POS レジまたは共有ハードウェア ステーションに直接割り当てられ、特定の POS レジまたはハードウェア ステーションが使用するデバイスの種類を指定する目的で使用されます。 ハードウェア プロファイルは、支払 SDK との通信に使用される EFT 設定にも使用されます。
 
 #### <a name="visual-profiles"></a>視覚プロファイル
 

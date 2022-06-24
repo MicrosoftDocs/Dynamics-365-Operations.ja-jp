@@ -1,6 +1,6 @@
 ---
 title: 輸送管理の概要
-description: このトピックでは、Supply Chain Management の配送管理機能の概要が示されます。
+description: この記事では、Supply Chain Management の配送管理機能の概要が示されます。
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6181d63c9ab447c4892948fe1f3ee41d2680b78d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 12f870c95f28e752c3c3b3dd4161d82815b9954a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671649"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897461"
 ---
 # <a name="transportation-management-overview"></a>輸送管理の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Supply Chain Management の配送管理機能の概要が示されます。
+この記事では、Supply Chain Management の配送管理機能の概要が示されます。
 
 輸送管理では、会社の配送の送受信オーダーの仕入先とルート指定の解決策の識別を使用できるようになります。 たとえば、出荷用の最速のルートまたは最低費用レートを識別できます。 次の表では、輸送管理を使用する主要なシナリオについて説明します。
 

@@ -1,6 +1,6 @@
 ---
 title: 請求金額送信機能を使用して別の店舗から注文を出荷
-description: このトピックでは、請求金額の送信機能について説明します。
+description: この記事では、請求金額の送信機能について説明します。
 author: ashishmsft
 ms.date: 10/10/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-10-10
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 8c9c435c9ef8f692551a216d72a76f8a71b4ce6dc03dc6b13c23364a0aa81662
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d73a21bfe9a284bd6e222e73bb0250648912b230
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746702"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863516"
 ---
 # <a name="ship-orders-from-another-store-by-using-the-charge-send-feature"></a>請求金額送信機能を使用して別の店舗から注文を出荷
 

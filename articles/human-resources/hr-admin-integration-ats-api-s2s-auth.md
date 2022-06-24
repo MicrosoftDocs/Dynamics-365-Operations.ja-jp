@@ -1,6 +1,6 @@
 ---
 title: ATS 統合 API のサーバー間認証
-description: このトピックでは、Dynamics 365 Human Resources 申請者追跡システム (ATS) 統合 API の統合に対するサーバー間認証を設定する方法について説明します。
+description: この記事では、Dynamics 365 Human Resources 申請者追跡システム (ATS) 統合 API の統合に対するサーバー間認証を設定する方法について説明します。
 author: jaredha
 ms.date: 06/30/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: de3dc29c5366996276c02576eba27f7e831e4ccf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743544"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879369"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>ATS 統合 API のサーバー間認証
 
@@ -27,7 +27,7 @@ ms.locfileid: "8743544"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources 申請者追跡システム (ATS) 統合 API のアプリケーション統合に対するサーバー間認証を設定する方法について説明します。 Microsoft Dataverse の仮想テーブルおよび関連するデータにアクセスするためにサービス プリンシパルが管理する必要のあるいくつかのセキュリティの階層があります。 ユーザーに、Microsoft Power Platform の Dataverse 仮想テーブルへのアクセス、および Dynamics 365 Human Resources のデータへのアクセス許可を与える必要があります。
+この記事では、Dynamics 365 Human Resources 申請者追跡システム (ATS) 統合 API のアプリケーション統合に対するサーバー間認証を設定する方法について説明します。 Microsoft Dataverse の仮想テーブルおよび関連するデータにアクセスするためにサービス プリンシパルが管理する必要のあるいくつかのセキュリティの階層があります。 ユーザーに、Microsoft Power Platform の Dataverse 仮想テーブルへのアクセス、および Dynamics 365 Human Resources のデータへのアクセス許可を与える必要があります。
 
 ## <a name="enable-access-to-dataverse-virtual-tables-in-power-platform"></a>Power Platform の Dataverse 仮想テーブルへのアクセスを有効にする
 

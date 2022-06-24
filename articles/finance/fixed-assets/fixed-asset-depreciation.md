@@ -1,6 +1,6 @@
 ---
 title: 固定資産の減価償却
-description: このトピックでは、固定資産の減価償却の概要について説明します。
+description: この記事では、固定資産の減価償却の概要について説明します。
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b4fedee481b4066c81671cf1fca3781c8c75aaeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890983"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874526"
 ---
 # <a name="fixed-asset-depreciation"></a>固定資産の減価償却
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、固定資産の減価償却の概要について説明します。
+この記事では、固定資産の減価償却の概要について説明します。
 
 減価償却は、一般に、貸借対照表の固定資産の価値を減少させる定期処理取引であり、損益勘定では支出として記帳します。 したがって、通常、主勘定を使用して貸借対照表の定期減価償却を貸方に転記します。 相手勘定は、勘定科目の損益部分の勘定です。
 

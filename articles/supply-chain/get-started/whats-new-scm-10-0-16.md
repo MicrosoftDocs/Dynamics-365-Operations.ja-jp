@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Management 10.0.16 の新機能および変更された機能 (2021 年 2 月)
-description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.16 の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 Supply Chain Management 10.0.16 の新機能および変更された機能について説明します。
 author: kamaybac
 ms.date: 11/20/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 323dde332364a26ec5b0d3f48a0d6ae831656108
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474919"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879108"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Dynamics 365 Supply Chain Management 10.0.16 の新機能および変更された機能 (2021 年 2 月)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.16 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.689 のビルド番号が含まれており、次のように使用できます。
+この記事では、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.16 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.689 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2020 年 11 月
 - **リリースの一般提供 (手動更新):** 2021 年 1 月
@@ -49,11 +49,11 @@ ms.locfileid: "7474919"
 
 ## <a name="new-and-updated-documentation-resources"></a>新しいドキュメント リソースおよび更新されたドキュメント リソース
 
-次のヘルプ トピックが最近追加されたか大幅に更新されました。 前のセクションに示したように、このリリースで追加された新しい機能に関連するとは限りませんが、既存の機能をさらに活用するために役立つ場合があります。
+次のヘルプ記事を最近追加、または大幅に更新しました。 前のセクションに示したように、このリリースで追加された新しい機能に関連するとは限りませんが、既存の機能をさらに活用するために役立つ場合があります。
 
 - [制約ベースの製品コンフィギュレーションの属性ベースの販売価格](../pim/attribute-based-product-configurator.md)
 - [雑費の自動配賦](../procurement/automatic-charges-allocation.md)
-- [危険物の概要](../pim/hazmat-overview.md) (および関連トピック)
+- [危険物の概要](../pim/hazmat-overview.md) (および関連記事)
 - [マスター プランの計画最適化への移行](../master-planning/new-master-planning-engine.md)
 - [cXML 拡張機能の購入](../procurement/purchasing-cxml-enhancements.md)
 - [プットアウェイ クラスター](../warehousing/putaway-clusters.md)
@@ -63,9 +63,9 @@ ms.locfileid: "7474919"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.16 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.16 (2021 年 2 月) のプラットフォーム アップデート](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.16 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.16 のプラットフォーム更新プログラム (2021 年 2 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -79,12 +79,12 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.16 には、Platform updates
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>削除済みおよび非推奨の Supply Chain Management 機能
 
-[Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)トピックは、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
+[Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)の記事は、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)の記事に発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

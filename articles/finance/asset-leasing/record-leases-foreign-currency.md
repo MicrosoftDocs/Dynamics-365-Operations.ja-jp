@@ -1,6 +1,6 @@
 ---
 title: 外貨でのリースの記録
-description: このトピックでは、会計またはレポート通貨以外の通貨でのリースの記録方法について説明します。
+description: この記事では、会計またはレポート通貨以外の通貨でのリースの記録方法について説明します。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7da4ddb5939d4f950eb7f8c39a9c56edb2ec4db9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 56c15e648d6aa515192a6f41ba06df6405ca79f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727513"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878105"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>外貨でのリースの記録
 
 [!include [banner](../includes/banner.md)]
 
-会計通貨、またはレポート通貨以外の通貨でのリースの資産リース会計は、**元帳の設定** ページで設定されます。 すべてのリースは、トランザクション通貨で入力する必要があります。 つまり、リース契約で指定された通貨で入力する必要があります。 このトピックでは、会計またはレポート通貨以外の通貨でのリースの記録方法について説明します。
+会計通貨、またはレポート通貨以外の通貨でのリースの資産リース会計は、**元帳の設定** ページで設定されます。 すべてのリースは、トランザクション通貨で入力する必要があります。 つまり、リース契約で指定された通貨で入力する必要があります。 この記事では、会計またはレポート通貨以外の通貨でのリースの記録方法について説明します。
 
 外貨でリースを入力すると、使用権 (ROU) 資産が会計通貨とレポート通貨の両方で償却されます。 これらの通貨は、**元帳の設定** ページでコンフィギュレーションされます。 この動作は、固定資産でも使用されます。 外貨でリースを作成する場合は、**通貨** フィールドでトランザクション通貨を選択します。
 

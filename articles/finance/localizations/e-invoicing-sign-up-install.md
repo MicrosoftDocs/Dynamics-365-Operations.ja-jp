@@ -1,6 +1,6 @@
 ---
 title: 電子請求サービスへの登録およびインストール
-description: このトピックでは、電子請求サービスにサインアップしてインストールする方法についての情報を提供します。
+description: この記事では、電子請求サービスにサインアップしてインストールする方法についての情報を提供します。
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ab16652e4a50dd71a5d0b2b49b4dd79e327f7a8
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 57314058883e60599bc51d91a65b0daeae724bb7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371641"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865529"
 ---
 # <a name="sign-up-for-and-install-the-electronic-invoicing-service"></a>電子請求サービスへの登録およびインストール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、電子請求サービスにサインアップしてインストールする方法についての情報を提供します。 このプロセスには 4 つの手順があります。 手順1 ～ 3 が必須であり、手順 4 はオプションです。
+この記事では、電子請求サービスにサインアップしてインストールする方法についての情報を提供します。 このプロセスには 4 つの手順があります。 手順1 ～ 3 が必須であり、手順 4 はオプションです。
 
 ### <a name="step-1-sign-up-for-regulatory-configuration-service"></a>手順 1: Regulatory Configuration Service にサインインする
 

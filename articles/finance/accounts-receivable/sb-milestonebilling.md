@@ -1,6 +1,6 @@
 ---
 title: マイルストーン テンプレート
-description: このトピックでは、サブスクリプション請求管理でマイルストーン請求機能を設定する方法について説明します。
+description: この記事では、サブスクリプション請求管理でマイルストーン請求機能を設定する方法について説明します。
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ecc4ddbb4d22eefac36f8cf8205d3b6084bd7d9d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d3c2cf751e4998c73bc3816e5b81e8d5963c8e53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856773"
 ---
 # <a name="milestone-billing"></a>マイルストーン請求
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、サブスクリプション請求管理でマイルストーン請求機能のテンプレートを定義する方法について説明します。 マイルストーン テンプレートの各行に対して、配賦割合または金額を定義できます。 その後、マイルストーン請求機能を使用する請求スケジュール品目にマイルストーン テンプレートを割り当てる必要があります。
+この記事では、サブスクリプション請求管理でマイルストーン請求機能のテンプレートを定義する方法について説明します。 マイルストーン テンプレートの各行に対して、配賦割合または金額を定義できます。 その後、マイルストーン請求機能を使用する請求スケジュール品目にマイルストーン テンプレートを割り当てる必要があります。
 
 ## <a name="add-a-template"></a>テンプレートを追加する
 

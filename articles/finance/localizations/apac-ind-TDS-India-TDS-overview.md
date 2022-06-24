@@ -1,6 +1,6 @@
 ---
 title: インドの源泉徴収 (TDS) 概要
-description: このトピックでは、源泉徴収 (TDS) で控除されたインドの税金に関する詳細情報を提供します。 TDS のドキュメントには、この機能の特徴が含まれています。
+description: この記事では、源泉徴収 (TDS) で控除されたインドの税金に関する詳細情報を提供します。 TDS のドキュメントには、この機能の特徴が含まれています。
 author: kailiang
 ms.date: 03/19/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 0947481f27323a53d5ef9c7295d8dda078fb4254
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 7ddcf11013921b5d5e242c9026d332d319ed8169
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720199"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896286"
 ---
 # <a name="indian-tax-deducted-at-source-tds-overview"></a>インドの源泉徴収 (TDS) 概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、源泉徴収 (TDS) で控除されたインドの税金に関する詳細情報を提供します。
+この記事では、源泉徴収 (TDS) で控除されたインドの税金に関する詳細情報を提供します。
 
 TDS のドキュメントには、この機能の特徴が含まれています。 また、TDS の基本設定の実行、トランザクションに関する TDS の計算、TDS 決済プロセスの完了、TDS 証明書番号の記録方法、また TDS の照会、TDS 明細書、TDS 証明書の生成方法についても説明します。 ドキュメントには次のトピックが含まれます:
 

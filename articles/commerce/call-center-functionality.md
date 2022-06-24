@@ -1,6 +1,6 @@
 ---
 title: コール センターの販売機能
-description: このトピックでは、Dynamics 365 Commerce でのコール センターの販売機能の概要を示します。
+description: この記事では、Dynamics 365 Commerce でのコール センターの販売機能の概要を示します。
 author: josaw1
 ms.date: 04/03/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e7b26ab8c6d752b994c280d2bb9cef75060905fde0becec6202d7d1ecb98f47c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7167dbd99da7969bc3887a5980c0df0d22ee35be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714738"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884033"
 ---
 # <a name="call-center-sales-functionality"></a>コール センターの販売機能
 

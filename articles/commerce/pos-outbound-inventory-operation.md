@@ -1,6 +1,6 @@
 ---
-title: POS の出庫在庫操作
-description: このトピックでは、販売時点管理 (POS) の出庫在庫操作の機能について説明します。
+title: POS でのアウトバウンド在庫操作
+description: この記事では、販売時点管理 (POS) の出庫在庫操作の機能について説明します。
 author: hhaines
 ms.date: 07/30/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: dd2c124660643628ca4c19dc3a49366b67f29ad3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581140"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850226"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>POS でのアウトバウンド在庫操作
 
@@ -187,7 +187,7 @@ POS から、新しい移動オーダー ドキュメントを作成できます
 
 完全出荷済の移動オーダーは、**出庫操作** ドキュメント リストの **完了** タブに移動されます。 それで、出庫店舗または倉庫のユーザーには、7日間、読み取り専用モードで表示されたままになります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [POS の入庫在庫操作](pos-inbound-inventory-operation.md)
 

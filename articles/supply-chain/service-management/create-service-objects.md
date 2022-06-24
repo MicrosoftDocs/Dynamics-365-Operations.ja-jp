@@ -1,6 +1,6 @@
 ---
 title: サービス対象の作成
-description: このトピックでは、サービス オブジェクト作成方法の手順について解説します。
+description: この記事では、サービス オブジェクト作成方法の手順について解説します。
 author: sorenva
 ms.date: 02/21/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 585a268f4ebbe7bc8626f028c038d1533812c5e4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b372e7d06fdf25df81b11e74e20a5ff214503a0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674984"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852131"
 ---
 # <a name="create-service-objects"></a>サービス対象の作成  
 
@@ -34,7 +34,7 @@ ms.locfileid: "8674984"
 4. **サービス対象グループ** フィールドで、オブジェクトが属するグループを選択します。 
 5. オプション: サービス対象明細行で品目を選択するか、テンプレート部品表 (BOM) を選択します。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [サービス対象の概要](service-objects.md)
 

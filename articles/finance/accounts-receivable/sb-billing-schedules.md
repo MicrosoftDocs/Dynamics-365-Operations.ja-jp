@@ -1,6 +1,6 @@
 ---
 title: 請求スケジュールの作成
-description: このトピックでは、請求スケジュールの作成、削除、編集方法について説明します。
+description: この記事では、請求スケジュールの作成、削除、編集方法について説明します。
 author: JodiChristiansen
 ms.date: 02/09/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ed31dd96b0115610cfb74aed69f1acc1055bfe56
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1248799f92dc6cbce8528a53cc8a3012d2a67b3c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903395"
 ---
 # <a name="create-billing-schedules"></a>請求スケジュールの作成
 
@@ -83,7 +83,7 @@ ms.locfileid: "8690448"
 2. **請求スケジュール明細行** クイック タブで、削除する明細行を選択し、**削除** を選択します。
 3. **保存** を選択します。
 
-このトピックでは、**請求スケジュール行** クイック タブの明細行に使用できるアクションと詳細について説明します。
+この記事では、**請求スケジュール行** クイック タブの明細行に使用できるアクションと詳細について説明します。
 
 ## <a name="billing-schedule-line-actions"></a>請求スケジュール明細行アクション
 

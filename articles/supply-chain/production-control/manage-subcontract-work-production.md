@@ -1,6 +1,6 @@
 ---
 title: 生産における外注作業の管理
-description: このトピックでは、委託された操作が Dynamics 365 Supply Chain Management でどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
+description: この記事では、委託された操作が Dynamics 365 Supply Chain Management でどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e80efc751ccf9243163d23ed48fd17923326f89
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a0021d409f9f4a9b36effbd80a99766812572d5b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579382"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863798"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>生産における外注作業の管理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、委託された操作が Dynamics 365 Supply Chain Management でどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
+この記事では、委託された操作が Dynamics 365 Supply Chain Management でどのように管理されるかについて説明します。 つまり、リソースに割り当てられた生産操作がベンダーによってどのように管理されるかを説明します。
 
 [生産プロセス](production-process-overview.md) では、ベンダーが所有または管理するリソースによって作業を行うことができます。 通常ベンダーのリソースは、会社自身のリソースの利用可能なキャパシティを超過する需要超過を定期的に均等化するために使用されます。 ベンダーは特定の [リソースの能力](resource-capabilities.md) またはリソースを、低価格で提供することもできます。  
 
@@ -63,7 +63,7 @@ ms.locfileid: "7579382"
 製造指図には多くの作業があり、各作業を別のベンダーに割り当てることができます。 したがって、エンド ツーエンドの製造指図で複数の購買発注が発生する可能性があります。
 
 ## <a name="subcontracting-of-production-flow-activities"></a>生産フロー活動の委託
-[リーン生産](lean-manufacturing-overview.md) ソリューションは、[生産フロー](tasks/create-production-flow-version.md) (タスク ガイド トピック) 活動に関連するサービスとして外注作業をモデル化します。 したがって、この種類の外注は [activity-based subcontracting](activity-based-subcontracting.md) とも呼ばれます。 特殊原価グループ タイプの **直接アウトソーシング** が導入され、外注サービスは完成品の BOM の一部ではありません。 リーン製造を使用する場合、すべてのアクティビティは、1 つまたは複数の生産フロー アクティビティに関連するかんばんによって定義されます。 これまでの説明は、製造指図の説明と同じように思えます。 ただし、製造指図は常に完成品で終了する必要がありますが、半製品を供給するためにかんばんを登録することができます。 新しい製品と BOM レベルを導入する必要はありません。  
+[リーン生産](lean-manufacturing-overview.md) ソリューションは、[生産フロー](tasks/create-production-flow-version.md) (タスク ガイド記事) 活動に関連するサービスとして外注作業をモデル化します。 したがって、この種類の外注は [activity-based subcontracting](activity-based-subcontracting.md) とも呼ばれます。 特殊原価グループ タイプの **直接アウトソーシング** が導入され、外注サービスは完成品の BOM の一部ではありません。 リーン製造を使用する場合、すべてのアクティビティは、1 つまたは複数の生産フロー アクティビティに関連するかんばんによって定義されます。 これまでの説明は、製造指図の説明と同じように思えます。 ただし、製造指図は常に完成品で終了する必要がありますが、半製品を供給するためにかんばんを登録することができます。 新しい製品と BOM レベルを導入する必要はありません。  
 
 かんばんルールは非常に動的なものであるため、生産フロー上で同じ製品のさまざまな供給形態をモデル化できます。 リーン下請けを使用する場合、品目フローと財務フローは厳密に分離されます。 すべての物質フローは、かんばん活動によって表されます。 サービス プロダクトの購買発注とそれらのサービスのレシート転記は、生産フローのかんばんジョブのステータスに基づいて自動化することができます。 かんばんジョブは発注書が作成される前でも開始および完了できます。 外注伝票（購買発注とサービスの購買受領）は、期間とサービスによって集計することができます。 したがって、ベンダーが単一部品フローで外注サービスを提供する反復性の高い業務であっても、購買伝票および明細の数を少なく抑えることができます。
 

@@ -1,6 +1,6 @@
 ---
 title: 一般的なトラブルシューティング
-description: このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
+description: この記事では、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5896b031229c7fe7e02c8ccf038dd2b1a4f2de05
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 620f6f999859eff0ccd8aeb1cff12ddd56fa9926
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614098"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853658"
 ---
 # <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
@@ -22,10 +22,10 @@ ms.locfileid: "8614098"
 
 
 
-このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
+この記事では、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関する一般的なトラブル シューティングの情報を提供します。
 
 > [!IMPORTANT]
-> このトピックで説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
+> この記事で説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Dataverse のプラグイン トレース ログを有効にして確認し、エラーの詳細を表示します
 

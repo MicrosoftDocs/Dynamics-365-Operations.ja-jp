@@ -1,6 +1,6 @@
 ---
 title: 給与職位職務
-description: このトピックでは、Dynamics 365 Human Resources における給与職位職務エンティティに対するクエリの詳細および例を示します。
+description: この記事では、Dynamics 365 Human Resources における給与職位職務エンティティに対するクエリの詳細および例を示します。
 author: jcart
 ms.date: 04/07/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 349479d9e77861b54d879bcfd93f7af0e38cff95
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fa347f4b99adc7c29d69daf62ad2bbfc14726a19
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864086"
 ---
 # <a name="payroll-position-job"></a>給与職位職務
 
@@ -27,9 +27,9 @@ ms.locfileid: "8069835"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の給与職位職務のエンティティについて説明します。
+この記事では、Dynamics 365 Human Resources の給与職位職務のエンティティについて説明します。
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 このエンティティは、特定の固定報酬プランの職位と職務の関係を提供します。
 

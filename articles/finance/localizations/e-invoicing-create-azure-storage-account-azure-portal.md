@@ -1,6 +1,6 @@
 ---
 title: Azure ポータルで Azure ストレージ アカウントを作成する
-description: このトピックでは、電子請求書の Azure ストレージ アカウントを作成する方法について説明します。
+description: この記事では、電子請求書の Azure ストレージ アカウントを作成する方法について説明します。
 author: dkalyuzh
 ms.date: 02/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3d9647e234b3603ef6305ec6031a793b744bbe98
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 4380261140086bcb278162f8dc70b39eaa7078fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371677"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898021"
 ---
 # <a name="create-an-azure-storage-account-in-the-azure-portal"></a>Azure ポータルで Azure ストレージ アカウントを作成する
 

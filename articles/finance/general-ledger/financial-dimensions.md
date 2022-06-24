@@ -1,6 +1,6 @@
 ---
 title: 財務分析コード
-description: このトピックは、財務分析コードのさまざまなタイプと設定方法を説明します。
+description: この記事は、財務分析コードのさまざまなタイプと設定方法を説明します。
 author: aprilolson
 ms.date: 03/07/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1360139a06909c1df922570f6e577d1d310b1c48
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3ad92e006351adbf2494a1b32325d2d4a83b76a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722328"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849992"
 ---
 # <a name="financial-dimensions"></a>財務分析コード
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、財務分析コードのさまざまなタイプと設定方法を説明します。
+この記事は、財務分析コードのさまざまなタイプと設定方法を説明します。
 
 共有勘定科目表の勘定の区分として使用する財務分析コードを作成するには、**財務分析コード** ページを使用します。 財務分析コードには、カスタム分析コードと、エンティティがサポートしている財務分析コードの 2 つのタイプがあります。 カスタム分析コードは法人間で共有され、値はユーザーにより入力され管理されます。 エンティティがサポートしている分析コードでは、顧客または店舗エンティティなどシステムの他の場所で値が定義されます。 エンティティがサポートしている分析コードには、法人間で共有されるものや、会社固有のものがあります。
 

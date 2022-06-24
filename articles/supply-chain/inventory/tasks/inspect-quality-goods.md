@@ -1,6 +1,6 @@
 ---
 title: 商品の品質の調査
-description: このトピックでは、品質指示を処理する方法について示します。
+description: この記事では、品質指示を処理する方法について示します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -14,20 +14,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc2fbbedb608b38c6855fbd48ff0c3e26ee3e0bc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eeb14a3b0a61f34819bdd8d524e65ac214a81c35
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857579"
 ---
 # <a name="inspect-the-quality-of-goods"></a>商品の品質の調査
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、品質指示を処理する方法について示します。 品質検査は、通常、品質検査の担当者により実行されます。
+この記事では、品質指示を処理する方法について示します。 品質検査は、通常、品質検査の担当者により実行されます。
 
-標準のデモ データがインストールされている場合は、そのデータを使用してこのトピックの手順を完了できます。 デモ データを使用するには、開始する前に *USMF* 法人を選択する必要があります。 その後、発注書 *000016* を確認して、製品のレシートを転記する必要があります。 品質指示は自動的に生成されます。
+標準のデモ データがインストールされている場合は、そのデータを使用してこの記事の手順を完了できます。 デモ データを使用するには、開始する前に *USMF* 法人を選択する必要があります。 その後、発注書 *000016* を確認して、製品のレシートを転記する必要があります。 品質指示は自動的に生成されます。
 
 ## <a name="step-1-select-a-quality-order"></a>手順 1: 品質指示を選択する
 

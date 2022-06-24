@@ -1,6 +1,6 @@
 ---
 title: 顧客エイジングのスナップショット
-description: このトピックでは、顧客エイジング スナップショットに関する情報を提供します。 経過期間スナップショットは、ある時点での顧客のグループのエイジングされた残高を計算します。
+description: この記事では、顧客エイジング スナップショットに関する情報を提供します。 経過期間スナップショットは、ある時点での顧客のグループのエイジングされた残高を計算します。
 author: JodiChristiansen
 ms.date: 05/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54db3e53cd31936ce80f0cdf1147535216d0d4b4
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c1a83f2648b52e436d19a11862e58dc33313f341
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902576"
 ---
 # <a name="customer-aging-snapshots"></a>顧客エイジングのスナップショット
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、顧客エイジング スナップショットに関する情報を提供します。 経過期間スナップショットは、ある時点での顧客のグループのエイジングされた残高を計算します。 すべての顧客または顧客プール内の顧客のいずれかに対して経過期間スナップショット レコードを作成します。
+この記事では、顧客エイジング スナップショットに関する情報を提供します。 経過期間スナップショットは、ある時点での顧客のグループのエイジングされた残高を計算します。 すべての顧客または顧客プール内の顧客のいずれかに対して経過期間スナップショット レコードを作成します。
 
 経過期間スナップショットからの情報は、**エイジングした残高** リスト ページと **コレクション** ページに表示されます。 **エイジングした残高** リスト ページを使用する前に、経過期間スナップショットを作成する必要があります。 リスト ページでは、経過期間スナップショットを作成した顧客に対してのみ情報が一覧表示されます。
 

@@ -1,6 +1,6 @@
 ---
-title: POS サインインの Azure Active Directory 認証の構成
-description: このトピックでは、Azure Active Directory を Microsoft Dynamics 365 Commerce 販売時点管理の認証方法として構成する方法について説明します。
+title: POS サインインの Azure Active Directory 認証のコンフィギュレーション
+description: この記事では、Azure Active Directory を Microsoft Dynamics 365 Commerce 販売時点管理の認証方法として構成する方法について説明します。
 author: boycezhu
 ms.date: 04/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 47da2c78cef2bbee324fbc2202898fbabd927c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853931"
 ---
-# <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>POS サインインの Azure Active Directory 認証の構成
+# <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>POS サインインの Azure Active Directory 認証のコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Azure Active Directory (Azure AD) を Microsoft Dynamics 365 Commerce 販売時点管理 (POS) の認証方法として構成する方法について説明します。
+この記事では、Azure Active Directory (Azure AD) を Microsoft Dynamics 365 Commerce 販売時点管理 (POS) の認証方法として構成する方法について説明します。
 
 Microsoft Azure、Microsoft 365、および Microsoft Teams など、他の Microsoft クラウド サービスと共に Dynamics 365 Commerce を使用している小売業者は、通常、アプリケーション間での安全でシームレスなサインイン エクスペリエンスのため、ユーザー資格情報の集中管理に Azure AD を使用します。 Commerce POS に Azure AD 認証を使用するには、最初に Azure AD を Commerce 本社の認証方法として構成する必要があります。
 

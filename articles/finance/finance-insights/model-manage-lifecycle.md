@@ -1,6 +1,6 @@
 ---
 title: モデル管理ライフサイクル
-description: このトピックでは、生成された予測を最適化するために組織の機械学習モデルを管理する方法について説明します。
+description: この記事では、生成された予測を最適化するために組織の機械学習モデルを管理する方法について説明します。
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a7b57bc0322e0f9a78dddfb924e379ac05ffca32
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 526916929e4bc079f9cea82d8ea9f80813e89b83
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722097"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880877"
 ---
 # <a name="model-management-lifecycle"></a>モデル管理ライフサイクル
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、生成された予測を最適化するために組織の機械学習モデルを管理する方法について説明します。
+この記事では、生成された予測を最適化するために組織の機械学習モデルを管理する方法について説明します。
 
 AI モデルをサンドボックス環境でトレーニングしてから、マネージド ソリューションを使用して、運用環境に配置することをお勧めします。 この方法によって、モデルのライフサイクルを管理するための適切なコントロールが確実に設定できるようになります。
 

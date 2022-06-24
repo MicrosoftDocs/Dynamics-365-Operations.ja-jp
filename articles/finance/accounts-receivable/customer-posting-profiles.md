@@ -1,6 +1,6 @@
 ---
 title: 顧客転記プロファイル
-description: このトピックでは、顧客トランザクションの総勘定元帳への転記を転記プロファイルの代わりに制御する、顧客転記プロファイルを説明します。
+description: この記事では、顧客トランザクションの総勘定元帳への転記を転記プロファイルの代わりに制御する、顧客転記プロファイルを説明します。
 author: JodiChristiansen
 ms.date: 12/22/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ed5ab24e37c75222080bd242aa72a39ecb476bf
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d0563040590eefab57706b183281c47a82e46076
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734635"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891698"
 ---
 # <a name="customer-posting-profiles"></a>顧客転記プロファイル
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、顧客トランザクションの総勘定元帳への転記を転記プロファイルの代わりに制御する、顧客転記プロファイルを説明します。
+この記事では、顧客トランザクションの総勘定元帳への転記を転記プロファイルの代わりに制御する、顧客転記プロファイルを説明します。
 
 ## <a name="customer-posting-profiles"></a>顧客転記プロファイル
 

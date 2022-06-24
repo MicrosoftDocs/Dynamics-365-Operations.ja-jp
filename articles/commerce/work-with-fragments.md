@@ -1,6 +1,6 @@
 ---
 title: フラグメントで動作
-description: このトピックでは、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 8824a42e46d94904f50d3f95b486673c231d9828
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896837"
 ---
 # <a name="work-with-fragments"></a>フラグメントで動作 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce でフラグメントを使用する理由、時期、および方法について説明します。
 
 フラグメントを使用すると、サイト全体で再利用する必要があるモジュール コンフィギュレーションに対して、一元的な作成エクスペリエンスを実行できます。 たとえば、ヘッダー、フッター、およびバナーは多くのページに渡って共有されるため、フラグメントとしてコンフィギュレーションされることがよくあります。 サイトの別のページに挿入することができる小さな Web ページとして、フラグメントを考えることができます。 フラグメントには独自のライフサイクルがあります。 つまり、作成ツールでは、独立したエンティティとして作成、参照、更新、削除されるということです。
 

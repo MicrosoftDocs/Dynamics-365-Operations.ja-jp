@@ -1,6 +1,6 @@
 ---
-title: 新しい ER ソリューションを設計してカスタム レポートを印刷する
-description: このトピックでは、電子レポート (ER) を設計してカスタム レポートを印刷する方法について説明します。
+title: カスタム レポートを印刷するための新しい電子申告ソリューションの設計
+description: この記事では、電子レポート (ER) を設計してカスタム レポートを印刷する方法について説明します。
 author: NickSelin
 ms.date: 08/10/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 7194fa9243362d4eb61d6ce706e30a66c9cf3217
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323845"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847491"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>新しい ER ソリューションを設計してカスタム レポートを印刷する
 
@@ -292,7 +292,7 @@ ER 構成 プロバイダーについては、[構成 プロバイダーを作�
 ER の構成に関する詳細情報については、 [電子レポート (ER) の概要](general-electronic-reporting.md#component-versioning) を参照してください。
 
 > [!NOTE]
-> 設定されたデータモデルは、**アンケート** の業務ドメインの概要を表わすものであり、Microsoft Dynamics 365 Finance に固有のアーティファクトとの関係はありません。
+> 設定されたデータ モデルは、**アンケート** の業務ドメインの概要を表わすものであり、Microsoft Microsoft Dynamics 365 Finance に固有のアーティファクトとの関係はありません。
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a><a name="DesignMapping"></a>構成済みのデータモデルで使用するモデル マッピングをデザインする
 

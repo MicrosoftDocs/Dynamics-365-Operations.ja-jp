@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能および変更された機能 (2021 年 3 月 22 日)
-description: このトピックでは、2021 年 3 月 22 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2020 年 22 月 22 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 03/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 13520ca55c98fb1acb6185af393550b12fbc2072
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2cfdd0fc1ca7ba206b0f447ecabd801a5a4e8c57
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859491"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-22-2021"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2021 年 3 月 22 日)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -49,9 +49,9 @@ ms.locfileid: "8693531"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新することがあります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 出庫 |  説明 |
+| 問題の番号 | 問題 |  Description |
 | --- | --- | --- |
 | 554239 | **BusinessProcessTaskTaskGnment** テーブルに関連するエンティティのパフォーマンスの向上 | テーブルに推奨されるインデックスを追加して 、**BusinessProcessTaskTaskGnment** テーブルに関連するエンティティのパフォーマンスを向上させます。 |
 | 566061 | 夜間同期から V2 エンティティのフォールバック コードを削除 | 夜間 Dataverse 同期の V2 フォールバック コードを削除します。フォールバックは不要になったので、フィルター処理された同期が予期した通り動作しなくなりました。 この変更により、Dataverse データ同期の整合性が強化されます。 |

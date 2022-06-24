@@ -1,6 +1,6 @@
 ---
 title: ワークフローの作成の概要
-description: このトピックでは、ワークフローの作成方法を説明します。
+description: この記事では、ワークフローの作成方法を説明します。
 author: ChrisGarty
 ms.date: 07/25/2019
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: abdb8ce3186806ac1b756c9161d53547dd8ae40b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 1343061ba06d13e68a98b05c013867af0a4d07a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864489"
 ---
 # <a name="create-workflows-overview"></a>ワークフローの作成の概要
 
@@ -31,7 +31,7 @@ ms.locfileid: "8067961"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、ワークフローの作成方法を説明します。
+この記事では、ワークフローの作成方法を説明します。
 
 ## <a name="open-the-workflow-editor"></a>ワークフロー エディターを開く
 
@@ -56,7 +56,7 @@ ms.locfileid: "8067961"
 
 1. どのワークフロー要素も選択されていないようにするため、キャンバスをクリックします。
 2. **プロパティ** をクリックして、ワークフローの **プロパティ** ページを開きます。
-3. [ワークフロー プロパティのコンフィギュレーション](configure-workflow-properties.md) トピックで示されている次の手順に従います。
+3. [ワークフロー プロパティのコンフィギュレーション](configure-workflow-properties.md) の記事で示されている次の手順に従います。
 
 ## <a name="configure-the-elements-of-the-workflow"></a>ワークフローの要素のコンフィギュレーション
 

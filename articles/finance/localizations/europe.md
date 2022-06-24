@@ -1,6 +1,6 @@
 ---
 title: 欧州の概要
-description: このトピックは、ヨーロッパの Microsoft Dynamics 365 Finance のドキュメント リソースへのリンクを提供します。
+description: この記事は、ヨーロッパの Microsoft Dynamics 365 Finance のドキュメント リソースへのリンクを提供します。
 author: kfend
 ms.date: 01/15/2022
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 9a9fd88bde02d8ea4f6eeda5e8785366ec0d8e85
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367888"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856521"
 ---
 # <a name="europe-overview"></a>欧州の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックには、ヨーロッパに基本住所を持つ法人の設定に役立つ情報およびリソースへのリンクが含まれます。 
+この記事には、ヨーロッパに基本住所を持つ法人の設定に役立つ情報およびリソースへのリンクが含まれます。 
 
 - [前貸し保有者の概要](emea-advance-holders.md)
  - [前貸し保有者トランザクション](emea-advance-holders-transactions.md)

@@ -1,6 +1,6 @@
 ---
 title: ドイツ向け会計登録サービス統合サンプル
-description: このトピックでは、Microsoft Dynamics 365 Commerce のドイツ向け会計統合サンプルの概要について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce のドイツ向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-5-29
-ms.openlocfilehash: 16079ba5ca830625c4f18df9fe6b5b307217183d
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: a218989263580ea08947d3366b79e3b19b506375
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614047"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867761"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>ドイツ向け会計登録サービス統合サンプル
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のドイツ向け会計統合サンプルの概要について説明します。
+この記事では、Microsoft Dynamics 365 Commerce のドイツ向け会計統合サンプルの概要について説明します。
 
 ドイツのキャッシュ レジスターにおける現地の財政要件を満たすため、ドイツ向け Microsoft Dynamics 365 Commerce 機能には、販売時点管理 (POS) と外部財政登録サービスとの統合例が含まれています。 このサンプルは [会計統合機能](fiscal-integration-for-retail-channel.md) を拡張します。 これは [EFSTA](https://www.efsta.eu/de/) の [EFR (電子会計登録)](https://www.efsta.eu/de/fiskalloesungen/deutschland) ソリューションに基づいており、HTTPS プロトコルによる EFR サービスとの通信を実現します。 Retail ハードウェア ステーション、またはハードウェア ステーションから接続できる別のコンピューターのいずれかで、EFR サービスをホストする必要があります。 このサンプルはソース コード形式で提供され、Retail ソフトウェア開発キット (SDK) に含まれます。
 

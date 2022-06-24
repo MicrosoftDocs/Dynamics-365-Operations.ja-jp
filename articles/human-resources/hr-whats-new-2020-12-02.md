@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources (2020 年 12 月 2 日) の新機能および変更された機能
-description: このトピックでは、2020 年 12 月 2 日の Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: この記事では、2020 年 12 月 2 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 12/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6e02586ad3e6b4428f2ba826851db6ebc3172bdf1760b483032f5159e7864a81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cecef6d2e73b42126b1be100dca52ebd8d9270fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848110"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Dynamics 365 Human Resources (2020 年 12 月 2 日) の新機能および変更された機能
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -52,9 +52,9 @@ ms.locfileid: "6782662"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新することがあります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 出庫 | 説明 |
+| 問題の番号 | 問題 | Description |
 | --- | --- | --- |
 | 514087 | BenefitEligibilityProcessResult には、処理に使用された日時を含める必要があります。 | BenefitEligibity 処理結果に、以前は含まれていなかった前回の処理の datetimestamp が含まれています。 |
 | 526903 | **人事管理の共有パラメーター** で **被指名人の自動選択** がオンになっているときは、扶養者のいるプランでは給付金の登録は失敗します。 | **被指名人の自動選択** オプションで既定の被指名人がオンになっているときに発生する扶養者に対する給付金登録の失敗に関する問題が解決されました。 |

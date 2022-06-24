@@ -1,6 +1,6 @@
 ---
 title: 変動報酬プランの作成
-description: このトピックは、変動報酬を使用し、従業員を変動報酬プランに登録する前に設定する必要があるコンポーネントを説明します。
+description: この記事は、変動報酬を使用し、従業員を変動報酬プランに登録する前に設定する必要があるコンポーネントを説明します。
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 589990c48d115266b57589f905de20572e76a040
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688660"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853077"
 ---
 # <a name="create-variable-compensation-plans"></a>変動報酬プランの作成
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688660"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-変動報酬は賞与または株式報奨などの従業員の不規則な支払を構成します。 このトピックでは、変動報酬に必要なコンポーネントを設定し、従業員を変動報酬プランに登録する方法について説明します。
+変動報酬は賞与または株式報奨などの従業員の不規則な支払を構成します。 この記事では、変動報酬に必要なコンポーネントを設定し、従業員を変動報酬プランに登録する方法について説明します。
 
 従業員の変動報酬金額は、従業員の業績、従業員の報酬レベル、および部門の業績など、さまざまな要因に基づいて計算できます。
 

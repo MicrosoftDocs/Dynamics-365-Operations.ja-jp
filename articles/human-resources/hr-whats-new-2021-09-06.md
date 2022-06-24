@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能と変更された機能 2021 年 9 月 6 日
-description: このトピックでは、2021 年 9 月 6 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2021 年 9 月 6 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 09/06/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 314d836db9b7560c2ed95ad1b9d2eba753e39d2b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 776498b32f8323b1a06f39b518cdc1ae534f9bcc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690585"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872155"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-6-2021"></a>Dynamics 365 Human Resources の新機能と変更された機能 2021 年 9 月 6 日
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Microsoft Dynamics 365 Human Resources の新機能、変更された機能または間もなく公開される機能について説明します。
+この記事では、Microsoft Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -50,9 +50,9 @@ ms.locfileid: "8690585"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新する可能性があります:
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 問題 | 説明 |
+| 問題の番号 | 問題 | Description |
 |---|---|---|
 | 610128 | HcmDiscussionOverallCommentEntity を使用した場合のデータの公開に関するエラー | Excel のワークブックから HcmDiscussionOverralCommentEntity エンティティにデータを公開すると、次のエラーが発生する場合がありました: 「HcmTopicOverrall タイプのデータソース レコードが見つかりません。」 |
 | 589073 | EEO-1 レポートでは、 **性別** フィールドの「該当なし」と空白の値を「女性」の値としてカウントしています。 | **性別** フィールドに **男性** が指定されていない場合、EEO-1 レポートには既定値として **女性** が入力されます。 |

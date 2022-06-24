@@ -1,6 +1,6 @@
 ---
 title: 既存のサイト ページの変更
-description: このトピックでは、Microsoft Dynamics 365 Commerce で既存のサイト ページを変更する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で既存のサイト ページを変更する方法について説明します。
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0039489c266840e5341f2e322fa7783216ac9bb3ebcecff840f591beec9f79c4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ceffb07afc8287e975f48696a059d3cd4ad20ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751546"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848866"
 ---
 # <a name="modify-an-existing-site-page"></a>既存のサイト ページの変更
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で既存のサイト ページを変更する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce で既存のサイト ページを変更する方法について説明します。
 
 ページを変更する必要がある場合は、最初にページ エディターで開きます。 ページが含まれているサイトに移動し、ページの一覧で目的のページを見つけます。 ページが見つからない場合は、オーサリング ツールのリッチ検索機能が使用できます。 正確なページ名を入力するか、最初のいくつかの文字を入力してから、アスタリスク (\*) を入力します。 フィルタ処理されたページの一覧が表示されます。 この一覧を使用して、目的のページを見つけることができます。 正しいページが見つかったら、ページ名を選択し、ページ エディターでページを開きます。
 

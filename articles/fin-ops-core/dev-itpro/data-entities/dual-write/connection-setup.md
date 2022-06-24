@@ -1,6 +1,6 @@
 ---
 title: デュアル書き込みの設定方法に関するガイダンス
-description: このトピックでは、デュアル書き込みの設定でサポートされているシナリオについて説明します。
+description: この記事では、デュアル書き込みの設定でサポートされているシナリオについて説明します。
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6de449b14bcdd82336e3e255bf62ad069d3daaf5
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a0d1b4e1f093874a8fd37cf7aadb331cd1e7adc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873152"
 ---
 # <a name="guidance-for-dual-write-setup"></a>デュアル書き込みの設定方法に関するガイダンス
 
@@ -26,7 +26,7 @@ ms.locfileid: "8061607"
 
 Finance and Operations 環境と Dataverse 環境との間には、デュアル書き込み接続を設定できます。
 
-+ **Finance and Operations 環境** では、**財務と運用アプリ** の基盤となるプラットフォームを提供します (たとえば、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、Dynamics 365 Human Resources)。
++ **財務と運用環境** では、**財務と運用アプリ** の基盤となるプラットフォームを提供します (たとえば、Microsoft Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、Dynamics 365 Human Resources)。
 + **Dataverse 環境** では、**Customer Engagement アプリ** (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 column Service、Dynamics 365 Marketing、および Dynamics 365 Project Service Automation) の基盤となるプラットフォームを提供します。
 
 > [!IMPORTANT]
@@ -78,11 +78,11 @@ Finance and Operations 環境と Dataverse 環境との間には、デュアル�
 3. 3 文字の国際標準化機構 (ISO) 会社コードを使用し、Dataverse データを [Bootstrap](bootstrap-company-data.md) にて実行します。
 4. データを同期するテーブルの **初期同期** 機能を実行します。
 
-例へのリンクや代替のアプローチについては、このトピックで後述する[使用例](#example)のセクションを参照してください。
+例へのリンクや代替のアプローチについては、この記事で後述する[使用例](#example)のセクションを参照してください。
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>データを持つ新しい財務と運用アプリのインスタンスと、新しい Customer Engagement アプリ インスタンス
 
-データを持つ財務と運用アプリの新しいインスタンスと Customer Engagement アプリの新しいインスタンス間にデュアル書き込み接続を設定するには、このトピック前半の[新しい財務と運用アプリ インスタンスと新しい Customer Engagement アプリ インスタンス](#new-new)セクションに記載の手順に従います。 接続の設定が完了したら、データを Customer Engagement アプリに同期する場合には、次の手順に従います。
+データを持つ財務と運用アプリの新しいインスタンスと Customer Engagement アプリの新しいインスタンス間にデュアル書き込み接続を設定するには、この記事前半の[新しい財務と運用アプリ インスタンスと新しい Customer Engagement アプリ インスタンス](#new-new)セクションに記載の手順に従います。 接続の設定が完了したら、データを Customer Engagement アプリに同期する場合には、次の手順に従います。
 
 1. LCS ページから財務と運用アプリを開き、ログインして、**データ管理 \> デュアル書き込み** の順に移動します。
 2. データを同期するテーブルの **初期同期** 機能を実行します。
@@ -91,7 +91,7 @@ Finance and Operations 環境と Dataverse 環境との間には、デュアル�
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>データを持つ新しい財務と運用アプリのインスタンスと、既存の Customer Engagement アプリ インスタンス
 
-データを持つ財務と運用アプリの既存のインスタンスと Customer Engagement アプリの新しいインスタンス間にデュアル書き込み接続を設定するには、このトピック前半の[新しい財務と運用アプリ インスタンスと既存の Customer Engagement アプリ インスタンス](#new-existing)セクションに記載の手順に従います。 接続の設定が完了したら、データを Customer Engagement アプリに同期する場合には、次の手順に従います。
+データを持つ財務と運用アプリの既存のインスタンスと Customer Engagement アプリの新しいインスタンス間にデュアル書き込み接続を設定するには、この記事前半の[新しい財務と運用アプリ インスタンスと既存の Customer Engagement アプリ インスタンス](#new-existing)セクションに記載の手順に従います。 接続の設定が完了したら、データを Customer Engagement アプリに同期する場合には、次の手順に従います。
 
 1. LCS ページから財務と運用アプリを開き、ログインして、**データ管理 \> デュアル書き込み** の順に移動します。
 2. データを同期するテーブルの **初期同期** 機能を実行します。

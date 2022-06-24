@@ -1,6 +1,6 @@
 ---
-title: ワークフロー システムに請求書を送信し、製品受領書行を照合
-description: このトピックでは、仕入先請求書をワークフロー システムに送信し、転記された製品受領書明細行を仕入先請求書に自動的に照合するプロセスについて説明します。
+title: ワークフロー システムに請求書を送信し、製品受領明細行と照合する
+description: この記事では、仕入先請求書をワークフロー システムに送信し、転記された製品受領書明細行を仕入先請求書に自動的に照合するプロセスについて説明します。
 author: abruer
 ms.date: 02/11/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0962ea2bfa28deb3e86620c364feffd209cfc38e
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 960a08eb5e98cac034bbd41335b616ff41bf6fd4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861621"
 ---
-# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>ワークフロー システムに請求書を送信し、製品受領書行を照合
+# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>ワークフロー システムに請求書を送信し、製品受領明細行と照合する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、仕入先請求書をワークフロー システムに送信し、転記された製品受領書明細行を仕入先請求書に自動的に照合するプロセスについて説明します。
+この記事では、仕入先請求書をワークフロー システムに送信し、転記された製品受領書明細行を仕入先請求書に自動的に照合するプロセスについて説明します。
 
 ## <a name="submitting-imported-vendor-invoices-to-the-workflow-system-and-matching-posted-product-receipt-lines-to-pending-vendor-invoice-lines"></a>インポートされた仕入先請求書をワークフロー システムに送信し、転記された製品受領書明細行を保留中の仕入先請求書明細行と照合する
 

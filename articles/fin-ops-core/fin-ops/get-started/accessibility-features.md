@@ -1,6 +1,6 @@
 ---
 title: ユーザー補助機能
-description: このトピックでは、さまざまな障がいを持つユーザーを支援するようにデザインされた機能について説明します。
+description: この記事では、さまざまな障がいを持つユーザーを支援するようにデザインされた機能について説明します。
 author: TLeforMicrosoft
 ms.date: 12/02/2019
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: af17b7933aed2a40d81fbc4e7b79e4e716aaf59b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071061"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881054"
 ---
 # <a name="accessibility-features"></a>ユーザー補助機能
 
@@ -26,7 +26,7 @@ ms.locfileid: "8071061"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、さまざまな障がいを持つユーザーが、このアプリケーションを使用することを支援するようにデザインされた機能について説明します。 たとえば、Microsoft Windows ナレーターなどの資格支援テクノロジーを使用しているユーザーに対する機能があります。
+この記事では、さまざまな障がいを持つユーザーが、このアプリケーションを使用することを支援するようにデザインされた機能について説明します。 たとえば、Microsoft Windows ナレーターなどの資格支援テクノロジーを使用しているユーザーに対する機能があります。
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows ナレーターとキーボード専用アクセス
 

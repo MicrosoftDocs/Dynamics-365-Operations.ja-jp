@@ -1,6 +1,6 @@
 ---
-title: 拡張機能を使用した税統合のデータ フィールドの追加
-description: このトピックでは、X++ 拡張機能を使用して税統合のデータ フィールドを追加する方法について説明します。
+title: 拡張機能を使用した税統合へのデータ フィールドの追加
+description: この記事では、X++ 拡張機能を使用して税統合のデータ フィールドを追加する方法について説明します。
 author: qire
 ms.date: 04/27/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 184012dcc0b68e017bb28d8d73caa9e8415bdbfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695391"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871052"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>拡張機能を使用した税統合のデータ フィールドの追加
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、X++ 拡張機能を使用して税統合のデータ フィールドを追加する方法について説明します。 これらのフィールドは、税サービスの税データ モデルに拡張し、税コードを決定するために使用できます。 詳細については、[税コンフィギュレーションにデータ フィールドを追加する](tax-service-add-data-fields-tax-configurations.md)を参照してください。
+この記事では、X++ 拡張機能を使用して税統合のデータ フィールドを追加する方法について説明します。 これらのフィールドは、税サービスの税データ モデルに拡張し、税コードを決定するために使用できます。 詳細については、[税コンフィギュレーションにデータ フィールドを追加する](tax-service-add-data-fields-tax-configurations.md)を参照してください。
 
 ## <a name="data-model"></a>データ モデル
 
@@ -359,7 +359,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 このコードでは `_destination` が要求の生成に使用されるラッパー オブジェクトであり、`_source` が `TaxIntegrationLineObject` オブジェクトになります。
 
 > [!NOTE]
-> 要求内で **private const str** として使用されるフィールド名を定義します。 文字列は、[税コンフィギュレーションへのデータ フィールドの追加](tax-service-add-data-fields-tax-configurations.md)のトピックで追加したノード名 (ラベルではない) と同じである必要があります。
+> 要求内で **private const str** として使用されるフィールド名を定義します。 文字列は、[税コンフィギュレーションへのデータ フィールドの追加](tax-service-add-data-fields-tax-configurations.md)の記事で追加したノード名 (ラベルではない) と同じである必要があります。
 > 
 > **SetField** メソッドを使用して、**copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** メソッドのフィールドを設定します。 2 番目のパラメータのデータ型は、**文字列** である必要があります。 データ型が **文字列** でない場合、文字列に変換します。
 > データ型が X++ **列挙型** の場合、**enum2Symbol** メソッドを使用して列挙値を文字列に変換することをお勧めします。 税コンフィギュレーションで追加する列挙値は、列挙名と完全に同じにしてください。 次に、列挙値、ラベル、および名前の違いのリストを示します。

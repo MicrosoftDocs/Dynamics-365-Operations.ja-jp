@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
-description: このトピックでは、Dynamics 365 Supply Chain Management から削除された、または削除される予定の機能について説明します。
+description: この記事では、Dynamics 365 Supply Chain Management から削除された、または削除される予定の機能について説明します。
 author: kamaybac
 ms.date: 04/27/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: e7350e697beec42b349082df06b77a89d526c27c
-ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
+ms.openlocfilehash: 949fa0df58bc3338c8bc84ecbd4f2ad17117dd12
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8396527"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865269"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management の削除済みまたは推奨されない機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Dynamics 365 Supply Chain Management の新規削除または非推奨機能が文書化されると更新されます。
+この記事は、Dynamics 365 Supply Chain Management の新規削除または非推奨機能が文書化されると更新されます。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

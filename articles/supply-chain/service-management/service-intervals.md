@@ -1,6 +1,6 @@
 ---
 title: サービス期間
-description: このトピックでは、サービス期間の使用方法について説明します。 サービス合意間隔は、サービス注文を自動的に作成する場合に、サービス契約項目に対してサービス注文明細行が作成される頻度を表します。
+description: この記事では、サービス期間の使用方法について説明します。 サービス合意間隔は、サービス注文を自動的に作成する場合に、サービス契約項目に対してサービス注文明細行が作成される頻度を表します。
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df15340a82bf36f67baa7195e2e318a4216d2c56
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 62708258ac3dca9ac03b44efdc96e3bfd643a255
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675630"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887228"
 ---
 # <a name="service-intervals"></a>サービス期間
 
@@ -87,7 +87,7 @@ ms.locfileid: "8675630"
 
 **サービス注文の作成** ダイアログ ボックスで指定した時間枠内に、サービス注文明細行が 3 行作成されています。 サービス注文明細行は、**サービス合意** ページ (**アクション ウィンドウ** \> **出荷** タブ \>**表示** ボタン) に表示できます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [サービス期間の設定](set-up-service-intervals.md)  
 

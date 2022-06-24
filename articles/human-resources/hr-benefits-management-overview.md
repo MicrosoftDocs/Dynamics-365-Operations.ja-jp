@@ -1,6 +1,6 @@
 ---
-title: 福利厚生の管理の概要
-description: このトピックでは、Dynamics 365 Human Resources の給付金の管理機能の概要を示します。
+title: 給付金の管理の概要
+description: この記事では、Dynamics 365 Human Resources の給付金の管理機能の概要について説明します。
 author: twheeloc
 ms.date: 12/06/2021
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e53a68aed2e4b1e0b0d7797e7326e223c47443f4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687194"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901150"
 ---
 # <a name="benefits-management-overview"></a>福利厚生の管理の概要
 
@@ -44,7 +44,7 @@ ms.locfileid: "8687194"
 
 ## <a name="enable-benefits-management"></a>給付金管理を有効にする
 
-このトピックでは、Human Resources の機能を有効にする方法について説明します。 また、Human Resources の既存の機能が給付金の管理に置き換えられているか、給付金の管理を有効にした後に無効になっている機能についても説明します。
+この記事では、Human Resources の機能を有効にする方法について説明します。 また、Human Resources の既存の機能が給付金の管理に置き換えられているか、給付金の管理を有効にした後に無効になっている機能についても説明します。
 
 > [!IMPORTANT]
 > **実稼働** 環境で福利厚生の管理を有効にした後、無効にすることはできません。 **実稼働** 環境で有効にする前に、**サンドボックス** 環境で福利厚生の管理を有効にしてテストすることをお勧めします。 従来の福利厚生機能と新しい福利厚生の管理機能には大きな違いがあり、追加の設定が必要であり、実稼働前にテストする必要があります。

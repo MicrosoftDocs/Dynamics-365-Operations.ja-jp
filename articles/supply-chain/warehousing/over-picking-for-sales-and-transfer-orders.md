@@ -1,6 +1,6 @@
 ---
 title: 販売注文および移動オーダーの超過ピッキング
-description: このトピックでは、販売注文および移動オーダーの超過ピッキングを有効にする方法について説明します。
+description: この記事では、販売注文および移動オーダーの超過ピッキングを有効にする方法について説明します。
 author: GalynaFedorova
 ms.date: 07/06/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 52a4225efa88a7b9303dd611d5652f59da1612a4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b8bbc7d532f910edfb442831d6c906f253dee06c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678411"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897287"
 ---
 # <a name="over-picking-for-sales-orders-and-transfer-orders"></a>販売注文および移動オーダーの超過ピッキング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、特定の作業者またはすべての作業者が超過ピックする方法を示すシナリオを表示します。 超過ピッキング プロセスにより、ピッキング作業時の超過ピッキングを制御できます。
+この記事では、特定の作業者またはすべての作業者が超過ピックする方法を示すシナリオを表示します。 超過ピッキング プロセスにより、ピッキング作業時の超過ピッキングを制御できます。
 
 倉庫の超過ピッキングは簡単な概念です。 システムでは、作業者が注文に指定されているよりも多くの品目を選択できます。 ただし、移動オーダーまたは販売注文に対して明細行レベルで設定された超過配送限度も考慮されます。 この制限を超えた場合、Warehouse Management アプリは、従業員が超過配送限度を超えている場合に通知します。
 
@@ -41,11 +41,11 @@ ms.locfileid: "8678411"
 > [!IMPORTANT]
 > 超過ピッキング機能は、販売注文と移動オーダーのピッキングと処理にのみ適用されます。 補充は、超過ピッキングをサポートしていません。 補充の作業を実行すると、ユーザーの超過ピックは許可されません。
 
-このトピックのシナリオでは、超過ピック機能を設定および使用する方法を示します。
+この記事のシナリオでは、超過ピック機能を設定および使用する方法を示します。
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>シナリオの前提条件: デモ データを使用可能にする
 
-このトピックのシナリオでは、Microsoft Dynamics 365 Supply Chain Management にて用意されている標準のデモデータに含まれる値とレコードを参照し ます。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を *usmf* に設定します。
+この記事のシナリオでは、Microsoft Dynamics 365 Supply Chain Management にて用意されている標準のデモ データに含まれる値とレコードを参照します。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を *usmf* に設定します。
 
 ## <a name="scenario-setup"></a>シナリオの設定
 

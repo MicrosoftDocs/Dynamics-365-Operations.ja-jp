@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4bae8c038d048d18096eab20150701fd0e47250a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: b48fcfe46dbc8a512a2ff9523b62c3a99d1bcd28
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888096"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>採用による候補者の雇用
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> このトピックの採用機能は採用プロジェクトと呼ばれ、応募者、応募、採用プロジェクトに焦点を当てます。  
+> この記事の採用機能は採用プロジェクトと呼ばれ、応募者、応募、採用プロジェクトに焦点を当てます。  
 
 この手順によって、リクルーターは、特定の採用プロジェクトで雇用申請を提出した申請者を雇用できます。 採用プロジェクトを使用して申請者を雇用すると、新しい作業者レコードが作成され、申請者レコードのステータスは **雇用済** となります。 この手順の作成に使用するデモ データの会社は **USMF** です。
 

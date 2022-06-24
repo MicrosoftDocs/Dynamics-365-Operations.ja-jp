@@ -1,6 +1,6 @@
 ---
 title: ライセンス プレート ラベルのドキュメント ルーティング レイアウト
-description: このトピックでは、書式設定メソッドを使用してラベルに値を印刷する方法について説明します。
+description: この記事では、書式設定メソッドを使用してラベルに値を印刷する方法について説明します。
 author: perlynne
 ms.date: 04/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103893"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847878"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>ライセンス プレート ラベルのドキュメント ルーティング レイアウト
 
@@ -53,7 +53,7 @@ ms.locfileid: "8103893"
 
 ## <a name="turn-on-this-feature-for-your-system"></a>システムでこの機能を有効化する
 
-このトピックで説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*拡張されたライセンス プレート ラベルのレイアウト* 機能を有効にします。 (Supply Chain Management のバージョン10.0.21 では、この機能は既定で有効になっています。 (Supply Chain Management 10.0.25 では、この機能は必須であり、オフにすることはできません。)
+この記事で説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*拡張されたライセンス プレート ラベルのレイアウト* 機能を有効にします。 (Supply Chain Management のバージョン10.0.21 では、この機能は既定で有効になっています。 (Supply Chain Management 10.0.25 では、この機能は必須であり、オフにすることはできません。)
 
 ## <a name="custom-number-formats"></a>カスタム数値形式
 
@@ -129,7 +129,7 @@ Contoso Inc.
 $DisplayMethod()$
 ```
 
-この形式は、このトピックで前述した他のタイプと組み合わせることができます。 たとえば、`DisplayListOfItemsNumbers()` という名前の表示方法があり、このメソッドの最初の品目番号を印刷するとします。 この場合、次のコードを使用できます。
+この形式は、この記事で前述した他のタイプと組み合わせることができます。 たとえば、`DisplayListOfItemsNumbers()` という名前の表示方法があり、このメソッドの最初の品目番号を印刷するとします。 この場合、次のコードを使用できます。
 
 ```dos
 $DisplayListOfItemsNumbers()[1]$

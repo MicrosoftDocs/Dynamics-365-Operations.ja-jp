@@ -1,6 +1,6 @@
 ---
 title: Excel の予算計画テンプレート
-description: このトピックでは、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。
+description: この記事では、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。
 author: panolte
 ms.date: 01/12/2018
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872502"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Excel の予算計画テンプレート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。
+この記事では、予算計画で使用できる Microsoft Excel テンプレートを作成する方法について説明します。
 
-このトピックでは、標準デモ データ セットと管理者ユーザー ログインを使用して予算計画に使用する Excel テンプレートを作成する方法を示します。 予算計画に関する詳細については、[予算計画の概要](budget-planning-overview-configuration.md)を参照してください。 [予算計画](budget-plan.md)チュートリアルに従って、基本モジュールのコンフィギュレーションと使用の原則について参照することもできます。
+この記事では、標準デモ データ セットと管理者ユーザー ログインを使用して予算計画に使用する Excel テンプレートを作成する方法を示します。 予算計画に関する詳細については、[予算計画の概要](budget-planning-overview-configuration.md)を参照してください。 [予算計画](budget-plan.md)チュートリアルに従って、基本モジュールのコンフィギュレーションと使用の原則について参照することもできます。
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>予算計画ドキュメント レイアウトを使用したワークシートの生成
 
-予算計画ドキュメントは、1 つ以上のレイアウトを使用して表示、編集できます。 各レイアウトでは、Excel ワークシートで予算計画データを表示および編集する関連の予算計画ドキュメント テンプレートを使用できます。 このトピックでは、予算計画ドキュメント テンプレートは既存のレイアウト コンフィギュレーションを使用して生成されます。 
+予算計画ドキュメントは、1 つ以上のレイアウトを使用して表示、編集できます。 各レイアウトでは、Excel ワークシートで予算計画データを表示および編集する関連の予算計画ドキュメント テンプレートを使用できます。 この記事では、予算計画ドキュメント テンプレートは既存のレイアウト コンフィギュレーションを使用して生成されます。 
 
 1. **予算計画の一覧** (**予算作成** &gt; **予算計画**) を開きます。 
 2. **新規** をクリックして、新しい予算計画ドキュメントを作成します。 

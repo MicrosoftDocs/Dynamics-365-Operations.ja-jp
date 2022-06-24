@@ -1,6 +1,6 @@
 ---
 title: 評価プロファイル
-description: このトピックでは、評価プロファイルのデータ設定方法について説明します。
+description: この記事では、評価プロファイルのデータ設定方法について説明します。
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2512b79c87a4640a2b31b7699e85d743b451a14c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1f7408574187ddb099181bd2566c46c52307f603
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676442"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850477"
 ---
 # <a name="rating-profiles"></a>評価プロファイル
 
@@ -56,7 +56,7 @@ ms.locfileid: "8676442"
 1. **輸送管理 \> 設定 \> 配送業者 \> 出荷の配送業者** に移動します。
 1. リストで出荷配送業者を選択します。
 1. **評価プロファイル** クイックタブで、**新規** を選択して、評価プロファイルを作成します。
-1. 新しい評価プロファイルのフィールドを設定します。 これらのフィールドは、このトピックの前のセクションで説明したように、**評価プロファイル** ページのフィールドに対応しています。
+1. 新しい評価プロファイルのフィールドを設定します。 これらのフィールドは、この記事の前のセクションで説明したように、**評価プロファイル** ページのフィールドに対応しています。
 
 > [!NOTE]
 > **出荷配送業者** ページで作成したプロファイルは、**評価プロファイル** ページにも表示されます。

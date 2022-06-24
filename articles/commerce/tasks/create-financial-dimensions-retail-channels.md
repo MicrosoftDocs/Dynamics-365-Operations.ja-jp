@@ -13,18 +13,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b98c37ad7695e81dbbd9558217287c868e052d08415d6d5c5d6055b5f9755eac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: caf27d3a5dddae0be7029834dce692f1fbc2fee7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769346"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889345"
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a>小売チャネルの財務分析コードの作成と店舗の分析コード値のコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
-この手順は、分析コード値を使用するコマース チャネルの財務分析コードの作成と店舗の財務分析コード値のコンフィギュレーションのステップについて説明します。 このトピックには、分析コード セットおよび勘定構造の作成などの関連手順は含まれません。 この手順では、デモ データの会社 USRT を使用します。
+この手順は、分析コード値を使用するコマース チャネルの財務分析コードの作成と店舗の財務分析コード値のコンフィギュレーションのステップについて説明します。 この記事には、分析コード セットおよび勘定構造の作成などの関連手順は含まれません。 この手順では、デモ データの会社 USRT を使用します。
 
 1. [総勘定元帳] > [勘定科目表] > [分析コード] > [財務分析コード] に移動します。
 2. [新規] をクリックします。

@@ -1,6 +1,6 @@
 ---
 title: 倉庫のスロッティング
-description: このトピックでは、倉庫のスロッティングについて説明します。 倉庫のスロッティングでは、注文済、予約済、またはリリース済のステータスである注文から、品目および測定単位別に需要を連結できます。 これにより、倉庫管理者は、注文を倉庫にリリースしてピッキング作業を作成する前に、ピッキング場所をインテリジェントに計画できます。
+description: この記事では、倉庫のスロッティングについて説明します。 倉庫のスロッティングでは、注文済、予約済、またはリリース済のステータスである注文から、品目および測定単位別に需要を連結できます。 これにより、倉庫管理者は、注文を倉庫にリリースしてピッキング作業を作成する前に、ピッキング場所をインテリジェントに計画できます。
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e057992b15f0a1fa76a78ef78ea9aeea3c088be9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676302"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897258"
 ---
 # <a name="warehouse-slotting"></a>倉庫のスロッティング
 
@@ -156,7 +156,7 @@ ms.locfileid: "8676302"
 
     - **測定単位層:** _EaBoxPl_
 
-        このフィールドでは、明細行有効な測定単位を定義します。 (詳細については、このトピックの前の[スロッティングの測定単位層の設定](#unit-tiers) セクションを参照してください。)
+        このフィールドでは、明細行有効な測定単位を定義します。 (詳細については、この記事の前の[スロッティングの測定単位層の設定](#unit-tiers) セクションを参照してください。)
 
     - **スロット基準の割り当て:** _数量を考慮_
 

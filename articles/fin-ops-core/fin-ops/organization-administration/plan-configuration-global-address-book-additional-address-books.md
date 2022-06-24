@@ -1,6 +1,6 @@
 ---
-title: グローバル アドレス帳およびその他のアドレス帳の設定
-description: このトピックでは、計画プロセス中に決定する必要のある考慮事項について説明します。
+title: グローバル アドレス帳およびその他のアドレス帳の計画
+description: この記事では、計画プロセス中に決定する必要のある考慮事項について説明します。
 author: msftbrking
 ms.date: 01/13/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b3f6a74c217b0cc7cec784ca6a964ab2caae0c7e9438aee2cc82987a508d63
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 288c96d8c877f5e3b3101080294b2f6cdeb39882
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863162"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>グローバル アドレス帳およびその他のアドレス帳の計画
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、グローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。
+この記事では、グローバル アドレス帳と追加のアドレス帳を設定しコンフィギュレーションする前に、計画プロセス中に決定する必要のある考慮事項について説明します。 決定の中には、組織階層など、製品の他の領域に対して行われている決定を確認する必要があります。
 
 ## <a name="global-address-book"></a>グローバル アドレス帳
 
