@@ -1,6 +1,6 @@
 ---
 title: RFQ 入札価格の入力と比較および契約の授与
-description: このトピックは、見積依頼 (RFQ) への返信を入力したり、入札の記録や比較をしたり、また仕入先の 1 つに契約を授与する方法を説明します。
+description: この記事は、見積依頼 (RFQ) への返信を入力したり、入札の記録や比較をしたり、また仕入先の 1 つに契約を授与する方法を説明します。
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50b403021c347498a9b489a34196e592a2041a11
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d3ef754f2d5d58254a7c6f0e572115f8a2981ad9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677369"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893384"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>RFQ 入札価格の入力と比較および契約の授与
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックは、見積依頼 (RFQ) への返信を入力したり、入札の記録や比較をしたり、また仕入先の 1 つに契約を授与する方法を説明します。 デモ データの会社 **USMF** でこの手順を使用できます。
+この記事は、見積依頼 (RFQ) への返信を入力したり、入札の記録や比較をしたり、また仕入先の 1 つに契約を授与する方法を説明します。 デモ データの会社 **USMF** でこの手順を使用できます。
 
 この手順を開始する前に、少なくとも 2 つの仕入先に送信された、2 つの明細行から成る RFQ が必要になります。 この RFQ を作成するには[見積依頼の作成](create-request-quotation.md)の手順を実行します。 この手順を完了する前に、スコア基準も設定する必要があります。
 

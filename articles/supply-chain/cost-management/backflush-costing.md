@@ -1,6 +1,6 @@
 ---
 title: 一括引き落とし原価計算
-description: このトピックでは、リーン生産に使用される一括引き落とし原価計算の概念について説明します。
+description: この記事では、リーン生産に使用される一括引き落とし原価計算の概念について説明します。
 author: JennySong-SH
 ms.date: 04/10/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: a5b0ac26a1f6b209be7c9d52aaad9bb689a8a656
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 33cb7bf70d8867ccd067144e661c3bdf1c0b778d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674029"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906098"
 ---
 # <a name="backflush-costing"></a>一括引き落とし原価計算
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、リーン生産に使用される一括引き落とし原価計算の概念について説明します。 
+この記事では、リーン生産に使用される一括引き落とし原価計算の概念について説明します。 
 
 リーン生産の原価設定では、一括引き落とし原価計算として知られる原価集計方式を生産フローで使用します。 一括引き落とし原価計算の方法では、消費される直接材料は、生産フローの仕掛品 (WIP) の原価勘定に蓄積されます。 標準原価在庫モデル グループが使用されます。 生産フローから受信する製品は、標準原価で仕掛品から差し引かれます。 一括引き落とし原価計算と標準原価の主な違いは、一括引き落とし原価計算の場合、かんばんまたは完成品ごとに差異を計算しないことです。 代わりに、差異は、一定期間にわたり生産フローあたりで計算されます。 この方法は、材料消費の報告のための真のリーン コンセプトを紹介します。 材料の専用のピッキング済数量は、かんばんまたは製造オーダーにレポートされません。 代わりに、完全なバッチまたは材料取り扱い単位が、生産フローにステージされます。 バッチまたは材料取り扱い単位が空として登録されると、これらは消費されたと宣言されます。 [生産フローの構成](../production-control/lean-manufacturing-modeling-lean-organization.md) によっては、詳細な消費を使用する場合があります。 詳細な消費を使用する前に、組織は、材料が生産フローの仕掛品で消えることを自分でできるようにする必要があります。 定期的一括引き落とし原価計算により、期末における仕掛品の有効値が決定できます。 この決定は、かんばん材料取り扱い単位とかんばん作業状態に基づいています。 有効値と原価グループおよび品目ごとの実際の仕掛品値の誤差は転記され、差異として示されます。
 

@@ -1,6 +1,6 @@
 ---
-title: クラウドおよびエッジのスケール ユニットの倉庫管理ワークロード
-description: このトピックでは、スケール ユニットを有効化して、倉庫管理ワークロードから選択したプロセスを実行できるようにする機能について説明します。
+title: クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
+description: この記事では、スケール ユニットを有効化して、倉庫管理ワークロードから選択したプロセスを実行できるようにする機能について説明します。
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f9839ad9a18eb543734c2ba43a56b568460a64c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384487"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893500"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫管理ワークロード
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> スケール ユニットでワークロードを実行する倉庫では、すべての倉庫管理ビジネス機能が完全にサポートされているわけではありません。 このトピックでは、サポート対象として明示的に説明したプロセスのみを使用してください。
+> スケール ユニットでワークロードを実行する倉庫では、すべての倉庫管理ビジネス機能が完全にサポートされているわけではありません。 この記事では、サポート対象として明示的に説明したプロセスのみを使用してください。
 
 ## <a name="warehouse-execution-on-scale-units"></a>スケール ユニットでの倉庫の実行
 
@@ -184,7 +184,7 @@ Warehouse Management ワークロードは、倉庫管理アプリケーショ�
 >
 > Warehouse Management モバイル アプリをクラウドやエッジ スケールユ ニットに対して動作させるためには、いくつかの手順が必要となります。 詳細については、[Warehouse Management モバイル アプリをクラウドおよびエッジ スケールユニット用に構成する](cloud-edge-workload-setup-warehouse-app.md)を参照してください。
 >
-> スケール ユニットでワークロードを実行する場合、ハブで特定の倉庫に対してサポートされていないプロセスを実行することはできません。 このトピックの後半で説明するテーブルでは、サポートされる機能を示します。
+> スケール ユニットでワークロードを実行する場合、ハブで特定の倉庫に対してサポートされていないプロセスを実行することはできません。 この記事の後半で説明するテーブルでは、サポートされる機能を示します。
 >
 > 選択した倉庫作業タイプは、ハブとスケール ユニットの両方で作成できますが、所有するハブやスケール ユニット (データを作成した展開) でのみ管理できます。
 >

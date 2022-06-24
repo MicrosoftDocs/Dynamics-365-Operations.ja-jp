@@ -1,6 +1,6 @@
 ---
 title: Dayforce との統合のコンフィギュレーション
-description: このトピックでは、Microsoft Dynamics 365 Human Resources および Ceridian Dayforce の統合に必要な構成手順について説明します。
+description: この記事では、Microsoft Dynamics 365 Human Resources および Ceridian Dayforce の統合に必要な構成手順について説明します。
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4e95a78364fcee2c03614e110f9b5983abfde37
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5a5d296dd4c1b09065fc47673dd540d8c122c482
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691335"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896137"
 ---
 # <a name="configure-integration-with-dayforce"></a>Dayforce との統合のコンフィギュレーション
 
@@ -28,7 +28,7 @@ ms.locfileid: "8691335"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Dynamics 365 Human Resources および Ceridian Dayforce 間での統合は、このトピックで説明するいくつかのコンフィギュレーション手順に依存します。 支払の実行を処理する前に、Human Resources および Dayforce の両方で、統合を構成する必要があります。
+Microsoft Dynamics 365 Human Resources および Ceridian Dayforce 間での統合は、この記事で説明するいくつかの構成手順に依存します。 支払の実行を処理する前に、Human Resources および Dayforce の両方で、統合を構成する必要があります。
 
 支払の実行を完了するため Dayforce などのサービスを使用する場合、Human Resources 内の統合を有効にする必要があります。 統合には Human Resources からの固有のデータが必要です。 したがって、Dayforce にマップされているデータが、統合をサポートする方法で Human Resources 内で構成されていることを確認する必要があります。 統合は次の広範なデータ カテゴリを使用します。
 
@@ -37,7 +37,7 @@ Microsoft Dynamics 365 Human Resources および Ceridian Dayforce 間での統�
 - 支払サイクル、支払期間、および所得コードなどの給与データ
 - 作業者データ
 
-このトピックでは、統合を有効にするために実行する必要のある手順について説明し、統合に必要なデータの種類と構成の詳細について説明します。
+この記事では、統合を有効にするために実行する必要のある手順について説明し、統合に必要なデータの種類と構成の詳細について説明します。
 
 ## <a name="enable-the-integration"></a>統合の有効化
 

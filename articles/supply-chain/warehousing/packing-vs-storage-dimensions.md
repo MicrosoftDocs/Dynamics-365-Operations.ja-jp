@@ -1,6 +1,6 @@
 ---
 title: 梱包とストレージへのさまざまな分析コードの設定
-description: このトピックでは、指定した各分析コードを使用するプロセス (梱包、ストレージ、または入れ子になった梱包) を指定する方法を示します。
+description: この記事では、指定した各分析コードを使用するプロセス (梱包、ストレージ、または入れ子になった梱包) を指定する方法について説明します。
 author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 090a6f653b50d8f22a2f34354172f129624813f1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687648"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905489"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>梱包とストレージへのさまざまな分析コードの設定
 
@@ -33,7 +33,7 @@ ms.locfileid: "8687648"
 *梱包製品分析コード* 機能を無効 にした場合でも、*ストレージ* 分析コードがサポートされます。 これらは、Supply Chain Management の **物理分析コード** ページを使用して設定します。 これらの分析コードは、梱包と入れ子になった梱包分析コードが指定されていないすべてのプロセスで使用されます。
 
 *梱包* と *入れ子になった梱包* 分析コードは、**梱包製品分析コード** 機能を有効にした場合に追加される *物理的な製品分析コード* ページを使用 して設定されます。
-このトピックでは、この機能の使い方を説明するシナリオを示します。
+この記事では、この機能の使い方を説明するシナリオについて説明します。
 
 ## <a name="turn-on-the-packaging-product-dimensions-feature"></a>梱包製品分析コード機能をオンにする
 

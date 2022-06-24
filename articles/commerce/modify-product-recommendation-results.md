@@ -1,6 +1,6 @@
 ---
 title: AI-ML ベースの製品推奨事項結果の調整
-description: このトピックでは、人為的知能の機械学習 (AI-ML) に基づいて製品勧告の結果を調整する方法について説明します。
+description: この記事では、人為的知能の機械学習 (AI-ML) に基づいて製品勧告の結果を調整する方法について説明します。
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5374b2ce559134bd26036b06ac6d96a9f5510ab847544707fc9885506aaab547
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74fa013d44e0f113bdf0ce0ca9efeb943926e9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901705"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML ベースの製品推奨事項結果の調整
 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、人為的知能の機械学習 (AI-ML) に基づいて製品推奨事項の結果を調整する方法について説明します。 
+この記事では、人為的知能の機械学習 (AI-ML) に基づいて製品推奨事項の結果を調整する方法について説明します。 
 
 製品の推奨設定を有効にすると、既定の設定が有効になります。これらのパラメーターは、多くのニーズに対して機能する場合があります。 結果が製品の販売活動に適合しているかどうかを、評価するための計画を立てることをお勧めします。 再テストの前に、必要に応じてパラメーターを変更する前に、数日間結果を評価することをお勧めします。 
 

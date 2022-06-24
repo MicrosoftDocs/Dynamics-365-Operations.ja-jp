@@ -1,6 +1,6 @@
 ---
 title: アンケート
-description: このトピックは、アンケートに関する一般情報、およびより詳しい情報へのリンクを提供します。
+description: この記事は、アンケートに関する一般情報、およびより詳しい情報へのリンクを提供します。
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: efe0ac953e5c1cb04044256e799ecfc07cf3eebe
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: de38bcbfc89479d6b643ca5ee256c38c88fa7f69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690753"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897896"
 ---
 # <a name="questionnaires"></a>アンケート
 
@@ -28,7 +28,7 @@ ms.locfileid: "8690753"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックは、アンケートに関する一般情報、およびより詳しい情報へのリンクを提供します。 アンケートとは、多様な目的の情報を収集するために使用される一連の質問です。 アンケートのデザイン、作成、配布、および回答の完了を行い、結果を分析することができます。 
+この記事は、アンケートに関する一般情報、およびより詳しい情報へのリンクを提供します。 アンケートとは、多様な目的の情報を収集するために使用される一連の質問です。 アンケートのデザイン、作成、配布、および回答の完了を行い、結果を分析することができます。 
 
 Microsoft Dynamics 365 Finance で使用できるさまざまな機能を使用して、特定の要件に合わせたアンケートをカスタマイズできます。 アンケートの使用方法の例を挙げます。
 
@@ -40,11 +40,11 @@ Microsoft Dynamics 365 Finance で使用できるさまざまな機能を使用�
 
 次の表は、コア アンケート作業に関する情報へのリンクを示します。 詳細については、リンクをクリックしてください。
 
-| トピック| Description|
+| 一品 | Description|
 |------|------------|
-| [アンケートのデザイン](hr-learning-design-questionnaires.md) | このトピックは、アンケートを設計する方法について説明します。 このデザイン プロセスは、前提条件、回答、質問を設定し、それらをアンケートに組み合わせることを前提にしています。 |
-| [アンケートの配布とスケジューリング](hr-learning-distribute-questionnaires.md) | このトピックは、アンケートを回答者に配布する方法と、アンケートを記入する方法について説明します。 |
-| [アンケート結果の表示と評価](hr-learning-evaluate-questionnaire-results.md) | このトピックは、完了したアンケートの結果を表示および評価する方法について説明します。 |
+| [アンケートのデザイン](hr-learning-design-questionnaires.md) | この記事は、アンケートを設計する方法について説明します。 このデザイン プロセスは、前提条件、回答、質問を設定し、それらをアンケートに組み合わせることを前提にしています。 |
+| [アンケートの配布とスケジューリング](hr-learning-distribute-questionnaires.md) | この記事は、アンケートを回答者に配布する方法と、アンケートを記入する方法について説明します。 |
+| [アンケート結果の表示と評価](hr-learning-evaluate-questionnaire-results.md) | この記事は、完了したアンケートの結果を表示および評価する方法について説明します。 |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

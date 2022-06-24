@@ -1,6 +1,6 @@
 ---
 title: 採用プロセスの管理
-description: このトピック記事では、採用担当者が採用プロセスのステップを追跡するのに使用できる概念について説明します。
+description: この記事では、採用担当者が採用プロセスのステップを追跡するのに使用できる概念について説明します。
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb7cc1db906ba0cd07caaa1d82a12182f78b19ba
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 1ada6dfc9b227c7ae4ca873e8354d1fcc11ecbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735377"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910322"
 ---
 # <a name="manage-recruiting-processes"></a>採用プロセスの管理
 
 > [!IMPORTANT]
-> このトピックの採用機能は採用プロジェクトと呼ばれ、応募者、応募、採用プロジェクトに焦点を当てます。 
+> この記事の採用機能は採用プロジェクトと呼ばれ、応募者、応募、採用プロジェクトに焦点を当てます。 
 
 
-このトピックでは、空いている職位の宣伝や申請者の採用、申請者および申請情報の追跡、申請者の面接、および 1 人以上の候補者を選択して組織内の空いている職位を埋めるといった活動を含む採用プロセスで、採用担当者が求人プロセスのステップを追跡するために使用できるコンセプトについて説明します。
+この記事では、空いている職位の宣伝や申請者の採用、申請者および申請情報の追跡、申請者の面接、および 1 人以上の候補者を選択して組織内の空いている職位を埋めるといった活動を含む採用プロセスで、採用担当者がステップを追跡するために使用できるコンセプトについて説明します。
 
 ## <a name="overview"></a>概要
 

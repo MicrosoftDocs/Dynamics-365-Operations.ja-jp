@@ -1,6 +1,6 @@
 ---
 title: 督促状の処理の例
-description: このトピックでは、督促状の作成、印刷、および転記の処理を示す例について説明します。
+description: この記事では、督促状の作成、印刷、および転記の処理を示す例について説明します。
 author: JodiChristiansen
 ms.date: 02/03/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1bb1889e9450685f7b6a5000e2ef81d1a65f1b51
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 502a026f2070e92a017733ce2c37bf357eaa10ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721818"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908157"
 ---
 # <a name="process-collection-letters-example"></a>督促状の処理の例
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、督促状の作成、印刷、および転記の処理を示す例について説明します。 この例は、貸方転記および取立の **督促状コードを計算する時に支払とクレジット メモを無視する** オプションに基づいています。 USMF デモ会社と新しい顧客である US-045 のデータを使用します。
+この記事では、督促状の作成、印刷、および転記の処理を示す例について説明します。 この例は、貸方転記および取立の **督促状コードを計算する時に支払とクレジット メモを無視する** オプションに基づいています。 USMF デモ会社と新しい顧客である US-045 のデータを使用します。
 
 始めに、**売掛金勘定 \> 顧客 \> すべての顧客** に移動し、**新規** を選択して、顧客 US-045 を作成するために必要な情報を入力します。
 

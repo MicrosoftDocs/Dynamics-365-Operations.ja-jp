@@ -1,6 +1,6 @@
 ---
 title: 出荷の連結ページを使用して出荷を手動で連結する
-description: このトピックでは、複数の注文が倉庫にリリースされ、出荷の連結ページを使用して連結するシナリオを示します。
+description: この記事では、複数の注文が倉庫にリリースされ、出荷の連結ページを使用して連結するシナリオを示します。
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 5a2f4a9ed05460f9beedf8653ec80b01c84a7b26
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d24542a126d64621525f62e694bbc7174b474810
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677481"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897345"
 ---
 # <a name="consolidate-shipments-manually-by-using-the-consolidate-shipments-page"></a>出荷の連結ページを使用して出荷を手動で連結する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、複数の注文が倉庫にリリースされ、**出荷の連結** ページを使用して連結するシナリオを示します。
+この記事では、複数の注文が倉庫にリリースされ、**出荷の連結** ページを使用して連結するシナリオを示します。
 
 ## <a name="make-demo-data-available"></a>デモ データを有効化する
 
-このトピックのシナリオでは、Microsoft Dynamics 365 Supply Chain Management にて用意されている標準のデモデータに含まれる値とレコードを参照し ます。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を **usmf** に設定します。
+この記事のシナリオでは、Microsoft Dynamics 365 Supply Chain Management にて用意されている標準のデモ データに含まれる値とレコードを参照します。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を **usmf** に設定します。
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>出荷連結ポリシーおよび製品フィルタの設定
 

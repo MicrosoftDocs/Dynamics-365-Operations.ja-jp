@@ -1,6 +1,6 @@
 ---
 title: 日本での受取手形の裏書による仕入先への支払
-description: このトピックには、日本で仕入先に支払うための受取手形 (BOE) の裏書に関する情報が含まれています。
+description: この記事には、日本で仕入先に支払うための受取手形 (BOE) の裏書に関する情報が含まれています。
 author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Japan
 ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a21dd1d812dfb31088df7e3e98514f9dc40c930f
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 80f0ff988a645b009548d3c537f0ee2a29d7e34b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592468"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910060"
 ---
 # <a name="pay-a-vendor-by-endorsing-a-bill-of-exchange-for-japan"></a>日本での受取手形の裏書による仕入先への支払
 

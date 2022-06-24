@@ -13,12 +13,12 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 7c2fa01a0d15142bd7a4d5f46572953706037fd6bf9638e975f75c5514293612
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9be94346c5a3b35c8331e417f70ed0013dda2772
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777551"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897043"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Dynamics 365 Retail の新機能および変更された機能
 

@@ -1,6 +1,6 @@
 ---
 title: 機能設定の使用
-description: このトピックでは、電子請求の機能を設定する方法について説明します。
+description: この記事では、電子請求の機能を設定する方法について説明します。
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41ffc9c7009291a55392e50c5e490d3288d122bc
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 23466a53bb8ba597503aaa12d41395fc82b9f14e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371626"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904328"
 ---
 # <a name="work-with-feature-setups"></a>機能設定の使用
 
@@ -46,7 +46,7 @@ ms.locfileid: "8371626"
 6. 最後の手順で **カスタム設定** オプションを選択した場合は、機能設定項目の名前と説明を入力し、**設定タイプ** フィールド グループで次のいずれかのオプションを選択します:
 
     - **処理パイプライン** – このオプションを選択し、送信用の電子ドキュメントを生成および処理します。 この設定タイプの場合は、空の処理パイプライン リスト、適用ルール用の空のセクション、および既定の変数セットがシステムによって作成されます。 受信電子ドキュメントのチャネルは使用できません。
-    - **データ チャネル** – 定義したチャネルの 1 つから受信電子ドキュメントを受信し、追加のアクションなしで Microsoft Dynamics 365 Finance または Dynamics 365 Supply Chain Management に直接渡すプロセスを設定するには、このオプションを選択します。 この設定タイプの場合、システムはデータ チャネル用の事前定義済みパラメーター リスト、適用ルール用の空のセクション、および既定の変数セットを作成します。 処理パイプラインにアクションを追加することはできません。
+    - **データ チャネル** – 定義したチャネルの 1 つから受信電子ドキュメントを受信し、追加のアクションなしで Microsoft Microsoft Dynamics 365 Finance または Dynamics 365 Supply Chain Management に直接渡すプロセスを設定するには、このオプションを選択します。 この設定タイプの場合、システムはデータ チャネル用の事前定義済みパラメーター リスト、適用ルール用の空のセクション、および既定の変数セットを作成します。 処理パイプラインにアクションを追加することはできません。
     - **データ チャネルと処理パイプライン** – この設定タイプは、**データ チャネル** 設定タイプに似ています。 ただし、受信電子ドキュメントが Finance または Supply Chain Management に渡される前に、処理パイプラインで追加のアクションを設定できます。
 
 7. 最後の手順で **データ チャネル** または **データ チャネルと処理パイプライン** オプションを選択した場合は、**データ チャネルの選択** フィールドで、統合するチャネルを選択する必要があります。

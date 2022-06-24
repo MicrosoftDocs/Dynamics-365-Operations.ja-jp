@@ -1,6 +1,6 @@
 ---
 title: Warehouse Management モバイル アプリのステップ アイコンとタイトルの割り当て
-description: このトピックでは、Warehouse Management モバイル アプリの新しいタスク フローまたはカスタマイズされたタスク フローに対してステップ アイコンとタイトルを割り当てる方法について説明します。
+description: この記事では、Warehouse Management モバイル アプリの新しいタスク フローまたはカスタマイズされたタスク フローに対してステップ アイコンとタイトルを割り当てる方法について説明します。
 author: Mirzaab
 ms.date: 05/17/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 361ace454f7125ec86bd99cffefc7d268f81d37f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103316"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890599"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのステップ アイコンとタイトルの割り当て
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Warehouse Management モバイル アプリの新しいタスク フローまたはカスタマイズされたタスク フローに対してステップ アイコンとステップ タイトルを割り当てる方法について説明します。
+この記事では、Warehouse Management モバイル アプリの新しいタスク フローまたはカスタマイズされたタスク フローに対してステップ アイコンとステップ タイトルを割り当てる方法について説明します。
 
 次の図は、Warehouse Management モバイル アプリにステップ アイコンとタイトルがどのように表示されるかを示しています。
 
@@ -29,7 +29,7 @@ ms.locfileid: "8103316"
 
 ## <a name="turn-this-feature-on-or-off"></a>この機能のオン/オフの切り替え
 
-このトピックで説明する機能を使用するには、*新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* 機能がシステムで有効になっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* を検索して、この機能をオンまたはオフにすることができます。
+この記事で説明する機能を使用するには、*新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* 機能がシステムで有効になっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="standard-step-ids-classes-and-icons"></a>標準的なステップ ID、クラス、アイコン
 
@@ -39,7 +39,7 @@ ms.locfileid: "8103316"
 
 次の表に、現在使用可能なすべてのステップ ID と、それに対応するステップ クラスの一覧を示します。 基本入力フィールドの制御名がステップ ID として使用されます。
 
-これらのステップ ID およびクラスがどのように使用されるかを示す例については、このトピックで後述する [例: カスタム フローへのステップ アイコンとタイトルの割り当て](#example) セクションの `WHSMobileAppStepInfoBuilder.stepId()` メソッドの実装を参照してください。
+これらのステップ ID およびクラスがどのように使用されるかを示す例については、この記事で後述する [例: カスタム フローへのステップ アイコンとタイトルの割り当て](#example) セクションの `WHSMobileAppStepInfoBuilder.stepId()` メソッドの実装を参照してください。
 
 | ステップ ID | ステップ クラス |
 |-|-|
@@ -373,7 +373,7 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 
 ステップ アイコンの識別子は `defaultStepIcon` クラス メンバーに保存され、ステップ タイトルは `defaultStepTitle` クラス メンバーに保存されます。
 
-ステップ アイコンを割り当てるには、`defaultStepIcon` をこのトピックで前述した [使用可能なステップ アイコン](#step-icons) セクションに一覧表示されているアイコン ID の 1 つに設定します。
+ステップ アイコンを割り当てるには、`defaultStepIcon` をこの記事で前述した [使用可能なステップ アイコン](#step-icons) セクションに一覧表示されているアイコン ID の 1 つに設定します。
 
 ### <a name="use-a-standard-or-custom-step-icon-and-title-for-the-weight-input"></a>重量入力に標準またはカスタムのステップ アイコンとタイトルを使用する
 
@@ -405,7 +405,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 }
 ```
 
-次に、`NewWeight` ステップのステップ クラスを作成します。 コードは、このトピックの前半で示した `ContainerId` の例のコードと似ている必要があります。
+次に、`NewWeight` ステップのステップ クラスを作成します。 コードは、この記事の前半で示した `ContainerId` の例のコードと似ている必要があります。
 
 #### <a name="override-the-stepinfo-method"></a>stepInfo() メソッドの上書き
 

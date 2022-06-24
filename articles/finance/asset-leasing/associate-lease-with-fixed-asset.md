@@ -1,6 +1,6 @@
 ---
 title: 固定資産へをリースに関連付ける
-description: このトピックでは、既存の固定資産を新しいリースに関連付ける方法について説明します。
+description: この記事では、既存の固定資産を新しいリースに関連付ける方法について説明します。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0ae7a850ceb13cb41ee5adc406e71105cdad4fe
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 5cc341008d25da544ec35d5660b5ff0b38f2287b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712149"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895112"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>固定資産へをリースに関連付ける
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、既存の固定資産を新しいリースに関連付ける方法について説明します。 固定資産とリースを関連付けた場合、当初認識時使用権資産 (ROU) の値は固定資産の取得原価となります。
+この記事では、既存の固定資産を新しいリースに関連付ける方法について説明します。 固定資産とリースを関連付けた場合、当初認識時使用権資産 (ROU) の値は固定資産の取得原価となります。
 
 固定資産とリースを関連付ける前に、固定資産に固定資産のレコードを作成しておく必要があります。 **リースの概要** ページで、リースを作成し、このリースに資産をリンクする必要があります。
 

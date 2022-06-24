@@ -1,6 +1,6 @@
 ---
 title: TEXT ER 関数
-description: このトピックでは、TEXT 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、TRIM 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
 author: NickSelin
 ms.date: 12/10/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 38550b8b5181b49bcb8504129932f185ea95e038e38d4581bc3e0fa076f4fb50
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf9049463ca905952cab512884afad380b7b3d52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762455"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900167"
 ---
 # <a name="text-er-function"></a>TEXT ER 関数
 
@@ -51,7 +51,7 @@ TEXT (number)
 
 ## <a name="example"></a>例
 
-Microsoft Dynamics 365 Finance インスタンスのサーバー ロケールが **EN-US** で定義されている場合、`TEXT (NOW ())` は現在の財務セッション日付、2015 年 12 月 17 日、をテキスト文字列 **"12/17/2015 07:59:23 AM"** として返します。 `TEXT (1/3)` は、**"0.33"** を返します。
+Microsoft Microsoft Dynamics 365 Finance インスタンスのサーバー ロケールが **EN-US** で定義されている場合、`TEXT (NOW ())` は現在の財務セッション日付、2015 年 12 月 17 日、をテキスト文字列 **"12/17/2015 07:59:23 AM"** として返します。 `TEXT (1/3)` は、**"0.33"** を返します。
 
 ## <a name="additional-resources"></a>追加リソース
 

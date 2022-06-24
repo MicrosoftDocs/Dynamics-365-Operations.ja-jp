@@ -1,6 +1,6 @@
 ---
 title: TDS 税タイプに対する源泉徴収税コンポーネント グループの設定
-description: このトピックでは、賃料や契約社員など、源泉徴収 (TDS) 税タイプの源泉徴収税コンポーネント グループを設定する方法について説明します。
+description: この記事では、賃料や契約社員など、源泉徴収 (TDS) 税タイプの源泉徴収税コンポーネント グループを設定する方法について説明します。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ad4ac16d2618a99ba8ea5c2da010eb8e96447775
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e7b856be18618573408388fe0acbd702aeb4bcc3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726868"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896257"
 ---
 # <a name="set-up-withholding-tax-component-groups-for-the-tds-tax-type"></a>TDS 税タイプに対する源泉徴収税コンポーネント グループの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**賃料** や **契約社員** など、源泉徴収 (TDS) 税タイプの源泉徴収税コンポーネント グループを設定する方法について説明します。
+この記事では、**賃料** や **契約社員** など、源泉徴収 (TDS) 税タイプの源泉徴収税コンポーネント グループを設定する方法について説明します。
 
 1. **税 \> 設定 \> 源泉徴収税 \> 源泉徴収税のコンポーネント グループ** に移動します。
 

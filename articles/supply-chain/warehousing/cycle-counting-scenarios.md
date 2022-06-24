@@ -1,6 +1,6 @@
 ---
 title: 循環棚卸のシナリオ例
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management 循環棚卸機能を参照する一連のシナリオを示します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の循環棚卸機能を参照する一連のシナリオを示します。
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 60be945035570634c572baaa37ae0d02e41dd0be
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674704"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899327"
 ---
 # <a name="cycle-counting-example-scenarios"></a>循環棚卸のシナリオ例
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management 循環棚卸機能を参照する一連のシナリオを示します。 最初に、既存の Supply Chain Management 環境の要件について説明します。 その後、循環棚卸の構成方法と、すべての循環棚卸ステージについて説明します。 完了したら、ガイド付き循環棚卸、ブラインド循環棚卸、スポット循環棚卸、循環棚卸のしきい値、循環棚卸計画など循環棚卸を深く解釈している必要があります。
+この記事では、Microsoft Dynamics 365 Supply Chain Management の循環棚卸機能を参照する一連のシナリオを示します。 最初に、既存の Supply Chain Management 環境の要件について説明します。 その後、循環棚卸の構成方法と、すべての循環棚卸ステージについて説明します。 完了したら、ガイド付き循環棚卸、ブラインド循環棚卸、スポット循環棚卸、循環棚卸のしきい値、循環棚卸計画など循環棚卸を深く解釈している必要があります。
 
 ## <a name="prerequisites"></a>必要条件
 
 ### <a name="make-demo-data-available"></a>デモ データを有効化する
 
-このトピックの各シナリオでは、Supply Chain Management に向けて提供されている標準のデモ データに含まれる値とレコードを参照しています。 シナリオを実行してここで提供されている値を使用する場合は、必ずデモ データがインストールされている環境で作業し、開始する前に法人 (会社) を **USMF** に設定します。
+この記事の各シナリオでは、Supply Chain Management に向けて提供されている標準のデモ データに含まれる値とレコードを参照しています。 シナリオを実行してここで提供されている値を使用する場合は、必ずデモ データがインストールされている環境で作業し、開始する前に法人 (会社) を **USMF** に設定します。
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのサポートをオンにする
 
@@ -158,7 +158,7 @@ Warehouse Management mobile app を使用するには、ご利用のシステム
 
 循環棚卸作業の作成後、倉庫の場所で品目の棚卸をして、モバイル デバイスを使用して Supply Chain Management に結果を入力して作業を行います。 次の手順に従って、Warehouse Management モバイル アプリで循環棚卸作業を実行します。
 
-1. このトピック前半の[シナリオのデモ データの準備](#prepare-demo-data) セクションで設定した作業ユーザーとして Warehouse Management モバイル アプリにサインインします。 このトピックの例で、ユーザーの名前は *Julia Funderburk*、倉庫 *61* に設定されています。 (USMF デモ データでは、ユーザー ID として *61*、パスワードとして *1* を入力することにより、この作業ユーザーとしてサインインできます。)
+1. この記事の前半の [シナリオのデモ データの準備](#prepare-demo-data) セクションで設定した作業ユーザーとして Warehouse Management モバイル アプリにサインインします。 この記事の例で、ユーザーの名前は *Julia Funderburk*、倉庫 *61* に設定されています。 (USMF デモ データでは、ユーザー ID として *61*、パスワードとして *1* を入力することにより、この作業ユーザーとしてサインインできます。)
 1. メイン メニューで、**在庫** を選択します。
 1. **在庫** メニューで、**循環棚卸ガイド付き** を選択します。
 1. **数量** フィールドを選択し、数字パッドを使用して *9* を入力し、**OK** (チェック マーク ボタン) を選択します。
@@ -227,7 +227,7 @@ Warehouse Management mobile app を使用するには、ご利用のシステム
 
 循環棚卸作業を作成した後、次の手順に従って、Warehouse Management モバイル アプリで作業を実行します。
 
-1. このトピック前半の[シナリオのデモ データの準備](#prepare-demo-data) セクションで設定した作業ユーザーとして Warehouse Management モバイル アプリにサインインします。 このトピックの例で、ユーザーの名前は *Julia Funderburk*、倉庫 *61* に設定されています。 (USMF デモ データでは、ユーザー ID として *61*、パスワードとして *1* を入力することにより、この作業ユーザーとしてサインインできます。)
+1. この記事の前半の [シナリオのデモ データの準備](#prepare-demo-data) セクションで設定した作業ユーザーとして Warehouse Management モバイル アプリにサインインします。 この記事の例で、ユーザーの名前は *Julia Funderburk*、倉庫 *61* に設定されています。 (USMF デモ データでは、ユーザー ID として *61*、パスワードとして *1* を入力することにより、この作業ユーザーとしてサインインできます。)
 1. メイン メニューで、**在庫** を選択します。
 1. **在庫** メニューで、**循環棚卸ブラインド** を選択します。
 1. **ゾーン ID** フィールドを選択し、*BULK06* を入力し、**OK** (チェック マーク ボタン) を選択します。
@@ -259,7 +259,7 @@ Warehouse Management mobile app を使用するには、ご利用のシステム
 
 次の手順に従って、Warehouse Management モバイル アプリで循環棚卸作業を実行します。
 
-1. このトピック前半の[シナリオのデモ データの準備](#prepare-demo-data) セクションで設定した作業ユーザーとして Warehouse Management モバイル アプリにサインインします。 このトピックの例で、ユーザーの名前は *Julia Funderburk*、倉庫 *61* に設定されています。 (USMF デモ データでは、ユーザー ID として *61*、パスワードとして *1* を入力することにより、この作業ユーザーとしてサインインできます。)
+1. この記事の前半の [シナリオのデモ データの準備](#prepare-demo-data) セクションで設定した作業ユーザーとして Warehouse Management モバイル アプリにサインインします。 この記事の例で、ユーザーの名前は *Julia Funderburk*、倉庫 *61* に設定されています。 (USMF デモ データでは、ユーザー ID として *61*、パスワードとして *1* を入力することにより、この作業ユーザーとしてサインインできます。)
 1. メイン メニューで、**在庫** を選択します。
 1. **在庫** メニューで、**スポット循環棚卸** を選択します。
 1. **場所** フィールドを選択し、*01A02R2S1B* を入力し、**OK** (チェック マーク ボタン) を選択します。

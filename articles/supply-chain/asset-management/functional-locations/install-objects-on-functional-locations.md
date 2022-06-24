@@ -1,6 +1,6 @@
 ---
 title: 機能的な場所に資産を導入する
-description: このトピックでは、資産管理で機能的な場所に資産を導入する方法について説明します。
+description: この記事では、資産管理で機能的な場所に資産を導入する方法について説明します。
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894504"
 ---
 # <a name="install-assets-on-functional-locations"></a>機能的な場所に資産を導入する
 
@@ -28,7 +28,7 @@ ms.locfileid: "6775750"
 
  
 
-機能的な場所の構造を作成したら、次の手順で、関連する機能的な場所に資産を導入します。 このトピックでは、資産管理でそれらの機能的な場所に資産を導入する方法について説明します。 資産の作成方法については、[資産の概要](../objects/introduction-to-objects.md) を参照してください。
+機能的な場所の構造を作成したら、次の手順で、関連する機能的な場所に資産を導入します。 この記事では、資産管理でそれらの機能的な場所に資産を導入する方法について説明します。 資産の作成方法については、[資産の概要](../objects/introduction-to-objects.md) を参照してください。
 
 資産構造を作成した場合は、資産構造全体を機能的な場所に導入する必要があります。 したがって、機能的な場所で選択できるのは、親資産 (親資産を持たない上位レベルの資産) のみです。 関連するすべての子資産 (下位資産) も、機能的な場所に導入されます。 機能的な場所に資産を導入すると、機能的な場所に対して選択された機能的な場所タイプの設定に応じて、機能的な場所の財務分析コードが自動的に転送される場合があります。 機能的な場所タイプの設定方法の詳細については、[機能的な場所のタイプ](../setup-for-functional-locations/functional-location-types.md) を参照してください。
 

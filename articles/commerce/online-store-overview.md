@@ -1,6 +1,6 @@
 ---
-title: 電子商取引サイトの概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce における eコマース サイトのサポートの概要について説明します。
+title: e コマース サイトの概要
+description: この記事では、Microsoft Dynamics 365 Commerce における eコマース サイトのサポートの概要について説明します。
 author: bicyclingfool
 ms.date: 11/05/2020
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 9b7e4d09eaa4f91478d27cbca5eaea48af86e676
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487771"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899124"
 ---
-# <a name="e-commerce-site-overview"></a>eコマース サイトの概要
+# <a name="e-commerce-site-overview"></a>e コマース サイトの概要
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce における eコマース サイトのサポートの概要について説明します。 これには、Dynamics 365 Commerce で電子商取引オンライン ストアが初期化および管理される方法に関する情報が含まれています。 また、オンラインストア、および電子商取引サイトの設定と構成の方法に関する詳細情報へのリンクも提供します。 このトピックでは、多くの基本的な概念について説明しますが、生産的な電子商取引サイトの設定に必要なものすべてについては説明しません。 詳細なトピックについては、Dynamics 365 Commerce ドキュメントを参照してください。
+この記事では、Microsoft Dynamics 365 Commerce における eコマース サイトのサポートの概要について説明します。 これには、Dynamics 365 Commerce で電子商取引オンライン ストアが初期化および管理される方法に関する情報が含まれています。 また、オンラインストア、および電子商取引サイトの設定と構成の方法に関する詳細情報へのリンクも提供します。 この記事では、多くの基本的な概念について説明しますが、生産的な電子商取引サイトの設定に必要なものすべてについては説明しません。 詳細な記事については、Dynamics 365 Commerce ドキュメントを参照してください。
 
 ## <a name="online-store-channel"></a>オンライン ストア チャネル
 
@@ -74,7 +74,7 @@ Dynamics 365 Commerce は Azure Active Directory (Azure AD) 企業と顧客間 (
 
 ## <a name="overview-of-the-default-site-pages"></a>既定のサイト ページの概要
 
-**既定の** サイトと **fabrikam** のサイトには、開始するのに役立つコンフィギュレーション済みテンプレート、フラグメント、およびページが用意されています。 詳細については、次のトピックを参照してください。
+**既定の** サイトと **fabrikam** のサイトには、開始するのに役立つコンフィギュレーション済みテンプレート、フラグメント、およびページが用意されています。 詳細については、次の記事を参照してください。
 
 - [ホーム ページの概要](quick-tour-home-page.md)
 - [製品詳細ページの概要](quick-tour-pdp.md)
@@ -83,7 +83,7 @@ Dynamics 365 Commerce は Azure Active Directory (Azure AD) 企業と顧客間 (
 
 ## <a name="manage-site-settings"></a>サイト設定の管理
 
-サイト設定を管理する方法については、次のトピックを参照してください。
+サイト設定を管理する方法については、次の記事を参照してください。
 
 - [E コマース ユーザーとロールの管理](manage-ecommerce-users-roles.md)
 - [サイトにおける検索エンジンの最適化 (SEO) の考慮事項](search-engine-optimization-considerations.md)
@@ -92,7 +92,7 @@ Dynamics 365 Commerce は Azure Active Directory (Azure AD) 企業と顧客間 (
 
 ## <a name="manage-site-content"></a>サイト コンテンツの管理
 
-サイトのコンテンツを管理する方法については、次のトピックを参照してください。
+サイトのコンテンツを管理する方法については、次の記事を参照してください。
 
 - [ページ モデルの用語集](page-elements-overview.md)
 - [ドキュメントの状態とライフサイクル](document-states-overview.md)

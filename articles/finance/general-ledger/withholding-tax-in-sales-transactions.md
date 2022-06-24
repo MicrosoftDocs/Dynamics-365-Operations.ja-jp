@@ -1,6 +1,6 @@
 ---
 title: 販売トランザクションの源泉徴収税
-description: このトピックでは、選択した顧客に対する源泉徴収税の計算を回避する手順を示します。 支払で源泉徴収税を指定する顧客については、既定の源泉徴収税グループを割り当てる必要があります。
+description: この記事では、選択した顧客に対する源泉徴収税の計算を回避する手順を示します。 支払で源泉徴収税を指定する顧客については、既定の源泉徴収税グループを割り当てる必要があります。
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 72d659004a1f61b63d6a782ba6b45bb99030bae9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 75a7fc62c1d493007f3aa88a723465828c557df7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727429"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910087"
 ---
 # <a name="withholding-tax-in-sales-transactions"></a>販売トランザクションの源泉徴収税
 
-このトピックでは、選択した顧客に対する源泉徴収税の計算を回避する手順を示します。 支払で源泉徴収税を指定する顧客については、**顧客** ページで既定の **源泉徴収税グループ** を割り当てる必要があります。 
+この記事では、選択した顧客に対する源泉徴収税の計算を回避する手順を示します。 支払で源泉徴収税を指定する顧客については、**顧客** ページで既定の **源泉徴収税グループ** を割り当てる必要があります。 
 
 1. **ナビゲーション ウィンドウ > モジュール > 売掛金勘定 > 顧客 > すべての顧客** の順に移動します。
 

@@ -1,6 +1,6 @@
 ---
 title: アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのデザイン
-description: このトピックでは、電子ドキュメントを生成するために電子申告 (ER) コンフィギュレーションをデザインする方法について説明します。 (パート 1 - コンフィギュレーションのインポート)。
+description: この記事では、電子ドキュメントを生成するために電子申告 (ER) 構成をデザインする方法について説明します。 (パート 1 - コンフィギュレーションのインポート)。
 author: NickSelin
 ms.date: 06/19/2017
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f335721ee97919af20e73fc9da6c9bf07dcae50aca8f8904d144d75c2f4d7b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a52ce08458868ae717c650d4b96754c297cd07a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726264"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900196"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するためのコンフィギュレーションのデザイン
 

@@ -1,6 +1,6 @@
 ---
 title: ユーザー インターフェイスの要素
-description: このトピックでは、アプリのユーザー インターフェイス (UI) の要素について説明します。
+description: この記事では、アプリのユーザー インターフェイス (UI) の要素について説明します。
 author: tlefor
 ms.date: 08/09/2019
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 60e85841ec940ed65d73dc052848168be70301d6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 60f5abfe009b45adc5ae5f064f1b5c367f2844f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906503"
 ---
 # <a name="user-interface-elements"></a>ユーザー インターフェイスの要素
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、アプリで使用されるユーザー インターフェイス (UI) の要素について説明します。 ユーザーがインターフェイスを操作できるようにするには、インターフェイスを構成する要素の名前と機能を把握しておくことが重要です。
+この記事では、アプリで使用されるユーザー インターフェイス (UI) の要素について説明します。 ユーザーがインターフェイスを操作できるようにするには、インターフェイスを構成する要素の名前と機能を把握しておくことが重要です。
 
 ## <a name="overview"></a>概要
 

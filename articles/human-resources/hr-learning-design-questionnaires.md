@@ -1,6 +1,6 @@
 ---
 title: アンケートの作成
-description: このトピックは、アンケートを作成するプロセスについて説明します。
+description: この記事は、アンケートを作成するプロセスについて説明します。
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7b2e1316768dc6207c82f08cef4c268ae70648ad
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ef14dfe35e6cffc5ae2351045141d99b2fb53c16
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694854"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899646"
 ---
 # <a name="create-questionnaires"></a>アンケートの作成
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694854"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックは、アンケートを作成するプロセスについて説明します。 最初の手順では、アンケートを設計します。 アンケートを設計する場合は、質問と回答を書き込むだけでなく、回答を記録し、表にする構造を作成します。 
+この記事は、アンケートを作成するプロセスについて説明します。 最初の手順では、アンケートを設計します。 アンケートを設計する場合は、質問と回答を書き込むだけでなく、回答を記録し、表にする構造を作成します。 
 
 アンケートを入念に設計することは、収集するデータの質の向上につながります。 デザインを入念に作成することで、適切な時点で、アンケートの適切なオプションをさらにうまく選択できます。 次の点が有効なアンケートを計画するのに役立ちます。
 

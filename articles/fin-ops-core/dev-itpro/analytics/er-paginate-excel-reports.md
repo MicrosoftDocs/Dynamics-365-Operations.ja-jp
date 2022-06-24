@@ -1,6 +1,6 @@
 ---
 title: ER フォーマットを設計して、Excel で生成されたドキュメントのページ設定をする
-description: このトピックでは、生成されたドキュメントのページ設定を Microsoft Excel で行う 電子レポート (ER) フォーマットを設計する方法について説明します。
+description: この記事では、生成されたドキュメントのページ設定を Microsoft Excel で行う 電子レポート (ER) フォーマットを設計する方法について説明します。
 author: NickSelin
 ms.date: 09/14/2021
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: ce29225c4bce24adc2abefc3d3d6f20774852af4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488342"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909281"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>ER フォーマットを設計して、Excel で生成されたドキュメントのページ設定をする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、システム管理者または電子報告書機能コンサルタントの役割を持つユーザーが、[電子レポート (ER)](general-electronic-reporting.md) フォーマットを設定して、Microsoft Excel で送信文書を生成し、文書のページ設定を管理する方法について説明します。
+この記事では、システム管理者または電子報告書機能コンサルタントの役割を持つユーザーが、[電子レポート (ER)](general-electronic-reporting.md) フォーマットを設定して、Microsoft Excel で送信文書を生成し、文書のページ設定を管理する方法について説明します。
 
 この例では、イントラスタット申告が[生成](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md)されたときにコントロール レポートの印刷に使用される、マイクロソフトが提供する ER フォーマットを変更します。 このレポートでは、報告されたイントラスタット トランザクションを確認することができます。 変更を行った場合、生成される制御レポートのページ番号を管理できます。
 
-このトピックの手順は、**DEMF** 会社で完了することができます。 コーディングは必要ありません。 開始する前に、以下のファイルをダウンロードして保存する必要があります。
+この記事の手順は、**DEMF** 会社で完了することができます。 コーディングは必要ありません。 開始する前に、以下のファイルをダウンロードして保存する必要があります。
 
 | 説明       | ファイル名 |
 |-------------------|-----------| 
@@ -43,7 +43,7 @@ ms.locfileid: "7488342"
 
 ## <a name="import-the-standard-er-format-configuration"></a>標準 ER フォーマットの構成をインポートする
 
-[標準的な ER フォーマットの構成をインポートする](er-quick-start2-customize-report.md#ImportERSolution1)に記載の手順に従って、標準的な ER の構成を現在の Dynamics 365 Finance のインスタンスに追加します。 **イントラスタット レポート** フォーマット構成のバージョン **1.9** をインポートします。 基となる **イントラスタット モデル** 構成のベース バージョン 1 が、リポジトリから自動的にインポートされます。
+[標準的な ER フォーマットの構成をインポートする](er-quick-start2-customize-report.md#ImportERSolution1) に記載の手順に従って、標準的な ER の構成を現在の Dynamics 365 Finance のインスタンスに追加します。 **イントラスタット レポート** フォーマット構成のバージョン **1.9** をインポートします。 基となる **イントラスタット モデル** 構成のベース バージョン 1 が、リポジトリから自動的にインポートされます。
 
 ## <a name="customize-the-standard-er-format"></a> 標準 ER 形式のカスタマイズ
 
@@ -165,7 +165,7 @@ ER 形式のドラフト バージョンを使用するには、ER 形式を明�
 
 ### <a name="repeat-the-replacement-of-the-current-excel-template-in-the-custom-er-format"></a>現在の Excel テンプレートをカスタム ER フォーマットに置き換える作業を繰り返す
 
-1. このトピックの[現在の Excel テンプレートをカスタム ER フォーマットに置き換える](#replace-template)セクションに記載の手順に従います。 この場合は、手順 7 で **ERIntrastatReportDemo2.xlsx** ファイルを選択します。
+1. この記事の [現在の Excel テンプレートをカスタム ER 形式に置き換える](#replace-template) セクションに記載の手順に従います。 この場合は、手順 7 で **ERIntrastatReportDemo2.xlsx** ファイルを選択します。
 2. **フォーマット デザイナー** ページで、**イントラスタット** を展開します。
 3. 編集可能な ER フォーマットに追加された[範囲](er-fillable-excel.md#range-component)フォーマットのコンポーネントに名前を付けて、構造を適用された Excel テンプレートの構造と同期します。
 
@@ -406,7 +406,7 @@ ER 形式のドラフト バージョンを使用するには、ER 形式を明�
 
 ## <a name="generate-an-intrastat-declaration-control-report-updated"></a>イントラスタット申告制御レポートの生成 (更新)
 
-1. まず、**イントラスタット** ページで 24 のトランザクションがあることを確認します。 このトピックの [イントラスタット申告制御レポートの生成](#generate-intrastat-control-report)に記載の手順を繰り返して、コントロール レポートの生成と確認を行います。
+1. まず、**イントラスタット** ページで 24 のトランザクションがあることを確認します。 この記事の [イントラスタット申告制御レポートの生成](#generate-intrastat-control-report) に記載の手順を繰り返して、コントロール レポートの生成と確認を行います。
 
     すべてのトランザクションが最初のページに表示されます。 ページの合計とカウンターは、レポートの合計とカウンターと同じ値です。 レポートのヘッダーにはすでに列のタイトルが含まれているため、1 ページ目ではページ ヘッダーの範囲が非表示になります。 2 ページ目にはトランザクションがないため、ページ ヘッダーとフッターが非表示になります。
 

@@ -1,6 +1,6 @@
 ---
 title: ドキュメントの状態とライフサイクル
-description: このトピックでは、Microsoft Dynamics 365 Commerce のページ要素のさまざまなドキュメントの状態について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce のページ要素のさまざまなドキュメントの状態について説明します。
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ad8547fe6b36caf75ce78cb09fb2caf901c63afe43fa4755bb9e5c69427829d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04836ecf80fc86ab6abb96e4255779c8c03988d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909461"
 ---
 # <a name="document-states-and-lifecycle"></a>ドキュメントの状態とライフサイクル
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のページ要素のさまざまなドキュメントの状態について説明します。
+この記事では、Microsoft Dynamics 365 Commerce のページ要素のさまざまなドキュメントの状態について説明します。
 
 ## <a name="document-state-descriptions"></a>ドキュメントの状態の説明
 
-[ページ要素](page-elements-overview.md)のトピックでは、コンテンツ管理システム (CMS) 内のさまざまなドキュメント タイプを一覧表示します。 これらのドキュメント タイプは、オーサリング ツールで複数の状態を持つことができます。 ドキュメントの状態によって、データの競合を防ぎ、バージョン管理を行うことができます。 これらは、ドキュメントを変更できるユーザー、ドキュメントを変更できる場合、および他のユーザーが変更を表示できる場合を決定します。
+[ページ要素](page-elements-overview.md) の記事では、コンテンツ管理システム (CMS) 内のさまざまなドキュメント タイプを一覧表示します。 これらのドキュメント タイプは、オーサリング ツールで複数の状態を持つことができます。 ドキュメントの状態によって、データの競合を防ぎ、バージョン管理を行うことができます。 これらは、ドキュメントを変更できるユーザー、ドキュメントを変更できる場合、および他のユーザーが変更を表示できる場合を決定します。
 
 次の表は、コマースのページ要素の可能なドキュメント状態を示しています。
 

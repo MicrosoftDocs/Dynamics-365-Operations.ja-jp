@@ -1,6 +1,6 @@
 ---
 title: Microsoft Office スタイルのビジネス ドキュメント管理ユーザー インターフェイス (動画を含む)
-description: このトピックでは、電子申告 (ER) フレームワークにおけるビジネス ドキュメント管理機能の新しいユーザー インターフェイスを使用する方法について説明します。
+description: この記事では、電子申告 (ER) フレームワークにおけるビジネス ドキュメント管理機能の新しいユーザー インターフェイスを使用する方法について説明します。
 author: v-anamir
 ms.date: 01/05/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e33830e2147d92ad5ee53ad11da55a50613b8ef9
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074744"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892228"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Microsoft Office スタイルのビジネス ドキュメント管理ユーザー インターフェイス
 
@@ -28,11 +28,11 @@ ms.locfileid: "8074744"
 
 ビジネス ドキュメント管理により、ビジネス ユーザーは Microsoft Office 365 サービスまたは適切な Microsoft Office デスクトップ アプリケーションを使用して、ビジネス ドキュメント テンプレートを編集することができます。 編集にはデザインの変更や新しい配置が含まれ、、ユーザーが追加のデータを含めるためのプレースホルダーを追加するのにソース コードを変更する必要はありません。 ビジネス ドキュメント管理の使用方法の詳細については、[ビジネス ドキュメント管理の概要](er-business-document-management.md) を参照してください。
 
-新しいユーザー インターフェイス (UI) は、より明確で使いやすくなっています。 **ビジネス ドキュメント** 領域には、現在[有効な](tasks/er-configuration-provider-mark-it-active-2016-11.md)[プロバイダ](general-electronic-reporting.md#Provider)が所有し、現在の Dynamics 365 Finance インスタンスにあるテンプレートだけが表示されます。 以前の UI では、**テンプレート** タブには、任意のプロバイダーに使用できるテンプレートが一覧表示されています。 また、同じロールを持つユーザーが作成および編集したテンプレートもすべて表示されています。
+新しいユーザー インターフェイス (UI) は、より明確で使いやすくなっています。 **ビジネス ドキュメント** 領域には、現在[有効](tasks/er-configuration-provider-mark-it-active-2016-11.md) な[プロバイダー](general-electronic-reporting.md#Provider)が所有し、現在の Dynamics 365 Finance インスタンスにあるテンプレートだけが表示されます。 以前の UI では、**テンプレート** タブには、任意のプロバイダーに使用できるテンプレートが一覧表示されています。 また、同じロールを持つユーザーが作成および編集したテンプレートもすべて表示されています。
 
 **ビジネス ドキュメント管理** ワークスペースの **新しいドキュメント** ボタンを使用して、別のプロバイダが現在の財務のインスタンスにある[電子レポート (ER)](general-electronic-reporting.md)形式の[構成](general-electronic-reporting.md#Configuration)でテンプレートを作成、編集したり、Excelブックから新しいテンプレートをアップロードすることができます。 また、バージョン 10.0.25 以降では、**新しいドキュメント** ボタンを使用して、[グローバル リポジトリ](general-electronic-reporting.md#Repository)に格納されている ER 形式の構成でテンプレートを作成および編集できます。
 
-このトピックの例では、有効なプロバイダーは Contoso で、マイクロソフトが提供するテンプレートをベースにしたテンプレートを作成するために使用します。 また、Excel 形式の独自のテンプレートをアップロードしてテンプレートを作成することもできます。
+この記事の例では、有効なプロバイダーは Contoso で、マイクロソフトが提供するテンプレートをベースにしたテンプレートを作成するために使用します。 また、Excel 形式の独自のテンプレートをアップロードしてテンプレートを作成することもできます。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 

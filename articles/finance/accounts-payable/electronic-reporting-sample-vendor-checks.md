@@ -1,6 +1,6 @@
 ---
-title: 電子レポートのサンプル仕入先小切手
-description: このトピックでは、電子レポートのサンプル小切手フォーマットの使い方についての一般情報を提供します。
+title: 仕入先小切手の電子申告サンプル
+description: この記事では、電子レポートのサンプル小切手フォーマットの使い方についての一般情報を提供します。
 author: sunfzam
 ms.date: 06/14/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 38a037903a994f6212f4ccce10e10c795eb7364d
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d2b26a083540924d2368a298632aea90ecf95e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734547"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908186"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>電子レポートのサンプル仕入先小切手
 
@@ -28,7 +28,7 @@ ms.locfileid: "8734547"
 
 ## <a name="what-check-formats-are-currently-supported"></a>どんな小切手フォーマットが現在サポートされていますか？
 
-Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリに移動して、**GER コンフィギュレーション** という資産タイプを持つ利用可能なファイルの現在のリストを表示する必要があります。 「何を設定する必要がありますか。」という次のセクションに、利用可能なコンフィギュレーションを確認し選択したコンフィギュレーションをインポートできるよう LCS リポジトリを作成する方法を説明するトピックへのリンクが含まれています。
+Microsoft Dynamics Lifecycle Services (LCS) の共有資産ライブラリに移動して、**GER コンフィギュレーション** という資産タイプを持つ利用可能なファイルの現在のリストを表示する必要があります。 「何を設定する必要がありますか。」という次のセクションに、LCSリポジトリを作成し、利用可能な構成を確認し、選択した構成をインポートする方法を説明する記事へのリンクが含まれています。
 
 Microsoft Dynamics 365 Finance には、小切手が一番上に表示され、その後に 2 つの送金セクションが続くサンプル フォーマットが含まれています。 小切手が真ん中、つまり 2 つの送金セクションの間にあるサンプル フォーマットも含まれています。 これらのサンプル形式は、Deluxe 業務用小切手フォーマットに対応します。
 

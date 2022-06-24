@@ -1,6 +1,6 @@
 ---
 title: ローカル勘定科目表の計画
-description: このトピックでは、組織の法的/ローカル要件がある場合に、勘定科目表の計画に役立つ情報を提供します。
+description: この記事では、組織の法的/ローカル要件がある場合に、勘定科目表の計画に役立つ情報を提供します。
 author: VeselinaE
 ms.date: 10/07/2021
 ms.topic: article
@@ -10,7 +10,7 @@ ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts, Ledge
 ROBOTS: ''
 audience: Application User
 ms.devlang: ''
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.tgt_pltfrm: ''
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: veneva
 ms.search.validFrom: 10/07/2021
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e224a2e24b4ba293c953c6c883307038128e2f04
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 78379fd51cf24985fce83e2b6aa9a475af7df363
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798299"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946248"
 ---
 # <a name="plan-your-local-chart-of-accounts"></a>ローカル勘定科目表の計画
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ビジネスを行う特定の地域の要件を満たす必要がある法人が組織に含まれる場合に、勘定科目表の計画に役立つ情報を提供します。 このトピックでは、次の用語を使用して勘定科目表を説明します:
+この記事では、ビジネスを行う特定の地域の要件を満たす必要がある法人が組織に含まれる場合に、勘定科目表の計画に役立つ情報を提供します。 この記事では、次の用語を使用して勘定科目表を説明します:
 
 - **グローバル** – 組織がグローバルに使用する勘定科目表。 ほとんどの場合、この勘定科目表に連結します。
 - **ローカル** – 特定の国または地域の法人が使用する勘定科目表。
@@ -154,7 +154,7 @@ ms.locfileid: "7798299"
 
 ### <a name="do-external-mapping-to-the-local-chart-of-accounts"></a>ローカル勘定科目表に外部マッピングを行う
 
-グローバル勘定科目表の採用は、システム外でマッピングとローカライズを管理することを前提としています。 この方法では、Microsoft Dynamics 365 Finance でグローバル勘定科目表を 1 つ作成し、システム外部の要件を処理するだけです。
+グローバル勘定科目表の採用は、システム外でマッピングとローカライズを管理することを前提としています。 この方法では、Microsoft Microsoft Dynamics 365 Finance でグローバル勘定科目表を 1 つ作成し、システム外部の要件を処理するだけです。
 
 #### <a name="set-up-external-mapping-to-a-local-chart-of-accounts"></a>ローカル勘定科目表に外部マッピングを設定する
 

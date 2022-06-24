@@ -1,6 +1,6 @@
 ---
-title: パーソナライズされた推奨事項のオプト アウト
-description: このトピックでは、顧客が Microsoft Dynamics 365 Commerce でパーソナライズされた推奨事項を受け取ることができるようにする方法について説明します。
+title: パーソナライズされた推奨事項のオプトアウト
+description: この記事では、顧客が Microsoft Dynamics 365 Commerce でパーソナライズされた推奨事項を受け取ることができるようにする方法について説明します。
 author: bebeale
 ms.date: 09/15/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47de876a6f304ed5cb35bf075eadaafa4bf0fc7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772940"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896930"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>パーソナライズされた推奨事項のオプトアウト
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、顧客が Microsoft Dynamics 365 Commerce でパーソナライズされた推奨事項を受け取ることができるようにする方法について説明します。
+この記事では、顧客が Microsoft Dynamics 365 Commerce でパーソナライズされた推奨事項を受け取ることができるようにする方法について説明します。
 
 アカウントの作成時、新規顧客はパーソナライズされた推奨事項を受け取るように自動的に設定されます。 ただし、Dynamics 365 Commerce は、ユーザーがこれらの推奨事項のオプト アウトを選択したり、個人データの処理を制限したりできるようにするさまざまな方法を、小売業者に提供しています。 パーソナライズされた推奨事項の受信をオプト アウトした認証済ユーザーは、ただちにパーソナライズされたリストを見ることができなくなります。 また、パーソナライズのために収集された個人データは、パーソナライズされた推奨モデルから削除されます。
 

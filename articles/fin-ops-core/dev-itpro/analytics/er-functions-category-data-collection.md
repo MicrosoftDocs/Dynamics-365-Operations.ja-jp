@@ -1,6 +1,6 @@
 ---
 title: データ収集カテゴリ内の ER 関数のリスト
-description: このトピックでは、電子申告 (ER) でサポートされるデータ収集関数について説明します。
+description: この記事では、電子申告 (ER) でサポートされるデータ収集関数について説明します。
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2046931732f2d1c1ca040c1c84d4b182c2214f2f44a5a90fceda49298445b743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8d4f5068bedcf1f15ae5257e29004a4773ef84c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760077"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908564"
 ---
 # <a name="list-of-er-functions-in-the-data-collection-category"></a>データ収集カテゴリ内の ER 関数のリスト
 
 [!include [banner](../includes/banner.md)]
 
-電子申告 (ER) データ収集関数は、**テキスト** または **Xml** 形式で生成された出力のデータに基づいて、実行中の ER 形式で棚卸および集計を行うために使用されます。 この方法は、実行される ER 形式のパフォーマンスを向上させたり、生成されたドキュメントに実行中の合計値を入力したり、その他の目的でも使用されます。 このトピックでは、これらの関数の概要を示します。
+電子申告 (ER) データ収集関数は、**テキスト** または **Xml** 形式で生成された出力のデータに基づいて、実行中の ER 形式で棚卸および集計を行うために使用されます。 この方法は、実行される ER 形式のパフォーマンスを向上させたり、生成されたドキュメントに実行中の合計値を入力したり、その他の目的でも使用されます。 この記事では、これらの関数の概要を示します。
 
 ## <a name="list-of-supported-functions"></a>サポートされている関数のリスト
 

@@ -1,6 +1,6 @@
 ---
 title: 陸揚原価と輸送管理
-description: Microsoft Dynamics 365 Supply Chain Management により、輸送、輸送管理 (TMS) および陸揚原価を操作する 2 つの異なるモジュールが提供されます。 このトピックでは、2 つのモジュールで共通する機能をまとめ、その違いについて説明します。
+description: Microsoft Dynamics 365 Supply Chain Management により、輸送、輸送管理 (TMS) および陸揚原価を操作する 2 つの異なるモジュールが提供されます。 この記事では、2 つのモジュールで共通する機能をまとめ、その違いについて説明します。
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8c59d7d1887986d308cb591ece077cff9f4648a5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40489ff8d8683d19a5f726546cc4c43cc3e7a05d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690389"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905924"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>陸揚原価と輸送管理
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management により、輸送: **輸送管理** (TMS) および **陸揚原価** を操作する 2 つの異なるモジュールが提供されます。 このトピックでは、2 つのモジュールで共通する機能をまとめ、その違いについて説明します。 この情報を使用して、業務内容に最適なモジュールを決定することができます。 一部の業務内容は TMS の使用により向上し、その他は荷揚原価により向上することがあります。 業務要件によって、専ら 1 つのモジュールを使用するか、または 2 つのモジュールを組み合わせて使用するか選択することができます。
+Microsoft Dynamics 365 Supply Chain Management により、輸送: **輸送管理** (TMS) および **陸揚原価** を操作する 2 つの異なるモジュールが提供されます。 この記事では、2 つのモジュールで共通する機能をまとめ、その違いについて説明します。 この情報を使用して、業務内容に最適なモジュールを決定することができます。 一部の業務内容は TMS の使用により向上し、その他は荷揚原価により向上することがあります。 業務要件によって、専ら 1 つのモジュールを使用するか、または 2 つのモジュールを組み合わせて使用するか選択することができます。
 
-このトピックは、いずれかのモジュールに関する全ての機能を確認するものではありません。 代わりに、仕入先から消費される業務倉庫への商品の輸送に関して使用可能な機能について説明しています。
+この記事は、いずれかのモジュールに関するすべての機能を確認するものではありません。 代わりに、仕入先から消費される業務倉庫への商品の輸送に関して使用可能な機能について説明しています。
 
 ## <a name="terminology-reference-data-and-reporting-differences"></a>用語、参照データ、およびレポートの違い
 

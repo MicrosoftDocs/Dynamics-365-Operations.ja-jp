@@ -1,6 +1,6 @@
 ---
 title: リース グループの作成
-description: このトピックでは、リース グループを設定する方法について説明します。 新しいリースを作成するには、リース グループが必要です。
+description: この記事では、リース グループを設定する方法について説明します。 新しいリースを作成するには、リース グループが必要です。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 49a905e9f27f01898628e88c7af781aed1f25ec7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: cd1a6f61346233bf205657917c65fccd82167f7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714148"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895025"
 ---
 # <a name="create-a-lease-group"></a>リース グループの作成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、リース グループを設定する方法について説明します。 新しいリースを作成するには、リース グループが必要です。 リース帳簿は、各リース グループに関連付けられています。 リース帳簿は、各リースで作成しなければならない既定の帳簿を決定します。 **リース転記パラメーター** ページでは、特定のアカウントをリース グループに割り当てることができます。
+この記事では、リース グループを設定する方法について説明します。 新しいリースを作成するには、リース グループが必要です。 リース帳簿は、各リース グループに関連付けられています。 リース帳簿は、各リースで作成しなければならない既定の帳簿を決定します。 **リース転記パラメーター** ページでは、特定のアカウントをリース グループに割り当てることができます。
 
 ## <a name="create-a-lease-book-and-add-a-lease-group"></a>リース帳簿を作成し、リース グループを追加する
 

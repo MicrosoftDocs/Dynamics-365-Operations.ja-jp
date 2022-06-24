@@ -1,6 +1,6 @@
 ---
 title: ノルウェイのキャッシュ レジスター機能
-description: このトピックでは、Microsoft Dynamics 365 Commerce のノルウェーで利用可能なキャッシュレジスター機能の概要と、機能を設定するためのガイドラインを説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce のノルウェーで利用可能なキャッシュ レジスター機能の概要と、機能を設定するためのガイドラインを説明します。
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
-ms.openlocfilehash: bb87b3a7405ef3d8435748813fa66db74b8f0971
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 778a947f03866518219e9c0fa44660d66f19f53a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906702"
 ---
 # <a name="cash-register-functionality-for-norway"></a>ノルウェイのキャッシュ レジスター機能
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、ノルウェーで使用可能な  Dynamics 365 Commerce のキャッシュ レジスター機能の概要を示します。 また、機能を設定するためのガイドラインを示します。 この機能は次の部分で構成されています:
+この記事では、ノルウェーで使用可能な  Dynamics 365 Commerce のキャッシュ レジスター機能の概要を示します。 また、機能を設定するためのガイドラインを示します。 この機能は次の部分で構成されています:
 
 - すべての国や地域の顧客が利用できる、共通の POS 機能。 たとえば、レシートのコピーが複数印刷されるのを防ぐオプションがあります。
 - 販売トランザクション用のデジタル署名など、ノルウェー特有の機能。

@@ -1,6 +1,6 @@
 ---
 title: 既定の顧客の作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce でチャネルを作成する時に使用する既定の顧客を作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce でチャネルを作成する時に使用する既定の顧客を作成する方法について説明します。
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ff9e5665ffd82982e09f63e34b30ae6937666231855587ad2f27c5231ead8419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b4658356e268d045fcb7065b397411ffc5161864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720962"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894532"
 ---
 # <a name="create-a-default-customer"></a>既定の顧客の作成
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce でチャネルを作成する時に使用する既定の顧客を作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce でチャネルを作成する時に使用する既定の顧客を作成する方法について説明します。
 
 チャネルを作成する場合、既定の顧客を指定する必要があります。 顧客グループおよび顧客のアドレス帳を最初に作成した後に、簡単に既定の顧客を作成できます。
 

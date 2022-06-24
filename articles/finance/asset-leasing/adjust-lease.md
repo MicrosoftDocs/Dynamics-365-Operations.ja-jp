@@ -1,6 +1,6 @@
 ---
 title: リースの調整
-description: このトピックでは、リースを調整する方法について説明します。 リースの条件が変更された場合、リースが拡張された場合、またはその他の状況が変化した場合は、調整が必要になることがあります。
+description: この記事では、リースを調整する方法について説明します。 リースの条件が変更された場合、リースが拡張された場合、またはその他の状況が変化した場合は、調整が必要になることがあります。
 author: moaamer
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 89ec876c9bd967107635eb2955209a4dcb95cde5
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 48d1a261a43d6e3a68dfc0aae6f06c0d7d6b82db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712177"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898330"
 ---
 # <a name="adjust-leases"></a>リースの調整
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、リースを調整する方法について説明します。 リースの条件が変更された場合、リースが拡張された場合、またはその他の状況が変化した場合は、調整が必要になることがあります。 資産リースは、リースの変更に関する Accounting Standards Codification Topic 842 (ASC 842) および International Financial Reporting Standard 16 (IFRS 16) のガイダンスに準拠しています。 ASC 842-20-15-1 では、リースの変更を、リースの範囲や対価に変更を生じさせる契約条件の変更と定義しています。 IFRS 16 の パラグラフ 39 では、 賃借人はリース支払の変動を反映するようにリース負債を再評価する必要があることが示されています。
+この記事では、リースを調整する方法について説明します。 リースの条件が変更された場合、リースが拡張された場合、またはその他の状況が変化した場合は、調整が必要になることがあります。 資産リースは、リースの変更に関する Accounting Standards Codification Topic 842 (ASC 842) および International Financial Reporting Standard 16 (IFRS 16) のガイダンスに準拠しています。 ASC 842-20-15-1 では、リースの変更を、リースの範囲や対価に変更を生じさせる契約条件の変更と定義しています。 IFRS 16 の パラグラフ 39 では、 賃借人はリース支払の変動を反映するようにリース負債を再評価する必要があることが示されています。
 
 ASC 842 または IFRS 16 に準拠している組織については、リースは、将来のリース支払 (PVFMLP) の現在価値の変化を反映して再測定されます。 PVFMLP が増加した場合、作成される仕訳入力は、使用権 (ROU) 資産勘定の借方と、新規 PVFMLP と前の PVFMLP の差額に対するリース負債勘定の貸方になります。 PVFMLP が減少した場合、仕訳入力はリース負債勘定の借方になり、使用権資産勘定に対する貸方となります。
 

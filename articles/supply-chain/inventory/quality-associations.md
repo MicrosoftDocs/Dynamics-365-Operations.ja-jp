@@ -1,6 +1,6 @@
 ---
 title: 品質関連
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質関連を使用して、販売、購買、および生産プロセスに関連する品質指示を自動的に生成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の品質関連を使用して、販売、購買、および生産プロセスに関連する品質指示を自動的に生成する方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28984730e5660414eec1ba087eb5de1eba4cbbb8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4e96f301d8dec255e57f0f0fbfa9c8e1a5922ae9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887518"
 ---
 # <a name="quality-associations"></a>品質関連
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質関連を使用して、販売、購買、および生産プロセスに関連する品質指示を自動的に生成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management の品質関連を使用して、販売、購買、および生産プロセスに関連する品質指示を自動的に生成する方法について説明します。
 
 品質関連は、生成された品質指示に対する次のすべての情報を定義します。
 

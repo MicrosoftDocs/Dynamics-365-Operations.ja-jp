@@ -1,6 +1,6 @@
 ---
 title: 破棄されたカートの検出と顧客への通知の送信
-description: このトピックでは、Microsoft Dynamics 365 Commerce の破棄されたカート コネクタ サンプル アプリケーションをカスタマイズして、破棄されたカートを検出し、アラームの電子メール通知を顧客に送信する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の破棄されたカート コネクタ サンプル アプリをカスタマイズして、破棄されたカートを検出し、アラームのメール通知を顧客に送信する方法について説明します。
 author: bicyclingfool
 ms.date: 02/25/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 707640ca211e997533d0f5a0b4e6d52cb5be9db4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899213"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>破棄されたカートの検出と顧客への通知の送信
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の破棄されたカート コネクタ サンプル アプリケーションをカスタマイズして、破棄されたカートを検出し、アラームの電子メール通知を顧客に送信する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の破棄されたカート コネクタ サンプル アプリをカスタマイズして、破棄されたカートを検出し、アラームのメール通知を顧客に送信する方法について説明します。
 
 放棄されたカートの通知によって収益を回復し、顧客を維持する機能は、Dynamics 365 Commerce がサポートする重要な機能です。 コマースの放棄されたカート コネクタのサンプル アプリをカスタマイズすることで、小売業者は小売サーバー上のショッピングカートのうち、小売業者が定義した時間内に変更されていないものにアクセスすることができます。 カートを回収し、商品と顧客のデータを追加して、第三者であるメールマーケティング プロバイダーに渡し、メール通知を作成して顧客に送信することができます。
 

@@ -1,6 +1,6 @@
 ---
 title: 品目に対する安全在庫フルフィルメント
-description: このトピックでは、安全在庫フルフィルメント、および品目に対して安全在庫数量を設定する方法について説明します。
+description: この記事では、安全在庫フルフィルメント、および品目に対して安全在庫数量を設定する方法について説明します。
 author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c539b804198ddc5d5dac52c958a851ee55116711
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 70461ad1de94c984cb41e6b1d46af9e310a928d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887402"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>品目に対する安全在庫フルフィルメント
 
@@ -88,7 +88,7 @@ ms.locfileid: "8672069"
 次のシナリオでは、このパラメータがどう機能するか、およびその値の間の違いを表示します。
 
 > [!NOTE]
-> このトピックのすべての図において、X 軸は在庫、Y 軸は日付、バーは在庫レベル、矢印は販売注文明細行、購買注文明細行、または計画オーダーなどの取引を表します。
+> この記事のすべての図において、X 軸は在庫、Y 軸は日付、バーは在庫レベル、矢印は販売注文明細行、購買注文明細行、または計画オーダーなどの取引を表します。
 
 [![安全在庫フルフィルメントに対する一般的なシナリオです。](media/Scenario1.png)](media/Scenario1.png)
 

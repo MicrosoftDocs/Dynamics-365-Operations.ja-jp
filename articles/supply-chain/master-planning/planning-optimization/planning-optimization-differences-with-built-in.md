@@ -1,6 +1,6 @@
 ---
 title: 組み込みマスター計画と計画最適化の違い
-description: このトピックでは、計画の最適化がまだサポートしていない機能と、そのプログラムを計画の最適化に合わせて分析ページに示していない機能の一覧を示します。
+description: この記事では、計画の最適化がまだサポートしていない機能と、そのプログラムを計画の最適化に合わせて分析ページに示していない機能の一覧を示します。
 author: t-benebo
 ms.date: 07/30/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c73587015d6714c409819ab19ad68685aaa71cf7
-ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
+ms.openlocfilehash: cf39166dce860dbd796cb4749175628252ed96ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "8618263"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897577"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>組み込みマスター計画と計画最適化の違い
 
 [!include [banner](../../includes/banner.md)]
 
-計画の最適化の結果は、組み込みマスター計画エンジンと結果が異なる場合があります。 違いは保留されている機能が原因で引き起こさせる可能性があります。 このトピックでは、計画の最適化がまだサポートしていない機能および **[計画の最適化に合わせた解析](planning-optimization-fit-analysis.md)** ページ] に一覧化されていない機能を表示します。
+計画の最適化の結果は、組み込みマスター計画エンジンと結果が異なる場合があります。 違いは保留されている機能が原因で引き起こさせる可能性があります。 この記事では、計画の最適化がまだサポートしていない機能および **[計画の最適化に合わせた解析](planning-optimization-fit-analysis.md)** ページに一覧化されていない機能を表示します。
 
 | フィーチャー | 計画の最適化における現在の動作 |
 |---|---|

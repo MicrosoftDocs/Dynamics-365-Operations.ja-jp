@@ -1,6 +1,6 @@
 ---
 title: 原価オブジェクト コントローラーのアクセス権
-description: このトピックでは、原価オブジェクト コント ローラーのアクセス権に関する情報を提供します。
+description: この記事では、原価オブジェクト コント ローラーのアクセス権に関する情報を提供します。
 author: AndersGirke
 ms.date: 06/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13d562a4f42644b822c9548d1ea87d44a396b2c2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c40be758c5e5d1d1fb025630ed8321ae46251892
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733881"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903192"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>原価オブジェクト コントローラーのアクセス権
 
@@ -35,7 +35,7 @@ ms.locfileid: "8733881"
 |-------------------------|--------------|
 | 原価会計マネージャー | 活動     |
 | 原価経理担当         | Operations   |
-| 原価経理担当係   | Operations   |
+| 原価経理担当係   | 工程   |
 | 原価オブジェクト コントローラー  | チーム メンバー |
 
 ここでは **原価オブジェクト コントローラー** ロールをマネージャーに割り当てる方法について説明します
@@ -95,7 +95,7 @@ ms.locfileid: "8733881"
 
 > [!IMPORTANT]
 > - アクセス リスト階層が Power BI のデータに影響を及ぼす前に、アクセス リスト階層と Power BI の行レベルのセキュリティがペアリングされる必要があります。 詳細については、「[原価会計コンテンツ パックのセキュリティ設定](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)」を参照してください。
-> - このトピックでは、**原価管理** ワークスペースを使用するための前提条件を説明します。
+> - この記事では、**原価管理** ワークスペースを使用するための前提条件を説明します。
 
 その他のリソース
 

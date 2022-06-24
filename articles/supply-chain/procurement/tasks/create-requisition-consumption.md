@@ -1,6 +1,6 @@
 ---
-title: 消費要求の作成
-description: このトピックでは、要求を作成するプロセスについて説明します。
+title: 消費の要求の作成
+description: この記事では、要求を作成するプロセスについて説明します。
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5881e8a415ad37ff4bdb61b1043901c0b87ef743
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b4fc4a9f0dbd5c413300d27640512df69df30122
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671129"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888473"
 ---
-# <a name="create-a-requisition-for-consumption"></a>消費要求の作成
+# <a name="create-a-requisition-for-consumption"></a>消費の要求の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、要求を作成するプロセスについて説明します。 調達カタログで製品を検索するさまざまな方法と、カタログに存在しない製品を追加する方法を説明します。 この手順を開始する前に、[消費] を要求の既定のタイプとして設定した購買ポリシーがある必要があります。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。 この手順は、ユーザー プロファイルが作業者として設定されているユーザーのみ実施できます。 通常、このタスクを実施するのは、従業員です。 **従業員** の採用セキュリティ ロールを使用してタスクを実行することができます。または、USMF を使用する場合に、**Alicia** としてログインできます。
+この記事では、要求を作成するプロセスについて説明します。 調達カタログで製品を検索するさまざまな方法と、カタログに存在しない製品を追加する方法を説明します。 この手順を開始する前に、[消費] を要求の既定のタイプとして設定した購買ポリシーがある必要があります。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。 この手順は、ユーザー プロファイルが作業者として設定されているユーザーのみ実施できます。 通常、このタスクを実施するのは、従業員です。 **従業員** の採用セキュリティ ロールを使用してタスクを実行することができます。または、USMF を使用する場合に、**Alicia** としてログインできます。
 
 
 ## <a name="create-a-new-requisition"></a>新しい要求の作成

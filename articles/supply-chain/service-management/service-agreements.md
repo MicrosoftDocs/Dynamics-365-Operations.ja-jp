@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 559f4571a60ea8ec048b291e3b6a0a93e8bc9d44
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: cf28619e66fa5d3e86bdbb3838dc7f711916bcec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677705"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905605"
 ---
 # <a name="develop-and-establish-service-agreements-overview"></a>サービス契約の作成および締結の概要
 
@@ -72,7 +72,7 @@ ms.locfileid: "8677705"
 -  明細行が停止されるかどうか。 明細行が停止されている場合は、その明細行についてのサービス注文を作成できません。
 -  カテゴリや明細行プロパティなどの、プロジェクト設定。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [サービス契約の作成](create-service-agreements.md)
 

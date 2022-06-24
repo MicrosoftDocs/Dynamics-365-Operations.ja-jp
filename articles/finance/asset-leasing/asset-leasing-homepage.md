@@ -1,6 +1,6 @@
 ---
 title: 資産リースのホームページ
-description: このトピックでは、資産リースのドキュメントの概要と、特定のトピックへのリンクを示します。
+description: この記事では、資産リースのドキュメントの概要と、特定のトピックへのリンクを示します。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c82c54b08a7d4c603d1246c598abacc51eb88839
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710388"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889152"
 ---
 # <a name="asset-leasing-home-page"></a>資産リースのホームページ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、アセットリースで利用可能なヘルプトピックを一覧表示し、特定のトピックへのリンクを掲載しています。 
+この記事では、アセットリースで利用可能なヘルプトピックを一覧表示し、特定のトピックへのリンクを掲載しています。 
 
 資産リースは、Microsoft Dynamics 365 Finance でリースされた資産の財務トランザクションを管理、追跡、自動化するための高度な機能です。 資産リースは、国際会計基準 (IFRS 第 16 号) と米国会計基準 (ASC 第 842 号) に準拠しています。 資産リースは、リース情報を取得して処理し、初期認識、月次仕訳入力からリースの減損や終了まで、リースのライフサイクル全体の仕訳入力を生成するのに役立ちます。
 
 この機能を使用するには、システム上で有効にする必要があります。 管理者は、**機能の管理** ワークスペースを使用して、機能の状態を確認し、必要に応じて有効にすることができます。 **管理機能** ワークスペースで、**資産リース** を探して選択し、**今すぐ有効にする** ボタンをクリックします。
 
 ## <a name="asset-leasing-topics"></a>資産リースのトピック
-次のトピックでは、資産リースの構成と使用について説明します。 
+次の記事では、資産リースの構成と使用について説明します。 
 
- - [資産のリースの開始](asset-leasing-quick-start.md) - このトピックでは、資産リースの一般的な機能について説明し、ソフトウェアおよびドキュメントで使用される用語を一覧表示して定義します。
+ - [資産のリースの開始](asset-leasing-quick-start.md) - この記事では、資産リースの一般的な機能について説明し、ソフトウェアおよびドキュメントで使用される用語を一覧表示して定義します。
  
  ### <a name="set-up-asset-leasing"></a>資産リースの設定
  このトピックのグループは、組織の業務状況に適した方法で資産リースを構成する際に役立ちます。  
@@ -77,7 +77,7 @@ ms.locfileid: "8710388"
  - [リース インポート フレームワークでのリースの管理](manage-leases-thru-imprt-framewrk.md)
  
 ### <a name="asset-leasing-reporting"></a>資産リース レポート
-このトピックでは、資産のリースに使用できるレポートについて説明します。 
+この記事では、資産のリースに使用できるレポートについて説明します。 
 
  - [資産リース レポート](asset-leasing-rprts.md)
  

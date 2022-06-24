@@ -1,6 +1,6 @@
 ---
 title: COLLECTEDLIST ER 関数
-description: このトピックでは、COLLECTEDLIST 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、COLLECTEDLIST 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 12/05/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b744a2bad1f463bcc8d278b48739208689f3529da91090e76d34871c534f873
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc6ddfd434ae02e2035c11d40de831f1f52af5e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744461"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890157"
 ---
 # <a name="collectedlist-er-function"></a>COLLECTEDLIST ER 関数
 

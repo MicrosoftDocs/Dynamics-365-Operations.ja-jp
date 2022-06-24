@@ -1,6 +1,6 @@
 ---
 title: IoT インテリジェンスのシナリオ設定
-description: このトピックでは、IoT インテリジェンスのシナリオを Microsoft Dynamics 365 Supply Chain Management でコンフィギュレーションする方法について説明します。
+description: この記事では、IoT インテリジェンスのシナリオを Microsoft Dynamics 365 Supply Chain Management でコンフィギュレーションする方法について説明します。
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dddc282ef3e479d524b1dfa0c60091cad1c231e0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3172bdb81e00d20c5b1d1f3f8e4299ca69c59434
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675180"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889609"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>IoT インテリジェンスのシナリオ設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、IoT インテリジェンスのシナリオを Microsoft Dynamics 365 Supply Chain Management でコンフィギュレーションする方法について説明します。 <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
+この記事では、IoT インテリジェンスのシナリオを Microsoft Dynamics 365 Supply Chain Management でコンフィギュレーションする方法について説明します。 <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
 
-このトピックでは、マシンが停止した際に Supply Chain Management で通知を生成するように、**装置のダウンタイム** のシナリオを構成します。 このトピックでは、品目の属性が指定された範囲外である場合に通知が生成されるように、**製品品質** シナリオをコンフィギュレーションする方法、および生産スループットがしきい値を下回った場合に通知を生成するように **生産遅延** シナリオをコンフィギュレーションする方法についても説明します。
+この記事では、マシンが停止した際に Supply Chain Management で通知を生成するように、**装置のダウンタイム** のシナリオを構成します。 この記事では、品目の属性が指定された範囲外である場合に通知が生成されるように、**製品品質** シナリオをコンフィギュレーションする方法、および生産スループットがしきい値を下回った場合に通知を生成するように **生産遅延** シナリオをコンフィギュレーションする方法についても説明します。
 
 ## <a name="configure-the-equipment-downtime-scenario-in-supply-chain-management"></a>Supply Chain Management における 装置のダウンタイムシナリオの構成
 

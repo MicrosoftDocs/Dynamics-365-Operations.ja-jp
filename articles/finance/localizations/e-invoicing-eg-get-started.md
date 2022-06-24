@@ -1,6 +1,6 @@
 ---
 title: エジプト向けの電子請求
-description: このトピックでは、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management でエジプト向けの電子請求を使い始めるための情報を提供します。
+description: この記事では、Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management でエジプト向けの電子請求を使い始めるための情報を提供します。
 author: gionoder
 ms.date: 02/09/2022
 ms.topic: article
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: c2a46ef938c5dee62c0d0acd1648584df344c81a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904415"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>エジプト向けの電子請求
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、エジプト向けの電子請求を使い始めるための情報を提供します。 Regulatory Configuration Service (RCS) における、国ごとに異なる構成手順について説明します。 これらの手順は、[電子請求の設定](e-invoicing-set-up-overview.md) で説明されている手順を補完しています。
+この記事では、エジプト向けの電子請求を使い始めるための情報を提供します。 Regulatory Configuration Service (RCS) における、国ごとに異なる構成手順について説明します。 これらの手順は、[電子請求の設定](e-invoicing-set-up-overview.md) で説明されている手順を補完しています。
 
 ## <a name="prerequisites"></a>必要条件
 
-このトピックの手順を開始する前に、以下の前提条件を完了します:
+この記事の手順を開始する前に、以下の前提条件を完了します:
 
 - [電子請求の概要](e-invoicing-service-overview.md) で説明されている電子請求について理解します。
 - RCS に登録し、電子請求を設定します。 詳細については、次のトピックを参照してください。

@@ -1,6 +1,6 @@
 ---
 title: 固定資産の取得の提案
-description: このトピックでは、固定資産仕訳帳の取得提案を使用して固定資産を取得する方法について説明します。
+description: この記事では、固定資産仕訳帳の取得提案を使用して固定資産を取得する方法について説明します。
 author: moaamer
 ms.date: 03/17/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd54642e5ec6c56fbc3a5ebb07fc8fdaf5545926
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 35d2171dc828cb0227f310e81be1d3e3359f41c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725683"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909072"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>固定資産の取得の提案
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、固定資産仕訳帳の取得提案を使用して固定資産を取得する方法について説明します。 これは USMF の法人に対して経理担当ロールとデモ データを使用します。 固定資産提案仕訳帳を使用して固定資産を取得するには、最初に固定資産レコードを作成し、次に、取得価格を資産帳簿に定義する必要があります。
+この記事では、固定資産仕訳帳の取得提案を使用して固定資産を取得する方法について説明します。 これは USMF の法人に対して経理担当ロールとデモ データを使用します。 固定資産提案仕訳帳を使用して固定資産を取得するには、最初に固定資産レコードを作成し、次に、取得価格を資産帳簿に定義する必要があります。
 
 ## <a name="create-an-asset-acquisition-proposal"></a>資産取得提案を作成する
 

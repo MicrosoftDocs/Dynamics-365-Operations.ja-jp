@@ -1,6 +1,6 @@
 ---
 title: 総勘定元帳の外貨再評価
-description: このトピックでは、総勘定元帳の外貨再評価プロセスに次の概要を提供します。設定、プロセスの実行、プロセスの計算、再評価のトランザクションを取り消す方法を必要に応じて実行します。
+description: この記事では、総勘定元帳の外貨再評価プロセスに次の概要を提供します。設定、プロセスの実行、プロセスの計算、再評価のトランザクションを取り消す方法を必要に応じて実行します。
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4a138a26a23c804f5fd358d335b04aee3897dce
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720341"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904531"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>総勘定元帳の外貨再評価
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、総勘定元帳の外貨再評価プロセスに次の概要を提供します。設定、プロセスの実行、プロセスの計算、再評価のトランザクションを取り消す方法を必要に応じて実行します。 
+この記事では、総勘定元帳の外貨再評価プロセスに次の概要を提供します。設定、プロセスの実行、プロセスの計算、再評価のトランザクションを取り消す方法を必要に応じて実行します。 
 
 最終期間の一部として、会計公準に外貨の総勘定元帳勘定の残高が異なる為替レート タイプ (現在、履歴、平均など) を使用して再評価する必要があります。 たとえば、1 つの会計公準では、現在の為替レート、過去の為替レートの固定資産、および月次平均の損益勘定で再評価される必要があります。 総勘定元帳の外貨再評価を、貸借対照表および損益勘定の再評価として使用できます。 
 

@@ -1,6 +1,6 @@
 ---
 title: 製品推奨事項の有効化
-description: このトピックでは、Microsoft Dynamics 365 Commerce の顧客が使用できる人為知能の機械学習 (AI-ML) に基づいた製品推奨事項を作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の顧客が使用できる人工知能-機械学習 (AI-ML) に基づいた製品推奨事項を作成する方法について説明します。
 author: bebeale
 ms.date: 08/31/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a7be82b3a40aba621693f080ff41767fdaea474
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 3dceec9e8e994a81b43cd5d1bd13970f2d246f40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466319"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892074"
 ---
 # <a name="enable-product-recommendations"></a>製品推奨事項の有効化
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の顧客が使用できる人為知能の機械学習 (AI-ML) に基づいた製品推奨事項を作成する方法について説明します。 製品推奨事項一覧の詳細については、[製品推奨事項の概要](product-recommendations.md) を参照してください。
+この記事では、Microsoft Dynamics 365 Commerce の顧客が使用できる人工知能-機械学習 (AI-ML) に基づいた製品推奨事項を作成する方法について説明します。 製品推奨事項一覧の詳細については、[製品推奨事項の概要](product-recommendations.md) を参照してください。
 
 ## <a name="recommendations-pre-check"></a>推奨事項のプレチェック
 

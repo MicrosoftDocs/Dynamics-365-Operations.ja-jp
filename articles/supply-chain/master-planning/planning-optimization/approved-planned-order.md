@@ -1,6 +1,6 @@
 ---
 title: 計画オーダーの表示、管理、および承認
-description: このトピックでは、計画最適化で計画された注文の表示、管理、および承認を行う方法について説明します。
+description: この記事では、計画の最適化で計画された注文の表示、管理、および承認を行う方法について説明します。
 author: t-benebo
 ms.date: 04/07/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b8c17ab3934ec7bfaed710c33515243290bb8e2a
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 22c690222cdb72e2113ea137a05da21f315e5a33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468780"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887431"
 ---
 # <a name="view-manage-and-approve-planned-orders"></a>計画オーダーの表示、管理、および承認
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、計画最適化で計画された注文の表示、管理、および承認を行う方法について説明します。
+この記事では、計画の最適化で計画された注文の表示、管理、および承認を行う方法について説明します。
 
 ## <a name="view-and-manage-planned-orders"></a><a name="view-planned-orders"></a>計画オーダーの表示と管理
 

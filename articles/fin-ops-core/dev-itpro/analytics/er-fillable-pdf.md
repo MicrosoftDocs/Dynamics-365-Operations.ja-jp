@@ -1,6 +1,6 @@
 ---
 title: PDF テンプレートに入力する ER コンフィギュレーションのデザイン
-description: このトピックでは、PDF テンプレートに入力する電子レポート (ER) 形式をデザインする方法について説明します。
+description: この記事では、PDF テンプレートに入力する電子レポート (ER) 形式をデザインする方法について説明します。
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: ef9b650e9b676d79af8839c08cfbb1000a5aee5f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908593"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>PDF テンプレートに入力する ER コンフィギュレーションのデザイン
 
 [!include[banner](../includes/banner.md)]
 
-このトピックの手順は、**システム管理者** ロールまたは **電子レポート開発者** ロールのユーザーが、レポート テンプレートとしての PDF ドキュメントを使いレポートを PDF として生成する電子レポート (ER) 形式をどのようにコンフィギュレーションできるかを示す例です。 これらの手順は、Dynamics 365 Finance または Regulatory Configuration Services (RCS) のどの会社でも実行できます。
+この記事の手順は、**システム管理者** ロールまたは **電子レポート開発者** ロールのユーザーが、レポート テンプレートとしての PDF ドキュメントを使いレポートを PDF として生成する電子レポート (ER) 形式をどのように構成できるかを示す例です。 これらの手順は、Dynamics 365 Finance または Regulatory Configuration Services (RCS) のどの会社でも実行できます。
 
 ## <a name="prerequisites"></a>必要条件
 
-開始する前に、このトピックの手順を実行するために使用するサービスに応じて、次のいずれかのタイプのアクセス権を持っている必要があります。
+開始する前に、この記事の手順を実行するために使用するサービスに応じて、次のいずれかのタイプのアクセス権を持っている必要があります。
 
 - 次のいずれかのロールに対応する財務にアクセスします。
 

@@ -1,6 +1,6 @@
 ---
-title: 計画の最適化の使用を開始する
-description: このトピックでは、計画の最適化機能の使用を開始する方法について説明します。
+title: 計画最適化の開始
+description: この記事では、計画の最適化機能の使用を開始する方法について説明します。
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a08128f9529e576294181bd70134b02caae54b90
-ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
+ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648712"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900973"
 ---
 # <a name="get-started-with-planning-optimization"></a>計画最適化の開始
 
@@ -99,7 +99,7 @@ LCS プロジェクトからアドインをインストールし、Supply Chain 
 |---|---|---|
 | 接続済 | 計画の最適化サービスと Supply Chain Management の間に接続が確立されています。 | はい |
 | 接続の有効化 | 計画の最適化サービスへの接続を有効にする要求が現在進行中です。 | いいえ |
-| 接続解除済 | 計画の最適化サービスへの接続はありません。 このトピックで前述されているように、LCS から接続をオンにすることができます。 | いいえ |
+| 接続解除済 | 計画の最適化サービスへの接続はありません。 この記事で前述されているように、LCS から接続をオンにすることができます。 | 無効 |
 | 接続を無効にしています | 計画の最適化サービスへの接続をオフにする要求が現在進行中です。 | いいえ |
 | 状態を取得しています | システムは、計画の最適化サービスからのステータス情報を待機しています。 | いいえ |
 

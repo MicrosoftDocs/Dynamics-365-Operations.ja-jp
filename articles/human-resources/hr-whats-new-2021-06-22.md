@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources (2021 年 6 月 22 日) の新機能または変更された機能
-description: このトピックでは、2021 年 6 月 22 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2021 年 6 月 22 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b1d2ccf1083f34aefbe87354f03dbebd6cb5be7e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: aacb605374d99a3c0bad3438c89e33a04a4d7faf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694427"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897780"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Dynamics 365 Human Resources (2021 年 6 月 22 日) の新機能または変更された機能
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -51,9 +51,9 @@ ms.locfileid: "8694427"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新することがあります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 問題 |  説明 |
+| 問題の番号 | 問題 |  Description |
 | --- | --- | --- |
 | 583052 | フィードバックを受け取るユーザーは、受け取ったフィードバックを編集することができる | 業績仕訳に対するフィードバックを受け取った従業員が **外部リンクの追加** を選択すると、フォームが編集可能になり、従業員は受け取ったパフォーマンス フィードバックを編集できるようになります。 |
 | 522281 | 報酬管理の報酬構造タイルで従業員数を選択すると、不正確な結果になる| 報酬ワークスペースから報酬プランにドリルダウンすると、正しい従業員数が表示されるようになりました。 |

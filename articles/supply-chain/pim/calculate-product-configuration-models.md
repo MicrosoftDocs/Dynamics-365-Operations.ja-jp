@@ -1,6 +1,6 @@
 ---
 title: 製品コンフィギュレーション モデルの計算についてよく寄せられる質問
-description: このトピックでは、製品コンフィギュレーション モデルの計算に加えて、制約と計算を一緒に使用する方法について説明します。
+description: この記事では、製品コンフィギュレーション モデルの計算に加えて、制約と計算を一緒に使用する方法について説明します。
 author: t-benebo
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9463fac363f6bb25c1bd2afebe5737e47aa8b3cf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 593f6a8e28c789a378515ddc8e4163c331442e8b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570804"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890947"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>製品コンフィギュレーション モデルの計算についてよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、製品コンフィギュレーション モデルの計算に加えて、制約と計算を一緒に使用する方法について説明します。
+この記事では、製品コンフィギュレーション モデルの計算に加えて、制約と計算を一緒に使用する方法について説明します。
 
 計算は、算術または論理工程に使用できます。 これらは、製品コンフィギュレーション モデルの式の制約を補足します。 計算を **制約ベースの製品コンフィギュレーション モデルの詳細** ページで定義し、式エディターで計算式を作成できます。 計算の詳細については、「計算の作成」を参照してください。
 

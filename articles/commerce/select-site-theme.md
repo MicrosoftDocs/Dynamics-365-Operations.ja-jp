@@ -1,6 +1,6 @@
 ---
 title: サイト テーマの選択
-description: このトピックでは、Microsoft Dynamics 365 Commerce のサイトのテーマを設定または変更する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce のサイトのテーマを設定または変更する方法について説明します。
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a13400258a86087b6137b08ca724cbbfc1a90ad4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: b038dc996c571d54dce3f2aec679f7af8af85074
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964784"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900389"
 ---
 # <a name="select-a-site-theme"></a>サイト テーマの選択
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のサイトのテーマを設定または変更する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce のサイトのテーマを設定または変更する方法について説明します。
 
 サイトのレイアウトおよびスタイル (たとえば、フォント、サイズ、および色) は、選択し、サイトに適用するテーマによって定義されます。 テーマは会社の開発者が作成し、配置します。 テーマの概要については、[テーマの概要](e-commerce-extensibility/theming.md) を参照してください。 テーマを作成し、配置する方法の詳細については、[新しいテーマの作成](e-commerce-extensibility/create-theme.md) を参照してください。
 

@@ -1,6 +1,6 @@
 ---
 title: バッチ属性 (複数)
-description: このトピックは、バッチ属性に関する情報を提供します。 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 この記事は、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法も説明します。
+description: この記事では、バッチ属性に関する情報を提供します。 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 この記事では、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法についても説明します。
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceb971e7468245297f2359317533b123a3a4f83a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e5f5a03df63cf4fa90b5e9e67082a0d60eef9afc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565355"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899385"
 ---
 # <a name="batch-attributes"></a>バッチ属性 (複数)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、バッチ属性に関する情報を提供します。 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 この記事は、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法も説明します。
+この記事では、バッチ属性に関する情報を提供します。 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 この記事では、バッチ属性の割り当て方法と、バッチの引当を行うときにそれらを検索する方法についても説明します。
 
 バッチ属性は、在庫バッチを構成する原材料および完成製品の特性です。 バッチ属性は環境条件、バッチの生産に使用される原材料の品質、完成品の結果などの要因によって異なります。 使用されるバッチ属性の数とタイプは、業界によって大きく異なります。 以下はバッチ属性の 2 つの使用例です。
 

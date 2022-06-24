@@ -1,6 +1,6 @@
 ---
 title: 発注書に対する製品受領書
-description: このトピックでは、入庫の際の、製品を登録するためのさまざまなオプションについて説明します。
+description: この記事では、入庫の際の、製品を登録するためのさまざまなオプションについて説明します。
 author: GalynaFedorova
 ms.date: 11/15/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ea22357b4d966f50ef2021ba7534ae633859455
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 53925426b5df6000617b0d8cee757a551fb89c95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674396"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904046"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>発注書に対する製品受領書
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、入庫の際の、製品を登録するためのさまざまなオプションについて説明します。
+この記事では、入庫の際の、製品を登録するためのさまざまなオプションについて説明します。
 
 製品受領書は、購買注文明細行を請求書向けに処理できるように、注文された製品が入庫されたことを記録するプロセスです。 場合によっては、製品は事前登録を通過し、製品が入庫される前に、仕入先からの追加情報が記録されます。 製品が着荷すると、まず **登録済** としてマークされます。 その後製品は、**受取済** として最終的にマークされる前に、品質管理などの追加のプロセスを経由します。
 

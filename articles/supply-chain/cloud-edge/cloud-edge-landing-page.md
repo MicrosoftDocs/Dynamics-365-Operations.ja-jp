@@ -1,6 +1,6 @@
 ---
 title: 分散ハイブリッド トポロジのスケール ユニット
-description: このトピックでは、製造および倉庫管理のワークロードのクラウドおよびエッジのスケール ユニットに関する情報を提供します。
+description: この記事では、製造および倉庫管理のワークロードのクラウドおよびエッジのスケール ユニットに関する情報を提供します。
 author: Mirzaab
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 5ec846b294cd9ca62ff15a5306e012813c77e306
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6b53822238220ccfcf538d49285e051c49c57189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676354"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893674"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>分散ハイブリッド トポロジのスケール ユニット
 
@@ -25,7 +25,7 @@ ms.locfileid: "8676354"
 > [!IMPORTANT]
 > Microsoft Dynamics 365 Supply Chain Management のスケール ユニット機能は、サービスの使用を管理する条項に基づいて提供されます。 詳細については、[Microsoft Dynamics の法的情報](https://go.microsoft.com/fwlink/?LinkID=290927) を参照してください。
 >
-> クラウドおよびエッジのスケール ユニットを有効にする際、クラウドおよびエッジのスケール ユニットの構成と処理に関連するデータが米国にあるデータ センターに保存されることを理解できることを確認するよう求められます。 クラウドおよびエッジのスケール ユニットのデータ処理の詳細については、このトピックの後半の[スケール ユニットの管理中のデータ処理](#data-processing-management) セクションを参照してください。
+> クラウドおよびエッジのスケール ユニットを有効にする際、クラウドおよびエッジのスケール ユニットの構成と処理に関連するデータが米国にあるデータ センターに保存されることを理解できることを確認するよう求められます。 クラウドおよびエッジのスケール ユニットのデータ処理の詳細については、この記事の後半の [スケール ユニットの管理中のデータ処理](#data-processing-management) セクションを参照してください。
 
 ## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>分散ハイブリッド トポロジの主な価値提案
 
@@ -48,7 +48,7 @@ ms.locfileid: "8676354"
 
 *ワークロード* とは、定義された一連のビジネス機能であり、除外してスケール ユニットに委任することができます。 倉庫管理のワークロードはリリースされましたが、製造実行のワークロードは引き続きプレビュー段階にあります。
 
-[スケール ユニット マネージャー ポータル](https://sum.dynamics.com) を使用して、選択したワークロードのハブ環境とクラウドのスケール ユニットを構成することができます。 スケール ユニットごとに複数のワークロードを割り当てることもできます。 現在のリリースでのクラウド スケール ユニットの前提条件と制限については、このトピックの後半の[クラウド スケール ユニットの前提条件と制限](#cloud-scale-unit-prerequisites) を参照してください。
+[スケール ユニット マネージャー ポータル](https://sum.dynamics.com) を使用して、選択したワークロードのハブ環境とクラウドのスケール ユニットを構成することができます。 スケール ユニットごとに複数のワークロードを割り当てることもできます。 現在のリリースでのクラウド スケール ユニットの前提条件と制限については、この記事の後半の [クラウド スケール ユニットの前提条件と制限](#cloud-scale-unit-prerequisites) を参照してください。
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>スケール ユニットの専用の倉庫管理ワークロード機能
 

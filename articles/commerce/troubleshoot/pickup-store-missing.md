@@ -1,6 +1,6 @@
 ---
 title: 選択した店舗の一覧に小売店舗が表示されません
-description: このトピックでは、店舗の一覧に小売店舗が表示されない場合に役立つトラブルシューティングガイドを示します。
+description: この記事には、店舗の一覧に小売店舗が表示されない場合に役立つトラブルシューティング ガイドが含まれます。
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 6ccd60082b65fdbd47fef4a67ba269d7d7afc04679647d3eb8d2a5e9c21a19b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 936b3df3194fbdacf8e853ed60431b077f4015cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762623"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905259"
 ---
 # <a name="retail-store-doesnt-appear-in-the-list-of-stores-to-pick-up-from"></a>選択した店舗の一覧に小売店舗が表示されません
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、店舗の一覧に小売店舗が表示されない場合に役立つトラブルシューティングガイドを示します。
+この記事には、店舗の一覧に小売店舗が表示されない場合に役立つトラブルシューティング ガイドが含まれます。
 
 ## <a name="description"></a>説明
 

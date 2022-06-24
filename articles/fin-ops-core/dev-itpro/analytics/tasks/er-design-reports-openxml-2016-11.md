@@ -1,6 +1,6 @@
 ---
 title: OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)
-description: このトピックでは、OPENXML 形式で電子ドキュメントを生成するためのテンプレートを含む新しい電子申告 (ER) コンフィギュレーションを作成する方法について説明します。
+description: この記事では、OPENXML 形式で電子ドキュメントを生成するためのテンプレートを含む新しい電子申告 (ER) 構成を作成する方法について説明します。
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3dfe6ce9c918b5fccbd7097096fa359facdf41bbf6fd0fab6c61153171484cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b2325a5389e0bfe1efff17e5cd117ad8dbcd65d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753031"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908416"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>OPENXML 形式でレポートを生成する ER コンフィギュレーションを設計する (2016 年 11 月)
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、電子ドキュメントを OPENXML 形式で生成するためのテンプレートを含む新しい電子申告 (ER) のコンフィギュレーションを作成する方法を説明します。 このコンフィギュレーションは、仕入先支払を処理するために使用されます。
+この記事では、システム管理者または電子申告開発者の役割のユーザーが、電子ドキュメントを OPENXML 形式で生成するためのテンプレートを含む新しい電子申告 (ER) の構成を作成する方法を説明します。 このコンフィギュレーションは、仕入先支払を処理するために使用されます。
 
 この例では、サンプル会社 Litware, Inc. のコンフィギュレーションを作成します。これらの手順は GBSI 会社で実行されます。
 

@@ -1,6 +1,6 @@
 ---
 title: 電子申告 (ER) 拡張形式の検索
-description: このトピックでは、必要な形式がグローバル リポジトリに格納されている場合に、ER 形式参照を ER 形式検索で設定する方法について説明します。
+description: この記事では、必要な形式がグローバル リポジトリに格納されている場合に、ER 形式参照を ER 形式検索で設定する方法について説明します。
 author: NickSelin
 ms.date: 03/17/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 2b69ba1b3b27f447b58cf98b1140a481b01b735a
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: ae544b8ed4e280ffcaf58d893056a4bf5169e379
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324141"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901651"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>ユーザーがグローバル リポジトリから形式を照会する ER 形式の参照を設定できるようにする
 

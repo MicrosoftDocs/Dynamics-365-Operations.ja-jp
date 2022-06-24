@@ -1,6 +1,6 @@
 ---
 title: 電子請求に関する FAQ
-description: このトピックでは、電子請求についてのよくある質問に関する情報を提供します。
+description: この記事では、電子請求についてのよくある質問に関する情報を提供します。
 author: gionoder
 ms.date: 04/21/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2d4e7c79c83b9d60469c2b87a7b9120e0d4c13a695badfb2254a85cee629c933
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbb43438a9da567460eb744afb64dae5274f04a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904357"
 ---
 # <a name="electronic-invoicing-faq"></a>電子請求に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、電子請求サービスについてよく寄せられる質問への回答を提供します。 電子請求は、Dynamics 365 Finance、Dynamics 365 Supply Chain Management、および Dynamics 365 Project Operations に存在する電子請求機能を拡張したものです。 
+この記事では、電子請求サービスについてよく寄せられる質問への回答を提供します。 電子請求は、Dynamics 365 Finance、Dynamics 365 Supply Chain Management および Dynamics 365 Project Operations に存在する電子請求機能を拡張したものです。 
 
 ## <a name="what-is-important-about-electronic-invoicing-and-why-should-it-matter-to-my-organization"></a>電子請求についての重要事項と、それが組織にとって重要な理由を教えてください。
 

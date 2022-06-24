@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce 評価環境のコンフィギュレーション
-description: このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニング後に構成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニング後に構成する方法について説明します。
 author: psimolin
 ms.date: 05/12/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9738700ca495d54c91ad91aa9c5a3d32c95a5a5
-ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
+ms.openlocfilehash: 19d88139e35554bce68bc6203141957b96e439a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8747640"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892333"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境のコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニング後に構成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニング後に構成する方法について説明します。
 
-このトピックに記載の手順は、コマースの評価環境がプロビジョニングされた後でのみ着手してください。 コマースの評価環境をプロビジョニングする方法については、[コマースの評価環境のプロビジョニング](provisioning-guide.md) を参照してください。
+この記事に記載の手順は、コマースの評価環境がプロビジョニングされた後でのみ着手してください。 コマースの評価環境をプロビジョニングする方法については、[コマースの評価環境のプロビジョニング](provisioning-guide.md) を参照してください。
 
 コマースの評価環境をエンドツーエンドでプロビジョニングした後は、環境の評価を開始する前に、プロビジョニング後の追加の構成ステップを完了する必要があります。 これらの手順を完了するには、Microsoft Dynamics Lifecycle Services (LCS) と Dynamics 365 Commerce を使用する必要があります。
 

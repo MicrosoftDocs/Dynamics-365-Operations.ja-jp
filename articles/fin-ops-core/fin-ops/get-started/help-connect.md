@@ -1,6 +1,6 @@
 ---
 title: 財務と運用アプリのヘルプ エクスペリエンスの構成
-description: このトピックでは、一部の Microsoft Dynamics 365 アプリのヘルプシステムのコンポーネントに関する情報を提供します。
+description: この記事では、一部の Microsoft Dynamics 365 アプリのヘルプシステムのコンポーネントに関する情報を提供します。
 author: margoc
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071011"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900132"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>財務と運用アプリのヘルプ エクスペリエンスの構成
 
@@ -29,7 +29,7 @@ ms.locfileid: "8071011"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、Dynamics 365 Human Resources などの財務と運用アプリに関するヘルプ システムのコンポーネントの概要を説明します。 また、これらのコンポーネントの接続方法と、ユーザー定義のヘルプを作成するプロセスの概要についても説明します。
+この記事では、Microsoft Dynamics 365 Finance、Dynamics 365 Supply Chain Management、Dynamics 365 Commerce、Dynamics 365 Human Resources などの財務と運用アプリに関するヘルプ システムのコンポーネントの概要を説明します。 また、この記事では、これらのコンポーネントの接続方法と、ユーザー定義のヘルプを作成するプロセスの概要についても説明します。
 
 ## <a name="help-architecture"></a>ヘルプ アーキテクチャ
 

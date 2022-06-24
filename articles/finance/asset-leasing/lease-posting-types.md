@@ -1,6 +1,6 @@
 ---
 title: リース転記タイプ
-description: このトピックでは、資産のリース契約トランザクションに使用される転記タイプについて説明します。
+description: この記事では、資産のリース契約トランザクションに使用される転記タイプについて説明します。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6c06f68aebe7ed1ccc944793591202a9a221c42b
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 26917ed0017e43c2be5ee53e472ad57d12db0978
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720142"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889065"
 ---
 # <a name="lease-posting-types"></a>リース転記タイプ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、資産のリース契約トランザクションに使用される転記タイプについて説明します。
+この記事では、資産のリース契約トランザクションに使用される転記タイプについて説明します。
 
 ## <a name="lease-asset"></a>リース資産
 

@@ -1,6 +1,6 @@
 ---
 title: 勘定配布
-description: このトピックでは、勘定配布についての情報を提供し、使用可能な処理オプションについて説明します。
+description: この記事では、勘定配布についての情報を提供し、使用可能な処理オプションについて説明します。
 author: sunfzam
 ms.date: 09/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8178836318600fd6e702d097062d30b91e6c1a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735580"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894203"
 ---
 # <a name="accounting-distributions"></a>勘定配賦
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、勘定配布についての情報を提供し、それらを処理するために使用できるオプションについて説明します。 勘定配布は特定の勘定科目に元伝票の金額を割り当てるのに使用されます。 
+この記事は、勘定配布についての情報を提供し、それらを処理するために使用できるオプションについて説明します。 勘定配布は特定の勘定科目に元伝票の金額を割り当てるのに使用されます。 
 
 勘定配布は、発注書、仕入先請求書、経費精算書および自由書式の請求書などの各元伝票によって、使用され、拡張されるプログラム全体にわたる機能です。 既定では、既定の勘定配布は、各元伝票明細行と金額に対して生成され、条件付きで変更が有効になります。 
 

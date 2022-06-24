@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5b8641655cf31453f6fc11e2056fb6bf96a43cbc
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8faf0be5f094f18b75f2263fa622c9b7f3983274
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696266"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899766"
 ---
 # <a name="configure-and-manage-database-logging"></a>データベース ログの構成と管理
 
@@ -28,7 +28,7 @@ ms.locfileid: "8696266"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-データベース ログを使用すると、Dynamics 365 Human Resources のテーブルとフィールドに対する変更を追跡できます。 このトピックでは、次の方法について説明します:
+データベース ログを使用すると、Dynamics 365 Human Resources のテーブルとフィールドに対する変更を追跡できます。 この記事では、次の方法について説明します。
 
 - データベース ログのセキュリティとパフォーマンスの管理
 - データベース ログの設定

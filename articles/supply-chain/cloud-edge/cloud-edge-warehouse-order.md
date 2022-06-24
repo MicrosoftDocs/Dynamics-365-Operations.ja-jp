@@ -1,6 +1,6 @@
 ---
 title: クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
-description: このトピックでは、倉庫のスケール ユニット ワークロードの一部として使用される倉庫オーダー機能について説明します。
+description: この記事では、倉庫のスケール ユニット ワークロードの一部として使用される倉庫オーダー機能について説明します。
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: db254216e6c34b81f83c87a8fda454d0aeb1cece
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471695"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893529"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する倉庫オーダー
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> スケール ユニット ワークロードが使用されている場合、すべてのビジネス機能がパブリック プレビューで完全にサポートされているわけではありません。 スケール ユニットを使用している場合、このトピックでサポート対象として明示的に説明したプロセスのみを使用してください。
+> スケール ユニット ワークロードが使用されている場合、すべてのビジネス機能がパブリック プレビューで完全にサポートされているわけではありません。 スケール ユニットを使用している場合、この記事でサポート対象として明示的に説明したプロセスのみを使用してください。
 
 ## <a name="what-are-warehouse-orders"></a>倉庫オーダーとは何ですか?
 

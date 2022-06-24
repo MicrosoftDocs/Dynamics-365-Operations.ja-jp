@@ -1,6 +1,6 @@
 ---
 title: POS の出荷オプションから配送業者以外の配送モードを非表示にする
-description: このトピックでは、販売時点管理 (POS) アプリケーションで出荷注文が作成された際、配送業者以外の配送モードが選択に表示されないようにする構成オプションについて説明します。
+description: この記事では、販売時点管理 (POS) アプリケーションで出荷注文が作成された際、配送業者以外の配送モードが選択に表示されないようにする構成オプションについて説明します。
 author: hhainesms
 ms.date: 10/24/2019
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 4d885aa7ab3b4daaebb1fa8378562d86cc153270ea166b495bf3381fae826773
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 469e6ebb8afed26a6bf25f4c9c3ab8f7f4ac78ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773888"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897008"
 ---
 # <a name="hide-non-carrier-delivery-modes-from-the-shipping-options-in-pos"></a>POS の出荷オプションから配送業者以外の配送モードを非表示にする
 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) アプリケーションで使用可能な構成オプションについて説明します。 この構成オプションにより、POS で出荷注文が作成された際の配送モードの選択動作が変更されます。
+この記事では、販売時点管理 (POS) アプリケーションで使用可能な構成オプションについて説明します。 この構成オプションにより、POS で出荷注文が作成された際の配送モードの選択動作が変更されます。
 
 POS で顧客の出荷注文を作成する際、出荷の配送モードを選択できます。 この機能は、注文全体が出荷されているか、選択された明細行のみであるかにかかわらず使用可能です。
 

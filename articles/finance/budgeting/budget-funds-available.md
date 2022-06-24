@@ -1,6 +1,6 @@
 ---
 title: 利用可能な予算財源
-description: このトピックでは、利用可能な予算資金機能を紹介し、組織の財源管理を最適化するための予算管理設定に役立つ情報を提供します。
+description: この記事では、利用可能な予算資金機能を紹介し、組織の財源管理を最適化するための予算管理設定に役立つ情報を提供します。
 author: RyanCCarlson2
 ms.date: 11/22/2021
 ms.topic: article
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2021-11-28
 ms.dyn365.ops.version: AX 10.0.24
-ms.openlocfilehash: 1e7b2bf7ef7bd1bca6db27371f87dfddcdceef89
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b6f94931ba3514c1c66d80b64846d882861d555c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710252"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898243"
 ---
 # <a name="budget-funds-available"></a>利用可能な予算財源
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、利用可能な予算資金機能を紹介し、組織の財源管理を最適化するための予算管理設定に役立つ情報を提供します。
+この記事では、利用可能な予算資金機能を紹介し、組織の財源管理を最適化するための予算管理設定に役立つ情報を提供します。
 
 ## <a name="enhanced-calculation-feature-for-budget-funds-available"></a>予算資金の計算機能を強化
 

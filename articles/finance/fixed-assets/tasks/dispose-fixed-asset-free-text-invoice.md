@@ -1,6 +1,6 @@
 ---
 title: 自由書式の請求書を使用した固定資産の処分
-description: このトピックでは、固定資産仕訳帳の取得提案を使用して固定資産を取得する方法について説明します。
+description: この記事では、固定資産仕訳帳の取得提案を使用して固定資産を取得する方法について説明します。
 author: moaamer
 ms.date: 08/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 711ab4b4798127ca54d7138b0aae02d71fe8bec3
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: bb930bd35aa86c6bc3b2e7a5577ff16e3feb151a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713569"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896437"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>自由書式の請求書を使用した固定資産の処分
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、自由書式の請求書を使用した固定資産の廃棄方法を説明します。
+この記事では、自由書式の請求書を使用した固定資産の廃棄方法を説明します。
 
 1. ナビゲーション ウィンドウで、**モジュール > 売掛金勘定 > 請求書 > すべての自由書式の請求書** の順に移動します。
 2. **新規** を選択します。

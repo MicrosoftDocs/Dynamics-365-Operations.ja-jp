@@ -1,6 +1,6 @@
 ---
 title: ノルウェーのキャッシュ レジスタの配置ガイドライン
-description: このトピックでは、ノルウェーの Microsoft Dynamics 365 Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。
+description: この記事では、ノルウェーの Microsoft Dynamics 365 Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: f0744b18ed59c692ae336c92e488d339ae158368
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 1f2226432237662e28b9e26017020ab81bb6026b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077143"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899070"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>ノルウェーのキャッシュ レジスタの配置ガイドライン
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、ノルウェーの Microsoft Dynamics 365 Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。 ローカライズは、コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引の登録、販売取引のデジタル署名、およびローカルの形式でレポートの印刷ができます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。 ノルウェー向け Commerce の設定方法の詳細については、[ノルウェー向け Commerce の設定](./emea-nor-cash-registers.md#setting-up-commerce-for-norway)を参照してください。
+この記事では、ノルウェーの Microsoft Dynamics 365 Commerce のローカライズで、キャッシュ レジスター機能を有効化する方法について説明します。 ローカライズは、コンポーネントのいくつかの拡張機能で構成されます。 たとえば、拡張機能を使用すると、カスタム フィールドをレシートに印刷、追加の監査イベント、販売取引、および販売時点管理 (POS) での支払取引の登録、販売取引のデジタル署名、およびローカルの形式でレポートの印刷ができます。 ノルウェーのローカライズの詳細については、 [ノルウェーのキャッシュ レジスター機能](./emea-nor-cash-registers.md) を参照してください。 ノルウェー向け Commerce の設定方法の詳細については、[ノルウェー向け Commerce の設定](./emea-nor-cash-registers.md#setting-up-commerce-for-norway)を参照してください。
 
 > [!WARNING]
 > [新たに独立した梱包および拡張モデル](../dev-itpro/build-pipeline.md)の制限により、現在、このローカライズ機能は使用できません。 Microsoft Dynamics Lifecycle Services (LCS) の開発者用仮想マシン (VM) 上で、前バージョンの Retail ソフトウェア開発キット (SDK) に含まれるノルウェー用デジタル署名サンプルのバージョンを使用する必要があります。 詳細は、[ノルウェー向けキャッシュ レジスター展開ガイドライン (レガシ)](./emea-nor-loc-deployment-guidelines.md)を参照してください。

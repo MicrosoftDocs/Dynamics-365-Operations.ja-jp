@@ -1,6 +1,6 @@
 ---
 title: 国立モーター貨物の分類 (NMFC) コード
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management で国立モーター貨物の分類 (NMFC) コードの使用方法について説明します
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management で国立モーター貨物の分類 (NMFC) コードの使用方法について説明します
 author: Weijiesa
 ms.date: 04/22/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 5127e132a8c06815e9ecd11338c729cd8bb87f18
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 522e4d4e26b04b5ca1dd317e433c5a20ff3cb12e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670583"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893268"
 ---
 # <a name="national-motor-freight-classification-nmfc-codes"></a>国立モーター貨物の分類 (NMFC) コード
 
@@ -31,7 +31,7 @@ NMFCコードは、トラックの負荷より小さい (LTL) すべての出荷
 - この分類は特定の積荷の原価を決定するのに使用されるため、会社にとって不可欠な場合があります。
 - 会社は、LTL 物流および輸送会社の収益性を特定できます。
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management での NMFC コードの使用方法について説明します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management での NMFC コードの使用方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 

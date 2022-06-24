@@ -1,6 +1,6 @@
 ---
 title: 承認仕訳帳を使用した買掛金勘定への請求書データの入力
-description: このトピックでは、仕入帳を使用して請求書を作成した後、承認仕訳帳を使用して経費勘定を更新する方法について説明します。
+description: この記事では、仕入帳を使用して請求書を作成した後、承認仕訳帳を使用して経費勘定を更新する方法について説明します。
 author: abruer
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ce66a4b92f26bcec0849accad3878aef2b2f658
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: afe1471949bbf892f4e28ed3bea830ee491a517f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109661"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909217"
 ---
 # <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a>承認仕訳帳を使用した買掛金勘定への請求書データの入力
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、仕入帳を使用して請求書を作成した後、承認仕訳帳を使用して経費勘定を更新する方法について説明します。
+この記事では、仕入帳を使用して請求書を作成した後、承認仕訳帳を使用して経費勘定を更新する方法について説明します。
 
 ## <a name="create-and-post-and-invoice"></a>請求書の作成と転記
 1. ナビゲーション ウィンドウで、**モジュール > 買掛金勘定 > 請求書 > 仕入帳** の順に移動します。

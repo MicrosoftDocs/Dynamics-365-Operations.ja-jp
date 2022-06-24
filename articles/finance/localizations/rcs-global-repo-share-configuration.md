@@ -1,6 +1,6 @@
 ---
 title: 外部組織で RCS/グローバル レポジトリの ER 構成を共有する
-description: このトピックでは、Microsoft Regulatory Configuration Service (RCS) 、またはグローバル レポジトリの電子レポート (ER) の構成を外部組織と直接共有する方法について説明します。
+description: この記事では、Microsoft Regulatory Configuration Services (RCS) 、またはグローバル レポジトリの電子レポート (ER) の構成を外部組織と直接共有する方法について説明します。
 author: JaneA07
 ms.date: 05/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ee7feef83ffa458e7cbd238d37a0f343d1a202f48002da67823df024bb609d02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 976a86aee75581d1afa764bea049b6c0eaecf9f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719176"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888926"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Microsoft Regulatory Configuration Service (RCS) のグローバル レポジトリの電子レポート (ER) の構成を外部組織と共有する
 
@@ -36,7 +36,7 @@ Microsoft Regulatory Configuration Service (RCS) を使用すると、電子レ�
 
 また、RCS 環境がプロビジョニングされていることを確認しておく必要があります。
 
-1. Finance and Operations アプリで、**組織管理** \> **ワークスペース** \> **電子レポート** に移動します。
+1. Finance and Operations アプリで、**組織管理** \> **ワークスペース** \> **電子レポート** の順に移動します。
 2. RCS 環境がご利用の会社にプロビジョニングされていない場合は、**Regulatory services – 外部の構成** を選択し、続いてプロビジョニングの指示に従います。
 
 RCS 環境が既にプロビジョニングされている場合は、[サインイン] オプションを選択して、ページの URL を使用してこの機能にアクセスします。
@@ -67,7 +67,7 @@ RCS 環境が既にプロビジョニングされている場合は、[サイン
 
     ![外部組織との構成バージョンを共有するダイアログ ボックス。](media/1_RCS_Repo_for_Share_with_form.JPG)
 
-構成が外部組織と共有され、その組織ではグローバルリポジトリで利用できるようになります。 そこから RCS の組織のインスタンスにインポートをする、または組織の Finance and Operations アプリのインスタンスにインポートすることができます。
+構成が外部組織と共有され、その組織ではグローバルリポジトリで利用できるようになります。 そこから RCS の組織のインスタンスにインポートをする、または組織の財務と運用アプリのインスタンスにインポートすることができます。
 
 6. 外部組織と既に共有されている構成の共有を解除するには、構成を選択して **共有解除** をクリックし、**OK** をクリックします
 

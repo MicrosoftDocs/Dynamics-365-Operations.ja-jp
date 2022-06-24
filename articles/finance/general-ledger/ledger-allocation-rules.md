@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fa58a7b072b75fe5a58f6d04bd6426f2958f1f8
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f5fbcee713625c597080d1d63ba0ffc70f088799
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901287"
 ---
 # <a name="ledger-allocation-rules"></a>元帳配賦ルール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、元帳の配賦ルールに関する情報を提供します。 これらの配賦ルールのさまざまなコンポーネントと使用できる配賦方法を説明します。
+この記事は、元帳配賦ルールに関する情報を提供します。 これらの配賦ルールのさまざまなコンポーネントと使用できる配賦方法を説明します。
 
 元帳配賦ルールを使用すると、自動的に配賦仕訳帳と勘定項目の計算と生成を行い、元帳残高や固定金額を配賦できます。 配賦方法には、変動的または固定があります。 次の配賦方法が、元帳配賦ルールに使用できます。
 

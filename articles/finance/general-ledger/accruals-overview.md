@@ -1,6 +1,6 @@
 ---
 title: 見越計上の概要
-description: このトピックでは、見越し計上について説明し、その設定方法およびトランザクションの作成方法に関する情報を提供します。
+description: この記事は、見越し計上について説明し、その設定方法およびトランザクションの作成方法に関する情報を提供します。
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62b56e698d3d9eeec08824eb799d74a8c6792ea7
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 2e10842929ba58b845a1df949ecb7c776ae077e8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735235"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904704"
 ---
 # <a name="accruals-overview"></a>見越計上の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、見越し計上について説明し、その設定方法およびトランザクションの作成方法に関する情報を提供します。
+この記事は、見越し計上について説明し、その設定方法およびトランザクションの作成方法に関する情報を提供します。
 
 発生主義会計では、見越計上は、支払を受け取ったときではなく獲得した期間に認識された収益を追跡するために、支払ったときではなく経費の発生時に認識された経費 (原価) を追跡するために、使用されます。
 

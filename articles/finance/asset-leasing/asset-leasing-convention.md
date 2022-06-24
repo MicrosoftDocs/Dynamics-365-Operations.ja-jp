@@ -1,6 +1,6 @@
 ---
 title: 資産リース規則
-description: このトピックは、リース資産の規則について説明します。
+description: この記事は、リース資産の規則について説明します。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e0aabce46e47079b754b8ac674b205cf00b5e26
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f2f0e21b20a969c0847ce3a6eb167287c1d7ee3e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898272"
 ---
 # <a name="asset-leasing-conventions"></a>資産リース規則
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックは、リース資産の規則について説明します。 リース規則は、リース帳簿の開始日を決定するために使用されます。 リース規則が **なし** に設定されている場合、開始日はリースの開始日と同じになります (**リース開始日** フィールドの値)。 リース規則が **満 1 か月** 設定されている場合、開始日はリースを開始した月の最初の日になります。
+この記事は、リース資産の規則について説明します。 リース規則は、リース帳簿の開始日を決定するために使用されます。 リース規則が **なし** に設定されている場合、開始日はリースの開始日と同じになります (**リース開始日** フィールドの値)。 リース規則が **満 1 か月** 設定されている場合、開始日はリースを開始した月の最初の日になります。
 
 その開始日によって、負債償却および資産減価償却スケジュールの期間の開始日が決まります。 支払利息と減価償却費は、関連するスケジュールの期間終了日に転記されます。 初期認識および調整仕訳入力は、開始日に転記されます。
 

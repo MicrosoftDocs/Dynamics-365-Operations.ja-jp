@@ -1,6 +1,6 @@
 ---
 title: 個人の連絡先の適格性オプションのコンフィギュレーション
-description: このトピックでは、Microsoft Dynamics 365 Human Resources で、個人の連絡先の適格性オプションを構成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Human Resources で、個人の連絡先の適格性オプションを構成する方法について説明します。
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e145acf6a6ba3333acfcc6e66dadd1f7d5deac65
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 82bb7c037b4e0ab9950ce4c314c03a0f2d713bbd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692313"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895934"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>個人の連絡先の適格性オプションのコンフィギュレーション
 
@@ -28,7 +28,7 @@ ms.locfileid: "8692313"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Microsoft Dynamics 365 Human Resources で給付金で使用できる個人の連絡先のタイプをコンフィギュレーションする方法について説明します。 個人の連絡先は、プランの対象となる個人 (扶養家族)、または計画から益を得る個人 (受益者) です。 通常、扶養家族は配偶者または子です。 受益者は、配偶者、子、信頼関係にある人、または親とすることができます。
+この記事では、Microsoft Dynamics 365 Human Resources で給付金で使用できる個人の連絡先のタイプをコンフィギュレーションする方法について説明します。 個人の連絡先は、プランの対象となる個人 (扶養家族)、または計画から益を得る個人 (受益者) です。 通常、扶養家族は配偶者または子です。 受益者は、配偶者、子、信頼関係にある人、または親とすることができます。
 
 1. **給付金管理** ワーク スペースの **設定** で、**個人の連絡先適格性オプション** を選択します。
 

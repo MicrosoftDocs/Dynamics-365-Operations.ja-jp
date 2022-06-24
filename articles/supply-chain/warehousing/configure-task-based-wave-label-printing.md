@@ -1,6 +1,6 @@
 ---
 title: ウェーブ中にウェーブ ラベルの印刷をスケジュールする
-description: このトピックでは、タスク ベースのウェーブ ラベル印刷用の機能を設定および使用する方法について説明します。
+description: この記事では、タスク ベースのウェーブ ラベル印刷用の機能を設定および使用する方法について説明します。
 author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920152"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889460"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>ウェーブ中にウェーブ ラベルの印刷をスケジュールする
 
@@ -30,7 +30,7 @@ ms.locfileid: "7920152"
 
 ## <a name="turn-on-the-task-based-wave-label-printing-feature-in-feature-management"></a>機能管理でのタスク ベースのウェーブ ラベル印刷機能の有効
 
-このトピックで説明する機能を使用するには、システムで機能を有効にする必要があります。 [機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースを使用して、機能を次に示す順番で有効にします。
+この記事で説明する機能を使用するには、システムで機能を有効にする必要があります。 [機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースを使用して、機能を次に示す順番で有効にします。
 
 1. *ウェーブ ラベルの印刷* – この機能では、ウェーブ ラベルの印刷に対して、ラベルの印刷を簡単に行う方法を有効にする場合に必要です。
 1. *組織全体の作業のブロック* - この機能ではスケジュールされた作業作成の手動と自動の両方の構成に必要です。 (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です)。

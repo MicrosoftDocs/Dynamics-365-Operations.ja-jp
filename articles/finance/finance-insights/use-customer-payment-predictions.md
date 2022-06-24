@@ -1,6 +1,6 @@
 ---
 title: 顧客支払予測の使用
-description: このトピックでは、Finance 分析情報の試用版を使用するために必要な前提条件と手順について説明します。
+description: この記事では、Finance Insights の試用版を使用するために必要な前提条件と手順について説明します。
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ecc864485dfc106df22b48e92a85f2c73d58e0e8
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 330642624b55a6772ef149b70873021401a6bd83
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740627"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901405"
 ---
 # <a name="use-customer-payment-predictions"></a>顧客支払予測の使用
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、顧客支払予測の使用方法について説明します。 この機能を使用する前に、そのためのセットアップ手順が完了していることを確認してください。 詳細については、[顧客支払予測の有効化](enable-cust-paymnt-prediction.md)を参照してください。
+この記事では、顧客支払予測の使用方法について説明します。 この機能を使用する前に、そのためのセットアップ手順が完了していることを確認してください。 詳細については、[顧客支払予測の有効化](enable-cust-paymnt-prediction.md)を参照してください。
 
 **顧客の与信および回収の管理** ワークスペース、および 2 つの新しいリスト ページ **トランザクション支払予測** と **顧客支払予測** で、顧客支払予測を表示できます。
 

@@ -1,6 +1,6 @@
 ---
-title: 給与作業者の福利厚生計画
-description: このトピックでは、Dynamics 365 Human Resources における給与労働者福利厚生計画エンティティに対するクエリの詳細および例を示します。
+title: 給与作業者の給付金計画
+description: この記事では、Dynamics 365 Human Resources における給与労働者福利厚生計画エンティティに対するクエリの詳細および例を示します。
 author: twheeloc
 ms.date: 07/28/2021
 ms.topic: article
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ade1c789716ea5f559a73c8551b7c1adf030b806
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: ef45855d9e60131ac065ae6e2769b71ae3f69537
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902288"
 ---
-# <a name="payroll-worker-benefit-plan"></a>給与作業者の福利厚生計画
+# <a name="payroll-worker-benefit-plan"></a>給与作業者の給付金計画
 
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の給与労働者福利厚生計画エンティティについて説明します。
+この記事では、Dynamics 365 Human Resources の給与労働者福利厚生計画エンティティについて説明します。
 
 物理名 : mshr_payrollworkerbenefitplanentities。
 

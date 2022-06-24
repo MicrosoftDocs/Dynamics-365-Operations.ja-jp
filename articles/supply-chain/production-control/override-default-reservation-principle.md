@@ -1,6 +1,6 @@
 ---
-title: 生産材料の既定の予約原則の上書き
-description: このトピックでは、生産部品表 (BOM) またはバッチ オーダー フォーミュラの一部である各品目に対して、異なる予約原則を自動的に適用できるよう、各品目モデル グループに対して既定の予約原則を設定する方法について説明します。
+title: 生産材料の既定の予約原則のオーバーライド
+description: この記事では、生産部品表 (BOM) またはバッチ オーダー フォーミュラの一部である各品目に対して、異なる予約原則を自動的に適用できるよう、各品目モデル グループに対して既定の予約原則を設定する方法について説明します。
 author: johanhoffmann
 ms.date: 12/10/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 11fd2c08c8730d50553b1fc6493908940a022c05
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 381b7fa5046df8f2734e4b242058eb9a673388cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689034"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907235"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>生産材料の既定の予約原則の上書き
 

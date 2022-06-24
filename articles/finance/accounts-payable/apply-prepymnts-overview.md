@@ -1,6 +1,6 @@
 ---
 title: 仕入先に前払の請求書を自動的に適用する
-description: このトピックでは、仕入先の請求書に前払を自動的に適用する機能について説明します。
+description: この記事では、仕入先の請求書に前払を自動的に適用する機能について説明します。
 author: sunfzam
 ms.date: 10/19/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: 547573d187460a900df7f4927ac062bd9d456729
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358222"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900074"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>仕入先の請求書を自動的に適用する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、仕入先の請求書に前払を自動的に適用する機能について説明します。 前払は、購入契約の一部として発注書を作成することができます。 仕入先の請求書を受け取った後は、前払を使って仕入先の請求書から買掛金を決済することができます。 この新機能により、仕入先の請求書をインポートする際に、仕入先の請求書に記載されている発注書番号を使って、対応する前払を自動的に検索することが可能になりました。
+この記事では、仕入先の請求書に前払を自動的に適用する機能について説明します。 前払は、購入契約の一部として発注書を作成することができます。 仕入先の請求書を受け取った後は、前払を使って仕入先の請求書から買掛金を決済することができます。 この新機能により、仕入先の請求書をインポートする際に、仕入先の請求書に記載されている発注書番号を使って、対応する前払を自動的に検索することが可能になりました。
 
 前払が見つかり、適用できる場合は、既存の請求書の行に前払を適用するための行が追加されます。 請求書照合のプロセスでは、前払の行は考慮されません。
 

@@ -1,6 +1,6 @@
 ---
 title: サブスクリプション請求管理における収益と経費の繰延
-description: このトピックでは、サブスクリプション請求管理で収益と経費の繰延を設定する方法について説明します。
+description: この記事では、サブスクリプション請求管理で収益と経費の繰延を設定する方法について説明します。
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9a12cf52d904db0396aa9914b8e324060289710f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 209afd08c0c7e3cbd63ed95613b1d1dec94856f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908099"
 ---
 # <a name="revenue-and-expense-deferrals-in-subscription-billing"></a>サブスクリプション請求管理における収益と経費の繰延
 
-このトピックでは、サブスクリプション請求管理で収益と経費の繰延を設定して使用する方法について説明します。 繰延スケジュールは、基になるドキュメントまたは請求スケジュールに常に基づいて設定されます。 これらは既定値に基づいて作成されるため、個別に入力したり作成することはできません。
+この記事では、サブスクリプション請求管理で収益と経費の繰延を設定して使用する方法について説明します。 繰延スケジュールは、基になるドキュメントまたは請求スケジュールに常に基づいて設定されます。 これらは既定値に基づいて作成されるため、個別に入力したり作成することはできません。
 
 収益および経費の繰延を設定および使用するプロセスは、複数のページで行われます:
 

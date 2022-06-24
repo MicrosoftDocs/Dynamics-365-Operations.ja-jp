@@ -1,6 +1,6 @@
 ---
 title: リース インポート フレームワークでのリースの管理
-description: このトピックでは、リースのインポート フレームワークを使用して、複数のリースを同時に調整する方法について説明します。
+description: この記事では、リースのインポート フレームワークを使用して、複数のリースを同時に調整する方法について説明します。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e3443225b5c7cb6d8f758248e538c2a427a89265
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 8cf81ccf61e62ac49e6cb90d13ca5fe50147cc76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723170"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894967"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>リース インポート フレームワークでのリースの管理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、リースのインポート フレームワークを使用して、複数のリースをワンステップで調整する方法について説明します。 この機能を使用すると、時間を節約することができ、また、人為的ミスの可能性を減らすことで、より正確な調整を行うことができます。 また、この機能は Microsoft Dynamics 365 Finance を外部データ エンティティと接続することができ、データを効率的にアップロードできます。
+この記事では、リースのインポート フレームワークを使用して、複数のリースをワンステップで調整する方法について説明します。 この機能を使用すると、時間を節約することができ、また、人為的ミスの可能性を減らすことで、より正確な調整を行うことができます。 また、この機能は Microsoft Dynamics 365 Finance を外部データ エンティティと接続することができ、データを効率的にアップロードできます。
 
 次のデータ エンティティを使用して、外部システムに資産リースを統合することができます。
 

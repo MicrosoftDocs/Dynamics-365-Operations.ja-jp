@@ -1,6 +1,6 @@
 ---
 title: PADLEFT ER 関数
-description: このトピックでは、PADLEFT 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、PADLEFT 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 12/10/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a45333b8160a42063de8000ab27ea23136eb75ee7b55162b4602a5f3c52550de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 551b508bc6a17b1c6a08e25d5db0094713d9634f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770047"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892569"
 ---
 # <a name="padleft-er-function"></a>PADLEFT ER 関数
 

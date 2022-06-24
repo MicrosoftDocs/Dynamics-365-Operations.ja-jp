@@ -1,6 +1,6 @@
 ---
 title: 電子申告を使用した詳細な口座調整インポートの設定
-description: このトピックでは、電子申告を使用して、詳細な口座調整インポート プロセスを設定する方法について説明します。
+description: この記事では、電子申告を使用して、詳細な口座調整インポート プロセスを設定する方法について説明します。
 author: panolte
 ms.date: 03/30/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 30530a9870ba2ff0546237d2698d1675afa78104
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2ac8811a5c10490d90f782472d3c198474c7edc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770197"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889123"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>電子申告を使用した詳細な口座調整インポートの設定
 
 [!include [banner](../includes/banner.md)]
 
-詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 Finance での銀行トランザクションに合わせて自動的に調整することができます。 このトピックでは、口座取引明細書のインポート機能を設定する方法について説明します。 口座取引明細書のインポートの設定は、電子口座取引明細書の形式によって異なります。 Microsoft Dynamics 365 Finance は、ISO20022、MT940、BAI2 の 3 つの口座取引明細書の形式を包括的にサポートしています。 
+詳細な口座調整機能では、電子口座取引明細書をインポートし、Microsoft Dynamics 365 Finance での銀行トランザクションに合わせて自動的に調整することができます。 この資料では、口座取引明細書のインポート機能を設定する方法について説明します。 口座取引明細書のインポートの設定は、電子口座取引明細書の形式によって異なります。 Microsoft Dynamics 365 Finance は、ISO20022、MT940、BAI2 の 3 つの口座取引明細書の形式を包括的にサポートしています。 
 
 ## <a name="set-up-the-electronic-reporting-configuration"></a>電子レポート構成の設定
 

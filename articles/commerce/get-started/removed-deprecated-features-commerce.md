@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce の削除済みまたは推奨されない機能
-description: このトピックでは、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
+description: この記事では、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 author: josaw
 ms.date: 04/27/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 213ed2091b1f2359f2481b162cba07812b3ffe90
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 2725ff2b8bfbaadbca1bc070e32cee7c5d2754be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649078"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910527"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の削除済みまたは推奨されない機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
+この記事では、Dynamics 365 Commerce から削除された、または削除される予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。

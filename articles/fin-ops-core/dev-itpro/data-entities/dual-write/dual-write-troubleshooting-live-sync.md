@@ -1,6 +1,6 @@
 ---
 title: ライブ同期に関する問題のトラブルシューティング
-description: このトピックでは、ライブ同期の問題修正に役立つトラブルシューティング情報を提供します。
+description: この記事では、ライブ同期の問題修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 08/19/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062366"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896708"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>ライブ同期に関する問題のトラブルシューティング
 
@@ -22,10 +22,10 @@ ms.locfileid: "8062366"
 
 
 
-このトピックでは、財務と運用アプリと Microsoft Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、ライブ同期の問題修正に役立つトラブルシューティングに特化した情報を提供します。
+この記事では、財務と運用アプリと Microsoft Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、ライブ同期の問題修正に役立つトラブルシューティングに特化した情報を提供します。
 
 > [!IMPORTANT]
-> このトピックで説明されている問題の中には、システム管理者ロールまたは Azure Active Directory (Azure AD) テナント管理者の資格情報のいずれかが必要な場合があります。 各セクションでは、特定のロールまたは特定の資格情報が必要な場合について説明しています。
+> この記事説明されている問題の中には、システム管理者ロールまたは Azure Active Directory (Azure AD) テナント管理者の資格情報のいずれかが必要な場合があります。 各セクションでは、特定のロールまたは特定の資格情報が必要な場合について説明しています。
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>行の作成時にライブ同期でエラーが表示される
 

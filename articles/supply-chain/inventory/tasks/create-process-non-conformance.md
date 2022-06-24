@@ -1,6 +1,6 @@
 ---
 title: 不適合の作成および処理
-description: このトピックでは、既存の品質指示に基づき不適合管理を実行する方法について説明します。
+description: この記事では、既存の品質指示に基づき不適合管理を実行する方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032f5b712c2be5312524129cd25e655e778f5f44
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dd8a10e88ab4d1be24a11739dddd7619b3fa6bbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580867"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901969"
 ---
 # <a name="create-and-process-nonconformances"></a>不適合の作成および処理
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、既存の品質指示に基づき不適合管理を実行する方法について説明します。 通常、不適合管理は品質担当者が実施します。 前提条件として、使用可能な品質指示が必要です。 (品質指示の作成方法については、[商品の品質の調査](inspect-quality-goods.md) を参照してください。)
+この記事では、既存の品質指示に基づき不適合管理を実行する方法について説明します。 通常、不適合管理は品質担当者が実施します。 前提条件として、使用可能な品質指示が必要です。 (品質指示の作成方法については、[商品の品質の調査](inspect-quality-goods.md) を参照してください。)
 
 ユーザーが不適合の承認を処理するには、**ユーザー** ページの **個人** フィールドで、不適合に対する作業者を割り当てる必要があります。 また、ユーザーがドキュメントのメモを使用するには、ユーザー オプションで **ドキュメント処理の有効化** オプションを *はい* に設定する必要があります。
 

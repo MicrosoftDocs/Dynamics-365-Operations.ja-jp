@@ -1,6 +1,6 @@
 ---
 title: V3 データ エンティティを通じて受信 ASN をインポートする
-description: このトピックでは、受信 ASN データ エンティティを通じて受信事前出荷明細通知 (ASN) のインポートを管理する方法について説明します。
+description: この記事では、受信 ASN データ エンティティを通じて受信事前出荷明細通知 (ASN) のインポートを管理する方法について説明します。
 author: GalynaFedorova
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 44ec0230236451a413d483b3e9f3ddc58b49a0b0
-ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
+ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740138"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907119"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>V3 データ エンティティを通じて受信 ASN をインポートする
 
@@ -26,7 +26,7 @@ ms.locfileid: "8740138"
 
 ASN は、倉庫作業員が何がいつ到着するかを知るのに役立ちます。 そのため、準備をすることができます。 さらに、倉庫作業者は ASN を使用して、以前に作成された関連する発注書と出荷の詳細を一致させることができます。
 
-このトピックでは、ASN ファイルの操作方法を例を挙げて示すシナリオをまとめて紹介します。
+この記事では、ASN ファイルの操作方法を例を挙げて示すシナリオをまとめて紹介します。
 
 > [!IMPORTANT]
 > *受信 ASN* のインポートは、高度な倉庫管理 (WMS) に対して有効な品目にのみ適用されます。 ASN を受け取る前に、ASN を送信する仕入先に対して発注書をシステムに登録する必要があります。

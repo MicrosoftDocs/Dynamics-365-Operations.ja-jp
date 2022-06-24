@@ -1,6 +1,6 @@
 ---
-title: エジプトの源泉徴収税申告
-description: このトピックでは、エジプトの源泉徴収税申告を構成および生成する方法について説明します。
+title: エジプト用源泉徴収税申告
+description: この記事では、エジプトの源泉徴収税申告を構成および生成する方法について説明します。
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 505eb8a907ec8cc74b897695ddd90eee3abb0ed6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403894"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907690"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>エジプトの源泉徴収税申告 (EG-00005)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403894"
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>概要
-このトピックでは、源泉徴収税申告と、エジプトの法人向けの源泉徴収税申告フォーム 41 と 11 の設定および生成する方法について説明します 
+この記事では、源泉徴収税申告と、エジプトの法人向けの源泉徴収税申告フォーム 41 と 11 の設定および生成する方法について説明します 
 
 すべてのエジプトの法人は、ローカルの仕入先およびサービス プロバイダーから保持されるすべての税金を集計するフォーム 41 を準備する必要があります。 フォーム 41 に加えて、フォーム 11 を使用して外国のプロバイダーから課税されるすべての留保の詳細を生成する必要があります。 
 
@@ -58,7 +58,7 @@ Dynamics 365 Finance の **源泉徴収税申告** レポートには、次の�
 
 エジプトの WHT 申告フォームの実装は、電子申告 (ER) の構成に基づいています。 構成可能なレポートの機能および概念に関する詳細については、[電子申告](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) を参照にしてください。
 
-生産およびユーザー受け入れテスト (UAT) 環境については、[Lifecycle Services から電子申告構成をダウンロードする](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md) のトピックにある手順に従ってください。
+生産およびユーザー受け入れテスト (UAT) 環境については、[Lifecycle Services から電子申告構成をダウンロードする](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md) の記事に記載の手順に従ってください。
 
 エジプト法人の源泉徴収申告を生成するには、次の構成をアップロードする必要があります。
 

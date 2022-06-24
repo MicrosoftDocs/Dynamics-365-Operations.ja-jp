@@ -1,6 +1,6 @@
 ---
 title: バッチ内の月次仕訳入力の作成
-description: このトピックでは、バッチで仕訳入力を作成し、月別のリース経費を記録する際の効率を高める方法について説明します。
+description: この記事では、バッチで仕訳入力を作成し、月別のリース経費を記録する際の効率を高める方法について説明します。
 author: moaamer
 ms.date: 08/10/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cd282ab04312a3ed1821160146b86db902906f3b
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: fb5c65b0a2c982171fa0ae88141d92c2f1ead6ac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714064"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894996"
 ---
 # <a name="create-monthly-journal-entries-in-a-batch"></a>バッチ内の月次仕訳入力の作成
 
@@ -28,7 +28,7 @@ ms.locfileid: "8714064"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-このトピックでは、バッチで仕訳入力を作成し、月別のリース経費を記録する際の効率を高める方法について説明します。 バッチ処理を使用すると、複数のスケジュールから仕訳入力を作成できます。 これらの仕訳入力には、リース支払、負債償却費、使用権 (ROU) 資産償却、履行費用経費が含まれます。 また、バッチ処理を利用して、複数のリースの初期認識を同時に行ったり、複数のリースの移行調整を同時に行うこともできます。
+この記事では、バッチで仕訳入力を作成し、月別のリース経費を記録する際の効率を高める方法について説明します。 バッチ処理を使用すると、複数のスケジュールから仕訳入力を作成できます。 これらの仕訳入力には、リース支払、負債償却費、使用権 (ROU) 資産償却、履行費用経費が含まれます。 また、バッチ処理を利用して、複数のリースの初期認識を同時に行ったり、複数のリースの移行調整を同時に行うこともできます。
 
 バッチ ジョブの設定や、複数のリースの支払請求書、減価償却、利息を処理するには、**資産リース \> 定期処理 \> バッチ仕訳作成** に移動します。 表示されるダイアログ ボックスで、仕訳入力の作成元となるスケジュールを選択できます。 また、特定のエンティティ、リース グループ、またはリース ブックに対してバッチ処理を実行するかどうかを指定することもできます
 

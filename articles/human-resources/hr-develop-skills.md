@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7c853ad71aecd7f5d214c02da97f7956ff2391df
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: acb632042cdb535bea0dd625531f22d284653294
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695959"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893761"
 ---
 # <a name="configure-skills"></a>スキルの構成
 
 > [!IMPORTANT]
-> このトピックで説明した機能は、現在 Finance インフラストラクチャの Human Resources の顧客が利用できます。  
+> この記事で説明した機能は、現在 Finance インフラストラクチャの Human Resources の顧客が利用できます。  
 
 
 Dynamics 365 Human Resources では作業者のスキルを追跡できます。 また、特定のジョブに必要なスキルを指定できます。

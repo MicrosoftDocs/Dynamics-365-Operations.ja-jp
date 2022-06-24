@@ -1,6 +1,6 @@
 ---
 title: SEPA の口座引落の概要
-description: このトピックでは、欧州委員会が設定する単一ユーロ支払地域 (SEPA) に関する情報について説明します。
+description: この記事では、欧州委員会が設定する単一ユーロ支払地域 (SEPA) に関する情報について説明します。
 author: ShivamPandey-msft
 ms.date: 08/22/2017
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad115fbc8f57f0d6b69d425b2f5180f208771409
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1d63cac6c21ec5c5340204f409648516047bb94d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909159"
 ---
 # <a name="sepa-direct-debit-overview"></a>SEPA の口座引落の概要
 

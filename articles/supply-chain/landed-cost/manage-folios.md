@@ -1,6 +1,6 @@
 ---
 title: フォリオの管理
-description: このトピックでは、フォリオの使用方法について説明します。 通常、フォリオは、出荷ごとの 1 つのエンティティまたは会社に対する 1 つの仕入先の商品で構成されます。 1 つのフォリオにある商品は、1 つのコンテナに入るか、または複数のコンテナに分散されることがあります。
+description: この記事では、フォリオの使用方法について説明します。 通常、フォリオは、出荷ごとの 1 つのエンティティまたは会社に対する 1 つの仕入先の商品で構成されます。 1 つのフォリオにある商品は、1 つのコンテナに入るか、または複数のコンテナに分散されることがあります。
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f908ae3c150a09af61bb0ee97469619744cd1079
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695305"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905895"
 ---
 # <a name="manage-folios"></a>フォリオの管理
 
@@ -132,7 +132,7 @@ ms.locfileid: "8695305"
 
 ### <a name="information-on-the-folio-fasttab"></a>フォリオ クイックタブの情報
 
-**明細行** ビューの **フォリオ** クイックタブには、フォリオに関する情報が表示されます。 このトピックで前述されているように、この情報のほとんどは **ヘッダー** ビューにも表示されます。
+**明細行** ビューの **フォリオ** クイックタブには、フォリオに関する情報が表示されます。 この記事で前述されているように、この情報のほとんどは **ヘッダー** ビューにも表示されます。
 
 ### <a name="information-and-buttons-on-the-lines-fasttab"></a>明細行クイックタブの情報とボタン
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Management 10.0.20 (2021 年 8 月) の新機能または変更された機能
-description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.20 の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 Supply Chain Management 10.0.20 の新機能および変更された機能について説明します。
 author: kamaybac
 ms.date: 05/28/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 3eadc447d8c0c443fa9d3eab220300e3eedf051d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647317"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888646"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Management 10.0.20 (2021 年 8 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.20 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.886 のビルド番号が含まれており、次のように使用できます。
+この記事では、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.20 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.886 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2021 年 5 月
 - **リリースの一般提供 (手動更新):** 2021 年 7 月
@@ -59,21 +59,21 @@ ms.locfileid: "7647317"
 
 ## <a name="new-and-updated-documentation-resources"></a>新しいドキュメント リソースおよび更新されたドキュメント リソース
 
-次のヘルプ トピックが最近追加されたか大幅に更新されました。 前のセクションに示したように、このリリースで追加された新しい機能に関連するとは限りませんが、既存の機能をさらに活用するために役立つ場合があります。
+次のヘルプ記事を最近追加、または大幅に更新しました。 前のセクションに示したように、このリリースで追加された新しい機能に関連するとは限りませんが、既存の機能をさらに活用するために役立つ場合があります。
 
-| 機能領域 | 新規または更新されたトピック |
+| 機能領域 | 新規または更新された記事 |
 |---|---|
 | エンジニアリング変更管理 | [製品ライフサイクルの状態とトランザクション](../engineering-change-management/product-lifecycle-state-transactions.md) |
-| 在庫管理 | [在庫の視覚化アドイン](../inventory/inventory-visibility.md)<br><br>[品質および不適合管理の概要](../inventory/quality-management-processes.md) (および関連するすべての品質管理トピック) |
+| 在庫管理 | [在庫の視覚化アドイン](../inventory/inventory-visibility.md)<br><br>[品質および不適合管理の概要](../inventory/quality-management-processes.md) (および関連するすべての品質管理記事) |
 | 調達 | [仕入先証明の管理](../../finance/public-sector/manage-vendor-certification.md) |
 | 生産管理 | [生産現場の実行インターフェースのスタイル](../production-control/production-floor-execution-styles.md) |
 | 倉庫管理 | [Warehouse Management モバイル アプリのステップ アイコンとタイトルの割り当て](../warehousing/step-icons-titles.md)<br><br>[手動在庫移動の繰延処理](../warehousing/deferred-processing-manual-inventory-movement.md) |
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリ バージョン 10.0.20 のプラットフォーム更新プログラム (2021 年 7 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.20 (2021 年 7 月) のプラットフォーム更新プログラム ](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -87,12 +87,12 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.20 には、Platform updates
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>削除済みおよび非推奨の Supply Chain Management 機能
 
-[Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)トピックは、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
+[Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)の記事は、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)の記事に発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

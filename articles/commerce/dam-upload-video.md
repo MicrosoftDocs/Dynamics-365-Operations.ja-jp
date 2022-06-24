@@ -1,6 +1,6 @@
 ---
 title: ビデオのアップロード
-description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのビデオのアップロード方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce サイト ビルダーのビデオのアップロード方法について説明します。
 author: psimolin
 ms.date: 06/09/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f481e5d3f323b0c86d637b67c119d13b956d5714dc0d990004834e2be05b370e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a48c6cbdd5898a2156f60dada40e94cd402df9c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735633"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890544"
 ---
 # <a name="upload-videos"></a>ビデオのアップロード
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのビデオのアップロード方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce サイト ビルダーのビデオのアップロード方法について説明します。
 
 コマース サイト ビルダーのメディア ライブラリーを使用すると、ビデオをアップロードできます。 イメージの変更コンポーネントを使用すると、さまざまなビューポートとそのブレークポイントに対するビデオが適切に変換されるので、最大速度と解像度でビデオのバージョンをアップロードする必要があります。
 

@@ -1,6 +1,6 @@
 ---
 title: Power BI にデータをプルするよう電子申告 (ER) を構成する
-description: このトピックでは、電子申告 (ER) コンフィギュレーションを使用してインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。
+description: この記事では、電子申告 (ER) 構成を使用してインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,31 +14,31 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa9a47c9ee7c76322fd2d9bfcf5fc61a50bf421321891b3c78a782be6a9f8e6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6903513dec4da20dbc4463fbae6a406fc06e1a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740945"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896737"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Power BI にデータをプルするよう電子申告 (ER) を構成する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、電子申告 (ER) コンフィギュレーションを使用してインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。 たとえば、このトピックでは、転送する必要があるビジネス データとしてのイントラスタット トランザクションを使用します。 Power BI マップの視覚化は、このイントラスタット トランザクション データを使用して Power BI レポートで会社のインポート/エクスポート活動の分析のためのビューを表示します。
+この記事では、電子申告 (ER) 構成を使用してインスタンスから Power BI サービスへのデータ転送を調整する方法について説明します。 たとえば、このトピックでは、転送する必要があるビジネス データとしてのイントラスタット トランザクションを使用します。 Power BI マップの視覚化は、このイントラスタット トランザクション データを使用して Power BI レポートで会社のインポート/エクスポート活動の分析のためのビューを表示します。
 
 ## <a name="overview"></a>概要
 
-Microsoft Power BI は、外部のデータ ソースを一貫性、視覚的な没入型、および対話型の洞察に変換するソフトウェア サービス、アプリ、コネクタの集合です。 電子申告 (ER) を使用すると、ユーザーは簡単にデータ ソースを構成し、アプリケーションから Power BI へのデータ転送を手配できます。 データは、OpenXML ワークシート (Microsoft Excel ワークブックのファイル) 形式のファイルとして転送されます。 転送されたファイルは、その目的のためにコンフィギュレーションされた Microsoft SharePoint Server に保存されます。 保存されたファイルは、視覚化 (テーブル、グラフ、マップなど) を含むレポートを作成し、Power BI で使用されます。 Power BI レポートは、Power BI ユーザーの間で共有され、Power BI ダッシュボード、またアプリケーション ページでアクセスされます。 ここでは、次のタスクについて説明します:
+Microsoft Power BI は、外部のデータ ソースを一貫性、視覚的な没入型、および対話型の洞察に変換するソフトウェア サービス、アプリ、コネクタの集合です。 電子申告 (ER) を使用すると、ユーザーは簡単にデータ ソースを構成し、アプリケーションから Power BI へのデータ転送を手配できます。 データは、OpenXML ワークシート (Microsoft Excel ワークブックのファイル) 形式のファイルとして転送されます。 転送されたファイルは、その目的のためにコンフィギュレーションされた Microsoft SharePoint Server に保存されます。 保存されたファイルは、視覚化 (テーブル、グラフ、マップなど) を含むレポートを作成し、Power BI で使用されます。 Power BI レポートは、Power BI ユーザーの間で共有され、Power BI ダッシュボード、またアプリケーション ページでアクセスされます。 この記事では、次のタスクについて説明します:
 
-- Microsoft Dynamics 365 Finance をコンフィギュレーションします。
+- Microsoft Dynamics 365 Finance を構成します。
 - 財務アプリケーションからデータを取得するために、ER 形式のコンフィギュレーションを準備します。
 - Power BI にデータを転送するために ER 環境をコンフィギュレーションします。
 - Power BI レポートを作成するために転送されたデータを使用します。
 - Power BI レポートが財務にアクセスできるようにします。
 
 ## <a name="prerequisites"></a>必要条件
-このトピックの例を完了するには、次のアクセスが必要です:
+この記事に記載の例を完了するには、次のアクセスが必要です。
 
 - 次のいずれかのロールへのアクセス:
 

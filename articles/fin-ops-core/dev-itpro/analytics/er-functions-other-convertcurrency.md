@@ -1,6 +1,6 @@
 ---
 title: CONVERTCURRENCY ER 関数
-description: このトピックでは、CONVERTCURRENCY 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、CONVERTCURRENCY 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc71ccedcdfc8a3dc9d7e087d29467bd3bbe72c3c5588872dbeaf3aa1dd35d2b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e51086d977652e4be4c19390a824d4f4507b60d3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738603"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898465"
 ---
 # <a name="convertcurrency-er-function"></a>CONVERTCURRENCY ER 関数
 

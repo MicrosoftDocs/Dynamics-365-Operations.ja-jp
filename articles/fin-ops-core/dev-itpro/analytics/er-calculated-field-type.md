@@ -1,8 +1,8 @@
 ---
 title: 計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする
-description: このトピックでは、ER データ ソースに対して計算済みフィールド タイプを使用する方法について説明します。
+description: この記事では、ER データ ソースに対して計算済みフィールド タイプを使用する方法について説明します。
 author: NickSelin
-ms.date: 08/06/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349163"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934705"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>計算済みフィールド タイプの ER データ ソースの、パラメーター化された呼び出しをサポートする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**計算済みフィールド** タイプを使用して電子レポート (ER) データ ソースをデザインする方法について説明します。 このデータソースには ER 式が含まれている可能性があり、この式を実行すると、このデータ ソースを呼び出すバインドで構成されているパラメータ引数の値によって制御することができます。 このようなデータ ソースのパラメーター化された呼び出しを構成することにより、1 つのデータ ソースを多数のバインドで再利用できます。これにより、ER モデル マッピングまたは ER フォーマットで構成する必要があるデータ ソースの総数を減らすことができます。 また、構成済みの ER コンポーネントが簡素化され、これにより保守コストおよび他の消費者が使用するコストが削減されます。
+この記事では、**計算済みフィールド** タイプを使用して電子レポート (ER) データ ソースをデザインする方法について説明します。 このデータソースには ER 式が含まれている可能性があり、この式を実行すると、このデータ ソースを呼び出すバインドで構成されているパラメータ引数の値によって制御することができます。 このようなデータ ソースのパラメーター化された呼び出しを構成することにより、1 つのデータ ソースを多数のバインドで再利用できます。これにより、ER モデル マッピングまたは ER フォーマットで構成する必要があるデータ ソースの総数を減らすことができます。 また、構成済みの ER コンポーネントが簡素化され、これにより保守コストおよび他の消費者が使用するコストが削減されます。
 
 ## <a name="prerequisites"></a>必要条件
-このトピックの例を完了するには、次のアクセスが必要です:
+この記事に記載の例を完了するには、次のアクセスが必要です:
 
 - これらのロールにアクセスします。
 
@@ -36,7 +36,7 @@ ms.locfileid: "6349163"
     - 電子申告機能コンサルタント
     - システム管理者
 
-- 次のいずれかのロールで、Finance and Operations と同じテナントに対してプロビジョニングされている Regulatory Configuration Services (RCS) にアクセスします:
+- 次のいずれかのロールで、Finance and Operations と同じテナントに対してプロビジョニングされている Regulatory Configuration Services (RCS) にアクセスします。
 
     - 電子申告開発者
     - 電子申告機能コンサルタント
@@ -46,10 +46,10 @@ ms.locfileid: "6349163"
 
 | **コンテンツ**                           | **ファイル名**                                        |
 |---------------------------------------|------------------------------------------------------|
-| ER データ モデル構成のサンプル    | [パラメーター化された呼び出し version.1.xml を知るためのモデル](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| ER メタデータ構成のサンプル      | [パラメーター化された呼び出し version.1.xml を知るためのメタデータ](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| ER モデル マッピング構成のサンプル | [パラメーター化された呼び出し version.1.1.xml を知るためのマッピング](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER フォーマット構成のサンプル        | [パラメーター化された呼び出し version.1.1.xml を知るための形式](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| ER データ モデル構成のサンプル    | [パラメーター化された呼び出し version.1.xml を知るためのモデル](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| ER メタデータ構成のサンプル      | [パラメーター化された呼び出し version.1.xml を知るためのメタデータ](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| ER モデル マッピング構成のサンプル | [パラメーター化された呼び出し version.1.1.xml を知るためのマッピング](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| ER フォーマット構成のサンプル        | [パラメーター化された呼び出し version.1.1.xml を知るための形式](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>RCS インスタンスにサインインする
 この例では、サンプル会社 Litware, Inc. 用に、コンフィギュレーションを作成します。まず、RCS で、手順 [コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md) にあるステップを完了する必要があります。
@@ -306,7 +306,7 @@ ms.locfileid: "6349163"
 初期のおよび改善されたER フォーマットを実行して、コンフィギュレーションされパラメーター化された計算済みフィールドが正しく動作することを確認できます。
 
 ### <a name="import-er-configurations"></a>ER コンフィギュレーションをインポートする
-**RCS** タイプの ER レポジトリを使用して、確認済みのコンフィギュレーションを RCS からインポートすることができます。 既に、[規制コンフィギュレーション サービス (RCS) からの電子申告 (ER) コンフィギュレーションのインポート](rcs-download-configurations.md) のトピックにある手順を実行している場合は、コンフィギュレーションされた ER リポジトリを使用し、このトピックの前の方で説明したコンフィギュレーションを環境にインポートします。 そうでない場合は、次の手順に従います。
+**RCS** タイプの ER レポジトリを使用して、確認済みのコンフィギュレーションを RCS からインポートすることができます。 既に、[Regulatory Configuration Services (RCS) からの電子申告 (ER) 構成のインポート](rcs-download-configurations.md) の記事にある手順を実行している場合は、構成された ER リポジトリを使用し、この記事の前半で説明した構成を環境にインポートします。 そうでない場合は、次の手順に従います。
 
 1. 会社 **DEMF** を選択し、既定のダッシュボードで **電子申告** を選択します。
 2. **コンフィギュレーションをレポートする** を選択します。

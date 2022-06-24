@@ -1,6 +1,6 @@
 ---
 title: BOM の計算
-description: 原価ロールアップおよび販売価格計算は部品表 (BOM) 計算と呼ばれ、計算ページから開始します。 このトピックでは、BOM 計算について説明します。
+description: 原価ロールアップおよび販売価格計算は部品表 (BOM) 計算と呼ばれ、計算ページから開始します。 この記事では、BOM 計算に関する情報を示します。
 author: JennySong-SH
 ms.date: 05/01/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 0a71a17efbca3945c5a1010cf7d523a85420e8e2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c19c15f807a809a68043a75ca935fa92217fcd5f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674592"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902805"
 ---
 # <a name="bom-calculations"></a>BOM の計算
 
 [!include [banner](../includes/banner.md)]
 
-原価ロールアップおよび販売価格計算は部品表 (BOM) 計算と呼ばれ、計算ページから開始します。 このトピックでは、BOM 計算について説明します。
+原価ロールアップおよび販売価格計算は部品表 (BOM) 計算と呼ばれ、計算ページから開始します。 この記事では、BOM 計算に関する情報を示します。
 
 原価ロールアップおよび販売価格計算は部品表 (BOM) 計算と呼ばれ、**計算ページ** から開始します。 **計算** ページから、次のタスクを実行します。
 

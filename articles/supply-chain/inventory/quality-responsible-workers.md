@@ -1,6 +1,6 @@
 ---
-title: 不適合の承認を担当する作業者
-description: このトピックでは、不適合の承認を担当する作業者を構成する方法について説明します。
+title: 不適合の承認の担当作業者
+description: この記事では、不適合の承認を担当する作業者を構成する方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5fd1c7c86ac8627bd332bc578e98b4d7f091cdc8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a108fc1f8954e32719c93656a64d1d27fda03fb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907409"
 ---
-# <a name="workers-responsible-for-approving-nonconformances"></a>不適合の承認を担当する作業者
+# <a name="workers-responsible-for-approving-nonconformances"></a>不適合の承認の担当作業者
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、不適合の承認を担当する作業者を構成する方法について説明します。
+この記事では、不適合の承認を担当する作業者を構成する方法について説明します。
 
 ユーザーが修正や操作などの詳細の入力を開始する前に、不適合を承認する必要があります。 ユーザーが不適合を承認または否認する前に、ユーザー ID (ユーザー レコード) は作業者レコードにリンクされている必要があります。 オプションで、品質を担当する作業者を構成し、ある作業者が別の作業者の代わりに作業を承認できるようにします。
 

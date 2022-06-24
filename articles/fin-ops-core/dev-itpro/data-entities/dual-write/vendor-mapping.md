@@ -1,6 +1,6 @@
 ---
-title: 統合済み仕入先マスター
-description: このトピックでは、財務と運用アプリと Dataverse 間の仕入先データの統合について説明します。
+title: 統合された仕入先マスター
+description: この記事は、財務と運用アプリと Dataverse 間の仕入先データの統合について説明します。
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7794f33aed7364b76a7d5ffd08a068342887e468
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 394bb19000076eace6377e07bb3a939c8345da8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063165"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905318"
 ---
 # <a name="integrated-vendor-master"></a>統合された仕入先マスター
 

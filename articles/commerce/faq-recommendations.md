@@ -1,6 +1,6 @@
 ---
 title: 製品推奨事項に関するよく寄せられる質問
-description: このトピックでは、製品推奨事項またはその結果に関連する問題のトラブルシューティングに使用できる、プロセスおよびツールに関する情報を提供します。
+description: この記事では、製品推奨事項またはその結果に関連する問題のトラブルシューティングに使用できる、プロセスおよびツールに関する情報を提供します。
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 88ad0efd8f678c3082c31b1c3162b8288e14fc9edb69e8756f1641461b808e07
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77a5532ab1ae3b630bb335aa7cff6dc747184994
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733968"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900450"
 ---
 # <a name="product-recommendations-faq"></a>製品推奨事項に関するよく寄せられる質問
 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、[製品推奨事項](product-recommendations.md)またはその結果に関連する問題のトラブルシューティングに使用できる、プロセスおよびツールに関する情報を提供します。
+この記事では、[製品推奨事項](product-recommendations.md) またはその結果に関連する問題のトラブルシューティングに使用できる、プロセスおよびツールに関する情報を提供します。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 製品マスターとバリアントの概念を活用することは非常に重要です。 親製品マスターに対するバリアントの正確なグループ化は、リスト アルゴリズムとサービスがより良いモデルを作成するのに役立ちます。 さらにこのサービスは、密接に関係するすべてのバリアントをリストに含める代わりに、製品のインスタンスを 1 つだけ提供します。 密接に関係するすべてのバリアントがリストに追加されると、エラーまたは重複する結果が発生する可能性があります。

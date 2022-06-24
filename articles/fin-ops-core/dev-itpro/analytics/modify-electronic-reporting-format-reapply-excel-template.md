@@ -1,6 +1,6 @@
 ---
 title: Excel テンプレートを再適用して電子申告形式を変更する
-description: このトピックでは、変更後の Excel テンプレートを再適用することによって、ビジネス ドキュメントを生成するために使用される電子レポート (ER) 形式を変更する方法に関する情報を提供します。
+description: この記事では、変更後の Excel テンプレートを再適用することによって、ビジネス ドキュメントを生成するために使用される電子レポート (ER) 形式を変更する方法に関する情報を提供します。
 author: NickSelin
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 626450b05789c93f63675a55e050649c862c86f6
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 50b115448bc89bba7e9abeb8062d03d31a163b64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811395"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906734"
 ---
 # <a name="modify-electronic-reporting-formats-by-reapplying-excel-templates"></a>Excel テンプレートの再適用による電子申告形式の変更
 

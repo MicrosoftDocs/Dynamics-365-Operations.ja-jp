@@ -1,6 +1,6 @@
 ---
 title: ルックアップを使用した情報の検索
-description: このトピックでは、ルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。
+description: この記事では、ルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ee309330c165dfb0b67f647afc3514d4c827dad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069301"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901526"
 ---
 # <a name="find-information-by-using-lookups"></a>ルックアップを使用した情報の検索
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069301"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-多数のフィールドに適切な修正または目的の値の検索が容易なルックアップがあります。 複数の拡張機能は、これらのコントロールの使用可能により、ユーザーにルックアップが表示されます。 このトピックでは、これらの新しいルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。
+多数のフィールドに適切な修正または目的の値の検索が容易なルックアップがあります。 複数の拡張機能は、これらのコントロールの使用可能により、ユーザーにルックアップが表示されます。 この記事では、これらの新しいルックアップ機能について情報と、システムのルックアップから業務の使用を取得するために、必要な情報が表示されます。
 
 ## <a name="responsive-lookups"></a>関連するルックアップ
 

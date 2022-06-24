@@ -1,6 +1,6 @@
 ---
-title: 在庫の可視化アドイン概要
-description: このトピックでは、在庫の可視化とその機能について説明します。
+title: Inventory Visibility アドインの概要
+description: この記事では、在庫の可視化とその機能について説明します。
 author: yufeihuang
 ms.date: 03/18/2022
 ms.topic: overview
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9eb8a135d2415c867c746a1c40a80cdb84819c0e
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 782545ea38a209eb4430607f5bca96e4e930efdc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547904"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897635"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>在庫可視化アドインの概要
 

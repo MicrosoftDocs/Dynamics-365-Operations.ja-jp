@@ -1,6 +1,6 @@
 ---
 title: Supply Chain Management から Field Service へのプロジェクト リストの同期
-description: このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service にプロジェクトを同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+description: この記事では、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service にプロジェクトを同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b825e2fce61e96b963ba0d41f8db49ca9ba646f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 71c0580953f01c2d29e99fa2928a0b4a3937d5c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571596"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899356"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Supply Chain Management から Field Service へのプロジェクト リストの同期
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service にプロジェクトを同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+この記事では、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service にプロジェクトを同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
 [![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 

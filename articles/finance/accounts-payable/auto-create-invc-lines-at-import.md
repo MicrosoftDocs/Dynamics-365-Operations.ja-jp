@@ -1,6 +1,6 @@
 ---
 title: 仕入先請求書をインポートする際に請求明細行を生成する
-description: このトピックでは、請求書のインポート時に仕入先請求書に請求明細行を自動的に生成する機能について説明します。
+description: この記事では、請求書のインポート時に仕入先請求書に請求明細行を自動的に生成する機能について説明します。
 author: sunfzam
 ms.date: 09/10/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e452bda02c814b78c4bb48140b07f0113ab4a571
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: e745ab1fb39edf69fabd147e46e1da8cc98ba6e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358317"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903510"
 ---
 # <a name="generate-invoice-lines-when-you-import-vendor-invoices"></a>仕入先請求書をインポートする際に請求明細行を生成する
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、請求書のインポート時に仕入先請求書に請求明細行を自動的に生成する機能について説明します。
+この記事では、請求書のインポート時に仕入先請求書に請求明細行を自動的に生成する機能について説明します。
 
 仕入先請求書には、受取人情報や小計など、限られた情報しか記載されていない場合があります。 しかし、明細品目の情報は含まれていません。 請求書をインポートすると、対応する発注書の情報をもとに、請求書行が自動的に生成されます。
 
@@ -42,7 +42,7 @@ ms.locfileid: "8358317"
 
 ## <a name="data-entity-changes"></a>データ エンティティの変更
 
-このトピックで説明する機能をサポートするために、**仕入先請求書ヘッダー** のデータ エンティティが強化されました。 3 つのフィールドが追加されました。
+この記事で説明する機能をサポートするために、**仕入先請求書ヘッダー** のデータ エンティティが強化されました。 3 つのフィールドが追加されました。
 
 - **HeaderOnlyImport** - 請求書ヘッダー用の明細行を生成するには、このフィールドを **はい** に設定する必要があります。
 - **PurchIdRange** - 発注書番号のリストです。 請求書番号の範囲を指定可能です (範囲は **INV0001..INV0009** など 2 つのドットで区切って指定します)、または個別の値を指定可能です (**INV0001, INV0003, INV0006** など)。 すべての発注書は、請求書ヘッダーの同じ仕入先に属している必要があります。 それ以外の場合は、次のエラー メッセージが表示されます: 「請求明細行の生成に失敗しました。 発注書の仕入先勘定が異なります。」

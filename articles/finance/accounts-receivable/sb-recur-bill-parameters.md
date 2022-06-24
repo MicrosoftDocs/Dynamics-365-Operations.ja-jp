@@ -1,6 +1,6 @@
 ---
 title: 定期契約請求パラメーター
-description: このトピックでは、定期契約の請求書にて作成される請求ケジュールの既定値を設定する方法について説明します。 また、請求スケジュール グループの作成方法も説明します。
+description: この記事では、定期契約の請求書にて作成される請求ケジュールの既定値を設定する方法について説明します。 また、請求スケジュール グループの作成方法も説明します。
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 19fe77ade0523aa7fd6382266457fd739df46d75
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685834"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903337"
 ---
 # <a name="recurring-contract-billing-parameters"></a>定期契約請求パラメーター
 
@@ -27,7 +27,7 @@ ms.locfileid: "8685834"
 
 ## <a name="general-tab"></a>[全般] タブ
 
-1. **定期契約の請求パラメーター** ページで、**一般** タブから **請求スケジュール グループ** フィールド内にて、請求スケジュール グループを選択します。 請求スケジュール グループの設定方法については、このトピック後半の[請求スケジュール グループ](#set-up-billing-schedule-groups) セクションを参照してください。
+1. **定期契約の請求パラメーター** ページで、**一般** タブから **請求スケジュール グループ** フィールド内にて、請求スケジュール グループを選択します。 請求スケジュール グループの設定方法については、この記事後半の[請求スケジュール グループ](#set-up-billing-schedule-groups) セクションを参照してください。
 2. **終了タイプ** フィールドで、請求スケジュールの終了時に、最終請求をを計算する方法を選択します。
 
     - **スケジュールの調整** – 終了日で請求スケジュールをカットし、スケジュールのステータスを **最終請求** に変更し、認識する必要がなくなった金額を取りやめ、関連付けられている延期スケジュールを調整します。 請求開始日が終了日より後の場合は、残りの請求期間が削除されます。

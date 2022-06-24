@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a00e20569f05730296ef611938a94b73ebb7f6f5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d59b5a2c99813fee2e12e30e8694edf6da7391d9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735321"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909252"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>申請者およびアプリケーション データの手動入力
 
 > [!NOTE]
-> このトピックの採用機能は採用プロジェクトと呼ばれ、応募者、応募、採用プロジェクトに焦点を当てます。  
+> この記事の採用機能は採用プロジェクトと呼ばれ、応募者、応募、採用プロジェクトに焦点を当てます。  
 
 
 この手順では、手動で申請者とその申請に関する情報を管理する方法について説明します。 申請者についての個人情報、面接の日時、能力、宿舎施設のリクエストを入力および管理できます。 また、雇用申請者の申請状態を更新し、申請者とやり取りを行う書状や電子メールを作成できます。 申請者レコードを作成すると、その申請者の人物のレコードはグローバル アドレス帳で作成されます。 この手順の作成に使用するデモ データの会社は **USMF** です。

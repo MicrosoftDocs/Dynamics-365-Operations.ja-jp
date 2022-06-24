@@ -1,6 +1,6 @@
 ---
-title: アンケートの配布およびスケジューリング
-description: このトピックは、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。
+title: アンケートの配布とスケジューリング
+description: この記事は、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a543d9b85edd493f9b5d5a0449302769c3592f7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 91b2c94c74fd51765a2545424504149fff1f4bfd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695903"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908864"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>アンケートの配布およびスケジューリング
+# <a name="distribute-and-schedule-questionnaires"></a>アンケートの配布とスケジューリング
 
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックは、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。 
+この記事は、設計したアンケートを、それらを実行するユーザーまたはユーザー グループが記入できるように配布する方法を説明します。 
 
 アンケートを配布する複数の方法があります。
 

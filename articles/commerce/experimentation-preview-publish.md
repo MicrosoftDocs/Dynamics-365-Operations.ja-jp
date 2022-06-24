@@ -1,30 +1,24 @@
 ---
 title: 実験のプレビューと発行
-description: このトピックでは、Dynamics 365 Commerce から実験をプレビューおよび公開する方法について説明します。
+description: この記事では、Dynamics 365 Commerce から実験をプレビューおよび公開する方法について説明します。
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/08/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 41957befe109102aaa7d3a5783b54f96824dfe76a25ab787f94afc778c08fca5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5da7a4e3c17057278d02ebd45702d1de404f0dc6
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740386"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946145"
 ---
 # <a name="preview-and-publish-an-experiment"></a>実験のプレビューと発行
 
-このトピックでは、[実験を接続してバリエーションを編集](experimentation-connect-edit.md) した後、Dynamics 365 Commerce で実験をプレビューして公開する方法について説明します。 次の図は、Dynamics 365 Commerce の電子商取引 web サイトでの実験の設定と実行に関連するすべての手順を示しています。 追加の手順については、個別のトピックで説明します。
+この記事では、[実験を接続してバリエーションを編集](experimentation-connect-edit.md) した後、Dynamics 365 Commerce で実験をプレビューして公開する方法について説明します。 次の図は、Dynamics 365 Commerce の電子商取引 web サイトでの実験の設定と実行に関連するすべての手順を示しています。 追加の手順については、個別の記事で説明します。
 
 [ ![実験ユーザー体験 - プレビューと公開。](./media/experimentation_preview_publish.svg)](./media/experimentation_preview_publish.svg#lightbox)
 
@@ -52,8 +46,12 @@ Commerce サイト ビルダーでの実験のバリエーションを確認す�
 - 公開グループを公開またはスケジュールすると、公開グループに関連付けられている実験があるかどうかにかかわらず、公開グループのすべてのコンテンツが公開されます。
 - 公開グループは、実際のサイトに公開された後も引き続き存続されるため、公開グループの実験も存続します。 したがって、他の実験を同じページまたはフラグメントに関連付けることはできません。 この制限を回避するには、実験が存続している公開グループを削除します。 同様に、公開グループにも存在する実際のサイトの実験を削除する場合は、最初に公開グループから実験を削除します。
 
+### <a name="force-variations-for-testing"></a>テストにおける強制的な変動
+
+実験がライブになったら、実験 ID とバリエーション ID を既定のページ URL に追加して、テストまたは自動化の目的でバリエーションを強制的に適用できます。 たとえば、既定のページ URL が `https://fabrikam.com/modern/homepage` の場合は、`https://fabrikam.com/modern/homepage?exp=18012910471|18024360464` などの URL を使用してバリエーションを強制できます。 上記で説明した **プレビュー** エクスペリエンスのプレビュー URL から、実験のバリエーションの実験 ID とバリエーション ID を取得できます。
+
 ## <a name="previous-step"></a>前のステップ
-[実験を接続して編集する](experimentation-connect-edit.md)
+[接続して実験を編集する](experimentation-connect-edit.md)
 
 ## <a name="next-step"></a>次のステップ
 [実験の実行と監視](experimentation-run-monitor.md)

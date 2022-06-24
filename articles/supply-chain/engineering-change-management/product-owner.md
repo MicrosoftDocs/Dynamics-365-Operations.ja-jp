@@ -1,6 +1,6 @@
 ---
 title: 製品所有者
-description: このトピックでは、製品情報の所有者に関する情報を提供します。 製品所有者は、特定の製品を担当するユーザーのグループです。 グループのメンバーだけが、これらの製品をリリースできます。 製品所有者は、承認ワークフローで使用することもできます。
+description: この記事では、製品所有者に関する情報について説明します。 製品所有者は、特定の製品を担当するユーザーのグループです。 グループのメンバーだけが、これらの製品をリリースできます。 製品所有者は、承認ワークフローで使用することもできます。
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a29ab169e9b24826fbe69fbc316040d4618750ee
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5e09fdbbe14aa5a5ffbc5f07ae90b5d307a9e155
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567514"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907525"
 ---
 # <a name="product-owners"></a>製品所有者
 

@@ -1,6 +1,6 @@
 ---
 title: 固定資産の設定
-description: このトピックは、固定資産モジュールの設定の概要を示します。
+description: この記事は、固定資産モジュールの設定の概要を示します。
 author: moaamer
 ms.date: 06/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 164f19d4b346a51d4f5d43064cb33bf0c01378dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3baa842dadddd0f763f803528d322b9561b3141e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726241"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910145"
 ---
 # <a name="set-up-fixed-assets"></a>固定資産の設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、**固定資産** モジュールの設定の概要を示します。 
+この記事は、**固定資産** モジュールの設定の概要を示します。 
 
 パラメーターで固定資産内の一般動作を制御します。 固定資産グループは、資産をグループ化し、グループに割り当てられているすべての資産の既定の属性を指定することができます。 帳簿を固定資産グループに関連付けます。 帳簿で、減価償却プロファイルで定義されている減価償却コンフィギュレーションを使用して固定資産の資産価値を時間の経過に沿って追跡します。
 

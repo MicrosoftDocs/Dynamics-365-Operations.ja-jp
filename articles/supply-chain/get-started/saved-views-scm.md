@@ -1,6 +1,6 @@
 ---
 title: Supply Chain Management の標準保存済みビュー
-description: このトピックでは、使用できる標準の保存済みビューと、それらを有効にしてカスタマイズする方法について説明します。
+description: この記事では、使用できる標準の保存済みビューと、それらを有効にしてカスタマイズする方法について説明します。
 author: kamaybac
 ms.date: 02/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103691"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887576"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Supply Chain Management の標準保存済みビュー
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management には、必要に応じて有効および使用できる保存済みビューがいくつか含まれています。 一部の標準保存済みビューの中には、特定のロールやタスク ("品質管理" や "受信" など) に対して最適化された名前が付けられたものがあります。 その他は、Microsoft の使用状況統計によって最も頻繁に使用されるフィールドと設定のみを含む最適化も行っています。 一般に、これらの保存済みビューは *簡略化* ビューと呼ばれます。 このトピックでは、使用できる標準の保存済みビューと、それらを有効にしてカスタマイズする方法について説明します。
+Microsoft Dynamics 365 Supply Chain Management には、必要に応じて有効および使用できる保存済みビューがいくつか含まれています。 一部の標準保存済みビューの中には、特定のロールやタスク ("品質管理" や "受信" など) に対して最適化された名前が付けられたものがあります。 その他は、Microsoft の使用状況統計によって最も頻繁に使用されるフィールドと設定のみを含む最適化も行っています。 一般に、これらの保存済みビューは *簡略化* ビューと呼ばれます。 この記事では、使用できる標準の保存済みビューと、それらを有効にしてカスタマイズする方法について説明します。
 
 標準で保存済みビューを含め、保存されているビューを使用する方法の詳細については、有効にした後に [保存済みビュー](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json) を参照してください。
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 Supply Chain Management には、必要に応じて有効
 
 保存済みビューを使用するには、標準の保存済みビューを使用するかどうかに関係なく、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で *保存済みビュー* 機能を有効にする必要があります (バージョン 10.0.21 から、この機能は既定で有効化されています)。
 
-このトピックの残りのセクションには、各関連モジュールで現在使用できる標準保存済みビューを説明するテーブルが用意されています。 各テーブルには、保存済み各ビューの名前、検索できるページ、保存済みビューの説明が示されます。 各テーブルには、保存済みビューを含む機能の名前も表示されます。 システムに標準保存済みビューを表示するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で指定した機能を有効にする必要があります。 バージョン 10.0.25 の場合、一覧表示されているビューはすべて既定で有効になっています。
+この記事の残りのセクションには、各関連モジュールで現在使用できる標準保存済みビューを説明するテーブルが用意されています。 各テーブルには、保存済み各ビューの名前、検索できるページ、保存済みビューの説明が示されます。 各テーブルには、保存済みビューを含む機能の名前も表示されます。 システムに標準保存済みビューを表示するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で指定した機能を有効にする必要があります。 バージョン 10.0.25 の場合、一覧表示されているビューはすべて既定で有効になっています。
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>在庫管理モジュールの保存済みビュー
 

@@ -1,6 +1,6 @@
 ---
 title: Warehouse Management モバイル アプリのステップ タイトルとインストラクションのカスタマイズ
-description: このトピックでは、Warehouse Management モバイル アプリに設定する各作業フローのそれぞれのステップに対して、カスタム インストラクションを作成および表示する方法について説明します。
+description: この記事では、Warehouse Management モバイル アプリに設定する各作業フローのそれぞれのステップに対して、カスタム インストラクションを作成および表示する方法について説明します。
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ffd433427b2c5011740a7ee54c93713689945df3
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895499"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリのステップ タイトルとインストラクションのカスタマイズ
 
 > [!IMPORTANT]
-> このトピックで説明する機能は、新しい Warehouse Management モバイル アプリにのみ適用されます。 非推奨となっている古い倉庫アプリには影響しません。
+> この記事で説明する機能は、新しい Warehouse Management モバイル アプリにのみ適用されます。 非推奨となっている古い倉庫アプリには影響しません。
 
-このトピックでは、Warehouse Management モバイル アプリに設定するすべての作業フローのすべてのステップに対して、カスタム インストラクションを作成および表示する方法について説明します。 倉庫作業員が書面による指示を受け取った場合、前のトレーニングを行う必要がなくても、直ちに新しいフローの使用を開始できます。 この機能は、以下の福利厚生を提供します。
+この記事では、Warehouse Management モバイル アプリに設定するすべての作業フローのすべてのステップに対して、カスタム インストラクションを作成および表示する方法について説明します。 倉庫作業員が書面による指示を受け取った場合、前のトレーニングを行う必要がなくても、直ちに新しいフローの使用を開始できます。 この機能は、以下の福利厚生を提供します。
 
 - **作業者を変更し、すべてのタスク ステップの簡単なインストラクションに従って作業時間を短縮します。** フローのすべてのステップには、第一線の作業者がタスクを理解することを可能にする指示が用意されています。
 - **独自のプロセスに一致するインストラクションを提供します。** 業務および倉庫のプロセスに合わせて、独自のインストラクションを記述します。 たとえば、用語を物理的なスペースとローカルの省略形に合わせて作成できます。

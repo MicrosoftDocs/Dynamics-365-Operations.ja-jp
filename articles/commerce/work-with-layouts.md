@@ -1,6 +1,6 @@
 ---
 title: プリセット レイアウトの使用
-description: このトピックでは、Microsoft Dynamics 365 Commerce でのプリセット レイアウトの使用方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce でのプリセット レイアウトの使用方法について説明します。
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 34b9cb15dd77e6317208e6468fbfb60e804f5e8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090848"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896840"
 ---
 # <a name="work-with-preset-layouts"></a>プリセット レイアウトの使用
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce でのプリセット レイアウトの使用方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce でのプリセット レイアウトの使用方法について説明します。
 
-このトピックの手順を実行する前に、[プリセットおよびカスタム レイアウト](templates-layouts-overview.md#preset-and-custom-layouts) を必ずお読みください。 一般的な概要については、[テンプレートとレイアウトの概要](templates-layouts-overview.md) を参照してください。
+この記事の手順を実行する前に、[プリセットおよびカスタム レイアウト](templates-layouts-overview.md#preset-and-custom-layouts) を必ずお読みください。 一般的な概要については、[テンプレートとレイアウトの概要](templates-layouts-overview.md) を参照してください。
 
 ## <a name="create-a-new-preset-layout"></a>新しいプリセット レイアウトの作成
 

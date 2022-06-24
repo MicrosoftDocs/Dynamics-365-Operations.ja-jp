@@ -1,6 +1,6 @@
 ---
 title: 生成されるドキュメントに対するカスタム ストレージの場所を指定する
-description: このトピックでは、電子申告 (ER) 形式で生成されたドキュメントの保存先のリストを拡張する方法について説明します。
+description: この記事では、電子申告 (ER) 形式で生成されたドキュメントの保存先のリストを拡張する方法について説明します。
 author: NickSelin
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 103a7e51fc6042e19b1db3b3d6b00436df15fd89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594912"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898859"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>生成されるドキュメントに対するカスタム ストレージの場所を指定する
 
 [!include[banner](../includes/banner.md)]
 
-電子申告 (ER) フレームワークのアプリケーション プログラミング インターフェイス (API) により、電子申告 (ER) 形式が生成するドキュメントの保存先のリストを拡張することができます。 このトピックでは、ER の送信先を作成するタスクを既定の送信先ファクトリに委任し、独自の送信先ロジックを持つカスタム クラスを実装することにより、生成されるドキュメントのカスタムストレージの場所を追加する方法について説明します。
+電子申告 (ER) フレームワークのアプリケーション プログラミング インターフェイス (API) により、電子申告 (ER) 形式が生成するドキュメントの保存先のリストを拡張することができます。 この記事では、ER の送信先を作成するタスクを既定の送信先ファクトリに委任し、独自の送信先ロジックを持つカスタム クラスを実装することにより、生成されるドキュメントのカスタムストレージの場所を追加する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -35,7 +35,7 @@ ms.locfileid: "7594912"
 
 また、このトポロジの開発環境にもアクセスできる必要があります。
 
-このトピックのすべてのタスクは、**USMF** 会社で完了することができます。
+この記事のすべてのタスクは、**USMF** 会社で完了することができます。
 
 ## <a name="import-the-fixed-asset-roll-forward-er-format"></a>固定資産ロール フォワード ER 形式のインポート
 

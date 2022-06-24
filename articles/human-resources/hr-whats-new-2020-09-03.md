@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources (2020 年 9 月 3 日) の新機能および変更された機能
-description: このトピックでは、2020 年 9 月 3 日に更新された、Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: この記事では、2020 年 9 月 3 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: andreabichsel
 ms.date: 09/03/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 693c3d770f671edd3f52b22fa9240c641405dbed
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7d558f4b0ddb3e8fe3479567483e2c2349a40774
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891353"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Dynamics 365 Human Resources (2020 年 9 月 3 日) の新機能および変更された機能
 
@@ -27,7 +27,7 @@ ms.locfileid: "8687899"
 
 
 
-このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3504 に適用されます。 一部のヘッダーにあるかっこ内の数字は、参照用に Lifecycle Services (LCS) のサポート番号を参照しています。
+この記事では、Dynamics 365 Human Resources の新機能および変更された機能について説明します。 変更は、ビルド番号 8.1.3504 に適用されます。 一部のヘッダーにあるかっこ内の数字は、参照用に Lifecycle Services (LCS) のサポート番号を参照しています。
 
 Human Resources の今後の機能の詳細については、[Dynamics 365 Human Resources 2019 のリリース ウェーブ 2 の概要](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/) を参照してください。 Human Resources の更新プロセスの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 

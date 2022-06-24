@@ -1,6 +1,6 @@
 ---
 title: スナップショットの概要
-description: このトピックでは、スナップショット機能を使用して、分析のためのキャッシュフロー予測を保存したり、後で実績と比較したりできます。 キャッシュフロー予測を生成する場合は、その予測を "スナップショット" として保存できます。 その後、そのスナップショットを使用して、予測に含まれていた勘定を編集したり、スナップショットの予測を実績と比較することができます。
+description: この記事では、スナップショット機能を使用して、分析のためのキャッシュフロー予測を保存したり、後で実績と比較したりできます。 キャッシュフロー予測を生成する場合は、その予測を "スナップショット" として保存できます。 その後、そのスナップショットを使用して、予測に含まれていた勘定を編集したり、スナップショットの予測を実績と比較することができます。
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f84afddb26136797a7d35faf52325702b8e41a45
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 64f8aa3e932b4f8b6fdc5b239929216a11bfb377
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725348"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896495"
 ---
 # <a name="snapshots-overview"></a>スナップショットの概要
 

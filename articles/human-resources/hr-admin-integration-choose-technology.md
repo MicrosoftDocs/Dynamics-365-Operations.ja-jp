@@ -1,6 +1,6 @@
 ---
 title: データ統合テクノロジの選択
-description: このトピックでは、Human resources で管理されるデータの統合について説明します。
+description: この記事では、Human Resources で管理されるデータの統合について説明します。
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 98c1c56b445ae426103d19f96cbf1a77891221ef
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 79aee04527eea5b673555f9c7de893a400a5c617
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717142"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887808"
 ---
 # <a name="choose-a-data-integration-technology"></a>データ統合テクノロジの選択
 
@@ -30,7 +30,7 @@ ms.locfileid: "8717142"
 
 
 
-このトピックでは、Dynamics 365 Human Resources で管理されるデータとの統合について説明します。 ニーズに最適なテクノロジを判断する際に役立つさまざまな統合テクノロジについて説明します。
+この記事では、Dynamics 365 Human Resources で管理されるデータとの統合について説明します。 ニーズに最適なテクノロジを判断する際に役立つさまざまな統合テクノロジについて説明します。
 
 ## <a name="data-integration-background"></a>データ統合の背景
 

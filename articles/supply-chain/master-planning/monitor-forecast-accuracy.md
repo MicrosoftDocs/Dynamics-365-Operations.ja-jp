@@ -1,6 +1,6 @@
 ---
-title: 予測精度の監視
-description: このトピックでは、Dynamics 365 Supply Chain Management によって計算される予測精度のタイプおよび精度の値の表示方法を説明しています。
+title: 予測精度を監視する
+description: この記事では、Dynamics 365 Supply Chain Management によって計算される予測精度のタイプおよび精度の値の表示方法を説明しています。
 author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14d23ae800240ebb10ae085acf3ed981a22f1574
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: ebde5ab90b9345b3d6f28ea98650b3b29021c304
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470292"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893355"
 ---
-# <a name="monitor-forecast-accuracy"></a>予測精度の監視
+# <a name="monitor-forecast-accuracy"></a>予測精度を監視する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management によって計算される予測精度のタイプおよび精度の値の表示方法を説明しています。
+この記事では、Microsoft Dynamics 365 Supply Chain Management によって計算される予測精度のタイプおよび精度の値の表示方法を説明しています。
 
 Supply Chain Management では、次のタイプの予測の正確性を計算します。
 

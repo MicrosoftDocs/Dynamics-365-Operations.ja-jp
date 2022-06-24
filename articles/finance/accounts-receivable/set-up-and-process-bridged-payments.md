@@ -1,6 +1,6 @@
 ---
 title: つなぎ支払の設定および処理
-description: このトピックでは、つなぎの顧客支払の設定および処理方法について説明します。 つなぎ支払は、2 つの手順で総勘定元帳に転記される支払です。
+description: この記事では、つなぎの顧客支払の設定および処理方法について説明します。 つなぎ支払は、2 つの手順で総勘定元帳に転記される支払です。
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca93d99ce04e607b137a2755d507022a33ab1be8
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734194"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887980"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>つなぎ支払の設定および処理
 
@@ -28,7 +28,7 @@ ms.locfileid: "8734194"
 
 つなぎ支払は、2 つの手順で総勘定元帳に転記される支払です。 通常、この方法は、支払方法が **銀行** に設定されている場合に使用され、トランザクションが銀行をクリアした場合にのみトランザクションを銀行口座に転記する必要があります。 ただし、勘定科目に対して使用することもできます。 この場合、つなぎ転記の処理時に、システムはある主勘定から別の主勘定に金額を移動します。
 
-つなぎ支払は、買掛金勘定または売掛金勘定から作成できます。 このトピックでは、売掛金勘定に対するつなぎ転記の構成方法について説明しますが、買掛金勘定トランザクションの手順も同様です。
+つなぎ支払は、買掛金勘定または売掛金勘定から作成できます。 この記事では、売掛金勘定に対するつなぎ転記の構成方法について説明しますが、買掛金勘定トランザクションの手順も同様です。
 
 ## <a name="set-up-bridging-posting"></a>つなぎ転記を設定
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能、または変更された機能 (2020 年 8 月 20 日)
-description: このトピックでは、2020 年 8 月 20 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2020 年 8 月 20 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: andreabichsel
 ms.date: 08/20/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b6a3953c0c8474ae67667176c21d065c6b94c6ab
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3c71a742022afba36c417092d5a9b75c78600357
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688406"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902172"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Dynamics 365 Human Resources の新機能、または変更された機能 (2020 年 8 月 20 日)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8688406"
 
 
 
-このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3478 に適用されます。 一部のヘッダーにあるかっこ内の数字は、参照用に Lifecycle Services (LCS) のサポート番号を参照しています。
+この記事では、Dynamics 365 Human Resources の新機能および変更された機能について説明します。 変更は、ビルド番号 8.1.3478 に適用されます。 一部のヘッダーにあるかっこ内の数字は、参照用に Lifecycle Services (LCS) のサポート番号を参照しています。
 
 ## <a name="show-upcoming-and-pending-leave-of-absence-information-to-cards-in-people-workspace"></a>休暇の予定と保留中の休暇情報を、プープル ワークスペースのカードに表示する
 

@@ -1,6 +1,6 @@
 ---
 title: 品質および不適合管理の概要
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質および不適合管理機能について紹介し、それがサプライ チェーンの製品品質の向上に役立つ方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の品質および不適合管理機能について紹介し、それがサプライ チェーンの製品品質の向上に役立つ方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510dee78f6fed02e6511aedad00fcb1b15195470
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985523"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907496"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>品質および不適合管理の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質および不適合管理機能について紹介し、それがサプライ チェーンの製品品質の向上に役立つ方法について説明します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management の品質および不適合管理機能について紹介し、それがサプライ チェーンの製品品質の向上に役立つ方法について説明します。
 
 品質保証には、製品のテストと不適合材料の管理が含まれます。 品質管理プロセスは、サプライ チェーンの製品における高い品質レベルを保証します。 また、これらのプロセスによって、サプライ チェーンが最適化され、顧客満足度を高めることができます。 品質管理で、不適合製品を処理している際にこれらの製品の原産地に関係なく応答時間を管理することができます。 診断結果を修正タスクにリンクできます。 システムは問題を修正するためにタスクをスケジューリングすることができ、将来問題が再発するのを防ぐのに役立ちます。 また、品質管理では、問題の種類別に問題 (内部問題を含む) を追跡し、短期または長期のいずれかの解決策を特定することができます。 主要業績評価指標 (KPI) に関する統計で、以前に発生した不適合問題と修正に適用されたソリューションを分析できます。 履歴データを使用して、以前に講じた品質尺度の有効性を確認し、今後使用する適切な尺度を決定することができます。
 

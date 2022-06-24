@@ -1,6 +1,6 @@
 ---
-title: 在庫視覚化引当
-description: このトピックでは、在庫可視化を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除するために引当機能を設定する方法について説明します。
+title: Inventory Visibility の予約
+description: この記事では、Inventory Visibility を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除するために引当機能を設定する方法について説明します。
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5e6752539a6381e1f7271883102391374e04f3aa
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3b74907709ab97ddf4cc829dba324df213ca229f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061707"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895731"
 ---
-# <a name="inventory-visibility-reservations"></a>在庫視覚化引当
+# <a name="inventory-visibility-reservations"></a>Inventory Visibility の予約
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、在庫可視化を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除するために引当機能を設定する方法について説明します。
+この記事では、Inventory Visibility を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除するために引当機能を設定する方法について説明します。
 
 引当は、将来使用される在庫の数量をマークします。 引当を作成すると、引当が消費または解除されるまで、他の注文によって引当済商品を引当または消費することを防ぎます。 在庫可視化サービスへの API 呼び出しを使用して、引当が作成、消費、およびキャンセルされます。
 

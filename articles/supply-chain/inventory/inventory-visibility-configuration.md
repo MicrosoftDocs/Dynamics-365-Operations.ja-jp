@@ -1,8 +1,8 @@
 ---
-title: 在庫の視覚化のコンフィギュレーション
-description: このトピックでは、在庫の視覚化を構成する方法について説明します。
+title: Inventory Visibility の構成
+description: この記事では、Inventory Visibility を構成する方法について説明します。
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786841"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895818"
 ---
-# <a name="configure-inventory-visibility"></a>在庫の視覚化のコンフィギュレーション
+# <a name="configure-inventory-visibility"></a>Inventory Visibility の構成
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、Power Apps で、在庫視覚化アプリを使用して在庫視覚化を構成する方法を説明します。
+この記事では、Power Apps で  Inventory Visibility アプリを使用して Inventory Visibility を構成する方法を説明します。
 
 ## <a name="introduction"></a><a name="introduction"></a>概要
 
-在庫の視覚化の使用を開始する前に、このトピックの説明に従って、次の構成を完了する必要があります。
+Inventory Visibility の使用を開始する前に、この記事の説明に従って、次の構成を完了する必要があります:
 
 - [データ ソースの構成](#data-source-configuration)
 - [パーティションの構成](#partition-configuration)
@@ -41,7 +41,7 @@ ms.locfileid: "8786841"
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>在庫視覚化アプリの構成ページ
 
-Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.md) の **構成** ぺージで手持構成および仮引当構成の設定をサポートします。 アドインをインストールすると、既定の構成に Microsoft Dynamics 365 Supply Chain Management (`fno` データ ソース) からの値が含まれます。 既定の設定を確認できます。 また、業務要件や外部システムの在庫転記要件に基づき、複数のシステム間で在庫変更を転記、整理、およびクエリする方法を標準化するように構成を変更することができます。 このトピックの残りのセクションでは、**構成** ページの各部分の使い方について説明します。
+Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.md) の **構成** ぺージで手持構成および仮引当構成の設定をサポートします。 アドインをインストールすると、既定の構成に Microsoft Dynamics 365 Supply Chain Management (`fno` データ ソース) からの値が含まれます。 既定の設定を確認できます。 また、業務要件や外部システムの在庫転記要件に基づき、複数のシステム間で在庫変更を転記、整理、およびクエリする方法を標準化するように構成を変更することができます。 この記事の残りのセクションでは、**構成** ページの各部分の使い方について説明します。
 
 構成の完了後、必ずアプリ内の **構成の更新** を選択してください。
 
@@ -54,6 +54,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 | *OnHandReservation* | この機能では、在庫可視化を使用して、引当を作成したり、引当を消費したり、指定された在庫量の引当を解除することができます。 詳細については、[在庫の視覚化引当](inventory-visibility-reservations.md) を参照してください。 |
 | *OnHandMostSpecificBackgroundService* | この機能は、すべての分析コードと共に、製品の在庫集計を提供します。 在庫集計データは、在庫視覚化から定期的に同期されます。 詳細については、[在庫概要](inventory-visibility-power-platform.md#inventory-summary) を参照してください。 |
 | *OnhandChangeSchedule* | このオプション機能により、手持在庫変更スケジュールと、納期回答可能在庫 (ATP) 機能が有効になります。 詳細については、[Inventory Visibility の手持変更スケジュールと納期回答可能在庫](inventory-visibility-available-to-promise.md) を参照してください。 |
+| *割り当て* | このオプション機能により Inventory Visibility は、在庫保護 (リングフェンシング) および過剰販売管理の機能を持つことができます。 詳細については、[Inventory Visibility の在庫配賦](inventory-visibility-allocation.md) を参照してください。 |
 | *在庫可視化で在庫品目を有効化* | このオプション機能によって、在庫品目一覧が有効になり、高度な倉庫プロセス (WHS 品目) が有効な品目がサポートされます。 詳細については、[WHS 品目に対応した Inventory Visibility](inventory-visibility-whs-support.md) を参照してください。 |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>サービス エンドポイントを検索する
@@ -318,7 +319,14 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 1. 既定では、インデックスの一覧が用意されています。 既存のインデックスを変更するには、関連するインデックスのセクションで **編集** または **追加** を選択します。 新しいインデックス セットを作成するには、**新しいインデックス セット** を選択します。 すべてのインデックス セットの各行の **分析コード** フィールドで、ベース分析コードの一覧から選択します。 次のフィールドの値は自動的に生成されます。
 
     - **セット番号** – 同じグループ (インデックス) に属する分析コードはグループ化され、同じセット番号が割り当てされます。
-    - **階層** – 階層は、分析コード グループ (インデックス) でクエリ可能できるようサポートされる分析コードの組み合わせを定義するために使用されます。 たとえば、*スタイル*、*色*、および *サイズ* の階層の順序が設定されている分析コード グループを設定する場合、システムは 3 つのクエリ グループの結果をサポートします。 1 つ目のグループはスタイルのみです。 2 つ目のグループはスタイルおよび色の組み合わせです。 3 つ目のグループはスタイル、色、およびサイズの組み合わせです。 その他の組み合わせはサポートされていません。
+    - **階層** – 階層は、分析コード グループ (インデックス) でクエリ可能できるようサポートされる分析コードの組み合わせを定義するために使用されます。 たとえば、*スタイル*、*色*、および *サイズ* の階層順序が設定されている分析コード グループを設定する場合、システムは 3 つのクエリ グループの結果をサポートします。 1 つ目のグループはスタイルのみです。 2 つ目のグループはスタイルおよび色の組み合わせです。 3 つ目のグループはスタイル、色、およびサイズの組み合わせです。 その他の組み合わせはサポートされていません。
+
+> [!TIP]
+> インデックス階層を設定する際に注意が必要なヒントをいくつか示します:
+>
+> - パーティション構成で定義されたベース分析コードは、インデックス構成で定義しないでください。 基本分析コードがインデックス構成で再度定義された場合は、このインデックスでクエリすることはできません。
+> - すべての分析コードの組み合わせによって集計された在庫のみをクエリする必要がある場合は、基本分析コード `Empty` を含む単一のインデックスを設定します。
+> - 少なくとも 1 つのインデックス階層 (例えば、基準分析コード `Empty` を含む) が必要です。そうしないと、クエリは "インデックス階層が設定されていません" というエラーで失敗します。
 
 ### <a name="example"></a>例
 
@@ -372,11 +380,6 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
     - T シャツ、赤、S、レギュラー、6
     - T シャツ、赤、L、レギュラー、7
 
-> [!NOTE]
-> パーティション構成で定義されたベース分析コードは、インデックス構成で定義しないでください。
-> 
-> すべての分析コードの組み合わせによって集計された在庫のみをクエリする必要がある場合は、基本分析コード `Empty` を含む単一のインデックスを設定できます。
-
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>引当の構成 (オプション)
 
 仮引当機能を使用する場合は、引当の構成が必要です。 構成は 2 つの基本的な部分で構成されています。
@@ -390,7 +393,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 物理的測定から計算メジャーへのマッピングを設定することにより、在庫視覚化サービスを有効にし、物理的測定に基づいて、引当可能在庫数を自動的に検証することができます。
 
-このマッピングを設定する前に、(このトピックで前述されているように) Power Apps の **構成** ページの **データ ソース** タブと **計算メジャー** タブで、物理的測定、計算メジャー、およびそれらのデータ ソースを定義する必要があります。
+このマッピングを設定する前に、(この記事で前述されているように) Power Apps の **構成** ページの **データ ソース** タブと **計算メジャー** タブで、現物メジャー、計算メジャー、およびそれらのデータ ソースを定義する必要があります。
 
 仮引当マッピングを定義するには、次の手順に従います。
 
@@ -508,7 +511,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 このセクションでは、`iv` データ ソースの構成方法について説明します。
 
-##### <a name="physical-measures-configured-for-the-iv-data-source"></a>iv データ ソース用に構成された物理的測定
+##### <a name="physical-measures-configured-for-the-iv-data-source"></a>"iv" データ ソース用に構成された現物メジャー
 
 次の物理的測定は、`iv` データ ソース用に構成されています。
 
@@ -646,16 +649,16 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 | 加算 | `iom` | `OnOrder` |
 | 加算 | `iv` | `SoftReservPhysical` |
 | 加算 | `iv` | `SoftReservOrdered` |
-| 加算 | `fno` | `ReservPhysical` |
-| 加算 | `fno` | `ReservOrdered` |
-| 加算 | `iv` | `ReservPhysical` |
-| 加算 | `iv` | `ReservOrdered` |
+| 追加 | `fno` | `ReservPhysical` |
+| 追加 | `fno` | `ReservOrdered` |
+| 追加 | `iv` | `ReservPhysical` |
+| 追加 | `iv` | `ReservOrdered` |
 
-#### <a name="configuration-of-the-fno-data-source"></a>fno データ ソースの構成
+#### <a name="configuration-of-the-fno-data-source"></a>"fno" データ ソースの構成
 
 このセクションでは、`fno` データ ソースの構成方法について説明します。
 
-##### <a name="dimension-mappings-for-the-fno-data-source"></a>fno データ ソースの分析コード マッピング
+##### <a name="dimension-mappings-for-the-fno-data-source"></a>"fno" データ ソースの分析コード マッピング
 
 次の表に示す分析コード マッピングは、`fno` データ ソース用に構成されています。
 
@@ -687,7 +690,7 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 | `InventDimension11` | `CustomDimension11` |
 | `InventDimension12` | `CustomDimension12` |
 
-##### <a name="physical-measures-configured-for-the-fno-data-source"></a>fno データ ソース用に構成された物理的測定
+##### <a name="physical-measures-configured-for-the-fno-data-source"></a>"fno" データ ソース用に構成された現物メジャー
 
 次の物理的測定は、`fno` データ ソース用に構成されています。
 
@@ -699,11 +702,11 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 - `ReservOrdered`
 - `OnOrder`
 
-#### <a name="configuration-of-the-pos-data-source"></a>pos データ ソースの構成
+#### <a name="configuration-of-the-pos-data-source"></a>"pos" データ ソースの構成
 
 このセクションでは、データ ソース `pos` の構成方法について説明します。
 
-##### <a name="physical-measures-for-the-pos-data-source"></a>pos データ ソース用の物理的測定
+##### <a name="physical-measures-for-the-pos-data-source"></a>"pos" データ ソース用の現物メジャー
 
 次の物理的測定は、`pos` データ ソース用に構成されています。
 
@@ -716,18 +719,18 @@ Power Apps で、[在庫視覚化アプリ](inventory-visibility-power-platform.
 
 | 計算タイプ | データ ソース | 物理的測定 |
 |---|---|---|
-| 加算 | `fno` | `AvailPhysical` |
-| 加算 | `pos` | `PosInbound` |
+| 追加 | `fno` | `AvailPhysical` |
+| 追加 | `pos` | `PosInbound` |
 | 減算 | `pos` | `PosOutbound` |
 
-#### <a name="configuration-of-the-iom-data-source"></a>iom データ ソースの構成
+#### <a name="configuration-of-the-iom-data-source"></a>"iom" データ ソースの構成
 
 次の物理的測定は、`iom` (Intelligent Order Management) データ ソース用に構成されています。
 
 - `OnOrder`
 - `OnHand`
 
-#### <a name="configuration-of-the-erp-data-source"></a>erp データ ソースの構成
+#### <a name="configuration-of-the-erp-data-source"></a>"erp" データ ソースの構成
 
 次の物理的測定は、`erp` (エンタープライズ リソース プランニング) データ ソース用に構成されています。
 

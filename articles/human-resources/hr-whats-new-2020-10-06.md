@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 10 月 6 日)
-description: このトピックでは、2020 年 10 月 6 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2020 年 10 月 6 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: jcart1106
 ms.date: 10/06/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ac64218e48d2713b91af1541f94083aef3f815a2
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4eb3e893c3243d3b2c169cb5a47001d4e0771a20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887721"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 (2020 年 10 月 6 日)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8062982"
 
 
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
 新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2020 リリース ウェーブ 2 の概要](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
 
@@ -48,9 +48,9 @@ ms.locfileid: "8062982"
 このリリースには、次のバグ修正が含まれています。
 
 >[!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックが更新される場合があります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事が更新される場合があります。
 
-| 問題の番号 | 出庫 | 説明 |
+| 問題の番号 | 問題 | Description |
 | --- | --- | --- |
 | 448806 | **既定の ID タイプ** は、HCM パラメーターで **RecID** としてエクスポートされる | Human Resources パラメーター エンティティにこの変更を加えると、**既定の ID タイプ** を表示する列が追加されます。 |
 | 492923 | タスク記録が Lifecycle Services (LCS) に保存されない | タスク記録を LCS に保存できるようになりました。 |

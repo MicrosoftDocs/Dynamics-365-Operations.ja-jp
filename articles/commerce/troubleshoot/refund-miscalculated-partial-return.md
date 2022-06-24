@@ -1,6 +1,6 @@
 ---
 title: 返品数量に基づいて間違って計算された払戻可能な請求金額
-description: このトピックには、レジ担当者が、販売時点管理 (POS) で、返品された品目の数量に対する払戻額が誤っていることに気づいた場合に使用できるトラブルシューティング ガイドが含まれています。
+description: この記事には、レジ担当者が、販売時点管理 (POS) で、返品された品目の数量に対する払戻額が誤っていることに気づいた場合に使用できるトラブルシューティング ガイドが含まれています。
 author: gvrmohanreddy
 ms.date: 03/24/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c8ecaa0cb73d06ac66b57cce815264e841a2259b
-ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
+ms.openlocfilehash: 7a84207f587a826b9acdfd818c64220c5327bde1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "8490216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890246"
 ---
 # <a name="refundable-charges-are-miscalculated-based-on-the-quantity-returned"></a>返品数量に基づいて間違って計算された払戻可能な請求金額
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックには、レジ担当者が、販売時点管理 (POS) で、返品された品目の数量に対する払戻額が誤っていることに気づいた場合に使用できるトラブルシューティング ガイドが含まれています。
+この記事には、レジ担当者が、販売時点管理 (POS) で、返品された品目の数量に対する払戻額が誤っていることに気づいた場合に使用できるトラブルシューティング ガイドが含まれています。
 
 ## <a name="description"></a>Description
 

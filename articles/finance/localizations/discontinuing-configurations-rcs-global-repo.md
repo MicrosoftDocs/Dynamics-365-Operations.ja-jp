@@ -1,6 +1,6 @@
 ---
 title: RCS グローバル リポジトリのコンフィギュレーションの中止
-description: このトピックでは、RCS グローバル リポジトリのコンフィギュレーションを中止する方法について説明します。
+description: この記事では、RCS グローバル リポジトリのコンフィギュレーションを中止する方法について説明します。
 author: JaneA07
 ms.date: 02/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 340fc96e7dfe56da9ee8d4831a5980e3e96ec3ee0f2f5a8fb2ab72f713de9737
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4121f45a95e1712f21390c317af532662846a0fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712173"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894814"
 ---
 # <a name="discontinue-configurations-in-the-rcs-global-repository"></a>RCS グローバル リポジトリのコンフィギュレーションの中止
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、RCS グローバル リポジトリのコンフィギュレーションを中止する方法について説明します。 以前は、不要になったコンフィギュレーションのみを削除できました。 現在は、RCS グローバル リポジトリでリリースされたコンフィギュレーションを **中止** としてマークできるようになりました。 この機能によって、次の操作も実行できます。 
+この記事では、RCS グローバル リポジトリのコンフィギュレーションを中止する方法について説明します。 以前は、不要になったコンフィギュレーションのみを削除できました。 現在は、RCS グローバル リポジトリでリリースされたコンフィギュレーションを **中止** としてマークできるようになりました。 この機能によって、次の操作も実行できます。 
  
  - コンフィギュレーションの中止が予定されている場合は、事前に通知してください。
  - 代替コンフィギュレーションに適用される詳細を含めます。

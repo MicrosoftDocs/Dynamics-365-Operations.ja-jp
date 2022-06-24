@@ -1,6 +1,6 @@
 ---
 title: 指標金利にリンクされたリース支払の再評価
-description: このトピックでは、指標金利の変更によって変動リース支払が変更された場合に、使用権 (ROU) 資産に対するリース負債の調整について説明します。
+description: この記事では、指標金利の変更によって変動リース支払が変更された場合に、使用権 (ROU) 資産に対するリース負債の調整について説明します。
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 8dc2325e9f0651bea0d70d9f66e5d88b741009f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968059"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903250"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>指標金利にリンクされたリース支払の再評価
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、指標金利の変更によって変動リース支払が変更された場合に、使用権 (ROU) 資産に対するリース負債の調整について説明します。 リース負債と使用権 (ROU) 資産は、新しい支払額を考慮して調整されます。 米国で一般的に認められた会計原則 (米国 GAAP) の標準である Accounting Standards Codification Topic 842 (ASC 842) に基づいて、キャッシュ フローに追加変更があった場合を除き、指標金利の変更が原因で支払が増加または減少した場合にのみ変動支払のみが変更されます。 これらの追加変更には、金利に関連するリース期間の変更が含まれる場合があります。 詳細については、国際会計基準16 (IFRS 16) の ASC 842-10-55-225 と 42 (b) 段落を参照してください。
+この記事では、指標金利の変更によって変動リース支払が変更された場合に、使用権 (ROU) 資産に対するリース負債の調整について説明します。 リース負債と使用権 (ROU) 資産は、新しい支払額を考慮して調整されます。 米国で一般的に認められた会計原則 (米国 GAAP) の標準である Accounting Standards Codification Topic 842 (ASC 842) に基づいて、キャッシュ フローに追加変更があった場合を除き、指標金利の変更が原因で支払が増加または減少した場合にのみ変動支払のみが変更されます。 これらの追加変更には、金利に関連するリース期間の変更が含まれる場合があります。 詳細については、国際会計基準16 (IFRS 16) の ASC 842-10-55-225 と 42 (b) 段落を参照してください。
 
 ## <a name="adjust-lease-payments"></a>リース支払の調整
 

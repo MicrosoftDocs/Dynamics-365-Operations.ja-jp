@@ -1,6 +1,6 @@
 ---
 title: PayPal のエクスプレス決済を構成する
-description: このトピックでは、PayPal のエクスプレス決済を構成して、Microsoft Dynamics 365 Commerce でより迅速なチェックアウト機能を有効にする方法について説明します。
+description: この記事では、PayPal のエクスプレス決済を構成して、Microsoft Dynamics 365 Commerce でより迅速なチェックアウト機能を有効にする方法について説明します。
 author: BrianShook
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 5fff17959e7ed9299df169c68b2ed07f6b7c7d2c
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: b69b7384992fb86370ff6881824a7d2c9a77d2c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743576"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905285"
 ---
 # <a name="configure-express-payments-for-paypal"></a>PayPal のエクスプレス決済を構成する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、PayPal のエクスプレス決済を構成して、Microsoft Dynamics 365 Commerce でより迅速なチェックアウト機能を有効にする方法について説明します。
+この記事では、PayPal のエクスプレス決済を構成して、Microsoft Dynamics 365 Commerce でより迅速なチェックアウト機能を有効にする方法について説明します。
 
 ## <a name="key-terms"></a>重要な用語
 
@@ -28,7 +28,7 @@ ms.locfileid: "8743576"
 |---|---|
 | PayPal ウォレット | PayPal コネクタでサポートされているカスタマ エクスペリエンスと統合。 PayPal ボタンとも呼ばれます。 |
 | ウォレット | クレジット カード とデビット カードの種類を区別するために使用される、銀行 ID 番号 (BIN) 範囲や有効期限など、従来の決済特性を含まない決済タイプ。 |
-| 決済エクスプレス | サポートされている決済方法を使用する場合に、迅速なチェックアウト動作をサポートする Commerce モジュール。 このトピックでは、PayPal での決済エクスプレス モジュールの使用について説明します。 |
+| 決済エクスプレス | サポートされている決済方法を使用する場合に、迅速なチェックアウト動作をサポートする Commerce モジュール。 この記事では、PayPal での決済エクスプレス モジュールの使用について説明します。 |
 
 Dynamics 365 Commerce は、PayPal ウォレットとの統合を最初から用意しています。 PayPal 向け Dynamics 365 Payment Connector が構成されている場合、PayPal ボタンは、オンライン注文のチェックアウト中に選択可能な支払い方法として表示されます。 ユーザーが PayPal を選択すると、PayPal で直接支払を完了するように指示され、オンライン ストアフロントに戻って注文を完了します。 PayPal カート チェックアウトでは、顧客は支払口座情報を使用してチェックアウト フォームを事前入力できるため、チェックアウト プロセスをすばやく完了できます。
 

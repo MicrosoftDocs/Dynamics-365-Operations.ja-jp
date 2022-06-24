@@ -1,6 +1,6 @@
 ---
 title: 予算案の有効化
-description: このトピックでは、財務インサイトの予算案機能を有効にする方法について説明します。
+description: この記事では、Finance Insights の予算案機能を有効にする方法について説明します。
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c2002dbd480fb520451daf9209423ce64b3239d8
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f9bcf8042931e31de1cdd59df1820238d7826000
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713955"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899903"
 ---
 # <a name="enable-budget-proposal"></a>予算案の有効化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、財務インサイトの予算案機能を有効にする方法について説明します。
+この記事では、Finance Insights の予算案機能を有効にする方法について説明します。
 
 1. **機能管理** ワークスペースを開き、次の手順に従います:
 

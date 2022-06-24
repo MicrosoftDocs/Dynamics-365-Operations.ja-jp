@@ -1,6 +1,6 @@
 ---
-title: LinkedIn タレント ハブとの統合
-description: このトピックでは、Microsoft Dynamics 365 Human Resources と LinkedIn タレント ハブ間の統合を設定する方法について説明します。
+title: LinkedIn Talent Hub との統合
+description: この記事では、Microsoft Dynamics 365 Human Resources と LinkedIn タレント ハブ間の統合を設定する方法について説明します。
 author: jaredha
 ms.date: 10/20/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d14a8cb1973e0ed55ef10ddb43415eba80eb5c1b
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: df4a0a4dec078392ba835318450f5983a6e95c97
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887751"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn Talent Hub との統合
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> このトピックで説明されている Dynamics 365 Human Resources と LinkedIn Talent Hub との統合は、2021 年 12 月 31 日に終了しました。 この日付以降、統合サービスは使用できません。 統合サービスを使用していない組織では、終了する前でもサービスを実装することはできません。
+> この記事で説明されている Dynamics 365 Human Resources と LinkedIn Talent Hub との統合は、2021 年 12 月 31 日に終了しました。 この日付以降、統合サービスは使用できません。 統合サービスを使用していない組織では、終了する前でもサービスを実装することはできません。
 
 [LinkedIn タレント ハブ](https://business.linkedin.com/talent-solutions/talent-hub) は採用管理システム (ATS) のプラットフォームです。 これにより、従業員の調達、管理、雇用をすべて 1 か所で行うことができます。 Microsoft Dynamics 365 Human Resources を LinkedIn タレント ハブと統合することにより、職位に採用された応募者の従業員レコードを Human Resources で簡単に作成することができます。
 

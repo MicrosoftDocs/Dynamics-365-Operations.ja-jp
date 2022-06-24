@@ -1,6 +1,6 @@
 ---
 title: 消費者物価指数スケジュール
-description: このトピックでは、サブスクリプション請求管理のエスカレーション料金の決定に役立つ、インターネットから取得する消費者物価指数 (CPI) スケジュールの一覧を作成する方法について説明します。
+description: この記事では、サブスクリプション請求管理のエスカレーション料金の決定に役立つ、インターネットから取得する消費者物価指数 (CPI) スケジュールの一覧を作成する方法について説明します。
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 54114fae25565ed1aae7056ef9be5a4a159291e9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f08b79ee00baab3713d9ccc24a7595b1de7a7768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904876"
 ---
 # <a name="consumer-price-index-schedule"></a>消費者物価指数スケジュール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、消費者物価指数 (CPI) スケジュールを作成、削除、確認、および処理する方法について説明します。 CPI スケジュールは、請求スケジュール明細行として追加する消費財およびサービスの価格を決定するために使用されます。 その後、CPI スケジュールは、請求スケジュール上のエスカレーションおよび割引と共に使用したり、請求スケジュールの請求金額を更新するために手動で処理したりすることもできます。 CPI スケジュールは、手動で入力できます。または、CPI スケジュール複合エンティティを使用してインポートすることができます。
+この記事では、消費者物価指数 (CPI) スケジュールを作成、削除、確認、および処理する方法について説明します。 CPI スケジュールは、請求スケジュール明細行として追加する消費財およびサービスの価格を決定するために使用されます。 その後、CPI スケジュールは、請求スケジュール上のエスカレーションおよび割引と共に使用したり、請求スケジュールの請求金額を更新するために手動で処理したりすることもできます。 CPI スケジュールは、手動で入力できます。または、CPI スケジュール複合エンティティを使用してインポートすることができます。
 
 CPI スケジュールを追加するには、次の手順に従います。
 

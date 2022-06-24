@@ -1,6 +1,6 @@
 ---
 title: 仕訳元帳タイプ
-description: このトピックでは、財務仕訳帳に設定できる仕訳帳タイプについて説明します。
+description: この記事では、財務仕訳帳に設定できる仕訳帳タイプについて説明します。
 author: kweekley
 ms.date: 10/10/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e49d101bbbe576e0fcf2e9b243f4f29124fbd85
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 883c54b84ed31384a28c31c8b814c75d340d020e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722272"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901316"
 ---
 # <a name="ledger-journal-types"></a>仕訳元帳タイプ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、財務仕訳帳に設定できる仕訳帳タイプについて説明します。 Dynamics 365 Finance 全体で使用できる仕訳帳を設定するには、**仕訳帳名** ページを使用します。
+この記事では、財務仕訳帳に設定できる仕訳帳タイプについて説明します。 Dynamics 365 Finance 全体で使用できる仕訳帳を設定するには、**仕訳帳名** ページを使用します。
 
 | 仕訳タイプ                      | 使用方法                       | このページにトランザクションを入力                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|

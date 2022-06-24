@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 5 月 28 日)
-description: このトピックでは、2020 年 5 月 28 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2020 年 5 月 28 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: andreabichsel
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 88e0938ab9be8066d6ed4709ca2c7074ebe46dc3
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 42cb9e595c2997f17f487c31f674d1c099a3c80d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686040"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902956"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 5 月 28 日)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3287 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
+この記事では、Dynamics 365 Human Resources の新機能および変更された機能について説明します。 変更は、ビルド番号 8.1.3287 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
 
 ## <a name="leaverequest-entity-doesnt-work-when-you-enable-multiple-types-per-leave-plan-447498"></a>休暇プラン (447498) ごとに複数のタイプを有効にすると、LeaveRequest エンティティは機能しません
 

@@ -1,6 +1,6 @@
 ---
 title: 仕入先要求コンフィギュレーション
-description: このトピックでは、新しい仕入先要求で設定する必要があるフィールドについて説明します。
+description: この記事では、新しい仕入先要求で設定する必要があるフィールドについて説明します。
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 48f0fc8204afd560db656ee4da624d29cb9c8572
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 0f583caaaf4909918fafc0e8ef08490e25057561
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672993"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890860"
 ---
 # <a name="vendor-request-configurations"></a>仕入先要求コンフィギュレーション
 [!include [banner](../includes/banner.md)]

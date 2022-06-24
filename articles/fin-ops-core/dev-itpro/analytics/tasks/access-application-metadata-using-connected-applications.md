@@ -1,6 +1,6 @@
 ---
 title: 接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする
-description: このトピックの手順では、Regulatory Configuration Service のユーザーが、メタデータを使用して、新しい電子申告モデル マッピングをデザインする方法について説明します。
+description: この記事の手順では、Regulatory Configuration Service のユーザーが、メタデータを使用して、新しい電子申告モデル マッピングをデザインする方法について説明します。
 author: NickSelin
 ms.date: 06/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d99ca41a9a24ef8ac0fe31e703cad79d41216fa726fa1d354ac19db90706954
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 330683da986a551a9694833655122768d30499b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776027"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906771"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>接続されているアプリケーションを使用してアプリケーション メタデータにアクセスする
 
 [!include [banner](../../includes/banner.md)]
 
-次の手順では、システム管理者または電子申告開発者ロールの Regulatory configuration service (RCS) ユーザーが、Finance and Operations アプリケーションのメタデータを使用して、電子申告 (ER) モデルのマッピングをデザインする方法を説明します。 アプリケーションのメタデータは、RCS 接続されたアプリケーションを使用してオンラインでアクセスできます。 サンプル ER モデルマッピングは、対外貿易トランザクションにアクセスするようにコンフィギュレーションされます。 これらの手順を完了するには、まず、RCS で [コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) のトピックにある手順を完了する必要があります。 トピック [ER 構成を使用してアプリケーション メタデータにアクセスする](access-application-metadata-er-configuration.md) に記載の手順を完了していない場合は、[電子申告の例のページ](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip)に移動し、次の ER 構成をダウンロードして保存し、手順を完了してください: 「対外貿易メタデータ.xml」、「対外貿易モデル.xml」、「対外貿易マッピング.xml」。
+次の手順では、システム管理者または電子申告開発者ロールの Regulatory configuration service (RCS) ユーザーが、Finance and Operations のメタデータを使用して、電子申告 (ER) モデルのマッピングをデザインする方法を説明します。 アプリケーションのメタデータは、RCS 接続されたアプリケーションを使用してオンラインでアクセスできます。 サンプル ER モデルマッピングは、対外貿易トランザクションにアクセスするようにコンフィギュレーションされます。 これらの手順を完了するには、まず、RCS で [コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) の記事にある手順を完了する必要があります。 記事 [ER 構成を使用してアプリケーション メタデータにアクセスする](access-application-metadata-er-configuration.md) に記載の手順を完了していない場合は、[電子申告の例のページ](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip)に移動し、次の ER 構成をダウンロードして保存し、手順を完了してください: 「対外貿易メタデータ.xml」、「対外貿易モデル.xml」、「対外貿易マッピング.xml」。
 
 ## <a name="prerequisites"></a>必要条件
 1. **すべてのワークスペース** > **電子申告** の順に移動します。 

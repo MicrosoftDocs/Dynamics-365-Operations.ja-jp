@@ -1,6 +1,6 @@
 ---
 title: フォーミュラとその成分の変更の管理
-description: このトピックでは、フォーミュラ管理を実行し、プロセス製造マスター データに対する変更を管理する方法について説明します。
+description: この記事では、フォーミュラ管理を実行し、プロセス製造マスター データに対する変更を管理する方法について説明します。
 author: t-benebo
 ms.date: 05/19/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 8105ebc7f3698a6baaa04b6548dac18a7bf81a47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103047"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904075"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>フォーミュラとその成分の変更の管理
 
@@ -29,7 +29,7 @@ Microsoft Dynamics 365 Supply Chain Management のプロセス製造機能を使
 
 ## <a name="turn-this-feature-on-or-off"></a>この機能のオン/オフの切り替え
 
-このトピックで説明する機能を使用するには、システムで *技術変更管理* と *酢式とその成分への変更を管理する* の両方をオンにする必要があります。 これらの機能のオン/オフの切り替え方法の詳細については、[エンジニアリング変更管理の概要](product-engineering-overview.md) を参照してください。
+この記事で説明する機能を使用するには、システムで *技術変更管理* と *酢式とその成分への変更を管理する* の両方をオンにする必要があります。 これらの機能のオン/オフの切り替え方法の詳細については、[エンジニアリング変更管理の概要](product-engineering-overview.md) を参照してください。
 
 ## <a name="feature-naming-conventions"></a>機能の名前付け規則
 
@@ -46,7 +46,7 @@ Supply Chain Management のユーザー インターフェイス (UI) および�
 - **準備完了コントロール** – システム チェックおよびユーザー ガイダンス (アンケートおよびチェックリスト) を使用して、製品がリリースされる前に必要なすべての製品データが入力されていることを確認します。 詳細については、[製品準備](product-readiness.md) を参照してください。
 - **強化された製品リリース機能** – 製品とそのフォーミュラの完全に定義されたバージョンを組織 (法人) から他の法人にリリースします。 リリース前に製品情報を確認または編集する必要があるかどうかを判断することもできます。 詳細については、[製品構造のリリース](release-product-structure.md) を参照してください。
 
-前の一覧でリンクされているトピックのほとんどは、部品表 (BOM) に基づいた例を示しています。 ただし、フォーミュラも同様に機能します。 以下に、変更管理 (またはフォーミュラ変更管理のみ) を使用してフォーミュラと BOM を管理する際に役立ついくつかの追加の概念を示します:
+前の一覧でリンクされている記事のほとんどは、部品表 (BOM) に基づいた例を示しています。 ただし、フォーミュラも同様に機能します。 以下に、変更管理 (またはフォーミュラ変更管理のみ) を使用してフォーミュラと BOM を管理する際に役立ついくつかの追加の概念を示します:
 
 - 各 [製品エンジニアリング カテゴリ](engineering-versions-product-category.md) に対して、生産タイプ (BOM、フォーミュラ、または計画品目) を指定できます。 また、そのカテゴリを使用する製品に CW サポートが必要かどうかも指定できます。
 - 連産品と副産物は、エンジニアリング製品ではありません。 そのため、バージョン管理されません。 変更する必要がある場合は、新しい製品を作成します。 この方法により、メンテナンスが容易になります。

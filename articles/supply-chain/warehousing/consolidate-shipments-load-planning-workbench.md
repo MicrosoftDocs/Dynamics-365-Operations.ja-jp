@@ -1,6 +1,6 @@
 ---
 title: 積荷計画ワークベンチから倉庫にリリースすることで出荷を連結する
-description: このトピックでは、複数の注文が同一の積荷で倉庫にリリースされ、自動的に出荷に連結されるシナリオを示します。
+description: この記事では、複数の注文が同一の積荷で倉庫にリリースされ、自動的に出荷に連結されるシナリオを示します。
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 3d74a4171bc8d601d034afb9b7f12634a8f9dbed
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 36a68328ddd1b19e116598fb93ac17405a9c5ed4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672545"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888357"
 ---
 # <a name="consolidate-shipments-by-releasing-to-warehouse-from-the-load-planning-workbench"></a>積荷計画ワークベンチから倉庫にリリースすることで出荷を連結する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、複数の注文が同一の積荷で倉庫にリリースされ、自動的に出荷に連結されるシナリオを示します。
+この記事では、複数の注文が同一の積荷で倉庫にリリースされ、自動的に出荷に連結されるシナリオを示します。
 
 ## <a name="make-demo-data-available"></a>デモ データを有効化する
 
-このトピックのシナリオでは、Microsoft Dynamics 365 Supply Chain Management にて用意されている標準のデモデータに含まれる値とレコードを参照し ます。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を **usmf** に設定します。
+この記事のシナリオでは、Microsoft Dynamics 365 Supply Chain Management にて用意されている標準のデモ データに含まれる値とレコードを参照します。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を **usmf** に設定します。
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>出荷連結ポリシーおよび製品フィルタの設定
 

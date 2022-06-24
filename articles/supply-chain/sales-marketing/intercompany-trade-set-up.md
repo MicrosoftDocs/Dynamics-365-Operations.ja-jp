@@ -1,6 +1,6 @@
 ---
 title: 会社間取引の設定
-description: このトピックでは、会社間取引を設定する方法について説明します
+description: この記事では、会社間取引を設定する方法について説明します
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 5080267568f4d0626d2c727efb533295e7d8e397
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8d956c60db9f3acf2f1759dc3e1922da40d8a514
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669407"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905634"
 ---
 # <a name="set-up-intercompany-trade"></a>会社間取引の設定
 

@@ -1,6 +1,6 @@
 ---
 title: 配送オプション モジュール
-description: このトピックでは、配送オプション モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+description: この記事では、配送オプション モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
 ms.date: 02/24/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 9b9a7ad05974b98511cfc582af62c19c5fb4dbf5
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 554a17cf1c90f7fdaa20de74c3f6726910ab815d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894561"
 ---
 # <a name="delivery-options-module"></a>配送オプション モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、配送オプション モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+この記事では、配送オプション モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 
 配送オプション モジュールを使用すると、顧客は、オンライン注文の配送や受取などの配送方法を選択できます。 配送モードを決定するには、配送先住所が必要です。 配送先住所が変更になると、配送オプションを再度取得する必要があります。 注文に店舗で受け取る品目のみが含まれる場合、このモジュールは自動的に非表示になります。
 

@@ -1,6 +1,6 @@
 ---
 title: 会社間取引の TDS の算出
-description: このトピックでは、段階的に行われる企業間取引の源泉徴収 (TDS) の計算プロセスについて説明します。
+description: この記事では、段階的に行われる企業間取引の源泉徴収 (TDS) の計算プロセスについて説明します。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 381b00c64e3e3a09a245c82cbe1f1599986a49aa
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c27bea997804f2c5eff6be2b20064b272ccd062f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726980"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888976"
 ---
 # <a name="tds-calculation-on-intercompany-transactions"></a>会社間取引の TDS の算出
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、段階的に行われる企業間取引の源泉徴収 (TDS) の計算プロセスについて説明します。
+この記事では、段階的に行われる企業間取引の源泉徴収 (TDS) の計算プロセスについて説明します。
 
 企業間取引の注文書または販売注文書が作成されると、顧客や仕入先に定義されている既定の TDS グループが TDS 額の計算に使用されます。 TDS の金額は、請求書が転記された後に回収可能勘定または買掛金勘定に転記されます。
 

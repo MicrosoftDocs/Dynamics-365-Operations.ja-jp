@@ -1,6 +1,6 @@
 ---
 title: LCS で IoT インテリジェンスをインストールする
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) に、IoT インテリジェンスをインストールする手順を説明します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) に、IoT インテリジェンスをインストールする手順を説明します。
 author: johanhoffmann
 ms.date: 07/07/2020
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 12ffa71dc1c2badaffdc2e419a47d855635016f2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 52fe4c4a79378aca5f1e64c8b3f4fa85199c9911
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679026"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887489"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>LCS で IoT インテリジェンスをインストールする
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) に、IoT インテリジェンスをインストールする手順を説明します。 アドインはデモ/試用環境にはインストールできないことに注意してください。 アドインをインストールするには、事前に[Azure リソースを作成する ](iot-azure-setup.md)必要があります。
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) に、IoT インテリジェンスをインストールする手順を説明します。 アドインはデモ/試用環境にはインストールできないことに注意してください。 アドインをインストールするには、事前に[Azure リソースを作成する ](iot-azure-setup.md)必要があります。
 
 コードを記述することなく、IoT インテリジェンスを設定およびコンフィギュレーションすることができます。 基本的な手順は次のとおりです。
 
 1. [Azure リソースの設定](iot-azure-setup.md) – Supply Chain Management からアクセスできる IoT ハブ、Redis キャッシュ、Key Vault を作成します。
 2. [IoT Hub のメッセージ スキーマ 形式 ](iot-schema-format.md) – メッセージを IoT Hub に送信するようにデバイスをコンフィギュレーションして、JavaScript Object Notation (JSON) メッセージ形式を定義します。
 3. 機能管理で、IoT インテリジェンス機能のフラグを有効にします。
-4. IoT インテリジェンス アドインを Microsoft Dynamics Lifecycle Services (LCS) にインストールする – LCS にアドインをインストールし、Azure シークレットをコンフィギュレーションします (このトピックで説明)。
+4. IoT インテリジェンス アドインを Microsoft Dynamics Lifecycle Services (LCS) にインストールする – LCS にアドインをインストールし、Azure シークレットをコンフィギュレーションします (この記事で説明)。
 5. [指標の設定](iot-metrics-setup.md) – Supply Chain Management の指標を設定します。
 6. [シナリオ設定](iot-scenario-setup.md) – Supply Chain Management でシナリオを設定します。
 

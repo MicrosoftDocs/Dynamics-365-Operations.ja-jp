@@ -1,6 +1,6 @@
 ---
 title: 計画最適化で使用されないパラメーター
-description: このトピックでは、計画最適化で現在考慮されないパラメーターを一覧表示します。
+description: この記事では、計画最適化で現在考慮されないパラメーターを一覧表示します。
 author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 3791ac804b78a20d0051881a83cb075e56ec8639
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469117"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907351"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>計画最適化で使用されないパラメーター
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、計画最適化で現在考慮されないパラメーターを一覧表示します。 たとえば、関連する機能がまだサポートされていないため、計画サービスがパラメーターをスキップする場合があります。 また、機能が変更され、パラメーターが廃止された場合があります。
+この記事では、計画最適化で現在考慮されないパラメーターを一覧表示します。 たとえば、関連する機能がまだサポートされていないため、計画サービスがパラメーターをスキップする場合があります。 また、機能が変更され、パラメーターが廃止された場合があります。
 
 以下のセクションでは、特定のページで計画最適化により使用されないパラメーターを一覧表示します。 また、各パラメーターが使用されない理由も説明します。
 

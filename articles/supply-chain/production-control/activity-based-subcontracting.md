@@ -1,6 +1,6 @@
 ---
 title: 活動ベースの外注
-description: このトピックでは、リーン生産の生産フローにおける外注活動の使用方法について詳しく説明します。
+description: この記事では、リーン生産の生産フローにおける外注活動の使用方法について詳しく説明します。
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c2e1efceb800930d9f9e19a109da80d8cfebe2e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e53da46a27fd573ae7f7450fcf34ffd8ef43e3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566795"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890744"
 ---
 # <a name="activity-based-subcontracting"></a>活動ベースの外注
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、リーン生産の生産フローにおける外注活動の使用方法について詳しく説明します。
+この記事では、リーン生産の生産フローにおける外注活動の使用方法について詳しく説明します。
 
 Microsoft Dynamics 365 Supply Chain Management では、製造オーダーおよびリーン生産という外注に関する 2 つのアプローチがあります。 リーン生産のアプローチでは、外注業務は、生産フローの活動に関連するサービスとしてモデル化されます。 **直接外部委託** と呼ばれる特別な種類の原価グループ タイプが導入され、外注サービスは部品表 (BOM) の一部ではなくなりました。 外注業務の原価計算は、リーン生産の原価計算ソリューションに完全に統合されます。
 

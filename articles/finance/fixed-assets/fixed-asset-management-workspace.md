@@ -1,6 +1,6 @@
 ---
 title: 固定資産管理ワークスペース
-description: このトピックでは、固定資産管理ワークスペースに関する情報を示します。 このワークスペースでは、システムに入力されている固定資産に関連する情報が表示されます。 これには、概要ビューと分析ビューが含まれます。
+description: この記事では、固定資産管理ワークスペースに関する情報を示します。 このワークスペースでは、システムに入力されている固定資産に関連する情報が表示されます。 これには、概要ビューと分析ビューが含まれます。
 author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 37f9f6be2fa3594b96313f4f72b96b52ca798c6a
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 95b45a91cd201a6d3a4817c315053e98a7693e05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894058"
 ---
 # <a name="fixed-asset-management-workspace"></a>固定資産管理ワークスペース
 

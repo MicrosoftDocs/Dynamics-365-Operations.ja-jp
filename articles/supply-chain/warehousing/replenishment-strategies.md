@@ -1,6 +1,6 @@
 ---
 title: 補充戦略
-description: このトピックでは、補充戦略に関する情報を提供し、[補充戦略] フィールドを使用して補充の実行方法を選択する方法について説明します。
+description: この記事では、補充戦略に関する情報を提供し、"補充戦略" フィールドを使用して補充の実行方法を選択する方法について説明します。
 author: Mirzaab
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1aa48f231c5d98a22fa989fb6e6996b972be9089
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3b4d691bbcf88cc73d10e3bb401710508ec641e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893152"
 ---
 # <a name="replenishment-strategies"></a>補充戦略
 

@@ -1,6 +1,6 @@
 ---
 title: 仕入先証明の管理
-description: このトピックでは、仕入先が仕入先コラボレーション ワークスペースを使用して証明書を管理する手順について説明します。
+description: この記事では、仕入先が仕入先コラボレーション ワークスペースを使用して証明書を管理する手順について説明します。
 author: v-kiarnd
 ms.date: 04/27/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b1b2cdd4389afd8997b60fe8e7a9b6851cbde199
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 37990292748c363f44d306bda0263dd117808eb1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735698"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891440"
 ---
 # <a name="maintain-vendor-certification"></a>仕入先証明の管理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、仕入先が **仕入先コラボレーション ワークスペース** を使用して証明書を管理する手順について説明します。 証明書の例として、女性のビジネス企業 (WBE) や、エネルギーおよび環境デザインにおけるリーダーシップ (LEED) の会社などがあります。 仕入先は、**仕入先情報** ワークスペースに証明書情報を入力する必要があります。 そこから、仕入先が **詳細** を選択してから、**証明書** を選択します。
+この記事では、仕入先が **仕入先コラボレーション ワークスペース** を使用して証明書を管理する手順について説明します。 証明書の例として、女性のビジネス企業 (WBE) や、エネルギーおよび環境デザインにおけるリーダーシップ (LEED) の会社などがあります。 仕入先は、**仕入先情報** ワークスペースに証明書情報を入力する必要があります。 そこから、仕入先が **詳細** を選択してから、**証明書** を選択します。
 
 ## <a name="turn-on-the-vendor-certification-feature"></a>仕入先証明機能を有効にする
 

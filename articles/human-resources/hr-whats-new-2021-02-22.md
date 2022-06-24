@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources (2021 年 2 月 22 日) の新機能および変更された機能
-description: このトピックでは、2021 年 2 月 22 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2021 年 2 月 22 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 02/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c0f854908f4c4bb76604665701c97724351b0120
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d07e73ccd922e9d52a9de9260577087a50ef1da4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686886"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897838"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-22-2021"></a>Dynamics 365 Human Resources (2021 年 2 月 22 日) の新機能および変更された機能
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -48,9 +48,9 @@ ms.locfileid: "8686886"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新することがあります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 出庫 |  説明 |
+| 問題の番号 | 問題 |  Description |
 | --- | --- | --- |
 | 529994 | **作業者** フォームの **呼称** フィールドを変更しても Dataverse 更新がトリガーできない | **作業者** フォームで **呼称** フィールドが更新されるときに Dataverse が更新されない問題を修正しました。 |
 | 532651 | 報酬分析 PBI レポートですべての会社のメトリックスを計算する際に通貨換算が使用されない | 報酬分析 PBI レポートで通貨換算が正確に実行されなかった問題を修正しました。 |

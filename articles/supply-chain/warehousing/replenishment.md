@@ -1,6 +1,6 @@
 ---
 title: 補充の概要
-description: このトピックでは、倉庫管理で利用できる機能を使用している倉庫で利用可能な補充方法について説明します。
+description: この記事では、倉庫管理で利用できる機能を使用している倉庫で利用可能な補充方法について説明します。
 author: Mirzaab
 ms.date: 02/19/2020
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7681294c1c05f1ca93330c948fc454b6460cb41c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3dceb8e6300d19eb9253e88debbaaef0b6987420
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893094"
 ---
 # <a name="replenishment-overview"></a>補充の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、倉庫管理で利用できる機能を使用している倉庫で利用可能な補充方法について説明します。 このトピックでの情報は、在庫管理で利用できる倉庫ソリューションには適用されません。
+この記事では、倉庫管理で利用できる機能を使用している倉庫で利用可能な補充方法について説明します。 この記事での情報は、在庫管理で利用できる倉庫ソリューションには適用されません。
 
 次の補充戦略を利用できます:
 

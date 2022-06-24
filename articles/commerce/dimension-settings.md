@@ -1,6 +1,6 @@
 ---
 title: 製品分析コードの表示設定を適用する
-description: このトピックでは、商品の分析コードの表示設定と、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
+description: この記事では、商品の分析コードの表示設定と、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
 author: anupamar-ms
 ms.date: 05/28/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80a0861c51ea14ddb6bce02d757667adac34e740cd04311e26211d9bdbae4ed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d7575e205a9732259b00e424f66eeadfe8c659ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716225"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899178"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>製品分析コードの表示設定を適用する
 
 [!include [banner](includes/banner.md)]
 
 
-このトピックでは、商品の分析コードの表示設定と、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
+この記事では、商品の分析コードの表示設定と、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
 
 Dynamics 365 Commerce では、製品のバリエーションを区別するために、サイズ、スタイル、カラーの分析コードをサポートしています。 通常、分析コードでは、サイズが "小"、"中"、"大"、色が "黒"、"茶" などのテキスト値として表示されます。 しかし、多くのバリエーションがある製品の場合、それぞれのバリエーションの画像を表示させる複数の選択が必要となるため、製品のバリエーションの参照が困難になります。 Commerce のバージョン 10.0.20 では、商品のバリエーションをより簡単に閲覧できるように、画像や 16 進数 (hex) コードを使って分析コードを見本として表示できるようになりました。
 

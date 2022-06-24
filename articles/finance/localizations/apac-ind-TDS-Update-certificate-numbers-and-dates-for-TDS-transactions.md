@@ -1,6 +1,6 @@
 ---
 title: (TDS) トランザクションの証明書番号および日付の更新
-description: このトピックでは、ソース (TDS) における、源泉徴収のための仕入先、顧客、または元帳のアカウントのために記録された復元可能な証明書番号と日付を方針する方法について説明します。
+description: この記事では、ソース (TDS) における、源泉徴収のための仕入先、顧客、または元帳のアカウントのために記録された復元可能な証明書番号と日付を方針する方法について説明します。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7f8b5713e8ce3f9e9c89b8b3bc6ea84fe1f0fa54
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 147a27261a4a282550f0bacede78c9edd38b4fe6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724814"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904444"
 ---
 # <a name="update-certificate-numbers-and-dates-for-tds-transactions"></a>(TDS) トランザクションの証明書番号および日付の更新
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ソース (TDS) における、源泉徴収のための仕入先、顧客、または元帳のアカウントのために記録された復元可能な証明書番号と日付を方針する方法について説明します。 **復元可能な証明書** ページ上の TDS トランザクションの証明書を見ることができます。 **証明書の更新** ページを使用することで、証明書 を更新できます。
+この記事では、ソース (TDS) における、源泉徴収のための仕入先、顧客、または元帳のアカウントのために記録された復元可能な証明書番号と日付を方針する方法について説明します。 **復元可能な証明書** ページ上の TDS トランザクションの証明書を見ることができます。 **証明書の更新** ページを使用することで、証明書 を更新できます。
 
 TDS トランザクションの証明書番号と日付けを更新するには、次の手順に従います。
 

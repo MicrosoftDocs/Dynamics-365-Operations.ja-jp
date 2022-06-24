@@ -1,6 +1,6 @@
 ---
 title: 経費タイプの設定
-description: このトピックでは、資産リースで資産タイプを設定する方法について説明します。
+description: この記事では、資産リースで資産タイプを設定する方法について説明します。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 349ba0f5fa040b7c9a957defe1140c4016d6fded
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9978041059437d5d3556236c7ac02c00db93f933
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908041"
 ---
 # <a name="set-up-expense-types"></a>経費タイプの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、資産リースで資産タイプを設定する方法について説明します。 支払スケジュールによって表されない原価は、*経費原価* と呼ばれます。 このような原価の例としては、税金、一般的な領域保守にかかる費用、保険料などがあります。
+この記事では、資産リースで資産タイプを設定する方法について説明します。 支払スケジュールによって表されない原価は、*経費原価* と呼ばれます。 このような原価の例としては、税金、一般的な領域保守にかかる費用、保険料などがあります。
 
 ## <a name="add-an-administrative-expense-type"></a>管理経費タイプの追加
 

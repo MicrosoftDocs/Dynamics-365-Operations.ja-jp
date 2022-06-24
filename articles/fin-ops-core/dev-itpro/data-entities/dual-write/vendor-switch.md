@@ -1,6 +1,6 @@
 ---
 title: 仕入先デザインの切り替え
-description: このトピックでは、財務と運用アプリと Dataverse 間の仕入先データの統合を切り替える方法について説明します。
+description: この記事では、財務と運用アプリと Dataverse 間の仕入先データの統合を切り替える方法について説明します。
 author: RamaKrishnamoorthy
 ms.date: 09/20/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 80de21b5e46e4f274626fa311f16e81312a2f5ab
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 88be9a4c6e2a860e8ac496e9a135ecabd8474c97
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062753"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901567"
 ---
 # <a name="switch-between-vendor-designs"></a>仕入先デザインの切り替え
 

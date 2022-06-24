@@ -1,6 +1,6 @@
 ---
 title: 訂正票での元の請求書への参照 (仕入先請求書)
-description: このトピックでは、訂正票を作成する際に元の請求書への参照を作成する方法について説明します。
+description: この記事では、訂正票を作成する際に元の請求書への参照を作成する方法について説明します。
 author: v-oloski
 ms.date: 09/28/2021
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: v-oloski
 ms.search.validFrom: 2021-09-23
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 698a23a98f027014c89073203e6d9dfa5539a2f6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e05dddf056d86513d86ea925349f60ca25f191ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689188"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901492"
 ---
 # <a name="reference-original-invoices-in-credit-notes-vendor-invoices"></a>訂正票での元の請求書への参照 (仕入先請求書)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、訂正票を作成する際に元の請求書への参照を作成する方法について説明します。
+この記事では、訂正票を作成する際に元の請求書への参照を作成する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
 **機能管理** ワークスペースで、**仕入先請求書の請求の貸方転記を有効にする** 機能を有効にします。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 
-このトピックで説明する機能は、以下のドキュメントに適用されます。
+この記事で説明する機能は、以下のドキュメントに適用されます。
 
 **買掛金勘定:**
 

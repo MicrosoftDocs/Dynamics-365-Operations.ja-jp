@@ -1,6 +1,6 @@
 ---
 title: ライフ イベントの適格性の処理
-description: このトピックでは、ライフ イベントの適格性を処理する方法について説明します。
+description: この記事では、ライフ イベントの適格性を処理する方法について説明します。
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0e9007b25a86c2be6f284a5982112d50aaae7075
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ec6565164c6341a25141c25df2fc85f09e2f4e6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909791"
 ---
 # <a name="process-life-event-eligibility"></a>ライフ イベントの適格性の処理
 
@@ -28,7 +28,7 @@ ms.locfileid: "8690002"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、ライフ イベントの適格性の処理方法について説明します。
+この記事では、ライフ イベントの適格性の処理方法について説明します。
 
 1. **給付金管理** ワークスペースにて、**処理** の下の **ライフ イベントの適格性処理** を選択します。
 

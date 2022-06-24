@@ -1,6 +1,6 @@
 ---
 title: 資産ドキュメント
-description: このトピックでは、資産管理の資産ドキュメントについて説明します。
+description: この記事では、資産管理の資産ドキュメントについて説明します。
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77b7265b1ba56dbd1cd955f5d90afea02f589ce2eebdd05a2fef3a7ddebc0ee1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2e8d72dc938c43e266c6b7c39329f827c56607a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722490"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899472"
 ---
 # <a name="asset-documents"></a>資産ドキュメント
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722490"
 
  
 
-このトピックでは、資産管理の資産ドキュメントについて説明します。
+この記事では、資産管理の資産ドキュメントについて説明します。
 
 資産管理では、ジョブ タイプ、資産メーカー、資産タイプまたは資産などに自動的に関連付けるようドキュメントを設定できます。 この機能は、更新されたドキュメント バージョンがリリースされた場合に役立ちます。 その場合、更新されたドキュメントを Supply Chain Management ドキュメントで使用する標準の場所に入れ、ドキュメントを作成した資産ドキュメント レコードに関連付ける必要があります。 更新されたドキュメントは **全資産**、**有効な資産**、**個人用の有効な資産**、**すべてのワーク オーダー**、および **有効なワーク オーダー ジョブ** メニュー項目からアクセスできます。 資産ドキュメント レコードにドキュメントを関連づけるプロセスでは、標準ドキュメント処理システムが使用されます。
 

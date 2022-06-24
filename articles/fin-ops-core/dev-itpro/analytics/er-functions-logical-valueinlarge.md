@@ -1,6 +1,6 @@
 ---
 title: VALUEINLARGE ER 関数
-description: このトピックでは、 VALUEINLARGE 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、 VALUEINLARGE 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 08/17/2020
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 57b2246631b31cce10d086da29e76b729059a64aa6a3c2d8cf864dd70085dbfd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 977c1cd7dac75781677461b288bc8e5e79d13e6f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725263"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888149"
 ---
 # <a name="valueinlarge-er-function"></a>VALUEINLARGE ER 関数
 
 [!include [banner](../includes/banner.md)]
 
-`VALUEINLARGE` 関数は、*Int64* あるいは *整数* タイプの指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 この関数は、指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の *ブール* 値を返します。 それ以外の場合は、**FALSE** の *ブール* 値が返されます。 `VALUEIN` 関数との違いを理解するには、このトピックで後述する [使用上の注意](#usage_note) セクションを参照してください。
+`VALUEINLARGE` 関数は、*Int64* あるいは *整数* タイプの指定された入力が、指定されたリスト内の指定された項目の値と一致するかどうかを決定します。 この関数は、指定された入力が、指定されたリストの少なくとも 1 つのレコードに対して指定された式を実行した結果と一致する場合、**TRUE** の *ブール* 値を返します。 それ以外の場合は、**FALSE** の *ブール* 値が返されます。 `VALUEIN` 関数との違いを理解するには、この記事で後述する [使用上の注意](#usage_note) セクションを参照してください。
 
 ## <a name="syntax"></a>構文
 

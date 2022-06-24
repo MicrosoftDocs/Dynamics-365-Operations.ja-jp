@@ -1,6 +1,6 @@
 ---
 title: 耐用年数定額減価償却
-description: このトピックは、耐用年数定額減価償却方法の概要を示します。
+description: この記事は、耐用年数定額減価償却方法の概要を示します。
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d39bfea3f222d83d3b3d47e4ba931521b8e1aed0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 8766d38958ccb17142132fb78d04368f1b73af71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726672"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896466"
 ---
 # <a name="straight-line-service-life-depreciation"></a>耐用年数定額減価償却
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、耐用年数定額減価償却方法の概要を示します。
+この記事は、耐用年数定額減価償却方法の概要を示します。
 
 固定資産減価償却プロファイルを設定して [減価償却プロファイル] ページの [方式] フィールドで [定額法耐用年数] を選択すると、この減価償却プロファイルが割り当てられた固定資産は、その資産の耐用年数の合計に基づいて償却されます。 この場合は一般に、各減価償却期間の減価償却金額が同じになります。 
 
@@ -41,7 +41,7 @@ ms.locfileid: "8726672"
 
 [カレンダー] を選択する場合、別の会計カレンダーを定義済みでも、1 月 1 日から 12 月 31 日の年が想定されます。 
 
-[カレンダー] オプションは各年の 1 月 1 日に減価償却基準を更新します。これは通常、正味簿価額から救済価格を差し引いた値です。 このトピックの後の例では、計算列の最初の式の分子が減価償却基準です。 
+[カレンダー] オプションは各年の 1 月 1 日に減価償却基準を更新します。これは通常、正味簿価額から救済価格を差し引いた値です。 この記事の後の例では、計算列の最初の式の分子が減価償却基準です。 
 
 [暦年] を選択すると、[期間の頻度] フィールドで次のオプションが使用できます。このオプションによって、暦年を通した償却発生額の転記日付と金額が定義されます。
 - [年 1 回] を選択すると、12 月 31 日に金額が転記されます。

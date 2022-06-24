@@ -1,6 +1,6 @@
 ---
 title: 危険物の概要
-description: このトピックでは、製品情報管理と倉庫管理の際における危険物の処理および文書化に関連する機能の概要を示します。
+description: この記事では、製品情報管理と倉庫管理の際における危険物の処理および文書化に関連する機能の概要を示します。
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c2cae4cb65dd163e9fbf1d24cff5a0a040e3ce3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986279"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905808"
 ---
 # <a name="hazardous-materials-overview"></a>危険物の概要
 
@@ -50,7 +50,7 @@ ms.locfileid: "7986279"
 
 各規制には、危険な商品および参照コードが標準化されています。 従って、Supply Chain Management には、これらのリストの共有コードの参照テーブルが用意されています。 また、各リストには、定義可能な一意のコードもいくつか含まれています。
 
-危険物の規則や値を設定する方法と、その値を適切な製品に割り当てる方法の詳細については、次のトピックを参照してください。
+危険物の規則や値を設定する方法と、その値を適切な製品に割り当てる方法の詳細については、次の記事を参照してください:
 
 - [危険物の設定](hazmat-setup.md)
 - [製品、注文、出荷、積荷の危険物](hazmat-items.md)

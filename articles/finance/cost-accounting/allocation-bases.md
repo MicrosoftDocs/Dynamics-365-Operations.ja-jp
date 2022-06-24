@@ -1,6 +1,6 @@
 ---
 title: 配賦基準
-description: このトピックでは、配賦基準について説明します。 配賦基準は原価計算での主要コンポーネントで、間接費を配賦するために主に使用されます。
+description: この記事は、配賦のベースに関する情報を提供します。 配賦基準は原価計算での主要コンポーネントで、間接費を配賦するために主に使用されます。
 author: AndersGirke
 ms.date: 05/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bb50fe7d258bdd56529bc5d0ef55dae309d3edec
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 138a1a101610fc0f18ef3d8d2d3d336e5a48a1da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894087"
 ---
 # <a name="allocation-bases"></a>配賦基準 
 
@@ -174,11 +174,11 @@ ms.locfileid: "8733794"
 - データ管理インポート/エクスポート ツール
 - 統計測定
 
-システムから統計測定を取得するには、統計測定プロバイダー テンプレートが必要です。 詳しくは、「統計測定プロバイダー テンプレート」を参照してください。 (このトピックの作成後にリンクを追加)。
+システムから統計測定を取得するには、統計測定プロバイダー テンプレートが必要です。 詳しくは、「統計測定プロバイダー テンプレート」を参照してください。 (この記事の作成後にリンクを追加)。
 
 **統計測定プロバイダー テンプレート**
 
-| 氏名  | 職務 | ソース テーブル  | 合計フィールド      | 日付フィールド     |
+| Name  | 職務 | ソース テーブル  | 合計フィールド      | 日付フィールド     |
 |-------|----------|---------------|----------------|----------------|
 | FTE の | カウント    | HcmEmployment | 適用できません | 適用できません |
 

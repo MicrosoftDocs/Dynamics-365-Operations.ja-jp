@@ -1,6 +1,6 @@
 ---
 title: 倉庫管理の手持在庫エントリ クリーンアップ ジョブ
-description: このトピックでは、関連する不要なレコードを識別および削除することによってシステムのパフォーマンスを向上させる、手持在庫エントリのクリーンアップ  ジョブについて説明します。
+description: この記事では、関連する不要なレコードを識別および削除することによってシステムのパフォーマンスを向上させる、手持在庫エントリのクリーンアップ ジョブについて説明します。
 author: perlynne
 ms.date: 04/23/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103866"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900509"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>倉庫管理の手持在庫エントリ クリーンアップ ジョブ
 
@@ -26,7 +26,7 @@ ms.locfileid: "8103866"
 
 手持在庫の計算に使用されるクエリのパフォーマンスは、関連するテーブルのレコード数によって影響されます。 パフォーマンスを向上させる方法の 1 つとして、データベースで考慮する必要があるレコードの数を減らすことがあります。
 
-このトピックでは、InventSum と WHSInventReserve のテーブルから不要なレコードを削除する、手持在庫エントリのクリーンアップ ジョブについて説明します。 これらのテーブルには、倉庫管理処理が有効になっている品目の手持情報が格納されます。 (これらの品目は WHS 品目と呼ばれます。) これらのレコードを削除すると、手持在庫計算のパフォーマンスが大幅に向上する可能性があります。
+この記事では、InventSum と WHSInventReserve のテーブルから不要なレコードを削除する、手持在庫エントリのクリーンアップ ジョブについて説明します。 これらのテーブルには、倉庫管理処理が有効になっている品目の手持情報が格納されます。 (これらの品目は WHS 品目と呼ばれます。) これらのレコードを削除すると、手持在庫計算のパフォーマンスが大幅に向上する可能性があります。
 
 ## <a name="what-the-cleanup-job-does"></a>クリーンアップ ジョブとは
 

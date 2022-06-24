@@ -1,6 +1,6 @@
 ---
 title: 共有パラメーターのコンフィギュレーション
-description: このトピックは、法人間に人事管理パラメーターを設定する方法を説明します。
+description: この記事は、法人間に人事管理パラメーターを設定する方法を説明します。
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e59745e01905be50e6908fb9587b8afc17604382
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c0d8dbca302d90cc402feb4715a6fcc2b935d8b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692117"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906185"
 ---
 # <a name="configure-shared-parameters"></a>共有パラメーターのコンフィギュレーション
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-**職位** レコードなど、会社間で共有されるのレコードの共有パラメーターを設定する必要があります。 このトピックは、法人間に人事管理パラメーターを設定する方法を説明します。
+**職位** レコードなど、会社間で共有されるのレコードの共有パラメーターを設定する必要があります。 この記事は、法人間に人事管理パラメーターを設定する方法を説明します。
 
 **職位** レコードなどの一部のレコード タイプは、会社間で共有されます。 これらのレコードに対して、共有パラメータを設定する必要があります。 たとえば、法人間で人事管理パラメーターを設定する場合、**人事管理、パラメータを共有** ページを使用します。 
 

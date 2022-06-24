@@ -1,6 +1,6 @@
 ---
 title: 需要予測の設定
-description: このトピックでは、需要予測の準備として実行する必要のある設定タスクについて説明します。
+description: この記事では、需要予測の準備として実行する必要のある設定タスクについて説明します。
 author: t-benebo
 ms.date: 11/23/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b52b970a8040dcba5a1fc59d297dc9ce1a3c53
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 10a211e0e20f22dfbfdb4923841808750b6ed71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470012"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901005"
 ---
 # <a name="demand-forecasting-setup"></a>需要予測の設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、需要予測の設定方法について説明します。  
+この記事では、需要予測の設定方法について説明します。  
 
 ## <a name="item-allocation-keys"></a>品目配賦キー
 
@@ -245,7 +245,7 @@ Azure で機械学習を使用して予測を処理するには、その目的�
 1. 画面に表示される指示に従ってウィザードを完了します。 作業時には、次の点に注意してください。
 
     - この一覧の他のポイントが別の設定を推奨しない限り、既定の設定を使用します。
-    - Supply Chain Management のインスタンスが配置されている地域に一致する地域を選択してください。 それ以外の場合は、一部のデータが地域の境界を通過する場合があります。 詳細については、このトピックの後にある [プライバシー通知](#privacy) を参照してください。
+    - Supply Chain Management のインスタンスが配置されている地域に一致する地域を選択してください。 それ以外の場合は、一部のデータが地域の境界を通過する場合があります。 詳細については、この記事の後半にある [プライバシー通知](#privacy) を参照してください。
     - リソース グループ、記憶域アカウント、コンテナー レジストリ、Azure キー コンテナー、ネットワーク リソースなどの専用リソースを使用します。
     - ウィザードの **Azure Machine Learning Service 接続パラメータの設定** ページで、記憶域アカウント名を指定する必要があります。 需要予測専用のアカウントを使用します。 需要予測の入力データおよび出力データはこのストレージ アカウントに格納されます。
 

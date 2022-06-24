@@ -1,6 +1,6 @@
 ---
 title: 当事者およびグローバル アドレス帳モデルへのアップグレード
-description: このトピックでは、二重書き込みデータを当事者およびグローバル アドレス帳モデルにアップグレードする方法について説明します。
+description: この記事では、二重書き込みデータを当事者およびグローバル アドレス帳モデルにアップグレードする方法について説明します。
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688378"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895279"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>当事者およびグローバル アドレス帳モデルへのアップグレード
 
@@ -40,7 +40,7 @@ ms.locfileid: "8688378"
 | ImportFONewPostalAddress.csv | このファイルは、財務と運用アプリ内で新しい **住所** レコードの作成に使用します。 |
 | ImportFONewElectronicAddress.csv | このファイルは、財務と運用アプリ内で新しい **電子アドレス** レコードの作成に使用します。 |
 
-このトピックでは、Data Factory のテンプレートを使用し、データをアップグレードする方法について説明します。 カスタマイズを実行しない場合は、このテンプレートをそのまま使用できます。 ただし、**取引先企業**、**連絡先**、**ベンダー** データをカスタマイズする場合は、このトピックで説明するようにテンプレートを変更する必要があります。
+この記事では、Data Factory のテンプレートを使用し、データをアップグレードする方法について説明します。 カスタマイズを実行しない場合は、このテンプレートをそのまま使用できます。 ただし、**取引先企業**、**連絡先**、**ベンダー** データをカスタマイズする場合は、この記事で説明するようにテンプレートを変更する必要があります。
 
 > [!IMPORTANT]
 > 関係者の住所と関係者の電子アドレスのテンプレートを実行するための特別な指示があります。 最初にパーティのテンプレートを起動し、次にパーティの配送先住所のテンプレートを起動し、次にパーティの電子住所のテンプレートを起動する必要があります。 各テンプレートは、個別のデータ ファクトリでインポートするように設計されています。

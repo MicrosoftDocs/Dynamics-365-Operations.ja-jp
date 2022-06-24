@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Finance 開発者向けラーニング カタログ
-description: Dynamics 365 Finance 開発者向けのトレーニング オプションをすべて検索します。
+title: Dynamics 365 Finance 開発者のためのラーニング カタログ
+description: Dynamics 365 Finance の開発者に対するすべてのトレーニング オプションを確認します。
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -12,14 +12,14 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 866db1307484fd35949e87d02ca17ef0555bb654
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 729fc6a1172d651a24cc0a3bff765b09263e3cd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062264"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903102"
 ---
-# <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Dynamics 365 Finance 開発者向けラーニング カタログ
+# <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Dynamics 365 Finance 開発者のためのラーニング カタログ
 
 
 
@@ -47,7 +47,7 @@ ms.locfileid: "8062264"
 | [Finance and Operations: PowerApps を使用して Dynamics 365 for Finance and Operations を拡張する (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Microsoft PowerApps のシンプルさを理解し、 Dynamics 365 for Finance and Operations とどのように融合してビジネスをデジタル化し、ユーザーの生産性を向上させるのかを理解しましょう。 | Web カンファレンスの無料録画 | 43 分 |
 | [Finance and Operations: 拡張性 (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Microsoft の機能拡張計画について概要および更新について説明します。 ソリューションを拡張するさまざまな方法、メタデータ拡張性機能の詳細、および強力なコマンド チェーン機能経由を含むコードの補強および拡張機能について詳しく説明します。 | Web カンファレンスの無料録画 | 50 分 |
 | [Visual Studio Team Services (VSTS) の設定 (VIR782PAL) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | この Tech Talk では、VSTS のインスタンスとプロジェクトをコンフィギュレーションして、開発/テスト環境のコンフィギュレーション用の LCS 実装プロジェクトに接続するために必要な手順について説明します。 | Web カンファレンスの無料録画 | 41 分 |
-| [Dataverse データ インテグレーター (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Dataverse データ統合の機能に関する Tech Talk にご参加ください。 Dynamics 365 Customer Engagement と Dynamics 365 Finance and Operations 間の統合オプション、および他のサードパーティ ソリューションとの統合についても説明します。 | Web カンファレンスの無料録画 | 61 分 |
+| [Dataverse データ インテグレーター (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Dataverse データ統合の機能に関する Tech Talk にご参加ください。 Dynamics 365 Customer Engagement と Dynamics 365 財務と運用間の統合オプション、および他のサードパーティ ソリューションとの統合についても説明します。 | Web カンファレンスの無料録画 | 61 分 |
 | [Dataverse 経由の Dynamics 365 for Sales と Dynamics 365 for Finance & Operations 間の統合 (DYN340PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | この Tech Talk では、Dynamics 365 for Sales での販売およびマーケティング活動と、Dynamics 365 for Finance and Operations フルフィルメントを含む、見込顧客を現金化と呼ばれる統合シナリオを紹介します。 また、データ インテグレーターおよび統合を変更する方法も確認します。 | Web カンファレンスの無料録画 | 54 分 |
 | [データ管理 (DYN757PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-scm-data-management-february-14-2020) | データ管理に関するこの TechTalk にご参加ください。 使用可能なオプションと、それらが推奨されるシナリオについて学びます。 データ管理フレーム ワーク、テンプレート、データベースのコピー、会社間データ共有、およびパフォーマンスに関する考慮事項について扱います。 | Web カンファレンスの無料録画 | 58 分 |
 | [Dynamics 365 for Finance and Operations の Azure 統合ツール (DYN386PAL) ](https://community.dynamics.com/365/b/techtalks/posts/azure-integration-tools-for-dynamics-365-for-finance-and-operations-november-2-2017) | この Tech Talk では、Dynamics 365 for Finance and Operations との統合において考慮する必要があるツールのタイプについて、およびどの統合ツールをいつ選択するべきかについて扱います。 このセッションでは、Azure 統合サービスを使用して調整できた統合シナリオのいくつかについても説明します。 | Web カンファレンスの無料録画 | 63 分 |

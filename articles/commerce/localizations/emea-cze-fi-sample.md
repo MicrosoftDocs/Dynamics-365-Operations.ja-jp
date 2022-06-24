@@ -1,6 +1,6 @@
 ---
 title: チェコ共和国向け会計登録サービス統合サンプル
-description: このトピックでは、Microsoft Dynamics 365 Commerce のチェコ共和国向け会計統合サンプルの概要について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce のチェコ共和国向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1c764de42f727bb72adbb8b015745599f428656e
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: d255b03242a4cb7a72cef1e8e6fab901ecf953e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613912"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910501"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>チェコ共和国向け会計登録サービス統合サンプル
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のチェコ共和国向け会計統合サンプルの概要について説明します。
+この記事では、Microsoft Dynamics 365 Commerce のチェコ共和国向け会計統合サンプルの概要について説明します。
 
 チェコ共和国のキャッシュ レジスターにおける現地の財政要件を満たすため、Dynamics 365 Commerce のチェコ共和国向け機能には、販売時点管理 (POS) と外部財政登録サービスとの統合例が含まれています。 このサンプルは [会計統合機能](fiscal-integration-for-retail-channel.md) を拡張します。 これは [EFSTA](https://efsta.org/) の [EFR (電子会計登録)](https://efsta.org/sicherheitsloesungen/) ソリューションに基づいており、HTTPS プロトコルによる EFR サービスとの通信を実現します。 EFR サービスは確実な販売の電子登録 (EET - Elektronická evidence tržeb) を実現します。つまり、税所轄官庁の会計 Web サービスに販売データをオンラインで送信します。
 

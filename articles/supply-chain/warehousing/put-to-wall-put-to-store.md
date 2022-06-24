@@ -1,6 +1,6 @@
 ---
 title: 壁にプット - 店舗にプット
-description: このトピックでは、壁にプット - 店舗にプット機能について説明します。 この機能を使用すると、コンフィギュレーション可能な基準に基づいて、製品をパッケージ品目のステージング エリアに統合する必要があるシナリオを処理できます。 これにより、単一のターゲット ライセンス プレートへのピッキングが可能となり、クラスター ピッキングよりも多くのプット位置を使用できるようになるので、ピッキング時間を減らすことができます。
+description: この記事では、壁にプット - 店舗にプット機能について説明します。 この機能を使用すると、コンフィギュレーション可能な基準に基づいて、製品をパッケージ品目のステージング エリアに統合する必要があるシナリオを処理できます。 これにより、単一のターゲット ライセンス プレートへのピッキングが可能となり、クラスター ピッキングよりも多くのプット位置を使用できるようになるので、ピッキング時間を減らすことができます。
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 372bb556ec1207096a8ff3c7df8bac9b7011b5c4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e020bd3973b8b56dd1e6f3e5bdc8cba32600f7f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574140"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909646"
 ---
 # <a name="put-to-wall---put-to-store"></a>壁にプット - 店舗にプット
 

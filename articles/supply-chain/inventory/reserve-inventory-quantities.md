@@ -1,6 +1,6 @@
 ---
 title: 在庫数量の引当
-description: このトピックでは、在庫を引当するために使用できるさまざまなオプションについて説明します。
+description: この記事では、在庫を引当するために使用できるさまざまなオプションについて説明します。
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0cf6f14e30f84f48428b351287eb1c65915a14c1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0c407b45f3df91d569c2bf043ff9f83b640837bb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571140"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899443"
 ---
 # <a name="reserve-inventory-quantities"></a>在庫数量の引当
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、在庫を引当するために使用できるさまざまなオプションについて説明します。
+この記事では、在庫を引当するために使用できるさまざまなオプションについて説明します。
 
 特定の販売注文の在庫数量を自動的に引当することができます。 つまり、在庫引当または在庫引当の一部がキャンセルされない限り、引当済の在庫は他の注文のために倉庫から引き出すことはできません。
 

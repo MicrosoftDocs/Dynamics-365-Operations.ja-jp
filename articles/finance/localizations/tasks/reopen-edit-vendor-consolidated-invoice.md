@@ -1,6 +1,6 @@
 ---
 title: 仕入先月次締め請求書の再オープンと編集
-description: このトピックでは、確認済の仕入先月次締め請求書を再度開いて変更する方法について説明します。
+description: この記事では、確認済の仕入先月次締め請求書を再度開いて変更する方法について説明します。
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: be15b40ba760cbeba083c4581ce5e7396bebe12a
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 63720d162dafd68bba6a434000bf26e79fbdeeae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601431"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872343"
 ---
 # <a name="reopen-and-edit-a-vendor-consolidated-invoice"></a>仕入先月次締め請求書の再オープンと編集
 

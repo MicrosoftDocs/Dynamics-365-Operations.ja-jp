@@ -1,6 +1,6 @@
 ---
 title: 航海の管理
-description: このトピックでは、航海の使用方法について説明します。 通常、航海は船を表します。 ただし、プラクティスと手順によっては、仕入先、発注書、または組織に必要なそのほかの品目を表すことがあります。
+description: この記事では、航海の使用方法について説明します。 通常、航海は船を表します。 ただし、プラクティスと手順によっては、仕入先、発注書、または組織に必要なそのほかの品目を表すことがあります。
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7d85ef86351f5d6ac662bb72c88d464fba82f561
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696169"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905866"
 ---
 # <a name="manage-voyages"></a>航海の管理
 
@@ -96,7 +96,7 @@ ms.locfileid: "8696169"
 
 ### <a name="information-on-the-voyage-header-fasttab"></a>航海ヘッダー クイックタブの情報
 
-航海の **明細行** ビューの **航海ヘッダー** クイックタブには、航海について説明する基本情報が含まれています。 このクイックタブに表示されるフィールドの多くは、このトピックで後述するように、**ヘッダー** ビューにも表示されます。
+航海の **明細行** ビューの **航海ヘッダー** クイックタブには、航海について説明する基本情報が含まれています。 このクイックタブに表示されるフィールドの多くは、この記事で後述するように、**ヘッダー** ビューにも表示されます。
 
 ### <a name="information-on-the-voyage-lines-fasttab"></a>航海明細行クイックタブの情報
 

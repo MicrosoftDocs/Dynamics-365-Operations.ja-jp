@@ -1,6 +1,6 @@
 ---
 title: ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする
-description: このトピックでは、コンフィギュレーション サービスのグローバル リポジトリから電子申告 (ER) コンフィギュレーションをダウンロードする方法について説明します。
+description: この記事では、構成サービスのグローバル リポジトリから電子申告 (ER) 構成をダウンロードする方法について説明します。
 author: NickSelin
 ms.date: 06/02/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 4386e8fdbb2856d14d5b47ee5ab416c8d58b8d63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605334"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891907"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>ER コンフィギュレーションをコンフィギュレーション サービスのグローバル リポジトリからダウンロードする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、コンフィギュレーション サービスのグローバル リポジトリから [電子申告 (ER) コンフィギュレーション](general-electronic-reporting.md#Configuration) をダウンロードする方法について説明します。 詳細については、[Microsoft Dynamics 365 for Finance and Operations - Regulatory services、コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) を参照してください。
+この記事では、構成サービスのグローバル リポジトリから [電子申告 (ER) 構成](general-electronic-reporting.md#Configuration) をダウンロードする方法について説明します。 詳細については、[Microsoft Dynamics 365 for Finance and Operations - Regulatory services、コンフィギュレーション サービス](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) を参照してください。
 
 ## <a name="open-configurations-repository"></a>コンフィギュレーション リポジトリを開く
 
-1. 次のロールの 1 つを使用して Dynamics 365 Finance アプリケーションにサインインします:
+1. 次のロールの 1 つを使用して Dynamics 365 Finance アプリケーションにサインインします。
 
     - 電子申告開発者
     - 電子申告機能コンサルタント
@@ -80,7 +80,7 @@ ms.locfileid: "7605334"
     ![構成リポジトリ ページ (Versions FastTab、インポート ボタン)。](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
-> ER の設定に応じて、コンフィギュレーションはインポートされた後に検証されます。 不整合の問題が検出されると、通知を受け取る場合があります。 インポートしたコンフィギュレーションのバージョンを使用する前に、問題を解決する必要があります。 詳細については、このトピックの関連リソースの一覧を参照してください。
+> ER の設定に応じて、コンフィギュレーションはインポートされた後に検証されます。 不整合の問題が検出されると、通知を受け取る場合があります。 インポートしたコンフィギュレーションのバージョンを使用する前に、問題を解決する必要があります。 詳細については、この記事の関連リソースの一覧を参照してください。
 
 > [!NOTE]
 > ER コンフィギュレーションは、他のコンフィギュレーションに依存するようにコンフィギュレーションできます。 したがって、選択したコンフィギュレーションに加えて、他のコンフィギュレーションが自動的にインポートされる場合があります。 コンフィギュレーションの依存関係の詳細については、[他のコンポーネントに対する ER コンフィギュレーションの依存関係を定義する](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) を参照してください。

@@ -1,6 +1,6 @@
 ---
 title: ジョブ除外する状態
-description: このトピックでは、Dynamics 365 Human Resources におけるジョブ除外状態のオプション セットについて説明します。
+description: この記事では、Dynamics 365 Human Resources におけるジョブ除外状態のオプション セットについて説明します。
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 29d3c4fd37a219b520172c6866c5fec488c698f7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e59a71264d50cecce4d31dfa26ad7f05ef3f34e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894675"
 ---
 # <a name="job-exempt-status"></a>ジョブ除外する状態
 
@@ -27,7 +27,7 @@ ms.locfileid: "8064994"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources におけるジョブ除外状態のオプション セットについて説明します。
+この記事では、Dynamics 365 Human Resources におけるジョブ除外状態のオプション セットについて説明します。
 
 物理名 : cdm_jobexemptstatus
 

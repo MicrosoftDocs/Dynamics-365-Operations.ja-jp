@@ -1,6 +1,6 @@
 ---
 title: 手動で選択したファイルからバッチ モードでデータをインポートする
-description: このトピックでは、バッチ モードで手動で選択したファイルからデータをインポートする方法について説明します。
+description: この記事では、バッチ モードで手動で選択したファイルからデータをインポートする方法について説明します。
 author: NickSelin
 ms.date: 01/07/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-01-01
 ms.dyn365.ops.version: Release 10.0.25
-ms.openlocfilehash: 8615b5a0623fd696c64f4ec03e481a2bcb16c0ac
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 2dec838439876fd8e57ea4a7078d97267e5ea1a2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890186"
 ---
 # <a name="import-data-from-manually-selected-files-in-batch-mode"></a>手動で選択したファイルからバッチ モードでデータをインポートする
 
@@ -31,11 +31,11 @@ ms.locfileid: "8075624"
 
 バッチ モードでのデータ インポートをサポートする新しい ER 機能により、このプロセスを無人プロセスとして構成できます。 ER 構成を使用して、ER ユーザー インターフェイス (UI) から新しいバッチ ジョブをスケジュールすることで、データ インポートを実行できます。
 
-このトピックでは、バッチ モードで手動で選択したファイルからデータのインポートを完了する方法について説明します。 例では、業務データとして仕入先トランザクションを使用します。 これらの例のステップは、**USMF** 社で完了することができます。 コーディングは必要ありません。
+この記事では、バッチ モードで手動で選択したファイルからデータのインポートを完了する方法について説明します。 例では、業務データとして仕入先トランザクションを使用します。 これらの例のステップは、**USMF** 社で完了することができます。 コーディングは必要ありません。
 
 ## <a name="prerequisites"></a>必要条件
 
-このトピックの例を完了するには、次のアクセスが必要です:
+この記事に記載の例を完了するには、次のアクセスが必要です:
 
 - 次のいずれかのロール:
 
@@ -61,7 +61,7 @@ ms.locfileid: "8075624"
     | **1099 支払モデル** ER データ モデル構成 | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml) |
     | **仕入先のトランザクションのインポート用 (Excel)** ER 形式の構成 | [1099format-import-from-excel.xml](https://download.microsoft.com/download/b/3/8/b38faf0a-fbaf-4e9e-84c2-dedae7464880/1099format-import-from-excel.xml) |
 
-2. [XML ファイルから読み込む](er-defer-sequence-element.md#import-the-sample-er-configurations) ER オプションを使用して、ダウンロードした ER 構成を次の順序で Dynamics 365 Finance のインスタンスにインポートします。
+2. [XML ファイルから読み込む](er-defer-sequence-element.md#import-the-sample-er-configurations) ER オプションを使用して、ダウンロードした ER コンフィギュレーションを次の順序で Dynamics 365 Finance のインスタンスにインポートします。
 
     1. ER データ モデル構成
     2. ER フォーマット構成

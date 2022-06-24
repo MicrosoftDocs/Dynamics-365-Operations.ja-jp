@@ -1,6 +1,6 @@
 ---
 title: 生産現場の実行インターフェースを構成する
-description: このトピックでは、生産現場実行インターフェイスに 1 つ以上の構成を作成する方法について説明します。 生産現場実行インターフェイスを開くと、ブラウザーとデバイスに固有の選択した構成とジョブ フィルターが自動的に読み込まれます。 構成では、特定の用途に適用する必要があるポリシーを設定します。
+description: この記事では、生産現場実行インターフェイスに 1 つ以上の構成を作成する方法について説明します。 生産現場実行インターフェイスを開くと、ブラウザーとデバイスに固有の選択した構成とジョブ フィルターが自動的に読み込まれます。 構成では、特定の用途に適用する必要があるポリシーを設定します。
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644347"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899414"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>生産現場の実行インターフェースを構成する
 
@@ -31,15 +31,15 @@ ms.locfileid: "8644347"
 - 会社のホールにあるデバイスでは、従業員がオフィスに出勤したときに出勤時間を記録し、退社したときに退社時間を記録します。
 - 生産現場にあるデバイスで、機械オペレーターは、作業の開始時と完了時に登録します。 休憩、間接活動も登録します。
 
-このトピックでは、サイトで使用する各デバイスの生産現場実行インターフェイスを構成するためのさまざまなオプションについて説明します。
+この記事では、サイトで使用する各デバイスの生産現場実行インターフェイスを構成するためのさまざまなオプションについて説明します。
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>生産現場の実行インターフェイスとそれに関連するオプション機能を有効にします
 
-生産現場の実行インターフェイス自体と、このトピックで説明されているオプション設定のいくつかは、使用する前にシステムで有効になっている必要があります。 [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページを使用して、必要に応じて次のサブセクションで説明されている機能のいずれか、またはすべてをオンにします。
+生産現場の実行インターフェイス自体と、この記事で説明されているオプション設定のいくつかは、使用する前にシステムで有効になっている必要があります。 [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページを使用して、必要に応じて次のサブセクションで説明されている機能のいずれか、またはすべてをオンにします。
 
 ### <a name="the-production-floor-execution-interface"></a>生産現場の実行インターフェース
 
-これはこのトピックで説明する主な機能であり、このセクションで述べた他のすべての機能の前提条件です。 Supply Chain Management 10.0.25 の場合、これはは必須でオフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *生産現場の実行* 機能を検索して、この機能をオンまたはオフにすることができます。
+これはこの記事で説明する主な機能であり、このセクションで述べた他のすべての機能の前提条件です。 Supply Chain Management 10.0.25 の場合、これはは必須でオフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *生産現場の実行* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ### <a name="generate-license-plates"></a>ライセンス プレートの生成
 
@@ -146,7 +146,7 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 - **進捗状況のレポート** ダイアログ ボックスから材料消費の調整を有効にします。 (この機能には、*生産現場の実行インターフェイス (WMS 以外)* 機能での材料消費の登録も必要です。)
 - プロジェクト ID による検索を有効にします。
 
-このトピックの後半で、設定の使用方法について説明します。
+この記事の後半で、設定の使用方法について説明します。
 
 この機能を使用するには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) で次の機能をオンにします:
 

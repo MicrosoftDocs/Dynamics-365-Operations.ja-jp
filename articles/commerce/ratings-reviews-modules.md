@@ -1,6 +1,6 @@
 ---
-title: 評価とレビュー モジュール
-description: このトピックでは、Microsoft Dynamics 365 Commerce の製品詳細ページで使用される評価とレビューのモジュールについて説明します。
+title: 評価およびレビュー モジュール
+description: この記事では、Microsoft Dynamics 365 Commerce の製品詳細ページで使用される評価とレビューのモジュールについて説明します。
 author: gvrmohanreddy
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: 66ee2d4185cad45b70b19fb474c64ae77a2868e835b20d5275e21610c0150370
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5829ccf9fad78e8669f5109d6c15e71af2ca768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761565"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894413"
 ---
 # <a name="ratings-and-reviews-modules"></a>評価およびレビュー モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の製品詳細ページ (PDP) で使用される評価とレビューのモジュールについて説明します。
+この記事では、Microsoft Dynamics 365 Commerce の製品詳細ページ (PDP) で使用される評価とレビューのモジュールについて説明します。
 
 E コマース Web サイトの評価およびレビューは、購入を決定する前に顧客が製品について学習するのに役立ち、製品に関する他の顧客のフィードバックを収集するメカニズムでもあります。 
 

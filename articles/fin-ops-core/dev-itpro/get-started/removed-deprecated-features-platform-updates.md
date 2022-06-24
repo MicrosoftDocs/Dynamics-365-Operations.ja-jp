@@ -1,6 +1,6 @@
 ---
-title: 削除済みまたは非推奨のプラットフォーム機能
-description: このトピックでは、財務と運用アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
+title: 削除済みまたは非推奨のプラットフォームの機能
+description: この記事では、財務と運用アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811249"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945807"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>削除済みまたは非推奨のプラットフォームの機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、財務と運用アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
+この記事では、財務と運用アプリのプラットフォーム更新プログラムから削除された、または削除される予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
@@ -40,7 +40,7 @@ ms.locfileid: "8811249"
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | Finance and Operations (Dynamics 365) モバイル アプリケーションおよびプラットフォームを廃止して、単一のモバイル プラットフォーム (Power Apps) に統合する予定です。 |
-| **別の機能で置き換えられているか?**   | はい、財務と運用アプリ データ上のモバイル エクスペリエンスは、Power Platform 統合により構築できます。 詳細については、[モバイル エクスペリエンスを構築する](../power-platform/build-mobile-experiences.md) を参照してください。 |
+| **別の機能で置き換えられているか?**   | はい、財務と運用アプリ データ上のモバイル エクスペリエンスは、Power Platform 統合により構築できます。 詳細については、[ブログ投稿](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/)および[モバイル エクスペリエンスを構築する](../power-platform/build-mobile-experiences.md)を参照してください。 |
 | **影響を受ける製品領域**         | 財務と運用アプリ |
 | **配置オプション**              | すべて |
 | **状態**                         | 非推奨。 サポート終了日は 2024 年 10 月を目標としています。 |

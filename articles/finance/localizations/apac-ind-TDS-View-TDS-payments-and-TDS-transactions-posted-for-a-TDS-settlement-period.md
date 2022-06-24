@@ -1,6 +1,6 @@
 ---
 title: TDS 支払および TDS 清算期間に対して転記されたトランザクションの表示
-description: このトピックでは、決済期間に転記された源泉徴収税 (TDS) の支払およびトランザクションでを表示する方法について説明します。
+description: この記事では、決済期間に転記された源泉徴収税 (TDS) の支払およびトランザクションでを表示する方法について説明します。
 author: kailiang
 ms.date: 03/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6f8c97d1f42af6c073e45c88237d59699a32fc7a
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c441b6f26636ef1f18e3910a201d02feb4350f33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726896"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898062"
 ---
 # <a name="view-posted-tds-payments-and-transactions-for-a-tds-settlement-period"></a>TDS 支払および TDS 清算期間に対して転記されたトランザクションの表示
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、決済期間に転記された源泉徴収税 (TDS) の支払およびトランザクションでを表示する方法について説明します。
+この記事では、決済期間に転記された源泉徴収税 (TDS) の支払およびトランザクションでを表示する方法について説明します。
 
 1. **税 \> 間接税 \> 源泉徴収税 \> 源泉徴収税決済期間** の順に移動します。
 

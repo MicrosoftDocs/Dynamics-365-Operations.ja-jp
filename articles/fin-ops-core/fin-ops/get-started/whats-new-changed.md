@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 98add33413f38db52b70b9c39c4ebd004ab3dd57
-ms.sourcegitcommit: 1819a11ae22019f1de6991d233c1c51e9950d7a3
+ms.openlocfilehash: 2430e75897a8ddc78a6b1b9288b23458aa44108a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2022
-ms.locfileid: "8457401"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908230"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>財務と運用アプリ ホーム ページの新機能および変更事項
 
@@ -41,18 +41,18 @@ ms.locfileid: "8457401"
 
 ## <a name="stand-alone-applications"></a>スタンドアロン アプリケーション
 
-スタンドアロン Dynamics 365 Human Resources での新機能や変更事項を確認するには、次のトピックを参照してください。
+スタンドアロン Dynamics 365 Human Resources での新機能や変更事項を確認するには、次の記事を参照してください。
 
 - **Human Resources:** [Dynamics 365 Human Resources の新機能および変更された機能](../../../human-resources/hr-admin-whats-new.md)
 
 ## <a name="platform-updates"></a>プラットフォーム更新プログラム
 
-財務と運用アプリのプラットフォーム更新での新機能や変更事項を確認するには、次のトピックを参照してください。
+財務と運用アプリのプラットフォーム更新での新機能や変更事項を確認するには、次の記事を参照してください。
 
 - [Platform update における新機能および変更された機能](../../dev-itpro/get-started/whats-new-home-page.md)
 
 ## <a name="lifecycle-services-releases"></a>Lifecycle Services のリリース
-Lifecycle Services の新機能や変更事項を確認するには、次のトピックを参照してください。
+Lifecycle Services の新機能や変更事項を確認するには、次の記事を参照してください。
 
 - [Lifecycle Services (LCS) の新機能および変更された機能](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 

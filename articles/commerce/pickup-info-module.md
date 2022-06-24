@@ -1,6 +1,6 @@
 ---
 title: 集荷情報モジュール
-description: このトピックでは、集荷情報モジュールと、Microsoft Dynamics 365 Commerce のチェックアウト ページにそれを追加する方法について説明します。
+description: この記事では、集荷情報モジュールと、Microsoft Dynamics 365 Commerce のチェックアウト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 ms.date: 11/06/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad877a0c018093fe97f0aa8ac213357c0520a1c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764564"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892600"
 ---
 # <a name="pickup-information-module"></a>集荷情報モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、集荷情報モジュールと、Microsoft Dynamics 365 Commerce のチェックアウト ページにそれを追加する方法について説明します。
+この記事では、集荷情報モジュールと、Microsoft Dynamics 365 Commerce のチェックアウト ページにそれを追加する方法について説明します。
 
 集荷情報モジュールをチェックアウト モジュールで使用して、注文集荷情報を表示することができます。 顧客は、使用可能な集荷日時を表示したり、注文を集荷するための適切な時間を選択したりできます。 たとえば、顧客は 3 月 21 日の午後 3 時にサンフランシスコの店舗から注文を受け取ることを選択できます。
 

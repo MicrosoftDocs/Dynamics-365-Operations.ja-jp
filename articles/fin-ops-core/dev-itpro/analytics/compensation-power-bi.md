@@ -1,6 +1,6 @@
 ---
 title: 補償 Power BI コンテンツ
-description: このトピックでは、補償 Power BI コンテンツについて説明します。 レポートへのアクセス方法および使用されるデータ モデルに関する情報を提供します。
+description: この記事では、補償 Power BI コンテンツについて説明します。 レポートへのアクセス方法および使用されるデータ モデルに関する情報を提供します。
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 549111dab1b6d3b66567801ae787a680a04b18e20e286e1a59d1ab388bf2a4f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8bc9be91a7538c3d50163832d5d4957724cd8fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763599"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897191"
 ---
 # <a name="compensation-power-bi-content"></a>補償 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**補償** Microsoft Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
+この記事では、**補償** Microsoft Power BI コンテンツについて説明します。 レポートにアクセスする方法を説明し、コンテンツを作成するために使用したデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 次の製品のいずれかを使用する場合、**補償** Power BI コンテンツは、**補償管理** ワークスペースに表示されます。

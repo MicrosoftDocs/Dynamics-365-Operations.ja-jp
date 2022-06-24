@@ -1,6 +1,6 @@
 ---
 title: 転記の定義
-description: このトピックでは、転記の定義に関する情報と、それらを定義およびリンクする方法について説明します。 サポートされている転記タイプと文書については、転記プロファイルの代わりに転記の定義を使用して、勘定項目の主勘定および財務分析コードを分類できます。
+description: この記事では、転記の定義に関する情報と、それらを定義およびリンクする方法について説明します。 サポートされている転記タイプと文書については、転記プロファイルの代わりに転記の定義を使用して、勘定項目の主勘定および財務分析コードを分類できます。
 author: kweekley
 ms.date: 09/03/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 056300768aa0bc5e1981e1d43de03fabba21a5fa
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f60506e039623ae7a97f6b4e835f751da15ac0c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722013"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898152"
 ---
 # <a name="posting-definitions"></a>転記の定義
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、転記の定義に関する情報と、それらを定義およびリンクする方法について説明します。
+この記事では、転記の定義に関する情報と、それらを定義およびリンクする方法について説明します。
 サポートされている転記タイプと文書については、転記プロファイルの代わりに転記の定義を使用して、勘定項目の主勘定および財務分析コードを分類できます。 サポートされる文書および転記タイプは、**トランザクションの転記の定義** ページで表示できます。 
 
 転記の定義の使用を開始するには、**総勘定元帳パラメーター** ページで **転記の定義の使用** オプションを選択します。 転記の定義を使用する場合でも、元のエントリの転記プロファイルと、サポートされない転記タイプとドキュメントを定義する必要があります。 

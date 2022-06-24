@@ -1,6 +1,6 @@
 ---
 title: これを選択するのオプションがカートまたは製品の詳細ページに表示されません
-description: このトピックでは、店舗内での集荷のオプションがカートページまたは製品の詳細ページに表示されない場合に役立つトラブルシューティングガイドを示します。
+description: この記事には、店舗内での集荷のオプションがカート ページまたは製品の詳細ページに表示されない場合に役立つトラブルシューティング ガイドが含まれます。
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 836f767caae8e32c156a1c13d1e2864a4d3cdd92e7a11814a2585c9e907575dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88367e13b4d079edb0816e301901828b65c437ae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733824"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900311"
 ---
 # <a name="pick-this-up-option-doesnt-appear-on-cart-or-product-details-pages"></a>「これを選択する」のオプションがカートまたは製品の詳細ページに表示されません
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、店舗内での集荷のオプションがカートページまたは製品の詳細ページに表示されない場合に役立つトラブルシューティングガイドを示します。
+この記事には、店舗内での集荷のオプションがカート ページまたは製品の詳細ページに表示されない場合に役立つトラブルシューティング ガイドが含まれます。
 
 ## <a name="description"></a>説明
 

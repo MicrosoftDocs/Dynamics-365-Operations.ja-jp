@@ -1,6 +1,6 @@
 ---
 title: グローバル在庫会計の使用を開始する
-description: このトピックでは、グローバル在庫会計の使用を開始する方法について説明します。
+description: この記事では、グローバル在庫会計の使用を開始する方法について説明します。
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 17d4816fc5fcad0b0665640a8347b1f4ea032dd7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679446"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891092"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>グローバル在庫会計の使用を開始する
 
@@ -38,12 +38,18 @@ ms.locfileid: "8679446"
 
 グローバル在庫会計は、Supply Chain Management に組み込まれているすべての原価管理機能に対応していません。 したがって、現在使用可能な一連の機能が要件を満たすかどうかを評価することが重要となります。
 
-## <a name="how-to-get-the-global-inventory-accounting-public-preview"></a><a name="sign-up"></a>グローバル在庫会計のパブリック プレビューの取得方法
+## <a name="how-to-get-the-global-inventory-accounting-add-in"></a><a name="sign-up"></a>グローバル在庫会計アドインの取得方法
 
 > [!IMPORTANT]
 > グローバル在庫会計を使用するには、LCS が有効になっている高可用性環境 (OneBox 環境ではない) が必要です。 また、Supply Chain Management バージョン 10.0.19 以降を実行している必要があります。
 
-グローバル在庫会計パブリック プレビューにサインアップするには、[グローバル在庫会計チーム](mailto:GlobalInvAccount@microsoft.com)に電子メールで LCS 環境 ID を送信します。 プログラムに承認された後、チームはグローバル在庫会計ベータ キーおよびサービス エンドポイントを含むフォローアップ電子メールを送信します。 ベータ キーを受信した後に、[アドインをインストール](#install)できます。
+### <a name="supply-chain-management-version-10019-to-10026"></a>Supply Chain Management バージョン 10.0.19 から 10.0.26
+
+Supply Chain Management バージョン 10.0.19 から 10.0.26 のグローバル在庫会計をインストールするには、まず [アドインをインストール](#install) します。 その後、LCS 環境 ID と会社名をメールで [グローバル在庫会計チーム](mailto:GlobalInvAccount@microsoft.com) に送信します。 チームはグローバル在庫会計サービス エンドポイントを含むフォローアップ メールを送信します。
+
+### <a name="supply-chain-management-version-10027-and-later"></a>Supply Chain Management バージョン 10.0.27 以降
+
+Supply Chain Management バージョン 10.0.27 以降のグローバル在庫会計をインストールするには、[アドインをインストール](#install) するだけです。 これらのバージョンの Supply Chain Management では、グローバル在庫会計サービス エンドポイントが自動的に設定されるため、手動で検索する必要はありません。 アドインの設定中に問題が発生する場合は、[グローバル在庫会計チーム](mailto:GlobalInvAccount@microsoft.com) に問い合わせください。
 
 ## <a name="licensing"></a>ライセンス
 
@@ -98,12 +104,7 @@ Dataverse インストールの既定の言語が英語ではない場合、次�
 
 グローバル在庫会計を使用できるようにするには、以下の手順に従ってアドインをインストールします。
 
-1. グローバル在庫会計のパブリック プレビューへの[サインアップ](#sign-up)。
 1. [LCS](https://lcs.dynamics.com/Logon/Index) にサインインします。
-1. **プレビュー機能管理** に移動します。
-1. プラス記号 (**+**) を選択してください。
-1. **コード** フィールドに、グローバル在庫会計用のアドイン ベータ キーを入力します。 (サインアップ時に電子メールでベータ キーを受け取っている必要があります。)
-1. **ブロック解除** を選択します。
 1. サービスを追加する LCS 環境を開きます。
 1. **完全な詳細** に移動します。
 1. **Power Platform 統合** に移動し、**設定** を選択します。
@@ -124,6 +125,8 @@ Dataverse インストールの既定の言語が英語ではない場合、次�
 1. **すべて** タブで、*(プレビュー) グローバル在庫会計* という名前の機能を検索します。
 1. **直ちに有効化** を選択します。
 1. **グローバル在庫会計 \> 設定 \> グローバル在庫会計パラメーター \> 統合パラメーター** に移動します。
-1. **データ サービス エンドポイント** および **グローバル在庫会計エンドポイント** フィールドに、プレビューへのサインアップ時にグローバル在庫会計チームが送信した電子メールの URL を入力します。
+1. 実行している Supply Chain Management のバージョンに応じて、次のいずれかの手順を実行します:
+    - **Supply Chain Management バージョン 10.0.19 から 10.0.26**: **データ サービス エンドポイント** および **グローバル在庫会計エンドポイント** のフィールドで、グローバル在庫会計チームからメールで送信された URL を入力します ([グローバル在庫会計アドインの取得方法](#sign-up) も参照してください)。
+    - **Supply Chain Management バージョン 10.0.27 以降**: エンドポイントを入力する必要はないので、この手順を省略できます。
 
 グローバル在庫会計を使用する準備が整いました。

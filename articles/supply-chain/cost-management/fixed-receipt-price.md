@@ -1,6 +1,6 @@
 ---
 title: 固定入庫価格
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の固定入庫価格を構成して使用する方法について説明します 。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の固定入庫価格を構成して使用する方法について説明します 。
 author: raprofit
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 8e26d84ddc309249d8bd6e54987ad3ae8eed68f0
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2630952f395d1a18202698b4d73b67ef4b760194
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770301"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907583"
 ---
 # <a name="fixed-receipt-price"></a>固定入庫価格
 
 [!include [banner](../includes/banner.md)]
 
-**固定入庫価格** は、*標準原価* または *加重平均の移動* 以外の在庫モデルを使用する場合に、品目モデル グループで選択できるオプションです。 Microsoft Dynamics AX の初期のバージョンでは、このオプションは **標準原価** という名前でした。 Dynamics AX 2012 で新しい標準原価在庫モデルが導入された際、**固定入庫価格** の名前が変更されました。 このトピックでは、Dynamics 365 Supply Chain Management の固定入庫価格を構成して使用する方法について説明します 。
+**固定入庫価格** は、*標準原価* または *加重平均の移動* 以外の在庫モデルを使用する場合に、品目モデル グループで選択できるオプションです。 Microsoft Dynamics AX の初期のバージョンでは、このオプションは **標準原価** という名前でした。 Dynamics AX 2012 で新しい標準原価在庫モデルが導入された際、**固定入庫価格** の名前が変更されました。 この記事では、Dynamics 365 Supply Chain Management の固定入庫価格を構成して使用する方法について説明します。
 
 ## <a name="about-fixed-receipt-prices"></a>固定入庫価格について
 
