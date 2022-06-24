@@ -1,6 +1,6 @@
 ---
-title: 固定資産グループの設定
-description: このトピックでは、新しい固定資産グループを作成する方法を説明します。
+title: 固定資産グループを設定します
+description: この記事では、新しい固定資産グループを作成する方法を説明します。
 author: moaamer
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17f149f3815867e2b174e017dd6b4998e2d7c16f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7eef214142bab80f6754c74787e94c4e79a3e037
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725292"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870078"
 ---
-# <a name="set-up-fixed-asset-groups"></a>固定資産グループの設定
+# <a name="set-up-fixed-asset-groups"></a>固定資産グループを設定します
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、新しい固定資産グループを作成する方法を説明します。 これは USMF の法人に対して経理担当ロールとデモ データを使用します。
+この記事では、新しい固定資産グループを作成する方法を説明します。 これは USMF の法人に対して経理担当ロールとデモ データを使用します。
 
 1. ナビゲーション ウィンドウで、**モジュール > 固定資産 > 設定 > 固定資産グループ** に移動します。
 2. **新規** を選択します。

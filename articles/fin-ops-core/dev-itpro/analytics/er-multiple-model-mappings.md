@@ -1,6 +1,6 @@
 ---
 title: 1 つのモデル ルートに対する複数の派生マッピングの管理
-description: このトピックでは、1 つのモデル ルートに対して構成された複数の派生マッピングを管理する方法について説明します。
+description: この記事では、1 つのモデル ルートに対して構成された複数の派生マッピングを管理する方法について説明します。
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324115"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892482"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>1 つのモデル ルートに対する複数の派生マッピングの管理
 
@@ -32,9 +32,9 @@ ER モデル マッピング コンポーネントは、ER データ モデル [
 
 多くの構成プロバイダーは、同じ ER データ モデルに対して ER モデル マッピング構成を提供する場合があります。 これらのモデル マッピング構成には、さまざまなルート定義のマッピング コンポーネントが含まれる場合があります。 1 つの [プロバイダー](general-electronic-reporting.md#Provider) が提供する 1 つのルート定義に対してモデル マッピングを使用し、別のプロバイダーが提供する別のルート定義にモデル マッピングを使用できます。
 
-このトピックの手順では、ER データ モデルが同じルート定義に対して構成された異なるモデル マッピング構成を含む場合に、ERデータ モデルの複数の ER モデル マッピング構成を管理する方法について説明します。 
+この記事の手順では、ER データ モデルが同じルート定義に対して構成された異なるモデル マッピング構成を含む場合に、ERデータ モデルの複数の ER モデル マッピング構成を管理する方法について説明します。 
 
-このトピックの手順を実行するには、システム管理者ロールまたは電子申告開発者ロールに割り当てられている必要があります。
+この記事の手順を実行するには、システム管理者ロールまたは電子申告開発者ロールに割り当てられている必要があります。
 
 次の手順はすべて、USMF 会社で実行できます。 コーディングは必要ありません。
 

@@ -1,6 +1,6 @@
 ---
 title: 船荷証券の作成
-description: このトピックでは、倉庫管理のプロセスを使用して、船荷証券の作成方法を説明します。
+description: この記事では、倉庫管理のプロセスを使用する場合に、船荷証券を作成する方法について説明します。
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2051583ae1606c9e4c099c2029807ca04d9d076
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34e84fee13dcff574f1700ba2b8f577f4c401cbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669911"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885786"
 ---
 # <a name="create-a-bill-of-lading"></a>船荷証券の作成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、倉庫管理のプロセスを使用して、船荷証券の作成方法を説明します。  
+この記事では、倉庫管理のプロセスを使用する場合に、船荷証券を作成する方法について説明します。  
 
 船荷証券は、配送業者と品目を出荷する会社間の法律文書です。 この文書は出荷済品目に添えられ、品目が宛先に配送されると出荷明細行として使用されます。 倉庫管理を使用する場合は、船荷証券を生成する 2 つの方法があります。
 

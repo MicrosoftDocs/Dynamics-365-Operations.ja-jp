@@ -1,6 +1,6 @@
 ---
 title: プロセス ガイド フレームワーク
-description: このトピックでは、X++ で倉庫モバイル プロセスを拡張する開発者のプロセス ガイド フレームワークに関する情報を提供します。
+description: この記事では、X++ で倉庫モバイル プロセスを拡張する開発者のプロセス ガイド フレームワークに関する情報について説明します。
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6882c979ad9b37eb4f95a04259b6ac0f0a0edcdc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: e88f32e0347a808d03615cf85e50b1592d691670
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902049"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860438"
 ---
 # <a name="process-guide-framework"></a>プロセス ガイド フレームワーク
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、X++ で倉庫モバイル プロセスを拡張する開発者のプロセス ガイド フレームワークに関する情報を提供します。 倉庫モバイル プロセスは、小さなステップに分割されるプロセスの結果として拡張可能です。 各ステップのビジネス ロジックおよびユーザー インターフェイスの作成は、個々のクラスに抽出されたため、拡張可能になりました。
+この記事では、X++ で倉庫モバイル プロセスを拡張する開発者のプロセス ガイド フレームワークに関する情報について説明します。 倉庫モバイル プロセスは、小さなステップに分割されるプロセスの結果として拡張可能です。 各ステップのビジネス ロジックおよびユーザー インターフェイスの作成は、個々のクラスに抽出されたため、拡張可能になりました。
 
 ## <a name="overview-of-the-existing-design"></a>既存のデザインの概要
 
@@ -321,7 +321,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> このトピックでは、X + + メソッドに対して同じソースコードをアプリケーションエクスプローラーを使用して検索できます。 クラス名をフィルター処理し、クラス名を右クリックして **コードの表示** を選択します。
+> この記事では、X++ メソッドに対して同じソースコードをアプリケーションエクスプローラーを使用して検索できます。 クラス名をフィルター処理し、クラス名を右クリックして **コードの表示** を選択します。
 
 ### <a name="step-3-start-the-production-order"></a>ステップ 3: 製造オーダーを開始する
 
@@ -419,9 +419,9 @@ _page.addButton(step.createAction(#ActionOK), true);
 
 これを行うことにより、渡された名前のアクション クラスを作成するようステップに求め、そのアクションをボタンに関連付けます。
 
-### <a name="summary"></a>集計
+### <a name="summary"></a>要約
 
-このトピックで説明したことをすべてまとめるため、プロセスに必要なコードの包括的な概要をここに示します。
+この記事で説明したことのまとめとして、プロセスに必要なコードの包括的な概要をご覧ください。
 
 1.  **ProdProcessGuideProductionStartController**
 
@@ -570,7 +570,7 @@ _page.addButton(step.createAction(#ActionOK), true);
         ```
 
         > [!NOTE]
-        > 品目情報のラベルを生成するために使用される **generateItemInfoForProdId()** メソッドは、このトピックから除外されます。 このメソッドは、品目 ID、説明、および分析コードを取得するいくつかのテーブルを照会します。 **generateItemInfoForProdId()** についてよく理解する場合、ソース コードを確認します。
+        > 品目情報のラベルを生成するために使用される **generateItemInfoForProdId()** メソッドは、この記事から除外されます。 このメソッドは、品目 ID、説明、および分析コードを取得するいくつかのテーブルを照会します。 **generateItemInfoForProdId()** についてよく理解する場合、ソース コードを確認します。
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -605,7 +605,7 @@ _page.addButton(step.createAction(#ActionOK), true);
 
 ### <a name="extending-a-business-process"></a>業務プロセスの拡張
 
-これまでのところ、このトピックでは **ProcessGuide** フレームワークを使用して新しいプロセスを作成する方法が強調表示されています。 この最後のセクションでは、このビジネス プロセスを拡張する方法の例をいくつか示します。
+これまでのところ、この記事では **ProcessGuide** フレームワークを使用して新しいプロセスを作成する方法が強調表示されています。 この最後のセクションでは、このビジネス プロセスを拡張する方法の例をいくつか示します。
 
 ### <a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>フローにおけるステップの追加 (ProcessGuideNavigationAgentDefault を使用)
 

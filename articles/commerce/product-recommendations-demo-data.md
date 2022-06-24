@@ -1,6 +1,6 @@
 ---
 title: 推奨事項とデモ データの作成
-description: このトピックでは、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニ チャネル製品の推奨事項を活用する方法についてのガイダンスを提供します。
+description: この記事には、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニチャネル製品の推奨事項を活用する方法についてのガイダンスが含まれます。
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1a9592ee5cae88c6277115ed495b15ec09945e56cad0634fd246b6ee7e5dd048
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a0e6666cc163f97567cf5c6f820d436ef6ef4cca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741041"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874898"
 ---
 # <a name="create-recommendations-with-demo-data"></a>推奨事項とデモ データの作成
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニ チャネル製品の推奨事項を活用する方法についてのガイダンスを提供します。
+この記事には、事前設定されたカスタマイズ可能なデモ データを使用して、レベル 1 シングル ボックス環境でのオムニチャネル製品の推奨事項を活用する方法についてのガイダンスが含まれます。
 
 オムニ チャネルの製品推奨事項は、編集上精選された、またはプログラムで生成された製品一覧を提供します。 これらの一覧は、ビジネスのニーズに応じて、いくつかのシナリオで使用できます。 製品推奨事項一覧の詳細については、[製品推奨事項の概要](product-recommendations.md) を参照してください。
 

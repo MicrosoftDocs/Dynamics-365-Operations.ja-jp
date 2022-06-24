@@ -1,6 +1,6 @@
 ---
 title: 休暇タイプ
-description: このトピックでは、Dynamics 365 Human Resources における休暇タイプ エンティティに対するクエリの詳細および例を示します。
+description: この記事では、Dynamics 365 Human Resources における休暇タイプ エンティティに対するクエリの詳細および例を示します。
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dced58e6e9f6c20578e4582e4cf39162622713e7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6e7905989df92e943b86f86194c87dcb2a7b1446
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069910"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893789"
 ---
 # <a name="leave-type"></a>休暇タイプ
 
@@ -27,9 +27,9 @@ ms.locfileid: "8069910"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の休暇タイプ エンティティについて説明します。
+この記事では、Dynamics 365 Human Resources の休暇タイプ エンティティについて説明します。
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 このエンティティは、特定の休暇タイプの情報を提供します。
 

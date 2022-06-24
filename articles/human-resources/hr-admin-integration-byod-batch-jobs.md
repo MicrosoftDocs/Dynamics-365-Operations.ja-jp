@@ -1,6 +1,6 @@
 ---
 title: BYOD でスケジュール設定されたバッチ ジョブを最適化する
-description: このトピックでは、Microsoft Dynamics 365 Human Resources でデータベースの持ち込み (BYOD) 機能を使用している場合のパフォーマンスの最適化方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Human Resources でデータベースの持ち込み (BYOD) 機能を使用している場合のパフォーマンスの最適化方法について説明します。
 author: twheeloc
 ms.date: 08/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 2fcdc89ce65fd123b4cf845acf83070119cc3701
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4df60a82e016ec8f3ba6ba0d70c261824961d221
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717172"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848316"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>BYOD でスケジュール設定されたバッチ ジョブを最適化する
 
@@ -27,7 +27,7 @@ ms.locfileid: "8717172"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、データベースの持ち込み (BYOD) 機能を使用している場合のパフォーマンスの最適化方法について説明します。 詳細については、[自分のデータベースの持ち込み (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)を参照してください。
+この記事では、データベースの持ち込み (BYOD) 機能を使用している場合のパフォーマンスの最適化方法について説明します。 詳細については、[自分のデータベースの持ち込み (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)を参照してください。
 
 ## <a name="performance-considerations-for-data-export"></a>データ エクスポートのパフォーマンスに関する考慮事項
 

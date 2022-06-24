@@ -1,6 +1,6 @@
 ---
 title: リース転記勘定の設定
-description: このトピックでは、資産リース トランザクションに必要な転記勘定の一覧を示し、[リース転記パラメーター] ページで転記勘定を定義する方法について説明します。
+description: この記事では、資産リース トランザクションに必要な転記勘定の一覧を示し、[リース転記パラメーター] ページで転記勘定を定義する方法について説明します。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 147d8cd93f9664039b2004b878dcaff96c8b6ce6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6e3a0d8dd3bb3e58ca10b2efce0cc88a2f48d2de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726381"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859917"
 ---
 # <a name="set-up-lease-posting-accounts"></a>リース転記勘定の設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、資産リース トランザクションに必要な転記勘定の一覧を示し、**リース転記パラメーター** ページで転記勘定を定義する方法について説明します。
+この記事では、資産リース トランザクションに必要な転記勘定の一覧を示し、**リース転記パラメーター** ページで転記勘定を定義する方法について説明します。
 
 Accounting Standards Codification Topic 842 (ASC 842) および国際財務報告標準 16 (IFRS 16) に準拠するために、勘定科目表に勘定を作成することが必要な場合があります。 ただし、ASC および IFRS 基準を満たすために作成するすべてのアカウントは、固定資産勘定ではありません。 ASC 842 では、利用権のある資産 (ROU) が財務とオペレーティング リースの両方について記録されます。 これらのリースは固定資産から分離されます。 (固定資産を使用して、使用権資産を引き続き管理できます)。
 

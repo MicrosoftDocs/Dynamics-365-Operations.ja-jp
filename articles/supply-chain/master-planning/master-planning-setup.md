@@ -1,7 +1,7 @@
 ---
 title: マスター プランの設定
-description: このトピックでは、マスター プランの設定に使用される各種重要な戦略およびパラメーターについて説明します。
-author: ChristianRytt
+description: この記事では、マスター プランの設定に使用される各種重要な戦略およびパラメーターについて説明します。
+author: t-benebo
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: effdefcf8326babaa89d7de4b28a86bbef7280f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580723"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888560"
 ---
 # <a name="set-up-master-planning"></a>マスター プランの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、マスター プランの設定に使用される各種重要な戦略およびパラメーターについて説明します。 これには、マスター プランで使用されるプランのタイプの概要と、業務要件に応じてどの計画戦略を使用するかについての説明が含まれます。 また、計画に影響を与える主要なパラメーターについて、およびそれらのパラメーターが提案された計画オーダーにどのように影響するかについても説明します。
+この記事では、マスター プランの設定に使用される各種重要な戦略およびパラメーターについて説明します。 これには、マスター プランで使用されるプランのタイプの概要と、業務要件に応じてどの計画戦略を使用するかについての説明が含まれます。 また、計画に影響を与える主要なパラメーターについて、およびそれらのパラメーターが提案された計画オーダーにどのように影響するかについても説明します。
 
 ## <a name="types-of-master-plans"></a>マスター プランのタイプ
 

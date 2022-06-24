@@ -1,6 +1,6 @@
 ---
-title: 法人ごとに指定されたパラメーターを使用するよう ER 形式を構成する
-description: このトピックでは、法人ごと指定されたパラメーターを使用して電子申告 (ER) 形式を構成する方法について説明します。
+title: 法人ごとに指定されたパラメーターを使用するよう電子申告形式を構成する
+description: この記事では、法人ごと指定されたパラメーターを使用して電子申告 (ER) 形式を構成する方法について説明します。
 author: NickSelin
 ms.date: 04/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2bf4d1ecad3e25299df7c87ffa2236736ddcac300a5ded779616b25920745d7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb44422c4cdcc87989cdfb28dcd7d5cfea9002eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858831"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>法人ごとに指定されたパラメーターを使用するよう ER 形式を構成する
 
@@ -37,13 +37,13 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 
 ## <a name="prerequisites"></a>必要条件
 
-このトピックの例を完了するには、次のいずれかの役割で、財務と同じテナントに対してプロビジョニングされている Regulatory Configuration Services (RCS) のインスタンスにアクセスできる必要があります。
+この記事の例を完了するには、次のいずれかの役割で、財務と同じテナントに対してプロビジョニングされている Regulatory Configuration Services (RCS) のインスタンスにアクセスできる必要があります。
 
 - 電子申告開発者
 - 電子申告機能コンサルタント
 - システム管理者
 
-[CALCULATED FIELD タイプの ER データソースのパラメーター化された呼び出しをサポート](er-calculated-field-type.md) トピックの手順を実行することをお勧めします。 これらの手順を既に完了している場合は、この後の **ER 構成を RCS にインポートする** セクションの手順を省略できます。
+[CALCULATED FIELD タイプの ER データソースのパラメーター化された呼び出しをサポート](er-calculated-field-type.md) 記事に記載の手順を実行することをお勧めします。 これらの手順を既に完了している場合は、この後の **ER 構成を RCS にインポートする** セクションの手順を省略できます。
 
 ## <a name="import-er-configurations-into-rcs"></a>ER 構成を RCS にインポートする
 
@@ -58,7 +58,7 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 
 次に、RCS インスタンスにサインインします。
 
-この例では、Litware、Inc. サンプル会社の構成を作成します。 この手順を完了する前に、RCS で [ER 構成 プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)トピックにある手順を完了する必要があります。
+この例では、Litware、Inc. サンプル会社の構成を作成します。 この手順を完了する前に、RCS で [ER 構成 プロバイダーの作成および有効なプロバイダーとしてのマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md)の記事に記載の手順を完了する必要があります。
 
 1.  既定のダッシュボードで、**電子申告** を選択します。
 2.  **コンフィギュレーションをレポートする** を選択します。
@@ -300,7 +300,7 @@ ER アプリケーション固有のパラメーター機能を使用すると�
 -   パラメーター化された calls.xml を知るためのマッピング
 -   パラメーター化された calls.xml を知るためのモデル
 
-構成済みの **LE データの参照方法を検索するための形式** ER 形式を使用して、法人に依存する税コードのセットを設定し、さまざまな課税レベルで税トランザクションをフィルター処理する方法を学習するには、[法人ごとの ER 形式のパラメーターの設定](er-app-specific-parameters-set-up.md) トピックをご覧ください。
+構成済みの **LE データの参照方法を検索するための形式** ER 形式を使用して、法人に依存する税コードのセットを設定し、さまざまな課税レベルで税トランザクションをフィルター処理する方法を学習するには、[法人ごとの ER 形式のパラメーターの設定](er-app-specific-parameters-set-up.md) の記事をご覧ください。
 
 ## <a name="additional-resources"></a>追加リソース
 

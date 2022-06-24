@@ -1,6 +1,6 @@
 ---
 title: モバイル ワークスペースの請求書承認
-description: このトピックでは、請求書承認モバイル ワークスペースに関する情報を提供します。
+description: この記事では、請求書承認モバイル ワークスペースに関する情報を提供します。
 author: abruer
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 08775a574bcd57948c6bf6a634d822b32112f782
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e9067e33038ee09b8f8cdcc8dd597ab5be9cfe7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811361"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868672"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>モバイル ワークスペースの請求書承認
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-このトピックでは、**請求書承認** モバイル ワークスペースに関する情報を提供します。 このワークスペースは、仕入先請求書ヘッダーのワークフロー プロセスを通して割り当てられている請求書の一覧を提供します。 
+この記事では、**請求書承認** モバイル ワークスペースに関する情報を提供します。 このワークスペースは、仕入先請求書ヘッダーのワークフロー プロセスを通して割り当てられている請求書の一覧を提供します。 
 
 このモバイル ワークスペースは、Finance and Operations モバイル アプリで使用するためのものです。
 

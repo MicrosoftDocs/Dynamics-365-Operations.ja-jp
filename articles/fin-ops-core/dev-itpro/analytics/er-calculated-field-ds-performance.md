@@ -1,6 +1,6 @@
 ---
 title: パラメーター化された計算フィールドのデータ ソースを追加して、ER ソリューションのパフォーマンスを向上させる
-description: このトピックでは、パラメーター化された計算フィールドのデータ ソースを追加して、電子申告 (ER) ソリューションのパフォーマンスを向上させる方法について説明します。
+description: この記事では、パラメーター化された計算フィールドのデータ ソースを追加して、電子申告 (ER) ソリューションのパフォーマンスを向上させる方法について説明します。
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,32 +14,32 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c2c0499ac3d41c9bb6026cc05f971087799c28f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753673"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850117"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>パラメーター化された計算フィールドのデータ ソースを追加して、ER ソリューションのパフォーマンスを向上させる
 
 [!include [banner](../includes/banner.md)]
 
-このトピックではは、実行される [電子申告 (ER)](general-electronic-reporting.md) 形式の [パフォーマンス追跡](trace-execution-er-troubleshoot-perf.md) を取得し、それらのトレースからの情報を使用して、パラメーター化された **計算フィールド** のデータ ソースを構成することにより、パフォーマンスを向上させる方法について説明します。
+この記事では、実行される [電子申告 (ER)](general-electronic-reporting.md) 形式の [パフォーマンス追跡](trace-execution-er-troubleshoot-perf.md) を取得し、それらのトレースからの情報を使用して、パラメーター化された **計算フィールド** のデータ ソースを構成することにより、パフォーマンスを向上させる方法について説明します。
 
 ビジネス ドキュメントを生成するための ER コンフィギュレーションをデザインするプロセスの一部として、アプリケーションからデータを取得し、生成された出力に入力するために使用されるメソッドを定義します。 **計算フィールド** 型のパラメーター化された ER データ ソースをデザインすることにより、データベース呼び出し回数を減らし、ER 形式の実行の詳細を収集に関連する時間とコストを大幅に削減することができます。
 
 ## <a name="prerequisites"></a>必要条件
 
-- このトピックの例を完了するには、次のいずれかの [ロール](../sysadmin/tasks/assign-users-security-roles.md) にアクセスできる必要があります：
+- この記事の例を完了するには、次のいずれかの [ロール](../sysadmin/tasks/assign-users-security-roles.md) にアクセスできる必要があります：
 
     - 電子申告開発者
     - 電子申告機能コンサルタント
     - システム管理者
 
 - この会社は、**DEMF** に設定する必要があります。
-- このトピックの [付録 1](#appendix1) の手順に従って、このトピックの例を完了するために必要なサンプルの Microsoft ER ソリューションのコンポーネントをダウンロードします。
-- このトピックの [付録 2](#appendix2) の手順に従って、サンプルの Microsoft ER ソリューションのパフォーマンスを向上させるために ER フレームワークを使用するために必要な ER パラメーターの最小セットを構成します。
+- この記事の [付録 1](#appendix1) の手順に従って、この記事の例を完了するために必要なサンプルの Microsoft ER ソリューションのコンポーネントをダウンロードします。
+- この記事の [付録 2](#appendix2) の手順に従って、サンプルの Microsoft ER ソリューションのパフォーマンスを向上させるために ER フレームワークを使用するために必要な ER パラメーターの最小セットを構成します。
 
 ## <a name="import-the-sample-er-solution"></a>サンプル ER ソリューションのインポート
 
@@ -48,7 +48,7 @@ ms.locfileid: "6753673"
 最初の手順は、サンプル ER ソリューションをインポートして、仕入先トランザクション レポートを生成することです。
 
 1. 会社用にプロビジョニングされた Microsoft Dynamics 365 Finance のインスタンスにサインインします。
-2. このトピックでは、サンプル会社 **Litware, Inc.** のコンフィギュレーションを作成および変更します。 このコンフィギュレーション プロバイダーが Finance インスタンスに追加され、有効としてマークされていることを確認してください。 詳細については、[構成プロバイダーを作成して、有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) を参照してください。
+2. この記事では、サンプル会社 **Litware, Inc.** の構成を作成または変更します。 このコンフィギュレーション プロバイダーが Finance インスタンスに追加され、有効としてマークされていることを確認してください。 詳細については、[構成プロバイダーを作成して、有効としてマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) を参照してください。
 3. **電子レポート** ワークスペースで、**レポート コンフィギュレーション** タイルを選択します。
 4. **コンフィギュレーション** ページで、前提条件としてダウンロードした ER コンフィギュレーションを Finance に次の順序でインポートします: データ モデル、モデル マッピング、フォーマット。 各コンフィギュレーションについて、次の手順を実行します。
 
@@ -220,7 +220,7 @@ ER ソリューションの最初のバージョンの設計が完了したと�
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>変更された ER ソリューションを実行して追跡実行する
 
-このトピックの先のセクション [ER 形式を実行する](#run-format) の手順を繰り返して、新しいパフォーマンス追跡を生成します。
+この記事の先のセクション [ER 形式を実行する](#run-format) の手順を繰り返して、新しいパフォーマンス追跡を生成します。
 
 ## <a name="use-the-performance-trace-to-analyze-adjustments-to-the-model-mapping"></a>パフォーマンス追跡を使用して、モデル マッピングの調整を分析する 
 

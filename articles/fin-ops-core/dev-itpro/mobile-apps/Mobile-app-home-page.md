@@ -1,6 +1,6 @@
 ---
 title: モバイル アプリのホーム ページ
-description: このトピックでは、財務と運用 (Dynamics 365) モバイル アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
+description: この記事では、財務と運用 (Dynamics 365) モバイル アプリについて説明し、組織で実装するのに役立つリソースへのリンクを提供します。
 author: ChrisGarty
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: a6928b1fc7713b6822f53aaa77b8d1281eb6d320
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: d73a8d3cf8a7899f16db87148456671dea773636
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811176"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868762"
 ---
 # <a name="mobile-app-home-page"></a>モバイル アプリのホーム ページ
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-このトピックでは、**財務と運用 (Dynamics 365) モバイル アプリ** について説明し、組織で実装するのに役立つリソースへのリンクを提供します。
+この記事では、**財務と運用 (Dynamics 365) モバイル アプリ** について説明し、組織で実装するのに役立つリソースへのリンクを提供します。
 
 ## <a name="overview"></a>概要
 
@@ -78,12 +78,12 @@ ms.locfileid: "8811176"
 <td>1</td>
 <td>システム管理者</td>
 <td>組織内の財務と運用アプリを実装します。</td>
-<td><ul><li>まだ Microsoft Dynamics 365 のバージョンを配置していない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a> を参照してください。</li><li>使用可能なモバイル ワークスペースの一覧は、<a href="mobile-workspaces-released.md">最近リリースされたモバイル ワークスペース</a> を参照してください。</li></ul></td>
+<td><ul><li>まだ Microsoft Dynamics 365 のバージョンを配置していない&#39;場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a> を参照してください。</li><li>使用可能なモバイル ワークスペースの一覧は、<a href="mobile-workspaces-released.md">最近リリースされたモバイル ワークスペース</a> を参照してください。</li></ul></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>システム管理者</td>
-<td><strong>Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合は:</strong>Microsoft が提供するモバイル ワークスペースを有効にする KB をダウンロードしインストールします。</td>
+<td><strong>Microsoft Dynamics 365 for Operations バージョン 1611 を使用している場合は&#39;:</strong>Microsoft が提供するモバイル ワークスペースを有効にする KB をダウンロードしインストールします。</td>
 <td>詳細については、次のトピックを参照してください。
 <ul>
 

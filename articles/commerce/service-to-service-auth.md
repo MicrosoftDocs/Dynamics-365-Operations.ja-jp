@@ -1,6 +1,6 @@
 ---
 title: サービス間認証の構成
-description: このトピックでは、評価とレビューのためにサービス API を安全に呼び出すように Microsoft Dynamics 365 Commerce でサービス間認証を構成する方法について説明します。
+description: この記事では、評価とレビューのためにサービス API を安全に呼び出すように Microsoft Dynamics 365 Commerce でサービス間認証を構成する方法について説明します。
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: da780de5f15d72bdac85a261eae809125c830260
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: acb3a6220d146d32bbeb5bd8169033bc897ec3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871610"
 ---
 # <a name="configure-service-to-service-authentication"></a>サービス間認証の構成
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、評価とレビューのために サービス アプリケーション プログラミング インターフェイス (API) を安全に呼び出すように Microsoft Dynamics 365 Commerce でサービス間 (S2S) 認証を構成する方法について説明します。
+この記事では、評価とレビューのために サービス アプリケーション プログラミング インターフェイス (API) を安全に呼び出すように Microsoft Dynamics 365 Commerce でサービス間 (S2S) 認証を構成する方法について説明します。
 
-Dynamics 365 Commerce は、オムニチャネル ソリューションとして、[評価とレビュー](ratings-reviews-overview.md)を提供しています。 このソリューションにより、Commerce の外部からサービス API にアクセスして、さまざまなタスクを実行できます。 これらのタスクには、外部システムから Commerce への評価とレビューのインポート、および Commerce からの評価とレビューのエクスポートが含まれます。 Commerce が評価とレビューのサービス API を安全に呼び出すことができるようにするには、まずこのトピックの手順に従ってS2S 認証を構成する必要があります。
+Dynamics 365 Commerce は、オムニチャネル ソリューションとして、[評価とレビュー](ratings-reviews-overview.md)を提供しています。 このソリューションにより、Commerce の外部からサービス API にアクセスして、さまざまなタスクを実行できます。 これらのタスクには、外部システムから Commerce への評価とレビューのインポート、および Commerce からの評価とレビューのエクスポートが含まれます。 Commerce が評価とレビューのサービス API を安全に呼び出すことができるようにするには、まずこの記事の手順に従ってS2S 認証を構成する必要があります。
 
 ## <a name="add-a-new-app-registration"></a>新しいアプリ登録の追加
 

@@ -1,6 +1,6 @@
 ---
 title: グローバル源泉徴収税
-description: このトピックでは、グローバルな源泉徴収税機能とこの設定方法に関する情報を提供します。 グローバル源泉徴収税の機能は、仕入先トランザクションと顧客トランザクションに対して機能強化されており、源泉徴収税が品目レベルで計算されます。
+description: この記事では、グローバルな源泉徴収税機能とこの設定方法に関する情報を提供します。 グローバル源泉徴収税の機能は、仕入先トランザクションと顧客トランザクションに対して機能強化されており、源泉徴収税が品目レベルで計算されます。
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 9cb02ba77fa33c839bc2a74811131973d1e5877f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 49d5048b9df30e94d959cf9f22b8ae837b74abdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720226"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846831"
 ---
 # <a name="global-withholding-tax"></a>グローバル源泉徴収税
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、グローバルな源泉徴収税機能とこの設定方法について解説します。 この機能は、 バージョン 10.0.17 またはそれ以降で使用できます。
+この記事では、グローバルな源泉徴収税機能とこの設定方法について解説します。 この機能は、 バージョン 10.0.17 またはそれ以降で使用できます。
 
 グローバル源泉徴収税の機能は、仕入先トランザクションと顧客トランザクションに対して機能強化されており、源泉徴収税が品目レベルで計算されます。 購入取引による源泉徴収票の残高は、源泉徴収票の決済口座に対して源泉徴収票決済のジョブを実行することで決済できます。
 

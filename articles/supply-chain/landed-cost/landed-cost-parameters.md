@@ -1,6 +1,6 @@
 ---
 title: 陸揚原価パラメーターの設定
-description: このトピックでは、転記、状態の更新、番号順序、および動作用に陸揚原価モジュール全体で使用される一般情報および構成設定の設定方法について説明します。
+description: この記事では、転記、状態の更新、番号順序、および動作用に陸揚原価モジュール全体で使用される一般情報および構成設定の設定方法について説明します。
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7abe8f7f9ea98e7aedb6c9d8d2603b7782194b70
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690375"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871981"
 ---
 # <a name="landed-cost-parameters-setup"></a>陸揚原価パラメーターの設定
 

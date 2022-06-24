@@ -1,6 +1,6 @@
 ---
-title: 調整日シナリオ
-description: このトピックでは、調整日がサブスクリプション請求管理でどのように機能するかを示す例を示します。
+title: 調整日のシナリオ
+description: この記事では、調整日がサブスクリプション請求管理でどのように機能するかを示す例を示します。
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 91480fecd16cf8417722df73c28bbd81d029fb07
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 102e3a104be5be287f914172160e95aff65d0b18
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690476"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872618"
 ---
-# <a name="alignment-date-scenarios"></a>調整日シナリオ
+# <a name="alignment-date-scenarios"></a>調整日のシナリオ
 
-このトピックでは、調整日がサブスクリプション請求管理でどのように機能するかを示す例を示します。
+この記事では、調整日がサブスクリプション請求管理でどのように機能するかを示す例を示します。
 
 たとえば、請求スケジュールの請求詳細は 2019 年 10 月 31 日の調整日です。 明細行の最初の請求詳細は、2019 年 10 月 31 日に終了し、それに応じて計算されます。 明細行は、11 月 11 日の更新開始日を使用して、自動的に更新されます。
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0c5d7e8f9561ba81e0be93220df9afcd493179f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e9ba69f637087298bf6a93dbb049d78dff739aaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672489"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891150"
 ---
 # <a name="cost-management-home-page"></a>原価管理ホーム ページ
 
@@ -53,7 +53,7 @@ ms.locfileid: "8672489"
 
 #### <a name="white-paper"></a>ホワイト ペーパー
 
-[原価計算表を使用した BOM 計算](https://www.microsoft.com/download/details.aspx?id=101937) では、材料と製造を含む原価計算表を設定する方法と、その設定が BOM 計算の結果に及ぼす影響について説明しています。 トピックをより良く説明するため、さまざまな設定およびコンフィギュレーションの影響を示す、具体的なシナリオとデータを提供します。
+[原価計算表を使用した BOM 計算](https://www.microsoft.com/download/details.aspx?id=101937) では、材料と製造を含む原価計算表を設定する方法と、その設定が BOM 計算の結果に及ぼす影響について説明しています。 記事をより良く説明するため、さまざまな設定およびコンフィギュレーションの影響を示す、具体的なシナリオとデータを提供します。
 
 #### <a name="blogs"></a>ブログ
 

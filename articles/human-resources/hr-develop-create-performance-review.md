@@ -1,6 +1,6 @@
 ---
 title: 業績の確認の作成
-description: このトピックでは、パフォーマンス レビューの作成方法を説明し、レビューの各セクションの目的について説明します。
+description: この記事では、パフォーマンス レビューの作成方法を説明し、レビューの各セクションの目的について説明します。
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67a001926c0d5021d952f9b678ec128c68511a8f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ae2de087f4e345ba826ddbe8a65f917476bd6894
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696043"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872184"
 ---
 # <a name="create-performance-reviews"></a>業績の確認の作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "8696043"
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
-このトピックでは、パフォーマンス レビューの作成方法を説明し、レビューの各セクションの目的について説明します。 この手順は、デモ データ会社 USMF を使用して作成されました。
+この記事では、パフォーマンス レビューの作成方法を説明し、レビューの各セクションの目的について説明します。 この手順は、デモ データ会社 USMF を使用して作成されました。
 
 1. ホーム ページで、**従業員セルフ サービス** ワークスペースを選択します。
 2. **新しいレビュー** を選択して、新しいレビューを作成します。

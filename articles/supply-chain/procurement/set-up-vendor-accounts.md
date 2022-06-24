@@ -1,6 +1,6 @@
 ---
 title: 仕入れ先の設定
-description: このトピックでは、新しい仕入先を作成する際に指定する必要がある情報のタイプを説明します。
+description: この記事では、新しい仕入先を作成する際に指定する必要がある情報のタイプを説明します。
 author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d1ddf126305f39a35f61b9a98da1c6bce29372cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676977"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875278"
 ---
 # <a name="set-up-vendor-accounts"></a>仕入れ先の設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、新しい仕入先を作成する際に指定する必要がある情報のタイプを説明します。
+この記事では、新しい仕入先を作成する際に指定する必要がある情報のタイプを説明します。
 
 仕入先を作成する際に、仕入先に関する情報を入力します。 この情報は自動的にドキュメントへデータを入力する、および仕入先が関係する活動を追跡する際に使用されます。 たとえば、仕入先に関して次の情報をコンフィギュレーションできます:
 

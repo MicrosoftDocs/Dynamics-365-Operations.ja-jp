@@ -1,6 +1,6 @@
 ---
 title: システム主導の作業優先順位
-description: このトピックでは、システム主導の作業優先順位について説明します。 この機能により、システムが実行のためにユーザーに提示する作業指示書の並べ替えとフィルター処理を行うことができます。 これは、倉庫ピッキング プロセスを促進するための追加の基準が必要なシナリオで役立ちます。
+description: この記事では、システム主導の作業優先順位について説明します。 この機能により、システムが実行のためにユーザーに提示する作業指示書の並べ替えとフィルター処理を行うことができます。 これは、倉庫ピッキング プロセスを促進するための追加の基準が必要なシナリオで役立ちます。
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577819"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849129"
 ---
 # <a name="system-directed-work-sequencing"></a>システム主導の作業優先順位
 
@@ -44,7 +44,7 @@ ms.locfileid: "7577819"
 
 ### <a name="make-demo-data-available"></a>デモ データを有効化する
 
-このトピックで示されている値を使用してシナリオを実行するには、標準のデモ データがインストールされているシステムで作業する必要があります。 また、**USMF** 法人を選択する必要があります。 このシナリオでは、デモ データの倉庫 *51* を使用します。
+この記事で示されている値を使用してシナリオを実行するには、標準のデモ データがインストールされているシステムで作業する必要があります。 また、**USMF** 法人を選択する必要があります。 このシナリオでは、デモ データの倉庫 *51* を使用します。
 
 > [!IMPORTANT]
 > 注文を倉庫にリリースする前に、ピッキング場所に注文のすべての品目に十分な在庫があることを確認してください。

@@ -1,6 +1,6 @@
 ---
 title: 機能管理の概要
-description: このトピックでは、機能管理とその使用方法について説明します。
+description: この記事では、機能管理の機能および使用方法について説明します。
 author: Peakerbl
 ms.date: 01/10/2022
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0691bc34ac8b57d20cfbeb58b6a2e2a03a57d067
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068012"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850063"
 ---
 # <a name="feature-management-overview"></a>機能管理の概要
 
@@ -72,7 +72,7 @@ ms.locfileid: "8068012"
 
 ### <a name="on-by-default-features-optional"></a>既定でオンの機能 (オプション)
 
-**既定で有効** に更新されている機能は既定で有効になっていますが、無効にすることもできます。 無効にできる機能が **リリース済** の状態から 6 か月以上続いた後、次のメジャー リリースではこの状態に移行することが期待できます。 **既定で有効** に移行する機能については、そのリリースの[新機能](../whats-new-changed.md)トピックで伝えられることが期待されます。 更新は、所有する製品チームによって開始されます。
+**既定で有効** に更新されている機能は既定で有効になっていますが、無効にすることもできます。 無効にできる機能が **リリース済** の状態から 6 か月以上続いた後、次のメジャー リリースではこの状態に移行することが期待できます。 **既定で有効** に移行する機能については、そのリリースの [新機能](../whats-new-changed.md) 記事で伝えられることが期待されます。 更新は、所有する製品チームによって開始されます。
 
 > [!NOTE]
 > これらの機能は自動的に有効になるため、組織でこれらの機能を取得する準備ができているか、あるいはもう少し時間が必要なのかを判断することが重要です。 さらに時間が必要な場合は、これらの機能を一時的に無効にする必要があります。 なお、**既定で有効** 機能の移行は、通常、その機能が **必須** になることを目標とする前のメジャー リリースで行われます。 その時点では、機能を無効にするオプションはありません。 

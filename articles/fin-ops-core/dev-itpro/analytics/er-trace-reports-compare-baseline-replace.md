@@ -1,6 +1,6 @@
 ---
 title: 生成された ER レポートの結果をベースライン値と比較して追跡する機能の向上
-description: このトピックでは、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 (2019年6月) における ER ベースライン機能の改善について説明します。
+description: この記事では、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 (2019年6月) における ER ベースライン機能の改善について説明します。
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760753"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847404"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>生成された ER レポートの結果をベースライン値と比較して追跡する機能の向上
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、電子申告 (ER) フレームワークのベースライン機能に対して行われた最初の一連の改善について説明します。 これらの改善は、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 (2019 年 6 月) 以降 で利用できます。
+この記事では、電子申告 (ER) フレームワークのベースライン機能に対して行われた最初の一連の改善について説明します。 これらの改善は、Microsoft Dynamics 365 for Finance and Operations バージョン 10.0.3 (2019 年 6 月) 以降 で利用できます。
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>ベースライン ルールの設定の自動化
 
-[生成されたレポート結果をトレースして、ベースライン値と比較する](er-trace-reports-compare-baseline.md)トピックでは、 ER 形式の実行に関する情報を収集し、その実行結果を評価するように ER フレームワークを構成する方法について説明しています。 このトピックの例では、完了する必要があるステップを示します。
+[生成されたレポート結果をトレースして、ベースライン値と比較する](er-trace-reports-compare-baseline.md) 記事では、 ER 形式の実行に関する情報を収集し、その実行結果を評価するように ER フレームワークを構成する方法について説明しています。 この記事の例では、完了する必要があるステップを示します。
 
 次にステップの例を示します。
 
@@ -45,7 +45,7 @@ ms.locfileid: "6760753"
 
 ## <a name="example-automate-the-setting-of-baseline-rules"></a>例: ベースライン ルールの設定の自動化
 
-この例のステップを完了するには、最初に[生成されたレポート結果をトレースして、ベースライン値と比較する](er-trace-reports-compare-baseline.md) トピックの例のステップの「デザインされた ER 形式の新しいベースラインの追加」までを完了する必要があります。
+この例のステップを完了するには、最初に[生成されたレポート結果をトレースして、ベースライン値と比較する](er-trace-reports-compare-baseline.md) 記事の例のステップの "デザインされた ER 形式の新しいベースラインの追加" までを完了する必要があります。
 
 ### <a name="review-added-baseline"></a>追加したベースラインの確認
 
@@ -80,7 +80,7 @@ ms.locfileid: "6760753"
 
 ### <a name="run-the-format"></a>形式を実行する
 
-これで、[生成されたレポート結果をトレースして、ベースライン値と比較する](er-trace-reports-compare-baseline.md) トピックの例の「デザインされた ER 形式を実行して結果を分析するためのログを確認する」から始まる残りのステップを完了する準備が整いました。
+これで、[生成されたレポート結果をトレースして、ベースライン値と比較する](er-trace-reports-compare-baseline.md) 記事の例の "デザインされた ER 形式を実行して結果を分析するためのログを確認する" から始まる残りのステップを完了する準備が整いました。
 
 > [!NOTE]
 > 自動的に追加されたベースライン ルールを **ベースライン** クイックタブで削除しても、参照した添付ファイルが自動的に削除されることはありません。
@@ -91,7 +91,7 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 
 ## <a name="example-configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a>例: 常に変化する ER 出力の部分を無視するようにベースラインを構成する
 
-この例のステップを完了するには、最初に[生成されたレポート結果をトレースして、ベースライン値と比較する](er-trace-reports-compare-baseline.md) トピックの例のステップを完了する必要があります。
+この例のステップを完了するには、最初に [生成されたレポート結果をトレースして、ベースライン値と比較する](er-trace-reports-compare-baseline.md) 記事の例のステップを完了する必要があります。
 
 ### <a name="modify-a-configured-er-format"></a>構成された ER 形式の変更
 
@@ -142,7 +142,7 @@ ER 形式が、形式の実行時に変更される情報を含むように設�
 
 ### <a name="make-a-new-baseline-rule"></a>新しいベースライン ルールの作成
 
-このトピックで前述した「例: ベースライン ルールの設定の自動化」のステップに従ってください。 通知は、送信ファイルがベースライン設定を使用して生成されたこと、および形式バインドの強制的な置換が行われたことを警告します。
+この記事で前述した "例: ベースライン ルールの設定の自動化" のステップに従ってください。 通知は、送信ファイルがベースライン設定を使用して生成されたこと、および形式バインドの強制的な置換が行われたことを警告します。
 
 ![構成ページの通知。](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "構成ページの通知のスクリーンショット")
 

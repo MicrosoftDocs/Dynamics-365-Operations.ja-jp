@@ -1,6 +1,6 @@
 ---
 title: 標準原価の前提条件概要
-description: このトピックでは、標準原価を使用するための基本的な手順について説明します。
+description: この記事では、標準原価を使用するための基本的な手順について説明します。
 author: JennySong-SH
 ms.date: 07/25/2019
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cf37ae8d2cfa2a3f372e37eb66c22711e76dd59
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: bf02653b1d1a2cf5ed45f0fc6bd9affe098e7396
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672321"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895789"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>標準原価の前提条件概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、標準原価を使用するための基本的な手順について説明します。 次の手順は、会社の工程に依存します。 例えば、非製造環境、工順を使用しない製造環境、工順を使用する製造環境では手順が異なります。 
+この記事では、標準原価を使用するための基本的な手順について説明します。 次の手順は、会社の工程に依存します。 例えば、非製造環境、工順を使用しない製造環境、工順を使用する製造環境では手順が異なります。 
 
 標準原価を設定するには、次の手順に従います。
 
@@ -65,7 +65,7 @@ ms.locfileid: "8672321"
 既存の品目を標準原価在庫モデルに変更する顧客は、**標準原価換算** ページを使用する必要があります。
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [標準原価換算の概要](standard-cost-conversion-overview.md)
 

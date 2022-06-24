@@ -1,6 +1,6 @@
 ---
 title: モジュールで動作
-description: このトピックでは、Microsoft Dynamics 365 Commerce でモジュールを使用する時期と方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce でモジュールを使用する時期と方法について説明します。
 author: phinneyridge
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c393f1e619647795a5ae8da3a78500c1678da9f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860195"
 ---
 # <a name="work-with-modules"></a>モジュールで動作
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce でモジュールを使用する時期と方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce でモジュールを使用する時期と方法について説明します。
 
 モジュールは、ページ構造を構成する論理構成要素であり、さまざまな目的と範囲があります。 一部のモジュールは上位レベルのコンテナーであり、その唯一の目的は、他のモジュール (子モジュール) を保持して整理することです。 単純なイメージ配置モジュールなど、その他のモジュールには、特定の目的があります。 カルーセル モジュールなど、その他のモジュールは、これら 2 つのカテゴリの間に含まれます。
 
@@ -151,7 +151,7 @@ ms.locfileid: "6728267"
 
 1. ページ上のコンテナー モジュールを選択します (カルーセルや流動的なコンテナー モジュールなど)。
 1. 右側のプロパティ ウィンドウで、ヘッダーを選択して入れ子になったコントロールを展開し、必要なコントロール値を設定します。
-1. 左側のアウトライン ウィンドウで、コンテナーまたはコンテナー内のスロットいずれかの名前の横にある省略記号ボタンを選択し、**モジュールの追加** を選択します。 次に、選択したコンテナーに子モジュールを追加します。 詳細については、このトピックで前述した [モジュールの使用](#add-a-module) セクションを参照してください。
+1. 左側のアウトライン ウィンドウで、コンテナーまたはコンテナー内のスロットいずれかの名前の横にある省略記号ボタンを選択し、**モジュールの追加** を選択します。 次に、選択したコンテナーに子モジュールを追加します。 詳細については、この記事で前述した [モジュールの使用](#add-a-module) セクションを参照してください。
 1. 複数の子モジュールが親コンテナーで兄弟として存在する場合は、親コンテナーでの表示順序を変更できます。 モジュールの省略記号ボタンを選択し、上矢印ボタンと下矢印ボタンを使用します。
 
 ## <a name="additional-resources"></a>追加リソース

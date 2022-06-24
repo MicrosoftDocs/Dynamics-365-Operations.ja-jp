@@ -1,6 +1,6 @@
 ---
 title: 従業員の開発 Power BI コンテンツ
-description: このトピックでは、従業員の開発 Power BI コンテンツについて説明します。
+description: この記事では、従業員の開発 Power BI コンテンツについて説明します。
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 280053703a8afac15f0ae377e0d439a9bc9e918fb4c8413022cabad08431f3e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67fd3b5907cb52dc1f10d754e12316e21876e888
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776610"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850990"
 ---
 # <a name="employee-development-power-bi-content"></a>従業員の開発 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**従業員の開発** Microsoft Power BI コンテンツについて説明します。
+この記事では、**従業員の開発** Microsoft Power BI コンテンツについて説明します。
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Power BI コンテンツに含まれるレポート
 **従業員の開発** Power BI コンテンツに含まれるレポートには、追加情報を含むグラフとテーブルの両方があります。 次の表にレポートを示します。

@@ -1,6 +1,6 @@
 ---
 title: ER 電子メール送信先のタイプ
-description: このトピックでは、電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対して電子メール送信先を構成する方法について説明します。
+description: この記事では、電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対して電子メール送信先を構成する方法について説明します。
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 08d64b0f21e4957727de1e8f5f13f9067c0fbc7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324011"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845660"
 ---
 # <a name="email-er-destination-type"></a>ER 電子メール送信先のタイプ
 
@@ -162,7 +162,7 @@ ER 形式の **フォルダー** または **ファイル** コンポーネン�
 
 [![送信ドキュメントを生成する ER 形式の構造。](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
-次の図は、このトピックで説明されているように、個々のコンポーネントをグループ化し、新しいグループの **電子メール** の送信先を有効にして、適切な顧客の請求書と共に督促状が電子メールの添付ファイルとして送信されるプロセスを示しています。
+次の図は、この記事で説明されているように、個々のコンポーネントをグループ化し、新しいグループの **電子メール** の送信先を有効にして、適切な顧客の請求書と共に督促状が電子メールの添付ファイルとして送信されるプロセスを示しています。
 
 [![個々のコンポーネントのグループ化と電子メールの送信先の有効化。](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 

@@ -1,6 +1,6 @@
 ---
 title: 注文検索モジュール
-description: このトピックでは、注文検索モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+description: この記事では、注文検索モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: stuharg
 ms.date: 09/01/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 0ae5c8a2eea84a9aa707f7c2f6f29950f2f48faa
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c83463d9a0ece9605b0d22bee2a1c76057c8ed05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869433"
 ---
 # <a name="order-lookup-module"></a>注文検索モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、注文検索モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+この記事では、注文検索モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 
 注文検索モジュールは、顧客が e コマース サイトで行った注文を検索するのに使用できるフォームを提供します。 これは、[ゲスト チェックアウトの注文の検索を有効にする](order-lookup-guest.md)の一部として使用されます。 注文検索モジュールは、e コマース サイト、小売販売時点管理 (POS)、またはコール センターから送信された注文を検索するために使用できます。 このフォームは、ゲスト ユーザーと登録ユーザーのどちらから送信された注文も取得できます。
 

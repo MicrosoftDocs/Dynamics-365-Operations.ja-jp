@@ -1,6 +1,6 @@
 ---
 title: RFQ の封緘入札
-description: このトピックでは、購入担当者が開封するまで仕入先の入札応答を秘密にしておくために、封緘された入札を設定する方法について説明します。
+description: この記事では、購入担当者が開封するまで仕入先の入札応答を秘密にしておくために、封緘された入札を設定する方法について説明します。
 author: GalynaFedorova
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dfc19646d6724627c8a25bcfc8a6b2a70a73c261
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40f1735d7efa5131b1462963758b6b48eec78fea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675152"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890889"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>RFQ の封緘入札
 
@@ -148,7 +148,7 @@ Key Vault は、仕入先が仕入先コラボレーション インターフェ
 封緘された入札の RFQ ケースには、*封緘済* の **入札タイプ** 値がある必要があります。 この値を RFQ ケースに割り当てるには、次の 3 つの方法があります:
 
 - 作成後、RFQ ケースに直接値を設定します。
-- 調達パラメータのすべての RFQ ケースに対する既定の入札タイプとして封緘された入札を定義します。 (このトピックの前述の[既定の入札タイプの設定](#set-default-bid-type) セクションを参照してください。)
+- 調達パラメータのすべての RFQ ケースに対する既定の入札タイプとして封緘された入札を定義します。 (この記事で前述した [既定の入札タイプの設定](#set-default-bid-type) セクションを参照してください。)
 - 新しい RFQ ケースを作成する場合は、封緘された入札に対して設定された入札タイプを選択します。 ([既定の入札タイプの設定](#set-default-bid-type) セクションを参照してください。)
 
 封緘された入札の場合、RFQ ケースの **有効期限日時** の値は、送信された入札を開封できる時を確立します。 各明細行の **有効期限日時** の値は、ヘッダーの値と一致します。

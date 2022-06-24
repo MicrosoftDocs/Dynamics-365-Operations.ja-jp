@@ -1,6 +1,6 @@
 ---
 title: Commerce チャネルの会計統合の概要
-description: このトピックでは、Dynamics 365 Commerce で使用できる会計統合の機能の概要を提供します。
+description: この記事では、Dynamics 365 Commerce で使用できる会計統合の機能の概要を提供します。
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 00c68155088ff2aabbe2fe0c4f431b665aebcd0a
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: ea1de0791a0eaffa2a8b1ac57143bdfd753f855b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884847"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Commerce チャネルの会計統合の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Dynamics 365 Commerce で使用できる会計統合の機能についての概要です。 
+この記事は、Dynamics 365 Commerce で使用できる会計統合の機能についての概要です。 
 
 会計統合には、小売業界での税金の詐欺防止を目的とした地方の会計法に従って、販売の会計登録を可能にするさまざまな会計デバイスおよびサービスとの統合が含まれます。 会計統合を使用してカバーすることができる典型的なシナリオを以下に示します:
 

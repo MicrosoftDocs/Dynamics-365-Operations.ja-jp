@@ -1,6 +1,6 @@
 ---
 title: エンジニアリング変更管理の共通の値の設定
-description: このトピックでは、エンジニアリングの変更管理のさまざまな部分のパラメータに使用される共通の値を設定する方法について説明します。
+description: この記事では、エンジニアリングの変更管理のさまざまな部分のパラメータに使用される共通の値を設定する方法について説明します。
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c2ff21490dc71859d75923dd757e264096d4fcba
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 376e3f209109d36e5a18b11d81afc55ba509e3e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565930"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852537"
 ---
 # <a name="establish-common-values-for-engineering-change-management"></a>エンジニアリング変更管理の共通の値の設定
 

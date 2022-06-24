@@ -1,6 +1,6 @@
 ---
 title: オンプレミス配置のホーム ページ
-description: このトピックでは、オンプレミス配置に関するコンテンツへのリンクと情報を提供します。
+description: この記事では、オンプレミス配置に関するコンテンツへのリンクと情報を提供します。
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566042"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867415"
 ---
 # <a name="on-premises-deployment-home-page"></a>オンプレミス配置のホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance + Operations (on-premises) を展開できます。 オンプレミスの配置タイプを選択すると、システム要件、ハードウェアのサイジング、および機能がクラウド展開と異なります。 このトピックでは、オンプレミス展開に固有の情報を含むコンテンツへのリンクを提供します。
+Dynamics 365 Finance + Operations (on-premises) を展開できます。 オンプレミスの配置タイプを選択すると、システム要件、ハードウェアのサイジング、および機能がクラウド展開と異なります。 この記事では、オンプレミス展開に固有の情報を含むコンテンツへのリンクを提供します。
 
 ## <a name="get-started"></a>はじめに
 - [オンプレミス配置の概要](on-premises-overview.md)

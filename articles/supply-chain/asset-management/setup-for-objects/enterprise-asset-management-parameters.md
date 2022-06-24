@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1659fd3b4c173ffe09f245631309d329bba5b1bd
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105492"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870814"
 ---
 # <a name="asset-management-parameters"></a>資産管理パラメーター
 
 [!include [banner](../../includes/banner.md)]
 
-資産管理では、資産、ワーク オーダー、およびワーク オーダーのスケジューリングに関連する一般的なパラメーターを設定する必要があります。 このトピックでは、それらを設定する方法について説明します。 **資産管理** > **設定** > **資産管理パラメーター** を選択し、ページを開きます。
+資産管理では、資産、ワーク オーダー、およびワーク オーダーのスケジューリングに関連する一般的なパラメーターを設定する必要があります。 この記事では、それらを設定する方法について説明します。 **資産管理** > **設定** > **資産管理パラメーター** を選択し、ページを開きます。
 
 > [!NOTE]
 > 資産管理機能をテストするためのデモ データを含むシステムを設定する場合は、[デモ環境を配置する](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) を参照してください。

@@ -1,6 +1,6 @@
 ---
 title: 支払額タイプの追加
-description: このトピックでは、資産リースで支払額タイプを設定する方法について説明します。
+description: この記事では、資産リースで支払額タイプを設定する方法について説明します。
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 037afa458277a3a07bcb937c6ec4d961d0dd5ca9
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 03fc903e6cfe78ef2fed7e3a0744a8f809f6892d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968324"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891612"
 ---
 # <a name="add-payment-amount-types"></a>支払額タイプの追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、資産リースで支払額タイプを設定する方法について説明します。 これにより、支払スケジュール明細行に総額を追加する代わりに、リース支払額を明細化できます。
+この記事では、資産リースで支払額タイプを設定する方法について説明します。 これにより、支払スケジュール明細行に総額を追加する代わりに、リース支払額を明細化できます。
 
 支払額タイプを追加するには、次の手順に従います。
 

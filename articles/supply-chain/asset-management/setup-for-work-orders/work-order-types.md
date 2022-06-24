@@ -1,6 +1,6 @@
 ---
-title: 作業指示書タイプ
-description: このトピックでは、資産管理における作業指示書タイプについて説明します。
+title: ワーク オーダー タイプ
+description: この記事では、資産管理における作業指示書タイプについて説明します。
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d77effbfe329a449318d6942918245917f22cdc23defadcb5e85f02c6c786f6d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 12745960f903ebc14208f2c8a01f076ed27a38d3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754731"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891179"
 ---
-# <a name="work-order-types"></a>作業指示書タイプ
+# <a name="work-order-types"></a>ワーク オーダー タイプ
 
 [!include [banner](../../includes/banner.md)]
 

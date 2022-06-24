@@ -1,6 +1,6 @@
 ---
-title: クロスチャンネル共有の有効化と使用
-description: このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのクロスチャンネル共有機能を有効にし、使用する方法について説明します。
+title: クロスチャネル共有の有効化と使用
+description: この記事では、Microsoft Dynamics 365 Commerce サイト ビルダーのクロスチャンネル共有機能を有効にし、使用する方法について説明します。
 author: psimolin
 ms.date: 10/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 637149c088cb87301018868e680537eb58b17852
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742419"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866007"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>クロスチャネル共有の有効化と使用
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce サイト ビルダーのクロスチャンネル共有機能を有効にし、使用する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce サイト ビルダーのクロスチャンネル共有機能を有効にし、使用する方法について説明します。
 
 クロスチャンネル共有により、小売業者はサイトの複数のチャンネル間でコンテンツを再利用し、共有することができます。 この機能は、サイトチャンネルに互換性のある基本言語が設定されている場合や、多数のコンテンツ項目が共通である場合に役立ちます。
 

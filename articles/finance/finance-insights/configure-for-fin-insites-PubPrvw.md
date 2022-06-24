@@ -1,6 +1,6 @@
 ---
 title: Finance Insights の構成 - バージョン 10.0.20 以降
-description: このトピックでは、バージョン 10.0.20 以降の Finance Insights で利用可能な機能を使用するために、システムを設定する方法について説明します。
+description: この記事では、バージョン 10.0.20 以降の Finance Insights で利用可能な機能を使用するために、システムを設定する方法について説明します。
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 61cc002395ac3bc946fa03a04833a7b6d4820194
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e6b9c34ee68a25ac9613a65cf63443751a39c576
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868521"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Finance Insights の構成 - バージョン 10.0.20 以降
 
@@ -29,10 +29,10 @@ ms.locfileid: "8711607"
 
 
 
-Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、組織に強力な予測ツールを提供します。 このトピックでは、Dynamics 365 Finance のバージョン 10.0.20 を設定して、システムが Finance Insights で利用可能な機能を使用できるようにする方法について説明します。
+Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、組織に強力な予測ツールを提供します。 この記事では、Dynamics 365 Finance のバージョン 10.0.20 を設定して、システムが Finance Insights で利用可能な機能を使用できるようにする方法について説明します。
 
 > [!NOTE]
-> このトピックで説明する構成手順は、Finance のバージョン 10.0.20 以降にのみ適用されます。 バージョン 10.0.19 およびそれ以前で Finance Insights を設定するには、[Finance Insights の構成 - バージョン 10.0.19 まで](configure-for-fin-insites.md)を参照してください。
+> この記事で説明する構成手順は、Finance のバージョン 10.0.20 以降にのみ適用されます。 バージョン 10.0.19 およびそれ以前で Finance Insights を設定するには、[Finance Insights の構成 - バージョン 10.0.19 まで](configure-for-fin-insites.md)を参照してください。
 
 ## <a name="deploy-finance"></a>Finance のデプロイ
 

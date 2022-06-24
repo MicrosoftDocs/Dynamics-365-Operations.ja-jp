@@ -1,6 +1,6 @@
 ---
 title: Dataverse 同期のリセット
-description: このトピックでは、Microsoft Dynamics 365 Human Resources と Microsoft Dataverse のヒューマン キャピタル マネージメント (HCM) の共通のソリューションとの間でレコードが正しく同期されない場合のトラブルシューティングについて説明します。
+description: この記事では、Microsoft Dynamics 365 Human Resources と Microsoft Dataverse のヒューマン キャピタル マネージメント (HCM) の共通のソリューションとの間でレコードが正しく同期されない場合のトラブルシューティングについて説明します。
 author: jaredha
 ms.date: 09/27/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-09-27
 ms.dyn365.ops.version: Platform update 42
-ms.openlocfilehash: 8bfcd51b023c02590919155abbb836326408d298
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b69390538fa28e18e5abf8aef548d67b6afb8496
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696238"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895992"
 ---
 # <a name="reset-dataverse-synchronization"></a>Dataverse 同期のリセット
 

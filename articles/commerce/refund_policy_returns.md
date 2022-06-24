@@ -1,6 +1,6 @@
 ---
-title: チャネルの返品と払戻のポリシーを作成および更新する
-description: このトピックでは、チャネルに対する返品と払戻のポリシーを設定する方法について説明します。
+title: チャネルの返品と払戻のポリシーの作成および更新
+description: この記事では、チャネルに対する返品と払戻のポリシーを設定する方法について説明します。
 author: ShalabhjainMSFT
 ms.date: 07/13/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
-ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
+ms.openlocfilehash: 54dd19134aea68f73de51086fbaa096961447b62
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7388936"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873307"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>チャネルの返品と払戻のポリシーを作成および更新する
 
@@ -27,7 +27,7 @@ ms.locfileid: "7388936"
 
 Dynamics 365 Commerce のチャネルの返品ポリシーでは、小売業者は、販売時点管理 (POS) デバイスの返品の処理のために支払業者が許可される適用を設定できます。  
 
-このトピックでは、チャネルに対する返品と払戻のポリシーを設定する手順について説明します。
+この記事では、チャネルに対する返品と払戻のポリシーを設定する手順について説明します。
 
 ポリシーの範囲は、チャネルに対して許可される支払業者を設定することに制限されています。 "許可済"リストは、購入に使用される支払方法に基づきます。 例:
 

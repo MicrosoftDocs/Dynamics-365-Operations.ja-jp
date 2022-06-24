@@ -1,6 +1,6 @@
 ---
-title: 登録適格性の処理
-description: このトピックでは、登録適格性のプロセスを実行する方法について説明します。
+title: 登録の適格性を処理
+description: この記事では、登録資格のプロセスを実行する方法について説明します。
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78a7de6dbb8d8ed13392eb7eb9aa02b15db2e009
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c01d7a6f456514fc9da1889ccaff5af1ae7c0f52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693174"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877746"
 ---
-# <a name="process-enrollment-eligibility"></a>登録適格性の処理
+# <a name="process-enrollment-eligibility"></a>登録の適格性を処理
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、登録適格性のプロセスを実行する方法について説明します。
+この記事では、登録資格のプロセスを実行する方法について説明します。
 
 1. **給付金管理** ワークスペースにて、**処理** の下の **登録適格性の処理** を選択します。
 
@@ -55,7 +55,7 @@ ms.locfileid: "8693174"
 
 ## <a name="view-process-results"></a>プロセス結果の表示
 
-このトピックでは、適格性のプロセス結果を表示する方法について説明します。
+この記事では、適格性処理の結果を表示する方法について説明します。
 
 1.  **福利厚生の管理** ワークスペースの **処理中** で **プロセス結果** を選択します。
 

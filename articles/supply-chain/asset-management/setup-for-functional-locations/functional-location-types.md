@@ -1,6 +1,6 @@
 ---
-title: 機能的な場所のタイプ
-description: このトピックでは、資産管理で機能的な場所のタイプを作成する方法について説明します。
+title: 機能の場所タイプ
+description: この記事では、資産管理で機能的な場所のタイプを作成する方法について説明します。
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301dc838ed204ebe488dd167df75fc84131f235f64285c6ae99c62ee1188362c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879224"
 ---
-# <a name="functional-location-types"></a>機能的な場所のタイプ
+# <a name="functional-location-types"></a>機能の場所タイプ
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-このトピックでは、資産管理で機能的な場所のタイプを作成する方法について説明します。 機能的な場所のタイプは、機能的な場所への資産の導入方法など、機能的な場所の要件を管理するために使用されます。 特定の機能的な場所のタイプを使用する機能的な場所で使用するための資産タイプ、メンテナンス計画、機能的な場所の属性、および資産属性要件を設定することができます。 機能的な場所を作成する場合、機能的な場所のタイプは必須です。
+この記事では、資産管理で機能的な場所のタイプを作成する方法について説明します。 機能的な場所のタイプは、機能的な場所への資産の導入方法など、機能的な場所の要件を管理するために使用されます。 特定の機能的な場所のタイプを使用する機能的な場所で使用するための資産タイプ、メンテナンス計画、機能的な場所の属性、および資産属性要件を設定することができます。 機能的な場所を作成する場合、機能的な場所のタイプは必須です。
 
 >[!NOTE] 
 >機能的な場所を操作するには、新しい資産の作成のみを目的として使用する既定の機能的な場所を作成する必要があります。 その既定の機能的な場所については、非常に簡易で、複数の資産を既定の機能的な場所にインストールできるタイプを作成する必要があります。 機能的な場所の設定方法の詳細については、[機能的な場所の作成](../functional-locations/create-functional-locations.md) を参照してください。

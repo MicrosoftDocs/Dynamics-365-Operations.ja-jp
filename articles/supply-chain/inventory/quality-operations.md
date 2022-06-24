@@ -1,6 +1,6 @@
 ---
 title: 不適合の工程
-description: このトピックでは、不適合の工程を作成および使用する方法について説明します。
+description: この記事では、不適合の工程を作成および使用する方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35619454af8b1cb1b7d383d393362f58d9dd0ea6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d2e63156dd2b230da7f1ea89e2c2006c1b4f3eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573876"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847994"
 ---
 # <a name="operations-for-nonconformances"></a>不適合の工程
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、不適合の工程を作成および使用する方法について説明します。
+この記事では、不適合の工程を作成および使用する方法について説明します。
 
 **工程** ページを使用して、承認済の不適合に対して実行される作業の分類を定義します。 関連する工程を不適合に割り当てるときに、関連する材料、労働時間、諸経費など、その工程を実行するために必要な詳細を指定できます。 システムはこの情報を使用して、工程の見積原価を計算します。 詳細情報および見積原価は、参考目的で提供されます。 品質に関連する工程は、生産工順に対して定義できる工程とは異なります。
 

@@ -1,6 +1,6 @@
 ---
 title: 製品ライフサイクルの状態とトランザクション
-description: このトピックでは、エンジニアリング製品がライフサイクルを通過するときに、ライフサイクル状態ごとに許可されるトランザクションを制御する方法について説明します。
+description: この記事では、エンジニアリング製品がライフサイクルを通過するときに、ライフサイクル状態ごとに許可されるトランザクションを制御する方法について説明します。
 author: t-benebo
 ms.date: 02/17/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
-ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
+ms.openlocfilehash: dd9155f799c66e8297b93d8ffbeeced1acd14220
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8322747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867959"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>製品ライフサイクルの状態とトランザクション
 
@@ -37,7 +37,7 @@ ms.locfileid: "8322747"
 - 既存の製品ライフサイクルの状態を削除するには、リスト ペインでルールセットを選択し、アクション ペインで **削除** を選択します。
 
 > [!NOTE]
-> エンジニアリング製品では、標準 (非エンジニアリング) 製品と同じ製品ライフサイクルの状態を使用します。 このトピックで説明されている **製品ライフサイクルの状態** ページを開くには、**製品情報管理 \> 設定 \>製品ライフサイクルの状態** を参照することもできます。 製品ライフサイクルの状態の詳細については、エンジニアリング製品と標準製品の両方について、[製品ライフサイクルの状態の概要](../pim/product-lifecycle.md)を参照してください。
+> エンジニアリング製品では、標準 (非エンジニアリング) 製品と同じ製品ライフサイクルの状態を使用します。 この記事で説明されている **製品ライフサイクルの状態** ページは、**製品情報管理 \> 設定 \>製品ライフサイクルの状態** からも開くことができます。 製品ライフサイクルの状態の詳細については、エンジニアリング製品と標準製品の両方について、[製品ライフサイクルの状態の概要](../pim/product-lifecycle.md)を参照してください。
 
 ### <a name="header"></a>表題
 

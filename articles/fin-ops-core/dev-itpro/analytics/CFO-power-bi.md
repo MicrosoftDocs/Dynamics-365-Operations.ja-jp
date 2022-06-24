@@ -1,6 +1,6 @@
 ---
 title: CFO 概要 Power BI コンテンツ
-description: このトピックでは、CFO 概要 Microsoft Power BI コンテンツについて説明します。
+description: この記事では、CFO 概要 Microsoft Power BI コンテンツについて説明します。
 author: kweekley
 ms.date: 08/24/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3eab89d55ec90f3b5937773502430bf317e491ae
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 1ea8f12102cc2fac1948027f7c15d45bf5d1b15d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416207"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881554"
 ---
 # <a name="cfo-overview-power-bi-content"></a>CFO 概要 Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)] 
 
-このトピックでは、**CFO 概要** Microsoft Power BI コンテンツについて説明します。 この Power BI コンテンツは、Microsoft Dynamics 365 for Finance and Operations バージョン 7.2 を使い適用されます。 バージョン 7.3 またはそれ以降を使用している場合は、[財務インサイト](financial-insights.md)を参照してください。
+この記事では、**CFO 概要** Microsoft Power BI コンテンツについて説明します。 この Power BI コンテンツは、Microsoft Dynamics 365 for Finance and Operations バージョン 7.2 を使い適用されます。 バージョン 7.3 またはそれ以降を使用している場合は、[財務インサイト](financial-insights.md)を参照してください。
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI コンテンツへのアクセス
 

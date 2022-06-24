@@ -1,6 +1,6 @@
 ---
 title: ER プリンター送信先のタイプ
-description: このトピックでは、電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対してプリンター出力先を構成する方法について説明します。
+description: この記事では、電子申告 (ER) 形式の各フォルダーまたはファイル コンポーネントに対してプリンター出力先を構成する方法について説明します。
 author: NickSelin
 ms.date: 02/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 826455d0901a45ef26755fd323ee2a2737b5eec0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388291"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845573"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>プリンター出力先
 

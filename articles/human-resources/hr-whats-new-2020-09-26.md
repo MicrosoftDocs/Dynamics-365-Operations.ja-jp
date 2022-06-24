@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能および変更された機能 2020 年 9 月 26 日
-description: このトピックでは、2020 年 9 月 26 日の Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: この記事では、2020 年 9 月 26 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: jcart1106
 ms.date: 09/26/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8b0260c4d1bafe271a08336ceed7dc3742f1d590
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 1b7a89ae8a2132c8548d9451aa235d1bccb88809
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874249"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 2020 年 9 月 26 日
 
@@ -27,7 +27,7 @@ ms.locfileid: "8061387"
 
 
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
 新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2020 リリース ウェーブ 2 の概要](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
 
@@ -46,9 +46,9 @@ ms.locfileid: "8061387"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックが更新される場合があります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事が更新される場合があります。
 
-| 問題の番号 | 出庫 | 説明 |
+| 問題の番号 | 問題 | Description |
 | --- | --- | --- |
 | 469495 | 既定の財務分析コード グリッドとダイアログ ボックスの更新 | 財務分析コード グリッドとダイアログ ボックスは、Human Resources 全体で更新されます。 |
 | 474887 | 休暇申請作業項目が手動決定で誤ったリンクを開く | ワークフロー コンフィギュレーションに手動決定が含まれている場合、**自分自身に割り当てられた作業項目** から休暇申請に移動すると、誤ったリンクが開き、手動決定用に割り当てられたものではなく、現在のユーザーによって作成された空白のフォームまたは休暇申請が表示されます。 |

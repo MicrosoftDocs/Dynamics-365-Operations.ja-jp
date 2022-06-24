@@ -1,6 +1,6 @@
 ---
 title: 小売チャネルの設定
-description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいチャネルを作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce に新しい小売チャネルを作成する方法について説明します。
 author: samjarawan
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 74a4f0f61e0bbfd73d0006d3cf45863af6fef18f
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: eccbbff33ddf967b000940a8ea9910c34232431f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770224"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847735"
 ---
 # <a name="set-up-a-retail-channel"></a>小売チャネルの設定
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce に新しいチャネルを作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce に新しい小売チャネルを作成する方法について説明します。
 
 Dynamics 365 Commerce は複数の小売チャンネルをサポートします。 これらの小売チャンネルには、オンライン ストア、コール センター、および小売用店舗 (従来型の店舗とも呼ばれる) が含まれます。 各小売店舗チャネルは、独自の支払方法、価格グループ、POS レジスタ、収入/経費勘定、およびスタッフを持つことができます。 小売店舗チャネルを作成する前に、これらのすべての要素を設定する必要があります。 
 

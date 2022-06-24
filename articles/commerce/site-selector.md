@@ -1,6 +1,6 @@
 ---
 title: サイト ピッカー モジュール
-description: このトピックでは、サイト ピッカー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: この記事では、サイト ピッカー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 ms.date: 05/04/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: a1954f6b2fea35d5138218e6a2a23ab1fd04c8fc
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ef7753658f878fdf76c6a6beb82ce54e9c12e212
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710306"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884606"
 ---
 # <a name="site-picker-module"></a>サイト ピッカー モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、サイト ピッカー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+この記事では、サイト ピッカー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
 市場、地域、およびロケールにまたがってサイトが異なる場合は、サイトのユーザーがサイト間を移動したり、使用する買い物サイトを選択したりするための簡単な方法が必要です。 このシナリオに対応するために、サイト ピッカー モジュールを使用すると、ユーザーは複数のサイトにまたがって閲覧できます。 サイト ピッカーは、電子コマース サイトに対して [地域検出とリダイレクト](geo-detection-redirection.md) が実装されている場合にも推奨されます。そのため、[顧客は国/地域のピッカー](country-region-picker-module.md) モジュールを使用して指定したサイトの設定を上書きできます。 
 

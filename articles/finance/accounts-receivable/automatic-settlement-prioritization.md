@@ -1,6 +1,6 @@
 ---
 title: 自動決済と優先順位付け
-description: このトピックは、[売掛金勘定パラメーター] ページの [自動決済] を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。
+description: この記事は、売掛金勘定パラメーター ページの 自動決済 を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47ccdb49b4d5c43b4f9cb9a967bd30376474e4c1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: bd5b894c82beb1b5d69ad6bf485161ab9c91a806
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712261"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855523"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>自動決済と優先順位付け
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、[売掛金勘定パラメーター] ページの [自動決済] を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。
+この記事は、売掛金勘定パラメーター ページの 自動決済 を選択した場合にトランザクションが決済される方法について説明します。 自動決済を支払の優先順位と組み合わせた使用方法も説明します。
 
 請求書や他のトランザクションの支払を決済する場合、2 種類のオプションがあります。 決済するトランザクションを手動で選択するか、システムにより、自動決済機能を使用してトランザクションを自動的に選択します。 また、**決済の優先順位付け** オプションを使用すると、自動決済の処理方法をカスタマイズできます。 これらのオプションは、すべて **売掛金勘定パラメーター** ページで定義された決済パラメーターの一部です。 トランザクションが自動的に決済される方法は、自動決済に使用する方法によって異なる場合があります。 次の方法を選択できます。
 

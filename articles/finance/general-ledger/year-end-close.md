@@ -1,6 +1,6 @@
 ---
 title: 年度末決算
-description: このトピックでは、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。
+description: この記事では、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。
 author: kweekley
 ms.date: 12/06/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 247c3286124da946937c8afd248a275e5a745044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725236"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883216"
 ---
 # <a name="year-end-close"></a>年度末決算
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。
+この記事では、一般会計の年度末決算処理を実行するために必要な設定と手順について説明します。
 
 会計年度末には、新しい年に開始残高を転送するために年度末決算処理を実行する必要があります。 ほとんどの組織は年度末決算処理を複数回実行します。 最初の実行では、残高を新しい会計年度に移動します。 その後、このプロセスを必要な回数だけ再実行して、残高を調整エントリから新しい会計年度に移動できます。
 

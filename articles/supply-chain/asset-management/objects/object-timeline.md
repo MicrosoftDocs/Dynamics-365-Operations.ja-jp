@@ -1,6 +1,6 @@
 ---
-title: 資産イベントの履歴
-description: このトピックでは、資産管理で資産イベントの履歴にアクセスする方法について説明します。
+title: 資産イベント履歴
+description: この記事では、資産管理で資産イベントの履歴にアクセスする方法について説明します。
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670fa5800efad99d913e96dee8c6883f150b86d2227143dbdf392c7b380e89a6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 63045cf2fc493144897b8a857f615105f6d7b50f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750175"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865298"
 ---
-# <a name="asset-event-history"></a>資産イベントの履歴
+# <a name="asset-event-history"></a>資産イベント履歴
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-このトピックでは、資産管理で資産イベントの履歴にアクセスする方法について説明します。 **資産イベントの履歴** ページには、資産の有効期間中に作成された登録履歴が表示されます。 このページには、**全資産**、**有効な資産**、および **個人用の有効な資産** メニュー項目からアクセスできます。 資産を選択し、**イベントの履歴** を選択します。
+この記事では、資産管理で資産イベントの履歴にアクセスする方法について説明します。 **資産イベントの履歴** ページには、資産の有効期間中に作成された登録履歴が表示されます。 このページには、**全資産**、**有効な資産**、および **個人用の有効な資産** メニュー項目からアクセスできます。 資産を選択し、**イベントの履歴** を選択します。
 
 **資産イベントの履歴** ページの **詳細** クイック タブで、利用可能なすべての情報を検索できます。 たとえば、資産イベントの履歴を使用して、次の情報を検索できます。
 

@@ -1,6 +1,6 @@
 ---
 title: 販売促進エンティティの並べ替え順序の変更
-description: このトピックでは、Dynamics 365 Commerce で、販売促進に関連したさまざまなエンティティに対する表示順序の制御に関連する概念について説明します。
+description: この記事では、Dynamics 365 Commerce で、販売促進に関連したさまざまなエンティティに対する表示順序の制御に関連する概念について説明します。
 author: josaw1
 ms.date: 08/05/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 444f1ebd99cf8443181a51d93a48b6b4d1addf4d
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 4e7a7bd42b0ef72ae6bc3f52a8857602b6282907
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779545"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847657"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>販売促進エンティティの並べ替え順序の変更
 
@@ -29,7 +29,7 @@ ms.locfileid: "7779545"
 
 小売業者は、製品の検出を、すべてのチャネルでの顧客とのやり取りにおける主要なツールと考えています。 さまざまな機能により、顧客が製品を簡単に検索できるようになります。 たとえば、カテゴリ、検索、およびフィルターを参照できます。
 
-このトピックでは、 販売促進に関連したさまざまなエンティティに対する表示順序の制御に関連する概念について説明します。 また、並べ替え順序を変更する方法についても説明します。
+この記事では、販売促進に関連したさまざまなエンティティに対する表示順序の制御に関連する概念について説明します。 また、並べ替え順序を変更する方法についても説明します。
 
 ## <a name="overview"></a>概要
 

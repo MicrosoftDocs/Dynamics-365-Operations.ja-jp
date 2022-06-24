@@ -1,6 +1,6 @@
 ---
 title: ER コンフィギュレーションを使用したアプリケーション メタデータへのアクセス
-description: このトピックでは、Regulatory Configuration Service のユーザーが、メタデータを使用して、新しい電子申告モデル マッピングをデザインする方法について説明します。
+description: この記事では、Regulatory Configuration Service のユーザーが、メタデータを使用して、新しい電子申告モデル マッピングをデザインする方法について説明します。
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ad175f81edcf6b21927d85927c42a3398a0286b4a766e06c88a61952384f75e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76e31e08cafb06cb2e8508c29f6e03d2559ebeb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883657"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>ER コンフィギュレーションを使用したアプリケーション メタデータへのアクセス
 
 [!include [banner](../../includes/banner.md)]
 
-次の手順では、システム管理者または電子申告開発者ロールの Regulatory configuration service (RCS) ユーザーが、 アプリケーションのメタデータを使用して、電子申告 (ER) モデルのマッピングをデザインする方法を説明します。 アプリケーション メタデータには、対外貿易トランザクションにアクセスするためのサンプル メタデータ セットを含む ER メタデータ コンフィギュレーションを使用してアクセスされます。 これらの手順を完了するには、RCS で最初に[コンフィギュレーション プロバイダーを作成して有効とマークする](er-configuration-provider-mark-it-active-2016-11.md)のトピックにある手順を実行する必要があります。 次に、トピック [RCS で使用するアプリケーション メタデータの準備](prepare-application-metadata-rcs.md)の手順を完了します。
+次の手順では、システム管理者または電子申告開発者ロールの Regulatory configuration service (RCS) ユーザーが、 アプリケーションのメタデータを使用して、電子申告 (ER) モデルのマッピングをデザインする方法を説明します。 アプリケーション メタデータには、対外貿易トランザクションにアクセスするためのサンプル メタデータ セットを含む ER メタデータ コンフィギュレーションを使用してアクセスされます。 これらの手順を完了するには、RCS で最初に[コンフィギュレーション プロバイダーを作成して有効とマークする](er-configuration-provider-mark-it-active-2016-11.md)の記事にある手順を実行する必要があります。 次に、記事 [RCS で使用するアプリケーション メタデータの準備](prepare-application-metadata-rcs.md)の手順を完了します。
 
 ## <a name="prerequisites"></a>必要条件
 1. **すべてのワークスペース** > **電子申告** の順に移動します。 

@@ -1,6 +1,6 @@
 ---
 title: BOM デザイナーの機能
-description: このトピックは、[BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。
+description: この記事は、BOM デザイナー ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c068e7f5f4f36663766e21e14cf8e75cf1442f50
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fda2b1d835afdcf06a50528748861fecc6792f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577987"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844211"
 ---
 # <a name="bom-designer-functionality"></a>BOM デザイナーの機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、[BOM デザイナ] ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。 [設定] をクリックすると、さまざまなコンフィギュレーションの選択や、ツリーの行に表示する情報の指定ができます。
+この記事は、BOM デザイナー ページを使用して、部品表 (BOM) のツリー構造の設計および操作をする方法について説明します。 [設定] をクリックすると、さまざまなコンフィギュレーションの選択や、ツリーの行に表示する情報の指定ができます。
 
 **リリースされた製品** ページから **BOM デザイナー** ページを開くと、選択した品目、品目の既定の注文サイト、および実際の日付で有効、承認済である部品表 (BOMs) の階層が表示されます。  
 

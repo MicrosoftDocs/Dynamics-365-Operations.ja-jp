@@ -1,6 +1,6 @@
 ---
 title: 販売コミッションの登録
-description: このトピックでは、販売コミッションを計算および登録する方法を説明します。
+description: この記事では、販売コミッションを計算および登録する方法を説明します。
 author: Henrikan
 ms.date: 08/06/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4aca37350938d54d4acf283093365bfcab64f70
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b15ca78da14068fd2f3275e7aff04852625db7ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575366"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862514"
 ---
 # <a name="register-sales-commissions"></a>販売コミッションの登録
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、販売コミッションを計算および登録する方法を説明します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 このガイドを開始する前に、必要なすべてのコミッション計算の設定ができていることを確認するために、「販売コミッション ルールの設定」と呼ばれるガイドを実行します。
+この記事では、販売コミッションを計算および登録する方法を説明します。 この手順は、デモ データの会社 USMF で、または独自のデータで実行できます。 このガイドを開始する前に、必要なすべてのコミッション計算の設定ができていることを確認するために、「販売コミッション ルールの設定」と呼ばれるガイドを実行します。
 
 このコミッションのプロセスとして選択した顧客と品目をメモして、このガイドで販売注文を作成するように要求された時にそれらを使用してください。
 

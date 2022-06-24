@@ -1,6 +1,6 @@
 ---
 title: 使用権資産の減損
-description: このトピックでは、Accounting Standards Codification Topic 842 (ASC 842) オペレーティング リースの減損を記録し、資産減価償却スケジュールを調整する機能について説明します。
+description: この記事では、Accounting Standards Codification Topic 842 (ASC 842) オペレーティング リースの減損を記録し、資産減価償却スケジュールを調整する機能について説明します。
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 497739e56c6ce0f4fe0bd4aec889f0782d08fc4a
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f953b3a351859c6becba10a129bbb17b49be6290
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720170"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894116"
 ---
 # <a name="impair-right-of-use-assets"></a>使用権資産の減損
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-使用権 (ROU) 資産のキャリー額を回収できない場合は、資産が不足していないかどうかをテストする必要があります。 資産が損なわれていると判断した場合は、資産リースによって減損を記録し、それに応じて減価償却スケジュールを調整することができます。 このトピックでは、Accounting Standards Codification Topic 842 (ASC 842) オペレーティング リースの減損を記録し、減価償却スケジュールを調整する機能について説明します。 Financial Reporting Standard 16 (IFRS 16) リースにも同じ方法が適用されます。
+使用権 (ROU) 資産のキャリー額を回収できない場合は、資産が不足していないかどうかをテストする必要があります。 資産が損なわれていると判断した場合は、資産リースによって減損を記録し、それに応じて減価償却スケジュールを調整することができます。 この記事では、Accounting Standards Codification Topic 842 (ASC 842) オペレーティング リースの減損を記録し、減価償却スケジュールを調整する機能について説明します。 Financial Reporting Standard 16 (IFRS 16) リースにも同じ方法が適用されます。
 
 使用権資産の残余残高は、残りの期間の数のために定額法で償却され、リースが IFRS 16 でのファイナンス リースとして分類されているか、ASC 842 のオペレーティングリースであるかどうかにかかわらず、償却されます。
 
@@ -83,7 +83,7 @@ ms.locfileid: "8720170"
 
 ### <a name="steps"></a>ステップ
 
-1. このトピックで既に説明したようにリースを作成した後、リース帳簿に移動し、支払スケジュールを確認します。 次に、初期認識仕訳入力を転記します。 初期の使用権資産とリース負債は $70,235.81 にする必要があります。 この例では、リースは ASC 842 の下ではオペレーティング リースとして分類されていました。
+1. この記事で既に説明したようにリースを作成した後、リース帳簿に移動し、支払スケジュールを確認します。 次に、初期認識仕訳入力を転記します。 初期の使用権資産とリース負債は $70,235.81 にする必要があります。 この例では、リースは ASC 842 の下ではオペレーティング リースとして分類されていました。
 2. バッチ仕訳プロセスを 3 回実行して、リース支払、支払い利息、および減価償却費に対する 3 年間の通過をシミュレーションします。
 3. 3 つのバッチジョブすべての実行が完了したら、リース帳簿に戻り、負債 テーブルと資産トランザクション テーブルを開いて、使用権資産とリース負債の現在のキャリー金額を表示します。 3 年後、負債の値は約 $-53,893.00となり、資産の値はおよそ $53,893.00である必要があります。 
 

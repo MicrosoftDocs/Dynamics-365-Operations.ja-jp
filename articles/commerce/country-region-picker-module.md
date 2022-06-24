@@ -1,6 +1,6 @@
 ---
 title: 国/地域の選択モジュール
-description: このトピックでは、国/地域の選択モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
+description: この記事では、国/地域の選択モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
 author: stuharg
 ms.date: 04/06/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 9c20e614053b7a79cf962990dbd13ca0f45d5a00
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: d20b3be008a37b1c86e6fefe0ccc90c581e18340
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551673"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861995"
 ---
 # <a name="countryregion-picker-module"></a>国/地域の選択モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、国/地域の選択モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
+この記事では、国/地域の選択モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
 
 国/地域の選択モジュールは、Dynamics 365 Commerce の[地域検出およびリダイレクト](geo-detection-redirection.md)機能を使用して、国または地域に関連付けられていない eコマース サイトの URL を要求する顧客に推奨サイトを表示します。
 

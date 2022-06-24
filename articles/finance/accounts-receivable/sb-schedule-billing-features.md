@@ -1,6 +1,6 @@
 ---
 title: 請求スケジュール機能
-description: このトピックでは、価格決定方法、エスカレーションと割引、調整日、比例配分、請求の取り消し、分割品目グループなど、請求スケジュールの機能について説明します。
+description: この記事では、価格決定方法、エスカレーションと割引、調整日、比例配分、請求の取り消し、分割品目グループなど、請求スケジュールの機能について説明します。
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0ce323565a94e8e70d90a65b7a3143e984a1c159
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b6cfebc2bbfe06e118bfc96f9ae0df6323805e39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8700724"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853586"
 ---
 # <a name="billing-schedule-features"></a>請求スケジュール機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、請求スケジュールおよび請求スケジュール明細行の機能について説明します。 価格決定に使用されるさまざまな方法、エスカレーションと割引の使用方法、および請求期間を取り消す方法について説明します。 また、比例配分計算や分割品目グループの例も含まれます。
+この記事では、請求スケジュールおよび請求スケジュール明細行の機能について説明します。 価格決定に使用されるさまざまな方法、エスカレーションと割引の使用方法、および請求期間を取り消す方法について説明します。 また、比例配分計算や分割品目グループの例も含まれます。
 
 ## <a name="pricing-methods"></a>価格決定方法
 

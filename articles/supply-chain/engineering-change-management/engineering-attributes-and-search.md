@@ -1,6 +1,6 @@
 ---
 title: エンジニアリング属性とエンジニアリング属性の検索
-description: このトピックでは、すべての製品マスタ データをシステムに登録できるようにするために、エンジニアリング属性を使用して非標準特性を指定する方法について説明します。 また、エンジニアリング属性検索を使用して、登録されている特性に基づいて製品を簡単に検索する方法についても説明します。
+description: この記事では、すべての製品マスタ データをシステムに登録できるようにするために、エンジニアリング属性を使用して非標準特性を指定する方法について説明します。 また、エンジニアリング属性検索を使用して、登録されている特性に基づいて製品を簡単に検索する方法についても説明します。
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 59710f0366418e240a4109e7cf8fcf84073110bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4b25ab0bfda08b7aa091de8c6833007c586b9c87
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852566"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>エンジニアリング属性とエンジニアリング属性の検索
 

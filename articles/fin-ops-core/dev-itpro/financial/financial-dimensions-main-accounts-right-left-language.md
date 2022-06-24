@@ -1,6 +1,6 @@
 ---
 title: 右から左へ読み書きする言語の財務分析コードと主勘定
-description: このトピックでは、右から左へ読み書きする言語を使用する際に考慮する必要がある決定について説明し、財務分析コードと主勘定を設定する必要があります。
+description: この記事では、右から左へ読み書きする言語を使用する際に考慮する必要がある決定について説明し、財務分析コードと主勘定を設定する必要があります。
 author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: rcarlson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5de2e0e6e56651487ebd36e3594eb378ce6154ea
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: b1e2c0ef5cd405232332847078c70af42f056e17
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866763"
 ---
-# <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>右から左へ読み書きする言語での財務分析コードと主勘定
+# <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>右から左へ読み書きする言語の財務分析コードと主勘定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、右から左へ読み書きする言語を使用する際に考慮する必要がある実装の決定について説明し、財務分析コードと主勘定を設定する必要があります。
+この記事では、右から左へ読み書きする言語を使用する際に考慮する必要がある実装の決定について説明し、財務分析コードと主勘定を設定する必要があります。
 
 財務分析コードと主勘定は、実装のための計画フェーズの主要部分です。 財務分析コードと主勘定がシステムに作成されると、**勘定構造のコンフィギュレーション**、**詳細なルール構造**、**アプリケーション統合用の財務分析コードのコンフィギュレーション** ページで使用されます。 これらのページで定義された順序は、データ入力および消費のためにシステムで使用されます。 システムの一部の場所では、財務分析コードと主勘定は、別のフィールドに表示されます。 ただし、仕訳帳などの他の場所では、財務分析コードと主勘定は単一の文字列として表示されます。
 

@@ -1,6 +1,6 @@
 ---
 title: 簡易計画オーダー
-description: このトピックでは、計画オーダーの簡略ページを使用して、計画オーダーを表示、管理、および確定する方法について説明します。
+description: この記事では、計画オーダーの簡略ページを使用して、計画オーダーを表示、管理、および確定する方法について説明します。
 author: t-benebo
 ms.date: 01/24/2022
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-01-24
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b039aa5481b835d3523b86c4ea88afff6a96ba8b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5f207fa1edb11d05910e22732cf54e100e4e3489
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470124"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887373"
 ---
 # <a name="planned-orders-simplified"></a>簡易計画オーダー
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、 **計画オーダーの簡略** ページを使用して、計画オーダーを表示、管理、および確定する方法について説明します。
+この記事では、**計画オーダーの簡略** ページを使用して、計画オーダーを表示、管理、および確定する方法について説明します。
 
 **計画オーダーの簡略** ページは、**計画オーダー** ページの簡略化されたバージョンです。 オプションは少なくなりますが、計画オーダーの確認、承認、および確定をのみを実行する必要がある場合は、処理時間が短縮されます。
 
 ## <a name="turn-on-this-feature-for-your-system"></a>システムでこの機能を有効化する
 
-このトピックで説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*計画オーダーの簡略化* 機能を有効にします。
+この記事で説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*計画オーダーの簡略化* 機能を有効にします。
 
 ## <a name="view-manage-and-firm-planned-orders"></a>計画オーダーの表示、管理、および確定
 

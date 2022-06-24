@@ -1,6 +1,6 @@
 ---
 title: B2B e コマース Webサイトの請求書管理
-description: このトピックでは、Microsoft Dynamics 365 Commerce 企業間 (B2B) の e コマース Web サイトの請求書管理機能について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce 企業間 (B2B) の eコマース Web サイトの請求書管理機能について説明します。
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 60cb0c8aaede4a0eaeed80cf5ebe41068da57836
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: fa6b81187481a6b7f47ea02291e5a581052d6c7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686303"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854929"
 ---
 # <a name="invoice-management-for-b2b-e-commerce-websites"></a>B2B e コマース Webサイトの請求書管理
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 企業間 (B2B) の e コマース Web サイトの請求書管理機能について説明します。
+この記事では、Microsoft Dynamics 365 Commerce 企業間 (B2B) の eコマース Web サイトの請求書管理機能について説明します。
 
 顧客貸方での注文を受け入れる B2B トランザクションをおこなう会社では、注文を処理した後に顧客に請求書を送るのが一般的です。 支払条件は顧客に対して定義され、時間や時間の前に支払を行う顧客を動機付けるいくつかの割引がある場合があります。 支払いを期日までに受け取る確立を上げるのに役立てるために、B2B e コマースの Web サイトでは、顧客が自分たちのすべての請求書を閲覧できるようにします。 顧客は簡単に請求書をフィルター処理して、支払済、未払、部分的に支払済の請求書を期日と共に表示できます。
 

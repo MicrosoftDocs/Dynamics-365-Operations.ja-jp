@@ -1,6 +1,6 @@
 ---
 title: 決済の概要
-description: このトピックは、決済プロセスに関する一般情報を提供します。 決済できる取引のタイプと、その決済のタイミングおよびプロセスについて説明します。 決済プロセスの結果についても説明します。
+description: この記事は、決済プロセスに関する一般情報を提供します。 決済できる取引のタイプと、その決済のタイミングおよびプロセスについて説明します。 決済プロセスの結果についても説明します。
 author: panolte
 ms.date: 07/30/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e1992019570129461f3ecdd5479a87bafd8aeacb
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a495a71a95032a0022cbab2783f356db48ee349d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724900"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887951"
 ---
 # <a name="settlement-overview"></a>決済の概要
 
@@ -30,7 +30,7 @@ ms.locfileid: "8724900"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-このトピックは、決済プロセスに関する一般情報を提供します。 決済できる取引のタイプと、その決済のタイミングおよびプロセスについて説明します。 決済プロセスの結果についても説明します。
+この記事は、決済プロセスに関する一般情報を提供します。 決済できる取引のタイプと、その決済のタイミングおよびプロセスについて説明します。 決済プロセスの結果についても説明します。
 
 決済時に、1 通の文書のトランザクションが、別のドキュメントのトランザクションに適用され、各ドキュメントの残高が増加または減少します。 たとえば、支払は請求書に適用できます。 さまざまな取引タイプを、さまざまな時間に、さまざまな方法で決済できます。 決済によっては、新しい取引を生成する場合があります。
 

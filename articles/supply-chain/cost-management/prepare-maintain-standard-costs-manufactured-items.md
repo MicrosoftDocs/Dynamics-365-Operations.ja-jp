@@ -1,6 +1,6 @@
 ---
 title: 製造品目の標準原価を管理するための準備
-description: このトピックでは、製造品目の原価の管理を準備するステップについて説明します。
+description: この記事では、製造品目の原価の管理を準備するステップについて説明します。
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d42f61bcd44e89f0563c8f7450a1cdd6fd0e3ce
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 423da8022faf8066c5aa524c49c5071d0871de04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679138"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886018"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>製造品目の標準原価を管理するための準備
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、製造品目の原価の管理を準備するステップについて説明します。 製造品目のステップは、購入品目のステップからわずかに異なっています。
+この記事では、製造品目の原価の管理を準備するステップについて説明します。 製造品目のステップは、購入品目のステップからわずかに異なっています。
 
 製造品目に割り当てられているポリシーは、親製造品目の原価計算に影響を与える可能性があります。 製造品目の原価の管理を準備するには、次の手順を実行します。
 
@@ -63,7 +63,7 @@ ms.locfileid: "8679138"
 
 原価計算のために工順情報を使用したい場合は、追加の準備手順が必要です。 たとえば、工順操作には正確で完全な原価カテゴリを割り当てる必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [製造品目の固定費の償却](amortize-constant-costs-manufactured-item.md)
 

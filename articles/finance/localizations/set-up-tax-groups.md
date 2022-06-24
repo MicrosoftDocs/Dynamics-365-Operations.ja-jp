@@ -1,6 +1,6 @@
 ---
 title: 税グループの設定
-description: このトピックでは、税計算サービスで税グループを設定する方法について説明します。
+description: この記事では、税計算サービスで税グループを設定する方法について説明します。
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 50abafb958edfb8476434ff5842cd84cb186962f
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 89c5670ee7e78f2dc51f128c3ae8d284bb6b925b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883868"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862902"
 ---
 # <a name="set-up-tax-groups"></a>税グループの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、税計算サービスで税グループを設定する方法について説明します。 また、税グループ適用ルール マトリックスを設定し、マトリックスで明細行を構成する方法も説明します。
+この記事では、税計算サービスで税グループを設定する方法について説明します。 また、税グループ適用ルール マトリックスを設定し、マトリックスで明細行を構成する方法も説明します。
 
-税計算サービスの税グループの概念は、Microsoft Dynamics 365 Finance の売上税グループの概念に似ています。 これは、税コードのグループです。 税計算サービスは、税グループと品目税グループの共通部分を使用して税コードを決定します。
+税計算サービスの税グループの概念は、Microsoft Microsoft Dynamics 365 Finance の売上税グループの概念に似ています。 これは、税コードのグループです。 税計算サービスは、税グループと品目税グループの共通部分を使用して税コードを決定します。
 
 ただし、税計算サービスの税グループは、**使用税** や **非課税** など追加パラメーターがないという点で、Finance の売上税グループとは異なります。 代わりに、これらのパラメーターは、税コード レベルで使用できます。
 

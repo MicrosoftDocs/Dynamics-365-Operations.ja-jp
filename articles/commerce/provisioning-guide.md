@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce 評価環境のプロビジョニング
-description: このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニングする方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニングする方法について説明します。
 author: psimolin
 ms.date: 12/17/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52a263d1ab833eb688b1049cd4e8c584e8c9a94d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868912"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境のプロビジョニング
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニングする方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の評価環境をプロビジョニングする方法について説明します。
 
-開始する前に、このトピックにざっと目を通して、プロセスに必要な内容を把握することをお勧めします。
+開始する前に、この記事に目を通して、プロセスに必要な内容を把握することをお勧めします。
 
 > [!NOTE]
 > コマースの評価環境は一般的には提供されておらず、パートナーや顧客からのリクエストに応じて付与されます。 ライセンスの詳細については、Microsoft パートナーにお問い合わせください。
 
-Commerce 評価環境を正常にプロビジョニングするには、特定の製品名とタイプを持つプロジェクトを作成する必要があります。 この環境と Commerce Scale Unit (CSU) には、後から E コマースをプロビジョニングする場合に使用する必要がある特定のパラメーターもいくつかあります。 このトピックの手順では、プロビジョニングを完了するために必要なすべての手順と、使用する必要があるパラメーターについて説明します。
+Commerce 評価環境を正常にプロビジョニングするには、特定の製品名とタイプを持つプロジェクトを作成する必要があります。 この環境と Commerce Scale Unit (CSU) には、後から E コマースをプロビジョニングする場合に使用する必要がある特定のパラメーターもいくつかあります。 この記事の手順では、プロビジョニングを完了するために必要なすべての手順と、使用する必要があるパラメーターについて説明します。
 
 Commerce 評価環境のプロビジョニングが正常に完了した後、いくつかのプロビジョニング後の手順を完了して、使用のために準備する必要があります。 一部の手順は、システムのどの側面を評価するかに応じて使用するオプションです。 オプションの手順は、後からいつでも完了できます。
 

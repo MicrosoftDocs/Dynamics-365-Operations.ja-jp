@@ -1,6 +1,6 @@
 ---
 title: eコマース チャネルで一貫した配送モードの処理を有効にする
-description: このトピックでは、Microsoft Dynamics 365 Commerce の e コマースチャネルの課金フローに関連する可能性のある問題に対処する、一貫した配送モードの処理を有効にする方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の e コマース チャネルの課金フローに関連する可能性のある問題に対処する、一貫した配送モードの処理を有効にする方法について説明します。
 author: gvrmohanreddy
 ms.date: 02/24/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.openlocfilehash: 4cecd70dacd72572afc8e6cb65530bf2be4cc93d
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: f32f1915f8f7de1d5536b69b05bc74c6149dfda6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349952"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885588"
 ---
 # <a name="enable-consistent-delivery-mode-handling-in-e-commerce-channels"></a>eコマース チャネルで一貫した配送モードの処理を有効にする 
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の e コマースチャネルの課金フローに関連する可能性のある問題に対処する、一貫した配送モードの処理を有効にする方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の e コマース チャネルの課金フローに関連する可能性のある問題に対処する、一貫した配送モードの処理を有効にする方法について説明します。
 
 Dynamics 365 Commerce では、比例しないヘッダーレベルの課金は、eコマース チャネルでは既定で適用されません。 この動作は、eコマース チャネルにおいて、以下のいずれか、または両方の問題を引き起こす可能性があります。
 

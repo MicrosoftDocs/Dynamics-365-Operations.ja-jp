@@ -1,6 +1,6 @@
 ---
 title: 能力に基づいたリソースの選択を使用したスケジュール設定
-description: このトピックでは、無限大のキャパシティを持つスケジュール設定において、オペレーションのリソース要件として能力を指定した場合のリソース選択について説明します。
+description: この記事では、無限大のキャパシティを持つスケジュール設定において、オペレーションのリソース要件として能力を指定した場合のリソース選択について説明します。
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: d1ecdfdbdd605fca953e799ec3f6a82d244bc9f7
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 26b2b65a2d565052b188f4d70f0cc0a773cd7b43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469788"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847965"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>能力に基づいたリソースの選択を使用したスケジュール設定
 
 [!include [banner](../../includes/banner.md)]
 
-生産ルートの運用のリソース要件を指定することで、その操作の実行に必要な作業を定義します。 たとえば、ある操作には、特定のリソースやリソースグループ、あるいはスキルや能力の組み合わせが必要になる場合があります。 このトピックでは、無限大のキャパシティを持つスケジュール設定において、オペレーションのリソース要件として能力を指定した場合のリソース選択について説明します。
+生産ルートの運用のリソース要件を指定することで、その操作の実行に必要な作業を定義します。 たとえば、ある操作には、特定のリソースやリソースグループ、あるいはスキルや能力の組み合わせが必要になる場合があります。 この記事では、無限大のキャパシティを持つスケジュール設定において、オペレーションのリソース要件として能力を指定した場合のリソース選択について説明します。
 
 ## <a name="turn-on-the-capability-based-scheduling-feature"></a>能力に基づいたスケジュール設定の機能を有効にする
 

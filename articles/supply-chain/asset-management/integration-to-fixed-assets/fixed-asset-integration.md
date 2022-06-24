@@ -1,6 +1,6 @@
 ---
 title: 資産管理と固定資産の統合
-description: このトピックでは、資産管理と固定資産のモジュールを統合して、固定資産を保守資産にリンクできるようにする方法について説明します。
+description: この記事では、資産管理と固定資産のモジュールを統合して、固定資産を保守資産にリンクできるようにする方法について説明します。
 author: johanhoffmann
 ms.date: 04/17/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d5dfaaf9e4cd989ad6b993e8d152f4713c0d3aa4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567586"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874220"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>資産管理と固定資産の統合
 
@@ -26,7 +26,7 @@ ms.locfileid: "7567586"
 **資産管理** と **固定資産** モジュールを統合することで、固定資産とメンテナンス資産を連動させることができます。 固定資産ユーザーは、新しい固定資産または既存の固定資産から保守資産を作成できます。また、資産管理ユーザーは、メンテナンス資産を既存の固定資産に関連付けることができます。 この機能を使用すると、固定資産のユーザーは、関連するメンテナンス資産の作業指示書から転記されたコストを簡単に表示することができます。
 
 > [!NOTE]
-> このトピックでは *メンテナンス資産* は **資産管理** モジュールからの資産を参照し、 *固定資産* は **固定資産** モジュールからの資産を参照します。
+> この記事では *メンテナンス資産* は **資産管理** モジュールからの資産を参照し、*固定資産* は **固定資産** モジュールからの資産を参照します。
 
 ## <a name="set-a-default-location-for-new-maintenance-assets-that-are-created-from-fixed-assets-optional"></a>固定資産から作成される新しい保守資産の既定の場所を設定します (オプション)
 

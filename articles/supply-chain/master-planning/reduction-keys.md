@@ -1,6 +1,6 @@
 ---
-title: 予測下方修正キー
-description: このトピックでは、下方修正キーを設定する方法を示す例を提供します。 これには、さまざまな下方修正キーの設定とそれぞれの結果に関する情報が含まれます。 予測要求を減らす方法を定義するには下方修正キーを使用できます。
+title: 予測の下方修正キー
+description: この記事は、下方修正キーを設定する方法を示す例について説明します。 これには、さまざまな下方修正キーの設定とそれぞれの結果に関する情報が含まれます。 予測要求を減らす方法を定義するには下方修正キーを使用できます。
 author: t-benebo
 ms.date: 04/15/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 054eb28044e532ed2850cde21cb2f9fb5181ae02
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5cf84598b731e9750e3cf79d312bf0bbf4f8bd81
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854271"
 ---
-# <a name="forecast-reduction-keys"></a>予測下方修正キー
+# <a name="forecast-reduction-keys"></a>予測の下方修正キー
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、予測要求を減らすために使用されるさまざまな方法に関する情報を提供します。 これには、各メソッドの結果の例が含まれます。 予測下方修正キーの作成、設定、および使用方法についても説明します。 予測要求を減らすため予測下方修正キーを使用するいくつかの方法があります。
+この記事では、予測要求を減らすために使用されるさまざまな方法に関する情報について説明します。 これには、各メソッドの結果の例が含まれます。 予測下方修正キーの作成、設定、および使用方法についても説明します。 予測要求を減らすため予測下方修正キーを使用するいくつかの方法があります。
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>予測要求の削減に使用する方法
 

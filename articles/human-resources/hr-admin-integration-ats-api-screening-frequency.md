@@ -1,6 +1,6 @@
 ---
 title: 審査の頻度
-description: このトピックでは、Dynamics 365 Human Resources における審査の頻度のオプション セットについて説明します。
+description: この記事では、Dynamics 365 Human Resources における審査の頻度のオプション セットについて説明します。
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83cb31f3bf9d77bca0aef36fb53d90f7ccb8fff9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 506de0b9208d146e2a02bf1019bbc4056ba862c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068562"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868191"
 ---
 # <a name="screening-frequency"></a>審査の頻度
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068562"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources における審査の頻度のオプション セットについて説明します。
+この記事では、Dynamics 365 Human Resources における審査の頻度のオプション セットについて説明します。
 
 物理名 : mshr_hcmfrequencyunit
 

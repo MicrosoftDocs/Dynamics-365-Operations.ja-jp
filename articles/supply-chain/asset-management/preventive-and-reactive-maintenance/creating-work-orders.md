@@ -1,6 +1,6 @@
 ---
 title: 作業指示書の作成
-description: このトピックでは、資産管理で作業指示書を作成する方法について説明します。
+description: この記事では、資産管理で作業指示書を作成する方法について説明します。
 author: johanhoffmann
 ms.date: 02/01/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1477e3c1b99172d84d2cdc64fc0ed01c057e0fa59422b30c17868ca400de4d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1b8b3d8d83bdad2efe49bd4e878793cca6c49f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743701"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891208"
 ---
 # <a name="creating-work-orders"></a>作業指示書の作成
 
@@ -60,7 +60,7 @@ ms.locfileid: "6743701"
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>メンテナンス計画の実行中に自動的に作成される作業指示書明細行のグループ化
 
-この機能を使用すると、システムがメンテナンス計画に基づいて作業指示書が自動的に生成されるように設定されている場合に、1 つの作業指示書に作業指示書明細行をグループ化するためのルールを定義できます。 以前は、自動生成された作業指示書には、1 行しか含めることができませんでした。 ただし、作業指示書を資産、資産タイプ、または機能の場所などによってグループ化できるようになりました。 (このトピックの前のセクションで説明したように、手動生成された作業指示書は、この方法で既にグループ化されている場合があります。)
+この機能を使用すると、システムがメンテナンス計画に基づいて作業指示書が自動的に生成されるように設定されている場合に、1 つの作業指示書に作業指示書明細行をグループ化するためのルールを定義できます。 以前は、自動生成された作業指示書には、1 行しか含めることができませんでした。 ただし、作業指示書を資産、資産タイプ、または機能の場所などによってグループ化できるようになりました。 (この記事の前のセクションで説明したように、手動生成された作業指示書は、この方法で既にグループ化されている場合があります。)
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>自動生成された作業指示書のグループ化の有効化
 

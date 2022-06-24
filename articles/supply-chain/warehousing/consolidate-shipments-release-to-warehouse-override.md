@@ -1,6 +1,6 @@
 ---
 title: 出荷連結ポリシーが上書きされた際に出荷を連結する
-description: このトピックでは、1 つ以上の販売明細を、[倉庫へのリリース] ページから手動でリリースする必要がある場合で、かつリリース前にシステム定義の連結ポリシーを上書きする必要があるシナリオを示します。
+description: この記事では、1 つ以上の販売明細を、倉庫へのリリース ページから倉庫に手動でリリースする必要があり、かつリリース前にシステム定義の出荷連結ポリシーを上書きする必要があるシナリオを示します。
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 8b1c8ac41fe0941c9bbfce20ce593eafe5699ef1
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 680941adeba1fc1cd54a02fb366d3d5903938d77
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675462"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878703"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>出荷連結ポリシーが上書きされた際に出荷を連結する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、1 つ以上の販売明細を、**倉庫へのリリース** ページから手動でリリースする必要がある場合で、かつリリース前にシステム定義の連結ポリシーを上書きする必要があるシナリオを示します。 例えば、通常はオープン出荷で連結されていない注文をオープン出荷で連結する必要がある場合など、出荷の連結ポリシーの上書きが必要になる場合があります。
+この記事では、1 つ以上の販売明細を、**倉庫へのリリース** ページから倉庫に手動でリリースする必要があり、かつリリース前にシステム定義の出荷連結ポリシーを上書きする必要があるシナリオを示します。 例えば、通常はオープン出荷で連結されていない注文をオープン出荷で連結する必要がある場合など、出荷の連結ポリシーの上書きが必要になる場合があります。
 
 このシナリオでは、一連の販売注文を作成してから、その注文を倉庫にリリースする前に既定の出荷連結ポリシーを上書きします。
 
 ## <a name="make-demo-data-available"></a>デモ データを有効化する
 
-このトピックのシナリオでは、Microsoft Dynamics 365 Supply Chain Management にて用意されている標準のデモデータに含まれる値とレコードを参照し ます。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を **usmf** に設定します。
+この記事のシナリオでは、Microsoft Dynamics 365 Supply Chain Management にて用意されている標準のデモ データに含まれる値とレコードを参照します。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を **usmf** に設定します。
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>出荷連結ポリシーおよび製品フィルタの設定
 

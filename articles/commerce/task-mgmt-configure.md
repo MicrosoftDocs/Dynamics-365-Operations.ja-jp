@@ -1,6 +1,6 @@
 ---
 title: タスク管理のコンフィギュレーション
-description: このトピックでは、Microsoft Dynamics 365 Commerce においてタスク管理機能をコンフィギュレーションする方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce においてタスク管理機能をコンフィギュレーションする方法について説明します。
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf8584f4a0d71ef6fa867a7f07b568d94656e650
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730806"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868860"
 ---
 # <a name="configure-task-management"></a>タスク管理のコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce においてタスク管理機能をコンフィギュレーションする方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce においてタスク管理機能をコンフィギュレーションする方法について説明します。
 
 Dynamics 365 Commerce のマネージャーおよび従業員が Commerce のタスク管理機能を使用できるようにする前に、タスク管理をコンフィギュレーションする必要があります。 コンフィギュレーションの手順には、マネージャーおよび従業員へのアクセス許可の付与、販売時点管理 (POS) クライアントへのアクセス許可の配分、POS 通知の設定、および POS アプリケーションのホーム ページでの **タスク** タイルのコンフィギュレーションが含まれます。
 

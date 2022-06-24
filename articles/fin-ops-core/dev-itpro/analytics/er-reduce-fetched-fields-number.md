@@ -1,6 +1,6 @@
 ---
 title: 実行時にフェッチされるテーブル フィールドの数を減らすことで、ER ソリューションのパフォーマンスを向上させる
-description: このトピックでは、実行時にフェッチされるテーブル フィールドの数を減らすことで、ER ソリューションのパフォーマンスを向上させる方法について説明します。
+description: この記事では、実行時にフェッチされるテーブル フィールドの数を減らすことで、ER ソリューションのパフォーマンスを向上させる方法について説明します。
 author: NickSelin
 ms.date: 05/12/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd192a7718ac4fd8bcb636ede6c005ca29ee5f08
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: eb76c415da87d421b8135a93b84f4e905f01e70d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811958"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847454"
 ---
 # <a name="improve-performance-of-er-solutions-by-reducing-the-number-of-table-fields-that-are-fetched-at-runtime"></a>実行時にフェッチされるテーブル フィールドの数を減らすことで、ER ソリューションのパフォーマンスを向上させる
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811958"
 
 さまざまな形式で送信ドキュメントを生成する [電子報告](general-electronic-reporting.md) (ER) [形式](er-overview-components.md#format-components-for-outgoing-electronic-documents) をデザインできます。 ドキュメントを生成する際、ER 形式は、対応する ER [モデル マッピング](er-overview-components.md#model-mapping-component) で構成されたデータ ソースを呼び出します。 レコード取得用にアプリケーション テーブルへのアクセスを構成するため、*テーブル レコード* タイプの ER データ ソースを使用できます。 既定では、*テーブル レコード* タイプのデータ ソース は、要求されたレコードのすべてのフィールドの値を取得します。 ただし、このタイプのデータ ソースは、実行している ER 形式に必要なフィールド値のみをフェッチできるように構成できます。 この構成により、データ取得およびレコード キャッシュの詳細を実行するアプリケーション サーバーのメモリ消費を減らすことができます。
 
-*テーブル レコード* タイプのデータ ソースのフェッチフィールドの一覧を制限する方法の詳細については、このトピックの例を参照してください。
+*テーブル レコード* タイプのデータ ソースのフェッチフィールドの一覧を制限する方法の詳細については、この記事の例を参照してください。
 
 ## <a name="example-reduce-the-number-of-table-fields-that-are-fetched-at-runtime"></a>例 : 実行時にフェッチされるテーブル フィールドの数を減らす
 
@@ -49,7 +49,7 @@ Microsoft Dynamics 365 Finance で **USMF** 社を例に使用して、これら
 
 ### <a name="import-the-sample-er-configurations"></a>サンプル ER のコンフィギュレーションのインポート
 
-[カスタム レポート トピックを印刷する新しい ER ソリューションをデザインする](er-quick-start1-new-solution.md) でこの例をまだ完了していない場合は、提供されている ER ソリューションの次の構成用の XML ファイルをダウンロードしてローカルに保存してください。
+[カスタム レポートを印刷する新しい ER ソリューションを設計する](er-quick-start1-new-solution.md) 記事で、この例をまだ完了していない場合は、提供されている ER ソリューションの次の構成用の XML ファイルをダウンロードしてローカルに保存してください。
 
 | コンテンツの説明            | ファイル名 |
 |--------------------------------|-----------|

@@ -1,6 +1,6 @@
 ---
 title: 源泉徴収税の支払を作成する
-description: 源泉所得税の支払と転記のジョブの手順では、源泉所得税口座の未払金から源泉所得税の残高を精算し、所定の期間の源泉所得税精算口座に相殺します。 このトピックでは、源泉徴収税の支払を設定する手順を示します。
+description: 源泉所得税の支払と転記のジョブの手順では、源泉所得税口座の未払金から源泉所得税の残高を精算し、所定の期間の源泉所得税精算口座に相殺します。 この記事では、源泉徴収税の支払を設定する手順を示します。
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 2b374d7aeab4d066b0894dde8f542c2f807d1ef9
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 3d3619137ccb909eed31af3793c6cf2773cc9886
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713335"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855407"
 ---
 # <a name="create-a-withholding-tax-payment"></a>源泉徴収税の支払を作成する
 
-源泉所得税の支払と転記のジョブの手順では、源泉所得税口座の未払金から源泉所得税の残高を精算し、所定の期間の源泉所得税精算口座に相殺します。 このトピックでは、源泉徴収税の支払を設定する手順を示します。
+源泉所得税の支払と転記のジョブの手順では、源泉所得税口座の未払金から源泉所得税の残高を精算し、所定の期間の源泉所得税精算口座に相殺します。 この記事では、源泉徴収税の支払を設定する手順を示します。
 
 > [!NOTE] 
 > (売掛金管理から)源泉徴収税の支払を計算する際は、源泉徴収税の相殺は考慮されません。

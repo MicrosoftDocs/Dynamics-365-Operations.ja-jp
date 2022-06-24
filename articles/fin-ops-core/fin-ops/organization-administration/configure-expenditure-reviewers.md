@@ -1,6 +1,6 @@
 ---
 title: 支出確認者のコンフィギュレーション
-description: このトピックでは、支出確認者を使用して、ワークフロー タスク、承認、または手動による決定を割り当てるユーザーを動的に選択する方法について説明します。
+description: この記事では、支出確認者を使用して、ワークフロー タスク、承認、または手動による決定を割り当てるユーザーを動的に選択する方法について説明します。
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 110edf4c2733f899368069c7d215ae5b0882f5cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070149"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863226"
 ---
 # <a name="configure-expenditure-reviewers"></a>支出確認者のコンフィギュレーション
 [!include[banner](../includes/banner.md)]
@@ -75,7 +75,7 @@ Contoso アプライアンスのサービス部門に勤務しているとしま
 
 ## <a name="set-up-expenditure-reviewers"></a>支出確認者の設定
 
-この例では、1 人の購買要求支出確認者の構成方法を示します。 他のタイプの支出確認者を構成するには、手順 1 のナビゲーション パスを、このトピックの前半の[支出確認者のタイプ](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) セクションのテーブルからの適切なパスに置き換えます。
+この例では、1 人の購買要求支出確認者の構成方法を示します。 他のタイプの支出確認者を構成するには、手順 1 のナビゲーション パスを、この記事の前半の[支出確認者のタイプ](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) セクションのテーブルからの適切なパスに置き換えます。
 
 1. **調達 \> 設定 \> ポリシー \> 購買要求支出確認者** の順に移動します。
 2. **購買要求支出確認者** ページで、**新規** を選択します。

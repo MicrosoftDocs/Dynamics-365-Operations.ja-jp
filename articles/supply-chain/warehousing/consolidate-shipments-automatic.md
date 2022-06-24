@@ -1,6 +1,6 @@
 ---
 title: 販売注文の自動リリースを利用して、倉庫にリリースされた出荷を連結する
-description: このトピックでは、定期的に自動実行される [倉庫へのリリース] 手順内で、複数の注文が倉庫にリリースされたシナリオを示します。
+description: この記事では、同じ自動化された倉庫へのリリースの定期的な手順で、複数の注文を倉庫にリリースするシナリオを示します。
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 74d4d9d8429095c3fac80db58f14ac2ef0776798
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 36eb5e788d0473e2fec2214e9aa7e245304347e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677537"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875075"
 ---
 # <a name="consolidate-shipments-released-to-the-warehouse-using-automatic-release-of-sales-orders"></a>販売注文の自動リリースを利用して、倉庫にリリースされた出荷を連結する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、定期的に自動実行される [倉庫へのリリース] 手順内で、複数の注文が倉庫にリリースされたシナリオを示します。 注文は、出荷連結ポリシーとして定義されているルールに基づいて自動的に出荷に連結されます。
+この記事では、同じ自動化された倉庫へのリリースの定期的な手順で、複数の注文を倉庫にリリースするシナリオを示します。 注文は、出荷連結ポリシーとして定義されているルールに基づいて自動的に出荷に連結されます。
 
 このシナリオでは、販売注文のセットを作成し、各セットを倉庫にリリースします。 次に、出荷連結の際に作成または更新された出荷を、構成されたポリシーに基づいて確認します。
 
 ## <a name="make-demo-data-available"></a>デモ データを有効化する
 
-このトピックのシナリオでは、Microsoft Dynamics 365 Supply Chain Management にて用意されている標準のデモデータに含まれる値とレコードを参照し ます。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を **usmf** に設定します。
+この記事のシナリオでは、Microsoft Dynamics 365 Supply Chain Management にて用意されている標準のデモ データに含まれる値とレコードを参照します。 ここで提供されている値を使用するには、デモデータがインストールされている環境で作業し、開始する前に法人を **usmf** に設定します。
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>出荷連結ポリシーおよび製品フィルタの設定
 

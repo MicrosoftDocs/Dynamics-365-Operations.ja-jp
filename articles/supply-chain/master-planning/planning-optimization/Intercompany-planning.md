@@ -1,6 +1,6 @@
 ---
 title: 会社間計画
-description: このトピックでは、会社間計画について説明し、Microsoft Dynamics 365 Supply Chain Management で計画の最適化を使用して会社間計画を構成する方法を説明します。
+description: この記事では、会社間計画について説明し、Microsoft Dynamics 365 Supply Chain Management で計画の最適化を使用して会社間計画を構成する方法を説明します。
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: de9f9679bfaf9491c6b69c11448306627c8a42f9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850673"
 ---
 # <a name="intercompany-planning"></a>会社間計画
 
@@ -29,9 +29,9 @@ ms.locfileid: "8468499"
 
 組織によっては、物流工程が組織内の他の法人 (会社) に依存している場合もあります。 各法人が個別の勘定科目表を所有するため、これらの工程は会社間の販売と購買を使用して処理されます。
 
-このトピックでは、会社間計画について説明し、Microsoft Dynamics 365 Supply Chain Management で計画の最適化を使用して会社間計画を構成する方法を説明します。
+この記事では、会社間計画について説明し、Microsoft Dynamics 365 Supply Chain Management で計画の最適化を使用して会社間計画を構成する方法を説明します。
 
-このトピックでは、次の重要な会社間用語を使用します。
+この記事では、次の重要な会社間用語を使用します:
 
 - **上流** – 会社またはサプライ チェーンの相対的な参照。 原材料サプライヤーの方向から流れるデータの動きを示します。
 - **下流** – 会社またはサプライ チェーンの相対的な参照。 顧客の方向から流れるデータの動きを示します。

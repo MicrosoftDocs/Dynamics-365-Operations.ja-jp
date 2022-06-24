@@ -1,6 +1,6 @@
 ---
 title: 製品データ エンティティ
-description: このトピックでは、製品データをインポートおよびエクスポートするのに使用できる異なるエンティティに関する情報を提供します。
+description: この記事では、製品データをインポートおよびエクスポートするのに使用できる異なるエンティティに関する情報を提供します。
 author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2019-12-1
-ms.openlocfilehash: 2784e552d7984bbea9c74ad800c6305ab2a216e9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e37e0928d8633a81d3a736527f2545cd61055a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859201"
 ---
 # <a name="product-data-entities"></a>製品データ エンティティ
 

@@ -1,6 +1,6 @@
 ---
 title: 顧客所有資産のメンテナンスに対する請求書
-description: このトピックでは、顧客が所有する資産に対して行われるメンテナンス作業を作成、処理、および請求する方法について説明します。
+description: この記事では、顧客が所有する資産に対して行われるメンテナンス作業を作成、処理、および請求する方法について説明します。
 author: johanhoffmann
 ms.date: 01/28/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a48e681da1801ef3c0d1c9c03cebaa5eecd37d76349a7b1c3cfe53e892fae489
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d6ad25ec49a329c16b0290278fb614293a507eae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887692"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>顧客所有資産のメンテナンスに対する請求書
 

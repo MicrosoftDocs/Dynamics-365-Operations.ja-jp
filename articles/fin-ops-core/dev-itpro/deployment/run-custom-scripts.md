@@ -1,6 +1,6 @@
 ---
 title: ダウンタイムなしでカスタム X++ スクリプトの実行
-description: このトピックでは、システムを中断せずにカスタム X++ スクリプトを含む配置可能パッケージをアップロードおよび実行する方法について説明します。
+description: この記事では、システムを中断せずにカスタム X++ スクリプトを含む配置可能パッケージをアップロードおよび実行する方法について説明します。
 author: AndersGirke
 ms.date: 12/16/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: fcd0a472fa5116ca0b3a59561b6eeb72181a9113
-ms.sourcegitcommit: 44e6875e974a3a1b3e1d7a24c1a3cff3d3697cdc
+ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088347"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867332"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>ダウンタイムなしでカスタム X++ スクリプトの実行
 
@@ -122,7 +122,7 @@ class MyScriptClassForIssueXYZ
 
 1. 財務と運用アプリで、**システム管理 \> 定期処理 タスク \> データベース \> カスタム スクリプト** に移動します。
 1. **アップロード** を選択します。
-1. このトピックの前半で説明した通り、作成した展開可能パッケージを選択します。 スクリプトの目的を指定するように求めるメッセージが表示されます。
+1. この記事の前半で説明した通り、作成した展開可能パッケージを選択します。 スクリプトの目的を指定するように求めるメッセージが表示されます。
 1. これで、スクリプトをアップロードしたユーザー以外のユーザーが承認する必要があります。 承認者は次の手順に従う必要があります。
 
     1. **システム管理 \> 定期処理 \> データベース \> カスタム スクリプト** に移動します。

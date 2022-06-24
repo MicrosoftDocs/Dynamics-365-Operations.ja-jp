@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d168fe3baac314455b2fefc231ab455a0b85c0e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0ef671ee42848d079cf1ff9bc2328216df4e9e20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695819"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888791"
 ---
 # <a name="manage-employee-leave"></a>従業員の休暇の管理
 
 >[!Important]
->このトピックで説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
+>この記事で説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

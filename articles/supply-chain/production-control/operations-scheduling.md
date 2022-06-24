@@ -1,6 +1,6 @@
 ---
 title: 工程のスケジューリング
-description: このトピックでは、工程のスケジューリングに関する情報を提供します。 この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。
+description: この記事では、工程のスケジューリングに関する情報を提供します。 この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。
 author: johanhoffmann
 ms.date: 06/20/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7b9ae31b288831d2f3b85bf1996206221e0bdbbd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574572"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871894"
 ---
 # <a name="operations-scheduling"></a>工程のスケジューリング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、工程のスケジューリングに関する情報を提供します。 この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。
+この記事では、工程のスケジューリングに関する情報を提供します。 この工程スケジューリングは、時間経過による生産プロセスの概算を提供する場合に使用します。
 
 工程レベルおよびジョブ レベルの生産をスケジューリングできます。 ジョブのスケジューリングとは異なり、工程のスケジューリングでは、生産工順の工程がジョブに展開されません。 現在の能力に関する情報など、スケジューリングのより詳細を含めるには、工程のスケジューリングを実行した後にジョブ スケジューリングを実行できます。 ジョブのスケジューリングだけも実行できます。 ジョブのスケジューリングは、通常、近または短期的な時間枠に、作業現場の個々のジョブをスケジュールするために使用されます。
 

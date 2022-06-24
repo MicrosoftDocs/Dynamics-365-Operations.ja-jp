@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: e52b313e0a00c04edf9003aa6292146936f837d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102792"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889431"
 ---
 # <a name="location-license-plate-positioning"></a>場所ライセンス プレートの配置
 
@@ -28,11 +28,11 @@ ms.locfileid: "8102792"
 
 この機能により、保管場所に格納されている各ライセンス プレートにシーケンス番号が追加されます。 このシーケンス番号は、保存場所でライセンス プレートを順序付けるために使用されます。 したがって、この機能は、顧客が重力ラッキング システムを使用していて、どのライセンス プレートが前面にあるかを把握しておく必要があるシナリオをインテリジェントにサポートします。
 
-このトピックでは、機能を設定および使用する方法を示すシナリオを示します。
+この記事では、機能を設定および使用する方法を示すシナリオについて説明します。
 
 ## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>場所のライセンス プレートの配置機能をオンまたはオフにする
 
-このトピックで説明する機能を使用するには、システムの *場所のライセンス プレートの配置* 機能をオンにする必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *場所のライセンス プレートの配置* 機能を検索して、この機能をオンまたはオフにすることができます。
+この記事で説明する機能を使用するには、システムの *場所のライセンス プレートの配置* 機能をオンにする必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *場所のライセンス プレートの配置* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="example-scenario"></a>シナリオ例
 
@@ -42,7 +42,7 @@ ms.locfileid: "8102792"
 
 ### <a name="set-up-the-feature-for-this-scenario"></a>このシナリオの機能の設定
 
-次の手順を完了して、このトピックに示されているシナリオの *場所ライセンス プレートの配置* 機能を設定します。
+次の手順を完了して、この記事に示されているシナリオの *場所ライセンス プレートの配置* 機能を設定します。
 
 #### <a name="location-profiles"></a>場所プロファイル
 

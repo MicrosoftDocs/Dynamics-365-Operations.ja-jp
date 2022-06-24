@@ -1,6 +1,6 @@
 ---
-title: 生産現場の実行インターフェイスに休暇残数を表示する
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management を設定し、給与統計を使用して、今年度の休暇残高の概要を作業者に示すシナリオ例について説明します。
+title: 生産現場の実行インターフェイスに休暇の残高を表示する
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management を設定し、給与統計を使用して、今年度の休暇残高の概要を作業者に示すシナリオ例について説明します。
 author: johanhoffmann
 ms.date: 04/22/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-04-22
 ms.dyn365.ops.version: 10.0.XX
-ms.openlocfilehash: a97858c72b0be50609cee552bd0635e2d68ea478
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 2a6b6f52bfa7539b7c9bb5841536b0d564d0274c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645348"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852276"
 ---
-# <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>生産現場の実行インターフェイスに休暇残数を表示する
+# <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>生産現場の実行インターフェイスに休暇の残高を表示する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management を設定し、給与統計を使用して、今年度の休暇残高の概要を各作業者に示すシナリオ例について説明します。 作業員は、生産現場の実行インターフェイスの **マイ デイ** ダイアログ ボックスで休暇残高を確認できます。
+この記事では、Microsoft Dynamics 365 Supply Chain Management を設定し、給与統計を使用して、今年度の休暇残高の概要を各作業者に示すシナリオ例について説明します。 作業員は、生産現場の実行インターフェイスの **マイ デイ** ダイアログ ボックスで休暇残高を確認できます。
 
 このシナリオでは、休暇計算年度が 9 月 1 日から 8 月 31 日までであるデンマークの休日法を使用しています。 このシナリオでは、会社は新しい作業者を採用し、今休暇計算年度の残りの期間に、作業者に 10 日間の休暇残高を与えます。
 

@@ -1,6 +1,6 @@
 ---
 title: 総勘定元帳への補助元帳の転送
-description: このトピックでは、総勘定元帳の補助元帳の転送プロセスに関する機能について説明します。
+description: この記事では、総勘定元帳の補助元帳の転送プロセスに関する機能について説明します。
 author: RyanCCarlson2
 ms.date: 12/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 70a34fa1f4ee540d89ec05816e4065fb3e1df9ef
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6d9b40409089e2050dc28c21040069107b766aa0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727317"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871249"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>総勘定元帳への補助元帳の転送
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、補助元帳仕訳のバッチの転送のルールに関連する機能について説明します。
+この記事では、補助元帳仕訳のバッチの転送のルールに関連する機能について説明します。
 
 バージョン 8.1 では、ルールの転送を許可するよう変更が加えられ、**同期** オプションは非推奨になりました。 詳細については、[Finance and Operations の削除済みまたは非推奨の機能](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20) を参照してください。
 

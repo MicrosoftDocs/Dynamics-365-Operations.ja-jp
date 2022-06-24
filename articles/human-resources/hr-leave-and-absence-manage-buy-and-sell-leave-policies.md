@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 23c743c29869f8c02ad67aa4b4fe54ec6ec0d016
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9db86f2a482e7a1c1eee854958cb3f097d6baf61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691557"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888820"
 ---
 # <a name="manage-buy-and-sell-leave-policies"></a>休暇の売買ポリシーの管理
 
 >[!Important]
->このトピックで説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
+>この記事で説明した機能は、現在スタンドアロンの Dynamics 365 Human Resources の顧客が利用できます。 Finance のリリース 10.0.26 以降に、Finance インフラストラクチャの今後のリリースで、一部またはすべての機能を使用できます。
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

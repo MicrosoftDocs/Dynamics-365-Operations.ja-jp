@@ -1,6 +1,6 @@
 ---
 title: 出荷先住所モジュール
-description: このトピックでは、出荷先住所モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
+description: この記事では、出荷先住所モジュールを取り上げ、Microsoft Dynamics 365 Commerce での構成方法について説明します。
 author: anupamar-ms
 ms.date: 02/11/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 30baef62e03cdaa766133efc4b182c61da3dc7b67e077d80716a035f0b5e40e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e30e639b7ba1c0caaf72fa66d13f80d04c2e861c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765197"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882199"
 ---
 # <a name="shipping-address-module"></a>出荷先住所モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、出荷先住所モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
+この記事では、出荷先住所モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
 
 出荷先住所モジュールにより、顧客がチェックアウト フロー中に注文の出荷先住所を追加または選択できます。 顧客がサインインしている場合、その顧客用に以前に保存されたすべての住所が表示され、そこから選ぶことができます。 顧客は、新しい住所を追加することもできます。 出荷先住所モジュールは、出荷を必要とする注文のすべての品目に対して使用されます。
 

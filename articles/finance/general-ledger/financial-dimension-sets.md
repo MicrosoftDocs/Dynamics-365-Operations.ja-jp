@@ -1,6 +1,6 @@
 ---
 title: 財務分析コード セット
-description: このトピックでは、財務分析コード セットについて説明し、その使用を最適化するためのヒントを提供します。
+description: この記事では、財務分析コード セットについて説明し、その使用を最適化するためのヒントを提供します。
 author: yukonpeegs
 ms.date: 03/07/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: c583a2a89b45b59ea76ffd8e38b6206c9ca9ed41
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3d4c15504b2ad128493e1bafa36aed271c2ab6dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722579"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864284"
 ---
 # <a name="financial-dimension-sets"></a>財務分析コード セット
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、財務分析コード セットについて説明し、その使用を最適化するためのヒントを提供します。
+この記事では、財務分析コード セットについて説明し、その使用を最適化するためのヒントを提供します。
 
 分析コード セットは、一般会計データをユーザー定義の方法で集計するために使用できる財務分析コードの順序付きリストです。 分析コード セットの主な用途は、試算表を定義することです。
 

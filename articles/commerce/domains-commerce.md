@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce のドメイン
-description: このトピックでは、Microsoft Dynamics 365 Commerce でのドメインの処理方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce でのドメインの処理方法について説明します。
 author: BrShoo
 ms.date: 05/10/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
-ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
+ms.openlocfilehash: c48c8bd57d90a8c7d47bfa4263cd9ab38002629b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8737349"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848957"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Dynamics 365 Commerce のドメイン
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce でのドメインの処理方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce でのドメインの処理方法について説明します。
 
-ドメインは Web ブラウザーで Dynamics 365 Commerce サイトに移動するために使用される Web アドレスです。 選択したドメイン ネーム サーバー (DNS) プロバイダーを使用して、ドメインの管理を制御します。 ドメインは、Dynamics 365 Commerce サイト ビルダー全体で参照され、公開時のサイトへのアクセス方法を調整します。 このトピックでは、Commerce サイトの開発と立ち上げのライフサイクルを通じてドメインがどのように処理および参照されるかを確認します。
+ドメインは Web ブラウザーで Dynamics 365 Commerce サイトに移動するために使用される Web アドレスです。 選択したドメイン ネーム サーバー (DNS) プロバイダーを使用して、ドメインの管理を制御します。 ドメインは、Dynamics 365 Commerce サイト ビルダー全体で参照され、公開時のサイトへのアクセス方法を調整します。 この記事では、Commerce サイトの開発と立ち上げのライフサイクルを通じてドメインがどのように処理および参照されるかを確認します。
 
 > [!NOTE]
 > 2022 年 5 月 6 日現在、Dynamics 365 Commerce で作成されたすべての環境は、以前の `.commerce.dynamics.com` のパターンに代わり、`.dynamics365commerce.ms` ドメインでプロビジョニングされます。 `.commerce.dynamics.com` ドメインでプロビジョニングされた既存の環境は引き続き機能します。

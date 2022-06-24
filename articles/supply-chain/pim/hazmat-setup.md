@@ -1,6 +1,6 @@
 ---
 title: 危険物の設定
-description: このトピックでは、危険物として品目を分類するために必要なデータを設定する方法について説明します。 危険物として分類されている品目を含む販売注文を作成すると、出荷時にこの販売注文に対して危険物のドキュメントが生成されます。
+description: この記事では、危険物として品目を分類するために必要なデータを設定する方法について説明します。 危険物として分類されている品目を含む販売注文を作成すると、出荷時にこの販売注文に対して危険物のドキュメントが生成されます。
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 95d7a4d5e61b2f0ff2a9d52b7ccfa8deec1b309d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778012"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888502"
 ---
 # <a name="set-up-hazardous-materials"></a>危険物の設定
 

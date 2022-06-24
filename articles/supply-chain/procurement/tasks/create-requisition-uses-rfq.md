@@ -1,6 +1,6 @@
 ---
 title: RFQ を使用する要求の作成
-description: このトピックでは、価格および仕入先情報を RFQ プロセスから購買要求へ追加する方法について説明します。
+description: この記事では、価格および仕入先情報を RFQ プロセスから購買要求へ追加する方法について説明します。
 author: GalynaFedorova
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78092205c1a1d149b4dc202e085871d1fe46c4ad
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5ecde250e3517464611b68fe3c960bfbfdf06319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675124"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846014"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>RFQ を使用する要求の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、価格および仕入先情報を RFQ プロセスから購買要求へ追加する方法について説明します。 このガイドで表示される例は USMF のデモ データ会社で使用でき、すべての手順を完了するためには管理者としてログインする必要があります。 このガイドのタスクは、調達担当者によって通常実行されます。
+この記事では、価格および仕入先情報を RFQ プロセスから購買要求へ追加する方法について説明します。 このガイドで表示される例は USMF のデモ データ会社で使用でき、すべての手順を完了するためには管理者としてログインする必要があります。 このガイドのタスクは、調達担当者によって通常実行されます。
 
 
 ## <a name="create-a-requisition"></a>要求の作成

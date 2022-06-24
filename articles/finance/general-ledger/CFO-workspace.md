@@ -1,6 +1,6 @@
 ---
 title: CFO ワークスペースへの財務分析コードの追加
-description: このトピックでは、CFO ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。
+description: この記事では、CFO ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。
 author: aprilolson
 ms.date: 08/01/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fb558fbe25bd8977b712101df15cce7a76556dda
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: ea453eed826dec2e97371ec559e91b94933bdce6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721874"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853383"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>CFO ワークスペースへの財務分析コードの追加
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、最高財務責任者 (CFO) ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。 CFO ワークスペースには、**概要** タブと **財務** タブがあります。これら 2 つのタブ上のレポートは、LedgerActivityMeasure および BudgetActivityMeasure という 2 つの措置によってサポートされています。 これら 2 つの措置と DimensionCombinationEntity エンティティの間に関係があります。 したがって、分析コードを選択できます。
+この記事では、最高財務責任者 (CFO) ワークスペースに財務分析コードを追加し、それにより元帳および予算のレポートを使用できるようにする方法を説明します。 CFO ワークスペースには、**概要** タブと **財務** タブがあります。これら 2 つのタブ上のレポートは、LedgerActivityMeasure および BudgetActivityMeasure という 2 つの措置によってサポートされています。 これら 2 つの措置と DimensionCombinationEntity エンティティの間に関係があります。 したがって、分析コードを選択できます。
 
 1. Finance の **エンティティ格納** ページで、**LedgerActivityMeasure** および **BudgetActivityMeasure** 措置を更新します。
 2. Microsoft Visual Studio で、アプリケーション エクスプローラーを開き、**LedgerCFO** を検索します。

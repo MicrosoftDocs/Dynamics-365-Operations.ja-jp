@@ -1,6 +1,6 @@
 ---
 title: 差引勘定の財務分析コードはどのように設定しますか?
-description: このトピックでは、差引勘定の財務分析コード機能を設定および使用するためのオプションについて説明します。
+description: この記事では、差引勘定の財務分析コード機能を設定および使用するためのオプションについて説明します。
 author: kweekley
 ms.date: 08/25/2021
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-08-17
 ms.dyn365.ops.version: 10.0.210
-ms.openlocfilehash: cb3033a615200a358c1b28b0991bae4b84470ae0
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: dd859629b0eb9f14fa4907699613382f3897d21d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720114"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878015"
 ---
 # <a name="how-do-i-set-up-balancing-financial-dimensions"></a>差引勘定の財務分析コードはどのように設定しますか?
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、差引勘定の財務分析コード機能を設定および使用するためのオプションについて説明します。
+この記事では、差引勘定の財務分析コード機能を設定および使用するためのオプションについて説明します。
 
 ## <a name="symptom"></a>現象
 
-差引勘定の財務分析コードを設定するには、2 つのオプションがあります。 最初のオプションは、**元帳** 設定ページ (**一般会計 \> 元帳の設定 \> 元帳**) の **差引勘定の財務分析コード** フィールドを使用することです。 2 番目のオプションは、**財務分析コード** ページ (**一般会計 > 勘定科目表 \> 分析コード \> 財務分析コード**) にある **分析コードに差引勘定が必要** フィールドを使用することです。 このトピックでは、これら 2 つのオプションの違いについて説明します。
+差引勘定の財務分析コードを設定するには、2 つのオプションがあります。 最初のオプションは、**元帳** 設定ページ (**一般会計 \> 元帳の設定 \> 元帳**) の **差引勘定の財務分析コード** フィールドを使用することです。 2 番目のオプションは、**財務分析コード** ページ (**一般会計 > 勘定科目表 \> 分析コード \> 財務分析コード**) にある **分析コードに差引勘定が必要** フィールドを使用することです。 この記事では、これら 2 つのオプションの違いについて説明します。
 
 ## <a name="resolution"></a>解決策
 

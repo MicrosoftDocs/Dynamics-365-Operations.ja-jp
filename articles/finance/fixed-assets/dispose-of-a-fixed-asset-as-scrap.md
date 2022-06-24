@@ -1,6 +1,6 @@
 ---
 title: 固定資産の仕損としての処分
-description: このトピックでは、仕損として処分された固定資産のトランザクションを除去するプロセスについて説明します。
+description: この記事では、仕損として処分された固定資産のトランザクションを除去するプロセスについて説明します。
 author: moaamer
 ms.date: 08/14/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: c30837da84bff67bbab80ff5116135e2533a867d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 6564314c70de1880e437c3c493689f12d96d91ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713081"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855436"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>固定資産の仕損としての処分
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、仕損として処分された固定資産のトランザクションを除去するプロセスについて説明します。 削除できるトランザクションタイプには、資産の取得、減価償却トランザクションなどの固定資産トランザクションが含まれます。 これらのトランザクションが削除されると、取得原価調整、減価償却調整、再評価、評価増および評価減の勘定など、貸借対照表の勘定に影響を与えます。
+この記事では、仕損として処分された固定資産のトランザクションを除去するプロセスについて説明します。 削除できるトランザクションタイプには、資産の取得、減価償却トランザクションなどの固定資産トランザクションが含まれます。 これらのトランザクションが削除されると、取得原価調整、減価償却調整、再評価、評価増および評価減の勘定など、貸借対照表の勘定に影響を与えます。
 
 | 取引                                         | 借方 (Dr.) | 貸方 (Cr.) |
 |-----------------------------------------------------|-------------|--------------|

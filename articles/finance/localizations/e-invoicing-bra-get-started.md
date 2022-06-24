@@ -1,6 +1,6 @@
 ---
 title: ブラジル向けの電子請求を開始する
-description: このトピックでは、Finance および Supply Chain Management でブラジル向けの電子請求を使い始めるための情報を提供します。
+description: この記事では、Finance および Supply Chain Management でブラジル向けの電子請求を使い始めるための情報を提供します。
 author: gionoder
 ms.date: 03/29/2021
 ms.topic: article
@@ -9,30 +9,32 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 82bbf806d207af0b15406e4bec516420db7f2c06
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 74debbca4ee365e05f1c15d45179f0cd1d23c3e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984856"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846587"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>ブラジル向けの電子請求を開始する 
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ブラジル向けの電子請求を使い始めるための情報を提供します。 このトピックでは、RCS (Regulatory Configuration Services) の国別の設定手順を説明し、トピック[電子請求を開始する](e-invoicing-get-started.md)で説明されている手順を補完しています。
+この記事では、ブラジル向けの電子請求を使い始めるための情報を提供します。 この記事では、RCS (Regulatory Configuration Services) の国別の設定手順を説明し、記事 [電子請求を開始する](e-invoicing-get-started.md)で説明されている手順を補完しています。
 
 ## <a name="country-specific-configuration-for-brazilian-nf-e-br-electronic-invoicing-feature"></a>ブラジル NF-e (BR) 電子請求機能の国別コンフィギュレーション
 
 **ブラジル NF-e (BR) 電子請求機能** のパラメーターの一部は、既定値で公開されます。 サービス環境に電子請求機能を導入する前に、値を確認し、業務処理のニーズをより反映するように更新してください。
 
-このセクションは、トピック [電子請求を開始する](e-invoicing-get-started.md)の **電子請求機能の国別構成** セクションを補完するものです。
+このセクションは、記事 [電子請求を開始する](e-invoicing-get-started.md)の **電子請求機能の国別構成** セクションを補完するものです。
 
 1. RCS の **グローバリゼーション機能** ワークスペースの **機能** セクションで、 **電子請求** タイルを選択します。
 2. **電子請求機能** ページで、作成した **ブラジル NF-e (BR)** 電子請求機能が選択されていることを確認します。
@@ -51,7 +53,7 @@ ms.locfileid: "7984856"
 
 Finance および Supply Chain Management に接続されたアプリケーションに対してアプリケーション設定をデプロイする前に、これらのステップを実行します。
 
-このセクションは、トピック [電子請求を開始する](e-invoicing-get-started.md)の **アプリケーション設定** セクションを補完するものです。
+このセクションは、記事 [電子請求を開始する](e-invoicing-get-started.md)の **アプリケーション設定** セクションを補完するものです。
 
 1. RCS の **グローバリゼーション機能** ワークスペースの **機能** セクションで、 **電子請求** タイルを選択します。
 2. **電子請求機能** ページで、**ブラジル NF-e (BR)** 電子請求機能が選択されていることを確認します。
@@ -71,7 +73,7 @@ Finance および Supply Chain Management に接続されたアプリケーシ�
 
 **ブラジル NFS-e ABRASF Curitiba 電子請求機能** のパラメーターの一部は、既定値で公開されます。 サービス環境に電子請求機能を導入する前に、値を確認し、業務処理のニーズに合わせて更新してください。
 
-このセクションは、トピック [電子請求を開始する](e-invoicing-get-started.md)の **電子請求機能の国別構成** セクションを補完するものです。
+このセクションは、記事 [電子請求を開始する](e-invoicing-get-started.md)の **電子請求機能の国別構成** セクションを補完するものです。
 
 1. RCS の **グローバリゼーション機能** ワークスペースの **機能** セクションで、 **電子請求** タイルを選択します。
 2. **電子請求機能** ページで、作成した **ブラジル NFS-e ABRASF Curitiba (BR)** 電子請求機能が選択されていることを確認します。
@@ -96,7 +98,7 @@ Finance および Supply Chain Management に接続されたアプリケーシ�
 
 Finance および Supply Chain Management に接続されたアプリケーションに対してアプリケーション設定をデプロイする前に、これらのステップを実行します。
 
-このセクションは、トピック [電子請求を開始する](e-invoicing-get-started.md)の **アプリケーション設定** セクションを補完するものです。
+このセクションは、記事 [電子請求を開始する](e-invoicing-get-started.md)の **アプリケーション設定** セクションを補完するものです。
 
 1. RCS の **グローバリゼーション機能** ワークスペースの **機能** セクションで、 **電子請求** タイルを選択します。
 2. **電子請求機能** ページで、**ブラジル NFS-e ABRASF Curitiba (BR)** 電子請求機能が選択されていることを確認します。

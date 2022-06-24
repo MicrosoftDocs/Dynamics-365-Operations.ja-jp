@@ -1,6 +1,6 @@
 ---
 title: 計画オーダーの確定
-description: このトピックでは、計画オーダーを確定する方法について説明します。 計画オーダーが確定されると、それらは実際の発注書、移動オーダー、または製造オーダーになります。
+description: この記事では、計画オーダーを確定する方法について説明します。 計画オーダーが確定されると、それらは実際の発注書、移動オーダー、または製造オーダーになります。
 author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30f3ee656b97e0337b6e3e78f0acb2300d7d85dc
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468472"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857521"
 ---
 # <a name="firm-planned-orders"></a>計画オーダーの確定
 
@@ -29,11 +29,11 @@ ms.locfileid: "8468472"
 - **自動確定** – 補充グループ、個々の品目、および品目とマスター プランの組み合わせに対する既定の確定タイム フェンスを定義します。 その後、マスター プランの実行時に、注文日付が確定用に指定されたタイム フェンス内である場合は、計画オーダーが自動的に確定されます。
 - **クエリベースの確定** – プロパティに基づいて計画オーダーを選択するクエリを定義します。 バッチ ジョブを設定して、定期的にクエリを実行し、一致する注文を確定できます。
 
-このトピックでは、各方法について詳細に説明します。
+この記事では、各方法について詳細に説明します。
 
-## <a name="enable-the-features-that-are-described-in-this-topic"></a><a name="enable-features"></a>このトピックで説明されている機能を有効にする
+## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>この記事で説明されている機能を有効にする
 
-計画オーダー機能のほとんどは、計画の最適化を使用する Microsoft Dynamics 365 Supply Chain Management のすべての標準インストールで利用できます。 ただし、このトピックで説明する機能のいくつかは、使用前に機能管理で有効にする必要があります。
+計画オーダー機能のほとんどは、計画の最適化を使用する Microsoft Dynamics 365 Supply Chain Management のすべての標準インストールで利用できます。 ただし、この記事で説明する機能のいくつかは、使用前に機能管理で有効にする必要があります。
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>計画オーダーの並列確定をオンまたはオフにする
 
@@ -97,7 +97,7 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 > 確定された派生オーダー (つまり、外注発注書) は、変更追跡が有効になっている場合は、状態が *確認中* と表示されます。
 
 > [!IMPORTANT]
-> このセクションで説明されている機能を計画の最適化で使用する前に、このトピックで前述したように、システムで [*計画の最適化の自動確定* 機能](#enable-features)を有効にする必要があります。 自動確定は、常に組み込みマスター プラン エンジンで使用できます。
+> このセクションで説明されている機能を計画の最適化で使用する前に、この記事で前述したように、システムで [*計画の最適化の自動確定* 機能](#enable-features) を有効にする必要があります。 自動確定は、常に組み込みマスター プラン エンジンで使用できます。
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>計画の最適化による自動確定と組み込み計画エンジンによる自動確定の比較
 
@@ -130,7 +130,7 @@ Supply Chain Management のバージョン 10.0.25 では、この機能は既�
 自動確定は、クエリ ベースの確定と組み合わせることができます。 たとえば、クエリ ベースの確定ジョブには、一致する自動確定補充コンフィギュレーションのタイム フェンスより長いフォワード タイム フェンスがあります。 したがって、クエリ ベースの確定ジョブは、自動確定がトリガーされる前に計画オーダーを処理します。 この動作を利用して、特定の仕入先への注文を、他の仕入先からの同様の製品の注文とは異なる方法でスケジュールできます。
 
 > [!IMPORTANT]
-> このセクションで説明されている機能を使用する前に、このトピックで前述したように、システムで [*フィルター処理を使用した計画オーダーの確定* 機能](#enable-features)を有効にする必要があります。
+> このセクションで説明されている機能を使用する前に、この記事で前述したように、システムで [*フィルター処理を使用した計画オーダーの確定* 機能](#enable-features) を有効にする必要があります。
 
 クエリ ベースの確定プロセスを使用して計画オーダーを確定するには、次の手順に従います。
 

@@ -1,6 +1,6 @@
 ---
 title: 消費税コードを設定します
-description: このトピックでは、Dynamics 365 Finance で売上税コードを設定する方法について説明します。
+description: この記事では、Dynamics 365 Finance で売上税コードを設定する方法について説明します。
 author: twheeloc
 ms.date: 09/27/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 69e2cf9a16fe0e694154cccf9b49944b49c79b90
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: b12133583f40cc17cb85f6dbd86697592af25caf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565856"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858471"
 ---
 # <a name="set-up-sales-tax-codes"></a>消費税コードを設定します
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、消費税コードを設定する方法について説明します。 売上税コードは、法人が計算、収集、税務当局への支払いの義務のあるそれぞれの間接税または関税について作成されます。
+この記事では、消費税コードを設定する方法について説明します。 売上税コードは、法人が計算、収集、税務当局への支払いの義務のあるそれぞれの間接税または関税について作成されます。
 
 このタスクでは、USMF というデモ会社を使用します。
 

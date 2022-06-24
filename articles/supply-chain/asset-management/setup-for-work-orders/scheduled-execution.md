@@ -1,6 +1,6 @@
 ---
 title: 実行予定
-description: このトピックでは、資産管理の実行予定について説明します。
+description: この記事では、資産管理の実行予定について説明します。
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4ace2da2c4bc3d5cc404301fc4ecef5ceeef240dae6569a4d28f621b02637930
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e9d6af5c224f683481378da57708fda3c1b7207
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779669"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848052"
 ---
 # <a name="scheduled-execution"></a>実行予定
 

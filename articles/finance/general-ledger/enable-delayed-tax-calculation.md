@@ -1,6 +1,6 @@
 ---
 title: 仕訳帳の税金計算遅延の有効化
-description: このトピックでは、仕訳帳明細行の数が非常に大きい場合に、税金計算遅延の機能をオンにして、税額計算のパフォーマンスを向上させる方法について説明します。
+description: この記事では、仕訳帳明細行の数が非常に大きい場合に、税金計算遅延の機能をオンにして、税額計算のパフォーマンスを向上させる方法について説明します。
 author: EricWang
 ms.date: 09/18/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: fddb6d3a9850b8f2f88f813f9591006637c7e535
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 02a038318d4c0fb44b6fcc4bb159ea87c2e9368a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713137"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887922"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>仕訳帳の税金計算遅延の有効化
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、仕訳帳の消費税計算を遅らせる方法について説明します。 この機能により、多数の仕訳帳明細行がある場合に、税額計算のパフォーマンスを向上させることができます。
+この記事では、仕訳帳の消費税計算を遅らせる方法について説明します。 この機能により、多数の仕訳帳明細行がある場合に、税額計算のパフォーマンスを向上させることができます。
 
 既定では、仕訳帳明細行の消費税金額は、税金に関連するフィールドが更新されるたびに計算されます。 これらのフィールドには、消費税グループと品目消費税グループのフィールドが含まれます。 仕訳帳明細行を更新すると、すべての仕訳帳明細行の税額が再計算されます。 この動作は、ユーザーに対してリアルタイムで計算された税額を表示しますが、仕訳帳明細行の数が非常に大きい場合はパフォーマンスにも影響を与える可能性があります。
 

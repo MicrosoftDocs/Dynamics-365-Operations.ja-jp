@@ -1,6 +1,6 @@
 ---
-title: 買い物カゴ アイコン モジュール
-description: このトピックでは、買い物カゴ アイコン モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+title: カート アイコン モジュール
+description: この記事では、買い物カゴ アイコン モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5b86b0c843a680dd0c46295a69e12d6e3542619
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735681"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859116"
 ---
 # <a name="cart-icon-module"></a>カート アイコン モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、買い物カゴ アイコン モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+この記事では、買い物カゴ アイコン モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
 買い物カゴ アイコン モジュールは、ページのヘッダー モジュールで買い物カゴを表し、買い物カゴ内の品目数を示します。 買い物カゴ アイコン モジュールには、買い物カゴ アイコンにカーソルを合わせると、買い物カゴの概要 (ミニカートとも呼ばれる) も表示されます。 ミニ カートには、買い物カゴ ページに移動することなく、買い物カゴ内の品目の概要が表示されます。 また、ユーザーが概要に満足している場合、チェックアウト ページに直接移動することもできます。 これにより、ページ ナビゲーションの回数が減り、迅速にチェックアウトできるようになります。 
 

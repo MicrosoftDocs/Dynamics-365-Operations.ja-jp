@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Service (RCS) - グローバリゼーション機能
-description: このトピックでは、Microsoft Regulatory Configuration Service (RCS) とグローバル レポジトリを使用して、グローバリゼーション機能を作成および使用する方法ついて説明します。
+description: この記事では、Microsoft Regulatory Configuration Services (RCS) とグローバル レポジトリを使用して、グローバリゼーション機能を作成および使用する方法ついて説明します。
 author: JaneA07
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e8df8a56d493e58f28699a87dd9dab1f87540a4ee327450384f89e6d426ba1a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf08f25f7d092e0f93284a4019096378543adb9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760634"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888897"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Service (RCS) - グローバリゼーション機能
 
@@ -40,7 +40,7 @@ Microsoft Regulatory Configuration Services (RCS) を使用すると、電子請
 - RCS インスタンスへのアクセス。
 - 構成プロバイダーを作成して有効化します。 詳細については、[構成プロバイダーを作成して、有効としてマークする](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) を参照してください。
 
-Finance and Operations アプリ インスタンスで、次の手順を実行します。
+財務と運用アプリ インスタンスで、次の手順に従います:
 
 1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. RCS 環境が貴社にプロビジョニングされていない場合は、**Regulatory services – 構成** を選択し、続いてプロビジョニングの指示に従います。
@@ -64,7 +64,7 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 
 ## <a name="access-globalization-features"></a>グローバリゼーション機能にアクセスする
 
-1. このトピックで既に説明したように、機能の管理については、**グローバリゼーション機能** 機能が有効になっていることを確認してください。
+1. この記事で既に説明したように、機能の管理については、**グローバリゼーション機能** 機能が有効になっていることを確認してください。
 2. 新しい **グローバリゼーション機能** ワークスペースを開き、**機能** で、**電子請求** タイルを選択します。
 
     ![グローバル機能ワークスペース。](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
@@ -161,7 +161,7 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 - **表示** - 更新を必要としない基本機能構成を表示します。
 - **編集** - 選択した構成の下書きバージョンを作成することで、書式デザイナーで形式または形式のマッピングを編集できます。
 - **削除** - 選択した構成を機能から削除します。
-- **リベース** - 機能をリベースします。 詳細については、このトピックの後半の [派生したグローバリゼーション機能をリベースする](#rebase) セクションを参照してください。
+- **リベース** - 機能をリベースします。 詳細については、この記事の後半の [派生したグローバリゼーション機能をリベースする](#rebase) セクションを参照してください。
 
 ### <a name="setups"></a>設定
 
@@ -182,7 +182,7 @@ Finance and Operations アプリ インスタンスで、次の手順を実行�
 
 以下のアクションは、環境に利用できます。
 
-- **有効化** - 選択した機能バージョンについて、発行済の環境を選択し、使用可能な場合に **有効開始** 日を選択します。 詳細については、このトピックの後半の [有効化のための環境を構成する](#configureenvironment) を参照してください。
+- **有効化** - 選択した機能バージョンについて、発行済の環境を選択し、使用可能な場合に **有効開始** 日を選択します。 詳細については、この記事の後半の [有効化のための環境を構成する](#configureenvironment) を参照してください。
 - **キャンセル** - 機能の設定に対して環境を削除します。
 
 ### <a name="organizations"></a>組織

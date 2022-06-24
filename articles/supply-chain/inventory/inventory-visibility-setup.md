@@ -1,8 +1,8 @@
 ---
 title: Inventory Visibility Add-in をインストールする
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の在庫視覚化アドインのインストールの方法を説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の在庫視覚化アドインのインストールの方法を説明します。
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a49f35211f30cdb76104cc5be78f5b114320a228
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062653"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895702"
 ---
-# <a name="install-and-set-up-inventory-visibility"></a>在庫視覚化のインストールと設定
+# <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibility のインストールと設定
 
 [!include [banner](../includes/banner.md)]
 
+この記事では、Microsoft Dynamics 365 Supply Chain Management の在庫視覚化アドインのインストールの方法を説明します。
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management の在庫視覚化アドインのインストールの方法を説明します。
+Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化アドインをインストールする必要があります。 LCS は、財務および操作アプリのアプリケーション ライフサイクルを管理するのをサポートする定期的に更新されるサービスと環境を提供するコラボレーション ポータルです。 詳細については、 [Lifecycle Services のリソース](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md) を参照してください。
 
-Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化アドインをインストールする必要があります。 LCS は、財務および操作アプリのアプリケーション ライフサイクルを管理するのをサポートする定期的に更新されるサービスと環境を提供するコラボレーション ポータルです。
-
-詳細については、 [Lifecycle Services のリソース](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md) を参照してください。
+> [!TIP]
+> 在庫の可視性アドイン ユーザー グループに参加することをお勧めします。このグループでは、役立つガイドを見つけて最新の更新プログラムを取得し、在庫の可視性の使用に関するご質問を投稿することができます。 参加するには、[inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) の在庫品目一覧製品チームに電子メールを送信して、それに Supply Chain Management 環境 ID を記載してください。
 
 ## <a name="inventory-visibility-prerequisites"></a>在庫視覚化の前提条件
 
@@ -44,6 +44,9 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化ア
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Inventory Visibility Add-in をインストールする
 
 アドインをインストールする前に、アプリケーションを登録し、Azure サブスクリプションの下の Azure Active Directory (Azure AD) にクライアント シークレットを追加します。 手順については、[アプリケーションの登録](/azure/active-directory/develop/quickstart-register-app)および[クライアント シークレットの追加](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)を参照してください。 **アプリケーション (クライアント) ID**、**クライアント シークレット**、および **テナント ID** の値は後で必要になるので、必ずメモしておいてください。
+
+> [!IMPORTANT]
+> 複数の LCS 環境を使用する場合は、環境ごとに異なる Azure AD アプリケーションを作成します。 同じアプリケーション ID とテナント ID を使用して異なる環境の在庫視覚化アドインをインストールした場合、古い環境ではトークンの問題が発生します。 その結果、最後にインストールされたものだけが有効になります。
 
 アプリケーションを登録し、クライアント シークレットを Azure AD に追加した後、次の手順に従って在庫視覚化アドインをインストールします。
 
@@ -72,11 +75,18 @@ Microsoft Dynamics Lifecycle Services (LCS) を使用して、在庫可視化ア
 1. **インストール** を選択します。 アドインの状態は、**インストール中** として表示されます。 インストールが完了したら、ページを更新します。 状態は **インストール済** に変更されます。
 1. Dataverse で、左ナビゲーションの **アプリ** セクションを選択し、**在庫可視化** Power Apps が正常にインストールされていることを確認します。 **アプリ** セクションが存在しない場合は、在庫可視化製品チーム ([inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com)) にお問い合わせください。
 
-> [!TIP]
-> 在庫の可視性アドイン ユーザー グループに参加することをお勧めします。このグループでは、役立つガイドを見つけて最新の更新プログラムを取得し、在庫の可視性の使用に関するご質問を投稿することができます。 参加するには、[inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) の在庫品目一覧製品チームに電子メールを送信して、それに Supply Chain Management 環境 ID を記載してください。
-
-> [!IMPORTANT]
-> 複数の LCS 環境を使用する場合は、環境ごとに異なる Azure AD アプリケーションを作成します。 同じアプリケーション ID とテナント ID を使用して異なる環境の在庫視覚化アドインをインストールした場合、古い環境ではトークンの問題が発生します。 最後にインストールされたものだけが有効になります。
+> [!NOTE]
+> LCS ページからインストールするのに 1 時間以上かかる場合、Dataverse 環境にソリューションをインストールするためのアクセス許可がユーザー アカウントにない可能性があります。 問題を解決するには、次の手順に従います。
+>
+> 1. LCS ページで、在庫可視化アドインのインストール プロセスをキャンセルします。
+> 1. [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインし、アドインのインストールに使用するユーザー アカウントに "Dynamics 365 Unified Operations 計画" ライセンスが割り当てられているかを確認します。 必要に応じてライセンスを割り当てます。
+> 1. 関連するユーザー アカウントを使用して [Power Platform 管理センター](https://admin.powerplatform.microsoft.com) にログインします。 次のステップに従って、在庫視覚化アドインをインストールします。
+>     1. アドインをインストールする環境を選択します。
+>     1. **Dynamics 365 アプリ** を選択します。
+>     1. **アプリをインストールする** を選択します。
+>     1. **在庫視覚化** を選択する
+>
+> 1. インストールが完了したら、LCS ページに戻ってもう一度やり直し、**在庫視覚化** アドインを再インストールします。
 
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>在庫可視化アドインをアンインストールする
 

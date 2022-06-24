@@ -1,6 +1,6 @@
 ---
 title: 既定のカテゴリ ランディング ページと検索結果ページの概要
-description: このトピックでは、Dynamics 365 Commerce での既定のカテゴリ ランディング ページと検索結果ページの概要を提供します。
+description: この記事では、Dynamics 365 Commerce での既定のカテゴリ ランディング ページと検索結果ページの概要を提供します。
 author: ashishmsft
 ms.date: 06/30/2020
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982437"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881855"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>既定のカテゴリ ランディング ページと検索結果ページの概要
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce E コマースでの既定のカテゴリ ランディング ページと検索結果ページの概要を提供します。
+この記事では、Microsoft Dynamics 365 Commerce E コマースでの既定のカテゴリ ランディング ページと検索結果ページの概要を提供します。
 
 ## <a name="default-category-landing-page"></a>既定のカテゴリ ランディング ページ
 
@@ -32,7 +32,7 @@ ms.locfileid: "7982437"
 
 ![既定のカテゴリ ランディング ページ。](./media/SimpleCategoryLandingDressCategory.png)
 
-ページの上部には、販売促進マネージャーがカテゴリ化したすべての製品カテゴリおよび他のページを表示するヘッダーがあります。 コンフィギュレーションはチャネル ナビゲーション階層のコンフィギュレーションの一部として実行されます。 ページの下部には、買い物客が興味を持つ可能性のあるさまざまなトピックへのクイック リンクを含むフッターがあります。
+ページの上部には、販売促進マネージャーがカテゴリ化したすべての製品カテゴリおよび他のページを表示するヘッダーがあります。 コンフィギュレーションはチャネル ナビゲーション階層のコンフィギュレーションの一部として実行されます。 ページの下部には、買い物客が興味を持つ可能性のあるさまざまな記事へのクイック リンクを含むフッターがあります。
 
 カテゴリには、次のコンポーネントが不可欠です。
 

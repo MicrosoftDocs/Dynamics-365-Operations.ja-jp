@@ -1,6 +1,6 @@
 ---
 title: 製品の分析コード値を見本として表示する設定
-description: このトピックでは、Microsoft Dynamics 365 Commerce 本ブで製品分析コード値を見本として構成する方法 について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce headquarters で製品分析コード値を見本として構成する方法について説明します。
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a21e02a8e5aacfa5251b9b7bcbc451fa886d37f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764617"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892655"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>製品の分析コード値を見本として表示する設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 本ブで製品分析コード値を見本として構成する方法 について説明します。 製品の分析コードに関する詳細については、[製品の分析コード](../../supply-chain/pim/product-dimensions.md) を参照してください。
+この記事では、Microsoft Dynamics 365 Commerce headquarters で製品分析コード値を見本として構成する方法について説明します。 製品の分析コードに関する詳細については、[製品の分析コード](../../supply-chain/pim/product-dimensions.md) を参照してください。
 
 Dynamics 365 Commerce では、製品のバリエーションを表現するために、サイズ、スタイル、カラーの分析コードに対応しています。 製品の分析コードにはフレンドリ名が付けられており、製品の詳細ページ (PDP) に表示され、製品のバリエーションを選択できるようになっています。 たとえば、サイズであれば「小」、「中」、「大」、色であれば「黒」、「茶」などです。 しかし、製品のバリエーションが多い場合は、各製品のバリエーションごとに画像を表示するには複数の選択が必要になります。 そのため、顧客が製品のバリエーションを参照して選択するのに時間がかかり、面倒な作業となってしまいます。
 

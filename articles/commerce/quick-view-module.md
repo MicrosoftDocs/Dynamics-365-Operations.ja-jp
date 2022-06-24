@@ -1,6 +1,6 @@
 ---
 title: クイック ビュー モジュール
-description: このトピックでは、クイック ビュー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: この記事では、クイック ビュー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 5ba42806d8f77f41ab9c5cf5e26b20ecb647aadf
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: e9066357fda4f5d91c547622ac64d8c4eef253ae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780821"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847578"
 ---
 # <a name="quick-view-module"></a>クイック ビュー モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、クイック ビュー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+この記事では、クイック ビュー モジュールと Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
 クイック ビュー モジュールを使用すると、商品詳細ページ (PDP) に移動することなく、リストページで商品を閲覧した際に商品情報を素早く表示し、リストページから1つ以上の商品をカートに追加することができます。 クイックビューモジュールは、ユーザーが「カートに追加」を決断するために必要な製品情報の概要を提供します。 また、PDP へのリンクも提供されており、ユーザーは追加の製品詳細や購入オプションを確認することができます。
 

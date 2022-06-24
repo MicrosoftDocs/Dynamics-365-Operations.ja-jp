@@ -1,6 +1,6 @@
 ---
 title: ビジネス ドメイン固有のカテゴリ内の ER 関数のリスト
-description: このトピックでは、電子申告 (ER) でサポートされるビジネス ドメイン固有の関数について説明します。
+description: この記事では、電子申告 (ER) でサポートされるビジネス ドメイン固有の関数について説明します。
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8f0812e4262a264ffc89b72e0f4fc8c55d6c6822095f550c8f05296bb057a38
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9df826dcc0b672977d4d8af1feb985ab9a0ab7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712336"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879952"
 ---
 # <a name="list-of-er-functions-in-the-business-domainspecific-category"></a>ビジネス ドメイン固有のカテゴリ内の ER 関数のリスト
 
 [!include [banner](../includes/banner.md)]
 
-電子報告 (ER) ドメイン固有の関数を使用すると、Microsoft Dynamics 365 Finance の実装固有の計算およびデータ アクセス要求を実行できます。 このトピックでは、これらの関数の概要を示します。
+電子報告 (ER) ドメイン固有の関数を使用すると、Microsoft Dynamics 365 Finance の実装固有の計算およびデータ アクセス要求を実行できます。 この記事では、これらの関数の概要を示します。
 
 ## <a name="list-of-supported-functions"></a>サポートされている関数のリスト
 

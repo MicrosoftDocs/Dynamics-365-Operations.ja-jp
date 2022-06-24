@@ -1,6 +1,6 @@
 ---
 title: 人物の学歴
-description: このトピックでは、Dynamics 365 Human Resources の人物の学歴エンティティについて説明します。
+description: この記事では、Dynamics 365 Human Resources の人物の学歴エンティティについて説明します。
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6334467de488ed24ce684a2a059a5ffd0cf04959
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0fbbb467852d2aeb070c7732c9aa3108fd504de0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064969"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893906"
 ---
 # <a name="person-education"></a>人物の学歴
 
@@ -27,7 +27,7 @@ ms.locfileid: "8064969"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の人物の学歴エンティティについて説明します。
+この記事では、Dynamics 365 Human Resources の人物の学歴エンティティについて説明します。
 
 物理名 : mshr_hcmpersoneducationentity
 

@@ -1,6 +1,6 @@
 ---
 title: ウィザードを使用した番号順序の設定
-description: このトピックでは、ウィザードを使用して必要なすべての番号順序を同時に設定する方法を説明します。
+description: この記事では、ウィザードを使用して必要なすべての番号順序を同時に設定する方法を説明します。
 author: SunilGarg
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7388a835147e1e8242463fee98c57c300d062877
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: cae739aad1166eee1abebe3c0adc7939bca55bc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847066"
 ---
 # <a name="set-up-number-sequences-using-a-wizard"></a>ウィザードを使用した番号順序の設定
 
 [!include [banner](../../includes/banner.md)]
 
-番号順序は、マスタ データ レコードおよびトランザクション レコードに必要な読みやすい固有 ID の生成に使用されます。 ID が必要なマスタ データまたはトランザクション レコードは、参照先と呼ばれます。 参照先に新しいレコードを作成するには、事前に番号順序を設定して参照先に関連付ける必要があります。 このトピックでは、ウィザードを使用して必要なすべての番号順序を同時に設定する方法を説明します。 この手順の作成に使用するデモ データの会社は USMF です。
+番号順序は、マスタ データ レコードおよびトランザクション レコードに必要な読みやすい固有 ID の生成に使用されます。 ID が必要なマスタ データまたはトランザクション レコードは、参照先と呼ばれます。 参照先に新しいレコードを作成するには、事前に番号順序を設定して参照先に関連付ける必要があります。 この記事では、ウィザードを使用して必要なすべての番号順序を同時に設定する方法を説明します。 この手順の作成に使用するデモ データの会社は USMF です。
 
 1. **ナビゲーション > モジュール > 組織管理 > 番号順序 > 番号順序** の順に移動します。
 2. **生成** を選択します。

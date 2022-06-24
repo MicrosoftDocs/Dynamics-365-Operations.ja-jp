@@ -1,6 +1,6 @@
 ---
 title: Commerce 環境での複数の B2C テナントのコンフィギュレーション
-description: このトピックでは、専用の Dynamics 365 Commerce 環境で、複数のチャネルごとの Microsoft Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントの設定時期と方法について説明します。
+description: この記事では、専用の Dynamics 365 Commerce 環境でユーザー認証用に、複数のチャネルごとの Microsoft Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントの設定時期と方法について説明します。
 author: BrianShook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a372561b8a6cdca8e1a3dc362009379884f1a3414330f3f056d4c3af7703a132
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13504a612c388b4720ec3328aaf2db83da2aad8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736407"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890572"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Commerce 環境での複数の B2C テナントのコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、専用の Dynamics 365 Commerce 環境で、複数の Microsoft Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントをチャネルごとに設定する時期と方法について説明します。
+この記事では、専用の Dynamics 365 Commerce 環境で、複数の Microsoft Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントをユーザー認証用にチャネルごとに設定する時期と方法について説明します。
 
 Dynamics 365 Commerce では Azure AD B2C クラウド ID サービスを使用して、ユーザーの資格情報と認証フローをサポートします。 ユーザーは認証フローを使用して、パスワードの登録、ログイン、およびリセットを行うことができます。 Azure AD B2C では、ユーザー名やパスワードなどの機密性の高い認証情報を保存します。 ユーザー レコードは、各 B2C テナントに固有であり、ユーザー名 (電子メールアドレス) またはソーシャル ID プロバイダーの資格情報を使用します。
 

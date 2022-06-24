@@ -1,6 +1,6 @@
 ---
 title: カレンダーの作成および作業時間の生成
-description: カレンダーは、運営リソースの能力と作業時間を説明します。 このトピックは、作業時間テンプレートに基づいて作業カレンダーを定義する方法について説明します。
+description: カレンダーは、運営リソースの能力と作業時間を説明します。 この記事は、作業時間テンプレートに基づいて作業カレンダーを定義する方法について説明します。
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: business-process
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b49b5393448bc501abd1b96123b64c034d7cc67
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 811f49307a8ae44bbee9906cb40a3ca31101f52b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692894"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846332"
 ---
 # <a name="create-calendars-and-generate-working-times"></a>カレンダーの作成および作業時間の生成
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> このトピックで説明した機能は、現在 Finance インフラストラクチャの Human Resources の顧客が利用できます。  
+> この記事で説明した機能は、現在 Finance インフラストラクチャの Human Resources の顧客が利用できます。  
 
 
-カレンダーは、運営リソースの能力と作業時間を説明します。 このトピックは、作業時間テンプレートに基づいて作業カレンダーを定義する方法について説明します。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。
+カレンダーは、運営リソースの能力と作業時間を説明します。 この記事は、作業時間テンプレートに基づいて作業カレンダーを定義する方法について説明します。 デモ データ会社 USMF または独自のデータを使用してこの手順の説明を見ることができます。
 
 1. ホーム ページで、**リソース ライフサイクル管理** を選択します。
 2. **カレンダー** を選択します。

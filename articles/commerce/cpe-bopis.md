@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Commerce の評価環境で BOPIS を構成する
-description: このトピックでは、プロビジョニング後の Microsoft Dynamics 365 Commerce 環境評価におけるオンライン購入、店舗での受け取り (BOPIS) の構成方法について説明します。
+title: Dynamics 365 Commerce 評価環境での BOPIS のコンフィギュレーション
+description: この記事では、プロビジョニング後の Microsoft Dynamics 365 Commerce 評価環境におけるオンライン購入、店舗での受け取り (BOPIS) の構成方法について説明します。
 author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,30 +14,30 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 379537fd490be98497b6e7c5cdfbc33798fe28ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861969"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce 評価環境での BOPIS のコンフィギュレーション
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、プロビジョニング後の Microsoft Dynamics 365 Commerce 評価環境におけるオンライン購入、店頭受取 (BOPIS) の構成方法について説明します。
+この記事では、プロビジョニング後の Microsoft Dynamics 365 Commerce 評価環境におけるオンライン購入、店頭受取 (BOPIS) の構成方法について説明します。
 
 ## <a name="prerequisite"></a>前提条件
 
-このトピックに記載の手順は、Commerce の評価環境のプロビジョニングと構成が完了した後にのみ実行してください。 環境のプロビジョニングと構成方法については、 [Dynamics 365 Commerce の評価環境をプロビジョニングする](provisioning-guide.md) と [ Dynamics 365 Commerce の評価環境を構成する](./cpe-post-provisioning.md) を参照してください。
+この記事に記載の手順は、Commerce の評価環境のプロビジョニングと構成が完了した後にのみ実行してください。 環境のプロビジョニングと構成方法については、 [Dynamics 365 Commerce の評価環境をプロビジョニングする](provisioning-guide.md) と [ Dynamics 365 Commerce の評価環境を構成する](./cpe-post-provisioning.md) を参照してください。
 
-Commerce 環境のプロビジョニングとエンドツーエンドの構成完了後に、このトピックを使用して BOPIS のシナリオを有効化することができます。
+Commerce 環境のプロビジョニングとエンドツーエンドの構成完了後に、この記事を使用して BOPIS のシナリオを有効化することができます。
 
 ## <a name="configure-the-pos"></a>POS の構成
 
 ### <a name="configure-modern-pos"></a>Modern POS の構成
 
-クレジット カードの支払を含む BOPIS シナリオには、ハードウェア ステーションが必要です。 ハードウェア ステーションは、Windows 用および、 Android 用 Modern POS プログラムに組み込まれています。 iOS 用の Cloud POS または Modern POS を使用している場合、販売時点管理（POS）クライアントは、共有ハードウェア ステーションとペアリングする必要があります。 このトピックでは、Windows 用 BOPIS と Android クライアントの設定方法について説明します。 共有ハードウェア ステーションを設定する方法の詳細については、[小売りハードウェア ステーションの設定とインストール](./retail-hardware-station-configuration-installation.md) を参照してください。
+クレジット カードの支払を含む BOPIS シナリオには、ハードウェア ステーションが必要です。 ハードウェア ステーションは、Windows 用および、 Android 用 Modern POS プログラムに組み込まれています。 iOS 用の Cloud POS または Modern POS を使用している場合、販売時点管理（POS）クライアントは、共有ハードウェア ステーションとペアリングする必要があります。 この記事では、Windows 用 BOPIS と Android クライアントの設定方法について説明します。 共有ハードウェア ステーションを設定する方法の詳細については、[小売りハードウェア ステーションの設定とインストール](./retail-hardware-station-configuration-installation.md) を参照してください。
 
 1. **小売りとコマース\> チャンネル設定 \> POS 設定 \> レジスター の順に移動します**。
 2. **SANFRAN-5** の登録を選択し、 **編集** を選択します。
@@ -67,7 +67,7 @@ Commerce 環境のプロビジョニングとエンドツーエンドの構成�
 5. 認証ダイアログ ボックスが表示されます。 既に作業者 **000713-Andrew Collette** に関連付けられている電子メール アドレスを使用するアカウントを選択します。
 
     > [!NOTE]
-    > 作業者に ID が関連付けられていない場合、有効化は失敗します。 この場合は、トピック [Dynamics 365 Commerce 評価環境の構成](cpe-post-provisioning.md#associate-a-worker-with-your-identity) 配下の「作業者とあなたの ID を関連付ける」 に記載の手順に従ってください。
+    > 作業者に ID が関連付けられていない場合、有効化は失敗します。 この場合は、記事 [Dynamics 365 Commerce 評価環境の構成](cpe-post-provisioning.md#associate-a-worker-with-your-identity) の「作業者と ID の関連付け」 に記載の手順に従ってください。
     
 6. 組織によるデバイス管理を許可するかどうかを確認するメッセージが表示された場合は、**このアプリのみ** を選択します。
 7. 有効化が完了したら、**開始する** を選択します。

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4036378ca70089a9978a9bf5fb48c058a2064cdc
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5fe8ecd368bc63eed43c86053084ca67ef9beac6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689497"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859520"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Power Apps および Power Automate を使用した拡張
 
@@ -33,7 +33,7 @@ ms.locfileid: "8689497"
 この記事では、Microsoft Power Apps および Microsoft Power Automate を使用する Microsoft Dynamics 365 Human Resources の拡張性シナリオのいくつかの例を説明します。 各例に関連付けられているソリューション パッケージを Power Apps 環境にインポートすることができます。 次に、そのパッケージをガイダンスもしくは組織に適用できるシナリオを実装するための開始点として使用できます。
 
 > [!IMPORTANT]
-> このトピックで説明されているテンプレートおよびアプリを「そのまま」使用する場合は、それらをテストして、実装に固有のすべてのシナリオをカバーしていることを確認してください。
+> この記事で説明されているテンプレートおよびアプリを "そのまま" 使用する場合は、それらをテストして、実装に固有のすべてのシナリオをカバーしていることを確認してください。
 
 ## <a name="prerequisites"></a>必要条件
 

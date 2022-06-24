@@ -1,6 +1,6 @@
 ---
 title: 属性および属性グループの管理
-description: このトピックでは、ユーザー定義フィールドを通して製品およびその特性を説明する方法を提供する、属性の使用方法について説明します。
+description: この記事では、ユーザー定義フィールドを通して製品およびその特性を説明する方法を提供する、属性の使用方法について説明します。
 author: ashishmsft
 ms.date: 04/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd74cb7795366bdca80e47d79a9591af69a16daf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876667"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>属性および属性グループの管理
 
@@ -85,7 +85,7 @@ ms.locfileid: "6727657"
 
 *属性のメタデータ* では、各製品の属性がどのように動作するかを指定するオプションを選択できます。 たとえば、属性が必要か、検索で属性を使用できるか、フィルターとして属性を使用できるか特定することができます。
 
-製品では、属性メタデータの設定はチャネル レベルで上書きできます。 この機能は、このトピックの後半で説明されます。
+製品では、属性メタデータの設定はチャネル レベルで上書きできます。 この機能は、この記事の後半で説明されます。
 
 ご存知のように、**属性** ページには、属性メタデータに関連するオプションが含まれています。 **POS の属性メタデータ** のもと、**絞り込み可能** と名付けられたオプションは、販売時点管理 (POS) での属性値の動作、またはシステムがこれらの属性値を処理する方法に影響します。 **絞り込み可能** オプションから **はい** に設定できる属性のみ、POS での製品の洗練またはフィルター処理のために表示されます。
 

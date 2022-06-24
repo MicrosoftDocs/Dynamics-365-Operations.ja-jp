@@ -1,6 +1,6 @@
 ---
 title: 連結と削除の概要
-description: このトピックは、連結および消去プロセスに関する一般情報を提供します。 これには、よく寄せられる質問への回答が含まれます。
+description: この記事は、連結および消去プロセスに関する一般情報を提供します。 これには、よく寄せられる質問への回答が含まれます。
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670b238580ecf800686324fe664be747c551090d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: cd7647df49883f0e3b6cbb2d21b19ca2acb2f065
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710701"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871394"
 ---
 # <a name="consolidation-and-elimination-overview"></a>連結と削除の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、連結および消去プロセスに関する一般情報を提供します。 これには、よく寄せられる質問への回答が含まれます。
+この記事は、連結および消去プロセスに関する一般情報を提供します。 これには、よく寄せられる質問への回答が含まれます。
 
 データを連結する場合、複数の関連会社の財務結果は 1 つの連結した会社の結果にまとめられます。 関連会社は、さまざまなバージョンまたはシステムを使用している場合があり、完全に所有されていない場合や、さまざまな通貨を使用している場合があります。 データを連結するための複数のオプションがあります。
 

@@ -1,6 +1,6 @@
 ---
 title: マスタ データ ルックアップ用の税構成のカスタマイズ
-description: このトピックでは、マスターデータの検索機能を拡張するために、税の構成をカスタマイズする方法について説明します。
+description: この記事では、マスターデータの検索機能を拡張するために、税の構成をカスタマイズする方法について説明します。
 author: kai-cloud
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69541316ad4c6c4bb404ea142844ce596b5502b9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 31c15c47fa1dc6861ff555a991d5f9233b7df35e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689131"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845187"
 ---
 # <a name="customize-tax-configurations-for-master-data-lookup"></a>マスタ データ ルックアップ用の税構成のカスタマイズ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、税の設定をカスタマイズしてマスターデータの検索機能を拡張する手順について説明します。
+この記事では、税の設定をカスタマイズしてマスターデータの検索機能を拡張する手順について説明します。
 
 ## <a name="import-a-tax-configuration-provided-by-microsoft"></a>マイクロソフトが提供する税構成のインポート
 

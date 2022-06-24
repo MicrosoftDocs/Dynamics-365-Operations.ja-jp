@@ -1,6 +1,6 @@
 ---
 title: リースの追加またはコピー (プレビュー版)
-description: このトピックでは、新しいリースを作成する方法について説明します。これにより、資産リースの情報の入力や、既存のリースから情報をコピーすることができます。
+description: この記事では、新しいリースを作成する方法について説明します。これにより、資産リースの情報の入力や、既存のリースから情報をコピーすることができます。
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 798ab3ece45ee6f21694a364cfb7a4ff14a9c8aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967929"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880935"
 ---
 # <a name="add-or-copy-leases-preview"></a>リースの追加またはコピー (プレビュー版)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、資産リースに最初からリースを作成する方法と、既存のリースをコピーしてリースを作成する方法について説明します。 最初からリースを作成するには、新しいリースの情報を入力し、リース スケジュールを作成する必要があります。 ひとつ以上のリースを設定しておくと、既存のリースから情報をコピーして、新しいリースの作成に必要な情報を簡単に編集することができます。
+この記事では、資産リースに最初からリースを作成する方法と、既存のリースをコピーしてリースを作成する方法について説明します。 最初からリースを作成するには、新しいリースの情報を入力し、リース スケジュールを作成する必要があります。 ひとつ以上のリースを設定しておくと、既存のリースから情報をコピーして、新しいリースの作成に必要な情報を簡単に編集することができます。
 
 ## <a name="create-a-lease"></a>リースの作成
 

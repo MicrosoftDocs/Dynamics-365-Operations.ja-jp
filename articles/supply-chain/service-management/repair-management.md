@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969224f48cdb1f12b48b9f5d839d7c88168e87d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7026453bf3a0eda2b9bc4d8538150974bd6aa634
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674256"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847907"
 ---
 # <a name="repair-management"></a>修復管理       
 
@@ -97,7 +97,7 @@ ms.locfileid: "8674256"
 
 ## <a name="close-a-repair-line-for-a-resolved-issue"></a>解決された問題の修復行のクローズ
 
-1.  **修復行** フォームを開きます。 このトピックの前の手順に従って、修復行を作成します。
+1.  **修復行** フォームを開きます。 この記事の前の手順に従って、修復行を作成します。
 
 2.  クローズする修復の問題を含む修復行を選択します。
 

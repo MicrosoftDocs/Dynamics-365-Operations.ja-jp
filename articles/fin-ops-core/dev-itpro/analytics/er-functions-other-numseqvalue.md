@@ -1,6 +1,6 @@
 ---
 title: NUMSEQVALUE ER 機能
-description: このトピックでは、NUMSEQVALUE 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、NUMSEQVALUE 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53040d1f4b3c8089fab264a524309df909a90ed5e617bd86658704b286fabb34
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 569d9ba1497bbc6dfc0ca909207aa5a78a877fe9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758243"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879836"
 ---
 # <a name="numseqvalue-er-function"></a>NUMSEQVALUE ER 機能
 
@@ -94,7 +94,7 @@ ERフォーマットでは、*ユーザー入力パラメータ* タイプの **
 
 モデル マッピングでは、次のデータ ソースが定義されます。
 
-- Microsoft Dynamics 365 Finance *列挙型* タイプの **enumScope** データ ソース。 このデータ ソースは、**ERExpressionNumberSequenceScopeType** 列挙型を参照しています。
+- Microsoft Microsoft Dynamics 365 Finance *列挙型* タイプの **enumScope** データ ソース。 このデータ ソースは、**ERExpressionNumberSequenceScopeType** 列挙型を参照しています。
 - *計算フィールド* タイプの **NumSeq** データ ソース。 このデータ ソースは、式 `NUMSEQVALUE ("Gene_1", enumScope.Company, "")` が含まれています。
 
 **NumSeq** データ ソースが呼び出されると、ER 形式が実行されているコンテキストを提供する会社用にコンフィギュレーションされた **Gene\_1** 番号順序の新しく生成された値を返します。

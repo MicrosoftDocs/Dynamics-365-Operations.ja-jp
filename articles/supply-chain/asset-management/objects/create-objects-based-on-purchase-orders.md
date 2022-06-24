@@ -1,6 +1,6 @@
 ---
 title: 発注書に基づいた資産の作成
-description: このトピックでは、資産管理でメンテナンス ジョブの資産を作成するための基礎として使用できる資産品目の一覧を作成する方法について説明します。
+description: この記事では、資産管理でメンテナンス ジョブの資産を作成するための基礎として使用できる資産品目の一覧を作成する方法について説明します。
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5068712a7ea1e0d940d4a05a411fb3e1b6f6d9bb9be924d5375b16676561ea1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893703"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>発注書に基づいた資産の作成
 
@@ -28,7 +28,7 @@ ms.locfileid: "6754110"
 
  
 
-このトピックでは、資産管理でメンテナンス ジョブの資産を作成するための基礎として使用できる資産品目の一覧を作成する方法について説明します。 資産品目に基づいて、それらの品目で作成された発注書明細行の一覧を表示できます。 この機能の目的は、発注書に基づいて資産管理で資産を簡単に作成することです。
+この記事では、資産管理でメンテナンス ジョブの資産を作成するための基礎として使用できる資産品目の一覧を作成する方法について説明します。 資産品目に基づいて、それらの品目で作成された発注書明細行の一覧を表示できます。 この機能の目的は、発注書に基づいて資産管理で資産を簡単に作成することです。
 
 まず、**資産品目** の発注書から、資産を作成するために使用する品目を設定します。 発注書明細行を作成した後、**保留中の資産** で資産を作成します。 資産を作成する必要のある発注書のステージを決定できます。
 

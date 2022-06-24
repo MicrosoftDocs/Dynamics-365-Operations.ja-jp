@@ -1,6 +1,6 @@
 ---
 title: Adyen 用 Dynamics 365 Commerce Payment Connector でリンクされていない払戻を処理する
-description: このトピックでは、Adyen 用 Microsoft Dynamics 365 Payment Connector を使用する場合に、リンクされていない払戻しがいかに機能するかについて説明します。
+description: この記事では、Adyen 用 Microsoft Dynamics 365 Payment Connector を使用する場合に、リンクされていない払戻しがいかに機能するかについて説明します。
 author: BrianShook
 ms.date: 10/07/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c137dcf7d35031a293c88d8c4f5dc1e5f3d9e2f9
-ms.sourcegitcommit: a21a664cd35b95c8600c5af0aac588a64e892902
+ms.openlocfilehash: 634b30de7adbfb0c316fe14456581ea8eb89d070
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623924"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885200"
 ---
 # <a name="process-unlinked-refunds-with-the-dynamics-365-commerce-payment-connector-for-adyen"></a>Adyen 用 Dynamics 365 Commerce Payment Connector でリンクされていない払戻を処理する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、[Adyen 用 Microsoft Dynamics 365 Payment Connector](adyen-connector.md) を使用する場合に、リンクされていない払戻しがいかに機能するかについて説明します。 また、これは販売時点管理 (POS) やコールセンターでの新しい支払方法に対する払戻しを処理する能力もレビューします。
+この記事では、[Adyen 用 Microsoft Dynamics 365 Payment Connector](adyen-connector.md) を使用する場合に、リンクされていない払戻しがいかに機能するかについて説明します。 また、これは販売時点管理 (POS) やコールセンターでの新しい支払方法に対する払戻しを処理する能力もレビューします。
 
 Adyen 用 Dynamics 365 Payment Connector では、元のトランザクションで使用された支払方法とは異なる支払方法を使用して払戻しを処理することができます。 リンクされた払戻しを使用して、[リンクされた払戻し](linked-refunds.md) を使って、提供された元の支払方法に対する払戻しを処理することをお勧めしますが、場合によっては別の方法での払戻しが必要になります。 たとえば、元の支払に使用されたカードの期限が切れたり失われたり、ユーザーによってキャンセルされた場合があります。
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce サイトとオンライン チャネルの関連付け
-description: このトピックでは、Microsoft Dynamics 365 Commerce サイトを 1 つ以上のオンライン ストアにバインドする方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce サイトを 1 つ以上のオンライン ストアにバインドする方法について説明します。
 author: bicyclingfool
 ms.date: 07/02/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 60ead45e6e2b7fea8f04371310ff4315205e11f6e0968e5f8bbc6a29c5f26e18
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 006c8b60791e0176c808762025f3bfdeaff9c48d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878676"
 ---
 # <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Dynamics 365 Commerce サイトとオンライン チャネルの関連付け
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce サイトを 1 つ以上のオンライン ストアにバインドする方法について説明します。 
+この記事では、Microsoft Dynamics 365 Commerce サイトを 1 つ以上のオンライン ストアにバインドする方法について説明します。 
 
 Microsoft Dynamics Lifecycle Services (LCS) ポータルを使用して自分の Dynamics 365 Commerce E コマース環境をプロビジョニングしたら、最初の E コマース Web サイトを確立する準備が整いました。 サイトの初期作成の一環として、サイトを以前に作成されたオンライン ストアに関連付けます。 この手順により、サイトがオンライン チャネルにバインドされ、そのサイトには、ナビゲーション階層、製品、カテゴリ、価格、配送オプション、およびオンライン ストアで定義したその他すべてが表示されます。
 

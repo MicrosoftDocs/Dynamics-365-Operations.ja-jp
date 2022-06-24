@@ -1,6 +1,6 @@
 ---
 title: ER データ モデルのパラメーター化された呼び出しへの対応
-description: 電子レポート (ER) データ モデルのパラメータ化された呼び出しを実装する方法について説明します。
+description: この記事では、電子レポート (ER) データ モデルのパラメータ化された呼び出しを実装する方法について説明します。
 author: NickSelin
 ms.date: 03/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 968b0769607e9fdbed57c25b727ed44988a92913
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8419472"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884260"
 ---
 # <a name="support-parameterized-calls-of-er-data-models"></a>ER データ モデルのパラメーター化された呼び出しへの対応
 
@@ -160,7 +160,7 @@ ER 形式を実行すると、ルート形式要素から始まるすべての�
 > [!NOTE]
 > データ モデル フィールドのパラメータの既定値はサポートされていません。 データ モデルのフィールドにパラメータを追加する場合、そのデータモデルのバージョンがすでにリリースされ公開されている場合は、このデータモデルの変更は下位互換性がないため、対応するすべてのモデルのマッピング形式をこのモデルの新しいバージョンに[リベース](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase)する必要があります。
 
-パラメータ化されたデータ モデル フィールドを設定することで、モデル マッピングの呼び出しを形式固有にすることができます。 この方法は、1 つのデータモデルの多くの形式に対して構成する必要があるモデル マッピングの数を減らすのに役立ちます。 また、この手法を用いることで、形式の実行性能を向上させ、ビジネス ドキュメントの生成に要する時間を短縮することができます。 この機能の詳細を知るには、このトピックの例を実行します。
+パラメータ化されたデータ モデル フィールドを設定することで、モデル マッピングの呼び出しを形式固有にすることができます。 この方法は、1 つのデータモデルの多くの形式に対して構成する必要があるモデル マッピングの数を減らすのに役立ちます。 また、この手法を用いることで、形式の実行性能を向上させ、ビジネス ドキュメントの生成に要する時間を短縮することができます。 この機能の詳細を知るには、この記事の例を実行します。
 
 ## <a name="example-use-parameterized-calls-of-er-data-models"></a>例: ER データ モデルのパラメーター化された呼び出しへの対応
 

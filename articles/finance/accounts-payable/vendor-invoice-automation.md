@@ -1,6 +1,6 @@
 ---
 title: スキャン済みドキュメントの請求書の自動化
-description: このトピックでは、添付ファイルを含む請求書など、仕入先請求書のエンドツーエンドの自動化で利用可能な機能について説明します。
+description: この記事では、添付ファイルを含む請求書など、仕入先請求書のエンドツーエンドの自動化で利用可能な機能について説明します。
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716412"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883419"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>スキャン済みドキュメントの請求書の自動化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、添付ファイルを含む請求書など、仕入先請求書のエンドツーエンドの自動化で利用可能なデータ エンティティについて説明します。
+この記事では、添付ファイルを含む請求書など、仕入先請求書のエンドツーエンドの自動化で利用可能なデータ エンティティについて説明します。
 
 買掛金勘定 (AP) プロセスを合理化したい組織は、多くの場合、請求書処理プロセスが効率化を図る必要があるプロセス領域の最上位にあると考えます。 多くの場合は、このような組織は、紙の請求書の処理からサード パーティ光学式文字認識 (OCR) サービス プロバイダにオフロードします。 それにより、各請求書のスキャン イメージと共に機械可読請求書メタデータを受け取ります。 オートメーションのためには、請求システムでこれらのコンポーネントの消費を有効にする「最終工程」ソリューションを構築します。 請求書自動化ソリューションをそのまま使用することで、この「最終工程」有効になります。
 
@@ -46,7 +46,7 @@ ms.locfileid: "8716412"
 + 請求書の例外処理
 + 請求書の添付ファイルを並べて表示するビューアー
 
-このトピックの後半では、これらのソリューション コンポーネントの詳細説明を提供します。
+この記事の後半では、これらのソリューション コンポーネントの詳細説明を提供します。
 
 ## <a name="data-entities"></a>データ エンティティ
 
