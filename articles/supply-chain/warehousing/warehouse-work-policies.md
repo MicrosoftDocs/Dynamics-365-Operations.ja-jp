@@ -1,6 +1,6 @@
 ---
 title: 作業ポリシー
-description: このトピックでは、作業ポリシーを設定する方法について説明します。
+description: この記事では、作業ポリシーを設定する方法について説明します。
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7637ef908ffa6e79f81e4ecfb8afac4e3e3fed26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571164"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855851"
 ---
 # <a name="work-policies"></a>作業ポリシー
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、作業ポリシーをサポートするようにシステムと倉庫管理モバイル アプリを設定する方法について説明します。 この機能を使用すると、発注書または移動オーダーを受け取ったとき、または製造プロセスを完了したときに、他の必要な機能を作成することなく、すぐに在庫を登録することができます。 このトピックでは、一般情報を提供します。 ライセンス プレートの受け取りに関する詳細については、[倉庫管理モバイル アプリを介したライセンス プレートの受け取り](warehousing-mobile-device-app-license-plate-receiving.md) を参照してください。
+この記事では、作業ポリシーをサポートするようにシステムと倉庫管理モバイル アプリを設定する方法について説明します。 この機能を使用すると、発注書または移動オーダーを受け取ったとき、または製造プロセスを完了したときに、他の必要な機能を作成することなく、すぐに在庫を登録することができます。 この記事では、一般情報を提供します。 ライセンス プレートの受け取りに関する詳細については、[倉庫管理モバイル アプリを介したライセンス プレートの受け取り](warehousing-mobile-device-app-license-plate-receiving.md) を参照してください。
 
 作業ポリシーは、製造品目が完了として報告されたとき、または倉庫管理モバイル アプリを使用して商品を受け取ったときに、倉庫作業を作成するかどうかを制御します。 各作業ポリシーを設定するには、作業指示タイプとプロセス、在庫場所、必要に応じて各製品の条件を定義します。 たとえば、製品 *A0001* の発注書は、倉庫 *24* の場所 *RECV* で受け取る必要があります。 その後、製品は、場所 *RECV* の別のプロセスで消費されます。 この場合は、作業者が場所 *RECV* で受け取った製品 *A0001* を報告したときに、プットアウェイ作業が作成されないようにするための作業ポリシーを設定できます。
 
@@ -35,7 +35,7 @@ ms.locfileid: "7571164"
 
 ## <a name="activate-the-features-in-your-system"></a>システムでの機能の有効化
 
-このトピックで説明されている機能をシステムですべて使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の 2 つの機能を有効にします。
+この記事で説明されている機能をシステムですべて使用できるようにするには、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)で次の 2 つの機能を有効にします。
 
 - ライセンス プレートの入庫拡張機能
 - 入庫作業の作業ポリシー拡張機能

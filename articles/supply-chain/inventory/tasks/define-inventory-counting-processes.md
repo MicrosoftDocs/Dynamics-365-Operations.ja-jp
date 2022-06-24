@@ -1,6 +1,6 @@
 ---
 title: 在庫棚卸プロセスの定義
-description: このトピックでは、棚卸グループおよび棚卸仕訳帳を作成することによって、基本的な在庫棚卸処理のコンフィギュレーションについて説明します。
+description: この記事では、棚卸グループおよび棚卸仕訳帳を作成することによる基本的な在庫棚卸処理のコンフィギュレーションについて説明します。
 author: yufeihuang
 ms.date: 07/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee47b04ba7ec9f3d74230b7a41b1c295eaea9313
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bb86c99e74dc8251ed48c0b749c0b0ef1ce75e34
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580843"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879022"
 ---
 # <a name="define-inventory-counting-processes"></a>在庫棚卸プロセスの定義
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、棚卸グループおよび棚卸仕訳帳を作成することによって、基本的な在庫棚卸処理のコンフィギュレーションについて説明します。 また、倉庫と品目レベルにおける棚卸ポリシーを有効にする方法も説明します。 通常、これらのタスクを実施するのは、倉庫の監督です。 これは、現在リリースされている一部の製品および倉庫を所有する前提条件となっています。 デモ データの会社を使用すると、いずれの在庫品目を使用しても、USMF 会社でこの手順を実行できます。
+この記事では、棚卸グループおよび棚卸仕訳帳を作成することによる基本的な在庫棚卸処理のコンフィギュレーションについて説明します。 また、倉庫と品目レベルにおける棚卸ポリシーを有効にする方法も説明します。 通常、これらのタスクを実施するのは、倉庫の監督です。 これは、現在リリースされている一部の製品および倉庫を所有する前提条件となっています。 デモ データの会社を使用すると、いずれの在庫品目を使用しても、USMF 会社でこの手順を実行できます。
 
 
 ## <a name="create-a-counting-group"></a>棚卸グループの作成

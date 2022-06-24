@@ -1,6 +1,6 @@
 ---
 title: 調達ホーム ページ
-description: このトピックでは、調達に使用できるヘルプ トピックとその他のリソースの一覧を示します。
+description: この記事には、調達に使用できるヘルプ トピックとその他のリソースの一覧が含まれます。
 author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf56084147edcdf8951d4a267611c10dc7eb6dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 68409b15a3f4874d05a43931136ce91097c4f904
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673021"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885873"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>調達ホーム ページ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、調達に使用できるヘルプ トピックとその他のリソースの一覧を示します。
+この記事には、調達に使用できるヘルプ トピックとその他のリソースの一覧が含まれます。
 
 調達は、製品の調達、受入、請求、および仕入先の支払処理で必要となる製品およびサービスのすべての手順を含みます。 調達プロセスは、購入ポリシーとワークフローの定義による特定の業務上のニーズにコンフィギュレーションできます。 一般情報については、[ 調達の概要](procurement-sourcing-overview.md)を参照してください。 追加情報を次に示します。
 

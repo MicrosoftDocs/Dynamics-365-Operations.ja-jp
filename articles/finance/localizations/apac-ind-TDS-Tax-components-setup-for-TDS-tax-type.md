@@ -1,6 +1,6 @@
 ---
 title: TDS の税タイプの税コンポーネントの設定
-description: このトピックでは、源泉徴収税 (TDS) 税タイプの源泉徴収税コンポーネントを設定する方法について説明します。 また、各 TDS コンポーネントごとに TDS の算出に使用するしきい値を定義する方法についても説明しています。
+description: この記事では、源泉徴収税 (TDS) 税タイプの源泉徴収税コンポーネントを設定する方法について説明します。 また、各 TDS コンポーネントごとに TDS の算出に使用するしきい値を定義する方法についても説明しています。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 9c86341f7528e2c85b813e4f825ae34f10680a9b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: df2eb10ce9e372bb1e984f6ae1a2e889bbd90ad0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871160"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>TDS の税タイプの税コンポーネントの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、源泉徴収税 (TDS) 税タイプの源泉徴収税コンポーネントを設定する方法について説明します。 TDS コンポーネントは、TDS、割増金、PE-Cess、SHE Cess です。 このトピックではまた、各 TDS コンポーネントごとに TDS の算出に使用するしきい値を定義する方法についても説明しています。 さらに、各 TDS コンポーネントの TDS 算出に使用される例外的なしきい値を定義することができます。
+この記事では、源泉徴収税 (TDS) 税タイプの源泉徴収税コンポーネントを設定する方法について説明します。 TDS コンポーネントは、TDS、割増金、PE-Cess、SHE Cess です。 この記事ではまた、各 TDS コンポーネントごとに TDS の算出に使用するしきい値を定義する方法についても説明しています。 さらに、各 TDS コンポーネントの TDS 算出に使用される例外的なしきい値を定義することができます。
 
 以下の手順で、TDS のコンポーネントを設定します。
 

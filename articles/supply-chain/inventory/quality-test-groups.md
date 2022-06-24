@@ -1,6 +1,6 @@
 ---
 title: 品質管理テスト グループ
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質指示で複数のテストに使用できるようテスト グループを作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の品質指示で複数のテストに使用できるようテスト グループを作成する方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5619be4a0724556bf0c51dcaa3adcc3725f10706
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: e7722bc92d8c2bf52d6a798a93f07af44037d4e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789271"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857709"
 ---
 # <a name="quality-management-test-groups"></a>品質管理テスト グループ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質指示で複数のテストに使用できるようテスト グループを作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management の品質指示で複数のテストに使用できるようテスト グループを作成する方法について説明します。
 
 テスト グループと、それらに割り当てられる個別のテストを設定、編集、および表示するには、この **テスト グループ** ページを使用します。 ページの上部パーツにはテスト グループが表示され、下部パーツには選択したテスト グループに割り当てられるテストが表示されます。
 

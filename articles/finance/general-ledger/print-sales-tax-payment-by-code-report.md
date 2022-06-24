@@ -1,6 +1,6 @@
 ---
 title: コード別消費税支払レポートの印刷
-description: このトピックでは、会計または税コードの通貨でコード別消費税支払レポートを印刷するために必要な設定とアクションについて説明します。
+description: この記事では、会計または税コードの通貨でコード別消費税支払レポートを印刷するために必要な設定とアクションについて説明します。
 author: anasyash
 ms.date: 05/27/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 7c863308d2efc442ad16973407fe1cb72fb68cf89204c20f4468a3c98f4740c5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9c6b51da41f2aaa3206f8ad97a364a9cd5ca6d49
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774332"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856657"
 ---
 # <a name="print-the-sales-tax-payment-by-code-report"></a>コード別消費税支払レポートの印刷 
 

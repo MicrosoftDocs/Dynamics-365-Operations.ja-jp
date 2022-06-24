@@ -1,6 +1,6 @@
 ---
 title: 顧客ポータルをカスタマイズして使用する
-description: このトピックでは、顧客ポータルをシステムに追加した後でカスタマイズする方法について説明します。
+description: この記事では、顧客ポータルをシステムに追加した後でカスタマイズする方法について説明します。
 author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 02ad0470b7886b2e9b259682a7f8c8150d656cfb
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 85ec4beda2efe62ff5076a5ed694efbc47c6d87f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063496"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878877"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>顧客ポータルをカスタマイズして使用する
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、顧客ポータルで使用できるさまざまなページについて説明します。 ここでは、ページの機能とカスタマイズ方法について説明します。
+この記事では、顧客ポータルで使用できるさまざまなページについて説明します。 ここでは、ページの機能とカスタマイズ方法について説明します。
 
 顧客 ポータルでは、既成 の Web ページとアクションが用意されています。 次のサイトマップは、これら Web ページとアクションの概要と、アクションを実行できるロールを示しています。
 
@@ -32,16 +32,16 @@ ms.locfileid: "8063496"
 
 ## <a name="typical-customizations"></a>一般的なカスタマイズ
 
-次のトピックでは、Power Apps ポータルの基本とポータルのカスタマイズ方法について説明し ます。
+次の記事では、Power Apps ポータルの基本とポータルのカスタマイズ方法について説明します:
 
-- [テンプレートで作業する](/powerapps/maker/portals/work-with-templates) - このトピックでは、Power Apps ポータルの機能概要と、ポータルを簡単にカスタマイズする方法を示します。
-- [ポータル コンテンツの管理](/dynamics365/portals/manage-portal-content) - このトピックでは、ポータルに表示されるコンテンツの管理方法とカスタマイズする方法について説明します。
-- [編集 CSS](/powerapps/maker/portals/edit-css) - このトピックでは、ポータルのユーザー インターフェイス (UI) に対してさらに複雑なカスタマイズを行うことができます。
-- [ポータルのテーマを作成する](/dynamics365/portals/create-theme) - このトピックは、ポータルの UI のテーマを作成する際に役立ちます。
-- [ポータルのコンテンツを簡単に作成して公開する](/dynamics365/portals/create-expose-portal-content) - このトピックでは、ポータルで使用する基となるデータとテーブルの管理について説明します。
-- [ポータルで使用する連絡先の構成](/powerapps/maker/portals/configure/configure-contacts) - このトピックでは、ユーザー ロールの作成とカスタマイズの方法、および Power Apps ポータルにおけるセキュリティと認証機能について説明します。
-- [ポータルでのテーブル フォームと Web フォームのメモの構成](/powerapps/maker/portals/configure-notes) - このトピックでは、ドキュメントと追加のストレージをポータルに追加する方法について説明します。
-- [ポータル Web サイトのエラー処理 ](/powerapps/maker/portals/admin/view-portal-error-log) - このトピックでは、ポータルのエラーログを表示して Microsoft Azure Blob ストレージ アカウントに保管する方法について説明し ます。
+- [テンプレートの使用](/powerapps/maker/portals/work-with-templates) - この記事では、Power Apps ポータルの仕組みと、ポータルを簡単にカスタマイズする方法の概要を示します。
+- [ポータル コンテンツの管理](/dynamics365/portals/manage-portal-content) - この記事では、ポータルに表示されるコンテンツの管理方法とカスタマイズする方法について説明します。
+- [CSS の編集](/powerapps/maker/portals/edit-css) - この記事は、ポータルのユーザー インターフェイス (UI) に対してさらに複雑なカスタマイズするのに役立ちます。
+- [ポータルのテーマを作成する](/dynamics365/portals/create-theme) - この記事は、ポータルの UI のテーマを作成する際に役立ちます。
+- [ポータルのコンテンツを簡単に作成して公開する](/dynamics365/portals/create-expose-portal-content) - この記事では、ポータルで使用する基となるデータとテーブルの管理について説明します。
+- [ポータルで使用する連絡先の構成](/powerapps/maker/portals/configure/configure-contacts) - この記事では、ユーザー ロールの作成とカスタマイズの方法、および Power Apps ポータルにおけるセキュリティと認証機能について説明します。
+- [ポータルでのテーブル フォームと Web フォームのメモの構成](/powerapps/maker/portals/configure-notes) - この記事では、ドキュメントと追加のストレージをポータルに追加する方法について説明します。
+- [ポータル Web サイトのエラー処理 ](/powerapps/maker/portals/admin/view-portal-error-log) - この記事では、ポータルのエラー ログを表示して Microsoft Azure Blob ストレージ アカウントに保管する方法について説明します。
 
 ## <a name="customize-the-order-creation-process"></a>注文作成プロセスのカスタマイズ
 

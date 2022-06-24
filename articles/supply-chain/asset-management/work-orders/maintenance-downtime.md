@@ -1,6 +1,6 @@
 ---
 title: 作業指示書のメンテナンス ダウンタイム
-description: このトピックでは、作業指示書で選択した資産において、メンテナンス ダウンタイム登録を作成する方法について説明します。
+description: この記事では、作業指示書で選択した資産において、メンテナンス ダウンタイム登録を作成する方法について説明します。
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 38c47a47fdf64c1d3601f6f3f7b84bf128823ec2ceb0c50e586822f6bdb97906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a76c0ecefbb8da762ac68cbdd7bb44f68a89894
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753375"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851859"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>作業指示書のメンテナンス ダウンタイム
 

@@ -1,6 +1,6 @@
 ---
-title: 発注書のプット アウェイ場所のディレクティブの設定
-description: このトピックでは、簡単な場所ディレクティブの設定方法を説明します。
+title: 発注書のプット アウェイ場所のディレクティブを設定します
+description: この記事では、簡単な場所ディレクティブの設定方法を説明します。
 author: Weijiesa
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2275b2fd70e246955054930b13f29a6c0b287363
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6d973d1cdb530a031ca8a5caf621f9bebced4842
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674141"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873495"
 ---
-# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>発注書のプット アウェイ場所のディレクティブの設定
+# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>発注書のプット アウェイ場所のディレクティブを設定します
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、簡単な場所ディレクティブの設定方法を説明します。 示されている例では、発注書に対して受領した品目を置く場所を決定するために使用される場所ディレクティブを作成します。 このタスク ガイドは、デモ データの会社 USMF で前述のデータを使用して実行できます。 事前条件: 廃棄コードを作成する必要があります。 この手順では、[ラベル書き換え] という廃棄コードを使用します。 自身のデータで場所ディレクティブを作成する場合は、倉庫と品目に対して高度な倉庫管理を設定する必要があります。 この手順は、倉庫マネージャーを対象としています。
+この記事では、簡単な場所ディレクティブの設定方法を説明します。 示されている例では、発注書に対して受領した品目を置く場所を決定するために使用される場所ディレクティブを作成します。 このタスク ガイドは、デモ データの会社 USMF で前述のデータを使用して実行できます。 事前条件: 廃棄コードを作成する必要があります。 この手順では、[ラベル書き換え] という廃棄コードを使用します。 自身のデータで場所ディレクティブを作成する場合は、倉庫と品目に対して高度な倉庫管理を設定する必要があります。 この手順は、倉庫マネージャーを対象としています。
 
 1. ナビゲーション ウィンドウで、**モジュール > 倉庫管理 > 設定 > 場所のディレクティブ** の順に移動します。
 2. **ワーク オーダー タイプ** フィールドで **発注書** を選択します。

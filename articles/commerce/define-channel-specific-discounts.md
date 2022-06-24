@@ -1,6 +1,6 @@
 ---
 title: チャンネル固有の割引の定義
-description: 小売業者は、多くの場合、異なるチャンネルのさまざまな割引を設定します。 このトピックでは、特定のチャンネルの割引を作成するために知っておく必要のある概念を確認します。
+description: 小売業者は、多くの場合、異なるチャンネルのさまざまな割引を設定します。 この記事では、特定のチャンネルの割引を作成するために知っておく必要のある概念を確認します。
 author: scott-tucker
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 14b6f8f4a7d344111718fad94418bc3dbb5c9b1e113c0fd613350c49a2511d4f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9ceb5c8e47288e7ffdd3808cd8d60112f81ce314
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759314"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873413"
 ---
 # <a name="define-channel-specific-discounts"></a>チャネル固有の割引の定義
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、特定のチャンネルの割引を作成するために知っておく必要のある概念を確認します。
+この記事では、特定のチャンネルの割引を作成するために知っておく必要のある概念を確認します。
 
 ## <a name="channel-specific-discounts"></a>チャンネル固有の割引
 

@@ -1,6 +1,6 @@
 ---
 title: 資産リース レポート
-description: このトピックでは、資産リースで利用可能なレポートを一覧表示し、その内容について簡単な説明をしていきます。
+description: この記事では、資産リースで利用可能なレポートを一覧表示し、その内容について簡単な説明をしていきます。
 author: moaamer
 ms.date: 04/05/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cb1c994fee6efff82dd1cba1e71c6af49b384208
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: a6e6eb851b9b2dce7259a5355326dd594a940b8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550042"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856715"
 ---
 # <a name="asset-leasing-reports"></a>資産リース レポート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、資産リースで利用可能なレポートを一覧表示し、その内容について簡単な説明をしていきます。 ほとんどのレポートは、以下の手順、または似通った手順を完了することで表示されます。 
+この記事では、資産リースで利用可能なレポートを一覧表示し、その内容について簡単な説明をしていきます。 ほとんどのレポートは、以下の手順、または似通った手順を完了することで表示されます。 
 
 - ほとんどの資産リースのレポートを表示するには、**資産リース  > 照会とレポート > リースレポート** に移動し て、表示するレポートを選択します。 異なる選択パスが必要となるレポートの場合は、そのレポートの説明にレポートを開く手順が含まれています。 
 - 印刷するレポートを選択すると、パラメーター ページが開き、レポートに含まれる情報をフィルター処理できます。 フィルター条件を入力し、**OK** をクリックしてレポートを生成します。 生成されるレポートには、指定したフィルター内の情報が表示されます。

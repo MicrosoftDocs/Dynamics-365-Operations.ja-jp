@@ -1,6 +1,6 @@
 ---
 title: デュアルユース商品
-description: このトピックでは、デュアルユース商品として識別された製品を追跡し、関連する製品と仕向国ごとに証明書番号を保存し、関連する請求書、梱包伝票、および/または販売注文書に有効な証明書番号を印刷する方法について説明します。
+description: この記事では、デュアルユース商品として識別された製品を追跡し、関連する製品と仕向国ごとに証明書番号を保存し、関連する請求書、梱包伝票、および/または販売注文書に有効な証明書番号を印刷する方法について説明します。
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736036"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878906"
 ---
 # <a name="dual-use-goods"></a>デュアルユース商品
 
@@ -42,7 +42,7 @@ ms.locfileid: "8736036"
 
 6. この注文には製品 X-100 が含まれており、かつ製品はフランスに出荷されており、製品にはフランスの証明書が存在します。 ただし、証明書の有効期限は切れています。 そのため、次のような警告メッセージが表示されます。「この販売注文に含まれる1つ以上のデュアルユース商品に含まれているデュアルユース証明書が有効ではありません。 確認作業を進めますか？」
 
-このトピックでは、デュアルユース賞品を設定し、このシナリオに対応するにあたって必要となるすべての設定方法を説明します。
+この記事では、デュアルユース商品を設定し、このシナリオに対応するにあたって必要となるすべての設定を構成する方法を説明します。
 
 ## <a name="define-dual-use-requirements-for-each-relevant-country"></a>関連する国ごとにデュアルユースの要件を定義する
 

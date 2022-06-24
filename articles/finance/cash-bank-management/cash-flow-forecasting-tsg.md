@@ -1,6 +1,6 @@
 ---
 title: キャッシュ フロー予測設定のトラブルシューティング
-description: このトピックでは、キャッシュフロー予測を構成する際の質問に対する回答をご覧いただけます。 キャッシュ フロー、キャッシュ フローの更新、およびキャッシュ フロー Power BI の設定に関するよく寄せられる質問 (FAQ) を取り上げています。
+description: この記事では、キャッシュフロー予測を構成する際の質問に対する回答をご覧いただけます。 キャッシュ フロー、キャッシュ フローの更新、およびキャッシュ フロー Power BI の設定に関するよく寄せられる質問 (FAQ) を取り上げています。
 author: panolte
 ms.date: 03/23/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e2b5a8df84ff5159a85526251a6367857afa1808
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0e3438bc07fde28d5d9d2d5b3d83bbe70692c0bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724573"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878073"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>キャッシュ フロー予測設定のトラブルシューティング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、キャッシュフロー予測を構成する際の質問に対する回答をご覧いただけます。 キャッシュ フロー、キャッシュ フローの更新、およびキャッシュ フロー Power BI の設定に関するよく寄せられる質問 (FAQ) を取り上げています。
+この記事では、キャッシュフロー予測を構成する際の質問に対する回答をご覧いただけます。 キャッシュ フロー、キャッシュ フローの更新、およびキャッシュ フロー Power BI の設定に関するよく寄せられる質問 (FAQ) を取り上げています。
 
 ## <a name="why-is-cash-flow-shown-for-only-one-legal-entity"></a>キャッシュ フローが単一の法人に対してのみ表示される理由
 

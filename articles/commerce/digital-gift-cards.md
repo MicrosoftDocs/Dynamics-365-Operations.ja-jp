@@ -1,6 +1,6 @@
 ---
 title: 電子商取引のデジタル ギフト カード
-description: Microsoft Dynamics 365 Commerce の電子商取引の実装におけるデジタル ギフト カードの機能について説明します。 重要な構成の手順の概要についても説明しています。
+description: この記事では、Microsoft Dynamics 365 Commerce の電子商取引の実装におけるデジタル ギフト カードの機能について説明します。 重要な構成の手順の概要についても説明しています。
 author: anupamar-ms
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 60de6988f14a0dcbbb881e84a9e4d8a45ca1289a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809590"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884907"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>電子商取引のデジタル ギフト カード
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 Commerce の電子商取引の実装におけるデジタル ギフト カードの機能について説明します。 重要な構成の手順の概要についても説明しています。
+この記事では、Microsoft Dynamics 365 Commerce の電子商取引の実装におけるデジタル ギフト カードの機能について説明します。 重要な構成の手順の概要についても説明しています。
 
 Dynamics 365 Commerce では、デジタル ギフト カードの購入は、システ内のその他製品の購入と同じフローです。 追加のモジュールを構成する必要はありません。 複数のギフト カードをカートに追加した場合、そのギフト カード品目は1つの販売行には集計されません。 この動作は、各販売の明細行が個別のギフト カード番号を使用して請求を行うため必要となります。
 

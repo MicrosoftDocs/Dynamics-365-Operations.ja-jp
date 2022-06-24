@@ -1,6 +1,6 @@
 ---
 title: 会社のディレクトリ モバイル ワークスペース
-description: このトピックでは、ユーザーが閲覧し、組織内の他の従業員と連絡が取れるようにする、会社のディレクトリ モバイル ワークスペースに関する情報を提供します。
+description: この記事では、ユーザーが閲覧し、組織内の他の従業員と連絡が取れるようにする、会社のディレクトリ モバイル ワークスペースに関する情報を提供します。
 author: jcart1106
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b754e46f194f60cc70d02367d4cca2a382821191
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 8e8e6adc2c72b6e3ab567723ac01055ea8d7292e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811542"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868730"
 ---
 # <a name="company-directory-mobile-workspace"></a>会社のディレクトリ モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-このトピックでは、**会社のディレクトリ** モバイル ワークスペースに関する情報を提供します。 このワークスペースで、ユーザーは閲覧して組織内の他の従業員と連絡を取ることができます。
+この記事では、**会社のディレクトリ** モバイル ワークスペースに関する情報を提供します。 このワークスペースで、ユーザーは閲覧して組織内の他の従業員と連絡を取ることができます。
 
 このモバイル ワークスペースは、Finance and Operations モバイル アプリと一緒に使用できます。
 

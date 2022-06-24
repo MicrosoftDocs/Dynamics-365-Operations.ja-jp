@@ -1,6 +1,6 @@
 ---
 title: 175% 逓減残高による減価償却
-description: このトピックでは、減価償却の 175% 逓減残高法の概要を説明します。
+description: この記事では、減価償却の 175% 逓減残高法の概要を説明します。
 author: moaamer
 ms.date: 10/30/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9424741fa50034a97e9971dcd2d7416968c964
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 68c10a1fe221731f7304fc0da92ed314b66dc13f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710924"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870194"
 ---
 # <a name="175-percent-reducing-balance-depreciation"></a>175% 逓減残高による減価償却
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、減価償却の 175% 逓減残高法の概要を説明します。
+この記事では、減価償却の 175% 逓減残高法の概要を説明します。
 
 固定資産減価償却プロファイルを設定し、**減価償却プロファイル** ページの **方法** フィールドで、**175% 逓減残高** を選択すると、減価償却プロファイルが割り当てられる固定資産は各減価償却期間で適用される比率と同じ比率で減価償却されます。 
 
@@ -41,7 +41,7 @@ ms.locfileid: "8710924"
 
 **償却年** フィールドの既定値である **暦年** をそのまま使用できます。 
 
-**暦年** 選択すると、毎年 1 月 1 日に償却基礎額が更新されます。 通常、償却基礎額は、正味簿価額から仕損価格を差し引いた額です。 このトピックの後の例では、計算列の最初の式の分子が減価償却基準です。 
+**暦年** 選択すると、毎年 1 月 1 日に償却基礎額が更新されます。 通常、償却基礎額は、正味簿価額から仕損価格を差し引いた額です。 この記事の後の例では、計算列の最初の式の分子が減価償却基準です。 
 
 償却年として **暦年** を選択すると、**期間の頻度** フィールドで次のオプションが使用できます。
 

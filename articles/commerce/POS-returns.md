@@ -1,6 +1,6 @@
 ---
 title: POS での返品の作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) アプリケーションで、現金払いトランザクションまたは顧客注文に対して返品を開始する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) アプリケーションで、現金払いトランザクションまたは顧客注文に対して返品を開始する方法について説明します。
 author: hhainesms
 ms.date: 04/27/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: a49e9abd0143d480cc1cafb05be5e995fb3cebdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648991"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857001"
 ---
 # <a name="create-returns-in-pos"></a>POS での返品の作成
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) アプリで、現金払いトランザクションまたは顧客注文に対して返品を開始する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce 販売時点管理 (POS) アプリで、現金払いトランザクションまたは顧客注文に対して返品を開始する方法について説明します。
 
 > [!NOTE]
 > Commerce バージョン 10.0.20 リリース以降では、**POS での統合返品処理エクスペリエンス** という新しい機能が利用可能です。 この機能により、トランザクション タイプ (現金払いトランザクションまたは顧客注文) や注文が作成された元のチャネルに関係なく、POS でのより一貫した統合返品プロセスが提供されます。 すべての組織でこの新しい機能を有効にし、POS による返品処理の全体的な信頼性を向上することをお勧めします。

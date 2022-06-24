@@ -1,6 +1,6 @@
 ---
 title: バーコードのイメージを生成するためにバーコード データソースを使用する
-description: このトピックでは、バーコードのイメージを生成するためのバーコード データ ソースの使用方法について説明します。
+description: この記事では、バーコードのイメージを生成するためのバーコード データ ソースの使用方法について説明します。
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: c8e755b664656a1a10672a990dc581969f6a7b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323955"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880315"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>バーコードのイメージを生成するためにバーコード データソースを使用する
 
@@ -77,7 +77,7 @@ ER は **バーコード** データ ソースの種類をサポートするよ�
 >
 > **バーコード** データソースを形式のセル要素にバインドし、セル要素が Word コンテンツ コントロールまたは Excel ピクチャを表す場合、データソースは文字列型の 1 つのパラメーターを持つ **関数** としてバインドされます。 このパラメータを使用して、バーコードのイメージに変換するテキストを指定し、生成されたバーコードをスキャンしたときに読み取るテキストを指定する必要があります。
 
-この機能の詳細を知るには、このトピックの例を実行します。
+この機能の詳細を知るには、この記事に記載の例を実行します。
 
 ## <a name="example-generate-a-payment-check-that-contains-a-bar-code-that-encodes-the-payable-amount"></a>例: 未払金額をエンコードするバーコードを含む支払小切手を生成する
 
@@ -112,7 +112,7 @@ ER は **バーコード** データ ソースの種類をサポートするよ�
 - 電子申告機能コンサルタント
 - システム管理者
 
-[ER を使用して生成したドキュメントの埋め込まれたイメージと形状](electronic-reporting-embed-images-shapes.md) のトピックにある例をまだ完了していない場合は、次のサンプル ER の構成をダウンロードしてください。
+[ER を使用して生成したドキュメントの埋め込まれたイメージと形状](electronic-reporting-embed-images-shapes.md) の記事に記載された例をまだ完了していない場合は、次のサンプル ER の構成をダウンロードしてください。
 
 | コンテンツの説明         | ファイル名                   |
 |-----------------------------|-----------------------------|
@@ -128,7 +128,7 @@ ER は **バーコード** データ ソースの種類をサポートするよ�
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>コンフィギュレーション プロバイダーの有効化
 
 1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
-2. **ローカライズ構成** ページの、**構成プロバイダー** セクションで、**Litware, Inc.** サンプル会社の [構成プロバイダー](general-electronic-reporting.md#Provider) がリストされ、アクティブとしてマークされていることを確認します。 この構成プロバイダーがリストに表示されない場合、またはアクティブとしてマークされていない場合、[構成プロバイダーの作成およびアクティブなプロバイダーとしてのマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) トピックの手順に従ってください。
+2. **ローカライズ構成** ページの、**構成プロバイダー** セクションで、**Litware, Inc.** サンプル会社の [構成プロバイダー](general-electronic-reporting.md#Provider) がリストされ、アクティブとしてマークされていることを確認します。 この構成プロバイダーがリストに表示されない場合、またはアクティブとしてマークされていない場合、[構成プロバイダーの作成およびアクティブなプロバイダーとしてのマークする](tasks/er-configuration-provider-mark-it-active-2016-11.md) の記事に記載の手順に従ってください。
 
 ![ローカライズ構成ページで、サンプル会社をアクティブにする設定。](./media/er-barcode-data-source-active-provider.png)
 
@@ -284,7 +284,7 @@ ER ソリューションを変更してから、変更したテンプレート�
 
 ### <a name="convert-the-generated-check-to-a-pdf"></a><a name="ExampleConvertToPDF"></a>生成された小切手を PDF に変換する
 
-[印刷可能な FTI 形式の生成](er-generate-printable-fti-forms.md#finland) に関するトピックで説明しているように、特殊フォントを使用して、生成されたドキュメントのバーコードを生成できます。 この場合、生成されたドキュメントの変換を追加すると、変換環境でそのフォントが使用できるかどうかによって異なる場合があります。 たとえば、ドキュメントを PDF 形式に変換しようとしたり、フォントが欠落している環境でプレビューしたりすると、バーコードは正しく表示されません。
+[印刷可能な FTI 形式の生成](er-generate-printable-fti-forms.md#finland) に関する記事で説明しているように、特殊フォントを使用して、生成されたドキュメントのバーコードを生成できます。 この場合、生成されたドキュメントの変換を追加すると、変換環境でそのフォントが使用できるかどうかによって異なる場合があります。 たとえば、ドキュメントを PDF 形式に変換しようとしたり、フォントが欠落している環境でプレビューしたりすると、バーコードは正しく表示されません。
 
 ただし、**バーコード** データ ソースを使用してバーコードを作成する場合、これらのバーコードのレンダリングはフォントに依存しません。 したがって、バーコードが含まれているドキュメントを PDF 形式に簡単に変換できます。 次の図は、構成済みの ER [出力先](electronic-reporting-destinations.md) の設定に基づいて、PDFに [変換された](electronic-reporting-destinations.md#OutputConversionToPDF) 、生成された支払小切手のプレビューを示しています。
 

@@ -1,6 +1,6 @@
 ---
 title: 発注書フォームと販売注文フォームを使用した TDS 請求書の計算
-description: このトピックでは、様々なタイプの請求書のソース (TDS) で税控除を計算する手順を示します。
+description: この記事では、様々なタイプの請求書のソース (TDS) で税控除を計算する手順を示します。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6a7e670c38a1bce6b8f6771b4be49e56e3aa785a
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 72883741ee7eed6b0296736c80dd648c882ae53e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853288"
 ---
 # <a name="calculate-tds-invoices-using-purchase-order-form-and-sales-order-form"></a>発注書フォームと販売注文フォームを使用した TDS 請求書の計算
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**発注書**、**購買仕訳帳**、**一括発注**、**販売注文** の各ページをを使ってさまざまな種類の請求書の源泉徴収税 (TDS) を計算する手順を紹介します。
+この記事では、**発注書**、**購買仕訳帳**、**一括発注**、**販売注文** の各ページをを使ってさまざまな種類の請求書の源泉徴収税 (TDS) を計算する手順を紹介します。
 
 1. 一覧表示されたページを使用して、発注書、購買仕訳帳、購買一括注文、または販売注文を作成します。 必要な詳細情報を入力します。
 

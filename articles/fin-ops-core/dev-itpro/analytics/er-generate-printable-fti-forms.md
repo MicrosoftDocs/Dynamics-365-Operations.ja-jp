@@ -1,6 +1,6 @@
 ---
 title: 印刷可能な FTI フォームの生成
-description: このトピックでは、電子レポート (ER) フレームワークを使用して、印刷可能な自由書式の請求書 (FTI) フォームを Microsoft Office ドキュメントとして生成する方法について説明します。
+description: この記事では、電子レポート (ER) フレームワークを使用して、印刷可能な自由書式の請求書 (FTI) フォームを Microsoft Office ドキュメントとして生成する方法について説明します。
 author: NickSelin
 ms.date: 07/24/2018
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be5e3ef0f6ecb3d8f911b5be5f8bc9102d201fd299425e847a2df233d9b4edf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d4efbb46bbba2b139bbcf9b07c480a7e8669fd7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868832"
 ---
 # <a name="generate-printable-fti-forms"></a>印刷可能な FTI フォームを生成する
 
 [!include[banner](../includes/banner.md)]
 
-電子レポート (ER) フレームワークにより、印刷可能な自由書式の請求書 (FTI) フォームを Microsoft Office ドキュメントとして生成することができます。 このトピックでは、使用可能なコンフィギュレーション テンプレートと共に、独自のコンフィギュレーションを構築する方法について説明します。
+電子レポート (ER) フレームワークにより、印刷可能な自由書式の請求書 (FTI) フォームを Microsoft Office ドキュメントとして生成することができます。 この記事では、使用可能なコンフィギュレーション テンプレートと共に、独自のコンフィギュレーションを構築する方法について説明します。
 
 ## <a name="overview"></a>概要
 
 Microsoft SQL Server Reporting Services (SSRS) を使用して印刷可能な FTI フォームを生成する既存の機能に加えて、ER フレームワークを使用することができるようになりました。 Microsoft Office Excel および Word で印刷可能な FTI フォームを管理することができます。 また、コードを変更せずにレイアウト、データ フロー、および形式を特定の要件に合わせて変更することもできます。
 
 > [!NOTE]
-> 印刷可能な FTI フォーム ソリューションのサンプル用の既存の ER コンフィギュレーションの概要から開始する場合、このトピックで後述する **印刷可能な FTI フォームを生成するための ER コンフィギュレーションのサンプルをダウンロード** のセクションに直接移動します。
+> 印刷可能な FTI フォーム ソリューションのサンプル用の既存の ER 構成の概要から開始する場合、このトピックで後述する **印刷可能な FTI フォームを生成するための ER 構成のサンプルをダウンロード** セクションに直接移動します。
 
 ## <a name="create-customized-configurations-for-fti-printable-forms"></a>FTI 印刷可能フォームのカスタマイズされたコンフィギュレーションの作成
 印刷可能な FTI フォームのカスタマイズされたソリューションの一部として、ER コンフィギュレーションのセットを作成する必要があります。

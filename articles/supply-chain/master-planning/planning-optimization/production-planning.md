@@ -1,6 +1,6 @@
 ---
 title: 生産計画
-description: このトピックでは、生産の計画について説明し、計画の最適化を使用して計画製造オーダーを変更する方法について説明します。
+description: この記事では、生産の計画についてと、計画の最適化を使用して計画製造オーダーを変更する方法について説明します。
 author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8f23cb62512dfd718fe199867a4b21aaa0eca3fd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469061"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873785"
 ---
 # <a name="production-planning"></a>生産計画
 
@@ -24,11 +24,11 @@ ms.locfileid: "8469061"
 
 計画の最適化では、複数の生産シナリオがサポートされます。 組み込みの既存のマスター プラン エンジンから移行する場合は、変更された動作について注意することが重要です。
 
-次のビデオでは、このトピックで説明されている概念のいくつかを簡単に紹介しています: [Dynamics 365 Supply Chain Management: 計画最適化の機能拡張](https://youtu.be/u1pcmZuZBTw)。
+次のビデオでは、この記事で説明されている概念を簡単に紹介しています: [Dynamics 365 Supply Chain Management: 計画最適化の機能拡張](https://youtu.be/u1pcmZuZBTw)。
 
 ## <a name="turn-on-this-feature-for-your-system"></a>システムでこの機能を有効化する
 
-このトピックで説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*計画最適化に使用する計画製造オーダー* 機能を有効にします。
+この記事で説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*計画最適化に使用する計画製造オーダー* 機能を有効にします。
 
 ## <a name="planned-production-orders"></a>計画製造オーダー
 
@@ -65,7 +65,7 @@ BOM 情報はマスター プランの際に受け入れされます。 この�
 2. 計画オーダーの承認。
 3. マスター プランの実行。
 
-マスター プランを実行する際、計画製造オーダーを含める場合はフィルタを使用しません。 詳細については、このトピックの後にある [フィルタ―](#filters) セクションを参照してください。
+マスター プランを実行する際、計画製造オーダーを含める場合はフィルタを使用しません。 詳細については、この記事の後にある [フィルタ―](#filters) セクションを参照してください。
 
 > [!NOTE]
 > 計画オーダーの出荷日が後の日付に変更された場合、需要は新しい計画オーダーに対してペギングされる可能性があります。 この動作は、新しい供給日によってペギングされた需要に遅延が発生するが、リード タイムの設定に従って遅延を回避できる場合に発生します。

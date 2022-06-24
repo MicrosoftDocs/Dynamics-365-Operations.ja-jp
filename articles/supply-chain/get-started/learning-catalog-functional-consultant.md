@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 296cee4c5da82d8bfcab298a5a2a13d982f8f808
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 05f2f11408dac93faa8f71cb0396893c03cdb6a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672097"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851887"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Dynamics 365 Supply Chain Management 機能コンサルタント向けラーニング カタログ
 
@@ -68,7 +68,7 @@ ms.locfileid: "8672097"
 | [コース MB-300T01-A: Dynamics 365 for Finance and Operations のコア共通機能](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | このコースでは、Microsoft Dynamics 365 for Finance and Operations のコア共通機能について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
 | [コース MB-300T02-A: Dynamics 365 for Finance and Operations でのコア コンフィギュレーション](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | このコースでは、Microsoft Dynamics 365 for Finance and Operations のコア コンフィギュレーション タスクについて説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
 | [コース MB-300T03-A: データの移行および Dynamics 365 for Finance and Operations の運用を開始する準備](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | このコースでは、データ移行と Microsoft Dynamics 365 for Finance and Operations の運用を開始する準備について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |
-| [実装ライフサイクル ホーム ページ](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | これらのトピックでは、Microsoft Dynamics 365 for Finance and Operations プロジェクトの実装ライフサイクルに関連するプログラム、ツール、プロセスについて説明します。 | ドキュメント | |
+| [実装ライフサイクル ホーム ページ](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | これらの記事では、Microsoft Dynamics 365 for Finance and Operations プロジェクトの実装ライフサイクルに関連するプログラム、ツール、プロセスについて説明します。 | ドキュメント | |
 
 ## <a name="migration-and-upgrade"></a>移行およびアップグレード<a name="migration"></a>
 
@@ -105,7 +105,7 @@ ms.locfileid: "8672097"
 | [倉庫モバイル アプリ (VIR816PAL) ](https://community.dynamics.com/365/b/techtalks/posts/warehousing-mobile-app-march-22-2017) | この Tech Talk では、Dynamics 365 for Operations の高度な倉庫管理システムについて、および高度な倉庫管理モバイル インターフェイスについては今後どのような内容が含まれるかについて説明します。 リリースされた新しいモバイル アプリケーションと、レガシー WMDP との比較を検証します。 このモバイル アプリケーションをインストール、コンフィギュレーション、および運用するために何が必要か、および実装に対してどのように役立つかについて学びます。 | Web カンファレンスの無料録画 | 54 分 |
 | [仕入先コラボレーション (DYN327PAL) ](https://community.dynamics.com/365/b/techtalks/posts/vendor-collaboration-july-25-2017) | この Tech Talk では、7 月 (春) のリリースに含まれている仕入先からの反応の消費機能を含む、仕入先コラボレーション機能について説明します。 | Web カンファレンスの無料録画 | 58 分 |
 | [高度な倉庫管理を使用するための品目と倉庫の移行プロセス (DYN316PAL) ](https://community.dynamics.com/365/b/techtalks/posts/item-and-warehouse-migration-process-to-use-advanced-warehouse-management-june-27-2017) | この Tech Talk では、新しい機能を使用して品目の保管分析コードグループを変更したり、倉庫で高度な倉庫管理プロセスを使用できるようにすることにより、既存の倉庫設定と未処理トランザクションを含む品目を高度な倉庫管理に移行する方法について説明します。 | Web カンファレンスの無料録画 | 54 分 |
-| [サプライ チェーン マネジメントのホーム ページ](/dynamics365/unified-operations/supply-chain/) | このトピックでは、Microsoft Dynamics 365 for Finance and Operations のサプライ チェーン マネジメント機能に関するヘルプ トピックとその他のリソースの一覧を示します。 | ドキュメント | |
+| [サプライ チェーン マネジメントのホーム ページ](/dynamics365/unified-operations/supply-chain/) | この記事では、Microsoft Dynamics 365 for Finance and Operations のサプライ チェーン マネジメント機能に関するヘルプ記事とその他のリソースの一覧を示します。 | ドキュメント | |
 | [原材料ピッキングの需要の補充 (DYN333PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/demand-replenishment-for-raw-material-picking-september-28-2017) | この Tech Talk では、原材料のピッキングのための原材料のピッキングおよび需要の補充について説明します。 | Web カンファレンスの無料録画 | 38 分 |
 | [コース MB-330T01-A: Dynamics 365 for Finance and Operations での Supply Chain Management のコンフィギュレーションおよび使用](https://www.microsoft.com/learning/course.aspx?cid=MB-330T01) | このコースでは、Dynamics 365 for Finance and Operations での Supply Chain Management のコンフィギュレーション方法と使用方法について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 2 日間 |
 | [コース MB-330T02-A: Dynamics 365 for Finance and Operations での品質管理、会社間取引、マスター プランの使用](https://www.microsoft.com/learning/course.aspx?cid=MB-330T02) | このコースでは、Dynamics 365 for Finance and Operations での品質管理、会社間取引、マスター プランの使用方法について説明します。 | 講師主導の個人トレーニングまたはオンライン トレーニング、費用は地域およびパートナーによって異なる | 1 日間 |

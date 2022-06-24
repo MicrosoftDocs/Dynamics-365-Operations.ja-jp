@@ -1,6 +1,6 @@
 ---
 title: リピート発注書の作成
-description: このトピックでは、以前の購買発注ドキュメントから新しい発注書、または既存の発注書に明細行をコピーして、リピート発注書 (PO) を作成する方法を示します。
+description: この記事では、以前の購買発注ドキュメントから新しい発注書、または既存の発注書に明細行をコピーして、リピート発注書 (PO) を作成する方法を示します。
 author: GalynaFedorova
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be4eca824794b8d45c7a6f40cb68aff7c4a53cd0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 42bfbc7a10d21a475055ee87e76c89db0ad64165
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671141"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865095"
 ---
 # <a name="create-a-repeat-purchase-order"></a>リピート発注書の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、以前の購買発注ドキュメントから新しい発注書、または既存の発注書に明細行をコピーして、リピート発注書 (PO) を作成する方法を示します。 リピート注文を作成するのに 2 つの方法があります。 アクション ウィンドウのドキュメント レベルで利用可能なアクション、または行の詳細のアクションを使用できます。 ドキュメント レベル アクションは、主に別の注文から注文明細行およびヘッダー情報を追加することにより、新しい発注書を作成するのに使用します。一方、行の詳細のアクションは、主に明細行を既存の注文に追加するのに使用します。 このガイドで示されている例は、デモ データの会社 USMF で使用できます。 このタスクは通常、購買担当者により実行されます。
+この記事では、以前の購買発注ドキュメントから新しい発注書、または既存の発注書に明細行をコピーして、リピート発注書 (PO) を作成する方法を示します。 リピート注文を作成するのに 2 つの方法があります。 アクション ウィンドウのドキュメント レベルで利用可能なアクション、または行の詳細のアクションを使用できます。 ドキュメント レベル アクションは、主に別の注文から注文明細行およびヘッダー情報を追加することにより、新しい発注書を作成するのに使用します。一方、行の詳細のアクションは、主に明細行を既存の注文に追加するのに使用します。 このガイドで示されている例は、デモ データの会社 USMF で使用できます。 このタスクは通常、購買担当者により実行されます。
 
 
 ## <a name="create-a-new-repeat-purchase-order"></a>新しいリピート発注書の作成

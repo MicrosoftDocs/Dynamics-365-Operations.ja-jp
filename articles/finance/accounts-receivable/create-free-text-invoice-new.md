@@ -1,6 +1,6 @@
 ---
 title: 自由書式の請求書の作成
-description: このトピックでは、自由書式の請求書を作成する方法を説明します。
+description: この記事では、自由書式の請求書を作成する方法を説明します。
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 87dc6334baa83ace23b77d94da4d1e464cb0b574
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392888"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878163"
 ---
 # <a name="create-a-free-text-invoice"></a>自由書式の請求書の作成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、自由書式の請求書を作成する方法を説明します。 手順については、**USMF** というデモ会社を使用します。
+この記事では、自由書式の請求書を作成する方法を説明します。 手順については、**USMF** というデモ会社を使用します。
 
 ## <a name="create-a-free-text-invoice"></a>自由書式の請求書の作成
 
@@ -37,7 +37,7 @@ ms.locfileid: "8392888"
     * 単一ユーロ支払地域 (SEPA) 委任状を使用している場合、口座引落の委任状は、顧客口座の選択時に自動的に入力されます。
 
 4. **説明** フィールドで値を入力します。
-5. **主勘定** のフィールドに、分析コードを持たない勘定番号を指定します。 このトピックで後述する分析コードを入力します。
+5. **主勘定** のフィールドに、分析コードを持たない勘定番号を指定します。 この記事で後述する分析コードを入力します。
 
     また、主勘定について 1 文字以上を入力し、ルックアップを使用して勘定を検索することもできます。
 

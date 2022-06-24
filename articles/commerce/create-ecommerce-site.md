@@ -1,6 +1,6 @@
 ---
 title: e コマース サイトの作成
-description: このトピックでは、Dynamics 365 Commerce サイト ビルダーで新しい e コマース サイトを作成するために必要な手順と情報について説明します。
+description: この記事では、Dynamics 365 Commerce サイト ビルダーで新しい e コマース サイトを作成するために必要な手順と情報について説明します。
 author: bicyclingfool
 ms.date: 03/10/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: b4ac8d1b930c89bf330a2332c0b510dadb92e51f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402778"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855773"
 ---
 # <a name="create-an-e-commerce-site"></a>e コマース サイトの作成
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 Commerce サイト ビルダーで新しい e コマース サイトを作成するために必要な手順と情報について説明します。
+この記事では、Dynamics 365 Commerce サイト ビルダーで新しい e コマース サイトを作成するために必要な手順と情報について説明します。
 
 Dynamics 365 Commerce 機能のライセンスを取得すると、サイト ビルダーには、独自のサイトの基礎として使用できるスターター サイトがプロビジョニングされます。 ただし、最初から開始する場合、または 2 つめのサイトを作成する場合は、サイト作成環境で新しいサイトを作成する必要があります。 
 

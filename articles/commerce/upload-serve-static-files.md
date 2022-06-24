@@ -1,6 +1,6 @@
 ---
-title: 静的ファイルのアップロードと提供
-description: このトピックでは、静的ファイルを Microsoft Dynamics 365 Commerce サイト ビルダーにアップロードする方法と、そのファイルを要求するために使用できるカスタム URL およびファイル名の作成方法について説明します。
+title: 静的ファイルのアップロードと配信
+description: この記事では、静的ファイルを Microsoft Dynamics 365 Commerce サイト ビルダーにアップロードする方法と、そのファイルを要求するために使用できるカスタム URL およびファイル名の作成方法について説明します。
 author: StuHarg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 389d33189644241dcf98da0c7f3b841e82a4430ac459dc8027284cecc299b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1b14feba1466c3a5efc3b0ea66f20e9e818a8a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714686"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885325"
 ---
-# <a name="upload-and-serve-static-files"></a>静的ファイルのアップロードと提供
+# <a name="upload-and-serve-static-files"></a>静的ファイルのアップロードと配信
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、静的ファイルを Microsoft Dynamics 365 Commerce サイト ビルダーにアップロードする方法と、そのファイルを要求するために使用できるカスタム URL およびファイル名の作成方法について説明します。
+この記事では、静的ファイルを Microsoft Dynamics 365 Commerce サイト ビルダーにアップロードする方法と、そのファイルを要求するために使用できるカスタム URL およびファイル名の作成方法について説明します。
 
-サードパーティの一部のコネクタでは、電子商取引サイトからファイルをホストし、提供する必要があります。 これらのコネクタは、特定のコールバック URL パスとファイル名への要求によってファイルが返されることを予期しています。 したがって、このトピックでは、Dynamics 365 Commerce 電子商取引サイト上にユーザー定義可能な URL とファイル名を持つ静的ファイルをアップロードして提供する方法について説明します。
+サードパーティの一部のコネクタでは、電子商取引サイトからファイルをホストし、提供する必要があります。 これらのコネクタは、特定のコールバック URL パスとファイル名への要求によってファイルが返されることを予期しています。 したがって、この記事では、Dynamics 365 Commerce 電子商取引サイト上にユーザー定義可能な URL とファイル名を持つ静的ファイルをアップロードして提供する方法について説明します。
 
 ## <a name="create-a-site-url-that-returns-a-static-file"></a>静的ファイルを返すサイト URL の作成
 
@@ -86,7 +86,7 @@ URL が作成された後は、パスを変更することはできません。 
 
 URL パスを変更するには、次の手順に従います。
 
-1. 新しい URL を作成して既存のファイルまたは別のリソースにマップするには、このトピックの前の[静的ファイルを返すサイト URL を作成する](#create-a-site-url-that-returns-a-static-file)セクションの手順に従ってください。
+1. 新しい URL を作成して既存のファイルまたは別のリソースにマップするには、この記事の前の[静的ファイルを返すサイト URL を作成する](#create-a-site-url-that-returns-a-static-file)セクションの手順に従ってください。
 1. 新しい URL を選択し、コマンド バーの **発行** を選択します。 新しい URL が発行されます。
 1. 古い URL の発行を解除するには、URL を選択し、コマンド バーの **発行取り消し** を選択します。 古い URL を必要に応じて削除できるようになりました。
 

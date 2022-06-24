@@ -1,6 +1,6 @@
 ---
 title: 顧客階層を使用した B2B ビジネス パートナーの管理
-description: このトピックでは、顧客階層を使用して、Microsoft Dynamics 365 Commerce 企業間 (B2B) の e コマース Web サイトのビジネス パートナーを管理する方法について説明します。
+description: この記事では、顧客階層を使用して、Microsoft Dynamics 365 Commerce 企業間 (B2B) の eコマース Web サイトのビジネス パートナーを管理する方法について説明します。
 author: josaw1
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 70acdf469be2fcddd9e2bf755e958c1b20ee2fcf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ddd02045b5df3ce20160a4feaa23339475823d3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686574"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864984"
 ---
 # <a name="manage-b2b-business-partners-using-customer-hierarchies"></a>顧客階層を使用した B2B ビジネス パートナーの管理
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、顧客階層を使用して、Microsoft Dynamics 365 Commerce 企業間 (B2B) の e コマース Web サイトのビジネス パートナーを管理する方法について説明します。
+この記事では、顧客階層を使用して、Microsoft Dynamics 365 Commerce 企業間 (B2B) の eコマース Web サイトのビジネス パートナーを管理する方法について説明します。
 
 Commerce 本部では、B2B e コマース サイトを使用するビジネス パートナー組織を表すために *顧客階層* エンティティが使用されます。 顧客階層を使用してビジネス パートナーを管理するには、Commerce 本部で B2B e コマース機能を有効にし、顧客階層の番号順序を定義する必要があります。
 

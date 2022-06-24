@@ -1,6 +1,6 @@
 ---
 title: 部門、職務、職位を使用した従業員の編成
-description: このトピックでは、人事管理で管理される組織の要素である部門、職務、および職位に関する概念を説明します。
+description: この記事では、人事管理で管理される組織の要素である部門、職務、および職位に関する概念について説明します。
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 717bf7dcbd9a7e19a6dc960648655fdbd3e2465a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0cb4e745eb6531d90a02778ba85e6caf790f2d46
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694826"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874278"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>部門、職務、職位を使用した従業員の編成
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694826"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-部門、職務、および職位は、人事管理で管理される組織の要素です。 このトピックでは、これらの要素についての概念に関する情報を説明します。 
+部門、職務、および職位は、人事管理で管理される組織の要素です。 この記事では、これらの要素についての概念に関する情報を説明します。 
 
 次の例で、この記事で説明する概念について説明します。
 

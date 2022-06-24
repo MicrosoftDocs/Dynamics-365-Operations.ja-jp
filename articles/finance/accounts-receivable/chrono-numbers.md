@@ -1,6 +1,6 @@
 ---
 title: ドキュメントや伝票に時系列に採番する
-description: このトピックでは、ドキュメントや伝票への時系列の採番方法および使用方法について説明します。
+description: この記事では、ドキュメントや伝票への時系列の採番方法および使用方法について説明します。
 author: ikond
 ms.date: 02/01/2021
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0ce1afdbd31a78611e6b51dd93f7159d684c97cb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6baf307406982e8f72acc0d02f047dbc7c63a5ed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692676"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876386"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>ドキュメントや伝票に時系列に採番する
 
 [!include [banner](../includes/banner.md)]
 
 
-一部の国では、ドキュメントや関連する伝票に時系列で採番することが法的に義務付けられています。 時系列は期間に対応している必要があります。 古い期間に属する数字はすべて、それよりも新しい期間に属する数字よりも小さくなければなりません。 この要件を満たす目的で、時系列の採番機能が実装されています。 このトピックでは、ドキュメントや伝票への時系列の採番を構成する方法および使用方法について説明します。
+一部の国では、ドキュメントや関連する伝票に時系列で採番することが法的に義務付けられています。 時系列は期間に対応している必要があります。 古い期間に属する数字はすべて、それよりも新しい期間に属する数字よりも小さくなければなりません。 この要件を満たす目的で、時系列の採番機能が実装されています。 この記事では、ドキュメントや伝票への時系列の採番を構成する方法および使用方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 

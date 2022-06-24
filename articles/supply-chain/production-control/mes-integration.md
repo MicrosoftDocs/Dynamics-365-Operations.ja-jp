@@ -1,6 +1,6 @@
 ---
 title: サード パーティ製造システムとの統合
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management をサード パーティの製造実行システム (MES) と統合する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management をサード パーティの製造実行システム (MES) と統合する方法について説明します。
 author: johanhoffmann
 ms.date: 10/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: c7633ba32f9265aa0fd8f702552f48dbf675375d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678690"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860641"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>サード パーティ製造システムとの統合
 
@@ -238,7 +238,7 @@ MES 統合 API を呼び出す場合は、次のエンドポイント URL に `P
 
 ## <a name="other-production-information"></a>その他の製造情報
 
-メッセージは、作業現場で発生するアクションやイベントをサポートします。 メッセージは、このトピックで説明する MES 統合フレームワークを使用して処理されます。 この設計では、MES と共有する他の参照情報 (製品関連情報や、特定の製造オーダーで使用され、特定の設定および構成時間を含む部品表またはルートなど) は、ファイル転送または OData で [データ エンティティ](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) を使用してシステムから取得されます。
+メッセージは、作業現場で発生するアクションやイベントをサポートします。 メッセージは、この記事で説明する MES 統合フレームワークを使用して処理されます。 この設計では、MES と共有する他の参照情報 (製品関連情報や、特定の製造オーダーで使用され、特定の設定および構成時間を含む部品表またはルートなど) は、ファイル転送または OData で [データ エンティティ](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) を使用してシステムから取得されます。
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>メッセージの状態に関するフィードバックの受信
 
@@ -251,7 +251,7 @@ MES から Supply Chain Management にメッセージが送信された後に、
 
 そのような場合は、Supply Chain Management の標準警告機能を活用できます。 標準警告のしくみについては、次のリソースを参照してください。
 
-- ヘルプ トピック: [警告の概要](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- ヘルプ記事: [警告の概要](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
 - ビデオ: [Dynamics 365 for Finance and Operations の警告ルールオプション](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 たとえば、メッセージの状態に関するフィードバックを提供するために、次の警告を設定できます。

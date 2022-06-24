@@ -1,6 +1,6 @@
 ---
 title: サイトに言語を追加する
-description: このトピックでは、Microsoft Dynamics 365 Commerce サイトに追加の言語のサポートを追加する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce サイトに追加の言語のサポートを追加する方法について説明します。
 author: bicyclingfool
 ms.date: 12/12/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d118c90dc16be964bb22aa6f170fe2d2f009b3e9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 69ee1d744ce26d5040d80e470b18d87bbddbda26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964557"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871809"
 ---
 # <a name="add-languages-to-your-site"></a>サイトに言語を追加する
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce サイトに追加の言語のサポートを追加する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce サイトに追加の言語のサポートを追加する方法について説明します。
 
-Web サイトは、Commerce がサポートする任意の言語にローカライズできます。 (サポートされている言語の一覧については、このトピックの後半で説明されています。) Web サイトに言語を追加するには、まず、サイトにバインドされているオンライン ストアに言語を追加する必要があります。
+Web サイトは、Commerce がサポートする任意の言語にローカライズできます。 (サポートされている言語の一覧については、この記事の後半で説明されています。) Web サイトに言語を追加するには、まず、サイトにバインドされているオンライン ストアに言語を追加する必要があります。
 
 ## <a name="add-a-language-to-an-online-store"></a>オンライン ストアに言語を追加する
 

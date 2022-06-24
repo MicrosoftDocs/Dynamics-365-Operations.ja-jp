@@ -1,6 +1,6 @@
 ---
 title: Field Service から Supply Chain Management へのプロジェクトの作業指示書の同期
-description: このトピックでは、Dynamics 365 Field Service から Dynamics 365 Supply Chain Management にワーク オーダーとプロジェクト番号を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+description: この記事では、Dynamics 365 Field Service から Dynamics 365 Supply Chain Management にワーク オーダーとプロジェクト番号を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: Henrikan
 ms.date: 03/12/2019
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f0b3214aba5882a585664030d6c1aebe34de455c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a43a7f7e900205bdb23fb9a35ca1518369683a42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860496"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Field Service から Supply Chain Management へのプロジェクトの作業指示書の同期
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Field Service から Dynamics 365 Supply Chain Management にワーク オーダーとプロジェクト番号を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+この記事では、Dynamics 365 Field Service から Dynamics 365 Supply Chain Management にワーク オーダーとプロジェクト番号を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
 [![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
 使用されている **ワーク オーダーとプロジェクト (Field Service から Supply Chain Management)** テンプレートは、**ワーク オーダー (Field Service から Supply Chain Management)** テンプレートに基づきます。 詳細については、[Field Service のワーク オーダーと Supply Chain Management の販売注文との同期](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order) を参照してください。
 
-このトピックでは、2 つのテンプレートの相違のみについて説明します:
+この記事では、2 つのテンプレートの相違のみについて説明します:
 - **ワーク オーダーとプロジェクト (Field Service から Supply Chain Management)**
 - **ワーク オーダー (Field Service から Supply Chain Management)**
 

@@ -1,6 +1,6 @@
 ---
 title: サービスのための社内資産
-description: このトピックでは、Microsoft Dynamics 365 Field Service を使用して顧客資産と社内資産の両方にサービスを提供する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Field Service を使用して顧客資産と社内資産の両方にサービスを提供する方法について説明します。
 author: RamaKrishnamoorthy
 ms.date: 01/27/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 8048a99951eea3fbae34e56c1b444c75ad3d199d
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c946af11737a77c4dadd824893e6cc1e4c77b587
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781419"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858625"
 ---
 # <a name="in-house-assets-for-servicing"></a>サービスのための社内資産
 
@@ -28,7 +28,7 @@ Microsoft Dynamics 365 Field Service は、顧客資産をサービスするよ�
 
 社内資産には、次のテーブルに示すように、データの相互作用中に連携して作業するコア テーブル マップのコレクションが含まれます。
 
-| Finance and Operations アプリ | Customer Engagement アプリ | 説明 |
+| 財務と運用アプリ | Customer Engagement アプリ | 説明 |
 |-----------------------------|-----------------------------------|-------------|
 [資産管理資産のライフサイクル モデル](mapping-reference.md#119) | msdyn_assetlifecyclemodels | |
 [資産管理資産のライフサイクル状態](mapping-reference.md#120) | msdyn_assetlifecyclestates | |

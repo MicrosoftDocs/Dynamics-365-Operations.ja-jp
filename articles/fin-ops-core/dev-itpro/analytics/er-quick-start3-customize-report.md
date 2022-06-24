@@ -1,6 +1,6 @@
 ---
 title: 電子レポートのカスタマイズを構成して電子ドキュメントを生成する
-description: このトピックでは、Microsoft が提供する電子レポート (ER) の構成をカスタマイズして、カスタム電子ドキュメントを生成する方法について説明します。
+description: この記事では、Microsoft が提供する電子レポート (ER) の構成をカスタマイズして、カスタム電子ドキュメントを生成する方法について説明します。
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661661"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854701"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>電子レポートのカスタマイズを構成して電子ドキュメントを生成する
 
@@ -32,9 +32,9 @@ ms.locfileid: "8661661"
 
 ## <a name="overview"></a>概要
 
-このトピックの例では、電子請求書を発行するすべての顧客の新しいカスタム属性として連邦税の ID コードを指定する必要があります。 そのため、現在使用している請求書の構造をカスタマイズするには、生成される電子請求書のすべてに対して税コードの記入を必須かした項目を新たに追加する必要があります。
+この記事の例では、電子請求書を発行するすべての顧客の新しいカスタム属性として連邦税の ID コードを指定する必要があります。 そのため、現在使用している請求書の構造をカスタマイズするには、生成される電子請求書のすべてに対して税コードの記入を必須かした項目を新たに追加する必要があります。
 
-このトピックの手順では、システム管理者、電子レポート開発者、電子レポート機能コンサルタントのロールを持つユーザーが財務インスタンスで以下のタスクを実行する方法について説明します :
+この記事の手順では、システム管理者、電子レポート開発者、電子レポート機能コンサルタントのロールを持つユーザーが財務インスタンスで以下のタスクを実行する方法について説明します :
 
 - [ER フレームワークを使い始めるにあたって必要となる ER パラメーターの最小限のセットを構成する](#ConfigureER)。
 - [電子インボイスの生成に向けて提供されている標準的な ER 構成の最初のバージョンをインポートする](#ImportERConfigurations1)。

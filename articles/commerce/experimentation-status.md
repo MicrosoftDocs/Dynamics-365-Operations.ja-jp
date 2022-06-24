@@ -1,6 +1,6 @@
 ---
 title: 実験のステータスを確認する
-description: このトピックでは、Dynamics 365 Commerce の実験のライフサイクルにおける実験の状態について説明します。
+description: この記事では、Dynamics 365 Commerce の実験のライフサイクルにおける実験の状態について説明します。
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: af19a1c2e6a3205cd76c9fe998d1c8268f9077661b96c43b9aa9733286bd32d9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 818435a7c901d2a6b876b9c9db27faffc8b322fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777527"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877252"
 ---
 # <a name="review-the-status-of-an-experiment"></a>実験のステータスを確認する
 Dynamics 365 Commerce の実験の設定と実行には、多くの手順が含まれます。 実験のライフサイクルの詳細については、[Dynamics 365 Commerce での実験](experimentation-overview.md) を参照してください。

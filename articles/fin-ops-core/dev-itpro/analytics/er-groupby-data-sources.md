@@ -1,6 +1,6 @@
 ---
 title: GROUPBY データ ソースを使用したレコードのグループ化と集約計算
-description: このトピックでは、電子申告 (ER) で GROUPBY 型のデータ ソースを使用する方法について説明します。
+description: この記事では、電子申告 (ER) で GROUPBY 型のデータ ソースを使用する方法について説明します。
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b79dfe62122a031ae9ed7f51ea7ff578cd47358
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 7b20b5db0794157560f27f15594a84083966642f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462300"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861790"
 ---
 # <a name="group-records-and-aggregate-calculations-by-using-groupby-data-sources"></a>GROUPBY データ ソースを使用したレコードのグループ化と集約計算
 
@@ -69,7 +69,7 @@ ms.locfileid: "8462300"
 
 この例では、システム管理者または電子申告業務コンサルタント ロールのユーザーが、集計関数とグループ レコードの計算に使用される **GROUPBY** データ ソースを含む ER モデル マッピングを構成する方法を示します。 イントラスタット申告の生成時に、このモデル マッピングを使用して制御レポートを印刷します。 そのレポートでは、報告されたイントラスタット トランザクションを確認することができます。
 
-この例の手順は、Microsoft Dynamics 365 Finance の **DEMF** 会社で完了することができます。 
+この例の手順は、Microsoft Dynamics 365 Finance の **DEMF** 社を使用して説明します。 
 
 ### <a name="prepare-sample-data"></a>サンプル データの準備
 
@@ -83,7 +83,7 @@ ms.locfileid: "8462300"
 
 ### <a name="import-the-standard-er-format-configuration"></a>標準 ER フォーマットの構成をインポートする
 
-[標準的な ER フォーマットの構成をインポートする](er-quick-start2-customize-report.md#ImportERSolution1)に記載の手順に従って、標準的な ER の構成を現在の Dynamics 365 Finance のインスタンスに追加します。 リポジトリから **イントラスタット モデル** 構成のバージョン 1 をインポートします。
+[標準的な ER フォーマットの構成をインポートする](er-quick-start2-customize-report.md#ImportERSolution1) に記載の手順に従って、標準的な ER の構成を現在の Dynamics 365 Finance のインスタンスに追加します。 リポジトリから **イントラスタット モデル** 構成のバージョン 1 をインポートします。
 
 ### <a name="create-a-custom-data-model-configuration"></a>カスタム データ モデルの構成を作成する
 

@@ -1,6 +1,6 @@
 ---
 title: 仕入先支払ワークスペース
-description: このトピックでは、[仕入先支払] モバイル ワークスペースに関する情報を提供します。 [仕入先支払] ワークスペースは、仕入先支払の処理に関連する情報を表示します。
+description: この記事では、[仕入先支払] モバイル ワークスペースに関する情報を提供します。 [仕入先支払] ワークスペースは、仕入先支払の処理に関連する情報を表示します。
 author: abruer
 ms.date: 10/16/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 084a18d1af789c7ebb89d9a598754a9478a48b83fb949241c9fc34fefa7c152b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6463e25fdcbc77dacc286460f3acd30ccc3d6e86
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749273"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847034"
 ---
 # <a name="vendor-payments-workspace"></a>仕入先支払ワークスペース
 

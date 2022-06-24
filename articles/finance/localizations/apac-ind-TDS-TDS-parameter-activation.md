@@ -1,6 +1,6 @@
 ---
 title: TDS パラメーターの設定
-description: このトピックでは、パラメーターを設定して、指定されたトランザクションで源泉徴収税 (TDS) 機能を有効にする方法について説明します。 これは、源泉徴収税 TDS 機能を使用するために必要な手順です。
+description: この記事では、パラメーターを設定して、指定されたトランザクションで源泉徴収税 (TDS) 機能を有効にする方法について説明します。 これは、源泉徴収税 TDS 機能を使用するために必要な手順です。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f7c8802d10a065c60894e80c8ff3cb19163d5ffe
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3390cad6979858fbff73769d0d25132ba18a2157
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726924"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865616"
 ---
 # <a name="set-the-tds-parameters"></a>TDS パラメーターの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、パラメーターを設定して、指定されたトランザクションで源泉徴収税 (TDS) 機能を有効にする方法について説明します。 これは、源泉徴収税 TDS 機能を使用するために必要な手順です。
+この記事では、パラメーターを設定して、指定されたトランザクションで源泉徴収税 (TDS) 機能を有効にする方法について説明します。 これは、源泉徴収税 TDS 機能を使用するために必要な手順です。
 
 1. **一般会計 \> 元帳の設定 \> 一般会計パラメーター** の順に移動します。
 2. **直接税** タブの **源泉徴収税** セクションで、**TDS の有効化** オプションを **はい** に設定して、TDS 機能とそれに使用されるページおよびフィールドを有効にします。

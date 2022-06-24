@@ -1,6 +1,6 @@
 ---
 title: 4xx/5xx ステータス コード エラーに対するカスタム応答ページの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce の作成ツールを使用して、4xx と 5xx のステータス コード エラーに対するカスタム応答ページを作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の作成ツールを使用して、4xx と 5xx のステータス コード エラーに対するカスタム応答ページを作成する方法について説明します。
 author: v-chgri
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 16cd6c3dab5502826119b6a517414d23e168e79708e306897b04c7ba8c80404b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b56d7a58659205ce4483480fd85d1c91ae52a0f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741144"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882262"
 ---
 # <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>4xx/5xx ステータス コード エラーに対するカスタム応答ページの作成
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の作成ツールを使用して、4xx と 5xx のステータス コード エラーに対するカスタム応答ページを作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の作成ツールを使用して、4xx と 5xx のステータス コード エラーに対するカスタム応答ページを作成する方法について説明します。
 
 要求が成功しなかった場合、サーバーは HTTP ステータス コード エラーの応答を発行します。 ページが見つからない場合は、404 ステータス コードがキャプチャされて返され、サーバー エラーが発生した場合は 500 ステータス コードがキャプチャされて返されます。 Dynamics 365 Commerce では、アプリケーション ユーザーは、これらのステータス コード エラーの応答について、ユーザーに対して表示されるカスタム ステータス コード エラーの応答ページを作成できます。
 

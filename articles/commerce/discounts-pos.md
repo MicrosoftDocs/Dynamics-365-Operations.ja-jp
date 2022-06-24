@@ -1,6 +1,6 @@
 ---
 title: POS での割引の表示
-description: このトピックでは、販売担当者がプロモーションについて学習するのに Microsoft Dynamics 365 Commerce がどのように役立つか、およびそれらをクロスセルとアップセルの活動に使用する方法について説明します。
+description: この記事では、販売担当者がプロモーションについて学習するのに Microsoft Dynamics 365 Commerce がどのように役立つか、およびそれらをクロスセルとアップセルの活動に使用する方法について説明します。
 author: ShalabhjainMSFT
 ms.date: 07/29/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3ec16c5051088ed2777309899b26094e8d67743
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731670"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878543"
 ---
 # <a name="show-discounts-in-pos"></a>POS に割引を表示
 
 [!include [banner](includes/banner.md)]
 
-プロモーションは、購買決定を行う動機付けの顧客にとって重要な役割を果たします。 たとえば、魅力的なプロモーションと割引によって小売市場全体があふれているので、休日は小売業者の最大販売数を生産できます。 店舗では、利用可能なプロモーションを把握して理解している場合、それらのプロモーションを簡単に活用して、品目のクロスセルおよびアップセルを行うことができます。 このトピックでは、販売担当者がプロモーションについて学習するのに Microsoft Dynamics 365 Commerce がどのように役立つか、およびそれらをクロスセルとアップセルの活動に使用する方法について説明します。
+プロモーションは、購買決定を行う動機付けの顧客にとって重要な役割を果たします。 たとえば、魅力的なプロモーションと割引によって小売市場全体があふれているので、休日は小売業者の最大販売数を生産できます。 店舗では、利用可能なプロモーションを把握して理解している場合、それらのプロモーションを簡単に活用して、品目のクロスセルおよびアップセルを行うことができます。 この記事では、販売担当者がプロモーションについて学習するのに Microsoft Dynamics 365 Commerce がどのように役立つか、およびそれらをクロスセルとアップセルの活動に使用する方法について説明します。
 
 ## <a name="learn-about-store-discounts"></a>店舗割引について
 

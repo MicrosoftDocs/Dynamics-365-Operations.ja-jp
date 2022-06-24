@@ -1,6 +1,6 @@
 ---
-title: ER 形式を調整してカスタム電子ドキュメントを生成
-description: このトピックでは、Microsoft が提供する電子レポート (ER) 形式を調整して、カスタム電子ドキュメントを生成する方法について説明します。
+title: カスタム電子ドキュメントを生成するための電子申告形式の調整
+description: この記事では、Microsoft が提供する電子レポート (ER) 形式を調整して、カスタム電子ドキュメントを生成する方法について説明します。
 author: NickSelin
 ms.date: 06/22/2020
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14976aab474b6571c2a25907f04fd4d7ae053e74
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323820"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886794"
 ---
-# <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>ER 形式を調整してカスタム電子ドキュメントを生成
+# <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>カスタム電子ドキュメントを生成するための電子申告形式の調整
 
 [!include[banner](../includes/banner.md)]
 
-このトピックの手順では、システム管理者または電子レポート機能コンサルタントのロールのユーザーが次のタスクを実行する方法について説明します:
+この記事の手順では、システム管理者または電子レポート機能コンサルタントのロールのユーザーが次のタスクを実行する方法について説明します:
 
 - [電子申告 (ER) フレームワーク](general-electronic-reporting.md) のパラメーターを構成します。
 - Microsoft が提供し、[仕入先支払](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md) の処理中に、支払いファイルを生成するために使用する ER コンフィギュレーションをインポートします。
@@ -135,7 +135,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat1"></a> 標準 ER コンフィギュレーションをインポート
 
-標準 ER コンフィギュレーションを現在の Microsoft Dynamics 365 Finance のインスタンスに追加するには、インスタンスにコンフィギュレーションされた ER [リポジトリ](general-electronic-reporting.md#Repository) からインポートする必要があります。
+Microsoft Dynamics 365 Finance の現在のインスタンスに標準的な ER 構成を追加するには、そのインスタンスに構成された ER [リポジトリ](general-electronic-reporting.md#Repository) からインポートする必要があります。
 
 1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. **ローカライズ コンフィグレーション** ページの **コンフィギュレーション プロバイダー** セクションで、**Microsoft** タイルを選択し、**リポジトリ** を選択して Microsoft プロバイダーのリポジトリの一覧を表示します。

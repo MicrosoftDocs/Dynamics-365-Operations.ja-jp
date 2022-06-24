@@ -1,6 +1,6 @@
 ---
 title: Finance Insights の構成
-description: このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。
+description: この記事では、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。
 author: ShivamPandey-msft
 ms.date: 01/27/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6ec7e6a7e616e239128281ba669c8bbbfc5e3c7a
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac0f0cb078b6e202540fadbff337a01379febc8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710617"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861419"
 ---
 # <a name="configuration-for-finance-insights"></a>Finance Insights の構成
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、組織に強力な予測ツールを提供します。 このトピックでは、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。 このトピックの手順を正しく実行するには、[Power Portal 管理センター](https://admin.powerplatform.microsoft.com/)のシステム管理者とシステム カスタマイザー、Dynamics 365 Finance におけるシステム管理者アクセス権、および Microsoft Dynamics Lifecycle Services (LCS) の環境作成アクセス権が必要です。
+Finance Insights では、Dataverse を使用した Microsoft Dynamics 365 Finance、Azure、AI Builder の機能を組み合わせて、組織に強力な予測ツールを提供します。 この記事では、Finance Insights で使用できる機能をシステムで使用できるようにするための構成手順について説明します。 この記事の手順を正しく実行するには、[Power Portal 管理センター](https://admin.powerplatform.microsoft.com/)のシステム管理者とシステム カスタマイザー、Dynamics 365 Finance におけるシステム管理者アクセス権、および Microsoft Dynamics Lifecycle Services (LCS) の環境作成アクセス権が必要です。
 
 > [!NOTE]
 > 次の Finance Insights の設定方法は、Dynamics 365 Finance バージョン 10.0.21 以降で有効です。

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources (2021 年 11 月 19 日) の新機能および変更された機能
-description: このトピックでは、2021 年 11 月 19 日のスタンドアロン Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: この記事では、2021 年 11 月 19 日のスタンドアロン Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
 author: marcelbf
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f28057c370b27dbdad4bfe1104e9289f7df65621
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d3e08432a4ce4d73cd67ad839191abe9f6e691a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691949"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886076"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-november-19-2021"></a>Dynamics 365 Human Resources (2021 年 11 月 19 日) の新機能および変更された機能
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Microsoft Dynamics 365 Human Resources の新機能、変更された機能または間もなく公開される機能について説明します。
+この記事では、Microsoft Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -40,7 +40,7 @@ ms.locfileid: "8691949"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新する可能性があります:
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
 | 問題の番号 | 問題 | Description |
 |---|---|---|

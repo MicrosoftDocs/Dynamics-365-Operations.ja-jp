@@ -1,6 +1,6 @@
 ---
 title: 発注書に対する入庫積荷の倉庫処理
-description: このトピックでは、発注書に対する入庫積荷の倉庫処理プロセスについて説明します。
+description: この記事では、発注書に対する入庫積荷の倉庫処理プロセスについて説明します。
 author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778062"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855935"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>発注書に対する入庫積荷の倉庫処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、発注書に対する入庫積荷の倉庫処理プロセスについて説明します。
+この記事では、発注書に対する入庫積荷の倉庫処理プロセスについて説明します。
 
 入庫積荷ごとに、システムには既に関連する販売注文が含まれている必要があり、関連する積荷の仕様や輸送計画、またはその両方が含まれている場合もあります。 入庫積荷の作成および管理方法の詳細については、[業務プロセス: 入庫積荷の配送計画](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads) を参照してください。
 
@@ -209,7 +209,7 @@ Microsoft Dynamics 365 Supply Chain Management は、注文済製品の到着を
 | 有 | 更新なし | _受入済_、登録済積荷数量の合計が積荷数量以上である場合 | |
 | 有 | 更新なし | _出荷済_ または _処理中_、登録済積荷数量の合計が積荷数量より少ない場合 | |
 
-**積荷状態** フィールドを _受入済_ に設定すると、その積荷に対してこれ以上製品受領書の転記を行うことはできません。 ただし、次の条件下では、作業者は受入済積荷に対して残りの注文数量を登録できます。 (詳細については、このトピックの前の [積荷の入荷超過](#load-over-receiving) セクションを参照してください。)
+**積荷状態** フィールドを _受入済_ に設定すると、その積荷に対してこれ以上製品受領書の転記を行うことはできません。 ただし、次の条件下では、作業者は受入済積荷に対して残りの注文数量を登録できます。 (詳細については、この記事の前半の [積荷の入荷超過](#load-over-receiving) セクションを参照してください。)
 
 - Supply Chain Management のバージョンは 10.0.11 よりも古いバージョンです。
 - _積荷数量の受入超過_ 機能がオンになり、積荷品目入庫アクションのモバイル デバイス メニュー項目の **受入超過積荷明細行の数量** フィールドが _許可_ に設定されます。

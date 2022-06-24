@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2021 年 7 月 12 日)
-description: このトピックでは、2021 年 7 月 12 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2021 年 7 月 12 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 07/12/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-12
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c01d00e7ede44c20e64fc4a8cd8646201caa3992
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 259004773c4e5a7d8865d563da9bcfea3a116632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686802"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870961"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-12-2021"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2021 年 7 月 12 日)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -49,9 +49,9 @@ ms.locfileid: "8686802"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新することがあります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 問題 |  説明 |
+| 問題の番号 | 問題 |  Description |
 | --- | --- | --- |
 | 595871 | Human Resources のバージョン情報ウィンドウに誤った Dataverse 用語があります | Common Data Service のブランドを Dataverseに変更したことにより、Microsoft Dynamics 365 Human Resources 情報ペイン (**ヘルプとサポート > バージョン情報**) の用語が更新されました。 |
 | 598676 | 合理化された従業員入力フォームがタスクに上書きされる場合、保存されたビューで使用するとエラーが発生する場合があります| **作業者** ページで、合理化された従業員エントリ機能がオンになっている場合、保存されたビューで **編集のために常に開く** が設定されていると、アプリケーションが失敗することがあります。 |

@@ -1,6 +1,6 @@
 ---
 title: 在庫原価計算の FAQ
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の在庫原価計算に関するよくある質問についてお答えします。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の在庫原価計算に関するよくある質問についてお答えします。
 author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 45f65bd4a5cfb9bd0c4eb03ceb56eca452f6ec95
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809289"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850847"
 ---
 # <a name="inventory-costing-faq"></a>在庫原価計算の FAQ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management の在庫原価計算に関するよくある質問についてお答えします。
+この記事では、Microsoft Dynamics 365 Supply Chain Management の在庫原価計算に関するよくある質問についてお答えします。
 
 ## <a name="inventory-close-adjustments-and-recalculation"></a>在庫のクローズ、調整、再計算
 
@@ -359,7 +359,7 @@ FIFO、LIFO、加重平均などの定期処理原価モデルを使用する場
 
 ### <a name="do-i-have-to-create-a-new-item-if-my-inventory-has-gone-negative-and-i-use-moving-average"></a>在庫がマイナス在庫になされ、移動平均を使用する場合、新しい品目を作成する必要がありますか？
 
-いいえ。 組織で在庫のマイナス在庫を許可している場合に、在庫モデルとして移動平均を使用している場合は、**在庫および倉庫管理パラメータ** ページで割り当てられている代替原価順序を使用して、原価を品目に割り当てる方法が決定されます。 一般に、在庫のマイナス在庫を物理的に許可しないようにすることをお勧めします。 詳細については、このトピックの [マイナス在庫](#negative-inventory) セクションのその他質問を参照してください。
+いいえ。 組織で在庫のマイナス在庫を許可している場合に、在庫モデルとして移動平均を使用している場合は、**在庫および倉庫管理パラメータ** ページで割り当てられている代替原価順序を使用して、原価を品目に割り当てる方法が決定されます。 一般に、在庫のマイナス在庫を物理的に許可しないようにすることをお勧めします。 詳細については、この記事の [マイナス在庫](#negative-inventory) セクションのその他質問を参照してください。
 
 ## <a name="not-stocked-products"></a>非在庫製品
 
@@ -433,7 +433,7 @@ FIFO、LIFO、加重平均などの定期処理原価モデルを使用する場
 
 ### <a name="when-i-use-moving-average-what-happens-if-there-is-an-issue-before-the-receipt"></a>移動平均を使用する場合で、入庫前に問題がある場合の処理はどうなりますか？
 
-通常、入庫前に問題が発生するのは、品目モデル グループに対して物理的な負の在庫を許可しているか、問題が過去にさかのぼったものであるかのどちらかです。 詳細については、このトピックの[マイナスの在庫](#negative-inventory) セクションを参照してください。
+通常、入庫前に問題が発生するのは、品目モデル グループに対して物理的な負の在庫を許可しているか、問題が過去にさかのぼったものであるかのどちらかです。 詳細については、この記事の[マイナスの在庫](#negative-inventory) セクションを参照してください。
 
 トランザクションのバックデートを行う場合、このシナリオを回避する方法があるかどうか、ビジネス プロセスやオペレーションを慎重に検討することをお勧めします。 移動平均を使用する項目の取引をバックデートした場合、システムは現在の移動平均を取引に割り当てます。 その後のイシューは調整されません。 バックデートされたトランザクションでの移動平均の詳細については、[移動平均](moving-average.md)を参照してください。
 

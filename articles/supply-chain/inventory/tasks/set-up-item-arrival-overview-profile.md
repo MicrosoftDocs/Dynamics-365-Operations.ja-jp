@@ -1,6 +1,6 @@
 ---
-title: 着荷の概要プロファイルの設定
-description: このトピックでは、着荷の概要プロファイルの設定を中心に説明します。
+title: 着荷の品目プロファイルの設定
+description: この記事では、着荷の概要プロファイルの設定を中心に説明します。
 author: yufeihuang
 ms.date: 07/30/2019
 ms.topic: business-process
@@ -15,18 +15,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a98c84c0dcc86e58b74f53a9061c4a0518ecbf
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 8517710f5d0be1859f86449152712d950281769a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964809"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872010"
 ---
-# <a name="set-up-an-item-arrival-overview-profile"></a>着荷の概要プロファイルの設定
+# <a name="set-up-an-item-arrival-overview-profile"></a>着荷の品目プロファイルの設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、着荷の概要プロファイルの設定を中心に説明します。 着荷の概要プロファイルは、ユーザーが [着荷の概要] ページを開いた際に適用されるルールのコレクションです。 デモ データの会社 USMF でこの手順を使用できます。 通常、この手順を実施するのは、入荷係です。
+この記事では、着荷の概要プロファイルの設定を中心に説明します。 着荷の概要プロファイルは、ユーザーが [着荷の概要] ページを開いた際に適用されるルールのコレクションです。 デモ データの会社 USMF でこの手順を使用できます。 通常、この手順を実施するのは、入荷係です。
 
 1. ナビゲーションウィンドウで、**モジュール > 在庫管理 > セットアップ > 配送 > 着荷の概要プロファイル** に移動します。
 2. **新規** を選択します。 トラックに満載の積荷を降ろす作業を同じ倉庫でほとんど行う場合、入庫登録のプロセスを簡略化するために着荷の概要プロファイルを作成する必要があります。  

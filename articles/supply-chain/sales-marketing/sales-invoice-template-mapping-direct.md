@@ -1,6 +1,6 @@
 ---
 title: 売上請求書のヘッダーおよび明細行の Supply Chain Management から Sales への直接同期
-description: このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Sales に売上請求書ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
+description: この記事では、Dynamics 365 Supply Chain Management から Dynamics 365 Sales に売上請求書ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 author: Henrikan
 ms.date: 10/26/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c2f988b4f170c027444ba7cf54a55e0bd846cedf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: de4bdd07127b65321540543040192eb7811850da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571644"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862543"
 ---
-# <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Finance and Operations から Sales への請求書ヘッダーおよび明細行の直接同期
+# <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>売上請求書ヘッダーおよび明細行の Finance and Operations から Sales への直接同期
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Sales に売上請求書ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
+この記事では、Dynamics 365 Supply Chain Management から Dynamics 365 Sales に売上請求書ヘッダーおよび明細行を直接同期するために使用されるテンプレートと基本的なタスクについて説明します。
 
 ## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
 
@@ -124,7 +124,7 @@ Supply Chain Management から Sales への販売請求書ヘッダーと明細�
 
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [見込顧客の現金化](prospect-to-cash.md)
 

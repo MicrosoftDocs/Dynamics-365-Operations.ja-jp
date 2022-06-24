@@ -1,6 +1,6 @@
 ---
 title: Supply Chain Management の価格決定エンジンとのオンデマンド同期
-description: このトピックでは、Microsoft Dynamics 365 Sales から Microsoft Dynamics 365 Supply Chain Management の価格決定エンジンを使用する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Sales から Microsoft Dynamics 365 Supply Chain Management の価格決定エンジンを使用する方法について説明します。
 author: RamaKrishnamoorthy
 ms.date: 03/10/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6b0cc8f403be866ff00b89a33f6c59089c987bb0
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: 259bdd5f868945c3857b045fbd3cbd4fceb26951
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402833"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862222"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Supply Chain Management の価格決定エンジンとのオンデマンド同期
 

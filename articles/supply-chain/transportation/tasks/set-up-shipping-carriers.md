@@ -1,6 +1,6 @@
 ---
 title: 出荷配送業者の設定
-description: このトピックでは、出荷の配送業者を設定し、サービス、出荷モード、輸送入札、輸送機関の制約、および出荷レートなどの詳細を定義する方法について説明します。
+description: この記事では、出荷の配送業者を設定し、サービス、出荷モード、輸送入札、輸送機関の制約、および出荷レートなどの詳細を定義する方法について説明します。
 author: Weijiesa
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 876a3ffd94f554ef042da995311df0f8009eee12
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 48586a0ddaa7cd95a81380dadffef8f276076dd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672657"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858975"
 ---
 # <a name="set-up-shipping-carriers"></a>出荷配送業者の設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、出荷の配送業者を設定し、サービス、出荷モード、輸送入札、輸送機関の制約、および出荷レートなどの詳細を定義する方法について説明します。 配送コーディネーターは、出荷の配送業者を入荷または出荷に割り当てることができます。
+この記事では、出荷の配送業者を設定し、サービス、出荷モード、輸送入札、輸送機関の制約、および出荷レートなどの詳細を定義する方法について説明します。 配送コーディネーターは、出荷の配送業者を入荷または出荷に割り当てることができます。
 
 ## <a name="create-a-new-shipping-carrier"></a>新しい出荷の配送業者の作成
 

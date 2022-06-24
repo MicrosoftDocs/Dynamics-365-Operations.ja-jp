@@ -1,6 +1,6 @@
 ---
 title: 銀行の外貨再評価
-description: このトピックでは、銀行の外貨再評価プロセスの概要を示します。 設定およびプロセスの実行と計算、再評価取引の取消に関する情報が含まれています。
+description: この記事では、銀行の外貨再評価プロセスの概要を示します。 設定およびプロセスの実行と計算、再評価取引の取消に関する情報が含まれています。
 author: kweekley
 ms.date: 05/16/2019
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a8ce792fdc0c6b441deaead32db04ee0246becc9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d68232af3e87cef2f86213211e6c87f7d654df33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711206"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863104"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>銀行の外貨再評価
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、銀行の外貨再評価プロセスの概要を示します。 プロセスの設定と実行の方法を説明し、プロセスの計算に関する情報を提供します。 また、取消が必要な場合の再評価トランザクションの取消方法も説明します。
+この記事では、銀行の外貨再評価プロセスの概要を示します。 プロセスの設定と実行の方法を説明し、プロセスの計算に関する情報を提供します。 また、取消が必要な場合の再評価トランザクションの取消方法も説明します。
 
 期間終了の一環として、会計規約では、外貨建ての銀行口座残高は異なる為替レートの種類 (現在、過去、平均など) を使用して再評価が必要です。 銀行の外貨再評価の機能を使用して、ひとつ以上の銀行口座を再評価できます。 同じく、グローバル機能となります。 そのため、単一のページからアクセスできるすべての法人に対して銀行を再評価できます。
 

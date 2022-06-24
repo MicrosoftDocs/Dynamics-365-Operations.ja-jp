@@ -1,6 +1,6 @@
 ---
 title: 顧客および仕入先の TDS グループ、PAN、TAN 情報の設定
-description: このトピックでは、仕入先および顧客に対する源泉徴収税 (TDS) グループ、納税者番号 (PAN)、および税勘定番号 (TAN) に関する情報の設定方法について説明します。
+description: この記事では、仕入先および顧客に対する源泉徴収税 (TDS) グループ、納税者番号 (PAN)、および税勘定番号 (TAN) に関する情報の設定方法について説明します。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 83ec532e95bde553c3a339e2ca103ebaacdb52ae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1a29f59e380360b6f828dcddbe84cad229b42d17
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726952"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859769"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>顧客および仕入先の TDS グループ、PAN、TAN 情報の設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、仕入先および顧客に対する源泉徴収税 (TDS) グループ、納税者番号 (PAN)、および税勘定番号 (TAN) に関する情報の設定方法について説明します。
+この記事では、仕入先および顧客に対する源泉徴収税 (TDS) グループ、納税者番号 (PAN)、および税勘定番号 (TAN) に関する情報の設定方法について説明します。
 
 1. **買掛金勘定 \> 仕入先 \> すべての仕入先** または **売掛金勘定 \> 顧客 \> すべての顧客** に移動します。
 

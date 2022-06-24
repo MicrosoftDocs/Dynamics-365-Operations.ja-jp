@@ -1,6 +1,6 @@
 ---
 title: ウェーブ テンプレート
-description: このトピックでは、ウェーブが手動でまたは自動的に処理されるかを判断する基準を設定する方法、およびウェーブが処理されるときに倉庫のために生成される作業について説明します。
+description: この記事では、ウェーブが手動でまたは自動的に処理されるかを判断する基準を設定する方法、およびウェーブが処理されるときに倉庫のために生成される作業について説明します。
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 61fbcad572bbb69ab8a4eb2cd309cdf8a6328391
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e4a74b61ea32df432da118ac8af550a4ca4b0089
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686600"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851201"
 ---
 # <a name="wave-templates"></a>ウェーブ テンプレート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ウェーブが手動でまたは自動的に処理されるかを判断する基準を設定する方法、およびウェーブが処理されるときに倉庫のために生成される作業について説明します。 販売注文、製造オーダー、およびかんばんのリリース済み行のあるウェーブと一致する、ウェーブ テンプレートおよびクエリを設定し、基準を指定します。
+この記事では、ウェーブが手動でまたは自動的に処理されるかを判断する基準を設定する方法、およびウェーブが処理されるときに倉庫のために生成される作業について説明します。 販売注文、製造オーダー、およびかんばんのリリース済み行のあるウェーブと一致する、ウェーブ テンプレートおよびクエリを設定し、基準を指定します。
 
 ## <a name="settings-for-wave-templates"></a>ウェーブ テンプレートの設定
 

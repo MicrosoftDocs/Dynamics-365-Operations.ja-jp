@@ -1,6 +1,6 @@
 ---
 title: 優先順位に基づく計画
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の優先順位に基づく計画フィーチャーについて説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の優先順位に基づく計画フィーチャーについて説明します。
 author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468303"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873814"
 ---
 # <a name="priority-based-planning"></a>優先順位に基づく計画
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management の優先順位に基づく計画フィーチャーについて説明します。 この機能により、需要手動型計画のサポートが追加されます。この計画は、需要主導型材料所要量計画 (DDMRP) の 1 つのステップです。 優先順位に基づく計画を使用すると、計画の最適化によって、要求日ではなく計画の優先順位に基づいて計画オーダーを生成できます。
+この記事では、Microsoft Dynamics 365 Supply Chain Management の優先順位に基づく計画フィーチャーについて説明します。 この機能により、需要手動型計画のサポートが追加されます。この計画は、需要主導型材料所要量計画 (DDMRP) の 1 つのステップです。 優先順位に基づく計画を使用すると、計画の最適化によって、要求日ではなく計画の優先順位に基づいて計画オーダーを生成できます。
 
 優先順位に基づく計画によって、補充注文に優先順位を付け、緊急需要が重要性の低い需要より優先されるようにします。 たとえば、欠品補充注文は標準の補充注文よりも優先されます。 システムでは、大きな注文を、注文明細行が優先順位別にグループ化される別の小さな注文に自動的に分割できます。 その後、優先順位が高いすべての注文を先に処理できます。
 

@@ -1,6 +1,6 @@
 ---
 title: 倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
-description: このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。
+description: この記事では倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。
 author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571092"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856109"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。 使用できる事前定義されたコンフィギュレーション テンプレートが複数あります。 これらのテンプレートを使用する方法の詳細については、[コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md) を参照してください。
+この記事では倉庫のコンフィギュレーション テンプレートを使用して、倉庫を設定する方法について説明します。 使用できる事前定義されたコンフィギュレーション テンプレートが複数あります。 これらのテンプレートを使用する方法の詳細については、[コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md) を参照してください。
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>コンフィギュレーション テンプレートが役に立つ際のシナリオ
 
@@ -38,7 +38,7 @@ ms.locfileid: "7571092"
 - 倉庫機能のデモをすばやく準備します。
 - 既存品目および倉庫が、在庫管理での機能の代わりに、倉庫管理での機能を使用するようにします。
 
-このトピックでは、これらのシナリオの 1 つ目に注目します。 テスト環境から実稼働環境にコンフィギュレーション設定をコピーするため、コンフィギュレーション テンプレートを使用する方法を表示します。
+この記事では、これらのシナリオの 1 つ目に注目します。 テスト環境から実稼働環境にコンフィギュレーション設定をコピーするため、コンフィギュレーション テンプレートを使用する方法を表示します。
 
 ## <a name="copy-a-configuration-setup-from-a-test-environment-to-a-production-environment"></a>テスト環境から実稼働環境にコンフィギュレーション設定をコピーします。
 
@@ -90,9 +90,9 @@ ms.locfileid: "7571092"
 
 **実行表示** ログは、インポートされる各データ エンティティに関する詳細情報を提供します。 ステージング データの表示を使用して、対象データにすばやくアクセスできます。 この方法で、アプリケーションの関連するページで、インポートされたデータがどのようなものかを表示できます。 既定のデータ テンプレートを使用する場合、各データ エンティティのインポート順序が事前定義された方法で動作し、すべての依存データが最初にインポートされることを保証する助けになります。 カスタム データ エンティティがプロジェクトの一部である場合、正しい順序が定義されているのを確認する必要があります。 詳細については、「[コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)」を参照してください。
 
-同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、[Finance and Operations で倉庫テンプレートを使用してコンフィギュレーションをコピーする方法](https://www.youtube.com/watch?v=K2WIfFlqJYs) について YouTube でこの 3 分間のビデオを参照してください。
+同じインスタンス内で 1 つの会社から新しい会社に倉庫のコンフィギュレーションをコピーするため、倉庫テンプレートを使用する方法に関する詳細については、YouTube のこの 3 分間ビデオ [Finance and Operations で倉庫テンプレートを使用してコンフィギュレーションをコピーする方法](https://www.youtube.com/watch?v=K2WIfFlqJYs) をご覧ください。
 
-## <a name="related-topic"></a>関連するトピック
+## <a name="related-article"></a>関連記事
 
 [コンフィギュレーション データ テンプレート](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 

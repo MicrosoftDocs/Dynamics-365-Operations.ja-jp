@@ -1,6 +1,6 @@
 ---
 title: 仕入先請求書の日付
-description: このトピックでは、仕入先請求書に表示される日付について説明します。 また、転記日付を自動的に調整するためにシステムを設定する方法も説明します。
+description: この記事では、仕入先請求書に表示される日付について説明します。 また、転記日付を自動的に調整するためにシステムを設定する方法も説明します。
 author: sunfzam
 ms.date: 2/09/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 943a84407d022c2c05bc534a35a2b5d44a94653e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876415"
 ---
 # <a name="vendor-invoice-dates"></a>仕入先請求書の日付
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、仕入先請求書に表示される日付について説明します。 また、転記日付を自動的に調整するためにシステムを設定する方法も説明します。
+この記事では、仕入先請求書に表示される日付について説明します。 また、転記日付を自動的に調整するためにシステムを設定する方法も説明します。
 
 **保留中の仕入先請求書の詳細** ページでは、請求書ヘッダーに 4 つの日付 (請求受信日、請求日、転記日付、および期日) が表示されます。 仕入先請求書が作成されると、次の日付が既定で入力されます。
 
@@ -37,7 +37,7 @@ ms.locfileid: "8105467"
 
 時々、仕入先請求書が、期間の決済後に長い間保留中の状態になる場合があります。 転記の準備が整った場合でも、過去の転記期間の古い転記日付が使用されます。 ただし、この期間はクローズされています。 したがって、買掛金勘定 (AP) の事務員は、以前に作成された保留中のすべての請求書について、すべての転記日付を新しい転記期間に手動で変更する必要があります。
 
-このトピックで説明する機能を使用すると、業務要件に応じて転記日付を自動的に調整するようにシステムを設定できます。
+この記事で説明する機能を使用すると、業務要件に応じて転記日付を自動的に調整するようにシステムを設定できます。
 
 ## <a name="parameter-for-automatically-adjusting-the-vendor-invoice-posting-date"></a>仕入先請求書転記日を自動的に調整するパラメータ
 

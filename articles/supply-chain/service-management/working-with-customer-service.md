@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd8ba10441c1300c913827122c09741c58a42973
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: af1e443078b6a7832388b38f2b99a438af461ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677061"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844354"
 ---
 # <a name="work-with-customer-service-overview"></a>顧客サービスの処理の概要
 
@@ -41,7 +41,7 @@ ms.locfileid: "8677061"
 
   - 差別化された顧客ベースをサポートするサービス レベル契約
 
-このセクションのトピックでは、顧客サービス業務プロセスおよび業務プロセス コンポーネントを概説します。 また、各業務プロセス コンポーネントに関連するフォームを一覧表示し、各業務プロセス コンポーネントに関連する作業についても説明します。
+このセクションの記事では、顧客サービス業務プロセスおよび業務プロセス コンポーネントを概説します。 また、各業務プロセス コンポーネントに関連するフォームを一覧表示し、各業務プロセス コンポーネントに関連する作業についても説明します。
 
 
 

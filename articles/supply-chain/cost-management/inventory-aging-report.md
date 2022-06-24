@@ -1,6 +1,6 @@
 ---
 title: 在庫エイジング レポートの例とロジック
-description: このトピックでは、在庫のエイジング レポートの結果を解釈する方法を示すいくつかの例を示します。
+description: この記事では、在庫のエイジング レポートの結果を解釈する方法を示すいくつかの例を示します。
 author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4cfffa49f802c601da391617b123134c435fba92
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40066431ddfb9644c059025eac55d1b36789882e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672349"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848023"
 ---
 # <a name="inventory-aging-report-examples-and-logic"></a>在庫エイジング レポートの例とロジック
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**在庫のエイジング** レポートの結果を解釈する方法を示すいくつかの例を示します。 このレポートでは、選択された品目または品目グループの手持在庫の数量と在庫価値が、いくつかの期間バケットに分類されます。 このトピックでは、レポートの内部ロジックについても説明します。
+この記事では、**在庫のエイジング** レポートの結果を解釈する方法を示すいくつかの例を示します。 このレポートでは、選択された品目または品目グループの手持在庫の数量と在庫価値が、いくつかの期間バケットに分類されます。 この記事では、レポートの内部ロジックについても説明します。
 
-このトピックの例では、標準の **在庫エイジング レポート** で表示される結果を示します。 ただし、通常は、特に処理する必要がある品目と倉庫が多い場合は、このレポートの [在庫エイジング レポート ストレージ](inventory-aging-report-storage.md) バージョンを使用することをお勧めします。 在庫のエイジング レポートの保管では、生成された各レポートを保存し、結果をインタラクティブなページとグラフで表示して、レポートをエクスポートすることができます。
+この記事の例では、標準の **在庫エイジング** レポートで表示される結果を示します。 ただし、通常は、特に処理する必要がある品目と倉庫が多い場合は、このレポートの [在庫エイジング レポート ストレージ](inventory-aging-report-storage.md) バージョンを使用することをお勧めします。 在庫のエイジング レポートの保管では、生成された各レポートを保存し、結果をインタラクティブなページとグラフで表示して、レポートをエクスポートすることができます。
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>これらの例で使用されるサンプル データ
 
-このトピックの例は、このセクションで説明するサンプル在庫トランザクション データに基づいています。
+この記事の例は、このセクションで説明するサンプル在庫トランザクション データに基づいています。
 
 ### <a name="storage-dimension-setup"></a>保管分析コード セットアップ
 

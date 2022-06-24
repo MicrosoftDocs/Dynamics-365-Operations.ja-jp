@@ -1,6 +1,6 @@
 ---
-title: 変動倉庫レベルの分析引当ポリシー
-description: このトピックでは、製品に関連付けられている引当階層が特定のバッチの予約を許可していない場合でも、バッチ追跡製品を販売し、WMS 対応工程としてロジスティクスを実行する企業が顧客の販売注文に対して特定のバッチを予約できるようにする在庫引当のポリシーについて説明します。
+title: 柔軟な倉庫レベル分析コードの予約ポリシー
+description: この記事では、製品に関連付けられている引当階層が特定のバッチの予約を許可していない場合でも、バッチ追跡製品を販売し、WMS 対応工程としてロジスティクスを実行する企業が顧客の販売注文に対して特定のバッチを予約できるようにする在庫引当のポリシーについて説明します。
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: fb42d4ccd2d8797a34f6351caf7dedbc1e957fd5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474943"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885815"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>柔軟な倉庫レベル分析コードの引当ポリシー
 
@@ -28,7 +28,7 @@ ms.locfileid: "7474943"
 
 また、特定のライセンス プレートは、製品が既定の引当階層に関連付けられている場合、販売注文の製品に対して引当することはできません。
 
-このトピックでは、製品が引当階層 *バッチ非優先\[ロケーション\]* に関連付けられている場合でも、特定のバッチやライセンス プレートを引当可能となる、在庫の引き当てポリシーについて説明します。
+この記事では、製品が引当階層 *バッチ-下\[ロケーション\]* に関連付けられている場合でも、これらの企業が特定のバッチやライセンス プレートを予約できる在庫の引き当てポリシーについて説明します。
 
 ## <a name="inventory-reservation-hierarchy"></a>在庫引当階層
 

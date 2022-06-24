@@ -1,6 +1,6 @@
 ---
 title: 間接費の計算
-description: このトピックでは、間接費を計算し配賦するための標準的なプロセスについて説明します。
+description: この記事では、間接費を計算し配賦するための標準的なプロセスについて説明します。
 author: AndersGirke
 ms.date: 10/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9d704268f481fdf377033740f727e5d581a8c510
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9322fb5237afdbf73147bb549eb3f70929c46ce2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733937"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881994"
 ---
 # <a name="overhead-calculation"></a>間接費の計算
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、間接費を計算し配賦するための標準的なプロセスについて説明します。
+この記事では、間接費を計算し配賦するための標準的なプロセスについて説明します。
 
 ## <a name="term-definition"></a>用語の定義
 
@@ -1336,7 +1336,7 @@ ms.locfileid: "8733937"
 変動費 | 000 | 0.00 | 0.00 | 0.00 | 0.00 | 30.00 | 10.00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
-> このトピックでは、主要コスト要素である 10001 電気がどのようにコスト オブジェクトをフローするかを示します。 したがって、この間接費は組織の最下位レベルに配賦されます。 つまり、最下位レベルのコスト オブジェクトがそのコストを負担します。 コスト オブジェクト間のコストの視覚的なフローが必要な場合は、コスト ロールアップ ポリシー ルールを使用して、コストのフローを視覚化できます。 詳細については、[原価ロールアップ ポリシーおよび間接費の計算](cost-rollup.md) を参照してください。
+> この記事では、主要コスト要素である 10001 電気がどのようにコスト オブジェクトをフローするかを示します。 したがって、この間接費は組織の最下位レベルに配賦されます。 つまり、最下位レベルのコスト オブジェクトがそのコストを負担します。 コスト オブジェクト間のコストの視覚的なフローが必要な場合は、コスト ロールアップ ポリシー ルールを使用して、コストのフローを視覚化できます。 詳細については、[原価ロールアップ ポリシーおよび間接費の計算](cost-rollup.md) を参照してください。
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: 販売注文の与信保留
-description: このトピックでは、販売注文の与信保留に使用されるルールの設定について説明します。
+description: この記事では、販売注文の与信保留に使用されるルールの設定について説明します。
 author: JodiChristiansen
 ms.date: 07/20/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2d8966f993e7ca82b10a2ef5a023256a05682980
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 44560425056ee1726f21a4279f36c2e718956814
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734336"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856831"
 ---
 # <a name="credit-holds-for-sales-orders"></a>販売注文の与信保留
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、販売注文の与信保留に使用されるルールの設定について説明します。 与信管理ブロック ルールは、個々の顧客または顧客グループに適用できます。 ブロック ルールは、次の状況に対する応答を定義します。
+この記事では、販売注文の与信保留に使用されるルールの設定について説明します。 与信管理ブロック ルールは、個々の顧客または顧客グループに適用できます。 ブロック ルールは、次の状況に対する応答を定義します。
 
 1. 期限超過日数
 2. アカウント ステータス

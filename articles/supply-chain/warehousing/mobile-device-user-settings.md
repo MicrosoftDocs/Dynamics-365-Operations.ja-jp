@@ -1,6 +1,6 @@
 ---
 title: モバイル デバイスのユーザー設定
-description: このトピックでは、倉庫作業者用のモバイル デバイス ユーザー設定を管理する方法について説明します。
+description: この記事では、倉庫作業者用のモバイル デバイス ユーザー設定を管理する方法について説明します。
 author: Mirzaab
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 15f9ce1768e1ed9dc6f7e84d245082b46a7f122c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103716"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882347"
 ---
 # <a name="mobile-device-user-settings"></a>モバイル デバイスのユーザー設定
 
@@ -41,7 +41,7 @@ ms.locfileid: "8103716"
 
 ## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>モバイル デバイス ユーザー設定機能をオンまたはオフにする
 
-このトピックで説明する機能を使用するには、*新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* 機能がシステムで有効になっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* を検索して、この機能をオンまたはオフにすることができます。
+この記事で説明する機能を使用するには、*新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* 機能がシステムで有効になっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *新しい倉庫アプリのユーザー設定、アイコン、ステップ タイトル* を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="create-and-manage-user-settings"></a>ユーザー設定の作成と管理
 

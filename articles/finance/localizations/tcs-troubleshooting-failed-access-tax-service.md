@@ -1,6 +1,6 @@
 ---
 title: 税サービスにアクセスできませんでした
-description: このトピックでは、税計算サービスにアクセスする際のエラーをトラブルシューティングする方法について説明します。
+description: この記事では、税計算サービスにアクセスする際のエラーをトラブルシューティングする方法について説明します。
 author: hangwan
 ms.date: 03/04/2022
 ms.topic: business-process
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 02/16/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: f4682b83405071b4ad7647958122ab2b4e082133
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 65d819b97be3d1238bc0ecfc201b4e24edac8616
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612319"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861225"
 ---
 # <a name="failed-to-access-tax-service"></a>税サービスにアクセスできませんでした
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、税計算サービスの "税務サービスにアクセスに失敗しました" エラーを修正する方法について説明します。
+この記事では、税計算サービスの "税務サービスにアクセスに失敗しました" エラーを修正する方法について説明します。
 
 ## <a name="symptoms"></a>現象
 

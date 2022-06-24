@@ -1,6 +1,6 @@
 ---
 title: オーストリア向け会計登録サービス統合のサンプル
-description: このトピックでは、Microsoft Dynamics 365 Commerce のオーストリア向け会計統合サンプルの概要について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce のオーストリア向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 826c1cb0fba7025b16dadbfa6157683392945103
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 099c3630d035ea673342d8345cd8f65dbd6db6a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873361"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>オーストリア向け会計登録サービス統合のサンプル
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のオーストリア向け会計統合サンプルの概要について説明します。
+この記事では、Microsoft Dynamics 365 Commerce のオーストリア向け会計統合サンプルの概要について説明します。
 
 オーストリアのキャッシュ レジスターにおける現地の財政要件を満たすため、オーストリア向け Dynamics 365 Retail 機能には、販売時点管理 (POS) と外部財政登録サービスとの統合例が含まれています。 このサンプルは [会計統合機能](fiscal-integration-for-retail-channel.md) を拡張します。 これは [EFSTA](https://www.efsta.eu/at/) の [EFR (電子会計登録)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) ソリューションに基づいており、HTTPS プロトコルによる EFR サービスとの通信を実現します。 Retail ハードウェア ステーション、またはハードウェア ステーションから接続できる別のマシンのいずれかで、EFR サービスをホストする必要があります。 このサンプルはソース コード形式で提供され、Retail ソフトウェア開発キット (SDK) に含まれます。
 

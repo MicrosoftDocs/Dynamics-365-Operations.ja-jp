@@ -1,6 +1,6 @@
 ---
 title: インドネシア向け源泉徴収税レポート
-description: このトピックでは、インドネシアの源泉徴収税レポートを構成および生成する方法について説明します。
+description: この記事では、インドネシアの源泉徴収税レポートを構成および生成する方法について説明します。
 author: sndray
 ms.date: 12/15/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6cf2f9240ea747054578c52343af34b15c250f38
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 8acd9442ff4f0b7c19e3b4fcf211acce002e43d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943661"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883184"
 ---
 # <a name="withholding-tax-report-for-indonesia-id-00005"></a>インドネシア向け源泉徴収税レポート (ID-00005)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、インドネシアの法人が e-Bupot アプリケーションで源泉徴収税トランザクションを報告するために使用する、PPH 源泉徴収税ファイルの設定と生成を行う方法を説明します。
+この記事では、インドネシアの法人が e-Bupot アプリケーションで源泉徴収税トランザクションを報告するために使用する、PPH 源泉徴収税ファイルの設定と生成を行う方法を説明します。
 
 インドネシア税所轄官庁 (DGT) は課税対象の事業主 (PKP) を決定し、e-Bupot アプリケーションを使用して所得税レポートを電子申告する必要があるため、所得税の源泉徴収者/徴収者 (PPh) は KPP Pratama に登録されます (第 23 条および第 26 条)。 
 

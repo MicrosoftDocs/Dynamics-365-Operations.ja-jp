@@ -1,6 +1,6 @@
 ---
 title: アカウント管理ページの概要
-description: このトピックでは、Microsoft Dynamics 365 Commerce のアカウント管理ページの概要を示します。
+description: この記事には、Microsoft Dynamics 365 Commerce のアカウント管理ページの概要が含まれます。
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b21ae257ce84034f05fa22a93a2c622ee14c0a2b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9cc70f48371fb90f4e3529173d30baffd6fe4e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868886"
 ---
 # <a name="account-management-pages-overview"></a>アカウント管理ページの概要
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のアカウント管理ページの概要を示します。
+この記事には、Microsoft Dynamics 365 Commerce のアカウント管理ページの概要が含まれます。
 
 アカウント管理ページにより、顧客は自分のアカウントおよび注文に関連する情報を表示できます。 アカウント管理ページには、アカウント管理ランディング ページと、ユーザー プロファイル、住所、注文履歴、注文詳細、ロイヤルティ ポイント、および欲しい物リストのページが含まれます。
 

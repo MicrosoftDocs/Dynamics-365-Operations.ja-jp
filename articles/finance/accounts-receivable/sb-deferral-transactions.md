@@ -1,6 +1,6 @@
 ---
 title: サブスクリプション請求管理の繰延トランザクション
-description: このトピックでは、定期購読の請求において収益および経費の繰延の一部として繰延トランザクションで使用できるさまざまなトランザクションについて説明します。
+description: この記事では、定期購読の請求において収益および経費の繰延の一部として繰延トランザクションで使用できるさまざまなトランザクションについて説明します。
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 5913308d4ee9fdcb8cf2b862171078f27f651662
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c3862f1a250bf8e56303975b5c6a3560cd84c1e7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872589"
 ---
 # <a name="deferral-default-transactions"></a>繰延の既定トランザクション
 
-このトピックでは、収益および経費の繰延を許可するトランザクションについて説明します。 繰延スケジュールは、基になるドキュメントまたは請求スケジュールに常に基づいて設定されます。 繰延スケジュールはこれらは既定値に基づいて作成され、個別に入力したり作成することはできません。
+この記事では、収益および経費の繰延を許可するトランザクションについて説明します。 繰延スケジュールは、基になるドキュメントまたは請求スケジュールに常に基づいて設定されます。 繰延スケジュールはこれらは既定値に基づいて作成され、個別に入力したり作成することはできません。
 
 ## <a name="sales-order-transaction-deferral"></a>販売注文トランザクション繰延
 

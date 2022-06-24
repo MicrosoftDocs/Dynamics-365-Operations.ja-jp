@@ -1,6 +1,6 @@
 ---
 title: 自動化された仕入先請求プロセスの概要
-description: このトピックでは、仕入先請求書の処理を自動化する機能と、自動化プロセスを使用する利点について説明します。
+description: この記事では、仕入先請求書の処理を自動化する機能と、自動化プロセスを使用する利点について説明します。
 author: abruer
 ms.date: 02/12/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: d2c629ed2d064a3350ec8ffe53940098d12ab0b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358434"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883448"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>自動化された仕入先請求プロセスの概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、仕入先請求書の処理を自動化する機能と、自動化プロセスを使用する利点について説明します。 この機能は、機能管理でオンにされている機能で構成されています。 これらの機能は、仕入先請求書にのみ適用され、**請求仕訳帳** または **仕入帳仕訳帳** ページで使われる請求書には適用されません。
+この記事では、仕入先請求書の処理を自動化する機能と、自動化プロセスを使用する利点について説明します。 この機能は、機能管理でオンにされている機能で構成されています。 これらの機能は、仕入先請求書にのみ適用され、**請求仕訳帳** または **仕入帳仕訳帳** ページで使われる請求書には適用されません。
 
 組織は多くの場合、サード パーティの光学式文字認識 (OCR) サービス プロバイダを使用して紙の請求書を処理します。 サービス プロバイダーは、機械可読請求書メタデータを返します。 自動化を支援するため、買掛金勘定自動化機能によって、買掛金勘定からこれらのコンポーネントを使用することができます。
 

@@ -1,6 +1,6 @@
 ---
 title: 仕入先負担の銀行支払手数料 (日本)
-description: このトピックでは、日本の仕入先負担の銀行支払手数料についてよく寄せられる質問に回答します。
+description: この記事では、日本の仕入先負担の銀行支払手数料についてよく寄せられる質問に回答します。
 author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Japan
 ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ba57b9024f43a0702ed70d94cc5d389e36ad271
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 489623664ecce1a0702ff7385433f50f76ec5c64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864198"
 ---
 # <a name="bank-payment-fees-covered-by-vendors-in-japan"></a>仕入先負担の銀行支払手数料 (日本)
 
 [!include [banner](../includes/banner.md)]
 
-日本では、銀行支払手数料は通常、仕入先 (受領当事者) によって負担されます。 このトピックでは、仕入先負担の銀行支払手数料についてよく寄せられる質問に回答します。
+日本では、銀行支払手数料は通常、仕入先 (受領当事者) によって負担されます。 この記事では、仕入先負担の銀行支払手数料についてよく寄せられる質問に回答します。
 
 仕入先への支払を行うとき、銀行支払手数料を自分の法人か、または仕入先が負担することができます。 仕入先が銀行支払手数料を負担するとき、会社の仕入先への各支払から銀行支払手数料を自動的に差し引くようにプロセスを設定できます。 仕入先の銀行支払手数料を設定および計算するには、次の作業を実行します。
 

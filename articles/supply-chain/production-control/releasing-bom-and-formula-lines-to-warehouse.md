@@ -1,6 +1,6 @@
 ---
 title: BOM とフォーミュラ明細行を倉庫にリリース
-description: このトピックでは、BOM 明細行とフォーミュラ明細行の原材料消費を倉庫にリリースするプロセスについて説明します。
+description: この記事では、BOM 明細行とフォーミュラ明細行の原材料消費を倉庫にリリースするプロセスについて説明します。
 author: johanhoffmann
 ms.date: 10/30/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53e3a943dbd6cf982101f42ed8f94b7e0f46597c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731226"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860612"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>BOM とフォーミュラ明細行を倉庫にリリース
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、部品表 (BOM) 明細行とフォーミュラ明細行の原材料消費を倉庫にリリースするプロセスについて説明します。 BOM またはフォーミュラの明細行を倉庫にリリースする際、そのシステムは材料が製造工程で消費される作業現場の生産入力場所で、材料が既に利用可能かどうかを最初に判断します。
+この記事では、部品表 (BOM) 明細行とフォーミュラ明細行の原材料消費を倉庫にリリースするプロセスについて説明します。 BOM またはフォーミュラの明細行を倉庫にリリースする際、そのシステムは材料が製造工程で消費される作業現場の生産入力場所で、材料が既に利用可能かどうかを最初に判断します。
 
 - 材料が生産入庫の場所で使用可能な場合は、シグナルが倉庫への材料のリリースのために与えられ、直ちにその場所からピッキングされます。
 - 材料が生産入庫の場所で使用できない場合、材料のリリースは、材料を倉庫内の場所から生産入庫の場所に移動する必要があることを示します。 材料は、原材料のピッキング倉庫作業経由で移動されます。 したがって、原材料ピッキングの倉庫プロセスはコンフィギュレーションされている必要があります。 詳細については、[補充の概要](../warehousing/replenishment.md) および [作業テンプレートと場所ディレクティブを使用した倉庫作業の管理](../warehousing/control-warehouse-location-directives.md) を参照してください。

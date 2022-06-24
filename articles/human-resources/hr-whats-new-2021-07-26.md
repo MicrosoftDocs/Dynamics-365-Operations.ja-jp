@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2021 年 7 月 26 日)
-description: このトピックでは、2021 年 7 月 26 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2021 年 7 月 26 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 07/12/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-26
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4e124655ca96e34e53723ea2608227661034d58b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6c7211135733f45a9841ae5a80607b01999d7c69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694714"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870932"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-26-2021"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2021 年 7 月 26 日)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -48,9 +48,9 @@ ms.locfileid: "8694714"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新することがあります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 問題 |  説明 |
+| 問題の番号 | 問題 |  Description |
 | --- | --- | --- |
 | 600422 | 支払準備完了の給与住所の検証に失敗しました。 | 検証が更新され、「給与居住の場所」タイプのアドレスが 1 つだけ、「給与作業の場所」タイプのアドレスが 1 つだけ必要になるようになりました。 |
 | 601226 | データ統合の問題 : 給与統合エクスポート プロジェクトには、フルプッシュするオプションがありません | Ceridian DayForce への給与統合は、フル プッシュではなく増分プッシュを実行しました。 Ceridian は常に完全に更新する必要があります。 この問題は修正され、データ エクスポート プロジェクトのエンティティは増分プッシュに切り替わりません。 |

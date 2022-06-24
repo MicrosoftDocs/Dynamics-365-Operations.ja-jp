@@ -1,6 +1,6 @@
 ---
 title: 資産と作業指示書
-description: このトピックでは、資産管理の資産と作業指示書について説明します。
+description: この記事では、資産管理の資産と作業指示書について説明します。
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2872dc84ec11ae7fad9fd5b225b9207f13280db334cc0d010a3d6749a591ee2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2d0fcc5162900ad2ad67f2629d14015f694bd4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869694"
 ---
 # <a name="assets-and-work-orders"></a>資産と作業指示書
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718110"
 
  
 
-このトピックでは、資産管理の資産と作業指示書について説明します。 資産と作業指示書は、資産管理の中心的な部分です。 *資産* は、継続的なメンテナンスとサービスを必要とする機械または機械部品です。 資産は、階層構造で作成でき、機能の場所に関連付けることができます。 メンテナンス ジョブは、資産構造のすべてのレベルで計画できます。
+この記事では、資産管理の資産と作業指示書について説明します。 資産と作業指示書は、資産管理の中心的な部分です。 *資産* は、継続的なメンテナンスとサービスを必要とする機械または機械部品です。 資産は、階層構造で作成でき、機能の場所に関連付けることができます。 メンテナンス ジョブは、資産構造のすべてのレベルで計画できます。
 
 製品情報や資産仕様、必要なメンテナンス計画など、さまざまなデータが資産ごとに設定されます。 次の図は、資産データの概要と、資産のジョブ タイプへの関連付けを示しています。 赤色のテキストは、継承と依存関係を示す場合などに使用されます。
 

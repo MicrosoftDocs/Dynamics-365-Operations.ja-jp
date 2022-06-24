@@ -1,6 +1,6 @@
 ---
 title: 職務のコンポーネントの設定
-description: このトピックでは、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。
+description: この記事では、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: de828bc1ab764a8a1bd084a508f38ff19a3947d5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: afe100879a4f83e4ef16048bc4b1acace19b679b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693587"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877717"
 ---
 # <a name="set-up-the-components-of-a-job"></a>職務のコンポーネントの設定
 
@@ -28,7 +28,7 @@ ms.locfileid: "8693587"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。 
+この記事では、ジョブに含められる概念に関する要素の説明、および組織内の要素の使用方法の例を示します。 
 
 ジョブを作成できるようになる前に、いくつか参照情報を設定する必要があります。 名前だけあるジョブを作成できます。 ただし、職位などの追加の情報を含めることで、ジョブに割り当てられた職位の既定値を提供します。 また、入力する情報には、特定のジョブに対する報酬プランのフィルター処理に使用できるものもあります。 特定のジョブに対する報酬プランをフィルター処理で使用できる資格を設定する場合、ジョブを設定する前に、職務権限とジョブ タイプを設定する必要があります。 使用できるこれらの既定値があることによって、ジョブに職位を追加する際に時間を節約できます。 
 

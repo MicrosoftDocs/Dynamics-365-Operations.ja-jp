@@ -1,6 +1,6 @@
 ---
 title: RCS からの (ER) インポート構成
-description: このトピックでは、ユーザーが RCS から ER 構成の新しいバージョンをインポートする方法を説明します。
+description: この記事では、ユーザーが RCS から ER 構成の新しいバージョンをインポートする方法を説明します。
 author: NickSelin
 ms.date: 07/03/2019
 ms.topic: business-process
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f5674c418baaac7817c27780e2f0137ce6e7137eb3f1665f768ad843cc5b3114
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5317b1f7c8c0af6cd5c839e065c590c4474c84de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850146"
 ---
 # <a name="er-import-configurations-from-rcs"></a>RCS からの (ER) インポート構成
 
 [!include [banner](../../includes/banner.md)]
 
-次の手順では、システム管理者または電子申告開発者ロールのユーザーが、Microsoft Regulatory Configuration Services (RCS) から新しいバージョンの電子申告 (ER) 構成をインポートする方法を説明します。 この例では、RCS インスタンスで構成されている ER 構成のバージョンを選択して、Litware, Inc. というサンプル企業の現在のインスタンスにインポートします。ER 構成は会社間で共有されるため、これらの手順はすべての会社で実行できます。 これらの手順を完了するには、まず [コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) のトピックにある手順を完了する必要があります。 これらの手順を完了するには、**完了** または **共有** のステータスを持つ 1 つ以上の ER 構成を含む RCS インスタンスへのアクセスも必要です。
+次の手順では、システム管理者または電子申告開発者ロールのユーザーが、Microsoft Regulatory Configuration Services (RCS) から新しいバージョンの電子申告 (ER) 構成をインポートする方法を説明します。 この例では、RCS インスタンスで構成されている ER 構成のバージョンを選択して、Litware, Inc. というサンプル企業の現在のインスタンスにインポートします。ER 構成は会社間で共有されるため、これらの手順はすべての会社で実行できます。 これらの手順を完了するには、まず [構成プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) のトピックにある手順を完了する必要があります。 これらの手順を完了するには、**完了** または **共有** のステータスを持つ 1 つ以上の ER 構成を含む RCS インスタンスへのアクセスも必要です。
 
 1. **組織管理** > **ワークスペース** > **電子申告** の順に移動します。 
-2. サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、**アクティブ** としてマークされていることを確認します。 このコンフィギュレーション プロバイダーが表示されない場合、[コンフィギュレーション プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) というトピックの手順を完了する必要があります。 
+2. サンプル会社 Litware, Inc. のコンフィギュレーション プロバイダーが使用可能であり、**アクティブ** としてマークされていることを確認します。 この構成プロバイダーが表示されない場合、[構成プロバイダーを作成し、有効としてマークする](er-configuration-provider-mark-it-active-2016-11.md) という記事の手順を完了する必要があります。 
 3. RCS 環境が自分の会社にプロビジョニングされていない場合は、外部リンク **Regulatory services – 構成** をクリックして、RCS 環境をプロビジョニングする指示に従います。 
 4. **電子申告のパラメーター** を選択します。 
 5. **RCS** タブをクリックします。 

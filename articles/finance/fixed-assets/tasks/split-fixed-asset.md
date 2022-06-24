@@ -1,6 +1,6 @@
 ---
 title: 固定資産の分割
-description: このトピックでは、1 つの資産帳簿を、新しい資産帳簿に分割する方法について説明します。
+description: この記事では、1 つの資産帳簿を、新しい資産帳簿に分割する方法について説明します。
 author: moaamer
 ms.date: 08/06/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1073f262d29e19fbbdc2257f5cdc18c4fa629196
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0d7fe30702717f960a42fb2a118e0d12587024f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725852"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880791"
 ---
 # <a name="split-a-fixed-asset"></a>固定資産の分割
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、1 つの資産帳簿を、新しい資産帳簿に分割する方法について説明します。 
+この記事では、1 つの資産帳簿を、新しい資産帳簿に分割する方法について説明します。 
 
 ## <a name="create-a-new-fixed-asset"></a>新しい固定資産の作成
 

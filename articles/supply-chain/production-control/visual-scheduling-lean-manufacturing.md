@@ -1,6 +1,6 @@
 ---
 title: リーン生産の視覚的スケジューリング
-description: このトピックでは、生産計画担当者がかんばん作業の生産計画を制御し最適化するために使用できる、かんばんスケジュール ボードに関する情報を提供します。
+description: この記事では、生産計画担当者がかんばん作業の生産計画を制御し最適化するために使用できる、かんばんスケジュール ボードに関する情報を提供します。
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5803793a4874ee73f943d0f059047458c37dc48b7d3276dadc8d8803599fb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a743be96867c1f325e6fe01f23355c27cb4d0cc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764815"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875191"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>リーン生産の視覚的スケジューリング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、生産計画担当者がかんばん作業の生産計画を制御し最適化するために使用できる、かんばんスケジュール ボードに関する情報を提供します。
+この記事では、生産計画担当者がかんばん作業の生産計画を制御し最適化するために使用できる、かんばんスケジュール ボードに関する情報を提供します。
 
-このトピックでは、生産計画担当者がかんばん作業の生産計画を制御し最適化するために使用できる、かんばんスケジュール ボードに関する情報を提供します。
+この記事では、生産計画担当者がかんばん作業の生産計画を制御し最適化するために使用できる、かんばんスケジュール ボードに関する情報を提供します。
 
 かんばんスケジュール ボードにより、生産計画担当者はかんばん作業の生産計画を制御し最適化できるようになります。 かんばん作業の流れを分かりやすくし、および生産計画担当者に、リーン生産作業セルの生産計画を最適化し調整するためのツールを提供します。
 

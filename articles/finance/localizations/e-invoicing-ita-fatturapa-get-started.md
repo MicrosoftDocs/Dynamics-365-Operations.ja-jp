@@ -1,6 +1,6 @@
 ---
 title: イタリアの FatturaPA と SDI の直接統合を設定する
-description: このトピックでは、イタリア向けの電子請求を開始して、Italian FatturaPA と取引システム (SDI) の直接統合を設定する際に役立つ情報を提供します。
+description: この記事では、イタリア向けの電子請求を開始して、Italian FatturaPA と取引システム (SDI) の直接統合を設定する際に役立つ情報を提供します。
 author: abaryshnikov
 ms.date: 01/15/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 73cb08c880d7b3459201acfc7aeaa8d0dee1674f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984806"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853195"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>イタリアの FatturaPA と SDI の直接統合を設定する
 
@@ -24,23 +24,23 @@ ms.locfileid: "7984806"
 > [!IMPORTANT]
 > イタリア向けの電子請求は、現時点では Microsoft Dynamics 365 Finance および Dynamics 365 Supply Chain Management の電子請求書で利用できるすべての機能に対応していない可能性があります。
 
-このトピックでは、Finance および Supply Chain Management でイタリア向けの電子請求を使い始めるための情報を提供します。 このガイドでは、Regulatory Configuration Services (RCS) が含む国/地域ごとに異なる構成手順について説明します。 これらの手順は、[電子請求を開始する](e-invoicing-get-started.md) で説明した手順を補完します。
+この記事では、Finance および Supply Chain Management でイタリア向けの電子請求を使い始めるための情報を提供します。 このガイドでは、Regulatory Configuration Services (RCS) が含む国/地域ごとに異なる構成手順について説明します。 これらの手順は、[電子請求を開始する](e-invoicing-get-started.md) で説明した手順を補完します。
 
 ## <a name="prerequisites"></a>必要条件
 
-このトピックの手順を完了する前に、次の前提条件を満たす必要があります。
+この記事の手順を完了する前に、次の前提条件を満たす必要があります。
 
 - [電子請求を開始する](e-invoicing-get-started.md) の手順を完了します。
-- **Italian FatturaPA (IT)** 電子請求機能をグローバル リポジトリから RCS にインポートします。 詳細については、前述の "電子請求を開始する" トピックの [Microsoft 構成プロバイダから電子請求機能をインポートする](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) セクションを参照してください。
-- 必要な証明書からサービス環境にリンクを追加します。 必要な証明書: デジタル署名証明書、証明機関 (CA) 証明書、クライアント証明書。 詳細については、"電子請求サービスの管理を開始する" トピックの [デジタル証明書シークレットを作成する](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) セクションを参照してください。
+- **Italian FatturaPA (IT)** 電子請求機能をグローバル リポジトリから RCS にインポートします。 詳細については、前述の 「電子請求を開始する」 記事の [Microsoft 構成プロバイダから電子請求機能をインポートする](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) セクションを参照してください。
+- 必要な証明書からサービス環境にリンクを追加します。 必要な証明書: デジタル署名証明書、証明機関 (CA) 証明書、クライアント証明書。 詳細については、「電子請求サービスの管理を開始する」 記事の [デジタル証明書シークレットを作成する](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) セクションを参照してください。
 
 ## <a name="country-specific-configuration-for-the-italian-fatturapa-it-electronic-invoicing-feature"></a>Italian FatturaPA (IT) 電子請求機能の国別コンフィギュレーション
 
 連携した Finance や Supply Chain Management アプリにアプリケーション設定を展開する前に、次の手順を実行してください。
 
-このセクションは "電子請求を開始する" トピックの [アプリケーション設定の国別コンフィギュレーション](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) セクションを補完します。
+このセクションは 「電子請求を開始する」 記事の [アプリケーション設定の国別コンフィギュレーション](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) セクションを補完します。
 
-### <a name="create-a-new-feature"></a>新しい昨日を作成する
+### <a name="create-a-new-feature"></a>新しい機能を作成する
 
 1. RCS にサインインします。
 2. **電子申告** ワークスペースの **構成プロバイダー** セクションで、会社の構成プロバイダーをアクティブとしてマークします。
@@ -87,8 +87,8 @@ ms.locfileid: "7984806"
 
 ### <a name="deploy-the-feature"></a>機能を展開する
 
-1. 機能を完成させて公開し、サービス環境に展開します。 詳細については "電子請求を開始する" トピックの [サービス環境に電子請求機能をデプロイする](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) セクションを参照してください。
-2. 連携したアプリケーションに機能を展開します。 詳細については "電子請求を開始する" トピックの [連携したアプリケーションに電子請求機能をデプロイする](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) セクションを参照してください。
+1. 機能を完成させて公開し、サービス環境に展開します。 詳細については 「電子請求を開始する」 記事の [サービス環境に電子請求機能をデプロイする](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) セクションを参照してください。
+2. 連携したアプリケーションに機能を展開します。 詳細については 「電子請求を開始する」 記事の [連携したアプリケーションに電子請求機能をデプロイする](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) セクションを参照してください。
 
 ### <a name="set-up-finance"></a>Finance を設定する
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Management 10.0.12 (2020 年 8 月) の新機能または変更された機能
-description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.12 の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 Supply Chain Management 10.0.12 の新機能および変更された機能について説明します。
 author: kamaybac
 ms.date: 05/29/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 89959095eb64c66e92c9d93d0a3f4caabe7d14bf7121683a7d35d3719a3e36ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44b56a59c3b6bb123151988c403382d7c57efd29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845028"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Dynamics 365 Supply Chain Management 10.0.12 (2020 年 8 月) の新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.12 の新機能または変更された機能について列挙します。 このバージョンには 10.0.507 のビルド番号が含まれており、次のように使用できます。
+この記事では、Microsoft Dynamics 365 Supply Chain Management 10.0.12 の新機能または変更された機能を示します。 このバージョンには 10.0.507 のビルド番号が含まれており、次のように使用できます。
 
 - **プレビュー リリース :** 2020 年 5 月
 - **一般提供 (自己更新) :**  2020 年 7 月
@@ -47,7 +47,7 @@ ms.locfileid: "6728606"
 
 - [倉庫アプリのライセンス プレート受取の機能拡張 (継続)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - 詳細については、[倉庫管理モバイル アプリを介したライセンス プレート受取](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md)を参照してください。
 
-- [Warehouse Mobile App の一括配置](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - 詳細については、[倉庫管理モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md) を参照してください。
+- [Warehouse mobile app の一括配置](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - 詳細については、[倉庫管理モバイル アプリのインストールと接続](../warehousing/install-configure-warehouse-management-app.md) を参照してください。
 
 - [倉庫管理の手持在庫エントリ クリーンアップ ジョブの最大実行時間](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - 詳細については、[倉庫管理の手持在庫エントリのクリーンアップ ジョブ](../warehousing/onhand-cleanup.md)を参照してください。
 
@@ -55,9 +55,9 @@ ms.locfileid: "6728606"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.12 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.12 (2020 年 8 月) のプラットフォーム アップデート](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.12 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.12 のプラットフォーム更新プログラム (2020 年 8 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -71,12 +71,12 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.12 には、Platform updates
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>削除済みおよび非推奨の Supply Chain Management 機能
 
-[Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)トピックは、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
+[Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)の記事は、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)の記事に発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

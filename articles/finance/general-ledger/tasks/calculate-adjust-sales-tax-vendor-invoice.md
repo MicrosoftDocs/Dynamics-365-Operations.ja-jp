@@ -1,6 +1,6 @@
 ---
-title: 仕入先請求書の売上税の計算と調整
-description: このトピックでは、Dynamics 365 Finance で、仕入先請求書の売上税を調整する方法について説明します。
+title: 仕入先請求書の消費税の計算と調整
+description: この記事では、Dynamics 365 Finance で、仕入先請求書の売上税を調整する方法について説明します。
 author: twheeloc
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d4d6a23f6f58906730c5ce00c5fe06885aaa6da
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9a1093631688351d065d6b55bc65055b6f92d256
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734692"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868376"
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>仕入先請求書の消費税の計算と調整
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、仕入先請求書の売上税を調整する方法について説明します。 オリジナルの元伝票が計算と異なる税額を表示している場合、転記前にこれらの金額を調整できます。 このタスクでは、USMF というデモ会社を使用します。
+この記事では、仕入先請求書の売上税を調整する方法について説明します。 オリジナルの元伝票が計算と異なる税額を表示している場合、転記前にこれらの金額を調整できます。 このタスクでは、USMF というデモ会社を使用します。
 
 1. **買掛金勘定 > 請求書 > 請求仕訳帳** の順に移動します。
 2. **新規** を選択します。

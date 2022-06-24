@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce eコマース ローカライズ ガイド
-description: このトピックでは、Microsoft Dynamics 365 Commerce eコマース サイトを追加の言語にローカライズし、複数のチャネルをサポートするようにサイトを構成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce eコマース サイトを追加の言語にローカライズし、複数のチャネルをサポートするようにサイトを構成する方法について説明します。
 author: bicyclingfool
 ms.date: 04/29/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1e9d91036ceeb9161dc8ee903532b2cf3ca435e2
-ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
+ms.openlocfilehash: 955a85340f6d35f1e203d74920d07b5dc6ff8654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661528"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873387"
 ---
 # <a name="dynamics-365-commerce-e-commerce-localization-guide"></a>Dynamics 365 Commerce eコマース ローカライズ ガイド
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce eコマース サイトを追加の言語にローカライズし、複数のチャネルをサポートするようにサイトを構成する方法について説明し、プロセスに関連する概念と用語についても説明します。
+この記事では、Microsoft Dynamics 365 Commerce eコマース サイトを追加の言語にローカライズし、複数のチャネルをサポートするようにサイトを構成する方法について説明し、プロセスに関連する概念と用語についても説明します。
 
 Dynamics 365 Commerce の eコマース機能は、特定の国や言語に合わせて調整できるオンライン エクスペリエンスを有効にすると同時に、テンプレート、ページ、コンテンツ、およびメディアを最大限に再利用できるように設計されています。 また、基本的なサイトを作成してから、国や言語のサポートを追加することで、新しい市場に拡大することもできます。
 
@@ -79,7 +79,7 @@ Dynamics 365 Commerce eコマース サイトは、チャネルとロケール�
 ![すぐに使用できる Dynamics 365 Commerce eコマース サイト](media/loc-guide-1.png)
 
 > [!NOTE]
-> 追加の言語の Fabrikam デモ サイトを構成して、その言語でコンテンツ開発を実行できるようにすることができます。 サイトとチャネルに新しい言語を追加する方法については、このトピックで後述する[サイトの追加言語の構成](#configure-an-additional-language-for-your-site) セクションを参照してください。
+> 追加の言語の Fabrikam デモ サイトを構成して、その言語でコンテンツ開発を実行できるようにすることができます。 サイトとチャネルに新しい言語を追加する方法については、この記事で後述する [サイトの追加言語の構成](#configure-an-additional-language-for-your-site) セクションを参照してください。
 
 ただし、Dynamics 365 Commerce eコマース サイトのコンテンツ管理システム (CMS) とページ モデルは、新しい市場とロケールへの拡張を有効にするように設計されています。 したがって、単一の eコマース サイトを通じて、複数の市場と言語にまたがるオンライン ストアの資産を管理できます。
 
@@ -117,7 +117,7 @@ eコマース サイトの新しい言語を構成するプロセスには、3 �
 
 Commerce サイト ビルダーの **ページ** ビューに戻ると、右上のチャネルとロケール ピッカーで新しい言語が使用可能になります。 基本言語で、ページのローカライズされたバージョンを作成できます。
 
-ページとフラグメントのコンテンツをローカライズするプロセスについては、このトピックで後述する [eコマース サイト コンテンツのローカライズ](#localize-e-commerce-site-content) セクションで説明しています。
+ページとフラグメントのコンテンツをローカライズするプロセスについては、この記事で後述する [eコマース サイト コンテンツのローカライズ](#localize-e-commerce-site-content) セクションで説明しています。
 
 ### <a name="configure-a-new-channel-for-your-site"></a>サイトの新しいチャネルを構成する
 
@@ -156,7 +156,7 @@ Microsoft Dynamics の顧客は通常、[Translated.com](https://translated.com/
 
 すべての新しいページ、フラグメント、およびメディア資産は、チャネルおよびロケール ピッカーで現在選択されているチャネルおよび言語のコンテキストで作成されます。 追加の言語またはチャネルを構成していない場合、この言語は通常、「基本言語」です。 複数のチャネルと言語が構成されているサイトでは、「基本言語」は、サイト設定の **チャネル** ページで既定として設定したチャネルとロケールによって定義されます。
 
-ページ、フラグメント、およびメディア資産のコンテンツをローカライズする手順は類似しています。 例外と相違点については、次のセクションで説明します。 ただし、モジュール コンテンツをローカライズする手順は異なります。 詳細については、このトピックの後にある[ローカライズ モジュール](#localize-modules) セクションを参照してください。
+ページ、フラグメント、およびメディア資産のコンテンツをローカライズする手順は類似しています。 例外と相違点については、次のセクションで説明します。 ただし、モジュール コンテンツをローカライズする手順は異なります。 詳細については、この記事の後半にある [ローカライズ モジュール](#localize-modules) セクションを参照してください。
 
 #### <a name="step-1-export-an-xliff-file"></a>手順 1: XLIFF ファイルをエクスポートする
 

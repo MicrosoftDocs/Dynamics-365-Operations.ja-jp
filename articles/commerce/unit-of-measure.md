@@ -1,6 +1,6 @@
 ---
 title: 測定単位設定の適用
-description: このトピックでは測定単位設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
+description: この記事では測定単位設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
 author: anupamar-ms
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7fe5cf6b57a8897a0bd541146cb1ad17b496d5633c0a1df9d58b2a4fbc868139
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca95bd31af8f244f60f12120bc6df121f48cc7ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884818"
 ---
 # <a name="apply-unit-of-measure-settings"></a>測定単位設定の適用
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは測定単位設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
+この記事では測定単位設定を取り上げ、Microsoft Dynamics 365 Commerce で適用する方法について説明します。
 
 製品は、「各」、「ペア」、「ダース」など、異なる単位で販売できます。 Commerce 本社では、測定単位の販売は製品を定義して、eコマース サイトに表示できます。 たとえば、小売業者が個別と数十単位の両方で製品を販売する場合、使用可能な測定単位を他の製品情報と共に表示できます。
 

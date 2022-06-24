@@ -1,6 +1,6 @@
 ---
 title: 関連会社のデータをファイルからインポートする
-description: このトピックでは、外部システムからのデータを Microsoft Dynamics 365 Finance にインポートできるように準備する方法を説明します。
+description: この記事では、外部システムからのデータを Microsoft Dynamics 365 Finance にインポートできるように準備する方法を説明します。
 author: jinniew
 ms.date: 10/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 045ecd6dfb95ccf38773293d44834531668ac1ff
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6886e2ee79ee9e4ccc067dc4f661c1eea646cfa6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733822"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846773"
 ---
 # <a name="import-subsidiary-data-from-files"></a>関連会社のデータをファイルからインポートする
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、外部システムからのデータを Microsoft Dynamics 365 Finance にインポートできるように準備する方法を説明します。 **インポートで連結** ページ (**連結  \> インポートによる連結**) を使用して、外部システムからの子会社データの移管を準備します。
+この記事では、外部システムからのデータを Microsoft Dynamics 365 Finance にインポートできるように準備する方法を説明します。 **インポートで連結** ページ (**連結  \> インポートによる連結**) を使用して、外部システムからの子会社データの移管を準備します。
 
 1. 連結する子会社の法人を作成します。 法人の作成方法の詳細については、[法人の作成](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md)を参照してください。 詳細については、[連結プロセスに使用する法人の準備](prepare-company-for-consolidation.md) と [連結用の子会社の設定](set-up-subsidiary-company-for-consolidation.md)を参照してください 。
 

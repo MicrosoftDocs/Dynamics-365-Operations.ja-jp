@@ -1,6 +1,6 @@
 ---
 title: 販売注文モバイル ワークスペース
-description: このトピックでは、販売注文モバイル ワークスペースについての情報を提供します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。
+description: この記事では、販売注文モバイル ワークスペースについての情報について説明します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。
 author: Henrikan
 ms.date: 05/24/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: be9fd32f5f5d80bb9bce5f0de7e4ff92d6f5d28f
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: fc04a90c0c071508c9ebee57862a029de0e58f9a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844767"
 ---
 # <a name="sales-orders-mobile-workspace"></a>販売注文モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-このトピックでは、**販売注文** モバイル ワークスペースについての情報を提供します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。 
+この記事では、**販売注文** モバイル ワークスペースについての情報について説明します。 このワークスペースは、どこでも、いつでも販売注文について最新の状態に保つのに役立ちます。 
 
 このモバイル ワークスペースは、Finance and Operations (Dynamics 365) モバイル アプリで使用するためのものです。
 

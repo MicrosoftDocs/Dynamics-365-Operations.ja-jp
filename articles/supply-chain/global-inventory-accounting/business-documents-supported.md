@@ -1,6 +1,6 @@
 ---
 title: グローバル在庫会計でサポートされるビジネス ドキュメント
-description: このトピックでは、グローバル在庫会計でサポートされるビジネス ドキュメントの一覧を示します。 また、発注書ドキュメントの詳細例も提供します。
+description: この記事では、グローバル在庫会計でサポートされるビジネス ドキュメントの一覧を示します。 また、発注書ドキュメントの詳細例も提供します。
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 44081be35c6737aa0d16b6e11a5fc8f94b41e872
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: dc88d095c039b22ac347db949f6b61d5a89dc4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674452"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875426"
 ---
 # <a name="business-documents-supported-by-global-inventory-accounting"></a>グローバル在庫会計でサポートされるビジネス ドキュメント
 
@@ -32,7 +32,7 @@ ms.locfileid: "8674452"
 - **仕訳帳が作成されているドキュメント** – これらのドキュメントには、製品受領書、購買請求書、梱包明細、および売上請求書のドキュメントが含まれます。
 - **仕訳帳が作成されていないドキュメント** – これらのドキュメントには、棚卸、移動、および在庫調整のドキュメントが含まれます。
 
-このトピックでは、プロセスを示す例として発注書を使用します。
+この記事の後半では、プロセスを示す例として発注書を使用します。
 
 次の表に、現在のリリースでサポートされているドキュメントの一覧を示します。
 

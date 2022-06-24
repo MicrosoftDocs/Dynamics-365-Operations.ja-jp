@@ -1,6 +1,6 @@
 ---
 title: 注文納期日
-description: このトピックでは、オーダー納期処理について説明します。 注文納期を使用すると、顧客への出荷日を確実性をもって約束し、柔軟性を持たせた上でこれらの日付を守るようにすることができます。
+description: この記事では、注文納期に関する情報を提供します。 注文納期を使用すると、顧客への出荷日を確実性をもって約束し、柔軟性を持たせた上でこれらの日付を守るようにすることができます。
 author: Henrikan
 ms.date: 04/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f7535ba28358fef21784956da38cd334a4aebe7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 21af95f06182863c6ba74e4329052fc15c1b49a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572604"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878819"
 ---
 # <a name="order-promising"></a>注文納期日
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、オーダー納期処理について説明します。 注文納期を使用すると、顧客への出荷日を確実性をもって約束し、柔軟性を持たせた上でこれらの日付を守るようにすることができます。
+この記事では、注文納期に関する情報を提供します。 注文納期を使用すると、顧客への出荷日を確実性をもって約束し、柔軟性を持たせた上でこれらの日付を守るようにすることができます。
 
 注文納期は、最も早い出荷日および入荷日を計算し、配送日の管理方法、および配送日数に基づいています。 4 つの配送日の管理方法から選択できます。
 

@@ -1,6 +1,6 @@
 ---
 title: 主勘定カテゴリの設定
-description: このトピックでは、Dynamics 365 Finance で主勘定カテゴリを設定する方法について説明します。
+description: この記事では、Dynamics 365 Finance で主勘定カテゴリを設定する方法について説明します。
 author: aprilolson
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb41f1b7200363f8846c406d5c20338f6ea242bd
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c48011c9988bdca694851476540db574efef7909
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879566"
 ---
 # <a name="set-up-main-account-categories"></a>主勘定カテゴリの設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、主勘定カテゴリを設定する方法について説明します。 主勘定カテゴリは、財務報告と Power BI の既定のレポートに使用されます。 既定で作成される主勘定カテゴリの名前は変更できますが、削除はできません。 追加の勘定カテゴリを作成しレポートおよび分析に使用できます。 このトピックでは、USMF というデモ会社を使用します。
+この記事では、主勘定カテゴリを設定する方法について説明します。 主勘定カテゴリは、財務報告と Power BI の既定のレポートに使用されます。 既定で作成される主勘定カテゴリの名前は変更できますが、削除はできません。 追加の勘定カテゴリを作成しレポートおよび分析に使用できます。 この記事では、USMF デモ会社を使用します。
 
 ## <a name="create-a-main-account-category"></a>主勘定カテゴリの作成
 1. ナビゲーション ウィンドウで、**モジュール > 総勘定元帳 > 勘定科目表 > 勘定 > 主勘定カテゴリ** の順に移動します。

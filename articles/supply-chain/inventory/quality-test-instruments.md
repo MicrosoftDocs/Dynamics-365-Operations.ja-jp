@@ -1,6 +1,6 @@
 ---
 title: 品質管理テスト機器
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質指示のテストに使用できるテスト機器を作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の品質指示のテストに使用できるテスト機器を作成する方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d80a4f784a43e0d83d1f5b42f6740ef6da3add1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 36b712e6a99a0625af28ef121d0c9c39c1e32603
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565906"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857666"
 ---
 # <a name="quality-management-test-instruments"></a>品質管理テスト機器
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質指示のテストに使用できるテスト機器を作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management の品質指示のテストに使用できるテスト機器を作成する方法について説明します。
 
 **テスト機器** ページを使用して、品質指示のテストを実行するために使用するデバイスに関する詳細を定義および表示します。 テスト機器はオプションです。 ただし、品質作業員が、特定のテストの実行にどのデバイスまたはツールを使用する必要があるのかを知るのに役立ちます。
 

@@ -1,6 +1,6 @@
 ---
 title: 確認後支払ファイルの設定と生成
-description: このトピックでは、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。
+description: この記事は、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。
 author: panolte
 ms.date: 03/06/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: eb5a9595ea1a93a9b15348eb1b291d744f660d40
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6b3cff1029b02aaabef2ea9795ab9912f20f1129
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727765"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871423"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>確認後支払ファイルの設定と生成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。 
+この記事は、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。 
 
 確認後支払を設定し、銀行に渡す小切手の電子リストを生成します。 次に、小切手が銀行に提出されたら、銀行はそれを小切手リストと比較します。 小切手がリストの小切手と一致する場合、銀行は小切手を決済します。 小切手がリスト内の小切手と一致しない場合、銀行は確認のために小切手を保留にします。
 

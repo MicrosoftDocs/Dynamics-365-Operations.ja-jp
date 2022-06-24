@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効にする
-description: このトピックでは、Dynamics 365 Commerce 環境のエンティティ格納に Azure Data Lake Storage Gen 2 ソリューションを接続する方法について説明します。 製品推奨事項の有効化の前に、この手順を実行する必要があります。
+description: この記事では、Dynamics 365 Commerce 環境のエンティティ格納に Azure Data Lake Storage Gen 2 ソリューションを接続する方法について説明します。 製品推奨事項の有効化の前に、この手順を実行する必要があります。
 author: bebeale
 ms.date: 08/31/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c96c29a4d9639b02e6a60ad938b7e06f7d500c68
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 6e0c84dd6b173a111b70a8adb6036be946149f7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466295"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885174"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Dynamics 365 Commerce 環境で Azure Data Lake Storage を有効にする
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 Commerce 環境のエンティティ格納に Azure Data Lake Storage Gen2 ソリューションを接続する方法について説明します。 製品推奨事項の有効化の前に、この手順を実行する必要があります。
+この記事では、Dynamics 365 Commerce 環境のエンティティ格納に Azure Data Lake Storage Gen2 ソリューションを接続する方法について説明します。 製品推奨事項の有効化の前に、この手順を実行する必要があります。
 
 Dynamics 365 Commerce ソリューションにおいて、推奨事項、製品、およびトランザクションの計算に必要なデータは、環境のエンティティ格納で集計されます。 このデータを、データ分析、ビジネス インテリジェンス、パーソナライズされた推奨事項などの他の Dynamics 365 サービスからアクセスできるようにするには、顧客所有の Azure Data Lake Storage Gen2 ソリューションに環境を接続する必要があります。
 

@@ -1,6 +1,6 @@
 ---
 title: 配送スケジュールと発注書の作成
-description: このトピックでは、発注書の配送スケジュールを作成する方法を示します。
+description: この記事では、発注書の配送スケジュールを作成する方法を示します。
 author: GalynaFedorova
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1475115b5c1a475f9a56f0f3eb8bb47267d2b91
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e13103f374be838a5ea0fb5e08c449b419905cab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677453"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875249"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>配送スケジュールと発注書の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、発注書の配送スケジュールを作成する方法を示します。 配送スケジュールは、注文または仕訳帳の数量を複数の出荷で配送する要求があるときに使用されます。 このガイドで示されている例は、デモ データの会社 USMF で使用できます。 この手順は通常、購買担当者が行います。
+この記事では、発注書の配送スケジュールを作成する方法を示します。 配送スケジュールは、注文または仕訳帳の数量を複数の出荷で配送する要求があるときに使用されます。 このガイドで示されている例は、デモ データの会社 USMF で使用できます。 この手順は通常、購買担当者が行います。
 
 ## <a name="create-a-delivery-schedule"></a>配送スケジュールの作成
 1. ナビゲーション ウィンドウで、**モジュール > 調達 > 発注書 > すべての発注書** の順に移動します。

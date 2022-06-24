@@ -1,6 +1,6 @@
 ---
-title: 移動オーダーに対する税機能のサポート
-description: このトピックでは、税計算サービスを使用した移動オーダーの新しい税機能のサポートについて説明します。
+title: 移動オーダーに対する税金機能のサポート
+description: この記事では、税計算サービスを使用した移動オーダーの新しい税機能のサポートについて説明します。
 author: Kai-Cloud
 ms.date: 10/13/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d95ea6795dc5777bfd37f8fbb3ebc47f2db337a0
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 281ee90b7cae2d24d37d0684ad9975118560bb3e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689217"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869984"
 ---
-# <a name="tax-feature-support-for-transfer-orders"></a>移動オーダーに対する税機能のサポート
+# <a name="tax-feature-support-for-transfer-orders"></a>移動オーダーに対する税金機能のサポート
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、移動オーダーの税計算と転記の統合に関する情報を提供します。 この機能により、在庫移動の移動オーダーで税計算および転記を設定できます。 欧州連合 (EU) の付加価値税 (VAT) 規制では、在庫移動は EU 内供給および EU 内取得と見なされます。
+この記事では、移動オーダーの税計算と転記の統合に関する情報を提供します。 この機能により、在庫移動の移動オーダーで税計算および転記を設定できます。 欧州連合 (EU) の付加価値税 (VAT) 規制では、在庫移動は EU 内供給および EU 内取得と見なされます。
 
 この機能を構成および使用するには、次の 3 つの主要な手順を実行する必要があります。
 

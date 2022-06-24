@@ -1,6 +1,6 @@
 ---
 title: 品目品質グループ
-description: このトピックでは、品目品質グループの使用および作成して、製品を論理的にグループ化し、品質指示の自動生成用に品質関連に割り当てる方法について説明します。
+description: この記事では、品目品質グループの使用および作成して、製品を論理的にグループ化し、品質指示の自動生成用に品質関連に割り当てる方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f7a4932c561c052bec1eb0094a390e315b9b1bb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bf1ce49fa58fd1a8a5aa07636e0b2bd7e2fc10e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875368"
 ---
 # <a name="item-quality-groups"></a>品目品質グループ
 
 [!include [banner](../includes/banner.md)]
 
-品質グループとは、複数の品目に共通するテスト要件です。 このトピックでは、品目品質グループの使用および作成して、製品を論理的にグループ化し、品質指示の自動生成用に品質関連に割り当てる方法について説明します。
+品質グループとは、複数の品目に共通するテスト要件です。 この記事では、品目品質グループの使用および作成して、製品を論理的にグループ化し、品質指示の自動生成用に品質関連に割り当てる方法について説明します。
 
 品質グループに割り当てられる品目、または品目に割り当てられる品質グループを、設定、編集、および表示するには、**在庫管理 \> 設定 \> 品質グループ** の順に移動します。 **テスト グループ** ページのテスト要件を定義した後、品質指示を自動生成するルールを定義できます。 プロセスを簡略化するため、個別の品目のルールは定義しません。 代わりに、**品質関連** ページの品質グループのルールを定義できます。
 

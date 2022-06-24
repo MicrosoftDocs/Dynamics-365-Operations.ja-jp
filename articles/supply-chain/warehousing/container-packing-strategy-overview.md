@@ -1,6 +1,6 @@
 ---
 title: コンテナー梱包計画
-description: このトピックでは、コンテナー梱包計画間の違いについて説明し、その例を示します。
+description: この記事では、コンテナー梱包計画間の違いについて説明し、その例を示します。
 author: GalynaFedorova
 ms.date: 06/11/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ab34cee7fd495ec26f6b20da2aa43895f49f677c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676386"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862369"
 ---
 # <a name="container-packing-strategies"></a>コンテナー梱包計画
 
 [!include [banner](../includes/banner.md)]
 
-*コンテナー梱包計画* は、コンテナー間で品目配賦を定義するために使用できる計画です。 このトピックでは、*オープンのコンテナーすべてに梱包* 計画と *現在のコンテナーにのみ梱包* 計画の違いについて説明します。
+*コンテナー梱包計画* は、コンテナー間で品目配賦を定義するために使用できる計画です。 この記事では、*すべてのオープン コンテナーに梱包* と *現在のコンテナーにのみ梱包* の戦略の違いについて説明します。
 
 - **オープンのコンテナーすべてに梱包** – システムは、コンテナー詰めのサイクル中に既に作成されたすべてのオープン コンテナーを確認し、品目がそのうちの 1 つに適合することを確認します。 梱包中に、システムは各品目をチェックして以前に作成されたコンテナーのいずれかに適合するかどうかを判断します。 品目が既存のコンテナーに適合しない場合は、システムにより新しいコンテナーが作成され、注文全体の梱包が終了するまで続行されます。
 

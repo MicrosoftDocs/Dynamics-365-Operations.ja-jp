@@ -1,6 +1,6 @@
 ---
 title: ウェーブ ラベルの再印刷と無効化
-description: このトピックでは、既存のウェーブ ラベルを無効にして再印刷する方法について説明します。
+description: この記事では、既存のウェーブ ラベルを無効にして再印刷する方法について説明します。
 author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f9f057d9985fb8431ec7c9ced23f2cd3c476570d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871836"
 ---
 # <a name="reprint-and-void-wave-labels"></a>ウェーブ ラベルの再印刷と無効化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ウェーブ処理によって生成されるラベルを管理する方法について説明します。 (詳細な説明と構成手順については、[ウェーブ ラベル印刷のコンフィギュレーション](../warehousing/configure-wave-label-printing.md) を参照してください。)
+この記事では、ウェーブ処理によって生成されるラベルを管理する方法について説明します。 (詳細な説明と構成手順については、[ウェーブ ラベル印刷のコンフィギュレーション](../warehousing/configure-wave-label-printing.md) を参照してください。)
 
 ウェーブ ラベルは、いつでも再印刷できます。 たとえば、既存のラベルが紛失または破損した場合、1 枚のラベルを印刷する必要が生じる場合があります。 または、一連のウェーブ ラベル全体の数および/または構成が変更された場合 (例えば、在庫不足やその他の理由などによって)、倉庫の作業者または監督は、ラベルのロール全体を再印刷する必要が生じる場合があります。 多くの場合、カートン数だけが変更された場合でも、各ラベルの "カートン X/Y" セクションで正確な合計数を維持するために、ロール全体を再印刷する必要があります。
 
@@ -32,10 +32,10 @@ ms.locfileid: "7572340"
 - ラベルを無効にして、同時に再印刷します。 (たとえば、ラベルを無効にする機能は、ショート ピックのシナリオに組み込まれています。)
 - ウェーブ ラベル履歴をクリーンアップします。
 
-このトピックでは、ウェーブ ラベルの再印刷機能を使用する方法を例を挙げて示すシナリオをまとめて紹介します。
+この記事では、ウェーブ ラベルの再印刷機能を使用する方法を例を挙げて示すシナリオをまとめて紹介します。
 
 > [!IMPORTANT]
-> このトピックで説明するシナリオを実行するには、[ウェーブ ラベル印刷のコンフィギュレーション](../warehousing/configure-wave-label-printing.md) で説明されているように、最初に関連するウェーブ印刷機能をオンにし構成する必要があります。 このトピックのいくつかのシナリオでは、最初にそのトピックのシナリオを実行して、前提条件のサンプル データを生成する必要があります。
+> この記事で説明するシナリオを実行するには、[ウェーブ ラベル印刷のコンフィギュレーション](../warehousing/configure-wave-label-printing.md) で説明されているように、最初に関連するウェーブ印刷機能をオンにし構成する必要があります。 この記事のいくつかのシナリオでは、最初にその記事のシナリオを実行して、前提条件のサンプル データを生成する必要があります。
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>シナリオ 1: Web クライアントからラベルを再印刷する
 

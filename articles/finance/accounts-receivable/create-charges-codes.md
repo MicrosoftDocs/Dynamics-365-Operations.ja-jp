@@ -1,6 +1,6 @@
 ---
-title: 費用コードの作成
-description: ここでは、買掛金勘定と売掛金勘定の両方に費用コードを構成する方法を説明します。
+title: 諸費用コードの作成
+description: この記事では、買掛金勘定と売掛金勘定の両方に費用コードを構成する方法を説明します。
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8526fa0f3c6e3d1b545703f6e6ef72f558b57bd
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d65952cb989672e4eac2dd6101ee9c7c9424daed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866086"
 ---
-# <a name="create-charges-codes"></a>費用コードの作成
+# <a name="create-charges-codes"></a>諸費用コードの作成
 
-ここでは、買掛金勘定と売掛金勘定の両方に費用コードを構成する方法を説明します。 販売品目や購入品目の明細行に加えて、販売金額や購入金額の追跡が組織で必要な場合、この目的に費用コードを使用できます。 たとえば、発注書の運賃や保険を支払い、それらの金額は発注書で別々に明細化されます。 この場合、経費勘定に金額を転記するかどうか、あるいは品目の原価に追加するかどうかを指定できます。
+この記事では、買掛金勘定と売掛金勘定の両方に費用コードを構成する方法を説明します。 販売品目や購入品目の明細行に加えて、販売金額や購入金額の追跡が組織で必要な場合、この目的に費用コードを使用できます。 たとえば、発注書の運賃や保険を支払い、それらの金額は発注書で別々に明細化されます。 この場合、経費勘定に金額を転記するかどうか、あるいは品目の原価に追加するかどうかを指定できます。
 
 ## <a name="set-up-charges-codes-for-accounts-receivable"></a>売掛金勘定の費用コードの設定
 

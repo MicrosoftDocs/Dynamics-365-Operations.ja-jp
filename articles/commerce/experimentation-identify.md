@@ -1,6 +1,6 @@
 ---
 title: 仮想を識別して実験のメトリックを決定する
-description: このトピックでは、Dynamics 365 Commerce で E コマース Web サイトで実行する実験の仮想および成功メトリックを識別する方法について説明します。
+description: この記事では、Dynamics 365 Commerce の Eコマース Web サイトで実行する実験の仮想および成功メトリックを識別する方法について説明します。
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: a143f00eedc2ddb3b54f05f2475a616609af8d5a7b8a4d19d0bbcb021290dfd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b6bdf160522fc93e841ec2f8a4542ff80d8f67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720935"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852789"
 ---
 # <a name="identify-a-hypothesis-and-determine-success-metrics-for-an-experiment"></a>仮想を識別して実験の成功メトリックを決定する
-実験ライフサイクルの第 1 フェーズでは、実験の仮想を識別して、成功を評価するために追跡するメトリックを決定することが含まれます。 次の図は、Dynamics 365 Commerce の E コマース Web サイトでの[実験の設定と実行](experimentation-overview.md)に関連するすべての手順を示しています。 追加の手順については、個別のトピックで説明します。 
+実験ライフサイクルの第 1 フェーズでは、実験の仮想を識別して、成功を評価するために追跡するメトリックを決定することが含まれます。 次の図は、Dynamics 365 Commerce の E コマース Web サイトでの[実験の設定と実行](experimentation-overview.md)に関連するすべての手順を示しています。 追加の手順については、個別の記事で説明します。 
 
 [ ![実験ユーザー体験 - 識別。](./media/experimentation_identify.svg) ](./media/experimentation_identify.svg#lightbox)
 

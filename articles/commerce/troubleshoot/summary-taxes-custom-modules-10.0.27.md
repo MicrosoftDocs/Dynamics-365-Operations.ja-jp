@@ -1,6 +1,6 @@
 ---
-title: カスタマイズした注文集計モジュールを使用すると、注文集計の小計に請求金額の税が含まれない
-description: このトピックでは、カスタマイズした注文集計合計モジュールを使用すると、'価格に消費税が含まれる' シナリオで、注文集計の小計に請求金額の税が含まれない場合の、トラブルシューティング ガイドを定期用します。
+title: カスタマイズした注文集計モジュールを使用すると、注文集計の小計に請求金額に対する税金が含まれない
+description: この記事では、カスタマイズした注文集計合計モジュールを使用すると、'価格に消費税が含まれる' シナリオで、注文集計の小計に請求金額の税が含まれない場合の、トラブルシューティング ガイドを定期用します。
 author: gvrmohanreddy
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,16 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-04-22
-ms.openlocfilehash: 1a47561a3ac984bc554b5b93546592237c16cf18
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: 260dcb6bc1585615195e32adfcd1da6bfbca294e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767963"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848840"
 ---
-# <a name="order-summary-subtotal-doesnt-include-taxes-on-charges-when-using-customized-order-summary-modules"></a>カスタマイズした注文集計モジュールを使用すると、注文集計の小計に請求金額の税が含まれない
+# <a name="order-summary-subtotal-doesnt-include-taxes-on-charges-when-using-customized-order-summary-modules"></a>カスタマイズした注文集計モジュールを使用すると、注文集計の小計に請求金額に対する税金が含まれない
 
-このトピックでは、カスタマイズした注文集計合計モジュールを使用すると、'価格に消費税が含まれる' シナリオで、注文集計の小計に請求金額の税が含まれない場合の、トラブルシューティング ガイドを定期用します。
+この記事では、カスタマイズした注文集計合計モジュールを使用すると、'価格に消費税が含まれる' シナリオで、注文集計の小計に請求金額の税が含まれない場合の、トラブルシューティング ガイドを定期用します。
 
 ## <a name="description"></a>Description
 

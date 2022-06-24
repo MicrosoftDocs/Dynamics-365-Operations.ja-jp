@@ -1,6 +1,6 @@
 ---
 title: 検査指示
-description: このトピックは、検査指示を使用して在庫をブロックする方法について説明します。
+description: この記事では、検査指示を使用して在庫をブロックする方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cf0ec8f9f4d862724cb8ab72b48771ed68eaf39
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3ee1ba338d90c6ee9cdc37948061f518040ae1a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568786"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869665"
 ---
 # <a name="quarantine-orders"></a>検査指示
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、検査指示を使用して在庫をブロックする方法について説明します。
+この記事では、検査指示を使用して在庫をブロックする方法について説明します。
 
 検査指示により在庫をブロックできます。 たとえば、 品質テストの理由で品目を検査する場合があります。 検査された在庫は、検査倉庫に転送されます。
 

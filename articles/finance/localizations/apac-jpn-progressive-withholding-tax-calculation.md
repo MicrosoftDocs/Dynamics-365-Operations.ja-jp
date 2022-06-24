@@ -1,6 +1,6 @@
 ---
 title: 日本の累進的源泉徴収税
-description: このトピックでは、日本の累進的源泉徴収税に関する情報を提供します。
+description: この記事では、日本の累進的源泉徴収税に関する情報を提供します。
 author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Japan
 ms.author: wangchen
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fca4966b0bd3e41e3852b876487c6a73d2395656
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: c2239c4ddbcd755ba50cf070ac4379b54cce9759
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886294"
 ---
 # <a name="progressive-withholding-tax-for-japan"></a>日本の累進的源泉徴収税
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、日本の累進的源泉徴収税に関する情報を提供します。 日本の法的要件では、請求金額に比例する期間に基づいて税率が変化します。 支払金額に基づいて、税金の比率も変わります。
+この記事では、日本の累進的源泉徴収税に関する情報を提供します。 日本の法的要件では、請求金額に比例する期間に基づいて税率が変化します。 支払金額に基づいて、税金の比率も変わります。
 
 ## <a name="tax-calculation"></a>税額の計算
 -   **正味金額の割合** – **正味金額の割合** 方式は **発生元** フィールドの既定値です。 源泉徴収税は、購入金額の割合として計算され、その他の売上税はすべて除外されます。

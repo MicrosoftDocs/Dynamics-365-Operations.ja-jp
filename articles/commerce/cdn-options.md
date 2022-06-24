@@ -1,6 +1,6 @@
 ---
 title: コンテンツ配信ネットワークの実装オプション
-description: このトピックでは、Microsoft Dynamics 365 Commerce 環境で使用できるコンテンツ配信ネットワーク (CDN) の実装に関するさまざまなオプションを確認します。 オプションには、Azure Front Door のコマース提供のインスタンスおよび Azure Front Door の顧客所有のインスタンスであるネイティブが含まれます。
+description: この記事では、Microsoft Dynamics 365 Commerce 環境で使用できるコンテンツ配信ネットワーク (CDN) の実装に関するさまざまなオプションを確認します。 オプションには、Azure Front Door のコマース提供のインスタンスおよび Azure Front Door の顧客所有のインスタンスであるネイティブが含まれます。
 author: BrianShook
 ms.date: 07/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 944123f3afe1c869c262da3997a73d8c60bbc366
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a63751d42ab98610904191f1c09794b2311b0189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692728"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884420"
 ---
 # <a name="content-delivery-network-implementation-options"></a>コンテンツ配信ネットワークの実装オプション
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 環境で使用できるコンテンツ配信ネットワーク (CDN) の実装に関するさまざまなオプションを確認します。 オプションには、Azure Front Door のコマース提供のインスタンスおよび Azure Front Door の顧客所有のインスタンスであるネイティブが含まれます。
+この記事では、Microsoft Dynamics 365 Commerce 環境で使用できるコンテンツ配信ネットワーク (CDN) の実装に関するさまざまなオプションを確認します。 オプションには、Azure Front Door のコマース提供のインスタンスおよび Azure Front Door の顧客所有のインスタンスであるネイティブが含まれます。
 
 コマースの顧客は、コマース環境でどの CDN サービスを使用するか検討する際、いくつかのオプションがあります。 コマースは、基本的なホストとカスタム ドメインの要件をカバーする基本的な Azure Front Door サポートとともにリリースされます。 Web アプリケーション ファイアウォール (WAF) など、より詳細な制御機能とより具体的なセキュリティ能力を必要とする会社では、最良なオプションは Azure Front Door の顧客所有のインスタンスまたは外部の CDN サービスのいずれかを使用することです。
 

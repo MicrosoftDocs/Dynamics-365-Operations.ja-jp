@@ -1,6 +1,6 @@
 ---
 title: 給与の変動報酬計画
-description: このトピックでは、Dynamics 365 Human Resources における給与の変動報酬計画エンティティに対するクエリの詳細および例を示します。
+description: この記事では、Dynamics 365 Human Resources における給与の変動報酬計画エンティティに対するクエリの詳細および例を示します。
 author: twheeloc
 ms.date: 06/15/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-06-15
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c5cc9e02ff2dd49e2eb0c8131fcff2eca4b9c3b1
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 5c6190084c3f1ce15d6a4ab8f13843a5da801dd3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533650"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868133"
 ---
 # <a name="payroll-variable-compensation-plan"></a>給与の変動報酬計画
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533650"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の給与の変動報酬計画エンティティについて説明します。
+この記事では、Dynamics 365 Human Resources の給与の変動報酬計画エンティティについて説明します。
 
 ### <a name="description"></a>説明
 

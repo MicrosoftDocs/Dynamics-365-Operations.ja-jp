@@ -1,6 +1,6 @@
 ---
 title: 品質指示
-description: このトピックでは、品質指示を手動または自動で作成する方法、および品質指示を使用して Microsoft Dynamics 365 Supply Chain Management の検査を実行してテスト結果を記録する方法について説明します。
+description: この記事では、品質指示を手動または自動で作成する方法、および品質指示を使用して Microsoft Dynamics 365 Supply Chain Management の検査を実行してテスト結果を記録する方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 69a4a61a599f1279ec7ad68ebb20c7b4b0f37005
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb7ab1de0fb4d93ed18f1862630c1af7af7f3095
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571860"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857782"
 ---
 # <a name="quality-orders"></a>品質指示
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、品質指示を手動または自動で作成する方法、および品質指示を使用して Microsoft Dynamics 365 Supply Chain Management の検査を実行してテスト結果を記録する方法について説明します。
+この記事では、品質指示を手動または自動で作成する方法、および品質指示を使用して Microsoft Dynamics 365 Supply Chain Management の検査を実行してテスト結果を記録する方法について説明します。
 
 ## <a name="automatically-created-quality-orders"></a>自動的に作成される品質指示
 
@@ -39,7 +39,7 @@ ms.locfileid: "7571860"
 
 1. **在庫管理 \> 定期処理タスク \> 品質管理 \> 品質指示** の順に移動します。
 1. **新規** を選択します。
-1. **品質指示** ダイアログ ボックスの **参照タイプ** フィールドで、品質指示が関連付けられる在庫参照を選択します。 選択できる参照タイプの詳細については、このトピックの後半にある[品質指示の参照タイプ](#ref-types)を参照してください。
+1. **品質指示** ダイアログ ボックスの **参照タイプ** フィールドで、品質指示が関連付けられる在庫参照を選択します。 選択できる参照タイプの詳細については、この記事の後半にある [品質指示の参照タイプ](#ref-types) を参照してください。
 
     > [!NOTE]
     > 選択した参照に関連付けられた在庫が使用可能になっている必要があります。 選択した参照タイプ、数量、および在庫分析コードの組み合わせで使用可能な在庫がない場合は、エラー メッセージが表示されます。
@@ -88,7 +88,7 @@ ms.locfileid: "7571860"
 
 ### <a name="from-the-quality-orders-page"></a>品質指示ページから
 
-品質指示を手動で作成して、既存のすべての品質指示を表示するには、**在庫管理 \> 定期処理のタスク  \> 品質管理 \> 品質指示** の順に移動します。 このトピックの残りのセクションでは、**品質指示** ページの使用方法に関する詳細を説明します。
+品質指示を手動で作成して、既存のすべての品質指示を表示するには、**在庫管理 \> 定期処理のタスク  \> 品質管理 \> 品質指示** の順に移動します。 この記事の残りのセクションでは、**品質指示** ページの使用方法に関する詳細を説明します。
 
 ### <a name="from-sales-orders"></a>販売注文から
 

@@ -1,6 +1,6 @@
 ---
 title: 財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング
-description: このトピックでは、財務と運用アプリのデュアル書き込みモジュールの問題修正に役立つトラブルシューティング情報を提供します。
+description: この記事では、財務と運用アプリのデュアル書き込みモジュールの問題修正に役立つトラブルシューティング情報を提供します。
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0696d525e985f1cfcac1998d4c0bd8a380ca9551
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613885"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864575"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>財務と運用アプリでの二重書き込みに関する問題のトラブルシューティング
 
@@ -22,10 +22,10 @@ ms.locfileid: "8613885"
 
 
 
-このトピックでは、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、財務と運用アプリの **デュアル書き込み** モジュールの問題修正に特化したトラブルシューティング情報を提供します。
+この記事では、財務と運用アプリと Dataverse 間のデュアル書き込み統合に関するトラブル シューティングの情報を提供します。 このトピックでは、財務と運用アプリの **デュアル書き込み** モジュールの問題修正に特化したトラブルシューティング情報を提供します。
 
 > [!IMPORTANT]
-> このトピックで説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
+> この記事で説明されている問題の中には、システム管理者ロールまたは Microsoft Azure Active Directory（Azure AD）テナント管理者の資格情報のいずれかが必要な場合があります。 各問題のセクションでは、特定のロールまたは資格情報が必要な場合について説明しています。
 
 ## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>財務と運用アプリでデュアル書き込みモジュールを読み込めない
 

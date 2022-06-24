@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Sales で Dynamics 365 Commerce 価格決定エンジンを使用する
-description: このトピックでは、Microsoft Dynamics 365 Commerce 価格決定エンジンを使用して、Dynamics 365 Sales に売上の見積書を作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce 価格決定エンジンを使用して、Dynamics 365 Sales に売上の見積書を作成する方法について説明します。
 author: ShalabhjainMSFT
 ms.date: 11/19/2020
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: global
 ms.author: shajain
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c3f1527e5f37bebba57661ca86b1a3aae7e62da0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 11a164ec15c8b7a69172a153b961011a8b324712
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416758"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881397"
 ---
 # <a name="use-the-dynamics-365-commerce-pricing-engine-with-dynamics-365-sales"></a>Dynamics 365 Sales で Dynamics 365 Commerce 価格決定エンジンを使用する
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 価格決定エンジンを使用して、Dynamics 365 Sales に売上の見積書を作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce 価格決定エンジンを使用して、Dynamics 365 Sales に売上の見積書を作成する方法について説明します。
 
 Dynamics 365 Commerce 価格設定エンジンは、店舗レベルの価格設定、提携ベースの価格設定、ロイヤルティ ベースの価格設定、組み合わせ割引、数量割引、しきい値割引など、ほとんどの B2C (企業と一般消費者) 価格設定のシナリオに対応しています。 価格決定エンジンでは、複雑なルールを使用して、特定の見積または注文に対して最適な価格を決定します。
 

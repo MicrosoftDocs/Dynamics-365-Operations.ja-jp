@@ -1,6 +1,6 @@
 ---
 title: 外注
-description: このトピックは、Dynamics 365 Supply Chain Management で製造での外注のチュートリアルの構築に役立ちます。
+description: この記事は、Dynamics 365 Supply Chain Management で製造での外注のチュートリアルの構築に役立ちます。
 author: johanhoffmann
 ms.date: 09/28/2018
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ef8f30e934ece4a148c6f5259d74f8f67799999d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579355"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854180"
 ---
 # <a name="subcontracting"></a>外注
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 Supply Chain Management で製造での外注のチュートリアルの構築に役立ちます。 このトピックの最初の部分では、データの設定について説明します。 2 番目の部分では、チュートリアルの手順が示されます。
+この記事は、Microsoft Dynamics 365 Supply Chain Management で製造での外注のチュートリアルの構築に役立ちます。 この記事の最初の部分では、データの設定について説明します。 2 番目の部分では、チュートリアルの手順が示されます。
 
 ## <a name="target-audience"></a>対象者
 
-このトピックでは、製造での外注を設定する方法を説明します。 外注活動フローの基本設定を行うには、HQUS 法人で既存のデータを使用します。 HQUS 法人のデモ データには、チュートリアルで手順をサポートするために事前に設定された設定パラメータが含まれます。 チュートリアルではさまざまなロールに対する重要な問題点や課題に取り組んでいますが、システム管理者がその作業を完了できます。
+この記事では、製造での外注を設定する方法を説明します。 外注活動フローの基本設定を行うには、HQUS 法人で既存のデータを使用します。 HQUS 法人のデモ データには、チュートリアルで手順をサポートするために事前に設定された設定パラメータが含まれます。 チュートリアルではさまざまなロールに対する重要な問題点や課題に取り組んでいますが、システム管理者がその作業を完了できます。
 
 ## <a name="demo-scenario"></a>デモのシナリオ
 

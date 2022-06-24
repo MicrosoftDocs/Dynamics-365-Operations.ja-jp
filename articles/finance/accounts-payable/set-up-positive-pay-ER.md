@@ -1,6 +1,6 @@
 ---
 title: 電子レポートを使用した確認後支払ファイルの設定および生成
-description: このトピックでは、電子レポートを使用して確認後支払いを設定する方法について説明します。
+description: この記事では、電子レポートを使用して確認後支払いを設定する方法について説明します。
 author: panolte
 ms.date: 03/20/2022
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc2f17d62b429b599d5ac5f2a521819275d36b64
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 491048c7274ba6bb52e0a4b7a6ea5cd0f5ff4741
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878221"
 ---
 # <a name="set-up-positive-pay-files-by-using-electronic-reporting"></a>電子レポートを使用した確認後支払ファイルの設定および生成
 
-このトピックでは、電子レポートを使用して、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。
+この記事では、電子レポートを使用して、確認後支払を設定し、確認後支払ファイルを生成する方法を説明します。
 
 > [!NOTE] 
 > **銀行の確認後支払ファイルの生成** を使用する前に、最初にエンティティの一覧を更新する必要があります。

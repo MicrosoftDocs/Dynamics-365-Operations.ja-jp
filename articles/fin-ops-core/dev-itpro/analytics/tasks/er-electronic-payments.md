@@ -1,6 +1,6 @@
 ---
 title: 書式設定のコンフィギュレーションを使用する、支払用の ER 生成の電子ドキュメント
-description: このトピックでは、支払い処理用の電子ドキュメントを生成するために新しい電子申告 (ER) 形式のコンフィギュレーションを使用する方法について説明します。
+description: この記事では、支払い処理用の電子ドキュメントを生成するために新しい電子申告 (ER) 形式の構成を使用する方法について説明します。
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05295ff36ffd194b3f50fcdd9d7528c787c80f39104f46f9c51890a75a852735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a79c32372402fcd49f20c855cbfa8d9bcd8ba524
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712667"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864604"
 ---
 # <a name="er-generate-electronic-documents-for-payments-using-a-format-configuration"></a>書式設定のコンフィギュレーションを使用する、支払用の ER 生成の電子ドキュメント
 

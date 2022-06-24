@@ -1,6 +1,6 @@
 ---
 title: B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理
-description: このトピックでは、Microsoft Dynamics 365 Commerce 企業間 (B2B) e  コマース Web サイトと Commerce 本部でビジネス パートナー ユーザーを追加、編集、削除する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce 企業間 (B2B) eコマース Web サイトと Commerce headquarters でビジネス パートナー ユーザーを追加、編集、削除する方法について説明します。
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ef8ae583f18048fc6a36adf38ee7be0fb5b02fcd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4a3d1c7bf7e7ea545590315d9e185fa525b5d5e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686327"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860298"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>B2B eコマース Web サイトでのビジネス パートナー ユーザーの管理
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 企業間 (B2B) e  コマース Web サイトと Commerce 本部でビジネス パートナー ユーザーを追加、編集、削除する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce 企業間 (B2B) eコマース Web サイトと Commerce headquarters でビジネス パートナー ユーザーを追加、編集、削除する方法について説明します。
 
 > [!NOTE]
-> - このドキュメントには、[顧客階層を使用して B2B ビジネス パートナーを管理する](partners-customer-hierarchies.md) トピックが前提条件となります。
+> - このドキュメントには、[顧客階層を使用して B2B ビジネス パートナーを管理する](partners-customer-hierarchies.md) 記事が前提条件となります。
 > - **組織管理 \> ドキュメント管理 \> ドキュメント タイプ** で **ドキュメント タイプ** を開き、コマース本部のドキュメント タイプ エンティティを初期化します。
 
 B2B e コマースの Web サイトでは、組織が取引相手となるために登録する必要があります。 組織が B2B e コマースの Web サイトに登録の詳細を送信すると、登録要求は資格審査プロセスを経由します。 組織が審査つ通貨した場合は、ビジネスパートナーとしてオンボードされます。
@@ -121,7 +121,7 @@ Commerce 本部の取引先とユーザーをオンボードするには、以�
 
 ## <a name="additional-information"></a>追加情報
 
-- このトピックで説明されているジョブはすべて、バッチ形式でスケジュール上で実行するように構成することができます。 取引先が必要に応じてバッチジョブを構成することが意図されています。
+- この記事で説明されているジョブはすべて、バッチ形式でスケジュール上で実行するように構成することができます。 取引先が必要に応じてバッチジョブを構成することが意図されています。
 - 現在、管理者ユーザーとして指定できるユーザー/顧客レコードは1つのみであり、そのロールは Commerce 本部でのみ変更できます。 取引先が複数の管理者を指定したり、B2B の e コマース Web サイトから管理者を変更したりできるような、セルフサービス機能には対応していません。
 - ユーザーに対して支出制限を定義することができますが、注文入力プロセス中に支出制限を実施する機能はまだ実装されていません。
 - B2B e コマース Web サイトでのユーザーエクスペリエンスのビジネス ロジックと検証は、Commerce 本部でユーザーにマッピングされた顧客レコードの構成に基づいています。

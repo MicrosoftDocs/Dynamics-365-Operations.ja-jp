@@ -1,6 +1,6 @@
 ---
 title: 調達カタログの作成
-description: このトピックでは、調達カタログの作成方法を説明します。
+description: この記事では、調達カタログの作成方法を説明します。
 author: GalynaFedorova
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e94f2ef23a3c4020f46138a10fcdf84552451515
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8e35e8c5b5c93fa9aac914f04e7ea658748cb052
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673869"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869549"
 ---
 # <a name="create-a-procurement-catalog"></a>調達カタログの作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、調達カタログの作成方法を説明します。 通常、このタスクを実行するのは、調達担当者です。 さらに従業員が要求を作成する際にカタログを使用する方法も参照できます。 カタログを作成する前に、システム内に調達カテゴリ階層が必要です。 階層は、階層にあるすべての製品とともに、新しいカタログによって継承されます。 調達カテゴリ階層を使用する場合、さらに手順ステップで使用される例にも、このガイドをデモ データ会社 USMF で使用することができます。
+この記事では、調達カタログの作成方法を説明します。 通常、このタスクを実行するのは、調達担当者です。 さらに従業員が要求を作成する際にカタログを使用する方法も参照できます。 カタログを作成する前に、システム内に調達カテゴリ階層が必要です。 階層は、階層にあるすべての製品とともに、新しいカタログによって継承されます。 調達カテゴリ階層を使用する場合、さらに手順ステップで使用される例にも、このガイドをデモ データ会社 USMF で使用することができます。
 
 
 ## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a>調達カテゴリ階層が存在することを確認します。

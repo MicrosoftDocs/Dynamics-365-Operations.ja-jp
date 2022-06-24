@@ -1,6 +1,6 @@
 ---
 title: 製品、注文、出荷、積荷の危険物
-description: このトピックでは、リリースされた製品に対する有害な材料のプロパティを設定する方法、危険品目に対する在庫制限の追加方法、および販売注文、出荷、または負荷に対する危険物質の追加方法について説明します。
+description: この記事では、リリースされた製品に対する危険物プロパティを設定する方法、危険品目に対する在庫制限を設定する方法、および販売注文、出荷、または積荷にる危険物を含める方法について説明します。
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eaae3ce4916465cd57da65eaa217c40f9c3ea88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570708"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860699"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>製品、注文、出荷、積荷の危険物
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、リリースされた製品に対する有害な材料のプロパティを設定する方法、危険品目に対する在庫制限の追加方法、および販売注文、出荷、または負荷に対する危険物質の追加方法について説明します。
+この記事では、リリースされた製品に対する危険物プロパティを設定する方法、危険品目に対する在庫制限を設定する方法、および販売注文、出荷、または積荷にる危険物を含める方法について説明します。
 
 ## <a name="set-hazardous-material-specifications-for-products"></a>製品に対する危険物の仕様の設定
 
@@ -109,11 +109,11 @@ ms.locfileid: "7570708"
 - *&lt;UnitConversion&gt;* は、**素材管理** クイックタブの **単位** フィールドで、積荷明細行の数量に使用される単位と、製品に対して指定された単位間の換算の変換係数です。
 - *&lt;乗数&gt;* は、**素材管理** クイックタブの **乗数** フィールドで製品に対して指定されている乗数です 。
 
-このスコアは、これらの値が指定されている製品を含む各積荷明細行について報告されます。 詳細については、このトピックの後の [危険物を含む出荷](#hazmat-shipments) セクションと [危険物を含む積荷](#hazmat-loads) セクションを参照してください。
+このスコアは、これらの値が指定されている製品を含む各積荷明細行について報告されます。 詳細については、この記事の後の [危険物を含む出荷](#hazmat-shipments) セクションと [危険物を含む積荷](#hazmat-loads) セクションを参照してください。
 
 #### <a name="how-the-hazardous-material-weight-is-calculated"></a>危険物重量の計算方法
 
-**素材管理** クイックタブの **数量制限** オプションが  **はい** に設定されている商品を含む積荷と積荷明細行には、[危険物とその素材を含む 出荷](#hazmat-shipments)について、このトピックの後半で説明する、[危険物の総重量](#hazmat-loads)が表示されます。 この危険物重量は、次の式を使用して計算されます。
+**素材管理** FastTab の **数量制限** オプションが **はい** に設定されている商品を含む積荷と積荷明細行には、この記事の後半の [危険物を含む出荷](#hazmat-shipments) と [危険物を含む積荷](#hazmat-loads) のセクションで説明するように、危険物の重量の合計が表示されます。 この危険物重量は、次の式を使用して計算されます。
 
 危険物重量 = *&lt;LineQty&gt;* × *&lt;ProductWeight&gt;* × *&lt;UnitConversion&gt;*
 

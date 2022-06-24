@@ -1,6 +1,6 @@
 ---
 title: 配賦条件
-description: このトピックでは、主勘定での配賦条件の使用に関する情報を提供します。
+description: この記事では、主勘定での配賦条件の使用に関する情報を提供します。
 author: rachel-profitt
 ms.date: 06/15/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-06-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab3f797505e2c3d7521d3af5c231f5985e6efaa5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d62c0cc79c9d61e0ebb1c2c62a345ad47412d0d2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734898"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859830"
 ---
 # <a name="allocation-terms"></a>配賦条件
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、主勘定での配賦条件の使用に関する情報を提供します。 配賦条件は、複数の勘定科目の組み合わせ全体で金額を配分するために使用されます。 経費、または収益が正しい会計のオブジェクトに付けられることを保証します。
+この記事では、主勘定での配賦条件の使用に関する情報を提供します。 配賦条件は、複数の勘定科目の組み合わせ全体で金額を配分するために使用されます。 経費、または収益が正しい会計のオブジェクトに付けられることを保証します。
 
 主勘定で作成する各配賦条件では、単一ソースの主勘定と財務分析コードの組み合わせから配賦される伝票の割合を定義します。 さらに、金額を配賦する移動先の主勘定と財務分析コードを定義します。 
 

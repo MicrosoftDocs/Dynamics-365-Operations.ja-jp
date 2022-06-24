@@ -1,6 +1,6 @@
 ---
 title: 会社間注文と返品注文
-description: このトピックでは、会社間注文と返品注文について説明します
+description: この記事では、会社間注文と返品注文について説明します
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 1c22c021adce5f892ccb6c2ff8735f9e647e8b81
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 65d0dc6049969ff7d8f84ca4eb3baf486ddad660
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671845"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859030"
 ---
 # <a name="intercompany-orders-and-return-orders"></a>会社間注文と返品注文
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、会社間の発注書、販売注文、返品注文、購買契約書と販売契約書の作成または変更方法を説明しています。
+この記事では、会社間の発注書、販売注文、返品注文、購買契約書と販売契約書の作成または変更方法を説明しています。
 
 ## <a name="about-intercompany-orders"></a>会社間注文について
 

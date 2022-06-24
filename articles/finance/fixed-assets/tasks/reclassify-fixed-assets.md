@@ -1,6 +1,6 @@
 ---
 title: 固定資産の再分類
-description: このトピックでは、資産の再分類プロセスについて説明します。 固定資産を再分類するには、その固定資産を新しい固定資産グループに移動するか、同じグループ内でその固定資産に新しい固定資産番号を割り当てる必要があります。
+description: この記事は、資産の再分類プロセスについて説明します。 固定資産を再分類するには、その固定資産を新しい固定資産グループに移動するか、同じグループ内でその固定資産に新しい固定資産番号を割り当てる必要があります。
 author: moaamer
 ms.date: 05/14/2019
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43ea9e342bf51126aa8857190b91549a364092c7
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 89c046b131afd1728b26465816eee98ee1898e49
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726644"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861390"
 ---
 # <a name="reclassify-fixed-assets"></a>固定資産の再分類
 

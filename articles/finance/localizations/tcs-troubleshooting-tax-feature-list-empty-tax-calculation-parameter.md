@@ -1,6 +1,6 @@
 ---
 title: 税計算パラメーター内の空の税機能リスト
-description: このトピックでは、[税計算パラメータ] ページの税機能の一覧が空白になっている問題のトラブルシューティング方法について説明します。
+description: この記事では、[税計算パラメータ] ページの税機能の一覧が空白になっている問題のトラブルシューティング方法について説明します。
 author: wangchen
 ms.date: 03/04/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: ef8158c2ada18e7d132eebbedef559b3f80ab19f
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 0d9286ec313a270da86181ff80ddfd690a757c9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612292"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869955"
 ---
 # <a name="empty-tax-feature-list-in-tax-calculation-parameters"></a>税計算パラメーター内の空の税機能リスト
 
@@ -46,7 +46,7 @@ Regulatory Configuration Service (RCS) に機能が公開されているので�
 
 ## <a name="resolution"></a>解決策
 
-2 つのテナント ID が異なる場合は、このトピックで説明されている問題が発生します。 同じ場合は、関連しない問題が発生します。 その場合は、Microsoft サポートに連絡することをお勧めします。
+2 つのテナント ID が異なる場合は、この記事で説明されている問題が発生します。 同じ場合は、関連しない問題が発生します。 その場合は、Microsoft サポートに連絡することをお勧めします。
 
 ### <a name="solution-1"></a>ソリューション 1
 

@@ -1,6 +1,6 @@
 ---
 title: オンラインおよびオフラインでの販売時点管理 (POS) の操作
-description: このトピックでは、Dynamics 365 Commerce の販売時点管理 (POS) の詳細情報を提供します。 アプリケーション内で操作を呼び出すことができる場所と、オフラインモードで使用できるかどうかを指定します。
+description: この記事では、Dynamics 365 Commerce の販売時点管理 (POS) の詳細情報について説明します。 アプリケーション内で操作を呼び出すことができる場所と、オフラインモードで使用できるかどうかを指定します。
 author: jblucher
 ms.date: 05/27/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7e4556ad11cbea0cb8fb3c5447116a1b54576e17
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: aa1ca9c057b8a1332cd52f73a24adf2089ebef3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811205"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852722"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>オンラインおよびオフラインでの販売時点管理 (POS) の操作
 

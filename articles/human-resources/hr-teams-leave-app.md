@@ -1,6 +1,6 @@
 ---
 title: Teams での休暇要求の管理
-description: このトピックでは、Microsoft Teams で Dynamics 365 Human Resources アプリを使用して休暇を申請する方法について説明します。
+description: この記事では、Microsoft Teams で Dynamics 365 Human Resources アプリを使用して休暇を申請する方法について説明します。
 author: twheeloc
 ms.date: 12/15/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3ba1ecc97183c147b46ea2396df78fcdce07c27e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4843e5bc0cc97f47e212c0cb4a6ddc4a2032f306
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687983"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858130"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Teams での休暇要求の管理
 

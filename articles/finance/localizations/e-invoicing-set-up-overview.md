@@ -1,6 +1,6 @@
 ---
 title: 電子請求の設定
-description: このトピックでは、電子請求を設定および構成するプロセスの概要を説明します。
+description: この記事では、電子請求を設定および構成するプロセスの概要を説明します。
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 42e617e26e7658fae9ee54cb8a4dee45314fddaa
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 8e2aa89119530a0ba00a8561d94006285d67a71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661695"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883122"
 ---
 # <a name="electronic-invoicing-setup"></a>電子請求の設定
 
 [!include [banner](../includes/banner.md)]
 
-トピックでは、電子請求を設定および構成するプロセスの概要を説明します。 ここで指定した順序で設定手順を完了する必要があります。 ステップが必須であるにもかかわらずスキップした場合、機能が正常に機能しなくなり、後続のステップまたは機能の使用時に複数のエラーが発生します。 
+この記事では、電子請求を設定および構成するプロセスの概要を説明します。 ここで指定した順序で設定手順を完了する必要があります。 ステップが必須であるにもかかわらずスキップした場合、機能が正常に機能しなくなり、後続のステップまたは機能の使用時に複数のエラーが発生します。 
 
 始める前に、すべての主要コンポーネントが正しく設定されていること、Regulatory Configuration Service (RCS) にサインアップして RCS のインスタンスがあること、電子請求アドインが Microsoft Dynamics 365 Finance または Dynamics 365 Supply Chain Management 環境に対してインストールされていることを確認してください。 詳細については、[サインアップして電子請求をインストールする](e-invoicing-install-add-in-microservices-lcs.md) を参照してください。
 

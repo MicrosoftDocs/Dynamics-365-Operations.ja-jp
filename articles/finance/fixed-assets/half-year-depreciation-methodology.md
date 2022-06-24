@@ -1,6 +1,6 @@
 ---
 title: 半期の減価償却方法
-description: このトピックでは、資産の事業供用年度時に 6 か月間の減価償却を計算する半年簡便法を使用して、固定資産の減価償却を計算する方法について説明します。
+description: この記事では、資産の事業供用年度時に 6 か月間の減価償却を計算する半年簡便法を使用して、固定資産の減価償却を計算する方法について説明します。
 author: moaamer
 ms.date: 08/17/2019
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: fb15a293bb8cec1b4faba7bcbd29eb4df7916786
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: fac20f7a31eca7922ed079f9554437f28448620d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720395"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879598"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>半期の減価償却方法
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、半年簡便法を使用して減価償却を計算するために固定資産で使用される方法について説明します。 半年簡便法では、資産の事業供用年度時に 6 か月間の減価償却を計算します。 減価償却方法の詳細については、[減価償却方法](Fixed-asset-depreciation-conventions.md) を参照してください。 
+この記事では、半年簡便法を使用して減価償却を計算するために固定資産で使用される方法について説明します。 半年簡便法では、資産の事業供用年度時に 6 か月間の減価償却を計算します。 減価償却方法の詳細については、[減価償却方法](Fixed-asset-depreciation-conventions.md) を参照してください。 
 
 6 か月間の減価償却方法を使用する場合、システムは取得年度または資産の事業供用開始年度を使用して、その年度から 5 年の減価償却を計算してから、6 か月を追加します。 このプロセスを示すために、価格 50,000 円で取得され、2020 年 4 月に事業供用が開始された資産を考えてみます。 また、資産の耐用年数を 5 年間と仮定します。
 

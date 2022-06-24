@@ -1,6 +1,6 @@
 ---
-title: B2B サイトのコマース カタログの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce 企業間 (B2B) サイトのコマース カタログを作成する方法について説明します。
+title: B2B サイトの Commerce カタログを作成する
+description: この記事では、Microsoft Dynamics 365 Commerce 企業間 (B2B) サイトのコマース カタログを作成する方法について説明します。
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
+ms.openlocfilehash: 7d87b6c64a6038c4518eeec178f9e139ef6f5ae2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782840"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848992"
 ---
-# <a name="create-commerce-catalogs-for-b2b-sites"></a>B2B サイトのコマース カタログの作成
+# <a name="create-commerce-catalogs-for-b2b-sites"></a>B2B サイトの Commerce カタログを作成する
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce 企業間 (B2B) サイトのコマース製品カタログを作成する方法について説明します。 B2B サイトのコマース カタログに関するよくある質問への回答については、[B2B のコマース カタログに関するよく寄せられる質問](catalogs-b2b-sites-FAQ.md) を参照してください。
+この記事では、Microsoft Dynamics 365 Commerce 企業間 (B2B) サイトのコマース製品カタログを作成する方法について説明します。 B2B サイトのコマース カタログに関するよくある質問への回答については、[B2B のコマース カタログに関するよく寄せられる質問](catalogs-b2b-sites-FAQ.md) を参照してください。
 
 > [!NOTE]
-> このトピックは、Dynamics 365 Commerce バージョン 10.0.27 およびそれ以降のリリースに適用されます。
+> この記事は、Dynamics 365 Commerce バージョン 10.0.27 およびそれ以降のリリースに適用されます。
 
 B2B オンライン ストアで提供する製品を識別するためにコマース カタログを使用できます。 カタログを作成すると、製品が提供されるオンライン ストアを識別し、含める製品を追加し、また販売促進詳細を追加して提供製品を強化します。 各 B2B のオンライン ストアに複数のカタログを作成できます。
 

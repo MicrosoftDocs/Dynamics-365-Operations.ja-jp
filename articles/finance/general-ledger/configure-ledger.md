@@ -1,6 +1,6 @@
 ---
-title: 元帳を構成する
-description: このトピックでは、各法人に対して元帳を構成する方法について説明します。 ここでは、通貨の選び方、会計カレンダー、勘定科目表、各法人で使用すべき勘定科目構成などの情報を掲載しています。
+title: 元帳の構成
+description: この記事では、各法人に対して元帳を構成する方法について説明します。 ここでは、通貨の選び方、会計カレンダー、勘定科目表、各法人で使用すべき勘定科目構成などの情報を掲載しています。
 author: kweekley
 ms.date: 09/24/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 38c4364c47915cc0019cb6b3d471d3e60d413bf0
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d15980b05cfac68f2e2441c86b4506c13b38b4d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711551"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864342"
 ---
-# <a name="configure-ledgers"></a>元帳を構成する
+# <a name="configure-ledgers"></a>元帳の構成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、各法人に対して元帳を構成する方法について説明します。 ここでは、通貨の選び方、会計カレンダー、勘定科目表、各法人で使用すべき勘定科目構成などの情報を掲載しています。
+この記事では、各法人に対して元帳を構成する方法について説明します。 ここでは、通貨の選び方、会計カレンダー、勘定科目表、各法人で使用すべき勘定科目構成などの情報を掲載しています。
 
 ## <a name="selecting-the-chart-of-accounts"></a>勘定科目表の設定
 

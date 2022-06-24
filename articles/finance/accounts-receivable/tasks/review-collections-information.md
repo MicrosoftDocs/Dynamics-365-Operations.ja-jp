@@ -1,6 +1,6 @@
 ---
-title: 取立情報の確認
-description: このトピックは、回収情報およびさまざまな設定オプションや回収トランザクションを確認する方法を説明します。
+title: 回収情報の確認
+description: この記事は、回収情報およびさまざまな設定オプションや回収トランザクションを確認する方法を説明します。
 author: ShivamPandey-msft
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4d0cb09eb6ac455d72e9dd051065625475581416
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6a6916690b9571fcfe103506960032e19fe724df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725040"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876214"
 ---
-# <a name="review-collections-information"></a>取立情報の確認
+# <a name="review-collections-information"></a>回収情報の確認
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックは、回収情報およびさまざまな設定オプションや回収トランザクションを確認する方法を説明します。 この手順では、USMF というデモ会社を使用します。
+この記事は、回収情報およびさまざまな設定オプションや回収トランザクションを確認する方法を説明します。 この手順では、USMF というデモ会社を使用します。
 
 ## <a name="create-customer-pools"></a>顧客プールの作成
 1. ナビゲーション ウィンドウで、**モジュール > クレジットおよびコレクション > 設定 > 顧客プール** に移動します。

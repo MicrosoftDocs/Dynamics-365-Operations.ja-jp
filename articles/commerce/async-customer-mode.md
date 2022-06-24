@@ -1,6 +1,6 @@
 ---
 title: 顧客作成モードを非同期化する
-description: このトピックでは、Microsoft Dynamics 365 Commerce の非同期顧客作成モードについて説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の非同期顧客作成モードについて説明します。
 author: gvrmohanreddy
 ms.date: 12/10/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: ca7cceb066d30b7bba82265a3654f3bfb26f57f6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4ca63fe06a804035e976a3432454078c1cca0020
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689105"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880143"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>顧客作成モードを非同期化する
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の非同期顧客作成モードについて説明します。
+この記事では、Microsoft Dynamics 365 Commerce の非同期顧客作成モードについて説明します。
 
 Commerce には、同期と非同期の 2 つの顧客作成モードがあります。 既定では、顧客は同期的に作成されます。 つまり、これらはリアルタイムに Commerce 本社に作成されます。 同期の顧客作成モードは、新しい顧客がチャンネルを越えてすぐに検索可能であることが利点です。 ただし、欠点もあります。 Commerce 本社への [Commerce Data Exchange: リアルタイム サービス](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service)呼び出しを生成するため、多数の顧客作成呼び出しが同時に行われると、パフォーマンスに影響を与える可能性があります。
 

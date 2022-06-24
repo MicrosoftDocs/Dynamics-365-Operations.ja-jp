@@ -1,6 +1,6 @@
 ---
 title: GETENUMVALUEBYNAME ER 機能
-description: このトピックでは、GETENUMVALUEBYNAME 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、GETENUMVALUEBYNAME 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 09/23/2020
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03759852e5ceb13b79b0df4592bdcef76eb0a82865725c00df40b9cc5f786240
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1ebadd72dda296de67ac041957cffb9ab407b7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774440"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858715"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME ER 機能
 
@@ -41,7 +41,7 @@ GETENUMVALUEBYNAME (enumeration data source path, enumeration value text)
 
 - 電子申告 (ER) モデル 列挙型
 - ER 形式列挙型
-- Microsoft Dynamics 365 Finance 列挙型
+- Microsoft Dynamics 365 Finance の列挙型
 
 `enumeration value text`: *文字列*
 

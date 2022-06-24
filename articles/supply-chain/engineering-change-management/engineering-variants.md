@@ -1,6 +1,6 @@
 ---
 title: エンジニアリング製品のバリアントの生成
-description: このトピックでは、エンジニアリング製品のバリアントを生成する方法について説明する
+description: この記事では、エンジニアリング製品のバリアントを生成する方法について説明する
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -10,22 +10,22 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 08feb66dedfa79f5a21a7723a22f3bef883431e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103641"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870756"
 ---
 # <a name="generate-variants-for-engineering-products"></a>エンジニアリング製品のバリアントの生成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、エンジニアリング製品のバリアントを生成する方法について説明します。
+この記事では、エンジニアリング製品のバリアントを生成する方法について説明します。
 
 ## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>エンジニアリング製品のバリアント生成のオン/オフ設定
 
-このトピックで説明する機能は、ご利用のシステムで *エンジニアリング変更管理* と *エンジニアリング製品のバリエーション生成* の両方の機能がオンになっている必要があります。 これらの機能のオン/オフの切り替え方法の詳細については、[エンジニアリング変更管理の概要](product-engineering-overview.md) を参照してください。
+この記事で説明する機能は、ご利用のシステムで *エンジニアリング変更管理* と *エンジニアリング製品のバリエーション生成* の両方の機能がオンになっている必要があります。 これらの機能のオン/オフの切り替え方法の詳細については、[エンジニアリング変更管理の概要](product-engineering-overview.md) を参照してください。
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>エンジニアリング製品の 1 つ以上の新しいバリアントの生成
 

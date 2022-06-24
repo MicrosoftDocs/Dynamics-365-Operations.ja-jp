@@ -1,6 +1,6 @@
 ---
-title: 売上税精算期間の設定
-description: このトピックでは、Dynamics 365 Finance で売上税決済期間を設定する方法について説明します。
+title: 消費税精算期間を設定します
+description: この記事では、Dynamics 365 Finance で売上税決済期間を設定する方法について説明します。
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 3f8514494b5d3534fc236def817df0d58fe80d70
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735817"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846686"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>消費税精算期間を設定します
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、売上税決済期間を設定する方法について説明します。 売上税決済期間は、売上税の報告および支払が必要な間隔についての情報を含みます。 決済プロセスは、特定の日付範囲の決済期間に実行できます。 決済期間に関連付けられたすべての税コードが決済されます。 関連する売上税所轄官庁の設定に応じて、未払税金は仕入先または総勘定元帳勘定に転記されます。
+この記事では、売上税決済期間を設定する方法について説明します。 売上税決済期間は、売上税の報告および支払が必要な間隔についての情報を含みます。 決済プロセスは、特定の日付範囲の決済期間に実行できます。 決済期間に関連付けられたすべての税コードが決済されます。 関連する売上税所轄官庁の設定に応じて、未払税金は仕入先または総勘定元帳勘定に転記されます。
 
 このタスクでは、USMF というデモ会社を使用します。
 

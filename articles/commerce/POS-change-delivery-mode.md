@@ -1,6 +1,6 @@
 ---
-title: POS の荷渡方法の変更
-description: このトピックでは、POS の荷渡方法の変更操作のコンフィギュレーション方法および使用方法について説明します。
+title: POS での配送モードの変更
+description: この記事では、POS の荷渡方法の変更操作のコンフィギュレーション方法および使用方法について説明します。
 author: hhainesms
 ms.date: 03/01/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ef778763b26954057b83df3e963e34008819fd208a55d55e07075853ffce8b35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 583f568164d0de70e22998bf5ded5f4616b00bd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714043"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855824"
 ---
-# <a name="change-mode-of-delivery-in-pos"></a>POS の荷渡方法の変更
+# <a name="change-mode-of-delivery-in-pos"></a>POS での配送モードの変更
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) の「荷渡方法の変更」機能の設定方法および使用方法について説明します。 
+この記事では、販売時点管理 (POS) の「荷渡方法の変更」機能の設定方法および使用方法について説明します。 
 
 Dynamics 365 Commerce バージョン 10.0.10 以降では、POS 画面レイアウトへの **荷渡方法の変更** 操作 (647) の追加が使用可能です。
 

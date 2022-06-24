@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: acfd9be044818ab0f40171c25a8fc9e760173aa8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867930"
 ---
 # <a name="product-dimensions"></a>製品分析コード
 
@@ -47,7 +47,7 @@ ms.locfileid: "7920526"
 
 コンフィギュレーション分析コードの製品分析コードの値は、通常、製品コンフィギュレーターまたは分析コード ベースのコンフィギュレーターを使用して作成されます。 
 
-製品バージョンは、通常、製品のライフサイクル中に製品が進化するに従って、特定のバージョンに対して作成されます。 製品バージョンについては、このトピックで後ほど詳しく説明します。
+製品バージョンは、通常、製品のライフサイクル中に製品が進化するに従って、特定のバージョンに対して作成されます。 製品バージョンについては、この記事で後ほど詳しく説明します。
 
 製品分析コードは **製品分析コード** ページで作成および管理することもできます。以下の場所からアクセス可能です。
 

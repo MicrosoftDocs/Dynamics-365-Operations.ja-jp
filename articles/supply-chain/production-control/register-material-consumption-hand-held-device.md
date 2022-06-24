@@ -1,6 +1,6 @@
 ---
 title: モバイル デバイスを使用して材料消費を登録する
-description: このトピックでは、ハンドヘルド デバイスを使用して生産における原材料消費の登録を可能にするワークフローについて説明します。
+description: この記事では、ハンドヘルド デバイスを使用して生産における原材料消費の登録を可能にするワークフローについて説明します。
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1aeb527255358ecafafcb64185cb9dcb31243d499c533f9c9390d79658534e3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1e1dbc399eb06d1049950bbdd755b479ef275563
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777866"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849245"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>モバイル デバイスを使用して材料消費を登録する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ハンドヘルド デバイスを使用して生産における原材料消費の登録を可能にするワークフローについて説明します。
+この記事では、ハンドヘルド デバイスを使用して生産における原材料消費の登録を可能にするワークフローについて説明します。
 
 ## <a name="introduction"></a>はじめに
 

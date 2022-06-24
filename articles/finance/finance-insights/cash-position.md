@@ -1,6 +1,6 @@
 ---
 title: 現金持高
-description: このトピックでは、キャッシュフロー予測機能が特定の時間における組織のキャッシュ ポジションの予測を行う方法について説明します。 また、異なる期間の予測の表示に使用できるオプションについても説明します。
+description: この記事では、キャッシュフロー予測機能が特定の時間における組織のキャッシュ ポジションの予測を行う方法について説明します。 また、異なる期間の予測の表示に使用できるオプションについても説明します。
 author: ShivamPandey-msft
 ms.date: 12/21/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 1c6d394cb192a88316beb2e8746b558eb8dd184b
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 7581142348d91b3a37cc75cf801e7bfc098cd604
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870252"
 ---
 # <a name="cash-position"></a>現金持高
 

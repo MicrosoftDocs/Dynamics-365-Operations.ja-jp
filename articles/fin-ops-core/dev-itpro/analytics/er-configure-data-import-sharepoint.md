@@ -1,6 +1,6 @@
 ---
 title: SharePoint からのデータ インポートをコンフィギュレーションする
-description: このトピックでは、Microsoft SharePoint からデータをインポートする方法について説明します。
+description: この誇示では、Microsoft SharePoint からデータをインポートする方法について説明します。
 author: NickSelin
 ms.date: 01/05/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 0163ece2f61735073567b32a45d3dc6df8be1864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074769"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864781"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>SharePoint からのデータ インポートをコンフィギュレーションする
 
 [!include[banner](../includes/banner.md)]
 
-電子申告 (ER) フレームワークを使用して受信ファイルからデータをインポートするには、インポート処理をサポートする ER 形式をコンフィギュレーションし、データ ソースとしてその形式を使用する **宛先** タイプのモデル マッピングを実行する必要があります。 データをインポートするには、インポートするファイルに移動する必要があります。 受信ファイルは、ユーザーにより手動で選択できます。 Microsoft SharePoint からのデータのインポートをサポートするための新しい ER 機能を使用すると、このプロセスを無人プロセスとしてコンフィギュレーションできます。 ER コンフィギュレーションを使用して、Microsoft SharePoint フォルダーに格納されているファイルからデータのインポートを実行できます。 このトピックでは、SharePoint からインポートを完了する方法について説明します。 例では、業務データとして仕入先トランザクションを使用します。
+電子申告 (ER) フレームワークを使用して受信ファイルからデータをインポートするには、インポート処理をサポートする ER 形式をコンフィギュレーションし、データ ソースとしてその形式を使用する **宛先** タイプのモデル マッピングを実行する必要があります。 データをインポートするには、インポートするファイルに移動する必要があります。 受信ファイルは、ユーザーにより手動で選択できます。 Microsoft SharePoint からのデータのインポートをサポートするための新しい ER 機能を使用すると、このプロセスを無人プロセスとしてコンフィギュレーションできます。 ER コンフィギュレーションを使用して、Microsoft SharePoint フォルダーに格納されているファイルからデータのインポートを実行できます。 この記事では、SharePoint からインポートを完了する方法について説明します。 例では、業務データとして仕入先トランザクションを使用します。
 
 ## <a name="prerequisites"></a>必要条件
-このトピックの例を完了するには、次のアクセスが必要です:
+この記事に記載の例を完了するには、次のアクセスが必要です:
 
 - 次のロールのいずれかにアクセスします。
 

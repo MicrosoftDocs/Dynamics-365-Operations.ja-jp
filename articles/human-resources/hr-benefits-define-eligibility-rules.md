@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: c5ddb55ef24aff455262769153553b0227be3bdf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4781a00ae63bb2d27df0610a1886cc43e52798f9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691866"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861192"
 ---
 # <a name="define-benefit-eligibility-rules-and-policies"></a>給付金の適格性ルールおよびポリシーの定義
 
@@ -26,7 +26,7 @@ ms.locfileid: "8691866"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、給付金の適格性ルールおよびポリシーを作成する方法、給付金にルールを割り当てる方法について説明します。  
+この記事では、ベネフィットの適格性ルールおよびポリシーを作成する方法、ベネフィットにルールを割り当てる方法について説明します。  
 
 ## <a name="create-benefit-eligibility-policy-rule-type"></a>給付金の適格性ポリシー ルールのタイプを作成する
 

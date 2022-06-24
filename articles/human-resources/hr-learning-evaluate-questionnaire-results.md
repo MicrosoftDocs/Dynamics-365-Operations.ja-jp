@@ -1,6 +1,6 @@
 ---
 title: アンケート結果の表示と評価
-description: このトピックは、回答者が完了したアンケートの結果を表示および評価する方法を説明します。
+description: この記事は、回答者が完了したアンケートの結果を表示および評価する方法を説明します。
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: d783664da957192575bbd2b1f0286243be190715
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 45be2fb7761a3022795a196b140987fcbd732a33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688067"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855144"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>アンケート結果の表示と評価
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688067"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックは、回答者が完了したアンケートの結果を表示および評価する方法を説明します。 
+この記事は、回答者が完了したアンケートの結果を表示および評価する方法を説明します。 
 
 回答者がアンケートを完了すると、次の方法でアンケートの結果を表示して評価できます。
 

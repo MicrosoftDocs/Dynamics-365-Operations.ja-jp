@@ -1,6 +1,6 @@
 ---
 title: 自由書式の請求書を訂正
-description: このトピックでは、自由書式の請求書を転記後に修正し、修正済請求書として再発行する方法を説明します。
+description: この記事では、自由書式の請求書を転記後に修正し、修正済請求書として再発行する方法を説明します。
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fb535b14f4c270f914a427d09027c37b3be7b72
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 9fccd6dbb33efd1556c56a6d92ad191ecfd317fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878192"
 ---
 # <a name="correct-a-free-text-invoice"></a>自由書式の請求書を訂正
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、自由書式の請求書を転記後に修正し、修正済請求書として再発行する方法を説明します。
+この記事では、自由書式の請求書を転記後に修正し、修正済請求書として再発行する方法を説明します。
 
 転記済みの自由書式の請求書を修正するには、転記された自由書式の請求書を開きます。 **請求書** ページで、**キャンセル** を選択してから、**請求書の修正** を選択します。 理由コードを選択し、コメントを追加して、および新しい訂正請求書の日付を選択します。 訂正請求書を変更して、転記できます。 
 

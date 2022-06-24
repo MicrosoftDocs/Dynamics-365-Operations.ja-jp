@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 28caacaafa5ef20a3d8e1ce93851c48bd4af89a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735726"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848197"
 ---
 # <a name="performance-management"></a>パフォーマンス管理
 
@@ -79,7 +79,7 @@ ms.locfileid: "8735726"
 
 完了証明書など、目標にドキュメントを添付する場合は、**業績目標** ページの **添付ファイル** セクションで添付することができます。 ドキュメント ビューアーは、添付ドキュメントの内容をすばやく表示できるように提供されます。 
 
-目標からテンプレートを作成し、テンプレートを使用してテンプレートに基づく新しい目標を作成します。 目標からテンプレートを作成する場合、説明、トピックおよび目標測定が保存されます。 ただし、すべての実際の測定、完了日およびトピックのコメントが削除されます。
+目標からテンプレートを作成し、テンプレートを使用してテンプレートに基づく新しい目標を作成します。 目標からテンプレートを作成する場合、説明、トピックおよび目標測定が保存されます。 ただし、すべての実際の測定、完了日および記事のコメントが削除されます。
 
 ## <a name="performance-reviews"></a>業績の確認
 

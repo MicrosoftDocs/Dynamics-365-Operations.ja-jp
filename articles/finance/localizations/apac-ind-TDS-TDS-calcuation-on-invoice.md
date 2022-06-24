@@ -1,6 +1,6 @@
 ---
 title: 請求書における TDS の計算
-description: このトピックでは、請求書レベルで源泉徴収 (TDS) が計算されるトランザクションについての参考情報を提供します。
+description: この記事では、請求書レベルで源泉徴収 (TDS) が計算されるトランザクションについての参考情報を提供します。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d349ebb9a61bfddb5e859b28e5d264b374609c70
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: efc12e0839fe87e9db435f481ce1fd733c286d6c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724644"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855366"
 ---
 # <a name="tds-calculation-on-invoices"></a>請求書における TDS の計算
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、請求書レベルで源泉徴収 (TDS) が計算されるトランザクションについての参考情報を提供します。
+この記事では、請求書レベルで源泉徴収 (TDS) が計算されるトランザクションについての参考情報を提供します。
 
 | シリアル番号 | トランザクション タイプ                                 | トランザクション金額 | ページ名とパスの選択                                 | 勘定タイプと相手勘定タイプ                         |
 | ------------- | ------------------------------------------------ | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |

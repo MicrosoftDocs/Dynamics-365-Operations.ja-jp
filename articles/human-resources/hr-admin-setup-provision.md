@@ -1,6 +1,6 @@
 ---
 title: Human Resources のプロビジョニング
-description: このトピックでは、Microsoft Dynamics 365 Human Resources の新しい運用環境のプロビジョニングについて説明します。
+description: この記事では、Microsoft Dynamics 365 Human Resources の新しい運用環境のプロビジョニングについて説明します。
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710866"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858246"
 ---
 # <a name="provision-human-resources"></a>Human Resources のプロビジョニング
 
@@ -27,13 +27,13 @@ ms.locfileid: "8710866"
 
 
 
-このトピックでは、Microsoft Dynamics 365 Human Resources の新しい運用環境のプロビジョニングについて説明します。 
+この記事では、Microsoft Dynamics 365 Human Resources の新しい運用環境のプロビジョニングについて説明します。 
 
 ## <a name="prerequisites"></a>必要条件
 
 新しい運用環境のプロビジョニングを始める前に、次の前提条件が満たされている必要があります:
 
-- クラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して Human Resources を購入しました。 Human Resources サービス プランがすでに含まれている既存の Microsoft Dynamics 365 ライセンスがあり、このトピックの手順を完了できない場合は、サポートにお問い合わせください。
+- クラウド ソリューション プロバイダー (CSP) またはエンタープライズ アーキテクチャ (EA) 契約を通して Human Resources を購入しました。 Human Resources サービス プランがすでに含まれている既存の Microsoft Dynamics 365 ライセンスがあり、この記事の手順を完了できない場合は、サポートにお問い合わせください。
 
 - グローバル管理者は [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) にサインインし、新しい Human Resources プロジェクトを作成しました。 
 

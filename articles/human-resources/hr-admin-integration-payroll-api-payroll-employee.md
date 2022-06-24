@@ -1,6 +1,6 @@
 ---
 title: 給与従業員
-description: このトピックでは、Dynamics 365 Human Resources における給与従業員エンティティに対するクエリの詳細および例を示します。
+description: この記事では、Dynamics 365 Human Resources における給与従業員エンティティに対するクエリの詳細および例を示します。
 author: jcart
 ms.date: 08/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e853a8a5730d397f253c8ce3a330794594dfd907
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b07fbc76b997600b2c076c00a63d1f6d865326d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068487"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872213"
 ---
 # <a name="payroll-employee"></a>給与従業員
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068487"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の給与従業員のエンティティについて説明します。
+この記事では、Dynamics 365 Human Resources の給与従業員のエンティティについて説明します。
 
 物理名: mshr_payrollemployeeentity。
 

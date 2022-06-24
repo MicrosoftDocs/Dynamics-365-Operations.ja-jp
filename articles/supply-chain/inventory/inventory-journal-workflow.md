@@ -1,6 +1,6 @@
 ---
 title: 在庫仕訳帳の承認ワークフロー
-description: このトピックでは、さまざまな種類の現物在庫取引の在庫仕訳帳の承認ワークフローを設定方法と使用方法について説明します。 在庫仕訳帳のワークフローは、承認済の在庫仕訳帳のみをトランザクションに転記できるようにするのに役立ちます。
+description: この記事では、さまざまな種類の現物在庫取引の在庫仕訳帳の承認ワークフローを設定して使用する方法について説明します。 在庫仕訳帳のワークフローは、承認済の在庫仕訳帳のみをトランザクションに転記できるようにするのに役立ちます。
 author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778308"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873988"
 ---
 # <a name="inventory-journal-approval-workflows"></a>在庫仕訳帳の承認ワークフロー
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、発行および領収書、在庫移動、部品表 (BOM)、および物理的な在庫の調整など、さまざまなタイプの現物在庫取引で使用する在庫仕訳帳のワークフローを設定して使用する方法について説明します。 在庫仕訳帳のワークフローは、承認済の在庫仕訳帳のみをトランザクションに転記できるようにするのに役立ちます。
+この記事では、払出と受入、在庫移動、部品表 (BOM)、および現物在庫の調整など、さまざまなタイプの現物在庫取引で在庫仕訳帳の承認ワークフローを設定して使用する方法について説明します。 在庫仕訳帳のワークフローは、承認済の在庫仕訳帳のみをトランザクションに転記できるようにするのに役立ちます。
 
 > [!NOTE]
 > 在庫仕訳帳のワークフローは、在庫管理モジュールを使用して記録された取引にのみ適用されます。 倉庫管理モジュールからトリガーされた在庫仕訳帳では動作しません。

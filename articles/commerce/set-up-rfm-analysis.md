@@ -1,6 +1,6 @@
 ---
 title: Recency、頻度、および金融 (RFM) 分析の設定
-description: このトピックでは、顧客の Recency、頻度、および金融 (RFM) 分析の設定方法について説明します。
+description: この記事では、顧客の Recency、頻度、および金融 (RFM) 分析の設定方法について説明します。
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 153759ac6b70235b79c080e934819536c2861371
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765222"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850174"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Recency、頻度、および金融 (RFM) 分析の設定
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、顧客の Recency、頻度、および金融 (RFM) 分析の設定方法について説明します。
+この記事では、顧客の Recency、頻度、および金融 (RFM) 分析の設定方法について説明します。
 
 最新、頻度、金融 (RFM) 分析は、顧客の購買で生成されるデータを評価する際に組織が使用できるマーケティング手段です。 RFM 分析を設定すると、顧客が購買をしたとき、計算された RFM スコアが顧客に割り当てられます。 RFM スコアは、組織が RFM 分析をコンフィギュレーションした方法に基づいた、3 桁の評価か、または合計値です。 ここでは、組織がスコアの 3 桁の評価を使用する場合、評価がどう機能するかを示します。
 

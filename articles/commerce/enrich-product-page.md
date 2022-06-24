@@ -1,6 +1,6 @@
 ---
 title: 製品ページの拡充
-description: このトピックでは、Microsoft Dynamics 365 Commerce で製品ページを拡充する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で製品ページを拡充する方法について説明します。
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0c663498a65832c68b80ea7166da34914ceefb8c70d6a598f3fa648b199ef156
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad58f0324c91c7488e5eb823fa3d0e1758ec63fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777599"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847629"
 ---
 # <a name="enrich-a-product-page"></a>製品ページの拡充
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で製品ページを拡充する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce で製品ページを拡充する方法について説明します。
 
 既定では、サイトは汎用ページを使用して製品データを表示します。 このページには、製品とその販売に必要なコントロールに関する基本的な情報が含まれています。 ただし、特定の製品の追加画像またはテキストを使用して、Commerce Scale Unit から取得した情報を補足することができます。 このプロセスは、製品ページの拡充と呼ばれます。
 

@@ -1,6 +1,6 @@
 ---
 title: 関連会社のデータをファイルへエクスポートする
-description: このトピックでは、Microsoft Dynamics 365 Finance からデータをエクスポートして連結法人に取り込む準備について説明します。
+description: この記事では、Microsoft Dynamics 365 Finance からデータをエクスポートして連結法人にインポートする準備について説明します。
 author: jinniew
 ms.date: 10/09/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 4df59938def317ad6ebc837104e20c4efa05005f
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 7c5334e206d28a5ae1c8097db5356cd1057b7180
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876156"
 ---
 # <a name="export-subsidiary-data-to-files"></a>関連会社のデータをファイルへエクスポートする
 

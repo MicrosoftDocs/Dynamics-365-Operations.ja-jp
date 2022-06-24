@@ -1,6 +1,6 @@
 ---
 title: オーストリア向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
-description: このトピックでは、Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) による、オーストリア向け会計登録サービス統合サンプルの展開ガイドラインを提供します。
+description: この記事では、Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) から、オーストリア向け会計統合サンプルを展開するためのガイドラインを提供します。
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 7cb0e7b665add397b12e1a841b6a2e9565528d6d
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 94fe6817358ae18126a30794fd52fe5eb01a5265
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885440"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>オーストリア向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) を利用した Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) による、オーストリア向け会計登録サービス統合サンプルの展開ガイドラインを提供します。 この会計統合サンプルの詳細については、[オーストリア向け会計登録サービス統合サンプル](emea-aut-fi-sample.md) を参照してください。 
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) に Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) からオーストリア向け会計登録サービス統合サンプルを展開するためのガイドラインを提供します。 この会計統合サンプルの詳細については、[オーストリア向け会計登録サービス統合サンプル](emea-aut-fi-sample.md) を参照してください。 
 
-オーストリア向け会計統合サンプルは Retail SDK の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。 会計統合サンプルは、Commerce Runtime (CRT)、ハードウェア ステーション、販売時点管理 (POS) での拡張で構成されています。 このサンプルを実行するには、CRT、ハードウェア ステーション、および POS プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
+オーストリア向け会計統合サンプルは Retail SDK の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。 会計統合サンプルは、Commerce Runtime (CRT)、ハードウェア ステーション、販売時点管理 (POS) での拡張で構成されています。 このサンプルを実行するには、CRT、ハードウェア ステーション、および POS プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 
 ## <a name="development-environment"></a>開発環境
 

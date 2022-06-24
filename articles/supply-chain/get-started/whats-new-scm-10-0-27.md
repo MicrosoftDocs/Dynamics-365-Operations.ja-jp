@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Management 10.0.27 のプレビュー (2022 年 7 月)
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management 10.0.27 の新機能または変更された機能について説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management 10.0.27 の新機能または変更された機能について説明します。
 author: kamaybac
 ms.date: 04/22/2022
 ms.topic: article
@@ -10,19 +10,19 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 77c79c88b08844bf7e399a762bb9eb9746ffb71a
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: a91f2cdae0fed75f07d6cae86d24aeedfca80e94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8812947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844499"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10027-july-2022"></a>Dynamics 365 Supply Chain Management 10.0.27 のプレビュー (2022 年 7 月)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management プレビュー バージョン 10.0.27 の新機能または変更された機能について一覧表示します。 このバージョンのビルド番号は 10.0.1227 で、次のスケジュールで使用できます。
+この記事では、Microsoft Dynamics 365 Supply Chain Management プレビュー バージョン 10.0.27 の新機能または変更された機能について一覧表示します。 このバージョンのビルド番号は 10.0.1227 で、次のスケジュールで使用できます。
 
 - **リリースのプレビュー:** 2022 年 4 月
 - **リリースの一般提供 (手動更新):** 2022 年 6 月
@@ -30,7 +30,7 @@ ms.locfileid: "8812947"
 
 ## <a name="features-included-in-this-release"></a>このリリースに含まれる機能
 
-次の表に、このリリースに含まれる機能の一覧を示します。 このトピックが最初に公開された後に、ビルドに追加された機能を含めるために、このトピックを更新することがあります。
+次の表に、このリリースに含まれる機能の一覧を示します。 この記事が最初に公開された後に、ビルドに追加された機能を含めるために、この記事を更新することがあります。
 
 | 機能領域 | フィーチャー | 詳細 |  に  によって有効化 |
 |---|---|---|---|
@@ -56,9 +56,9 @@ ms.locfileid: "8812947"
 
 ## <a name="new-and-updated-documentation-resources"></a>新しいドキュメント リソースおよび更新されたドキュメント リソース
 
-次のヘルプ トピックを最近追加、または大幅に更新しました。 これらのトピックは、前のセクションに示したように、このリリースで追加された新しい機能に関連するとは限りません。 ただし、これらの機能は既存の機能をさらに活用するために役立つ場合があります。
+次のヘルプ記事を最近追加、または大幅に更新しました。 これらの記事は、前のセクションに示したように、このリリースで追加された新しい機能に関連するとは限りません。 ただし、これらの機能は既存の機能をさらに活用するために役立つ場合があります。
 
-| 機能領域 | 新規または更新されたトピック |
+| 機能領域 | 新規または更新された記事 |
 |---|---|
 | 原価管理 | [現物価格とマーキングを含めた加重平均](../cost-management/weighted-average-date.md) |
 | 配分済みハイブリッド トポロジ | [分散ハイブリッド トポロジのスケール ユニットを試す](../cloud-edge/cloud-edge-try-out.md) |
@@ -83,12 +83,12 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.27 には、Platform updates
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>削除済みおよび非推奨の Supply Chain Management 機能
 
-[Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)トピックは、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
+[Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)の記事は、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)の記事に発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

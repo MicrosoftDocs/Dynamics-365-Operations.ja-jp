@@ -1,6 +1,6 @@
 ---
 title: 正確な価格と割引の計算を遅らせてパフォーマンスを向上させる
-description: このトピックでは、Microsoft Dynamics 365 Commerce の販売時点管理 (POS) およびコールセンターで利用できる遅延価格計算機能について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の販売時点管理 (POS) およびコール センターで利用できる遅延価格計算機能について説明します。
 author: boycezhu
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: boycez
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 8c4264c3a4c71e6aab0e1ef8d7d8cfffad065a46
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 6926c288a91dbe66b6ffc2e6c06f866d3ebd7652
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488366"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845900"
 ---
 # <a name="delay-exact-price-and-discount-calculation-for-improved-performance"></a>正確な価格と割引の計算を遅らせてパフォーマンスを向上させる
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の販売時点管理 (POS) およびコールセンターで利用できる遅延価格計算機能について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の販売時点管理 (POS) およびコール センターで利用できる遅延価格計算機能について説明します。
 
 Dynamics 365 Commerce は、注文書や見積書の複数の販売明細行を組み合わせて適用される複数行割引の作成に対応しています。 これらの割引には、組み合わせ割引、しきい値割引、数量割引があります。
 

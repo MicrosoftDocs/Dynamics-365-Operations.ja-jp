@@ -1,6 +1,6 @@
 ---
 title: 高度なフィルター処理とクエリ構文
-description: このトピックでは、高度なフィルター/並べ替えダイアログのためのフィルター処理とクエリ オプションについて、さらには [フィルター] ペインまたはグリッド列見出しフィルターの一致演算子について説明します。
+description: この記事では、高度なフィルター/並べ替えダイアログのためのフィルター処理とクエリ オプションについて、さらにはフィルター ペインまたはグリッド列見出しフィルターの一致演算子について説明します。
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070012"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856921"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>高度なフィルター処理とクエリ構文
 
@@ -29,7 +29,7 @@ ms.locfileid: "8070012"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-このトピックでは、フィルター処理とクエリ オプションについて説明します。フィルター ウィンドウあるいはグリッド列ヘッダーのフィルター処理においてフィルター/並べ替えの編集ダイアログあるいは **一致** 演算子を使う時に利用できます。
+この記事では、フィルター処理とクエリ オプションについて説明します。フィルター ウィンドウあるいはグリッド列ヘッダーのフィルター処理においてフィルター/並べ替えの編集ダイアログあるいは **matches (一致)** 演算子を使う時に利用できます。
 
 ## <a name="advanced-query-syntax"></a>高度なクエリ構文
 

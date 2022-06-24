@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
-ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
+ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "8756966"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876328"
 ---
 # <a name="create-a-customer-invoice"></a>顧客請求書の作成
 
@@ -32,13 +32,10 @@ ms.locfileid: "8756966"
 
 詳細については、以下を参照してください。
 
-[自由書式の請求書の作成](../accounts-receivable/create-free-text-invoice-new.md)
-
-[自由書式の請求書テンプレートの作成](../accounts-receivable/create-free-text-invoice-template-new.md)
-
-[自由書式の請求書のテンプレートを顧客へ割り当てる](tasks/assign-free-text-invoice-template-customer.md)
-
-[定期的な自由書式の請求書の生成と転記](tasks/post-recurring-free-text-invoices.md)
+[自由形式請求書の作成](../accounts-receivable/create-free-text-invoice-new.md)
+[自由形式請求書テンプレートの作成](../accounts-receivable/create-free-text-invoice-template-new.md)
+[顧客への自由形式請求書テンプレートの割り当て](tasks/assign-free-text-invoice-template-customer.md)
+[定期的な自由形式請求書の生成および転記](tasks/post-recurring-free-text-invoices.md)
 
 
 **見積もり送り状** は、請求書が転記される前に実際の請求金額の見積として準備される請求書です。 販売注文の顧客請求書または自由書式の請求書のいずれかに **見積もり送り状** を印刷できます。 
@@ -91,8 +88,8 @@ ms.locfileid: "8756966"
  - 転記時にサイトごとに 1 つの請求書を作成するには、**請求サイトに基づいて分割** オプションを選択します。 
  - 転記時に販売注文明細行の配送先住所ごとに 1 つの請求書を作成するには、**請求書の配送情報に基づいて分割** オプションを選択します。 
 
-## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>価格のない販売注文の明細行に対して収益勘定に転記する
-価格のない販売注文明細行について、**一般会計** の **収益** 勘定を更新するオプションがあります。 この情報を設定、または表示するには、**売掛金勘定パラメーター** ページの **元帳と売上税** タブにある、**ゼロ価格の販売注文請求書明細行に対して収益勘定に転記** パラメーターに移動します。 (**売掛金勘定 > 設定 > 売掛金勘定パラメーター**)。 **はい** を選択すると、価格のない売上注文の請求書行の **収益** 勘定が更新されます。 収益勘定は、**在庫転記** パラメーター ページの **販売注文** 勘定定義タブで定義します。このオプションが選択されていない場合、価格情報がない行は **収益** 勘定に転記されません。
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>価格も原価もない販売注文の明細行に対して収益勘定に転記する
+価格も原価もない販売注文明細行について、**一般会計** の **収益** 勘定を更新するオプションがあります。 この情報を設定、または表示するには、**売掛金勘定パラメーター** ページの **元帳と売上税** タブにある、**ゼロ価格、ゼロ原価の販売注文請求書明細行に対して収益勘定に転記** パラメーターに移動します。 (**売掛金勘定 > 設定 > 売掛金勘定パラメーター**)。 **はい** を選択すると、価格と原価のない売上注文の請求書行の **収益** 勘定が更新されます。 このオプションが選択されている場合、伝票には、**顧客残高** および **収益** の転記タイプに対する 0.00 エントリが含まれている必要があります。 収益勘定は、**在庫転記** パラメーター ページの **販売注文** 勘定定義タブで定義します。このオプションが選択されていない場合、価格や原価の情報がない行は **収益** 勘定に転記されません。 代わりに、**顧客残高** 転記タイプの 0.00 エントリ が伝票に含まれる必要があります。
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>転記動作を変更する追加設定
 次のフィールドで転記プロセスの動作を変更します。

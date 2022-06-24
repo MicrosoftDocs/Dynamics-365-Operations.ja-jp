@@ -1,6 +1,6 @@
 ---
 title: 委託販売の設定
-description: このトピックでは、入庫委託販売在庫プロセスを使用する方法を説明します。
+description: この記事では、入庫委託販売在庫プロセスを使用する方法を説明します。
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4a1b96d18048a1ae6e380374f32d2bfa2270ae24
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 66215811c8c48412fb137967107abca3774f5f0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577723"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872039"
 ---
 # <a name="set-up-consignment"></a>委託販売の設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、入庫委託販売在庫プロセスを使用する方法を説明します。
+この記事では、入庫委託販売在庫プロセスを使用する方法を説明します。
 
-委託販売在庫は、仕入先によって所有されているが、サイトで保管されている在庫です。 在庫を消費するか、または使用する準備ができたら、在庫の所有権を引き継ぎます。 このトピックでは、総勘定元帳トランザクションを作成せずに仕入先所有の手持在庫を現物入庫する方法、現物引当できる仕入先所有の在庫の生産プロセスの開始方法、 および生産注文処理の一部として消費を処理するために原材料の所有権を変更する方法について説明します。 また、仕入先が仕入先コラボレーション インターフェイスを使用して在庫の消費を監視する方法についても説明されます。
+委託販売在庫は、仕入先によって所有されているが、サイトで保管されている在庫です。 在庫を消費するか、または使用する準備ができたら、在庫の所有権を引き継ぎます。 この記事では、総勘定元帳トランザクションを作成せずに仕入先所有の手持在庫を現物入庫する方法、仕入先所有の在庫を現物引当できる生産プロセスを開始する方法に関する情報が含まれています。 および生産注文処理の一部として消費を処理するために原材料の所有権を変更する方法について説明します。 また、仕入先が仕入先コラボレーション インターフェイスを使用して在庫の消費を監視する方法についても説明されます。
 
 ## <a name="overview-of-the-consignment-process"></a>委託販売プロセスの概要
 

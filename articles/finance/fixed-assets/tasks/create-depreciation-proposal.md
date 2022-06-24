@@ -1,6 +1,6 @@
 ---
 title: 償却提案の作成
-description: このトピックでは、減価償却のバッチの提案の働きと、固定資産に対して減価償却を提案する方法について説明します。
+description: この記事では、減価償却のバッチの提案の働きと、固定資産に対して減価償却を提案する方法について説明します。
 author: abruer
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db747bf8e3343082feda204fc56d9608313a280e
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: a1f39a1412c6f96fe0a8261602a88a6a3c3cd6b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716398"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858499"
 ---
 # <a name="create-a-depreciation-proposal"></a>償却提案の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、減価償却のバッチの提案の働きと、固定資産に対して減価償却を提案する方法について説明します。 このタスクでは USMF のデモ会社および経理担当者のロールを使用します。
+この記事では、減価償却のバッチの提案の働きと、固定資産に対して減価償却を提案する方法について説明します。 このタスクでは USMF のデモ会社および経理担当者のロールを使用します。
 
 
 ## <a name="create-a-depreciation-proposal"></a>償却提案の作成

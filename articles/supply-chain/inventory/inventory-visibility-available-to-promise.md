@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility の手持変更スケジュールと納期回答可能在庫
-description: このトピックでは、将来の手持変更をスケジュールし、納期回答可能在庫 (ATP) 数量を計算する方法について説明します。
+description: この記事では、将来の手持変更をスケジュールし、納期回答可能在庫 (ATP) 数量を計算する方法について説明します。
 author: yufeihuang
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
-ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
+ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "8763256"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856196"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Inventory Visibility の手持変更スケジュールと納期回答可能在庫
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、*手持在庫変更スケジュール* 機能を設定して、将来の手持在庫変更をスケジュールし、納期回答可能在庫 (ATP) 数量を計算する方法について説明します。 ATP は、使用可能な品目の数量で、次の期間に顧客に約束できます。 この計算を使用すると、注文のフルフィルメント機能を大幅に強化できます。
+この記事では、*手持在庫変更スケジュール* 機能を設定して、将来の手持在庫変更をスケジュールし、納期回答可能在庫 (ATP) 数量を計算する方法について説明します。 ATP は、使用可能な品目の数量で、次の期間に顧客に約束できます。 この計算を使用すると、注文のフルフィルメント機能を大幅に強化できます。
 
 製造元、小売企業、販売者の多くは、現在の手持在庫状況を把握するだけでなく、他の情報も必要です。 将来の使用可能性に、簡単にすべてアクセスできる必要があります。 この将来の使用可能性には、将来の供給、需要、および ATP が含まれます。
 

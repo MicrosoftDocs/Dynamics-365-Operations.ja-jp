@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Management 10.0.15 (2021 年 1 月) の新機能および変更された機能
-description: このトピックでは、Dynamics 365 Supply Chain Management 10.0.15 の新機能または変更された機能について説明します。
+description: この記事では、Dynamics 365 Supply Chain Management 10.0.15 の新機能および変更された機能について説明します。
 author: kamaybac
 ms.date: 10/13/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 18408e64bd06db2e05038d14f284b799b6c19e68
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 3141cea22b6ab80f36f5562fd450b0cd547d235d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471815"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879137"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Dynamics 365 Supply Chain Management 10.0.15 (2021 年 1 月) の新機能および変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.15 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.644 のビルド番号が含まれており、次のように使用できます。
+この記事では、Microsoft Dynamics 365 Supply Chain Management バージョン 10.0.15 の新機能または変更された機能について一覧表示します。 このバージョンには 10.0.644 のビルド番号が含まれており、次のように使用できます。
 
 - **リリースのプレビュー:** 2020 年 10 月
 - **リリースの一般提供 (セルフ更新):** 2020 年 11 月
@@ -57,9 +57,9 @@ ms.locfileid: "7471815"
 
 ## <a name="additional-resources"></a>追加リソース
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Finance and Operations アプリのプラットフォーム更新プログラム
+### <a name="platform-updates-for-finance-and-operations-apps"></a>財務と運用アプリのプラットフォーム更新プログラム
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.15 には、Platform updates が含まれています。 詳細については、[Finance and Operations アプリのバージョン 10.0.15 (2020 年 10 月) のプラットフォーム アップデート](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md) を参照してください。
+Microsoft Dynamics 365 Supply Chain Management 10.0.15 には、Platform updates が含まれています。 詳細については、[財務と運用アプリのバージョン 10.0.15 のプラットフォーム更新プログラム (2020 年 10 月)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md) を参照してください。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -73,12 +73,12 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.15 には、Platform updates
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>削除済みおよび非推奨の Supply Chain Management 機能
 
-[Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)トピックは、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
+[Dynamics 365 Supply Chain Management の削除済みおよび非推奨の機能](removed-deprecated-features-scm-updates.md)の記事は、Supply Chain Management で削除または非推奨となる予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
 
-製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)のトピックに発表されます。
+製品から機能が削除される前に、非推奨の通知が削除の 12 ヶ月前に [Dynamics 365 Supply Chain Management の削除済みまたは非推奨の機能](removed-deprecated-features-scm-updates.md)の記事に発表されます。
 
 コンパイル時に影響する重大な変更が、サンドボックス環境および実稼働環境と互換性のあるバイナリの場合、廃止時間は 12 か月以内になります。 通常、これらはコンパイラに加える必要がある機能の更新です。
 

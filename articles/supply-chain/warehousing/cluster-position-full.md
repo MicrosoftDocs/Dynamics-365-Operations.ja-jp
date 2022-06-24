@@ -1,6 +1,6 @@
 ---
 title: クラスター位置フル
-description: このトピックでは、クラスター位置フル機能について説明します。 この機能により、クラスター ピッキングが使用されているときに、コンテナやトートの容量制限においてより大きな誤差を許容できるため、作業の中断に関するルールをより厳格に適用することができます。
+description: この記事では、クラスター位置フル機能について説明します。 この機能により、クラスター ピッキングが使用されているときに、コンテナやトートの容量制限においてより大きな誤差を許容できるため、作業の中断に関するルールをより厳格に適用することができます。
 author: Mirzaab
 ms.date: 08/25/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4d46933b7c60317234b8e39cd6dfd63d383de860
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102841"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857144"
 ---
 # <a name="cluster-position-full"></a>クラスター位置フル
 
@@ -30,7 +30,7 @@ ms.locfileid: "8102841"
 
 ## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>クラスター ポジション フル機能のオン/オフ
 
-このトピックで説明する機能を使用するには、ご利用システムで *クラスター ポジション フル* 機能がオンになっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *クラスター ポジション フル* 機能を検索して、この機能のオン/オフを切り替えることができます。
+この記事で説明する機能を使用するには、ご利用システムで *クラスター ポジション フル* 機能がオンになっている必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *クラスター ポジション フル* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="setup"></a>設定
 

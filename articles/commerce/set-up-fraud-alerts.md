@@ -1,6 +1,6 @@
 ---
 title: コール センターの詐欺警告の設定および使用
-description: このトピックでは、注文が処理されるとき、詐欺の可能性ある情報を顧客サービス担当者に警告するルールを設定する方法について説明します。 疑わしい注文を保留にするために使用される特殊なコードを自動または手動で定義できます。
+description: この記事では、注文が処理されるとき、詐欺の可能性ある情報を顧客サービス担当者に警告するルールを設定する方法について説明します。 疑わしい注文を保留にするために使用される特殊なコードを自動または手動で定義できます。
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 212afd594453d3594fdaef9442a7809e4cafbd07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763671"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885351"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>コール センターの詐欺警告の設定および使用
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、さらなる確認のために詐欺の可能性がある販売注文を保留にする基準とルールを設定する方法について説明します。 不正チェック機能を使用して、販売注文の情報の有効性を決定します。 販売注文の情報が疑わしいように見える場合、組織の不正基準とルールに基づいて、さらなる確認のために保留にすることができます。 この場合、保留がクリアされるまで注文は処理を進めるために倉庫にリリースできません。
+この記事では、さらなる確認のために詐欺の可能性がある販売注文を保留にする基準とルールを設定する方法について説明します。 不正チェック機能を使用して、販売注文の情報の有効性を決定します。 販売注文の情報が疑わしいように見える場合、組織の不正基準とルールに基づいて、さらなる確認のために保留にすることができます。 この場合、保留がクリアされるまで注文は処理を進めるために倉庫にリリースできません。
 
 > [!NOTE]
 > この機能は、コマース コール センター チャネルの販売注文処理にのみ使用できます。

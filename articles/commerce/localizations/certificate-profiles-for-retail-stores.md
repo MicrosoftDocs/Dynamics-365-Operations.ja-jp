@@ -1,6 +1,6 @@
 ---
 title: 小売店舗のユーザー定義の証明書プロファイル
-description: このトピックでは、小売店舗で証明書を使用する方法についての概要を説明します。
+description: この記事では、小売店舗で証明書を使用する方法についての概要を説明します。
 author: josaw
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b40c74efa56a6e18af907e000554b9ab269bb31
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719933"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873032"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>小売店舗のユーザー定義の証明書プロファイル
 
@@ -28,7 +28,7 @@ ms.locfileid: "6719933"
 
 ## <a name="overview"></a>概要
 
-このトピックでは、Microsoft Dynamics 365 Commerce で利用できる証明書プロファイルの概要を提供します。 この機能は、ローカル証明書のサポートを追加することによって[小売チャネルのシークレットを管理](../dev-itpro/manage-secrets.md) の機能を拡張します。
+この記事では、Microsoft Dynamics 365 Commerce で利用できる証明書プロファイルの概要を提供します。 この機能は、ローカル証明書のサポートを追加することによって[小売チャネルのシークレットを管理](../dev-itpro/manage-secrets.md) の機能を拡張します。
 
 販売時点管理 (POS) がオフライン モードで実行されている間、キー コンテナーに保存されている証明書にはアクセスできません。 代わりにローカル証明書を使用する必要があります。 次の機能がサポートされています。
 

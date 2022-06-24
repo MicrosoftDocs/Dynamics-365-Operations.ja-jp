@@ -1,6 +1,6 @@
 ---
 title: しきい値制限と例外しきい値制限
-description: このトピックでは、源泉徴収税 (TDS) のしきい値と例外制限について説明します。
+description: この記事では、源泉徴収税 (TDS) のしきい値と例外制限について説明します。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7fa7d871fdf25f29b003a68cacd9fc0d487dce5b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aceebad08b5454b64059e7ef374b9634bad35c37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726019"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877939"
 ---
 # <a name="threshold-limit-and-exception-threshold-limit"></a>しきい値制限と例外しきい値制限
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、源泉徴収税 (TDS) のしきい値と例外制限について説明します。 請求書および支払の TDS は、**源泉徴収税コンポーネント** ページで TDS 税コンポーネントに対して定義されたしきい値制限と例外しきい値制限を考慮して常に計算されます。 TDS 税コンポーネントは、TDS 税グループに含まれる TDS 税コードに関連付けられます。 TDS 税グループは仕入先と顧客に関連付けられ、請求書レベルまたは支払レベルで TDS を計算します。
+この記事では、源泉徴収税 (TDS) のしきい値と例外制限について説明します。 請求書および支払の TDS は、**源泉徴収税コンポーネント** ページで TDS 税コンポーネントに対して定義されたしきい値制限と例外しきい値制限を考慮して常に計算されます。 TDS 税コンポーネントは、TDS 税グループに含まれる TDS 税コードに関連付けられます。 TDS 税グループは仕入先と顧客に関連付けられ、請求書レベルまたは支払レベルで TDS を計算します。
 
 TDS が計算されるのは、仕入先の特定の TDS グループで転記されたトランザクションまたは累積トランザクションの金額が、**源泉徴収税コンポーネント** ページで指定されたしきい値制限を超えた場合です。 TDS は、累積トランザクション金額が指定されたしきい値制限を超えるまで計算されません。
 

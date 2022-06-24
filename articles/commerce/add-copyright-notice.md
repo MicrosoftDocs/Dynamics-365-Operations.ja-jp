@@ -1,6 +1,6 @@
 ---
 title: 著作権に関する注意事項の追加
-description: このトピックでは、E コマース Web サイトに著作権に関する注意事項を追加する方法について説明します。
+description: この記事では、E コマース Web サイトに著作権に関する注意事項を追加する方法について説明します。
 author: psimolin
 ms.date: 10/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4a9a7fed4393f9c35b0bdc765fe7d0723c193f89
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: a1e394b9a582b48c44bbec26ef42a90d50918f87
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964759"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851220"
 ---
 # <a name="add-a-copyright-notice"></a>著作権に関する注意事項の追加
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、E コマース Web サイトに著作権に関する注意事項を追加する方法について説明します。
+この記事では、E コマース Web サイトに著作権に関する注意事項を追加する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 

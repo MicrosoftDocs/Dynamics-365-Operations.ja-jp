@@ -1,6 +1,6 @@
 ---
 title: テンプレートの使用
-description: このトピックでは、Microsoft Dynamics 365 Commerce でのテンプレートの使用方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce でのテンプレートの使用方法について説明します。
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: c234ddb0cdc212bead4f722f7881fbf21d608675
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881582"
 ---
 # <a name="work-with-templates"></a>テンプレートの使用
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce でのテンプレートの使用方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce でのテンプレートの使用方法について説明します。
 
 [テンプレートとレイアウトの概要](templates-layouts-overview.md)で説明したように、テンプレートは、下流の作成者が使用できる一連のオプションを定義します。 テンプレートは企業の Web 作成チームにとってさまざまな理由から役に立ちます。適切なテンプレートを使用することで、次の目標を達成できます。
 

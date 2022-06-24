@@ -1,6 +1,6 @@
 ---
 title: 出庫ワークロードの視覚化
-description: このトピックは、ワークロードの視覚化に関する情報を提供します。 この機能により、倉庫管理者と監修者は、現在の作業の進捗状況と残っている金額を監視するために使用できるカスタム ワークロード グラフを作成できるようになります。 倉庫管理者は、複数のビューを作成し、必要に応じて自動更新を設定できます。
+description: この記事は、ワークロードの視覚化に関する情報を提供します。 この機能により、倉庫管理者と監修者は、現在の作業の進捗状況と残っている金額を監視するために使用できるカスタム ワークロード グラフを作成できるようになります。 倉庫管理者は、複数のビューを作成し、必要に応じて自動更新を設定できます。
 author: Mirzaab
 ms.date: 08/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db6ceb40279e53e9c4751a7ceb3db895e889a7c0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0e5a2cd2aa458217ff212d45c0dd13c9d0623bd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102891"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851336"
 ---
 # <a name="outbound-workload-visualization"></a>出庫ワークロードの視覚化
 

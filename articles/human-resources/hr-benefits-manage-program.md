@@ -1,6 +1,6 @@
 ---
 title: 給付金プログラムの定義および管理
-description: 人事管理は、給付金、控除、および組織が作業者に対して提供または処理する作業者の報酬プランを設定および管理するのに使用できる一連のツールを提供します。 このトピックは、給付金を管理および設定する方法に関する情報を提供します。
+description: 人事管理は、給付金、控除、および組織が作業者に対して提供または処理する作業者の報酬プランを設定および管理するのに使用できる一連のツールを提供します。 この記事は、設定と給付金を管理する方法の情報を提供します。
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 54500cad7fe2b48aa4e3b2057f4edcfcf244959e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 08b80f4f90ce6b4a286120cd6329a45a4ebd3f71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694938"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877804"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>福利厚生プログラムの定義および管理
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694938"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Human Resources は、組織が従業員に対して提供または処理する給付金、控除、および従業員の報酬プランを設定および管理するために使用できる一連のツールを提供します。 このトピックは、給付金を管理および設定する方法に関する情報を提供します。
+Human Resources は、組織が従業員に対して提供または処理する給付金、控除、および従業員の報酬プランを設定および管理するために使用できる一連のツールを提供します。 この記事は、設定と給付金を管理する方法の情報を提供します。
 
 ## <a name="benefit-setup"></a>Benefit の設定
 

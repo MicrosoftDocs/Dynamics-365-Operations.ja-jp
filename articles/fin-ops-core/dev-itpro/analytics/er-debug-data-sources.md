@@ -1,6 +1,6 @@
 ---
 title: 実行された ER 形式のデータソースをデバッグして、データ フローや変換を解析する
-description: このトピックでは、構成されたデータ フローと変換をよりよく理解するために、実行された ER 形式のデータ ソースをデバッグする方法について説明します。
+description: この記事では、構成されたデータ フローと変換をよりよく理解するために、実行された ER 形式のデータ ソースをデバッグする方法について説明します。
 author: NickSelin
 ms.date: 04/22/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 6fca177093caf42ad27b58eaa97e3f6997289eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323764"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884231"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>実行された ER 形式のデータソースをデバッグして、データ フローや変換を解析する
 
@@ -34,7 +34,7 @@ ms.locfileid: "8323764"
 
 データソースのデバッグ機能を有効にするには、ER ユーザー パラメーターで、**形式実行時にデータのデバッグを有効にする** オプションを **はい** に設定します。 その後、ER 形式を実行してアウトバウンド ドキュメントを生成する際に、データソースのデバッグを開始できます。 **デバッグを開始する** オプションを使用して、[ER オペレーション デザイナー](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document) で構成された ER 形式のデータソースのデバッグを開始することもできます。
 
-このトピックでは、実行された ER 形式のデータソース デバッグを開始するためのガイドラインを示します。 ここでは、データフローとデータ変換を理解する上で、どのような情報が役立つのかを解説しています。 このトピックでは、仕入先支払処理の業務プロセスを例として使用します。
+この記事では、実行された ER 形式のデータソース デバッグを開始するためのガイドラインを示します。 ここでは、データフローとデータ変換を理解する上で、どのような情報が役立つのかを解説しています。 この記事では、仕入先支払処理の業務プロセスを例として使用します。
 
 ## <a name="limitations"></a>制限
 
@@ -49,7 +49,7 @@ ms.locfileid: "8323764"
 
 ## <a name="prerequisites"></a>必要条件
 
-- このトピックの例を完了するには、次のいずれかの [ロール](../sysadmin/tasks/assign-users-security-roles.md) にアクセスできる必要があります：
+- この記事の例を完了するには、次のいずれかの [ロール](../sysadmin/tasks/assign-users-security-roles.md) にアクセスできる必要があります：
 
     - 電子申告開発者
     - 電子申告機能コンサルタント
@@ -57,12 +57,12 @@ ms.locfileid: "8323764"
 
 - この会社は、**DEMF** に設定する必要があります。
 
-- このトピックの [付録1](#appendix1) の手順に従って、仕入先支払の処理に必要となる Microsoft ER ソリューションのコンポーネントをダウンロードします。
-- 本トピックの [付録2](#appendix2) に記載の手順に従って、ダウンロードした ER ソリューションを使用して、ベンダーの支払い処理のための買掛金を準備してください。
+- この記事の [付録1](#appendix1) の手順に従って、仕入先支払の処理に必要となる Microsoft ER ソリューションのコンポーネントをダウンロードします。
+- この記事の [付録2](#appendix2) に記載の手順に従って、ダウンロードした ER ソリューションを使用して、ベンダーの支払い処理のための買掛金を準備してください。
 
 ## <a name="process-a-vendor-payment-to-get-a-payment-file"></a>仕入先の支払いを処理して支払いファイルを取得する
 
-1. 本トピックの [付録3](#appendix3) に記載の手順に従って、仕入先の支払いを処理します。
+1. この記事の [付録3](#appendix3) に記載の手順に従って、仕入先の支払いを処理します。
 
     ![仕入先の支払い処理中。](./media/er-data-debugger-process-payment.png)
 
@@ -89,7 +89,7 @@ ms.locfileid: "8323764"
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>仕入先支払の処理のデバッグ
 
-1. 本トピックの [付録3](#appendix3) に記載の手順に従って、仕入先の支払いを処理します。
+1. この記事の [付録3](#appendix3) に記載の手順に従って、仕入先の支払いを処理します。
 2. メッセージ ボックスで、**はい** を選択して、仕支入の支払い処理を中断し、代わりに **デバッグ データソース** のページでデータ ソースのデバッグを開始することを確認します。
 
     ![確認用メッセージボックス。](./media/er-data-debugger-start-debugging.png)

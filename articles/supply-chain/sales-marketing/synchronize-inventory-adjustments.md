@@ -1,6 +1,6 @@
 ---
 title: Field Service から Supply Chain Management への在庫振替および在庫調整の同期
-description: このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に在庫調整と振替を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+description: この記事では、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に在庫調整と振替を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 author: Henrikan
 ms.date: 04/30/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: cfa7f617cbc4cd75d669972b35f8d33ba3cbcc56
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e59e50a4f54bac749b3d860404a3ecd444d99a89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061682"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854097"
 ---
 # <a name="synchronize-inventory-transfers-and-adjustments-from-field-service-to-supply-chain-management"></a>Field Service から Supply Chain Management への在庫振替および在庫調整の同期
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061682"
 
 
 
-このトピックでは、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に在庫調整と振替を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+この記事では、Dynamics 365 Supply Chain Management から Dynamics 365 Field Service に在庫調整と振替を同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
 [![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/FSTransAdjOW.png)](./media/FSTransAdjOW.png)
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644462"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860167"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>データ インポート/エクスポート ジョブの概要
 
@@ -29,7 +29,7 @@ ms.locfileid: "8644462"
 データ インポート/エクスポート ジョブを作成して管理するには、**データ管理** ワークスペースを使用します。 既定では、データ インポート/エクスポート プロセスにより、ターゲットのデータベースで各エンティティにステージング テーブルが作成されます。 ステージング テーブルにより、移動させる前にデータを確認、クリーンアップ、または変換できます。
 
 > [!NOTE]
-> このトピックは、[データ エンティティ](data-entities.md) の内容を理解していることが前提です。
+> この記事の内容は、[データ エンティティ](data-entities.md) の内容を理解していることが前提です。
 
 ## <a name="data-importexport-process"></a>データ インポート/エクスポート プロセス
 データをインポートまたはエクスポートする手順を以下に示します。
@@ -48,7 +48,7 @@ ms.locfileid: "8644462"
 5. ジョブの履歴を確認して、期待どおりにジョブが実行されたことを検証します。
 6. ステージング テーブルをクリーンアップします。
 
-このトピックの残りのセクションでは、プロセスの各ステップに関する詳細をさらに提供します。
+この記事の残りのセクションでは、プロセスの各ステップに関する詳細をさらに提供します。
 
 > [!NOTE]
 > 最新の進行状況を表示するためデータのインポート/エクスポート フォームを更新するには、フォームの更新アイコンを使用します。 バッチで実行されていない任意のインポート/エクスポート ジョブが中断されますので、ブラウザー レベルの更新はお勧めできません。

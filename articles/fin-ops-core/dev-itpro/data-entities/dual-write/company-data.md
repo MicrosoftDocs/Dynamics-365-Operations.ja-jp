@@ -1,6 +1,6 @@
 ---
-title: Dataverse の企業概念
-description: このトピックでは、Finance and Operations と Dataverse 間の企業データの統合について説明します。
+title: Dataverse での会社の概念
+description: この記事では、財務と運用と Dataverse 間の企業データの統合について説明します。
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061029"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873181"
 ---
 # <a name="company-concept-in-dataverse"></a>Dataverse の企業概念
 

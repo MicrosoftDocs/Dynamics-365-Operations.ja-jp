@@ -1,6 +1,6 @@
 ---
 title: 調達に関するよく寄せられる質問
-description: このトピックでは、Supply Chain Management の調達機能に関するよく寄せられる質問 (FAQ) への回答を提供します
+description: この記事には、Supply Chain Management の調達機能に関するよく寄せられる質問 (FAQ) への回答が含まれます
 author: GalynaFedorova
 ms.date: 05/31/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 718108447dcb5cec488b7fa626feb551808e8dd8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6e710b254638b255ce4aa3e0adde0dd23bf60f64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669351"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869578"
 ---
 # <a name="procurement-faq"></a>調達に関するよく寄せられる質問
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Supply Chain Management の調達機能に関するよく寄せられる質問 (FAQ) への回答を提供します。
+この記事には、Supply Chain Management の調達機能に関するよく寄せられる質問 (FAQ) への回答が含まれます。
 
 ## <a name="can-i-show-only-purchase-orders-that-i-created"></a>自分が作成した発注書のみを表示できますか?
 

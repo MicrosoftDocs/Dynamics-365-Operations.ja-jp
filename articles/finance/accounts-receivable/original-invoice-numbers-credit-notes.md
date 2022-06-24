@@ -1,6 +1,6 @@
 ---
-title: 貸方票での元の請求書への参照
-description: このトピックでは、元の請求書番号を関連する貸方表に設定・印刷する方法について説明します。
+title: 訂正票での元の請求書への参照
+description: この記事では、元の請求書番号を関連する貸方表に設定・印刷する方法について説明します。
 author: ilkond
 ms.date: 10/26/2021
 ms.topic: article
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1362bf41416202631dc4b966338e8166b26a67f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ebfeb43aaf137ef336b460f340fbda50f5918d08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688349"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861534"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>貸方票での元の請求書への参照
 
 [!include [banner](../includes/banner.md)]
 
 
-一部の国や地域では、貸方書の印刷に元の請求書への参照を含めるという法的要件があります。 このトピックでは、元の請求書番号を関連する貸方表に設定・印刷する方法について説明します。
+一部の国や地域では、貸方書の印刷に元の請求書への参照を含めるという法的要件があります。 この記事では、元の請求書番号を関連する貸方表に設定・印刷する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
 - **機能管理** ワークスペースで、**販売およびプロジェクト請求レポートの請求の貸方転記レイアウト** 機能を有効 にします。 詳細については [機能管理の概要](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) を参照してください。
 - 必要なドキュメントの印刷可能な形式については、印刷管理で構成する必要があります。
 
-このトピックで説明する機能は、以下のドキュメントに適用されます:
+この記事で説明する機能は、以下のドキュメントに適用されます:
 
 **売掛金勘定**
 

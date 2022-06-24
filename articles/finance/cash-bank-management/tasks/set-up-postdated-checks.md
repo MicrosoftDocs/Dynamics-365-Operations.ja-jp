@@ -1,6 +1,6 @@
 ---
 title: 先日付小切手の設定
-description: このトピックでは、先日付小切手の仕訳入力を転記するかどうかと、どの転記仕訳帳を清算項目と仕入先支払に使用するかを指定する方法について説明します。
+description: この記事では、先日付小切手の仕訳入力を転記するかどうかと、どの転記仕訳帳を清算項目と仕入先支払に使用するかを指定する方法について説明します。
 author: kweekley
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 645b474b8b4bd13cd47bef404cda002e6b29a1ba
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e045648230aba7965ed68fbc499f73e077caceed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724845"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870310"
 ---
 # <a name="set-up-postdated-checks"></a>先日付小切手の設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、先日付小切手の仕訳入力を転記するかどうかと、どの転記仕訳帳を清算項目と仕入先支払に使用するかを指定する方法について説明します。 発行済小切手、受領済小切手、および源泉徴収税の精算勘定も指定できます。 将来の日付で支払を履行または受け取るために発行される先日付小切手です。 小切手が、その有効期限前に、会計帳簿に反映する必要があるかどうかを指定できます。
+この記事では、先日付小切手の仕訳入力を転記するかどうかと、どの転記仕訳帳を清算項目と仕入先支払に使用するかを指定する方法について説明します。 発行済小切手、受領済小切手、および源泉徴収税の精算勘定も指定できます。 将来の日付で支払を履行または受け取るために発行される先日付小切手です。 小切手が、その有効期限前に、会計帳簿に反映する必要があるかどうかを指定できます。
 
 
 

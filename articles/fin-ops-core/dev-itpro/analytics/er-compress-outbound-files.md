@@ -1,6 +1,6 @@
 ---
 title: 電子申告で生成される大きなドキュメントを圧縮する
-description: このトピックでは、電子申告 (ER) 形式で生成される大きなドキュメントを圧縮する方法について説明します。
+description: この記事では、電子申告 (ER) 形式で生成される大きなドキュメントを圧縮する方法について説明します。
 author: NickSelin
 ms.date: 09/11/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4995879717e715f8ebadb6a80e00949df7545c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718602"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864810"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>電子申告で生成される大きなドキュメントを圧縮する 
 
@@ -33,7 +33,7 @@ ms.locfileid: "6718602"
 > [!NOTE]
 > ファイルの圧縮には、CPU 使用率の追加割合がかかります。
 
-このアプローチの詳細については、このトピックの例を完了してください。
+このアプローチの詳細については、この記事に記載の例を完了してください。
 
 ## <a name="example-compress-an-outbound-document"></a>例: 送信ドキュメントの圧縮
 
@@ -41,7 +41,7 @@ ms.locfileid: "6718602"
 
 ### <a name="prerequisites"></a>必要条件
 
-このトピックの手順を完了する前に、次の手順を完了する必要があります。
+この記事の手順を完了する前に、次の手順を完了する必要があります。
 
 1. [構成プロバイダーをアクティブにします](er-defer-xml-element.md#activate-a-configuration-provider)。
 2. [サンプル ER のコンフィギュレーションのインポート](er-defer-xml-element.md#import-the-sample-er-configurations)。

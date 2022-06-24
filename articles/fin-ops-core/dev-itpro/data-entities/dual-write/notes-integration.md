@@ -1,6 +1,6 @@
 ---
 title: メモ統合
-description: このトピックでは、二重書き込みでのメモ データの統合について説明します。
+description: この記事では、二重書き込みでのメモ データの統合について説明します。
 author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c73da804d724ea75ae6ccd479d1b7f3cf02d48c4
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062778"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876718"
 ---
 # <a name="note-integration"></a>メモ統合
 
@@ -22,7 +22,7 @@ ms.locfileid: "8062778"
 
 
 
-多くの場合、業務プロセス中に Microsoft Dynamics 365 ユーザーは顧客に関する情報を収集します。 この情報は、活動およびメモとして記録されます。 このトピックでは、二重書き込みでのメモ データの統合について説明します。
+多くの場合、業務プロセス中に Microsoft Dynamics 365 ユーザーは顧客に関する情報を収集します。 この情報は、活動およびメモとして記録されます。 この記事では、二重書き込みでのメモ データの統合について説明します。
 
 顧客情報は、次のように分類できます。
 

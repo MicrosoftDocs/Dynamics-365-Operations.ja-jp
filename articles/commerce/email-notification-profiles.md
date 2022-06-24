@@ -1,6 +1,6 @@
 ---
 title: 電子メール通知プロファイルの設定
-description: このトピックでは、Microsoft Dynamics 365 Commerce で電子メール通知プロファイルを作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で電子メール通知プロファイルを作成する方法について説明します。
 author: bicyclingfool
 ms.date: 02/11/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9f7adffd67e8198d16e4f7ed4fc4aadf59071b1d
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109634"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878489"
 ---
 # <a name="set-up-an-email-notification-profile"></a>電子メール通知プロファイルの設定
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で電子メール通知プロファイルを作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce で電子メール通知プロファイルを作成する方法について説明します。
 
 チャンネルを作成する場合は、電子メール通知プロファイルを設定できます。 メール通知プロファイルでは、顧客に通知を送る販売取引のイベント (注文作成、注文確定、注文請求などのイベント) を定義します。 
 

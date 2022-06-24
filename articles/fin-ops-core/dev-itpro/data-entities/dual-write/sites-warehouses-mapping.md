@@ -1,6 +1,6 @@
 ---
 title: 統合されたサイトおよび倉庫
-description: このトピックでは、Finance and Operations と Dataverse 間のサイトおよび倉庫データの統合について説明します。
+description: この記事では、財務と運用アプリと Dataverse 間のサイトおよび倉庫データの統合について説明します。
 author: t-benebo
 ms.date: 10/09/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: benebotg
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: 66c5962933387831bbc3f17b9f29128ceaaf750b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cd1293094f670c43eb46bc14b8bfe0f2afe43047
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063215"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852601"
 ---
 # <a name="integrated-sites-and-warehouses"></a>統合されたサイトおよび倉庫
 
@@ -22,7 +22,7 @@ ms.locfileid: "8063215"
 
 
 
-このトピックでは、Finance and Operations と Dataverse 間のサイトおよび倉庫データの統合について説明します。 運営サイトおよび倉庫は、Supply Chain Management における共通の概念です。 これらは会社のサプライ チェーンをモデル化するために使用されます。
+この記事では、財務と運用アプリと Dataverse 間のサイトおよび倉庫データの統合について説明します。 運営サイトおよび倉庫は、Supply Chain Management における共通の概念です。 これらは会社のサプライ チェーンをモデル化するために使用されます。
 
 ## <a name="templates"></a>テンプレート
 

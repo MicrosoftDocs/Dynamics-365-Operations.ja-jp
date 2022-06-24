@@ -1,6 +1,6 @@
 ---
-title: 税内訳情報を注文集計で非表示にする
-description: このトピックでは、Microsoft Dynamics 365 Commerce のカートの注文集計、チェックアウト、注文確認、および注文の詳細ページで税内訳情報を非表示にする方法について説明します。
+title: 注文概要で税の分割情報を非表示にする
+description: この記事では、Microsoft Dynamics 365 Commerce のカートの注文集計、チェックアウト、注文確認、および注文詳細のページで税内訳情報を非表示にする方法について説明します。
 author: gvrmohanreddy
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-03-28
-ms.openlocfilehash: 9a0bff7afaa10e49ec05f18e2b0fae7a19b5e8af
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: fe1f6c5875444f4f91ee1dfb01b3fdaa527c52e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767817"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881793"
 ---
-# <a name="hide-tax-breakup-information-in-order-summaries"></a>税内訳情報を注文集計で非表示にする
+# <a name="hide-tax-breakup-information-in-order-summaries"></a>注文概要で税の分割情報を非表示にする
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のカートの注文集計、チェックアウト、注文確認、および注文の詳細ページで税内訳情報を非表示にする方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce のカートの注文集計、チェックアウト、注文確認、および注文詳細のページで税内訳情報を非表示にする方法について説明します。
 
 既定では、Dynamics 365 Commerce は税内訳情報を、カートの注文集計、チェックアウト、注文確認、および注文の詳細ページで表示します。 Commerce バージョン 10.0.27 リリースでは、Commerce サイト ビルダーに、注文集計の税内訳情報を非表示にできるオプションが用意されています。
 

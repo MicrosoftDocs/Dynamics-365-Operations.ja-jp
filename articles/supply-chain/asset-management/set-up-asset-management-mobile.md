@@ -1,6 +1,6 @@
 ---
 title: 資産管理モバイル ワークスペースの設定
-description: このトピックでは、作業者が資産管理タスクを実行するために使用できる資産管理モバイル ワークスペースを実行するための Microsoft Dynamics 365 Supply Chain Management と Finance and Operations (Dynamics 365) モバイル アプリの設定方法について説明します。
+description: この記事では、作業者が資産管理タスクを実行するために使用できる資産管理モバイル ワークスペースを実行するための Microsoft Dynamics 365 Supply Chain Management と Finance and Operations (Dynamics 365) モバイル アプリの設定方法について説明します。
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a056be417d266fd400ce1572312f327dc070cb6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ee92ed2c0e2a59adaebe20ed3d426ac03c056dac
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870845"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>資産管理モバイル ワークスペースの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、作業者が資産管理タスクを実行するために使用できる **資産管理** モバイル ワークスペースを実行するための Microsoft Dynamics 365 Supply Chain Management と Finance and Operations (Dynamics 365) モバイル アプリの設定方法について説明します。
+この記事では、作業者が資産管理タスクを実行するために使用できる **資産管理** モバイル ワークスペースを実行するための Microsoft Dynamics 365 Supply Chain Management と Finance and Operations (Dynamics 365) モバイル アプリの設定方法について説明します。
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Supply Chain Management でのメンテナンス作業者ユーザーの設定
 

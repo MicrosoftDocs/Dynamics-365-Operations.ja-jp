@@ -1,6 +1,6 @@
 ---
 title: 新しいサイト ページの追加
-description: このトピックでは、Microsoft Dynamics 365 Commerce に新しいサイト ページを追加する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce に新しいサイト ページを追加する方法について説明します。
 author: psimolin
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 76fc3f52746943d5cbf1cb31e677344a1d14bee3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090722"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871731"
 ---
 # <a name="add-a-new-site-page"></a>新しいサイト ページの追加
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce に新しいサイト ページを追加する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce に新しいサイト ページを追加する方法について説明します。
 
 サイトのテンプレートとフラグメントを作成したら、次はそれらを使用するページの作成を開始します。 作業を開始するには、テンプレートまたはレイアウト、ページ名、およびページの URL を選択する必要があります。
 

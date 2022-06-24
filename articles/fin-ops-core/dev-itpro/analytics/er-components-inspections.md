@@ -1,6 +1,6 @@
 ---
 title: 構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
-description: このトピックでは、構成済み電子レポート (ER) コンポーネントを検査して、発生する可能性のあるランタイムの問題を回避する方法について説明します。
+description: この記事では、構成済み電子レポート (ER) コンポーネントを検査して、発生する可能性のあるランタイムの問題を回避する方法について説明します。
 author: NickSelin
 ms.date: 01/03/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864839"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>構成済み ER コンポーネントを検査して、ランタイムの問題を回避する
 
@@ -80,7 +80,7 @@ ER では、次のカテゴリを使用して、整合性チェック検査を�
 
 ## <a name="list-of-inspections"></a>検査の一覧
 
-次の表は、ER が提供する検査の概要を示します。 これらの検査の詳細については、最初の列のリンクを使用して、このトピックの関連するセクションを参照してください。 これらのセクションでは、ER が検査を提供するコンポーネントのタイプと、問題を防ぐために ER コンポーネントを再構成する方法について説明します。
+次の表は、ER が提供する検査の概要を示します。 これらの検査の詳細については、最初の列のリンクを使用して、この記事の関連するセクションを参照してください。 これらのセクションでは、ER が検査を提供するコンポーネントのタイプと、問題を防ぐために ER コンポーネントを再構成する方法について説明します。
 
 <table>
 <thead>

@@ -1,6 +1,6 @@
 ---
 title: URL パラメーターに基づく動的な eコマース ページの作成
-description: このトピックでは、URL のパラメーターに基づいて動的なコンテンツを提供できる Microsoft Dynamics 365 Commerce の電子商取引ページの設定方法について説明します。
+description: この記事では、URL のパラメーターに基づいて動的なコンテンツを提供できる Microsoft Dynamics 365 Commerce の電子商取引ページの設定方法について説明します。
 author: StuHarg
 ms.date: 05/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e2b13403ffb316059476a03857c849b4f9f8cb9c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811034"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884666"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>URL パラメーターに基づく動的な eコマース ページの作成
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-このトピックでは、URL のパラメーターに基づいて動的なコンテンツを提供できる Microsoft Dynamics 365 Commerce の電子商取引ページの設定方法について説明します。
+この記事では、URL のパラメーターに基づいて動的なコンテンツを提供できる Microsoft Dynamics 365 Commerce の電子商取引ページの設定方法について説明します。
 
 電子商取引のページは、URL パスのセグメントに基づいて、異なるコンテンツを提供するよう構成できます。 したがって、このページは動的ページと呼ばれます。 セグメントは、ページ内容を取得するパラメーターとして使用されます。 たとえば、サイト ビルダーで作成され **ブログ\_ビューアー** という名前のページは、URL (`https://fabrikam.com/blog`) にマッピングされます。 このページを使用すると、URL パスの最後のセグメントに基づいた異なるコンテンツを表示できます。 たとえば、URL (`https://fabrikam.com/blog/article-1`) の最後のセグメントは **article-1** です。
 

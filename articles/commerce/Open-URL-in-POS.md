@@ -1,6 +1,6 @@
 ---
 title: POS で URL を開く
-description: このトピックでは、Dynamics 365 Commerce の製品および顧客検索機能に加えられた改良の概要を示します。
+description: この記事には、Dynamics 365 Commerce の製品および顧客検索機能に加えられた改良の概要が含まれます。
 author: AamirAllaq
 ms.date: 01/28/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 529908df866c71ea84d90bbb5d46b23311ed74d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714117"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853965"
 ---
 # <a name="open-url-in-pos"></a>POS で URL を開く
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 Commerce 販売時点管理 (POS) のボタンをコンフィギュレーションして URL を開く方法について説明します。 この機能はコードのカスタマイズを必要とせず、開発者以外のロールのユーザーがコンフィギュレーションすることもできます。 
+この記事では、Dynamics 365 Commerce 販売時点管理 (POS) のボタンをコンフィギュレーションして URL を開く方法について説明します。 この機能はコードのカスタマイズを必要とせず、開発者以外のロールのユーザーがコンフィギュレーションすることもできます。 
 
 この機能では、ボタン グリッド デザイナーを使用して URL を開くことで、POS のボタンをコンフィギュレーションすることができます。 現時点では、これは次のコンフィギュレーションでサポートされています:
 

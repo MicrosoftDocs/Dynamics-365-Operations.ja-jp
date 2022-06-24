@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Management（資産管理）と Dynamics 365 Guides を統合する
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の資産管理モジュールを Dynamics 365 Guides に統合して、日々のサービスやメンテナンスのワークフローで Mixed Reality ガイドを活用する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の資産管理モジュールを Dynamics 365 Guides に統合して、日々のサービスやメンテナンスのワークフローで Mixed Reality ガイドを活用する方法について説明します。
 author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d06978bcbd6205111384f5c7cefdf34fdbdbfbf5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568258"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875687"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Dynamics 365 Supply Chain Management（資産管理）と Dynamics 365 Guides を統合する
 
@@ -47,7 +47,7 @@ Dynamics 365 Supply Chain Management の **資産管理** モジュールを Mic
 
 メンテナンス チェックリストのテンプレートをガイドに関連付けるには、次の手順に従ってください。
 
-1. Dynamics 365 Guides PC と HoloLens アプリを使用してガイドを作成します。 ガイドの作成方法については、以下のトピックを参照してください：
+1. Dynamics 365 Guides PC と HoloLens アプリを使用してガイドを作成します。 ガイドの作成方法については、以下の記事を参照してください:
 
     - [PC アプリを使用してガイドを作成する](/dynamics365/mixed-reality/guides/pc-app-overview)
     - [HoloLens アプリを使用してホログラムを配置します](/dynamics365/mixed-reality/guides/hololens-app-overview)

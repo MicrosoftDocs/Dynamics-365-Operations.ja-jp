@@ -1,6 +1,6 @@
 ---
 title: 標準原価の原価計算バージョンの制限
-description: このトピックでは、標準原価の原価計算バージョンに適用する制限について説明します。
+description: この記事では、標準原価の原価計算バージョンに適用する制限について説明します。
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11bf14b2926fd4ff053697bef8b7dad781948a2c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8c5c00ae8952e2c80d97d039271a6f5c63e9a72f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672209"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867988"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>標準原価の原価計算バージョンの制限
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、標準原価の原価計算バージョンに適用する制限について説明します。 
+この記事では、標準原価の原価計算バージョンに適用する制限について説明します。 
 
 次の制限は、標準原価原則への保証の順守に役立ちます。
 
@@ -37,9 +37,9 @@ ms.locfileid: "8672209"
 
 -  BOM の計算は、単一レベル展開モードで実行する必要があります。
 
-標準原価の品目原価データは、標準原価または予定原価を含む別の原価バージョンにコピーできます。 ただし、このトピックで先に示した制限は予定原価には適用されないので、予定原価に対する品目原価データは、標準原価を含む原価バージョンにはコピーできません。
+標準原価の品目原価データは、標準原価または予定原価を含む別の原価バージョンにコピーできます。 ただし、この記事で先に示した制限は予定原価には適用されないので、予定原価に対する品目原価データは、標準原価を含む原価バージョンにはコピーできません。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [原価計算バージョンの概要](costing-versions.md)
 

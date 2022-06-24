@@ -1,6 +1,6 @@
 ---
 title: ER 形式をデザインして、ページのヘッダーまたはフッターに画像が埋め込まれた Excel 形式でレポートを生成する
-description: このトピックでは、電子申告 (ER) を使用して、ページのヘッダーまたはフッターに画像や図形が埋め込まれたビジネス ドキュメントを生成する方法について説明します。
+description: この記事では、電子申告 (ER) を使用して、ページのヘッダーまたはフッターに画像や図形が埋め込まれたビジネス ドキュメントを生成する方法について説明します。
 author: NickSelin
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323778"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854846"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>ER 形式をデザインして、ページのヘッダーまたはフッターに画像が埋め込まれた Excel 形式でレポートを生成する
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、システム管理者または電子レポート機能コンサルタントのロールのユーザーが次のタスクを実行する方法について説明します。
+この記事では、システム管理者または電子レポート機能コンサルタントのロールのユーザーが次のタスクを実行する方法について説明します。
 
 - [電子申告 (ER)](general-electronic-reporting.md) フレームワークのパラメーターを構成します。
 - Microsoft が[提供](general-electronic-reporting.md#Provider)し、[自由書式の請求書](../../../finance/accounts-receivable/create-free-text-invoice-new.md)を生成するために使用される、Microsoft Excel 形式の[テンプレート](er-fillable-excel.md#excel-file-component)に基づいた ER [コンフィギュレーション](general-electronic-reporting.md#Configuration)をインポートします。
 - Microsoft が提供する標準 ER 形式コンフィギュレーションの[カスタム (派生)](general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization) バージョンを作成します。
 - フッターに会社のロゴ画像が含まれる自由書式の請求書レポートを生成するカスタム ER 形式のコンフィギュレーションを変更します。
 
-このトピックの手順は、**USMF** 会社で完了することができます。 コーディングは必要ありません。 開始する前に、次のファイルをダウンロードして保存する必要があります。
+この記事の手順は、**USMF** 会社で完了することができます。 コーディングは必要ありません。 開始する前に、次のファイルをダウンロードして保存する必要があります。
 
 | 説明        | ファイル名 |
 |--------------------|-----------|
@@ -132,7 +132,7 @@ ER コンフィギュレーション プロバイダーについては、[コン
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat"></a> 標準 ER コンフィギュレーションをインポート
 
-標準 ER コンフィギュレーションを現在の Dynamics 365 Finance のインスタンスに追加するには、インスタンスにコンフィギュレーションされた ER [リポジトリ](general-electronic-reporting.md#Repository) からインポートする必要があります。
+Dynamics 365 Finance の現在のインスタンスに標準的な ER 構成を追加するには、そのインスタンスに構成された ER [リポジトリ](general-electronic-reporting.md#Repository) からインポートする必要があります。
 
 1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
 2. **ローカライズ コンフィグレーション** ページの **コンフィギュレーション プロバイダー** セクションで、**Microsoft** タイルを選択し、**リポジトリ** を選択して **Microsoft** プロバイダーのリポジトリの一覧を表示します。

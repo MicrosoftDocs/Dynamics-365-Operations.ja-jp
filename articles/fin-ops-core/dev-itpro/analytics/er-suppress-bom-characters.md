@@ -1,6 +1,6 @@
 ---
 title: 生成されたファイルの BOM 文字を非表示にする ER 構成の設計
-description: このトピックでは、バイト オーダー マーク (BOM) 文字を非表示にするレポートを生成するために電子申告 (ER) 形式を構成する方法について説明します。
+description: この記事では、バイト オーダー マーク (BOM) 文字を非表示にするレポートを生成するために電子申告 (ER) 形式を構成する方法について説明します。
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: d54ed105e4ff44ac2c48e2d1a4b8e12fbf6f9591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323744"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847433"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>生成されたファイルの BOM 文字を非表示にする ER 構成の設計
 
@@ -38,7 +38,7 @@ ms.locfileid: "8323744"
 
 ![形式デザイナー ページで BOM 文字の非表示オプションを設定する。](./media/er-suppress-bom-characters-image2.gif)
 
-実行時に機能を確認するには、適切な手順を実行します。 たとえば、[ER 形式における XML 要素の実行の延期](er-defer-xml-element.md) トピックの手順を実行します。 そのトピックにある [計算が生成された出力に基づくように形式を変更する](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) セクションの手順を完了したら、次の追加手順に従います。
+実行時に機能を確認するには、適切な手順を実行します。 たとえば、[ER 形式における XML 要素の実行の延期](er-defer-xml-element.md) 記事の手順を実行します。 その記事にある [計算が生成された出力に基づくように形式を変更する](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) セクションの手順を完了したら、次の追加手順に従います。
 
 1. UTF エンコードを指定します:
 
@@ -48,12 +48,12 @@ ms.locfileid: "8323744"
 2. BOM 文字を含む XML ファイルを生成します:
 
     1. **BOM 文字の非表示** オプションを **いいえ** に設定して、生成された XML ファイルに BOM 文字を含めます。
-    2. [電子申告形式における XML 要素の実行の延期](er-defer-xml-element.md) トピックの [計算された合計が使用されるように集計 XML 要素の実行を延期](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) セクションの手順を完了し、生成されたファイルを **SampleXmlReport.xml** として保存します。
+    2. [ER 形式における XML 要素の実行の延期](er-defer-xml-element.md) 記事の [計算された合計が使用されるように集計 XML 要素の実行を延期](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) セクションの手順を完了し、生成されたファイルを **SampleXmlReport.xml** として保存します。
 
 3. BOM 文字を含まない XML ファイルを生成します:
 
     1. **BOM 文字の非表示** オプションを **はい** に設定して、生成された XML ファイルで BOM 文字を非表示にします。
-    2. [電子申告形式における XML 要素の実行の延期](er-defer-xml-element.md) トピックの [計算された合計が使用されるように集計 XML 要素の実行を延期](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) セクションの手順を完了し、生成されたファイルを **SampleXmlReport (1).xml** として保存します。
+    2. [ER 形式における XML 要素の実行の延期](er-defer-xml-element.md) 記事の [計算された合計が使用されるように集計 XML 要素の実行を延期](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) セクションの手順を完了し、生成されたファイルを **SampleXmlReport (1).xml** として保存します。
 
 4. ファイル比較ユーティリティで、生成されたファイルを比較します。
 

@@ -1,6 +1,6 @@
 ---
 title: GETCURRENTCOMPANY ER 機能
-description: このトピックでは、GETCURRENTCOMPANY 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、GETCURRENTCOMPANY 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c74ffaf1ee134da8d962e054656301d5e99827ff53f560f5d93f9dcb51819c13
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 06d552a0e8241d416fc49c4377b02f90fdf63d29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760777"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872745"
 ---
 # <a name="getcurrentcompany-er-function"></a>GETCURRENTCOMPANY ER 機能
 
@@ -41,7 +41,7 @@ GETCURRENTCOMPANY ()
 
 ## <a name="example"></a>例
 
-`GETCURRENTCOMPANY ()` は **Contoso Entertainment System USA** 会社にサインインしているユーザーの **USMF** を返します。
+`GETCURRENTCOMPANY ()` は、**Contoso エンターテインメント システム USA** 会社にサイン インしているユーザーに対して **USMF** を返します。
 
 ## <a name="additional-resources"></a>追加リソース
 

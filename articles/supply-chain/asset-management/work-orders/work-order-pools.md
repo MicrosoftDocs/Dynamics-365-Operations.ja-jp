@@ -1,6 +1,6 @@
 ---
 title: 作業指示書プール
-description: このトピックでは資産管理でワーク オーダー プールを操作する方法について説明します。
+description: この記事では資産管理でワーク オーダー プールを操作する方法について説明します。
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dd474451569e123fab811cc3625862d599a07963f3714c72d5a724ffd052983e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6fc97c8a65afe24bfe730e6d13eb178ddcafc2d9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733519"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849564"
 ---
 # <a name="work-order-pools"></a>作業指示書プール
 

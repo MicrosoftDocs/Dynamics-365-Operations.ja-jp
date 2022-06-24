@@ -1,6 +1,6 @@
 ---
 title: 受取手形の設定
-description: このトピックでは、為替手形を設定するための手順を説明します。
+description: この記事では、為替手形を設定するための手順を説明します。
 author: ShivamPandey-msft
 ms.date: 09/17/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6a9d04500ffe5b93c7a95c5cac9b4270e208dde9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 91821b10afe7cdbabd0a58b61219ce29d686c5c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726812"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874728"
 ---
 # <a name="set-up-bills-of-exchange"></a>受取手形の設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、為替手形を設定するための手順を説明します。
+この記事では、為替手形を設定するための手順を説明します。
 
 為替手形は、記載されている金額を他者 (通常は銀行) が会社に支払うことを指示する、顧客からの文書注文または電子注文です。 為替手形を販売注文請求書または自由書式の請求書の支払に使用する場合は、顧客勘定の貸方に記入します。 この貸方は、顧客が銀行に為替手形を支払うまで、為替手形で担保が付けられます。 通常、為替手形による請求書の決済は期日までに完了します。 銀行から為替手形の受取済通知を受領したら、為替手形を決済できます。 以下の時点で銀行から為替手形を振出できます。
 

@@ -1,6 +1,6 @@
 ---
 title: 日付と時刻のカテゴリ内の ER 関数のリスト
-description: このトピックでは、電子申告 (ER) でサポートされる日時の関数について説明します。
+description: この記事では、電子申告 (ER) でサポートされる日時の関数について説明します。
 author: NickSelin
 ms.date: 09/09/2021
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a0322e5490474e21ad91076ecc486f38a776e32
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: e6e15d143bad016883f03ecf0125ce9429215a71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890780"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880249"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>日付と時刻のカテゴリ内の ER 関数のリスト
 
 [!include [banner](../includes/banner.md)]
 
-電子報告 (ER) 日時の関数を使用して、日付と時刻の値から情報を抽出し、操作を実行できます。 このトピックでは、これらの関数の概要を示します。
+電子報告 (ER) 日時の関数を使用して、日付と時刻の値から情報を抽出し、操作を実行できます。 この記事では、これらの関数の概要を示します。
 
 ## <a name="list-of-supported-functions"></a>サポートされている関数のリスト
 

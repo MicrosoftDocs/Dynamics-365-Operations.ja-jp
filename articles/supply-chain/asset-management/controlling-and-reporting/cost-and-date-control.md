@@ -1,6 +1,6 @@
 ---
 title: 原価および日付の管理
-description: このトピックでは、資産管理の価および日付の管理について説明します。
+description: この記事では、資産管理の原価および日付の管理について説明します。
 author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 826e0aab8c717bb951d80aff61b2d72dad802189706f720c48e72c8a1c393ead
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 643e5afda7d3abaff926e81ff75186ca195a8cb1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731916"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861047"
 ---
 # <a name="cost-and-date-control"></a>原価および日付の管理
 

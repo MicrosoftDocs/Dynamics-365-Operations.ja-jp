@@ -1,6 +1,6 @@
 ---
 title: 品質管理テスト
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質指示に使用できるテストを作成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の品質指示に使用できるテストを作成する方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c10b67f86fc29b5e8c08081a9b789d4f42c24cf4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac67ee97a4890c646daefa6b09feae25c4f15d0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573852"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857608"
 ---
 # <a name="quality-management-tests"></a>品質管理テスト
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management の品質指示に使用できるテストを作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management の品質指示に使用できるテストを作成する方法について説明します。
 
 **テスト** ページを使用して、製品が品質仕様を満たすかどうかを決定する個別のテストを定義して表示できます。 テスト グループに 1 つ以上の個別のテストを割り当てることができます。 この場合、許容測定値などのテスト固有の情報も指定します。 測定値は、定量試験に使用されます。 定性試験では、テスト変数が使用されます。
 

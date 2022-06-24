@@ -1,6 +1,6 @@
 ---
 title: アプリケーション データを含むドキュメントを生成するための形式の変更
-description: このトピックでは、電子ドキュメントを生成し、アプリケーション データを更新するためのレポート コンフィギュレーションを設計する方法について説明します。
+description: この記事では、電子ドキュメントを生成し、アプリケーション データを更新するためのレポート作成構成を設計する方法について説明します。
 author: NickSelin
 ms.date: 06/19/2017
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 312a49fc524cc7359d2c1815597214656df11c018034da384d30bfb9d9efee4b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bff9fa53df8e762f82bcc1946df265685a824b8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752414"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863296"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>アプリケーション データを含むドキュメントを生成するための形式の変更
 

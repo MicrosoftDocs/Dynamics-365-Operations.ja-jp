@@ -1,6 +1,6 @@
 ---
 title: 逓減残高による減価償却
-description: このトピックでは、減価償却の逓減残高法の概要を示します。
+description: この記事は、減価償却の逓減残高法の概要を示します。
 author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a81a8f926c30ac26d10c8763f43f39504249616f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 52bf9d4e9cbc9cabda5d5ab17c1a00ecea0d0348
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725320"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883274"
 ---
 # <a name="reduce-balance-depreciation"></a>逓減残高による減価償却
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、減価償却の逓減残高法の概要を示します。
+この記事は、減価償却の逓減残高法の概要を示します。
 
 固定資産減価償却プロファイルを設定し、**減価償却プロファイル** ページの **方法** フィールドで逓減残高を選択すると、この減価償却プロファイルが割り当てられる資産は、各減価償却期間で同じ比率で減価償却されます。
 
@@ -41,7 +41,7 @@ ms.locfileid: "8725320"
 
 ### <a name="calendar"></a>カレンダー
 
-**カレンダー オプション** は毎年 1 月 1 日に減価償却基準を更新します。これは通常、正味簿価額から仕損価格を差し引いた値です。 このトピックの後半にある逓減残高による減価償却の例では、計算列における最初の式の分子が償却基礎額です。 
+**カレンダー オプション** は毎年 1 月 1 日に減価償却基準を更新します。これは通常、正味簿価額から仕損価格を差し引いた値です。 この記事の後半にある逓減残高による減価償却の例では、計算列における最初の式の分子が償却基礎額です。 
 
 **暦年** を選択すると、**期間の頻度** フィールドで次のオプションが使用できます。このオプションによって、暦年を通した償却発生額の転記日付と金額が定義されます:
 

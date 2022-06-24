@@ -1,6 +1,6 @@
 ---
 title: 割引日よりも前に一部を決済し、割引日後に最終決済する
-description: このトピックは、複数の一部支払が行われるうち、いくつかが現金割引期間内に、それ以外が現金割引期間外に行われるシナリオについて説明します。
+description: この記事は、複数の一部支払が行われるうち、いくつかが現金割引期間内に、それ以外が現金割引期間外に行われるシナリオについて説明します。
 author: abruer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7331b4b2ad48cfa380497336d4ac22c8723568b5
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 1e249be4024ee6581060e3890795770054c6ab67
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871365"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>割引日よりも前に一部を決済し、割引日後に最終決済する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、複数の一部支払が行われるうち、いくつかが現金割引期間内に、それ以外が現金割引期間外に行われるシナリオについて説明します。
+この記事は、複数の一部支払が行われるうち、いくつかが現金割引期間内に、それ以外が現金割引期間外に行われるシナリオについて説明します。
 
 Fabrikam は、仕入先 3057 からの商品を購入します。 Fabrikam は、請求書の支払が 14 日以内に行われた場合に、1 パーセントの現金割引を受け取ります。 請求書は 30 日以内に支払う必要があります。 仕入先は、Fabrikam が一部支払に対する現金割引を選べるようにすることもできます。 決済のパラメーターは **買掛金勘定パラメーター** ページにあります。
 

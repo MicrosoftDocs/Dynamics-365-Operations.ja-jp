@@ -1,6 +1,6 @@
 ---
 title: タイプが発注書のタスクを完了するためのモバイル デバイスのメニュー項目を設定します。
-description: このトピックでは、モバイル デバイスのメニュー項目の設定方法について説明します。
+description: この記事では、モバイル デバイスのメニュー項目の設定方法について説明します。
 author: Mirzaab
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d18b0ab1057dbccdd45a52a58f80ef9346e4459f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 09286e8e482780523b61006081205868be487755
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565180"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882289"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>タイプが発注書のタスクを完了するためのモバイル デバイスのメニュー項目を設定します。
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、モバイル デバイスのメニュー項目の設定方法について説明します。 この例では、メニュー項目は、発注書タイプの作業を実行するのに使用されます。 メニュー項目に関連付けられている作業クラスにより、有効な作業が決定します。 デモ データの会社 USMF でこのガイドを使用できます。 この手順は通常、倉庫マネージャーによって実施されます。
+この記事では、モバイル デバイスのメニュー項目の設定方法について説明します。 この例では、メニュー項目は、発注書タイプの作業を実行するのに使用されます。 メニュー項目に関連付けられている作業クラスにより、有効な作業が決定します。 デモ データの会社 USMF でこのガイドを使用できます。 この手順は通常、倉庫マネージャーによって実施されます。
 
 
 ## <a name="create-a-mobile-device-menu-item"></a>品目のモバイル デバイス メニューの作成

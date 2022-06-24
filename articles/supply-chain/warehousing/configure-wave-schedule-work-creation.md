@@ -1,6 +1,6 @@
 ---
 title: ウェーブ中の作業作成のスケジュール
-description: このトピックでは、作業作成のスケジュールのウェーブ処理メソッドを設定および使用する方法について説明します。
+description: この記事では、作業作成のスケジュールのウェーブ処理メソッドを設定および使用する方法について説明します。
 author: Mirzaab
 ms.date: 01/14/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c955e7275c0bdc12dc206dde1d7e390f16270148
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8b4505d66c37134bc8f672b38d195f4f677df9bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852073"
 ---
 # <a name="schedule-work-creation-during-wave"></a>ウェーブ中の作業作成のスケジュール
 
@@ -30,7 +30,7 @@ ms.locfileid: "8691134"
 
 ## <a name="turn-on-the-scheduled-work-creation-features-in-feature-management"></a>機能管理でスケジュールされた作業作成機能を有効にする
 
-このトピックで説明する機能を使用するには、システムでこれら機能を有効にする必要があります。 [機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースを使用して、次の機能を次に示す順番で有効にします :
+この記事で説明する機能を使用するには、システムでこれら機能を有効にする必要があります。 [機能の管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)ワークスペースを使用して、次の機能を次に示す順番で有効にします :
 
 1. **組織全体の作業のブロック** - スケジュールされた作業作成の手動/自動の両方の構成に必要です。 (Supply Chain Management のバージョン 10.0.21 の時点では、この機能は必須です。この機能は既定で有効になっていて、再度オフにできない状態です)。
 1. **作業作成のスケジュール** - スケジュールされた作業作成の手動/自動の両方の構成に必要です。

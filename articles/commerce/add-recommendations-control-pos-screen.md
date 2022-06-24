@@ -1,6 +1,6 @@
 ---
-title: トランザクション画面への推奨設定の追加
-description: このトピックでは、Microsoft Dynamics 365 Commerce の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。
+title: トランザクション画面への推奨事項の追加
+description: この記事では、Microsoft Dynamics 365 Commerce の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af76169455cef16467b1faa9eda92a969aa923e85750cf245b0a6bd071a092e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4748ade8d6693666b58cbded2123d3449d191509
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731010"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862075"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>トランザクション画面への推奨事項の追加
 
 [!include [banner](includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 Commerce の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。 製品推奨事項の詳細については、[POS ドキュメントの製品推奨事項](product.md)を参照してください。
+この記事では、Microsoft Dynamics 365 Commerce の画面レイアウト デザイナーを使用して販売時点管理 (POS) デバイスのトランザクション画面にレコメンデーション コントロールを追加する方法について説明します。 製品推奨事項の詳細については、[POS ドキュメントの製品推奨事項](product.md)を参照してください。
 
 
 Commerce を使用するときに、POS デバイスに製品レコメンデーションを表示できます。 製品レコメンデーションを表示するには、画面レイアウト デザイナーを使用してトランザクション画面にコントロールを追加する必要があります。 

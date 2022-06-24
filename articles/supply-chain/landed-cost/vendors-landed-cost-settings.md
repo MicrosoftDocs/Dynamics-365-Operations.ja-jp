@@ -1,6 +1,6 @@
 ---
 title: 陸揚原価に仕入先の設定が追加されました
-description: このトピックでは、陸揚原価モジュールを有効にした場合に既存の仕入先ページに追加される新しいフィールドについて説明します。 これらのフィールドを使用して、陸揚原価機能と組み合わせて使用する仕入先を設定します。
+description: この記事では、陸揚原価モジュールを有効にした場合に既存の仕入先ページに追加される新しいフィールドについて説明します。 これらのフィールドを使用して、陸揚原価機能と組み合わせて使用する仕入先を設定します。
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b4e02397f7a4cdeaa21b451268b16e4fbe773612
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 84d1dee0815b036a3d411eabff49d8a08249bed3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690529"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882579"
 ---
 # <a name="vendor-settings-added-for-landed-cost"></a>陸揚原価に仕入先の設定が追加されました
 

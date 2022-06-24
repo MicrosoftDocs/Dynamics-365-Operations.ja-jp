@@ -1,6 +1,6 @@
 ---
 title: 手動在庫移動の繰延処理
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management で手動在庫移動の繰延処理を使用する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management で手動在庫移動の繰延処理を使用する方法について説明します。
 author: Mirzaab
 ms.date: 04/27/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c2e7296d77332b665e5d618d39804216f4347ca2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670471"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863740"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>手動在庫移動の繰延処理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management で手動在庫移動の繰延処理を使用する方法について説明します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management で手動在庫移動の繰延処理を使用する方法について説明します。
 
 繰延処理では、プット工程がバックグラウンドで処理されている間でも、倉庫作業者は他の作業を続行できます。 繰延処理は、サーバーの処理時間が一時的または予定外で増加する場合、さらに増加した処理時間が作業者の生産性に影響を与える可能性がある場合にも役立ちます。 *在庫移動* 作業タイプが、この機能でサポートされる一連の作業タイプに追加されました。
 

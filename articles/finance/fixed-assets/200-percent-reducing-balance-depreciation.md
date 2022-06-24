@@ -1,6 +1,6 @@
 ---
 title: 200% 逓減残高による減価償却
-description: このトピックでは、減価償却の 200% 逓減残高法の概要を説明します。
+description: この記事では、減価償却の 200% 逓減残高法の概要を説明します。
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 831a99246f0a2d5f223e3624aace1c218c3c4ff4
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 7abcf26f3e658e8a6f451f26240890d183547982
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710949"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870165"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>200% 逓減残高による減価償却
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、減価償却の 200% 逓減残高法の概要を説明します。
+この記事では、減価償却の 200% 逓減残高法の概要を説明します。
 
 固定資産減価償却プロファイルを設定し、**減価償却プロファイル** ページの **方法** フィールドで **200% 逓減残高** を選択すると、この減価償却プロファイルが割り当てられる固定資産の減価償却に、各減価償却期間で同じ比率が適用されます。 この比率は資産の耐用年数に基づいて計算されます。 たとえば、資産の耐用年数が 5 年の場合は、比率が 40% (200% ÷ 5) として計算されます。 
 
@@ -43,7 +43,7 @@ ms.locfileid: "8710949"
 
 **償却年** フィールドの既定値である **暦年** をそのまま使用できます。 
 
-**暦年** 選択すると、毎年 1 月 1 日に償却基礎額が更新されます。 通常、減価償却は、正味簿価額から仕損価格を差し引いた額です。 このトピックの後の例では、計算列の最初の式の分子が減価償却基準です。 
+**暦年** 選択すると、毎年 1 月 1 日に償却基礎額が更新されます。 通常、減価償却は、正味簿価額から仕損価格を差し引いた額です。 この記事の後の例では、計算列の最初の式の分子が減価償却基準です。 
 
 償却年として **暦年** を選択すると、**期間の頻度** フィールドで次のオプションが使用できます。
 

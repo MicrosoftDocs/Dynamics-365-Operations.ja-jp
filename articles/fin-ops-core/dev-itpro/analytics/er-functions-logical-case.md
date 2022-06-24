@@ -1,6 +1,6 @@
 ---
 title: CASE ER 関数
-description: このトピックでは、CASE 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、CASE 電子申告 (ER) 関数がどのように使用されるかについての情報を提供します。
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97f5e821a635d5d31092a7b27f7ae3c2e603462186449bab5856955371a7f613
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8ce598315bfbf291fafc6c9c9d54133486fb352
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756408"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854759"
 ---
 # <a name="case-er-function"></a>CASE ER 関数
 

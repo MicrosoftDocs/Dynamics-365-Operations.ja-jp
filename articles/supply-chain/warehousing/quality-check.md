@@ -1,6 +1,6 @@
 ---
 title: 品質チェック
-description: このトピックでは、品質確認機能に関して説明します。 この機能により、倉庫の作業者は入庫ドック エリアに品目を受領する間に、品質を確認することができます。
+description: この記事では、品質確認機能に関して説明します。 この機能により、倉庫の作業者は入庫ドック エリアに品目を受領する間に、品質を確認することができます。
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c5a4b380529ca8cb9c3474b363c7f9ba4220ff2b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ceb01205edc269690fda306bc90f465dbccc563b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855060"
 ---
 # <a name="quality-check"></a>品質チェック
 
@@ -41,11 +41,11 @@ ms.locfileid: "8677985"
 
 ## <a name="turn-the-quality-check-feature-on-or-off"></a>品質チェック機能をオンまたはオフにする
 
-このトピックで説明する機能を使用するには、システムの *品質チェック* 機能を有効にする必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *品質チェック* 機能を検索して、この機能をオンまたはオフにすることができます。
+この記事で説明する機能を使用するには、システムの *品質チェック* 機能を有効にする必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *品質チェック* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>シナリオ例の機能の設定
 
-このセクションでは、*品質チェック* 機能の設定方法と、本トピックの後で紹介するシナリオ例にサンプル データを準備する方法を示すガイドラインと例を説明します。
+このセクションでは、*品質チェック* 機能の設定方法と、この記事の後で紹介するシナリオ例にサンプル データを準備する方法を示すガイドラインと例を説明します。
 
 ### <a name="make-sample-data-available"></a>サンプル データを有効化する
 
@@ -270,7 +270,7 @@ ms.locfileid: "8677985"
 
 ## <a name="example-scenario"></a><a name="example-scenario"></a>シナリオ例
 
-上記で説明したサンプル データをすべて入手して設定したら、このシナリオを使用して *品質チェック* 機能を試すことができます。 このシナリオに示されている値は、標準のデモデータで作業していて、**USMF** 法人を選択し、このトピックで既に説明したサンプル レコードを準備していることを前提としています。 このシナリオは、製品の設定で機能を使用する方法を示す例としても使用されます。
+上記で説明したサンプル データをすべて入手して設定したら、このシナリオを使用して *品質チェック* 機能を試すことができます。 このシナリオに示されている値は、標準のデモ データで作業していて、**USMF** 法人を選択し、この記事で既に説明したサンプル レコードを準備していることを前提としています。 このシナリオは、製品の設定で機能を使用する方法を示す例としても使用されます。
 
 ### <a name="create-a-purchase-order"></a>発注書の作成
 
@@ -357,7 +357,7 @@ ms.locfileid: "8677985"
 
 これで、品質チェックが完了し、否認したパレットの品質指示が作成されました。 作成された注文を表示するには、**在庫管理 \> 定期タスク \> 品質管理 \> 品質指示** の順に移動します。
 
-これで、品質指示のテストを処理できるようになります。 このトピックでは、品質テストについては説明しません。
+これで、品質指示のテストを処理できるようになります。 この記事では、品質テストについては説明しません。
 
 品質管理の詳細については [品質管理の概要](../inventory/enable-quality-management.md) を参照してください。
 

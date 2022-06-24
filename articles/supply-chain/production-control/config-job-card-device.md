@@ -1,6 +1,6 @@
 ---
 title: デバイスのジョブ カードのコンフィギュレーション
-description: このトピックでは、ジョブ カード デバイスの構成に使用するさまざまなオプションについて説明します。
+description: この記事では、ジョブ カード デバイスの構成に使用するさまざまなオプションについて説明します。
 author: johanhoffmann
 ms.date: 05/29/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103441"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860728"
 ---
 # <a name="configure-job-card-for-devices"></a>デバイスのジョブ カードのコンフィギュレーション
 
 [!include [banner](../includes/banner.md)]
 
-ジョブ カード デバイスは、ジョブが開始されたとき、ジョブについてのフィードバックを報告するとき、間接活動を登録するとき、休暇を報告するときなど、作業現場労働者が日々の作業を登録する目的で使用されます。 これらの登録は、製造オーダーの進捗と原価を追跡し、従業員の給与の基準を計算する基準として使用されます。 このトピックでは、ジョブ カード デバイスの構成に使用するさまざまなオプションについて説明します。
+ジョブ カード デバイスは、ジョブが開始されたとき、ジョブについてのフィードバックを報告するとき、間接活動を登録するとき、休暇を報告するときなど、作業現場労働者が日々の作業を登録する目的で使用されます。 これらの登録は、製造オーダーの進捗と原価を追跡し、従業員の給与の基準を計算する基準として使用されます。 この記事では、ジョブ カード デバイスの構成に使用するさまざまなオプションについて説明します。
 
 ## <a name="enable-new-features-in-feature-management"></a>機能管理で新しい機能を有効化する
 
-このトピックで説明するいくつかの設定は、使用する前にシステムで有効化されている必要があります。 [機能管理 ](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページを使用して、必要に応じて次の機能のいずれか、またはすべてを有効にします。
+この記事で説明するいくつかの設定は、使用する前にシステムで有効化されている必要があります。 [機能管理 ](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ページを使用して、必要に応じて次の機能のいずれか、またはすべてを有効にします。
 
 ### <a name="generate-license-plate"></a>ライセンス プレートの生成
 

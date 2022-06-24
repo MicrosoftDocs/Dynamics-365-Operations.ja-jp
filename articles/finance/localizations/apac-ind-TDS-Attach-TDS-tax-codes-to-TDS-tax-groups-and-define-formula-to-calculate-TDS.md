@@ -1,6 +1,6 @@
 ---
 title: TDS の税コードを TDS 税グループに添付し、TDS の計算に使用する式を定義する
-description: このトピックでは、源泉徴収税 (TDS) のグループを設定し、TDS の税コードを TDS の税グループに関連付ける方法について説明します。 TDS 税グループの TDS を計算するには、TDS 税グループに関連付けられた TDS 税コードの式を定義する必要があります。
+description: この記事では、源泉徴収税 (TDS) のグループを設定し、TDS の税コードを TDS の税グループに関連付ける方法について説明します。 TDS 税グループの TDS を計算するには、TDS 税グループに関連付けられた TDS 税コードの式を定義する必要があります。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1326f95c297887213ecfb572a2437867d964925
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 3607e44bdcf7a32b156e6b4639ef907aa923cadc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711239"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853317"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>TDS の税コードを TDS 税グループに添付し、TDS の計算に使用する式を定義する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、源泉徴収税 (TDS) のグループを設定し、TDS の税コードを TDS の税グループに関連付ける方法について説明します。 TDS 税グループの TDS を計算するには、TDS 税グループに関連付けられた TDS 税コードの式を定義する必要があります。
+この記事では、源泉徴収税 (TDS) のグループを設定し、TDS の税コードを TDS の税グループに関連付ける方法について説明します。 TDS 税グループの TDS を計算するには、TDS 税グループに関連付けられた TDS 税コードの式を定義する必要があります。
 
 次の手順に従って、TDS の税グループを設定し、TDS の税コードを関連付け、TDS の計算で使用する式を定義します。
 

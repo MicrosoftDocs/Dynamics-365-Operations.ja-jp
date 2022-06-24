@@ -1,6 +1,6 @@
 ---
 title: タスク記録のセキュリティ診断
-description: このトピックでは、タスクの記録に基づいてセキュリティ許可要件を分析して管理する方法について説明します。
+description: この記事では、タスクの記録に基づいてセキュリティ許可要件を分析して管理する方法について説明します。
 author: Peakerbl
 ms.date: 05/05/2020
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: 44af35f16f6e9ff89b30bc10eef3f16ecdfaf907c4c6e22aa5775d1941fb6a5d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb69bf997100f25cd0ad2b7e34139857199e5d00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745123"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880170"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>タスク記録のセキュリティ診断
 
@@ -26,7 +26,7 @@ ms.locfileid: "6745123"
 
 ## <a name="before-you-begin"></a>準備
 
-このトピックでは、タスクの記録に基づいてセキュリティ許可要件を分析して管理する方法について説明します。 このトピックのステップを完了する前に、分析する業務プロセスのタスク記録を保持している必要があります。 業務プロセスを記録するには、[タスクレコーダーのリソース](../../user-interface/task-recorder.md)を参照してください。 
+この記事では、タスクの記録に基づいてセキュリティ許可要件を分析して管理する方法について説明します。 この記事のステップを完了する前に、分析する業務プロセスのタスク記録を保持している必要があります。 業務プロセスを記録するには、[タスクレコーダーのリソース](../../user-interface/task-recorder.md)を参照してください。 
 
 ## <a name="manage-security-for-a-task-recording"></a>タスク記録のセキュリティ管理
 

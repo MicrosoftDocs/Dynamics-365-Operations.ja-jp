@@ -1,6 +1,6 @@
 ---
 title: キャッシュ フロー予測の有効化
-description: このトピックでは、財務インサイトでキャッシュ フロー予測機能を有効にする方法について説明します。
+description: この記事では、Finance Insights でキャッシュ フロー予測機能を有効にする方法について説明します。
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8dba56af53090d5d78632da4d414143b136f8a8d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 253e3ea9c1c44573b37503f167b4cb3860683c10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713757"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859878"
 ---
 # <a name="enable-cash-flow-forecasting"></a>キャッシュ フロー予測の有効化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Finance Insights でキャッシュ フロー予測機能を有効にする方法について説明します。
+この記事では、Finance Insights でキャッシュ フロー予測機能を有効にする方法について説明します。
 
 > [!NOTE]
 > キャッシュ フローで支払予測を使用するには、[顧客支払予測の有効化](enable-cust-paymnt-prediction.md) で説明されているように、顧客支払予測機能を設定する必要があります。

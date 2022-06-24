@@ -1,6 +1,6 @@
 ---
-title: ER 形式におけるシーケンス要素の実行の延期
-description: このトピックは、電子申告 (ER) 形式のシーケンス要素の実行を延期する方法について説明します。
+title: 電子申告形式におけるシーケンス要素の実行の延期
+description: この記事では、電子申告 (ER) 形式のシーケンス要素の実行を延期する方法について説明します。
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 19d1cf0aa6e9b40a0e72a3a74acda6e2579d6ee2
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 5d4c5395c87c7bdc874f277a691e84081f68742d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323693"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880242"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>ER 形式におけるシーケンス要素の実行の延期
 
@@ -32,7 +32,7 @@ ms.locfileid: "8323693"
 
 コンフィギュレーションされた形式のシーケンス形式要素に対して <a name="DeferredSequenceExecution"></a> **遅延実行** オプションを有効にすることにより、その要素の実行を延期することができます。 この場合、親要素の他の要素すべてが実行されるまで、要素は実行されません。
 
-この機能の詳細を知るには、このトピックの例を実行します。
+この機能の詳細を知るには、この記事の例を実行します。
 
 ## <a name="limitations"></a>制限
 
@@ -53,7 +53,7 @@ ms.locfileid: "8323693"
 - 電子申告機能コンサルタント
 - システム管理者
 
-[ER 形式における XML 要素の実行の延期](er-defer-xml-element.md#Example) トピックの例をまだ完了していない場合、次のサンプル ER ソリューションの [コンフィギュレーション](general-electronic-reporting.md#Configuration) をダウンロードしてください。
+[ER 形式における XML 要素の実行の延期](er-defer-xml-element.md#Example)記事の例をまだ完了していない場合、次のサンプル ER ソリューションの [構成](general-electronic-reporting.md#Configuration) をダウンロードしてください。
 
 | コンテンツの説明            | ファイル名 |
 |--------------------------------|-----------|
@@ -93,7 +93,7 @@ ms.locfileid: "8323693"
 ### <a name="activate-a-configurations-provider"></a>コンフィギュレーション プロバイダーの有効化
 
 1. **組織管理** \> **ワークスペース** \> **電子申告** の順に移動します。
-2. **ローカライズのコンフィギュレーション** ページの **コンフィギュレーション プロバイダー** セクションで、Litware, Inc. (`http://www.litware.com`) サンプル会社の [コンフィギュレーション プロバイダー](general-electronic-reporting.md#Provider) がリストに表示されていること、および有効としてマークされていることを確認します。 このコンフィギュレーション プロバイダーがリストに表示されない場合、またはアクティブとしてマークされていない場合、[コンフィギュレーション プロバイダーの作成および有効なプロバイダーとしてのマーク付け](./tasks/er-configuration-provider-mark-it-active-2016-11.md) トピックの手順に従ってください。
+2. **ローカライズのコンフィギュレーション** ページの **コンフィギュレーション プロバイダー** セクションで、Litware, Inc. (`http://www.litware.com`) サンプル会社の [コンフィギュレーション プロバイダー](general-electronic-reporting.md#Provider) がリストに表示されていること、および有効としてマークされていることを確認します。 この構成プロバイダーがリストに表示されない場合、またはアクティブとしてマークされていない場合、[構成プロバイダーの作成および有効なプロバイダーとしてのマーク付け](./tasks/er-configuration-provider-mark-it-active-2016-11.md) 記事の手順に従ってください。
 
     ![ローカライズのコンフィギュレーション ページの Litware, Inc. サンプル会社。](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
 

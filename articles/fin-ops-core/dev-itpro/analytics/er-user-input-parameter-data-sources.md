@@ -1,6 +1,6 @@
 ---
 title: USER INPUT PARAMETER データ ソースを使用してレポートのパラメータを指定する
-description: このトピックでは、ユーザー入力パラメータデータ ソースを使用して、生成するレポートのパラメータを指定する方法について説明します。
+description: この記事では、ユーザー入力パラメータデータ ソースを使用して、生成するレポートのパラメータを指定する方法について説明します。
 author: NickSelin
 ms.date: 04/20/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.27
-ms.openlocfilehash: 4e431c9dd59080af17fa073547073037ba233288
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: 62b7a8173416a1d36a2985823d186a7a0e6a7e60
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782316"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872975"
 ---
 # <a name="use-user-input-parameter-data-sources-to-specify-parameters-for-a-report"></a>USER INPUT PARAMETER データ ソースを使用してレポートのパラメータを指定する
 
 [!include[banner](../includes/banner.md)]
 
-[電子レポート](general-electronic-reporting.md) (ER) [モデル マッピング](er-overview-components.md#model-mapping-component) と ER [形式](er-overview-components.md#format-component) コンポーネントをデザインする場合、ER フォーマットの開始の実行前に *USER INPUT PARAMETER* タイプのデータ ソースを使用して実行時にデータ入力フィールドで指定できる必須の値を取得できます。 このトピックでは、現在サポート されている *USER INPUT PARAMETER* データ ソースについて説明します。
+[電子レポート](general-electronic-reporting.md) (ER) [モデル マッピング](er-overview-components.md#model-mapping-component) と ER [形式](er-overview-components.md#format-component) コンポーネントをデザインする場合、ER フォーマットの開始の実行前に *USER INPUT PARAMETER* タイプのデータ ソースを使用して実行時にデータ入力フィールドで指定できる必須の値を取得できます。 この記事では、現在サポート されている *USER INPUT PARAMETER* データ ソースについて説明します。
 
 ## <a name="mandatory-properties"></a><a name="mandatory-properties"></a>必須プロパティ
 

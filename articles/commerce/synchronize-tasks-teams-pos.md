@@ -1,6 +1,6 @@
 ---
 title: Microsoft Teams と Dynamics 365 Commerce POS 間でタスク管理を同期させる
-description: このトピックでは、Microsoft Teams と Dynamics 365 Commerce の販売時点管理 (POS) の間で同期する方法について説明します。
+description: この記事では、Microsoft Teams と Dynamics 365 Commerce の販売時点管理 (POS) の間で同期する方法について説明します。
 author: gvrmohanreddy
 ms.date: 02/17/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b7bb38a415524290d1636eda1f379f3cdcf7e593
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 23da56f4f6aee906aad261939d1c7ef9feac5922
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874872"
 ---
 # <a name="synchronize-task-management-between-microsoft-teams-and-dynamics-365-commerce-pos"></a>Microsoft Teams と Dynamics 365 Commerce POS 間でタスク管理を同期させる
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Teams と Dynamics 365 Commerce の販売時点管理 (POS) の間で同期する方法について説明します。
+この記事では、Microsoft Teams と Dynamics 365 Commerce の販売時点管理 (POS) の間で同期する方法について説明します。
 
 Teams 統合の主な目的の1つは、POS アプリケーションとチーム間でのタスク管理の同期を有効に行う目的の1つです。 店舗の従業員は、POS アプリケーションまたはチームを使用してタスクを管理し、アプリケーションを切り替える必要はありません。
 

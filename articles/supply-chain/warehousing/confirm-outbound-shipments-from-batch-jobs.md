@@ -1,6 +1,6 @@
 ---
 title: バッチ ジョブからの出荷の確認
-description: このトピックでは、出荷準備が完了した転送注文を自動的に確認するバッチ ジョブの設定方法について説明します。
+description: この記事では、出荷準備が完了した積荷の出荷移動オーダー出荷を自動的に確認するバッチ ジョブの設定方法について説明します。
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f68dcfc0c1454ee5b095e186c52faa6c83bf8dc6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 00749a69b17b0064290d7b41ccb2171386716302
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875104"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>バッチ ジョブからの出荷の確認
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、出荷準備が完了した転送注文を自動的に確認するバッチ ジョブの設定方法について説明します。 ここで説明するバッチジョブは、販売注文に対してではなく、転送注文の出荷にのみ適用されます。
+この記事では、出荷準備が完了した積荷の出荷移動オーダー出荷を自動的に確認するバッチ ジョブの設定方法について説明します。 ここで説明するバッチジョブは、販売注文に対してではなく、転送注文の出荷にのみ適用されます。
 
 ## <a name="turn-the-confirm-outbound-shipments-from-batch-jobs-feature-on-or-off"></a>バッチジョブからの出荷を確認する機能のオン/オフを切り替える
 
-このトピックで説明する機能を使用するには、ご利用システムで *バッチジョブからの出荷を確認する* 機能がオンになっている必要があります。 Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *バッチジョブからの出荷を確認する* 機能を検索して、この機能のオン/オフを切り替えることができます。
+この記事で説明する機能を使用するには、ご利用のシステムで *バッチ ジョブからの出荷を確認する* 機能がオンになっている必要があります。 Supply Chain Management のバージョン 10.0.21 では、この機能は既定で有効になっています。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *バッチジョブからの出荷を確認する* 機能を検索して、この機能のオン/オフを切り替えることができます。
 
 ## <a name="process-outbound-shipments"></a>出荷の処理
 

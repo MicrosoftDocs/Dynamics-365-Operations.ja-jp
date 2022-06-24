@@ -1,6 +1,6 @@
 ---
 title: 販売注文の Sales と Supply Chain Management の間の直接同期
-description: このトピックでは、Dynamics 365 Sales と Dynamics 365 Supply Chain Management の間での販売注文の直接同期の実行に使用されるテンプレートと基本的なタスクについて説明します。
+description: この販売注文では、Dynamics 365 Sales と Dynamics 365 Supply Chain Management の間での販売注文の直接同期の実行に使用されるテンプレートと基本的なタスクについて説明します。
 author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: eb41a21395a5d115b779e6b1ef71e9eb1176e28e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 63a9be9bedabe1f15ad8db583151aa7fa480473b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854155"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>販売注文の Sales と Supply Chain Management の間の直接同期
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061521"
 
 
 
-このトピックでは、Dynamics 365 Sales と Dynamics 365 Supply Chain Management の間での販売注文の直接同期の実行に使用されるテンプレートと基本的なタスクについて説明します。
+この販売注文では、Dynamics 365 Sales と Dynamics 365 Supply Chain Management の間での販売注文の直接同期の実行に使用されるテンプレートと基本的なタスクについて説明します。
 
 ## <a name="data-flow-in-prospect-to-cash"></a>見込み客の現金化へのデータフロー
 
@@ -203,7 +203,7 @@ Sales での割引計算モデルは、Supply Chain Management の割引計算�
 
 [![データ統合のテンプレート マッピング、販売注文 (Sales から Supply Chain Management) - 直接: OrderLine。](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [見込顧客の現金化](prospect-to-cash.md)
 

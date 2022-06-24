@@ -1,6 +1,6 @@
 ---
 title: 連結財務諸表の生成
-description: このトピックでは、連結財務諸表を生成することがあるさまざまなシナリオについて説明します。
+description: この記事では、連結財務諸表を生成することがあるさまざまなシナリオについて説明します。
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: c6a132b742414a3dab635634c7bb5ba0dbea527d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846802"
 ---
 # <a name="generate-consolidated-financial-statements"></a>連結財務諸表の生成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、連結財務諸表を生成することがあるさまざまなシナリオについて説明します。
+この記事では、連結財務諸表を生成することがあるさまざまなシナリオについて説明します。
 
 ## <a name="single-level-and-multilevel-consolidations-across-legal-entities"></a>法人間での単一レベルおよび複数レベルの連結
 財務報告を使用して連結する最も簡単なメソッドは、レポート ツリーを使用して、同一の勘定科目表と会計年度期間を持つ会社間でデータを集計することです。 レポート ツリーを使用して連結する大まかな手順を次に示します。
@@ -153,7 +153,7 @@ ms.locfileid: "8716526"
 ![オプションのレポート定義の期間番号。](./media/options-report-definition-period-number.png "オプションのレポート定義の期間番号")
 
 ## <a name="business-unit-consolidations"></a>事業単位の連結
-このトピックでは、連結用の財務諸表にレポート ツリー定義と組織階層を使用することについて説明しています。 レポート ツリーを使用して、世界中の販売または工程に関するレポートなどの事業単位連結レポートを作成することもできます。 これらのレポートは、一般的な要件です。 それらを作成するには、連結したい各単位の会社と分析コードを選択します。 たとえば、次の図で業務単位のロールアップは **会社** 列 (列 A) で各会社を繰り返し、**分析コード** 列 (列 D) で会社ごとに部門分析コード値のグループを識別します。
+この記事では、連結用の財務諸表にレポート ツリー定義と組織階層を使用することについて説明しています。 レポート ツリーを使用して、世界中の販売または工程に関するレポートなどの事業単位連結レポートを作成することもできます。 これらのレポートは、一般的な要件です。 それらを作成するには、連結したい各単位の会社と分析コードを選択します。 たとえば、次の図で業務単位のロールアップは **会社** 列 (列 A) で各会社を繰り返し、**分析コード** 列 (列 D) で会社ごとに部門分析コード値のグループを識別します。
 
 ![業務単位の連結レポート。](./media/business-unit-consolidation-reports.png "業務単位の連結レポート")
 
@@ -218,7 +218,7 @@ ms.locfileid: "8716526"
 
 ## <a name="additional-resources"></a>その他のリソース
 
-連結および通貨換算の詳細については、このトピックの親トピック、[財務連結および通貨換算の概要](./financial-consolidations-currency-translation.md) を参照してください。
+連結および通貨換算の詳細については、この記事の親記事、[財務連結および通貨換算の概要](./financial-consolidations-currency-translation.md) を参照してください。
 
 オンライン連結の詳細を入力する方法については、[オンライン財務連結](./consolidate-online.md) を参照してください。
 

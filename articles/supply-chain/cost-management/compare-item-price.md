@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f88dd1c23153d325709e28b056f902b555f05376
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675378"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846216"
 ---
 # <a name="compare-item-prices-storage-report"></a>品目価格の保管レポートの比較
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Supply Chain Management の対話型ページまたはいくつかの形式のいずれかのエクスポートされたドキュメントとして、**品目価格保管の比較** レポートの実行方法とデジタルで利用可能な出力の作成方法を説明します。
+この記事では、Dynamics 365 Supply Chain Management の対話型ページまたはいくつかの形式のいずれかのエクスポートされたドキュメントとして、**品目価格保管の比較** レポートの実行方法とデジタルで利用可能な出力の作成方法を説明します。
 
 ブラウザーのレポートを表示する際、コンフィギュレーションされているレイアウトに応じて、列と集計残高が動的に調整されます。 結果の並べ替え、フィルター処理、データのドリル ダウンなどを行うことができます。
 

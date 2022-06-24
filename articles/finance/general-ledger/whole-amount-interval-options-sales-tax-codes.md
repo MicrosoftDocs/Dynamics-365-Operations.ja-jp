@@ -1,6 +1,6 @@
 ---
-title: 消費税コードの合計額と間隔計算オプション
-description: このトピックでは、消費税コードの計算方法フィールドのオプションと、範囲金額と合計額の売上税計算方法について説明します。
+title: 売上税コードの合計額と間隔計算オプション
+description: この記事は、売上税コードの [計算方法] フィールドのオプションと、範囲金額および合計額の売上税計算方法を説明します。
 author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f06c92f2151f54a7d9b684b9687b786d1e4cd7a
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5b02a0ced8b556cfc5a984d24ceaf982629fd69c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727457"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874464"
 ---
-# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>消費税コードの合計額と間隔計算オプション
+# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>売上税コードの合計額と間隔計算オプション
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、消費税コードの **計算方法** フィールドのオプションと、範囲金額と合計額の消費税の計算方法について説明します。
+この記事では、消費税コードの **計算方法** フィールドのオプションと、範囲金額と合計額の消費税の計算方法について説明します。
 
 売上税コードは、合計額と範囲金額のいずれかで計算する設定ができます。 **消費税コード** ページで、**計算** クイック タブの **計算方法** フィールドで消費税コードの計算方法を選択します。
 - [合計額] – 課税対象額全体に税率が適用されます。

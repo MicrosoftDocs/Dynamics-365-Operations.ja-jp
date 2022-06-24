@@ -1,6 +1,6 @@
 ---
 title: 固定資産の減価償却方法
-description: このトピックは、固定資産の減価償却方法の概要について説明します。
+description: この記事は、固定資産の減価償却方法の概要について説明します。
 author: moaamer
 ms.date: 09/04/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e151d20fbfb9aa8fca9afc5be4f112b3de13cc7
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 6d791461a344611437e77514e47dd5dd9b7ddb10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719863"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858395"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>固定資産の減価償却方法
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、固定資産の減価償却方法の概要について説明します。 減価償却方法は、固定資産の取得年および処分年の両方で減価償却を計算するタイミングと方法を決定するのに使用されます。
+この記事は、固定資産の減価償却方法の概要について説明します。 減価償却方法は、固定資産の取得年および処分年の両方で減価償却を計算するタイミングと方法を決定するのに使用されます。
 
 固定資産グループ帳簿の設定に、減価償却方法が割り当てられます。 減価償却方法を表示または割り当てるには、固定資産の設定エリアで **固定資産** グループを選択します。 **帳簿** ボタンを選択します。 この場合、割り当てられている減価償却方法は、固定資産帳簿の作成時に、既定値として使用されます。 減価償却方法は、個々の固定資産帳簿にも設定できます。 これを行うには、固定資産の設定エリアで **帳簿** を選択してから、**固定資産グループ** ボタンを選択します。
 

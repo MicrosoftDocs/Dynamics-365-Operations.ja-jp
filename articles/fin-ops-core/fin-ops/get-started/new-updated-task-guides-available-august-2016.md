@@ -1,6 +1,6 @@
 ---
 title: 新規または更新されたタスク ガイド (2016 年 8 月)
-description: このトピックでは、 Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
+description: この記事では、 Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: be2dbf8307baa37549e2e81ec05f067ab82bfda8e77cace6a4f4731a84f2776d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16777901e66aeac93c8e0bbd2ee024a033fe5b52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733080"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886553"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>新規または更新されたタスク ガイド (2016 年 8 月)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、 Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
+この記事では、 Microsoft Dynamics AX の Microsoft (2016 年 8 月 - すべての言語) APQC 統合ライブラリにリリースされた新規または更新されたタスク ガイドを示します。 新規の「はじめに」ライブラリは、リリースされていません。
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX 用の APQC 統合ライブラリに含まれるタスク ガイド (2016 年 8 月 - すべての言語) 
 
-APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Microsoft Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月)、Dynamics AX 2016 年 5 月アプリケーション更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、 [Finance and Operations ホームページの新機能および変更された機能](whats-new-changed.md) を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、[ヘルプ システム](help-overview.md) を参照してください。
+APQC 統合ライブラリ (2016 年 8 月 - すべての言語) には、Microsoft Dynamics AX プラットフォーム更新プログラム 2 (2016 年 8 月)、Dynamics AX 2016 年 5 月アプリケーション更新プログラム、および Microsoft Dynamics AX 2016 年 2 月リリースのヘルプの使用を想定したタスク ガイドが含まれています。 これらのリリースに関する詳細については、[Finance and Operations ホーム ページの新機能および変更された機能](whats-new-changed.md) を参照してください。 ローカライズ版のタスク ガイドは、このライブラリで使用できます。 タスク ガイド ライブラリのヘルプ システムを接続する方法の詳細については、[ヘルプ システム](help-overview.md) を参照してください。
 
 ### <a name="data-access"></a>データ アクセス
 

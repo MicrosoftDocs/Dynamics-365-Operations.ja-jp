@@ -1,6 +1,6 @@
 ---
 title: 予測、作業指示書、およびプロジェクト
-description: このトピックでは、資産管理におけるプロジェクト管理および会計モジュールの、予測および作業指示書との統合について説明します。
+description: この記事では、資産管理におけるプロジェクト管理および会計モジュールの、予測および作業指示書との統合について説明します。
 author: johanhoffmann
 ms.date: 08/29/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b53dcf4e8796f808283b7bd5ea92b869ee0e59aac5359d74bcdc5de37ea7352
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80f0380d50a0c050242846c0c3e70bc1a0bd6bf5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880454"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>予測、作業指示書、およびプロジェクト
 

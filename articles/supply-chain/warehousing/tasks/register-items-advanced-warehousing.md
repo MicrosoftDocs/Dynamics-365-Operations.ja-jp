@@ -1,6 +1,6 @@
 ---
 title: 品目の着荷仕訳帳を使用した高度な倉庫管理に対応した品目の登録
-description: このトピックでは、高度な倉庫管理プロセスを使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示すシナリオを示します。
+description: この記事では、高度な倉庫管理プロセスを使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示すシナリオについて説明します。
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,22 +14,22 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565258"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863624"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>品目の着荷仕訳帳を使用した高度な倉庫管理に対応した品目の登録
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、高度な倉庫管理プロセスを使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示すシナリオを示します。 これは通常、入荷係により行われます。
+この記事では、高度な倉庫管理プロセスを使用する場合に、着荷仕訳帳を使用して品目を登録する方法を示すシナリオについて説明します。 これは通常、入荷係により行われます。
 
 ## <a name="enable-sample-data"></a>サンプルデータの有効化
 
-このトピックで指定したサンプルのレコードと値を使用してこのシナリオを実行するには、標準のデモ データがインストールされているシステムを使用している必要があります。また、開始する前に *USMF* 法人を選択する必要があります。
+この記事で指定したサンプルのレコードと値を使用してこのシナリオを実行するには、標準のデモ データがインストールされているシステムを使用している必要があります。また、開始する前に *USMF* 法人を選択する必要があります。
 
 代わりに、次のデータがある場合は、独自のデータから値を代入してこのシナリオを実行できます。
 

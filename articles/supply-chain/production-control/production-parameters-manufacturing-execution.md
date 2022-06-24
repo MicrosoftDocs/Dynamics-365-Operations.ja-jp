@@ -1,6 +1,6 @@
 ---
 title: 製造実行の生産パラメーター
-description: このトピックでは、製造実行における生産パラメータの設定に関する情報を提供します。
+description: この記事では、製造実行における生産パラメータの設定に関する情報について説明します。
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ce0dadd353df756a468384e3bf8e68c0ad2033a7042b4986fce41aa0764afdbc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752733"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873669"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>製造実行の生産パラメーター
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、製造実行における生産パラメータの設定に関する情報を提供します。
+この記事では、製造実行における生産パラメータの設定に関する情報について説明します。
 
 **製造実行** モジュールは、主に製造会社を対象としています。 生産ジョブやプロジェクトでの時間と品目の消費を登録するために使用できます。 ジョブ登録の製造実行モジュールの使用を開始する前に、最初に生産プロセスで登録をいつどのように転記するかを定義するさまざまな生産パラメータを設定する必要があります。 生産パラメータの設定は、在庫管理、生産管理、および原価計算に影響します。
 

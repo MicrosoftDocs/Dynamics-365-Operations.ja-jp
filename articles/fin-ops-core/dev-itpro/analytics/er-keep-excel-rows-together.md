@@ -1,6 +1,6 @@
 ---
 title: 同じ Excel ページに行をまとめる ER 形式を設計する
-description: このトピックでは、同じ Microsoft Excel ページで一緒に行を維持する電子レポート (ER) 形式を設計する方法について説明します。
+description: この記事では、同じ Microsoft Excel ページで一緒に行を維持する電子レポート (ER) 形式を設計する方法について説明します。
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 98e6dd4f926908f65239f3e4f3608f9c9408f9d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612373"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854672"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>同じ Excel ページに行をまとめる ER 形式を設計する
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、システム管理者または電子報告書業務コンサルタントの役割を持つユーザーが、[電子レポート (ER)](general-electronic-reporting.md)[形式](er-overview-components.md#format-component) を構成して、Microsoft Excel で送信文書を生成し、文書のページ設定を管理する方法について説明します。
+この記事では、システム管理者または電子報告書業務コンサルタントの役割を持つユーザーが、[電子申告 (ER)](general-electronic-reporting.md)[形式](er-overview-components.md#format-component) を構成して、Microsoft Excel で送信文書を生成し、文書のページ設定を管理する方法について説明します。
 
 この例では、Excel で自由書式の請求書を印刷するために使用される Microsoft 提供の ER 形式を変更します。 変更を行った場合、生成された自由形式請求書レポートの改ページ位置の自動修正を管理して、可能であれば単一の請求明細のすべての行が同じページに保持されます。
 
-このトピックの手順は、**USMF** 会社で完了することができます。 コーディングは必要ありません。
+この記事の手順は、**USMF** 会社で完了することができます。 コーディングは必要ありません。
 
 この例では、サンプル会社 **Litware, Inc.** に必要な ER [構成](general-electronic-reporting.md#Configuration) を作成します。 **Litware, Inc.** (`http://www.litware.com`) サンプル会社の構成プロバイダーが ER フレームワークにリストされており、**有効** アクティブとマークされていることを確認します。 この構成プロバイダーがリストに表示されない場合、または **有効** としてマークされていない場合、[構成プロバイダーの作成および有効としてマーク付け](tasks/er-configuration-provider-mark-it-active-2016-11.md) の手順に従ってください。
 
@@ -73,7 +73,7 @@ ms.locfileid: "8612373"
 
     ![Excel デスクトップ アプリケーションで生成された自由形式請求書の改ページ位置の自動修正を確認する。](./media/er-keep-excel-rows-together-invoice1.gif)
 
-このトピックの残りの手順では、標準 ER 形式を調整して、同じページの単一請求明細行のすべてのコンテンツを維持することで、請求書レポートの外観と読み取りを向上させる方法を示します。
+この記事の残りの手順では、標準 ER 形式を調整して、同じページの単一請求明細行のすべてのコンテンツを維持することで、請求書レポートの外観と読み取りを向上させる方法を示します。
 
 ## <a name="create-a-custom-format"></a> カスタム形式の作成
 

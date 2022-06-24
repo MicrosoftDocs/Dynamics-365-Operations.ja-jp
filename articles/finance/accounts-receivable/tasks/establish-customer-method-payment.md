@@ -1,6 +1,6 @@
 ---
 title: 顧客の支払方法の設定
-description: このトピックでは、顧客支払の方法の作成について説明します。
+description: この記事では、顧客支払の方法の作成について説明します。
 author: ShivamPandey-msft
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9e8974ea20497124e24e95b3761317daf126839
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f3843ce596d054263b69ccc577f3885970fe49d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861505"
 ---
 # <a name="establish-customer-method-of-payment"></a>顧客の支払方法の設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、顧客支払の方法の作成について説明します。 このタスクでは、USMF というデモ会社を使用します。
+この記事では、顧客支払の方法の作成について説明します。 このタスクでは、USMF というデモ会社を使用します。
 
 1. ナビゲーション ウィンドウで、**モジュール > 売掛金勘定 > 支払設定 > 支払方法** に移動します。
 2. **新規** を選択します。

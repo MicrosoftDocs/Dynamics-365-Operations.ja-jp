@@ -1,6 +1,6 @@
 ---
 title: ER 形式の新しい基準バージョンを採用してその形式をアップグレードする
-description: このトピックでは、電子申告 (ER) 形式のコンフィギュレーションを管理する方法について説明します。
+description: この記事では、電子申告 (ER) 形式の構成を管理する方法について説明します。
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfcb85d964234063fd3c6a8e5ea29f7b222e966124b48e46b72b04f457c91e6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5dbf8ab2ea875e902709215e249871474b17230f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883512"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER 形式の新しい基準バージョンを採用してその形式をアップグレードする
 
@@ -119,7 +119,7 @@ Proseware、Inc. は、自身のサービスの定期売買に従って電子支
     作成したコンフィギュレーションが完了したバージョン 1.1.1 として保存されることに注意してください。 これは、BACS の関税 (英国企業の関税) 形式のバージョン 1 であることを意味します。これは BACS (英国企業) 形式のバージョン 1、および支払 (単純化モデル) データ モデルのバージョン 1 に基づきます。  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>カスタマイズされた形式の支払ファイル生成テストの実行
-並列する Finance and Operations のセッションで 「作成した形式を使用して支払い用の電子文書を生成する」 の手順を完了します。 電子支払方法のパラメーターで BACS (英国関税) 形式を選択します。 作成した支払ファイルに、地域要件に対応した IBAN コードを表す最新の XML ノードが含まれていることを確認します。  
+財務と運用アプリの並列セッションの "作成済みの形式を使用して支払用の電子ドキュメントを生成" 手順内のステップを実行します。 電子支払方法のパラメーターで BACS (英国関税) 形式を選択します。 作成した支払ファイルに、地域要件に対応した IBAN コードを表す最新の XML ノードが含まれていることを確認します。  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>既存の国固有のコンフィギュレーションの更新
 電子ドキュメントの形式を管理するために、Litware, Inc. は BACS (英国の企業) コンフィギュレーションを更新し、新しい国要件を採用する必要があります。 これは後に、Proseware, Inc. を含むサービスのサブスクライバーに提供される、このコンフィギュレーションの新しいバージョンに取り入れられます。  
@@ -239,7 +239,7 @@ Proseware, Inc. は最近発表された国固有の要件に従った電子支�
     作成したコンフィギュレーションが完了済のバージョン 1.2.2 として保存されていることに注意してください: 支払 (単純化モデル) データ モデルのバージョン 1 に基づく基準 BACS (英国関税) 形式のバージョン 2 に基づく基準 BACS (英国の企業) 形式のバージョン 2。  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>カスタマイズされた形式の支払ファイル生成テストの実行
-並列する Finance and Operations セッションで 「作成されたフォーマットを使用して支払い用の電子文書を生成する」 の手順を完了します。 電子支払方法のパラメーターで作成した 「BACS (英国関税)」 形式を選択します。 Proseware, Inc. が最近導入した、地域要件に対応した IBAN 口座コードを表す XML ノードが作成した支払ファイルに含まれていることを確認します。 ファイルには Litware, Inc. が最近導入した、国要件に沿った SWIFT 銀行コードを表す XML ノードも含まれている必要があります。  
+財務と運用アプリの並列セッションの "作成済みの形式を使用して支払用の電子ドキュメントを生成" 手順内のステップを実行します。 電子支払方法のパラメーターで作成した 「BACS (英国関税)」 形式を選択します。 Proseware, Inc. が最近導入した、地域要件に対応した IBAN 口座コードを表す XML ノードが作成した支払ファイルに含まれていることを確認します。 ファイルには Litware, Inc. が最近導入した、国要件に沿った SWIFT 銀行コードを表す XML ノードも含まれている必要があります。  
 
 
 

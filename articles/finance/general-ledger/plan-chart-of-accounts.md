@@ -1,6 +1,6 @@
 ---
 title: 勘定科目表の計画
-description: このトピックでは、組織の勘定科目表を計画する際に役立つ情報を提供します。
+description: この記事では、組織の勘定科目表を計画する際に役立つ情報を提供します。
 author: aprilolson
 ms.date: 04/02/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734276a736cfdb91ec3a129c83dae1c0a6d3955
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853351"
 ---
 # <a name="plan-your-chart-of-accounts"></a>勘定科目表の計画
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、組織の勘定科目表を計画する際に役立つ情報を提供します。
+この記事では、組織の勘定科目表を計画する際に役立つ情報を提供します。
 
 組織の財務情報を追跡および管理するには、勘定科目表を設定します。 勘定科目表は、財務フレームワークを定義する勘定の集合です。 これらの勘定でトランザクションをさらに追跡するには、区分を追加することができます。 これらのセグメントは、財務分析コードと呼ばれます。 たとえば、経費勘定には、部門、コスト センター、および目的という財務分析コードが含まれる場合があります。 ユーザー定義のルールは、これらの財務分析コードを主勘定およびその他の財務分析コードに関連付ける方法や、トランザクションを入力する方法を指示します。 これらのユーザー定義のルールは勘定構造または詳細ルールと呼ばれます。
 

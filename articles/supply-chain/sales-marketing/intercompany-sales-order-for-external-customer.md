@@ -1,6 +1,6 @@
 ---
 title: 外部顧客に対する会社間販売注文書の作成および請求
-description: このトピックでは、外部顧客に対する会社間販売注文書の作成および請求方法について説明します
+description: この記事では、外部顧客に対する会社間販売注文書の作成および請求方法について説明します
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c8a22ded1a6242e4062e1ce9e0ce624d4579fba9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: cd42551730ab0123813a3b5a0b5a4b1c334e9d30
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669391"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852160"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>外部顧客に対する会社間販売注文書の作成および請求
 

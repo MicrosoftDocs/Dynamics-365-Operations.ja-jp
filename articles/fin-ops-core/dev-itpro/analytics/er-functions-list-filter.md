@@ -1,6 +1,6 @@
 ---
 title: FILTER ER 関数
-description: このトピックでは、FILTER 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、FILTER 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 12/14/2021
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e857306574dda7bad5dd25fc7708514997d8e86f
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: dfa4afdcfad8c1855a10e1fa37c36cc5b20682ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922426"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884520"
 ---
 # <a name="filter-er-function"></a>FILTER ER 関数
 

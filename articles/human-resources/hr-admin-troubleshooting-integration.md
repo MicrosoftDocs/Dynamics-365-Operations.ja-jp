@@ -1,6 +1,6 @@
 ---
 title: Finance FAQ との統合
-description: このトピックでは、Human Resources および Finance 統合でどのデータが同期されるのかについて説明します。
+description: この記事では、人事管理および Finance 統合でどのデータが同期されるのかについて説明します。
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9b83250bdb54ea6e78709dd3a3ea434a994f6211
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694007"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879282"
 ---
 # <a name="integration-with-finance-faq"></a>Finance FAQ との統合
 
@@ -29,7 +29,7 @@ ms.locfileid: "8694007"
 
 
 
-このトピックでは、Dynamics 365 Human Resources が Dynamics 365 Finance に統合される際にどのデータが同期されるかに関連した一般的な質問に回答します。
+この記事では、Dynamics 365 Human Resources が Dynamics 365 Finance に統合される際にどのデータが同期されるかに関連した一般的な質問に回答します。
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Power Apps で Dynamics 365 Talent アプリケーションを編集することはできますか。
 

@@ -1,6 +1,6 @@
 ---
 title: 法人を作成します
-description: このトピックでは、Microsoft Dynamics 365 Commerce で法人を作成する方法について説明していますが、チャネルを作成する前に作成してコンフィギュレーションする必要があります。
+description: この記事では、Microsoft Dynamics 365 Commerce で法人を作成する方法について説明していますが、チャネルを作成する前に作成してコンフィギュレーションする必要があります。
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c9812a828cb159400c6388f02f10e00694aa64ad
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: 160dd82298705eab9edecb9d30d051382b6b4471
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809535"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847709"
 ---
 # <a name="create-legal-entities"></a>法人を作成します
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で法人を作成する方法について説明していますが、チャネルを作成する前に作成してコンフィギュレーションする必要があります。
+この記事では、Microsoft Dynamics 365 Commerce で法人を作成する方法について説明していますが、チャネルを作成する前に作成してコンフィギュレーションする必要があります。
 
 法人とは、登記または法的手続きを済ませた法律上の構造を持つ組織です。 法人には、法的契約の締結が認められており、業績を報告する収支報告書の作成が義務付けられています。
 

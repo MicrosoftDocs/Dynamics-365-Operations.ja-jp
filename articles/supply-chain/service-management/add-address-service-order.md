@@ -1,6 +1,6 @@
 ---
 title: 住所をサービス注文に追加する
-description: このトピックでは、サービス注文に顧客の住所を追加する方法について説明します。
+description: この記事では、サービス注文に顧客の住所を追加する方法について説明します。
 author: sorenva
 ms.date: 05/02/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 560d0c58aebe652e668cc0ec3ed05d84f004872e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ce58ff7bbb491fd2d250b8986d02fca04bd5fad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672881"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844738"
 ---
 # <a name="add-an-address-to-a-service-order"></a>住所をサービス注文に追加する    
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、サービス注文に顧客の住所を追加する方法について説明します。 サービス注文を作成する際、住所情報は、そのサービス注文が関連付けられているプロジェクトから転送されます。 ただし、顧客、仕入先、サイト、倉庫、サービス注文およびプロジェクトの Microsoft Dynamics AX に既に入力した住所から別の場所を選択することができます。
+この記事では、サービス注文に顧客の住所を追加する方法について説明します。 サービス注文を作成する際、住所情報は、そのサービス注文が関連付けられているプロジェクトから転送されます。 ただし、顧客、仕入先、サイト、倉庫、サービス注文およびプロジェクトの Microsoft Dynamics AX に既に入力した住所から別の場所を選択することができます。
 
 また、新しい住所を作成することもできます。 既定では、新しい住所はプロジェクトに転送されます。 ただし、新しい住所がサービスのこのインスタンスにのみ関連するよう指定できます。 その場合、新しい住所はプロジェクトに転送されません。
 

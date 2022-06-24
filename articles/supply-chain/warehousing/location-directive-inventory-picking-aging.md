@@ -1,6 +1,6 @@
 ---
 title: 場所のディレクティブ在庫ピッキング エイジング
-description: このトピックでは、ピッキング中の先入れ先出し (FIFO) と後入れ先出し (LIFO) の場所ディレクティブ戦略の使用方法について説明します。
+description: この記事では、ピッキング中の先入れ先出し (FIFO) と後入れ先出し (LIFO) の場所ディレクティブ戦略の使用方法について説明します。
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 229dd0033e3eae4bdd33acca6736b7a9feec8c9b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676274"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885699"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>場所のディレクティブ在庫ピッキング エイジング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、ピッキング中の先入れ先出し (FIFO) と後入れ先出し (LIFO) の場所ディレクティブ戦略の使用方法について説明します。 これらの戦略は、場所に対して記録されるエイジング日付と連携して機能し、在庫が倉庫に最初に入ったときを追跡します。 *場所のディレクティブ在庫ピッキング エイジング* 機能は、場所の日付を使用してエイジングを決定します。 *倉庫の場所の状態* 機能により、ライセンス プレートの日付に基づいて、場所の日付が更新されます。
+この記事では、ピッキング中の先入れ先出し (FIFO) と後入れ先出し (LIFO) の場所ディレクティブ戦略の使用方法について説明します。 これらの戦略は、場所に対して記録されるエイジング日付と連携して機能し、在庫が倉庫に最初に入ったときを追跡します。 *場所のディレクティブ在庫ピッキング エイジング* 機能は、場所の日付を使用してエイジングを決定します。 *倉庫の場所の状態* 機能により、ライセンス プレートの日付に基づいて、場所の日付が更新されます。
 
 FIFO と LIFO 戦略を使用して、在庫が倉庫に入った日付に基づいて、バッチ追跡品目と非バッチ追跡品目の両方を出荷できます。 この機能は、有効期限が並べ替えに使用できない、非バッチ追跡の在庫に特に役立ちます。
 

@@ -1,8 +1,8 @@
 ---
 title: 計画の履歴と計画ログの表示
-description: このトピックでは、計画の最適化機能によってトリガーされる計画ジョブの履歴を表示する方法について説明します。
+description: この記事では、計画の最適化機能によってトリガーされる計画ジョブの履歴を表示する方法について説明します。
 author: t-benebo
-ms.date: 10/30/2019
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,22 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9b4cba4dd94eb198e770d152d4f759a706065dee
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469760"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863943"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>計画の履歴と計画ログの表示
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management で計画の最適化機能によってトリガーされる計画ジョブの履歴を表示する方法について説明します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management で計画の最適化機能によってトリガーされる計画ジョブの履歴を表示する方法について説明します。
 
 計画の履歴を表示するには、**マスター プラン** \> **設定** \> **計画** \> **マスター プラン** の順に移動して **履歴** を選択することにより、計画を開きます。 履歴には、選択された計画のすべてのジョブが一覧表示されます。 一覧には、完了ジョブおよび有効なジョブが含まれます。
 
-計画の最適化マスター プラン実行のジョブ履歴は、マスター プランごとに最大 60 件のレコードまで保持されます。 新しいマスター プラン計算を実行するたびに、その計画の最も早い履歴レコードが削除されます。
+システムでは、マスター プランごとに最大 60 件の履歴レコードが保持され、30 日以上が過ぎた古いレコードが削除されます。 新しいマスター プラン計算を実行するたびに、システムは新しい履歴レコードを追加し、必要に応じて最も古いレコードをクリーンアップします。
 
 ジョブの開始時刻とステータスが表示されるのに加えて、特定のジョブのログも表示できます。 ログには、追加の情報および警告が含まれます。 すべてのジョブにログがあるわけではありません。 ジョブのログを表示するには、**ログ** を選択します。 ログ エントリは、ジョブが完了した日から 30 日間のみ、自動的に削除された後に保存されます。
 

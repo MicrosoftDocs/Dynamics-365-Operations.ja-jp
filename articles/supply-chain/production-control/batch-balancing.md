@@ -1,6 +1,6 @@
 ---
 title: バッチ バランシング
-description: このトピックでは、バッチ バランシング プロセスについて説明します。
+description: この記事では、バッチ バランシング プロセスについて説明します。
 author: johanhoffmann
 ms.date: 01/04/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a9e69b4d9213e57e5a920c7adda934ba845d17410c17d9c8a6356d717870ac23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780079"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856051"
 ---
 # <a name="batch-balancing"></a>バッチ バランシング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、バッチ バランシング プロセスのサポート方法について説明します。
+この記事では、バッチ バランシング プロセスのサポート方法について説明します。
 
 詳細については、[バッチ バランシングのビデオ](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)を参照してください。
 
@@ -149,7 +149,7 @@ ms.locfileid: "6780079"
 バッチ バランシング プロセスは、**バッチ バランシング** ページから実行されます。
 **原価管理 \> バッチ オーダー** を選択し、そして **プロセス** タブ上で **バッチ バランシング** を選択します。 バッチ バランシングは、ステータスが **開始済** のバッチ オーダーで使用できます。
 
-一般的に、フォーミュラに、**成分タイプ** が *有効* であるフォーミュラ明細行が 1 つ以上ある場合、バッチ バランシングをバッチ オーダーに適用することができます。 (このルールの例外については、このトピックの後半の「バッチ バランシングには適用されないバッチ オーダー」を参照してください)。
+一般的に、フォーミュラに、**成分タイプ** が *有効* であるフォーミュラ明細行が 1 つ以上ある場合、バッチ バランシングをバッチ オーダーに適用することができます。 (このルールの例外については、この記事の後半の「バッチ バランシングには適用されないバッチ オーダー」を参照してください)。
 
 バッチ バランシング プロセスは、2つのサブプロセスに分割することができます。
 

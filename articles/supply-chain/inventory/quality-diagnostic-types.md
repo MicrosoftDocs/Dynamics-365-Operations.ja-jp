@@ -1,6 +1,6 @@
 ---
 title: 不適合の診断タイプ
-description: このトピックでは、不適合で使用できる診断タイプの使用方法および作成方法について説明します。
+description: この記事では、不適合で使用できる診断タイプの使用方法および作成方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edaa3a8b5c6446f039f33589166d832dcd9d0b9a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 87b7a051f807c9faab3169d2672d47f663892225
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852450"
 ---
 # <a name="diagnostic-types-for-nonconformances"></a>不適合の診断タイプ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、不適合で使用できる診断タイプの使用方法および作成方法について説明します。
+この記事では、不適合で使用できる診断タイプの使用方法および作成方法について説明します。
 
 診断アクションの分類を定義するには、**診断タイプ** ページを使用します。 その後、不適合に対する修正を作成するときに、診断を選択します。 訂正は、承認された不適合に対して行う必要のある診断アクションのタイプ、担当者などを指定します。 また、要求された完了日、予定完了日を指定します。
 

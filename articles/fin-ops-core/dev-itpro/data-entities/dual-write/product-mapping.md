@@ -1,6 +1,6 @@
 ---
-title: 製品の統合エクスペリエンス
-description: このトピックでは、財務と運用アプリと Dataverse 間の製品データの統合について説明します。
+title: 統一された製品経験
+description: この記事では、財務と運用アプリと Dataverse 間の製品データの統合について説明します。
 author: t-benebo
 ms.date: 12/12/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1b3dc1d16fc34992df0c9478b8b4d163c310b67b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a8071887678f16a0b8ee075d2aa24a07e4df5319
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885001"
 ---
 # <a name="unified-product-experience"></a>製品の統合エクスペリエンス
 
@@ -126,7 +126,7 @@ Dynamics 365 Sales からの製品ファミリーの作成は、製品の二重�
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>既定の注文設定と製品固有の既定の注文設定
 
-既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 この情報は、既定の注文設定と製品固有の既定の注文設定エンティティを使用して Dataverse で利用できます。 機能の詳細については、[既定の注文設定トピック](../../../../supply-chain/production-control/default-order-settings.md) を参照してください。
+既定の注文設定は、品目が供給または保管されるサイトおよび倉庫、取引または在庫管理のために使用される最小、最大、複数、標準数量、リード タイム、停止フラグ、注文納期メソッドを定義します。 この情報は、既定の注文設定と製品固有の既定の注文設定エンティティを使用して Dataverse で利用できます。 機能の詳細については、[既定の注文設定記事](../../../../supply-chain/production-control/default-order-settings.md) を参照してください。
 
 財務と運用アプリ | Customer Engagement アプリ |
 ---|---

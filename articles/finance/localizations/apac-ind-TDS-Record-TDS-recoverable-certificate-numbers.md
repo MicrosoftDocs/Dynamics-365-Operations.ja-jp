@@ -1,6 +1,6 @@
 ---
 title: TDS 復元可能証明書番号の記録
-description: このトピックでは、[復元可能な証明書] ページを使用して、特定の仕入先、顧客、または元帳について受け取る源泉徴収 (TDS) 証明書の証明書番号と日付を記録する方法について説明します。
+description: この記事では、復元可能な証明書ページを使用して、特定の仕入先、顧客、または元帳について受け取る源泉徴収 (TDS) 証明書の証明書番号と日付を記録する方法について説明します。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5d62f560fe58a5fb7bd158bed9bcb111d75c7f00
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 513412e292167795fad9d80b68e6e5e14dbd13c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726493"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853259"
 ---
 # <a name="record-tds-recoverable-certificate-numbers"></a>TDS 復元可能証明書番号の記録
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**復元可能な証明書** ページを使用して、特定の仕入先、顧客、または元帳について受け取る源泉徴収 (TDS) 証明書の証明書番号と日付を記録する方法について説明します。 このページでTDSトランザクションについて記録されたTDS証明書番号と日付を更新するには、**証明書の更新** ページ (**一般会計 \>定期処理 \> 源泉徴収税 \> 更新証明書**) を使用します。 TDS 証明書番号の更新完了後は、それらを閉じます。
+この記事では、**復元可能な証明書** ページを使用して、特定の仕入先、顧客、または元帳について受け取る源泉徴収 (TDS) 証明書の証明書番号と日付を記録する方法について説明します。 このページでTDSトランザクションについて記録されたTDS証明書番号と日付を更新するには、**証明書の更新** ページ (**一般会計 \>定期処理 \> 源泉徴収税 \> 更新証明書**) を使用します。 TDS 証明書番号の更新完了後は、それらを閉じます。
 
 TDS 証明書番号と日付けを取得して記録するには、次の手順に従います。
 

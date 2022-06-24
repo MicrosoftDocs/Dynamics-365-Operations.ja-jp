@@ -1,6 +1,6 @@
 ---
 title: B2B eコマース サイトの製品数量制限の設定
-description: このトピックでは、企業間 (B2B) の eコマースサイトに対して製品の数量制限を設定する方法について説明します。
+description: この記事では、企業間 (B2B) の eコマース サイトに対して製品の数量制限を設定する方法について説明します。
 author: josaw1
 ms.date: 01/20/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 18dc138693dc9fb0e8cf8727de77b5f8584cde79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 034441f8f712c676dbcc89f0009361d0a4a65721
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690199"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877008"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>B2B eコマース サイトの製品数量制限の設定
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、企業間 (B2B) の eコマースサイトに対して製品の数量制限を設定する方法について説明します。
+この記事では、企業間 (B2B) の eコマース サイトに対して製品の数量制限を設定する方法について説明します。
 
 ほとんどの製品には、グループ化を定義する単位を持っています。 このグループは、製品の販売方法に影響します。 商品によっては、数量のグループが追加されている場合があります。 このグループにより、製品を個別の単位として販売できるか、複数の単位として販売できるか、また、従う必要がある最小または最大の注文数量制限があるかどうかを決定します。
 

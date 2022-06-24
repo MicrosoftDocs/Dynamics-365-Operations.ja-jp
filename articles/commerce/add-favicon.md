@@ -1,6 +1,6 @@
 ---
-title: お気に入りの追加
-description: このトピックでは、サイトにお気に入りを追加する方法について説明します。
+title: ファビコンの追加
+description: この記事では、サイトにお気に入りを追加する方法について説明します。
 author: bicyclingfool
 ms.date: 08/31/2020
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2047a0c30c9e723c717657475a111181299aaa8d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964735"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855798"
 ---
 # <a name="add-a-favicon"></a>ファビコンの追加
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、サイトにお気に入りを追加する方法について説明します。
+この記事では、サイトにお気に入りを追加する方法について説明します。
 
 お気に入りは小さなグラフィック ファイルで、Web ブラウザー タブ、アドレス バー、閲覧の履歴、およびブックマークやお気に入りなど、その他の場所内に表示されます。 サイトにお気に入りを追加することをお勧めします。それによりブランドを代表して強化し、顧客が閲覧する他のサイトと区別するのに役立ちます。
 
-サイトにはさまざまなサイズとファイル タイプのお気に入りを追加できますが、このトピックでは、単一のお気に入りを追加する方法について説明します。 ただし、同じプロセスと場所を使用して、お気に入りをさらに追加することができます。
+サイトにはさまざまなサイズとファイル タイプのお気に入りを追加できますが、この記事では、単一のお気に入りを追加する方法について説明します。 ただし、同じプロセスと場所を使用して、お気に入りをさらに追加することができます。
 
 ## <a name="upload-a-favicon-to-your-sites-asset-collection"></a>サイトのアセット コレクションにお気に入りをアップロードする
 

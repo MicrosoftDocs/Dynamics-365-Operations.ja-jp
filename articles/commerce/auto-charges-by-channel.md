@@ -1,6 +1,6 @@
 ---
 title: チャンルごとの自動請求の有効化とコンフィギュレーション
-description: このトピックでは、Microsoft Dynamics 365 Commerce でチャネルごとに自動請求を有効にしてコンフィギュレーションする方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce でチャネルごとに自動請求を有効にしてコンフィギュレーションする方法について説明します。
 author: gvrmohanreddy
 ms.date: 03/30/2020
 ms.topic: article
@@ -12,16 +12,16 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d905819d1e0c8223c74509bfb357b3aaa51d20305a2857061eadb0b0ff8f6b9b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93141fe49989a4d7f514009c627db936c11ca8ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727633"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854955"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>チャンルごとの自動請求の有効化とコンフィギュレーション
 
-このトピックでは、Microsoft Dynamics 365 Commerce でチャネルごとに自動請求 (自動請求) を有効にしてコンフィギュレーションする方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce でチャネルごとに自動請求 (自動請求) を有効にしてコンフィギュレーションする方法について説明します。
 
 ## <a name="overview"></a>概要
 

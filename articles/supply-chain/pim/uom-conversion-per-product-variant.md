@@ -1,6 +1,6 @@
 ---
 title: 製品バリアントごとの測定単位の変換
-description: このトピックでは、測定単位の変換を製品バリアントに設定する方法について説明します。 これには、設定の例が含まれています。
+description: この記事では、測定単位の変換を製品バリアントに設定する方法について説明します。 これには、設定の例が含まれています。
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c02252abcaf82cb2aab928949827e25ef7cce8c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a605e510ac8faa1f92e105c9fcc30222ef78e05e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579571"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869636"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>製品バリアントごとの測定単位の変換
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、測定単位の変換を様々な製品バリアントに設定する方法について説明します。
+この記事では、測定単位の変換を様々な製品バリアントに設定する方法について説明します。
 
 管理する必要がある複数の製品を作成する代わりに、製品のバリエーションを使用して1つの製品のバリエーションを作成することができます。 たとえば、製品バリアントは、特定のサイズと色の T シャツである場合があります。
 

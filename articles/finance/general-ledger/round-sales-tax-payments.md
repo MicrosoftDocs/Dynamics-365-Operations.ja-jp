@@ -1,6 +1,6 @@
 ---
-title: 消費税支払と丸めルール
-description: このトピックでは、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。
+title: 売上税の支払と丸めのルール
+description: この記事は、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。
 author: kailiang
 ms.date: 10/29/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff69afae675b9f8824ac0b29b5611420136b6a57
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5c24a9850543e9d08ee1726186f433c7cfd26608
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726553"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865686"
 ---
-# <a name="sales-tax-payments-and-rounding-rules"></a>消費税支払と丸めルール
+# <a name="sales-tax-payments-and-rounding-rules"></a>売上税の支払と丸めのルール
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。
+この記事は、売上税所轄官庁の丸めに関するルールの設定の機能と、売上税の決済と転記のジョブ中に売上税残高を丸める方法を説明します。
 
 定期的に、売上税は税務当局に報告し、支払を行う必要があります。 このアクションは、**売上税** ページで売上税の決済と転記のプロセスを実行することで完了できます。 ある期間の売上税は売上税勘定に対して決済し、売上税残高は売上税決済勘定に転記します。 売上税決済勘定に転記されている売上税残高は、税務当局の要件に応じて **売上税** ページの丸めルールの設定によって丸めることができます。 
 

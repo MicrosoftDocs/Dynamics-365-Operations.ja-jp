@@ -1,6 +1,6 @@
 ---
 title: プロジェクト請求
-description: このトピックでは、時間および素材プロジェクトおよび固定価格プロジェクトでの、プロジェクト請求の概要について説明します。 ここには、仮発行請求書 (仮請求書)、請求の管理、分割払請求、仕入先請求、および貸方票に関する情報が含まれます。
+description: この記事では、時間/実費払プロジェクトおよび固定価格プロジェクトでの、プロジェクト請求の概要を説明します。 ここには、仮発行請求書 (仮請求書)、請求の管理、分割払請求、仕入先請求、および貸方票に関する情報が含まれます。
 author: TaylorVH
 ms.date: 07/10/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: bdb5c9162ab85632c8780a737df0998e4cd34f0c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4af44127d80c943ed9cebeac21d7e9c8372910f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861679"
 ---
 # <a name="project-invoicing"></a>プロジェクト請求
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、時間および素材プロジェクトおよび固定価格プロジェクトでの、プロジェクト請求の概要について説明します。 ここには、仮発行請求書 (仮請求書)、請求の管理、分割払請求、仕入先請求、および貸方票に関する情報が含まれます。
+この記事では、時間/実費払プロジェクトおよび固定価格プロジェクトでの、プロジェクト請求の概要を説明します。 ここには、仮発行請求書 (仮請求書)、請求の管理、分割払請求、仕入先請求、および貸方票に関する情報が含まれます。
 
 適用される請求手順はプロジェクト タイプによって決まります。 時間/実費払プロジェクトと固定価格プロジェクトの 2 つの外部プロジェクト タイプのみ請求できます。 時間/実費払プロジェクトと固定価格プロジェクトは、常にプロジェクト契約に関連付けられます。
 

@@ -1,6 +1,6 @@
 ---
 title: ドキュメントを Excel 形式で生成するためのコンフィギュレーションを設計する
-description: このトピックでは、Excel テンプレートに入力する電子レポート (ER) のフォーマットを設計し、Excel 形式の出力ドキュメントを生成する方法について説明します。
+description: この記事では、Excel テンプレートに入力する電子レポート (ER) のフォーマットを設計し、Excel 形式の出力ドキュメントを生成する方法について説明します。
 author: NickSelin
 ms.date: 05/09/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 4660aaf438ee091eed30387d984746ac2c3b4bd7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811423"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854817"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel 形式でドキュメントを生成する構成を設計する
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811423"
 
 ER フォーマットのコンポーネント を持つ[電子レポート (ER)](general-electronic-reporting.md) フォーマットの構成を設計して、Microsoft Excel ワークブック形式の出力ドキュメントを生成するように構成することができます。 これには、特定の ERフォーマットのコンポーネントを使用する必要があります。
 
-この機能の詳細については、[OPENXML 形式でレポートを生成する構成を設計する](tasks/er-design-reports-openxml-2016-11.md)に記載の手順に従ってください。
+この機能の詳細については、記事 [OPENXML 形式でレポートを生成する構成を設計する](tasks/er-design-reports-openxml-2016-11.md) に記載の手順に従ってください。
 
 ## <a name="add-a-new-er-format"></a>新規 ER 形式の追加
 
@@ -263,7 +263,7 @@ Dynamics 365 Finance のバージョン 10.0.22 では、編集可能な形式�
 
 追加された **フッター** コンポーネントの下に、**テキスト\\列**、**テキスト\\日時**、または他のタイプの要求された入れ子のコンポーネントを追加します。 それらのコンポーネントのバインディングを構成して、ページ フッターの入力方法を指定します。
 
-特別な[形式コード](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) を使用して、生成されるフッターのコンテンツを正しく書式設定することもできます。 この方法を学習するには、このトピックの後半にある[例 1](#example-1) の手順に従います。
+特別な[形式コード](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) を使用して、生成されるフッターのコンテンツを正しく書式設定することもできます。 この方法を学習するには、この記事の後半にある [例 1](#example-1) の手順に従います。
 
 > [!NOTE]
 > 形式を構成する場合は、Excel の[制限](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) と 1 つのヘッダーまたはフッターの最大文字数を必ず考慮してください。

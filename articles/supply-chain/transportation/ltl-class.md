@@ -1,6 +1,6 @@
 ---
 title: トラック 1 台分未満 (LTL) のクラス
-description: このトピックでは、トラック 1 台分未満 (LTL) のクラスについて説明し、Microsoft Dynamics 365 Supply Chain Management での設定方法について説明します。
+description: この記事では、トラック 1 台分未満 (LTL) のクラスについて説明し、Microsoft Dynamics 365 Supply Chain Management での設定方法について説明します。
 author: Weijiesa
 ms.date: 04/05/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a6e05ea7534ee081778a899d5956e6ca7cd104cb
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9ab05e1bc5d0ae2c8b5d98dda32660d2436676e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857202"
 ---
 # <a name="less-than-truckload-ltl-classes"></a>トラック 1 台分未満 (LTL) のクラス
 
@@ -33,7 +33,7 @@ ms.locfileid: "8678069"
 - 国際的な LTL 標準を確認して、各 LTL クラスの梱包要件を決定します。 この方法により、製品が保護され、安全に出荷されることを確認できます。
 - 各製品の LTL 貨物クラスに基づいて、正確な出荷見積を取得します。
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management で LTL クラスを作成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management で LTL クラスを作成する方法について説明します。
 
 ## <a name="create-an-ltl-class"></a>LTL クラスの作成
 

@@ -1,6 +1,6 @@
 ---
 title: 初期顧客支払予測モデルの評価
-description: このトピックでは、顧客支払予測モデルを理解し、その有効性を評価するために実行できる手順について説明します。
+description: この記事では、顧客支払予測モデルを理解し、その有効性を評価するために実行できる手順について説明します。
 author: ShivamPandey-msft
 ms.date: 05/02/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: fcdf276505cf58267a38e9d6174a155ad307653b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677957"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847005"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>初期顧客支払予測モデルの評価
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、財務インサイトをオンにして、最初のモデルを生成およびトレーニングした後、予測モデルを評価する方法について説明します。 このトピックでは、顧客支払を予測するためのモデルについて説明します。 顧客支払予測モデルを理解し、その有効性を評価するために実行できる手順について説明します。
+この記事では、Finance Insights をオンにして、最初のモデルを生成およびトレーニングした後、予測モデルを評価する方法について説明します。 この記事では、顧客支払を予測するためのモデルについて説明します。 顧客支払予測モデルを理解し、その有効性を評価するために実行できる手順について説明します。
 
 ## <a name="getting-details-about-the-model"></a>モデルに関する詳細の取得
 

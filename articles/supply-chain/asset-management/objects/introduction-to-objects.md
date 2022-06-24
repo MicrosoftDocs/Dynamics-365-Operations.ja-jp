@@ -1,6 +1,6 @@
 ---
 title: 資産の概要
-description: このトピックでは、資産管理の資産の概要について説明します。
+description: この記事では、資産管理の資産の概要について説明します。
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767511"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874191"
 ---
 # <a name="introduction-to-assets"></a>資産の概要
 
@@ -30,9 +30,9 @@ ms.locfileid: "6767511"
 
  
 
-このトピックでは、資産管理の資産の概要について説明します。 *資産* とは、メンテナンス、サービス、修理を必要とする機械や機械部品など、あらゆるタイプの設備です。
+この記事では、資産管理の資産の概要について説明します。 *資産* とは、メンテナンス、サービス、修理を必要とする機械や機械部品など、あらゆるタイプの設備です。
 
-資産は、関連情報で自動的に更新されます。 たとえば、この関連情報は、新規または更新されたワーク オーダーに関する情報です。 **全資産** または **保留中の資産** メニュー項目を使用して、資産を作成できます。 このトピックでは、**全資産** メニュー項目を使用して資産を作成する方法について説明します。 **保留中の資産** のメニュー項目を使用して資産を作成する方法については、[発注書に基づく資産の作成](../objects/create-objects-based-on-purchase-orders.md) を参照してください。
+資産は、関連情報で自動的に更新されます。 たとえば、この関連情報は、新規または更新されたワーク オーダーに関する情報です。 **全資産** または **保留中の資産** メニュー項目を使用して、資産を作成できます。 この記事では、**全資産** メニュー項目を使用して資産を作成する方法について説明します。 **保留中の資産** のメニュー項目を使用して資産を作成する方法については、[発注書に基づく資産の作成](../objects/create-objects-based-on-purchase-orders.md) を参照してください。
 
 ## <a name="all-assets"></a>全資産
 

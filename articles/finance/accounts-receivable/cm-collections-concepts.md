@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 508723752ec7ae5f48e52c728b6ef526ec49e4e2
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f1e6932740c33ae418ac633623680eda6af7a592
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723026"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858527"
 ---
 # <a name="collections-management-key-concepts"></a>回収管理キーの概念
 
@@ -34,7 +34,7 @@ ms.locfileid: "8723026"
 - 1 つのステップで、損金処理トランザクションを作成できます。
 - 1 つのステップで、預金不足 (NSF) の支払を処理できます。
 
-このトピックでは、それぞれの概念について説明します。
+この記事では、それぞれの概念について説明します。
 
 ## <a name="customer-aging-snapshots"></a>顧客エイジングのスナップショット
 
@@ -86,7 +86,7 @@ ms.locfileid: "8723026"
 
 すべての利子計算書、または計算書の一部である手数料およびトランザクションの利息を免除、再開、または取消しできます。 この処理は、**すべての顧客** リスト ページのアクション ペインの **回収** タブで、**利子計算書**、**トランザクションの利息** または **手数料** を選択します。
 
-これらの調整は、利子計算書とその利息および手数料にのみ影響します。 顧客が支払う義務のあるすべての請求金額を損金処理する方法の詳細については、このトピックの[損金処理トランザクションの作成](#creating-write-off-transactions)を参照してください。
+これらの調整は、利子計算書とその利息および手数料にのみ影響します。 顧客が支払う義務のあるすべての請求金額を損金処理する方法の詳細については、この記事の[損金処理トランザクションの作成](#creating-write-off-transactions)を参照してください。
 
 詳細については、「範囲のある利息コードを作成 および 利息の処理」を参照してください。
 

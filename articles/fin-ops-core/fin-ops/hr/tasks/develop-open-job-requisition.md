@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 364117133cb7a868e613088b14a33869fd9fedb1
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 15b1796367338bf40b434cfab9368ed3386aed99
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735349"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876505"
 ---
 # <a name="develop-and-open-job-requisition"></a>求人の作成と実施
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> このトピックの採用機能は採用プロジェクトと呼ばれ、応募者、応募、採用プロジェクトに焦点を当てます。  
+> この記事の採用機能は採用プロジェクトと呼ばれ、応募者、応募、採用プロジェクトに焦点を当てます。  
 
 
 採用プロジェクトにより、採用プロセスの管理が容易になります。 各採用プロジェクトについて、採用が完了したジョブ、リクルーター名、プロジェクトの状態、ジョブが存在する部門などの情報を設定できます。 採用プロジェクトを作成すると、それに対する求人広告の書き込み、**従業員セルフサービス** ページでの求人広告の発行、雇用申請とプロジェクトの関連付け、そのプロジェクトの活動の追跡を行うことができます。 この手順の作成に使用するデモ データの会社は **USMF** です。

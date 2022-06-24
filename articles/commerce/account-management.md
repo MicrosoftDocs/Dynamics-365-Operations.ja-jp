@@ -1,6 +1,6 @@
 ---
 title: アカウント管理ページとモジュール
-description: このトピックでは、Microsoft Dynamics 365 Commerce のアカウント管理ページおよびモジュールについて説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce のアカウント管理ページおよびモジュールについて説明します。
 author: v-chgri
 ms.date: 03/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5b26f9f83ad368a7e0fbc0ffe1263a8fec86f99b8a66ee6c4a28d5e061efbc21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c10288aa65d58d1442e742fa8f39b4e380c7b9e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716253"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853879"
 ---
 # <a name="account-management-pages-and-modules"></a>アカウント管理ページとモジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のアカウント管理ページおよびモジュールについて説明します。
+この記事では、Microsoft Dynamics 365 Commerce のアカウント管理ページおよびモジュールについて説明します。
 
 アカウント管理とは、Dynamics 365 Commerce のユーザー アカウントに関連する情報を管理するために使用されるページのグループを指します。 アカウント管理ページには、アカウント管理ランディング ページ、ユーザー プロファイル ページ、ユーザー アドレス ページ、注文履歴ページ、注文詳細ページ、ロイヤルティ ページ、および欲しい物リスト ページが含まれます。
 

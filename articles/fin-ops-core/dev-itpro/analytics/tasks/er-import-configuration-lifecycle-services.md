@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Services からのコンフィギュレーションのインポート
-description: このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) コンフィギュレーションの新しいバージョンをインポートする方法について説明します。
+description: この記事では、Microsoft Dynamics Lifecycle Services (LCS) から電子申告 (ER) 構成の新しいバージョンをインポートする方法について説明します。
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05a8ad127df177c54e67ff1f2ddcd8b3a3f51ea12b6e11d087105bd74b6bdb3f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2aae59334828a5636f35051d50cf2ea392074b71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712595"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886675"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Lifecycle Services からのコンフィギュレーションのインポート
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、システム管理者または電子申告開発者の役割のユーザーが、新しいバージョンの [電子申告 (ER) コンフィギュレーション](../general-electronic-reporting.md#Configuration) を Microsoft Dynamics Lifecycle Services (LCS) の [プロジェクト レベルのアセット ライブラリ](../../lifecycle-services/asset-library.md) からインポートする方法について説明します。
+この記事では、システム管理者または電子申告開発者の役割のユーザーが、新しいバージョンの [電子申告 (ER) 構成](../general-electronic-reporting.md#Configuration) を Microsoft Dynamics Lifecycle Services (LCS) の [プロジェクト レベルのアセット ライブラリ](../../lifecycle-services/asset-library.md) からインポートする方法について説明します。
 
 > [!IMPORTANT]
 > ER コンフィギュレーションの記憶域リポジトリとして LCS を使用することは[廃止される](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release)予定です。 詳細については、[Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md)を参照してください。
@@ -41,7 +41,7 @@ ms.locfileid: "6712595"
 
 <a name="accessconditions"></a>
 > [!NOTE]
-> 現在の Dynamics 365 Finance ユーザーが、ER コンフィギュレーションをインポートするために [アクセス](../../lifecycle-services/asset-library.md#asset-library-support) するアセット ライブラリを含む LCS プロジェクトのメンバーであることを確認します。
+> 現在の Dynamics 365 Finance ユーザーが、ER 構成をインポートするために [アクセス](../../lifecycle-services/asset-library.md#asset-library-support) するアセット ライブラリを含む LCS プロジェクトのメンバーであることを確認します。
 >
 > Finance で使用されているドメインとは異なるドメインを表す ER リポジトリから LCS プロジェクトにアクセスすることはできません。 試行すると、LCS プロジェクトの空の一覧が表示され、LCS のプロジェクト レベルのアセット ライブラリから ER コンフィギュレーションをインポートすることはできません。 ER コンフィギュレーションのインポートに使用される ER リポジトリからプロジェクト レベルのアセット ライブラリにアクセスするには、現在の Finance インスタンスがプロビジョニングされているテナント (ドメイン) に属するユーザーの資格情報を使用して Finance にサインインします。
 
@@ -49,7 +49,7 @@ ms.locfileid: "6712595"
 
 1. **コンフィギュレーション** ページのコンフィギュレーション ツリーで、**サンプル モデルのコンフィギュレーション** を選択します。
 
-    サンプル データ モデル コンフィギュレーションの最初のバージョンを作成し、[Lifecycle Services へのコンフィギュレーションのアップロード](er-upload-configuration-into-lifecycle-services.md) の手順を完了したときに、LCS に公開しました。 この手順では、ER コンフィギュレーションのそのバージョンを削除します。 次に、このトピックの後半でそのバージョンを LCS からインポートします。
+    サンプル データ モデル コンフィギュレーションの最初のバージョンを作成し、[Lifecycle Services へのコンフィギュレーションのアップロード](er-upload-configuration-into-lifecycle-services.md) の手順を完了したときに、LCS に公開しました。 この手順では、ER コンフィギュレーションのそのバージョンを削除します。 次に、この記事の後半でそのバージョンを LCS からインポートします。
 
 2. 一覧で、目的のレコードを見つけ、選択します。
 

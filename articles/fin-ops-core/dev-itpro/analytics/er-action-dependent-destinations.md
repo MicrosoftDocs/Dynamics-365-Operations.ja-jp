@@ -1,6 +1,6 @@
 ---
 title: アクション依存の ER 送信先を構成する
-description: このトピックでは、送信ドキュメントを生成するように構成された電子申告 (ER) 形式に対して、アクション依存の送信先を構成する方法について説明します。
+description: この記事では、送信ドキュメントを生成するように構成された電子申告 (ER) 形式に対して、アクション依存の送信先を構成する方法について説明します。
 author: NickSelin
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: b7dfd92fd9e256298c13dcbde4b6da3f07d250d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876837"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>アクション依存の ER 送信先を構成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323982"
 
 送信ドキュメントの生成に使用する [電子申告 (ER)](general-electronic-reporting.md) 形式 の [構成](general-electronic-reporting.md#Configuration) の各出力コンポーネント (フォルダーまたはファイル) に対して、[送信先](electronic-reporting-destinations.md) を構成できます。 このタイプの ER 形式を実行し、適切なアクセス権を持つユーザーは、実行時に構成した送信先設定を変更することもできます。
 
-Microsoft Dynamics 365 Finance **バージョン 10.0.17以降** では、その ER 形式を実行することによりユーザーが実行するアクション コードを [プロビジョニング](er-apis-app10-0-17.md) することで、ER 形式を実行できます。 たとえば、**売掛金勘定モジュール** では、印刷管理の設定で、自由書式の請求書などの特定のビジネス ドキュメントを生成する ER 形式を選択できます。 **表示** を選択して請求書をプレビューするか、**印刷** を選択してプリンタに送信できます。 実行時に実行中の ER 形式に対してユーザー アクションが渡される場合、ユーザー アクションごとに異なる ER 送信先を構成できます。 このトピックでは、このタイプの ER 形式に対して ER の送信先を構成する方法について説明します。
+Microsoft Dynamics 365 Finance **バージョン 10.0.17以降** では、その ER 形式を実行することによりユーザーが実行するアクション コードを [プロビジョニング](er-apis-app10-0-17.md) することで、ER 形式を実行できます。 たとえば、**売掛金勘定モジュール** では、印刷管理の設定で、自由書式の請求書などの特定のビジネス ドキュメントを生成する ER 形式を選択できます。 **表示** を選択して請求書をプレビューするか、**印刷** を選択してプリンタに送信できます。 実行時に実行中の ER 形式に対してユーザー アクションが渡される場合、ユーザー アクションごとに異なる ER 送信先を構成できます。 この記事では、このタイプの ER 形式に対して ER の送信先を構成する方法について説明します。
 
 ## <a name="make-action-dependent-er-destinations-available"></a>アクション依存の ER 送信先を使用可能にする
 
@@ -82,7 +82,7 @@ Microsoft Dynamics 365 Finance **バージョン 10.0.17以降** では、その
 
 ER 形式を実行するときに、構成済の送信先設定を実行時に変更するための適切な [アクセス許可](electronic-reporting-destinations.md#security-considerations) を持つユーザが、ユーザー アクションをプロビジョニングした場合は、構成した送信先設定を変更するためのオプションを示すダイアログ ボックスが表示されます。 このダイアログ ボックスはオプションであり、その外観は、ER フレームワークが ER 形式を実行するために呼び出しがどのように実装されたかによって異なります。 このダイアログ ボックスが表示される場合、指定したユーザー アクションに従って、ボックス内の ER 送信先が有効になります。
 
-次の図では、このトピックで前述したように、**プリンター** アクションがプロビジョニングされ、ER 送信先がこの形式に対して構成されている場合に、自由書式の請求書が [転記](../../../finance/accounts-receivable/create-free-text-invoice-new.md) され、**自由書式の請求書 (Excel)** ER 形式が実行されて、このドキュメントが生成されるときに表示される **電子申告形式の送信先** ダイアログ ボックスの例を示しています。
+次の図では、この記事で前述したように、**プリンター** アクションがプロビジョニングされ、ER 送信先がこの形式に対して構成されている場合に、自由書式の請求書が [転記](../../../finance/accounts-receivable/create-free-text-invoice-new.md) され、**自由書式の請求書 (Excel)** ER 形式が実行されて、このドキュメントが生成されるときに表示される **電子申告形式の送信先** ダイアログ ボックスの例を示しています。
 
 ![実行中の ER 形式に対して初期構成された ER 送信先を変更するオプションを表示するダイアログ ボックス。](./media/er-destination-action-dependent-02.gif)
 

@@ -1,6 +1,6 @@
 ---
 title: ER 構成で起こるトラブルシューティング パフォーマンスの問題
-description: このトピックでは、電子申告 (ER) 構成で起こるパフォーマンスの問題を検索して修正する方法について説明します。
+description: この記事では、電子申告 (ER) 構成で起こるパフォーマンスの問題を検索して修正する方法について説明します。
 author: NickSelin
 ms.date: 05/12/2022
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: maximbel
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: e727e06c73ff445bf4219ac5a9eee7bec25740d9
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 28ff68309bad7a6c1b6009ba03ef4b20aceb5194
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811683"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847343"
 ---
 # <a name="troubleshooting-performance-issues-in-er-configurations"></a>ER 構成で起こるトラブルシューティング パフォーマンスの問題
 
-このトピックでは、[電子申告](general-electronic-reporting.md) (ER) [構成](general-electronic-reporting.md#Configuration) で起こるパフォーマンスの問題を検索して解決する方法について説明します。
+この記事では、[電子申告](general-electronic-reporting.md) (ER) [構成](general-electronic-reporting.md#Configuration) で起こるパフォーマンスの問題を検索して解決する方法について説明します。
 
 通常、パフォーマンス調査は複数のステップで構成されます。
 

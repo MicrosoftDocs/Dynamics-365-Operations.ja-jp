@@ -1,6 +1,6 @@
 ---
 title: 有効な画像モジュール
-description: このトピックでは、有効な画像モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
+description: この記事では、有効な画像モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 06b9162029de3f5f3fede9583fa8a4a96fefb2f3
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 3d532d21f847a80a16af814eeaf097a616605795
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780288"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853853"
 ---
 # <a name="active-image-module"></a>有効な画像モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、有効な画像モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
+この記事では、有効な画像モジュールと、これを Microsoft Dynamics 365 Commerce のサイト ページに追加する方法について説明します。
 
 有効な画像モジュールは、画像に製品タグを埋め込む場合に使用できます。 その後、 eコマース サイトのユーザーは、タグの上にマウス ポインターを移動して、画像に表示されている製品をプレビューできます。 プレビューはポップアップ ウィンドウに表示されます。 プレビュー ポップアップ ウィンドウを選択すると、ユーザーは該当対応する製品の製品の詳細ページ (PDP) に直接移動できます。
 

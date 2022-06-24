@@ -1,6 +1,6 @@
 ---
 title: 倉庫のパフォーマンス Power BI コンテンツ
-description: このトピックでは、倉庫パフォーマンス Power BI コンテンツに何が含まれているのか説明します。
+description: この記事では、倉庫パフォーマンス Power BI コンテンツに何が含まれているのか説明します。
 author: Mirzaab
 ms.date: 12/18/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: db56d1bd26f27987f00126ac1a6434cf36691fbf594cab3dd1260ed5251480a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d43cef4970cdf180d0db39086220def56b08f280
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750553"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851925"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>倉庫のパフォーマンス Power BI コンテンツ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、**倉庫パフォーマンス** Microsoft Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
+この記事では、**倉庫パフォーマンス** Microsoft Power BI コンテンツに何が含まれているのか説明します。 Power BI レポートにアクセスする方法を説明し、コンテンツを作成するために使用するデータ モデルおよびエンティティについての情報を提供します。
 
 ## <a name="overview"></a>概要
 

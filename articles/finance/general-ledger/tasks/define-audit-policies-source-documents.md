@@ -1,6 +1,6 @@
 ---
 title: 元伝票の監査ポリシーの定義
-description: このトピックでは、監査ポリシー ルールを設定および実行する方法について説明します。
+description: この記事では、監査ポリシー ルールを設定および実行する方法について説明します。
 author: panolte
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8698dd2c14321498d23efe1d01be274c56d5721
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: b8aa106cd5a5596f6b9a6663390e03ebc3f91a7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713786"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872531"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>元伝票の監査ポリシーの定義
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、監査ポリシー ルールを設定および実行する方法について説明します。 この例では、ホテル経費タイプの経費精算書を使用しています。 この手順では、USMF というデモ会社を使用します。 監査担当者ロールには、これらのタスクを実行する適切なアクセス許可があります。
+この記事では、監査ポリシー ルールを設定および実行する方法について説明します。 この例では、ホテル経費タイプの経費精算書を使用しています。 この手順では、USMF というデモ会社を使用します。 監査担当者ロールには、これらのタスクを実行する適切なアクセス許可があります。
 
 1. ナビゲーション ウィンドウで、**モジュール > 監査ワークベンチ > 設定 > ポリシー ルール タイプ** の順に移動します。
 2. **新規** を選択します。

@@ -1,6 +1,6 @@
 ---
-title: Customer Voice を e コマース サイト ページに統合する
-description: このトピックでは、Microsoft Dynamics 365 Customer Voice を Dynamics 365 Commerce の eコマース サイトに統合する方法について説明します。
+title: Customer Voice を eコマース サイト ページに統合する
+description: この記事では、Microsoft Dynamics 365 Customer Voice を Dynamics 365 Commerce の eコマース サイト ページに統合する方法について説明します。
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.openlocfilehash: 272ec1a59ed45b2d2336dcfea16051d27011360f
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: c8c67ecf4950c92fc91c8d119e06e5e8afff0ddf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850333"
 ---
-# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Customer Voice を e コマース サイト ページに統合する
+# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Customer Voice を eコマース サイト ページに統合する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Customer Voice を Dynamics 365 Commerce の eコマース サイトに統合する方法について説明します。
+この記事では、Microsoft Dynamics 365 Customer Voice を Dynamics 365 Commerce の eコマース サイト ページに統合する方法について説明します。
 
 [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) を e コマース サイトに統合して、リアルタイムの顧客フィードバックを収集、分析、追跡できます。 統合を開始するには、アカウントを作成して、収集するフィードバックのタイプとして Customer Voice プロジェクト テンプレートを選択する必要があります。
 
@@ -37,7 +37,7 @@ Customer Voice テンプレートを選択するには、次の手順に従い�
 1. 収集するフィードバックの種類に大してプロジェクト テンプレートを選択して、**次へ** を選択します。
 1. **送信** タブの **埋め込み形式を選択** で、埋め込み形式を選択します。 **埋め込みコード** フィールドには、Commerce サイト ビルダに埋め込む必要があるコードが表示されます。
 
-このトピックの例では、**定期処理顧客アンケート** プロジェクト テンプレートと **ボタン** 埋め込み形式を使用します。
+この記事の例では、**定期処理顧客アンケート** プロジェクト テンプレートと **ボタン** 埋め込み形式を使用します。
 
 次の例は、**定期処理顧客アンケート** プロジェクト テンプレート ページで、**ボタン** の埋め込み形式のオプションが選択され、そのオプションの埋め込みコードが **埋め込みコード** フィールドに表示される場合の例です。 次のセクションで説明するように、指定したコードをサイト ページに埋め込むには、3 つの別々のアクションが必要です。
 

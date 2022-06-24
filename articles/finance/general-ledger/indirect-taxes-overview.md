@@ -1,6 +1,6 @@
 ---
 title: 消費税の概要
-description: このトピックは、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。
+description: この記事は、消費税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。
 author: kailiang
 ms.date: 10/28/2019
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19d235a761ffdfcfb945f7f6213dc8ec44f73aab
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3261552b60f30afc1a564b50a8269a12f4eeb2b3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727597"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871278"
 ---
 # <a name="sales-tax-overview"></a>消費税の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、売上税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。
+この記事は、消費税システムの概要を示します。 ここでは、売上税設定の要素と、それらがどのように連携して動作するのかを説明します。
 
 ## <a name="overview"></a>概要
 

@@ -1,6 +1,6 @@
 ---
 title: コンフィギュレーション プロバイダーを作成し、有効としてマークする
-description: このトピックでは、システム管理者または電子申告開発者のロールに割り当てられたユーザーが、コンフィギュレーション プロバイダーを作成する方法について説明します。
+description: この記事では、システム管理者または電子申告開発者のロールに割り当てられたユーザーが、構成プロバイダーを作成する方法について説明します。
 author: NickSelin
 ms.date: 07/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e5b429badcbcc0e9829d82785a6e1f1a2504f5ec9b9ac74d249032f272dea103
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93c2e114c97290347b71e94d87ea5339688791cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883599"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>コンフィギュレーション プロバイダーを作成し、有効としてマークする
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、システム管理者または電子レポート開発者のロールに割り当てられたユーザーが、電子レポート (ER) のコンフィギュレーション プロバイダーを作成する方法について説明します。 各 ER コンフィギュレーションは、コンフィギュレーションの作成者としてプロバイダーを参照するようになります。 この例では、サンプル会社 Litware, Inc. のコンフィギュレーションを作成します。ER コンフィギュレーションはすべての会社間で共有されるため、これらの手順はすべての会社で実行されます。
+この記事では、システム管理者または電子レポート開発者のロールに割り当てられたユーザーが、電子レポート (ER) の構成プロバイダーを作成する方法について説明します。 各 ER コンフィギュレーションは、コンフィギュレーションの作成者としてプロバイダーを参照するようになります。 この例では、サンプル会社 Litware, Inc. のコンフィギュレーションを作成します。ER コンフィギュレーションはすべての会社間で共有されるため、これらの手順はすべての会社で実行されます。
 
 ## <a name="create-a-provider"></a>プロバイダーの作成
 1. 左上隅の **ナビゲーション ウィンドウ** に移動して、**組織管理** を選択します。

@@ -1,6 +1,6 @@
 ---
 title: ENDSWITH ER 関数
-description: このトピックでは、ENDSWITH 電子申告 (ER) 関数の使用方法についての情報を提供します。
+description: この記事では、ENDSWITH 電子申告 (ER) 関数の使用方法についての情報を提供します。
 author: NickSelin
 ms.date: 02/11/2021
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: d2fa1c0e61e964de9b7dff36fe6a8c2813802e1cc22341ce4ddd73a17751a9c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b054a255cb3ba945a7825a0032e54f5ac3ad127
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771987"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855677"
 ---
 # <a name="endswith-er-function"></a>ENDSWITH ER 関数
 

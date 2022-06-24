@@ -1,6 +1,6 @@
 ---
 title: 発注書転記
-description: このトピックでは、在庫転記プロファイル ページの [発注書] タブに関する情報について説明します。
+description: この記事では、在庫転記プロファイル ページの [発注書] タブに関する情報について説明します。
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 4b36ab9da22da7d4f3e62bd2d2aba2a2ec80e60f
-ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
+ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8803026"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849934"
 ---
 # <a name="purchase-order-posting"></a>発注書転記
 
@@ -125,7 +125,7 @@ ms.locfileid: "8803026"
 
 ## <a name="procurement-category-posting"></a>調達カテゴリの転記
 
-すべての品目、品目グループ、または 1 つの品目に対する在庫の転記を設定する代わりに、カテゴリを設定し、調達カテゴリ別に元帳の転記をコントロールできます。 カテゴリの設定および製品への割り当てに関する詳細は、このトピックにある [プロファイル構成のサンプル転記](#sample-posting-profile-configuration) へアクセスしてください
+すべての品目、品目グループ、または 1 つの品目に対する在庫の転記を設定する代わりに、カテゴリを設定し、調達カテゴリ別に元帳の転記をコントロールできます。 カテゴリの設定および製品への割り当てに関する詳細は、この記事にある [プロファイル構成のサンプル転記](#sample-posting-profile-configuration) へアクセスしてください
 
 発注書または仕入先請求書とカテゴリを使用する場合、カテゴリ階層を **カテゴリ階層ロールの割り当て** ページにある **調達カテゴリ階層** タイプに割り当てる必要があります。
 

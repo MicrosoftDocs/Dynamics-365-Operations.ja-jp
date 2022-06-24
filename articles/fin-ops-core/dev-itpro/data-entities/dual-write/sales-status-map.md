@@ -1,6 +1,6 @@
 ---
 title: 販売注文の状態列のマッピングを設定する
-description: このトピックでは、販売注文の状態列を二重書き込み用に設定する方法について説明します。
+description: この記事では、販売注文の状態列を二重書き込み用に設定する方法について説明します。
 author: dasani-madipalli
 ms.date: 06/25/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 53d824ca2fb1eadf34e62bf9c08b837db3efaf42
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 94d8aeb390d892c082546fd2b9459b0a6b70c0b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782287"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884966"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>販売注文の状態列のマッピングを設定する
 

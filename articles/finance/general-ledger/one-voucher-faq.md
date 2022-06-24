@@ -1,6 +1,6 @@
 ---
-title: 単一の伝票に関するよく寄せられる質問
-description: このトピックでは、単一の伝票の機能についてよく寄せられる質問に回答します。 財務仕訳帳の単一の伝票 (一般仕訳帳、固定資産仕訳帳、仕入先支払仕訳帳など) を使用して、単一の伝票のコンテキストで複数の補助元帳トランザクションを入力できます。
+title: 1 つの伝票に関する FAQ
+description: この記事では、単一の伝票の機能についてよく寄せられる質問に回答します。 財務仕訳帳の単一の伝票 (一般仕訳帳、固定資産仕訳帳、仕入先支払仕訳帳など) を使用して、単一の伝票のコンテキストで複数の補助元帳トランザクションを入力できます。
 author: kweekley
 ms.date: 11/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: beab87ad569a6009fb4a42fd19681b64dcb0bb1e
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: e7eedfd4b2914000e8fd85d977b071f44545a058
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723109"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859801"
 ---
-# <a name="one-voucher-faq"></a>単一の伝票に関するよく寄せられる質問
+# <a name="one-voucher-faq"></a>1 つの伝票に関する FAQ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、単一の伝票の機能についてよく寄せられる質問に回答します。 財務仕訳帳に対して単一の伝票を使用すると、単一の伝票に対して複数の小計トランザクションを入力できます。 その伝票に含めることができる仕訳は、一般仕訳、固定資産仕訳、ベンダー支払仕訳などがあります。
+この記事では、単一の伝票の機能についてよく寄せられる質問に回答します。 財務仕訳帳に対して単一の伝票を使用すると、単一の伝票に対して複数の小計トランザクションを入力できます。 その伝票に含めることができる仕訳は、一般仕訳、固定資産仕訳、ベンダー支払仕訳などがあります。
 
 ## <a name="when-will-the-one-voucher-functionality-be-deprecated"></a>単一の伝票の機能が非推奨となる時期はいつでしょうか？
 

@@ -1,6 +1,6 @@
 ---
 title: 日本の固定資産の減損会計
-description: このトピックでは、日本の固定資産の減損会計に関する情報について説明します。
+description: この記事では、日本の固定資産の減損会計に関する情報について説明します。
 author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Japan
 ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cfb2591997187fe16399f2acd70070f097b5f30b
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 3d43c3b4fce2d185a8aa6206ca62143ae1672eaa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592476"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845204"
 ---
 # <a name="impairment-accounting-for-fixed-assets-for-japan"></a>日本の固定資産の減損会計
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、日本の固定資産の減損会計に関する情報について説明します。
+この記事では、日本の固定資産の減損会計に関する情報について説明します。
 
 固定資産の減損を設定および計算するには、次のタスクを実行できます。
 

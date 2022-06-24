@@ -1,6 +1,6 @@
 ---
 title: イタリアのイントラスタット
-description: このトピックには、イタリアでのイントラスタット報告に関する情報が含まれています。
+description: この記事には、イタリアでのイントラスタット報告に関する情報が含まれています。
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: a4531baf29759607c877c815b849067f718851b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488262"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874366"
 ---
 # <a name="italian-intrastat"></a>イタリアのイントラスタット
 
@@ -650,7 +650,7 @@ ms.locfileid: "7488262"
 6. **統計値** クイック タブで、必要に応じて **統計データの印刷とエクスポート** オプションを **はい** に設定します。 この設定により、統計セクションの転送を有効にします。 統計セクションは、重量、追加単位、統計値、配送条件、配送スケジュール、配送モード、および原産地域に関するデータで構成されます。
 
     > [!NOTE]
-    > 四半期申告の場合、イントラスタット レポートには、統計セクション、または配送条件と配送モードに関する情報は含まれません。 詳細については、このトピックの [概要](#overview) セクションのテーブルを参照してください。
+    > 四半期申告の場合、イントラスタット レポートには、統計セクション、または配送条件と配送モードに関する情報は含まれません。 詳細については、この記事の [概要](#overview) セクションのテーブルを参照してください。
 
 7. **国/地域のプロパティ** タブで、組織が事業を行っているすべての国または地域を一覧表示します。 各国または地域ごとに、次のフィールドを設定します:
 

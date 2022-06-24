@@ -1,6 +1,6 @@
 ---
 title: ビデオ プレーヤー モジュール
-description: このトピックでは、ビデオ プレーヤー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: この記事では、ビデオ プレーヤー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b7ec2ea0f8360bbf1dffa023e4546e4deadb5ff9
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 20d516c58bf619065d57b27bc5a614eb7bd4cea9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780767"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873439"
 ---
 # <a name="video-player-module"></a>ビデオ プレーヤー モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、ビデオ プレーヤー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+この記事では、ビデオ プレーヤー モジュールと、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
 ビデオ プレーヤー モジュールは、ビデオの再生をサポートするために使用されます。 コンテンツ管理システム (CMS) にビデオ コンテンツをアップロードして使用可能であれば、任意のページに追加することができます。 ビデオ プレーヤー モジュールは、.mp4 メディア タイプがサポートしています。
 

@@ -1,6 +1,6 @@
 ---
 title: 発注書の作成
-description: このトピックでは、手動での注文書の作成方法を説明します。
+description: この記事では、手動での注文書の作成方法を説明します。
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2fd627b9874b3e3f7aad71fb2970ddcc333a608
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2a04a9f4a512a307efecb19703cd3df638ba5ff5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677397"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856080"
 ---
 # <a name="create-a-purchase-order"></a>発注書の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、手動での注文書の作成方法を説明します。 ほとんどの場合、注文書はマスター プラン、直納、およびその他の処理の結果として自動的に作成されます。 通常、発注書は購買担当者が作成します。 ここで示す例では、さまざまなステップのメモで示されている値を使用して、USMF デモ データ会社で使用できます。
+この記事では、手動での注文書の作成方法を説明します。 ほとんどの場合、注文書はマスター プラン、直納、およびその他の処理の結果として自動的に作成されます。 通常、発注書は購買担当者が作成します。 ここで示す例では、さまざまなステップのメモで示されている値を使用して、USMF デモ データ会社で使用できます。
 
 
 ## <a name="create-the-purchase-order-header"></a>発注ヘッダーの作成

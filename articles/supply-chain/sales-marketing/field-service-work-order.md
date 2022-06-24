@@ -1,6 +1,6 @@
 ---
 title: Field Service のワーク オーダーと Supply Chain Management の販売注文との同期
-description: このトピックでは、Field Service の作業オーダーを Supply Chain Management の販売注文に同期するために使用されるテンプレートと基本的なタスクについて説明します。
+description: この記事では、Field Service の作業オーダーを Supply Chain Management の販売注文に同期するために使用されるテンプレートと基本的なタスクについて説明します。
 author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e64c9a954e8f5c4410f8ba370b40b7c6e76e8ae0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061312"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860525"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Field Service のワーク オーダーと Supply Chain Management の販売注文との同期
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061312"
 
 
 
-このトピックでは、Dynamics 365 Field Service のワーク オーダーを Dynamics 365 Supply Chain Management の販売注文に同期させるために使用されるテンプレートと基本的なタスクについて説明します。
+この記事では、Dynamics 365 Field Service の作業オーダーを Dynamics 365 Supply Chain Management の販売注文に同期させるために使用されるテンプレートと基本的なタスクについて説明します。
 
 [![Supply Chain Management および Field Service 間の業務プロセスの同期。](./media/field-service-integration.png)](./media/field-service-integration.png)
 
@@ -165,9 +165,9 @@ Field Service では、作業オーダーの製品およびサービスに、数
 
 既定では、マッピングはワーク オーダーから作成されるすべての販売注文の、**ワーク オーダー統合** 販売元のタイプに対する販売元を選択します。 この動作は、Supply Chain Management で販売注文を処理する際に役に立ちます。 ワーク オーダーから発生した販売注文がワーク オーダーとして Field Service に同期されていないことを確認する必要があります。
 
-Supply Chain Management で正しい販売元設定を作成する方法の詳細については、このトピックの「前提条件とマッピングの設定」を参照してください。
+Supply Chain Management で正しい販売元設定を作成する方法の詳細については、この記事の「前提条件とマッピングの設定」 セクションを参照してください。
 
-### <a name="status"></a>ステータス
+### <a name="status"></a>Status
 
 販売注文がワーク オーダーから発生した場合、**外部ワーク オーダー ステータス** フィールドが、販売注文ヘッダー上の **設定** タブに表示されます。 このフィールドには Field Service でのワーク オーダーからのシステムのステータスが表示され、Supply Chain Management の販売注文の同期されたワーク オーダー ステータスが追跡されます。 このフィールドは、販売注文が出荷または請求される必要がある時にユーザーが決定する助けにもなります。
 

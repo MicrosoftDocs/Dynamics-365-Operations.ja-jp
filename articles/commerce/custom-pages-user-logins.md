@@ -1,6 +1,6 @@
 ---
 title: ユーザーのサインインに対するカスタム ページの設定
-description: このトピックでは Microsoft Dynamics 365 Commerce で、Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントのユーザー向けにカスタマイズされたサインインを処理するカスタム ページを構築する方法について説明します。
+description: この記事では Microsoft Dynamics 365 Commerce で、Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントのユーザー向けにカスタマイズされたサインインを処理するカスタム ページを構築する方法について説明します。
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f4a3c7c3410a903ae7bc0bac27e861a0dbfa19fdd65761628549c403c4e5db16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2c610866b896ef7648d2596e17b51d1935a78dee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723266"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880343"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>ユーザーのサインインに対するカスタム ページの設定
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは Microsoft Dynamics 365 Commerce で、Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントのユーザー向けにカスタマイズされたサインインを処理するカスタム ページを構築する方法について説明します。
+この記事では Microsoft Dynamics 365 Commerce で、Azure Active Directory (Azure AD) 企業と顧客間 (B2C) テナントのユーザー向けにカスタマイズされたサインインを処理するカスタム ページを構築する方法について説明します。
 
 Dynamics 365 Commerce で作成されたカスタム ページを利用してユーザー サインイン フローを処理するには、コマース環境で参照される Azure AD ポリシーを設定する必要があります。 Azure AD B2C アプリケーションを使用して、「登録してサインイン」、「プロファイル編集」、および「パスワード リセット」 Azure AD B2C ポリシーをコンフィギュレーションできます。 その後、Microsoft Dynamics Lifecycle Services (LCS) を使用してコマース環境で実行されるプロビジョニング プロセス中に、Azure AD B2C テナントとポリシー名を参照できます。
 

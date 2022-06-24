@@ -1,6 +1,6 @@
 ---
 title: 連続スケジュールの定義
-description: このトピックでは、連続プログラム (それ以外の場合は、繰り返し注文とも呼ばれます) の設定について説明します。
+description: この記事では、連続プログラム (それ以外の場合は、繰り返し注文とも呼ばれます) の設定について説明します。
 author: josaw1
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c7b05bc82acfad89c9b50777bd0c5fd85f7bda90efd73f278f122c9aa0d073df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: faa55c844c8ee8742fbb0868b55a520cec6686aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885087"
 ---
 # <a name="define-continuity-schedules"></a>連続スケジュールの定義
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、連続プログラム (それ以外の場合は、繰り返し注文とも呼ばれます) の設定について説明します。 このトピックでは、デモ データの会社 USRT を使用します。
+この記事では、連続プログラム (それ以外の場合は、繰り返し注文とも呼ばれます) の設定について説明します。 この記事では、デモ データの会社 USRT を使用します。
 
 
 ## <a name="create-continuity-program"></a>連続プログラムの作成

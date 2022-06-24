@@ -1,6 +1,6 @@
 ---
 title: 不適合の問題タイプ
-description: このトピックでは、不適合の問題タイプを作成および使用する方法について説明します。
+description: この記事では、不適合の問題タイプを作成および使用する方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26705dd12f478f4ca6046c7265d4ae3cb1d08c69
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a73e692257c2a27085d60e75e028445811ee778a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568810"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857753"
 ---
 # <a name="problem-types-for-nonconformances"></a>不適合の問題タイプ
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、不適合の問題タイプを作成および使用する方法について説明します。
+この記事では、不適合の問題タイプを作成および使用する方法について説明します。
 
 **問題タイプ** ページを使用して、さまざまな不適合タイプで発生する可能性のある品質上の問題の分類を定義します。 作成する問題タイプごとに、問題タイプを使用できる不適合のタイプを指定する必要があります。 次の不適合タイプを設定できます。
 

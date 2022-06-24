@@ -1,6 +1,6 @@
 ---
-title: 生成されたドキュメント用にカスタマイズされた保存先を指定します
-description: このトピックでは、電子申告 (ER) 形式が生成するドキュメントの保存先のリストを拡張する方法について説明します。
+title: 生成したドキュメントに対してカスタム保存場所を指定する
+description: この記事では、電子申告 (ER) 形式が生成するドキュメントの保存先のリストを拡張する方法について説明します。
 author: NickSelin
 ms.date: 02/22/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 70d9ccfac18b4cdf1ea19b3def87fc10ba9ddcb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718504"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864749"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>生成されたドキュメント用にカスタマイズされた保存先を指定します
 
 [!include[banner](../includes/banner.md)]
 
-電子申告 (ER) フレームワークのアプリケーション プログラミング インターフェイス (API) により、電子申告 (ER) 形式が生成するドキュメントの保存先のリストを拡張することができます。 このトピックには、カスタマイズされた保存先を追加するために完了する必要のある主要なタスクに関する概要が含まれます。
+電子申告 (ER) フレームワークのアプリケーション プログラミング インターフェイス (API) により、電子申告 (ER) 形式が生成するドキュメントの保存先のリストを拡張することができます。 この記事には、カスタマイズされた保存先を追加するために完了する必要のある主要なタスクに関する概要が含まれます。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -118,7 +118,7 @@ public DocuRef insertFile(
 ## <a name="configure-an-er-destination"></a>ER 送信先の構成
 
 1. 作成またはインポートした ER フォーマットについて、前述の要素 (ファイル、フォルダー、マージ、または添付ファイル) の 1 つに対してアーカイブされた送信先を構成します。 ガイダンスについては、[ER コンフィギュレーション先](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11) を参照してください。
-2. 構成された送信先用にすでに追加したドキュメント タイプを使用します。 (このトピックの例では、ドキュメント タイプは **FileX** です。)
+2. 構成された送信先用にすでに追加したドキュメント タイプを使用します。 (この記事の例では、ドキュメント タイプは **FileX** です。)
 
 ![送信先設定ダイアログ ボックス。](media/er-extend-file-storages-destination.png)
 

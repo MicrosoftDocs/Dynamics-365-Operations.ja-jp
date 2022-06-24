@@ -1,6 +1,6 @@
 ---
 title: 在庫トランザクションをアーカイブする
-description: このトピックでは、システムのパフォーマンスを向上させるために在庫トランザクション データをアーカイブする方法について説明します。
+description: この記事では、システムのパフォーマンスを向上させるために在庫トランザクション データをアーカイブする方法について説明します。
 author: yufeihuang
 ms.date: 05/10/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: c63cdee862e2e22649a3eb58ae37597741770e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736064"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874104"
 ---
 # <a name="archive-inventory-transactions"></a>在庫トランザクションをアーカイブする
 
 [!include [banner](../../includes/banner.md)]
 
-時間の経過と共に、在庫トランザクション テーブル (`InventTrans`) は拡大し、データベース容量を消費します。 したがって、テーブルに対して実行されるクエリの速度は徐々に低下します。 このトピックでは、システム パフォーマンスを向上させるために、*在庫トランザクション アーカイブ* 機能を使用して在庫トランザクションに関するデータをアーカイブする方法について説明します。
+時間の経過と共に、在庫トランザクション テーブル (`InventTrans`) は拡大し、データベース容量を消費します。 したがって、テーブルに対して実行されるクエリの速度は徐々に低下します。 この記事では、システム パフォーマンスを向上させるために、*在庫トランザクション アーカイブ* 機能を使用して在庫トランザクションに関するデータをアーカイブする方法について説明します。
 
 > [!NOTE]
 > 選択した決算済元帳期間にアーカイブできるのは、財務更新済の在庫トランザクションのみです。 アーカイブするには、財務更新済の出荷在庫トランザクションの払出ステータスが *売却済* で、入庫在庫トランザクションの受入ステータスが *購買済* である必要があります。
@@ -35,7 +35,7 @@ ms.locfileid: "8736064"
 
 ## <a name="turn-on-the-feature-in-your-system"></a>システムで機能を有効化する
 
-このトピックで説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*在庫トランザクション アーカイブ* 機能を有効にします。 この機能は、いったん有効にすると無効にできません。
+この記事で説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、*在庫トランザクション アーカイブ* 機能を有効にします。 この機能は、いったん有効にすると無効にできません。
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>在庫トランザクションをアーカイブする前に考慮する点
 

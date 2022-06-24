@@ -1,6 +1,6 @@
 ---
-title: クラウドおよびエッジのスケール ユニットの製造実行ワークロード
-description: このトピックでは、製造実行ワークロードが クラウドおよびエッジのスケール ユニットと機能する方法について説明します。
+title: クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード
+description: この記事では、製造実行ワークロードがクラウドおよびエッジのスケール ユニットと機能する方法について説明します。
 author: johanhoffmann
 ms.date: 10/06/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: johanho
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b30e16489b0b0169f08e52c70cf4489c9bf4ce1b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c73c2440d8807e965e5d2d89105c2a8a6971c849
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674057"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865327"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>クラウドおよびエッジのスケール ユニットに対する製造実行ワークロード
 
@@ -41,7 +41,7 @@ ms.locfileid: "8674057"
 - 作業現場の監修者は、運用計画を調整できます。
 - 作業者は、出勤と出勤の出勤と退勤をエッジで確認して、作業者の支払計算を正しく行うことができます。
 
-このトピックでは、製造実行ワークロードが クラウドおよびエッジのスケール ユニットと機能する方法について説明します。
+この記事では、製造実行ワークロードがクラウドおよびエッジのスケール ユニットと機能する方法について説明します。
 
 ## <a name="the-manufacturing-lifecycle"></a>製造ライフサイクル
 

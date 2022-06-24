@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Finance の削除済みまたは推奨されない機能
-description: このトピックでは、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
+title: Dynamics 365 Finance の削除済みまたは非推奨の機能
+description: この記事では、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
 author: kfend
 ms.date: 03/21/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6df84e5c2d530e708560495bceaeb23e2ee0dd4b
-ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
+ms.openlocfilehash: 0278b57ccfa2da9dba6b5ea77821fdc47ad2d078
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8466837"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846657"
 ---
-# <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは推奨されない機能
+# <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Dynamics 365 Finance の削除済みまたは非推奨の機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
+この記事では、Dynamics 365 Finance から削除された、または削除される予定の機能について説明します。
 
 - *削除された* 機能は製品では使用できません。
 - *削除予定* の機能は現在開発中ではなく、将来の更新で削除される可能性があります。
@@ -128,7 +128,7 @@ ms.locfileid: "8466837"
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **廃止 / 削除の理由** | 新しい Regulatory Configuration Service (RCS) のグローバル リポジトリに置き換えられます |
-| **別の機能で置き換えられているか?**   | あり |
+| **別の機能で置き換えられているか?**   | 有効 |
 | **影響を受ける製品領域**         | Dynamics 365 Finance、Supply Chain Management、Project Operations 製品|
 | **配置オプション**              | All |
 | **状態**                         | 非推奨: 2022 年 4 月 1 日より、電子申告 (ER) コンフィギュレーションのストレージ オプションとして Microsoft Dynamics Lifecycle Services (LCS) リポジトリのサポートを終了する予定です。 新しい Microsoft ER コンフィギュレーションは、グローバル リポジトリからのみダウンロードできるように公開されます。 グローバル リポジトリは、Dynamics 365 製品と RCS からアクセスできます。 詳細については、[RCS から ER コンフィグレーションをインポートする](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md)および [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) 記憶域の廃止](../localizations/rcs-lcs-repo-dep-faq.md)を参照してください。 |

@@ -1,6 +1,6 @@
 ---
 title: デバイス、市場、および位置情報の指定
-description: このトピックでは、デバイス、市場、および位置情報の情報を使用して、Microsoft Dynamics 365 Commerce サイト ビルダーの対象者およびターゲットを作成、編集、および管理する方法について説明します。
+description: この記事では、デバイス、市場、および位置情報の情報を使用して、Microsoft Dynamics 365 Commerce サイト ビルダーの対象者およびターゲットを作成、編集、および管理する方法について説明します。
 author: sushma-rao
 ms.date: 02/03/2022
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 90772fd942db30bbf4f65a87b1dca4b2aaacee1e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090697"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881660"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>デバイス、市場、および位置情報の指定
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、デバイス、市場、および位置情報の情報を使用して、Microsoft Dynamics 365 Commerce サイト ビルダーの対象者およびターゲットを作成、編集、および管理する方法について説明します。
+この記事では、デバイス、市場、および位置情報の情報を使用して、Microsoft Dynamics 365 Commerce サイト ビルダーの対象者およびターゲットを作成、編集、および管理する方法について説明します。
 
 Dynamics 365 Commerce は、特定の顧客グループ (*対象者* として認知) のために、ページ コンテンツ (*ターゲット* として認知) のバリエーションをパーソナライズし、ユーザーの関与と満足度を増やすために役立ちます。 対象者またはターゲットを先に作成することができます。 ただし、ターゲット設定を成功するためには、両方のコンポーネントが必要になります。
 

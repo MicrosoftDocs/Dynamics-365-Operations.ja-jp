@@ -1,6 +1,6 @@
 ---
 title: 複数のアプリケーション テーブルからデータを取得するには、ER モデル マッピングで結合データ ソースを使用します。
-description: このトピックでは、電子申告 (ER) で結合タイプのデータ ソースを使用する方法について説明します。
+description: この記事では、電子申告 (ER) で結合タイプのデータ ソースを使用する方法について説明します。
 author: NickSelin
 ms.date: 04/26/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: c9a06c048e98676e30a6652cad6634c2e13531d4ebc6d35f325f4c7153cd82ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0994c19ad79a3e73dc787ef8d82716db637f9ab0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845544"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>電子申告 (ER) モデル マッピングで複数のアプリケーション テーブルからデータを取得するには、結合データ ソースを使用します。
 
@@ -40,15 +40,15 @@ ms.locfileid: "6723216"
 > [!NOTE]
 > 結合タイプのデータ ソースで、レコードを結合するための条件を指定する ER 式で **VALUEIN** 関数を使用することは、まだサポートされていません。 この関数の詳細については、[電子申告のフォーミュラ デザイナー](general-electronic-reporting-formula-designer.md) を参照してください。
 
-この機能の詳細を知るには、このトピックの例を実行します。
+この機能の詳細を知るには、この記事の例を実行します。
 
 ## <a name="example-use-join-data-sources-in-er-model-mappings"></a>例: ER モデル マッピングで結合データ ソースを使用する
 
-次の手順では、システム管理者または電子申告開発者が、データ アクセスのパフォーマンスを向上させるために、**結合** タイプのデータ ソースを使用して、一度に複数のアプリケーション テーブルからデータを取得するように、電子申告 (ER) モデル マッピングを構成する方法について説明します。 これらの手順は、Dynamics 365 Finance または Regulatory Configuration Services (RCS) のどの会社向けにも実行できます。
+次の手順では、システム管理者または電子申告開発者が、データ アクセスのパフォーマンスを向上させるために、**結合** タイプのデータ ソースを使用して、一度に複数のアプリケーション テーブルからデータを取得するように、電子申告 (ER) モデル マッピングを構成する方法について説明します。 これらの手順は、Dynamics 365 Finance または Regulatory Configuration Services (RCS) のどの会社でも実行できます。
 
 ### <a name="prerequisites"></a>必要条件
 
-このトピックの例を実行するには、これらの手順を実行するために使用されているサービスに応じて、次のいずれかの方法にアクセスできる必要があります。
+この記事の例を実行するには、これらの手順を実行するために使用されているサービスに応じて、次のいずれかの方法にアクセスできる必要があります。
 
 **次のいずれかのロールに対応する財務にアクセスします。**
 
@@ -257,9 +257,9 @@ ER モデル マッピング コンポーネントの設定を確認します。
 
 ## <a name="limitations"></a>制限
 
-このトピックの例で示しているように、**JOIN** データソースは、最終的に結合する必要があるレコードの個々のデータセットを表す複数のデータソースを使用して構築できます。 これらのデータソースは、組み込みの ER [フィルタ](er-functions-list-filter.md) 機能を使用して構成できます。 **JOIN** データソースの範囲を超えてデータソースを呼び出すように構成する場合は、データ選択の条件の一部として会社の範囲を使用することができます。 **JOIN** データソースの初期実装では、このタイプのデータソースには対応していません。 たとえば、**JOIN** データソースの実行範囲内で、[フィルタ](er-functions-list-filter.md) ベースのデータソースを呼び出した場合で、呼び出されたデータソースにデータ選択の条件の一部として企業範囲が含まれていると例外が発生します。
+この記事の例で示しているように、**JOIN** データ ソースは、最終的に結合する必要があるレコードの個々のデータ セットを表す複数のデータ ソースを使用して構築できます。 これらのデータソースは、組み込みの ER [フィルタ](er-functions-list-filter.md) 機能を使用して構成できます。 **JOIN** データソースの範囲を超えてデータソースを呼び出すように構成する場合は、データ選択の条件の一部として会社の範囲を使用することができます。 **JOIN** データソースの初期実装では、このタイプのデータソースには対応していません。 たとえば、**JOIN** データソースの実行範囲内で、[フィルタ](er-functions-list-filter.md) ベースのデータソースを呼び出した場合で、呼び出されたデータソースにデータ選択の条件の一部として企業範囲が含まれていると例外が発生します。
 
-Microsoft Dynamics 365 Finance バージョン 10.0.12（2020 年 8 月）では、**JOIN** データソースの実行範囲内で呼び出される[フィルタ](er-functions-list-filter.md)ベースのデータソースのデータ選択条件の一部として、会社の範囲を使用することができます。 アプリケーションの [クエリ](../dev-ref/xpp-library-objects.md#query-object-model) ビルダーには制限があるため、この 会社の範囲は **JOIN** データソースの最初のデータソースに対してのみサポートされてい ます。
+Microsoft Dynamics 365 Finance バージョン 10.0.12（2020 年 8 月）では、**JOIN** データソースの実行範囲内で呼び出される [FILTER](er-functions-list-filter.md) ベースのデータソースのデータ選択条件の一部として、会社の範囲を使用することができます。 アプリケーションの [クエリ](../dev-ref/xpp-library-objects.md#query-object-model) ビルダーには制限があるため、この 会社の範囲は **JOIN** データソースの最初のデータソースに対してのみサポートされてい ます。
 
 ### <a name="example"></a>例
 

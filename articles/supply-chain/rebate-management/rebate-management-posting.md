@@ -1,6 +1,6 @@
 ---
 title: リベート管理転記設定
-description: このトピックでは、転記プロファイルの設定方法について説明します。 リベート管理計算行の転記エントリーを決定するには、転記プロファイルを使用します。
+description: この記事では、転記プロファイルの設定方法について説明します。 リベート管理計算行の転記エントリーを決定するには、転記プロファイルを使用します。
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 5ed28e99e36fafa4e1275421159420a3f3380c7c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7a519b7153b307bf7d8cc9093572ca2711432970
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690249"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873582"
 ---
 # <a name="rebate-management-posting-setup"></a>リベート管理転記設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "8690249"
 
 顧客および仕入先のリベート管理転記プロファイルを設定するには、**リベート 管理 \>リベート管理転記設定 \>リベート管理転記プロファイル** に移動します 。 **リベート管理転記プロファイル** ページに、既存のすべてのプロファイルを表示する一覧ウィンドウが表示されます。 アクション ペインのボタンを使用して、プロファイルをリストに追加したり、削除できます。
 
-このトピックの残りのセクションでは、プロファイルの作成または編集時に使用可能なフィールドを使用する方法について説明します。
+この記事の残りのセクションでは、プロファイルの作成または編集時に使用可能なフィールドを使用する方法について説明します。
 
 ## <a name="posting-profile-header"></a>プロファイル ヘッダーの転記
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 7 月 8 日)
-description: このトピックでは、2020 年 7 月 8 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2020 年 7 月 8 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: andreabichsel
 ms.date: 07/08/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 37e22dcfb89349186526cf87d5f2a82bb86c48b1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c07646b70d07fbcd6f5aac897f79df7d159266af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693560"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848139"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>Dynamics 365 Human Resources の新機能または変更された機能 (2020 年 7 月 8 日)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8693560"
 
 
 
-このトピックでは、Dynamics 365 Human Resources の新機能または変更された機能について説明します。 変更は、ビルド番号 8.1.3382 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
+この記事では、Dynamics 365 Human Resources の新機能および変更された機能について説明します。 変更は、ビルド番号 8.1.3382 に適用されます。 ヘッダーにあるかっこ内の数字は、参照用の LCS のサポート番号を参照していることがあります。
 
 ## <a name="database-logging"></a>データベースのログ
 

@@ -1,6 +1,6 @@
 ---
-title: プランへのフィルターの適用
-description: このトピックでは、計画の最適化機能の使用する場合、計画でフィルターを使用する方法について説明します。
+title: 計画にフィルターを適用
+description: この記事では、計画の最適化機能の使用する場合、計画でフィルターを使用する方法について説明します。
 author: t-benebo
 ms.date: 01/08/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 8679844ea40dd5af74102c37ab1e7d10b0681a0f
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c2df379be0876225bc7b0301d21f4e6660b04eb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468387"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875307"
 ---
 # <a name="apply-filters-to-a-plan"></a>プランへのフィルターの適用
 

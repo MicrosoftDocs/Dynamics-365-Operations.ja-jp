@@ -1,6 +1,6 @@
 ---
 title: 活動の再割り当て
-description: このトピックでは、1 人の作業者から別の作業者にサービス活動を再度割り当てる方法について説明します。
+description: この記事では、1 人の作業者から別の作業者にサービス活動を再度割り当てる方法について説明します。
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55ebcda19aba074191a2820d2ac7faf27313db8e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5f6cd7523a9185de0bb2dfd81ffb3fe5e7dba5e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671817"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860467"
 ---
 # <a name="reassign-activities"></a>活動の再割り当て 
 
 [!include [banner](../includes/banner.md)]
 
 
-このトピックでは、1 人の作業者から別の作業者にサービス活動を再度割り当てる方法について説明します。 それらの作業者が異なる派遣チームに割り当てられている場合でも、 1 人の作業者から別の作業者にサービス活動の再度割り当てることができます。
+この記事では、1 人の作業者から別の作業者にサービス活動を再度割り当てる方法について説明します。 それらの作業者が異なる派遣チームに割り当てられている場合でも、 1 人の作業者から別の作業者にサービス活動の再度割り当てることができます。
 
 別の作業者に活動を再度割り当てるには、次の手順を使用します:
 

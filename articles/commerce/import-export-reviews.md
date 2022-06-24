@@ -1,6 +1,6 @@
 ---
 title: 評価やレビューのインポートとエクスポート
-description: このトピックでは、Microsoft Dynamics 365 Commerce で商品の評価やレビューをインポートとエクスポートする方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で商品の評価やレビューをインポートとエクスポートする方法について説明します。
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 3ae85f21f7a78d56621aed60527207badcee9c75
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 97407f62d462c0ae370e9ea0d2799d3f30ecacfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968530"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863404"
 ---
 # <a name="import-and-export-ratings-and-reviews"></a>評価やレビューのインポートとエクスポート
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で商品の評価やレビューをインポートとエクスポートする方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce で商品の評価やレビューをインポートとエクスポートする方法について説明します。
 
 Dynamics 365 Commerce は、オムニチャネル ソリューションとして、[評価とレビュー](ratings-reviews-overview.md)を提供しています。 Dynamics 365 Commerce の評価、レビュー ソリューションに切り替えた際に、既存の評価とレビュー データを Commerce プラットフォームに移行する場合があります。 また、ビジネス要件に応じて、Commerce から評価やレビューのデータをエクスポートすることもできます。 Power Automate コネクタを使用すると、評価とレビューを Commerce にインポートして Commerce からエクスポートできます。
 

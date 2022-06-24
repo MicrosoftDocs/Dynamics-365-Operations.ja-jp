@@ -1,6 +1,6 @@
 ---
 title: 合計原価配賦方法
-description: このトピックは、原価配賦の合計 (TCA) を使用するためのガイドラインを提供します。 TCA は、バッチ オーダーの主要式品目および式に定義される連産品の間のコストを計算する方法です。
+description: この記事は、原価配賦の合計 (TCA) を使用するためのガイドラインを提供します。 TCA は、バッチ オーダーの主要式品目および式に定義される連産品の間のコストを計算する方法です。
 author: JennySong-SH
 ms.date: 04/15/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 948b2e91f8ab8ffe8d704159b60a281391e5bd6c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 213db8303c27934050f5b414a67f6e510486dc94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679502"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862688"
 ---
 # <a name="total-cost-allocation-method"></a>合計原価配賦方法
 

@@ -1,6 +1,6 @@
 ---
-title: チャネル設定の前提条件
-description: このトピックでは、Microsoft Dynamics 365 Commerce のチャネル設定の前提条件における概要を示します。
+title: チャネルの設定の前提条件
+description: この記事では、Microsoft Dynamics 365 Commerce のチャネル設定の前提条件における概要を示します。
 author: samjarawan
 ms.date: 02/21/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6ad8911df00fde4675d4d9b52fcdd52ff58d4983b177316a7606de277328226b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 84b176ed07de8dd0828ba02cdbefd7a3795d984b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884936"
 ---
 # <a name="channel-setup-prerequisites"></a>チャネルの設定の前提条件
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のチャネル設定の前提条件における概要を示します。
+この記事では、Microsoft Dynamics 365 Commerce のチャネル設定の前提条件における概要を示します。
 
 Dynamics 365 Commerce チャネルを作成する前に、いくつかの前提条件タスクを完了しておく必要があります。 次の前提条件タスクの一覧は、チャネル タイプ別にまとめられています。
 

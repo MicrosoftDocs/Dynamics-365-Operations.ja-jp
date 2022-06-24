@@ -1,6 +1,6 @@
 ---
-title: メンテナンス担当作業者
-description: このトピックでは、資産管理でメンテナンス担当作業者を設定する方法について説明します。
+title: 責任メンテナンス作業者
+description: この記事では、資産管理でメンテナンス担当作業者を設定する方法について説明します。
 author: johanhoffmann
 ms.date: 07/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d68c9e6de6e9d62d1dea95c747b17900d343e7324857dcfc083d48e5c1006b0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9535be3161253e88083b5add7ac55c12364aa383
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731298"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875595"
 ---
 # <a name="responsible-maintenance-workers"></a>メンテナンス担当作業者
 

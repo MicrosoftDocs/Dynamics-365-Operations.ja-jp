@@ -1,6 +1,6 @@
 ---
 title: Excel から仕訳帳明細行とドキュメントを発行する
-description: このトピックでは、Microsoft Excel の一般仕訳帳の明細行入力および発行方法について説明します。 ここには、入力するトランザクションのタイプに応じて、使用できるさまざまなテンプレートに関する情報が含まれています。
+description: この記事では、Microsoft Excel の一般仕訳帳の明細行入力および発行方法について説明します。 ここには、入力するトランザクションのタイプに応じて、使用できるさまざまなテンプレートに関する情報が含まれています。
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0af478f9dba8dc17791e15017be2720c2aa21a2f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: ccb3e7a420f7f048ba93b6fadf5491e312e7ce33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727036"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872473"
 ---
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Excel から仕訳帳明細行とドキュメントを発行する
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Excel の一般仕訳帳の明細行入力および発行方法について説明します。 ここには、入力するトランザクションのタイプに応じて、使用できるさまざまなテンプレートに関する情報が含まれています。
+この記事では、Microsoft Excel の一般仕訳帳の明細行入力および発行方法について説明します。 ここには、入力するトランザクションのタイプに応じて、使用できるさまざまなテンプレートに関する情報が含まれています。
 
 ユーザーは、Microsoft Excel から財務仕訳帳の明細行を入力および発行することができます。 ユーザーが仕訳帳を作成した後、**Excel で明細行を開く** ボタンは使用できるテンプレートを表示します。 テンプレートは特定のシナリオをサポートするように設計されていますが、勘定タイプのすべての組み合わせが仕訳帳でサポートされるわけではありません。 次の表は、利用可能なテンプレートとそれらがサポートする勘定タイプを示しています。
 

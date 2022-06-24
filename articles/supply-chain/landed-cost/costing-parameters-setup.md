@@ -1,6 +1,6 @@
 ---
 title: 原価計算パラメーター値の設定
-description: 陸揚原価モジュールを設定すると、アプリの他の部分で特定の種類の原価計算パラメーター値を選択するときに使用できる一連の共通値を定義できます。 このトピックでは、これらの一連の値を設定する方法について説明します。
+description: 陸揚原価モジュールを設定すると、アプリの他の部分で特定の種類の原価計算パラメーター値を選択するときに使用できる一連の共通値を定義できます。 この記事では、これらの一連の値を設定する方法について説明します。
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ed20181201a2f3f84c3dc08549f4f107d46a50a2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca3633cd8a3fb053bda597b968003685aa2326ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852334"
 ---
 # <a name="costing-parameter-values-setup"></a>原価計算パラメーター値の設定
 
 [!include [banner](../../includes/banner.md)]
 
-**陸揚原価** モジュールを設定すると、値ごとに複数の一連の共通値および関連設定を定義できます。 これらの値は、アプリの他の部分で特定の種類の原価計算パラメーター値を選択した場合に使用できます。 このトピックでは、これらの一連の値を設定する方法について説明します。
+**陸揚原価** モジュールを設定すると、値ごとに複数の一連の共通値および関連設定を定義できます。 これらの値は、アプリの他の部分で特定の種類の原価計算パラメーター値を選択した場合に使用できます。 この記事では、これらの一連の値を設定する方法について説明します。
 
 ## <a name="set-up-cost-type-codes"></a>原価タイプ コードの設定
 

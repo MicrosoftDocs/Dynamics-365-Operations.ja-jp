@@ -1,6 +1,6 @@
 ---
-title: モバイル ジョブ デバイスを使用した作業者のコンフィギュレーション
-description: このトピックでは、作業者のユーザー アカウントに適切なロールを割り当てる方法を表示します。それによって、作業者が作業現場の登録を行う方法を説明します。
+title: モバイル ジョブ デバイスを使用する作業者を構成
+description: この記事では、作業者のユーザー アカウントに適切なロールを割り当てる方法を表示します。それによって、作業者が作業現場の登録を行う方法を説明します。
 author: johanhoffmann
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d9745995752c06385acc31e529de52eefaa6f96
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3f6f51a66d49cafd172ba123bf883fb41cdcb5c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573564"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844308"
 ---
-# <a name="configure-a-worker-using-the-mobile-job-device"></a>モバイル ジョブ デバイスを使用した作業者のコンフィギュレーション
+# <a name="configure-a-worker-using-the-mobile-job-device"></a>モバイル ジョブ デバイスを使用する作業者を構成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、作業者のユーザー アカウントに適切なロールを割り当てる方法を表示します。それによって、作業者が作業現場の登録を行う方法を説明します。
+この記事では、作業者のユーザー アカウントに適切なロールを割り当てる方法を表示します。それによって、作業者が作業現場の登録を行う方法を説明します。
 
 ## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a>作業者に特定のロールが割り当てられていることを確認する
 

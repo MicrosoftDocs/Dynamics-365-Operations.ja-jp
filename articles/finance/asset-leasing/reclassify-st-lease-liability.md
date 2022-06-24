@@ -1,6 +1,6 @@
 ---
 title: リース負債の短期部分の再分類
-description: このトピックでは、一部のリース負債を短期として再分類するための月次仕訳入力の作成方法について説明します。
+description: この記事では、一部のリース負債を短期として再分類するための月次仕訳入力の作成方法について説明します。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3a71b809b4bb16c2b918b7acd4fbb8bc49278ff6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7c7c3f86aa5d24e9aeed89526a4b7317699e9a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886345"
 ---
 # <a name="reclassify-the-short-term-portion-of-lease-liability"></a>リース負債の短期部分の再分類
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、一部のリース負債を短期として再分類するための月次仕訳入力の作成方法について説明します。 バッチ プロセスで選択されたスケジュールが **短期リース負債の再分類** の場合は、仕訳入力が作成されます。 このエントリは、月の最後の日にリース負債の現在の部分を転記するために使用されます。 同時に、次の月の最初の日の時点で、取消エントリが転記されます。
+この記事では、一部のリース負債を短期として再分類するための月次仕訳入力の作成方法について説明します。 バッチ プロセスで選択されたスケジュールが **短期リース負債の再分類** の場合は、仕訳入力が作成されます。 このエントリは、月の最後の日にリース負債の現在の部分を転記するために使用されます。 同時に、次の月の最初の日の時点で、取消エントリが転記されます。
 
 リース負債の短期の部分は、負債の償却スケジュールとして示されています。 仕訳入力が転記されると、**負債再分類の仕訳が生成済み** 列が使用可能になり、スケジュールにも仕訳 ID が入力されます。
 

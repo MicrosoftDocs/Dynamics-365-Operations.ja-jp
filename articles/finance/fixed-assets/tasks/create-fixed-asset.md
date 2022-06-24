@@ -1,6 +1,6 @@
 ---
 title: 固定資産の作成
-description: このトピックでは、固定資産リスト ページから新しい固定資産レコードを作成する方法について説明します。
+description: この記事では、固定資産リスト ページから新しい固定資産レコードを作成する方法について説明します。
 author: moaamer
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a9394c0c7a5e2d9b417cbaee9f4e67f36ae124fb
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 00c72081d20015737aa027cee9474a54e498cef4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714288"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868492"
 ---
 # <a name="create-a-fixed-asset"></a>固定資産の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、**固定資産** リスト ページから新しい固定資産レコードを作成する方法について説明します。
+この記事では、**固定資産リスト** ページから新しい固定資産レコードを作成する方法について説明します。
 
 固定資産グループに割り当てられている番号順序に基づいて、システムが自動的に資産番号を割り当てます。 固定資産テンプレートを使用して Microsoft Excel アドインで資産をインポートする場合、または別のインポート ジョブを使用する場合は、システムが固定資産レコードを自動的に作成し、資産番号を増加させます。
 

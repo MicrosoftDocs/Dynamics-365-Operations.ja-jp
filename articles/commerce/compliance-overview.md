@@ -1,6 +1,6 @@
 ---
 title: コンプライアンスの概要
-description: このトピックは、Microsoft Dynamics 365 Commerce で提供されるコンプライアンス ガイダンスの概要であり、会社のサイトを準拠させるのに役立ちます。
+description: この記事は、Microsoft Dynamics 365 Commerce で提供されるコンプライアンス ガイダンスの概要であり、会社のサイトを準拠させるのに役立ちます。
 author: BrianShook
 ms.date: 01/08/2020
 ms.topic: overview
@@ -13,23 +13,23 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3d90bbce5949468966d995710cdad69484aa90c9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2ed56da83d7207132b761c12f7ce639b225aae5b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983295"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887065"
 ---
 # <a name="compliance-overview"></a>コンプライアンスの概要
 
 
 [!include [banner](includes/banner.md)]
 
-このトピックは、Microsoft Dynamics 365 Commerce で提供されるコンプライアンス ガイダンスの概要であり、会社のサイトを準拠させるのに役立ちます。 コンプライアンスは、ユーザー ベースがサイト コンテンツに接続するのに役立つため、すべての企業にとって重要な要素です。 コンプライアンスを維持することにより、費用のかかる法的処置や多額の罰金から会社を保護することもできます。
+この記事は、Microsoft Dynamics 365 Commerce で提供されるコンプライアンス ガイダンスの概要であり、会社のサイトを準拠させるのに役立ちます。 コンプライアンスは、ユーザー ベースがサイト コンテンツに接続するのに役立つため、すべての企業にとって重要な要素です。 コンプライアンスを維持することにより、費用のかかる法的処置や多額の罰金から会社を保護することもできます。
 
 コンプライアンスのドキュメントには、Dynamics 365 Commerce を使用する際に考慮する必要がある領域のレビューが含まれており、会社のコンプライアンス要件を満たすのに役立ちます。
 
-会社のコンプライアンス要件を確認したり、それらの要件の基準を満たすサイトを作成および構築する責任があります。 次のトピックでは、コマース オーサリング ツールを使用する際にコンプライアンスを考慮する方法を示す例を提供します。
+会社のコンプライアンス要件を確認したり、それらの要件の基準を満たすサイトを作成および構築する責任があります。 次の記事では、コマース オーサリング ツールを使用する際にコンプライアンスを考慮する方法を示す例を提供します。
 
 Microsoft が使用する基本原則の詳細については、[Microsoft Trust Center](https://www.microsoft.com/trust-center) を参照してください。 そのサイトでは、コンプライアンスの領域に関する詳細情報も取得できます。
 

@@ -1,6 +1,6 @@
 ---
 title: 不適合工程の諸費用
-description: このトピックでは、不適合の工程で使用できる品質諸費用を作成する方法について説明します。
+description: この記事では、不適合の工程で使用できる品質諸費用を作成する方法について説明します。
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac3306f3f9215ab03f408b8026f335dcf496515a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 29520afca07adee49846d1be987685a1ece8283c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580963"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850731"
 ---
 # <a name="charges-for-nonconformance-operations"></a>不適合工程の諸費用
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、不適合の工程で使用できる品質諸費用を作成する方法について説明します。
+この記事では、不適合の工程で使用できる品質諸費用を作成する方法について説明します。
 
 **品質諸費用** ページを使用して、不適合の行程で追加できる諸費用の種類を定義します。 諸費用を使用すると、不適合製品に対して顧客に支払う必要がある手数料や諸費用、または受け取った不適合製品に対して仕入先が支払う必要がある手数料や諸費用に関する詳細を追跡できます。 また諸費用を使用して、外部の仕入先または工程を実行するサービスに対して必要な原価を追跡することもできます。
 

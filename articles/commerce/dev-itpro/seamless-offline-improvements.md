@@ -1,6 +1,6 @@
 ---
 title: ギフト カードとクレジット メモ操作のシームレスなオフライン切り替え
-description: このトピックでは、特定の支払タイプに対してシームレスなオフライン切り替えを提供する改善の概要について説明します。
+description: この記事では、特定の支払タイプに対してシームレスなオフライン切り替えを提供する改善の概要について説明します。
 author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: e0416a61bd5fd3b875b427ad8a6313d0e9936f0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779495"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869164"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>ギフト カードとクレジット メモ操作のシームレスなオフライン切り替え
 
 [!include [banner](../includes/banner.md)]
 
-販売時点管理 (POS) デバイスがチャネル データベースへの接続を失った場合、処理中だったほとんどの POS 操作およびトランザクションは、レジ担当者が接続が切断されたことを示す警告メッセージを受信した後、処理を進めることができます。 ただし、場合によっては、トランザクションが Retail Real-time Service に依存する要素を持つため、これらの要素は POS がオフラインのときにはサポートされません。 このトピックでは、これらのシナリオで接続の切断による影響を軽減するために役立ついくつかの機能について説明します。
+販売時点管理 (POS) デバイスがチャネル データベースへの接続を失った場合、処理中だったほとんどの POS 操作およびトランザクションは、レジ担当者が接続が切断されたことを示す警告メッセージを受信した後、処理を進めることができます。 ただし、場合によっては、トランザクションが Retail Real-time Service に依存する要素を持つため、これらの要素は POS がオフラインのときにはサポートされません。 この記事では、これらのシナリオで接続の切断による影響を軽減するために役立ついくつかの機能について説明します。
 
 ## <a name="completing-gift-card-transactions-in-offline-mode"></a>オフライン モードにおけるギフト カード トランザクションを完了する
 
@@ -50,7 +50,7 @@ ms.locfileid: "7779495"
 
 通常、コマース パラメーターはキャッシュされます。 したがって、このパラメーターの設定が更新され、チャネルに変更を同期するために配布スケジュールが開始された後、変更が有効になるまでに最大 24 時間かかることがあります。 変更を直ちに有効にするには、IIS をリセットしてください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 - [オフライン販売時点管理 (POS) の機能](../pos-offline-functionality.md)
 - [オンラインおよびオフラインでの販売時点管理 (POS) の操作](../pos-operations.md)

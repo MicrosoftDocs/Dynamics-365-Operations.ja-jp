@@ -1,6 +1,6 @@
 ---
 title: 委託販売補充注文の作成
-description: このトピックでは、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。
+description: この記事では、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。
 author: yufeihuang
 ms.date: 08/19/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9076207b73c6c76cfc44e1e02b21aad4e3f321f8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 31a1d0a7d322b17d3d80dd9fade2b037dd148d9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574596"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859404"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>委託販売補充注文の作成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。 このほか、委託製品が仕入先所有の手持在庫として登録されるように製品の受領を記録する方法についても記述されています。 この作業は通常、調達担当者が行います。 デモ データの会社 USMF でこのガイドを使用できます。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
+この記事では、委託製品の補充注文の作成方法が説明され、仕入先から該当する委託製品在庫までの予定配送を追跡確認できます。 このほか、委託製品が仕入先所有の手持在庫として登録されるように製品の受領を記録する方法についても記述されています。 この作業は通常、調達担当者が行います。 デモ データの会社 USMF でこのガイドを使用できます。 この手順は Dynamics 365 for Operations バージョン 1611 に追加された機能です。
 
 ## <a name="create-a-consignment-replenishment-order"></a>委託販売補充注文の作成
 1. ナビゲーション ウィンドウで、**モジュール > 調達 > 委託販売 > 委託販売補充注文** の順に移動します。

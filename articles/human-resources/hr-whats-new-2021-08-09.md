@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources (2021 年 8 月 9 日) の新機能または変更された機能
-description: このトピックでは、2021 年 8 月 9 日に更新された、Microsoft Dynamics 365 Human Resources の新機能または変更された機能について説明します。
+description: この記事では、2021 年 8 月 9 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 08/09/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-08-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c43ed654a07834ce31a1425762f29c53aa2a020
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ad1397084dd3eb210065fe6d8c20c5b8253cd206
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689273"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882869"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-9-2021"></a>Dynamics 365 Human Resources (2021 年 8 月 9 日) の新機能または変更された機能
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Microsoft Dynamics 365 Human Resources の新機能、変更された機能または間もなく公開される機能について説明します。
+この記事では、Microsoft Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -40,9 +40,9 @@ ms.locfileid: "8689273"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新する可能性があります:
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 問題 | 説明 |
+| 問題の番号 | 問題 | Description |
 | --- | --- | --- |
 | 558385 | 既定の被指名人に対して **被指名人の自動選択** オプションが有効になっている場合は、既定の被指名人は選択されません。 | この問題は修正されました。 **被指名人の自動選択** オプションが **Human Resources の共有パラメーター** ページで有効の場合は、複数の既定の被指名人が適用できるプランで自動選択されます。 |
 | 589617 | 特定の会社にアクセスが制限されている場合、**休暇** ページでは、**購入可能** と **販売可能** の残高が空白になります。 | この問題は修正されました。 特定の会社にユーザーが制限されている場合、**休暇** ページでは、正しい **購入可能** と **販売可能** の残高が表示されます。 |

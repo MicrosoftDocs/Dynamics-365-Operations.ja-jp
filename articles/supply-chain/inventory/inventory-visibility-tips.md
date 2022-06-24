@@ -1,6 +1,6 @@
 ---
-title: 在庫可視化のヒント
-description: このトピックでは、在庫可視化アドインを設定して使用する際に考慮すべきいくつかのヒントを紹介します。
+title: Inventory Visibility のヒント
+description: この記事では、在庫可視化アドインを設定して使用する際に役立つヒントを紹介します。
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1f6ade36ac184a3c8bf790fc0d899ea01d90c8d2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952418"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885960"
 ---
 # <a name="inventory-visibility-tips"></a>在庫可視化のヒント
 
@@ -34,5 +34,6 @@ ms.locfileid: "7952418"
 - Supply Chain Management 環境に 1 つ以上の新しいメジャーを追加する場合は、在庫の可視性にも追加する必要があります。 ただし、新しいメジャーの数量変更はすべて Supply Chain Management 環境から行う必要があります。
 - 現在、[パーティション構成](inventory-visibility-configuration.md#partition-configuration)は、データの分散方法を示す 2 つの基本分析コード (`SiteId` と `LocationId`) で構成されています。 同じパーティションで運用することで、より高いパフォーマンスを低コストで実現できます。 ソリューションには、このパーティション構成が規定で含まれています。 したがって、 *自分で定義する必要はありません*。 既定のパーティション構成をカスタマイズしないでください。 それを削除したり変更したりすると、予期せぬエラーが発生する可能性があります。
 - パーティション構成で定義されている基本分析コードは、[プロダクトインデックスの階層構成](inventory-visibility-configuration.md#index-configuration) では定義しないでください。
+- [製品インデックス階層構成](inventory-visibility-configuration.md#index-configuration) には、少なくとも 1 つのインデックス階層 (基準分析コード `Empty` を含むなど) を含める必要があります。そうしない場合、クエリは "インデックス階層が設定されていません" というエラーで失敗します。
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

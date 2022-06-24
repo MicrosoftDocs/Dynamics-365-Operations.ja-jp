@@ -1,6 +1,6 @@
 ---
-title: POS の入庫在庫操作
-description: このトピックでは、販売時点管理 (POS) の入庫在庫操作の機能について説明します。
+title: POS でのインバウンド在庫操作
+description: この記事では、販売時点管理 (POS) の入庫在庫操作の機能について説明します。
 author: hhaines
 ms.date: 09/17/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858885"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>POS でのインバウンド在庫操作
 
@@ -215,7 +215,7 @@ POS から、新しい移動オーダー ドキュメントを作成できます
 
 **要求済** ステータスになったドキュメントは、**有効** タブに表示されます。ただし、入庫店舗または倉庫からはまだ入荷されていません。 出庫倉庫が移動オーダーの一部またはすべてを出荷した後に、入庫店舗または倉庫で入荷を POS に転記することができます。 出庫側によって移動オーダー ドキュメントが処理されると、ステータスが **要求済** から **出荷済** または **一部出荷済** に更新されます。 ドキュメントが **出荷済** または **一部出荷済** ステータスになった後、入庫店舗または倉庫は、入庫操作入荷プロセスを使用して入荷を転記できます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [POS での出庫在庫操作](pos-outbound-inventory-operation.md)
 

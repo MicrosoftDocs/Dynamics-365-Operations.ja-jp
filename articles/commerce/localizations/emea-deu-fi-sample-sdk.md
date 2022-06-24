@@ -1,6 +1,6 @@
 ---
 title: ドイツ向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
-description: このトピックでは、Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) による、ドイツ向け会計登録サービス統合サンプルの展開ガイドラインを提供します。
+description: この記事では、Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) から、ドイツ向け会計統合サンプルを展開するためのガイドラインを提供します。
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: c49e6cedcce1d336486e9fbcc0620bcdf455cc9d
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 9f6ecc715e10538806998459b7fd837648494ad7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614127"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845840"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>ドイツ向け会計登録サービス統合サンプルの展開ガイドライン (レガシ)
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) を利用した Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) による、ドイツ向け会計登録サービス統合サンプルの展開ガイドラインを提供します。 この会計統合サンプルの詳細については、[ドイツ向け会計登録サービス統合サンプル](emea-deu-fi-sample.md) を参照してください。 
+この記事では、Microsoft Dynamics Lifecycle Services (LCS) の開発者仮想マシン (VM) から Microsoft Dynamics 365 Commerce Retail ソフトウェア開発キット (SDK) でドイツ向け会計登録サービス統合サンプルを展開するためのガイドラインを提供します。 この会計統合サンプルの詳細については、[ドイツ向け会計登録サービス統合サンプル](emea-deu-fi-sample.md) を参照してください。 
 
-ドイツ向け会計統合サンプルは Retail SDK の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。 このサンプルは、Commerce runtime (CRT) とハードウェア ステーションの拡張機能で構成されます。 このサンプルを実行する際は、CRT とハードウェア ステーション プロジェクトを変更して構築する必要があります。 このトピックで説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
+ドイツ向け会計統合サンプルは Retail SDK の一部です。 SDK のインストールと使用方法についての詳細は、[Retail ソフトウェア開発キット (SDK) のアーキテクチャ](../dev-itpro/retail-sdk/retail-sdk-overview.md) を参照してください。 このサンプルは、Commerce runtime (CRT) とハードウェア ステーションの拡張機能で構成されます。 このサンプルを実行する際は、CRT とハードウェア ステーション プロジェクトを変更して構築する必要があります。 この記事で説明されている変更を加えるために、修正していない Retail SDK を使用することをお勧めします。 また Azure DevOps のような、どのファイルも変更されていないソース管理システムを使用することをお勧めします。
 
 ## <a name="development-environment"></a>開発環境
 

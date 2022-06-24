@@ -1,6 +1,6 @@
 ---
 title: 日本の概要
-description: このトピックでは、日本固有の機能の概要を示します。
+description: この記事では、日本固有の機能の概要を示します。
 author: ShylaThompson
 ms.date: 07/25/2019
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 92e9dedff1e94596c011b8b17ebb210f9521a982
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 69f45539a8be6d84f07bf3ffb8ebb07deb44577c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983113"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880616"
 ---
 # <a name="japan-overview"></a>日本の概要
 
 [!include[banner](../includes/banner.md)]
 
-このトピックには、日本に基本住所を持つ法人の設定に役立つ情報およびリソースへのリンクが含まれます。
+この記事には、日本に基本住所を持つ法人の設定に役立つ情報およびリソースへのリンクが含まれます。
 
 ## <a name="cash-and-bank-management"></a>現金および銀行管理
 

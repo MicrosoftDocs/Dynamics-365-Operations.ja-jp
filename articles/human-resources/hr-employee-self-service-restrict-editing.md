@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 98cb7c2f1f57dacf303e2e9bc7779ce3ede6733e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c82114f6600345ee5e2eb9c1c0629ae6c8f0b9a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695875"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877688"
 ---
 # <a name="restrict-editing-of-personal-information"></a>個人情報の編集の制限
 
@@ -29,7 +29,7 @@ ms.locfileid: "8695875"
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]
 
-このトピックでは、Dynamics 365 Human Resources で従業員が連絡先情報を編集するのを制限する方法について説明します 。 従業員が、ビジネスの場所や電子メール アドレスなど、特定の連絡先情報を編集できないようにすることができます。
+この記事では、Dynamics 365 Human Resources で従業員が連絡先情報を編集するのを制限する方法について説明します。 従業員が、ビジネスの場所や電子メール アドレスなど、特定の連絡先情報を編集できないようにすることができます。
 
 > [!NOTE]
 > この機能を使用するには、まず機能管理で **(プレビュー) 従業員が特定の目的で住所や連絡先情報の追加または編集を制限する** を有効にする必要があります。 プレビュー機能を有効にする方法については、[機能の管理](hr-admin-manage-features.md)を参照してください。<br><br>![プレビュー機能を有効にする。](./media/hr-employee-self-service-restrict-enable.png)

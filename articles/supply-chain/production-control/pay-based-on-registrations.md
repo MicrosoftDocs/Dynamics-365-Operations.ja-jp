@@ -1,6 +1,6 @@
 ---
 title: 登録に基づく支払い
-description: このトピックでは、作業者登録に基づいて給料がどのように計算されるかについて説明します。
+description: この記事では、作業者登録に基づいて給料がどのように計算されるかについて説明します。
 author: johanhoffmann
 ms.date: 03/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 58ff2629c2894e85ca5529df5f995ffa5273de67e1c22564f5f9911ea86fbd95
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 729e2f6c7c2dac598154b342244ab3d8eccaf4d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844383"
 ---
 # <a name="pay-based-on-registrations"></a>登録に基づく支払い
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、作業者登録に基づいて給料がどのように計算されるかについて詳細に説明します。 これには、計算に使用できる設定オプションのさまざまな組み合わせが、どのように結果に影響するかを示す例が含まれます。 対象となる領域の一部を次に示します。
+この記事では、作業者登録に基づいて給料がどのように計算されるかについて詳細に説明します。 これには、計算に使用できる設定オプションのさまざまな組み合わせが、どのように結果に影響するかを示す例が含まれます。 対象となる領域の一部を次に示します。
 
 - フレックスタイム
 - 残業

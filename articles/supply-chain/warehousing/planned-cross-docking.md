@@ -1,6 +1,6 @@
 ---
 title: 計画済クロスドッキング
-description: このトピックでは、注文に必要な在庫数量が受入または作成から正しい出荷ドックまたはステージング領域に直接送られる、高度な計画済クロスドッキングについて説明します。 元伝票からの残りのすべての在庫は、通常のプットアウェイ プロセスによって適切な保管場所に送られます。
+description: この記事では、注文に必要な在庫数量が受入または作成から正しい出荷ドックまたはステージング領域に直接送られる、高度な計画済クロスドッキングについて説明します。 元伝票からの残りのすべての在庫は、通常のプットアウェイ プロセスによって適切な保管場所に送られます。
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573036"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863682"
 ---
 # <a name="planned-cross-docking"></a>計画済クロスドッキング
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、高度な計画済クロスドッキングについて説明します。 クロスドッキングは、注文に必要な在庫数量が受入または作成から正しい出荷ドックまたはステージング領域に直接送られる倉庫プロセスです。 元伝票からの残りのすべての在庫は、通常のプットアウェイ プロセスによって適切な保管場所に送られます。
+この記事では、高度な計画済クロスドッキングについて説明します。 クロスドッキングは、注文に必要な在庫数量が受入または作成から正しい出荷ドックまたはステージング領域に直接送られる倉庫プロセスです。 元伝票からの残りのすべての在庫は、通常のプットアウェイ プロセスによって適切な保管場所に送られます。
 
 クロスドッキングにより、作業者は既に出荷注文としてマークされている入荷プットアウェイと出荷ピッキングの手順を省略します。 したがって、在庫の処理回数は可能な限り最小限に抑えられます。 さらに、システムとの相互作用が少ないため、倉庫の作業現場での時間とスペースの節約が増加します。
 
@@ -37,7 +37,7 @@ ms.locfileid: "7573036"
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>計画済クロスドッキング機能を有効にする
 
-このトピックで説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、次の機能を次の順序でオンにします:
+この記事で説明する機能がシステムにまだ含まれていない場合は、[機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) に移動して、次の機能を次の順序でオンにします。
 
 1. *計画済クロスドッキング*
 1. *クロスドッキング テンプレートと場所ディレクティブ*

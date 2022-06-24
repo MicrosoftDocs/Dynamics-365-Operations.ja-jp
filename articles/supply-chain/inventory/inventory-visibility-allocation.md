@@ -1,8 +1,8 @@
 ---
-title: 在庫の可視化の在庫配賦
-description: このトピックでは、在庫配賦機能の設定方法と使用方法について説明します。これにより、専用の在庫を確保して、最も収益性の高いチャネルや顧客を確実に満たすことができます。
+title: Inventory Visibility の在庫配賦
+description: この記事では、在庫配賦機能の設定方法と使用方法について説明します。これにより、専用の在庫を確保して、最も収益性の高いチャネルや顧客を確実に満たすことができます。
 author: yufeihuang
-ms.date: 05/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 4293ead4ccfc9ba04e8b9da437134b4e97569026
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786950"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852508"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>在庫の可視化の在庫配賦
 
@@ -98,7 +98,7 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>他の現物メジャーへの配賦可能数量の計算メジャーの追加
 
-配賦を使用するには、配賦可能数量の計算メジャー (`@iv`.`@available_to_allocate`) を設定する必要があります。 たとえば、`fno` データ ソースと `onordered` メジャー、`pos` データ ソースと `inbound` メジャーがあり、`fno.onordered` と `pos.inbound` の合計に対して手元で配賦を行うとします。 この場合、`@iv.@available_to_allocate` には、式に `pos.inbound` と `fno.onordered` を含める必要があります。 次に例を示します。
+配賦を使用するには、配賦可能数量の計算メジャー (`@iv.@available_to_allocate`) を設定する必要があります。 たとえば、`fno` データ ソースと `onordered` メジャー、`pos` データ ソースと `inbound` メジャーがあり、`fno.onordered` と `pos.inbound` の合計に対して手元で配賦を行うとします。 この場合、`@iv.@available_to_allocate` には、式に `pos.inbound` と `fno.onordered` を含める必要があります。 次に例を示します:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -110,11 +110,12 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
 
 たとえば、4 つのグループ名を使用し、\[`channel`、`customerGroup`、`region`、`orderType`\] に設定した場合、これらの名前は、構成の更新 API を呼び出す際に配賦関連の要求に対して有効になります。
 
-### <a name="allcoation-using-tips"></a>ヒントを使用した配賦
+### <a name="allocation-using-tips"></a>ヒントを使用した配賦
 
-- すべての製品について、配賦機能は、[製品インデックス階層の構成](inventory-visibility-configuration.md#index-configuration) で設定した製品インデックス階層に従って同じ分析コード レベルで使用する必要があります。 たとえば、インデックス階層は Site、Location、Corlor、Size です。 Site、Location、Corlor レベルで 1 つの製品に数量を割り当てる場合。 次に配賦に使用する場合は、Site、Location、Color レベルでも行う必要があり、Site、Location、Color、Size レベルまたは Site レベル、Location レベルを使用すると、データの整合性が失われます。
+- すべての製品について、配賦機能は、[製品インデックス階層の構成](inventory-visibility-configuration.md#index-configuration) で設定した製品インデックス階層に従って同じ *分析コード レベル* で使用する必要があります。 たとえば、インデックス階層が \[`Site`、`Location`、`Color`、`Size`\] であるとします。 分析コード レベル \[`Site`、`Location`、`Color`\] で 1 つの製品に対してある数量を割り当てる場合は、次回この製品を割り当てるときに同じレベル \[`Site`、`Location`、`Color`\] で割り当てる必要があります。 レベル \[`Site`、`Location`、`Color`、`Size`\] または \[`Site`、`Location`\] を使用すると、データに一貫性がなくなります。
 - 配賦グループ名の変更は、サービスに保存されているデータには影響しません。
 - 配賦は、製品の手持数量がプラスになった後に行う必要があります。
+- 高 *配賦レベル* のグループからサブグループに製品を割り当てるには、`Reallocate` API を使用します。 たとえば、配賦グループ階層 \[`channel`、`customerGroup`、`region`、`orderType`\] があり、一部の製品を配賦グループ \[Online、VIP\] からサブ配賦グループ \[Online、VIP、EU\] に割り当てる場合は、`Reallocate` API を使用して数量を移動します。 `Allocate` API を使用すると、仮想共通プールから数量が割り当てられます。
 
 ### <a name="using-the-allocation-api"></a><a name="using-allocation-api"></a>配賦 API の使用
 
@@ -297,7 +298,7 @@ Inventory Visibility サービスの配賦機能では、現物在庫の数量�
 
 この要求では、comsume 要求本文で使用する現物メジャーは、計算メジャーで使用されるモディファイア タイプに対して、反対のモディファイア タイプ (加算または減算) を使用する必要があります。 したがって、この consume 本文では、`iv.inbound` 値は `Addition` ではなく `Subtraction` です。
 
-Inventory Visibility は `fno` データ ソースのデータを変更できないと常に主張したため、`fno` データ ソースは、consume 本文で使用できません。 データ フローは一方向であるため、`fno` データ ソースに対するすべての数量変更は、Supply Chain Management 環境から取得される必要があります。
+Inventory Visibility が `fno` データ ソースのデータを変更できないことを常に主張したため、`fno` データ ソースを consume 本文で使用できません。 データ フローは一方向であるため、`fno` データ ソースに対するすべての数量変更は、Supply Chain Management 環境から取得される必要があります。
 
 #### <a name="consume-as-a-soft-reservation"></a><a name="consume-to-soft-reserved"></a>仮引当として消費
 

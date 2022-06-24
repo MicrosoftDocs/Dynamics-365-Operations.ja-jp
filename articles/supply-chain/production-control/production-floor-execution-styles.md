@@ -1,6 +1,6 @@
 ---
 title: 生産現場の実行インターフェースのスタイル
-description: このトピックでは、既定の生産フロア実行スタイルが適用されるように、フォーム コントロールを構成する方法について説明します。
+description: この記事では、既定の生産フロア実行スタイルが適用されるように、フォーム コントロールを構成する方法について説明します。
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ef39dc6414f0afdadd4a4b5a41e1fb1fe60e4974
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ad6ecd591353fe8ddc1a5b9049d65491fb58e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790893"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859143"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>生産現場の実行インターフェースのスタイル
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、既定の生産フロア実行スタイルが適用されるように、フォーム コントロールを構成する方法について説明します。
+この記事では、既定の生産フロア実行スタイルが適用されるように、フォーム コントロールを構成する方法について説明します。
 
 ## <a name="forms-and-dialogs"></a>フォームおよびダイアログ
 
@@ -31,7 +31,7 @@ ms.locfileid: "7790893"
 - フォームが既存のレポートの進行状況フォームと類似している場合は、フォームまたはダイアログの名前を `JmgProductionFloorExecutionCustomInputDialog` で始める必要があります。
 - フォームまたはダイアログには、詳細フォームのパーツを含めることができます。 スタイルをそれに適用するには、詳細フォームパーツの名前は `JmgProductionFloorExecutionCustomDetailsDialog` で始まる必要があります。
 - フォームまたはダイアログに簡単なビューを表示する必要がある場合は、簡易ビューの名前を `JmgProductionFloorExecutionCustomDialog` で始める必要があります。 簡易ビューを持つフォームの例としては、開始フォームおよび間接活動フォームがあります。
-- ダイアログのすべてのコントロールをこのトピックで説明されているように構成する必要があります。
+- ダイアログのすべてのコントロールをこの記事で説明されているように構成する必要があります。
 
 > [!IMPORTANT]
 > このリストの最初の 2 つのポイントで述べた機能には、Supply Chain Management バージョン 10.0.19 以降が必要です。

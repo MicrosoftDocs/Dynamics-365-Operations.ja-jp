@@ -1,6 +1,6 @@
 ---
 title: 組織階層の設定
-description: このトピックでは、Microsoft Dynamics 365 Commerce での組織階層の設定方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce での組織階層の設定方法について説明します。
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01ba05566e966eb62a4df0b7b97ee3a442027936
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746019"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847683"
 ---
 # <a name="set-up-organization-hierarchies"></a>組織階層の設定
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce での組織階層の設定方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce での組織階層の設定方法について説明します。
 
 チャネルを作成する前に、組織階層が設定されていることを確認する必要があります。
 
@@ -34,7 +34,7 @@ ms.locfileid: "6746019"
 組織階層を作成する前に、組織を作成する必要があります。 詳細については、[法人の作成](channels-legal-entities.md) または [作業単位の作成](../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json) を参照してください。
 
 
-詳細については、次のトピックを参照してください。
+詳細については、次の記事を参照してください。
 - [組織と組織階層の概要](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 - [組織階層の計画](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
 - [組織階層の作成](../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/commerce/toc.json)

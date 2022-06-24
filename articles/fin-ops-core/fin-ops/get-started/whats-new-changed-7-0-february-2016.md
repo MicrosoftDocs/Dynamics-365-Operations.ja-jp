@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e92e6aeab949567e65a13ebdd92f0e5b306ccd30
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711323"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861708"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0 (2016 年 2 月) の新機能および変更された機能
 
@@ -320,7 +320,7 @@ ms.locfileid: "8711323"
 <td><strong>ヘルプ</strong> をクリックして、ガイド付きの手順を追ったヘルプ (タスク ガイド) および概念に関するトピックにアクセスします。</td>
 <td>AX 2012 のヘルプ システムは、ローカル Web サーバーに保存されている HTML トピックをポイントしています。 顧客およびパートナーは独自のヘルプを作成できます。</td>
 <td>Dynamics AX の現在のバージョンのヘルプ システムは、Microsoft Dynamics Lifecycle Services (LCS) BPM に格納されているタスク ガイドを表示します。 ヘルプ システムでは、Microsoft docs サイトからトピックの表示もします。 詳細については、<a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">ヘルプ システム</a>および<a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">新しいタスク ガイド (2016 年 2 月)</a> を参照してください。</td>
-<td>タスク ガイドでは、ガイド付きでインタラクティブな方法によって、タスクまたは業務プロセスの手順が説明されています。 Microsoft が提供するタスク ガイドをダウンロードおよびカスタマイズできます。 トピックでは、製品ドキュメントをより迅速かつ柔軟に作成、配布、および更新する方法を提供します。 したがって、最新の技術情報にアクセスできることを保証するために役立ちます。</td>
+<td>タスク ガイドでは、ガイド付きでインタラクティブな方法によって、タスクまたは業務プロセスの手順が説明されています。 Microsoft が提供するタスク ガイドをダウンロードおよびカスタマイズできます。 記事では、製品ドキュメントをより迅速かつ柔軟に作成、配布、および更新する方法を提供します。 したがって、最新の技術情報にアクセスできることを保証するために役立ちます。</td>
 </tr>
 </tbody>
 </table>

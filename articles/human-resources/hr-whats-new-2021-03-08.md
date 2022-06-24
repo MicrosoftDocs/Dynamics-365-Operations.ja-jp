@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources (2021 年 3 月 8 日) の新機能および変更された機能
-description: このトピックでは、2021 年 3 月 8 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2020 年 8 月 8 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 03/08/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7b1e616f9bc72ab1f30f69671c673241096f3276
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9280e85f9701573717c4115b4d752ed11be4862e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687871"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868071"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-08-2021"></a>Dynamics 365 Human Resources (2021 年 3 月 8 日) の新機能および変更された機能
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -48,9 +48,9 @@ ms.locfileid: "8687871"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新することがあります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 出庫 |  説明 |
+| 問題の番号 | 問題 |  Description |
 | --- | --- | --- |
 | 486611 | **すべてのカレンダーで休暇の無効化** が有効になっている場合、休暇が休暇カレンダーに表示される | **すべてのカレンダーで休暇の無効化** が有効になっている場合、休暇および欠勤カレンダーの機能拡張が有効になっているときに休暇情報が表示されなくなりました。|
 | 508972 | 休暇の銀行トランザクション エンティティに登録の検証がない | 休暇の銀行トランザクション エンティティを使用している場合、プランに登録されていない従業員はインポートできなくなりました。 |

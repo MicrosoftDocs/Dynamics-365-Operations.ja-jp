@@ -1,6 +1,6 @@
 ---
 title: Microsoft Excel のビジネス ドキュメント テンプレートへの新しいフィールドの追加
-description: このトピックでは、ビジネス ドキュメント管理機能を使用して、Microsoft Excel でビジネス ドキュメント テンプレートに新しいフィールドを追加する方法について説明します。
+description: この記事では、ビジネス ドキュメント管理機能を使用して、Microsoft Excel でビジネス ドキュメント テンプレートに新しいフィールドを追加する方法について説明します。
 author: NickSelin
 ms.date: 11/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8395a87e88ebbd1942c87da0cecebe6d25bdf625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767245"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869405"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Microsoft Excel のビジネス ドキュメント テンプレートへの新しいフィールドの追加
 
@@ -28,14 +28,14 @@ ms.locfileid: "6767245"
 
 ビジネス ドキュメントを Microsoft Excel 形式で生成するために使用されるテンプレートに新しいフィールドを追加できます。 これらのフィールドを、生成されたドキュメントにアプリケーションの必要な情報を入力するために使用されるプレースホルダーとして追加できます。 追加するすべてのフィールドに、データソースへのバインドを指定し、テンプレートを使用してビジネス ドキュメントを生成するときにフィールドに入力するアプリケーション データを指定することもできます。
 
-この機能の詳細を知るには、このトピックの例を実行します。 この例では、テンプレートを更新して、生成された自由書式の請求書のフォームのフィールドに入力する方法を示します。
+この機能の詳細を知るには、この記事の例を実行します。 この例では、テンプレートを更新して、生成された自由書式の請求書のフォームのフィールドに入力する方法を示します。
 
 ## <a name="configure-business-document-management-to-edit-templates"></a>テンプレートを編集するための、ビジネス ドキュメント管理のコンフィギュレーション
 
 ビジネス ドキュメント管理 (BDM) は、[電子報告 (ER) の概要](general-electronic-reporting.md) フレームワークを基に構築されているため、BDM を使用して作業を開始できるようにするには、必要な ER パラメーターと BDM パラメーターをコンフィギュレーションする必要があります。
 
-1.  Microsoft Dynamics 365 Financeのインスタンスにシステム管理者としてサインインします。
-2.  [ビジネス ドキュメント管理の概要](er-business-document-management.md) トピックの例の、次の手順を実行します。
+1.  Microsoft Dynamics 365 Finance のインスタンスにシステム管理者としてサインインします。
+2.  [ビジネス ドキュメント管理の概要](er-business-document-management.md) 記事に記載の例の、次の手順を実行します:
 
     1.  ER パラメーターのコンフィギュレーション。
     2.  BDM 有効にします。

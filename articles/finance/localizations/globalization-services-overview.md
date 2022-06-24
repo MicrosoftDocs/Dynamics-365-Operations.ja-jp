@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 グローバリゼーション サービス
-description: このトピックでは、Microsoft Dynamics 365 グローバリゼーション サービスの概要を示します。
+description: この記事では、Microsoft Dynamics 365 グローバリゼーション サービスの概要を示します。
 author: JaneA07
 ms.date: 04/12/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 1dfe88bf6eb0cf479f8febd8a599b165b71d932d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9f449bed7eac8d6eb38e62e6eda816f31cff80c2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879481"
 ---
 # <a name="dynamics-365-globalization-services"></a>Dynamics 365 グローバリゼーション サービス
 
@@ -38,10 +38,10 @@ ms.locfileid: "7985994"
 
 | オンライン サービス | RCS | 電子請求 | 税の計算 (プレビュー) |
 |----------------|-----|----------------------|---------------------------|
-| Dynamics 365 Finance | あり | あり | あり | 
-| Dynamics 365 Supply Chain Management | あり | あり | あり | 
-| Dynamics 365 Project Operations | あり | あり | 適用できません | 
-| Dynamics 365 Commerce | あり | 適用できません | 適用できません | 
+| Dynamics 365 Finance | 有効 | 有効 | 有効 | 
+| Dynamics 365 Supply Chain Management | 有効 | 有効 | 有効 | 
+| Dynamics 365 Project Operations | 有効 | 有効 | 該当なし | 
+| Dynamics 365 Commerce | 有効 | 該当なし | 適用できません | 
 
 > [!NOTE]
 > RCS の Azure 地理的場所 (地理) の可用性が異なるため、このサービスの構成により、該当する Dynamics 365 オンライン サービスに選択された地理的な場所の外部に顧客データが転送される可能性があります。 詳細については [Dynamics 365 および Power Platform: 使用可能性、データの場所、言語、およびローカライズを参照してください](https://aka.ms/rcs/D365Productavailabilityguide)。

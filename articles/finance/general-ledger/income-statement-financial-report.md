@@ -1,6 +1,6 @@
 ---
 title: 損益計算書財務諸表
-description: このトピックでは、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられる構成要素を説明します。
+description: この記事では、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられる構成要素を説明します。
 author: jcart1106
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f664eeaa5cf40ce856b424d10ba2d1c3bd46e1c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: e9a1f20ed5e2a84e0d18101ede46ffffef4230c7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868463"
 ---
 # <a name="income-statement-financial-report"></a>損益計算書財務諸表
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられる構成要素を説明します。 
+この記事では、損益計算書の既定のレポートについて説明します。 また、このレポートに関連付けられる構成要素を説明します。 
 
 ## <a name="default-income-statement-report"></a>既定の損益計算書表
 

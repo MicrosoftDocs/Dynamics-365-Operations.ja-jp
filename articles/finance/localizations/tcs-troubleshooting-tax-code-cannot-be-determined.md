@@ -1,6 +1,6 @@
 ---
-title: 税コードを決定できません
-description: このトピックでは、税計算サービスの「税コードを決定できません」という内容のエラーをトラブルシューティングする方法について説明します。
+title: 税コードを特定できません
+description: この記事では、税計算サービスの「税コードを決定できません」という内容のエラーをトラブルシューティングする方法について説明します。
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 3c0914f0013ad2de61cd5a59e3092fef149742e4
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6a74724de38cf362900277ab9addc8e6894f7689
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645405"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877862"
 ---
-# <a name="tax-code-cannot-be-determined"></a>税コードを決定できません
+# <a name="tax-code-cannot-be-determined"></a>税コードを特定できません
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、税計算サービスで「税コードを決定できません」という内容のエラーが表示された場合に実行できるトラブルシューティングの手順について説明します。
+この記事では、税計算サービスで「税コードを決定できません」という内容のエラーが表示された場合に実行できるトラブルシューティングの手順について説明します。
 
 ## <a name="symptom"></a>現象
 
@@ -121,7 +121,7 @@ ms.locfileid: "8645405"
 
 ## <a name="mitigation"></a>軽減策
 
-1. このトピックの[トラブルシューティング](#troubleshoot) セクションの各ステップを実行し、必要に応じて設定を修正します。 税グループと品目別税グループが正しく決定されていない場合、[一致する結果が見つかりませんでした](tcs-troubleshooting-no-matching-result.md)を参照してください。
+1. この記事の[トラブルシューティング](#troubleshoot) セクションの各ステップを実行し、必要に応じて設定を修正します。 税グループと品目別税グループが正しく決定されていない場合、[一致する結果が見つかりませんでした](tcs-troubleshooting-no-matching-result.md)を参照してください。
 2. 税グループと品目別税グループに共通部分がない場合は、RCS で新しい機能バージョンを作成し、設定を修正します。
 
     - **税機能** \> **税のコードとグループ**  >  **品目別税グループ** に移動します。

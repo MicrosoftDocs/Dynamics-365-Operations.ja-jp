@@ -1,6 +1,6 @@
 ---
 title: 発注書に記載されている商品の受取の記録
-description: このトピックでは、商品の受取を発注書に直接記録する方法について説明します。
+description: この記事では、商品の受取を発注書に直接記録する方法について説明します。
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 856a588f219879c8ac995faa8a2b17e38d78a933
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 22baf6d0f6db04b3c6ce3c09ee8cb286e9a1e590
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675096"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882463"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>発注書に記載されている商品の受取の記録
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、商品の受取を発注書に直接記録する方法について説明します。 製品の受領を倉庫に登録しておき、後で発注書に記録することもできます。 このタスクは通常は購買担当者または買掛金勘定コーディネーターが行います。 このガイドで示されている例は、デモ データの会社 USMF で使用できます。 この例には、タスク ガイドとして手順を行うことができるように簡単な発注書を作成するステップが含まれています。 独自のデータでこの手順を使用している場合は、**商品の受取の記録** サブタスクから開始します。
+この記事では、商品の受取を発注書に直接記録する方法について説明します。 製品の受領を倉庫に登録しておき、後で発注書に記録することもできます。 このタスクは通常は購買担当者または買掛金勘定コーディネーターが行います。 このガイドで示されている例は、デモ データの会社 USMF で使用できます。 この例には、タスク ガイドとして手順を行うことができるように簡単な発注書を作成するステップが含まれています。 独自のデータでこの手順を使用している場合は、**商品の受取の記録** サブタスクから開始します。
 
 
 ## <a name="prepare-a-new-purchase-order-for-receipt-of-goods"></a>商品の受取用の新しい発注書の準備

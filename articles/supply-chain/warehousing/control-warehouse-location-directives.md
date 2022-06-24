@@ -1,6 +1,6 @@
 ---
 title: 作業テンプレートと場所ディレクティブを使用した倉庫作業の制御
-description: このトピックでは、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。
+description: この記事では、作業テンプレートと場所ディレクティブを使用して、倉庫で作業を実行する方法と場所を決定する方法について説明します。
 author: perlynne
 ms.date: 10/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7e955fba12e963a443c0304f0a8a0e395c46909dd34de12cd51fa9788491786
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65675d8a99d023176e3e66e92cd3d634750bdb0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770147"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877424"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>作業テンプレートと場所ディレクティブを使用した倉庫作業の制御
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、作業テンプレートと場所ディレクティブを使用して作業が倉庫のどこでどのように実行されるかを決定する方法を説明します。
+この記事では、作業テンプレートと場所ディレクティブを使用して、倉庫で作業を実行する方法と場所を決定する方法について説明します。
 
 倉庫作業者がモバイル デバイスで受信する指示は、様々な倉庫プロセスとタスクを定義するために設定した Dynamics 365 Supply Chain Management 作業テンプレートによって決定されます。 作業テンプレートは、各倉庫プロセスについて作業がどのように実行されるかを決定します。 場所ディレクティブと作業テンプレートを関連付けることで、作業が倉庫の特定の物理的領域で実行されることを保証できます。
 
@@ -73,7 +73,7 @@ ms.locfileid: "6770147"
 ## <a name="additional-resources"></a>追加リソース
 
 - ビデオ: [倉庫管理コンフィギュレーションの詳細情報](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- ヘルプ トピック: [場所ディレクティブの作業](create-location-directive.md)
+- ヘルプ記事: [場所ディレクティブの作業](create-location-directive.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

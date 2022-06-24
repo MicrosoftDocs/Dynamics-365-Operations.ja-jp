@@ -1,6 +1,6 @@
 ---
 title: B2B Web サイトの注文を迅速に実行する
-description: このトピックでは、企業間 (B2B) サイト ユーザーがバルク注文やリピート注文を迅速に実行できる Microsoft Dynamics 365 Commerce の機能について説明します。
+description: この記事では、企業間 (B2B) サイト ユーザーがバルク注文やリピート注文を迅速に実行できる Microsoft Dynamics 365 Commerce の機能について説明します。
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ac4833b2ca05e90b4019ffdfc4b669c542b0cf6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b13fb49c49b0a540b192f4dd0f3a847fb5dd8a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686549"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881364"
 ---
 # <a name="place-b2b-website-orders-quickly"></a>B2B Web サイトの注文を迅速に実行する
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、企業間 (B2B) サイト ユーザーがバルク注文やリピート注文を迅速に実行できる Microsoft Dynamics 365 Commerce の機能について説明します。
+この記事では、企業間 (B2B) サイト ユーザーがバルク注文やリピート注文を迅速に実行できる Microsoft Dynamics 365 Commerce の機能について説明します。
 
 Dynamics 365 Commerce B2B eコマースの Web サイトを使用すると、ユーザーは、検索や閲覧による新製品の検出、製品詳細の表示、品目のカートへの追加、チェックアウトなどの標準的な操作を実行できます。ただし、企業間 (B2C) サイトの顧客は、通常、品目を少量で 1 回だけ注文しますが、通常、B2B 顧客は品目を大量に複数回注文します。 通常、このような顧客は購入したい品目をよく把握しているため、製品の検出フェーズをスキップして、直接注文に移動します。 Commerce B2B eコマースの Web サイトは、顧客のニーズを満たすために役立つさまざまな機能を提供します。
 
@@ -65,4 +65,4 @@ Commerce B2B eコマース Web サイトを使用すると、サイト ユーザ
 
 ![注文履歴から再注文する。](../media/Reorder.png)
 
-このトピックでは、Commerce B2B サイトを使用すると、ユーザーが必要な製品をすばやく見つけて注文、再注文することができます。 バルク注文のキャプチャ プロセスを簡素化するために、さらなる機能が開発中です。
+この記事では、Commerce B2B サイトを使用すると、ユーザーが必要な製品をすばやく見つけて注文、再注文することができます。 バルク注文のキャプチャ プロセスを簡素化するために、さらなる機能が開発中です。

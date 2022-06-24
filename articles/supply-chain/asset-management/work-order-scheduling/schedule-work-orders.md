@@ -1,6 +1,6 @@
 ---
 title: 作業指示書のスケジュール
-description: このトピックでは、資産管理でワーク オーダーをスケジュールする方法について説明します。
+description: この記事では、資産管理でワーク オーダーをスケジュールする方法について説明します。
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718062"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845057"
 ---
 # <a name="schedule-work-orders"></a>作業指示書のスケジュール
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718062"
 
  
 
-このトピックでは、資産管理でワーク オーダーをスケジュールする方法について説明します。 
+この記事では、資産管理でワーク オーダーをスケジュールする方法について説明します。 
 
 ワーク オーダーで必要な時間数は、予測時間の合計から転記された時間を差し引いた値によって定義されます。 さらに時間が必要な場合は、それに応じて予測を調整する必要があります。 **資産管理** > **共通** > **ワーク オーダー** > **すべてのワーク オーダー** または **有効なワーク オーダー** では、ワーク オーダーを選択し、**ワーク オーダー** の **予測** をクリックすることにより、ワーク オーダーの予測を表示または編集できます。ワーク オーダーが作成され、見積もりができたら、ワーク オーダーを完了するための次のステップは必要なメンテナンス作業者とツールを割り当てることです。
 

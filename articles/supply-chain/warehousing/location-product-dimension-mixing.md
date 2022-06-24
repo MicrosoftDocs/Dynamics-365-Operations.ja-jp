@@ -1,6 +1,6 @@
 ---
 title: 場所の製品分析コードの混在
-description: このトピックでは、場所の製品分析コードの混在に関する情報を提供します。 この場所プロファイルの機能は、ファッション業界などで、製品バリアントまたは分析コードを持つ製品を使用した場合に、場所の管理を改善するのに役立ちます。 特定の場所のプロファイルに対して、構成、色、スタイル、およびサイズを混在させることができるかどうか、またはこれらの分析コードのいずれかまたはそれらの組み合わせを同じ場所に配置できるかどうかを決定できます。
+description: この記事では、場所の製品分析コードの混在に関する情報を提供します。 この場所プロファイルの機能は、ファッション業界などで、製品バリアントまたは分析コードを持つ製品を使用した場合に、場所の管理を改善するのに役立ちます。 特定の場所のプロファイルに対して、構成、色、スタイル、およびサイズを混在させることができるかどうか、またはこれらの分析コードのいずれかまたはそれらの組み合わせを同じ場所に配置できるかどうかを決定できます。
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9daf6061d56ef004753114aaffa8eb580cea1186
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885728"
 ---
 # <a name="location-product-dimension-mixing"></a>場所の製品分析コードの混在
 
@@ -28,7 +28,7 @@ ms.locfileid: "8103491"
 
 ## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>場所の製品分析コードの混合機能オンまたはオフにする
 
-このトピックで説明する機能を使用するには、システムの *場所の製品分析コードの混在* 機能をオンにする必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *場所の製品分析コードの混在* 機能を検索して、この機能をオンまたはオフにすることができます。
+この記事で説明する機能を使用するには、システムの *場所の製品分析コードの混在* 機能をオンにする必要があります。 Supply Chain Management 10.0.25 では、この機能は必須なため、オフにすることはできません。 10.0.25 より以前のバージョンを使用している場合、管理者は [機能管理](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ワークスペースで *場所の製品分析コードの混在* 機能を検索して、この機能をオンまたはオフにすることができます。
 
 ## <a name="setup"></a>設定
 
@@ -44,7 +44,7 @@ ms.locfileid: "8103491"
     > [!NOTE]
     > **品目の混合を許可する** オプションが *いいえ* に設定されている場合にのみ、このオプションを *はい* に設定できます。
 
-1. **許可された製品分析コードの混合** クイック タブで、**サイズ** オプションを *はい* に設定します。 このトピックで説明するシナリオでは、異なる **サイズ** 分析コードが設定されている製品に対してのみ混合を実行できます。 ただし、他のオプションも使用可能です。
+1. **許可された製品分析コードの混合** クイック タブで、**サイズ** オプションを *はい* に設定します。 この記事で説明するシナリオでは、異なる **サイズ** 分析コードが設定されている製品に対してのみ混合を実行できます。 ただし、他のオプションも使用可能です。
 1. **保存** を選択します。
 
 ### <a name="create-a-new-product-master-and-product-variants"></a>新しい製品マスターおよび製品バリアントの作成

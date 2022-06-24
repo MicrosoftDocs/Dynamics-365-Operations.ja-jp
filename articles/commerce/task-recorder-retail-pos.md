@@ -1,6 +1,6 @@
 ---
 title: Retail Modern POS (MPOS) および Cloud POS のタスク レコーダーとヘルプ
-description: このトピックでは、Retail Modern POS および Cloud POS のタスク レコーダーを使用する方法を説明します。
+description: この記事では、Retail Modern POS および Cloud POS のタスク レコーダーを使用する方法を説明します。
 author: mugunthanm
 ms.date: 06/19/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aedf18ef8b3d7266f3e5c7acd676241f9ec8b900f061f5363cd8d581062e83ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f9f3e17a6c67dc1cc1d4ba423ce258f2ed1d1ec0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730758"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847603"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS (MPOS) および Cloud POS のタスク レコーダーとヘルプ
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Retail Modern POS および Cloud POS のタスク レコーダーを使用する方法を説明します。
+この記事では、Retail Modern POS および Cloud POS のタスク レコーダーを使用する方法を説明します。
 
 ## <a name="overview"></a>概要
 
@@ -139,7 +139,7 @@ You can specify the beginning and end of a set of grouped steps by using the **�
 
 [![ヘルプ ボタン。](./media/help.jpg)](./media/help.jpg)
 
-検索結果でタスク ガイドをクリックするときは、ヘルプ トピックとしてステップを表示するか、Word 文書にステップをエクスポートできます。
+検索結果でタスク ガイドをクリックするときは、ヘルプ記事としてステップを表示するか、Word 文書にステップをエクスポートできます。
 
 > [!NOTE]
 > Retail Modern POS および Cloud POS のヘルプ システムでは、使用しているフォームまたは行っている操作によるタスク ガイドは表示されません。 検索ボックスにプロセス名を入力して **検索** ボタンをクリックする必要があります。

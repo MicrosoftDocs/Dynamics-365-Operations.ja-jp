@@ -1,6 +1,6 @@
 ---
 title: 集荷のチェックイン モジュール
-description: このトピックでは、集荷のチェックイン モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
+description: この記事では、集荷のチェックイン モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
 author: bicyclingfool
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f6359f41f3b97325db4fda083dc32d39839811297a96a1f2d99a93990c00afae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7002db893da1802063148a9b800ffa92f3e5f065
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747468"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885478"
 ---
 # <a name="check-in-for-pickup-module"></a>集荷のチェックイン モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、集荷のチェックイン モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
+この記事では、集荷のチェックイン モジュールを取り上げ、Microsoft Dynamics 365 Commerce で構成する方法について説明します。
 
 集荷のチェックイン モジュールは、店舗にその到着を通知する Dynamics 365 Commerce 顧客チェックイン機能を使用する顧客の確認ページを提供します。 また、集荷のチェックイン モジュールにより、注文の配送を容易にする追加情報を顧客から収集するフォームを構成することができます。 この情報には、顧客の駐車場の番号、および車両の作成とモデルが含まれています。 
 

@@ -1,6 +1,6 @@
 ---
-title: 作業者が生産現場の実行インターフェイスを使用する方法
-description: このトピックでは、作業者の視点から生産現場の実行インターフェイスを使用する方法について説明します。
+title: 生産現場の実行インターフェイスを作業者が使用する方法
+description: この記事では、作業者の視点から生産現場の実行インターフェイスを使用する方法について説明します。
 author: johanhoffmann
 ms.date: 01/24/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644993"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860670"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>作業者が生産現場の実行インターフェイスを使用する方法
 
@@ -34,7 +34,7 @@ ms.locfileid: "8644993"
 
 ![生産現場の実行インターフェイスのサインイン ページ。](media/pfei-sign-in-page.png "生産現場の実行インターフェイスのサインイン ページ")
 
-このトピックの残りのセクションでは、作業者がインターフェイスをどのように操作するかについて説明します。
+この記事の残りのセクションでは、作業者がインターフェイスをどのように操作するかについて説明します。
 
 ## <a name="all-jobs-tab"></a>すべてのジョブ タブ
 

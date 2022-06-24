@@ -1,6 +1,6 @@
 ---
 title: 原産国
-description: 多くの組織では、仕入先に証明書を発行して、製品が特定の認証基準を満たしていることを確認しています。 多くの場合、これら証明書は原産国によって異なります。 このトピックでは、原産国機能に関する情報を提供します。これにより、製品を原産国にリンクさせ、製品の認証を追跡することができます。
+description: 多くの組織では、仕入先に証明書を発行して、製品が特定の認証基準を満たしていることを確認しています。 多くの場合、これら証明書は原産国によって異なります。 この記事では、原産国機能に関する情報を提供します。これにより、製品を原産国にリンクさせ、製品の認証を追跡することができます。
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a2740f6b1ccb52073b013e613d8ab779cc088180
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 60d5a2067b8e3d311af89fb09cfa3b5c007db219
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777641"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882521"
 ---
 # <a name="country-of-origin"></a>原産国
 

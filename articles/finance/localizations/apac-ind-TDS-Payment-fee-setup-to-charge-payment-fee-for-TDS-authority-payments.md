@@ -1,6 +1,6 @@
 ---
 title: TDS 所轄官庁支払の支払手数料の設定
-description: このトピックでは、源泉徴収 (TDS) 所轄官庁の支払いに課金される支払い手数料を設定する方法について説明します。
+description: この記事では、源泉徴収 (TDS) 所轄官庁の支払いに課金される支払い手数料を設定する方法について説明します。
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 290606201eff7aee985983603e7895a8a59233ac
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 598d4c07d9f96fb5ae58c3929bab353a6d57615f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845222"
 ---
 # <a name="set-up-payment-fees-for-tds-authority-payments"></a>TDS 所轄官庁支払の支払手数料の設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、源泉徴収 (TDS) 所轄官庁の支払いに課金される支払い手数料を設定する方法について説明します。
+この記事では、源泉徴収 (TDS) 所轄官庁の支払いに課金される支払い手数料を設定する方法について説明します。
 
 1. **買掛金勘定 \> 支払の設定 \> 支払手数料** の順に移動します。
 

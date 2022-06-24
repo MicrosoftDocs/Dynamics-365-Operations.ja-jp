@@ -1,6 +1,6 @@
 ---
 title: スキル レベル タイプ
-description: このトピックでは、Dynamics 365 Human Resources におけるスキル レベルタイプのオプションについて説明します。
+description: この記事では、Dynamics 365 Human Resources におけるスキル レベルタイプのオプションについて説明します。
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 772656285d99b0eff8135cfc5d24eea5d5aef02c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a97f1d4d13bd803523e5601ac6d86e148073add1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066196"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861163"
 ---
 # <a name="skill-level-type"></a>スキル レベル タイプ
 
@@ -27,7 +27,7 @@ ms.locfileid: "8066196"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources におけるスキル レベルタイプのオプションについて説明します。
+この記事では、Dynamics 365 Human Resources におけるスキル レベルタイプのオプションについて説明します。
 
 物理名 : mshr_hrmskillleveltype
 

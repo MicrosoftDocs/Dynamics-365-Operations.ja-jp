@@ -1,6 +1,6 @@
 ---
 title: 電子申告 (ER) の概要
-description: このトピックでは、電子申告 (ER) ツールの概要について説明します。 重要な概念、サポートされているシナリオ、ソリューションの一部である形式について説明します。
+description: この記事では、電子申告 (ER) ツールの概要について説明します。 重要な概念、サポートされているシナリオ、ソリューションの一部である形式について説明します。
 author: NickSelin
 ms.date: 11/02/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 976a02f51e22c513b988e1ecfcb792d5f93a4b54
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 65f7a642d3b2c2ddfca1e2d92570b49ef2f8c2b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986150"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869260"
 ---
 # <a name="electronic-reporting-er-overview"></a>電子申告 (ER) の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、電子申告 (ER) ツールの概要を示します。 重要な概念、ER がサポートするシナリオについて説明し、ソリューションの一部として設計およびリリースされているフォーマットの一覧も掲載しています。
+この記事では、電子申告 (ER) ツールの概要を説明します。 重要な概念、ER がサポートするシナリオについて説明し、ソリューションの一部として設計およびリリースされているフォーマットの一覧も掲載しています。
 
 ERは、規制当局の電子報告書や支払いの作成、管理役立つ構成可能なツールです。 このモデルは、次の 3 つの概念に基づいて作成されます:
 

@@ -1,6 +1,6 @@
 ---
 title: 工順と工程
-description: このトピックでは、工順と工程に関する情報を提供します。
+description: この記事では、工順と工程に関する情報について説明します。
 author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: 103c7007cd002c5953d096ff6001a93c4936b702
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856022"
 ---
 # <a name="routes-and-operations"></a>工順と工程
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、工順と工程に関する情報を提供します。 工順は、製品または製品バリアントを生産するためのプロセスを定義します。 ここでは、生産プロセス内の各ステップ (工程) とこれらのステップが実行される必要がある手順について説明します。 ステップごとに、工程は必要な運営リソース、必要な段取り時間と実行時間、およびコストが計算される必要がある方法も定義します。
+この記事では、工順と工程に関する情報について説明します。 工順は、製品または製品バリアントを生産するためのプロセスを定義します。 ここでは、生産プロセス内の各ステップ (工程) とこれらのステップが実行される必要がある手順について説明します。 ステップごとに、工程は必要な運営リソース、必要な段取り時間と実行時間、およびコストが計算される必要がある方法も定義します。
 
 ## <a name="overview"></a>概要
 

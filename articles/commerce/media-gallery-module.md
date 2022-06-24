@@ -1,6 +1,6 @@
 ---
 title: メディア ギャラリー モジュール
-description: このトピックでは、メディア ギャラリー モジュールを取り上げ、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+description: この記事では、メディア ギャラリー モジュールを取り上げ、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 0d05129145c5d6c3967b243cb0855a1c4fd3e84e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 73eba2c39f9ebf1e4092545565b8cbf2db75cfb5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780871"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881738"
 ---
 # <a name="media-gallery-module"></a>メディア ギャラリー モジュール
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、メディア ギャラリー モジュールを取り上げ、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
+この記事では、メディア ギャラリー モジュールを取り上げ、Microsoft Dynamics 365 Commerce のサイト ページにそれを追加する方法について説明します。
 
 メディア ギャラリー モジュールは、ギャラリー ビューに 1 つ以上の画像を表示します。 メディア ギャラリー モジュールは、水平方向 (画像の下の行として) または垂直方向 (画像の横の列として) のいずれかに配置できるサムネイル画像をサポートします。 また、メディア ギャラリー モジュールには、画像をズーム (拡大) したり、全画面モードで表示したりする機能も用意されています。 メディア ギャラリー モジュールでレンダリングするには、Commerce サイト ビルダーのメディア ライブラリでイメージが使用可能でなければなりません。 現時点では、メディア ギャラリー モジュールでサポートしているのは画像のみです。
 

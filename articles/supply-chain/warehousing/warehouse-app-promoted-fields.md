@@ -1,6 +1,6 @@
 ---
 title: Warehouse Management モバイル アプリの手順に昇格したフィールドを構成する
-description: このトピックでは、Warehouse Management モバイル アプリのタスク フローで任意のステップに対して特定情報のレベルを上げてハイライトする方法について説明します。
+description: この記事では、Warehouse Management モバイル アプリのタスク フローで任意のステップに対して特定情報のレベルを上げてハイライトする方法について説明します。
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857057"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの手順に昇格したフィールドを構成する
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> このトピックで説明する機能は、新しい Warehouse Management モバイル アプリにのみ適用されます。 これらは非推奨となっている古い倉庫アプリには影響しません。
+> この記事で説明する機能は、新しい Warehouse Management モバイル アプリにのみ適用されます。 これらは非推奨となっている古い倉庫アプリには影響しません。
 
-このトピックでは、Warehouse Management モバイル アプリのタスク フローで任意のステップに対して特定情報のレベルを上げてハイライトする方法について説明します。 この機能は、作業者がフローに沿って作業をおこなう際に、最も重要なフィールドで彼らの注意に注目する手助けができます。 各プロセスの各手順で、管理者はどのフィールドのレベルを上げるのか、どのフィールドを強調表示するのかを選択できます。
+この記事では、Warehouse Management モバイル アプリのタスク フローで任意のステップに対して特定情報のレベルを上げてハイライトする方法について説明します。 この機能は、作業者がフローに沿って作業をおこなう際に、最も重要なフィールドで彼らの注意に注目する手助けができます。 各プロセスの各手順で、管理者はどのフィールドのレベルを上げるのか、どのフィールドを強調表示するのかを選択できます。
 
 ## <a name="enable-promoted-fields-in-your-system"></a>自分のシステムで昇格したフィールドを有効にする
 
@@ -44,7 +44,7 @@ ms.locfileid: "7920326"
     - **モジュール:** *倉庫管理*
     - **機能名:** *Warehouse アプリの昇格したフィールド*
 
-    この機能は、このトピックで説明する機能です。
+    この機能は、この記事で説明する機能です。
 
 1. **Warehouse Management \> 設定 \> モバイル デバイス \> Warehouse アプリのフィールド名** の順に移動して、**デフォルト設定を作成する** を選択することで Warehouse Management mobile アプリのフィールド名を更新します。 詳細情報については、[Warehouse Management モバイル アプリのフィールドを構成する](configure-app-field-names-priorities-warehouse.md) を参照してください。
 1. Warehouse Management モバイル アプリを使用する法人 (会社) ごとに前の手順を繰り返します。
@@ -56,7 +56,7 @@ ms.locfileid: "7920326"
 1. [Warehouse Management モバイルアプリのステップ タイトルと手順のカスタマイズ](mobile-app-titles-instructions.md) で説明されている手順とメニュー固有の上書きを作成します 。
 1. **ステップ ID** と **メニュー項目名** の値の組み合わせを検索し、**ステップ ID** 列で値を選択します。
 1. 表示されたページで、**昇格したフィールドを選択** クイック タブで、ツールバーの **フィールドの選択** を選択します。
-1. **昇格されたフィールド** ダイアログ ボックスで、レベルを上げたいフィールドを選択します。 また、選択したフィールドは 2 つまで強調表示できます。 強調表示されたフィールドは、Warehouse Management モバイル アプリで太字で表示されます。 フィールドを選択する際、一部のスクリーンは昇格されたフィールドを 1 つか 2 つだけ表示できる大きさであることに注意してください。 これらの設定を使用する方法を示す例については、このトピックの後のシナリオを参照してください。
+1. **昇格されたフィールド** ダイアログ ボックスで、レベルを上げたいフィールドを選択します。 また、選択したフィールドは 2 つまで強調表示できます。 強調表示されたフィールドは、Warehouse Management モバイル アプリで太字で表示されます。 フィールドを選択する際、一部のスクリーンは昇格されたフィールドを 1 つか 2 つだけ表示できる大きさであることに注意してください。 これらの設定を使用する方法を示す例については、この記事の後のシナリオを参照してください。
 
     > [!NOTE]
     > **使用可能なフィールド** リストは、メニュー項目に表示できるフィールドに限定されています。 ただし、他の要因 (品目構成など) によって、フィールドが実際に Warehouse Management モバイル アプリに表示されるかどうかが決ります。 昇格したフィールドを構成した場合は、選択したフィールドだけが Warehouse Management モバイル アプリのメイン ページに表示されます。 ただし、作業員は、詳細ページを変更することで残りのフィールドを表示できます。

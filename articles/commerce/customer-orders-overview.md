@@ -1,6 +1,6 @@
 ---
 title: 販売時点管理 (POS) の顧客注文
-description: このトピックでは、販売時点管理 (POS) の顧客注文に関する情報を提供します。 顧客注文は、特別注文としても知られています。 このトピックには、関連パラメーターおよびトランザクション フローのディスカッションが含まれています。
+description: この記事では、販売時点管理 (POS) の顧客注文に関する情報を提供します。 顧客注文は、特別注文としても知られています。 この記事には、関連パラメーターおよびトランザクション フローのディスカッションが含まれています。
 author: josaw1
 ms.date: 08/02/2021
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6051e0a18823b354dd9940aac70a086a0f317002
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982821"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850385"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>販売時点管理 (POS) の顧客注文
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、販売時点管理 (POS) における顧客注文の作成と管理方法について説明します。 顧客注文は、買い物客が後日商品を受け取りたい、別の場所から商品を受け取りたい、商品を出荷してもらいたいなどの売上を捕捉することができます。 
+この記事では、販売時点管理 (POS) アプリで顧客注文を作成および管理する方法について説明します。 顧客注文は、買い物客が後日商品を受け取りたい、別の場所から商品を受け取りたい、商品を出荷してもらいたいなどの売上を捕捉することができます。 
 
 無指向性のコマース チャネルの世界では、多くの小売業者によって、さまざまな製品およびフルフィルメントの要件を満たすために、顧客注文または特別注文のオプションが用意されています。 以下に一般的なシナリオを挙げます。
 

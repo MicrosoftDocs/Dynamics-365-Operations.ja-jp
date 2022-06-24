@@ -1,6 +1,6 @@
 ---
 title: 最大能力負荷の計算
-description: このトピックでは、資産管理で最大能力負荷を計算する方法について説明します。
+description: この記事では、資産管理で最大能力負荷を計算する方法について説明します。
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eed75cd5268b19d819d42e764bdbb5e6f4c79a0a732c5023b3fc40da798e2ca1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8eb0b152f0a4b4e0f61d519262c24d02b71b8fc3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757881"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849651"
 ---
 # <a name="calculate-capacity-load"></a>最大能力負荷の計算
 

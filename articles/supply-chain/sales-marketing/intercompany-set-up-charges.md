@@ -1,6 +1,6 @@
 ---
 title: 会社間注文の諸費用を設定する
-description: このトピックでは、会社間注文の諸費用を設定する方法について説明します
+description: この記事では、会社間注文の諸費用を設定する方法について説明します
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 27633e09bfcf41fbbe5449b0d3b5f283eaf7ee13
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7b84c0bac6c31139170a99afc65cd08d70bd018e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673665"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885844"
 ---
 # <a name="set-up-charges-on-intercompany-orders"></a>会社間注文の諸費用を設定する
 

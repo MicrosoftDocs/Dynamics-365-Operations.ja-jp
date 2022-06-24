@@ -1,6 +1,6 @@
 ---
 title: スウェーデン向け制御ユニットの統合サンプル
-description: このトピックでは、Microsoft Dynamics 365 Commerce のスウェーデン向け会計統合サンプルの概要について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce のスウェーデン向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: ace1bd5b1a06317b6753a34779ecfa96e519a63e
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 11ce0b146f2e64092b0d03dc7416660d76380cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885405"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>スウェーデン向け制御ユニットの統合サンプル
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のスウェーデン向け会計統合サンプルの概要について説明します。
+この記事では、Microsoft Dynamics 365 Commerce のスウェーデン向け会計統合サンプルの概要について説明します。
 
 > [!NOTE]
 > このサンプルは、[スウェーデンの制御ユニットとの POS 統合のサンプル](retail-sdk-control-unit-sample.md)に代わる、会計統合機能のサンプルです。 以前のサンプルは、[会計統合フレームワーク](./fiscal-integration-for-retail-channel.md)を利用しておらず、今後の更新で非推奨になります。 以前のサンプルから、Dynamics 365 Commerce バージョン **10.0.22 またはそれ以前** に対応したサンプルに移行する方法については、[以前の統合サンプルからの移行](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample) を参照してください。
@@ -83,7 +83,7 @@ POS レシートの形式で使用される言語テキストやカスタム フ
 
 必要な領収書の形式ごとに、**印刷動作** フィールドの値を **常に印刷** に変更します。
 
-レシート形式デザイナーで、**フッター** セクションに、次のカスタム フィールドを追加します。 フィールド名は、このトピックの前述のセクションで定義した言語テキストに対応しています。
+レシート形式デザイナーで、**フッター** セクションに、次のカスタム フィールドを追加します。 フィールド名は、この記事の前述のセクションで定義した言語テキストに対応しています。
 
 - **登録の制御コード** - このフィールドは、制御コードを印刷します。
 - **登録デバイス** - このフィールドは、制御ユニットの製造番号を表示します。

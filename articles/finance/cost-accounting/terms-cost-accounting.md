@@ -1,6 +1,6 @@
 ---
 title: 原価会計用語
-description: このトピックでは、原価計算で使用する重要な用語を定義します。
+description: この記事では、原価計算で使用する重要な用語を定義します。
 author: aprilolson
 ms.date: 08/31/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f50f7849ac3c097d64a8499a19157f24d7a7b317
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 5827ad66b9eedaab88dbda97c1ebbcd15f6d9ac8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712428"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881936"
 ---
 # <a name="cost-accounting-terminology"></a>原価会計用語
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、原価計算で使用する重要な用語を定義します。
+この記事では、原価計算で使用する重要な用語を定義します。
 
 **配賦基準**
 

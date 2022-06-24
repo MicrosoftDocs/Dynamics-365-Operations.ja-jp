@@ -1,6 +1,6 @@
 ---
 title: 税コードの設定
-description: このトピックでは、税計算サービスで税コードを設定する方法について説明します。
+description: この記事では、税計算サービスで税コードを設定する方法について説明します。
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 8bdb194e7d8b704d1e58d3c25bf2e1f6bff1ba00
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 1bc250716763ce9d8e25c8850c8a3676bf65fb0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883867"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862931"
 ---
 # <a name="set-up-tax-codes"></a>税コードの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、税計算サービスで税コードを設定する方法について説明します。 これには、税コードを機能させる簡単なシナリオの設定と、複雑なシナリオに対するいくつかの詳細な税コード機能に関する情報が含まれます。
+この記事では、税計算サービスで税コードを設定する方法について説明します。 これには、税コードを機能させる簡単なシナリオの設定と、複雑なシナリオに対するいくつかの詳細な税コード機能に関する情報が含まれます。
 
 > [!IMPORTANT]
 > 税計算サービスの税コードの設定は、法人に依存しません。 この設定は、Regulatory Configuration Service (RCS) で一度だけ実行できます。 Finance で選択した法人に対して税計算サービスを有効にした場合、税コードは Microsoft Dynamics 365 Finance に自動的に同期されます。

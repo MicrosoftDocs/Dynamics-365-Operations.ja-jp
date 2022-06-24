@@ -1,6 +1,6 @@
 ---
 title: JBA のファイル形式の顧客支払のインポート
-description: このトピックでは、JBA 形式の EFT ファイルのインポート方法について説明します。
+description: この記事では、JBA 形式の EFT ファイルのインポート方法について説明します。
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Japan
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb9df0d7cb4aa3b9b5a16b17a1c6a0cf526a4f56
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 4671617612f38559ef48a6711c90216c205601b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601472"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874324"
 ---
 # <a name="import-customer-payment-with-jba-file-format"></a>JBA のファイル形式の顧客支払のインポート
 

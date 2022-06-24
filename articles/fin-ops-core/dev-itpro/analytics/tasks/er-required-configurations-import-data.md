@@ -1,6 +1,6 @@
 ---
 title: ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
-description: このトピックでは、外部ファイルから Microsoft Dynamics 365 Finance アプリにデータをインポートできるように電子申告コンフィギュレーションを設計します。
+description: この記事では、外部ファイルから Microsoft Microsoft Dynamics 365 Finance アプリにデータをインポートできるように電子申告構成を設計する方法について説明します。
 author: NickSelin
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7eaa35baae8e030d8a8b7ce903554c4876c874b48cfd72d6ac278cf4c0e8a6e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa1dc55e8cdee7d61e5ababe92e8a9234788664f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720859"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865896"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER 外部ファイルからデータをインポートするために必要なコンフィギュレーションの作成
 
@@ -241,7 +241,7 @@ ER は、ビジネス ユーザーに対し、外部データ ファイルを、
 19. ページを閉じます。
 20. [編集] をクリックします。
 
-    修正プログラム 「KB 4012871 異なるバージョンの Dynamics 365 Finance に展開するための異なる種類の前提条件を指定する機能を備えた、分離された構成でのGERモデル マッピングのサポート」 ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) をインストールした場合、入力したフォーマット設定に対して次の手順 「'モデル マッピングの既定' のフラグをオンにする」 を実行します。 それ以外の場合、次のステップをスキップします。  
+    修正プログラム "異なるバージョンの Dynamics 365 Finance 上で展開するために異なる種類の要件を指定する機能を使用した別個の構成での GER モデル マッピングの KB 4012871 サポート" ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) をインストールした場合、入力した形式の構成のための次のステップ "'モデルマッピングの既定フラグ’ をオンにする" を実行します。 それ以外の場合、次のステップをスキップします。  
 
 21. [モデル マッピング] フィールドの既定値で [はい] を選択します。
 22. ツリーで、[1099 Payments model] を選択します。

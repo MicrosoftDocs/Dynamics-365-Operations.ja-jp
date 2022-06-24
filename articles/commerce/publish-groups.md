@@ -1,6 +1,6 @@
 ---
 title: 公開グループの作業
-description: このトピックでは、Microsoft Dynamics 365 Commerce の公開グループ機能について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce の公開グループ機能について説明します。
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d757f34d3e16850e4f5de122f63b2b3342f612e49f07c7cf6585362999f03c02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76d447a5368cd5e342e8b1b934bb04d45e3378fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717675"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885113"
 ---
 # <a name="work-with-publish-groups"></a>公開グループの作業
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce の公開グループ機能について説明します。
+この記事では、Microsoft Dynamics 365 Commerce の公開グループ機能について説明します。
 
 E コマース Web サイトは年間を通して常に新しいコンテンツで更新されています。 更新は多くの場合、休日、季節的なマーケティング キャンペーン、またはプロモーション開始などの、忙しい E コマース イベントに関連するバッチで公開されます。 これらの更新は多くの場合、Web サイト コンテンツ (例えばページ、画像、フラグメント、テンプレート) のグループを単一のアクションで同時にステージング、検証、および発行する必要があります。
 

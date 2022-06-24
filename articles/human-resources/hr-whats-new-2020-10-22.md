@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources の新機能および変更された機能 2020 年 10 月 22 日
-description: このトピックでは、2020 年 10 月 22 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2020 年 10 月 22 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: jcart1106
 ms.date: 10/22/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b36354b14faf59aacb4a619dfb6f243335e6a297
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d58c8d5eab86779a764cee5a3ee8ca17ade471de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862804"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Dynamics 365 Human Resources の新機能および変更された機能 2020 年 10 月 22 日
 
@@ -27,7 +27,7 @@ ms.locfileid: "8063521"
 
 
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
 新機能と予想される一般提供日の詳細については、[Dynamics 365 Human Resources 2020 リリース ウェーブ 2 の概要](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/) を参照してください。
 
@@ -50,9 +50,9 @@ ms.locfileid: "8063521"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新することがあります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号| 出庫  | 説明|
+| 問題の番号| 問題  | Description|
 | --- | --- | --- |
 | 437922 | DMF エンティティを使用して FMLA 時間をインポートすると、読み取り専用エラーが発生します。 | FMLA 時間エンティティを使用して、FMLA ケースに関連付けられた時間をインポートできませんでした。 インポートした時間がケースの残り時間を超えないようにするロジックを追加しました。 |
 | 512019 | **前回の繰越** 合計が正しくありません。 | **休暇** ページで、**現在の日付** を次の会計年度期間の初日に変更すると、**年次休暇** タイプの **前回の繰越** 合計が正しく表示されませんでした。 これにより、正しい合計が表示されるようになりました。 |

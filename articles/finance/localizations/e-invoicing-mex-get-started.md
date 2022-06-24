@@ -1,6 +1,6 @@
 ---
 title: メキシコ用電子請求の使用を開始する
-description: このトピックでは、メキシコ向けの電子請求の使用を開始するにあたっての情報を提供します。
+description: この記事では、メキシコ向けの電子請求の使用を開始するにあたっての情報を提供します。
 author: gionoder
 ms.date: 12/01/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 540b6e6f9b4b669957cc3310e473ad59b9210594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855332"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>メキシコ用電子請求の使用を開始する
 
@@ -31,11 +31,11 @@ ms.locfileid: "8566002"
 > [!IMPORTANT]
 > メキシコ向けの電子請求は、現在のところ、Comprobante Fiscal Digital por Internet (CFDI) 文書で利用できるすべての機能、および Microsoft Dynamics 365 Finance や Dynamics 365 Supply Chain Management に組み込まれている関連する統合で利用できるすべての機能のすべてには対応していない場合があります。
 
-このトピックでは、メキシコ向けの電子請求の使用を開始するにあたっての情報を提供します。 このガイドでは、Regulatory Configuration Services (RCS) 、財務における、国ごとに異なる構成手順について説明します。 また、サービスを介して CFDI の請求書を提出するために金融機関で行う必要のある手順や、処理結果や CFDI の請求書の状況を確認する方法についても説明します。
+この記事では、メキシコ向けの電子請求の使用を開始するにあたっての情報を提供します。 このガイドでは、Regulatory Configuration Services (RCS) 、財務における、国ごとに異なる構成手順について説明します。 また、サービスを介して CFDI の請求書を提出するために金融機関で行う必要のある手順や、処理結果や CFDI の請求書の状況を確認する方法についても説明します。
 
 ## <a name="prerequisites"></a>必要条件
 
-このトピックの手順を実行する前に、[電子請求書発行サービスの運用を開始する](e-invoicing-get-started-service-administration.md)と[電子請求書を始める](e-invoicing-get-started.md)に記載の手順を完了する必要があります。
+このトピックの手順を実行する前に、[電子請求書発行サービスの運用を開始する](e-invoicing-get-started-service-administration.md)と[電子請求書を始める](e-invoicing-get-started.md)の記事に記載の手順を完了する必要があります。
 
 ## <a name="set-up-the-cadena-xslt"></a>Cadena XSLT の設定
 

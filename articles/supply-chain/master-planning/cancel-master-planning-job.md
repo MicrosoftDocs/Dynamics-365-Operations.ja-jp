@@ -1,6 +1,6 @@
 ---
 title: マスター プラン ジョブのキャンセル
-description: このトピックでは、組み込み計画機能を使用する有効な計画ジョブを取り消す方法について説明します。
+description: この記事では、組み込み計画機能を使用する有効な計画ジョブを取り消す方法について説明します。
 author: t-benebo
 ms.date: 05/14/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d96f946c0c87db44ac5fe1adda68e47838dcc0d7
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 6a9667be9921fdde7e1ca5de68c7f51d48905ac8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469229"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860786"
 ---
 # <a name="cancel-a-master-planning-job"></a>マスター プラン ジョブのキャンセル
 

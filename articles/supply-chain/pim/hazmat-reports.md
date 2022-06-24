@@ -1,6 +1,6 @@
 ---
 title: 危険物の照会とレポート
-description: このトピックでは、危険物に関連する各種レポートの使用方法について説明します。 これらのレポートの多くは、出荷中および保管中にさまざまな危険物に関する規制事項に準拠するために必要です。
+description: この記事では、危険物に関連する各種レポートの使用方法について説明します。 これらのレポートの多くは、出荷中および保管中にさまざまな危険物に関する規制事項に準拠するために必要です。
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ca8c973d3322bd51bf519e83fb5a5c19d35c0bed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 782b1b4995af09a63c483d2b81ed255a5c11803a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568546"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846043"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>危険物の照会とレポート
 
@@ -63,7 +63,7 @@ Microsoft Dynamics 365 Supply Chain Management では、危険物に関連する
 
 リリースされた製品に在庫制限を設定する方法の詳細については、[危険製品の在庫制限の設定](hazmat-items.md#stock-limits) を参照してください。
 
-在庫制限に使用される規制は、**倉庫管理パラメーター** ページで定義されています。 **倉庫管理 \> 設定 \> 倉庫管理パラメーター** に移動し、**レポート** タブの **危険物の在庫制限** で、規制コードを指定します。 詳細については、このトピックで前述した [危険物レポートの設定](#set-up) セクションを参照してください。
+在庫制限に使用される規制は、**倉庫管理パラメーター** ページで定義されています。 **倉庫管理 \> 設定 \> 倉庫管理パラメーター** に移動し、**レポート** タブの **危険物の在庫制限** で、規制コードを指定します。 詳細については、この記事で前述した [危険物レポートの設定](#set-up) セクションを参照してください。
 
 ## <a name="verified-gross-mass-report"></a>確定済総重量レポート
 

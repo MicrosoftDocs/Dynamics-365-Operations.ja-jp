@@ -1,6 +1,6 @@
 ---
 title: 自分のチーム モバイル ワークスペース
-description: このトピックでは、管理者が直属の部下と拡張スタッフを表示できる自分のチーム モバイル ワークスペースについて、情報を提供します。
+description: この記事では、管理者が直属の部下と拡張スタッフを表示できる自分のチーム モバイル ワークスペースについて、情報を提供します。
 author: ShielaSogge
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7793bd6bb1c2dfb5f6840430914393e837242fb5
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: f15ac24e5c32a42863cac8a9c9754c95aa4ff734
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811060"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868701"
 ---
 # <a name="my-team-mobile-workspace"></a>自分のチーム モバイル ワークスペース
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-このトピックでは、**自分のチーム** モバイル ワークスペースについての情報を提供します。 このワークスペースでは、管理者が直属の部下および拡張スタッフを表示することができます。 また、レポート チェーン内の各個人に称賛を送信することもできます。
+この記事では、**自分のチーム** モバイル ワークスペースについての情報を提供します。 このワークスペースでは、管理者が直属の部下および拡張スタッフを表示することができます。 また、レポート チェーン内の各個人に称賛を送信することもできます。
 
 このモバイル ワークスペースは、Finance and Operations モバイル アプリで使用するためのものです。
 
@@ -55,7 +55,7 @@ ms.locfileid: "8811060"
 </ul>
 </td>
 <td>システム管理者</td>
-<td>組織にまだ Finance and Operations アプリが配置されない場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ人事管理が配置されていない場合、システム管理者は<a href="https://dynamics.microsoft.com/human-resources/overview/">人事管理ウェブページ</a>から評価版バージョンにアクセスできます。
+<td>組織にまだ Finance and Operations アプリが配置されない&#39;ホーム組織場合は、<a href="../deployment/deploy-demo-environment.md">デモ環境の配置</a>を参照してください。 組織にまだ人事管理が配置されていない&#39;場合、システム管理者は<a href="https://dynamics.microsoft.com/human-resources/overview/">人事管理ウェブページ</a>から評価版バージョンにアクセスできます。
 </td>
 </tr>
 <tr class="even">

@@ -1,6 +1,6 @@
 ---
-title: 小型パーセルの出荷
-description: このトピックでは、小型パーセルの出荷 (SPS) 機能に関する情報を提供します。 この機能は、Microsoft Dynamics 365 Supply Chain Management を有効にして、梱包コンテナに関する詳細を配送業者に送信した後、配送業者から出荷ラベル、出荷レート、追跡番号を受け取ります。
+title: 小型荷物の出荷
+description: この記事では、小型パーセルの出荷 (SPS) 機能に関する情報について説明します。 この機能は、Microsoft Dynamics 365 Supply Chain Management を有効にして、梱包コンテナに関する詳細を配送業者に送信した後、配送業者から出荷ラベル、出荷レート、追跡番号を受け取ります。
 author: Mirzaab
 ms.date: 01/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: e8e2bda39b9de241d17fcf3cb9acce2b8015efd2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7bafd4a5118de5ca6025c6bd74fe436aa6abd1c8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687619"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855906"
 ---
 # <a name="small-parcel-shipping"></a>小型パーセルの出荷
 
@@ -54,7 +54,7 @@ Supply Chain Management にはレート エンジンは含まれていません�
 
 #### <a name="create-and-deploy-functional-rate-engines"></a>機能レート エンジンを作成および配置する
 
-生産環境またはテスト環境で使用できるような機能レート エンジンを作成して配置する方法については、次のトピックを参照してください。
+生産環境またはテスト環境で使用できるような機能レート エンジンを作成して配置する方法については、次の記事を参照してください。
 
 - [新しい輸送管理エンジンの作成](../transportation/create-new-transportation-management-engine.md)
 - [輸送管理エンジンの設定](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
@@ -77,7 +77,7 @@ SPS のレート エンジンを作成して配置したら、次の手順に従
 
 ## <a name="example-scenario"></a>シナリオ例
 
-このシナリオの例では、このトピックの説明に従って、システムを準備した後に SPS を設定して使用する方法を示します。 このシナリオでは、前述のデモ レート エンジンを使用します。
+このシナリオの例では、この記事で前述したようにシステムを準備した後に SPS を設定して使用する方法について説明します。 このシナリオでは、前述のデモ レート エンジンを使用します。
 
 ### <a name="make-demo-data-available"></a>デモ データを有効化する
 
@@ -147,7 +147,7 @@ SPS のレート エンジンを作成して配置したら、次の手順に従
 
 コンテナー梱包ポリシーを設定するには、次の手順に従います。
 
-1. ZPL プリンター定義をまだ設定していない場合は、ドキュメント ルート指定アプリケーションを使用して設定します。 詳細については、[ドキュメント印刷の概要](../../fin-ops-core/dev-itpro/analytics/print-documents.md) と関連トピックを参照してください。
+1. ZPL プリンター定義をまだ設定していない場合は、ドキュメント ルート指定アプリケーションを使用して設定します。 詳細については、[ドキュメント印刷の概要](../../fin-ops-core/dev-itpro/analytics/print-documents.md) と関連記事を参照してください。
 1. **倉庫管理 \> 設定 \> コンテナ― \> コンテナ―梱包ポリシー** の順に移動します。
 1. アクション ペインで、**新規** を選択して、コンテナー梱包ポリシーを追加します。
 1. 新規ポリシーのヘッダーで、次の値を設定します。

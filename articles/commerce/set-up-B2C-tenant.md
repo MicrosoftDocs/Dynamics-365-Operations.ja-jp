@@ -1,6 +1,6 @@
 ---
 title: B2C テナントを Commerce に 設定
-description: このトピックでは、Dynamics 365 Commerce のユーザーサイト認証のために Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントを設定する方法について説明します。
+description: この記事では、Dynamics 365 Commerce のユーザー サイト認証のために Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントを設定する方法について説明します。
 author: BrianShook
 ms.date: 05/05/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 4b1ee8999717d70dfe36baef95921962a1b7be65
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714315"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853744"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C テナントを Commerce に 設定
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 Commerce のユーザーサイト認証のために Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントを設定する方法について説明します。
+この記事では、Dynamics 365 Commerce のユーザー サイト認証のために Azure Active Directory (Azure AD) の企業と顧客間 (B2C) テナントを設定する方法について説明します。
 
 Dynamics 365 Commerce は Azure AD B2C を使用して、ユーザーの資格情報と認証フローをサポートします。 ユーザーは、これらのフローを使用して、登録、サインイン、およびパスワードのリセットを行うことができます。 Azure AD B2C では、ユーザー名やパスワードなどの機密性の高いユーザー認証情報を保存します。 B2C テナントのユーザー レコードには、B2C ローカル アカウント レコードまたは B2C ソーシャル ID プロバイダー レコードのいずれかが保存されます。 これらの B2C レコードは、Commerce 環境内の顧客レコードにリンクされます。
 

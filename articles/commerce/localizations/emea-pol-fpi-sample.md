@@ -1,6 +1,6 @@
 ---
 title: ポーランド向け会計プリンター統合サンプル
-description: このトピックでは、Microsoft Dynamics 365 Commerce のポーランド向け会計統合サンプルの概要について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce のポーランド向け会計統合サンプルの概要について説明します。
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-2-1
-ms.openlocfilehash: 43d9a54334d97a65a1f9a356daf54154f6c069b3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: e71d7b342789e4cf2e7644a46bc847087063fc78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876952"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>ポーランド向け会計プリンター統合サンプル
 
 [!include[banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce のポーランド向け会計統合サンプルの概要について説明します。
+この記事では、Microsoft Dynamics 365 Commerce のポーランド向け会計統合サンプルの概要について説明します。
 
 ポーランド向け Dynamics 365 Commerce 機能には、POSと会計用プリンターの連携のサンプルが含まれています。 このサンプルは、[会計統合機能](fiscal-integration-for-retail-channel.md)を拡張し、[Posnet Polska S.A.](https://www.posnet.com.pl) の会計プリンタ用プロトコル POSNET THERMAL HD 2.02 をサポートしており、COM ポートで接続された会計プリンタと、ネイティブ ソフトウェア ドライバを使用して通信することができます。 Posnet Thermal HD FV EJ は、Posnet が提供している Posnet Thermal HD FV EJ のソフトウェア エミュレータを使って実装し、テストを行いました。 このサンプルはソース コード形式で提供され、Retail ソフトウェア開発キット (SDK) に含まれます。
 
