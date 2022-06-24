@@ -1,6 +1,6 @@
 ---
 title: 資産の重要度タイプ
-description: このトピックでは、資産管理の資産の重要度タイプについて説明します。
+description: この記事では、資産管理の資産の重要度タイプについて説明します。
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfde9a9bc681c0d758491fc5c361b5b046e20d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899501"
 ---
 # <a name="asset-criticality-types"></a>資産の重要度タイプ
 
@@ -28,7 +28,7 @@ ms.locfileid: "6776923"
 
  
 
-このトピックでは、資産管理の資産の重要度タイプについて説明します。 資産の重要度は資産に関連し、ワーク オーダーに転送されます。 ワーク オーダーでは変更できません。 資産の重要度は、ワーク オーダー スケジューリング中にワーク オーダーの重要度を計算するために使用されます。 つまり、資産のどのメンテナンス ジョブが会社の生産スケジュールと生産性にどの程度影響するかを計算するために使用されます。 ワーク オーダー スケジューリングの評価スコアの計算に関連する設定の詳細については、[資産管理パラメーター](../setup-for-objects/enterprise-asset-management-parameters.md) を参照してください。
+この記事では、資産管理の資産の重要度タイプについて説明します。 資産の重要度は資産に関連し、ワーク オーダーに転送されます。 ワーク オーダーでは変更できません。 資産の重要度は、ワーク オーダー スケジューリング中にワーク オーダーの重要度を計算するために使用されます。 つまり、資産のどのメンテナンス ジョブが会社の生産スケジュールと生産性にどの程度影響するかを計算するために使用されます。 ワーク オーダー スケジューリングの評価スコアの計算に関連する設定の詳細については、[資産管理パラメーター](../setup-for-objects/enterprise-asset-management-parameters.md) を参照してください。
 
 重要度を設定するには、まず資産設定で使用する重要度タイプを作成します。 それから、資産の重要度の設定をします。
 

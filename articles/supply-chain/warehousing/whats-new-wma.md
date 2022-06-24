@@ -1,6 +1,6 @@
 ---
 title: Warehouse Management モバイル アプリの新機能または変更された機能
-description: このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能および変更された機能を一覧表示します。
+description: この記事では、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能および変更された機能を一覧表示します。
 author: Mirzaab
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c79b18d24c8b9cb90a570496882fdfe91dc6ba51
-ms.sourcegitcommit: a4dc7d170f1504631127c3e92af0c6b03468d375
+ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2022
-ms.locfileid: "8661828"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945726"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリの新機能または変更された機能
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+この記事では、Microsoft Dynamics 365 Supply Chain Management の Warehouse Management モバイル アプリのリリース済バージョンごとに、新機能、修正、改良点、および既知の問題を一覧表示します。
+
+## <a name="version-20240"></a>Version 2.0.24.0
+
+このバージョンでは、次の新機能、修正、および改良点を紹介します:
+
+- **詳細** ページでスキャン オプションを有効にする改善されたスキャナー ページ。
+- 改良されたジェスチャ (画面のタッチ/タップなど)。
+- Android のパフォーマンスの問題が改善されました。
+- **照会** ページに複数のカードを表示できるように複数のヘッダーの配置が修正されました。
+- スクロールの改ページ位置の短い間隔が有効になるようにスクロールが改善されました。
+- **照会** ページに追加のテキストを表示する長押しが追加されました。
+- Android の欠落したデバイス ID 情報が修正されました。
+- 安定性が向上しました。
+- ログイン レイアウトを最適化しました。
+- テンキー、**詳細** ページ、入力ページでダイアログ ポップアップ ページを閉じる右スワイプ ジェスチャを追加しました。
 
 ## <a name="version-20220"></a>Version 2.0.22.0
 

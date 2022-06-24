@@ -1,6 +1,6 @@
 ---
 title: 督促状の処理
-description: このトピックでは、督促状の作成、印刷、および転記の方法を示します。
+description: この記事では、督促状の作成、印刷、および転記の方法を示します。
 author: ShivamPandey-msft
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 005ed8fcb6c3c6f985f1cfa9c0a78675173fb208
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: fbca4acf30e2c58d8bb615d659b883b574a12aa7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725068"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909130"
 ---
 # <a name="process-collection-letters"></a>督促状の処理
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、督促状の作成、印刷、および転記の方法を示します。 このタスクでは、USMF というデモ会社を使用します。
+この記事では、督促状の作成、印刷、および転記の方法を示します。 このタスクでは、USMF というデモ会社を使用します。
 
 ## <a name="set-up-a-collection-letter-sequence-on-the-posting-profile"></a>転記プロファイルでの督促状シーケンスの設定
 1. **ナビゲーション ウィンドウ > モジュール > 貸方転記および取立 > 設定 > 顧客転記プロファイル** の順に移動します。

@@ -1,6 +1,6 @@
 ---
 title: トランザクション イベント用の電子メール テンプレートの作成
-description: このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベント用の電子メール テンプレートの作成、アップロード、および構成する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce でトランザクション イベント用の電子メール テンプレートを作成、アップロード、および構成する方法について説明します。
 author: bicyclingfool
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910553"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>トランザクション イベント用の電子メール テンプレートの作成
 
 [!include [banner](includes/banner.md)]
 
 
-このトピックでは、Microsoft Dynamics 365 Commerce のトランザクション イベント用の電子メール テンプレートの作成、アップロード、および構成する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce でトランザクション イベント用の電子メール テンプレートを作成、アップロード、および構成する方法について説明します。
 
-Dynamics 365 Commerce には、顧客に取引上のイベントを知らせるメールを送信するための、既成のソリューションを実装しています。 たとえば、注文が入った際や受け取り可能な状態になった場合、出荷された時などにメールを送信することができます。 このトピックでは、トランザクション電子メールの送信に使用される電子メール テンプレートの作成、アップロード、構成をする手順について説明します。
+Dynamics 365 Commerce には、顧客に取引上のイベントを知らせるメールを送信するための、既成のソリューションを実装しています。 たとえば、注文が入った際や受け取り可能な状態になった場合、出荷された時などにメールを送信することができます。 この記事では、トランザクション電子メールの送信に使用される電子メール テンプレートを作成、アップロード、構成する手順について説明します。
 
 ## <a name="notification-types"></a>通知タイプ
 

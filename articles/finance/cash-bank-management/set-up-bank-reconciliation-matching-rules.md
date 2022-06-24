@@ -1,6 +1,6 @@
 ---
 title: 口座調整照合ルールの設定
-description: このトピックでは、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。 調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。
+description: この記事では、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。 調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。
 author: panolte
 ms.date: 08/24/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 218b07908fe88937d3f495ded356fe4a3606110b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: baea7ea7ec98c905e9ae896a8cf1e4ac54fb4a9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899932"
 ---
 # <a name="set-up-bank-reconciliation-matching-rules"></a>口座調整照合ルールの設定
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。 調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。
+この記事では、口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定する方法を説明します。 調整の照合ルールは、調整プロセス中に口座取引明細書行および銀行ドキュメント明細行をフィルタ処理するために使用される一連の基準です。
 
 口座調整プロセスを容易にするために、調整の照合ルールと調整の照合ルール セットを設定できます。 調整の照合ルールは、調整プロセス中に口座取引明細書行および Dynamics 365 Finance 銀行トランザクション明細行をフィルター処理するために使用される一連の基準です。 **調整照合ルール** ページを使用して、調整照合ルールを設定します。 複数の照合ルールを設定し、**調整照合ルール セット** ページで調整の照合ルール セットを作成します。 
 

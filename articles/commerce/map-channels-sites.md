@@ -1,6 +1,6 @@
 ---
 title: eコマース サイトへのチャネルのマップ
-description: このトピックでは、業務要件のほとんどに対して推定することができる、Microsoft Dynamics 365 Commerce のより一般的なチャンネル マッピングのシナリオについて説明します。
+description: この記事では、業務要件のほとんどに対して推定することができる、Microsoft Dynamics 365 Commerce のより一般的なチャンネル マッピングのシナリオについて説明します。
 author: samjarawan
 ms.date: 05/11/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ce272d63b4a37f99661333a02434708205ea19a
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: 94c43df26e8d6e55a5b6d459b65066d5873e1063
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743585"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902766"
 ---
 # <a name="map-channels-to-e-commerce-sites"></a>eコマース サイトへのチャネルのマップ
 
-このトピックでは、業務要件のほとんどに対して推定することができる、Microsoft Dynamics 365 Commerce のより一般的なチャンネル マッピングのシナリオについて説明します。
+この記事では、業務要件のほとんどに対して推定することができる、Microsoft Dynamics 365 Commerce のより一般的なチャンネル マッピングのシナリオについて説明します。
 
 Dynamics 365 Commerce は、製品、価格、および割引を[eコマース サイト](#e-commerce-sites) エクスペリエンスに対して設定したマッピング [オンライン チャンネル](#channels)のためのビジネス シナリオをサポートしています。
 
-ここでは、以下のシナリオについて説明します:
+この記事では、以下のシナリオについて説明します。
 
 - **1 つの eコマース サイト エクスペリエンスを持つ単一言語チャンネル。** たとえば、このシナリオには、米国英語市場用に構成された 1 つのサイトが含まれる場合があります。
 - **1 つのローカライズされたサイト エクスペリエンスを持つ多言語チャンネル。** たとえば、このシナリオには、フランス語と英語をサポートするカナダ用に構成された 1 つのサイトが含まれる場合があります。 このシナリオでは、異なる言語を選択するユーザーのサイト エクスペリエンスは同じですが、各ユーザーの選択した言語にローカライズされます。
@@ -63,7 +63,7 @@ Dynamics 365 Commerce は、さまざまなチャンネル マッピング シ�
 
 ![Commerce Headquarters で強調表示された Adventure Works オンライン ストアの法人、通貨、および言語の値。](media/channel-mapping-3.png)
 
-1 つのオンライン チャンネルをサイト ビルダーの 1 つの eコマース サイトにマッピングできます。 新しいサイトを作成してチャンネルにマップする方法の詳細については、このトピックの[サイト ビルダーでサイトにチャンネルをマップする](#map-a-channel-to-a-site-in-site-builder)を参照してください。
+1 つのオンライン チャンネルをサイト ビルダーの 1 つの eコマース サイトにマッピングできます。 新しいサイトを作成してチャンネルにマップする方法の詳細については、この記事の [サイト ビルダーでサイトにチャンネルをマップする](#map-a-channel-to-a-site-in-site-builder) セクションを参照してください。
 
 ### <a name="multi-language-channel-that-has-a-single-localized-site-experience"></a>1 つのローカライズされたサイト エクスペリエンスを持つ多言語チャンネル
 
@@ -73,7 +73,7 @@ Dynamics 365 Commerce は、さまざまなチャンネル マッピング シ�
 
 チャンネルの各言語は、独自のドメイン名で構成できます。 たとえば、カナダ英語バージョン用に `www.adventure-works.ca` ドメインを構成し、カナダ フランス語バージョン用に `www.adventure-works-fr.ca` を構成することができます。 また、1 つのチャンネルで複数の言語を 1 つのドメインに構成し、言語ごとに異なるパスを使用することができます。 たとえば、カナダ英語バージョン用に `www.adventure-works.ca` ドメインを構成し、カナダ フランス語バージョン用に `www.adventure-works.ca/fr` パスを使用することができます。 [地域検出](geo-detection-redirection.md) を有効化して、ユーザーの位置に基づいて正しいサイトに自動的にリダイレクトすることもできます。
 
-顧客が言語間を手動で切り替える方法の詳細については、このトピックの[サイト選択モジュールを追加して構成する](#add-and-configure-the-site-picker-module)セクションを参照してください。 ローカライズされたページおよびフラグメントをカスタマイズする方法の詳細については、[複数のチャンネルと言語を含むサイト コンテンツの管理](#manage-site-content-that-has-multiple-channels-and-languages)セクションを参照してください。
+顧客が言語間を手動で切り替える方法の詳細については、この記事の [サイト選択モジュールを追加して構成する](#add-and-configure-the-site-picker-module) セクションを参照してください。 ローカライズされたページおよびフラグメントをカスタマイズする方法の詳細については、[複数のチャンネルと言語を含むサイト コンテンツの管理](#manage-site-content-that-has-multiple-channels-and-languages)セクションを参照してください。
 
 ### <a name="multi-language-channel-that-has-a-different-site-experience-per-language"></a>言語ごとに異なるサイト エクスペリエンスを持つ多言語チャンネル
 
@@ -87,7 +87,7 @@ Dynamics 365 Commerce は、さまざまなチャンネル マッピング シ�
 
 このシナリオでは、各市場を独自のドメイン名で構成できます。 たとえば、米国市場用に `www.adventure-works.com` ドメインを構成し、ドイツ市場用に `www.adventure-works.de` を構成することができます。 また、各市場で別のパスを使用するよう構成することもできます。 たとえば、米国市場用に `www.adventure-works.com` ドメインを構成し、ドイツ市場用に `www.adventure-works.com/de` パスを使用することができます。 [地域検出](geo-detection-redirection.md) を有効化して、ユーザーのリージョンに基づいて正しいサイトに自動的にリダイレクトすることもできます。
 
-また、ユーザーが特定の市場へ手動で切り替え可能なドロップダウン リストをサイトに提供することもできます。 詳細については、このトピックの[サイト選択モジュールを追加して構成する](#add-and-configure-the-site-picker-module)を参照してください。
+また、ユーザーが特定の市場へ手動で切り替え可能なドロップダウン リストをサイトに提供することもできます。 詳細については、この記事の [サイト選択モジュールを追加して構成する](#add-and-configure-the-site-picker-module) を参照してください。
 
 1 つのサイトで複数チャンネルを構成する方法の詳細については、[eコマース サイトで複数のチャンネルを構成する](#configure-multiple-channels-on-an-e-commerce-site)を参照してください。
 
@@ -180,7 +180,7 @@ Dynamics 365 Commerce は、さまざまなチャンネル マッピング シ�
 
 複数のチャンネルや言語を持つサイトには、チャンネルと言語の組み合わせごとに各ページおよび片の固有バリエーションが格納されます。 この動作により、ページ バリアントにはローカライズされたデータを格納できます。また、特定のバリアントのページの外観や外観を柔軟に変更できます。
 
-ページ バリアントの使用方法の詳細については、このトピックの[各言語に対するページ バリアントの実装](#implement-page-variants-for-each-language)を参照してください。
+ページ バリアントの使用方法の詳細については、この記事の [各言語に対するページ バリアントの実装](#implement-page-variants-for-each-language) を参照してください。
 
 ## <a name="configure-multiple-channels-on-an-e-commerce-site"></a>eコマース サイトで複数のチャンネルを構成する
 

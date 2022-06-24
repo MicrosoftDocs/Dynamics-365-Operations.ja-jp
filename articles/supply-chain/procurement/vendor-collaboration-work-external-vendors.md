@@ -1,6 +1,6 @@
 ---
-title: 外部仕入先との仕入先コラボレーション
-description: このトピックでは、購買担当者が外部仕入先とコラボレーションして、発注書および委託販売在庫に関する情報を交換する方法について説明します。
+title: 外部仕入先との仕入先のコラボレーション
+description: この記事では、購買担当者が外部仕入先とコラボレーションして、発注書および委託販売在庫に関する情報を交換する方法について説明します。
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05a2ecc82306c013912b3ee824d63d7d39c4258f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907293"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>外部仕入先との仕入先コラボレーション
 
 [!include [banner](../includes/banner.md)]
 
-**仕入先コラボレーション** モジュールは、Microsoft Dynamics 365 Supply Chain Management での電子データ交換 (EDI) の統合がない仕入先が対象となります。 発注書 (PO)、請求書、委託販売在庫情報、および見積依頼 (RFQ) を仕入先が使用できるようにし、その仕入先マスター データの部分にアクセスすることもできます。 このトピックでは、仕入先コラボレーション インタフェースを使用する、発注書、見積依頼および委託販売在庫を使用している外部仕入先とコラボレーションする方法について説明します。 また、特定の仕入先が仕入先コラボレーションを使用できるようにする方法、すべての仕入先が発注書に応答する際に表示する情報を定義する方法についても説明します。
+**仕入先コラボレーション** モジュールは、Microsoft Dynamics 365 Supply Chain Management での電子データ交換 (EDI) の統合がない仕入先が対象となります。 発注書 (PO)、請求書、委託販売在庫情報、および見積依頼 (RFQ) を仕入先が使用できるようにし、その仕入先マスター データの部分にアクセスすることもできます。 この記事では、仕入先コラボレーション インタフェースを使用する、発注書、見積依頼および委託販売在庫を使用している外部仕入先とコラボレーションする方法について説明します。 また、特定の仕入先が仕入先コラボレーションを使用できるようにする方法、すべての仕入先が発注書に応答する際に表示する情報を定義する方法についても説明します。
 
 外部仕入先が仕入先コラボレーション インタフェースで実行する内容の詳細については、「[顧客との仕入先コラボレーション](vendor-collaboration-work-customers-dynamics-365-operations.md)」を参照してください。
 
 > [!NOTE]
-> このトピックで仕入先コラボレーションへの適用に関する情報は、Supply Chain Management の現在のバージョンにのみ適用されます。 Microsoft Dynamics AX 7.0 (2016 年 2 月) および Microsoft Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) で、**仕入先ポータル** モジュールを使用して仕入先との共同作業を行います。 **仕入先ポータル** モジュールについては、「[仕入先ポータルを使用して別の仕入先とのコラボレーション](collaborate-vendors-vendor-portal.md)」を参照してください。
+> この記事で仕入先コラボレーションへの適用に関する情報は、Supply Chain Management の現在のバージョンにのみ適用されます。 Microsoft Dynamics AX 7.0 (2016 年 2 月) および Microsoft Dynamics AX アプリケーション バージョン 7.0.1 (2016 年 5 月) で、**仕入先ポータル** モジュールを使用して仕入先との共同作業を行います。 **仕入先ポータル** モジュールについては、「[仕入先ポータルを使用して別の仕入先とのコラボレーション](collaborate-vendors-vendor-portal.md)」を参照してください。
 
 仕入先が請求プロセスで仕入先コラボレーションを使用する方法の詳細については、「[仕入先コラボレーションの請求ワークスペース](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)」を参照してください。 新しい仕入先コラボレーション ユーザーをプロビジョニングする方法の詳細については、「[仕入先コラボレーション ユーザーの管理](manage-vendor-collaboration-users.md)」を参照してください。
 
@@ -112,7 +112,7 @@ ms.locfileid: "8676890"
 <li>品目を代用する。</li>
 </ul>
 仕入先は価格情報および請求金額を変更することは&#39;できません。 ただし、仕入先は、メモを使用してこれらの変更を提案することができます。</td>
-<td>仕入先の応答は <strong>変更内容承認済</strong>、および発注書のステータスは <strong>外部で確認中</strong> のままとして記録されます。 ステータスは、仕入先が提案した変更の種類を表示します。 変更の自動消費についての詳細は、このトピックの &quot;仕入先が変更提案時に発注書を更新する&quot; セクションの後半を参照してください。 </td>
+<td>仕入先の応答は <strong>変更内容承認済</strong>、および発注書のステータスは <strong>外部で確認中</strong> のままとして記録されます。 ステータスは、仕入先が提案した変更の種類を表示します。 変更の自動消費についての詳細は、この記事の &quot;仕入先が変更提案時に発注書を更新する&quot; セクションの後半を参照してください。 </td>
 </tr>
 </tbody>
 </table>

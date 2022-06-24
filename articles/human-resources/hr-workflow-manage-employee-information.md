@@ -1,6 +1,6 @@
 ---
 title: ワークフローを使用した従業員情報の管理
-description: このトピックでは、従業員情報を管理するためにワークフローを使用する方法を説明します。
+description: この記事では、従業員情報を管理するためにワークフローを使用する方法を説明します。
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7c416a82976bc39464006325f02f1af4d2f32ea4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2fcbacc3cb891043560fabf28487bfeb12d1b77b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691529"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908804"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>ワークフローを使用した従業員情報の管理
 
@@ -27,7 +27,7 @@ ms.locfileid: "8691529"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、従業員情報を管理するために人事管理のワークフロー機能を使用する方法を説明します。 たとえば、ワークフローを職位と関連付け、従業員がレコードを変更した際に開始された承認ワークフローをコンフィギュレーションすることができます。
+この記事では、従業員情報を管理するために人事管理のワークフロー機能を使用する方法を説明します。 たとえば、ワークフローを職位と関連付け、従業員がレコードを変更した際に開始された承認ワークフローをコンフィギュレーションすることができます。
 
 人事管理のワークフロー機能は、人事管理の活動を管理するための数多くのワークフローを提供します。 また、特定のワークフローを変更しそれらをレポート階層に関連付けるための数多くのオプションが使用できます。 複数のタイプの従業員情報への変更を管理するのに役立つワークフローが使用できます。 職位とワークフローを関連付けることができます。 その後、従業員が従業員レコードを変更した場合、新しい情報が保存される前に承認が必要なワークフローが開始されます。 ワークフローは変更を効率的に管理し従業員のデータを正確な状態に維持するため、次のタイプの情報に対して事前に定義されています。
 

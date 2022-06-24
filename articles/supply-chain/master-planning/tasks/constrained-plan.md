@@ -1,6 +1,6 @@
 ---
 title: 制約付き計画の生成
-description: このトピックでは、材料制約と能力制約の両方を考慮した計画の作成方法を説明します。
+description: この記事では、材料制約と能力制約の両方を考慮した計画の作成方法を説明します。
 author: t-benebo
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8372f4e35b34ff66ef55c0961b867a1aff7a5e6
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 65884d556724cd6132fe328e95a5bec78885c174
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904017"
 ---
 # <a name="generate-a-constrained-plan"></a>制約付き計画の生成
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、材料制約と能力制約の両方を考慮した計画の作成方法を説明します。 計画により、材料が利用可能でないうちに生産が開始しないように、またリソースが予約超過にならないようにします。 
+この記事では、材料制約と能力制約の両方を考慮した計画の作成方法を説明します。 計画により、材料が利用可能でないうちに生産が開始しないように、またリソースが予約超過にならないようにします。 
 
 この手順の作成に使用するデモ データの会社は USMF です。 この手順は、生産の計画者を対象としています。
 

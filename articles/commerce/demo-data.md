@@ -1,6 +1,6 @@
 ---
 title: Modern POS (MPOS) および Cloud POS のデモ データ画面レイアウト
-description: このトピックでは、Dynamics 365 Commerce の販売時点管理 (POS) のデモ データ セットに含まれている画面レイアウトに関する情報を提供します。
+description: この記事では、Dynamics 365 Commerce の販売時点管理 (POS) のデモ データ セットに含まれている画面レイアウトに関する情報を提供します。
 author: josaw1
 ms.date: 10/05/2017
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb7a288b61e8b467dd8ad6a8f7dc42b7fca0d943
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761665"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897228"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Modern POS (MPOS) および Cloud POS のデモ データ画面レイアウト
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Dynamics 365 Commerce の販売時点管理 (POS) のデモ データ セットに含まれている画面レイアウトに関する情報を提供します。
+この記事では、Dynamics 365 Commerce の販売時点管理 (POS) のデモ データ セットに含まれている画面レイアウトに関する情報を提供します。
 
 ## <a name="overview"></a>概要
 
-Commerce のデモ データに含まれているサンプル画面レイアウトは、さまざまな小売セグメント、店員の役割、およびデバイスに最適化されたコンテンツを提供します。 1 つのレイアウトに複数のレイアウトサイズとボタングリッドの組み合わせを含めることで、店員によるデバイスとステーション間の移動を確実にカバーできます。 このトピックでは、これらのレイアウトの違いや、レイアウトが提供する操作や全体的なエクスペリエンスについて説明します。
+Commerce のデモ データに含まれているサンプル画面レイアウトは、さまざまな小売セグメント、店員の役割、およびデバイスに最適化されたコンテンツを提供します。 1 つのレイアウトに複数のレイアウトサイズとボタングリッドの組み合わせを含めることで、店員によるデバイスとステーション間の移動を確実にカバーできます。 この記事では、これらのレイアウトの違い、レイアウトが提供する操作、全体的なエクスペリエンスについて説明します。
 
 ![クロス デバイス デモ データのレイアウト。](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
@@ -49,11 +49,11 @@ Commerce のデモ データに含まれているサンプル画面レイアウ�
 
 ### <a name="company"></a>法人
 
-| 文書 | 法人         |
+| 文字 | 法人         |
 |--------|-----------------|
 | A      | Adventure Works |
 | F      | Fabrikam        |
-| 貸方      | Contoso         |
+| C      | Contoso         |
 
 ### <a name="layout-version"></a>レイアウトバージョン
 

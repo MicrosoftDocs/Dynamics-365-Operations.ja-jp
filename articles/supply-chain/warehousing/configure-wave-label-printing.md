@@ -1,6 +1,6 @@
 ---
-title: サイクル ラベル印刷
-description: このトピックでは、ウェーブ ラベル印刷についての説明と、設定方法について解説します。
+title: ウェーブ ラベル印刷
+description: この記事では、ウェーブ ラベル印刷についての説明と、設定方法について解説します。
 author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 18620602c5f3cf6a69a36ef7248f35e5509337b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778086"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901824"
 ---
 # <a name="wave-label-printing"></a>サイクル ラベル印刷
 
@@ -49,7 +49,7 @@ ms.locfileid: "7778086"
 これらの機能強化により、パレット積みのカートンへのラベル付けがより効率的になります。 カートンを個別にスキャンすることで自動的に受注確認を行う大手の小売店に出荷している企業には、特に有用となります。
 
 > [!NOTE]
-> このトピックで説明する構成シナリオは、業務上の要件に応じて個別に、または組み合わせて実装することができます。 連続して動作する複数のウェーブ ラベルのテンプレートを設計することができます (シナリオ3を参照のこと)。 たとえば、シナリオ１でカートン ラベルを印刷し、シナリオ２でパレット ラベルを印刷することができます (在庫のパレットのサイズや構成が異なる場合)。
+> この記事で説明する構成シナリオは、業務上の要件に応じて個別に、または組み合わせて実装することができます。 連続して動作する複数のウェーブ ラベルのテンプレートを設計することができます (シナリオ3を参照のこと)。 たとえば、シナリオ１でカートン ラベルを印刷し、シナリオ２でパレット ラベルを印刷することができます (在庫のパレットのサイズや構成が異なる場合)。
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>ウェーブ ラベルの印刷機能をオンにする
 

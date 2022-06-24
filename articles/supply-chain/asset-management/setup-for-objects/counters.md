@@ -1,6 +1,6 @@
 ---
 title: 資産測定
-description: このトピックでは、資産管理で資産測定を作成する方法について説明します。
+description: この記事では、資産管理で資産測定を作成する方法について説明します。
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc515615afaa172e1832508d79e202b166f134a9171a0a35ea4f372f9d19b7e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1bcef89265697c1898b7d61a0b0ae6331ce1c851
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909675"
 ---
 # <a name="counters"></a>カウンター
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、資産管理でカウンター タイプを作成する方法について説明します。 カウンター タイプは、生産時間数や資産で生産される数量など、資産のカウンター登録を行うために使用されます。 資産タイプは、カウンター タイプに関連しています。 つまり、資産で使用される資産タイプに対してカウンターが設定されている場合にのみ、カウンターを資産に対して使用できます。
+この記事では、資産管理でカウンター タイプを作成する方法について説明します。 カウンター タイプは、生産時間数や資産で生産される数量など、資産のカウンター登録を行うために使用されます。 資産タイプは、カウンター タイプに関連しています。 つまり、資産で使用される資産タイプに対してカウンターが設定されている場合にのみ、カウンターを資産に対して使用できます。
 
 資産に対してカウンター登録を行う前に、まず **カウンター** で使用するカウンター タイプを作成します。 次に、**カウンター** の資産に対するカウンター登録を作成できます。 
 

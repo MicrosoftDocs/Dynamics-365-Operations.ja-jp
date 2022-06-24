@@ -1,6 +1,6 @@
 ---
 title: 給付金プランの作成
-description: このトピックでは、Dynamics 365 Human Resources で給付金プランを設定する方法について説明します。
+description: この記事では、Dynamics 365 Human Resources の給付金プランを設定する方法について説明します。
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 90d4399cce227cfec09a12e02f2e56618a656473
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7815657c4bf3f79d1a04333027cc51b496fe1820
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694567"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909820"
 ---
 # <a name="create-a-benefit-plan"></a>福利厚生計画の作成
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694567"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources で給付金プランを設定する方法について説明します。
+この記事では、Dynamics 365 Human Resources の給付金プランを設定する方法について説明します。
 
 1. **給付金管理** ワーク スペースの **プラン** で、**給付金プラン** を選択します。
 

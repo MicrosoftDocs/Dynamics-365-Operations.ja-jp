@@ -1,6 +1,6 @@
 ---
 title: 番号順序を個別に設定する
-description: このトピックでは、番号順序を個別に設定する方法について説明します。
+description: この記事では、番号順序を個別に設定する方法について説明します。
 author: SunilGarg
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 7be72d348957c5c6494958276b2baa9c67d63c58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777916"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904991"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>番号順序を個別に設定する
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、番号順序を個別に設定する方法について説明します。 番号順序は、マスタ データ レコードおよびトランザクション レコードに必要な読みやすい固有 ID の生成に使用されます。 ID が必要なマスタ データまたはトランザクション レコードは、参照先と呼ばれます。 参照先に新しいレコードを作成するには、事前に番号順序を設定して参照先に関連付ける必要があります。 必要な番号順序は、**番号順序の設定** ウィザードを使用してすべて同時に設定できるほか、**番号順序** ページを使用して個々の番号順序の作成または変更を行うことができます。
+この記事では、番号順序を個別に設定する方法について説明します。 番号順序は、マスタ データ レコードおよびトランザクション レコードに必要な読みやすい固有 ID の生成に使用されます。 ID が必要なマスタ データまたはトランザクション レコードは、参照先と呼ばれます。 参照先に新しいレコードを作成するには、事前に番号順序を設定して参照先に関連付ける必要があります。 必要な番号順序は、**番号順序の設定** ウィザードを使用してすべて同時に設定できるほか、**番号順序** ページを使用して個々の番号順序の作成または変更を行うことができます。
 
 1. **ナビゲーション ウィンドウ > モジュール > 組織管理 > 番号順序 > 番号順序** の順に移動します。
 2. **番号順序** を選択します。

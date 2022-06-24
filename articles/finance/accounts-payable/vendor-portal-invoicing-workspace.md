@@ -1,6 +1,6 @@
 ---
 title: 仕入先コラボレーションの請求ワークスペース
-description: このトピックでは、仕入先請求書を表示する方法、および仕入先コラボレーションの請求ワークスペースの表示から請求書を送信する方法について説明します。
+description: この記事では、仕入先請求書を表示する方法、および仕入先コラボレーションの請求ワークスペースの表示から請求書を送信する方法について説明します。
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1d9415b7118efb06099b775f68ce7ca9fb6673ed
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 9ef4204e0be437b50af047704e07600653c877c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182632"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896553"
 ---
 # <a name="vendor-collaboration-invoicing-workspace"></a>仕入先コラボレーションの請求ワークスペース
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、仕入先請求書を表示する方法、および **仕入先コラボレーションの請求** ワークスペースの表示から請求書を送信する方法について説明します。
+この記事では、仕入先請求書を表示する方法、および **仕入先コラボレーションの請求** ワークスペースの表示から請求書を送信する方法について説明します。
 
 **仕入先コラボレーションの請求** ワークスペースは、仕入先請求書の情報を表示したり、ワークフロー機能を使用して請求書を提出するために使用されます。
 

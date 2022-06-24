@@ -1,6 +1,6 @@
 ---
 title: 給与統合のパラメーター
-description: このトピックでは、Dynamics 365 Human Resources 給与統合のパラメーターについて説明します。
+description: この記事では、Dynamics 365 Human Resources 給与統合のパラメーターについて説明します。
 author: marcelbf
 ms.date: 06/17/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-17
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 37d4dc52e7fe5ddd95f43d98267db819a275bd92
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 7d784909fc8c5fa05557566b62b19802cd2acece
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069860"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896103"
 ---
 # <a name="payroll-integration-parameters"></a>給与統合のパラメーター
 
@@ -27,7 +27,7 @@ ms.locfileid: "8069860"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dynamics 365 Human Resources 給与統合を使用する前に、このトピックで説明するパラメーターを設定する必要があります。
+Dynamics 365 Human Resources 給与統合を使用する前に、この記事で説明するパラメーターを設定する必要があります。
 
 ## <a name="enable-payroll-address"></a>給与住所の有効化
 

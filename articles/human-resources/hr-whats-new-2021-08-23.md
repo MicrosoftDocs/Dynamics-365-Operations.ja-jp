@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources 2021 年 8 月 23 日の新機能または変更された機能
-description: このトピックでは、2021 年 8 月 23 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2021 年 8 月 23 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-08-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 21c3448c373600ffebca82be41fb5849b952dfe1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 91c2cd396ca26cc78c3fd4fab40a29b98a7826c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686830"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909733"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-23-2021"></a>Dynamics 365 Human Resources 2021 年 8 月 23 日の新機能または変更された機能
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Microsoft Dynamics 365 Human Resources の新機能、変更された機能または間もなく公開される機能について説明します。
+この記事では、Microsoft Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -40,9 +40,9 @@ ms.locfileid: "8686830"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新する可能性があります:
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 問題 | 説明 |
+| 問題の番号 | 問題 | Description |
 | --- | --- | --- |
 | 594066 | 連絡先情報を削除できない | 従業員の連絡先情報レコードの削除を選択すると、選択したレコード以外の連絡先情報レコードが削除されます。 |
 | 611339 | 個人用設定を追加すると、銀行口座はフィルタを無視して最初のレコードをフェッチする | 個人用設定を追加すると、データ ソース クエリの実行後に個人用設定クエリを実行した場合、銀行口座リストでは、詳細が表示されている作業者に関係なく、最初のレコードがクエリでフェッチされます。 |

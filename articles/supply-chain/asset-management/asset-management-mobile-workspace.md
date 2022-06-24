@@ -1,6 +1,6 @@
 ---
 title: 資産管理モバイル ワークスペースの使用
-description: このトピックでは、資産管理モバイル ワークスペースに関する情報を示します。
+description: この記事では、資産管理モバイル ワークスペースに関する情報を示します。
 author: johanhoffmann
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 8b874237721d9252e7102c2611414a2cc74026c3
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: d7e68cbe1132547fea5c72458a93b1a449a67c86
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902143"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>資産管理モバイル ワークスペースの使用
 
 [!include [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-このトピックでは、**資産管理** モバイル ワークスペースに関する情報を示します。 このワークスペースでは、ユーザーがメンテナンス要求と作業指示を表示および作成できます。 ユーザーは、カレンダーまたはリスト表示で、割り当てられた作業指示書ジョブを表示することもできます。 資産と機能の場所を表示したり、検索したりすることもできます。
+この記事では、**資産管理** モバイル ワークスペースに関する情報を示します。 このワークスペースでは、ユーザーがメンテナンス要求と作業指示を表示および作成できます。 ユーザーは、カレンダーまたはリスト表示で、割り当てられた作業指示書ジョブを表示することもできます。 資産と機能の場所を表示したり、検索したりすることもできます。
 
 ## <a name="overview"></a>概要
 

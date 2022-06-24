@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a61e501d843e220259f9e26aac4309e6902d7a22
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a9ff9cb71b08d94e45e82c2b8f81550c9f8aba64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669660"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897751"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Dynamics 365 Supply Chain Management 管理者向けラーニング カタログ
 
@@ -42,7 +42,7 @@ ms.locfileid: "8669660"
 | [データを移行して、財務と運用アプリの運用を開始する](/learn/paths/migrate-data-go-live-finance-operations/) | 機能コンサルタントとして、顧客のデータを移行用に準備し、データ管理を操作し、ユーザー受け入れテストを実行して財務と運用アプリの運用を開始する方法を理解する必要があります。 | 無料の自習型オンライン学習パス | 4 時間 |
 | [Finance and Operation での分析とレポートに関する作業](/learn/modules/work-with-analytics-reporting-in-dynamics-365-finance-ops/) | ビジネス リーダーは、基礎となる財務データや運用データを正確に把握しているなら、会社で重要な決定を下すことができます。 データの可視性がなければ、ビジネス リーダーは、ほとんど不可能な作業を迫られることになります。 財務と運用アプリで分析とレポートを使用すれば、そうした重要な意思決定を行うために必要な分析情報を、セキュリティ権限に応じてすべてのビジネス ユーザーに提供できます。 | 無料の自習型オンライン学習パス | 1.5 時間 |
 | [Finance and Operations の実装プロジェクトを管理する](/learn/paths/implement-finance-operations/) | Finance and Operations の実装プロジェクトを成功させるために最も重要な要素とベスト プラクティスについて学びます。 プロジェクトの方法論を計画、設計する最初のステップから、FastTrack サービスの利用、開発戦略、データ管理など、稼働開始後の運用を維持、監視するための最善の方法までを実行することができます。 | 無料の自習型オンライン学習パス | 11.5 時間 |
-| [システム管理ホーム ページ](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | このトピックでは、Microsoft Dynamics 365 for Finance and Operations のシステム管理者向けコンテンツについて説明します。 このコンテンツは、組織が円滑かつ効果的に機能するようにシステムを構成するのに役立ちます。 | ドキュメント | |
+| [システム管理ホーム ページ](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | この記事では、Microsoft Dynamics 365 for Finance and Operations のシステム管理者向けコンテンツについて説明します。 このコンテンツは、組織が円滑かつ効果的に機能するようにシステムを構成するのに役立ちます。 | ドキュメント | |
 | [Finance and Operations: Dynamics 365 へのオンボード (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FastTrack では、すべての Dynamics 365 for Finance and Operations のプロジェクトに対してオンボード サービスが提供されます。 この TechTalk では、オンボード プロセスについて説明し、オンボード セッションの内容について説明します。また、近い将来、オンボードをより効率的かつ便利にする方法を明らかにします。 このセッションは、ライセンスの締結から実装プロジェクトの開始まで、プロジェクトの初期段階で顧客と関わるすべての人に特に関係があります。 | Web カンファレンスの無料録画 | 62 分 |
 | [オンプレミス (ローカル ビジネス データ) 配置 (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Dynamics 365 for Finance and Operations Enterprise Edition のオンプレミス配置オプションの概要については、この Tech Talk に参加してください。 このセッションでは、オンプレミス配置のソリューション アーキテクチャ、ALM の側面、システム要件、および Life Cycle Services プロジェクトをプロビジョニングする方法について説明します。 | Web カンファレンスの無料録画 | 48 分 |
 | [法人へのコピー (DYN383PAL) ](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | このセッションでは、データ管理フレームワークの新機能である、法人へのコピーについて説明します。 まず、ワークスペース、テンプレート、およびデータ プロジェクト用にプラットフォーム 8 のデータ管理フレームワークに追加された新機能を簡単に確認し、次に法人へのコピーに追加された追加機能について説明します。 | Web カンファレンスの無料録画 | 54 分 |

@@ -1,6 +1,6 @@
 ---
-title: 製造オーダーのステータスの取り消し
-description: このトピックでは、製造オーダーのステータスを取り消す方法について説明します。
+title: 製造オーダー状態を逆行させる
+description: この記事では、製造オーダーのステータスを取り消す方法について説明します。
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dd17bc48bfb6c78e1baca4faf78d6bc5b3ce426c5f0530174eccd95536a5859
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1d50cbcb4031d5c9f2c814883afd1fb38777d2ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760421"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903959"
 ---
-# <a name="reverse-the-production-order-status"></a>製造オーダーのステータスの取り消し
+# <a name="reverse-the-production-order-status"></a>製造オーダー状態を逆行させる
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、製造オーダーのステータスを取り消す方法について説明します。 
+この記事では、製造オーダーのステータスを取り消す方法について説明します。 
 
 製造オーダーのステータスを戻すと、注文および工順に関連付けられているすべての工程が、生産ライフ サイクルの前のステップに戻されます。 たとえば、製造オーダーのステータスが **スケジュール済** で、ステータスを **作成済** に戻します。 この場合、システムによって最初にステータスを **見積済**、つまり **スケジュール済** の直前のステータスに変更します。 その後、ステータスを目的の **作成済** ステータスに変更できます。 **注記:** 注文が **完了レポート** ステータスに到達していても、これを前のステータスに戻すことができます。 ただし、見積および工程のスケジューリングまたはジョブのスケジューリング、あるいはその両方のスケジューリングを実行して、再度注文の情報を更新する必要があります。 このステップは、残余品目消費および運営リソース消費の引当もリセットする必要があるため必須のステップです。 この記事の残りの部分では、次のように、製造オーダーのステータスを戻す場合に実行される内容を説明します。
 

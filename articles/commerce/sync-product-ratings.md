@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commerce の製品評価の同期
-description: このトピックでは、Microsoft Dynamics 365 Commerce で製品評価を同期する方法について説明します。
+description: この記事では、Microsoft Dynamics 365 Commerce で製品評価を同期する方法について説明します。
 author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: ac94a8b4505aba509f0a71ed36d32adac864aedf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909338"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Dynamics 365 Commerce の製品評価の同期
 
 [!include [banner](includes/banner.md)]
 
-このトピックでは、Microsoft Dynamics 365 Commerce で製品評価を同期する方法について説明します。
+この記事では、Microsoft Dynamics 365 Commerce で製品評価を同期する方法について説明します。
 
 販売時点管理 (POS) およびコール センターなどのオムニチャネルで製品評価を使用するには、評価およびレビュー サービスからの製品評価をコマース チャネル データベースにインポートする必要があります。 製品評価をオムニチャネルで使用可能にした場合、顧客が販売担当者との対話を間接的に行うのに役立ちます。
 
-このトピックでは、次のタスクについて説明します。
+この記事では、次のタスクについて説明します。
 
 1. **製品評価の同期ジョブ** をバッチ ジョブとしてコンフィギュレーションして、**評価およびレビュー サービス** から製品評価を同期します。
 1. 製品評価の同期のバッチ ジョブが正常に行われたことを確認します。

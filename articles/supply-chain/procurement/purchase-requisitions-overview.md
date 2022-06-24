@@ -1,6 +1,6 @@
 ---
 title: 購買要求の概要
-description: このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。
+description: この記事は、購買要求ワークフローと、購買要求に設定できる各種ステータスについて説明します。
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6524229800233d1bfdf54a11afc122990eed9d3
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a7430e18779dc2c37f74e6d25c95836f4fbc435d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671171"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905750"
 ---
 # <a name="purchase-requisition-overview"></a>購買要求の概要
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、購買要求ワークフローと、購買要求で発生する可能性のあるさまざまな状態について説明します。
+この記事は、購買要求ワークフローと、購買要求に設定できる各種ステータスについて説明します。
 
 組織の設定に基づいて、組織で使用される製品の購買要求を作成できます。 購買要求は、購買部門が品目またはサービスを購入することを承認する内部ドキュメントです。  
 

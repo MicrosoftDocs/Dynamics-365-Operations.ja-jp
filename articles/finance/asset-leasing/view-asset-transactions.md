@@ -1,6 +1,6 @@
 ---
 title: 負債、資産、および経費トランザクションの表示
-description: このトピックでは、リース資産のトランザクションを表示する方法について説明します。 これらのトランザクションには、リース負債トランザクションと、転記された履行費用トランザクションが含まれます。
+description: この記事では、リース資産のトランザクションを表示する方法について説明します。 これらのトランザクションには、リース負債トランザクションと、転記された履行費用トランザクションが含まれます。
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: be11250a85d160aa71ab76af9cfdb0258fd7bf11
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 552b5a6044950c4dd7547a5239c1b3f7d355dbce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727485"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906416"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>負債、資産、および経費トランザクションの表示
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、リース資産のトランザクションを表示する方法について説明します。 これらのトランザクションには、リース負債トランザクションと、転記された履行費用トランザクションが含まれます。 負債および使用権資産のキャリー額は、いくつかのレポートで使用されます。 また、調整値を計算するためにも使用されます。
+この記事では、リース資産のトランザクションを表示する方法について説明します。 これらのトランザクションには、リース負債トランザクションと、転記された履行費用トランザクションが含まれます。 負債および使用権資産のキャリー額は、いくつかのレポートで使用されます。 また、調整値を計算するためにも使用されます。
 
 ## <a name="liability-transactions"></a>負債トランザクション
 

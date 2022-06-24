@@ -1,6 +1,6 @@
 ---
-title: 仕入先請求ポリシーの設定
-description: このトピックでは、仕入先請求ポリシーを設定する方法について説明します。
+title: 仕入先請求ポリシーを設定します
+description: この記事では、仕入先請求ポリシーを設定する方法について説明します。
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 049b38b6feba5f4369d79b89b4c81a8195dd7758
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109759"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904733"
 ---
-# <a name="set-up-vendor-invoice-policies"></a>仕入先請求ポリシーの設定
+# <a name="set-up-vendor-invoice-policies"></a>仕入先請求ポリシーを設定します
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、仕入先請求ポリシーを設定する方法について説明します。 仕入先請求ポリシーは、**仕入先請求書** ページを使用して仕入先請求書を転記するか、仕入先請求書の **ポリシー違反** ページを開いたときに実行されます。 また、ワークフローに請求書を送信するたびに、仕入先請求書ワークフローを構成して仕入先請求書ポリシーを実行できます。 
+この記事では、仕入先請求ポリシーを設定する方法について説明します。 仕入先請求ポリシーは、**仕入先請求書** ページを使用して仕入先請求書を転記するか、仕入先請求書の **ポリシー違反** ページを開いたときに実行されます。 また、ワークフローに請求書を送信するたびに、仕入先請求書ワークフローを構成して仕入先請求書ポリシーを実行できます。 
 
 - 仕入先請求ポリシーは仕入帳や請求仕訳帳で作成した請求書には適用しません。  
 - 請求書照合の検証は、仕入先請求ポリシーを使用せず、**買掛金管理パラメーター** ページで設定します。  

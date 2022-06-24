@@ -1,6 +1,6 @@
 ---
 title: 製造実行での登録
-description: このトピックでは、製造実行を設定および使用する際に理解しておく必要がある重要な概念および用語について説明します。
+description: この記事では、製造実行を設定および使用する際に理解しておく必要がある重要な概念および用語について説明します。
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c843bc87c7b9c0676211c8f3363ec3e05ee97d20b3eedc940b9ffaee2d3211fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c43a9d847045f2c029f232d6317268d91ee0129a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718903"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907206"
 ---
 # <a name="registration-for-manufacturing-execution"></a>製造実行での登録
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、製造実行を設定および使用する際に理解しておく必要がある重要な概念および用語について説明します。 
+この記事では、製造実行を設定および使用する際に理解しておく必要がある重要な概念および用語について説明します。 
 
 製造実行は、主に製造会社で使用するためのものです。 作業者は、**ジョブ登録** ページを使用して生産ジョブの時間と品目の消費を登録できます。 すべての登録は承認され、関連するモジュールにその後に転送されます。 登録の承認と転送が連続して行われると、マネージャは簡単に製造オーダーの実際原価を追跡できます。
 

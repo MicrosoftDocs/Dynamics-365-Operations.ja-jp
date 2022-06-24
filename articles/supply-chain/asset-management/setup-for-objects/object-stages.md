@@ -1,6 +1,6 @@
 ---
 title: 資産ライフサイクル状態
-description: このトピックでは、資産管理の資産ライフサイクル状態とライフサイクル モデルについて説明します。
+description: この記事では、資産管理の資産ライフサイクル状態とライフサイクル モデルについて説明します。
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43b1ff9438437e6c1ff33bab9a7ba0361029cb6d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722466"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901063"
 ---
 # <a name="asset-lifecycle-states"></a>資産ライフサイクル状態
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722466"
 
  
 
-このトピックでは、資産管理の資産ライフサイクル状態とライフサイクル モデルについて説明します。 資産ライフサイクル状態は、資産が有効か無効かを定義するために使用されます。 たとえば、**作成済み**、**有効**、および **終了** などの資産ライフサイクル状態を設定できます。
+この記事では、資産管理の資産ライフサイクル状態とライフサイクル モデルについて説明します。 資産ライフサイクル状態は、資産が有効か無効かを定義するために使用されます。 たとえば、**作成済み**、**有効**、および **終了** などの資産ライフサイクル状態を設定できます。
 
 > [!NOTE]
 > - 要求ライフサイクル状態は、資産ライフサイクル状態にリンクされます。 したがって、要求が新しい要求ライフサイクル状態に変更されると、要求に添付された資産が新しい資産ライフサイクル状態に変更されます。 たとえば、要求のライフサイクル状態が、**受信** に変更された場合、添付された資産のライフサイクル状態は、**資産ライフサイクル状態モデル** ページの **資産ライフサイクル状態** クイック タブの **受信ライフサイクル状態** フィールドで選択されたライフサイクル状態に変更されます。 

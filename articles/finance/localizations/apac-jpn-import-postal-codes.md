@@ -1,6 +1,6 @@
 ---
 title: 日本の郵便番号のインポート
-description: このトピックでは、日本の郵便番号をインポートする方法について説明します。
+description: この記事では、日本の郵便番号をインポートする方法について説明します。
 author: EricWangChen
 ms.date: 11/22/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Japan
 ms.author: wangchen
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8855582950e63bce17b6fcdb16224ce1f5273861
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 723430d38ae1f05ee003985224692704d0dc32c2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898044"
 ---
 # <a name="import-postal-codes-for-japan"></a>日本の郵便番号のインポート
 
 [!include [banner](../includes/banner.md)]
 
-日本では、日本郵便局が Dynamics 365 Finance にインポート可能な郵便番号コード ファイルを提供します。 このトピックでは、郵便番号をインポートするためのプロセスについて説明します。 この例では、デモ データの会社 JPMF を使用します。
+日本では、日本郵便局が Dynamics 365 Finance にインポート可能な郵便番号コード ファイルを提供します。 この記事では、郵便番号をインポートするためのプロセスについて説明します。 この例では、デモ データの会社 JPMF を使用します。
 
 ## <a name="prepare-the-zip-code-file"></a>郵便番号コード ファイルを準備します。
 

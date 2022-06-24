@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources 2021 年 1 月 21 日の新機能および変更された機能
-description: このトピックでは、2021 年 1 月 21 日に更新された、Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
+description: この記事では、2021 年 1 月 21 日に更新された Microsoft Dynamics 365 Human Resources の新機能、または変更された機能について説明します。
 author: marcelbf
 ms.date: 01/21/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: be50596cd64839ba82b847b2fabb0f46dc749a3f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9f1f660b7993804901f5fc9d3b608c141882bff5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686858"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901092"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Dynamics 365 Human Resources 2021 年 1 月 21 日の新機能および変更された機能
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、Dynamics 365 Human Resources の新機能、変更された機能、または間もなく公開される機能について説明します。
+この記事では、Dynamics 365 Human Resources の新機能、変更された機能または間もなく近日公開される機能について説明します。
 
 更新プロセスとスケジュールの詳細については、[更新プロセス](hr-admin-setup-update-process.md) を参照してください。
 
@@ -53,9 +53,9 @@ ms.locfileid: "8686858"
 このリリースには、次のバグ修正が含まれています。
 
 > [!NOTE]
-> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 このトピックが最初に公開された後に、ビルドに加えたバグ修正を含めるために、このトピックを更新することがあります。
+> 私たちの目標は、この情報をできるだけ早くお客様にお届けすることです。 この記事が最初に公開された後に、ビルドに加えたバグ修正を含めるために、この記事を更新する可能性があります。
 
-| 問題の番号 | 出庫 |  説明 |
+| 問題の番号 | 問題 |  Description |
 | --- | --- | --- |
 | 533079 | 控除を表示しようとする場合のナビゲーション エラー: 「フォームが間違って呼び出されました」。 | **対象の日付時点** の福利厚生控除を表示する際のエラーの修正。 |
 | 543641 | 郵便番号が電子レポートに入力されない。  | 補充コードが M から Q の場合に、ACA の福利厚生管理用の電子レポートに表示されない内部バグを修正しました。 |

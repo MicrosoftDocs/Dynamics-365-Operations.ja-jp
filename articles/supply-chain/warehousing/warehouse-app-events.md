@@ -1,6 +1,6 @@
 ---
 title: 倉庫アプリ イベント
-description: このトピックでは、倉庫アプリ イベントのメッセージをバッチ ジョブの一部として処理するために使用される、倉庫アプリのイベント処理について説明します。
+description: この記事では、倉庫アプリ イベントのメッセージをバッチ ジョブの一部として処理するために使用される、倉庫アプリのイベント処理について説明します。
 author: perlynne
 ms.date: 09/02/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 8c92bf179006d668f8673e9abc3419a10e644184
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 41b9538d3064bad24c4c5c60d401605e47e9c655
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103266"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905457"
 ---
 # <a name="warehouse-app-event-processing"></a>倉庫アプリのイベント処理
 

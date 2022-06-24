@@ -1,6 +1,6 @@
 ---
 title: 報酬の構造の作成
-description: このトピックでは、固定報酬プランを作成し、適格性ルールを介して従業員をプランに登録する方法を説明します。
+description: この記事では、固定報酬プランを作成し、適格性ルールを介して従業員をプランに登録する方法を説明します。
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f069d4e982a9c02070c2010b894b2ec7a9c7f6ab
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 86953e6d54843f17d0d6090a9def8bc256624f21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693090"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902979"
 ---
 # <a name="develop-a-compensation-structure"></a>報酬の構造の作成
 
@@ -26,7 +26,7 @@ ms.locfileid: "8693090"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-このトピックでは、固定報酬プランの作成と、適格性ルールによる従業員の登録について説明します。 このトピックでは、USMF のデモ データを使用し、報酬と福利厚生マネージャーに適用されます。
+この記事では、固定報酬プランの作成と、適格性ルールによる従業員の登録について説明します。 この記事では、USMF のデモ データを使用し、マネージャーに報酬と福利厚生を適用します。
 
 ## <a name="create-a-fixed-compensation-plan"></a>固定報酬プランの作成
 

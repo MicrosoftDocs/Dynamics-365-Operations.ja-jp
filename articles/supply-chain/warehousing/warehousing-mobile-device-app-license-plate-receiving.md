@@ -1,6 +1,6 @@
 ---
-title: 倉庫管理モバイル アプリで受信するライセンス プレート
-description: このトピックでは、現物在庫を受け取るためにライセンス プレート入庫プロセスの使用をサポートするように倉庫管理モバイル アプリを設定する方法について説明します。
+title: Warehouse Management モバイル アプリで受信するライセンス プレート
+description: この記事では、現物在庫を受け取るためにライセンス プレート入庫プロセスの使用をサポートするように倉庫管理モバイル アプリを設定する方法について説明します。
 author: perlynne
 ms.date: 04/29/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103066"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907003"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>倉庫管理モバイル アプリで受信するライセンス プレート
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Warehouse Management モバイル アプリで受信するライセンス プレート
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、現物在庫の受け取りにライセンス プレート入庫プロセスを使用できるように倉庫管理モバイル アプリを設定する方法について説明します。
+この記事では、現物在庫の受け取りにライセンス プレート入庫プロセスを使用できるように倉庫管理モバイル アプリを設定する方法について説明します。
 
 この機能を使用すると、事前出荷明細通知 (ASN) に関連する入庫在庫の受け取りを簡単に記録できます。 倉庫管理プロセスを使用して移動オーダーを出荷すると、システムは ASN を自動的に作成します。 発注書プロセスでは、ASN は手動で記録することも、入荷 ASN データ エンティティ プロセスを使用して自動的にインポートすることもできます。
 

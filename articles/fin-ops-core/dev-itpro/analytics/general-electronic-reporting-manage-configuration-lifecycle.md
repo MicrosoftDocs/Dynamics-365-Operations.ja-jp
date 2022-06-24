@@ -1,6 +1,6 @@
 ---
 title: 電子申告 (ER) コンフィギュレーション ライフサイクルの管理
-description: このトピックでは、Dynamics 365 Finance の電子申告 (ER) コンフィギュレーションのライフ サイクルを管理する方法について説明します。
+description: この記事では、Dynamics 365 Finance の電子申告 (ER) 構成のライフ サイクルを管理する方法について説明します。
 author: NickSelin
 ms.date: 07/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0220fa03283119471b3d1f78a23a04ed4036264e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906800"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>電子申告 (ER) コンフィギュレーション ライフサイクルの管理
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、Dynamics 365 Finance の電子申告 (ER) コンフィギュレーションのライフ サイクルを管理する方法について説明します。
+この記事では、Dynamics 365 Finance の電子申告 (ER) 構成のライフ サイクルを管理する方法について説明します。
 
 ## <a name="overview"></a>概要
 
@@ -73,7 +73,7 @@ ms.locfileid: "6767782"
 | 買掛金勘定支払係            | 特定の業務プロセスで ER コンポーネントを使用します。                | たとえば、特定の支払方法に対して構成されている ER 形式に基づいて請求書処理用に電子支払のメッセージが生成されるようにするのを許可する **買掛金勘定支払の担当者** ロール。 |
 
 ## <a name="er-configuration-development-lifecycle"></a>ER コンフィギュレーションの開発ライフサイクル
-ER に関連する次の理由から、個別の Finance and Operations インスタンスとしての開発環境で、ER 構成を作成することをお勧めします:
+ER に関連する次の理由から、個別の Finance and Operations インスタンスとしての開発環境で、ER コンフィギュレーションを作成することをお勧めします:
 
 - **電子申告開発者** ロールまたは **電子申告機能コンサルタント** ロールのユーザーは、テスト目的でコンフィギュレーションを編集し、実行できます。 このシナリオでは、インスタンスで使用する業務データと業績について有害なおそれがあるテーブルおよびクラス メソッドが呼び出されることがあります。
 - ER コンフィギュレーションの ER データ ソースとしてのクラスおよびテーブル メソッドの使用は、エントリ ポイントおよび記録された会社の内容によって制限されません。 **電子申告開発者** ロールまたは **電子申告機能コンサルタント** ロールのユーザーは、機密情報にアクセスできます。

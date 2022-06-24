@@ -1,6 +1,6 @@
 ---
 title: 販売履歴データのクリーンアップをスケジュールする
-description: このトピックでは、販売更新履歴のクリーンアップ定期処理タスクを定期的に実行してスケジュールすることで、システムのパフォーマンスを向上させる方法について説明します。
+description: この記事では、販売更新履歴のクリーンアップ定期処理タスクを定期的に実行してスケジュールすることで、システムのパフォーマンスを向上させる方法について説明します。
 author: myvakalo
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6c6c1e08d45f2a7d1e1267010b286111bad01a6c
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570397"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900828"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>販売履歴データのクリーンアップをスケジュールする
 
@@ -28,7 +28,7 @@ Microsoft Dynamics 365 Supply Chain Management は標準操作の一部として
 
 ## <a name="turn-on-the-sales-history-cleanup-features"></a>販売履歴クリーンアップ機能を有効にする
 
-*販売更新履歴のクリーンアップ* 定期処理タスクを、このトピックで説明しているすべての機能と共に設定および使用するには、以下のサブセクションで説明するように、機能管理で、*販売履歴クリーンアップ パフォーマンスの向上* 機能と *経過日数に基づいて販売更新履歴をクリーンアップする* 機能を有効にする必要があります。
+*販売更新履歴のクリーンアップ* 定期処理タスクを、この記事で説明しているすべての機能と共に設定および使用するには、以下のサブセクションで説明するように、機能管理で、*販売履歴クリーンアップ パフォーマンスの向上* 機能と *経過日数に基づいて販売更新履歴をクリーンアップする* 機能を有効にする必要があります。
 
 ### <a name="sales-history-cleanup-performance-improvements"></a>販売履歴クリーンアップ パフォーマンスの向上
 

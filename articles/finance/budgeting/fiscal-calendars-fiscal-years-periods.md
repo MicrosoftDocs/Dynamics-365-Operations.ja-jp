@@ -1,6 +1,6 @@
 ---
-title: 会計カレンダー、会計年度、および会計期間
-description: このトピックでは、会計カレンダー、会計年度、会計期間と法人、固定資産、予算作成でそれらを活用する方法について説明します。
+title: 会計カレンダー、会計年度期間、および会計年度
+description: この記事は、法人、固定資産、予算作成で会計カレンダー、会計年度、会計期間を活用する方法について説明します。
 author: aprilolson
 ms.date: 03/05/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d50db3a96d6267f59dd5a99c039dd8fc8b44079a
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: a1583df4650d0b36ecc2cb0d3e2d3a410aa807ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717393"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909101"
 ---
-# <a name="fiscal-calendars-fiscal-years-and-periods"></a>会計カレンダー、会計年度、および会計期間
+# <a name="fiscal-calendars-fiscal-years-and-periods"></a>会計カレンダー、会計年度期間、および会計年度
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、会計カレンダー、会計年度、会計期間と法人、固定資産、予算作成でそれらを活用する方法について説明します。
+この記事は、法人、固定資産、予算作成で会計カレンダー、会計年度、会計期間を活用する方法について説明します。
 
 会計カレンダーは、組織の財務活動のためのフレームワークを提供します。 各会計カレンダーには1 つ以上の会計年度が含まれ、各会計年度には複数の期間が含まれます。 会計カレンダーは 1 月 1 日から 12 月 31 日の暦年か、または選択した任意の日にちに基づくことができます。 たとえば、1 年うちの 7 月 1 日で始まり、次の年の 6 月 30 日で終わる会計カレンダーを選択する組織もあります。 
 

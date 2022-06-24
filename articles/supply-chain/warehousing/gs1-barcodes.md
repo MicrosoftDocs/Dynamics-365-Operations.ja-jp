@@ -1,6 +1,6 @@
 ---
 title: GS1 バーコード
-description: このトピックでは、倉庫内でラベルをスキャンできるよう、GS1 バーコードと QR コードを設定する方法について説明します。
+description: この記事では、倉庫内でラベルをスキャンできるよう、GS1 バーコードと QR コードを設定する方法について説明します。
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 67c54f344ff7091f4a25198fdafa745c6c84d5d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625281"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907148"
 ---
 # <a name="gs1-bar-codes"></a>GS1 バーコード
 
@@ -30,11 +30,11 @@ Supply Chain Management での GS1 サポートにより、GS1 形式のバー�
 
 物流マネージャーは、必要なアプリケーション識別子のリストを設定し、それぞれを適切なモバイル デバイスのメニュー項目に関連付ける必要があります。 アプリケーション識別子は、移動や梱包の目的で、倉庫全体でグローバル設定として使用できます。 したがって、すべての出荷ラベルは統合フォームを使用します。
 
-特に他で述べない限り、このトピックでは *バーコード* という用語を使用して線形 (1D) バーコードと 2D バーコードを参照します。
+特に他で述べない限り、この記事では *バーコード* という用語を使用して線形 (1D) バーコードと 2D バーコードを参照します。
 
 ## <a name="the-gs1-bar-code-format"></a>GS1 バーコード形式
 
-GS1 一般仕様では、GS1 バーコードに使用できる項目と、バーコードのデータを制御する方法を指定します。 ここでは、このトピックの簡単な概要を示します。 詳細については、GS1が発行する [GS1 の一般仕様](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf)を参照してください。 GS1 仕様ドキュメントは定期的に更新され、GS1 の一般仕様リリース 22.0 に関する最新の情報が提供されます。
+GS1 一般仕様では、GS1 バーコードに使用できる項目と、バーコードのデータを制御する方法を指定します。 ここでは、この記事の簡単な概要を示します。 詳細については、GS1が発行する [GS1 の一般仕様](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf)を参照してください。 GS1 仕様ドキュメントは定期的に更新され、GS1 の一般仕様リリース 22.0 に関する最新の情報が提供されます。
 
 GS1 バーコードでは次のコードが使用されます。
 

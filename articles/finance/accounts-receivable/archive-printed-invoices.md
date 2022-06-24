@@ -1,6 +1,6 @@
 ---
 title: 印刷された顧客請求書にハッシュ番号を付けてアーカイブする
-description: このトピックでは、ハッシュ番号付きの印刷された顧客の請求書を保存するアーカイブを有効にする方法について説明します。
+description: この記事では、ハッシュ番号付きの印刷された顧客の請求書を保存するアーカイブを有効にする方法について説明します。
 author: ilkond
 ms.date: 09/15/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-05
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 44caf44097a433b8848b17688430ca88a4b3f51b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3f19968b4f4cf76a48ac5485e915785e9be5c7db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695277"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909188"
 ---
 # <a name="archive-printed-customer-invoices-with-hash-numbers"></a>印刷された顧客請求書にハッシュ番号を付けてアーカイブする
 
@@ -27,7 +27,7 @@ ms.locfileid: "8695277"
 
 一部の国では、一部のドキュメントの印刷と共に計算されたハッシュ番号をシステムに保存する法的要件があります。 ハッシュ番号は、関係機関への報告や監査時に使用できます。
 
-このトピックでは、ハッシュ番号付きの印刷された顧客請求書を保存するアーカイブを設定する方法について説明します。
+この記事では、ハッシュ番号付きの印刷された顧客請求書を保存するアーカイブを設定する方法について説明します。
 
 ## <a name="prerequisites"></a>必要条件
 

@@ -1,6 +1,6 @@
 ---
 title: 仕入先の支払条件の定義
-description: このトピックでは、仕入先請求書の支払条件の設定方法について説明します。
+description: この記事では、仕入先請求書の支払条件の設定方法について説明します。
 author: abruer
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2199c12e92d631d3eb058637c48b53335d779f2d
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: a676856ed43bf1b78684eac0682e0fdef9c84083
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109819"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906474"
 ---
 # <a name="define-vendor-payment-terms"></a>仕入先の支払条件の定義
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、仕入先請求書の支払条件の設定方法について説明します。 このタスクでは、USMF というデモ会社を使用します。
+この記事では、仕入先請求書の支払条件の設定方法について説明します。 このタスクでは、USMF というデモ会社を使用します。
 
 1. **ナビゲーション ウィンドウ > モジュール > 買掛金勘定 > 支払の設定 > 支払条件** の順に移動します。
 2. **新規** を選択します。 **支払条件** のページは期日を計算する方法を定義するために使用されます。 このページは現金割引日を計算する方法を定義するために使用されてはいません。  

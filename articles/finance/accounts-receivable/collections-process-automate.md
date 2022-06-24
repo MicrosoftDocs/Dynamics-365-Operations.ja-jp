@@ -1,6 +1,6 @@
 ---
 title: 回収プロセスの自動化
-description: このトピックでは、メールによるリマインダー、回収活動、顧客に送信する督促状などを必要とする顧客の請求書を自動的に識別する回収プロセス戦略を設定プロセスについて説明します。
+description: この記事では、メールによるリマインダー、回収活動、顧客に送信する督促状などを必要とする顧客の請求書を自動的に識別する回収プロセス戦略を設定プロセスについて説明します。
 author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 59db852024faf457db7ac145b67619b31555aaf2
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 9ec749db197b4d04ee2e99ac7a16f4f2120c6707
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486872"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946181"
 ---
 # <a name="collections-process-automation"></a>回収プロセスの自動化
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、メールによるリマインダー、回収活動 (電話など)、顧客に送信する督促状などを必要とする顧客の請求書を自動的に識別する回収プロセス戦略を設定のプロセスについて説明します。 
+この記事では、メールによるリマインダー、回収活動 (電話など)、顧客に送信する督促状などを必要とする顧客の請求書を自動的に識別する回収プロセス戦略を設定のプロセスについて説明します。 
 
 多くの組織では、古い残高報告書、顧客の口座、未払いの請求書などの調査に多大な時間を費やして、未処理の請求書や口座残高について連絡すべきかを判断しています。 この調査では、回収代行業者が時間をかけて、期日経過残高の回収や請求書の紛争解決にあたって顧客とのやり取りを行います。 回収プロセスの自動化を使用すると、回収プロセスに対して、戦略に基いたアプローチを設定できます。 これにより、カスタマイズされたメール通知、または督促状を送信するプログラムされたプロセスを提供し、一貫した方法で回収活動を適用できます。 
 

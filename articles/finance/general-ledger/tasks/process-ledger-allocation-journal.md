@@ -1,6 +1,6 @@
 ---
 title: 元帳配賦仕訳帳の処理
-description: このトピックでは、Dynamics 365 Finance での配賦要求の処理方法について説明します。
+description: この記事では、Dynamics 365 Finance での配賦要求の処理方法について説明します。
 author: aprilolson
 ms.date: 07/26/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ec3653085aed278eb5d13d47f345c713cd39f1f
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: b86f8f5d090d624e812d9e7e6c0bc0212e5e9716
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722155"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902432"
 ---
 # <a name="process-ledger-allocation-journal"></a>元帳配賦仕訳帳の処理
 
 [!include [banner](../../includes/banner.md)]
 
-このトピックでは、配賦要求の処理方法について説明します。 [配賦要求の処理] ページを使用して、[総勘定元帳] に転記する前に確認および承認したり、[総勘定元帳] に直接転記することが可能な配賦仕訳帳を作成します。 配賦仕訳帳を作成するためには、少なくとも 1 つの有効な [元帳配賦ルール] が必要です。 このタスクでは、USMF というデモ会社を使用します。
+この記事では、配賦要求の処理方法について説明します。 [配賦要求の処理] ページを使用して、[総勘定元帳] に転記する前に確認および承認したり、[総勘定元帳] に直接転記することが可能な配賦仕訳帳を作成します。 配賦仕訳帳を作成するためには、少なくとも 1 つの有効な [元帳配賦ルール] が必要です。 このタスクでは、USMF というデモ会社を使用します。
 
 1. ナビゲーション ウィンドウで、**一般会計 > 配賦 > 配賦要求の処理** の順に移動します。
 2. **ルール** フィールドで、ドロップダウン メニューから目的のレコードを選択します。

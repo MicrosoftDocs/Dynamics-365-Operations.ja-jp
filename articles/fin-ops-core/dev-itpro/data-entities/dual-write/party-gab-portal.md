@@ -1,6 +1,6 @@
 ---
 title: Microsoft Power Apps ポータルを当事者のデータ モデルで使用する
-description: このトピックでは、二重書き込みの当事者データ モデルによる、Microsoft Power Apps ポータルのロールの変更について説明します。
+description: この記事では、二重書き込みの当事者データ モデルによる、Microsoft Power Apps ポータルのロールの変更について説明します。
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c2e9d0f47ef90167bf84bb5b20e6a7ad2d58ffd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898949"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Microsoft Power Apps ポータルを当事者のデータ モデルで使用する
 
@@ -24,7 +24,7 @@ ms.locfileid: "8060923"
 
 二重書き込みアプリケーション オーケストレーション ソリューションのバージョン 2.0.999.0 以降には、アカウントと連絡先のテーブルの当事者およびグローバル アドレス帳に対するデータ モデルの変更が含まれています。 この変更により、高度な業務シナリオをサポートする多対多のリレーションが可能になります。 これらの変更は、顧客ポータルを含め、実際には使用していたか、二重書き込みをインストールする前に環境に存在していた顧客ポータルを含め、ポータル Web ロールではサポートされません。 Web ロールを予定通り動作させるには、新しいデータ モデルを使用して新しい Web ロールを作成する必要があります。 
 
-簡単に言うと、テーブルの対話の方法は変更されましたが、顧客ポータルのテーブルのアクセス許可は変更されないということです。 このトピックでは、新しい高度なデータ モデルと機能する新しい Web ロールを作成する方法について説明します。
+簡単に言うと、テーブルの対話の方法は変更されましたが、顧客ポータルのテーブルのアクセス許可は変更されないということです。 この記事では、新しい高度なデータ モデルと機能する新しい Web ロールを作成する方法について説明します。
 
 次の図は、当事者とグローバル アドレス帳データ モデルを **持たない** テーブル リレーションシップを示しています。
 

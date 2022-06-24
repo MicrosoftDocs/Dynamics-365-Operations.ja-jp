@@ -1,6 +1,6 @@
 ---
 title: サービス契約の作成
-description: このトピックでは、サービス管理モジュールおよびプロジェクト管理と会計モジュールの機能を使用して、サービス合意を作成する方法について説明します。
+description: この記事では、サービス管理モジュールおよびプロジェクト管理と会計モジュールの機能を使用して、サービス合意を作成する方法について説明します。
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8a139d1a11cca036ace2540cba59bf2cace0db
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d18d279cd437e98cad6495def953978cb78e723e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677257"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901766"
 ---
 # <a name="create-service-agreements"></a>サービス契約の作成
 
 [!include [banner](../includes/banner.md)]
 
-このトピックでは、サービス管理モジュールおよびプロジェクト管理と会計モジュールの機能を使用して、サービス合意を作成する方法について説明します。
+この記事では、サービス管理モジュールおよびプロジェクト管理と会計モジュールの機能を使用して、サービス合意を作成する方法について説明します。
 
 ## <a name="create-a-service-agreement-from-service-management"></a>サービス管理からのサービス合意の作成
 
@@ -51,10 +51,10 @@ ms.locfileid: "8677257"
 2. **すべてのプロジェクト** を選択します。
 3. リストからプロジェクトを選択します。
 4. **アクション ウィンドウ** で、**管理** を選択します。 **新規** アクション グループで、**サービス** を選択してから **サービス契約** を選択します。
-5. このトピックで前述されているように、**サービス契約の作成** というタイトルのセクションで手順に従ってプロジェクト参照を入力します。
+5. この記事で前述されているように、**サービス契約の作成** というタイトルのセクションで手順に従ってプロジェクト参照を入力します。
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
 [サービス契約の作成および締結の概要](service-agreements.md)
 

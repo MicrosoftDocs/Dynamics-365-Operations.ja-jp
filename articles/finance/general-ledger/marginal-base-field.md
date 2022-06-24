@@ -1,6 +1,6 @@
 ---
 title: 基準金額および計算方法に基づいた、売上税の税率
-description: このトピックは、フィールドの基準金額および計算方法の値が、どのように販売および購買トランザクションの税率を決定するかを説明します。
+description: この記事では、フィールドの基準金額および計算方法の値が、どのように販売および購買トランザクションの税率を決定するかについて説明します。
 author: kailiang
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32d334b0c5dcce1e5211fb0580872731d38fb87b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 00cdc470397cedfd951e4c3a05a32f048775a4b9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724872"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903134"
 ---
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>基準金額および計算方法に基づいた、売上税の税率
 
 [!include [banner](../includes/banner.md)]
 
-このトピックは、フィールドの基準金額および計算方法の値が、どのように販売および購買トランザクションの税率を決定するかを説明します。
+この記事では、フィールドの基準金額および計算方法の値が、どのように販売および購買トランザクションの税率を決定するかについて説明します。
 
 売上税コードのページのクイック タブの計算基準金額は、売上税コード値のページのレートから適切な税率をピッキングして、金額が使用されるかが決まります。 計算方法フィールドで選択した方法と基準金額フィールドで設定した金額タイプの組み合わせにより、トランザクションの正確な税率を検索するロジックが決まります。 
 
