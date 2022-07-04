@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (5 月)
                   href: get-started/whats-new-changed-10-0-26.md
-                - name: Finance 10.0.25 (4 月)
-                  href: get-started/whats-new-changed-10-0-25.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -44,7 +42,7 @@
               items:
                 - name: 1 つのバージョンのサービス更新の概要
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
-                - name: 1 つのバージョンのサービス更新に関するよく寄せられる質問
+                - name: 1 つのバージョンのサービス更新に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
                 - name: Dynamics 365 Commerce を含む更新およびカスタム コードのライフサイクルの管理
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/finance/toc.json
@@ -68,7 +66,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: データ タスクの自動化
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
-                - name: One Version を使用した ISV ソリューションの提供
+                - name: 1 つのバージョンを使用した ISV ソリューションの提供
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/finance/toc.json
                 - name: ユーザー受け入れテストの作成と自動化
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/finance/toc.json
@@ -76,7 +74,7 @@
               href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/finance/toc.json
             - name: 展開に関する考慮事項
               items:
-                - name: 配置オプション
+                - name: 展開オプション
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/finance/toc.json
                 - name: クラウドとオンプレミスの機能比較
                   href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/finance/toc.json
@@ -134,7 +132,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/finance/toc.json
                 - name: 機能管理の概要
                   href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/finance/toc.json
-                - name: クライアント FAQ
+                - name: クライアントに関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/finance/toc.json
                 - name: アクション検索
                   href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/finance/toc.json
@@ -184,11 +182,11 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
                 - name: Go-Live の準備
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
-                - name: Go-Live に関するよく寄せられる質問
+                - name: Go-Live に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
                 - name: サービス要求の送信
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
-                - name: サブスクリプション、LCS プロジェクト、Azure AD テナントに関するよく寄せられる質問
+                - name: サブスクリプション、LCS プロジェクト、Azure AD テナントに関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/finance/toc.json
                 - name: データ センター間で環境を移動する
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/finance/toc.json
@@ -458,10 +456,12 @@
                       href: accounts-receivable/sb-revenue-split.md
                     - name: 定期処理のタスク
                       href: accounts-receivable/sb-periodic-tasks.md
-                - name: 売上および経費の繰延
+                - name: 収益および経費の繰延
                   items:
-                    - name: 売上および経費の繰延を設定する
+                    - name: 収益および経費の繰延を設定する
                       href: accounts-receivable/sb-deferrals.md
+                    - name: 繰延転記方法
+                      href: accounts-receivable/Deferral-posting-methods.md
                     - name: 繰延スケジュールの作成
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: 繰延の既定トランザクション
@@ -1106,7 +1106,7 @@
                       href: general-ledger/tasks/create-ledger-accrual-transactions.md
                     - name: 1 つの伝票
                       href: general-ledger/one-voucher.md
-                    - name: 1 つの伝票に関する FAQ
+                    - name: 1 つの伝票に関するよくあるご質問
                       href: general-ledger/one-voucher-faq.md
                 - name: 元伝票
                   items:
@@ -1134,7 +1134,7 @@
                   href: general-ledger/tasks/close-fiscal-year.md
                 - name: 財務期間一括決算
                   href: general-ledger/tasks/mass-financial-period-close.md
-                - name: 年度末の活動に関する FAQ
+                - name: 年度末の活動に関するよくあるご質問
                   href: general-ledger/faq-year-end-activities.md
                 - name: 元帳決済
                   href: general-ledger/ledger-settlements.md
@@ -1214,6 +1214,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: 財務諸表コンポーネント
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: 財務諸表の表示とデザイン
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
             - name: 財務諸表の通貨機能
               href: general-ledger/financial-reporting-currency-capability.md
             - name: 財務諸表の利益剰余金計算
@@ -1252,7 +1254,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
             - name: データ マートをリセットするタイミング
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
-            - name: 財務諸表に関するよく寄せられる質問
+            - name: 財務諸表に関するよくあるご質問
               href: general-ledger/financial-reporting-faq.md
         - name: Finance Insights
           items:
@@ -1554,7 +1556,7 @@
                           href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: 電子請求サービスを使用して仕入先請求書をインポートする
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
-                    - name: 電子請求に関するよく寄せられる質問
+                    - name: 電子請求に関するよくあるご質問
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: 税計算
                   items:
@@ -1978,6 +1980,8 @@
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
                 - name: ブラジルの銀行口座番号の設定
                   href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
+                - name: 移動オーダー
+                  href: localizations/latam-bra-about-transfer-orders.md
                 - name: 税金
                   items:
                     - name: ブラジルの税金の概要
@@ -2076,7 +2080,7 @@
                   href: localizations/apac-chn-negative-debits-credits.md
                 - name: 中国の作業ルールを使用したユーザー操作ログ
                   href: localizations/tasks/user-operation-log-china-working-rule.md
-                - name: VAT 顧客請求書に関するよく寄せられる質問
+                - name: VAT 顧客請求書に関するよくあるご質問
                   href: localizations/apac-chn-tax-integration-vat-customer-invoices.md
                 - name: GB/T 24589-2010 エクスポート
                   href: localizations/apac-chn-gbt-24589-2010.md
@@ -2112,10 +2116,12 @@
                   href: localizations/emea-cze-intrastat.md
                 - name: 銀行口座の銀行記号
                   href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
-                - name: EU 内 VAT
+                - name: 域内 VAT
                   href: localizations/emea-cze-intra-community-VAT.md
                 - name: 年度末決算
                   href: localizations/emea-cze-hun-year-end.md
+                - name: EU 販売リスト
+                  href: localizations/emea-cze-eu-sales-list.md
             - name: デンマーク
               items:
                 - name: デンマークの概要
@@ -2130,8 +2136,8 @@
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
                 - name: EU 販売リスト
                   href: localizations/emea-dnk-eu-sales-list.md
-                - name: OIOUBL 電子請求のコンフィギュレーションのインポート
-                  href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+                - name: デンマークの顧客電子請求書
+                  href: localizations/emea-dnk-e-invoices.md
                 - name: 支払伝票がある自由書式の請求書を転記
                   href: localizations/tasks/post-free-text-invoice-payment-slip.md
                 - name: 支払伝票があるプロジェクト請求書を転記
@@ -2220,6 +2226,8 @@
                       href: localizations/emea-ISO20022-file-formats.md
                     - name: ISO20022 口座引落構成のインポート
                       href: localizations/tasks/import-iso20022-direct-debit-configuration.md
+                    - name: ISO 20022 口座振替形式の前提条件
+                      href: localizations/emea-fra-ISO20022-international.md
                     - name: ISO20022 口座振替コンフィギュレーションのインポート
                       href: localizations/tasks/import-iso20022-credit-transfer-configuration.md
                     - name: ISO20022 口座振替用の会社の銀行口座の設定
@@ -2462,6 +2470,8 @@
                   href: localizations/emea-hun-intrastat.md
                 - name: 繰延消費税計算
                   href: localizations/emea-hun-deferred-vat.md
+                - name: EU 販売リスト
+                  href: localizations/emea-hun-eu-sales-list.md
             - name: アイスランド
               items:
                 - name: アイスランドの概要
@@ -2740,7 +2750,7 @@
                   items:
                     - name: インドの源泉徴収税
                       items:
-                        - name: 税しきい値に関するよく寄せられる質問
+                        - name: 税しきい値に関するよくあるご質問
                           href: localizations/apac-ind-tax-thresholds.md
                         - name: インド TCS
                           items:
@@ -2766,6 +2776,8 @@
                                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                                 - name: 法人の TDS 登録番号の設定
                                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: TDS 税タイプに対する源泉徴収税コンポーネント グループの設定
+                                  href: localizations/apac-ind-TDS-Withholding-tax-component-groups-setup-for-TDS-tax-type.md
                                 - name: TDS 税タイプに対する源泉徴収税の関係機関の設定
                                   href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
                                 - name: TDS 税タイプに対する税コンポーネントの設定
@@ -2968,6 +2980,8 @@
                   href: localizations/tasks/configure-depreciation-profile-posting.md
                 - name: 資産除去責務の転記および市場割引率のための主勘定のコンフィギュレーション
                   href: localizations/tasks/configure-main-accounts-asset-retirement.md
+                - name: 消費税申告
+                  href: localizations/apac-jpn-consumption-tax-report.md
                 - name: 月次締め請求書
                   href: localizations/apac-jpn-consolidate-invoices.md
                 - name: 割増償却を使用する固定資産の作成
@@ -2998,7 +3012,7 @@
                   href: localizations/tasks/depreciate-accrue-interest-expense.md
                 - name: 圧縮記帳が転記されている固定資産の減価償却
                   href: localizations/tasks/depreciation-fixed-assets-reduction-entry-posted.md
-                - name: 減価償却に関するよく寄せられる質問
+                - name: 減価償却に関するよくあるご質問
                   href: localizations/apac-jpn-fixed-asset-depreciation.md
                 - name: 圧縮記帳のある固定資産の処分
                   href: localizations/tasks/dispose-fixed-asset-reduction-entry.md
@@ -3416,6 +3430,8 @@
                           href: localizations/rus-register-acquisition.md
                         - name: 固定資産の取得および使用
                           href: localizations/rus-fixed-asset-acquisition.md
+                        - name: 固定資産としての車両と不動産
+                          href: localizations/rus-vehicles-realty.md
                         - name: 減価償却の計算
                           href: localizations/rus-depreciation-calculation.md
                         - name: 固定資産の部分的分解 (清算)
@@ -3444,6 +3460,8 @@
                       items:
                         - name: 価値のない固定資産 (NVFA) (ロシア)
                           href: localizations/rus-not-valuable-assets.md
+                        - name: NVFA のプライマリ フォーム、作業着、特殊衣類 (ロシア)
+                          href: localizations/rus-nvfa.md
                         - name: 作業着/特殊衣類の会計 (ロシア)
                           href: localizations/rus-working-clothes-instruments-accounting.md
                     - name: 固定資産と資産管理モジュールを統合する
@@ -3520,6 +3538,8 @@
                       href: localizations/rus-land-tax-declaration.md
                     - name: 利益税申告
                       href: localizations/rus-profit-tax-declaration.md
+                    - name: 追跡可能な商品を含む操作に関するレポート
+                      href: localizations/rus-traceable-goods-operation-report.md
                 - name: 組織管理
                   items:
                     - name: 住所に関連する税登録情報
@@ -3608,7 +3628,7 @@
                   href: localizations/emea-esp-fiscal-data-invoice-account.md
                 - name: 固定資産グループの再評価
                   href: localizations/emea-esp-fixed-asset-group-revaluation.md
-                - name: EU 内 VAT
+                - name: 域内 VAT
                   href: localizations/emea-esp-intra-community-vat.md
                 - name: スペインのイントラスタット
                   href: localizations/emea-esp-intrastat.md
@@ -3843,7 +3863,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/finance/toc.json
                     - name: ドキュメント回覧エージェントを Windows サービスとして実行する
                       href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/finance/toc.json
-                - name: 利用可能な SQL Server レポート サービスのレポート
+                - name: 利用可能な SQL Server Reporting Services のレポート
                   href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/finance/toc.json
                 - name: レポートのデザイン テンプレートをインストールする
                   href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/finance/toc.json
@@ -4297,7 +4317,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/finance/toc.json
                 - name: Lifecycle Services (LCS)
                   items:
-                    - name: LC へコンフィギュレーションをアップロードする
+                    - name: LCS へコンフィギュレーションをアップロードする
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
                     - name: LCS からコンフィギュレーションをインポートする
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
@@ -4701,7 +4721,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/finance/toc.json
                 - name: ワークフロー タイプのレポート
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/finance/toc.json
-                - name: ワークフローに関するよく寄せられる質問
+                - name: ワークフローに関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/finance/toc.json
             - name: 警告
               items:
@@ -4765,7 +4785,7 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-earning-code-group-tasks.md
                 - name: 税、税地域、税コード、税グループの設定
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-tax-information-tasks.md
-                - name: 税コード、税グループ、および転記の定義に関するよく寄せられる質問
+                - name: 税コード、税グループ、および転記の定義に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md
                 - name: 給与の期首残高の入力
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-enter-beginning-balances.md
@@ -4777,13 +4797,13 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md
                 - name: 割増所得の設定
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-premium-earning-setup-tasks.md
-                - name: 差し押さえ、課税、管理手数料に関するよく寄せられる質問
+                - name: 差し押さえ、課税、管理手数料に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees.md
             - name: 育児介護休業法の休暇の追跡
               href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-track-time-for-fmla.md
             - name: 給与処理のタスク
               items:
-                - name: 売上および利益生成に関するよく寄せられる質問
+                - name: 売上および利益生成に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-earnings-generation-process.md
                 - name: 作業者の所得の生成
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-generate-earnings.md
@@ -4791,7 +4811,7 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-issue-worker-payments.md
                 - name: 給与の配分の転記と仕入先請求書の生成
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-post-payroll-generate-vendor-invoices.md
-                - name: 支払明細書と支払生成に関するよく寄せられる質問
+                - name: 支払明細書と支払生成に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-pay-statements-payment-generation-process.md
             - name: 支払プロセスの完了
               items:
@@ -4803,7 +4823,7 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-pay-statements.md
             - name: 保守とレポート
               items:
-                - name: 給与データの更新に関するよく寄せられる質問
+                - name: 給与データの更新に関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-payroll-data-updates.md
                 - name: 標準給与レポート
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-generate-payroll-reports.md

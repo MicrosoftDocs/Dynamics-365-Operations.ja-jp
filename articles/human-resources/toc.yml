@@ -78,7 +78,7 @@
               items:
                 - name: データ統合テクノロジの選択
                   href: hr-admin-integration-choose-technology.md
-                - name: スロットリングに関するよく寄せられる質問
+                - name: スロットリングに関するよくあるご質問
                   href: hr-admin-integration-throttling-faq.md
                 - name: Dataverse 統合のコンフィギュレーション
                   href: hr-admin-integration-common-data-service.md
@@ -86,7 +86,7 @@
                   href: hr-developer-entities.md
                 - name: Dataverse の仮想テーブルのコンフィギュレーション
                   href: hr-admin-integration-common-data-service-virtual-entities.md
-                - name: Human Resources 仮想テーブルに関するよく寄せられる質問
+                - name: Human Resources 仮想テーブルに関するよくあるご質問
                   href: hr-admin-virtual-entity-faq.md
                 - name: Finance との統合のコンフィギュレーション
                   href: hr-admin-integration-finance.md
@@ -196,7 +196,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
                 - name: 機能管理の概要
                   href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: クライアント FAQ
+                - name: クライアントに関するよくあるご質問
                   href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json
                 - name: アクション検索
                   href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json
@@ -230,9 +230,9 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
                 - name: Go-Live の準備
                   href: hr-admin-go-live-prepare.md
-                - name: Go-Live に関するよく寄せられる質問
+                - name: Go-Live に関するよくあるご質問
                   href: hr-admin-go-live-faq.md
-                - name: Human Resources インフラストラクチャの統合に関するよく寄せられる質問
+                - name: Human Resources インフラストラクチャの統合に関するよくあるご質問
                   href: hr-infrastructure-merge-faq.md
                 - name: ドキュメント リソース
                   items:
@@ -278,7 +278,7 @@
                       href: hr-admin-troubleshooting-not-in-apps.md
                     - name: レポート オプション
                       href: hr-admin-troubleshooting-reporting.md
-                    - name: 統合に関してよく寄せられる質問
+                    - name: 統合に関するよくあるご質問
                       href: hr-admin-troubleshooting-integration.md
             - name: Human Resources の設定
               items:
@@ -392,7 +392,7 @@
                           href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
                         - name: ワークフロー タイプのレポート
                           href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
-                        - name: ワークフローに関するよく寄せられる質問
+                        - name: ワークフローに関するよくあるご質問
                           href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
                 - name: 警告
                   items:
@@ -454,7 +454,7 @@
               href: hr-personnel-positions.md
             - name: 作業時間カレンダーの作成
               href: hr-personnel-create-working-time-calendar.md
-            - name: 個人のアクションに関するよく寄せられる質問
+            - name: 個人のアクションに関するよくあるご質問
               href: hr-personnel-actions-faq.md
             - name: ワークフローを使用した従業員情報の管理
               href: hr-workflow-manage-employee-information.md
@@ -496,6 +496,8 @@
                   items:
                     - name: 採用プロジェクト プロセスの管理
                       href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: 採用プロジェクトの設定
+                      href: hr-personnel-develop-open-job-requisition.md
                     - name: 応募者および応募データの手動入力
                       href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
                     - name: 求人の作成と実施
@@ -626,6 +628,10 @@
                   items:
                     - name: 給付金計画の設定
                       href: hr-benefits-plans-setup.md
+                    - name: 作業者の給付金計画の作成
+                      href: hr-benefits-plans-worker.md
+                    - name: 将来のライフ イベントの設定
+                      href: hr-benefits-plans-future-life-events.md
                     - name: フレックス クレジット プログラムの設定
                       href: hr-benefits-plans-flex-credit-programs.md
                 - name: 給付金計画の処理
@@ -774,7 +780,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
             - name: ワークフロー タイプのレポート
               href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
-            - name: ワークフローに関するよく寄せられる質問
+            - name: ワークフローに関するよくあるご質問
               href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
         - name: 職場の安全性とコンプライアンス (米国)
           items:
@@ -828,7 +834,7 @@
           items:
             - name: Dataverse 仮想テーブル クエリの最適化
               href: hr-developer-optimize-virtual-table-queries.md
-            - name: Human Resources 仮想テーブルに関するよく寄せられる質問
+            - name: Human Resources 仮想テーブルに関するよくあるご質問
               href: hr-admin-virtual-entity-faq.md
         - name: エンティティ API 照会
           items:
@@ -836,6 +842,10 @@
               href: hr-developer-api-authentication.md
             - name: エンティティ
               items:
+                - name: ジョブの詳細
+                  href: hr-admin-integration-api-job-detail.md
+                - name: 雇用タイプのオプション
+                  href: hr-admin-integration-payroll-api-hcmemploymenttype.md
                 - name: MyLeaveRequests
                   items:
                     - name: MyLeaveRequests の概要

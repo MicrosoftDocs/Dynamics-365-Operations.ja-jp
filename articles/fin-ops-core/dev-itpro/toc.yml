@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: プラットフォーム更新プログラム バージョン 10.0.26 (2022 年 5 月)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: プラットフォーム更新プログラム バージョン 10.0.25 (2022 年 4 月)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
             - name: 削除済みまたは非推奨の機能
               items:
                 - name: 削除済みまたは非推奨の機能に関するホーム ページ
@@ -38,7 +36,7 @@
           items:
             - name: 継続的デリバリーのホーム ページ
               href: dev-tools/continuous-delivery-home-page.md
-            - name: 開発と継続的デリバリーに関するよく寄せられる質問
+            - name: 開発と継続的デリバリーに関するよくあるご質問
               href: dev-tools/continuous-delivery-faq.md
             - name: ビルド出力からのテスト パッケージの除外
               href: dev-tools/exclude-test-packages.md
@@ -274,7 +272,7 @@
                   href: database/import-database.md
                 - name: データベース ポイントインタイム復元
                   href: database/database-point-in-time-restore.md
-                - name: サンドボックス環境への生産データベースのポイントインタイム復元
+                - name: サンドボックス環境への運用データベースのポイントインタイム復元
                   href: database/database-pitr-prod-sandbox.md
                 - name: ジャストインタイム データベース アクセスの有効化
                   href: database/database-just-in-time-jit-access.md
@@ -332,7 +330,7 @@
                       href: deployment/infrastructure-stack.md
                     - name: 新しい環境の配置
                       href: deployment/deployenvironment-newinfrastructure.md
-                    - name: 配置に関するよく寄せられる質問
+                    - name: 配置に関するよくあるご質問
                       href: deployment/deploymentFAQ.md
                     - name: セルフサービス配置に関する既知の問題
                       href: deployment/known-issues-new-deployment-experience.md
@@ -342,7 +340,7 @@
                       href: deployment/updateenvironment-newinfrastructure.md
                     - name: セルフサービス配置で配置された環境のトラブルシューティング
                       href: deployment/troubleshoot-newinfrastructure.md
-                    - name: セルフサービス環境の計画メンテナンスに関する FAQ
+                    - name: セルフサービス環境の計画メンテナンスに関するよくあるご質問
                       href: deployment/plannedmaintenance-selfservice.md
                     - name: 事業継続とディザスター リカバリー
                       href: sysadmin/business-continuity-disaster-recovery.md
@@ -372,19 +370,19 @@
                   href: deployment/on-premises-deployment-landing-page.md
                 - name: オンプレミス配置の準備
                   items:
-                    - name: オンプレミス配置の概要
+                    - name: オンプレミス展開の概要
                       href: deployment/on-premises-overview.md
-                    - name: オンプレミス配置の計画および準備
+                    - name: オンプレミス展開の計画および準備
                       href: deployment/plan-onprem-deployment.md
-                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) でサポートされるソフトウェア
+                    - name: オンプレミスでサポートされるソフトウェア
                       href: deployment/onprem-compatibility.md
                     - name: ハードウェアのサイズ要件
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Dynamics 365 Finance + Operations (on-premises) での認証
+                    - name: オンプレミス環境での認証
                       href: deployment/authentication-onprem.md
-                - name: オンプレミス環境の設定と配置
+                - name: オンプレミス環境の設定と展開
                   items:
-                    - name: LCS での設置プロジェクトの設定
+                    - name: LCS でのオンプレミス プロジェクトの設定
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
                     - name: オンプレミス環境の設定と配置 (プラットフォーム更新プログラム 41 以降)
                       href: deployment/setup-deploy-on-premises-pu41.md
@@ -400,17 +398,17 @@
                       href: deployment/apply-updates-on-premises.md
                     - name: 証明書のローテーション
                       href: deployment/certificate-rotation-on-prem.md
-                    - name: クライアント インターネット接続
+                    - name: クライアント インターネット接続性
                       href: user-interface/client-disconnected.md
-                    - name: オンプレミス配置でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
+                    - name: オンプレミス展開でのバッチのみおよび対話型のみの AOS ノードのコンフィギュレーション
                       href: deployment/onprem-batchonly.md
                     - name: SQL Server Reporting Services (SSRS) ノードの高可用性のコンフィギュレーション
                       href: deployment/onprem-SSRSHA.md
                     - name: オンプレミス環境のプロキシの構成
                       href: deployment/onprem-reverseproxy.md
-                    - name: オンプレミス展開の倉庫管理アプリの構成
+                    - name: オンプレミス展開の Warehousing アプリの構成
                       href: deployment/warehousing-for-on-premise-deployments.md
-                    - name: Finance + Operations (on-premises) 環境で RSAT を有効化する
+                    - name: オンプレミス環境での RSAT の有効化
                       href: deployment/onprem-rsat-configuration.md
                     - name: オンプレミス環境でのネットワーク プリンター デバイスのインストール
                       href: analytics/install-network-printer-onprem.md
@@ -428,15 +426,15 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: 複数の環境への同じ AD FS インスタンスの再利用
                       href: deployment/onprem-reuseadfs.md
-                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の Windows Server をアップグレードする
+                    - name: オンプレミス環境での Windows Server のアップグレード
                       href: deployment/onprem-upgrade-os.md
-                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) 環境の SQL Server インスタンスのアップグレード
+                    - name: オンプレミス環境での SQL Server インスタンスのアップグレードまたは交換
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: ローカル エージェント
                   items:
                     - name: AD FS Microsoft 365 の互換性
                       href: deployment/onprem-adfscompatibility.md
-                    - name: ローカル エージェントの配置前スクリプトと配置後スクリプト
+                    - name: ローカル エージェントの展開前スクリプトと展開後スクリプト
                       href: lifecycle-services/pre-post-scripts.md
                     - name: ローカル エージェントの配置コンフィギュレーション
                       href: deployment/onprem-localagent-options.md
@@ -510,7 +508,7 @@
                   href: dev-tools/access-instances.md
                 - name: 1 ボックス開発環境のコンフィギュレーション
                   href: dev-tools/configure-developer-vm.md
-                - name: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよく寄せられる質問
+                - name: 管理者アクセスを許可しない開発用 VM および ビルド用 VM に関するよくあるご質問
                   href: sysadmin/VMs-no-admin-access.md
                 - name: 最初に使用する際にダウンロードできる VHD を設定する
                   href: dev-tools/vhd-setup.md
@@ -730,7 +728,7 @@
                       href: extensibility/extensibility-roadmap.md
                     - name: 拡張性の要求
                       href: extensibility/extensibility-requests.md
-                    - name: 拡張性に関するよく寄せられる質問
+                    - name: 拡張性に関するよくあるご質問
                       href: extensibility/app-sealing-faq.md
                     - name: オーバーレイから拡張機能への移行
                       href: extensibility/migrate-overlayer-extension.md
@@ -982,6 +980,8 @@
                   href: lifecycle-services/configuration-manager-lcs.md
                 - name: 構成マネージャーの設定
                   href: lifecycle-services/set-up-configuration-manager-lcs.md
+                - name: コンフィギュレーションのコピー
+                  href: lifecycle-services/copy-configuration-lcs.md
             - name: コード アップグレード サービスのコンフィギュレーション
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: 方法の作成または更新
@@ -1012,7 +1012,7 @@
                   href: lifecycle-services/cloud-operations-servicing.md
                 - name: Dynamics サービス エンジニアリング チームへのサービス要求の送信
                   href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-                - name: 計画メンテナンス ウィンドウに関するよく寄せられる質問
+                - name: 計画メンテナンス ウィンドウに関するよくあるご質問
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: 監視と診断
               items:
@@ -1050,7 +1050,9 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Azure DevOps 拡張機能のチュートリアル (パブリック プレビュー)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Dynamics 365 Translation Service Visual Studio Code 拡張機能 (パブリック プレビュー)
+                - name: Visual Studio 拡張機能 (プライベート プレビュー)
+                  href: lifecycle-services/dts-visual-studio.md
+                - name: Visual Studio Code 拡張機能 (パブリック プレビュー)
                   href: lifecycle-services/dts-vscode-doc.md
         - name: Microsoft Power Platform 統合
           items:
@@ -1600,8 +1602,10 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: B2B ユーザーの Azure AD へのエクスポート
               href: sysadmin/implement-b2b.md
-            - name: データ管理
+            - name: データ メンテナンス
               href: sysadmin/DataMaintenancePortal.md
+            - name: 法人間でのネットワーク プリンターへのアクセスの管理
+              href: sysadmin/sys-admin-tools-network-printer.md
             - name: セキュリティ
               items:
                 - name: ロールベース セキュリティ
@@ -1720,7 +1724,7 @@
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: AX 2012 アップグレード - Go-Live
                   href: migration-upgrade/2012-upgrade-cutover.md
-                - name: AX 2012 からのアップグレード - データ アップグレード FAQ
+                - name: AX 2012 からのアップグレード - データ アップグレード に関するよくあるご質問
                   href: migration-upgrade/upgrade-faq.md
                 - name: AX 2012 からのアップグレードに影響する変更
                   items:
@@ -1910,7 +1914,7 @@
                   href: user-interface/slider-messagebox.md
                 - name: メッセージ センター、メッセージ バー、およびメッセージ詳細 API
                   href: user-interface/messaging-api-center-bar-details.md
-                - name: メッセージ センター、メッセージ バー、およびメッセージ詳細に関するよく寄せられる質問
+                - name: メッセージ センター、メッセージ バー、およびメッセージ詳細に関するよくあるご質問
                   href: user-interface/messaging-user.md
             - name: フォーム パターンのガイドライン
               items:
